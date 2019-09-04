@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 20ebd6def9fcac2336ca13118300737b66142812
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 44906d70be05891fe52096adec2f61f2261b5db5
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926387"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154888"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Visual Studio에서 데이터 과학 지원 설치
 
@@ -106,7 +106,7 @@ SQL Server 통합을 모두 활용하려면 Visual Studio 설치 관리자를 �
 
 데이터 과학 및 분석 애플리케이션 워크로드에 있는 것 외에도 Azure Notebooks 서비스 및 Python용 Azure SDK도 데이터 과학에 유용합니다.
 
-Python용 Azure SDK를 사용하면 Windows, Mac 및 Linux에서 실행되는 애플리케이션에서 Microsoft Azure 서비스를 쉽게 사용하고 관리할 수 있습니다. 자세한 내용은 [Python용 Azure SDK](../python/azure-sdk-for-python.md)를 참조하세요.
+Python용 Azure SDK를 사용하면 Windows, Mac 및 Linux에서 실행되는 애플리케이션에서 Microsoft Azure 서비스를 쉽게 사용하고 관리할 수 있습니다. 자세한 내용은 [Python용 Azure SDK](/azure/python/)를 참조하세요.
 
 Azure Notebooks(현재 미리 보기 상태)는 Microsoft Azure의 클라우드에서 실행되는 Jupyter 노트북에 대한 무료 온라인 액세스를 제공합니다. 서비스는 시작하기 위해 Python, R 및 F#에서 샘플 전자 필기장을 포함합니다. [notebooks.azure.com](https://notebooks.azure.com/)을 방문해 보세요.
 

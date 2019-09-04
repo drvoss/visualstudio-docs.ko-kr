@@ -4,15 +4,14 @@ description: Mac용 Visual Studio에서 Azure Functions 사용
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
-ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: f1c619bbddd5116ad2d425909d80e30ca99e06c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1a2dd0f797d362edf5d75f798ff4578cc3c2b50c
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934250"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108006"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>자습서: Azure Functions 시작
 
@@ -141,7 +140,7 @@ ms.locfileid: "62934250"
 
 1. 줄의 여백을 클릭하여 메서드의 **반환** 줄에 중단점을 설정합니다.
 
-    ![반환 줄에 중단점 설정 ](media/azure-functions-lab-image17.png)
+    ![반환 줄에 중단점 설정](media/azure-functions-lab-image17.png)
 
 1. **F5** 키를 누르거나 **실행 > 디버깅 시작**을 선택하여 디버그 세션에서 프로젝트를 빌드하고 실행합니다. 또는 **실행** 단추를 클릭할 수 있습니다. 이 옵션은 모두 동일한 작업을 수행 합니다. 이 연습의 나머지 부분에서는 **F5**를 언급하지만 본인에게 가장 편안한 방법을 사용하면 됩니다.
 
@@ -149,7 +148,7 @@ ms.locfileid: "62934250"
 
 1. 프로젝트를 실행하면 터미널 애플리케이션이 자동으로 열립니다.
 
-1. 프로젝트는 이 문서의 뒷부분에서 설명하는 메서드 속성과 파일 규칙에 따라 Azure Functions를 검색하는 프로세스를 거칩니다.  이 경우 단일 Azure 함수를 검색하며 1개 작업 함수를 "생성"합니다.
+1. 프로젝트는 이 문서의 뒷부분에서 설명하는 메서드 속성과 파일 규칙에 따라 Azure Functions를 검색하는 프로세스를 거칩니다. 이 경우 단일 Azure 함수를 검색하며 1개 작업 함수를 "생성"합니다.
 
     ![터미널의 Azure 함수 출력](media/azure-functions-lab-image19.png)
 
@@ -195,13 +194,13 @@ ms.locfileid: "62934250"
 
 1. 이전 연습에서 Mac용 Visual Studio이 라이브러리에 정의된 Azure 함수에 대해 작업 함수를 "생성"한다고 했습니다. 이것은 사실 Azure Functions가 런타임에서 메서드 특성을 사용하는 것이 아니라 컴파일 시점 파일 시스템 규칙을 사용하여 Azure Functions를 제공할 방법과 위치를 구성하기 때문입니다. **Solution Pad**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **Finder에 표시**를 선택합니다.
 
-     ![Finder에 표시 메뉴 옵션 ](media/azure-functions-lab-image23.png)
+     ![Finder에 표시 메뉴 옵션](media/azure-functions-lab-image23.png)
 
 1. **bin/Debug/netstandard2.0**이 나올 때까지 파일 시스템에서 아래로 이동합니다. 이름이 **Add**인 폴더가 있어야 합니다. 이 폴더는 C# 코드의 함수 이름 특성과 일치하도록 만들어졌습니다. 단일 **function.json** 파일을 표시하기 위해 Add 폴더를 확장합니다. 이 파일은 런타임에서 Azure 함수의 호스트 및 관리를 위해 사용됩니다. 컴파일 시점 지원이 없는 다른 언어 모델(예: C# 스크립트 또는 JavaScript)의 경우 이 폴더를 수동으로 만들어 유지 관리해야 합니다. C# 개발자의 경우 빌드 시 특성 메타데이터에서 자동으로 생성됩니다. **function.json**을 마우스 오른쪽 단추로 클릭하고 선택하여 Visual Studio에서 엽니다.
 
     ![파일 디렉터리의 function.json](media/azure-functions-lab-image24.png)
 
-1. 이 자습서의 이전 단계를 살펴보았으므로 C# 특성에 대한 기본적인 이해가 있을 것입니다. 이를 고려하면 이 JSON에 익숙해야 합니다. 그러나 이전 연습에서 다루지 않은 몇 가지 항목이 있습니다. 예를 들어 각 **바인딩**에는 **direction** 설정이 있어야 합니다. 유추하듯이 **"in"** 은 매개 변수가 입력임을, **"out"** 은 매개 변수가 메서드에 대한 반환 값(**$return** 사용) 또는 **out** 매개 변수임을 나타냅니다. 어셈블리 안에서 **scriptFile**(이 최종 위치에 상대적) 및 **entryPoint** 메서드(공개 및 고정)를 지정해야 합니다. 다음 몇 단계에서는 이 모델을 사용하여 사용자 지정 함수 경로를 추가하게 되므로 이 파일의 콘텐츠를 클립보드에 복사합니다.
+1. 이 자습서의 이전 단계를 살펴보았으므로 C# 특성에 대한 기본적인 이해가 있을 것입니다. 이를 고려하면 이 JSON에 익숙해야 합니다. 그러나 이전 연습에서 다루지 않은 몇 가지 항목이 있습니다. 예를 들어 각 **바인딩**에는 **direction** 설정이 있어야 합니다. 유추하듯이 **"in"** 은 매개 변수가 입력임을, **"out"** 은 매개 변수가 메서드에 대한 반환 값( **$return** 사용) 또는 **out** 매개 변수임을 나타냅니다. 어셈블리 안에서 **scriptFile**(이 최종 위치에 상대적) 및 **entryPoint** 메서드(공개 및 고정)를 지정해야 합니다. 다음 몇 단계에서는 이 모델을 사용하여 사용자 지정 함수 경로를 추가하게 되므로 이 파일의 콘텐츠를 클립보드에 복사합니다.
 
     ![Visual Studio for Mac에서 function.json 파일 열기](media/azure-functions-lab-image25.png)
 
@@ -226,7 +225,7 @@ ms.locfileid: "62934250"
     "generatedBy":"Microsoft.NET.Sdk.Functions-1.0.13",
     ```
 
-1. 첫 번째 바인딩의 끝(**"name": "req"** 줄 다음)에 아래 속성을 추가합니다. 앞줄에 쉼표를 포함해야 합니다. 이 속성은 이제 기본 경로를 재정의하며 경로에서 **int** 매개 변수를 추출하여 이름이 **x** 및 **y**인 메서드 매개 변수에 배치합니다.
+1. 첫 번째 바인딩의 끝( **"name": "req"** 줄 다음)에 아래 속성을 추가합니다. 앞줄에 쉼표를 포함해야 합니다. 이 속성은 이제 기본 경로를 재정의하며 경로에서 **int** 매개 변수를 추출하여 이름이 **x** 및 **y**인 메서드 매개 변수에 배치합니다.
 
     ```json
     "direction": "in",
@@ -280,7 +279,7 @@ ms.locfileid: "62934250"
 
     ![json 파일 속성 옵션](media/azure-functions-lab-image30.png)
 
-1. 예상되는 기능을 수행할 수 있게 **Add.cs**에서 `Run` 메서드(특성 포함)를 다음 메서드로 바꿉니다.  특성을 사용하지 않으며 **x** 및 **y**에 대한 명시적 매개 변수가 있다는 점을 제외하고 `Run`과 매우 유사합니다. 
+1. 예상되는 기능을 수행할 수 있게 **Add.cs**에서 `Run` 메서드(특성 포함)를 다음 메서드로 바꿉니다. 특성을 사용하지 않으며 **x** 및 **y**에 대한 명시적 매개 변수가 있다는 점을 제외하고 `Run`과 매우 유사합니다.
 
     ```csharp
     public static int Add2(
@@ -299,7 +298,7 @@ ms.locfileid: "62934250"
 
     ![HTTP 함수 URL](media/azure-functions-lab-image31.png)
 
-1. 브라우저 창으로 돌아와 **http://localhost:7071/api/Adder/3/5**로 이동합니다.
+1. 브라우저 창으로 돌아와 **http://localhost:7071/api/Adder/3/5** 로 이동합니다.
 
 1. 이번에는 메서드가 다시 한 번 경로에서 매개 변수를 가져오고 합계를 생성합니다.
 
@@ -348,11 +347,11 @@ ms.locfileid: "62934250"
 
 1. **F5**를 눌러 프로젝트를 빌드하고 실행합니다.
 
-1. 브라우저 탭에서 **http://localhost:7071/api/Process/4/6**로 이동합니다. 그러면 큐에 다른 메시지가 추가되고 이에 따라 테이블에 다른 행이 추가됩니다.
+1. 브라우저 탭에서 **http://localhost:7071/api/Process/4/6** 로 이동합니다. 그러면 큐에 다른 메시지가 추가되고 이에 따라 테이블에 다른 행이 추가됩니다.
 
 1. **터미널**로 돌아와 **4 + 6**을 위한 수신 요청을 찾아봅니다.
 
-    ![더하기 요청을 표시하는 터미널 출력 ](media/azure-functions-lab-image32.png)
+    ![더하기 요청을 표시하는 터미널 출력](media/azure-functions-lab-image32.png)
 
 1. 브라우저로 돌아와 같은 URL에 대한 요청을 새로 고칩니다. 이제 **Process** 메서드 다음에 오류가 표시됩니다. 이 코드가 이미 존재하는 파티션과 행 키 조합을 사용하는 Azure Table Storage 테이블에 행을 추가하려 시도하기 때문입니다.
 
@@ -381,13 +380,13 @@ ms.locfileid: "62934250"
 
 1. **F5**를 눌러 프로젝트를 빌드하고 실행합니다.
 
-1. 브라우저 탭에서 **http://localhost:7071/api/Process/4/6**의 URL을 새로 고칩니다. 이 레코드에 대한 테이블 행이 있으므로 즉시 오류 없이 반환할 것입니다. HTTP 출력이 없으므로 터미널에서 출력을 확인할 수 있습니다.
+1. 브라우저 탭에서 **http://localhost:7071/api/Process/4/6** 의 URL을 새로 고칩니다. 이 레코드에 대한 테이블 행이 있으므로 즉시 오류 없이 반환할 것입니다. HTTP 출력이 없으므로 터미널에서 출력을 확인할 수 있습니다.
 
     ![테이블 행이 있음을 표시하는 터미널 출력](media/azure-functions-lab-image33.png)
 
-1. URL을 업데이트하여 아직 테스트하지 않은 조합을 반영합니다(예: **http://localhost:7071/api/Process/5/7**). 테이블 행이 없음을 표시하는(예상한 대로) 터미널의 메시지를 확인합니다.
+1. URL을 업데이트하여 아직 테스트하지 않은 조합을 반영합니다(예: **http://localhost:7071/api/Process/5/7** ). 테이블 행이 없음을 표시하는(예상한 대로) 터미널의 메시지를 확인합니다.
 
-    ![새 프로세스를 표시하는 터미널 출력 ](media/azure-functions-lab-image34.png)
+    ![새 프로세스를 표시하는 터미널 출력](media/azure-functions-lab-image34.png)
 
 1. **Mac용 Visual Studio**로 돌아와 디버깅 세션을 종료합니다.
 

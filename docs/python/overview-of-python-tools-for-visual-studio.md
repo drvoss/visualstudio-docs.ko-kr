@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c137b6bd8a38ac606a547ce961c4f040e60c6d87
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 24bbfd276b30444742b329f30c346ac1857c2cc9
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043357"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154963"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows의 Visual Studio에서 Python 작업
 
@@ -157,7 +157,7 @@ Visual Studio **테스트 탐색기**에서 테스트를 검색, 실행 및 관�
 
 Python용 Azure 라이브러리는 Windows, Mac OS X 및 Linux 앱에서 Azure 서비스 사용을 간소화합니다. 라이브러리를 사용하여 Azure 리소스를 만들고 관리할 뿐만 아니라, Azure 서비스에 연결할 수 있습니다. 
 
-자세한 내용은 [Python용 Azure SDK](/python/azure/?view=azure-python) 및 [Python용 Azure 라이브러리](/python/azure/python-sdk-azure-overview?view=azure-python)를 참조하세요.
+자세한 내용은 [Python용 Azure SDK](/azure/python/) 및 [Python용 Azure 라이브러리](/azure/python/python-sdk-azure-overview)를 참조하세요.
 
 ## <a name="questions-and-answers"></a>질문과 대답
 

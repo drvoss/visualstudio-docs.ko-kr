@@ -9,12 +9,12 @@ ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c22d9327deb0c04790a3adfc809d9ae5da483916
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e6fad5424e74c8a65ea8ce889412b834cda6a790
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62835128"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180151"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>웹 성능 테스트에 데이터 소스 추가
 
@@ -66,7 +66,7 @@ ms.locfileid: "62835128"
 
 ::: moniker range="vs-2019"
 
-1. Visual Studio Enterprise가 없는 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) 페이지에서 다운로드할 수 있습니다.
+1. Visual Studio Enterprise가 없는 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지에서 다운로드할 수 있습니다.
 
 2. SQL 데이터베이스를 만듭니다.
 

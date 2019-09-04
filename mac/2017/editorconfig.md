@@ -4,15 +4,14 @@ description: EditorConfig 파일을 사용하여 Mac용 Visual Studio에서 일�
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
-ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: d42103d17b64ee9b3fb2a0660017824490655808
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f54b4c43ed0c438b7d02e4fc08fbb3dff36c34b
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998653"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108120"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>사용자 지정 EditorConfig 파일 만들기 및 편집
 
@@ -123,7 +122,7 @@ csharp_new_line_before_open_brace = none
 
 `root`를 `true`로 설정하면 [EditorConfig 설정 재정의](#override-editorconfig-settings) 섹션에 설명된 대로 이 파일을 코드베이스의 최상위 파일 플래그로 지정하고, 프로젝트의 모든 상위 `.editorconfig` 파일을 무시합니다.
 
-각 섹션은 꺾쇠 괄호(**[ ]**)로 표시되며, 다음 속성과 관련된 파일 형식에 대한 정보를 나타냅니다.
+각 섹션은 꺾쇠 괄호( **[ ]** )로 표시되며, 다음 속성과 관련된 파일 형식에 대한 정보를 나타냅니다.
 
 위의 예에서 일부 설정은 프로젝트의 모든 파일에 적용되며, 다른 설정은 C# 파일에만 추가됩니다. 아래 스크린샷은 `.editorconfig` 설정 적용 전후를 보여줍니다.
 

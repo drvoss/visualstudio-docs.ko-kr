@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: a47ef2bc1b75985639d0c5eb43bba516ff9b8088
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 81dbe6189557f38daa23983a100c295654299a5d
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785136"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154866"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Python용 Azure Cloud Service 프로젝트
 
@@ -24,7 +24,7 @@ Visual Studio는 Python을 사용하여 Azure Cloud Services 만들기를 시작
 
 [Cloud Service](https://docs.microsoft.com/azure/cloud-services/)는 각각 개념적으로 별개의 작업을 수행하지만 크기 조정 필요에 따라 가상 머신 간에 별도로 복제할 수 있는 여러 개의 *작업자 역할* 및 *웹 역할*로 구성됩니다. 웹 역할은 프런트 엔드 웹 애플리케이션의 호스팅을 제공합니다. Python에 관해서는 WSGI를 지원하는 웹 프레임워크를 사용하여 이러한 애플리케이션([웹 프로젝트 템플릿](python-web-application-project-templates.md)에서 지원하는)을 작성할 수 있습니다. 작업자 역할은 사용자와 직접 상호 작용하지 않는 장기적으로 실행되는 프로세스 용도로 사용됩니다. 일반적으로 [`pip install azure`](https://pypi.org/project/azure)로 설치되는 "azure" 패키지 내에서 패키지를 사용합니다.
 
-이 문서에는 Visual Studio 2017 이상(이전 버전과 유사하지만 몇 가지 차이점이 있음)에서 프로젝트 템플릿 및 기타 지원에 대한 세부 정보가 포함되어 있습니다. Python에서 Azure로 작업하는 방법에 대한 자세한 내용은 [Azure Python 개발자 센터](https://docs.microsoft.com/python/azure/?view=azure-python/?view=azure-python)(영문)를 참조하세요.
+이 문서에는 Visual Studio 2017 이상(이전 버전과 유사하지만 몇 가지 차이점이 있음)에서 프로젝트 템플릿 및 기타 지원에 대한 세부 정보가 포함되어 있습니다. Python에서 Azure로 작업하는 방법에 대한 자세한 내용은 [Azure Python 개발자 센터](https://docs.microsoft.com/azure/python/)(영문)를 참조하세요.
 
 ## <a name="create-a-project"></a>프로젝트 만들기
 

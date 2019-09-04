@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a83e19f808a3f3ab7e1bf9f4fb58f5ddd7a218b7
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: af781f5735a3539d8b0e2d098bb9252bc60193fc
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033133"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180273"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Visual Studio용 Node.js 도구를 사용하여 Vue.js 애플리케이션 만들기
 
@@ -37,7 +37,7 @@ Visual Studio에서 Vue.js 애플리케이션을 개발할 때 다음과 같은 
     > 이 문서에서는 Visual Studio 2017 버전 15.8부터만 사용할 수 있는 기능이 필요합니다.
 
     ::: moniker range=">=vs-2019"
-    필요한 버전이 아직 설치되어 있지 않은 경우 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)를 설치하세요.
+    필요한 버전이 아직 설치되어 있지 않은 경우 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)를 설치하세요.
     ::: moniker-end
     ::: moniker range="vs-2017"
     아직 Visual Studio를 설치하지 않은 경우  [Visual Studio 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)  페이지로 이동하여 체험용으로 설치합니다.

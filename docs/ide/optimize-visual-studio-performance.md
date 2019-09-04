@@ -12,12 +12,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: bdc605b614fab5b11c2efc8466480ebf49a1fee7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c34755fdffb9dd2084f9999aafb01bd6b9fdb4f0
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569851"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180131"
 ---
 # <a name="optimize-visual-studio-performance"></a>Visual Studio 성능 최적화
 
@@ -25,7 +25,7 @@ ms.locfileid: "62569851"
 
 ## <a name="upgrade-visual-studio"></a>Visual Studio 업그레이드
 
-현재 Visual Studio 2015를 사용하는 경우 무료로 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 또는 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)를 다운로드하여 향상된 성능을 확인해 보세요. 솔루션은 Visual Studio 2015에 비해 2-3배 더 빠르게 로드되며 다른 영역에서도 성능이 향상됩니다. Visual Studio 2017 및 Visual Studio 2019는 Visual Studio 2015와 호환 가능하므로 사용해도 아무런 손실이 없습니다.
+현재 Visual Studio 2015를 사용하는 경우 무료로 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 또는 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)를 다운로드하여 향상된 성능을 확인해 보세요. 솔루션은 Visual Studio 2015에 비해 2-3배 더 빠르게 로드되며 다른 영역에서도 성능이 향상됩니다. Visual Studio 2017 및 Visual Studio 2019는 Visual Studio 2015와 호환 가능하므로 사용해도 아무런 손실이 없습니다.
 
 ::: moniker range="vs-2017"
 

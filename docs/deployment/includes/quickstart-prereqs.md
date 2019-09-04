@@ -1,16 +1,16 @@
 ---
-ms.openlocfilehash: 983e25e65600a4174c305557b2a58e20b91f63f1
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 034d4c1e528ff33343b6da1dab3a2de96a0228fc
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68143613"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70197160"
 ---
 ## <a name="prerequisites"></a>전제 조건
 
 ::: moniker range=">=vs-2019"
 
-* 선택한 언어에 적절한 워크로드를 사용하여 설치된 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
+* 선택한 언어에 적절한 워크로드를 사용하여 설치된 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
   * ASP.NET: **ASP.NET 및 웹 개발**
   * Python: **Python 개발**
   * Node.js: **Node.js 개발**

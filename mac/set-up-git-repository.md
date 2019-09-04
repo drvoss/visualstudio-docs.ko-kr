@@ -3,14 +3,14 @@ title: Git 리포지토리 설정
 description: Mac용 Visual Studio에서 Git 및 Subversion 사용
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 02/15/2018
+ms.date: 02/15/2019
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 4fbee486a2e0263621f501b511d62abddbda8059
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 9b21ed322d2b22be619a71e474a3b5078607bbe5
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692402"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70107897"
 ---
 # <a name="set-up-a-git-repository"></a>Git 리포지토리 설정
 
@@ -81,7 +81,7 @@ Git 리포지토리를 설정하려면 다음 단계를 수행하세요.
 
     ![버전 제어 메뉴](media/version-control-git10.png)
 
-10. 추가적인 변경 작업을 시작한 경우,  **변경 내용 푸시** 를 선택하여 변경 내용을  **원격**  리포지토리로 푸시합니다. 이렇게 하면 github.com에서 해당하는 모든 사용자가 변경 사항을 볼 수 있습니다.
+10. 추가적인 변경 작업을 시작한 경우, **변경 내용 푸시...** 를 선택하여 변경 내용을 **원격** 리포지토리로 푸시합니다. 이렇게 하면 github.com에서 해당하는 모든 사용자가 변경 사항을 볼 수 있습니다.
 
     ![원격 리포지토리에 변경 사항 푸시](media/version-control-git11.png)
 

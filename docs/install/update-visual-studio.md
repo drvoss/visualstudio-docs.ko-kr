@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80ee1a568e30a4898c767533a4f592e2301a097a
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: b6fc0ab18fea11b2dd4478538a095762fee75d35
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681545"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180375"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Visual Studio를 최신 릴리스 버전으로 업데이트
 
@@ -166,7 +166,7 @@ Visual Studio는 Visual Studio 자체나 구성 요소에 사용 가능한 업�
 
 항상 최신 기능, 수정 사항 및 개선 사항을 사용할 수 있도록 Visual Studio 2019의 [최신 릴리스](/visualstudio/releases/2019/release-notes/)로 업데이트하는 것이 좋습니다.
 
-Visual Studio 2019를 아직 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) 페이지로 이동하여 체험용으로 설치합니다.
+Visual Studio 2019를 아직 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 체험용으로 설치합니다.
 
 > [!IMPORTANT]
 > Visual Studio를 설치, 업데이트 또는 수정하려면 관리 권한이 있는 계정으로 로그온해야 합니다. 자세한 내용은 [사용자 권한 및 Visual Studio](../ide/user-permissions-and-visual-studio.md)를 참조하세요.
@@ -204,7 +204,7 @@ Visual&nbsp;Studio&nbsp;2019를 업데이트하는 방법은 다음과 같습니
 
 업데이트를 확인한 다음, Visual Studio 2019의 메뉴 표시줄 또는 검색 상자를 사용하여 설치할 수 있습니다.
 
-### <a name="open-visual-studio"></a>Visual Studio 열기
+### <a name="open-visual-studio"></a>Visual Studio를 엽니다.
 
 1. Windows **시작** 메뉴에서 **Visual Studio 2019**를 선택합니다.
 

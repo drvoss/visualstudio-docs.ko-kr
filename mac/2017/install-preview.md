@@ -4,15 +4,14 @@ description: Mac용 Visual Studio 2019 미리 보기를 포함하여 Mac용 Visu
 author: conceptdev
 ms.author: crdun
 ms.date: 11/03/2018
-ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
-ms.openlocfilehash: afb542e60eeae34bbe7d05694b1ffc8330ed2958
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 16fea3d68c7d418d7a0a56dbdcd83af107f91b4a
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997940"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70107800"
 ---
 # <a name="install-a-preview-release"></a>미리 보기 릴리스 설치
 
@@ -25,7 +24,7 @@ Mac용 Visual Studio의 새 버전이 공식적으로 릴리스되기 전에 미
 
 Mac용 Visual Studio에 대한 미리 보기 릴리스는 별도 다운로드가 아닌 업데이트 형태로 배포됩니다. Mac용 visual Studio에는 [업데이트](update.md) 문서에서 설명한 대로 안정성, 베타 및 알파 등의 세 업데이트 채널이 있습니다.
 
-대부분의 미리 보기 릴리스는 **베타**와 **알파** 채널을 통해 제공되지만 가장 정확한 정보를 받을 수 있도록 [미리 보기 릴리스 정보](/visualstudio/releasenotes/vs2017-mac-preview-relnotes)를 항상 확인합니다. 
+대부분의 미리 보기 릴리스는 **베타**와 **알파** 채널을 통해 제공되지만 가장 정확한 정보를 받을 수 있도록 [미리 보기 릴리스 정보](/visualstudio/releasenotes/vs2017-mac-preview-relnotes)를 항상 확인합니다.
 
 Mac용 Visual Studio의 미리 보기를 설치하려면 다음 단계를 사용합니다.
 

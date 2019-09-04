@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4024209ac0c1b2766b67984710b8349c6d66d91
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: eb1dbbcc4adf8305aad119ac8a4cb223e0f89902
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605449"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180276"
 ---
 # <a name="options-dialog-box-environment--general"></a>옵션 대화 상자: 환경 \> 일반
 
@@ -62,7 +62,7 @@ Visual Studio에서 시각적 효과 조정을 자동으로 설정하는지 또�
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Windows 10에는 **Let Windows try to fix apps so they're not blurry**(Windows에서 앱이 흐려 보이지 않도록 수정 허용)라는 설정이 있습니다. Visual Studio가 모니터에서 흐려 보이는 경우 해당 설정을 **켜는** 것이 좋습니다. [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)로 업그레이드하는 것이 좋습니다. 이 버전은 모니터별 인치당 도트 인식 애플리케이션이므로 디스플레이 선명도가 크게 향상되었습니다.
+> Windows 10에는 **Let Windows try to fix apps so they're not blurry**(Windows에서 앱이 흐려 보이지 않도록 수정 허용)라는 설정이 있습니다. Visual Studio가 모니터에서 흐려 보이는 경우 해당 설정을 **켜는** 것이 좋습니다. [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)로 업그레이드하는 것이 좋습니다. 이 버전은 모니터별 인치당 도트 인식 애플리케이션이므로 디스플레이 선명도가 크게 향상되었습니다.
 
 ::: moniker-end
 

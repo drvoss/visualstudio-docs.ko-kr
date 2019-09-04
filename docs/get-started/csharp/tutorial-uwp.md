@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a2a65534cda2571c36bb0c2caa16bf2f3394a804
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: dab237eeb99f4d4d67652dba583bf9851b6d6175
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435049"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180458"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>자습서: XAML 및 C&#35를 사용하여 Visual Studio에서 첫 번째 유니버설 Windows 플랫폼 애플리케이션 만들기
 
@@ -29,7 +29,7 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 소개에서는 모든 Win
 아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 페이지로 이동하여 체험용으로 설치합니다.
 ::: moniker-end
 ::: moniker range="vs-2019"
-아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) 페이지로 이동하여 체험용으로 설치합니다.
+아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 체험용으로 설치합니다.
 ::: moniker-end
 
 ## <a name="create-a-project"></a>프로젝트 만들기
@@ -56,7 +56,7 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 소개에서는 모든 Win
 ::: moniker range=">=vs-2019"
 1. Visual Studio를 열고 시작 창에서 **새 프로젝트 만들기**를 선택합니다.
 
-1. **새 프로젝트 만들기** 화면에서 검색 상자에 ‘유니버설 Windows’를 입력하고, **비어 있는 앱(유니버설 Windows)** 에 사용할 C# 템플릿을 선택하고, **다음**을 선택합니다.
+1. **새 프로젝트 만들기** 화면에서 검색 상자에 ‘유니버설 Windows’를 입력하고, **비어 있는 앱(유니버설 Windows)** 에 사용할 C# 템플릿을 선택하고, **다음**을 선택합니다. 
 
    ![새 프로젝트 만들기 화면 스크린샷](media/vs-2019/uwp-create-new-project.png)
 

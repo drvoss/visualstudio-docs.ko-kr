@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 2abfb87ff4a97201246f9a9c284871db5e5f0068
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a5be67673e6f806cb149b19b08244ca0da555ae2
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62572686"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70179803"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Visual Studio 클라우드 탐색기에서 Azure 계정과 연결된 리소스 관리
 
@@ -24,7 +24,7 @@ ms.locfileid: "62572686"
 
 ## <a name="prerequisites"></a>전제 조건
 
-* **Azure 워크로드**가 선택된 Visual Studio 2017 이상([Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) 참조). [.NET용 Microsoft Azure SDK 2.9](https://www.microsoft.com/download/details.aspx?id=51657)가 포함된 이전 버전의 Visual Studio를 사용할 수도 있습니다.
+* **Azure 워크로드**가 선택된 Visual Studio 2017 이상([Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 참조). [.NET용 Microsoft Azure SDK 2.9](https://www.microsoft.com/download/details.aspx?id=51657)가 포함된 이전 버전의 Visual Studio를 사용할 수도 있습니다.
 * Microsoft Azure 계정 - 계정이 없는 경우 [평가판을 등록](http://go.microsoft.com/fwlink/?LinkId=623901)하거나 [Visual Studio 구독자 혜택을 활성화](http://go.microsoft.com/fwlink/?LinkId=623901)할 수 있습니다.
 
 > [!NOTE]

@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b8d52114e742d5a8176166744a4edc2975f674a3
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5c95990eb875c52a66cd0efa5579c9d39eab5469
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925852"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154913"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>IntelliSense에 대한 C++ 프로젝트 구성
 
@@ -48,7 +48,7 @@ NMake 프로젝트 템플릿을 기반으로 하는 메이크파일 프로젝트
 
 ### <a name="open-folder-projects"></a>폴더 열기 프로젝트
 
-CMake 프로젝트의 경우, CMakeLists.txt에서 모든 구성에 대한 #include 경로가 올바르게 지정되었는지 확인합니다. 기타 프로젝트 형식에는 CppProperties.json 파일이 필요할 수 있습니다. 자세한 내용은 [CppProperties.json으로 IntelliSense 구성](/cpp/build/open-folder-projects-cpp#configure-intellisense-and-browsing-hints-with-cpppropertiesjson)을 참조하세요. 파일에 정의된 각 구성에 대한 경로가 올바른지 확인합니다.
+CMake 프로젝트의 경우, CMakeLists.txt에서 모든 구성에 대한 #include 경로가 올바르게 지정되었는지 확인합니다. 기타 프로젝트 형식에는 CppProperties.json 파일이 필요할 수 있습니다. 자세한 내용은 [CppProperties.json으로 IntelliSense 구성](/cpp/build/open-folder-projects-cpp#configure-code-navigation-with-cpppropertiesjson)을 참조하세요. 파일에 정의된 각 구성에 대한 경로가 올바른지 확인합니다.
 
 CppProperties.json 파일에 구문 오류가 있는 경우 영향을 받는 파일의 IntelliSense가 잘못됩니다. Visual Studio에서 출력 창에 오류를 표시합니다.
 

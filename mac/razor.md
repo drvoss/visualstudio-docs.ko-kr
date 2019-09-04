@@ -4,15 +4,14 @@ description: Mac용 Visual Studio의 ASP.NET Core 앱에서 Razor 지원에 대�
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/03/2018
-ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
-ms.openlocfilehash: 9e5a3f61ee7065a0615a381bdcc03dafc3566893
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: a66a31d2c63fcb0e2adc4554c49a76c727f9a288
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691265"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70107923"
 ---
 # <a name="razor"></a>Razor
 

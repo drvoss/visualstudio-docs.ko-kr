@@ -57,7 +57,6 @@
 
 # 버전 제어
 ## [개요](version-control.md)
-## [TF 버전 제어](tf-version-control.md)
 ## [Git 리포지토리 설정](set-up-git-repository.md)
 ## [Git 작업](working-with-git.md)
 ## [Subversion 리포지토리 설정](set-up-subversion-repository.md)
@@ -100,7 +99,8 @@
 ## [로그 및 예외](troubleshooting.md)
 ## [Visual Studio 사용자 환경 개선 프로그램](visual-studio-experience-improvement-program.md)
 ## [문제 보고](report-a-problem.md)
-## [문제 해결: 왜 모든 템플릿을 볼 수 없습니까?](troubleshooting-no-templates.md)
+## [문제 해결: Mac용 Visual Studio는 Team Foundation 버전 제어를 지원하나요?](tf-version-control.md)
+## [문제 해결: 왜 모든 템플릿을 볼 수 없나요?](troubleshooting-no-templates.md)
 ## [문제 해결: Updater에서 정보 검색 중에 오류가 발생했습니다.](updater-troubleshooting.md)
 
 # [릴리스 정보](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)

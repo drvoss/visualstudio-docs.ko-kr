@@ -8,12 +8,12 @@ metadata:
   description: Visual Studio를 사용하여 선택한 언어로 플랫폼 또는 디바이스에 대한 애플리케이션, 서비스 및 도구를 개발하는 방법에 대해 알아봅니다.
   ms.topic: hub-page
   monikerRange: '>=vs-2017'
-  ms.openlocfilehash: b24bc5b3e1427a6f3675398e05a639b45c376571
-  ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+  ms.openlocfilehash: 22c6d731d3c7bfaefb6ee0d89d7bae088d86c035
+  ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 07/01/2019
-  ms.locfileid: "67493711"
+  ms.lasthandoff: 09/03/2019
+  ms.locfileid: "70222665"
 highlightedContent:
   items:
   - title: 설정 및 설치
@@ -135,7 +135,7 @@ additionalContent:
       summary: 프로젝트에서 테스트를 실행합니다.
       url: test/improve-code-quality.md
     - title: '배포:'
-      summary: 웹 배포, InstallShield, 연속 통합 등을 사용하여 앱을 공유합니다.
+      summary: 웹 배포, InstallShield, NuGet, 연속 통합 등을 사용하여 앱과 코드를 공유합니다.
       url: deployment/index.md
     - title: 버전 제어
       summary: Git 및 TFVC 같은 버전 제어 기술을 사용하여 코드를 공유합니다.
@@ -150,7 +150,7 @@ additionalContent:
       summary: 개발 환경을 개선하기 위해 Visual Studio IDE에 고유한 기능을 추가합니다.
       url: extensibility/index.md
     - title: 데이터
-      summary: 로컬이든 클라우드든 어디서나 모든 데이터베이스 또는 서비스와 연결하는 데이터 앱을 만듭니다.
+      summary: 로컬, 클라우드 등 어디서나 모든 데이터베이스 또는 서비스와 연결하는 데이터 앱을 만듭니다.
       url: data-tools/accessing-data-in-visual-studio.md
     - title: 공동 작업
       summary: 실시간 공동 작업 환경에서 코드를 공유, 편집, 디버그합니다.
@@ -192,7 +192,7 @@ additionalContent:
         url: cross-platform/visual-studio-tools-for-unity.md
       - text: JavaScript를 사용한 모바일 개발
         url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017
-        note: (Visual Studio 2017 and 2015 only)
+        note: (Visual Studio 2017 및 2015만 해당)
       - text: C++를 사용한 모바일 개발
         url: /visualstudio/cross-platform/
       - text: C++를 사용한 게임 개발

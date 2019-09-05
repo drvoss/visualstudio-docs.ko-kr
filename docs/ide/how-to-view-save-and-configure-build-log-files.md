@@ -1,6 +1,6 @@
 ---
 title: '방법: 빌드 로그 파일 보기, 저장 및 구성 | Microsoft Docs'
-ms.date: 11/04/2016
+ms.date: 08/28/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dc172723005b6781a63b3a3956b12152d73bb0f
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 1fe1932930c869e3d4d3d74eb641da068e1cffec
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415584"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154819"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>방법: 빌드 로그 파일 보기, 저장 및 구성
 
@@ -42,6 +42,8 @@ MSBuild를 사용하여 모든 종류의 프로젝트를 빌드하는 경우 *.t
 
    Visual Studio에서 빌드 출력을 저장할 위치를 묻는 메시지가 표시됩니다.
 
+`-fileLogger`(`-fl`) 명령줄 옵션을 사용하여 명령 줄에서 직접 MSBuild를 실행하여 로그를 생성할 수도 있습니다. [MSBuild를 사용하여 빌드 로그 가져오기](../msbuild/obtaining-build-logs-with-msbuild.md)를 참조하세요.
+
 ## <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>빌드 로그에 포함되는 정보의 양을 변경하려면
 
 1. 메뉴 모음에서 **도구** > **옵션**을 선택합니다.
@@ -63,8 +65,11 @@ MSBuild를 사용하여 모든 종류의 프로젝트를 빌드하는 경우 *.t
     > [!IMPORTANT]
     > **출력** 창(모든 프로젝트) 및 *\<ProjectName>.txt* 파일(C++ 프로젝트에만 해당)에 적용할 변경 내용에 대한 프로젝트를 다시 빌드해야 합니다.
 
+## <a name="use-binary-logs-to-make-it-easier-to-browse-large-log-files"></a>큰 로그 파일을 더욱 쉽게 찾아볼 수 있도록 이진 로그 사용
+
+이진 로그는 .NET 프로젝트의 선택적 기능으로, 큰 로그에서 정보를 쉽게 찾을 수도 있는 풍부한 로그 탐색 환경을 제공합니다. 이진 로그를 사용하려면 [프로젝트 시스템 도구](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools)를 설치합니다. 자세한 내용은 [https://msbuildlog.com](https://msbuildlog.com) 및 [이진 로그](https://github.com/microsoft/msbuild/blob/master/documentation/wiki/Binary-Log.md)를 참조하세요.
+
 ## <a name="see-also"></a>참고 항목
 
-- [빌드 로그 가져오기](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Visual Studio에서 프로젝트 및 솔루션 빌드 및 정리](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [컴파일 및 빌드](../ide/compiling-and-building-in-visual-studio.md)

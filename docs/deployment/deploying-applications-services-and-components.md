@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f494674acdf8b272029ad02a762897b379212ae4
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
+ms.openlocfilehash: cf78e17d4d804c94392da045a90c98869319d185
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533360"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222618"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>먼저 Visual Studio의 배포 살펴보기
 
@@ -96,6 +96,13 @@ Visual Studio에서 Microsoft Store에 배포하기 위한 앱 패키지를 만�
 - **Windows 데스크톱**: Visual Studio 2017 버전 15.4부터 데스크톱 브리지를 사용하여 Microsoft Store에 배포할 수 있습니다. 이 작업을 수행하려면 Windows 애플리케이션 패키징 프로젝트를 만들어 시작합니다. 자세한 내용은 [Microsoft Store의 데스크톱 앱 패키지(데스크톱 브리지)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)를 참조하세요.
 
     ![데스크톱 브리지](../deployment/media/feature-tour-desktop-bridge.png)
+
+## <a name="deploy-net-packages-to-nugetorg"></a>NuGet.org에 .NET 패키지 배포
+
+이러한 패키지를 사용하는 프로젝트에 필요한 다른 컨텐츠와 함께 컴파일된 코드(DLL)가 포함된 "패키지"에 번들 코드를 배포하려면 Visual Studio를 사용하여 NuGet 패키지 및 CLI 도구를 만들어 최종 배포 명령을 실행하면 됩니다.
+
+- [.NET Standard 패키지 만들기 및 게시](/nuget/quickstart/create-and-publish-a-package-using-visual-studio)
+- [.NET Framework 패키지 만들기 및 게시](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework)
 
 ## <a name="deploy-to-a-device-uwp"></a>디바이스에 배포(UWP)
 

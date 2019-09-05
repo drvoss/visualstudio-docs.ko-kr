@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e35641371ebac33c7a89426290927b6045bc4e3e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8db5921b7f4ce4722389ca10765f079db10bf04a
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924070"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222696"
 ---
 # <a name="code-snippets-schema-reference"></a>코드 조각 스키마 참조
 
@@ -121,7 +121,7 @@ $selected$ is a great color. I love $selected$.
    |`SQL`|SQL 코드 조각을 식별합니다.|
    |`HTML`|HTML 코드 조각을 식별합니다.|
 
-- 코드 조각에 포함되는 코드 종류를 지정하고 코드 조각 컴파일을 위해 해당 코드 조각을 삽입해야 하는 위치를 지정하는 **종류** - _선택 사항_ 특성입니다. 값은 다음 중 하나일 수 있습니다.
+- 조각에 포함된 코드 종류를 지정하는 **Kind** -  _(선택 사항)_ 특성입니다. 값은 다음 중 하나일 수 있습니다.
 
    |값|설명|
    |-----|-----------|

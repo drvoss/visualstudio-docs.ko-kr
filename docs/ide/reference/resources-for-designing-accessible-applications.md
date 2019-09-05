@@ -1,8 +1,10 @@
 ---
 title: 액세스 가능한 애플리케이션 설계를 위한 리소스
 description: 장애가 있는 사용자가 더욱 쉽게 사용할 수 있도록 액세스 가능한 애플리케이션을 만드는 방법에 대해 알아봅니다.
-ms.date: 11/04/2016
+ms.date: 08/27/2019
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 helpviewer_keywords:
 - accessibility, Windows applications
 - Windows applications, accessibility
@@ -14,16 +16,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fe2a4b57fda3ab861b5471e1af70cd4bfcc55e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f8ac7beac67a2f1d0010ee64ae7af31108d7ec3b
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811783"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70107843"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>액세스 가능한 애플리케이션 설계를 위한 리소스
 
-다음 링크를 사용하면 액세스 가능한 Windows 애플리케이션과 웹 사이트 개발을 위한 팁과 예제와 함께 액세스 가능한 디자인을 지원하는 기술 관련 정보를 찾을 수 있습니다. 내게 필요한 옵션에 대한 일반적인 내용은 [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/)에서 온라인으로 찾을 수 있습니다.
+액세스 가능한 설계를 지원하는 기술에 대해 자세히 알아보세요. 또한 액세스 가능한 Windows 앱 및 웹 사이트를 개발하는 데 도움이 되는 팁과 자습서 링크가 포함되어 있습니다.
+
+>[!NOTE]
+>모든 사용자에게 권한을 부여하는 제품 개발 방법에 대한 자세한 내용은 [Microsoft 접근성](https://www.microsoft.com/accessibility/)을 참조하세요.
 
 ## <a name="technologies"></a>기술
 
@@ -53,4 +58,5 @@ ms.locfileid: "62811783"
 
 ## <a name="see-also"></a>참고 항목
 
-[Visual Studio의 접근성 기능](../../ide/reference/accessibility-features-of-visual-studio.md)
+* [Visual Studio의 접근성 기능](../../ide/reference/accessibility-features-of-visual-studio.md)
+* [Mac용 Visual Studio 접근성](/visualstudio/mac/accessibility/)

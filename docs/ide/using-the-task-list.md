@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f6ccc0284f89891ff686e456abdcccb1b5296e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ffbe1b7f293bc525aa03a536c0fa4fa55ce3e82a
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821584"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154856"
 ---
 # <a name="use-the-task-list"></a>작업 목록 사용
 
@@ -32,7 +32,7 @@ ms.locfileid: "62821584"
 
 **작업 목록**이 열리면서 애플리케이션 창의 아래쪽에 나타납니다.
 
-**작업 목록**을 열려면 **보기** > **작업 목록**을 선택하거나 키보드에서 **Ctrl**+**\\**,**T**를 누릅니다.
+**작업 목록**을 열려면 **보기** > **작업 목록**을 선택하거나 키보드에서 **Ctrl**+ **\\** ,**T**를 누릅니다.
 
 ![작업 목록 창](../ide/media/vs2015_task_list.png)
 
@@ -64,6 +64,9 @@ ms.locfileid: "62821584"
 
 `TODO`는 미리 정의된 토큰이므로 이 주석은 목록에 `TODO` 작업으로 표시됩니다.
 
+> [!NOTE]
+> 기본 토큰은 C/C++, C# 및 VB 언어에만 사용할 수 있습니다. 다른 언어의 경우 **사용자 지정 토큰** 섹션을 참조하세요.
+
 ### <a name="custom-tokens"></a>사용자 지정 토큰
 
 기본적으로 Visual Studio에는 `HACK`, `TODO`, `UNDONE` 및 `UnresolvedMergeConflict` 토큰이 포함됩니다. 대/소문자를 구분하지 않습니다. 또한 사용자가 직접 토큰을 만들 수도 있습니다.
@@ -91,11 +94,11 @@ ms.locfileid: "62821584"
 
 기본적으로 C++ TODO 주석은 **작업 목록**에 표시됩니다.
 
-C++ TODO 주석을 끄려면 **도구** 메뉴에서 **옵션** > **텍스트 편집기** > **C/C++** > **보기** > **주석 작업 열거**를 선택한 다음, 값을 **false**로 설정합니다.
+C++ TODO 주석을 끄려면 **도구** 메뉴에서 **옵션** > **텍스트 편집기** > **C/C++**  > **보기** > **주석 작업 열거**를 선택한 다음, 값을 **false**로 설정합니다.
 
 ## <a name="shortcuts"></a>바로 가기
 
-‘바로 가기’는 **작업 목록**에서 추적되는 코드의 책갈피입니다. 일반 책갈피와는 다른 아이콘이 있습니다. **작업 목록**의 바로 가기를 두 번 클릭하여 코드의 해당 위치로 이동합니다.
+‘바로 가기’는 **작업 목록**에서 추적되는 코드의 책갈피입니다.  일반 책갈피와는 다른 아이콘이 있습니다. **작업 목록**의 바로 가기를 두 번 클릭하여 코드의 해당 위치로 이동합니다.
 
 ![Visual Studio 작업 목록 바로 가기 아이콘](../ide/media/vs2015_task_list_bookmark.png)
 

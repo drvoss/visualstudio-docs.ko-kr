@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 09d5fb41648a2cd2dbd844bfb0fa426fa704042f
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 68c175a55c9e60e870a5466a831aaae50d62dced
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551151"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293444"
 ---
 # <a name="configure-fxcop-analyzers"></a>FxCop 분석기 구성
 
@@ -46,7 +46,10 @@ FxCop analyzer NuGet 패키지에는 다음 규칙 범주에 대 한 미리 정�
 
 ## <a name="editorconfig-file"></a>EditorConfig 파일
 
-[Editorconfig](https://editorconfig.org) 파일에 키-값 쌍을 추가 하 여 분석기 규칙을 구성할 수 있습니다. 구성 파일은 [프로젝트에 특정](#per-project-configuration) 하거나 둘 이상의 프로젝트 간에 [공유](#shared-configuration) 될 수 있습니다.
+[Editorconfig](https://editorconfig.org) 파일에 키-값 쌍을 추가 하 여 FxCop 분석기 규칙을 구성할 수 있습니다. 구성 파일은 [프로젝트에 특정](#per-project-configuration) 하거나 둘 이상의 프로젝트 간에 [공유](#shared-configuration) 될 수 있습니다.
+
+> [!NOTE]
+> Editorconfig 파일을 사용 하 여 레거시 FxCop 규칙을 구성할 수 없습니다.
 
 ### <a name="per-project-configuration"></a>프로젝트별 구성
 
@@ -61,7 +64,7 @@ FxCop analyzer NuGet 패키지에는 다음 규칙 범주에 대 한 미리 정�
 
 ### <a name="shared-configuration"></a>공유 구성
 
-두 개 이상의 프로젝트 간에 analyzer 구성에 대 한 editorconfig 파일을 공유할 수 있지만 몇 가지 추가 단계가 필요 합니다.
+두 개 이상의 프로젝트 간에 FxCop analyzer 구성에 대 한 editorconfig 파일을 공유할 수 있지만 몇 가지 추가 단계가 필요 합니다.
 
 1. 일반 위치에 *editorconfig* 파일을 저장 합니다.
 
@@ -90,7 +93,7 @@ FxCop analyzer NuGet 패키지에는 다음 규칙 범주에 대 한 미리 정�
 4. 프로젝트를 다시 로드 합니다.
 
 > [!NOTE]
-> Editorconfig 파일을 사용 하 여 레거시 FxCop 규칙을 구성할 수 없습니다.
+> 여기서 설명 하는 EditorConfig 파일의 임의로 공유 된 위치는 FxCop 분석기 구성에만 적용 됩니다. 들여쓰기 및 코드 스타일과 같은 다른 설정의 경우에는 항상 EditorConfig 파일을 프로젝트 폴더 또는 부모 폴더에 배치 해야 합니다.
 
 ## <a name="option-scopes"></a>옵션 범위
 

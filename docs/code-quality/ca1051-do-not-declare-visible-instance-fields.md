@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5dd8a4b2d0b32a8c52f75dee6fd765a7ea6ec9a
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 455ab619f293981c5ebd3afba6336c63f2fe7f49
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547562"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766066"
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051: 표시되는 인스턴스 필드를 선언하지 마세요.
 
@@ -38,9 +38,11 @@ ms.locfileid: "69547562"
 
 ## <a name="rule-description"></a>규칙 설명
 
-필드의 주된 용도는 구현을 세부적으로 설명하는 것입니다. 필드는 또는 `private` `internal` 여야 하 고 속성을 사용 하 여 노출 되어야 합니다. 필드에 액세스 하는 것과 같이 속성에 쉽게 액세스할 수 있으며, 형식의 기능이 주요 변경 사항을 도입 하지 않고 확장 될 때 속성의 접근자에 있는 코드가 변경 될 수 있습니다. 전용 또는 내부 필드의 값을 반환 하는 속성은 필드 액세스와 동일 하 게 수행 하도록 최적화 되어 있습니다. 속성에 대해 외부적으로 표시 되는 필드의 사용과 관련 하 여 성능 향상이 거의 없습니다.
+필드의 주된 용도는 구현을 세부적으로 설명하는 것입니다. 필드는 또는 `private` `internal` 여야 하 고 속성을 사용 하 여 노출 되어야 합니다. 필드에 액세스 하는 것 처럼 속성에 쉽게 액세스할 수 있으며, 형식의 기능이 주요 변경 사항을 도입 하지 않고 확장 됨에 따라 속성의 접근자에 있는 코드가 변경 될 수 있습니다.
 
-외부적으로 표시 되 `public`는 `protected`는, `protected internal` ,`Public` `Protected`및(Visual Basic) 액세스 가능성 수준 에서,및를나타냅니다.`Protected Friend`
+전용 또는 내부 필드의 값을 반환 하는 속성은 필드 액세스와 동일 하 게 수행 하도록 최적화 되어 있습니다. 속성 대신 외부적으로 표시 되는 필드를 사용 하 여 얻을 수 있는 성능 향상은 최소입니다. *외부적으로 표시 되* `public`는 `protected`는, `protected internal` ,`Public`및 `Protected` (`Protected Friend` Visual Basic) 액세스 가능성 수준에서, 및를 나타냅니다.
+
+또한 public 필드는 [링크 요청](/dotnet/framework/misc/link-demands)으로 보호할 수 없습니다. 자세한 내용은 CA2112를 참조 [하세요. 보안 형식은 필드](../code-quality/ca2112-secured-types-should-not-expose-fields.md)를 노출 하면 안 됩니다. (링크 요청은 .NET Core 앱에 적용 되지 않습니다.)
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 
@@ -48,7 +50,12 @@ ms.locfileid: "69547562"
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 
-이 규칙에서는 경고를 표시해야 합니다. 외부적으로 표시 되는 필드는 속성에 사용할 수 없는 이점을 제공 하지 않습니다. 또한 public 필드는 [링크 요청](/dotnet/framework/misc/link-demands)으로 보호할 수 없습니다. CA2112 [를 참조 하세요. 보안 형식은 필드](../code-quality/ca2112-secured-types-should-not-expose-fields.md)를 노출 하면 안 됩니다.
+소비자가 필드에 직접 액세스 해야 하는 것이 확실 한 경우에만이 경고를 표시 합니다. 대부분의 응용 프로그램에서 노출 된 필드는 속성에 대 한 성능 또는 유지 관리 효율성 이점을 제공 하지 않습니다.
+
+소비자는 다음과 같은 경우에 필드 액세스가 필요할 수 있습니다.
+
+- ASP.NET Web Forms 콘텐츠 컨트롤에서
+- 대상 플랫폼에서를 사용 `ref` 하 여 WPF 및 UWP 용 MVVM (모델-뷰-viewmodel) 프레임 워크와 같은 필드를 수정 하는 경우
 
 ## <a name="configurability"></a>구성이
 

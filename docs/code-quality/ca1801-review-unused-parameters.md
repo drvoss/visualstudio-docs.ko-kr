@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9a0714082e0fce744fe74eaa4e4aefee5a41867
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: a73ce207d8efb0c6309ba52648c7231f89bc7984
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365372"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766053"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: 사용되지 않은 매개 변수를 검토하세요.
 
@@ -29,54 +29,56 @@ ms.locfileid: "67365372"
 |TypeName|ReviewUnusedParameters|
 |CheckId|CA1801|
 |범주|Microsoft.Usage|
-|변경 수준|주요 변경 아님-멤버를 변경 하면에 관계 없이 어셈블리 외부에서 볼 수 없는 경우.<br /><br /> 주요 변경 아님-본문 내에서 매개 변수를 사용 하 여 멤버를 변경 하는 경우.<br /><br /> 주요-매개 변수를 제거 하 고 어셈블리 외부에 표시 됩니다.|
+|변경 수준|중단-변경 내용에 관계 없이 멤버가 어셈블리 외부에 표시 되지 않는 경우<br /><br /> 중단 하지 않음-본문 내에서 매개 변수를 사용 하도록 멤버를 변경 하는 경우<br /><br /> 중단-매개 변수를 제거 하 고 어셈블리 외부에 표시 되는 경우입니다.|
 
 ## <a name="cause"></a>원인
 
-메서드 본문에서 사용 되지 않는 매개 변수를 포함 하는 메서드 시그니처입니다.
+메서드 시그니처에 메서드 본문에 사용 되지 않는 매개 변수가 포함 되어 있습니다.
 
-이 규칙에서 메서드는 다음과 같은 검사 하지 않습니다.
+이 규칙은 다음과 같은 종류의 방법을 검사 하지 않습니다.
 
-- 참조 하는 대리자 메서드입니다.
+- 대리자가 참조 하는 메서드입니다.
 
-- 메서드를 이벤트 처리기로 사용 합니다.
+- 이벤트 처리기로 사용 되는 메서드입니다.
 
-- 사용 하 여 선언 된 메서드를 `abstract` (`MustOverride` Visual basic에서) 한정자.
+- `abstract` (`MustOverride` Visual Basic) 한정자를 사용 하 여 선언 된 메서드입니다.
 
-- 사용 하 여 선언 된 메서드를 `virtual` (`Overridable` Visual basic에서) 한정자.
+- `virtual` (`Overridable` Visual Basic) 한정자를 사용 하 여 선언 된 메서드입니다.
 
-- 사용 하 여 선언 된 메서드를 `override` (`Overrides` Visual basic에서) 한정자.
+- `override` (`Overrides` Visual Basic) 한정자를 사용 하 여 선언 된 메서드입니다.
 
-- 메서드를 사용 하 여 선언 된 `extern` (`Declare` Visual Basic의 문) 한정자.
+- `extern` (`Declare` 문 Visual Basic) 한정자를 사용 하 여 선언 된 메서드입니다.
+
+[FxCop 분석기](install-fxcop-analyzers.md)를 사용 하는 경우이 규칙은 [삭제](/dotnet/csharp/discards) 기호로 명명 된 매개 변수 ( `_` `_1`예:, 및 `_2`)에 플래그를 지정 하지 않습니다. 이렇게 하면 시그니처 요구 사항에 필요한 매개 변수 (예: 대리자로 사용 된 메서드, 특수 특성이 있는 매개 변수) 또는 프레임 워크에 의해 런타임에 해당 값이 암시적으로 액세스 되지만에서 참조 되지 않는 매개 변수에 대 한 경고 노이즈를 줄일 수 있습니다. code.
 
 ## <a name="rule-description"></a>규칙 설명
 
-메서드 본문에 액세스 하는 데 실패 수정 사항이 있는지 확인 하려면 사용 되지 않는 비가상 메서드의 매개 변수를 검토 합니다. 사용 되지 않는 매개 변수에는 유지 관리 및 성능 비용이 발생합니다.
+메서드 본문에서 사용 되지 않는 비가상 메서드에서 매개 변수를 검토 하 여 해당 오류에 대 한 액세스 실패와 관련 하 여 존재 하지 않는지 확인 합니다. 사용 하지 않는 매개 변수는 유지 관리 및 성능 비용을 초래 합니다.
 
-경우에 따라이 규칙 위반 메서드 구현 버그를 가리킬 수 있습니다. 예를 들어, 매개 변수에 메서드 본문에서 사용 된 해야 합니다. 해당 매개 변수가 이전 버전과 호환성 때문에 존재 하는 경우에이 규칙의 경고를 표시 하지 않습니다.
+경우에 따라이 규칙의 위반이 메서드에서 구현 버그를 가리킬 수 있습니다. 예를 들어 매개 변수는 메서드 본문에서 사용 되어야 합니다. 이전 버전과의 호환성으로 인해 매개 변수가 존재 해야 하는 경우에는이 규칙의 경고를 표시 하지 않습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 
-이 규칙 위반 문제를 해결 하려면 사용 되지 않는 매개 변수 (주요 변경 내용)를 제거 하거나 메서드 본문 (줄 바꿈하지 않는 변경)의 매개 변수를 사용 합니다.
+이 규칙 위반 문제를 해결 하려면 사용 하지 않는 매개 변수 (주요 변경 내용)를 제거 하거나 메서드 본문에서 매개 변수 (주요 변경 내용)를 사용 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 
-이 규칙에서 경고를 표시 하지 않아도 안전 합니다.
+이 규칙의 경고는 무시 해도 됩니다.
 
-- 이전에 제공 된이 코드에는 수정 사항을 크게 변경 되었습니다.
+- 이전에 제공 된 코드에서 수정이 주요 변경 사항입니다.
 
-- 에 대 한 합니다 `this` 매개 변수 사용자 지정 확장 메서드로 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=nameWithType>합니다. 함수에는 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> 에 액세스 하지 않아도 되므로 클래스는 정적는 `this` 메서드 본문에서 매개 변수입니다.
+- 에 대<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=nameWithType>한 사용자 지정 확장 메서드의 매개변수입니다.`this` <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> 클래스의 함수는 정적 이므로 메서드 본문의 `this` 매개 변수에 액세스할 필요가 없습니다.
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 두 가지 방법을 보여 줍니다. 한 가지 방법은 해당 규칙을 위반 하 고 규칙을 충족 하는 다른 메서드.
+다음 예제에서는 두 개의 메서드를 보여 줍니다. 하나는 규칙을 위반 하 고 다른 메서드는 규칙을 충족 합니다.
 
 [!code-csharp[FxCop.Usage.ReviewUnusedParameters#1](../code-quality/codesnippet/CSharp/ca1801-review-unused-parameters_1.cs)]
 
-## <a name="related-rules"></a>관련된 규칙
+## <a name="related-rules"></a>관련 규칙
 
-[CA1811: 호출 되지 않는 전용 코드를 방지 합니다.](../code-quality/ca1811-avoid-uncalled-private-code.md)
+[CA1811: 호출 되지 않는 private 코드 방지](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
-[CA1812: 인스턴스화되지 않은 내부 클래스를 방지 합니다.](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+[CA1812: 인스턴스화되지 않은 내부 클래스를 사용 하지 마십시오.](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
-[CA1804: 사용 되지 않는 로컬 항목을 제거](../code-quality/ca1804-remove-unused-locals.md)
+[CA1804: 사용 하지 않는 지역 제거](../code-quality/ca1804-remove-unused-locals.md)

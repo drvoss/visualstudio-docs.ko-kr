@@ -24,7 +24,7 @@ Visual Studio에는 핵심*Roslyn*(.NET Compiler Platform) 분석기가 포함 �
 
 ## <a name="to-install-nuget-analyzer-packages"></a>NuGet 분석기 패키지를 설치 하려면
 
-1. www.nuget.org 설치 하려는 분석기 패키지를 찾습니다.
+1. [www.nuget.org](www.nuget.org) 설치 하려는 분석기 패키지를 찾습니다.
 
    예를 들어 [Microsoft FxCop 분석기를 설치](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) 하 여 코드에서 보안 및 성능 문제를 확인 하는 것이 좋습니다. 또는 [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/) 를 설치 하 여 코드 베이스에서 스타일 문제를 찾습니다.
 

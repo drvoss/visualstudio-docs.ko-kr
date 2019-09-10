@@ -42,3 +42,7 @@
       items:
         - name: 컨테이너 프로젝트에 대한 MSBuild 속성
           href: container-msbuild-properties.md
+        - name: Docker Compose 프로젝트에 대한 설정
+          href: docker-compose-properties.md
+        - name: 시작 설정
+          href: container-launch-settings.md

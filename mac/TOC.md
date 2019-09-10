@@ -100,13 +100,13 @@
 ## [Visual Studio 사용자 환경 개선 프로그램](visual-studio-experience-improvement-program.md)
 ## [문제 보고](report-a-problem.md)
 ## [문제 해결: Mac용 Visual Studio는 Team Foundation 버전 제어를 지원하나요?](tf-version-control.md)
-## [문제 해결: 왜 모든 템플릿을 볼 수 없나요?](troubleshooting-no-templates.md)
+## [문제 해결: 왜 모든 템플릿을 볼 수 없습니까?](troubleshooting-no-templates.md)
 ## [문제 해결: Updater에서 정보 검색 중에 오류가 발생했습니다.](updater-troubleshooting.md)
 
 # [릴리스 정보](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)
 # [미리 보기 릴리스 정보](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-preview-relnotes)
 # 샘플
-## [추천 샘플](samples.yml)
+## [추천 샘플](samples/index.yml)
 ## [모든 ASP.NET Core 샘플](https://docs.microsoft.com/samples/browse/?products=aspnet-core)
 ## [.NET Core 샘플](https://docs.microsoft.com/samples/browse/?products=dotnet-core)
 ## [모든 Xamarin.Forms 샘플](https://docs.microsoft.com/xamarin/xamarin-forms/samples/)

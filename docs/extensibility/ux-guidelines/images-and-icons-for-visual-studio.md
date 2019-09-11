@@ -269,7 +269,7 @@ ms.locfileid: "67891052"
 ### <a name="base-palette"></a>기본 색상표
  모든 표준 아이콘 세 가지 기본 색을 포함 합니다. 아이콘 없음 그라데이션을 포함 또는 3D 도구 아이콘에 대 한 하나 또는 두 개의 예외를 사용 하 여 그림자입니다.
 
-|사용법|이름|값 (밝은 테마)|견본|예제|
+|사용|이름|값 (밝은 테마)|견본|예제|
 |-----------|----------|---------------------------|------------|-------------|
 |배경/어둡게|VS BG|424242 / 66,66,66|![견본 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![기본 색상표 예](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405 02_BasePaletteExample")|
 |전경/리소스 사용량이 적음|VS FG|F0EFF1 240,239,241 /|![Swatch F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||
@@ -282,7 +282,7 @@ ms.locfileid: "67891052"
 #### <a name="action-modifiers"></a>작업 한정자
  다음 네 가지 색 작업 한정자에 필요한 동작의 유형을 나타냅니다.
 
-|사용법|이름|값 (모든 테마)|견본|
+|사용|이름|값 (모든 테마)|견본|
 |-----------|----------|--------------------------|------------|
 |양수|VS 작업 녹색|388A34 56,138,52 /|![Swatch 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|
 |음수|VS 작업 빨간색|A1260D / 161,38,13|![Swatch A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|
@@ -325,14 +325,14 @@ ms.locfileid: "67891052"
 
 #### <a name="folder"></a>폴더
 
-|사용법|이름|값 (모든 테마)|견본|예제|
+|사용|이름|값 (모든 테마)|견본|예제|
 |-----------|----------|--------------------------|------------|-------------|
 |폴더|폴더|DCB67A / 220,182,122|![Swatch DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![폴더 색 아이콘](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405 23_FolderColor")|
 
 #### <a name="visual-studio-languages"></a>Visual Studio 언어
  각 공용 언어 또는 Visual Studio에서 사용할 수 있는 플랫폼에 연결 된 색을 있습니다. 이러한 색은 기본 아이콘을 또는 복합 아이콘의 오른쪽 위 모서리에 표시 되는 언어 한정자에 사용 됩니다.
 
-|사용법|이름|값 (모든 테마)|견본|
+|사용|이름|값 (모든 테마)|견본|
 |-----------|----------|--------------------------|------------|
 |ASP, HTML, WPF|ASP HTML WPF 파랑|0095D 7 0,149,215 /|![Swatch 0095D7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|
 |C++|CPP 자주색|9B4F96 155,79,150 /|![Swatch 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|
@@ -354,7 +354,7 @@ ms.locfileid: "67891052"
 #### <a name="intellisense"></a>IntelliSense
  IntelliSense 아이콘은 배타적 색 색상표를 사용합니다. 이러한 색은 IntelliSense 팝업 목록에서 여러 항목을 신속 하 게 구분할 수 있도록 하는 데 사용 됩니다.
 
-|사용법|이름|값 (모든 테마)|견본|
+|사용|이름|값 (모든 테마)|견본|
 |-----------|----------|--------------------------|------------|
 |이벤트 클래스|VS 작업 주황색|C27D1A / 194,125,26|![Swatch C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|
 |확장 메서드, 메서드, 모듈, 대리자|VS 작업 자주색|652D90 / 101,45,144|![Swatch 652D90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|
@@ -372,7 +372,7 @@ ms.locfileid: "67891052"
 ### <a name="notifications"></a>알림
  Visual Studio의 알림 상태를 나타내는 데 사용 됩니다. 알림 색상표를 검정 또는 흰색 포그라운드 채우기 옵션 뿐만 아니라 다음 네 가지 색을 사용 하 여 다음 상태 수준 사용 하 여 알림을 정의.
 
-|사용법|이름|값 (모든 테마)|견본|
+|사용|이름|값 (모든 테마)|견본|
 |-----------|----------|--------------------------|------------|
 |상태: 중립|알림 파란색 (VS 파란색)|1BA1E2 / 27,161,226|![Swatch 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|
 |상태: 긍정|알림 녹색 (VS 녹색)|339933 / 51,153,51|![Swatch 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|
@@ -390,7 +390,7 @@ ms.locfileid: "67891052"
 ### <a name="visual-studio-online"></a>Visual Studio Online
  일반적으로 Visual Studio Online 기능으로 구성 됩니다 브라우저에 호스트 합니다. 다양 한 환경에서 색 다르지만 스타일 동일 하 게 유지 합니다.
 
-|그룹|사용법|이름|값 (모든 테마)|견본|
+|그룹|사용|이름|값 (모든 테마)|견본|
 |-----------|-----------|----------|--------------------------|------------|
 |TFS|배경|TFSO BG|656565/ 101, 101, 101|![견본 656565](../../extensibility/ux-guidelines/media/0405_656565.png "0405_656565")|
 |TFS|윤곽선|TFSO OUT|FFFFFF / 255, 255, 255|![견본 FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|

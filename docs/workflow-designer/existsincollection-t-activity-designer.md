@@ -35,7 +35,7 @@ ms.locfileid: "62949723"
 
 다음 표는 <xref:System.Activities.Statements.ExistsInCollection%601> 속성 디자이너에서 사용 되는 방법을 설명 합니다.
 
-|속성 이름|필수|사용법|
+|속성 이름|필수|사용|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.ExistsInCollection%601> 활동의 이름입니다. 기본값은 ExistsInCollection < Int32\>합니다. <xref:System.Activities.Activity.DisplayName%2A> 값은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
 |<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|True|컬렉션에서 검색할 항목\<T >입니다. 이 항목은 형식의 *T*, 형식인 *TypeArgument*합니다. 이 항목을 지정하려면 속성 표에 Visual Basic 식을 입력합니다.|

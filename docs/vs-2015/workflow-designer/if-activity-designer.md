@@ -24,7 +24,7 @@ ms.locfileid: "62956887"
 ## <a name="if-properties-in-the-workflow-designer"></a>워크플로 디자이너의 If 속성  
  다음 표에서는 가장 유용한 <xref:System.Activities.Statements.If> 활동 속성을 보여 주고 디자이너에서 이러한 속성을 사용하는 방법을 설명합니다.  
   
-|속성 이름|필수|사용법|  
+|속성 이름|필수|사용|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Statements.If.Condition%2A>|True|실행할 자식 활동을 결정하는 조건입니다. 설정 하는 <xref:System.Activities.Statements.If.Condition%2A>을 입력 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 식에는 **조건** 상자에 **경우** 활동 디자이너나 속성 표의.|  
 |<xref:System.Activities.Statements.If.Else%2A>|False|경우에 실행할 활동입니다 합니다 <xref:System.Activities.Statements.If.Condition%2A> 됩니다 **false**합니다. 실행 되는 활동을 추가 하는 <xref:System.Activities.Statements.If.Else%2A> 분기에서의 활동를 **도구 상자** 에 **Else** 상자에 **경우** 힌트 텍스트가 있는 활동 디자이너 " 여기에 작업 놓기 "입니다.|  

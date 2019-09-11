@@ -24,7 +24,7 @@ ms.locfileid: "62785272"
 ## <a name="dowhile-properties-in-the-workflow-designer"></a>Workflow Designer의 DoWhile 속성  
  다음 표에서는 가장 유용한 <xref:System.Activities.Statements.DoWhile> 활동 속성을 보여 주고 디자이너에서 이러한 속성을 사용하는 방법을 설명합니다.  
   
-|속성 이름|필수|사용법|  
+|속성 이름|필수|사용|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Statements.DoWhile.Body%2A>|False|조건은 하는 동안 실행할 활동입니다 **true**합니다. 추가할를 <xref:System.Activities.Statements.DoWhile.Body%2A> 활동을 도구 상자에서 활동을 **본문** 상자에 **DoWhile** 여기에 작업 놓기 "힌트 텍스트가 있는 활동 디자이너.|  
 |<xref:System.Activities.Statements.DoWhile.Condition%2A>|True|루프를 반복할 때마다 평가할 조건입니다. 설정 하는 <xref:System.Activities.Statements.DoWhile.Condition%2A>, 입력 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 식에는 **조건** 상자에 **DoWhile** 활동 디자이너나 속성 표의.|  

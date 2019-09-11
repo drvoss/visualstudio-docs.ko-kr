@@ -29,7 +29,7 @@ ms.locfileid: "65683026"
 |-|-|
 |TypeName|CallGCSuppressFinalizeCorrectly|
 |CheckId|CA1816|
-|범주|Microsoft. 사용법|
+|범주|Microsoft. 사용|
 |변경 수준|주요 변경 아님|
 
 ## <a name="cause"></a>원인

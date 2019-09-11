@@ -33,7 +33,7 @@ ms.locfileid: "63009277"
 
 다음 표는 <xref:System.Activities.Statements.Rethrow> 속성을 디자이너에서 사용 하는 방법을 설명 합니다.
 
-|속성 이름|필수|사용법|
+|속성 이름|필수|사용|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.Rethrow> 활동의 선택적 이름을 지정합니다. 기본값은 Rethrow입니다.|
 

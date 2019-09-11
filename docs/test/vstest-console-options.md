@@ -43,7 +43,7 @@ ms.locfileid: "69551826"
 |**/Platform:[*플랫폼 형식*]**|테스트를 실행하는 데 사용할 대상 플랫폼 아키텍처입니다.<br />올바른 값은 x86, x64 및 ARM입니다.|
 |**/Framework: [*프레임워크 버전*]**|테스트 실행에 사용될 .NET 버전을 대상 지정합니다.<br />예제 값은 `Framework35`, `Framework40`, `Framework45`, `FrameworkUap10`, `.NETCoreApp,Version=v1.1`입니다.<br />대상 프레임워크가 **Framework35**로 지정된 경우 테스트가 CLR 4.0 “호환 가능 모드”에서 실행됩니다.<br />예: `/Framework:framework40`|
 |**/TestCaseFilter:[*식*]**|지정된 식과 일치하는 테스트를 실행합니다.<br /><Expression\>은 <property\>=<value\>[\|<Expression\>] 형식입니다.<br />예: `/TestCaseFilter:"Priority=1"`<br />예: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />**/TestCaseFilter** 명령줄 옵션은 **/Tests** 명령줄 옵션과 함께 사용할 수 없습니다. <br />식 만들기 및 사용에 대한 정보는 [TestCase 필터](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md)를 참조하세요.|
-|**/?**|사용법 정보를 표시합니다.|
+|**/?**|사용 정보를 표시합니다.|
 |**/Logger:[*uri/friendlyname*]**|테스트 결과에 대해 로거를 지정합니다.<br />예제: Visual Studio 테스트 결과 파일(TRX)에 결과를 기록하려면 **/Logger:trx**를 사용합니다.<br />예제: Team Foundation Server에 테스트 결과를 게시하려면 TfsPublisher를 사용합니다.<br />**/logger:TfsPublisher;**<br />**Collection=<프로젝트 url\>;**<br />**BuildName=<빌드 이름\>;**<br />**TeamProject=<프로젝트 이름\>;**<br />**[;Platform=\<기본값은 "Any CPU">]**<br />**[;Flavor=\<기본값은 "Debug">]**<br />**[;RunTitle=<제목\>]**|
 |**/ListTests:[*파일 이름*]**|지정된 테스트 컨테이너에서 검색된 테스트를 나열합니다.|
 |**/ListDiscoverers**|설치된 테스트 Discoverer를 나열합니다.|

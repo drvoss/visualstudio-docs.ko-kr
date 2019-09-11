@@ -25,7 +25,7 @@ ms.locfileid: "62949736"
 
 다음 표에서 가장 유용한 <xref:System.Activities.Statements.DoWhile> 활동 속성을 디자이너에서 사용 하는 방법을 설명 합니다.
 
-|속성 이름|필수|사용법|
+|속성 이름|필수|사용|
 |-|--------------|-|
 |<xref:System.Activities.Statements.DoWhile.Body%2A>|False|조건은 하는 동안 실행할 활동입니다 **true**합니다. 추가할를 <xref:System.Activities.Statements.DoWhile.Body%2A> 활동을 도구 상자에서 활동을 **본문** 상자에 **DoWhile** 여기에 작업 놓기 "힌트 텍스트가 있는 활동 디자이너.|
 |<xref:System.Activities.Statements.DoWhile.Condition%2A>|True|루프를 반복할 때마다 평가할 조건입니다. 설정 하는 <xref:System.Activities.Statements.DoWhile.Condition%2A>, Visual Basic 식을 입력 합니다 **조건** 상자에 **DoWhile** 활동 디자이너나 속성 표의.|

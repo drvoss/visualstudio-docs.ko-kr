@@ -448,7 +448,7 @@ some F# code
 |ViewColorizedText|컬러로 보기|
 |CombinedVBTabDisplayLanguage|Visual Basic (샘플)|
 |VBDeclaration|선언|
-|VBUsage|사용법|
+|VBUsage|사용|
 |기능:|**피드백, 바닥글 및 로고**|
 |사용:|전자 메일을 통해 현재 항목에 대 한 피드백을 제공 하는 고객에 대 한 피드백 컨트롤을 제공 합니다.  콘텐츠에 대 한 저작권 텍스트입니다.  로고 정의입니다.|
 |**요소**|**값 (콘텐츠 얼 리 어댑터 요구에 맞게 이러한 문자열을 수정할 수 있습니다.)**|

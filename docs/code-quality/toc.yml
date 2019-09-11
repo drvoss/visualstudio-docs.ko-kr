@@ -692,6 +692,8 @@
                   href: ca3011-review-code-for-dll-injection-vulnerabilities.md
                 - name: 'CA3012: 코드에서 regex 삽입 취약성에 대해 검토합니다.'
                   href: ca3012-review-code-for-regex-injection-vulnerabilities.md
+                - name: 'CA3061: URL로 스키마를 추가하지 마세요.'
+                  href: ca3061.md
                 - name: 'CA3075: DTD 처리가 안전하지 않습니다.'
                   href: ca3075-insecure-dtd-processing.md
                 - name: 'CA3076: XSLT 스크립트 실행이 안전하지 않습니다.'
@@ -702,12 +704,30 @@
                   href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
                 - name: 'CA5361: 강력한 암호의 SChannel 사용을 비활성화하지 마세요.'
                   href: ca5361.md
+                - name: 'CA5363: 요청 유효성 검사를 사용하지 않도록 설정하지 마세요.'
+                  href: ca5363.md
                 - name: 'CA5364: 사용되지 않는 보안 프로토콜을 사용하지 마세요.'
                   href: ca5364.md
+                - name: 'CA5369: Deserialize에 XmlReader를 사용하세요.'
+                  href: ca5369.md
+                - name: 'CA5370: 판독기 유효성 검사에 XmlReader를 사용하세요.'
+                  href: ca5370.md
+                - name: 'CA5371: 스키마 읽기에 XmlReader를 사용하세요.'
+                  href: ca5371.md
+                - name: 'CA5372: XPathDocument에 XmlReader를 사용하세요.'
+                  href: ca5372.md
+                - name: 'CA5373: 사용되지 않는 키 파생 함수를 사용하지 마세요.'
+                  href: ca5373.md
                 - name: 'CA5378: ServicePointManagerSecurityProtocols를 비활성화하지 마세요.'
                   href: ca5378.md
+                - name: 'CA5380: 루트 저장소에 인증서를 추가하지 마세요.'
+                  href: ca5380.md
+                - name: 'CA5381: 인증서가 루트 저장소에 추가되지 않았는지 확인하세요.'
+                  href: ca5381.md
                 - name: 'CA5386: SecurityProtocolType 값을 하드 코딩하지 마세요.'
                   href: ca5386.md
+                - name: 'CA5389: 대상 파일 시스템 경로에 보관 항목의 경로를 추가하지 마세요.'
+                  href: ca5389.md
                 - name: 'CA5397: 사용되지 않는 SslProtocols 값을 사용하지 마세요.'
                   href: ca5397.md
                 - name: 'CA5398: SslProtocols 값을 하드 코딩하지 마세요.'

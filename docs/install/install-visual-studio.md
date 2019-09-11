@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4833c6e8e1391028fbb034ff96967450d006356a
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: ac40a7e7d62417d2d89302304501fb2b3ecd34f4
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263718"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293712"
 ---
 # <a name="install-visual-studio"></a>Visual Studio 설치
 
@@ -112,7 +112,7 @@ Visual Studio 2019와 함께 이전 버전의 Visual Studio를 실행하는 방�
 ::: moniker range="vs-2019"
 
  > [!div class="button"]
- > [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
+ > [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 

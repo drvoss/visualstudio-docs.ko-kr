@@ -52,7 +52,7 @@ ms.locfileid: "63003628"
 
 다음 표에서 가장 유용한 <xref:System.Activities.Statements.PickBranch> 속성 워크플로 디자이너에서 사용 하는 방법을 설명 합니다.
 
-|속성 이름|필수|사용법|
+|속성 이름|필수|사용|
 |-|--------------|-|
 |<xref:System.Activities.Statements.PickBranch.DisplayName%2A>|False|헤더에 표시 되는 친숙 한 이름 합니다 **PickBranch** 디자이너입니다. 기본값은 분기입니다.<br /><br /> <xref:System.Activities.Activity.DisplayName%2A>은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
 |<xref:System.Activities.Statements.PickBranch.Trigger%2A>|True|각 <xref:System.Activities.Statements.PickBranch>에는 <xref:System.Activities.Statements.PickBranch.Trigger%2A>을 호출할 수 있는 <xref:System.Activities.Statements.PickBranch.Action%2A> 활동이 포함되어 있습니다.|

@@ -39,7 +39,7 @@ ms.locfileid: "66747142"
 
 다음 표는 <xref:System.Activities.Statements.Interop> 속성을 디자이너에서 사용 되는 방법을 설명 합니다. 속성 표에서 또는 워크플로 디자이너 화면에서 이러한 속성을 편집할 수 있습니다.
 
-|속성 이름|필수|사용법|
+|속성 이름|필수|사용|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.Interop> 활동의 이름입니다. 기본값은 **Interop**합니다. 표시 이름에 필요 하지는 않지만 것이 좋습니다 하나를 제공 합니다.|
 |<xref:System.Activities.Statements.Interop.ActivityType%2A>|True|<xref:System.Activities.Statements.Interop> 활동에 포함된 활동의 형식을 지정합니다. 지정된 이 형식은 <xref:System.Workflow.ComponentModel.Activity>에서 파생된 것이어야 합니다.|

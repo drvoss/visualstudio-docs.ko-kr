@@ -46,7 +46,7 @@ MSBuild.exe [Switches] [ProjectFile]
   
 |스위치|약식|설명|  
 |------------|----------------|-----------------|  
-|/help|/? 또는 /h|사용법 정보를 표시합니다. 다음 명령을 예로 들 수 있습니다.<br /><br /> `msbuild.exe /?`|  
+|/help|/? 또는 /h|사용 정보를 표시합니다. 다음 명령을 예로 들 수 있습니다.<br /><br /> `msbuild.exe /?`|  
 |/detailedsummary|/ds|빌드된 구성과 노드에 대한 해당 구성의 예약 상태와 관련된 자세한 정보를 빌드 로그 끝에 표시합니다.|  
 |/ignoreprojectextensions: `extensions`|/ignore: `extensions`|빌드할 프로젝트 파일을 결정할 때 지정된 확장명을 무시합니다. 다음 예제에서와 같이 여러 확장명은 세미콜론이나 쉼표로 구분합니다.<br /><br /> `/ignoreprojectextensions:.vcproj,.sln`|  
 |/maxcpucount[:`number`]|/m[:`number`]|빌드할 때 사용할 동시 프로세스의 최대 수를 지정합니다. 이 스위치를 포함하지 않으면 기본값은 1입니다. 값을 지정하지 않고 이 스위치를 포함하는 경우, MSBuild는 컴퓨터의 최대 프로세서 수만큼 사용합니다. 자세한 내용은 [병렬로 여러 프로젝트 빌드](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)를 참조하세요.<br /><br /> 다음 예제에서는 세 가지 MSBuild 프로세스를 사용해서 빌드하도록 MSBuild에 지시하여 세 프로젝트를 동시에 빌드할 수 있도록 합니다.<br /><br /> `msbuild myproject.proj /maxcpucount:3`|  

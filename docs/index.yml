@@ -8,12 +8,14 @@ metadata:
   description: Visual Studio를 사용하여 선택한 언어로 플랫폼 또는 디바이스에 대한 애플리케이션, 서비스 및 도구를 개발하는 방법에 대해 알아봅니다.
   ms.topic: hub-page
   monikerRange: '>=vs-2017'
-  ms.openlocfilehash: 22c6d731d3c7bfaefb6ee0d89d7bae088d86c035
-  ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
+  f1_keywords:
+  - MSDNSTART
+  ms.openlocfilehash: 0853a20309869e5cde753685f20584bbd0a3e7dd
+  ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 09/03/2019
-  ms.locfileid: "70222665"
+  ms.lasthandoff: 09/10/2019
+  ms.locfileid: "70864664"
 highlightedContent:
   items:
   - title: 설정 및 설치

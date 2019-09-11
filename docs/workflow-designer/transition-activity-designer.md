@@ -29,7 +29,7 @@ ms.locfileid: "62433945"
 
 다음 표에서는 워크플로 디자이너를 사용하여 설정할 수 있는 <xref:System.Activities.Statements.Transition> 속성을 보여 주고 디자이너에서 이러한 속성을 사용하는 방법을 설명합니다.
 
-|속성 이름|필수|사용법|
+|속성 이름|필수|사용|
 |-|--------------|-|
 |<xref:System.Activities.Statements.Transition.DisplayName%2A>|False|<xref:System.Activities.Statements.Transition> 활동 디자이너의 이름을 지정합니다. 기본값은 **T1**합니다. 값은 속성 표, 확장된 전환 디자이너의 헤더 및 확장된 전환 디자이너 내에서 작업 섹션의 헤더에서 편집할 수 있습니다. <xref:System.Activities.Activity.DisplayName%2A>은 워크플로 디자이너 상단에 표시되는 이동 경로 탐색에 사용됩니다.<br /><br /> <xref:System.Activities.Activity.DisplayName%2A>은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
 |<xref:System.Activities.Statements.Transition.Condition%2A>|False|있는 경우 계산 되어야 하는 식을 지정 **True** 전에 대상 상태로 제어가 전달 됩니다. 속성 표 및 확장 전환 디자이너에서 이 조건을 편집할 수 있습니다. 전환 디자이너에 나타나는 순서로 공유 전환의 여러 조건을 평가합니다. **참고:**  경우는 <xref:System.Activities.Statements.Transition.Condition%2A> 로 전환 **False** (모든 공유 트리거 전환 조건이 또는 **False**), 전환이 발생 하지 것입니다 및 모두에 대 한 모든 트리거를 상태 전환은 다시 실행 됩니다. 이 자습서에서는 조건이 구성된 방식(추측이 올바른지 또는 잘못되었는지에 따라 특정 동작이 지정됨) 때문에 이러한 상황이 발생할 수 없습니다.|

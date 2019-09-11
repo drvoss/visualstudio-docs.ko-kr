@@ -63,7 +63,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |**Output:** *path*&#124;*filename*|생성된 보고서 파일에 대한 대체 위치를 지정합니다. 기본적으로 보고서는 현재 디렉터리에 만들어집니다.|  
 |**SummaryFile**|분석을 수행한 후 분석한 정보를 .vsps 요약 파일에 저장합니다.|  
 |**PrintMarks**|지정한 vsp 파일에 있는 모든 표시의 이름 및 타임스탬프를 표시합니다.|  
-|**?**|사용법 정보를 표시합니다.|  
+|**?**|사용 정보를 표시합니다.|  
 |**NoLogo**|보고서를 실행하고 있을 때 버전 정보를 숨깁니다.|  
 |**UserRulesDirectory**|사용자 정의 성능 규칙을 포함하는 디렉터리를 지정합니다[아직 구현되지 않음은].|  
   

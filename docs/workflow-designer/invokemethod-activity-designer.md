@@ -33,7 +33,7 @@ ms.locfileid: "62537643"
 
 다음 표는 <xref:System.Activities.Statements.InvokeMethod> 속성 디자이너에서 사용 하는 방법을 설명 합니다. 이러한 속성은 속성 표에서 편집할 수 있습니다 하 고 일부는 워크플로 디자이너 화면에서 편집할 수 있습니다.
 
-|속성 이름|필수|사용법|
+|속성 이름|필수|사용|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.InvokeMethod> 활동의 이름입니다. 기본값은 InvokeMethod입니다.<br /><br /> 하지만 <xref:System.Activities.Activity.DisplayName%2A> 은 꼭 필요 하지 하나를 사용 하는 것이 좋습니다.|
 |<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|True|작업이 실행될 때 호출할 메서드의 이름입니다. 호출된 된 메서드에서 선언 해야 합니다 **공용**합니다. 이 속성에는 디자이너 화면에서 편집할 수 있습니다 이며 필수입니다.|

@@ -162,7 +162,7 @@ FastCGI는 요청 수준에서 작동하는 인터페이스입니다. IIS는 들
 
 서버 환경에서 직접 패키지를 설치하려면 다음 방법 중 하나를 사용합니다.
 
-| 메서드 | 사용법 |
+| 메서드 | 사용 |
 | --- | --- |
 | [Azure App Service Kudu 콘솔](#azure-app-service-kudu-console) | 대화형으로 패키지를 설치합니다. 패키지는 순수한 Python이거나 휠을 게시해야 합니다. |
 | [Kudu REST API](#kudu-rest-api) | 패키지 설치를 자동화하는 데 사용할 수 있습니다.  패키지는 순수한 Python이거나 휠을 게시해야 합니다. |

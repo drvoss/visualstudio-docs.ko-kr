@@ -31,7 +31,7 @@ ms.locfileid: "66746774"
 |**실행 중인 프로세스에 연결**|-   [.NET Framework 독립 실행형 애플리케이션](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md)<br />-   [기본 독립 실행형 애플리케이션](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-application-statistics.md)<br />-   [ASP.NET 웹 애플리케이션](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)<br />-   [.NET 서비스](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)<br />-   [기본 서비스](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md)|
 
 ## <a name="use-the-instrumentation-method-to-collect-detailed-timing-data"></a>계측 방법을 사용하여 자세한 타이밍 데이터 수집
- 프로파일링 도구의 계측 방법은 소프트웨어 프로브가 포함된 애플리케이션 이진 파일의 복사본에서 성능 데이터를 수집하여 성능 정보를 기록합니다. 계측 데이터는 계측된 각 함수의 시작과 끝, 그리고 계측된 함수에서 다른 함수로의 모든 호출에서 수집됩니다. 계측 방법은 디스크 사용과 같은 I/O 문제를 통해 성능 문제를 파악하는 데 유용합니다.
+ 프로파일링 도구의 계측 방법은 소프트웨어 프로브가 포함된 애플리케이션 이진 파일의 복사본에서 성능 데이터를 수집하여 성능 정보를 기록합니다. 계측 데이터는 계측된 각 함수의 시작과 끝, 그리고 계측된 함수에서 다른 함수로의 모든 호출에서 수집됩니다. 계측 방법은 디스크 사용량과 같은 I/O 문제를 통해 성능 문제를 파악하는 데 유용합니다.
 
  [VInstr.exe](../profiling/vsinstr.md) 도구를 사용하여 계측된 이진 파일을 만듭니다. 프로파일러를 초기화하고 나면 대상 애플리케이션을 실행할 때 계측된 이진 파일에서 데이터가 자동으로 수집됩니다.
 

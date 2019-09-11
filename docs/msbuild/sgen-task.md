@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7da05a71d5de4a8f1ec6ef5fbb27a2e74220a1ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c326dc31f6ce80026f1c83c5b71f8e27faabf93e
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993243"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887638"
 ---
 # <a name="sgen-task"></a>SGen 작업
 지정된 어셈블리의 형식에 대한 XML serialization 어셈블리를 만듭니다. 이 작업은 XML Serializer 생성기 도구(*Sgen.exe*)를 래핑합니다. 자세한 내용은 [XML Serializer 생성기 도구(Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe)를 참조하세요.
@@ -35,7 +35,7 @@ ms.locfileid: "62993243"
 |-----------------------------| - |
 | `BuildAssemblyName` | 필수 `String` 매개 변수입니다.<br /><br /> serialization 코드를 생성할 어셈블리입니다. |
 | `BuildAssemblyPath` | 필수 `String` 매개 변수입니다.<br /><br /> serialization 코드를 생성할 어셈블리 경로입니다. |
-| `DelaySign` | 선택적 `Boolean` 매개 변수입니다.<br /><br /> 완전히 서명된 어셈블리를 만들려는 경우 `true`를 지정합니다. 어셈블리에 공개 키만 저장하려 경우 `false`를 지정합니다.<br /><br /> 이 매개 변수는 `KeyFile` 또는 `KeyContainer` 매개 변수와 함께 사용하지 않는 한 효과가 없습니다. |
+| `DelaySign` | 선택적 `Boolean` 매개 변수입니다.<br /><br /> 어셈블리에 공개 키만 저장하려 경우 `true`를 지정합니다. 완전히 서명된 어셈블리를 만들려는 경우 `false`를 지정합니다.<br /><br /> 이 매개 변수는 `KeyFile` 또는 `KeyContainer` 매개 변수와 함께 사용하지 않는 한 효과가 없습니다. |
 | `KeyContainer` | 선택적 `String` 매개 변수입니다.<br /><br /> 키 쌍을 보관하는 컨테이너를 지정합니다. 어셈블리 매니페스트에 공개 키를 삽입하여 어셈블리에 서명합니다. 그런 다음 이 작업은 프라이빗 키를 사용하여 최종 어셈블리에 서명합니다. |
 | `KeyFile` | 선택적 `String` 매개 변수입니다.<br /><br /> 어셈블리 서명에 사용할 키 쌍 또는 공개 키를 지정합니다. 컴파일러는 퍼블릭 키를 어셈블리 매니페스트에 삽입한 다음 프라이빗 키를 사용하여 최종 어셈블리에 서명합니다. |
 | `Platform` | 선택적 `String` 매개 변수입니다.<br /><br /> 출력 어셈블리를 생성하는 데 사용되는 컴파일러 플랫폼을 가져오거나 설정합니다. 이 매개 변수는 `x86`, `x64` 또는 `anycpu` 값을 가질 수 있습니다. 기본값은 `anycpu`입니다. |
@@ -49,7 +49,7 @@ ms.locfileid: "62993243"
 | `Types` | 선택적 `String[]` 매개 변수입니다.<br /><br /> serialization 코드를 생성하기 위한 특정 형식의 목록을 가져오거나 설정합니다. SGen은 해당 형식에 대해서만 serialization 코드를 생성합니다. |
 | `UseProxyTypes` | 필수 `Boolean` 매개 변수입니다.<br /><br /> `true`이면 SGen 작업은 XML Web services 프록시 형식에 대해서만 serialization 코드를 생성합니다. |
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
  이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.ToolTask> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [ToolTaskExtension 기본 클래스](../msbuild/tooltaskextension-base-class.md)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목

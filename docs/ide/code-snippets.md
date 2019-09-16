@@ -17,12 +17,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 98dadaed75cf16ae6ae35da9d6589355a63bd35c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 89de993337ecd214c7771faf17b24f90fa5e0110
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975249"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766250"
 ---
 # <a name="code-snippets"></a>코드 조각
 
@@ -31,7 +31,7 @@ ms.locfileid: "62975249"
 > [!NOTE]
 > 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [코드 조각(Mac용 Visual Studio)](/visualstudio/mac/snippets)을 참조하세요.
 
-코드 조각은 C#, C++, Visual Basic, XML, T-SQL 등을 비롯하여 많은 언어에 대해 사용할 수 있습니다. 언어에 대해 사용할 수있는 모든 설치된 코드 조각을 보려면 Visual Studio의 **도구** 메뉴에서 **코드 조각 관리자**를 열고 맨 위에 있는 드롭다운 메뉴에서 언어를 선택합니다.
+코드 조각은 C#, C++, Visual Basic, XML, T-SQL 등을 비롯하여 많은 언어에 대해 사용할 수 있습니다. 언어에 대해 사용할 수 있는 모든 설치된 코드 조각을 보려면 **도구** 메뉴에서 **코드 조각 관리자**를 열거나 **Ctrl**+**K**, **Ctrl**+**B**를 누르고 맨 위에 있는 드롭다운 메뉴에서 언어를 선택합니다.
 
 ![코드 조각 관리자 대화 상자](media/code-snippets-manager.png)
 
@@ -41,7 +41,7 @@ ms.locfileid: "62975249"
 
 - 마우스 오른쪽 단추를 클릭하거나 코드 편집기의 컨텍스트 메뉴에서 **코드 조각** > **조각 삽입**을 선택
 
-- 키보드에서 **Ctrl**+**K**+**X**를 누름
+- 키보드에서 **Ctrl**+**K**,**Ctrl**+**X**를 누름
 
 ## <a name="expansion-snippets-and-surround-with-snippets"></a>확장 조각 및 코드 감싸기 조각
 

@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 6d9fd531016a4ac5784f927641a181ac05e4c9ae
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: de92c3f1f0d0e29d1ba2dfaf5d536a42e636be2c
+ms.sourcegitcommit: 9f11537a721e69879a612979a1aca98f40bb4d4d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661861"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70383744"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Visual Studio에서 npm 패키지 관리
 
@@ -31,7 +31,10 @@ Visual Studio를 사용하면 쉽게 npm과 상호 작용하고 UI를 통해 또
 이러한 기능은 함께 작동하며 프로젝트 시스템 및 프로젝트의 *package.json* 파일과 동기화됩니다.
 
 > [!Important]
-> NPM에는 프로젝트 루트의 *node_modules* 폴더 및 *package.json*이 필요합니다. 앱의 폴더 구조가 다른 경우 Visual Studio를 사용하여 npm 패키지를 관리하려면 [프로젝트를 폴더로 열거나](npm-package-management.md) 폴더 구조를 업데이트할 수 있습니다.
+> NPM에는 프로젝트 루트의 *node_modules* 폴더 및 *package.json*이 필요합니다. 앱의 폴더 구조가 다른 경우 Visual Studio를 사용하여 npm 패키지를 관리하려면 폴더 구조를 업데이트해야 합니다.
+
+> [!NOTE]
+> 기존 NPM 프로젝트의 경우 **기존 Node.js 코드에서** 솔루션 템플릿을 사용합니다.
 
 ## <a name="npmInstallWindow"></a> 솔루션 탐색기에서 패키지 설치
 

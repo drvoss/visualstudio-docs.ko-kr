@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fbecfb7e74b38bb935414e701618cef361bf0506
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 2f2ff06cc920568b8c344fef42d01408d3134fd8
+ms.sourcegitcommit: dae5dfd626277b58ebd7b21a75757f683f1eacc5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180015"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739300"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Visual Studio 설치 및 업그레이드 문제 해결
 
@@ -29,9 +29,9 @@ ms.locfileid: "70180015"
 
 이 문제 해결 가이드에는 대부분의 설치 문제를 해결할 수 있는 단계별 지침이 포함되어 있습니다.
 
-## <a name="how-to-troubleshoot-an-online-installation"></a>온라인 설치 문제를 해결하는 방법
+## <a name="troubleshoot-an-online-installation"></a>온라인 설치 문제 해결
 
-다음 단계는 일반적인 온라인 설치에 최적화되어 있습니다. 오프라인 설치에 영향을 주는 문제의 경우 [오프라인 설치 문제를 해결하는 방법](#how-to-troubleshoot-an-offline-installation)을 참조하세요.
+다음 단계는 일반적인 온라인 설치에 최적화되어 있습니다. 오프라인 설치에 영향을 주는 문제의 경우 [오프라인 설치 문제를 해결하는 방법](#troubleshoot-an-offline-installation)을 참조하세요.
 
 ### <a name="step-1---check-whether-this-problem-is-a-known-issue"></a>1단계 - 이 문제가 알려진 문제인지 확인
 
@@ -82,7 +82,7 @@ Visual Studio 설치 관리자 부트스트래퍼는 나머지 Visual Studio 설
 
 ::: moniker range="vs-2017"
 
-1. 설치 로그를 수집합니다. 자세한 내용은 [Visual Studio 설치 로그를 가져오는 방법](#how-to-get-visual-studio-installation-logs)을 참조하세요.
+1. 설치 로그를 수집합니다. 자세한 내용은 [Visual Studio 설치 로그를 가져오는 방법](#get-installation-logs)을 참조하세요.
 2. Visual Studio 설치 관리자를 열고 **문제 보고**를 클릭하여 Visual Studio 피드백 도구를 엽니다.
 ![[피드백 제공] 단추를 탭하여 피드백 도구를 열 수 있음](media/report-a-problem.png)
 3. 문제 보고서의 제목을 지정하고 관련 세부 정보를 제공합니다. **다음**을 클릭하여 **첨부 파일** 섹션으로 이동하고 생성된 로그 파일을 첨부합니다. 일반적으로 파일은 `%TEMP%\vslogs.zip`에 있습니다.
@@ -92,7 +92,7 @@ Visual Studio 설치 관리자 부트스트래퍼는 나머지 Visual Studio 설
 
 ::: moniker range="vs-2019"
 
-1. 설치 로그를 수집합니다. 자세한 내용은 [Visual Studio 설치 로그를 가져오는 방법](#how-to-get-visual-studio-installation-logs)을 참조하세요.
+1. 설치 로그를 수집합니다. 자세한 내용은 [Visual Studio 설치 로그를 가져오는 방법](#get-installation-logs)을 참조하세요.
 2. Visual Studio 설치 관리자를 열고 **문제 보고**를 클릭하여 Visual Studio 피드백 도구를 엽니다.
 ![[피드백 제공] 단추를 탭하여 피드백 도구를 열 수 있음](media/vs-2019/vs-installer-report-problem.png)
 3. 문제 보고서의 제목을 지정하고 관련 세부 정보를 제공합니다. **다음**을 클릭하여 **첨부 파일** 섹션으로 이동하고 생성된 로그 파일을 첨부합니다. 일반적으로 파일은 `%TEMP%\vslogs.zip`에 있습니다.
@@ -112,7 +112,7 @@ Visual Studio 설치 관리자 부트스트래퍼는 나머지 Visual Studio 설
 
 이전 단계가 Visual Studio를 설치하거나 업그레이드하는 데 도움이 되지 않는 경우 [**라이브 채팅**](https://visualstudio.microsoft.com/vs/support/#talktous) 지원 옵션(영어로만 제공)을 사용하여 추가 지원을 받으세요.
 
-## <a name="how-to-troubleshoot-an-offline-installation"></a>오프라인 설치 문제를 해결하는 방법
+## <a name="troubleshoot-an-offline-installation"></a>오프라인 설치 문제 해결
 
 다음은 로컬 레이아웃에서 설치할 때 도움이 되는 알려진 문제 및 몇 가지 해결 방법의 표입니다.
 
@@ -121,7 +121,7 @@ Visual Studio 설치 관리자 부트스트래퍼는 나머지 Visual Studio 설
 | 사용자에게 파일에 액세스할 수 있는 권한이 없습니다. | 권한(ACL) | 오프라인 설치를 공유하기 *전에* 먼저 다른 사용자에게 읽기 액세스 권한을 부여하도록 권한(ACL)을 조정해야 합니다. |
 | 새 작업, 구성 요소 또는 언어가 설치되지 않습니다.  | `--layout`  | 부분 레이아웃에서 설치하고 해당 부분 레이아웃에서 이전에 다운로드하지 않은 워크로드, 구성 요소 또는 언어를 선택하는 경우 인터넷에 액세스할 수 있는지 확인합니다. |
 
-## <a name="how-to-get-visual-studio-installation-logs"></a>Visual Studio 설치 로그를 가져오는 방법
+## <a name="get-installation-logs"></a>설치 로그 가져오기
 
 대부분의 설치 문제 해결에는 설치 로그가 필요합니다. Visual Studio 설치 관리자에서 [문제 보고](../ide/how-to-report-a-problem-with-visual-studio.md)를 사용하여 문제를 제출하는 경우 이러한 로그는 보고서에 자동으로 포함됩니다.
 

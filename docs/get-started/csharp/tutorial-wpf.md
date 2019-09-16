@@ -14,22 +14,26 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d146416190924c8f1835ef17bc0fb622fcc53e03
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: facd2ed28ae4eb3e34843bff331567c4c8c55526
+ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180212"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864752"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>자습서: C\#으로 간단한 애플리케이션 만들기
 
 이 자습서를 완료하면 Visual Studio를 사용하여 애플리케이션을 개발할 때 사용할 수 있는 여러 도구, 대화 상자 및 디자이너에 익숙해집니다. [IDE](visual-studio-ide.md)(통합 개발 환경)의 작업에 대해 배우면서 “Hello, World” 애플리케이션을 만들고, UI를 디자인하고, 코드를 추가하고, 오류를 디버그하게 됩니다.
 
+## <a name="prerequisites"></a>전제 조건
+
 ::: moniker range="vs-2017"
-아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 페이지로 이동하여 체험용으로 설치합니다.
+아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/?) 페이지로 이동하여 체험용으로 설치합니다.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 체험용으로 설치합니다.
+
+- 아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/) 페이지로 이동하여 체험용으로 설치합니다.
+- 이 자습서에서는 .NET Framework 또는 .NET Core를 사용할 수 있습니다. .NET Core가 더 현대적인 최신 프레임워크입니다. .NET Core의 경우 Visual Studio 2019 버전 16.3 이상이 필요합니다.
 ::: moniker-end
 
 ## <a name="configure-the-ide"></a>IDE 구성
@@ -76,9 +80,12 @@ Visual Studio에서 애플리케이션을 만들 때 먼저 프로젝트와 솔�
 
    !['새 프로젝트 만들기' 창 보기](../../get-started/media/vs-2019/start-window-create-new-project.png "'새 프로젝트 만들기' 창 보기 스크린샷")
 
-1. **새 프로젝트 만들기** 화면에서 “WPF”를 검색하고 **WPF 앱(.NET Framework)** , **다음**을 차례로 선택합니다.
+1. **새 프로젝트 만들기** 화면에서 “WPF”를 검색하고 **WPF 앱(.NET Core)** , **다음**을 차례로 선택합니다.
 
    !['새 프로젝트 만들기' 대화 상자의 WPF 앱 템플릿](media/vs-2019/exploreide-newprojectcsharp-vs2019.png "'새 프로젝트 만들기' 대화 상자의 WPF 앱 템플릿 스크린샷")
+
+   > [!NOTE]
+   > 두 개의 WPF 바탕 화면 템플릿을 찾을 수 있습니다. 하나는 .NET Framework 용이고 다른 하나는 .NET Core 용입니다. .NET Core 템플릿은 Visual Studio 2019 버전 16.3 이상에서 사용할 수 있습니다. 이 자습서에서는 둘 중 하나를 사용할 수 있지만 새로운 개발인 경우에는 .NET Core를 사용하는 것이 좋습니다.
 
 1. 다음 화면에서 프로젝트의 이름을 **HelloWPFApp**로 지정하고 **만들기**를 선택합니다.
 
@@ -99,31 +106,23 @@ HelloWPFApp 프로젝트 및 솔루션이 만들어지고 **솔루션 탐색기*
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>MainWindow.xaml의 이름 변경
 
-MainWindow에 보다 구체적인 이름을 지정하겠습니다.
-
-1. **솔루션 탐색기**에서 *MainWindow.xaml*을 선택합니다. **속성** 창이 표시되어야 하지만 표시되지 않는 경우 **보기** 메뉴 및 **속성 창** 항목을 선택합니다. (또는 **F4** 키를 누릅니다.)
-
-1. **파일 이름** 속성을 `Greetings.xaml`로 변경합니다.
-
-     ![파일 이름이 강조 표시된 속성 창](../media/exploreide-filenameinpropertieswindow.png "파일 이름이 강조 표시된 속성 창 스크린샷")
-
-     이제 **솔루션 탐색기**에 파일 이름이 *Greetings.xaml*로, 중첩된 코드 파일이 *Greetings.xaml.cs*로 표시됩니다. 이 코드 파일은 *.xaml* 파일과 서로 밀접하게 관련되어 있음을 나타내기 위해 이 파일 노드 아래에 중첩됩니다.
-
-     ![Greetings 파일 이름을 표시하는 속성 창 및 솔루션 탐색기 창](../media/exploreide-greetingsfilename.png "Greetings 파일 이름을 표시하는 속성 창 및 솔루션 탐색기 창 스크린샷")     
+MainWindow에 보다 구체적인 이름을 지정하겠습니다. **솔루션 탐색기**에서 *MainWindow.xaml*을 마우스 오른쪽 단추로 클릭하고 **이름 바꾸기**를 선택합니다. 파일 이름을 *Greetings.xaml*로 바꿉니다.
 
 ## <a name="design-the-user-interface-ui"></a>사용자 인터페이스(UI) 디자인
+
+디자이너가 열려 있지 않으면 *Greetings.xaml*을 선택하고 **Shift**+**F7**을 눌러 디자이너를 엽니다.
 
 이 애플리케이션에 <xref:System.Windows.Controls.TextBlock> 컨트롤 1개, <xref:System.Windows.Controls.RadioButton> 컨트롤 2개 및 <xref:System.Windows.Controls.Button> 컨트롤 1개 등 세 가지 유형의 컨트롤을 추가합니다.
 
 ### <a name="add-a-textblock-control"></a>TextBlock 컨트롤 추가
 
-1. **Ctrl**+**Q**를 입력하여 검색 상자를 활성화하고 **도구 상자**를 입력합니다. 결과 목록에서 **보기 > 도구 상자**를 선택합니다.
+1. **Ctrl**+**Q**를 눌러 검색 상자를 활성화하고 **도구 상자**를 입력합니다. 결과 목록에서 **보기 > 도구 상자**를 선택합니다.
 
 1. **도구 상자**에서 **공용 WPF 컨트롤** 노드를 확장하여 TextBlock 컨트롤을 봅니다.
 
      ![TextBlock 컨트롤이 강조 표시된 도구 상자](../media/exploreide-textblocktoolbox.png "TextBlock 컨트롤이 강조 표시된 도구 상자 스크린샷")
 
-1. **TextBlock** 항목을 선택한 후 디자인 화면의 창으로 끌어와서 디자인 화면에 TextBlock 컨트롤을 추가합니다. 컨트롤을 창 상단의 가운데에 배치합니다.
+1. **TextBlock** 항목을 선택한 후 디자인 화면의 창으로 끌어와서 디자인 화면에 TextBlock 컨트롤을 추가합니다. 컨트롤을 창 상단의 가운데에 배치합니다. Visual Studio 2019 이상에서는 빨간색 지침을 사용하여 컨트롤을 가운데에 맞출 수 있습니다.
 
     해당 창은 다음 그림과 유사합니다.
 
@@ -159,7 +158,7 @@ MainWindow에 보다 구체적인 이름을 지정하겠습니다.
 
      ![RadioButton 컨트롤이 선택된 도구 상자 창](../media/exploreide-radiobuttontoolbox.png "RadioButton 컨트롤이 선택된 도구 상자 창 스크린샷")
 
-1. **RadioButton** 항목을 선택한 후 디자인 화면의 창으로 끌어와서 디자인 화면에 두 개의 RadioButton 컨트롤을 추가합니다. 단추가 TextBlock 컨트롤 아래에 함께 표시되도록 단추를 이동합니다(선택하고 화살표 키를 사용하여).
+1. **RadioButton** 항목을 선택한 후 디자인 화면의 창으로 끌어와서 디자인 화면에 두 개의 RadioButton 컨트롤을 추가합니다. 단추가 TextBlock 컨트롤 아래에 함께 표시되도록 단추를 이동합니다(선택하고 화살표 키를 사용하여). 빨간색 지침을 사용하여 컨트롤을 정렬합니다.
 
    창이 다음과 같이 나타납니다.
 
@@ -175,11 +174,7 @@ MainWindow에 보다 구체적인 이름을 지정하겠습니다.
 
 ### <a name="add-display-text-for-each-radio-button"></a>각 라디오 단추에 표시할 텍스트 추가
 
-1. 디자인 화면에서 마우스 오른쪽 단추로 HelloButton을 눌러 HelloButton의 바로 가기 메뉴를 열고 **텍스트 편집**을 선택한 후 `Hello`를 입력합니다.
-
-1. 마우스 오른쪽 단추로 GoodbyeButton을 눌러 GoodbyeButton의 바로 가기 메뉴를 열고 **텍스트 편집**을 선택한 후 `Goodbye`를 입력합니다.
-
-   이제 XAML 태그가 다음 예제와 유사하게 표시됩니다.
+1. XAML에서 `HelloButton` 및 `GoodbyeButton`의 **콘텐츠** 특성을 `"Hello"` 및 `"Goodbye"`로 업데이트합니다. 이제 XAML 태그가 다음 예제와 유사하게 표시됩니다.
 
    ```xaml
    <Grid>
@@ -211,7 +206,7 @@ MainWindow에 보다 구체적인 이름을 지정하겠습니다.
 
 ### <a name="add-the-button-control"></a>단추 컨트롤 추가
 
-1. **도구 상자**에서 **Button** 컨트롤을 찾은 다음 디자인 뷰의 폼으로 끌어와 RadioButton 컨트롤 아래의 디자인 화면에 추가합니다.
+1. **도구 상자**에서 **Button** 컨트롤을 찾은 다음 디자인 뷰의 폼으로 끌어와 RadioButton 컨트롤 아래의 디자인 화면에 추가합니다. Visual Studio 2019 이상에서는 빨간색 선을 사용하여 컨트롤을 가운데에 맞출 수 있습니다.
 
 1. XAML 뷰에서 Button 컨트롤의 **Content** 값을 `Content="Button"` 에서 `Content="Display"`로 변경한 다음 변경 내용을 저장합니다.
 
@@ -239,7 +234,7 @@ MainWindow에 보다 구체적인 이름을 지정하겠습니다.
      *Greetings.xaml.cs*는 `Button_Click` 이벤트에 커서가 있는 상태에서 열립니다.
 
     ```csharp
-    private void Button_Click_1(object sender, RoutedEventArgs e)
+    private void Button_Click(object sender, RoutedEventArgs e)
     {
 
     }
@@ -286,7 +281,16 @@ MainWindow에 보다 구체적인 이름을 지정하겠습니다.
 
 1. `StartupUri="MainWindow.xaml"`을 `StartupUri="Greetings.xaml"`로 변경한 다음 변경 내용을 저장합니다.
 
-**F5** 키를 눌러 디버거를 다시 시작합니다. 애플리케이션의 **Greetings** 창이 표시됩니다. 이제 애플리케이션 창을 닫아 디버깅을 중지합니다.
+**F5** 키를 눌러 디버거를 다시 시작합니다. 애플리케이션의 **Greetings** 창이 표시됩니다.
+
+::: moniker range="vs-2017"
+![실행 중인 앱의 스크린샷](media/exploreide-wpf-running-app.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![실행 중인 앱의 스크린샷](media/vs-2019/exploreide-wpf-running-app.png)
+::: moniker-end
+
+이제 애플리케이션 창을 닫아 디버깅을 중지합니다.
 
 ### <a name="debug-with-breakpoints"></a>중단점으로 디버깅
 
@@ -325,6 +329,12 @@ MainWindow에 보다 구체적인 이름을 지정하겠습니다.
 1. 애플리케이션 창을 닫아 디버깅을 중지합니다.
 
 1. 메뉴 모음에서 **디버그** > **모든 중단점 해제**를 선택합니다.
+
+### <a name="view-a-representation-of-the-ui-elements"></a>UI 요소의 표현 보기
+
+실행 중인 앱에서 창의 맨 위에 나타나는 위젯이 보여야 합니다. 이것은 몇 가지 유용한 디버깅 기능에 빠르게 액세스할 수 있도록 해 주는 런타임 도우미입니다. 첫 번째 단추를 클릭하고 **라이브 시각적 트리로 이동**합니다. 페이지의 모든 시각적 요소가 포함된 트리가 있는 창이 표시됩니다. 노드를 확장하여 추가한 단추를 찾습니다.
+
+![라이브 시각적 트리 창의 스크린샷](media/vs-2019/exploreide-live-visual-tree.png)
 
 ### <a name="build-a-release-version-of-the-application"></a>애플리케이션 릴리스 버전 빌드
 

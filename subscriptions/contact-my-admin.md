@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/21/2019
 ms.topic: conceptual
 description: 질문이나 문제에 대한 도움이 필요한 경우 구독 관리자에게 문의하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: cc6ce20d97531cca7c6b08d82ba949fb19e6bddc
-ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
+ms.openlocfilehash: a1769140db7800798c91d583f835e3cad8488397
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000973"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293529"
 ---
 # <a name="get-assistance-from-your-subscriptions-adminstrator"></a>구독 관리자의 도움 받기
 회사 또는 학교에서 Visual Studio 구독이 제공된 경우 구독 관리자나 “관리자”가 해당 구독을 할당했을 수 있습니다.  관리자는 구독을 할당 또는 제거하고, 로그인 전자 메일 주소를 변경하고, 소프트웨어를 다운로드하는 기능을 제공할지 여부를 결정하고, 구독과 관련된 다른 기능을 수행할 수 있습니다.
@@ -27,6 +27,9 @@ ms.locfileid: "70000973"
 4. 관리자의 메시지를 입력합니다.
 5. 관리자에게 전송된 메시지의 복사본을 받으려면 **나에게 복사본 보내기** 확인란을 클릭합니다. 
 6. 마지막으로 **저장**을 클릭합니다.
+
+> [!NOTE]
+> **슈퍼 관리자:**  “내 관리자에게 문의” 요청을 보내는 전자 메일 주소를 설정하려면 [계약 기본 설정](admin-prefs.md#contact-email-address)에서 해당 주소를 지정합니다.
 
 ## <a name="resources"></a>리소스
 - [Visual Studio 관리 및 구독 지원](https://visualstudio.microsoft.com/support/support-overview-vs)

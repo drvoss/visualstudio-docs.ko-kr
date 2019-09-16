@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 90035e99c13484bd1b49e59350489ed1090b5f4e
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 2fbc9d95a6e334c3dcd788c4b686a222c417b0df
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891264"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766108"
 ---
 # <a name="template-parameters"></a>템플릿 매개 변수
 
@@ -50,7 +50,7 @@ ms.locfileid: "69891264"
 |매개 변수|설명|
 |---------------|-----------------|
 |clrversion|CLR(공용 언어 런타임)의 현재 버전입니다.|
-|ext_*|부모 템플릿의 변수를 참조하는 매개 변수에 `ext_` 접두사를 추가합니다. 예를 들어, `ext_safeprojectname`을 입력합니다.|
+|ext_*|부모 템플릿의 변수를 참조하는 매개 변수에 `ext_` 접두사를 추가합니다. 예: `ext_safeprojectname`.|
 |guid[1-10]|프로젝트 파일에서 프로젝트 GUID를 대체하는 데 사용되는 GUID입니다. 최대 10개의 고유 GUID를 지정할 수 있습니다(예: `guid1`).|
 |itemname|매개 변수가 사용되는 파일의 이름입니다.|
 |machinename|현재 컴퓨터 이름(예: Computer01)입니다.|
@@ -61,7 +61,7 @@ ms.locfileid: "69891264"
 |safeitemrootname|`safeitemname`와 동일합니다.|
 |safeprojectname|프로젝트를 만들 때 사용자가 제공했지만 안전하지 않은 문자 및 공백을 모두 제거한 이름입니다.|
 |시간|DD/MM/YYYY 00:00:00 형식인 현재 시간입니다.|
-|SpecificSolutionName|솔루션의 기본 이름. "솔루션 디렉터리 만들기"를 선택한 경우 `SpecificSolutionName`에는 솔루션 이름이 있습니다. "솔루션 디렉터리 만들기"를 선택하지 않은 경우 `SpecificSolutionName`은 비어 있습니다.|
+|specifiedSolutionName|솔루션의 기본 이름. "솔루션 디렉터리 만들기"를 선택한 경우 `specifiedSolutionName`에는 솔루션 이름이 있습니다. "솔루션 디렉터리 만들기"를 선택하지 않은 경우 `specifiedSolutionName`은 비어 있습니다.|
 |userdomain|현재 사용자 도메인입니다.|
 |사용자 이름|현재 사용자 이름입니다.|
 |webnamespace|현재 웹 사이트의 이름입니다. 이 매개 변수는 고유한 클래스 이름을 보장하기 위해 웹 양식 템플릿에서 사용됩니다. 웹 사이트가 웹 서버의 루트 디렉터리에 있으면 이 템플릿 매개 변수는 웹 서버의 루트 디렉터리를 확인합니다.|

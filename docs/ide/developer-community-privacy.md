@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86578a300da8ea1cdb739db4d1c02505a6d97180
-ms.sourcegitcommit: 9e5e8b6e9a3b6614723e71cc23bb434fe4218c9c
+ms.openlocfilehash: 447a06d64691af1d77a634179631ce7822b6d43d
+ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69634862"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864673"
 ---
 # <a name="developer-community-data-privacy"></a>개발자 커뮤니티 데이터 개인 정보
 
@@ -68,8 +68,14 @@ Visual Studio에서 **문제 보고**가 시작되면 다음 유형의 데이터
 
 - Python 로그(있는 경우)
 
-- 스크린샷(포함하도록 선택한 경우)
+- Windows Forms 로그(있는 경우)
 
+> [!NOTE]
+> 로그 파일이 포함된 문제 보고서를 제출하여 사용 권한을 제공하는 경우에만 로그 파일이 Microsoft로 전송됩니다. ‘문제 보고’ 창의 ‘요약’ 단계에 포함된 파일을 확인할 수 있습니다(이 메모에 포함된 스크린샷 참조). 수집된 로그는 %temp% 폴더에 저장되며 각 업로드 후 정기적으로 정리됩니다. 문제 보고서에 로그를 포함하지 않으려면 보고서를 제출하기 전에 %temp% 폴더에서 파일을 삭제합니다.  
+  > ![문제 보고 - 수집된 로그 요약](media/report-a-problem-logs-collected.png)
+
+- 스크린샷(포함하도록 선택한 경우)
+  
 - 다음을 포함하는 데이터 기록(기록을 포함하도록 선택한 경우):
 
   - 문제를 재현하기 위한 단계

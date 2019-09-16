@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a7e9269c5de8d95ef66b1633da024c8a46c42758
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 4108298eb095cf31e5f5f7089cbc7cd8780e8977
+ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180417"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864717"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>자습서: Visual Basic으로 간단한 애플리케이션 만들기
 
@@ -100,29 +100,23 @@ HelloWPFApp 프로젝트 및 솔루션이 만들어지고 **솔루션 탐색기*
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>MainWindow.xaml의 이름 변경
 
-MainWindow에 보다 구체적인 이름을 지정하겠습니다.
-
-1. **솔루션 탐색기**에서 *MainWindow.xaml*을 선택합니다. **속성** 창이 표시되어야 하지만 표시되지 않는 경우 **보기** 메뉴 및 **속성 창** 항목을 선택합니다.
-
-1. **파일 이름** 속성을 `Greetings.xaml`로 변경합니다.
-
-     ![파일 이름이 강조 표시된 속성 창](../media/exploreide-filenameinpropertieswindow.png)
-
-     이제 **솔루션 탐색기**에 파일 이름이 *Greetings.xaml*로, 중첩된 코드 파일이 *Greetings.xaml.vb*로 표시됩니다. 이 코드 파일은 *.xaml* 파일과 서로 밀접하게 관련되어 있음을 나타내기 위해 이 파일 노드 아래에 중첩됩니다.
+MainWindow에 보다 구체적인 이름을 지정하겠습니다. **솔루션 탐색기**에서 *MainWindow.xaml*을 마우스 오른쪽 단추로 클릭하고 **이름 바꾸기**를 선택합니다. 파일 이름을 *Greetings.xaml*로 바꿉니다.
 
 ## <a name="design-the-user-interface-ui"></a>사용자 인터페이스(UI) 디자인
+
+디자이너가 열려 있지 않으면 **솔루션 탐색기**에서 *Greetings.xaml*을 선택하고 **Shift**+**F7**을 눌러 디자이너를 엽니다.
 
 이 애플리케이션에 <xref:System.Windows.Controls.TextBlock> 컨트롤 1개, <xref:System.Windows.Controls.RadioButton> 컨트롤 2개 및 <xref:System.Windows.Controls.Button> 컨트롤 1개 등 세 가지 유형의 컨트롤을 추가합니다.
 
 ### <a name="add-a-textblock-control"></a>TextBlock 컨트롤 추가
 
-1. **Ctrl**+**Q**를 입력하여 검색 상자를 활성화하고 **도구 상자**를 입력합니다. 결과 목록에서 **보기 > 도구 상자**를 선택합니다.
+1. **Ctrl**+**Q**를 눌러 검색 상자를 활성화하고 **도구 상자**를 입력합니다. 결과 목록에서 **보기 > 도구 상자**를 선택합니다.
 
 2. **도구 상자**에서 **공용 WPF 컨트롤** 노드를 확장하여 TextBlock 컨트롤을 봅니다.
 
      ![TextBlock 컨트롤이 강조 표시된 도구 상자](../media/exploreide-textblocktoolbox.png)
 
-3. **TextBlock** 항목을 선택한 후 디자인 화면의 창으로 끌어와서 디자인 화면에 TextBlock 컨트롤을 추가합니다. 컨트롤을 창 상단의 가운데에 배치합니다.
+3. **TextBlock** 항목을 선택한 후 디자인 화면의 창으로 끌어와서 디자인 화면에 TextBlock 컨트롤을 추가합니다. 컨트롤을 창 상단의 가운데에 배치합니다. Visual Studio 2019 이상에서는 빨간색 지침을 사용하여 컨트롤을 가운데에 맞출 수 있습니다.
 
 해당 창은 다음 그림과 유사합니다.
 
@@ -152,7 +146,7 @@ XAML 태그는 다음 예제와 유사합니다.
 
      ![RadioButton 컨트롤이 선택된 도구 상자 창](../media/exploreide-radiobuttontoolbox.png)
 
-2. **RadioButton** 항목을 선택한 후 디자인 화면의 창으로 끌어와서 디자인 화면에 두 개의 RadioButton 컨트롤을 추가합니다. 단추가 TextBlock 컨트롤 아래에 함께 표시되도록 단추를 이동합니다(선택하고 화살표 키를 사용하여).
+2. **RadioButton** 항목을 선택한 후 디자인 화면의 창으로 끌어와서 디자인 화면에 두 개의 RadioButton 컨트롤을 추가합니다. 단추가 TextBlock 컨트롤 아래에 함께 표시되도록 단추를 이동합니다(선택하고 화살표 키를 사용하여). 빨간색 지침을 사용하여 컨트롤을 정렬합니다.
 
      창이 다음과 같이 나타납니다.
 
@@ -168,9 +162,15 @@ XAML 태그는 다음 예제와 유사합니다.
 
 ### <a name="add-display-text-for-each-radio-button"></a>각 라디오 단추에 표시할 텍스트 추가
 
-1. 디자인 화면에서 마우스 오른쪽 단추로 HelloButton을 눌러 HelloButton의 바로 가기 메뉴를 열고 **텍스트 편집**을 선택한 후 `Hello`를 입력합니다.
+XAML에서 `HelloButton` 및 `GoodbyeButton`의 **콘텐츠** 특성을 `"Hello"` 및 `"Goodbye"`로 업데이트합니다. 이제 XAML 태그가 다음 예제와 유사하게 표시됩니다.
 
-2. 마우스 오른쪽 단추로 GoodbyeButton을 눌러 GoodbyeButton의 바로 가기 메뉴를 열고 **텍스트 편집**을 선택한 후 `Goodbye`를 입력합니다.
+   ```xaml
+   <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="252,47,0,0" TextWrapping="Wrap" Text="Select a message option and then choose the Display button." VerticalAlignment="Top"/>
+        <RadioButton x:Name="HelloButton" Content="Hello" HorizontalAlignment="Left" Margin="297,161,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="GoodbyeButton" Content="Goodbye" HorizontalAlignment="Left" Margin="488,161,0,0" VerticalAlignment="Top"/>
+   </Grid>
+   ```
 
 ### <a name="set-a-radio-button-to-be-checked-by-default"></a>라디오 단추가 기본적으로 선택되도록 설정
 
@@ -186,7 +186,7 @@ IsChecked="True"
 
 ### <a name="add-the-button-control"></a>단추 컨트롤 추가
 
-1. **도구 상자**에서 **Button** 컨트롤을 찾은 다음 디자인 뷰의 폼으로 끌어와 RadioButton 컨트롤 아래의 디자인 화면에 추가합니다.
+1. **도구 상자**에서 **Button** 컨트롤을 찾은 다음 디자인 뷰의 폼으로 끌어와 RadioButton 컨트롤 아래의 디자인 화면에 추가합니다. Visual Studio 2019 이상에서는 빨간색 선을 사용하여 컨트롤을 가운데에 맞출 수 있습니다.
 
 2. XAML 뷰에서 Button 컨트롤의 **Content** 값을 `Content="Button"` 에서 `Content="Display"`로 변경한 다음 변경 내용을 저장합니다.
 
@@ -205,7 +205,7 @@ IsChecked="True"
      *Greetings.xaml.vb*는 `Button_Click` 이벤트에 커서가 있는 상태에서 열립니다.
 
     ```vb
-    Private Sub Button_Click_1(sender As Object, e As RoutedEventArgs)
+    Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
 
     End Sub
     ```
@@ -248,7 +248,16 @@ IsChecked="True"
 
 2. `StartupUri="MainWindow.xaml"`을 `StartupUri="Greetings.xaml"`로 변경한 다음 변경 내용을 저장합니다.
 
-**F5** 키를 눌러 디버거를 다시 시작합니다. 애플리케이션의 **Greetings** 창이 표시됩니다. 이제 애플리케이션 창을 닫아 디버깅을 중지합니다.
+**F5** 키를 눌러 디버거를 다시 시작합니다. 애플리케이션의 **Greetings** 창이 표시됩니다.
+
+::: moniker range="vs-2017"
+![실행 중인 앱의 스크린샷](media/exploreide-wpf-running-app.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![실행 중인 앱의 스크린샷](media/vs-2019/exploreide-wpf-running-app.png)
+::: moniker-end
+
+ 이제 애플리케이션 창을 닫아 디버깅을 중지합니다.
 
 ### <a name="debug-with-breakpoints"></a>중단점으로 디버깅
 
@@ -287,6 +296,12 @@ IsChecked="True"
 10. 애플리케이션 창을 닫아 디버깅을 중지합니다.
 
 11. 메뉴 모음에서 **디버그** > **모든 중단점 해제**를 선택합니다.
+
+### <a name="view-a-representation-of-the-ui-elements"></a>UI 요소의 표현 보기
+
+실행 중인 앱에서 창의 맨 위에 나타나는 위젯이 보여야 합니다. 이것은 몇 가지 유용한 디버깅 기능에 빠르게 액세스할 수 있도록 해 주는 런타임 도우미입니다. 첫 번째 단추를 클릭하고 **라이브 시각적 트리로 이동**합니다. 페이지의 모든 시각적 요소가 포함된 트리가 있는 창이 표시됩니다. 노드를 확장하여 추가한 단추를 찾습니다.
+
+![라이브 시각적 트리 창의 스크린샷](media/vs-2019/exploreide-live-visual-tree.png)
 
 ### <a name="build-a-release-version-of-the-application"></a>애플리케이션 릴리스 버전 빌드
 

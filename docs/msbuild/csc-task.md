@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39287eb2b1aec27dcb0c08c40875ce579b3a6bea
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 9df54befff79b82703cb363fea92536285c68232
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745790"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70888022"
 ---
 # <a name="csc-task"></a>Csc 작업
 *csc.exe*를 래핑하고 실행( *.exe* 파일), 동적 연결 라이브러리( *.dll* 파일) 또는 코드 모듈( *.netmodule* 파일)을 생성합니다. *csc.exe*에 대한 자세한 내용은 [C# 컴파일러 옵션](/dotnet/csharp/language-reference/compiler-options/index)을 참조하세요.
@@ -42,7 +42,7 @@ ms.locfileid: "66745790"
 | `CodePage` | 선택적 `Int32` 매개 변수입니다.<br /><br /> 컴파일할 때 모든 소스 코드 파일에 사용할 코드 페이지를 지정합니다. 자세한 내용은 [-codepage(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/codepage-compiler-option)를 참조하세요. |
 | `DebugType` | 선택적 `String` 매개 변수입니다.<br /><br /> 디버그 형식을 지정합니다. `DebugType`은 `full` 또는 `pdbonly`가 될 수 있습니다. 기본값은 `full`로, 디버거가 실행 중인 프로그램에 연결할 수 있습니다. `pdbonly`를 지정하면 디버거에서 프로그램이 시작되는 경우 소스 코드 디버깅이 가능하지만, 실행 중인 프로그램이 디버거에 연결되는 경우 어셈블러만 표시됩니다.<br /><br /> 이 매개 변수는 `EmitDebugInformation` 매개 변수를 재정의합니다.<br /><br /> 자세한 내용은 [-debug(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option)를 참조하세요. |
 | `DefineConstants` | 선택적 `String` 매개 변수입니다.<br /><br /> 전처리기 기호를 정의합니다. 자세한 내용은 [-define(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/define-compiler-option)을 참조하세요. |
-| `DelaySign` | 선택적 `Boolean` 매개 변수입니다.<br /><br /> 완전히 서명된 어셈블리를 만들려는 경우 `true`를 지정합니다. 어셈블리에 공개 키만 저장하려 경우 `false`를 지정합니다.<br /><br /> 이 매개 변수는 `KeyFile` 또는 `KeyContainer` 매개 변수와 함께 사용하지 않는 한 효과가 없습니다.<br /><br /> 자세한 내용은 [-delaysign(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/delaysign-compiler-option)을 참조하세요. |
+| `DelaySign` | 선택적 `Boolean` 매개 변수입니다.<br /><br /> 어셈블리에 공개 키만 저장하려 경우 `true`를 지정합니다. 완전히 서명된 어셈블리를 만들려는 경우 `false`를 지정합니다.<br /><br /> 이 매개 변수는 `KeyFile` 또는 `KeyContainer` 매개 변수와 함께 사용하지 않는 한 효과가 없습니다.<br /><br /> 자세한 내용은 [-delaysign(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/delaysign-compiler-option)을 참조하세요. |
 | `Deterministic` | 선택적 `Boolean` 매개 변수입니다.<br/><br/> `true`인 경우 입력이 동일하면 컴파일 간에 이진 콘텐츠가 동일한 어셈블리를 컴파일러에서 출력하도록 합니다.<br/><br/>자세한 내용은 [-deterministic(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/deterministic-compiler-option)을 참조하세요. |
 | `DisabledWarnings` | 선택적 `String` 매개 변수입니다.<br /><br /> 사용하지 않을 경고 목록을 지정합니다. 자세한 내용은 [-nowarn(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/nowarn-compiler-option)을 참조하세요. |
 | `DocumentationFile` | 선택적 `String` 매개 변수입니다.<br /><br /> XML 파일에 대해 문서 주석을 처리합니다. 자세한 내용은 [-doc(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option)를 참조하세요. |
@@ -80,10 +80,10 @@ ms.locfileid: "66745790"
 | `Win32Manifest` | 선택적 `String` 매개 변수입니다.<br /><br /> 포함할 Win32 매니페스트를 지정합니다. |
 | `Win32Resource` | 선택적 `String` 매개 변수입니다.<br /><br /> Win32 리소스( *.res*) 파일을 출력 파일에 삽입합니다. 자세한 내용은 [-win32res(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option)를 참조하세요. |
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.ToolTask> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 클래스에서 상속하는 `Microsoft.Build.Tasks.ManagedCompiler` 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [ToolTaskExtension 기본 클래스](../msbuild/tooltaskextension-base-class.md)를 참조하세요.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 다음 예제에서는 `Csc` 작업을 사용하여 `Compile` 항목 컬렉션의 소스 파일에서 실행 파일을 컴파일합니다.
 
 ```xml

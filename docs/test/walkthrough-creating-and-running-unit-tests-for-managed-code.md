@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 2c7a81eefc48626a57d15f99579e151390b52fb9
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 4b9e30d70aa90645d05d3bf7b530056feec752ca
+ms.sourcegitcommit: 9f11537a721e69879a612979a1aca98f40bb4d4d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926797"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70383713"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>연습: 관리 코드에 대한 단위 테스트 만들기 및 실행
 
@@ -429,7 +429,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>재테스트, 재작성 및 재분석
 
-테스트 중인 메서드에 버그가 있는데 `Debit` 메서드에서 <xref:System.ArgumentOutOfRangeException>을 throw하지 않는 경우라도 올바른 메시지가 예외와 함께 출력될 수 있습니다. 현재는 테스트 메서드가 이러한 사례를 처리하지 않습니다. `debitAmount` 값이 유효하면(즉, 잔액보다 작지만 0보다 큼) 예외가 catch되지 않으므로 어설션이 절대로 시작되지 않습니다. 그런데도 테스트 메서드를 통과합니다. 예외가 throw되지 않는 경우에도 테스트 메서드가 실패하지 않아야 하므로 이 방법은 좋지 않습니다.
+테스트 중인 메서드에 버그가 있는데 `Debit` 메서드에서 <xref:System.ArgumentOutOfRangeException>을 throw하지 않는 경우라도 올바른 메시지가 예외와 함께 출력될 수 있습니다. 현재는 테스트 메서드가 이러한 사례를 처리하지 않습니다. `debitAmount` 값이 유효하면(즉, 잔액보다 작고 0보다 큼) 예외가 catch되지 않으므로 어설션이 절대로 시작되지 않습니다. 그런데도 테스트 메서드를 통과합니다. 예외가 throw되지 않는 경우에도 테스트 메서드가 실패하지 않아야 하므로 이 방법은 좋지 않습니다.
 
 이것은 테스트 메서드의 버그입니다. 문제를 해결하려면 테스트 메서드 끝에 예외가 throw되지 않은 경우를 처리하도록 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> 어설션을 추가합니다.
 

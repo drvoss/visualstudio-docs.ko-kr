@@ -18,22 +18,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c3456ab48822873fb51ad8614ff9a6dd5f07598
-ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
+ms.openlocfilehash: f3f9c0f4913c80e1cf2f2fee24dbed5ad910ca75
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69976707"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887789"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>방법: 애플리케이션 및 배포 매니페스트 서명
 
-ClickOnce 배포를 사용하여 애플리케이션을 게시하려면 애플리케이션 및 배포 매니페스트가 공개/개인 키 쌍으로 서명되고 Authenticode 기술로 서명되어야 합니다. Windows 인증서 저장소의 인증서 또는 키 파일을 사용하여 매니페스트에 서명할 수 있습니다.
+ClickOnce 배포를 사용하여 애플리케이션을 게시하려면 애플리케이션 및 배포 매니페스트가 퍼블릭/프라이빗 키 쌍으로 서명되고 Authenticode 기술로 서명되어야 합니다. Windows 인증서 저장소의 인증서 또는 키 파일을 사용하여 매니페스트에 서명할 수 있습니다.
 
 ClickOnce 배포에 대한 자세한 내용은 [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)를 참조하세요.
 
 *.exe* 기반 애플리케이션의 경우 ClickOnce 매니페스트에 서명하는 것은 선택 사항입니다. 자세한 내용은 이 문서에서 "서명되지 않은 매니페스트 생성" 섹션을 참조하세요.
 
-키 파일을 만드는 방법은 [방법: 공개/개인 키 쌍 만들기](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)를 참조하세요.
+키 파일을 만드는 방법은 [방법: 퍼블릭/프라이빗 키 쌍 만들기](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)를 참조하세요.
 
 > [!NOTE]
 > Visual Studio에서는 확장명이 *.pfx*인 PFX(개인 정보 교환) 키 파일만 지원합니다. 그러나 프로젝트 속성의 **서명** 페이지에서 **저장소에서 선택**을 클릭하여 현재 사용자의 Windows 인증서 저장소에서 다른 형식의 인증서를 선택할 수 있습니다.
@@ -71,7 +71,7 @@ ClickOnce 배포에 대한 자세한 내용은 [ClickOnce 보안 및 배포](../
 4. 암호를 입력하여 키 파일에 액세스한 후 **Enter** 키를 선택합니다.
 
 > [!NOTE]
-> *.pfx* 파일에는 인증서 연결 정보가 포함될 수 없습니다. 포함되는 경우 다음 가져오기 오류가 발생합니다. **암호 해독용 인증서 및 프라이빗 키를 찾을 수 없습니다**.
+> *.pfx* 파일에는 인증서 연결 정보가 포함될 수 없습니다. 포함되는 경우 다음 가져오기 오류가 발생합니다. **암호 해독용 인증서 및 프라이빗 키를 찾을 수 없습니다**. 인증서 체인 정보를 제거하려면 *Certmgr.exe*를 사용하고 *.pfx 파일을 내보낼 때 **모든 인증서를 포함**하는 [옵션을 사용하지 않도록 설정](/previous-versions/aa730868(v=vs.80)?redirectedfrom=MSDN#rsvssign_topic3)할 수 있습니다.
 
 ## <a name="sign-using-a-test-certificate"></a>테스트 인증서를 사용하여 서명
 
@@ -114,6 +114,6 @@ ClickOnce 배포에 대한 자세한 내용은 [ClickOnce 보안 및 배포](../
 ## <a name="see-also"></a>참고 항목
 
 - [강력한 이름의 어셈블리](/dotnet/framework/app-domains/strong-named-assemblies)
-- [방법: 공개/개인 키 쌍 만들기](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)
+- [방법: 퍼블릭/프라이빗 키 쌍 만들기](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)
 - [서명 페이지, 프로젝트 디자이너](../ide/reference/signing-page-project-designer.md)
 - [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)

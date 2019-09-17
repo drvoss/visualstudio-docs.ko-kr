@@ -126,8 +126,12 @@
               href: edit-and-continue-visual-basic.md
             - name: 편집하며 계속하기를 사용하여 중단 모드에서 편집 적용
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
-        - name: XAML 코드 작성 및 실행 중인 XAML 코드 디버그
-          href: xaml-hot-reload.md
+        - name: XAML 핫 다시 로드
+          items:
+            - name: XAML 코드 작성 및 실행 중인 XAML 코드 디버그
+              href: xaml-hot-reload.md
+            - name: XAML 핫 다시 로드 문제 해결
+              href: xaml-hot-reload-troubleshooting.md
         - name: 'F#에 편집하며 계속하기가 지원되지 않음'
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: 디버거 데이터 보기

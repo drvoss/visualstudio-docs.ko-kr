@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d6d891001bbb46e01049c2c8d71bb25372bb8c29
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 07a5130edd534008b4343ab439bf20bf63bc3cde
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551065"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062408"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 규칙 포트 상태
 
@@ -69,7 +69,7 @@ Roslyn-분석기 리포지토리의 자동 [생성 된 설명서 페이지](http
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | 예기치 않은 위치에서 예외를 발생시키지 마십시오.
 CA1066 | 형식은 {0} Equals를 재정의\<하기 때문에 IEquatable T >를 구현 해야 합니다.
 CA1067 | IEquatable\<T를 구현할 때 개체 Equals (개체)를 재정의 >
-CA1068 | CancellationToken 매개 변수는 마지막에와 야 합니다.
+[CA1068](ca1068.md) | CancellationToken 매개 변수는 마지막에와 야 합니다.
 CA1200 | 접두사를 사용 하 여 cref 태그 사용 방지
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | 리터럴을 지역화된 매개 변수로 전달하지 마세요.
 [CA1304](ca1304-specify-cultureinfo.md) | CultureInfo를 지정하세요.
@@ -193,7 +193,7 @@ CA5369 | Deserialization을 위해 XmlReader 사용
 CA5370 | 판독기의 유효성을 검사 하려면 XmlReader를 사용 합니다.
 CA5371 | 스키마 읽기에 XmlReader 사용
 CA5372 | XPathDocument에 XmlReader 사용
-CA5373 | 사용 되지 않는 키 파생 함수 사용 안 함
+CA5373 | 사용되지 않는 키 파생 함수를 사용하지 마세요.
 CA5374 | XslTransform 사용 안 함
 CA5375 | 계정 공유 액세스 서명 사용 안 함
 CA5376 | SharedAccessProtocol HttpsOnly 사용

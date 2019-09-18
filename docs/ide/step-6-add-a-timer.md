@@ -1,22 +1,27 @@
 ---
 title: '6단계: 타이머 추가'
 ms.date: 11/04/2016
-ms.topic: conceptual
-dev_langs:
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.devlang:
 - csharp
 - vb
+dev_langs:
+- CSharp
+- VB
 ms.assetid: 09e7930b-cab6-4a22-9a6f-72e23f489585
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39d702f865e4cd3c3f91fcc70a33c505c88d0192
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 521467f7948f9ed62540028ab8c8b116e8cbbac9
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416584"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079422"
 ---
 # <a name="step-6-add-a-timer"></a>6단계: 타이머 추가
 다음에는 일치 게임에 <xref:System.Windows.Forms.Timer> 컨트롤을 추가합니다. 타이머는 지정한 시간(밀리초)을 대기한 뒤 *틱*이라고 하는 이벤트를 발생시킵니다. 이 방법은 작업을 시작하거나 작업을 정기적으로 반복하는 데 유용합니다. 이 경우 타이머를 사용하여 플레이어가 두 개의 아이콘을 선택할 수 있도록 하고 아이콘이 서로 일치하지 않을 경우 잠시 후 다시 두 개의 아이콘을 숨깁니다.

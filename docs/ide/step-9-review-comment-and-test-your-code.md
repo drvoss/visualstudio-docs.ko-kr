@@ -9,19 +9,19 @@ ms.devlang:
 - csharp
 - vb
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34f4b8272494e4d1bdef1f073cf602a6c2397445
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 86f9cd4d5b0f7af2c543c2fdcea8864d092d2971
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887939"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062435"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>9단계: 코드 검토, 주석 처리 및 테스트
 
@@ -61,7 +61,7 @@ C#에서는 두 개의 슬래시(//)를 사용하여 주석 줄을 표시하고,
     > 이 페이지의 오른쪽 위에 있는 프로그래밍 언어 컨트롤을 사용하여 C# 코드 조각 또는 Visual Basic 코드 조각을 볼 수 있습니다.<br><br>![Docs.Microsoft.com에 대한 프로그래밍 언어 컨트롤](../ide/media/docs-programming-language-control.png)
 
      [!code-csharp[VbExpressTutorial1Step9_10#1](../ide/codesnippet/CSharp/step-9-review-comment-and-test-your-code_1.cs)]
-     
+
      [!code-vb[VbExpressTutorial1Step9_10#1](../ide/codesnippet/VisualBasic/step-9-review-comment-and-test-your-code_1.vb)]
 
     이제 **showButton** 단추의 <xref:System.Windows.Forms.Control.Click> 이벤트 처리기가 완성되어 작동합니다. `if` 문으로 시작하는 코드 작성을 시작했습니다. `if` 문은 “한 가지 사항을 확인하고 true일 경우 해당 작업을 수행”하라고 앱에 지시합니다. 이 자습서에서는 **파일 열기** 대화 상자를 연 다음, 사용자가 파일을 선택하고 **확인** 단추를 선택하면 **PictureBox**에 파일을 로드하도록 앱에 지시합니다.

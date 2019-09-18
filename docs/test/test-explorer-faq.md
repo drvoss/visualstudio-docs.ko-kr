@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: a37cdea4206dafe657dc8cf8adbbcf98ce18afc9
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 1f51b8d3e75d7db19e1b92e909638cee99303c48
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551867"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079620"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 테스트 탐색기 FAQ
 ::: moniker range=">=vs-2019"
@@ -115,7 +115,6 @@ UWP 테스트는 앱이 배포될 때 서로 다른 런타임을 대상으로 �
 
 Visual Studio 2019에서는 이전에 공개로 표시되었지만 공식적으로 문서화되지 않은 일부 테스트 창 API는 제거됩니다. 확장 유지 관리자에게 조기 경고를 주기 위해 Visual Studio 2017에서는 "사용 중단"으로 표시되었습니다. 우리가 아는 한, 이러한 API를 발견한 확장은 거의 없었고 Visual Studio에 의존적이었습니다. 여기에는 `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken` 및 `SearchFilterTokenType`이 포함됩니다. 이 변경이 확장에 영향을 주는 경우 [개발자 커뮤니티](https://developercommunity.visualstudio.com)에 버그를 제출하여 알려주세요.
 
-::: moniker range="vs-2017"
 ## <a name="test-adapter-nuget-reference"></a>테스트 어댑터 NuGet 참조
 
 **Visual Studio 2017 버전 15.8에서 테스트가 검색되지만 실행되지 않습니다.**
@@ -126,6 +125,7 @@ Visual Studio 2019에서는 이전에 공개로 표시되었지만 공식적으�
 
 테스트 어댑터 확장을 사용하는 대신, 프로젝트에 테스트 어댑터 NuGet 패키지를 사용해야 합니다. 이 요구 사항은 성능을 크게 향상시키고 연속 통합 관련 문제를 감소시킵니다. [릴리스 정보](/visualstudio/releasenotes/vs2017-relnotes-v15.8#testadapterextension)에서 .NET 테스트 어댑터 확장 사용 중단에 대해 자세히 알아보세요.
 
+::: moniker range="vs-2017"
 > [!NOTE]
 > NUnit 2 테스트 어댑터를 사용하고 있으며 NUnit 3 테스트 어댑터로 마이그레이션할 수 없는 경우 **도구** > **옵션**  >  **테스트**를 통해 Visual Studio 버전 15.8에서 이 새로운 검색 동작을 해제할 수 있습니다.
 

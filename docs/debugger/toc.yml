@@ -42,6 +42,8 @@
       items:
         - name: 중단점 사용
           href: using-breakpoints.md
+        - name: 추적점 사용
+          href: using-tracepoints.md
         - name: 중단점 문제 해결
           href: troubleshooting-breakpoints.md
     - name: 데이터 검사

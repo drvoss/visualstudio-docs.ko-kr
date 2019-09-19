@@ -1,6 +1,6 @@
 ---
 title: 디버거에서 추적점 사용 | Microsoft Docs
-ms.date: 9/4/2019
+ms.date: 9/17/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - tracepoints, about tracepoints
@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: fe9d96290474283164ed9761a0cb9aa7734f1a9d
-ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
-ms.translationtype: HT
+ms.openlocfilehash: 7680b305fad6f8ea1d7961ec5a70ddafd578c77d
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71069033"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095263"
 ---
 # <a name="use-tracepoints-in-the-visual-studio-debugger"></a>Visual Studio 디버거에서 추적점 사용
 
@@ -96,7 +96,6 @@ ms.locfileid: "71069033"
 
 ![변경 된 조건 식](../debugger/media/conditionalexpressionwhenchanged.png "변경 된 조건 식")
 
-
 **변경 시** 옵션의 동작은 프로그래밍 언어 마다 다릅니다.
 
 - 네이티브 코드의 경우 디버거는 조건의 첫 번째 계산을 변경으로 간주 하지 않으므로 첫 번째 계산에서 추적점을 적중 하지 않습니다.
@@ -133,3 +132,11 @@ ms.locfileid: "71069033"
 경우에 따라 개체의 속성이 나 특성을 검사 하면 해당 값이 변경 될 수 있습니다. 이는 추적점 기능 자체에 의해 발생 하는 버그가 아니지만 추적점을 사용 하 여 개체를 검사 해도 이러한 실수로 인 한 수정이 발생 하지 않도록 하는 것이 좋습니다.
 
 **작업** 메시지 상자에서 식이 계산 되는 방식은 현재 개발에 사용 하 고 있는 언어와 다를 수 있습니다. 예를 들어 문자열을 출력 하기 위해 일반적으로 또는 `Debug.WriteLine()` `console.log()`를 사용 하는 경우에도 메시지를 따옴표로 둘러쌀 필요가 없습니다. 또한 식 출력에 대 한 중괄호`{ }`구문 ()은 개발 언어에서 값을 출력 하는 규칙과 다를 수 있습니다. 그러나 중괄호 (`{ }`) 안에 있는 콘텐츠는 여전히 개발 언어의 구문을 사용 하 여 작성 해야 합니다.
+
+## <a name="see-also"></a>참고자료
+
+- [디버깅이란?](../debugger/what-is-debugging.md)
+- [Visual Studio C# 를 사용 하 여 더 나은 코드 작성](../debugger/write-better-code-with-visual-studio.md)
+- [먼저 디버깅 살펴보기](../debugger/debugger-feature-tour.md)
+- [디버거의 식](expressions-in-the-debugger.md)
+- [중단점 사용](../debugger/using-breakpoints.md)

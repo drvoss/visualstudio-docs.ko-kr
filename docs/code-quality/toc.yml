@@ -332,8 +332,17 @@
                   href: ca1064-exceptions-should-be-public.md
                 - name: 'CA1065: 예기치 않은 위치에서 예외를 발생시키지 마십시오.'
                   href: ca1065-do-not-raise-exceptions-in-unexpected-locations.md
+                - name: 'CA1068: CancellationToken 매개 변수는 마지막에 위치해야 합니다.'
+                  href: ca1068.md
                 - name: 'CA2210: 어셈블리에는 올바른 강력한 이름을 사용해야 합니다.'
                   href: ca2210-assemblies-should-have-valid-strong-names.md
+            - name: 설명서 경고
+              items:
+                - name: 개요
+                  displayName: documentation warnings
+                  href: documentation-warnings.md
+                - name: 'CA1200: 접두사를 사용하여 cref 태그 사용 방지'
+                  href: ca1200.md
             - name: 세계화 경고
               items:
                 - name: 개요
@@ -514,6 +523,8 @@
                   href: ca1823-avoid-unused-private-fields.md
                 - name: 'CA1824: NeutralResourcesLanguageAttribute로 어셈블리를 표시하세요.'
                   href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
+                - name: 'CA1825: 길이가 0인 배열 할당 방지'
+                  href: ca1825.md
             - name: 이식성 경고
               items:
                 - name: 개요

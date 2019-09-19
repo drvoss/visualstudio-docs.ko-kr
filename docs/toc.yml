@@ -139,7 +139,7 @@
       displayName: Feature tour
       href: ide/quickstart-ide-orientation.md
     - name: 'C++: 콘솔 앱 만들기'
-      href: ide/getting-started-with-cpp-in-visual-studio.md
+      href: /cpp/get-started/tutorial-console-cpp
     - name: 'Python: 웹앱 만들기'
       href: ide/quickstart-python.md
     - name: 'Node.js: 웹앱 만들기'

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b5591d9c05ee0449b9ff77729d73722c18e4d3a
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: aedc785a86966cf6425dfe35c5925efc9b78a509
+ms.sourcegitcommit: b02c40c1ba193e38b5ace14590a6d57590d3270f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987668"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012612"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Visual Studio에서 XAML 핫 다시 로드를 사용 하 여 실행 중인 XAML 코드 작성 및 디버그
 
@@ -53,18 +53,18 @@ XAML 핫 다시 로드는 다음과 같은 시나리오에서 특히 유용 합�
 |리소스 사전에 앱의 페이지/창 또는 *app.xaml* 과 같은 리소스 개체 만들기|Visual Studio 2019 업데이트 2부터 지원 됨|지원됨|예제:를 `StaticResource`으로 `SolidColorBrush` 사용할 리소스 사전에 추가 합니다.</br>참고: 정적 리소스, 스타일 변환기 및 리소스 사전에 작성 된 기타 요소는 XAML 핫 다시 로드를 사용 하는 동안 적용/사용할 수 있습니다. 리소스 만들기만 지원 되지 않습니다.</br> 리소스 사전 `Source` 속성을 변경 합니다.|
 |앱이 실행 되는 동안 프로젝트에 새 컨트롤, 클래스, 창 또는 기타 파일 추가|지원되지 않음|지원되지 않음|없음|
 |NuGet 패키지 관리 (패키지 추가/제거/업데이트)|지원되지 않음|지원되지 않음|없음|
-|{X:Bind} 태그 확장을 사용 하는 데이터 바인딩 변경|해당 사항 없음|Visual Studio 2019부터 지원 됨|이 경우 Windows 10 버전 1809 (build 10.0.17763)이 필요 합니다. Visual Studio 2017 또는 이전 버전에서는 지원 되지 않습니다.|
+|{X:Bind} 태그 확장을 사용 하는 데이터 바인딩 변경|N/A|Visual Studio 2019부터 지원 됨|이 경우 Windows 10 버전 1809 (build 10.0.17763)이 필요 합니다. Visual Studio 2017 또는 이전 버전에서는 지원 되지 않습니다.|
 
 ## <a name="error-messages"></a>오류 메시지
 
 XAML 핫 다시 로드를 사용 하는 동안 다음 오류가 발생할 수 있습니다.
 
-|오류 메시지|Description|
+|오류 메시지|설명|
 |-|-|
 |이벤트 실패 확인|오류는 응용 프로그램이 실행 되는 동안 지원 되지 않는 컨트롤 중 하나에 이벤트를 연결 하려고 시도 하 고 있음을 나타냅니다.|
 |이 변경은 XAML 핫 다시 로드에서 지원 되지 않으며 디버깅 세션 중에는 적용 되지 않습니다.|오류는 XAML 핫 다시 로드에서 시도 중인 변경을 지원 하지 않음을 나타냅니다. 디버깅 세션을 중지 하 고, 변경 하 고 나 서, 디버깅 세션을 다시 시작 합니다. 지원 되지 않는 시나리오를 발견 한 경우 [Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com/spaces/8/index.html)에서 새로운 "기능 제안" 옵션을 사용 하세요. |
 
 ## <a name="see-also"></a>참고자료
 
-[Xaml에 대 한 문제 해결 xaml 핫 재 로드](xaml-hot-reload-troubleshooting.md)
-[xaml 핫 로딩 Xamarin. Forms](/xamarin/xamarin-forms/xaml/hot-reload)
+* [XAML 핫 다시 로드 문제 해결](xaml-hot-reload-troubleshooting.md)
+* [Xamarin에 대 한 XAML 핫 다시 로드](/xamarin/xamarin-forms/xaml/hot-reload)

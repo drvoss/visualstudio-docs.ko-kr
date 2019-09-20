@@ -1,28 +1,36 @@
 ---
 title: '2단계: 난수 더하기 문제 만들기'
 ms.date: 11/04/2016
-ms.topic: conceptual
-dev_langs:
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.devlang:
 - csharp
 - vb
+dev_langs:
+- CSharp
+- VB
 ms.assetid: 6461c4cf-f2aa-4bf5-91ed-06820a4f893d
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5b83edaec6b81c3a2c5699184c62dbd70d71913
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 941cc454220848d95ed2bf161fa4709868a6ac74
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416883"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079590"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>2단계: 난수 더하기 문제 만들기
+
 이 자습서의 2단계에서는 난수 기반 수학 문제를 추가하여 퀴즈를 좀 더 어렵게 만듭니다. 문제를 채우고 카운트다운 타이머를 시작하는 `StartTheQuiz()`라는 메서드도 추가합니다. 이 자습서의 뒷부분에서는 빼기, 곱하기 및 나누기 문제를 추가합니다.
 
 > [!NOTE]
-> 이 항목은 기본 코딩 개념에 대해 설명하는 자습서 시리즈의 일부입니다. 자습서에 대한 개요는 [자습서 2: 시간이 지정된 수학 퀴즈 만들기](../ide/tutorial-2-create-a-timed-math-quiz.md)를 참조하세요.
+> 이 항목은 기본 코딩 개념에 대해 설명하는 자습서 시리즈의 일부입니다.
+> - 자습서에 대한 개요는 [자습서 2: 시간이 지정된 수학 퀴즈 만들기](../ide/tutorial-2-create-a-timed-math-quiz.md)를 참조하세요.
+> - 코드의 전체 버전을 다운로드하려면 [Complete math quiz tutorial sample](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)(전체 수학 퀴즈 자습서 샘플)을 참조하세요.
 
 ## <a name="to-create-a-random-addition-problem"></a>난수 더하기 문제를 만들려면
 
@@ -36,6 +44,9 @@ ms.locfileid: "68416883"
 
      [!code-csharp[VbExpressTutorial3Step2#1](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_1.cs)]
      [!code-vb[VbExpressTutorial3Step2#1](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_1.vb)]
+
+   > [!IMPORTANT]
+   > 이 페이지의 오른쪽 위에 있는 프로그래밍 언어 컨트롤을 사용하여 C# 코드 조각 또는 Visual Basic 코드 조각을 볼 수 있습니다.<br><br>![Docs.Microsoft.com에 대한 프로그래밍 언어 컨트롤](../ide/media/docs-programming-language-control.png)
 
      Random 개체가 폼에 추가되고 이름이 **randomizer**로 지정되었습니다.
 
@@ -60,7 +71,8 @@ ms.locfileid: "68416883"
 
      코드에서 `randomizer` 다음에 점(.)을 입력하면 IntelliSense 창이 열리고 호출 가능한 Random 개체의 모든 메서드가 표시됩니다. 예로 들면 다음과 같이 IntelliSense는 `Next()` 메서드를 나열합니다.
 
-     ![Next 메서드](../ide/media/express_randomwhite.png) Next 메서드
+     ![Next 메서드](../ide/media/express_randomwhite.png)<br/>
+*Next 메서드*
 
      개체 뒤에 점을 입력하면 IntelliSense에 속성, 메서드, 이벤트 등 개체의 멤버 목록이 표시됩니다.
 
@@ -87,14 +99,15 @@ ms.locfileid: "68416883"
 
 8. 코드를 저장하고 실행한 다음 **시작** 단추를 선택합니다.
 
-     다음 그림과 같이 난수 더하기 문제가 나타납니다.
+     다음 스크린샷과 같이 난수 더하기 문제가 나타납니다.
 
-     ![임의의 덧셈 문제](../ide/media/express_additionproblem.png)임의의 덧셈 문제
+     ![난수 더하기 문제](../ide/media/express_additionproblem.png)<br/>
+*난수 더하기 문제*
 
      자습서의 다음 단계에서는 합계를 추가합니다.
 
 ## <a name="to-continue-or-review"></a>계속하거나 검토하려면
 
-- 다음 자습서 단계로 이동하려면 [3단계: 카운트다운 타이머 추가](../ide/step-3-add-a-countdown-timer.md)를 참조하세요.
+- 다음 자습서 단계로 이동하려면 **[3단계: 카운트다운 타이머를 추가](../ide/step-3-add-a-countdown-timer.md)** 를 참조하세요.
 
 - 이전 자습서 단계로 돌아가려면 [1단계: 프로젝트 만들기 및 양식에 레이블 추가](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)를 참조하세요.

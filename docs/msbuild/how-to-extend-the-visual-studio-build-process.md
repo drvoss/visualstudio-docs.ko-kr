@@ -14,26 +14,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d22bf8af86605d414d933d16cd5dd7f8d24a6154
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ba701d123e739bc2dfa24ff798aef5338c51f532
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946110"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913177"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>방법: Visual Studio 빌드 프로세스 확장
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 빌드 프로세스는 프로젝트 파일로 가져온 일련의 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] *.targets* 파일로 정의됩니다. 이러한 가져온 파일 중 하나인 *Microsoft.Common.targets*는 빌드 프로세스의 여러 지점에서 사용자 지정 작업을 실행할 수 있도록 확장될 수 있습니다. 이 아티클에서는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 빌드 프로세스를 확장하는 데 사용할 수 있는 두 가지 방법을 설명합니다.
 
-- *Microsoft.Common.targets*에 정의된 특정 미리 정의된 대상 재정의
+- 공통 대상(*Microsoft.Common.targets* 또는 가져오는 파일)에 정의된 미리 정의된 특정 대상을 재정의합니다.
 
-- *Microsoft.Common.targets*에 정의된 "DependsOn" 속성 재정의
+- 공통 대상에 정의된 “DependsOn” 속성을 재정의합니다.
 
 ## <a name="override-predefined-targets"></a>미리 정의된 대상 재정의
-*Microsoft.Common.targets* 파일은 빌드 프로세스의 일부 주요 대상의 전후에 호출되는 미리 정의된 빈 대상 집합을 포함합니다. 예를 들어 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]은(는) 메인 `BeforeBuild` 대상 전에 `CoreBuild` 대상을 호출하고 `CoreBuild` 대상 후에 `AfterBuild` 대상을 호출합니다. 기본적으로 *Microsoft.Common.targets*의 빈 대상은 아무 것도 수행하지 않지만 프로젝트 파일에서 *Microsoft.Common.targets*를 가져오는 원하는 대상을 정의하여 해당 기본 동작을 재정의할 수 있습니다. 미리 정의된 대상을 재정의하여 빌드 프로세스에 대한 더 많은 제어를 제공하도록 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 작업을 사용할 수 있습니다.
+공통 대상은 빌드 프로세스의 일부 주요 대상의 전후에 호출되는 미리 정의된 빈 대상 집합을 포함합니다. 예를 들어 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]은(는) 메인 `BeforeBuild` 대상 전에 `CoreBuild` 대상을 호출하고 `CoreBuild` 대상 후에 `AfterBuild` 대상을 호출합니다. 기본적으로 공통 대상의 빈 대상은 아무것도 수행하지 않지만 공통 대상을 가져오는 프로젝트 파일에서 원하는 대상을 정의하여 해당 기본 동작을 재정의할 수 있습니다. 미리 정의된 대상을 재정의하여 빌드 프로세스에 대한 더 많은 제어를 제공하도록 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 작업을 사용할 수 있습니다.
+
+> [!NOTE]
+> SDK 스타일 프로젝트에는 *프로젝트 파일의 마지막 줄 뒤*에 대상의 암시적 가져오기가 있습니다. 즉, [방법: MSBuild 프로젝트 SDK 사용](how-to-use-project-sdk.md)의 설명대로 가져오기를 수동으로 지정하지 않는 한 기본 대상을 재정의할 수 없습니다.
 
 #### <a name="to-override-a-predefined-target"></a>미리 정의된 대상을 재정의하려면
 
-1. 재정의하려는 *Microsoft.Common.targets*에서 미리 정의된 대상을 식별합니다. 안전하게 재정의할 수 있는 대상의 전체 목록은 아래 표를 참조하세요.
+1. 재정의하려는 공통 대상에서 미리 정의된 대상을 식별합니다. 안전하게 재정의할 수 있는 대상의 전체 목록은 아래 표를 참조하세요.
 
 2. `</Project>` 태그 바로 앞에, 프로젝트 파일의 끝에 하나 이상의 대상을 정의합니다. 예:
 
@@ -51,7 +54,7 @@ ms.locfileid: "62946110"
 
 3. 프로젝트 파일을 빌드합니다.
 
-다음 표는 안전하게 재정의할 수 있는 *Microsoft.Common.targets*에서 모든 대상을 표시합니다.
+다음 표는 안전하게 재정의할 수 있는 공통 대상에서 모든 대상을 표시합니다.
 
 |대상 이름|설명|
 |-----------------|-----------------|
@@ -66,7 +69,7 @@ ms.locfileid: "62946110"
 ## <a name="override-dependson-properties"></a>DependsOn 속성 재정의
 미리 정의된 대상 재정의는 빌드 프로세스를 확장하는 쉬운 방법이지만 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서 대상의 정의를 순차적으로 평가하므로 프로젝트를 가져오는 다른 프로젝트에서 이미 재정의한 대상을 재정의하는 것을 방지할 방법이 없습니다. 따라서 예를 들어 다른 모든 프로젝트를 가져온 후 프로젝트에서 정의된 마지막 `AfterBuild` 대상은 빌드 중 사용되는 대상이 됩니다.
 
-*Microsoft.Common.targets* 파일 전체의 `DependsOnTargets` 특성에서 사용되는 DependsOn 속성을 재정의하여 의도하지 않은 대상의 재정의를 방지할 수 있습니다. 예를 들어 `Build` 대상은 `"$(BuildDependsOn)"`의 `DependsOnTargets` 특성 값을 포함합니다. 고려 사항:
+공통 대상 전체의 `DependsOnTargets` 특성에서 사용되는 DependsOn 속성을 재정의하여 의도하지 않은 대상의 재정의를 방지할 수 있습니다. 예를 들어 `Build` 대상은 `"$(BuildDependsOn)"`의 `DependsOnTargets` 특성 값을 포함합니다. 고려 사항:
 
 ```xml
 <Target Name="Build" DependsOnTargets="$(BuildDependsOn)"/>
@@ -107,7 +110,7 @@ ms.locfileid: "62946110"
 
 #### <a name="to-override-a-dependson-property"></a>DependsOn 속성을 재정의하려면
 
-1. 재정의하려는 *Microsoft.Common.targets*에서 미리 정의된 DependsOn 속성을 식별합니다. 일반적으로 재정의된 DependsOn 속성의 목록은 아래 표를 참조하세요.
+1. 재정의하려는 공통 대상에서 미리 정의된 DependsOn 속성을 식별합니다. 일반적으로 재정의된 DependsOn 속성의 목록은 아래 표를 참조하세요.
 
 2. 프로젝트 파일의 끝에서 속성의 다른 인스턴스를 정의합니다. 새 속성에 원래 속성을 포함합니다(예: `$(BuildDependsOn)`).
 

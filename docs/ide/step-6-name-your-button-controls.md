@@ -9,19 +9,19 @@ ms.devlang:
 - csharp
 - vb
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc843cceea35d196e3f9719a0690764611865600
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 397f65639b6ac277aa6975964ba8317adea58a49
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887971"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062847"
 ---
 # <a name="step-6-name-your-button-controls"></a>6단계: 단추 컨트롤 이름 지정
 
@@ -52,7 +52,7 @@ ms.locfileid: "70887971"
 ‘C# 코드’가 사용된 ***Form1.cs*** 탭 
 
     > [!NOTE]
-    > Form1.cs 탭에 **showButton**이 **ShowButton**으로 대신 표시될 수 있습니다.
+    > Form1.cs 또는 Form1.vb 탭에 **showButton**이 **ShowButton**으로 대신 표시될 수 있습니다.
 
 1. 다음 코드 부분을 중점적으로 살펴봅니다.
 
@@ -64,7 +64,7 @@ ms.locfileid: "70887971"
 
     ```vb
         Private Sub showButton_Click() Handles showButton.Click
-    
+
     End Sub
     ```
 
@@ -83,8 +83,11 @@ ms.locfileid: "70887971"
     다음은 코드 편집기에 표시되는 새 코드입니다.
 
     [!code-csharp[VbExpressTutorial1Step6_#2](../ide/codesnippet/CSharp/step-6-name-your-button-controls_2.cs)]
-    
+
     [!code-vb[VbExpressTutorial1Step6_#2](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_2.vb)]
+
+    > [!NOTE]
+    > 코드에 이벤트 처리기가 “camelCase” 문자로 표시되지 않을 수 있습니다.
 
     여기서 추가한 5개의 메서드는 사용자가 단추를 선택하거나 상자를 선택하는 등의 이벤트가 발생할 때마다 애플리케이션에 의해 호출되므로 *이벤트 처리기*라고 합니다.
 

@@ -1,7 +1,7 @@
 ---
 title: Android 및 iOS에서 OpenGL ES 애플리케이션 빌드 | Microsoft 문서
 ms.custom: ''
-ms.date: 05/16/2019
+ms.date: 09/17/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: b235576f21b63a7be4170f36abf58bed9fab9df3
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 259092668c336a90758a669efdc4b154b2097cab
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923882"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079273"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Android 및 iOS에서 OpenGL ES 애플리케이션 빌드
 
@@ -25,17 +25,21 @@ ms.locfileid: "68923882"
 
 ## <a name="requirements"></a>요구 사항
 
-iOS 및 Android용 OpenGL ES 앱을 개발하려면 먼저 모든 시스템 요구 사항을 충족했는지 확인해야 합니다. Visual Studio 설치 관리자에서 C++를 사용한 모바일 개발 워크로드를 아직 설치하지 않았다면 설치합니다. iOS 빌드의 경우 선택적 C++ iOS 개발 도구를 포함시킵니다. Android 빌드의 경우 C++ Android 개발 도구 및 필요한 타사 도구를 설치합니다. Android NDK, Apache Ant, Google Android Emulator, Intel Hardware Accelerated Execution Manager 등입니다. 다음으로 Intel HAXM 및 Android Emulator가 시스템에서 실행되도록 구성합니다. 자세한 내용 및 자세한 지침은 [플랫폼 간 모바일 개발용 Visual C++ 설치](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)를 참조하세요. iOS 앱을 빌드 및 테스트하려면 Mac 컴퓨터가 필요하며 설치 지침에 따라 설치해야 합니다. iOS 개발을 위해 설치하는 방법에 대한 자세한 내용은 [iOS를 사용하여 빌드할 도구 설치 및 구성](../cross-platform/install-and-configure-tools-to-build-using-ios.md)을 참조하세요.
+iOS 및 Android용 OpenGL ES 앱을 개발하려면 먼저 모든 시스템 요구 사항을 충족했는지 확인해야 합니다. Visual Studio 설치 관리자에서 C++를 사용한 모바일 개발 워크로드를 아직 설치하지 않았다면 설치합니다. iOS 빌드의 경우 선택적 C++ iOS 개발 도구를 포함시킵니다. Android 빌드의 경우 C++ Android 개발 도구 및 필요한 타사 도구를 설치합니다. Android NDK, Apache Ant 및 Google Android Emulator. Intel 플랫폼에서 에뮬레이터 성능을 향상시키려면 Intel HAXM(Hardware Accelerated Execution Manager)도 설치하는 것이 좋습니다. 다음으로 Intel HAXM 및 Android Emulator가 시스템에서 실행되도록 구성합니다. 자세한 내용 및 자세한 지침은 [플랫폼 간 모바일 개발용 Visual C++ 설치](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)를 참조하세요.
+
+iOS 앱을 빌드 및 테스트하려면 Mac 컴퓨터가 필요하며 설치 지침에 따라 설치해야 합니다. iOS 개발을 위해 설치하는 방법에 대한 자세한 내용은 [iOS를 사용하여 빌드할 도구 설치 및 구성](../cross-platform/install-and-configure-tools-to-build-using-ios.md)을 참조하세요.
 
 ## <a name="create-a-new-opengles-application-project"></a>새 OpenGLES 애플리케이션 프로젝트 만들기
 
-이 자습서에서는 먼저 새 OpenGL ES 애플리케이션 프로젝트를 만든 후 Android용 Visual Studio 에뮬레이터에서 기본 앱을 빌드 및 실행합니다. 그런 다음 iOS용 앱을 빌드하고 iOS 디바이스에서 앱을 실행합니다.
+이 자습서에서는 먼저 새 OpenGL ES 애플리케이션 프로젝트를 만듭니다. 그런 다음 Visual Studio Emulator for Android에서 기본 앱을 빌드하고 실행합니다. 그런 다음 iOS용 앱을 빌드하고 iOS 디바이스에서 앱을 실행합니다.
+
+::: moniker range="vs-2017"
 
 1. Visual Studio에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
 
-1. **새 프로젝트** 대화 상자의 **템플릿**에서 **Visual C++**  > **플랫폼 간**을 선택한 후 **OpenGLES 애플리케이션(Android, iOS)** 템플릿을 선택합니다.
+1. **새 프로젝트** 대화 상자의 **템플릿**에서 **Visual C++** , > **플랫폼 간**을 차례로 선택한 후 **OpenGLES 애플리케이션(Android, iOS)** 템플릿을 선택합니다.
 
-1. 앱의 이름을 `MyOpenGLESApp`과 같이 지정하고 **확인**를 참조하세요.
+1. 앱의 이름을 *MyOpenGLESApp*과 같이 지정하고 **확인**을 선택합니다.
 
    ![새 OpenGLES 애플리케이션 프로젝트](../cross-platform/media/cppmdd_opengles_newproj.PNG "CPPMDD_OpenGLES_NewProj")
 
@@ -43,7 +47,23 @@ iOS 및 Android용 OpenGL ES 앱을 개발하려면 먼저 모든 시스템 요�
 
    ![솔루션 탐색기의 MyOpenGLESApp](../cross-platform/media/cppmdd_opengles_solexpl.PNG "CPPMDD_OpenGLES_SolExpl")
 
-   새 OpenGL ES 애플리케이션 솔루션에 라이브러리 프로젝트 3개와 애플리케이션 프로젝트 2개가 포함됩니다. 라이브러리 폴더에는 공유 코드 프로젝트 1개와 공유 코드를 참조하는 플랫폼별 프로젝트 2개가 포함됩니다.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Visual Studio에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
+
+1. **새 프로젝트 만들기** 대화 상자에서 **OpenGLES 애플리케이션(Android, iOS)** 템플릿을 선택한 후 **다음**을 선택합니다.
+
+1. **새 프로젝트 구성** 대화 상자의 **프로젝트 이름**에 *MyOpenGLESApp*과 같은 이름을 입력한 후 **만들기**를 선택합니다.
+
+   새 솔루션이 만들어지고 솔루션 탐색기가 열립니다.
+
+   ![솔루션 탐색기의 MyOpenGLESApp](../cross-platform/media/cppmdd_opengles_solexpl.PNG "CPPMDD_OpenGLES_SolExpl")
+
+::: moniker-end
+
+새 OpenGL ES 애플리케이션 솔루션에 라이브러리 프로젝트 3개와 애플리케이션 프로젝트 2개가 포함됩니다. 라이브러리 폴더에는 공유 코드 프로젝트 1개와 공유 코드를 참조하는 플랫폼별 프로젝트 2개가 포함됩니다.
 
 - `MyOpenGLESApp.Android.NativeActivity`에는 Android에서 앱을 Native Activity로 구현하는 참조 및 글루 코드가 포함되어 있습니다. 글루 코드에서의 진입점은 `MyOpenGLESApp.Shared`의 공용 공유 코드를 포함하는 *main.cpp*에서 구현됩니다. 미리 컴파일된 헤더는 *pch.h*에 있습니다. 이 Native Activity 앱 프로젝트는 공유 라이브러리 *.so* 파일로 컴파일되며 `MyOpenGLESApp.Android.Packaging` 프로젝트에서 이 라이브러리를 선택합니다.
 

@@ -1,21 +1,24 @@
 ---
 title: '1단계: 프로젝트 만들기 및 양식에 테이블 추가'
 ms.date: 05/31/2019
-ms.topic: conceptual
+ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
+ms.devlang:
+- csharp
+- vb
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64ebd8469eb763af9565609dd680ba1e256ed6c5
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: 0e7d11f023cc239a3aaa4124cb1ac12a4e4ae9eb
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501149"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079604"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>1단계: 프로젝트 만들기 및 양식에 테이블 추가
 
@@ -122,9 +125,9 @@ ms.locfileid: "66501149"
    > [!NOTE]
    > IDE에서 붙여넣기를 너무 많이 하면 TableLayoutPanel에 새 행이 추가되어 새 Label 컨트롤을 추가할 수 있는 위치가 생깁니다. 이를 실행 취소할 수 있습니다. 새 셀을 제거하려면 **Ctrl**+**Z** 키를 선택하거나 메뉴 모음에서 **편집** > **실행 취소**를 선택합니다.
 
-    이제 폼이 배치됩니다. 이 폼은 다음 그림과 같습니다.
+    이제 폼이 배치됩니다. 다음 그림과 유사하게 나타납니다.
 
-    ![초기 일치 게임 폼](../ide/media/express_tut4step1.png)<br/>   초기 일치 게임 폼
+    ![초기 일치 게임 폼](../ide/media/express_tut4step1.png)<br/>*초기 일치 게임 폼*
 
 ## <a name="to-continue-or-review"></a>계속하거나 검토하려면
 

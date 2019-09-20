@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7aef839027639770e60292210aaddf998c97fce0
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: abd5075d04f26b9795695bfcd4fcd387e1a15d24
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926550"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079582"
 ---
 # <a name="troubleshoot-code-coverage"></a>코드 검사 문제 해결
 
@@ -56,6 +56,8 @@ Visual Studio Enterprise가 필요합니다.
 *.pdb* 파일은 *.dll* 또는 *.exe* 파일과 같은 빌드에서 생성되어야 합니다.
 
 해결&mdash;빌드 설정에서 *.pdb* 파일이 생성되었는지 확인합니다. 프로젝트가 빌드될 때 *.pdb* 파일이 업데이트되지 않을 경우 프로젝트 속성을 열고 **빌드** 페이지를 선택하고, **고급**을 선택하고, **디버그 정보**를 검사합니다.
+
+C++ 프로젝트의 경우 생성된 .pdb 파일에 전체 디버그 정보가 있는지 확인합니다. 프로젝트 속성을 열고 **링커** > **디버깅** > **디버그 정보 생성**이 **공유 및 게시를 위해 최적화된 디버그 정보 생성(/DEBUG:FULL)** 으로 설정되어 있는지 확인합니다.
 
 *.pdb* 및 *.dll* 또는 *.exe* 파일이 다른 위치에 있는 경우 *.pdb* 파일을 동일한 디렉터리로 복사합니다. 코드 검사 엔진을 구성하여 다른 위치에서 *.pdb* 파일을 검색할 수도 있습니다. 자세한 내용은 [코드 검사 분석 사용자 지정](../test/customizing-code-coverage-analysis.md)을 참조하세요.
 

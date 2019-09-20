@@ -1,6 +1,6 @@
 ---
-title: '11단계: 앱을 실행하고 다른 기능을 사용해 보세요.'
-ms.date: 08/30/2019
+title: '11단계: 사진 뷰어 앱을 실행하고 다른 기능 사용해 보기'
+ms.date: 09/11/2019
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,16 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e82e0002255a406f02f85cbb2636be1aa249529
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 672156f9c1274189e904c79eb74a0c01e10f3a60
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887943"
+ms.locfileid: "70913120"
 ---
-# <a name="step-11-run-your-app-and-try-other-features"></a>11단계: 앱을 실행하고 다른 기능을 사용해 보세요.
+# <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>11단계: 사진 뷰어 앱을 실행하고 다른 기능 사용해 보기
 
-앱이 완성되어 실행할 준비가 되었습니다. 앱을 실행하고 <xref:System.Windows.Forms.PictureBox>의 배경색을 설정할 수 있습니다. 더 자세한 내용을 알아보려면 양식의 색의 변경하고, 단추와 확인란을 사용자 지정하고, 양식의 속성을 변경하여 애플리케이션을 향상합니다.
+사진 뷰어 앱이 완성되어 실행할 준비가 되었습니다. 앱을 실행하고 <xref:System.Windows.Forms.PictureBox>의 배경색을 설정할 수 있습니다. 더 자세한 내용을 알아보려면 양식의 색의 변경하고, 단추와 확인란을 사용자 지정하고, 양식의 속성을 변경하여 애플리케이션을 향상합니다.
 
 ## <a name="how-to-run-your-app-and-set-the-background-color"></a>앱을 실행하고 배경색을 설정하는 방법
 

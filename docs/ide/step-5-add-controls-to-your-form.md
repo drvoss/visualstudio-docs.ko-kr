@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66b0a22fcef06f69f5c8adfa2afa0b6fdadc9f01
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 5ff85034d7185e68a43ed8b4c70f68787414ddd9
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293560"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913171"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>5단계: 양식에 컨트롤 추가
 
@@ -85,7 +85,7 @@ ms.locfileid: "70293560"
 
 ## <a name="to-continue-or-review"></a>계속하거나 검토하려면
 
-* 다음 자습서 단계로 이동하려면 [6단계: 단추 컨트롤 이름 지정](../ide/step-6-name-your-button-controls.md)을 참조하세요.
+* 다음 자습서 단계로 이동하려면 **[6단계: 단추 컨트롤 이름 지정](../ide/step-6-name-your-button-controls.md)** 을 참조하세요.
 
 * 이전 자습서 단계로 돌아가려면 [4단계: TableLayoutPanel 컨트롤을 사용하여 양식 레이아웃](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)을 참조하세요.
 

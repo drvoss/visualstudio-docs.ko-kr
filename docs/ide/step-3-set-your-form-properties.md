@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da1ca71cb420bcc2bbc6ba00eb1eca5deaa2b2c9
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 1cf71ca26a26aecceb605c0483499bc0b0e24d30
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887892"
+ms.locfileid: "70913157"
 ---
 # <a name="step-3-set-your-form-properties"></a>3단계: 양식 속성 설정
 
@@ -77,7 +77,7 @@ ms.locfileid: "70887892"
 
 * 다음 자습서 단계로 이동하려면 **[4단계: TableLayoutPanel 컨트롤을 사용하여 양식 레이아웃](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)** 을 참조하세요.
 
-* 이전 자습서 단계로 돌아가려면 2단계: 그림 뷰어 앱 실행(../ide/step-2-run-your-program.md)을 참조하세요.
+* 이전 자습서 단계로 돌아가려면 [2단계: 그림 뷰어 앱을 실행합니다](../ide/step-2-run-your-program.md).
 
 ## <a name="see-also"></a>참고 항목
 

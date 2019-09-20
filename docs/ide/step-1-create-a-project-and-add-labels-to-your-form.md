@@ -1,28 +1,33 @@
 ---
 title: '1단계: 프로젝트 만들기 및 양식에 레이블 추가'
 ms.date: 05/31/2019
-ms.topic: conceptual
+ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
+ms.devlang:
+- csharp
+- vb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c04e0700a9913548b33e1ef3e9092f774cddc77
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: 88ec1c96bea4ebbe3465a489354d90fbbe906858
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501142"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987957"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>1단계: 프로젝트 만들기 및 양식에 레이블 추가
 
 이 퀴즈를 개발하는 첫 번째 단계는 프로젝트를 만들고 폼에 레이블, 단추 및 기타 컨트롤을 추가하는 것입니다. 추가한 각 컨트롤의 속성도 설정합니다. 프로젝트에 폼, 컨트롤 및 코드(자습서의 뒷부분에서 만듦)가 포함됩니다. 단추로 퀴즈를 시작하고 레이블에 퀴즈 문제를 표시하며 나머지 다른 컨트롤에 퀴즈의 답과 퀴즈 완료까지 남은 시간을 표시합니다.
 
 > [!NOTE]
-> 이 항목은 기본 코딩 개념에 대해 설명하는 자습서 시리즈의 일부입니다. 자습서에 대한 개요는 [자습서 2: 시간이 지정된 수학 퀴즈 만들기](../ide/tutorial-2-create-a-timed-math-quiz.md)를 참조하세요.
+> 이 항목은 기본 코딩 개념에 대해 설명하는 자습서 시리즈의 일부입니다. 
+> - 자습서에 대한 개요는 [자습서 2: 시간이 지정된 수학 퀴즈 만들기](../ide/tutorial-2-create-a-timed-math-quiz.md)를 참조하세요. 
+> - 코드의 전체 버전을 다운로드하려면 [Complete math quiz tutorial sample](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)(전체 수학 퀴즈 자습서 샘플)을 참조하세요.
 
 ## <a name="to-create-a-project-for-a-form"></a>양식에 대한 프로젝트를 만들려면
 
@@ -102,7 +107,7 @@ ms.locfileid: "66501142"
 
 7. **Font** 속성 옆의 더하기 기호( **+** )를 선택한 다음, **Size** 속성의 값을 **15.75**로 변경합니다.
 
-     다음 그림과 같이 여러 가지 글꼴 속성을 변경할 수 있습니다.
+     다음 스크린샷과 같이 여러 가지 글꼴 속성을 변경할 수 있습니다.
 
      ![글꼴 크기가 표시된 속성 창](../ide/media/express_setfontsize.png)
 
@@ -200,7 +205,7 @@ ms.locfileid: "66501142"
 
 7. NumericUpDown sum 컨트롤의 **TabIndex** 속성 값을 **2**, difference 컨트롤의 경우 **3**, product 컨트롤의 경우 **4**, quotient 컨트롤의 경우 **5**로 설정합니다.
 
-     그러면 폼이 다음 그림과 같이 표시됩니다.
+     양식이 다음 스크린샷과 유사하게 표시될 것입니다.
 
      ![초기 수학 퀴즈 폼](../ide/media/express_formlaidout.png)
 
@@ -208,6 +213,6 @@ ms.locfileid: "66501142"
 
 ## <a name="to-continue-or-review"></a>계속하거나 검토하려면
 
-- 다음 자습서 단계로 이동하려면 [2단계: 난수 더하기 문제 만들기](../ide/step-2-create-a-random-addition-problem.md)를 참조하세요.
+- 다음 자습서 단계로 이동하려면 **[2단계: 난수 더하기 문제 만들기](../ide/step-2-create-a-random-addition-problem.md)** 를 참조하세요.
 
 - 개요 항목으로 돌아가려면 [자습서 2: 시간이 지정된 수학 퀴즈 만들기](../ide/tutorial-2-create-a-timed-math-quiz.md)를 참조하세요.

@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: bfe1affaad05d2c20a27fb0e315fc1d3b263f22b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e4ace476a2454c7f6735f19cd07f222d6c06564e
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923746"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913330"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>Visual Studio를 사용한 Live Unit Testing
 
@@ -177,6 +177,12 @@ Live Unit Testing이 테스트 결과를 자동으로 실행하고 업데이트�
 - xUnit: `[Trait("Category", "SkipWhenLiveUnitTesting")]`
 - NUnit: `[Category("SkipWhenLiveUnitTesting")]`
 - MSTest: `[TestCategory("SkipWhenLiveUnitTesting")]`
+
+전체 테스트 어셈블리를 Live Unit Testing에서 제외할 수도 있습니다.
+
+- xUnit: `[assembly: AssemblyTrait("Category", "SkipWhenLiveUnitTesting")]`
+- NUnit: `[assembly: Category("SkipWhenLiveUnitTesting")]`
+- MSTest: `[assembly: TestCategory("SkipWhenLiveUnitTesting")]`
 
 ## <a name="see-also"></a>참고 항목
 

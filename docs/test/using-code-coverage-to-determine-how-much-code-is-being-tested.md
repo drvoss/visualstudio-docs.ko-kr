@@ -11,14 +11,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: f6aa9cb62bc0ae956a85acd75d1a9615a2283133
-ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
+ms.openlocfilehash: 24bc4c54e455f43aa5fd5fee0ce0d5a44042e497
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69976776"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913203"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>코드 검사를 사용하여 테스트할 코드 범위 결정
 
@@ -28,33 +26,51 @@ ms.locfileid: "69976776"
 
 테스트 탐색기를 사용하여 테스트 메서드를 실행하는 경우 코드 검사는 선택 사항입니다. 결과 테이블에는 각 어셈블리, 클래스 및 메서드에서 실행되는 코드의 백분율이 표시됩니다. 또한 소스 편집기에는 테스트된 코드가 표시됩니다.
 
+::: moniker range="vs-2017"
+
 ![강조 표시된 코드 검사 결과](../test/media/codecoverage1.png)
+
+::: moniker-end
 
 ## <a name="requirements"></a>요구 사항
 
 코드 검사 기능은 Visual Studio Enterprise Edition에서만 사용할 수 있습니다.
 
-## <a name="to-analyze-code-coverage-on-unit-tests-in-test-explorer"></a>테스트 탐색기의 단위 테스트에서 코드 검사를 분석하려면
+## <a name="analyze-code-coverage"></a>코드 검사 분석
 
 ::: moniker range="vs-2017"
+
 1. **테스트** 메뉴에서 **코드 검사 분석**을 선택합니다.
+
 ::: moniker-end
+
 ::: moniker range=">=vs-2019"
-1. **테스트 탐색기**의 **실행** 메뉴에서 **코드 검사 분석**을 선택합니다.
+
+1. **테스트 탐색기**의 **실행** 메뉴에서 **모든 테스트에 대한 코드 검사 분석**을 선택합니다.
+
+   ![VS 2019의 코드 검사 분석 메뉴](../test/media/vs-2019/analyze-code-coverage.png)
+
+   **테스트 탐색기**가 열려 있지 않으면 **테스트** > **창** > **테스트 탐색기**를 선택하여 열거나 **Ctrl**+**E**,**T**를 누릅니다.
+
 ::: moniker-end
 
-2. 실행된 줄을 확인하려면 ![코드 검사 강조 표시 아이콘](../test/media/codecoverage-showcoloringicon.png)**코드 검사 강조 표시**를 선택합니다.
+2. 테스트가 실행된 후 실행된 줄을 확인하려면 **코드 검사 결과** 창에서 ![코드 검사 강조 표시 아이콘](../test/media/codecoverage-showcoloringicon.png) **코드 검사 강조 표시**를 선택합니다. 기본적으로 테스트에 포함된 코드는 연한 파랑으로 강조됩니다.
 
-   색을 변경하거나 굵게 표시하려면 **도구** > **옵션** > **환경** > **글꼴 및 색** > **설정 표시: 텍스트 편집기**를 선택합니다. **표시 항목**에서 검사 항목을 조정합니다.
+   > [!TIP]
+   > 색을 변경하거나 굵게 표시하려면 **도구** > **옵션** > **환경** > **글꼴 및 색** > **설정 표시: 텍스트 편집기**를 선택합니다. **표시 항목**에서 “검사” 항목(예: **검사가 수행되지 않은 영역**)에 대한 설정을 조정합니다.
+   >
+   > ![코드 검사 글꼴 및 색](media/vs-2019/coverage-fonts-and-colors.png)
 
 3. 결과에 검사가 낮게 표시되는 경우, 코드에서 실행되지 않은 부분을 확인한 다음 검사할 추가 테스트를 작성합니다. 개발 팀을 일반적으로 약 80%의 코드 검사를 목표로 합니다. 경우에 따라 더 낮은 검사도 허용됩니다. 예를 들어, 일부 코드가 표준 템플릿에서 생성된 경우 낮은 검사가 허용됩니다.
 
 > [!TIP]
-> - 컴파일러 최적화가 해제되었는지 확인
+> - 컴파일러 최적화 끄기
 > - 관리되지 않은(네이티브) 코드를 사용하는 경우 디버그 빌드 사용
-> - 각 어셈블리에 대해 .pdb(기호) 파일을 생성하고 있는지 확인
+> - 각 어셈블리에 대한 .pdb(기호) 파일 생성
 
-예상한 결과를 얻지 못한 경우 [코드 검사 문제 해결](../test/troubleshooting-code-coverage.md)을 참조하세요. 코드를 업데이트한 후 반드시 코드 검사를 다시 실행하세요. 검사 결과 및 코드 강조는 코드를 수정한 후 또는 테스트를 실행한 경우 자동으로 업데이트되지 않습니다.
+예상한 결과를 얻지 못한 경우 [코드 검사 문제 해결](../test/troubleshooting-code-coverage.md)을 참조하세요.
+
+코드를 업데이트한 후 반드시 코드 검사를 다시 실행하세요. 검사 결과 및 코드 강조는 코드를 수정한 후 또는 테스트를 실행한 경우 자동으로 업데이트되지 않습니다.
 
 ## <a name="report-in-blocks-or-lines"></a>블록 또는 줄에서 보고
 

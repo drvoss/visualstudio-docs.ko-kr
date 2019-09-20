@@ -146,7 +146,7 @@ ms.locfileid: "65691083"
  이제 오류 목록이 모든 열에서 필터링을 지원합니다. 또한 코드 변경으로 수천 개의 경고가 생성되는 경우에도 입력하는 내용에 따라 전체 C# 또는 Visual Basic 솔루션의 오류, 경고 및 코드 분석의 실시간 보기를 보여 줍니다. 새로운 오류 목록은 기존 사용법과 호환됩니다. 자세한 내용은 [Error List Window](./ide/reference/error-list-window.md)을 참조하세요.
 
 ### <a name="gpu-usage-tool"></a>GPU 사용 도구
- GPU 사용 도구는 DirectX 앱 및 게임의 GPU 사용 데이터를 수집 및 분석하고, 성능 병목 현상이 CPU 또는 GPU에서 비롯되는지 여부에 상관 없이 문제를 해결할 수 있도록 도와 줍니다. 도구를 시작하려면 [Visual C++ 팀 블로그 게시물](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)을 참조하세요.
+ GPU 사용 도구는 DirectX 앱 및 게임의 GPU 사용량 현황 데이터를 수집 및 분석하고, 성능 병목 현상이 CPU 또는 GPU에서 비롯되는지 여부에 상관 없이 문제를 해결할 수 있도록 도와 줍니다. 도구를 시작하려면 [Visual C++ 팀 블로그 게시물](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)을 참조하세요.
 
 ## <a name="live-code-analysis-light-bulbs"></a>라이브 코드 분석(전구)
  새로운 C# 및 Visual Basic용 Roslyn 컴파일러는 컴파일 시간을 개선할 뿐 아니라, 라이브 코드 분석과 같은 완전히 새로운 시나리오를 지원하여 입력하는 내용에 따라 코드 편집기 내부에서 직접 다양한 사용자 지정 가능 피드백과 제안을 제공합니다. Visual Studio 2015에서 전구는 왼쪽 여백(키보드 사용 시) 또는 도구 설명(마우스 커서로 오류를 가리킬 경우)에 표시됩니다. 전구는 컴파일러(사용자 지정 규칙 집합을 사용할 수 있음)가 코드에서 문제를 감지했음을 실시간으로 알려주고 문제를 해결하는 방법에 대한 제안도 제공합니다. 전구가 나타나면 클릭하여 조치 가능한 제안을 확인합니다.

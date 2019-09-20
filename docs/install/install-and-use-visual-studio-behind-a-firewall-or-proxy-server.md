@@ -89,7 +89,7 @@ Visual Studio 설치 관리자는 다양한 도메인과 다운로드 서버에�
 | 시작 페이지 | vsstartpage.blob.core.windows.net | | 443 | 시작 페이지에 표시된 개발자 뉴스를 표시하는 데 사용(Visual Studio 2017만 해당) |
 | 대상<br> 알림 <br>서비스 | targetednotifications.azurewebsites.net <br><br>www.research.net | | 80<br><br>443 | 전체 알림 목록을 특정 유형의 컴퓨터/사용 시나리오에만 적용 가능한 목록으로 필터링하는 데 사용됩니다. |
 | 확장명 <br>업데이트 확인 | marketplace.visualstudio.com<br><br>&#42;.windows.net <br>&#42;.microsoftonline.com <br>&#42;.live.com | | 443 | 설치된 확장에 대한 업데이트를 사용할 수 있는 경우 알림을 제공하는 데 사용됩니다. <br><br> 로그인 위치로 사용됩니다. |
-| AI 프로젝트 <br>통합 | az861674.vo.msecnd.net | | 443<br> | 등록된 Application Insights 계정에 사용 현황 데이터를 보내도록 새 프로젝트를 구성하는 데 사용됩니다. |
+| AI 프로젝트 <br>통합 | az861674.vo.msecnd.net | | 443<br> | 등록된 Application Insights 계정에 사용량 현황 데이터를 보내도록 새 프로젝트를 구성하는 데 사용됩니다. |
 | 코드 렌즈 | codelensprodscus1su0.app.<br>codelens.visualstudio.com | | 443 | 파일이 마지막으로 업데이트된 시기, 변경 타임라인, 변경과 관련된 작업 항목, 작성자 등에 대한 정보를 편집기에서 제공하는 데 사용됩니다. |
 | 실험적 <br>기능 사용 | visualstudio-devdiv-c2s.msedge.net | | 80 | 실험적인 새 기능이나 기능 변경을 활성화하는 데 사용됩니다. |
 | ID “배지” <br>(사용자 이름 및 아바타)<br>를 갖는 <br>로밍 설정 | app.vssps.visualstudio.com <br><br>app.vsspsext.visualstudio.com<br><br>app.vssps.visualstudio.com<br><br> ns-sb2-prod-ch1-002.cloudapp.net <br><br>az700632.vo.msecnd.net | | 443 | IDE에서 사용자 이름 및 아바타를 표시하는 데 사용됩니다. <br><br> 설정 변경 내용이 컴퓨터 간에 로밍되도록 하는 데 사용됩니다. |

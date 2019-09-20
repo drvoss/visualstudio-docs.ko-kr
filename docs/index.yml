@@ -10,12 +10,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 0853a20309869e5cde753685f20584bbd0a3e7dd
-  ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+  ms.openlocfilehash: f8d8ed358779471d68a460ae923df5f9d316c2b0
+  ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 09/10/2019
-  ms.locfileid: "70864664"
+  ms.lasthandoff: 09/19/2019
+  ms.locfileid: "71128256"
 highlightedContent:
   items:
   - title: 설정 및 설치
@@ -138,7 +138,7 @@ additionalContent:
       url: test/improve-code-quality.md
     - title: '배포:'
       summary: 웹 배포, InstallShield, NuGet, 연속 통합 등을 사용하여 앱과 코드를 공유합니다.
-      url: deployment/index.md
+      url: deployment/index.yml
     - title: 버전 제어
       summary: Git 및 TFVC 같은 버전 제어 기술을 사용하여 코드를 공유합니다.
       url: version-control/index.md
@@ -147,7 +147,7 @@ additionalContent:
       url: /azure/devops
     - title: 성능 측정
       summary: 병목 상태를 식별하고 진단 도구를 사용하여 코드 성능을 최적화합니다.
-      url: profiling/index.md
+      url: profiling/index.yml
     - title: 확장
       summary: 개발 환경을 개선하기 위해 Visual Studio IDE에 고유한 기능을 추가합니다.
       url: extensibility/index.md

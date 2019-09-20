@@ -1,5 +1,5 @@
 - name: 프로파일링 설명서
-  href: index.md
+  href: index.yml
 - name: 개요
   href: profiling-overview.md
 - name: 빠른 시작
@@ -572,7 +572,7 @@
                   items:
                     - name: VSPerfCmd
                       href: vsperfcmd.md
-                    - name: 시작
+                    - name: Start
                       href: start.md
                     - name: CrossSession
                       href: crosssession.md

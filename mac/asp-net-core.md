@@ -6,12 +6,12 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 9dcd1b65e9d8ea60f082304b4f84a7108efb99a6
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: d07849a362779f3fad8f7544899dc23b9d4538d6
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692940"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913327"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core 시작
 
@@ -38,7 +38,7 @@ ASP.NET Core 애플리케이션 빌드를 시작하기 위해 미리 작성된 �
 
 ![ASP.NET 프로젝트 옵션](media/asp-net-core-2019-new-asp-core.png)
 
-**ASP.NET Core 빈 웹 애플리케이션**을 선택하고 **다음**을 누릅니다. 프로젝트에 이름을 지정하고 **만들기**를 누릅니다. 그러면 아래 이미지와 비슷하게 표시되는 새로운 ASP.NET Core 앱이 생성됩니다.
+**ASP.NET Core 빈 웹 애플리케이션**을 선택하고 **다음**을 누릅니다. 프로젝트에 이름을 지정하고 **만들기**를 누릅니다. 그러면 새 ASP.NET Core 앱이 만들어집니다. 솔루션 패드의 왼쪽 창에서 두 번째 화살표를 확장한 다음 **Startup.cs**를 선택합니다. 아래 이미지와 비슷하게 표시됩니다.
 
 ![새로운 ASP.NET Core 빈 프로젝트 보기](media/asp-net-core-2019-empty-project.png)
 

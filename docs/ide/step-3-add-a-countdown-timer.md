@@ -1,28 +1,36 @@
 ---
 title: '3단계: 카운트다운 타이머 추가'
 ms.date: 11/04/2016
-ms.topic: conceptual
-dev_langs:
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.devlang:
 - csharp
 - vb
+dev_langs:
+- CSharp
+- VB
 ms.assetid: 62670a2b-efdc-45c6-9646-9b17eeb33dcb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86e19e99bc6732ddadabdb3e308dcf8e0def41fa
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 67c2b34bf37f5f1b0ea7fb5222c6fcb8655fcc74
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416714"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079556"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>3단계: 카운트다운 타이머 추가
+
 이 자습서의 3단계에서는 퀴즈를 푸는 사람이 퀴즈를 마칠 때까지 남은 시간(초)을 추적하도록 카운트다운 타이머를 추가합니다.
 
 > [!NOTE]
-> 이 항목은 기본 코딩 개념에 대해 설명하는 자습서 시리즈의 일부입니다. 자습서에 대한 개요는 [자습서 2: 시간이 지정된 수학 퀴즈 만들기](../ide/tutorial-2-create-a-timed-math-quiz.md)를 참조하세요.
+> 이 항목은 기본 코딩 개념에 대해 설명하는 자습서 시리즈의 일부입니다.
+> - 자습서에 대한 개요는 [자습서 2: 시간이 지정된 수학 퀴즈 만들기](../ide/tutorial-2-create-a-timed-math-quiz.md)를 참조하세요.
+> - 코드의 전체 버전을 다운로드하려면 [Complete math quiz tutorial sample](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)(전체 수학 퀴즈 자습서 샘플)을 참조하세요.
 
 ## <a name="to-add-a-countdown-timer"></a>카운트다운 타이머를 추가하려면
 
@@ -30,6 +38,9 @@ ms.locfileid: "68416714"
 
      [!code-vb[VbExpressTutorial3Step3#5](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_1.vb)]
      [!code-csharp[VbExpressTutorial3Step3#5](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_1.cs)]
+
+   > [!IMPORTANT]
+   > 이 페이지의 오른쪽 위에 있는 프로그래밍 언어 컨트롤을 사용하여 C# 코드 조각 또는 Visual Basic 코드 조각을 볼 수 있습니다.<br><br>![Docs.Microsoft.com에 대한 프로그래밍 언어 컨트롤](../ide/media/docs-programming-language-control.png)
 
      이제 타이머와 같이 실제로 초를 세는 메서드가 있어야 합니다. 이 메서드는 지정된 시간이 지나면 이벤트를 발생시킵니다.
 
@@ -102,10 +113,11 @@ ms.locfileid: "68416714"
 
      타이머가 카운트다운을 시작합니다. 시간이 다 되면 퀴즈가 종료되고 답이 표시됩니다. 다음 그림에서는 진행 중인 퀴즈를 보여 줍니다.
 
-     ![진행 중인 수학 퀴즈](../ide/media/express_addcountdown.png) 진행 중인 수학 퀴즈
+     ![진행 중인 수학 퀴즈](../ide/media/express_addcountdown.png)<br/>
+*진행 중인 수학 퀴즈*
 
 ## <a name="to-continue-or-review"></a>계속하거나 검토하려면
 
-- 다음 자습서 단계로 이동하려면 [4단계: CheckTheAnswer() 메서드 추가](../ide/step-4-add-the-checktheanswer-parens-method.md)를 참조하세요.
+- 다음 자습서 단계로 이동하려면 **[4단계: CheckTheAnswer() 메서드를 추가합니다](../ide/step-4-add-the-checktheanswer-parens-method.md)** .
 
 - 이전 자습서 단계로 돌아가려면 [2단계: 난수 더하기 문제 만들기](../ide/step-2-create-a-random-addition-problem.md)를 참조하세요.

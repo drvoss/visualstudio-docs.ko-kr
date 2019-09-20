@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5c37466ea3f37bca80933cdc069d40f84099790
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 249b8aa88b11643ed0b353df25bef3a054ef5e55
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679758"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987786"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>먼저 Visual Studio 디버거 살펴보기
 
@@ -115,6 +115,16 @@ F10 키는 앱 코드의 함수 또는 메서드를 한 단계씩 실행하지 �
 **다시 시작**을 누르면 앱을 중지하고 디버거를 다시 시작하는 것에 비해 시간이 절약됩니다. 디버거가 코드를 실행하여 적중한 첫 번째 중단점에서 일시 중지합니다.
 
 디버거를 중지하고 코드 편집기로 다시 돌아가려는 경우 **다시 시작** 대신 빨간색 중지![디버깅 중지](../debugger/media/dbg-tour-stop-debugging.png "디버깅 중지") 단추를 누를 수 있습니다.
+
+## <a name="edit-your-code-and-continue-debugging-c-vb-c-xaml"></a>코드를 편집하고 디버깅 계속하기(C#, VB, C++, XAML)
+
+Visual Studio에서 지원되는 대부분의 언어에서 디버깅 세션 중에 코드를 편집하고 디버깅을 계속할 수 있습니다. 이 기능을 사용하려면 디버거에서 일시 중지된 동안 커서를 사용하여 코드를 클릭하고 편집을 수행한 후 **F5**, **F10** 또는 **F11**을 눌러 디버깅을 계속합니다.
+
+![디버깅 편집하며 계속하기](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
+
+기능 사용 및 기능 제한에 대한 자세한 내용은 [편집하며 계속하기](../debugger/edit-and-continue.md)를 참조하세요.
+
+디버깅 세션 중 XAML 코드를 수정하려면 [XAML 핫 다시 로드를 사용하여 코드 작성 및 실행 중인 XAML 코드 디버그](xaml-hot-reload.md)를 참조하세요.
 
 ## <a name="inspect-variables-with-data-tips"></a>데이터 팁을 사용하여 변수 검사
 

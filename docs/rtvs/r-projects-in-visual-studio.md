@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: a24f887b5e8d12a757098eb94768ad110a5cb727
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bcdef95935c0522c8b93a972d7f44fbd7632c53b
+ms.sourcegitcommit: b02c40c1ba193e38b5ace14590a6d57590d3270f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809916"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012617"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Visual Studio에서 R 프로젝트 만들기
 
@@ -65,7 +65,7 @@ R 프로젝트( *.rxproj* 파일)는 프로젝트와 관련된 모든 소스 및
 
 | 탭 | 속성 | 설명 |
 | --- | --- | --- |
-| 실행 | 시작 파일 | **소스 시작 파일** 명령, **F5**, **디버그** > **디버깅 시작** 또는 **디버그** > **디버깅하지 않고 시작**을 통해 실행된 파일의 이름입니다. 프로젝트에서 파일을 마우스 오른쪽 단추로 클릭하고 **시작 R 스크립트로 설정**을 선택해도 시작 파일로 설정됩니다. |
+| Run | 시작 파일 | **소스 시작 파일** 명령, **F5**, **디버그** > **디버깅 시작** 또는 **디버그** > **디버깅하지 않고 시작**을 통해 실행된 파일의 이름입니다. 프로젝트에서 파일을 마우스 오른쪽 단추로 클릭하고 **시작 R 스크립트로 설정**을 선택해도 시작 파일로 설정됩니다. |
 | | 실행 시 R 대화형 다시 설정 | 프로젝트를 실행할 때 대화형 창의 작업 영역에서 모든 변수를 지웁니다. 이 작업을 실행하면 이전 실행의 남은 작업 영역 콘텐츠가 없게 됩니다. |
 | | 원격 프로젝트 경로 | 원격 작업 영역의 경로입니다. |
 | | 실행 시 파일 전송 | **전송할 파일**에서 필터를 적용할 프로젝트 파일을 실행할 때마다 원격 작업 영역으로 복사할지 여부를 나타냅니다. |

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00874c8fd7ded67c380de1166d7e9753a3bd3c24
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 33ef3c31acd39798df84c39fff82faba063fdaa9
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68662046"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913228"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild 대상 프레임워크 및 대상 플랫폼
 프로젝트는 특정 버전의 .NET Framework인 *대상 프레임워크* 및 특정 소프트웨어 아키텍처인 *대상 플랫폼*에서 실행되도록 빌드할 수 있습니다.  예를 들어 802x86 프로세서 제품군(“x86”)과 호환되는 32비트 플랫폼의 .NET Framework 2.0에서 실행되도록 애플리케이션을 대상으로 지정할 수 있습니다. 대상 프레임워크와 대상 플랫폼의 조합을 *대상 컨텍스트*라고 합니다.
@@ -58,7 +58,10 @@ ms.locfileid: "68662046"
 
  *대상 프로필*은 대상 프레임워크의 하위 집합입니다. 예를 들어 .NET Framework 4 Client Profile에는 MSBuild 어셈블리에 대한 참조가 포함되지 않습니다.
 
- 대상 프로필은 프로젝트 파일의 `TargetFrameworkProfile` 속성에서 지정됩니다. IDE에서 프로젝트 속성 페이지의 대상 프레임워크 컨트롤을 사용하여 대상 프로필을 변경할 수 있습니다. 자세한 내용은 [방법: 한 버전의 .NET Framework를 대상으로 지정](../ide/how-to-target-a-version-of-the-dotnet-framework.md)을 참조하세요.
+ > [!NOTE]
+ > 대상 프로필은 [이식 가능한 클래스 라이브러리](/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library)에만 적용됩니다.
+
+ 대상 프로필은 프로젝트 파일의 `TargetFrameworkProfile` 속성에서 지정됩니다. IDE에서 프로젝트 속성 페이지의 대상 프레임워크 컨트롤을 사용하여 대상 프로필을 변경할 수 있습니다.
 
 ```xml
 <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>

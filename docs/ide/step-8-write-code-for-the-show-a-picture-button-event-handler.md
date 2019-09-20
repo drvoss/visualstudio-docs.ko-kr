@@ -9,19 +9,19 @@ ms.devlang:
 - csharp
 - vb
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26bfd4d74580fecd15b1891895e5ae28a18f3296
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 744fd81fe8121936def42277b442d8e54ea88786
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887961"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062864"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>8단계: 그림 표시 단추 이벤트 처리기를 위한 코드 작성
 
@@ -42,6 +42,9 @@ IntelliSense는 사용자가 다음에 할 일을 판단하며 목록에서 사�
 1. 두 중괄호 `{ }` 사이의 빈 줄에 `i`를 입력합니다. Visual Basic의 경우 `Private Sub...`와 `End Sub` 사이의 빈 줄에 입력합니다. 다음 그림과 같이 **IntelliSense** 창이 열립니다.
 
     ![Visual C&#35; 코드가 사용된 IntelliSense](../ide/media/express_ifintellisense.png)
+
+    > [!NOTE]
+    > 코드에 이벤트 처리기가 “camelCase” 문자로 표시되지 않을 수 있습니다.
 
 1. **IntelliSense** 창에 단어 `if`가 강조 표시됩니다. 강조 표시되지 않을 경우 소문자 `f`를 입력하면 강조 표시됩니다. **IntelliSense** 창 옆에 *도구 설명* 상자가 설명 **if 문용 코드 조각**과 함께 나타납니다. Visual Basic의 도구 설명에도 코드 조각임이 표시되지만 표현은 약간 다릅니다. 해당 코드 조각을 사용해야 하므로 **Tab** 키를 선택해서 `if`를 코드에 삽입합니다. 그런 다음, **코드 조각을 사용하려면**Tab`if` 키를 다시 선택합니다. 다른 곳을 선택하여 **IntelliSense** 창이 사라진 경우 백스페이스로 `i`를 지우고 다시 입력하면 **IntelliSense** 창이 다시 열립니다.
 

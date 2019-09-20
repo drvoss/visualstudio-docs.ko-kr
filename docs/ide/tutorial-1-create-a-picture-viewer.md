@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32d9d9a874894ab7e3e71d10da3f3cf7b3428d3e
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 2c0f867179fd78ecb753a9b66cfbdb8479e16c3b
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887915"
+ms.locfileid: "70913264"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>자습서 1: 사진 뷰어 만들기
 
@@ -51,7 +51,7 @@ ms.locfileid: "70887915"
 
 |제목|설명|
 |-----------|-----------------|
-|[1단계: Windows Forms 애플리케이션 프로젝트 만들기](../ide/step-1-create-a-windows-forms-application-project.md)|Windows Forms 앱 프로젝트 만들기로 시작합니다.|
+|[1단계: Windows Forms 앱 프로젝트 만들기](../ide/step-1-create-a-windows-forms-application-project.md)|Windows Forms 앱 프로젝트 만들기로 시작합니다.|
 |[2단계: 그림 뷰어 앱 실행](../ide/step-2-run-your-program.md)|이전 단계에서 만든 Windows Forms 앱 프로젝트를 실행합니다.|
 |[3단계: 양식 속성 설정](../ide/step-3-set-your-form-properties.md)|**속성** 창을 사용하여 폼의 모양을 변경합니다.|
 |[4단계: TableLayoutPanel 컨트롤을 사용하여 양식 레이아웃](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|폼에 `TableLayoutPanel` 컨트롤을 추가합니다.|

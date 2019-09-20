@@ -2,7 +2,7 @@
 title: 명령줄 매개 변수를 사용하여 Visual Studio 설치
 titleSuffix: ''
 description: 명령줄 매개 변수를 사용하여 Visual Studio 설치를 제어하거나 사용자 지정하는 방법을 알아봅니다.
-ms.date: 03/30/2019
+ms.date: 09/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8e999df4fc1269025c9adc038c1a17dd586a3081
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1f9e5d1dadd9caf95b8e6cb8e5fec70daf984ac9
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951324"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913240"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>명령줄 매개 변수를 사용하여 Visual Studio 설치
 
@@ -32,7 +32,7 @@ ms.locfileid: "62951324"
 - 설치 프로세스를 자동화합니다.
 - 나중에 사용할 설치 파일의 캐시(레이아웃)를 만듭니다.
 
-명령줄 옵션은 다운로드 프로세스를 시작하는 작은(약 1MB) 파일인 설치 부트스트래퍼와 함께 사용됩니다. 부트스트래퍼는 Visual Studio 사이트에서 다운로드할 때 첫 번째로 실행되는 실행 파일입니다. 다음 링크를 사용하여 설치 중인 제품 버전에 대한 최신 릴리스 부트스트래퍼에 직접 연결된 링크를 가져옵니다.
+명령줄 옵션은 다운로드 프로세스를 시작하는 작은(1MB) 파일인 설치 부트스트래퍼와 함께 사용됩니다. 부트스트래퍼는 Visual Studio 사이트에서 다운로드할 때 첫 번째로 실행되는 실행 파일입니다. 다음 링크를 사용하여 설치 중인 제품 버전에 대한 최신 릴리스 부트스트래퍼에 직접 연결된 링크를 가져옵니다.
 
 ::: moniker range="vs-2017"
 
@@ -56,7 +56,7 @@ ms.locfileid: "62951324"
 
 > 구문: `vs_enterprise.exe [command] <options>...`
 
-(설치 중인 제품 버전에 적합하게 `vs_enterprise.exe`를 바꿉니다.)
+설치 중인 제품 버전에 적합하게 `vs_enterprise.exe`를 바꿉니다. 또는 `vs_installer.exe`를 사용할 수 있습니다.
 
 >[!TIP]
 > 명령줄을 사용하여 Visual Studio를 설치하는 방법에 대한 자세한 예제는 [명령줄 매개 변수 예제](command-line-parameter-examples.md) 페이지를 참조하세요.
@@ -112,7 +112,7 @@ ms.locfileid: "62951324"
 | **고급 설치 옵션** | **설명** |
 | ----------------------- | --------------- |
 | `--channelId <id>` | **선택 사항**: 설치할 인스턴스의 채널 ID입니다. 설치 명령에 필요하며, `--installPath`가 지정된 경우 다른 명령에서는 무시됩니다. |
-| `--channelUri <uri>` | **선택 사항**: 채널 매니페스트의 URI입니다. 업데이트가 필요하지 않으면 `--channelUri`는 존재하지 않는 파일을 가리킬 수 있습니다. 예를 들어 --channelUri C:\doesntExist.chman과 같습니다. 이 옵션은 install 명령에 사용할 수 있으며, 다른 명령에서는 무시됩니다. |
+| `--channelUri <uri>` | **선택 사항**: 채널 매니페스트의 URI입니다. 업데이트를 원하지 않는 경우 `--channelUri`는 존재하지 않는 파일(예: --channeluri C:\doesntExist.chman)을 가리킬 수 있습니다. 설치 명령에 사용할 수 있습니다. 다른 명령에서는 무시됩니다. |
 | `--installChannelUri <uri>` | **선택 사항**: 설치에 사용할 채널 매니페스트의 URI입니다. `--channelUri`(`--installChannelUri`가 지정된 경우 지정해야 함)로 지정된 URI는 업데이트를 검색하는 데 사용됩니다. 설치 명령에 사용할 수 있습니다. 다른 명령에서는 무시됩니다. |
 | `--installCatalogUri <uri>` | **선택 사항**: 설치에 사용할 카탈로그 매니페스트의 URI입니다. 지정된 경우 채널 관리자는 설치 채널 매니페스트의 URI를 사용하기 전에 이 URI에서 카탈로그 매니페스트를 다운로드하려고 합니다. 이 매개 변수는 이미 다운로드한 제품 카탈로그를 사용하여 레이아웃 캐시가 생성되는 오프라인 설치를 지원하는 데 사용됩니다. 설치 명령에 사용할 수 있습니다. 다른 명령에서는 무시됩니다. |
 | `--productId <id>` | **선택 사항**: 설치할 인스턴스에 대한 제품 ID입니다. 이는 일반적인 설치 조건에서 미리 채워져 있습니다. |
@@ -154,14 +154,7 @@ Visual Studio 제품별로 정렬된 워크로드 및 구성 요소 ID 목록은
 
 작업 결과에 따라 `%ERRORLEVEL%` 환경 변수는 다음 값 중 하나로 설정됩니다.
 
-| **값** | **결과** |
-| --------- | ---------- |
-| 0 | 작업이 완료되었습니다. |
-| 1602 | 작업이 취소되었습니다. |
-| 3010 | 작업이 완료되었지만, 사용하려면 다시 부팅해야 합니다. |
-| 5004 | 작업이 취소되었습니다. |
-| 5007 | 작업이 차단되었습니다. 컴퓨터가 요구 사항에 맞지 않습니다. |
-| 기타 | 오류 조건 발생 - 자세한 내용은 로그를 확인하세요. |
+[!INCLUDE[install-error-codes-md](includes/install-error-codes-md.md)]
 
 각 작업은 `%TEMP%` 디렉터리에 설치 진행률을 나타내는 여러 로그 파일을 생성합니다. 폴더를 날짜별로 정렬하고 부트스트래퍼, 설치 관리자 앱 및 설치 엔진 각각에 대해 `dd_bootstrapper`, `dd_client` 및 `dd_setup`으로 시작하는 파일을 찾습니다.
 

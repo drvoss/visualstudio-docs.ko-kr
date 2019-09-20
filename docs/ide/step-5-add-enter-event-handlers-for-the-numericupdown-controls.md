@@ -1,29 +1,36 @@
 ---
 title: '5단계: NumericUpDown 컨트롤에 대한 Enter 이벤트 처리기 추가'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.devlang:
+- csharp
+- vb
+dev_langs:
+- CSharp
+- VB
 ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-dev_langs:
-- CSharp
-- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a2687c423f6b2facaa2fa1c3504888c65345888
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 9566e5bb8bd5be3c1a44ff79690fb1f8107b40f9
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263108"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079463"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>5단계: NumericUpDown 컨트롤에 대한 Enter 이벤트 처리기 추가
 
 이 자습서의 5단계에서는 퀴즈 문제의 답을 좀 더 쉽게 입력할 수 있도록 <xref:System.Windows.Forms.Control.Enter> 이벤트 처리기를 추가합니다. 이 코드에서는 퀴즈를 푸는 사람이 NumericUpDown 컨트롤을 선택하고 다른 값을 입력하는 즉시 각 <xref:System.Windows.Forms.NumericUpDown> 컨트롤의 현재 값을 선택하고 지웁니다.
 
 > [!NOTE]
-> 이 항목은 기본 코딩 개념에 대해 설명하는 자습서 시리즈의 일부입니다. 자습서에 대한 개요는 [자습서 2: 시간이 지정된 수학 퀴즈 만들기](../ide/tutorial-2-create-a-timed-math-quiz.md)를 참조하세요.
+> 이 항목은 기본 코딩 개념에 대해 설명하는 자습서 시리즈의 일부입니다.
+> - 자습서에 대한 개요는 [자습서 2: 시간이 지정된 수학 퀴즈 만들기](../ide/tutorial-2-create-a-timed-math-quiz.md)를 참조하세요.
+> - 코드의 전체 버전을 다운로드하려면 [Complete math quiz tutorial sample](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)(전체 수학 퀴즈 자습서 샘플)을 참조하세요.
 
 ## <a name="to-verify-the-default-behavior"></a>기본 동작을 확인하려면
 
@@ -58,6 +65,9 @@ ms.locfileid: "66263108"
      [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]
 
+     > [!IMPORTANT]
+     > 이 페이지의 오른쪽 위에 있는 프로그래밍 언어 컨트롤을 사용하여 C# 코드 조각 또는 Visual Basic 코드 조각을 볼 수 있습니다.<br><br>![Docs.Microsoft.com에 대한 프로그래밍 언어 컨트롤](../ide/media/docs-programming-language-control.png)
+
      이 코드는 복잡하게 보일 수 있지만 차근차근 살펴보면 쉽게 이해할 수 있습니다. 먼저 메서드의 맨 위를 살펴보면 `object sender`(Visual C#) 또는 `sender As System.Object`(Visual Basic)가 있습니다. 이 매개 변수는 이벤트를 발생시킨 개체, 즉 이벤트 전송자를 참조합니다. 이 코드에서는 전송자 개체가 NumericUpDown 컨트롤입니다. 따라서 메서드의 첫 번째 줄에서 해당 전송자가 단순히 일반 개체가 아니라 NumericUpDown 컨트롤임을 명시적으로 지정합니다. 모든 NumericUpDown 컨트롤은 개체이지만 모든 개체가 NumericUpDown 컨트롤은 아닙니다. 이 메서드에서 NumericUpDown 컨트롤의 이름은 **answerBox**입니다. 이 이름은 sum NumericUpDown 컨트롤뿐 아니라 폼의 모든 NumericUpDown 컨트롤에 사용되기 때문입니다. 이 메서드에 answerBox 변수를 선언하기 때문에 변수 범위가 이 메서드로만 한정됩니다. 다시 말해 이 메서드 내에서만 이 변수를 사용할 수 있습니다.
 
      다음 줄에서는 answerBox가 개체에서 NumericUpDown 컨트롤로 성공적으로 변환(캐스팅)되었는지 여부를 확인합니다. 변환에 실패할 경우 변수 값은 `null`(C#) 또는 `Nothing`(Visual Basic)입니다. 세 번째 줄은 NumericUpDown 컨트롤에 표시되는 답의 길이를 가져오고, 네 번째 줄은 이 길이를 기준으로 컨트롤의 현재 값을 선택합니다. 이제 퀴즈를 푸는 사람이 컨트롤을 선택하면 Visual Studio에서 이 이벤트를 발생시키고 현재 답이 선택됩니다. 퀴즈를 푸는 사람이 다른 답을 입력하기 시작하면 이전 답이 지워지고 새 답으로 대체됩니다.
@@ -74,6 +84,6 @@ ms.locfileid: "66263108"
 
 ## <a name="to-continue-or-review"></a>계속하거나 검토하려면
 
-- 다음 자습서 단계로 이동하려면 [6단계: 빼기 문제 추가](../ide/step-6-add-a-subtraction-problem.md)를 참조하세요.
+- 다음 자습서 단계로 이동하려면 **[6단계: 빼기 문제 추가](../ide/step-6-add-a-subtraction-problem.md)** 를 참조하세요.
 
 - 이전 자습서 단계로 돌아가려면 [4단계: CheckTheAnswer() 메서드 추가](../ide/step-4-add-the-checktheanswer-parens-method.md)를 참조하세요.

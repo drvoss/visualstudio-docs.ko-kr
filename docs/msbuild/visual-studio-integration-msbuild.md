@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a160d28a3953196a53673b64ae7d9ef9974a731
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 00d64b060b340302107ddffaf1d69cad802a283b
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747441"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913283"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 통합(MSBuild)
 Visual Studio는 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 를 호스팅하여 관리되는 프로젝트를 로드하고 빌드합니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 에서 프로젝트를 관리하므로 프로젝트가 다른 도구에서 작성되어 사용자 지정된 빌드 프로세스를 가지더라도 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 형식의 프로젝트는 대부분 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 사용될 수 있습니다.
@@ -176,7 +176,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
    프로젝트 시스템에서 잘 알려진 이름이 `ResolveNativeReferences`인 대상을 호출합니다. 이 대상은 항목 형식 이름이 `NativeReferenceFile`인 항목을 출력해야 합니다. 항목에는 전달된 입력 항목의 모든 메타데이터와 함께, 참조의 원본 항목 사양이 포함되어 있는 `OriginalItemSpec`이라는 새로운 메타데이터 부분이 있어야 합니다.
 
 ## <a name="performance-shortcuts"></a>성능 바로 가기
- Visual Studio UI에서 디버깅을 시작하는 경우(F5 키를 선택하거나 메뉴 모음에서 **디버그** > **디버깅 시작** 선택), 빌드 프로세스는 성능 향상을 위해 빠른 업데이트 검사를 사용합니다. 사용자 지정된 빌드가 이후에 다시 빌드되는 파일을 생성하는 경우, 빠른 업데이트 검사에서 변경된 파일이 올바르게 식별되지 않습니다. 보다 철저한 업데이트 검사가 필요한 프로젝트에서는 환경 변수 `DISABLEFASTUPTODATECHECK=1`을 설정하여 빠른 검사를 해제할 수 있습니다. 또는 프로젝트에서 이 항목을 프로젝트의 또는 프로젝트가 가져오는 파일의 MSBuild 속성으로 설정할 수 있습니다.
+ Visual Studio IDE를 사용하여 디버깅을 시작하거나(F5 키를 선택하거나 메뉴 모음에서 **디버그** > **디버깅 시작** 선택) 프로젝트를 빌드하는 경우(예를 들어 **빌드** > **솔루션 빌드**) 빌드 프로세스는 성능 향상을 위해 빠른 업데이트 검사를 사용합니다. 사용자 지정된 빌드가 이후에 다시 빌드되는 파일을 생성하는 경우, 빠른 업데이트 검사에서 변경된 파일이 올바르게 식별되지 않습니다. 보다 철저한 업데이트 검사가 필요한 프로젝트에서는 환경 변수 `DISABLEFASTUPTODATECHECK=1`을 설정하여 빠른 검사를 해제할 수 있습니다. 또는 프로젝트에서 이 항목을 프로젝트의 또는 프로젝트가 가져오는 파일의 MSBuild 속성으로 설정할 수 있습니다.
 
  Visual Studio의 일반 빌드에는 빠른 업데이트 검사가 적용되지 않으며, 명령 프롬프트에서 빌드를 호출한 것처럼 프로젝트가 빌드됩니다.
 

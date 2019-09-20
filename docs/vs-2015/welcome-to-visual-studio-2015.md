@@ -90,7 +90,7 @@ ms.locfileid: "65695030"
  앱의 수동 및 자동 테스트 계획, 만들기 및 실행 테스트 계획, 도구 모음, 테스트 사례 및 테스트 결과는 Visual Studio Team Services를 통해 클라우드에 저장되거나 Team Foundation Server를 통해 온-프레미스로 저장됩니다. [애플리케이션 테스트](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)에 대해 자세히 알아보세요.
 
 ### <a name="deliver-your-teams-code-faster"></a>팀의 코드를 더 빠르게 제공
- 팀 구성원 간의 장벽을 없애고 협업을 개선합니다. 더 나아가 프로덕션까지의 각 개발 단계에 대한 앱의 릴리스를 자동화합니다. 라이브 상태일 때 앱의 성능 및 가용성을 모니터링합니다. 고객이 실제로 앱을 사용하고 있는 방식에 대한 실시간 사용 데이터를 수집합니다. 자세한 내용은 [DevOps 및 애플리케이션 수명 주기 관리](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)를 참조하세요.
+ 팀 구성원 간의 장벽을 없애고 협업을 개선합니다. 더 나아가 프로덕션까지의 각 개발 단계에 대한 앱의 릴리스를 자동화합니다. 라이브 상태일 때 앱의 성능 및 가용성을 모니터링합니다. 고객이 실제로 앱을 사용하고 있는 방식에 대한 실시간 사용량 현황 데이터를 수집합니다. 자세한 내용은 [DevOps 및 애플리케이션 수명 주기 관리](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)를 참조하세요.
 
 ## <a name="whats-new"></a>새로운 기능
 

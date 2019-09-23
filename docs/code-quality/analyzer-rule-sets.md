@@ -1,6 +1,6 @@
 ---
-title: 분석기 규칙 집합
-ms.date: 04/22/2019
+title: FxCop 분석기 규칙 집합
+ms.date: 09/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzer packages, rule sets
@@ -10,22 +10,33 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68410fd43f182873c27e3d5fed742bed7ba8a4ed
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: da1567dd088ecc060f031e59827ff33024e9e955
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585141"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185959"
 ---
 # <a name="rule-sets-for-analyzer-packages"></a>분석기 패키지에 대한 규칙 집합
 
 미리 정의 된 규칙 집합은 일부 NuGet 분석기 패키지에 포함 됩니다. 예를 들어 [FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet analyzer 패키지 (버전 2.6.2 critical부터 시작)에 포함 된 규칙 집합은 보안, 이름 지정, 성능 등의 범주에 따라 규칙을 사용 하거나 사용 하지 않도록 설정 합니다. 규칙 집합을 사용 하면 특정 규칙 범주와 관련 된 규칙 위반만 쉽게 확인할 수 있습니다.
 
+규칙 집합은 대상 문제 및 특정 조건을 식별 하는 코드 분석 규칙의 그룹입니다. 규칙 집합을 사용 하 여 규칙을 사용 하거나 사용 하지 않도록 설정 하 고 개별 규칙 위반의 심각도를 설정할 수 있습니다. FxCop analyzer NuGet 패키지에는 다음 규칙 범주에 대 한 미리 정의 된 규칙 집합이 포함 되어 있습니다.
+
+- 디자인
+- 문서
+- 유지 관리
+- 명명
+- 성능
+- 안정성
+- 보안
+- 사용법
+
 레거시 "FxCop" 분석에서 .NET Compiler Platform 기반 코드 분석으로 마이그레이션하는 경우 이러한 규칙 집합을 사용 하 여 [이전에 사용한](rule-set-reference.md)것과 비슷한 규칙 구성을 계속 사용할 수 있습니다.
 
 ## <a name="use-analyzer-package-rule-sets"></a>분석기 패키지 규칙 집합 사용
 
-[NuGet 분석기 패키지를 설치한](install-roslyn-analyzers.md)후에는 해당 규칙 집합 디렉터리에서 미리 정의 된 규칙 집합을 찾습니다. 예 `Microsoft.CodeAnalysis.FxCopAnalyzers` 를 들어 분석기 패키지를 참조 한 경우% USERPROFILE% *\\\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\<버전에서 해당 규칙 집합 디렉터리를 찾을 수 있습니다. \\>규칙 집합*. 여기에서 하나 이상의 규칙 집합을 복사 하 고 Visual Studio 프로젝트를 포함 하는 디렉터리 또는 **솔루션 탐색기**에 직접 붙여 넣습니다.
+[NuGet 분석기 패키지를 설치한](install-roslyn-analyzers.md)후 *에는 해당 규칙 집합 디렉터리에서* 미리 정의 된 규칙 집합을 찾습니다. 예 `Microsoft.CodeAnalysis.FxCopAnalyzers` 를 들어 분석기 패키지를 참조 한 경우% USERPROFILE% *\\\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\<버전에서 해당 규칙 집합 디렉터리를 찾을 수 있습니다. \\>규칙 집합*. 여기에서 하나 이상의 규칙 집합을 복사 하 고 Visual Studio 프로젝트를 포함 하는 디렉터리 또는 **솔루션 탐색기**에 직접 붙여 넣습니다.
 
 [미리 정의 된 규칙 집합](how-to-create-a-custom-rule-set.md) 을 기본 설정으로 사용자 지정할 수도 있습니다. 예를 들어 위반이 **오류 목록**에 오류 또는 경고로 표시 되도록 하나 이상의 규칙의 심각도를 변경할 수 있습니다.
 
@@ -69,10 +80,10 @@ ms.locfileid: "69585141"
 - 보안
 - 사용법
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [분석기 FAQ](analyzers-faq.md)
 - [.NET Compiler Platform 분석기 개요](roslyn-analyzers-overview.md)
 - [분석기 설치](install-roslyn-analyzers.md)
-- [분석기 사용](use-roslyn-analyzers.md)
+- [분석기 구성](use-roslyn-analyzers.md)
 - [규칙 집합을 사용 하 여 코드 분석 규칙 그룹화](using-rule-sets-to-group-code-analysis-rules.md)

@@ -1,6 +1,6 @@
 ---
 title: 분석기 규칙 심각도 및 비 표시
-ms.date: 03/26/2019
+ms.date: 09/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5c5af5c98be92e52c356e0f20eaf437f66878690
-ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
+ms.openlocfilehash: 1845647dc1848a7fcd99ef59c29eb163bece979d
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70060436"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186012"
 ---
 # <a name="use-code-analyzers"></a>코드 분석기 사용
 
@@ -24,7 +24,7 @@ ms.locfileid: "70060436"
 
 ## <a name="analyzers-in-solution-explorer"></a>솔루션 탐색기의 분석기
 
-**솔루션 탐색기**에서 analyzer 진단의 사용자 지정을 대부분 수행할 수 있습니다. [분석기](../code-quality/install-roslyn-analyzers.md) 를 NuGet 패키지로 설치 하는 경우 **솔루션 탐색기**의 **참조** 또는 **종속성** 노드 아래에 **분석기** 노드가 나타납니다. 분석기를 확장한 다음 분석기 어셈블리 중 하나를 확장 하면 어셈블리에 모든 진단이 표시 됩니다.
+**솔루션 탐색기**에서 analyzer 진단의 사용자 지정을 대부분 수행할 수 있습니다. [분석기](../code-quality/install-roslyn-analyzers.md) 를 NuGet 패키지로 설치 하는 경우 **솔루션 탐색기**의 **참조** 또는 **종속성** 노드 아래에 **분석기** 노드가 나타납니다. **분석기를 확장**한 다음 분석기 어셈블리 중 하나를 확장 하면 어셈블리에 모든 진단이 표시 됩니다.
 
 ![솔루션 탐색기의 분석기 노드](media/analyzers-expanded-in-solution-explorer.png)
 
@@ -36,70 +36,97 @@ ms.locfileid: "70060436"
 
 **솔루션 탐색기** 의 각 진단 옆에 있는 아이콘은 편집기에서 열 때 규칙 집합에 표시 되는 아이콘에 해당 합니다.
 
-- 원의 "i"는 **정보의** [심각도](#rule-severity) 를 나타냅니다.
-- 삼각형의 "!"는 **경고** 의 [심각도](#rule-severity) 를 나타냅니다.
 - 원의 "x"는 **오류의** [심각도](#rule-severity) 를 나타냅니다.
+- 삼각형의 "!"는 **경고** 의 [심각도](#rule-severity) 를 나타냅니다.
+- 원의 "i"는 **정보의** [심각도](#rule-severity) 를 나타냅니다.
 - 옅은 색 배경의 원에 있는 "i"는 **숨겨진** 의 [심각도](#rule-severity) 를 나타냅니다.
 - 원의 아래쪽 화살표는 진단이 억제 됨을 나타냅니다.
 
 ![솔루션 탐색기의 진단 아이콘](media/diagnostics-icons-solution-explorer.png)
 
-## <a name="rule-sets"></a>규칙 집합
-
-[규칙 집합](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) 은 개별 진단의 심각도 및 비 표시 상태를 저장 하는 XML 파일입니다.
-
-> [!NOTE]
-> 규칙 집합에는 레거시 분석과 코드 분석기의 규칙이 모두 포함 될 수 있습니다.
-
-규칙 집합 편집기에서 활성 규칙 집합을 편집 하려면 **솔루션 탐색기** 의 **참조** > **분석기** 노드를 마우스 오른쪽 단추로 클릭 하 고 **활성 규칙 집합 열기**를 선택 합니다. 규칙 집합을 처음 편집 하는 경우 Visual Studio는 기본 규칙 집합 파일의 복사본을 만들고이를  *\<projectname >* 의 이름을로 설정 하 고 프로젝트에 추가 합니다. 또한이 사용자 지정 규칙 집합은 프로젝트에 대 한 활성 규칙 집합이 됩니다.
-
-프로젝트에 대 한 활성 규칙 집합을 변경 하려면 프로젝트 속성의 **코드 분석** 탭으로 이동 합니다. **이 규칙 집합 실행**의 목록에서 규칙 집합을 선택 합니다. 규칙 집합을 열려면 **열기**를 선택 합니다.
-
-> [!NOTE]
-> .NET Core 및 .NET Standard 프로젝트는 **솔루션 탐색기**에서 규칙 집합에 대 한 메뉴 명령을 지원 하지 않습니다 (예: **활성 규칙 집합 열기**). .NET Core 또는 .NET Standard 프로젝트에 대해 기본이 아닌 규칙 집합을 지정 하려면 프로젝트 파일에 [ **CodeAnalysisRuleSet** 속성](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) 을 수동으로 추가 합니다. Visual Studio 규칙 집합 편집기 UI의 규칙 집합 내에서 규칙을 계속 구성할 수 있습니다.
-
 ## <a name="rule-severity"></a>규칙 심각도
 
-분석기를 NuGet 패키지로 [설치](../code-quality/install-roslyn-analyzers.md) 하는 경우 분석기 규칙의 심각도 또는 *진단을*구성할 수 있습니다. 다음 표에서는 진단의 심각도 옵션을 보여 줍니다.
+::: moniker range=">=vs-2019"
 
+분석기를 NuGet 패키지로 [설치](../code-quality/install-roslyn-analyzers.md) 하는 경우 분석기 규칙의 심각도 또는 *진단을*구성할 수 있습니다. Visual Studio 2019 버전 16.3부터 [EditorConfig 파일에서](#set-rule-severity-in-an-editorconfig-file)규칙의 심각도를 구성할 수 있습니다. 규칙의 심각도를 [솔루션 탐색기](#set-rule-severity-from-solution-explorer) 또는 [규칙 집합 파일](#set-rule-severity-in-the-rule-set-file)에서 변경할 수도 있습니다.
 
-::: moniker range="vs-2019"
-|Severity|빌드 타임 동작|편집기 동작|
-|-|-|-|
-|Error|위반은 **오류 목록** 및 명령줄 빌드 출력에 *오류로* 표시 되 고 빌드가 실패 합니다.|잘못 된 코드는 빨강 물결 모양의 밑줄로 표시 되 고 스크롤 막대에 작은 빨간색 상자로 표시 됩니다.|
-|경고|위반은 **오류 목록** 및 명령줄 빌드 출력에 *경고* 로 표시 되지만 빌드가 실패 하지는 않습니다.|잘못 된 코드는 녹색 물결 모양의 밑줄로 표시 되 고 스크롤 막대의 작은 녹색 상자로 표시 됩니다.|
-|제안 해결 방법|위반은 명령줄 빌드 출력이 아닌 **오류 목록**의 *메시지로* 표시 됩니다.|잘못 된 코드는 회색 물결 모양의 밑줄로 표시 되 고 스크롤 막대의 작은 회색 상자로 표시 됩니다.|
-|자동|사용자에 게 표시 되지 않습니다.|사용자에 게 표시 되지 않습니다. 그러나 진단이 IDE 진단 엔진에 보고 됩니다.|
-|없음|완전히 표시 되지 않습니다.|완전히 표시 되지 않습니다.|
 ::: moniker-end
 
-::: moniker range="< vs-2019"
-|Severity|빌드 타임 동작|편집기 동작|
-|-|-|-|
-|Error|위반은 **오류 목록** 및 명령줄 빌드 출력에 *오류로* 표시 되 고 빌드가 실패 합니다.|잘못 된 코드는 빨강 물결 모양의 밑줄로 표시 되 고 스크롤 막대에 작은 빨간색 상자로 표시 됩니다.|
-|경고|위반은 **오류 목록** 및 명령줄 빌드 출력에 *경고* 로 표시 되지만 빌드가 실패 하지는 않습니다.|잘못 된 코드는 녹색 물결 모양의 밑줄로 표시 되 고 스크롤 막대의 작은 녹색 상자로 표시 됩니다.|
-|정보|위반은 명령줄 빌드 출력이 아닌 **오류 목록**의 *메시지로* 표시 됩니다.|잘못 된 코드는 회색 물결 모양의 밑줄로 표시 되 고 스크롤 막대의 작은 회색 상자로 표시 됩니다.|
-|숨김|사용자에 게 표시 되지 않습니다.|사용자에 게 표시 되지 않습니다. 그러나 진단이 IDE 진단 엔진에 보고 됩니다.|
-|없음|완전히 표시 되지 않습니다.|완전히 표시 되지 않습니다.|
+::: moniker range="vs-2017"
+
+분석기를 NuGet 패키지로 [설치](../code-quality/install-roslyn-analyzers.md) 하는 경우 분석기 규칙의 심각도 또는 *진단을*구성할 수 있습니다. 규칙의 심각도를 [솔루션 탐색기](#set-rule-severity-from-solution-explorer) 또는 [규칙 집합 파일](#set-rule-severity-in-the-rule-set-file)에서 변경할 수 있습니다.
+
 ::: moniker-end
 
-또한 **기본값**을 설정 하 여 규칙의 심각도를 "다시 설정" 할 수 있습니다. 각 진단에는 **속성** 창에 표시 될 수 있는 기본 심각도가 있습니다.
+다음 표에서는 다양 한 심각도 옵션을 보여 줍니다.
 
-다음 스크린샷에서는 세 가지 심각도가 있는 코드 편집기의 세 가지 진단 위반을 보여 줍니다. 물결 모양의 색 뿐만 아니라 오른쪽에 있는 스크롤 막대의 작은 상자도 확인 합니다.
+| 심각도 (솔루션 탐색기) | 심각도 (EditorConfig 파일) | 빌드 타임 동작 | 편집기 동작 |
+|-|-|-|
+| 오류 | `error` | 위반은 오류 목록 및 명령줄 빌드 출력에 *오류로* 표시 되 고 빌드가 실패 합니다.| 잘못 된 코드는 빨강 물결 모양의 밑줄로 표시 되 고 스크롤 막대에 작은 빨간색 상자로 표시 됩니다. |
+| 경고 | `warning` | 위반은 오류 목록 및 명령줄 빌드 출력에 *경고* 로 표시 되지만 빌드가 실패 하지는 않습니다. | 잘못 된 코드는 녹색 물결 모양의 밑줄로 표시 되 고 스크롤 막대의 작은 녹색 상자로 표시 됩니다. |
+| Info | `suggestion` | 위반은 명령줄 빌드 출력이 아닌 오류 목록의 *메시지로* 표시 됩니다. | 잘못 된 코드는 회색 물결 모양의 밑줄로 표시 되 고 스크롤 막대의 작은 회색 상자로 표시 됩니다. |
+| Hidden | `silent` | 사용자에 게 표시 되지 않습니다. | 사용자에 게 표시 되지 않습니다. 그러나 진단이 IDE 진단 엔진에 보고 됩니다. |
+| 없음 | `none` | 완전히 표시 되지 않습니다. | 완전히 표시 되지 않습니다. |
+| 기본값 | `default` | 규칙의 기본 심각도에 해당 합니다. 규칙의 기본값을 확인 하려면 속성 창를 확인 합니다. | 규칙의 기본 심각도에 해당 합니다. |
+
+코드 편집기의 다음 스크린샷에서는 심각도가 서로 다른 세 가지 위반을 보여 줍니다. 오른쪽의 스크롤 막대에서 물결 모양의 색 및 작은 색 사각형을 확인 합니다.
 
 ![코드 편집기에서 오류, 경고 및 정보 위반](media/diagnostics-severity-colors.png)
 
-다음 스크린샷은 **오류 목록**에 표시 되는 것과 동일한 세 가지 위반을 보여 줍니다.
+다음 스크린샷은 오류 목록에 표시 되는 것과 동일한 세 가지 위반을 보여 줍니다.
 
 ![오류 목록에서 오류, 경고 및 정보 위반](media/diagnostics-severities-in-error-list.png)
 
-**솔루션 탐색기**규칙의 심각도를 변경한 후 솔루션에 추가 된 **솔루션 탐색기**또는  *\<projectname >* 에서 규칙의 심각도를 변경할 수 있습니다.
+::: moniker range=">=vs-2019"
 
-![솔루션 탐색기의 규칙 집합 파일](media/ruleset-in-solution-explorer.png)
+### <a name="set-rule-severity-in-an-editorconfig-file"></a>EditorConfig 파일에서 규칙 심각도 설정
+
+(Visual Studio 2019 버전 16.3 이상)
+
+EditorConfig 파일에서 규칙의 심각도를 지정 하는 일반적인 구문은 다음과 같습니다.
+
+`dotnet_diagnostic.<rule ID>.severity = <severity>`
+
+EditorConfig 파일에서 규칙의 심각도를 설정 하는 것은 규칙 집합 또는 솔루션 탐색기에서 설정 된 심각도 보다 우선 합니다. EditorConfig 파일에서 [수동으로](#manually-configure-rule-severity) 또는 위반 옆에 나타나는 전구를 통해 [자동으로](#automatically-configure-rule-severity) 심각도를 구성할 수 있습니다.
+
+#### <a name="manually-configure-rule-severity"></a>규칙 심각도 수동 구성
+
+1. 프로젝트에 대 한 EditorConfig 파일이 아직 없는 경우 [하나를 추가](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project)합니다.
+
+2. 구성 하려는 각 규칙에 해당 하는 파일 확장명으로 항목을 추가 합니다. 예를 들어 파일 `error` 에 대 한 C# [CA1822](ca1822-mark-members-as-static.md) 에 대 한 심각도를 설정 하기 위해 항목은 다음과 같습니다.
+
+   ```ini
+   [*.cs]
+   dotnet_diagnostic.CA1822.severity = error
+   ```
+
+> [!NOTE]
+> IDE 코드 스타일 분석기의 경우 다른 구문 (예: `dotnet_style_qualification_for_field = false:suggestion`)을 사용 하 여 editorconfig 파일에서 구성할 수도 있습니다. 그러나 `dotnet_diagnostic` 구문을 사용 하 여 심각도를 설정 하는 경우에는 우선 순위가 우선적으로 적용 됩니다. 자세한 내용은 [EditorConfig에 대 한 언어 규칙](../ide/editorconfig-language-conventions.md)을 참조 하세요.
+
+#### <a name="automatically-configure-rule-severity"></a>자동으로 규칙 심각도 구성
+
+Visual Studio는 [빠른 작업](../ide/quick-actions.md) 전구 메뉴에서 규칙의 심각도를 구성 하는 편리한 방법을 제공 합니다.
+
+1. 위반이 발생 한 후 편집기에서 위반 물결선을 마우스로 가리켜 전구 메뉴를 엽니다. 또는 줄에 커서를 놓고 **ctrl**+키를 누릅니다 **.** 누릅니다.
+
+2. 전구 메뉴에서 > **문제 구성 또는 표시 안 함** 을 선택 하 여 **규칙 ID > 심각도를 구성 \<** 합니다.
+
+   ![Visual Studio의 전구 메뉴에서 규칙 심각도 구성](media/configure-rule-severity.png)
+
+3. 여기에서 심각도 옵션 중 하나를 선택 합니다.
+
+   ![규칙 심각도를 제안으로 구성](media/configure-rule-severity-suggestion.png)
+
+   Visual Studio는 미리 보기 상자에 표시 된 것 처럼 EditorConfig 파일에 항목을 추가 하 여 요청 된 수준에 대 한 규칙을 구성 합니다.
+
+   > [!TIP]
+   > 프로젝트에 EditorConfig 파일이 아직 없는 경우 Visual Studio에서 해당 파일을 만듭니다.
+
+::: moniker-end
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>솔루션 탐색기에서 규칙 심각도 설정
 
-1. **솔루션 탐색기**에서 **참조** > **분석기** (.net Core 프로젝트에 대 한**종속성** > **분석기** )를 확장 합니다.
+1. **솔루션 탐색기**에서 **참조** > **분석기** (또는 .net Core 프로젝트에 대 한 **종속성** > **분석기** )를 확장 합니다.
 
 1. 심각도를 설정 하려는 규칙이 포함 된 어셈블리를 확장 합니다.
 
@@ -109,7 +136,14 @@ ms.locfileid: "70060436"
 
 ### <a name="set-rule-severity-in-the-rule-set-file"></a>규칙 집합 파일에 규칙 심각도 설정
 
-1. **솔루션 탐색기**에서 [규칙 집합](analyzer-rule-sets.md) 파일을 두 번 클릭 하거나 **분석기** 노드의 오른쪽 클릭 메뉴에서 **활성 규칙 집합 열기** 를 선택 하거나에 대 한 **코드 분석** 속성 페이지에서 **열기** 를 선택 하 여 규칙 집합 파일을 엽니다. 프로젝트입니다.
+![솔루션 탐색기의 규칙 집합 파일](media/ruleset-in-solution-explorer.png)
+
+1. **솔루션 탐색기**에서 활성 [규칙 집합](analyzer-rule-sets.md) 파일을 두 번 클릭 하 여 엽니다. **참조** > **분석기** 노드의 오른쪽 클릭 메뉴에서 **활성 규칙 집합 열기** 를 선택 **하거나 열기를 선택 하** 여 활성 규칙 집합 파일을 엽니다. 프로젝트에 대 한 **코드 분석** 속성 페이지입니다.
+
+   규칙 집합을 처음 편집 하는 경우 Visual Studio는 기본 규칙 집합 파일의 복사본을 만들고이를  *\<projectname >* 의 이름을로 설정 하 고 프로젝트에 추가 합니다. 또한이 사용자 지정 규칙 집합은 프로젝트에 대 한 활성 규칙 집합이 됩니다.
+
+   > [!NOTE]
+   > .NET Core 및 .NET Standard 프로젝트는 **솔루션 탐색기**에서 규칙 집합에 대 한 메뉴 명령을 지원 하지 않습니다 (예: **활성 규칙 집합 열기**). .NET Core 또는 .NET Standard 프로젝트에 대해 기본이 아닌 규칙 집합을 지정 하려면 프로젝트 파일에 [ **CodeAnalysisRuleSet** 속성](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) 을 수동으로 추가 합니다. Visual Studio 규칙 집합 편집기 UI의 규칙 집합 내에서 규칙을 계속 구성할 수 있습니다.
 
 1. 포함 하는 어셈블리를 확장 하 여 규칙을 찾습니다.
 
@@ -121,27 +155,35 @@ ms.locfileid: "70060436"
 
 규칙 위반을 표시 하지 않는 방법에는 여러 가지가 있습니다.
 
+::: moniker range=">=vs-2019"
+
+- **Editorconfig 파일** 에서
+
+  심각도를로 `none`설정 `dotnet_diagnostic.CA1822.severity = none`합니다 (예:).
+
+::: moniker-end
+
 - **분석** 메뉴에서
 
   메뉴 모음에서 **분석** > **실행 코드 분석 및 활성 문제 표시 안 함** 을 선택 하 여 현재 위반을 모두 표시 하지 않습니다. 이를 "기준 기준선"이 라고도 합니다.
 
 - **솔루션 탐색기** 에서
 
-  **솔루션 탐색기**위반을 억제 하려면 규칙의 심각도를 **None**으로 설정 합니다.
+  규칙의 심각도를 **None**으로 설정 합니다.
 
 - **규칙 집합 편집기** 에서
 
-  규칙 집합 편집기에서 위반을 억제 하려면 해당 이름 옆의 확인란을 선택 취소 하거나 **작업** 을 **없음**으로 설정 합니다.
+  이름 옆에 있는 상자의 선택을 취소 하거나 **작업** 을 **없음**으로 설정 합니다.
 
 - **코드 편집기** 에서
 
-  코드 편집기에서 위반을 방지 하려면 코드 줄에 위반이 있는 커서를 놓고 **ctrl**+키를 누릅니다 **.** 를 실행 하 여 **빠른 작업** 메뉴를 엽니다. **원본/비**표시 제거 파일에서 >  **caxxxx를 표시 하지 않습니다**.를 선택 합니다.
+  위반 하는 코드 줄에 커서를 놓고 **Ctrl**+**마침표 (.)** 를 눌러 **빠른 작업** 메뉴를 엽니다. **원본/비**표시 제거 파일에서 >  **caxxxx를 표시 하지 않습니다**.를 선택 합니다.
 
   ![빠른 작업 메뉴에서 진단 표시 안 함](media/suppress-diagnostic-from-editor.png)
 
 - **오류 목록** 에서
 
-  표시 하지 않을 항목을 선택 하 여 **오류 목록** 에서 하나 이상의 진단을 표시 하지 않고 마우스 오른쪽 단추를 클릭 한 다음**소스/비**표시 제거 파일에서 **표시 안 함** > 을 선택 하 여 하나 이상의 진단을 표시 하지 않을 수 있습니다.
+  표시 하지 않을 규칙을 선택한 다음 마우스 오른쪽 단추를 클릭 하 고**소스/비** **표시 안 함 파일에서 표시 안 함** > 을 선택 합니다.
 
   - **소스에서**표시 하지 않는 경우 **변경 내용 미리 보기** 대화 상자가 열리고 소스 코드에 추가 C# 된 [#pragma 경고](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) 또는 Visual Basic [#Disable 경고](/dotnet/visual-basic/language-reference/directives/directives) 지시문의 미리 보기가 표시 됩니다.
 
@@ -191,7 +233,7 @@ msbuild myproject.csproj /target:rebuild /verbosity:minimal
 <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 코드 분석기 개요](../code-quality/roslyn-analyzers-overview.md)
 - [코드 분석기 버그 제출](https://github.com/dotnet/roslyn-analyzers/issues)

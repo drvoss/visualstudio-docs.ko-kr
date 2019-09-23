@@ -19,7 +19,7 @@ ms.locfileid: "70293529"
 많은 조직의 규모 및 복잡성을 고려해 볼 때 관리자가 누구인지 알지 못할 수 있으므로 어디에서 도움을 받을지 알기 어려울 수 있습니다.  관리자에게 문의하는 데 도움이 되는 새로운 기능을 구독자 포털에 추가했습니다.   
 
 ## <a name="how-to-contact-your-admin"></a>관리자에게 문의하는 방법
-1. https://my.visualstudio.com 에 방문하여 구독자 포털에 로그인합니다.
+1. [https://my.visualstudio.com](https://my.visualstudio.com ) 에 방문하여 구독자 포털에 로그인합니다.
 2. **구독** 탭을 클릭합니다. 
 3. 오른쪽 위에 있는 **내 관리자에게 문의** 단추를 클릭합니다. 
    > [!div class="mx-imgBorder"]

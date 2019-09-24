@@ -654,7 +654,7 @@
         - name: '연습: 여러 컴퓨터 빌드 환경 만들기'
           href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
     - name: 디버그 >>
-      href: debugger/index.md
+      href: debugger/index.yml
     - name: 테스트 >>
       displayName: Unit testing
       href: test/improve-code-quality.md
@@ -1184,7 +1184,7 @@
           href: ide/dotfuscator/install.md
         - name: Dotfuscator Community 업그레이드
           href: ide/dotfuscator/upgrades.md
-- name: 자료
+- name: 리소스
   expanded: true
   items:
     - name: Visual Studio 2017의 새로운 기능

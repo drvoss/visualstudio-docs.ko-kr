@@ -1,5 +1,5 @@
 ---
-title: '방법: ActiveX 컨트롤 디버그 | Microsoft Docs'
+title: '방법: ActiveX 컨트롤 디버깅 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c76167468d9eb6fbe93c3bef0c4ae8c15634fc5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c1d02cb4d581a7234ad2dd950fa51f46a5d128b2
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894432"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211088"
 ---
 # <a name="how-to-debug-an-activex-control"></a>방법: ActiveX 컨트롤 디버그
 
@@ -42,7 +42,7 @@ ActiveX 컨트롤을 디버깅하려면 컨트롤을 실행할 컨테이너(실�
 
 1. 솔루션 탐색기에서 프로젝트를 선택합니다.
 
-2. **뷰** 메뉴 선택 **속성 페이지**합니다.
+2. **보기** 메뉴에서 **속성 페이지**를 선택 합니다.
 
 3. **프로젝트 속성 페이지** 대화 상자에서 **구성 속성** 폴더를 열고 **디버깅**을 선택합니다.
 
@@ -56,10 +56,10 @@ ActiveX 컨트롤을 디버깅하려면 컨트롤을 실행할 컨테이너(실�
 
      **프로젝트 속성 페이지** 대화 상자에서 컨테이너를 지정하지 않은 경우에는 디버깅을 시작할 때 컨테이너를 지정할 수 있습니다. 디버깅을 시작하는 실행 명령을 선택하면 [디버깅 세션에 사용할 실행 파일 대화 상자](../debugger/executable-for-debugging-session-dialog-box.md)가 나타납니다. 대화 상자에서 컨테이너의 경로 이름을 지정합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
 
 - [ActiveX 컨트롤](/cpp/mfc/activex-controls)
 - [테스트 컨테이너로 속성 및 이벤트 테스트](/cpp/mfc/testing-properties-and-events-with-test-container)
 - [COM 및 ActiveX 디버깅](../debugger/com-and-activex-debugging.md)
-- [Visual Studio의 디버깅](../debugger/index.md)
+- [Visual Studio의 디버깅](../debugger/index.yml)
 - [디버거 소개](../debugger/debugger-feature-tour.md)

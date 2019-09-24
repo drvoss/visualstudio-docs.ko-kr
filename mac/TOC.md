@@ -75,6 +75,7 @@
 ### [Mac용 Visual Studio에서 ASP.NET Core 애플리케이션 빌드](building-asp-net-core.md)
 ### [Razor](razor.md)
 ### [JavaScript 및 TypeScript](javascript.md)
+### [launchSettings.json](launch-settings.md)
 ## Azure
 ### [개요](azure-workload.md)
 ### [Azure Functions 소개](azure-functions.md)

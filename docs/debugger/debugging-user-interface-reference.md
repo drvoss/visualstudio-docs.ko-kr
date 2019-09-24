@@ -1,5 +1,5 @@
 ---
-title: 사용자 인터페이스 참조 디버그 | Microsoft Docs
+title: 사용자 인터페이스 참조 디버깅 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d459e1c6611fa1b20e05ba2d5bd24e23750109d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 28757580b7f45e3d63cba1782f17283ad01f26c6
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852186"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211064"
 ---
 # <a name="debugging-user-interface-reference"></a>사용자 인터페이스 참조 디버깅
 애플리케이션을 디버깅할 때 나타날 수 있는 대화 상자는 다음과 같습니다.
@@ -42,7 +42,7 @@ ms.locfileid: "62852186"
 
 - [디버깅 오류 및 경고 대화 상자](../debugger/debugging-errors-and-warning-dialog-boxes.md)
 
-## <a name="see-also"></a>참고 항목
-- [Visual Studio의 디버깅](../debugger/index.md)
+## <a name="see-also"></a>관련 항목
+- [Visual Studio의 디버깅](../debugger/index.yml)
 - [디버거 소개](../debugger/debugger-feature-tour.md)
 - [명령 창](../ide/reference/command-window.md)

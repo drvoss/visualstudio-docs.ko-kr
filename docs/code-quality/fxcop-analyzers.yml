@@ -25,7 +25,7 @@ abstract:
 sections:
   - title: 질문과 대답
     items:
-      - html: FxCop 분석기를 사용 <a href="fxcop-analyzers-faq.md"></a> 하는 이진 fxcop 분석 및 소스 분석 간의 차이점에 대 한 몇 가지 질문과 대답을 확인 하세요.
+      - html: FxCop 분석기를 사용 <a href="fxcop-analyzers-faq.md">질문과</a> 하는 이진 fxcop 분석 및 소스 분석 간의 차이점에 대 한 몇 가지 대답을 확인 하세요.
   - title: 코드 분석을 처음 접하는 경우 ...
     items:
       - type: list

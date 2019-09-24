@@ -1,6 +1,6 @@
 ---
 title: 관리 코드 디버깅 | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 09/23/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,16 +16,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a5cf348b06bca6127690c7b5a7301881bdf75078
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c94de629026cfa1b78429aaf2209b81eead7da4f
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851882"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211207"
 ---
-# <a name="debugging-managed-code"></a>관리 코드 디버깅
+# <a name="debug-managed-code-c-visual-basic-f-ccli"></a>관리 코드 디버그 (C#, Visual Basic, F#, C++/cli)
 
-이 단원에서는 Visual Basic, C# 및 C++ 등 공용 언어 런타임을 대상으로 하는 언어로 작성된 관리되는 애플리케이션의 일반적인 디버깅 문제와 기술에 대해 설명합니다. 이 단원에서 설명하는 기술은 높은 수준의 기술입니다. [디버거 소개](../debugger/debugger-feature-tour.md)
+이 섹션에서는 관리 되는 응용 프로그램 또는 Visual Basic, C#및 C++/cli와 같은 공용 언어 런타임을 대상으로 하는 언어로 작성 된 응용 프로그램에 대 한 일반적인 디버깅 문제와 기술에 대해 설명 합니다. 이 단원에서 설명하는 기술은 높은 수준의 기술입니다. [디버거 소개](../debugger/debugger-feature-tour.md)
 
 ## <a name="in-this-section"></a>섹션 내용
 
@@ -47,7 +47,7 @@ Windows Form 만들기 및 Windows Form 디버깅을 위한 단계별 지침을 
 [혼합 모드 디버깅](../debugger/debugging-mixed-mode-applications.md)\
 혼합 모드 애플리케이션을 디버깅하는 방법에 대해 설명합니다. 혼합 모드 애플리케이션은 네이티브 코드와 관리 코드가 결합된 애플리케이션입니다.
 
-[오류: 시스템에 커널 디버거가 사용 중 이므로 수 없는 디버깅](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
+[오류: 시스템에서 커널 디버거를 사용할 수 있기 때문에 디버깅할 수 없습니다.](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
 디버그 모드로 시작된 [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)] 또는 Windows NT 시스템에서 관리 코드를 디버깅할 때 발생하는 오류 메시지에 대해 설명합니다.
 
 [JIT 최적화 및 디버깅](../debugger/jit-optimization-and-debugging.md)\
@@ -62,7 +62,7 @@ LINQ 쿼리에 대한 디버깅 기술에 대해 설명합니다.
 ## <a name="related-sections"></a>관련 단원
 
 [IntelliTrace](../debugger/intellitrace.md)\
-IntelliTrace로 응용 프로그램의 실행 내역을 기록하여 보다 빠르고 쉽게 버그를 찾습니다. 기록된 이벤트 및 호출에서 앞뒤로 이동하며 주요 시점의 응용 프로그램 상태를 확인합니다. 여러 중단점을 설정하거나 자주 응용 프로그램을 다시 시작하지 않고 코드를 디버깅합니다. Visual Studio Enterprise에 필요합니다.
+IntelliTrace로 응용 프로그램의 실행 내역을 기록하여 보다 빠르고 쉽게 버그를 찾습니다. 기록된 이벤트 및 호출에서 앞뒤로 이동하며 주요 시점의 응용 프로그램 상태를 확인합니다. 여러 중단점을 설정하거나 자주 응용 프로그램을 다시 시작하지 않고 코드를 디버깅합니다. Visual Studio Enterprise 필요 합니다.
 
 [애플리케이션 추적 및 조율](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)\
 실행 중인 애플리케이션의 실행을 모니터링하는 방법인 추적과 코드의 전략적 위치에 추적 문을 배치하는 방법인 조율에 대해 설명합니다. 이 항목에서는 계측 및 추적, 추적 스위치, 추적 수신기, 애플리케이션의 코드 추적, 애플리케이션 코드에 추적 문 추가, <xref:System.Diagnostics.Debug> 및 <xref:System.Diagnostics.Trace>를 사용하는 조건부 컴파일 등을 소개하는 정보로 연결되는 링크도 제공합니다.
@@ -79,9 +79,9 @@ C++로 작성된 코드에 <xref:System.Diagnostics.DebuggableAttribute>를 추�
 [스크립트 및 웹 애플리케이션 디버깅](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)\
 스크립트 및 웹 애플리케이션을 디버깅할 때 발생할 수 있는 일반적인 디버깅 문제와 기술에 대해 설명합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-- [연습: 디자인 타임에 사용자 지정 Windows Forms 컨트롤 디버깅](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
+- [연습: 디자인 타임에 사용자 지정 Windows Forms 컨트롤 디버그](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
 - [디버거 보안](../debugger/debugger-security.md)
-- [Visual Studio의 디버깅](../debugger/index.md)
+- [Visual Studio의 디버깅](../debugger/index.yml)
 - [디버거 소개](../debugger/debugger-feature-tour.md)

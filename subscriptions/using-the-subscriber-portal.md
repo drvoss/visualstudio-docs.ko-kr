@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Visual Studio 구독 포털에서 사용할 수 있는 이점의 전체 범위에 대해 알아보기
-ms.openlocfilehash: 8ac16b09077935fc1b45d2b04acd895107096459
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: 5ca5d3a2dcdf04e54159c746b93368b7d56be0da
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377922"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095307"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>구독자 포털 사용 - my.visualstudio.com
 
@@ -21,8 +21,8 @@ Visual Studio 구독 포털인 [https://my.visualstudio.com](https://my.visualst
 
 포털은 6개 페이지로 구성됩니다.  각 페이지에서는 구독에 포함된 여러 제품 또는 서비스에 액세스할 수 있습니다.  6개의 페이지는 혜택, 다운로드, 제품 키, 구독, 지원 및 Marketplace입니다.
 
-## <a name="benefitshttpsmyvisualstudiocombenefitswtmcidomsftdocs"></a>[혜택](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-구독에 포함된 도구 및 서비스는 혜택 페이지에 “타일”로 표시됩니다.  모든 혜택이 모든 구독에 포함되는 것은 아닙니다. 타일은 다음 세 가지 범주로 그룹화됩니다.  도구, 전문적인 개발 및 지원.  Visual Studio Dev Essentials를 사용하는 경우 다른 세 개의 범주에서 선택한 혜택을 포함할 수 있는 추천이라는 범주도 표시됩니다.
+## <a name="benefitshttpsmyvisualstudiocombenefitswtmc_idomsftdocs"></a>[혜택](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
+구독에 포함된 도구 및 서비스는 혜택 페이지에 “타일”로 표시됩니다.  모든 혜택이 모든 구독에 포함되는 것은 아닙니다. 타일은 다음 세 가지 범주로 그룹화됩니다.  도구, 전문적인 개발 및 지원.  
 
 ### <a name="tools"></a>도구
 도구 범주에서는 Visual Studio IDE, Azure DevOps 및 파트너가 제공하는 도구 등의 핵심 개발 도구를 찾을 수 있습니다.  Azure 및 Visual Studio App Center와 같은 서비스도 표시됩니다.
@@ -33,15 +33,15 @@ Visual Studio 구독 포털인 [https://my.visualstudio.com](https://my.visualst
 ### <a name="support"></a>고객 지원팀
 Azure와 관련하여 궁금한 점이 있으세요?  포럼을 통해 Azure 커뮤니티에서 도움을 받거나 Azure Advisory Chat(미리 보기)을 활용하세요.  Concierge Chat 서비스는 기술 문서 및 제품 정보를 찾도록 도와주고 구독 관련 질문을 지원하는 데 사용할 수 있습니다.  또한 구독 선택은 개발/테스트 환경에서 실행되는 광범위한 Microsoft 제품의 문제를 해결하는 데 도움이 되는 인시던트 기반 기술 지원을 포함합니다.
 
-## <a name="downloadshttpsmyvisualstudiocomdownloadswtmcidomsftdocs"></a>[다운로드](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
+## <a name="downloadshttpsmyvisualstudiocomdownloadswtmc_idomsftdocs"></a>[다운로드](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
 사용자가 가지고 있는 구독 또는 프로그램에 따라, 업데이트 및 패치에서 최신 제품 및 이전 버전의 광범위한 라이브러리에 이르는 소프트웨어 다운로드에 액세스할 수 있으므로 매우 다양한 시나리오에서 앱을 테스트할 수 있습니다.
 
 단일 계정에 연결된 여러 구독이 있는 구독자가 간편하게 사용할 수 있도록 다운로드 페이지를 방문하면 소유한 최상위 수준 구독에 사용할 수 있는 다운로드가 표시됩니다.  이렇게 하면 현재 사용 중인 구독과 관계없이 모든 다운로드를 볼 수 있습니다.
 
-## <a name="product-keyshttpsmyvisualstudiocomproductkeyswtmcidomsftdocs"></a>[제품 키](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)
+## <a name="product-keyshttpsmyvisualstudiocomproductkeyswtmc_idomsftdocs"></a>[제품 키](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)
 제품 키 페이지를 방문하여 제품을 설치 및 활성화하기 위한 제품 키를 얻고 이미 청구한 키를 확인하세요.  안전한 보관을 위해 모든 키 목록을 내보낼 수도 있습니다.
 
-## <a name="subscriptionshttpsmyvisualstudiocomsubscriptionswtmcidomsftdocs"></a>[구독](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
+## <a name="subscriptionshttpsmyvisualstudiocomsubscriptionswtmc_idomsftdocs"></a>[구독](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
 구독 페이지는 사용자가 소유한 구독을 확인하고, 구독 간에 전환하고, 구독을 갱신하고, 새 구독을 활성화하는 기능을 제공합니다. Microsoft 계정을 사용하여 액세스하는 구독을 기존 Visual Studio IDE, Azure DevOps 또는 Azure 리소스에 이미 연결된 대체 계정과 연결할 수도 있습니다.
 
 ## <a name="support"></a>고객 지원팀

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dfcc612e931756b0e3d817556c9b37844bc3cfd
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 82a8b1ea389c37dc63a9fe7366208a2a3028efb8
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922032"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234807"
 ---
 # <a name="ca1406-avoid-int64-arguments-for-visual-basic-6-clients"></a>CA1406: Visual Basic 6 클라이언트에서는 Int64 인수를 사용하지 마세요.
 
@@ -31,7 +31,7 @@ ms.locfileid: "68922032"
 |TypeName|AvoidInt64ArgumentsForVB6Clients|
 |CheckId|CA1406|
 |범주|Microsoft.Interoperability|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 COM (구성 요소 개체 모델)에 표시 되도록 특별히 표시 된 형식은 <xref:System.Int64?displayProperty=fullName> 인수를 사용 하는 멤버를 선언 합니다.
@@ -60,7 +60,7 @@ Visual Basic 6 COM 클라이언트에서 형식에 액세스 하지 않는 것�
 
 [CA1017: ComVisibleAttribute로 어셈블리 표시](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [비관리 코드와의 상호 운용](/dotnet/framework/interop/index)
 - [Long 데이터 형식](/dotnet/visual-basic/language-reference/data-types/long-data-type)

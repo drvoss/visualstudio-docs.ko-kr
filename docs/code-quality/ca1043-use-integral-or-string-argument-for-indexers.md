@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: aeec6e202ccb7f3075b04d29bdef7d171ae545f7
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 298c92263903c3799f1e7e184a554f896366566c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547691"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235840"
 ---
 # <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043: 인덱서에 정수 또는 문자열 인수를 사용하세요.
 
@@ -32,7 +32,7 @@ ms.locfileid: "69547691"
 |TypeName|UseIntegralOrStringArgumentForIndexers|
 |CheckId|CA1043|
 |범주|Microsoft.Design|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 

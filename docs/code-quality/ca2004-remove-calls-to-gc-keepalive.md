@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a716da8eb0fb1b741c302ed32408e63a4933567b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: c495357b837c4ae10d4dfe1e25237d6caaefcc4c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921141"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233107"
 ---
 # <a name="ca2004-remove-calls-to-gckeepalive"></a>CA2004: GC.KeepAlive에 대한 호출을 제거하세요.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921141"
 |TypeName|RemoveCallsToGCKeepAlive|
 |CheckId|CA2004|
 |범주|Microsoft.Reliability|
-|변경 수준|최신이 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 클래스는 `SafeHandle` 를 사용 하지만 여전히에 `GC.KeepAlive`대 한 호출을 포함 합니다.

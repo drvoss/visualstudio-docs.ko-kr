@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f13ac29028472384cfadbf9c397e578f6509670
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: eacd20dee0758ff481b259807ba52bb78b26f5d2
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922420"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235382"
 ---
 # <a name="ca1061-do-not-hide-base-class-methods"></a>CA1061: 기본 클래스 메서드를 숨기지 마십시오.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922420"
 |TypeName|DoNotHideBaseClassMethods|
 |CheckId|CA1061|
 |범주|Microsoft.Design|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 파생 된 형식은 기본 메서드 중 하 나와 동일한 수의 매개 변수를 사용 하 여 동일한 이름을 가진 메서드를 선언 합니다. 하나 이상의 매개 변수는 기본 메서드에서 해당 하는 매개 변수의 기본 형식입니다. 그리고 나머지 모든 매개 변수에는 기본 메서드의 해당 매개 변수와 동일한 형식이 있습니다.

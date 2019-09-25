@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4196cb91e1b866453de54347b8a67edd3dc2dc96
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 54630b7fba69ef96a2c08486e535ae45d8e614b8
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921885"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234760"
 ---
 # <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409: Com 노출 형식을 만들 수 있어야 합니다.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921885"
 |TypeName|ComVisibleTypesShouldBeCreatable|
 |CheckId|CA1409|
 |범주|Microsoft.Interoperability|
-|변경 수준|최신이 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 COM (구성 요소 개체 모델)에 표시 되는 것으로 특별히 표시 된 참조 형식에 매개 변수가 있는 공용 생성자가 포함 되어 있지만 매개 변수가 없는 공용 생성자가 포함 되어 있지 않습니다.
@@ -49,7 +49,7 @@ COM 클라이언트는 공용 기본 생성자가 없는 형식을 만들 수 �
 ## <a name="related-rules"></a>관련 규칙
 [CA1017: ComVisibleAttribute로 어셈블리 표시](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [상호 운용할 .NET 형식의 정규화](/dotnet/framework/interop/qualifying-net-types-for-interoperation)
 - [비관리 코드와의 상호 운용](/dotnet/framework/interop/index)

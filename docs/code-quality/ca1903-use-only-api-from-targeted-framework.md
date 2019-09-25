@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d972198898dd1a4cafa5280c129db38bb3e4982
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 704972127130cc7be991213249ff41212fa40676
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921295"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233265"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: 대상 프레임워크의 API만 사용하세요.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921295"
 |TypeName|UseOnlyApiFromTargetedFramework|
 |CheckId|CA1903|
 |범주|Microsoft 이식성|
-|변경 수준|중단-외부에 표시 되는 멤버 또는 형식의 서명에 대해 발생 하는 경우<br /><br /> 메서드 본문에서 발생 하는 경우에는 중단 되지 않습니다.|
+|주요 변경 내용|중단-외부에 표시 되는 멤버 또는 형식의 서명에 대해 발생 하는 경우<br /><br /> 메서드 본문에서 발생 하는 경우에는 중단 되지 않습니다.|
 
 ## <a name="cause"></a>원인
 멤버 또는 형식이 프로젝트의 대상 프레임 워크에 포함 되지 않은 Service Pack에 도입 된 멤버 또는 형식을 사용 하 고 있습니다.
@@ -44,7 +44,7 @@ ms.locfileid: "68921295"
 |.NET Framework 2.0|.NET Framework 2.0 SP1, .NET Framework 2.0 SP2|
 |.NET Framework 3.0|.NET Framework 2.0 SP1, .NET Framework 2.0 SP2, .NET Framework 3.0 SP1, .NET Framework 3.0 SP2|
 |.NET Framework 3.5|.NET Framework 3.5 SP1|
-|.NET Framework 4|N/A|
+|.NET Framework 4|해당 사항 없음|
 
 프로젝트의 대상 프레임 워크 [를 변경 하려면 방법: .NET 버전 대상 지정](../ide/how-to-target-a-version-of-the-dotnet-framework.md)
 
@@ -64,7 +64,7 @@ Service Pack에 대 한 종속성을 제거 하려면 새 멤버나 형식의 �
 
 [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework2#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_2.cs)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [Portability Warnings](../code-quality/portability-warnings.md)
 - [Framework 대상 지정 개요](../ide/visual-studio-multi-targeting-overview.md)

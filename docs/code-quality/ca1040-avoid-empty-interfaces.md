@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 491923cb46100e9239b889024ade00022318b6cd
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: a316025191ea68b1e63fc849db5b85c8f888a24d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547696"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235875"
 ---
 # <a name="ca1040-avoid-empty-interfaces"></a>CA1040: 빈 인터페이스를 사용하지 마세요.
 
@@ -32,7 +32,7 @@ ms.locfileid: "69547696"
 |TypeName|AvoidEmptyInterfaces|
 |CheckId|CA1040|
 |범주|Microsoft.Design|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 

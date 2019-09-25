@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 603dc08650ca5e54cac3f590f5d32de98e3ae5da
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: bd454ffad1efc9d7df84d88630fe71eebc8ca6fc
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841451"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238114"
 ---
 # <a name="ca3001-review-code-for-sql-injection-vulnerabilities"></a>CA3001: 코드에서 SQL 주입 취약점에 대해 검토합니다.
 
@@ -24,33 +24,33 @@ ms.locfileid: "65841451"
 |TypeName|ReviewCodeForSqlInjectionsVulnerabilities|
 |CheckId|CA3001|
 |범주|Microsoft.Security|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 
-신뢰할 수 없는 HTTP 요청 입력에는 SQL 명령 텍스트에 도달합니다.
+잠재적으로 신뢰할 수 없는 HTTP 요청 입력은 SQL 명령 텍스트에 도달 합니다.
 
 ## <a name="rule-description"></a>규칙 설명
 
-신뢰할 수 없는 입력 및 SQL 명령에서 작업할 때 SQL 삽입 공격에 주의 해야 합니다. SQL 삽입 공격에는 보안 및 응용 프로그램의 무결성을 손상 시 키 지 악성 SQL 명령을 실행할 수 있습니다. 일반적인 기술을 단일 따옴표 또는 아포스트로피를 사용 하 여 주석의 경우 두 개의 대시 및 문의 끝에 대 한 세미콜론으로 구분 리터럴 문자열을 포함 합니다. 자세한 내용은 [SQL 주입](/sql/relational-databases/security/sql-injection)합니다.
+신뢰할 수 없는 입력 및 SQL 명령으로 작업 하는 경우 SQL 삽입 공격에 유의 해야 합니다. SQL 삽입 공격은 악의적인 SQL 명령을 실행 하 여 응용 프로그램의 보안 및 무결성을 손상 시킬 수 있습니다. 일반적인 방법으로는 리터럴 문자열을 구분 하는 작은따옴표 또는 아포스트로피를 사용 하 고, 주석의 경우 두 개의 대시를 사용 하 고, 문의 끝에 세미콜론을 사용 합니다. 자세한 내용은 [SQL 주입](/sql/relational-databases/security/sql-injection)을 참조 하세요.
 
-이 규칙을 SQL 명령 텍스트에 도달 하는 HTTP 요청에서 입력을 찾으려고 시도 합니다.
-
-> [!NOTE]
-> 이 규칙은 어셈블리 간에 데이터를 추적할 수 없습니다. 예를 들어, 하나의 어셈블리 HTTP 요청 입력을 읽고 하 한 다음 SQL 명령을 실행 하는 다른 어셈블리에 전달 하는 경우이 규칙 경고를 생성 하지 않습니다.
+이 규칙은 SQL 명령 텍스트에 도달 하는 HTTP 요청에서 입력을 찾으려고 시도 합니다.
 
 > [!NOTE]
-> 이 규칙 메서드 호출에서 데이터 흐름은 분석 깊이에 구성할 수 있는 제한이 있습니다. 참조 [분석기 구성](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) EditorConfig 파일에 제한을 구성 하는 방법에 대 한 합니다.
+> 이 규칙은 어셈블리 간에 데이터를 추적할 수 없습니다. 예를 들어 한 어셈블리가 HTTP 요청 입력을 읽은 다음 SQL 명령을 실행 하는 다른 어셈블리에 전달 하는 경우이 규칙은 경고를 생성 하지 않습니다.
+
+> [!NOTE]
+> 이 규칙에서 메서드 호출을 통해 데이터 흐름을 분석 하는 데 구성 가능한 제한이 있습니다. EditorConfig 파일에서 제한을 구성 하는 방법에 대 한 [Analyzer 구성](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) 을 참조 하세요.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 
-신뢰할 수 없는 입력을 포함 하는 매개 변수를 사용 하 여 매개 변수가 있는 SQL 명령 또는 저장된 프로시저를 사용 합니다.
+매개 변수가 있는 SQL 명령 또는 저장 프로시저를 사용 하 여 신뢰할 수 없는 입력이 포함 된 매개 변수를 사용 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 
-입력 문자 알려진된 안전한 집합에 대해 검사할지 항상 알고 있는 경우이 규칙에서 경고를 표시 하지 않아도 안전 합니다.
+입력이 안전한 문자 집합에 대해 항상 유효성 검사 되는 경우이 규칙에서 경고를 표시 하지 않는 것이 안전 합니다.
 
-## <a name="pseudo-code-examples"></a>의사 (pseudo) 코드 예제
+## <a name="pseudo-code-examples"></a>의사 코드 예제
 
 ### <a name="violation"></a>위반
 
@@ -165,7 +165,7 @@ Namespace VulnerableWebApp
 End Namespace
 ```
 
-### <a name="stored-procedure-solution"></a>저장된 프로시저 솔루션
+### <a name="stored-procedure-solution"></a>저장 프로시저 솔루션
 
 ```csharp
 using System;

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffc94a04d708315cc143afd1556cb8a2f0072e91
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 34f9b8a79e38bdb9b6b097588697e2cd6c3545f7
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923294"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236602"
 ---
 # <a name="ca1005-avoid-excessive-parameters-on-generic-types"></a>CA1005: 제네릭 형식에 매개 변수를 너무 많이 사용하지 마세요.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68923294"
 |TypeName|AvoidExcessiveParametersOnGenericTypes|
 |CheckId|CA1005|
 |범주|Microsoft.Design|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 외부에 노출 되는 제네릭 형식에는 두 개 이상의 형식 매개 변수가 있습니다.
@@ -57,5 +57,5 @@ ms.locfileid: "68923294"
 
 [CA1007: 적절 한 경우 제네릭을 사용 합니다.](../code-quality/ca1007-use-generics-where-appropriate.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 [제네릭](/dotnet/csharp/programming-guide/generics/index)

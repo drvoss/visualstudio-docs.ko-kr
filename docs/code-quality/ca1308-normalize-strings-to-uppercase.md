@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06fe8d4fbd4def14bfb8a24f4f211a121c809930
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: c33f4b0b55728d659c34e0ffc8723f555a6d074d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922247"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234923"
 ---
 # <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308: 대문자로 문자열을 정규화하세요.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922247"
 |TypeName|NormalizeStringsToUppercase|
 |CheckId|CA1308|
 |범주|Microsoft.Globalization|
-|변경 수준|최신이 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 작업은 문자열을 소문자로 정규화 합니다.
@@ -42,5 +42,5 @@ ms.locfileid: "68922247"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 결과에 따라 보안을 결정 하지 않는 경우 (예: UI에 표시 되는 경우) 경고 메시지를 표시 하지 않는 것이 안전 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 [전역화 경고](../code-quality/globalization-warnings.md)

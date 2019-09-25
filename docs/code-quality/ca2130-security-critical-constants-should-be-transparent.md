@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a33b650570981f5496813f575b1ae2413a960026
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 62cf9b6b62dac85251d9fca434b35f0a7c6254c7
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920768"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232430"
 ---
 # <a name="ca2130-security-critical-constants-should-be-transparent"></a>CA2130: 보안에 중요한 상수는 투명해야 합니다.
 
@@ -24,7 +24,7 @@ ms.locfileid: "68920768"
 |TypeName|ConstantsShouldBeTransparent|
 |CheckId|CA2130|
 |범주|Microsoft.Security|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 상수 필드 또는 열거형 멤버는로 <xref:System.Security.SecurityCriticalAttribute>표시 됩니다.

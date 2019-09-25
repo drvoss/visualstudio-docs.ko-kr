@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c528266c54bbb2f3f0d9420461d700a46b09bd5
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: eff846cfacb30d97c28cadd14b86f7724b1d2ce4
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922275"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234932"
 ---
 # <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309: 서수 StringComparison을 사용하세요.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922275"
 |TypeName|UseOrdinalStringComparison|
 |CheckId|CA1309|
 |범주|Microsoft.Globalization|
-|변경 수준|최신이 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 
@@ -45,7 +45,7 @@ ms.locfileid: "68922275"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 라이브러리나 응용 프로그램이 제한 된 로컬 대상 사용자를 위한 것 이거나 현재 문화권의 의미 체계를 사용 해야 하는 경우이 규칙에서 경고를 표시 하지 않는 것이 안전 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [전역화 경고](../code-quality/globalization-warnings.md)
 - [CA1307: StringComparison 지정](../code-quality/ca1307-specify-stringcomparison.md)

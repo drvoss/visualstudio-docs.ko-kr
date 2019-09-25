@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b75425d35e51125b0cfe1f76c8c18d7f155a12c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 46cb99f00bbbd9969899121f82ba591980b5b288
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796745"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231913"
 ---
 # <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151: 중요한 형식이 포함된 필드는 보안에 중요한 필드여야 합니다.
 
@@ -22,11 +22,11 @@ ms.locfileid: "62796745"
 |TypeName||
 |CheckId|CA2151|
 |범주|Microsoft.Security|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 
-보안 투명 필드 또는 안전 중요 필드가 선언되었습니다. 해당 형식은 보안에 중요한 것으로 지정되었습니다. 예를 들어:
+보안 투명 필드 또는 안전 중요 필드가 선언되었습니다. 해당 형식은 보안에 중요한 것으로 지정되었습니다. 예:
 
 ```csharp
 [assembly: AllowPartiallyTrustedCallers]
@@ -48,7 +48,7 @@ ms.locfileid: "62796745"
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 
-이 규칙 위반 문제를 해결 하려면 사용 하 여 필드를 표시는 <xref:System.Security.SecurityCriticalAttribute> 특성 또는 형식을 필드로 참조 되는 보안 투명 또는 안전 중요 합니다.
+이 규칙 위반 문제를 해결 하려면 필드를 <xref:System.Security.SecurityCriticalAttribute> 특성으로 표시 하거나 필드에서 참조 하는 형식을 보안 투명 또는 안전에 중요로 설정 합니다.
 
 ```csharp
 // Fix 1: Make the referencing field security critical
@@ -75,7 +75,7 @@ ms.locfileid: "62796745"
    }
 ```
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 
 이 규칙에서는 경고를 표시해야 합니다.
 

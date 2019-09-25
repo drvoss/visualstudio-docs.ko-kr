@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf9475ad208a229057700fa2965984fbdcb17abf
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e333e53fea1b965b250bdc97924e93728d55805a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923094"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236175"
 ---
 # <a name="ca1021-avoid-out-parameters"></a>CA1021: out 매개 변수를 사용하지 마세요.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68923094"
 |TypeName|AvoidOutParameters|
 |CheckId|CA1021|
 |범주|Microsoft.Design|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 공용 형식의 `out` public 또는 protected 메서드에 매개 변수가 있습니다.
@@ -85,7 +85,7 @@ Passing by return value:
 
 ## <a name="try-pattern-methods"></a>Try 패턴 메서드
 
-### <a name="description"></a>Description
+### <a name="description"></a>설명
 등의 **Try\<>** <xref:System.Int32.TryParse%2A?displayProperty=fullName>패턴을 구현 하는 메서드는이 위반을 발생 시 키 지 않습니다. 다음 예제에서는 메서드를 <xref:System.Int32.TryParse%2A?displayProperty=fullName> 구현 하는 구조체 (값 형식)를 보여 줍니다.
 
 ### <a name="code"></a>코드

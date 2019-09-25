@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4e068fee014d767b7afcdf8183ac6611b299f36
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 3f359f7aa24ada0edf2c98a7d527ed715df85086
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921584"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233916"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: 기본 설정 용어를 사용하세요.
 
@@ -27,7 +27,7 @@ ms.locfileid: "68921584"
 |TypeName|UsePreferredTerms|
 |CheckId|CA1726|
 |범주|Microsoft.Naming|
-|변경 수준|중단-어셈블리에서 발생 한 경우<br /><br /> 형식 매개 변수에 대해 발생 하는 경우에는 중단 되지 않습니다.|
+|주요 변경 내용|중단-어셈블리에서 발생 한 경우<br /><br /> 형식 매개 변수에 대해 발생 하는 경우에는 중단 되지 않습니다.|
 
 ## <a name="cause"></a>원인
 

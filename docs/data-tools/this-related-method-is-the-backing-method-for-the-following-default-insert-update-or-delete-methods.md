@@ -8,29 +8,29 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a5ae70462079589ba2b63ee50cf0b7a0570e056a
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 11c5c7d3c8078aa420074e9e32bb132489b169c8
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457838"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252940"
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>이 관련 메서드는 다음과 같은 기본 삽입, 업데이트 및 삭제 메서드를 지원하는 메서드입니다.
 
-이 관련 메서드는 다음과 같은 기본을 지 원하는 메서드입니다 `Insert`하십시오 `Update`, 또는 `Delete` 메서드. 이 관련 메서드를 삭제하면 이러한 메서드도 삭제됩니다. 계속하시겠습니까?
+이 관련 메서드는 다음과 같은 기본 `Insert`, `Update`또는 `Delete` 메서드에 대 한 지원 메서드입니다. 이 관련 메서드를 삭제하면 이러한 메서드도 삭제됩니다. 계속하시겠습니까?
 
-선택한 `DataContext` 메서드 중 하나로 현재 사용 되는 `Insert`를 `Update`, 또는 `Delete` 엔터티 클래스 중 하나에 대 한 메서드를 **O/R 디자이너**합니다. 삭제는 선택한 메서드를 사용 하면 삽입을 수행 하기 위한 기본 런타임 동작으로 되돌리려면이 메서드를 사용 하 던 엔터티 클래스 업데이트 또는 업데이트 하는 동안 삭제 합니다.
+선택한 `DataContext` 메서드는 현재 **O/R 디자이너**의 엔터티 클래스 `Update`중 하나 `Delete` 에 대 한 `Insert`, 또는 메서드 중 하나로 사용 됩니다. 선택한 메서드를 삭제 하면이 메서드를 사용 하는 엔터티 클래스가 업데이트 중에 삽입, 업데이트 또는 삭제를 수행 하는 기본 런타임 동작으로 되돌아갑니다.
 
-## <a name="selected-method-options"></a>선택한 방법 옵션
+## <a name="selected-method-options"></a>선택한 메서드 옵션
 
-- 런타임 업데이트를 사용 하도록 엔터티 클래스를 선택한 메서드를 삭제 하려면 클릭 **예**합니다.
+- 선택한 메서드를 삭제 하 여 엔터티 클래스가 런타임 업데이트를 사용 하도록 하려면 **예**를 클릭 합니다.
 
-   선택한 메서드가 삭제되고 업데이트 동작을 재정의하기 위해 이 메서드를 사용하는 모든 클래스가 기본 LINQ to SQL 런타임 동작을 사용하도록 되돌립니다.
+   선택한 메서드가 삭제 되 고이 메서드를 사용 하 여 업데이트 동작을 재정의 하는 모든 클래스가 기본 LINQ to SQL 런타임 동작을 사용 하 여 되돌립니다.
 
-- 선택한 메서드를 변경 하지 않고 메시지 상자를 닫으려면 **No**합니다.
+- 선택한 메서드를 변경 하지 않고 메시지 상자를 닫으려면 **아니요**를 클릭 합니다.
 
    메시지 상자가 닫히고 변경되지 않습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

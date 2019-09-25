@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f25b74949c734921c313ae2cf00a2d217029e52
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 7ebbbbe01f1dd23dfc560e019133dacd3517b388
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921381"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253461"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822: 멤버를 static으로 표시하세요.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921381"
 |TypeName|MarkMembersAsStatic|
 |CheckId|CA1822|
 |범주|Microsoft.Performance|
-|변경 수준|중단-변경 내용에 관계 없이 멤버가 어셈블리 외부에 표시 되지 않는 경우입니다. 중단 하지 않음- `this` 키워드를 사용 하 여 멤버를 인스턴스 멤버로 변경 하는 경우에만 해당 됩니다.<br /><br /> 중단-멤버를 인스턴스 멤버에서 정적 멤버로 변경 하 고 어셈블리 외부에서 볼 수 있는 경우.|
+|주요 변경 내용|중단-변경 내용에 관계 없이 멤버가 어셈블리 외부에 표시 되지 않는 경우입니다. 중단- `this` 키워드를 사용 하 여 멤버를 인스턴스 멤버로 변경 하는 경우에만 해당 합니다.<br /><br /> 중단-멤버를 인스턴스 멤버에서 정적 멤버로 변경 하 고 어셈블리 외부에서 볼 수 있는 경우.|
 
 ## <a name="cause"></a>원인
 인스턴스 데이터에 액세스 하지 않는 멤버는 static으로 표시 되지 않습니다 (에서 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]공유).

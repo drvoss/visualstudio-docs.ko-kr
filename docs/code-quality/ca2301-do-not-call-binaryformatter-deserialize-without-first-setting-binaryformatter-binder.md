@@ -13,12 +13,12 @@ ms.workload:
 f1_keywords:
 - CA2301
 - DoNotCallBinaryFormatterDeserializeWithoutFirstSettingBinaryFormatterBinder
-ms.openlocfilehash: 0291aa4d8130cfdc9b919e0c8430e56ef0f95296
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 24bb9c9762a57f7ce97e41a9a8e6c2831a1dde20
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891188"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237763"
 ---
 # <a name="ca2301-do-not-call-binaryformatterdeserialize-without-first-setting-binaryformatterbinder"></a>CA2301: 먼저 BinaryFormatter.Binder를 설정하지 않고 BinaryFormatter.Deserialize를 호출하지 마세요.
 
@@ -27,7 +27,7 @@ ms.locfileid: "69891188"
 |TypeName|DoNotCallBinaryFormatterDeserializeWithoutFirstSettingBinaryFormatterBinder|
 |CheckId|CA2301|
 |범주|Microsoft.Security|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 
@@ -121,7 +121,7 @@ Public Class ExampleClass
 End Class
 ```
 
-### <a name="solution"></a>해결 방법
+### <a name="solution"></a>솔루션
 
 ```csharp
 using System;

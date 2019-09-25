@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9a74f6313f90a31d43cf39443b1c44d78f0628f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb6d28e15870907034479e698ba8e7464f4f5159
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545191"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232718"
 ---
 # <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115: 네이티브 리소스를 사용하는 경우에는 GC.KeepAlive를 호출하세요.
 
@@ -28,42 +28,42 @@ ms.locfileid: "62545191"
 |TypeName|CallGCKeepAliveWhenUsingNativeResources|
 |CheckId|CA2115|
 |범주|Microsoft.Security|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 
-종료자를 사용 하 여 형식에 선언 된 메서드 참조를 <xref:System.IntPtr?displayProperty=fullName> 또는 <xref:System.UIntPtr?displayProperty=fullName> 필드를 호출 하지 않습니다 하지만 <xref:System.GC.KeepAlive%2A?displayProperty=fullName>합니다.
+종료자를 사용 하 여 형식에서 선언 된 메서드가 <xref:System.IntPtr?displayProperty=fullName> 또는 <xref:System.UIntPtr?displayProperty=fullName> 필드를 참조 하지만를 호출 <xref:System.GC.KeepAlive%2A?displayProperty=fullName>하지 않습니다.
 
 ## <a name="rule-description"></a>규칙 설명
 
-관리 되는 코드에 대 한 참조가 더 이상 없으면 가비지 수집에서 개체를 종료 합니다. 개체에 대 한 관리 되지 않는 참조는 가비지 수집을 방지 하지 않습니다. 이 규칙에서는 관리되지 않는 리소스가 비관리 코드에서 여전히 사용되고 있는데 종료되려고 할 경우 발생할 수 있는 오류를 감지합니다.
+관리 코드에서 개체에 대 한 참조가 더 이상 없으면 가비지 수집에서 개체를 종료 합니다. 개체에 대 한 관리 되지 않는 참조는 가비지 수집을 방지 하지 않습니다. 이 규칙에서는 관리되지 않는 리소스가 비관리 코드에서 여전히 사용되고 있는데 종료되려고 할 경우 발생할 수 있는 오류를 감지합니다.
 
-이 규칙이 있다고 가정 <xref:System.IntPtr> 고 <xref:System.UIntPtr> 필드는 관리 되지 않는 리소스에 대 한 포인터를 저장 합니다. 관리 되지 않는 리소스를 해제 하는 종료자의 목적은 이기 때문에 종료 자가 포인터 필드에서 가리키는 관리 되지 않는 리소스를 해제 합니다 규칙을 가정 합니다. 이 규칙은 또한 메서드를 비관리 코드에 관리 되지 않는 리소스를 전달 하려면 포인터 필드를 참조 하 고는 가정 합니다.
+이 규칙은 <xref:System.IntPtr> 및 <xref:System.UIntPtr> 필드가 관리 되지 않는 리소스에 대 한 포인터를 저장 한다고 가정 합니다. 종료자의 용도는 관리 되지 않는 리소스를 해제 하는 것 이므로 규칙에서는 종료 자가 포인터 필드에서 가리키는 관리 되지 않는 리소스를 해제 하는 것으로 가정 합니다. 또한이 규칙은 메서드가 포인터 필드를 참조 하 여 관리 되지 않는 리소스를 비관리 코드에 전달 하는 것으로 가정 합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 
-이 규칙 위반 문제를 해결 하려면에 대 한 호출을 추가 <xref:System.GC.KeepAlive%2A> 메서드를 현재 인스턴스를 전달 합니다 (`this` 에서 C# 및 C++) 인수로 합니다. 가비지 컬렉션에서 개체 보호 되어야 합니다는 코드의 마지막 줄 다음 호출을 배치 합니다. 호출 직후 <xref:System.GC.KeepAlive%2A>, 개체 다시 비율은 가비지 컬렉션에 대 한 준비를 관리 되는 참조가 없는 가정 합니다.
+이 규칙 위반 문제를 해결 <xref:System.GC.KeepAlive%2A> 하려면 메서드에 호출을 추가 하 여 및`this` C# C++의 현재 인스턴스를 인수로 전달 합니다. 가비지 수집에서 개체를 보호 해야 하는 코드의 마지막 줄 뒤에 호출을 배치 합니다. 를 <xref:System.GC.KeepAlive%2A>호출한 직후에는 개체에 대 한 관리 되는 참조가 없다는 가정 하에 개체를 다시 가비지 수집 준비로 간주 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 
-이 규칙은 거짓 긍정을 야기할 수 있는 몇 가지 사항을 가정 합니다. 안전 하 게 하는 경우이 규칙에서 경고를 무시할 수 있습니다.
+이 규칙은 가양성을 일으킬 수 있는 몇 가지 가정을 합니다. 다음 경우에는이 규칙에서 경고를 안전 하 게 표시 하지 않을 수 있습니다.
 
-- 종료자의 콘텐츠를 해제 하지 않는 합니다 <xref:System.IntPtr> 또는 <xref:System.UIntPtr> 메서드에서 참조 되는 필드입니다.
+- 종료자는 메서드가 참조 하는 <xref:System.IntPtr> 또는 <xref:System.UIntPtr> 필드의 콘텐츠를 해제 하지 않습니다.
 
-- 메서드를 통과 하지 못한 합니다 <xref:System.IntPtr> 또는 <xref:System.UIntPtr> 비관리 코드로 필드입니다.
+- 메서드는 <xref:System.IntPtr> 또는 <xref:System.UIntPtr> 필드를 비관리 코드에 전달 하지 않습니다.
 
-신중 하 게 제외 하기 전에 다른 메시지를 검토 합니다. 이 규칙 재현 하 고 디버그 하기 어려운 오류를 감지 합니다.
+제외 하기 전에 다른 메시지를 신중 하 게 검토 합니다. 이 규칙은 재현 및 디버깅 하기 어려운 오류를 검색 합니다.
 
 ## <a name="example"></a>예제
 
-다음 예제에서 `BadMethod`에는 `GC.KeepAlive`에 대한 호출이 포함되지 않으므로 규칙을 위반합니다. `GoodMethod` 수정 된 코드를 포함합니다.
+다음 예제에서 `BadMethod`에는 `GC.KeepAlive`에 대한 호출이 포함되지 않으므로 규칙을 위반합니다. `GoodMethod`수정 된 코드를 포함 합니다.
 
 > [!NOTE]
-> 이 예제는 의사 (pseudo) 코드입니다. 하지만 코드를 컴파일하고 실행, 관리 되지 않는 리소스를 만들거나 해제 하지는 때문에 경고가 발생 하지 않습니다.
+> 이 예제는 의사 (pseudo) 코드입니다. 코드를 컴파일하고 실행 하더라도 관리 되지 않는 리소스가 만들어지거나 해제 되기 때문에 경고가 발생 하지 않습니다.
 
 [!code-csharp[FxCop.Security.IntptrAndFinalize#1](../code-quality/codesnippet/CSharp/ca2115-call-gc-keepalive-when-using-native-resources_1.cs)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.GC.KeepAlive%2A?displayProperty=fullName>
 - <xref:System.IntPtr?displayProperty=fullName>

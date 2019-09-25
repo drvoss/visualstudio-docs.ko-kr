@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 505aa8cdc1371a3bc288772d77b49eb7a50e9830
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0639d30771b3a6bb288ddbf9644dda2efcd5f90d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920148"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231354"
 ---
 # <a name="ca2230-use-params-for-variable-arguments"></a>CA2230: 가변 인수로 params를 사용하세요.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68920148"
 |TypeName|UseParamsForVariableArguments|
 |CheckId|CA2230|
 |범주|Microsoft.Usage|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 공용 또는 보호 된 형식에 `VarArgs` 호출 규칙을 사용 하는 public 또는 protected 메서드가 포함 되어 있습니다.
@@ -49,7 +49,7 @@ ms.locfileid: "68920148"
 
 [!code-csharp[FxCop.Usage.UseParams#1](../code-quality/codesnippet/CSharp/ca2230-use-params-for-variable-arguments_1.cs)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Reflection.CallingConventions?displayProperty=fullName>
 - [언어 독립성 및 언어 독립적 구성 요소](/dotnet/standard/language-independence-and-language-independent-components)

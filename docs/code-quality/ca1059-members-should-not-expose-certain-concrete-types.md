@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f24881d04599677c5d45c93fc940286f115d593
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 97ee4e11ceb3380c204d00203b9e81397a39e362
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922520"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235471"
 ---
 # <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: 멤버는 구체적인 특정 형식을 노출하면 안 됩니다.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922520"
 |TypeName|MembersShouldNotExposeCertainConcreteTypes|
 |CheckId|CA1059|
 |범주|Microsoft.Design|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 외부에서 볼 수 있는 멤버는 구체적인 특정 형식 이거나 해당 매개 변수 또는 반환 값 중 하나를 통해 구체적인 특정 형식을 노출 합니다. 현재이 규칙은 다음과 같은 구체적인 형식의 노출을 보고 합니다.
@@ -40,7 +40,7 @@ ms.locfileid: "68922520"
 
 다음 표에서는 대상으로 지정 된 구체적인 형식 및 제안 된 대체 항목을 보여 줍니다.
 
-|구체적 형식|대체 기능|
+|구체적 형식|Replacement|
 |-------------------|-----------------|
 |<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.<br /><br /> 인터페이스를 사용 하 여 XML 데이터 원본의 특정 구현에서 멤버를 분리 합니다.|
 

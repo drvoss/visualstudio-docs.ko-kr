@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 60aefd40c48dc3789ab84ee5873aa6a53f4ee3fe
-ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
+ms.openlocfilehash: 74a43a0c601fa8a96c8737644bf5bd0261f59796
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68740113"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254051"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>연습: VSTO 추가 기능 프로젝트의 서비스에서 데이터 바인딩
   VSTO 추가 기능 프로젝트에서 호스트 컨트롤에 데이터를 바인딩할 수 있습니다. 이 연습에서는 Microsoft Office Word 문서에 컨트롤을 추가하고, MSDN 콘텐츠 서비스에서 검색된 데이터에 컨트롤을 바인딩하고, 런타임에 이벤트에 응답하는 방법을 보여 줍니다.
@@ -28,7 +28,7 @@ ms.locfileid: "68740113"
 
  이 연습에서는 다음 작업을 수행합니다.
 
-- 런타임에 문서에 컨트롤 추가 <xref:Microsoft.Office.Tools.Word.RichTextContentControl>
+- 런타임에 문서에 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 컨트롤 추가
 
 - 웹 서비스의 데이터에 컨트롤을바인딩합니다.<xref:Microsoft.Office.Tools.Word.RichTextContentControl>
 
@@ -73,8 +73,8 @@ ms.locfileid: "68740113"
 
 6. **참조 추가 마법사** 대화 상자에서 **마침**을 클릭합니다.
 
-## <a name="add-a-content-control-and-bind-to-data-at-runtime"></a>런타임에 콘텐츠 컨트롤 추가 및 데이터 바인딩
- VSTO 추가 기능 프로젝트에서는 런타임에 컨트롤을 추가 및 바인딩할 수 있습니다. 이 연습에서는 사용자가 컨트롤 내부를 클릭할 때 웹 서비스에서 데이터를 가져오도록 콘텐츠 컨트롤을 구성 합니다.
+## <a name="add-a-content-control-and-bind-to-data-at-run-time"></a>런타임에 콘텐츠 컨트롤 추가 및 데이터 바인딩
+ VSTO 추가 기능 프로젝트에서 런타임에 컨트롤을 추가 및 바인딩할 수 있습니다. 이 연습에서는 사용자가 컨트롤 내부를 클릭할 때 웹 서비스에서 데이터를 가져오도록 콘텐츠 컨트롤을 구성 합니다.
 
 ### <a name="to-add-a-content-control-and-bind-to-data"></a>콘텐츠 컨트롤을 추가하고 데이터에 바인딩하려면
 
@@ -114,5 +114,5 @@ ms.locfileid: "68740113"
 
      MTPS 콘텐츠 서비스에서 정보가 다운로드되어 콘텐츠 컨트롤 내부에 표시됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 - [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)

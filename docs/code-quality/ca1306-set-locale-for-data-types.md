@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 893844741c848bee759f56dd027c9976a21902e8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: aaf16ccd187681be7406fdadbde620a167a40c96
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922787"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235020"
 ---
 # <a name="ca1306-set-locale-for-data-types"></a>CA1306: 데이터 형식에 맞는 로캘을 설정하세요.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922787"
 |TypeName|SetLocaleForDataTypes|
 |CheckId|CA1306|
 |범주|Microsoft.Globalization|
-|변경 수준|최신이 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 메서드나 <xref:System.Data.DataTable?displayProperty=fullName> 생성자가 하나 이상의 또는 <xref:System.Data.DataSet?displayProperty=fullName> 인스턴스를 만들었으며 로캘 속성 (<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName> 또는 <xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>)을 명시적으로 설정 하지 않은 경우
@@ -47,7 +47,7 @@ ms.locfileid: "68922787"
 
 [!code-csharp[FxCop.Globalization.DataTable#1](../code-quality/codesnippet/CSharp/ca1306-set-locale-for-data-types_1.cs)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Data.DataTable?displayProperty=fullName>
 - <xref:System.Data.DataSet?displayProperty=fullName>

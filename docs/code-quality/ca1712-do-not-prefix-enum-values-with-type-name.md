@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 323025eb03d2a949a970659aba2357c01ed8bfab
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0b5966c9685bc4bbc5ba997f8acf47abbbfca1a2
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921767"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234116"
 ---
 # <a name="ca1712-do-not-prefix-enum-values-with-type-name"></a>CA1712: 열거형 값에 형식 이름을 접두사로 사용하지 마세요.
 
@@ -32,7 +32,7 @@ ms.locfileid: "68921767"
 |TypeName|DoNotPrefixEnumValuesWithTypeName|
 |CheckId|CA1712|
 |범주|Microsoft.Naming|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 열거형은 이름이 열거형의 형식 이름으로 시작 하는 멤버를 포함 합니다.
@@ -62,6 +62,6 @@ ms.locfileid: "68921767"
 
 [CA2217: 열거형을 FlagsAttribute로 표시 하지 않습니다.](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Enum?displayProperty=fullName>

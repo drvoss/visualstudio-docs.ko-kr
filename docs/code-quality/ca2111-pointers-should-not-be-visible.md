@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 416e45337dafd11a00e98b9adda9f16b02139f9c
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8a93f776ac6e133b0ebf79d1dfa56f802ff66e5f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921661"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232775"
 ---
 # <a name="ca2111-pointers-should-not-be-visible"></a>CA2111: 포인터는 노출되면 안 됩니다.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921661"
 |TypeName|PointersShouldNotBeVisible|
 |CheckId|CA2111|
 |범주|Microsoft.Security|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 공용 또는 보호 <xref:System.IntPtr?displayProperty=fullName> 된 또는 <xref:System.UIntPtr?displayProperty=fullName> 필드가 읽기 전용이 아닙니다.
@@ -54,7 +54,7 @@ ms.locfileid: "68921661"
 
 [CA1051: 표시 되는 인스턴스 필드를 선언 하지 마십시오.](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.IntPtr?displayProperty=fullName>
 - <xref:System.UIntPtr?displayProperty=fullName>

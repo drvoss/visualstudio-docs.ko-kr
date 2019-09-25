@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d9ff79bc7e276e4070a1df1760c0cfde7ed28b1
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 71e365fa0891e9cb01f7a2860a9c2f13b78072b3
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547332"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235527"
 ---
 # <a name="ca1056-uri-properties-should-not-be-strings"></a>CA1056: URI 속성은 문자열이면 안 됩니다.
 
@@ -32,7 +32,7 @@ ms.locfileid: "69547332"
 |TypeName|UriPropertiesShouldNotBeStrings|
 |CheckId|CA1056|
 |범주|Microsoft.Design|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 

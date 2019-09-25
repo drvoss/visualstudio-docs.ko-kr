@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e8c8c58a01b9527df472907c8b55a9d175dd91d
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 4965c9df3c2256511b8e44de8d388a9155d0d8f9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841600"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237372"
 ---
 # <a name="ca3004-review-code-for-information-disclosure-vulnerabilities"></a>CA3004: 코드에서 정보 공개 취약성에 대해 검토합니다.
 
@@ -24,33 +24,33 @@ ms.locfileid: "65841600"
 |TypeName|ReviewCodeForInformationDisclosureVulnerabilities|
 |CheckId|CA3004|
 |범주|Microsoft.Security|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 
-예외 메시지, 스택 추적 또는 문자열 표현을 웹 출력에 도달합니다.
+예외의 메시지, 스택 추적 또는 문자열 표현은 웹 출력에 도달 합니다.
 
 ## <a name="rule-description"></a>규칙 설명
 
-공격자가 도움이 될 수 있는 프로그램의 내부 구조에 대 한 정보 찾기 다른 취약점을 악용 하는 공격자가 제공 예외 정보를 공개 합니다.
+예외 정보를 공개 하면 공격자가 응용 프로그램의 내부 정보를 파악할 수 있으므로 공격자가 다른 취약점을 악용할 수 있습니다.
 
-이 규칙 예외 메시지, 스택 추적 또는 HTTP 응답에 출력 되는 문자열 표현을 찾으려고 시도 합니다.
-
-> [!NOTE]
-> 이 규칙은 어셈블리 간에 데이터를 추적할 수 없습니다. 예를 들어, 하나의 어셈블리 예외를 catch 하 다음 예외를 출력 하는 다른 어셈블리에 전달 하는 경우이 규칙 경고를 생성 하지 않습니다.
+이 규칙은 HTTP 응답에 대 한 출력에서 예외 메시지, 스택 추적 또는 문자열 표현을 찾으려고 시도 합니다.
 
 > [!NOTE]
-> 이 규칙 메서드 호출에서 데이터 흐름은 분석 깊이에 구성할 수 있는 제한이 있습니다. 참조 [분석기 구성](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) EditorConfig 파일에 제한을 구성 하는 방법에 대 한 합니다.
+> 이 규칙은 어셈블리 간에 데이터를 추적할 수 없습니다. 예를 들어 한 어셈블리에서 예외를 catch 한 다음 예외를 출력 하는 다른 어셈블리에이를 전달 하는 경우이 규칙은 경고를 생성 하지 않습니다.
+
+> [!NOTE]
+> 이 규칙에서 메서드 호출을 통해 데이터 흐름을 분석 하는 데 구성 가능한 제한이 있습니다. EditorConfig 파일에서 제한을 구성 하는 방법에 대 한 [Analyzer 구성](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) 을 참조 하세요.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 
-HTTP 응답에 예외 정보를 출력 하지 마십시오. 대신, 일반 오류 메시지를 제공 합니다. 참조 [OWASP의 오류 처리 페이지](https://www.owasp.org/index.php/Error_Handling) 자세한 지침에 대 한 합니다.
+예외 정보를 HTTP 응답에 출력 하지 않습니다. 대신 일반 오류 메시지를 제공 합니다. 자세한 지침은 [OWASP의 오류 처리 페이지](https://www.owasp.org/index.php/Error_Handling) 를 참조 하세요.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 
-알고 있는 경우 웹 출력 응용 프로그램의 트러스트 경계 내에서 이며 외부 노출 되지 확인이 경고를 표시 하지 않으려면입니다. 이 거의 없습니다. 응용 프로그램의 신뢰 경계 및 데이터 흐름은 시간이 지남에 따라 변경 될 수 있는 고려해 야 합니다.
+웹 출력이 응용 프로그램의 트러스트 경계 내에 있고 외부에 노출 되지 않는 경우이 경고를 표시 하지 않을 수 있습니다. 이는 드물게 발생 합니다. 응용 프로그램의 트러스트 경계 및 데이터 흐름이 시간이 지남에 따라 변경 될 수 있다는 점을 고려해 야 합니다.
 
-## <a name="pseudo-code-examples"></a>의사 (pseudo) 코드 예제
+## <a name="pseudo-code-examples"></a>의사 코드 예제
 
 ### <a name="violation"></a>위반
 

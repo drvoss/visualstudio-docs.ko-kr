@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bd3e9c56bb02995d9b99b57bb2799ab69b51a42d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0a83d0afffc50c7697fad98c4dc49e31770d63d4
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921563"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233743"
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804: 사용되지 않는 로컬 항목을 제거하세요.
 
@@ -31,7 +31,7 @@ ms.locfileid: "68921563"
 |TypeName|RemoveUnusedLocals|
 |CheckId|CA1804|
 |범주|Microsoft.Performance|
-|변경 수준|최신이 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 메서드는 지역 변수를 선언 하지만 대입문을 받는 사람이 될 수 있다는 점을 제외 하 고는 변수를 사용 하지 않습니다. 이 규칙에의 한 분석을 위해 테스트 된 어셈블리는 디버깅 정보로 빌드해야 하며 연결 된 프로그램 데이터베이스 (.pdb) 파일을 사용할 수 있어야 합니다.

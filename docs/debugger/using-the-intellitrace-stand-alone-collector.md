@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e5219e6e3977be59d89b7835413092f1fbeb200
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 5fe671b10a701bb355a476ff9bc577bb4cdca71b
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68680626"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252527"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>IntelliTrace 독립 실행형 수집기 (C#, Visual Basic) 사용
 
@@ -64,11 +64,11 @@ ms.locfileid: "68680626"
 
 2. [수집기 디렉터리에 대한 사용 권한 설정](#ConfigurePermissionsRunningCollector)
 
-3. [IntelliTrace PowerShell cmdlet을 설치하고 웹앱 또는 SharePoint 응용 프로그램에 대한 데이터를 수집](#BKMK_Set_up_the_IntelliTrace_PowerShell_commandlets)
+3. [IntelliTrace PowerShell cmdlet을 설치하고 웹앱 또는 SharePoint 애플리케이션에 대한 데이터를 수집](#BKMK_Set_up_the_IntelliTrace_PowerShell_commandlets)
 
 4. [.iTrace 파일 디렉터리에 대한 사용 권한 설정](#BKMK_Create_and_Configure_a_Log_File_Directory)
 
-5. [웹 응용 프로그램 또는 SharePoint 응용 프로그램에서 데이터 수집](#BKMK_Collect_Data_from_IIS_Application_Pools)
+5. [웹 애플리케이션 또는 SharePoint 애플리케이션에서 데이터 수집](#BKMK_Collect_Data_from_IIS_Application_Pools)
 
      또는
 
@@ -121,7 +121,7 @@ ms.locfileid: "68680626"
 
 1. 앱 서버에서 관리자 권한으로 명령 프롬프트 창을 엽니다.
 
-2. Windows **icacls** 명령을 사용하여 서버 관리자에게 수집기 디렉터리에 대한 모든 권한을 제공합니다. 예를 들어:
+2. Windows **icacls** 명령을 사용하여 서버 관리자에게 수집기 디렉터리에 대한 모든 권한을 제공합니다. 예:
 
      `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID>* `":F`
 
@@ -129,23 +129,23 @@ ms.locfileid: "68680626"
 
     1. IntelliTrace PowerShell cmdlet을 실행하는 사용자에게 수집기 디렉터리에 대한 모든 권한을 제공합니다.
 
-         예를 들어:
+         예:
 
          `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`
 
     2. 웹앱 또는 SharePoint 애플리케이션의 애플리케이션 풀에 수집기 디렉터리에 대한 읽기 및 실행 권한을 제공합니다.
 
-         예를 들어:
+         예:
 
-        - **DefaultAppPool** 응용 프로그램 풀의 웹앱:
+        - **DefaultAppPool** 애플리케이션 풀의 웹앱:
 
              `icacls "C:\IntelliTraceCollector" /grant "IIS APPPOOL\DefaultAppPool":RX`
 
-        - **SharePoint - 80** 응용 프로그램 풀의 SharePoint 응용 프로그램:
+        - **SharePoint - 80** 애플리케이션 풀의 SharePoint 애플리케이션:
 
              `icacls "C:\IntelliTraceCollector" /grant "IIS APPPOOL\SharePoint - 80":RX`
 
-## <a name="BKMK_Set_up_the_IntelliTrace_PowerShell_commandlets"></a> IntelliTrace PowerShell cmdlet을 설치하고 웹앱 또는 SharePoint 응용 프로그램에 대한 데이터를 수집
+## <a name="BKMK_Set_up_the_IntelliTrace_PowerShell_commandlets"></a> IntelliTrace PowerShell cmdlet을 설치하고 웹앱 또는 SharePoint 애플리케이션에 대한 데이터를 수집
 
 1. 앱 서버에서 PowerShell이 사용하도록 설정되어 있는지 확인합니다. 대부분 Windows Server 버전에서는 **서버 관리자** 관리 도구에서 이 기능을 추가할 수 있습니다.
 
@@ -165,7 +165,7 @@ ms.locfileid: "68680626"
 
     2. PowerShell 명령 창에서 **Import-Module** 명령을 사용하여 **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**을 가져옵니다.
 
-         예를 들어:
+         예:
 
          `Import-Module "C:\IntelliTraceCollector\Microsoft.VisualStudio.IntelliTrace.PowerShell.dll"`
 
@@ -183,15 +183,15 @@ ms.locfileid: "68680626"
 
 2. 웹앱 또는 SharePoint 애플리케이션의 경우에는 .iTrace 파일 디렉터리에 대한 모든 권한을 해당 애플리케이션 풀에 제공합니다. Windows **icacls** 명령이나 Windows 탐색기 또는 파일 탐색기를 사용할 수 있습니다.
 
-    예를 들어:
+    예:
 
    - Windows **icacls** 명령을 통해 사용 권한을 설정하려면 다음 명령을 사용합니다.
 
-     - **DefaultAppPool** 응용 프로그램 풀의 웹앱:
+     - **DefaultAppPool** 애플리케이션 풀의 웹앱:
 
         `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\DefaultAppPool":F`
 
-     - **SharePoint - 80** 응용 프로그램 풀의 SharePoint 응용 프로그램:
+     - **SharePoint - 80** 애플리케이션 풀의 SharePoint 애플리케이션:
 
         `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
 
@@ -207,13 +207,13 @@ ms.locfileid: "68680626"
 
      4. **찾을 위치를 선택하세요.** 상자에 로컬 컴퓨터가 표시되는지 확인하고 표시되지 않으면 **위치** 를 선택하여 변경합니다.
 
-     5. **선택할 개체 이름을 입력하세요.** 상자에 웹앱 또는 SharePoint 응용 프로그램의 응용 프로그램 풀을 추가합니다.
+     5. **선택할 개체 이름을 입력하세요.** 상자에 웹앱 또는 SharePoint 애플리케이션의 애플리케이션 풀을 추가합니다.
 
      6. **이름 확인** 을 선택하여 이름을 확인합니다. **확인**을 선택합니다.
 
      7. 애플리케이션 풀에 **모든 권한**이 있는지 확인합니다.
 
-## <a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a> 웹 응용 프로그램 또는 SharePoint 응용 프로그램에서 데이터 수집
+## <a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a> 웹 애플리케이션 또는 SharePoint 애플리케이션에서 데이터 수집
 
 1. 데이터 수집을 시작하려면 관리자 권한으로 PowerShell 명령 창을 열고 다음 명령을 실행합니다.
 
@@ -315,7 +315,7 @@ ms.locfileid: "68680626"
 
   - 앱에 관련이 없는 이벤트를 사용하지 않도록 설정하여 시작 시간을 단축할 수 있습니다. 예를 들어 Windows 워크플로를 사용하지 않는 앱에 대해 Windows 워크플로 이벤트를 사용하지 않도록 설정합니다.
 
-  - 레지스트리에 액세스하기는 하지만 레지스트리 설정에 문제가 표시되지 않는 앱에 대해 레지스트리 이벤트를 사용하지 않도록 설정하면 시작 및 런타임 성능을 모두 개선할 수 있습니다.
+  - 레지스트리에 액세스 하지만 레지스트리 설정에 문제가 표시 되지 않는 앱에 대해 레지스트리 이벤트를 사용 하지 않도록 설정 하 여 시작 및 런타임 성능을 향상 시킬 수 있습니다.
 
 - IntelliTrace가 데이터를 수집하는 모듈을 수집 계획에서 검토하고, 다음 단계를 수행하여 관련이 있는 모듈만 포함하도록 수집 계획을 편집합니다.
 

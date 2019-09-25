@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a70e999505bd900a7b3d89693ef4f6a1cef9de7d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ce7870077cb859a25de70c726c78cad1d50270e5
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920418"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231939"
 ---
 # <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146: 형식은 기본 형식 및 인터페이스 이상으로 중요해야 합니다.
 
@@ -24,7 +24,7 @@ ms.locfileid: "68920418"
 |TypeName|TypesMustBeAtLeastAsCriticalAsBaseTypes|
 |CheckId|CA2146|
 |범주|Microsoft.Security|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 투명 형식은 <xref:System.Security.SecuritySafeCriticalAttribute> <xref:System.Security.SecuritySafeCriticalAttribute> 또는으로 표시 된 형식에서 파생 되거나 <xref:System.Security.SecurityCriticalAttribute> ,특성으로표시된형식이특성으로표시된형식에서파생됩니다.<xref:System.Security.SecurityCriticalAttribute>

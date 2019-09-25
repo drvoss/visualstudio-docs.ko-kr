@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24723559988974c51798c3e099ff8c1d86a15db9
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0365d82917b8cfbaf291d557a6ac2d95c220562a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920513"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232125"
 ---
 # <a name="ca2141transparent-methods-must-not-satisfy-linkdemands"></a>CA2141: 투명한 메서드는 LinkDemands를 충족해서는 안 됩니다
 
@@ -24,7 +24,7 @@ ms.locfileid: "68920513"
 |TypeName|TransparentMethodsMustNotSatisfyLinkDemands|
 |CheckId|CA2141|
 |범주|Microsoft.Security|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 보안 투명 메서드가 <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) 특성으로 표시 되지 않은 어셈블리의 메서드를 호출 하거나, 보안 투명 메서드가 형식 또는 메서드에 대 한를 <xref:System.Security.Permissions.SecurityAction> `.LinkDemand` 충족 합니다.

@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 02e69a97468675cd6f7530793581c15717465d6f
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 84cac2f48112c43805cdd9c12a6a41cf56a8ae72
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921056"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232625"
 ---
 # <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: private 인터페이스를 만족하는 메서드를 봉인하세요.
 
@@ -32,7 +32,7 @@ ms.locfileid: "68921056"
 |TypeName|SealMethodsThatSatisfyPrivateInterfaces|
 |CheckId|CA2119|
 |범주|Microsoft.Security|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 상속 가능한 public 형식은 `internal` (`Friend` Visual Basic) 인터페이스의 재정의 가능한 메서드 구현을 제공 합니다.
@@ -70,7 +70,7 @@ ms.locfileid: "68921056"
 [!code-csharp[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/CSharp/ca2119-seal-methods-that-satisfy-private-interfaces_2.cs)]
 [!code-vb[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_2.vb)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [인터페이스](/dotnet/csharp/programming-guide/interfaces/index)
 - [인터페이스](/dotnet/visual-basic/programming-guide/language-features/interfaces/index)

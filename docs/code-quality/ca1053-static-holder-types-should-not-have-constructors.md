@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fec59e1d683c7867eb1cad9ae4e796a0815200d4
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 44bdb8c12b48a983b88e6a035fc1522856b306be
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604777"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235581"
 ---
 # <a name="ca1053-static-holder-types-should-not-have-default-constructors"></a>CA1053: 정적 소유자 형식에는 기본 생성자를 사용할 수 없습니다.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68604777"
 |TypeName|StaticHolderTypesShouldNotHaveConstructors|
 |CheckId|CA1053|
 |범주|Microsoft.Design|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 > [!NOTE]
 > Rule CA1053는 CA1052로 [결합 됩니다. 정적 소유자 형식은 [FxCop 분석기](fxcop-analyzers.yml)에서](ca1052-static-holder-types-should-be-sealed.md) sealed 여야 합니다.

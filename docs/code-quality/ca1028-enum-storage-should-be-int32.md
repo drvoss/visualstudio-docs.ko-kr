@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c91de575abe8b19a5d8f6fca864e2bc452da7cb2
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 47a934a6e35296927eea64465ff8e7007219bec5
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547648"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236091"
 ---
 # <a name="ca1028-enum-storage-should-be-int32"></a>CA1028: 열거형 스토리지는 Int32여야 합니다.
 
@@ -31,7 +31,7 @@ ms.locfileid: "69547648"
 |TypeName|EnumStorageShouldBeInt32|
 |CheckId|CA1028|
 |범주|Microsoft.Design|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 
@@ -83,7 +83,7 @@ dotnet_code_quality.ca1028.api_surface = private, internal
 - [CA1700: 열거형 값의 이름을 ' Reserved '로 하지 마십시오.](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
 - [CA1712: 열거형 값에 형식 이름을 접두사로 사용 하지 마십시오.](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Byte?displayProperty=fullName>
 - <xref:System.Int16?displayProperty=fullName>

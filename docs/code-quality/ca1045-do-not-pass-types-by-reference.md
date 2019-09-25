@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fd0da0f8b04055622b46087ecb9f12b375d9576
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: c6a8fda526647a1a9f7f999928cb08978a61bd04
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922855"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235772"
 ---
 # <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045: 참조로 형식을 전달하지 마세요.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922855"
 |TypeName|DoNotPassTypesByReference|
 |CheckId|CA1045|
 |범주|Microsoft.Design|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 공용 형식의 public 또는 protected 메서드에 기본 형식, 참조 형식 `ref` 또는 기본 제공 형식 중 하나가 아닌 값 형식을 사용 하는 매개 변수가 있습니다.

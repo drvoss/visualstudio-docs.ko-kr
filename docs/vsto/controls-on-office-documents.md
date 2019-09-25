@@ -16,19 +16,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 37633d02f4b7a9a140b41058a39369fde7f64002
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 160897a37ff6a8b335479b42a80f4186f176cab6
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951145"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254410"
 ---
 # <a name="controls-on-office-documents"></a>Office 문서의 컨트롤
   Visual Studio에서 Office 개발 도구를 사용하여 Windows Forms 컨트롤과 *호스트 컨트롤* 을 Word 문서와 Excel 워크시트에 추가할 수 있습니다. 호스트 컨트롤은 Word 및 Excel 개체 모델의 다양한 UI(사용자 인터페이스) 개체를 확장하는 개체입니다.
 
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
- Excel 또는 Word 용 VSTO 추가 기능 프로젝트를 개발할 때 열려 있는 문서나 런타임에 통합 문서를 프로그래밍 방식으로 이러한 컨트롤을 추가할 수 있습니다.
+ Excel 또는 Word의 VSTO 추가 기능 프로젝트를 개발하는 경우 런타임에 열려 있는 문서나 통합 문서에 프로그래밍 방식으로 이러한 컨트롤을 추가할 수 있습니다.
 
  Excel 또는 Word의 문서 수준 프로젝트를 개발할 때 런타임에 프로그래밍 방식으로 이러한 컨트롤을 추가하거나, 디자인 타임에 Visual Studio 디자이너를 사용하여 프로젝트의 문서나 통합 문서에 이러한 컨트롤을 추가할 수 있습니다.
 
@@ -37,11 +37,11 @@ ms.locfileid: "62951145"
 
  이벤트에 대한 프로그래밍 및 데이터에 컨트롤 바인딩을 비롯한 호스트 항목과 호스트 컨트롤의 기능과 이러한 컨트롤이 네이티브 개체와 어떻게 다른지에 대해 설명합니다.
 
-- [호스트 항목 및 호스트 컨트롤의 프로그래밍 방식으로 제한 사항](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [호스트 항목 및 호스트 컨트롤의 프로그래밍에 대 한 제한 사항](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 
  코드에서 호스트 항목과 호스트 컨트롤을 사용하는 경우 발생할 수 있는 문제에 대해 설명합니다.
 
-- [Windows Forms 컨트롤에 대 한 Office 문서 개요](../vsto/windows-forms-controls-on-office-documents-overview.md)
+- [Office 문서에 대 한 Windows Forms 컨트롤 개요](../vsto/windows-forms-controls-on-office-documents-overview.md)
 
  Excel 및 Word 문서에서 Windows Forms 컨트롤을 사용하는 방법과 이러한 컨트롤이 Windows Form의 컨트롤과 어떻게 다른지에 대해 설명합니다.
 

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c1038d0d7e7d20c28cdd0cb52804461376a4e89
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 385b2d451d8202356d56ab7b1a5fd5158d267f1c
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551698"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253747"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office 주 Interop 어셈블리
 
@@ -35,7 +35,7 @@ Office 프로젝트에서 Microsoft Office 애플리케이션의 기능을 사�
 
 - [단일 프로젝트에서 여러 Microsoft Office 응용 프로그램의 기능 사용](#usingfeatures)
 
-- [Microsoft Office 응용 프로그램용 주 interop 어셈블리의 전체 목록](#pialist)
+- [Microsoft Office 애플리케이션용 주 interop 어셈블리의 전체 목록](#pialist)
 
 주 interop 어셈블리에 대 한 자세한 내용은 [주 interop 어셈블리](/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100))를 참조 하세요.
 
@@ -66,7 +66,7 @@ Visual Studio 2017부터 이러한 Pia 복사본은 개발 컴퓨터의 다음 �
 - (또는 *% ProgramFiles (x86)% \ Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\* on 64 비트 운영 체제)
 
 > [!NOTE]
-> 이전 버전의 Visual Studio에서는 이러한 Pia가 해당 버전의 Visual Studio에 대 한 *% ProgramFiles% 폴더 아래에 있는 Office\PIA 폴더에 Visual Studio Tools 설치 됩니다.  
+> 이전 버전의 Visual Studio에서는 이러한 Pia가 해당 버전의 Visual Studio에 대 한 *% ProgramFiles% 폴더 아래에 있는 Office\PIA 폴더에 Visual Studio Tools 설치 됩니다.
 > 예: *% ProgramFiles (x86)% \ Microsoft Visual Studio 14.0 \ Visual Studio Tools (Office\PIA)\*
 
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>전역 어셈블리 캐시의 주 interop 어셈블리
@@ -121,13 +121,13 @@ Visual Studio의 각 Office 프로젝트 템플릿은 단일 Microsoft Office �
 
 ### <a name="binding-redirect-assemblies"></a>바인딩 리디렉션 어셈블리
 
-Office PIA를 Office와 함께 또는 PIA의 재배포 가능 패키지를 설치하여 전역 어셈블리 캐시에 설치 및 등록하면 바인딩 리디렉션 어셈블리도 전역 어셈블리 캐시에만 설치됩니다. 이러한 어셈블리는 올바른 버전의 주 interop 어셈블리가 런타임에 로드 되는지 확인 하는 데 도움이 됩니다.
+Office PIA를 Office와 함께 또는 PIA의 재배포 가능 패키지를 설치하여 전역 어셈블리 캐시에 설치 및 등록하면 바인딩 리디렉션 어셈블리도 전역 어셈블리 캐시에만 설치됩니다. 이러한 어셈블리는 런타임에 주 interop 어셈블리의 올바른 버전이 로드 되는지 확인 하는 데 도움이 됩니다.
 
 예를 들어 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 어셈블리를 참조하는 솔루션이 같은 주 interop 어셈블리의 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 버전이 설치된 컴퓨터에서 실행되면 바인딩 리디렉션 어셈블리는 주 interop 어셈블리의 [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] 버전을 로드하도록 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 런타임에 명령합니다.
 
 자세한 내용은 [방법: 자동 바인딩 리디렉션을](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection)사용 하거나 사용 하지 않도록 설정 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [방법: 주 interop 어셈블리를 통한 Office 응용 프로그램 대상](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Excel 개체 모델 개요](../vsto/excel-object-model-overview.md)

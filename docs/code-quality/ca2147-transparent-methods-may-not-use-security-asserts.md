@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1b56001f5a083317911edde9282b66758deb1b6
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8fa5a17e7ec1438f104c9bf2f746df26dd97ed51
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920720"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231965"
 ---
 # <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147: 투명 메서드는 보안 어설션을 사용할 수 없습니다.
 
@@ -29,7 +29,7 @@ ms.locfileid: "68920720"
 |TypeName|SecurityTransparentCodeShouldNotAssert|
 |CheckId|CA2147|
 |범주|Microsoft.Security|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 로 <xref:System.Security.SecurityTransparentAttribute> 표시 된 코드에 어설션할 수 있는 권한이 부여 되지 않았습니다.
@@ -61,5 +61,5 @@ ms.locfileid: "68920720"
 
 또 다른 옵션은 코드에서 어설션을 제거 하 고 모든 후속 파일 i/o 권한 요구가 호출자에 게 SecurityTransparentMethod 이상 전달 되도록 하는 것입니다. 이렇게 하면 보안 검사를 수행할 수 있습니다. 이 경우 권한 요구가 호출자 및/또는 응용 프로그램 도메인으로 전달 되기 때문에 보안 감사가 필요 하지 않습니다. 권한 요청은 보안 정책, 호스팅 환경 및 코드 소스 권한 부여를 통해 긴밀 하 게 제어 됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 [보안 경고](../code-quality/security-warnings.md)

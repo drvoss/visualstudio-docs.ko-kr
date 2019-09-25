@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce2da2c1ff5b2f74d8b4d6341050c1895b68955a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e352eea1b7fcf82cb948315affeae6e30690a4aa
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922289"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234967"
 ---
 # <a name="ca1307-specify-stringcomparison"></a>CA1307: StringComparison 지정하세요.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922289"
 |TypeName|SpecifyStringComparison|
 |CheckId|CA1307|
 |범주|Microsoft.Globalization|
-|변경 수준|최신이 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 문자열 비교 작업에서 매개 변수를 <xref:System.StringComparison> 설정 하지 않는 메서드 오버 로드를 사용 합니다.
@@ -44,7 +44,7 @@ ms.locfileid: "68922289"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 라이브러리나 응용 프로그램이 제한 된 로컬 사용자를 대상으로 하는 경우에는이 규칙에서 경고를 표시 하지 않는 것이 안전 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [전역화 경고](../code-quality/globalization-warnings.md)
 - [CA1309: 서 수 StringComparison 사용](../code-quality/ca1309-use-ordinal-stringcomparison.md)

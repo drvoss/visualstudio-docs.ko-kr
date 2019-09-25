@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 55c58f098616a5c3c2d6ad72f56e8eda51f689be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5cf7fc6e31b9250392fc3ea447a5b91225640a50
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796847"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231903"
 ---
 # <a name="ca2200-rethrow-to-preserve-stack-details"></a>CA2200: 스택 정보를 유지하도록 다시 throw하십시오.
 
@@ -31,27 +31,27 @@ ms.locfileid: "62796847"
 |TypeName|RethrowToPreserveStackDetails|
 |CheckId|CA2200|
 |범주|Microsoft.Usage|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 
-예외가 다시 throw 하 고 예외를 명시적으로 지정 된 `throw` 문입니다.
+예외가 다시 throw 되 고 `throw` 문에서 명시적으로 예외가 지정 됩니다.
 
 ## <a name="rule-description"></a>규칙 설명
 
-예외가 throw 된 전달 정보 부분은 스택 추적입니다. 스택 추적에는 예외를 throw 하 고 예외를 catch 하는 메서드를 사용 하 여 종료 하는 메서드를 사용 하 여 시작 하는 메서드 호출 계층의 목록입니다. 예외를 지정 하 여 예외가 예외가 다시 throw 하는 경우는 `throw` 문, 스택 추적을 현재 메서드를 다시 시작 되 고 예외를 발생 시킨 원래 메서드와 현재 메서드 간의 메서드 호출 목록이 손실 됩니다. 예외를 사용 하 여 원래 스택 추적 정보, 사용를 `throw` 예외를 지정 하지 않고 문입니다.
+예외가 throw 되 면 전달 되는 정보의 일부가 스택 추적입니다. 스택 추적은 예외를 throw 하 고 예외를 catch 하는 메서드로 끝나는 메서드 호출 계층 구조 목록입니다. `throw` 문에서 예외를 지정 하 여 예외를 다시 throw 하는 경우 현재 메서드에서 스택 추적이 다시 시작 되 고 예외를 throw 한 원래 메서드 및 현재 메서드 간의 메서드 호출 목록이 손실 됩니다. 예외를 사용 하 여 원래 스택 추적 정보를 유지 하려면 예외 `throw` 를 지정 하지 않고 문을 사용 합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 
-이 규칙 위반 문제를 해결 하는 예외를 명시적으로 지정 하지 않고 예외를 다시 throw 합니다.
+이 규칙 위반 문제를 해결 하려면 예외를 명시적으로 지정 하지 않고 예외를 다시 throw 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 
 이 규칙에서는 경고를 표시해야 합니다.
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 메서드를 보여 줍니다 `CatchAndRethrowExplicitly`에서 규칙을 위반 하는 메서드는 `CatchAndRethrowImplicitly`, 규칙을 충족 하는 합니다.
+다음 예제에서는 규칙을 위반 하 `CatchAndRethrowExplicitly`는 메서드와 규칙을 충족 하는 `CatchAndRethrowImplicitly`메서드를 보여 줍니다.
 
 [!code-csharp[FxCop.Usage.Rethrow#1](../code-quality/codesnippet/CSharp/ca2200-rethrow-to-preserve-stack-details_1.cs)]
 [!code-vb[FxCop.Usage.Rethrow#1](../code-quality/codesnippet/VisualBasic/ca2200-rethrow-to-preserve-stack-details_1.vb)]

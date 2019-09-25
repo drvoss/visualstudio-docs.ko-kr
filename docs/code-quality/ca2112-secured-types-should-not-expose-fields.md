@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43ef4165823f59045dda8c05b5679fdd3b795114
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 48cfcfd4feb794137e1634158b5af632aa976c60
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921090"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232757"
 ---
 # <a name="ca2112-secured-types-should-not-expose-fields"></a>CA2112: 보안 형식은 필드를 노출하면 안 됩니다.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921090"
 |TypeName|SecuredTypesShouldNotExposeFields|
 |CheckId|CA2112|
 |범주|Microsoft.Security|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 Public 또는 protected 형식은 public 필드를 포함 하 고 [링크 요청](/dotnet/framework/misc/link-demands)에 의해 보호 됩니다.
@@ -72,7 +72,7 @@ Cached Object fields: 99, 33
 
 - [CA1051: 표시 되는 인스턴스 필드를 선언 하지 마십시오.](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [링크 요청](/dotnet/framework/misc/link-demands)
 - [데이터 및 모델링](/dotnet/framework/data/index)

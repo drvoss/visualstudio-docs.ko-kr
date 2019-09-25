@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 35e41301dcf0a1358b6d063ce557212915b5f591
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 986607d7f42f49c99396bbb021c48bad549930c9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841430"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237286"
 ---
 # <a name="ca3006-review-code-for-process-command-injection-vulnerabilities"></a>CA3006: 코드에서 프로세스 명령 주입 취약점에 대해 검토합니다.
 
@@ -24,34 +24,34 @@ ms.locfileid: "65841430"
 |TypeName|ReviewCodeForProcessCommandInjectionVulnerabilities|
 |CheckId|CA3006|
 |범주|Microsoft.Security|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 
-신뢰할 수 없는 HTTP 요청 입력 처리 명령을 도달합니다.
+잠재적으로 신뢰할 수 없는 HTTP 요청 입력은 프로세스 명령에 도달 합니다.
 
 ## <a name="rule-description"></a>규칙 설명
 
-신뢰할 수 없는 입력에서 작업할 때는 명령 삽입 공격에 주의 해야 합니다. 명령 삽입 공격, 보안 및 서버의 무결성을 손상 시 키 지 기본 운영 체제에 악의적인 명령이 실행할 수 있습니다.
+신뢰할 수 없는 입력으로 작업 하는 경우 명령 삽입 공격에 유의 해야 합니다. 명령 삽입 공격은 서버와의 보안 및 무결성을 손상 시키는 기본 운영 체제에서 악성 명령을 실행할 수 있습니다.
 
-이 규칙은 입력 처리 명령을 도달 하는 HTTP 요청을 찾으려고 합니다.
-
-> [!NOTE]
-> 이 규칙은 어셈블리 간에 데이터를 추적할 수 없습니다. 예를 들어, 하나의 어셈블리 HTTP 요청 입력을 읽고 하 다음 프로세스를 시작 하는 다른 어셈블리에 전달 하는 경우이 규칙 경고를 생성 하지 않습니다.
+이 규칙은 프로세스 명령에 도달 하는 HTTP 요청에서 입력을 찾으려고 시도 합니다.
 
 > [!NOTE]
-> 이 규칙 메서드 호출에서 데이터 흐름은 분석 깊이에 구성할 수 있는 제한이 있습니다. 참조 [분석기 구성](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) EditorConfig 파일에 제한을 구성 하는 방법에 대 한 합니다.
+> 이 규칙은 어셈블리 간에 데이터를 추적할 수 없습니다. 예를 들어 한 어셈블리가 HTTP 요청 입력을 읽은 다음 프로세스를 시작 하는 다른 어셈블리에 전달 하는 경우이 규칙은 경고를 생성 하지 않습니다.
+
+> [!NOTE]
+> 이 규칙에서 메서드 호출을 통해 데이터 흐름을 분석 하는 데 구성 가능한 제한이 있습니다. EditorConfig 파일에서 제한을 구성 하는 방법에 대 한 [Analyzer 구성](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) 을 참조 하세요.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 
-- 가능한 경우 사용자 입력을 기반으로 하는 프로세스를 시작 하지 마십시오.
-- 알려진된 안전한 집합의 문자 및 길이 대해 입력의 유효성을 검사 합니다.
+- 가능 하면 사용자 입력에 따라 프로세스를 시작 하지 마십시오.
+- 알려진 문자 및 길이 집합에 대 한 입력의 유효성을 검사 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 
-입력의 유효성을 검사 되었거나 안전 이스케이프를 알고 있으면이 경고를 표시 하지 않으려면 안전 합니다.
+입력의 유효성을 검사 하거나 안전 하 게 이스케이프 한 경우에는이 경고를 무시 해도 됩니다.
 
-## <a name="pseudo-code-examples"></a>의사 (pseudo) 코드 예제
+## <a name="pseudo-code-examples"></a>의사 코드 예제
 
 ### <a name="violation"></a>위반
 

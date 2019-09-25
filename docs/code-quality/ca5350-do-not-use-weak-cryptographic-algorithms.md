@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bff3ccdb9120a1964f5c55e2d533406eedf01a88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4aecd052e86a4c0366a1a43cb985ad50ab8862d8
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540848"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236961"
 ---
 # <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350: 취약한 암호화 알고리즘을 사용하지 마세요.
 
@@ -22,7 +22,7 @@ ms.locfileid: "62540848"
 |TypeName|DoNotUseWeakCryptographicAlgorithms|
 |CheckId|CA5350|
 |범주|Microsoft.Cryptography|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 > [!NOTE]
 > 이 경고는 2015년 11월에 마지막으로 업데이트되었습니다.
@@ -47,11 +47,11 @@ ms.locfileid: "62540848"
 
 - SHA1 또는 RIPEMD160 해시 함수의 경우 [SHA-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) 제품군의 암호화(예: <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>)를 사용합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 
 데이터에 필요한 보호 수준이 보안 보장을 요구하지 않는 경우 이 규칙에서 실행되는 경고를 표시하지 않도록 설정합니다.
 
-## <a name="pseudo-code-examples"></a>의사 (pseudo) 코드 예제
+## <a name="pseudo-code-examples"></a>의사 코드 예제
 
 다음 의사 코드 샘플에서는 이 문서를 작성할 당시 이 규칙에 의해 검색되는 패턴을 보여 줍니다.
 

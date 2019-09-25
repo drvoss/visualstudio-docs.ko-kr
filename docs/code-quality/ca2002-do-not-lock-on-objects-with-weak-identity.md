@@ -16,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 054f809483cf2a9c4647370e2f69187795c5c203
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc4504e917daeadc93963c6d6870c00515a5065a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545269"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233168"
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002: 약한 ID를 가진 개체를 잠그지 마십시오.
 
@@ -30,21 +30,21 @@ ms.locfileid: "62545269"
 |TypeName|DoNotLockOnObjectsWithWeakIdentity|
 |CheckId|CA2002|
 |범주|Microsoft.Reliability|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 
-스레드는 약한 id를 가진 개체에 대 한 잠금을 획득 하려고 시도 합니다.
+스레드가 약한 id를 가진 개체에 대 한 잠금을 획득 하려고 합니다.
 
 ## <a name="rule-description"></a>규칙 설명
 
 애플리케이션 도메인 경계를 가로질러 직접 액세스할 수 있는 개체를 약한 ID를 가진 개체라고 합니다. 약한 ID를 가진 개체에 대해 잠금을 가져오려고 시도하는 스레드는 같은 개체에 대해 잠금을 가진 다른 애플리케이션 도메인의 스레드에 의해 차단될 수 있습니다.
 
-형식은 약한 id를 있고 규칙으로 플래그가 지정 됩니다.
+다음 형식은 약한 id를 가지 며 규칙에 따라 플래그가 지정 됩니다.
 
 - <xref:System.String>
 
-- 포함 하 여 값 형식의 배열로 [정수 계열 형식](/dotnet/csharp/language-reference/keywords/integral-types-table)를 [부동 소수점 형식](/dotnet/csharp/language-reference/keywords/floating-point-types-table), 및 <xref:System.Boolean>합니다.
+- [정수 형식](/dotnet/csharp/language-reference/keywords/integral-types-table), [부동 소수점 형식](/dotnet/csharp/language-reference/keywords/floating-point-types-table)및 <xref:System.Boolean>를 포함 하는 값 형식의 배열입니다.
 
 - <xref:System.MarshalByRefObject>
 
@@ -62,13 +62,13 @@ ms.locfileid: "62545269"
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 
-이 규칙 위반 문제를 해결 하려면 설명 섹션의 목록에 있지 않은 형식에서 개체를 사용 합니다.
+이 규칙 위반 문제를 해결 하려면 설명 섹션의 목록에 없는 형식의 개체를 사용 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 
 이 규칙에서는 경고를 표시해야 합니다.
 
-## <a name="related-rules"></a>관련된 규칙
+## <a name="related-rules"></a>관련 규칙
 
 [CA2213: 삭제 가능한 필드는 삭제해야 합니다.](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
 
@@ -79,7 +79,7 @@ ms.locfileid: "62545269"
 [!code-vb[FxCop.Reliability.LockWeakObjects#1](../code-quality/codesnippet/VisualBasic/ca2002-do-not-lock-on-objects-with-weak-identity_1.vb)]
 [!code-csharp[FxCop.Reliability.LockWeakObjects#1](../code-quality/codesnippet/CSharp/ca2002-do-not-lock-on-objects-with-weak-identity_1.cs)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Threading.Monitor>
 - <xref:System.AppDomain>

@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 377188183acdaa9aa86ae3344c8f6d5727b82ccc
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 1a3b07e5c2678bb7116d79eaba41caf3cd736f44
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69546843"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231199"
 ---
 # <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217: 열거형을 FlagsAttribute로 표시하지 마세요.
 
@@ -32,7 +32,7 @@ ms.locfileid: "69546843"
 |TypeName|DoNotMarkEnumsWithFlags|
 |CheckId|CA2217|
 |범주|Microsoft.Usage|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 
@@ -80,6 +80,6 @@ dotnet_code_quality.ca2217.api_surface = private, internal
 
 [CA1027: 열거형을 FlagsAttribute로 표시](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.FlagsAttribute?displayProperty=fullName>

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5fb70baa17bee484dc3c31d7c6ce9b302019403
-ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
+ms.openlocfilehash: 7c7fa7756383426f990e18225995a768de9fefbd
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68300596"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231733"
 ---
 # <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: 개체를 여러 번 삭제하지 마십시오.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68300596"
 |TypeName|DoNotDisposeObjectsMultipleTimes|
 |CheckId|CA2202|
 |범주|Microsoft.Usage|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 
@@ -90,7 +90,7 @@ finally
 > [!TIP]
 > 위의 구문은 null [조건부 연산자입니다.](/dotnet/csharp/language-reference/operators/member-access-operators#null-conditional-operators--and-) `?.`
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.IDisposable?displayProperty=fullName>
 - [삭제 패턴](/dotnet/standard/design-guidelines/dispose-pattern)

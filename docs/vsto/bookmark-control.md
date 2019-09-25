@@ -17,34 +17,34 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 00271d77cb5b172fbbbf02682eb7e23c6246ca23
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b8557581e93c8d2ba5a54a13c04d5de74b24f71
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939391"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255141"
 ---
 # <a name="bookmark-control"></a>Bookmark 컨트롤
   <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤은 고유한 이름이 있고 이벤트를 노출하며 데이터에 바인딩될 수 있는 책갈피입니다. 책갈피는 Microsoft Office Word 문서에서 항목 또는 위치를 표시하는 자리 표시자로 사용할 수 있습니다. <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤은 <xref:Microsoft.Office.Interop.Word.Bookmark> 개체 및 <xref:Microsoft.Office.Interop.Word.Range> 개체의 조합입니다.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
- 문서 수준 프로젝트에 추가할 수 있습니다 <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤을 디자인 타임 또는 런타임에 문서. VSTO 추가 기능 프로젝트에 추가할 수 있습니다 <xref:Microsoft.Office.Tools.Word.Bookmark> 런타임에 열려 있는 문서에 컨트롤입니다. 자세한 내용은 [방법: Word 문서에 책갈피 컨트롤 추가](../vsto/how-to-add-bookmark-controls-to-word-documents.md)합니다.
+ 문서 수준 프로젝트에서는 디자인 타임 또는 런타임에 <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤을 문서에 추가할 수 있습니다. VSTO 추가 기능 프로젝트에서는 런타임에 열려 있는 임의 문서에 <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤을 추가할 수 있습니다. 자세한 내용은 [방법: Word 문서](../vsto/how-to-add-bookmark-controls-to-word-documents.md)에 책갈피 컨트롤을 추가 합니다.
 
 ## <a name="bind-data-to-the-control"></a>컨트롤에 데이터 바인딩
  <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤은 단순 데이터 바인딩을 지원합니다. 책갈피는 <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> 속성을 사용하여 데이터 원본에 바인딩해야 합니다. 책갈피의 기본 데이터 바인딩 속성은 <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> 속성입니다.
 
- 바인딩된 데이터 집합의 데이터 업데이트 되 면는 <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤 내용을 보여 줍니다.
+ 바인딩된 데이터 집합의 데이터가 업데이트 <xref:Microsoft.Office.Tools.Word.Bookmark> 되 면 컨트롤이 변경 내용을 표시 합니다.
 
- 문서 수준 프로젝트에서 **데이터 원본** 창을 사용하여 데이터를 책갈피에 바인딩할 수 있습니다. 자세한 내용은 [방법: 개체의 데이터로 문서 채우기](../vsto/how-to-populate-documents-with-data-from-objects.md)합니다.
+ 문서 수준 프로젝트에서 **데이터 원본** 창을 사용하여 데이터를 책갈피에 바인딩할 수 있습니다. 자세한 내용은 [방법: 개체](../vsto/how-to-populate-documents-with-data-from-objects.md)의 데이터로 문서를 채웁니다.
 
 ## <a name="formatting"></a>서식
- <xref:Microsoft.Office.Interop.Word.Bookmark> 에 적용할 수 있는 서식은 <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤에 적용할 수 있습니다. 이 서식 글꼴, 들여쓰기, 간격, 번호 매기기 및 스타일이 포함 되어 있습니다.
+ <xref:Microsoft.Office.Interop.Word.Bookmark> 에 적용할 수 있는 서식은 <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤에 적용할 수 있습니다. 서식 지정에는 글꼴, 들여쓰기, 간격, 번호 매기기 및 스타일이 포함 됩니다.
 
-## <a name="assign-text-to-the-bookmark"></a>텍스트를 책갈피에 할당
+## <a name="assign-text-to-the-bookmark"></a>책갈피에 텍스트 할당
  <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> 개체와 <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> 컨트롤 간의 추가 차이점은 텍스트가 책갈피에 할당될 때 동작하는 방법입니다. 텍스트를 길이가 0인 <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType>에 할당하는 경우 텍스트가 책갈피의 오른쪽에 추가되고 책갈피는 길이가 0인 상태로 유지됩니다. 그러나 텍스트를 길이가 0인 <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType>에 할당하는 경우 텍스트가 책갈피로 삽입되고 책갈피 길이는 삽입된 문자의 총 수로 확장됩니다.
 
- <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> 컨트롤에는 또한 <xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType> 속성도 있습니다. 이 속성은 다른를 <xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType> 속성에서 사용할 수 있는 <xref:Microsoft.Office.Tools.Word.Bookmark.Range?displayProperty=nameWithType> 의 속성을 <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> 컨트롤 또는 <xref:Microsoft.Office.Interop.Word.Bookmark.Range?displayProperty=nameWithType> 속성을 <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> 개체.
+ <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> 컨트롤에는 또한 <xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType> 속성도 있습니다. 이 <xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType> 속성은 <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> 컨트롤의 <xref:Microsoft.Office.Tools.Word.Bookmark.Range?displayProperty=nameWithType> 속성 또는 <xref:Microsoft.Office.Interop.Word.Bookmark.Range?displayProperty=nameWithType> <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> 개체의 속성에서 사용할 수 있는 속성과 다릅니다.
 
 |Text 속성|설명|
 |-------------------|-----------------|
@@ -54,10 +54,10 @@ ms.locfileid: "62939391"
 ## <a name="rename-the-control-at-design-time"></a>디자인 타임에 컨트롤 이름 바꾸기
  문서 수준 프로젝트에서 <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤을 **도구 상자** 에서 문서로 끌어 놓으면 Visual Studio가 자동으로 컨트롤의 이름을 생성합니다. **속성** 창에서 컨트롤의 이름을 변경할 수 있습니다.
 
-## <a name="overlapping-controls"></a>컨트롤 겹침
- 책갈피 컨트롤은 서로 겹칠 수 있습니다. 동일한 텍스트를 둘 이상의 책갈피에서 공유할 수 있습니다. 겹치는 책갈피 중 하나에 새 텍스트를 할당 하면 새 텍스트만 포함 하 고 책갈피가 더 이상 겹치지 않게 합니다. 다른 책갈피는 이제 원래 겹치는 책갈피 간에 공유 되지 않은 텍스트만을 포함 됩니다.
+## <a name="overlapping-controls"></a>겹치는 컨트롤
+ 책갈피 컨트롤은 서로 겹칠 수 있습니다. 동일한 텍스트를 둘 이상의 책갈피에서 공유할 수 있습니다. 겹치는 책갈피 중 하나에 새 텍스트를 할당 하면 새 텍스트만 포함 되 고 책갈피는 더 이상 겹치지 않습니다. 이제 다른 책갈피는 원래 겹치는 책갈피 간에 공유 하지 않은 텍스트만 포함 합니다.
 
- 다음 표는 "This is sample text." 문장이 두 개의 겹치는 책갈피에서 공유 됩니다.
+ 다음 표는 "This is sample text." 문장이 는 두 개의 겹치는 책갈피에서 공유 됩니다.
 
 |책갈피|텍스트|
 |--------------|----------|
@@ -65,7 +65,7 @@ ms.locfileid: "62939391"
 |책갈피1|This is sample|
 |책갈피2|sample text.|
 
- 새 텍스트 "This is replacement."를 책갈피 1에 할당, 책갈피 겹치지, Bookmark2 Bookmark1의 일부가 아닌 원래 텍스트만 유지 합니다.
+ 새 텍스트 "This is replacement."를 않고 책갈피 2에는 책갈피가 겹치지 않으며 Bookmark2 등는 원래 않고 책갈피 2 일부가 아닌 텍스트만 보존 합니다.
 
 |책갈피|텍스트|
 |--------------|----------|
@@ -73,7 +73,7 @@ ms.locfileid: "62939391"
 |책갈피1|This is replacement|
 |책갈피2|text.|
 
-다른 책갈피를 포함 하는 책갈피의 텍스트를 변경 하는 경우 내부 책갈피 삭제 되지 않습니다. 그러나 내부 책갈피는 빈 책갈피가 및 외부 책갈피 끝으로 이동 합니다.
+다른 책갈피를 포함 하는 책갈피의 텍스트를 변경 하는 경우 내부 책갈피는 삭제 되지 않습니다. 그러나 내부 책갈피는 빈 책갈피가 되며 외부 책갈피의 끝으로 이동 합니다.
 
 다음 표는 "This is sample text." 문장이 다른 책갈피 내에 포함 된 책갈피에서 공유 됩니다.
 
@@ -109,10 +109,10 @@ ms.locfileid: "62939391"
 
 - <xref:Microsoft.Office.Tools.Word.Bookmark.SelectionChange>
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [확장 된 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md)
 - [방법: Word 문서에 책갈피 컨트롤 추가](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
 - [연습: 책갈피에 대 한 바로 가기 메뉴 만들기](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
 - [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [호스트 항목 및 호스트 컨트롤의 프로그래밍 방식으로 제한 사항](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [호스트 항목 및 호스트 컨트롤의 프로그래밍에 대 한 제한 사항](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

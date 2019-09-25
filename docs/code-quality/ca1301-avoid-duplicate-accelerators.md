@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16cd44f00db13027d737b6a6b496877075ac6fa9
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5f50be12f4d601161ec20659bbb6b710e5a7cf24
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922274"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235173"
 ---
 # <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301: 중복 액셀러레이터 키를 사용하지 마십시오.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922274"
 |TypeName|AvoidDuplicateAccelerators|
 |CheckId|CA1301|
 |범주|Microsoft.Globalization|
-|변경 수준|최신이 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 형식은 리소스 파일 <xref:System.Windows.Forms.Control?displayProperty=fullName> 에 저장 된 것과 동일한 액세스 키를 가진 두 개 이상의 최상위 컨트롤을 확장 하 고 포함 합니다.
@@ -50,7 +50,7 @@ ms.locfileid: "68922274"
 
 [!code-csharp[FxCop.Globalization.AvoidDuplicateAccels#1](../code-quality/codesnippet/CSharp/ca1301-avoid-duplicate-accelerators_1.cs)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Resources.ResourceManager?displayProperty=fullName>
 - [데스크톱 앱의 리소스](/dotnet/framework/resources/index)

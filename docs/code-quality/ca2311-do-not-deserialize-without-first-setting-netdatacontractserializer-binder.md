@@ -13,12 +13,12 @@ ms.workload:
 f1_keywords:
 - CA2311
 - DoNotDeserializeWithoutFirstSettingNetDataContractSerializerBinder
-ms.openlocfilehash: 2ec13d78e364940fa9c210cf0792e810c8f0f341
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 8445c6260592bbaf109dd3786111fe64441a4da0
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891171"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237695"
 ---
 # <a name="ca2311-do-not-deserialize-without-first-setting-netdatacontractserializerbinder"></a>CA2311: 먼저 NetDataContractSerializer.Binder를 설정하지 않고 deserialize하지 마세요.
 
@@ -27,7 +27,7 @@ ms.locfileid: "69891171"
 |TypeName|DoNotDeserializeWithoutFirstSettingNetDataContractSerializerBinder|
 |CheckId|CA2311|
 |범주|Microsoft.Security|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 
@@ -139,7 +139,7 @@ Public Class ExampleClass
 End Class
 ```
 
-### <a name="solution"></a>해결 방법
+### <a name="solution"></a>솔루션
 
 ```csharp
 using System;

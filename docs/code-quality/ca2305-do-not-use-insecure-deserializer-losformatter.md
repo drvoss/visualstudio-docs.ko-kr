@@ -1,5 +1,5 @@
 ---
-title: 'CA2305: 안전 하지 않은 LosFormatter 역직렬 변환기가 사용 하지 마세요'
+title: 'CA2305: 안전하지 않은 역직렬 변환기 LosFormatter를 사용하지 마세요.'
 ms.date: 05/01/2019
 ms.topic: reference
 author: dotpaul
@@ -13,41 +13,41 @@ ms.workload:
 f1_keywords:
 - CA2305
 - DoNotUseInsecureDeserializerLosFormatter
-ms.openlocfilehash: 4e589bbea53dd6a73a6e6e4fc44b6cb397d6dcbd
-ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.openlocfilehash: 145d45d79f1dda27d5c69f0c481277572d3eeaa2
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135461"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237724"
 ---
-# <a name="ca2305-do-not-use-insecure-deserializer-losformatter"></a>CA2305: 안전 하지 않은 LosFormatter 역직렬 변환기가 사용 하지 마세요
+# <a name="ca2305-do-not-use-insecure-deserializer-losformatter"></a>CA2305: 안전하지 않은 역직렬 변환기 LosFormatter를 사용하지 마세요.
 
 |||
 |-|-|
 |TypeName|DoNotUseInsecureDeserializerLosFormatter|
 |CheckId|CA2305|
 |범주|Microsoft.Security|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 
-<xref:System.Web.UI.LosFormatter?displayProperty=nameWithType> deserialization 메서드를 호출 하거나 참조 합니다.
+Deserialization <xref:System.Web.UI.LosFormatter?displayProperty=nameWithType> 메서드를 호출 했거나 참조 했습니다.
 
 ## <a name="rule-description"></a>규칙 설명
 
 [!INCLUDE[insecure-deserializers-description](includes/insecure-deserializers-description-md.md)]
 
-이 규칙을 찾습니다 <xref:System.Web.UI.LosFormatter?displayProperty=nameWithType> 메서드 호출 또는 참조를 역직렬화 합니다.
+이 규칙은 <xref:System.Web.UI.LosFormatter?displayProperty=nameWithType> deserialization 메서드 호출 또는 참조를 찾습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 
 [!INCLUDE[insecure-deserializers-fixes-for-always-insecure-deserializers](includes/insecure-deserializers-fixes-for-always-insecure-deserializers-md.md)]
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 
 [!INCLUDE[insecure-deserializers-common-safe-to-suppress](includes/insecure-deserializers-common-safe-to-suppress-md.md)]
 
-## <a name="pseudo-code-examples"></a>의사 (pseudo) 코드 예제
+## <a name="pseudo-code-examples"></a>의사 코드 예제
 
 ### <a name="violation"></a>위반
 

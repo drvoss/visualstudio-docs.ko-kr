@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc7f4a82b9a75e4d189e969712472f06b4019b73
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 38de3597d3693b072fec12f64211af4469851627
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920874"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232536"
 ---
 # <a name="ca2120-secure-serialization-constructors"></a>CA2120: serialization 생성자를 안전하게 하세요.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68920874"
 |TypeName|SecureSerializationConstructors|
 |CheckId|CA2120|
 |범주|Microsoft.Security|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 형식은 <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> 인터페이스를 구현 하 고, 대리자 또는 인터페이스가 아니고, 부분적으로 신뢰할 수 있는 호출자를 허용 하는 어셈블리에서 선언 됩니다. 형식에는 <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> 개체 <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> 와 개체 (serialization 생성자의 시그니처)를 사용 하는 생성자가 있습니다. 이 생성자는 보안 검사를 통해 보안 되지 않지만 형식에 있는 하나 이상의 일반 생성자가 보안 됩니다.
@@ -52,7 +52,7 @@ ms.locfileid: "68920874"
 
 [CA2237: SerializableAttribute로 ISerializable 형식 표시](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>
 - <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>

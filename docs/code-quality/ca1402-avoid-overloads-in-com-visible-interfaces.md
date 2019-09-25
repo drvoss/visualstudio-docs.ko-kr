@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: aa45a54a994d19b1a04bc0785f21b88dfeef4475
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: fdbb6012fb1252c90014ba91caf8ad7dacf901c2
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922120"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234855"
 ---
 # <a name="ca1402-avoid-overloads-in-com-visible-interfaces"></a>CA1402: COM 노출 인터페이스에서 오버로드를 사용하지 마세요.
 
@@ -31,7 +31,7 @@ ms.locfileid: "68922120"
 |TypeName|AvoidOverloadsInComVisibleInterfaces|
 |CheckId|CA1402|
 |범주|Microsoft.Interoperability|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 COM (구성 요소 개체 모델) 표시 인터페이스는 오버 로드 된 메서드를 선언 합니다.
@@ -74,7 +74,7 @@ Visual Basic 6 COM 클라이언트는 이름에 밑줄을 사용 하 여 인터�
 
 [CA1017: ComVisibleAttribute로 어셈블리 표시](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [비관리 코드와의 상호 운용](/dotnet/framework/interop/index)
 - [Long 데이터 형식](/dotnet/visual-basic/language-reference/data-types/long-data-type)

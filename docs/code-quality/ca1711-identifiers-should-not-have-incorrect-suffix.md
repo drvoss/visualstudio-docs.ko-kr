@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b047669b962d5e38cd37132f84ae653ba30f9dc
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 2e04487a9bfcd8ef9a0e9a15bc76a93b221f9ce1
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547301"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234129"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: 식별자에는 올바른 접미사를 사용해야 합니다.
 
@@ -28,7 +28,7 @@ ms.locfileid: "69547301"
 |TypeName|IdentifiersShouldNotHaveIncorrectSuffix|
 |CheckId|CA1711|
 |범주|Microsoft.Naming|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 
@@ -45,17 +45,17 @@ ms.locfileid: "69547301"
 |접미사|기본 형식/인터페이스|
 |------------|--------------------------|
 |특성|<xref:System.Attribute?displayProperty=fullName>|
-|Collection|<xref:System.Collections.ICollection?displayProperty=fullName><br /><br /> <xref:System.Collections.IEnumerable?displayProperty=fullName><br /><br /> <xref:System.Collections.Queue?displayProperty=fullName><br /><br /> <xref:System.Collections.Stack?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName><br /><br /> <xref:System.Data.DataSet?displayProperty=fullName><br /><br /> <xref:System.Data.DataTable?displayProperty=fullName>|
-|Dictionary|<xref:System.Collections.IDictionary?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|
+|컬렉션|<xref:System.Collections.ICollection?displayProperty=fullName><br /><br /> <xref:System.Collections.IEnumerable?displayProperty=fullName><br /><br /> <xref:System.Collections.Queue?displayProperty=fullName><br /><br /> <xref:System.Collections.Stack?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName><br /><br /> <xref:System.Data.DataSet?displayProperty=fullName><br /><br /> <xref:System.Data.DataTable?displayProperty=fullName>|
+|사전|<xref:System.Collections.IDictionary?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|
 |EventArgs|<xref:System.EventArgs?displayProperty=fullName>|
 |이벤트 처리기|이벤트 처리기 대리자|
 |예외|<xref:System.Exception?displayProperty=fullName>|
 |사용 권한|<xref:System.Security.IPermission?displayProperty=fullName>|
-|큐|<xref:System.Collections.Queue?displayProperty=fullName>|
+|Queue|<xref:System.Collections.Queue?displayProperty=fullName>|
 |스택|<xref:System.Collections.Stack?displayProperty=fullName>|
 |스트림|<xref:System.IO.Stream?displayProperty=fullName>|
 
-또한 다음 접미사를 사용 하면 안 됩니다.
+또한 다음 접미사를 사용 하면 안 **됩니다.**
 
 - `Delegate`
 
@@ -89,7 +89,7 @@ dotnet_code_quality.ca1711.api_surface = private, internal
 
 - [CA1710: 식별자에는 올바른 접미사가 있어야 합니다.](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [특성](/dotnet/standard/design-guidelines/attributes)
 - [이벤트 처리 및 발생](/dotnet/standard/events/index)

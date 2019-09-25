@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 03add1625c4d59bb180f9f0f08692e67bee8047b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ab789e578dd8603f604cdb00aa5d236250d13670
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922074"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235045"
 ---
 # <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404: P/Invoke 다음에 바로 GetLastError를 호출하십시오.
 
@@ -31,7 +31,7 @@ ms.locfileid: "68922074"
 |TypeName|CallGetLastErrorImmediatelyAfterPInvoke|
 |CheckId|CA1404|
 |범주|Microsoft.Interoperability|
-|변경 수준|최신이 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 

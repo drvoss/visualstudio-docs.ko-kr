@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ba54b9f87fe8c8cd8bfdc86f39e3121135241e92
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 757b6b46e0c0892f5eb4c868b15654b29cd51c0e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547524"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235625"
 ---
 # <a name="ca1052-static-holder-types-should-be-static-or-notinheritable"></a>CA1052: 정적 소유자 형식은 정적 또는 NotInheritable 이어야 합니다.
 
@@ -32,7 +32,7 @@ ms.locfileid: "69547524"
 |TypeName|StaticHolderTypesAnalyzer|
 |CheckId|CA1052|
 |범주|Microsoft.Design|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf5bb8320a8876582cc325ecf973c83593777193
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ab0f6aaae97a510b0521e10ad607a86988c345a3
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920506"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232092"
 ---
 # <a name="ca2142-transparent-code-should-not-be-protected-with-linkdemands"></a>CA2142: 투명 코드는 LinkDemands로 보호될 수 없습니다.
 
@@ -24,7 +24,7 @@ ms.locfileid: "68920506"
 |TypeName|TransparentMethodsShouldNotBeProtectedWithLinkDemands|
 |CheckId|CA2142|
 |범주|Microsoft.Security|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 투명 한 메서드에는 <xref:System.Security.Permissions.SecurityAction> 또는 기타 보안 요구가 필요 합니다.

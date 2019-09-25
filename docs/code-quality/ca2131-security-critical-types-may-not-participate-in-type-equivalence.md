@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 521a44b432a5b8ea886b23aab6b39789efe3b1b0
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 802442a71eed3267a71fad9a5a208c9ee82cb556
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920705"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232344"
 ---
 # <a name="ca2131-security-critical-types-may-not-participate-in-type-equivalence"></a>CA2131: 보안에 중요한 형식은 형식 동등에 참여할 수 없습니다.
 
@@ -24,7 +24,7 @@ ms.locfileid: "68920705"
 |TypeName|CriticalTypesMustNotParticipateInTypeEquivalence|
 |CheckId|CA2131|
 |범주|Microsoft.Security|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 형식이 동등성에 참여 하 고 형식 자체 또는 형식의 멤버 또는 필드 중 하나가 <xref:System.Security.SecurityCriticalAttribute> 특성으로 표시 됩니다.
@@ -43,5 +43,5 @@ ms.locfileid: "68920705"
 
 [!code-csharp[FxCop.Security.CA2131.CriticalTypesMustNotParticipateInTypeEquivalence#1](../code-quality/codesnippet/CSharp/ca2131-security-critical-types-may-not-participate-in-type-equivalence_1.cs)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 [보안 투명 코드, 수준 2](/dotnet/framework/misc/security-transparent-code-level-2)

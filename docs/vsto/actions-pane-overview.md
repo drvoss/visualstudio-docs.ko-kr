@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cbade56f80d75e6ab8d735aaf586d45d2dedb42
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9d2dc3afb69c2febdcd8e59618c43c52ab9294cf
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926677"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255693"
 ---
 # <a name="actions-pane-overview"></a>작업 창 개요
   작업 창은 특정 Microsoft Office Word 문서 또는 Microsoft Office Excel 통합 문서에 연결 되는 사용자 지정 가능한 **문서 작업** 작업창입니다. 작업 창은 Excel의 **XML 원본** 작업 창 또는 Word의 **스타일 및 서식** 작업창과 같은 다른 기본 제공 작업창과 함께 Office 작업창 내에서 호스팅됩니다. Windows Forms 컨트롤 또는 WPF 컨트롤을 사용하여 작업 창 사용자 인터페이스를 디자인할 수 있습니다.
@@ -40,7 +40,7 @@ ms.locfileid: "68926677"
  [!code-csharp[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#7)]
  [!code-vb[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#7)]
 
- 작업 창은 컨트롤을 명시적으로 추가 하는 즉시 런타임에 표시 됩니다. 작업 창이 표시되면 사용자 작업에 대한 응답으로 컨트롤을 동적으로 추가하거나 제거할 수 있습니다. 일반적으로 사용자가 처음 문서를 열 때 작업 창이 표시되도록 `ThisDocument` 또는 `ThisWorkbook`의 `Startup` 이벤트 처리기에 작업 창을 표시하는 코드를 추가합니다. 그러나 문서의 사용자 작업에 대한 응답으로만 작업 창을 표시하는 것이 좋습니다. 예를 들어 문서에서 컨트롤의 `Click` 이벤트에 코드를 추가할 수 있습니다.
+ 작업 창에 컨트롤을 명시적으로 추가하는 즉시 런타임에 표시됩니다. 작업 창이 표시되면 사용자 작업에 대한 응답으로 컨트롤을 동적으로 추가하거나 제거할 수 있습니다. 일반적으로 사용자가 처음 문서를 열 때 작업 창이 표시되도록 `ThisDocument` 또는 `ThisWorkbook`의 `Startup` 이벤트 처리기에 작업 창을 표시하는 코드를 추가합니다. 그러나 문서의 사용자 작업에 대한 응답으로만 작업 창을 표시하는 것이 좋습니다. 예를 들어 문서에서 컨트롤의 `Click` 이벤트에 코드를 추가할 수 있습니다.
 
 ### <a name="add-multiple-controls-to-the-actions-pane"></a>작업 창에 여러 컨트롤 추가
  작업 창에 여러 컨트롤을 추가 하는 경우 사용자 컨트롤의 컨트롤을 그룹화 한 다음 사용자 정의 컨트롤을 <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> 속성에 추가 해야 합니다. 이 프로세스에는 다음 단계가 포함됩니다.
@@ -122,7 +122,7 @@ ms.locfileid: "68926677"
  [!code-vb[Trin_VstcoreActionsPaneExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#10)]
 
 ## <a name="anchor-controls"></a>앵커 컨트롤
- 사용자가 런타임에 작업 창의 크기를 조정 하면 작업 창에서 컨트롤의 크기를 조정할 수 있습니다. Windows Forms 컨트롤의 <xref:System.Windows.Forms.Control.Anchor%2A> 속성을 사용하여 작업 창에 컨트롤을 고정할 수 있습니다. 동일한 방식으로 사용자 정의 컨트롤에 Windows Forms 컨트롤을 고정할 수도 있습니다. 자세한 내용은 [방법: Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms)에 컨트롤을 고정 합니다.
+ 사용자가 런타임에 작업 창의 크기를 조정하는 경우 작업 창과 함께 컨트롤의 크기가 조정될 수 있습니다. Windows Forms 컨트롤의 <xref:System.Windows.Forms.Control.Anchor%2A> 속성을 사용하여 작업 창에 컨트롤을 고정할 수 있습니다. 동일한 방식으로 사용자 정의 컨트롤에 Windows Forms 컨트롤을 고정할 수도 있습니다. 자세한 내용은 [방법: Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms)에 컨트롤을 고정 합니다.
 
 ## <a name="resize-the-actions-pane"></a>작업 창 크기 조정
  <xref:Microsoft.Office.Tools.ActionsPane>이 작업창에 포함되어 있으므로 <xref:Microsoft.Office.Tools.ActionsPane>의 크기를 직접 변경할 수는 없습니다. 그러나 작업창을 나타내는 <xref:Microsoft.Office.Core.CommandBar>의 <xref:Microsoft.Office.Core.CommandBar.Width%2A> 속성을 설정하여 프로그래밍 방식으로 작업창의 너비를 변경할 수 있습니다. 가로로 도킹되어 있거나 부동 창인 경우 작업창의 높이를 변경할 수 있습니다.
@@ -150,7 +150,7 @@ ms.locfileid: "68926677"
  [!code-csharp[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#101)]
  [!code-vb[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#101)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 - [Office 솔루션에서 WPF 컨트롤 사용](../vsto/using-wpf-controls-in-office-solutions.md)
 - [Office UI 사용자 지정](../vsto/office-ui-customization.md)
 - [Office 프로젝트의 개체에 대 한 전역 액세스](../vsto/global-access-to-objects-in-office-projects.md)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 455ab619f293981c5ebd3afba6336c63f2fe7f49
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 296e8cb4753d487573957de1108a8cb27778ef4c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766066"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235786"
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051: 표시되는 인스턴스 필드를 선언하지 마세요.
 
@@ -28,7 +28,7 @@ ms.locfileid: "70766066"
 |TypeName|DoNotDeclareVisibleInstanceFields|
 |CheckId|CA1051|
 |범주|Microsoft.Design|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 
@@ -77,6 +77,6 @@ dotnet_code_quality.ca1051.api_surface = private, internal
 
 - [CA2112: 보안 형식은 필드를 노출 하면 안 됩니다.](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [링크 요청](/dotnet/framework/misc/link-demands)

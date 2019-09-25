@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e6bc88d3932baa5bbb4a723d7a16509831d58146
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 073332738a01cb299b2b185c6fca20131222f981
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923088"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236264"
 ---
 # <a name="ca1017-mark-assemblies-with-comvisibleattribute"></a>CA1017: ComVisibleAttribute로 어셈블리를 표시하세요.
 
@@ -32,7 +32,7 @@ ms.locfileid: "68923088"
 |TypeName|MarkAssembliesWithComVisible|
 |CheckId|CA1017|
 |범주|Microsoft.Design|
-|변경 수준|최신이 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 어셈블리에 <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> 특성이 적용 되지 않았습니다.
@@ -53,7 +53,7 @@ ms.locfileid: "68923088"
 [!code-vb[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/VisualBasic/ca1017-mark-assemblies-with-comvisibleattribute_1.vb)]
 [!code-csharp[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/CSharp/ca1017-mark-assemblies-with-comvisibleattribute_1.cs)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [비관리 코드와의 상호 운용](/dotnet/framework/interop/index)
 - [상호 운용할 .NET 형식의 정규화](/dotnet/framework/interop/qualifying-net-types-for-interoperation)

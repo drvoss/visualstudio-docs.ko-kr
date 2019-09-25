@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a98ec47688f289fadba66401aca9fcee7b602cdc
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e923730213ca31a4429d8547fdaaf980692f9a96
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923564"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236483"
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: 이벤트 처리기를 제대로 선언하십시오.
 
@@ -32,7 +32,7 @@ ms.locfileid: "68923564"
 |TypeName|DeclareEventHandlersCorrectly|
 |CheckId|CA1009|
 |범주|Microsoft.Design|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 Public 또는 protected 이벤트를 처리 하는 대리자에 올바른 시그니처, 반환 형식 또는 매개 변수 이름이 없습니다.
@@ -58,7 +58,7 @@ Public 또는 protected 이벤트를 처리 하는 대리자에 올바른 시그
 ## <a name="related-rules"></a>관련 규칙
 [CA2109: 표시 되는 이벤트 처리기 검토](../code-quality/ca2109-review-visible-event-handlers.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.EventArgs?displayProperty=fullName>
 - <xref:System.Object?displayProperty=fullName>

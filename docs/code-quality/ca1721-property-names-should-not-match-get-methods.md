@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 44028caf027191846fa653db06abbe4027fdde8d
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 805ceb7abf7096df29894a23be6c8e7b1f6bd5b2
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547095"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233902"
 ---
 # <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: 속성 이름은 Get 메서드와 달라야 합니다.
 
@@ -31,7 +31,7 @@ ms.locfileid: "69547095"
 |TypeName|PropertyNamesShouldNotMatchGetMethods|
 |CheckId|CA1721|
 |범주|Microsoft.Naming|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 

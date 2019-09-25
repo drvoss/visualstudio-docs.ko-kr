@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94b1e8134eb89e4ae78ec0ad6f07fd7406215185
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: fcc399457f4dde1c65836d9c9498c782ba92ecc2
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922834"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235983"
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039: 목록은 강력한 형식이어야 합니다.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922834"
 |TypeName|ListsAreStronglyTyped|
 |CheckId|CA1039|
 |범주|Microsoft.Design|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 
@@ -70,7 +70,7 @@ Public 또는 protected 형식은를 구현 <xref:System.Collections.IList?displ
 
 [CA1038: 열거자는 강력한 형식 이어야 합니다.](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Collections.CollectionBase?displayProperty=fullName>
 - <xref:System.Collections.ICollection?displayProperty=fullName>

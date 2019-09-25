@@ -1,5 +1,5 @@
 ---
-title: '방법: 리본 사용자 지정 시작'
+title: '방법: 리본 메뉴 사용자 지정 시작'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,25 +15,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f164a8f1d1c84725530e7a3afab5e63472ae257e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a9b0f1ef704f5dd1426374e23806e5950ed5f6bb
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967900"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255857"
 ---
-# <a name="how-to-get-started-customizing-the-ribbon"></a>방법: 리본 사용자 지정 시작
-  Microsoft Office 응용 프로그램의 리본을 사용자 지정 하려면 추가 **리본 (비주얼 디자이너)** 또는 **리본 (XML)** Office 프로젝트 항목입니다.
+# <a name="how-to-get-started-customizing-the-ribbon"></a>방법: 리본 메뉴 사용자 지정 시작
+  Microsoft Office 응용 프로그램의 리본을 사용자 지정 하려면 Office 프로젝트에 **리본 (비주얼 디자이너)** 또는 **리본 (XML)** 항목을 추가 합니다.
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
 ### <a name="to-add-a-ribbon-to-a-project"></a>프로젝트에 리본을 추가 하려면
 
-1. 에 **프로젝트** 메뉴에서 클릭 **새 항목 추가**합니다.
+1. **프로젝트** 메뉴에서 **새 항목 추가**를 클릭 합니다.
 
-2. 에 **새 항목 추가** 대화 상자에서 **리본 (비주얼 디자이너)** 하거나 **리본 (XML)** 합니다. 이러한 템플릿에 대 한 자세한 내용은 참조 하세요. [리본 개요](../vsto/ribbon-overview.md)합니다.
+2. **새 항목 추가** 대화 상자에서 **리본 (비주얼 디자이너)** 또는 **리본 (XML)** 을 선택 합니다. 이러한 템플릿에 대 한 자세한 내용은 [리본 개요](../vsto/ribbon-overview.md)를 참조 하세요.
 
-3. 에 **이름을** 리본 항목에 대 한 이름을 입력 합니다.
+3. **이름** 상자에 리본 항목의 이름을 입력 합니다.
 
     이름은 다음 문자를 포함할 수 없습니다.
 
@@ -63,13 +63,13 @@ ms.locfileid: "62967900"
 
    - 선행 또는 후행 공백(' ')
 
-   - ("Nul", "aux", "con", "com1", "lpt1" 등)와 같은 Windows 또는 DOS에 예약 된 이름
+   - Windows 또는 DOS (예: "nul", "aux", "con", "com1", "lpt1" 등) 용으로 예약 된 이름
 
 4. **확인**을 클릭합니다.
 
-   에 리본 항목을 표시할지 **솔루션 탐색기**합니다. 다음 단계에 대 한 자세한 내용은 [리본 개요](../vsto/ribbon-overview.md)합니다.
+   리본 항목이 **솔루션 탐색기**에 나타납니다. 다음 단계에 대 한 자세한 내용은 [리본 개요](../vsto/ribbon-overview.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 - [런타임에 리본 메뉴에 액세스](../vsto/accessing-the-ribbon-at-run-time.md)
 - [리본 디자이너](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)

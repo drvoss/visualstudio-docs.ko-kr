@@ -17,19 +17,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f65f6de7cfb336eb001de47fb6562b7200391419
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a0916ca11d4df5f6b69376d7223143afbb407f6e
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967987"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255886"
 ---
 # <a name="how-to-fill-listobject-controls-with-data"></a>방법: ListObject 컨트롤을 데이터로 채우기
   신속하게 문서에 데이터를 추가하는 방법으로 데이터 바인딩을 사용할 수 있습니다. 목록 개체에 데이터를 바인딩한 후 해당 데이터를 표시하지만 더 이상 데이터 원본에 바인딩되지 않도록 목록 개체의 연결을 끊을 수 있습니다.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [어떻게 할까요? Excel에서 SharePoint 목록에 연결 된 목록 만들기 ](http://go.microsoft.com/fwlink/?LinkID=130263).
+ ![비디오에 연결](../vsto/media/playvideo.gif "비디오에 연결") 관련 비디오 데모를 보려면 어떻게 할까요?를 [참조 하세요. Excel에서 SharePoint 목록에 연결 된 목록을 만듭니다. ](http://go.microsoft.com/fwlink/?LinkID=130263).
 
 ### <a name="to-bind-data-to-a-listobject-control"></a>ListObject 컨트롤에 데이터를 바인딩하려면
 
@@ -58,8 +58,8 @@ ms.locfileid: "62967987"
 ## <a name="compile-the-code"></a>코드 컴파일
  이 코드 예제에서는 이 코드가 표시되는 워크시트에 <xref:Microsoft.Office.Tools.Excel.ListObject> 이라는 기존 `list1` 가 있는 것으로 간주합니다.
 
-## <a name="see-also"></a>참고자료
-- [Word 문서 및 런타임에 VSTO 추가 기능에서 Excel 통합 문서 확장](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+## <a name="see-also"></a>참고 항목
+- [런타임에 VSTO 추가 기능에서 Word 문서 및 Excel 통합 문서 확장](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Office 문서의 컨트롤](../vsto/controls-on-office-documents.md)
 - [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [방법: 데이터에 ListObject 열 매핑](../vsto/how-to-map-listobject-columns-to-data.md)

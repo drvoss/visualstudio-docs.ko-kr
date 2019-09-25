@@ -16,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8912cb6eeec8009364936a42d572f4f3d83fae5e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0e74ec49667a4fe66c399bd15e8b24aa6589ce88
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919915"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237836"
 ---
 # <a name="ca2242-test-for-nan-correctly"></a>CA2242: NaN에 대해 정확하게 테스트하십시오.
 
@@ -30,7 +30,7 @@ ms.locfileid: "68919915"
 |TypeName|TestForNaNCorrectly|
 |CheckId|CA2242|
 |범주|Microsoft.Usage|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 식은 또는 <xref:System.Single.NaN?displayProperty=fullName> <xref:System.Double.NaN?displayProperty=fullName>에 대해 값을 테스트 합니다.

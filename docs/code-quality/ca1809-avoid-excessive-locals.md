@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d1c2f76258be3b0be6409bffd002fd916883ab2
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 89d6ee4d1a53f63cffb31439a124d3d9358e976f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921544"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233640"
 ---
 # <a name="ca1809-avoid-excessive-locals"></a>CA1809: 불필요한 로컬 항목을 사용하지 마세요.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921544"
 |TypeName|AvoidExcessiveLocals|
 |CheckId|CA1809|
 |범주|Microsoft.Performance|
-|변경 수준|최신이 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 멤버에 64 개 이상의 지역 변수가 포함 되어 있으며, 그 중 일부는 컴파일러에서 생성 될 수 있습니다.

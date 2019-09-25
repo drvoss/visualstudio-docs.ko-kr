@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c6512f02d13c2eeb441f5b374c4785deffe22a22
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 435eb5a9fd7e41a69c873df4c728e42551734a37
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547058"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253361"
 ---
 # <a name="ca1802-use-literals-where-appropriate"></a>CA1802: 가능하면 리터럴을 사용하세요.
 
@@ -31,7 +31,7 @@ ms.locfileid: "69547058"
 |TypeName|UseLiteralsWhereAppropriate|
 |CheckId|CA1802|
 |범주|Microsoft.Performance|
-|변경 수준|최신이 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 
@@ -41,11 +41,11 @@ ms.locfileid: "69547058"
 
 ## <a name="rule-description"></a>규칙 설명
 
-선언 형식에 대 `static readonly` 한 정적 생성자가 호출 될 때 필드의 값은 런타임에 계산 됩니다. `static readonly` 필드가 선언 될 때 초기화 되 고 정적 생성자가 명시적으로 선언 되지 않은 경우 컴파일러는 정적 생성자를 내보내 필드를 초기화 합니다.
+선언 형식에 대 `static readonly` 한 정적 생성자가 호출 되 면 런타임에 필드 값이 계산 됩니다. `static readonly` 필드가 선언 될 때 초기화 되 고 정적 생성자가 명시적으로 선언 되지 않은 경우 컴파일러는 정적 생성자를 내보내 필드를 초기화 합니다.
 
 `const` 필드의 값은 컴파일 시간에 계산 되 고 메타 데이터에 저장 되므로 `static readonly` 필드와 비교할 때 런타임 성능이 향상 됩니다.
 
-대상 필드에 할당 된 값은 컴파일 시간에 계산할 수 때문에 런타임이 아닌 컴파일 시간에 값 `const` 이 계산 되도록 선언을 필드로 변경 합니다.
+대상 필드에 할당 된 값은 컴파일 시간에 계산할 수 이므로 값이 런타임에 대신 컴파일 시간에 `const` 계산 되도록 선언을 필드로 변경 합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 

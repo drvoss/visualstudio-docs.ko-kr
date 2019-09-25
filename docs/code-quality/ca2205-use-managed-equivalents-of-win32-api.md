@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 99d53296ad72aef1910a39299be64c7cb03dd49a
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: ad26dcbbbef5a34796ca0aa134653c3c9df5d763
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714725"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253266"
 ---
 # <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205: Win32 API의 동일한 관리형 기능을 사용하세요.
 
@@ -31,35 +31,35 @@ ms.locfileid: "66714725"
 |TypeName|UseManagedEquivalentsOfWin32Api|
 |CheckId|CA2205|
 |범주|Microsoft.Usage|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 
-플랫폼 호출 메서드가 정의 되었고.NET에서 이와 동일한 기능을 사용 하 여 메서드가 있습니다.
+플랫폼 호출 메서드가 정의 되 고 .NET에 동일한 기능이 있는 메서드가 있습니다.
 
 ## <a name="rule-description"></a>규칙 설명
 
-플랫폼 호출 메서드는 관리 되지 않는 DLL 함수를 호출 하는 데 사용 되 고 사용 하 여 정의 됩니다는 <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> 특성 또는 `Declare` Visual basic에서 키워드입니다. 잘못 정의 된 플랫폼 호출 메서드 이름이 잘못 지정 된 함수에 잘못 된 매개 변수 및 반환 값 데이터 형식 및 호출 규칙 및 문자 등 잘못 된 필드 사양 매핑 같은 문제로 인해 런타임 예외가 발생할 수 있습니다 이 옵션을 설정 합니다. 사용 가능한 경우 간단 하 고 적은 오류를 정의 하 고 관리 되지 않는 메서드를 직접 호출 보다 해당 관리 되는 메서드를 호출 하기 쉬운 것입니다. 메서드를 호출 하는 플랫폼 호출 해결 해야 하는 추가적인 보안 문제가 발생할 수도 있습니다.
+플랫폼 호출 메서드는 관리 되지 않는 DLL 함수를 호출 하는 데 사용 되 고 <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> 특성 `Declare` 또는 Visual Basic의 키워드를 사용 하 여 정의 됩니다. 잘못 정의 된 플랫폼 호출 메서드는 misnamed 함수, 매개 변수 및 반환 값 데이터 형식의 잘못 된 매핑 및 호출 규칙 및 문자와 같은 잘못 된 필드 사양과 같은 문제로 인해 런타임 예외가 발생할 수 있습니다. 설정. 사용 가능한 경우 관리 되지 않는 메서드를 직접 정의 하 고 호출 하는 것 보다는 해당 하는 관리 되는 메서드를 호출 하는 것 보다 간단 하 고 오류가 줄어듭니다. 플랫폼 호출 메서드를 호출 하면 해결 해야 하는 추가 보안 문제가 발생할 수도 있습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 
-이 규칙 위반 문제를 해결 하려면 관리 되지 않는 함수에 대 한 호출을을 관리 되는 해당 호출으로 바꿉니다.
+이 규칙 위반 문제를 해결 하려면 관리 되지 않는 함수에 대 한 호출을 관리 되는 해당 함수로 바꿉니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 
-제안된 된 대체 메서드가 필요한 기능을 제공 하지 않는 경우이 규칙에서 경고를 표시 합니다.
+제안 된 대체 방법이 필요한 기능을 제공 하지 않는 경우에는이 규칙에서 경고를 표시 하지 않습니다.
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 플랫폼에 규칙을 위반 하는 메서드 정의 호출 합니다. 또한 플랫폼 호출 메서드를 호출 하 고 해당 하는 관리 되는 메서드 표시 됩니다.
+다음 예제에서는 규칙을 위반 하는 플랫폼 호출 메서드 정의를 보여 줍니다. 또한 플랫폼 호출 메서드 및 해당 하는 관리 되는 메서드에 대 한 호출이 표시 됩니다.
 
 [!code-csharp[FxCop.Usage.ManagedEquivalents#1](../code-quality/codesnippet/CSharp/ca2205-use-managed-equivalents-of-win32-api_1.cs)]
 [!code-vb[FxCop.Usage.ManagedEquivalents#1](../code-quality/codesnippet/VisualBasic/ca2205-use-managed-equivalents-of-win32-api_1.vb)]
 
-## <a name="related-rules"></a>관련된 규칙
+## <a name="related-rules"></a>관련 규칙
 
-- [CA1404: P/Invoke 다음에 바로 GetLastError를 호출 합니다.](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)
+- [CA1404: P/Invoke 직후에 GetLastError를 호출 합니다.](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)
 - [CA1060: P/Invoke를 NativeMethods 클래스로 이동](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
-- [CA1400: P/Invoke 진입점 있어야 합니다.](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
-- [CA1401: P/Invoke을 표시 해야 합니다.](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
+- [CA1400: P/Invoke 진입점이 있어야 합니다.](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
+- [CA1401: P/Invoke는 노출 되지 않아야 합니다.](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
 - [CA2101: P/Invoke 문자열 인수에 대해 마샬링을 지정 하십시오.](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)

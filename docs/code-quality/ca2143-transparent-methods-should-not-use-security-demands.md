@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 532a10740b0617f32e4f970da8dc2a7e2807f792
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a182beba738e583fad83c3f51d7efa312761906d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920478"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231977"
 ---
 # <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143: 투명 메서드는 보안 요청을 사용할 수 없습니다.
 
@@ -24,7 +24,7 @@ ms.locfileid: "68920478"
 |TypeName|TransparentMethodsShouldNotDemand|
 |CheckId|CA2143|
 |범주|Microsoft.Security|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 전 부모 형식 또는 메서드는 <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> `.Demand` 요청으로 선언적으로 표시 <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> 되거나 메서드를 호출 합니다.
@@ -43,5 +43,5 @@ ms.locfileid: "68920478"
 
 [!code-csharp[FxCop.Security.CA2143.TransparentMethodsShouldNotDemand#1](../code-quality/codesnippet/CSharp/ca2143-transparent-methods-should-not-use-security-demands_1.cs)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 [CA2142: 투명 코드는 LinkDemands로 보호할 수 없습니다.](../code-quality/ca2142-transparent-code-should-not-be-protected-with-linkdemands.md)

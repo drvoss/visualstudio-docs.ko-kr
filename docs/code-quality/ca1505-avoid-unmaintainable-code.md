@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 740ef26af6f1f84d23ef27de5176df1b3de98b34
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c3ba027ef2e663870d0af50bc6d2154133f7980c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797323"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234538"
 ---
 # <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: 유지 관리할 수 없는 코드를 사용하지 마세요.
 
@@ -28,7 +28,7 @@ ms.locfileid: "62797323"
 |TypeName|AvoidUnmantainableCode|
 |CheckId|CA1505|
 |범주|Microsoft.Maintainability|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 
@@ -36,19 +36,19 @@ ms.locfileid: "62797323"
 
 ## <a name="rule-description"></a>규칙 설명
 
-유지 관리 인덱스는 다음 메트릭을 사용 하 여 계산 됩니다: 줄의 코드, 프로그램 볼륨 및 순환 복잡성입니다. 프로그램 볼륨은 형식 또는 코드의 연산자 및 피연산자의 수를 기반으로 하는 방법에 대 한 이해 하기 어려운 이유는 측정값입니다. 순환 복잡성은 구조적 형식 또는 메서드의 복잡성을 측정 합니다. 코드 메트릭에 대 한 자세히 알아볼 수 있습니다 [복잡성과 관리 되는 코드의 관리 용이성 측정](../code-quality/code-metrics-values.md)합니다.
+유지 관리 인덱스는 코드 줄, 프로그램 볼륨 및 순환 복잡성의 메트릭을 사용 하 여 계산 됩니다. 프로그램 볼륨은 코드의 연산자 및 피연산자 수를 기반으로 하는 형식 또는 메서드를 이해 하는 데 어려움이 있음을 측정 한 것입니다. 순환 복잡성은 형식 또는 메서드의 구조적 복잡성을 측정 한 것입니다. [관리 코드의 복잡성 및 유지 관리 효율성을 측정 하](../code-quality/code-metrics-values.md)여 코드 메트릭에 대해 자세히 알아볼 수 있습니다.
 
-낮은 유지 관리 인덱스를 나타내고 형식 또는 메서드를 유지 관리 하기 어렵고 다시 디자인 좋은 후보가 됩니다.
+낮은 유지 관리 인덱스는 형식 또는 메서드를 유지 관리 하기 어렵고 다시 디자인 하는 것이 어려울 수 있음을 나타냅니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 
-이 위반을 해결 하려면 형식 또는 메서드를 다시 디자인 하 고 작고 더욱 중점을 둔 형식이 나 메서드의로 분할 하려고 합니다.
+이 위반 문제를 해결 하려면 형식이 나 메서드를 다시 디자인 하 고 더 작고 더 중점을 둘 수 있는 형식 또는 메서드로 분할 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 
-형식 또는 메서드를 분할할 수 없는 또는 큰 크기로 불구 하 고 관리 하기 쉬운 것으로 간주 됩니다 때이 경고를 무시할 수 있습니다.
+형식 또는 메서드가 분할 될 수 없는 경우이 경고를 표시 하지 않거나 큰 크기에도 불구 하 고 유지 관리 되는 것으로 간주 될 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [유지 관리 경고](../code-quality/maintainability-warnings.md)
 - [관리 코드의 복잡성 및 유지 관리 용이성 측정](../code-quality/code-metrics-values.md)

@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2be42519f87c3c040c1f80c80d53d490853d986e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 4f01ba5af7640521333093e4bba1f36a95363b60
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920759"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232462"
 ---
 # <a name="ca2126-type-link-demands-require-inheritance-demands"></a>CA2126: 형식 링크 요청에는 상속 요청이 필요합니다.
 
@@ -32,7 +32,7 @@ ms.locfileid: "68920759"
 |TypeName|TypeLinkDemandsRequireInheritanceDemands|
 |CheckId|CA2126|
 |범주|Microsoft.Security|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 봉인 되지 않은 public 형식은 링크 요청으로 보호 되 고, 재정의 가능한 메서드를 포함 하며, 형식 또는 메서드가 상속 요청으로 보호 되지 않습니다.
@@ -62,7 +62,7 @@ ms.locfileid: "68920759"
 
 [CA2123: 재정의 링크 요청은 base와 동일 해야 합니다.](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [보안 코딩 지침](/dotnet/standard/security/secure-coding-guidelines)
 - [링크 요청](/dotnet/framework/misc/link-demands)

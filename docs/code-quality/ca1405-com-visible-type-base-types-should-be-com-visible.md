@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 56e6e7a53f5f8b07d1afc8b68ef641c576524316
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8e4e5c4ed258bcc88fedbb6d015fed576d326a0f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922063"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234965"
 ---
 # <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405: COM 노출 형식의 기본 형식은 COM 노출이어야 합니다.
 
@@ -31,7 +31,7 @@ ms.locfileid: "68922063"
 |TypeName|ComVisibleTypeBaseTypesShouldBeComVisible|
 |CheckId|CA1405|
 |범주|Microsoft.Interoperability|
-|변경 수준|DependsOnFix|
+|주요 변경 내용|DependsOnFix|
 
 ## <a name="cause"></a>원인
 Com (구성 요소 개체 모델) 표시 형식이 COM에 표시 되지 않는 형식에서 파생 됩니다.
@@ -51,7 +51,7 @@ COM 노출 형식이 새 버전에 멤버를 추가 하는 경우 현재 버전�
 [!code-vb[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1405-com-visible-type-base-types-should-be-com-visible_1.vb)]
 [!code-csharp[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/CSharp/ca1405-com-visible-type-base-types-should-be-com-visible_1.cs)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Runtime.InteropServices.ClassInterfaceAttribute?displayProperty=fullName>
 - [비관리 코드와의 상호 운용](/dotnet/framework/interop/index)

@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f11a93380f149648ece4ae6d71bc9c2f25df5191
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 387eb464959fba522e31f9586998335cb306d844
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923111"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236321"
 ---
 # <a name="ca1014-mark-assemblies-with-clscompliantattribute"></a>CA1014: CLSCompliantAttribute로 어셈블리를 표시하세요.
 
@@ -32,7 +32,7 @@ ms.locfileid: "68923111"
 |TypeName|MarkAssembliesWithClsCompliant|
 |CheckId|CA1014|
 |범주|Microsoft.Design|
-|변경 수준|최신이 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 어셈블리에 <xref:System.CLSCompliantAttribute?displayProperty=fullName> 특성이 적용 되지 않았습니다.
@@ -55,7 +55,7 @@ CLS 규격 어셈블리에는 호환 되지 않는 형식 또는 형식 멤버�
 [!code-cpp[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/CPP/ca1014-mark-assemblies-with-clscompliantattribute_1.cpp)]
 [!code-vb[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/VisualBasic/ca1014-mark-assemblies-with-clscompliantattribute_1.vb)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.CLSCompliantAttribute?displayProperty=fullName>
 - [언어 독립성 및 언어 독립적 구성 요소](/dotnet/standard/language-independence-and-language-independent-components)

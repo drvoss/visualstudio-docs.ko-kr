@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ab7cf2c5a4f17966ed5b4da30657e05a4683738
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 3114ea004c425567ae479343e0449d2cbc3aa669
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922643"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235697"
 ---
 # <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047: protected 멤버를 sealed 형식으로 선언하지 마세요.
 
@@ -31,7 +31,7 @@ ms.locfileid: "68922643"
 |TypeName|DoNotDeclareProtectedMembersInSealedTypes|
 |CheckId|CA1047|
 |범주|Microsoft.Design|
-|변경 수준|최신이 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 Public 형식은 `sealed` (`NotInheritable` Visual basic의 경우) 이며 protected 멤버나 protected 중첩 형식을 선언 합니다. 이 규칙은이 패턴을 따라야 <xref:System.Object.Finalize%2A> 하는 메서드에 대 한 위반을 보고 하지 않습니다.

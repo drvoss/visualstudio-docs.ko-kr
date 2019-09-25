@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ffb18316b5f009a0f2854c8a158e528f15c92326
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0d7783bea936b04fcb600563dadea6a65ac5ef5e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923200"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236516"
 ---
 # <a name="ca1007-use-generics-where-appropriate"></a>CA1007: 적합한 제네릭을 사용하세요.
 
@@ -31,7 +31,7 @@ ms.locfileid: "68923200"
 |TypeName|UseGenericsWhereAppropriate|
 |CheckId|CA1007|
 |범주|Microsoft.Design|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 외부에 표시 되는 메서드에는 형식의 <xref:System.Object?displayProperty=fullName>참조 매개 변수 및 포함 하는 어셈블리 대상 .NET Framework 2.0이 포함 됩니다.
@@ -66,5 +66,5 @@ ms.locfileid: "68923200"
 
 [CA1003: 제네릭 이벤트 처리기 인스턴스 사용](../code-quality/ca1003-use-generic-event-handler-instances.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 [제네릭](/dotnet/csharp/programming-guide/generics/index)

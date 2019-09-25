@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c0cd59ec30ce45c94ac3422c4271959d74073bff
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: cf2e30956879c0c61bb57d65b89445962f34959a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920058"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237903"
 ---
 # <a name="ca2239-provide-deserialization-methods-for-optional-fields"></a>CA2239: 선택적 필드에 deserialization 메서드를 제공하세요.
 
@@ -31,7 +31,7 @@ ms.locfileid: "68920058"
 |TypeName|ProvideDeserializationMethodsForOptionalFields|
 |CheckId|CA2239|
 |범주|Microsoft.Usage|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 형식에는 <xref:System.Runtime.Serialization.OptionalFieldAttribute?displayProperty=fullName> 특성으로 표시 되는 필드가 있으며,이 형식은 역직렬화 이벤트 처리 메서드를 제공 하지 않습니다.

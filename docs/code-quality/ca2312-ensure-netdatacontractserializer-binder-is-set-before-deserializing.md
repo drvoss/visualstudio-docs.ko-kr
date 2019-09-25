@@ -13,12 +13,12 @@ ms.workload:
 f1_keywords:
 - CA2312
 - EnsureNetDataContractSerializerBinderIsSetBeforeDeserializing
-ms.openlocfilehash: 38495a3c8d5a2efb5e5e96785cecbd6d50e9cd00
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 03d3e6c4f5e7a3cf4da9f998b75260df522e019f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891115"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237697"
 ---
 # <a name="ca2312-ensure-netdatacontractserializerbinder-is-set-before-deserializing"></a>CA2312: deserialize하기 전에 NetDataContractSerializer.Binder를 설정해야 합니다.
 
@@ -27,7 +27,7 @@ ms.locfileid: "69891115"
 |TypeName|EnsureNetDataContractSerializerBinderIsSetBeforeDeserializing|
 |CheckId|CA2312|
 |범주|Microsoft.Security|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 
@@ -142,7 +142,7 @@ Public Class ExampleClass
 End Class
 ```
 
-### <a name="solution"></a>해결 방법
+### <a name="solution"></a>솔루션
 
 ```csharp
 using System;

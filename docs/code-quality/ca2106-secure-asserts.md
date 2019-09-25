@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df19d31abe88c6d12bafc933ba740badb832eb16
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d4495dcbe951edd3e7eaa3b6ff0d2432bc0a7751
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921068"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232883"
 ---
 # <a name="ca2106-secure-asserts"></a>CA2106: 어설션을 안전하게 보호하세요.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921068"
 |TypeName|SecureAsserts|
 |CheckId|CA2106|
 |범주|Microsoft.Security|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 메서드는 권한을 어설션 하 고 호출자에 대해 보안 검사를 수행 하지 않습니다.
@@ -42,7 +42,7 @@ ms.locfileid: "68921068"
 ## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 신중한 보안 검토 후에만이 규칙에서 경고를 표시 하지 않습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>
 - [보안 코딩 지침](/dotnet/standard/security/secure-coding-guidelines)

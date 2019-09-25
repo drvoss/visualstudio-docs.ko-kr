@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9333f2fb1bff0fdb8a3f0dac8004f66156b8863d
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 5c288764cf9182bc34233d312546f7915eed5975
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870817"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252176"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 확장 스키마 2.0 참조
 VSIX 배포 매니페스트 파일은 VSIX 패키지의 콘텐츠를 설명 합니다. 파일 형식은 스키마의 영향을 받습니다. 이 스키마의 버전 2.0에서는 사용자 지정 형식 및 특성을 추가할 수 있습니다.  매니페스트의 스키마를 확장할 수 있습니다. 매니페스트 로더는 인식할 수 없는 XML 요소와 특성을 무시 합니다.
@@ -219,6 +219,6 @@ VSIX 배포 매니페스트 파일은 VSIX 패키지의 콘텐츠를 설명 합�
 </PackageManifest>
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio 확장 제공](../extensibility/shipping-visual-studio-extensions.md)

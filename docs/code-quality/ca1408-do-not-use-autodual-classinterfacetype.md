@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b79483e8703ea297634d0d81d5449c09b58c9fb7
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: b26d92ca63a94cac7e293a688b1c7b3331586877
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921980"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234788"
 ---
 # <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408: AutoDual ClassInterfaceType을 사용하지 마세요.
 
@@ -31,7 +31,7 @@ ms.locfileid: "68921980"
 |TypeName|DoNotUseAutoDualClassInterfaceType|
 |CheckId|CA1408|
 |범주|Microsoft.Interoperability|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 COM (구성 요소 개체 모델) 표시 형식은 <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> 특성을 `AutoDual` 값 <xref:System.Runtime.InteropServices.ClassInterfaceType>으로 설정 하 여 표시 됩니다.
@@ -58,7 +58,7 @@ COM (구성 요소 개체 모델) 표시 형식은 <xref:System.Runtime.InteropS
 
 [CA1412: ComSource 인터페이스를 IDispatch로 표시](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [상호 운용할 .NET 형식의 정규화](/dotnet/framework/interop/qualifying-net-types-for-interoperation)
 - [비관리 코드와의 상호 운용](/dotnet/framework/interop/index)

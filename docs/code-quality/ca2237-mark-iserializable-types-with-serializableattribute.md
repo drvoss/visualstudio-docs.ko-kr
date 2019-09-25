@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a047ec190652e3559e8bf83fe14834ed95d8a69
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 53d049cad426201a8aaa48662061a4a424116b26
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920107"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237937"
 ---
 # <a name="ca2237-mark-iserializable-types-with-serializableattribute"></a>CA2237: SerializableAttribute로 ISerializable 형식 표시
 
@@ -31,7 +31,7 @@ ms.locfileid: "68920107"
 |TypeName|MarkISerializableTypesWithSerializable|
 |CheckId|CA2237|
 |범주|Microsoft.Usage|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 외부에서 볼 수 있는 형식이 <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> 인터페이스를 구현 하 고 형식이 <xref:System.SerializableAttribute?displayProperty=fullName> 특성으로 표시 되지 않습니다. 규칙은 기본 형식을 serialize 할 수 없는 파생 형식을 무시 합니다.

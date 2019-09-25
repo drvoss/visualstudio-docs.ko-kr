@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a4e04e1afdbecdc9c333ea43a52bff3123d448a
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: be340314afe36f3a930474f345715965f566b2d4
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547626"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235999"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: 비교 가능한 형식에 메서드를 재정의하세요.
 
@@ -28,7 +28,7 @@ ms.locfileid: "69547626"
 |TypeName|OverrideMethodsOnComparableTypes|
 |CheckId|CA1036|
 |범주|Microsoft.Design|
-|변경 수준|최신이 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 
@@ -82,7 +82,7 @@ dotnet_code_quality.ca1036.api_surface = private, internal
 
 [!code-csharp[FxCop.Design.TestIComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_2.cs)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.IComparable?displayProperty=fullName>
 - <xref:System.Object.Equals%2A?displayProperty=fullName>

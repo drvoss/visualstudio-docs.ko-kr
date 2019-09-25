@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6946434708e38bde7f6efcfc8404da14f91b41ee
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: f924e9530a7ee43ec2222366141c3af6be2efc29
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744695"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233605"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: 인스턴스화되지 않은 내부 클래스를 사용하지 마세요.
 
@@ -28,17 +28,17 @@ ms.locfileid: "66744695"
 |TypeName|AvoidUninstantiatedInternalClasses|
 |CheckId|CA1812|
 |범주|Microsoft.Performance|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 
-내부 (어셈블리 수준) 형식은 인스턴스화되지 합니다.
+내부 (어셈블리 수준) 형식은 인스턴스화되지 않습니다.
 
 ## <a name="rule-description"></a>규칙 설명
 
-이 규칙 형식 생성자 중 하나에 대 한 호출을 찾으려고 하 고 호출이 있으면 위반을 보고 합니다.
+이 규칙은 형식의 생성자 중 하나에 대 한 호출을 찾으려고 시도 하 고 호출을 찾을 수 없는 경우 위반을 보고 합니다.
 
-이 규칙에서 다음 형식은 검사 하지 않습니다.
+이 규칙은 다음 형식을 검사 하지 않습니다.
 
 - 값 형식
 
@@ -50,27 +50,27 @@ ms.locfileid: "66744695"
 
 - 컴파일러에서 내보낸 배열 형식
 
-- 인스턴스화할 수 없습니다만 정의 하는 형식 [ `static` ](/dotnet/csharp/language-reference/keywords/static) ([ `Shared` Visual Basic의](/dotnet/visual-basic/language-reference/modifiers/shared)) 메서드.
+- 인스턴스화할 수 없고 ([ `Shared` Visual Basic](/dotnet/visual-basic/language-reference/modifiers/shared)) 메서드만을 정의 [`static`](/dotnet/csharp/language-reference/keywords/static) 하는 형식입니다.
 
-적용 하는 경우는 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> 분석 되는 어셈블리에이 규칙은 플래그 형식으로 표시 된 [ `internal` ](/dotnet/csharp/language-reference/keywords/internal) ([ `Friend` Visual Basic의](/dotnet/visual-basic/language-reference/modifiers/friend)) 필드 일 수 있으므로 friend 어셈블리를 사용합니다.
+분석 중인 어셈블리 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> 에를 적용 하는 경우 friend 어셈블리에서 필드를 사용할 수 있기 때문에이 규칙은 [`internal`](/dotnet/csharp/language-reference/keywords/internal) ([ `Friend` Visual Basic](/dotnet/visual-basic/language-reference/modifiers/friend))로 표시 된 형식에 플래그를 지정 하지 않습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 
-이 규칙 위반 문제를 해결 하 고, 형식을 제거 또는 사용 하는 코드를 추가 합니다. 형식 포함 되 면 `static` 메서드는 다음 중 하나를 컴파일러가 기본 public 인스턴스 생성자를 내보내는 하지 않도록 하려면 형식에 추가 합니다.
+이 규칙 위반 문제를 해결 하려면 형식을 제거 하거나 해당 형식을 사용 하는 코드를 추가 합니다. 형식에 `static` 메서드만 포함 된 경우 다음 중 하나를 형식에 추가 하 여 컴파일러가 기본 public 인스턴스 생성자를 내보내지 않도록 합니다.
 
-- 합니다 `static` 한정자 C# .NET Framework 2.0 이상을 대상으로 하는 형식입니다.
+- .NET Framework 2.0 이상을 C# 대상으로 하는 형식에 대 한 한정자입니다.`static`
 
-- .NET Framework 버전 1.0 및 1.1을 대상으로 하는 형식에 대 한 개인 생성자입니다.
+- .NET Framework 버전 1.0 및 1.1를 대상으로 하는 형식의 전용 생성자입니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 
-이 규칙에서 경고를 표시 하지 않아도 안전 합니다. 다음과 같은 상황에서이 경고를 표시 하는 것이 좋습니다.
+이 규칙에서는 경고를 표시 하지 않는 것이 안전 합니다. 다음과 같은 상황에서는이 경고를 표시 하지 않는 것이 좋습니다.
 
-- 클래스가 만들어질 바인딩된 리플렉션 메서드를 통해 같은 <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>합니다.
+- 클래스는와 <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>같은 런타임에 바인딩된 리플렉션 메서드를 통해 만들어집니다.
 
-- 클래스는 런타임 또는 ASP.NET에 의해 자동으로 생성 됩니다. 자동으로 생성된 된 클래스의 예로 구현 하는 <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> 또는 <xref:System.Web.IHttpHandler?displayProperty=fullName>합니다.
+- 클래스는 런타임 또는 ASP.NET에서 자동으로 생성 됩니다. 자동으로 생성 된 클래스의 몇 가지 예는 <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> 또는 <xref:System.Web.IHttpHandler?displayProperty=fullName>를 구현 하는 클래스입니다.
 
-- 클래스는 형식 매개 변수로 전달 되는 [ `new` 제약 조건](/dotnet/csharp/language-reference/keywords/new-constraint)합니다. 다음 예제에서는 규칙 CA1812로 플래그가 지정 됩니다.
+- 클래스는 [ `new` 제약 조건이](/dotnet/csharp/language-reference/keywords/new-constraint)있는 형식 매개 변수로 전달 됩니다. 다음 예는 rule CA1812 플래그가 지정 됩니다.
 
     ```csharp
     internal class MyClass
@@ -91,8 +91,8 @@ ms.locfileid: "66744695"
     mc.Create();
     ```
 
-## <a name="related-rules"></a>관련된 규칙
+## <a name="related-rules"></a>관련 규칙
 
-- [CA1811: 호출 되지 않는 전용 코드를 방지 합니다.](../code-quality/ca1811-avoid-uncalled-private-code.md)
-- [CA1801: 사용 되지 않는 매개 변수를 검토](../code-quality/ca1801-review-unused-parameters.md)
-- [CA1804: 사용 되지 않는 로컬 항목을 제거](../code-quality/ca1804-remove-unused-locals.md)
+- [CA1811: 호출 되지 않는 private 코드 방지](../code-quality/ca1811-avoid-uncalled-private-code.md)
+- [CA1801: 사용 하지 않는 매개 변수 검토](../code-quality/ca1801-review-unused-parameters.md)
+- [CA1804: 사용 하지 않는 지역 제거](../code-quality/ca1804-remove-unused-locals.md)

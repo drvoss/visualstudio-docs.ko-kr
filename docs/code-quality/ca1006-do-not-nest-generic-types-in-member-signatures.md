@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 20bee606fd8cd98482a7304e068aaa7cbd5773a7
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 45ff4831875150df02d04553e75cebcab9a9f572
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923236"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236502"
 ---
 # <a name="ca1006-do-not-nest-generic-types-in-member-signatures"></a>CA1006: 멤버 시그니처에 제네릭 형식을 중첩하지 마세요.
 
@@ -31,7 +31,7 @@ ms.locfileid: "68923236"
 |TypeName|DoNotNestGenericTypesInMemberSignatures|
 |CheckId|CA1006|
 |범주|Microsoft.Design|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 외부에 노출 되는 멤버에는 중첩 된 형식 인수를 포함 하는 시그니처가 있습니다.
@@ -66,5 +66,5 @@ ms.locfileid: "68923236"
 
 [CA1007: 적절 한 경우 제네릭을 사용 합니다.](../code-quality/ca1007-use-generics-where-appropriate.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 [제네릭](/dotnet/csharp/programming-guide/generics/index)

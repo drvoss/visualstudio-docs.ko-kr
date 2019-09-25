@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 478efc77bd1fb14f6241e026cfe280355a90746a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 27570e282c230d4bec47e70aa1bcdd053b75597c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919453"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236754"
 ---
 # <a name="best-practices-and-examples-sal"></a>모범 사례 및 예제(SAL)
 SAL(Source Code Annotation Language)을 최대한 활용하고 몇 가지 일반적인 문제를 방지하는 방법은 다음과 같습니다.
@@ -236,13 +236,13 @@ _Ret_maybenull_ void *MightReturnNullPtr2();
 
 이 예제에서 `_Out_opt_`는 포인터가 사전 조건의 일부로 NULL일 수 있는 것으로 지정합니다. 하지만 사전 조건은 반환 값에 적용할 수 없습니다. 이 경우에 올바른 주석은 `_Ret_maybenull_`입니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[C/C++ 코드 오류](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
-를 줄이기 위해 sal 주석을 사용 하 여[sal](../code-quality/understanding-sal.md)
-이해[함수 매개 변수 및 반환 값](../code-quality/annotating-function-parameters-and-return-values.md)
-[주석 함수 동작](../code-quality/annotating-function-behavior.md) 
-에주석달기 [구조체 및 클래스](../code-quality/annotating-structs-and-classes.md)
-주석 달기 주석이
-[내장 함수](../code-quality/intrinsic-functions.md) [를 적용 하는 시기와 위치를 지정 하는](../code-quality/specifying-when-and-where-an-annotation-applies.md)[잠금 동작](../code-quality/annotating-locking-behavior.md)
-에 주석 지정
+[C/C++ 코드 오류를 줄이기 위한 SAL 주석 사용](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)  
+[SAL 이해](../code-quality/understanding-sal.md)  
+[함수 매개 변수 및 반환 값에 주석 지정](../code-quality/annotating-function-parameters-and-return-values.md)  
+[함수 동작에 주석 지정](../code-quality/annotating-function-behavior.md)  
+[구조체 및 클래스에 주석 지정](../code-quality/annotating-structs-and-classes.md)  
+[잠금 동작에 주석 지정](../code-quality/annotating-locking-behavior.md)  
+[주석 적용 시기 및 위치 지정](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
+[내장 함수](../code-quality/intrinsic-functions.md)  

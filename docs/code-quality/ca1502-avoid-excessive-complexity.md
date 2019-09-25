@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e968cef6491e1c24d98e5f64248b5104db8c5b65
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4f26faf16cc8a9a8235596aef68e5af5c3b4401e
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797398"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253298"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: 지나치게 복잡하게 만들지 마세요.
 
@@ -32,45 +32,45 @@ ms.locfileid: "62797398"
 |TypeName|AvoidExcessiveComplexity|
 |CheckId|CA1502|
 |범주|Microsoft.Maintainability|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 
-메서드는 과도 한 순환 복잡성을 있습니다.
+메서드에 과도 한 순환 복잡성이 있습니다.
 
 ## <a name="rule-description"></a>규칙 설명
 
-*순환 복잡성* 수와 조건부 분기의 복잡성에 따라 결정 되는 메서드를 통해 선형 독립 경로의 수를 측정 합니다. 일반적으로 낮은 순환 복잡성을 이해 하 고, 테스트 및 유지 관리 하기 쉬운 메서드를 나타냅니다. 순환 복잡성 메서드의 제어 흐름 그래프에서 계산 되 고 다음과 같이 지정 됩니다.
+*순환 복잡성* 은 조건부 분기의 수와 복잡성에 따라 결정 되는 메서드를 통해 선형 독립적 경로의 수를 측정 합니다. 일반적으로 낮은 순환 복잡성은 이해, 테스트 및 유지 관리가 쉬운 방법을 나타냅니다. 순환 복잡성은 메서드의 제어 흐름 그래프에서 계산 되며 다음과 같이 제공 됩니다.
 
-순환 복잡성 = 노드의 수 + 1-에 지 수
+순환 복잡성 = 가장자리 수-노드 수 + 1
 
-A *노드* 논리 분기 지점을 나타내는 *edge* 노드 사이 선을 나타냅니다.
+*노드* 는 논리 분기를 나타내며 *가장자리* 는 노드 사이의 선을 나타냅니다.
 
-순환 복잡성 25 개가 넘는 경우 규칙 위반을 보고 합니다.
+이 규칙은 순환 복잡성이 25 이상일 때 위반을 보고 합니다.
 
-코드 메트릭에 대 한 자세히 알아볼 수 있습니다 [관리 되는 코드의 복잡성을 측정](../code-quality/code-metrics-values.md)합니다.
+[관리 코드의 복잡성을 측정](../code-quality/code-metrics-values.md)하 여 코드 메트릭에 대해 자세히 알아볼 수 있습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 
-이 규칙 위반 문제를 해결 하려면 순환 복잡성을 줄이기 위해 메서드를 리팩터링 합니다.
+이 규칙 위반 문제를 해결 하려면 메서드를 리팩터링하여 순환 복잡성을 줄입니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 
-복잡성을 쉽게 줄일 수 없고 및 메서드 이해, 테스트 및 유지 관리 하기 쉽습니다.이 규칙에서 경고 표시 하지 않아도 안전 합니다. 특히 많이 포함 된 메서드 `switch` (`Select` 에서 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 문을 제외에 대 한 후보입니다. 기본 개발 주기 또는 런타임 동작 이전에 제공 된 코드에서 예기치 않게 변경의 지연 될 수 있습니다 유지 관리의 이점을 능가 하는 코드를 리팩터링 하는 코드를 불안정의 위험이 있습니다.
+복잡성을 쉽게 줄이고 메서드를 이해, 테스트 및 유지 관리할 수 있는 경우에는이 규칙에서 경고를 표시 하지 않는 것이 안전 합니다. 특히, large `switch` (`Select` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 문을 포함 하는 메서드는 제외의 후보입니다. 코드 베이스를 개발 주기에서 늦게 불안정 하거나 이전에 제공 된 코드에서 예기치 않은 런타임 동작이 발생 하는 위험이 코드를 리팩터링할 때의 유지 관리 이점 보다 클 수 있습니다.
 
-## <a name="how-cyclomatic-complexity-is-calculated"></a>순환 복잡성 계산 되는 방법
+## <a name="how-cyclomatic-complexity-is-calculated"></a>순환 복잡성을 계산 하는 방법
 
-순환 복잡성 다음과 1을 더하여 계산 됩니다.
+순환 복잡성은 다음에 1을 더하여 계산 됩니다.
 
-- 분기 수 (같은 `if`, `while`, 및 `do`)
+- 분기 수 (예: `if`, `while`및 `do`)
 
-- 수가 `case` 문에서 `switch`
+- `case` 의 문 수`switch`
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 다양 한 순환 복잡성을 가진 메서드를 보여 줍니다.
+다음 예제에서는 다양 한 순환 복잡성이 있는 메서드를 보여 줍니다.
 
-**1의 순환 복잡성**
+**순환 복잡성 1**
 
 [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_1.cpp)]
 [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_1.vb)]
@@ -78,7 +78,7 @@ A *노드* 논리 분기 지점을 나타내는 *edge* 노드 사이 선을 나�
 
 ## <a name="example"></a>예제
 
-**2의 순환 복잡성**
+**순환 복잡성 2**
 
 [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#2](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_2.cpp)]
 [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#2](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_2.vb)]
@@ -86,7 +86,7 @@ A *노드* 논리 분기 지점을 나타내는 *edge* 노드 사이 선을 나�
 
 ## <a name="example"></a>예제
 
-**3의 순환 복잡성**
+**순환 복잡성 3**
 
 [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#3](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_3.cpp)]
 [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#3](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_3.vb)]
@@ -94,16 +94,16 @@ A *노드* 논리 분기 지점을 나타내는 *edge* 노드 사이 선을 나�
 
 ## <a name="example"></a>예제
 
-**8의 순환 복잡성**
+**순환 복잡성 8**
 
 [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_4.cpp)]
 [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_4.vb)]
 [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_4.cs)]
 
-## <a name="related-rules"></a>관련된 규칙
+## <a name="related-rules"></a>관련 규칙
 
-[CA1501: 과도 한 상속을 방지](../code-quality/ca1501-avoid-excessive-inheritance.md)
+[CA1501: 과도 한 상속 방지](../code-quality/ca1501-avoid-excessive-inheritance.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [관리 코드의 복잡성 및 유지 관리 용이성 측정](../code-quality/code-metrics-values.md)

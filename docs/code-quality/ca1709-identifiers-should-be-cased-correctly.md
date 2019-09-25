@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 864918b7ce394e9f096c6fa9dea9389957983177
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9ff614d9fdc4b250bd91abf24908b33d71a182df
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921771"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234158"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: 식별자는 정확한 대/소문자를 사용해야 합니다.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921771"
 |TypeName|IdentifiersShouldBeCasedCorrectly|
 |CheckId|CA1709|
 |범주|Microsoft.Naming|
-|변경 수준|중단-어셈블리, 네임 스페이스, 형식, 멤버 및 매개 변수에 대해 발생 합니다.<br /><br /> 일반 형식 매개 변수에 대해 발생 하는 경우에는 중단 되지 않습니다.|
+|주요 변경 내용|중단-어셈블리, 네임 스페이스, 형식, 멤버 및 매개 변수에 대해 발생 합니다.<br /><br /> 일반 형식 매개 변수에 대해 발생 하는 경우에는 중단 되지 않습니다.|
 
 ## <a name="cause"></a>원인
 

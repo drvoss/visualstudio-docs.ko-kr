@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c8837c1c95dc5f032a10773645f93a46ec29662
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 3cef71cc5f6c4e25d04e6045be7059d81c06b484
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551215"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254936"
 ---
 # <a name="word-solutions"></a>Word 솔루션
   Visual Studio에서는 Microsoft Office Word용 VSTO 추가 기능 및 문서 수준 사용자 지정을 만드는 데 사용할 수 있는 프로젝트 템플릿을 제공합니다. 이러한 솔루션을 사용하여 Word를 자동화하고, Word 기능을 확장한 다음 Word UI(사용자 인터페이스)를 사용자 지정할 수 있습니다. 문서 수준 사용자 지정과 VSTO 추가 기능 간의 차이점에 대 한 자세한 내용은 [Office 솔루션 개발 &#40;개요 VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)를 참조 하세요.
@@ -85,7 +85,7 @@ ms.locfileid: "69551215"
 ### <a name="options-for-all-project-types"></a>모든 프로젝트 형식에 대 한 옵션
  다음 표에서는 문서 수준 사용자 지정과 VSTO 추가 기능에서 모두 사용할 수 있는 사용자 지정 옵션을 보여 줍니다.
 
-|태스크|자세한 내용은 다음을 참조하세요.|
+|작업|추가 정보|
 |----------|--------------------------|
 |리본 메뉴 사용자 지정|[리본 개요](../vsto/ribbon-overview.md)|
 |문서 수준 사용자 지정에 대한 사용자 지정 문서 또는 VSTO 추가 기능에 대한 열려 있는 문서에 Windows Forms 컨트롤 또는 확장된 Word 컨트롤 추가|[방법: Office 문서에 Windows Forms 컨트롤 추가](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [방법: Word 문서에 콘텐츠 컨트롤 추가](../vsto/how-to-add-content-controls-to-word-documents.md)<br /><br /> [방법: Word 문서에 책갈피 컨트롤 추가](../vsto/how-to-add-bookmark-controls-to-word-documents.md)|
@@ -93,7 +93,7 @@ ms.locfileid: "69551215"
 ### <a name="options-for-document-level-customizations"></a>문서 수준 사용자 지정 옵션
  다음 표에서는 문서 수준 사용자 지정에만 사용할 수 있는 사용자 지정 옵션을 보여 줍니다.
 
-|태스크|자세한 내용은 다음을 참조하세요.|
+|작업|추가 정보|
 |----------|--------------------------|
 |문서에 작업 창 추가|[작업 창 개요](../vsto/actions-pane-overview.md)<br /><br /> [방법: Word 문서 또는 Excel 통합 문서에 작업 창 추가](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|
 |확장된 XMLNode 및 XMLNodes 컨트롤을 문서 화면에 추가합니다.|[방법: Word 문서에 XMLNode 컨트롤 추가](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)<br /><br /> [방법: Word 문서에 XMLNodes 컨트롤 추가](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)|
@@ -101,7 +101,7 @@ ms.locfileid: "69551215"
 ### <a name="options-for-vsto-add-ins"></a>VSTO 추가 기능에 대한 옵션
  다음 표에서는 VSTO 추가 기능에만 사용할 수 있는 사용자 지정 옵션을 보여 줍니다.
 
-|태스크|추가 정보|
+|작업|추가 정보|
 |----------|--------------------------|
 |사용자 지정 작업창을 만듭니다.|[사용자 지정 작업 창](../vsto/custom-task-panes.md)|
 
@@ -114,5 +114,5 @@ ms.locfileid: "69551215"
 |[Office 문서에 대 한 Windows Forms 컨트롤 개요](../vsto/windows-forms-controls-on-office-documents-overview.md)|Word 문서에 Windows Forms 컨트롤을 추가할 수 있는 방법을 설명합니다.|
 |[연습: Word 용 첫 문서 수준 사용자 지정 만들기](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)|Word용 기본 문서 수준 사용자 지정을 만드는 방법을 보여 줍니다.|
 |[연습: Word 용 첫 VSTO 추가 기능 만들기](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)|Word용 기본 VSTO 추가 기능을 만드는 방법을 보여 줍니다.|
-|[연습: VSTO 추가 기능에서 런타임에 문서에 컨트롤 추가](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)|VSTO 추가 기능을 사용하여 런타임에 Windows Forms 단추 및 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 을 문서에 추가하는 방법을 설명합니다.|
+|[연습: 런타임에 VSTO 추가 기능의 문서에 컨트롤 추가](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)|VSTO 추가 기능을 사용하여 런타임에 Windows Forms 단추 및 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 을 문서에 추가하는 방법을 설명합니다.|
 |[Office 개발의 Word 2010](http://go.microsoft.com/fwlink/?LinkId=199020)|Visual Studio를 사용한 Office 개발에 국한되지 않고 Word 솔루션을 개발하는 방법에 대한 문서와 참조 설명서에 대한 링크를 제공합니다.|

@@ -17,12 +17,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 942a9911d0dadbf5f130344735ca9aa504cb71fd
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 85d168e97f422a3965096a334cb2a448406604f9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921590"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233837"
 ---
 # <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800: 불필요하게 캐스트하지 마세요.
 
@@ -31,7 +31,7 @@ ms.locfileid: "68921590"
 |TypeName|DoNotCastUnnecessarily|
 |CheckId|CA1800|
 |범주|Microsoft.Performance|
-|변경 수준|최신이 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 메서드는 해당 인수 또는 지역 변수 중 하나에 대해 중복 캐스트를 수행 합니다.
@@ -59,7 +59,7 @@ ms.locfileid: "68921590"
 [!code-vb[FxCop.Performance.UnnecessaryCasts#1](../code-quality/codesnippet/VisualBasic/ca1800-do-not-cast-unnecessarily_2.vb)]
 [!code-csharp[FxCop.Performance.UnnecessaryCasts#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_2.cs)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [as (C# 참조)](/dotnet/csharp/language-reference/keywords/as)
 - [is (C# 참조)](/dotnet/csharp/language-reference/keywords/is)

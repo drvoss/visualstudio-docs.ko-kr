@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/19/2019
 ms.author: ghogen
-ms.openlocfilehash: 900e677ce670c49036ea6d76596ff509129ce979
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 722c816329c70bb2efad03f9554e201bcc9fde16
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62572823"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253468"
 ---
 # <a name="create-an-azure-cloud-service-project-with-visual-studio"></a>Visual Studio를 사용하여 Azure 클라우드 서비스 프로젝트 만들기
 
@@ -60,7 +60,7 @@ Azure Tools for Visual Studio는 [Azure 클라우드 서비스](/azure/cloud-ser
 
 Visual Studio Azure 프로젝트에는 솔루션의 역할 프로젝트에 대한 연결이 있습니다. 또한 *서비스 정의 파일* 및 *서비스 구성 파일*도 포함됩니다.
 
-- **서비스 정의 파일** - 필요한 역할, 엔드포인트 및 가상 머신 크기를 포함하여 애플리케이션에 대한 런타임 설정을 정의합니다.
+- **서비스 정의 파일** -필요한 역할, 끝점 및 가상 컴퓨터 크기를 포함 하 여 응용 프로그램에 대 한 런타임 설정을 정의 합니다.
 - **서비스 구성 파일** - 얼마나 많은 역할의 인스턴스가 실행되는지와 역할에 대해 정의된 설정의 값을 구성합니다.
 
 이러한 파일에 대한 자세한 내용은 [Visual Studio에서 Azure 클라우드 서비스에 대한 역할 구성](vs-azure-tools-configure-roles-for-cloud-service.md)을 참조하세요.

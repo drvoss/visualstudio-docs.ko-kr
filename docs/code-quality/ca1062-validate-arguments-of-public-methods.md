@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3868061a01572d0b1adadec6619f88269d353dff
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8106a4c0244cbd79e88a2bdc50e04ea74627dab4
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922432"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235332"
 ---
 # <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062: public 메서드의 인수에 대한 유효성을 검사하세요.
 
@@ -31,7 +31,7 @@ ms.locfileid: "68922432"
 |TypeName|ValidateArgumentsOfPublicMethods|
 |CheckId|CA1062|
 |범주|Microsoft.Design|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 

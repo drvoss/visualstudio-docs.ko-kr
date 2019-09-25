@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fafa4782762e18f1ced8c7f929720e995986ac7a
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: b5826633737c3bb7d8f358ff090f0b1a55ac8eef
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69546873"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231049"
 ---
 # <a name="ca2231-overload-operator-equals-on-overriding-valuetypeequals"></a>CA2231: ValueType.Equals를 재정의할 때 같음 연산자를 오버로드하십시오.
 
@@ -32,7 +32,7 @@ ms.locfileid: "69546873"
 |TypeName|OverloadOperatorEqualsOnOverridingValueTypeEquals|
 |CheckId|CA2231|
 |범주|Microsoft.Usage|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 
@@ -44,7 +44,7 @@ ms.locfileid: "69546873"
 
 대부분의 프로그래밍 언어에는 값 형식에 대 한 같음 연산자 (= =)의 기본 구현이 없습니다. 프로그래밍 언어가 연산자 오버 로드를 지 원하는 경우 같음 연산자를 구현 하는 것을 고려해 야 합니다. 해당 동작은의 <xref:System.Object.Equals%2A>동작과 동일 해야 합니다.
 
-같음 연산자의 오버 로드 된 구현에서는 기본 같음 연산자를 사용할 수 없습니다. 이렇게 하면 스택 오버플로가 발생 합니다. 같음 연산자를 구현 하려면 구현에서 개체. Equals 메서드를 사용 합니다. 예를 들어:
+같음 연산자의 오버 로드 된 구현에서는 기본 같음 연산자를 사용할 수 없습니다. 이렇게 하면 스택 오버플로가 발생 합니다. 같음 연산자를 구현 하려면 구현에서 개체. Equals 메서드를 사용 합니다. 예:
 
 ```vb
 If (Object.ReferenceEquals(left, Nothing)) Then
@@ -92,6 +92,6 @@ dotnet_code_quality.ca2231.api_surface = private, internal
 - [CA2224: 오버 로드 연산자 equals에 대 한 Override equals](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 - [CA2218: Equals를 재정의할 때 GetHashCode 재정의](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>

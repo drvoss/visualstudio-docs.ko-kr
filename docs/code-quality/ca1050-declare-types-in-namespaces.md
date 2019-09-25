@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 869ff99243349ae01c63da0a7d9e6544761cbd39
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8127c68cfe7eb541b8adea8affad99027e0c1fe7
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922507"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235748"
 ---
 # <a name="ca1050-declare-types-in-namespaces"></a>CA1050: 네임스페이스에 형식을 선언하세요.
 
@@ -31,7 +31,7 @@ ms.locfileid: "68922507"
 |TypeName|DeclareTypesInNamespaces|
 |CheckId|CA1050|
 |범주|Microsoft.Design|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 Public 또는 protected 형식은 명명 된 네임 스페이스의 범위 밖에 서 정의 됩니다.

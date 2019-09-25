@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 08a45219eb2fceeaa9c58a140990ea577c941ff7
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: f788ded21ef5dd9c84d218cedb55ec8dcf7eff2d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923029"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236173"
 ---
 # <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023: 다차원 인덱서를 사용하지 마세요.
 
@@ -32,7 +32,7 @@ ms.locfileid: "68923029"
 |TypeName|IndexersShouldNotBeMultidimensional|
 |CheckId|CA1023|
 |범주|Microsoft.Design|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 Public 또는 protected 형식이 둘 이상의 인덱스를 사용 하는 공용 또는 보호 된 인덱서를 포함 합니다.

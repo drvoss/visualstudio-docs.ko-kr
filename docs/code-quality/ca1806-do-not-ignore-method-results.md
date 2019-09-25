@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 - VB
 manager: jillfra
-ms.openlocfilehash: 2e68fb6b4c40c165a09ae2631a2ad0a64bf52fbc
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 2bf4833aebdb6a92b9bd05294dd314dc2967738e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921551"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233683"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806: 메서드 결과를 무시하지 마세요.
 
@@ -30,7 +30,7 @@ ms.locfileid: "68921551"
 |TypeName|DoNotIgnoreMethodResults|
 |CheckId|CA1806|
 |범주|Microsoft.Usage|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 

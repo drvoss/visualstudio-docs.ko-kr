@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a4b80b8ede1ab2b8d858ed7378f318f2eebe5fa
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 1d001dc306bbb225c4ecc1c0f17bf46619e2d0a7
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841530"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237256"
 ---
 # <a name="ca3008-review-code-for-xpath-injection-vulnerabilities"></a>CA3008: 코드에서 XPath 삽입 취약성에 대해 검토합니다.
 
@@ -24,37 +24,37 @@ ms.locfileid: "65841530"
 |TypeName|ReviewCodeForXPathInjectionVulnerabilities|
 |CheckId|CA3008|
 |범주|Microsoft.Security|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 
-신뢰할 수 없는 HTTP 요청 입력 XPath 쿼리에 도달합니다.
+잠재적으로 신뢰할 수 없는 HTTP 요청 입력은 XPath 쿼리에 도달 합니다.
 
 ## <a name="rule-description"></a>규칙 설명
 
-신뢰할 수 없는 입력에서 작업할 때 XPath 주입 공격에 주의 해야 합니다. 신뢰할 수 없는 입력을 사용 하 여 XPath 쿼리를 구성할 공격자가 악의적 의도 하지 않은 결과 반환 하도록 쿼리를 조작 하 고 가능한 쿼리 XML의 콘텐츠를 공개할 수 있습니다.
+신뢰할 수 없는 입력으로 작업할 때는 XPath 삽입 공격에 유의 해야 합니다. 신뢰할 수 없는 입력을 사용 하 여 XPath 쿼리를 생성 하면 공격자가 쿼리를 악의적으로 조작 하 여 의도 하지 않은 결과를 반환 하 고 쿼리 된 XML의 콘텐츠를 공개할 수 있습니다.
 
-이 규칙은 입력 XPath 식에 도달 하는 HTTP 요청을 찾으려고 합니다.
-
-> [!NOTE]
-> 이 규칙은 어셈블리 간에 데이터를 추적할 수 없습니다. 예를 들어, 하나의 어셈블리 HTTP 요청 입력을 읽고 하 다음 XPath 쿼리를 수행 하는 다른 어셈블리에 전달 하는 경우이 규칙 경고를 생성 하지 않습니다.
+이 규칙은 XPath 식에 도달 하는 HTTP 요청에서 입력을 찾으려고 시도 합니다.
 
 > [!NOTE]
-> 이 규칙 메서드 호출에서 데이터 흐름은 분석 깊이에 구성할 수 있는 제한이 있습니다. 참조 [분석기 구성](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) EditorConfig 파일에 제한을 구성 하는 방법에 대 한 합니다.
+> 이 규칙은 어셈블리 간에 데이터를 추적할 수 없습니다. 예를 들어 한 어셈블리가 HTTP 요청 입력을 읽은 다음 XPath 쿼리를 수행 하는 다른 어셈블리에 전달 하는 경우이 규칙은 경고를 생성 하지 않습니다.
+
+> [!NOTE]
+> 이 규칙에서 메서드 호출을 통해 데이터 흐름을 분석 하는 데 구성 가능한 제한이 있습니다. EditorConfig 파일에서 제한을 구성 하는 방법에 대 한 [Analyzer 구성](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) 을 참조 하세요.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 
-XPath 주입 취약점을 해결 방법 몇 가지는 다음과 같습니다.
+XPath 삽입 취약점을 해결 하는 몇 가지 방법은 다음과 같습니다.
 
-- 사용자 입력에서 XPath 쿼리를 생성 하지 마십시오.
-- 입력 문자 집합을 안전 하 게만 포함 되어 있는지 확인 합니다.
-- 따옴표를 이스케이프 합니다.
+- 사용자 입력에서 XPath 쿼리를 생성 하지 않습니다.
+- 입력에 안전한 문자 집합만 포함 되어 있는지 확인 합니다.
+- 이스케이프 따옴표.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 
-안전에 대 한 입력을 확인 했으면를 알고 있으면이 경고를 표시 하지 않아도 괜찮습니다.
+안전 하 게 입력 된 입력의 유효성을 확인 한 경우이 경고를 표시 하지 않아도 됩니다.
 
-## <a name="pseudo-code-examples"></a>의사 (pseudo) 코드 예제
+## <a name="pseudo-code-examples"></a>의사 코드 예제
 
 ### <a name="violation"></a>위반
 

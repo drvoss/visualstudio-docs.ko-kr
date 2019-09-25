@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 383011e53b14ec2cc7dd7474cd050f05295a2a73
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 6bcf32401abdeae499097bc5187d11154e7dfc6e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841459"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237412"
 ---
 # <a name="ca3002-review-code-for-xss-vulnerabilities"></a>CA3002: 코드에서 XSS 취약점에 대해 검토합니다.
 
@@ -24,39 +24,39 @@ ms.locfileid: "65841459"
 |TypeName|ReviewCodeForXssVulnerabilities|
 |CheckId|CA3002|
 |범주|Microsoft.Security|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 
-신뢰할 수 없는 HTTP 요청 입력 원시 HTML 출력에 도달합니다.
+잠재적으로 신뢰할 수 없는 HTTP 요청 입력이 원시 HTML 출력에 도달 합니다.
 
 ## <a name="rule-description"></a>규칙 설명
 
-웹 요청에서 신뢰할 수 없는 입력을 사용 하는 경우 사이트 간 스크립팅 (XSS) 공격에 주의 해야 합니다. XSS 공격이 공격자가 악성 스크립트를 실행 하거나 악의적으로 웹 페이지의 콘텐츠를 수정할 수 있도록 원시 HTML 출력에 신뢰할 수 없는 입력을 삽입 합니다. 배치 하는 일반적인 기술 `<script>` 입력에 악성 코드를 사용 하 여 요소입니다. 자세한 내용은 [OWASP의 XSS](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS))합니다.
+웹 요청에서 신뢰할 수 없는 입력으로 작업할 때는 XSS (사이트 간 스크립팅) 공격에 주의 해야 합니다. XSS 공격은 신뢰할 수 없는 입력을 원시 HTML 출력에 삽입 하 여 공격자가 악의적인 스크립트를 실행 하거나 웹 페이지의 콘텐츠를 악의적으로 수정할 수 있도록 합니다. 일반적인 방법은 입력에서 악의적인 `<script>` 코드를 사용 하 여 요소를 배치 하는 것입니다. 자세한 내용은 [OWASP의 XSS](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS))를 참조 하세요.
 
-이 규칙은 입력 원시 HTML 출력에 도달 하는 HTTP 요청을 찾으려고 합니다.
-
-> [!NOTE]
-> 이 규칙은 어셈블리 간에 데이터를 추적할 수 없습니다. 예를 들어, 하나의 어셈블리 HTTP 요청 입력을 읽고 하 다음 원시 HTML을 출력 하는 다른 어셈블리에 전달 하는 경우이 규칙 경고를 생성 하지 않습니다.
+이 규칙은 원시 HTML 출력에 도달 하는 HTTP 요청에서 입력을 찾으려고 시도 합니다.
 
 > [!NOTE]
-> 이 규칙 메서드 호출에서 데이터 흐름은 분석 깊이에 구성할 수 있는 제한이 있습니다. 참조 [분석기 구성](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) EditorConfig 파일에 제한을 구성 하는 방법에 대 한 합니다.
+> 이 규칙은 어셈블리 간에 데이터를 추적할 수 없습니다. 예를 들어 한 어셈블리가 HTTP 요청 입력을 읽은 다음 원시 HTML을 출력 하는 다른 어셈블리에 전달 하는 경우이 규칙은 경고를 생성 하지 않습니다.
+
+> [!NOTE]
+> 이 규칙에서 메서드 호출을 통해 데이터 흐름을 분석 하는 데 구성 가능한 제한이 있습니다. EditorConfig 파일에서 제한을 구성 하는 방법에 대 한 [Analyzer 구성](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) 을 참조 하세요.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 
-- 원시 HTML 출력을 대신 사용 하 여 메서드 또는 속성을 해당 첫 번째 HTML로 인코딩하여 해당 입력 합니다.
-- 원시 HTML을 출력 하기 전에 HTML 인코딩해야 신뢰할 수 없는 데이터입니다.
+- 원시 HTML을 출력 하는 대신 입력을 먼저 HTML로 인코딩하는 메서드나 속성을 사용 합니다.
+- 원시 HTML을 출력 하기 전에 신뢰할 수 없는 데이터를 HTML로 인코딩합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 
-하는 경우이 규칙에서 경고를 표시 하지 않아도 안전 합니다.
-- 입력의 유효성을 검사 알려진된 안전한 HTML을 포함 하지 않는 문자 집합이 있는지 알 수 있습니다.
-- 이 규칙에 의해 검색 되지 방식으로 HTML로 인코딩된 데이터가 알 수 있습니다.
+다음 경우에는이 규칙에서 경고를 표시 하지 않는 것이 안전 합니다.
+- HTML을 포함 하지 않는 알려진 안전한 문자 집합에 대해 입력의 유효성을 검사 하는 것을 알고 있습니다.
+- 데이터는이 규칙에 의해 검색 되지 않는 방식으로 HTML로 인코딩됩니다.
 
 > [!NOTE]
-> 이 규칙 보고할 수 있습니다 거짓 긍정 일부 메서드 또는 속성에 대 한 해당 HTML 인코딩할 입력 합니다.
+> 이 규칙은 입력을 HTML로 인코딩하는 일부 메서드나 속성에 대해 가양성을 보고할 수 있습니다.
 
-## <a name="pseudo-code-examples"></a>의사 (pseudo) 코드 예제
+## <a name="pseudo-code-examples"></a>의사 코드 예제
 
 ### <a name="violation"></a>위반
 

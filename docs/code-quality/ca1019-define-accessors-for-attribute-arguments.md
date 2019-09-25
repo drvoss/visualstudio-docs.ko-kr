@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8422427997db291aa24bc8a8bacfdc59abe35998
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5cb5631da1bcf455874d459a69216b45062a5754
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923068"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236216"
 ---
 # <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019: 특성 인수의 접근자를 정의하세요.
 
@@ -31,7 +31,7 @@ ms.locfileid: "68923068"
 |TypeName|DefineAccessorsForAttributeArguments|
 |CheckId|CA1019|
 |범주|Microsoft.Design|
-|변경 수준|최신이 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 해당 생성자에서 특성은 해당 속성이 없는 인수를 정의 합니다.
@@ -71,5 +71,5 @@ ms.locfileid: "68923068"
 ## <a name="related-rules"></a>관련 규칙
 [CA1813: 봉인 되지 않은 특성 방지](../code-quality/ca1813-avoid-unsealed-attributes.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 [특성](/dotnet/standard/design-guidelines/attributes)

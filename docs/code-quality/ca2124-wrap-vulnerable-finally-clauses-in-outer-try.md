@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c75c7c240f694b18caacefc0f9b1ee07f54faf36
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0008767f7d37e2c088dad58a328b025f81090ad8
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920796"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232444"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: 취약한 finally 절을 외부 try에 래핑하십시오.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68920796"
 |TypeName|WrapVulnerableFinallyClausesInOuterTry|
 |CheckId|CA2124|
 |범주|Microsoft.Security|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 .NET Framework 버전 1.0 및 1.1에서는 공용 또는 보호 된 `try` 메서드에 `finally` 블록이 포함 되어 있습니다 /. `catch` / 블록이 보안 상태를 다시 설정 하는 것으로 표시 되 고 `finally` 블록에 포함 되지 않습니다. `finally`
@@ -47,7 +47,7 @@ ms.locfileid: "68920796"
 
 ## <a name="pseudo-code-example"></a>의사 코드 예제
 
-### <a name="description"></a>Description
+### <a name="description"></a>설명
 
 다음 의사 코드에서는 이 규칙에 의해 검색되는 패턴을 보여 줍니다.
 

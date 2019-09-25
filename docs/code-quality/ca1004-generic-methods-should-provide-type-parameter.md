@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a09d06a521c4751e3aea78b72b99a8126f4e7ff
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: f4c5f9c001505a76f19f2d675d552124c611f3d5
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923241"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236621"
 ---
 # <a name="ca1004-generic-methods-should-provide-type-parameter"></a>CA1004: 제네릭 메서드는 형식 매개 변수를 제공해야 합니다.
 
@@ -31,7 +31,7 @@ ms.locfileid: "68923241"
 |TypeName|GenericMethodsShouldProvideTypeParameter|
 |CheckId|CA1004|
 |범주|Microsoft.Design|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 외부에서 볼 수 있는 제네릭 메서드의 매개 변수 시그니처에는 메서드의 모든 형식 매개 변수에 해당 하는 형식이 포함 되어 있지 않습니다.
@@ -66,5 +66,5 @@ ms.locfileid: "68923241"
 
 [CA1007: 적절 한 경우 제네릭을 사용 합니다.](../code-quality/ca1007-use-generics-where-appropriate.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 [제네릭](/dotnet/csharp/programming-guide/generics/index)

@@ -16,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d8cc63e95792d64fc82dc3ad4af022dc5e9c292b
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: ef4bff83b1921b3cf15b25aaf225645379478f38
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547822"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236347"
 ---
 # <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012: 추상 형식에는 생성자를 사용하면 안 됩니다.
 
@@ -30,7 +30,7 @@ ms.locfileid: "69547822"
 |TypeName|AbstractTypesShouldNotHaveConstructors|
 |CheckId|CA1012|
 |범주|Microsoft.Design|
-|변경 수준|최신이 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 

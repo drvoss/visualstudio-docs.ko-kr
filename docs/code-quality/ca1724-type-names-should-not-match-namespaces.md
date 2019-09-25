@@ -14,34 +14,34 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f81327324de937df57edfb36cae34d613f6298a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3554a352cb1c32879397e91dba3ce53f31a14bd0
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546022"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233852"
 ---
-# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724: 형식 이름은 네임 스페이스를 달라 야 합니다.
+# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724: 형식 이름은 네임 스페이스와 일치 하면 안 됩니다.
 
 |||
 |-|-|
 |TypeName|TypeNamesShouldNotMatchNamespaces|
 |CheckId|CA1724|
 |범주|Microsoft.Naming|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 
-형식 이름에는 하나 이상의 외부에서 표시 되는 형식에는 참조 된 네임 스페이스 이름을 일치 합니다. 이름 비교는 대/소문자입니다.
+형식 이름은 하나 이상의 외부에서 표시 되는 형식을 포함 하는 참조 된 네임 스페이스 이름과 일치 합니다. 이름 비교는 대/소문자를 구분 하지 않습니다.
 
 ## <a name="rule-description"></a>규칙 설명
 
-사용자가 만든 형식 이름 형식이 외부에서 볼 수 있는 참조 된 네임 스페이스의 이름을 일치 하지 해야 합니다. 이 규칙을 위반 하면 라이브러리의 유용성을 줄일 수 있습니다.
+사용자가 만든 형식 이름은 외부에서 볼 수 있는 형식의 참조 된 네임 스페이스 이름과 일치 하면 안 됩니다. 이 규칙을 위반 하면 라이브러리의 유용성이 떨어질 수 있습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 
-형식이 외부에 표시 되는 참조 된 네임 스페이스의 이름을 일치 하지는 형식의 이름을 바꾸십시오.
+외부에서 볼 수 있는 형식을 포함 하는 참조 된 네임 스페이스의 이름과 일치 하지 않도록 형식 이름을 바꿉니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 
-새로운 개발에 알려져 있지 않습니다 시나리오 발생이 규칙에서 경고를 표시 해야 하는 위치입니다. 경고를 표시 하지 않으려면 전에 신중 하 게 하는 방법 라이브러리의 사용자 혼동을 줄 수는 일치 하는 이름별 고려해. 제공 되는 라이브러리에 대 한이 규칙에서 경고를 표시 해야 합니다.
+새 개발을 위해이 규칙에서 경고를 표시 하지 않아야 하는 알려진 시나리오가 발생 하지 않습니다. 경고를 표시 하지 않으려면 라이브러리의 사용자가 일치 하는 이름으로 혼동 될 수 있는 방법을 신중 하 게 고려해 야 합니다. 배송 라이브러리의 경우이 규칙에서 경고를 표시 하지 않을 수 있습니다.

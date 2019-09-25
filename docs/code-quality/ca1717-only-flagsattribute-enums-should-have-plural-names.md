@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d760802422773b3713fa7ea08ce0ce7a191f418
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: b352d8f49cb92f70b449427179229fd882dbc9ce
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547122"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234067"
 ---
 # <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717: FlagsAttribute 열거형만 복수형 이름을 가질 수 있습니다.
 
@@ -28,7 +28,7 @@ ms.locfileid: "69547122"
 |TypeName|OnlyFlagsEnumsShouldHavePluralNames|
 |CheckId|CA1717|
 |범주|Microsoft.Naming|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 
@@ -68,7 +68,7 @@ dotnet_code_quality.ca1717.api_surface = private, internal
 - [CA1027: 열거형을 FlagsAttribute로 표시](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 - [CA2217: 열거형을 FlagsAttribute로 표시 하지 않습니다.](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.FlagsAttribute?displayProperty=fullName>
 - [열거형 디자인](/dotnet/standard/design-guidelines/enum)

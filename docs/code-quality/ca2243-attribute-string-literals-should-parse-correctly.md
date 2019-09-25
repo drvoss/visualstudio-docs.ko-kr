@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9c0f078c21de023b1f5cfacde0cf122c179adb2
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 2627e94dbdd0504b164fee3ecd95dc99b3094db7
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919907"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237826"
 ---
 # <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243: 특성 문자열 리터럴이 올바르게 구문 분석되어야 합니다.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68919907"
 |TypeName|AttributeStringLiteralsShouldParseCorrectly|
 |CheckId|CA2243|
 |범주|Microsoft.Usage|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 특성의 문자열 리터럴 매개 변수는 URL, GUID 또는 버전에 대해 올바르게 구문 분석 되지 않습니다.
@@ -59,6 +59,6 @@ ms.locfileid: "68919907"
 
 - ' Uri ', ' urn ' 또는 ' u r l '을 포함 하는 매개 변수를 System.uri로 구문 분석할 수 없습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [CA1054: URI 매개 변수는 문자열이 면 안 됩니다.](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f6f40308255e0496b2bcccddf4299e83ea93100
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e9582fb6bbdbda8aefbb60e2c69d16380eec3dff
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922046"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234753"
 ---
 # <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411: COM 등록 메서드는 노출되면 안 됩니다.
 
@@ -31,7 +31,7 @@ ms.locfileid: "68922046"
 |TypeName|ComRegistrationMethodsShouldNotBeVisible|
 |CheckId|CA1411|
 |범주|Microsoft.Interoperability|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 
@@ -55,7 +55,7 @@ COM (구성 요소 개체 모델)을 사용 하 여 어셈블리를 등록 하�
 ## <a name="related-rules"></a>관련 규칙
 [CA1410: COM 등록 메서드는 일치 해야 합니다.](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName>
 - [COM에 어셈블리 등록](/dotnet/framework/interop/registering-assemblies-with-com)

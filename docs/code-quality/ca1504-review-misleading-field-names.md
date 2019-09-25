@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df6ab704c2dfdbf8ebdf8eb42f56d8d64600736f
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 31c147c67854dd59f1fb7c9202f553edfb4a77a8
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921820"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234501"
 ---
 # <a name="ca1504-review-misleading-field-names"></a>CA1504: 잘못된 필드 이름을 검토하세요.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921820"
 |TypeName|ReviewMisleadingFieldNames|
 |CheckId|CA1504|
 |범주|Microsoft.Maintainability|
-|변경 수준|최신이 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 인스턴스 필드의 이름은 "s_"로 시작 하거나 `static` (`Shared` 의 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 필드 이름이 "m_"로 시작 합니다.

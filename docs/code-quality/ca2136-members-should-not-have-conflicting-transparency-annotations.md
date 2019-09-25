@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dcef8fbfd61b8cd8c946f76d6fcb93dc46f1654
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 7f9455e83d7cb128a34696ae5e849fd0901f1891
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920624"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232214"
 ---
 # <a name="ca2136-members-should-not-have-conflicting-transparency-annotations"></a>CA2136: 멤버는 충돌하는 투명도 주석을 포함할 수 없습니다.
 
@@ -29,7 +29,7 @@ ms.locfileid: "68920624"
 |TypeName|TransparencyAnnotationsShouldNotConflict|
 |CheckId|CA2136|
 |범주|Microsoft.Security|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 이 규칙은 형식 멤버가 멤버 컨테이너의 보안 특성과 다른 <xref:System.Security> 투명도를 갖는 보안 특성으로 표시 될 때 발생 합니다.

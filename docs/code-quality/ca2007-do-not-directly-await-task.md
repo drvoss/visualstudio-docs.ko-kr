@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 dev_langs:
 - CSharp
-ms.openlocfilehash: 0d3ab899ad660c637492a4c3d229779481184e95
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: cf07c997f933e6aacf3eff29ae204ecd0bedb036
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69546998"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233069"
 ---
 # <a name="ca2007-do-not-directly-await-a-task"></a>CA2007: 작업을 직접 대기하지 마세요.
 
@@ -26,7 +26,7 @@ ms.locfileid: "69546998"
 |TypeName|DoNotDirectlyAwaitATaskAnalyzer|
 |CheckId|CA2007|
 |범주|Microsoft.Reliability|
-|변경 수준|최신이 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 

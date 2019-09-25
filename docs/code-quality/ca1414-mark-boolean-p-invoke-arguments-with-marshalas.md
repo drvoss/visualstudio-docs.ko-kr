@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e8d47b73009e0bd742c989ddc0311644453e5d9
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 22e62a1e3209399be4b10a3ec28db4afdd6f0f20
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921862"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234669"
 ---
 # <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414: 부울 P/Invoke 인수를 MarshalAs로 표시하세요.
 
@@ -32,7 +32,7 @@ ms.locfileid: "68921862"
 |TypeName|MarkBooleanPInvokeArgumentsWithMarshalAs|
 |CheckId|CA1414|
 |범주|Microsoft.Interoperability|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 플랫폼 호출 메서드 선언에 <xref:System.Boolean?displayProperty=fullName> 매개 변수 또는 반환 값이 포함 되어 <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=fullName> 있지만 특성이 매개 변수 또는 반환 값에 적용 되지 않습니다.
@@ -61,7 +61,7 @@ ms.locfileid: "68921862"
 
 [CA2101: P/Invoke 문자열 인수에 대해 마샬링을 지정 하십시오.](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>
 - [비관리 코드와의 상호 운용](/dotnet/framework/interop/index)

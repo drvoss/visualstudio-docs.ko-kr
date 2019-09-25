@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 502033d2adffd640d2af6ee8d36b0c0f3cd71472
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: c9b6e48fb82be5a41c420827a32926630bb725ed
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547937"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236499"
 ---
 # <a name="ca1008-enums-should-have-zero-value"></a>CA1008: 열거형에는 0 값이 있어야 합니다.
 
@@ -32,7 +32,7 @@ ms.locfileid: "69547937"
 |TypeName|EnumsShouldHaveZeroValue|
 |CheckId|CA1008|
 |범주|Microsoft.Design|
-|변경 수준|비-플래그 열거에 **None** 값을 추가 하 라는 메시지가 표시 되는 경우 중단-열거형 값의 이름을 바꾸거나 제거할 것인지 묻는 메시지가 표시 되 면입니다.|
+|주요 변경 내용|비-플래그 열거에 **None** 값을 추가 하 라는 메시지가 표시 되는 경우 중단-열거형 값의 이름을 바꾸거나 제거할 것인지 묻는 메시지가 표시 되 면입니다.|
 
 ## <a name="cause"></a>원인
 
@@ -80,6 +80,6 @@ dotnet_code_quality.ca1008.api_surface = private, internal
 - [CA1028: Enum 저장소는 Int32 여야 합니다.](../code-quality/ca1028-enum-storage-should-be-int32.md)
 - [CA1027: 열거형을 FlagsAttribute로 표시](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Enum?displayProperty=fullName>

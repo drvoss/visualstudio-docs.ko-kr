@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c144db920bfa04055c81227e4cc2c230ed2f097d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 92a7542499eceeccbd62ce327b386dc099b726b2
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921337"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233616"
 ---
 # <a name="ca1811-avoid-uncalled-private-code"></a>CA1811: 호출되지 않는 전용 코드를 사용하지 마세요.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921337"
 |TypeName|AvoidUncalledPrivateCode|
 |CheckId|CA1811|
 |범주|Microsoft.Performance|
-|변경 수준|최신이 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 Private 또는 internal (어셈블리 수준) 멤버는 어셈블리에 호출자가 없으며 공용 언어 런타임에 의해 호출 되지 않으며 대리자에 의해 호출 되지 않습니다. 다음 멤버는이 규칙에 의해 확인 되지 않습니다.

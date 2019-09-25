@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee5b1d92a6c7a813eea6efb409d3c2a22f68547c
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 88fbd5bbe873ae8bec9a506efbdb20d3fc77a2c1
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921123"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232796"
 ---
 # <a name="ca2109-review-visible-event-handlers"></a>CA2109: 표시되는 이벤트 처리기를 검토하세요.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921123"
 |TypeName|ReviewVisibleEventHandlers|
 |CheckId|CA2109|
 |범주|Microsoft.Security|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 public 또는 protected 이벤트 처리 메서드를 발견했습니다.
@@ -61,7 +61,7 @@ public 또는 protected 이벤트 처리 메서드를 발견했습니다.
 
 [!code-csharp[FxCop.Security.EventSecLib#1](../code-quality/codesnippet/CSharp/ca2109-review-visible-event-handlers_1.cs)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName>
 - <xref:System.EventArgs?displayProperty=fullName>

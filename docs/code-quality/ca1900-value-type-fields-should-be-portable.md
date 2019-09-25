@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f734d0cf28a5aec28ebbf635dd384efe176b1774
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 4bef51c547d4a1614137e0691343bef635aed50d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921313"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233284"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: 값 형식 필드는 이식 가능해야 합니다.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921313"
 |TypeName|ValueTypeFieldsShouldBePortable|
 |CheckId|CA1900|
 |범주|Microsoft 이식성|
-|변경 수준|중단-필드를 어셈블리 외부에서 볼 수 있는 경우입니다.<br /><br /> 분리 안 함-필드가 어셈블리 외부에 표시 되지 않는 경우|
+|주요 변경 내용|중단-필드를 어셈블리 외부에서 볼 수 있는 경우입니다.<br /><br /> 분리 안 함-필드가 어셈블리 외부에 표시 되지 않는 경우|
 
 ## <a name="cause"></a>원인
 이 규칙은 명시적 레이아웃으로 선언 된 구조체가 64 비트 운영 체제에서 비관리 코드로 마샬링될 때 올바르게 정렬 되는지 검사 합니다. IA-64은 정렬 되지 않은 메모리 액세스를 허용 하지 않으며,이 위반이 해결 되지 않으면 프로세스가 중단 됩니다.

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9af307158ecd8d5a1f93ebd1f8575cad5cf51e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f2729e74e3abf6be2ae5b17a836d920c1376decd
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540861"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236946"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 끊어진 암호화 알고리즘 사용 안 함
 
@@ -22,7 +22,7 @@ ms.locfileid: "62540861"
 |TypeName|DoNotUseBrokenCryptographicAlgorithms|
 |CheckId|CA5351|
 |범주|Microsoft.Cryptography|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 > [!NOTE]
 > 이 경고는 2015년 11월에 마지막으로 업데이트되었습니다.
@@ -35,7 +35,7 @@ ms.locfileid: "62540861"
 
 ## <a name="rule-description"></a>규칙 설명
 
-끊어진 암호화 알고리즘은 안전하지 않은 것으로 간주되므로 사용해서는 안 됩니다. 사용 컨텍스트에 따라 구체적인 취약성이 달라지지만 MD5 해시 알고리즘은 알려진 충돌 공격에 취약합니다.  해시 알고리즘 (예: 파일 서명 또는 디지털 인증서)의 데이터 무결성을 보장 하는 데는 특히 취약 합니다.  이 컨텍스트에서 공격자는 해시 값을 변경하거나 연결된 디지털 서명을 무효화하지 않고 정상적인 데이터가 악성 데이터로 대체될 수 있도록 두 가지 데이터를 생성할 수 있습니다.
+끊어진 암호화 알고리즘은 안전하지 않은 것으로 간주되므로 사용해서는 안 됩니다. 사용 컨텍스트에 따라 구체적인 취약성이 달라지지만 MD5 해시 알고리즘은 알려진 충돌 공격에 취약합니다.  데이터 무결성 (예: 파일 서명 또는 디지털 인증서)을 보장 하는 데 사용 되는 해시 알고리즘이 특히 취약 합니다.  이 컨텍스트에서 공격자는 해시 값을 변경하거나 연결된 디지털 서명을 무효화하지 않고 정상적인 데이터가 악성 데이터로 대체될 수 있도록 두 가지 데이터를 생성할 수 있습니다.
 
 암호화 알고리즘의 경우:
 
@@ -49,17 +49,17 @@ ms.locfileid: "62540861"
 
 보다 강력한 암호화 옵션을 사용합니다.
 
-- Md5의 경우에 해시를 사용 합니다 [sha-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) 제품군 (예를 들어 <xref:System.Security.Cryptography.SHA512>를 <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).
+- MD5의 경우 [SHA-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) 제품군의 해시를 사용 합니다 (예: <xref:System.Security.Cryptography.SHA512> <xref:System.Security.Cryptography.SHA384> <xref:System.Security.Cryptography.SHA256>,,).
 
 - DES 및 RC2의 경우 <xref:System.Security.Cryptography.Aes> 암호화를 사용합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 
 암호화 전문가가 검토하지 않은 경우 이 규칙의 경고가 표시되지 않도록 하지 마세요.
 
 ## <a name="pseudo-code-examples"></a>의사 코드 예제
 
-다음 의사 (pseudo) 코드 샘플에서는이 규칙 및 가능한 대안에 의해 검색 되는 패턴을 보여 줍니다.
+다음 의사 코드 샘플에서는이 규칙 및 가능한 대안에 의해 검색 되는 패턴을 보여 줍니다.
 
 ### <a name="md5-hashing-violation"></a>MD5 해시 위반
 

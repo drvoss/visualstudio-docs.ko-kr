@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b292c58e666c11130fb25f67c234bfd2282fe463
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5503f00995a4720207ea0ea9c29201d379e70adb
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922249"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234911"
 ---
 # <a name="ca1400-pinvoke-entry-points-should-exist"></a>CA1400: P/Invoke 진입점이 있어야 합니다.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922249"
 |TypeName|PInvokeEntryPointsShouldExist|
 |CheckId|CA1400|
 |범주|Microsoft.Interoperability|
-|변경 수준|최신이 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 Public 또는 protected 메서드는로 <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>표시 됩니다. 관리되지 않는 라이브러리를 찾을 수 없거나 해당 메서드와 라이브러리의 함수가 일치하지 않습니다. 규칙에서 메서드 이름을 지정 된 대로 정확 하 게 찾을 수 없는 경우 메서드 이름을 ' A ' 또는 ' W '로 접미사로 하 여 메서드의 ANSI 또는 와이드 문자 버전을 찾습니다. 일치 하는 항목이 없는 경우 규칙은 __stdcall 이름 형식 (_MyMethod@12, 여기서 12는 인수의 길이를 나타냄)을 사용 하 여 함수를 찾으려고 시도 합니다. 일치 하는 항목이 없고 메서드 이름이 ' # '으로 시작 하는 경우 규칙은 이름 참조 대신 서 수 참조로 함수를 검색 합니다.
@@ -47,5 +47,5 @@ Public 또는 protected 메서드는로 <xref:System.Runtime.InteropServices.Dll
 
 [!code-csharp[FxCop.Interoperability.DLLExists#1](../code-quality/codesnippet/CSharp/ca1400-p-invoke-entry-points-should-exist_1.cs)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
  <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>

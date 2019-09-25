@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7d6fb66684bd51c75e655bc2403cb6a9fb5846a2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 931bfba9aeac76132ca2dd5e6115abef9869a1df
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438812"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254583"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>방법: 프로그래밍 방식으로 워크시트 보호
   Microsoft Office Excel의 보호 기능은 사용자 및 코드가 워크시트의 개체를 수정할 수 없도록 차단합니다. 기본적으로 보호를 설정하면 모든 셀이 잠깁니다.
@@ -36,19 +36,19 @@ ms.locfileid: "63438812"
 
 ### <a name="to-protect-a-worksheet-in-the-designer"></a>디자이너에서 워크시트를 보호하려면
 
-1. 에 **변경 내용을** 그룹을 **검토** 탭을 클릭 **시트 보호**합니다.
+1. **검토** 탭의 **변경 내용** 그룹에서 **시트 보호**를 클릭 합니다.
 
-    합니다 **시트 보호** 대화 상자가 나타납니다. 암호를 설정할 수 있으며, 필요에 따라 셀 서식 지정 또는 행 삽입과 같이 사용자가 워크시트에서 수행할 수 있는 특정 작업을 지정할 수 있습니다.
+    **시트 보호** 대화 상자가 나타납니다. 암호를 설정할 수 있으며, 필요에 따라 셀 서식 지정 또는 행 삽입과 같이 사용자가 워크시트에서 수행할 수 있는 특정 작업을 지정할 수 있습니다.
 
    사용자가 보호된 워크시트에서 특정 범위를 편집하도록 허용할 수도 있습니다.
 
 ### <a name="to-allow-editing-in-specific-ranges"></a>특정 범위에서 편집을 허용하려면
 
-1. 에 **변경 내용을** 그룹의 **검토** 탭을 클릭 **범위 편집 허용 사용자**.
+1. **검토** 탭의 **변경** 그룹에서 **사용자가 범위를 편집할 수 있도록 허용**을 클릭 합니다.
 
-     합니다 **범위 편집 허용 사용자** 대화 상자가 나타납니다. 암호를 사용하여 잠금 해제되는 범위 및 암호 없이 범위를 편집할 수 있는 사용자를 지정할 수 있습니다.
+     **사용자가 범위를 편집할 수 있도록 허용** 대화 상자가 나타납니다. 암호를 사용하여 잠금 해제되는 범위 및 암호 없이 범위를 편집할 수 있는 사용자를 지정할 수 있습니다.
 
-## <a name="use-code-at-runtime"></a>코드를 사용 하 여 런타임 시
+## <a name="use-code-at-run-time"></a>런타임에 코드 사용
  다음 코드에서는 사용자로부터 받은 암호를 포함하는 getPasswordFromUser 변수를 사용하여 암호를 설정하고 정렬만 허용합니다.
 
 ### <a name="to-protect-a-worksheet-by-using-code-in-a-document-level-customization"></a>문서 수준 사용자 지정에서 코드를 사용하여 워크시트를 보호하려면
@@ -65,10 +65,10 @@ ms.locfileid: "63438812"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#17](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#17)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#17](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#17)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 - [워크시트 작업](../vsto/working-with-worksheets.md)
 - [방법: 프로그래밍 방식으로 워크시트에서 보호 제거](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)
-- [방법: 프로그래밍 방식으로 통합 문서를 보호](../vsto/how-to-programmatically-protect-workbooks.md)
+- [방법: 프로그래밍 방식으로 통합 문서 보호](../vsto/how-to-programmatically-protect-workbooks.md)
 - [방법: 프로그래밍 방식으로 워크시트 숨기기](../vsto/how-to-programmatically-hide-worksheets.md)
 - [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)
 - [워크시트 호스트 항목](../vsto/worksheet-host-item.md)

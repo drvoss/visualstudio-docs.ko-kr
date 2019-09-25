@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 415b8c95dda3fca084fcb103dfa5e4f39e1a73da
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ef7b72eade7ea8e4486d5c317c06026bb4d0b95f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922524"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235737"
 ---
 # <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: 네이티브 리소스가 있는 형식은 삭제 가능해야 합니다.
 
@@ -31,7 +31,7 @@ ms.locfileid: "68922524"
 |TypeName|TypesThatOwnNativeResourcesShouldBeDisposable|
 |CheckId|CA1049|
 |범주|Microsoft.Design|
-|변경 수준|최신이 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 
@@ -64,7 +64,7 @@ ms.locfileid: "68922524"
 
 [CA1001: 삭제 가능한 필드가 있는 형식은 삭제 가능해야 합니다.](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [관리되지 않는 리소스 정리](/dotnet/standard/garbage-collection/unmanaged)
 - [삭제 패턴](/dotnet/standard/design-guidelines/dispose-pattern)

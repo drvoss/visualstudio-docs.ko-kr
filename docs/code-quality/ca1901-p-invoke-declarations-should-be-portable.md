@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a45b7061ae9d183ec7ee02a3b733ee9340b3689
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d878572c4391805773a9a711ee88e7b58f507c65
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921311"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233290"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: P/Invoke 선언은 이식 가능해야 합니다.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921311"
 |TypeName|PInvokeDeclarationsShouldBePortable|
 |CheckId|CA1901|
 |범주|Microsoft 이식성|
-|변경 수준|중단-P/Invoke가 어셈블리 외부에 표시 되는 경우입니다. 분리 안 함-P/Invoke가 어셈블리 외부에 표시 되지 않는 경우|
+|주요 변경 내용|중단-P/Invoke가 어셈블리 외부에 표시 되는 경우입니다. 분리 안 함-P/Invoke가 어셈블리 외부에 표시 되지 않는 경우|
 
 ## <a name="cause"></a>원인
 이 규칙은 각 매개 변수의 크기와 P/Invoke의 반환 값을 평가 하 고 32 비트 및 64 비트 플랫폼에서 비관리 코드로 마샬링될 때 크기가 올바른지 확인 합니다. 이 규칙의 가장 일반적인 위반은 플랫폼에 종속적인 포인터 크기의 변수가 필요한 고정 크기의 정수를 전달 하는 것입니다.
@@ -76,5 +76,5 @@ internal class NativeMethods{
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 [Portability Warnings](../code-quality/portability-warnings.md)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a20feb514b87f2906fd4db32dfb38d3d9b661999
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8d9e74daa464a55a543b5eb8c189c9ddf1295301
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922821"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236020"
 ---
 # <a name="ca1035-icollection-implementations-have-strongly-typed-members"></a>CA1035: ICollection 구현에 강력한 형식의 멤버가 있습니다.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922821"
 |TypeName|ICollectionImplementationsHaveStronglyTypedMembers|
 |CheckId|CA1035|
 |범주|Microsoft.Design|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 공용 또는 보호 된 형식이를 <xref:System.Collections.ICollection?displayProperty=fullName> 구현 하지만에 <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName>강력한 형식의 메서드를 제공 하지 않습니다. 강력한 형식의 버전 <xref:System.Collections.ICollection.CopyTo%2A> 은 두 개의 매개 변수를 허용 해야 하며 <xref:System.Array?displayProperty=fullName> 또는 배열을 <xref:System.Object?displayProperty=fullName> 첫 번째 매개 변수로 사용할 수 없습니다.
@@ -56,7 +56,7 @@ ms.locfileid: "68922821"
 
 [CA1039: 목록은 강력한 형식입니다.](../code-quality/ca1039-lists-are-strongly-typed.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Array?displayProperty=fullName>
 - <xref:System.Collections.IEnumerable?displayProperty=fullName>

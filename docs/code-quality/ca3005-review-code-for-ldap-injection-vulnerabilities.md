@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 10b9091df08368674511b770158ea47c247aade7
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: c0c99d5d0adb145a061693f8a83b1f674e05eed4
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841371"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237336"
 ---
 # <a name="ca3005-review-code-for-ldap-injection-vulnerabilities"></a>CA3005: 코드에서 LDAP 주입 취약점에 대해 검토합니다.
 
@@ -24,38 +24,38 @@ ms.locfileid: "65841371"
 |TypeName|ReviewCodeForLdapInjectionVulnerabilities|
 |CheckId|CA3005|
 |범주|Microsoft.Security|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 
-신뢰할 수 없는 HTTP 요청 입력에는 LDAP 문에 도달합니다.
+잠재적으로 신뢰할 수 없는 HTTP 요청 입력은 LDAP 문에 도달 합니다.
 
 ## <a name="rule-description"></a>규칙 설명
 
-신뢰할 수 없는 입력에서 작업할 때 LDAP Lightweight Directory Access Protocol () 삽입 공격에 주의 해야 합니다. 공격자가 내용은 디렉터리에 대 한 악의적인 LDAP 문을 실행할 수 있습니다. 사용자 입력을 사용 하 여 디렉터리 서비스에 액세스할 수 있는 동적 LDAP 문을 생성 하는 응용 프로그램은 특히 취약 합니다.
+신뢰할 수 없는 입력으로 작업 하는 경우 LDAP (Lightweight Directory Access Protocol) 삽입 공격에 유의 해야 합니다. 공격자는 잠재적으로 정보 디렉터리에 대해 악의적인 LDAP 문을 실행할 수 있습니다. 사용자 입력을 사용 하 여 디렉터리 서비스에 액세스할 수 있는 동적 LDAP 문을 생성 하는 응용 프로그램은 특히 취약 합니다.
 
-이 규칙에서 LDAP 문을 도달 하는 HTTP 요청에서 입력을 찾으려고 시도 합니다.
-
-> [!NOTE]
-> 이 규칙은 어셈블리 간에 데이터를 추적할 수 없습니다. 예를 들어, 하나의 어셈블리 HTTP 요청 입력을 읽고 하는 LDAP 문을 실행 하는 다른 어셈블리에 전달 하는 경우이 규칙 경고를 생성 하지 않습니다.
+이 규칙은 LDAP 문에 도달 하는 HTTP 요청에서 입력을 찾으려고 시도 합니다.
 
 > [!NOTE]
-> 이 규칙 메서드 호출에서 데이터 흐름은 분석 깊이에 구성할 수 있는 제한이 있습니다. 참조 [분석기 구성](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) EditorConfig 파일에 제한을 구성 하는 방법에 대 한 합니다.
+> 이 규칙은 어셈블리 간에 데이터를 추적할 수 없습니다. 예를 들어 한 어셈블리가 HTTP 요청 입력을 읽은 다음 LDAP 문을 실행 하는 다른 어셈블리에 전달 하는 경우이 규칙은 경고를 생성 하지 않습니다.
+
+> [!NOTE]
+> 이 규칙에서 메서드 호출을 통해 데이터 흐름을 분석 하는 데 구성 가능한 제한이 있습니다. EditorConfig 파일에서 제한을 구성 하는 방법에 대 한 [Analyzer 구성](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) 을 참조 하세요.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 
-LDAP 문 부분 사용자 제어에 대 한 중 하나를 고려 합니다.
-- 안전한 목록이 아닌 특수 문자를 허용 합니다.
-- 특수 문자를 허용 하지 않습니다
+LDAP 문의 사용자 제어 부분에 대해서는 다음 중 하나를 고려 하십시오.
+- 특수 문자가 아닌 문자에 대 한 안전한 목록만 허용 합니다.
+- 특수 문자 허용 안 함
 - 특수 문자를 이스케이프 합니다.
 
-참조 [OWASP의 LDAP 주입 방지 치트 시트](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/LDAP_Injection_Prevention_Cheat_Sheet.md) 자세한 지침에 대 한 합니다.
+자세한 지침은 [OWASP의 LDAP 주입 방지 참고 자료 시트](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/LDAP_Injection_Prevention_Cheat_Sheet.md) 를 참조 하세요.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 
-입력의 유효성을 검사 되었거나 안전 이스케이프를 알고 있으면이 경고를 표시 하지 않아도 괜찮습니다.
+입력의 유효성을 검사 하거나 안전 하 게 이스케이프 처리 한 경우이 경고를 표시 하지 않을 수 있습니다.
 
-## <a name="pseudo-code-examples"></a>의사 (pseudo) 코드 예제
+## <a name="pseudo-code-examples"></a>의사 코드 예제
 
 ### <a name="violation"></a>위반
 

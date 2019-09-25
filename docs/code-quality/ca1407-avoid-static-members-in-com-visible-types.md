@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 631be1a93318cd24af4251fefbc710294fa52bf7
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 57450f80a8c630e2186de8804f8bb88974564e46
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922005"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234877"
 ---
 # <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407: COM 노출 형식에 정적 멤버를 사용하지 마세요.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922005"
 |TypeName|AvoidStaticMembersInComVisibleTypes|
 |CheckId|CA1407|
 |범주|Microsoft.Interoperability|
-|변경 수준|최신이 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 COM (구성 요소 개체 모델)에 표시 되도록 특별히 표시 된 형식에 `public``static` 메서드가 포함 되어 있습니다.
@@ -67,7 +67,7 @@ COM 클라이언트가 `static` 메서드에서 제공 하는 기능에 액세�
 
 ## <a name="example-violation"></a>위반 예
 
-### <a name="description"></a>Description
+### <a name="description"></a>설명
 다음 예제에서는이 규칙 `static` 을 위반 하는 메서드를 보여 줍니다.
 
 ### <a name="code"></a>코드
@@ -78,7 +78,7 @@ COM 클라이언트가 `static` 메서드에서 제공 하는 기능에 액세�
 
 ## <a name="example-fix"></a>예제 수정
 
-### <a name="description"></a>Description
+### <a name="description"></a>설명
 이전 예제에서 위반 문제를 해결 하기 위해 메서드를 인스턴스 메서드로 변경할 수 있지만이 경우이 인스턴스에서는 의미가 없습니다. 다른 개발자가 메서드를 COM에서 `ComVisible(false)` 볼 수 없다는 것을 명확 하 게 하기 위해 메서드에 명시적으로 적용 하는 것이 더 나은 방법입니다.
 
 다음 예제는 메서드에 <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> 적용 됩니다.
@@ -93,5 +93,5 @@ COM 클라이언트가 `static` 메서드에서 제공 하는 기능에 액세�
 
 [CA1413: COM 노출 값 형식에 public이 아닌 필드를 사용 하지 마십시오.](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 [비관리 코드와의 상호 운용](/dotnet/framework/interop/index)

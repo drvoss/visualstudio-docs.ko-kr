@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4dec35fb978b3c751e07cb6d0612ff5da27c74e5
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 42581e632c08550fce3cd685949401a155a060f6
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551119"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253167"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>FxCop 및 FxCop 분석기에 대한 질문과 대답
 
@@ -43,7 +43,7 @@ FxCop 분석기를 실행하려면 먼저 [NuGet 패키지를 설치합니다](i
 
 ## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>FxCop 분석기 NuGet 패키지를 설치한 후에도 경고 CA0507이 표시됨
 
-FxCop 분석기를 설치했지만 경고 CA0507 **""코드 분석 실행"이 더 이상 사용되지 않고 대신 FxCop 분석기가 빌드 중 실행됩니다."** 가 계속 표시되는 경우에는 프로젝트 파일에서 **RunCodeAnalysis** msbuild 속성을 **false**로 설정해야 할 수 있습니다. 그렇지 않으면 각 빌드 후에 레거시 분석이 실행 됩니다.
+FxCop 분석기를 설치 했지만 **"" 코드 분석 실행 "이 더 이상 사용 되지 않는 경우" 빌드 중에 실행 되는 FxCop 분석기 "에 대해" 코드 분석 실행 "이 더 이상 사용 되지 않으므로**프로젝트에서 **runcodeanalysis** msbuild 속성을 설정 해야 할 수 있습니다. [ file](../ide/solutions-and-projects-in-visual-studio.md#project-file) 을 **false로 설정**합니다. 그렇지 않으면 각 빌드 후에 레거시 분석이 실행 됩니다.
 
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>
@@ -53,7 +53,7 @@ FxCop 분석기를 설치했지만 경고 CA0507 **""코드 분석 실행"이 �
 
 [Fxcop 분석기](install-fxcop-analyzers.md)로 이식 된 레거시 분석 규칙에 대 한 자세한 내용은 [fxcop 규칙 포트 상태](fxcop-rule-port-status.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [.NET Compiler Platform 분석기 개요](roslyn-analyzers-overview.md)
 - [분석기 시작](fxcop-analyzers.yml)

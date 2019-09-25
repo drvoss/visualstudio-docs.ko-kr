@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93fd892baaf54d79c3a2387b8961a2f4c1bb2cdb
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 50c67c614c4ece8f1925f4133f749a1c5747fe31
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547319"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234160"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: 식별자에는 올바른 접미사를 사용해야 합니다.
 
@@ -28,7 +28,7 @@ ms.locfileid: "69547319"
 |TypeName|IdentifiersShouldHaveCorrectSuffix|
 |CheckId|CA1710|
 |범주|Microsoft.Naming|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 
@@ -49,14 +49,14 @@ ms.locfileid: "69547319"
 |<xref:System.Attribute?displayProperty=fullName>|특성|
 |<xref:System.EventArgs?displayProperty=fullName>|EventArgs|
 |<xref:System.Exception?displayProperty=fullName>|예외|
-|<xref:System.Collections.ICollection?displayProperty=fullName>|Collection|
-|<xref:System.Collections.IDictionary?displayProperty=fullName>|Dictionary|
-|<xref:System.Collections.IEnumerable?displayProperty=fullName>|Collection|
+|<xref:System.Collections.ICollection?displayProperty=fullName>|컬렉션|
+|<xref:System.Collections.IDictionary?displayProperty=fullName>|사전|
+|<xref:System.Collections.IEnumerable?displayProperty=fullName>|컬렉션|
 |<xref:System.Collections.Queue?displayProperty=fullName>|컬렉션 또는 큐|
 |<xref:System.Collections.Stack?displayProperty=fullName>|컬렉션 또는 스택|
-|<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|Collection|
-|<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|Dictionary|
-|<xref:System.Data.DataSet?displayProperty=fullName>|DataSet|
+|<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|컬렉션|
+|<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|사전|
+|<xref:System.Data.DataSet?displayProperty=fullName>|데이터 세트|
 |<xref:System.Data.DataTable?displayProperty=fullName>|컬렉션 또는 DataTable|
 |<xref:System.IO.Stream?displayProperty=fullName>|스트림|
 |<xref:System.Security.IPermission?displayProperty=fullName>|사용 권한|
@@ -107,7 +107,7 @@ dotnet_code_quality.ca1710.api_surface = private, internal
 
 [CA1711: 식별자에는 올바른 접미사를 사용할 수 없습니다.](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [특성](/dotnet/standard/design-guidelines/attributes)
 - [이벤트 처리 및 발생](/dotnet/standard/events/index)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5cc12d5d0a62f8d2530f13fcf860aba4e118ca4
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 99274abee2c05a1bd33e34c9eb02cc928c1b54b0
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921851"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234619"
 ---
 # <a name="ca1415-declare-pinvokes-correctly"></a>CA1415: P/Invoke를 올바르게 선언하십시오.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921851"
 |TypeName|DeclarePInvokesCorrectly|
 |CheckId|CA1415|
 |범주|Microsoft.Interoperability|
-|변경 수준|분리 안 됨-매개 변수를 선언 하는 P/Invoke를 어셈블리 외부에서 볼 수 없는 경우 중단-매개 변수를 선언 하는 P/Invoke를 어셈블리 외부에서 볼 수 있는 경우.|
+|주요 변경 내용|분리 안 됨-매개 변수를 선언 하는 P/Invoke를 어셈블리 외부에서 볼 수 없는 경우 중단-매개 변수를 선언 하는 P/Invoke를 어셈블리 외부에서 볼 수 있는 경우.|
 
 ## <a name="cause"></a>원인
 플랫폼 호출 메서드가 잘못 선언 되었습니다.
@@ -47,5 +47,5 @@ ms.locfileid: "68921851"
 
 [!code-csharp[FxCop.Interoperability.DeclarePInvokes#1](../code-quality/codesnippet/CSharp/ca1415-declare-p-invokes-correctly_1.cs)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 [비관리 코드와의 상호 운용](/dotnet/framework/interop/index)

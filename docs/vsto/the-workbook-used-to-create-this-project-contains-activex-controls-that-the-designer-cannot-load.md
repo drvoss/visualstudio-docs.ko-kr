@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0087841e7f37d49da40817e1487b8529af1f87df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 27feb1c6a85740d8a9287ce3a2a47800595e178a
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978929"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253786"
 ---
 # <a name="the-workbook-used-to-create-this-project-contains-activex-controls-that-the-designer-cannot-load"></a>이 프로젝트를 만드는 데 사용된 통합 문서에 디자이너에서 로드할 수 없는 ActiveX 컨트롤이 있습니다.
   Word 문서나 Excel 워크시트에 프로그래밍 방식으로 컨트롤을 추가하고, 문서나 통합 문서를 저장하고, 문서나 통합 문서를 기반으로 새 문서 수준 솔루션을 만들 때 오류가 나타납니다.
@@ -28,10 +28,10 @@ ms.locfileid: "62978929"
 
 1. 문서 또는 통합 문서를 엽니다.
 
-2. 런타임에 추가 된 컨트롤을 제거 합니다. 문서 또는 통합 문서 및 키를 눌러 선택 하 여 이렇게 합니다 **삭제** 키입니다.
+2. 런타임에 추가된 컨트롤을 제거합니다. 이렇게 하려면 문서 또는 통합 문서에서 해당 항목을 선택 하 고 **Delete** 키를 누릅니다.
 
 3. 문서 또는 통합 문서를 기반으로 문서 수준 솔루션을 만듭니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 - [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 340d8f0a45506f15cdd9281f7ecda463583c3144
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 6850cee67a0dfed4b386eef5ed7cb021d3c76a4d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920821"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232517"
 ---
 # <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122: 링크 요청이 있는 메서드를 간접적으로 노출하지 마십시오.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68920821"
 |TypeName|DoNotIndirectlyExposeMethodsWithLinkDemands|
 |CheckId|CA2122|
 |범주|Microsoft.Security|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 Public 또는 protected 멤버에 [링크 요청이](/dotnet/framework/misc/link-demands) 있으며 보안 검사를 수행 하지 않는 멤버에 의해 호출 됩니다.
@@ -58,7 +58,7 @@ Public 또는 protected 멤버에 [링크 요청이](/dotnet/framework/misc/link
 *Value from unsecured member: seattle.corp.contoso.com
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [보안 코딩 지침](/dotnet/standard/security/secure-coding-guidelines)
 - [링크 요청](/dotnet/framework/misc/link-demands)

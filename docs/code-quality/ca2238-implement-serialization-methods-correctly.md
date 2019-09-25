@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ec40eb3317f541bec92f06d8921fc2f545606d1a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: b0bbe31f0431b259f60c1fe68a8d9edeffc572d9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920081"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237905"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: serialization 메서드를 올바르게 구현하십시오.
 
@@ -31,7 +31,7 @@ ms.locfileid: "68920081"
 |TypeName|ImplementSerializationMethodsCorrectly|
 |CheckId|CA2238|
 |범주|Microsoft.Usage|
-|변경 수준|중단-메서드가 어셈블리 외부에 표시 되는 경우입니다.<br /><br /> 분리 안 함-메서드가 어셈블리 외부에 표시 되지 않는 경우|
+|주요 변경 내용|중단-메서드가 어셈블리 외부에 표시 되는 경우입니다.<br /><br /> 중단 되지 않습니다. 메서드가 어셈블리 외부에 표시 되지 않는 경우입니다.|
 
 ## <a name="cause"></a>원인
 serialization 이벤트를 처리하는 메서드에 올바른 시그니처, 반환 형식 또는 노출 수준이 없습니다.

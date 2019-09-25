@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 292852207a595d34f35a433a86f6554b5e68cf9e
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 93470ebcea306d3cea762d60e061994b2bf27cc8
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872031"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253845"
 ---
 # <a name="program-vsto-add-ins"></a>VSTO 추가 기능 프로그램
   VSTO 추가 기능을 만들어 Microsoft Office 애플리케이션을 확장하는 경우 프로젝트의 `ThisAddIn` 클래스에 대해 직접 코드를 작성합니다. 이 클래스를 사용하여 Microsoft Office 호스트 애플리케이션의 개체 모델 액세스, 애플리케이션의 UI(사용자 인터페이스) 사용자 지정, 다른 Office 솔루션에 VSTO 추가 기능의 개체 표시 등의 작업을 수행할 수 있습니다.
@@ -49,7 +49,7 @@ ms.locfileid: "68872031"
  Visual Studio에서 Office 개발 도구를 사용 하 여 만들 수 있는 VSTO 추가 기능 및 다른 유형의 솔루션에 대 한 일반적인 내용은 [office 솔루션 개발 &#40;개요 VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)를 참조 하세요.
 
 ## <a name="use-the-thisaddin-class"></a>ThisAddIn 클래스 사용
- `ThisAddIn` 클래스에서 VSTO 추가 기능 코드 작성을 시작할 수 있습니다. Visual Studio는 VSTO 추가 기능 프로젝트의 *ThisAddIn* (in [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) 또는 *ThisAddIn.cs* (in C#) 코드 파일에이 클래스를 자동으로 생성 합니다. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 은 Microsoft Office 응용 프로그램에서 VSTO 추가 기능을 로드할 때 이 클래스를 자동으로 인스턴스화합니다.
+ `ThisAddIn` 클래스에서 VSTO 추가 기능 코드 작성을 시작할 수 있습니다. Visual Studio는 VSTO 추가 기능 프로젝트의 *ThisAddIn* (in [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) 또는 *ThisAddIn.cs* (in C#) 코드 파일에이 클래스를 자동으로 생성 합니다. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 은 Microsoft Office 애플리케이션에서 VSTO 추가 기능을 로드할 때 이 클래스를 자동으로 인스턴스화합니다.
 
  `ThisAddIn` 클래스에는 두 가지 기본 이벤트 처리기가 있습니다. VSTO 추가 기능이 로드될 때 코드를 실행하려면 `ThisAddIn_Startup` 이벤트 처리기에 코드를 추가합니다. VSTO 추가 기능이 언로드되기 직전에 코드를 실행하려면 `ThisAddIn_Shutdown` 이벤트 처리기에 코드를 추가합니다. 이러한 이벤트 처리기에 대 한 자세한 내용은 [Office 프로젝트의 이벤트](../vsto/events-in-office-projects.md)를 참조 하세요.
 
@@ -64,7 +64,7 @@ ms.locfileid: "68872031"
 |Microsoft Office Excel|<xref:Microsoft.Office.Interop.Excel.Application>|
 |Microsoft Office InfoPath|<xref:Microsoft.Office.Interop.InfoPath.Application>|
 |Microsoft Office Outlook|<xref:Microsoft.Office.Interop.Outlook.Application>|
-|Microsoft Office PowerPoint|[응용 프로그램](/previous-versions/office/developer/office-2010/ff764034(v=office.14))|
+|Microsoft Office PowerPoint|[애플리케이션](/previous-versions/office/developer/office-2010/ff764034(v=office.14))|
 |Microsoft Office Project|Microsoft.Office.Interop.MSProject.Application|
 |Microsoft Office Visio|Microsoft.Office.Interop.Visio.Application|
 |Microsoft Office Word|<xref:Microsoft.Office.Interop.Word.Application>|
@@ -143,7 +143,7 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 
  자세한 내용은 [다른 Office 솔루션에서 VSTO 추가 기능의 코드 호출](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 - [Office 솔루션 개발](../vsto/developing-office-solutions.md)
 - [런타임에 VSTO 추가 기능에서 Word 문서 및 Excel 통합 문서 확장](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [다른 Office 솔루션에서 VSTO 추가 기능의 코드 호출](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)

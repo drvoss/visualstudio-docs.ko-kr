@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b3789b5e786038c2bf1fe5e823a1b0fb4f7a7c9
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 69b6256f2c6ae54467eb21cc17d50119b3c67a9f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922721"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235184"
 ---
 # <a name="ca1302-do-not-hardcode-locale-specific-strings"></a>CA1302: 로캘별 문자열을 하드코드하지 마세요.
 
@@ -31,7 +31,7 @@ ms.locfileid: "68922721"
 |TypeName|DoNotHardcodeLocaleSpecificStrings|
 |CheckId|CA1302|
 |범주|Microsoft.Globalization|
-|변경 수준|최신이 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 메서드는 특정 시스템 폴더의 경로 부분을 나타내는 문자열 리터럴을 사용 합니다.

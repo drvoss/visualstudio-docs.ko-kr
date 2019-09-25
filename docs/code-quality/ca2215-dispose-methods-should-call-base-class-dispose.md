@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f3c118b097dbcd9eba8a5755672bde9c11cb13a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 468b63ca554ea126bbd621a2502e54540e6ed068
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920305"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231276"
 ---
 # <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215: Dispose 메서드는 기본 클래스 Dispose를 호출해야 합니다.
 
@@ -29,7 +29,7 @@ ms.locfileid: "68920305"
 |TypeName|DisposeMethodsShouldCallBaseClassDispose|
 |CheckId|CA2215|
 |범주|Microsoft.Usage|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 을 구현 하 <xref:System.IDisposable?displayProperty=fullName> 는 형식은도 구현 <xref:System.IDisposable>하는 형식에서 상속 됩니다. 상속 하는 형식의 <xref:System.IDisposable.Dispose%2A> 메서드는부모형식의메서드를호출하지않습니다.<xref:System.IDisposable.Dispose%2A>
@@ -53,7 +53,7 @@ ms.locfileid: "68920305"
 
 [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2215-dispose-methods-should-call-base-class-dispose_2.vb)]
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.IDisposable?displayProperty=fullName>
 - [삭제 패턴](/dotnet/standard/design-guidelines/dispose-pattern)

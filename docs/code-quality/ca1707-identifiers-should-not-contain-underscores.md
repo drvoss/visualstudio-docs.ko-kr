@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cbd6d3999525808180f69652290807d327b6814
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: adfa0ccd63d0433d367b0e7278693608bb83d685
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797344"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234264"
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707: 식별자에는 밑줄을 사용할 수 없습니다.
 
@@ -28,27 +28,27 @@ ms.locfileid: "62797344"
 |TypeName|IdentifiersShouldNotContainUnderscores|
 |CheckId|CA1707|
 |범주|Microsoft.Naming|
-|변경 수준|주요-어셈블리에서 발생 한 경우<br /><br /> 아님-형식 매개 변수에서 발생 한 경우|
+|주요 변경 내용|중단-어셈블리에서 발생 하는 경우<br /><br /> 중단-형식 매개 변수에 대해 발생 하는 경우|
 
 ## <a name="cause"></a>원인
 
-밑줄을 포함 하는 식별자의 이름 (\_) 문자입니다.
+식별자 이름에 밑줄 (\_) 문자가 포함 되어 있습니다.
 
 ## <a name="rule-description"></a>규칙 설명
 
-규칙에 따라 식별자 이름 없는 밑줄 (\_) 문자입니다. 규칙 네임 스페이스, 형식, 멤버 및 매개 변수를 확인합니다.
+규칙에 따라 식별자 이름에 밑줄 (\_) 문자가 포함 되지 않습니다. 규칙은 네임 스페이스, 형식, 멤버 및 매개 변수를 확인 합니다.
 
-명명 규칙은 공통 된 모양을 라이브러리에 대 한 해당 공용 언어 런타임을 대상으로 합니다. 이렇게 하면 새 소프트웨어 라이브러리에 대 한 필수 항목이 며 관리 코드 개발의 전문 지식을 가진 사람이 라이브러리를 개발 하는 고객 신뢰도 증가 하는 학습 곡선을 줄어듭니다.
+명명 규칙은 공용 언어 런타임을 대상으로 하는 라이브러리에 대 한 일반적인 모양을 제공 합니다. 이렇게 하면 새 소프트웨어 라이브러리에 필요한 학습 곡선이 줄어들고, 관리 코드 개발에 대 한 전문 지식이 있는 사용자가 라이브러리를 개발 했을 때 고객의 자신감을 높일 수 있습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 
 이름에서 밑줄 문자를 모두 제거 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 
 이 규칙에서는 경고를 표시해야 합니다.
 
-## <a name="related-rules"></a>관련된 규칙
+## <a name="related-rules"></a>관련 규칙
 
-- [CA1709: 식별자에는 올바르게 표기를 사용 해야](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708: 식별자 대/소문자만 달라 야 합니다.](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1709: 식별자의 대/소문자를 올바르게 지정 해야 합니다.](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708: 식별자는 대/소문자가 달라 야 합니다.](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: dd3f5b76015a3a54ee085b5cc2dd532920ff0795
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 06772f8dd91c27834b329293d06cfbc2a7dcfcef
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920171"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71230765"
 ---
 # <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232: Windows Forms 진입점을 STAThread를 사용하여 표시하십시오.
 
@@ -31,7 +31,7 @@ ms.locfileid: "68920171"
 |TypeName|MarkWindowsFormsEntryPointsWithStaThread|
 |CheckId|CA2232|
 |범주|Microsoft.Usage|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 어셈블리가 <xref:System.Windows.Forms> 네임 스페이스를 참조 하 고 해당 진입점이 <xref:System.STAThreadAttribute?displayProperty=fullName> 특성으로 표시 되어 있지 않습니다.

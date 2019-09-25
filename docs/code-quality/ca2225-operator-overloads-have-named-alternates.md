@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f427bcdf4ec4e88dcc2842699d738dae7e8e09d
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: c027bc4581919f814b4d93eacba77248349fdf8b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69546910"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231081"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: 연산자 오버로드에는 명명된 대체 항목이 있습니다.
 
@@ -28,7 +28,7 @@ ms.locfileid: "69546910"
 |TypeName|OperatorOverloadsHaveNamedAlternates|
 |CheckId|CA2225|
 |범주|Microsoft.Usage|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 
@@ -46,9 +46,9 @@ ms.locfileid: "69546910"
 |---------|------------------|-----------|--------------------|
 |+ (이진)|+|+ (이진)|추가|
 |+=|+=|+=|추가|
-|&|And|&|BitwiseAnd|
+|&|and|&|BitwiseAnd|
 |&=|및 =|&=|BitwiseAnd|
-|&#124;|또는|&#124;|BitwiseOr|
+|&#124;|Or|&#124;|BitwiseOr|
 |&#124;=|또는 =|&#124;=|BitwiseOr|
 |--|해당 사항 없음|--|감소|
 |/|/|/|나누기|
@@ -68,18 +68,18 @@ ms.locfileid: "69546910"
 |&#124;&#124;|해당 사항 없음|&#124;&#124;|LogicalOr|
 |!|해당 사항 없음|!|LogicalNot|
 |%|Mod|%|Mod 또는 나머지가|
-|%=|N/A|%=|Mod|
+|%=|해당 사항 없음|%=|Mod|
 |* (이진)|*|*|곱하기|
 |*=|해당 사항 없음|*=|곱하기|
 |~|not|~|OnesComplement|
 |>>|>>|>>|RightShift|
 =|해당 사항 없음|>>=|RightShift|
 |-(이진)|-(이진)|-(이진)|빼기|
-|-=|N/A|-=|빼기|
-|true|IsTrue|N/A|IsTrue (속성)|
+|-=|해당 사항 없음|-=|빼기|
+|true|IsTrue|해당 사항 없음|IsTrue (속성)|
 |-(단항)|해당 사항 없음|-|구할|
-|+ (단항)|N/A|+|항목과|
-|false|IsFalse|거짓|IsTrue (속성)|
+|+ (단항)|해당 사항 없음|+|항목과|
+|false|IsFalse|False|IsTrue (속성)|
 
 해당 없음 = = 선택한 언어로 오버 로드 될 수 없습니다.
 

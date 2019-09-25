@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 20df85952b4e76e60d6e93067c1f1e7838b692cd
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69551724"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Windows Installer를 사용 하 여 Office 솔루션 배포
@@ -45,11 +45,11 @@ Visual Studio를 사용하여 Windows Installer를 만들면 최종 사용자의
 
 - [프로젝트 출력 추가](#Add)
 
-- [배포 및 응용 프로그램 매니페스트 추가](#AddD)
+- [배포 및 애플리케이션 매니페스트 추가](#AddD)
 
 - [종속 구성 요소를 필수 조건으로 구성](#Configure)
 
-- [사용자 컴퓨터에 솔루션을 배포할 위치 지정](#Location)
+- [Specify where you want to deploy the solution on the user's computer](#Location)
 
 - [VSTO 추가 기능 구성](#ConfigureRegistry)
 
@@ -64,7 +64,7 @@ ClickOnce를 사용 하 여 Office 솔루션을 배포 하는 방법에 대 한 
 ## <a name="Download"></a>샘플 다운로드
 이 항목에서는 다음과 같은 다운로드 가능한 샘플을 사용합니다.
 
-|샘플<br /><br />|설명<br /><br />|
+|예제<br /><br />|설명<br /><br />|
 |----------|---------------|
 |[ExcelAddIn](http://go.microsoft.com/fwlink/?LinkID=275492)<br /><br />|32비트 또는 64비트 버전의 Office를 실행하는 컴퓨터에 설치할 수 있는 Excel VSTO 추가 기능입니다.<br /><br />|
 |[ExcelWorkbook](http://go.microsoft.com/fwlink/?LinkID=275493)<br /><br />|32비트 또는 64비트 버전의 Office를 실행하는 컴퓨터에 설치할 수 있는 Excel 문서 수준 사용자 지정입니다.<br /><br />|
@@ -135,13 +135,13 @@ Office 프로젝트의 출력을 포함하도록 **OfficeAddInSetup** 프로젝�
 
    ![응용 프로그램 파일 단추입니다.](../vsto/media/installshield-applicationfiles.png "응용 프로그램 파일 단추입니다.")
 
-4. **응용 프로그램 파일** 페이지에서 **프로젝트 출력 추가** 단추를 선택합니다.
+4. **애플리케이션 파일** 페이지에서 **프로젝트 출력 추가** 단추를 선택합니다.
 
 5. **Visual Studio 출력 선택** 대화 상자에서 **기본 출력** 확인란을 선택한 후 **확인** 단추를 선택합니다.
 
-## <a name="AddD"></a>배포 및 응용 프로그램 매니페스트 추가
+## <a name="AddD"></a>배포 및 애플리케이션 매니페스트 추가
 
-1. **응용 프로그램 파일** 페이지에서 **파일 추가** 단추를 선택합니다.
+1. **애플리케이션 파일** 페이지에서 **파일 추가** 단추를 선택합니다.
 
 2. **열기** 대화 상자에서 **ExcelAddIn** 프로젝트의 출력 디렉터리를 찾습니다.
 
@@ -163,7 +163,7 @@ Office 프로젝트의 출력을 포함하도록 **OfficeAddInSetup** 프로젝�
 
 ### <a name="add-the-net-framework-4-or-the-net-framework-45-as-a-prerequisite"></a>필수 구성 요소로 .NET Framework 4 또는 .NET Framework 4.5를 추가 합니다.
 
-1. **솔루션 탐색기**에서 **OfficeAddInSetup** 프로젝트 노드를 확장하고 **응용 프로그램 데이터 지정** 노드를 확장한 후 다음 그림에 나와 있는 대로 **Redistributables** 파일을 선택합니다.
+1. **솔루션 탐색기**에서 **OfficeAddInSetup** 프로젝트 노드를 확장하고 **애플리케이션 데이터 지정** 노드를 확장한 후 다음 그림에 나와 있는 대로 **Redistributables** 파일을 선택합니다.
 
    ![솔루션 탐색기의 재배포 가능 파일](../vsto/media/installshield-redistributablesfile.png "솔루션 탐색기의 재배포 가능 파일")
 
@@ -289,13 +289,13 @@ VSTO 추가 기능을 컴퓨터의 모든 사용자에 대해 설치할지(컴�
 
    메뉴 모음에서 **보기** > **열기**를 선택 합니다.
 
-2. **프로젝트 도우미** 페이지 아래쪽에서 **응용 프로그램 레지스트리** 단추를 선택하면 다음 화면이 나타납니다.
+2. **프로젝트 도우미** 페이지 아래쪽에서 **애플리케이션 레지스트리** 단추를 선택하면 다음 화면이 나타납니다.
 
    ![응용 프로그램 레지스트리 단추입니다.](../vsto/media/installshield-applicationregistry.gif "응용 프로그램 레지스트리 단추입니다.")
 
-   **응용 프로그램 레지스트리** 페이지가 열립니다.
+   **애플리케이션 레지스트리** 페이지가 열립니다.
 
-3. **응용 프로그램에서 설치할 레지스트리 데이터를 구성하시겠습니까?** 에서 **예** 옵션 단추를 선택합니다.
+3. **애플리케이션에서 설치할 레지스트리 데이터를 구성하시겠습니까?** 에서 **예** 옵션 단추를 선택합니다.
 
 4. **대상 컴퓨터의 레지스트리 보기** 목록에서 만들려는 설치 관리자 유형을 사용할 수 있도록 하는 키 계층을 추가 합니다.
 
@@ -333,7 +333,7 @@ VSTO 추가 기능을 컴퓨터의 모든 사용자에 대해 설치할지(컴�
 
 7. 이 과정을 반복하여 다음 값을 만듭니다.
 
-|값 형식<br /><br />|이름<br /><br />|
+|값 형식<br /><br />|name<br /><br />|
 |--------------|--------|
 |문자열 값<br /><br />|**FriendlyName**<br /><br />|
 |DWORD 값<br /><br />|**LoadBehavior**<br /><br />|
@@ -390,7 +390,7 @@ VSTO 추가 기능을 컴퓨터의 모든 사용자에 대해 설치할지(컴�
 
 2. 템플릿 창에서 사용하려는 언어 노드 아래의 **Windows** 폴더를 선택합니다.
 
-3. **Windows**의 프로젝트 형식 목록에서 **콘솔 응용 프로그램** 템플릿을 선택합니다.
+3. **Windows**의 프로젝트 형식 목록에서 **콘솔 애플리케이션** 템플릿을 선택합니다.
 
 4. 프로젝트 **SetExcelDocumentProperties**의 이름을 지정한 다음 **확인** 단추를 선택합니다.
 
@@ -402,7 +402,7 @@ VSTO 추가 기능을 컴퓨터의 모든 사용자에 대해 설치할지(컴�
 
    - Microsoft.VisualStudio.Tools.Applications.ServerDocument
 
-7. **솔루션 탐색기**에서 **Program.cs** 파일(C# 응용 프로그램의 경우) 또는 **Module1.vb** 파일(Visual Basic 응용 프로그램의 경우)을 선택합니다.
+7. **솔루션 탐색기**에서 **Program.cs** 파일(C# 애플리케이션의 경우) 또는 **Module1.vb** 파일(Visual Basic 애플리케이션의 경우)을 선택합니다.
 
 8. 메뉴 모음에서 **보기** > **열기**를 선택 합니다.
 
@@ -425,7 +425,7 @@ VSTO 추가 기능을 컴퓨터의 모든 사용자에 대해 설치할지(컴�
 
    ![응용 프로그램 파일 단추입니다.](../vsto/media/installshield-applicationfiles.png "응용 프로그램 파일 단추입니다.")
 
-4. **응용 프로그램 파일** 페이지에서 **프로젝트 출력 추가** 단추를 선택합니다.
+4. **애플리케이션 파일** 페이지에서 **프로젝트 출력 추가** 단추를 선택합니다.
 
    **Visual Studio 출력 선택** 대화 상자가 나타납니다.
 
@@ -461,7 +461,7 @@ VSTO 추가 기능을 컴퓨터의 모든 사용자에 대해 설치할지(컴�
 
     솔루션이 들어 있는 폴더가 열립니다.
 
-13. 메모장에서 솔루션의 프로젝트 파일을 엽니다. Visual Basic 프로젝트의 경우 파일 이름은 해당 파일의 이름입니다 *.* 프로젝트의 경우 파일의 이름은 해당 파일의 이름입니다. C#
+13. 메모장에서 솔루션의 프로젝트 파일을 엽니다. Visual Basic 프로젝트의 경우 파일 이름은 해당 파일의 이름입니다 *.* 프로젝트의 경우 파일의 이름은 해당 파일의 이름 *입니다.* C#
 
 14. 프로젝트 파일에서 **&lt;솔루션 id&gt;** 요소를 검색 하 고 해당 값을 클립보드에 복사한 다음 메모장을 닫습니다.
 
@@ -498,9 +498,9 @@ VSTO 추가 기능을 컴퓨터의 모든 사용자에 대해 설치할지(컴�
 
 8. **프로젝트 컨텍스트** 테이블에서 **OfficeAddInSetup** 프로젝트의 **구성** 열에 있는 **SingleImage**를 선택한 후 **닫기** 단추를 선택합니다.
 
-9. 메뉴 모음에서 빌드 빌드 및 > **addinsetup**을 선택 합니다.
+9. 메뉴 모음에서 빌드**빌드 및 addinsetup** **을 선택** > 합니다.
 
-   빌드를 완료 한 후에는 다음 위치 에 있는 사용자의 Sqlservr.exe **addinsetup** 프로젝트의 setup.exe 파일을 찾을 수 있습니다. <em>OfficeAddInSetupProjectRoot</em> **\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\\**
+   빌드를 완료 한 후에는 다음 위치에 있는 사용자의 sqlservr.exe **addinsetup** 프로젝트의 *setup.exe 파일을* 찾을 수 있습니다. <em>OfficeAddInSetupProjectRoot</em> **\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\\**
 
 ## <a name="see-also"></a>참고 항목
 

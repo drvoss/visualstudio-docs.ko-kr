@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a73ce207d8efb0c6309ba52648c7231f89bc7984
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 6de48bf273a5c93afcd14e7bab2c5d4c4c4b5a7c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766053"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233832"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: 사용되지 않은 매개 변수를 검토하세요.
 
@@ -29,7 +29,7 @@ ms.locfileid: "70766053"
 |TypeName|ReviewUnusedParameters|
 |CheckId|CA1801|
 |범주|Microsoft.Usage|
-|변경 수준|중단-변경 내용에 관계 없이 멤버가 어셈블리 외부에 표시 되지 않는 경우<br /><br /> 중단 하지 않음-본문 내에서 매개 변수를 사용 하도록 멤버를 변경 하는 경우<br /><br /> 중단-매개 변수를 제거 하 고 어셈블리 외부에 표시 되는 경우입니다.|
+|주요 변경 내용|중단-변경 내용에 관계 없이 멤버가 어셈블리 외부에 표시 되지 않는 경우입니다.<br /><br /> 중단-본문 내에서 매개 변수를 사용 하도록 멤버를 변경 하는 경우<br /><br /> 중단-매개 변수를 제거 하 고 어셈블리 외부에 표시 되는 경우입니다.|
 
 ## <a name="cause"></a>원인
 

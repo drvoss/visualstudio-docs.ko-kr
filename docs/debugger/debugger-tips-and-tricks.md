@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 61c1efea7340425090adbdd1c9bc865c4a056d42
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "70987757"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Visual Studio에서 디버거의 생산성 팁과 요령 배우기
@@ -33,15 +33,15 @@ ms.locfileid: "70987757"
 
 ## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>코드를 편집 하 고 디버깅을C#계속 합니다 ( C++, VB,).
 
-Visual Studio에서 지원 되는 대부분의 언어에서 디버깅 세션 중에 코드를 편집 하 고 디버깅을 계속할 수 있습니다. 이 기능을 사용 하려면 디버거에서 일시 중지 된 동안 커서를 사용 하 여 코드를 클릭 하 고 편집을 수행한 다음 **F5**, **F10**또는 **F11** 키를 눌러 디버깅을 계속 합니다.
+Visual Studio에서 지원되는 대부분의 언어에서 디버깅 세션 중에 코드를 편집하고 디버깅을 계속할 수 있습니다. 이 기능을 사용하려면 디버거에서 일시 중지된 동안 커서를 사용하여 코드를 클릭하고 편집을 수행한 후 **F5**, **F10** 또는 **F11**을 눌러 디버깅을 계속합니다.
 
-![편집 하며 계속 하기 디버깅](../debugger/media/dbg-tips-edit-and-continue.gif "Editandcontinue")
+![디버깅 편집하며 계속하기](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
 
-기능 및 기능 제한 사용에 대 한 자세한 내용은 [편집 하며 계속 하기](../debugger/edit-and-continue.md)를 참조 하세요.
+기능 사용 및 기능 제한에 대한 자세한 내용은 [편집하며 계속하기](../debugger/edit-and-continue.md)를 참조하세요.
 
 ## <a name="edit-xaml-code-and-continue-debugging"></a>XAML 코드 편집 및 디버깅 계속
 
-디버깅 세션 중 XAML 코드를 수정 하려면 [Xaml 핫 다시 로드를 사용 하 여 실행 중인 xaml 코드 작성 및 디버그](xaml-hot-reload.md)를 참조 하세요.
+디버깅 세션 중 XAML 코드를 수정하려면 [XAML 핫 다시 로드를 사용하여 코드 작성 및 실행 중인 XAML 코드 디버그](xaml-hot-reload.md)를 참조하세요.
 
 ## <a name="debug-issues-that-are-hard-to-reproduce"></a>재현 하기 어려운 문제 디버그
 
@@ -173,6 +173,6 @@ UWP 앱에서 API를 사용 하 여 수행 되는 `Windows.Web.Http` 네트워�
 - [7 Visual Studio에서 디버깅에 대 한 알려진 해킹 보다 작음](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
 - [7 Visual Studio에서 숨겨진 보석](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [바로 가기 키](../ide/productivity-shortcuts.md)

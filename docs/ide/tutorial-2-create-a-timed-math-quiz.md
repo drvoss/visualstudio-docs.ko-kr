@@ -4,24 +4,21 @@ ms.date: 11/04/2016
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
 ms.topic: tutorial
 ms.technology: vs-ide-general
-ms.devlang:
-- csharp
-- vb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51bda0a85735bf2b1dae5044b9e4ab8e5384f8ae
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: 39550eb3e2d5fe78e50257b51b52642740781600
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987870"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118858"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>자습서 2: 시간이 지정된 수학 퀴즈 만들기
 
-이 자습서에서는 퀴즈를 푸는 사람이 지정된 시간 내에 네 가지 난수 산술 문제에 대답해야 하는 퀴즈를 빌드합니다. 다음과 같은 작업을 수행하는 방법을 살펴봅니다.
+이 자습서에서는 퀴즈를 푸는 사람이 지정된 시간 내에 네 가지 난수 산술 문제에 대답해야 하는 퀴즈를 빌드합니다. 다음 방법을 알아봅니다.
 
 - <xref:System.Random> 클래스를 사용하여 난수를 생성합니다.
 
@@ -42,7 +39,7 @@ ms.locfileid: "70987870"
 > [!NOTE]
 > 이 자습서에서는 C#과 Visual Basic 모두에 대해 다루고 있으므로 사용 중인 프로그래밍 언어와 관련된 정보를 참조하세요.
 
-## <a name="related-topics"></a>관련 항목
+## <a name="related-topics"></a>관련된 항목
 
 |제목|설명|
 |-----------|-----------------|

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e59e1bd618cfeb28b93d073997ef451357ee8d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 16b46d47ec5850a79d78667671c7eb671d859f3e
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830794"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128229"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>디버거 없이 메모리 사용량 분석
 
@@ -216,7 +216,7 @@ ms.locfileid: "62830794"
 
 ## <a name="see-also"></a>참고 항목
 - [JavaScript 메모리](../profiling/javascript-memory.md)
-- [Visual Studio의 프로파일링](../profiling/index.md)
+- [Visual Studio의 프로파일링](../profiling/index.yml)
 - [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)
 - [C++, C# 및 Visual Basic을 사용하는 UWP 앱의 성능 모범 사례](/previous-versions/windows/apps/hh750313\(v\=win.10\))
 - [Visual Studio에서 새 메모리 사용량 도구로 메모리 문제 진단](http://go.microsoft.com/fwlink/p/?LinkId=394706)

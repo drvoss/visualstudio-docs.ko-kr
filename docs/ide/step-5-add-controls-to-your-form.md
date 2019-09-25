@@ -5,20 +5,17 @@ ms.assetid: dc2746f4-0b5c-4674-9ef7-f40f94150f52
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.devlang:
-- csharp
-- vb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ff85034d7185e68a43ed8b4c70f68787414ddd9
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: b88af1a0ac1ec51f57d3aa339c2c2ec4adb45134
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913171"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71119000"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>5단계: 양식에 컨트롤 추가
 
@@ -51,7 +48,7 @@ ms.locfileid: "70913171"
 1. 폼에서 **TableLayoutPanel**을 선택하고 **도구 상자**에서 TableLayoutPanel 컨트롤이 있는 **컨테이너** 그룹으로 이동한 다음, **FlowLayoutPanel** 항목을 두 번 클릭하여 마지막 셀(오른쪽 맨 아래)에 새 컨트롤을 추가합니다. 그런 다음 FlowLayoutPanel을 TableLayoutPanel에 도킹합니다. FlowLayoutPanel의 검정색 삼각형 작업 목록에서 **부모 컨테이너에서 도킹**을 선택하거나 FlowLayoutPanel의 **Dock** 속성을 **채우기**로 설정하면 됩니다.
 
     > [!NOTE]
-    > <xref:System.Windows.Forms.FlowLayoutPanel>은 한 행의 다른 컨트롤을 차례로 정렬하는 컨테이너입니다. FlowLayoutPanel의 크기를 조정하면 공간이 충분한 경우 하나의 행에 모든 컨트롤이 레이아웃됩니다. 그렇지 않은 경우 하나씩 쌓아올리는 방식으로 순서대로 정렬됩니다. <br/><br/>여기서 FlowLayoutPanel을 사용하여 네 개의 단추를 수용합니다. 단추를 추가할 때 하나씩 쌓아올리는 방식으로 배열되는 경우 단추를 추가하기 전에 FlowLayoutPanel을 선택해야 합니다. <br/><br/>(일반적으로 각 셀에는 컨트롤이 하나만 포함되어 있습니다. 이 예제에서 TableLayoutPanel의 오른쪽 아래 셀에는 네 개의 단추 컨트롤이 포함되어 있습니다. 이유  FlowLayoutPanel은 다른 컨트롤을 보유한 셀의 컨트롤인 컨테이너 컨트롤이기 때문입니다.)
+    > <xref:System.Windows.Forms.FlowLayoutPanel>은 한 행의 다른 컨트롤을 차례로 정렬하는 컨테이너입니다. FlowLayoutPanel의 크기를 조정하면 공간이 충분한 경우 하나의 행에 모든 컨트롤이 레이아웃됩니다. 그렇지 않은 경우 하나씩 쌓아올리는 방식으로 순서대로 정렬됩니다. <br/><br/>여기서 FlowLayoutPanel을 사용하여 네 개의 단추를 수용합니다. 단추를 추가할 때 하나씩 쌓아올리는 방식으로 배열되는 경우 단추를 추가하기 전에 FlowLayoutPanel을 선택해야 합니다. <br/><br/>(일반적으로 각 셀에는 컨트롤이 하나만 포함되어 있습니다. 이 예제에서 TableLayoutPanel의 오른쪽 아래 셀에는 네 개의 단추 컨트롤이 포함되어 있습니다. 그 이유는  FlowLayoutPanel은 다른 컨트롤을 보유한 셀의 컨트롤인 컨테이너 컨트롤이기 때문입니다.)
 
 ## <a name="to-add-buttons"></a>단추를 추가하려면
 

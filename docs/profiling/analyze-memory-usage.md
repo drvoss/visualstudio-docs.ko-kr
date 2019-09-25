@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e8f54b63847fca87eacc7dd19eccba6d285764a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 124b792e134b31a5964c8f202c7870a58bc0878b
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777348"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128245"
 ---
 # <a name="analyze-memory-usage"></a>메모리 사용량 분석
 디버거 통합 **메모리 사용량** 진단 도구를 사용하여 메모리 누수 및 비효율적인 메모리를 찾습니다. 메모리 사용량 도구를 통해 관리되는 메모리 및 네이티브 메모리 힙의 *스냅샷* 을 하나 이상 만들 수 있습니다. .NET, ASP.NET, 네이티브 또는 혼합 모드(.NET 및 네이티브) 앱의 스냅샷을 수집할 수 있습니다.
@@ -34,5 +34,5 @@ Windows 7 이상에서 디버거 없이 프로파일링 도구를 사용할 수 
 
 ## <a name="see-also"></a>참고 항목
 
-- [Visual Studio의 프로파일링](../profiling/index.md)
+- [Visual Studio의 프로파일링](../profiling/index.yml)
 - [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)

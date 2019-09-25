@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 65d6dbd67debc4673173af29e0c92aa57b58c865
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: cbaaa53fe737761fdd938b7861c371e8e5619acc
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703870"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128168"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>빠른 시작: Visual Studio에서 CPU 사용량 데이터(ASP.NET) 분석
 
@@ -51,7 +51,7 @@ Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로�
     using System.Threading;
     ```
 
-1. Data.cs에서 다음 코드를 
+1. Data.cs에서 다음 코드를
 
     ```csharp
     public class Data
@@ -59,7 +59,7 @@ Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로�
     }
     ```
 
-    이 코드로 바꿉니다.
+    바꿉니다.
 
     ```csharp
     public class ServerClass
@@ -140,7 +140,7 @@ Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로�
     }
     ```
 
-    이 코드로 바꿉니다.
+    바꿉니다.
 
     ```csharp
     public ActionResult About()
@@ -228,5 +228,5 @@ CPU 사용량 아래의 함수 목록을 검사하고, 가장 많은 작업을 �
 
 ## <a name="see-also"></a>참고 항목
 
-- [Visual Studio의 프로파일링](../profiling/index.md)
+- [Visual Studio의 프로파일링](../profiling/index.yml)
 - [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)

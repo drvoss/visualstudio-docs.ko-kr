@@ -16,19 +16,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34cf1d58250568da1ed64ad0f296f1f8efe43e2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c70e30a8c8367678c6df156e8ea3a5b76889e468
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777305"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128266"
 ---
 # <a name="analyze-performance-tools-data"></a>성능 도구 데이터 분석
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구의 성능 보고서를 사용하면 애플리케이션 성능 문제를 확인하고 분석할 수 있습니다. 이 섹션에서는 성능 데이터를 검사하는 데 사용할 수 있는 성능 보고서 및 뷰에 대한 개요를 제공합니다.
 
 ## <a name="common-tasks"></a>일반 작업
 
-|작업|관련 내용|
+|Task|관련 콘텐츠|
 |----------|---------------------|
 |**성능 규칙을 사용하여 문제를 신속하게 식별:** 프로파일링 도구 성능 규칙을 사용하면 일반적인 문제를 식별하고 문제가 포함된 소스 코드로 쉽게 이동할 수 있습니다. 자세한 도움말 항목에서 종종 해결 방법을 제안할 수 있습니다.|-   [성능 규칙을 사용하여 데이터 분석](../profiling/using-performance-rules-to-analyze-data.md)|
 |**보고서 보기 세부 정보 이해:** 프로파일링 실행의 프로세스, 스레드, 모듈 및 기능에 대한 집계된 성능 데이터를 제공합니다. 표시되는 데이터는 데이터를 수집하는 데 사용된 프로파일링 방법에 따라 다릅니다.|-   [성능 보고서 뷰](../profiling/performance-report-views.md)|
@@ -41,5 +41,5 @@ ms.locfileid: "62777305"
 
 ## <a name="see-also"></a>참고 항목
 - [성능 탐색기](../profiling/performance-explorer.md)
-- [Visual Studio의 프로파일링](../profiling/index.md)
+- [Visual Studio의 프로파일링](../profiling/index.yml)
 - [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)

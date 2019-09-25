@@ -4,9 +4,6 @@ ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.devlang:
-- csharp
-- vb
 dev_langs:
 - CSharp
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c15bc7b3f1312d588699758d9be3e969d2db052
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: 47932e8a647cb9a5ae555de09778fcd67da397e2
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079384"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118731"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>6단계: 빼기 문제 추가
 이 자습서의 6단계에서는 빼기 문제를 추가하고 다음 작업을 수행하는 방법을 알아봅니다.

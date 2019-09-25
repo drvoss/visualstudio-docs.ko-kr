@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37326bbe44eed15a562f0d28c01eac02973a2487
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 16443b30ccf6ba03a01df0234695d27e4cd909af
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789260"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186492"
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv(devenv.exe)
 
@@ -49,7 +49,7 @@ devenv /UseEnv {SolutionName|ProjectName}
 
   프로젝트 파일의 전체 경로 및 이름입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 이 스위치는 **VC++ 디렉터리**의 프로젝트 속성에서 Visual Studio IDE에 영향을 줍니다. `/UseEnv` 스위치를 지정하면 **VC++ 디렉터리** 노드는 PATH, INCLUDE, LIBPATH 및 LIB 환경 변수의 값을 표시합니다. **소스 디렉터리** 및 **제외 디렉터리**의 값도 표시합니다. 스위치를 지정하지 않으면 노드는 환경 변수를 다음 5개의 디렉터리 값으로 바꿉니다. **실행 파일 디렉터리**, **포함 디렉터리**, **참조 디렉터리**, **라이브러리 디렉터리** 및 **라이브러리 WinRT 디렉터리**.
 
@@ -58,7 +58,7 @@ devenv /UseEnv {SolutionName|ProjectName}
 
 이 스위치로 프로젝트 이름을 지정하면 프로젝트의 부모 솔루션 내에 있는 모든 프로젝트의 환경 변수가 표시됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 다음 예제에서는 Visual Studio를 시작하고 환경 변수를 `MySolution` 솔루션의 속성 페이지에 로드합니다.
 
@@ -69,4 +69,4 @@ devenv.exe /useenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln"
 ## <a name="see-also"></a>참고 항목
 
 - [Devenv 명령줄 스위치](../../ide/reference/devenv-command-line-switches.md)
-- [VC++ 디렉터리 속성 페이지(Windows)](/cpp/ide/vcpp-directories-property-page)
+- [VC++ 디렉터리 속성 페이지(Windows)](/cpp/build/reference/vcpp-directories-property-page)

@@ -5,20 +5,17 @@ ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.devlang:
-- csharp
-- vb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c0f867179fd78ecb753a9b66cfbdb8479e16c3b
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 7d9a525ef9da6583a37d5e4d26bfec7d0558cde4
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913264"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118668"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>자습서 1: 사진 뷰어 만들기
 
@@ -29,7 +26,7 @@ ms.locfileid: "70913264"
 
 이 자습서에서는 다음 작업을 단계별로 안내합니다.
 
-* 새 프로젝트를 만듭니다.
+* 새 프로젝트 만들기
 
 * 애플리케이션을 테스트(디버깅)합니다.
 
@@ -71,4 +68,4 @@ ms.locfileid: "70913264"
 
 * [추가 C# 자습서](/visualstudio/get-started/csharp/)
 * [Visual Basic 자습서](/visualstudio/get-started/visual-basic/)
-* [C++ 자습서](../ide/getting-started-with-cpp-in-visual-studio.md)
+* [C++ 자습서](/cpp/get-started/tutorial-console-cpp)

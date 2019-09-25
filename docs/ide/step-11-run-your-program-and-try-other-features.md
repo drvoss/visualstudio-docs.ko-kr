@@ -5,20 +5,17 @@ ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.devlang:
-- csharp
-- vb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 672156f9c1274189e904c79eb74a0c01e10f3a60
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: ad0489cce76642df0dd069e0a05e1e50b55d5d8f
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913120"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118795"
 ---
 # <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>11단계: 사진 뷰어 앱을 실행하고 다른 기능 사용해 보기
 
@@ -52,7 +49,7 @@ ms.locfileid: "70913120"
 
 ## <a name="next-steps"></a>다음 단계
 
-자세히 알아보려면 계속 다음 자습서를 사용하세요.
+자세히 알아보려면 다음 자습서를 계속합니다.
 
 > [!div class="nextstepaction"]
 > [자습서 2: 시간이 지정된 수학 퀴즈 만들기](../ide/tutorial-2-create-a-timed-math-quiz.md)
@@ -63,4 +60,4 @@ ms.locfileid: "70913120"
 
 * [추가 C# 자습서](/visualstudio/get-started/csharp/)
 * [추가 Visual Basic 자습서](/visualstudio/get-started/visual-basic/)
-* [C++ 자습서](../ide/getting-started-with-cpp-in-visual-studio.md)
+* [C++ 자습서](/cpp/get-started/tutorial-console-cpp)

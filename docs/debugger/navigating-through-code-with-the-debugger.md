@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e07e2612e01453115cf4cd6120d92bfd5b0168bd
-ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/03/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "70222646"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Visual Studio 디버거를 사용 하 여 코드 탐색
@@ -79,7 +79,7 @@ Visual Studio 디버거는 코드를 탐색 하 여 앱의 상태를 검사 하 
 
 디버깅 하는 동안 함수를 고려 하지 않거나 잘 테스트 된 라이브러리 코드와 같이 작동 하는 것을 알 수 있습니다. 다음 명령을 사용 하 여 코드를 건너뛸 수 있습니다. 함수는 계속 실행 되지만 디버거는 해당 함수를 건너뜁니다.
 
-|키보드 명령|디버그 메뉴 명령|Description|
+|키보드 명령|디버그 메뉴 명령|설명|
 |----------------------|------------------|-----------------|
 |**F10**|**프로시저 단위 실행**|현재 줄에 함수 호출이 포함 된 경우 **프로시저 단위** 실행은 코드를 실행 한 다음 호출 된 함수가 반환 된 후 코드의 첫 번째 줄에서 실행을 일시 중단 합니다.|
 |**Shift**+**F11**|**프로시저 나가기**|**프로시저** 실행 코드를 계속 실행 하 고 현재 함수가 반환 될 때 실행을 일시 중단 합니다. 디버거가 현재 함수를 건너뜁니다.|
@@ -184,7 +184,7 @@ Microsoft 기호를 로드 하려면 [기호 위치 구성 및 옵션 로드](sp
 ## <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> 한 단계씩 관리 코드의 속성 및 연산자 실행
  기본적으로 디버거는 관리 코드의 속성과 연산자를 건너뜁니다. 대부분의 경우 이렇게 하면 더 나은 디버깅 환경이 제공됩니다. 속성 또는 연산자를 한 단계씩 실행 하려면 **디버그** > **옵션**을 선택 합니다. **디버깅** > **일반** 페이지에서 **속성 및 연산자 건너뛰기(관리 전용)** 확인란의 선택을 취소합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 - [디버깅이란?](../debugger/what-is-debugging.md)
 - [디버깅 기술 및 도구](../debugger/write-better-code-with-visual-studio.md)
 - [먼저 디버깅 살펴보기](../debugger/debugger-feature-tour.md)

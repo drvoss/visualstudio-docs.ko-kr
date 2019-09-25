@@ -10,10 +10,10 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 7680b305fad6f8ea1d7961ec5a70ddafd578c77d
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "71095263"
 ---
 # <a name="use-tracepoints-in-the-visual-studio-debugger"></a>Visual Studio 디버거에서 추적점 사용
@@ -110,7 +110,7 @@ ms.locfileid: "71095263"
 
 ![조건식 적중 횟수](../debugger/media/conditionalexpressionhitcount.png "조건식 적중 횟수")
 
-### <a name="filter"></a>Filter
+### <a name="filter"></a>필터
 필터 조건의 경우 표시 되는 장치, 프로세스 또는 스레드 출력을 지정 합니다.
 
 ![조건식 필터](../debugger/media/conditionalexpressionfilter.png "조건식 필터")
@@ -133,7 +133,7 @@ ms.locfileid: "71095263"
 
 **작업** 메시지 상자에서 식이 계산 되는 방식은 현재 개발에 사용 하 고 있는 언어와 다를 수 있습니다. 예를 들어 문자열을 출력 하기 위해 일반적으로 또는 `Debug.WriteLine()` `console.log()`를 사용 하는 경우에도 메시지를 따옴표로 둘러쌀 필요가 없습니다. 또한 식 출력에 대 한 중괄호`{ }`구문 ()은 개발 언어에서 값을 출력 하는 규칙과 다를 수 있습니다. 그러나 중괄호 (`{ }`) 안에 있는 콘텐츠는 여전히 개발 언어의 구문을 사용 하 여 작성 해야 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [디버깅이란?](../debugger/what-is-debugging.md)
 - [Visual Studio C# 를 사용 하 여 더 나은 코드 작성](../debugger/write-better-code-with-visual-studio.md)

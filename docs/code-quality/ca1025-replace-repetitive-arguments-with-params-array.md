@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5014bfe809cb5d56a22e971833128d1f48d77319
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: f65d64dd4e881c41b17cd7cb9dc072a6fe800766
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922975"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236141"
 ---
 # <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025: 반복 인수를 매개 변수 배열로 바꾸세요.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922975"
 |TypeName|ReplaceRepetitiveArgumentsWithParamsArray|
 |CheckId|CA1025|
 |범주|Microsoft.Design|
-|변경 수준|최신이 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 공용 형식의 public 또는 protected 메서드에는 세 개 이상의 매개 변수가 있으며 마지막 세 매개 변수는 동일한 형식입니다.

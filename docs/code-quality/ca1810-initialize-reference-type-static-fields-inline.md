@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8838de46c6b14f698194f343aebec30402452970
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5e6f65c8b8c570f8df142c36f85388b68b66d3b0
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921521"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233664"
 ---
 # <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810: 참조 형식 정적 필드를 인라인으로 초기화하세요.
 
@@ -31,7 +31,7 @@ ms.locfileid: "68921521"
 |TypeName|InitializeReferenceTypeStaticFieldsInline|
 |CheckId|CA1810|
 |범주|Microsoft.Performance|
-|변경 수준|최신이 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 참조 형식은 명시적인 정적 생성자를 선언 합니다.

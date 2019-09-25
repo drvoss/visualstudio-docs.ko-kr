@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 289062a15c35641d5558409c7643301e346b6e65
-ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69976697"
 ---
 # <a name="nesting-projects"></a>프로젝트 중첩
@@ -32,7 +32,7 @@ VS 패키지를 사용 하는 엔터프라이즈 응용 프로그램 개발자�
 ## <a name="nested-projects-example"></a>중첩 프로젝트 예제
  ![중첩 프로젝트 솔루션](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects") 중첩 프로젝트 예제
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
 - [중첩된 프로젝트 언로드 및 다시 로드에 대한 고려 사항](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
 - [중첩된 프로젝트에 대한 마법사 지원](../../extensibility/internals/wizard-support-for-nested-projects.md)
 - [프로젝트 템플릿 및 항목 템플릿 등록](../../extensibility/internals/registering-project-and-item-templates.md)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dbd8580f5aaeb88c08d35b50258510cb1a85ba2
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8699e3434dc9c4cf9d3eccc37916c20ff7f34015
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920296"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231194"
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: Equals를 재정할 때 GetHashCode를 재정의하세요.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68920296"
 |TypeName|OverrideGetHashCodeOnOverridingEquals|
 |CheckId|CA2218|
 |범주|Microsoft.Usage|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 Public 형식은를 재정의 <xref:System.Object.Equals%2A?displayProperty=fullName> 하지만는 재정의 <xref:System.Object.GetHashCode%2A?displayProperty=fullName>하지 않습니다.
@@ -62,7 +62,7 @@ Public 형식은를 재정의 <xref:System.Object.Equals%2A?displayProperty=full
 
 ## <a name="class-example"></a>클래스 예제
 
-### <a name="description"></a>Description
+### <a name="description"></a>설명
 다음 예제에서는이 규칙을 위반 하는 클래스 (참조 형식)를 보여 줍니다.
 
 ### <a name="code"></a>코드
@@ -76,7 +76,7 @@ Public 형식은를 재정의 <xref:System.Object.Equals%2A?displayProperty=full
 
 ## <a name="structure-example"></a>구조 예제
 
-### <a name="description"></a>Description
+### <a name="description"></a>설명
 다음 예제에서는이 규칙을 위반 하는 구조체 (값 형식)를 보여 줍니다.
 
 ### <a name="code"></a>코드
@@ -99,7 +99,7 @@ Public 형식은를 재정의 <xref:System.Object.Equals%2A?displayProperty=full
 
 [CA2231: ValueType.Equals를 재정의할 때 같음 연산자를 오버로드하십시오.](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 - <xref:System.Object.GetHashCode%2A?displayProperty=fullName>

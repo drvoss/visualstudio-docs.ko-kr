@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d83da42a029d746899bfaccf5d62f8856a040611
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 536e676a1b2527c466aae741ca7117be507bfb9a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921113"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232748"
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: 메서드 보안은 형식의 상위 집합이어야 합니다.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921113"
 |TypeName|MethodSecurityShouldBeASupersetOfType|
 |CheckId|CA2114|
 |범주|Microsoft.Security|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 형식에 선언적 보안이 있고 해당 메서드 중 하나에 동일한 보안 작업에 대 한 선언적 보안이 있고, 보안 작업에 [링크 요청이](/dotnet/framework/misc/link-demands)없고, 형식에 의해 확인 된 사용 권한이 메서드로 확인 된 사용 권한의 하위 집합이 아닌 경우
@@ -64,7 +64,7 @@ ms.locfileid: "68921113"
 [No read permission (demanded by method)] Could not access personal information: Request failed.
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [보안 코딩 지침](/dotnet/standard/security/secure-coding-guidelines)
 - [링크 요청](/dotnet/framework/misc/link-demands)

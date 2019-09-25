@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dac8a9201e375877c1b586bd6415dd81764f5d2b
-ms.sourcegitcommit: dae5dfd626277b58ebd7b21a75757f683f1eacc5
+ms.openlocfilehash: d148efb87c8516b34342a8c9d16b63364a2eae16
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70739231"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231003"
 ---
 # <a name="ca2229-implement-serialization-constructors"></a>CA2229: serialization 생성자를 구현하십시오.
 
@@ -28,7 +28,7 @@ ms.locfileid: "70739231"
 |TypeName|ImplementSerializationConstructors|
 |CheckId|CA2229|
 |범주|Microsoft.Usage|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 형식은 <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> 인터페이스를 구현 하 고, 대리자 또는 인터페이스가 아니고, 다음 조건 중 하나에 해당 합니다.
@@ -61,7 +61,7 @@ ms.locfileid: "70739231"
 
 [CA2237: SerializableAttribute로 ISerializable 형식 표시](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>
 - <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e88f22f25ff0620a88685dee93fd5658c302db74
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 827a8ee01575d6d263c8f8ee423de72cfe939e39
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920238"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231174"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221: 종료자는 protected여야 합니다.
 
@@ -28,7 +28,7 @@ ms.locfileid: "68920238"
 |TypeName|FinalizersShouldBeProtected|
 |CheckId|CA2221|
 |범주|Microsoft.Usage|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 Public 형식은 패밀리 (protected) 액세스를 지정 하지 않는 종료자를 구현 합니다.
@@ -78,6 +78,6 @@ Public 형식은 패밀리 (protected) 액세스를 지정 하지 않는 종료�
 } // end of namespace
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [삭제 패턴](/dotnet/standard/design-guidelines/dispose-pattern)

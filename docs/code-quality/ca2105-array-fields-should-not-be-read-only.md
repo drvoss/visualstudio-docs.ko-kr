@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f8a02ae357dbf36cb4d3e4bd21aaad0fed3a320
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 7407fcbe035d02992f414027114d69c257f5f390
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586582"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232917"
 ---
 # <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105: 배열 필드는 읽기 전용이면 안 됩니다.
 
@@ -28,58 +28,58 @@ ms.locfileid: "67586582"
 |TypeName|ArrayFieldsShouldNotBeReadOnly|
 |CheckId|CA2105|
 |범주|Microsoft.Security|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 
-배열을 포함 하는 public 또는 protected 필드는 읽기 전용으로 선언 됩니다.
+배열을 보유 하는 public 또는 protected 필드가 읽기 전용으로 선언 된 경우
 
 ## <a name="rule-description"></a>규칙 설명
 
-적용 하는 경우는 `readonly` (`ReadOnly` 에서 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 한정자 배열 필드를 포함 하는 필드를 다른 배열로 참조를 변경할 수 없습니다. 그러나 읽기 전용 필드에 저장된 배열의 요소는 변경할 수 있습니다. 의사 결정 또는 공개적으로 액세스할 수 있는 읽기 전용 배열 요소를 기반으로 하는 작업을 수행 하는 코드를 악용할 수 있는 보안 취약점을 포함할 수 있습니다.
+배열을 포함 하는 `readonly` 필드`ReadOnly` 에 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)](in) 한정자를 적용 하는 경우 다른 배열을 참조 하도록 필드를 변경할 수 없습니다. 그러나 읽기 전용 필드에 저장된 배열의 요소는 변경할 수 있습니다. 공개적으로 액세스할 수 있는 읽기 전용 배열의 요소를 기반으로 결정을 하거나 작업을 수행 하는 코드는 악용 가능한 보안 취약성을 포함할 수 있습니다.
 
-참고는 디자인 규칙을 위반 하도 공용 필드 [CA1051: 표시 되는 인스턴스 필드를 선언 하지 마십시오](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)합니다.
+공용 필드를 포함 하면 디자인 규칙 [CA1051 위반 됩니다. 표시 되는 인스턴스 필드](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)를 선언 하지 마십시오.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 
-이 규칙에 의해 식별 되는 보안 취약점을 해결 하려면 자제 내용의 공개적으로 액세스할 수 있는 읽기 전용 배열입니다. 다음 절차 중 하나를 사용 하는 것이 좋습니다.
+이 규칙으로 식별 되는 보안 취약성을 해결 하려면 공개적으로 액세스할 수 있는 읽기 전용 배열의 내용을 사용 하지 마십시오. 다음 절차 중 하나를 사용 하는 것이 좋습니다.
 
-- 변경할 수 없는 강력한 형식의 컬렉션을 사용 하 여 배열을 대체 합니다. 자세한 내용은 <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>을 참조하세요.
+- 변경할 수 없는 강력한 형식의 컬렉션으로 배열을 바꿉니다. 자세한 내용은 <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>을 참조하세요.
 
-- Public 필드를 private 배열의 복제본을 반환 하는 메서드로 대체 합니다. 코드 복제본에 의존 하지 않습니다, 이므로 위험이 없는 요소를 수정할 경우.
+- Public 필드를 private 배열의 복제본을 반환 하는 메서드로 바꿉니다. 코드가 클론을 사용 하지 않으므로 요소가 수정 되는 경우에는 위험이 없습니다.
 
-두 번째 방법은 했다면 바꾸지 마세요 필드 속성을 사용 하 여 부정적인 배열을 반환 하는 속성에는 성능에 영향을 합니다. 자세한 내용은 참조 하세요. [CA1819: 속성은 배열을 반환 해서는](../code-quality/ca1819-properties-should-not-return-arrays.md)합니다.
+두 번째 방법을 선택한 경우 필드를 속성으로 바꾸지 마십시오. 배열을 반환 하는 속성은 성능에 부정적인 영향을 줍니다. 자세한 내용은 CA1819를 참조 [하세요. 속성은 배열을](../code-quality/ca1819-properties-should-not-return-arrays.md)반환 해서는 안 됩니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 
-이 규칙에서 경고를 제외 것이 좋습니다. 거의 없는 시나리오는 읽기 전용 필드의 내용을 중요 하지 않은 발생 합니다. 이 시나리오를 사용 하 여이 경우 제거를 `readonly` 메시지를 제외 하는 대신 한정자입니다.
+이 규칙에서는 경고를 제외 하는 것이 좋습니다. 읽기 전용 필드의 내용이 중요 하지 않은 경우 거의 발생 하지 않습니다. 시나리오에서이 경우에는 메시지를 제외 하는 `readonly` 대신 한정자를 제거 합니다.
 
 ## <a name="example-1"></a>예제 1
 
-이 예제에서는이 규칙을 위반의 위험을 보여 줍니다. 첫 번째 부분에는 형식이 있는 예제 라이브러리를 보여 줍니다 `MyClassWithReadOnlyArrayField`, 두 개의 필드를 포함 하는 (`grades` 및 `privateGrades`) 보호 되지 않습니다. 필드 `grades` 공용 이며 따라서 모든 호출자에 게 취약 합니다. 필드 `privateGrades` 개인 이지만 호출자에 게 반환 되기 때문에 여전히 취약 합니다 `GetPrivateGrades` 메서드. 합니다 `securePrivateGrades` 필드에서 안전한 방식으로 노출 되는 `GetSecurePrivateGrades` 메서드. 좋은 디자인 사례를 따르는 private으로 선언 됩니다. 두 번째 부분에 저장 된 값을 변경 하는 코드를 표시 합니다 `grades` 및 `privateGrades` 멤버입니다.
+이 예제에서는이 규칙을 위반 하는 위험을 보여 줍니다. 첫 번째 부분에서는 보안 되지 않은 두 필드 ( `MyClassWithReadOnlyArrayField``grades` 및 `privateGrades`)가 포함 된 형식의 예제 라이브러리를 보여 줍니다. 필드 `grades` 는 public 이므로 모든 호출자에 게 취약 합니다. 필드가 `privateGrades` private 이지만 `GetPrivateGrades` 메서드에 의해 호출자에 게 반환 되기 때문에 여전히 취약 합니다. 필드 `securePrivateGrades` 는 `GetSecurePrivateGrades` 메서드에 의해 안전 하 게 노출 됩니다. 적절 한 디자인 방법에 따라 전용으로 선언 됩니다. 두 번째 부분에서는 `grades` 및 `privateGrades` 멤버에 저장 된 값을 변경 하는 코드를 보여 줍니다.
 
-예제 클래스 라이브러리는 다음 예제에 표시 됩니다.
+다음 예제에서는 클래스 라이브러리 예제를 표시 합니다.
 
 [!code-csharp[FxCop.Security.ArrayFieldsNotReadOnly#1](../code-quality/codesnippet/CSharp/ca2105-array-fields-should-not-be-read-only_1.cs)]
 
 ## <a name="example-2"></a>예제 2
 
-다음 코드는 읽기 전용 배열 보안 문제를 설명 하기 위해 예제 클래스 라이브러리를 사용 합니다.
+다음 코드에서는 예제 클래스 라이브러리를 사용 하 여 읽기 전용 배열 보안 문제를 보여 줍니다.
 
 [!code-csharp[FxCop.Security.TestArrayFieldsRead#1](../code-quality/codesnippet/CSharp/ca2105-array-fields-should-not-be-read-only_2.cs)]
 
-이 예제에서 출력이 됩니다.
+이 예제의 출력은 다음과 같습니다.
 
 ```text
 Before tampering: Grades: 90, 90, 90 Private Grades: 90, 90, 90  Secure Grades, 90, 90, 90
 After tampering: Grades: 90, 555, 90 Private Grades: 90, 555, 90  Secure Grades, 90, 90, 90
 ```
 
-## <a name="related-rules"></a>관련된 규칙
+## <a name="related-rules"></a>관련 규칙
 
-- [CA2104 : 읽기 전용 참조 형식을 선언 하지 마십시오.](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)
+- [CA2104 : 변경 가능한 읽기 전용 참조 형식을 선언 하지 마십시오.](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.Array?displayProperty=fullName>
 - <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>

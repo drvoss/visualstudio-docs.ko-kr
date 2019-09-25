@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a59346cb70269d4d2b405279fc9ea5573a879b1e
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 8eb881da0a7ed243bda35079f617a314053f2d85
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547011"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231294"
 ---
 # <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214: 재정의 가능한 메서드를 생성자에서 호출하지 마십시오.
 
@@ -31,7 +31,7 @@ ms.locfileid: "69547011"
 |TypeName|DoNotCallOverridableMethodsInConstructors|
 |CheckId|CA2214|
 |범주|Microsoft.Usage|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 

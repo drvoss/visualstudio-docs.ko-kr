@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a793f0a359cadc58c262861ee0495f92188d0b7
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 7323fd044675eda2f528788ffc40943d071bf12b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547183"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234072"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: 식별자에는 올바른 접두사를 사용해야 합니다.
 
@@ -32,7 +32,7 @@ ms.locfileid: "69547183"
 |TypeName|IdentifiersShouldHaveCorrectPrefix|
 |CheckId|CA1715|
 |범주|Microsoft.Naming|
-|변경 수준|중단-인터페이스에서 발생 한 경우<br /><br /> 제네릭 형식 매개 변수에 대해 발생 하는 경우를 구분 하지 않습니다.|
+|주요 변경 내용|중단-인터페이스에서 발생 한 경우<br /><br /> 제네릭 형식 매개 변수에 대해 발생 하는 경우를 구분 하지 않습니다.|
 
 ## <a name="cause"></a>원인
 

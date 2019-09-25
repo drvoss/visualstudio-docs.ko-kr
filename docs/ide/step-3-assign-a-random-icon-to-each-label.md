@@ -4,9 +4,6 @@ ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.devlang:
-- csharp
-- vb
 dev_langs:
 - CSharp
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ef6929f91d8e4df63c847a470b4b61f5dd09e05
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: 598ed320e910f1f2e40e9ff84b7c317bff704741
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079434"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118769"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>3단계: 각 레이블에 임의 아이콘 할당
 모든 게임의 동일한 셀에 이 아이콘이 표시되는 경우 게임이 재미가 없습니다. 이를 방지하려면 `AssignIconsToSquares()` 메서드를 사용하여 폼의 레이블 컨트롤에 아이콘을 임의로 할당합니다.

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73e940f6d302d28713c0345f77d6c78c8223e363
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 91b175eec9d17624f2b7225d1aac428926310734
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440276"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128226"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>CPU 샘플링 초보자를 위한 지침
 Visual Studio 프로파일링 도구를 사용하여 애플리케이션의 성능 문제를 분석할 수 있습니다. 다음 절차에서는 **샘플링** 데이터 사용 방법을 보여 줍니다.
@@ -127,5 +127,5 @@ Visual Studio 프로파일링 도구를 사용하여 애플리케이션의 성�
 - [성능 탐색기](../profiling/performance-explorer.md)
 - [시작](../profiling/getting-started-with-performance-tools.md)
 - [개요](../profiling/overviews-performance-tools.md)
-- [Visual Studio의 프로파일링](../profiling/index.md)
+- [Visual Studio의 프로파일링](../profiling/index.yml)
 - [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)

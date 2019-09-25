@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6da512f6322bed074b8009d45e569626afcd996
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 106a2be4797bc3c442006f74bce98e4f1e8c9a5c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766039"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238207"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio의 기본 바로 가기 키
 
@@ -35,7 +35,7 @@ Visual Studio의 접근성에 대한 자세한 내용은 [접근성 팁과 요�
 |||||
 |-|-|-|-|
 |[분석](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[편집](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[프로젝트](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[테스트](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
-|[아키텍처](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[편집기 상황에 맞는 메뉴](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[프로젝트 및 솔루션 상황에 맞는 메뉴](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[테스트 탐색기](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|
+|[Architecture](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[편집기 상황에 맞는 메뉴](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[프로젝트 및 솔루션 상황에 맞는 메뉴](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[테스트 탐색기](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|
 |[빌드](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)|[파일](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)|[리팩터링](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)|[도구](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)|
 |[클래스 뷰 상황에 맞는 메뉴](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[도움말](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[솔루션 탐색기](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[보기](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|
 |[디버그](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)|[부하 테스트](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)|[팀](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)|[창](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)|
@@ -741,7 +741,7 @@ Visual Studio의 접근성에 대한 자세한 내용은 [접근성 팁과 요�
 |편집.선택취소|**Esc**|
 |보기.코드보기|**F7**|
 
-## <a name="solution-explorer"></a>솔루션 탐색기
+## <a name="solution-explorer"></a>Controllers\HomeController.cs
 
 |명령|바로 가기 키|
 |-------------| - |
@@ -794,7 +794,7 @@ Visual Studio의 접근성에 대한 자세한 내용은 [접근성 팁과 요�
 | 편집.현재영역축소 | **Ctrl+M, Ctrl+S** |
 | 편집.태그축소 | **Ctrl+M, Ctrl+T** |
 | 편집.정의부분만보이기 | **Ctrl+M, Ctrl+O**(문자 ‘O’) |
-| Edit.ContractSelection | **Shift+Alt+-** (C++가 아닌 경우만 해당) |
+| Edit.ContractSelection | **Shift+Alt+-** |
 | 편집.선택영역을주석으로처리 | **Ctrl+K, Ctrl+C** |
 | 편집.단어자동완성 | **Ctrl+스페이스바**<br /><br /> 또는<br /><br /> **Alt+오른쪽 화살표** |
 | 편집.매개변수팁복사 | **Ctrl+Shift+Alt+C** |
@@ -807,7 +807,7 @@ Visual Studio의 접근성에 대한 자세한 내용은 [접근성 팁과 요�
 | 편집.문서시작까지선택 | **Ctrl+Shift+Home** |
 | 편집.전체개요확장 | **Ctrl+M, Ctrl+X** |
 | 편집.현재영역확장 | **Ctrl+M, Ctrl+E** |
-| Edit.ExpandSelection | **Shift+Alt+=** (C++가 아닌 경우만 해당) |
+| Edit.ExpandSelection | **Shift+Alt+=** |
 | Edit.ExpandSelectiontoContainingBlock | **Shift+Alt+]** |
 | 편집.문서서식 | **Ctrl+K, Ctrl+D** |
 | 편집.선택영역서식 | **Ctrl+K, Ctrl+F** |
@@ -828,12 +828,12 @@ Visual Studio의 접근성에 대한 자세한 내용은 [접근성 팁과 요�
 | 편집.줄아래로 | **아래쪽 화살표** |
 | 편집.한줄아래까지선택 | **Shift+아래쪽 화살표** |
 | 편집.한줄아래까지열확장선택 | **Shift+Alt+아래쪽 화살표** |
-| 편집.줄끝으로 | **End** |
+| 편집.줄끝으로 | **종료** |
 | 편집.줄끝까지선택 | **Shift+End** |
 | 편집.줄끝까지열확장선택 | **Shift+Alt+End** |
 | 편집.위쪽줄열기 | **Ctrl+Enter** |
 | 편집.아래쪽줄열기 | **Ctrl+Shift+Enter** |
-| 편집.줄시작으로 | **Home** |
+| 편집.줄시작으로 | **홈팀** |
 | 편집.줄시작까지선택 | **Shift+Home** |
 | 편집.줄시작까지열확장선택 | **Shift+Alt+Home** |
 | 편집.줄바꾸기 | **Shift+Alt+T** |
@@ -1038,9 +1038,9 @@ Visual Studio의 접근성에 대한 자세한 내용은 [접근성 팁과 요�
 |편집.왼쪽문자까지선택|**Shift+왼쪽 화살표**|
 |편집.오른쪽문자로|**오른쪽 화살표**|
 |편집.오른쪽문자까지선택|**Shift+오른쪽 화살표**|
-|편집.문서끝으로|**End**|
+|편집.문서끝으로|**종료**|
 |편집.문서끝까지선택|**Shift+End**|
-|편집.문서시작으로|**Home**|
+|편집.문서시작으로|**홈팀**|
 |편집.문서시작까지선택|**Shift+Home**|
 |편집.탭삽입|**Tab**|
 |편집.줄아래로|**아래쪽 화살표**|

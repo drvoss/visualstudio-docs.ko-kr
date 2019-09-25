@@ -3,14 +3,14 @@ title: 구독 사용
 description: 이 문서에서는 Microsoft 계정을 통해 Mac용 Visual Studio에서 구독 및 잠금 해제 기능을 사용하도록 설정하는 방법을 설명합니다.
 author: asb3993
 ms.author: amburns
-ms.date: 05/06/2018
+ms.date: 09/18/2019
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: 862edbac114eedf42cfd799a89eb4b828d1f499a
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 563b512b9ecf0114a6795d2541a5e8e7f53414de
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872118"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213681"
 ---
 # <a name="enable-subscription"></a>구독 사용
 

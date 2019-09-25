@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ac40a7e7d62417d2d89302304501fb2b3ecd34f4
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 5d83086720a94c23d0ceb3f07d9398a7d5256f68
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293712"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095368"
 ---
 # <a name="install-visual-studio"></a>Visual Studio 설치
 
@@ -105,14 +105,14 @@ Visual Studio 2019와 함께 이전 버전의 Visual Studio를 실행하는 방�
 ::: moniker range="vs-2017"
 
  > [!div class="button"]
- > [Visual Studio 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
+ > [Visual Studio를 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)합니다.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
  > [!div class="button"]
- > [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads)
+ > [Visual Studio를 다운로드](https://visualstudio.microsoft.com/downloads)합니다.
 
 ::: moniker-end
 
@@ -236,7 +236,7 @@ Workloads 기능을 사용하여 Visual Studio 설치를 사용자 지정하지 
 
 3. 프로젝트 형식을 선택합니다.
 
-   예를 들어 [C++ 앱을 빌드](../ide/getting-started-with-cpp-in-visual-studio.md)하려면 **설치됨**을 선택하고 **Visual C++** 를 확장한 다음, 빌드할 C++ 프로젝트 형식을 선택합니다.
+   예를 들어 [C++ 앱을 빌드](/cpp/get-started/tutorial-console-cpp)하려면 **설치됨**을 선택하고 **Visual C++** 를 확장한 다음, 빌드할 C++ 프로젝트 형식을 선택합니다.
 
    [C# 앱을 빌드](../get-started/csharp/tutorial-console.md)하려면 **설치됨**을 선택하고 **Visual C#** 을 확장한 다음, 빌드할 C# 프로젝트 형식을 선택합니다.
 

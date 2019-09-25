@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 73f8b69b120b1c21de92a8706eab0dbbcbb6e38e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 2f2587d621715e6e04edade779116e22d021072c
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703844"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128175"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>빠른 시작: Visual Studio에서 CPU 사용량 데이터(C++) 분석
 
@@ -186,5 +186,5 @@ CPU 사용량 아래의 함수 목록을 검사하고, 가장 많은 작업을 �
 
 ## <a name="see-also"></a>참고 항목
 
-- [Visual Studio의 프로파일링](../profiling/index.md)
+- [Visual Studio의 프로파일링](../profiling/index.yml)
 - [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)

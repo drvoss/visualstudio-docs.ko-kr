@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 595b8ea35799effd36e4a8599c61b3ab42efb940
-ms.sourcegitcommit: a1e899248adaf104697fa7dea32a36e69e9cc119
+ms.openlocfilehash: 365037d3eeeec5077d724ca72d43cce5dcbe0ebd
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71159924"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273356"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Visual Studio에서 데이터베이스 만들기 및 테이블 추가
 
@@ -68,6 +68,9 @@ Visual Studio를 사용 하 여 SQL Server Express LocalDB에서 로컬 데이�
 
 - 또는 해당 창이 아직 열려 있지 않은 경우**서버 탐색기** **보기** > 를 선택할 수 있습니다. **데이터 연결** 노드를 확장 하 고 *sampledatabase.mdf*를 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 선택 하 여 속성 창을 엽니다.
 
+  > [!TIP]
+  > 데이터 연결 노드를 확장할 수 없거나 Sampledatabase.mdf 연결이 목록에 없는 경우 서버 탐색기 도구 모음에서 **데이터베이스에 연결** 단추를 선택 합니다. **연결 추가** 대화 상자에서 **데이터 원본**아래에 **Microsoft SQL Server 데이터베이스 파일이** 선택 되어 있는지 확인 한 다음 sampledatabase.mdf 파일을 찾아 선택 합니다. **확인을**선택 하 여 연결 추가를 완료 합니다.
+
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>테이블 디자이너를 사용 하 여 테이블 및 키 만들기
 
 이 섹션에서는 두 개의 테이블, 각 테이블의 기본 키 및 몇 개의 샘플 데이터 행을 만듭니다. 또한 외래 키를 만들어 한 테이블의 레코드가 다른 테이블의 레코드에 해당 하는 방식을 지정 합니다.
@@ -75,6 +78,8 @@ Visual Studio를 사용 하 여 SQL Server Express LocalDB에서 로컬 데이�
 ### <a name="create-the-customers-table"></a>Customers 테이블 만들기
 
 1. **서버 탐색기**에서 **데이터 연결** 노드를 확장 한 다음 **sampledatabase.mdf** 노드를 확장 합니다.
+
+   데이터 연결 노드를 확장할 수 없거나 Sampledatabase.mdf 연결이 목록에 없는 경우 서버 탐색기 도구 모음에서 **데이터베이스에 연결** 단추를 선택 합니다. **연결 추가** 대화 상자에서 **데이터 원본**아래에 **Microsoft SQL Server 데이터베이스 파일이** 선택 되어 있는지 확인 한 다음 sampledatabase.mdf 파일을 찾아 선택 합니다. **확인을**선택 하 여 연결 추가를 완료 합니다.
 
 2. **테이블** 을 마우스 오른쪽 단추로 클릭 하 고 **새 테이블 추가**를 선택 합니다.
 

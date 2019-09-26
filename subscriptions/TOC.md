@@ -41,6 +41,7 @@
 ##### [WhiteSource Bolt](vs-whitesource.md)
 ##### [Windows 개발자 계정](vs-windows-dev.md)
 #### 전문적인 개발
+##### [CODE Magazine](vs-code-magazine.md)
 ##### [DataCamp](vs-datacamp.md)
 ##### [LinkedIn 학습](vs-linkedin-learning.md)
 ##### [MSDN Magazine 구독](vs-msdn.md)
@@ -88,7 +89,7 @@
 #### [별칭을 사용하는 구독자](aliasing.md)
 #### [개인 전자 메일 로그인을 사용하는 구독자](personal-email-sign-ins.md)
 #### [GitHub Enterprise가 포함된 Visual Studio 관리](assign-github.md)
-## 자료
+## 리소스
 ### [Visual Studio 라이선스 백서](https://aka.ms/vslicensing)
 ### [구독 옵션 및 가격 비교](https://visualstudio.microsoft.com/vs/pricing)
 ### [Visual Studio IDE 기능 비교](https://visualstudio.microsoft.com/vs/compare)

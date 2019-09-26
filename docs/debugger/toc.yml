@@ -1,5 +1,5 @@
 - name: 디버거 설명서
-  href: index.md
+  href: index.yml
 - name: 개요
   items:
     - name: 디버깅이란 무엇인가요?
@@ -450,7 +450,7 @@
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
             - name: Microsoft Store 앱용 콘텐츠 프리페치
               href: prefetch-content-for-windows-store-apps.md
-        - name: 관리 코드
+        - name: '관리형 코드(C#, Visual Basic, F#)'
           items:
             - name: 관리 코드 디버그
               href: debugging-managed-code.md
@@ -494,7 +494,7 @@
                   href: how-to-display-wpf-trace-information.md
             - name: 'F# 디버그'
               href: debugging-f-hash.md
-        - name: 네이티브 코드
+        - name: C/C++ 코드
           items:
             - name: 네이티브 코드 디버그
               href: debugging-native-code.md
@@ -582,7 +582,7 @@
                   href: com-debugging-tools.md
             - name: 삽입한 코드 디버그
               href: how-to-debug-injected-code.md
-        - name: GPU 코드 디버그
+        - name: GPU 코드
           href: debugging-gpu-code.md
         - name: 그래픽 진단
           href: graphics/toc.yml
@@ -632,6 +632,10 @@
                       href: error-the-web-server-could-not-find-the-requested-resource.md
                     - name: 웹 서버가 제대로 구성되어 있지 않습니다.
                       href: error-the-web-server-is-not-configured-correctly.md
+        - name: Python
+          href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
+        - name: JavaScript 및 TypeScript
+          href: ../javascript/debug-nodejs.md
         - name: 웹앱
           items:
             - name: 웹 애플리케이션 디버그
@@ -922,7 +926,7 @@
                   href: about-microsoft-spy-increment.md
                 - name: Spy++ 도움말에 대한 저작권 표시
                   href: copyright-notice-for-spy-increment-help.md
-- name: 자료
+- name: 리소스
   items:
     - name: Visual Studio 디버거의 새로운 기능
       href: what-s-new-for-the-debugger-in-visual-studio.md

@@ -9,12 +9,12 @@ dev_langs:
 - csharp
 - vb
 monikerRange: vs-2019
-ms.openlocfilehash: 6ffa8888529586e23d6f9762c3ec5b724c708ca5
-ms.sourcegitcommit: ab2c49ce72ccf44b27b5c8852466d15a910453a6
+ms.openlocfilehash: 9f5085c7a655f186c3c8a4a6eecada8b440650cd
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69024551"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273214"
 ---
 # <a name="xaml-designer-extensibility-migration"></a>XAML 디자이너 확장성 마이그레이션
 
@@ -26,7 +26,7 @@ Visual Studio 2019에서 XAML 디자이너는 두 가지 아키텍처, 즉 디�
 
 ![확장성-마이그레이션-아키텍처](media/xaml-designer-extensibility-migration-architecture.png)
 
-이러한 아키텍처 전환으로 인해 타사 확장은 더 이상 타사 컨트롤 라이브러리와 동일한 프로세스에 로드 되지 않습니다. 확장은 더 이상 컨트롤 라이브러리에 직접 종속 되지 않거나 런타임 개체에 직접 액세스할 수 없습니다. 이전에는 *Microsoft.* m a m. d m l을 사용 하 여 디자이너 격리 아키텍처용으로 작성 된 확장을 surface 격리 아키텍처를 사용 하는 새로운 방법으로 마이그레이션해야 합니다. 실제로 기존 확장은 새 확장성 API 어셈블리에 대해 컴파일해야 합니다. 컨트롤 라이브러리가 다른 프로세스에서 로드 되었으므로 [typeof](/dotnet/csharp/language-reference/keywords/typeof) 또는 런타임 인스턴스를 통해 런타임 컨트롤 형식에 대 한 액세스를 대체 하거나 제거 해야 합니다.
+이러한 아키텍처 전환으로 인해 타사 확장은 더 이상 타사 컨트롤 라이브러리와 동일한 프로세스에 로드 되지 않습니다. 확장은 더 이상 컨트롤 라이브러리에 대 한 직접 종속성을 가지 지 않거나 런타임 개체에 직접 액세스할 수 없습니다. 이전에는 *Microsoft.* m a m. d m l을 사용 하 여 디자이너 격리 아키텍처용으로 작성 된 확장을 surface 격리 아키텍처를 사용 하는 새로운 방법으로 마이그레이션해야 합니다. 실제로 기존 확장은 새 확장성 API 어셈블리에 대해 컴파일해야 합니다. 컨트롤 라이브러리가 다른 프로세스에서 로드 되었으므로 [typeof](/dotnet/csharp/language-reference/keywords/typeof) 또는 런타임 인스턴스를 통해 런타임 컨트롤 형식에 대 한 액세스를 대체 하거나 제거 해야 합니다.
 
 ## <a name="new-extensibility-api-assemblies"></a>새 확장성 API 어셈블리
 
@@ -43,9 +43,9 @@ Visual Studio 2019에서 XAML 디자이너는 두 가지 아키텍처, 즉 디�
 
 타사 컨트롤 라이브러리가 실제 대상 런타임 (.NET Core 또는 UWP)에 대해 컴파일되기는 하지만, *designtools .dll* 확장명은 항상 .NET Framework 어셈블리로 컴파일해야 합니다.
 
-## <a name="decouple-attribute-tables-from-runtime-types"></a>런타임 형식에서 특성 테이블 분리
+## <a name="decouple-attribute-tables-from-run-time-types"></a>런타임 형식에서 특성 테이블 분리
 
-Surface 격리 확장성 모델에서는 확장이 실제 컨트롤 라이브러리에 종속 되는 것을 허용 하지 않으므로 확장 프로그램은 컨트롤 라이브러리의 형식을 참조할 수 없습니다. 예를 들어 *Mylibrary* . c l i e n t. c l id.
+Surface 격리 확장성 모델에서는 확장이 실제 컨트롤 라이브러리에 종속 되는 것을 허용 하지 않으므로 확장 프로그램은 컨트롤 라이브러리의 형식을 참조할 수 없습니다. 예를 들어 *Mylibrary* . *c l i*e n t. c l i d.
 
 이러한 종속성은 특성 테이블을 통해 형식에 대 한 메타 데이터를 등록할 때 가장 일반적입니다. [Typeof](/dotnet/csharp/language-reference/keywords/typeof) 또는 [GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator) 을 통해 컨트롤 라이브러리 형식을 직접 참조 하는 확장 코드는 문자열 기반 형식 이름을 사용 하 여 새 api로 대체 됩니다.
 
@@ -103,6 +103,7 @@ End Class
 * `ContextMenuProvider`
 * `ParentAdapter`
 * `PlacementAdapter`
+* `DesignModeValueProvider`는 또는 디자이너에서 수정할 때 `TranslatePropertyValue` 를 통해 `InvalidateProperty` 호출 되는 제한 사항으로 지원 됩니다. 런타임 코드에서 수정할 때 호출 되지 않습니다.
 
 기능 공급자는 이제 실제 런타임 코드 및 컨트롤 라이브러리와 다른 프로세스에서 로드 되므로 더 이상 런타임 개체에 직접 액세스할 수 없습니다. 대신 이러한 모든 상호 작용을 해당 모델 기반 Api를 사용 하도록 변환 해야 합니다. 모델 API가 <xref:System.Type> 업데이트 되 고 또는 <xref:System.Object> 에 대 한 액세스를 더 이상 사용할 수 없거나 `TypeIdentifier` 및 `TypeDefinition`로 대체 되었습니다.
 
@@ -133,12 +134,15 @@ Surface 격리 확장성 API 집합에서 제거 된 Api:
 * `ModelFactory.CreateItem(EditingContext context, object item)`
 * `ViewItem.PlatformObject`
 * `ModelProperty.DefaultValue`
+* `AssemblyReferences.GetTypes(Type baseType)`
 
 대신를 사용 `TypeIdentifier` 하는 api: <xref:System.Type>
 
 * `ModelFactory.CreateItem(EditingContext context, Type itemType, params object[] arguments)`
 * `ModelFactory.CreateItem(EditingContext context, Type itemType, CreateOptions options, params object[] arguments)`
 * `ModelFactory.CreateStaticMemberItem(EditingContext context, Type type, string memberName)`
+* `ModelFactory.ResolveType(EditingContext context, Type)`를 `MetadataFactory.ResolveType(EditingContext context, TypeIdentifier typeIdentifier)`로 변경
+* `ModelService.ResolveType(TypeIdentifier typeIdentifier)`를 `MetadataService.ResolveType(TypeIdentifier typeIdentifier)`로 변경
 * `ViewItem.ItemType`
 * `ModelEvent.EventType`
 * `ModelEvent.IsEventOfType(Type type)`
@@ -157,7 +161,6 @@ Surface 격리 확장성 API 집합에서 제거 된 Api:
 
 대신를 사용 `TypeDefinition` 하는 api: <xref:System.Type>
 
-* `ModelFactory.ResolveType(EditingContext context, TypeIdentifier typeIdentifier)`
 * `ValueTranslationService.GetProperties(Type itemType)`
 * `ValueTranslationService.HasValueTranslation(Type itemType, PropertyIdentifier identifier)`
 * `ValueTranslationService.TranslatePropertyValue(Type itemType, ModelItem item, PropertyIdentifier identifier, object value)`
@@ -172,22 +175,19 @@ Surface 격리 확장성 API 집합에서 제거 된 Api:
 * `FeatureManager.GetCustomAttributes(Type type, Type attributeType)`
 * `AdapterService.GetAdapter<TAdapterType>(Type itemType)`
 * `AdapterService.GetAdapter(Type adapterType, Type itemType)`
+* `PropertyEntry.PropertyType`
 
-대신를 사용 `ModelItem` 하는 api: <xref:System.Object>
+대신를 사용 `AssemblyIdentifier` 하는 api: `<xref:System.Reflection.AssemblyName?displayProperty=fullName>`
 
-* `ModelItemCollection.Insert(int index, object value)`
-* `ModelItemCollection.Remove(object value)`
-* `ModelItemDictionary.Add(object key, object value)`
-* `ModelItemDictionary.ContainsKey(object key)`
-* `ModelItemDictionary.Remove(object key)`
-* `ModelItemDictionary.TryGetValue(object key, out ModelItem value)`
+* `AssemblyReferences.ReferencedAssemblies`
+* `AssemblyReferences.LocalAssemblyName`를 `AssemblyReferences.LocalAssemblyIdentifier`로 변경
 
 또한와 같은 `SetValue` api는대상런타임으로변환될수있는기본형식또는기본제공.NETFramework형식의인스턴스만지원합니다.`ModelItem` 현재 다음과 같은 형식이 지원 됩니다.
 
 * 기본 .NET Framework 형식: `Boolean`, `Byte`, `Char` `DateTime` ,,`Double` ,`Guid`, ,,`SByte` ,, ,`Nullable` `Int16` `Enum` `Int32` `Int64` , `Single`, `String`, `Type`, `UInt16`, `UInt32`, `UInt64`,`Uri`
 * 알려진 WPF .NET Framework 형식 (및 파생 형식): `Brush` `CornerRadius` `Duration` `EasingMode` `Color` `CompositeTransform` `EasingFunctionBase` ,,`EllipseGeometry`, ,,,,,,,`FontFamily` `GeneralTransform` `Geometry` , `GradientStopCollection`, `GradientStop`, `GridLength`, `ImageSource`, `InlineCollection`, `Inline`, `KeySpline`, `Material`, `Matrix`, `PathFigureCollection`, `PathFigure`, `PathSegmentCollection`, `PathSegment`, `Path`, `PointCollection`, `Point`, `PropertyPath`, `Rect`, `RepeatBehavior`, `Setter`, `Size`, `StaticResource`, `TextAlignment`, `TextDecorationCollection`, `ThemeResourceExtension`, `Thickness`, `TimeSpan`, `Transform3D`,`TransformCollection`
 
-예를 들어:
+예:
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Features;

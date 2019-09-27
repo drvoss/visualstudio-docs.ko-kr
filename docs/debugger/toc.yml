@@ -666,6 +666,10 @@
               href: how-to-step-into-wcf-services.md
             - name: 자체 호스팅 WCF 서비스 디버그
               href: how-to-debug-a-self-hosted-wcf-service.md
+    - name: 공동 작업
+      items:
+        - name: Live Share를 사용하여 코드 작성 및 디버그
+          href: /visualstudio/liveshare/use/vs
     - name: 덤프 파일
       items:
         - name: 덤프 파일 사용

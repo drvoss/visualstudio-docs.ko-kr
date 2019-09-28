@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 385b2d451d8202356d56ab7b1a5fd5158d267f1c
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 6a709a59e85f65cf2e0caa0551610dd496bedda5
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253747"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342510"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office 주 Interop 어셈블리
 
@@ -61,13 +61,13 @@ Visual Studio는 이러한 PIA 복사본을 사용함으로써 전역 어셈블�
 
 Visual Studio 2017부터 이러한 Pia 복사본은 개발 컴퓨터의 다음 공유 위치에 설치 됩니다.
 
-- *%ProgramFiles%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\*
+- `%ProgramFiles%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\`
 
-- (또는 *% ProgramFiles (x86)% \ Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\* on 64 비트 운영 체제)
+- (또는 64 비트 운영 체제의 `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\`)
 
 > [!NOTE]
-> 이전 버전의 Visual Studio에서는 이러한 Pia가 해당 버전의 Visual Studio에 대 한 *% ProgramFiles% 폴더 아래에 있는 Office\PIA 폴더에 Visual Studio Tools 설치 됩니다.
-> 예: *% ProgramFiles (x86)% \ Microsoft Visual Studio 14.0 \ Visual Studio Tools (Office\PIA)\*
+> 이전 버전의 Visual Studio에서는 이러한 Pia가 해당 버전의 Visual Studio에 대 한 `%ProgramFiles%` 폴더 아래에 있는 Office\PIA 폴더에 Visual Studio Tools 설치 됩니다.
+> 예: `%ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Visual Studio Tools for Office\PIA\`
 
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>전역 어셈블리 캐시의 주 interop 어셈블리
 
@@ -86,7 +86,7 @@ Visual Studio의 각 Office 프로젝트 템플릿은 단일 Microsoft Office �
 전역 어셈블리 캐시에서 PIA를 설치 및 등록한 경우 이러한 어셈블리 버전은 **참조 관리자** 대화 상자의 **COM** 탭에 표시됩니다. 이러한 어셈블리 버전에 대한 참조는 추가해서는 안 됩니다. 해당 버전을 사용하는 경우 몇 가지 개발 문제가 발생할 수 있습니다. 예를 들어 전역 어셈블리 캐시에 여러 PIA 버전을 등록한 경우에는 **참조 관리자** 대화 상자의 **COM** 탭에서 다른 어셈블리 버전을 지정하더라도 프로젝트는 마지막으로 등록된 어셈블리 버전에 자동으로 바인딩됩니다.
 
 > [!NOTE]
-> 일부 어셈블리는 해당 어셈블리를 참조하는 어셈블리를 추가할 때 프로젝트에 자동으로 추가됩니다. 예를 들어, Word, Excel, Outlook, Microsoft Forms 또는 Graph 어셈블리에 대 한 참조를 추가 하면 *Office .dll* 및 *microsoft Vbe .dll* 어셈블리에 대 한 참조가 자동으로 추가 됩니다.
+> 일부 어셈블리는 해당 어셈블리를 참조하는 어셈블리를 추가할 때 프로젝트에 자동으로 추가됩니다. 예를 들어 `Office.dll` 및 `Microsoft.Vbe.Interop.dll` 어셈블리에 대 한 참조는 Word, Excel, Outlook, Microsoft Forms 또는 Graph 어셈블리에 대 한 참조를 추가할 때 자동으로 추가 됩니다.
 
 <a name="pialist"></a>
 
@@ -127,7 +127,7 @@ Office PIA를 Office와 함께 또는 PIA의 재배포 가능 패키지를 설�
 
 자세한 내용은 [방법: 자동 바인딩 리디렉션을](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection)사용 하거나 사용 하지 않도록 설정 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방법: 주 interop 어셈블리를 통한 Office 응용 프로그램 대상](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Excel 개체 모델 개요](../vsto/excel-object-model-overview.md)

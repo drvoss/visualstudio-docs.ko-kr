@@ -12,14 +12,14 @@ ms.assetid: af8f7ab1-63ad-4861-afb9-b7a7a2be15e1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: c027bc4581919f814b4d93eacba77248349fdf8b
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+dev_langs:
+- CSharp
+ms.openlocfilehash: b4db3074d334fe32f95c4d1b8446921c4e4d47ba
+ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71231081"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481767"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: 연산자 오버로드에는 명명된 대체 항목이 있습니다.
 
@@ -27,7 +27,7 @@ ms.locfileid: "71231081"
 |-|-|
 |TypeName|OperatorOverloadsHaveNamedAlternates|
 |CheckId|CA2225|
-|범주|Microsoft.Usage|
+|Category|Microsoft.Usage|
 |주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
@@ -38,17 +38,21 @@ ms.locfileid: "71231081"
 
 ## <a name="rule-description"></a>규칙 설명
 
-연산자 오버 로드를 사용 하면 기호를 사용 하 여 형식에 대 한 계산을 나타낼 수 있습니다. 예를 들어 더하기 기호 (+)를 오버 로드 하는 형식에는 일반적으로 ' Add ' 라는 대체 멤버가 있습니다. 명명 된 대체 멤버는 연산자와 같은 기능에 대 한 액세스를 제공 하며 오버 로드 된 연산자를 지원 하지 않는 언어로 프로그래밍 하는 개발자를 위해 제공 됩니다.
+연산자 오버 로드를 사용 하면 기호를 사용 하 여 형식에 대 한 계산을 나타낼 수 있습니다. 예를 들어 더하기 기호 `+`을 오버 로드 하는 형식은 일반적으로 `Add` 이라는 대체 멤버를 가집니다. 명명 된 대체 멤버는 연산자와 같은 기능에 대 한 액세스를 제공 합니다. 오버 로드 된 연산자를 지원 하지 않는 언어로 프로그래밍 하는 개발자를 위해 제공 됩니다.
 
-이 규칙은 다음 표에 나열 된 연산자를 검사 합니다.
+이 규칙은 다음을 검사 합니다.
 
-|C#|Visual Basic|C++|대체 이름|
-|---------|------------------|-----------|--------------------|
+- @No__t-0 및 `From<typename>` 이라는 메서드를 검사 하 여 형식의 암시적 및 명시적 캐스트 연산자
+
+- 다음 표에서는 연산자를 나열 합니다.
+
+|C#|Visual Basic|C++|대체 방법 이름|
+|-|-|-|-|
 |+ (이진)|+|+ (이진)|추가|
 |+=|+=|+=|추가|
-|&|and|&|BitwiseAnd|
+|&|그리고|&|BitwiseAnd|
 |&=|및 =|&=|BitwiseAnd|
-|&#124;|Or|&#124;|BitwiseOr|
+|&#124;|또는|&#124;|BitwiseOr|
 |&#124;=|또는 =|&#124;=|BitwiseOr|
 |--|해당 사항 없음|--|감소|
 |/|/|/|나누기|
@@ -56,14 +60,14 @@ ms.locfileid: "71231081"
 |==|=|==|같음|
 |^|Xor|^|Xor|
 |^=|Xor=|^=|Xor|
-|>|>|>|비교|
-|>=|>=|>=|비교|
+|>|>|>|CompareTo 또는 Compare|
+|>=|>=|>=|CompareTo 또는 Compare|
 |++|해당 사항 없음|++|증가|
-|<>|!=|같음|
+|!=|<>|!=|같음|
 |<<|<<|<<|LeftShift|
 |<<=|<<=|<<=|LeftShift|
-|<|<|<|비교|
-|<=|<=|\<=|비교|
+|<|<|<|CompareTo 또는 Compare|
+|<=|<=|\<=|CompareTo 또는 Compare|
 |&&|해당 사항 없음|&&|LogicalAnd|
 |&#124;&#124;|해당 사항 없음|&#124;&#124;|LogicalOr|
 |!|해당 사항 없음|!|LogicalNot|
@@ -81,11 +85,10 @@ ms.locfileid: "71231081"
 |+ (단항)|해당 사항 없음|+|항목과|
 |false|IsFalse|False|IsTrue (속성)|
 
-해당 없음 = = 선택한 언어로 오버 로드 될 수 없습니다.
+\* N/A는 선택한 언어로 연산자를 오버 로드할 수 없음을 의미 합니다.
 
-또한이 규칙은 및`SomeType` `FromSomeType`라는 `ToSomeType` 메서드를 확인 하 여 형식 ()에서 암시적 및 명시적 캐스트 연산자를 확인 합니다.
-
-에서 C#이항 연산자가 오버 로드 되 면 해당 할당 연산자 (있는 경우)도 암시적으로 오버 로드 됩니다.
+> [!NOTE]
+> 에서 C#이항 연산자가 오버 로드 되 면 해당 할당 연산자 (있는 경우)도 암시적으로 오버 로드 됩니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 

@@ -28,7 +28,7 @@ macOS에서 네이티브, .NET 앱 플랫폼 간 개발을 시작하려면 다�
 iOS 또는 macOS용 Xamarin 앱을 빌드하려면 다음 항목도 필요합니다.
 
 - Xcode 10.0 이상 대개 안정적인 최신 버전을 사용하는 것이 좋습니다.
-- Apple ID. Apple ID가 없으면 https://appleid.apple.com 에서 새로 만들 수 있습니다. Xcode를 설치하고 서명하려면 Apple ID가 있어야 합니다.
+- Apple ID. Apple ID가 없으면 https://appleid.apple.com 에서 새로 만들 수 있습니다. Xcode를 설치하고 로그인하려면 Apple ID가 있어야 합니다.
 
 ## <a name="installation-instructions"></a>설치 지침
 

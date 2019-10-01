@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de860c8d177a12d8283ae4f3a9b0f36dab1cc96d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 9cf7f82d628c0c093e0d807920b379263c20ff0b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440010"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238192"
 ---
 # <a name="task-writing"></a>작업 작성
 작업은 빌드 프로세스 동안 실행되는 코드를 제공합니다. 작업은 대상에 포함되어 있습니다. 일반적인 작업의 라이브러리는 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에 포함되어 있으며 사용자 고유의 작업을 만들 수도 있습니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에 포함된 작업의 라이브러리에 대한 자세한 내용은 [작업 참조](../msbuild/msbuild-task-reference.md)를 참조하세요.
@@ -141,10 +141,35 @@ public string RequiredProperty { get; set; }
 
  `[Required]` 특성은 <xref:Microsoft.Build.Framework> 네임스페이스에서 <xref:Microsoft.Build.Framework.RequiredAttribute>로 정의됩니다.
 
-## <a name="example"></a>예제
+## <a name="how-includevstecmsbuildextensibilityinternalsincludesvstecmsbuild_mdmd-invokes-a-task"></a>[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서 작업을 호출하는 방식
+
+작업을 호출할 때 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]는 먼저 작업 클래스를 인스턴스화한 다음, 프로젝트 파일의 작업 요소에 설정된 작업 매개 변수에 대해 해당 개체의 속성 setter를 호출합니다. 작업 요소가 매개 변수를 지정하지 않거나 요소에 지정된 식이 빈 문자열로 평가되는 경우에는 속성 setter가 호출되지 않습니다.
+
+예를 들어 다음 프로젝트를 가정해 봅시다.
+
+```xml
+<Project>
+ <Target Name="InvokeCustomTask">
+  <CustomTask Input1=""
+              Input2="$(PropertyThatIsNotDefined)"
+              Input3="value3" />
+ </Target>
+</Project>
+```
+
+이 경우 `Input3`의 setter만 호출됩니다.
+
+작업에서 매개 변수-속성 setter 호출의 상대 순서를 사용하면 안 됩니다.
+
+### <a name="task-parameter-types"></a>작업 매개 변수 형식
+
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]는 기본적으로 `string`, `bool`, `ITaskItem`, `ITaskItem[]` 형식의 속성을 처리합니다. 작업이 다른 형식의 매개 변수를 허용하는 경우, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]는 <xref:System.Convert.ChangeType%2A>을 호출하여 모든 속성 및 항목 참조가 펼쳐진 `string`에서 대상 형식으로 변환합니다. 변환에 실패한 입력 매개 변수가 하나라도 있으면 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]는 오류를 내보내고 작업의 `Execute()` 메서드를 호출하지 않습니다.
+
+## <a name="example"></a>예
 
 ### <a name="description"></a>설명
- 다음 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 클래스는 <xref:Microsoft.Build.Utilities.Task> 도우미 클래스에서 파생되는 작업을 보여 줍니다. 이 작업은 성공했음을 나타내는 `true`를 반환합니다.
+
+다음 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 클래스는 <xref:Microsoft.Build.Utilities.Task> 도우미 클래스에서 파생되는 작업을 보여 줍니다. 이 작업은 성공했음을 나타내는 `true`를 반환합니다.
 
 ### <a name="code"></a>코드
 
@@ -165,10 +190,11 @@ namespace SimpleTask1
 }
 ```
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 ### <a name="description"></a>설명
- 다음 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 클래스는 <xref:Microsoft.Build.Framework.ITask> 인터페이스를 구현하는 작업을 보여 줍니다. 이 작업은 성공했음을 나타내는 `true`를 반환합니다.
+
+다음 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 클래스는 <xref:Microsoft.Build.Framework.ITask> 인터페이스를 구현하는 작업을 보여 줍니다. 이 작업은 성공했음을 나타내는 `true`를 반환합니다.
 
 ### <a name="code"></a>코드
 
@@ -200,18 +226,21 @@ namespace SimpleTask2
 }
 ```
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 ### <a name="description"></a>설명
- 이 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 클래스는 <xref:Microsoft.Build.Utilities.Task> 도우미 클래스에서 파생되는 작업을 보여 줍니다. 필수 문자열 속성이 있으며 등록된 모든 로거로 표시되는 이벤트를 발생시킵니다.
+
+이 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 클래스는 <xref:Microsoft.Build.Utilities.Task> 도우미 클래스에서 파생되는 작업을 보여 줍니다. 필수 문자열 속성이 있으며 등록된 모든 로거로 표시되는 이벤트를 발생시킵니다.
 
 ### <a name="code"></a>코드
- [!code-csharp[msbuild_SimpleTask3#1](../msbuild/codesnippet/CSharp/task-writing_1.cs)]
 
-## <a name="example"></a>예제
+[!code-csharp[msbuild_SimpleTask3#1](../msbuild/codesnippet/CSharp/task-writing_1.cs)]
+
+## <a name="example"></a>예
 
 ### <a name="description"></a>설명
- 다음 예제에서는 이전 예제 작업, SimpleTask3을 호출하는 프로젝트 파일을 보여 줍니다.
+
+다음 예제에서는 이전 예제 작업, SimpleTask3을 호출하는 프로젝트 파일을 보여 줍니다.
 
 ### <a name="code"></a>코드
 
@@ -227,4 +256,5 @@ namespace SimpleTask2
 ```
 
 ## <a name="see-also"></a>참고 항목
+
 - [작업 참조](../msbuild/msbuild-task-reference.md)

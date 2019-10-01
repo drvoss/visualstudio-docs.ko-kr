@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e006be2099d5132ce7445f1e8fe74b0f2752c260
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 493de227174b60b4834c2732ddbf16a5586fa49e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416783"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238183"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>방법: 빌드 출력 디렉터리 변경
 
@@ -43,6 +43,15 @@ ms.locfileid: "68416783"
    (루트 프로젝트 디렉터리에 대해 절대 또는 상대로) 출력을 생성할 경로를 입력하거나, **찾아보기**를 선택하여 해당 폴더를 찾아봅니다.
 
    ![Visual Studio C#프로젝트의 출력 경로 속성](media/output-path.png)
+   
+   > [!NOTE]
+   > 일부 프로젝트는 기본적으로 빌드 경로에 프레임워크와 런타임을 포함합니다. 이 설정을 변경하려면 **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **프로젝트 파일 편집**을 선택하여 다음을 추가합니다.
+   > ```xml
+   > <PropertyGroup>
+   >   <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+   >   <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+   > </PropertyGroup>
+   > ```
 
 > [!TIP]
 > 지정한 위치에 출력이 생성되지 않는 경우 Visual Studio의 메뉴 모음에서 선택하여 해당 구성(예를 들어 **디버그** 또는 **릴리스**)을 빌드 중인지 확인합니다.

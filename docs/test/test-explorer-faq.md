@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 1f51b8d3e75d7db19e1b92e909638cee99303c48
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: dca1fbb8f199db56563f4107ec88b832ec445bde
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079620"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254543"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 테스트 탐색기 FAQ
 ::: moniker range=">=vs-2019"
@@ -43,7 +43,7 @@ ms.locfileid: "71079620"
 ::: moniker range="vs-2017"
 프로젝트를 빌드하고 **도구** > **옵션** > **테스트**에서 어셈블리 기반 검색이 켜져 있는지 확인합니다.
 ::: moniker-end
-[실시간 테스트 검색](https://go.microsoft.com/fwlink/?linkid=862824)은 소스 기반 테스트 검색입니다. 이론, 사용자 지정 어댑터, 사용자 지정 특성, `#ifdef` 명령문 등을 사용하는 테스트는 런타임에 정의되기 때문에 검색할 수 없습니다. 해당 테스트를 정확하게 검색하려면 빌드가 필요합니다. Visual Studio 2017 버전 15.6 이상에서 어셈블리 기반 검색(기존 Discoverer)은 빌드 후에만 실행됩니다. 이 설정은 편집 중에 실시간 테스트 검색이 할 수 있는 만큼 많은 테스트를 검색한 후, 어셈블리 기반 검색을 사용하면 동적으로 정의된 테스트가 빌드 후에 표시되게 할 수 있음을 의미합니다. 실시간 테스트 검색은 응답성을 개선하면서도 여전히 빌드 후에 완전하고 정확한 결과를 얻을 수 있습니다.
+[실시간 테스트 검색](https://go.microsoft.com/fwlink/?linkid=862824)은 소스 기반 테스트 검색입니다. 이론, 사용자 지정 어댑터, 사용자 지정 특성, `#ifdef` 문 등을 사용하는 테스트는 런타임에 정의되기 때문에 검색할 수 없습니다. 해당 테스트를 정확하게 검색하려면 빌드가 필요합니다. Visual Studio 2017 버전 15.6 이상에서 어셈블리 기반 검색(기존 Discoverer)은 빌드 후에만 실행됩니다. 이 설정은 편집 중에 실시간 테스트 검색이 할 수 있는 만큼 많은 테스트를 검색한 후, 어셈블리 기반 검색을 사용하면 동적으로 정의된 테스트가 빌드 후에 표시되게 할 수 있음을 의미합니다. 실시간 테스트 검색은 응답성을 개선하면서도 여전히 빌드 후에 완전하고 정확한 결과를 얻을 수 있습니다.
 
 ## <a name="test-explorer--plus-symbol"></a>테스트 탐색기 ‘+’(더하기) 기호
 

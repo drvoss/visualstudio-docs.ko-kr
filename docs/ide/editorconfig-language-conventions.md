@@ -1,6 +1,6 @@
 ---
 title: EditorConfig에 대한 .NET 언어 규칙
-ms.date: 07/17/2019
+ms.date: 09/23/2019
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -13,22 +13,23 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 2231d3637b4a016d1da783d65d4237b9f5d6bab2
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: e4f49df2c775bc3bb95888d76da133898ab9c76e
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551422"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186505"
 ---
 # <a name="language-conventions"></a>언어 규칙
 
 Visual Studio 내의 EditorConfig 언어 규칙은 2개 범주, 즉 Visual Basic과 C#에 적용되는 규칙과 C#에만 적용되는 규칙으로 나뉩니다. 언어 규칙은 한정자와 괄호 등 프로그래밍 언어의 다양한 측면이 사용되는 방식에 영향을 줍니다.
 
 > [!TIP]
-> - **이 문서의 내용** 링크를 사용하여 페이지의 다른 섹션으로 이동할 수 있습니다.
 > - 원하는 프로그래밍 언어의 코드 예제를 보려면 브라우저 창의 오른쪽 위에 있는 언어 선택을 사용하여 선택합니다.
 >
 >   ![코드 언어 선택 컨트롤](media/code-language-picker.png)
+>
+> - **이 문서의 내용** 링크를 사용하여 페이지의 다른 섹션으로 이동할 수 있습니다.
 
 ## <a name="rule-format"></a>규칙 형식
 
@@ -36,19 +37,48 @@ Visual Studio 내의 EditorConfig 언어 규칙은 2개 범주, 즉 Visual Basic
 
 `option_name = value:severity`
 
-각 언어 규칙에 대해 이 스타일을 선호하는지 여부 또는 시기를 정의하는 값을 지정합니다. 대부분의 규칙은 `true`(이 스타일 선호) 또는 `false`(이 스타일 선호 안 함) 값을 허용합니다. 다른 규칙은 `when_on_single_line`, `never` 등의 값을 허용합니다. 규칙의 두 번째 부분은 **심각도**를 지정합니다.
+각 언어 규칙에 대해 이 스타일을 선호하는지 여부 또는 시기를 정의하는 값을 지정합니다. 대부분의 규칙은 `true`(이 스타일 선호) 또는 `false`(이 스타일 선호 안 함) 값을 허용합니다. 다른 규칙은 `when_on_single_line`, `never` 등의 값을 허용합니다. 규칙의 두 번째 부분은 [심각도](#severity-levels)를 지정합니다.
 
-### <a name="severity"></a>심각도
+::: moniker range=">=vs-2019"
+
+> [!NOTE]
+> 언어 규칙은 분석기에서 적용되므로, 분석기의 기본 구성 구문을 사용하여 심각도를 설정할 수도 있습니다. 구문은 `dotnet_diagnostic.<rule ID>.severity = <severity>` 형식을 사용합니다(예: `dotnet_diagnostic.IDE0040.severity = silent`). 자세한 내용은 [EditorConfig 파일에서 규칙 심각도 설정](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file)을 참조하세요.
+
+::: moniker-end
+
+## <a name="severity-levels"></a>심각도 수준
 
 언어 규칙 심각도는 해당 스타일을 적용할 수준을 지정합니다. 다음 표에서는 가능한 심각도 값 및 해당 효과를 나열합니다.
 
-심각도 | 효과
+심각도 | 결과
 :------- | ------
-`none` | 이 규칙을 위반하는 경우 사용자에게 아무 것도 표시되지 않습니다. 그러나 코드 생성 기능은 이 스타일의 코드를 생성합니다. `none` 심각도의 규칙은 **빠른 작업 및 리팩터링** 메뉴에 나타나지 않습니다. 대부분의 경우 “사용하지 않도록 설정” 또는 “무시”되는 것으로 간주됩니다.
-`silent`(Visual Studio 2017 버전 15.8 이상에서는 `refactoring`도 가능) | 이 규칙을 위반하는 경우 사용자에게 아무 것도 표시되지 않습니다. 그러나 코드 생성 기능은 이 스타일의 코드를 생성합니다. `silent` 심각도의 규칙은 **빠른 작업 및 리팩터링** 메뉴뿐만 아니라 정리에도 참여합니다.
-`suggestion` | 이 스타일 규칙을 위반하는 경우 이를 사용자에게 제안으로 표시합니다. 제안은 처음 두 개의 문자 아래에 세 개의 회색 점으로 표시됩니다.
-`warning` | 이 스타일 규칙을 위반하는 경우 컴파일러 경고가 표시됩니다.
 `error` | 이 스타일 규칙을 위반하는 경우 컴파일러 오류가 표시됩니다.
+`warning` | 이 스타일 규칙을 위반하는 경우 컴파일러 경고가 표시됩니다.
+`suggestion` | 이 스타일 규칙을 위반하는 경우 이를 사용자에게 제안으로 표시합니다. 제안은 처음 두 개의 문자 아래에 세 개의 회색 점으로 표시됩니다.
+`silent` | 이 규칙을 위반하는 경우 사용자에게 아무 것도 표시되지 않습니다. 그러나 코드 생성 기능은 이 스타일의 코드를 생성합니다. `silent` 심각도의 규칙은 정리에 참여하고 **빠른 작업 및 리팩터링** 메뉴에 표시됩니다.
+`none` | 이 규칙을 위반하는 경우 사용자에게 아무 것도 표시되지 않습니다. 그러나 코드 생성 기능은 이 스타일의 코드를 생성합니다. `none` 심각도의 규칙은 **빠른 작업 및 리팩터링** 메뉴에 나타나지 않습니다. 대부분의 경우 “사용하지 않도록 설정” 또는 “무시”되는 것으로 간주됩니다.
+
+::: moniker range=">=vs-2019"
+
+## <a name="automatically-configure-code-styles"></a>자동으로 코드 스타일 구성
+
+Visual Studio 2019 버전 16.3부터, 스타일 위반이 발생한 후에 [빠른 작업](quick-actions.md) 전구 메뉴에서 코드 스타일 규칙을 구성할 수 있습니다.
+
+코드 스타일 규칙을 변경하려면 다음을 수행합니다.
+
+1. 편집기에서 물결선을 마우스로 가리킨 다음, 표시되는 전구 메뉴를 엽니다. **문제 구성 또는 표시 안 함** >  **\<rule ID> 코드 스타일 구성**을 선택합니다.
+
+   ![Visual Studio의 전구 메뉴에서 코드 스타일 구성](media/vs-2019/configure-code-style.png)
+
+2. 여기서 코드 스타일 옵션 중 하나를 선택합니다.
+
+   ![코드 스타일 설정 구성](media/vs-2019/configure-code-style-setting.png)
+
+   Visual Studio에서 미리 보기 상자에 표시된 것처럼 EditorConfig 파일의 구성 설정을 수정하거나 새로 추가합니다.
+
+코드 스타일 위반의 심각도를 변경하려면 동일한 단계를 수행하되, **\<rule ID> 코드 스타일 구성** 대신 **\<rule ID> 심각도 구성**을 선택합니다. 자세한 내용은 [자동으로 규칙 심각도 구성](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity)을 참조하세요.
+
+::: moniker-end
 
 ## <a name="net-code-style-settings"></a>.NET 코드 스타일 설정
 

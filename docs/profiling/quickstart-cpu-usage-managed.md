@@ -1,5 +1,5 @@
 ---
-title: CPU 사용량 데이터 분석(관리 코드)
+title: CPU 사용량 현황 데이터 분석(C#, Visual Basic)
 description: CPU 사용량 진단 도구를 사용하여 C# 및 Visual Basic에서 앱 성능 측정
 ms.custom: mvc
 ms.date: 08/06/2018
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 05dbbf5bc6e13b36e5918a880d0a767968a78f30
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7d13a97c3fb228cb72040313c98b70e14fc44099
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703863"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128190"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>빠른 시작: Visual Studio에서 CPU 사용량 데이터(관리 코드) 분석
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>빠른 시작: Visual Studio에서 CPU 사용량 현황 데이터 분석(C#, Visual Basic)
 
 Visual Studio는 애플리케이션에서 성능 문제를 분석할 수 있도록 여러 강력한 기능을 제공합니다. 이 항목에는 기본 기능 중 일부에 대해 알아보는 빠른 방법을 제공합니다. 여기에서는 높은 CPU 사용량으로 인한 성능 병목 상태를 식별하는 도구를 살펴봅니다. 진단 도구는 ASP.NET을 포함한 Visual Studio의 .NET 개발 및 네이티브/C++ 개발에 사용할 수 있습니다.
 
@@ -237,5 +237,5 @@ CPU 사용량 아래의 함수 목록을 검사하고, 가장 많은 작업을 �
 
 ## <a name="see-also"></a>참고 항목
 
-- [Visual Studio의 프로파일링](../profiling/index.md)
+- [Visual Studio의 프로파일링](../profiling/index.yml)
 - [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)

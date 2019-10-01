@@ -5,18 +5,18 @@ ms.date: 03/14/2019
 author: asb3993
 ms.author: amburns
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: bb0d92496412792643ae67745afae2fec51fca90
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 3e6ae24ea9e9a5dea263c2449a9b23b6027f7a96
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872085"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211314"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Mac용 Visual Studio의 기본 바로 가기 키
 
 키보드 접근성에 대한 자세한 내용은 [방법: 키보드 탐색 사용](~/accessibility.md#how-to-use-keyboard-navigation)을 참조하세요.
 
-해당 바로 가기 키를 사용하여 Mac용 Visual Studio의 다양한 명령에 액세스할 수 있습니다. 이 문서에는 **Visual Studio** 키 바인딩 체계의 기본 바로 가기가 나열되어 있습니다. 키 바인딩 체계를 변경하는 방법에 대한 자세한 정보는 [IDE 사용자 지정](~/customizing-the-ide.md#key-bindings)을 참조하세요. **Mac용 Visual Studio** > **기본 설정** 메뉴 항목을 사용하고 **기본 설정** 창에서 **환경** > **키 바인딩**을 선택하여 명령에 대한 바로 가기 키를 사용자 지정할 수도 있습니다.
+해당 바로 가기 키를 사용하여 Mac용 Visual Studio의 다양한 명령에 액세스할 수 있습니다. 이 문서에는 **Mac용 Visual Studio** 키 바인딩 체계의 기본 바로 가기가 나와 있습니다. 키 바인딩 체계를 변경하는 방법에 대한 자세한 정보는 [IDE 사용자 지정](~/customizing-the-ide.md#key-bindings)을 참조하세요. **Mac용 Visual Studio** > **기본 설정** 메뉴 항목을 사용하고 **기본 설정** 창에서 **환경** > **키 바인딩**을 선택하여 명령에 대한 바로 가기 키를 사용자 지정할 수도 있습니다.
 
 > [!TIP]
 > 이 문서에 표시되는 바로 가기 키와 Mac용 Visual Studio의 키 바인딩 기본 설정은 macOS에서 일반적으로 사용되는 기호를 사용하여 표시됩니다. 기호를 잘 모르는 경우에는 [macOS 키 기호 조회 표](#macos-key-symbols-lookup)를 검토합니다.
@@ -48,7 +48,7 @@ ms.locfileid: "68872085"
 |중단점 설정/해제|**⌘\\** , **F9**|
 |중단점 보기|**⌥⌘B**|
 
-## <a name="designer"></a>Designer
+## <a name="designer"></a>디자이너
 
 |명령|바로 가기 키|
 |-|-|
@@ -65,7 +65,7 @@ ms.locfileid: "68872085"
 |문서 서식|**⌃I**|
 |선택 영역 들여쓰기|**⌘]**|
 |붙여넣기|**⌘V**|
-|기본 설정|**⌘,**|
+|Preferences(기본 설정) 개체|**⌘,**|
 |다시 실행|**⇧⌘Z**|
 |이름 바꾸기|**⌘R**, **F2**|
 |모두 선택|**⌘A**|
@@ -99,7 +99,7 @@ ms.locfileid: "68872085"
 |새 파일|**⌘N**|
 |새 솔루션|**⇧⌘N**|
 |열기|**⌘O**|
-|용|**⌘P**|
+|Print|**⌘P**|
 |끝내기|**⌘Q**|
 |되돌리기|**⌘U**|
 |저장|**⌘S**|
@@ -119,7 +119,7 @@ ms.locfileid: "68872085"
 |Unity 메시지 구현|**⇧⌘M**|
 |검사|**⌥⌘I**|
 
-## <a name="project"></a>프로젝트
+## <a name="project"></a>Project
 
 |명령|바로 가기 키|
 |-|-|
@@ -131,7 +131,7 @@ ms.locfileid: "68872085"
 |모두 다시 빌드|**⌃⌘B**|
 |디버깅 시작|**⌘⏎**, **F5**|
 |디버깅 없이 시작|**⌥⌘⏎**, **⌃F5**|
-|Stop|**⇧⌘⏎**, **⇧F5**|
+|중지|**⇧⌘⏎**, **⇧F5**|
 
 ## <a name="refactoring"></a>리팩터링
 
@@ -150,7 +150,7 @@ ms.locfileid: "68872085"
 |선택 영역과 유사한 다음 찾기|**⌘E**, **⌘F3**|
 |이전 찾기|**⇧⌘G**, **⇧F3**|
 |선택 영역과 유사한 이전 찾기|**⇧⌘F3**|
-|Find|**⌘F**|
+|찾기|**⌘F**|
 |파일로 이동|**⇧⌘D**|
 |줄로 이동|**⌘L**|
 |형식으로 이동|**⇧⌘T**|
@@ -228,7 +228,7 @@ ms.locfileid: "68872085"
 |확대|**⌘+** , **⌘=**|
 |축소|**⌘-** , **⌘_**|
 
-## <a name="window"></a>창
+## <a name="window"></a>시간 범위
 
 |명령|바로 가기 키|
 |-|-|
@@ -265,8 +265,8 @@ ms.locfileid: "68872085"
 |⌦|**정방향 삭제**|
 |⏎|**Return**|
 |←→↑↓|**화살표 키**|
-|↖|**Home**|
-|↘|**End**|
+|↖|**홈팀**|
+|↘|**종료**|
 |␣|**스페이스바**|
 |⇥|**Tab**|
 

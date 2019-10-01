@@ -1,20 +1,20 @@
 ---
-title: Visual Studio + GitHub Enterprise 번들 | Microsoft Docs
+title: Visual Studio + GitHub Enterprise 제품 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
-description: Visual Studio + GitHub Enterprise 번들에서 구독 관리
-ms.openlocfilehash: 0f297eac1d6b2bc5fe322be305fab7f268f3d041
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+description: Visual Studio + GitHub Enterprise 제품에서 구독 관리
+ms.openlocfilehash: 29df2d7c43f934e44b7585e975e0f77328305ba5
+ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605394"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150144"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>GitHub Enterprise가 포함된 Visual Studio 구독 관리
-Microsoft와 EA(기업계약)를 체결한 고객은 Visual Studio 표준 구독과 GitHub Enterprise를 결합한 새 구독 번들을 구입할 수 있습니다. 이는 Visual Studio 구독자가 GitHub Enterprise를 쉽고 경제적으로 구입하는 방법입니다. 
+Microsoft와 EA(기업계약)를 체결한 고객은 Visual Studio 표준 구독과 GitHub Enterprise를 결합한 새 구독 제품을 구매할 수 있습니다. 이는 Visual Studio 구독자가 GitHub Enterprise를 쉽고 경제적으로 구입하는 방법입니다. 
 
 조직에서 GitHub Enterprise가 포함된 Visual Studio Subscriptions를 구입하면 두 부분으로 프로비저닝되고 관리됩니다.
 

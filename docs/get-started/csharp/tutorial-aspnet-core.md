@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ac544f033e8b021b7ef0a6253fbd0cb65b4450f5
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 4c2e9c890b0b676216a02a526cad5380df4ceb57
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180475"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252469"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>자습서: Visual Studio에서 C# 및 ASP.NET Core 시작
 
@@ -129,9 +129,9 @@ Visual Studio를 이미 설치한 경우 최신 릴리스를 실행하고 있는
 
    !['새 프로젝트 구성' 창에서 프로젝트의 이름을 'MyCoreApp'으로 지정합니다.](./media/vs-2019/csharp-name-your-aspnet-mycoreapp-project.png)
 
-1. **새 ASP.NET Core 웹 애플리케이션 만들기** 창의 위쪽 드롭다운 메뉴에 **ASP.NET Core 2.1**이 표시되는지 확인합니다. 그런 다음, 예제 Razor Pages가 포함된 **웹 애플리케이션**을 선택합니다. 다음으로, **만들기**를 선택합니다.
+1. **새 ASP.NET Core 웹 애플리케이션 만들기** 창의 위쪽 드롭다운 메뉴에 **ASP.NET Core 3.0**이 표시되는지 확인합니다. 그런 다음, 예제 Razor Pages가 포함된 **웹 애플리케이션**을 선택합니다. 다음으로, **만들기**를 선택합니다.
 
-   !['새 ASP.NET Core 웹 애플리케이션 만들기' 창](./media/vs-2019/csharp-create-aspnet-core-razor-pages-app.png)
+   !['새 ASP.NET Core 웹 애플리케이션 만들기' 창](./media/vs-2019/csharp-create-aspnet-razor-pages-app.png)
 
    Visual Studio에서 새 프로젝트를 엽니다.
 
@@ -141,6 +141,7 @@ Visual Studio를 이미 설치한 경우 최신 릴리스를 실행하고 있는
 
 이 솔루션은 **Razor 페이지** 디자인 패턴을 따릅니다. 이는 Razor 페이지 자체 내에 모델 및 컨트롤러 코드를 포함하도록 간소화된 [MVC(Model-View-Controller)](/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.1&tabs=aspnetcore2x) 디자인 패턴과 다릅니다.
 
+::: moniker range="vs-2017"
 ## <a name="tour-your-solution"></a>솔루션 둘러보기
 
  1. 프로젝트 템플릿은 _MyCoreApp_이라는 단일 ASP.NET Core 프로젝트와 솔루션을 만듭니다. 해당 콘텐츠를 보려면 **솔루션 탐색기** 탭을 선택합니다.
@@ -169,7 +170,7 @@ Visual Studio를 이미 설치한 경우 최신 릴리스를 실행하고 있는
 
     원하는 경로에 직접 &mdash;CSS, 이미지 및 JavaScript 라이브러리와 같은&mdash; 정적 사이트 콘텐츠를 배치할 수 있습니다.
 
- 1. 또한 프로젝트에는 런타임에 웹앱을 관리하는 구성 파일이 포함됩니다. 기본 애플리케이션 [구성](/aspnet/core/fundamentals/configuration)은 *appsettings.json*에 저장됩니다. 하지만 *appsettings.Development.json*을 사용하여 이러한 설정을 재정의할 수 있습니다. **appsettings.json** 파일을 확장하여 **appsettings.Development.json** 파일을 봅니다.
+ 1. 프로젝트에는 런타임에 웹앱을 관리하는 구성 파일도 포함되어 있습니다. 기본 애플리케이션 [구성](/aspnet/core/fundamentals/configuration)은 *appsettings.json*에 저장됩니다. 하지만 *appsettings.Development.json*을 사용하여 이러한 설정을 재정의할 수 있습니다. **appsettings.json** 파일을 확장하여 **appsettings.Development.json** 파일을 봅니다.
 
      ![Visual Studio 솔루션 탐색기의 구성 파일](media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
 
@@ -216,7 +217,7 @@ Visual Studio를 이미 설치한 경우 최신 릴리스를 실행하고 있는
      public void OnGet()
      {
          string directory = Environment.CurrentDirectory;
-     Message = String.Format("Your directory is {0}.", directory);
+         Message = String.Format("Your directory is {0}.", directory);
      }
     ```
 
@@ -239,6 +240,110 @@ Visual Studio를 이미 설치한 경우 최신 릴리스를 실행하고 있는
    ![변경 내용이 포함된 업데이트된 정보 페이지 표시](media/csharp-aspnet-razor-browser-page-about-changed.png)
 
 1. 웹 브라우저를 닫고, **Shift**+**F5**를 눌러 디버그 모드를 중지한 다음, Visual Studio를 닫습니다.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+## <a name="tour-your-solution"></a>솔루션 둘러보기
+
+ 1. 프로젝트 템플릿은 _MyCoreApp_이라는 단일 ASP.NET Core 프로젝트와 솔루션을 만듭니다. 해당 콘텐츠를 보려면 **솔루션 탐색기** 탭을 선택합니다.
+
+    ![Visual Studio for Razor Pages 솔루션에서 MyCoreApp으로 이름이 지정된 ASP.NET 솔루션 탐색기](media/csharp-aspnet-razor-solution-explorer-mycoreapp.png)
+
+ 1. **Pages** 폴더를 펼칩니다.
+
+     ![솔루션 탐색기의 Pages 폴더](media/vs-2019/csharp-aspnet-solution-explorer-pages.png)
+
+ 1. 코드 편집기에서 **Index.cshtml** 파일을 살펴봅니다.
+
+     ![Visual Studio 코드 편집기에서 Index.cshtml 파일 보기](media/vs-2019/csharp-aspnet-index-cshtml.png)
+
+ 1. 각 .cshtml 파일에는 연결된 코드 파일이 있습니다. 편집기에서 코드 파일을 열려면, 솔루션 탐색기에서 **Index.cshtml** 노드를 펼치고 **Index.cshtml.cs** 파일을 선택합니다.
+
+     ![Visual Studio 코드 편집기에서 Index.cshtml.cs 파일 선택](media/vs-2019/csharp-aspnet-choose-index-cshtml.png)
+
+ 1. 코드 편집기에서 **Index.cshtml.cs** 파일을 살펴봅니다.
+
+     ![Visual Studio 코드 편집기에서 About.cshtml 파일 보기](media/vs-2019/csharp-aspnet-index-cshtml-editing.png)
+
+ 1. 프로젝트에는 웹 사이트의 루트인 **wwwroot** 폴더가 포함됩니다. 내용을 보려면 폴더를 확장합니다.
+
+     ![Visual Studio 솔루션 탐색기의 wwwroot 폴더](media/csharp-aspnet-razor-solution-explorer-wwwroot.png)
+
+    원하는 경로에 직접 &mdash;CSS, 이미지 및 JavaScript 라이브러리와 같은&mdash; 정적 사이트 콘텐츠를 배치할 수 있습니다.
+
+ 1. 프로젝트에는 런타임에 웹앱을 관리하는 구성 파일도 포함되어 있습니다. 기본 애플리케이션 [구성](/aspnet/core/fundamentals/configuration)은 *appsettings.json*에 저장됩니다. 하지만 *appsettings.Development.json*을 사용하여 이러한 설정을 재정의할 수 있습니다. **appsettings.json** 파일을 확장하여 **appsettings.Development.json** 파일을 봅니다.
+
+     ![Visual Studio 솔루션 탐색기의 구성 파일](media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
+
+## <a name="run-debug-and-make-changes"></a>실행, 디버그 및 변경
+
+1. IDE에서 **IIS Express** 단추를 선택하여 디버그 모드에서 앱을 빌드 및 실행합니다. 또는 **F5** 키를 누르거나 메뉴 모음에서 **디버그** > **디버깅 시작**을 선택합니다.
+
+     ![Visual Studio에서 IIS Express 단추 선택](media/csharp-aspnet-razor-iisexpress.png)
+
+     > [!NOTE]
+     > **'IIS Express' 웹 서버에 연결할 수 없습니다**라는 오류 메시지가 발생하면 Visual Studio를 닫은 후 마우스 오른쪽 단추 클릭 또는 상황에 맞는 메뉴에서 **관리자 권한으로 실행** 옵션을 사용하여 엽니다. 그런 다음 애플리케이션을 다시 실행합니다.
+     >
+     > IIS SSL Express 인증서를 허용할 것인지를 묻는 메시지가 표시될 수도 있습니다. 웹 브라우저에서 코드를 보려면 **예**를 선택한 다음, 후속 보안 경고 메시지가 표시되면 **예**를 선택합니다.
+
+1. Visual Studio가 브라우저 창을 시작합니다. 메뉴 모음에 **홈** 및 **개인 정보** 페이지가 표시됩니다.
+
+1. 메뉴 모음에서 **개인 정보**를 선택합니다.
+
+   브라우저의 **개인 정보** 페이지에는 *Privacy.cshtml* 파일에 설정된 텍스트가 렌더링됩니다.
+
+   ![개인 정보 페이지의 텍스트 보기](media/vs-2019/csharp-aspnet-browser-page-privacy.png)
+
+1. Visual Studio로 돌아가서 **Shift+F5**를 눌러 디버그 모드를 중지합니다. 그러면 브라우저 창의 프로젝트도 닫힙니다.
+
+1. Visual Studio에서 편집을 위해 **Privacy.cshtml**을 엽니다. _Use this page to detail your site's privacy policy_ 단어를 삭제하고, 대신 _This page is under construction as of @ViewData["TimeStamp"]_ 단어를 추가합니다.
+
+    ![Privacy.cshtml 파일의 텍스트 변경](media/vs-2019/csharp-aspnet-privacy-cshtml-code-changed.png)
+
+1. 이제 코드를 변경합시다. **Privacy.cshtml.cs**를 선택합니다. 그런 다음, 다음 바로 가기를 사용하여 파일 맨 위에서 `using` 지시문을 정리합니다.
+
+   회색으로 표시된 `using` 지시문을 선택하면 [빠른 작업](../../ide/quick-actions.md) 전구 메뉴가 캐럿 바로 아래 또는 왼쪽 여백에 나타납니다. 전구 메뉴를 선택하고 **불필요한 using 제거**를 마우스로 가리킵니다.
+
+   ![Privacy.cshtml.cs 파일에서 불필요한 using 제거](media/vs-2019/csharp-aspnet-remove-unnecessary-usings.png)
+
+   이제 **변경 내용 미리 보기**를 선택하여 변경 내용을 확인합니다.
+
+   ![변경 내용 미리 보기](media/vs-2019/csharp-aspnet-preview-changes.png)
+
+   **적용**을 선택합니다. Visual Studio가 파일에서 불필요한 `using` 지시문을 삭제합니다.
+
+1. 그런 다음, `OnGet()` 메서드에서 본문을 다음 코드로 변경합니다.
+
+     ```csharp
+     public void OnGet()
+     {
+        string dateTime = DateTime.Now.ToShortDateString();
+        ViewData["TimeStamp"] = dateTime;
+     }
+    ```
+
+1. **날짜/시간** 아래에 두 개의 물결선 밑줄이 표시됩니다. 물결선 밑줄이 표시되는 이유는 해당 형식이 범위에 없기 때문입니다.
+
+   ![OnGet 메서드에 물결선 밑줄로 표시된 오류](media/vs-2019/csharp-aspnet-add-new-onget-method.png)
+
+    **오류 목록** 도구 모음을 열고 같은 오류가 나열되는지 확인합니다. (**오류 목록** 도구 모음이 표시되지 않으면 메뉴 모음에서 **보기** > **오류 목록**을 선택합니다.)
+
+   ![Visual Studio의 오류 목록](media/vs-2019/csharp-aspnet-error-list.png)
+
+1. 이 문제를 해결해 보겠습니다. 코드 편집기에서 오류가 있는 줄에 커서를 놓고 왼쪽 여백에서 [빠른 작업] 전구 메뉴를 선택합니다. 그런 다음, 드롭다운 메뉴에서 **using System;** 을 선택하여 이 지시문을 파일 맨 위에 추가하고 오류를 해결합니다.
+
+   ![“using System;” 지시문 추가](media/vs-2019/csharp-aspnet-add-usings.png)
+
+1. **F5** 키를 눌러 웹 브라우저에서 프로젝트를 엽니다.
+
+1. 웹 사이트의 맨 위에서 **개인 정보**를 선택하여 변경 내용을 살펴봅니다.
+
+   ![변경 내용을 포함하는 업데이트된 개인 정보 페이지 보기](media/vs-2019/csharp-aspnet-browser-page-privacy-changed.png)
+
+1. 웹 브라우저를 닫고, **Shift**+**F5**를 눌러 디버그 모드를 중지한 다음, Visual Studio를 닫습니다.
+::: moniker-end
 
 ## <a name="quick-answers-faq"></a>빠른 답변 FAQ
 

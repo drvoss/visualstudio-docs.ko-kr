@@ -6,18 +6,18 @@ manager: lank
 ms.date: 07/18/2019
 ms.topic: conceptual
 description: Visual Studio 구독에서 Microsoft 소프트웨어 타이틀을 찾고 다운로드하는 방법을 알아봅니다.
-ms.openlocfilehash: 1386add84ef86b5bf4c255d176b86d5fd9f294f6
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: 003d27e1c8344c6c4cb22a69e06efc94238bb622
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377855"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095405"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Visual Studio 구독의 소프트웨어 타이틀 다운로드
 어떤 Visual Studio 구독을 보유하느냐에 따라 매우 다양한 Microsoft 소프트웨어 타이틀을 사용할 수 있습니다.  이 문서에서는 구독을 최대한 활용하는 데 필요한 소프트웨어를 찾고 다운로드하는 방법을 개괄적으로 소개합니다. 
 
 > [!NOTE]
-> [다운로드](https://my.visualstudio.com/downloads/featured) 페이지에는 자신의 구독에 포함된 다운로드만 표시됩니다.  둘 이상의 구독 또는 프로그램 멤버 자격이 있으면 현재 다른 구독을 보고 있는 경우에도 보유한 **최상위 구독**에 대한 다운로드가 표시됩니다.  예를 들어 Visual Studio Professional 구독과 Visual Studio Test Professional 구독이 모두 동일한 로그인 ID와 연결되는 경우 현재 Dev Essentials 혜택을 보고 있는 경우에도 전문가 수준 구독에 포함된 다운로드가 표시됩니다.
+> [다운로드](https://my.visualstudio.com/downloads/featured) 페이지에는 자신의 구독에 포함된 다운로드만 표시됩니다.  둘 이상의 구독 또는 프로그램 멤버 자격이 있으면 현재 다른 구독을 보고 있는 경우에도 보유한 **최상위 구독**에 대한 다운로드가 표시됩니다.  예를 들어 Visual Studio Enterprise 구독과 Visual Studio Professional 구독이 모두 동일한 로그인 ID에 연결되어 있는 경우, 현재 Professional 구독 혜택을 보고 있더라도 Enterprise 구독에 포함된 다운로드가 표시됩니다.
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>구독자 포털에서 다운로드를 찾으려면 어떻게 할까요?
 [다운로드](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs) 페이지를 방문하면 인기 있는 다운로드가 제품 유형별 그룹으로 정렬되어 표시됩니다.  표시된 인기 있는 다운로드 중 하나를 선택하거나 페이지 위쪽의 검색 표시줄을 사용하여 모든 제품을 검색할 수 있습니다.

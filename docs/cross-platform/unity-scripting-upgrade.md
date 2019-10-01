@@ -8,12 +8,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 82556ea0ed043c11cb9098383daf912ff17372ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0fb4560a196404687c60ce67f39b9c0754a24769
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818424"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253134"
 ---
 # <a name="using-net-4x-in-unity"></a>Unity에서 .NET 4.x 사용
 
@@ -335,13 +335,13 @@ public class UsingStaticExample: MonoBehaviour
 
 iOS와 같은 플랫폼에 게임을 내보낼 때 Unity는 IL2CPP 엔진을 사용하여 IL을 C++ 코드로 "트랜스 파일"한 다음, 대상 플랫폼의 네이티브 컴파일러를 사용하여 컴파일합니다. 이 시나리오에서는 리플렉션 부분과 같이 지원되지 않는 몇 가지 .NET 기능 및 `dynamic` 키워드 사용법이 있습니다. 사용자 코드에서 이러한 기능을 사용하여 제어할 수 있지만, Unity 및 IL2CPP로 작성되지 않은 타사 DLL 및 SDK를 사용하면 문제가 발생할 수 있습니다. 이 항목에 대한 자세한 내용은 Unity 사이트의 [스크립팅 제한](https://docs.unity3d.com/Manual/ScriptingRestrictions.html) 문서를 참조하세요.
 
-또한 위의 Json.NET 예제에서 설명된 바와 같이 Unity는 IL2CPP 내보내기 프로세스 중에 사용되지 않는 코드를 제거하려고 시도합니다.  이는 일반적으로 문제가 되지 않지만 리플렉션을 사용하는 라이브러리에서 내보내기 시점을 확인할 수 없는 런타임 시 호출되는 속성이나 메서드를 실수로 제거할 수 있습니다.  이러한 문제를 해결하려면 제거 프로세스를 실행하지 않는 어셈블리 및 네임스페이스 목록이 포함된 **link.xml** 파일을 프로젝트에 추가합니다.  자세한 세부 정보는 [바이트코드 제거에 대한 Unity의 문서](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html)를 참조하세요.
+또한 위의 Json.NET 예제에서 설명된 바와 같이 Unity는 IL2CPP 내보내기 프로세스 중에 사용되지 않는 코드를 제거하려고 시도합니다.  이 동작은 일반적으로 문제가 되지 않지만 리플렉션을 사용하는 라이브러리에서 내보내기 시 확인할 수 없는, 런타임에 호출되는 속성이나 메서드를 실수로 제거할 수 있습니다.  이러한 문제를 해결하려면 제거 프로세스를 실행하지 않는 어셈블리 및 네임스페이스 목록이 포함된 **link.xml** 파일을 프로젝트에 추가합니다.  자세한 세부 정보는 [바이트코드 제거에 대한 Unity의 문서](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html)를 참조하세요.
 
 ## <a name="net-4x-sample-unity-project"></a>.NET 4.x 샘플 Unity 프로젝트
 
 샘플에는 여러 .NET 4.x 기능의 예가 포함되어 있습니다. [GitHub](https://github.com/Microsoft/unity-scripting-upgrade)에서 프로젝트를 다운로드하거나 소스 코드를 볼 수 있습니다.
 
-## <a name="additional-resources"></a>추가 자료
+## <a name="additional-resources"></a>추가 리소스
 
 * [Unity 블로그 - Unity 2018.2에서 스크립팅 런타임 개선](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/)
 * [C#의 기록](https://docs.microsoft.com/dotnet/csharp/whats-new/csharp-version-history)

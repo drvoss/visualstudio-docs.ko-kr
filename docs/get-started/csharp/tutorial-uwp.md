@@ -3,7 +3,7 @@ title: Visual Studio 및 C#를 사용하여 UWP(유니버설 Windows 플랫폼) 
 description: Visual Studio에서 XAML 및 C#을 사용하여 UWP 앱 만들기
 titleSuffix: ''
 ms.custom: seodec18, get-started
-ms.date: 03/23/2019
+ms.date: 09/20/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: dab237eeb99f4d4d67652dba583bf9851b6d6175
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 1be0e656489c4bbff9064db329fb8b015b446297
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180458"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186847"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>자습서: XAML 및 C&#35를 사용하여 Visual Studio에서 첫 번째 유니버설 Windows 플랫폼 애플리케이션 만들기
 
@@ -62,6 +62,10 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 소개에서는 모든 Win
 
    > [!NOTE]
    > **비어 있는 앱(유니버설 Windows)** 프로젝트 템플릿이 표시되지 않으면 **추가 도구 및 기능 설치** 링크를 클릭합니다.<br><br>![추가 도구 및 기능 설치 링크 클릭](media/vs-2019/uwp-not-finding.png)<br><br>Visual Studio 설치 관리자가 시작됩니다. **유니버설 Windows 플랫폼 개발** 워크로드를 선택한 다음, **수정**을 선택합니다.<br><br>![Visual Studio 설치 관리자에서 유니버설 Windows 플랫폼 개발 워크로드](media/uwp-dev-workload.png)
+
+1. 프로젝트 이름을 _HelloWorld_로 지정하고 **만들기**를 선택합니다.
+
+   ![프로젝트 구성 화면](media/vs-2019/uwp-configure-your-project.png)
 
 1. **새 유니버설 Windows 플랫폼 프로젝트** 대화 상자에서 기본 **대상 버전** 및 **최소 버전** 설정에 동의합니다.
 
@@ -121,7 +125,7 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 소개에서는 모든 Win
 
 ### <a name="add-an-event-handler"></a>이벤트 처리기 추가
 
-"이벤트 처리기"는 복잡해 보이지만 이벤트가 발생할 때 호출되는 코드에 대한 다른 이름에 지나지 않습니다. 이 경우 "Hello World"에 작업을 추가합니다! 클릭합니다.
+"이벤트 처리기"는 복잡해 보이지만 이벤트가 발생할 때 호출되는 코드에 대한 다른 이름에 지나지 않습니다. 이 경우 "Hello World"에 작업을 추가합니다! 단추를 선택합니다.
 
 1. 디자인 캔버스에서 단추 컨트롤을 두 번 클릭합니다.
 
@@ -154,13 +158,15 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 소개에서는 모든 Win
 
 ## <a name="run-the-application"></a>애플리케이션 실행
 
+
+::: moniker range="vs-2017"
 "Hello World" UWP 앱을 빌드하고 배포하고 시작하여 모양과 음성을 확인할 때입니다. 방법은 다음과 같습니다.
 
 1. 재생 단추(**로컬 머신**텍스트가 있음)을 사용하여 로컬 머신에서 애플리케이션을 시작합니다.
 
    ![로컬 컴퓨터를 클릭하여 UWP 앱을 시작 및 디버그](media/uwp-start-or-debug.png)
 
-   (또는 메뉴 모음에서 **디버그** > **디버깅 시작**을 선택하거나 F5 키를 눌러 앱을 시작할 수도 있습니다.)
+   또는 메뉴 모음에서 **디버그** > **디버깅 시작**을 선택하거나 F5 키를 눌러 앱을 시작할 수도 있습니다.
 
 1. 시작 화면이 사라진 직후 나타나는 앱을 봅니다. 앱은 다음과 같아야 합니다.
 
@@ -172,9 +178,36 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 소개에서는 모든 Win
 
 1. 앱을 닫으려면 도구 모음에서 **디버깅 중지** 단추를 클릭합니다. (또는 메뉴 모음에서 **디버그** > **디버깅 중지**를 선택하거나 Shift+F5를 누릅니다.)
 
+::: moniker-end
+::: moniker range=">=vs-2019"
+"Hello World" UWP 앱을 빌드하고 배포하고 시작하여 모양과 음성을 확인할 때입니다. 방법은 다음과 같습니다.
+
+1. 재생 단추(**로컬 머신**텍스트가 있음)을 사용하여 로컬 머신에서 애플리케이션을 시작합니다.
+
+   ![로컬 컴퓨터를 클릭하여 UWP 앱을 시작 및 디버그](media/uwp-start-or-debug.png)
+
+   또는 메뉴 모음에서 **디버그** > **디버깅 시작**을 선택하거나 F5 키를 눌러 앱을 시작할 수도 있습니다.
+
+1. 시작 화면이 사라진 직후 나타나는 앱을 봅니다. 앱은 다음과 같아야 합니다.
+
+   ![UWP "Hello World" 앱](media/vs-2019/uwp-hello-world-app.png)
+
+1. **Hello World** 단추를 클릭합니다.
+
+   Windows 10 디바이스는 말 그대로 "Hello, World!"라고 말합니다.
+
+1. 앱을 닫으려면 도구 모음에서 **디버깅 중지** 단추를 클릭합니다. (또는 메뉴 모음에서 **디버그** > **디버깅 중지**를 선택하거나 Shift+F5를 누릅니다.)
+
+::: moniker-end
+
 ## <a name="next-steps"></a>다음 단계
 
 축하합니다. 이 자습서를 마쳤습니다. UWP 및 Visual Studio IDE에 대한 몇 가지 기본 사항을 알게 됐기를 바랍니다. 자세히 알아보려면 계속 다음 자습서를 사용하세요.
 
 > [!div class="nextstepaction"]
 > [사용자 인터페이스 만들기](/windows/uwp/design/basics/xaml-basics-ui)
+
+## <a name="see-also"></a>참고 항목
+
+- [UWP 개요](/windows/uwp/get-started/universal-application-platform-guide)
+- [UWP 앱 샘플 가져오기](/windows/uwp/get-started/get-uwp-app-samples)

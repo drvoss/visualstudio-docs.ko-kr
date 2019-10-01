@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 07/23/2019
+ms.date: 09/23/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,12 @@ ms.custom: seodec18
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c0f7f52b79c1c6e165aabe19df8848361a096653
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 51d5c25b9e8a3125a0f1b09a4fbfd5f6d6139084
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461617"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211387"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>Visual Studio 워크로드 및 구성 요소 ID
 
@@ -31,7 +31,7 @@ ms.locfileid: "68461617"
 
 **15.9 릴리스[용으로 업데이트됨](/visualstudio/releasenotes/vs2017-relnotes/)**
 
-| **버전** | **ID** | **설명** |
+| **에디션** | **ID** | **설명** |
 | ----------- | ------ | --------------- |
 | [Visual&nbsp;Studio Enterprise&nbsp;2017](workload-component-id-vs-enterprise.md?vs-2017) | Microsoft.VisualStudio.Product.Enterprise | 모든 규모의 팀에서 생산성과 조정을 구현하기 위한 Microsoft DevOps 솔루션 |
 | [Visual&nbsp;Studio Professional&nbsp;2017](workload-component-id-vs-professional.md?vs-2017) | Microsoft.VisualStudio.Product.Professional | 소규모 팀을 위한 전문적인 개발자 도구 및 서비스 |
@@ -50,9 +50,9 @@ ms.locfileid: "68461617"
 
 ::: moniker range="vs-2019"
 
-**[16.2 릴리스](/visualstudio/releases/2019/release-notes/)용으로 업데이트됨**
+**[16.3 릴리스](/visualstudio/releases/2019/release-notes/)용으로 업데이트됨**
 
-| **버전** | **ID** | **설명** |
+| **에디션** | **ID** | **설명** |
 | ----------- | ------ | --------------- |
 | [Visual&nbsp;Studio Enterprise&nbsp;2019](workload-component-id-vs-enterprise.md?vs-2019) | Microsoft.VisualStudio.Product.Enterprise | 모든 규모의 팀에서 생산성과 조정을 구현하기 위한 Microsoft DevOps 솔루션 |
 | [Visual&nbsp;Studio Professional&nbsp;2019](workload-component-id-vs-professional.md?vs-2019) | Microsoft.VisualStudio.Product.Professional | 소규모 팀을 위한 전문적인 개발자 도구 및 서비스 |

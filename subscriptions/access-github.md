@@ -1,21 +1,21 @@
 ---
-title: Visual Studio + GitHub 번들 | Microsoft Docs
+title: Visual Studio + GitHub 제품 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
-description: 새로운 Visual Studio + GitHub 번들에 대해 알아보기
-ms.openlocfilehash: 1d7b55a32c796747d50fac8dae14d6af2f847c46
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+description: 새로운 Visual Studio + GitHub 제품에 대해 알아봅니다.
+ms.openlocfilehash: 09168bffbdb8caf9e6366335f5d08f5bf81573f9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377645"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238140"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>GitHub Enterprise가 포함된 Visual Studio 구독 소개  
 
-Microsoft와 EA(기업계약)를 체결한 고객은 Visual Studio 표준 구독과 GitHub Enterprise를 결합한 새 구독 번들을 구입할 수 있습니다. Visual Studio 구독자가 GitHub Enterprise를 쉽고 경제적으로 구입하는 방법입니다. 
+Microsoft와 EA(기업계약)를 체결한 고객은 Visual Studio 표준 구독과 GitHub Enterprise를 결합한 새 구독 제품을 구매할 수 있습니다. Visual Studio 구독자가 GitHub Enterprise를 쉽고 경제적으로 구입하는 방법입니다. 
 
 - 오픈 소스 코드, 커뮤니티 및 모범 사례를 IDE 및 워크플로에 안전하게 도입하여 Visual Studio 및 GitHub를 통해 대규모로 혁신합니다.
 - 가장 포괄적인 리소스 세트를 가진 개발자를 위해 동급 최고의 개발 도구와 서비스를 사용하여 뛰어난 애플리케이션을 생성, 배포 및 관리합니다. 
@@ -28,11 +28,11 @@ Microsoft와 EA(기업계약)를 체결한 고객은 Visual Studio 표준 구독
 - GitHub Enterprise가 포함된 Visual Studio Enterprise
 - GitHub Enterprise가 포함된 Visual Studio Professional
 
-조직에 아직 갱신하지 않은 EA가 있는 경우 "Step-up" SKU를 구입하여 기존 Visual Studio Enterprise 또는 Visual Studio Professional 구독에 GitHub Enterprise를 추가할 수 있습니다.  그런 다음, 계약이 갱신되면 번들을 구매할 수 있습니다.
+조직에 아직 갱신하지 않은 EA가 있는 경우 "Step-up" SKU를 구입하여 기존 Visual Studio Enterprise 또는 Visual Studio Professional 구독에 GitHub Enterprise를 추가할 수 있습니다. 그런 다음, 계약이 갱신되면 제품을 구매할 수 있습니다.
 
 Visual Studio Enterprise, Visual Studio Professional 및 GitHub Enterprise에 대한 기존 SKU는 별도로 계속 사용할 수도 있습니다. 
 
-혜택, 옵션 및 가격에 대해 자세히 알아보려면 https://visualstudio.microsoft.com/subscriptions/visual-studio-github 를 방문하세요. 
+혜택 및 옵션에 대한 자세한 내용은 https://visualstudio.microsoft.com/subscriptions/visual-studio-github 를 참조하세요. 
 
 ## <a name="getting-your-subscriptions"></a>구독 가져오기
 
@@ -40,7 +40,7 @@ Visual Studio + GitHub Enterprise 구독은 두 부분으로 할당됩니다.
 1. Visual Studio 구독(Enterprise 또는 Professional)
 2. GitHub Enterprise 구독
 
-조직에서 구독을 구입하면 관리자가 할당합니다.  Visual Studio 구독 및 GitHub Enterprise 구독은 별도로 할당됩니다.  
+조직에서 구독을 구입하면 관리자가 할당합니다. Visual Studio 구독 및 GitHub Enterprise 구독은 별도로 할당됩니다.  
 
 Visual Studio + GitHub 구독이 할당된 경우 Visual Studio 구독 관리자가 구독을 할당했음을 알리는 이메일을 받게 됩니다.  그 때 https://my.visualstudio.com/subscriptions 에서 볼 수 있습니다.  
 

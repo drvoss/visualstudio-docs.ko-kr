@@ -1,21 +1,21 @@
 ---
 title: IDE 사용자 지정
-description: Mac용 Visual Studio를 다양한 방식으로 사용자 지정하여 사용자가 효율성과 미적 요구를 모두 충족하는 환경에서 앱을 개발하도록 할 수 있습니다. 이 항목에서는 Mac용 Visual Studio를 요구에 맞게 조정할 수 있는 여러 가지 방법을 살펴봅니다.
+description: Mac용 Visual Studio를 다양한 방식으로 사용자 지정하여 사용자가 효율성과 미적 요구를 모두 충족하는 환경에서 앱을 개발하도록 할 수 있습니다. 이 문서에서는 Mac용 Visual Studio를 요구에 맞게 조정할 수 있는 여러 가지 방법을 살펴봅니다.
 author: alanjclark
 ms.author: alcl
 ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
-ms.openlocfilehash: ff0c7a2970a9ecfdfb9de08f487ad7dfbe768249
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: fa1e2924e810f9e37f28d5becdfd8d46243b76fe
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691833"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213746"
 ---
 # <a name="customizing-the-ide"></a>IDE 사용자 지정
 
-Mac용 Visual Studio를 다양한 방식으로 사용자 지정하여 사용자가 효율성과 미적 요구를 모두 충족하는 환경에서 앱을 개발하도록 할 수 있습니다. 이 문서에서는 Mac용 Visual Studio를 요구에 맞게 조정할 수 있는 여러 가지 방법을 살펴봅니다.
+Mac용 Visual Studio를 사용자 지정하여 사용자가 효율성과 미적 요구를 모두 충족하는 환경에서 앱을 개발하도록 할 수 있습니다. 이 문서에서는 Mac용 Visual Studio를 요구에 맞게 조정할 수 있는 여러 가지 방법을 살펴봅니다.
 
 ## <a name="dark-theme"></a>어두운 테마
 
@@ -58,17 +58,21 @@ Mac용 Visual Studio에서 표시되는 언어를 변경하려면 다음 이미�
 
 ![표준 헤더 옵션](media/customizing-the-ide-image8a.png)
 
-채워진 **이름** 및 **전자 메일** 필드는 Mac용 Visual Studio에서 버전 제어를 통해 수행된 모든 커밋에 사용됩니다. 이러한 필드를 채우지 않은 경우 버전 제어를 사용하려고 할 때 Mac용 Visual Studio에서 필드를 채우라는 메시지를 표시합니다.
+채워진 **이름** 및 **전자 메일** 필드는 Mac용 Visual Studio에서 버전 제어를 통해 수행된 모든 커밋에 사용됩니다. 이러한 필드를 채우지 않은 경우, 버전 제어를 사용하려고 하면 Mac용 Visual Studio에서 필드를 채우라는 메시지가 표시됩니다.
 
 ## <a name="key-bindings"></a>키 바인딩
 
-키 바인딩을 사용하면 Mac용 Visual Studio 전반에 걸쳐 보다 효율적으로 이동할 수 있도록 개발 환경을 조정할 수 있습니다. Mac용 Visual Studio에서는 Visual Studio(Windows에서), ReSharper, Visual Studio Code, Xcode 등 널리 사용되는 IDE에 익숙한 키 바인딩을 제공합니다.
+키 바인딩 또는 바로 가기 키를 사용하면 Mac용 Visual Studio 내에서 더욱 효율적으로 이동할 수 있도록 개발 환경을 조정할 수 있습니다. Mac용 Visual Studio에서는 Visual Studio(Windows에서), ReSharper, Visual Studio Code, Xcode 등 널리 사용되는 IDE에 익숙한 키 바인딩을 제공합니다.
 
 다음 이미지에 설명된 대로 **Visual Studio > 기본 설정 > 환경 > 키 바인딩**으로 이동하면 키 바인딩을 설정할 수 있습니다.
 
 ![키 바인딩 설정](media/customizing-the-ide-image10a.png)
 
 여기에서 키 바인딩 조합을 검색하고, 충돌하는 바인딩을 보고, 새 바인딩을 추가하고, 기존 바인딩을 편집할 수 있습니다.
+
+Mac용 Visual Studio 초기 설정 중에 **키보드 선택** 화면을 통해 바인딩을 설정할 수도 있습니다.
+
+![키 바인딩 설정, 첫 실행](media/ide-tour-2019-keyboard-shortcut.png)
 
 ## <a name="workspace-layout"></a>작업 영역 레이아웃
 
@@ -108,7 +112,7 @@ Mac용 Visual Studio에서는 추가 정보, 도구, 탐색 보조 기능 등이
 
 항상 하나의 활성 레이아웃이 있으며 패드 추가, 패드 위치 변경 등 레이아웃에서 변경을 수행하면 활성 레이아웃만 변경됩니다. Mac용 Visual Studio를 닫으면 변경 내용이 저장되지 않습니다.
 
-그러나 **보기 > 현재 레이아웃 저장** 메뉴 항목을 사용하여 새 레이아웃을 만들 수 있습니다. 그러면 언제든지 선택할 수 있도록 현재 레이아웃이 메뉴에 추가됩니다.
+그러나 **보기 > 현재 레이아웃 저장** 메뉴 항목을 사용하여 새 레이아웃을 만들 수 있습니다. 이 명령은 언제든지 선택할 수 있도록 현재 레이아웃을 메뉴에 추가합니다.
 
 ![현재 레이아웃 저장](media/customizing-the-ide-image6a.png)
 

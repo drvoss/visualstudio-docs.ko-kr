@@ -21,6 +21,8 @@
       href: tutorial-uwp.md
     - name: WPF 애플리케이션 만들기
       href: tutorial-wpf.md
+    - name: Windows Forms 앱 만들기
+      href: ../../ide/create-csharp-winform-visual-studio.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: 비디오 자습서 - ASP.NET Core 웹앱 만들기
       items:
         - name: 1 - Visual Studio 설치

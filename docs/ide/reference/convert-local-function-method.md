@@ -5,24 +5,20 @@ ms.topic: reference
 author: kendrahavens
 ms.author: kehavens
 manager: jillfra
-dev_langs:
-- CSharp
-- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: ccddc3aef24ba14245dc568ca5f369e38ce8eba0
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 3572682fe68d9b0b1bc4adee537de5cd056a8906
+ms.sourcegitcommit: 9a3972eb85de5443ac2bc03964c5a251c39b2921
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531643"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71301686"
 ---
 # <a name="convert-a-local-function-to-a-method"></a>로컬 함수를 메서드로 변환
 
 이 리팩터링은 다음에 적용됩니다.
 
 - C#
-- Visual Basic
 
 **내용:** 로컬 함수를 메서드로 변환합니다.
 
@@ -36,7 +32,7 @@ ms.locfileid: "65531643"
 
     ![로컬 함수를 메서드 코드로 변환 샘플](media/convert-local-function-to-method.png)
 
-2. 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
+2. 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
 
     ![로컬 함수를 메서드 코드 수정 사항으로 변환 샘플](media/convert-local-function-to-method-codefix.png)
 

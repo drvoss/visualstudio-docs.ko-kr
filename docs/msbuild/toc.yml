@@ -292,6 +292,8 @@
               href: taskextension-base-class.md
             - name: ToolTaskExtension 기본 클래스
               href: tooltaskextension-base-class.md
+            - name: 작업 오류 진단
+              href: diagnosing-task-failures.md
             - name: AL(어셈블리 링커) 작업
               href: al-assembly-linker-task.md
             - name: AspNetCompiler 작업

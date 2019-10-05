@@ -3,14 +3,14 @@ title: Mac용 Visual Studio에 로그인
 description: Mac용 Visual Studio에 로그인하는 방법
 author: asb3993
 ms.author: amburns
-ms.date: 08/08/2019
+ms.date: 09/18/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: a3911826314710f5b47fb248e452b4a10b56e2dd
-ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
+ms.openlocfilehash: 7b1e912583cf0ac63307bf1c75912059c39fe427
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68957403"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213669"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Mac용 Visual Studio에 로그인
 
@@ -29,17 +29,17 @@ Mac용 Visual Studio를 처음 시작하면 Microsoft 계정으로 로그인하�
 > [!TIP]
 > Mac용 Visual Studio에 로그인하기 전에 인터넷에 연결되어 있는지 확인합니다. > 온라인 상태에서만 구독을 활성화할 수 있습니다. 연결되지 않을 경우 "나중에 하겠습니다."를 선택하고 연결되면 메뉴에서 로그인합니다.
 
-Mac용 Visual Studio에 로그인하려면 다음 단계를 따르세요.
+처음 시작할 때 Mac용 Visual Studio에 로그인하려면 다음 단계를 수행합니다.
 
 1. 로그인 창에서 **Microsoft로 로그인** 단추를 클릭합니다.
 
-    ![Mac용 Visual Studio의 계정 대화 상자](media/signing-in-image12.png)
+    ![Mac용 Visual Studio의 계정 대화 상자](media/ide-tour-2019-start-signin.png)
 
 2. Microsoft 자격 증명을 입력합니다.
 
     ![Microsoft 자격 증명 대화 상자](media/signing-in-image13.png)
 
-3. 로그인하면 Mac용 Visual Studio 2019 시작 창이 표시됩니다. 여기에서 새 프로젝트를 열거나 만들 수 있습니다.
+4. 로그인하면 바로 가기 키를 선택할 수 있는 옵션이 표시됩니다. 사용하려는 옵션을 선택하고 **계속**합니다. Mac용 Visual Studio 2019 시작 창이 표시됩니다. 여기에서 새 프로젝트를 열거나 만들 수 있습니다.
 
     ![로그인 성공](media/signing-in-image14.png)
 

@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a08e54025ac0826b88a3d3fcee299beef245d13
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 71ec5cf14f4cd336b8f92c15b4f0859c7a613354
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812007"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186818"
 ---
 # <a name="quick-actions"></a>빠른 작업
 
@@ -25,7 +25,17 @@ ms.locfileid: "62812007"
 
 - [코드 분석기](../code-quality/roslyn-analyzers-overview.md) 규칙 위반에 대한 코드 수정 적용
 
+::: moniker range=">=vs-2019"
+
+- 코드 분석기 규칙 위반 [표시 안 함](../code-quality/use-roslyn-analyzers.md#suppress-violations) 또는 해당 심각도 [구성](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity)
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
 - 코드 분석기 규칙 위반 [표시 안 함](../code-quality/use-roslyn-analyzers.md#suppress-violations)
+
+::: moniker-end
 
 - 리팩터링 적용(예: [임시 변수 인라인](../ide/reference/inline-temporary-variable.md))
 
@@ -52,7 +62,7 @@ ms.locfileid: "62812007"
 
 - 캐럿(커서)을 해당 코드 줄로 이동하는 경우(편집기의 왼쪽 여백에 표시됨)
 
-코드 줄에서 **Ctrl**+**.** 를 눌러 사용 가능한 빠른 작업 및 리팩토링 목록을 볼 수 있습니다.
+코드 줄에서 **Ctrl**+ **.** 를 눌러 사용 가능한 빠른 작업 및 리팩토링 목록을 볼 수 있습니다.
 
 잠재적 수정 사항을 보려면 전구 또는 **잠재적 수정 사항 표시** 링크 옆의 아래쪽 화살표를 선택합니다. 사용 가능한 빠른 작업 목록이 표시됩니다.
 
@@ -62,6 +72,6 @@ ms.locfileid: "62812007"
 
 - [Visual Studio에서 코드 생성](../ide/code-generation-in-visual-studio.md)
 - [일반적인 빠른 작업](../ide/common-quick-actions.md)
-- [코드 스타일 및 빠른 작업](../ide/code-styles-and-quick-actions.md)
+- [코드 스타일 및 빠른 작업](../ide/code-styles-and-code-cleanup.md)
 - [코드(C++) 쓰기 및 리팩터링](/cpp/ide/writing-and-refactoring-code-cpp)
 - [리팩터링(Mac용 Visual Studio)](/visualstudio/mac/refactoring)

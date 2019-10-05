@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e78487628a7604245d59f44220b91be73249e7fb
-ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
+ms.openlocfilehash: a22bdbc30fc222e26c01a10afdd7a666eebcb9f6
+ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69976767"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150116"
 ---
 # <a name="customize-code-coverage-analysis"></a>코드 검사 분석 사용자 지정
 
@@ -63,7 +63,7 @@ ms.locfileid: "69976767"
 
 ::: moniker-end
 
-### <a name="specify-symbol-search-paths"></a>기호 검색 경로 지정
+## <a name="symbol-search-paths"></a>기호 검색 경로
 
 코드 검사에는 어셈블리에 대한 기호 파일( *.pdb* 파일)이 필요합니다. 솔루션에서 빌드한 어셈블리의 경우 기호 파일은 대개 이진 파일과 함께 있으며 코드 검사는 자동으로 실행됩니다. 코드 검사 분석에 참조된 어셈블리를 포함하려는 경우가 있습니다. 이런 경우에 *.pdb* 파일이 이진 파일과 가깝지 않을 수 있지만 *.runsettings* 파일에서 기호 검색 경로를 지정할 수 있습니다.
 
@@ -77,9 +77,11 @@ ms.locfileid: "69976767"
 > [!NOTE]
 > 기호 확인은 어셈블리가 많은 원격 파일 위치를 사용할 경우 특히 오래 걸릴 수 있습니다. 따라서 *.pdb* 파일을 이진( *.dll* 및.*exe*) 파일과 같은 로컬 위치에 복사하는 것이 좋습니다.
 
-### <a name="exclude-and-include"></a>포함 및 제외
+## <a name="include-or-exclude-assemblies-and-members"></a>어셈블리와 멤버 포함 또는 제외
 
-코드 검사 분석에서 지정한 어셈블리를 제외할 수 있습니다. 예:
+어셈블리 또는 특정 형식과 멤버를 코드 검사 분석에 포함하거나 제외할 수 있습니다. **포함** 섹션이 비어 있거나 생략된 경우, 관련 PDB 파일이 있는 로드된 어셈블리가 모두 포함됩니다. **제외** 섹션의 절과 일치하는 어셈블리나 멤버는 코드 검사에서 제외됩니다. **제외** 섹션이 **포함** 섹션보다 우선 적용되므로, **포함** 및 **제외**에 모두 나열된 어셈블리는 코드 검사에 포함되지 않습니다.
+
+예를 들어 다음 XML은 이름을 지정하여 단일 어셈블리를 제외합니다.
 
 ```xml
 <ModulePaths>
@@ -90,7 +92,7 @@ ms.locfileid: "69976767"
 </ModulePaths>
 ```
 
-대신 포함할 어셈블리를 지정할 수 있습니다. 이 방법은 솔루션에 어셈블리를 추가할 경우 목록에 추가해야 하는 점을 기억해야 한다는 단점이 있습니다.
+다음 예제에서는 단일 어셈블리만 코드 검사에 포함되도록 지정합니다.
 
 ```xml
 <ModulePaths>
@@ -101,11 +103,20 @@ ms.locfileid: "69976767"
 </ModulePaths>
 ```
 
-**Include**가 비어 있을 경우 코드 검사 처리에는 로드된 모든 어셈블리 및 *.pdb* 파일이 검색되는 모든 어셈블리가 포함됩니다. 코드 검사에는 **Exclude** 목록의 절과 일치하는 항목이 포함되지 않습니다. **Include**는 **Exclude** 전에 처리됩니다.
+다음 표에서는 코드 검사에 포함하거나 제외할 어셈블리와 멤버를 찾는 다양한 방법을 보여 줍니다.
+
+| XML 요소 | 일치 항목 |
+| - | - |
+| ModulePath | 어셈블리 이름 또는 파일 경로로 지정된 어셈블리를 찾습니다. |
+| CompanyName | **회사** 특성으로 어셈블리를 찾습니다. |
+| PublicKeyToken | 퍼블릭 키 토큰으로 서명된 어셈블리를 찾습니다. |
+| 원본 | 요소가 정의된 소스 파일의 경로 이름으로 요소를 찾습니다. |
+| 특성 | 지정된 특성이 있는 요소를 찾습니다. 특성의 전체 이름을 지정합니다(예: `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`).<br/><br/><xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> 특성을 제외하면 `async`, `await`, `yield return` 및 자동 구현 속성과 같은 언어 기능을 사용하는 코드가 코드 검사 분석에서 제외됩니다. 실제로 생성된 코드를 제외하려면 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 특성만 제외합니다. |
+| 함수 | 매개 변수 목록을 포함하여 정규화된 이름으로 프로시저, 함수 또는 메서드를 찾습니다. [정규식](#regular-expressions)을 사용하여 이름의 일부를 찾을 수도 있습니다.<br/><br/>예제:<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)`(C++) |
 
 ### <a name="regular-expressions"></a>정규식
 
-Include 및 Exclude 노드는 와일드카드와 동일하지 않은 정규식을 사용합니다. 자세한 내용은 [Visual Studio에서 정규식 사용](../ide/using-regular-expressions-in-visual-studio.md)을 참조하세요. 일부 사례:
+Include 및 Exclude 노드는 와일드카드와 동일하지 않은 정규식을 사용합니다. 모든 일치 항목은 대소문자를 구분하지 않습니다. 일부 사례:
 
 - **.\*** 은(는) 모든 문자의 문자열과 일치합니다.
 
@@ -119,9 +130,7 @@ Include 및 Exclude 노드는 와일드카드와 동일하지 않은 정규식�
 
 - **$** 는 문자열의 끝과 일치합니다.
 
-모든 일치 항목은 대소문자를 구분하지 않습니다.
-
-예:
+다음 XML은 정규식을 사용하여 특정 어셈블리를 포함하고 제외하는 방법을 보여 줍니다.
 
 ```xml
 <ModulePaths>
@@ -138,48 +147,27 @@ Include 및 Exclude 노드는 와일드카드와 동일하지 않은 정규식�
 </ModulePaths>
 ```
 
+다음 XML은 정규식을 사용하여 특정 함수를 포함하고 제외하는 방법을 보여 줍니다.
+
+```xml
+<Functions>
+  <Include>
+    <!-- Include methods in the Fabrikam namespace: -->
+    <Function>^Fabrikam\..*</Function>
+    <!-- Include all methods named EqualTo: -->
+    <Function>.*\.EqualTo\(.*</Function>
+  </Include>
+  <Exclude>
+    <!-- Exclude methods in a class or namespace named UnitTest: -->
+    <Function>.*\.UnitTest\..*</Function>
+  </Exclude>
+</Functions>
+```
+
 > [!WARNING]
 > 이스케이프되지 않은 괄호 또는 일치하지 않는 괄호와 같이 정규식에 오류가 있는 경우 코드 검사 분석이 실행되지 않습니다.
 
-### <a name="other-ways-to-include-or-exclude-elements"></a>요소를 포함 또는 제외하는 다른 방법
-
-- **ModulePath** - 어셈블리 파일 경로로 지정한 어셈블리와 일치시킵니다.
-
-- **CompanyName** – 어셈블리를 **회사** 특성으로 일치시킵니다.
-
-- **PublicKeyToken** – 서명된 어셈블리를 공개 키 토큰으로 일치시킵니다.
-
-- **소스** – 요소를 소스 파일이 정의된 경로 이름으로 일치시킵니다.
-
-- **특성** – 특정 특성이 연결된 요소에 일치시킵니다. 특성의 전체 이름을 지정합니다(예: `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`).
-
-  > [!TIP]
-  > <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> 특성을 제외하면 `async`, `await`, `yield return` 및 자동 구현 속성과 같은 언어 기능을 사용하는 코드가 코드 검사 분석에서 제외됩니다. 실제로 생성된 코드를 제외하려면 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 특성만 제외합니다.
-
-- **함수** – 절차, 함수 또는 메서드를 정규화된 이름으로 일치시킵니다. 함수 이름을 일치시키려면 정규식은 네임스페이스, 클래스 이름, 메서드 이름, 매개 변수 목록을 포함한 함수의 정규화된 이름과 일치해야 합니다. 예:
-
-   ```csharp
-   Fabrikam.Math.LocalMath.SquareRoot(double);
-   ```
-
-   ```cpp
-   Fabrikam::Math::LocalMath::SquareRoot(double)
-   ```
-
-   ```xml
-   <Functions>
-     <Include>
-       <!-- Include methods in the Fabrikam namespace: -->
-       <Function>^Fabrikam\..*</Function>
-       <!-- Include all methods named EqualTo: -->
-       <Function>.*\.EqualTo\(.*</Function>
-     </Include>
-     <Exclude>
-       <!-- Exclude methods in a class or namespace named UnitTest: -->
-       <Function>.*\.UnitTest\..*</Function>
-     </Exclude>
-   </Functions>
-   ```
+정규식에 대한 자세한 내용은 [Visual Studio에서 정규식 사용](../ide/using-regular-expressions-in-visual-studio.md)을 참조하세요.
 
 ## <a name="sample-runsettings-file"></a>샘플 .runsettings 파일
 
@@ -282,9 +270,14 @@ Included items must then not match any entries in the exclude list to remain inc
             </PublicKeyTokens>
 
             <!-- We recommend you do not change the following values: -->
+            
+            <!-- Set this to True to collect coverage information for functions marked with the "SecuritySafeCritical" attribute. Instead of writing directly into a memory location from such functions, code coverage inserts a probe that redirects to another function, which in turns writes into memory. -->
             <UseVerifiableInstrumentation>True</UseVerifiableInstrumentation>
+            <!-- When set to True, collects coverage information from child processes that are launched with low-level ACLs, for example, UWP apps. -->
             <AllowLowIntegrityProcesses>True</AllowLowIntegrityProcesses>
+            <!-- When set to True, collects coverage information from child processes that are launched by test or production code. -->
             <CollectFromChildProcesses>True</CollectFromChildProcesses>
+            <!-- When set to True, restarts the IIS process and collects coverage information from it. -->
             <CollectAspDotNet>False</CollectAspDotNet>
 
           </CodeCoverage>

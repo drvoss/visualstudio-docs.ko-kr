@@ -2,7 +2,7 @@
 title: Visual Studio 2019의 새로운 기능
 titleSuffix: ''
 description: Visual Studio 2019의 새로운 기능을 알아보세요.
-ms.date: 07/23/2019
+ms.date: 09/24/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c9526a0cbf33278bbc3cab8120bb20ab0f5377a
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 5871e782ee84e49762d26a925380ad481e3623d1
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293725"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211338"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019의 새로운 기능
 
-**[16.2 릴리스](/visualstudio/releases/2019/release-notes/)용으로 업데이트됨**
+**[16.3 릴리스](/visualstudio/releases/2019/release-notes/)용으로 업데이트됨**
 
 >[!div class="button"]
 >[Visual Studio 2019 다운로드](https://visualstudio.microsoft.com/downloads)
@@ -108,6 +108,12 @@ Visual Studio 2019 릴리스부터 Visual Studio를 PMA(모니터별 인식) 애
 
    ![테스트 탐색기에서 향상된 사용자 인터페이스를 보여 주는 스크린샷](media/vs-2019/test-explorer-ui.png)
 
+### <a name="net-core"></a>.NET Core
+
+**16.3의 새로운 기능**: .NET Core 3.0 지원을 포함했습니다. 플랫폼 간 오픈 소스이며, Microsoft에서 완전하게 지원됩니다. 
+
+자세한 내용은 [.NET Core 3.0 알림](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/) 블로그 게시물을 참조하세요.
+
 ## <a name="collaborate"></a>공동 작업
 
 협력하여 문제를 해결하는 방법에 대한 자세한 내용을 보려면 다음 비디오를 보세요. <br><br>*비디오 길이: 4.22분*
@@ -190,7 +196,7 @@ Azure VM에서 실행되는 ASP.NET(Core 및 데스크톱) 애플리케이션을
 
    ![브라우저에서 JavaScript 코드 렌더링을 보여 주는 스크린샷](media/vs-2019/edge-chromium-breakpoint.png)
 
-## <a name="whats-next"></a>새로운 기능
+## <a name="whats-next"></a>다음 단계
 
 Visual Studio 2019는 개발 환경을 훨씬 더 좋게 만들어 줄 수 있는 새 기능으로 자주 업데이트됩니다. 최신 혁신 기능을 자세히 알아보려면 [Visual Studio 블로그](https://devblogs.microsoft.com/visualstudio/)를 확인하세요. 미리 보기에서 현재까지 릴리스된 내용에 대한 기록은 [미리 보기 릴리스 노트](/visualstudio/releases/2019/release-notes-preview/)를 살펴보세요.
 

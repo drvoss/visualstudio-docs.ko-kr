@@ -5,18 +5,18 @@ ms.date: 03/14/2019
 author: asb3993
 ms.author: amburns
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: bb0d92496412792643ae67745afae2fec51fca90
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: b569887005d22a4eab7289c4ab940c9d9539d040
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872085"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273326"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Mac용 Visual Studio의 기본 바로 가기 키
 
-키보드 접근성에 대한 자세한 내용은 [방법: 키보드 탐색 사용](~/accessibility.md#how-to-use-keyboard-navigation)을 참조하세요.
+키보드 접근성에 대한 자세한 내용은 [방법: 키보드 탐색 사용](~/accessibility-keyboard.md)을 참조하세요.
 
-해당 바로 가기 키를 사용하여 Mac용 Visual Studio의 다양한 명령에 액세스할 수 있습니다. 이 문서에는 **Visual Studio** 키 바인딩 체계의 기본 바로 가기가 나열되어 있습니다. 키 바인딩 체계를 변경하는 방법에 대한 자세한 정보는 [IDE 사용자 지정](~/customizing-the-ide.md#key-bindings)을 참조하세요. **Mac용 Visual Studio** > **기본 설정** 메뉴 항목을 사용하고 **기본 설정** 창에서 **환경** > **키 바인딩**을 선택하여 명령에 대한 바로 가기 키를 사용자 지정할 수도 있습니다.
+해당 바로 가기 키를 사용하여 Mac용 Visual Studio의 다양한 명령에 액세스할 수 있습니다. 이 문서에는 **Mac용 Visual Studio** 키 바인딩 체계의 기본 바로 가기가 나와 있습니다. 키 바인딩 체계를 변경하는 방법에 대한 자세한 정보는 [IDE 사용자 지정](~/customizing-the-ide.md#key-bindings)을 참조하세요. **Mac용 Visual Studio** > **기본 설정** 메뉴 항목을 사용하고 **기본 설정** 창에서 **환경** > **키 바인딩**을 선택하여 명령에 대한 바로 가기 키를 사용자 지정할 수도 있습니다.
 
 > [!TIP]
 > 이 문서에 표시되는 바로 가기 키와 Mac용 Visual Studio의 키 바인딩 기본 설정은 macOS에서 일반적으로 사용되는 기호를 사용하여 표시됩니다. 기호를 잘 모르는 경우에는 [macOS 키 기호 조회 표](#macos-key-symbols-lookup)를 검토합니다.
@@ -32,7 +32,7 @@ ms.locfileid: "68872085"
 |이전 오류|**⌥⇧⇞**|
 |파일의 이전 문제|**⌥⇞**|
 
-## <a name="debug"></a>디버그
+## <a name="debug"></a>Debug
 
 |명령|바로 가기 키|
 |-|-|
@@ -253,7 +253,7 @@ ms.locfileid: "68872085"
 
 ## <a name="macos-key-symbols-lookup"></a>macOS 키 기호 조회
 
-|기호|키|
+|Symbol|키|
 |-|-|
 |⌘|**명령**(**cmd**)|
 |⌥|**옵션**(**alt**)|

@@ -1,7 +1,7 @@
 ---
 title: 변경 로그(Visual Studio Tools for Unity, Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 07/29/2019
+ms.date: 09/18/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,16 +10,101 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d9b89be226ca7cafbfe66a14cd606f50678a013a
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 713535bb11b4bd9cab4ef1b31507b96fe1c9897a
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661952"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185995"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>변경 로그(Visual Studio Tools for Unity, Windows)
 
 Visual Studio Tools for Unity에 대한 변경 로그입니다.
+
+## <a name="4330"></a>4.3.3.0
+
+릴리스 날짜: 2019년 9월 23일
+
+### <a name="bug-fixes"></a>버그 수정
+
+- **통합:**
+
+  - 간단한 빌드에 대한 오류 및 경고 보고를 수정했습니다.
+
+## <a name="4320"></a>4.3.2.0
+
+릴리스 날짜: 2019년 9월 16일
+
+### <a name="new-features"></a>새 기능
+
+- **통합:**
+
+  - Unity와 관련된 새로운 진단 기능을 추가하여 Unity 프로젝트에 대한 Visual Studio의 지식을 심화했습니다. Unity 프로젝트에 적용되지 않는 일반적인 C# 진단을 억제하여 IDE를 보다 효율적으로 만들었습니다. 예를 들어 IDE에 검사기 변수를 `readonly`로 변경하는 빠른 수정이 표시되지 않습니다. 이렇게 하면 Unity 편집기에서 변수를 수정할 수 없습니다.
+    - `UNT0001`: Unity 메시지는 비어 있는 경우에도 런타임에 의해 호출되며, Unity 런타임에 의한 불필요한 처리를 방지하려면 이 메시지를 선언하지 마십시오.
+    - `UNT0002`: 문자열 같음을 사용한 태그 비교는 기본 제공 CompareTag 메서드보다 느립니다.
+    - `UNT0003`: 형식 안전성을 위해 GetComponent의 일반 형식을 사용하는 것이 좋습니다.
+    - `UNT0004`: Update 메시지는 프레임 속도에 따라 달라지며, Time.fixedDeltaTime 대신 Time.deltaTime을 사용해야 합니다.
+    - `UNT0005`: FixedUpdate 메시지는 프레임 속도에 따라 달라지며, Time.deltaTime 대신 Time.fixedDeltaTime을 사용해야 합니다.
+    - `UNT0006`: 이 Unity 메시지에 대해 잘못된 메서드 시그니처가 검색되었습니다.
+    - `UNT0007`: Unity는 null 결합과 호환되지 않는 Unity 개체에 대해 null 비교 연산자를 재정의합니다.
+    - `UNT0008`: Unity는 null 전파와 호환되지 않는 Unity 개체에 대해 null 비교 연산자를 재정의합니다.
+    - `UNT0009`: 클래스에 InitializeOnLoad 특성을 적용할 때 정적 생성자를 제공해야 합니다. InitializeOnLoad 특성은 편집기가 시작될 때 호출되도록 합니다.
+    - `UNT0010`: MonoBehaviours는 AddComponent()를 사용해서만 만들어야 합니다. MonoBehaviour는 구성 요소이며, GameObject에 연결되어야 합니다.
+    - `UNT0011`: ScriptableObject는 CreateInstance()를 사용해서만 만들어야 합니다. Unity 메시지 메서드를 처리하려면 ScriptableObject는 Unity 엔진으로 만들어야 합니다.
+    - `IDE0029`의 `USP0001`: Unity 개체는 null 결합을 사용하면 안 됩니다.
+    - `IDE0031`의 `USP0002`: Unity 개체는 null 전파를 사용하면 안 됩니다.
+    - `IDE0051`의 `USP0003`: Unity 메시지는 Unity 런타임에서 호출됩니다.
+    - `IDE0044`의 `USP0004`: SerializeField 특성이 있는 필드는 readonly로 설정하면 안 됩니다.
+
+## <a name="4310"></a>4.3.1.0
+
+릴리스 날짜: 2019년 9월 4일
+
+### <a name="new-features"></a>새 기능
+
+- **평가:**
+
+  - 보다 효율적인 형식 표시를 위한 지원을 추가했습니다(`List'1[[System.Object, <corlib...>]]` 대신 `List<object>` 사용).
+
+  - 포인터 멤버 액세스 지원을 추가했습니다(`p->data->member`).
+
+  - 배열 이니셜라이저의 암시적 변환 지원을 추가했습니다(`new byte [] {1,2,3,4}`).
+
+## <a name="4300"></a>4.3.0.0
+
+릴리스 날짜: 2019년 8월 13일
+
+### <a name="new-features"></a>새 기능
+
+- **디버거:**
+
+  - MDS 프로토콜 2.51에 대한 지원이 추가되었습니다.
+
+- **통합:**
+
+  - 정렬, 검색 및 새로 고침 기능을 포함하여 “Unity 인스턴스에 연결” 창을 개선했습니다. 이제 시스템에서 수신 대기 중인 소켓을 쿼리하여 소유 프로세스를 검색함으로써 로컬 플레이어에 대해서도 PID가 표시됩니다.
+
+  - asmdef 파일에 대한 지원이 추가되었습니다.
+
+### <a name="bug-fixes"></a>버그 수정
+
+- **통합:**
+
+  - Unity 플레이어와 통신하는 동안 형식이 잘못된 메시지 처리 문제가 해결되었습니다.
+
+- **평가:**
+
+  - 식에서 네임스페이스 처리 문제가 해결되었습니다.
+
+  - IntPtr 형식의 검사 문제가 해결되었습니다.
+  
+  - 예외를 사용하여 단계별 실행 문제를 해결했습니다.
+
+  - 의사 식별자(예: $exception) 평가를 수정했습니다.
+
+  - 잘못된 주소를 역참조하는 경우 크래시를 방지합니다.  
+
+  - 언로드된 appdomain 관련 문제를 해결했습니다.
 
 ## <a name="4201"></a>4.2.0.1
 
@@ -79,7 +164,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
   - Unity 2019.x에서 프로젝트 이름 추출 메커니즘을 업데이트했습니다.
 
-  - UPE에 Unity 패키지에 대한 지원이 추가되었습니다. 참조 패키지(```Packages``` 폴더에서 manifest.json 사용) 및 로컬 패키지(```Packages``` 폴더에 포함)만 볼 수 있습니다.
+  - UPE에 Unity 패키지에 대한 지원이 추가되었습니다. 참조 패키지(`Packages` 폴더에서 manifest.json 사용) 및 로컬 패키지(`Packages` 폴더에 포함)만 볼 수 있습니다.
 
 - **Project Generation:**
 
@@ -89,7 +174,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
   - 정규화된 별칭 이름에 대한 지원이 추가되었습니다(아직은 전역 네임스페이스만). 따라서 식 계산기는 이제 global::namespace.type 양식을 사용하는 형식을 허용합니다.
 
-  - 포인터 역참조 ```*(pointer+index)``` 양식과 의미상 동일한 ```pointer[index]``` 양식에 대한 지원이 추가되었습니다.
+  - 포인터 역참조 `*(pointer+index)` 양식과 의미상 동일한 `pointer[index]` 양식에 대한 지원이 추가되었습니다.
 
 ### <a name="bug-fixes"></a>버그 수정
 
@@ -129,7 +214,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
   - 설치 중에 Unity 프로세스를 제대로 검색하고 설치 엔진에서 파일 잠금을 더 효과적으로 처리할 수 있는 지원이 추가되었습니다.
 
-  - ScriptableObject API가 업데이트되었습니다.
+  - `ScriptableObject` API를 업데이트했습니다.
 
 ## <a name="4003"></a>4.0.0.3
 
@@ -139,13 +224,13 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 - **Project Generation:**
 
-  - 공용 및 직렬화된 필드에서 더 이상 경고가 발생하지 않습니다. 이 메시지를 생성한 Unity 프로젝트에서 CS0649 및 IDE0051 컴파일러 경고를 자동으로 표시하지 않도록 설정했습니다.
+  - 공용 및 직렬화된 필드에서 더 이상 경고가 발생하지 않습니다. 이 메시지를 만든 Unity 프로젝트의 `CS0649` 및 `IDE0051` 컴파일러 경고를 표시하지 않도록 자동으로 설정했습니다.
 
 - **통합:**
 
   - Unity 편집기 및 플레이어 인스턴스를 표시하는 사용자 환경이 개선되었습니다(이제 창 크기를 조정할 수 있고, 창에서 균일한 여백을 사용하고, 크기 조정 그립을 표시함). Unity 편집기의 프로세스 ID 정보가 추가되었습니다.
 
-  - MonoBehaviour API가 업데이트되었습니다.
+  - `MonoBehaviour` API를 업데이트했습니다.
 
 - **평가:**
 
@@ -961,7 +1046,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 ## <a name="1990---20-preview-2"></a>1.9.9.0 - 2.0 Preview 2
 릴리스 날짜: 2015년 4월 2일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **Unity 프로젝트 탐색기:**
 
@@ -1050,7 +1135,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 ## <a name="1980---20-preview"></a>1.9.8.0 - 2.0 Preview
 릴리스 날짜: 2014년 11월 12일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - Visual Studio 2015가 지원됩니다.
 
@@ -1090,7 +1175,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2014년 10월 9일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - Unity 플레이어의 검색을 향상합니다.
 
@@ -1114,7 +1199,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2014년 9월 22일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - 원본 위치로 바인딩 중단점을 최적화합니다.
 
@@ -1160,7 +1245,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2014년 7월 29일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - Unity 디버거 연결 창에서 디버그할 사용자 지정 IP 및 포트를 입력하는 기능을 추가합니다.
 
@@ -1209,7 +1294,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2014년 1월 7일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - 편집기의 원격 검색을 위해 Mavericks에서 Unity의 스크립팅 엔진 네트워크 계층에 있는 문제를 해결합니다.
 
@@ -1237,7 +1322,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2013년 11월 21일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - Unity 4.3 API와 함께 MonoBehaviour 마법사가 조정되었습니다.
 
@@ -1271,7 +1356,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2013년 9월 24일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - 디버거 연결 속도가 크게 향상되었습니다.
 
@@ -1351,7 +1436,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2013년 3월 25일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - 디버거 연결 속도가 크게 향상되었습니다.
 
@@ -1463,7 +1548,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 ## <a name="10110"></a>1.0.11.0
 릴리스 날짜: 2012년 11월 28일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - Unity 4를 공식 지원합니다.
 
@@ -1540,7 +1625,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2012년 9월 14일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - Visual Studio 2012를 지원합니다.
 
@@ -1570,7 +1655,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2012년 9월 5일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - Unity에서 디버그 기호가 자동으로 변환됩니다.
 
@@ -1584,7 +1669,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2012년 9월 4일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - Unity에서 파일을 열기 위해 UnityVS의 사용을 비활성화하는 새 구성 옵션입니다.
 
@@ -1612,7 +1697,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2012년 8월 28일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - Unity 4.0 베타에 대한 미리 보기를 지원합니다.
 

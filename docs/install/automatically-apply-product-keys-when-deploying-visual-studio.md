@@ -1,7 +1,7 @@
 ---
 title: 제품 키를 자동으로 적용
 description: Visual Studio를 배포할 때 제품 키를 프로그래밍 방식으로 적용하는 방법을 알아봅니다.
-ms.date: 04/10/2019
+ms.date: 09/24/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: d79260be-6234-4fd3-89b5-a9756b4a93c1
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: dabaf63e205d3e76432767743e323c90ed389846
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 85fe84878dabc1270c60be24b6d6f644b284c045
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891301"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253831"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Visual Studio를 배포할 때 제품 키를 자동으로 적용
 
@@ -99,10 +99,10 @@ Visual Studio의 배포를 자동화하는 데 사용되는 스크립트의 일�
 | `PID_ACTION_FAILURE`      | 5    |
 | `PID_ACTION_NOUPGRADE`    | 6    |
 
-[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
-
 > [!NOTE]
-> 가상 인스턴스 문제를 해결하려면 *C:\Program Files (x86)\Microsoft Visual Studio \<version\>\Common7\IDE\DDConfigCA.exe*를 실행합니다.
+> Visual Studio의 가상 인스턴스를 실행하는 경우, 로컬 AppData 폴더와 레지스트리도 가상화해야 합니다. 가상 인스턴스 문제를 해결하려면 *C:\Program Files (x86)\Microsoft Visual Studio\ <version\> \Common7\IDE\DDConfigCA.exe*를 실행합니다.  
+
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>참고 항목
 

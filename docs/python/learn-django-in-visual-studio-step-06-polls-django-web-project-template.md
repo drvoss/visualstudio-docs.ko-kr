@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31f125c11bb364f2650384d8d5894f7f48a9bd3e
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.openlocfilehash: 5e9220df4f9abdb806495e6108fb6039b28e0b7b
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70154925"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254376"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>6단계: 설문 조사 Django 웹 프로젝트 템플릿 사용
 
@@ -112,9 +112,9 @@ class Choice(models.Model):
         return self.text
 ```
 
-여기서 볼 수 있듯이 Poll은 `text` 필드에서 설명을 유지 관리하고 `pub_date`에서 게시 날짜를 유지 관리합니다. 이러한 필드는 Poll과 관련하여 데이터베이스에 있는 유일한 필드이며, `total_votes` 필드는 런타임에 계산됩니다.
+여기서 볼 수 있듯이 Poll은 `text` 필드에서 설명을 유지 관리하고 `pub_date`에서 게시 날짜를 유지 관리합니다. 이러한 필드만 Poll과 관련해서 데이터베이스에 있고 `total_votes` 필드는 런타임에 계산됩니다.
 
-Choice는 `poll` 필드를 통해 Poll과 관련되며, `text`에 설명을 포함하고, `votes`에서 해당 선택 사항의 개수를 유지 관리합니다. `votes_percentage` 필드는 런타임에 계산되며 데이터베이스에 없습니다.
+Choice는 `poll` 필드를 통해 Poll과 관련되며, `text`에 설명을 포함하고, `votes`에서 해당 선택 사항의 개수를 유지 관리합니다. `votes_percentage` 필드는 런타임에 계산되며 데이터베이스에는 없습니다.
 
 전체 필드 형식 목록은 `CharField`(제한된 텍스트) `TextField`(무제한 텍스트), `EmailField`, `URLField`, `DateTimeField`, `IntegerField`, `DecimalField`, `BooleanField`, `ForeignKey` 및 `ManyToMany`입니다. 각 필드는 `max_length`와 같은 몇 가지 특성을 사용합니다. `blank=True` 특성은 필드가 선택 사항임을 의미하고, `null=true`는 값이 선택 사항임을 의미합니다. 값을 데이터 값/표시 값 튜플 배열의 값으로 제한하는 `choices` 특성도 있습니다. Django 설명서의 [Model field reference](https://docs.djangoproject.com/en/2.0/ref/models/fields/)(모델 필드 참조)를 참조하세요.
 
@@ -194,7 +194,7 @@ Django는 지정된 데이터베이스에 적용된 마이그레이션을 추적
 
 대답: 모델이 데이터베이스의 내용과 일치하지 않을 경우 Django가 런타임에 실패하고 관련 예외가 발생합니다. 예를 들어 이전 섹션에 표시된 모델 변경 내용을 마이그레이션하지 않을 경우 **no such column: app_poll.author** 오류가 표시됩니다.
 
-![모델 변경 내용이 마이그레이션되지 않은 경우 표시되는 오류](media/django/step06-exception-when-forgetting-to-migrate.png).
+![모델 변경 내용이 마이그레이션되지 않은 경우 표시되는 오류](media/django/step06-exception-when-forgetting-to-migrate.png)을 선택합니다.
 
 ### <a name="question-why-doesnt-solution-explorer-show-newly-generated-scripts-after-running-django-make-migrations"></a>질문: Django Make Migrations(Django 마이그레이션 만들기)를 실행한 후 솔루션 탐색기에 새로 생성된 스크립트가 표시되지 않는 이유는 무엇인가요?
 

@@ -3,15 +3,15 @@ title: 프로젝트에 NuGet 패키지 포함하기
 description: 이 문서에서는 Mac용 Visual Studio를 사용하여 프로젝트에 NuGet 패키지를 포함하는 방법을 설명합니다. 여기에서는 IDE 통합 기능을 소개할 뿐 아니라 패키지를 찾아 다운로드하는 방법도 살펴봅니다.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 09/17/2019
+ms.date: 09/18/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: conceptual
-ms.openlocfilehash: 22b2e07509403d8e19e3a3e920d45b064c2e51c0
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: 55b4691a7adb03d4ee8fd5e05e7bd9d7daa28f13
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079476"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213693"
 ---
 # <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>Mac용 Visual Studio에서 NuGet 패키지 설치 및 관리
 
@@ -23,17 +23,17 @@ Mac용 Visual Studio에서 NuGet을 사용하는 방법에 대해서는 [빠른 
 
 ## <a name="find-and-install-a-package"></a>패키지 찾기 및 설치
 
-1. Mac용 Visual Studio에서 프로젝트를 연 상태로 **Solution Pad**의 **종속성** 폴더(Xamarin 프로젝트를 사용하는 경우에는 **패키지** 폴더)를 마우스 오른쪽 단추로 클릭하고 **패키지 추가**를 선택합니다.
+1. Mac용 Visual Studio에서 프로젝트를 열어 놓고, **Solution Pad**에서 **종속성** 폴더(Xamarin 프로젝트를 사용하는 경우 **패키지** 폴더)를 마우스 오른쪽 단추로 클릭한 다음, **NuGet 패키지 관리...** 를 선택합니다.
 
-    ![새 NuGet 패키지 컨텍스트 작업 추가하기](media/nuget-walkthrough-PackagesMenu.png)
+    ![새 NuGet 패키지 컨텍스트 작업 추가하기](media/nuget-walkthrough-packages-menu.png)
 
-2. 이렇게 하면 **패키지 추가** 창이 시작됩니다. 대화 상자의 왼쪽 상단에 있는 소스 드롭다운이 `nuget.org`로 설정되어 있는지 확인합니다.
+2. **NuGet 패키지 관리** 창이 시작됩니다. 대화 상자의 왼쪽 상단에 있는 소스 드롭다운이 `nuget.org`로 설정되어 있는지 확인합니다.
 
-    ![NuGet 패키지 목록](media/nuget-walkthrough-AddPackages1.png)
+    ![NuGet 패키지 목록](media/nuget-walkthrough-add-packages1.png)
 
 3. 오른쪽 위의 검색 상자를 사용하여 특정 패키지(예: `EntityFramework`)를 검색합니다. 사용하려는 패키지를 찾았다면 해당 패키지를 선택하고 **패키지 추가** 단추를 클릭하여 설치를 시작합니다.
 
-    ![Azure NuGet 패키지 추가](media/nuget-walkthrough-AddPackages2.png)
+    ![EntityFramework NuGet 패키지 추가](media/nuget-walkthrough-add-packages2.png)
 
 4. 패키지가 다운로드된 후 프로젝트에 추가됩니다. 솔루션은 편집 중인 프로젝트의 형식에 따라 변경됩니다.
 
@@ -43,7 +43,7 @@ Mac용 Visual Studio에서 NuGet을 사용하는 방법에 대해서는 [빠른 
     
     **.NET Core 프로젝트**
 
-    **종속성 > NuGet** 노드에 다운로드한 각 NuGet 패키지가 표시됩니다. 이 목록에서 패키지를 업데이트하거나 제거할 수 있습니다.
+    * **종속성 > NuGet** 노드에 다운로드한 각 NuGet 패키지가 표시됩니다. 이 목록에서 패키지를 업데이트하거나 제거할 수 있습니다.
 
 ## <a name="using-nuget-packages"></a>NuGet 패키지 사용하기
 
@@ -59,11 +59,11 @@ using Newtonsoft.Json;
 
 ## <a name="updating-packages"></a>패키지 업데이트
 
-패키지 업데이트는 **종속성** 노드(Xamarin 프로젝트의 경우 **패키지** 노드)를 마우스 오른쪽 단추로 클릭하여 한꺼번에 수행하거나 각 구성 요소에서 개별적으로 수행할 수 있습니다.
+패키지 업데이트는 **종속성** 노드(Xamarin 프로젝트의 경우 **패키지** 노드)를 마우스 오른쪽 단추로 클릭하여 한 번에 모두 수행하거나, 각 패키지에서 개별적으로 수행할 수 있습니다. 새 버전의 NuGet 패키지를 사용할 수 있는 경우, 업데이트 아이콘이 ![원이 있는 위쪽 화살표](media/nuget-walkthrough-update-icon.png) 모양으로 표시됩니다.
 
-**종속성**을 마우스 오른쪽 단추로 클릭하여 상황에 맞는 메뉴에 액세스합니다.
+**종속성**을 마우스 오른쪽 단추로 클릭하여 상황에 맞는 메뉴에 액세스하고 **업데이트**를 선택하여 모든 패키지를 업데이트합니다.
 
-![패키지 메뉴](media/nuget-walkthrough-PackagesMenu.png)
+![패키지 메뉴](media/nuget-walkthrough-packages-menu-update.png)
 
 * **NuGet 패키지 관리** - 프로젝트에 패키지를 더 추가하기 위한 창을 엽니다.
 * **업데이트** - 각 패키지에 대해 소스 서버를 확인하고 모든 최신 버전을 다운로드합니다.

@@ -13,20 +13,20 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 4ba419c1dc20b46a08460e20a437e7edf21f2857
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: d8be11a8705686ade370a8107aad826b7cab9851
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67253728"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186559"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig에 대한 .NET 코딩 규칙 설정
 
 [EditorConfig](../ide/create-portable-custom-editor-options.md) 파일을 사용하여 코드베이스에서 일관된 코드 스타일을 정의하고 유지 관리할 수 있습니다. EditorConfig에는 `indent_style` 및 `indent_size`와 같은 여러 가지 주요 서식 지정 속성이 포함됩니다. Visual Studio에서 EditorConfig 파일을 사용하여 .NET 코딩 규칙 설정을 구성할 수도 있습니다. 개별 .NET 코딩 규칙을 사용하거나 사용하지 않도록 설정하고 심각도 수준을 통해 각 규칙을 적용하려는 수준을 구성할 수 있습니다.
 
 > [!TIP]
-> - .editorconfig 파일에서 코딩 규칙을 정의할 때 Visual Studio에 빌드된 [코드 스타일 분석기](../code-quality/roslyn-analyzers-overview.md)의 코드 분석 방법을 구성합니다. .editorconfig 파일은 이러한 분석기에 대한 구성 파일입니다.
-> - Visual Studio의 코드 스타일 기본 설정은 [텍스트 편집기 옵션](code-styles-and-code-cleanup.md) 대화 상자에서 설정할 수도 있습니다. 하지만 .editorconfig 설정이 먼저 적용되며 **옵션**에서 지정하는 기본 설정은 특정 프로젝트와 연결되어 있지 않습니다.
+> - EditorConfig 파일에서 코딩 규칙을 정의하는 경우, Visual Studio에 빌드된 [코드 스타일 분석기](../code-quality/roslyn-analyzers-overview.md)의 코드 분석 방법을 구성하는 것입니다. EditorConfig 파일은 이러한 분석기의 구성 파일입니다.
+> - Visual Studio의 코드 스타일 기본 설정은 [텍스트 편집기 옵션](code-styles-and-code-cleanup.md) 대화 상자에서 설정할 수도 있습니다. 하지만 EditorConfig 설정이 우선 적용되며, **옵션**에서 설정한 기본 설정은 특정 프로젝트에 연결되지 않습니다.
 
 ## <a name="convention-categories"></a>규칙 범주
 

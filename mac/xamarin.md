@@ -5,16 +5,24 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: 4eec080655c0f47823810dfd689fe49a6f7e43eb
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: c8b6bddac92a9ec6b40ba08ebcdc3fe3577b0bc8
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872346"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211479"
 ---
 # <a name="xamarin-mobile-app-development"></a>Xamarin 모바일 앱 개발
 
 최고 수준의 [Xamarin](/xamarin) 지원을 통해 Android, macOS, iOS, tvOS 및 watchOS에 대한 풍부한 네이티브 환경을 개발할 수 있습니다. Xamarin.Forms 플랫폼 간 애플리케이션은 네이티브 기능에 대한 액세스를 제한하지 않으면서 Android, iOS 및 macOS 간에 XAML 기반 UI 코드를 공유할 수 있도록 합니다.
+
+## <a name="xamarinforms"></a>Xamarin.Forms
+
+Mac용 Visual Studio 버전 8.3 이상에서는 Xamarin.Forms용 XAML 핫 다시 로드가 기본 제공됩니다. 이 기능을 사용하도록 설정하면, 파일을 저장할 때마다 실행 중인 앱에 변경 내용이 즉시 반영됩니다.
+
+**Visual Studio > 기본 설정 > 프로젝트 > Xamarin 핫 다시 로드**에서 **Xamarin 핫 다시 로드 사용** 확인란을 선택하면 XAML 핫 다시 로드를 사용하도록 설정할 수 있습니다.
+
+핫 다시 로드에 대한 자세한 내용은 설명서 내에서 [Xamarin.Forms용 XAML 핫 다시 로드 가이드](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/hot-reload)를 참조하세요.
 
 ## <a name="android"></a>Android
 

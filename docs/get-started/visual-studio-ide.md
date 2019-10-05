@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c94eaeffee285fcc5d17d5de8bcec0711f2b39b
-ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+ms.openlocfilehash: 323f941ddb4672de8d52d56cf4e07910531c3df8
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70864835"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095383"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Visual Studio IDE 시작
 
@@ -42,7 +42,7 @@ ms.locfileid: "70864835"
 
 - [Visual Studio를 사용하여 첫 번째 Node.js 웹앱 만들기](../ide/quickstart-nodejs.md)
 
-- [Visual Studio에서 C++ 시작](../ide/getting-started-with-cpp-in-visual-studio.md)
+- [Visual Studio를 사용하여 첫 번째 C++ 콘솔 앱 만들기](/cpp/get-started/tutorial-console-cpp)
 
 ## <a name="see-also"></a>참고 항목
 

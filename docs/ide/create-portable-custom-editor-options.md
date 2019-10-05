@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f48a690513c80b02683df61a0abf68a3cad58293
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 6b8602dfb37b1cdad046b012d62f888e77ca5343
+ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328808"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150175"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>EditorConfig를 사용하여 휴대용, 사용자 지정 편집기 설정 만들기
 
@@ -20,7 +20,20 @@ ms.locfileid: "67328808"
 
 Visual Studio를 포함하여 다양한 코드 편집기와 IDE에서 EditorConfig 설정이 지원됩니다. 코드를 이용하여 휴대할 수 있는 구성 요소이며 Visual Studio 외부에서도 코딩 스타일을 적용할 수 있습니다.
 
-Visual Studio에서 프로젝트에 EditorConfig 파일을 추가할 때 문서의 서식을 지정(기본 프로필의 **편집** > **고급** > **문서 서식** 또는 **Ctrl**+**K**, **Ctrl**+**D**)하지 않으면 기존 코드의 서식이 변경되지 않습니다. 하지만 새로운 코드 줄은 EditorConfig 설정에 따라 서식이 지정됩니다.
+::: moniker range=">=vs-2019"
+
+Visual Studio에서 프로젝트에 EditorConfig 파일을 추가하면, 새 코드 줄에는 EditorConfig 설정에 따라 서식이 지정됩니다. 기존 코드의 서식은 다음 명령 중 하나를 실행해야만 변경됩니다.
+
+ - [코드 정리](../ide/code-styles-and-code-cleanup.md)(**Ctrl**+**K**, **Ctrl**+**E**) - 들여쓰기 스타일 등의 공백 설정과 `using` 문 정렬 방법 등의 선택한 코드 스타일 설정을 적용합니다.
+ - **편집** > **고급** > **문서 서식**(또는 기본 프로필의 **Ctrl**+**K**, **Ctrl**+**D** - 들여쓰기 스타일 등의 공백 설정만 적용합니다.
+ 
+ ::: moniker-end
+ 
+::: moniker range="=vs-2017"
+
+Visual Studio에서 프로젝트에 EditorConfig 파일을 추가하면, 새 코드 줄에는 EditorConfig 설정에 따라 서식이 지정됩니다. 기존 코드의 서식은 문서 서식을 지정해야 변경됩니다(**편집** > **고급** > **문서 서식** 또는 기본 프로필의 **Ctrl**+**K**, **Ctrl**+**D**). [추가 코드 정리를 수행](../ide/code-styles-and-code-cleanup.md#apply-code-styles)하도록 문서 서식을 구성하지 않은 경우, 문서 서식은 들여쓰기 스타일 등의 공백 설정에만 영향을 줍니다.
+ 
+ ::: moniker-end
 
 ::: moniker range="vs-2017"
 
@@ -53,13 +66,13 @@ Visual Studio의 편집기는 다음과 같은 [EditorConfig 속성](http://edit
 - 문자 집합
 - trim\_trailing_whitespace
 - insert\_final_newline
-- 루트
+- root
 
 EditorConfig 편집기 설정은 XML을 제외하고 Visual Studio가 지원하는 모든 언어에서 지원됩니다. 또한 EditorConfig는 C# 및 Visual Basic에 대해 [언어](../ide/editorconfig-language-conventions.md), [서식 지정](../ide/editorconfig-formatting-conventions.md), [명명](../ide/editorconfig-naming-conventions.md) 규칙을 비롯한 [코드 스타일](../ide/editorconfig-code-style-settings-reference.md) 규칙을 지원합니다.
 
 ## <a name="add-and-remove-editorconfig-files"></a>EditorConfig 파일 추가 및 제거
 
-프로젝트 또는 코드베이스에 EditorConfig 파일을 추가하면, 새로 작성하는 코드 줄에는 EditorConfig 파일에 따라 서식이 지정됩니다. 그러나 EditorConfig 파일을 추가해도 문서에 서식을 지정하기 전에는 기존 스타일이 새 스타일로 변환되지 않습니다. 예를 들어 파일에 탭으로 서식이 지정된 들여쓰기가 있는 경우 공백으로 들여쓰기를 적용하는 EditorConfig 파일을 추가해도 들여쓰기 문자가 공백으로 자동 변환되지는 않습니다. 문서에 서식을 지정하면(**편집** > **고급** > **문서 서식** 또는 **Ctrl**+**K**, **Ctrl**+**D**) EditorConfig 파일의 설정이 기존 코드 줄에 적용됩니다.
+프로젝트 또는 코드베이스에 EditorConfig 파일을 추가하면, 새로 작성하는 코드 줄에는 EditorConfig 파일에 따라 서식이 지정됩니다. 그러나 EditorConfig 파일을 추가해도 문서 서식을 지정하거나 [코드 정리](../ide/code-styles-and-code-cleanup.md)를 실행하기 전에는 기존 스타일이 새 스타일로 변환되지 않습니다. 예를 들어 파일에 탭으로 서식이 지정된 들여쓰기가 있는 경우 공백으로 들여쓰기를 적용하는 EditorConfig 파일을 추가해도 들여쓰기 문자가 공백으로 자동 변환되지는 않습니다. 문서 서식을 지정하면(**편집** > **고급** > **문서 서식** 또는 **Ctrl**+**K**, **Ctrl**+**D**), EditorConfig 파일의 공백 설정이 기존 코드 줄에 적용됩니다.
 
 프로젝트 또는 코드베이스에서 EditorConfig 파일을 제거하고 새 코드 줄에 전역 편집기 설정에 따라 서식을 지정하려는 경우 열려 있는 코드 파일을 모두 닫았다가 다시 열어야 합니다.
 

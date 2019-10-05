@@ -10,16 +10,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2ee3b0d82251d01e8ede22be238dc1bca5a4e092
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d50cbfbd517073544ebd172627d24bd7c3878fa5
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62536339"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254211"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio의 Python 프로젝트
 
-일반적으로 Python 애플리케이션은 폴더 및 파일만 사용하여 정의되지만 애플리케이션이 커질수록 이 구조는 복잡해질 수 있으며 자동 생성된 파일, 웹 애플리케이션용 JavaScript 등을 포함할 수 있습니다. Visual Studio 프로젝트는 이러한 복잡성을 관리하는 데 도움이 됩니다. 프로젝트(*.pyproj* 파일)는 프로젝트와 관련된 모든 소스 및 콘텐츠 파일을 식별하며 각 파일에 대한 빌드 정보를 포함하고 소스 제어 시스템과 통합할 정보를 유지 관리하며 애플리케이션을 논리 구성 요소로 구성하는 데 도움을 줍니다.
+일반적으로 Python 애플리케이션은 폴더 및 파일만 사용하여 정의되지만 애플리케이션이 커질수록 이 구조는 복잡해질 수 있으며 자동 생성된 파일, 웹 애플리케이션용 JavaScript 등을 포함할 수 있습니다. Visual Studio 프로젝트는 이러한 복잡성을 관리하는 데 도움이 됩니다. 프로젝트( *.pyproj* 파일)는 프로젝트와 관련된 모든 소스 및 콘텐츠 파일을 식별하며 각 파일에 대한 빌드 정보를 포함하고 소스 제어 시스템과 통합할 정보를 유지 관리하며 애플리케이션을 논리 구성 요소로 구성하는 데 도움을 줍니다.
 
 ![솔루션 탐색기에서 Python 프로젝트](media/projects-solution-explorer.png)
 
@@ -143,7 +143,7 @@ Visual Studio 프로젝트는 프로젝트 및 확장에 참조 추가를 지원
 
 *.pyd* 파일에 대한 참조를 통해 생성된 모듈에 IntelliSense를 사용할 수 있습니다. Visual Studio는 *.pyd* 파일을 Python 인터프리터에 로드하고 해당 형식과 함수를 내부적으로 검사합니다. 또한 함수에 대한 doc 문자열의 구문 분석을 시도하여 서명 도움말도 제공합니다.
 
-언제든지 디스크에서 확장 모듈이 업데이트되는 경우 Visual Studio는 백그라운드로 모듈을 다시 분석합니다. 이 작업은 런타임 동작에 영향을 주지 않지만 분석이 끝날 때까지 일부 완성 기능을 사용할 수 없게 됩니다.
+언제든지 디스크에서 확장 모듈이 업데이트되는 경우 Visual Studio는 백그라운드로 모듈을 다시 분석합니다. 이 작업은 런타임 동작에 영향을 주지 않지만, 분석이 완료될 때까지 일부 완성 기능을 사용할 수 없습니다.
 
 모듈을 포함하는 폴더에 [검색 경로](search-paths.md)를 추가해야 할 수 있습니다.
 
@@ -167,5 +167,8 @@ from System.Windows.Forms import *
 ### <a name="webpi-projects"></a>WebPI 프로젝트
 
 WebPI 피드를 통해 추가 구성 요소를 설치할 수 있는 Microsoft Azure Cloud Services에 배포할 WebPI 제품 항목에 대한 참조를 추가할 수 있습니다. 기본적으로 표시된 피드는 Python에 국한되며 Django, CPython 및 기타 핵심 구성 요소를 포함합니다. 아래 표시된 것처럼 사용자 고유의 피드를 선택할 수도 있습니다. Microsoft Azure에 게시할 때 설치 작업은 참조된 모든 제품을 설치합니다.
+
+> [!IMPORTANT]
+> WebPI 프로젝트는 Visual Studio 2017 또는 Visual Studio 2019에서 사용할 수 없습니다.
 
 ![WebPI 참조](media/projects-webPI-components.png)

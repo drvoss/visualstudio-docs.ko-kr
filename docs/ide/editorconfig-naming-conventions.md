@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab118197c29ef950907839e8c04d6e49a9843f1a
-ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
+ms.openlocfilehash: 644c73dea58936773acde98ccc535dfc61979288
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68957423"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71251700"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig에 대한 .NET 명명 규칙
 
@@ -48,7 +48,7 @@ ms.locfileid: "68957423"
 - interface(인터페이스)
 - enum
 - 속성(property)
-- 메서드(method)
+- 메서드
 - 필드(field)
 - 이벤트(event)
 - 대리자(delegate)
@@ -184,7 +184,7 @@ error | 이 스타일을 따르지 않을 경우 **오류 목록**에서 컴파�
 
 ::: moniker range=">=vs-2019"
 
-Visual Studio 2019 버전 16.2부터는 EditorConfig 파일 내의 명명 규칙 정의 정렬이 중요하지 않게 됩니다. 그 대신 Visual Studio에서 명명 규칙을 규칙 자체의 정의에 따라 자동으로 정렬합니다. [EditorConfig 언어 서비스 확장](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig)은 EditorConfig 파일을 분석하고 파일 내의 규칙 정렬이 런타임에 컴파일러가 사용할 정렬과 다를 경우 해당 사례를 보고합니다.
+Visual Studio 2019 버전 16.2부터는 EditorConfig 파일 내의 명명 규칙 정의 정렬이 중요하지 않게 됩니다. 그 대신 Visual Studio에서 명명 규칙을 규칙 자체의 정의에 따라 자동으로 정렬합니다. [EditorConfig 언어 서비스 확장](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig)은 EditorConfig 파일을 분석하고, 파일의 규칙 순서가 런타임에 컴파일러에서 사용할 순서와 다른 경우를 보고할 수 있습니다.
 
 이전 버전의 Visual Studio를 사용 중일 경우, 명명 규칙은 EditorConfig 파일에서 가장 구체적인 규칙부터 가장 덜 구체적인 규칙으로 정렬되어야 합니다. 적용할 수 있는 첫 번째 규칙은 적용되는 유일한 규칙이 됩니다. 그러나 동일한 이름의 규칙 ‘속성’이 여러 개 있는 경우 가장 최근에 발견된 해당 이름의 속성이 우선 적용됩니다.  자세한 내용은 [파일 계층 구조 및 우선 순위](create-portable-custom-editor-options.md#file-hierarchy-and-precedence)를 참조하세요.
 

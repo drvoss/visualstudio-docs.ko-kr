@@ -1,6 +1,6 @@
 ---
 title: 고급 빌드 설정 대화 상자(C#)
-ms.date: 06/20/2017
+ms.date: 08/05/2019
 ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
@@ -13,16 +13,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 306cecc6bdc194e0022c056ac0a87e2ab063d20b
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: c4a1c902047b76ef3b29814d10cfc112ab9c7274
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461892"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186794"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>고급 빌드 설정 대화 상자(C#)
 
-**프로젝트 디자이너**의 **고급 빌드 설정** 대화 상자를 사용하여 프로젝트의 고급 빌드 구성 속성을 지정합니다. 이 대화 상자는 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 프로젝트에만 적용됩니다.
+**프로젝트 디자이너**의 **고급 빌드 설정** 대화 상자를 사용하여 프로젝트의 고급 빌드 구성 속성을 지정합니다. 이 대화 상자는 C# 프로젝트에만 적용됩니다.
 
 ## <a name="general"></a>일반
 
@@ -30,19 +30,19 @@ ms.locfileid: "68461892"
 
 **언어 버전**
 
-사용할 언어의 버전을 지정합니다. 기능 집합은 버전에 따라 다르므로 이 옵션을 사용하여 컴파일러에서 구현된 기능의 하위 집합만 허용하도록 하거나 기존 표준과 호환되는 기능만 사용하도록 설정할 수 있습니다. 이 설정에는 다음과 같은 옵션이 있습니다.
+::: moniker range=">=vs-2019"
 
-- **default**
+프로젝트의 대상 프레임워크에 따라 기본 언어 버전이 선택되는 방식에 대한 정보를 제공하는 [/langversion(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option)에 대한 링크입니다.
 
-   현재 버전을 대상으로 지정합니다.
+::: moniker-end
 
-- **ISO-1** 및 **ISO-2**
+::: moniker range="vs-2017"
 
-   ISO-1 및 ISO-2 표준 기능을 각각 대상으로 지정합니다.
+사용할 언어의 버전을 지정합니다. 기능 집합은 버전에 따라 다르므로 이 옵션을 사용하여 컴파일러에서 구현된 기능의 하위 집합만 허용하도록 하거나 기존 표준과 호환되는 기능만 사용하도록 설정할 수 있습니다.
 
-- **C# [버전 번호]**
+기본값은 C# 7.0입니다.
 
-   특정 버전의 C#을 대상으로 지정합니다. 자세한 내용은 [/langversion(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option)을 참조하세요.
+::: moniker-end
 
 **내부 컴파일러 오류 보고**
 
@@ -56,7 +56,7 @@ Microsoft에 컴파일러 오류를 보고할지 여부를 지정합니다. **pr
 
 mscorlib.dll을 프로그램으로 가져와 전체 <xref:System> 네임스페이스를 정의할지 여부를 지정합니다. 고유한 <xref:System> 네임스페이스 및 개체를 정의하거나 만들려면 이 상자를 선택합니다. 자세한 내용은 [/nostdlib(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option)를 참조하세요.
 
-## <a name="output"></a>Output
+## <a name="output"></a>출력
 
 다음 옵션을 사용하여 고급 출력 옵션을 지정할 수 있습니다.
 
@@ -64,7 +64,7 @@ mscorlib.dll을 프로그램으로 가져와 전체 <xref:System> 네임스페�
 
 컴파일러에서 생성되는 디버깅 정보 형식을 지정합니다. 애플리케이션의 디버그 성능을 구성하는 방법에 대한 자세한 내용은 [쉽게 디버깅할 수 있도록 이미지 만들기](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug)를 참조하세요. 이 설정에는 다음과 같은 옵션이 있습니다.
 
-- **none**
+- **없음**
 
    디버깅 정보가 생성되지 않도록 지정합니다.
 
@@ -97,4 +97,4 @@ DLL을 로드할 기본 설정 기준 주소를 지정합니다. DLL에 대한 �
 ## <a name="see-also"></a>참고 항목
 
 - [C# 컴파일러 옵션](/dotnet/csharp/language-reference/compiler-options/index)
-- [프로젝트 디자이너, 빌드 페이지(C#)](../../ide/reference/build-page-project-designer-csharp.md)
+- [빌드 페이지, 프로젝트 디자이너(C#)](../../ide/reference/build-page-project-designer-csharp.md)

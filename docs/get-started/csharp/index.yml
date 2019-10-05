@@ -6,7 +6,7 @@ metadata:
   description: Visual Studio를 사용하여 C# 앱을 만듭니다.
   ms.custom: seodec18
   ms.topic: landing-page
-  ms.date: 09/20/2019
+  ms.date: 09/27/2019
   author: ghogen
   ms.author: ghogen
   manager: jillfra
@@ -14,14 +14,14 @@ metadata:
   ms.technology: vs-acquisition
   dev_langs:
   - CSharp
-  ms.openlocfilehash: cefa370c40ccd32a1ddd7b108ccc493d8019fcb2
-  ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+  ms.openlocfilehash: b4db5aef6d4a91d684a588971ec23fa673aa98da
+  ms.sourcegitcommit: d3e423a9a4ed773a54d14b247e1b5bfc95de8816
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 09/25/2019
-  ms.locfileid: "71252157"
+  ms.lasthandoff: 10/01/2019
+  ms.locfileid: "71693041"
 landingContent:
-- title: 시작하기
+- title: 시작
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -39,14 +39,18 @@ landingContent:
       url: tutorial-console.md
     - text: 웹앱 만들기
       url: tutorial-aspnet-core.md
-    - text: 첫 번째 ASP.NET Core 앱 만들기
-      url: tutorial-aspnet-core-ef-step-01.md
     - text: 유니버설 Windows 플랫폼 앱 만들기
       url: tutorial-uwp.md
     - text: Windows 데스크톱 앱 만들기
       url: tutorial-wpf.md
+    - text: Windows Forms 앱 만들기
+      url: ../../ide/create-csharp-winform-visual-studio.md
     - text: C# 언어에 대한 자세한 정보
       url: /dotnet/csharp/tutorials/intro-to-csharp/
+  - linkListType: video
+    links:
+    - text: ASP.NET Core 앱 만들기
+      url: tutorial-aspnet-core-ef-step-01.md
 - title: Visual Studio 학습
   linkLists:
   - linkListType: tutorial

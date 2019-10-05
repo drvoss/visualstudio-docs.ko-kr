@@ -3,15 +3,15 @@ title: Mac용 Visual Studio 업데이트
 description: Mac용 Visual Studio 업데이트 및 미리 보기 릴리스 이용 방법을 안내합니다.
 author: asb3993
 ms.author: amburns
-ms.date: 08/27/2019
+ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
-ms.openlocfilehash: 56795fa78a7e850ed96d44d2bbcd3cd3c03abbc1
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.openlocfilehash: 383bf38b26b4961df61dca2a1bf1d4efda335d81
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108160"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211503"
 ---
 # <a name="update-visual-studio-for-mac"></a>Mac용 Visual Studio 업데이트
 
@@ -44,7 +44,7 @@ Mac용 Visual Studio는 다음 두 가지 채널을 통해 최신 버전을 제�
 
 채널을 전환하면 새 업데이트 다운로드 프로세스가 자동으로 시작됩니다.
 
-**자동 확인** 옵션을 선택하면 Mac용 Visual Studio를 열 때 업데이트 프로그램 상자가 나타나 새로운 업데이트가 있음을 알려줍니다. 또한 다운로드를 시작하는 옵션을 제공합니다.
+**자동 확인** 옵션을 선택하면 Mac용 Visual Studio를 열 때 업데이트 프로그램 상자가 나타나 새로운 업데이트가 있음을 알려줍니다. 이 상자가 표시되면 새 다운로드가 자동으로 머신에 다운로드되기 시작합니다.
 
 업데이트 설치를 시작하려면 **업데이트 다시 시작 및 설치** 단추를 선택합니다.
 

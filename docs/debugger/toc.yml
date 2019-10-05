@@ -6,6 +6,8 @@
       href: what-is-debugging.md
     - name: 디버깅 기술 및 도구
       href: write-better-code-with-visual-studio.md
+    - name: 디버깅 작업 찾기
+      href: find-your-debugging-task.md
 - name: 빠른 시작
   items:
     - name: 디버거 소개
@@ -236,7 +238,7 @@
                   href: visual-cpp-custom-visualizer-compatibility.md
             - name: 사용자 지정 뷰(관리형)
               items:
-                - name: 관리 개체의 사용자 지정 뷰 만들기
+                - name: 개체의 사용자 지정 뷰 만들기
                   href: create-custom-views-of-dot-managed-objects.md
                 - name: 디버거에 표시할 내용 지시
                   href: using-the-debuggerdisplay-attribute.md
@@ -352,9 +354,9 @@
               href: how-to-use-the-gpu-threads-window.md
         - name: 여러 프로세스 디버그
           href: debug-multiple-processes.md
-        - name: '연습: 스레드 창을 사용하여 디버그'
+        - name: 스레드 창을 사용하여 디버그
           href: how-to-use-the-threads-window.md
-        - name: '연습: 병렬 애플리케이션 디버그'
+        - name: 병렬 애플리케이션 디버그
           href: walkthrough-debugging-a-parallel-application.md
         - name: 디버그 중 다른 스레드로 전환
           href: how-to-switch-to-another-thread-while-debugging.md

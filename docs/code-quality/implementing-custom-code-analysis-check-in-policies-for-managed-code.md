@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6619e3bb988a555fba5718f609ff3a5f0584063b
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 55294f7418de085cb4ceccd4063a4b2b55cbc6c4
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260835"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975028"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>관리 코드에 대한 사용자 지정 코드 분석 체크 인 정책 구현
 
@@ -110,10 +110,18 @@ Azure DevOps 프로젝트를 설정 하는 사용자 지정 규칙을 만들려�
 
 4. 필요한 경우에 적절 한 옵션을 클릭 합니다 **구성** 하 고 **플랫폼** 나열 합니다.
 
-5. 지정 된 구성을 사용 하 여 코드 프로젝트를 빌드할 때마다 코드 분석을 실행 하려면 선택 합니다 **코드 빌드에 분석 사용 (CODE_ANALYSIS 상수 정의)** 확인란 합니다.
+::: moniker range="vs-2017"
 
-6. 다른 회사에서 구성 요소에서 코드를 무시 하려면 선택 합니다 **생성 된 코드 결과 표시 안 함** 확인란 합니다.
+5. 지정 된 구성을 사용 하 여 코드 프로젝트를 빌드할 때마다 코드 분석을 실행 하려면 **빌드 시 코드 분석 사용**을 선택 합니다.
 
-7. 에 **이 규칙 집합 실행** 목록에서 클릭  **\<찾아보기... >** 합니다.
+::: moniker-end
 
-8. 체크 인 정책에 규칙 집합 파일의 로컬 버전을 지정 합니다.
+::: moniker range=">=vs-2019"
+
+5. 지정 된 구성을 사용 하 여 코드 프로젝트를 빌드할 때마다 코드 분석을 실행 하려면 **이진 분석기** 섹션에서 **빌드 시 실행** 을 선택 합니다.
+
+::: moniker-end
+
+6. **이 규칙 집합 실행** 목록에서 **\<browse >** 를 클릭 합니다.
+
+8. 로컬 버전의 체크 인 정책 규칙 집합 파일을 선택 합니다.

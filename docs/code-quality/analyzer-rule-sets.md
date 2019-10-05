@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da1567dd088ecc060f031e59827ff33024e9e955
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 313b578743fd734da3354989a8cee16022779242
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71185959"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71974700"
 ---
 # <a name="rule-sets-for-analyzer-packages"></a>분석기 패키지에 대한 규칙 집합
 
@@ -36,7 +36,7 @@ ms.locfileid: "71185959"
 
 ## <a name="use-analyzer-package-rule-sets"></a>분석기 패키지 규칙 집합 사용
 
-[NuGet 분석기 패키지를 설치한](install-roslyn-analyzers.md)후 *에는 해당 규칙 집합 디렉터리에서* 미리 정의 된 규칙 집합을 찾습니다. 예 `Microsoft.CodeAnalysis.FxCopAnalyzers` 를 들어 분석기 패키지를 참조 한 경우% USERPROFILE% *\\\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\<버전에서 해당 규칙 집합 디렉터리를 찾을 수 있습니다. \\>규칙 집합*. 여기에서 하나 이상의 규칙 집합을 복사 하 고 Visual Studio 프로젝트를 포함 하는 디렉터리 또는 **솔루션 탐색기**에 직접 붙여 넣습니다.
+[NuGet 분석기 패키지를 설치한](install-roslyn-analyzers.md)후 *에는 해당 규칙 집합 디렉터리에서* 미리 정의 된 규칙 집합을 찾습니다. 예를 들어 `Microsoft.CodeAnalysis.FxCopAnalyzers` 분석기 패키지를 참조 한 경우 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers @ no__t-4 @ no__t-5version @ no__t-6\rulesets*에서 해당 *규칙 집합* 디렉터리를 찾을 수 있습니다. 여기에서 하나 이상의 규칙 집합을 복사 하 고 Visual Studio 프로젝트를 포함 하는 디렉터리 또는 **솔루션 탐색기**에 직접 붙여 넣습니다.
 
 [미리 정의 된 규칙 집합](how-to-create-a-custom-rule-set.md) 을 기본 설정으로 사용자 지정할 수도 있습니다. 예를 들어 위반이 **오류 목록**에 오류 또는 경고로 표시 되도록 하나 이상의 규칙의 심각도를 변경할 수 있습니다.
 
@@ -46,7 +46,7 @@ ms.locfileid: "71185959"
 
 ### <a name="net-core"></a>.NET Core
 
-규칙을 .NET Core 또는 .NET Standard 프로젝트의 분석에 대해 활성 규칙 집합으로 설정 하려면 **CodeAnalysisRuleSet** 속성을 프로젝트 파일에 수동으로 추가 합니다. 예를 들어 다음 코드 조각은 활성 규칙 `HelloWorld.ruleset` 집합으로 설정 됩니다.
+규칙을 .NET Core 또는 .NET Standard 프로젝트의 분석에 대해 활성 규칙 집합으로 설정 하려면 **CodeAnalysisRuleSet** 속성을 프로젝트 파일에 수동으로 추가 합니다. 예를 들어 다음 코드 조각은 활성 규칙 집합으로 `HelloWorld.ruleset`을 설정 합니다.
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -57,11 +57,29 @@ ms.locfileid: "71185959"
 
 ### <a name="net-framework"></a>.NET Framework
 
-규칙을 .NET Framework 프로젝트의 분석을 위한 활성 규칙 집합으로 설정 하려면 **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 합니다. 프로젝트 속성 페이지에서 **코드 분석** 탭을 선택 합니다. **이 규칙 집합 실행**에서 **찾아보기**를 선택한 다음 프로젝트 디렉터리에 복사한 원하는 규칙 집합을 선택 합니다. 이제 선택한 규칙 집합에서 사용 하도록 설정 된 규칙에 대 한 규칙 위반만 표시 됩니다.
+규칙을 .NET Framework 프로젝트의 분석을 위한 활성 규칙 집합으로 설정 하려면 다음을 수행 합니다.
+
+- **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 합니다.
+
+- 프로젝트 속성 페이지에서 **코드 분석** 탭을 선택 합니다.
+
+::: moniker range="vs-2017"
+
+- **이 규칙 집합 실행**에서 **찾아보기**를 선택한 다음 프로젝트 디렉터리에 복사한 원하는 규칙 집합을 선택 합니다.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- **활성 규칙**에서 **찾아보기**를 선택한 다음 프로젝트 디렉터리에 복사한 원하는 규칙 집합을 선택 합니다.
+
+::: moniker-end
+
+   이제 선택한 규칙 집합에서 사용 하도록 설정 된 규칙에 대 한 규칙 위반만 표시 됩니다.
 
 ## <a name="available-rule-sets"></a>사용 가능한 규칙 집합
 
-미리 정의 된 분석기 규칙 집합에는 모든 규칙&mdash;에 영향을 주는 세 가지 규칙 집합이 포함 됩니다. 하나는 모두 사용 하지 않도록 설정 하 고, 다른 하나는 규칙의 기본 심각도 및 사용 설정을 준수 하는 규칙입니다.
+미리 정의 된 분석기 규칙 집합에는 패키지의 모든 규칙에 영향을 주는 세 가지 규칙 집합, 즉 모두 사용 하지 않도록 설정 하 고 각 규칙의 기본 심각도 및 사용 설정을 준수 하는 규칙 집합이 포함 됩니다.
 
 - AllRulesEnabled.ruleset
 - AllRulesDisabled.ruleset
@@ -80,7 +98,7 @@ ms.locfileid: "71185959"
 - 보안
 - 사용법
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [분석기 FAQ](analyzers-faq.md)
 - [.NET Compiler Platform 분석기 개요](roslyn-analyzers-overview.md)

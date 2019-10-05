@@ -70,7 +70,6 @@ C:\>cl /analyze Sample.cpp
 - [연습: 오류에 대 한 C/C++ 코드 분석](walkthrough-analyzing-c-cpp-code-for-defects.md)
 - [C/C++용 코드 분석 경고](code-analysis-for-c-cpp-warnings.md)
 - [C++ Core 지침 검사기 사용](using-the-cpp-core-guidelines-checkers.md)
-- [C++ Core 지침 검사기 참조](code-analysis-for-cpp-corecheck.md)
 - [규칙 집합을 사용하여 실행할 C++ 규칙 지정](using-rule-sets-to-specify-the-cpp-rules-to-run.md)
 - [코드 분석 도구를 사용한 드라이버 품질 분석](/windows-hardware/drivers/develop/analyzing-driver-quality-by-using-code-analysis-tools)
 - [드라이버 경고에 대한 코드 분석](/windows-hardware/drivers/devtest/prefast-for-drivers-warnings)

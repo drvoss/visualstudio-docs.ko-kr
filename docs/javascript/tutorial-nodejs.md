@@ -56,7 +56,6 @@ npm는 Node.js를 위한 기본 패키지 관리자입니다. 패키지 관리�
 
 ### <a name="what-is-express"></a>Express란?
 
-Express는 웹 응용 프로그램 프레임워크로, Node.js가 웹 응용 프로그램을 빌드하기 위한 서버 프레임워크로 사용됩니다. Express를 사용하면 Pug(이전의 Jade)와 같이 UI를 만들 수 있는 프런트 엔드 프레임 워크를 다양하게 선택할 수 있습니다. 이 자습서에서는 Pug가 사용되었습니다.
 
 ## <a name="prerequisites"></a>전제 조건
 

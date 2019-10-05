@@ -1,14 +1,9 @@
 ---
 title: 관리 되는 패키지 프레임 워크를 사용 하 여 프로젝트 형식 (C#)를 구현 합니다. | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], creating with MPF
 - MPF projects
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 926de536-eead-415b-9451-f1ddc8c44630
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f248bdafaf0fdd632069e6cffe367cf0ed21135f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 86e250c5a5922df52acea7445c97862a00cdc826
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741979"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143729"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>관리 패키지 프레임워크를 사용하여 프로젝트 형식 구현(C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,9 +29,9 @@ ms.locfileid: "51741979"
   
  이 프로젝트를 VSPackage 솔루션에 추가 하려면 다음을 수행 합니다.  
   
-1.  MPFProj 파일을 다운로드 *MPFProjectDir*합니다.  
+1. MPFProj 파일을 다운로드 *MPFProjectDir*합니다.  
   
-2.  에 *MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file, 다음 블록을 변경 합니다.  
+2. 에 *MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file, 다음 블록을 변경 합니다.  
   
 ```  
 <!-- Provide a default value for $(ProjectBasePath) -->  
@@ -45,11 +40,11 @@ ms.locfileid: "51741979"
   </PropertyGroup>  
 ```  
   
-1.  VSPackage 프로젝트를 만듭니다.  
+1. VSPackage 프로젝트를 만듭니다.  
   
-2.  VSPackage 프로젝트를 언로드하십시오.  
+2. VSPackage 프로젝트를 언로드하십시오.  
   
-3.  다른 하기 전에 다음 블록을 추가 하 여 VSPackage.csproj 파일을 편집 `<Import>` 블록:  
+3. 다른 하기 전에 다음 블록을 추가 하 여 VSPackage.csproj 파일을 편집 `<Import>` 블록:  
   
 ```  
 <Import Project="MPFProjectDir\Dev10\Src\CSharp\ProjectBase.files" />  
@@ -61,17 +56,17 @@ ms.locfileid: "51741979"
   </PropertyGroup>  
 ```  
   
-1.  프로젝트를 저장합니다.  
+1. 프로젝트를 저장합니다.  
   
-2.  VSPackage 솔루션을 닫았다가 설정 합니다.  
+2. VSPackage 솔루션을 닫았다가 설정 합니다.  
   
-3.  VSPackage 프로젝트를 다시 엽니다. ProjectBase 라는 새 디렉터리에 표시 됩니다.  
+3. VSPackage 프로젝트를 다시 엽니다. ProjectBase 라는 새 디렉터리에 표시 됩니다.  
   
-4.  VSPackage 프로젝트에 대 한 다음 참조를 추가 합니다.  
+4. VSPackage 프로젝트에 대 한 다음 참조를 추가 합니다.  
   
      Microsoft.Build.Tasks.4.0  
   
-5.  프로젝트를 빌드합니다.  
+5. 프로젝트를 빌드합니다.  
   
 ## <a name="hierarchy-classes"></a>계층 구조 클래스  
  다음 표에서 프로젝트 계층 구조를 지원 합니다 MPFProj의 클래스를 보여 줍니다. 자세한 내용은 [계층 구조 및 선택](../../extensibility/internals/hierarchies-and-selection.md)합니다.  
@@ -131,4 +126,3 @@ ms.locfileid: "51741979"
 |`Microsoft.VisualStudio.Package.ProjectNodeProperties`|  
 |`Microsoft.VisualStudio.Package.FolderNodeProperties`|  
 |`Microsoft.VisualStudio.Package.ReferenceNodeProperties`|
-

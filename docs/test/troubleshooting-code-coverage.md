@@ -1,37 +1,35 @@
 ---
 title: 코드 검사 문제 해결
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: troubleshooting
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2651a84ae3c621237f34ff1667da6ecbacf0923a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: abd5075d04f26b9795695bfcd4fcd387e1a15d24
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055104"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079582"
 ---
 # <a name="troubleshoot-code-coverage"></a>코드 검사 문제 해결
 
-Visual Studio의 코드 검사 분석 도구는 네이티브 및 관리되는 어셈블리(*.dll* 또는 *.exe* 파일)에 대한 데이터를 수집합니다. 그러나 **코드 검사 결과** 창에 "빈 결과 작성됨: ..."과 유사한 오류가 표시될 수 있습니다. 빈 결과를 얻을 수 있는 이유는 여러 가지가 있습니다. 이 아티클을 사용하면 이러한 문제를 해결해줍니다.
+Visual Studio의 코드 검사 분석 도구는 네이티브 및 관리되는 어셈블리( *.dll* 또는 *.exe* 파일)에 대한 데이터를 수집합니다. 그러나 **코드 검사 결과** 창에 "빈 결과 작성됨: ..."과 유사한 오류가 표시될 수 있습니다. 빈 결과를 얻을 수 있는 이유는 여러 가지가 있습니다. 이 아티클을 사용하면 이러한 문제를 해결해줍니다.
 
 ## <a name="what-you-should-see"></a>표시 내용
 
 **테스트** 메뉴의 **코드 검사 분석** 명령을 선택하고 빌드 및 테스트가 성공적으로 실행될 경우 **코드 검사** 창에 결과 목록이 표시됩니다. 자세한 내용을 보려면 항목을 확장해야 합니다.
 
-![색 지정이 사용된 코드 검사 결과](../test/media/codecoverage1.png)
+![강조 표시된 코드 검사 결과](../test/media/codecoverage1.png)
 
 자세한 내용은 [코드 검사를 사용하여 테스트할 코드 범위 결정](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)을 참조하세요.
 
 ## <a name="possible-reasons-for-seeing-no-results-or-old-results"></a>결과가 없거나 오래된 결과가 표시되는 이유
 
 ### <a name="do-you-have-the-right-edition-of-visual-studio"></a>Visual Studio가 올바른 버전입니까?
- Visual Studio Enterprise가 필요합니다.
+Visual Studio Enterprise가 필요합니다.
 
 ### <a name="no-tests-were-executed"></a>테스트를 실행하지 않은 경우
 
@@ -45,9 +43,9 @@ Visual Studio의 코드 검사 분석 도구는 네이티브 및 관리되는 �
 
 테스트를 수정하고 다시 실행하면 이전 실행의 코드 강조를 포함한 이전 코드 검사 결과가 계속 표시될 수 있습니다.
 
-1.  코드 검사 분석을 실행합니다.
+1. 코드 검사 분석을 실행합니다.
 
-2.  **코드 분석 결과** 창에서 최근 결과 집합을 선택했는지 확인합니다.
+2. **코드 분석 결과** 창에서 최근 결과 집합을 선택했는지 확인합니다.
 
 ### <a name="pdb-symbol-files-are-unavailable"></a>.pdb(기호) 파일을 사용할 수 없습니다
 
@@ -58,6 +56,8 @@ Visual Studio의 코드 검사 분석 도구는 네이티브 및 관리되는 �
 *.pdb* 파일은 *.dll* 또는 *.exe* 파일과 같은 빌드에서 생성되어야 합니다.
 
 해결&mdash;빌드 설정에서 *.pdb* 파일이 생성되었는지 확인합니다. 프로젝트가 빌드될 때 *.pdb* 파일이 업데이트되지 않을 경우 프로젝트 속성을 열고 **빌드** 페이지를 선택하고, **고급**을 선택하고, **디버그 정보**를 검사합니다.
+
+C++ 프로젝트의 경우 생성된 .pdb 파일에 전체 디버그 정보가 있는지 확인합니다. 프로젝트 속성을 열고 **링커** > **디버깅** > **디버그 정보 생성**이 **공유 및 게시를 위해 최적화된 디버그 정보 생성(/DEBUG:FULL)** 으로 설정되어 있는지 확인합니다.
 
 *.pdb* 및 *.dll* 또는 *.exe* 파일이 다른 위치에 있는 경우 *.pdb* 파일을 동일한 디렉터리로 복사합니다. 코드 검사 엔진을 구성하여 다른 위치에서 *.pdb* 파일을 검색할 수도 있습니다. 자세한 내용은 [코드 검사 분석 사용자 지정](../test/customizing-code-coverage-analysis.md)을 참조하세요.
 
@@ -93,17 +93,17 @@ Visual Studio의 코드 검사 분석 도구는 네이티브 및 관리되는 �
 
 해결&mdash;두 가지 유형의 오류가 있습니다.
 
--   **XML 오류**
+- **XML 오류**
 
      Visual Studio XML 편집기에서 *.runsettings* 파일을 엽니다. 오류 표시를 찾습니다.
 
--   **정규식 오류**
+- **정규식 오류**
 
-     파일의 각 문자열은 정규식입니다. 오류별로 정규식 오류를 검토하고 특히 다음 항목이 있는지 찾아봅니다.
+  파일의 각 문자열은 정규식입니다. 오류별로 정규식 오류를 검토하고 특히 다음 항목이 있는지 찾아봅니다.
 
-    -   짝이 맞지 않는 괄호 (...) 또는 이스케이프되지 않은 괄호 \\(...\\). 검색 문자열에서 괄호를 일치시키려면 이스케이프 처리해야 합니다. 예를 들어 함수를 일치시키려면 `.*MyFunction\(double\)`을 사용합니다.
+  - 짝이 맞지 않는 괄호 (...) 또는 이스케이프되지 않은 괄호 \\(...\\). 검색 문자열에서 괄호를 일치시키려면 이스케이프 처리해야 합니다. 예를 들어 함수를 일치시키려면 `.*MyFunction\(double\)`을 사용합니다.
 
-    -   식의 시작 부분의 별표 또는 더하기 문자열을 일치시키려면 점과 별표, `.*`를 사용합니다.
+  - 식의 시작 부분의 별표 또는 더하기 문자열을 일치시키려면 점과 별표, `.*`를 사용합니다.
 
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>제외를 잘못 지정한 사용자 지정 .runsettings 파일
 
@@ -111,7 +111,7 @@ Visual Studio의 코드 검사 분석 도구는 네이티브 및 관리되는 �
 
 설명&mdash;사용자 지정 *.runsettings* 파일로 단위 테스트를 실행하여 코드 검사 옵션을 구성할 수 있습니다. 옵션을 사용하여 실행 파일을 포함하거나 제외할 수 있습니다. 자세한 내용은 [코드 검사 분석 사용자 지정](../test/customizing-code-coverage-analysis.md)을 참조하세요.
 
-해결&mdash;*.runsettings* 파일에서 모든 `Include` 노드를 제거한 다음, 모든 `Exclude` 노드를 제거합니다. 이것으로 문제가 해결되는 경우 스테이지로 되돌립니다.
+해결&mdash; *.runsettings* 파일에서 모든 `Include` 노드를 제거한 다음, 모든 `Exclude` 노드를 제거합니다. 이것으로 문제가 해결되는 경우 스테이지로 되돌립니다.
 
 DataCollectors 노드에서 코드 검사를 지정하는지 확인합니다. [코드 검사 분석 사용자 지정](../test/customizing-code-coverage-analysis.md)의 샘플과 비교합니다.
 
@@ -121,7 +121,7 @@ DataCollectors 노드에서 코드 검사를 지정하는지 확인합니다. [�
 
 분석&mdash;정적으로 링크된 네이티브 코드에서 초기화 함수 **DllMain**과 이 함수가 호출하는 코드는 코드가 실행된 경우에도 검사되지 않은 것으로 표시될 수 있습니다.
 
-설명&mdash;코드 검사 도구는 응용 프로그램이 실행을 시작하기 바로 전에 어셈블리에 계측을 삽입하여 작동합니다. 사전에 로드된 모든 어셈블리에서, **DllMain**의 초기화 코드는 어셈블리가 로드되는 즉시, 그리고 응용 프로그램이 실행되기 전에 실행됩니다. 해당 코드가 검사되지 않았다고 표시됩니다. 그러면 일반적으로 정적으로 로드된 어셈블리에 적용됩니다.
+설명&mdash;코드 검사 도구는 애플리케이션이 실행을 시작하기 바로 전에 어셈블리에 계측을 삽입하여 작동합니다. 사전에 로드된 모든 어셈블리에서, **DllMain**의 초기화 코드는 어셈블리가 로드되는 즉시, 그리고 애플리케이션이 실행되기 전에 실행됩니다. 해당 코드가 검사되지 않았다고 표시됩니다. 그러면 일반적으로 정적으로 로드된 어셈블리에 적용됩니다.
 
 해결&mdash;없음.
 

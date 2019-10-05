@@ -1,27 +1,22 @@
 ---
 title: 레거시 언어 서비스의 중단점 유효성 검사 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - breakpoint validation
 - language services [managed package framework], breakpoint validation
 ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0868e516720fd32a445f60f05f345936d24d6d7a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f54dc683aa4287145a27e22d49397241b395f69f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734976"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68163687"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>레거시 언어 서비스의 중단점 유효성 검사
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,13 +27,13 @@ ms.locfileid: "51734976"
   
 ## <a name="implementing-support-for-validating-breakpoints"></a>중단점 유효성 검사에 대 한 지원 구현  
   
--   <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> 메서드에 중단점의 위치를 제공 됩니다. 구현에는 위치가 유효 하 고 줄 위치를 사용 하 여 관련 코드를 식별 하는 텍스트 범위를 반환 하 여이 중단점이 나타내는 있는지 여부를 결정 해야 합니다.  
+- <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> 메서드에 중단점의 위치를 제공 됩니다. 구현에는 위치가 유효 하 고 줄 위치를 사용 하 여 관련 코드를 식별 하는 텍스트 범위를 반환 하 여이 중단점이 나타내는 있는지 여부를 결정 해야 합니다.  
   
--   반환 <xref:Microsoft.VisualStudio.VSConstants.S_OK> 위치가 유효 하면 또는 <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> 유효 하지 않은 경우.  
+- 반환 <xref:Microsoft.VisualStudio.VSConstants.S_OK> 위치가 유효 하면 또는 <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> 유효 하지 않은 경우.  
   
--   중단점이 올바르면 중단점 함께 텍스트 범위를 강조 표시 됩니다.  
+- 중단점이 올바르면 중단점 함께 텍스트 범위를 강조 표시 됩니다.  
   
--   중단점 올바르지 않으면 오류 메시지가 상태 표시줄에 나타납니다.  
+- 중단점 올바르지 않으면 오류 메시지가 상태 표시줄에 나타납니다.  
   
 ### <a name="example"></a>예제  
  구현을 보여 주는이 예제는 <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> 지정 된 위치 (해당 되는 경우) 코드의 범위를 가져오려면 파서를 호출 하는 메서드입니다.  
@@ -107,4 +102,3 @@ namespace TestLanguagePackage
   
 ## <a name="see-also"></a>참고 항목  
  [레거시 언어 서비스 기능](../../extensibility/internals/legacy-language-service-features1.md)
-

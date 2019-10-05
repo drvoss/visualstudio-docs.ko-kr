@@ -1,32 +1,27 @@
 ---
 title: Blend의 아트보드 보조 키 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 50732733-ff49-41ba-8c44-4f6a3875ec1c
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a730ec3c50880087d9200d5c7003e7b3cb631bca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 10a605de597159130aa14bf7dd623b387e27bc97
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49278189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162688"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Blend의 아트보드 보조 키
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 일부 바로 가기 키는 연결된 메뉴 항목이 없으므로 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 사용자 인터페이스를 통해 찾을 수 없습니다. 다음 표에는 개체 크기 조정 등의 작업을 수정하는 바로 가기가 나열되어 있습니다.  
   
-|수행할 작업|방법|  
+|수행할 작업|단계|  
 |-----------------------|-------------|  
 |다른 도구가 선택된 상태에서 일시적으로 **선택** 도구를 선택합니다. 이렇게 하면 **선택** 도구와 다른 도구 간에 전환하며 **도구** 패널에서 클릭해야 하는 횟수가 줄어듭니다.|CTRL 키를 누른 채로 유지|  
 |**선택** 도구를 선택한 상태에서 선택한 개체 조금 이동|화살표 키 누름|  
@@ -51,6 +46,3 @@ ms.locfileid: "49278189"
  [바로 가기 키](../designers/keyboard-shortcuts-in-blend.md)   
  [펜 도구 보조 키](../designers/pen-tool-modifier-keys-in-blend.md)   
  [직접 선택 도구 보조 키](../designers/direct-selection-tool-modifier-keys-in-blend.md)
-
-
-

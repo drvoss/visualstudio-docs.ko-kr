@@ -1,26 +1,21 @@
 ---
 title: 사용자 지정 편집기의 문서 데이터 및 문서 보기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document data and document view
 ms.assetid: 71eea623-f566-4feb-84cd-ca1ba71bc493
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 55f082711de306e9dd22fdf55e769282ad150f17
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2f73ffde43f2ef3608ae492a9643f7920243d818
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204689"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>사용자 지정 편집기의 문서 데이터 및 문서 보기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ ms.locfileid: "51755295"
 사용자 지정 편집기를 두 부분으로 구성 됩니다: 문서 데이터 개체 및 문서 뷰 개체입니다. 이름으로 문서 데이터 개체 표시 될 텍스트 데이터를 나타내고 문서 뷰 개체 (또는 "보기") 문서 데이터 개체를 표시 하는 하나 이상의 windows를 나타냅니다.  
   
 ## <a name="document-data-object"></a>문서 데이터 개체  
- 문서 데이터 개체에는 텍스트 버퍼의 텍스트 데이터 표현입니다. 문서 텍스트 및 기타 정보를 저장, 처리 문서 지 속성 및 해당 데이터의 여러 보기를 사용 하도록 설정 하는 COM 개체입니다. 자세한 내용은 다음 항목을 참조하세요.  
+ 문서 데이터 개체에는 텍스트 버퍼의 텍스트 데이터 표현입니다. 문서 텍스트 및 기타 정보를 저장, 처리 문서 지 속성 및 해당 데이터의 여러 보기를 사용 하도록 설정 하는 COM 개체입니다. 자세한 내용은 다음을 참조하세요.  
   
  <xref:EnvDTE80.Window2.DocumentData%2A> 및 [Windows 문서](../extensibility/internals/document-windows.md)합니다.  
   
@@ -53,4 +48,3 @@ ms.locfileid: "51755295"
  [지 속성 및 실행 중인 문서 테이블](../extensibility/internals/persistence-and-the-running-document-table.md)   
  [프로젝트에서 파일을 여는 편집기 결정](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)   
  [편집기 팩터리](../extensibility/editor-factories.md)
-

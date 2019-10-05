@@ -1,25 +1,22 @@
 ---
 title: UML API를 사용 하 여 관계 탐색 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: a4d11d45-b8c0-40f9-a597-363f07659610
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0f8d1392bebf4d2591bbd7e4dc7bd8755c09f2c2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cb2a02ba27f06ef027001c2de07308c153b21c2b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740546"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158974"
 ---
 # <a name="navigate-relationships-with-the-uml-api"></a>UML API를 사용하여 관계 탐색
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +50,7 @@ foreach (IRelationship relationship in
   
 ```  
   
-### <a name="association"></a>형식 연결  
+### <a name="association"></a>연결  
  연결은 각각 분류자에 속해 있는 두 속성 간의 관계입니다.  
   
 ```  
@@ -155,9 +152,9 @@ IEnumerable<IUseCase>GetIncludingCases(this IUseCase usecase);
 ```  
   
 ## <a name="enumerating-relationships"></a>관계 열거  
- 여러 값을 반환하는 UML 모델의 모든 속성은 IEnumerable<> 인터페이스를 준수합니다. 즉, 사용할 수 있는 [Linq 쿼리 식](http://go.microsoft.com/fwlink/?LinkId=168834) 과에 정의 된 확장 메서드는 **System.Linq** 네임 스페이스입니다.  
+ 여러 값을 반환 하는 UML 모델의 모든 속성은 Ienumerable<> 인터페이스를 준수 합니다. 즉, 사용할 수 있는 [Linq 쿼리 식](http://go.microsoft.com/fwlink/?LinkId=168834) 과에 정의 된 확장 메서드는 **System.Linq** 네임 스페이스입니다.  
   
- 예를 들어:  
+ 예:  
   
 ```  
 from shape in     Context.CurrentDiagram.GetSelectedShapes<IClassifier>()  
@@ -169,6 +166,3 @@ select shape.Element
 ## <a name="see-also"></a>참고 항목  
  [UML 모델 및 다이어그램 확장](../modeling/extend-uml-models-and-diagrams.md)   
  [UML 모델 탐색](../modeling/navigate-the-uml-model.md)
-
-
-

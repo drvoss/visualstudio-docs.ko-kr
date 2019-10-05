@@ -2,7 +2,6 @@
 title: 'Ienumjsstackframes:: Reset 메서드 | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,19 +15,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 130db93a9ecedba039c8e422b2cba8aec2b5a6d2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e94331f8b6b9f68c01109ef355a4cba3cc398f4d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963288"
 ---
 # <a name="ienumjsstackframesreset-method"></a>IEnumJsStackFrames::Reset 메서드
-첫 번째 요소 앞으로 스택 프레임을 다시 설정합니다.  
+첫 번째 요소 앞의 위치는 스택 프레임을 다시 설정합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT Reset(void);  
 ```  
   

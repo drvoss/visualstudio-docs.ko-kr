@@ -1,14 +1,9 @@
 ---
 title: IDebugClassField::EnumBaseClasses | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugClassField::EnumBaseClasses
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 78749674-ef75-46d3-a1f4-ff33afd90e32
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1b10e52c15dbb5d177cee872bb04dc46e60fff80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: acfdc872ba5f7cf1989ea1d9ec67f82f1c0419b0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191051"
 ---
 # <a name="idebugclassfieldenumbaseclasses"></a>IDebugClassField::EnumBaseClasses
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ int EnumBaseClasses(
  성공 하면 S_OK를 반환, 기본 클래스가 없고 없으면 S_SH_NO_BASE_CLASSES를 반환 합니다 (및 `ppEnum` 매개 변수는 null 값으로 설정)이 고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 열거자 개체의 기본 클래스는 대부분의 원격 기본 클래스에 즉각적인 (또는 가장 많이 파생 된) 기본 클래스의 순서에 지정 됩니다. 예를 들어, c + + 클래스를 지정 합니다.  
+ 열거자 개체의 기본 클래스는 대부분의 원격 기본 클래스에 즉각적인 (또는 가장 많이 파생 된) 기본 클래스의 순서에 지정 됩니다. 예를 들어는 C++ 클래스:  
   
 ```  
 class Root { }  
@@ -65,4 +60,3 @@ class MyClass : Level2 { }
 ## <a name="see-also"></a>참고 항목  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
-

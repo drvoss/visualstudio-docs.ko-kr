@@ -1,14 +1,9 @@
 ---
 title: '방법: 빌드할 파일 선택 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, wildcards
 - MSBuild, including files
@@ -17,18 +12,17 @@ ms.assetid: f5ff182f-7b3a-46fb-9335-37df54cfb8eb
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7b8eeb62b8a5091743345c1a5c136bc2fa87269c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0968dd8914b99e8d47ef1364231059175aaf73fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223810"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437897"
 ---
 # <a name="how-to-select-the-files-to-build"></a>방법: 빌드할 파일 선택
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 여러 파일이 포함된 프로젝트를 빌드할 경우 각 파일을 프로젝트 파일에 개별적으로 나열하거나, 와일드카드를 사용하여 모든 파일을 하나의 디렉터리 또는 중첩된 디렉터리 집합에 포함할 수 있습니다.  
   
 ## <a name="specifying-inputs"></a>입력 지정  
@@ -38,7 +32,7 @@ ms.locfileid: "49223810"
   
 #### <a name="to-declare-items-individually"></a>항목을 개별적으로 선언하려면  
   
--   다음과 비슷한 `Include` 특성을 사용합니다.  
+- 다음과 비슷한 `Include` 특성을 사용합니다.  
   
      `<CSFile Include="form1.cs"/>`  
   
@@ -47,11 +41,11 @@ ms.locfileid: "49223810"
      `<VBFile Include="form1.vb"/>`  
   
     > [!NOTE]
-    >  항목 컬렉션의 항목이 프로젝트 파일과 같은 디렉터리에 있지 않으면 항목의 전체 또는 상대 경로를 지정해야 합니다. 예: `Include="..\..\form2.cs"`  
+    > 항목 컬렉션의 항목이 프로젝트 파일과 같은 디렉터리에 있지 않으면 항목의 전체 또는 상대 경로를 지정해야 합니다. 예: `Include="..\..\form2.cs"`  
   
 #### <a name="to-declare-multiple-items"></a>여러 항목을 선언하려면  
   
--   다음과 비슷한 `Include` 특성을 사용합니다.  
+- 다음과 비슷한 `Include` 특성을 사용합니다.  
   
      `<CSFile Include="form1.cs;form2.cs"/>`  
   
@@ -72,19 +66,19 @@ ms.locfileid: "49223810"
   
 #### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>Images 디렉터리 및 하위 디렉터리의 모든 .jpg 파일을 포함하려면  
   
--   다음 `Include` 특성을 사용합니다.  
+- 다음 `Include` 특성을 사용합니다.  
   
      `Include="Images\**\*.jpg"`  
   
 #### <a name="to-include-all-jpg-files-starting-with-img"></a>“img”로 시작하는 모든 .jpg 파일을 포함하려면  
   
--   다음 `Include` 특성을 사용합니다.  
+- 다음 `Include` 특성을 사용합니다.  
   
      `Include="Images\**\img*.jpg"`  
   
 #### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>디렉터리에서 이름이 “jpgs”로 끝나는 모든 파일을 포함하려면  
   
--   다음 `Include` 특성 중 하나를 사용합니다.  
+- 다음 `Include` 특성 중 하나를 사용합니다.  
   
      `Include="Images\**\*jpgs\*.*"`  
   
@@ -97,7 +91,7 @@ ms.locfileid: "49223810"
   
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>모든 Visual C# 또는 Visual Basic 파일을 입력으로 사용하려면  
   
--   다음과 비슷한 `Include` 특성을 사용합니다.  
+- 다음과 비슷한 `Include` 특성을 사용합니다.  
   
      `<CSC Sources="@(CSFile)">...</CSC>`  
   
@@ -106,9 +100,9 @@ ms.locfileid: "49223810"
      `<VBC Sources="@(VBFile)">...</VBC>`  
   
 > [!NOTE]
->  항목과 함께 와일드카드를 사용해서 빌드의 입력을 지정해야 합니다. 입력을 지정하는 데 [Csc](../msbuild/csc-task.md) 또는 [Vbc](../msbuild/vbc-task.md)와 같은 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 작업의 `Sources` 특성을 사용할 수는 없습니다. 다음 예제는 프로젝트 파일에서 유효하지 않습니다.  
+> 항목과 함께 와일드카드를 사용해서 빌드의 입력을 지정해야 합니다. 입력을 지정하는 데 [Csc](../msbuild/csc-task.md) 또는 [Vbc](../msbuild/vbc-task.md)와 같은 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 작업의 `Sources` 특성을 사용할 수는 없습니다. 다음 예제는 프로젝트 파일에서 유효하지 않습니다.  
 >   
->  `<CSC Sources="*.cs">...</CSC>`  
+> `<CSC Sources="*.cs">...</CSC>`  
   
 ## <a name="example"></a>예제  
  다음 코드 예제에서는 모든 입력 파일을 개별적으로 포함하는 프로젝트를 보여 줍니다.  
@@ -181,6 +175,3 @@ ms.locfileid: "49223810"
 ## <a name="see-also"></a>참고 항목  
  [방법: 빌드에서 파일 제외](../msbuild/how-to-exclude-files-from-the-build.md)   
  [항목](../msbuild/msbuild-items.md)
-
-
-

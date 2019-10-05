@@ -1,14 +1,9 @@
 ---
 title: 'CA2000: 범위를 벗어나기 전에 개체를 삭제 합니다. | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2000
 - Dispose objects before losing scope
@@ -21,14 +16,14 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ce258af87dc9a7732200b410113ee778e0bfbccb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 975e1eee68911f8d9d0942e73275fcf521979772
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857863"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681496"
 ---
-# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: 범위를 벗어나기 전에 개체를 삭제하십시오.
+# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: 범위를 벗어나기 전에 개체를 삭제하세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||  
@@ -51,11 +46,11 @@ ms.locfileid: "49857863"
   
  다음은 상황에 따라 여기서는 문을 사용 하 여 IDisposable 개체를 보호 하는 데 충분 하지 않습니다 및 되려면 CA2000 발생할 수 있습니다.  
   
--   개체가 사용 하 여을 외부 try/finally 블록에 생성 되는 필요한 삭제 가능한 개체를 반환 합니다. 블록입니다.  
+- 개체가 사용 하 여을 외부 try/finally 블록에 생성 되는 필요한 삭제 가능한 개체를 반환 합니다. 블록입니다.  
   
--   삭제 가능한 개체의 멤버를 초기화 하지 말아야 사용 하 여 생성자에 문의 합니다.  
+- 삭제 가능한 개체의 멤버를 초기화 하지 말아야 사용 하 여 생성자에 문의 합니다.  
   
--   한 가지 예외 처리기로만 보호 되는 생성자를 중첩 합니다. 예를 들어 개체에 적용된  
+- 한 가지 예외 처리기로만 보호 되는 생성자를 중첩 합니다. 예를 들면 다음과 같습니다.  
   
     ```  
     using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))  
@@ -64,7 +59,7 @@ ms.locfileid: "49857863"
   
      CA2000 닫히지 않음 FileStream 개체 StreamReader 개체 생성에서 오류가 발생할 수 있기 때문에 발생 하도록 하면 됩니다.  
   
--   동적 개체는 IDisposable 개체의 Dispose 패턴을 구현 하는 섀도 개체를 사용 해야 합니다.  
+- 동적 개체는 IDisposable 개체의 Dispose 패턴을 구현 하는 섀도 개체를 사용 해야 합니다.  
   
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우  
  `Dispose`와 같은 <xref:System.IO.Stream.Close%2A>를 호출하는 개체에 대해 메서드를 호출하지 않은 경우나 경고를 발생시킨 메서드가 사용자의 개체를 래핑하는 IDisposable 개체를 반환하는 경우 이 규칙에서 경고를 표시해야 합니다.  
@@ -72,7 +67,7 @@ ms.locfileid: "49857863"
 ## <a name="related-rules"></a>관련된 규칙  
  [CA2213: 삭제 가능한 필드는 삭제해야 합니다.](../code-quality/ca2213-disposable-fields-should-be-disposed.md)  
   
- [CA2202: 개체를 여러 번 삭제하지 마십시오.](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)  
+ [CA2202: 개체가 여러 번 삭제 하지 마십시오](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)  
   
 ## <a name="example"></a>예제  
  삭제 가능한 개체를 반환 하는 메서드를 구현 하는 catch 블록 없이 try/finally 블록 사용 하 여 개체가 삭제 되 고 있는지 확인 합니다. Try/finally 블록을 사용 하 여 오류 지점에서 발생 하 여 해당 개체가 삭제 되는지 확인 하는 예외를 허용 합니다.  
@@ -104,4 +99,4 @@ ms.locfileid: "49857863"
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.IDisposable>   
- [삭제 패턴](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
+ [삭제 패턴](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

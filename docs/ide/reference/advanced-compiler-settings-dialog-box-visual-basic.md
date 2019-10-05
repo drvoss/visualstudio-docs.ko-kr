@@ -1,25 +1,24 @@
 ---
 title: 고급 컴파일러 설정 대화 상자(Visual Basic)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedCompile
 helpviewer_keywords:
 - Advanced Compiler Settings dialog box
 ms.assetid: 1f81133a-293f-4dba-bc1c-8baafb01d857
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: ghogen
+ms.author: ghogen
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 593bb95e45ecdbda14eba49425ce5db08369e6cf
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 0cb77021818fd77205a598f54a4a64a1929348f2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783690"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919353"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>고급 컴파일러 설정 대화 상자(Visual Basic)
 
@@ -27,19 +26,19 @@ ms.locfileid: "38783690"
 
 ## <a name="to-access-this-dialog-box"></a>이 대화 상자에 액세스하려면
 
-1.  **솔루션 탐색기**에서 프로젝트 노드(**솔루션** 노드 아님)를 선택합니다.
+1. **솔루션 탐색기**에서 프로젝트 노드(**솔루션** 노드 아님)를 선택합니다.
 
-2.  **프로젝트** 메뉴에서 **속성**을 클릭합니다. **프로젝트 디자이너**가 나타나면 **컴파일** 탭을 클릭합니다.
+2. **프로젝트** 메뉴에서 **속성**을 클릭합니다. **프로젝트 디자이너**가 나타나면 **컴파일** 탭을 클릭합니다.
 
-3.  [프로젝트 디자이너, 컴파일 페이지(Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)에서 **구성** 및 **플랫폼**을 선택합니다. 단순화된 빌드 구성에서 **구성** 및 **플랫폼** 목록이 표시되지 않습니다. 자세한 내용은 [방법: 디버그 및 릴리스 구성 설정](../../debugger/how-to-set-debug-and-release-configurations.md)을 참조하세요.
+3. [프로젝트 디자이너, 컴파일 페이지(Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)에서 **구성** 및 **플랫폼**을 선택합니다. 단순화된 빌드 구성에서 **구성** 및 **플랫폼** 목록이 표시되지 않습니다. 자세한 내용은 [방법: 디버그 및 릴리스 구성 설정](../../debugger/how-to-set-debug-and-release-configurations.md)을 참조하세요.
 
-4.  **고급 컴파일 옵션**을 클릭합니다.
+4. **고급 컴파일 옵션**을 클릭합니다.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 ## <a name="optimizations"></a>최적화
 
- 다음 옵션은 경우에 따라 프로그램 파일을 축소하고, 프로그램을 신속하게 실행하고, 빌드 프로세스를 가속화할 수 있도록 최적화를 지정합니다.
+다음 옵션은 경우에 따라 프로그램 파일을 축소하고, 프로그램을 신속하게 실행하고, 빌드 프로세스를 가속화할 수 있도록 최적화를 지정합니다.
 
 **정수 오버플로 검사 해제**
 
@@ -53,11 +52,11 @@ ms.locfileid: "38783690"
 
  **DLL 기준 주소**
 
- 이 텍스트 상자는 16진수 형식인 기본 DLL 기준 주소를 표시합니다. 클래스 라이브러리 및 컨트롤 라이브러리 프로젝트에서 이 텍스트 상자를 사용하여 DLL을 만들 때 사용되는 기본 주소를 지정할 수 있습니다.
+이 텍스트 상자는 16진수 형식인 기본 DLL 기준 주소를 표시합니다. 클래스 라이브러리 및 컨트롤 라이브러리 프로젝트에서 이 텍스트 상자를 사용하여 DLL을 만들 때 사용되는 기본 주소를 지정할 수 있습니다.
 
  **디버그 정보 생성**
 
- 목록에서 **없음**, **전체** 또는 **PDB 전용**을 선택합니다. **없음**은 디버깅 정보가 생성되지 않도록 지정합니다. **전체**는 전체 디버깅 정보가 생성되도록 지정하고, **PDB 전용**은 PDB 디버깅 정보가 생성되도록 지정합니다. 이 옵션의 기본값은 **전체**입니다.
+목록에서 **없음**, **전체** 또는 **PDB 전용**을 선택합니다. **없음**은 디버깅 정보가 생성되지 않도록 지정합니다. **전체**는 전체 디버깅 정보가 생성되도록 지정하고, **PDB 전용**은 PDB 디버깅 정보가 생성되도록 지정합니다. 이 옵션의 기본값은 **전체**입니다.
 
 ## <a name="compilation-constants"></a>컴파일 상수
 
@@ -65,15 +64,15 @@ ms.locfileid: "38783690"
 
  **DEBUG 상수 정의**
 
- 기본적으로 이 확인란을 선택하면 DEBUG 상수가 설정되도록 지정합니다.
+기본적으로 이 확인란을 선택하면 DEBUG 상수가 설정되도록 지정합니다.
 
  **TRACE 상수 정의**
 
- 기본적으로 이 확인란을 선택하면 TRACE 상수가 설정되도록 지정합니다.
+기본적으로 이 확인란을 선택하면 TRACE 상수가 설정되도록 지정합니다.
 
  **사용자 지정 상수**
 
- 이 텍스트 상자에 응용 프로그램의 사용자 지정 상수를 입력합니다. **Name1="Value1",Name2="Value2",Name3="Value3"** 양식을 사용하여 항목을 쉼표로 구분해야 합니다.
+이 텍스트 상자에 애플리케이션의 사용자 지정 상수를 입력합니다. 다음 양식을 사용하여 항목을 쉼표로 구분해야 합니다. **Name1="Value1",Name2="Value2",Name3="Value3"** .
 
 ## <a name="other-settings"></a>기타 설정
 

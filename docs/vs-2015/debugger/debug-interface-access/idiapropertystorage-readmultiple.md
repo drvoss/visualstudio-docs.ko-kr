@@ -1,14 +1,9 @@
 ---
 title: IDiaPropertyStorage::ReadMultiple | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 6ccc9397-ce41-4f72-b261-72ac252cd4a5
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c36dcd5fc0f6e02804c57d94c9ae1d5c05e3b19f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 40cd84e00f2e6abea285368a6206c7400abf8877
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62538085"
 ---
 # <a name="idiapropertystoragereadmultiple"></a>IDiaPropertyStorage::ReadMultiple
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,13 +46,10 @@ HRESULT ReadMultiple( 
  [out에서] 배열을 `PROPVARIANT` 구조 (Microsoft.VisualStudio.OLE.Interop 네임 스페이스) 각 속성에 대 한 값을 채울 수 있습니다. 배열 이상 이어야 합니다 `cpspec` 요소의 크기입니다. 호출자가 배열의 값을 초기화할 필요가 없습니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` 속성 중 하나 이상이 없는 경우. 그렇지 않으면 오류 코드를 반환합니다.  
+ 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 속성 중 하나 이상이 없는 경우. 그러지 않으면 오류 코드가 반환됩니다.  
   
 ## <a name="remarks"></a>설명  
  경우 속성을 찾을 수 없습니다, 해당 항목에는 `rgvar` 배열에는 `VARIANT` 유형의 `VT_EMPTY`합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
-
-
-

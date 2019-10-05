@@ -10,17 +10,15 @@ helpviewer_keywords:
 ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fe32424632d06ed637b41dcd3d4b614afde369bd
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: MTE95
+ms.openlocfilehash: 05a07fc3cb72f923d28ff907c9aec69620cbd40d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824896"
 ---
 # <a name="add-new-data-sources"></a>새 데이터 원본 추가
 
@@ -60,7 +58,7 @@ Visual Studio의.NET data tools의 컨텍스트에서 용어 *데이터 원본* 
 
 데이터 집합 또는 데이터베이스 또는 데이터베이스 파일에 대 한 데이터 원본으로 사용 하는 Entity Framework 모델을 만들 수 있습니다.
 
-### <a name="dataset"></a>데이터 집합
+### <a name="dataset"></a>데이터 세트
 
 데이터 원본으로 데이터 집합을 만들려면 다음을 실행 합니다 **데이터 소스 구성 마법사** 를 선택 하 여 **프로젝트** > **새 데이터 소스 추가**합니다. 선택 된 **데이터베이스** 데이터 소스를 입력 하 고 지시에 따라 새 또는 기존 데이터베이스 연결 또는 데이터베이스 파일을 지정 합니다.
 
@@ -115,6 +113,6 @@ Visual Studio의.NET data tools의 컨텍스트에서 용어 *데이터 원본* 
 
 실행 하 여 SharePoint 목록의 데이터 소스를 만들 수는 **데이터 소스 구성 마법사** 선택 하 고는 **SharePoint** 데이터 소스 형식입니다. SharePoint은 서비스에서 데이터 원본을 만드는 것과 같습니다는 SharePoint 데이터 원본 만들기 WCF Data Services를 통해 데이터를 노출 합니다. 선택 하는 **SharePoint** 항목에 **데이터 소스 구성 마법사** 열립니다는 **서비스 참조 추가** 대화 상자에서 SharePoint 데이터 서비스에 연결 SharePoint 서버를 가리키면 됩니다. SharePoint SDK 필요합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [.NET용 Visual Studio 데이터 도구](../data-tools/visual-studio-data-tools-for-dotnet.md)

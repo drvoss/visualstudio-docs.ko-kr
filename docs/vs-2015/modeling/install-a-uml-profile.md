@@ -1,25 +1,22 @@
 ---
 title: UML 프로필 설치 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, profiles
 ms.assetid: 586f9ba5-4d01-4a1d-b001-32e2efaa4f24
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0b109916689aa395f8f5684ea6c78ae2b5b3465e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0187f7dede25900cdf3a78fdbfe2899e5f318472
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181493"
 ---
 # <a name="install-a-uml-profile"></a>UML 프로필 설치
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,25 +29,22 @@ UML 프로필을 통해 Visual Studio를 확장할 수 있습니다. 프로필�
   
 ### <a name="to-install-a-uml-profile-on-your-computer"></a>컴퓨터에 UML 프로필을 설치하려면  
   
-1.  프로필이 Visual Studio 확장(`.vsix`) 파일 형식으로 제공되어야 합니다. 동일한 파일에 다른 기능이 있을 수도 있습니다.  
+1. 프로필이 Visual Studio 확장(`.vsix`) 파일 형식으로 제공되어야 합니다. 동일한 파일에 다른 기능이 있을 수도 있습니다.  
   
      `.vsix` 파일을 컴퓨터의 편리한 위치로 이동합니다.  
   
-2.  Windows 탐색기(또는 파일 탐색기)에서 `.vsix` 파일을 두 번 클릭하거나 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 내에서 엽니다.  
+2. Windows 탐색기(또는 파일 탐색기)에서 `.vsix` 파일을 두 번 클릭하거나 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 내에서 엽니다.  
   
-3.  클릭 **설치** 나타나는 대화 상자에서.  
+3. 클릭 **설치** 나타나는 대화 상자에서.  
   
-4.  열을 제거 하거나 일시적으로 확장을 사용 하지 않도록 설정 하려면 **확장 관리자** 에서 합니다 **도구** 메뉴.  
+4. 열을 제거 하거나 일시적으로 확장을 사용 하지 않도록 설정 하려면 **확장 관리자** 에서 합니다 **도구** 메뉴.  
   
 ### <a name="to-uninstall-or-disable-a-profile-extension"></a>프로필 확장을 제거하거나 사용하지 않도록 설정하려면  
   
-1.  Visual studio **도구가** 메뉴에서 클릭 **확장 관리자**합니다.  
+1. Visual studio **도구가** 메뉴에서 클릭 **확장 관리자**합니다.  
   
-2.  확장을 제거 하 고 클릭 한 다음 클릭 **사용 안 함** 또는 **제거**합니다.  
+2. 확장을 제거 하 고 클릭 한 다음 클릭 **사용 안 함** 또는 **제거**합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [프로필 및 스테레오 타입을 사용 하 여 모델 사용자 지정](../modeling/customize-your-model-with-profiles-and-stereotypes.md)   
  [프로필을 정의하여 UML 확장](../modeling/define-a-profile-to-extend-uml.md)
-
-
-

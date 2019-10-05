@@ -1,25 +1,20 @@
 ---
 title: Visual C++ 코드 조각 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 74e26fd4-e5ca-4611-a816-0a521b4947a0
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ed64d9dde53b31cfe5f52ce708e4ee96d91fe8ff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 884ec6cc25fd2ef415dc71055361344d79021d5e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861366"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696372"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C# 코드 조각
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Visual Studio에서 코드 조각을 사용하여 일반적으로 사용되는 �
   
 - **편집/IntelliSense** 메뉴에서 **코드 조각 삽입**을 선택합니다.  
   
-- 바로 가기 키 **Ctrl+K+X**를 사용합니다.  
+- 바로 가기 키 사용: **CTRL + K + X**  
   
   **#if**로 시작하는 선택 항목 목록이 표시되어야 합니다. **#if**를 선택하면 다음 코드가 파일에 추가됩니다.  
   
@@ -54,7 +49,7 @@ Visual Studio에서 코드 조각을 사용하여 일반적으로 사용되는 �
   
 2. **편집/IntelliSense** 메뉴에서 **코드 감싸기**를 선택합니다.  
   
-3. 바로 가기 키 **Ctrl+K+S**를 사용합니다.  
+3. 바로 가기 키 사용: **CTRL + K + S**  
   
    **#if**를 선택합니다. 다음과 같이 표시되어야 합니다.  
   
@@ -143,7 +138,7 @@ for (int i = length - 1; i >= 0; i--)
 }  
 ```  
   
- **rfor** 코드 조각은 [범위 기반](http://msdn.microsoft.com/library/5750ba1d-ba48-4236-a923-e32de8345c2d) for 루프(링크)를 제공합니다.  
+ **rfor** 코드 조각은 [범위 기반](https://msdn.microsoft.com/library/5750ba1d-ba48-4236-a923-e32de8345c2d) for 루프(링크)를 제공합니다.  
   
 ```cpp  
 for (auto& i : v)  
@@ -179,6 +174,3 @@ class SomeClass {
 {  
   
 ```
-
-
-

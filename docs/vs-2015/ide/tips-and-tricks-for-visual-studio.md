@@ -1,49 +1,44 @@
 ---
 title: 팁과 요령 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 20489db9-7441-4f8b-97de-c72070d569b1
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b067302576dd83d88853a517f66e1c19186e3a78
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 5358c7e001a993c637cc4ac2dc267a668a7d6e13
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051158"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740133"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Visual Studio에 대한 유용한 정보
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목에 나온 바로 가기를 사용하여 Visual Studio에서 쉽게 이동할 수 있습니다. 자세한 내용은 참조 하세요. [Visual Studio에서 바로 가기 키](default-keyboard-shortcuts-in-visual-studio.md)합니다. 접근성을 위해 Visual Studio를 최적화하는 방법에 대한 자세한 내용은 [접근성 팁과 요령](../ide/reference/accessibility-tips-and-tricks.md)을 참조하세요.
+이 항목에 나온 바로 가기를 사용하여 Visual Studio에서 쉽게 이동할 수 있습니다. 자세한 내용은 [Visual Studio의 바로 가기 키](default-keyboard-shortcuts-in-visual-studio.md)를 참조하세요. 접근성을 위해 Visual Studio를 최적화하는 방법에 대한 자세한 내용은 [접근성 팁과 요령](../ide/reference/accessibility-tips-and-tricks.md)을 참조하세요.
 
--   [창 관리](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowMgmt)
+- [창 관리](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowMgmt)
 
--   [창 바로 가기](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowShortcuts)
+- [창 바로 가기](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowShortcuts)
 
--   [Visual Studio 검색](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Search)
+- [Visual Studio 검색](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Search)
 
--   [편집기 찾기](../ide/tips-and-tricks-for-visual-studio.md#BKMK_EditorFind)
+- [편집기 찾기](../ide/tips-and-tricks-for-visual-studio.md#BKMK_EditorFind)
 
--   [코드 편집기](../ide/tips-and-tricks-for-visual-studio.md#BKMK_CodeEditor)
+- [코드 편집기](../ide/tips-and-tricks-for-visual-studio.md#BKMK_CodeEditor)
 
--   [도구 모음](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Toolbars)
+- [도구 모음](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Toolbars)
 
--   [디버깅](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Debugging)
+- [디버깅](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Debugging)
 
--   [애플리케이션 수명 주기 관리](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
+- [애플리케이션 수명 주기 관리](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
 
-##  <a name="BKMK_WindowMgmt"></a> 창 관리
+## <a name="BKMK_WindowMgmt"></a> 창 관리
 
 |||
 |-|-|
@@ -54,7 +49,7 @@ ms.locfileid: "53051158"
 |열린 파일 목록 표시|Ctrl+Alt+아래쪽 화살표|
 |모든 부동 창 표시|Ctrl+Shift+M|
 
-##  <a name="BKMK_WindowShortcuts"></a> 창 바로 가기
+## <a name="BKMK_WindowShortcuts"></a> 창 바로 가기
 
 |||
 |-|-|
@@ -64,7 +59,7 @@ ms.locfileid: "53051158"
 |새 인스턴스 시작|Win+Shift+n|
 |창 간 전환|Win+n|
 
-##  <a name="BKMK_Search"></a> Visual Studio 검색
+## <a name="BKMK_Search"></a> Visual Studio 검색
 
 |||
 |-|-|
@@ -74,12 +69,12 @@ ms.locfileid: "53051158"
 |빠른 실행 범위 결과|-   @opt 옵션<br />-   @cmd 명령<br />-   @mru 가장 최근에 사용됨<br />-   @doc 문서 열기|
 |도구 옵션에서 검색|Ctrl+E|
 
-##  <a name="BKMK_EditorFind"></a> 편집기 찾기
+## <a name="BKMK_EditorFind"></a> 편집기 찾기
 
 |||
 |-|-|
 |빠른 찾기|Ctrl+F|
-|빠른 다음 찾기 결과|입력|
+|빠른 다음 찾기 결과|Enter 키|
 |빠른 이전 찾기 결과|Shift+Enter|
 |빠른 찾기 확장 드롭다운|Alt+Down을|
 |찾기 해제|Esc|
@@ -89,7 +84,7 @@ ms.locfileid: "53051158"
 |파일에서 찾기|Ctrl+Shift+F|
 |파일에서 바꾸기|Ctrl+Shift+H|
 
-##  <a name="BKMK_CodeEditor"></a> 코드 편집기
+## <a name="BKMK_CodeEditor"></a> 코드 편집기
 
 |||
 |-|-|
@@ -114,7 +109,7 @@ ms.locfileid: "53051158"
 |여러 결과 피킹 간에 이동|F8 및 Shift+F8|
 |코드 편집기 창 및 정의 피킹(Peeking) 창 간에 전환|Shift+Esc|
 
-##  <a name="BKMK_Toolbars"></a> 도구 모음
+## <a name="BKMK_Toolbars"></a> 도구 모음
 
 |||
 |-|-|
@@ -123,7 +118,7 @@ ms.locfileid: "53051158"
 |찾기 텍스트 상자 명령 모드|“>” 입력|
 |새 별칭 만들기|>별칭 NewAlias 명령|
 
-##  <a name="BKMK_Debugging"></a> 디버깅
+## <a name="BKMK_Debugging"></a> 디버깅
 
 |||
 |-|-|
@@ -142,13 +137,12 @@ ms.locfileid: "53051158"
 |직접 실행 창 버퍼 지우기|>cls|
 |직접 실행 창 인쇄 값|?varname|
 
-##  <a name="BKMK_ALM"></a> 애플리케이션 수명 주기 관리
+## <a name="BKMK_ALM"></a> 애플리케이션 수명 주기 관리
 
-참조 [바로 가기 키: Visual Studio Online, TFS 웹 포털 및 팀 탐색기](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)합니다.
+[바로 가기 키: Visual Studio Online, TFS 웹 포털 및 팀 탐색기](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
 - [Visual Studio 블로그](http://blogs.msdn.com/b/visualstudio)
 - [Visual Studio 팁과 요령 블로그](http://blogs.msdn.com/b/zainnab)
 - [Channel 9의 Visual Studio 도구 상자](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)
-- [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)

@@ -1,14 +1,9 @@
 ---
 title: 예기치 않은 수량자 (JavaScript) | Microsoft Docs
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5018
 dev_langs:
@@ -16,21 +11,20 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: ba6d34f9-2d6f-486c-a929-6cd9818be322
-caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ef0955bac35009d9b6c82f1856bb9005a08043ad
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 52b98875b560e4863a93849cf99c2f8756cd438a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63005893"
 ---
 # <a name="unexpected-quantifier-javascript"></a>예기치 않은 수량자입니다.(JavaScript)
 정규식 검색 패턴을 작성할 때 잘못 된 반복 요소를 사용 하 여 패턴 요소를 만들었습니다. 예를 들어, 패턴  
   
-```  
+```js
 /^+/  
 ```  
   
@@ -51,7 +45,7 @@ ms.locfileid: "44282269"
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
--   검색 패턴 요소 포함 법적 반복 요소에만 확인 합니다.  
+- 검색 패턴 요소 포함 법적 반복 요소에만 확인 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Regular Expression 개체](../../javascript/reference/regular-expression-object-javascript.md)   

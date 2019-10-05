@@ -2,7 +2,6 @@
 title: IDebugDocumentContext::EnumCodeContexts | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 300102d75fcfa797e8e073b9a1ce77cc5ee2827a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ecf8b7d1ea292d0e1464825314cc92e1e903db3e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974425"
 ---
 # <a name="idebugdocumentcontextenumcodecontexts"></a>IDebugDocumentContext::EnumCodeContexts
-이 문서 컨텍스트와 연결 된 코드 컨텍스트를 열거 합니다.  
+이 문서 컨텍스트와 연결 된 코드 컨텍스트 열거 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT EnumCodeContexts(  
    IEnumDebugCodeContexts**  ppescc  
 );  
@@ -48,7 +47,7 @@ HRESULT EnumCodeContexts(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 문서는 문서가 포함 파일 또는 템플릿을 하지 않는 한 일반적으로 하나의 코드 컨텍스트와 연결 합니다.  
+ 문서 포함 파일 또는 템플릿을 아닌 문서가 하나만 코드 컨텍스트를 사용 하 여 일반적으로 연결 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugDocumentContext 인터페이스](../../winscript/reference/idebugdocumentcontext-interface.md)

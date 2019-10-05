@@ -1,14 +1,9 @@
 ---
 title: HTML, CSS 및 JavaScript 샘플 코드 디버그 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,23 +13,23 @@ ms.assetid: 51893967-98c8-4141-ba40-03646f221760
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9c4793747e85435b63361df03cdb011d38b214e6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 134b4e3c5195e9008d951062ec813a939d0d4fe6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51720792"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161463"
 ---
 # <a name="debug-html-css-and-javascript-sample-code"></a>HTML, CSS 및 JavaScript 샘플 코드 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- 이 항목의 코드에 대 한 샘플 파일이 [빠른 시작: HTML 및 CSS 디버깅](../debugger/quickstart-debug-html-and-css.md)합니다. QuickStart에서 의도적으로 제공되는 오류는 이 버전의 코드에서 수정됩니다.  
+ 이 항목의 코드에 대 한 샘플 파일이 [빠른 시작: HTML 및 CSS 디버그](../debugger/quickstart-debug-html-and-css.md)합니다. QuickStart에서 의도적으로 제공되는 오류는 이 버전의 코드에서 수정됩니다.  
   
-## <a name="sample-code"></a>샘플 코드  
- 다음 HTML 코드에 사용 되는 \<본문 > 빠른 시작에서 태그입니다.  
+## <a name="sample-code"></a>예제 코드  
+ 다음 HTML 코드는 QuickStart의 \<body> 태그에서 사용됩니다.  
   
 ```html  
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -111,6 +106,3 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
   
 ## <a name="see-also"></a>참고 항목  
  [빠른 시작: HTML 및 CSS 디버그](../debugger/quickstart-debug-html-and-css.md)
-
-
-

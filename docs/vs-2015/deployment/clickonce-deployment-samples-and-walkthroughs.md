@@ -1,14 +1,9 @@
 ---
 title: ClickOnce 배포 샘플 및 연습 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: 3973276b-7b11-4692-a0a2-32bebf0b9c2a
 caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: cc16747838347810e12e293d718b355f492a158e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d7a7663a2e365f800b754b771bffca4f539cee51
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207222"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675426"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>ClickOnce 배포 샘플 및 연습
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,13 +36,10 @@ ms.locfileid: "49207222"
   
 |항목|설명|  
 |-----------|-----------------|  
-|[ClickOnce 응용 프로그램 수동 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|.NET Framework 유틸리티를 사용하여 ClickOnce 응용 프로그램을 배포하는 방법을 설명합니다.|  
+|[ClickOnce 응용 프로그램 수동 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|.NET Framework 유틸리티를 사용하여 ClickOnce 애플리케이션을 배포하는 방법을 설명합니다.|  
 |[ClickOnce 배포 API 사용 하 여 요청 시 어셈블리 다운로드](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|다운로드 하는 방법과 "optional"로 응용 프로그램의 특정 어셈블리를 표시 하는 방법을 보여 줍니다에서 클래스를 사용 하는 <xref:System.Deployment.Application> 네임 스페이스입니다.|  
-|[ClickOnce 배포 디자이너를 사용 하 여 API 사용 하 여 요청 시 어셈블리 다운로드](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|응용 프로그램 어셈블리를 응용 프로그램에서 처음 사용할 때만 다운로드하는 방법을 설명합니다.|  
+|[ClickOnce 배포 디자이너를 사용 하 여 API 사용 하 여 요청 시 어셈블리 다운로드](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|애플리케이션 어셈블리를 애플리케이션에서 처음 사용할 때만 다운로드하는 방법을 설명합니다.|  
   
 ## <a name="see-also"></a>참고 항목  
- [Visual Studio 연습](http://msdn.microsoft.com/en-us/f5399a1f-2d3d-42fb-b989-134ccda2159f)   
+ [Visual Studio 연습](https://msdn.microsoft.com/f5399a1f-2d3d-42fb-b989-134ccda2159f)   
  [Visual Studio 샘플](../ide/visual-studio-samples.md)
-
-
-

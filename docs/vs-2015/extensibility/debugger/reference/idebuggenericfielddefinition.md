@@ -1,26 +1,21 @@
 ---
 title: IDebugGenericFieldDefinition | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericFieldDefinition interface
 ms.assetid: b5a853b7-221e-4d62-8948-07423089d75d
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 942bca219de30cb39d818519f29010d4a79b1380
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 224b9a5c0e2412b9ae89c1767348b8fbd1a528be
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180860"
 ---
 # <a name="idebuggenericfielddefinition"></a>IDebugGenericFieldDefinition
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -45,7 +40,6 @@ IDebugGenericFieldDefinition : IUnknown
 ## <a name="requirements"></a>요구 사항  
  헤더: Sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
-
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll

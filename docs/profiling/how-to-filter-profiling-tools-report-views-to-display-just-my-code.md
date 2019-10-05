@@ -1,22 +1,20 @@
 ---
-title: '방법: 내 코드만 표시하도록 프로파일링 도구 보고서 뷰 필터링 | Microsoft 문서'
-ms.custom: ''
+title: 내 코드만 표시하도록 프로파일링 도구 보고서 보기 필터링
 ms.date: 02/15/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b1e2291ff5c4b7ff072e45df9e2d32768011bca
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: c65c249c8d744dd01ef67d4836f9aa7066370fa0
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815784"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261395"
 ---
-# <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>방법: 내 코드만 표시하도록 프로파일링 도구 보고서 뷰 필터링
+# <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>방법: 내 코드만 표시하도록 프로파일링 도구 보고서 보기 필터링
 
 Visual Studio는 사용자가 구현한 코드만 표시하도록 성능 보고서 필터링 기능을 제공합니다. 내 코드만이라는 이 기능은 기본적으로 사용하도록 설정됩니다. 이 기능은 **옵션** 대화 상자의 **내 코드만** 옵션을 통해 구성됩니다.
 

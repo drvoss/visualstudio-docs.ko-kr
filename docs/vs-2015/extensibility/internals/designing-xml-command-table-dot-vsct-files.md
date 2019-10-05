@@ -1,26 +1,21 @@
 ---
 title: XML 명령 테이블 디자인 (합니다. Vsct) 파일 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, designing
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6c7a4e07c45c5d651af057e1eb33c23d37601cb3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 987536af051de4a66b3eccadb105fd98455ddf06
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196857"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>XML 명령 테이블 디자인 (합니다. Vsct) 파일
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ XML 명령 테이블 (.vsct) 파일에는 레이아웃 및 VSPackage에 대 한 
   
  실행 하 여 새 VSPackage를 만들 때의 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 패키지 템플릿은 템플릿 메뉴 명령, 도구 창 또는 선택 항목에 따라 사용자 지정 편집기에 대 한 필요한 요소를 사용 하 여.vsct 파일을 생성 합니다. 그런 다음 특정 VSPackage의 요구 사항에 맞게이.vsct 파일을 수정할 수 있습니다. .Vsct 파일을 수정 하는 방법의 예제에 나와 있는 예제를 참조 하세요 [확장 메뉴 및 명령을](../../extensibility/extending-menus-and-commands.md)합니다.  
   
- 새, 빈.vsct 파일을 만들려면 참조 [방법: 만들기를 합니다. Vsct 파일](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)합니다. 만들어지면 명령 항목 레이아웃을 설명 하는 파일에 XML 요소, 특성 및 값 추가 합니다. XML 스키마를 자세한 참조를 [VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md)합니다.  
+ 새, 빈.vsct 파일을 만들려면 참조 [방법: 만들기는 합니다. Vsct 파일](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)합니다. 만들어지면 명령 항목 레이아웃을 설명 하는 파일에 XML 요소, 특성 및 값 추가 합니다. XML 스키마를 자세한 참조를 [VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md)합니다.  
   
 ## <a name="differences-between-ctc-and-vsct-files"></a>.Ctc 및.vsct 파일 간의 차이점  
  .Vsct 파일에서 XML 태그의 의미를.ctc 파일 형식이 더 이상 사용 되지 이제의가 동일, 구현과 약간 다릅니다.  
@@ -71,7 +66,7 @@ XML 명령 테이블 (.vsct) 파일에는 레이아웃 및 VSPackage에 대 한 
   
   새 컴파일러, vsct.exe,.ctc와.vsct 파일을 컴파일합니다. 그러나 이전 ctc.exe 컴파일러는 인식 아니고.vsct 파일을 컴파일합니다.  
   
-  기존.cto 파일.vsct 파일을 변환할 vsct.exe 컴파일러를 사용할 수 있습니다. 이 대 한 자세한 내용은 참조 하세요. [방법: 만들기를 합니다. 기존 Vsct 파일입니다. Cto 파일](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)합니다.  
+  기존.cto 파일.vsct 파일을 변환할 vsct.exe 컴파일러를 사용할 수 있습니다. 이 대 한 자세한 내용은 참조 하세요. [방법: 만들기는 합니다. 기존 Vsct 파일입니다. Cto 파일](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)합니다.  
   
 ## <a name="the-vsct-file-elements"></a>.Vsct 파일 요소  
  명령 테이블에는 다음 계층 구조 및 요소에 있습니다.  
@@ -105,19 +100,19 @@ XML 명령 테이블 (.vsct) 파일에는 레이아웃 및 VSPackage에 대 한 
 ## <a name="vsct-file-design-guidelines"></a>. Vsct 파일 디자인 지침  
  .Vsct 파일을 성공적으로 디자인 하려면 다음이 지침을 따릅니다.  
   
--   명령을 그룹에만 배치할 수 있습니다, 그룹 메뉴에만 배치할 수 있습니다 및 메뉴 그룹에만 배치할 수 있습니다. 메뉴만 그룹 IDE에 실제로 표시 되 고 명령을 가져오지 않습니다.  
+- 명령을 그룹에만 배치할 수 있습니다, 그룹 메뉴에만 배치할 수 있습니다 및 메뉴 그룹에만 배치할 수 있습니다. 메뉴만 그룹 IDE에 실제로 표시 되 고 명령을 가져오지 않습니다.  
   
--   하위 메뉴에 직접 할당할 수 없습니다 있지만 메뉴에 다시 할당 된 그룹에 할당 되어야 합니다.  
+- 하위 메뉴에 직접 할당할 수 없습니다 있지만 메뉴에 다시 할당 된 그룹에 할당 되어야 합니다.  
   
--   하나의 부모/자식 관리 그룹 또는 해당 정의 지시문의 부모 필드를 사용 하 여 메뉴 명령, 하위 메뉴 및 그룹을 할당할 수 있습니다.  
+- 하나의 부모/자식 관리 그룹 또는 해당 정의 지시문의 부모 필드를 사용 하 여 메뉴 명령, 하위 메뉴 및 그룹을 할당할 수 있습니다.  
   
--   지시문의 부모 필드를 통해서만 명령 테이블을 구성 하는 것은 중요 한 제한이 있습니다. 개체를 정의 하는 지시문은 하나의 부모만 인수를 사용할 수 있습니다.  
+- 지시문의 부모 필드를 통해서만 명령 테이블을 구성 하는 것은 중요 한 제한이 있습니다. 개체를 정의 하는 지시문은 하나의 부모만 인수를 사용할 수 있습니다.  
   
--   고유한 개체의 새 인스턴스를 만들려면 새 지시문을 사용 해야 명령, 그룹 또는 하위 메뉴를 다시 사용 `GUID:ID` 쌍입니다.  
+- 고유한 개체의 새 인스턴스를 만들려면 새 지시문을 사용 해야 명령, 그룹 또는 하위 메뉴를 다시 사용 `GUID:ID` 쌍입니다.  
   
--   각 `GUID:ID` 쌍은 고유 해야 합니다. 에 의해 처리 됩니다, 예를 들어, 배치 된 상황에 맞는 메뉴 또는 도구 모음, 메뉴 명령을 다시 사용 된 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 인터페이스입니다.  
+- 각 `GUID:ID` 쌍은 고유 해야 합니다. 에 의해 처리 됩니다, 예를 들어, 배치 된 상황에 맞는 메뉴 또는 도구 모음, 메뉴 명령을 다시 사용 된 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 인터페이스입니다.  
   
--   명령 및 하위 메뉴도 여러 그룹에 할당할 수 있으며 그룹을 사용 하 여 여러 메뉴에서 할당할 수는 [Commands 요소](../../extensibility/commands-element.md)합니다.  
+- 명령 및 하위 메뉴도 여러 그룹에 할당할 수 있으며 그룹을 사용 하 여 여러 메뉴에서 할당할 수는 [Commands 요소](../../extensibility/commands-element.md)합니다.  
   
 ## <a name="vsct-file-notes"></a>. Vsct 파일 정보  
  실행 해야 하는 경우 변경 내용을.vsct 파일 후 둘 다 컴파일합니다 네이티브 위성 DLL에에서 배치 합니다 **devenv.exe /setup /nosetupvstemplates**합니다. 이렇게 하면 다시 읽어야 실험적 레지스트리 및 설명 하는 내부 데이터베이스에서 지정 하는 VSPackage 리소스 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 다시 작성 됩니다.  
@@ -130,4 +125,3 @@ XML 명령 테이블 (.vsct) 파일에는 레이아웃 및 VSPackage에 대 한 
   
 ## <a name="see-also"></a>참고 항목  
  [메뉴 및 명령 확장](../../extensibility/extending-menus-and-commands.md)
-

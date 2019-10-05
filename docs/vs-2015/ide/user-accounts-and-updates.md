@@ -1,28 +1,27 @@
 ---
 title: 사용자 계정 및 업데이트 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 0adb84eb-b22e-46a6-ad90-216652f3733c
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 76f1e52ed548cdca5bd2e910023e4371fdc87e1f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4ecd7a4d237a53a19286790346f790b82b981f60
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222427"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062882"
 ---
 # <a name="user-accounts-and-updates"></a>사용자 계정 및 업데이트
+
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
+> [!WARNING]
+> Visual Studio 2015는 조건부 액세스를 위해 구성 된 리소스에 액세스할 수 없습니다. 이러한 리소스를 사용 하려면 Visual Studio 2017 이상으로 업그레이드 합니다.
 
 Visual Studio는 그 자체로도 연결된 환경입니다. 로그인하면 사용자 계정에 연결된 모든 계정은 물론 해당 계정과 연결된 모든 서비스에 액세스할 수 있습니다. 계정 설정은 Visual Studio를 사용하는 곳이라면 어디든지 사용자와 로밍됩니다. 개별 사용자에 대한 특정 Visual Studio 인스턴스에서 사용 권한 수준을 구성할 수 있습니다. 또한 Visual Studio에서는 SDK처럼 설치의 어떤 구성 요소에든 사용 가능한 업데이트가 있으면 알려줍니다.  
   
@@ -36,14 +35,6 @@ Visual Studio는 그 자체로도 연결된 환경입니다. 로그인하면 사
 |[Visual Studio 잠금을 해제하는 방법](../ide/how-to-unlock-visual-studio.md)|다양한 시나리오에서 Visual Studio에 대한 잠금을 해제하는 방법을 설명합니다.|  
 |[알림](../ide/visual-studio-notifications.md)|Visual Studio가 사용자에게 SDK와 같은 구성 요소 또는 Visual Studio 자체에 사용할 수 있는 업데이트가 있음을 알리는 방법을 설명합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [Visual Studio IDE](../ide/visual-studio-ide.md)
+## <a name="see-also"></a>참고 항목
 
-
-
-
-
-
-
-
-
+- [Visual Studio IDE](../ide/visual-studio-ide.md)

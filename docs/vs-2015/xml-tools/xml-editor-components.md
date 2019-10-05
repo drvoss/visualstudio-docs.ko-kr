@@ -1,30 +1,24 @@
 ---
 title: XML 편집기 구성 요소 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 417ec1ca-e2fa-4496-87cb-ac04c9f26741
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 83437ff6e715eaaa8d9f75ac00d2d6c6932b43bf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e3b07c7c1009b4f8c9f3d92ccb611e3b64319d19
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235835"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703259"
 ---
 # <a name="xml-editor-components"></a>XML 편집기 구성 요소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 이 단원에서는 XML 편집기 창 및 대화 상자에 대해 설명합니다. XML 편집기는 텍스트 편집기를 기반으로 하기 때문에 일부 IDE(통합 개발 환경)는 일반 텍스트 편집기 설정을 사용하여 구성됩니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
@@ -41,11 +35,8 @@ ms.locfileid: "49235835"
  XML 문서와 연결할 XML 스키마를 선택하는 방법에 대해 설명합니다.  
   
 ## <a name="related-sections"></a>관련 단원  
- [방법: 일반 편집기 옵션 설정](http://msdn.microsoft.com/en-us/704e4a7b-2162-4bed-8a47-f4f6ffec98c2)  
+ [방법: 일반 편집기 옵션 설정](https://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2)  
  표시, 문 완성 등의 일반 설정을 지정하는 방법에 대해 설명합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [XML 편집기](../xml-tools/xml-editor.md)
-
-
-

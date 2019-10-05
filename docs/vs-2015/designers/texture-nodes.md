@@ -1,25 +1,20 @@
 ---
 title: 질감 노드 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: b7df5ef3-dd4f-4964-9d96-34e0e180515e
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bda107323b24940ed8cab18a61f9e491f8392f53
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e43329cb15eaf41ccb8859521bd45eff6f749c10
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187767"
 ---
 # <a name="texture-nodes"></a>질감 노드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,6 +34,3 @@ ms.locfileid: "49252358"
 |**텍스처 차원**|2D 질감 맵의 너비와 높이를 출력합니다.<br /><br /> 텍스처 차원을 사용하여 셰이더에서 질감의 너비와 높이를 고려할 수 있습니다.<br /><br /> **출력:**<br /><br /> `Output`: `float2`<br /> 벡터로 표현된 질감의 너비와 높이입니다. 너비는 벡터의 첫 번째 요소에 저장됩니다. 높이는 두 번째 요소에 저장됩니다.|**질감**<br /> 텍스처 차원과 연결된 질감 레지스터입니다.|  
 |**텍셀 델타**|2D 질감 맵의 텍셀 간 델타(거리)를 출력합니다.<br /><br /> 텍셀 델타를 사용하여 셰이더에서 인접 텍셀 값을 샘플링할 수 있습니다.<br /><br /> **출력:**<br /><br /> `Output`: `float2`<br /> 정규화된 질감 공간의 벡터로 표현된 특정 텍셀에서 다음 텍셀까지의 델타(거리)입니다(양의 방향으로 대각선 이동). 델타의 U 또는 V 좌표를 선택적으로 무시하거나 부정하여 모든 인접 텍셀의 위치를 파생할 수 있습니다.|**질감**<br /> 텍셀 델타와 연결된 질감 레지스터입니다.|  
 |**질감 샘플**|2D 질감 맵의 지정된 좌표에서 색 샘플을 가져옵니다.<br /><br /> 질감 맵을 사용하면 개체 표면의 색 세부 정보를 제공할 수 있습니다.<br /><br /> **입력:**<br /><br /> `UV`: `float2`<br /> 샘플을 가져오는 좌표입니다.<br /><br /> **출력:**<br /><br /> `Output`: `float4`<br /> 색 보기입니다.|**질감**<br /> 샘플러와 연결된 질감 레지스터입니다.|
-
-
-

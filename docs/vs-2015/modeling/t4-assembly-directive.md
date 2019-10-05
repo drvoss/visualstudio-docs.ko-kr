@@ -1,23 +1,20 @@
 ---
 title: T4 Assembly 지시문 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 44949749-ce3c-4fb5-8690-a17f1564ac2f
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 97e28347ba6985d99386647219f92aac9a221398
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 164f049b5ed1133acfd1f4e66f805b1510d29d5d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411499"
 ---
 # <a name="t4-assembly-directive"></a>T4 Assembly 지시문
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +24,7 @@ ms.locfileid: "49873580"
  텍스트 템플릿 작성의 일반적인 개요를 참조 하세요 [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)합니다.  
   
 > [!NOTE]
->  전처리된 런타임 텍스트 템플릿에는 `assembly` 지시문이 필요하지 않습니다. 대신, 필요한 어셈블리를 추가 합니다 **참조** 의 프로그램 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트입니다.  
+> 전처리된 런타임 텍스트 템플릿에는 `assembly` 지시문이 필요하지 않습니다. 대신, 필요한 어셈블리를 추가 합니다 **참조** 의 프로그램 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트입니다.  
   
 ## <a name="using-the-assembly-directive"></a>assembly 지시문 사용  
  지시문의 구문은 다음과 같습니다.  
@@ -69,7 +66,7 @@ ms.locfileid: "49873580"
   
 - DSL이 들어 있는 어셈블리  
   
-##  <a name="msbuild"></a> MSBuild 및 Visual Studio에서 프로젝트 속성 사용  
+## <a name="msbuild"></a> MSBuild 및 Visual Studio에서 프로젝트 속성 사용  
  $(SolutionDir)과 같은 Visual Studio 매크로는 MSBuild에서 작동하지 않습니다. 빌드 컴퓨터에서 템플릿을 변형하려는 경우 대신 프로젝트 속성을 사용해야 합니다.  
   
  프로젝트 속성을 정의하기 위해 .csproj 또는 .vbproj 파일을 편집합니다. 이 예제에서는 `myLibFolder`라는 속성을 정의합니다.  
@@ -89,7 +86,7 @@ ms.locfileid: "49873580"
   
 ```  
   
- 이제 Visual Studio 및 MSBuild에서 모두 올바르게 변형된 텍스트 템플릿의 프로젝트 속성을 사용할 수 있습니다.  
+ 이제 Visual Studio 및 MSBuild에서 모두 올바르게 변환된 텍스트 템플릿의 프로젝트 속성을 사용할 수 있습니다.  
   
 ```  
 <#@ assembly name="$(myLibFolder)\MyLib.dll" #>  
@@ -97,6 +94,3 @@ ms.locfileid: "49873580"
   
 ## <a name="see-also"></a>참고 항목  
  [T4 Include 지시문](../modeling/t4-include-directive.md)
-
-
-

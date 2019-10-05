@@ -2,27 +2,25 @@
 title: Visual Studio 1단계, Flask 기본 사항에서 Flask 자습서 알아보기
 titleSuffix: ''
 description: 필수 구성 요소, Git 및 가상 환경을 비롯하여 Visual Studio 프로젝트의 컨텍스트에서 Flask 기본 사항을 살펴봅니다.
-ms.date: 09/04/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 01/07/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0603c1b8dcabc37631c7a52e11cfa964331010d8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d0ad3ac3c4efa6be136fa85ee0c8abbe3632e53f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62958743"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>자습서: Visual Studio에서 Flask 웹 프레임워크 시작
 
-[Flask](http://flask.pocoo.org/)는 URL 라우팅 및 페이지 렌더링을 위한 기본 사항을 제공하는 웹 응용 프로그램용 경량 Python 프레임워크입니다.
+[Flask](http://flask.pocoo.org/)는 URL 라우팅 및 페이지 렌더링을 위한 기본 사항을 제공하는 웹 애플리케이션용 경량 Python 프레임워크입니다.
 
 Flask는 폼 유효성 검사, 데이터베이스 추상화, 인증 등과 같은 기능을 직접 제공하지 않기 때문에 "마이크로" 프레임워크라고 합니다. 대신 이러한 기능은 Flask *확장*이라는 특별한 Python 패키지를 통해 제공됩니다. 확장은 Flask와 원활하게 통합되어 Flask의 일부인 것처럼 보입니다. 예를 들어 Flask 자체는 페이지 템플릿 엔진을 제공하지 않습니다. 템플레이팅은 이 자습서에서 설명한 대로 Jinja 및 Jade와 같은 확장에서 제공됩니다.
 
@@ -33,7 +31,7 @@ Flask는 폼 유효성 검사, 데이터베이스 추상화, 인증 등과 같�
 > - 한 페이지의 Flask 앱을 만들고 템플릿을 사용하여 해당 페이지 렌더링(2단계)
 > - 정적 파일 제공, 페이지 추가 및 템플릿 상속 사용(3단계)
 > - Flask 웹 프로젝트 템플릿을 사용하여 여러 페이지로 구성되고 반응이 빠른 디자인의 앱 만들기(4단계)
-> - 여론 조사 Flask 웹 프로젝트 템플릿을 사용하여 다양한 저장소 옵션(Azure 저장소, MongoDB 또는 메모리)을 사용하는 여론 조사 앱을 만들 수 있습니다.
+> - 여론 조사 Flask 웹 프로젝트 템플릿을 사용하여 다양한 스토리지 옵션(Azure 스토리지, MongoDB 또는 메모리)을 사용하는 여론 조사 앱을 만들 수 있습니다.
 
 이 단계를 진행하는 동안 세 개의 개별 프로젝트가 포함된 단일 Visual Studio 솔루션을 만듭니다. Visual Studio에 포함된 여러 Flask 프로젝트 템플릿을 사용하여 프로젝트를 만듭니다. 프로젝트를 동일한 솔루션에 유지하면 서로 다른 파일 간에 쉽게 전환하여 비교할 수 있습니다.
 
@@ -42,7 +40,7 @@ Flask는 폼 유효성 검사, 데이터베이스 추상화, 인증 등과 같�
 
 ## <a name="prerequisites"></a>전제 조건
 
-- 다음 옵션을 포함하는 Windows의 Visual Studio 2017:
+- 다음 옵션을 포함하는 Windows의 Visual Studio 2017 이상:
   - **Python 개발** 워크로드(설치 관리자의 **워크로드**) 자세한 내용은 [Visual Studio에서 Python 지원 설치](installing-python-support-in-visual-studio.md)를 참조하세요.
   - **코드 도구**의 **개별 구성 요소** 탭에 있는 **Git for Windows** 및 **Visual Studio용 GitHub 확장**
 
@@ -62,7 +60,7 @@ Flask 프로젝트 템플릿은 Visual Studio용 Python 도구의 모든 이전 
     - **위치**: Visual Studio 솔루션 및 프로젝트를 만들 위치를 지정합니다.
     - **솔루션 이름**: 이 자습서의 여러 프로젝트에 대한 컨테이너로 솔루션에 적합한 **LearningFlask**로 설정합니다.
     - **솔루션용 디렉터리 만들기**: 설정을 그대로 둡니다(기본값).
-    - **새 Git 리포지토리 만들기**: Visual Studio에서 솔루션을 만들 때 로컬 Git 리포지토리를 만들도록 이 옵션(기본적으로 선택 취소되어 있음)을 선택합니다. 이 옵션이 표시되지 않으면 Visual Studio 2017 설치 프로그램을 실행하고 **코드 도구**의 **개별 구성 요소** 탭에 **Windows용 Git** 및 **Visual Studio용 GitHub 확장**을 추가합니다.
+    - **새 Git 리포지토리 만들기**: Visual Studio에서 솔루션을 만들 때 로컬 Git 리포지토리를 만들도록 이 옵션(기본적으로 선택 취소되어 있음)을 선택합니다. 이 옵션이 표시되지 않으면 Visual Studio 설치 관리자를 실행하고 **코드 도구** 아래의 **개별 구성 요소** 탭에 **Windows용 Git** 및 **Visual Studio용 GitHub 확장**을 추가합니다.
 
 1. 잠시 후 Visual Studio에는 **이 프로젝트에는 외부 패키지가 필요합니다.** 라는 대화 상자가 표시됩니다(아래 표시). 이 대화 상자는 템플릿에 최신 Flask 1.x 패키지를 참조하는 *requirements.txt* 파일이 포함되어 있기 때문에 나타납니다. 정확한 종속성을 확인하려면 **필수 패키지 표시**를 선택하세요.
 
@@ -144,7 +142,7 @@ Flask 프로젝트 템플릿은 Visual Studio용 Python 도구의 모든 이전 
 
 ### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>질문: 가상 환경을 만들려는 이유는 무엇인가요?
 
-대답: 가상 환경은 앱의 정확한 종속성을 격리하는 좋은 방법입니다. 이러한 격리는 전역 Python 환경 내에서 충돌을 방지하고 테스트 및 공동 작업을 지원합니다. 시간에 따라 앱을 개발하면서 여러 유용한 Python 패키지가 동일하게 표시됩니다. 프로젝트별 가상 환경에 패키지를 유지하면 소스 제어에 포함되어 있는, 해당 환경을 설명하는 프로젝트의 *requirements.txt* 파일을 쉽게 업데이트할 수 있습니다. 빌드 서버, 배포 서버 및 기타 개발 컴퓨터를 포함하여 다른 컴퓨터에 프로젝트를 복사하는 경우 *requirements.txt*만 사용하여 환경을 다시 만들기가 수월합니다. 따라서 환경이 소스 제어에 있을 필요가 없습니다. 자세한 내용은 [가상 환경 사용](selecting-a-python-environment-for-a-project.md#use-virtual-environments)을 참조하세요.
+대답: 가상 환경은 앱의 정확한 종속성을 격리하는 좋은 방법입니다. 이러한 격리는 전역 Python 환경 내에서 충돌을 방지하고 테스트 및 협업을 지원합니다. 시간에 따라 앱을 개발하면서 여러 유용한 Python 패키지가 동일하게 표시됩니다. 프로젝트별 가상 환경에 패키지를 유지하면 소스 제어에 포함되어 있는, 해당 환경을 설명하는 프로젝트의 *requirements.txt* 파일을 쉽게 업데이트할 수 있습니다. 빌드 서버, 배포 서버 및 기타 개발 컴퓨터를 포함하여 다른 컴퓨터에 프로젝트를 복사하는 경우 *requirements.txt*만 사용하여 환경을 다시 만들기가 수월합니다. 따라서 환경이 소스 제어에 있을 필요가 없습니다. 자세한 내용은 [가상 환경 사용](selecting-a-python-environment-for-a-project.md#use-virtual-environments)을 참조하세요.
 
 ### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>질문: 소스 제어에 이미 커밋된 가상 환경을 제거하려면 어떻게 해야 하나요?
 
@@ -192,7 +190,7 @@ Flask 프로젝트 템플릿은 Visual Studio용 Python 도구의 모든 이전 
         return "Hello World!"
     ```
 
-### <a name="question-what-is-the-purpose-of-the-name-argument-to-the-flask-class"></a>질문: Flask 클래스에 대한 __name__ 인수의 용도는 무엇인가요?
+### <a name="question-what-is-the-purpose-of-the-__name__-argument-to-the-flask-class"></a>질문: Flask 클래스에 대한 __name__ 인수의 용도는 무엇인가요?
 
 대답: 인수는 앱의 모듈 또는 패키지의 이름이며, 템플릿, 정적 파일 및 앱에 속한 기타 리소스를 찾을 수 있는 위치를 Flask에 알려줍니다. 단일 모듈에 포함된 앱의 경우 `__name__`이 항상 적절한 값입니다. 디버깅 정보가 필요한 확장의 경우에도 중요합니다. 자세한 정보 및 추가 인수는 [Flask 클래스 설명서](http://flask.pocoo.org/docs/1.0/api/#flask.Flask)(flask.pocoo.org)를 참조하세요.
 

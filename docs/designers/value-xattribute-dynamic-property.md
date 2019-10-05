@@ -1,8 +1,6 @@
 ---
 title: Value(XAttribute 동적 속성)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: reference
 apiname:
 - XAttribute.Value
@@ -10,15 +8,15 @@ apitype: Assembly
 ms.assetid: 019733d2-e050-4120-b537-831cd3fc008e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 473ff5b0124a050b60c9dc02929b2bad83f3661e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fe9127d4a7c691c34f15d399bd32f5e48cc6f0ed
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892822"
 ---
 # <a name="value-xattribute-dynamic-property"></a>Value(XAttribute 동적 속성)
 
@@ -32,15 +30,15 @@ attrib.Value
 
 ## <a name="property-valuereturn-value"></a>속성 값/반환 값
 
-이 특성의 값을 포함하는 <xref:System.String>
+이 특성의 값이 들어 있는 <xref:System.String>입니다.
 
 ## <a name="exceptions"></a>예외
 
 |예외 형식|조건|
 | - |---------------|
-|<xref:System.ArgumentNullException>|설정할 때 `value`가 `null`인 경우|
+|<xref:System.ArgumentNullException>|설정 시 `value`가 `null`인 경우|
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 이 속성은 <xref:System.Xml.Linq.XAttribute.Value%2A> 클래스의 <xref:System.Xml.Linq.XAttribute?displayProperty=fullName> 속성과 동일하지만 이 동적 속성은 변경 알림도 지원합니다.
 

@@ -1,21 +1,20 @@
 ---
 title: 'CA3147: ValidateAntiForgeryToken을 사용하여 동사 처리기를 표시하세요.'
 ms.date: 08/08/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: dotpaul
 ms.author: paulming
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 96660dfe1de6b4fb2490bd00b7ce408d0548ba67
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 01b290a4e4656aef079b27ce3abb2a66d7adeb75
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954700"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236992"
 ---
 # <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>CA3147: ValidateAntiForgeryToken을 사용하여 동사 처리기를 표시하세요.
 
@@ -24,37 +23,37 @@ ms.locfileid: "53954700"
 |TypeName|MarkVerbHandlersWithValidateAntiForgeryToken|
 |CheckId|CA3147|
 |범주|Microsoft.Security|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 
-ASP.NET MVC 컨트롤러 동작 메서드를 사용 하 여 표시 되지 않습니다 [ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/web-frameworks/dd492108(v=vs.118)), 또는 같은 HTTP 동사를 지정 하는 특성 [HttpGetAttribute](/previous-versions/aspnet/web-frameworks/ee470993(v%3dvs.118)) 또는 [ AcceptVerbsAttribute](/previous-versions/aspnet/web-frameworks/dd470553%28v%3dvs.118%29)합니다.
+ASP.NET MVC 컨트롤러 작업 메서드는 [ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/dd492108(v=vs.118))로 표시 되지 않으며 [Httpgetattribute](/previous-versions/aspnet/ee470993(v%3dvs.118)) 또는 [AcceptVerbsAttribute](/previous-versions/aspnet/dd470553%28v%3dvs.118%29)와 같은 HTTP 동사를 지정 하는 특성으로 표시 되지 않습니다.
 
 ## <a name="rule-description"></a>규칙 설명
 
-ASP.NET MVC 컨트롤러를 디자인할 때 교차 사이트 요청 위조 공격 주의 해야 합니다. 교차 사이트 요청 위조 공격을 ASP.NET MVC 컨트롤러에 인증된 된 사용자를 악성 요청을 보낼 수 있습니다. 자세한 내용은 [ASP.NET MVC 및 웹 페이지에서 XSRF/CSRF 방지](/aspnet/mvc/overview/security/xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages)합니다.
+ASP.NET MVC 컨트롤러를 설계할 때 사이트 간 요청 위조 공격을 염두에 둘 수 있습니다. 교차 사이트 요청 위조 공격은 인증 된 사용자의 악성 요청을 ASP.NET MVC 컨트롤러로 보낼 수 있습니다. 자세한 내용은 [ASP.NET MVC 및 웹 페이지에서 XSRF/CSRF 방지](/aspnet/mvc/overview/security/xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages)를 참조 하세요.
 
-이 규칙에서는 ASP.NET MVC 컨트롤러 작업 메서드 중 하나:
+이 규칙은 ASP.NET MVC 컨트롤러 작업 메서드가 다음 중 하나를 수행 하는지 확인 합니다.
 
-- 있어야 합니다 [ValidateAntiforgeryTokenAttribute](/previous-versions/aspnet/web-frameworks/dd492108%28v%3dvs.118%29) HTTP GET을 포함 하지 않고 허용 된 HTTP 동사를 지정 합니다.
+- HTTP GET을 포함 하지 않고 [ValidateAntiforgeryTokenAttribute](/previous-versions/aspnet/dd492108%28v%3dvs.118%29) 및 허용 되는 http 동사를 지정 합니다.
 
-- 허용 된 동사를로 HTTP GET을 지정 합니다.
+- HTTP GET을 허용 된 동사로 지정 합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 
-- HTTP GET 요청을 처리 하 고 잠재적으로 해로운 부작용이 없는 ASP.NET MVC 컨트롤러 작업에 대 한 추가 [HttpGetAttribute](/previous-versions/aspnet/web-frameworks/ee470993%28v%3dvs.118%29) 방법입니다.
+- HTTP GET 요청을 처리 하 고 잠재적으로 유해한 부작용이 없는 ASP.NET MVC 컨트롤러 작업의 경우에는 메서드에 [Httpgetattribute](/previous-versions/aspnet/ee470993%28v%3dvs.118%29) 를 추가 합니다.
 
-   ASP.NET MVC 컨트롤러 작업이 HTTP GET을 처리 하는 요청 하 고 중요 한 데이터를 수정 하는 등 잠재적으로 해로운 의도 하지 않은 경우 응용 프로그램은 교차 사이트 요청 위조 공격에 취약 합니다.  HTTP POST, PUT 또는 DELETE 요청에만 중요 한 작업을 수행할 수 있도록 응용 프로그램을 다시 디자인 해야 합니다.
+   HTTP GET 요청을 처리 하 고 중요 한 데이터 수정과 같은 잠재적으로 유해한 부작용이 있는 ASP.NET MVC 컨트롤러 작업이 있는 경우 응용 프로그램은 사이트 간 요청 위조 공격에 취약 합니다.  HTTP POST, PUT 또는 DELETE 요청만 중요 한 작업을 수행 하도록 응용 프로그램을 다시 디자인 해야 합니다.
 
-- HTTP POST를 처리 하는 ASP.NET MVC 컨트롤러 작업에 대 한 PUT 또는 DELETE 요청을 추가 [ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/web-frameworks/dd492108(v=vs.118)) 및 허용 되는 HTTP 동사를 지정 하는 속성 ([AcceptVerbsAttribute](/previous-versions/aspnet/web-frameworks/dd470553%28v%3dvs.118%29) 를 [HttpPostAttribute](/previous-versions/aspnet/web-frameworks/ee264023%28v%3dvs.118%29)하십시오 [HttpPutAttribute](/previous-versions/aspnet/web-frameworks/ee470909%28v%3dvs.118%29), 또는 [HttpDeleteAttribute](/previous-versions/aspnet/web-frameworks/ee470917%28v%3dvs.118%29)). 또한를 호출 해야 합니다 [HtmlHelper.AntiForgeryToken()](/previous-versions/aspnet/web-frameworks/dd504812%28v%3dvs.118%29) MVC 뷰 또는 Razor 웹 페이지 메서드. 예를 들어 참조 [edit 메서드를 검사 하 고 뷰 편집](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view)합니다.
+- HTTP POST, PUT 또는 DELETE 요청을 처리 하는 ASP.NET MVC 컨트롤러 작업의 경우 허용 되는 HTTP 동사를 지정 하는 [ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/dd492108(v=vs.118)) 및 특성을 추가 합니다 ([AcceptVerbsAttribute](/previous-versions/aspnet/dd470553%28v%3dvs.118%29), [httppostattribute](/previous-versions/aspnet/ee264023%28v%3dvs.118%29), [ HttpPutAttribute](/previous-versions/aspnet/ee470909%28v%3dvs.118%29)또는 [Httpdeleteattribute](/previous-versions/aspnet/ee470917%28v%3dvs.118%29)). 또한 MVC 뷰 또는 Razor 웹 페이지에서 [AntiForgeryToken ()](/previous-versions/aspnet/dd504812%28v%3dvs.118%29) 메서드를 호출 해야 합니다. 예제는 [편집 메서드 및 편집 보기 검사](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view)를 참조 하세요.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 
-하는 경우이 규칙에서 경고를 표시 하지 않아도 안전 합니다.
+다음 경우에는이 규칙에서 경고를 표시 하지 않는 것이 안전 합니다.
 
-- ASP.NET MVC 컨트롤러 작업에 해로운 파생 작업이 없습니다.
+- ASP.NET MVC 컨트롤러 작업에는 유해한 부작용이 없습니다.
 
-- 응용 프로그램을 다른 방식으로 위조 방지 토큰을 확인합니다.
+- 응용 프로그램은 다른 방식으로 위조 방지 토큰의 유효성을 검사 합니다.
 
 ## <a name="validateantiforgerytoken-attribute-example"></a>ValidateAntiForgeryToken 특성 예제
 

@@ -1,26 +1,25 @@
 ---
 title: 프로젝트 및 NuGet 패키지에 대한 컴파일러 경고 표시 안 함
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: ghogen
+ms.author: ghogen
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f805ce50a94304651aca6dd1379fbbf2f5ecc7b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 764c488b659418dd409a5d83b1efcaac502f1e5e
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060367"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415783"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>방법: 컴파일러 경고 표시 안 함
 
 하나 이상 종류의 컴파일러 경고를 필터링하여 빌드 로그를 정리할 수 있습니다. 예를 들어 빌드 로그 세부 정보 표시를 **일반**, **자세히** 또는 **진단**으로 설정할 때 생성되는 출력 중 일부만 검토할 수 있습니다. 자세한 정도에 대한 자세한 내용은 [방법: 빌드 로그 파일 보기, 저장 및 구성](../ide/how-to-view-save-and-configure-build-log-files.md)을 참조하세요.
 
-## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Visual C# 또는 F#에 대한 특정 경고 표시 안 함 #
+## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Visual C# 또는 F\#에 대한 특정 경고 표시 안 함
 
 **빌드** 속성 페이지를 사용하여 C# 및 F# 프로젝트에 대한 특정 경고를 표시하지 않습니다.
 
@@ -64,7 +63,7 @@ ms.locfileid: "53060367"
 
 1. 메뉴 모음에서 **프로젝트** > **프로젝트 언로드**를 선택합니다.
 
-1. **솔루션 탐색기**에서 프로젝트의 오른쪽 클릭 메뉴 또는 바로 가기 메뉴를 열고 **편집 <ProjectName>.vbproj**를 선택합니다.
+1. **솔루션 탐색기**에서 프로젝트의 오른쪽 클릭 메뉴 또는 바로 가기 메뉴를 열고 **편집 \< ProjectName>.vbproj**를 선택합니다.
 
     XML 프로젝트 파일이 코드 편집기에서 열립니다.
 

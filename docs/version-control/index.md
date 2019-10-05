@@ -4,7 +4,7 @@ title: 버전 제어
 description: Visual Studio에서 버전 제어 시작 가이드
 keywords: VSTS, TFS, 버전 제어
 author: steved0x
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 ms.date: 12/15/2017
 ms.topic: landing-page
@@ -12,21 +12,22 @@ ms.prod: .net-core
 ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
 ms.workload:
 - multiple
-ms.openlocfilehash: 3640fba7d1ca3993841adb94dfdd08bc7d405e9b
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 805fe86fcbebdfeb3747dd593d9abbf0f641212d
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348164"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160018"
 ---
 # <a name="version-control-in-visual-studio"></a>Visual Studio의 버전 제어
 
-버전 제어 시스템을 사용하면 시간에 따른 코드 변경 내용을 추적하는 데 도움이 됩니다. 변경하면 버전 제어 시스템이 파일의 스냅숏을 작성합니다. 버전 제어 시스템에서는 이 스냅숏을 영구 저장하므로 필요할 때 불러올 수 있습니다. Visual Studio는 [Git](/azure/devops/repos/git/index?view=vsts) 및 [TFVC(Team Foundation 버전 제어)](/azure/devops/repos/tfvc/index?view=vsts)를 제공합니다. 두 시스템 중에서 결정하려면 [프로젝트에 대해 올바른 버전 제어 선택](/azure/devops/repos/tfvc/comparison-git-tfvc?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json)을 참조하세요.
+버전 제어 시스템을 사용하면 시간에 따른 코드 변경 내용을 추적하는 데 도움이 됩니다. 변경하면 버전 제어 시스템이 파일의 스냅샷을 작성합니다. 버전 제어 시스템에서는 이 스냅샷을 영구 저장하므로 필요할 때 불러올 수 있습니다. Visual Studio는 [Git](/azure/devops/repos/git/index?view=vsts) 및 [TFVC(Team Foundation 버전 제어)](/azure/devops/repos/tfvc/index?view=vsts)를 제공합니다. 두 시스템 중에서 결정하려면 [프로젝트에 대해 올바른 버전 제어 선택](/azure/devops/repos/tfvc/comparison-git-tfvc?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json)을 참조하세요.
 
 ## <a name="git"></a>Git
 
 Git은 오늘날 가장 일반적으로 사용되는 버전 제어 시스템으로, 빠른 속도로 버전 제어 표준으로 자리잡고 있습니다. Git은 분산 버전 제어 시스템입니다. 즉, 코드의 로컬 사본은 완전한 버전 제어 리포지토리에 해당합니다. 이러한 모든 기능의 로컬 리포지토리 덕분에 오프라인으로 또는 원격으로 쉽게 작업할 수 있습니다. 작업을 로컬로 커밋한 다음 리포지토리 복사본을 서버의 사본과 동기화합니다. 이 패러다임은 클라이언트가 코드의 새 버전을 만들기 전에 서버와 코드를 동기화해야 하는 중앙 집중식 버전 제어와는 다릅니다.
 
+<!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/azure/devops/git/what-is-git">
@@ -35,7 +36,7 @@ Git은 오늘날 가장 일반적으로 사용되는 버전 제어 시스템으�
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_git-mark.svg" />
+                            <img width="48" height="48" alt="Git logo" src="https://docs.microsoft.com/media/common/i_git-mark.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -53,7 +54,7 @@ Git은 오늘날 가장 일반적으로 사용되는 버전 제어 시스템으�
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_git-mark.svg" />
+                            <img width="48" height="48" alt="Git logo" src="https://docs.microsoft.com/media/common/i_git-mark.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -71,7 +72,7 @@ Git은 오늘날 가장 일반적으로 사용되는 버전 제어 시스템으�
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_git-mark.svg" />
+                            <img width="48" height="48" alt="Git logo" src="https://docs.microsoft.com/media/common/i_git-mark.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -96,7 +97,7 @@ TFVC(Team Foundation 버전 제어)는 중앙 집중식 버전 제어 시스템�
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg" />
+                            <img width="48" height="48" alt="Visual Studio logo" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -114,7 +115,7 @@ TFVC(Team Foundation 버전 제어)는 중앙 집중식 버전 제어 시스템�
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg" />
+                            <img width="48" height="48" alt="Visual Studio logo" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -132,7 +133,7 @@ TFVC(Team Foundation 버전 제어)는 중앙 집중식 버전 제어 시스템�
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg" />
+                            <img width="48" height="48" alt="Visual Studio logo" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg" />
                         </div>
                     </div>
                     <div class="cardText">

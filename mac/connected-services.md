@@ -1,25 +1,25 @@
 ---
 title: 연결된 서비스
-description: Mac용 Visual Studio 내에서 모바일 앱에 Azure 데이터 저장소, 인증 및 푸시 알림 추가
+description: Mac용 Visual Studio 내에서 모바일 앱에 Azure 데이터 스토리지, 인증 및 푸시 알림 추가
 ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
-author: conceptdev
-ms.author: crdun
+author: sayedihashimi
+ms.author: sayedha
 ms.date: 11/06/2018
-ms.openlocfilehash: ada47aa3d0cb0d9917404efc2775b843223c6e86
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 34a4344be0e48d41829a7bf7df660a91d4f897b6
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948948"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693082"
 ---
 # <a name="connected-services-walkthrough"></a>연결된 서비스 연습
 
 연결된 서비스 워크플로는 Azure Portal 워크플로를 Mac용 Visual Studio로 가져오므로 서비스를 추가하기 위해 프로젝트를 나갈 필요가 없습니다.
 
-이 연습에서는 클라우드 데이터 저장소, 인증 및 푸시 알림을 플랫폼 간 Xamarin.Forms PCL(이식 가능한 클래스 라이브러리) 응용 프로그램으로 가져오는 Azure 백 엔드 서비스를 추가하는 방법을 보여줍니다.
+이 연습에서는 클라우드 데이터 스토리지, 인증 및 푸시 알림을 플랫폼 간 Xamarin.Forms PCL(이식 가능한 클래스 라이브러리) 애플리케이션으로 가져오는 Azure 백 엔드 서비스를 추가하는 방법을 보여줍니다.
 
 1. 솔루션에서 **연결된 서비스** 노드를 두 번 클릭하여 시작하면 **서비스 갤러리**가 표시됩니다.
-  응용 프로그램 유형에 대한 모든 사용 가능한 서비스 목록입니다. 서비스(예: **Azure App Service를 사용한 모바일 백 엔드**)를 클릭하여 선택합니다.
+  애플리케이션 유형에 대한 모든 사용 가능한 서비스 목록입니다. 서비스(예: **Azure App Service를 사용한 모바일 백 엔드**)를 클릭하여 선택합니다.
 
     [![Mac용 Visual Studio에서 연결된 서비스 노드](media/connected-services-image001-sml.png "Mac용 Visual Studio에서 연결된 서비스 노드")](media/connected-services-image001.png#lightbox)
 
@@ -65,10 +65,10 @@ ms.locfileid: "51948948"
 
 새 서비스에 다음 매개 변수가 필요합니다.
 
--   **앱 서비스 이름** – 계획에 대한 고유 이름/ID
--   **구독** – 서비스에 대한 비용을 지불하기 위해 사용하려는 구독
--   **리소스 그룹** – 프로젝트에 대한 모든 Azure 리소스를 구성하는 방법입니다. 기존 서비스를 사용하거나 새 서비스를 만드는 옵션입니다. 첫 Azure 서비스인 경우 새 서비스를 만듭니다.
--   **서비스 계획** – 위치 및 이를 사용하는 모든 리소스 비용을 결정합니다. 기존 서비스를 사용하거나 새 서비스를 만드는 옵션입니다. 첫 Azure 서비스인 경우 기본 서비스를 사용하거나 무료 계층(F1)에서 새 서비스를 만듭니다.
+- **앱 서비스 이름** – 계획에 대한 고유 이름/ID
+- **구독** – 서비스에 대한 비용을 지불하기 위해 사용하려는 구독
+- **리소스 그룹** – 프로젝트에 대한 모든 Azure 리소스를 구성하는 방법입니다. 기존 서비스를 사용하거나 새 서비스를 만드는 옵션입니다. 첫 Azure 서비스인 경우 새 서비스를 만듭니다.
+- **서비스 계획** – 위치 및 이를 사용하는 모든 리소스 비용을 결정합니다. 기존 서비스를 사용하거나 새 서비스를 만드는 옵션입니다. 첫 Azure 서비스인 경우 기본 서비스를 사용하거나 무료 계층(F1)에서 새 서비스를 만듭니다.
 
 자세한 내용은 [모바일 앱 설명서](/azure/app-service-mobile/)를 참조하세요.
 

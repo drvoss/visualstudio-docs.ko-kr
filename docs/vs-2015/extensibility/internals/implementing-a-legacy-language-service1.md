@@ -1,26 +1,21 @@
 ---
 title: 레거시 언어 Service1 구현 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, managed
 ms.assetid: df638f24-166d-4b80-be82-c9c39ca7a556
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e5c2a258eb573f0f7d685cdb5a1159df29761944
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 20493991d8e0740ca045f041e2ba94cf3735ad1a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436105"
 ---
 # <a name="implementing-a-legacy-language-service"></a>레거시 언어 서비스 구현
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51765020"
  레거시 언어 서비스는 VSPackage의 일부로 구현 됩니다 있지만 MEF 확장을 사용 하는 언어 서비스 기능을 구현 하는 최신 방법입니다. 언어 서비스를 구현 하는 새로운 방법에 대 한 자세한 내용을 참조 하세요 [편집기 및 언어 서비스 확장](../../extensibility/editor-and-language-service-extensions.md)합니다.  
   
 > [!NOTE]
->  편집기를 사용 하 여 새 API 최대한 빨리 시작 하는 것이 좋습니다. 언어 서비스의 성능이 향상 되 고 새 편집기 기능을 활용할 수 있습니다.  
+> 편집기를 사용 하 여 새 API 최대한 빨리 시작 하는 것이 좋습니다. 언어 서비스의 성능이 향상 되 고 새 편집기 기능을 활용할 수 있습니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [레거시 언어 서비스 개요](../../extensibility/internals/legacy-language-service-overview.md)  
@@ -53,4 +48,3 @@ ms.locfileid: "51765020"
   
  [레거시 언어 서비스 기능](../../extensibility/internals/legacy-language-service-features1.md)  
  MPF를 사용 하 여 언어 서비스의 모든 기능을 구현 하려면 수행 해야 하는 정보 항목에 대 한 링크를 제공 합니다.
-

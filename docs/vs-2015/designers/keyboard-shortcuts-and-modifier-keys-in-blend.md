@@ -1,25 +1,20 @@
 ---
 title: Blend의 바로 가기 키 및 보조 키 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: f9ec9724-7571-4777-8ff8-d9be012eae8f
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 96e68794346b32c5117ff06c8e90f05293460203
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: b6da7ef473f279c968c676c768e89a6f1145ae4c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159354"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Blend의 바로 가기 키 및 보조 키
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +40,8 @@ ms.locfileid: "49848568"
 ## <a name="modifier-keys"></a>보조 키  
  일부 바로 가기 키는 연결된 메뉴 항목이 없으므로 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 사용자 인터페이스를 통해 찾을 수 없습니다. 다음 항목에는 도구 동작을 수정하거나 개체 크기 조정 등의 작업을 수정하는 바로 가기가 나와 있습니다.  
   
--   [아트보드 보조 키](../designers/artboard-modifier-keys-in-blend.md)  
+- [아트보드 보조 키](../designers/artboard-modifier-keys-in-blend.md)  
   
--   [펜 도구 보조 키](../designers/pen-tool-modifier-keys-in-blend.md)  
+- [펜 도구 보조 키](../designers/pen-tool-modifier-keys-in-blend.md)  
   
--   [직접 선택 도구 보조 키](../designers/direct-selection-tool-modifier-keys-in-blend.md)
-
-
-
+- [직접 선택 도구 보조 키](../designers/direct-selection-tool-modifier-keys-in-blend.md)

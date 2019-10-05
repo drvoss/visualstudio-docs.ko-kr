@@ -1,5 +1,5 @@
 ---
-title: '연습: 비즈니스 데이터를 사용 하 여 SharePoint에 외부 목록 만들기 | Microsoft Docs'
+title: 비즈니스 데이터를 사용 하 여 SharePoint에서 외부 목록 만들기
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,17 +14,17 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], entity backed list
 - Business Data Connectivity service [SharePoint development in Visual Studio], entity backed list
 - Business Data Connectivity service [SharePoint development in Visual Studio], external list
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 96c52d1d30444aa557465ce2022a3ef1db4c3de0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cf9c7d13e6aaac85d3bac4254247a3c07b39b5c3
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918786"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401063"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>연습: 비즈니스 데이터를 사용 하 여 SharePoint에 외부 목록 만들기
 
@@ -70,13 +70,13 @@ ms.locfileid: "53918786"
 
      **새 항목 추가** 대화 상자가 열립니다.
 
-8. 에 **템플릿을** 창 선택 **비즈니스 데이터 연결 모델 (팜 솔루션만 해당)**, 프로젝트 이름을 **adventureworkscontacts로 지정한**를 선택한 다음 합니다 **추가** 단추입니다.
+8. 에 **템플릿을** 창 선택 **비즈니스 데이터 연결 모델 (팜 솔루션만 해당)** , 프로젝트 이름을 **adventureworkscontacts로 지정한**를 선택한 다음 합니다 **추가** 단추입니다.
 
 ## <a name="add-data-access-classes-to-the-project"></a>데이터 액세스 클래스를 프로젝트에 추가
 
 1. 메뉴 모음에서 선택 **도구가** > **데이터베이스에 연결**합니다.
 
-     합니다 **연결 추가** 대화 상자가 열립니다.
+     **연결 추가** 대화 상자가 열립니다.
 
 2. SQL Server AdventureWorks 샘플 데이터베이스에 대 한 연결을 추가 합니다.
 
@@ -276,7 +276,7 @@ Specificfinder 메서드를 사용 하 여 연락처 엔터티를 추가 합니�
 
 ## <a name="see-also"></a>참고자료
 
-[비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)  
-[비즈니스 데이터 연결 모델 만들기](../sharepoint/creating-a-business-data-connectivity-model.md)  
-[BDC 모델 디자인 도구 개요](../sharepoint/bdc-model-design-tools-overview.md)  
-[SharePoint 비즈니스 데이터 통합](../sharepoint/integrating-business-data-into-sharepoint.md)
+[비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)
+[비즈니스 데이터 연결 모델 만들기](../sharepoint/creating-a-business-data-connectivity-model.md)
+[BDC 모델 디자인 도구 개요](../sharepoint/bdc-model-design-tools-overview.md) 
+ [ SharePoint 비즈니스 데이터 통합](../sharepoint/integrating-business-data-into-sharepoint.md)

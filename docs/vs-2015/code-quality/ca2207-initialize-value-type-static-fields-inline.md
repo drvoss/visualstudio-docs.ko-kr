@@ -1,14 +1,9 @@
 ---
-title: 'CA2207: 값 형식 정적 필드를 인라인으로 초기화 하십시오. | Microsoft Docs'
-ms.custom: ''
+title: 'CA2207: 값 형식 정적 필드를 인라인으로 초기화 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - InitializeValueTypeStaticFieldsInline
 - CA2207
@@ -20,14 +15,14 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d2833e14c941ae4d2ac6c16f8f5abf625f430de9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4f8bc843dc20df03ddf38a7506342addb6477297
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142526"
 ---
-# <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207: 값 형식 정적 필드를 인라인으로 초기화하십시오.
+# <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207: 값 형식 정적 필드 인라인을 초기화하십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -52,7 +47,4 @@ ms.locfileid: "49890601"
  이 규칙에서는 경고를 표시해야 합니다.
 
 ## <a name="related-rules"></a>관련된 규칙
- [CA1810: 참조 형식 정적 필드를 인라인으로 초기화하십시오.](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)
-
-
-
+ [CA1810: 참조 형식 정적 필드를 인라인으로 초기화](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)

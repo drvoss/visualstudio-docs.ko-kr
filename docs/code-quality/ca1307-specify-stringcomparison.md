@@ -1,7 +1,6 @@
 ---
 title: 'CA1307: StringComparison 지정하세요.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1307
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9b0d5e71-1683-4a0d-bc4a-68b2fbd8af71
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1a4ac50cd189368bcc59aaff6b02b6f4b639a6b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e352eea1b7fcf82cb948315affeae6e30690a4aa
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908933"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234967"
 ---
 # <a name="ca1307-specify-stringcomparison"></a>CA1307: StringComparison 지정하세요.
 
@@ -29,21 +28,21 @@ ms.locfileid: "53908933"
 |TypeName|SpecifyStringComparison|
 |CheckId|CA1307|
 |범주|Microsoft.Globalization|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
- 문자열 비교 작업을 설정 하지 않는 메서드 오버 로드를 사용 하는 <xref:System.StringComparison> 매개 변수입니다.
+문자열 비교 작업에서 매개 변수를 <xref:System.StringComparison> 설정 하지 않는 메서드 오버 로드를 사용 합니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 대부분의 문자열 작업에 가장 중요 한는 <xref:System.String.Compare%2A> 및 <xref:System.String.Equals%2A> 받아들이는 오버 로드를 제공 하는 메서드를 <xref:System.StringComparison> 열거형 값을 매개 변수로 합니다.
+대부분의 문자열 작업, 및 <xref:System.String.Compare%2A> <xref:System.String.Equals%2A> 메서드는 열거형 값을 <xref:System.StringComparison> 매개 변수로 허용 하는 오버 로드를 제공 합니다.
 
- 때마다는 오버 로드가 있으면 해당 사용을 <xref:System.StringComparison> 매개 변수를이 매개 변수를 사용 하지 않는 오버 로드 하는 대신 사용 해야 합니다. 이 매개 변수를 명시적으로 설정 하 여 코드 경우가 보다 명확 해지고 더 쉬워진 유지 관리 합니다.
+<xref:System.StringComparison> 매개 변수를 사용 하는 오버 로드가 있으면이 매개 변수를 사용 하지 않는 오버 로드 대신이 오버 로드를 사용 해야 합니다. 이 매개 변수를 명시적으로 설정 하 여 코드를 더 명확 하 고 유지 관리 하는 경우가 많습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하는 오버 로드를 문자열 비교 메서드를 변경 합니다 <xref:System.StringComparison> 열거형을 매개 변수로 합니다. 예를 들어: 변경 `String.Compare(str1, str2)` 에 `String.Compare(str1, str2, StringComparison.Ordinal)`입니다.
+이 규칙 위반 문제를 해결 하려면 <xref:System.StringComparison> 열거형을 매개 변수로 허용 하는 오버 로드에 대 한 문자열 비교 메서드를 변경 합니다. 예:을로 `String.Compare(str1, str2)` `String.Compare(str1, str2, StringComparison.Ordinal)`변경 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
- 라이브러리 또는 응용 프로그램은 제한 된 로컬 사용자 이며 따라서 지역화 되지 않을 때이 규칙에서 경고를 표시 하지 않으려면 안전 합니다.
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
+라이브러리나 응용 프로그램이 제한 된 로컬 사용자를 대상으로 하는 경우에는이 규칙에서 경고를 표시 하지 않는 것이 안전 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

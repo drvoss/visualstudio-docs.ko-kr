@@ -2,7 +2,6 @@
 title: IRemoteDebugApplicationEvents::OnSetName | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d794665e02bd1280fe2a404e56e96ab1290a413f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7cf72bb02a1ef934fcbf6a4fa32c9572a6e1afa7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788434"
 ---
 # <a name="iremotedebugapplicationeventsonsetname"></a>IRemoteDebugApplicationEvents::OnSetName
 설정 이름 이벤트를 처리합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT OnSetName(  
    LPCOLESTR  pstrName  
 );  

@@ -1,14 +1,9 @@
 ---
 title: UML 모델 및 다이어그램 확장 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending
 - UML model, extending
@@ -16,20 +11,20 @@ ms.assetid: b5bfa61e-ea59-4c3b-b5af-53475d7d13cd
 caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 74f3c518682997dca57a630c6f084437f7175d80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 917c88056709cfbeb89ce3f19d9c8da9866feb4e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182864"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>UML 모델 및 다이어그램 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 항목에서는 Visual Studio와 함께 제공된 UML 모델링 도구를 확장할 수 있는 다양한 방법을 간략하게 설명합니다. 각 모델 유형 및 도구를 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.  
   
- 다음 예제 시나리오에서 Fabrikam은 공항 수하물 처리 시스템을 설계 및 설치합니다. 공항 프로젝트 간에는 기본 장비 및 장비를 제어하는 소프트웨어에 많은 공통점이 있습니다. 그러나 컨베이어 벨트, 체크인 데스크, 저장 창고, 기타 가방 처리 장비와 같은 여러 가지 요소가 크게 달라질 수 있습니다.  
+ 다음 예제 시나리오에서 Fabrikam은 공항 수하물 처리 시스템을 설계 및 설치합니다. 공항 프로젝트 간에는 기본 장비 및 장비를 제어하는 소프트웨어에 많은 공통점이 있습니다. 그러나 컨베이어 벨트, 체크인 데스크, 스토리지 창고, 기타 가방 처리 장비와 같은 여러 가지 요소가 크게 달라질 수 있습니다.  
   
  새 프로젝트를 시작할 때 Fabrikam 팀은 팀 내에서, 그리고 고객과 함께 이러한 요구 사항을 논의하는 데 도움이 되는 UML 모델을 만듭니다. 팀에서는 동작 다이어그램을 사용하여 가방 흐름을 표시하고 개체 노드를 사용하여 각 장비를 표시합니다. UML 모델은 시스템 코드를 직접 나타내지 않습니다.  
   
@@ -37,11 +32,11 @@ ms.locfileid: "51794766"
   
  자세한 내용은이 비디오를 참조 하세요. ![비디오 링크](../data-tools/media/playvideo.gif "PlayVideo")[MSDN 어떻게 할까요? 시리즈: UML 도구 및 확장성](http://go.microsoft.com/fwlink/?LinkId=214467)합니다.  
   
-##  <a name="Requirements"></a> 요구 사항  
+## <a name="Requirements"></a> 요구 사항  
   
--   [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+- [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
--   [Visual Studio 2015용 SDK 모델링](http://www.microsoft.com/download/details.aspx?id=48148).  
+- [Visual Studio 2015용 SDK 모델링](http://www.microsoft.com/download/details.aspx?id=48148).  
   
 ## <a name="profiles"></a>프로필  
  프로필을 통해 UML 요소에 대한 스테레오타입 및 추가 속성을 정의할 수 있습니다.  
@@ -58,7 +53,7 @@ ms.locfileid: "51794766"
 ## <a name="validation"></a>유효성 검사  
  UML 모델이 지정된 제약 조건을 준수하는지 확인하는 규칙을 정의할 수 있습니다.  
   
- Fabrikam의 도구 개발자는 팀 멤버가 수하물 처리 모델에서 단순한 실수를 피하도록 도와주는 규칙을 정의합니다. 예를 들어 체크인 데스크를 저장 창고에 직접 연결할 수 없습니다. 체크인 데스크와 저장 창고 사이에 적어도 컨베이어 벨트가 있어야 합니다.  
+ Fabrikam의 도구 개발자는 팀 멤버가 수하물 처리 모델에서 단순한 실수를 피하도록 도와주는 규칙을 정의합니다. 예를 들어 체크인 데스크를 스토리지 창고에 직접 연결할 수 없습니다. 체크인 데스크와 저장 창고 사이에 적어도 컨베이어 벨트가 있어야 합니다.  
   
  자세한 내용은 [UML 모델에 대 한 유효성 검사 제약 조건 정의](../modeling/define-validation-constraints-for-uml-models.md)합니다.  
   
@@ -70,7 +65,7 @@ ms.locfileid: "51794766"
  참조 [모델링 다이어그램의 메뉴 명령 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md)합니다.  
   
 ## <a name="gestures"></a>제스처  
- 사용자가 다이어그램 요소를 두 번 클릭하거나 다이어그램 또는 다이어그램의 요소로 끌어서 사용자가 시작하는 명령을 정의할 수 있습니다. 다른 UML 다이어그램, Visual Studio의 다른 부분 또는 다른 응용 프로그램이나 Windows 탐색기(또는 파일 탐색기)에서 끌어 놓은 항목을 처리할 수 있는 명령을 정의할 수 있습니다.  
+ 사용자가 다이어그램 요소를 두 번 클릭하거나 다이어그램 또는 다이어그램의 요소로 끌어서 사용자가 시작하는 명령을 정의할 수 있습니다. 다른 UML 다이어그램, Visual Studio의 다른 부분 또는 다른 애플리케이션이나 Windows 탐색기(또는 파일 탐색기)에서 끌어 놓은 항목을 처리할 수 있는 명령을 정의할 수 있습니다.  
   
  Fabrikam 팀 멤버는 Windows 바탕 화면에서 끌어서 사양과 같은 파일을 모델 요소와 연결할 수 있습니다. 도구 개발자는 요소에 파일 경로 속성을 제공하는 스테레오타입과 파일을 요소에 놓을 때 스테레오타입과 파일 경로를 설정하는 제스처를 정의했습니다.  
   
@@ -105,7 +100,7 @@ ms.locfileid: "51794766"
  자세한 내용은 [작업 항목 링크 처리기 정의](../modeling/define-a-work-item-link-handler.md)합니다.  
   
 ## <a name="tools-that-update-models"></a>모델을 업데이트하는 도구  
- UML 모델을 로드할 수 있는 독립 실행형 응용 프로그램 및 Visual Studio 확장을 만들 수 있습니다.  
+ UML 모델을 로드할 수 있는 독립 실행형 애플리케이션 및 Visual Studio 확장을 만들 수 있습니다.  
   
  Fabrikam의 개발자는 모델을 읽고 각 모델 요소의 작업 진행에 대한 보고서를 생성하는 도구를 만듭니다.  
   
@@ -118,7 +113,7 @@ ms.locfileid: "51794766"
   
 |**범주**|**링크**|  
 |------------------|---------------|  
-|**비디오**|![비디오 링크](../data-tools/media/playvideo.gif "PlayVideo") [MSDN 어떻게 할까요? 시리즈: UML 도구 및 확장성](http://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![비디오 링크](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Visual Studio를 사용한 UML](http://go.microsoft.com/fwlink/?LinkId=199957)|  
+|**비디오**|![비디오 링크](../data-tools/media/playvideo.gif "PlayVideo") [MSDN 어떻게 할까요? 시리즈: UML 도구 및 확장성](http://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![비디오 링크](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Visual Studio 사용한 UML](http://go.microsoft.com/fwlink/?LinkId=199957)|  
 |**포럼**|-   [Visual Studio 시각화 및 모델링 도구](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio 시각화 및 모델링 SDK(DSL 도구)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
 |**Blogs**|[Visual Studio ALM + Team Foundation Server 블로그](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**기술 문서 및 저널**|[MSDN 아키텍처 센터](http://go.microsoft.com/fwlink/?LinkId=201343)|  
@@ -126,6 +121,3 @@ ms.locfileid: "51794766"
 ## <a name="see-also"></a>참고 항목  
  [앱 용 모델 만들기](../modeling/create-models-for-your-app.md)   
  [UML 모델링 확장성을 위한 API 참조](../modeling/api-reference-for-uml-modeling-extensibility.md)
-
-
-

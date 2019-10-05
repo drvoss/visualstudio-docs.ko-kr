@@ -1,13 +1,8 @@
 ---
 title: 디버거의 식 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
@@ -31,13 +26,13 @@ ms.assetid: 70f9b531-44c7-4d77-980d-5eddbf2bff41
 caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cf75965a9be7c8e2a9a09cc43fa6eec632d6bf90
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 3999737a2fad04c9b513722ae11608574a72c410
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722227"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158491"
 ---
 # <a name="expressions-in-the-debugger"></a>디버거에서 사용하는 식
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,8 +94,8 @@ int main()
   
 ```  
   
-###  <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> 디버거 내장 함수를 사용하여 상태 유지  
- 디버거 내장 함수는 응용 프로그램의 상태를 변경하지 않고 식에서 특정 C/C++ 함수를 호출하는 방법을 제공합니다.  
+### <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> 디버거 내장 함수를 사용하여 상태 유지  
+ 디버거 내장 함수는 애플리케이션의 상태를 변경하지 않고 식에서 특정 C/C++ 함수를 호출하는 방법을 제공합니다.  
   
  디버거 내장 함수의 특징은 다음과 같습니다.  
   
@@ -123,15 +118,15 @@ int main()
   
 ## <a name="ccli---unsupported-expressions"></a>C++/CLI - 지원되지 않는 식  
   
--   포인터와 관련된 캐스트 또는 사용자 정의 캐스트는 지원되지 않습니다.  
+- 포인터와 관련된 캐스트 또는 사용자 정의 캐스트는 지원되지 않습니다.  
   
--   개체 비교 및 할당은 지원되지 않습니다.  
+- 개체 비교 및 할당은 지원되지 않습니다.  
   
--   오버로드된 연산자 및 오버로드된 함수는 지원되지 않습니다.  
+- 오버로드된 연산자 및 오버로드된 함수는 지원되지 않습니다.  
   
--   boxing 및 unboxing은 지원되지 않습니다.  
+- boxing 및 unboxing은 지원되지 않습니다.  
   
--   `Sizeof` 연산자는 지원되지 않습니다.  
+- `Sizeof` 연산자는 지원되지 않습니다.  
   
 ## <a name="c---unsupported-expressions"></a>C# - 지원되지 않는 식  
   
@@ -140,19 +135,19 @@ int main()
   
  동적 개체의 다음 기능은 지원되지 않습니다.  
   
--   복합 연산자 `+=`, `-=`, `%=`, `/=`및 `*=`  
+- 복합 연산자 `+=`, `-=`, `%=`, `/=`및 `*=`  
   
--   숫자 캐스트 및 형식 인수 캐스트를 비롯한 다양한 캐스트  
+- 숫자 캐스트 및 형식 인수 캐스트를 비롯한 다양한 캐스트  
   
--   세 개 이상의 인수가 있는 메서드 호출  
+- 세 개 이상의 인수가 있는 메서드 호출  
   
--   세 개 이상의 인수가 있는 속성 getter  
+- 세 개 이상의 인수가 있는 속성 getter  
   
--   여러 인수가 있는 속성 setter  
+- 여러 인수가 있는 속성 setter  
   
--   인덱서에 할당  
+- 인덱서에 할당  
   
--   부울 연산자 `&&` 및 `||`  
+- 부울 연산자 `&&` 및 `||`  
   
 ### <a name="anonymous-methods"></a>무명 메서드  
  새 무명 메서드 만들기는 지원되지 않습니다.  
@@ -164,19 +159,19 @@ int main()
   
  동적 개체의 다음 기능은 지원되지 않습니다.  
   
--   복합 연산자 `+=`, `-=`, `%=`, `/=`및 `*=`  
+- 복합 연산자 `+=`, `-=`, `%=`, `/=`및 `*=`  
   
--   숫자 캐스트 및 형식 인수 캐스트를 비롯한 다양한 캐스트  
+- 숫자 캐스트 및 형식 인수 캐스트를 비롯한 다양한 캐스트  
   
--   세 개 이상의 인수가 있는 메서드 호출  
+- 세 개 이상의 인수가 있는 메서드 호출  
   
--   세 개 이상의 인수가 있는 속성 getter  
+- 세 개 이상의 인수가 있는 속성 getter  
   
--   여러 인수가 있는 속성 setter  
+- 여러 인수가 있는 속성 setter  
   
--   인덱서에 할당  
+- 인덱서에 할당  
   
--   부울 연산자 `&&` 및 `||`  
+- 부울 연산자 `&&` 및 `||`  
   
 ### <a name="local-constants"></a>지역 상수  
  지역 상수는 지원되지 않습니다.  
@@ -189,43 +184,38 @@ int main()
   
 ### <a name="unsupported-keywords"></a>지원되지 않는 키워드  
   
--   `AddressOf`  
+- `AddressOf`  
   
--   `End`  
+- `End`  
   
--   `Error`  
+- `Error`  
   
--   `Exit`  
+- `Exit`  
   
--   `Goto`  
+- `Goto`  
   
--   `On Error`  
+- `On Error`  
   
--   `Resume`  
+- `Resume`  
   
--   `Return`  
+- `Return`  
   
--   `Select/Case`  
+- `Select/Case`  
   
--   `Stop`  
+- `Stop`  
   
--   `SyncLock`  
+- `SyncLock`  
   
--   `Throw`  
+- `Throw`  
   
--   `Try/Catch/Finally`  
+- `Try/Catch/Finally`  
   
--   `With`  
+- `With`  
   
--   `End Sub` 또는 `Module`과 같은 네임스페이스 또는 모듈 수준 키워드  
+- `End Sub` 또는 `Module`과 같은 네임스페이스 또는 모듈 수준 키워드  
   
 ## <a name="see-also"></a>참고 항목  
- [C + +의 형식 지정자](../debugger/format-specifiers-in-cpp.md)   
+ [C++의 형식 지정자](../debugger/format-specifiers-in-cpp.md)   
  [Context Operator (C++)](../debugger/context-operator-cpp.md)   
  [C#의 형식 지정자](../debugger/format-specifiers-in-csharp.md)   
  [의사 변수](../debugger/pseudovariables.md)
-
-
-
-
-

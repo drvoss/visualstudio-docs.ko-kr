@@ -8,20 +8,18 @@ manager: routlaw
 ms.date: 11/13/2017
 ms.topic: tutorial
 ms.devlang: python
-ms.service: multiple
-ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c84fbb3001bffb93d6c06f383551c073461419b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: adb3720f1624f355b99d75bfe446fafab1c5e0ae
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911345"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62427572"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>클라우드에서 TensorFlow 모델 학습
 
-이 자습서에서는 Azure [심층 학습](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview) 가상 머신에서 [MNIST 데이터 집합](http://yann.lecun.com/exdb/mnist/)을 사용하여 TensorFlow 모델을 학습합니다.
+이 자습서에서는 Azure [심층 학습](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview) 가상 머신에서 [MNIST 데이터 세트](http://yann.lecun.com/exdb/mnist/)를 사용하여 TensorFlow 모델을 학습합니다.
 
 MNIST 데이터베이스에는 60,000개의 학습 예제 집합과 직접 작성한 10,000개의 테스트 예제 집합이 있습니다.
 

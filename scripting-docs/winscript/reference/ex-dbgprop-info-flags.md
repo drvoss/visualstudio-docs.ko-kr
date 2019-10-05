@@ -1,8 +1,7 @@
 ---
-title: EX_DBGPROP_INFO_FLAGS | Microsoft 문서
+title: EX_DBGPROP_INFO_FLAGS | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e66ff43cd51977bf0c23ca0e024a2e05b53f5022
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 086a2b7544a95a302219ddc62c15c5b31dd1d9b6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955238"
 ---
 # <a name="exdbgpropinfoflags"></a>EX_DBGPROP_INFO_FLAGS
 지정 하는 데 `ExtendedDebugPropertyInfo` 필드입니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 enum {  
    EX_DBGPROP_INFO_ID  =0x0100,  
    EX_DBGPROP_INFO_NTYPE  =0x0200,  

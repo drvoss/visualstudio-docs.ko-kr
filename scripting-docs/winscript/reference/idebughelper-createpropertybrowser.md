@@ -2,7 +2,6 @@
 title: IDebugHelper::CreatePropertyBrowser | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f728068b6d1db6fe70a084ae680f32a78a0a2760
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4fc1e4365deea4a3981d9cf457a2c0af37edcd43
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979255"
 ---
 # <a name="idebughelpercreatepropertybrowser"></a>IDebugHelper::CreatePropertyBrowser
-속성 브라우저를 래핑하는 VARIANT를 반환 합니다.  
+VARIANT를 래핑하는 속성 브라우저를 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT CreatePropertyBrowser(  
    VARIANT*                  pvar,  
    LPCOLESTR                 bstrName,  
@@ -41,13 +40,13 @@ HRESULT CreatePropertyBrowser(
   
 #### <a name="parameters"></a>매개 변수  
  `pvar`  
- [in] 찾아보려면 루트 variant입니다.  
+ [in] 이동할 루트 variant입니다.  
   
  `bstrName`  
- [in] 루트 부여할 이름입니다.  
+ [in] 루트를 지정할 이름입니다.  
   
  `pdat`  
- [in] 스레드가 요청 속성입니다. 이 매개 변수가 NULL 이면 없습니다 마샬링 수행 됩니다.  
+ [in] 속성을 요청 하는 스레드입니다. 이 매개 변수가 NULL 이면 없습니다 마샬링을 수행 됩니다.  
   
  `ppdob`  
  [out] 속성 브라우저입니다.  

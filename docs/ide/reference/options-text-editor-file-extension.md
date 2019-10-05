@@ -1,8 +1,6 @@
 ---
 title: 옵션, 텍스트 편집기, 파일 확장명
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.File_Extension
@@ -14,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 05298fc5-fc4e-4bb2-b942-1f7d2dcdff0f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05fce2fd1735e1bed7f528467a1c32f399a9ce22
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 13c79a4cae482990369fc8218bf0b7226ab05942
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389042"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919053"
 ---
 # <a name="options-text-editor-file-extension"></a>옵션, 텍스트 편집기, 파일 확장명
 
@@ -38,7 +36,7 @@ ms.locfileid: "52389042"
 
 **편집기**
 
- 이 파일 확장명을 가진 문서가 열릴 IDE 편집기 또는 디자이너를 선택합니다. “ncoding 사용” 옵션을 선택하면 해당 문서를 열 때마다 인코딩 체계를 선택할 수 있는 대화 상자가 표시됩니다.
+이 파일 확장명을 가진 문서가 열릴 IDE 편집기 또는 디자이너를 선택합니다. “ncoding 사용” 옵션을 선택하면 해당 문서를 열 때마다 인코딩 체계를 선택할 수 있는 대화 상자가 표시됩니다.
 
 **추가**
 

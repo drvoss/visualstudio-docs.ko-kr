@@ -2,7 +2,6 @@
 title: 'Ienumjsstackframes:: Next 메서드 | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,19 +15,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e2068bd130e7eb03747b89e2ba107019aa1cd458
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 94e3f478654fadec152aba0690a5474ebbfe02f5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963301"
 ---
 # <a name="ienumjsstackframesnext-method"></a>IEnumJsStackFrames::Next 메서드
 지정 된 프레임 수를 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT Next(  
    ULONG cFrameCount,  
    JS_NATIVE_FRAME *pFrames,  
@@ -38,13 +37,13 @@ HRESULT Next(
   
 #### <a name="parameters"></a>매개 변수  
  `cFrameCount`  
- [in] 가져올 프레임 수를 지정 합니다.  
+ [in] 가져올 프레임의 수입니다.  
   
  `pFrames`  
- [out] 프레임을 저장할 배열입니다.  
+ [out] 프레임을 저장 하는 배열입니다.  
   
  `pcFetched`  
- [out] 프레임 수가 반환 됩니다.  
+ [out] 반환 된 프레임 수입니다.  
   
 ## <a name="return-value"></a>반환 값  
   

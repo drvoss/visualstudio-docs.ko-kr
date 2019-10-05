@@ -13,17 +13,17 @@ helpviewer_keywords:
 - performance testing [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, performance testing
 - profiling [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8578a27dc6daceda25667142a3cdccae50a42552
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b59a3de88403300a46b7992a2dad72e3d6b59e0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563327"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>SharePoint 응용 프로그램의 성능을 프로 파일링
 
@@ -66,7 +66,7 @@ Visual Studio에서 부하 테스트 및 웹 성능 테스트를 만들어 응�
 |[코드 단위 테스트](../test/unit-test-your-code.md)|단위 테스트를 사용 하 여 코드에서 논리 오류를 찾는 방법을 설명 합니다.|
 |[코딩된 UI 테스트를 사용하여 SharePoint 2010 애플리케이션 테스트](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md)|SharePoint 응용 프로그램의 사용자 인터페이스를 테스트 하는 방법에 설명 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [SharePoint 솔루션 빌드 및 디버그](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [코드 품질 향상](../test/improve-code-quality.md)

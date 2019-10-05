@@ -1,14 +1,9 @@
 ---
 title: 오류 작업 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Error
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: e96a90ee-a8ae-4e5b-8ef2-b5cf5fedd8b2
 caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ff957a54c27c4ae4860e31e4fb7001b7f831ab3a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b220d12b872a81cba5f46bd14fdebafaa58cf4a1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201806"
 ---
 # <a name="error-task"></a>오류 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 빌드를 중지하고 평가된 조건부 문에 따라 오류를 기록합니다.  
   
 ## <a name="parameters"></a>매개 변수  
@@ -54,7 +48,7 @@ ms.locfileid: "49212721"
   
  이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)를 참조하세요.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  다음 코드 예제는 모든 필수 속성이 설정되었는지 확인합니다. 설정되지 않은 경우 프로젝트에서는 오류 이벤트를 발생시키고 `Error` 작업의 `Text` 매개 변수 값을 기록합니다.  
   
 ```  
@@ -74,6 +68,3 @@ ms.locfileid: "49212721"
 ## <a name="see-also"></a>참고 항목  
  [작업 참조](../msbuild/msbuild-task-reference.md)   
  [빌드 로그 가져오기](../msbuild/obtaining-build-logs-with-msbuild.md)
-
-
-

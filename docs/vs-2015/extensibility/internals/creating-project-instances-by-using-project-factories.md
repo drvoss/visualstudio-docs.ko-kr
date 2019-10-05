@@ -1,27 +1,22 @@
 ---
 title: 프로젝트 팩터리를 사용 하 여 프로젝트 인스턴스 만들기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project factories
 - projects [Visual Studio SDK], project factories
 ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 358c13bdc8bc312a479b9c316fa516ad68b10630
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f26b11aaf74b73535c82ebcd6422f3be0bba3f22
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736253"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697210"
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>프로젝트 팩터리를 사용하여 프로젝트 인스턴스 만들기
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51736253"
   
  구현할 수는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> 프로젝트에서 클래스에 인터페이스입니다. 일반적으로 자체 모듈에 상주합니다.  
   
- 구현 예는 `IVsProjectFactory` PrjFac.cpp에 포함 된 내용은 인터페이스를 [기본 프로젝트](http://msdn.microsoft.com/en-us/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) 샘플 디렉터리.  
+ 구현 예는 `IVsProjectFactory` PrjFac.cpp에 포함 된 내용은 인터페이스를 [기본 프로젝트](https://msdn.microsoft.com/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) 샘플 디렉터리.  
   
  소유자에 의해 집계 되 고 지 원하는 프로젝트에는 해당 프로젝트 파일의 소유자 키를 유지 해야 합니다. 경우는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> 메서드는 프로젝트 소유자 키로, 소유 프로젝트 변환 해당 소유자 키 GUID를 호출 하는 프로젝트 팩터리는 `CreateProject` 이 프로젝트 팩터리에서 실제 생성 작업을 수행 하는 메서드.  
   
@@ -58,4 +53,3 @@ ms.locfileid: "51736253"
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes>   
  [검사 목록: 새 프로젝트 형식 만들기](../../extensibility/internals/checklist-creating-new-project-types.md)
-

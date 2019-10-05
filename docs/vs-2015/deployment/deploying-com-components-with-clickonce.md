@@ -1,14 +1,9 @@
 ---
 title: ClickOnce 사용 하 여 COM 구성 요소 배포 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,22 +18,22 @@ ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 8f4412c067ffd43a14a62cc722cf60ca1a883d9f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 282945f473f2799b92b24321383190ca38557cbc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820293"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422767"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>ClickOnce를 사용하여 COM 구성 요소 배포
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 일반적으로 기존 COM 구성 요소의 배포는 어려운 작업 이었습니다. 구성 요소는 전역으로 등록 해야 하 고 따라서 겹치는 응용 프로그램 간에 원치 않는 부작용을 일으킬 수 있습니다. 이 이런 아니므로 일반적으로.NET Framework 응용 프로그램에서 문제가 구성 요소는 응용 프로그램에 완전히 격리 또는 side-by-side-호환 됩니다. Visual Studio를 사용 하면 Windows XP 또는 더 높은 운영 체제에서 격리 된 COM 구성 요소를 배포할 수 있습니다.  
   
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] .NET 응용 프로그램을 배포 하는 쉽고 안전한 메커니즘을 제공 합니다. 그러나 레거시 COM 구성 요소를 사용 하는 응용 프로그램을 배포 하는 것에 대 한 추가 단계를 수행 해야 합니다. 이 항목에서는 격리 된 COM 구성 요소를 배포 하 고 (예를 들어, Visual Basic 6.0 또는 Visual c + +)에서 네이티브 구성 요소를 참조 하는 방법을 설명 합니다.  
+ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] .NET 응용 프로그램을 배포 하는 쉽고 안전한 메커니즘을 제공 합니다. 그러나 레거시 COM 구성 요소를 사용 하는 응용 프로그램을 배포 하는 것에 대 한 추가 단계를 수행 해야 합니다. 이 항목에서는 격리 된 COM 구성 요소를 배포 하 고 기본 구성 요소를 참조 하는 방법에 설명 합니다 (Visual Basic 6.0 또는 시각적 개체에서 예를 들어, C++).  
   
- 격리 된 COM 구성 요소를 배포 하는 방법에 대 한 자세한 내용은 참조 하세요. "를 사용한 앱 배포 단순화 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 및 등록이 필요 없는 COM" 언제 [ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx)합니다.  
+ 격리 된 COM 구성 요소를 배포 하는 방법에 대 한 자세한 내용은 참조 하세요. "를 사용한 앱 배포 단순화 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 및 등록이 필요 없는 COM" 언제 [ https://msdn.microsoft.com/magazine/msdn-magazine-issues.aspx ](https://msdn.microsoft.com/magazine/msdn-magazine-issues.aspx)합니다.  
   
 ## <a name="registration-free-com"></a>등록이 필요 없는 COM  
  등록이 필요 없는 COM 배포 및 격리 된 COM 구성 요소를 활성화를 위한 새로운 기술 됩니다. 일반적으로 매니페스트 라는 XML 파일로 시스템 레지스트리에 설치 되어 있는 등록 정보와 모든 구성 요소의 형식 라이브러리에 넣어 작동 하는지는 응용 프로그램과 동일한 폴더에 저장 합니다.  
@@ -54,9 +49,9 @@ ms.locfileid: "49820293"
   
  두 가지는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] COM 구성 요소를 배포 합니다.  
   
--   부트스트래퍼를 사용 하 여 COM 구성 요소; 배포 이 지원 되는 모든 플랫폼에서 작동합니다.  
+- 부트스트래퍼를 사용 하 여 COM 구성 요소; 배포 이 지원 되는 모든 플랫폼에서 작동합니다.  
   
--   기본 구성 요소 격리 (라고도: 등록이 필요 없는 COM) 배포를 사용 합니다. 그러나 Windows XP 또는 더 높은 운영 체제에서이 작동 하는 것은 합니다.  
+- 기본 구성 요소 격리 (라고도: 등록이 필요 없는 COM) 배포를 사용 합니다. 그러나 Windows XP 또는 더 높은 운영 체제에서이 작동 하는 것은 합니다.  
   
 ### <a name="example-of-isolating-and-deploying-a-simple-com-component"></a>격리 및 간단한 COM 구성 요소 배포의 예  
  등록이 필요 없는 COM 구성 요소 배포를 보여주려면이 예제에서는 격리 된 네이티브 COM 구성 요소를 Visual Basic 6.0을 사용 하 여 만든 참조 하는 Visual Basic에서 Windows 기반 응용 프로그램을 만들기를 사용 하 여 배포 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]합니다.  
@@ -65,16 +60,16 @@ ms.locfileid: "49820293"
   
 ##### <a name="to-create-a-native-com-component"></a>네이티브 COM 구성 요소를 만들려면  
   
-1.  Visual Basic 6.0을 사용 합니다 **파일** 메뉴에서 클릭 **새로 만들기**, 다음 **프로젝트**합니다.  
+1. Visual Basic 6.0을 사용 합니다 **파일** 메뉴에서 클릭 **새로 만들기**, 다음 **프로젝트**합니다.  
   
-2.  에 **새 프로젝트** 대화 상자에서를 **Visual Basic** 선택한 노드는 **ActiveX DLL** 프로젝트. **이름** 상자에 `VB6Hello`을 입력합니다.  
+2. 에 **새 프로젝트** 대화 상자에서를 **Visual Basic** 선택한 노드는 **ActiveX DLL** 프로젝트. **이름** 상자에 `VB6Hello`을 입력합니다.  
   
     > [!NOTE]
-    >  등록이 필요 없는 COM을 사용 하 여 ActiveX DLL 및 ActiveX 컨트롤 프로젝트 형식만 지원 됩니다. ActiveX EXE 프로젝트 형식과 ActiveX 문서 관리 지원 되지 않습니다.  
+    > 등록이 필요 없는 COM을 사용 하 여 ActiveX DLL 및 ActiveX 컨트롤 프로젝트 형식만 지원 됩니다. ActiveX EXE 프로젝트 형식과 ActiveX 문서 관리 지원 되지 않습니다.  
   
-3.  **솔루션 탐색기**를 두 번 클릭 **Class1.vb** 텍스트 편집기를 엽니다.  
+3. **솔루션 탐색기**를 두 번 클릭 **Class1.vb** 텍스트 편집기를 엽니다.  
   
-4.  Class1.vb에서 생성된 된 코드에 대 한 후 다음 코드를 추가 합니다 `New` 메서드:  
+4. Class1.vb에서 생성된 된 코드에 대 한 후 다음 코드를 추가 합니다 `New` 메서드:  
   
     ```  
     Public Sub SayHello()  
@@ -82,10 +77,10 @@ ms.locfileid: "49820293"
     End Sub  
     ```  
   
-5.  구성 요소를 빌드하십시오. **빌드할** 메뉴에서 클릭 **솔루션 빌드**합니다.  
+5. 구성 요소를 빌드하십시오. **빌드할** 메뉴에서 클릭 **솔루션 빌드**합니다.  
   
 > [!NOTE]
->  COM 제어 프로젝트 형식 및 등록이 필요 없는 COM Dll만 지원 합니다. 등록이 필요 없는 com Exe를 사용할 수 없습니다.  
+> COM 제어 프로젝트 형식 및 등록이 필요 없는 COM Dll만 지원 합니다. 등록이 필요 없는 com Exe를 사용할 수 없습니다.  
   
  이제 Windows 기반 응용 프로그램을 만들고 COM 구성 요소에 대 한 참조를 추가할 수 있습니다.  
   
@@ -116,7 +111,7 @@ ms.locfileid: "49820293"
    End Sub  
    ```  
   
-9. 응용 프로그램을 실행합니다. **디버그** 메뉴에서 클릭 **디버깅 시작**합니다.  
+9. 애플리케이션을 실행합니다. **디버그** 메뉴에서 클릭 **디버깅 시작**합니다.  
   
    다음 컨트롤을 격리 해야 합니다. 응용 프로그램에서 사용 하는 각 COM 구성 요소는 프로젝트에서 COM 참조로 표시 됩니다. 이러한 참조는 아래에 표시 된 **참조** 에서 노드를 **솔루션 탐색기** 창. (직접 사용 하거나 추가할 수 있는 알림을 참조를 **참조 추가** 명령을 합니다 **프로젝트** 메뉴 또는 ActiveX 컨트롤을 폼으로 끌어서에서 직접.)  
   
@@ -133,7 +128,7 @@ ms.locfileid: "49820293"
    이제 f5 키를 예상 대로 응용 프로그램 작동 하지만 경우 등록-COM에서 이제 실행 중인 이 증명 하기 위해 고 VB6Hello.dll 구성 요소를 등록 취소를 RegFreeComDemo1.exe Visual Studio IDE 외부에서 실행 합니다. 이 이번에는 단추를 클릭할 때 계속 작동 합니다. 응용 프로그램 매니페스트를 일시적으로 바꾸면 다시 못합니다.  
   
 > [!NOTE]
->  COM 구성 요소가 없는 경우 일시적으로 등록을 취소 하 여 시뮬레이션할 수 있습니다. 명령 프롬프트를 열고를 입력 하 여 시스템 폴더를 이동할 `cd /d %windir%\system32`를 입력 하 여 다음 구성 요소 등록을 취소 `regsvr32 /u VB6Hello.dll`합니다. 입력 하 여 다시 등록 하는 수 `regsvr32 VB6Hello.dll`입니다.  
+> COM 구성 요소가 없는 경우 일시적으로 등록을 취소 하 여 시뮬레이션할 수 있습니다. 명령 프롬프트를 열고를 입력 하 여 시스템 폴더를 이동할 `cd /d %windir%\system32`를 입력 하 여 다음 구성 요소 등록을 취소 `regsvr32 /u VB6Hello.dll`합니다. 입력 하 여 다시 등록 하는 수 `regsvr32 VB6Hello.dll`입니다.  
   
  마지막 단계를 사용 하 여 응용 프로그램 게시를 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]:  
   
@@ -145,12 +140,12 @@ ms.locfileid: "49820293"
   
 2. 게시 마법사에서 로컬 컴퓨터의 디스크에 액세스 하 고 게시 된 파일을 검사할 수 있는 위치를 지정 합니다.  
   
-3. 클릭 **완료** 응용 프로그램을 게시 합니다.  
+3. **마침**을 클릭하여 애플리케이션을 게시합니다.  
   
    게시 된 파일을 검사 하면 sysmon.ocx 파일이 포함 된 기록해둔 메시지가 표시 됩니다. 컨트롤이 최종 사용자의 컴퓨터를 다른 버전의 컨트롤을 사용 하 여 다른 응용 프로그램에 있으면이 응용 프로그램을 사용 하 여 방해 없습니다 것 이므로이 응용 프로그램에 완전히 격리 됩니다.  
   
 ## <a name="referencing-native-assemblies"></a>네이티브 어셈블리 참조  
- Visual Studio 네이티브 Visual Basic 6.0 또는 c + + 어셈블리에 대 한 참조를 지원합니다. 이러한 참조를 네이티브 참조 라고 합니다. 참조를 확인 하 여 네이티브 인지 여부를 확인할 수 있습니다 해당 **파일 형식** 속성이 **네이티브** 또는 **ActiveX**합니다.  
+ Visual Studio는 네이티브 Visual Basic 6.0에 대 한 참조를 지원 또는 C++ 어셈블리 이러한 참조를 네이티브 참조 라고 합니다. 참조를 확인 하 여 네이티브 인지 여부를 확인할 수 있습니다 해당 **파일 형식** 속성이 **네이티브** 또는 **ActiveX**합니다.  
   
  네이티브 참조를 추가 하려면 사용 합니다 **참조 추가** 명령을 사용한 다음, 매니페스트를 찾습니다. 일부 구성 요소 DLL에 매니페스트를 배치합니다. 이 경우 자체 DLL을 선택 하기만 하면 및 Visual Studio는 참조로 추가 네이티브 구성 요소에 포함된 된 매니페스트를 검색 하는 경우. Visual Studio는 모든 종속 파일 또는 참조 된 구성 요소와 동일한 폴더에 있는 경우 매니페스트에 나열 된 어셈블리에도 자동으로 포함 됩니다.  
   
@@ -181,6 +176,3 @@ ms.locfileid: "49820293"
   
 ## <a name="see-also"></a>참고 항목  
  [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)
-
-
-

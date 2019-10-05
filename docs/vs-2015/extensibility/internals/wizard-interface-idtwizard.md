@@ -1,27 +1,22 @@
 ---
 title: 마법사 인터페이스 (IDTWizard) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - IDTWizard interface
 - wizards, interface
 ms.assetid: 09618d9d-d115-45b6-bccc-de328994b39c
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 62ae4ab1137be452a1c769d16c153e4499a4a331
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 78867fa94851e373ae4d47cd82cd1084a941638c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180348"
 ---
 # <a name="wizard-interface-idtwizard"></a>마법사 인터페이스(IDTWizard)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,23 +40,23 @@ STDMETHOD(Execute)(THIS_
   
  다음 정보를 설명 합니다 <xref:EnvDTE.IDTWizard> 마법사에서 작업을 구현 해야 하는 인터페이스를 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE. 호출 하 여 IDE <xref:EnvDTE.IDTWizard.Execute%2A> 메서드에 전달 된 다음 마법사에서:  
   
--   DTE 개체  
+- DTE 개체  
   
      DTE 개체 자동화 모델의 루트입니다.  
   
--   코드 세그먼트와 같이 창 대화 상자에 대 한 핸들 `hwndOwner ([in] long)`합니다.  
+- 코드 세그먼트와 같이 창 대화 상자에 대 한 핸들 `hwndOwner ([in] long)`합니다.  
   
      이 마법사를 사용 하 여 `hwndOwner` 마법사 대화 상자에 대 한 부모로 합니다.  
   
--   컨텍스트 매개 변수를 전달할 인터페이스 variant로 서 SAFEARRAY에 대 한 코드 세그먼트에 표시 된 것 처럼 `[in] SAFEARRAY (VARIANT)* ContextParams`합니다.  
+- 컨텍스트 매개 변수를 전달할 인터페이스 variant로 서 SAFEARRAY에 대 한 코드 세그먼트에 표시 된 것 처럼 `[in] SAFEARRAY (VARIANT)* ContextParams`합니다.  
   
      컨텍스트 매개 변수는 시작 되 고 마법사의 종류와 관련 된 값의 배열 및 프로젝트의 현재 상태를 포함 합니다. IDE 마법사 컨텍스트 매개 변수를 전달합니다. 자세한 내용은 [컨텍스트 매개 변수](../../extensibility/internals/context-parameters.md)합니다.  
   
--   사용자 지정 매개 변수를 전달할 인터페이스 변형으로 SAFEARRAY에 대 한 코드 세그먼트에 표시 된 것 처럼 `[in] SAFEARRAY (VARIANT)* CustomParams`합니다.  
+- 사용자 지정 매개 변수를 전달할 인터페이스 변형으로 SAFEARRAY에 대 한 코드 세그먼트에 표시 된 것 처럼 `[in] SAFEARRAY (VARIANT)* CustomParams`합니다.  
   
      사용자 지정 매개 변수는 사용자 정의 매개 변수 배열을 포함 합니다. .Vsz 파일 IDE를 사용자 지정 매개 변수를 전달합니다. 값으로 결정 됩니다는 `Param=` 문입니다. 자세한 내용은 [사용자 지정 매개 변수](../../extensibility/internals/custom-parameters.md)합니다.  
   
--   인터페이스에 대 한 값을 반환 합니다.  
+- 인터페이스에 대 한 값을 반환 합니다.  
   
     ```  
     wizardResultSuccess = -1,  
@@ -70,9 +65,8 @@ STDMETHOD(Execute)(THIS_
     wizardResultBackout = 2  
     ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [컨텍스트 매개 변수](../../extensibility/internals/context-parameters.md)   
  [사용자 지정 매개 변수](../../extensibility/internals/custom-parameters.md)   
  [마법사](../../extensibility/internals/wizards.md)   
  [마법사(.Vsz) 파일](../../extensibility/internals/wizard-dot-vsz-file.md)
-

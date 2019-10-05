@@ -1,8 +1,6 @@
 ---
-title: '방법: 추가 계측 옵션 지정 | Microsoft 문서'
-ms.custom: ''
+title: '방법: 추가 계측 옵션 지정 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.advanced
@@ -12,22 +10,22 @@ helpviewer_keywords:
 - performance sessions, options
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f97bc28277adfe1e181e0f6a5be210e45b250717
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: c95add435824663e798d226e0be11ddbe06b8aba
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62539142"
 ---
 # <a name="how-to-specify-additional-instrumentation-options"></a>방법: 추가 계측 옵션 지정
 
 Visual Studio IDE를 사용하거나 명령줄 도구를 사용하여 이진 파일을 계측할 수 있습니다. IDE 내에서 이진 파일을 계측할 경우 [VSInstr](../profiling/vsinstr.md) 도구에 대한 추가적인 계측 옵션을 지정하여 계측 중에 수집된 데이터 볼륨을 제어할 수 있습니다. 이러한 옵션은 세션 또는 대상 수준에서 사용할 수 있습니다. 예를 들어 계측 프로세스 중에 특정 함수를 포함하거나 제외하려면 대상 수준에서 추가적인 계측 옵션을 사용합니다.
 
 > [!IMPORTANT]
-> 삽입된 모든 프로브는 원래 프로그램의 동작을 약간 수정합니다. 이 수정으로 인해 분석 시 오버헤드가 발생합니다. 이 오버헤드의 근사치를 빼더라도 다중 스레드 응용 프로그램의 타이밍에 약간의 영향을 미칩니다. [VSInstr](../profiling/vsinstr.md) 도구 옵션을 통해 프로파일링 중에 데이터 수집을 제어할 수 있습니다.
+> 삽입된 모든 프로브는 원래 프로그램의 동작을 약간 수정합니다. 이 수정으로 인해 분석 시 오버헤드가 발생합니다. 이 오버헤드의 근사치를 빼더라도 다중 스레드 애플리케이션의 타이밍에 약간의 영향을 미칩니다. [VSInstr](../profiling/vsinstr.md) 도구 옵션을 통해 프로파일링 중에 데이터 수집을 제어할 수 있습니다.
 
 ## <a name="to-specify-additional-instrumentation-option"></a>추가적인 계측 옵션을 지정하려면
 
@@ -43,5 +41,5 @@ Visual Studio IDE를 사용하거나 명령줄 도구를 사용하여 이진 파
 
 ## <a name="see-also"></a>참고 항목
 
-[성능 세션 구성](../profiling/configuring-performance-sessions.md)  
+[성능 세션 구성](../profiling/configuring-performance-sessions.md)
 [명령줄에서 프로파일링](../profiling/using-the-profiling-tools-from-the-command-line.md)

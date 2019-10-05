@@ -1,14 +1,9 @@
 ---
 title: '&lt;PackageFiles&gt; 요소 (부트스트래퍼) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: 3ea252d7-18a3-47d8-af83-47feebcfe82b
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: b4cddd6752872cf03ef5f5d55b0cbbb88aa1e66a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 382689dada13adce1ee530e66fef6ba78452efaa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302785"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188977"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; 요소 (부트스트래퍼)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ ms.locfileid: "49302785"
 ## <a name="elements-and-attributes"></a>요소 및 특성  
  `PackageFiles` 요소에는 다음 특성이 있습니다.  
   
-|특성|설명|  
+|특성|Description|  
 |---------------|-----------------|  
 |`CopyAllPackageFiles`|선택 사항입니다. 경우로 `false`, 설치 관리자에서 참조 하는 파일을 다운로드만 `Command` 요소입니다. 경우 설정 `true`, 모든 파일이 다운로드 됩니다.<br /><br /> 경우로 `IfNotHomesite`, 설치 관리자는 동일 하 게 처럼 `False` 경우 `ComponentsLocation` 로 설정 되어 `HomeSite`, 그렇지 않으면 동일 하 게 동작 합니다 및 처럼 `True`. 이 설정은 HomeSite 시나리오에서 고유한 동작을 실행 하는 부트스트래퍼 패키지를 허용 하도록 유용할 수 있습니다.<br /><br /> 기본값은 `true`입니다.|  
   
@@ -63,7 +58,7 @@ ms.locfileid: "49302785"
   
 |특성|설명|  
 |---------------|-----------------|  
-|`Name`|필수. 패키지 파일의 이름입니다. 이 이름은는 `Command` 요소는 패키지를 설치 하는 조건을 정의 될 때 참조 합니다. 이 값은 키로 사용 합니다 `Strings` 와 같은 도구는 지역화 된 이름을 검색할 테이블 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 패키지를 설명 하는 데 사용할 합니다.|  
+|`Name`|필수 요소. 패키지 파일의 이름입니다. 이 이름은는 `Command` 요소는 패키지를 설치 하는 조건을 정의 될 때 참조 합니다. 이 값은 키로 사용 합니다 `Strings` 와 같은 도구는 지역화 된 이름을 검색할 테이블 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 패키지를 설명 하는 데 사용할 합니다.|  
 |`HomeSite`|선택 사항입니다. 원격 서버에 설치 관리자를 사용 하 여 포함 되지 않은 경우 패키지의 위치입니다.|  
 |`CopyOnBuild`|선택 사항입니다. 부트스트래퍼 빌드 시 패키지 파일을 디스크를 복사 해야 하는지 여부를 지정 합니다. 기본값은 true입니다.|  
 |`PublicKey`|패키지의 인증서 서명자의 공개 키 암호화입니다. 필요한 경우 `HomeSite` 사용 되는, 그렇지 않으면 선택적입니다.|  
@@ -85,6 +80,3 @@ ms.locfileid: "49302785"
  [\<제품 > 요소](../deployment/product-element-bootstrapper.md)   
  [\<패키지 > 요소](../deployment/package-element-bootstrapper.md)   
  [제품 및 패키지 스키마 참조](../deployment/product-and-package-schema-reference.md)
-
-
-

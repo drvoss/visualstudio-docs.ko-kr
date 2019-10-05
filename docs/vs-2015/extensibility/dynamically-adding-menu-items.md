@@ -1,14 +1,9 @@
 ---
 title: 메뉴 항목 동적 추가 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - DYNAMICITEMSTART
 - menu items, adding dynamically
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: d281e9c9-b289-4d64-8d0a-094bac6c333c
 caps.latest.revision: 38
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c8f188c71cb1e25364cee34c6a97c87b3a265ee7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 45d435a9c77d63fbd1e92a7615df232c2a0cc117
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555519"
 ---
 # <a name="dynamically-adding-menu-items"></a>메뉴 항목 동적 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,20 +32,20 @@ ms.locfileid: "51809755"
   
 ## <a name="creating-an-extension-with-a-menu-command"></a>메뉴 명령을 사용하여 확장 만들기  
   
-1.  라는 VSIX 프로젝트를 만듭니다 `DynamicMenuItems`합니다.  
+1. 라는 VSIX 프로젝트를 만듭니다 `DynamicMenuItems`합니다.  
   
-2.  프로젝트를 열면 사용자 지정 명령 항목 템플릿을 추가 하 고 이름을 **DynamicMenu**합니다. 자세한 내용은 [메뉴 명령을 사용 하 여 확장을 만드는](../extensibility/creating-an-extension-with-a-menu-command.md)합니다.  
+2. 프로젝트를 열면 사용자 지정 명령 항목 템플릿을 추가 하 고 이름을 **DynamicMenu**합니다. 자세한 내용은 [메뉴 명령을 사용 하 여 확장을 만드는](../extensibility/creating-an-extension-with-a-menu-command.md)합니다.  
   
 ## <a name="setting-up-the-elements-in-the-vsct-file"></a>.Vsct 파일의 요소를 설정  
  동적 메뉴 항목 도구 모음에 메뉴 컨트롤러를 만들려면 다음 요소를 지정 합니다.  
   
--   두 명령 그룹, 메뉴 컨트롤러를 포함 하는 것과 다른 드롭다운 목록에서 메뉴 항목을 포함 하는  
+- 두 명령 그룹, 메뉴 컨트롤러를 포함 하는 것과 다른 드롭다운 목록에서 메뉴 항목을 포함 하는  
   
--   형식의 하나의 메뉴 요소 `MenuController`  
+- 형식의 하나의 메뉴 요소 `MenuController`  
   
--   두 개의 단추, 아이콘 및 도구 모음에서 도구 설명을 제공 하는 메뉴 항목에 자리 표시자로 사용 되는 하나입니다.  
+- 두 개의 단추, 아이콘 및 도구 모음에서 도구 설명을 제공 하는 메뉴 항목에 자리 표시자로 사용 되는 하나입니다.  
   
-1.  DynamicMenuPackage.vsct, 명령 Id를 정의 합니다. IDSymbol 요소를 바꾸고 Symbols 섹션으로 이동 합니다 **guidDynamicMenuPackageCmdSet** GuidSymbol 블록입니다. 두 개의 그룹, 메뉴 컨트롤러, 자리 표시자 명령 및 앵커 명령에 대 한 IDSymbol 요소를 정의 해야 합니다.  
+1. DynamicMenuPackage.vsct, 명령 Id를 정의 합니다. IDSymbol 요소를 바꾸고 Symbols 섹션으로 이동 합니다 **guidDynamicMenuPackageCmdSet** GuidSymbol 블록입니다. 두 개의 그룹, 메뉴 컨트롤러, 자리 표시자 명령 및 앵커 명령에 대 한 IDSymbol 요소를 정의 해야 합니다.  
   
     ```csharp  
     <GuidSymbol name="guidDynamicMenuPackageCmdSet" value="{ your GUID here }">  
@@ -65,7 +60,7 @@ ms.locfileid: "51809755"
     </GuidSymbol>    
     ```  
   
-2.  그룹 섹션에서 기존 그룹을 삭제 하 고 방금 정의한 두 그룹을 추가 합니다.  
+2. 그룹 섹션에서 기존 그룹을 삭제 하 고 방금 정의한 두 그룹을 추가 합니다.  
   
     ```  
     <Groups>  
@@ -98,7 +93,7 @@ ms.locfileid: "51809755"
     </Menus>  
     ```  
   
-3.  MenuController에 대 한 두 개의 단추 동적 메뉴 항목에 대 한 자리 표시자로, 하나는 앵커로 하나를 추가 합니다.  
+3. MenuController에 대 한 두 개의 단추 동적 메뉴 항목에 대 한 자리 표시자로, 하나는 앵커로 하나를 추가 합니다.  
   
      자리 표시자 단추의 부모가 합니다 **MyMenuControllerGroup**합니다. 자리 표시자 단추 DynamicItemStart, DynamicVisibility, 및 TextChanges 명령 플래그를 추가 합니다. ButtonText는 표시 되지 않습니다.  
   
@@ -135,9 +130,9 @@ ms.locfileid: "51809755"
     </Buttons>  
     ```  
   
-4.  아이콘 (Resources 폴더)에서 프로젝트에 추가 하 고.vsct 파일에서이에 대 한 참조를 추가 합니다. 이 연습에서는 프로젝트 템플릿에 포함 되어 있는 화살표 아이콘을 사용 합니다.  
+4. 아이콘 (Resources 폴더)에서 프로젝트에 추가 하 고.vsct 파일에서이에 대 한 참조를 추가 합니다. 이 연습에서는 프로젝트 템플릿에 포함 되어 있는 화살표 아이콘을 사용 합니다.  
   
-5.  Symbols 섹션 직전 명령 섹션 외부 VisibilityConstraints 섹션을 추가 합니다. (경우 발생할 수 있습니다 경고를 기호 뒤에 추가 합니다.) 이 섹션에서는 메뉴 컨트롤러는 여러 프로젝트가 포함 된 솔루션을 로드할 때만 표시 됩니다.  
+5. Symbols 섹션 직전 명령 섹션 외부 VisibilityConstraints 섹션을 추가 합니다. (경우 발생할 수 있습니다 경고를 기호 뒤에 추가 합니다.) 이 섹션에서는 메뉴 컨트롤러는 여러 프로젝트가 포함 된 솔루션을 로드할 때만 표시 됩니다.  
   
     ```  
     <VisibilityConstraints>  
@@ -149,7 +144,7 @@ ms.locfileid: "51809755"
 ## <a name="implementing-the-dynamic-menu-command"></a>동적 메뉴 명령 구현  
  상속 되는 동적 메뉴 명령 클래스를 만들면 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>합니다. 이 구현에서는 생성자 명령을 일치에 사용 하기 위한 조건자를 지정 합니다. 재정의 해야 합니다는 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> 이 조건자를 사용 하 여 설정 하는 방법의 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> 호출 될 명령을 식별 하는 속성입니다.  
   
-1.  C# 클래스 라는 새 파일 DynamicItemMenuCommand.cs를 만들고 라는 클래스를 추가 **DynamicItemMenuCommand** 에서 상속 되는 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>:  
+1. C# 클래스 라는 새 파일 DynamicItemMenuCommand.cs를 만들고 라는 클래스를 추가 **DynamicItemMenuCommand** 에서 상속 되는 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>:  
   
     ```csharp  
     class DynamicItemMenuCommand : OleMenuCommand  
@@ -159,7 +154,7 @@ ms.locfileid: "51809755"
   
     ```  
   
-2.  다음 추가 문을 사용 하 여:  
+2. 다음 추가 문을 사용 하 여:  
   
     ```csharp  
     using Microsoft.VisualStudio.Shell;  
@@ -167,14 +162,14 @@ ms.locfileid: "51809755"
     using System.ComponentModel.Design;  
     ```  
   
-3.  일치 조건자를 저장 하는 개인 필드를 추가 합니다.  
+3. 일치 조건자를 저장 하는 개인 필드를 추가 합니다.  
   
     ```csharp  
     private Predicate<int> matches;  
   
     ```  
   
-4.  상속 되는 생성자를 추가 합니다 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 생성자 명령 처리기를 지정 하 고 및 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> 처리기입니다. 이 명령은 일치 하는 조건자를 추가 합니다.  
+4. 상속 되는 생성자를 추가 합니다 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 생성자 명령 처리기를 지정 하 고 및 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> 처리기입니다. 이 명령은 일치 하는 조건자를 추가 합니다.  
   
     ```csharp  
     public DynamicItemMenuCommand(CommandID rootId, Predicate<int> matches, EventHandler invokeHandler, EventHandler beforeQueryStatusHandler)  
@@ -189,7 +184,7 @@ ms.locfileid: "51809755"
     }  
     ```  
   
-5.  재정의 된 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> 조건자 집합과 일치 항목을 호출 하도록 메서드를 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> 속성:  
+5. 재정의 된 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> 조건자 집합과 일치 항목을 호출 하도록 메서드를 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> 속성:  
   
     ```csharp  
     public override bool DynamicItemMatch(int cmdId)  
@@ -212,14 +207,14 @@ ms.locfileid: "51809755"
 ## <a name="adding-the-command"></a>명령 추가  
  DynamicMenu 생성자가 설정한 동적 메뉴 및 메뉴 항목을 포함 하 여 메뉴 명령입니다.  
   
-1.  DynamicMenuPackageGuids.cs을 명령 집합의 GUID 및 명령 ID를 추가 합니다.  
+1. DynamicMenuPackageGuids.cs을 명령 집합의 GUID 및 명령 ID를 추가 합니다.  
   
     ```csharp  
     public const string guidDynamicMenuPackageCmdSet = "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file  
     public const uint cmdidMyCommand = 0x104;  
     ```  
   
-2.  DynamicMenu.cs 파일에 다음 추가 문을 사용 하 여:  
+2. DynamicMenu.cs 파일에 다음 추가 문을 사용 하 여:  
   
     ```csharp  
     using EnvDTE;  
@@ -227,19 +222,19 @@ ms.locfileid: "51809755"
     using System.ComponentModel.Design;  
     ```  
   
-3.  DynamicMenu 클래스에서 private 필드를 추가 **dte2**합니다.  
+3. DynamicMenu 클래스에서 private 필드를 추가 **dte2**합니다.  
   
     ```csharp  
     private DTE2 dte2;  
     ```  
   
-4.  개인 rootItemId 필드를 추가 합니다.  
+4. 개인 rootItemId 필드를 추가 합니다.  
   
     ```csharp  
     private int rootItemId = 0;  
     ```  
   
-5.  DynamicMenu 생성자에서 메뉴 명령을 추가 합니다. 다음 섹션에서 명령 처리기를 정의 합니다 `BeforeQueryStatus` 이벤트 처리기 및 일치 조건자입니다.  
+5. DynamicMenu 생성자에서 메뉴 명령을 추가 합니다. 다음 섹션에서 명령 처리기를 정의 합니다 `BeforeQueryStatus` 이벤트 처리기 및 일치 조건자입니다.  
   
     ```csharp  
     private DynamicMenu(Package package)  
@@ -270,7 +265,7 @@ ms.locfileid: "51809755"
 ## <a name="implementing-the-handlers"></a>처리기를 구현합니다.  
  메뉴 컨트롤러에 동적 메뉴 항목을 구현 하려면 동적 항목을 클릭할 때 명령을 처리 해야 합니다. 또한 메뉴 항목의 상태를 설정 하는 논리를 구현 해야 합니다. DynamicMenu 클래스 처리기를 추가 합니다.  
   
-1.  구현 하는 **시작 프로젝트 설정** 명령에 추가 합니다 **OnInvokedDynamicItem** 이벤트 처리기입니다. 가 호출 되 고에서 절대 경로 설정 하 여 시작 프로젝트로 설정 하는 명령 텍스트와 같은 이름이 프로젝트를 찾습니다는 <xref:EnvDTE.SolutionBuild.StartupProjects%2A> 속성입니다.  
+1. 구현 하는 **시작 프로젝트 설정** 명령에 추가 합니다 **OnInvokedDynamicItem** 이벤트 처리기입니다. 가 호출 되 고에서 절대 경로 설정 하 여 시작 프로젝트로 설정 하는 명령 텍스트와 같은 이름이 프로젝트를 찾습니다는 <xref:EnvDTE.SolutionBuild.StartupProjects%2A> 속성입니다.  
   
     ```csharp  
     private void OnInvokedDynamicItem(object sender, EventArgs args)  
@@ -293,7 +288,7 @@ ms.locfileid: "51809755"
     }  
     ```  
   
-2.  추가 된 `OnBeforeQueryStatusDynamicItem` 이벤트 처리기입니다. 이 처리기가 호출 하기 전에 처리기를 `QueryStatus` 이벤트입니다. 메뉴 항목을 "실제" 항목, 즉, 하지는 자리 표시자 항목, 인지 여부를 결정 및 여부 항목이 이미 선택 되어 (프로젝트를 시작 프로젝트로 이미 설정 되어 있는지를 의미).  
+2. 추가 된 `OnBeforeQueryStatusDynamicItem` 이벤트 처리기입니다. 이 처리기가 호출 하기 전에 처리기를 `QueryStatus` 이벤트입니다. 메뉴 항목을 "실제" 항목, 즉, 하지는 자리 표시자 항목, 인지 여부를 결정 및 여부 항목이 이미 선택 되어 (프로젝트를 시작 프로젝트로 이미 설정 되어 있는지를 의미).  
   
     ```csharp  
     private void OnBeforeQueryStatusDynamicItem(object sender, EventArgs args)  
@@ -325,7 +320,7 @@ ms.locfileid: "51809755"
   
 ## <a name="implementing-the-command-id-match-predicate"></a>명령 ID 일치 조건자를 구현합니다.  
   
-1.  이제 일치 조건자를 구현 합니다. 두 가지를 확인 해야: 먼저 여부 명령 ID가 (이기 선언 된 명령 ID 보다 크거나) 유효한 식이고 두 번째는 가능한 프로젝트가 (솔루션의 프로젝트의 수보다 작을) 여부를 지정 합니다.  
+1. 이제 일치 조건자를 구현 합니다. 두 가지를 확인 해야: 먼저 여부 명령 ID가 (이기 선언 된 명령 ID 보다 크거나) 유효한 식이고 두 번째는 가능한 프로젝트가 (솔루션의 프로젝트의 수보다 작을) 여부를 지정 합니다.  
   
     ```csharp  
     private bool IsValidDynamicItem(int commandId)  
@@ -353,17 +348,16 @@ public sealed class DynamicMenuItemsPackage : Package
 ## <a name="testing-the-set-startup-project-command"></a>시작 프로젝트 설정 명령 테스트  
  이제 코드를 테스트할 수 있습니다.  
   
-1.  프로젝트를 빌드하고 디버깅을 시작합니다. 실험적 인스턴스에서 표시 됩니다.  
+1. 프로젝트를 빌드하고 디버깅을 시작합니다. 실험적 인스턴스에서 표시 됩니다.  
   
-2.  실험적 인스턴스에서 둘 이상의 프로젝트가 포함 된 솔루션을 엽니다.  
+2. 실험적 인스턴스에서 둘 이상의 프로젝트가 포함 된 솔루션을 엽니다.  
   
      에 있는 화살표 아이콘을 표시 해야 합니다 **솔루션 탐색기** 도구 모음입니다. 를 확장 하면 솔루션의 다른 프로젝트를 나타내는 메뉴 항목이 표시 됩니다.  
   
-3.  프로젝트 중 하나를 선택 하면 시작 프로젝트가 됩니다.  
+3. 프로젝트 중 하나를 선택 하면 시작 프로젝트가 됩니다.  
   
-4.  솔루션을 닫거나 하나의 프로젝트가 포함 된 솔루션을 열고 도구 모음 아이콘 사라져야 합니다.  
+4. 솔루션을 닫거나 하나의 프로젝트가 포함 된 솔루션을 열고 도구 모음 아이콘 사라져야 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)   
  [VSPackage에서 사용자 인터페이스 요소를 추가하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-

@@ -1,148 +1,151 @@
-items:
 - name: Visual Studio의 Python
   href: index.yml
 - name: 개요
   items:
-  - name: Python 지원 개요
-    href: overview-of-python-tools-for-visual-studio.md
-  - name: Visual Studio IDE 둘러보기
-    href: visual-studio-ide.md
+    - name: Python 지원 개요
+      href: overview-of-python-tools-for-visual-studio.md
+    - name: Visual Studio IDE 둘러보기
+      href: visual-studio-ide.md
+    - name: 데이터 과학 및 분석 애플리케이션 워크로드
+      href: data-science-and-analytical-applications-workload.md
 - name: 설치
-  href: installing-python-support-in-visual-studio.md
   items:
-  - name: Python 인터프리터 설치
-    href: installing-python-interpreters.md
+    - name: 설치
+      href: installing-python-support-in-visual-studio.md
+    - name: Python 인터프리터 설치
+      href: installing-python-interpreters.md
 - name: 빠른 시작
   items:
-  - name: Flask를 사용하여 웹앱 만들기
-    href: ../ide/quickstart-python.md
-    maintainContext: true
-  - name: 템플릿으로 프로젝트 만들기
-    href: quickstart-02-python-in-visual-studio-project-from-template.md
-  - name: 기존 코드로 프로젝트 만들기
-    href: quickstart-01-python-in-visual-studio-project-from-existing-code.md
-  - name: 리포지토리에서 프로젝트 만들기
-    href: quickstart-03-python-in-visual-studio-project-from-repository.md
-  - name: Cookiecutter 템플릿으로 프로젝트 만들기
-    href: quickstart-04-python-in-visual-studio-project-from-cookiecutter.md
+    - name: Flask를 사용하여 웹앱 만들기
+      href: ../ide/quickstart-python.md
+      maintainContext: true
+    - name: 템플릿으로 프로젝트 만들기
+      href: quickstart-02-python-in-visual-studio-project-from-template.md
+    - name: 폴더에서 Python 코드 열기 및 실행
+      href: quickstart-05-python-visual-studio-open-folder.md
+    - name: 기존 코드로 프로젝트 만들기
+      href: quickstart-01-python-in-visual-studio-project-from-existing-code.md
+    - name: 리포지토리에서 프로젝트 만들기
+      href: quickstart-03-python-in-visual-studio-project-from-repository.md
+    - name: Cookiecutter 템플릿으로 프로젝트 만들기
+      href: quickstart-04-python-in-visual-studio-project-from-cookiecutter.md
 - name: 자습서
   items:
-  - name: Visual Studio의 Python
-    items:
-    - name: 0 - Python 설치 지원
-      href: tutorial-working-with-python-in-visual-studio-step-00-installation.md
-    - name: 1 - 새 Python 프로젝트 만들기
-      href: tutorial-working-with-python-in-visual-studio-step-01-create-project.md
-    - name: 2 - 코드 작성 및 실행
-      href: tutorial-working-with-python-in-visual-studio-step-02-writing-code.md
-    - name: 3 - 대화형 REPL 창 사용
-      href: tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md
-    - name: 4 - 디버거에서 코드 실행
-      href: tutorial-working-with-python-in-visual-studio-step-04-debugging.md
-    - name: 5 - 패키지 설치 및 Python 환경 관리
-      href: tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md
-    - name: 6 - Git 작업
-      href: tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md
-  - name: Visual Studio의 Django 알아보기
-    items:
-    - name: 1 - 프로젝트 및 솔루션 만들기
-      href: learn-django-in-visual-studio-step-01-project-and-solution.md
-    - name: 2 - Django 앱 만들기
-      href: learn-django-in-visual-studio-step-02-create-an-app.md
-    - name: 3 - 정적 파일 제공 및 페이지 추가
-      href: learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md
-    - name: 4 - Django 웹 프로젝트 템플릿 사용
-      href: learn-django-in-visual-studio-step-04-full-django-project-template.md
-    - name: 5 - 사용자 인증
-      href: learn-django-in-visual-studio-step-05-django-authentication.md
-    - name: 6 - 설문 조사 Django 웹 프로젝트 템플릿 사용
-      href: learn-django-in-visual-studio-step-06-polls-django-web-project-template.md
-  - name: Visual Studio의 Flask 알아보기
-    items:
-    - name: 1 - 프로젝트 및 솔루션 만들기
-      href: learn-flask-visual-studio-step-01-project-solution.md
-    - name: 2 - Flask 앱 만들기
-      href: learn-flask-visual-studio-step-02-create-app.md
-    - name: 3 - 정적 파일 제공 및 페이지 추가
-      href: learn-flask-visual-studio-step-03-serve-static-files-add-pages.md
-    - name: 4 - Flask 웹 프로젝트 템플릿 사용
-      href: learn-flask-visual-studio-step-04-full-flask-project-template.md
-    - name: 5 - 설문조사 Flask 웹 프로젝트 템플릿 사용
-      href: learn-flask-visual-studio-step-05-polls-flask-web-project-template.md
+    - name: Visual Studio의 Python
+      items:
+        - name: 0 - Python 설치 지원
+          href: tutorial-working-with-python-in-visual-studio-step-00-installation.md
+        - name: 1 - 새 Python 프로젝트 만들기
+          href: tutorial-working-with-python-in-visual-studio-step-01-create-project.md
+        - name: 2 - 코드 작성 및 실행
+          href: tutorial-working-with-python-in-visual-studio-step-02-writing-code.md
+        - name: 3 - 대화형 REPL 창 사용
+          href: tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md
+        - name: 4 - 디버거에서 코드 실행
+          href: tutorial-working-with-python-in-visual-studio-step-04-debugging.md
+        - name: 5 - 패키지 설치 및 Python 환경 관리
+          href: tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md
+        - name: 6 - Git 작업
+          href: tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md
+    - name: Visual Studio의 Django 알아보기
+      items:
+        - name: 1 - 프로젝트 및 솔루션 만들기
+          href: learn-django-in-visual-studio-step-01-project-and-solution.md
+        - name: 2 - Django 앱 만들기
+          href: learn-django-in-visual-studio-step-02-create-an-app.md
+        - name: 3 - 정적 파일 제공 및 페이지 추가
+          href: learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md
+        - name: 4 - Django 웹 프로젝트 템플릿 사용
+          href: learn-django-in-visual-studio-step-04-full-django-project-template.md
+        - name: 5 - 사용자 인증
+          href: learn-django-in-visual-studio-step-05-django-authentication.md
+        - name: 6 - 설문 조사 Django 웹 프로젝트 템플릿 사용
+          href: learn-django-in-visual-studio-step-06-polls-django-web-project-template.md
+    - name: Visual Studio의 Flask 알아보기
+      items:
+        - name: 1 - 프로젝트 및 솔루션 만들기
+          href: learn-flask-visual-studio-step-01-project-solution.md
+        - name: 2 - Flask 앱 만들기
+          href: learn-flask-visual-studio-step-02-create-app.md
+        - name: 3 - 정적 파일 제공 및 페이지 추가
+          href: learn-flask-visual-studio-step-03-serve-static-files-add-pages.md
+        - name: 4 - Flask 웹 프로젝트 템플릿 사용
+          href: learn-flask-visual-studio-step-04-full-flask-project-template.md
+        - name: 5 - 설문조사 Flask 웹 프로젝트 템플릿 사용
+          href: learn-flask-visual-studio-step-05-polls-flask-web-project-template.md
 - name: 개념
   items:
-  - name: Python 프로젝트
-    href: managing-python-projects-in-visual-studio.md
-    items:
-    - name: 웹 프로젝트 템플릿
-      href: python-web-application-project-templates.md
-    - name: Django 웹 프로젝트 템플릿
-      href: python-django-web-application-project-template.md
-    - name: Azure 클라우드 서비스 템플릿
-      href: python-azure-cloud-service-project-template.md
-  - name: Python용 Azure SDK
-    href: azure-sdk-for-python.md
+    - name: Python 프로젝트
+      items:
+        - name: Python 프로젝트
+          href: managing-python-projects-in-visual-studio.md
+        - name: 웹 프로젝트 템플릿
+          href: python-web-application-project-templates.md
+        - name: Django 웹 프로젝트 템플릿
+          href: python-django-web-application-project-template.md
+        - name: Azure 클라우드 서비스 템플릿
+          href: python-azure-cloud-service-project-template.md
+    - name: Python용 Azure SDK
+      href: /python/azure/?view=azure-python
 - name: 방법 가이드
   items:
-  - name: Python 환경 관리
-    href: managing-python-environments-in-visual-studio.md
-    items:
-    - name: 프로젝트의 인터프리터 선택
-      href: selecting-a-python-environment-for-a-project.md
-    - name: 종속성에 대해 requirements.txt 사용
-      href: managing-required-packages-with-requirements-txt.md
-    - name: 검색 경로
-      href: search-paths.md
-    - name: 환경 창 참조
-      href: python-environments-window-tab-reference.md
-    - name: IIS용 웹앱 구성
-      href: configure-web-apps-for-iis-windows.md
-  - name: Python 코드 편집
-    href: editing-python-code-in-visual-studio.md
-    items:
-    - name: 코드 형식
-      href: formatting-python-code.md
-    - name: 코드 리팩터링
-      href: refactoring-python-code.md
-    - name: PyLint 사용
-      href: linting-python-code.md
-  - name: 사용자 지정 메뉴 명령 정의
-    href: defining-custom-python-project-commands.md
-  - name: 대화형 Python(REPL)
-    href: python-interactive-repl-in-visual-studio.md
-    items:
-    - name: IPython REPL 사용
-      href: interactive-repl-ipython.md
-  - name: 디버깅
-    href: debugging-python-in-visual-studio.md
-    items:
-    - name: 원격 Linux 컴퓨터에서 코드 디버깅
-      href: debugging-python-code-on-remote-linux-machines.md
-  - name: Linux에서 Azure App Service에 게시
-    href: publishing-python-web-applications-to-azure-from-visual-studio.md
-  - name: C++ 조작
-    items:
-    - name: Python용 C++ 확장 만들기
-      href: working-with-c-cpp-python-in-visual-studio.md
-    - name: Python/C++ 혼합 모드 디버깅
-      href: debugging-mixed-mode-c-cpp-python-in-visual-studio.md
-    - name: 혼합 모드 디버깅 기호
-      href: debugging-symbols-for-mixed-mode-c-cpp-python.md
-  - name: 프로파일링
-    href: profiling-python-code-in-visual-studio.md
-  - name: 유닛 테스트
-    href: unit-testing-python-in-visual-studio.md
-  - name: Cookiecutter 확장 사용
-    href: using-python-cookiecutter-templates.md
+    - name: Python 환경 관리
+      items:
+        - name: Python 환경 관리
+          href: managing-python-environments-in-visual-studio.md
+        - name: 프로젝트의 인터프리터 선택
+          href: selecting-a-python-environment-for-a-project.md
+        - name: 종속성에 대해 requirements.txt 사용
+          href: managing-required-packages-with-requirements-txt.md
+        - name: 검색 경로
+          href: search-paths.md
+        - name: 환경 창 참조
+          href: python-environments-window-tab-reference.md
+        - name: IIS용 웹앱 구성
+          href: configure-web-apps-for-iis-windows.md
+    - name: Python 코드 편집
+      items:
+        - name: Python 코드 편집
+          href: editing-python-code-in-visual-studio.md
+        - name: 코드 형식
+          href: formatting-python-code.md
+        - name: 코드 리팩터링
+          href: refactoring-python-code.md
+        - name: PyLint 사용
+          href: linting-python-code.md
+    - name: 사용자 지정 메뉴 명령 정의
+      href: defining-custom-python-project-commands.md
+    - name: 대화형 Python(REPL)
+      items:
+        - name: 대화형 Python(REPL)
+          href: python-interactive-repl-in-visual-studio.md
+        - name: IPython REPL 사용
+          href: interactive-repl-ipython.md
+    - name: 디버깅
+      items:
+        - name: 디버깅
+          href: debugging-python-in-visual-studio.md
+        - name: 원격 Linux 컴퓨터에서 코드 디버깅
+          href: debugging-python-code-on-remote-linux-machines.md
+    - name: Linux에서 Azure App Service에 게시
+      href: publishing-python-web-applications-to-azure-from-visual-studio.md
+    - name: C++ 조작
+      items:
+        - name: Python용 C++ 확장 만들기
+          href: working-with-c-cpp-python-in-visual-studio.md
+        - name: Python/C++ 혼합 모드 디버깅
+          href: debugging-mixed-mode-c-cpp-python-in-visual-studio.md
+        - name: 혼합 모드 디버깅 기호
+          href: debugging-symbols-for-mixed-mode-c-cpp-python.md
+    - name: 프로파일링
+      href: profiling-python-code-in-visual-studio.md
+    - name: 단위 테스트
+      href: unit-testing-python-in-visual-studio.md
+    - name: Cookiecutter 확장 사용
+      href: using-python-cookiecutter-templates.md
 - name: 참조
   items:
-  - name: 항목 템플릿
-    href: python-item-templates.md
-  - name: 옵션
-    href: python-support-options-and-settings-in-visual-studio.md
-ms.openlocfilehash: e295581bbb60c5febc98cde837f6e498aa93d042
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441589"
+    - name: 항목 템플릿
+      href: python-item-templates.md
+    - name: 옵션
+      href: python-support-options-and-settings-in-visual-studio.md

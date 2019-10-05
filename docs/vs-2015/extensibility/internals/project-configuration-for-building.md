@@ -1,27 +1,22 @@
 ---
 title: 프로젝트 빌드에 대 한 구성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], configuration for building
 - project configurations, building
 ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ef43fe505e859cb32f7c0fbe407bcc73c4f4e0e8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 953a02c27f40e92c41d2e43bc818727118eb0a27
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434844"
 ---
 # <a name="project-configuration-for-building"></a>빌드를 위한 프로젝트 구성
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "51725525"
  사용자가 만든 MyConfig2 이라는 새 솔루션 구성을 Project1는 기본적으로 디버그 구성을 솔루션 구성에 바인딩합니다. 또한 Project2 기본적으로 해당 MyConfig2 구성을 솔루션 구성에 바인딩합니다.  
   
 > [!NOTE]
->  바인딩은 대/소문자입니다.  
+> 바인딩은 대/소문자입니다.  
   
  사용자가 선택 하는 경우는 **다중 선택** 항목 환경 구성 드롭다운 목록에서 사용 가능한 구성의 목록을 제공 하는 대화 상자를 표시 합니다.  
   
@@ -52,7 +47,7 @@ ms.locfileid: "51725525"
  프로젝트 종속성 프로젝트는 빌드 순서를 결정 합니다. 솔루션 내의 프로젝트 빌드는 및 빌드 순서를 수정 하려면 종속성 탭을 사용 하 여 정확한 순서를 확인 대화 상자에서 빌드 순서 탭을 사용 합니다.  
   
 > [!NOTE]
->  확인란이 선택 되어 있지만 흐리게 표시 되 면 목록에서 프로젝트를 지정 하는 명시적 종속성으로 인해 환경에서 추가한 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> 또는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> , 인터페이스 및 변경할 수 없습니다. 예를 들어에서 프로젝트 참조에 추가 된 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 다른 프로젝트에 프로젝트 참조를 삭제 하 여만 제거할 수 있는 빌드 종속성이 자동으로 추가 합니다. 이렇게 종속성 루프를 만들 것 때문에 해당 확인란의 선택을 취소 되며 흐리게 표시 되 면 프로젝트를 선택할 수 없습니다 (예를 들어 Project1 Project2에 종속 됩니다 및 Project2 Project1에 종속 됩니다.)는 빌드가 중단 됩니다.  
+> 확인란이 선택 되어 있지만 흐리게 표시 되 면 목록에서 프로젝트를 지정 하는 명시적 종속성으로 인해 환경에서 추가한 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> 또는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> , 인터페이스 및 변경할 수 없습니다. 예를 들어에서 프로젝트 참조에 추가 된 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 다른 프로젝트에 프로젝트 참조를 삭제 하 여만 제거할 수 있는 빌드 종속성이 자동으로 추가 합니다. 이렇게 종속성 루프를 만들 것 때문에 해당 확인란의 선택을 취소 되며 흐리게 표시 되 면 프로젝트를 선택할 수 없습니다 (예를 들어 Project1 Project2에 종속 됩니다 및 Project2 Project1에 종속 됩니다.)는 빌드가 중단 됩니다.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 빌드 프로세스는 일반적인 컴파일 및 단일 빌드 명령을 사용 하 여 호출 되는 링크 작업을 포함 합니다. 다른 두 개의 빌드 프로세스 지원 될 수 있습니다: 이전 빌드 및 구성의 출력 항목 변경 되었는지 여부를 확인 하려면 최신 검사에서 모든 출력 항목을 삭제할 정리 작업을 합니다.  
   
@@ -68,4 +63,3 @@ ms.locfileid: "51725525"
  [관리 구성 옵션](../../extensibility/internals/managing-configuration-options.md)   
  [배포 관리를 위한 프로젝트 구성](../../extensibility/internals/project-configuration-for-managing-deployment.md)   
  [출력에 대한 프로젝트 구성](../../extensibility/internals/project-configuration-for-output.md)
-

@@ -1,14 +1,9 @@
 ---
 title: GetReferenceAssemblyPaths 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -18,18 +13,17 @@ ms.assetid: 178ef49c-5dee-405b-a14b-a37f41dc0609
 caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b885443fba9b92e1d4004987988e4d743f3921d1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f771f3c769ea41979210058a58dc1d0d125a4ffe
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149483"
 ---
 # <a name="getreferenceassemblypaths-task"></a>GetReferenceAssemblyPaths 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 다양한 프레임워크의 참조 어셈블리 경로를 반환합니다.  
   
 ## <a name="parameters"></a>매개 변수  
@@ -41,7 +35,7 @@ ms.locfileid: "49244486"
 |`FullFrameworkReferenceAssemblyPaths`|선택적 `String[]` 출력 매개 변수입니다.<br /><br /> 모니커의 프로필 부분을 고려하지 않고 `TargetFrameworkMoniker` 매개 변수를 기반으로 경로를 반환합니다. `TargetFrameworkMoniker`가 null이거나 비어 있으면 이 경로는 `String.Empty`가 됩니다.|  
 |`TargetFrameworkMoniker`|선택적 `String` 매개 변수입니다.<br /><br /> 참조 어셈블리 경로와 연결된 대상 프레임워크 모니커를 지정합니다.|  
 |`RootPath`|선택적 `String` 매개 변수입니다.<br /><br /> 참조 어셈블리 경로를 생성하는 데 사용할 루트 경로를 지정합니다.|  
-|`BypassFrameworkInstallChecks`|선택 사항 [부울] (<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) 매개 변수입니다.<br /><br /> `true`인 경우 대상 프레임워크에 따라 특정 런타임 프레임워크가 설치되었는지 확인하기 위해 기본적으로 `GetReferenceAssemblyPaths`가 수행하는 기본 검사를 무시합니다.|  
+|`BypassFrameworkInstallChecks`|선택적 [부울](<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) 매개 변수입니다.<br /><br /> `true`인 경우 대상 프레임워크에 따라 특정 런타임 프레임워크가 설치되었는지 확인하기 위해 기본적으로 `GetReferenceAssemblyPaths`가 수행하는 기본 검사를 무시합니다.|  
 |`TargetFrameworkMonikerDisplayName`|선택적 `String` 출력 매개 변수입니다.<br /><br /> 대상 프레임워크 모니커의 표시 이름을 지정합니다.|  
   
 ## <a name="remarks"></a>설명  
@@ -50,6 +44,3 @@ ms.locfileid: "49244486"
 ## <a name="see-also"></a>참고 항목  
  [작업](../msbuild/msbuild-tasks.md)   
  [작업 참조](../msbuild/msbuild-task-reference.md)
-
-
-

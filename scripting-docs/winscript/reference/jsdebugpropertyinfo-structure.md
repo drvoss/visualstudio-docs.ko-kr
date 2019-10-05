@@ -2,7 +2,6 @@
 title: JsDebugPropertyInfo 구조체 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,19 +15,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1e9d2ae0d93729d4c333509e0178f4c4829ebf13
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8aeb2dcfc116c8c735cda95fc9d7ab9da97cab3b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968648"
 ---
 # <a name="jsdebugpropertyinfo-structure"></a>JsDebugPropertyInfo 구조체
 속성에 대한 정보를 나타냅니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 typedef struct tagJsDebugPropertyInfo{   BSTR name;   BSTR type;   BSTR value;   BSTR fullName;   JS_PROPERTY_ATTRIBUTES attr;} JsDebugPropertyInfo;  
 ```  
   

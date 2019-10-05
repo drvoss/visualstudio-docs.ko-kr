@@ -1,27 +1,22 @@
 ---
 title: XCode 프로젝트 가져오기 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: aa4b8161-d98f-4a1a-9db3-520133bfc82f
 caps.latest.revision: 10
 author: corob-msft
 ms.author: corob
-manager: ghogen
-ms.openlocfilehash: b0e42c167e87f19781f9544e20e7870789af4ef9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4faa2ecae7f53d29e6aad92723ca6d12e50e2812
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150944"
 ---
 # <a name="import-an-xcode-project"></a>XCode 프로젝트 가져오기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 플랫폼 간 모바일 개발용 Microsoft Visual C++에서는 Visual Studio로 XCode 프로젝트 이동을 지원하여 플랫폼 간 라이브러리를 만들고 다른 프로젝트와 코드를 공유할 수 있습니다. XCode에서 가져오기 마법사를 사용하면 정적 라이브러리 또는 공유 코드 프로젝트로 사용하기 위해 프로젝트를 가져오고 XCode 대상에서 C++ 코드를 분할하는 프로세스가 간단해집니다. Visual Studio에서 iOS 관련 코드를 관리할 수 있으며 XCode를 계속 사용하여 스토리보드 및 빌드를 수행할 수 있습니다. Visual Studio와 XCode 간에 코드를 쉽게 이동하는 방법에 대한 자세한 내용은 XCode와 Visual Studio 간에 변경 내용 이동을 참조하세요.  
   
 ## <a name="using-the-import-from-xcode-wizard"></a>XCode에서 가져오기 마법사 사용  
@@ -43,7 +38,7 @@ ms.locfileid: "51754147"
   
     ![XCode에서 가져오기 마법사 대상 창](../cross-platform/media/cppmdd-u2-importxcode-destination.jpg "CPPMDD_U2_ImportXCode_Destination")  
   
-    **가져올 대상**에서 선택한 각 대상에 대해 마법사는 별도의 정적 라이브러리 프로젝트로 분할할 수 있는 C++ 코드 파일을 자동으로 검색하여 **C++ 프로젝트 항목** 섹션에 넣습니다. 다른 코드 및 리소스는 **XCode 프로젝트 항목** 섹션에 그대로 유지됩니다. 마법사에서 가져오기 프로세스를 완료하면 이러한 항목은 Visual Studio에서 별도의 정적 라이브러리 및 응용 프로그램 프로젝트가 됩니다. 기본적으로 단위 테스트 및 프레임워크 대상은 마법사에서 별도의 프로젝트로 분할되지 않습니다.  
+    **가져올 대상**에서 선택한 각 대상에 대해 마법사는 별도의 정적 라이브러리 프로젝트로 분할할 수 있는 C++ 코드 파일을 자동으로 검색하여 **C++ 프로젝트 항목** 섹션에 넣습니다. 다른 코드 및 리소스는 **XCode 프로젝트 항목** 섹션에 그대로 유지됩니다. 마법사에서 가져오기 프로세스를 완료하면 이러한 항목은 Visual Studio에서 별도의 정적 라이브러리 및 애플리케이션 프로젝트가 됩니다. 기본적으로 단위 테스트 및 프레임워크 대상은 마법사에서 별도의 프로젝트로 분할되지 않습니다.  
   
     각 프로젝트에 있는 파일을 변경하려면 위로 및 아래로 단추를 사용합니다. 각 프로젝트의 파일에 만족하는 경우 **다음**을 선택하여 계속합니다.  
   
@@ -59,7 +54,7 @@ ms.locfileid: "51754147"
   
     ![XCode에서 가져오기 전역 속성 창](../cross-platform/media/cppmdd-u2-importxcode-global.jpg "CPPMDD_U2_ImportXCode_Global")  
   
-    이러한 전역 경로는 Visual studio의 **옵션** 대화 상자에서도 설정할 수 있습니다. 이 대화 상자를 찾으려면 **도구** 메뉴에서 **옵션**을 선택합니다. **옵션** 대화 상자에서 **플랫폼 간**, **C++**, **iOS**, **전역 속성**을 확장합니다.  
+    이러한 전역 경로는 Visual studio의 **옵션** 대화 상자에서도 설정할 수 있습니다. 이 대화 상자를 찾으려면 **도구** 메뉴에서 **옵션**을 선택합니다. **옵션** 대화 상자에서 **플랫폼 간**, **C++** , **iOS**, **전역 속성**을 확장합니다.  
   
     **다음** 을 선택하여 계속 진행합니다.  
   
@@ -79,5 +74,4 @@ ms.locfileid: "51754147"
   
     마법사 설정을 사용하여 XCode 프로젝트를 가져오려면 **가져오기**를 선택합니다.  
   
-   XCode에서 가져오기 마법사는 선택한 XCode 프로젝트 대상에 해당하는 프로젝트를 Visual Studio에 만듭니다. 다른 C++ 프로젝트와 공유할 수 있는 코드는 별도의 공유 코드 및 정적 라이브러리 프로젝트로 분할됩니다. 나머지 코드는 Visual Studio에서 원격으로 빌드할 수 있는 iOS 라이브러리 및 응용 프로그램 프로젝트에 배치됩니다. Visual Studio와 XCode 간에 코드를 이동하는 방법에 대한 자세한 내용은 [XCode와 Visual Studio 간에 변경 내용 동기화](../cross-platform/sync-changes-between-xcode-and-visual-studio.md)를 참조하세요.
-
+   XCode에서 가져오기 마법사는 선택한 XCode 프로젝트 대상에 해당하는 프로젝트를 Visual Studio에 만듭니다. 다른 C++ 프로젝트와 공유할 수 있는 코드는 별도의 공유 코드 및 정적 라이브러리 프로젝트로 분할됩니다. 나머지 코드는 Visual Studio에서 원격으로 빌드할 수 있는 iOS 라이브러리 및 애플리케이션 프로젝트에 배치됩니다. Visual Studio와 XCode 간에 코드를 이동하는 방법에 대한 자세한 내용은 [XCode와 Visual Studio 간에 변경 내용 동기화](../cross-platform/sync-changes-between-xcode-and-visual-studio.md)를 참조하세요.

@@ -1,14 +1,9 @@
 ---
 title: IDebugDocumentTextEvents2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugDocumentTextEvents2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: a10cbb6b-11a8-4056-b42a-2ecebf0e690d
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6d7fb3c64c1cdbd0e52753b6cd7ec4da197d22f4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b574ae45dafed11ed28047859676524054951512
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797288"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678963"
 ---
 # <a name="idebugdocumenttextevents2"></a>IDebugDocumentTextEvents2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ IDebugDocumentTextEvents2 : IUnknown
  DE 소스 코드를 변경 하도록 지원 하기 위해이 인터페이스를 구현 합니다. 이 인터페이스를 구현 하는 동일한 개체에서 일반적으로 구현 됩니다 합니다 [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) 인터페이스입니다.  
   
 ## <a name="notes-for-callers"></a>호출자에 대 한 정보  
- [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] 호출을 통해이 인터페이스를 가져옵니다는 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A> 메서드. 합니다 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> 인터페이스에 대 한 호출에서 가져온는 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A> 메서드. <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> 인터페이스를 호출 하 여 가져온 합니다 [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) 메서드를 [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) 인터페이스.  
+ [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] 호출을 통해이 인터페이스를 가져옵니다는 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A> 메서드. 합니다 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> 인터페이스에 대 한 호출에서 가져온는 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A> 메서드. <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> 인터페이스를 호출 하 여 가져온 합니다 [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) 메서드를 [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) 인터페이스.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
  다음 표에서의 메서드를 보여 줍니다. `IDebugDocumentTextEvents2`합니다.  
@@ -59,11 +54,10 @@ IDebugDocumentTextEvents2 : IUnknown
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)   
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)
-

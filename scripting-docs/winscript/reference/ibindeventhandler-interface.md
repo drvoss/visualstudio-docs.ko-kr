@@ -2,7 +2,6 @@
 title: IBindEventHandler 인터페이스 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,19 +13,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 600981f2b395627e5ece597c637da500072ff94f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6c65a659f333de282f380b9b6a6e462b40ec6c4d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62991322"
 ---
 # <a name="ibindeventhandler-interface"></a>IBindEventHandler 인터페이스
-지정 된 이벤트 처리기를 처리 하는 개체를 제공 하는 호출자 수 있습니다.  
+호출자가 지정 된 이벤트 처리기를 처리 하는 개체를 제공할 수 있습니다.  
   
 ## <a name="methods"></a>메서드  
  상속 된 메서드 외에도 `IUnknown`, `IBindEventHandler` 인터페이스는 다음 메서드를 노출 합니다.  
   
 |메서드|설명|  
 |------------|-----------------|  
-|[IBindEventHandler::BindHandler](../../winscript/reference/ibindeventhandler-bindhandler.md)|개체에 이벤트를 바인딩합니다.|
+|[IBindEventHandler::BindHandler](../../winscript/reference/ibindeventhandler-bindhandler.md)|이벤트 개체에 바인딩합니다.|

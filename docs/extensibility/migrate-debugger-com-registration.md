@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 45cfcee6-7a68-4d4f-b3f6-e2d8a0fa066a
 author: gregg-miskelly
 ms.author: greggm
-manager: douge
+manager: jillfra
 ms.workload:
 - greggm
-ms.openlocfilehash: 0b81d0dc38e4fb6c6bb14860634d41d85aa4dee9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 74fbb959f8272be001aad8a576724d5eb1ad6157
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433697"
 ---
 # <a name="migrate-64-bit-debugger-com-class-registration"></a>64 비트 디버거 COM 클래스 등록 마이그레이션
 
@@ -25,7 +25,7 @@ COM 등록 하는 디버거 확장에 대 한 클래스의 HKEY_CLASSES_ROOT reg
 
 다음은 관리 되는 하나를 등록 하는 예제 msvsmon-comclass-def 파일 및 하나의 기본 클래스입니다.
 
-파일 이름: *MyCompany.MyExample.msvsmon-comclass-def.json*
+FileName: *MyCompany.MyExample.msvsmon-comclass-def.json*
 
 ```json
 {

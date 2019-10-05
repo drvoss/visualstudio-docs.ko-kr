@@ -2,20 +2,18 @@
 title: R 코드 편집
 description: Visual Studio는 모든 기능과 확장 사용 기능을 유지하면서 R에 맞게 조정된 편집 환경을 제공합니다.
 ms.date: 11/05/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: c1d44e6d316db2ddce799784169a11a06578fe7f
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 7ecfd8f1cf50e94991ce2fd94ad94ac9815c92ca
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62938803"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>Visual Studio에서 R 코드 편집
 
@@ -41,7 +39,7 @@ Visual Studio에서는 편집기에 있는 구문 오류에 밑줄을 추가합�
 
 ## <a name="edit-and-organize-code"></a>코드 구성 및 편집
 
-코드를 입력할 때 RTVS에서는 [IntelliSense](r-intellisense.md) 페이지에 설명된 대로 자동 완성을 제공합니다. 또한 중괄호 및 괄호 완성과 같은 자동 서식 지정이 수행됩니다. 
+코드를 입력할 때 RTVS에서는 [IntelliSense](r-intellisense.md) 페이지에 설명된 대로 자동 완성을 제공합니다. 또한 중괄호 및 괄호 완성과 같은 자동 서식 지정이 수행됩니다.
 
 ![인라인 서식 지정 애니메이션](media/editing-inline-formatting.gif)
 
@@ -99,7 +97,7 @@ f <- function(a) { return(a + 1) }
 
 ## <a name="inserting-roxygen-comments"></a>Roxygen 주석 삽입
 
-RTVS에서는 함수의 매개 변수 이름을 사용하여 [Roxygen](http://roxygen.org/) 주석을 생성할 수 있는 바로 가기를 제공합니다. 함수 정의 위의 빈 줄에 `###`을 입력하면 됩니다.
+RTVS에서는 함수의 매개 변수 이름을 사용하여 [Roxygen](https://cran.r-project.org/web/packages/roxygen2/index.html) 주석을 생성할 수 있는 바로 가기를 제공합니다. 함수 정의 위의 빈 줄에 `###`을 입력하면 됩니다.
 
 ![Roxygen 주석 삽입 애니메이션](media/editing-roxygen-comments.gif)
 
@@ -115,7 +113,7 @@ RTVS에서는 함수의 매개 변수 이름을 사용하여 [Roxygen](http://ro
 
 **R** > **고급** 탭의 옵션은 RTVS에 관련됩니다.
 
-| 그룹화 | 옵션 | 기본 | 설명 |
+| 그룹화 | 옵션 | 기본값 | 설명 |
 | --- | --- | --- | --- |
 | 서식 | 자동 서식 지정 | 켜기 | 입력할 때 코드 서식을 다시 지정합니다. **선택 영역 서식** 또는 **문서 서식** 명령에 영향을 미치지 않습니다. |
 | | 확장된 중괄호 | 끄기 | 새 줄에 여는 중괄호({)를 배치합니다. |
@@ -130,6 +128,6 @@ RTVS에서는 함수의 매개 변수 이름을 사용하여 [Roxygen](http://ro
 | | 첫 번째 문자 입력 시 완성 목록 | 켜기 | 첫 번째 문자 형식에 대한 완성 목록을 표시합니다. 끄기로 설정되면 **편집** > **IntelliSense** > **멤버 목록**(**Ctrl**+**J**)을 통해 완성 목록을 표시합니다. |
 | | **Tab** 키를 누를 때 완성 목록 | 끄기 | 하나 이상의 문자를 입력하고 **Tab**을 눌러서 완성 목록을 호출합니다. |
 | | 일부만 입력된 인수 이름 일치 | 끄기 | 함수 호출에 인수 이름을 입력하면 시그니처 도움말에는 가장 일치하는 인수에 대한 설명이 표시됩니다. |
-| 대화형 창 | R 콘솔의 구문 검사 | 끄기 | 대화형 창에서 구문 검사를 적용합니다. 여러 줄 문에서는 구문 검사가 제대로 작동하지 않을 수 있습니다. | 
+| 대화형 창 | R 콘솔의 구문 검사 | 끄기 | 대화형 창에서 구문 검사를 적용합니다. 여러 줄 문에서는 구문 검사가 제대로 작동하지 않을 수 있습니다. |
 | 개요 | 코드 개요 | 켜기 | 여러 줄 문 같은 영역에 대한 접을 수 있는 영역을 자동으로 만듭니다. |
 | 구문 검사 | 구문 오류 표시 | 켜기 | 코드의 자동 구문 검사를 사용하도록 설정합니다. |

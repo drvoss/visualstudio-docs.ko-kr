@@ -2,21 +2,20 @@
 title: 워크플로 디자이너-CorrelationInitializers 대화 상자를 추가 합니다.
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - AddCorrelationInitializers.UI
 ms.assetid: c0517467-d54a-4ee6-aef0-c19b96b6f395
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67dea88845ffbfab8350e4a1134e09436c95321b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 21c030295d325ea1ee4d546356f8cda5ef6ffd3f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946653"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>상관 관계 이니셜라이저 추가 대화 상자
 
@@ -27,7 +26,7 @@ ms.locfileid: "53860356"
 - 쿼리 기반
 - 컨텍스트(context)
 - 콜백 컨텍스트
-- 요청-회신
+- request-reply
 
 다음 표에 사용자 인터페이스 (UI) 요소에는 **상관 관계 이니셜라이저 추가** 대화 상자:
 
@@ -43,7 +42,6 @@ ms.locfileid: "53860356"
 
  **수신** 활동 디자이너에서 끌 수 있습니다 합니다 **도구 상자** 활동을 배치 하는 위치는 워크플로 디자이너 화면에 끌어 놓 및 합니다. 삭제 된 **수신** 활동 디자이너를 만듭니다를 <xref:System.ServiceModel.Activities.Receive> 기본값을 사용 하 여 작업 <xref:System.Activities.Activity.DisplayName%2A> 수신 합니다. 선택 합니다 **수신** 활동 디자이너 및 (컬렉션) 텍스트 옆 줄임표 단추를 클릭 합니다 **CorrelationInitializers** 속성 표에서 속성을 **추가 상관 관계 이니셜라이저** 대화 상자를 표시 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-- [추가 상관 관계 대화 상자](http://msdn.microsoft.com/en-us/9e41a149-e8ab-41b1-8886-ea06a63041b6)
 - [상관 관계 초기화 대화 상자](../workflow-designer/initialize-correlation-dialog-box.md)

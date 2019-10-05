@@ -1,11 +1,8 @@
 ---
 title: While 활동 디자이너 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.While.UI
@@ -13,13 +10,13 @@ ms.assetid: ea008091-2e4c-4f64-bfa5-afb919552446
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 529978a9303892aed74a5d490a19b542357303f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 36752df3d8ffbf33b8ea95570d6a4efe8c8cd3be
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263161"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62855406"
 ---
 # <a name="while-activity-designer"></a>While 활동 디자이너
 
@@ -29,7 +26,7 @@ ms.locfileid: "49263161"
 
 다음 표에서는 가장 유용한 <xref:System.Activities.Statements.While> 활동 속성을 보여 주고 디자이너에서 이러한 속성을 사용하는 방법을 설명합니다.
 
-|속성 이름|필수|용도|
+|속성 이름|필수|사용|
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|머리글에 <xref:System.Activities.Statements.While> 활동 디자이너의 이름을 지정합니다. 기본값은 While입니다. 값을 편집할 수 있습니다 합니다 **속성** 창 또는 활동 디자이너 머리글에서 직접.<br /><br /> <xref:System.Activities.Activity.DisplayName%2A>은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
 |<xref:System.Activities.Statements.While.Body%2A>|False|활동 실행을 포함 하는 동안 합니다 <xref:System.Activities.Statements.While.Condition%2A> 로 평가 **true**합니다.|

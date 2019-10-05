@@ -4,17 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 14df0183076125e487873bbb9865b2481e277a5b
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: b01af2aa269cbaddbd84d24827b1a77e97d52d8a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845017"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818528"
 ---
 # <a name="add-new-connections"></a>새 연결 추가
 
@@ -26,7 +24,7 @@ ms.locfileid: "34845017"
 
 - 클라우드 탐색기
 
-   선택 하 여 수동으로 Visual Studio 확장으로이 창의 설치 **도구가** > **확장 및 업데이트** > **Online**  >  **Visual Studio 마켓플레이스**합니다. 탐색 하 고 Azure 서비스에 연결에 대 한 특수 한 기능을 제공 합니다.
+   이 창에서 Visual Studio 확장을 수동으로 설치 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.CloudExplorerForVS)합니다. 탐색 하 고 Azure 서비스에 연결에 대 한 특수 한 기능을 제공 합니다.
 
 - SQL Server 개체 탐색기
 

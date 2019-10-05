@@ -1,26 +1,21 @@
 ---
 title: 프로젝트 중첩 명령에 대 한 처리를 구현 합니다. | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, implementing command handling
 ms.assetid: 48a9d66e-d51c-4376-a95a-15796643a9f2
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 113cc2c061b008892921aac348f3eb56a7bef0d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2fbce80b2e8c337eddf0d34954a7fd70b895d891
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445439"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>중첩된 프로젝트에 대한 명령 처리 구현
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ ms.locfileid: "51742564"
 IDE를 통해 전달 되는 명령에 전달할 수는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> 및 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 인터페이스 중첩 된 프로젝트 또는 부모 프로젝트를 필터링 하거나 명령을 재정의할 수 있습니다.  
   
 > [!NOTE]
->  부모 프로젝트에서 일반적으로 처리 하는 명령만 필터링 할 수 있습니다. 같은 명령 **빌드** 하 고 **배포** 에서 처리 되는 IDE를 필터링 할 수 없습니다.  
+> 부모 프로젝트에서 일반적으로 처리 하는 명령만 필터링 할 수 있습니다. 같은 명령 **빌드** 하 고 **배포** 에서 처리 되는 IDE를 필터링 할 수 없습니다.  
   
  다음 단계는 명령 처리를 구현 하기 위한 프로세스를 설명 합니다.  
   
@@ -62,4 +57,3 @@ IDE를 통해 전달 되는 명령에 전달할 수는 <xref:Microsoft.VisualStu
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>   
  [명령, 메뉴 및 도구 모음](../../extensibility/internals/commands-menus-and-toolbars.md)   
  [프로젝트 중첩](../../extensibility/internals/nesting-projects.md)
-

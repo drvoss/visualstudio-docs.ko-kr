@@ -1,27 +1,22 @@
 ---
 title: 창 속성 대화 상자, 탭 처리 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Window Properties dialog box, Process Tab
 ms.assetid: bb464429-4e7c-4919-98b5-1aaafe89bb5f
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c2be6ec4c7f532c30363e4931e2a0e881131df10
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4a8d4726ba91be6df455d16907a0cf122cc1effa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51720831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192316"
 ---
 # <a name="process-tab-window-properties-dialog-box"></a>창 속성 대화 상자, 프로세스 탭
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,6 +29,3 @@ ms.locfileid: "51720831"
 |-----------|-----------------|  
 |**프로세스 ID**|이 창을 만든 스레드를 소유 하는 프로세스의 ID입니다. 이 프로세스의 속성을 보려면이 값을 선택 합니다.|  
 |**스레드 ID**|이 창을 만든 스레드 ID입니다. 이 스레드에 대 한 속성을 보려면이 값을 선택 합니다.|
-
-
-

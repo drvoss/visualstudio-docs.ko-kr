@@ -1,14 +1,9 @@
 ---
 title: 식 계산기 아키텍처 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - architecture, expression evaluators
 - expression evaluators, architecture
@@ -16,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: aad7c4c6-1dc1-4d32-b975-f1fdf76bdeda
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5ca1c7af9ee8a8a779cf238816125c0bc20199ca
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e8e0aa8f5cc45e0f6e012ecb3f0a27a22725a259
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421222"
 ---
 # <a name="expression-evaluator-architecture"></a>식 계산기 아키텍처
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  Visual Studio 2015에서 식 계산기를 구현 하는 이러한 방식으로 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 정보를 참조 하세요 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 하 고 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)합니다.  
+> Visual Studio 2015에서 식 계산기를 구현 하는 이러한 방식으로 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 정보를 참조 하세요 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 하 고 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)합니다.  
   
  Visual Studio 디버그 패키지를 전용 언어 통합 필요한 식 계산기 (EE) 인터페이스를 구현 및 호출 하는 공용 언어 런타임 기호 공급자 (SP) 및 바인더 인터페이스를 의미 합니다. SP 및 바인더 개체를 현재 실행 주소와 함께 식이 계산 되는 컨텍스트입니다. 이러한 인터페이스를 만들고 사용 하는 정보는 EE의 아키텍처의 주요 개념을 나타냅니다.  
   
@@ -64,4 +59,3 @@ ms.locfileid: "51772705"
  [CLR 식 계산기 작성](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [로컬 항목 표시](../../extensibility/debugger/displaying-locals.md)   
  [로컬 항목 값 변경](../../extensibility/debugger/changing-the-value-of-a-local.md)
-

@@ -1,14 +1,9 @@
 ---
 title: SccCheckout 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccCheckout
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 06e9ecd7-fc09-40c1-9dd1-2b56c622c80b
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7c1a900a2052008effe084eee7cedbc9acd9d848
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f23290ebfadd1b6e3d34f808d5ea0ccccbb3c319
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200159"
 ---
 # <a name="scccheckout-function"></a>SccCheckout 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +63,7 @@ SCCRTN SccCheckout (
 ## <a name="return-value"></a>반환 값  
  원본 제어 플러그 인이 함수의 구현은 다음 값 중 하나를 반환 하:  
   
-|값|설명|  
+|값|Description|  
 |-----------|-----------------|  
 |SCC_OK|체크 아웃 했습니다.|  
 |SCC_E_FILENOTCONTROLLED|선택한 파일이 소스 코드 제어 없습니다.|  
@@ -83,4 +78,3 @@ SCCRTN SccCheckout (
 ## <a name="see-also"></a>참고 항목  
  [원본 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)   
  [특정 명령에 사용되는 Bitflag](../extensibility/bitflags-used-by-specific-commands.md)
-

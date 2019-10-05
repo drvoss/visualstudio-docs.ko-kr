@@ -1,25 +1,20 @@
 ---
 title: 원격 디버깅용 Windows 방화벽 구성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 66e3230a-d195-4473-bbce-8ca198516014
 caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 39854b47bd31660fdc523bfd122363d5958df8e2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 8f41aa8c074f724976adabaa99df0e8ca0064fa3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161546"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>원격 디버깅을 위해 Windows 방화벽 구성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,15 +44,15 @@ ms.locfileid: "51734591"
 ## <a name="to-configure-windows-firewall-on-the-visual-studio-computer"></a>Visual Studio 컴퓨터에서 Windows 방화벽을 구성하려면  
  Windows 방화벽을 구성하기 위한 지침은 운영 체제마다 약간 다릅니다. Windows 7 또는 Windows Server 2008에서는 **프로그램** 이란 단어가 사용되고, Windows 8/8.1, Windows 10 및 Windows Server 2012에서는 **앱** 이란 단어가 사용됩니다.  다음 단계에서는 **앱**이란 단어를 사용합니다.  
   
-1.  Windows 방화벽 페이지를 엽니다. **시작** 메뉴 검색 상자에 **Windows 방화벽**을 입력합니다.  
+1. Windows 방화벽 페이지를 엽니다. **시작** 메뉴 검색 상자에 **Windows 방화벽**을 입력합니다.  
   
-2.  **Windows 방화벽을 통해 앱 또는 기능 허용**을 클릭합니다.  
+2. **Windows 방화벽을 통해 앱 또는 기능 허용**을 클릭합니다.  
   
-3.  **허용된 앱 및 기능** 목록에서 **Visual Studio 원격 디버거 검색**을 찾습니다. 표시되는 경우 선택되었으며 하나 이상의 네트워크 종류도 선택되었는지 확인합니다.  
+3. **허용된 앱 및 기능** 목록에서 **Visual Studio 원격 디버거 검색**을 찾습니다. 표시되는 경우 선택되었으며 하나 이상의 네트워크 종류도 선택되었는지 확인합니다.  
   
-4.  **Visual Studio 원격 디버거 검색** 이 표시되지 않는 경우 **다른 앱 허용**을 클릭합니다. 여전히 표시 되지 않는 경우에 **앱 추가** 창에서 클릭 **찾아보기** 이동한  **\<Visual Studio 설치 디렉터리 > \Common7\IDE\Remote디버거**. 응용 프로그램에 대한 적절한 폴더(x86, x64, Appx)를 찾은 다음 **msvsmon.exe**를 선택합니다. **추가**를 클릭합니다.  
+4. **Visual Studio 원격 디버거 검색** 이 표시되지 않는 경우 **다른 앱 허용**을 클릭합니다. 여전히 표시 되지 않는 경우에 **앱 추가** 창에서 클릭 **찾아보기** 이동한  **\<Visual Studio 설치 디렉터리 > \Common7\IDE\Remote디버거**. 애플리케이션에 대한 적절한 폴더(x86, x64, Appx)를 찾은 다음 **msvsmon.exe**를 선택합니다. **추가**를 클릭합니다.  
   
-5.  **허용된 앱 및 기능** 목록에서 **Visual Studio 원격 디버깅 모니터**를 선택합니다. 원격 디버깅 모니터에서 통신하려는 네트워크 종류(**도메인, 홈/회사(개인), 공용**)를 하나 이상 선택합니다. 종류는 Visual Studio 컴퓨터가 연결된 네트워크를 포함해야 합니다.  
+5. **허용된 앱 및 기능** 목록에서 **Visual Studio 원격 디버깅 모니터**를 선택합니다. 원격 디버깅 모니터에서 통신하려는 네트워크 종류(**도메인, 홈/회사(개인), 공용**)를 하나 이상 선택합니다. 종류는 Visual Studio 컴퓨터가 연결된 네트워크를 포함해야 합니다.  
   
 ## <a name="to-open-a-port-on-the-visual-studio-computer-to-enable-discovery"></a>검색을 사용할 수 있도록 Visual Studio 컴퓨터에서 포트를 열려면  
  원격 디버거를 실행하는 컴퓨터의 검색을 허용하려면 UDP 포트 3702 수신을 허용해야 합니다. 추가하려면 방화벽에서 포트를 구성하는 방법을 참조하세요.  
@@ -69,15 +64,15 @@ ms.locfileid: "51734591"
   
  Windows 방화벽을 구성하기 위한 지침은 운영 체제마다 약간 다릅니다. Windows 7 또는 Windows Server 2008에서는 **프로그램** 이란 단어가 사용되고, Windows 8/8.1, Windows 10 및 Windows Server 2012에서는 **앱** 이란 단어가 사용됩니다.  다음 단계에서는 **앱**이란 단어를 사용합니다.  
   
-1.  Windows 방화벽 페이지를 엽니다. **시작** 메뉴 검색 상자에 **Windows 방화벽**을 입력합니다.  
+1. Windows 방화벽 페이지를 엽니다. **시작** 메뉴 검색 상자에 **Windows 방화벽**을 입력합니다.  
   
-2.  **Windows 방화벽을 통해 앱 또는 기능 허용**을 클릭합니다.  
+2. **Windows 방화벽을 통해 앱 또는 기능 허용**을 클릭합니다.  
   
-3.  **허용된 앱 및 기능** 목록에서 **Visual Studio 원격 디버깅 모니터**를 찾습니다. 표시되는 경우 선택되었으며 하나 이상의 네트워크 종류도 선택되었는지 확인합니다.  
+3. **허용된 앱 및 기능** 목록에서 **Visual Studio 원격 디버깅 모니터**를 찾습니다. 표시되는 경우 선택되었으며 하나 이상의 네트워크 종류도 선택되었는지 확인합니다.  
   
-4.  **Visual Studio 원격 디버깅 모니터** 가 표시되지 않는 경우 **다른 앱 허용**을 클릭합니다. 여전히 표시 되지 않는 경우에 **추가 된 앱 창의**, 클릭 **찾아보기** 이동한  **\<Visual Studio 설치 디렉터리 > \Common7\IDE\Remote디버거**. 응용 프로그램에 대한 적절한 폴더(x86, x64, Appx)를 찾은 다음 **msvsmon.exe**를 선택합니다. **추가**를 클릭합니다.  
+4. **Visual Studio 원격 디버깅 모니터** 가 표시되지 않는 경우 **다른 앱 허용**을 클릭합니다. 여전히 표시 되지 않는 경우에 **추가 된 앱 창의**, 클릭 **찾아보기** 이동한  **\<Visual Studio 설치 디렉터리 > \Common7\IDE\Remote디버거**. 애플리케이션에 대한 적절한 폴더(x86, x64, Appx)를 찾은 다음 **msvsmon.exe**를 선택합니다. **추가**를 클릭합니다.  
   
-5.  **허용된 앱** 목록에서 **Visual Studio 원격 디버깅 모니터**를 선택합니다. 원격 디버깅 모니터에서 통신하려는 네트워크 종류(**도메인, 홈/회사(개인), 공용**)를 하나 이상 선택합니다. 종류는 Visual Studio 컴퓨터가 연결된 네트워크를 포함해야 합니다.  
+5. **허용된 앱** 목록에서 **Visual Studio 원격 디버깅 모니터**를 선택합니다. 원격 디버깅 모니터에서 통신하려는 네트워크 종류(**도메인, 홈/회사(개인), 공용**)를 하나 이상 선택합니다. 종류는 Visual Studio 컴퓨터가 연결된 네트워크를 포함해야 합니다.  
   
 ## <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>원격 디버깅을 사용할 수 있도록 하는 원격 컴퓨터의 포트  
   
@@ -100,24 +95,21 @@ ms.locfileid: "51734591"
   
 ## <a name="how-to-configure-ports-in-windows-firewall"></a>Windows 방화벽에서 포트를 구성하는 방법  
   
-1.  **시작** 메뉴에서 **고급 보안이 포함된 Windows 방화벽**을 검색합니다.  
+1. **시작** 메뉴에서 **고급 보안이 포함된 Windows 방화벽**을 검색합니다.  
   
-2.  **인바운드 규칙** 또는 **아웃바운드 규칙** 을 클릭한 다음 **작업** 목록에서 **새 규칙** 을 클릭합니다.  
+2. **인바운드 규칙** 또는 **아웃바운드 규칙** 을 클릭한 다음 **작업** 목록에서 **새 규칙** 을 클릭합니다.  
   
-3.  **규칙 유형** 페이지에서 **포트** 를 선택하고 **다음**을 클릭합니다.  
+3. **규칙 유형** 페이지에서 **포트** 를 선택하고 **다음**을 클릭합니다.  
   
-4.  **프로토콜 및 포트** 페이지에서 포트 프로토콜(TCP 또는 UDP)을 선택합니다. **특정 로컬 포트** 를 선택하고 프로토콜에 사용하도록 설정할 포트 번호를 하나 이상 입력합니다. 번호를 쉼표로 구분합니다. **다음**을 클릭합니다.  
+4. **프로토콜 및 포트** 페이지에서 포트 프로토콜(TCP 또는 UDP)을 선택합니다. **특정 로컬 포트** 를 선택하고 프로토콜에 사용하도록 설정할 포트 번호를 하나 이상 입력합니다. 번호를 쉼표로 구분합니다. **다음**을 클릭합니다.  
   
-5.  **작업** 페이지에서 **연결 허용** 을 선택하고 **다음**을 클릭합니다.  
+5. **작업** 페이지에서 **연결 허용** 을 선택하고 **다음**을 클릭합니다.  
   
-6.  **프로필** 페이지에서 포트에 사용하도록 설정할 네트워크 종류를 하나 이상 선택합니다. 선택한 유형은 원격 컴퓨터가 연결된 네트워크를 포함해야 합니다. **다음**을 클릭합니다.  
+6. **프로필** 페이지에서 포트에 사용하도록 설정할 네트워크 종류를 하나 이상 선택합니다. 선택한 유형은 원격 컴퓨터가 연결된 네트워크를 포함해야 합니다. **다음**을 클릭합니다.  
   
-7.  **이름** 페이지에서 규칙의 이름을 입력하고 **마침**을 클릭합니다.  
+7. **이름** 페이지에서 규칙의 이름을 입력하고 **마침**을 클릭합니다.  
   
-8.  **인바운드 규칙** 또는 **아웃바운드 규칙** 목록에 새 규칙이 표시됩니다.  
+8. **인바운드 규칙** 또는 **아웃바운드 규칙** 목록에 새 규칙이 표시됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Remote Debugging](../debugger/remote-debugging.md)
-
-
-

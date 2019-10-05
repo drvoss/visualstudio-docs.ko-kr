@@ -1,27 +1,22 @@
 ---
 title: 레거시 언어 서비스 파서 및 검사기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - parsers, language services [managed package framework]
 - language services [managed package framework], Parsers
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fd419c569a298afd37548fd7b85a23cad733e371
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 64f9a9f4d0785f033191ab527084f0dddb1ff104
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786407"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434371"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>레거시 언어 서비스 파서 및 검사기
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,9 +45,9 @@ namespace MyNamespace
 |----------------|----------------|  
 |네임 스페이스, 클래스, public void int|keyword|  
 |=|연산자|  
-|{ } ( ) ;|구분 기호|  
+|{ } ( ) ;|구분 기호(delimiter)|  
 |MyNamespace "," MyClass "," MyFunction "," arg1 "," var1|식별자|  
-|MyNamespace|네임스페이스(namespace)|  
+|MyNamespace|namespace|  
 |MyClass|클래스|  
 |MyFunction|메서드|  
 |arg1|매개 변수|  
@@ -63,7 +58,7 @@ namespace MyNamespace
 ## <a name="types-of-parsers"></a>파서 형식  
  언어 서비스 파서 컴파일러의 일부로 사용 하는 파서 같지는 않습니다. 그러나이 유형의 파서 컴파일러 파서 같은 동일한 방식으로 스캐너와 파서를 사용 해야 합니다.  
   
-- 스캐너 토큰 유형을 식별 하는 데 사용 됩니다. 이 정보는 구문 강조 표시 한 토큰 형식 예를 들어, 다른 작업을 트리거할 수 있는 중괄호 일치를 신속 하 게 식별 하는 데 사용 됩니다. 이 스캐너는 표현 된 <xref:Microsoft.VisualStudio.Package.IScanner> 인터페이스입니다.  
+- 스캐너 토큰 유형을 식별 하는 데 사용 됩니다. 이 정보는 구문 강조에 사용되며 중괄호 일치 등의 다른 작업을 트리거할 수 있는 토큰 유형을 신속하게 식별하는 데 사용됩니다. 이 스캐너는 표현 된 <xref:Microsoft.VisualStudio.Package.IScanner> 인터페이스입니다.  
   
 - 파서 토큰의 범위와 함수를 설명 하는 데 사용 됩니다. 이 정보는 메서드, 변수, 매개 변수, 선언 등의 언어 요소를 식별 하 고 멤버와 메서드 서명이 컨텍스트를 기반으로 목록을 제공 IntelliSense 작업에 사용 됩니다. 중괄호 및 괄호와 같은 일치 하는 언어 요소 쌍을 찾으려고이 파서도 사용 됩니다. 이 파서를 통해 액세스 합니다 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 의 메서드는 <xref:Microsoft.VisualStudio.Package.LanguageService> 클래스.  
   
@@ -73,7 +68,7 @@ namespace MyNamespace
  (여기서 토큰 변환할 실행 코드 형태의) 컴파일러의 일부로 사용 되는 파서를 달리 하는 언어 서비스 파서 다양 한 이유로 및 많은 다른 컨텍스트에서 호출할 수 있습니다. 이 접근 방식을 구현 하는 방법을 합니다 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 의 메서드는 <xref:Microsoft.VisualStudio.Package.LanguageService> 클래스에 게 달려 있습니다. 유의 해야 하는 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 백그라운드 스레드에서 메서드를 호출할 수 있습니다.  
   
 > [!CAUTION]
->  합니다 <xref:Microsoft.VisualStudio.Package.ParseRequest> 구조에 대 한 참조를 포함 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 개체입니다. 이 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 백그라운드 스레드에서 개체를 사용할 수 없습니다. 사실, 백그라운드 스레드에서 여러 기본 MPF 클래스를 사용할 수 없습니다. 여기에 포함 된 <xref:Microsoft.VisualStudio.Package.Source>, <xref:Microsoft.VisualStudio.Package.ViewFilter>, <xref:Microsoft.VisualStudio.Package.CodeWindowManager> 클래스 및 뷰를 사용 하 여 직접 또는 간접적으로 통신 하는 다른 클래스.  
+> 합니다 <xref:Microsoft.VisualStudio.Package.ParseRequest> 구조에 대 한 참조를 포함 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 개체입니다. 이 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 백그라운드 스레드에서 개체를 사용할 수 없습니다. 사실, 백그라운드 스레드에서 여러 기본 MPF 클래스를 사용할 수 없습니다. 여기에 포함 된 <xref:Microsoft.VisualStudio.Package.Source>, <xref:Microsoft.VisualStudio.Package.ViewFilter>, <xref:Microsoft.VisualStudio.Package.CodeWindowManager> 클래스 및 뷰를 사용 하 여 직접 또는 간접적으로 통신 하는 다른 클래스.  
   
  이 파서 일반적으로 구문 분석 하 라고 또는 구문 분석의 값을 설명 하는 경우 전체 원본 파일의 첫 번째 시간 <xref:Microsoft.VisualStudio.Package.ParseReason> 지정 됩니다. 에 대 한 후속 호출을 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 메서드 구문 분석 된 코드의 작은 부분을 처리 하 고 이전 전체 구문 분석 작업의 결과 사용 하 여 훨씬 더 빠르게 실행할 수 있습니다. 합니다 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 메서드를 통해 구문 분석 작업의 결과 통신 합니다 <xref:Microsoft.VisualStudio.Package.AuthoringSink> 및 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 개체입니다. <xref:Microsoft.VisualStudio.Package.AuthoringSink> 개체 특정 이유로 구문 분석에 범위에 대 한 내용은 예를 들어 중괄호 또는 매개 변수 목록에 있는 메서드 시그니처를 일치 하는 정보를 수집를 사용 합니다. 합니다 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 선언 및 메서드 시그니처 및 지원의 컬렉션을 이동 하는 고급 편집 옵션 제공 (**정의로 이동**, **선언으로 이동**, **로 이동 참조**).  
   
@@ -87,29 +82,29 @@ namespace MyNamespace
   
  언어 서비스는 중괄호를 지원함을 가정 합니다.  
   
-1.  사용자가 닫는 중괄호 (}).  
+1. 사용자가 닫는 중괄호 (}).  
   
-2.  커서 씩 고급, 중괄호는 소스 파일의 커서 위치에 삽입 됩니다.  
+2. 커서 씩 고급, 중괄호는 소스 파일의 커서 위치에 삽입 됩니다.  
   
-3.  합니다 <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> 의 메서드는 <xref:Microsoft.VisualStudio.Package.Source> 클래스는 형식화 된 닫는 중괄호를 사용 하 여 호출 됩니다.  
+3. 합니다 <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> 의 메서드는 <xref:Microsoft.VisualStudio.Package.Source> 클래스는 형식화 된 닫는 중괄호를 사용 하 여 호출 됩니다.  
   
-4.  <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> 메서드 호출을 <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> 에서 메서드는 <xref:Microsoft.VisualStudio.Package.Source> 커서의 현재 위치 바로 앞 위치에서 토큰을 가져오려면 클래스입니다. 이 토큰 형식의 닫는 중괄호에 해당).  
+4. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> 메서드 호출을 <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> 에서 메서드는 <xref:Microsoft.VisualStudio.Package.Source> 커서의 현재 위치 바로 앞 위치에서 토큰을 가져오려면 클래스입니다. 이 토큰 형식의 닫는 중괄호에 해당).  
   
-    1.  <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> 메서드 호출을 <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> 메서드를 <xref:Microsoft.VisualStudio.Package.Colorizer> 개체를 현재 줄에서 모든 토큰을 가져옵니다.  
+    1. <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> 메서드 호출을 <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> 메서드를 <xref:Microsoft.VisualStudio.Package.Colorizer> 개체를 현재 줄에서 모든 토큰을 가져옵니다.  
   
-    2.  <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> 메서드 호출을 <xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A> 메서드를 <xref:Microsoft.VisualStudio.Package.IScanner> 현재 줄의 텍스트를 사용 하 여 개체입니다.  
+    2. <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> 메서드 호출을 <xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A> 메서드를 <xref:Microsoft.VisualStudio.Package.IScanner> 현재 줄의 텍스트를 사용 하 여 개체입니다.  
   
-    3.  <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> 메서드를 반복적으로 호출 합니다 <xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A> 메서드는 <xref:Microsoft.VisualStudio.Package.IScanner> 현재 줄에서 모든 토큰을 수집 하는 개체.  
+    3. <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> 메서드를 반복적으로 호출 합니다 <xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A> 메서드는 <xref:Microsoft.VisualStudio.Package.IScanner> 현재 줄에서 모든 토큰을 수집 하는 개체.  
   
-    4.  <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> 에서 개인 메서드를 호출 하는 메서드를 <xref:Microsoft.VisualStudio.Package.Source> 토큰 목록 전달에서 얻은 및 원하는 위치를 포함 하는 토큰을 가져오는 클래스를 <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> 메서드.  
+    4. <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> 에서 개인 메서드를 호출 하는 메서드를 <xref:Microsoft.VisualStudio.Package.Source> 토큰 목록 전달에서 얻은 및 원하는 위치를 포함 하는 토큰을 가져오는 클래스를 <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> 메서드.  
   
-5.  <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> 메서드가 토큰 트리거 플래그를 찾습니다 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 에서 반환 되는 토큰에는 <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> 메서드, 즉 닫는 중괄호를 나타내는 토큰).  
+5. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> 메서드가 토큰 트리거 플래그를 찾습니다 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 에서 반환 되는 토큰에는 <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> 메서드, 즉 닫는 중괄호를 나타내는 토큰).  
   
-6.  트리거 플래그의 경우 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 발견 되는 <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> 에서 메서드를 <xref:Microsoft.VisualStudio.Package.Source> 클래스 라고 합니다.  
+6. 트리거 플래그의 경우 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 발견 되는 <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> 에서 메서드를 <xref:Microsoft.VisualStudio.Package.Source> 클래스 라고 합니다.  
   
-7.  합니다 <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> 메서드는 구문 분석 이유 값을 사용 하 여 구문 분석 작업을 시작 <xref:Microsoft.VisualStudio.Package.ParseReason>합니다. 이 작업을 최종적으로 호출 합니다 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 메서드는 <xref:Microsoft.VisualStudio.Package.LanguageService> 클래스입니다. 비동기 구문 분석을 사용 하는 경우이 호출 하 여 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 메서드는 백그라운드 스레드에서 발생 합니다.  
+7. 합니다 <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> 메서드는 구문 분석 이유 값을 사용 하 여 구문 분석 작업을 시작 <xref:Microsoft.VisualStudio.Package.ParseReason>합니다. 이 작업을 최종적으로 호출 합니다 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 메서드는 <xref:Microsoft.VisualStudio.Package.LanguageService> 클래스입니다. 비동기 구문 분석을 사용 하는 경우이 호출 하 여 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 메서드는 백그라운드 스레드에서 발생 합니다.  
   
-8.  구문 분석 작업이 완료 되 면, 내부 완료 처리기 (콜백 메서드 라고도 함) 라는 `HandleMatchBracesResponse` 에서 호출 되는 <xref:Microsoft.VisualStudio.Package.Source> 클래스입니다. 이 호출이 자동으로 수행 되는 <xref:Microsoft.VisualStudio.Package.LanguageService> 파서가가 아닌 기본 클래스입니다.  
+8. 구문 분석 작업이 완료 되 면, 내부 완료 처리기 (콜백 메서드 라고도 함) 라는 `HandleMatchBracesResponse` 에서 호출 되는 <xref:Microsoft.VisualStudio.Package.Source> 클래스입니다. 이 호출이 자동으로 수행 되는 <xref:Microsoft.VisualStudio.Package.LanguageService> 파서가가 아닌 기본 클래스입니다.  
   
 9. `HandleMatchBracesResponse` 메서드 범위에서의 목록을 가져옵니다 합니다 <xref:Microsoft.VisualStudio.Package.AuthoringSink> 에 저장 된 개체는 <xref:Microsoft.VisualStudio.Package.ParseRequest> 개체입니다. (범위는는 <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan> 소스 파일의 줄 및 문자 범위를 지정 하는 구조입니다.) 이 목록은 범위는 일반적으로 각각 여는 태그와 닫는 중괄호에 대 한 두 범위를 포함합니다.  
   
@@ -120,7 +115,7 @@ namespace MyNamespace
 12. 이 작업을 수행 합니다.  
   
 ### <a name="summary"></a>요약  
- 일치 하는 중괄호 작업 하는 간단한 쌍 언어 요소에 일반적으로 제한 됩니다. 삼중 쌍 일치와 같은 더 복잡 한 요소 ("`if(…)`","`{`"및"`}`", 또는 "`else`","`{`"및"`}`"), 단어 완성 작업의 일환으로 강조 표시할 수 있습니다. 예를 들어, "else" 라는 단어가 완료 되 면, 일치 하는 "`if`" 문을 강조 표시할 수 있습니다. 일련의 있다면 `if` / `else if` 중괄호 일치로 동일한 메커니즘을 사용 하 여 강조 표시 된 모든 문을 수 없습니다. 합니다 <xref:Microsoft.VisualStudio.Package.Source> 기본 클래스가 이미 지 원하는이 다음과 같이: 스캐너 토큰 트리거 값을 반환 해야 합니다 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 트리거 값과 함께 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 커서 위치 앞에 있는 토큰에 대 한 합니다.  
+ 일치 하는 중괄호 작업 하는 간단한 쌍 언어 요소에 일반적으로 제한 됩니다. 삼중 쌍 일치와 같은 더 복잡 한 요소 ("`if(…)`","`{`"및"`}`", 또는 "`else`","`{`"및"`}`"), 단어 완성 작업의 일환으로 강조 표시할 수 있습니다. 예를 들어, "else" 라는 단어가 완료 되 면, 일치 하는 "`if`" 문을 강조 표시할 수 있습니다. 일련의 있다면 `if` / `else if` 중괄호 일치로 동일한 메커니즘을 사용 하 여 강조 표시 된 모든 문을 수 없습니다. <xref:Microsoft.VisualStudio.Package.Source> 기본 클래스 이미이 다음과 같이 지원 합니다. 스캐너 토큰 트리거 값을 반환 해야 합니다 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 트리거 값과 함께 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 커서 위치 앞에 있는 토큰입니다.  
   
  자세한 내용은 [레거시 언어 서비스의 중괄호 일치](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)합니다.  
   
@@ -143,4 +138,3 @@ namespace MyNamespace
  [레거시 언어 서비스 개요](../../extensibility/internals/legacy-language-service-overview.md)   
  [레거시 언어 서비스의 구문 색 지정](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)   
  [레거시 언어 서비스의 중괄호 일치](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)
-

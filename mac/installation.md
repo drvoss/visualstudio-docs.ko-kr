@@ -1,93 +1,87 @@
 ---
-title: Mac용 Visual Studio 설치
-description: Mac용 Visual Studio 및 플랫폼 간 개발에 필요한 추가 구성 요소를 설치하는 방법에 대한 지침입니다.
-author: conceptdev
-ms.author: crdun
-ms.date: 11/03/2018
+title: Mac용 Visual Studio 2019 설치
+description: Mac용 Visual Studio 2019 및 플랫폼 간 개발에 필요한 추가 구성 요소를 설치하는 방법에 대한 지침입니다.
+author: asb3993
+ms.author: amburns
+ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: e725234cadc301d5e0e369131efd53c1c69d6337
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.custom: video
+ms.openlocfilehash: 3e4a41567b02807dce280426daf59e30ed1876eb
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53158959"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211443"
 ---
-# <a name="set-up-and-install-visual-studio-for-mac"></a>Mac용 Visual Studio 설정 및 설치
+# <a name="install-visual-studio-2019-for-mac"></a>Mac용 Visual Studio 2019 설치
+
+macOS에서 네이티브, .NET 앱 플랫폼 간 개발을 시작하려면 다음 단계에 따라 Mac 용 Visual Studio 2019를 설치합니다.
+
+ > [!div class="button"]
+ > [Mac용 Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=navigation+cta&utm_content=download+vsmac2019)
 
 ## <a name="requirements"></a>요구 사항
 
-네이티브 플랫폼 간 앱 개발을 시작하려면 Mac용 Visual Studio를 다운로드할 때 설치 및 설정해야 하는 몇 가지 사항이 있습니다.
+- macOS High Sierra 10.12 이상이 설치된 Mac.
 
-Visual Studio에서 iOS를 사용하는 경우 다음 사항이 필요합니다.
+iOS 또는 macOS용 Xamarin 앱을 빌드하려면 다음 항목도 필요합니다.
 
-* macOS Sierra 10.12 이상이 설치된 Mac
-* Xcode 8.3 이상 대개 안정적인 최신 버전을 사용하는 것이 좋습니다.
-* Apple ID. Apple ID가 없으면 https://appleid.apple.com에서 새로 만들 수 있습니다. Xcode를 설치하고 서명하려면 Apple ID가 있어야 합니다.
+- Xcode 10.0 이상 대개 안정적인 최신 버전을 사용하는 것이 좋습니다.
+- Apple ID. Apple ID가 없으면 https://appleid.apple.com 에서 새로 만들 수 있습니다. Xcode를 설치하고 로그인하려면 Apple ID가 있어야 합니다.
 
-> [!TIP]
-> 이제 Mac용 Visual Studio 2019 미리보기를 테스트에 [사용할 수 있습니다](install-preview.md).
+## <a name="installation-instructions"></a>설치 지침
 
-## <a name="install"></a>설치
+1. [Mac용 Visual Studio 다운로드 페이지](https://aka.ms/vsmac)에서 설치 관리자를 다운로드합니다.
+2. 다운로드가 완료되면 **VisualStudioforMacInstaller.dmg**를 클릭하여 설치 관리자를 탑재한 다음, 화살표 로고를 두 번 클릭하여 설치 관리자를 실행합니다.
 
-1. [https://visualstudio.microsoft.com/](https://visualstudio.microsoft.com/)에서 Mac용 Visual Studio 다운로드
+    [![설치를 시작하려면 큰 화살표를 클릭](media/install-installer-sml.png)](media/install-installer.png#lightbox)
 
-2. 설치 관리자 패키지가 다운로드되면 **VisualStudioForMacInstaller.dmg** 파일을 클릭하여 설치 관리자를 탑재한 후, 다음 이미지와 같이 로고를 두 번 클릭하여 실행합니다.
+3. 인터넷에서 애플리케이션이 다운로드된다는 경고가 표시될 수 있습니다. **열기**를 클릭합니다.
+4. 설치 관리자가 시스템을 확인할 때까지 기다립니다.
 
-   ![설치 관리자 대화 상자](media/installer-image1.png)
+    [![설치 관리자가 구성 요소를 설치할 시스템 확인](media/install-checking-sml.png)](media/install-checking.png#lightbox)
 
-3. 다음 이미지와 비슷한 경고 대화 상자가 표시될 수도 있습니다. 이 경우 **열기**를 클릭합니다.
+5. 개인 정보 및 라이선스 조건에 동의하라는 경고가 나타납니다. 링크가 안내하는 문서를 잘 읽고, 동의하면 **계속**을 누릅니다.
 
-   ![경고 대화 상자](media/installer-image2.png)
+    [![개인 정보 및 조건 링크를 클릭한 다음, 동의하면 계속 진행](media/install-privacy.png)](media/install-privacy.png#lightbox)
 
-4. 설치 관리자가 시스템을 검사하여 설치 또는 업데이트해야 하는 구성 요소를 확인합니다.
+6. 사용 가능한 워크로드 목록이 표시됩니다. 사용하려는 구성 요소를 선택합니다.
 
-   ![시스템 평가](media/installer-image3.png)
-
-5. 그런 다음 개인 정보 및 라이선스 조건에 동의하라는 경고 대화 상자가 표시됩니다. **계속** 단추를 눌러 조건에 동의합니다.
-
-   ![라이선스 대화 상자](media/installer-image4.png)
-
-6. 설치 관리자가 누락되어 다운로드 및 설치해야 하는 필수 구성 요소 목록을 표시합니다. 여기서 다운로드할 제품을 선택합니다.
-
-   ![항목 선택](media/installer-image5.png)
+    [![설치할 워크로드 기능 선택](media/install-selection.png)](media/install-selection.png#lightbox)
 
    일부 플랫폼을 설치하지 않으려는 경우 아래 가이드를 사용하면 설치할 플랫폼을 결정할 수 있습니다.
 
-   * **Xamarin을 사용하는 앱**:
-      - Xamarin.Forms - **Android** 및 **iOS** 플랫폼을 선택합니다.
-      - iOS에만 해당 - **iOS** 플랫폼을 선택합니다([**Xcode**](https://developer.apple.com/xcode/)를 설치해야 함).
-      - Android에만 해당 - **Android** 플랫폼을 선택합니다(관련 종속성도 선택해야 함).
-      - Mac에만 해당 - **macOS** 플랫폼을 선택합니다([**Xcode**](https://developer.apple.com/xcode/)를 설치해야 함).
-      - 완벽한 플랫폼 간 Xamarin 앱 - **Android**, **iOS** 및 **macOS** 플랫폼을 선택합니다.
-   * **.NET Core 응용 프로그램** - **.NET Core** 플랫폼을 선택합니다.
-   * **ASP.NET Core 웹 응용 프로그램** - **.NET Core** 플랫폼을 선택합니다.
-   * **플랫폼 간 Unity 게임 개발** - Mac용 Visual Studio 이외에는 추가 플랫폼을 설치하지 않아도 됩니다. Unity 확장 설치에 대한 자세한 내용은 [Unity 설치 가이드](setup-vsmac-tools-unity.md)를 참조하세요.
 
-   이 설치 화면에는 각 개별 구성 요소의 버전 및 크기가 표시됩니다. 각 구성 요소를 클릭하여 해당 구성 요소에 대한 종속성 목록을 표시하거나(Android), 다운로드한 추가 패키지를 확인하거나(.NET Core), 필요한 추가 응용 프로그램을 볼 수 있습니다(iOS 및 macOS).
+|앱 유형  |대상  |선택  |메모  |
+|---------|---------|---------|---------|
+|**Xamarin을 사용한 앱**:| Xamarin.Forms|**Android** 및 **iOS** 플랫폼을 선택합니다. |[**Xcode**](https://developer.apple.com/xcode/)를 설치해야 합니다. |
+||iOS만|**iOS** 플랫폼을 선택합니다.|[**Xcode**](https://developer.apple.com/xcode/)를 설치해야 합니다.|
+||Android만|**Android** 플랫폼을 선택합니다.|관련 종속성도 선택해야 합니다.|
+||Mac만|**macOS(Cocoa)** 플랫폼을 선택합니다.|[**Xcode**](https://developer.apple.com/xcode/)를 설치해야 합니다.|
+|**.NET Core 애플리케이션**|         |**.NET Core** 플랫폼을 선택합니다.|         |
+|**ASP.NET Core 웹 애플리케이션**|         |**.NET Core** 플랫폼을 선택합니다.|         |
+|**Azure Functions**|         |**.NET Core** 플랫폼을 선택합니다.|         |
+|**플랫폼 간 Unity 게임 개발**|         |Mac용 Visual Studio 이외에는 추가 플랫폼을 설치하지 않아도 됩니다.| Unity 확장 설치에 대한 자세한 내용은 [Unity 설치 가이드](/visualstudio/mac/setup-vsmac-tools-unity)를 참조하세요.|
 
-   ![Android 추가 종속성](media/installer-image6.png)
 
-7. 선택 항목에 만족할 경우 **설치 및 업데이트** 단추를 선택하여 설치 프로세스를 시작합니다.
+7. 원하는 항목을 선택한 후 **설치** 단추를 누릅니다.
+8. 설치 관리자는 Mac용 Visual Studio 및 사용자가 선택한 워크로드를 다운로드하고 설치하는 동안 진행률을 표시합니다. 설치에 필요한 권한을 부여하려면 암호를 입력하라는 메시지가 표시됩니다.
 
-8. 설치 관리자가 선택한 항목의 다운로드 및 설치 프로세스를 시작합니다.
+    [![설치할 워크로드 기능 선택](media/installation-progress.png)](media/installation-progress.png#lightbox)
 
-   ![설치 시작](media/installer-image7.png)
+9. 설치된 후에 Mac용 Visual Studio는 로그인한 다음, 사용하려는 키 바인딩을 선택하여 설치를 개인 설정하라는 메시지를 표시합니다.
 
-   ![Xamarin.Mac 다운로드](media/installer-image8.png)
+    [![IDE에 로그인](media/ide-tour-2019-start-signin.png)](media/ide-tour-2019-start-signin.png#lightbox)
 
-   ![설치 완료](media/installer-image9.png)
+    [![사용할 바로 가기 키 선택](media/ide-tour-2019-keyboard-shortcut.png)](media/ide-tour-2019-keyboard-shortcut.png#lightbox)
 
-9. 설치를 완료하는 데 필요한 개별 구성 요소에 대한 필수 사용 권한을 상승하라는 메시지가 표시될 수 있습니다. 여기서 관리자 자격 증명을 입력하여 설치 프로세스를 계속합니다.
+회사 환경에 설치하는 동안 네트워크 문제가 있는 경우 [방화벽 또는 프록시 뒤에 설치](https://docs.microsoft.com/visualstudio/mac/installation#install-visual-studio-for-mac-behind-a-firewall-or-proxy-server) 지침을 검토하세요.
 
-   ![사용 권한을 입력하여 설치 관리자 계속 진행](media/installer-image10.png)
-
-10. 설치가 완료되면 **시작**을 눌러 Visual Studio에서 앱 개발을 시작할 수 있습니다.
-
-    ![Visual Studio를 엽니다.](media/installer-image11.png)
+[릴리스 정보](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)의 변경 내용에 대해 자세히 알아보세요.
 
 > [!NOTE]
-> 원래 설치 중 #6단계에서 선택 취소하여 플랫폼 또는 도구를 설치하지 않도록 선택한 경우 나중에 구성 요소를 추가하려면 [설치 관리자](https://visualstudio.microsoft.com/vs/)를 다시 실행해야 합니다.
+> 원래 설치 중 6단계에서 선택 취소하여 플랫폼 또는 도구를 설치하지 않도록 선택한 경우 나중에 구성 요소를 추가하려면 설치 관리자를 다시 실행해야 합니다.
 
 ## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>방화벽 또는 프록시 서버 뒤에 Mac용 Visual Studio 설치
 
@@ -95,7 +89,7 @@ Visual Studio에서 iOS를 사용하는 경우 다음 사항이 필요합니다.
 
 다음 위치에 액세스할 수 있도록 네트워크를 구성합니다.
 
-* [Visual Studio 엔드포인트](/visualstudio/install/install-visual-studio-behind-a-firewall-or-proxy-server)
+- [Visual Studio 엔드포인트](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)
 
 ## <a name="next-steps"></a>다음 단계
 
@@ -104,18 +98,22 @@ Mac용 Visual Studio를 설치하면 앱 코드 작성을 시작할 수 있습�
 ### <a name="ios"></a>iOS
 
 1. [Hello, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
-2. [장치 프로비저닝](https://developer.xamarin.com/guides/ios/getting_started/installation/device_provisioning)(장치에서 응용 프로그램을 실행하려면).
+2. [디바이스 프로비저닝](https://developer.xamarin.com/guides/ios/getting_started/installation/device_provisioning)(디바이스에서 애플리케이션을 실행하려면).
 
 ### <a name="android"></a>Android
 
 1. [Xamarin Android SDK Manager 사용](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
 2. [Android SDK 에뮬레이터](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
-4. [개발용 장치 설정](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
+4. [개발용 디바이스 설정](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>.NET Core 앱, ASP.NET Core 웹앱, Unity 게임 개발
 
 다른 워크로드의 경우 [워크로드](workloads.md) 페이지를 참조하세요.
 
+## <a name="related-video"></a>관련 동영상
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Acquisition/player]
+
 ## <a name="see-also"></a>참고 항목
 
-- [Visual Studio 2017 설치(Windows에서)](/visualstudio/install/install-visual-studio)
+- [Visual Studio 설치(Windows에서)](/visualstudio/install/install-visual-studio)

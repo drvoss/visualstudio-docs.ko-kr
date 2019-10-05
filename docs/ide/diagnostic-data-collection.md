@@ -1,20 +1,18 @@
 ---
 title: 진단 데이터 및 시스템에서 생성된 로그
 ms.date: 05/24/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: michma
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f55d8a0f32886ed477026e298ed2c8c5d6e26f16
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 0f92e899ff8e56c68fcf1a4ab639d027c139afcf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34478295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557400"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Visual Studio에서 수집한 시스템에서 생성된 로그
 

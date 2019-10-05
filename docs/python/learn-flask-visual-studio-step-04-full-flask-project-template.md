@@ -2,23 +2,21 @@
 title: Visual Studio 4단계, 웹 프로젝트 템플릿에서 Flask 자습서 알아보기
 titleSuffix: ''
 description: Visual Studio 프로젝트 컨텍스트에서 Flask 기본 사항을 검토하는 연습 과정으로, Flask 웹 프로젝트 및 Flask/Jade 웹 프로젝트 템플릿에서 제공하는 기능을 구체적으로 설명합니다.
-ms.date: 09/04/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 01/07/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c072d1187abf463cc2f185946f7e238bb091a534
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9f4c165f3e882cea71ee4aaff9f2358c27ce6a2b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957279"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>4단계: 전체 Flask 웹 프로젝트 템플릿 사용
 
@@ -162,15 +160,16 @@ def about():
 
 ## <a name="the-flaskjade-web-project-template"></a>Flask/Jade 웹 프로젝트 템플릿
 
-이 문서의 시작 부분에서 언급했듯이, Visual Studio는 “Flask 웹 프로젝트”에 의해 생성된 것과 시각적으로 동일한 응용 프로그램을 만드는 “Flask/Jade 웹 프로젝트” 템플릿을 제공합니다. 주된 차이점은 동일한 개념을 보다 간결한 언어로 구현하는 Jinja의 확장인 Jade 템플릿 엔진을 사용한다는 것입니다. 특히 Jade는 예를 들어 {% %} 구분 기호로 묶인 태그 대신, 키워드를 사용하며 키워드를 사용하여 CSS 스타일과 HTML 요소를 참조할 수 있습니다.
+이 문서의 시작 부분에서 언급했듯이, Visual Studio는 “Flask 웹 프로젝트”에 의해 생성된 것과 시각적으로 동일한 애플리케이션을 만드는 “Flask/Jade 웹 프로젝트” 템플릿을 제공합니다. 주된 차이점은 동일한 개념을 보다 간결한 언어로 구현하는 Jinja의 확장인 Jade 템플릿 엔진을 사용한다는 것입니다. 특히 Jade는 예를 들어 {% %} 구분 기호로 묶인 태그 대신, 키워드를 사용하며 키워드를 사용하여 CSS 스타일과 HTML 요소를 참조할 수 있습니다.
 
-Jade를 사용하도록 설정하려면 먼저 프로젝트 템플릿은 *requirements.txt*에 pyjade 패키지를 포함합니다. 
+Jade를 사용하도록 설정하려면 먼저 프로젝트 템플릿은 *requirements.txt*에 pyjade 패키지를 포함합니다.
 
 앱의 *\_\_init\_\_.py* 파일은 다음 줄을 포함합니다.
 
 ```python
 app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
 ```
+
 *템플릿* 폴더에는 *.html* 템플릿 대신 *.jade* 파일이 있고, *views.py*의 보기는 `flask.render_template`에 대한 호출에서 이러한 파일을 참조합니다. 그렇지 않은 경우 보기 코드는 동일합니다.
 
 *.jade* 파일 중 하나를 열면 템플릿의 보다 간결한 표현을 확인할 수 있습니다. 예를 들어, 다음은 "Flask/Jade 웹 프로젝트" 템플릿으로 만들어진 *templates/layout.jade*의 내용입니다.

@@ -1,7 +1,6 @@
 ---
 title: 'CA1017: ComVisibleAttribute로 어셈블리를 표시하세요.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1017
@@ -12,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: 4842cb49-8dd8-4e5d-a2d6-ceeaf6c6cf8e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c6d5f2356f6174739cc4a19e49265f0b163d035
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 073332738a01cb299b2b185c6fca20131222f981
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864740"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236264"
 ---
 # <a name="ca1017-mark-assemblies-with-comvisibleattribute"></a>CA1017: ComVisibleAttribute로 어셈블리를 표시하세요.
 
@@ -33,26 +32,26 @@ ms.locfileid: "53864740"
 |TypeName|MarkAssembliesWithComVisible|
 |CheckId|CA1017|
 |범주|Microsoft.Design|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
- 어셈블리에 없는 <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> 특성이 적용 합니다.
+어셈블리에 <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> 특성이 적용 되지 않았습니다.
 
 ## <a name="rule-description"></a>규칙 설명
- <xref:System.Runtime.InteropServices.ComVisibleAttribute> 특성 COM 클라이언트가 관리 되는 코드를 액세스 하는 방법을 결정 합니다. 어셈블리에서 COM에 노출할지 여부를 명시적으로 나타내는 것이 좋은 디자인입니다. COM 노출 여부 전체 어셈블리에 대해 설정 하 고 개별 형식 및 형식 멤버를 재정의할 수 있습니다. 특성이 없는 어셈블리의 내용을 COM 클라이언트에 표시 됩니다.
+특성 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 은 COM 클라이언트가 관리 코드에 액세스 하는 방법을 결정 합니다. 어셈블리에서 COM에 노출할지 여부를 명시적으로 나타내는 것이 좋은 디자인입니다. COM 표시 여부는 전체 어셈블리에 대해 설정할 수 있으며, 개별 형식 및 형식 멤버에 대해 재정의 될 수 있습니다. 특성이 없으면 어셈블리의 내용이 COM 클라이언트에 표시 됩니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 어셈블리에 특성을 추가 합니다. 어셈블리를 COM 클라이언트에 노출 하지 않으려면 특성을 적용 하 고 해당 값을 설정 `false`합니다.
+이 규칙 위반 문제를 해결 하려면 어셈블리에 특성을 추가 합니다. 어셈블리를 COM 클라이언트에 표시 하지 않으려면 특성을 적용 하 고 해당 값을로 `false`설정 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
- 이 규칙에서는 경고를 표시해야 합니다. 표시 되도록 어셈블리를 하려는 경우 특성을 적용 하 고 해당 값을 설정 `true`합니다.
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
+이 규칙에서는 경고를 표시해야 합니다. 어셈블리를 표시 하려면 특성을 적용 하 고 해당 값을로 `true`설정 합니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는 있는 어셈블리는 <xref:System.Runtime.InteropServices.ComVisibleAttribute> COM 클라이언트에 표시 되지 않도록 방지 하기 위해 적용 된 특성입니다.
+다음 예제에서는 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 특성이 적용 된 어셈블리를 표시 하 여 COM 클라이언트에 표시 되지 않도록 합니다.
 
- [!code-cpp[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/CPP/ca1017-mark-assemblies-with-comvisibleattribute_1.cpp)]
- [!code-vb[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/VisualBasic/ca1017-mark-assemblies-with-comvisibleattribute_1.vb)]
- [!code-csharp[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/CSharp/ca1017-mark-assemblies-with-comvisibleattribute_1.cs)]
+[!code-cpp[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/CPP/ca1017-mark-assemblies-with-comvisibleattribute_1.cpp)]
+[!code-vb[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/VisualBasic/ca1017-mark-assemblies-with-comvisibleattribute_1.vb)]
+[!code-csharp[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/CSharp/ca1017-mark-assemblies-with-comvisibleattribute_1.cs)]
 
 ## <a name="see-also"></a>참고 항목
 

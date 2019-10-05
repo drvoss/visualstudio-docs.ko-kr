@@ -1,14 +1,9 @@
 ---
-title: 코드 분석 응용 프로그램 오류 | Microsoft Docs
-ms.custom: ''
+title: 코드 분석 애플리케이션 오류
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio ALM], code analysis
 - code analysis, errors
@@ -18,15 +13,15 @@ ms.assetid: d8fd9475-ac9b-4085-b5a3-b0c807922cac
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 66d611903c71cc526c01c1062c85ceef2e7975f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1af00ebc2f6fdc1bc32a5a6784b88068d4e3ffb2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225019"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693390"
 ---
-# <a name="code-analysis-application-errors"></a>코드 분석 응용 프로그램 오류
+# <a name="code-analysis-application-errors"></a>코드 분석 애플리케이션 오류
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 이 섹션은 관리 되는 코드 분석 도구에서 생성 되는 오류 메시지에 대 한 참조입니다. 특정 오류 메시지에 대 한 도움말을 보려면의 오류 번호를 입력 합니다 **검색할** 색인에서 합니다.
 
@@ -49,7 +44,7 @@ ms.locfileid: "49225019"
 |[CA0062](ca0062.md)|규칙 '*RuleId*'규칙 집합에서 참조 된'*RuleSetName*' 찾을 수 없습니다.|
 |[CA0063](ca0063.md)|규칙 집합 파일 또는 해당 종속 규칙 집합 파일 중 하나를 로드 하지 못했습니다.|
 |[CA0064](ca0064.md)|지정된 된 규칙 집합이 FxCop 규칙을 포함 하지 않아 분석 없음 수행 되었습니다.|
-|[CA0065](ca0065.md)|지원 되지 않는 메타 데이터 구문: 형식을 '*TypeName*'속성과 같은 이름 가진 필드를 모두 포함'*PropertyFieldName*'|
+|[CA0065](ca0065.md)|지원 되지 않는 메타 데이터 구문: 형식 '*TypeName*'속성과 같은 이름 가진 필드를 모두 포함'*PropertyFieldName*'|
 |[CA0066](ca0066.md)|값 '*VersionID*'에 제공 된 **/targetframeworkversion** 인식 된 버전이 아닙니다.|
 |[CA0067](ca0067.md)|디렉터리를 찾을 수 없습니다.|
 |[CA0068](ca0068.md)|디버그 대상 어셈블리에 대 한 정보를 찾을 수 없습니다 *'AssemblyName'* 합니다.|
@@ -57,14 +52,13 @@ ms.locfileid: "49225019"
 |[CA0070](ca0070.md)|어셈블리 또는 보안 권한으로 인해 형식을 로드할 수 없습니다.|
 |[CA0501](ca0501.md)|출력 보고서를 읽을 수 없습니다.|
 |[CA0502](ca0502.md)|지원 되지 않는 언어입니다.|
-|[CA0503](ca0503.md))|속성이 deprectated입니다. 대체 속성 사용|
+|[CA0503](ca0503.md)|속성을 사용 하는 사용 되지 않습니다. 대체 속성 사용|
 |[CA0504](ca0504.md)|규칙 디렉터리는 존재 하지 않는 때문에 무시 되었습니다.|
-|[CA0505](ca0505.md)|속성이 deprectated입니다. 대체 속성 사용|
+|[CA0505](ca0505.md)|속성을 사용 하는 사용 되지 않습니다. 대체 속성 사용|
 |[FxCopCmd 오류](fxcopcmd-errors.md)|관리 코드 분석 오류입니다.|
-|[Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)|코드 분석 체크 인 정책 오류입니다.|
 
 ## <a name="related-sections"></a>관련 단원
 
-- [보안 코드를 작성 하는 것에 대 한 지침](http://msdn.microsoft.com/en-us/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)
+- [보안 코드를 작성 하는 것에 대 한 지침](https://msdn.microsoft.com/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)
 - [관리 코드 품질 분석](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
-- [응용 프로그램 수명 주기 관리 도구에서 오류를 해결 하기 위한 리소스](http://msdn.microsoft.com/library/76ca8f76-1e2d-4b55-89e2-bd59e4abe74c)
+- [응용 프로그램 수명 주기 관리 도구에서 오류를 해결 하기 위한 리소스](https://msdn.microsoft.com/library/76ca8f76-1e2d-4b55-89e2-bd59e4abe74c)

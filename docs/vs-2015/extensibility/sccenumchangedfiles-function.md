@@ -1,14 +1,9 @@
 ---
 title: SccEnumChangedFiles 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccEnumChangedFiles
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 76cac510-107b-4c1a-ba60-9c39b6db2e71
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c4254df883bf268f7f473c89d99cdcadf991a8a1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 00ef98c93f02aa8e8a1b4ea53f1998d0ab6713a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736053"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200122"
 ---
 # <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,11 +55,10 @@ SCCRTN SccEnumChangedFiles(
 ## <a name="return-value"></a>반환 값  
  원본 제어 플러그 인이 함수의 구현은 다음 값 중 하나를 반환 하:  
   
-|값|설명|  
+|값|Description|  
 |-----------|-----------------|  
-|SCC_OK|작업이 완료 되었습니다.|  
+|SCC_OK|작업이 완료되었습니다.|  
 |SCC_UNSPECIFIEDERROR|일반 오류입니다.|  
   
 ## <a name="see-also"></a>참고 항목  
  [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
-

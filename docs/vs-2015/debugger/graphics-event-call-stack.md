@@ -1,27 +1,22 @@
 ---
 title: 그래픽 이벤트 호출 스택 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.callstack
 ms.assetid: 8a30168d-8b39-4de1-b094-c7356ba101a3
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7c6ac7860fe846c86d846fd668c4647cd4145756
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8344050d26286263e0c33974b976e4ae25ff18de
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762846"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192745"
 ---
 # <a name="graphics-event-call-stack"></a>그래픽 이벤트 호출 스택
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,10 +42,7 @@ Visual Studio Graphics Analyzer의 그래픽 이벤트 호출 스택을 사용�
 |**위치**|호출 사이트의 줄 번호입니다.|  
   
 ### <a name="links-to-graphics-objects"></a>그래픽 개체에 대한 링크  
- 선택한 그래픽 이벤트를 파악하려면 해당 이벤트와 연결된 Direct3D 개체에 대한 정보가 필요할 수 있습니다. 합니다 **그래픽 이벤트 호출 스택** 창에서는이 정보에 대 한 링크를 제공 합니다.  
+ 선택한 그래픽 이벤트를 파악하려면 해당 이벤트와 연결된 Direct3D 개체에 대한 정보가 필요할 수 있습니다. **그래픽 이벤트 호출 스택** 창에서 이 정보에 대한 링크를 제공합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [연습: 꼭짓점 음영으로 인해 누락된 개체](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)
-
-
-

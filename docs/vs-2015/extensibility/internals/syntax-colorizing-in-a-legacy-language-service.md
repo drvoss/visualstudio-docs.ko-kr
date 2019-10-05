@@ -1,14 +1,9 @@
 ---
 title: 레거시 언어 서비스의 구문 색 지정 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], syntax highlighting
 - colorization, supporting in language services [managed package framework]
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 20655534439fa187488087e1ae819a7ffca4c27a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 64e57ebc80320ccc133261781eb8ee6611c8e2a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441233"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>레거시 언어 서비스의 구문 색 지정
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "51730276"
  레거시 언어 서비스는 VSPackage의 일부로 구현 됩니다 있지만 MEF 확장을 사용 하는 언어 서비스 기능을 구현 하는 최신 방법입니다. 자세한 내용을 참조 하세요 [편집기 및 언어 서비스 확장](../../extensibility/extending-the-editor-and-language-services.md)합니다.  
   
 > [!NOTE]
->  편집기를 사용 하 여 새 API 최대한 빨리 시작 하는 것이 좋습니다. 언어 서비스의 성능이 향상 되 고 새 편집기 기능을 활용할 수 있습니다.  
+> 편집기를 사용 하 여 새 API 최대한 빨리 시작 하는 것이 좋습니다. 언어 서비스의 성능이 향상 되 고 새 편집기 기능을 활용할 수 있습니다.  
   
 ## <a name="implementation"></a>구현  
  색 지정을 지원 하려면 관리 되는 패키지 프레임 워크 (MPF)를 포함 합니다 <xref:Microsoft.VisualStudio.Package.Colorizer> 클래스를 구현 하는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> 인터페이스입니다. 이 클래스와 상호 작용 하는 <xref:Microsoft.VisualStudio.Package.IScanner> 토큰 및 색을 확인 하려면. 스캐너에 대 한 자세한 내용은 참조 하세요. [레거시 언어 서비스 파서 및 검사기](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)합니다. <xref:Microsoft.VisualStudio.Package.Colorizer> 클래스에서 다음 색 정보를 사용 하 여 토큰의 각 문자를 표시 하 고 소스 파일을 표시 하는 편집기에 해당 정보를 반환 합니다.  
@@ -44,10 +39,10 @@ ms.locfileid: "51730276"
  사용자 고유의 사용자 지정 색 항목을 제공 하려면 재정의 해야 합니다 <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> 및 <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> 메서드를 <xref:Microsoft.VisualStudio.Package.LanguageService> 클래스입니다. 첫 번째 방법은 언어 서비스가 지 원하는 사용자 지정 색 항목 수를 반환 하 고 두 번째 인덱스 별로 사용자 지정 색 항목을 가져옵니다. 사용자 지정 색 항목의 기본 목록을 만듭니다. 언어 서비스의 생성자에서 각 색 항목 이름으로 제공 하기만 하면 됩니다. Visual Studio는 사용자가 다양 한 색 항목을 선택 하는 경우를 자동으로 처리 합니다. 이 이름이 표시 됩니다는 **글꼴 및 색** 속성 페이지를 **옵션** 대화 상자 (Visual Studio에서 사용할 수 있습니다 **도구** 메뉴)이이 이름을 결정 하 고 사용자가 재정의 되는 색입니다. 사용자의 선택 레지스트리에서 캐시에 저장 되 고 색 이름으로 액세스 합니다. 합니다 **글꼴 및 색** ; 언어 이름의 각 색 이름 앞에 사용자 지정 색을 그룹화 할 수 있습니다 있도록 알파벳 순서로 색 이름 중 모든 속성 페이지 나열 예를 들어, "**TestLanguage-주석**"및"**TestLanguage 키워드가**"입니다. 형식에 의해 색 항목을 그룹화 할 수 있습니다 또는 "**(TestLanguage) 주석**"및"**키워드 (TestLanguage)**"입니다. 언어 이름으로 그룹화는 것이 좋습니다.  
   
 > [!CAUTION]
->  기존 색 항목 이름과 충돌 하지 않도록 하려면 색 항목 이름에 언어 이름을 포함 하는 것이 좋습니다.  
+> 기존 색 항목 이름과 충돌 하지 않도록 하려면 색 항목 이름에 언어 이름을 포함 하는 것이 좋습니다.  
   
 > [!NOTE]
->  개발 중에 색 중 하나의 이름을 변경한 경우에 Visual Studio에서 처음으로 액세스 된 색을 생성 하는 캐시를 다시 설정 해야 합니다. 실행 하 여 수행할 수는 **실험적 하이브 재설정** Visual Studio SDK 프로그램 메뉴에서 명령을 합니다.  
+> 개발 중에 색 중 하나의 이름을 변경한 경우에 Visual Studio에서 처음으로 액세스 된 색을 생성 하는 캐시를 다시 설정 해야 합니다. 실행 하 여 수행할 수는 **실험적 하이브 재설정** Visual Studio SDK 프로그램 메뉴에서 명령을 합니다.  
   
  색 항목 목록에서 첫 번째 항목 참조 되지 않는 참고 합니다. Visual Studio에는 항상 기본 텍스트 색 및 해당 항목에 대 한 특성을 제공합니다. 이 처리 하는 가장 쉬운 첫 번째 항목으로 자리 표시자 색 항목을 제공 하는 경우  
   
@@ -155,4 +150,3 @@ namespace TestLanguagePackage
  [레거시 언어 서비스 기능](../../extensibility/internals/legacy-language-service-features1.md)   
  [레거시 언어 서비스 파서 및 검사기](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)   
  [레거시 언어 서비스 등록](../../extensibility/internals/registering-a-legacy-language-service1.md)
-

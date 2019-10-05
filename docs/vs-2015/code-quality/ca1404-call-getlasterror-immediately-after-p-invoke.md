@@ -1,14 +1,9 @@
 ---
 title: 'CA1404: P / Invoke 후에 바로 GetLastError를 호출 합니다. | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CallGetLastErrorImmediatelyAfterPInvoke
 - CA1404
@@ -20,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1f3cbded489eab995b4a37f4a80145645d80d856
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e33c724d2cebb9423f2e475d95bf42ac5e2cc966
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909746"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200310"
 ---
 # <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404: P/Invoke 다음에 바로 GetLastError를 호출하십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,13 +40,13 @@ ms.locfileid: "49909746"
 
  다음에 대 한 호출을 무시 하는 규칙 플랫폼에 대 한 호출 간에 발생 하는 경우 관리 되는 멤버 메서드 및 호출 호출 <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>합니다. 이러한 멤버 오류를 변경 하지 마십시오 메서드 호출을 호출 코드 및 일부 플랫폼의 성공 여부를 결정 하는 데 유용 합니다.
 
--   <xref:System.IntPtr.Zero?displayProperty=fullName>
+- <xref:System.IntPtr.Zero?displayProperty=fullName>
 
--   <xref:System.IntPtr.op_Equality%2A?displayProperty=fullName>
+- <xref:System.IntPtr.op_Equality%2A?displayProperty=fullName>
 
--   <xref:System.IntPtr.op_Inequality%2A?displayProperty=fullName>
+- <xref:System.IntPtr.op_Inequality%2A?displayProperty=fullName>
 
--   <xref:System.Runtime.InteropServices.SafeHandle.IsInvalid%2A?displayProperty=fullName>
+- <xref:System.Runtime.InteropServices.SafeHandle.IsInvalid%2A?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면에 대 한 호출을 이동 <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> 플랫폼에 대 한 호출 바로 뒤에 오도록 메서드를 호출 합니다.
@@ -68,13 +63,10 @@ ms.locfileid: "49909746"
 ## <a name="related-rules"></a>관련된 규칙
  [CA1060: P/Invoke를 NativeMethods 클래스로 이동](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
 
- [CA1400: P/Invoke 진입점이 있어야 합니다.](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
+ [CA1400: P/Invoke 진입점 있어야 합니다.](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
 
- [CA1401: P/Invoke는 노출되지 않아야 합니다.](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
+ [CA1401: P/Invoke을 표시 해야 합니다.](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
 
- [CA2101: P/Invoke 문자열 인수에 대해 마샬링을 지정합니다.](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
+ [CA2101: P/Invoke 문자열 인수에 대해 마샬링을 지정 하십시오.](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
 
- [CA2205: Win32 API에 있는 동일한 기능의 관리되는 항목을 사용하십시오.](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)
-
-
-
+ [CA2205: 관리 되는 Win32 api를 사용 합니다.](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)

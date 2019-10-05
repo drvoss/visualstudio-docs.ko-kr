@@ -1,14 +1,9 @@
 ---
 title: 코드 조각 선택 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.expansionpicker
 helpviewer_keywords:
@@ -19,18 +14,17 @@ ms.assetid: f0862d48-fbbc-4cfe-b228-24492d5c89c4
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 31d5ced897badded98aa82b2245e8f210517afd6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 913594f47288715e0050643f365f9225810f6ded
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845304"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682346"
 ---
 # <a name="code-snippet-picker"></a>코드 조각 선택
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 코드 편집기는 사용자가 몇 번의 마우스 클릭으로 현재 문서에 미리 만들어진 코드 블록을 삽입할 수 있는 **코드 조각 선택**을 제공합니다.  
   
  **코드 조각 선택**을 표시하는 프로시저는 사용 중인 언어에 따라 달라집니다.  
@@ -51,7 +45,7 @@ ms.locfileid: "49845304"
   
 - SQL - 코드 편집기에서 원하는 위치를 마우스 오른쪽 단추로 클릭하여 바로 가기 메뉴를 표시하고 **조각 삽입**을 클릭합니다.  
   
-  대부분의 Visual Studio 개발 언어에서 **코드 조각 관리자**를 사용하여 **코드 조각 선택**이 XML 코드 조각 파일을 검사하는 **폴더 목록**에 폴더를 추가할 수 있습니다. 또한 사용자 고유의 조각을 만들어 목록에 추가할 수 있습니다. 자세한 내용은 [연습: 코드 조각 만들기](../../ide/walkthrough-creating-a-code-snippet.md)를 참조하세요.  
+  대부분의 Visual Studio 개발 언어에서 **코드 조각 관리자**를 사용하여 **코드 조각 선택**이 XML 코드 조각 파일을 검사하는 **폴더 목록**에 폴더를 추가할 수 있습니다. 또한 사용자 고유의 조각을 만들어 목록에 추가할 수 있습니다. 자세한 내용은 [연습: 코드 조각 만들기](../../ide/walkthrough-creating-a-code-snippet.md)합니다.  
   
 ## <a name="uielement-list"></a>UI 요소 목록  
  항목 이름  
@@ -62,9 +56,6 @@ ms.locfileid: "49845304"
   
 ## <a name="see-also"></a>참고 항목  
  [코드 조각 사용에 대한 모범 사례](../../ide/best-practices-for-using-code-snippets.md)   
- [Visual Basic IntelliSense 코드 조각](http://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
+ [Visual Basic IntelliSense 코드 조각](https://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
  [코드에 책갈피 설정](../../ide/setting-bookmarks-in-code.md)   
  [방법: 코드 감싸기 코드 조각 사용](../../ide/how-to-use-surround-with-code-snippets.md)
-
-
-

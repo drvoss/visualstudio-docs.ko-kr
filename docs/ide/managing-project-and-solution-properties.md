@@ -1,24 +1,22 @@
 ---
 title: 프로젝트 및 솔루션 속성 관리
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77ac77ca999ef627c0f3c9e763b7e5799b97d679
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: a3d5b1150c67eeb5d47741ed9331dcdc11a82582
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349246"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714950"
 ---
 # <a name="manage-project-and-solution-properties"></a>프로젝트 및 솔루션 속성 관리
 
-프로젝트에는 컴파일, 디버깅, 테스트 및 배포의 다양한 측면을 제어하는 속성이 있습니다. 일부 속성은 모든 프로젝트 형식 간에 공통적으로 적용되고 일부 속성은 특정 언어 또는 플랫폼에 고유합니다. **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택하거나 메뉴 모음의 **빠른 실행** 검색 상자에 "속성"을 입력하여 프로젝트 속성에 액세스합니다.
+프로젝트에는 컴파일, 디버깅, 테스트 및 배포의 다양한 측면을 제어하는 속성이 있습니다. 일부 속성은 모든 프로젝트 형식 간에 공통적으로 적용되고 일부 속성은 특정 언어 또는 플랫폼에 고유합니다. **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택하거나 메뉴 모음의 검색 상자에 **속성**을 입력하고 결과에서 **속성 창**을 선택하여 프로젝트 속성에 액세스합니다.
 
 ![프로젝트 상황에 맞는 메뉴](../ide/media/vs2015_proj_prop_menu.gif)
 
@@ -35,7 +33,7 @@ ms.locfileid: "51349246"
 
 ### <a name="c-visual-basic-and-f-projects"></a>C#, Visual Basic 및 F# 프로젝트
 
-C#, Visual Basic 및 F# 프로젝트에서는 속성이 **프로젝트 디자이너**에 노출됩니다. 다음 그림에서는 C# WPF 프로젝트에 대한 **빌드** 속성 페이지를 보여 줍니다.
+C#, Visual Basic 및 F# 프로젝트에서는 속성이 **프로젝트 디자이너**에 공개됩니다. 다음 그림에서는 C# WPF 프로젝트에 대한 **빌드** 속성 페이지를 보여 줍니다.
 
 ![Visual Studio 프로젝트 디자이너](../ide/media/vs2015_proppage_build.png)
 
@@ -50,7 +48,7 @@ C++ 및 JavaScript 프로젝트에는 프로젝트 속성을 관리하기 위한
 
 ![Visual C&#43;&#43; 프로젝트 속성](../ide/media/vs2015_projprops_cpp.png)
 
-C++ 프로젝트 속성에 대한 자세한 내용은 [프로젝트 속성 작업 (C++)](/cpp/ide/working-with-project-properties)을 참조하세요. JavaScript 속성에 대한 자세한 내용은 [속성 페이지, JavaScript](../ide/reference/property-pages-javascript.md)를 참조하세요.
+C++ 프로젝트 속성에 대한 자세한 내용은 [프로젝트 속성 작업 (C++)](/cpp/build/working-with-project-properties)을 참조하세요. JavaScript 속성에 대한 자세한 내용은 [속성 페이지, JavaScript](../ide/reference/property-pages-javascript.md)를 참조하세요.
 
 ## <a name="solution-properties"></a>솔루션 속성
 

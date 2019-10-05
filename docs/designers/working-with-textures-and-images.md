@@ -1,21 +1,19 @@
 ---
 title: 질감 및 이미지 작업
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb7cc97a797d02bd8353cbcfb19af6b8f9edf674
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 5642a2e84766758b5fdf50bc652fd32b585427bf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079662"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62843978"
 ---
 # <a name="work-with-textures-and-images"></a>질감 및 이미지 작업
 
@@ -44,7 +42,7 @@ Visual Studio에서 이미지 편집기를 사용하여 질감 및 이미지를 
 
 ### <a name="height-maps"></a>높이 맵
 
-높이 맵은 높이 필드 데이터를 포함합니다. 영향을 받는 개체의 기하학적 세부 정보의 형태를 제공하기 위해(원하는 효과를 계산하는 셰이더 코드를 사용하여) 또는 지형 생성 같은 용도를 위한 데이터 요소를 제공하기 위해 사용됩니다. 높이 값은 주로 질감의 한 가지 채널을 사용하여 인코딩됩니다.
+높이 맵은 높이 필드 데이터를 포함합니다. 영향을 받는 개체의 기하학적 세부 정보의 형태를 제공하기 위해(원하는 효과를 컴퓨팅하는 셰이더 코드를 사용하여) 또는 지형 생성 같은 용도를 위한 데이터 요소를 제공하기 위해 사용됩니다. 높이 값은 주로 질감의 한 가지 채널을 사용하여 인코딩됩니다.
 
 ### <a name="cube-maps"></a>큐브 맵
 
@@ -54,5 +52,5 @@ Visual Studio에서 이미지 편집기를 사용하여 질감 및 이미지를 
 
 |제목|설명|
 |-----------|-----------------|
-|[이미지 편집기](../designers/image-editor.md)|이미지 편집기를 사용하여 질감과 이미지 작업을 수행하는 방법을 설명합니다.|
+|[Image Editor](../designers/image-editor.md)|이미지 편집기를 사용하여 질감과 이미지 작업을 수행하는 방법을 설명합니다.|
 |[이미지 편집기 예제](../designers/image-editor-examples.md)|일반적인 이미지 처리 작업을 수행하기 위해 이미지 편집기 사용 방법을 보여주는 항목에 대한 링크를 제공합니다.|

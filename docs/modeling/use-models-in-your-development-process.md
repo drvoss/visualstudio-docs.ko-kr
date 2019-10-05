@@ -1,25 +1,24 @@
 ---
 title: 개발 프로세스에서 모델 사용
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1a507a6995ceb3c04dfc3d9daf57fa341fe6fc7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aced2be4d584fb2ede58527a1d541f24089f220d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907283"
 ---
 # <a name="use-models-in-your-development-process"></a>개발 프로세스에서 모델 사용
 
-Visual Studio에서 모델을 사용하여 시스템, 응용 프로그램 또는 구성 요소를 이해하고 변경할 수 있습니다. 모델은 시스템이 작동하는 세계를 시각화하고, 사용자 요구를 명확하게 설명하고, 시스템 아키텍처를 정의하고, 코드를 분석하고, 코드가 요구 사항을 충족하는지 확인하는 데 도움이 됩니다. 참조 [Channel 9 비디오: 모델링을 통해 아키텍처 개선](http://go.microsoft.com/fwlink/?LinkID=252078)합니다.
+Visual Studio에서 모델을 사용하여 시스템, 애플리케이션 또는 구성 요소를 이해하고 변경할 수 있습니다. 모델은 시스템이 작동하는 세계를 시각화하고, 사용자 요구를 명확하게 설명하고, 시스템 아키텍처를 정의하고, 코드를 분석하고, 코드가 요구 사항을 충족하는지 확인하는 데 도움이 됩니다. 참조 [Channel 9 비디오: 모델링을 통해 아키텍처 개선](http://go.microsoft.com/fwlink/?LinkID=252078)합니다.
 
 각 모델 형식을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)를 참조하세요.
 
@@ -134,10 +133,10 @@ Visual Studio에서 모델을 사용하여 시스템, 응용 프로그램 또는
 |-|-|
 |**비디오**|![비디오를 연결할](../data-tools/media/playvideo.gif) [MSDN How Do I Video: UML 모델 및 다이어그램 (Visual Studio 2010 Ultimate) 만들기 및 사용 하는 방법](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![비디오를 연결할](../data-tools/media/playvideo.gif) [Channel 9: Visual Studio 2010을 사용한 UML](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![비디오를 연결할](../data-tools/media/playvideo.gif) [MSDN 어떻게 할까요? 시리즈: UML 도구 및 확장성 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
 |**포럼**|- [Visual Studio 시각화 및 모델링 도구](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio 시각화 및 모델링 SDK(DSL 도구)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Blogs**|[Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|
+|**Blogs**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
 |**기술 문서 및 저널**|[MSDN 아키텍처 센터](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio 아키텍처 도구 사용 지침](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [Agile 개발에서 모델 사용](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
 - [앱용 모델 만들기](../modeling/create-models-for-your-app.md)

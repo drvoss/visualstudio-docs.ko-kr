@@ -1,11 +1,8 @@
 ---
 title: CompensableActivity 활동 디자이너 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.CompensableActivity.UI
@@ -13,13 +10,13 @@ ms.assetid: e0340d89-d39e-4a52-8557-13e27040d7b5
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 670d3e92b24e35979074df3817611ceff692f59d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f11743e0027866fd45687f716f1989e98020c68e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290448"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977289"
 ---
 # <a name="compensableactivity-activity-designer"></a>CompensableActivity 활동 디자이너
 합니다 **CompensableActivity** 활동 디자이너는 만들기 및 구성 하는 데 사용 되는 <xref:System.Activities.Statements.CompensableActivity> 활동입니다.  
@@ -35,7 +32,7 @@ ms.locfileid: "49290448"
 ### <a name="the-compensableactivity-properties"></a>CompensableActivity 속성  
  다음 표에서는 <xref:System.Activities.Statements.CompensableActivity> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. <xref:System.Activities.Activity.DisplayName%2A> 및 <xref:System.Activities.Activity%601.Result%2A> 속성은 속성 표에서 편집할 수 있지만 다른 속성은 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 화면에서 편집해야 합니다.  
   
-|속성 이름|필수|용도|  
+|속성 이름|필수|사용|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.CompensableActivity> 활동의 선택적 이름입니다. 기본값은 CompensableActivity입니다.|  
 |<xref:System.Activities.Activity%601.Result%2A>|False|<xref:System.Activities.Statements.CompensableActivity>의 반환 값을 지정합니다. 이 속성은 속성 표에서 편집해야 합니다.|  

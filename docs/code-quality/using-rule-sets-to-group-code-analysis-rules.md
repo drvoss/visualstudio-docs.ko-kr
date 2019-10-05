@@ -1,7 +1,6 @@
 ---
 title: 코드 분석 규칙 집합
 ms.date: 04/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.rulesets.learnmore
@@ -9,29 +8,29 @@ helpviewer_keywords:
 - code analysis, rule sets
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dc70348ef2fe5826339bd58e1db17574449ff6c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bae627e08faed01ab0efc8e64373ff86ed5c877e
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885157"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69548032"
 ---
-# <a name="use-rule-sets-to-group-code-analysis-rules"></a>코드 분석 규칙 그룹화를 사용 하 여 규칙 집합
+# <a name="use-rule-sets-to-group-code-analysis-rules"></a>규칙 집합을 사용 하 여 코드 분석 규칙 그룹화
 
-Visual Studio에서 코드 분석을 구성할 때 기본 제공 목록에서 선택할 수 있습니다 *규칙 집합*합니다. 규칙 집합을 프로젝트에 적용 되며 코드의 그룹에는 해당 프로젝트에 대 한 특정 조건과 대상된 문제를 식별 하는 분석 규칙. 예를 들어 공개적으로 사용 가능한 Api에 대 한 코드를 스캔 하도록 설계 된 규칙 집합을 적용 하거나 방금 최소 권장 규칙. 모든 규칙을 포함 하는 규칙 집합을 적용할 수도 있습니다.
+Visual Studio에서 코드 분석을 구성 하는 경우 기본 제공 *규칙 집합*목록에서 선택할 수 있습니다. 규칙 집합은 대상 문제 및 해당 프로젝트에 대 한 특정 조건을 식별 하는 코드 분석 규칙의 그룹입니다. 예를 들어 공개적으로 사용 가능한 Api에 대 한 코드를 검사 하도록 디자인 된 규칙 집합을 적용할 수 있습니다. 사용 가능한 모든 규칙을 포함 하는 규칙 집합을 적용할 수도 있습니다.
 
-규칙 경고 또는 오류를 표시할 추가 또는 삭제 규칙 또는 규칙 심각도 변경 하 여 집합을 사용자 지정할 수 있습니다 합니다 **오류 목록**합니다. 사용자 지정된 규칙 집합에는 특정 개발 환경의 요구 사항을 충족할 수 있습니다. 규칙 집합을 사용자 지정 규칙 집합 편집기 검색 및 필터링 프로세스에서 도움이 도구를 제공 합니다.
+규칙을 추가 또는 삭제 하거나 규칙 심각도를 변경 하 여 **오류 목록**에서 경고나 오류로 표시 되도록 규칙 집합을 사용자 지정할 수 있습니다. 사용자 지정 된 규칙 집합은 특정 개발 환경에 대 한 요구 사항을 충족할 수 있습니다. 규칙 집합을 사용자 지정할 때 규칙 집합 편집기는 프로세스에 도움이 되는 검색 및 필터링 도구를 제공 합니다.
 
-규칙 집합에 사용할 수 있는 [관리 되는 코드의 정적 분석](how-to-configure-code-analysis-for-a-managed-code-project.md)를 [c + + 코드 분석](using-rule-sets-to-specify-the-cpp-rules-to-run.md), 및 [Roslyn 분석기](analyzer-rule-sets.md)합니다.
+규칙 집합은 [관리 코드 분석](analyzer-rule-sets.md), [관리 코드의 레거시 분석](how-to-configure-code-analysis-for-a-managed-code-project.md)및 [ C++ 코드 분석](using-rule-sets-to-specify-the-cpp-rules-to-run.md)에 사용할 수 있습니다.
 
 ## <a name="rule-set-format"></a>규칙 집합 형식
 
-규칙 집합에 XML 형식으로 지정 된 *.ruleset* 파일입니다. ID가 구성 된 규칙 및 *동작*, 분석기 ID 및 파일에 네임 스페이스 별로 그룹화 됩니다.
+규칙 집합은 *.* 규칙 집합 파일의 XML 형식으로 지정 됩니다. ID 및 *작업*으로 구성 되는 규칙은 파일의 분석기 ID 및 네임 스페이스로 그룹화 됩니다.
 
-콘텐츠를 *.ruleset* 이 XML 파일 비슷합니다.
+*. 규칙 집합* 파일의 내용은 다음 XML과 유사 합니다.
 
 ```xml
 <RuleSet Name="Rules for Hello World project" Description="These rules focus on critical issues for the Hello World app." ToolsVersion="10.0">
@@ -55,11 +54,11 @@ Visual Studio에서 코드 분석을 구성할 때 기본 제공 목록에서 �
 ```
 
 > [!TIP]
-> 쉽습니다 [규칙 집합 편집](../code-quality/working-in-the-code-analysis-rule-set-editor.md) 에서 그래픽 **규칙 집합 편집기** 손으로 보다 합니다.
+> 그래픽 **규칙 집합 편집기** 의 [규칙 집합을 직접 편집](../code-quality/working-in-the-code-analysis-rule-set-editor.md) 하는 것이 더 쉽습니다.
 
-## <a name="specify-a-rule-set-for-a-project"></a>프로젝트에 대해 설정 하는 규칙 지정
+## <a name="specify-a-rule-set-for-a-project"></a>프로젝트에 대 한 규칙 집합 지정
 
-규칙 집합으로 지정 된 프로젝트에 대 한 합니다 **CodeAnalysisRuleSet** Visual Studio 프로젝트 파일의 속성입니다. 예를 들어:
+프로젝트에 대 한 규칙 집합은 Visual Studio 프로젝트 파일의 **CodeAnalysisRuleSet** 속성으로 지정 됩니다. 예:
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -68,6 +67,6 @@ Visual Studio에서 코드 분석을 구성할 때 기본 제공 목록에서 �
 </PropertyGroup>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [코드 분석 규칙 집합 참조](../code-quality/rule-set-reference.md)

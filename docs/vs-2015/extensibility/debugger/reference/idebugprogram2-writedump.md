@@ -1,14 +1,9 @@
 ---
 title: IDebugProgram2::WriteDump | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProgram2::WriteDump
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 375afb8c-882d-44db-bfa7-e2c9eb555122
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c895d7bb35dd700552d1db664ae6dbf8c617114c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 491515d2778c6ad16287739bfc88d8134903d2bb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51723445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205798"
 ---
 # <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -58,6 +53,5 @@ int WriteDump( 
 ## <a name="remarks"></a>설명  
  프로그램 덤프는 일반적으로 현재 스택 프레임, 스택 자체, 프로그램과 프로그램을 소유 하는 메모리 수에서 실행 중인 스레드의 목록에 포함 됩니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
-

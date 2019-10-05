@@ -1,8 +1,6 @@
 ---
-title: 응용 프로그램 리소스 관리(.NET)
+title: 애플리케이션 리소스 관리(.NET)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - msvse_resedit.dlg.SetCustomTool
@@ -16,19 +14,19 @@ helpviewer_keywords:
 - application resources [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9a80a84276648f8a0f0d5a94992b5f58cbcfefa
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 1681484500c382b296a03e78661b808825768a5b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62538111"
 ---
-# <a name="manage-application-resources-net"></a>응용 프로그램 리소스 관리(.NET)
+# <a name="manage-application-resources-net"></a>애플리케이션 리소스 관리(.NET)
 
-리소스 파일은 응용 프로그램의 일부이지만 컴파일되지 않는 파일입니다(예: 아이콘 파일 또는 오디오 파일). 이러한 파일은 컴파일 프로세스에 포함되지 않으므로 이진 파일을 다시 컴파일할 필요 없이 변경할 수 있습니다. 응용 프로그램을 지역화할 계획인 경우 모든 문자열 및 응용 프로그램을 지역화할 때 변경해야 하는 다른 리소스에 대해 리소스 파일을 사용해야 합니다.
+리소스 파일은 애플리케이션의 일부이지만 컴파일되지 않는 파일입니다(예: 아이콘 파일 또는 오디오 파일). 이러한 파일은 컴파일 프로세스에 포함되지 않으므로 이진 파일을 다시 컴파일할 필요 없이 변경할 수 있습니다. 애플리케이션을 지역화할 계획인 경우 모든 문자열 및 애플리케이션을 지역화할 때 변경해야 하는 다른 리소스에 대해 리소스 파일을 사용해야 합니다.
 
 > [!NOTE]
 > 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [앱 리소스 관리(Mac용 Visual Studio)](/visualstudio/mac/managing-app-resources)를 참조하세요.
@@ -40,7 +38,7 @@ ms.locfileid: "51348136"
 관리 코드 프로젝트에서 프로젝트 속성 창을 엽니다. 다음 방법 중 하나로 속성 창을 열 수 있습니다.
 
 - **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성** 선택
-- **빠른 실행** 창에 "프로젝트 속성" 입력
+- **Ctrl**+**Q** 검색 상자에 **프로젝트 속성** 입력
 - **솔루션 탐색기**에서 **Alt**+**Enter** 키 선택
 
 **리소스** 탭을 선택합니다. 프로젝트에 *.resx* 파일이 포함되지 않은 경우 하나를 추가하고, 다른 종류의 리소스를 추가 및 삭제하고, 기존 리소스를 수정할 수 있습니다.
@@ -50,7 +48,7 @@ ms.locfileid: "51348136"
 .NET 프로젝트의 리소스는 다른 프로젝트 형식과 다른 방식으로 관리됩니다. 리소스에 대한 자세한 내용은 다음을 참조하세요.
 
 - UWP(유니버설 Windows 플랫폼) 앱은 [앱 리소스 및 리소스 관리 시스템](/windows/uwp/app-resources/) 참조
-- C++ 프로젝트는 [리소스 파일에 대한 작업](/cpp/windows/working-with-resource-files) 및 [방법: 리소스 파일 만들기](/cpp/windows/how-to-create-a-resource) 참조
+- C++ 프로젝트는 [리소스 파일에 대한 작업](/cpp/windows/working-with-resource-files) 및 [방법: 리소스 파일 만들기](/cpp/windows/how-to-create-a-resource)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

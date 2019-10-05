@@ -2,7 +2,6 @@
 title: IDebugDocumentTextExternalAuthor::GetFileName | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9fc2532530044b7b3da286bce95152c704bf2392
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: edb988751b8a0c0e6450e1fa216a474df2e8c59d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978916"
 ---
 # <a name="idebugdocumenttextexternalauthorgetfilename"></a>IDebugDocumentTextExternalAuthor::GetFileName
 경로 정보 없이 문서의 이름을 반환합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetFileName(  
    BSTR*  pbstrShortName  
 );  

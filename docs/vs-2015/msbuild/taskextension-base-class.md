@@ -1,14 +1,9 @@
 ---
 title: TaskExtension 클래스 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,18 +16,17 @@ ms.assetid: 08bb8059-b7e2-4565-89ba-d9034d4f0e16
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 15c5882b66a56b01e27501168aba285dfb89bea3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9c8e4823ae9a997feae15836962d0c5b8a1f2aa1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203894"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182334"
 ---
 # <a name="taskextension-base-class"></a>TaskExtension 기본 클래스
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 많은 작업은 <xref:Microsoft.Build.Utilities.Task> 클래스에서 상속되는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스에서 상속됩니다. 이 상속 체인은 매개 변수에서 파생되는 작업에 해당 매개 변수 몇 개를 추가합니다. 이러한 매개 변수가 이 문서에 나열되어 있습니다.  
   
 ## <a name="parameters"></a>매개 변수  
@@ -49,6 +43,3 @@ ms.locfileid: "49203894"
 ## <a name="see-also"></a>참고 항목  
  [작업 참조](../msbuild/msbuild-task-reference.md)   
  [작업](../msbuild/msbuild-tasks.md)
-
-
-

@@ -1,35 +1,32 @@
 ---
 title: 프로그램 코드에서 UML 모델 읽기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API, reading models
 ms.assetid: 0f63105e-6079-498a-94f1-318c0f5f9621
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 62355c8b934b152aae8d3a4102432d2eb0553473
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 37539ee6c031d88b9db279cc61214ac5e3077e76
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387676"
 ---
 # <a name="read-a-uml-model-in-program-code"></a>프로그램 코드에서 UML 모델 읽기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 UML API를 사용하여 UML 모델 및 해당 다이어그램을 로드할 수 있습니다.  
   
-##  <a name="Reading"></a> 프로그램 코드에서 모델 읽기  
+## <a name="Reading"></a> 프로그램 코드에서 모델 읽기  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 창에 표시하지 않고 모델의 콘텐츠에 액세스하려면 `ModelingProject.LoadReadOnly()`를 사용합니다.  
   
- 예:  
+ 예를 들어:  
   
 ```  
 using Microsoft.VisualStudio.Uml.Classes;   
@@ -53,7 +50,7 @@ using (IModelingProjectReader projectReader =
   
  다이어그램에서 모양을 읽으려는 경우 프로젝트를 읽은 후 다이어그램을 읽어야 합니다.  
   
- 예:  
+ 예를 들어:  
   
 ```  
 using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;   
@@ -73,21 +70,21 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] API를 사용하여 사용자 인터페이스에서 모델 및 다이어그램을 열 수도 있습니다. 자세한 내용은 [Visual Studio API를 사용 하 여 UML 모델 열기](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)합니다.  
   
-##  <a name="Standalone"></a> 독립 실행형 응용 프로그램  
- 이전 섹션의 예제는 Visual Studio 확장에서 작동합니다. 독립 실행형 응용 프로그램에서 모델을 읽을 수 있지만 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트에 일부 참조를 추가해야 합니다.  
+## <a name="Standalone"></a> 독립 실행형 응용 프로그램  
+ 이전 섹션의 예제는 Visual Studio 확장에서 작동합니다. 독립 실행형 애플리케이션에서 모델을 읽을 수 있지만 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트에 일부 참조를 추가해야 합니다.  
   
 > [!NOTE]
->  독립 실행형 응용 프로그램에서 모델을 읽는 방법의 세부 정보는 이후 버전의 제품에서 변경될 수 있습니다. 현재 버전에서 액세스할 수 있는 일부 기능을 이후 버전에서는 사용하지 못할 수도 있습니다.  
+> 독립 실행형 애플리케이션에서 모델을 읽는 방법의 세부 정보는 이후 버전의 제품에서 변경될 수 있습니다. 현재 버전에서 액세스할 수 있는 일부 기능을 이후 버전에서는 사용하지 못할 수도 있습니다.  
   
-#### <a name="to-add-references-to-read-a-model-in-a-stand-alone-application"></a>독립 실행형 응용 프로그램에서 모델을 읽기 위해 참조를 추가하려면  
+#### <a name="to-add-references-to-read-a-model-in-a-stand-alone-application"></a>독립 실행형 애플리케이션에서 모델을 읽기 위해 참조를 추가하려면  
   
 1. 솔루션 탐색기에서 응용 프로그램을 작성 하는 지정 하 고 클릭 한 다음 프로젝트를 마우스 오른쪽 단추로 **속성**합니다. 속성 편집기에서에 **응용 프로그램** 탭에서 **대상 프레임 워크** .NET Framework의 필수 버전으로 합니다.  
   
 2. UML 모델에 액세스하는 데 필요한 [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] 참조를 추가합니다. 일반적으로 다음과 같습니다.  
   
-   -   Microsoft.VisualStudio.Uml.Interfaces.dll  
+   - Microsoft.VisualStudio.Uml.Interfaces.dll  
   
-   -   Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll  
+   - Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll  
   
 3. 이전 섹션에 나열 된 참조 외에도 다음 프로젝트 참조를 추가할 **\Program Files\Microsoft Visual Studio [version] \Common7\IDE\PrivateAssemblies**:  
   
@@ -95,7 +92,7 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
   
    - Microsoft.VisualStudio.TeamArchitect.ModelStore.Dsl.dll  
   
-     응용 프로그램에서 다이어그램을 읽으려는 경우 다음 참조가 필요할 수도 있습니다.  
+     애플리케이션에서 다이어그램을 읽으려는 경우 다음 참조가 필요할 수도 있습니다.  
   
    - Microsoft.VisualStudio.TeamArchitect.ActivityDesigner.Dsl.dll  
   
@@ -110,6 +107,3 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
 ## <a name="see-also"></a>참고 항목  
  [UML API를 사용한 프로그래밍](../modeling/programming-with-the-uml-api.md)   
  [UML 모델 및 다이어그램 확장](../modeling/extend-uml-models-and-diagrams.md)
-
-
-

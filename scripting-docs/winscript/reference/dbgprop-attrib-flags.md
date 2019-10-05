@@ -1,8 +1,7 @@
 ---
-title: DBGPROP_ATTRIB_FLAGS | Microsoft 문서
+title: DBGPROP_ATTRIB_FLAGS | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,19 +19,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 831f12d11515e6796941b64e114bdc084309b87d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0324353d716430148b4b3c7b8adf9262e0dc3b7b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955278"
 ---
-# <a name="dbgpropattribflags"></a>DBGPROP_ATTRIB_FLAGS
+# <a name="dbgprop_attrib_flags"></a>DBGPROP_ATTRIB_FLAGS
 `IDebugProperty`의 여러 특성에 대해 설명합니다. `DebugPropertyInfo` 구조체의 멤버입니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 enum {  
 DBGPROP_ATTRIB_NO_ATTRIB  =0x00000000,  
    DBGPROP_ATTRIB_VALUE_IS_INVALID  =0x00000008,  
@@ -81,16 +80,16 @@ DBGPROP_ATTRIB_NO_ATTRIB  =0x00000000,
  최종 액세스 권한이 있는 개체를 나타냅니다.  
   
  DBGPROP_ATTRIB_STORAGE_GLOBAL  
- 전역 저장소를 나타냅니다.  
+ 전역 스토리지를 나타냅니다.  
   
  DBGPROP_ATTRIB_STORAGE_STATIC  
- 정적 저장소를 나타냅니다.  
+ 정적 스토리지를 나타냅니다.  
   
  DBGPROP_ATTRIB_STORAGE_FIELD  
  속성인 개체를 나타냅니다.  
   
  DBGPROP_ATTRIB_STORAGE_VIRTUAL  
- 가상 저장소를 나타냅니다.  
+ 가상 스토리지를 나타냅니다.  
   
  DBGPROP_ATTRIB_TYPE_IS_CONSTANT  
  개체 형식이 상수임을 나타냅니다.  
@@ -99,7 +98,7 @@ DBGPROP_ATTRIB_NO_ATTRIB  =0x00000000,
  이 슬롯이 스레드와 동기화되어 있음을 나타냅니다.  
   
  DBGPROP_ATTRIB_TYPE_IS_VOLATILE  
- 이 슬롯이 영구 저장소에 대해 일시적임을 나타냅니다.  
+ 이 슬롯이 영구 스토리지에 대해 일시적임을 나타냅니다.  
   
  DBGPROP_ATTRIB_HAS_EXTENDED_ATTRIBS  
  이 슬롯에 이러한 미리 정의된 비트 이상의 추가 특성이 있음을 나타냅니다.  

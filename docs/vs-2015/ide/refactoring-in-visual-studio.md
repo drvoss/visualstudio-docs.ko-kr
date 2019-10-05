@@ -1,25 +1,20 @@
 ---
 title: 리팩터링
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: f0181ee8-9b46-45f7-b86e-316e3de024b9
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b0d5abaa326559956ffa534ac2ed70f4a0aaaf1a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 2a3db616ec23a8d6fdb1984ce27f8fec4909cc9e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052934"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680239"
 ---
 # <a name="refactoring-in-visual-studio"></a>Visual Studio에서 리팩터링
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,16 +31,16 @@ ms.locfileid: "53052934"
 
    리팩터링 논리는 언어 구문과 밀접하게 연관되어 있으므로 Visual Studio의 각 언어 서비스에서는 고유한 리팩터링 기능을 제공합니다. 자세한 내용은 다음 페이지를 참조하세요.
 
-### <a name="refactoring-in-c"></a>C#에서의 리팩터링
+### <a name="refactoring-in-c"></a>C\#에서의 리팩터링
  [리팩터링(C#)](../csharp-ide/refactoring-csharp.md)
 
 ### <a name="refactoring-in-visual-basic"></a>Visual Basic에서의 리팩터링
- [리팩터링 및 이름 바꾸기 대화 상자(Visual Basic)](http://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959)
+ [리팩터링 및 이름 바꾸기 대화 상자(Visual Basic)](https://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959)
 
 ### <a name="refactoring-in-c"></a>C++에서의 리팩터링
- [코드 작성 및 리팩터링(C++)](http://msdn.microsoft.com/library/56ffb9e9-514f-41f4-a3cf-fd9ce2daf3b6)
+ [코드 작성 및 리팩터링(C++)](https://msdn.microsoft.com/library/56ffb9e9-514f-41f4-a3cf-fd9ce2daf3b6)
 
-### <a name="refactoring-in-f"></a>F#에서의 리팩터링
+### <a name="refactoring-in-f"></a>F\#에서의 리팩터링
  F#에 대한 리팩터링 지원은 타사 Visual Studio 확장인 [Visual F# Power Tools](https://visualstudiogallery.msdn.microsoft.com/136b942e-9f2c-4c0b-8bac-86d774189cff)에서 제공됩니다.
 
 ## <a name="see-also"></a>참고 항목

@@ -1,26 +1,21 @@
 ---
 title: 중단점 바인딩 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - breakpoints, binding
 ms.assetid: 70737387-c52f-4dae-8865-77d4b203bf25
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f8061b8d9a9cf3f29889405ea8004a79a0af8216
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fc7f68093432c96d496921ea593b6e936bad8302
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147972"
 ---
 # <a name="binding-breakpoints"></a>중단점 바인딩
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,18 +25,18 @@ ms.locfileid: "51807376"
 ## <a name="setting-a-breakpoint"></a>중단점 설정  
  중단점 설정 이므로 2 단계 프로세스, 코드 또는 중단점의 영향을 받는 데이터를 아직 사용할 수 없습니다. 중단점을 설명 해야 합니다 하 고 그런 다음 코드 또는 데이터를 사용할 수 있는,이에 연결 해야 코드 또는 데이터를 사용 하는 다음과 같이 먼저:  
   
-1.  관련 디버그 엔진 (DEs)에서 중단점을 요청 하 고 중단점에 바인딩된 코드 또는 데이터를 사용할 수 있는 키를 누릅니다.  
+1. 관련 디버그 엔진 (DEs)에서 중단점을 요청 하 고 중단점에 바인딩된 코드 또는 데이터를 사용할 수 있는 키를 누릅니다.  
   
-2.  중단점 요청은 모든 관련 DEs로 전송 하는 디버그 세션에 전송 됩니다. 중단점을 처리 하도록 선택 하는 모든 DE 해당 보류 중단점을 만듭니다.  
+2. 중단점 요청은 모든 관련 DEs로 전송 하는 디버그 세션에 전송 됩니다. 중단점을 처리 하도록 선택 하는 모든 DE 해당 보류 중단점을 만듭니다.  
   
-3.  디버그 세션은 보류 중인 중단점을 수집 하 고 디버그 패키지 (Visual Studio의 디버깅 구성)에 다시 보냅니다.  
+3. 디버그 세션은 보류 중인 중단점을 수집 하 고 디버그 패키지 (Visual Studio의 디버깅 구성)에 다시 보냅니다.  
   
-4.  디버그 패키지가 보류 중인 중단점 코드나 데이터에 바인딩할 디버그 세션을 요청 합니다. 디버그 세션에 모든 관련 DEs이이 요청을 보냅니다.  
+4. 디버그 패키지가 보류 중인 중단점 코드나 데이터에 바인딩할 디버그 세션을 요청 합니다. 디버그 세션에 모든 관련 DEs이이 요청을 보냅니다.  
   
-5.  DE 중단점을 바인딩할 수 있으면 중단점 디버그 세션에 다시 이벤트를 바인딩된 보냅니다. 그렇지 않은 경우 대신 중단점 오류 이벤트를 보냅니다.  
+5. DE 중단점을 바인딩할 수 있으면 중단점 디버그 세션에 다시 이벤트를 바인딩된 보냅니다. 그렇지 않은 경우 대신 중단점 오류 이벤트를 보냅니다.  
   
 ## <a name="pending-breakpoints"></a>보류 중인 중단점  
- 보류 중인 중단점 여러 코드 위치에 바인딩할 수 있습니다. 예를 들어, c + + 템플릿에 대 한 소스 코드 줄을 템플릿에서 생성 되는 모든 코드 시퀀스를 바인딩할 수 있습니다. 디버그 세션 중단점이 바인딩된 이벤트를 사용 하 여 이벤트가 전송 된 시간에 중단점을 바인딩할 코드 컨텍스트 열거를 수 있습니다. 자세한 코드 컨텍스트는 DE 여러 중단점 바인딩된 각 바인딩 요청에 대 한 이벤트를 보낼 수 있습니다 나중에 바인딩할 수 있습니다. 그러나는 DE 바인딩 요청당 하나의 중단점 오류 이벤트를 전송 해야 합니다.  
+ 보류 중인 중단점 여러 코드 위치에 바인딩할 수 있습니다. 예를 들어, 소스 코드 줄을 C++ 템플릿 템플릿에서 생성 되는 모든 코드 시퀀스를 바인딩할 수 있습니다. 디버그 세션 중단점이 바인딩된 이벤트를 사용 하 여 이벤트가 전송 된 시간에 중단점을 바인딩할 코드 컨텍스트 열거를 수 있습니다. 자세한 코드 컨텍스트는 DE 여러 중단점 바인딩된 각 바인딩 요청에 대 한 이벤트를 보낼 수 있습니다 나중에 바인딩할 수 있습니다. 그러나는 DE 바인딩 요청당 하나의 중단점 오류 이벤트를 전송 해야 합니다.  
   
 ## <a name="implementation"></a>구현  
  디버그 패키지 세션 디버그 관리자 SDM ()를 호출 하 고 제공 하는 프로그래밍 방식으로 [IDebugBreakpointRequest2](../../extensibility/debugger/reference/idebugbreakpointrequest2.md) 래핑하는 인터페이스를 [BP_REQUEST_INFO](../../extensibility/debugger/reference/bp-request-info.md) 설명 하는 구조는 중단점을 설정할 수 있습니다. 중단점의 다양 한 형태를 사용할 수 있지만 궁극적으로 코드 또는 데이터 컨텍스트를 확인 합니다.  
@@ -62,4 +57,3 @@ ms.locfileid: "51807376"
   
 ## <a name="see-also"></a>참고 항목  
  [디버깅 작업](../../extensibility/debugger/debugging-tasks.md)
-

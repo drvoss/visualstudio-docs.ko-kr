@@ -1,8 +1,6 @@
 ---
 title: 성능 세션 속성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,properties
@@ -10,19 +8,19 @@ helpviewer_keywords:
 - performance tools, performance session properties
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ce4fb6b9a57db78e3dbb7f3082a87df9ffb7360
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 77da53856e0562d036fade431dd0deba0376fe9f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254695"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62798366"
 ---
 # <a name="performance-session-properties"></a>성능 세션 속성
 
-**성능 세션**에서는 응용 프로그램을 프로파일링하는 방식을 결정하는 설정을 구성할 수 있습니다. 또한 프로파일링 세션에 대해 생성되는 보고서도 저장됩니다.
+**성능 세션**에서는 애플리케이션을 프로파일링하는 방식을 결정하는 설정을 구성할 수 있습니다. 또한 프로파일링 세션에 대해 생성되는 보고서도 저장됩니다.
 
 **성능 마법사**를 실행하거나 세션을 수동으로 만드는 방법으로 **성능 세션**을 만듭니다. **성능 세션**을 만들고 나면 **성능 탐색기**에 **성능 세션**이 표시됩니다.
 
@@ -40,7 +38,7 @@ ms.locfileid: "35254695"
 
 [.NET 메모리 할당 및 수명 데이터 수집](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
- [방법: 성능 데이터 파일 이름 옵션 설정](../profiling/how-to-set-performance-data-file-name-options.md)
+- [방법: 성능 데이터 파일 이름 옵션 설정](../profiling/how-to-set-performance-data-file-name-options.md)
 
 ## <a name="launch"></a>Launch
 
@@ -58,7 +56,7 @@ ms.locfileid: "35254695"
 - 성능 카운터 - 낮은 수준의 성능 문제
 - 사용 가능한 성능 카운터에 따라 추가 샘플 이벤트를 지정할 수 있습니다.
 
-자세한 내용은 [방법: 샘플링 이벤트 선택](../profiling/how-to-choose-sampling-events.md)을 참조하세요.
+자세한 내용은 [방법: 샘플링 이벤트 선택](../profiling/how-to-choose-sampling-events.md)
 
 ## <a name="binary"></a>이항
 이러한 설정을 사용하면 계측된 이진 파일을 다른 위치로 옮길지 여부를 지정할 수 있습니다. 예를 들어 *My.DLL*을 프로파일링할 때 계측된 이진 파일을 옮기지 않도록 선택하면 *My.Orig.DLL*이라는 *My.DLL*의 백업 복사본이 만들어집니다. 그런 후에는 데이터를 수집하기 위한 프로브를 삽입하여 *My.DLL*이 수정됩니다. 계측된 이진 파일을 옮기도록 선택하면 원본 이진 파일 이름이 바뀌지 않으며 계측 중에 사용하기 위해 계측된 이진 파일이 지정한 위치에 복사됩니다.
@@ -83,7 +81,7 @@ ms.locfileid: "35254695"
 
 이러한 설정을 사용하면 계측 프로파일링 방법을 사용할 때 CPU 성능 카운터에 대한 데이터를 수집할 수 있습니다. 이식 가능한 성능 카운터는 CPU 디자인 또는 제조업체에 관계없이 사용할 수 있습니다. 플랫폼 이벤트는 CPU 디자인 및 제조업체별로 다릅합니다. 온칩 성능 카운터에 대한 자세한 내용은 특정 프로세서 설명서를 참조하세요.
 
-자세한 내용은 [방법: CPU 카운터 데이터 수집](../profiling/how-to-collect-cpu-counter-data.md)을 참조하세요.
+자세한 내용은 [방법: CPU 카운터 데이터 수집](../profiling/how-to-collect-cpu-counter-data.md)
 
 ## <a name="windows-events"></a>Windows 이벤트
 
@@ -103,7 +101,7 @@ ms.locfileid: "35254695"
 
 ## <a name="advanced"></a>고급
 
-이러한 설정을 사용하면 [VSInstr](../profiling/vsinstr.md) 명령줄 프로파일링 도구의 옵션을 하나 이상 지정하여 계측 프로세스에 옵션을 추가할 수 있습니다. 응용 프로그램이 여러 버전을 사용하는 경우에는 프로파일링할 공용 런타임 버전을 지정할 수도 있습니다.
+이러한 설정을 사용하면 [VSInstr](../profiling/vsinstr.md) 명령줄 프로파일링 도구의 옵션을 하나 이상 지정하여 계측 프로세스에 옵션을 추가할 수 있습니다. 애플리케이션이 여러 버전을 사용하는 경우에는 프로파일링할 공용 런타임 버전을 지정할 수도 있습니다.
 
 자세한 내용은 다음을 참조하세요.
 
@@ -113,6 +111,6 @@ ms.locfileid: "35254695"
 
 ## <a name="see-also"></a>참고 항목
 
-[개요](../profiling/overviews-performance-tools.md)  
-[성능 세션 구성](../profiling/configuring-performance-sessions.md)  
-[데이터 수집 제어](../profiling/controlling-data-collection.md)
+[개요](../profiling/overviews-performance-tools.md)
+[성능 세션 구성](../profiling/configuring-performance-sessions.md)
+[데이터 컬렉션 제어](../profiling/controlling-data-collection.md)

@@ -1,12 +1,10 @@
 ---
 title: 리팩터링 이름 바꾸기
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.rename
 dev_langs:
@@ -14,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 02b08f3218ab6f1380884d2385899d6dd486bb81
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d1b4ff448f04ff6f683fac06cbc0b31797edf587
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063155"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186586"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>코드 기호 이름 바꾸기 래픽터링
 
@@ -39,7 +37,7 @@ ms.locfileid: "53063155"
 
 1. 이름을 바꿀 항목을 강조 표시하거나 항목 내부에 텍스트 커서를 놓습니다.
 
-   - C#: 
+   - C#:
 
        ![강조 표시된 코드 - C#](media/rename-highlight-cs.png)
 
@@ -57,7 +55,7 @@ ms.locfileid: "53063155"
 
 3. 항목의 이름을 바꾸려면 새 이름을 입력하면 됩니다.
 
-   - C#: 
+   - C#:
 
       ![애니메이션 이름 바꾸기 - C#](media/rename-animated-cs.gif)
 
@@ -70,10 +68,17 @@ ms.locfileid: "53063155"
 
 4. 변경 내용에 만족할 경우 **적용** 단추를 선택하거나 **Enter** 키를 누르면 변경 내용이 커밋됩니다.
 
-> [!NOTE]
-> 충돌을 일으키는 기존 이름을 사용할 경우 **이름 바꾸기** 상자에 경고가 표시됩니다.
->
-> ![이름 바꾸기 충돌](media/rename-conflict-cs.png)
+## <a name="remarks"></a>설명
+
+- Visual Studio 2019 버전 16.3부터, 형식이 포함된 파일의 이름과 일치하도록 형식의 이름을 바꿀 때 파일 이름을 동시에 바꿀 수 있는 확인란이 표시됩니다. 이 옵션은 클래스, 인터페이스 또는 열거형의 이름을 바꾸는 경우에도 표시됩니다. 여러 정의가 포함된 부분 형식에서는 이 옵션이 지원되지 않습니다.
+
+   ![파일을 사용하여 애니메이션 이름 바꾸기 - C#](media/rename-with-file-animated-cs.gif)
+   
+- 충돌을 일으키는 기존 이름을 사용할 경우 **이름 바꾸기** 상자에 경고가 표시됩니다.
+
+   ![이름 바꾸기 충돌](media/rename-conflict-cs.png)
+
+- 기호의 이름을 바꾸는 다른 방법은 편집기에서 해당 이름을 변경하는 것입니다. 그런 다음 커서를 기호 이름에 놓고 **Ctrl**+**을 누릅니다.** 또는 나타나는 전구 아이콘 메뉴를 확장한 후 **이름 바꾸기\<를 선택하여 이전 이름을 \<새 이름**으로 바꿉니다.
 
 ## <a name="see-also"></a>참고 항목
 

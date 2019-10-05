@@ -1,8 +1,6 @@
 ---
 title: 끊어진 참조 문제 해결
 ms.date: 03/21/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: troubleshooting
 helpviewer_keywords:
 - C# projects, references
@@ -12,19 +10,19 @@ helpviewer_keywords:
 - referencing components, troubleshooting
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c1879b67558cb57fba7bc462e4c7df03fb5efc8
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 8f9095e3b8c1f80b35b2d135c122c2d7230c1f8c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32064352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575945"
 ---
 # <a name="troubleshoot-broken-references"></a>끊어진 참조 문제 해결
 
-응용 프로그램에서 끊어진 참조를 사용하려고 하면 예외 오류가 생성됩니다. 참조된 구성 요소를 찾을 수 없는 것이 오류의 주된 원인이지만, 참조가 끊어진 것으로 간주되는 여러 상황이 있습니다. 다음 목록에 이러한 경우가 나와 있습니다.
+애플리케이션에서 끊어진 참조를 사용하려고 하면 예외 오류가 생성됩니다. 참조된 구성 요소를 찾을 수 없는 것이 오류의 주된 원인이지만, 참조가 끊어진 것으로 간주되는 여러 상황이 있습니다. 다음 목록에 이러한 경우가 나와 있습니다.
 
 - 프로젝트의 참조 경로가 잘못되었거나 불완전합니다.
 
@@ -88,7 +86,7 @@ ms.locfileid: "32064352"
 
 ## <a name="com-component-is-not-installed-on-computer"></a>COM 구성 요소가 컴퓨터에 설치되지 않음
 
-사용자가 COM 구성 요소에 대한 참조를 추가했고 두 번째 사용자가 이 구성 요소가 설치되지 않은 컴퓨터에서 코드를 실행하려고 하면 두 번째 사용자에게 참조가 끊어졌다는 오류 메시지가 표시됩니다. 두 번째 컴퓨터에 구성 요소를 설치하면 오류가 수정됩니다. 프로젝트에서 COM 구성 요소 참조를 사용하는 방법에 대한 자세한 내용은 [.NET Framework 응용 프로그램의 COM 상호 운용성](/dotnet/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications)을 참조하세요.
+사용자가 COM 구성 요소에 대한 참조를 추가했고 두 번째 사용자가 이 구성 요소가 설치되지 않은 컴퓨터에서 코드를 실행하려고 하면 두 번째 사용자에게 참조가 끊어졌다는 오류 메시지가 표시됩니다. 두 번째 컴퓨터에 구성 요소를 설치하면 오류가 수정됩니다. 프로젝트에서 COM 구성 요소 참조를 사용하는 방법에 대한 자세한 내용은 [.NET Framework 애플리케이션의 COM 상호 운용성](/dotnet/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

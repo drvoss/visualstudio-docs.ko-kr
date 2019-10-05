@@ -1,32 +1,26 @@
 ---
 title: 대상 빌드 순서 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, build order
 ms.assetid: f4a26339-9f9a-497a-9aa6-0797183d450d
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a0bd5eb8dc4c99d05d8c31aa05914327a0ab7f02
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9ea2068bce101eb27a81da4925e0fef6ffa8c534
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144266"
 ---
 # <a name="target-build-order"></a>대상 빌드 순서
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 단일 대상에 대한 입력이 다른 대상의 출력을 사용하는 경우에는 대상의 순서를 지정해야 합니다. 다음과 같은 특성을 사용하여 대상이 실행되는 순서를 지정할 수 있습니다.  
   
 - `InitialTargets`. 이 `Project` 특성은 대상이 명령줄 또는 `DefaultTargets` 특성에 지정되어 있더라도 처음으로 실행할 대상을 지정합니다.  
@@ -52,7 +46,7 @@ ms.locfileid: "49925879"
   
  가져온 프로젝트의 경우 자체 `InitialTargets` 특성이 있을 수 있습니다. 모든 초기 대상은 함께 집계되어 순서대로 실행됩니다.  
   
- 자세한 내용은 [방법: 먼저 빌드할 대상 지정](../msbuild/how-to-specify-which-target-to-build-first.md)을 참조하세요.  
+ 자세한 내용은 [방법: 먼저 빌드할 대상 지정](../msbuild/how-to-specify-which-target-to-build-first.md)합니다.  
   
 ## <a name="default-targets"></a>기본 대상  
  [Project](../msbuild/project-element-msbuild.md) 요소의 `DefaultTargets` 특성은 대상이 명령줄에 명시적으로 지정되어 있지 않은 경우 빌드할 하나 이상의 대상을 지정합니다.  
@@ -71,13 +65,13 @@ ms.locfileid: "49925879"
   
  가져온 프로젝트의 경우 자체 `DefaultTargets` 특성이 있을 수 있습니다. 처음으로 나오는 `DefaultTargets` 특성에 따라 실행될 기본 대상이 결정됩니다.  
   
- 자세한 내용은 [방법: 먼저 빌드할 대상 지정](../msbuild/how-to-specify-which-target-to-build-first.md)을 참조하세요.  
+ 자세한 내용은 [방법: 먼저 빌드할 대상 지정](../msbuild/how-to-specify-which-target-to-build-first.md)합니다.  
   
 ## <a name="first-target"></a>첫 번째 대상  
  초기 대상, 기본 대상 또는 명령줄 대상이 없으면 MSBuild는 프로젝트 파일이나 가져온 프로젝트 파일에서 처음으로 나오는 대상을 실행합니다.  
   
 ## <a name="target-dependencies"></a>대상 종속성  
- 대상은 상호 간의 종속 관계를 설명할 수 있습니다. `DependsOnTargets` 특성은 대상이 다른 대상에 종속됨을 나타냅니다. 예를 들어 개체에 적용된  
+ 대상은 상호 간의 종속 관계를 설명할 수 있습니다. `DependsOnTargets` 특성은 대상이 다른 대상에 종속됨을 나타냅니다. 예를 들면 다음과 같습니다.  
   
 ```  
 <Target Name="Serve" DependsOnTargets="Chop;Cook" />  
@@ -113,22 +107,19 @@ ms.locfileid: "49925879"
 ## <a name="determining-the-target-build-order"></a>대상 빌드 순서 결정  
  MSBuild는 다음처럼 대상 빌드 순서를 결정합니다.  
   
-1.  `InitialTargets` 대상이 실행됩니다.  
+1. `InitialTargets` 대상이 실행됩니다.  
   
-2.  **/target** 스위치를 통해 명령줄에 지정된 대상이 실행됩니다. 명령줄에서 대상을 지정하지 않으면 `DefaultTargets` 대상이 실행됩니다. 이 두 대상이 모두 없으면 처음으로 나오는 대상이 실행됩니다.  
+2. **/target** 스위치를 통해 명령줄에 지정된 대상이 실행됩니다. 명령줄에서 대상을 지정하지 않으면 `DefaultTargets` 대상이 실행됩니다. 이 두 대상이 모두 없으면 처음으로 나오는 대상이 실행됩니다.  
   
-3.  대상의 `Condition` 특성을 평가합니다. `Condition` 특성이 있고 `false`로 평가되는 경우 대상은 실행되지 않으며 빌드에 영향을 주지 않습니다.  
+3. 대상의 `Condition` 특성을 평가합니다. `Condition` 특성이 있고 `false`로 평가되는 경우 대상은 실행되지 않으며 빌드에 영향을 주지 않습니다.  
   
-4.  대상이 실행되기 전에 `DependsOnTargets` 대상이 실행됩니다.  
+4. 대상이 실행되기 전에 `DependsOnTargets` 대상이 실행됩니다.  
   
-5.  대상이 실행되기 전에 `BeforeTargets` 특성에 해당 대상이 나열되어 있는 모든 대상이 실행됩니다.  
+5. 대상이 실행되기 전에 `BeforeTargets` 특성에 해당 대상이 나열되어 있는 모든 대상이 실행됩니다.  
   
-6.  대상이 실행되기 전에 `Inputs` 특성 및 `Outputs` 특성을 비교합니다. MSBuild는 해당하는 하나 이상의 입력 파일과 관련하여 출력 파일이 오래된 것으로 확인되면 대상을 실행합니다. 그렇지 않으면 MSBuild는 대상을 건너뜁니다.  
+6. 대상이 실행되기 전에 `Inputs` 특성 및 `Outputs` 특성을 비교합니다. MSBuild는 해당하는 하나 이상의 입력 파일과 관련하여 출력 파일이 오래된 것으로 확인되면 대상을 실행합니다. 그렇지 않으면 MSBuild는 대상을 건너뜁니다.  
   
-7.  대상을 실행하거나 건너뛴 후에는 `AfterTargets` 특성에 해당 대상이 나열되어 있는 모든 대상이 실행됩니다.  
+7. 대상을 실행하거나 건너뛴 후에는 `AfterTargets` 특성에 해당 대상이 나열되어 있는 모든 대상이 실행됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [대상](../msbuild/msbuild-targets.md)
-
-
-

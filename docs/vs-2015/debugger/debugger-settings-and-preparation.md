@@ -1,14 +1,9 @@
 ---
 title: 디버거 설정 및 준비 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: f15a1400-b204-418d-8878-ab7755470fd7
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0d670470158c86fa62c860571779ec701f65a11f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1199a28d83dc519b40466cda37ed966cc7ee51e4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198871"
 ---
 # <a name="debugger-settings-and-preparation"></a>디버거 설정 및 준비
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,16 +44,16 @@ ms.locfileid: "51766286"
  디버깅하기 위해 콘솔 프로젝트를 구성하는 방법에 대한 지침을 제공합니다.  
   
  [ASP.NET 웹 응용 프로그램](../debugger/debugging-preparation-aspnet-web-applications.md)  
- ASP.NET 웹 응용 프로그램을 구성하는 방법에 대한 지침을 설명합니다.  
+ ASP.NET 웹 애플리케이션을 구성하는 방법에 대한 지침을 설명합니다.  
   
- [방법: Visual Studio 솔루션의 일부가 아닌 실행 파일 디버그](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
+ [방법: Visual Studio 솔루션에 포함되지 않는 실행 파일 디버그](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
  Visual Studio 프로젝트의 일부로 작성되지 않은 실행 파일을 디버깅하는 방법에 대해 설명합니다.  
   
  [방법: Code Center Premium 소스로 디버그](../debugger/how-to-debug-with-code-center-premium-source.md)  
  Visual Studio 프로젝트에서 Microsoft Code Center Premium의 소스를 디버깅하는 방법에 대해 설명합니다.  
   
  [64비트 응용 프로그램 디버그](../debugger/debug-64-bit-applications.md)  
- 64비트 응용 프로그램을 디버그하는 방법을 설명합니다.  
+ 64비트 애플리케이션을 디버그하는 방법을 설명합니다.  
   
  [디버깅 및 호스팅 프로세스](../debugger/debugging-and-the-hosting-process.md)  
  호스팅 프로세스의 다양한 측면에 대해 설명합니다.  
@@ -69,6 +64,3 @@ ms.locfileid: "51766286"
 ## <a name="see-also"></a>참고 항목  
  [디버거 보안](../debugger/debugger-security.md)   
  [Visual Studio의 디버깅](../debugger/debugging-in-visual-studio.md)
-
-
-

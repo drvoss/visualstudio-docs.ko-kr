@@ -1,23 +1,21 @@
 ---
 title: 코딩된 UI 테스트로 UWP 앱 테스트
 ms.date: 05/31/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 3dcbd6065d45bf5350b80d555f335d3b8ec1cec7
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: d50972ccb68ba43e8ebefa0d69fdfff8f7fc5be4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895966"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430266"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>UWP 앱을 테스트하기 위한 코딩된 UI 테스트 만들기
 
@@ -31,7 +29,11 @@ ms.locfileid: "52895966"
 
 1. Visual Studio에서 Visual C# 또는 Visual Basic을 위한 **비어 있는 앱(유니버설 Windows)** 템플릿을 사용하여 새 프로젝트를 만듭니다.
 
-     ![비어 있는 앱 유니버설 Windows 템플릿](../test/media/blank-uwp-app-template.png)
+   ::: moniker range="vs-2017"
+
+   ![비어 있는 앱 유니버설 Windows 템플릿](../test/media/blank-uwp-app-template.png)
+
+   ::: moniker-end
 
 1. **새 유니버설 Windows 플랫폼 프로젝트** 대화 상자에서 **확인**을 선택하여 기본 플랫폼 버전을 승인합니다.
 
@@ -63,16 +65,20 @@ ms.locfileid: "52895966"
 
 1. 솔루션에 테스트 프로젝트를 추가하려면 **솔루션 탐색기**에서 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가** > **새 프로젝트**를 선택합니다.
 
-1. **새 프로젝트** 대화 상자에서 **코딩된 UI 테스트 프로젝트(유니버설 Windows)** 템플릿을 선택합니다. **Windows 유니버설** 범주의 **Visual C#** 또는 **Visual Basic** 아래에서 템플릿을 찾을 수 있습니다.
+1. **코딩된 UI 테스트 프로젝트(유니버설 Windows)** 템플릿을 검색하여 선택합니다.
 
-     ![새로운 코딩된 UI 테스트 프로젝트](../test/media/coded-ui-test-project-uwp-template.png)
+   ::: moniker range="vs-2017"
+
+   ![새로운 코딩된 UI 테스트 프로젝트](../test/media/coded-ui-test-project-uwp-template.png)
+
+   ::: moniker-end
 
    > [!NOTE]
    > **코딩된 UI 테스트 프로젝트(유니버설 Windows)** 템플릿이 표시되지 않으면 [코딩된 UI 테스트 구성 요소를 설치](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component)해야 합니다.
 
 1. **코딩된 UI 테스트에 대한 코드 생성** 대화 상자에서 **수동으로 테스트 편집**을 선택합니다.
 
-     ![코딩된 UI 테스트에 대한 코드 생성 대화 상자](../test/media/manually-edit-the-test.png)
+   ![코딩된 UI 테스트에 대한 코드 생성 대화 상자](../test/media/manually-edit-the-test.png)
 
 1. UWP 앱이 아직 실행되고 있지 않다면 **Ctrl**+**F5**를 눌러 앱을 시작합니다.
 
@@ -130,6 +136,7 @@ ms.locfileid: "52895966"
         Assert.AreEqual(Me.AssertMethod1ExpectedValues.UITextBoxEditText, uITextBoxEdit.Text, "Textbox value is unexpected.")
     End Sub
     ```
+
 1. 그런 다음, 테스트할 UWP [앱](#create-a-uwp-app-to-test)의 **AutomationId**를 가져와야 합니다. Windows **시작** 메뉴를 열어 앱의 타일을 확인합니다. 그런 다음, **코딩된 UI 테스트 빌더** 대화 상자에서 십자선 도구 ![대상 아이콘](media/target-icon.png)을 앱의 타일로 끕니다. 파란색 상자가 타일을 둘러싸면 마우스를 놓습니다.
 
    ![십자선 도구](media/cross-hair-tool.png)
@@ -207,7 +214,7 @@ ms.locfileid: "52895966"
 
 ## <a name="q--a"></a>Q&A
 
-### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>Q: [코딩된 UI 테스트용으로 코드 생성] 대화 상자에 나의 코딩된 UI 테스트를 기록할 수 있는 옵션이 표시되지 않는 이유는 무엇인가요?
+### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>Q: 코딩된 UI 테스트용으로 코드 생성 대화 상자에 내 코딩된 UI 테스트를 기록할 수 있는 옵션이 표시되지 않는 이유는 무엇인가요?
 
 **A**: UWP 앱의 경우 기록 옵션이 지원되지 않습니다.
 

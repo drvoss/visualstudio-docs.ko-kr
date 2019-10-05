@@ -1,14 +1,9 @@
 ---
 title: 직접 실행 창 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ImmediateWindow
 helpviewer_keywords:
@@ -19,24 +14,23 @@ ms.assetid: d33e7937-73f3-4c69-9df0-777a8713c6f2
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: be77104c4570068cbebf6c25801f600757a6ee0d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e6bbbd4fa2ad051407ece3e05c1806c1231ef2e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850427"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437126"
 ---
 # <a name="immediate-window"></a>직접 실행 창
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **직접 실행** 창은 식을 디버깅 및 계산하고 문을 실행하며 가변 값을 인쇄하는 등에 사용됩니다. 디버깅 중에 개발 언어에 따라 실행되거나 계산되는 식을 입력할 수 있습니다. **직접 실행** 창을 표시하려면 편집할 프로젝트를 연 다음, **디버그** 메뉴에서 **창**을 선택하고 **즉시 실행**을 선택하거나 CTRL+ALT+I를 누릅니다.  
   
  이 창을 사용하여 개별 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 명령을 실행할 수 있습니다. 사용할 수 있는 명령에는 변수에 값을 할당하는 데 사용할 수 있는 `EvaluateStatement`이(가) 포함됩니다. **직접 실행** 창도 IntelliSense를 지원합니다.  
   
 ## <a name="displaying-the-values-of-variables"></a>변수 값 표시  
- 이 창은 응용 프로그램을 디버깅할 때 특히 유용할 수 있습니다. 예를 들어, `varA` 변수의 값을 확인하려면 [인쇄 명령](../../ide/reference/print-command.md)을 사용할 수 있습니다.  
+ 이 창은 애플리케이션을 디버깅할 때 특히 유용할 수 있습니다. 예를 들어, `varA` 변수의 값을 확인하려면 [인쇄 명령](../../ide/reference/print-command.md)을 사용할 수 있습니다.  
   
 ```  
 >Debug.Print varA  
@@ -51,14 +45,14 @@ ms.locfileid: "49850427"
  이 명령의 두 버전은 모두 `varA` 변수의 값을 반환합니다.  
   
 > [!NOTE]
->  **즉시 실행** 창에서 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 명령을 실행하려면 명령 앞에 보다 큼 기호(>)를 추가해야 합니다. 여러 개의 명령을 입력하려면 **명령** 창으로 전환합니다.  
+> **즉시 실행** 창에서 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 명령을 실행하려면 명령 앞에 보다 큼 기호(>)를 추가해야 합니다. 여러 개의 명령을 입력하려면 **명령** 창으로 전환합니다.  
   
 ## <a name="design-time-expression-evaluation"></a>디자인 타임 식 계산  
  **직접 실행** 창을 사용하여 디자인 타임에 함수 또는 서브루틴을 실행할 수 있습니다.  
   
 #### <a name="to-execute-a-function-at-design-time"></a>디자인 타임에 함수를 실행하려면  
   
-1. 다음 코드를 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 콘솔 응용 프로그램에 복사합니다.  
+1. 다음 코드를 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 콘솔 애플리케이션에 복사합니다.  
   
    ```  
    Module Module1  
@@ -80,7 +74,7 @@ ms.locfileid: "49850427"
   
     **직접 실행** 창이 `MyFunction`을 실행하고 `4`를 표시합니다.  
   
-   함수 또는 서브루틴에 중단점이 포함된 경우 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]는 적절한 지점에서 실행을 중단합니다. 그런 다음 디버거 창을 사용하여 프로그램 상태를 조사할 수 있습니다. 자세한 내용은 [연습: 디자인 타임에 디버깅](../../debugger/walkthrough-debugging-at-design-time.md)을 참조하십시오.  
+   함수 또는 서브루틴에 중단점이 포함된 경우 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]는 적절한 지점에서 실행을 중단합니다. 그런 다음 디버거 창을 사용하여 프로그램 상태를 조사할 수 있습니다. 자세한 내용은 [연습: 디자인 타임에 디버깅](../../debugger/walkthrough-debugging-at-design-time.md)을 참조하세요.  
   
    [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)] 프로젝트, 웹 프로젝트, 스마트 장치 프로젝트 및 SQL 프로젝트를 포함해 실행 환경을 시작해야 하는 프로젝트 형식에서 디자인 타임 식 평가를 사용할 수 있습니다.  
   
@@ -124,9 +118,9 @@ ms.locfileid: "49850427"
   
 #### <a name="to-toggle-first-chance-exception-notifications-in-the-immediate-window"></a>직접 실행 창에서 첫째 예외 알림을 전환하려면  
   
-1.  **보기** 메뉴에서 **기타 창**을 클릭하고 **출력**을 클릭합니다.  
+1. **보기** 메뉴에서 **기타 창**을 클릭하고 **출력**을 클릭합니다.  
   
-2.  **출력** 창의 텍스트 영역을 마우스 오른쪽 단추로 클릭하고 **예외 메시지**를 선택 또는 선택 취소합니다.  
+2. **출력** 창의 텍스트 영역을 마우스 오른쪽 단추로 클릭하고 **예외 메시지**를 선택 또는 선택 취소합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Navigating through Code with the Debugger](../../debugger/navigating-through-code-with-the-debugger.md) (디버거로 코드 탐색)  
@@ -136,6 +130,3 @@ ms.locfileid: "49850427"
  [연습: 디자인 타임에 디버깅](../../debugger/walkthrough-debugging-at-design-time.md)   
  [Visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)   
  [Visual Studio에서 정규식 사용](../../ide/using-regular-expressions-in-visual-studio.md)
-
-
-

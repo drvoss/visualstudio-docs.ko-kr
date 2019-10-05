@@ -1,14 +1,9 @@
 ---
 title: UidManager 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -24,18 +19,17 @@ ms.assetid: 4fc7b5a5-11b0-46ca-9656-8c2a0b08d1fe
 caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fa51ddb8f2cf6e200b7313069fca3ee6db3ebcf3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5fd8175911def7fb1b63dc63d967c404d649e9e4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208067"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703691"
 ---
 # <a name="uidmanager-task"></a>UidManager 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 <xref:Microsoft.Build.Tasks.Windows.UidManager> 작업은 소스 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 파일에 포함된 모든 [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] 요소를 지역화하기 위해 UID(고유 식별자)를 확인, 업데이트 또는 제거합니다.  
   
 ## <a name="task-parameters"></a>작업 매개 변수  
@@ -68,8 +62,5 @@ ms.locfileid: "49208067"
  [작업 참조](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild 참조](../msbuild/msbuild-reference.md)   
  [작업 참조](../msbuild/msbuild-task-reference.md)   
- [WPF 응용 프로그램 빌드(WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
- [방법: 응용 프로그램 지역화](http://msdn.microsoft.com/library/5001227e-9326-48a4-9dcd-ba1b89ee6653)
-
-
-
+ [WPF 응용 프로그램 빌드(WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
+ [방법: 응용 프로그램 지역화](https://msdn.microsoft.com/library/5001227e-9326-48a4-9dcd-ba1b89ee6653)

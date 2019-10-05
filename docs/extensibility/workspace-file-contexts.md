@@ -2,18 +2,17 @@
 title: Visual Studio에서 작업 영역 파일 컨텍스트 | Microsoft Docs
 ms.date: 02/21/2018
 ms.topic: conceptual
-ms.assetid: 7aaa0e65-f492-49ea-a845-35bd14910ca7
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93690eab989cee62d756a774675bf1d46da017fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 36f986db6f2c7b483b46060e1f514acc8dd9e758
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952817"
 ---
 # <a name="workspace-file-contexts"></a>작업 영역 파일 컨텍스트
 
@@ -27,7 +26,7 @@ ms.locfileid: "53826866"
 
 ## <a name="file-context-lifecycle"></a>파일 컨텍스트 수명 주기
 
-에 대 한 수명 주기를 `FileContext` 명확 하지 않습니다. 언제 든 지 상황에 맞는 형식의 일부 집합에 대 한 구성 요소를 비동기적으로 요청할 수 있습니다. 요청 컨텍스트 형식 중 일부 하위 집합을 지 원하는 공급자를 쿼리할 수 됩니다. 합니다 `IWorkspace` 인스턴스는 소비자 및 공급자를 통해 간의 중재자 역할을 <xref:Microsoft.VisualStudio.Workspace.IWorkspace.GetFileContextsAsync%2A> 메서드. 소비자는 컨텍스트를 요청 하 고 컨텍스트를 기반으로, 다른 컨텍스트를 요청 하 고 장기적인된 참조를 유지 관리 될 수 있습니다 하는 동안 몇 가지 단기 작업을 수행할 수 있습니다. 
+에 대 한 수명 주기를 `FileContext` 명확 하지 않습니다. 언제 든 지 상황에 맞는 형식의 일부 집합에 대 한 구성 요소를 비동기적으로 요청할 수 있습니다. 요청 컨텍스트 형식 중 일부 하위 집합을 지 원하는 공급자를 쿼리할 수 됩니다. 합니다 `IWorkspace` 인스턴스는 소비자 및 공급자를 통해 간의 중재자 역할을 <xref:Microsoft.VisualStudio.Workspace.IWorkspace.GetFileContextsAsync%2A> 메서드. 소비자는 컨텍스트를 요청 하 고 컨텍스트를 기반으로, 다른 컨텍스트를 요청 하 고 장기적인된 참조를 유지 관리 될 수 있습니다 하는 동안 몇 가지 단기 작업을 수행할 수 있습니다.
 
 파일 컨텍스트 구식이를 일으키는 파일에 변경 내용이 발생할 수 있습니다. 공급자에서 이벤트를 발생 시킬 수는 `FileContext` 업데이트의 소비자에 게 알립니다. 예를 들어, 일부 파일에 대 한 제공 되는 빌드 컨텍스트는 해당 컨텍스트를 무효화 하는 디스크에 대 한 변경 하지만 하는 경우 원래 생산자 이벤트를 호출 수입니다. 여전히 참조 하는 소비자 `FileContext` 새 다시 쿼리하여 수 `FileContext`입니다.
 

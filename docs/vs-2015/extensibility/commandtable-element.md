@@ -1,14 +1,9 @@
 ---
 title: CommandTable 요소 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - CommandTable
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 15c38159-660a-4ef4-9643-aa6fcfca82a9
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1adc3e8f8c7894cfb3a55617ce594f52a60f2498
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 22cbe4fc34ae41f89709d5b20f2c1188edcd0de3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817375"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685294"
 ---
 # <a name="commandtable-element"></a>CommandTable 요소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,8 +48,8 @@ CommandTable는.vsct 파일의 루트 요소입니다. VSPackage는 IDE를 제�
   
 | 특성 |                                                                                                                   설명                                                                                                                   |
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|   xmlns   |                                   필수. XML 네임 스페이스:<br /><br /> xmlns = "<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>"<br /><br /> xmlns:xs = "<http://www.w3.org/2001/XMLSchema>"                                   |
-| language  | 선택 사항입니다. Language 특성 모두의 기본 언어를 지정 하려면 사용할 수 \<문자열 > 명령 테이블에 있는 요소입니다.  언어를 지정 하지 않으면 현재 프로세스의 언어가 사용 됩니다.<br /><br /> language = "en-우리" |
+|   xmlns   |                                   필수 요소. XML 네임 스페이스:<br /><br /> xmlns="<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>"<br /><br /> xmlns:xs="<http://www.w3.org/2001/XMLSchema>"                                   |
+| language  | 선택 사항입니다. Language 특성 모두의 기본 언어를 지정 하려면 사용할 수 \<문자열 > 명령 테이블에 있는 요소입니다.  언어를 지정 하지 않으면 현재 프로세스의 언어가 사용 됩니다.<br /><br /> language="en-us" |
   
 ### <a name="child-elements"></a>자식 요소  
   
@@ -68,7 +63,7 @@ CommandTable는.vsct 파일의 루트 요소입니다. VSPackage는 IDE를 제�
 |[VisibilityConstraints 요소](../extensibility/visibilityconstraints-element.md)|선택 사항입니다. 도구 모음 및 명령 정적 표시 여부를 결정 합니다.|  
 |[KeyBindings 요소](../extensibility/keybindings-element.md)|선택 사항입니다. 명령에 대 한 바로 가기 키 조합을 지정 합니다.|  
 |[UsedCommands 요소](../extensibility/usedcommands-element.md)|선택 사항입니다. 필요에 따라 다른 Vspackage에서 원래 지원 되는 기능의 자체 버전을 구현 하기 위해 VSPackage를 허용 합니다.|  
-|[Symbols 요소](http://msdn.microsoft.com/en-us/f2ddd0aa-c3dd-439e-834d-28f136a27ffa)|선택 사항입니다. 컴파일러에 대 한-Guid, Id 등-모든 기호 데이터를 포함합니다.|  
+|[Symbols 요소](https://msdn.microsoft.com/f2ddd0aa-c3dd-439e-834d-28f136a27ffa)|선택 사항입니다. 컴파일러에 대 한-Guid, Id 등-모든 기호 데이터를 포함합니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
   
@@ -78,4 +73,3 @@ CommandTable는.vsct 파일의 루트 요소입니다. VSPackage는 IDE를 제�
   
 ## <a name="see-also"></a>참고 항목  
  [Visual Studio 명령 테이블(.Vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

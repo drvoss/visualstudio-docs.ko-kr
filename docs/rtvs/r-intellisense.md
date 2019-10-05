@@ -2,20 +2,18 @@
 title: R 코드에 대한 IntelliSense
 description: Visual Studio IntelliSense는 R 코드 입력 시 함수, 개체 멤버, 코드 조각 및 자동 완성 정보를 표시합니다.
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: a9efdae5623c00abe4626d1bbb21af4a790fa487
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 854f7d410e327ca92d0c5156d89bc21765e13cc7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35666867"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999043"
 ---
 # <a name="intellisense"></a>IntelliSense
 

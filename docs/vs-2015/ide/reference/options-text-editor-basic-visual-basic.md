@@ -1,14 +1,9 @@
 ---
 title: 옵션, 텍스트 편집기, 기본(Visual Basic) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Visual_Basic.Editor
 - VS.ToolsOptionsPages.Text_Editor.Basic.Editor
@@ -22,22 +17,21 @@ ms.assetid: 5a8cafca-f7b4-4a2d-92ce-6894a7673d00
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cb8856f250810988b73058562402c8d1fe8c644f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 461af4c3c8e811c989bc296b6f8f55f398bc5bd5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902479"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674503"
 ---
 # <a name="options-text-editor-basic-visual-basic"></a>옵션, 텍스트 편집기, 기본(Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **옵션**(**도구** 메뉴), **텍스트 편집기**의 **기본** 폴더에 있는 **VB 관련** 속성 페이지 대화 상자에는 다음 속성이 포함되어 있습니다.  
   
  **맺음 구문 자동 삽입**  
- 예를 들어, 프로시저 선언의 첫 번째 줄 `Sub Main—`을(를) 입력하고 ENTER 키를 누르면 텍스트 편집기는 일치하는 `End Sub` 줄을 추가합니다. 마찬가지로, [For](http://msdn.microsoft.com/library/f5fc0d51-67ce-4c36-9f09-31c9a91c94e9) 루프를 추가하면 텍스트 편집기는 일치하는 `Next` 문을 추가합니다. 이 옵션을 선택하면 코드 편집기는 종료 구문을 자동으로 추가합니다.  
+ 예를 들어, 프로시저 선언의 첫 번째 줄 `Sub Main—`을(를) 입력하고 ENTER 키를 누르면 텍스트 편집기는 일치하는 `End Sub` 줄을 추가합니다. 마찬가지로, [For](https://msdn.microsoft.com/library/f5fc0d51-67ce-4c36-9f09-31c9a91c94e9) 루프를 추가하면 텍스트 편집기는 일치하는 `Next` 문을 추가합니다. 이 옵션을 선택하면 코드 편집기는 종료 구문을 자동으로 추가합니다.  
   
  **코드 서식 다시 적용**  
  텍스트 편집기는 적절하게 코드의 서식을 다시 지정합니다. 이 옵션을 선택하면 코드 편집기는 다음을 수행합니다.  
@@ -80,6 +74,3 @@ ms.locfileid: "49902479"
 ## <a name="see-also"></a>참고 항목  
  [옵션 대화 상자, 환경, 일반](../../ide/reference/general-environment-options-dialog-box.md)   
  [옵션, 텍스트 편집기, 모든 언어, 탭](../../ide/reference/options-text-editor-all-languages-tabs.md)
-
-
-

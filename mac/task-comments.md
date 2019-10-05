@@ -1,16 +1,16 @@
 ---
 title: 작업 주석
 description: 코드에 작업 주석 추가
-author: conceptdev
-ms.author: crdun
+author: cobey
+ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: 562DCB46-D8FA-4DC4-AAEA-F274448C4CD2
-ms.openlocfilehash: 3caef73ba46afd8eaf90826540248cb2d5c4efef
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: d88b74ab953f97e061f4be3befc227646006f38b
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294281"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692320"
 ---
 # <a name="task-comments"></a>작업 주석
 

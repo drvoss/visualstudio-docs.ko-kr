@@ -3,25 +3,25 @@ title: 언어 서버 프로토콜 개요 | Microsoft Docs
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 6a7d93c2-31ea-4bae-8b29-6988a567ddf2
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b2329b54ba90a37e0d6d5e782e66c4af923a646
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8f6f114d7165b85051092234ea33dfc7f73e1487
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828227"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309618"
 ---
 # <a name="language-server-protocol"></a>언어 서버 프로토콜
 
 ## <a name="what-is-the-language-server-protocol"></a>언어 서버 프로토콜 란?
 
-지 원하는 풍부한 편집 기능 같은 원본 코드 자동 완성 또는 **정의로 이동** 편집기 또는 IDE에서 프로그래밍 언어는 일반적으로 매우 까다롭고 시간이 많이 소요 됩니다. 일반적으로 편집기 또는 IDE의 프로그래밍 언어에서 스캐너, 파서, 형식 검사기, 작성기를 등 도메인 모델을 작성 해야 합니다. 예를 들어, Eclipse IDE에서 C + +에 대 한 지원을 제공 하는 c d T Eclipse 플러그 인은 Java로 작성 Eclipse IDE 자체은 Java로 작성 되므로 합니다. 이 방법에 따라 Visual Studio에 대 한 C#에서 TypeScript for Visual Studio Code에서에서 C/c + + 도메인 모델 및 별도 도메인 모델 구현 의미 합니다.
+지 원하는 풍부한 편집 기능 같은 원본 코드 자동 완성 또는 **정의로 이동** 편집기 또는 IDE에서 프로그래밍 언어는 일반적으로 매우 까다롭고 시간이 많이 소요 됩니다. 일반적으로 편집기 또는 IDE의 프로그래밍 언어에서 스캐너, 파서, 형식 검사기, 작성기를 등 도메인 모델을 작성 해야 합니다. 예를 들어 c d T Eclipse 플러그 인 C에 대 한 지원을 제공 하는 /C++ Eclipse IDE에서은 Java로 작성 되므로 Eclipse IDE 자체은 Java로 작성 합니다. 이 방법에 따라 의미 C 구현 /C++ Visual Studio Code에 대 한 TypeScript의 도메인 모델 및에서 별도 도메인 모델 C# Visual Studio에 대 한 합니다.
 
-언어별 도메인 모델을 만드는 개발 도구로 기존 언어별 라이브러리를 다시 사용할 수 있습니다 하는 경우 훨씬 더 쉽게 이기도 합니다. 그러나 이러한 라이브러리는 일반적으로 프로그래밍 언어 (예를 들어 적절 한 C/c + + 도메인 모델은 C/c + +에서 구현 되는) 자체에서 구현 됩니다. TypeScript로 작성 된 편집기에 C/c + + 라이브러리를 통합 가능 하지만 수행 하기가 기술적입니다.
+언어별 도메인 모델을 만드는 개발 도구로 기존 언어별 라이브러리를 다시 사용할 수 있습니다 하는 경우 훨씬 더 쉽게 이기도 합니다. 그러나 이러한 라이브러리는 일반적으로 자체 프로그래밍 언어로 구현 (예를 들어 적절 한 C /C++ 도메인 모델은 C에서 구현 되는 /C++). C를 통합 /C++ TypeScript로 작성 된 편집기에 라이브러리는 기술적으로 가능 하지만 수행 하기가 어렵습니다.
 
 ### <a name="language-servers"></a>언어 서버
 
@@ -59,7 +59,7 @@ VS 코드 팀 프로토타입화 lint (검색)에 응답 하는 몇 가지 linte
 
 이 예제에서는 "정의로 이동", "모든 참조 찾기"와 같은 편집기 기능 수준에서 언어 서버 프로토콜을 통신 하는 방법을 보여 줍니다. 프로토콜에서 사용 되는 데이터 형식은 편집기 또는 IDE '데이터 형식' 현재 열려 있는 텍스트 문서 등 커서의 위치입니다. 데이터 형식 추상 구문 트리 및 컴파일러 기호 (예를 들어 확인 된 형식, 네임 스페이스,...) 일반적으로 제공 되는 프로그래밍 언어 도메인 모델 수준에서 않습니다. 이 프로토콜을 크게 간소화합니다.
 
-이제 좀 더 자세히 ' textDocument/정의 ' 요청에 살펴보겠습니다. 다음은 클라이언트 도구와 c + + 문서에서 "정의로 이동" 요청에 대 한 언어 서버 간에 이동 하는 페이로드입니다.
+이제 좀 더 자세히 ' textDocument/정의 ' 요청에 살펴보겠습니다. 클라이언트 도구와 "정의로 이동" 요청에 대 한 언어 서버 간에 이동 하는 페이로드는 다음과 같습니다는 C++ 문서.
 
 다음은 요청입니다.
 

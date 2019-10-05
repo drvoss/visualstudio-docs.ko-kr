@@ -2,22 +2,21 @@
 title: ReceiveAndSendReply 템플릿 디자이너-워크플로 디자이너
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.ServiceModel.Activities.ReceiveAndSendReply.UI
 - System.ServiceModel.Activities.SendReply.UI
 ms.assetid: d1d9a058-df7e-48f5-a2e7-3caeeba7eaa6
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b62da812773795ff89e1beb87af6364c8baee14
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7f6f3f874d00dff8a171a169dca6fe2d94f14fe6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915048"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969347"
 ---
 # <a name="receiveandsendreply-template-designer"></a>ReceiveAndSendReply 템플릿 디자이너
 
@@ -43,8 +42,7 @@ ms.locfileid: "53915048"
 
 다음 표에서는 <xref:System.ServiceModel.Activities.SendReply> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. 이러한 속성은 속성 표에서 편집할 수 있습니다 하 고 일부는 워크플로 디자이너 화면에서 편집할 수 있습니다.
 
-
-| 속성 이름 | 필수 | 용도 |
+| 속성 이름 | 필수 | 사용 |
 |-|----------|-|
 | <xref:System.Activities.Activity.DisplayName%2A> | False | <xref:System.ServiceModel.Activities.SendReply> 활동의 선택적 이름입니다. 기본값은 SendReplyToReceive입니다.<br /><br /> 하지만 기본이 아닌 값의 식별 사용 <xref:System.Activities.Activity.DisplayName%2A> 은 꼭 필요 하지 이러한 값을 사용 하는 것이 좋습니다. |
 | <xref:System.ServiceModel.Activities.SendReply.Request%2A> | True | 이 <xref:System.ServiceModel.Activities.Receive> 활동과 한 쌍을 이루는 <xref:System.ServiceModel.Activities.SendReply> 활동에 대한 참조입니다. 이 속성은 아니어야 **null**합니다. <xref:System.ServiceModel.Activities.Receive> 및 <xref:System.ServiceModel.Activities.SendReply> 활동은 서버에서 요청/응답 메시징 패턴을 모델링하는 데 함께 사용됩니다. 이 속성은 쌍을 이루는 <xref:System.ServiceModel.Activities.Send> 활동을 지정합니다. 디자이너에서 편집할 수 없습니다를 자동으로 바인딩되어 있기 때문에이 속성을 <xref:System.ServiceModel.Activities.Send> 를 만든 활동은 <xref:System.ServiceModel.Activities.SendReply> 활동. |

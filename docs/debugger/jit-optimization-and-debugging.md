@@ -1,8 +1,6 @@
 ---
 title: JIT 최적화 및 디버깅 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 19bfabf3-1a2e-49dc-8819-a813982e86fd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a8cb56b35092bb958ebf2e6947006acb3d0d240
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
-ms.translationtype: MTE95
+ms.openlocfilehash: 7346b6fd8fbd483021437638f9e134ead88a0b93
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846325"
 ---
 # <a name="jit-optimization-and-debugging"></a>JIT 최적화 및 디버깅
 **최적화는.NET의 작동 방식:** 코드를 디버그 하려는 경우 쉽습니다 경우 코드는 **되지** 최적화 합니다. 코드를 최적화 하는 경우 컴파일러 및 런타임 코드를 변경 합니다 내보낸 CPU를 더 빠르게 실행 하지만 원래 소스 코드에 덜 직접적인 매핑이 때문입니다. 즉, 디버거를 자주 코드 단계별 실행 및 로컬 변수의 값을 알려 수 없는 중단점 예상한 대로 작동 하지 않을 수 있습니다.
@@ -48,8 +46,8 @@ ms.locfileid: "53646576"
 1. 디버거를 연결 하는 이미 실행 중인 프로세스에는 있는 경우에서이 옵션에는 디버거가 연결 된 시점에 이미 로드 된 모듈에 영향을 주지 해야 합니다.
 2. 이 옵션은 된 Dll에 영향을 주지 미리 (또는 사이즈) 네이티브 코드로 컴파일됩니다. 그러나 변수 'COMPlus_ZapDisable'는 '1'로 설정 된 환경으로 프로세스를 시작 하 여 미리 컴파일된 코드의 사용을 비활성화할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목  
- [Debugging Managed Code](../debugger/debugging-managed-code.md) (관리 코드 디버그)  
- [Navigating through Code with the Debugger](../debugger/navigating-through-code-with-the-debugger.md) (디버거로 코드 탐색)  
- [실행 중인 프로세스에 연결](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [관리되는 실행 프로세스](/dotnet/standard/managed-execution-process)
+## <a name="see-also"></a>참고 항목
+- [관리 코드 디버그](../debugger/debugging-managed-code.md)
+- [디버거로 코드 탐색](../debugger/navigating-through-code-with-the-debugger.md)
+- [실행 중인 프로세스에 연결](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+- [관리되는 실행 프로세스](/dotnet/standard/managed-execution-process)

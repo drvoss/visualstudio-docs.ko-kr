@@ -2,7 +2,6 @@
 title: IDebugFormatter::GetVariantForString | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f9f783c8fe1864999e017ff348853df5464c93f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ea6cd1f77481282700de492e2857046044a04e2a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979291"
 ---
 # <a name="idebugformattergetvariantforstring"></a>IDebugFormatter::GetVariantForString
 지정된 된 문자열을 포함 하는 VARIANT를 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetVariantForString(  
    LPCOLESTR  pwstrValue,  
    VARIANT*   pvar  
@@ -39,7 +38,7 @@ HRESULT GetVariantForString(
   
 #### <a name="parameters"></a>매개 변수  
  `pwstrValue`  
- [in] VARIANT에 저장 하는 문자열입니다.  
+ [in] 변형에 저장 하는 문자열입니다.  
   
  `pvar`  
  [out] VARIANT 포함 된 `pwstrValue`합니다.  

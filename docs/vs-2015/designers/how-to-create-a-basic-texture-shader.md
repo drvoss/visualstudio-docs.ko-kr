@@ -1,25 +1,20 @@
 ---
 title: '방법: 기본 질감 셰이더 만들기 | Microsoft 문서'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 5af113fb-6415-4be0-8b23-10fddb10e80a
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 18bb4f1ad4dfc3428e8dc30958013438de22e13a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: dce20d3e1833659ebfec2e84e6bff7f86dff844e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438441"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>방법: 기본 질감 셰이더 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +23,15 @@ ms.locfileid: "49898540"
   
  이 문서는 다음 활동을 보여 줍니다.  
   
--   셰이더 그래프에서 노드 제거  
+- 셰이더 그래프에서 노드 제거  
   
--   그래프에 노드 추가  
+- 그래프에 노드 추가  
   
--   셰이더 매개 변수 설정  
+- 셰이더 매개 변수 설정  
   
--   매개 변수 표시 유형 설정  
+- 매개 변수 표시 유형 설정  
   
--   노드 연결  
+- 노드 연결  
   
 ## <a name="creating-a-basic-texture-shader"></a>기본 질감 셰이더 만들기  
  질감 샘플의 색 및 알파 값을 직접 최종 출력 색으로 작성하여 기본적인 단일 질감 셰이더를 구현할 수 있습니다.  
@@ -64,7 +59,7 @@ ms.locfileid: "49898540"
    다음 그림은 정육면체에 적용된 셰이더의 완료된 셰이더 그래프 및 미리 보기를 보여 줍니다.  
   
 > [!NOTE]
->  이 그림에서 평면을 미리 보기 셰이프로 사용되고 셰이더의 효과를 더욱 효과적으로 표시하기 위해 질감이 지정되었습니다.  
+> 이 그림에서 평면을 미리 보기 셰이프로 사용되고 셰이더의 효과를 더욱 효과적으로 표시하기 위해 질감이 지정되었습니다.  
   
  ![셰이더 그래프 및 효과 미리 보기](../designers/media/digit-texture-effect.png "Digit-Texture-Effect")  
   
@@ -75,6 +70,3 @@ ms.locfileid: "49898540"
  [이미지 편집기](../designers/image-editor.md)   
  [셰이더 디자이너](../designers/shader-designer.md)   
  [셰이더 디자이너 노드](../designers/shader-designer-nodes.md)
-
-
-

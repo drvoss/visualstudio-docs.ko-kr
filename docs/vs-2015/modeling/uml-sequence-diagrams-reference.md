@@ -1,12 +1,9 @@
 ---
 title: 'UML 시퀀스 다이어그램: 참조 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.sequencediagram.diagram
 - vs.teamarch.UMLModelExplorer.sequencediagram
@@ -21,13 +18,13 @@ ms.assetid: 366fc324-aeeb-4894-bd13-ec2e40754b8e
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5c92d9eb8ee7858a036fdbb8dfb621c269e3ed4c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3990d43ae11db3db8eb792883ba62a030cde3a2f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62548576"
 ---
 # <a name="uml-sequence-diagrams-reference"></a>UML 시퀀스 다이어그램: 참조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +58,7 @@ Visual Studio에는 *시퀀스 다이어그램* 클래스, 구성 요소, 하위
 |14|**조각 가드**|조각이 발생하는지 여부와 관련된 조건을 설명하는 데 사용할 수 있습니다.<br /><br /> 가드를 설정하려면 조각을 선택하고 가드를 선택한 다음 값을 입력합니다.|  
 |**X**|**소멸 이벤트**|개체가 삭제되거나 더 이상 액세스할 수 없는 지점을 나타냅니다. 모든 수명선의 맨 아래에 나타납니다.|  
 ||**상호 작용**|시퀀스 다이어그램에 표시되는 메시지 및 수명선 컬렉션입니다. 상호 작용의 속성을 보려면에서 선택 해야 하면 **UML 모델 탐색기**합니다.|  
-||**시퀀스 다이어그램**|상호 작용을 표시하는 다이어그램입니다. 해당 속성을 보려면 다이어그램의 빈 부분을 클릭합니다. **참고:** 표시 하 고 파일 다이어그램을 포함 하는 모든 다른 수의 상호 작용 시퀀스 다이어그램의 이름입니다.|  
+||**시퀀스 다이어그램**|상호 작용을 표시하는 다이어그램입니다. 해당 속성을 보려면 다이어그램의 빈 부분을 클릭합니다. **참고:**  시퀀스 다이어그램, 다이어그램에 표시되는 상호 작용 및 다이어그램을 포함하는 파일의 이름이 모두 다를 수 있습니다.|  
   
 ## <a name="see-also"></a>참고 항목  
  [UML 시퀀스 다이어그램: 지침](../modeling/uml-sequence-diagrams-guidelines.md)   
@@ -70,6 +67,3 @@ Visual Studio에는 *시퀀스 다이어그램* 클래스, 구성 요소, 하위
  [UML 클래스 다이어그램: 참조](../modeling/uml-class-diagrams-reference.md)   
  [UML 구성 요소 다이어그램: 참조](../modeling/uml-component-diagrams-reference.md)   
  [UML 구성 요소 다이어그램: 참조](../modeling/uml-component-diagrams-reference.md)
-
-
-

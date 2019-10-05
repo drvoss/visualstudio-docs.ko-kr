@@ -1,11 +1,8 @@
 ---
 title: FlowDecision 활동 디자이너 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.FlowDecision.UI
@@ -13,13 +10,13 @@ ms.assetid: 4a49edc3-3662-4b7b-812e-0a5ba00d6c94
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 7109b779cf33d226f44853e3f67c8609bd42fc1b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 46ff7dc7ae79ae8bf269a7a3d3cad780ad7654bb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212890"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943365"
 ---
 # <a name="flowdecision-activity-designer"></a>FlowDecision 활동 디자이너
 <xref:System.Activities.Statements.FlowDecision> 노드는 지정된 조건이 충족되었는지 여부에 따라 제어 흐름을 두 가지 대안 중 하나로 보내는 분기를 제공하는 조건 노드입니다. 흐름에 두 개 이상의 분기가 필요하면 <xref:System.Activities.Statements.FlowSwitch%601>을 대신 사용합니다.  
@@ -39,13 +36,13 @@ ms.locfileid: "49212890"
 ### <a name="the-flowdecision-properties"></a>FlowDecision 속성  
  다음 표에서는 <xref:System.Activities.Statements.FlowDecision> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. 이러한 속성은 속성 표 또는 디자이너 화면에서 편집할 수 있습니다.  
   
-|속성 이름|필수|용도|  
+|속성 이름|필수|사용|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Statements.FlowDecision.Condition%2A>|True|흐름 제어의 경로를 결정하는 조건입니다.|  
 |<xref:System.Activities.Statements.FlowDecision.True%2A>|False|<xref:System.Activities.Statements.FlowDecision.Condition%2A>이 충족되는 경우의 흐름 제어 경로입니다.|  
 |<xref:System.Activities.Statements.FlowDecision.False%2A>|False|<xref:System.Activities.Statements.FlowDecision.Condition%2A>이 충족되지 않는 경우의 흐름 제어 경로입니다.|  
   
 ## <a name="see-also"></a>참고 항목  
- [순서도](../workflow-designer/flowchart-activity-designers.md)   
- [순서도](../workflow-designer/flowchart-activity-designer.md)   
+ [Flowchart](../workflow-designer/flowchart-activity-designers.md)   
+ [Flowchart](../workflow-designer/flowchart-activity-designer.md)   
  [FlowSwitch\<T>](../workflow-designer/flowswitch-t-activity-designer.md)

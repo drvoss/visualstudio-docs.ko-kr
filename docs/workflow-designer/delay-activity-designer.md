@@ -2,21 +2,20 @@
 title: 워크플로 디자이너-Delay 활동 디자이너
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.Delay.UI
 ms.assetid: f51742a8-2c9a-47d1-8a23-18459d03ae19
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c793456cd32d6d5749bcda8c8d266f6cd939601
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e69c82899cb5f7aa24235641ae517709686170a7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823664"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949762"
 ---
 # <a name="delay-activity-designer"></a>Delay 활동 디자이너
 
@@ -36,7 +35,7 @@ ms.locfileid: "53823664"
 
 다음 표는 <xref:System.Activities.Statements.Delay> 속성 디자이너에서 사용 하는 방법을 설명 합니다. 이러한 속성은 속성 표에서 편집할 수 있습니다 하 고 그 중 일부는 워크플로 디자이너 화면에서 편집할 수 있습니다.
 
-|속성 이름|필수|용도|
+|속성 이름|필수|사용|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.Delay> 활동의 이름입니다. 기본값은 Delay입니다. 하지만 <xref:System.Activities.Activity.DisplayName%2A> 값에는 반드시 필요 하지 않습니다., 하나를 사용 하는 것이 좋습니다.|
 |<xref:System.Activities.Statements.Delay.Duration%2A>|True|워크플로를 지연할 시간입니다. 이 속성은 속성 표에서 설정합니다. 리터럴 <xref:System.TimeSpan>을 00:00:00 형식으로 입력하거나 Visual Basic 식을 입력하여 시간을 지정합니다.|

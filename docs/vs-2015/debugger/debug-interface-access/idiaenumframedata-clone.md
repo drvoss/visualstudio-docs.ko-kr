@@ -1,14 +1,9 @@
 ---
 title: 'Idiaenumframedata:: Clone | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 28a17300-1626-422f-a17a-3a4d3872c37c
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0df2d51713ba7c1e1e926f5cbe190f366c29e777
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 551b63853ad2fd11402b8384b8ea49bacb5287a7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182551"
 ---
 # <a name="idiaenumframedataclone"></a>IDiaEnumFrameData::Clone
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,8 +40,5 @@ HRESULT Clone( 
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
-
-
-

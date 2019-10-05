@@ -1,43 +1,38 @@
 ---
 title: 조사식 창 계산 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, watch expressions
 - watch expressions
 ms.assetid: 8317cd52-6fea-4e8f-a739-774dc06bd44b
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 89cc466ee06cd0b4834a03495088c2efdc749e5a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fd33a7c225e0cdc14ac3f1af9f4c78a7c1459615
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444449"
 ---
 # <a name="evaluating-a-watch-expression"></a>조사식 창 계산
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  Visual Studio 2015에서 식 계산기를 구현 하는 이러한 방식으로 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 정보를 참조 하세요 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 하 고 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)합니다.  
+> Visual Studio 2015에서 식 계산기를 구현 하는 이러한 방식으로 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 정보를 참조 하세요 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 하 고 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)합니다.  
   
  Visual Studio 조사식 값을 표시할 준비가 되 면 호출한 [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) 호출 [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)합니다. 생성이 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 값 및 식의 형식을 포함 하는 개체입니다.  
   
  이 구현에서 `IDebugParsedExpression::EvaluateSync`, 식을 구문 분석 되 고 동시에 평가 합니다. 이 구현은 다음 작업을 수행합니다.  
   
-1.  구문 분석 하 고 해당 형식과 값을 보유 하는 일반 개체를 생성 하는 식을 계산 합니다. C#으로 표시 됩니다는 `object` c + +에서로 표시 됩니다 하는 동안는 `VARIANT`합니다.  
+1. 구문 분석 하 고 해당 형식과 값을 보유 하는 일반 개체를 생성 하는 식을 계산 합니다. C#,으로 표시 됩니다는 `object` 에서 C++ 으로 표시 됩니다는 `VARIANT`합니다.  
   
-2.  클래스를 인스턴스화합니다 (호출 `CValueProperty` 이 예제의)를 구현 하는 `IDebugProperty2` 인터페이스 및 클래스의 반환 값을 저장 합니다.  
+2. 클래스를 인스턴스화합니다 (호출 `CValueProperty` 이 예제의)를 구현 하는 `IDebugProperty2` 인터페이스 및 클래스의 반환 값을 저장 합니다.  
   
-3.  반환 된 `IDebugProperty2` 에서 인터페이스를 `CValueProperty` 개체입니다.  
+3. 반환 된 `IDebugProperty2` 에서 인터페이스를 `CValueProperty` 개체입니다.  
   
 ## <a name="managed-code"></a>관리 코드  
  이 구현의 `IDebugParsedExpression::EvaluateSync` 관리 코드에서. 도우미 메서드 `Tokenize` 는 식 구문 분석 트리를 구문 분석 합니다. 도우미 함수 `EvalToken` 토큰 값으로 변환 합니다. 도우미 함수 `FindTerm` 재귀적으로 구문 분석 트리를 트래버스 호출 `EvalToken` 값을 나타내는 식의 모든 작업 (더하기 또는 빼기)를 적용 및 각 노드에 대 한 합니다.  
@@ -182,4 +177,3 @@ STDMETHODIMP CParsedExpression::EvaluateSync(
 ## <a name="see-also"></a>참고 항목  
  [조사식 창 식 평가](../../extensibility/debugger/evaluating-a-watch-window-expression.md)   
  [식 계산의 샘플 구현](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)
-

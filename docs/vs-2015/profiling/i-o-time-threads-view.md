@@ -1,14 +1,9 @@
 ---
 title: I/O 시간(스레드 뷰) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.io
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 0c4ec14d-d8dd-49c1-999c-dcbf4e8e1dc8
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ab10b52052ddacb005668a2620846f618e45bc62
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 86c14292edcf8f132a14b67e931c5121105a9dc8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51808598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187438"
 ---
 # <a name="io-time-threads-view"></a>I/O 시간(스레드 뷰)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,6 +27,3 @@ ms.locfileid: "51808598"
   
 ## <a name="see-also"></a>참고 항목  
  [스레드 뷰](../profiling/threads-view-parallel-performance.md)
-
-
-

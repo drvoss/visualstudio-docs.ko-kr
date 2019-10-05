@@ -1,25 +1,20 @@
 ---
 title: Attribute(XElement 동적 속성) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 8440fc7d-b3b4-4726-8ec8-492e6af79642
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b6be72f0b40382ca8c7e9986c2d5a56e03344221
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ced05b8da63f9a7a242b166fe64e9e44f78b8065
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194846"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162681"
 ---
 # <a name="attribute-xelement-dynamic-property"></a>특성(XElement 동적 속성)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,6 +37,3 @@ elem.Attribute[{namespaceName}attribName]
  <xref:System.Xml.Linq.XElement.Attribute%2A?displayProperty=fullName>   
  [XAttribute 클래스 동적 속성](../designers/xelement-class-dynamic-properties.md)   
  [값](../designers/value-xattribute-dynamic-property.md)
-
-
-

@@ -1,25 +1,20 @@
 ---
 title: Mip 맵 생성 변형 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3b4b3583-0b01-4f5d-aacb-3f96d19111d9
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c567f68abb5b67022bb2decd64ed23e35bf6d5d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3ac567677776c225008a581cc4d5de85ec2c882d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51723095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383966"
 ---
 # <a name="mip-map-generation-variant"></a>MIP 맵 생성 변형
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,12 +41,12 @@ ms.locfileid: "51723095"
   
 - MipLevels 멤버를 1로 설정합니다(기존 Mip 맵 없음).  
   
-  응용 프로그램에서 초기 데이터를 제공할 때 형식이 BC1, BC2 또는 BC3가 아닌 경우 질감 형식은 D3D11_FORMAT_SUPPORT_MIP_AUTOGEN에 따라 결정된 것처럼 자동 Mip 맵 생성을 지원해야 합니다. 그렇지 않으면 질감이 수정되지 않고 초기 데이터가 제공될 때 Mip 맵이 생성되지 않습니다.  
+  애플리케이션에서 초기 데이터를 제공할 때 형식이 BC1, BC2 또는 BC3가 아닌 경우 질감 형식은 D3D11_FORMAT_SUPPORT_MIP_AUTOGEN에 따라 결정된 것처럼 자동 Mip 맵 생성을 지원해야 합니다. 그렇지 않으면 질감이 수정되지 않고 초기 데이터가 제공될 때 Mip 맵이 생성되지 않습니다.  
   
   질감에 대한 Mip 맵이 자동으로 생성된 경우 질감 샘플링 중 Mip 체인을 사용하도록 `ID3D11Device::CreateShaderResourceView`에 대한 호출이 재생 중 수정됩니다.  
   
 ## <a name="example"></a>예제  
- 합니다 **Mip 맵 생성** 변형은 다음과 같은 코드를 사용 하 여 재현할 수 있습니다.  
+ **Mip 맵 생성** 변형은 다음과 같은 코드를 사용하여 재현할 수 있습니다.  
   
 ```  
 D3D11_TEXTURE2D_DESC texture_description;  
@@ -75,10 +70,7 @@ d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
  `CreateTexture2D`에 초기 데이터를 제공하는 경우 각 Mip 수준에 대한 D3D11_SUBRESOURCE_DATA 개체를 제공해야 합니다.  
   
 > [!NOTE]
->  Mip 수준 콘텐츠를 자동으로 생성하는 대신 자체 Mip 수준 콘텐츠를 제공하려는 경우 Mip 맵 질감을 지원하는 이미지 편집기를 사용하여 질감을 생성한 다음 파일을 로드하고 Mip 수준을 `CreateTexture2D`에 전달해야 합니다.  
+> Mip 수준 콘텐츠를 자동으로 생성하는 대신 자체 Mip 수준 콘텐츠를 제공하려는 경우 Mip 맵 질감을 지원하는 이미지 편집기를 사용하여 질감을 생성한 다음 파일을 로드하고 Mip 수준을 `CreateTexture2D`에 전달해야 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [반기/분기 텍스처 차원 변형](../debugger/half-quarter-texture-dimensions-variant.md)
-
-
-

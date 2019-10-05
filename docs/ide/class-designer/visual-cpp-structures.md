@@ -1,23 +1,21 @@
 ---
 title: 클래스 디자이너의 Visual C++ 구조체
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Class Designer [Visual Studio], structures
 ms.assetid: bad18ab6-d956-47a6-a413-811cc26db5f5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 79b4adcfbcacc8cf342b5fc4183ae4fe27431b09
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e9b8e81ee25e081a324a8520317fa57a1314ccd0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975036"
 ---
 # <a name="visual-c-structures-in-class-designer"></a>클래스 디자이너의 Visual C++ 구조체
 

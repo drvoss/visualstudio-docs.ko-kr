@@ -1,27 +1,22 @@
 ---
 title: 코드에 책갈피 설정 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.BookmarkWindow
 ms.assetid: a752ed5f-5cf9-4bf2-865a-2131ca600ed5
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bbb6775411af7bc93cd8168af460974fb5c18d3d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b9a5612a9d6fd04850134a51f62a02496deb1708
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441935"
 ---
 # <a name="setting-bookmarks-in-code"></a>코드에 책갈피 설정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,13 +29,10 @@ ms.locfileid: "49219754"
  책갈피를 추가하려면 책갈피를 설정할 줄에 커서를 놓습니다. **설정/해제** 단추를 클릭하거나 Ctrl+K를 누릅니다. 그러면 책갈피가 추가됩니다. 설정/해제 단추를 다시 클릭하거나 Ctrl+K를 다시 누르면 책갈피가 제거됩니다. 책갈피 창에서 **삭제** 단추를 클릭하여 책갈피를 제거할 수도 있습니다.  
   
 > [!IMPORTANT]
->  책갈피는 코드가 아니라 줄 번호에 설정됩니다. 코드를 수정해도 책갈피는 해당 줄 번호에 유지되며 코드를 따라 이동하지 않습니다.  
+> 책갈피는 코드가 아니라 줄 번호에 설정됩니다. 코드를 수정해도 책갈피는 해당 줄 번호에 유지되며 코드를 따라 이동하지 않습니다.  
   
  책갈피 창의 **다음 책갈피** 및 **이전 책갈피** 단추를 사용하여 책갈피 간에 탐색할 수 있습니다.  
   
  책갈피 창에서 **새 폴더**를 클릭하고 선택한 책갈피를 새 폴더로 끌어 가상 폴더 안에 책갈피를 정리할 수 있습니다.  
   
  책갈피 창에서 **모든 책갈피 사용 안 함** 단추를 클릭하여 책갈피를 제거하지 않고 끌 수 있습니다. 책갈피를 다시 사용하려면 같은 단추(**모든 책갈피 사용**으로 바뀜)를 다시 클릭합니다.
-
-
-

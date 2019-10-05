@@ -1,28 +1,30 @@
 ---
 title: Linux의 App Service에 게시
-ms.custom: ''
-ms.date: 07/23/2018
-ms.technology: vs-ide-deployment
+ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: aa4afce6ef50284f1f966054e805b55c86f4daaf
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 9609b636c6121ec2dac41559344485d4048e9cc5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341750"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680073"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Visual Studio를 사용하여 Linux의 App Service에 ASP.NET Core 앱 게시
 
-**게시** 도구를 사용하여 ASP.NET Core 앱을 Linux의 Azure App Service에 게시할 수 있습니다.
+Visual Studio 2017 버전 15.7부터 다음 방법 중 하나를 사용하여 ASP.NET Core 앱을 Azure App Service Linux(컨테이너 사용)에 게시할 수 있습니다.
 
-**게시** 도구를 사용하여 Linux의 App Service에 배포하려면 Visual Studio 2017 버전 15.7이 필요합니다.
+* 연속(또는 자동) 배포 앱의 경우 Azure DevOps를 [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops)과 함께 사용합니다.
+
+* 일회성(또는 수동) 배포 앱의 경우 Visual Studio의 **게시** 도구를 사용하여 ASP.NET Core 앱을 Linux용 App Service(컨테이너 사용)에 게시합니다.
+
+이 문서에서는 일회성 배포를 위해 **게시** 도구를 사용하는 방법을 설명합니다.
 
 [!INCLUDE [quickstart-prereqs-azure-linux](includes/quickstart-prereqs-azure-linux.md)]
 

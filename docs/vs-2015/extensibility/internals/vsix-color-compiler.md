@@ -1,21 +1,17 @@
 ---
 title: VSIX 색 컴파일러 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 19ca749b3ddd2190fd667ddb6c96c2a88c557999
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e1607ec4863c7e2b21cd69dd57ca4203e3cf4dbf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788435"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147940"
 ---
 # <a name="vsix-color-compiler"></a>VSIX 색 컴파일러
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -86,7 +82,7 @@ Visual Studio 확장명 색 컴파일러 도구는 기존 Visual Studio 테마�
 |이름|[필수] 범주 이름|  
 |GUID|[필수] (일치 해야 GUID 서식 지정) 하는 범주 GUID|  
   
- **색**  
+ **Color**  
   
  \<색 > 요소는 구성 요소 또는 UI의 상태에 대 한 색을 정의 합니다. 색에 대 한 기본 명명 스키마는 [UI 유형] [State]. 중복 그대로 단어 "색"을 사용 하지 마세요. 요소 형식 및 경우를 "상태" 색을 적용할 색을 명확 하 게 나타내야 합니다. 색 비어 있어야 하며 하나 또는 둘 다 포함 해야 합니다는 \<백그라운드 > 및 \<전경 > 요소입니다. 색 요소는 다음과 같이 정의 됩니다.  
   
@@ -114,8 +110,8 @@ Visual Studio 확장명 색 컴파일러 도구는 기존 Visual Studio 테마�
 |||  
 |-|-|  
 |**특성**|**정의**|  
-|형식|[필수] 형식 색입니다. 다음 중 하나일 수 있습니다.<br /><br /> *CT_INVALID:* 색이 잘못 되었거나 지정 되지 않았습니다.<br /><br /> *CT_RAW:* 원시 ARGB 값입니다.<br /><br /> *CT_COLORINDEX:* 사용 하지 마세요.<br /><br /> *CT_SYSCOLOR:* SysColor에서 Windows 시스템 색입니다.<br /><br /> *CT_VSCOLOR:* __VSSYSCOLOREX에서 Visual Studio 색입니다.<br /><br /> *CT_AUTOMATIC:* 자동 색입니다.<br /><br /> *CT_TRACK_FOREGROUND:* 사용 하지 마세요.<br /><br /> *CT_TRACK_BACKGROUND:* 사용 하지 마세요.|  
-|소스|[필수] 16 진수에서 표시 색상 값|  
+|형식|[필수] 형식 색입니다. 다음 중 하나일 수 있습니다.<br /><br /> *CT_INVALID:* 색이 잘못 되었거나 설정 하지 않습니다.<br /><br /> *CT_RAW:* 원시 ARGB 값입니다.<br /><br /> *CT_COLORINDEX:* 사용 하지 마세요.<br /><br /> *CT_SYSCOLOR:* SysColor에서 Windows 시스템 색입니다.<br /><br /> *CT_VSCOLOR:* __VSSYSCOLOREX에서 Visual Studio 색입니다.<br /><br /> *CT_AUTOMATIC:* 자동 색입니다.<br /><br /> *CT_TRACK_FOREGROUND:* 사용 하지 마세요.<br /><br /> *CT_TRACK_BACKGROUND:* 사용 하지 마세요.|  
+|Source|[필수] 16 진수에서 표시 색상 값|  
   
  __VSCOLORTYPE 열거에 의해 지원 되는 모든 값 형식 특성에서 스키마에에서 의해 지원 됩니다. 그러나 CT_RAW 및 CT_SYSCOLOR만 사용 하는 것이 좋습니다.  
   
@@ -153,15 +149,15 @@ Visual Studio 확장명 색 컴파일러 도구는 기존 Visual Studio 테마�
   
  **예제**  
   
--   VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
+- VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
   
--   VsixColorCompiler D:\xml\colors.xml /noLogo  
+- VsixColorCompiler D:\xml\colors.xml /noLogo  
   
-## <a name="notes"></a>노트  
+## <a name="notes"></a>참고  
   
--   이 도구를 최신 버전의 VC + + 런타임 설치 해야 합니다.  
+- 이 도구를 최신 버전의 VC + + 런타임 설치 해야 합니다.  
   
--   단일 파일만 지원 됩니다. 폴더 경로 통해 대량 변환은 지원 되지 않습니다.  
+- 단일 파일만 지원 됩니다. 폴더 경로 통해 대량 변환은 지원 되지 않습니다.  
   
 ## <a name="sample-output"></a>샘플 출력  
  .Pkgdef 파일 도구로 생성 되는 것과 비슷하지만 키 아래:  
@@ -173,4 +169,3 @@ Visual Studio 확장명 색 컴파일러 도구는 기존 Visual Studio 테마�
 [$RootKey$\Themes\{de3dbbcd-f642-433c-8353-8f1df4370aba}\TreeView]  
 "Data"=hex:38,00,00,00,0b,00,00,00,01,00,00,00,8e,f0,ec,92,13,8b,f4,4c,99,e9,ae,26,92,38,21,85,01,00,00,00,0a,00,00,00,42,61,63,6b,67,72,6f,75,6e,64,01,f5,f5,f5,ff,01,1e,1e,1e,ff  
 ```
-

@@ -1,14 +1,9 @@
 ---
-title: 'CA2205: Win32 API 항목 관리 사용 | Microsoft Docs'
-ms.custom: ''
+title: 'CA2205: 관리 되는 Win32 api를 사용 하 여 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UseManagedEquivalentsOfWin32Api
 - CA2205
@@ -20,14 +15,14 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ba23b176ed4f2120f4675611567955bdaf652153
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2da7faabb05d2f6eaf2ec345f9bae19401953093
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907471"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142553"
 ---
-# <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205: Win32 API에 있는 동일한 기능의 관리되는 항목을 사용하십시오.
+# <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205: Win32 API의 동일한 관리형 기능을 사용하세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -56,15 +51,12 @@ ms.locfileid: "49907471"
  [!code-vb[FxCop.Usage.ManagedEquivalents#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.ManagedEquivalents/vb/FxCop.Usage.ManagedEquivalents.vb#1)]
 
 ## <a name="related-rules"></a>관련된 규칙
- [CA1404: P-Invoke 다음에 바로 GetLastError를 호출합니다.](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)
+ [CA1404: P/Invoke 다음에 바로 GetLastError를 호출 합니다.](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)
 
  [CA1060: P/Invoke를 NativeMethods 클래스로 이동](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
 
- [CA1400: P/Invoke 진입점이 있어야 합니다.](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
+ [CA1400: P/Invoke 진입점 있어야 합니다.](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
 
- [CA1401: P/Invoke는 노출되지 않아야 합니다.](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
+ [CA1401: P/Invoke을 표시 해야 합니다.](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
 
- [CA2101: P/Invoke 문자열 인수에 대해 마샬링을 지정합니다.](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
-
-
-
+ [CA2101: P/Invoke 문자열 인수에 대해 마샬링을 지정 하십시오.](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)

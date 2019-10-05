@@ -2,22 +2,21 @@
 title: Workflow Foundation 프로젝트 만들기
 ms.date: 06/25/2018
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 helpviewer_keywords:
 - Workflow Designer, creating a workflow project
 - creating a workflow project
 ms.assetid: 235a125e-ebe7-4a98-bf77-86c8558728fb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0856ff93beef602d02defb58f90f69898a121f2c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e19ec88a4dec7a13ecc3d77e5d4fc1f04bb114bd
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943355"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747796"
 ---
 # <a name="workflow-project-templates"></a>워크플로 프로젝트 템플릿
 
@@ -35,22 +34,16 @@ Visual Studio는 4 개의 서로 다른 워크플로 프로젝트 템플릿을 �
 
 - 활동 디자이너 라이브러리
 
-이러한 서식 파일에 액세스 하려면 먼저 설치 합니다 **Windows Workflow Foundation** Visual Studio 2017 구성 요소입니다. 자세한 지침은 [Windows Workflow Foundation 설치](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)합니다.
+이러한 서식 파일에 액세스 하려면 먼저 설치 합니다 **Windows Workflow Foundation** Visual Studio의 구성 요소입니다. 자세한 지침은 [Windows Workflow Foundation 설치](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)합니다.
 
-1. 설치한 후는 **Windows Workflow Foundation** 구성 요소를 열기를 **새 프로젝트** 선택 하 여 대화 상자 **파일** > **새로만들기**  >  **프로젝트**합니다.
+1. 설치한 후 합니다 **Windows Workflow Foundation** 구성 요소를 **파일** > **New** > **프로젝트**.
 
-1. 왼쪽 창에서 선택 합니다 **Visual C#** > **워크플로** 범주 (또는 **Visual Basic** > **워크플로**Visual Basic을 선호 하는 경우).
+1. 검색 하 고 예를 들어 워크플로 프로젝트 템플릿을 선택 하면 **워크플로 콘솔 응용 프로그램** 템플릿.
 
-1. 가운데 창에는 프로젝트 템플릿을 선택와 같은 **워크플로 콘솔 응용 프로그램**합니다.
-
-1. 에 **이름을** 상자에서 쉽게 식별할 수 있도록 프로젝트에 대 한 설명이 포함 된 이름을 입력 합니다.
-
-1. 에 **위치** 상자에 프로젝트를 저장 하거나 선택 하려는 디렉터리를 입력 합니다 **찾아보기** 이동 합니다.
-
-1. 에 **솔루션** 상자에 새 솔루션에 대 한 이름을 입력 합니다. 선택 **확인** 응용 프로그램을 만들려고 합니다.
+1. 프로젝트 만들기를 계속 진행 합니다.
 
    > [!NOTE]
-   > 새 프로젝트를 기존 솔루션에 추가 하려는 경우 Visual Studio에서 해당 솔루션을 열고, 솔루션을 마우스 오른쪽 단추로 클릭 **솔루션 탐색기**, 선택한 **추가** > **새로 만들기 프로젝트** 열려면 합니다 **새 프로젝트** 대화 상자.
+   > 새 프로젝트를 기존 솔루션에 추가 하려는 경우 Visual Studio에서 해당 솔루션을 열고, 솔루션을 마우스 오른쪽 단추로 클릭 **솔루션 탐색기**, 선택한 **추가** > **새로 만들기 프로젝트**합니다.
 
 ## <a name="workflow-console-app"></a>워크플로 콘솔 응용 프로그램
 
@@ -74,9 +67,9 @@ Visual Studio는 4 개의 서로 다른 워크플로 프로젝트 템플릿을 �
 사용자 지정 활동 디자이너를 구현 하는 방법의 예제를 참조 하세요. [방법: 사용자 지정 활동 디자이너를 만드는](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer)합니다.
 
 > [!NOTE]
-> 기본.NET Framework 활동 및 사용자 지정 활동에 대 한 사용자 지정 활동 디자이너를 사용할 수 있습니다.
+> 기본.NET 활동 및 사용자 지정 활동에 대 한 사용자 지정 활동 디자이너를 사용할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [Workflow Designer 사용](developing-applications-with-the-workflow-designer.md)
 - [(.NET Framework) 워크플로 디자인 합니다.](/dotnet/framework/windows-workflow-foundation/designing-workflows)

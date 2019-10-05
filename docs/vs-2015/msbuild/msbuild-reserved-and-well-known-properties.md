@@ -1,14 +1,9 @@
 ---
 title: MSBuild의 예약된 속성 및 잘 알려진 속성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -20,18 +15,17 @@ ms.assetid: 99333e61-83c9-4804-84e3-eda297c2478d
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6f121701ff5d463c852f386f012fe22a7a46d43e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 19fa9c35011e42905c1f26ed34da405be61d0aba
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181083"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>MSBuild의 예약된 속성 및 잘 알려진 속성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에서는 프로젝트 파일과 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 이진 파일에 대한 정보를 저장하는 미리 정의된 속성 집합을 제공합니다. 이러한 속성은 다른 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 속성과 동일한 방식으로 평가됩니다. 예를 들어, `MSBuildProjectFile` 속성을 사용하려면 `$(MSBuildProjectFile)`을 입력합니다.  
   
  MSBuild에서는 다음 표에 있는 값을 사용하여 예약된 속성 및 잘 알려진 속성을 미리 정의할 수 있습니다. 예약된 속성은 재정의할 수 없지만 잘 알려진 속성은 동일하게 이름이 지정된 환경 속성, 전역 속성 또는 프로젝트 파일에 선언된 속성을 사용하여 재정의할 수 있습니다.  
@@ -63,10 +57,7 @@ ms.locfileid: "49225409"
 |`MSBuildThisFileFullPath`|실행하는 대상을 포함하는 프로젝트 또는 대상 파일의 절대 경로입니다.<br /><br /> 팁: 원본 프로젝트 파일이 아닌 대상 파일을 기준으로 하는 대상 파일의 상대 경로를 지정할 수 있습니다.|예약됨|  
 |`MSBuildThisFileName`|파일 확장명을 제외한 `MSBuildThisFileFullPath`의 파일 이름 부분입니다.|예약됨|  
 |`MSBuildToolsPath`|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 버전의 설치 경로는 `MSBuildToolsVersion` 값과 연결됩니다.<br /><br /> 경로에 마지막 백슬래시를 포함하지 마세요.<br /><br /> 이 속성은 재정의할 수 없습니다.|예약됨|  
-|`MSBuildToolsVersion`|프로젝트 빌드에 사용된 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 도구 집합의 버전입니다.<br /><br /> 참고: [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 도구 집합은 응용 프로그램 빌드에 사용되는 작업, 대상 및 도구로 구성됩니다. 도구에는 csc.exe 및 vbc.exe와 같은 컴파일러가 포함됩니다. 자세한 내용은 [도구 집합(ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) 및 [표준 및 사용자 지정 도구 집합 구성](../msbuild/standard-and-custom-toolset-configurations.md)을 참조하세요.|예약됨|  
+|`MSBuildToolsVersion`|프로젝트 빌드에 사용된 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 도구 집합의 버전입니다.<br /><br /> 참고: [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 도구 집합은 애플리케이션 빌드에 사용되는 작업, 대상 및 도구로 구성됩니다. 도구에는 csc.exe 및 vbc.exe와 같은 컴파일러가 포함됩니다. 자세한 내용은 [도구 집합(ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) 및 [표준 및 사용자 지정 도구 집합 구성](../msbuild/standard-and-custom-toolset-configurations.md)을 참조하세요.|예약됨|  
   
 ## <a name="see-also"></a>참고 항목  
  [MSBuild 참조](../msbuild/msbuild-reference.md) [MSBuild 속성](msbuild-properties1.md)
-
-
-

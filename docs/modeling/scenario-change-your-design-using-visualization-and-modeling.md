@@ -1,7 +1,6 @@
 ---
 title: '시나리오: 시각화 및 모델링을 사용하여 디자인 변경'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code visualization [Visual Studio ALM]
@@ -13,15 +12,15 @@ helpviewer_keywords:
 - walkthroughs [Visual Studio ALM], modeling software
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89f39fd11e5f42a61fa322edddf83afef1d2fc4b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3ace83b86b3b1772cd111a36b5f011d023189501
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821246"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824511"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>시나리오: 시각화 및 모델링을 사용하여 디자인 변경
 
@@ -72,7 +71,7 @@ Lucerne은 매우 크고 복잡한 시스템 모음을 유지 관리하며 시�
 
 Team Foundation Server에 대한 자세한 내용은 다음을 참조하세요.
 
-- [작업 계획 및 추적](#planning-and-tracking-work)
+- [계획 및 추적 작업](#plan-and-track-work)
 
 - [업데이트된 코드 테스트, 유효성 검사 및 체크 인](#TestValidateCheckInCode)
 
@@ -96,7 +95,7 @@ Team Foundation Server에 대한 자세한 내용은 다음을 참조하세요.
 
 - [솔루션 전체의 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)
 
-- [방법: (클래스 디자이너) 프로젝트에 클래스 다이어그램 추가](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
+- [방법: 프로젝트에 클래스 다이어그램 추가(클래스 디자이너)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
 
 - [Visual Studio용 모델링 SDK - 도메인별 언어](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 
@@ -117,7 +116,7 @@ Team Foundation Server에 대한 자세한 내용은 다음을 참조하세요.
 
 Visual Studio 모델링 다이어그램을 사용하는 데는 미리 정의된 순서가 없으므로 요구나 접근 방식에 맞게 사용할 수 있습니다. 일반적으로 팀에서는 프로젝트 내내 모델을 반복적으로 자주 다시 확인합니다. 각 다이어그램은 개발 중인 시스템의 다양한 측면을 이해, 설명 및 전달하도록 도와주는 특정 기능을 제공합니다.
 
-Dinner Now 및 Lucerne은 다이어그램을 공통 언어로 사용하여 서로 소통하고 프로젝트 이해 관계자와 소통합니다. 예를 들어 Dinner Now는 다이어그램을 사용하여 다음 작업을 수행합니다.
+Dinner Now 및 lucerne은 다이어그램을 공통 언어로 사용 하 여 프로젝트 이해 관계자와 서로 통신 합니다. 예를 들어 Dinner Now는 다이어그램을 사용하여 다음 작업을 수행합니다.
 
 - 기존 코드를 시각화합니다.
 
@@ -173,11 +172,11 @@ Dinner Now는 새 요구 사항을 충족하기 위한 비용을 예측해야 �
 
 |**다이어그램**|**설명 내용**|
 |-|-|
-|*종속성 다이어그램*<br /><br /> 참조<br /><br /> - [코드에서 종속성 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)<br />- [종속성 다이어그램: 참조](../modeling/layer-diagrams-reference.md)<br />- [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)<br />- [종속성 다이어그램을 사용 하 여 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md)|코드의 논리적 아키텍처.<br /><br /> 종속성 다이어그램을 구성 하 고 라는 추상 그룹에는 Visual Studio 솔루션의 아티팩트를 매핑합니다 *레이어*합니다. 이들 레이어는 아티팩트가 시스템에서 수행하는 역할, 작업 또는 기능을 식별합니다.<br /><br /> 레이어 다이어그램은 의도한 시스템 디자인을 설명하고 해당 디자인에 대해 발전하는 코드의 유효성을 검사하는 데 유용합니다.<br /><br /> 레이어를 만들려면 솔루션 탐색기, 코드 맵, 클래스 뷰 및 개체 브라우저에서 항목을 끌어옵니다. 새 레이어를 그리려면 도구 상자를 사용하거나 다이어그램 곡면을 마우스 오른쪽 단추로 클릭합니다.<br /><br /> 기존 종속성을 보려면 레이어 다이어그램 곡면을 마우스 오른쪽 단추로 클릭하고 **종속성 생성**을 클릭합니다. 의도한 종속성을 지정하려면 새 종속성을 그립니다.|
+|*종속성 다이어그램*<br /><br /> 참조<br /><br /> - [코드에서 종속성 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)<br />- [종속성 다이어그램: 참조](../modeling/layer-diagrams-reference.md)<br />- [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)<br />- [종속성 다이어그램을 사용 하 여 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md)|코드의 논리적 아키텍처.<br /><br /> 종속성 다이어그램을 구성 하 고 라는 추상 그룹에는 Visual Studio 솔루션의 아티팩트를 매핑합니다 *레이어*합니다. 이들 레이어는 아티팩트가 시스템에서 수행하는 역할, 작업 또는 기능을 식별합니다.<br /><br /> 종속성 다이어그램은 시스템의 의도 한 디자인을 설명 하 고 해당 디자인에 대해 발전 하는 코드의 유효성을 검사 하는 데 유용 합니다.<br /><br /> 레이어를 만들려면 솔루션 탐색기, 코드 맵, 클래스 뷰 및 개체 브라우저에서 항목을 끌어옵니다. 새 레이어를 그리려면 도구 상자를 사용하거나 다이어그램 곡면을 마우스 오른쪽 단추로 클릭합니다.<br /><br /> 기존 종속성을 보려면 종속성 다이어그램 곡면을 마우스 오른쪽 단추로 클릭 하 고 클릭 **종속성 생성**합니다. 의도한 종속성을 지정하려면 새 종속성을 그립니다.|
 
- 예를 들어 다음 종속성 다이어그램에서는 레이어 간 종속성 및 각 레이어와 연결 된 아티팩트의 수를 설명 합니다:
+예를 들어 다음 종속성 다이어그램에서는 레이어 간 종속성 및 각 레이어와 연결 된 아티팩트의 수를 설명 합니다:
 
- ![통합된 지불 시스템의 종속성 다이어그램](../modeling/media/layer_integrated_dnlucerne.png)
+![통합된 지불 시스템의 종속성 다이어그램](../modeling/media/layer_integrated_dnlucerne.png)
 
  **종속성 다이어그램**
 
@@ -195,7 +194,7 @@ Dinner Now는 새 요구 사항을 충족하기 위한 비용을 예측해야 �
 
 - 대부분 다이어그램은 선으로 연결된 노드로 구성됩니다. 각 다이어그램 유형에 대한 도구 상자에서는 다양한 도구 및 선을 제공합니다.
 
-     도구 상자를 열려면 **보기** 메뉴에서 **도구 상자**를 클릭합니다.
+   도구 상자를 열려면 **보기** 메뉴에서 **도구 상자**를 클릭합니다.
 
 - 노드를 만들려면 도구 상자에서 다이어그램으로 노드를 끌어옵니다. 특정 노드 종류는 기존 노드에 끌어서 놓아야 합니다. 예를 들어 구성 요소 다이어그램에서 새 포트는 기존 구성 요소에 추가해야 합니다.
 
@@ -207,7 +206,7 @@ Visual Studio 모델링 다이어그램은 Team Foundation Server와 통합되�
 
 작업이 진행됨에 따라 팀에서는 작업 항목을 업데이트하여 작업에 걸린 시간을 반영합니다. 다음 Team Foundation Server 기능을 사용하여 작업 상태를 모니터링 및 보고합니다.
 
-- 일일 *번다운(Burndown) 보고서* - 계획된 작업을 예상 시간 안에 완료할지를 보여 줍니다. Team Foundation Server에서 기타 비슷한 보고서를 생성하여 버그 진행 상황을 추적합니다.
+- 일일 *번 다운 보고서* 계획된 된 작업을 예상된 시간 안에 완료할 지 여부를 보여 줍니다. Team Foundation Server에서 기타 비슷한 보고서를 생성하여 버그 진행 상황을 추적합니다.
 
 - *반복 워크시트* - Microsoft Excel을 사용하여 팀에서 구성원 간의 작업 부하를 모니터링하고 균형을 맞추도록 도와줍니다. 이 워크시트는 Team Foundation Server에 연결되고 정기적인 진행 회의 중에 논의할 중점 사안을 제공합니다.
 
@@ -215,7 +214,7 @@ Visual Studio 모델링 다이어그램은 Team Foundation Server와 통합되�
 
 참조
 
-- [Agile 도구 및 Agile 프로젝트 관리 하는 방법에 대 한](/azure/devops/boards/backlogs/overview?view=vsts)
+- [Agile 도구 및 Agile 프로젝트 관리 하는 방법에 대 한](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)
 
 - [차트, 대시보드 및 위젯 (Azure DevOps 서비스)](/azure/devops/report/dashboards/overview?view=vsts)
 
@@ -330,7 +329,7 @@ Lucerne 결제 시스템에 대한 다음 맵을 생성하여 클래스, 메서�
 
 |**다이어그램**|**설명 내용**|
 |-|-|
-|종속성 다이어그램|시스템의 논리적 아키텍처. 종속성 유효성 검사를 사용 하 여 코드와 디자인의 일관성이 유지 되는지 확인 합니다.<br /><br /> 를 기존 dependencys 또는 의도 한 dependencys 식별할 수 있도록 하려면 코드 맵을 만들고 관련된 항목을 그룹화 합니다. 종속성 다이어그램을 만들려면 다음을 참조 하세요:<br /><br /> - [코드에서 종속성 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)<br />- [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)|
+|종속성 다이어그램|시스템의 논리적 아키텍처. 종속성 유효성 검사를 사용 하 여 코드와 디자인의 일관성이 유지 되는지 확인 합니다.<br /><br /> 기존 종속성 또는 의도 한 종속성을 쉽게 식별할 수 있도록, 하려면 코드 맵을 만들고 관련된 항목을 그룹화 합니다. 종속성 다이어그램을 만들려면 다음을 참조 하세요:<br /><br /> - [코드에서 종속성 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)<br />- [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)|
 |클래스 다이어그램(코드 기반)|특정 프로젝트에 대한 코드의 기존 클래스.<br /><br /> 코드에서 기존 클래스를 시각화 및 수정하려면 클래스 디자이너를 사용합니다.<br /><br /> [방법: (클래스 디자이너) 프로젝트에 클래스 다이어그램 추가](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)합니다.|
 
 ### <a name="DefineClasses"></a> 형식 용어집 정의: 클래스 다이어그램
@@ -356,11 +355,11 @@ Lucerne 결제 시스템에 대한 다음 맵을 생성하여 클래스, 메서�
 
 - 클래스, 인터페이스 및 열거형 등의 형식:
 
-    - *클래스* 는 특정 구조 또는 동작 특성을 공유하는 개체의 정의입니다.
+  - *클래스* 는 특정 구조 또는 동작 특성을 공유하는 개체의 정의입니다.
 
-    - *인터페이스* 는 개체의 외부적으로 표시되는 동작 파트를 정의합니다.
+  - *인터페이스* 는 개체의 외부적으로 표시되는 동작 파트를 정의합니다.
 
-    - *열거형* 은 리터럴 값 목록을 포함하는 분류자입니다.
+  - *열거형* 은 리터럴 값 목록을 포함하는 분류자입니다.
 
 - *특성* 은 *분류자*의 각 인스턴스를 설명하는 특정 형식 값입니다. 분류자는 형식, 구성 요소, 사용 사례 및 행위자의 일반 이름입니다.
 
@@ -384,7 +383,7 @@ Lucerne 결제 시스템에 대한 다음 맵을 생성하여 클래스, 메서�
 
 기존 클래스를 살펴보고 논의하려면 먼저 클래스 디자이너를 사용하여 코드에서 클래스 다이어그램을 만듭니다.
 
-- [방법: (클래스 디자이너) 프로젝트에 클래스 다이어그램 추가](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
+- [방법: 프로젝트에 클래스 다이어그램 추가(클래스 디자이너)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
 
 #### <a name="summary-strengths-of-class-diagrams"></a>요약: 클래스 다이어그램의 장점
  클래스 다이어그램을 통해 다음을 정의할 수 있습니다.

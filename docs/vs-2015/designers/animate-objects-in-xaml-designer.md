@@ -1,25 +1,20 @@
 ---
 title: XAML 디자이너에서 개체에 애니메이션 효과 주기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: fb88fa26-e835-47f5-9771-2f279441c83c
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0495397ccce63b93e524c2b3898b4f18ac981ff6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7846ade8dba2ce849acf62311e508c157b07dd3e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230089"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186747"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>XAML 디자이너에서 개체에 애니메이션 효과 주기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ ms.locfileid: "49230089"
   
  다음 비디오를 시청하여 애니메이션을 만드는 방법을 배워봅니다.  
   
-|짧은 비디오 보기:|비디오 내용|  
+|짧은 비디오 보기:|다음 작업을 수행하는 방법을 배워 보십시오.|  
 |--------------------------|-------------------|  
 |![설치된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [타임라인 만들기](http://www.popscreen.com/v/6A4eF/Microsoft-Expression-Blend-Creating-Timelines)|타임라인을 만들고 타임라인에서 개체 작업을 수행합니다.|  
 |![설치된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [키 프레임 추가 및 애니메이션 반복](http://www.popscreen.com/v/6A4fi/Microsoft-Expression-Blend-Adding-Keyframes-and-Repeating-an-Animation)|키 프레임을 추가하고 각 키 프레임에서 속성을 설정합니다. 그런 다음 애니메이션을 실행하고 애니메이션 간 부드럽게 전환되는 개체를 확인합니다.|  
@@ -47,6 +42,3 @@ ms.locfileid: "49230089"
   
 ## <a name="see-also"></a>참고 항목  
  [Blend for Visual Studio를 사용하여 UI 만들기](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
-
-
-

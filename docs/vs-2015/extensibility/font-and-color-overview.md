@@ -1,27 +1,22 @@
 ---
 title: 글꼴 및 색 개요 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], font and color
 - font and color control [Visual Studio SDK], editors
 ms.assetid: 2203e4e7-8b7f-44ec-8884-6ff718d4f278
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d849d93bdab481cecbb7d1f0f862f1db8eb3c181
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0a20cfa2372b1e55652ffcebe6d173cff86140a6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204353"
 ---
 # <a name="font-and-color-overview"></a>글꼴 및 색 개요
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,13 +73,12 @@ ms.locfileid: "51769436"
   
 - 둘 다 수의 기본 표시 항목을 사용 합니다 **텍스트 EditorCategory** 및 확장 하 고 있습니다.  
   
-   자세한 내용은 [방법: 사용 하 여 기본 제공 색 항목](../extensibility/internals/how-to-use-built-in-colorable-items.md) 하 고 [사용자 지정 색 항목](../extensibility/internals/custom-colorable-items.md).  
+   자세한 내용은 [방법: 기본 제공 색 항목 사용](../extensibility/internals/how-to-use-built-in-colorable-items.md) 하 고 [사용자 지정 색 항목](../extensibility/internals/custom-colorable-items.md)합니다.  
   
 - 현재 모두 기본 제공 상태 및 사용자 지정 자동 지 속성 사용 하 여 항목을 표시 합니다 **텍스트 편집기** 범주입니다.  
   
   구문 참조 색 지정에 대 한 자세한 내용은 [레거시 언어 서비스의 구문 색 지정](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [편집기에서 레거시 인터페이스](../extensibility/legacy-interfaces-in-the-editor.md)   
  [레거시 언어 서비스의 구문 색 지정](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
-

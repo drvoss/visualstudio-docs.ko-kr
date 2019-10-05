@@ -1,25 +1,22 @@
 ---
 title: 다른 Visual Studio 버전에서 모델 및 다이어그램 읽기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - models, versions of Visual Studio
 ms.assetid: 46eee279-a9e4-4742-a024-5bd2cf032b86
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6d104d8d92345ba56d390fdd7ad9b856432b4c92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 21dc0cb7f02639ca6faa89ae4c067f21e083d6d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757364"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387508"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>다른 Visual Studio 버전에서 모델 및 다이어그램 읽기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,20 +31,20 @@ ms.locfileid: "51757364"
  이런 이유로 UML 다이어그램 또는 레이어 다이어그램을 읽으려면 다이어그램이 생성된 모델링 프로젝트에 대한 액세스 권한도 있어야 합니다. 이 작업을 수행하려면 [!INCLUDE[esprscc](../includes/esprscc-md.md)]에서 프로젝트에서 액세스하거나 프로젝트 파일의 복사본을 가져옵니다.  
   
 > [!NOTE]
->  코드 맵 및 코드에서 생성된 .NET 클래스 다이어그램에는 적용되지 않습니다. 이러한 다이어그램은 모델링 프로젝트와 독립적으로 볼 수 있습니다.  
+> 코드 맵 및 코드에서 생성된 .NET 클래스 다이어그램에는 적용되지 않습니다. 이러한 다이어그램은 모델링 프로젝트와 독립적으로 볼 수 있습니다.  
   
  UML 다이어그램 또는 레이어 다이어그램을 읽는 데 필요한 최소 파일 집합은 다음과 같습니다.  
   
--   두 개의 다이어그램 파일 하려는 내용은 예를 들어 다이어그램 **MyDiagram.classdiagram 및 MyDiagram.classdiagram.layout**합니다.  
+- 두 개의 다이어그램 파일 하려는 내용은 예를 들어 다이어그램 **MyDiagram.classdiagram 및 MyDiagram.classdiagram.layout**합니다.  
   
     > [!NOTE]
-    >  레이어 다이어그램에 대 한 있어야 라는 파일이 _MyDiagram_**. layerdiagram.suppressions**합니다.  
+    > 레이어 다이어그램에 대 한 있어야 라는 파일이 _MyDiagram_**. layerdiagram.suppressions**합니다.  
   
--   모델링 프로젝트 파일 (**MyModel.modelproj**)  
+- 모델링 프로젝트 파일 (**MyModel.modelproj**)  
   
--   루트 모델 파일 (**ModelDefinition\MyModel.uml**)  
+- 루트 모델 파일 (**ModelDefinition\MyModel.uml**)  
   
--   다이어그램에서 참조 된 패키지에 대 한 패키지 파일 (**ModelDefinition\MyPackage.uml**)  
+- 다이어그램에서 참조 된 패키지에 대 한 패키지 파일 (**ModelDefinition\MyPackage.uml**)  
   
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>읽기 전용 모드에서 수행할 수 있는 변경 내용  
  모델 생성을 지원하지 않는 Visual Studio 버전에서 모델 및 다이어그램을 열면 모델을 변경할 수 없습니다. 즉, 다이어그램이나 모델 탐색기에 표시되는 요소 및 관계를 변경할 수 없습니다. 그러나 다음과 같이 다이어그램의 레이아웃을 일부 변경할 수 있습니다.  
@@ -58,7 +55,7 @@ ms.locfileid: "51757364"
   
   이러한 변경 내용을 저장할 수 있습니다. 업데이트 된 변경 내용을 다른 사용자에 게 표시 하려는 경우 전송 이상 해야 **.layout** 파일입니다.  
   
-##  <a name="RelatedTopics"></a> 관련된 항목  
+## <a name="RelatedTopics"></a>관련 항목  
   
 |제목|설명|  
 |-----------|-----------------|  
@@ -71,6 +68,3 @@ ms.locfileid: "51757364"
   
 ## <a name="see-also"></a>참고 항목  
  [앱용 모델 만들기](../modeling/create-models-for-your-app.md)
-
-
-

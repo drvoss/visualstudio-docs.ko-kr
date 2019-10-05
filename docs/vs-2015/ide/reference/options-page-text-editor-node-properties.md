@@ -1,14 +1,9 @@
 ---
 title: 옵션 페이지, 텍스트 편집기 노드 속성 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Tools Options settings, Text Editor node properties
 - automation [Visual Studio], controlling Tools Options
@@ -16,21 +11,20 @@ ms.assetid: 19438302-0677-4f4d-9720-5667e6a22ab2
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 88ba9765e292d4f07a7e1392a64270ddf27e8f60
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d127aaa85cdd8da9e5daebe5c7841e0f6e85238d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241906"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674869"
 ---
 # <a name="options-page-text-editor-node-properties"></a>옵션 페이지, 텍스트 편집기 노드 속성
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 이 문서에서는 **옵션** 대화 상자의 **텍스트 편집기** 범주, `DTE.Properties("TextEditor", <Property Page>)`와 연관된 일부 페이지(또는 속성 컬렉션)에 대해 설명합니다. 각 하위 단원의 제목은 `Properties` 컬렉션에 액세스하는 데 사용되는 호출이며, 각 하위 단원의 표에는 컬렉션의 속성이 나열되어 있습니다.  
   
- [옵션 설정 제어](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)의 Visual Basic 매크로는 **옵션** 대화 상자의 각 페이지에 대해 현재 옵션과 해당 값을 표시하는 방법을 보여 줍니다.  
+ [옵션 설정 제어](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)의 Visual Basic 매크로는 **옵션** 대화 상자의 각 페이지에 대해 현재 옵션과 해당 값을 표시하는 방법을 보여 줍니다.  
   
 ## <a name="general"></a>일반  
  `DTE.Properties("TextEditor", "General")`  
@@ -72,10 +66,7 @@ ms.locfileid: "49241906"
 |CutCopyBlankLines|Get/Set (Boolean)|선택하면 빈 줄을 잘라 내거나 복사합니다.|  
   
 ## <a name="see-also"></a>참고 항목  
- [옵션 설정 제어](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
- [옵션 페이지에서 속성 항목의 이름 확인](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
+ [옵션 설정 제어](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
+ [옵션 페이지에서 속성 항목의 이름 확인](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [옵션 페이지, 환경, 노드 속성](../../ide/reference/options-page-environment-node-properties.md)   
  [옵션 페이지, 글꼴 및 색 노드 속성](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
-
-
-

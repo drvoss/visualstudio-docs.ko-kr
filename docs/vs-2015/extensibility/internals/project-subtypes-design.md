@@ -1,26 +1,21 @@
 ---
 title: 프로젝트 디자인 하위 유형 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project subtypes, design
 ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 caps.latest.revision: 33
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 96ab44df6512b4288cf01f4c1f99d435a9c24bd5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0e7cd96324e5a2bbd6c9b0acf4125bc0450cfd06
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806128"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430544"
 ---
 # <a name="project-subtypes-design"></a>프로젝트 하위 형식 디자인
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,11 +24,11 @@ Microsoft Build Engine (MSBuild)을 기준으로 프로젝트를 확장 하는 V
   
  다음 항목에는 기본 디자인 및 구현 프로젝트 하위 형식의 세부 정보:  
   
--   프로젝트 하위 형식 디자인 합니다.  
+- 프로젝트 하위 형식 디자인 합니다.  
   
--   다중 수준 집계 합니다.  
+- 다중 수준 집계 합니다.  
   
--   인터페이스를 지원 합니다.  
+- 인터페이스를 지원 합니다.  
   
 ## <a name="project-subtype-design"></a>프로젝트 하위 형식 디자인  
  기본 집계 하 여 프로젝트 하위 형식의 초기화 이루어집니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 고 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> 개체입니다. 이 집계 사용을 재정의 하거나 기본 프로젝트의 기능 대부분을 향상 시키는 프로젝트 하위 형식입니다. 프로젝트 하위 형식 속성을 사용 하 여 처리를 첫 번째 기회가 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>를 사용 하 여 명령 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 및 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>를 사용 하 여 프로젝트 항목 관리 및 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>합니다. 프로젝트 하위 형식 확장할 수도 있습니다.  
@@ -76,11 +71,11 @@ Microsoft Build Engine (MSBuild)을 기준으로 프로젝트를 확장 하는 V
 ## <a name="multi-level-aggregation"></a>다중 수준 집계  
  낮은 수준의 프로젝트 하위 형식을 래핑하는 프로젝트 하위 형식 구현 협조적으로 제대로 작동 하려면 내부 프로젝트 하위 형식을 허용 하도록 프로그래밍 해야 합니다. 책임 프로그래밍의 목록이 포함 합니다.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> 내부 하위 형식에 배치 되는 프로젝트 하위 형식의 구현에 위임 해야 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> 둘 다에 대 한 내부 프로젝트 하위 형식의 구현을 <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> 및 <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> 메서드.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> 내부 하위 형식에 배치 되는 프로젝트 하위 형식의 구현에 위임 해야 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> 둘 다에 대 한 내부 프로젝트 하위 형식의 구현을 <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> 및 <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> 메서드.  
   
--   <xref:EnvDTE80.IInternalExtenderProvider> 래퍼 프로젝트 하위 형식 구현의 해당 내부 프로젝트 하위 형식의 위임 해야 합니다. 특히, 구현의 <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> 내부 프로젝트 하위 형식에서 이름의 문자열을 가져오고 다음 extender로 추가 하려는 문자열을 연결 해야 합니다.  
+- <xref:EnvDTE80.IInternalExtenderProvider> 래퍼 프로젝트 하위 형식 구현의 해당 내부 프로젝트 하위 형식의 위임 해야 합니다. 특히, 구현의 <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> 내부 프로젝트 하위 형식에서 이름의 문자열을 가져오고 다음 extender로 추가 하려는 문자열을 연결 해야 합니다.  
   
--   합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> 래퍼 프로젝트 하위 형식 구현의 인스턴스화해야 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> 해당 내부 개체 프로젝트 하위 형식 및 저장 하는 개인 대리자로 이후 기본 프로젝트의 프로젝트 구성 개체 직접 한다는 사실을 알고 있으면만 래퍼 프로젝트 하위 형식 구성 개체가 있습니다. 외부 프로젝트 하위 형식에서 처음 구성 인터페이스를 직접 처리 하려는 선택 하 고 나머지 내부 프로젝트 하위 형식의 구현에 위임할 수 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>입니다.  
+- 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> 래퍼 프로젝트 하위 형식 구현의 인스턴스화해야 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> 해당 내부 개체 프로젝트 하위 형식 및 저장 하는 개인 대리자로 이후 기본 프로젝트의 프로젝트 구성 개체 직접 한다는 사실을 알고 있으면만 래퍼 프로젝트 하위 형식 구성 개체가 있습니다. 외부 프로젝트 하위 형식에서 처음 구성 인터페이스를 직접 처리 하려는 선택 하 고 나머지 내부 프로젝트 하위 형식의 구현에 위임할 수 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>입니다.  
   
 ## <a name="supporting-interfaces"></a>인터페이스를 지원합니다.  
  기본 프로젝트는 해당 구현의 다양 한 측면을 확장 하는 프로젝트 하위 형식에서 추가 인터페이스를 지원 하기 위해 호출을 위임 합니다. 여기에 프로젝트 구성 개체와 다양 한 속성 브라우저 개체를 확장 합니다. 이러한 인터페이스를 호출 하 여 검색 됩니다 `QueryInterface` 대 `punkOuter` (에 대 한 포인터를 `IUnknown`) 가장 바깥쪽 프로젝트 하위 형식 aggregator의 합니다.  
@@ -97,4 +92,3 @@ Microsoft Build Engine (MSBuild)을 기준으로 프로젝트를 확장 하는 V
 ## <a name="see-also"></a>참고 항목  
  <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>   
  <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>
-

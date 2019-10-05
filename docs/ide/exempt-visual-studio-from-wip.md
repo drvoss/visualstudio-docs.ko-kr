@@ -1,20 +1,18 @@
 ---
 title: WIP(Windows Information Protection)에서 제외
 ms.date: 06/01/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a1b38e6e30a816382da72ef8280868fa68dfb10
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 714d85ea41674563922903f5bf38db04ffc2fbce
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978125"
 ---
 # <a name="configure-visual-studio-as-a-wip-exempt-app"></a>WIP 제외 앱으로 Visual Studio 구성
 

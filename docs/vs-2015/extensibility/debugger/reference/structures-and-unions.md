@@ -1,26 +1,21 @@
 ---
 title: 구조체 및 공용 구조체 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - structures [Visual Studio SDK]
 ms.assetid: 9ff0a8f8-1ee6-4fdd-8b80-206436ff589b
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ab670d64f82f76170e83ff75a52d30a3bf4eae5e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f882eae12e700fe86ab747cc7ffbe3b5744298af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755198"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204844"
 ---
 # <a name="structures-and-unions"></a>구조체 및 공용 구조체
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -198,10 +193,9 @@ ms.locfileid: "51755198"
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h, sh.h, 또는 ee.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>참고 항목  
  [API 참조](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
-

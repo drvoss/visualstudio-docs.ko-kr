@@ -1,14 +1,9 @@
 ---
 title: 클래스와 형식 디자인 및 보기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.diagram
 helpviewer_keywords:
@@ -21,13 +16,13 @@ ms.assetid: 40ed2c9d-0ce0-4b95-ad78-5dec2065ccea
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 559702f41f2694a6042e26b2760251e775c9cad3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c41dc9df835cc3799a35620730927b338224ea14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146161"
 ---
 # <a name="designing-and-viewing-classes-and-types"></a>클래스와 형식 디자인 및 보기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +31,11 @@ Visual Studio에서 클래스 디자이너를 사용하여 코드의 클래스�
   
  클래스 다이어그램을 사용하여 수행할 수 있는 자세한 작업은 다음과 같습니다.  
   
--   **디자인**: 클래스 다이어그램을 편집하여 프로젝트의 코드를 편집합니다. 새 요소를 추가하고 원치 않는 요소는 삭제할 수 있습니다. 변경 내용은 코드에 반영됩니다.  
+- **디자인**: 클래스 다이어그램을 편집하여 프로젝트의 코드를 편집합니다. 새 요소를 추가하고 원치 않는 요소는 삭제할 수 있습니다. 변경 내용은 코드에 반영됩니다.  
   
--   **시각화**: 다이어그램에서 프로젝트의 클래스를 확인하여 프로젝트 구조를 이해합니다. 가장 중요한 프로젝트 세부 내용에 집중할 수 있도록 다이어그램을 사용자 지정할 수 있습니다. 나중에 데모 또는 설명서에 사용할 수 있도록 다이어그램을 저장합니다.  
+- **시각화**: 다이어그램에서 프로젝트의 클래스를 확인하여 프로젝트 구조를 이해합니다. 가장 중요한 프로젝트 세부 내용에 집중할 수 있도록 다이어그램을 사용자 지정할 수 있습니다. 나중에 데모 또는 설명서에 사용할 수 있도록 다이어그램을 저장합니다.  
   
--   **리팩터링**: 메서드를 재정의하고, 식별자 이름을 바꾸고, 매개 변수를 리팩터링하고, 인터페이스 및 추상 클래스를 구현합니다.  
+- **리팩터링**: 메서드를 재정의하고, 식별자 이름을 바꾸고, 매개 변수를 리팩터링하고, 인터페이스 및 추상 클래스를 구현합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [클래스 및 기타 형식 작업(클래스 디자이너)](../ide/working-with-classes-and-other-types-class-designer.md)  
@@ -61,6 +56,3 @@ Visual Studio에서 클래스 디자이너를 사용하여 코드의 클래스�
  [코드 작성](../ide/writing-code-in-the-code-and-text-editor.md)  
   
  [솔루션 전체의 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)
-
-
-

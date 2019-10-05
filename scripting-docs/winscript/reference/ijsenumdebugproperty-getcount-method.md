@@ -2,7 +2,6 @@
 title: 'Ijsenumdebugproperty:: Getcount 메서드 | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,19 +15,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e2ab4f9dc2ae3e6668fa13b27b1b91714563cd6f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bb465bf4763e1e211d27990ac7740f8d21ec5368
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977697"
 ---
 # <a name="ijsenumdebugpropertygetcount-method"></a>IJsEnumDebugProperty::GetCount 메서드
 개체의 속성 수를 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetCount(  
    ULONG *pCount  
 );  

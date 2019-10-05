@@ -1,14 +1,9 @@
 ---
 title: 옵션, 텍스트 편집기, C#, 고급 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Advanced
@@ -24,22 +19,21 @@ ms.assetid: 947f9d9a-b0f3-408d-9866-d82895bcee31
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 51707a1df9c9f7144dc9a3af021262ca818f03b1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 73148f8c3f569f3d585f6127b7ec713c766b0f8b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850518"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674245"
 ---
 # <a name="options-text-editor-c-advanced"></a>옵션, 텍스트 편집기, C#, 고급
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Visual C#의 편집기 서식, 코드 리팩터링 및 XML 문서 주석에 대한 설정을 수정하려면 이 대화 상자를 사용합니다. 이 대화 상자에 액세스하려면 **도구** 메뉴에서 **옵션**을 클릭하고, **텍스트 편집기** 폴더를 확장하고, **C#** 을 확장하고, **고급**을 클릭합니다.  
   
 > [!NOTE]
->  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
+> 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
   
 ## <a name="outlining"></a>개요  
  개요 모드로 파일 열기  
@@ -74,7 +68,7 @@ Visual C#의 편집기 서식, 코드 리팩터링 및 XML 문서 주석에 대�
   
 ## <a name="xml-documentation-comments"></a>XML 문서 주석  
  ///에 대해 XML 문서 주석 생성  
- 이 옵션을 선택하면 /// 주석 도입부를 입력한 후 XML 문서 주석에 대한 \<summary> 시작 및 끝 태그가 자동으로 삽입됩니다. XML 문서에 대한 자세한 내용은 [XML 문서 주석](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)을 참조하세요.  
+ 이 옵션을 선택하면 /// 주석 도입부를 입력한 후 XML 문서 주석에 대한 \<summary> 시작 및 끝 태그가 자동으로 삽입됩니다. XML 문서에 대한 자세한 내용은 [XML 문서 주석](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)을 참조하세요.  
   
 ## <a name="implement-interface"></a>인터페이스 구현  
  #region으로 생성된 코드 감싸기  
@@ -82,12 +76,9 @@ Visual C#의 편집기 서식, 코드 리팩터링 및 XML 문서 주석에 대�
   
 ## <a name="organize-usings"></a>Using 구성  
  using 정렬 시 ‘System’ 지시문 먼저 배치  
- 이 옵션을 선택하면 `System` using 지시문이 다른 using 지시문 앞에 표시됩니다. 자세한 내용은 [Using 정렬](../../misc/sort-usings.md)합니다.  
+ 이 옵션을 선택하면 `System` using 지시문이 다른 using 지시문 앞에 표시됩니다. 자세한 내용은 [Using 정렬](../../misc/sort-usings.md)을 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
- [XML 문서 주석](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)   
+ [XML 문서 주석](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)   
  [언어별 편집기 옵션 설정](../../ide/reference/setting-language-specific-editor-options.md)   
  [Visual C# IntelliSense](../../ide/visual-csharp-intellisense.md)
-
-
-

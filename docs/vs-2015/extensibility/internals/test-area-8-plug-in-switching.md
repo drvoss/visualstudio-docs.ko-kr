@@ -1,27 +1,22 @@
 ---
 title: '테스트 영역 8: 플러그 인 전환 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], switching plug-ins
 - source control plug-ins, switching
 ms.assetid: 01370792-b5da-4e46-9ce2-7dd326587141
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 103946f29cb893672b29d7671a74acf1c26bc50e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 90650b8b3c3432fce05b03a25033977e68f60fca
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793817"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203117"
 ---
 # <a name="test-area-8-plug-in-switching"></a>테스트 영역 8: 플러그 인 전환
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,9 +26,9 @@ ms.locfileid: "51793817"
 ## <a name="command-menu-access"></a>명령 메뉴 액세스  
  다음 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 통합된 개발 환경 메뉴 경로 테스트 사례에서 사용 됩니다.  
   
--   현재 소스 제어 플러그 인: **도구가** -> **옵션** -> **소스 제어** -> **플러그 인 선택** .  
+- 현재 소스 제어 플러그 인: **도구** -> **옵션** -> **소스 제어** -> **플러그 인 선택**합니다.  
   
--   변경 소스 제어 바인딩이: **파일** -> **소스 제어** -> **소스 제어 변경**...  
+- 소스 변경 바인딩을 제어 합니다. **파일** -> **소스 제어** -> **소스 제어 변경**...  
   
 ## <a name="common-expected-behavior"></a>예상 되는 일반적인 동작  
  Visual Studio를 종료 하거나 솔루션을 다시 로드 하지 않고 소스 제어 플러그 인을 솔루션에 대 한 변경 불가능 합니다. 또한 현재 소스 제어 플러그 인 솔루션 로드 되 면 솔루션에서 사용 하는 자동으로 변경 합니다.  
@@ -61,4 +56,3 @@ ms.locfileid: "51793817"
   
 ## <a name="see-also"></a>참고 항목  
  [소스 제어 플러그 인에 대한 테스트 가이드](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

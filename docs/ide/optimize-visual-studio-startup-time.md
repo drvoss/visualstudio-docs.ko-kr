@@ -9,19 +9,17 @@ helpviewer_keywords:
 ms.assetid: d1508121-8499-4084-8eb5-fa89fa7b17d3
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 f1_keywords:
 - vs.performancecenter
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: cccdf9cae50d886f5e44fa7bb403bdd4d38ad535
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 60302646abbf36034756f38183d7be7f0d28c1ca
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812511"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Visual Studio 시작 시간 최적화
 
@@ -29,7 +27,7 @@ Visual Studio는 최대한 신속하고 효율적으로 시작되도록 설계�
 
 ## <a name="startup-behavior"></a>시작 동작
 
-시작 시간이 확장되지 않도록 방지하려면 Visual Studio 2017에서는 _요청 시_ 접근 방식을 사용하여 확장을 로드합니다. 이 동작은 Visual Studio가 시작된 후 즉시 확장이 열리지 않고 필요에 따라 열리도록 합니다. 또한 이전 Visual Studio 세션에서 열려 있는 도구 창으로 인해 시작 시간이 느려질 수 있으므로 Visual Studio는 시작 시간에 영향을 주지 않도록 보다 지능적인 방식으로 도구 창을 엽니다.
+시작 시간이 확장되지 않도록 방지하려면 Visual Studio에서는 _요청 시_ 접근 방식을 사용하여 확장을 로드합니다. 이 동작은 Visual Studio가 시작된 후 즉시 확장이 열리지 않고 필요에 따라 열리도록 합니다. 또한 이전 Visual Studio 세션에서 열려 있는 도구 창으로 인해 시작 시간이 느려질 수 있으므로 Visual Studio는 시작 시간에 영향을 주지 않도록 보다 지능적인 방식으로 도구 창을 엽니다.
 
 Visual Studio에서 시작 속도가 느린 것을 감지하면 속도 저하를 초래하는 확장이나 도구 창을 알려주는 팝업 메시지가 나타납니다. 이 메시지는 **Visual Studio 성능 관리** 대화 상자에 대한 링크를 제공합니다. 메뉴 모음에서 **도움말** > **Visual Studio 성능 관리**를 선택하여 이 대화 상자에 액세스할 수도 있습니다.
 
@@ -68,10 +66,10 @@ Visual Studio에서 시작 속도가 느린 것을 감지하면 속도 저하를
      ![Visual Studio 성능 관리 - 도구 창 보기](../ide/media/vside_perfdialog_toolwindows.png)
 
 > [!NOTE]
-> 일부 이전 버전의 Visual Studio 2017에는 **경량 솔루션 로드**라는 기능이 있습니다. Visual Studio 2017 버전 15.5 이상에서는 이 기능을 더 이상 사용할 수 없습니다. Visual Studio 2017 버전 15.5 이상에서는 경량 솔루션 로드 없이도 관리 코드가 포함된 대규모 솔루션이 이전보다 훨씬 빠르게 로드됩니다.
+> 일부 이전 버전의 Visual Studio 2017에는 **경량 솔루션 로드**라는 기능이 있습니다. 현재 버전에서는 경량 솔루션 로드 없이도 관리 코드가 포함된 대규모 솔루션이 이전보다 훨씬 빠르게 로드됩니다.
 
 ## <a name="see-also"></a>참고 항목
 
 - [Visual Studio 성능 최적화](../ide/optimize-visual-studio-performance.md)
 - [Visual Studio 성능 팁과 요령](../ide/visual-studio-performance-tips-and-tricks.md)
-- [Visual Studio 블로그 - Visual Studio 2017 버전 15.6으로 더 빠르게 솔루션 로드](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)
+- [Visual Studio 블로그 - Visual Studio 2017 버전 15.6으로 더 빠르게 솔루션 로드](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

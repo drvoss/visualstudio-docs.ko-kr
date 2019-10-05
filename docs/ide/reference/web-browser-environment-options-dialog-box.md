@@ -1,8 +1,6 @@
 ---
 title: 옵션 대화 상자, 환경, 웹 브라우저
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.Environment.Web Browser
@@ -11,7 +9,6 @@ f1_keywords:
 helpviewer_keywords:
 - browsers, customizing
 - searching, search page for Web browser
-- Visual Studio Start page, default URL
 - Web browsers, customizing
 - searches, default Web browser search page
 - URLs, specifying VS home page
@@ -21,17 +18,17 @@ helpviewer_keywords:
 ms.assetid: 586db4eb-032d-4cb5-93a6-a7c14de1ae49
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56bd77bb833e0fcc7e4e6e35304387d23b7c3f52
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: ad36a2c9c741cffdb1ad3da04f81a21ce68f7ebd
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389447"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605631"
 ---
-# <a name="web-browser-environment-options-dialog-box"></a>옵션 대화 상자, 환경, 웹 브라우저
+# <a name="options-dialog-box-environment--web-browser"></a>옵션 대화 상자: 환경 \> 웹 브라우저
 
 내부 웹 브라우저 및 Internet Explorer에 대한 옵션을 설정합니다. 이 대화 상자에 액세스하려면 **도구** 메뉴에서 **옵션**을 클릭하고, **환경** 폴더를 확장하고, **웹 브라우저**를 선택합니다.
 
@@ -53,11 +50,11 @@ IDE 웹 브라우저를 열 때 표시되는 페이지를 설정합니다.
 
 내부 웹 브라우저를 통해 페이지에서 **소스 보기**를 선택할 때 웹 페이지를 여는 데 사용되는 편집기를 설정합니다.
 
--   **소스 편집기** [편집기](../../ide/writing-code-in-the-code-and-text-editor.md)에서 소스를 보려면 선택합니다.
+- **소스 편집기** [편집기](../../ide/writing-code-in-the-code-and-text-editor.md)에서 소스를 보려면 선택합니다.
 
--   **HTML 편집기** [HTML 디자이너](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)에서 소스를 보려면 선택합니다. 디자인 뷰 또는 표준 텍스트 기반 소스 뷰 중 하나에서 웹 페이지를 편집하려면 이 선택을 사용합니다.
+- **HTML 편집기** [HTML 디자이너](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)에서 소스를 보려면 선택합니다. 다음 두 보기 중 하나에서 웹 페이지를 편집하려면 이 선택 영역을 사용합니다. 디자인 보기 또는 표준 텍스트 기반 원본 보기
 
--   **외부 편집기** 다른 편집기에서 소스를 보려면 선택합니다. Notepad.exe 등 선택한 편집기의 경로를 지정합니다.
+- **외부 편집기** 다른 편집기에서 소스를 보려면 선택합니다. Notepad.exe 등 선택한 편집기의 경로를 지정합니다.
 
 ## <a name="internet-explorer-options"></a>Internet Explorer 옵션
 
@@ -68,6 +65,5 @@ IDE 웹 브라우저를 열 때 표시되는 페이지를 설정합니다.
 
 ## <a name="see-also"></a>참고 항목
 
-- [옵션 대화 상자, 환경](../../ide/reference/environment-options-dialog-box.md)
 - [옵션 대화 상자, 환경, 일반](../../ide/reference/general-environment-options-dialog-box.md)
 - [HTML 디자이너](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)

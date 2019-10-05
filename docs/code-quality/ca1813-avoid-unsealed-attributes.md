@@ -1,7 +1,6 @@
 ---
 title: 'CA1813: 봉인되지 않은 특성을 사용하지 마세요.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1813
@@ -12,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: f5e31b4c-9f8b-49e1-a2a8-bb5f1140729a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 63b69b95dc676213c39c4cf10c212472218a0c24
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 12371c34c846991a0ec41f5e9d9588c5bde8e4d6
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838926"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233591"
 ---
 # <a name="ca1813-avoid-unsealed-attributes"></a>CA1813: 봉인되지 않은 특성을 사용하지 마세요.
 
@@ -32,23 +31,23 @@ ms.locfileid: "53838926"
 |TypeName|AvoidUnsealedAttributes|
 |CheckId|CA1813|
 |범주|Microsoft.Performance|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 
-공용 형식에서 상속 <xref:System.Attribute?displayProperty=fullName>추상 클래스가 아니며 봉인 (`NotInheritable` Visual basic에서).
+공용 형식이에서 <xref:System.Attribute?displayProperty=fullName>상속 되 고,가 abstract가 아니고, Visual Basic`NotInheritable` 에서 봉인 되지 않습니다.
 
 ## <a name="rule-description"></a>규칙 설명
 
-.NET Framework 클래스 라이브러리는 사용자 지정 특성을 검색 하는 메서드를 제공 합니다. 기본적으로 이러한 메서드는 특성 상속 계층을 검색합니다. 예를 들어 <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> 지정된 된 특성 형식이 나 지정된 된 특성 형식이 확장 하는 모든 특성 형식 검색 합니다. 특성을 봉인 상속 계층을 통해 검색을 제거 하 고 성능을 향상 시킬 수 있습니다.
+.NET에서는 사용자 지정 특성을 검색 하는 메서드를 제공 합니다. 기본적으로 이러한 메서드는 특성 상속 계층을 검색합니다. 예를 <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> 들어는 지정 된 특성 유형 또는 지정 된 특성 유형을 확장 하는 특성 유형을 검색 합니다. 특성을 봉인 하면 상속 계층 구조를 통해 검색이 제거 되 고 성능이 향상 될 수 있습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 
-이 규칙 위반 문제를 해결 하 고, 특성 형식을 봉인 또는 추상 확인 합니다.
+이 규칙 위반 문제를 해결 하려면 특성 유형을 봉인 하거나 abstract로 설정 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 
-이 규칙에서 경고를 표시 하지 않아도 안전 합니다. 특성 계층을 정의 하는 및 특성을 봉인할 수 없거나 abstract로 만들 경우에 표시 합니다.
+이 규칙에서는 경고를 표시 하지 않는 것이 안전 합니다. 특성 계층을 정의 하 고 특성을 봉인 하거나 abstract로 설정할 수 없는 경우에만를 표시 하지 않습니다.
 
 ## <a name="example"></a>예제
 
@@ -57,11 +56,11 @@ ms.locfileid: "53838926"
 [!code-csharp[FxCop.Performance.AttributesSealed#1](../code-quality/codesnippet/CSharp/ca1813-avoid-unsealed-attributes_1.cs)]
 [!code-vb[FxCop.Performance.AttributesSealed#1](../code-quality/codesnippet/VisualBasic/ca1813-avoid-unsealed-attributes_1.vb)]
 
-## <a name="related-rules"></a>관련된 규칙
+## <a name="related-rules"></a>관련 규칙
 
 - [CA1019: 특성 인수의 접근자를 정의 합니다.](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
-- [CA1018: 특성을 attributeusageattribute로 표시](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)
+- [CA1018: AttributeUsageAttribute를 사용 하 여 특성 표시](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [특성](/dotnet/standard/design-guidelines/attributes)

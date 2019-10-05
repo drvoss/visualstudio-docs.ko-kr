@@ -1,20 +1,19 @@
 ---
 title: C/C++에 대한 단위 테스트 작성
-ms.date: 10/09/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
+description: CTest, Boost.Test 및 Google Test를 비롯한 다양한 테스트 프레임워크를 사용하여 Visual Studio에서 C++ 단위 테스트를 작성합니다.
+ms.date: 05/06/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: e19eb3bb421a69c902d9a10f0cdb3c5ac2244a04
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 6c236a8454c9710bedbf080f4d7a09cfff6a7fac
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053746"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160173"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Visual Studio에서 C/C++에 대한 단위 테스트 작성
 
@@ -25,24 +24,24 @@ ms.locfileid: "53053746"
 
 Visual Studio에는 다음 C++ 테스트 기능이 포함되어 있으며 추가 다운로드가 필요하지 않습니다.
 
-- C++에 대한 Microsoft 단위 테스트 프레임워크 
+- C++에 대한 Microsoft 단위 테스트 프레임워크
 - Google Test
 - Boost.Test
 - CTest
 
 설치 된 프레임워크 외에도 Visual Studio 내에서 사용하려는 프레임워크에 대해 자체 테스트 어댑터를 작성할 수 있습니다. 테스트 어댑터는 **테스트 탐색기** 창에 단위 테스트를 통합할 수 있습니다. 몇 가지 타사 어댑터를 [Visual Studio Marketplace](https://marketplace.visualstudio.com)에서 제공하고 있습니다. 자세한 내용은 [타사 단위 테스트 프레임워크 설치](install-third-party-unit-test-frameworks.md)를 참조하세요.
 
-**Visual Studio 2017 버전 15.7(Professional 및 Enterprise)**
+**Visual Studio 2017 이상(Professional 및 Enterprise)**
 
 C++ 단위 테스트 프로젝트는 [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)를 지원합니다.
 
-**Visual Studio 2017 버전 15.5**
+**Visual Studio 2017 이상(모든 버전)**
 
-- **Google Test 어댑터**는 **C++를 통한 데스크톱 개발** 워크로드의 기본 구성 요소로 포함되어 있습니다. **솔루션 탐색기**의 **새 프로젝트 추가** 바로 가기 메뉴를 통해 솔루션에 추가할 수 있는 프로젝트 템플릿 및 **도구** > **옵션**을 통해 구성할 수 있는 옵션이 있습니다. 자세한 내용은 [방법: Visual Studio에서 Google Test 사용](how-to-use-google-test-for-cpp.md)을 참조하세요.
+- **Google Test 어댑터**는 **C++를 통한 데스크톱 개발** 워크로드의 기본 구성 요소로 포함되어 있습니다. **솔루션 탐색기**의 솔루션 노드에서 **새 프로젝트 추가** 오른쪽 클릭 메뉴를 통해 솔루션에 추가할 수 있는 프로젝트 템플릿 및 **도구** > **옵션**을 통해 구성할 수 있는 옵션이 있습니다. 자세한 내용은 [방법: Visual Studio에서 Google Test 사용](how-to-use-google-test-for-cpp.md)을 참조하세요.
 
 - **Boost.Test**는 **C++를 통한 데스크톱 개발** 워크로드의 기본 구성 요소로 포함되어 있습니다. **테스트 탐색기**와 통합되지만 현재는 프로젝트 템플릿을 갖지 않으므로 수동으로 구성해야 합니다. 자세한 내용은 [방법: Visual Studio에서 Boost.Test 사용](how-to-use-boost-test-for-cpp.md)을 참조하세요.
 
-- **CTest** 지원은 **C++를 통한 데스크톱 개발** 워크로드의 일부인 [CMake Tools for Visual Studio](/cpp/ide/cmake-tools-for-visual-cpp) 구성 요소에 포함되어 있습니다. 그러나 CTest는 아직 **테스트 탐색기**에 완전히 통합되지는 않았습니다. 자세한 내용은 [방법: Visual Studio에서 CTest 사용](how-to-use-ctest-for-cpp.md)을 참조하세요.
+- **CTest** 지원은 **C++를 사용한 데스크톱 개발** 워크로드의 일부인 **C++ CMake 도구** 구성 요소에 포함되어 있습니다. 그러나 CTest는 아직 **테스트 탐색기**에 완전히 통합되지는 않았습니다. 자세한 내용은 [방법: Visual Studio에서 CTest 사용](how-to-use-ctest-for-cpp.md)을 참조하세요.
 
 **Visual Studio 2015 및 이전 버전**
 
@@ -52,17 +51,35 @@ Google Test 어댑터와 Boost.Test 어댑터 확장은 Visual Studio Marketplac
 
 다음 섹션에서는 C++ 단위 테스트를 시작하기 위한 기본 단계를 보여 줍니다. 기본 구성은 Microsoft 및 Google Test 프레임워크에서 매우 유사합니다. Boost.Test에서는 수동으로 테스트 프로젝트를 만들어야 합니다.
 
-### <a name="create-a-test-project"></a>테스트 프로젝트 만들기
+::: moniker range="vs-2019"
+
+### <a name="create-a-test-project-in-visual-studio-2019"></a>Visual Studio 2019에서 테스트 프로젝트 만들기
+
+테스트하려는 코드와 동일한 솔루션 안에 있는 하나 이상의 프로젝트 안에서 테스트를 정의하여 실행합니다. 기존 솔루션에 새 테스트 프로젝트를 추가하려면 **솔루션 탐색기**에서 솔루션 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **새 프로젝트**를 선택합니다. **언어**를 C++로 설정하고 검색 상자에 "test"를 입력합니다. 다음 그림에서는 **C++를 사용한 데스크톱 개발** 및 **UWP 개발** 워크로드가 설치되었을 때 사용할 수 있는 테스트 프로젝트를 보여줍니다.
+
+![Visual Studio 2019의 Excel C++ 테스트 프로젝트](media/vs-2019/cpp-new-test-project-vs2019.png)
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+### <a name="create-a-test-project-in-visual-studio-2017"></a>Visual Studio 2017에서 테스트 프로젝트 만들기
 
 테스트하려는 코드와 동일한 솔루션 안에 있는 하나 이상의 프로젝트 안에서 테스트를 정의하여 실행합니다. 기존 솔루션에 새 테스트 프로젝트를 추가하려면 **솔루션 탐색기**에서 솔루션 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **새 프로젝트**를 선택합니다. 왼쪽 창에서 **Visual C++ 테스트**를 선택하고 가운데 창에서 프로젝트 형식 중 하나를 선택합니다. 다음 그림에서는 **C++를 통한 데스크톱 개발** 워크로드가 설치되었을 때 사용할 수 있는 테스트 프로젝트를 보여 줍니다.
 
 ![C++ 테스트 프로젝트](media/cpp-new-test-project.png)
+
+::: moniker-end
 
 ### <a name="create-references-to-other-projects-in-the-solution"></a>솔루션의 다른 프로젝트에 대한 참조 만들기
 
 테스트할 프로젝트에서 테스트 코드가 함수에 액세스할 수 있게 하려면 테스트 프로젝트에서 프로젝트에 대한 참조를 추가합니다. **솔루션 탐색기**에서 테스트 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **참조**를 선택합니다. 그런 다음 대화 상자에서 테스트할 프로젝트를 선택합니다.
 
 ![참조 추가](media/cpp-add-ref-test-project.png)
+
+### <a name="link-to-object-or-library-files"></a>개체 또는 라이브러리 파일에 연결
+
+테스트 코드가 테스트할 함수를 내보내지 않는 경우 .obj 또는 .lib 출력 파일을 테스트 프로젝트의 종속성에 추가할 수 있습니다. [개체 또는 라이브러리 파일에 테스트를 연결하려면](https://docs.microsoft.com/visualstudio/test/unit-testing-existing-cpp-applications-with-test-explorer?view=vs-2015#objectRef)을 참조하세요.
 
 ### <a name="add-include-directives-for-header-files"></a>헤더 파일에 대해 #include 지시문 추가
 
@@ -105,7 +122,7 @@ TEST_METHOD(TestClassInit)
    > [!NOTE]
    > **테스트 탐색기**와의 CTest 통합은 아직 제공되지 않습니다. CMake 주 메뉴에서 CTest 테스트를 실행합니다.
 
-1. 창에 일부 테스트가 표시되지 않는 경우 **솔루션 탐색기**에서 노드를 마우스 오른쪽 단추로 클릭하고 **빌드** 또는 **다시 빌드**를 선택하여 테스트 프로젝트를 빌드합니다. 
+1. 창에 일부 테스트가 표시되지 않는 경우 **솔루션 탐색기**에서 노드를 마우스 오른쪽 단추로 클릭하고 **빌드** 또는 **다시 빌드**를 선택하여 테스트 프로젝트를 빌드합니다.
 
 1. **테스트 탐색기**에서 **모두 실행**을 선택하거나 실행하려는 특정 테스트를 선택합니다. 테스트를 마우스 오른쪽 단추로 클릭하면 중단점을 사용하는 디버그 모드에서 실행 등, 다른 옵션이 표시됩니다. 모든 테스트를 실행한 후에는 창에 어떤 테스트에 통과했고 어떤 테스트에 실패했는지 표시됩니다.
 
@@ -119,7 +136,9 @@ TEST_METHOD(TestClassInit)
 
 ## <a name="use-codelens"></a>CodeLens 사용
 
-**Visual Studio 2017 버전 15.7 Professional 및 Enterprise Editions만 해당**: [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)를 사용하면 코드 편집기를 종료하지 않고도 단위 테스트 상태를 신속하게 확인할 수 있습니다. 다음 방법 중 하나로 C++ 단위 테스트 프로젝트에 대한 CodeLens를 초기화할 수 있습니다.
+**Visual Studio 2017 이상(Professional 및 Enterprise 버전)**
+
+[CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)를 사용하면 코드 편집기를 종료하지 않고도 단위 테스트 상태를 신속하게 확인할 수 있습니다. 다음 방법 중 하나로 C++ 단위 테스트 프로젝트에 대한 CodeLens를 초기화할 수 있습니다.
 
 - 테스트 프로젝트 또는 솔루션을 편집하고 빌드합니다.
 - 프로젝트 또는 솔루션을 다시 빌드합니다.
@@ -129,10 +148,10 @@ TEST_METHOD(TestClassInit)
 
 ![C++ CodeLens 아이콘](media/cpp-test-codelens-icons.png)
 
- 자세한 정보를 보거나 단위 테스트를 실행 또는 디버그하려면 아이콘을 클릭합니다.
+자세한 정보를 보거나 단위 테스트를 실행 또는 디버그하려면 아이콘을 클릭합니다.
 
 ![C++ CodeLens 실행 및 디버그](media/cpp-test-codelens-run-debug.png)
 
 ## <a name="see-also"></a>참고 항목
 
-[코드 단위 테스트](unit-test-your-code.md)
+- [코드 단위 테스트](unit-test-your-code.md)

@@ -1,26 +1,21 @@
 ---
 title: 자동화 모델을 사용 하 여 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], automation model
 ms.assetid: 0c7f7889-fbfb-4b19-804f-b742138baecd
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ea911dd70ae3a5ca0e53888b47ed2a8d859827c4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 22ee836f5a4330c551181f01229e82eb14623fb8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789137"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675204"
 ---
 # <a name="using-the-automation-model"></a>자동화 모델 사용
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ ms.locfileid: "51789137"
 속성 및 메서드를 호출 하 여 가져올 수 있습니다 자동화에 VSPackage를 연결한 후 합니다 <xref:EnvDTE.DTEClass.GetObject%2A> 메서드는 <xref:EnvDTE._DTE> 개체를 검색 하려는 개체를 나타내는 문자열을 전달 합니다.  
   
 ## <a name="obtaining-project-objects"></a>프로젝트 개체 가져오기  
- Automation 소비자를 가져오는 프로젝트 자동화 개체를 보여 주는 두 가지 코드 예제는 다음과 같습니다. DTE 개체를 가져오는 방법에 대 한 자세한 내용은 [방법: DTE 및 DTE2 개체에 대 한 참조 가져오기](http://msdn.microsoft.com/library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4)합니다.  
+ Automation 소비자를 가져오는 프로젝트 자동화 개체를 보여 주는 두 가지 코드 예제는 다음과 같습니다. DTE 개체를 가져오는 방법에 대 한 자세한 내용은 [방법: DTE 및 DTE2 개체에 대 한 참조 가져오기](https://msdn.microsoft.com/library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4)합니다.  
   
 ```vb  
 Sub DoAutomation()  
@@ -80,4 +75,3 @@ Next
   
 ## <a name="see-also"></a>참고 항목  
  <xref:EnvDTE.DTEClass.GetObject%2A>
-

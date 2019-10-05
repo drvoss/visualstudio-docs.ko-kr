@@ -2,27 +2,26 @@
 title: 게시 설정을 가져와서 Azure에 게시
 description: Visual Studio에서 Azure App Service로 애플리케이션을 배포하기 위한 게시 프로필 만들기 및 가져오기
 ms.date: 05/07/2018
-ms.technology: vs-ide-deployment
 ms.topic: tutorial
 helpviewer_keywords:
 - deployment, publish settings
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 804965df5142ddb18c1857a2540c5c69c08c4f9a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bd040b613a5b982050d651f341456c5fafc2954b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058502"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679182"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Visual Studio에서 게시 설정을 가져와서 Azure App Service에 애플리케이션 게시
 
 **게시** 도구를 사용하여 게시 설정을 가져온 다음, 앱을 배포할 수 있습니다. 이 문서에서는 Azure App Service에 대한 게시 설정을 사용하지만 비슷한 단계를 사용하여 [IIS](../deployment/tutorial-import-publish-settings-iis.md)에서 게시 설정을 가져올 수 있습니다. 일부 시나리오에서는 게시 설정 프로필을 사용하는 것이 Visual Studio를 설치할 때마다 서비스에 대한 배포를 수동으로 구성하는 것보다 빠를 수 있습니다.
 
-이러한 단계는 Visual Studio에서 ASP.NET, ASP.NET Core 및 .NET Core 앱에 적용됩니다. [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) 앱에 대한 게시 설정을 가져올 수도 있습니다. 단계는 Visual Studio 2017 버전 15.6에 해당합니다.
+이러한 단계는 Visual Studio에서 ASP.NET, ASP.NET Core 및 .NET Core 앱에 적용됩니다. [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) 앱에 대한 게시 설정을 가져올 수도 있습니다.
 
 이 자습서에서 다음을 수행합니다.
 
@@ -38,19 +37,31 @@ ms.locfileid: "53058502"
 
 ## <a name="prerequisites"></a>전제 조건
 
-* **ASP.NET** 및 .**NET Framework** 개발 워크로드와 Visual Studio 2017이 설치되어 있어야 합니다. .NET Core 앱의 경우 **.NET Core** 워크로드도 필요합니다.
+::: moniker range=">=vs-2019"
 
-    아직 Visual Studio를 설치하지 않은 경우  [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  페이지로 이동하여 체험용으로 설치합니다.
+* **ASP.NET 및 웹 개발** 워크로드와 Visual Studio 2019가 설치되어 있어야 합니다.
+
+    아직 Visual Studio를 설치하지 않은 경우  [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/)  페이지로 이동하여 체험용으로 설치합니다.
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+* **ASP.NET 및 웹 개발** 워크로드와 Visual Studio 2017이 설치되어 있어야 합니다.
+
+    아직 Visual Studio를 설치하지 않은 경우  [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/)  페이지로 이동하여 체험용으로 설치합니다.
+::: moniker-end
 
 * Azure App Service를 만듭니다. 자세한 지침은 [Visual Studio를 사용하여 Azure에 ASP.NET Core 웹앱 배포](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)를 참조하세요.
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Visual Studio에서 새로운 ASP.NET 프로젝트 만들기
 
-1. Visual Studio를 실행하는 컴퓨터에서 **파일** > **새 프로젝트**를 선택합니다.
+1. Visual Studio를 실행하는 컴퓨터에서 새 프로젝트를 선택합니다.
 
-1. **Visual C#**  또는 **Visual Basic** 아래에서 **웹**을 선택한 다음, 가운데 창에서 **ASP.NET 웹 애플리케이션(.NET Framework)** 또는 (C#만) **ASP.NET Core 웹 애플리케이션**을 선택한 다음, **확인**을 클릭합니다.
+    올바른 템플릿을 선택합니다. 이 예제에서 **ASP.NET 웹 애플리케이션(.NET Framework)** 또는 (C# 전용인 경우) **ASP.NET Core 웹 애플리케이션**을 선택한 다음, **확인**을 클릭합니다.
 
-    지정된 프로젝트 템플릿이 표시되지 않으면 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Open Visual Studio 설치 관리자** 링크를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. 설치해야 하는 필수 Visual Studio 워크로드를 확인하려면 이 문서의 필수 구성 요소를 참조하세요.
+    지정된 프로젝트 템플릿이 표시되지 않으면 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Open Visual Studio 설치 관리자** 링크를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. **ASP.NET 및 웹 개발** 워크로드를 설치합니다.
+
+    선택한 프로젝트 템플릿(ASP.NET 또는 ASP.NET Core)은 웹 서버에 설치된 ASP.NET의 버전과 일치해야 합니다.
 
 1. **MVC**(.NET Framework) 또는 **웹 애플리케이션(Model-View-Controller)**(.NET Core용)을 선택하고, **인증 안 함**이 선택되었는지 확인한 다음, **확인**을 클릭합니다.
 
@@ -89,6 +100,7 @@ ms.locfileid: "53058502"
       </publishProfile>
     </publishData>
     ```
+
     일반적으로 이전 *.publishsettings 파일은 Visual Studio에서 사용할 수 있는 두 개의 게시 프로필을 포함합니다(웹 배포를 사용하여 배포하는 것 하나, FTP를 사용하여 배포하는 것 하나). 위의 코드는 웹 배포 프로필을 보여줍니다. 나중에 프로필을 가져올 때 두 프로필을 모두 가져옵니다.
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Visual Studio에서 게시 설정 가져오기 및 배포

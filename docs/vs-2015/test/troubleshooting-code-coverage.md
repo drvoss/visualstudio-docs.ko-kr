@@ -1,24 +1,19 @@
 ---
 title: 코드 검사 문제 해결 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: troubleshooting
 ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
 caps.latest.revision: 13
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f7df2f4c83a61c62a7774bea475d54c3deea4c47
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 926c9f329ccea8e38c60d4ca05cb1542df725414
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306053"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825872"
 ---
 # <a name="troubleshooting-code-coverage"></a>코드 검사 문제 해결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,9 +45,9 @@ Visual Studio의 코드 검사 분석 도구는 네이티브 및 관리되는 �
 ### <a name="youre-looking-at-a-previous-result"></a>이전 결과가 표시된 상태  
  테스트를 수정하고 다시 실행하면 이전 실행의 코드 강조를 포함한 이전 코드 검사 결과가 계속 표시될 수 있습니다.  
   
-1.  코드 검사 분석을 실행합니다.  
+1. 코드 검사 분석을 실행합니다.  
   
-2.  코드 분석 결과 창에서 최근 결과 집합을 선택했는지 확인하십시오.  
+2. 코드 분석 결과 창에서 최근 결과 집합을 선택했는지 확인하십시오.  
   
 ### <a name="pdb-symbol-files-are-unavailable"></a>.pdb(기호) 파일을 사용할 수 없습니다  
  분석  
@@ -95,7 +90,7 @@ Visual Studio의 코드 검사 분석 도구는 네이티브 및 관리되는 �
  어셈블리가 네이티브 이미지 캐시에서 로드되지 않았는지 확인합니다.  
   
  설명  
- 성능 상의 이유로 네이티브 이미지 어셈블리는 분석되지 않습니다. 자세한 내용은 [Ngen.exe(네이티브 이미지 생성기)](http://msdn.microsoft.com/library/44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66)를 참조하세요.  
+ 성능 상의 이유로 네이티브 이미지 어셈블리는 분석되지 않습니다. 자세한 내용은 [Ngen.exe(네이티브 이미지 생성기)](https://msdn.microsoft.com/library/44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66)를 참조하세요.  
   
  해결  
  어셈블리의 MSIL 버전을 사용합니다. NGen으로 처리하지 않습니다.  
@@ -112,17 +107,17 @@ Visual Studio의 코드 검사 분석 도구는 네이티브 및 관리되는 �
  해결  
  두 가지 유형의 오류가 있습니다.  
   
--   **XML 오류**  
+- **XML 오류**  
   
      Visual Studio XML 편집기에서 .runsettings 파일을 엽니다. 오류 표시를 찾습니다.  
   
--   **정규식 오류**  
+- **정규식 오류**  
   
-     파일의 각 문자열은 정규식입니다. 오류별로 정규식 오류를 검토하고 특히 다음 항목이 있는지 찾아 보십시오.  
-  
-    -   짝이 맞지 않는 괄호 (...) 또는 이스케이프되지 않은 괄호 \\(...\\). 검색 문자열에서 괄호를 일치시키려면 이스케이프 처리해야 합니다. 예를 들어 함수를 일치시키려면 `.*MyFunction\(double\)`을 사용합니다.  
-  
-    -   식의 시작 부분의 별표 또는 더하기 문자열을 일치시키려면 점과 별표, `.*`를 사용합니다.  
+  파일의 각 문자열은 정규식입니다. 오류별로 정규식 오류를 검토하고 특히 다음 항목이 있는지 찾아 보십시오.  
+
+  - 짝이 맞지 않는 괄호 (...) 또는 이스케이프되지 않은 괄호 \\(...\\). 검색 문자열에서 괄호를 일치시키려면 이스케이프 처리해야 합니다. 예를 들어 함수를 일치시키려면 `.*MyFunction\(double\)`을 사용합니다.  
+
+  - 식의 시작 부분의 별표 또는 더하기 문자열을 일치시키려면 점과 별표, `.*`를 사용합니다.  
   
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>제외를 잘못 지정한 사용자 지정 .runsettings 파일  
  분석  
@@ -143,7 +138,7 @@ Visual Studio의 코드 검사 분석 도구는 네이티브 및 관리되는 �
  정적으로 링크된 네이티브 코드에서 초기화 함수 **DllMain**과 이 함수가 호출하는 코드는 코드가 실행된 경우에도 검사되지 않은 것으로 표시될 수 있습니다.  
   
  설명  
- 코드 검사 도구는 응용 프로그램이 실행을 시작하기 바로 전에 어셈블리에 계측을 삽입하여 작동합니다. 이 시점 이전에 로드된 모든 어셈블리에서, **DllMain**의 초기화 코드는 어셈블리가 로드되는 즉시, 그리고 응용 프로그램이 실행되기 전에 실행됩니다. 해당 코드는 검사되지 않은 것으로 나타납니다.  
+ 코드 검사 도구는 애플리케이션이 실행을 시작하기 바로 전에 어셈블리에 계측을 삽입하여 작동합니다. 이 시점 이전에 로드된 모든 어셈블리에서, **DllMain**의 초기화 코드는 어셈블리가 로드되는 즉시, 그리고 애플리케이션이 실행되기 전에 실행됩니다. 해당 코드는 검사되지 않은 것으로 나타납니다.  
   
  일반적으로, 이 경우는 정적으로 로드된 어셈블리에 적용됩니다.  
   
@@ -152,6 +147,3 @@ Visual Studio의 코드 검사 분석 도구는 네이티브 및 관리되는 �
   
 ## <a name="see-also"></a>참고 항목  
  [코드 검사를 사용하여 테스트할 코드 범위 결정](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-
-
-

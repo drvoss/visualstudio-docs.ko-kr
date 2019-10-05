@@ -8,15 +8,15 @@ helpviewer_keywords:
 - FxCopCmd errors
 ms.author: gewarren
 author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71e2a39b792dcc5a01eb28611664736f6620bb1f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4d723065e224058b7e269299aad2900f97a1425d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47556777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62936649"
 ---
 # <a name="fxcopcmd-tool-errors"></a>FxCopCmd 도구 오류
 
@@ -55,4 +55,4 @@ FxCopCmd 심각한 되도록 모든 오류를 고려 하지 않습니다. FxCopC
 
 ## <a name="see-also"></a>참고자료
 
-- [코드 분석 응용 프로그램 오류](../code-quality/code-analysis-application-errors.md)
+- [코드 분석 애플리케이션 오류](../code-quality/code-analysis-application-errors.md)

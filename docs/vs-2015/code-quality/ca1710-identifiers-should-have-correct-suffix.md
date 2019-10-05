@@ -1,14 +1,9 @@
 ---
-title: ': Ca1710 식별자에는 올바른 접미사 사용 해야 합니다. | Microsoft Docs'
-ms.custom: ''
+title: 'CA1710: 식별자에는 올바른 접미사를 사용 해야 합니다. | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1710
 - IdentifiersShouldHaveCorrectSuffix
@@ -20,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2256e3f20dfdb4ddb8efa28d7ecdd203a139bcc5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 16b4c2fb13a8de1824233b491d752b796aea907d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940166"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676543"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: 식별자에는 올바른 접미사를 사용해야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ ms.locfileid: "49940166"
 |<xref:System.Collections.Stack?displayProperty=fullName>|컬렉션 또는 스택|
 |<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|컬렉션|
 |<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|사전|
-|<xref:System.Data.DataSet?displayProperty=fullName>|데이터 집합|
+|<xref:System.Data.DataSet?displayProperty=fullName>|데이터 세트|
 |<xref:System.Data.DataTable?displayProperty=fullName>|컬렉션 또는 DataTable|
 |<xref:System.IO.Stream?displayProperty=fullName>|스트림|
 |<xref:System.Security.IPermission?displayProperty=fullName>|사용 권한|
@@ -95,10 +90,7 @@ foreach(SomeType x in SomeDictionary.Values) { }
  다른 접미사에 대 한이 규칙에서 경고를 표시 하지 마십시오. 접미사를 사용 하면 형식 이름에서 알 수 되도록 용도입니다.
 
 ## <a name="related-rules"></a>관련된 규칙
- [CA1711: 식별자에는 올바른 접미사를 사용해야 합니다.](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
+ [CA1711: 식별자에는 접미사를 사용 해야 합니다.](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
 
 ## <a name="see-also"></a>참고 항목
- [특성](http://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [NIB: 이벤트 및 대리자](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115)
-
-
-
+ [특성](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [NIB: 이벤트 및 대리자](https://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)

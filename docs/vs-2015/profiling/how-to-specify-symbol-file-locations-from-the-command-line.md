@@ -1,25 +1,20 @@
 ---
-title: '방법: 명령줄에서 기호 파일 위치 지정 | Microsoft 문서'
-ms.custom: ''
+title: '방법: 명령줄에서 기호 파일 위치 지정 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 8aa067bb-e8bf-4081-aff0-cfbcf65934a0
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3d138166bc0dfdf93df5d4e340fc0d0a62d1828b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: e08a2f8fc93f91cafe40d2dc5e9bdb8b49770b3b
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721197"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692827"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>방법: 명령줄에서 기호 파일 위치 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ ms.locfileid: "51721197"
   이러한 방법을 둘 다 사용할 수도 있습니다.  
   
 > [!NOTE]
->  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]가 로컬 컴퓨터에 설치될 경우 Windows 기호 파일의 위치가 이미 지정되었을 수 있습니다. 자세한 내용은 [방법: Windows 기호 정보 참조](../profiling/how-to-reference-windows-symbol-information.md)를 참조하세요. 이 항목의 뒷 부분에 설명된 대로 위치 및 서버를 사용하도록 VSPerfReport를 구성해야 합니다.  
+> [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]가 로컬 컴퓨터에 설치될 경우 Windows 기호 파일의 위치가 이미 지정되었을 수 있습니다. 자세한 내용은 [방법: 참조 Windows 기호 정보](../profiling/how-to-reference-windows-symbol-information.md)합니다. 이 항목의 뒷 부분에 설명된 대로 위치 및 서버를 사용하도록 VSPerfReport를 구성해야 합니다.  
   
 ## <a name="specifying-windows-symbol-files"></a>Windows 기호 파일 지정  
   
@@ -53,7 +48,7 @@ ms.locfileid: "51721197"
   
 2. 다음 구문을 사용하여 **_NT_SYMBOL_PATH** 환경 변수 또는 VSPerfReport /SymbolPath 옵션을 설정합니다.  
   
-    **srv\\*** *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
+    **srv\*** *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
   
     여기서 *LocalStore*는 사용자가 만든 로컬 디렉터리의 경로입니다.  
   
@@ -68,6 +63,3 @@ ms.locfileid: "51721197"
  다음 VSPerfReport 명령줄은 **/SymbolPath** 옵션을 사용하여 C:\Projects\Symbols 디렉터리를 검색 경로에 추가합니다.  
   
  **VSPerfReport**  *MyApp* **.exe /SymbolPath:C:\Projects\Symbols /summary:all**
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: 옵션, 텍스트 편집기, 파일 확장명 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.toolsoptionspages.text_editor.file_extension
 helpviewer_keywords:
@@ -20,24 +15,23 @@ ms.assetid: 05298fc5-fc4e-4bb2-b942-1f7d2dcdff0f
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 953417bf6d3c89df452878a3070937f29112c67c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bd49b08e8bd48393a980fe775db66c96c0edc1fd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204128"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695825"
 ---
 # <a name="options-text-editor-file-extension"></a>옵션, 텍스트 편집기, 파일 확장명
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 이 [옵션] 대화 상자에서는 특정 파일 확장명을 가진 모든 파일이 Visual Studio IDE(통합 개발 환경)에서 처리되는 방법을 지정할 수 있습니다. 입력하는 각 **확장명**에 대해 편집 환경을 선택할 수 있습니다. 이렇게 하면 특정 형식의 문서가 열리는 IDE 편집기 또는 디자이너를 선택할 수 있습니다. 이러한 옵션을 표시하려면 **도구** 메뉴에서 **옵션**을 선택하고, **텍스트 편집기** 노드를 확장하고, **파일 확장명**을 선택합니다.  
   
  “인코딩 사용” 옵션을 선택하면 해당 형식의 문서를 열 때마다 해당 문서에 대한 인코딩 체계를 선택할 수 있는 대화 상자가 표시됩니다. 다양한 플랫폼에서 또는 다양한 대상 언어로 사용할 프로젝트 문서 버전을 준비 중이라면 이 대화 상자가 유용할 수 있습니다.  
   
 > [!NOTE]
->  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
+> 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
   
 ## <a name="uielement-list"></a>UI 요소 목록  
  **확장**  
@@ -63,6 +57,3 @@ ms.locfileid: "49204128"
   
 ## <a name="see-also"></a>참고 항목  
  [방법: 편집기 모드 관리](../../ide/how-to-manage-editor-modes.md)
-
-
-

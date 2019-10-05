@@ -3,17 +3,17 @@ title: 색 및 Visual Studio에 대 한 스타일 지정 | Microsoft Docs
 ms.date: 07/31/2017
 ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12555b48550d252ce125ac437c1e30d5ae22fae9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: faded3e4a541ad899306e40bf9d46bf96a6b8ace
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914610"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338357"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>색 및 Visual Studio에 대 한 스타일 지정
 
@@ -85,7 +85,7 @@ Visual Studio 소스 코드는 토큰 이름 및 각 테마에 대해 각 색상
 
 ![도구 &gt; 옵션 대화 상자](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "a_ToolsOptionsDialog 0301")<br />도구 &gt; 옵션 대화 상자
 
-##  <a name="BKMK_TheVSColorService"></a> VSColor Service
+## <a name="BKMK_TheVSColorService"></a> VSColor Service
 
 Visual Studio VSColor service 또는 셸 색 서비스 라고도 하는 환경 색 서비스를 제공 합니다. 이 서비스를 사용 하면 각 테마에 대 한 색을 포함 하는 집합 이름-값 색에 UI 요소의 색 값을 바인딩할 수 있습니다. 색이 자동으로 현재 사용자가 선택한 테마에 맞게 변경 되 고 UI 환경 색 서비스에 바인딩된 있도록는 통합 새 테마를 사용 하 여 이후 버전의 Visual Studio VSColor service 모든 UI 요소에 대해 사용 되어야 합니다.
 
@@ -112,7 +112,6 @@ IVsUIShell2::GetVSSysColorEx(VSSYSCOLOR dwSysColIndex, DWORD *pdwRGBval)
 파일 VSShell80.idl, 열거형의에서 `__VSSYSCOLOREX` 셸 색 상수에 있습니다. 를 사용 하려면에서 값으로 전달 인덱스의 값 중 하나는 `enum __VSSYSCOLOREX` 에 문서화 된 MSDN 또는 Windows 시스템 API를 숫자는 일반 인덱스가 `GetSysColor`를 허용 합니다. 이 작업을 수행할 두 번째 매개 변수에서 사용 해야 하는 색의 RGB 값을 다시 가져옵니다.
 
 펜 또는 새 색을 사용 하 여 브러시를 저장 하는 경우 수행 해야 합니다 `AdviseBroadcastMessages` (Visual Studio 셸)에서 수신 대기 `WM_SYSCOLORCHANGE` 및 `WM_THEMECHANGED` 메시지입니다.
-
 
 네이티브 코드에서 색 서비스에 액세스 하려면이 유사한 호출을 해야 합니다.
 
@@ -268,7 +267,7 @@ protected override void Dispose(bool disposing)
 }
 ```
 
-##  <a name="BKMK_ChoosingHighContrastColors"></a> 고대비 색 선택
+## <a name="BKMK_ChoosingHighContrastColors"></a> 고대비 색 선택
 
 ### <a name="overview"></a>개요
 
@@ -308,11 +307,11 @@ UI, 색 집합을 제한이 적용 될 때 *"일반" 테마에서 표시 된 미
 
 많은 일반적인 UI 요소에 이미 정의 된 고대비 색입니다. 참조할 수 있습니다 이러한 사용 패턴 색 이름을 사용자 고유의 시스템을 선택할 때 UI 요소는 비슷한 구성 요소와 일치 합니다.
 
-| 시스템 색 | 사용법 |
+| 시스템 색 | 사용 |
 | --- | --- |
 | ActiveCaption | -현재 IDE 및 rafted 창 단추 가리키기 및 키를 눌러 문자 모양<br />IDE 및 rafted windows에 대 한 제목 표시줄 배경<br />기본 상태 표시줄 배경 |
 | ActiveCaptionText | -현재 IDE 및 rafted 창의 제목 표시줄 전경 (텍스트 및 문자 모양)<br />-배경 및 테두리 hover에 키를 눌러 활성 창 단추 |
-| Control | -기본 컨트롤 및 드롭다운 단추를 포함 하 여 백그라운드를 사용 하지 않도록 설정 콤보 상자, 드롭 다운 목록 및 검색<br />--대상 단추 배경을 도킹 하는 중<br />명령 모음 배경<br />도구 창 배경 |
+| 컨트롤 | -기본 컨트롤 및 드롭다운 단추를 포함 하 여 백그라운드를 사용 하지 않도록 설정 콤보 상자, 드롭 다운 목록 및 검색<br />--대상 단추 배경을 도킹 하는 중<br />명령 모음 배경<br />도구 창 배경 |
 | ControlDark | -IDE 배경<br />메뉴 및 명령 모음 구분 기호<br />명령 모음 테두리<br />메뉴 그림자<br />-도구 창 탭 기본 및 가리킨 항목 테두리 및 구분 기호<br />-문서 오버플로 단추 배경을<br />-도킹 대상 문자 모양 테두리 |
 | ControlDarkDark |-포커스가 없는 선택한 문서 탭 창 |
 | ControlLight |-자동 숨기기 탭 테두리<br />-콤보 상자 및 드롭다운 목록 테두리<br />-대상 배경 및 테두리 도킹 |
@@ -331,7 +330,7 @@ UI, 색 집합을 제한이 적용 될 때 *"일반" 테마에서 표시 된 미
 | WindowFrame | -IDE 테두리 |
 | WindowText | -자동 숨기기 탭 전경<br />-선택한 도구 창 탭 전경<br />-포커스가 없는 문서 창의 탭 및 포커스 없음 또는 선택 취소-임시 탭 전경<br />-트리 보기 기본 전경 가리키기 선택 하지 않은 문자 위로<br />도구 창 선택된 된 탭 테두리<br />-스크롤 막대 thumb 배경, 테두리 및 문자 모양 |
 
-##  <a name="BKMK_ExposingColorsForEndUsers"></a> 최종 사용자에 대 한 색을 노출합니다.
+## <a name="BKMK_ExposingColorsForEndUsers"></a> 최종 사용자에 대 한 색을 노출합니다.
 
 ### <a name="overview"></a>개요
 

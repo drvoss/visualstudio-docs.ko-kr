@@ -1,14 +1,9 @@
 ---
-title: 'CA1822: 멤버를 static으로 표시 하십시오. | Microsoft Docs'
-ms.custom: ''
+title: 'CA1822: 멤버를 static으로 표시 합니다. | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - MarkMembersAsStatic
 - CA1822
@@ -20,24 +15,24 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7b85d12038d4c505f912dd2f9440829f2c80679c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 42c6f0d333d1f7ee3f657b9c57c4154e9f824128
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201674"
 ---
-# <a name="ca1822-mark-members-as-static"></a>CA1822: 멤버를 static으로 표시하십시오.
+# <a name="ca1822-mark-members-as-static"></a>CA1822: 멤버를 static으로 표시하세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017에서 최신 설명서를 참조 하세요 [CA1822: 멤버를 static으로 표시할](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static) docs.microsoft.com에서 제공 합니다.  
+Visual Studio에서 최신 설명서를 참조 하세요. [CA1822: 멤버를 static으로 표시할](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static)합니다.  
   
 |||  
 |-|-|  
 |TypeName|MarkMembersAsStatic|  
 |CheckId|CA1822|  
 |범주|Microsoft.Performance|  
-|변경 수준|아님-멤버 어셈블리 외부에서 표시 되지 않으면 변경에 관계 없이 하면 됩니다. 아님-멤버와 인스턴스 멤버를 변경 하는 경우는 `this` 키워드입니다.<br /><br /> 주요-정적 멤버에 인스턴스 멤버에서 멤버를 변경 하 고 어셈블리 외부에 표시 됩니다.|  
+|변경 수준|아님-멤버 어셈블리 외부에서 표시 되지 않으면 변경에 관계 없이 하면 됩니다.<br /><br /> 아님-멤버와 인스턴스 멤버를 변경 하는 경우는 `this` 키워드입니다.<br /><br /> 주요-정적 멤버에 인스턴스 멤버에서 멤버를 변경 하 고 어셈블리 외부에 표시 됩니다.|  
   
 ## <a name="cause"></a>원인  
  인스턴스 데이터에 액세스 하지 않습니다 하는 멤버를 정적으로 표시 됩니다 (공유 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).  
@@ -52,9 +47,8 @@ Visual Studio 2017에서 최신 설명서를 참조 하세요 [CA1822: 멤버를
  이전에 제공 된 코드는 수정 프로그램은 주요 변경 내용에 대 한이 규칙에서 경고를 표시 하지 않아도 안전 합니다.  
   
 ## <a name="related-rules"></a>관련된 규칙  
- [CA1811: 호출되지 않는 전용 코드를 사용하지 마십시오.](../code-quality/ca1811-avoid-uncalled-private-code.md)  
+ [CA1811: 호출 되지 않는 전용 코드를 방지 합니다.](../code-quality/ca1811-avoid-uncalled-private-code.md)  
   
- [CA1812: 인스턴스화되지 않은 내부 클래스를 사용하지 마십시오.](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
+ [CA1812: 인스턴스화되지 않은 내부 클래스를 방지 합니다.](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
   
- [CA1804: 사용되지 않는 로컬 항목을 제거하십시오.](../code-quality/ca1804-remove-unused-locals.md)
-
+ [CA1804: 사용 되지 않는 로컬 항목을 제거](../code-quality/ca1804-remove-unused-locals.md)

@@ -1,27 +1,22 @@
 ---
 title: 구현 하 고 포트 공급자 등록 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], registering port suppliers
 - port suppliers, registering
 ms.assetid: fb057052-ee16-4272-8e16-a4da5dda0ad4
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3844d6beca76781f741bfbe0c6bff71923075d36
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 377aa88df71fd0d3c42745fe2d3ce3b648191aa4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430256"
 ---
 # <a name="implementing-and-registering-a-port-supplier"></a>포트 공급자 구현 및 등록
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,7 +57,7 @@ RemoveMetric(metrictypePortSupplier,
 ```  
   
 > [!NOTE]
->  합니다 [디버깅을 위한 SDK 도우미](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) `SetMetric` 및 `RemoveMetric` 정적 함수가 dbgmetric.h에 정의 된 및 ad2de.lib 컴파일됩니다. 합니다 `metrictypePortSupplier`, `metricCLSID`, 및 `metricName` 도우미 dbgmetric.h에서 정의 됩니다.  
+> 합니다 [디버깅을 위한 SDK 도우미](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) `SetMetric` 및 `RemoveMetric` 정적 함수가 dbgmetric.h에 정의 된 및 ad2de.lib 컴파일됩니다. 합니다 `metrictypePortSupplier`, `metricCLSID`, 및 `metricName` 도우미 dbgmetric.h에서 정의 됩니다.  
   
  포트 공급자 메서드를 통해 해당 이름 및 GUID를 제공할 수 있습니다 [GetPortSupplierName](../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md) 하 고 [GetPortSupplierId](../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md), 각각.  
   
@@ -70,4 +65,3 @@ RemoveMetric(metrictypePortSupplier,
  [포트 공급자 구현](../../extensibility/debugger/implementing-a-port-supplier.md)   
  [디버깅을 위한 SDK 도우미](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
  [포트 공급자](../../extensibility/debugger/port-suppliers.md)
-

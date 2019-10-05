@@ -1,37 +1,32 @@
 ---
 title: 레거시 언어 서비스에서 문 완성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - statement completion
 - language services, statement completion
 ms.assetid: 617439dc-3f0e-4e5f-b346-3e4e7fcf3c1b
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d88ebe84ec3ec5efb1d7c4ac04ebaee50ac65b97
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 163eb0f23716fa2f036d07612b741c0c9419b92e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408473"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>레거시 언어 서비스의 명령문 완성
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 문 완성 하는 언어 서비스는 언어 키워드 또는 핵심 편집기에 입력 시작 하는 요소를 완료 하는 사용자를 사용 하면 프로세스. 이 항목에는 문 완성 작동 원리 및 언어 서비스에서 구현 하는 방법을 설명 합니다.  
   
- 레거시 언어 서비스는 VSPackage의 일부로 구현 됩니다 있지만 MEF 확장을 사용 하는 언어 서비스 기능을 구현 하는 최신 방법입니다. 문 완성 기능을 구현 하는 새로운 방법에 대 한 자세한 내용을 참조 하세요 [연습: 문 완성 표시](../../extensibility/walkthrough-displaying-statement-completion.md)합니다.  
+ 레거시 언어 서비스는 VSPackage의 일부로 구현 됩니다 있지만 MEF 확장을 사용 하는 언어 서비스 기능을 구현 하는 최신 방법입니다. 문 완성 기능을 구현 하는 새로운 방법에 대 한 자세한 참조 [연습: 문 완성 표시](../../extensibility/walkthrough-displaying-statement-completion.md)합니다.  
   
 > [!NOTE]
->  편집기를 사용 하 여 새 API 최대한 빨리 시작 하는 것이 좋습니다. 언어 서비스의 성능이 향상 되 고 새 편집기 기능을 활용할 수 있습니다.  
+> 편집기를 사용 하 여 새 API 최대한 빨리 시작 하는 것이 좋습니다. 언어 서비스의 성능이 향상 되 고 새 편집기 기능을 활용할 수 있습니다.  
   
 ## <a name="implementing-statement-completion"></a>문 완성 구현  
  문 완성 코어 편집기에서 대화형으로 사용 하면 더 쉽게 하 고 신속 하 게 코드를 작성 하는 특별 한 UI를 활성화 합니다. 문 완성 표시 하 여 관련 개체 또는 클래스는 필요할 때 특정 요소를 기억할 필요가 도움말 참조 항목에서 조회 하거나이 방지 하는 기능입니다.  
@@ -45,4 +40,3 @@ ms.locfileid: "51796495"
   
 ## <a name="see-also"></a>참고 항목  
  [레거시 언어 서비스 명령 가로채기](../../extensibility/internals/intercepting-legacy-language-service-commands.md)
-

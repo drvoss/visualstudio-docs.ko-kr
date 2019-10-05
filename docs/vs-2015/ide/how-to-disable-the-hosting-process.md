@@ -1,14 +1,9 @@
 ---
 title: '방법: 호스팅 프로세스 비활성화 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - hosting process, disabling
 - vshost.exe, disabling the hosting process
@@ -16,13 +11,13 @@ ms.assetid: 9157488d-737f-454b-8d8d-36f99de38bb0
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4251e5aac5042b610ed32f95a13ba5d6ffb9d4eb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 813094285557171e9c7f021f597d0d643356b5d4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848491"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694405"
 ---
 # <a name="how-to-disable-the-hosting-process"></a>How to: Disable the Hosting Process
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,16 +38,13 @@ ms.locfileid: "49848491"
   
    일반적으로 호스팅 프로세스는 사용하지 않습니다.  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 응용 프로그램 디버깅을 시작하는 데 필요한 시간이 증가합니다.  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 애플리케이션 디버깅을 시작하는 데 필요한 시간이 증가합니다.  
   
--   디자인 타임 식 계산을 사용할 수 없습니다.  
+- 디자인 타임 식 계산을 사용할 수 없습니다.  
   
--   부분 신뢰 디버깅을 사용할 수 없습니다.  
+- 부분 신뢰 디버깅을 사용할 수 없습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [디버깅 및 호스팅 프로세스](../debugger/debugging-and-the-hosting-process.md)   
  [호스팅 프로세스(vshost.exe)](../ide/hosting-process-vshost-exe.md)   
- [응용 프로그램 개발 중 빌드](http://msdn.microsoft.com/en-us/c9497d62-3b7b-4449-88e8-cf27acc9efe6)
-
-
-
+ [애플리케이션 개발 중 빌드](https://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6)

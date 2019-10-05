@@ -1,25 +1,20 @@
 ---
-title: '연습: 꼭 짓 점 음영으로 인해 개체 누락 된 | Microsoft Docs'
-ms.custom: ''
+title: '연습: 누락 된 꼭 짓 점 음영으로 인해 개체 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2ecff22d99eb995f0dbe70e93783460f4343d74f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d54fdce78528f348e99436c3a58d15e1cbe861b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745934"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444276"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>연습: 꼭짓점 음영으로 인해 누락된 개체
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,13 +23,13 @@ ms.locfileid: "51745934"
   
  이 연습에서는 다음 작업을 설명합니다.  
   
--   **그래픽 이벤트 목록** 을 사용하여 문제의 잠재적인 원인을 찾습니다.  
+- **그래픽 이벤트 목록** 을 사용하여 문제의 잠재적인 원인을 찾습니다.  
   
--   **그래픽 파이프라인 단계** 창을 사용하여 `DrawIndexed` Direct3D API 호출의 효과를 확인합니다.  
+- **그래픽 파이프라인 단계** 창을 사용하여 `DrawIndexed` Direct3D API 호출의 효과를 확인합니다.  
   
--   **HLSL 디버거** 를 사용하여 꼭짓점 셰이더를 검사합니다.  
+- **HLSL 디버거** 를 사용하여 꼭짓점 셰이더를 검사합니다.  
   
--   **그래픽 이벤트 호출 스택** 을 사용하여 잘못된 HLSL 상수의 소스를 찾습니다.  
+- **그래픽 이벤트 호출 스택** 을 사용하여 잘못된 HLSL 상수의 소스를 찾습니다.  
   
 ## <a name="scenario"></a>시나리오  
  꼭지점 셰이더가 잘못되었거나 예기치 않은 방식으로 개체의 꼭지점을 변환할 때 3D 앱 개체 누락의 일반적인 원인 중 하나가 발생합니다. 예를 들어 개체 크기가 너무 작게 축소되거나 변환되어 카메라 정면이 아닌 뒤에 나타날 수 있습니다.  
@@ -54,7 +49,7 @@ ms.locfileid: "51745934"
   
     ![Visual Studio에서 그래픽 로그 문서](../debugger/media/gfx-diag-demo-missing-object-shader-step-1.png "gfx_diag_demo_missing_object_shader_step_1")  
   
-   문제를 보이는 프레임을 선택한 후에 **그래픽 이벤트 목록**을 사용하여 진단을 시작할 수 있습니다. **그래픽 이벤트 목록** 에는 활성 프레임을 렌더링하여 장치 상태를 설정하거나, 버퍼를 만들고 업데이트하거나, 프레임에 나타나는 개체를 그리는 등의 작업을 하기 위해 수행한 모든 Direct3D API 호출이 포함됩니다. 많은 유형의 호출은 앱이 예상대로 작동할 때 렌더링 대상에 항상은 아니지만 종종 해당 변경 사항이 생기므로 흥미롭습니다(예: 그리기, 디스패치, 복사 또는 지우기 호출). 그리기 호출은 각각 앱이 렌더링하는 기하 도형을 나타내므로 특히 흥미롭습니다(디스패치 호출도 기하 도형을 렌더링할 수 있음).  
+   문제를 보이는 프레임을 선택한 후에 **그래픽 이벤트 목록**을 사용하여 진단을 시작할 수 있습니다. **그래픽 이벤트 목록** 에는 활성 프레임을 렌더링하여 디바이스 상태를 설정하거나, 버퍼를 만들고 업데이트하거나, 프레임에 나타나는 개체를 그리는 등의 작업을 하기 위해 수행한 모든 Direct3D API 호출이 포함됩니다. 많은 유형의 호출은 앱이 예상대로 작동할 때 렌더링 대상에 항상은 아니지만 종종 해당 변경 사항이 생기므로 흥미롭습니다(예: 그리기, 디스패치, 복사 또는 지우기 호출). 그리기 호출은 각각 앱이 렌더링하는 기하 도형을 나타내므로 특히 흥미롭습니다(디스패치 호출도 기하 도형을 렌더링할 수 있음).  
   
    우리는 렌더링 대상에 누락된 개체가 그려지지 않지만(이 경우) 나머지 화면은 예상대로 그려지므로 **그래픽 파이프라인 단계** 도구와 함께 **그래픽 이벤트 목록** 을 사용하여 누락된 개체의 기하 도형에 해당하는 그리기 호출을 판단할 수 있습니다. **그래픽 파이프라인 단계** 창은 렌더링 대상에 대한 효과에 상관없이 각 그리기 호출에 전송된 기하 도형을 보여 줍니다. 그리기 호출을 진행함에 따라, 파이프라인 단계가 각 호출과 관련된 기하 도형을 표시하도록 업데이트되고, 렌더링 대상 출력도 호출이 완료되면 렌더링 대상의 상태를 표시하도록 업데이트됩니다.  
   
@@ -69,7 +64,7 @@ ms.locfileid: "51745934"
     **그래픽 파이프라인 단계** 창에서 **입력 어셈블러** 단계는 개체가 변환되기 전 개체의 기하 도형을 보여 주며, **꼭지점 셰이더** 단계는 변환된 후의 동일한 개체를 보여 줍니다. 이 시나리오에서는 누락된 개체가 **입력 어셈블러** 단계에서는 표시되지만 **꼭짓점 셰이더** 단계에서는 아무 것도 표시되지 않을 때 해당 개체를 찾았다는 것을 확인했습니다.  
   
    > [!NOTE]
-   >  헐 셰이더, 도메인 셰이더 또는 기하 도형 셰이더 단계와 같은 다른 기하 도형 단계에서 개체를 처리하는 경우, 이러한 단계가 문제의 원인이 될 수 있습니다. 일반적으로 문제는 결과가 표시되지 않거나 예기치 않은 방식으로 표시되는 최초의 단계와 관련이 있습니다.  
+   > 헐 셰이더, 도메인 셰이더 또는 기하 도형 셰이더 단계와 같은 다른 기하 도형 단계에서 개체를 처리하는 경우, 이러한 단계가 문제의 원인이 될 수 있습니다. 일반적으로 문제는 결과가 표시되지 않거나 예기치 않은 방식으로 표시되는 최초의 단계와 관련이 있습니다.  
   
 4. 누락된 개체에 해당하는 그리기 호출에 도달하면 중지합니다. 이 시나리오에서 **그래픽 파이프라인 단계** 창은 기하 도형이 GPU에 만들어졌으나(입력 어셈블러 축소판 그림으로 표시) 꼭지점 셰이더 단계 동안에는 문제가 발생하여 렌더링 대상에 나타나지 않는다는 것(꼭지점 셰이더 축소판 그림으로 표시)을 보여 줍니다.  
   
@@ -112,9 +107,9 @@ ms.locfileid: "51745934"
     ![개체의 상수 버퍼를 설정 하는 코드](../debugger/media/gfx-diag-demo-missing-object-shader-step-7.png "gfx_diag_demo_missing_object_shader_step_7")  
   
    > [!TIP]
-   >  앱을 동시에 디버깅하는 경우 이 위치에 중단점을 설정할 수 있으며 다음 프레임이 렌더링될 때 중단됩니다. `m_marbleConstantBufferData` 의 멤버를 검사하여 상수 버퍼가 채워질 때 `projection` 멤버의 값이 모두 0으로 설정되어 있는지 확인할 수 있습니다.  
+   > 앱을 동시에 디버깅하는 경우 이 위치에 중단점을 설정할 수 있으며 다음 프레임이 렌더링될 때 중단됩니다. `m_marbleConstantBufferData` 의 멤버를 검사하여 상수 버퍼가 채워질 때 `projection` 멤버의 값이 모두 0으로 설정되어 있는지 확인할 수 있습니다.  
   
-   상수 버퍼가 채워지는 위치를 확인 하 고 해당 값 변수에서 제공 되는 검색 한 후 `m_marbleConstantBufferData`, 위치를 확인 하려면 다음 단계는는 `m_marbleConstantBufferData.projection` 멤버가 모두 0으로 설정 됩니다. **모든 참조 찾기** 를 사용하여 `m_marbleConstantBufferData.projection`값을 변경하는 코드를 빠르게 검색할 수 있습니다.  
+   상수 버퍼가 채워지는 위치를 발견하고 해당 값을 `m_marbleConstantBufferData` 변수에서 가져온 것인지 확인한 후 다음 단계로 `m_marbleConstantBufferData.projection` 멤버가 모두 0으로 설정된 위치를 확인합니다. **모든 참조 찾기** 를 사용하여 `m_marbleConstantBufferData.projection`값을 변경하는 코드를 빠르게 검색할 수 있습니다.  
   
 #### <a name="to-find-where-the-projection-member-is-set-in-your-apps-source-code"></a>앱 소스 코드에서 투영 멤버가 설정되는 위치를 찾으려면  
   
@@ -133,6 +128,3 @@ ms.locfileid: "51745934"
    .코드를 수정한 후 다시 빌드하고 앱을 다시 실행하여 렌더링 문제가 해결되었는지 확인할 수 있습니다.  
   
    ![에 이제 개체가 표시 됩니다. ](../debugger/media/gfx-diag-demo-missing-object-shader-resolution.png "gfx_diag_demo_missing_object_shader_resolution")
-
-
-

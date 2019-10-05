@@ -1,5 +1,5 @@
 ---
-title: 코드 맵을 사용하여 응용 프로그램 디버그
+title: 코드 맵을 사용하여 애플리케이션 디버그
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,18 +13,17 @@ helpviewer_keywords:
 - mapping relationships in code
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 715d64d48a82837aca0c576a1cc95b434244368a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e421c65e83bca88c01ea58cfd5cc402c6011cb23
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907655"
 ---
-# <a name="use-code-maps-to-debug-your-applications"></a>코드 맵을 사용하여 응용 프로그램 디버그
+# <a name="use-code-maps-to-debug-your-applications"></a>코드 맵을 사용하여 애플리케이션 디버그
 
 코드 맵을 사용하면 많은 코드베이스, 익숙하지 않은 코드 또는 레거시 코드에서 길을 잃는 것을 방지할 수 있습니다. 예를 들어, 디버깅 시 여러 파일 및 프로젝트 간에 코드를 확인 하는 것이 해야 합니다. 코드 맵을 사용하여 코드를 탐색하고 코드 조각 간의 관계를 확인할 수 있습니다. 이렇게 하면 머릿속에서 이 코드를 추적하거나 별도 다이어그램을 그리지 않아도 됩니다. 따라서 작업이 중단된 경우 코드 맵을 통해 작업 중인 코드에 대한 기억을 상기시킬 수 있습니다.
 

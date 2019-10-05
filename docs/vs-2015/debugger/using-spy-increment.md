@@ -1,27 +1,22 @@
 ---
 title: Spy + +를 사용 하 여 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Using Spy++
 ms.assetid: 02769bfa-5679-4ee2-8c6b-27876edb4e8c
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 205c99d4278c1421a98373f22374add81d0f9ac7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3e12ebef8d6c06c6c5c3c227c5534488970d78ad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183966"
 ---
 # <a name="using-spy"></a>Spy++ 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,6 +51,3 @@ Spy + + (SPYXX 합니다. EXE)는 시스템의 프로세스, 스레드, 창 및 
   
  [Spy++ 참조](../debugger/spy-increment-reference.md)  
  각 Spy + + 메뉴 및 대화 상자를 설명 하는 섹션을 포함 합니다.
-
-
-

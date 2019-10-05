@@ -2,16 +2,16 @@
 title: Mac용 Visual Studio의 문제 보고
 description: Mac용 Visual Studio를 사용하는 동안 경험한 제안 사항을 만들거나 문제를 보고하는 방법
 ms.topic: troubleshooting
-author: jmatthiesen
-ms.author: jomatthi
-ms.date: 11/16/2018
+author: therealjohn
+ms.author: johmil
+ms.date: 06/18/2019
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
-ms.openlocfilehash: 510bdac23b29289687441b8a82620a1cede7542b
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 2b5fd2fd115c4461659ba1b4f211e645367851d2
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948831"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691223"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>Mac용 Visual Studio에서 문제를 보고하는 방법
 
@@ -43,9 +43,6 @@ Mac용 Visual Studio와 관련된 문제를 보고하려면 메뉴 모음에서 
 
 1. 발생한 문제를 찾을 수 없는 경우 화면 옆에 있는 **새 문제 보고**를 선택합니다.
 
-   > [!NOTE]
-   > **새 문제 보고** 단추는 개발자 커뮤니티에 대한 Mac용 Visual Studio 인터페이스에만 표시됩니다. [개발자 커뮤니티](https://developercommunity.visualstudio.com/) 웹 사이트에서 직접 문제를 보고할 수 없습니다.
-
 1. 올바른 Mac용 Visual Studio 팀에게 전달될 수 있도록 문제에 대한 설명이 포함된 제목을 입력합니다.
 
 1. 추가 세부 정보와 문제를 재현을 위한 단계(가능한 경우)를 제공합니다.
@@ -58,7 +55,7 @@ Mac용 Visual Studio와 관련된 문제를 보고하려면 메뉴 모음에서 
 
 1. **제출**을 선택하여 이미지 및 로그 파일과 함께 보고서를 보냅니다.
 
-   수집되는 데이터에 대한 자세한 내용은 [수집한 데이터](/visualstudio/ide/developer-community-privacy.md#data-we-collect)를 참조하세요.
+   수집되는 데이터에 대한 자세한 내용은 [수집한 데이터](/visualstudio/ide/developer-community-privacy#data-we-collect)를 참조하세요.
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>솔루션 검색 또는 피드백 제공
 

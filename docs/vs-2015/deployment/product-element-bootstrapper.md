@@ -1,14 +1,9 @@
 ---
 title: '&lt;제품&gt; 요소 (부트스트래퍼) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: 52b414af-ec80-4d2f-ad14-902543cd268e
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 4a8f210ffcd327d8d5d6d3e456b3b9588ef72ffe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c3c1304a0ff93c58add65f20aa417bb547f5bb31
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200651"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;제품&gt; 요소 (부트스트래퍼)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -148,7 +143,7 @@ ProductCode
 ## <a name="elements-and-attributes"></a>요소 및 특성  
  `Product` 요소는 제품 파일에 필요 합니다. 다음 특성이 있습니다.  
   
-|특성|설명|  
+|특성|Description|  
 |---------------|-----------------|  
 |`ProductCode`|제품에 대 한 고유 식별자입니다.|  
   
@@ -259,6 +254,3 @@ ProductCode
   
 ## <a name="see-also"></a>참고 항목  
  [제품 및 패키지 스키마 참조](../deployment/product-and-package-schema-reference.md)
-
-
-

@@ -10,15 +10,13 @@ helpviewer_keywords:
 ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 59a71b57c76fbb0650824efb29afe585c62162f9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: dfcbac0bb9188826804ba13884f0f57962dddeab
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979330"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>방법: 네트워크 어댑터에 테스트 컨트롤러 또는 테스트 에이전트 바인딩
 
@@ -37,19 +35,19 @@ ms.locfileid: "53065949"
 
 ### <a name="to-obtain-the-ip-addresses-of-the-network-adapters"></a>네트워크 어댑터의 IP 주소를 가져오려면
 
-1.  Microsoft Windows에서 **시작**을 선택하고 **검색 시작** 상자를 선택한 다음, **cmd**를 입력하고 **Enter** 키를 선택합니다.
+1. Microsoft Windows에서 **시작**을 선택하고 **검색 시작** 상자를 선택한 다음, **cmd**를 입력하고 **Enter** 키를 선택합니다.
 
-2.  **ipconfig /all**을 입력합니다.
+2. **ipconfig /all**을 입력합니다.
 
      네트워크 어댑터의 IP 주소가 표시됩니다. 컨트롤러를 바인딩할 네트워크 어댑터의 IP 주소를 기록해 둡니다.
 
 ### <a name="to-bind-a-network-adapter-to-a-test-controller"></a>네트워크 어댑터를 테스트 컨트롤러에 바인딩하려면
 
-1.  Microsoft Windows에서 **시작**을 선택하고 **검색 시작** 상자를 선택한 다음, **services.msc**를 입력하고 **Enter** 키를 선택합니다.
+1. Microsoft Windows에서 **시작**을 선택하고 **검색 시작** 상자를 선택한 다음, **services.msc**를 입력하고 **Enter** 키를 선택합니다.
 
      **서비스** 대화 상자가 표시됩니다.
 
-2.  결과 창의 **이름** 열에서 **Visual Studio Test Controller** 서비스를 마우스 오른쪽 단추로 클릭하고 **중지**를 선택합니다.
+2. 결과 창의 **이름** 열에서 **Visual Studio Test Controller** 서비스를 마우스 오른쪽 단추로 클릭하고 **중지**를 선택합니다.
 
      또는
 
@@ -57,9 +55,9 @@ ms.locfileid: "53065949"
 
      `net stop vsttcontroller`
 
-3.  *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE*에 있는 *QTCcontroller.exe.config* XML 구성 파일을 엽니다.
+3. *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE*에 있는 *QTCcontroller.exe.config* XML 구성 파일을 엽니다.
 
-4.  `<appSettings>` 태그를 찾습니다.
+4. `<appSettings>` 태그를 찾습니다.
 
     ```xml
     <appSettings>
@@ -73,14 +71,14 @@ ms.locfileid: "53065949"
     </appSettings>
     ```
 
-5.  `BindTo` 키를 추가하여 `<appSettings>` 섹션에서 사용할 네트워크 어댑터를 지정합니다.
+5. `BindTo` 키를 추가하여 `<appSettings>` 섹션에서 사용할 네트워크 어댑터를 지정합니다.
 
     ```xml
             <add key="BindTo" value="<YOUR IP ADDRESS>"/>
     </appSettings>
     ```
 
-6.  테스트 컨트롤러 서비스를 시작합니다. 이렇게 하려면 명령 프롬프트에서 다음 명령을 실행합니다.
+6. 테스트 컨트롤러 서비스를 시작합니다. 이렇게 하려면 명령 프롬프트에서 다음 명령을 실행합니다.
 
     `net start vsttcontroller`
 
@@ -91,11 +89,11 @@ ms.locfileid: "53065949"
 
 ### <a name="to-bind-a-network-interface-card-to-a-test-agent"></a>네트워크 인터페이스 카드를 테스트 에이전트에 바인딩하려면
 
-1.  Microsoft Windows에서 **시작**을 선택하고 **검색 시작** 상자를 선택한 다음, **services.msc**를 입력하고 **Enter** 키를 선택합니다.
+1. Microsoft Windows에서 **시작**을 선택하고 **검색 시작** 상자를 선택한 다음, **services.msc**를 입력하고 **Enter** 키를 선택합니다.
 
     **서비스** 대화 상자가 표시됩니다.
 
-2.  결과 창의 **이름** 열에서 **Visual Studio 테스트 에이전트** 서비스를 마우스 오른쪽 단추로 클릭하고 **중지**를 선택합니다.
+2. 결과 창의 **이름** 열에서 **Visual Studio 테스트 에이전트** 서비스를 마우스 오른쪽 단추로 클릭하고 **중지**를 선택합니다.
 
      또는
 
@@ -103,9 +101,9 @@ ms.locfileid: "53065949"
 
      **net stop vsttagent**
 
-3.  *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE*에 있는 *QTAgentService.exe.config* XML 구성 파일을 엽니다.
+3. *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE*에 있는 *QTAgentService.exe.config* XML 구성 파일을 엽니다.
 
-4.  `<appSettings>` 태그를 찾습니다.
+4. `<appSettings>` 태그를 찾습니다.
 
     ```xml
     <appSettings>
@@ -119,14 +117,14 @@ ms.locfileid: "53065949"
     </appSettings>  </appSettings>
     ```
 
-5.  `BindTo` 키를 추가하여 `<appSettings>` 섹션에서 사용할 네트워크 어댑터를 지정합니다.
+5. `BindTo` 키를 추가하여 `<appSettings>` 섹션에서 사용할 네트워크 어댑터를 지정합니다.
 
     ```xml
             <add key="BindTo" value="<YOUR IP ADDRESS>"/>
     </appSettings>
     ```
 
-6.  테스트 에이전트 서비스를 시작합니다. 이렇게 하려면 명령 프롬프트에서 다음 명령을 실행합니다.
+6. 테스트 에이전트 서비스를 시작합니다. 이렇게 하려면 명령 프롬프트에서 다음 명령을 실행합니다.
 
     `net start vsttagent`
 
@@ -135,5 +133,4 @@ ms.locfileid: "53065949"
 - [테스트 에이전트 설치 및 구성](../test/lab-management/install-configure-test-agents.md)
 - [부하 테스트 로깅 설정 수정](../test/modify-load-test-logging-settings.md)
 - [테스트 컨트롤러 및 테스트 에이전트 포트 구성](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [방법: 로그 파일의 최대 크기 지정](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [방법: 테스트 컨트롤러 및 테스트 에이전트의 시간 제한 기간 지정](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

@@ -32,19 +32,17 @@ helpviewer_keywords:
 ms.assetid: d56f12cb-e139-4fec-b3e4-488383356642
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b9f2202c96799fcc2e258e79f050d15fb474d0aa
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: MTE95
+ms.openlocfilehash: 3032c73d92f69e6380427bfc675ee263a3eb013f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305509"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714477"
 ---
-# <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Windows Communication Foundation 서비스 및 Visual Studio의 WCF Data Services
+# <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Windows Communication Foundation 서비스 및 Visual Studio의 WCF.NET 데이터 서비스
 
 Visual Studio Windows Communication Foundation (WCF) 및 WCF Data Services, 분산된 응용 프로그램을 만들기 위한 Microsoft 기술 사용 하기 위한 도구를 제공 합니다. 이 항목에서는 Visual Studio의 관점에서 서비스를 소개 합니다. 전체 설명서를 참조 하세요 [WCF Data Services 4.5](/dotnet/framework/data/wcf/index)합니다.
 
@@ -58,7 +56,7 @@ WCF Data Services는 표준 OData (개방형 데이터) 프로토콜의 구현�
 
 ### <a name="wcf-programming-model"></a>WCF 프로그래밍 모델
 
-WCF 프로그래밍 모델을 기반으로 두 엔터티 간의 통신: WCF 서비스와 WCF 클라이언트입니다. 프로그래밍 모델에 캡슐화 되는 <xref:System.ServiceModel> .NET Framework의 네임 스페이스입니다.
+WCF 프로그래밍 모델을 기반으로 두 엔터티 간의 통신: WCF 서비스와 WCF 클라이언트입니다. 프로그래밍 모델에 캡슐화 되는 <xref:System.ServiceModel> .net에서 네임 스페이스입니다.
 
 ### <a name="wcf-service"></a>WCF 서비스
 
@@ -93,7 +91,7 @@ WCF 클라이언트를 만든 후 서비스에서에서 참조 코드는 다른 
 
 ## <a name="wcf-tools-in-visual-studio"></a>Visual Studio의 WCF 도구
 
-Visual Studio는 WCF 서비스와 WCF 클라이언트를 만들 수 있도록 도구를 제공 합니다. 도구를 보여 주는 연습을 참조 하세요 [연습: Windows Forms에서 간단한 WCF 서비스 만들기](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)합니다.
+Visual Studio는 WCF 서비스와 WCF 클라이언트를 만들 수 있도록 도구를 제공 합니다. 도구를 보여 주는 연습을 참조 하세요. [연습: Windows Forms에서 간단한 WCF 서비스 만들기](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)합니다.
 
 ### <a name="create-and-test-wcf-services"></a>만들기 및 WCF 서비스 테스트
 
@@ -141,9 +139,9 @@ Visual Studio를 자동으로 프록시 및 서비스를 사용 하 여 추가 �
 
 ### <a name="to-select-a-service-endpoint"></a>서비스 끝점을 선택 합니다.
 
-1.  프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 여 WCF 서비스에 대 한 참조를 추가 **솔루션 탐색기** 선택 하 고 **서비스 참조 추가**합니다.
+1. 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 여 WCF 서비스에 대 한 참조를 추가 **솔루션 탐색기** 선택 하 고 **서비스 참조 추가**합니다.
 
-2.  코드 편집기에서 서비스 참조에 대 한 생성자를 추가 합니다.
+2. 코드 편집기에서 서비스 참조에 대 한 생성자를 추가 합니다.
 
     ```vb
     Dim proxy As New ServiceReference.Service1Client(
@@ -156,24 +154,24 @@ Visual Studio를 자동으로 프록시 및 서비스를 사용 하 여 추가 �
     > [!NOTE]
     > 바꿉니다 *ServiceReference* 바꾸고 서비스 참조에 대 한 네임 스페이스를 사용 하 여 *Service1Client* 서비스의 이름입니다.
 
-3.  IntelliSense 목록에는 생성자 오버 로드를 포함 하는 표시 합니다. 선택 된 `endpointConfigurationName As String` 오버 로드 합니다.
+3. IntelliSense 목록에는 생성자 오버 로드를 포함 하는 표시 합니다. 선택 된 `endpointConfigurationName As String` 오버 로드 합니다.
 
-4.  입력 한 다음 오버 로드 `=` *ConfigurationName*여기서 *ConfigurationName* 사용 하려는 끝점의 이름입니다.
+4. 입력 한 다음 오버 로드 `=` *ConfigurationName*여기서 *ConfigurationName* 사용 하려는 끝점의 이름입니다.
 
     > [!NOTE]
     > 사용 가능한 끝점의 이름을 모르는 경우에 찾을 수 있습니다 합니다 *app.config* 파일입니다.
 
 ### <a name="to-find-the-available-endpoints-for-a-wcf-service"></a>WCF 서비스에 대 한 사용 가능한 끝점을 찾으려면
 
-1.  **솔루션 탐색기**를 마우스 오른쪽 단추로 클릭 합니다 **app.config** 서비스 참조를 포함 하는 프로젝트에 대 한 파일을 클릭 **열기**합니다. 코드 편집기에 나타납니다.
+1. **솔루션 탐색기**를 마우스 오른쪽 단추로 클릭 합니다 **app.config** 서비스 참조를 포함 하는 프로젝트에 대 한 파일을 클릭 **열기**합니다. 코드 편집기에 나타납니다.
 
-2.  검색 된 `<Client>` 파일에 태그 합니다.
+2. 검색 된 `<Client>` 파일에 태그 합니다.
 
-3.  아래에 있는 검색 된 `<Client>` 로 시작 하는 태그에 대 한 태그 `<Endpoint>`합니다.
+3. 아래에 있는 검색 된 `<Client>` 로 시작 하는 태그에 대 한 태그 `<Endpoint>`합니다.
 
      서비스 참조를 여러 끝점을 제공 하는 경우 있습니다 됩니다 두 개 이상의 `<Endpoint` 태그입니다.
 
-4.  내 합니다 `<EndPoint>` 태그를 찾을 수 있습니다를 `name="` *SomeService* `"` 매개 변수 (여기서 *SomeService* 끝점 이름을 나타냅니다). 에 전달 될 수 있는 끝점에 대 한 이름를 `endpointConfigurationName As String` 서비스 참조에 대 한 생성자의 오버 로드 합니다.
+4. 내 합니다 `<EndPoint>` 태그를 찾을 수 있습니다를 `name="` *SomeService* `"` 매개 변수 (여기서 *SomeService* 끝점 이름을 나타냅니다). 에 전달 될 수 있는 끝점에 대 한 이름를 `endpointConfigurationName As String` 서비스 참조에 대 한 생성자의 오버 로드 합니다.
 
 ## <a name="how-to-call-a-service-method-asynchronously"></a>방법: 서비스 메서드를 비동기적으로 호출
 
@@ -188,11 +186,11 @@ Windows Communication Foundation (WCF) 서비스에서 대부분의 메서드는
 
 ### <a name="to-call-a-service-method-asynchronously"></a>서비스 메서드를 비동기적으로 호출 하려면
 
-1.  **솔루션 탐색기**, 서비스 참조를 선택 합니다.
+1. **솔루션 탐색기**, 서비스 참조를 선택 합니다.
 
-2.  에 **프로젝트** 메뉴에서 클릭 **서비스 참조 구성**합니다.
+2. 에 **프로젝트** 메뉴에서 클릭 **서비스 참조 구성**합니다.
 
-3.  에 **서비스 참조 구성** 대화 상자를 선택 합니다 **비동기 작업 생성** 확인란.
+3. 에 **서비스 참조 구성** 대화 상자를 선택 합니다 **비동기 작업 생성** 확인란.
 
 ## <a name="how-to-bind-data-returned-by-a-service"></a>방법: 서비스에서 반환 된 데이터 바인딩
 
@@ -200,57 +198,57 @@ Windows Communication Foundation (WCF) 서비스에서 대부분의 메서드는
 
 ### <a name="to-bind-a-control-to-single-data-field-returned-by-a-wcf-service"></a>WCF 서비스에서 반환 하는 단일 데이터 필드에 컨트롤을 바인딩하려면
 
-1.  **데이터** 메뉴에서 **데이터 소스 표시**를 클릭합니다.
+1. **데이터** 메뉴에서 **데이터 소스 표시**를 클릭합니다.
 
    합니다 **데이터 원본** 창이 나타납니다.
 
-2.  에 **데이터 원본** 창에서 서비스 참조 노드를 확장 합니다. 서비스 표시를 반환한 모든 복합 형식입니다.
+2. 에 **데이터 원본** 창에서 서비스 참조 노드를 확장 합니다. 서비스 표시를 반환한 모든 복합 형식입니다.
 
-3.  형식에 대 한 노드를 확장 합니다. 해당 형식에 대 한 데이터 필드를 표시 합니다.
+3. 형식에 대 한 노드를 확장 합니다. 해당 형식에 대 한 데이터 필드를 표시 합니다.
 
-4.  필드를 선택 하 고 데이터 형식에 사용할 수 있는 컨트롤의 목록을 표시 하려면 드롭다운 화살표를 클릭 합니다.
+4. 필드를 선택 하 고 데이터 형식에 사용할 수 있는 컨트롤의 목록을 표시 하려면 드롭다운 화살표를 클릭 합니다.
 
-5.  바인딩하려는 컨트롤의 유형을 클릭 합니다.
+5. 바인딩하려는 컨트롤의 유형을 클릭 합니다.
 
-6.  필드를 폼으로 끌어 옵니다. 와 함께 폼에 컨트롤이 추가 되는 <xref:System.Windows.Forms.BindingSource> 구성 요소 및 <xref:System.Windows.Forms.BindingNavigator> 구성 요소입니다.
+6. 필드를 폼으로 끌어 옵니다. 와 함께 폼에 컨트롤이 추가 되는 <xref:System.Windows.Forms.BindingSource> 구성 요소 및 <xref:System.Windows.Forms.BindingNavigator> 구성 요소입니다.
 
-7.  4 단계를 반복 하 여 다른 6 있는 필드가 있지만 바인딩하려 합니다.
+7. 4 단계를 반복 하 여 다른 6 있는 필드가 있지만 바인딩하려 합니다.
 
 ### <a name="to-bind-a-control-to-composite-type-returned-by-a-wcf-service"></a>WCF 서비스에서 반환 하는 복합 형식으로 컨트롤을 바인딩하려면
 
-1.  에 **데이터** 메뉴에서 **데이터 소스 표시**합니다. 합니다 **데이터 원본** 창이 나타납니다.
+1. 에 **데이터** 메뉴에서 **데이터 소스 표시**합니다. 합니다 **데이터 원본** 창이 나타납니다.
 
-2.  에 **데이터 원본** 창에서 서비스 참조 노드를 확장 합니다. 서비스 표시를 반환한 모든 복합 형식입니다.
+2. 에 **데이터 원본** 창에서 서비스 참조 노드를 확장 합니다. 서비스 표시를 반환한 모든 복합 형식입니다.
 
-3.  형식에 대 한 노드를 선택 하 고 사용 가능한 옵션 목록을 표시 하려면 드롭다운 화살표를 클릭 합니다.
+3. 형식에 대 한 노드를 선택 하 고 사용 가능한 옵션 목록을 표시 하려면 드롭다운 화살표를 클릭 합니다.
 
-4.  중 하나를 클릭 **DataGridView** 표에 데이터를 표시할 또는 **세부 정보** 개별 컨트롤에 데이터를 표시 합니다.
+4. 중 하나를 클릭 **DataGridView** 표에 데이터를 표시할 또는 **세부 정보** 개별 컨트롤에 데이터를 표시 합니다.
 
-5.  노드를 폼으로 끌어 옵니다. 와 함께 폼에 컨트롤을 추가 된 <xref:System.Windows.Forms.BindingSource> 구성 요소 및 <xref:System.Windows.Forms.BindingNavigator> 구성 요소입니다.
+5. 노드를 폼으로 끌어 옵니다. 와 함께 폼에 컨트롤을 추가 된 <xref:System.Windows.Forms.BindingSource> 구성 요소 및 <xref:System.Windows.Forms.BindingNavigator> 구성 요소입니다.
 
 ## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>방법: 기존 형식 다시 사용 하려면 서비스 구성
 
-서비스 참조를 프로젝트에 추가 되 면 서비스에 정의 된 모든 형식은 로컬 프로젝트에서 생성 됩니다. 대부분의 경우 서비스에는 일반적인.NET Framework 형식을 사용 하는 경우 또는 형식 공유 라이브러리에 정의 된 경우 중복 된 형식이 만들어집니다.
+서비스 참조를 프로젝트에 추가 되 면 서비스에 정의 된 모든 형식은 로컬 프로젝트에서 생성 됩니다. 대부분의 경우 서비스에는 일반적인.NET 형식에서 사용 하는 경우 또는 형식 공유 라이브러리에 정의 된 경우 중복 된 형식이 만들어집니다.
 
 이 문제를 방지 하려면 참조 된 어셈블리의 형식에에서는 기본적으로 공유 됩니다. 하나 이상의 어셈블리에 대해 형식 공유를 사용 하지 않도록 설정 하려는 경우 가능 하므로 합니다 **서비스 참조 구성** 대화 상자.
 
 ### <a name="to-disable-type-sharing-in-a-single-assembly"></a>단일 어셈블리의 형식 공유를 사용 하지 않도록 설정
 
-1.  **솔루션 탐색기**, 서비스 참조를 선택 합니다.
+1. **솔루션 탐색기**, 서비스 참조를 선택 합니다.
 
-2.  에 **프로젝트** 메뉴에서 클릭 **서비스 참조 구성**합니다.
+2. 에 **프로젝트** 메뉴에서 클릭 **서비스 참조 구성**합니다.
 
-3.  에 **서비스 참조 구성** 대화 상자에서 **지정된 된 어셈블리의 형식 재사용**합니다.
+3. 에 **서비스 참조 구성** 대화 상자에서 **지정된 된 어셈블리의 형식 재사용**합니다.
 
-4.  형식 공유를 사용 하도록 설정 하려는 각 어셈블리에 대 한 확인란을 선택 합니다. 어셈블리에 대해 형식 공유를 사용 하지 않으려면 확인란의 선택을 취소를 둡니다.
+4. 형식 공유를 사용 하도록 설정 하려는 각 어셈블리에 대 한 확인란을 선택 합니다. 어셈블리에 대해 형식 공유를 사용 하지 않으려면 확인란의 선택을 취소를 둡니다.
 
 ### <a name="to-disable-type-sharing-in-all-assemblies"></a>모든 어셈블리의 형식 공유를 사용 하지 않도록 설정
 
-1.  **솔루션 탐색기**, 서비스 참조를 선택 합니다.
+1. **솔루션 탐색기**, 서비스 참조를 선택 합니다.
 
-2.  에 **프로젝트** 메뉴에서 클릭 **서비스 참조 구성**합니다.
+2. 에 **프로젝트** 메뉴에서 클릭 **서비스 참조 구성**합니다.
 
-3.  에 **서비스 참조 구성** 대화 상자, 일반 합니다 **참조 된 어셈블리의 형식 재사용** 확인란 합니다.
+3. 에 **서비스 참조 구성** 대화 상자, 일반 합니다 **참조 된 어셈블리의 형식 재사용** 확인란 합니다.
 
 ## <a name="related-topics"></a>관련 항목
 
@@ -262,7 +260,7 @@ Windows Communication Foundation (WCF) 서비스에서 대부분의 메서드는
 | | [방법: WCF 데이터 서비스 참조 추가, 업데이트 또는 제거](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md) |
 | [서비스 참조 문제 해결](../data-tools/troubleshooting-service-references.md) | 서비스 참조 및 방지 하는 방법을 사용 하 여 발생할 수 있는 몇 가지 일반적인 오류를 표시 합니다. |
 | [WCF 서비스 디버그](../debugger/debugging-wcf-services.md) | 일반적인 디버깅 문제와 WCF 서비스를 디버깅할 때 발생할 수 있는 기술에 설명 합니다. |
-| [연습: N 계층 데이터 애플리케이션 만들기](../data-tools/walkthrough-creating-an-n-tier-data-application.md) | 형식화된 데이터 집합을 만들고 TableAdapter 및 데이터 집합 코드를 여러 프로젝트로 분리하는 단계별 지침을 제공합니다. |
+| [연습: N 계층 데이터 애플리케이션 만들기](../data-tools/walkthrough-creating-an-n-tier-data-application.md) | 형식화된 데이터 세트을 만들고 TableAdapter 및 데이터 세트 코드를 여러 프로젝트로 분리하는 단계별 지침을 제공합니다. |
 | [서비스 참조 구성 대화 상자](../data-tools/configure-service-reference-dialog-box.md) | 사용자 인터페이스 요소에 설명 합니다 **서비스 참조 구성** 대화 상자. |
 
 ## <a name="reference"></a>참조
@@ -270,6 +268,6 @@ Windows Communication Foundation (WCF) 서비스에서 대부분의 메서드는
 - <xref:System.ServiceModel>
 - <xref:System.Data.Services>
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [.NET용 Visual Studio 데이터 도구](../data-tools/visual-studio-data-tools-for-dotnet.md)

@@ -1,23 +1,21 @@
 ---
 title: IPython REPL(대화형 창)
 description: IPython 모드의 Visual Studio 대화형 창은 대화형 병렬 컴퓨팅 기능이 있는, 사용자에게 친숙한 대화형 개발 환경에 사용합니다.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 01/28/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 84e93d06e294ef11cc345eb4c443845421a8f834
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8b4510ed738fdd2b33389ab4242dbde86cffff8c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957746"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>대화형 창에서 IPython 사용
 
@@ -43,7 +41,7 @@ IPython 모드의 Visual Studio **대화형** 창은 사용자에게 친숙한 �
    ```python
    import matplotlib.pyplot as plt
    import numpy as np
-  
+
    x = np.linspace(0, 5, 10)
    y = x ** 2
    plt.plot(x, y, 'r', x, x ** 3, 'g', x, x ** 4, 'b')

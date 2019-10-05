@@ -2,7 +2,6 @@
 title: IEnumDebugCodeContexts::Clone | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ae10efb0f3429d0355b270be69d073876ca1b74
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a08c65a7be5ed0b6394ef5e0aab284a03a52a240
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951446"
 ---
 # <a name="ienumdebugcodecontextsclone"></a>IEnumDebugCodeContexts::Clone
 현재 열거자와 동일한 상태를 포함 하는 열거자를 만듭니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT Clone(  
    IEnumDebugCodeContexts**  ppescc  
 );  

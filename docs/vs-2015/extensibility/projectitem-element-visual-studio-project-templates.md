@@ -1,14 +1,9 @@
 ---
 title: ProjectItem 요소 (Visual Studio 프로젝트 템플릿) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bca26cba66169758aa882535c07846cfa451d172
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 84fb371460bc697660e176ca9df4c984d2b234bf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438366"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem 요소(Visual Studio 프로젝트 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,12 +26,12 @@ ms.locfileid: "51737076"
 프로젝트 템플릿에 포함 된 파일을 지정 합니다.  
   
 > [!NOTE]
->  `ProjectItem` 요소는 프로젝트 또는 항목에 대 한 템플릿을 인지에 따라 다른 특성을 허용 합니다. 이 항목에 설명 합니다 `ProjectItem` 프로젝트 템플릿에 대 한 요소입니다. 에 대 한 설명은 합니다 `ProjectItem` 항목 템플릿에 대 한 요소 참조 [ProjectItem 요소 (Visual Studio 항목 템플릿)](../extensibility/projectitem-element-visual-studio-item-templates.md)합니다.  
+> `ProjectItem` 요소는 프로젝트 또는 항목에 대 한 템플릿을 인지에 따라 다른 특성을 허용 합니다. 이 항목에 설명 합니다 `ProjectItem` 프로젝트 템플릿에 대 한 요소입니다. 에 대 한 설명은 합니다 `ProjectItem` 항목 템플릿에 대 한 요소 참조 [ProjectItem 요소 (Visual Studio 항목 템플릿)](../extensibility/projectitem-element-visual-studio-item-templates.md)합니다.  
   
  \<VSTemplate>  
- \<TemplateContent >  
+ \<TemplateContent>  
  \<Project>  
- \<ProjectItem >  
+ \<ProjectItem>  
   
 ## <a name="syntax"></a>구문  
   
@@ -95,21 +90,21 @@ ms.locfileid: "51737076"
   
 ### <a name="to-rename-files-with-parameters"></a>매개 변수를 사용 하 여 파일 이름을 바꾸려면  
   
-1.  .Vstemplate 파일에 다음 XML을 사용 합니다.  
+1. .Vstemplate 파일에 다음 XML을 사용 합니다.  
   
     ```  
     <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>  
     ```  
   
-2.  프로젝트 파일을 엽니다 (.vbproj에는 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 프로젝트) 텍스트 편집기에서 또는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다.  
+2. 프로젝트 파일을 엽니다 (.vbproj에는 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 프로젝트) 텍스트 편집기에서 또는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다.  
   
-3.  다음 XML과 유사한 프로젝트 파일의 줄을 찾습니다.  
+3. 다음 XML과 유사한 프로젝트 파일의 줄을 찾습니다.  
   
     ```  
     <Compile Include="MyFile.vb">  
     ```  
   
-4.  다음 XML 코드 줄을 바꿉니다.  
+4. 다음 XML 코드 줄을 바꿉니다.  
   
     ```  
     <Compile Include="$safeprojectname$.vb">  
@@ -149,4 +144,3 @@ ms.locfileid: "51737076"
  [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)   
  [템플릿 매개 변수](../ide/template-parameters.md)   
  [ProjectItem 요소(Visual Studio 항목 템플릿)](../extensibility/projectitem-element-visual-studio-item-templates.md)
-

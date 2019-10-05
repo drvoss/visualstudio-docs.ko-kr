@@ -1,28 +1,23 @@
 ---
 title: 레거시 API를 사용 하 여 텍스트 보기에 액세스 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text view
 ms.assetid: 8f751f72-c972-4be3-84ee-19c281e02e25
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 83204584f786edf0784878aeaad90eb309aa321a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8f9396e4523e38e7313efb5668c4680f551558ab
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184939"
 ---
-# <a name="accessing-thetext-view-by-using-the-legacy-api"></a>레거시 API를 사용 하 여 텍스트 보기에 액세스
+# <a name="accessing-thetext-view-by-using-the-legacy-api"></a>레거시 API를 사용하여 텍스트 보기에 액세스
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 텍스트 뷰는 텍스트 버퍼에 저장 되는 텍스트를 표시 합니다. 다음 섹션에 나와 있는 것 처럼 기존 API를 사용 하 여 텍스트 보기에 액세스할 수 있습니다.  
@@ -44,7 +39,6 @@ ms.locfileid: "51758135"
   
  텍스트 보기에 대 한 이벤트 알림을 사용 하 여 제공 되는 `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents` 인터페이스입니다. 텍스트 뷰 변경 알림을 수신 하려면 클라이언트 개체에서이 인터페이스를 구현 합니다. 사용 하 여 텍스트 보기에이 인터페이스를 노출 합니다 <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> 보기에서 변경 알림을 수신 하도록 텍스트 보기에는 인터페이스입니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [레거시 API를 사용 하 여 보기 설정 변경](../extensibility/changing-view-settings-by-using-the-legacy-api.md)   
  [텍스트 관리자를 사용하여 글로벌 설정 모니터링](../extensibility/using-the-text-manager-to-monitor-global-settings.md)
-

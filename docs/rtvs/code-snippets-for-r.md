@@ -2,20 +2,18 @@
 title: R에 대한 코드 조각
 description: Visual Studio의 R용 코드 조각은 임의 길이의 코드 블록을 빠르게 삽입하여 비슷한 코드를 반복해서 다시 입력하지 않도록 도와주는 바로 가기를 제공합니다.
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 0c9db243b3903ddcbaa310bbf5ba3fd911eee7fc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 05a21da94dd643b04cea94b7840ca26d9379cb5a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35667732"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969456"
 ---
 # <a name="code-snippets"></a>코드 조각
 
@@ -38,7 +36,7 @@ Visual Studio의 코드 조각은 임의 길이의 코드 블록을 빠르게 �
 
 ![R에 대한 코드 조각 대화 상자](media/code-snippet-dialog.png)
 
-사용자 지정 코드 조각을 만들려면 [연습: 코드 조각 만들기](../ide/walkthrough-creating-a-code-snippet.md)의 지침을 따릅니다. 결국 코드 조각은 XML 파일입니다. 예를 들어 다음 코드는 파이프 연산에 대한 코드 조각입니다(바로 가기 `>`).
+사용자 지정 코드 조각을 만들려면 [연습: 코드 조각 만들기](../ide/walkthrough-creating-a-code-snippet.md)를 참조하세요. 결국 코드 조각은 XML 파일입니다. 예를 들어 다음 코드는 파이프 연산에 대한 코드 조각입니다(바로 가기 `>`).
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

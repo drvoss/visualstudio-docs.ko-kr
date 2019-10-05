@@ -1,14 +1,9 @@
 ---
 title: MSBuild 참조 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -20,18 +15,17 @@ ms.assetid: 093395e1-70da-4f74-b34d-046c5e2b32e8
 caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b99a082355742ad81ee2ac2e7280a17cfd233a2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8dfa8314ffe8f174422519ba549d9949cc36b764
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292307"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683009"
 ---
 # <a name="msbuild-reference"></a>MSBuild 참조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]용 빌드 시스템입니다. 다음 링크를 통해 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 참조 정보가 포함된 항목으로 이동할 수 있습니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
@@ -78,7 +72,7 @@ ms.locfileid: "49292307"
  올바르게 해석하려면 "이스케이프"해야 하는 문자의 목록을 제공합니다. 이스케이프 시퀀스는 뒤에 오는 내용이 대체 해석임을 나타내는 일련의 문자입니다.  
   
 ## <a name="related-sections"></a>관련 단원  
- [MSBuild 개요](http://msdn.microsoft.com/en-us/e39f13f7-1e1d-4435-95ca-0c222bca071c) 소개 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 하 고 프로젝트를 빌드하는 데 사용할 방법에 설명 하는 항목에 대 한 링크를 제공 합니다.  
+ [MSBuild 개요](https://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c) [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]를 소개하고 프로젝트를 빌드하는 데 사용하는 방법을 설명하는 항목에 대한 링크를 제공합니다.  
   
  <xref:Microsoft.Build.Conversion>  
  변환 네임스페이스 참조를 포함합니다.  
@@ -100,6 +94,3 @@ ms.locfileid: "49292307"
   
  <xref:Microsoft.Build.Utilities>  
  유틸리티 네임스페이스 참조를 포함합니다.
-
-
-

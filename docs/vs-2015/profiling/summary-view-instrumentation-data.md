@@ -1,27 +1,22 @@
 ---
 title: 요약 뷰 - 계측 데이터 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Summary view
 ms.assetid: 0a3b3a1f-e22b-4ac8-b46e-71694e9b2cf1
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 73883b29dfd98e9ad5955505fa8840db815ec218
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5dc0b4195d33a7bf72d17681b6d71e78f1bacfe5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157771"
 ---
 # <a name="summary-view---instrumentation-data"></a>요약 뷰 - 계측 데이터
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +24,7 @@ ms.locfileid: "51725005"
 요약 뷰에는 프로파일링 실행에서 성능상 가장 많은 비용이 소요된 함수에 대한 정보가 표시됩니다. 알림 링크 및 보고서 목록에 대한 설명을 비롯한 자세한 내용은 [요약 뷰](../profiling/summary-view.md)를 참조하세요.  
   
 ## <a name="timeline-graph"></a>시간 표시 막대 그래프  
- 요약 뷰의 시간 표시 막대 그래프에는 프로파일링이 수행된 시간 동안 프로파일링된 응용 프로그램의 프로세서(CPU) 사용률이 표시됩니다. 시간 표시 막대 그래프를 사용하여 보기를 선택한 시간 범위로 필터링할 수 있습니다. 자세한 내용은 [방법: 요약 시간 표시 막대에서 보고서 뷰 필터링](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)을 참조하세요.  
+ 요약 뷰의 시간 표시 막대 그래프에는 프로파일링이 수행된 시간 동안 프로파일링된 애플리케이션의 프로세서(CPU) 사용률이 표시됩니다. 시간 표시 막대 그래프를 사용하여 보기를 선택한 시간 범위로 필터링할 수 있습니다. 자세한 내용은 [방법: 요약 시간 표시 막대에서 보고서 뷰 필터링](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)을 참조하세요.  
   
 ## <a name="hot-path"></a>실행 부하 과다 경로  
  **실행 부하 과다 경로**에는 시간이 가장 많이 소요된 실행 경로가 표시됩니다. 함수를 클릭하면 해당 함수의 함수 정보 뷰를 표시할 수 있습니다. 함수에 대해 다른 뷰를 표시하려면 함수를 마우스 오른쪽 단추로 클릭하고 목록에서 뷰를 클릭합니다.  
@@ -55,6 +50,3 @@ ms.locfileid: "51725005"
 ## <a name="see-also"></a>참고 항목  
  [요약 뷰](../profiling/summary-view-sampling-data.md)   
  [요약 뷰](../profiling/summary-view-dotnet-memory-data.md)
-
-
-

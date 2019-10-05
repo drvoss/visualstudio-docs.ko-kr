@@ -2,7 +2,6 @@
 title: IRemoteDebugApplicationThread::GetSystemThreadId | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0082382c5a9d6dc854ed1b7bc9f45b17041b8084
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9d5119db4108ef7fa0783bccc3f747fbd2ed26d0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788211"
 ---
 # <a name="iremotedebugapplicationthreadgetsystemthreadid"></a>IRemoteDebugApplicationThread::GetSystemThreadId
 스레드와 연결 된 운영 체제-종속 식별자를 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetSystemThreadId(  
    DWORD*  dwThreadId  
 );  
@@ -48,7 +47,7 @@ HRESULT GetSystemThreadId(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 값 `dwThreadId` 컴퓨터 전체에서 고유 해야 하는 필요 하지 않습니다.  
+ 변수의 `dwThreadId` 머신에서 고유할 필요가 없습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IRemoteDebugApplicationThread 인터페이스](../../winscript/reference/iremotedebugapplicationthread-interface.md)

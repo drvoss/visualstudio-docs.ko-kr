@@ -7,16 +7,15 @@ helpviewer_keywords:
 - Domain-Specific Language, validation
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: f228d1cf68357711d106b9399477badce350f558
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: fcc35f74625b17762656451e598d131dfe85417e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385846"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>도메인별 언어에서 유효성 검사
 DSL(Domain-Specific Language) 작성자는 사용자가 만든 모델이 적절한지를 확인하는 유효성 검사 제약 조건을 정의할 수 있습니다. 예를 들어 DSL에서 여러 세대를 포함하는 가족 구성도 그리기를 허용하는 경우 자녀의 생년월일을 부모의 생년월일 이후로 지정하도록 하는 제약 조건을 작성할 수 있습니다.
@@ -26,7 +25,7 @@ DSL(Domain-Specific Language) 작성자는 사용자가 만든 모델이 적절�
  유효성 검사는 텍스트 템플릿 또는 사용자의 모델을 처리 하는 다른 도구를 작성 하는 경우에 특히 중요 합니다. 유효성 검사를 수행하면 이러한 도구에서 가정하는 사전 조건을 모델이 충족하는지를 확인할 수 있습니다.
 
 > [!WARNING]
->  확장 메뉴 명령 및 제스처 처리기와 함께 DSL에 대한 별도의 확장에서 유효성 검사 제약 조건을 정의하도록 허용할 수도 있습니다. 사용자는 DSL과 함께 이러한 확장을 설치하도록 선택할 수 있습니다. 자세한 내용은 [MEF를 사용 하 여 DSL 확장](../modeling/extend-your-dsl-by-using-mef.md)합니다.
+> 확장 메뉴 명령 및 제스처 처리기와 함께 DSL에 대한 별도의 확장에서 유효성 검사 제약 조건을 정의하도록 허용할 수도 있습니다. 사용자는 DSL과 함께 이러한 확장을 설치하도록 선택할 수 있습니다. 자세한 내용은 [MEF를 사용 하 여 DSL 확장](../modeling/extend-your-dsl-by-using-mef.md)합니다.
 
 ## <a name="running-validation"></a>유효성 검사 실행
  사용자는 모델, 즉 DSL 인스턴스를 편집할 때 다음 작업을 통해 유효성 검사를 실행할 수 있습니다.
@@ -49,19 +48,19 @@ DSL(Domain-Specific Language) 작성자는 사용자가 만든 모델이 적절�
  각 유효성 검사 메서드는 발견되는 오류를 보고합니다.
 
 > [!NOTE]
->  유효성 검사 메서드는 오류를 보고만 하며 모델을 변경하지는 않습니다. 조정 또는 특정 변경을 방지, 참조 하려는 경우 [유효성 검사에 대 한 대안](#alternatives)합니다.
+> 유효성 검사 메서드는 오류를 보고만 하며 모델을 변경하지는 않습니다. 조정 또는 특정 변경을 방지, 참조 하려는 경우 [유효성 검사에 대 한 대안](#alternatives)합니다.
 
 #### <a name="to-define-a-validation-constraint"></a>유효성 검사 제약 조건을 정의하려면
 
 1. 유효성 검사를 사용 하도록 설정 합니다 **Editor\Validation** 노드:
 
-   1.  오픈 **Dsl\DslDefinition.dsl**합니다.
+   1. 오픈 **Dsl\DslDefinition.dsl**합니다.
 
-   2.  DSL 탐색기에서 확장을 **편집기** 노드와 선택 **유효성 검사**합니다.
+   2. DSL 탐색기에서 확장을 **편집기** 노드와 선택 **유효성 검사**합니다.
 
-   3.  속성 창에서 설정 된 **사용 하 여** 속성을 `true`입니다. 이러한 속성을 모두 설정하는 것이 가장 편리합니다.
+   3. 속성 창에서 설정 된 **사용 하 여** 속성을 `true`입니다. 이러한 속성을 모두 설정하는 것이 가장 편리합니다.
 
-   4.  클릭 **모든 템플릿 변형** 에 **솔루션 탐색기** 도구 모음입니다.
+   4. 클릭 **모든 템플릿 변형** 에 **솔루션 탐색기** 도구 모음입니다.
 
 2. 도메인 클래스 또는 도메인 관계 하나 이상에 대해 부분 클래스 정의를 작성합니다. 새 코드 파일에 이러한 정의 작성 합니다 **Dsl** 프로젝트입니다.
 
@@ -71,7 +70,7 @@ DSL(Domain-Specific Language) 작성자는 사용자가 만든 모델이 적절�
    [ValidationState(ValidationState.Enabled)]
    ```
 
-   -   기본적으로 이 특성을 추가하면 파생된 클래스에 대해서도 유효성 검사가 사용하도록 설정됩니다. 특정 파생된 클래스에 대해 유효성 검사를 사용하지 않도록 설정하려는 경우에는 `ValidationState.Disabled`를 사용하면 됩니다.
+   - 기본적으로 이 특성을 추가하면 파생된 클래스에 대해서도 유효성 검사가 사용하도록 설정됩니다. 특정 파생된 클래스에 대해 유효성 검사를 사용하지 않도록 설정하려는 경우에는 `ValidationState.Disabled`를 사용하면 됩니다.
 
 4. 클래스에 유효성 검사 메서드를 추가합니다. 각 유효성 검사 메서드의 이름은 원하는 대로 지정할 수 있지만 <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext>는 하나 포함되어야 합니다.
 
@@ -83,7 +82,7 @@ DSL(Domain-Specific Language) 작성자는 사용자가 만든 모델이 적절�
 
     ValidationCategories는 메서드가 실행되는 시기를 지정합니다.
 
-   예를 들면 다음과 같습니다.
+   예를 들어:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -178,7 +177,7 @@ public partial class Person
 
  그러나 메서드를 결합하면 관리하기가 더 어렵고 모든 제약 조건의 `ValidationCategories`가 같아야 한다는 단점이 있습니다. 그러므로 가능한 경우에는 각 제약 조건을 별도의 메서드에 포함하는 것이 좋습니다.
 
- **컨텍스트 캐시에서 값을 전달 합니다.** 컨텍스트 매개 변수는 임의의 값을 넣을 수 있는 사전이 있습니다. 사전은 유효성 검사 실행 기간 동안 유지됩니다. 예를 들어 특정 유효성 검사 메서드는 컨텍스트에 오류 수를 저장한 다음 반복되는 메시지가 오류 창에 과다하게 표시되는 현상을 방지하는 데 사용할 수 있습니다. 예를 들면 다음과 같습니다.
+ **컨텍스트 캐시에서 값을 전달 합니다.** 컨텍스트 매개 변수는 임의의 값을 넣을 수 있는 사전이 있습니다. 사전은 유효성 검사 실행 기간 동안 유지됩니다. 예를 들어 특정 유효성 검사 메서드는 컨텍스트에 오류 수를 저장한 다음 반복되는 메시지가 오류 창에 과다하게 표시되는 현상을 방지하는 데 사용할 수 있습니다. 예를 들어:
 
 ```csharp
 List<ParentsHaveChildren> erroneousLinks;
@@ -214,7 +213,7 @@ partial class MyLanguageCommandSet
 
  자세한 내용은 [방법: 바로 가기 메뉴에 명령을 추가](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)합니다.
 
- 별도의 유효성 검사 컨트롤러를 만들어 오류를 직접 관리할 수도 있습니다. 예를 들면 다음과 같습니다.
+ 별도의 유효성 검사 컨트롤러를 만들어 오류를 직접 관리할 수도 있습니다. 예를 들어:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -311,7 +310,7 @@ private void TestForCircularLinks(ValidationContext context)
 ```
 
 > [!NOTE]
->  원하는 수의 `[ValidationMethod()]` 특성을 메서드에 접두사로 추가할 수 있습니다. 사용자 지정 범주와 표준 범주 둘 다에 메서드를 추가할 수 있습니다.
+> 원하는 수의 `[ValidationMethod()]` 특성을 메서드에 접두사로 추가할 수 있습니다. 사용자 지정 범주와 표준 범주 둘 다에 메서드를 추가할 수 있습니다.
 
  사용자 지정 유효성 검사를 호출하려면
 

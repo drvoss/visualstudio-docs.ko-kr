@@ -4,22 +4,21 @@ ms.date: 05/16/2018
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a7892e8e0bc347c4a22dd1a2ae2ee4b01882d6c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 12ba03ab97da3295a93b54dfc012d10fc012fd30
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905061"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62423939"
 ---
 # <a name="improve-performance-for-code-maps"></a>코드 맵에 대 한 성능 향상
 
 맵을 처음으로 생성하는 경우 Visual Studio는 검색된 모든 종속성을 인덱싱합니다. 이 프로세스는 특히 대형 솔루션의 경우 다소 시간이 걸릴 수 있습니다 하지만 이후에 성능이 향상 됩니다. 코드가 변경되면 Visual Studio는 업데이트된 코드만 다시 인덱싱합니다. 렌더링을 완료 하는 맵에 걸린 시간을 최소화 하려면 다음 사항을 고려 합니다.
 
-- [원하는 종속성만 매핑합니다.](#create-a-code-map-to-see-specific-dependencies)
+- 원하는 종속성만 매핑합니다.
 
 - 전체 솔루션에 대한 맵을 생성하기 전에 솔루션 범위를 줄입니다.
 

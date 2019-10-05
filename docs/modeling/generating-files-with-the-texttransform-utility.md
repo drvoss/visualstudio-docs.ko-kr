@@ -1,22 +1,21 @@
 ---
 title: TextTransform 유틸리티 사용하여 파일 생성
-ms.date: 03/22/2018
+ms.date: 07/26/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, TextTransform utility
 - TextTransform.exe
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 70a2b45bdaa637a538a71ff67619e2ddacb6c9be
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f224419cd92b760d71045859a13887a83115b987
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870825"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606100"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>TextTransform 유틸리티를 사용 하 여 파일 생성
 
@@ -25,21 +24,37 @@ TextTransform.exe는 텍스트 템플릿을 변환 하는 데 사용할 수 있�
 > [!NOTE]
 > 빌드 프로세스의 일부로 텍스트 변환을 수행 하려는 경우에 MSBuild 텍스트 변환 작업을 사용 하는 것이 좋습니다. 자세한 내용은 [빌드 프로세스에서 코드 생성](../modeling/code-generation-in-a-build-process.md)합니다. Visual Studio가 설치 된 컴퓨터에서 응용 프로그램 또는 텍스트 템플릿을 변형할 수 있는 Visual Studio 확장을 작성할 수 있습니다. 자세한 내용은 [사용자 지정 호스트를 사용 하 여 텍스트 템플릿 처리](../modeling/processing-text-templates-by-using-a-custom-host.md)합니다.
 
- TextTransform.exe은 다음 디렉터리에 있습니다.
+TextTransform.exe은 다음 디렉터리에 있습니다.
+ 
+::: moniker range=">=vs-2019"
 
- **\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE**
+**Filefiles (x86) \Microsoft Visual Studio\2019\Professional\Common7\IDE**
 
 Professional edition의 경우 또는
 
- **\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE**
+**Filefiles (x86) \Microsoft Visual Studio\2019\Enterprise\Common7\IDE**
 
- Enterprise edition.
+Enterprise edition의 경우.
+
+::: moniker-end
+ 
+::: moniker range="vs-2017"
+
+**\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE**
+
+Professional edition의 경우 또는
+
+**\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE**
+
+Enterprise edition의 경우.
 
 Visual Studio의 이전 버전에서는 파일은 다음 위치에 있습니다.
 
 **\Program Files (x86)\Common Files\Microsoft Shared\TextTemplating\{version}**
 
 여기서 {version} 설치 된 이전 버전에 따라 달라 집니다.
+
+::: moniker-end
 
 ## <a name="syntax"></a>구문
 

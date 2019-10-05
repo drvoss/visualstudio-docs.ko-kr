@@ -2,27 +2,25 @@
 title: Visual Studio 자습서 1단계의 Python 프로젝트 만들기
 titleSuffix: ''
 description: 필수 구성 요소 및 새 Python 프로젝트 만들기를 포함하여 Visual Studio의 Python 기능에 대한 핵심 연습의 개요 및 1단계입니다.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 01/28/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1aaf0c0258d502693b771cad66f9347dd60f80e8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ed4fdbfe7090a66d955461f2c3a394f6fb661c5a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049855"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430746"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>자습서: Visual Studio에서 Python 작업
 
-Python은 안정적이고 유연하며 배우기 쉬울뿐만 아니라 모든 운영 체제에서 무료로 사용할 수 있으며, 유용한 개발자 커뮤니티와 다양한 무료 라이브러리에서 지원되며 널리 사용되는 프로그래밍 언어입니다. 언어는 웹 응용 프로그램, 웹 서비스, 데스크톱 앱, 스크립팅 및 과학적 컴퓨팅 등 모든 방식의 개발을 지원하며 대학, 과학자, 아마추어 개발자 및 전문 개발자 등 많은 분야에 사용됩니다.
+Python은 안정적이고 유연하며 배우기 쉬울뿐만 아니라 모든 운영 체제에서 무료로 사용할 수 있으며, 유용한 개발자 커뮤니티와 다양한 무료 라이브러리에서 지원되며 널리 사용되는 프로그래밍 언어입니다. 언어는 웹 애플리케이션, 웹 서비스, 데스크톱 앱, 스크립팅 및 과학적 컴퓨팅 등 모든 방식의 개발을 지원하며 대학, 과학자, 아마추어 개발자 및 전문 개발자 등 많은 분야에 사용됩니다.
 
 Visual Studio는 Python에 대한 고급 언어 지원을 제공합니다. 이 자습서가 다음 단계를 안내합니다.
 
@@ -38,7 +36,7 @@ Visual Studio는 Python에 대한 고급 언어 지원을 제공합니다. 이 �
 
 ## <a name="step-1-create-a-new-python-project"></a>1단계: 새 Python 프로젝트 만들기
 
-*프로젝트*는 Visual Studio에서 소스 코드, 리소스, 구성 등을 포함하여 단일 응용 프로그램을 생성하기 위해 함께 제공되는 모든 파일을 관리하는 방법입니다. 프로젝트는 여러 프로젝트에서 공유되는 외부 리소스뿐만 아니라 모든 프로젝트의 파일 간의 관계를 공식화하고 유지합니다. 따라서 프로젝트를 사용하면 임시 폴더, 스크립트, 텍스트 파일에서 심지어 사용자의 마음대로 프로젝트의 관계를 관리하는 것보다 훨씬 더 쉽게 응용 프로그램을 확장하고 성장시킬 수 있습니다.
+*프로젝트*는 Visual Studio에서 소스 코드, 리소스, 구성 등을 포함하여 단일 애플리케이션을 생성하기 위해 함께 제공되는 모든 파일을 관리하는 방법입니다. 프로젝트는 여러 프로젝트에서 공유되는 외부 리소스뿐만 아니라 모든 프로젝트의 파일 간의 관계를 공식화하고 유지합니다. 따라서 프로젝트를 사용하면 임시 폴더, 스크립트, 텍스트 파일에서 심지어 사용자의 마음대로 프로젝트의 관계를 관리하는 것보다 훨씬 더 쉽게 애플리케이션을 확장하고 성장시킬 수 있습니다.
 
 이 자습서에서 단일 빈 코드 파일을 포함하는 간단한 프로젝트부터 시작합니다.
 
@@ -48,9 +46,9 @@ Visual Studio는 Python에 대한 고급 언어 지원을 제공합니다. 이 �
 
     ![Python 프로젝트가 표시된 새 프로젝트 대화 상자](media/vs-getting-started-python-01-new-project.png)
 
-    Visual Studio에서 Python을 지원하는 방법에는 Bottle, Flask 및 Django 프레임워크를 사용하는 웹 응용 프로그램을 비롯한 많은 프로젝트 템플릿이 포함되어 있습니다. 그러나 이 연습에서는 빈 프로젝트로 시작하겠습니다.
+    Visual Studio에서 Python을 지원하는 방법에는 Bottle, Flask 및 Django 프레임워크를 사용하는 웹 애플리케이션을 비롯한 많은 프로젝트 템플릿이 포함되어 있습니다. 그러나 이 연습에서는 빈 프로젝트로 시작하겠습니다.
 
-1. **Python 응용 프로그램** 템플릿을 선택하고, 프로젝트 이름을 지정하고, **확인**을 선택합니다.
+1. **Python 애플리케이션** 템플릿을 선택하고, 프로젝트 이름을 지정하고, **확인**을 선택합니다.
 
 1. 몇 분 후에 Visual Studio는 **솔루션 탐색기** 창(1)에 프로젝트 구조를 표시합니다. 기본 코드 파일은 편집기(2)에 열립니다. 디스크에서의 정확한 위치를 포함하여 **솔루션 탐색기**에서 선택한 모든 항목에 대한 추가 정보를 보여 주는 **속성** 창(3)도 표시됩니다.
 
@@ -62,7 +60,7 @@ Visual Studio는 Python에 대한 고급 언어 지원을 제공합니다. 이 �
 
     (1) 굵게 강조 표시된 것은 **새 프로젝트** 대화 상자에서 지정한 이름을 사용하는 프로젝트입니다. 디스크에서 이 프로젝트는 프로젝트 폴더의 *.pyproj* 파일로 표시됩니다.
 
-    (2) 최상위 수준은 기본적으로 프로젝트와 동일한 이름이 있는 *솔루션*입니다. 디스크에서 *.sln* 파일로 표시되는 솔루션은 하나 이상의 관련된 프로젝트에 대한 컨테이너입니다. 예를 들어 Python 응용 프로그램에 대한 C++ 확장명을 작성하는 경우 해당 C++ 프로젝트는 동일한 솔루션 내에 있을 수 있습니다. 솔루션은 전용 테스트 프로그램에 대한 프로세스와 함께 웹 서비스에 대한 프로젝트를 포함할 수도 있습니다. 
+    (2) 최상위 수준은 기본적으로 프로젝트와 동일한 이름이 있는 *솔루션*입니다. 디스크에서 *.sln* 파일로 표시되는 솔루션은 하나 이상의 관련된 프로젝트에 대한 컨테이너입니다. 예를 들어 Python 애플리케이션에 대한 C++ 확장명을 작성하는 경우 해당 C++ 프로젝트는 동일한 솔루션 내에 있을 수 있습니다. 솔루션은 전용 테스트 프로그램에 대한 프로세스와 함께 웹 서비스에 대한 프로젝트를 포함할 수도 있습니다.
 
     (3) 프로젝트 아래에 소스 파일이 표시됩니다. 이 경우 단일 *.py* 파일만 표시됩니다. 파일을 선택하면 해당 속성이 **속성** 창에 표시됩니다. 파일을 두 번 클릭하면 해당 파일에 대한 적절한 방식으로 열립니다.
 
@@ -80,5 +78,3 @@ Visual Studio는 Python에 대한 고급 언어 지원을 제공합니다. 이 �
 - [Visual Studio의 Python 프로젝트](managing-python-projects-in-visual-studio.md).
 - [python.org의 Python 언어에 대한 자세한 정보](https://www.python.org)
 - [초보자용 Python](https://www.python.org/about/gettingstarted/)(python.org)
-- [Microsoft Virtual Academy의 무료 Python 코스](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
-- [Microsoft Virtual Academy의 상위 Python 질문](https://aka.ms/mva-top-python-questions)

@@ -2,7 +2,6 @@
 title: IActiveScriptAuthor::GetInfoFromContext | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3465552b99b2185ea475c5479f044ee7b27704ae
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e4fe885e116019608dd8d748c3cbdaff5d31dd2a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935388"
 ---
 # <a name="iactivescriptauthorgetinfofromcontext"></a>IActiveScriptAuthor::GetInfoFromContext
 반환 코드 블록에 정보 및 지정 된 문자에 대 한 앵커 위치를 입력합니다. IntelliSense, 전역 목록 및 매개 변수 팁 멤버에 대 한 정보를 제공 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetInfoFromContext(  
    LPCOLESTR  pszCode,  
    ULONG      cchCode,  

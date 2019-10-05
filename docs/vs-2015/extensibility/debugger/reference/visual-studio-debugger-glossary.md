@@ -1,27 +1,22 @@
 ---
 title: Visual Studio 디버거 용어집 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - glossary [Debugging SDK]
 - debugging [Debugging SDK], glossary
 ms.assetid: 4a2cfaab-1fbd-4a23-bd00-9ac4cc50d7fd
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 37c0608b5684c9d16041ce89707dd81e665b0623
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 19d82f006bb1c37981f60e1a0b2710588eb0053c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204775"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Visual Studio 디버거 용어집
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -73,7 +68,7 @@ ms.locfileid: "51757941"
   
   각 시간 코드를 로드, 프로그램에서 모든 보류 중인 중단점을 확인 하 여 하는 바인딩할 수 있습니다. 보류 중인 중단점 바인딩되기는 바인딩된 모든 중단점을 포함 하도록 라고 합니다.  
   
-  process  
+  프로세스  
   실제 Win32 프로세스입니다. 프로세스는 여러 프로그램을 포함할 수 있습니다. 참고 항목 *프로그램*합니다.  
   
   프로그램  
@@ -85,12 +80,11 @@ ms.locfileid: "51757941"
   스택 프레임  
   특정 프레임에 계산의 상태 및 특정 수준의 중첩 된 함수 호출을 나타냅니다.  
   
-  스레드  
+  스레드(thread)  
   일반화 된 개념이 프로그램이 하나 이상에서 실행 되는 스택 기반 명령 실행 합니다.  
   
   경고 중단점  
   보류 중인 중단점에 경고를 설명 하는 추상화입니다. 경고 중단점 이유 보류 중인 중단점에 아직 바인딩되지 코드 위치로 이유를 설명 합니다. 보류 중인 중단점에서 설명 하는 위치 또는 다른 이유로 코드 아직 로드 되지 않은 것 같습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [Visual Studio 디버거 확장성](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)
-

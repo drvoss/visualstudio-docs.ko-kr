@@ -1,10 +1,9 @@
-- name: AI용 Visual Studio Tools
-  href: index.yml
+- name: Visual Studio Tools for AI
   items:
+    - name: Visual Studio Tools for AI
+      href: index.yml
     - name: 개요
-      items:
-        - name: AI용 Visual Studio Tools 정보
-          href: about-ai-tools.md
+      href: about-ai-tools.md
     - name: 설치
       href: installation.md
     - name: 빠른 시작
@@ -35,7 +34,7 @@
           href: monitor-gpu.md
         - name: TensorBoard 모니터
           href: monitor-tensorboard.md
-        - name: 저장소 관리
+        - name: 스토리지 관리
           href: manage-storage.md
     - name: 샘플
       items:

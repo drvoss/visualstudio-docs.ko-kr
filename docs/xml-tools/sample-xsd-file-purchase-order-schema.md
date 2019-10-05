@@ -1,21 +1,19 @@
 ---
 title: '샘플 XSD 파일: 구매 주문 스키마'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: sample
 ms.assetid: f92b63b5-ec61-43b5-ae1e-63432a7a7e30
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c26272b2e30fa505a196828ecddc9fc8385fe4c
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 9bea23307c5d35e997f41e4ec9cbfd41fa41bdee
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571815"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65455119"
 ---
 # <a name="sample-xsd-file-purchase-order-schema"></a>샘플 XSD 파일: 구매 주문 스키마
 
@@ -88,3 +86,6 @@ ms.locfileid: "34571815"
   </xsd:complexType>
 </xsd:schema>
 ```
+
+> [!NOTE]
+> 이 문서에 사용된 예제 회사, 조직, 제품, 도메인 이름, 전자 메일 주소, 로고, 사람, 장소 및 이벤트는 실제 데이터가 아닙니다. 어떠한 실제 회사, 조직, 제품, 도메인 이름, 전자 메일 주소, 로고, 사람, 장소 또는 이벤트와도 연관시킬 의도가 없으며 그렇게 유추해서도 안 됩니다.

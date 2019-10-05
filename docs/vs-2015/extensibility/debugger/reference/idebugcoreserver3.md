@@ -1,14 +1,9 @@
 ---
 title: IDebugCoreServer3 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugCoreServer3
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 51f5f41b-a5a4-4df0-a703-41f3d1811d7f
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f732492a3730a9071fd08aab4fe925f4e6bf2cd0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cd1781b133b4c3ee95b4207a0dd237e2dd7298a1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735854"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685643"
 ---
 # <a name="idebugcoreserver3"></a>IDebugCoreServer3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ IDebugCoreServer3 : IDebugCoreServer2
  Visual Studio는이 인터페이스를 구현합니다.  
   
 ## <a name="notes-for-callers"></a>호출자에 대 한 정보  
- 사용 하 여 [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) 에서이 인터페이스를 가져올 수는 [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) 인터페이스입니다. 에 대 한 호출 [GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md) 이 인터페이스를 반환할 수도 있습니다. 이 인터페이스는 (로컬 또는 원격) 서버에서 프로그램을 시작 하려면 사용자 지정 포트 공급자를 통해 가장 자주 사용 됩니다.  
+ 사용 하 여 [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) 에서이 인터페이스를 가져올 수는 [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) 인터페이스입니다. 에 대 한 호출 [GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md) 이 인터페이스를 반환할 수도 있습니다. 이 인터페이스는 (로컬 또는 원격) 서버에서 프로그램을 시작 하려면 사용자 지정 포트 공급자를 통해 가장 자주 사용 됩니다.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
  메서드 외에도 합니다 [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) 인터페이스에서이 인터페이스는 다음 메서드를 구현 합니다.  
@@ -61,11 +56,10 @@ IDebugCoreServer3 : IDebugCoreServer2
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)   
  [GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)
-

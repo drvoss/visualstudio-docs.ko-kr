@@ -1,8 +1,6 @@
 ---
 title: 조사식 명령
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.watch
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: aa02e647-d9f5-4905-a651-52a8df595795
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3226a81e748581cc96b62cb40600864fb9ac805
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 0ac779dc902a331a45b600113a11db5364293f74
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704462"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925945"
 ---
 # <a name="watch-command"></a>조사식 명령
 **조사식** 창의 지정된 인스턴스를 만들고 엽니다. **조사식** 창을 사용하여 변수, 식 및 레지스터의 값을 계산하고, 이러한 값을 편집하고, 결과를 저장할 수 있습니다.
@@ -32,12 +30,13 @@ Debug.Watch[index]
 ```
 
 ## <a name="arguments"></a>인수
- `index`
 
- 필수. 조사식 창의 인스턴스 번호입니다.
+`index`\
+필수 요소. 조사식 창의 인스턴스 번호입니다.
 
 ## <a name="remarks"></a>설명
- `index`는 정수여야 합니다. 유효한 값은 1, 2, 3 또는 4입니다.
+
+`index`는 정수여야 합니다. 유효한 값은 1, 2, 3 또는 4입니다.
 
 ## <a name="example"></a>예
 
@@ -52,4 +51,4 @@ Debug.Watch[index]
 - [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)
 - [명령 창](../../ide/reference/command-window.md)
 - [찾기/명령 상자](../../ide/find-command-box.md)
-- [Visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

@@ -2,7 +2,7 @@
 title: 일반 참조 (Visual Studio에서 Office 개발)
 titleSuffix: ''
 ms.custom: seodec18
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -11,44 +11,51 @@ helpviewer_keywords:
 - Office development in Visual Studio, reference
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ec7b021c1eddff17ccc5687ec3d16f765838d062
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8e8b8dee20b67338bbe1c8c78ebe1d8bcc730175
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933180"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551508"
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>일반 참조 (Visual Studio에서 Office 개발)
-  이 섹션에서는 Visual Studio에서 Microsoft Office 프로젝트에 대 한 기술 세부 정보를 포함합니다.  
-  
-> [!NOTE]  
->  Office 환경을 확장 하는 솔루션을 개발 하는 데 관심이 [여러 플랫폼](https://dev.office.com/add-in-availability)? 새 확인해 [Office 추가 기능 모델](https://dev.office.com/docs/add-ins/overview/office-add-ins)합니다. Office 추가 기능의 VSTO 추가 기능 및 솔루션에 비해 작은 사용 공간이 있고 거의 모든 웹 프로그래밍 기술을, HTML5, JavaScript, CSS3, XML 등을 사용 하 여 빌드할 수 있습니다.  
-  
-## <a name="in-this-section"></a>단원 내용  
- [Office 주 interop 어셈블리](../vsto/office-primary-interop-assemblies.md)  
- Office를 사용 하 여 설치를 사용할 수 있으며 각각에 대해 간략히 설명 하는 주 interop 어셈블리를 나열 합니다.  
-  
- [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)  
- 응용 프로그램 매니페스트는 Office 솔루션에서 사용 하는 방법에 대해 설명 합니다.  
-  
- [Office 솔루션의 배포 매니페스트](../vsto/deployment-manifests-for-office-solutions.md)  
- 배포 매니페스트 사용 되는 Office 솔루션은 하는 방법을 설명 합니다.  
-  
- [사용자 인터페이스 참조 &#40;Visual Studio에서 Office 개발&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)  
- 다양 한 대화 상자, 창 및 기타 사용자 인터페이스에 표시 되는 옵션을 설명 하는 항목을 나열 합니다.  
-  
- [오류 메시지 &#40;Visual Studio에서 Office 개발&#41;](../vsto/error-messages-office-development-in-visual-studio.md)  
- Office 프로젝트에 대 한 오류 메시지를 설명 하는 항목을 나열 합니다.  
-  
-## <a name="related-sections"></a>관련 단원  
- [시작 &#40;Visual Studio에서 Office 개발&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
- 설정, 프로젝트 템플릿, Office 주 interop 어셈블리 및 Office 개발의 새로운 기능에 대 한 정보에 대 한 링크를 제공 합니다.  
-  
- [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)  
- 코드 샘플 및 도움이 되는 내용을 배우고 실험 구문, 구조 및 Office 솔루션을 구축 하는 데 사용 되는 기법을 사용 하 여 Visual Studio에서 Office 프로젝트를 만들기 위한 단계별 연습에 설명 합니다.  
-  
- [Office 솔루션을 만들고 디자인](../vsto/designing-and-creating-office-solutions.md)  
- Visual Studio를 사용 하 여 Office 프로젝트 만들기를 시작 하는 방법에 대 한 정보에 대 한 링크를 제공 합니다.  
+  이 섹션에는 Visual Studio의 Microsoft Office 프로젝트에 대 한 기술 세부 정보가 포함 되어 있습니다.
+
+[!include[Add-ins note](includes/addinsnote.md)]
+
+## <a name="in-this-section"></a>단원 내용
+- [Office 주 interop 어셈블리](../vsto/office-primary-interop-assemblies.md)
+
+ Office를 사용 하 여 설치할 수 있는 주 interop 어셈블리를 나열 하 고 각각에 대 한 간략 한 설명을 제공 합니다.
+
+- [Office 솔루션의 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)
+
+ Office 솔루션에서 응용 프로그램 매니페스트를 사용 하는 방법을 설명 합니다.
+
+- [Office 솔루션에 대 한 배포 매니페스트](../vsto/deployment-manifests-for-office-solutions.md)
+
+ 배포 매니페스트를 사용 하 여 Office 솔루션을 사용 하는 방법을 설명 합니다.
+
+- [Visual Studio에서 &#40;사용자 인터페이스 참조 Office 개발&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)
+
+ 다양 한 대화 상자, 창 및 기타 사용자 인터페이스에 표시 되는 옵션을 설명 하는 항목을 나열 합니다.
+
+- [Visual Studio &#40;에서 Office 개발에 대 한 오류 메시지&#41;](../vsto/error-messages-office-development-in-visual-studio.md)
+
+ Office 프로젝트에 대 한 오류 메시지를 설명 하는 항목을 나열 합니다.
+
+## <a name="related-sections"></a>관련 단원
+- [Visual Studio &#40;에서 Office 개발 시작 하기&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+
+ 설치 프로그램, 프로젝트 템플릿, Office 주 interop 어셈블리 및 Office 개발의 새로운 기능에 대 한 정보 링크를 제공 합니다.
+
+- [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)
+
+ Office 솔루션을 빌드하는 데 사용 되는 구문, 구조 및 기술을 학습 하 고 시험해 볼 수 있는 Visual Studio에서 Office 프로젝트를 만드는 데 도움이 되는 코드 샘플과 단계별 연습을 설명 합니다.
+
+- [Office 솔루션 디자인 및 만들기](../vsto/designing-and-creating-office-solutions.md)
+
+ Visual Studio를 사용 하 여 Office 프로젝트 만들기를 시작 하는 방법에 대 한 정보 링크를 제공 합니다.

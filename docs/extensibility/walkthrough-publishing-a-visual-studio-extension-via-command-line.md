@@ -1,22 +1,22 @@
 ---
-title: '연습: 명령줄을 통해 Visual Studio 확장 기능 게시 | Microsoft Docs'
+title: 명령줄을 사용 하 여 확장 게시
 ms.date: 07/12/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - publishing extensions
 - extension, publishing
 ms.assetid: 6ff9efc4-919d-4071-a80d-6dbdd2ceb2f8
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb35365220ade512defc180b06e46b95999dfa7b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8a6b5531bc5dc138f2f90a0a67da39f9583bc4b0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857217"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320644"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>연습: 명령줄을 통해 Visual Studio 확장 기능 게시
 
@@ -34,7 +34,7 @@ VsixPublisher.exe는 Marketplace에 게시 Visual Studio 확장에 대 한 명�
 |---------|---------|
 |페이로드 (필수) | 에 대 한 경로일 게시할 페이로드 또는 "자세한 정보 URL"로 사용 하는 링크입니다. |
 |publishManifest (필수) | 사용할 파일을 매니페스트 하는 게시에 대 한 경로입니다. |
-|ignoreWarnings | 확장을 게시할 때 무시할 경고의 목록입니다. 이러한 경고는 확장을 게시할 때 명령줄 메시지로 표시 됩니다. (예를 들어, "VSIXValidatorWarning01, VSIXValidatorWarning02")  
+|ignoreWarnings | 확장을 게시할 때 무시할 경고의 목록입니다. 이러한 경고는 확장을 게시할 때 명령줄 메시지로 표시 됩니다. (예를 들어, "VSIXValidatorWarning01, VSIXValidatorWarning02")
 |personalAccessToken | 개인 액세스 토큰 (PAT) 게시자를 인증 하는 데 사용 되는 합니다. 지정 하지 않으면 PAT에 로그인 한 사용자 로부터 획득 됩니다. |
 
 ```
@@ -290,7 +290,7 @@ This is test extension.
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>컴퓨터에서 확장을 제거 하려면
 
-1. Visual Studio에서에 **도구** 메뉴에서 클릭 **확장 및 업데이트 하는 중...** .
+1. Visual Studio에서에 **도구** 메뉴에서 클릭 **확장 및 업데이트**합니다.
 
 2. "MyVsixExtension"를 선택 하 고 클릭 **제거**합니다. 확장 한 다음 제거에 대 한 예약 됩니다.
 

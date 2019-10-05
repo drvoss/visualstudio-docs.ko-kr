@@ -10,15 +10,13 @@ helpviewer_keywords:
 ms.assetid: 3d8fac8f-426f-4155-9ced-f7cd4c79792c
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: ac4b542c7f9b557ad04ead05422f8c89cd4f909c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 2a5865eba5ec6971a35104af3ccd090ee6b06410
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002289"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>방법: 부하 테스트 편집기를 사용하여 임계값 규칙 추가
 
@@ -28,17 +26,17 @@ ms.locfileid: "53063372"
 
 ## <a name="to-add-a-threshold-rule"></a>임계값 규칙을 추가하려면
 
-1.  부하 테스트를 엽니다.
+1. 부하 테스트를 엽니다.
 
-2.  부하 테스트 편집기에서 **카운터 집합** 노드를 확장합니다.
+2. 부하 테스트 편집기에서 **카운터 집합** 노드를 확장합니다.
 
-3.  카운터 집합 중 하나에서 **카운터 범주** 하나를 확장합니다. 예를 들어 **LoadTest:Scenario**를 선택할 수 있습니다. 노드를 확장합니다.
+3. 카운터 집합 중 하나에서 **카운터 범주** 하나를 확장합니다. 예를 들어 **LoadTest:Scenario**를 선택할 수 있습니다. 노드를 확장합니다.
 
-4.  카운터 중 하나(예: **LoadTest:Scenario**의 **사용자 부하**)를 마우스 오른쪽 단추로 클릭합니다. **임계값 규칙 추가**를 선택합니다.
+4. 카운터 중 하나(예: **LoadTest:Scenario**의 **사용자 부하**)를 마우스 오른쪽 단추로 클릭합니다. **임계값 규칙 추가**를 선택합니다.
 
      **임계값 규칙 추가** 대화 상자가 표시됩니다.
 
-5.  두 가지 유형의 규칙에서 선택할 수 있습니다. **상수 비교** 및 **카운터 비교**. 적절한 유형을 선택하고 값을 설정합니다.
+5. 두 가지 유형의 규칙에서 선택할 수 있습니다. **상수 비교** 및 **카운터 비교**. 적절한 유형을 선택하고 값을 설정합니다.
 
     > [!NOTE]
     > **초과하면 경고** 속성을 **True**로 설정하면 임계값을 초과할 때 경고가 표시되고 또는 **False**로 설정하면 임계값 밑으로 떨어질 때 경고가 표시됩니다.

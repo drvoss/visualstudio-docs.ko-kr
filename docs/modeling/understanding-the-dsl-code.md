@@ -6,29 +6,30 @@ helpviewer_keywords:
 - Domain-Specific Language, generated code
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: a0b540eb6f8e8c09845e069275a0a901c2809806
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: c2ff6d38ef4fcce400888121ef12883b00bcc0c7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386702"
 ---
 # <a name="understanding-the-dsl-code"></a>DSL 코드 이해
+
 도메인 특정 언어 (DSL) 솔루션을 읽고 Visual Studio에서 dsl 인스턴스를 업데이트 하는 데 사용할 수 있는 API를 생성 합니다. 이 API는 DSL 정의에서 생성되는 코드에서 정의됩니다. 이 항목에서는 생성되는 API에 대해 설명합니다.
 
 ## <a name="the-example-solution-component-diagrams"></a>예제 솔루션: 구성 요소 다이어그램
- 이 항목의 예제는 대부분의 소스인 솔루션을 만들려면에서 DSL을 만들 수는 **구성 요소 모델** 솔루션 템플릿. 이 템플릿은 새 DSL 솔루션을 만들 때 표시되는 표준 템플릿 중 하나입니다.
+
+이 항목의 예제는 대부분의 소스인 솔루션을 만들려면에서 DSL을 만들 수는 **구성 요소 모델** 솔루션 템플릿. 이 템플릿은 새 DSL 솔루션을 만들 때 표시되는 표준 템플릿 중 하나입니다.
 
 > [!NOTE]
->  구성 요소 다이어그램 DSL 템플릿은 Visual Studio에서 아키텍처 메뉴를 사용 하 여 만들 수 있는 UML 구성 요소 다이어그램에 관련 되지 않았습니다. 에 **새 프로젝트** 대화 상자에서 **기타 프로젝트 Types\Extensibility** 클릭 하 고 **도메인별 언어 디자이너**합니다.
+> 구성 요소 다이어그램 DSL 템플릿은 이라고 **도메인별 언어 디자이너**합니다.
 
- 이 솔루션 템플릿을 사용해 본 적이 없다면 F5 키를 누르고 해당 기능을 사용해 봅니다. 특히 구성 요소로 포트 도구를 끌어 포트를 만들고 포트를 연결할 수 있는지 확인합니다.
+키를 눌러 **F5** 및이 솔루션 템플릿을 사용 하 여 모르는 경우 실험 합니다. 특히 구성 요소로 포트 도구를 끌어 포트를 만들고 포트를 연결할 수 있는지 확인합니다.
 
- ![구성 요소 및 상호 연결된 포트](../modeling/media/componentsample.png)
+![구성 요소 및 상호 연결된 포트](../modeling/media/componentsample.png)
 
 ## <a name="the-structure-of-the-dsl-solution"></a>DSL 솔루션의 구조
  합니다 **Dsl** 프로젝트는 DSL에 대 한 API를 정의 합니다. 합니다 **DslPackage** 프로젝트가 Visual Studio를 사용 하 여 통합 하는 방법을 정의 합니다. 모델에서 생성되는 코드를 포함할 수도 있는 프로젝트를 직접 추가할 수도 있습니다.
@@ -44,22 +45,22 @@ ms.locfileid: "53886373"
 
  생성된 코드는 직접 편집하지 않는 것이 좋습니다. 솔루션을 다시 빌드하면 편집 내용이 손실되기 때문입니다. 대신 다음 작업을 수행하여 DSL을 사용자 지정합니다.
 
--   DSL 정의의 여러 매개 변수를 조정합니다.
+- DSL 정의의 여러 매개 변수를 조정합니다.
 
--   별도의 코드 파일에 partial 클래스를 작성하여 생성된 클래스에 정의되어 있거나 해당 클래스에서 상속되는 메서드를 재정의합니다. 경우에 따라 설정 해야 합니다 **Generates Double Derived** 생성 된 메서드를 재정의 하려면 DSL 정의에서 클래스의 옵션입니다.
+- 별도의 코드 파일에 partial 클래스를 작성하여 생성된 클래스에 정의되어 있거나 해당 클래스에서 상속되는 메서드를 재정의합니다. 경우에 따라 설정 해야 합니다 **Generates Double Derived** 생성 된 메서드를 재정의 하려면 DSL 정의에서 클래스의 옵션입니다.
 
--   생성 된 코드가 고유한 코드에 대해 '후크'를 제공 하는 DSL 정의에서 옵션을 설정 합니다.
+- 생성 된 코드가 고유한 코드에 대해 '후크'를 제공 하는 DSL 정의에서 옵션을 설정 합니다.
 
      예를 들어, 설정 하는 경우는 **Has Custom Constructor** 도메인 클래스의 옵션 및 다음 솔루션을 빌드할 오류 메시지가 표시 됩니다. 이러한 오류 메시지 중 하나를 두 번 클릭하면 사용자 지정 코드가 제공해야 하는 항목을 설명하는 주석이 생성된 코드에 표시됩니다.
 
--   텍스트 템플릿을 직접 작성하여 응용 프로그램에 맞는 코드를 생성합니다. 사용 하 여 여러 프로젝트에 공통 되는 템플릿의 일부를 공유 하는 파일을 포함할 수 및 고유한 파일 구조로 초기화 되는 프로젝트를 설정 하려면 Visual Studio 프로젝트 템플릿을 만들 수 있습니다.
+- 텍스트 템플릿을 직접 작성하여 애플리케이션에 맞는 코드를 생성합니다. 사용 하 여 여러 프로젝트에 공통 되는 템플릿의 일부를 공유 하는 파일을 포함할 수 및 고유한 파일 구조로 초기화 되는 프로젝트를 설정 하려면 Visual Studio 프로젝트 템플릿을 만들 수 있습니다.
 
 ## <a name="generated-files-in-dsl"></a>DSL의 생성된 파일
  생성된 된 다음 파일에 표시 된 **Dsl** 프로젝트입니다.
 
  *YourDsl* `Schema.xsd`
 
- DSL 인스턴스를 포함하는 파일의 스키마입니다. 이 파일은 컴파일에 복사 (**bin**) 디렉터리입니다. DSL을 설치할 때이 파일을 복사할 수 있습니다 **\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas** 모델 파일의 유효성을 검사할 수 있도록 합니다. 자세한 내용은 [도메인별 언어 솔루션 배포](../modeling/deploying-domain-specific-language-solutions.md)합니다.
+ DSL 인스턴스를 포함하는 파일의 스키마입니다. 이 파일은 컴파일에 복사 (**bin**) 디렉터리입니다. DSL을 설치할 때이 파일을 복사할 수 있습니다 **\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas** 모델 파일의 유효성을 검사할 수 있도록 합니다. 자세한 내용은 [도메인 특정 언어 솔루션 배포](../modeling/deploying-domain-specific-language-solutions.md)를 참조하세요.
 
  DSL 탐색기에서 옵션을 설정하여 serialization을 사용자 지정하면 스키마도 그에 따라 변경됩니다. 그러나 serialization 코드를 직접 작성하면 이 파일이 실제 스키마를 더 이상 나타내지 않을 수 있습니다. 자세한 내용은 [사용자 지정 파일 저장소 및 XML Serialization](../modeling/customizing-file-storage-and-xml-serialization.md)합니다.
 
@@ -130,7 +131,7 @@ ms.locfileid: "53886373"
   도메인 모델을 나타내는 클래스. <xref:Microsoft.VisualStudio.Modeling.DomainModel>에서 파생됩니다.
 
 > [!NOTE]
->  이 클래스는 모델의 루트 클래스와는 다릅니다.
+> 이 클래스는 모델의 루트 클래스와는 다릅니다.
 
  Copy 및 Delete Closure는 요소를 복사하거나 삭제할 때 포함해야 하는 다른 요소를 정의합니다. 설정 하 여이 동작을 제어할 수는 **Propagates Copy** 하 고 **Propagates Delete** 모든 관계의 양쪽에 있는 역할의 속성입니다. 값이 동적으로 결정되도록 하려면 Closure 클래스의 메서드를 재정의하는 코드를 작성할 수 있습니다.
 
@@ -138,7 +139,7 @@ ms.locfileid: "53886373"
 
  이 파일에는 도메인 클래스와 속성의 설명, 속성 이름, 도구 상자 레이블, 표준 오류 메시지, 사용자에게 표시될 수 있는 기타 문자열 등의 문자열이 포함됩니다. 또한 이미지 모양의 이미지와 도구 아이콘도 포함됩니다.
 
- 이 파일은 작성된 어셈블리로 바인딩되며 이러한 리소스의 기본값을 제공합니다. 리소스의 지역화된 버전을 포함하는 위성 어셈블리를 만들어 DSL을 지역화할 수 있습니다. 해당 버전은 지역화된 리소스와 일치하는 문화권에서 DSL을 설치할 때 사용됩니다. 자세한 내용은 [도메인별 언어 솔루션 배포](../modeling/deploying-domain-specific-language-solutions.md)합니다.
+ 이 파일은 작성된 어셈블리로 바인딩되며 이러한 리소스의 기본값을 제공합니다. 리소스의 지역화된 버전을 포함하는 위성 어셈블리를 만들어 DSL을 지역화할 수 있습니다. 해당 버전은 지역화된 리소스와 일치하는 문화권에서 DSL을 설치할 때 사용됩니다. 자세한 내용은 [도메인 특정 언어 솔루션 배포](../modeling/deploying-domain-specific-language-solutions.md)를 참조하세요.
 
  `DomainRelationships.cs`
 
@@ -191,7 +192,7 @@ ms.locfileid: "53886373"
 
  `CommandSet.cs`
 
- 다이어그램에 표시되는 컨텍스트 메뉴 명령입니다. 이 집합을 조정하거나 집합에 원하는 명령을 추가할 수 있습니다. 이 파일은 명령의 코드를 포함합니다. 메뉴에서 명령의 위치는 Commands.vsct 파일에 의해 결정됩니다. 자세한 내용은 [사용자 명령 및 작업 작성](../modeling/writing-user-commands-and-actions.md)합니다.
+ 다이어그램에 표시 되는 메뉴 명령을 마우스 오른쪽 단추로 클릭 합니다. 이 집합을 조정하거나 집합에 원하는 명령을 추가할 수 있습니다. 이 파일은 명령의 코드를 포함합니다. 메뉴에서 명령의 위치는 Commands.vsct 파일에 의해 결정됩니다. 자세한 내용은 [사용자 명령 및 작업 작성](../modeling/writing-user-commands-and-actions.md)합니다.
 
  `Constants.cs`
 
@@ -281,7 +282,7 @@ namespace Company.EmbedInForm
 
  `GeneratedVSCT.vsct`
 
- 다이어그램 상황에 맞는 메뉴 등 메뉴의 표준 메뉴 명령을 찾습니다 합니다 **편집** 메뉴 및 기타 등등. 명령의 코드는 CommandSet.cs에 있습니다. 표준 명령을 다시 배치하거나 수정할 수 있으며 원하는 명령을 추가할 수도 있습니다. 자세한 내용은 [사용자 명령 및 작업 작성](../modeling/writing-user-commands-and-actions.md)합니다.
+ 다이어그램 (컨텍스트)를 마우스 오른쪽 단추 클릭 메뉴 등 메뉴의 표준 메뉴 명령을 찾습니다 합니다 **편집** 메뉴 및 기타 등등. 명령의 코드는 CommandSet.cs에 있습니다. 표준 명령을 다시 배치하거나 수정할 수 있으며 원하는 명령을 추가할 수도 있습니다. 자세한 내용은 [사용자 명령 및 작업 작성](../modeling/writing-user-commands-and-actions.md)합니다.
 
  `ModelExplorer.cs`
 
@@ -291,7 +292,7 @@ namespace Company.EmbedInForm
 
  모델 탐색기에서 선택한 항목이 다이어그램 선택 항목과 계속 동기화되도록 하려는 경우 다음 코드를 사용할 수 있습니다.
 
-```
+```csharp
 protected override void OnSelectionChanged(global::System.EventArgs e)
 {
 base.OnSelectionChanged(e);
@@ -339,13 +340,13 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  이 파일을 사용자 지정하려면 `.tt` 파일을 편집합니다.
 
 > [!WARNING]
->  아이콘, 이미지 등의 리소스를 포함하도록 .tt 파일을 편집하는 경우에는 VSIX 빌드에 리소스가 포함되는지 확인해야 합니다. 솔루션 탐색기에서 파일을 선택 하 고 있는지 확인 합니다 **VSIX에 포함** 속성은 `True`합니다.
+> 아이콘, 이미지 등의 리소스를 포함하도록 .tt 파일을 편집하는 경우에는 VSIX 빌드에 리소스가 포함되는지 확인해야 합니다. 솔루션 탐색기에서 파일을 선택 하 고 있는지 확인 합니다 **VSIX에 포함** 속성은 `True`합니다.
 
- 이 파일은 DSL을 VSIX(Visual Studio Integration Extension)로 패키징하는 방식을 제어합니다. 자세한 내용은 [도메인별 언어 솔루션 배포](../modeling/deploying-domain-specific-language-solutions.md)합니다.
+ 이 파일은 DSL을 VSIX(Visual Studio Integration Extension)로 패키징하는 방식을 제어합니다. 자세한 내용은 [도메인 특정 언어 솔루션 배포](../modeling/deploying-domain-specific-language-solutions.md)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
 - [도메인별 언어 정의 방법](../modeling/how-to-define-a-domain-specific-language.md)
 - [모델, 클래스 및 관계 이해](../modeling/understanding-models-classes-and-relationships.md)
 - [도메인별 언어 사용자 지정 및 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)
-- [도메인별 언어를 사용자 지정하는 코드 작성](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [도메인별 언어 사용자 지정 하는 코드 작성](../modeling/writing-code-to-customise-a-domain-specific-language.md)

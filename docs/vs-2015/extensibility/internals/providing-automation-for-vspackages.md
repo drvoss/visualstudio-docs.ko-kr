@@ -1,27 +1,22 @@
 ---
 title: Vspackage에 대 한 자동화 제공 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, automation [Visual Studio SDK]
 - automation [Visual Studio SDK], VSPackages
 ms.assetid: 104c4c55-78b8-42f4-b6b0-9a334101aaea
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fc6eb16d1873c7986d9fac556440f24eb007396f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c6eb76eba76567f2966323d4058c9e752cb6fb69
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200976"
 ---
 # <a name="providing-automation-for-vspackages"></a>VSPackage에 대한 자동화 제공
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,4 +44,3 @@ ms.locfileid: "51774174"
  프로젝트에 대 한 자동화를 확장 하려면 또한 표준 automation 개체가 구현 (에서 파생 된 `IDispatch`) 옆에 있는 다른 프로젝트 개체를 구축 하 고 표준 메서드 및 속성을 구현 합니다. 표준 개체의 예로 같은 솔루션 계층에 삽입 되는 프로젝트 개체 `Projects`, `Project`를 `ProjectItem`, 및 `ProjectItems`합니다. 이러한 개체 및 가능한 경우 다른 조건은 의미 체계에 따라 프로젝트의 모든 새 프로젝트 형식을 구현 해야 합니다.  
   
  어떤 의미에서 이러한 개체는 반대 장점이 VSPackage 관련 프로젝트 개체를 제공합니다. 표준 automation 개체는 프로젝트가 동일한 개체를 지 원하는 다른 프로젝트와 마찬가지로 일반화 된 방식으로 사용할 수 있습니다. 따라서 추가 기능에서 일반에 대해 작성 된 `Project` 고 `ProjectItem` 개체 형식의 프로젝트에 대해 작동할 수 있습니다. 자세한 내용은 [프로젝트 모델링](../../extensibility/internals/project-modeling.md)합니다.
-

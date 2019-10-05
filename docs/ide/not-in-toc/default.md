@@ -6,36 +6,31 @@ robots: noindex,nofollow
 f1_keywords:
 - vs.texteditor
 - vs.ambient
-manager: douge
+manager: jillfra
 author: gewarren
 ms.author: gewarren
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
-ms.openlocfilehash: 5c87831c468ce105bccaaad26e826aae6f0b46bc
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 4779c9aa27f65a3295f3a234e4f46314d7fe3b69
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160051"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65613582"
 ---
 # <a name="f1-help"></a>F1 도움말
 
-원하시는 내용을 찾을 수 없습니다. 죄송합니다. [기능 향상을 지원해주세요](#help-us-improve-f1).
+원하시는 내용을 찾을 수 없습니다. 죄송합니다. 이 페이지의 하단에 있는 단추를 통해 피드백을 보내주시면 개선에 도움이 됩니다.
 
 ## <a name="cursor-position"></a>커서 위치
 
-키워드 또는 API 이름에 대한 F1 도움말을 찾고 있는 경우 **F1** 키를 누르기 전에 커서가 단어 내부 또는 바로 오른쪽에 있어야 합니다. 작동하지 않는 경우 [유용한 링크](#useful-links) 목록 중에 선택하거나 https://docs.microsoft.com 에서 검색합니다.
+키워드 또는 API 이름에 대한 F1 도움말을 찾고 있는 경우 **F1**을 누르기 전에 커서가 단어 내부 또는 바로 오른쪽에 있어야 합니다. 작동하지 않는 경우 [유용한 링크](#useful-links) 목록 중에 선택하거나 https://docs.microsoft.com 에서 검색합니다.
 
 ## <a name="useful-links"></a>유용한 링크
 
-- Visual Studio에 대한 일반적인 내용은 [Visual Studio 개요](../../get-started/visual-studio-ide.md)를 참조하세요.
-- Visual Studio 텍스트 편집기의 도움말은 [코드 편집기 사용](../../ide/writing-code-in-the-code-and-text-editor.md)을 참조하세요.
+- [.NET API 브라우저](/dotnet/api/)에서 참조 문서를 검색합니다.
 - C# 도움말은 [C# 가이드](/dotnet/csharp/index)를 참조하세요.
 - Visual Basic 도움말은 [Visual Basic 가이드](/dotnet/visual-basic/)를 참조하세요.
 - F# 도움말은 [F# 가이드](/dotnet/fsharp/)를 참조하세요.
 - Python 도움말은 [Visual Studio의 Python](../../python/overview-of-python-tools-for-visual-studio.md)을 참조하세요.
 - C++ 도움말은 [Visual Studio의 C++](/cpp/visual-cpp-in-visual-studio)를 참조하세요.
-
-## <a name="help-us-improve-f1"></a>기능 향상 지원 F1
-
-F1 도움말 환경을 개선할 수 있도록 도와주세요. 아래 **제품 피드백 제공** 단추를 클릭하여 제품 도움말 문제를 작성합니다. 예를 들어 커서가 위치한 기호 또는 창 등 **F1**을 누를 때 도움말을 포함합니다. 감사합니다!
+- Visual Studio에 대한 내용은 [Visual Studio 개요](../../get-started/visual-studio-ide.md)를 참조하세요.
+- Visual Studio 텍스트 편집기의 도움말은 [코드 편집기 사용](../../ide/writing-code-in-the-code-and-text-editor.md)을 참조하세요.

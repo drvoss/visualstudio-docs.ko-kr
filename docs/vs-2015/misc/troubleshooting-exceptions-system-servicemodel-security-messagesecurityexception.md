@@ -1,14 +1,9 @@
 ---
 title: '예외 문제 해결: System.ServiceModel.Security.MessageSecurityException | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: troubleshooting
 helpviewer_keywords:
 - System.ServiceModel.Security.MessageSecurityException exception
 - MessageSecurityException exception
@@ -16,22 +11,22 @@ ms.assetid: 61ad69a1-ac50-49de-9a7c-8454a84ec5bd
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e7d13f5cc282026b1590f59180ed7f25312bb926
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: db8c0c092ad8bc1435f939c862cf3fa7fc52179e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742474"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689144"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>예외 문제 해결: System.ServiceModel.Security.MessageSecurityException
 A <xref:System.ServiceModel.Security.MessageSecurityException> 때 예외가 [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] 확인 메시지 보안이 잘못 되거나 손상 되었습니다. 이 오류는 다음 조건에 모두 해당될 때 가장 자주 발생합니다.  
   
--   원격 데스크톱 연결 또는 터미널 서비스 등의 원격 연결을 통해 WCF 서비스 참조를 사용하여 웹 사이트 또는 웹 응용 프로그램 프로젝트의 WCF 서비스(.svc)와 통신합니다.  
+- 원격 데스크톱 연결 또는 터미널 서비스 등의 원격 연결을 통해 WCF 서비스 참조를 사용하여 웹 사이트 또는 웹 애플리케이션 프로젝트의 WCF 서비스(.svc)와 통신합니다.  
   
--   원격 사이트에 대한 관리자 권한이 없습니다.  
+- 원격 사이트에 대한 관리자 권한이 없습니다.  
   
--   원격 사이트의 로컬 호스트에 대한 요청을 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server에서 처리합니다.  
+- 원격 사이트의 로컬 호스트에 대한 요청을 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server에서 처리합니다.  
   
 ## <a name="associated-tips"></a>관련 팁  
  **ASP.Net Development Server를 사용 하는 경우 NTLM 인증 문제를 해결 합니다.**  
@@ -40,7 +35,7 @@ A <xref:System.ServiceModel.Security.MessageSecurityException> 때 예외가 [!I
  원격 사용자가 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server를 통해 웹 사이트를 실행하면서 웹 서비스 또는 WCF 서비스를 함께 사용하는 경우 사용자 지정 서비스 바인딩을 만들거나 NTLM 보안을 해제할 수 있습니다.  
   
 > [!IMPORTANT]
->  보안 위협이 발생할 수 있으므로 NTLM 보안을 해제하지 않는 것이 좋습니다.  
+> 보안 위협이 발생할 수 있으므로 NTLM 보안을 해제하지 않는 것이 좋습니다.  
   
  사용자 지정 서비스 바인딩을 만들면 NTLM 인증에 따라 계속 보호받을 수 있습니다.  
   
@@ -74,21 +69,21 @@ A <xref:System.ServiceModel.Security.MessageSecurityException> 때 예외가 [!I
   
     이렇게 하면 서비스에 사용자 지정 바인딩이 사용됩니다.  
   
-5. 서비스에 액세스하는 웹 응용 프로그램에 서비스에 대한 참조를 추가합니다. **서비스 참조 추가** 대화 상자에서 예외가 발생한 원래 서비스에 대해 수행한 것과 같은 방법으로 서비스에 대한 참조를 추가합니다.  
+5. 서비스에 액세스하는 웹 애플리케이션에 서비스에 대한 참조를 추가합니다. **서비스 참조 추가** 대화 상자에서 예외가 발생한 원래 서비스에 대해 수행한 것과 같은 방법으로 서비스에 대한 참조를 추가합니다.  
   
    WCF 서비스 참조를 사용하는 경우 다음 단계에 따라 NTLM 보안을 해제할 수 있습니다.  
   
 > [!IMPORTANT]
->  보안 위협이 발생할 수 있으므로 NTLM 보안을 해제하지 않는 것이 좋습니다.  
+> 보안 위협이 발생할 수 있으므로 NTLM 보안을 해제하지 않는 것이 좋습니다.  
   
 #### <a name="to-turn-off-ntlm-security"></a>NTLM 보안을 해제하려면  
   
-1.  **솔루션 탐색기**에서 웹 사이트 이름을 마우스 오른쪽 단추로 클릭한 다음 **속성 페이지**를 클릭합니다.  
+1. **솔루션 탐색기**에서 웹 사이트 이름을 마우스 오른쪽 단추로 클릭한 다음 **속성 페이지**를 클릭합니다.  
   
-2.  **시작 옵션**을 선택한 다음 **NTLM 인증** 확인란의 선택을 취소합니다.  
+2. **시작 옵션**을 선택한 다음 **NTLM 인증** 확인란의 선택을 취소합니다.  
   
-3.  **확인**을 클릭합니다.  
+3. **확인**을 클릭합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.ServiceModel.Security.MessageSecurityException>   
- [예외 도우미 사용](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)
+ [예외 도우미 사용](https://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)

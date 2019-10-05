@@ -2,7 +2,6 @@
 title: IDebugDocumentTextEvents::onReplaceText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1cbe022113e8a97dc31b4cf5a2286ec0b5096d3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b65496f3bf64dfaf1a4fc1f1180dd6715277cd59
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946702"
 ---
 # <a name="idebugdocumenttexteventsonreplacetext"></a>IDebugDocumentTextEvents::onReplaceText
-텍스트 바뀌었음을 나타냅니다.  
+텍스트를 교체한 나타냅니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT onReplaceText(  
    ULONG  cCharacterPosition,  
    ULONG  cNumToReplace  
@@ -52,7 +51,7 @@ HRESULT onReplaceText(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 텍스트 바뀌었음을 나타냅니다.  
+ 이 메서드는 텍스트를 교체한 나타냅니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugDocumentTextEvents 인터페이스](../../winscript/reference/idebugdocumenttextevents-interface.md)

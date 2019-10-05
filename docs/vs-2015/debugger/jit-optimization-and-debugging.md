@@ -1,14 +1,9 @@
 ---
 title: JIT 최적화 및 디버깅 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +16,13 @@ ms.assetid: 19bfabf3-1a2e-49dc-8819-a813982e86fd
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ab86e023b99f524651b56bbca4ddea2d613448e2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 56b010a01ccd7e40e696653e13dd7c972c97a9cb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770738"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690535"
 ---
 # <a name="jit-optimization-and-debugging"></a>JIT 최적화 및 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,4 @@ ms.locfileid: "51770738"
  [Debugging Managed Code](../debugger/debugging-managed-code.md) (관리 코드 디버그)  
  [Navigating through Code with the Debugger](../debugger/navigating-through-code-with-the-debugger.md) (디버거로 코드 탐색)  
  [실행 중인 프로세스에 연결](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [관리되는 실행 프로세스](http://msdn.microsoft.com/library/476b03dc-2b12-49a7-b067-41caeaa2f533)
-
-
-
+ [관리되는 실행 프로세스](https://msdn.microsoft.com/library/476b03dc-2b12-49a7-b067-41caeaa2f533)

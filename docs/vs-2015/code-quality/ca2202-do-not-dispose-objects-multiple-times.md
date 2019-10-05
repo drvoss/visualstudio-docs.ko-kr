@@ -1,14 +1,9 @@
 ---
-title: 'CA2202: 개체 여러 번 삭제 하지 마십시오 | Microsoft Docs'
-ms.custom: ''
+title: 'CA2202: 개체가 여러 번 삭제 하지 마십시오 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2202
 - Do not dispose objects multiple times
@@ -20,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: de3bc29e6d843532e4c15db1e33673d4f63c5179
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3dfe606e3083c937db3ba3d1e6cd49d34bace853
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830719"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697979"
 ---
 # <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: 개체를 여러 번 삭제하지 마십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ ms.locfileid: "49830719"
  잘못 구현 <xref:System.IDisposable.Dispose%2A> 메서드 예외를 throw 하지 않고 여러 번 호출할 수 있습니다. 그러나이 보장 되지 않습니다 및 생성 되지 않도록 하는 <xref:System.ObjectDisposedException?displayProperty=fullName> 호출 하지 않아야 <xref:System.IDisposable.Dispose%2A> 개체에 대 한 번 이상.
 
 ## <a name="related-rules"></a>관련된 규칙
- [CA2000: 범위를 벗어나기 전에 개체를 삭제하십시오.](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
+ [CA2000: 범위를 벗어나기 전에 개체를 삭제 합니다.](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면 코드 경로 관계 없이 구현을 변경 <xref:System.IDisposable.Dispose%2A> 개체에 대 한 번만 호출 됩니다.
@@ -89,7 +84,4 @@ finally
 ```
 
 ## <a name="see-also"></a>참고 항목
- <xref:System.IDisposable?displayProperty=fullName> [삭제 패턴](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
-
-
-
+ <xref:System.IDisposable?displayProperty=fullName> [삭제 패턴](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

@@ -1,25 +1,22 @@
 ---
 title: 커넥터의 속성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, connectors
 ms.assetid: b1f24e8d-cdd7-4a5d-af37-1038f43b45c7
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b78858b14674eafeb044b168a8bb8927af9f5769
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a3673a818f9460b8b40bb3fee2dcd5fe65fd02a8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49171849"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701724"
 ---
 # <a name="properties-of-connectors"></a>연결선의 속성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +53,4 @@ ms.locfileid: "49171849"
 |Help Keyword|이 요소에 대 한 F1 도움말을 인덱싱하는 데는 키워드입니다.|\<없음 >|  
   
 ## <a name="see-also"></a>참고 항목  
- [도메인 특정 언어 도구 용어집](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

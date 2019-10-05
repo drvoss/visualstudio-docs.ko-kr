@@ -1,27 +1,22 @@
 ---
 title: 메시지 옵션 대화 상자, 메시지 탭 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - message options, Messages
 ms.assetid: fb9fa211-e82c-40a5-9e4b-ba8de07313c0
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b44a5932d178fe8432273038d677f5831d568146
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a9eb1c88d935fa307e8b86a9a75da423bc08111c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149440"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>메시지 옵션 대화 상자, 메시지 탭
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51793947"
   
  다음 설정을 사용할 합니다 **메시지** 탭:  
   
- **메시지 보기**  
+ **표시할 메시지**  
  보기에 대 한 특정 메시지를 선택 합니다. 새 메시지 창에서 만든 모든 메시지를 표시할 수 있습니다. 메시지를 필터링 하는 경우는 **메시지** 탭 해당 필터는 새 메시지를 Windows 보기에서 이미 표시 되어 있는 메시지가 없는에 적용 됩니다.  
   
  **메시지 그룹**  
@@ -50,6 +45,3 @@ ms.locfileid: "51793947"
   
   **설정을 기본값으로 저장**  
   메시지 검색 옵션으로 나중에 사용에 대 한 현재 설정을 저장 합니다. Spy + +를 종료 하는 경우에 이러한 설정은 저장 됩니다.
-
-
-

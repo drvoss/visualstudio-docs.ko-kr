@@ -1,8 +1,6 @@
 ---
 title: 웹 템플릿 만들기
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, Web
@@ -11,13 +9,13 @@ helpviewer_keywords:
 - project templates [Visual Studio], Web
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: cff4fda5113cdbacba2d9389e360707f49ba595b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 9af528cf92d4909bbe5c7d4ac114aa830e96162c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946897"
 ---
 # <a name="how-to-manually-create-web-templates"></a>방법: 수동으로 웹 템플릿 만들기
 

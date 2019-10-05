@@ -1,27 +1,22 @@
 ---
 title: 명령 플래그 요소 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - CommandFlag element (VSCT XML schema)
 - VSCT XML schema elements, CommandFlag
 ms.assetid: 5ef63399-d2db-4dc1-97ce-be1bd4ef4e39
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 98140c90288d8a65d22996940300a82b5e070308
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 39b2377dd1599d58eac4ca967ca540d8ce0e6847
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184364"
 ---
 # <a name="command-flag-element"></a>Command Flag 요소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ ms.locfileid: "51809924"
   
 ### <a name="child-elements"></a>자식 요소  
   
-|값|설명|  
+|값|Description|  
 |-----------|-----------------|  
 |AllowParams|사용자의 명령 매개 변수를 입력할 수를 나타냅니다 합니다 **명령** 명령의 정식 이름을 입력할 때 창입니다.<br /><br /> 에 대해 유효 합니다. `Button`|  
 |AlwaysCreate|메뉴 단추 없거나 그룹에 해당 하는 경우에 만들어집니다.<br /><br /> 에 대해 유효 합니다. `Menu`|  
@@ -54,7 +49,7 @@ ms.locfileid: "51809924"
 |DontCache|개발 환경 캐시 하지 않습니다는 `QueryStatus` 이 명령에 대 한 메서드 결과입니다.<br /><br /> 메뉴에 메뉴 컨트롤러를 해당 메뉴 항목의 텍스트를 캐시 하지 그러면 합니다. 메뉴 동적 항목 또는 동적 텍스트가 포함 된 항목을 포함 하는 경우이 플래그를 사용 합니다.<br /><br /> 에 대 한 유효한: `Button`, `Menu`|  
 |DynamicItemStart|동적 목록 시작을 나타냅니다. 연속적으로 호출 하 여 목록을 작성 하는 환경을 가능 하 게이 `QueryStatus` OLECMDERR_E_UNSUPPORTED 플래그 반환 될 때까지 목록 항목에는 메서드. 이 가장 최근에 사용 된 같은 (MRU) 목록 및 창 목록 항목에 대 한 잘 작동 합니다.<br /><br /> 에 대해 유효 합니다. `Button`|  
 |DynamicVisibility|명령의 가시성을 통해 변경할 수 있습니다 합니다 `QueryStatus` 메서드 또는 컨텍스트에 포함 된 GUID 통해는 `VisibilityConstraints` 섹션입니다.<br /><br /> 주 창에 표시 되는 최상위 도구 모음에는 없지만 메뉴 및 도구 창 도구 모음에서 표시 되는 명령에 적용 됩니다. 최상위 도구 모음 항목을 사용 하지 않도록 설정 하지만 숨겨져 있지 않으면이 OLECMDF_INVISIBLE 플래그에서 반환 되 면 수는 `QueryStatus` 메서드. 도구 창 도구 모음에 표시 되는 도구 모음 명령은 숨길 수 있습니다.<br /><br /> 메뉴의이 플래그는이 자동으로 숨기면 모든 해당 멤버를 숨길지도 나타냅니다. 최상위 메뉴에 이미이 동작 때문에이 플래그는 일반적으로 하위 메뉴에 할당 됩니다.<br /><br /> 이 플래그를 사용 하 여 결합 된 `DefaultInvisible` 플래그입니다.<br /><br /> 에 대 한 유효한: `Button`, `Combo`, `Menu`|  
-|필터 키|아래에서 필터링 하는 키 항목을 참조 하세요 [Combo 요소](../extensibility/combo-element.md)합니다.<br /><br /> 에 대해 유효 합니다. `Combo`|  
+|FilterKeys|아래에서 필터링 하는 키 항목을 참조 하세요 [Combo 요소](../extensibility/combo-element.md)합니다.<br /><br /> 에 대해 유효 합니다. `Combo`|  
 |FixMenuController|이 명령이 메뉴 컨트롤러에서 배치 되는, 명령이 항상 기본값이; 즉, 메뉴 컨트롤러 단추 자체 선택 될 때마다 명령을 선택 합니다. 메뉴 컨트롤러에는 `TextIsAnchorCommand` 플래그가 설정 메뉴 컨트롤러도 되는 명령 해당 텍스트를 사용 하는 다음을 `FixMenuController` 플래그입니다.<br /><br /> 메뉴 컨트롤러에서 명령을 하나만 있어야 합니다 `FixMenuController` 플래그입니다. 둘 이상의 명령으로 표시 하므로 기본 명령을 메뉴에서 마지막 명령인이 됩니다.<br /><br /> 에 대해 유효 합니다. `Button`|  
 |IconAndText|메뉴 및 도구 모음에서 아이콘 및 텍스트를 표시 합니다.<br /><br /> 에 대 한 유효한: `Button`, `Combo`, `Menu`|  
 |NoAutoComplete|자동 완성 기능을 사용 하는 사용할 수 없습니다.<br /><br /> 에 대해 유효 합니다. `Combo`|  
@@ -77,11 +72,10 @@ ms.locfileid: "51809924"
   
 ### <a name="parent-elements"></a>부모 요소  
   
-|요소|설명|  
+|요소|Description|  
 |-------------|-----------------|  
 |[Buttons 요소](../extensibility/buttons-element.md)|에 대 한 그룹을 제공 [Button 요소](../extensibility/button-element.md) 요소입니다.|  
 |[Menus 요소](../extensibility/menus-element.md)|VSPackage를 구현 하는 모든 메뉴를 정의 합니다.|  
   
 ## <a name="see-also"></a>참고 항목  
  [Visual Studio 명령 테이블(.Vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

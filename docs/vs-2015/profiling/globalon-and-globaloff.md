@@ -1,25 +1,20 @@
 ---
 title: GlobalOn 및 GlobalOff | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 24b0ed68-d19e-473e-9af3-252c11d82bcf
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b8176f32a6d235a0df1c57b4e5ba9cf6e9268ccb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: eae720bdd904c7b904c906022cea700512167617
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62434230"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn 및 GlobalOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,19 +55,19 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
  명령줄 프로파일러 세션을 초기화하고 지정된 프로파일링 방법을 설정합니다.  
   
  **Launch:** `AppName`  
- 지정된 응용 프로그램을 시작하고 샘플링 방법으로 프로파일링을 시작합니다.  
+ 지정된 애플리케이션을 시작하고 샘플링 방법으로 프로파일링을 시작합니다.  
   
  **Attach:** `PID`  
  지정된 프로세스의 프로파일링을 시작합니다.  
   
- {**ProcessOff**&#124;**ProcessOn**}**:**`PID`  
+ {**ProcessOff**&#124;**ProcessOn**} **:** `PID`  
  지정된 프로세스에 대한 프로파일링을 중지하거나 시작합니다.  
   
- {**ThreadOff**&#124;**ThreadOn**}**:**`TID`  
+ {**ThreadOff**&#124;**ThreadOn**} **:** `TID`  
  지정된 프로세스에 대한 프로파일링을 중지 또는 시작합니다(계측 방법만 해당).  
   
 ## <a name="example"></a>예제  
- 이 예제에서는 응용 프로그램 시작 및 종료에 대한 프로파일링 데이터가 수집되지 않도록 하기 위해 **GlobalOff** 및 **GlobalOn** 옵션이 사용됩니다.  
+ 이 예제에서는 애플리케이션 시작 및 종료에 대한 프로파일링 데이터가 수집되지 않도록 하기 위해 **GlobalOff** 및 **GlobalOn** 옵션이 사용됩니다.  
   
 ```  
 ; Initialize the profiler with profiling stopped.  
@@ -91,9 +86,6 @@ VSPerfCmd /Shutdown
   
 ## <a name="see-also"></a>참고 항목  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [독립 실행형 응용 프로그램 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [ASP.NET 웹 응용 프로그램 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [독립 실행형 애플리케이션 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [ASP.NET 웹 애플리케이션 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [서비스 프로파일링](../profiling/command-line-profiling-of-services.md)
-
-
-

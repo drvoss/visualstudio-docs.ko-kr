@@ -2,7 +2,6 @@
 title: IDebugStackFrame::GetThread | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 888e15bdd154fbac444eb91fc31ad7f17c2981ca
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6926347c67895b3860964a559898691dd3e61e6f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935062"
 ---
 # <a name="idebugstackframegetthread"></a>IDebugStackFrame::GetThread
 이 스택 프레임과 연결 된 스레드를 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetThread(  
    IDebugApplicationThread**  ppat  
 );  

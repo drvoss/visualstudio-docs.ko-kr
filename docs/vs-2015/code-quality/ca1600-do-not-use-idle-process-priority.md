@@ -1,14 +1,9 @@
 ---
-title: 'CA1600: 유휴 상태 프로세스 우선 순위를 사용 하지 마십시오 | Microsoft Docs'
-ms.custom: ''
+title: 'CA1600: 유휴 프로세스 우선 순위를 사용 하지 않는 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DoNotUseIdleProcessPriority
 - CA1600
@@ -20,14 +15,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f077774f67ca398d26746d0c375545e0cb641454
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4002e17e3988ca3b449e141394ce762f95ffc78b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189305"
 ---
-# <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: 유휴 상태 프로세스 우선 순위를 사용하지 마십시오.
+# <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: 유휴 프로세스 우선 순위를 사용하지 마세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -48,6 +43,3 @@ ms.locfileid: "49941856"
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  유휴 프로세스 우선 순위 필수 항목이 며 이동성 고려 사항을 안전 하 게 무시할 수 있습니다 하는 경우에이 규칙을 표시 하지 않습니다.
-
-
-

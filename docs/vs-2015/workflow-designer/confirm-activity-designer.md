@@ -1,11 +1,8 @@
 ---
 title: Confirm 활동 디자이너 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Confirm.UI
@@ -13,13 +10,13 @@ ms.assetid: c753b67b-b0e7-462a-bb4e-ba8db04a078d
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: df1943314163ab71925620a2f8a2f8431a8033d7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 29635044eb4cca558d631ab959b1b4f5480dbdbe
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977389"
 ---
 # <a name="confirm-activity-designer"></a>Confirm 활동 디자이너
 **Confirm** 활동 디자이너는 만들기 및 구성 하는 데 사용 되는 <xref:System.Activities.Statements.Confirm> 활동.  
@@ -37,7 +34,7 @@ ms.locfileid: "49237733"
 ### <a name="the-confirm-properties"></a>Confirm 속성  
  다음 표에서는 <xref:System.Activities.Statements.Confirm> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. <xref:System.Activities.Activity.DisplayName%2A> 속성은 속성 표 또는 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 화면에서 편집할 수 있지만 <xref:System.Activities.Statements.Confirm.Target%2A> 속성은 반드시 속성 표에서 편집해야 합니다.  
   
-|속성 이름|필수|용도|  
+|속성 이름|필수|사용|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.CancellationScope> 활동의 선택적 이름을 지정합니다. 기본값은 Confirm입니다.|  
 |<xref:System.Activities.Statements.Confirm.Target%2A>|True|이 <xref:System.Activities.InArgument%601> 활동의 <xref:System.Activities.Statements.CompensationToken>이 들어 있는 <xref:System.Activities.Statements.Confirm>을 지정합니다.|  

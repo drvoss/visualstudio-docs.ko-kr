@@ -1,14 +1,9 @@
 ---
 title: 빌드 로거 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, writing loggers
 - MSBuild, logging
@@ -17,18 +12,17 @@ ms.assetid: fa34810d-185a-4d22-92bd-9852915e5f1d
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dbf27388013b71945879537dffff1e53a7314e7b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2908c8217070196de1b2d3cd4f1c5f8d8f2868a5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160436"
 ---
 # <a name="build-loggers"></a>빌드 로거
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 로거는 빌드 출력을 사용자 지정하고 특정 빌드 이벤트에 대한 응답에 메시지, 오류 또는 경고를 표시하는 방법을 제공합니다. 각 로거는 <xref:Microsoft.Build.Framework.ILogger> 인터페이스를 구현하는 .NET 클래스로 구현됩니다. 이 인터페이스는 Microsoft.Build.Framework.dll 어셈블리에서 정의됩니다.  
   
  로거를 구현할 때 다음 두 가지 방법을 사용할 수 있습니다.  
@@ -69,7 +63,7 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll
 MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed  
 ```  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
 ### <a name="description"></a>설명  
  다음 예제에서는 로거에 대한 전체 코드를 보여 줍니다.  
@@ -79,7 +73,7 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ### <a name="comments"></a>설명  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
 ### <a name="description"></a>설명  
  다음 예제에서는 로그를 콘솔 창에 표시하지 않고 파일에 쓰는 로거를 구현하는 방법을 보여 줍니다.  
@@ -92,6 +86,3 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
 ## <a name="see-also"></a>참고 항목  
  [빌드 로그 가져오기](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [MSBuild 개념](../msbuild/msbuild-concepts.md)
-
-
-

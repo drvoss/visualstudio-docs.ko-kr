@@ -1,14 +1,9 @@
 ---
 title: IDebugStackFrame2::GetName | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugStackFrame2::GetName
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 069d4f96-363f-404e-9c89-5318c4c9821b
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6e2c244dc66888f050ab8d90601bb41c3179b0a2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d2ee8b174c69a9416eb7f6889f6ac112abf5a7c0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153120"
 ---
 # <a name="idebugstackframe2getname"></a>IDebugStackFrame2::GetName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -53,6 +48,5 @@ int GetName ( 
 ## <a name="remarks"></a>설명  
  스택 프레임의 이름은 일반적으로 실행 중인 메서드의 이름입니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
-

@@ -1,22 +1,20 @@
 ---
 title: for 루프를 foreach 문으로 변환하는 코드 리팩터링
 ms.date: 05/10/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6a200874cec92fada17c13eb45e226ce26119a60
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: d61e79055b2158115b459e643a36170304b7f655
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34267675"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67261719"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>for 루프와 foreach 문 사이를 변환하는 리팩터링
 
@@ -45,7 +43,7 @@ ms.locfileid: "34267675"
 
 1. `for` 키워드에 캐럿을 배치합니다.
 
-1. 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 또는 코드 파일의 여백에 있는 스크루드라이버![스크루드라이버 아이콘](../media/screwdriver-icon.png) 아이콘을 클릭합니다.
+1. 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 또는 코드 파일의 여백에 있는 스크루드라이버![스크루드라이버 아이콘](../media/screwdriver-icon.png) 아이콘을 클릭합니다.
 
    ![foreach로 변환 메뉴](media/convert-to-foreach.png)
 
@@ -73,7 +71,7 @@ ms.locfileid: "34267675"
 
 1. `foreach` 또는 `For Each` 키워드에 캐럿을 배치합니다.
 
-1. 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 또는 코드 파일의 여백에 있는 스크루드라이버![스크루드라이버 아이콘](../media/screwdriver-icon.png) 아이콘을 클릭합니다.
+1. 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 또는 코드 파일의 여백에 있는 스크루드라이버![스크루드라이버 아이콘](../media/screwdriver-icon.png) 아이콘을 클릭합니다.
 
    ![for로 변환 메뉴](media/convert-to-for.png)
 
@@ -82,7 +80,7 @@ ms.locfileid: "34267675"
 1. 리팩터링이 새로운 반복 횟수 변수를 도입하기 때문에 **이름 바꾸기** 상자가 편집기의 오른쪽 상단에 나타납니다. 변수에 다른 이름을 선택하려면 여기에 입력한 다음, **Enter**를 누르거나 **이름 바꾸기** 상자에서 **적용**을 선택합니다. 새 이름을 선택하지 않으려면 **Esc**를 누르거나 **적용**을 선택하여 **이름 바꾸기** 상자를 닫습니다.
 
 > [!NOTE]
-> C#의 경우 이러한 리팩터링에서 생성된 코드는 컬렉션의 항목 형식에 대해 명시적 형식 또는 [var](/dotnet/csharp/language-reference/keywords/var)을 사용합니다. 생성된 코드가 명시적 또는 암시적 형식인지 여부는 범위에 있는 코드 스타일 설정에 따라 다릅니다. 이러한 특정 코드 스타일 설정은 **도구** > **옵션** > **텍스트 편집기** > **C#** > **코드 스타일** > **일반** > **\'var' 기본 설정** 아래 컴퓨터 수준 또는 [EditorConfig](../../ide/editorconfig-code-style-settings-reference.md#implicit-and-explicit-types) 파일의 솔루션 수준에서 구성됩니다. **옵션**에서 코드 스타일 설정을 변경하는 경우 변경 내용을 적용하려면 코드 파일을 다시 엽니다.
+> C#의 경우 이러한 리팩터링에서 생성된 코드는 컬렉션의 항목 형식에 대해 명시적 형식 또는 [var](/dotnet/csharp/language-reference/keywords/var)을 사용합니다. 생성된 코드가 명시적 또는 암시적 형식인지 여부는 범위에 있는 코드 스타일 설정에 따라 다릅니다. 이러한 특정 코드 스타일 설정은 **도구** > **옵션** > **텍스트 편집기** > **C#**  > **코드 스타일** > **일반** >  **\'var' 기본 설정** 아래 컴퓨터 수준 또는 [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types) 파일의 솔루션 수준에서 구성됩니다. **옵션**에서 코드 스타일 설정을 변경하는 경우 변경 내용을 적용하려면 코드 파일을 다시 엽니다.
 
 ## <a name="see-also"></a>참고 항목
 

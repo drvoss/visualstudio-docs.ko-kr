@@ -1,14 +1,9 @@
 ---
-title: '방법: CPU 카운터 데이터 수집 | Microsoft 문서'
-ms.custom: ''
+title: '방법: CPU 카운터 데이터 수집 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.cpucounters
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 102fb6ca-5fbf-4b05-925f-56912ce3f44b
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 46ade222b6032baca17afe37d72dd6e5657ae1c2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 76dac6e20cc85eeb5784b0b6e29ee8d1b23fbd92
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432807"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>방법: CPU 카운터 데이터 수집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,26 +50,23 @@ CPU 이벤트 카운터는 하드웨어 관련 성능 데이터를 수집하는 
   
 - 계측을 통해 프로파일링할 경우 하나 이상의 카운터에서 데이터를 수집합니다.  
   
-- 샘플링을 통해 프로파일링할 경우 카운터 이벤트를 샘플링 간격으로 지정합니다. 자세한 내용은 [방법: 샘플링 이벤트 선택](../profiling/how-to-choose-sampling-events.md)을 참조하세요.  
+- 샘플링을 통해 프로파일링할 경우 카운터 이벤트를 샘플링 간격으로 지정합니다. 자세한 내용은 [방법: 샘플링 이벤트 선택](../profiling/how-to-choose-sampling-events.md)합니다.  
   
 ### <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>계측을 통해 프로파일링할 경우 CPU 성능 카운터 데이터를 수집하려면  
   
-1.  성능 세션 **속성 페이지**에서 **CPU 카운터**를 클릭합니다.  
+1. 성능 세션 **속성 페이지**에서 **CPU 카운터**를 클릭합니다.  
   
-2.  **CPU 카운터 수집** 확인란을 선택합니다.  
+2. **CPU 카운터 수집** 확인란을 선택합니다.  
   
-3.  수집할 샘플 이벤트를 찾을 때까지 **사용 가능한 성능 카운터** 트리를 확장합니다.  
+3. 수집할 샘플 이벤트를 찾을 때까지 **사용 가능한 성능 카운터** 트리를 확장합니다.  
   
-4.  수집할 각 이벤트에 대해 이벤트를 선택하고 오른쪽 화살표를 클릭하여 **선택한 카운터** 목록에 이벤트를 추가합니다.  
+4. 수집할 각 이벤트에 대해 이벤트를 선택하고 오른쪽 화살표를 클릭하여 **선택한 카운터** 목록에 이벤트를 추가합니다.  
   
     > [!NOTE]
-    >  **사용 가능한 성능 카운터**는 **CPU 카운터 수집** 확인란을 선택한 경우에만 사용하도록 설정됩니다.  
+    > **사용 가능한 성능 카운터**는 **CPU 카운터 수집** 확인란을 선택한 경우에만 사용하도록 설정됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [성능 세션 구성](../profiling/configuring-performance-sessions.md)   
  [성능 세션 속성](../profiling/performance-session-properties.md)   
  [CPU 및 Windows 카운터](../profiling/cpu-and-windows-counters.md)   
  [방법: 샘플링 이벤트 선택](../profiling/how-to-choose-sampling-events.md)
-
-
-

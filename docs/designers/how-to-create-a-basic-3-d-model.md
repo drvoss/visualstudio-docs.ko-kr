@@ -1,44 +1,42 @@
 ---
 title: '방법: 기본 3D 모델 만들기'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6242b80c1dcefe0e1a3a35561337a75e6098d25d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f5f4bb3c6d429fb40d97e748798610e4e46262eb
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913451"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924505"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>방법: 기본 3D 모델 만들기
 
 이 문서에서는 모델 편집기를 사용하여 기본 3D 모델을 만드는 방법을 설명합니다. 다음과 같은 작업을 설명합니다.
 
--   장면에 개체 추가
+- 장면에 개체 추가
 
--   면 및 가장자리 선택
+- 면 및 가장자리 선택
 
--   선택 영역 변환
+- 선택 영역 변환
 
--   **면 나누기** 및 **면 돌출** 도구 사용
+- **면 나누기** 및 **면 돌출** 도구 사용
 
--   **삼각 측량** 명령 사용
+- **삼각 측량** 명령 사용
 
 ## <a name="create-a-basic-3d-model"></a>기본 3D 모델 만들기
- 모델 편집기를 사용하여 게임 또는 앱에 사용할 3D 모델 및 장면을 만들고 수정할 수 있습니다. 다음 단계에서는 모델 편집기를 사용하여 집의 단순 3D 모델을 만드는 방법을 보여줍니다. 단순 모델은 계속 생성 중인 최종 아트 자산의 대체물로, 충돌 탐지를 위한 메시로, 표현하는 개체가 너무 멀어 자세한 렌더링을 사용할 수 없을 때 덜 자세한 모델로 사용할 수 있습니다.
+모델 편집기를 사용하여 게임 또는 앱에 사용할 3D 모델 및 장면을 만들고 수정할 수 있습니다. 다음 단계에서는 모델 편집기를 사용하여 집의 단순 3D 모델을 만드는 방법을 보여줍니다. 단순 모델은 계속 생성 중인 최종 아트 자산의 대체물로, 충돌 탐지를 위한 메시로, 표현하는 개체가 너무 멀어 자세한 렌더링을 사용할 수 없을 때 덜 자세한 모델로 사용할 수 있습니다.
 
- 작업을 완료하면 모델이 다음과 같이 나타납니다.
+작업을 완료하면 모델이 다음과 같이 나타납니다.
 
- ![완료된 간이형 집 모델](../designers/media/gfx_model_demo_house_final.png)
+![완료된 간이형 집 모델](../designers/media/gfx_model_demo_house_final.png)
 
- 시작하기 전에 **속성** 창과 **도구 상자**가 표시되는지 확인합니다.
+시작하기 전에 **속성** 창과 **도구 상자**가 표시되는지 확인합니다.
 
 ### <a name="to-create-a-simplified-3d-model-of-a-house"></a>집의 단순 3D 모델을 만들려면
 

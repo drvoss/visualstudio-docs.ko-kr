@@ -1,30 +1,24 @@
 ---
 title: VSTU에서 만든 프로젝트 파일 사용자 지정 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 ms.assetid: 60b8cc1d-cacc-404d-b768-77e81bc354f8
 caps.latest.revision: 4
 author: conceptdev
 ms.author: crdun
-manager: ghogen
-ms.openlocfilehash: 51e03c97326409b4c793c48e6c151b059ad38e89
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 744e7d89827e169579953474c9e7b37f2dcc653f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150994"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>VSTU에서 만든 프로젝트 파일 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual Studio Tools for Unity는 프로젝트 파일을 생성하는 동안 Unity 스타일의 콜백을 제공합니다. `VisualStudioIntegration.ProjectFileGeneration` 이벤트로 등록하여 다시 생성될 때마다 프로젝트 파일을 수정합니다.  
   
 ## <a name="demonstrates"></a>세부 항목  
@@ -76,4 +70,3 @@ public class ProjectFileHook
   
 ## <a name="see-also"></a>참고 항목  
  [예제: 로그 콜백](../cross-platform/share-the-unity-log-callback-with-vstu.md)
-

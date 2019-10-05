@@ -7,21 +7,19 @@ helpviewer_keywords:
 - error, process
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6d69aa899ffea95c8da7c3513c6f7b0fa6002ee
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 11605b9477397bb217bc2799feb622cb9d5bce37
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569825"
 ---
 # <a name="visual-studio-unrecoverable-process-error"></a>Visual Studio 복구할 수 없는 프로세스 오류
 
-Visual Studio 2017에서는 여러 out-of-proc 프로세스를 사용하여 필요한 백그라운드 작업을 실행합니다(예: Live Unit Testing, 코드 분석기 등). Visual Studio에서 이러한 out-of-proc 프로세스를 실행하면 성능상 이점이 있습니다. 예를 들어 리소스를 많이 사용하는 장기 작업을 실행할 때 더 빠르게 응답합니다. 또한 Visual Studio는 32비트 프로세스이므로 out-of-proc 프로세스를 실행하면 메모리 집약적인 작업을 수행할 때 더 많은 메모리 공간이 확보됩니다.
+Visual Studio에서는 여러 out-of-proc 프로세스를 사용하여 필요한 백그라운드 작업을 실행합니다(예: Live Unit Testing, 코드 분석기 등). Visual Studio에서 이러한 out-of-proc 프로세스를 실행하면 성능상 이점이 있습니다. 예를 들어 리소스를 많이 사용하는 장기 작업을 실행할 때 더 빠르게 응답합니다. 또한 Visual Studio는 32비트 프로세스이므로 out-of-proc 프로세스를 실행하면 메모리 집약적인 작업을 수행할 때 더 많은 메모리 공간이 확보됩니다.
 
 어떤 이유로 *ServiceHub.RoslynCodeAnalysisService.exe* 또는 *ServiceHub.RoslynCodeAnalysisService32.exe* 프로세스가 종료되면 다음 메시지와 함께 팝업 정보 표시줄이 나타납니다.
 

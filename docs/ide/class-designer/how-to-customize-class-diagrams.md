@@ -1,8 +1,6 @@
 ---
 title: '방법: 클래스 다이어그램 사용자 지정(클래스 디자이너)'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, customizing
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: e9030aea-c77d-4cc1-b8f6-b6ca469b692d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4546324a5789c408c22ac610d7a878ad990af2a1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c23e24c9e087ff8ca64f90db1714ca2569bf02c0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913217"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975218"
 ---
 # <a name="how-to-customize-class-diagrams"></a>방법: 클래스 다이어그램 사용자 지정
 
@@ -129,7 +127,6 @@ ms.locfileid: "49913217"
 
 ## <a name="see-also"></a>참고 항목
 
-- [클래스 다이어그램 작업](working-with-class-diagrams.md)
 - [방법: 멤버 표시와 연결 표시 간 변경](how-to-change-between-member-notation-and-association-notation.md)
 - [방법: 기존 형식 보기](how-to-view-existing-types.md)
-- [형식 및 관계 보기](viewing-types-and-relationships.md)
+- [형식 및 관계 보기](designing-and-viewing-classes-and-types.md)

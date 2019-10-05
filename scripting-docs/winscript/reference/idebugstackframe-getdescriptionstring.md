@@ -2,7 +2,6 @@
 title: IDebugStackFrame::GetDescriptionString | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cdc77aa2ef2f9d7c95b0b82d5195a6a73524f055
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f870c6dbc654f8465d201c53443228153ce4a68b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62934606"
 ---
 # <a name="idebugstackframegetdescriptionstring"></a>IDebugStackFrame::GetDescriptionString
-스택 프레임의 짧거나 긴 텍스트 설명을 반환합니다.  
+스택 프레임의 단기 또는 장기 텍스트 설명을 반환합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetDescriptionString(  
    BOOL   fLong,  
    BSTR*  pbstrDescription  
@@ -39,7 +38,7 @@ HRESULT GetDescriptionString(
   
 #### <a name="parameters"></a>매개 변수  
  `fLong`  
- [in] 플래그를 여기서 `TRUE` 긴 설명을 반환 하 고 `FALSE` 대 한 간단한 설명을 반환 합니다.  
+ [in] 플래그를 여기서 `TRUE` 긴 설명을 반환 하 고 `FALSE` 짧은 설명을 반환 합니다.  
   
  `pbstrDescription`  
  [out] 스택 프레임의 설명입니다.  
@@ -52,7 +51,7 @@ HRESULT GetDescriptionString(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 일반적으로 경우 `fLong` 은 `FALSE`,이 메서드는 스택 프레임과 연결 된 함수의 이름만 제공 합니다. 때 `fLong` 은 `TRUE`, 함수 매개 변수 및 기타 관련 정보에도이 방법을 제공할 수 있습니다.  
+ 일반적으로 하는 경우 `fLong` 는 `FALSE`,이 메서드는 스택 프레임과 연결 된 함수의 이름만 제공 합니다. 때 `fLong` 는 `TRUE`,이 메서드를 함수 매개 변수 및 기타 관련 정보를 제공할 수도 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugStackFrame 인터페이스](../../winscript/reference/idebugstackframe-interface.md)

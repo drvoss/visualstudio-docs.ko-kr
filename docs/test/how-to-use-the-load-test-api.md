@@ -9,15 +9,13 @@ helpviewer_keywords:
 ms.assetid: e15567bc-1f21-4feb-b81d-f17ba35cfde5
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: ea28bba2d59515ce8080d577248dd7bddee0c570
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 47707e0430d51a754f7e458ebf68e08124c1e7b5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821498"
 ---
 # <a name="how-to-use-the-load-test-api"></a>방법: 부하 테스트 API 사용
 
@@ -32,27 +30,27 @@ Visual Studio에서는 부하 테스트를 제어하거나 향상시킬 수 있�
 
 ## <a name="to-use-the-loadtesting-namespace"></a>LoadTesting 네임스페이스를 사용하려면
 
-1.  부하 테스트가 포함된 웹 성능 및 부하 테스트 프로젝트를 엽니다.
+1. 부하 테스트가 포함된 웹 성능 및 부하 테스트 프로젝트를 엽니다.
 
-2.  테스트 솔루션에 Visual C# 또는 Visual Basic 클래스 라이브러리 프로젝트를 추가합니다.
+2. 테스트 솔루션에 Visual C# 또는 Visual Basic 클래스 라이브러리 프로젝트를 추가합니다.
 
-3.  클래스 라이브러리 프로젝트에 웹 성능 및 부하 테스트 프로젝트의 참조를 추가합니다.
+3. 클래스 라이브러리 프로젝트에 웹 성능 및 부하 테스트 프로젝트의 참조를 추가합니다.
 
-4.  클래스 라이브러리 프로젝트에 Microsoft.VisualStudio.QualityTools.LoadTestFramework DLL에 대한 참조를 추가합니다.
+4. 클래스 라이브러리 프로젝트에 Microsoft.VisualStudio.QualityTools.LoadTestFramework DLL에 대한 참조를 추가합니다.
 
-5.  클래스 라이브러리 프로젝트에 있는 클래스 파일에 `using` 네임스페이스에 대한 <xref:Microsoft.VisualStudio.TestTools.LoadTesting> 문을 추가합니다.
+5. 클래스 라이브러리 프로젝트에 있는 클래스 파일에 `using` 네임스페이스에 대한 <xref:Microsoft.VisualStudio.TestTools.LoadTesting> 문을 추가합니다.
 
-6.  <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> 인터페이스를 구현하는 공용 클래스를 만듭니다.
+6. <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> 인터페이스를 구현하는 공용 클래스를 만듭니다.
 
-7.  프로젝트를 빌드합니다.
+7. 프로젝트를 빌드합니다.
 
-8.  부하 테스트 편집기를 사용하여 새 부하 테스트 플러그 인을 추가합니다.
+8. 부하 테스트 편집기를 사용하여 새 부하 테스트 플러그 인을 추가합니다.
 
-    1.  부하 테스트의 루트 노드를 마우스 오른쪽 단추로 클릭한 다음, **부하 테스트 플러그 인 추가**를 선택합니다.
+    1. 부하 테스트의 루트 노드를 마우스 오른쪽 단추로 클릭한 다음, **부하 테스트 플러그 인 추가**를 선택합니다.
 
-    2.  **부하 테스트 플러그 인 추가** 대화 상자가 표시됩니다.
+    2. **부하 테스트 플러그 인 추가** 대화 상자가 표시됩니다.
 
-    3.  **선택한 플러그 인에 대한 속성** 창에서 런타임에 사용할 플러그 인의 초기 값을 설정합니다.
+    3. **선택한 플러그 인에 대한 속성** 창에서 런타임에 사용할 플러그 인의 초기 값을 설정합니다.
 
         > [!NOTE]
         > 플러그 인에서 속성을 원하는 만큼 노출할 수 있습니다. 속성을 공용의 설정 가능한 문자열, 정수 또는 부울 값 등의 기본 형식으로 설정하십시오. 나중에 **속성** 창을 사용하여 부하 테스트 플러그 인 속성을 편집할 수도 있습니다.

@@ -1,14 +1,9 @@
 ---
 title: 옵션, 텍스트 편집기, 모든 언어, 탭 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.ResJSON.Tabs
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Tabs
@@ -25,27 +20,26 @@ ms.assetid: 7e208e1d-5e3a-4bf7-a27b-4417e3e049c7
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 940cca6b25ffc04fc017ef8def6dbace7ec35ef9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6d3a031c8e7837d76b5d2c7ab91c5702f59598a0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213332"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693731"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>옵션, 텍스트 편집기, 모든 언어, 탭
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 이 대화 상자에서는 코드 편집기의 기본 동작을 변경할 수 있습니다. 이러한 설정은 HTML 디자이너의 소스 뷰와 같이 코드 편집기를 기반으로 하는 다른 편집기에도 적용됩니다. 이러한 옵션을 표시하려면 **도구** 메뉴에서 **옵션**을 선택합니다. **텍스트 편집기** 폴더 내에서 **모든 언어** 하위 폴더를 확장하고 **탭**을 선택합니다.  
   
 > [!CAUTION]
->  이 페이지에서는 모든 개발 언어에 대한 기본 옵션을 설정합니다. 이 대화 상자에서 옵션을 다시 설정하면 여기서 선택한 항목이 무엇이든 모든 언어의 탭 옵션이 다시 설정됩니다. 하나의 언어에 대한 텍스트 편집기 옵션만 변경하려면 해당 언어의 하위 폴더를 확장하고 해당 옵션 페이지를 선택합니다.  
+> 이 페이지에서는 모든 개발 언어에 대한 기본 옵션을 설정합니다. 이 대화 상자에서 옵션을 다시 설정하면 여기서 선택한 항목이 무엇이든 모든 언어의 탭 옵션이 다시 설정됩니다. 하나의 언어에 대한 텍스트 편집기 옵션만 변경하려면 해당 언어의 하위 폴더를 확장하고 해당 옵션 페이지를 선택합니다.  
   
  특정 프로그래밍 언어에 대한 탭 옵션 페이지에서 다른 설정을 선택하면 여러 **들여쓰기** 옵션의 경우 “개별 텍스트 형식에 대한 들여쓰기 설정이 서로 충돌합니다.” 메시지가 표시되고 여러 **탭** 옵션의 경우 “개별 텍스트 형식에 대한 탭 설정이 서로 충돌합니다.” 메시지가 표시됩니다. 예를 들어 Visual Basic에 대해 **스마트 들여쓰기** 옵션이 선택되지만 Visual C++에 대해 **들여쓰기 차단**이 선택될 경우 이 미리 알림이 표시됩니다.  
   
 > [!NOTE]
->  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
+> 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
   
 ## <a name="indenting"></a>들여쓰기  
  없음  
@@ -75,6 +69,3 @@ ms.locfileid: "49213332"
 ## <a name="see-also"></a>참고 항목  
  [옵션, 텍스트 편집기, 모든 언어](../../ide/reference/options-text-editor-all-languages.md)   
  [옵션 대화 상자, 환경, 일반](../../ide/reference/general-environment-options-dialog-box.md)
-
-
-

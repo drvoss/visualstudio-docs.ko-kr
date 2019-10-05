@@ -1,8 +1,6 @@
 ---
 title: Dia2dump 샘플 | Microsoft Docs
-ms.custom: ''
 ms.date: 07/24/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 492c0893-7043-452f-a020-890a47230d20
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2e44abdce737df335133d5e54b6b022c97f639a
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 1c8b92ae2f607ae449b7b4392fc3638fcdcb6a80
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252283"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715348"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump 샘플
 
@@ -30,11 +28,11 @@ Dia2dump 샘플 Visual Studio와 함께 설치 되 고 솔루션 및 원본 파�
 
 ## <a name="install-the-sample"></a>샘플 설치
 
-샘플 선택 하면 설치 되는 **c + +를 사용한 데스크톱 개발** Visual Studio 설치 관리자에서 워크 로드. Visual Studio를 설치 하 고 특정 워크 로드 및 개별 구성 요소를 선택 하는 방법에 대 한 정보를 참조 하세요 [Visual Studio 설치](../../install/install-visual-studio.md)합니다.
+샘플 선택 하면 설치 되는 **를 사용한 데스크톱 개발 C++**  Visual Studio 설치 관리자에서 워크 로드. Visual Studio를 설치 하 고 특정 워크 로드 및 개별 구성 요소를 선택 하는 방법에 대 한 정보를 참조 하세요 [Visual Studio 설치](../../install/install-visual-studio.md)합니다.
 
 설치 \DIA SDK\Samples\DIA2Dump 라는 하위 디렉터리에서 Visual Studio 설치 디렉터리에는 샘플입니다.
 
-## <a name="build-the-sample"></a>예제를 빌드
+## <a name="build-the-sample"></a>샘플 빌드
 
 기본적으로 설치 디렉터리는 보호 된 디렉터리를 사용 합니다. 즉, 빌드하고이 위치에서 샘플 솔루션을 편집 하려면 개발자 명령 프롬프트 또는 Visual Studio의 인스턴스를 사용 해야 합니다. 빌드를 간소화 하려면 먼저 문서 폴더에 있는 폴더와 같이 다른 디렉터리에 샘플 디렉터리에서 파일을 복사 하 고 샘플 빌드는 것이 좋습니다.
 
@@ -44,13 +42,13 @@ Dia2dump 샘플 Visual Studio와 함께 설치 되 고 솔루션 및 원본 파�
 
 1. **솔루션 탐색기**, Dia2Dump 프로젝트 (솔루션 아님)를 선택 합니다.
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](/cpp/ide/working-with-project-properties)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](/cpp/build/working-with-project-properties)을 참조하세요.
 
-1. 엽니다는 **구성 속성** > **C/c + +** > **일반** 속성 페이지.
+1. 엽니다는 **구성 속성** > **C /C++**  > **일반** 속성 페이지.
 
 1. 에 **Additional Include Directories** 속성을 dropdown 컨트롤을 선택 하 고 선택 **편집**합니다.
 
-1. 에 **Additional Include Directories** 대화 상자에서 편집 필드에 입력을 `$(VSInstallDir)DIA SDK\include` 디렉터리입니다. 컴파일러 dia2.h 파일을 찾을 수 있도록 보장 하기 위해이 디렉터리를 추가 합니다. 선택할 **확인** 변경 내용을 저장 합니다.
+1. 에 **Additional Include Directories** 대화 상자에서 편집 필드에 입력을 `$(VSInstallDir)DIA SDK\include` 디렉터리입니다. 컴파일러 dia2.h 파일을 찾을 수 있도록 보장 하기 위해이 디렉터리를 추가 합니다. **확인**을 선택하여 변경 내용을 저장합니다.
 
 1. 선택할 **확인** 프로젝트 속성에 변경 내용을 저장 합니다.
 
@@ -66,7 +64,7 @@ Dia2dump 샘플 Visual Studio와 함께 설치 되 고 솔루션 및 원본 파�
 
 ## <a name="run-the-dia2dump-sample"></a>Dia2Dump 샘플 실행
 
-Dia2Dump.exe는 msdia 의존*버전*.dll COM 서버를 해당 서비스를 제공 합니다. Visual Studio 2015 및 Visual Studio 2017에서는 버전 msdia140.dll을입니다. 경우는 msdia*버전*.dll COM 서버 초기화 되지, dia2dump.exe 사용할 수 있도록 등록 해야 합니다. DIA SDK 디렉터리에는 x86을 포함 하는 bin 하위 디렉터리에 DLL의 버전입니다. 버전 x64 아키텍처 컴퓨터 bin\amd64, 이며 ARM에 대 한 버전 bin\arm에서. Dll을 등록 하려면 상승 된 개발자 명령 프롬프트 창을 열고 컴퓨터 아키텍처에 대 한 버전이 포함 된 디렉터리로 변경 합니다. 명령을 입력 `regsvr32 msdia140.dll` COM 서버를 등록 합니다.
+Dia2Dump.exe는 msdia 의존*버전*.dll COM 서버를 해당 서비스를 제공 합니다. Visual Studio 2015부터 버전이 msdia140.dll을 합니다. 경우는 msdia*버전*.dll COM 서버 초기화 되지, dia2dump.exe 사용할 수 있도록 등록 해야 합니다. DIA SDK 디렉터리에는 x86을 포함 하는 bin 하위 디렉터리에 DLL의 버전입니다. 버전 x64 아키텍처 컴퓨터 bin\amd64, 이며 ARM에 대 한 버전 bin\arm에서. Dll을 등록 하려면 상승 된 개발자 명령 프롬프트 창을 열고 컴퓨터 아키텍처에 대 한 버전이 포함 된 디렉터리로 변경 합니다. 명령을 입력 `regsvr32 msdia140.dll` COM 서버를 등록 합니다.
 
 ### <a name="to-run-the-sample"></a>이 샘플을 실행하려면
 
@@ -78,4 +76,4 @@ Dia2Dump.exe는 msdia 의존*버전*.dll COM 서버를 해당 서비스를 제�
 
 ## <a name="see-also"></a>참고자료
 
-- [Visual Studio 프로젝트 포팅, 마이그레이션, 업그레이드](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)  
+- [Visual Studio 프로젝트 포팅, 마이그레이션, 업그레이드](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)

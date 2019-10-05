@@ -1,8 +1,6 @@
 ---
 title: 설정 페이지, 프로젝트 디자이너
 ms.date: 06/14/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - ApplicationSettingsOverview
@@ -11,19 +9,19 @@ helpviewer_keywords:
 - Project Designer, Settings page
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c0f7b47b56522f5c4aeef0054e6b7b52434ff87
-ms.sourcegitcommit: 562867be91ee1aebbed4658c8de0949f422860fa
+ms.openlocfilehash: d7422b87d0f812de2d99d59c2932e9aa2b9e6315
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/14/2018
-ms.locfileid: "35603179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62989953"
 ---
 # <a name="settings-page-project-designer"></a>설정 페이지, 프로젝트 디자이너
 
-프로젝트 디자이너의 **설정** 페이지를 사용하여 프로젝트의 응용 프로그램 설정을 지정합니다. 응용 프로그램 설정을 통해 응용 프로그램에 대한 속성 설정 및 기타 정보를 동적으로 저장 및 검색할 수 있습니다. 또한 클라이언트 컴퓨터에서 사용자 지정 응용 프로그램 및 사용자 기본 설정을 유지 관리할 수도 있습니다. 자세한 내용은 [응용 프로그램 설정 관리](../managing-application-settings-dotnet.md)를 참조하세요.
+프로젝트 디자이너의 **설정** 페이지를 사용하여 프로젝트의 애플리케이션 설정을 지정합니다. 애플리케이션 설정을 통해 애플리케이션에 대한 속성 설정 및 기타 정보를 동적으로 저장 및 검색할 수 있습니다. 또한 클라이언트 컴퓨터에서 사용자 지정 애플리케이션 및 사용자 기본 설정을 유지 관리할 수도 있습니다. 자세한 내용은 [애플리케이션 설정 관리](../managing-application-settings-dotnet.md)를 참조하세요.
 
 **설정** 페이지에 액세스하려면 **솔루션 탐색기**에서 프로젝트 노드를 선택하고 **프로젝트** > **속성**을 선택합니다. 프로젝트 디자이너가 나타나면 **설정** 탭을 선택합니다.
 
@@ -33,11 +31,11 @@ ms.locfileid: "35603179"
 
 **동기화**
 
-**동기화**는 런타임에 또는 디버깅 중에 응용 프로그램이 사용하는 사용자 범위 설정을 디자인 타임 시 정의된 기본값으로 복원합니다. 데이터를 복원하려면 런타임에 생성된 응용 프로그램 관련 파일을 프로젝트 데이터가 아닌 디스크에서 제거합니다.
+**동기화**는 런타임에 또는 디버깅 중에 애플리케이션이 사용하는 사용자 범위 설정을 디자인 타임 시 정의된 기본값으로 복원합니다. 데이터를 복원하려면 런타임에 생성된 애플리케이션 관련 파일을 프로젝트 데이터가 아닌 디스크에서 제거합니다.
 
 **웹 설정 로드**
 
-**웹 설정 로드**는 인증된 사용자 또는 익명 사용자에 대한 설정을 로드할 수 있는 **로그인** 대화 상자를 표시합니다. 이 단추는 **서비스** 페이지에서 클라이언트 응용 프로그램 서비스를 활성화하고 **웹 설정 서비스 위치**를 지정한 경우에만 활성화됩니다.
+**웹 설정 로드**는 인증된 사용자 또는 익명 사용자에 대한 설정을 로드할 수 있는 **로그인** 대화 상자를 표시합니다. 이 단추는 **서비스** 페이지에서 클라이언트 애플리케이션 서비스를 활성화하고 **웹 설정 서비스 위치**를 지정한 경우에만 활성화됩니다.
 
 **코드 보기**
 
@@ -47,9 +45,9 @@ C# 프로젝트의 경우 **코드 보기** 단추를 통해 *Settings.cs* 파�
 Properties.Settings.Default.Save();
 ```
 
-Visual Basic 프로젝트의 경우 **코드 보기** 단추를 통해 *Settings.vb* 파일의 코드를 볼 수 있습니다. 이 파일은 `My.Settings` 개체에서 특정 이벤트를 처리할 수 있도록 하는 `MySettings` 클래스를 정의합니다. `My.Settings` 개체를 사용하여 응용 프로그램 설정에 액세스하는 방법에 대한 자세한 내용은 [응용 프로그램 설정 액세스](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)를 참조하세요.
+Visual Basic 프로젝트의 경우 **코드 보기** 단추를 통해 *Settings.vb* 파일의 코드를 볼 수 있습니다. 이 파일은 `My.Settings` 개체에서 특정 이벤트를 처리할 수 있도록 하는 `MySettings` 클래스를 정의합니다. `My.Settings` 개체를 사용하여 애플리케이션 설정에 액세스하는 방법에 대한 자세한 내용은 [애플리케이션 설정 액세스](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)를 참조하세요.
 
-응용 프로그램 설정에 대한 자세한 내용은 [Windows Forms에 대한 응용 프로그램 설정 개요](/dotnet/framework/winforms/advanced/application-settings-for-windows-forms)를 참조하세요.
+애플리케이션 설정에 대한 자세한 내용은 [Windows Forms에 대한 애플리케이션 설정 개요](/dotnet/framework/winforms/advanced/application-settings-for-windows-forms)를 참조하세요.
 
 **액세스 한정자**
 
@@ -59,17 +57,17 @@ Visual C# 프로젝트의 경우 액세스 한정자는 **Internal** 또는 **Pu
 
 Visual Basic 프로젝트의 경우 액세스 한정자는 **Friend** 또는 **Public**일 수 있습니다.
 
-기본적으로 설정은 C#에서는 **Internal**이고 Visual Basic에서는 **Friend**입니다. Visual Studio에서 도우미 클래스를 **Internal** 또는 **Friend**로 생성하는 경우 실행 가능한(*.exe*) 응용 프로그램은 클래스 라이브러리(*.dll* 파일)에 추가한 리소스 및 설정에 액세스할 수 없습니다. 클래스 라이브러리에서 리소스 및 설정을 공유해야 하는 경우 액세스 한정자를 **Public**으로 설정합니다.
+기본적으로 설정은 C#에서는 **Internal**이고 Visual Basic에서는 **Friend**입니다. Visual Studio에서 도우미 클래스를 **Internal** 또는 **Friend**로 생성하는 경우 실행 가능한(*.exe*) 애플리케이션은 클래스 라이브러리(*.dll* 파일)에 추가한 리소스 및 설정에 액세스할 수 없습니다. 클래스 라이브러리에서 리소스 및 설정을 공유해야 하는 경우 액세스 한정자를 **Public**으로 설정합니다.
 
-설정 도우미 클래스에 대한 자세한 내용은 [응용 프로그램 설정 관리](../managing-application-settings-dotnet.md)를 참조하세요.
+설정 도우미 클래스에 대한 자세한 내용은 [애플리케이션 설정 관리](../managing-application-settings-dotnet.md)를 참조하세요.
 
 ## <a name="settings-grid"></a>설정 표
 
-**설정 표**는 응용 프로그램 설정을 구성하는 데 사용됩니다. 이 표에는 다음과 같은 열이 포함됩니다.
+**설정 표**는 애플리케이션 설정을 구성하는 데 사용됩니다. 이 표에는 다음과 같은 열이 포함됩니다.
 
 **이름**
 
-이 필드에 응용 프로그램 설정 이름을 입력합니다.
+이 필드에 애플리케이션 설정 이름을 입력합니다.
 
 **Type**
 
@@ -77,17 +75,17 @@ Visual Basic 프로젝트의 경우 액세스 한정자는 **Friend** 또는 **P
 
 **범위**
 
-**응용 프로그램** 또는 **사용자**를 선택합니다.
+**애플리케이션** 또는 **사용자**를 선택합니다.
 
-연결 문자열과 같은 응용 프로그램 범위 설정은 응용 프로그램에 연결됩니다. 사용자는 런타임에 응용 프로그램 범위 설정을 변경할 수 없습니다.
+연결 문자열과 같은 애플리케이션 범위 설정은 애플리케이션에 연결됩니다. 사용자는 런타임에 애플리케이션 범위 설정을 변경할 수 없습니다.
 
 시스템 글꼴과 같은 사용자 범위 설정은 사용자 기본 설정에 사용하기 위한 것입니다. 사용자는 런타임에 이를 변경할 수 있습니다.
 
 **값**
 
-응용 프로그램 설정과 연결된 데이터 또는 값입니다. 예를 들어 설정이 글꼴인 경우 값은 **Verdana, 9.75pt, style=Bold**일 수 있습니다.
+애플리케이션 설정과 연결된 데이터 또는 값입니다. 예를 들어 설정이 글꼴인 경우 값은 **Verdana, 9.75pt, style=Bold**일 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 
-- [응용 프로그램 설정 관리](../managing-application-settings-dotnet.md)
-- [응용 프로그램 설정 액세스(Visual Basic)](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)
+- [애플리케이션 설정 관리](../managing-application-settings-dotnet.md)
+- [애플리케이션 설정 액세스(Visual Basic)](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)

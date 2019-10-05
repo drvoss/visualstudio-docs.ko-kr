@@ -2,18 +2,17 @@
 title: Visual Studio에서 인덱싱 작업 영역 | Microsoft Docs
 ms.date: 02/21/2018
 ms.topic: conceptual
-ms.assetid: 3163e98c-1c79-48a7-813f-7923be894ba1
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90722b540fd0569ab54ff945f5c1caa43668dccf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9bf7df777d27003fa5763debc772a8804ec28ef5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899745"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952712"
 ---
 # <a name="workspace-indexing"></a>작업 영역 인덱싱
 

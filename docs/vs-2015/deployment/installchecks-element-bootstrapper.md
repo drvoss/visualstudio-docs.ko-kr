@@ -1,14 +1,9 @@
 ---
 title: '&lt;InstallChecks&gt; 요소 (부트스트래퍼) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: ad329c87-b0ad-4304-84de-ae9496514c42
 caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 03f489c22c8912e332f7d01e6ec4ac48aacda30b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: d6156b729835d16d2e83cc76507ad096528994d4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891078"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189004"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; 요소 (부트스트래퍼)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,10 +77,10 @@ ms.locfileid: "49891078"
   
 |특성|설명|  
 |---------------|-----------------|  
-|`Property`|필수. 결과 저장 하는 속성의 이름입니다. 아래의 테스트에서이 속성을 참조할 수 있습니다 합니다 `InstallConditions` 자식 요소의는 `Command` 요소입니다. 자세한 내용은 [ \<명령 > 요소](../deployment/commands-element-bootstrapper.md)합니다.|  
-|`Name`|필수. 확인할 어셈블리의 정규화 된 이름입니다.|  
-|`PublicKeyToken`|필수. 강력한 이름의 어셈블리와 연결 된 공개 키의 약식입니다. GAC에 저장 된 모든 어셈블리 이름, 버전, 및 공개 키에 있어야 합니다.|  
-|`Version`|필수. 어셈블리의 버전입니다.<br /><br /> 버전 번호의 형식은 \< *주 버전*>.\< *부 버전*>.\< *버전을 빌드합니다*>.\< *수정 버전*>.|  
+|`Property`|필수 요소. 결과 저장 하는 속성의 이름입니다. 아래의 테스트에서이 속성을 참조할 수 있습니다 합니다 `InstallConditions` 자식 요소의는 `Command` 요소입니다. 자세한 내용은 [ \<명령 > 요소](../deployment/commands-element-bootstrapper.md)합니다.|  
+|`Name`|필수 요소. 확인할 어셈블리의 정규화 된 이름입니다.|  
+|`PublicKeyToken`|필수 요소. 강력한 이름의 어셈블리와 연결 된 공개 키의 약식입니다. GAC에 저장 된 모든 어셈블리 이름, 버전, 및 공개 키에 있어야 합니다.|  
+|`Version`|필수 요소. 어셈블리의 버전입니다.<br /><br /> 버전 번호의 형식은 \< *주 버전*>.\< *부 버전*>.\< *버전을 빌드합니다*>.\< *수정 버전*>.|  
 |`Language`|선택 사항입니다. 지역화 된 어셈블리의 언어입니다. 기본값은 `neutral`입니다.|  
 |`ProcessorArchitecture`|선택 사항입니다. 이 설치에서 대상 컴퓨터 프로세서입니다. 기본값은 `msil`입니다.|  
   
@@ -96,20 +91,20 @@ ms.locfileid: "49891078"
   
 |특성|설명|  
 |---------------|-----------------|  
-|`Property`|필수. 결과 저장 하는 속성의 이름입니다. 아래의 테스트에서이 속성을 참조할 수 있습니다 합니다 `InstallConditions` 자식 요소의는 `Command` 요소입니다. 자세한 내용은 [ \<명령 > 요소](../deployment/commands-element-bootstrapper.md)합니다.|  
-|`PackageFile`|필수. 외부 프로그램을 실행 합니다. 프로그램 설치 배포 패키지의 일부 여야 합니다.|  
+|`Property`|필수 요소. 결과 저장 하는 속성의 이름입니다. 아래의 테스트에서이 속성을 참조할 수 있습니다 합니다 `InstallConditions` 자식 요소의는 `Command` 요소입니다. 자세한 내용은 [ \<명령 > 요소](../deployment/commands-element-bootstrapper.md)합니다.|  
+|`PackageFile`|필수 요소. 외부 프로그램을 실행 합니다. 프로그램 설치 배포 패키지의 일부 여야 합니다.|  
 |`Arguments`|선택 사항입니다. 으로 명명 된 실행 파일에 명령줄 인수를 제공 `PackageFile`합니다.|  
   
-## <a name="filecheck"></a>체크  
+## <a name="filecheck"></a>FileCheck  
  이 요소는 선택적 자식 요소의 `InstallChecks`합니다. 각 인스턴스에 대해 `FileCheck`, 부트스트래퍼는 명명 된 파일이 있으면 및 파일의 버전 번호를 반환 하는지 여부를 확인 합니다. 부트스트래퍼에서 명명 한 속성 설정 파일에 버전 번호를 찾을 수 없는 경우 `Property` 0입니다. 파일이 없으면 `Property` 값으로 설정 되지 않은 합니다.  
   
  `FileCheck` 요소를 포함 하지 하 고 다음과 같은 특성이 있습니다.  
   
 |특성|설명|  
 |---------------|-----------------|  
-|`Property`|필수. 결과 저장 하는 속성의 이름입니다. 아래의 테스트에서이 속성을 참조할 수 있습니다 합니다 `InstallConditions` 자식 요소의는 `Command` 요소입니다. 자세한 내용은 [ \<명령 > 요소](../deployment/commands-element-bootstrapper.md)합니다.|  
-|`FileName`|필수. 검색할 파일의 이름입니다.|  
-|`SearchPath`|필수. 디스크 또는 파일을 검색할 폴더입니다. 경우 상대 경로 여야 합니다이 `SpecialFolder` 할당 된이 고, 그렇지는 절대 경로 여야 합니다.|  
+|`Property`|필수 요소. 결과 저장 하는 속성의 이름입니다. 아래의 테스트에서이 속성을 참조할 수 있습니다 합니다 `InstallConditions` 자식 요소의는 `Command` 요소입니다. 자세한 내용은 [ \<명령 > 요소](../deployment/commands-element-bootstrapper.md)합니다.|  
+|`FileName`|필수 요소. 검색할 파일의 이름입니다.|  
+|`SearchPath`|필수 요소. 디스크 또는 파일을 검색할 폴더입니다. 경우 상대 경로 여야 합니다이 `SpecialFolder` 할당 된이 고, 그렇지는 절대 경로 여야 합니다.|  
 |`SpecialFolder`|선택 사항입니다. Windows 또는 특별 한 의미가 있는 폴더 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]합니다. 기본적으로 해석 됩니다 `SearchPath` 절대 경로로 합니다. 유효한 값은 다음과 같습니다.<br /><br /> `AppDataFolder`. 이 응용 프로그램 데이터 폴더 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램; 현재 사용자에 게 특정 합니다.<br /><br /> `CommonAppDataFolder`. 모든 사용자가 사용 되는 응용 프로그램 데이터 폴더입니다.<br /><br /> `CommonFilesFolder`. 현재 사용자에 대 한 공용 파일 폴더입니다.<br /><br /> `LocalDataAppFolder`. 고정 된 응용 프로그램 데이터 폴더입니다.<br /><br /> `ProgramFilesFolder`. 32 비트 응용 프로그램에 대 한 표준 Program Files 폴더를 지정 합니다.<br /><br /> `StartUpFolder`. 시스템 시작 시 시작 하는 모든 응용 프로그램을 포함 하는 폴더입니다.<br /><br /> `SystemFolder`. 32 비트 시스템 Dll을 포함 하는 폴더입니다.<br /><br /> `WindowsFolder`. Windows 시스템 설치가 포함 된 폴더입니다.<br /><br /> `WindowsVolume`. 드라이브 또는 Windows 시스템 설치를 포함 하는 파티션입니다.|  
 |`SearchDepth`|선택 사항입니다. 명명된 된 파일에 대 한 하위 폴더를 검색 하는 깊이입니다. 검색에는 깊이 우선 됩니다. 기본값은 0으로 지정 된 최상위 폴더에 검색을 제한 하는 `SpecialFolder` 하 고 **SearchPath**합니다.|  
   
@@ -120,8 +115,8 @@ ms.locfileid: "49891078"
   
 |특성|설명|  
 |---------------|-----------------|  
-|`Property`|필수. 결과 저장 하는 속성의 이름입니다. 아래의 테스트에서이 속성을 참조할 수 있습니다 합니다 `InstallConditions` 자식 요소의는 `Command` 요소입니다. 자세한 내용은 [ \<명령 > 요소](../deployment/commands-element-bootstrapper.md)합니다.|  
-|`Product`|필수. 설치 된 제품에 대 한 GUID입니다.|  
+|`Property`|필수 요소. 결과 저장 하는 속성의 이름입니다. 아래의 테스트에서이 속성을 참조할 수 있습니다 합니다 `InstallConditions` 자식 요소의는 `Command` 요소입니다. 자세한 내용은 [ \<명령 > 요소](../deployment/commands-element-bootstrapper.md)합니다.|  
+|`Product`|필수 요소. 설치 된 제품에 대 한 GUID입니다.|  
 |`Feature`|선택 사항입니다. 설치 된 응용 프로그램의 특정 기능에 대 한 GUID입니다.|  
   
 ## <a name="registrycheck"></a>RegistryCheck  
@@ -131,8 +126,8 @@ ms.locfileid: "49891078"
   
 |특성|설명|  
 |---------------|-----------------|  
-|`Property`|필수. 결과 저장 하는 속성의 이름입니다. 아래의 테스트에서이 속성을 참조할 수 있습니다 합니다 `InstallConditions` 자식 요소의는 `Command` 요소입니다. 자세한 내용은 [ \<명령 > 요소](../deployment/commands-element-bootstrapper.md)합니다.|  
-|`Key`|필수. 레지스트리 키의 이름입니다.|  
+|`Property`|필수 요소. 결과 저장 하는 속성의 이름입니다. 아래의 테스트에서이 속성을 참조할 수 있습니다 합니다 `InstallConditions` 자식 요소의는 `Command` 요소입니다. 자세한 내용은 [ \<명령 > 요소](../deployment/commands-element-bootstrapper.md)합니다.|  
+|`Key`|필수 요소. 레지스트리 키의 이름입니다.|  
 |`Value`|선택 사항입니다. 검색할 레지스트리 값의 이름입니다. 기본값의 텍스트를 반환 하는 기본값은입니다. `Value` DWORD 또는 문자열이 있어야 합니다.|  
   
 ## <a name="registryfilecheck"></a>RegistryFileCheck  
@@ -142,8 +137,8 @@ ms.locfileid: "49891078"
   
 |특성|설명|  
 |---------------|-----------------|  
-|`Property`|필수. 결과 저장 하는 속성의 이름입니다. 아래의 테스트에서이 속성을 참조할 수 있습니다 합니다 `InstallConditions` 자식 요소의는 `Command` 요소입니다. 자세한 내용은 [ \<명령 > 요소](../deployment/commands-element-bootstrapper.md)합니다.|  
-|`Key`|필수. 레지스트리 키의 이름입니다. 있지 않으면 해당 값을 파일 경로로 해석 됩니다는 `File` 특성이 설정 되어 있습니다. 이 키가 없으면 `Property` 설정 되지 않았습니다.|  
+|`Property`|필수 요소. 결과 저장 하는 속성의 이름입니다. 아래의 테스트에서이 속성을 참조할 수 있습니다 합니다 `InstallConditions` 자식 요소의는 `Command` 요소입니다. 자세한 내용은 [ \<명령 > 요소](../deployment/commands-element-bootstrapper.md)합니다.|  
+|`Key`|필수 요소. 레지스트리 키의 이름입니다. 있지 않으면 해당 값을 파일 경로로 해석 됩니다는 `File` 특성이 설정 되어 있습니다. 이 키가 없으면 `Property` 설정 되지 않았습니다.|  
 |`Value`|선택 사항입니다. 검색할 레지스트리 값의 이름입니다. 기본값의 텍스트를 반환 하는 기본값은입니다. `Value` 문자열 이어야 합니다.|  
 |`FileName`|선택 사항입니다. 파일의 이름입니다. 레지스트리 키에서 얻은 값 디렉터리 경로 간주 됩니다 지정 하는 경우 및이 이름에 추가 됩니다. 지정 하지 않으면 레지스트리에서 반환 된 값 파일의 전체 경로를 가정 합니다.|  
 |`SearchDepth`|선택 사항입니다. 명명된 된 파일에 대 한 하위 폴더를 검색 하는 깊이입니다. 검색에는 깊이 우선 됩니다. 기본값은 0으로, 레지스트리 키의 값으로 지정 된 최상위 폴더에 검색을 제한 합니다.|  
@@ -172,10 +167,10 @@ ms.locfileid: "49891078"
 ## <a name="predefined-properties"></a>미리 정의 된 속성  
  다음 표에서 `BypassIf` 고 `FailIf` 요소:  
   
-|속성|노트|가능한 값|  
+|속성|참고|가능한 값|  
 |--------------|-----------|---------------------|  
-|`Version9X`|Windows 9 X 운영 체제의 버전 번호입니다.|4.10 Windows 98 =|  
-|`VersionNT`|Windows NT 기반 운영 체제의 버전 번호입니다.|Major.minor.servicepack<br /><br /> 5.0 Windows 2000 =<br /><br /> 5.1.0 = Windows XP<br /><br /> 5.1.2 = Windows XP Professional SP2<br /><br /> 5.2.0 = Windows Server 2003|  
+|`Version9X`|Windows 9 X 운영 체제의 버전 번호입니다.|4.10 = Windows 98|  
+|`VersionNT`|Windows NT 기반 운영 체제의 버전 번호입니다.|Major.Minor.ServicePack<br /><br /> 5.0 = Windows 2000<br /><br /> 5.1.0 = Windows XP<br /><br /> 5.1.2 = Windows XP Professional SP2<br /><br /> 5.2.0 = Windows Server 2003|  
 |`VersionNT64`|64 비트 Windows NT 기반 운영 체제의 버전 번호입니다.|앞서 언급 한 것 처럼 동일 합니다.|  
 |`VersionMsi`|Windows Installer 서비스의 버전 번호입니다.|2.0 = Windows Installer 2.0|  
 |`AdminUser`|사용자는 Windows NT 기반 운영 체제에 대 한 관리자 권한이 있는지 여부를 지정 합니다.|0 = 관리자 권한 없음<br /><br /> 1 = 관리자 권한|  
@@ -187,9 +182,6 @@ ms.locfileid: "49891078"
     <FailIf Property="Version9X" Compare="VersionLessThan" Value="4.10" String="InvalidPlatform"/>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [\<명령 > 요소](../deployment/commands-element-bootstrapper.md)   
  [제품 및 패키지 스키마 참조](../deployment/product-and-package-schema-reference.md)
-
-
-

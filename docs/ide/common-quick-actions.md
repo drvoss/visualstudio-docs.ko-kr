@@ -1,23 +1,22 @@
 ---
 title: 일반적인 빠른 작업
+description: C# 및 Visual Basic에 대해 가장 인기 있는 빠른 작업에는 키워드 또는 기호 철자 수정, 병합 충돌 해결, 필요한 가져오기 제거, 형식 생성, 로컬 변수 지정 등이 포함됩니다.
 ms.date: 03/28/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c6eaa3b776e7a4c4e90795265f94af2d0df994b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2ceedf18b936c0b1e8553ceb3bb1fdbc75035dfa
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894016"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551449"
 ---
 # <a name="common-quick-actions"></a>일반적인 빠른 작업
 
@@ -31,7 +30,7 @@ ms.locfileid: "49894016"
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>철자가 틀린 기호 또는 키워드 수정
 
-Visual Studio에서 실수로 형식 또는 키워드의 철자를 잘못 입력한 경우 이 빠른 작업은 자동으로 수정합니다. 이러한 항목은 전구 메뉴에 **‘철자가 잘못된 단어’를 ‘올바른 단어’로 변경**으로 표시됩니다. 예:
+Visual Studio에서 실수로 형식 또는 키워드의 철자를 잘못 입력한 경우 이 빠른 작업은 자동으로 수정합니다. 이러한 항목은 전구 메뉴에 **‘철자가 잘못된 단어’를 ‘올바른 단어’로 변경**으로 표시됩니다.   예:
 
 ```csharp
 // Before
@@ -160,7 +159,7 @@ public MyMethod()
 
 ### <a name="remove-type-from-default-value-expression"></a>기본값 식에서 형식 제거
 
-이 빠른 작업은 기본 값 식에서 값 형식을 제거하고 컴파일러가 식의 형식을 유추할 수 있는 경우 [ 리터럴](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference)을 사용합니다.
+이 빠른 작업은 기본 값 식에서 값 형식을 제거하고 컴파일러가 식의 형식을 유추할 수 있는 경우 [ 리터럴](/dotnet/csharp/language-reference/operators/default#default-literal)을 사용합니다.
 
 ```csharp
 // Before

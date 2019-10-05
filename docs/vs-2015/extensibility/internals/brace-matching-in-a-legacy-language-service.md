@@ -1,27 +1,22 @@
 ---
 title: 레거시 언어 서비스의 중괄호 일치 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - brace matching
 - language services [managed package framework], brace matching
 ms.assetid: 4e3d0a70-f22f-49dd-92d8-edf48ab62b52
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 70ad3062a4cbbce8ef46c3afe8851382949fe3f3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d6d7243c8032b22f9abe89021af138f638729011
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753219"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437641"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>레거시 언어 서비스의 중괄호 일치
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,10 +25,10 @@ ms.locfileid: "51753219"
   
  쌍 및 삼중 쌍 이라는 두 가지 또는 세 개의 동시 발생 요소를 일치 시킬 수 있습니다. 삼중 쌍은 세 개의 동시 발생 요소의 집합입니다. 예를 들어 C#에서 `foreach` 문을 forms 3: "`foreach()`","`{`", 및 "`}`"입니다. 세 요소 모두에 닫는 중괄호를 입력할 때 강조 표시 됩니다.  
   
- 레거시 언어 서비스는 VSPackage의 일부로 구현 됩니다 있지만 MEF 확장을 사용 하는 언어 서비스 기능을 구현 하는 최신 방법입니다. 중괄호 일치를 구현 하는 새로운 방법에 대 한 자세한 내용을 참조 하세요 [연습: 일치 하는 중괄호 표시](../../extensibility/walkthrough-displaying-matching-braces.md)합니다.  
+ 레거시 언어 서비스는 VSPackage의 일부로 구현 됩니다 있지만 MEF 확장을 사용 하는 언어 서비스 기능을 구현 하는 최신 방법입니다. 중괄호 일치를 구현 하는 새로운 방법에 대 한 자세한 참조 [연습: 괄호 일치 표시](../../extensibility/walkthrough-displaying-matching-braces.md)합니다.  
   
 > [!NOTE]
->  편집기를 사용 하 여 새 API 최대한 빨리 시작 하는 것이 좋습니다. 언어 서비스의 성능이 향상 되 고 새 편집기 기능을 활용할 수 있습니다.  
+> 편집기를 사용 하 여 새 API 최대한 빨리 시작 하는 것이 좋습니다. 언어 서비스의 성능이 향상 되 고 새 편집기 기능을 활용할 수 있습니다.  
   
  합니다 <xref:Microsoft.VisualStudio.Package.AuthoringSink> 클래스는 두 쌍을 지원 하 고 사용 하 여 데이터 집합을 가져와 합니다 <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A> 및 <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A> 메서드.  
   
@@ -145,4 +140,3 @@ namespace TestLanguagePackage
 ## <a name="see-also"></a>참고 항목  
  [레거시 언어 서비스 기능](../../extensibility/internals/legacy-language-service-features1.md)   
  [레거시 언어 서비스 파서 및 검사기](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
-

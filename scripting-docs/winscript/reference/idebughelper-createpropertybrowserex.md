@@ -2,7 +2,6 @@
 title: IDebugHelper::CreatePropertyBrowserEx | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9bc219ea5c2ff9ff2860d36cd475985d825ae59
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 01e63d1588fd1e25f3415f22450ed5145752d711
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979203"
 ---
 # <a name="idebughelpercreatepropertybrowserex"></a>IDebugHelper::CreatePropertyBrowserEx
-VARIANT를 배치 하 고 VARIANT 값 이나 VARTYPE 형식 문자열을 사용자 지정 변환 허용 하는 속성 브라우저를 반환 합니다.  
+VARIANT를 래핑하고 VARIANT 값 또는 VARTYPE 형식 문자열을 사용자 지정 변환에 대 한 허용 하는 속성 브라우저를 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT CreatePropertyBrowserEx(  
    VARIANT*                  pvar,  
    LPCOLESTR                 bstrName,  
@@ -42,16 +41,16 @@ HRESULT CreatePropertyBrowserEx(
   
 #### <a name="parameters"></a>매개 변수  
  `pvar`  
- [in] 찾아보려면 루트 variant입니다.  
+ [in] 이동할 루트 variant입니다.  
   
  `bstrName`  
- [in] 루트 부여할 이름입니다.  
+ [in] 루트를 지정할 이름입니다.  
   
  `pdat`  
- [in] 스레드가 요청 속성입니다. 이 매개 변수가 NULL 이면 없습니다 마샬링 수행 됩니다.  
+ [in] 속성을 요청 하는 스레드입니다. 이 매개 변수가 NULL 이면 없습니다 마샬링을 수행 됩니다.  
   
  `pdf`  
- [in] 변형에 대 한 사용자 지정 서식을 제공 하는 개체입니다.  
+ [in] 변형에 대 한 사용자 지정 서식 지정을 제공 하는 개체입니다.  
   
  `ppdob`  
  [out] 속성 브라우저입니다.  
@@ -64,7 +63,7 @@ HRESULT CreatePropertyBrowserEx(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 VARIANT를 배치 하 고 VARIANT 값 이나 VARTYPE 형식 문자열을 사용자 지정 변환 허용 하는 속성 브라우저를 반환 합니다.  
+ 이 메서드는 VARIANT를 래핑하고 VARIANT 값 또는 VARTYPE 형식 문자열을 사용자 지정 변환에 대 한 허용 하는 속성 브라우저를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugHelper::CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)   

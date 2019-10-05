@@ -1,9 +1,8 @@
 ---
 title: JavaScript IntelliSense
 ms.date: 06/28/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
+ms.technology: vs-javascript
 helpviewer_keywords:
 - IntelliSense [JavaScript]
 - <reference> JavaScript XML tag
@@ -21,31 +20,31 @@ helpviewer_keywords:
 - IntelliSense [JavaScript], about
 - IntelliSense extensibility [JavaScript]
 - XML documentation comments [JavaScript]
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: mikejo5000
+ms.author: mikejo
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 666ce7d65269992af486e59c6b5ce11e94da736b
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 6ee40d877af75469dcc1abc176d67f43c8bdcfb3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348130"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62538176"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
-[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]에서는 즉시 사용 가능한 강력한 JavaScript 편집 환경을 제공합니다. TypeScript 기반 언어 서비스로 제공되는 Visual Studio는 더 다양한 IntelliSense, 최신 JavaScript 기능 지원 및 정의로 이동, 리팩터링 등의 향상된 생산성 기능을 제공합니다.
+Visual Studio에서는 즉시 사용 가능한 강력한 JavaScript 편집 환경을 제공합니다. TypeScript 기반 언어 서비스로 제공되는 Visual Studio는 더 다양한 IntelliSense, 최신 JavaScript 기능 지원 및 정의로 이동, 리팩터링 등의 향상된 생산성 기능을 제공합니다.
 
 > [!NOTE]
-> [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]의 JavaScript Language Service에는 새로운 언어 서비스용 엔진("Salsa"라고 함)이 사용됩니다. 자세한 내용은 이 항목에 포함되어 있고 이 [블로그 게시물](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/more-productive-javascript-in-visual-studio-2017-rc/)을 참조할 수도 있습니다. 새 편집 환경은 일반적으로 Visual Studio Code에도 적용됩니다. 자세한 내용은 [VS 코드 문서](https://code.visualstudio.com/docs/languages/javascript)를 참조하세요.
+> Visual Studio 2017부터 JavaScript 언어 서비스에는 새로운 언어 서비스용 엔진("Salsa"라고 함)이 사용됩니다. 자세한 내용은 이 문서에 포함되어 있고 이 [블로그 게시물](https://devblogs.microsoft.com/visualstudio/previewing-salsa-javascript-language-service-visual-studio-15/)을 참조할 수도 있습니다. 새 편집 환경은 일반적으로 Visual Studio Code에도 적용됩니다. 자세한 내용은 [VS 코드 문서](https://code.visualstudio.com/docs/languages/javascript)를 참조하세요.
 
 Visual Studio의 일반 IntelliSense 기능에 대한 자세한 내용은 [IntelliSense 사용](../ide/using-intellisense.md)을 참조하세요.
 
-## <a name="whats-new-in-the-javascript-language-service-in-includevsdev15miscincludesvsdev15mdmd"></a>[!include[vs_dev15](../misc/includes/vs_dev15_md.md)] JavaScript 언어 서비스의 새로운 기능
+## <a name="whats-new-in-the-javascript-language-service-in-visual-studio-2017"></a>Visual Studio 2017의 JavaScript 언어 서비스의 새로운 기능
 
-[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]부터 시작하여 JavaScript IntelliSense는 매개 변수 및 멤버 목록에 대한 더 많은 정보를 표시합니다.
-이 새로운 정보는 코드를 더 잘 이해하도록 내부에서 정적 분석으로 사용하는 TypeScript 언어 서비스를 통해 제공됩니다.
+Visual Studio 2017부터 JavaScript IntelliSense는 매개 변수 및 멤버 목록에 대한 더 많은 정보를 표시합니다. 이 새로운 정보는 코드를 더 잘 이해하도록 내부에서 정적 분석으로 사용하는 TypeScript 언어 서비스를 통해 제공됩니다.
+
 TypeScript는 여러 소스를 사용하여 이 정보를 구성합니다.
 
 - [형식 유추 기반 IntelliSense](#TypeInference)
@@ -54,6 +53,7 @@ TypeScript는 여러 소스를 사용하여 이 정보를 구성합니다.
 - [형식 정의의 자동 획득](#Auto)
 
 <a name="TypeInference"></a>
+
 ### <a name="intellisense-based-on-type-inference"></a>형식 유추 기반 IntelliSense
 
 JavaScript에서는 일반적으로 명시적 형식 정보를 사용할 수 없습니다. 다행히도 주변 코드 컨텍스트가 있는 경우 일반적으로 형식을 쉽게 알아낼 수 있습니다.
@@ -91,6 +91,7 @@ exports.Foo = Foo;
 ```
 
 <a name="JsDoc"></a>
+
 ### <a name="intellisense-based-on-jsdoc"></a>JSDoc 기반 IntelliSense
 
 형식 유추에서 원하는 형식 정보(또는 지원 문서 정보)가 제공되지 않으면 JSDoc 주석을 통해 명시적으로 형식 정보를 제공할 수 있습니다.  예를 들어 부분적으로 선언된 개체에 특정 형식을 제공하려면 다음과 같이 `@type` 태그를 사용할 수 있습니다.
@@ -124,7 +125,7 @@ JavaScript 및 TypeScript는 이제 같은 언어 서비스에 기반을 두므�
 
 다음 내용은 `JsDoc` 태그를 사용하는 같은 프로젝트에서 인터페이스를 통해 이 형식 정보를 JavaScript 파일에 제공하는 TypeScript 정의 파일의 간단한 예제입니다.
 
-<img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640" alt="TypeScript definition file" />
+![TypeScript 정의 파일](https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png)
 
 <a name="Auto"></a>
 ### <a name="automatic-acquisition-of-type-definitions"></a>형식 정의의 자동 획득

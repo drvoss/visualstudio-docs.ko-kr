@@ -1,25 +1,20 @@
 ---
 title: 'PTVS 시작: 대화형 Python | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-python
+ms.topic: conceptual
 ms.assetid: fa594314-bdd0-4da5-874a-57b03414b675
 caps.latest.revision: 5
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: 7d9438d7d80480349dd53384c2538742a22b4d36
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4fba8bf658a50a7a7e28abace1eb622ab14f5f26
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62550989"
 ---
 # <a name="getting-started-with-ptvs-interactive-python"></a>PTVS 시작: 대화형 Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ ms.locfileid: "49183913"
   
  짧은 [youtube 동영상](https://www.youtube.com/watch?v=yc2CROtTsC0&index=5&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)을 통해 이러한 지침을 확인할 수 있습니다.  
   
- Python 환경 창에는 모든 Python 환경 목록이 표시됩니다.  하나를 선택하여 대화형 창 또는 REPL을 열 수 있습니다.  명령 프롬프트에서 Python.exe를 실행한 적이 있으면 이전에 python REPL을 보았을 것입니다.  REPL이 메시지를 표시하면 코드를 입력하고 Enter 키를 눌러 코드 결과를 즉시 확인할 수 있습니다.  REPL은 모든 실행, 변수 할당 등의 모든 상태를 포함하는 라이브 실행 컨텍스트입니다.  나중에 REPL 프롬프트에 제출할 때 결과를 보유한 변수를 참조할 수 있습니다.  여러 줄의 코드를 작성하고 동시에 모두 실행할 수 있습니다(예: 메서드 선언 또는 여러 문).  
+ Python 환경 창에는 모든 Python 환경 목록이 표시됩니다.  하나를 선택하여 대화형 창 또는 REPL을 열 수 있습니다.  명령 프롬프트에서 Python.exe를 실행한 적이 있으면 이전에 python REPL을 보았을 것입니다.  REPL이 메시지를 표시하면 코드를 입력하고 Enter 키를 눌러 코드 결과를 즉시 확인할 수 있습니다.  이는 모든 실행, 변수 할당 등의 모든 상태를 포함하는 라이브 실행 컨텍스트입니다.  나중에 REPL 프롬프트에 제출하면 결과를 보유한 변수를 참조할 수 있습니다.  여러 줄의 코드를 작성하고 동시에 모두 실행할 수 있습니다(예: 메서드 선언 또는 여러 문).  
   
  새 라이브러리를 사용하는 경우 REPL을 통해 라이브러리를 효과적으로 체험할 수 있습니다.  라이브러리를 가져오고 하위 패키지, 클래스 및 함수를 검사할 수 있습니다.  Python은 `help()` 함수를 통해 이 모든 정보를 전달할 수 있습니다.  또한 PTVS(Python Tools for Visual Studio)는 라이브러리를 실행하지 않고도 편집기에서 사용된 코드 모델링에 따라 제안 및 설명서를 제공합니다.  코드를 실행할 때 PTVS는 Python 런타임의 정보를 사용하여 PTVS 제안을 향상시킵니다.  
   
@@ -41,4 +36,3 @@ ms.locfileid: "49183913"
 ## <a name="see-also"></a>참고 항목  
  [Wiki 문서](https://github.com/Microsoft/PTVS/wiki/Interactive-REPL)   
  [PTVS Getting Started and Deep Dive Videos](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)(PTVS 시작 및 자세히 알아보기 동영상)
-

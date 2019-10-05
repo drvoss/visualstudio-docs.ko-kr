@@ -1,26 +1,21 @@
 ---
 title: IntelliSense 호스팅 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - IntelliSense hosting
 ms.assetid: 20c61f8a-d32d-47e2-9c67-bf721e2cbead
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e7e6ae688c0af3506f3d77cf2c1bac5291595b80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a5c378aec6822a436de0d8fc2656fcac7be4149f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737870"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203902"
 ---
 # <a name="intellisense-hosting"></a>IntelliSense 호스팅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ Visual Studio IntelliSense 호스팅 수 있습니다. Visual Studio 텍스트 �
   
  에 정의 된 호스트 플래그 [IntelliSenseHostFlags](../extensibility/intellisensehostflags.md), 아래에 요약 되어 있습니다.  
   
-|IntelliSense 호스트 플래그|설명|  
+|IntelliSense 호스트 플래그|Description|  
 |----------------------------|-----------------|  
 |IHF_READONLYCONTEXT|설정 플래그 즉 상황에 맞는 버퍼가 읽기 전용 및 편집 내 에서만 발생 제목 텍스트입니다.|  
 |IHF_NOSEPERATESUBJECT|즉, 플래그는 있는 설정은 별도 IntelliSense 제목 없음입니다. 주체 있는 상황에 맞는 버퍼와 같은 기존에서는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> IntelliSense 시스템입니다.|  
@@ -54,6 +49,5 @@ Visual Studio IntelliSense 호스팅 수 있습니다. Visual Studio 텍스트 �
 #### <a name="ivsintellisensecompletor"></a>IVsIntellisenseCompletor  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseCompletor> 인터페이스는 통합된 개발 환경 (IDE)에서 사용 되는 표준 완료 창의 공동 creatable 버전입니다. 모든 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost> 인터페이스가 completor 인터페이스를 사용 하 여 IntelliSense를 신속 하 게 구현할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  <xref:Microsoft.VisualStudio.TextManager.Interop>
-

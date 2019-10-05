@@ -2,20 +2,18 @@
 title: SQL Server와 R 통합
 description: Visual Studio는 R에서 SQL 쿼리를 만들고 실행하는 기능과 R을 통해 저장 프로시저를 사용하는 기능을 지원합니다.
 ms.date: 06/25/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 3b9fa1f675754257a2278c7282c45d9816c034cd
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: f15c785658b5c4cd5a6b158b05eb67ff9a4e4c2d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36946915"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814441"
 ---
 # <a name="work-with-sql-server-and-r"></a>SQL Server 및 R 사용
 
@@ -23,7 +21,7 @@ Visual Studio의 뛰어난 SQL Server 지원은 SQL 쿼리를 생성 및 실행�
 
 > [!Note]
 > SQL 및 R을 함께 사용하려면 SQL Server Data Tools가 설치되어 있어야 합니다.
-> - Visual Studio 2017: Visual Studio 설치 관리자를 실행하고 데이터 저장소와 처리 워크로드를 선택합니다(SQL Server Data Tools 포함).
+> - Visual Studio 2017: Visual Studio 설치 관리자를 실행하고 데이터 스토리지와 처리 워크로드를 선택합니다(SQL Server Data Tools 포함).
 > - Visual Studio 2015: [Download SQL Server Data Tools](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt)(SQL Server Data Tools 다운로드)의 지침을 따릅니다.
 
 |   |   |

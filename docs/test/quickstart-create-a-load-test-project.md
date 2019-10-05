@@ -6,15 +6,13 @@ helpviewer_keywords:
 - load testing, quickstart
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 30e67768b502228ba8cba5acd813ec829624a822
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: c6703221f9db06ca8edba68a2f2bcc9b79a5d531
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784750"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>빠른 시작: 부하 테스트 프로젝트 만들기
 
@@ -24,13 +22,13 @@ ms.locfileid: "53057576"
 
 ## <a name="software-requirements"></a>소프트웨어 요구 사항
 
-웹 성능 및 부하 테스트 프로젝트는 Visual Studio의 Enterprise Edition에서만 사용할 수 있습니다.
+웹 성능 및 부하 테스트 프로젝트는 Visual Studio의 **Enterprise 버전**에서만 사용할 수 있습니다.
 
 ## <a name="install-the-load-testing-component"></a>부하 테스트 구성 요소 설치
 
 웹 성능 및 부하 테스트 도구 구성 요소를 아직 설치하지 않은 경우 Visual Studio 설치 관리자를 통해 설치해야 합니다.
 
-1. Windows **시작** 메뉴에서 **Visual Studio 설치 관리자**를 엽니다. **새 프로젝트** 대화 상자에서 Visual Studio로 액세스하거나 메뉴 모음에서 **도구** > **도구 및 기능 가져오기**를 선택하여 액세스할 수도 있습니다.
+1. Windows **시작** 메뉴에서 **Visual Studio 설치 관리자**를 엽니다. 새 프로젝트 대화 상자에서 Visual Studio로 액세스하거나 메뉴 모음에서 **도구** > **도구 및 기능 가져오기**를 선택하여 액세스할 수도 있습니다.
 
 1. **Visual Studio 설치 관리자**에서 **개별 구성 요소** 탭을 선택하고 **디버깅 및 테스트** 섹션까지 아래로 스크롤합니다. **웹 성능 및 부하 테스트 도구**를 선택합니다.
 
@@ -44,15 +42,33 @@ ms.locfileid: "53057576"
 
 이 섹션에서는 C# 부하 테스트 프로젝트를 만듭니다. 원하는 경우 Visual Basic 부하 테스트 프로젝트를 만들 수도 있습니다.
 
-1. Visual Studio를 열고 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
+::: moniker range="vs-2017"
+
+1. Visual Studio를 엽니다.
+
+2. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
 
    **새 프로젝트** 대화 상자가 열립니다.
 
-1. **새 프로젝트** 대화 상자에서 **설치됨** 및 **Visual C#** 을 확장한 다음, **테스트** 범주를 선택합니다. **웹 성능 및 부하 테스트 프로젝트** 템플릿을 선택합니다.
+3. **새 프로젝트** 대화 상자에서 **설치됨** 및 **Visual C#** 을 확장한 다음, **테스트** 범주를 선택합니다. **웹 성능 및 부하 테스트 프로젝트** 템플릿을 선택합니다.
 
    ![웹 성능 및 부하 테스트 프로젝트 템플릿](media/web-perf-load-test-project-template.png)
 
-1. 기본 이름을 사용하지 않으려면 프로젝트의 이름을 입력한 다음, **확인**을 선택합니다.
+4. 기본 이름을 사용하지 않으려면 프로젝트의 이름을 입력한 다음, **확인**을 선택합니다.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Visual Studio를 엽니다.
+
+2. 시작 창에서 **새 프로젝트 만들기**를 선택합니다.
+
+3. **새 프로젝트 만들기** 페이지에서 검색 상자에 **웹 테스트**를 입력하고 C#용 **웹 성능 및 부하 테스트 프로젝트\[사용되지 않음]** 템플릿을 선택합니다. **다음**을 선택합니다.
+
+4. 기본 이름을 사용하지 않으려면 프로젝트의 이름을 입력하고 **만들기**를 선택합니다.
+
+::: moniker-end
 
    Visual Studio에서 프로젝트를 만들고 **솔루션 탐색기**에 파일을 표시합니다. 프로젝트는 초기에 *WebTest1.webtest*라는 웹 테스트 파일을 포함합니다.
 

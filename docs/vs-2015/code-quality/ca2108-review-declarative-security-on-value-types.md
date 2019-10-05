@@ -1,14 +1,9 @@
 ---
-title: 'CA2108: 값 형식에서 선언적 보안을 검토 하십시오. | Microsoft Docs'
-ms.custom: ''
+title: 'CA2108: 값 형식에서 선언적 보안을 검토 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - ReviewDeclarativeSecurityOnValueTypes
 - CA2108
@@ -20,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b437fa656c2a2d0650463fd0ab78119f67099ac7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f6a17bf57f00923cfd31bd477f211ba66169672a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889669"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687362"
 ---
 # <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108: 값 형식에서 선언적 보안을 검토하십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "49889669"
 |변경 수준|주요 변경 아님|
 
 ## <a name="cause"></a>원인
- Public 또는 protected 값 형식이로 보호 되는 [데이터 및 모델링](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) 또는 [링크 요구가](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)합니다.
+ Public 또는 protected 값 형식이로 보호 되는 [데이터 및 모델링](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) 또는 [링크 요구가](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)합니다.
 
 ## <a name="rule-description"></a>규칙 설명
  값 형식 할당 되 고 다른 생성자를 실행 하기 전에 해당 기본 생성자에서 초기화 됩니다. 값 형식이 요청 또는 LinkDemand를 통해 보안이 유지 되 고 호출자에 게 이외의 모든 생성자 보안 검사를 충족 하는 권한이 없는 경우 기본값을 실패 하 고 보안 예외가 throw 됩니다. 값 형식 할당이 해제 되지 않습니다. 기본 생성자에서 설정 된 상태에서 중단 됩니다. 값 형식의 인스턴스를 전달 하는 호출자가 만들거나 인스턴스에 액세스 권한이 있는지를 가정 하지 마십시오.
@@ -61,11 +56,8 @@ ms.locfileid: "49889669"
 
  이 예제의 결과는 다음과 같습니다.
 
- **구조 사용자 지정 생성자: 요청이 실패 했습니다. ** 
- **새 값 SecuredTypeStructure 100 100**
+ **구조 사용자 지정 생성자: 요청이 실패 했습니다.** 
+**새 값 SecuredTypeStructure 100 100**
 **SecuredTypeStructure 200 200 새 값**
 ## <a name="see-also"></a>참고 항목
- [링크 요청만](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [데이터 및 모델링](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
-
-
-
+ [링크 요청만](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [데이터 및 모델링](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

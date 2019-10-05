@@ -1,23 +1,21 @@
 ---
 title: C# IntelliSense
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - C#, IntelliSense
 - IntelliSense [C#]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 41a4dfa2a904f3fdc09671fd5e9afa0f29c2e9f3
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 0a875ea2690a2932a10ff3a16364dd9d362a7642
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160142"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328839"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -88,7 +86,7 @@ IntelliSense는 자동 개체 이름 완성을 위해 팝업 [멤버 목록](../
 
 ### <a name="ai-enhanced-intellisense"></a>AI가 강화된 IntelliSense
 
-인공 지능이 강화된 IntelliSense 완성 목록을 제공하는 Visual Studio용 실험적 [IntelliCode 확장](/visualstudio/intellicode/intellicode-visual-studio)을 설치할 수 있습니다. 이 확장은 단순히 사전순 멤버 목록을 제공하는 대신, 사용하기에 가장 적합한 API를 예측합니다. 현재 코드 컨텍스트 및 패턴을 사용하여 동적 목록을 제공합니다.
+[Visual Studio IntelliCode](/visualstudio/intellicode/intellicode-visual-studio)는 인공 지능이 강화된 IntelliSense 완성 목록을 제공합니다. IntelliCode는 단순히 사전순 멤버 목록을 표시하는 대신, 사용하기에 가장 적합한 API를 예측합니다. 현재 코드 컨텍스트 및 패턴을 사용하여 동적 목록을 제공합니다.
 
 ## <a name="automatic-code-generation"></a>자동 코드 생성
 
@@ -96,11 +94,11 @@ IntelliSense는 자동 개체 이름 완성을 위해 팝업 [멤버 목록](../
 
 **using 추가** IntelliSense 작업은 필요한 `using` 지시문을 코드 파일에 자동으로 추가합니다. 이 기능을 사용하면 코드의 다른 부분으로 포커스를 이동할 필요 없이 작성 중인 코드에 포커스를 유지할 수 있습니다.
 
-**using 추가** 작업을 시작하려면 확인할 수 없는 형식 참조에 커서를 놓습니다. 예를 들어 콘솔 응용 프로그램을 만든 다음 `XmlTextReader`를 `Main` 메서드의 본문에 추가하면 형식 참조를 확인할 수 없으므로 빨간색 물결선이 해당 코드 줄에 나타납니다. 그런 다음, **빠른 작업**을 통해 **using 추가**를 호출할 수 있습니다. **빠른 작업**은 커서가 바인딩되지 않은 형식에 있을 때만 표시됩니다.
+**using 추가** 작업을 시작하려면 확인할 수 없는 형식 참조에 커서를 놓습니다. 예를 들어 콘솔 애플리케이션을 만든 다음 `XmlReader`를 `Main` 메서드의 본문에 추가하면 형식 참조를 확인할 수 없으므로 빨간색 물결선이 해당 코드 줄에 나타납니다. 그런 다음, **빠른 작업**을 통해 **using 추가**를 호출할 수 있습니다. **빠른 작업**은 커서가 바인딩되지 않은 형식에 있을 때만 표시됩니다.
 
 ![using 추가, 빠른 작업 확장된 이미지](../ide/media/addusing-quickaction.png)
 
-전구 아이콘을 클릭한 다음 **using System.Xml;** 을 선택하여 using 지시문을 자동으로 추가합니다.
+오류 전구 아이콘을 클릭한 다음, **using System.Xml;** 을 선택하여 using 지시문을 자동으로 추가합니다.
 
 ### <a name="remove-and-sort-usings"></a>using 제거 및 정렬
 
@@ -124,9 +122,9 @@ IntelliSense는 코드 편집기에서 작업하는 동안 자동으로 추상 �
 
 빨간색 물결선 밑줄이 정의되지 않은 각 식별자 아래에 나타납니다. 식별자에 마우스 포인터를 놓으면 오류 메시지가 도구 설명에 나타납니다. 적절한 옵션을 표시하려면 다음 절차 중 하나를 사용할 수 있습니다.
 
-- 정의되지 않은 식별자를 클릭합니다. **빠른 작업** 전구가 식별자 아래에 나타납니다. 전구를 클릭합니다.
+- 정의되지 않은 식별자를 클릭합니다. **빠른 작업** 오류 전구가 식별자 아래에 나타납니다. 오류 전구를 클릭합니다.
 
-- 정의되지 않은 식별자를 클릭한 다음 **Ctrl**+**.** (**Ctrl** + 마침표)를 누릅니다.
+- 정의되지 않은 식별자를 클릭한 다음 **Ctrl**+ **.** (**Ctrl** + 마침표)를 누릅니다.
 
 - 정의되지 않은 식별자를 마우스 오른쪽 단추로 클릭한 다음 **빠른 작업 및 리팩터링**을 클릭합니다.
 
@@ -160,7 +158,7 @@ IntelliSense는 코드 편집기에서 작업하는 동안 자동으로 추상 �
 **탭** 키를 누르는 경우 IntelliSense에서 올바른 서명으로 메서드가 스텁 아웃되고 이벤트 처리기의 본문에 커서가 위치합니다.
 
 > [!NOTE]
-> 이벤트 연결 문으로 돌아가려면 **보기** 메뉴에서 **뒤로 탐색** 명령(**Ctrl**+**-**)을 사용합니다.
+> 이벤트 연결 문으로 돌아가려면 **보기** 메뉴에서 **뒤로 탐색** 명령(**Ctrl**+ **-** )을 사용합니다.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging extensions
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8f838363b52a85faff022f49542fcc2fcc7e450d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: e170a5ed703a9bf5aae2e73126de52ecf88e8084
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443514"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Visual Studio에서 SharePoint 도구에 대 한 확장명 디버깅
   실험적 인스턴스 또는 일반 인스턴스의 Visual Studio에서 SharePoint 도구 확장을 디버그할 수 있습니다. 확장 동작 문제를 해결 해야 할 경우에 추가 오류 정보를 표시 하 고 Visual Studio SharePoint 명령을 실행 하는 방법을 구성 하려면 레지스트리 값을 수정할 수 있습니다.
@@ -29,50 +29,50 @@ ms.locfileid: "53950818"
 
  다양 한 유형의 Visual Studio의 실험적 인스턴스에서 확장을 디버그 하는 방법을 보여 주는 예제를 보려면 다음 연습을 참조 합니다.
 
--   [연습: SharePoint 프로젝트 항목 형식 확장](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)
+- [연습: SharePoint 프로젝트 항목 형식 확장](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)
 
--   [연습: 항목 템플릿, 1 부를 사용 하 여 사용자 지정 작업 프로젝트 항목 만들기](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
+- [연습: 항목 템플릿, 1 부를 사용 하 여 사용자 지정 작업 프로젝트 항목 만들기](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 
--   [연습: SharePoint 프로젝트용 사용자 지정 배포 단계 만들기](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
+- [연습: SharePoint 프로젝트용 사용자 지정 배포 단계 만들기](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
 
--   [연습: 웹 파트를 표시 하려면 서버 탐색기 확장](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
+- [연습: 웹 파트를 표시 하려면 서버 탐색기 확장](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 
--   [연습: 서버 탐색기 확장의 SharePoint 클라이언트 개체 모델 호출](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
+- [연습: 서버 탐색기 확장의 SharePoint 클라이언트 개체 모델 호출](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
 
 ## <a name="debug-extensions-in-the-regular-instance-of-visual-studio"></a>디버그 일반 인스턴스의 Visual Studio 확장
  일반 인스턴스의 Visual Studio 확장 프로젝트를 디버그 하려는 경우 먼저 일반 인스턴스에 확장을 설치 합니다. 그런 다음 두 번째 Visual Studio 프로세스에 디버거를 연결 합니다. 작업을 완료 한 후 더 이상 개발 컴퓨터에서 로드 되도록 확장을 제거할 수 없습니다.
 
 #### <a name="to-install-the-extension"></a>확장을 설치하려면
 
-1.  Visual Studio의 모든 인스턴스를 닫습니다.
+1. Visual Studio의 모든 인스턴스를 닫습니다.
 
-2.  확장 프로젝트의 빌드 출력 폴더를 엽니다는 *.vsix* 파일 두 번 클릭 하거나 바로 가기 메뉴를 열고 선택 **엽니다**:
+2. 확장 프로젝트의 빌드 출력 폴더를 엽니다는 *.vsix* 파일 두 번 클릭 하거나 바로 가기 메뉴를 열고 선택 **엽니다**:
 
-3.  에 **Visual Studio 확장명 설치 관리자** 대화 상자에서 확장을 설치 하 여 선택 하려는 Visual Studio의 버전을 선택 합니다 **설치** 단추.
+3. 에 **Visual Studio 확장명 설치 관리자** 대화 상자에서 확장을 설치 하 여 선택 하려는 Visual Studio의 버전을 선택 합니다 **설치** 단추.
 
      Visual Studio %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions에 확장 파일을 설치\\*작성자 이름*\\*확장 이름* \\ *버전*합니다. 이 경로에 마지막으로 세 개의 폴더가 생성 되는 `Author`, `Name`, 및 `Version` 요소에는 *extension.vsixmanifest* 확장에 대 한 파일입니다.
 
-4.  Visual Studio 확장을 설치한 후 선택 합니다 **닫기** 단추입니다.
+4. Visual Studio 확장을 설치한 후 선택 합니다 **닫기** 단추입니다.
 
 #### <a name="to-debug-the-extension"></a>확장을 디버그 하려면
 
-1.  관리자 권한으로 Visual Studio를 시작 하 고 확장 프로젝트를 엽니다. Visual Studio의이 인스턴스를 다음 단계를 참조 합니다 *먼저 인스턴스*합니다.
+1. 관리자 권한으로 Visual Studio를 열고 확장 프로젝트를 엽니다. Visual Studio의이 인스턴스를 다음 단계를 참조 합니다 *먼저 인스턴스*합니다.
 
-2.  관리자 권한으로 Visual Studio의 다른 인스턴스를 시작 합니다. 다음 단계를 참조로 Visual Studio의이 인스턴스는 *두 번째 인스턴스*합니다.
+2. 관리자 권한으로 Visual Studio의 다른 인스턴스를 시작 합니다. 다음 단계를 참조로 Visual Studio의이 인스턴스는 *두 번째 인스턴스*합니다.
 
-3.  Visual Studio의 첫 번째 인스턴스로 전환 합니다.
+3. Visual Studio의 첫 번째 인스턴스로 전환 합니다.
 
-4.  메뉴 모음에서 선택 **디버그**하십시오 **프로세스에 연결**합니다.
+4. 메뉴 모음에서 선택 **디버그**하십시오 **프로세스에 연결**합니다.
 
-5.  에 **사용 가능한 프로세스** 목록에서 선택 *devenv.exe*합니다. Visual Studio의 두 번째 인스턴스를이 항목 참조 이 인스턴스가 확장 프로젝트를 디버그 하려면입니다.
+5. 에 **사용 가능한 프로세스** 목록에서 선택 *devenv.exe*합니다. Visual Studio의 두 번째 인스턴스를이 항목 참조 이 인스턴스가 확장 프로젝트를 디버그 하려면입니다.
 
-6.  선택 된 **연결** 단추입니다.
+6. 선택 된 **연결** 단추입니다.
 
      Visual Studio는 디버그 모드에서 확장 프로젝트를 실행 합니다.
 
-7.  Visual Studio의 두 번째 인스턴스를 전환 합니다.
+7. Visual Studio의 두 번째 인스턴스를 전환 합니다.
 
-8.  확장을 로드 하는 새 SharePoint 프로젝트를 만듭니다. 예를 들어 목록 정의 프로젝트 항목에 대 한 확장을 디버깅 하는 경우 만들를 **목록 정의** 프로젝트입니다.
+8. 확장을 로드 하는 새 SharePoint 프로젝트를 만듭니다. 예를 들어 목록 정의 프로젝트 항목에 대 한 확장을 디버깅 하는 경우 만들를 **목록 정의** 프로젝트입니다.
 
 9. 확장 프로그램 코드를 테스트 하는 데 필요한 단계를 수행 합니다.
 
@@ -80,33 +80,33 @@ ms.locfileid: "53950818"
 
 #### <a name="to-remove-the-extension"></a>확장을 제거 하려면
 
-1.  Visual Studio 메뉴 모음에서 선택 **도구**하십시오 **확장 및 업데이트**합니다.
+1. Visual Studio 메뉴 모음에서 선택 **도구**하십시오 **확장 및 업데이트**합니다.
 
      **확장명 및 업데이트** 대화 상자가 열립니다.
 
-2.  확장의 목록에서 확장의 이름을 선택 하 고 다음을 선택 합니다 **제거** 단추입니다.
+2. 확장의 목록에서 확장의 이름을 선택 하 고 다음을 선택 합니다 **제거** 단추입니다.
 
-3.  나타나는 대화 상자에서 선택 합니다 **예** 확장을 제거할 것인지 확인 하는 단추입니다.
+3. 나타나는 대화 상자에서 선택 합니다 **예** 확장을 제거할 것인지 확인 하는 단추입니다.
 
-4.  선택 된 **지금 다시 시작** 단추 제거를 완료 합니다.
+4. 선택 된 **지금 다시 시작** 단추 제거를 완료 합니다.
 
 ## <a name="debug-sharepoint-commands"></a>SharePoint 명령 디버그
  SharePoint 도구 확장의 일부인 SharePoint 명령 디버그 하려는 경우 디버거를 연결 해야 합니다 *vssphost4.exe* 프로세스입니다. 이것이 SharePoint 명령을 실행 하는 64 비트 호스트 프로세스입니다. SharePoint 명령에 대 한 자세한 내용은 및 *vssphost4.exe*를 참조 하십시오 [SharePoint 개체 모델 호출](../sharepoint/calling-into-the-sharepoint-object-models.md)합니다.
 
 #### <a name="to-attach-the-debugger-to-the-vssphost4exe-process"></a>Vssphost4.exe 프로세스에 디버거를 연결 하려면
 
-1.  위의 지침에 따라 Visual Studio의 일반 인스턴스 또는 Visual Studio의 실험적 인스턴스에서 확장 프로그램을 디버깅을 시작 합니다.
+1. 위의 지침에 따라 Visual Studio의 일반 인스턴스 또는 Visual Studio의 실험적 인스턴스에서 확장 프로그램을 디버깅을 시작 합니다.
 
-2.  Visual Studio 디버거를 메뉴 모음에서 실행 되는 인스턴스의 경우에서 선택 **디버그**를 **프로세스에 연결**합니다.
+2. Visual Studio 디버거를 메뉴 모음에서 실행 되는 인스턴스의 경우에서 선택 **디버그**를 **프로세스에 연결**합니다.
 
-3.  에 **사용 가능한 프로세스** 목록에서 선택 *vssphost.exe*합니다.
+3. 에 **사용 가능한 프로세스** 목록에서 선택 *vssphost.exe*합니다.
 
     > [!NOTE]
-    >  Vssphost.exe 목록에 나타나지 않으면, 경우에 시작 해야 합니다 *vssphost4.exe* 확장이 실행 되는 Visual Studio 인스턴스의 프로세스입니다. 일반적으로 이렇게 하면 Visual studio의 개발 컴퓨터에서 SharePoint 사이트에 연결 하는 작업을 수행 하 여 합니다. 예를 들어, Visual Studio 시작 *vssphost4.exe* 에서 사이트 연결 노드 (사이트 URL을 표시 하는 노드)를 확장 하는 **SharePoint 연결** 에 노드를 **서버 탐색기**  창 또는 같은 특정 SharePoint 프로젝트 항목에 추가 하면 **목록 인스턴스** 또는 **이벤트 수신기** SharePoint 프로젝트 항목입니다.
+    > Vssphost.exe 목록에 나타나지 않으면, 경우에 시작 해야 합니다 *vssphost4.exe* 확장이 실행 되는 Visual Studio 인스턴스의 프로세스입니다. 일반적으로 이렇게 하면 Visual studio의 개발 컴퓨터에서 SharePoint 사이트에 연결 하는 작업을 수행 하 여 합니다. 예를 들어, Visual Studio 시작 *vssphost4.exe* 에서 사이트 연결 노드 (사이트 URL을 표시 하는 노드)를 확장 하는 **SharePoint 연결** 에 노드를 **서버 탐색기**  창 또는 같은 특정 SharePoint 프로젝트 항목에 추가 하면 **목록 인스턴스** 또는 **이벤트 수신기** SharePoint 프로젝트 항목입니다.
 
-4.  선택 된 **연결** 단추입니다.
+4. 선택 된 **연결** 단추입니다.
 
-5.  Visual Studio 디버깅 하는 경우에서 명령을 실행 하는 데 필요한 단계를 수행 합니다.
+5. Visual Studio 디버깅 하는 경우에서 명령을 실행 하는 데 필요한 단계를 수행 합니다.
 
 ## <a name="modify-registry-values-to-help-debug-sharepoint-tools-extensions"></a>SharePoint 도구 확장을 디버깅 하는 데 레지스트리 값 수정
  Visual Studio에서 SharePoint 도구의 확장을 디버깅할 때는 확장 문제 해결 하는 데 레지스트리 값을 수정할 수 있습니다. 값 아래에 존재 합니다 **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools** 키입니다. 이러한 값은 기본적으로 존재 하지 않습니다.

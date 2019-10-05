@@ -2,18 +2,17 @@
 title: Visual Studio에서 빌드 작업 영역 | Microsoft Docs
 ms.date: 02/21/2018
 ms.topic: conceptual
-ms.assetid: 813f7a5e-f298-4469-9f4c-a5bddf5a6e14
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0d90a3d317583e987eae83fadae5afa40546701
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 82660ee772280563b91830aaf1a18da0bc742b28
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553330"
 ---
 # <a name="workspace-build"></a>작업 영역 빌드
 

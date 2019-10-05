@@ -2,23 +2,21 @@
 title: 문제 보고
 description: 문제 보고 도구의 개요를 제공하며 문제 상태 및 정의를 포함합니다.
 ms.date: 11/15/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.custom: seodec18
 ms.topic: conceptual
 author: seaniyer
 ms.author: seiyer
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6d7605cffeca2797d47aa90c6f64a1aab0a6cb2
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 519c7f233866bf71bb342d4f740b3e0a90a4ba72
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159830"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925991"
 ---
-# <a name="overview-report-a-problem"></a>Overview: ADO.NET Data Services 문제 보고
+# <a name="overview-report-a-problem"></a>개요: 문제 보고
 
 문제 보고 도구를 사용하면 Visual Studio 개발자 커뮤니티에서 문제를 제출할 수 있습니다. 각 문제 보고서는 핵심 엔지니어링 시스템의 작업 항목이 되며, 중요한 문제를 식별하고 해결하는 데 도움이 되도록 제품 팀과 직접 소통할 수 있는 권한을 부여합니다. 풍부한 진단 정보와 함께 제출된 피드백은 Visual Studio 제품군을 개선하는 데 중요합니다. 시간을 내어 문제를 보고해 주셔서 정말 감사합니다.
 
@@ -54,7 +52,7 @@ ms.locfileid: "53159830"
 
 ![개발자 커뮤니티의 문제 보고를 위한 추가 정보 필요 상태](../ide/media/ProblemStates/NeedMoreInfo.jpg)
 
-**추가 정보 필요**는 조사를 계속 진행할 수 있도록 더 많은 진단 정보가 필요함을 나타냅니다.  [추가 정보 필요 요청에 응답하는 방법을 알아봅니다.](./how-to-report-a-problem-with-visual-studio-2017.md#when-further-information-is-needed-need-more-info)
+**추가 정보 필요**는 조사를 계속 진행할 수 있도록 더 많은 진단 정보가 필요함을 나타냅니다.  [추가 정보 필요 요청에 응답하는 방법을 알아봅니다.](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed-need-more-info)
 
 - - -
 
@@ -64,7 +62,7 @@ ms.locfileid: "53159830"
 
 - - -
 
-![종결 - 개발자 커뮤니티의 문제 보고에 대해 수정된 상태](../ide/media/ProblemStates/ClosedFixed.jpg) 
+![종결 - 개발자 커뮤니티의 문제 보고에 대해 수정된 상태](../ide/media/ProblemStates/ClosedFixed.jpg)
 
 **종결 - 수정됨**은 문제 해결책을 출시했음을 나타냅니다. 이제 문제는 또한 릴리스 버전을 지정하는 "수정 항목:" 태그로 태그가 지정되었습니다.
 
@@ -82,7 +80,7 @@ ms.locfileid: "53159830"
 
 - - -
 
-![종결 - 개발자 커뮤니티의 문제 보고에 대해 버그 아님 상태](../ide/media/ProblemStates/ClosedNotaBug.jpg)
+![종결 - 개발자 커뮤니티의 문제 보고에 대해 버그 아님 상태](../ide/media/ProblemStates/ClosedNotABug.jpg)
 
 **종결- 버그 아님**은 보고된 기능이 현재 설계에 의한 것이라고 확인했음을 나타냅니다.
 
@@ -112,7 +110,7 @@ ms.locfileid: "53159830"
 
 검색을 통해 보고하려는 문제가 아직 보고되지 않았는지 확인하는 것이 좋습니다. 문제와 일치하는 기존 항목을 찾으면 해당 문제 티켓에 따라 투표합니다.
 
- 문제를 팀이 재현하는 데 도움이 되는 모든 정보를 제공합니다.  이 정보에는 필요한 재현 단계, 코드 조각, 스크린샷, 재현 기록, 로그 파일 및 기타 아티팩트가 포함됩니다.  다음은 [Visual Studio에서 문제를 보고하는 방법](./how-to-report-a-problem-with-visual-studio-2017.md)입니다.
+문제를 팀이 재현하는 데 도움이 되는 모든 정보를 제공합니다.  이 정보에는 필요한 재현 단계, 코드 조각, 스크린샷, 재현 기록, 로그 파일 및 기타 아티팩트가 포함됩니다.  다음은 [Visual Studio에서 문제를 보고하는 방법](./how-to-report-a-problem-with-visual-studio.md)입니다.
 
 ### <a name="how-is-my-feedback-prioritized"></a>어떻게 내 피드백 우선순위가 지정되나요?
 

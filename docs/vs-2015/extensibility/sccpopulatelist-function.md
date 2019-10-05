@@ -1,14 +1,9 @@
 ---
 title: SccPopulateList 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccPopulateList
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 7416e781-c571-4a7f-8af3-a089ce8be662
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fccf5ba354a99eaef6968c5d5027e8540762af75
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5efdddc448dc8e04ee963eaa1b342a93666d9b62
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446785"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +61,7 @@ SCCRTN SccPopulateList (
  lpStatus  
  [out에서] 각 파일에 대 한 상태 플래그를 반환 하는 플러그 인 소스 제어에 대 한 배열입니다.  
   
- 옵션이  
+ fOptions  
  [in] 명령 플래그 ("PopulateList 플래그" 섹션을 참조 하세요 [비트는 특정 명령에 사용](../extensibility/bitflags-used-by-specific-commands.md) 세부 정보에 대 한).  
   
 ## <a name="return-value"></a>반환 값  
@@ -86,7 +81,7 @@ SCCRTN SccPopulateList (
  플러그 인을 계속 호출 하는 `pfnPopulate` 함수를 추가 하 고 완료 되 고 다음에서 반환 될 때까지 파일을 삭제 합니다 `SccPopulateList` 함수입니다. 그런 다음 IDE 목록을 표시할 수 있습니다. `lpStatus` 배열 IDE에 의해 전달 된 원래 목록의 모든 파일을 나타냅니다. 상황을 위해 이러한 파일 뿐만 아니라 모든의 플러그 인 채우기 콜백 함수를 사용 합니다.  
   
 > [!NOTE]
->  항상 소스 제어 플러그 인 이므로 목록 두면이 함수에서 바로 반환 하는 옵션을 가집니다. 플러그 인이 함수를 구현,이 설정 하 여 나타낼 수 있습니다 합니다 `SCC_CAP_POPULATELIST` 첫 번째 호출에서 기능 비트 플래그를 [SccInitialize](../extensibility/sccinitialize-function.md)합니다. 기본적으로 플러그 인 항상 가정해 야 모든 항목에 전달 되는 파일입니다. 그러나 IDE 설정 하는 경우는 `SCC_PL_DIR` 플래그를 `fOptions` 디렉터리 간주 되기 위해 매개 변수에 전달 되는 모든 항목은입니다. 플러그 인는 디렉터리에 속하는 모든 파일을 추가 해야 합니다. IDE 전달 하지는 않지만 파일 및 디렉터리의 혼합입니다.  
+> 항상 소스 제어 플러그 인 이므로 목록 두면이 함수에서 바로 반환 하는 옵션을 가집니다. 플러그 인이 함수를 구현,이 설정 하 여 나타낼 수 있습니다 합니다 `SCC_CAP_POPULATELIST` 첫 번째 호출에서 기능 비트 플래그를 [SccInitialize](../extensibility/sccinitialize-function.md)합니다. 기본적으로 플러그 인 항상 가정해 야 모든 항목에 전달 되는 파일입니다. 그러나 IDE 설정 하는 경우는 `SCC_PL_DIR` 플래그를 `fOptions` 디렉터리 간주 되기 위해 매개 변수에 전달 되는 모든 항목은입니다. 플러그 인는 디렉터리에 속하는 모든 파일을 추가 해야 합니다. IDE 전달 하지는 않지만 파일 및 디렉터리의 혼합입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [원본 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)   
@@ -94,4 +89,3 @@ SCCRTN SccPopulateList (
  [POPLISTFUNC](../extensibility/poplistfunc.md)   
  [특정 명령에 사용 되는 비트](../extensibility/bitflags-used-by-specific-commands.md)   
  [명령 코드](../extensibility/command-code-enumerator.md)
-

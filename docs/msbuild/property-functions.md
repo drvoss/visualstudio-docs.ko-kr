@@ -1,29 +1,29 @@
 ---
 title: 속성 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 02/21/2017
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, property functions
 ms.assetid: 2253956e-3ae0-4bdc-9d3a-4881dfae4ddb
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a238e0bb35efd3ddf984a692a032535c37dfd88
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: a92d5a593c67f54b50649a48b8f973bbfbff8958
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468701"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694940"
 ---
 # <a name="property-functions"></a>속성 함수
 
 .NET Framework 버전 4 및 4.5에서는 속성 함수를 사용하여 MSBuild 스크립트를 평가할 수 있습니다. 속성 함수는 속성이 나타나는 곳마다 사용할 수 있습니다. 작업과 달리 속성 함수는 대상 외부에서 사용할 수 있으며, 대상이 실행되기 전에 평가됩니다.
 
  MSBuild 작업을 사용하지 않고도 시스템 시간을 읽고 문자열을 비교하며 정규식을 일치시키고 빌드 스크립트의 다른 작업을 수행할 수 있습니다. MSBuild는 문자열을 숫자로, 숫자를 문자열로 변환하려고 하며, 필요한 경우 다른 변환을 수행합니다.
+ 
+속성 기능에서 반환된 문자열 값에서는 [특수 문자](msbuild-special-characters.md)가 이스케이프됩니다. 프로젝트 파일에 직접 입력된 것처럼 값을 처리하려면 `$([MSBuild]::Unescape())`를 사용하여 특수 문자를 이스케이프 해제합니다.
 
 ## <a name="property-function-syntax"></a>속성 함수 구문
 
@@ -130,7 +130,7 @@ $([Class]::Property.Method(Parameters))
 예를 들어, 다음 코드를 사용하여 빌드 속성을 현재 날짜 오늘로 설정할 수 있습니다.
 
 ```xml
-<Today>$([System.DateTime]::Now.ToString("yyyy.MM.dd"))</Today>
+<Today>$([System.DateTime]::Now.ToString('yyyy.MM.dd'))</Today>
 ```
 
 ### <a name="msbuild-property-functions"></a>MSBuild 속성 함수
@@ -168,7 +168,7 @@ $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 |int BitwiseXor(int first, int second)|first와 second에 대해 비트 `XOR`를 수행합니다(first ^ second).|
 |int BitwiseNot(int first)|비트 `NOT`을 수행합니다(~first).|
 |bool IsOsPlatform(string platformString)|현재 OS 플랫폼이 `platformString`인지 여부를 지정합니다. `platformString`은 <xref:System.Runtime.InteropServices.OSPlatform>의 멤버여야 합니다.|
-|bool IsOSUnixLike|현재 OS가 Unix 시스템인 경우 True입니다.|
+|bool IsOSUnixLike()|현재 OS가 Unix 시스템인 경우 True입니다.|
 |string NormalizePath(params string[] path)|제공된 경로의 정규화된 전체 경로를 가져오고 해당 경로에 현재 운영 체제에 대한 정확한 디렉터리 구분 문자가 있는지 확인합니다.|
 |string NormalizeDirectory(params string[] path)|제공된 디렉터리의 정규화된 전체 경로를 가져오고 해당 경로에 현재 운영 체제에 대한 정확한 디렉터리 구분 문자와 후행 슬래시가 있는지 확인합니다.|
 |string EnsureTrailingSlash(string path)|제공된 경로에 후행 슬래시가 없으면 후행 슬래시를 추가합니다. 경로가 빈 문자열이면 수정하지 않습니다.|
@@ -177,7 +177,7 @@ $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 |string MakeRelative(string basePath, string path)|`path`를 `basePath`의 상대 경로로 설정합니다. `basePath`는 절대 디렉터리여야 합니다. 상대 경로로 설정할 수 없는 `path`는 반환된 축자입니다. `Uri.MakeRelativeUri`와 비슷합니다.|
 |string ValueOrDefault(string conditionValue, string defaultValue)|‘conditionValue’ 매개 변수가 비어 있는 경우에만 ‘defaultValue’ 매개 변수로 문자열을 반환하고, 비어 있지 않으면 conditionValue 값을 반환합니다.|
 
-##  <a name="nested-property-functions"></a>중첩 속성 함수
+## <a name="nested-property-functions"></a>중첩 속성 함수
 
 다음 예제에서 보여 주는 것처럼, 보다 복잡한 함수를 형성하기 위해 속성 함수를 결합할 수 있습니다.
 
@@ -246,9 +246,9 @@ MSBuild `GetRegistryValue` 속성 함수는 레지스트리 키 값을 반환합
 다음 예제에서는 이 함수를 사용하는 방법을 보여 줍니다.
 
 ```fundamental
-$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
+$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
 $([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, `SymbolCacheDir`))
-$([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
+$([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
 ```
 
 ## <a name="msbuild-getregistryvaluefromview"></a>MSBuild GetRegistryValueFromView
@@ -261,17 +261,17 @@ MSBuild `GetRegistryValueFromView` 속성 함수는 레지스트리 키, 값 및
 [MSBuild]::GetRegistryValueFromView(string keyName, string valueName, object defaultValue, params object[] views)
 ```
 
-Windows 64비트 운영 체제는 32비트 응용 프로그램에 대한 **HKEY_LOCAL_MACHINE\SOFTWARE** 레지스트리 보기를 제공하는 **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node** 레지스트리 키를 유지 관리합니다.
+Windows 64비트 운영 체제는 32비트 애플리케이션에 대한 **HKEY_LOCAL_MACHINE\SOFTWARE** 레지스트리 보기를 제공하는 **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node** 레지스트리 키를 유지 관리합니다.
 
-기본적으로 WOW64에서 실행되는 32비트 응용 프로그램은 32비트 레지스트리 보기에 액세스하고 64비트 응용 프로그램은 64비트 레지스트리 보기에 액세스합니다.
+기본적으로 WOW64에서 실행되는 32비트 애플리케이션은 32비트 레지스트리 보기에 액세스하고 64비트 애플리케이션은 64비트 레지스트리 보기에 액세스합니다.
 
 다음과 같은 레지스트리 보기를 사용할 수 있습니다.
 
 |레지스트리 보기|정의|
 |-------------------|----------------|
-|RegistryView.Registry32|32비트 응용 프로그램 레지스트리 보기입니다.|
-|RegistryView.Registry64|64비트 응용 프로그램 레지스트리 보기입니다.|
-|RegistryView.Default|응용 프로그램이 실행되고 있는 프로세스와 일치하는 레지스트리 보기입니다.|
+|RegistryView.Registry32|32비트 애플리케이션 레지스트리 보기입니다.|
+|RegistryView.Registry64|64비트 애플리케이션 레지스트리 보기입니다.|
+|RegistryView.Default|애플리케이션이 실행되고 있는 프로세스와 일치하는 레지스트리 보기입니다.|
 
 다음은 예제입니다.
 
@@ -321,8 +321,8 @@ MSBuild `ValueOrDefault` 속성 함수는 첫 번째 인수가 null이거나 비
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
     <PropertyGroup>
-        <Value1>$([MSBuild]::ValueOrDefault(`$(UndefinedValue)`, `a`))</Value1>
-        <Value2>$([MSBuild]::ValueOrDefault(`b`, `$(Value1)`))</Value2>
+        <Value1>$([MSBuild]::ValueOrDefault('$(UndefinedValue)', 'a'))</Value1>
+        <Value2>$([MSBuild]::ValueOrDefault('b', '$(Value1)'))</Value2>
     </PropertyGroup>
 
     <Target Name="MyTarget">
@@ -340,6 +340,6 @@ Output:
 
 ## <a name="see-also"></a>참고 항목
 
-[MSBuild 속성](../msbuild/msbuild-properties.md)
+- [MSBuild 속성](../msbuild/msbuild-properties.md)
 
-[MSBuild 개요](../msbuild/msbuild.md)
+- [MSBuild 개요](../msbuild/msbuild.md)

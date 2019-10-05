@@ -6,17 +6,17 @@ helpviewer_keywords:
 - commands, context
 - menu items, visibility contexts
 ms.assetid: c74e3ccf-d771-48c8-a2f9-df323b166784
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ac9a172ee2cb7a117a1d9b63c4f1fef9f631952
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5087e5f7958f9abe46e0caeb2eb03e21285e4da7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915872"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338599"
 ---
 # <a name="command-availability"></a>명령 가용성
 
@@ -28,7 +28,7 @@ Visual Studio 컨텍스트에 사용할 수 있는 명령을 결정 합니다. �
 
 - IDE: IDE에서 제공 하는 명령과 항상 사용할 수 있습니다.
 
-- VSPackage: Vspackage는 명령을 표시 하거나 숨길 때 정의할 수 있습니다.
+- VSPackage. Vspackage는 명령을 표시 하거나 숨길 때 정의할 수 있습니다.
 
 - 프로젝트: 프로젝트 명령은 현재 선택한 프로젝트에 대해서만 표시 됩니다.
 
@@ -44,16 +44,16 @@ Visual Studio 컨텍스트에 사용할 수 있는 명령을 결정 합니다. �
 
 경우 GUID는 아직 정의 되지 않은 적절 한 명령 컨텍스트를 VSPackage의 하나를 정의 하 고 활성 또는 비활성 명령의 표시 유형을 제어 하려면 필요에 따라 수를 프로그래밍할 수 있습니다.:
 
-1.  컨텍스트 Guid를 호출 하 여 등록 된 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> 메서드.
+1. 컨텍스트 Guid를 호출 하 여 등록 된 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> 메서드.
 
-2.  호출 하 여 GUID 컨텍스트의 상태를 가져오기는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> 메서드.
+2. 호출 하 여 GUID 컨텍스트의 상태를 가져오기는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> 메서드.
 
-3.  호출 하 여 상황에 맞는 Guid 설정 및 해제를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> 메서드.
-   
+3. 호출 하 여 상황에 맞는 Guid 설정 및 해제를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> 메서드.
+
 > [!CAUTION]
 > VSPackage 영향을 주지 않습니다 모든 기존 컨텍스트 Guid에 따라 달라질 수 있습니다 다른 Vspackage 때문에 있는지 확인 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [선택 컨텍스트 개체](../../extensibility/internals/selection-context-objects.md)
 - [Vspackage에서 사용자 인터페이스 요소를 추가 하는 방법](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

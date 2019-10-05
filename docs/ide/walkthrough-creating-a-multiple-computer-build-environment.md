@@ -1,23 +1,22 @@
 ---
 title: '연습: 여러 컴퓨터 빌드 환경 만들기'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, building on multiple computers
 - build environment, MSBuild
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: ghogen
+ms.author: ghogen
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dc88c3861adb8b1d9f239d6ceedee2b76bc2e25
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 11b158854a0026de28cb2fb0a582bbaf764eeaa4
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951615"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461533"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>연습: 여러 컴퓨터 빌드 환경 만들기
 
@@ -45,7 +44,7 @@ ms.locfileid: "49951615"
 
 ## <a name="prerequisites"></a>전제 조건
 
-- **.NET 데스크톱 개발** 워크로드가 설치된 Visual Studio.
+**.NET 데스크톱 개발** 워크로드가 설치된 Visual Studio.
 
 ## <a name="install-software-on-the-computers"></a>컴퓨터에 소프트웨어 설치
 
@@ -61,13 +60,13 @@ ms.locfileid: "49951615"
 
 이 단원에서는 특정 파일, 컴파일러, 빌드 도구, MSBuild 자산 및 레지스트리 설정을 호스트 컴퓨터에서 빌드 컴퓨터로 복사하는 방법에 대해 설명합니다. 다음 단계에서는 Visual Studio가 호스트 컴퓨터의 기본 위치에 설치되어 있다고 가정합니다. 다른 위치에 설치한 경우 단계를 적절하게 조정하십시오.
 
-- x86 컴퓨터에서 기본 위치는 *C:\Program Files\Microsoft Visual Studio 11.0*입니다.
-- x64 컴퓨터에서 기본 위치는 *C:\Program Files (x86)\Microsoft Visual Studio 11.0*입니다.
+- x86 컴퓨터에서 기본 위치는 *C:\Program Files\Microsoft Visual Studio*입니다.
+- x64 컴퓨터에서 기본 위치는 *C:\Program Files (x86)\Microsoft Visual Studio*입니다.
 
 *Program Files* 폴더의 이름은 설치된 운영 체제에 따라 달라집니다. x86 컴퓨터에서는 이름이 *Program Files*이고, x64 컴퓨터에서는 이름이 *Program Files (x86)* 입니다. 시스템 아키텍처에 관계없이 이 연습에서는 *Program Files* 폴더를 *%ProgramFiles%* 로 나타냅니다.
 
 > [!NOTE]
-> 빌드 컴퓨터에서는 모든 관련 파일이 동일한 드라이브에 있어야 하지만 해당 드라이브의 드라이브 문자는 호스트 컴퓨터에서 Visual Studio가 설치된 드라이브의 드라이브 문자와 다를 수 있습니다. 어떤 경우이든 이 문서의 뒷부분에 설명된 것처럼 레지스트리 항목을 만들 때는 파일의 위치를 감안해야 합니다.
+> 빌드 컴퓨터에서는 모든 관련 파일이 동일한 드라이브에 있어야 합니다. 하지만 해당 드라이브의 드라이브 문자는 호스트 컴퓨터에서 Visual Studio가 설치된 드라이브의 드라이브 문자와 다를 수 있습니다. 어떤 경우이든 이 문서의 뒷부분에 설명된 것처럼 레지스트리 항목을 만들 때는 파일의 위치를 감안해야 합니다.
 
 ### <a name="copy-the-windows-sdk-files-to-the-build-computer"></a>Windows SDK 파일을 빌드 컴퓨터로 복사
 
@@ -87,7 +86,7 @@ ms.locfileid: "49951615"
 
    - %ProgramFiles%\Windows Kits\8.0\References\
 
-     다음과 같은 기타 Windows 8 키트도 있을 경우
+   다음과 같은 기타 Windows 8 키트도 있을 경우
 
    - Microsoft Windows 평가 및 배포 키트
 
@@ -95,7 +94,7 @@ ms.locfileid: "49951615"
 
    - Microsoft Windows 하드웨어 인증 키트
 
-     이전 단계에 나열된 *%ProgramFiles%\Windows Kits\8.0* 폴더에 여러 파일이 설치되었을 수 있으며, 해당 사용 약관에 따라 해당 파일에 대한 빌드 서버 권한이 허용되지 않을 수 있습니다. 설치된 모든 Windows 키트에 대한 사용 약관에서 파일을 빌드 컴퓨터로 복사할 수 있는지 여부를 확인합니다. 사용 약관에 따라 빌드 서버 권한이 허용되지 않으면 빌드 컴퓨터에서 파일을 제거합니다.
+   이전 단계에 나열된 *%ProgramFiles%\Windows Kits\8.0* 폴더에 여러 파일이 설치되었을 수 있으며, 해당 사용 약관에 따라 해당 파일에 대한 빌드 서버 권한이 허용되지 않을 수 있습니다. 설치된 모든 Windows 키트에 대한 사용 약관에서 파일을 빌드 컴퓨터로 복사할 수 있는지 여부를 확인합니다. 사용 약관에 따라 빌드 서버 권한이 허용되지 않으면 빌드 컴퓨터에서 파일을 제거합니다.
 
 2. 호스트 컴퓨터에서 빌드 컴퓨터로 다음 폴더를 재귀적으로 복사합니다.
 
@@ -103,11 +102,11 @@ ms.locfileid: "49951615"
 
     - %ProgramFiles%\Common Files\Merge Modules\
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\VC\
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\ProjectComponents\
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\Tools\ProjectComponents\
 
-    - %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\V110\
+    - %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\v110\
 
     - %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\.NETCore\v4.5\
 
@@ -115,23 +114,23 @@ ms.locfileid: "49951615"
 
 3. 호스트 컴퓨터에서 빌드 컴퓨터로 다음 파일을 복사합니다.
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\msobj110.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\msobj110.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdb110.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\mspdb110.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbcore.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\mspdbcore.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbsrv.exe
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\mspdbsrv.exe
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\msvcdis110.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\msvcdis110.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\makehm.exe
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\Tools\makehm.exe
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\VCVarsQueryRegistry.bat
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\Tools\VCVarsQueryRegistry.bat
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\vsvars32.bat
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\Tools\vsvars32.bat
 
-4. 다음 Visual C++ 런타임 라이브러리는 빌드 컴퓨터에서 빌드 출력을 자동화된 테스트의 일환 등으로 실행하는 경우에만 필요합니다. 파일은 시스템 아키텍처에 따라 일반적으로 *%ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x86* 또는 *%ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x64* 폴더의 하위 폴더에 있습니다. x86 시스템에서는 x86 이진 파일을 *Windows\System32* 폴더로 복사합니다. x64 시스템에서는 x86 이진 파일을 *Windows\SysWOW64* 폴더로 복사하고, x64 이진 파일을 *Windows\System32* 폴더로 복사합니다.
+4. 다음 Visual C++ 런타임 라이브러리는 빌드 컴퓨터에서 빌드 출력을 자동화된 테스트의 일환 등으로 실행하는 경우에만 필요합니다. 파일은 시스템 아키텍처에 따라 일반적으로 *%ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\redist\x86* 또는 *%ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\redist\x64* 폴더 아래의 하위 폴더에 있습니다. x86 시스템에서는 x86 이진 파일을 *Windows\System32* 폴더로 복사합니다. x64 시스템에서는 x86 이진 파일을 *Windows\SysWOW64* 폴더로 복사하고, x64 이진 파일을 *Windows\System32* 폴더로 복사합니다.
 
     - \Microsoft.VC110.ATL\atl110.dll
 
@@ -171,7 +170,7 @@ ms.locfileid: "49951615"
 
     - \Microsoft.VC110.OPENMP\vcomp110.dll
 
-5. [디버그 실행 파일을 실행하기 위한 테스트 컴퓨터 준비](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)에 설명된 대로 다음 파일만 *Debug_NonRedist\x86* 또는 *Debug_NonRedist\x64* 폴더에서 빌드 컴퓨터로 복사됩니다. 다른 파일은 복사할 수 없습니다.
+5. [디버그 실행 파일을 실행하기 위한 테스트 컴퓨터 준비](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)에 설명된 대로 다음 파일만 *Debug_NonRedist\x86* 또는 *Debug_NonRedist\x64* 폴더에서 빌드 컴퓨터로 복사됩니다. 다른 파일은 복사할 수 없습니다.
 
     - \Microsoft.VC110.DebugCRT\msvcp110d.dll
 
@@ -256,7 +255,7 @@ MSBuild에 대한 설정을 구성하려면 레지스트리 항목을 만들어�
 
 ### <a name="use-vcvarsallbat-to-set-environment-variables"></a>vcvarsall.bat를 사용하여 환경 변수 설정
 
-빌드 컴퓨터에서 **명령 프롬프트** 창을 열고 *%Program Files%\Microsoft Visual Studio 11.0\VC\vcvarsall.bat*를 실행합니다. 명령줄 인수를 사용하여 사용할 도구 집합을 지정할 수 있습니다(x86, 네이티브 x64 또는 x64 크로스 컴파일러). 명령줄 인수를 지정하지 않으면 x86 도구 집합이 사용됩니다.
+빌드 컴퓨터에서 **명령 프롬프트** 창을 열고 *%Program Files%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\vcvarsall.bat*를 실행합니다. 명령줄 인수를 사용하여 사용할 도구 집합을 지정할 수 있습니다(x86, 네이티브 x64 또는 x64 크로스 컴파일러). 명령줄 인수를 지정하지 않으면 x86 도구 집합이 사용됩니다.
 
 다음 표에서는 *vcvarsall.bat*에 대해 지원되는 인수를 설명합니다.
 
@@ -266,13 +265,13 @@ MSBuild에 대한 설정을 구성하려면 레지스트리 항목을 만들어�
 |x86_amd64|x64 크로스|x86, x64|X64|
 |amd64|x64 네이티브|X64|X64|
 
-*vcvarsall.bat*이 실행되면, 즉 오류 메시지가 표시되지 않으면 다음 단계를 건너뛰고 이 문서의 [빌드 컴퓨터의 GAC(전역 어셈블리 캐시)에 MSBuild 어셈블리 설치](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC) 섹션에서 계속할 수 있습니다.
+*vcvarsall.bat*이 실행되면, 즉 오류 메시지가 표시되지 않으면 다음 단계를 건너뛰고 이 문서의 [빌드 컴퓨터의 GAC(전역 어셈블리 캐시)에 MSBuild 어셈블리 설치](#install-msbuild-to-gac) 섹션에서 계속할 수 있습니다.
 
 ### <a name="manually-set-environment-variables"></a>환경 변수를 수동으로 설정
 
 1. 명령줄 환경을 수동으로 구성하려면 PATH 환경 변수에 다음 경로를 추가합니다.
 
-    - %Program Files%\Microsoft Visual Studio 11.0\Common7\IDE
+    - %Program Files%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE
 
 2. 선택적으로 보다 쉽게 MSBuild를 사용하여 솔루션을 빌드할 수 있도록 PATH 변수에 다음 경로를 추가할 수도 있습니다.
 
@@ -288,7 +287,7 @@ MSBuild에 대한 설정을 구성하려면 레지스트리 항목을 만들어�
 
    - %windir%\Microsoft.NET\Framework64\v4.0.30319
 
-## <a name="install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a>빌드 컴퓨터의 GAC(전역 어셈블리 캐시)에 MSBuild 어셈블리 설치
+## <a name="a-nameinstall-msbuild-to-gac--install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a><a name="install-msbuild-to-gac" /> 빌드 컴퓨터의 GAC(전역 어셈블리 캐시)에 MSBuild 어셈블리 설치
 
 MSBuild를 사용하려면 빌드 컴퓨터의 GAC에 일부 추가 어셈블리를 설치해야 합니다.
 
@@ -296,11 +295,11 @@ MSBuild를 사용하려면 빌드 컴퓨터의 GAC에 일부 추가 어셈블리
 
     - %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.Build.CPPTasks.Common.v110.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\CommonExtensions\Microsoft\VC\Project\Microsoft.VisualStudio.Project.VisualC.VCProjectEngine.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\CommonExtensions\Microsoft\VC\Project\Microsoft.VisualStudio.Project.VisualC.VCProjectEngine.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll
+    - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll
 
-2. GAC에 어셈블리를 설치하려면 빌드 컴퓨터에서 *gacutil.exe*를 찾습니다. 일반적으로 이는 %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\에 있습니다. 이 폴더를 찾을 수 없으면 이 연습의 [호스트 컴퓨터에서 빌드 컴퓨터로 파일 복사](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) 섹션에 있는 단계를 반복합니다.
+2. GAC에 어셈블리를 설치하려면 빌드 컴퓨터에서 *gacutil.exe*를 찾습니다. 일반적으로 이는 %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\에 있습니다. 이 폴더를 찾을 수 없으면 이 연습의 [호스트 컴퓨터에서 빌드 컴퓨터로 파일 복사](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) 섹션에 있는 단계를 반복합니다.
 
      관리 권한이 있는 **명령 프롬프트** 창을 열고 각 파일에 대해 다음 명령을 실행합니다.
 
@@ -332,7 +331,7 @@ Visual Studio 프로젝트 및 솔루션은 Azure Pipelines를 사용하여 빌�
 
      이러한 단계에서는 디렉터리를 %Depot%으로 나타냅니다.
 
-2. 이 연습의 [호스트 컴퓨터에서 빌드 컴퓨터로 파일 복사](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) 섹션에 설명된 대로 디렉터리 및 파일을 복사하되 해당 항목을 방금 만든 *%Depot%* 디렉터리에 붙여넣습니다. 예를 들어 *%ProgramFiles%\Windows Kits\8.0\bin*에서 *%Depot%\Windows Kits\8.0\bin*으로 복사합니다.
+2. 이 연습의 [호스트 컴퓨터에서 빌드 컴퓨터로 파일 복사](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) 섹션에 설명된 대로 디렉터리 및 파일을 복사하되 해당 항목을 방금 만든 *%Depot%* 디렉터리에 붙여넣습니다. 예를 들어 *%ProgramFiles%\Windows Kits\8.0\bin*에서 *%Depot%\Windows Kits\8.0\bin*으로 복사합니다.
 
 3. *%Depot%* 에 파일을 붙여넣었으면 다음 변경 내용을 적용합니다.
 
@@ -366,7 +365,7 @@ Visual Studio 프로젝트 및 솔루션은 Azure Pipelines를 사용하여 빌�
     <VCTargetsPath11>$(DepotRoot)MSBuild\Microsoft.Cpp\v4.0\v110\</VCTargetsPath11>
     <MSBuildExtensionsPath>$(DepotRoot)MSBuild</MSBuildExtensionsPath>
     <MSBuildExtensionsPath32>$(DepotRoot)MSBuild</MSBuildExtensionsPath32>
-    <VCInstallDir_110>$(DepotRoot)Microsoft Visual Studio 11.0\VC\</VCInstallDir_110>
+    <VCInstallDir_110>$(DepotRoot)Microsoft Visual Studio\2017\Enterprise\VC\</VCInstallDir_110>
     <VCInstallDir>$(VCInstallDir_110)</VCInstallDir>
     <WindowsKitRoot>$(DepotRoot)Windows Kits\</WindowsKitRoot>
     <WindowsSDK80Path>$(WindowsKitRoot)</WindowsSDK80Path>
@@ -383,15 +382,31 @@ Visual Studio 프로젝트 및 솔루션은 Azure Pipelines를 사용하여 빌�
     <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), Partner.AutoImports.props))\Partner.AutoImports.props"/>
     ```
 
+::: moniker range="vs-2017"
+
 6. 명령줄 환경을 다음과 같이 변경합니다.
 
     - Depot=*1단계에서 만든 Depot 디렉터리의 위치* 설정
 
-    - Set path=%path%;’컴퓨터에서 MSBuild의 위치’;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 15.0\Common7\IDE\
+    - Set path=%path%;’컴퓨터에서 MSBuild의 위치’;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 15.0\Common7\IDE\ 
 
-       네이티브 64비트 빌드의 경우 64비트 MSBuild를 가리킵니다.
+       네이티브 64비트 빌드의 경우 MSBuild의 64비트 버전을 가리킵니다.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+6. 명령줄 환경을 다음과 같이 변경합니다.
+
+    - Depot=*1단계에서 만든 Depot 디렉터리의 위치* 설정
+
+    - Set path=%path%;*컴퓨터에서 MSBuild의 위치*;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 16.0\Common7\IDE\
+
+       네이티브 64비트 빌드의 경우 MSBuild의 64비트 버전을 가리킵니다.
+
+::: moniker-end
 
 ## <a name="see-also"></a>참고 항목
 
-- [디버그 실행 파일을 실행하기 위한 테스트 컴퓨터 준비](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)
+- [디버그 실행 파일을 실행하기 위한 테스트 컴퓨터 준비](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)
 - [명령줄 참조](../msbuild/msbuild-command-line-reference.md)

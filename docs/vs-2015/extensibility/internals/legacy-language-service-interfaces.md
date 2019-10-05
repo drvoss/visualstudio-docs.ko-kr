@@ -1,27 +1,22 @@
 ---
 title: 레거시 언어 서비스 인터페이스 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - IVsLanguageInfo interface
 - language services, objects
 ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a5e574267ac83d145c5f3fb44117534127e3f1fd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 02f63cd5e3f0599723aee12f7aed2c56b74c3249
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785848"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196102"
 ---
 # <a name="legacy-language-service-interfaces"></a>레거시 언어 서비스 인터페이스
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ ms.locfileid: "51785848"
 ## <a name="additional-language-service-interfaces"></a>추가 언어 서비스 인터페이스  
  언어 서비스를 사용 하 여 다른 인터페이스를 제공할 수 있습니다. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 텍스트 버퍼의 각 인스턴스에 대해 이러한 인터페이스의 개별 인스턴스를 요청합니다. 따라서 구현 해야 이러한 각 인터페이스의 자체 개체입니다. 다음 표에서 텍스트 버퍼 인스턴스 당 하나의 인스턴스를 필요로 하는 인터페이스를 보여 줍니다.  
   
-|인터페이스|설명|  
+|인터페이스|Description|  
 |---------------|-----------------|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|코드 창의 기본 드롭다운 표시줄 등을 관리합니다. 사용 하 여이 인터페이스를 가져올 수 있습니다는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> 메서드. 하나의 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> 코드 창 마다.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>|언어 키워드와 구분 기호 색을 지정 합니다. 사용 하 여이 인터페이스를 가져올 수 있습니다는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> 메서드. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> 그리기 시간에 호출 됩니다. 내에서 계산 집약적인 작업을 피할 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> 또는 성능 저하 될 수 있습니다.|  
@@ -60,4 +55,3 @@ ms.locfileid: "51785848"
 ## <a name="see-also"></a>참고 항목  
  [레거시 언어 서비스 개발](../../extensibility/internals/developing-a-legacy-language-service.md)   
  [검사 목록: 레거시 언어 서비스 만들기](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
-

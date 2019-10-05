@@ -2,7 +2,6 @@
 title: IDebugDocumentHelper::GetScriptBlockInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7e8dc63b8419424ed3fa01f67d3e77f0bc2b57f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d1984cdc19beb883dd7ee82f58497b11a8d781b0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726213"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62549717"
 ---
 # <a name="idebugdocumenthelpergetscriptblockinfo"></a>IDebugDocumentHelper::GetScriptBlockInfo
 문자 및 스크립트 엔진에 해당 하는 스크립트 블록의 범위를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetScriptBlockInfo(  
    DWORD_PTR        dwSourceContext,  
    IActiveScript**  ppasd,  
@@ -41,7 +40,7 @@ HRESULT GetScriptBlockInfo(
   
 #### <a name="parameters"></a>매개 변수  
  `dwSourceContext`  
- [in] 스크립트 블록에 대 한 소스 컨텍스트입니다.  
+ [in] 스크립트 블록의 소스 컨텍스트입니다.  
   
  `ppasd`  
  [out] 이 스크립트 블록에 대 한 스크립트 엔진입니다.  

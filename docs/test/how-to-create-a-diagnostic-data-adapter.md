@@ -7,15 +7,13 @@ helpviewer_keywords:
 ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: f16f9356f40aade9f0de3ade8f74606ce89be12e
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+manager: jillfra
+ms.openlocfilehash: 517d4e0558aeca1518316520191ae6c662b41a9e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950739"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>방법: 진단 데이터 어댑터 만들기
 
@@ -23,7 +21,7 @@ ms.locfileid: "53802581"
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-테스트를 실행하는 컴퓨터에 적용되거나 테스트 대상 응용 프로그램을 실행하는 데 사용할 환경에 속한 컴퓨터에 적용되는 진단 데이터 어댑터를 만들 수 있습니다. 예를 들어 테스트를 실행하는 테스트 컴퓨터에서 파일을 수집하거나 애플리케이션의 웹 서버 역할을 하는 컴퓨터에서 파일을 수집할 수 있습니다.
+테스트를 실행하는 컴퓨터에 적용되거나 테스트 대상 애플리케이션을 실행하는 데 사용할 환경에 속한 컴퓨터에 적용되는 진단 데이터 어댑터를 만들 수 있습니다. 예를 들어 테스트를 실행하는 테스트 컴퓨터에서 파일을 수집하거나 애플리케이션의 웹 서버 역할을 하는 컴퓨터에서 파일을 수집할 수 있습니다.
 
 Microsoft Test Manager 또는 Visual Studio를 사용하여 테스트 설정을 만들 때 표시되는 알기 쉬운 이름을 진단 데이터 어댑터에 지정할 수 있습니다. 테스트 설정을 사용하면 테스트를 실행할 때 해당 환경에서 특정 진단 데이터 어댑터를 실행할 컴퓨터 역할을 정의할 수 있습니다. 테스트 설정을 만들 때 진단 데이터 어댑터를 구성할 수도 있습니다. 예를 들어 웹 서버에서 사용자 지정 로그를 수집하는 진단 데이터 어댑터를 만들 수 있습니다. 테스트 설정을 만들 때 이 웹 서버 역할을 수행하는 컴퓨터에서 이 진단 데이터 어댑터를 실행하도록 선택할 수 있고 작성된 로그 중 마지막 로그 세 개만 수집하도록 테스트 설정의 구성을 수정할 수 있습니다. 테스트 설정에 대한 자세한 내용은 [테스트 설정을 사용하여 진단 정보 수집](../test/collect-diagnostic-information-using-test-settings.md)을 참조하세요.
 
@@ -50,37 +48,25 @@ Microsoft Test Manager 또는 Visual Studio를 사용하여 테스트 설정을 
 
 사용자 지정 구성 편집기를 비롯한 전체 예제 진단 데이터 어댑터 프로젝트는 [진단 데이터 어댑터를 만들기 위한 샘플 프로젝트](../test/quickstart-create-a-load-test-project.md)를 참조하세요.
 
-##  <a name="create-and-install-a-diagnostic-data-adapter"></a>진단 데이터 어댑터 만들기 및 설치
+## <a name="create-and-install-a-diagnostic-data-adapter"></a>진단 데이터 어댑터 만들기 및 설치
 
-### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>진단 데이터 어댑터를 만들고 설치하려면
-
-1. 새 클래스 라이브러리를 만듭니다.
-
-   1.  **파일** 메뉴에서 **새로 만들기**를 선택한 다음, **새 프로젝트**를 가리킵니다.
-
-   2.  **프로젝트 형식**에서 사용할 언어를 선택합니다.
-
-   3.  **Visual Studio에 설치되어 있는 템플릿**에서 **클래스 라이브러리**를 선택합니다.
-
-   4.  진단 데이터 어댑터의 이름을 입력합니다.
-
-   5.  **확인**을 선택합니다.
+1. 새 **클래스 라이브러리** 프로젝트를 만듭니다.
 
 2. 어셈블리 **Microsoft.VisualStudio.QualityTools.ExecutionCommon**을 추가합니다.
 
-   1.  **솔루션 탐색기**에서 **참조**를 마우스 오른쪽 단추로 클릭하고, **참조 추가** 명령을 선택합니다.
+   1. **솔루션 탐색기**에서 **참조**를 마우스 오른쪽 단추로 클릭하고, **참조 추가** 명령을 선택합니다.
 
-   2.  **.NET**를 선택하고 **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**을 찾습니다.
+   2. **.NET**를 선택하고 **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**을 찾습니다.
 
-   3.  **확인**을 선택합니다.
+   3. **확인**을 선택합니다.
 
 3. 어셈블리 **Microsoft.VisualStudio.QualityTools.Common**을 추가합니다.
 
-   1.  **솔루션 탐색기**에서 **참조**를 마우스 오른쪽 단추로 클릭하고, **참조 추가** 명령을 선택합니다.
+   1. **솔루션 탐색기**에서 **참조**를 마우스 오른쪽 단추로 클릭하고, **참조 추가** 명령을 선택합니다.
 
-   2.  **/.NET**를 선택하고 **Microsoft.VisualStudio.QualityTools.Common.dll**을 찾습니다.
+   2. **/.NET**를 선택하고 **Microsoft.VisualStudio.QualityTools.Common.dll**을 찾습니다.
 
-   3.  **확인**을 선택합니다.
+   3. **확인**을 선택합니다.
 
 4. 다음 `using` 문을 클래스 파일에 추가합니다.
 

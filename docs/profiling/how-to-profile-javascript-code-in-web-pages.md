@@ -1,8 +1,6 @@
 ---
-title: '방법: 웹 페이지에서 JavaScript 코드 프로파일링 | Microsoft 문서'
-ms.custom: ''
+title: '방법: 웹 페이지에서 JavaScript 코드 프로파일링 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - JavaScript performance profiling
@@ -10,32 +8,32 @@ helpviewer_keywords:
 - web site performance profiling
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 007603f0695a658b6bfa6c1ab1173b4483004c13
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 3d8e4c2b8b5f557f9f7eff26972593c4f40146be
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843925"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62539377"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>방법: 웹 페이지에서 JavaScript 코드 프로파일링
 
-Visual Studio 프로파일링 도구는 계측 프로파일링 방법을 사용하여 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 응용 프로그램, 임의 웹 페이지 또는 JavaScript 응용 프로그램에서 실행되는 JavaScript 코드에 대한 성능 데이터를 수집할 수 있습니다. Internet Explorer 8 이상이 필요합니다.
+Visual Studio 프로파일링 도구는 계측 프로파일링 방법을 사용하여 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 애플리케이션, 임의 웹 페이지 또는 JavaScript 애플리케이션에서 실행되는 JavaScript 코드에 대한 성능 데이터를 수집할 수 있습니다. Internet Explorer 8 이상이 필요합니다.
 
 > [!WARNING]
-> UWP에서 JavaScript를 프로파일링하려면 [JavaScript 메모리](../profiling/javascript-memory.md)를 참조하세요. 
+> UWP에서 JavaScript를 프로파일링하려면 [JavaScript 메모리](../profiling/javascript-memory.md)를 참조하세요.
 
 프로파일링 마법사를 사용하여 성능 세션을 만들 수 있습니다. 계측 방법을 지정한 다음 성능 세션에 대한 속성 대화 상자의 계측 페이지에서 JavaScript 프로파일링 옵션을 지정합니다.
 
 JavaScript 프로파일링을 지정하면 브라우저에서 실행되는 JavaScript 코드 및 서버에서 실행되는 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 코드가 둘 다 프로파일링됩니다.
 
-- [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 응용 프로그램의 경우 브라우저에서 실행되는 JavaScript 코드 및 서버에서 실행되는 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 코드가 둘 다 프로파일링됩니다.
+- [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 애플리케이션의 경우 브라우저에서 실행되는 JavaScript 코드 및 서버에서 실행되는 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 코드가 둘 다 프로파일링됩니다.
 
 - 임의 웹 페이지의 경우 브라우저에서 실행되는 JavaScript 코드가 프로파일링됩니다.
 
-## <a name="to-profile-javascript-in-an-aspnet-web-application-project"></a>ASP.NET 웹 응용 프로그램 프로젝트에서 JavaScript를 프로파일링하려면
+## <a name="to-profile-javascript-in-an-aspnet-web-application-project"></a>ASP.NET 웹 애플리케이션 프로젝트에서 JavaScript를 프로파일링하려면
 
 1. Visual Studio에서 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 프로젝트를 엽니다.
 
@@ -47,13 +45,13 @@ JavaScript 프로파일링을 지정하면 브라우저에서 실행되는 JavaS
 
 5. 마법사의 세 번째 페이지에서 **JavaScript 프로파일링** 확인란을 선택하고 **다음**을 클릭합니다.
 
-6. 마법사의 네 번째 페이지에서 **마침**을 클릭하여 브라우저에서 웹 응용 프로그램을 시작합니다.
+6. 마법사의 네 번째 페이지에서 **마침**을 클릭하여 브라우저에서 웹 애플리케이션을 시작합니다.
 
 7. 프로파일링하려는 기능을 실행합니다.
 
 8. 프로파일링 세션을 종료하려면 브라우저를 닫습니다.
 
-### <a name="to-profile-javascript-in-individual-web-pages-or-a-javascript-applications"></a>개별 웹 페이지 또는 JavaScript 응용 프로그램에서 JavaScript를 프로파일링하려면
+### <a name="to-profile-javascript-in-individual-web-pages-or-a-javascript-applications"></a>개별 웹 페이지 또는 JavaScript 애플리케이션에서 JavaScript를 프로파일링하려면
 
 1. Visual Studio를 엽니다.
 
@@ -61,11 +59,11 @@ JavaScript 프로파일링을 지정하면 브라우저에서 실행되는 JavaS
 
 3. 성능 마법사의 첫 페이지에서 **계측** 프로 파일링 방법을 지정하고 **다음**을 클릭합니다.
 
-4. 마법사의 두 번째 페이지에서 ASP.NET 또는 JavaScript 응용 프로그램을 클릭한 후 **다음**을 클릭합니다.
+4. 마법사의 두 번째 페이지에서 ASP.NET 또는 JavaScript 애플리케이션을 클릭한 후 **다음**을 클릭합니다.
 
 5. 마법사의 세 번째 페이지에서 다음을 수행합니다.
 
-    1. **응용 프로그램을 실행할 URL 또는 경로** 상자에 페이지의 URL을 입력합니다.
+    1. **애플리케이션을 실행할 URL 또는 경로** 상자에 페이지의 URL을 입력합니다.
 
     2. **JavaScript 프로파일링** 확인란을 선택하고 **다음**을 클릭합니다.
 

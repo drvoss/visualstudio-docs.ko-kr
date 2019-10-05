@@ -3,17 +3,17 @@ title: 보기 장식, 명령 및 설정 만들기 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4de9446afcc7528ba5c27160b4e00ad911b657e9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dd8a133623cdaa266591b7b23cba7fdc57ca284b
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958744"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890583"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>연습: 보기 장식, 명령 및 설정 (열 안내선) 만들기
 명령 및 효과 보기를 사용 하 여 Visual Studio 텍스트/코드 편집기를 확장할 수 있습니다. 이 문서는 인기 있는 확장 기능을 열 가이드를 사용 하 여 시작 하는 방법을 보여 줍니다. 열 안내선은 특정 열 너비에 코드를 관리할 수 있도록 텍스트 편집기의 보기에 그려지는 시각적으로 밝은 선입니다. 특히, 서식이 지정 된 코드 샘플 문서, 블로그 게시물에서에서 포함 또는 버그 보고서에 대해 중요할 수 있습니다.
@@ -24,11 +24,12 @@ ms.locfileid: "53958744"
 - 저장 및 시작 설정 (여기서 그리기 열 안내선과 해당 색)에 대 한 지원 추가
 - 명령을 추가 (guides 열 추가/제거, 해당 색을 변경)
 - 편집 메뉴에 텍스트 문서 상황에 맞는 메뉴 명령을 배치합니다
-- Visual Studio 명령 창에서 명령을 호출 하는 것에 대 한 지원 추가  
-  
-  이 Visual Studio 갤러리를 사용 하 여 열 안내선 기능의 버전을 사용해 볼 수 있습니다[확장](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)합니다.  
-  
-  **참고**: 이 연습에서는 Visual Studio 확장 템플릿에 의해 생성 된 소수의 파일에 상당한을 코드를 붙여넣습니다. 그러나 곧이 연습에서는 참조 하는 다른 확장 프로그램 예제를 사용 하 여 GitHub에서 완성 된 솔루션. 완성 된 코드는 generictemplate 아이콘을 사용 하는 대신 실제 명령 아이콘에는 약간 다릅니다.
+- Visual Studio 명령 창에서 명령을 호출 하는 것에 대 한 지원 추가
+
+  이 Visual Studio 갤러리를 사용 하 여 열 안내선 기능의 버전을 사용해 볼 수 있습니다[확장](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)합니다.
+
+  > [!NOTE]
+  > 이 연습에서는 Visual Studio 확장 템플릿에 의해 생성 된 소수의 파일에 상당한을 코드를 붙여넣습니다. 그러나 곧이 연습에서는 참조 하는 다른 확장 프로그램 예제를 사용 하 여 GitHub에서 완성 된 솔루션. 완성 된 코드는 generictemplate 아이콘을 사용 하는 대신 실제 명령 아이콘에는 약간 다릅니다.
 
 ## <a name="get-started"></a>시작
 Visual Studio 2015부터 수행 설치 하면 Visual Studio SDK 다운로드 센터에서. Visual Studio 설치에서 선택적 기능으로 포함 되어 있습니다. 또한 VS SDK를 나중에 설치할 수 있습니다. 자세한 내용은 [Visual Studio SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)합니다.
@@ -38,14 +39,14 @@ Visual Studio 2015부터 수행 설치 하면 Visual Studio SDK 다운로드 센
 - 만든 텍스트 뷰 생성 수신기가는 `ColumnGuideAdornment` 뷰당 개체입니다. 이 개체는 뷰를 변경 하는 방법에 대 한 이벤트를 수신 하거나 필요에 따라 설정 변경, 업데이트 또는 다시 그리기 열 안내 합니다.
 - 한 `GuidesSettingsManager` Visual Studio 설정 저장소에서 읽기와 쓰기를 처리 하는 합니다. Settings manager 역시 사용자 명령을 지 원하는 설정을 업데이트 하는 것에 대 한 작업 (열 추가, 열을 제거, 색 변경).
 - 사용자 명령에 있는 경우 필요한 VSIP 패키지가 이지만 명령을 구현 개체를 초기화 하는 상용구 코드 뿐입니다.
-- `ColumnGuideCommands` 명령과에 선언 된 명령에 대 한 명령 처리기를 후크 사용자를 실행 하는 개체를 *.vsct* 파일입니다.  
-  
-  **VSIX**합니다. 사용 하 여 **파일 &#124; 새로 만들기...**  프로젝트를 만드는 명령입니다. 선택 된 **확장성** 노드 아래의 **C#** 왼쪽된 탐색 창에서 선택한 **VSIX 프로젝트** 오른쪽 창에서. 이름을 입력 **ColumnGuides** 선택한 **확인** 프로젝트를 만듭니다.  
-  
-  **Adornment 볼**합니다. 솔루션 탐색기에서 프로젝트 노드의 오른쪽 포인터 단추를 누릅니다. 선택 된 **추가 &#124; 새 항목...**  새 뷰 adornment 항목을 추가 하는 명령입니다. 선택할 **확장성 &#124; 편집기** 왼쪽된 탐색 창에서 선택한 **편집기 뷰포트 Adornment** 오른쪽 창에서. 이름을 입력 **ColumnGuideAdornment** 항목으로 이름을 지정 하 고 선택 **추가** 추가 합니다.  
-  
-  이 항목 템플릿은 두 개의 파일 및에 추가 프로젝트 (뿐만 아니라 참조 등)을 확인할 수 있습니다. **ColumnGuideAdornment.cs** 하 고 **ColumnGuideAdornmentTextViewCreationListener.cs**합니다. 템플릿 보기에 자주색 사각형을 그립니다. 다음 섹션에서는 두 뷰 생성 수신기에 줄을 변경 하 고이의 내용을 바꿉니다 **ColumnGuideAdornment.cs**합니다.  
-  
+- `ColumnGuideCommands` 명령과에 선언 된 명령에 대 한 명령 처리기를 후크 사용자를 실행 하는 개체를 *.vsct* 파일입니다.
+
+  **VSIX**합니다. 사용 하 여 **파일 &#124; 새로 만들기...**  프로젝트를 만드는 명령입니다. 선택 된 **확장성** 노드 아래의 **C#** 왼쪽된 탐색 창에서 선택한 **VSIX 프로젝트** 오른쪽 창에서. 이름을 입력 **ColumnGuides** 선택한 **확인** 프로젝트를 만듭니다.
+
+  **Adornment 볼**합니다. 솔루션 탐색기에서 프로젝트 노드의 오른쪽 포인터 단추를 누릅니다. 선택 된 **추가 &#124; 새 항목...**  새 뷰 adornment 항목을 추가 하는 명령입니다. 선택할 **확장성 &#124; 편집기** 왼쪽된 탐색 창에서 선택한 **편집기 뷰포트 Adornment** 오른쪽 창에서. 이름을 입력 **ColumnGuideAdornment** 항목으로 이름을 지정 하 고 선택 **추가** 추가 합니다.
+
+  이 항목 템플릿은 두 개의 파일 및에 추가 프로젝트 (뿐만 아니라 참조 등)을 확인할 수 있습니다. **ColumnGuideAdornment.cs** 하 고 **ColumnGuideAdornmentTextViewCreationListener.cs**합니다. 템플릿 보기에 자주색 사각형을 그립니다. 다음 섹션에서는 두 뷰 생성 수신기에 줄을 변경 하 고이의 내용을 바꿉니다 **ColumnGuideAdornment.cs**합니다.
+
   **명령을**합니다. **솔루션 탐색기**, 프로젝트 노드의 오른쪽 포인터 단추를 누릅니다. 선택 된 **추가 &#124; 새 항목...**  새 뷰 adornment 항목을 추가 하는 명령입니다. 선택할 **확장성 &#124; VSPackage** 왼쪽된 탐색 창에서 선택한 **사용자 지정 명령** 오른쪽 창에서. 이름을 입력 **ColumnGuideCommands** 항목으로 이름을 지정 하 고 선택 **추가**합니다. 여러 참조 외에 명령 및 추가 패키지를 추가 **ColumnGuideCommands.cs**하십시오 **ColumnGuideCommandsPackage.cs**, 및 **ColumnGuideCommandsPackage.vsct** . 다음 섹션에서 정의 하 고 명령을 구현 첫 번째 및 마지막 파일의 내용을 대체 합니다.
 
 ## <a name="set-up-the-text-view-creation-listener"></a>텍스트 뷰 생성 수신기 설정
@@ -318,7 +319,7 @@ namespace ColumnGuides
 
 ```
 
-이 코드의 대부분은 만들고 설정 형식을 구문 분석 합니다. "RGB (\<int >,\<int >,\<int >) \<int >, \<int >,..."입니다.  끝에 정수는 열 안내선을 원하는 위치 1부터 시작 열. 열 가이드 확장 설정 단일 값 문자열의 모든 설정을 캡처합니다.
+이 코드의 대부분은 만들고 설정 형식을 구문 분석 합니다. "RGB(\<int>,\<int>,\<int>) \<int>, \<int>, ...".  끝에 정수는 열 안내선을 원하는 위치 1부터 시작 열. 열 가이드 확장 설정 단일 값 문자열의 모든 설정을 캡처합니다.
 
 강조 표시 된 코드의 몇 가지 부분이 있습니다. 다음 코드 줄 설정 저장소에 대 한 Visual Studio 관리 되는 래퍼를 가져옵니다. 대부분의 경우 Windows 레지스트리를 통해 추출이 있지만이 API는 독립적 저장소 메커니즘입니다.
 
@@ -370,7 +371,7 @@ namespace ColumnGuides
         /// <summary>
         /// Creates editor column guidelines
         /// </summary>
-        /// <param name="view">The <see cref="IWpfTextView"/> upon 
+        /// <param name="view">The <see cref="IWpfTextView"/> upon
         /// which the adornment will be drawn</param>
         public ColumnGuideAdornment(IWpfTextView view)
         {
@@ -378,7 +379,7 @@ namespace ColumnGuides
             _guidelines = CreateGuidelines();
             GuidesSettingsManager.SettingsChanged +=
                 new GuidesSettingsManager.SettingsChangedHandler(SettingsChanged);
-            view.LayoutChanged += 
+            view.LayoutChanged +=
                 new EventHandler<TextViewLayoutChangedEventArgs>(OnViewLayoutChanged);
             _view.Closed += new EventHandler(OnViewClosed);
         }
@@ -466,7 +467,7 @@ namespace ColumnGuides
 
         void AddGuidelinesToAdornmentLayer()
         {
-            // Grab a reference to the adornment layer that this adornment 
+            // Grab a reference to the adornment layer that this adornment
             // should be added to
             // Must match exported name in ColumnGuideAdornmentTextViewCreationListener
             IAdornmentLayer adornmentLayer =
@@ -710,7 +711,7 @@ namespace ColumnGuides
                 value="{e914e5de-0851-4904-b361-1a3a9d449704}" />
 
     <!-- This is the guid used to group the menu commands together -->
-    <GuidSymbol name="guidColumnGuidesCommandSet" 
+    <GuidSymbol name="guidColumnGuidesCommandSet"
                 value="{c2bc0047-8bfa-4e5a-b5dc-45af8c274d8e}">
       <IDSymbol name="GuidesContextMenuGroup" value="0x1020" />
       <IDSymbol name="GuidesMenuItemsGroup" value="0x1021" />
@@ -747,7 +748,7 @@ namespace ColumnGuides
 
 ```
 
-**GUID**합니다. 명령 처리기를 찾아 호출할 Visual Studio에 대 한 패키지에 선언 된 GUID를 확인 해야 합니다 *ColumnGuideCommandsPackage.cs* 파일 (프로젝트 항목 템플릿에서 생성 된) 패키지에 선언 된 GUID와 일치 합니다 *.vsct* 파일 (위의 복사). 이 샘플 코드를 다시 사용 하는 경우에이 코드를 복사한 수 있는 다른 모든 사용자와 충돌 하지 않는 다른 GUID 있는지 확인 해야 합니다.
+**GUIDS**. 명령 처리기를 찾아 호출할 Visual Studio에 대 한 패키지에 선언 된 GUID를 확인 해야 합니다 *ColumnGuideCommandsPackage.cs* 파일 (프로젝트 항목 템플릿에서 생성 된) 패키지에 선언 된 GUID와 일치 합니다 *.vsct* 파일 (위의 복사). 이 샘플 코드를 다시 사용 하는 경우에이 코드를 복사한 수 있는 다른 모든 사용자와 충돌 하지 않는 다른 GUID 있는지 확인 해야 합니다.
 
 이 줄을 찾습니다 *ColumnGuideCommandsPackage.cs* 따옴표 사이 있는 GUID를 복사 합니다.
 
@@ -843,7 +844,7 @@ namespace ColumnGuides
         /// <summary>
         /// Command menu group (command set GUID).
         /// </summary>
-        static readonly Guid CommandSet = 
+        static readonly Guid CommandSet =
             new Guid("c2bc0047-8bfa-4e5a-b5dc-45af8c274d8e");
 
         /// <summary>
@@ -1143,7 +1144,7 @@ namespace ColumnGuides
                                                              color.B);
                 if (picker.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
-                    GuidesSettingsManager.GuidelinesColor = 
+                    GuidesSettingsManager.GuidelinesColor =
                         System.Windows.Media.Color.FromRgb(picker.Color.R,
                                                            picker.Color.G,
                                                            picker.Color.B);
@@ -1204,7 +1205,7 @@ private int GetApplicableColumn(EventArgs e)
 
 ```csharp
    IVsMonitorSelection selection =
-       this.ServiceProvider.GetService(typeof(IVsMonitorSelection)) 
+       this.ServiceProvider.GetService(typeof(IVsMonitorSelection))
            as IVsMonitorSelection;
    object frameObj = null;
 
@@ -1338,10 +1339,10 @@ Visual Studio 확장성 샘플 GitHub 프로젝트 되 곧 하 고 완료 된 �
 
 이 Visual Studio 갤러리를 사용 하 여 열 안내선 기능의 버전을 사용해 볼 수 있습니다[확장](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)합니다.
 
-## <a name="see-also"></a>참고 항목
-[편집기 안쪽](../extensibility/inside-the-editor.md)
-[편집기 및 언어 서비스 확장](../extensibility/extending-the-editor-and-language-services.md) 
-[언어 서비스 및 편집기 확장 지점](../extensibility/language-service-and-editor-extension-points.md)  
- [메뉴 및 명령을 확장할](../extensibility/extending-menus-and-commands.md)
-[메뉴에 하위 메뉴 추가](../extensibility/adding-a-submenu-to-a-menu.md)
-[편집기 항목 템플릿을 사용 하 여 확장 프로그램을 만들려면](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+## <a name="see-also"></a>참고자료
+- [편집기 내에서](../extensibility/inside-the-editor.md)
+- [편집기 및 언어 서비스 확장](../extensibility/extending-the-editor-and-language-services.md)
+- [언어 서비스 및 편집기 확장 지점](../extensibility/language-service-and-editor-extension-points.md)
+- [메뉴 및 명령 확장](../extensibility/extending-menus-and-commands.md)
+- [메뉴에 하위 메뉴를 추가 합니다.](../extensibility/adding-a-submenu-to-a-menu.md)
+- [편집기 항목 템플릿을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-an-editor-item-template.md)

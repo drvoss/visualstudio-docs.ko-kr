@@ -1,14 +1,9 @@
 ---
-title: '연습: 코드 조각 (레거시 구현) 설치 목록 | Microsoft Docs'
-ms.custom: ''
+title: '연습: 목록 코드 조각 (레거시 구현) 설치 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - snippets, retrieving list
 - code snippets, retrieving list
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 7d142f8b-35b1-44c4-a13e-f89f6460c906
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a8d132de9773614b966b6fe3a7ae84392fba4f35
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 256430c0e41bfc0452282c89407335d997cc715c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759973"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440768"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>연습: 설치된 코드 조각 목록 가져오기(레거시 구현)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "51759973"
   
 ### <a name="to-retrieve-a-list-of-code-snippets"></a>코드 조각의 목록을 검색 하려면  
   
-1.  다음 코드에는 지정된 된 언어에 대 한 코드 조각의 목록을 가져오는 방법을 보여 줍니다. 결과 배열에 저장 됩니다 <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> 구조입니다. 이 메서드는 정적 <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> 메서드를 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> 에서 인터페이스를 <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> 서비스입니다. 그러나 VSPackage 및 호출에 지정 된 서비스 공급자도 사용할 수는 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> 메서드.  
+1. 다음 코드에는 지정된 된 언어에 대 한 코드 조각의 목록을 가져오는 방법을 보여 줍니다. 결과 배열에 저장 됩니다 <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> 구조입니다. 이 메서드는 정적 <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> 메서드를 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> 에서 인터페이스를 <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> 서비스입니다. 그러나 VSPackage 및 호출에 지정 된 서비스 공급자도 사용할 수는 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> 메서드.  
   
     ```csharp  
     using System;  
@@ -110,10 +105,10 @@ ms.locfileid: "51759973"
   
 ### <a name="to-call-the-getsnippets-method"></a>GetSnippets 메서드를 호출 하려면  
   
-1.  다음 메서드를 호출 하는 방법을 보여 줍니다는 `GetSnippets` 메서드 구문 분석 작업을 완료 합니다. 합니다 <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> 이유인 시작 된 구문 분석 작업을 수행한 후 메서드는 <xref:Microsoft.VisualStudio.Package.ParseReason>합니다.  
+1. 다음 메서드를 호출 하는 방법을 보여 줍니다는 `GetSnippets` 메서드 구문 분석 작업을 완료 합니다. 합니다 <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> 이유인 시작 된 구문 분석 작업을 수행한 후 메서드는 <xref:Microsoft.VisualStudio.Package.ParseReason>합니다.  
   
 > [!NOTE]
->  `expansionsList` 성능상의 이유로 캐시 listis 배열입니다. 언어 서비스를 중지 하 고 다시 로드 될 때까지 목록에 코드 변경 내용이 반영 되지 않습니다 (예를 들어, 중지 및 다시 시작 하 여 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]).  
+> `expansionsList` 성능상의 이유로 캐시 listis 배열입니다. 언어 서비스를 중지 하 고 다시 로드 될 때까지 목록에 코드 변경 내용이 반영 되지 않습니다 (예를 들어, 중지 및 다시 시작 하 여 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]).  
   
 ```csharp  
 class TestLanguageService : LanguageService  
@@ -134,7 +129,7 @@ class TestLanguageService : LanguageService
   
 ### <a name="to-use-the-snippet-information"></a>조각 정보를 사용 하려면  
   
-1.  다음 코드를 반환 하는 코드 조각 정보를 사용 하는 방법을 보여 줍니다는 `GetSnippets` 메서드. `AddSnippets` 파서가 코드 조각의 목록을 채우는 데 사용 되는 모든 구문 분석 원인에 대 한 응답에서에서 메서드를 호출 합니다. 전체 구문 분석에 처음으로 완료 된 후 수행 해야이 있습니다.  
+1. 다음 코드를 반환 하는 코드 조각 정보를 사용 하는 방법을 보여 줍니다는 `GetSnippets` 메서드. `AddSnippets` 파서가 코드 조각의 목록을 채우는 데 사용 되는 모든 구문 분석 원인에 대 한 응답에서에서 메서드를 호출 합니다. 전체 구문 분석에 처음으로 완료 된 후 수행 해야이 있습니다.  
   
      `AddDeclaration` 메서드는 나중에 완성 목록에 표시 되는 선언의 목록을 작성 합니다.  
   
@@ -185,4 +180,3 @@ class TestLanguageService : LanguageService
   
 ## <a name="see-also"></a>참고 항목  
  [레거시 언어 서비스의 코드 조각 지원](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)
-

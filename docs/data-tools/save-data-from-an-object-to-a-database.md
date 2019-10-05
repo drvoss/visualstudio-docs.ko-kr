@@ -12,17 +12,15 @@ helpviewer_keywords:
 ms.assetid: efd6135a-40cf-4b0d-8f8b-41a5aaea7057
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c1203b3b129b42ca65b94cd7a4b9cebf108740f4
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: b15776b67ded2fc813f1b8bcf82d8aa91f212346
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750951"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715035"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>개체에서 데이터베이스로 데이터 저장
 
@@ -43,7 +41,7 @@ TableAdapter의 DBDirect 메서드 중 하나에 개체에서 값을 전달 하 
 
 ## <a name="to-save-new-records-from-an-object-to-a-database"></a>데이터베이스 개체에서 새 레코드를 저장 하려면
 
--   값을 전달 하 여 레코드를 만들어야 합니다 `TableAdapter.Insert` 메서드.
+- 값을 전달 하 여 레코드를 만들어야 합니다 `TableAdapter.Insert` 메서드.
 
      다음 예제에서 새 고객 레코드를 만듭니다는 `Customers` 의 값을 전달 하 여 테이블의 `currentCustomer` 개체를 `TableAdapter.Insert` 메서드.
 
@@ -52,7 +50,7 @@ TableAdapter의 DBDirect 메서드 중 하나에 개체에서 값을 전달 하 
 
 ## <a name="to-update-existing-records-from-an-object-to-a-database"></a>데이터베이스 개체에서 기존 레코드를 업데이트 하려면
 
--   호출 하 여 레코드를 수정 합니다 `TableAdapter.Update` 메서드, 레코드를 업데이트 하려면 새 값을 전달 하 고 레코드를 찾고 원래 값을 전달 합니다.
+- 호출 하 여 레코드를 수정 합니다 `TableAdapter.Update` 메서드, 레코드를 업데이트 하려면 새 값을 전달 하 고 레코드를 찾고 원래 값을 전달 합니다.
 
     > [!NOTE]
     > 개체를 전달할 수 있도록 원래 값을 유지 해야 하는 경우는 `Update` 메서드. 사용 하 여 속성을 사용 하 여이 예제는 `orig` 원래 값을 저장 하는 접두사입니다.
@@ -64,7 +62,7 @@ TableAdapter의 DBDirect 메서드 중 하나에 개체에서 값을 전달 하 
 
 ## <a name="to-delete-existing-records-from-a-database"></a>데이터베이스에서 기존 레코드를 삭제 하려면
 
--   호출 하 여 레코드를 삭제 하는 `TableAdapter.Delete` 메서드와 레코드를 찾고 원래 값을 전달 합니다.
+- 호출 하 여 레코드를 삭제 하는 `TableAdapter.Delete` 메서드와 레코드를 찾고 원래 값을 전달 합니다.
 
     > [!NOTE]
     > 개체를 전달할 수 있도록 원래 값을 유지 해야 하는 경우는 `Delete` 메서드. 사용 하 여 속성을 사용 하 여이 예제는 `orig` 원래 값을 저장 하는 접두사입니다.
@@ -74,7 +72,7 @@ TableAdapter의 DBDirect 메서드 중 하나에 개체에서 값을 전달 하 
      [!code-csharp[VbRaddataSaving#25](../data-tools/codesnippet/CSharp/save-data-from-an-object-to-a-database_3.cs)]
      [!code-vb[VbRaddataSaving#25](../data-tools/codesnippet/VisualBasic/save-data-from-an-object-to-a-database_3.vb)]
 
-## <a name="net-framework-security"></a>.NET Framework 보안
+## <a name="net-security"></a>.NET 보안
 
 선택한 수행할 수 있는 권한이 있어야 합니다. `INSERT`, `UPDATE`, 또는 `DELETE` 데이터베이스의 테이블에 있습니다.
 

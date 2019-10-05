@@ -7,17 +7,14 @@ ms.author: liwong
 manager: routlaw
 ms.date: 11/13/2017
 ms.topic: conceptual
-ms.devlang: multiple
-ms.service: multiple
-ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 465443211d1a3f1aff8bfa63fa6cb8068b55980b
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: a81c1869bf7587aa30dbc02f0e9aec4c97776e5f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459766"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918039"
 ---
 # <a name="installation"></a>설치
 
@@ -27,7 +24,7 @@ Visual Studio Tools for AI는 64비트 운영 체제에 설치할 수 있습니�
 
 이 확장 프로그램은 Visual Studio 2015 및 Visual Studio 2017, Community Edition 이상에서 작동합니다.
 
-[Visual Studio Marketplace](http://aka.ms/vstoolsforai) 또는 Visual Studio 내에서 도구를 다운로드할 수 있습니다.
+[Visual Studio Marketplace](https://aka.ms/vstoolsforai) 또는 Visual Studio 내에서 도구를 다운로드할 수 있습니다.
 
 1. **도구** > **확장 및 업데이트**를 선택합니다.
 
@@ -40,14 +37,14 @@ Visual Studio Tools for AI는 64비트 운영 체제에 설치할 수 있습니�
 
 ## <a name="prepare-your-local-machine"></a>로컬 머신 준비
 
-로컬 컴퓨터에서 심층 학습 모델을 교육하기 전에 해당하는 필수 구성 요소가 설치되어 있는지 확인합니다. 여기에는 NVIDIA GPU용 최신 드라이버 및 라이브러리가 있는지 확인하는 작업도 포함됩니다(해당하는 경우). Python 및 Python 라이브러리(예: NumPy, SciPy 등)와, 프로젝트에서 사용하려는 적합한 심층 학습 프레임워크(예: Microsoft CNTK(Cognitive Toolkit), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch, Chainer 등)를 설치했는지도 확인해야 합니다.
+로컬 컴퓨터에서 심층 학습 모델을 교육하기 전에 해당하는 필수 구성 요소가 설치되어 있는지 확인합니다. 여기에는 NVIDIA GPU용 최신 드라이버 및 라이브러리가 있는지 확인하는 작업도 포함됩니다(해당하는 경우). Python 및 Python 라이브러리(예: NumPy, SciPy 등)와, 프로젝트에서 사용하려는 적합한 심층 학습 프레임워크(예: Microsoft CNTK(Cognitive Toolkit), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch, Chainer 등)를 설치했는지도 확인합니다.
 
 > [!NOTE]
 > 다음 하위 섹션의 소프트웨어 소개는 해당 홈 페이지에서 발췌한 것입니다.
 
 ### <a name="nvidia-gpu-driver"></a>NVIDIA GPU 드라이버
 
-심층 학습 프레임워크는 NVIDIA GPU를 활용하여 컴퓨터가 신속 정확하게 학습하고 진정한 인공 지능을 향해 확장해 나갈 수 있게 합니다. 컴퓨터에 NVIDIA GPU 카드가 있는 경우 [여기](http://www.nvidia.com/Download/index.aspx)를 방문하거나 OS 업데이트를 통해 최신 드라이버를 설치합니다.
+심층 학습 프레임워크는 NVIDIA GPU를 활용하여 컴퓨터가 신속 정확하게 학습하고 진정한 인공 지능을 향해 확장해 나갈 수 있게 합니다. 컴퓨터에 NVIDIA GPU 카드가 있으면 [NVIDIA 드라이버 다운로드](http://www.nvidia.com/Download/index.aspx)를 참조하거나 운영 체제 업데이트를 시도하여 최신 드라이버를 설치합니다.
 
 ### <a name="cuda"></a>CUDA
 
@@ -55,7 +52,7 @@ Visual Studio Tools for AI는 64비트 운영 체제에 설치할 수 있습니�
 
 CUDA를 설치하려면
 
-- 이 [사이트](https://developer.nvidia.com/cuda-80-ga2-download-archive)를 방문하여 CUDA 다운로드 및 설치합니다.
+- 이 [사이트](https://developer.nvidia.com/cuda-80-ga2-download-archive)를 방문하여 CUDA를 다운로드하고 설치합니다.
 - CUDA 런타임 라이브러리를 설치한 다음 CUDA 이진 경로를 %PATH% 또는 $Path 환경 변수에 추가합니다.
 - Windows에서 기본적으로 이 경로는 "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin"입니다.
 
@@ -63,7 +60,7 @@ CUDA를 설치하려면
 
 ### <a name="cudnn"></a>cuDNN
 
-[cuDNN](https://developer.nvidia.com/cudnn)(CUDA Deep Neural Network) 라이브러리는 NVIDIA가 제공하는 심층 신경망용 GPU 가속 원시 라이브러리입니다. 최신 심층 학습 프레임워크에서는 cuDNN v6가 필요합니다. 
+[cuDNN](https://developer.nvidia.com/cudnn)(CUDA Deep Neural Network) 라이브러리는 NVIDIA가 제공하는 심층 신경망용 GPU 가속 원시 라이브러리입니다. 최신 심층 학습 프레임워크에서는 cuDNN v6가 필요합니다.
 
 cuDNN을 설치하려면:
 
@@ -76,7 +73,7 @@ cuDNN을 설치하려면:
 
 ### <a name="python"></a>Python
 
-Python은 심층 학습 응용 프로그램의 기본 프로그래밍 언어입니다. **64비트** Python 배포가 필요하며 최상의 호환성을 위해 [Python 3.5.4](https://www.python.org/downloads/release/python-354/)를 사용하는 것이 좋습니다.
+Python은 심층 학습 애플리케이션의 기본 프로그래밍 언어입니다. **64비트** Python 배포가 필요하며 최상의 호환성을 위해 [Python 3.5.4](https://www.python.org/downloads/release/python-354/)를 사용하는 것이 좋습니다.
 
 ### <a name="to-install-python-on-windows"></a>Windows에 Python을 설치하려면
 
@@ -90,28 +87,30 @@ Python은 심층 학습 응용 프로그램의 기본 프로그래밍 언어입�
 이제 Python 3.5가 제대로 설치되었는지 확인하고 터미널에서 다음 명령을 실행하여 pip를 최신 버전으로 업그레이드합니다.
 
 - **Windows**
-    ```cmd
-    C:\Users\test>python -V
-    Python 3.5.4
 
-    C:\Users\test>pip3.5 -V
-    pip 9.0.1 from c:\users\test\appdata\local\programs\python\python35\lib\site-packages (python 3.5)
+  ```cmd
+  C:\Users\test>python -V
+  Python 3.5.4
 
-    C:\Users\test>python -m pip install -U pip
-    ```
+  C:\Users\test>pip3.5 -V
+  pip 9.0.1 from c:\users\test\appdata\local\programs\python\python35\lib\site-packages (python 3.5)
+
+  C:\Users\test>python -m pip install -U pip
+  ```
 
 - **macOS**
-    ```bash
-    MyMac:~ test$ python3.5 -V
-    Python 3.5.4
 
-    MyMac:~ test$ pip3.5 -V
-    pip 9.0.1 from /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (python 3.5)
+  ```bash
+  MyMac:~ test$ python3.5 -V
+  Python 3.5.4
 
-    MyMac:~ test$ python3.5 -m pip install -U pip
-    ```
+  MyMac:~ test$ pip3.5 -V
+  pip 9.0.1 from /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (python 3.5)
 
-### <a name="python-on-visual-studio"></a>Visual Studio의 Python 
+  MyMac:~ test$ python3.5 -m pip install -U pip
+  ```
+
+### <a name="python-on-visual-studio"></a>Visual Studio의 Python
 
 Python은 확장을 통해 Visual Studio에서 완전히 지원됩니다.
 자세한 내용은 [Python for Visual Studio Tools](../python/installing-python-support-in-visual-studio.md) 설치를 참조하세요.
@@ -129,7 +128,7 @@ pip3.5 install -U numpy scipy
 ```
 
 > [!NOTE]
-> 위의 명령은 기존 구형 또는 비공식(예: http://www.lfd.uci.edu/~gohlke/pythonlibs/에서 제공하는 Windows용 타사 패키지) NumPy 및 SciPy를 최신 공식 버전으로 업그레이드합니다.
+> 위의 명령은 기존 구형 또는 비공식(예: http://www.lfd.uci.edu/~gohlke/pythonlibs/ 에서 제공하는 Windows용 타사 패키지) NumPy 및 SciPy를 최신 공식 버전으로 업그레이드합니다.
 
 ### <a name="microsoft-cognitive-toolkit-cntk"></a>Microsoft CNTK(Cognitive Toolkit)
 
@@ -162,13 +161,16 @@ CNTK Python 패키지를 설치하려면 [CNTK를 설치하는 방법](https://d
 MXNet을 설치하려면 터미널에서 다음 명령을 실행합니다.
 
 - GPU 사용
-    ```bash
-    pip3.5 install mxnet-cu80==0.12.0
-    ```
+
+  ```bash
+  pip3.5 install mxnet-cu80==0.12.0
+  ```
+
 - GPU 사용 안 함
-    ```bash
-    pip3.5 install mxnet==0.12.0
-    ```
+
+  ```bash
+  pip3.5 install mxnet==0.12.0
+  ```
 
 ### <a name="keras"></a>Keras
 
@@ -195,28 +197,39 @@ pip3.5 install Theano==0.9.0
 [PyTorch](http://pytorch.org/)는 두 고급 기능을 제공하는 Python 패키지입니다.
 
 - 강력한 GPU 가속화를 통해 numpy처럼 텐서 계산
-- 테이프 기반 오토그래드 시스템을 바탕으로 구축된 심층 신경망 
+- 테이프 기반 오토그래드 시스템을 바탕으로 구축된 심층 신경망
 
 PyTorch를 설치하려면 터미널에서 다음 명령을 실행합니다.
 
 - **Windows**
-    - 아직 공식 휠 패키지가 없습니다. 타사가 제공하는 [Anaconda PyTorch 패키지](https://anaconda.org/pytorch/repo?type=all)를 다운로드할 수 있습니다.
-    - 홈 디렉터리에 압축을 풉니다. 예를 들면 "C:\Users\test\pytorch"입니다.
-    - "C:\Users\test\pytorch\Lib\site-packages"를 %PYTHONPATH% 환경 변수에 추가합니다.
+
+  아직 공식 휠 패키지가 없습니다. [Anaconda](https://anaconda.org/pytorch/repo?type=all) 또는 [캘리포니아 대학교](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pytorch)에서 타사 패키지를 다운로드할 수 있습니다.
+
+  - 홈 디렉터리(예: *C:\Users\test\pytorch*)에 압축을 풉니다.
+  - *C:\Users\test\pytorch\Lib\site-packages*를 %PYTHONPATH% 환경 변수에 추가합니다.
+
+    ```bash
+    pip3 install http://download.pytorch.org/whl/cu80/torch-0.4.0-cp36-cp36m-win_amd64.whl
+    pip3 install torchvision
+    ```
 
 - **macOS**
-    ```bash
-    pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
-    ```
-    > [!NOTE]
-    > macOS 이진은 CUDA를 지원하지 않습니다. CUDA가 필요하면 원본에서 설치합니다.
+
+  ```bash
+  pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
+  ```
+
+  > [!NOTE]
+  > macOS 이진은 CUDA를 지원하지 않습니다. CUDA가 필요하면 원본에서 설치합니다.
 
 - **Linux**
-    ```bash
-    pip3.5 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
-    ```
-    > [!NOTE]
-    > 이 단일 패키지는 GPU 및 CPU를 모두 지원합니다.
+
+  ```bash
+  pip3.5 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
+  ```
+
+  > [!NOTE]
+  > 이 단일 패키지는 GPU 및 CPU를 모두 지원합니다.
 
 마지막으로, 비 Windows에 torchvision을 설치합니다.
 
@@ -226,7 +239,7 @@ pip3.5 install torchvision
 
 ### <a name="chainer"></a>Chainer
 
-[Chainer](https://chainer.org/)는 유연성을 목표로 하는 Python 기반 심층 학습 프레임워크입니다. **실행을 통한 정의 방식**(즉 동적 계산 그래프)와 객체 지향 고급 API 모두를 바탕으로 자동 차별화 API를 제공하여 신경망을 빌드 및 교육합니다.
+[Chainer](https://chainer.org/)는 유연성을 목표로 하는 Python 기반 심층 학습 프레임워크입니다. 여기서는 신경망을 빌드하고 학습하는 데 사용되는 개체 지향 고급 API 뿐만 아니라 실행별 정의 방법(동적 계산 그래프라고도 함)을 기준으로 하는 자동 차별화 API를 제공합니다.
 
 CUDA 지원을 사용하려면 [CuPy](https://github.com/cupy/cupy)를 설치합니다.
 

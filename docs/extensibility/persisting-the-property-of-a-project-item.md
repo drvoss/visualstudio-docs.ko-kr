@@ -6,17 +6,17 @@ helpviewer_keywords:
 - properties, adding to a project item
 - project items, adding properties
 ms.assetid: d7a0f2b0-d427-4d49-9536-54edfb37c0f3
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e04561a5b61aed471840e5e835b942c1b2a81717
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 02055e4e9f25f98193e8b27d42326589aef47762
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823434"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336112"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>프로젝트 항목의 속성 유지
 프로젝트 항목, 소스 파일의 작성자와 같은 추가 속성을 유지 하려는 경우. 프로젝트 파일에서 속성을 저장 하 여이 수행할 수 있습니다.
@@ -27,7 +27,7 @@ ms.locfileid: "53823434"
 
 ## <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>DTE 개체를 사용 하 여 프로젝트 계층 구조를 가져오려면
 
-1.  VSPackage에 다음 코드를 추가 합니다.
+1. VSPackage에 다음 코드를 추가 합니다.
 
     ```csharp
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));
@@ -41,7 +41,7 @@ ms.locfileid: "53823434"
 
 ## <a name="to-persist-the-project-item-property-with-the-dte-object"></a>DTE 개체를 사용 하 여 프로젝트 항목 속성을 유지 하려면
 
-1.  이전 절차의 메서드에 지정 된 코드에 다음 코드를 추가 합니다.
+1. 이전 절차의 메서드에 지정 된 코드에 다음 코드를 추가 합니다.
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =
@@ -58,7 +58,7 @@ ms.locfileid: "53823434"
 
 ## <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>IVsMonitorSelection를 사용 하 여 프로젝트 계층 구조를 가져오려면
 
-1.  VSPackage에 다음 코드를 추가 합니다.
+1. VSPackage에 다음 코드를 추가 합니다.
 
     ```csharp
     IVsHierarchy hierarchy = null;
@@ -102,7 +102,7 @@ ms.locfileid: "53823434"
 
 ## <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>프로젝트 계층 구조에 선택한 프로젝트 항목 속성을 유지 하려면
 
-1.  이전 절차의 메서드에 지정 된 코드에 다음 코드를 추가 합니다.
+1. 이전 절차의 메서드에 지정 된 코드에 다음 코드를 추가 합니다.
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =
@@ -132,6 +132,6 @@ ms.locfileid: "53823434"
    </Compile>
    ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [사용자 지정 도구](../extensibility/internals/custom-tools.md)

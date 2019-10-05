@@ -1,30 +1,27 @@
 ---
 title: 도메인별 언어 시작 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 024392a2-2c04-404f-a27b-7273553c3b60
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 29699609ee095c7e95434492afc531869453da4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ca90a90d476acc0bdbc1df426b981d98207bbd28
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877772"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687242"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>도메인별 언어 시작
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 항목에서는 정의 하 고 Visual Studio 용 모델링 SDK를 사용 하 여 만든 도메인 특정 언어 (DSL)를 사용 하 여 기본적인 개념을 설명 합니다.  
   
- Dsl을 처음 접하는 경우 진행 하는 것이 좋습니다 합니다 **DSL 도구 랩**,이 사이트에서 찾을 수 있는: [Visualizaton and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
+ Dsl을 처음 접하는 경우 진행 하는 것이 좋습니다 합니다 **DSL 도구 랩**,이 사이트에서 찾을 수 있습니다. [Visualizaton 및 모델링 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
   
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>도메인 특정 언어를 사용 하 여 수행할 수 있습니까?  
  도메인 특정 언어는 노테이션 일반적으로 그래픽 특정 용도로 사용 하도록 디자인 된 경우 반면, UML 같은 언어는 범용입니다. DSL의 모델 요소 및 해당 관계 및 화면에 표시 되는 방식을 유형을 정의할 수 있습니다.  
@@ -46,7 +43,7 @@ ms.locfileid: "49877772"
 |-|-|  
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
-|Visual Studio 용 모델링 SDK|[MSDK를 다운로드 합니다.](http://www.microsoft.com/download/details.aspx?id=40754)|  
+|Visual Studio 용 모델링 SDK|[MSDK를 다운로드 합니다.](https://www.microsoft.com/download/details.aspx?id=48148)|  
   
 ## <a name="creating-a-dsl-solution"></a>DSL 솔루션 만들기  
  새 도메인 특정 언어를 만들려면 새로 만든 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 도메인 특정 언어 프로젝트 템플릿을 사용 하 여 솔루션입니다.  
@@ -73,16 +70,16 @@ ms.locfileid: "49877772"
   
 6. 해당하는 마법사 페이지에서 DSL의 파일 이름 확장명을 입력합니다. 이 확장명은 DSL의 인스턴스가 포함된 파일에 사용됩니다.  
   
-   -   DSL을 설치 하려는 모든 컴퓨터 또는 컴퓨터에서 응용 프로그램과 연결 되지 않은 확장을 선택 합니다. 예를 들어 **docx** 하 고 **htm** 허용 되지 않는 파일 이름 확장명을 수 있습니다.  
+   - DSL을 설치 하려는 모든 컴퓨터 또는 컴퓨터에서 응용 프로그램과 연결 되지 않은 확장을 선택 합니다. 예를 들어 **docx** 하 고 **htm** 허용 되지 않는 파일 이름 확장명을 수 있습니다.  
   
-   -   입력한 확장명이 DSL로 사용되고 있으면 경고가 표시됩니다. 이 경우 다른 파일 이름 확장명을 사용해야 합니다. Visual Studio SDK 실험적 인스턴스를 다시 설정하여 오래된 실험적 디자이너를 지울 수도 있습니다. 클릭 **시작**, 클릭 **모든 프로그램**를 **Microsoft Visual Studio 2010 SDK**를 **도구**를 차례로 **Microsoft를 다시 설정 Visual Studio 2010 실험적 인스턴스**합니다.  
+   - 입력한 확장명이 DSL로 사용되고 있으면 경고가 표시됩니다. 이 경우 다른 파일 이름 확장명을 사용해야 합니다. Visual Studio SDK 실험적 인스턴스를 다시 설정하여 오래된 실험적 디자이너를 지울 수도 있습니다. 클릭 **시작**, 클릭 **모든 프로그램**를 **Microsoft Visual Studio 2010 SDK**를 **도구**를 차례로 **Microsoft를 다시 설정 Visual Studio 2010 실험적 인스턴스**합니다.  
   
 7. 다른 페이지를 검사 하 고 클릭 **완료**합니다.  
   
     솔루션에는 두 프로젝트가 포함 된 생성 됩니다. Dsl과 DslPackage 라고 합니다. 다이어그램 파일을 엽니다 명명된 DslDefinition.dsl입니다.  
   
    > [!NOTE]
-   >  대부분의 두 프로젝트의 폴더에서 볼 수 있는 코드는 DslDefinition.dsl에서 생성 됩니다. 이러한 이유로 대부분 DSL 수정이이 파일에 만들어집니다.  
+   > 대부분의 두 프로젝트의 폴더에서 볼 수 있는 코드는 DslDefinition.dsl에서 생성 됩니다. 이러한 이유로 대부분 DSL 수정이이 파일에 만들어집니다.  
   
    이제 사용자 인터페이스는 다음 그림과 같이 표시됩니다.  
   
@@ -93,13 +90,13 @@ ms.locfileid: "49877772"
 ## <a name="the-important-parts-of-the-dsl-solution"></a>DSL 솔루션의 중요 한 부분  
  새 솔루션의 다음 측면을 확인할 수 있습니다.  
   
--   **Dsl\DslDefinition.dsl** DSL 솔루션을 만들 때 참조 하는 파일입니다. 대부분의 DSL 정의에 대해 수행한 변경 내용이 여기 및 솔루션의 거의 모든 코드를이 파일에서 생성 됩니다. 자세한 내용은 참조를 사용 합니다 [DSL 정의 다이어그램 작업](../modeling/working-with-the-dsl-definition-diagram.md).  
+- **Dsl\DslDefinition.dsl** DSL 솔루션을 만들 때 참조 하는 파일입니다. 대부분의 DSL 정의에 대해 수행한 변경 내용이 여기 및 솔루션의 거의 모든 코드를이 파일에서 생성 됩니다. 자세한 내용은 참조를 사용 합니다 [DSL 정의 다이어그램 작업](../modeling/working-with-the-dsl-definition-diagram.md).  
   
--   **Dsl 프로젝트** 이 프로젝트에 도메인 특정 언어를 정의 하는 코드가 포함 되어 있습니다.  
+- **Dsl 프로젝트** 이 프로젝트에 도메인 특정 언어를 정의 하는 코드가 포함 되어 있습니다.  
   
--   **DslPackage 프로젝트** 이 프로젝트를 열고 편집할 수는 DSL의 인스턴스를 허용 하는 코드가 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다.  
+- **DslPackage 프로젝트** 이 프로젝트를 열고 편집할 수는 DSL의 인스턴스를 허용 하는 코드가 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다.  
   
-##  <a name="Debugging"></a> DSL을 실행합니다.  
+## <a name="Debugging"></a> DSL을 실행합니다.  
  만든 즉시 DSL 솔루션을 실행할 수 있습니다. 나중에 수정할 수 있습니다 DSL 정의 점진적으로, 각 변경 후에 다시 솔루션을 실행 합니다.  
   
 #### <a name="to-experiment-with-the-dsl"></a>DSL을 사용 하 여 실험  
@@ -107,7 +104,7 @@ ms.locfileid: "49877772"
 1. 클릭 **모든 템플릿 변환** 솔루션 탐색기 도구 모음에서입니다. 이 대부분의 DslDefinition.dsl에서 소스 코드를 다시 생성합니다.  
   
    > [!NOTE]
-   >  DslDefinition.dsl을 변경할 때마다 눌러야 **모든 템플릿 변환** 솔루션을 다시 작성 하기 전에 합니다. 이 단계는 자동화할 수 있습니다. 자세한 내용은 [모든 템플릿 변환 자동화 방법](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a)합니다.  
+   > DslDefinition.dsl을 변경할 때마다 눌러야 **모든 템플릿 변환** 솔루션을 다시 작성 하기 전에 합니다. 이 단계는 자동화할 수 있습니다. 자세한 내용은 [모든 템플릿 변환 자동화 방법](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)합니다.  
   
 2. F5 키를 또는 **디버깅할** 메뉴에서 클릭 **디버깅 시작**합니다.  
   
@@ -127,9 +124,9 @@ ms.locfileid: "49877772"
   
 4. 다이어그램에서 모양 및 연결선을 만들려면 도구를 사용 합니다.  
   
-   1.  셰이프를 만들려면 다이어그램 예제 셰이프 도구에서 끕니다.  
+   1. 셰이프를 만들려면 다이어그램 예제 셰이프 도구에서 끕니다.  
   
-   2.  두 셰이프를 연결 하려면 예제 연결선 도구, 첫 번째 셰이프를 클릭 및 두 번째 셰이프를 클릭 합니다.  
+   2. 두 셰이프를 연결 하려면 예제 연결선 도구, 첫 번째 셰이프를 클릭 및 두 번째 셰이프를 클릭 합니다.  
   
 5. 레이블을 변경 하려면 셰이프를 클릭 합니다.  
   
@@ -174,7 +171,7 @@ ms.locfileid: "49877772"
    텍스트 템플릿 파일을 프로젝트에 추가할 수 있습니다. 각 템플릿은 하나의 결과 파일을 생성합니다.  
   
 > [!NOTE]
->  DSL 정의 변경한 경우 샘플 텍스트 템플릿 코드가 작동 하지 않습니다,이 업데이트 하지 않으면.  
+> DSL 정의 변경한 경우 샘플 텍스트 템플릿 코드가 작동 하지 않습니다,이 업데이트 하지 않으면.  
   
  자세한 내용은 참조 하세요. [도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md) 하 고 [도메인별 도메인별 언어 사용자 지정 하려면 코드 작성](../modeling/writing-code-to-customise-a-domain-specific-language.md)합니다.  
   
@@ -182,7 +179,7 @@ ms.locfileid: "49877772"
  DSL 정의 수정 하려는 경우 실험적 인스턴스를 닫고 기본에서 정의 업데이트 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 인스턴스.  
   
 > [!NOTE]
->  DSL 정의 수정한 후에 이전 버전을 사용 하 여 만든 테스트 모델에서 정보를 손실 될 수 있습니다.  예를 들어, 디버깅 솔루션에는 몇 가지 모양 및 연결선을 포함 하는 샘플 라는 파일이 있습니다. DSL 정의 개발을 시작한 후에 표시 되지 않습니다 및 파일을 저장할 때 손실 됩니다.  
+> DSL 정의 수정한 후에 이전 버전을 사용 하 여 만든 테스트 모델에서 정보를 손실 될 수 있습니다.  예를 들어, 디버깅 솔루션에는 몇 가지 모양 및 연결선을 포함 하는 샘플 라는 파일이 있습니다. DSL 정의 개발을 시작한 후에 표시 되지 않습니다 및 파일을 저장할 때 손실 됩니다.  
   
  DSL에 다양 한 확장을 만들 수 있습니다. 다음 예제에서는 새 가능성을 제공 합니다.  
   
@@ -193,43 +190,43 @@ ms.locfileid: "49877772"
   
 ##### <a name="to-rename-domain-classes-relationships-and-tools"></a>도메인 클래스, 관계 및 도구 이름을 바꾸려면  
   
-1.  DslDefinition 다이어그램 이름 바꾸기 **ExampleModel** 하 **FamilyTreeModel**, **ExampleElement** 에 **Person**,  **대상** 하 **부모**, 및 **원본** 에 **자식을**합니다. 각 레이블을 변경 하려면 클릭 수 있습니다.  
+1. DslDefinition 다이어그램 이름 바꾸기 **ExampleModel** 하 **FamilyTreeModel**, **ExampleElement** 에 **Person**,  **대상** 하 **부모**, 및 **원본** 에 **자식을**합니다. 각 레이블을 변경 하려면 클릭 수 있습니다.  
   
      ![DSL 정의 다이어그램 &#45; 패밀리 트리 모델](../modeling/media/familyt-person.png "FamilyT_Person")  
   
-2.  요소 및 연결선 도구를 이름을 바꿉니다.  
+2. 요소 및 연결선 도구를 이름을 바꿉니다.  
   
-    1.  솔루션 탐색기에서 탭을 클릭 하 여 DSL 탐색기 창을 엽니다. 볼 수 없는 경우,에 **뷰** 메뉴 가리킵니다 **다른 Windows** 클릭 하 고 **DSL 탐색기**합니다. DSL 탐색기 DSL 정의 다이어그램이 활성 창인 경우에 표시 됩니다.  
+    1. 솔루션 탐색기에서 탭을 클릭 하 여 DSL 탐색기 창을 엽니다. 볼 수 없는 경우,에 **뷰** 메뉴 가리킵니다 **다른 Windows** 클릭 하 고 **DSL 탐색기**합니다. DSL 탐색기 DSL 정의 다이어그램이 활성 창인 경우에 표시 됩니다.  
   
-    2.  속성 창을 열고 동시 DSL 탐색기 및 속성을 볼 수 있도록 배치 합니다.  
+    2. 속성 창을 열고 동시 DSL 탐색기 및 속성을 볼 수 있도록 배치 합니다.  
   
-    3.  DSL 탐색기에서 확장 **편집기**, **도구 상자 탭**를  *\<DSL >* 를 차례로 **도구**합니다.  
+    3. DSL 탐색기에서 확장 **편집기**, **도구 상자 탭**를  *\<DSL >* 를 차례로 **도구**합니다.  
   
-    4.  클릭 **ExampleElement**합니다. 요소를 만드는 데 사용 되는 도구 상자 항목입니다.  
+    4. 클릭 **ExampleElement**합니다. 요소를 만드는 데 사용 되는 도구 상자 항목입니다.  
   
-    5.  속성 창에서 변경 된 **이름** 속성을 **Person**합니다.  
+    5. 속성 창에서 변경 된 **이름** 속성을 **Person**합니다.  
   
          다음에 유의 합니다 **캡션** 속성도 변경 합니다.  
   
-    6.  동일한 방식으로 이름을 변경 합니다 **ExampleConnector** 도구를 **ParentLink**합니다. Alter 합니다 **캡션** 속성 한다는 이름 속성은 복사 되지 않도록 합니다. 예를 들어 입력 **부모 링크**합니다.  
+    6. 동일한 방식으로 이름을 변경 합니다 **ExampleConnector** 도구를 **ParentLink**합니다. Alter 합니다 **캡션** 속성 한다는 이름 속성은 복사 되지 않도록 합니다. 예를 들어 입력 **부모 링크**합니다.  
   
-3.  DSL을 다시 작성 합니다.  
+3. DSL을 다시 작성 합니다.  
   
-    1.  DSL 정의 파일을 저장 합니다.  
+    1. DSL 정의 파일을 저장 합니다.  
   
-    2.  클릭 **모든 템플릿 변환** 솔루션 탐색기의 도구 모음  
+    2. 클릭 **모든 템플릿 변환** 솔루션 탐색기의 도구 모음  
   
-    3.  F5 키를 누릅니다. 실험적 인스턴스에서 될 때까지 기다렸다가 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 나타납니다.  
+    3. F5 키를 누릅니다. 실험적 인스턴스에서 될 때까지 기다렸다가 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 나타납니다.  
   
-4.  실험적 인스턴스에서 디버깅 솔루션에 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], 테스트 모델 파일을 엽니다. 도구 상자에서 끌어 요소를 끕니다. 도구 캡션 및 DSL 탐색기에 형식 이름이 변경 되었습니다. 알 수 있습니다.  
+4. 실험적 인스턴스에서 디버깅 솔루션에 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], 테스트 모델 파일을 엽니다. 도구 상자에서 끌어 요소를 끕니다. 도구 캡션 및 DSL 탐색기에 형식 이름이 변경 되었습니다. 알 수 있습니다.  
   
-5.  모델 파일을 저장 합니다.  
+5. 모델 파일을 저장 합니다.  
   
-6.  .Tt 파일을 열고 새 이름을 사용 하 여 이전 형식 및 속성 이름을 바꿀 합니다.  
+6. .Tt 파일을 열고 새 이름을 사용 하 여 이전 형식 및 속성 이름을 바꿀 합니다.  
   
-7.  .Tt 파일에 지정 된 파일 이름을 테스트 모델을 지정 하는지 확인 합니다.  
+7. .Tt 파일에 지정 된 파일 이름을 테스트 모델을 지정 하는지 확인 합니다.  
   
-8.  .Tt 파일을 저장 합니다. .Tt 파일에서 코드를 실행 하는 결과 확인 하려면 생성 된 파일을 엽니다. 이 정확한 지 확인 합니다.  
+8. .Tt 파일을 저장 합니다. .Tt 파일에서 코드를 실행 하는 결과 확인 하려면 생성 된 파일을 엽니다. 이 정확한 지 확인 합니다.  
   
 ### <a name="add-domain-properties-to-classes"></a>클래스에 도메인 속성을 추가 합니다.  
  예를 들어 사람의 사망 및 생년월일의 연도를 나타내는 도메인 클래스 속성을 추가 합니다.  
@@ -240,29 +237,29 @@ ms.locfileid: "49877772"
   
 1. 속성을 추가 합니다.  
   
-   1.  DSL 정의 다이어그램에서 마우스 오른쪽 단추로 클릭 합니다 **Person** 도메인 클래스를 가리킵니다 **추가**를 클릭 하 고 **도메인 속성**합니다.  
+   1. DSL 정의 다이어그램에서 마우스 오른쪽 단추로 클릭 합니다 **Person** 도메인 클래스를 가리킵니다 **추가**를 클릭 하 고 **도메인 속성**합니다.  
   
-   2.  와 같은 새 속성 이름 목록을 입력 **출생** 하 고 **사망**합니다. 키를 눌러 **Enter** 각각.  
+   2. 와 같은 새 속성 이름 목록을 입력 **출생** 하 고 **사망**합니다. 키를 눌러 **Enter** 각각.  
   
 2. 모양에 속성을 표시 하는 데코레이터를 추가 합니다.  
   
-   1.  다이어그램의 다른 쪽에 Person 도메인 클래스에서 확장 되는 회색 선을 수행 합니다. 다이어그램 요소 맵을 이것이입니다. 도메인 클래스 모양 클래스에 연결 합니다.  
+   1. 다이어그램의 다른 쪽에 Person 도메인 클래스에서 확장 되는 회색 선을 수행 합니다. 다이어그램 요소 맵을 이것이입니다. 도메인 클래스 모양 클래스에 연결 합니다.  
   
-   2.  이 모양 클래스를 마우스 오른쪽 **추가**를 클릭 하 고 **텍스트 Decorator**합니다.  
+   2. 이 모양 클래스를 마우스 오른쪽 **추가**를 클릭 하 고 **텍스트 Decorator**합니다.  
   
-   3.  같은 이름의 두 decorator를 추가 **BirthDecorator** 하 고 **DeathDecorator**합니다.  
+   3. 같은 이름의 두 decorator를 추가 **BirthDecorator** 하 고 **DeathDecorator**합니다.  
   
-   4.  각 새 decorator를 선택 하 고 속성 창에서 설정 된 **위치** 필드입니다. 이 도메인 속성 값을 모양에 표시할 위치를 결정 합니다. 예를 들어 설정할 **InnerBottomLeft** 하 고 **InnerBottomRight**합니다.  
+   4. 각 새 decorator를 선택 하 고 속성 창에서 설정 된 **위치** 필드입니다. 이 도메인 속성 값을 모양에 표시할 위치를 결정 합니다. 예를 들어 설정할 **InnerBottomLeft** 하 고 **InnerBottomRight**합니다.  
   
         ![구획 모양 정의](../modeling/media/familyt-compartment.png "FamilyT_Compartment")  
   
 3. Decorator는 속성에 매핑됩니다.  
   
-   1.  DSL 세부 정보 창을 엽니다. 일반적으로 출력 창 옆에 있는 탭입니다. 볼 수 없는 경우,에 **보기** 메뉴에서 **다른 Windows**를 클릭 하 고 **DSL 정보**.  
+   1. DSL 세부 정보 창을 엽니다. 일반적으로 출력 창 옆에 있는 탭입니다. 볼 수 없는 경우,에 **보기** 메뉴에서 **다른 Windows**를 클릭 하 고 **DSL 정보**.  
   
-   2.  DSL 정의 다이어그램에서 연결 하는 선을 클릭 합니다 **Person** 도메인 클래스 모양 클래스를 합니다.  
+   2. DSL 정의 다이어그램에서 연결 하는 선을 클릭 합니다 **Person** 도메인 클래스 모양 클래스를 합니다.  
   
-   3.  **DSL 세부 정보**에 **Decorator 맵** 탭에서 매핑되지 않은 decorator는에 있는 확인란을 클릭 합니다. **표시 속성**, 원하는 매핑되어 도메인 속성을 선택 합니다. 예를 들어 매핑할 **BirthDecorator** 하 **출생**합니다.  
+   3. **DSL 세부 정보**에 **Decorator 맵** 탭에서 매핑되지 않은 decorator는에 있는 확인란을 클릭 합니다. **표시 속성**, 원하는 매핑되어 도메인 속성을 선택 합니다. 예를 들어 매핑할 **BirthDecorator** 하 **출생**합니다.  
   
 4. DSL을 저장 하 고, 모든 템플릿 변환을 클릭 및 F5 키를 누릅니다.  
   
@@ -279,71 +276,71 @@ ms.locfileid: "49877772"
   
 ##### <a name="to-add-and-display-a-new-domain-class"></a>추가 하 고 새 도메인 클래스를 표시 합니다.  
   
-1.  도메인 클래스를 추가 하 고 모델 루트의 자식으로 만듭니다.  
+1. 도메인 클래스를 추가 하 고 모델 루트의 자식으로 만듭니다.  
   
-    1.  DSL 정의 다이어그램을 클릭 합니다 **포함 관계** 도구는 루트 클래스를 클릭 합니다 **FamilyTreeModel**, 다이어그램의 빈 부분에서를 클릭 하 고 합니다.  
+    1. DSL 정의 다이어그램을 클릭 합니다 **포함 관계** 도구는 루트 클래스를 클릭 합니다 **FamilyTreeModel**, 다이어그램의 빈 부분에서를 클릭 하 고 합니다.  
   
          새 도메인 클래스가 나타납니다 포함 관계를 사용 하 여 FamilyTreeModel에 연결 됩니다.  
   
          예를 들어 이름 설정 **Town**합니다.  
   
         > [!NOTE]
-        >  모델의 루트를 제외한 모든 도메인 클래스 하나 이상 포함 관계의 대상 이거나 포함의 대상이 되는 클래스에서 상속 해야 합니다. 이 따라서 자주 포함 관계 도구를 사용 하 여 도메인 클래스를 만드는 편리한 것입니다.  
+        > 모델의 루트를 제외한 모든 도메인 클래스 하나 이상 포함 관계의 대상 이거나 포함의 대상이 되는 클래스에서 상속 해야 합니다. 이 따라서 자주 포함 관계 도구를 사용 하 여 도메인 클래스를 만드는 편리한 것입니다.  
   
-    2.  예를 들어 새 클래스에 도메인 속성을 추가 **이름을**입니다.  
+    2. 예를 들어 새 클래스에 도메인 속성을 추가 **이름을**입니다.  
   
-2.  Person 및 Town 간에 참조 관계를 추가 합니다.  
+2. Person 및 Town 간에 참조 관계를 추가 합니다.  
   
-    1.  클릭 합니다 **참조 관계** 도구, 사용자를 클릭 한 다음 Town을 클릭 합니다.  
+    1. 클릭 합니다 **참조 관계** 도구, 사용자를 클릭 한 다음 Town을 클릭 합니다.  
   
          ![DSL 정의 조각: 패밀리 트리 루트](../modeling/media/familyt-root.png "FamilyT_Root")  
   
         > [!NOTE]
-        >  참조 관계는 다른 모델 트리의 한 부분에서 상호 참조를 나타냅니다.  
+        > 참조 관계는 다른 모델 트리의 한 부분에서 상호 참조를 나타냅니다.  
   
-3.  모델 다이어그램에서 도심지 나타내는 셰이프를 추가 합니다.  
+3. 모델 다이어그램에서 도심지 나타내는 셰이프를 추가 합니다.  
   
-    1.  끌어서를 **기 하 도형** 다이어그램 도구 상자에서 예를 들어, 이름을 **TownShape**합니다.  
+    1. 끌어서를 **기 하 도형** 다이어그램 도구 상자에서 예를 들어, 이름을 **TownShape**합니다.  
   
-    2.  속성 창에서 새 셰이프의 채우기 색 등 기 하 도형 모양 필드를 설정 합니다.  
+    2. 속성 창에서 새 셰이프의 채우기 색 등 기 하 도형 모양 필드를 설정 합니다.  
   
-    3.  도시별으로의 이름을 표시 하는 데코레이터를 추가 하 고 NameDecorator 바꿉니다. 해당 위치 속성을 설정 합니다.  
+    3. 도시별으로의 이름을 표시 하는 데코레이터를 추가 하 고 NameDecorator 바꿉니다. 해당 위치 속성을 설정 합니다.  
   
-4.  마을 도메인 클래스는 TownShape 매핑됩니다.  
+4. 마을 도메인 클래스는 TownShape 매핑됩니다.  
   
-    1.  클릭 합니다 **다이어그램 요소 맵을** Town 도메인 클래스 TownShape 모양 클래스와 다음를 클릭 한 다음 도구를 합니다.  
+    1. 클릭 합니다 **다이어그램 요소 맵을** Town 도메인 클래스 TownShape 모양 클래스와 다음를 클릭 한 다음 도구를 합니다.  
   
-    2.  에 **Decorator 맵** 탭을 **DSL 세부 정보** 선택한 맵 커넥터를 사용 하 여 창을 NameDecorator를 확인 하 고 설정 **표시 속성** 이름에.  
+    2. 에 **Decorator 맵** 탭을 **DSL 세부 정보** 선택한 맵 커넥터를 사용 하 여 창을 NameDecorator를 확인 하 고 설정 **표시 속성** 이름에.  
   
-5.  도심지와 사용자 간의 관계를 표시 하려면 커넥터를 만듭니다.  
+5. 도심지와 사용자 간의 관계를 표시 하려면 커넥터를 만듭니다.  
   
-    1.  도구 상자에서 다이어그램에 커넥터를 끕니다. 그 이름을 바꾸고 해당 모양 속성을 설정 합니다.  
+    1. 도구 상자에서 다이어그램에 커넥터를 끕니다. 그 이름을 바꾸고 해당 모양 속성을 설정 합니다.  
   
-    2.  사용 된 **다이어그램 요소 맵을** Person 및 Town 간의 관계에 새 커넥터를 연결 하는 도구입니다.  
+    2. 사용 된 **다이어그램 요소 맵을** Person 및 Town 간의 관계에 새 커넥터를 연결 하는 도구입니다.  
   
          ![추가 된 모양 맵 사용 하 여 패밀리 트리 정의](../modeling/media/familyt-shapemap.png "FamilyT_ShapeMap")  
   
-6.  새로운 지역 하기 요소 도구를 만듭니다.  
+6. 새로운 지역 하기 요소 도구를 만듭니다.  
   
-    1.  **DSL 탐색기**를 확장 하 고 **편집기** 한 다음 **도구 상자 탭**합니다.  
+    1. **DSL 탐색기**를 확장 하 고 **편집기** 한 다음 **도구 상자 탭**합니다.  
   
-    2.  마우스 오른쪽 단추로 클릭  *\<DSL >* 을 클릭 한 다음 **새 요소 도구 추가**합니다.  
+    2. 마우스 오른쪽 단추로 클릭  *\<DSL >* 을 클릭 한 다음 **새 요소 도구 추가**합니다.  
   
-    3.  설정 된 **이름** 새로운 도구 집합의 속성 해당 **클래스** Town 속성입니다.  
+    3. 설정 된 **이름** 새로운 도구 집합의 속성 해당 **클래스** Town 속성입니다.  
   
-    4.  설정 된 **도구 상자 아이콘** 속성입니다. 클릭 **[...]**  고 합니다 **파일 이름** 필드, 아이콘 파일을 선택 합니다.  
+    4. 설정 된 **도구 상자 아이콘** 속성입니다. 클릭 **[...]**  고 합니다 **파일 이름** 필드, 아이콘 파일을 선택 합니다.  
   
-7.  도심지와 사용자 간의 링크 하기 위한 커넥터 도구를 만듭니다.  
+7. 도심지와 사용자 간의 링크 하기 위한 커넥터 도구를 만듭니다.  
   
-    1.  마우스 오른쪽 단추로 클릭  *\<DSL >* 을 클릭 한 다음 **새 커넥터 도구 추가**합니다.  
+    1. 마우스 오른쪽 단추로 클릭  *\<DSL >* 을 클릭 한 다음 **새 커넥터 도구 추가**합니다.  
   
-    2.  새 도구의 Name 속성을 설정 합니다.  
+    2. 새 도구의 Name 속성을 설정 합니다.  
   
-    3.  에 **ConnectionBuilder** 속성인 사용자 대 지역 관계의 이름을 포함 하는 작성기를 선택 합니다.  
+    3. 에 **ConnectionBuilder** 속성인 사용자 대 지역 관계의 이름을 포함 하는 작성기를 선택 합니다.  
   
-    4.  설정 된 **도구 상자 아이콘**합니다.  
+    4. 설정 된 **도구 상자 아이콘**합니다.  
   
-8.  DSL 정의 저장, 클릭 **모든 템플릿 변형**, 누릅니다 **F5**합니다.  
+8. DSL 정의 저장, 클릭 **모든 템플릿 변형**, 누릅니다 **F5**합니다.  
   
 9. 실험적 인스턴스에서 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], 테스트 모델 파일을 엽니다. 도심지 및 도심지와 사람 간의 링크를 만드는 새로운 도구를 사용 합니다. 만 요소의 올바른 형식 간의 링크를 만들 수 있는지 확인 합니다.  
   
@@ -386,9 +383,9 @@ ms.locfileid: "49877772"
   
  동일한 절차를 사용 하 여 DSL을 설치할 컴퓨터에 자체의 실험적 인스턴스를 사용할 필요가 없도록 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]합니다.  
   
- 자세한 내용은 [도메인별 언어 솔루션 배포](../modeling/deploying-domain-specific-language-solutions.md)합니다.  
+ 자세한 내용은 [도메인 특정 언어 솔루션 배포](../modeling/deploying-domain-specific-language-solutions.md)를 참조하세요.  
   
-##  <a name="Reset"></a> 오래 된 실험적 Dsl 제거  
+## <a name="Reset"></a> 오래 된 실험적 Dsl 제거  
  실험적 Dsl을 만들지 않은 경우 원하지 않는 다시 설정 하 여 컴퓨터에서 제거할 수는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 실험적 인스턴스.  
   
  모든 실험적 Dsl 및 실험적 다른 컴퓨터에서 제거 됩니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장 합니다. 이 디버깅 모드에서 실행 된 확장입니다.  
@@ -397,14 +394,11 @@ ms.locfileid: "49877772"
   
 #### <a name="to-reset-the-visual-studio-experimental-instance"></a>Visual Studio 실험적 인스턴스 다시 설정 하려면  
   
-1.  클릭 **시작**, 클릭 **모든 프로그램**를 **Microsoft Visual Studio 2010 SDK**를 **도구**를 차례로 **Microsoft를 다시 설정 Visual Studio 2010 실험적 인스턴스**합니다.  
+1. 클릭 **시작**, 클릭 **모든 프로그램**를 **Microsoft Visual Studio 2010 SDK**를 **도구**를 차례로 **Microsoft를 다시 설정 Visual Studio 2010 실험적 인스턴스**합니다.  
   
-2.  모든 실험적 Dsl 또는 다른 실험적 다시 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 계속 사용 하려는 확장 합니다.  
+2. 모든 실험적 Dsl 또는 다른 실험적 다시 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 계속 사용 하려는 확장 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [모델, 클래스 및 관계 이해](../modeling/understanding-models-classes-and-relationships.md)   
  [도메인 특정 언어를 정의 하는 방법](../modeling/how-to-define-a-domain-specific-language.md)   
  [Visualizaton 및 모델링 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
-
-
-

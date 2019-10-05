@@ -1,25 +1,20 @@
 ---
 title: 질감 및 이미지 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ff5125ce46abe993f35551a0ce46a0d211af99bb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 89c8fd489c29fc9b352c34011349ff447e48adb4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250499"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690085"
 ---
 # <a name="working-with-textures-and-images"></a>질감 및 이미지 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +22,7 @@ ms.locfileid: "49250499"
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 이미지 편집기를 사용하여 질감 및 이미지를 만들고 수정할 수 있습니다. 이미지 편집기는 DirectX 앱 개발에 사용되는 질감 및 이미지와 같은 풍부한 질감 및 이미지 형식을 지원합니다.  
   
 > [!NOTE]
->  이미지 편집기는 아이콘이나 커서 같은 로우 컬러 이미지를 지원하지 않습니다. 이런 종류의 이미지를 만들거나 수정하려면 [아이콘에 대한 이미지 편집기](http://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd)를 사용합니다.  
+> 이미지 편집기는 아이콘이나 커서 같은 로우 컬러 이미지를 지원하지 않습니다. 이런 종류의 이미지를 만들거나 수정하려면 [아이콘에 대한 이미지 편집기](https://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd)를 사용합니다.  
   
 ## <a name="textures-and-images"></a>질감 및 이미지  
  기본적인 수준의, 질감 및 이미지는 그래픽 앱에서 시각적인 세부 정보를 제공하는 데 사용되는 데이터 테이블입니다. 질감이나 이미지가 제공하는 세부 정보의 종류는 사용되는 방식에 따라 다르지만, 색상 샘플, 알파(투명도) 값, 표면 법선 및 높이 값이 일반적인 예입니다. 질감과 이미지의 주요 차이는 질감은 개체나 장면 전체를 나타내기 위한 모양의 표현(일반적으로 3D 모델)에 사용되는 반면, 이미지는 일반적으로 개체나 장면에 대한 독립적인 표현입니다.  
@@ -41,7 +36,7 @@ ms.locfileid: "49250499"
  법선 맵은 표면 법선을 포함합니다. 영향을 받는 개체의 조명 세부 정보를 제공하는 데 사용됩니다. 법선은 주로 빨강, 초록, 파랑 색의 구성 요소를 사용하여 인코딩되며, 벡터의 x, y 및 z 차원을 저장합니다. 하지만, 다른 인코딩(예: 극좌표를 기반으로 하는 인코딩)도 존재합니다.  
   
  높이 맵  
- 높이 맵은 높이 필드 데이터를 포함합니다. 영향을 받는 개체의 기하학적 세부 정보의 형태를 제공하기 위해(원하는 효과를 계산하는 셰이더 코드를 사용하여) 또는 지형 생성 같은 용도를 위한 데이터 요소를 제공하기 위해 사용됩니다. 높이 값은 주로 질감의 한 가지 채널을 사용하여 인코딩됩니다.  
+ 높이 맵은 높이 필드 데이터를 포함합니다. 영향을 받는 개체의 기하학적 세부 정보의 형태를 제공하기 위해(원하는 효과를 컴퓨팅하는 셰이더 코드를 사용하여) 또는 지형 생성 같은 용도를 위한 데이터 요소를 제공하기 위해 사용됩니다. 높이 값은 주로 질감의 한 가지 채널을 사용하여 인코딩됩니다.  
   
  큐브 맵  
  큐브 맵은 다양한 유형의 데이터(예: 색상 또는 법선)를 포함할 수 있지만 큐브 면은 6가지 질감으로 구성됩니다. 이로 인해 큐브 맵은 질감 좌표를 제공하여 샘플링되지 않고 큐브 중앙이 원점인 벡터를 제공하여 샘플링됩니다. 샘플링은 벡터가 큐브와 교차하는 지점에서 수행됩니다. 큐브 맵은 리플렉션 계산에 사용될 수 있는 환경의 근사값을 제공하는 데 사용되거나( *환경 매핑*이라고 함), 구면 개체에 2차원 질감이 제공할 수 있는 기본적인 수준보다 왜곡이 적은 질감을 제공하기 위해 사용됩니다.  
@@ -56,6 +51,3 @@ ms.locfileid: "49250499"
 |-----------|-----------------|  
 |[Image Editor](../designers/image-editor.md)|이미지 편집기를 사용하여 질감과 이미지 작업을 수행하는 방법을 설명합니다.|  
 |[이미지 편집기 예제](../designers/image-editor-examples.md)|일반적인 이미지 처리 작업을 수행하기 위해 이미지 편집기 사용 방법을 보여주는 항목에 대한 링크를 제공합니다.|
-
-
-

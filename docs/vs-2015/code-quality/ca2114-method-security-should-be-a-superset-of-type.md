@@ -1,14 +1,9 @@
 ---
-title: 'CA2114: 메서드 보안은 이어야 형식의 상위 집합 | Microsoft Docs'
-ms.custom: ''
+title: 'CA2114: 메서드 보안은 형식의 상위 집합 이어야 합니다. | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - MethodSecurityShouldBeASupersetOfType
 - CA2114
@@ -20,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5bdb7d5eb43958a892320fad244625f09fcd7592
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b1a360ee4ad35fd48a46f6d866912a05a584a54c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878286"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687310"
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: 메서드 보안은 형식의 상위 집합이어야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "49878286"
 |변경 수준|주요 변경|
 
 ## <a name="cause"></a>원인
- 형식에 선언적 보안 및 해당 메서드 중 하나에 동일한 보안 작업에 대 한 선언적 보안 및 보안 작업은 없습니다 [링크 요구가](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) 하거나 [상속 요청](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9), 권한과 메서드에서 검사 권한 하위 집합이 없는 형식으로 선택 합니다.
+ 형식에 선언적 보안 및 해당 메서드 중 하나에 동일한 보안 작업에 대 한 선언적 보안 및 보안 작업은 없습니다 [링크 요구가](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) 하거나 [상속 요청](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9), 권한과 메서드에서 검사 권한 하위 집합이 없는 형식으로 선택 합니다.
 
 ## <a name="rule-description"></a>규칙 설명
  메서드 모두 동일한 동작에 대해 메서드 수준과 형식 수준의 선언적 보안 없어야 합니다. 두 개의 검사 결합 되지 않습니다. 메서드 수준 요청에만 적용 됩니다. 예를 들어 권한을 요구 하는 형식을 `X`, 및 권한을 요구 하는 방법 중 하나 `Y`, 코드 권한이 없는 `X` 메서드를 실행 하 합니다.
@@ -63,11 +58,8 @@ ms.locfileid: "49878286"
 
  이 예제의 결과는 다음과 같습니다.
 
- **[모든 권한] 개인 정보: 1964/6/16 12시: 00 AM**
- **[(유형별 요구) 쓰기 권한이 없음] 개인 정보: 1964/6/16 오전 12시: 00**
- **[읽기 없습니다 권한 ( 요구 메서드에서)] 개인 정보에 액세스할 수 없습니다: 요청이 실패 했습니다.**
+ **[모든 권한] 개인 정보: 6/16/1964 오전 12시: 00**
+ **[(유형별 요구) 쓰기 권한이 없음] 개인 정보: 6/16/1964 오전 12시: 00**
+ **[읽기 권한 (메서드에서 요구) 없음] 개인 정보에 액세스할 수 없습니다. 요청이 실패 했습니다.**
 ## <a name="see-also"></a>참고 항목
- [보안 코딩 지침](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [상속 요청이](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9) [링크 요청](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [데이터 및 모델링](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
-
-
-
+ [보안 코딩 지침](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [상속 요청이](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) [링크 요청](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [데이터 및 모델링](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

@@ -1,14 +1,9 @@
 ---
-title: IDebugArrayObject::GetCount | Microsoft Docs
-ms.custom: ''
+title: 'IDebugArrayObject:: GetCount | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugArrayObject::GetCount
 helpviewer_keywords:
@@ -16,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 7931f3f7-033c-4bf8-8abd-95183952ebb0
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8951b19bc811234dc9003853c6bf227195787403
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 35cce37afc389501386ffec7b75b934e7933bc98
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797160"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68197800"
 ---
 # <a name="idebugarrayobjectgetcount"></a>IDebugArrayObject::GetCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-배열의 요소 개수를 가져옵니다.  
+배열의 요소 수를 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -47,14 +42,13 @@ int GetCount(
   
 #### <a name="parameters"></a>매개 변수  
  `pdwElements`  
- [out] 개수를 반환합니다.  
+ 제한이 개수를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 오류 코드를 반환합니다.  
+ 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 배열 개체는 다차원 배열 하는 경우에 모든 배열 개체 요소의 1 차원 배열에으로 간주 합니다. 예를 들어, 배열의 지정 된 `myarray[3][2][6]`,이 메서드는 36 반환 된 `pdwElements` 매개 변수입니다. 사용 된 [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) 메서드를 한 번에 하나씩 개별 요소를 검색 합니다.  
+ 이 메서드는 배열 개체가 다차원 인 경우에도 배열 개체의 모든 요소를 1 차원 배열로 표시 합니다. 예를 들어 배열이 `myarray[3][2][6]`지정 된 경우이 메서드는 `pdwElements` 매개 변수에 36을 반환 합니다. [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) 메서드를 사용 하 여 개별 요소를 한 번에 하나씩 검색 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)
-

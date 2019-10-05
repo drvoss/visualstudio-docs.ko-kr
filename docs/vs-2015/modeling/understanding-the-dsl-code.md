@@ -1,25 +1,22 @@
 ---
 title: DSL 코드 이해 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, generated code
 ms.assetid: 8e5c10e4-6323-433e-b88a-5d3d92639030
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: afe6a273716ab5e531781634be959c80d30a9e26
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fef5d4ab83d22b31b64c6e6ec509cab47a426f9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426950"
 ---
 # <a name="understanding-the-dsl-code"></a>DSL 코드 이해
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +27,7 @@ DSL(Domain-Specific Language) 솔루션은 [!INCLUDE[vsprvs](../includes/vsprvs-
  이 항목의 예제는 대부분의 소스인 솔루션을 만들려면에서 DSL을 만들 수는 **구성 요소 모델** 솔루션 템플릿. 이 템플릿은 새 DSL 솔루션을 만들 때 표시되는 표준 템플릿 중 하나입니다.  
   
 > [!NOTE]
->  구성 요소 다이어그램 DSL 템플릿은 Visual Studio에서 아키텍처 메뉴를 사용 하 여 만들 수 있는 UML 구성 요소 다이어그램에 관련 되지 않았습니다. 에 **새 프로젝트** 대화 상자에서 **기타 프로젝트 Types\Extensibility** 클릭 하 고 **도메인별 언어 디자이너**합니다.  
+> 구성 요소 다이어그램 DSL 템플릿은 Visual Studio에서 아키텍처 메뉴를 사용 하 여 만들 수 있는 UML 구성 요소 다이어그램에 관련 되지 않았습니다. 에 **새 프로젝트** 대화 상자에서 **기타 프로젝트 Types\Extensibility** 클릭 하 고 **도메인별 언어 디자이너**합니다.  
   
  이 솔루션 템플릿을 사용해 본 적이 없다면 F5 키를 누르고 해당 기능을 사용해 봅니다. 특히 구성 요소로 포트 도구를 끌어 포트를 만들고 포트를 연결할 수 있는지 확인합니다.  
   
@@ -50,28 +47,28 @@ DSL(Domain-Specific Language) 솔루션은 [!INCLUDE[vsprvs](../includes/vsprvs-
   
  생성된 코드는 직접 편집하지 않는 것이 좋습니다. 솔루션을 다시 빌드하면 편집 내용이 손실되기 때문입니다. 대신 다음 작업을 수행하여 DSL을 사용자 지정합니다.  
   
--   DSL 정의의 여러 매개 변수를 조정합니다.  
+- DSL 정의의 여러 매개 변수를 조정합니다.  
   
--   별도의 코드 파일에 partial 클래스를 작성하여 생성된 클래스에 정의되어 있거나 해당 클래스에서 상속되는 메서드를 재정의합니다. 경우에 따라 설정 해야 합니다 **Generates Double Derived** 생성 된 메서드를 재정의 하려면 DSL 정의에서 클래스의 옵션입니다.  
+- 별도의 코드 파일에 partial 클래스를 작성하여 생성된 클래스에 정의되어 있거나 해당 클래스에서 상속되는 메서드를 재정의합니다. 경우에 따라 설정 해야 합니다 **Generates Double Derived** 생성 된 메서드를 재정의 하려면 DSL 정의에서 클래스의 옵션입니다.  
   
--   생성된 코드가 고유한 코드에 대해 '후크'를 제공하도록 하는 옵션을 DSL 정의에서 설정합니다.  
+- 생성된 코드가 고유한 코드에 대해 '후크'를 제공하도록 하는 옵션을 DSL 정의에서 설정합니다.  
   
      예를 들어, 설정 하는 경우는 **Has Custom Constructor** 도메인 클래스의 옵션 및 다음 솔루션을 빌드할 오류 메시지가 표시 됩니다. 이러한 오류 메시지 중 하나를 두 번 클릭하면 사용자 지정 코드가 제공해야 하는 항목을 설명하는 주석이 생성된 코드에 표시됩니다.  
   
--   텍스트 템플릿을 직접 작성하여 응용 프로그램에 맞는 코드를 생성합니다. 포함 파일을 사용하여 여러 프로젝트에서 공통적으로 사용되는 템플릿 부분을 공유할 수 있으며 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트 템플릿을 만들어 고유한 파일 구조로 초기화되는 프로젝트를 설정할 수 있습니다.  
+- 텍스트 템플릿을 직접 작성하여 애플리케이션에 맞는 코드를 생성합니다. 포함 파일을 사용하여 여러 프로젝트에서 공통적으로 사용되는 템플릿 부분을 공유할 수 있으며 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트 템플릿을 만들어 고유한 파일 구조로 초기화되는 프로젝트를 설정할 수 있습니다.  
   
 ## <a name="generated-files-in-dsl"></a>DSL의 생성된 파일  
  생성된 된 다음 파일에 표시 된 **Dsl** 프로젝트입니다.  
   
  *YourDsl* `Schema.xsd`  
   
- DSL 인스턴스를 포함하는 파일의 스키마입니다. 이 파일은 컴파일에 복사 (**bin**) 디렉터리입니다. DSL을 설치할 때이 파일을 복사할 수 있습니다 **\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas** 모델 파일의 유효성을 검사할 수 있도록 합니다. 자세한 내용은 [도메인별 언어 솔루션 배포](../modeling/deploying-domain-specific-language-solutions.md)합니다.  
+ DSL 인스턴스를 포함하는 파일의 스키마입니다. 이 파일은 컴파일에 복사 (**bin**) 디렉터리입니다. DSL을 설치할 때이 파일을 복사할 수 있습니다 **\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas** 모델 파일의 유효성을 검사할 수 있도록 합니다. 자세한 내용은 [도메인 특정 언어 솔루션 배포](../modeling/deploying-domain-specific-language-solutions.md)를 참조하세요.  
   
  DSL 탐색기에서 옵션을 설정하여 serialization을 사용자 지정하면 스키마도 그에 따라 변경됩니다. 그러나 serialization 코드를 직접 작성하면 이 파일이 실제 스키마를 더 이상 나타내지 않을 수 있습니다. 자세한 내용은 [사용자 지정 파일 저장소 및 XML Serialization](../modeling/customizing-file-storage-and-xml-serialization.md)합니다.  
   
  `ConnectionBuilders.cs`  
   
- 연결 작성기는 관계를 만드는 클래스로, 연결 도구를 작동하게 만드는 코드입니다. 이 파일에는 각 연결 도구의 클래스 쌍이 포함됩니다. 해당 이름은 도메인 관계와 연결 도구의 이름에서 파생 됩니다: *관계*작성기를 사용 하 고 *ConnectorTool*ConnectAction 합니다.  
+ 연결 작성기는 관계를 만드는 클래스로, 연결 도구를 작동하게 만드는 코드입니다. 이 파일에는 각 연결 도구의 클래스 쌍이 포함됩니다. 해당 이름은 도메인 관계와 연결 도구의 이름에서 파생 됩니다. *관계*작성기를 사용 하 고 *ConnectorTool*ConnectAction 합니다.  
   
  구성 요소 솔루션 예제에서는 연결 작성기 중 하나의 이름이 ConnectionBuilder입니다. 도메인 관계의 이름이 Connection이므로 이는 우연의 일치입니다.  
   
@@ -136,15 +133,15 @@ DSL(Domain-Specific Language) 솔루션은 [!INCLUDE[vsprvs](../includes/vsprvs-
   도메인 모델을 나타내는 클래스. <xref:Microsoft.VisualStudio.Modeling.DomainModel>에서 파생됩니다.  
   
 > [!NOTE]
->  이 클래스는 모델의 루트 클래스와는 다릅니다.  
+> 이 클래스는 모델의 루트 클래스와는 다릅니다.  
   
- Copy 및 Delete Closure는 요소를 복사하거나 삭제할 때 포함해야 하는 다른 요소를 정의합니다. 설정 하 여이 동작을 제어할 수는 **Propagates Copy** 하 고 **Propagates Delete** 모든 관계의 양쪽에 있는 역할의 속성입니다. 값이 동적으로 결정되도록 하려면 Closure 클래스의 메서드를 재정의하는 코드를 작성할 수 있습니다. 자세한 내용은 참조 [방법: 프로그램 복사 및 붙여넣기 동작-리디렉션](../misc/how-to-program-copy-and-paste-behavior-redirect.md)합니다.  
+ Copy 및 Delete Closure는 요소를 복사하거나 삭제할 때 포함해야 하는 다른 요소를 정의합니다. 설정 하 여이 동작을 제어할 수는 **Propagates Copy** 하 고 **Propagates Delete** 모든 관계의 양쪽에 있는 역할의 속성입니다. 값이 동적으로 결정되도록 하려면 Closure 클래스의 메서드를 재정의하는 코드를 작성할 수 있습니다. 자세한 내용은 [방법: 프로그램 복사 및 붙여넣기 동작-리디렉션](../misc/how-to-program-copy-and-paste-behavior-redirect.md)합니다.  
   
  `DomainModelResx.resx`  
   
  이 파일에는 도메인 클래스와 속성의 설명, 속성 이름, 도구 상자 레이블, 표준 오류 메시지, 사용자에게 표시될 수 있는 기타 문자열 등의 문자열이 포함됩니다. 또한 이미지 모양의 이미지와 도구 아이콘도 포함됩니다.  
   
- 이 파일은 작성된 어셈블리로 바인딩되며 이러한 리소스의 기본값을 제공합니다. 리소스의 지역화된 버전을 포함하는 위성 어셈블리를 만들어 DSL을 지역화할 수 있습니다. 해당 버전은 지역화된 리소스와 일치하는 문화권에서 DSL을 설치할 때 사용됩니다. 자세한 내용은 [도메인별 언어 솔루션 배포](../modeling/deploying-domain-specific-language-solutions.md)합니다.  
+ 이 파일은 작성된 어셈블리로 바인딩되며 이러한 리소스의 기본값을 제공합니다. 리소스의 지역화된 버전을 포함하는 위성 어셈블리를 만들어 DSL을 지역화할 수 있습니다. 해당 버전은 지역화된 리소스와 일치하는 문화권에서 DSL을 설치할 때 사용됩니다. 자세한 내용은 [도메인 특정 언어 솔루션 배포](../modeling/deploying-domain-specific-language-solutions.md)를 참조하세요.  
   
  `DomainRelationships.cs`  
   
@@ -347,15 +344,12 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  이 파일을 사용자 지정하려면 `.tt` 파일을 편집합니다.  
   
 > [!WARNING]
->  아이콘, 이미지 등의 리소스를 포함하도록 .tt 파일을 편집하는 경우에는 VSIX 빌드에 리소스가 포함되는지 확인해야 합니다. 솔루션 탐색기에서 파일을 선택 하 고 있는지 확인 합니다 **VSIX에 포함** 속성은 `True`합니다.  
+> 아이콘, 이미지 등의 리소스를 포함하도록 .tt 파일을 편집하는 경우에는 VSIX 빌드에 리소스가 포함되는지 확인해야 합니다. 솔루션 탐색기에서 파일을 선택 하 고 있는지 확인 합니다 **VSIX에 포함** 속성은 `True`합니다.  
   
- 이 파일은 DSL을 VSIX(Visual Studio Integration Extension)로 패키징하는 방식을 제어합니다. 자세한 내용은 [도메인별 언어 솔루션 배포](../modeling/deploying-domain-specific-language-solutions.md)합니다.  
+ 이 파일은 DSL을 VSIX(Visual Studio Integration Extension)로 패키징하는 방식을 제어합니다. 자세한 내용은 [도메인 특정 언어 솔루션 배포](../modeling/deploying-domain-specific-language-solutions.md)를 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
  [도메인 특정 언어를 정의 하는 방법](../modeling/how-to-define-a-domain-specific-language.md)   
  [모델, 클래스 및 관계 이해](../modeling/understanding-models-classes-and-relationships.md)   
  [사용자 지정 및 도메인 특정 언어를 확장 합니다.](../modeling/customizing-and-extending-a-domain-specific-language.md)   
  [도메인별 언어를 사용자 지정하는 코드 작성](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
-
-

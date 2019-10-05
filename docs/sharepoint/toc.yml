@@ -1,382 +1,412 @@
-items:
 - name: SharePoint 솔루션 만들기
-  href: create-sharepoint-solutions.md
   items:
-  - name: SharePoint 개발 시작
-    href: getting-started-sharepoint-development-in-visual-studio.md
-    items:
-    - name: SharePoint 오류에 대한 추가 정보
-      href: additional-information-for-sharepoint-errors.md
-  - name: SharePoint 솔루션 개발
-    href: developing-sharepoint-solutions.md
-    items:
-    - name: SharePoint 프로젝트 및 프로젝트 항목 템플릿
-      href: sharepoint-project-and-project-item-templates.md
-    - name: SharePoint 프로젝트에 항목 추가
-      href: how-to-add-items-to-a-sharepoint-project.md
-    - name: SharePoint용 사이트 열, 콘텐츠 형식 및 목록 만들기
-      href: creating-site-columns-content-types-and-lists-for-sharepoint.md
+    - name: SharePoint 솔루션 만들기
+      href: create-sharepoint-solutions.md
+    - name: SharePoint 개발 시작
       items:
-      - name: '연습: SharePoint용 사이트 열, 콘텐츠 형식 및 목록 만들기'
-        href: walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md
-    - name: 이벤트 수신기 만들기
-      href: how-to-create-an-event-receiver.md
-    - name: 특정 목록 인스턴스에 대한 이벤트 수신기 만들기
-      href: how-to-create-an-event-receiver-for-a-specific-list-instance.md
-    - name: SharePoint 워크플로 솔루션 만들기
-      href: creating-sharepoint-workflow-solutions.md
+        - name: SharePoint 개발 시작
+          href: getting-started-sharepoint-development-in-visual-studio.md
+        - name: SharePoint 오류에 대한 추가 정보
+          href: additional-information-for-sharepoint-errors.md
+    - name: SharePoint 솔루션 개발
       items:
-      - name: 워크플로의 폼 지원
-        href: form-support-in-workflows.md
-      - name: '연습: SharePoint 워크플로 솔루션 만들기 및 디버깅'
-        href: walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md
-      - name: '연습: 연결 및 초기화 폼이 있는 워크플로 만들기'
-        href: walkthrough-creating-a-workflow-with-association-and-initiation-forms.md
-      - name: '연습: 워크플로에 응용 프로그램 페이지 추가'
-        href: walkthrough-add-an-application-page-to-a-workflow.md
-      - name: '연습: 사용자 지정 사이트 워크플로 작업 만들기'
-        href: walkthrough-create-a-custom-site-workflow-activity.md
-      - name: '연습: Visual Studio에 SharePoint Designer의 다시 사용 가능한 워크플로 가져오기'
-        href: walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md
-    - name: SharePoint에 대한 페이지 만들기
-      href: creating-pages-for-sharepoint.md
+        - name: SharePoint 솔루션 개발
+          href: developing-sharepoint-solutions.md
+        - name: SharePoint 프로젝트 및 프로젝트 항목 템플릿
+          href: sharepoint-project-and-project-item-templates.md
+        - name: SharePoint 프로젝트에 항목 추가
+          href: how-to-add-items-to-a-sharepoint-project.md
+        - name: 'SharePoint용 사이트 열, 콘텐츠 형식 및 목록 만들기'
+          items:
+            - name: 'SharePoint용 사이트 열, 콘텐츠 형식 및 목록 만들기'
+              href: creating-site-columns-content-types-and-lists-for-sharepoint.md
+            - name: '연습: SharePoint용 사이트 열, 콘텐츠 형식 및 목록 만들기'
+              href: walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md
+        - name: 이벤트 수신기 만들기
+          href: how-to-create-an-event-receiver.md
+        - name: 특정 목록 인스턴스에 대한 이벤트 수신기 만들기
+          href: how-to-create-an-event-receiver-for-a-specific-list-instance.md
+        - name: SharePoint 워크플로 솔루션 만들기
+          items:
+            - name: SharePoint 워크플로 솔루션 만들기
+              href: creating-sharepoint-workflow-solutions.md
+            - name: 워크플로의 폼 지원
+              href: form-support-in-workflows.md
+            - name: '연습: SharePoint 워크플로 솔루션 만들기 및 디버깅'
+              href: walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md
+            - name: '연습: 연결 및 초기화 양식을 사용하여 워크플로 만들기'
+              href: walkthrough-creating-a-workflow-with-association-and-initiation-forms.md
+            - name: '연습: 워크플로에 애플리케이션 페이지 추가'
+              href: walkthrough-add-an-application-page-to-a-workflow.md
+            - name: '연습: 사용자 지정 사이트 워크플로 활동 만들기'
+              href: walkthrough-create-a-custom-site-workflow-activity.md
+            - name: '연습: SharePoint Designer의 재사용 가능 워크플로를 Visual Studio로 가져오기'
+              href: walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md
+        - name: SharePoint에 대한 페이지 만들기
+          items:
+            - name: SharePoint에 대한 페이지 만들기
+              href: creating-pages-for-sharepoint.md
+            - name: SharePoint를 위한 애플리케이션 페이지 만들기
+              href: creating-application-pages-for-sharepoint.md
+            - name: 애플리케이션 페이지 만들기
+              href: how-to-create-an-application-page.md
+            - name: '연습: SharePoint 애플리케이션 페이지 만들기'
+              href: walkthrough-creating-a-sharepoint-application-page.md
+        - name: SharePoint를 위한 웹 파트 만들기
+          items:
+            - name: SharePoint를 위한 웹 파트 만들기
+              href: creating-web-parts-for-sharepoint.md
+            - name: SharePoint 웹 파트 만들기
+              href: how-to-create-a-sharepoint-web-part.md
+            - name: 디자이너를 사용하여 SharePoint 웹 파트 만들기
+              href: how-to-create-a-sharepoint-web-part-by-using-a-designer.md
+            - name: '연습: SharePoint용 웹 파트 만들기'
+              href: walkthrough-creating-a-web-part-for-sharepoint.md
+            - name: '연습: Designer를 사용하여 SharePoint용 웹 파트 만들기'
+              href: walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md
+            - name: '연습: SharePoint용 OData를 표시하는 Silverlight 웹 파트 만들기'
+              href: walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md
+        - name: 웹 파트 또는 애플리케이션 페이지를 위해 재사용 가능한 컨트롤 만들기
+          items:
+            - name: 웹 파트 또는 애플리케이션 페이지를 위해 재사용 가능한 컨트롤 만들기
+              href: creating-reusable-controls-for-web-parts-or-application-pages.md
+            - name: SharePoint 애플리케이션 페이지 또는 웹 파트를 위한 사용자 컨트롤 만들기
+              href: how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md
+        - name: SharePoint에 비즈니스 데이터 통합
+          items:
+            - name: SharePoint에 비즈니스 데이터 통합
+              href: integrating-business-data-into-sharepoint.md
+            - name: 비즈니스 데이터 연결 모델 만들기
+              items:
+                - name: 비즈니스 데이터 연결 모델 만들기
+                  href: creating-a-business-data-connectivity-model.md
+                - name: BDC 모델 만들기
+                  href: how-to-create-a-bdc-model.md
+                - name: SharePoint 프로젝트에 기존 BDC 모델 파일 추가
+                  href: how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md
+                - name: '리소스 파일을 사용하여 지역화된 이름, 속성 및 사용 권한 지정'
+                  href: how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md
+                - name: BDC 기능에 사용자 지정 어셈블리 포함
+                  href: how-to-include-a-custom-assembly-in-a-bdc-feature.md
+            - name: 비즈니스 데이터 연결 모델 디자인
+              items:
+                - name: 비즈니스 데이터 연결 모델 디자인
+                  href: designing-a-business-data-connectivity-model.md
+                - name: BDC 모델 디자인 도구 개요
+                  href: bdc-model-design-tools-overview.md
+                - name: 모델에 엔터티 추가
+                  href: how-to-add-an-entity-to-a-model.md
+                - name: Finder 메서드 추가
+                  href: how-to-add-a-finder-method.md
+                - name: 특정 Finder 메서드 추가
+                  href: how-to-add-a-specific-finder-method.md
+                - name: Creator 메서드 추가
+                  href: how-to-add-a-creator-method.md
+                - name: Deleter 메서드 추가
+                  href: how-to-add-a-deleter-method.md
+                - name: Updater 메서드 추가
+                  href: how-to-add-an-updater-method.md
+                - name: 메서드에 매개 변수 추가
+                  href: how-to-add-a-parameter-to-a-method.md
+                - name: 매개 변수의 형식 설명자 정의
+                  href: how-to-define-the-type-descriptor-of-a-parameter.md
+                - name: 메서드 인스턴스 정의
+                  href: how-to-define-a-method-instance.md
+                - name: 사용자 지정 속성 추가
+                  href: how-to-add-a-custom-property.md
+                - name: Finder 메서드에 필터 설명자 추가
+                  href: how-to-add-a-filter-descriptor-to-a-finder-method.md
+                - name: 엔터티 간 연결 만들기
+                  href: creating-an-association-between-entities.md
+                - name: 엔터티 간 연결 만들기
+                  href: how-to-create-an-association-between-entities.md
+                - name: '연습: 비즈니스 데이터를 사용하여 SharePoint에서 외부 목록 만들기'
+                  href: walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md
+        - name: SharePoint에 대한 사이트 정의 만들기
+          items:
+            - name: SharePoint에 대한 사이트 정의 만들기
+              href: creating-site-definitions-for-sharepoint.md
+            - name: '연습: 기본 사이트 정의 프로젝트 만들기'
+              href: walkthrough-create-a-basic-site-definition-project.md
+        - name: 기존 SharePoint 사이트에서 항목 가져오기
+          items:
+            - name: 기존 SharePoint 사이트에서 항목 가져오기
+              href: importing-items-from-an-existing-sharepoint-site.md
+            - name: '연습: 기존 SharePoint 사이트에서 항목 가져오기'
+              href: walkthrough-import-items-from-an-existing-sharepoint-site.md
+            - name: Guidelines for Importing Reusable Workflows
+              href: guidelines-for-importing-reusable-workflows.md
+            - name: 마스터 페이지 또는 테마 가져오기
+              href: how-to-import-a-master-page-or-theme.md
+            - name: '연습: 사용자 지정 마스터 페이지 및 사이트 페이지를 이미지로 가져오기'
+              href: walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md
+        - name: 모듈을 사용하여 솔루션에 파일 포함
+          items:
+            - name: 모듈을 사용하여 솔루션에 파일 포함
+              href: using-modules-to-include-files-in-the-solution.md
+            - name: 모듈을 사용하여 파일 포함
+              href: how-to-include-files-by-using-a-module.md
+        - name: 서버 탐색기를 사용하여 SharePoint 연결 찾아보기
+          items:
+            - name: 서버 탐색기를 사용하여 SharePoint 연결 찾아보기
+              href: browsing-sharepoint-connections-using-server-explorer.md
+            - name: SharePoint 연결 추가 또는 제거
+              href: how-to-add-or-remove-sharepoint-connections.md
+        - name: Providing Packaging and Deployment Information in Project Items
+          items:
+            - name: Providing Packaging and Deployment Information in Project Items
+              href: providing-packaging-and-deployment-information-in-project-items.md
+            - name: 컨트롤을 안전 컨트롤로 표시
+              href: how-to-mark-controls-as-safe-controls.md
+            - name: 프로젝트 출력 참조 추가
+              href: how-to-add-a-project-output-reference.md
+        - name: 매핑된 폴더 추가 및 제거
+          href: how-to-add-and-remove-mapped-folders.md
+        - name: Sandboxed Solution Considerations
+          href: sandboxed-solution-considerations.md
+        - name: SharePoint 솔루션 보안
+          href: security-for-sharepoint-solutions.md
+        - name: URL 선택기 대화 상자
+          href: url-picker-dialog-box-sharepoint-development-in-visual-studio.md
+    - name: SharePoint 솔루션 지역화
       items:
-      - name: SharePoint를 위한 응용 프로그램 페이지 만들기
-        href: creating-application-pages-for-sharepoint.md
-      - name: 응용 프로그램 페이지 만들기
-        href: how-to-create-an-application-page.md
-      - name: '연습: SharePoint 응용 프로그램 페이지 만들기'
-        href: walkthrough-creating-a-sharepoint-application-page.md
-    - name: SharePoint를 위한 웹 파트 만들기
-      href: creating-web-parts-for-sharepoint.md
+        - name: SharePoint 솔루션 지역화
+          href: localizing-sharepoint-solutions.md
+        - name: 리소스 파일 추가
+          href: how-to-add-a-resource-file.md
+        - name: 기능 지역화
+          href: how-to-localize-a-feature.md
+        - name: ASPX 태그 지역화
+          href: how-to-localize-aspx-markup.md
+        - name: 코드 지역화
+          href: how-to-localize-code.md
+    - name: SharePoint 솔루션 빌드 및 디버깅
       items:
-      - name: SharePoint 웹 파트 만들기
-        href: how-to-create-a-sharepoint-web-part.md
-      - name: 디자이너를 사용하여 SharePoint 웹 파트 만들기
-        href: how-to-create-a-sharepoint-web-part-by-using-a-designer.md
-      - name: '연습: SharePoint를 위한 웹 파트 만들기'
-        href: walkthrough-creating-a-web-part-for-sharepoint.md
-      - name: '연습: 디자이너를 사용하여 SharePoint를 위한 웹 파트 만들기'
-        href: walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md
-      - name: '연습: SharePoint용 OData를 표시하는 Silverlight 웹 파트 만들기'
-        href: walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md
-    - name: 웹 파트 또는 응용 프로그램 페이지를 위해 재사용 가능한 컨트롤 만들기
-      href: creating-reusable-controls-for-web-parts-or-application-pages.md
+        - name: SharePoint 솔루션 빌드 및 디버깅
+          href: building-and-debugging-sharepoint-solutions.md
+        - name: SharePoint 솔루션 빌드
+          href: how-to-build-sharepoint-solutions.md
+        - name: SharePoint 솔루션 디버깅
+          href: debugging-sharepoint-solutions.md
+        - name: SharePoint 코드 확인 및 디버깅
+          items:
+            - name: SharePoint 코드 확인 및 디버깅
+              href: verifying-and-debugging-sharepoint-code.md
+            - name: '연습: IntelliTrace를 사용하여 SharePoint 애플리케이션 디버깅'
+              href: walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md
+        - name: SharePoint 애플리케이션 성능 프로파일링
+          items:
+            - name: SharePoint 애플리케이션 성능 프로파일링
+              href: profiling-the-performance-of-sharepoint-applications.md
+            - name: '연습: SharePoint 애플리케이션 프로파일링'
+              href: walkthrough-profiling-a-sharepoint-application.md
+        - name: 샌드박스 솔루션과 팜 솔루션의 차이점
+          href: differences-between-sandboxed-and-farm-solutions.md
+        - name: SharePoint에서 지원하는 MSBuild 속성
+          href: msbuild-properties-supported-by-sharepoint.md
+        - name: SharePoint 솔루션 문제 해결
+          href: troubleshooting-sharepoint-solutions.md
+    - name: SharePoint 솔루션 패키징 및 배포
       items:
-      - name: SharePoint 응용 프로그램 페이지 또는 웹 파트를 위한 사용자 컨트롤 만들기
-        href: how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md
-    - name: SharePoint에 비즈니스 데이터 통합
-      href: integrating-business-data-into-sharepoint.md
+        - name: SharePoint 솔루션 패키징 및 배포
+          href: packaging-and-deploying-sharepoint-solutions.md
+        - name: SharePoint 기능 만들기
+          items:
+            - name: SharePoint 기능 만들기
+              href: creating-sharepoint-features.md
+            - name: SharePoint 솔루션에 기능 추가
+              href: how-to-add-a-feature-to-sharepoint-solutions.md
+            - name: SharePoint 기능 사용자 지정
+              href: how-to-customize-a-sharepoint-feature.md
+            - name: SharePoint 기능에 항목 추가 및 제거
+              href: how-to-add-and-remove-items-to-sharepoint-features.md
+            - name: 기능 종속성 추가 및 제거
+              href: how-to-add-and-remove-feature-dependencies.md
+            - name: '연습: 기능 이벤트 수신기 추가'
+              href: walkthrough-add-feature-event-receivers.md
+        - name: SharePoint 솔루션 패키지 만들기
+          items:
+            - name: SharePoint 솔루션 패키지 만들기
+              href: creating-sharepoint-solution-packages.md
+            - name: SharePoint 솔루션 패키지 사용자 지정
+              href: how-to-customize-a-sharepoint-solution-package.md
+            - name: 패키지 디자이너를 사용하여 패키지에 기능과 항목 추가 및 제거
+              href: how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md
+            - name: 패키징 탐색기를 사용하여 패키지에 기능과 항목 추가 및 제거
+              href: how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md
+            - name: 추가 어셈블리 추가 및 제거
+              href: how-to-add-and-remove-additional-assemblies.md
+            - name: MSBuild 작업을 사용하여 SharePoint 솔루션 패키지 만들기
+              href: how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md
+            - name: MSBuild 대상을 사용하여 SharePoint 솔루션 패키지 사용자 지정
+              href: how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md
+        - name: 'SharePoint 솔루션 패키지 배포, 게시 및 업그레이드'
+          items:
+            - name: 'SharePoint 솔루션 패키지 배포, 게시 및 업그레이드'
+              href: deploying-publishing-and-upgrading-sharepoint-solution-packages.md
+            - name: 로컬 SharePoint 사이트에 SharePoint 솔루션 배포 및 게시
+              href: how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md
+            - name: '원격 서버에서 SharePoint 솔루션 배포, 게시 및 업그레이드'
+              href: how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md
+            - name: SharePoint 배포 명령 설정
+              href: how-to-set-sharepoint-deployment-commands.md
+            - name: SharePoint 배포 구성 편집
+              href: how-to-edit-a-sharepoint-deployment-configuration.md
+            - name: '연습: 프로젝트 작업 목록 정의 만들기'
+              href: walkthrough-deploying-a-project-task-list-definition.md
+        - name: 대체 가능 매개 변수
+          href: replaceable-parameters.md
+        - name: SharePoint 패키징 및 배포 문제 해결
+          href: troubleshooting-sharepoint-packaging-and-deployment.md
+        - name: 기능 및 패키지 매니페스트에서 XML 병합
+          href: merging-xml-in-feature-and-package-manifests.md
+    - name: SharePoint 개발 샘플 및 연습
       items:
-      - name: 비즈니스 데이터 연결 모델 만들기
-        href: creating-a-business-data-connectivity-model.md
-        items:
-        - name: BDC 모델 만들기
-          href: how-to-create-a-bdc-model.md
-        - name: SharePoint 프로젝트에 기존 BDC 모델 파일 추가
-          href: how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md
-        - name: 리소스 파일을 사용하여 지역화된 이름, 속성 및 사용 권한 지정
-          href: how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md
-        - name: BDC 기능에 사용자 지정 어셈블리 포함
-          href: how-to-include-a-custom-assembly-in-a-bdc-feature.md
-      - name: 비즈니스 데이터 연결 모델 디자인
-        href: designing-a-business-data-connectivity-model.md
-        items:
-        - name: BDC 모델 디자인 도구 개요
-          href: bdc-model-design-tools-overview.md
-        - name: 모델에 엔터티 추가
-          href: how-to-add-an-entity-to-a-model.md
-        - name: Finder 메서드 추가
-          href: how-to-add-a-finder-method.md
-        - name: 특정 Finder 메서드 추가
-          href: how-to-add-a-specific-finder-method.md
-        - name: Creator 메서드 추가
-          href: how-to-add-a-creator-method.md
-        - name: Deleter 메서드 추가
-          href: how-to-add-a-deleter-method.md
-        - name: Updater 메서드 추가
-          href: how-to-add-an-updater-method.md
-        - name: 메서드에 매개 변수 추가
-          href: how-to-add-a-parameter-to-a-method.md
-        - name: 매개 변수의 형식 설명자 정의
-          href: how-to-define-the-type-descriptor-of-a-parameter.md
-        - name: 메서드 인스턴스 정의
-          href: how-to-define-a-method-instance.md
-        - name: 사용자 지정 속성 추가
-          href: how-to-add-a-custom-property.md
-        - name: Finder 메서드에 필터 설명자 추가
-          href: how-to-add-a-filter-descriptor-to-a-finder-method.md
-        - name: 엔터티 간 연결 만들기
-          href: creating-an-association-between-entities.md
-        - name: 엔터티 간 연결 만들기
-          href: how-to-create-an-association-between-entities.md
-        - name: '연습: 비즈니스 데이터를 사용하여 SharePoint에 외부 목록 만들기'
-          href: walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md
-    - name: SharePoint에 대한 사이트 정의 만들기
-      href: creating-site-definitions-for-sharepoint.md
+        - name: SharePoint 개발 샘플 및 연습
+          href: sharepoint-development-samples-and-walkthroughs.md
+        - name: SharePoint 개발 샘플
+          href: sharepoint-development-samples.md
+        - name: SharePoint 개발 연습
+          href: sharepoint-development-walkthroughs.md
+    - name: Visual Studio에서 SharePoint 도구 확장
       items:
-      - name: '연습: 기본 사이트 정의 프로젝트 만들기'
-        href: walkthrough-create-a-basic-site-definition-project.md
-    - name: 기존 SharePoint 사이트에서 항목 가져오기
-      href: importing-items-from-an-existing-sharepoint-site.md
-      items:
-      - name: '연습: 기존 SharePoint 사이트에서 항목 가져오기'
-        href: walkthrough-import-items-from-an-existing-sharepoint-site.md
-      - name: Guidelines for Importing Reusable Workflows
-        href: guidelines-for-importing-reusable-workflows.md
-      - name: 마스터 페이지 또는 테마 가져오기
-        href: how-to-import-a-master-page-or-theme.md
-      - name: '연습: 사용자 지정 마스터 페이지 및 사이트 페이지를 이미지로 가져오기'
-        href: walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md
-    - name: 모듈을 사용하여 솔루션에 파일 포함
-      href: using-modules-to-include-files-in-the-solution.md
-      items:
-      - name: 모듈을 사용하여 파일 포함
-        href: how-to-include-files-by-using-a-module.md
-    - name: 서버 탐색기를 사용하여 SharePoint 연결 찾아보기
-      href: browsing-sharepoint-connections-using-server-explorer.md
-      items:
-      - name: SharePoint 연결 추가 또는 제거
-        href: how-to-add-or-remove-sharepoint-connections.md
-    - name: Providing Packaging and Deployment Information in Project Items
-      href: providing-packaging-and-deployment-information-in-project-items.md
-      items:
-      - name: 컨트롤을 안전 컨트롤로 표시
-        href: how-to-mark-controls-as-safe-controls.md
-      - name: 프로젝트 출력 참조 추가
-        href: how-to-add-a-project-output-reference.md
-    - name: 매핑된 폴더 추가 및 제거
-      href: how-to-add-and-remove-mapped-folders.md
-    - name: Sandboxed Solution Considerations
-      href: sandboxed-solution-considerations.md
-    - name: SharePoint 솔루션 보안
-      href: security-for-sharepoint-solutions.md
-    - name: URL 선택기 대화 상자
-      href: url-picker-dialog-box-sharepoint-development-in-visual-studio.md
-  - name: SharePoint 솔루션 지역화
-    href: localizing-sharepoint-solutions.md
-    items:
-    - name: 리소스 파일 추가
-      href: how-to-add-a-resource-file.md
-    - name: 기능 지역화
-      href: how-to-localize-a-feature.md
-    - name: ASPX 태그 지역화
-      href: how-to-localize-aspx-markup.md
-    - name: 코드 지역화
-      href: how-to-localize-code.md
-  - name: SharePoint 솔루션 빌드 및 디버깅
-    href: building-and-debugging-sharepoint-solutions.md
-    items:
-    - name: SharePoint 솔루션 빌드
-      href: how-to-build-sharepoint-solutions.md
-    - name: SharePoint 솔루션 디버깅
-      href: debugging-sharepoint-solutions.md
-    - name: SharePoint 코드 확인 및 디버깅
-      href: verifying-and-debugging-sharepoint-code.md
-      items:
-      - name: '연습: IntelliTrace를 사용하여 SharePoint 응용 프로그램 디버깅'
-        href: walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md
-    - name: SharePoint 응용 프로그램 성능 프로파일링
-      href: profiling-the-performance-of-sharepoint-applications.md
-      items:
-      - name: '연습: SharePoint 응용 프로그램 프로파일링'
-        href: walkthrough-profiling-a-sharepoint-application.md
-    - name: 샌드박스 솔루션과 팜 솔루션의 차이점
-      href: differences-between-sandboxed-and-farm-solutions.md
-    - name: SharePoint에서 지원하는 MSBuild 속성
-      href: msbuild-properties-supported-by-sharepoint.md
-    - name: SharePoint 솔루션 문제 해결
-      href: troubleshooting-sharepoint-solutions.md
-  - name: SharePoint 솔루션 패키징 및 배포
-    href: packaging-and-deploying-sharepoint-solutions.md
-    items:
-    - name: SharePoint 기능 만들기
-      href: creating-sharepoint-features.md
-      items:
-      - name: SharePoint 솔루션에 기능 추가
-        href: how-to-add-a-feature-to-sharepoint-solutions.md
-      - name: SharePoint 기능 사용자 지정
-        href: how-to-customize-a-sharepoint-feature.md
-      - name: SharePoint 기능에 항목 추가 및 제거
-        href: how-to-add-and-remove-items-to-sharepoint-features.md
-      - name: 기능 종속성 추가 및 제거
-        href: how-to-add-and-remove-feature-dependencies.md
-      - name: '연습: 기능 이벤트 수신자 추가'
-        href: walkthrough-add-feature-event-receivers.md
-    - name: SharePoint 솔루션 패키지 만들기
-      href: creating-sharepoint-solution-packages.md
-      items:
-      - name: SharePoint 솔루션 패키지 사용자 지정
-        href: how-to-customize-a-sharepoint-solution-package.md
-      - name: 패키지 디자이너를 사용하여 패키지에 기능과 항목 추가 및 제거
-        href: how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md
-      - name: 패키징 탐색기를 사용하여 패키지에 기능과 항목 추가 및 제거
-        href: how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md
-      - name: 추가 어셈블리 추가 및 제거
-        href: how-to-add-and-remove-additional-assemblies.md
-      - name: MSBuild 작업을 사용하여 SharePoint 솔루션 패키지 만들기
-        href: how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md
-      - name: MSBuild 대상을 사용하여 SharePoint 솔루션 패키지 사용자 지정
-        href: how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md
-    - name: SharePoint 솔루션 패키지 배포, 게시 및 업그레이드
-      href: deploying-publishing-and-upgrading-sharepoint-solution-packages.md
-      items:
-      - name: 로컬 SharePoint 사이트에 SharePoint 솔루션 배포 및 게시
-        href: how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md
-      - name: 원격 서버에서 SharePoint 솔루션 배포, 게시 및 업그레이드
-        href: how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md
-      - name: SharePoint 배포 명령 설정
-        href: how-to-set-sharepoint-deployment-commands.md
-      - name: SharePoint 배포 구성 편집
-        href: how-to-edit-a-sharepoint-deployment-configuration.md
-      - name: '연습: 프로젝트 작업 목록 정의 배포'
-        href: walkthrough-deploying-a-project-task-list-definition.md
-    - name: 대체 가능 매개 변수
-      href: replaceable-parameters.md
-    - name: SharePoint 패키징 및 배포 문제 해결
-      href: troubleshooting-sharepoint-packaging-and-deployment.md
-    - name: 기능 및 패키지 매니페스트에서 XML 병합
-      href: merging-xml-in-feature-and-package-manifests.md
-  - name: SharePoint 개발 샘플 및 연습
-    href: sharepoint-development-samples-and-walkthroughs.md
-    items:
-    - name: SharePoint 개발 샘플
-      href: sharepoint-development-samples.md
-    - name: SharePoint 개발 연습
-      href: sharepoint-development-walkthroughs.md
-  - name: Visual Studio에서 SharePoint 도구 확장
-    href: extending-the-sharepoint-tools-in-visual-studio.md
-    items:
-    - name: SharePoint 도구 확장의 프로그래밍 모델 개요
-      href: overview-of-the-programming-model-of-sharepoint-tools-extensions.md
-    - name: SharePoint 프로젝트 시스템 확장
-      href: extending-the-sharepoint-project-system.md
-      items:
-      - name: 사용자 지정 SharePoint 프로젝트 항목 형식 정의
-        href: defining-custom-sharepoint-project-item-types.md
-        items:
-        - name: SharePoint 프로젝트 항목 형식 정의
-          href: how-to-define-a-sharepoint-project-item-type.md
-        - name: 사용자 지정 SharePoint 프로젝트 항목 형식에 바로 가기 메뉴 항목 추가
-          href: how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md
-        - name: 사용자 지정 SharePoint 프로젝트 항목 형식에 속성 추가
-          href: how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md
-        - name: SharePoint 프로젝트 항목에 대한 항목 템플릿 및 프로젝트 템플릿 만들기
-          href: creating-item-templates-and-project-templates-for-sharepoint-project-items.md
-        - name: '연습: 항목 템플릿을 사용하여 사용자 지정 작업 프로젝트 항목 만들기, 1부'
-          href: walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md
-        - name: '연습: 항목 템플릿을 사용하여 사용자 지정 작업 프로젝트 항목 만들기, 2부'
-          href: walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md
-        - name: '연습: 프로젝트 템플릿을 사용하여 사이트 열 프로젝트 항목 만들기, 1부'
-          href: walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md
-        - name: '연습: 프로젝트 템플릿을 사용하여 사이트 열 프로젝트 항목 만들기, 2부'
-          href: walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md
-      - name: SharePoint 프로젝트 항목 확장
-        href: extending-sharepoint-project-items.md
-        items:
-        - name: SharePoint 항목 확장명 만들기
-          href: how-to-create-a-sharepoint-project-item-extension.md
-        - name: SharePoint 프로젝트 항목 확장에 바로 가기 메뉴 항목 추가
-          href: how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md
-        - name: SharePoint 프로젝트 항목 확장에 속성 추가
-          href: how-to-add-a-property-to-a-sharepoint-project-item-extension.md
-        - name: '연습: SharePoint 프로젝트 항목 형식 확장'
-          href: walkthrough-extending-a-sharepoint-project-item-type.md
-      - name: SharePoint 프로젝트 확장
-        href: extending-sharepoint-projects.md
-        items:
-        - name: SharePoint 프로젝트 확장명 만들기
-          href: how-to-create-a-sharepoint-project-extension.md
-        - name: SharePoint 프로젝트에 바로 가기 메뉴 항목 추가
-          href: how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md
-        - name: SharePoint 프로젝트에 속성 추가
-          href: how-to-add-a-property-to-sharepoint-projects.md
-        - name: '연습: SharePoint 프로젝트 확장명 만들기'
-          href: walkthrough-creating-a-sharepoint-project-extension.md
-      - name: SharePoint 패키징 및 배포 확장
-        href: extending-sharepoint-packaging-and-deployment.md
-        items:
-        - name: 배포 단계가 진행될 때 코드 실행
-          href: how-to-run-code-when-deployment-steps-are-executed.md
-        - name: SharePoint 프로젝트가 배포되거나 취소될 때 코드 실행
-          href: how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md
-        - name: 배포 충돌 처리
-          href: how-to-handle-deployment-conflicts.md
-        - name: '연습: SharePoint 프로젝트용 사용자 지정 배포 단계 만들기'
-          href: walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md
-        - name: SharePoint 솔루션에 대한 사용자 지정 기능 및 패키지 유효성 검사 규칙 만들기
-          href: how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md
-      - name: SharePoint 프로젝트 시스템의 확장에 데이터 저장
-        href: saving-data-in-extensions-of-the-sharepoint-project-system.md
-      - name: SharePoint 프로젝트 시스템 형식과 기타 Visual Studio 프로젝트 형식 간의 변환
-        href: converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md
-    - name: 서버 탐색기에서 SharePoint 연결 노드 확장
-      href: extending-the-sharepoint-connections-node-in-server-explorer.md
-      items:
-      - name: 서버 탐색기에서 SharePoint 노드 확장
-        href: how-to-extend-a-sharepoint-node-in-server-explorer.md
-      - name: 서버 탐색기에 사용자 지정 SharePoint 노드 추가
-        href: how-to-add-a-custom-sharepoint-node-to-server-explorer.md
-      - name: 서버 탐색기에서 기본 제공 SharePoint 노드에 대한 데이터 가져오기
-        href: how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer.md
-      - name: '연습: 서버 탐색기를 확장하여 웹 파트 표시'
-        href: walkthrough-extending-server-explorer-to-display-web-parts.md
-    - name: SharePoint 도구 확장의 프로그래밍 개념 및 기능
-      href: programming-concepts-and-features-for-sharepoint-tools-extensions.md
-      items:
-      - name: SharePoint 개체 모델 호출
-        href: calling-into-the-sharepoint-object-models.md
-        items:
-        - name: SharePoint 명령 만들기
-          href: how-to-create-a-sharepoint-command.md
-        - name: SharePoint 명령 실행
-          href: how-to-execute-a-sharepoint-command.md
-        - name: '연습: 서버 탐색기 확장의 SharePoint 클라이언트 개체 모델 호출'
-          href: walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md
-      - name: SharePoint 프로젝트 서비스 사용
-        href: using-the-sharepoint-project-service.md
-        items:
-        - name: SharePoint 프로젝트 서비스 검색
-          href: how-to-retrieve-the-sharepoint-project-service.md
-      - name: SharePoint 도구 확장과 사용자 지정 데이터 연결
-        href: associating-custom-data-with-sharepoint-tools-extensions.md
-    - name: Visual Studio에서 SharePoint 도구에 대한 확장명 디버깅
-      href: debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md
-    - name: Visual Studio에서 SharePoint 도구에 대한 확장명 배포
-      href: deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md
-    - name: 참조
-      href: reference-sharepoint-tools-extensibility.md
-      items:
-      - name: SharePoint 프로젝트 항목 스키마 참조
-        href: sharepoint-project-item-schema-reference.md
-        items:
-        - name: ExtensionData 요소
-          href: extensiondata-element.md
-        - name: ExtensionDataItem 요소
-          href: extensiondataitem-element.md
-        - name: FeatureProperties 요소
-          href: featureproperties-element.md
-        - name: FeatureProperty 요소
-          href: featureproperty-element.md
-        - name: Files 요소
-          href: files-element.md
-        - name: ProjectItem 요소
-          href: projectitem-element.md
-        - name: ProjectItemFile 요소
-          href: projectitemfile-element.md
-        - name: ProjectItemFolder 요소
-          href: projectitemfolder-element.md
-        - name: ProjectOutputFile 요소
-          href: projectoutputfile-element.md
-        - name: SafeControl 요소
-          href: safecontrol-element.md
-        - name: SafeControls 요소
-          href: safecontrols-element.md
-      - name: API 참조
-        href: api-reference-sharepoint-tools-extensibility.md
-ms.openlocfilehash: 66550d094a6b411cc3e06c2f9f6b5bfb5b9aa0e4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635218"
+        - name: Visual Studio에서 SharePoint 도구 확장
+          href: extending-the-sharepoint-tools-in-visual-studio.md
+        - name: SharePoint 도구 확장의 프로그래밍 모델 개요
+          href: overview-of-the-programming-model-of-sharepoint-tools-extensions.md
+        - name: SharePoint 프로젝트 시스템 확장
+          items:
+            - name: SharePoint 프로젝트 시스템 확장
+              href: extending-the-sharepoint-project-system.md
+            - name: 사용자 지정 SharePoint 프로젝트 항목 형식 정의
+              items:
+                - name: 사용자 지정 SharePoint 프로젝트 항목 형식 정의
+                  href: defining-custom-sharepoint-project-item-types.md
+                - name: SharePoint 프로젝트 항목 형식 정의
+                  href: how-to-define-a-sharepoint-project-item-type.md
+                - name: 사용자 지정 SharePoint 프로젝트 항목 형식에 바로 가기 메뉴 항목 추가
+                  href: how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md
+                - name: 사용자 지정 SharePoint 프로젝트 항목 형식에 속성 추가
+                  href: how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md
+                - name: SharePoint 프로젝트 항목에 대한 항목 템플릿 및 프로젝트 템플릿 만들기
+                  href: creating-item-templates-and-project-templates-for-sharepoint-project-items.md
+                - name: '연습: 항목 템플릿을 사용하여 사용자 지정 작업 프로젝트 항목 만들기, 1부'
+                  href: walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md
+                - name: '연습: 항목 템플릿을 사용하여 사용자 지정 작업 프로젝트 항목 만들기, 2부'
+                  href: walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md
+                - name: '연습: 프로젝트 템플릿을 사용하여 사이트 열 프로젝트 항목 만들기, 1부'
+                  href: walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md
+                - name: '연습: 프로젝트 템플릿을 사용하여 사이트 열 프로젝트 항목 만들기, 2부'
+                  href: walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md
+            - name: SharePoint 프로젝트 항목 확장
+              items:
+                - name: SharePoint 프로젝트 항목 확장
+                  href: extending-sharepoint-project-items.md
+                - name: SharePoint 항목 확장명 만들기
+                  href: how-to-create-a-sharepoint-project-item-extension.md
+                - name: SharePoint 프로젝트 항목 확장에 바로 가기 메뉴 항목 추가
+                  href: how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md
+                - name: SharePoint 프로젝트 항목 확장에 속성 추가
+                  href: how-to-add-a-property-to-a-sharepoint-project-item-extension.md
+                - name: '연습: SharePoint 프로젝트 항목 형식 확장'
+                  href: walkthrough-extending-a-sharepoint-project-item-type.md
+            - name: SharePoint 프로젝트 확장
+              items:
+                - name: SharePoint 프로젝트 확장
+                  href: extending-sharepoint-projects.md
+                - name: SharePoint 프로젝트 확장명 만들기
+                  href: how-to-create-a-sharepoint-project-extension.md
+                - name: SharePoint 프로젝트에 바로 가기 메뉴 항목 추가
+                  href: how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md
+                - name: SharePoint 프로젝트에 속성 추가
+                  href: how-to-add-a-property-to-sharepoint-projects.md
+                - name: '연습: SharePoint 프로젝트 확장명 만들기'
+                  href: walkthrough-creating-a-sharepoint-project-extension.md
+            - name: SharePoint 패키징 및 배포 확장
+              items:
+                - name: SharePoint 패키징 및 배포 확장
+                  href: extending-sharepoint-packaging-and-deployment.md
+                - name: 배포 단계가 진행될 때 코드 실행
+                  href: how-to-run-code-when-deployment-steps-are-executed.md
+                - name: SharePoint 프로젝트가 배포되거나 취소될 때 코드 실행
+                  href: how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md
+                - name: 배포 충돌 처리
+                  href: how-to-handle-deployment-conflicts.md
+                - name: '연습: SharePoint 프로젝트용 사용자 지정 배포 단계 만들기'
+                  href: walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md
+                - name: SharePoint 솔루션에 대한 사용자 지정 기능 및 패키지 유효성 검사 규칙 만들기
+                  href: how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md
+            - name: SharePoint 프로젝트 시스템의 확장에 데이터 저장
+              href: saving-data-in-extensions-of-the-sharepoint-project-system.md
+            - name: SharePoint 프로젝트 시스템 형식과 기타 Visual Studio 프로젝트 형식 간의 변환
+              href: converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md
+        - name: 서버 탐색기에서 SharePoint 연결 노드 확장
+          items:
+            - name: 서버 탐색기에서 SharePoint 연결 노드 확장
+              href: extending-the-sharepoint-connections-node-in-server-explorer.md
+            - name: 서버 탐색기에서 SharePoint 노드 확장
+              href: how-to-extend-a-sharepoint-node-in-server-explorer.md
+            - name: 서버 탐색기에 사용자 지정 SharePoint 노드 추가
+              href: how-to-add-a-custom-sharepoint-node-to-server-explorer.md
+            - name: 서버 탐색기에서 기본 제공 SharePoint 노드에 대한 데이터 가져오기
+              href: how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer.md
+            - name: '연습: 서버 탐색기를 확장하여 웹 파트 표시'
+              href: walkthrough-extending-server-explorer-to-display-web-parts.md
+        - name: SharePoint 도구 확장의 프로그래밍 개념 및 기능
+          items:
+            - name: SharePoint 도구 확장의 프로그래밍 개념 및 기능
+              href: programming-concepts-and-features-for-sharepoint-tools-extensions.md
+            - name: SharePoint 개체 모델 호출
+              items:
+                - name: SharePoint 개체 모델 호출
+                  href: calling-into-the-sharepoint-object-models.md
+                - name: SharePoint 명령 만들기
+                  href: how-to-create-a-sharepoint-command.md
+                - name: SharePoint 명령 실행
+                  href: how-to-execute-a-sharepoint-command.md
+                - name: '연습: 서버 탐색기 확장의 SharePoint 클라이언트 개체 모델 호출'
+                  href: walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md
+            - name: SharePoint 프로젝트 서비스 사용
+              items:
+                - name: SharePoint 프로젝트 서비스 사용
+                  href: using-the-sharepoint-project-service.md
+                - name: SharePoint 프로젝트 서비스 검색
+                  href: how-to-retrieve-the-sharepoint-project-service.md
+            - name: SharePoint 도구 확장과 사용자 지정 데이터 연결
+              href: associating-custom-data-with-sharepoint-tools-extensions.md
+        - name: Visual Studio에서 SharePoint 도구에 대한 확장명 디버깅
+          href: debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md
+        - name: Visual Studio에서 SharePoint 도구에 대한 확장 배포
+          href: deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md
+        - name: 참조
+          items:
+            - name: 참조
+              href: reference-sharepoint-tools-extensibility.md
+            - name: SharePoint 프로젝트 항목 스키마 참조
+              items:
+                - name: SharePoint 프로젝트 항목 스키마 참조
+                  href: sharepoint-project-item-schema-reference.md
+                - name: ExtensionData 요소
+                  href: extensiondata-element.md
+                - name: ExtensionDataItem 요소
+                  href: extensiondataitem-element.md
+                - name: FeatureProperties 요소
+                  href: featureproperties-element.md
+                - name: FeatureProperty 요소
+                  href: featureproperty-element.md
+                - name: Files 요소
+                  href: files-element.md
+                - name: ProjectItem 요소
+                  href: projectitem-element.md
+                - name: ProjectItemFile 요소
+                  href: projectitemfile-element.md
+                - name: ProjectItemFolder 요소
+                  href: projectitemfolder-element.md
+                - name: ProjectOutputFile 요소
+                  href: projectoutputfile-element.md
+                - name: SafeControl 요소
+                  href: safecontrol-element.md
+                - name: SafeControls 요소
+                  href: safecontrols-element.md
+            - name: API 참조
+              href: api-reference-sharepoint-tools-extensibility.md

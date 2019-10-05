@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - coauthoring, in Excel
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62e73362a04d334027075d5c1fea9cc4c0b5d3bf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 96d83bbe34e0510ccf14204eb83fa1ed2da2d173
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978187"
 ---
 # <a name="understand-coauthoring-and-add-ins"></a>공동 작업 및 추가 기능 이해
 
@@ -25,5 +25,5 @@ ms.locfileid: "53871072"
 
 참고: Windows 데스크톱 Excel에 대 한 공동 작업 2017에서 도입 되었으며 office 365 구독자에서 현재 사용할 수 있습니다. Office 2016 또는 이전 영구 라이선스를 구매한 사용자에 게 현재 없는 이러한 기능에 액세스할 수 있습니다. (Excel Online에서 Excel for Android, ios, Excel 및 Excel Mobile Windows 스토어에서도 지원 공동 작업).
 
-## <a name="see-also"></a>참고 항목
-[Excel 솔루션](./excel-solutions.md)
+## <a name="see-also"></a>참고자료
+- [Excel 솔루션](./excel-solutions.md)

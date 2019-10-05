@@ -1,14 +1,9 @@
 ---
 title: -ResetSettings(devenv.exe) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Devenv, /ResetSettings switch
 - ResetSettings switch
@@ -17,18 +12,17 @@ ms.assetid: 1d41021c-6f58-4bd5-b122-d1c995812192
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 276205ae2aab3c38ceb3d4f1419e0bac13ae626c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1b35026140b424da0f7fa71cb9e70b72c3dba243
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273496"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689652"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings(devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 기본 설정을 복원하고 자동으로 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE를 시작합니다. 필요에 따라 설정을 지정한 .vssettings 파일로 다시 설정합니다.  
   
  기본 설정은 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]가 처음 시작될 때 선택된 프로필에 따라 결정됩니다.  
@@ -45,7 +39,7 @@ Devenv /ResetSettings SettingsFile
   
  일반 개발 설정 프로필을 복원하려면 `General`을 사용합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  `SettingsFile`이 지정되지 않은 경우에는 다음번에 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]를 시작할 때 기본 설정 컬렉션을 선택할지 묻는 메시지가 표시됩니다.  
   
 ## <a name="example"></a>예제  
@@ -56,8 +50,5 @@ Devenv.exe /ResetSettings "C:\My Files\MySettings.vssettings"
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [Visual Studio에서 개발 설정 사용자 지정](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
+ [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
  [Devenv 명령줄 스위치](../../ide/reference/devenv-command-line-switches.md)
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: 게임 및 앱을 위한 3D 자산 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics
 ms.assetid: 910d673b-c884-4eeb-9928-0e89f3d38cb6
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bdf19958ec7b3cfe72ee00ea84e0e23724a51458
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 020c934d3427dda77c41fb410143972d6f48656b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438092"
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>게임 및 응용 프로그램을 위한 3D 자산 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ ms.locfileid: "49265238"
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 이미지 편집기를 사용하여 많은 공통 유형 및 형식의 이미지와 질감으로 작업할 수 있습니다.  
   
 ### <a name="3-d-models"></a>3차원 모델  
- 3차원 모델은 게임과 앱에서 공간과 모양을 만듭니다. 최소한, 모델은 모델의 모양을 나타내는 선 또는 삼각형을 정의하기 위해 인덱싱 데이터와 함께 3차원 공간에서 *꼭짓점*으로 알려진 점의 위치를 인코딩합니다. 추가 데이터는 이러한 꼭짓점과 연결될 수 있습니다(예: 색 정보, 법선 벡터 또는 앱 관련 특성). 또한 각 모델은 개체 전체 특성을 정의할 수도 있습니다. 예를 들어 개체 표면의 모양을 계산하는 데 사용되는 셰이더 또는 개체의 표면에 적용되는 질감을 정의할 수 있습니다.  
+ 3차원 모델은 게임과 앱에서 공간과 모양을 만듭니다. 최소한, 모델은 모델의 모양을 나타내는 선 또는 삼각형을 정의하기 위해 인덱싱 데이터와 함께 3차원 공간에서 *꼭짓점*으로 알려진 점의 위치를 인코딩합니다. 추가 데이터는 이러한 꼭짓점과 연결될 수 있습니다(예: 색 정보, 법선 벡터 또는 앱 관련 특성). 또한 각 모델은 개체 전체 특성을 정의할 수도 있습니다. 예를 들어 개체 표면의 모양을 컴퓨팅하는 데 사용되는 셰이더 또는 개체의 표면에 적용되는 질감을 정의할 수 있습니다.  
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 모델 편집기를 사용하여 몇 가지 공통 형식으로 3차원 모델을 작업할 수 있습니다.  
   
@@ -49,7 +44,7 @@ ms.locfileid: "49265238"
  그래프 기반 셰이더 디자인 도구인 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 셰이더 디자이너를 사용하여 HLSL 프로그래밍을 알 필요 없이 사용자 지정 시각적 효과를 만들 수 있습니다.  
   
 > [!NOTE]
->  DirectX 프로그래밍을 시작하는 방법에 대한 자세한 내용은 [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633)를 참조하세요. DirectX 기반 앱을 디버그하는 방법에 대한 자세한 내용은 [그래픽 진단(DirectX 그래픽 디버그)](../debugger/visual-studio-graphics-diagnostics.md)을 참조하세요.  
+> DirectX 프로그래밍을 시작하는 방법에 대한 자세한 내용은 [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633)를 참조하세요. DirectX 기반 앱을 디버그하는 방법에 대한 자세한 내용은 [그래픽 진단(DirectX 그래픽 디버그)](../debugger/visual-studio-graphics-diagnostics.md)을 참조하세요.  
   
 ## <a name="directx-version-compatibility"></a>DirectX 버전 호환성  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]는 DirectX를 사용하여 2차원 및 3차원 자산을 렌더링합니다. DirectX 11 렌더러 또는 WARP(Windows Advanced Rasterization Platform) 소프트웨어 렌더러를 선택할 수 있습니다. DirectX 11 렌더러는 DirectX 11 및 DirectX 10 GPU에서 고성능 하드웨어 가속 렌더링을 제공합니다. WARP 렌더러는 자산이 광범위한 컴퓨터에서 작동하는지 확인하는 데 도움이 됩니다. 여기에는 최신 그래픽 하드웨어가 없는 컴퓨터와 통합 그래픽 하드웨어가 있는 컴퓨터가 포함됩니다. WARP에 대한 자세한 내용은 [WARP(Windows Advanced Rasterization Platform) 가이드](http://go.microsoft.com/fwlink/p/?LinkId=224634)를 참조하세요.  
@@ -62,6 +57,3 @@ ms.locfileid: "49265238"
 |[3차원 모델 작업](../designers/working-with-3-d-models.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 사용하여 3차원 모델을 사용하는 방법을 설명합니다.|  
 |[셰이더 작업](../designers/working-with-shaders.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 셰이더 디자이너를 사용하여 사용자 지정 셰이더 효과를 만들고 수정하는 방법을 설명합니다.|  
 |[게임 또는 응용 프로그램에 3차원 자산 사용](../designers/using-3-d-assets-in-your-game-or-app.md)|이미지 편집기, 모델 편집기 또는 셰이더 디자이너를 사용하여 만든 자산을 게임 또는 앱에서 사용하는 방법을 설명합니다.|
-
-
-

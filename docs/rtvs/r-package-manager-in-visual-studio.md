@@ -2,20 +2,18 @@
 title: R에 대한 패키지 관리자
 description: Visual Studio의 R 패키지 관리자를 사용하여 R 패키지를 설치 및 관리하는 방법입니다.
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 4063787711ae825cd587f72d735710444906d99b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d35bfd45e862912ff78ae600eed01ce8dc002493
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35666516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998867"
 ---
 # <a name="package-manager"></a>패키지 관리자
 

@@ -1,14 +1,9 @@
 ---
 title: marker_series::write_flag 메서드 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - cvmarkersojb/Concurrency::diagnostic::marker_series::write_flag
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: ca07f388-e5d5-46fd-b991-fe6e9029a68f
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c8b578e3c0b8d2f2ccbf62d8745f0deb783e9217
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b44c7cf2d2eb0f538b3819265298f1ca4166e6be
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51816667"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200758"
 ---
 # <a name="markerserieswriteflag-method"></a>marker_series::write_flag 메서드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,6 +67,3 @@ void write_flag(
   
 ## <a name="see-also"></a>참고 항목  
  [marker_series 클래스](../profiling/marker-series-class.md)
-
-
-

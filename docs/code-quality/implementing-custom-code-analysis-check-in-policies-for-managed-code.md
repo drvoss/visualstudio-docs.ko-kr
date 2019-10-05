@@ -1,7 +1,6 @@
 ---
-title: 관리 코드에 대한 사용자 지정 코드 분석 체크 인 정책 구현
+title: 관리 코드에 대 한 사용자 지정 코드 분석 체크 인 정책
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.code.analysis.selecttfsrulesets
@@ -10,15 +9,15 @@ f1_keywords:
 ms.assetid: fd029003-5671-4b24-8b6f-032e0a98b2e8
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab2c4e61eca64917a032d9dfd80c5eca71c09ec9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6619e3bb988a555fba5718f609ff3a5f0584063b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873799"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260835"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>관리 코드에 대한 사용자 지정 코드 분석 체크 인 정책 구현
 

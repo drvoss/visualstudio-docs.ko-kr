@@ -1,14 +1,9 @@
 ---
 title: 차원 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,15 +12,15 @@ ms.assetid: 94f791da-bfea-454f-8a14-da31e8e1596a
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 854db8bc8d51284c4a6ea75e7091f1fa8dabdd28
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1b760d6a7808154b8daabe43d4cf6399c3b91977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164337"
 ---
-# <a name="dimension"></a>크기
+# <a name="dimension"></a>차원
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 각 FORTRAN 배열에는 차원으로 식별 되는 `SymTagDimension` 기호입니다.  
@@ -33,7 +28,7 @@ ms.locfileid: "51790944"
 ## <a name="properties"></a>속성  
  다음 표에서이 기호 형식에 대 한 추가 올바른 속성을 보여 줍니다.  
   
-|속성|데이터 형식|설명|  
+|속성|데이터 형식|Description|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_lowerBound](../../debugger/debug-interface-access/idiasymbol-get-lowerbound.md)|`IDiaSymbol*`|FORTRAN 배열 차원의 하 한.|  
 |[IDiaSymbol::get_lowerBoundId](../../debugger/debug-interface-access/idiasymbol-get-lowerboundid.md)|`DWORD`|ID-하한값 기호입니다.|  
@@ -45,6 +40,3 @@ ms.locfileid: "51790944"
 ## <a name="see-also"></a>참고 항목  
  [ArrayType](../../debugger/debug-interface-access/arraytype.md)   
  [기호 형식의 클래스 계층 구조](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
-
-
-

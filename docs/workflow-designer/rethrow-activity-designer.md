@@ -2,21 +2,20 @@
 title: Rethrow 활동 디자이너-워크플로 디자이너
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.Rethrow.UI
 ms.assetid: 9cfa2eda-395f-4cf3-9154-83fadd4f7452
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 929007c878be0313c4e90d4bb2a14bc0613d9dbd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 558ff5a36d172b8cd1fef0b811d1eaa920b90c6d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009277"
 ---
 # <a name="rethrow-activity-designer"></a>Rethrow 활동 디자이너
 
@@ -34,7 +33,7 @@ ms.locfileid: "53930949"
 
 다음 표는 <xref:System.Activities.Statements.Rethrow> 속성을 디자이너에서 사용 하는 방법을 설명 합니다.
 
-|속성 이름|필수|용도|
+|속성 이름|필수|사용|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.Rethrow> 활동의 선택적 이름을 지정합니다. 기본값은 Rethrow입니다.|
 

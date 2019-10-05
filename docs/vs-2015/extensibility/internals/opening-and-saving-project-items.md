@@ -1,14 +1,9 @@
 ---
 title: 열기 및 프로젝트 항목을 저장 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], file persistence
 - files [Visual Studio], opening and saving
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: f71898ad-335f-4c43-a177-4da87078afd1
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 043b8545c583295fd11c04329b305e125c3efbac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c406e66b1008f0bb2aad95a427e1329d4269f1f6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158059"
 ---
 # <a name="opening-and-saving-project-items"></a>프로젝트 항목 열기 및 저장
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ ms.locfileid: "51726716"
  [방법: 표준 편집기 열기](../../extensibility/how-to-open-standard-editors.md)  
  프로젝트 형식에서 파일에 대 한 표준 편집기를 열려면 IDE를 사용 하도록 설정 하는 방법을 지정 하기 위한 단계별 지침을 제공 합니다.  
   
- [방법: 열린 문서에 대한 편집기 열기](../../extensibility/how-to-open-editors-for-open-documents.md)  
+ [방법: 열린 문서의 편집기 열기](../../extensibility/how-to-open-editors-for-open-documents.md)  
  열려 있는 파일에 대 한 프로젝트별 편집기 열기에 대 한 단계별 지침을 제공 합니다.  
   
  [표준 문서 저장](../../extensibility/internals/saving-a-standard-document.md)  
@@ -60,4 +55,3 @@ ms.locfileid: "51726716"
   
  [프로젝트 형식](../../extensibility/internals/project-types.md)  
  프로젝트 코드 컴파일 및 빌드 방식을 제어 하는 방법, 편집기가 열리면 하는 방법 및 프로젝트 항목의 형식 지정 방법을 설명 합니다.
-

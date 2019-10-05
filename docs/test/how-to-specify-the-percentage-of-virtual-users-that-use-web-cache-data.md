@@ -1,5 +1,5 @@
 ---
-title: 부하 테스트에 웹 캐시 데이터를 사용하는 가상 사용자 비율 지정
+title: '부하 테스트: 웹 캐시 데이터를 사용하여 가상 사용자 비율 설정'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,15 +7,13 @@ helpviewer_keywords:
 ms.assetid: f66d5d43-4121-4487-b27f-d0a0baaf7601
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 2195b99658d05e9e73a86cf723fcb8e9d4f36bd4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: f436573712ff228244a40e5199f2f5a4b4326c5e
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060241"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431874"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>방법: 웹 캐시 데이터를 사용하는 가상 사용자 비율 지정
 

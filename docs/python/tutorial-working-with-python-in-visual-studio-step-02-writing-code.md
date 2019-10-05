@@ -2,23 +2,21 @@
 title: Visual Studio 자습서 2단계에서 Python 코드 작성 및 실행
 titleSuffix: ''
 description: Visual Studio의 Python 기능에 대한 핵심 연습의 2단계로, 코드 편집 및 프로젝트 실행을 포함합니다.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 01/28/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9b2f1c4743652f0925ef083d0ca62a34485c219b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: fda68b9e5bffbd1afab3389a0d8d624312a8de3f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054802"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430074"
 ---
 # <a name="step-2-write-and-run-code"></a>2단계: 코드 작성 및 실행
 
@@ -26,7 +24,7 @@ ms.locfileid: "53054802"
 
 프로젝트 파일은 **솔루션 탐색기**에서 관리하더라도 일반적으로 소스 코드와 같은 파일의 ‘콘텐츠’는 ‘편집기’ 창에서 작업합니다. 편집기는 컨텍스트에 따라 프로그래밍 언어(파일 확장명에 따라)를 포함한 편집 중인 파일의 유형을 파악하고, IntelliSense를 사용한 구문 색 지정 및 자동 완성과 같이 해당 언어에 적절한 기능을 제공합니다.
 
-1. 새로운 “Python 응용 프로그램” 프로젝트를 만들면 Visual Studio 편집기에 *PythonApplication1.py*라는 기본 빈 파일이 열립니다.
+1. 새로운 “Python 애플리케이션” 프로젝트를 만들면 Visual Studio 편집기에 *PythonApplication1.py*라는 기본 빈 파일이 열립니다.
 
 1. 편집기에서 `print("Hello, Visual Studio")`를 입력하기 시작하면 Visual Studio IntelliSense가 입력 도중에 자동 완성 옵션을 어떻게 표시하는지 알 수 있습니다. 드롭다운 목록에서 윤곽선이 있는 옵션은 **Tab** 키를 누르면 사용되는 기본 완성입니다. 완성 기능은 더 긴 문이나 식별자가 포함된 경우에 가장 유용합니다.
 
@@ -47,7 +45,7 @@ ms.locfileid: "53054802"
     ![IntelliSense 구문 색 지정 및 오류 강조 표시](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > 개발 환경은 매우 개인적인 문제이기 때문에 Visual Studio는 사용자가 Visual Studio의 모양 및 동작을 완벽히 제어할 수 있는 기능을 제공합니다. **도구** > **옵션** 메뉴 명령을 선택하고 **환경** 및 **텍스트 편집기** 탭 아래에 있는 설정을 탐색합니다. 기본적으로 제한된 개수의 옵션만 표시됩니다. 모든 프로그래밍 언어에 대한 옵션을 모두 보려면 대화 상자의 맨 아래에 있는 **모든 설정 표시**를 선택합니다. 
+    > 개발 환경은 매우 개인적인 문제이기 때문에 Visual Studio는 사용자가 Visual Studio의 모양 및 동작을 완벽히 제어할 수 있는 기능을 제공합니다. **도구** > **옵션** 메뉴 명령을 선택하고 **환경** 및 **텍스트 편집기** 탭 아래에 있는 설정을 탐색합니다. 기본적으로 제한된 개수의 옵션만 표시됩니다. 모든 프로그래밍 언어에 대한 옵션을 모두 보려면 대화 상자의 맨 아래에 있는 **모든 설정 표시**를 선택합니다.
 
 1. **Ctrl**+**F5**를 누르거나 **디버그** > **디버깅하지 않고 시작** 메뉴 항목을 선택하여 이 지점까지 작성한 코드를 실행합니다. 코드에 여전히 오류가 있는 경우 Visual Studio에서 경고 메시지를 표시합니다.
 
@@ -55,7 +53,7 @@ ms.locfileid: "53054802"
 
     ![프로그램의 첫 번째 실행에 대한 출력](media/vs-getting-started-python-07-output.png)
 
-1. IntelliSense는 명령문 및 함수 완성 외에 Python `import` 및 `from` 문 완성 기능도 제공합니다. 이러한 완성 기능을 사용하면 사용자 환경에서 사용할 수 있는 모듈과 해당 모듈의 멤버를 손쉽게 확인할 수 있습니다. 편집기에서 `print` 줄을 삭제하고 `import ` 입력을 시작합니다. 공백을 입력하면 모듈의 목록이 표시됩니다.
+1. IntelliSense는 명령문 및 함수 완성 외에 Python `import` 및 `from` 문 완성 기능도 제공합니다. 이러한 완성 기능을 사용하면 사용자 환경에서 사용할 수 있는 모듈과 해당 모듈의 멤버를 손쉽게 확인할 수 있습니다. 편집기에서 `print` 줄을 삭제하고 `import` 입력을 시작합니다. 공백을 입력하면 모듈의 목록이 표시됩니다.
 
     ![import 문에 사용할 수 있는 모듈을 보여 주는 IntellSense](media/vs-getting-started-python-08-import1.png)
 

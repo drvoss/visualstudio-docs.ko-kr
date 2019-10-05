@@ -1,32 +1,27 @@
 ---
 title: 제네릭 메서드의 단위 테스트 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - generics, and unit tests
 - unit tests, and generics
 ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3657c3ea41af2aa85177ff47a28797ef7f55cc41
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 6132da236498867865717ccc7d1f470e2b990a86
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914400"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695124"
 ---
 # <a name="unit-tests-for-generic-methods"></a>제네릭 메서드의 단위 테스트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[방법: 유닛 테스트 만들기 및 실행](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)에 설명된 대로, 다른 메서드와 동일한 방식으로 제네릭 메서드의 유닛 테스트를 생성할 수 있습니다. 다음 섹션에서는 제네릭 메서드의 단위 테스트를 만드는 방법에 대한 정보와 예제를 제공합니다.  
+에 설명 된 대로, 다른 메서드와 동일한 방식으로 제네릭 메서드의 단위 테스트를 생성할 수 있습니다 [방법: 단위 테스트 만들기 및 실행](https://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)합니다. 다음 섹션에서는 제네릭 메서드의 단위 테스트를 만드는 방법에 대한 정보와 예제를 제공합니다.  
   
 ## <a name="type-arguments-and-type-constraints"></a>형식 인수 및 형식 제약 조건  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]는 `MyList<T>`와 같은 제네릭 클래스의 단위 테스트를 생성하는 경우 제네릭 도우미와 테스트 메서드의 두 메서드를 생성합니다. `MyList<T>`에 하나 이상의 형식 제약 조건이 있는 경우 형식 인수가 형식 제약 조건을 모두 충족해야 합니다. 테스트 대상 제네릭 코드가 허용되는 모든 입력에 대해 예상대로 작동하는지 확인하기 위해 테스트 메서드는 테스트하려는 모든 제약 조건을 사용하여 제네릭 도우미 메서드를 호출합니다.  
@@ -34,20 +29,20 @@ ms.locfileid: "49914400"
 ## <a name="examples"></a>예제  
  다음 예제에서는 제네릭의 단위 테스트를 보여 줍니다.  
   
--   [생성된 테스트 코드 편집](#EditingGeneratedTestCode). 이 예제에는 생성된 테스트 코드와 편집된 테스트 코드의 두 섹션이 있습니다. 제네릭 메서드에서 생성된 원시 테스트 코드를 유용한 테스트 메서드로 편집하는 방법을 보여 줍니다.  
+- [생성된 테스트 코드 편집](#EditingGeneratedTestCode). 이 예제에는 생성된 테스트 코드와 편집된 테스트 코드의 두 섹션이 있습니다. 제네릭 메서드에서 생성된 원시 테스트 코드를 유용한 테스트 메서드로 편집하는 방법을 보여 줍니다.  
   
--   [형식 제약 조건 사용](#TypeConstraintNotSatisfied). 이 예제에서는 형식 제약 조건을 사용하는 제네릭 메서드의 단위 테스트를 보여 줍니다. 이 예제에서는 형식 제약 조건이 충족되지 않습니다.  
+- [형식 제약 조건 사용](#TypeConstraintNotSatisfied). 이 예제에서는 형식 제약 조건을 사용하는 제네릭 메서드의 단위 테스트를 보여 줍니다. 이 예제에서는 형식 제약 조건이 충족되지 않습니다.  
   
-###  <a name="EditingGeneratedTestCode"></a> 예제 1: 생성된 테스트 코드 편집  
+### <a name="EditingGeneratedTestCode"></a> 예제 1: 생성 된 테스트 코드 편집  
  이 섹션의 테스트 코드는 `SizeOfLinkedList()`라는 테스트 대상 코드 메서드를 테스트합니다. 이 메서드는 연결된 목록의 노드 수를 지정하는 정수를 반환합니다.  
   
  생성된 테스트 코드 섹션의 첫 번째 코드 샘플은 Visual Studio Enterprise에서 생성된 편집하지 않은 테스트 코드를 보여 줍니다. 편집된 테스트 코드 섹션의 두 번째 샘플은 두 가지 데이터 형식 `int` 및 `char`에 대해 SizeOfLinkedList 메서드의 기능을 테스트하도록 만드는 방법을 보여 줍니다.  
   
  이 코드는 다음 두 개의 메서드를 보여 줍니다.  
   
--   테스트 도우미 메서드, `SizeOfLinkedListTestHelper<T>()`. 기본적으로 테스트 도우미 메서드의 이름은 "TestHelper"입니다.  
+- 테스트 도우미 메서드, `SizeOfLinkedListTestHelper<T>()`. 기본적으로 테스트 도우미 메서드의 이름은 "TestHelper"입니다.  
   
--   테스트 메서드, `SizeOfLinkedListTest()`. 모든 테스트 메서드는 TestMethod 특성으로 표시됩니다.  
+- 테스트 메서드, `SizeOfLinkedListTest()`. 모든 테스트 메서드는 TestMethod 특성으로 표시됩니다.  
   
 #### <a name="generated-test-code"></a>생성된 테스트 코드  
  다음 테스트 코드는 `SizeOfLinkedList()` 메서드에서 생성된 것입니다. 편집하지 않은 생성된 테스트이기 때문에 SizeOfLinkedList 메서드를 올바르게 테스트하도록 수정해야 합니다.  
@@ -79,22 +74,22 @@ public void SizeOfLinkedListTest()
 ##### <a name="test-helper-method"></a>테스트 도우미 메서드  
  테스트 도우미 메서드는 1단계부터 5단계까지의 레이블이 지정된 코드 줄에 해당하는 다음 단계를 수행합니다.  
   
-1.  연결된 제네릭 목록을 만듭니다.  
+1. 연결된 제네릭 목록을 만듭니다.  
   
-2.  연결된 목록에 4개의 노드를 추가합니다. 이러한 노드 내용의 데이터 형식은 알 수 없습니다.  
+2. 연결된 목록에 4개의 노드를 추가합니다. 이러한 노드 내용의 데이터 형식은 알 수 없습니다.  
   
-3.  연결된 목록의 예상 크기를 `expected` 변수에 할당합니다.  
+3. 연결된 목록의 예상 크기를 `expected` 변수에 할당합니다.  
   
-4.  연결된 목록의 실제 크기를 계산하고 `actual` 변수에 할당합니다.  
+4. 연결된 목록의 실제 크기를 계산하고 `actual` 변수에 할당합니다.  
   
-5.  Assert 문에서 `actual`과 `expected`를 비교합니다. actual이 expected와 같지 않으면 테스트가 실패합니다.  
+5. Assert 문에서 `actual`과 `expected`를 비교합니다. actual이 expected와 같지 않으면 테스트가 실패합니다.  
   
 ##### <a name="test-method"></a>테스트 메서드  
  테스트 메서드는 SizeOfLinkedListTest라는 테스트를 실행할 때 호출되는 코드로 컴파일됩니다. 6단계와 7단계로 레이블이 지정된 코드 줄에 해당하는 다음 단계를 수행합니다.  
   
-1.  테스트 도우미 메서드를 호출할 때 `<int>`를 지정하여 `integer` 변수에 대해 테스트가 작동하는지 확인합니다.  
+1. 테스트 도우미 메서드를 호출할 때 `<int>`를 지정하여 `integer` 변수에 대해 테스트가 작동하는지 확인합니다.  
   
-2.  테스트 도우미 메서드를 호출할 때 `<char>`를 지정하여 `char` 변수에 대해 테스트가 작동하는지 확인합니다.  
+2. 테스트 도우미 메서드를 호출할 때 `<char>`를 지정하여 `char` 변수에 대해 테스트가 작동하는지 확인합니다.  
   
 ```  
   
@@ -116,15 +111,15 @@ public void SizeOfLinkedListTestHelper<T>()
 [TestMethod()]  
 public void SizeOfLinkedListTest()   
 {  
-    SizeOfLinkedListTestHelper<int>();  // step 6  
+    SizeOfLinkedListTestHelper<int>();  // step 6  
     SizeOfLinkedListTestHelper<char>(); // step 7  
 }  
 ```  
   
 > [!NOTE]
->  SizeOfLinkedListTest 테스트를 실행할 때마다 해당 TestHelper 메서드가 두 번 호출됩니다. 테스트에 성공하려면 assert 문이 항상 true로 평가되어야 합니다. 테스트에 실패할 경우 실패 원인이 `<int>`를 지정한 호출 때문인지 또는 `<char>`를 지정한 호출 때문인지 명확하지 않을 수 있습니다. 대답을 찾기 위해 호출 스택을 검사하거나, 테스트 메서드에 중단점을 설정한 후 테스트를 실행하는 동안 디버그할 수 있습니다. 자세한 내용은 [방법: ASP.NET 솔루션에서 테스트를 실행하는 동안 디버깅](http://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b)을 참조하세요.  
+> SizeOfLinkedListTest 테스트를 실행할 때마다 해당 TestHelper 메서드가 두 번 호출됩니다. 테스트에 성공하려면 assert 문이 항상 true로 평가되어야 합니다. 테스트에 실패할 경우 실패 원인이 `<int>`를 지정한 호출 때문인지 또는 `<char>`를 지정한 호출 때문인지 명확하지 않을 수 있습니다. 대답을 찾기 위해 호출 스택을 검사하거나, 테스트 메서드에 중단점을 설정한 후 테스트를 실행하는 동안 디버그할 수 있습니다. 자세한 내용은 [방법: ASP.NET 솔루션에서 테스트를 실행 하는 동안 디버깅](https://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b)합니다.  
   
-###  <a name="TypeConstraintNotSatisfied"></a> 예제 2: 형식 제약 조건 사용  
+### <a name="TypeConstraintNotSatisfied"></a> 예제 2: 형식 제약 조건 사용  
  이 예제에서는 충족되지 않은 형식 제약 조건을 사용하는 제네릭 메서드의 단위 테스트를 보여 줍니다. 첫 번째 섹션에서는 테스트 대상 코드 프로젝트의 코드를 보여 줍니다. 형식 제약 조건이 강조 표시됩니다.  
   
  두 번째 섹션에서는 테스트 프로젝트의 코드를 보여 줍니다.  
@@ -203,8 +198,5 @@ namespace ClassLibrary2
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [단위 테스트 분석](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144)   
+ [단위 테스트 분석](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
  [코드 단위 테스트](../test/unit-test-your-code.md)
-
-
-

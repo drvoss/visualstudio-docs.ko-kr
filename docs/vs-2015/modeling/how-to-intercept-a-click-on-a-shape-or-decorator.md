@@ -1,25 +1,22 @@
 ---
 title: '방법: 모양 또는 데코레이터 클릭 가로채기 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 ms.assetid: e2bc3124-c0c0-4104-9779-a5bf565d7f51
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6a3e0d12aa7d5537b9dd11f1b7d4c3daedc68a84
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 865cd15416fbc901b6c5e58e1d83385f64f6a5a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441068"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>방법: 모양 또는 데코레이터 클릭 가로채기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +38,7 @@ public partial class MyShape // change
 ```  
   
 > [!NOTE]
->  설정할 `e.Handled` 에 `true`포함 하는 모양 또는 다이어그램에 전달할 이벤트를 원하는 경우가 아니면 합니다.  
+> 설정할 `e.Handled` 에 `true`포함 하는 모양 또는 다이어그램에 전달할 이벤트를 원하는 경우가 아니면 합니다.  
   
 ## <a name="to-intercept-clicks-on-decorators"></a>데코레이터 클릭 가로채기 위해  
  이미지 데코레이터 OnDoubleClick 메서드를 포함 하는 이미지 필드 클래스의 인스턴스에서 수행 됩니다. 이미지 필드 서브 클래스를 작성 하는 경우에 클릭을 가로챌 수 있습니다. 필드는 InitializeShapeFields 메서드에서 설정 됩니다. 따라서 일반 이미지 필드 대신 하위 클래스를 인스턴스화하고 해당 메서드를 변경 해야 합니다. InitializeShapeFields 메서드는 모양 클래스의 생성된 된 코드입니다. 설정 하는 경우에 모양 클래스를 재정의할 수 해당 `Generates Double Derived` 다음 절차에 설명 된 대로 속성입니다.  
@@ -50,11 +47,11 @@ public partial class MyShape // change
   
 #### <a name="to-intercept-a-click-on-an-icon-decorator"></a>에 아이콘 데코레이터 클릭 가로채기  
   
-1.  열거나 DSL 솔루션을 만듭니다.  
+1. 열거나 DSL 솔루션을 만듭니다.  
   
-2.  선택 또는 아이콘 decorator에 셰이프를 만들고 도메인 클래스에 매핑하십시오.  
+2. 선택 또는 아이콘 decorator에 셰이프를 만들고 도메인 클래스에 매핑하십시오.  
   
-3.  별개의 파일의 코드 파일에는 `GeneratedCode` 폴더 이미지 필드의 새 하위 클래스를 만들려면:  
+3. 별개의 파일의 코드 파일에는 `GeneratedCode` 폴더 이미지 필드의 새 하위 클래스를 만들려면:  
   
     ```  
     using Microsoft.VisualStudio.Modeling;  
@@ -92,7 +89,7 @@ public partial class MyShape // change
   
      처리를 포함 하는 모양에 전달할 이벤트를 원하지 않는 경우 true로 설정 해야 합니다.  
   
-4.  다음 partial 클래스 정의 추가 하 여 프로그램 셰이프 classs InitializeShapeFields 메서드를 재정의 합니다.  
+4. 다음 partial 클래스 정의 추가 하 여 프로그램 셰이프 classs InitializeShapeFields 메서드를 재정의 합니다.  
   
     ```  
     public partial class MyShape // change  
@@ -119,9 +116,9 @@ public partial class MyShape // change
     }  
     ```  
   
-1.  솔루션을 빌드하고 실행합니다.  
+1. 솔루션을 빌드하고 실행합니다.  
   
-2.  인스턴스에서 모양의 아이콘을 두 번 클릭 합니다. 테스트 메시지가 표시 됩니다.  
+2. 인스턴스에서 모양의 아이콘을 두 번 클릭 합니다. 테스트 메시지가 표시 됩니다.  
   
 ## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>가 가로챈 CompartmentShape 목록에 끌어 놓습니다.  
  다음 샘플에서는 끌어 구획 도형에서 항목 순서 수가 있습니다. 이 코드를 실행 합니다.  
@@ -138,19 +135,19 @@ public partial class MyShape // change
   
    요약 하자면, 코드는 다음과 같이 작동합니다. 이 예제에서는 `ClassShape` 구획 모양의 이름입니다.  
   
--   마우스 이벤트 처리기의 집합을 만들 때 각 구획 인스턴스에 연결 됩니다.  
+- 마우스 이벤트 처리기의 집합을 만들 때 각 구획 인스턴스에 연결 됩니다.  
   
--   `ClassShape.MouseDown` 현재 항목을 저장 하는 이벤트입니다.  
+- `ClassShape.MouseDown` 현재 항목을 저장 하는 이벤트입니다.  
   
--   마우스 이동 하면 현재 항목에서 마우스 작업 인스턴스의 만들어지면 커서를 설정 및 해제 될 때까지 마우스를 캡처하는 합니다.  
+- 마우스 이동 하면 현재 항목에서 마우스 작업 인스턴스의 만들어지면 커서를 설정 및 해제 될 때까지 마우스를 캡처하는 합니다.  
   
      항목의 텍스트를 선택 하는 등의 다른 마우스 작업을 방해 하지 않으려면 원래 항목 마우스가 될 때까지 마우스 작업은 생성 되지 않습니다.  
   
      마우스 작업을 만드는 대신 MouseUp 대기할 단순히 것입니다. 그러나이 제대로 작동 하지 구획 외부 끌어서 놓을 마우스를 놓을 경우. 마우스 작업은 마우스를 해제 하는 위치에 관계 없이 적절 한 작업을 수행할 수 있습니다.  
   
--   마우스를 놓으면 MouseAction.MouseUp 모델 요소 간에 링크 순서를 재정렬 합니다.  
+- 마우스를 놓으면 MouseAction.MouseUp 모델 요소 간에 링크 순서를 재정렬 합니다.  
   
--   역할 순서를 변경 하 여 디스플레이 업데이트 하는 규칙을 발생 시킵니다. 이 문제를 이미 정의 하 고 추가 코드가 필요 하지 않습니다.  
+- 역할 순서를 변경 하 여 디스플레이 업데이트 하는 규칙을 발생 시킵니다. 이 문제를 이미 정의 하 고 추가 코드가 필요 하지 않습니다.  
   
 ```csharp  
 using Microsoft.VisualStudio.Modeling;  
@@ -404,6 +401,3 @@ namespace Company.CompartmentDrag
 ## <a name="see-also"></a>참고 항목  
  [응답 하 고 변경 내용 전파](../modeling/responding-to-and-propagating-changes.md)   
  [데코레이터의 속성](../modeling/properties-of-decorators.md)
-
-
-

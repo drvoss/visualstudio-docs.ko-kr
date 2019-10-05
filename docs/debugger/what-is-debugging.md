@@ -1,23 +1,22 @@
 ---
 title: 디버깅이란 무엇인가요?
 description: 앱을 디버그 하는 것을 이해합니다
-ms.custom: debug-experiments
+ms.custom: debug-experiment
 ms.date: 10/17/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f0aa6cbe09f902ef69e1fd5cb3a2d9712cabf28
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
-ms.translationtype: MTE95
+ms.openlocfilehash: c01317f3b8fa92cf1bc17c3745f708e0d3f26e5b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901233"
 ---
 # <a name="what-is-debugging"></a>디버깅이란 무엇인가요?
 
@@ -45,11 +44,14 @@ A **디버그** 값 디버그 구성을 나타냅니다. 앱을 시작 하는 �
 
 ## <a name="when-to-use-a-debugger"></a>디버거를 사용 하는 경우
 
-디버거는 찾고 앱에서 버그를 수정 하는 필수 도구입니다. 그러나 상황에 맞는 king, 이며 프로그램 disposable 신속 하 게 버그 또는 오류를 제거 하는 데 필요한 모든 도구를 활용 하는 것이 중요 합니다. 경우에 따라 오른쪽 "도구"를 더 잘 코딩 사례 수 있습니다. 다른 도구 및 디버거를 사용 하는 경우 학습, 또한 디버거를 보다 효과적으로 사용 하는 방법을 배웁니다. 디버거에 대 배울 필요가 이미 알고 있는 경우 참조 [초보자를 위한 디버깅](../debugger/debugging-absolute-beginners.md)합니다. 그렇지 않은 경우의 링크를 따라갑니다 **다음 단계**합니다.
+디버거는 찾고 앱에서 버그를 수정 하는 필수 도구입니다. 그러나 상황에 맞는 king, 이며 프로그램 disposable 신속 하 게 버그 또는 오류를 제거 하는 데 필요한 모든 도구를 활용 하는 것이 중요 합니다. 경우에 따라 오른쪽 "도구"를 더 잘 코딩 사례 수 있습니다. 다른 도구 및 디버거를 사용 하는 경우 학습, 또한 디버거를 보다 효과적으로 사용 하는 방법을 배웁니다.
 
 ## <a name="next-steps"></a>다음 단계
 
-이 문서에서는 몇 가지 일반적인 디버깅 개념을 알아보았습니다. 다음으로 Visual Studio를 사용 하 여 디버그 하는 방법 및 버그가 줄어들었습니다를 사용 하 여 코드를 작성 하는 방법을 학습을 시작할 수 있습니다. 다음 문서에서는 C# 코드 예제를 보려면 하지만 개념은 Visual Studio에서 지 원하는 모든 언어에 적용 합니다.
+이 문서에서는 몇 가지 일반적인 디버깅 개념을 알아보았습니다. 다음으로 Visual Studio를 사용 하 여 디버그 하는 방법 및 버그가 줄어들었습니다를 사용 하 여 코드를 작성 하는 방법을 학습을 시작할 수 있습니다. 다음 문서 표시 C# 코드 예제를 보려면 하지만 개념은 Visual Studio에서 지 원하는 모든 언어에 적용 합니다.
 
 > [!div class="nextstepaction"]
-> [더 나은 C# 코드 작성으로 버그 수정](../debugger/write-better-code-with-visual-studio.md)
+> [완전 초보자를 위한 디버깅](../debugger/debugging-absolute-beginners.md)
+
+> [!div class="nextstepaction"]
+> [디버깅 기술 및 도구](../debugger/write-better-code-with-visual-studio.md)

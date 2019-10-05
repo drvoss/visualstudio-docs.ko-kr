@@ -5,17 +5,15 @@ ms.topic: reference
 ms.assetid: 4d25dfa1-8fa4-4529-9b90-973bc2ec2993
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d102404cf14fecc89fc65773d283d748914bc0a5
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 5fab6be50a9b4c273a7bb911d8afde5cf65d7676
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174175"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460576"
 ---
 # <a name="the-selected-connection-uses-an-unsupported-database-provider"></a>선택한 연결에서 지원되지 않는 데이터베이스 공급자를 사용합니다.
 
@@ -28,5 +26,4 @@ ms.locfileid: "37174175"
 ## <a name="see-also"></a>참고자료
 
 - <xref:System.Data.SqlClient>
-- [O/R 디자이너 메시지](../data-tools/o-r-designer-messages.md)
-- [Visual Studio에서 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

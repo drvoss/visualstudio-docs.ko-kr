@@ -1,7 +1,6 @@
 ---
 title: 프로젝트와 솔루션 빌드 및 정리
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 f1_keywords:
@@ -19,21 +18,21 @@ helpviewer_keywords:
 - solution build configurations, build order
 - builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: ghogen
+ms.author: ghogen
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c96a3b6699428b156a23ad643eb7958cb438b994
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: b8676ad9dc1a3b245242687e2ea56148b83b8d56
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349272"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416429"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Visual Studio에서 프로젝트와 솔루션 빌드 및 정리
 
-이 항목의 절차에 따라 솔루션에 포함된 프로젝트 또는 프로젝트 항목의 전체 또는 일부를 빌드, 다시 빌드 또는 정리할 수 있습니다. 단계별 자습서는 [연습: 응용 프로그램 빌드](../ide/walkthrough-building-an-application.md)를 참조하세요.
+이 항목의 절차에 따라 솔루션에 포함된 프로젝트 또는 프로젝트 항목의 전체 또는 일부를 빌드, 다시 빌드 또는 정리할 수 있습니다. 단계별 자습서는 [연습: 애플리케이션 빌드](../ide/walkthrough-building-an-application.md)를 참조하세요.
 
 > [!NOTE]
 > 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio에서 프로젝트와 솔루션 빌드 및 정리](/visualstudio/mac/building-and-cleaning-projects-and-solutions)를 참조하세요.
@@ -43,44 +42,44 @@ ms.locfileid: "51349272"
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>전체 솔루션을 빌드, 다시 빌드 또는 정리하려면
 
-1.  **솔루션 탐색기**에서 솔루션을 선택하거나 엽니다.
+1. **솔루션 탐색기**에서 솔루션을 선택하거나 엽니다.
 
-2.  메뉴 모음에서 **빌드**를 선택하고 다음 명령 중 하나를 선택합니다.
+2. 메뉴 모음에서 **빌드**를 선택하고 다음 명령 중 하나를 선택합니다.
 
-    -   가장 최근 빌드 이후 변경된 프로젝트 파일 및 구성 요소만 컴파일하려면 **빌드** 또는 **솔루션 빌드**를 선택합니다.
+    - 가장 최근 빌드 이후 변경된 프로젝트 파일 및 구성 요소만 컴파일하려면 **빌드** 또는 **솔루션 빌드**를 선택합니다.
 
         > [!NOTE]
         > 솔루션에 둘 이상의 프로젝트가 포함된 경우에는 **빌드** 명령이 **솔루션 빌드**로 표시됩니다.
 
-    -   솔루션을 "정리"한 다음 모든 프로젝트 파일과 구성 요소를 빌드하려면 **솔루션 다시 빌드**를 선택합니다.
+    - 솔루션을 "정리"한 다음 모든 프로젝트 파일과 구성 요소를 빌드하려면 **솔루션 다시 빌드**를 선택합니다.
 
-    -   중간 파일과 출력 파일을 모두 삭제하려면 **솔루션 정리**를 선택합니다. 그런 다음 프로젝트 및 구성 요소 파일만 유지하여 중간 파일과 출력 파일의 새 인스턴스를 빌드할 수 있습니다.
+    - 중간 파일과 출력 파일을 모두 삭제하려면 **솔루션 정리**를 선택합니다. 그런 다음 프로젝트 및 구성 요소 파일만 유지하여 중간 파일과 출력 파일의 새 인스턴스를 빌드할 수 있습니다.
 
 ## <a name="to-build-or-rebuild-a-single-project"></a>단일 프로젝트를 빌드 또는 다시 빌드하려면
 
-1.  **솔루션 탐색기**에서 프로젝트를 선택하거나 엽니다.
+1. **솔루션 탐색기**에서 프로젝트를 선택하거나 엽니다.
 
-2.  메뉴 모음에서 **빌드**를 선택한 다음, *ProjectName* **빌드** 또는 *ProjectName* **다시 빌드**를 선택합니다.
+2. 메뉴 모음에서 **빌드**를 선택한 다음, *ProjectName* **빌드** 또는 *ProjectName* **다시 빌드**를 선택합니다.
 
-    -   가장 최근 빌드 이후 변경된 프로젝트 구성 요소만 빌드하려면 *ProjectName* **빌드**를 선택합니다.
+    - 가장 최근 빌드 이후 변경된 프로젝트 구성 요소만 빌드하려면 *ProjectName* **빌드**를 선택합니다.
 
-    -   프로젝트를 "정리"한 다음, 프로젝트 파일과 모든 프로젝트 구성 요소를 빌드하려면 *ProjectName* **다시 빌드**를 선택합니다.
+    - 프로젝트를 "정리"한 다음, 프로젝트 파일과 모든 프로젝트 구성 요소를 빌드하려면 *ProjectName* **다시 빌드**를 선택합니다.
 
 ## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>시작 프로젝트 및 해당 종속성만 빌드하려면
 
-1.  메뉴 모음에서 **도구** > **옵션**을 선택합니다.
+1. 메뉴 모음에서 **도구** > **옵션**을 선택합니다.
 
-2.  **옵션** 대화 상자에서 **프로젝트 및 솔루션** 노드를 확장하고 **빌드 및 실행** 페이지를 선택합니다.
+2. **옵션** 대화 상자에서 **프로젝트 및 솔루션** 노드를 확장하고 **빌드 및 실행** 페이지를 선택합니다.
 
      **빌드 및 실행** > **프로젝트 및 솔루션** > **옵션** 대화 상자가 열립니다.
 
-3.  **실행할 때 시작 프로젝트와 종속성만 빌드** 확인란을 선택합니다.
+3. **실행할 때 시작 프로젝트와 종속성만 빌드** 확인란을 선택합니다.
 
      이 확인란을 선택하면 다음 단계 중 하나를 수행할 때 현재 시작 프로젝트와 해당 종속성만 빌드됩니다.
 
-    -   메뉴 모음에서 **디버그** > **시작**(**F5**)을 선택합니다.
+    - 메뉴 모음에서 **디버그** > **시작**(**F5**)을 선택합니다.
 
-    -   메뉴 모음에서 **빌드** > **솔루션 빌드**(**Ctrl**+**Shift**+**B**)를 선택합니다.
+    - 메뉴 모음에서 **빌드** > **솔루션 빌드**(**Ctrl**+**Shift**+**B**)를 선택합니다.
 
     이 확인란의 선택을 취소하면 이전 명령 중 하나를 실행할 때 모든 프로젝트, 해당 종속성 및 솔루션 파일이 빌드됩니다. 이 확인란은 기본적으로 선택되어 있지 않습니다.
 
@@ -88,13 +87,13 @@ ms.locfileid: "51349272"
 
 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 프로젝트를 선택한 다음, 메뉴 모음에서 **빌드** > **프로젝트만 해당**, 다음 명령 중 하나를 차례로 선택합니다.
 
-- *ProjectName***만 빌드**
+- *ProjectName* **만 빌드**
 
-- *ProjectName***만 다시 빌드**
+- *ProjectName* **만 다시 빌드**
 
-- *ProjectName***만 정리**
+- *ProjectName* **만 정리**
 
-- *ProjectName***만 링크**
+- *ProjectName* **만 링크**
 
 이러한 명령은 프로젝트 종속성 또는 솔루션 파일을 빌드, 다시 빌드, 정리 또는 링크하지 않고 선택한 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 프로젝트에만 적용됩니다. 사용 중인 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 버전에 따라 **프로젝트만** 하위 메뉴에 추가 명령이 포함될 수 있습니다.
 

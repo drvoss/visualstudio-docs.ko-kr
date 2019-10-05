@@ -1,8 +1,6 @@
 ---
 title: 파일 열기 명령
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - file.openfile
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: a51a83fc-e3c6-4fa2-8882-8b7b6c0a6406
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4be55cb2108b24c7a8f912844b719e6aa3135a06
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: b76db52534f4c264e065152548d49f9773863a29
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62995236"
 ---
 # <a name="open-file-command"></a>파일 열기 명령
 
@@ -37,7 +35,7 @@ File.OpenFile filename [/e:editorname]
 
 `filename`
 
-필수. 열려는 파일의 전체 또는 부분 경로와 파일 이름입니다. 공백을 포함한 경로는 따옴표로 묶어야 합니다.
+필수 요소. 열려는 파일의 전체 또는 부분 경로와 파일 이름입니다. 공백을 포함한 경로는 따옴표로 묶어야 합니다.
 
 ## <a name="switches"></a>스위치
 
@@ -53,11 +51,11 @@ File.OpenFile filename [/e:editorname]
 /e:"Source Code (text) Editor"
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 경로를 입력하여 자동 완성에서 올바른 경로와 파일 이름을 찾으려고 합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 이 예제에서는 소스 코드 편집기에서 스타일 파일을 "Test1.css"를 엽니다.
 

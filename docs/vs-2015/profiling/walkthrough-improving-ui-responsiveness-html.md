@@ -1,14 +1,9 @@
 ---
-title: '연습: UI 응답성 개선(HTML) | Microsoft 문서'
-ms.custom: ''
+title: '연습: UI 응답성 개선 (HTML) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,31 +18,31 @@ ms.assetid: 7e5a2524-dbf5-4a40-b5d6-2d1ed7fff3de
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f0cf1b080a0e803beda6682265dc383dc43a33d0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7224dc1ddcffc203c930a3ead01c2f541af2122f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433168"
 ---
-# <a name="walkthrough-improving-ui-responsiveness-html"></a>연습: UI 응답성 개선(HTML)
+# <a name="walkthrough-improving-ui-responsiveness-html"></a>연습: UI 응답성 개선 (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 연습에서는 [HTML UI 응답성 프로파일러](../profiling/html-ui-responsiveness.md)를 사용하여 간단한 성능 문제를 식별하고 해결하는 과정을 안내합니다. 프로파일러는 JavaScript를 사용하는 Windows 유니버설 및 Windows 스토어 앱용 Visual Studio에서 사용 가능합니다. 이 시나리오에서는 DOM 요소를 너무 자주 업데이트하는 성능 테스트 앱을 만들고 프로파일러를 사용하여 이 문제를 식별 및 수정합니다.  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>성능 테스트 앱 만들기 및 실행  
   
-1.  Visual Studio에서 새 Windows 유니버설 JavaScript 프로젝트를 만듭니다. 이렇게 하려면 **파일/새로 만들기/프로젝트**를 선택합니다. 왼쪽 창에서 **JavaScript**를 선택한 다음 **Windows**, **Windows 10**을 선택하고 **유니버설** 또는 **Windows Phone**을 선택합니다.  
+1. Visual Studio에서 새 Windows 유니버설 JavaScript 프로젝트를 만듭니다. 이렇게 하려면 **파일/새로 만들기/프로젝트**를 선택합니다. 왼쪽 창에서 **JavaScript**를 선택한 다음 **Windows**, **Windows 10**을 선택하고 **유니버설** 또는 **Windows Phone**을 선택합니다.  
   
-2.  > [!IMPORTANT]
-    >  이 항목에 나와 있는 진단 결과가 Windows 8 앱에 대해 표시됩니다.  
+2. > [!IMPORTANT]
+    > 이 항목에 나와 있는 진단 결과가 Windows 8 앱에 대해 표시됩니다.  
   
-3.  가운데 창에서 **비어 있는 앱** 등 빈 프로젝트 템플릿 중 하나를 선택합니다.  
+3. 가운데 창에서 **비어 있는 앱** 등 빈 프로젝트 템플릿 중 하나를 선택합니다.  
   
-4.  **이름** 상자에 `JS_Perf_Tester`와 같은 이름을 지정한 다음 **확인**을 선택합니다.  
+4. **이름** 상자에 `JS_Perf_Tester`와 같은 이름을 지정한 다음 **확인**을 선택합니다.  
   
-5.  **솔루션 탐색기**에서 default.html을 열고 \<body> 태그 사이에 다음 코드를 붙여 넣습니다.  
+5. **솔루션 탐색기**에서 default.html을 열고 \<body> 태그 사이에 다음 코드를 붙여 넣습니다.  
   
     ```html  
     <div class="wrapper">  
@@ -55,7 +50,7 @@ ms.locfileid: "51791149"
     </div>  
     ```  
   
-6.  default.css를 열고 다음 CSS 코드를 추가합니다.  
+6. default.css를 열고 다음 CSS 코드를 추가합니다.  
   
     ```css  
     #content {  
@@ -64,7 +59,7 @@ ms.locfileid: "51791149"
     }  
     ```  
   
-7.  default.js를 열고 모든 코드를 이 코드로 바꿉니다.  
+7. default.js를 열고 모든 코드를 이 코드로 바꿉니다.  
   
     ```javascript  
     (function () {  
@@ -153,7 +148,7 @@ ms.locfileid: "51791149"
   
     ```  
   
-8.  F5 키를 선택하여 디버깅을 시작합니다. 페이지에 **값 대기** 단추가 나타나는지 확인합니다.  
+8. F5 키를 선택하여 디버깅을 시작합니다. 페이지에 **값 대기** 단추가 나타나는지 확인합니다.  
   
 9. **값 대기**를 선택하고 약 1초에 한 번씩 단추 텍스트 및 색이 업데이트됨을 확인합니다. 이것은 의도적인 것입니다.  
   
@@ -209,9 +204,9 @@ ms.locfileid: "51791149"
   
      데이터를 통해 다양한 정보를 수집할 수 있습니다. 예를 들어:  
   
-    -   스크립팅 이벤트로 식별하기 위해 색으로 구분된 각 `Timer` 이벤트에는 `document.createElement`에 대한 호출과 스타일 계산 및 `style.backgroundColor`와 `appendChild()`에 대한 호출이 포함됩니다.  
+    - 스크립팅 이벤트로 식별하기 위해 색으로 구분된 각 `Timer` 이벤트에는 `document.createElement`에 대한 호출과 스타일 계산 및 `style.backgroundColor`와 `appendChild()`에 대한 호출이 포함됩니다.  
   
-    -   선택한 약 1-2초 정도의 짧은 시간 동안 수많은 `Timer`, `Layout` 및 `Paint` 이벤트가 발생합니다. `Timer` 이벤트는 앱을 실행한 후 **값 대기** 단추를 선택할 때 시각적으로 표시되는 초당 한 번의 업데이트보다 훨씬 자주 발생합니다.  
+    - 선택한 약 1-2초 정도의 짧은 시간 동안 수많은 `Timer`, `Layout` 및 `Paint` 이벤트가 발생합니다. `Timer` 이벤트는 앱을 실행한 후 **값 대기** 단추를 선택할 때 시각적으로 표시되는 초당 한 번의 업데이트보다 훨씬 자주 발생합니다.  
   
 10. 조사하려면 왼쪽 아래 창에서 `Timer` 이벤트 중 하나에 대한 익명 함수 링크를 선택합니다. 다음 함수는 default.js에서 열립니다.  
   
@@ -230,7 +225,7 @@ ms.locfileid: "51791149"
   
 ### <a name="fixing-the-performance-issue"></a>성능 문제 해결  
   
-1.  `update()` 함수를 다음 코드로 바꿉니다.  
+1. `update()` 함수를 다음 코드로 바꿉니다.  
   
     ```javascript  
     function update() {  
@@ -245,10 +240,7 @@ ms.locfileid: "51791149"
   
      이 수정된 버전의 코드에는 이전 버전의 코드에서 누락된 1000밀리초의 지연이 포함되어 있으므로 기본 지연 값이 사용됩니다. 프로파일러 데이터에서 기본값은 0밀리초로 표시되는데, 이 때문에 `setValues()` 기능이 너무 자주 실행됩니다.  
   
-2.  HTML UI 응답성 프로파일러를 다시 실행하고 CPU 사용률 그래프를 확인합니다. 과도한 이벤트가 사라지고 CPU 사용률이 0 가까이 떨어진 것을 알 수 있습니다. 수정된 것입니다.  
+2. HTML UI 응답성 프로파일러를 다시 실행하고 CPU 사용률 그래프를 확인합니다. 과도한 이벤트가 사라지고 CPU 사용률이 0 가까이 떨어진 것을 알 수 있습니다. 수정된 것입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [HTML UI 응답성](../profiling/html-ui-responsiveness.md)
-
-
-

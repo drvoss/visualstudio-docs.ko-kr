@@ -8,15 +8,13 @@ helpviewer_keywords:
 ms.assetid: 175d1d58-f09a-4449-b132-a29a394a7c8e
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 51c9971d35eb5b7a369041eeaefd32fa00aa3571
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 466ea9a7e0b877af55219be497eefde963e80853
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949905"
 ---
 # <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>방법: 명령줄에서 사용할 부하 테스트 실행 설정 선택
 
@@ -28,11 +26,11 @@ ms.locfileid: "53051839"
 
 ## <a name="to-change-the-run-setting-from-the-command-line"></a>명령줄에서 실행 설정을 변경하려면
 
-1.  명령줄에서 다른 실행 설정을 사용하여 컨텍스트 매개 변수 전략을 활용하려면 다음 명령을 사용합니다.
+1. 명령줄에서 다른 실행 설정을 사용하여 컨텍스트 매개 변수 전략을 활용하려면 다음 명령을 사용합니다.
 
     `Set Test.UseRunSetting= CorporateStagingWebServer`
 
-2.  mstest를 사용하여 부하 테스트 실행
+2. mstest를 사용하여 부하 테스트 실행
 
     `mstest /testcontainer:loadtest1.loadtest`
 

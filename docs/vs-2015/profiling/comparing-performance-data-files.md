@@ -1,14 +1,9 @@
 ---
 title: 성능 데이터 파일 비교 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, comparing profiling tools report files
 - profiling tools reports, comparing
@@ -16,13 +11,13 @@ ms.assetid: e6fda144-f21d-4912-9d16-1b8d3555a210
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3aa37462915b3155a21248a968325a24b8da05bd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 132a3cb5f7d4257aa0728960cb5bfd50c5ee3066
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62420003"
 ---
 # <a name="comparing-performance-data-files"></a>성능 데이터 파일 비교
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "51741578"
   
  비교 보고서 뷰는 변경된 데이터의 테이블 뷰를 표시합니다. 테이블은 델타 또는 기준선으로부터 변경을 표시합니다. 델타는 이전 값, 기준 값, 새 분석의 결과 값 간의 차이를 확인하여 계산됩니다.  
   
- 프로파일러 데이터의 비교는 코드의 함수, 응용 프로그램의 모듈, 줄, IP(명령 포인터) 및 형식에 따라 달라질 수 있습니다.  
+ 프로파일러 데이터의 비교는 코드의 함수, 애플리케이션의 모듈, 줄, IP(명령 포인터) 및 형식에 따라 달라질 수 있습니다.  
   
  비교에 사용할 수 있는 프로파일링 데이터에는 열에 표시되는 정보가 포함됩니다. 이러한 열 이름에 대한 정의는 [성능 보고서 뷰](../profiling/performance-report-views.md)를 참조하세요.  
   
@@ -41,6 +36,3 @@ ms.locfileid: "51741578"
   
 ## <a name="in-this-section"></a>섹션 내용  
  [방법: 성능 데이터 파일 비교](../profiling/how-to-compare-performance-data-files.md)
-
-
-

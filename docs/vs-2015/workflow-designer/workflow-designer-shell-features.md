@@ -1,11 +1,8 @@
 ---
 title: 워크플로 디자이너 셸 기능 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - WFDShellFeatures.UI
@@ -13,15 +10,15 @@ ms.assetid: 14bfe312-9592-408e-92ce-e98585ad16e7
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 0f75d545055a4657ed4cefdbafe211ea2f34680f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f732fd66439897b67f150ddb9603b7d67003eff2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431377"
 ---
-# <a name="workflow-designer-shell-features"></a>워크플로 디자이너 셸 기능
+# <a name="workflow-designer-shell-features"></a>Workflow Designer 셸 기능
 [!INCLUDE[wfd1](../includes/wfd1-md.md)]는 디자이너 화면, 화면 위쪽의 이동 경로 탐색 막대, 화면 아래쪽의 셸 등 세 가지 주요 UI 영역으로 구성됩니다. 화면 위쪽에 있는 이동 경로 탐색 막대는 현재 루트 활동의 상위 목록을 표시하는 데 사용됩니다. [!INCLUDE[crdefault](../includes/crdefault-md.md)][방법: 이동 경로 탐색 사용](../workflow-designer/how-to-use-breadcrumb-navigation.md)합니다. 화면 중앙의 디자이너 화면은 워크플로를 작성하는 데 사용됩니다. 화면 아래쪽의 셸에는 현재 뷰를 관리하는 데 사용되는 단추가 포함되어 있습니다.  
   
 ## <a name="shell-features"></a>셸 기능  
@@ -31,7 +28,7 @@ ms.locfileid: "49275303"
  개요 맵은 모든 자식과 확장된 자식을 포함하여 현재의 이동 경로 탐색 막대에 해당하는 전체 활동을 작은 버전으로 표시합니다. 편집기 안에는 현재 표시된 활동 부분을 강조하는 주황색 테두리의 사각형 뷰포트가 있습니다. 이 사각형을 개요 맵 주위로 끌면 Workflow Designer가 스크롤되면서 편집기 뷰가 바뀝니다.  
   
 > [!NOTE]
->  [!INCLUDE[wfd2](../includes/wfd2-md.md)] 사용자 인터페이스는 가상화되어 있습니다. 활동 디자이너는 필요한 경우에만 렌더링됩니다. 디자이너 화면에 표시된 적이 없는 워크플로 부분이 있다면 그 부분은 개요 맵에서 흰색으로 나타납니다. 개요 맵 주위를 스크롤하면 워크플로가 완전히 그려집니다.  
+> [!INCLUDE[wfd2](../includes/wfd2-md.md)] 사용자 인터페이스는 가상화되어 있습니다. 활동 디자이너는 필요한 경우에만 렌더링됩니다. 디자이너 화면에 표시된 적이 없는 워크플로 부분이 있다면 그 부분은 개요 맵에서 흰색으로 나타납니다. 개요 맵 주위를 스크롤하면 워크플로가 완전히 그려집니다.  
   
 ## <a name="copying-or-saving-workflows-as-images"></a>워크플로를 이미지로 복사 또는 저장  
  워크플로를 비트맵 형식으로 복사하거나 비트맵 또는 벡터 형식으로 저장할 수 있습니다. 이미지를 복사하거나 저장하면 모든 자식과 확장된 자식을 포함하여 현재의 경로 탐색 루트의 전체 활동에 대한 뷰를 다른 프로그램으로 내보낼 수 있습니다.  

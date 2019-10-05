@@ -1,8 +1,6 @@
 ---
 title: 클래스 디자이너 오류
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: troubleshooting
 f1_keywords:
 - vs.classdesigner.CPlusPlusViewInDiagramNoTypeFound
@@ -27,15 +25,15 @@ helpviewer_keywords:
 ms.assetid: 79d70e70-704c-4255-ab68-c10d6949470e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 014497d0b32df61412820468a8f3f7e0b177c14f
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: aadc0cfb66226f463ff8a2049d4dbf81e7bcf62b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33963635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975554"
 ---
 # <a name="class-designer-errors"></a>클래스 디자이너 오류
 

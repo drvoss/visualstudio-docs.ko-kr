@@ -1,14 +1,9 @@
 ---
-title: '방법: 동일한 소스 파일을 다른 옵션을 사용하여 빌드 | Microsoft 문서'
-ms.custom: ''
+title: '방법: 다른 옵션을 사용하여 동일한 원본 파일 빌드 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - source files, building with different options
 - MSBuild, properties
@@ -18,18 +13,17 @@ ms.assetid: d14f1212-ddd9-434f-b138-f840011b0fb2
 caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c46d0577d19a3b3ad0fcd150f33d400e76d550d3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8bf76967363f4c0d97d93c895fbeb6209c8503f0
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831005"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821676"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>방법: 동일한 소스 파일을 다른 옵션을 사용하여 빌드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 프로젝트를 빌드할 때 같은 구성 요소를 서로 다른 빌드 옵션으로 자주 컴파일하게 됩니다. 예를 들어 기호 정보가 포함된 디버그 빌드를 만들거나 기호 정보가 없지만 최적화가 사용하도록 설정된 릴리스 빌드를 만들 수 있습니다. x86 또는 [!INCLUDE[vcprx64](../includes/vcprx64-md.md)] 등의 특정 플랫폼에서 실행되는 프로젝트를 빌드할 수도 있습니다. 이러한 모든 경우에 대부분의 빌드 옵션은 동일하게 유지되고, 빌드 구성을 제어하기 위해 몇 가지 옵션만 변경됩니다. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]를 통해 속성과 조건을 사용하여 다양한 빌드 구성을 만듭니다.  
   
 ## <a name="using-properties-to-modify-projects"></a>속성을 사용하여 프로젝트 수정  
@@ -39,7 +33,7 @@ ms.locfileid: "49831005"
   
 #### <a name="to-set-a-group-of-properties-based-on-another-property"></a>또 다른 속성을 기반으로 속성 그룹을 설정하려면  
   
--   다음과 같은 `PropertyGroup` 요소의 `Condition` 특성을 사용합니다.  
+- 다음과 같은 `PropertyGroup` 요소의 `Condition` 특성을 사용합니다.  
   
     ```  
     <PropertyGroup Condition="'$(Flavor)'=='DEBUG'">  
@@ -50,7 +44,7 @@ ms.locfileid: "49831005"
   
 #### <a name="to-define-a-property-based-on-another-property"></a>또 다른 속성을 기반으로 속성을 정의하려면  
   
--   다음과 같은 `Property` 요소의 `Condition` 특성을 사용합니다.  
+- 다음과 같은 `Property` 요소의 `Condition` 특성을 사용합니다.  
   
     ```  
     <DebugType Condition="'$(Flavor)'=='DEBUG'">full</DebugType>  
@@ -61,13 +55,13 @@ ms.locfileid: "49831005"
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>명령줄에서 프로젝트 속성을 설정하려면  
   
--   **/property** 스위치와 속성 및 속성 값을 함께 사용합니다. 예를 들어:  
+- **/property** 스위치와 속성 및 속성 값을 함께 사용합니다. 예를 들어:  
   
     ```  
     msbuild file.proj /property:Flavor=Debug  
     ```  
   
-     - 또는  
+     \- 또는 -  
   
     ```  
     Msbuild file.proj /p:Flavor=Debug  
@@ -81,13 +75,13 @@ ms.locfileid: "49831005"
   msbuild file.proj /p:Flavor=Debug;Platform=x86  
   ```  
   
-   - 또는-  
+   \- 또는-  
   
   ```  
   msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
   ```  
   
-  환경 변수는 속성으로 처리되고 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에 의해 자동으로 통합되기도 합니다. 환경 변수 사용에 대한 자세한 내용은 [방법: 빌드 시 환경 변수 사용](../msbuild/how-to-use-environment-variables-in-a-build.md)을 참조하세요.  
+  환경 변수는 속성으로 처리되고 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에 의해 자동으로 통합되기도 합니다. 환경 변수를 사용하는 방법에 대한 자세한 내용은 [방법: 환경 변수를 사용 하 여 빌드에서](../msbuild/how-to-use-environment-variables-in-a-build.md)합니다.  
   
   명령 줄에서 지정된 속성 값이 프로젝트 파일에서 같은 속성에 설정된 모든 값보다 우선 적용되고 프로젝트 파일의 값이 환경 변수의 값보다 우선 적용됩니다.  
   
@@ -191,10 +185,8 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 -->  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
 [MSBuild](msbuild.md)  
  [MSBuild 개념](../msbuild/msbuild-concepts.md)   
  [MSBuild 참조](../msbuild/msbuild-reference.md)   
  [Project 요소(MSBuild)](../msbuild/project-element-msbuild.md)
-
-

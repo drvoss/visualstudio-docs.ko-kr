@@ -1,8 +1,6 @@
 ---
 title: 웹 브라우저 표시 명령
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - view.showwebbrowser
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c6a4fbd6-8e9d-45cc-8b2f-93990d065e78
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87536df138de092948d845cf05d20af8e63ad68a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 14e2d6f2c753c56d1628d20e921b7dff2aa83471
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672147"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926015"
 ---
 # <a name="showwebbrowser-command"></a>웹 브라우저 표시 명령
 
@@ -33,24 +31,24 @@ View.ShowWebBrowser URL [/new][/ext]
 ```
 
 ## <a name="arguments"></a>인수
- `URL`
+`URL`
 
- 필수. 웹 사이트의 URL(Uniform Resource Locator)입니다.
+필수 요소. 웹 사이트의 URL(Uniform Resource Locator)입니다.
 
 ## <a name="switches"></a>스위치
- /new
+/new
 
- 선택 사항입니다. 웹 브라우저의 새 인스턴스에 페이지가 표시되도록 지정합니다.
+선택 사항입니다. 웹 브라우저의 새 인스턴스에 페이지가 표시되도록 지정합니다.
 
- /ext
+/ext
 
- 선택 사항입니다. IDE 외부의 기본 웹 브라우저에 페이지가 표시되도록 지정합니다.
+선택 사항입니다. IDE 외부의 기본 웹 브라우저에 페이지가 표시되도록 지정합니다.
 
 ## <a name="remarks"></a>설명
- **ShowWebBrowser** 명령의 별칭은 **navigate** 또는 **nav**입니다.
+**ShowWebBrowser** 명령의 별칭은 **navigate** 또는 **nav**입니다.
 
 ## <a name="example"></a>예
- 다음 예제에서는 IDE 외부의 웹 브라우저에서 Microsoft Docs 홈페이지를 표시합니다. 웹 브라우저의 인스턴스가 이미 열린 경우 이 인스턴스가 사용되고, 그렇지 않으면 새 인스턴스가 시작됩니다.
+다음 예제에서는 IDE 외부의 웹 브라우저에서 Microsoft Docs 홈페이지를 표시합니다. 웹 브라우저의 인스턴스가 이미 열린 경우 이 인스턴스가 사용되고, 그렇지 않으면 새 인스턴스가 시작됩니다.
 
 ```cmd
 >View.ShowWebBrowser https://docs.microsoft.com /ext

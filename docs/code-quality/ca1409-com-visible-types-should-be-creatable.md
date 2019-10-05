@@ -1,7 +1,6 @@
 ---
 title: 'CA1409: Com 노출 형식을 만들 수 있어야 합니다.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - ComVisibleTypesShouldBeCreatable
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9f59569b-de15-4a38-b7cb-cff152972243
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fd168c5174dcc403a38c6eb3e443c3711fce537
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 54630b7fba69ef96a2c08486e535ae45d8e614b8
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821690"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234760"
 ---
 # <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409: Com 노출 형식을 만들 수 있어야 합니다.
 
@@ -29,28 +28,28 @@ ms.locfileid: "53821690"
 |TypeName|ComVisibleTypesShouldBeCreatable|
 |CheckId|CA1409|
 |범주|Microsoft.Interoperability|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
- 특히 표시 구성 요소 개체 모델 (COM)에 표시 되는 참조 형식 매개 변수가 있는 public 생성자를 포함 하지만 (매개 변수가 없는) 공용 기본 생성자가 포함 되지 않습니다.
+COM (구성 요소 개체 모델)에 표시 되는 것으로 특별히 표시 된 참조 형식에 매개 변수가 있는 공용 생성자가 포함 되어 있지만 매개 변수가 없는 공용 생성자가 포함 되어 있지 않습니다.
 
 ## <a name="rule-description"></a>규칙 설명
- COM 클라이언트에서 공용 기본 생성자가 없는 형식을 만들 수 없습니다. 그러나 형식 여전히 액세스할 수 있습니다 COM 클라이언트에서 다른 방법 예를 들어 (메서드 호출의 반환 값)를 통해 클라이언트에 전달 및 형식을 만들 수 있는 경우.
+COM 클라이언트는 공용 기본 생성자가 없는 형식을 만들 수 없습니다. 그러나 형식을 만들어 클라이언트에 전달 (예: 메서드 호출의 반환 값을 통해) 할 수 있는 다른 방법이 있으면 COM 클라이언트에서 해당 형식을 계속 액세스할 수 있습니다.
 
- 규칙에서 파생 된 형식은 무시 <xref:System.Delegate?displayProperty=fullName>합니다.
+규칙은에서 <xref:System.Delegate?displayProperty=fullName>파생 된 형식을 무시 합니다.
 
- 기본적으로 다음은 COM에 표시: 어셈블리, public 형식, 공용 인스턴스 멤버를 공용 형식 및 공개 값 형식의 모든 멤버입니다.
+기본적으로 다음은 COM에 표시 됩니다. 어셈블리, public 형식, public 형식의 공용 인스턴스 멤버 및 public 값 형식의 모든 멤버입니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 공용 기본 생성자를 추가 하거나 제거 합니다 <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> 형식에서입니다.
+이 규칙 위반 문제를 해결 하려면 공용 기본 생성자를 추가 하거나 형식에서을 <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> 제거 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
- 다른 방법으로 만들 COM 클라이언트에 개체를 전달 하는 제공 되는 경우이 규칙에서 경고를 표시 하지 않아도 안전 합니다.
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
+개체를 만들어 COM 클라이언트에 전달 하는 다른 방법이 제공 되는 경우에는이 규칙에서 경고를 표시 하지 않는 것이 안전 합니다.
 
-## <a name="related-rules"></a>관련된 규칙
- [CA1017: ComVisibleAttribute로 어셈블리 표시](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+## <a name="related-rules"></a>관련 규칙
+[CA1017: ComVisibleAttribute로 어셈블리 표시](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [상호 운용할 .NET 형식의 정규화](/dotnet/framework/interop/qualifying-net-types-for-interoperation)
 - [비관리 코드와의 상호 운용](/dotnet/framework/interop/index)

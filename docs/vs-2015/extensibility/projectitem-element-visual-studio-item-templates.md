@@ -1,14 +1,9 @@
 ---
 title: ProjectItem 요소 (Visual Studio 항목 템플릿) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 9ed94112-0c38-49df-b728-0dd2d0d1eb47
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 44fe6613288cac93034dd32a3203f1bb73004f83
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4778603278bf07dc7b0a45544b4835d2ed2cbf8a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438353"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem 요소(Visual Studio 항목 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +26,11 @@ ms.locfileid: "51747949"
 항목 템플릿에 포함 된 파일을 지정 합니다.  
   
 > [!NOTE]
->  `ProjectItem` 요소는 프로젝트 또는 항목에 대 한 템플릿을 인지에 따라 다른 특성을 허용 합니다. 이 항목에 설명 합니다 `ProjectItem` 항목에 대 한 요소입니다. 에 대 한 설명은 합니다 `ProjectItem` 프로젝트 템플릿에 대 한 요소 참조 [ProjectItem 요소 (Visual Studio 프로젝트 템플릿)](../extensibility/projectitem-element-visual-studio-project-templates.md)합니다.  
+> `ProjectItem` 요소는 프로젝트 또는 항목에 대 한 템플릿을 인지에 따라 다른 특성을 허용 합니다. 이 항목에 설명 합니다 `ProjectItem` 항목에 대 한 요소입니다. 에 대 한 설명은 합니다 `ProjectItem` 프로젝트 템플릿에 대 한 요소 참조 [ProjectItem 요소 (Visual Studio 프로젝트 템플릿)](../extensibility/projectitem-element-visual-studio-project-templates.md)합니다.  
   
  \<VSTemplate>  
- \<TemplateContent >  
- \<ProjectItem >  
+ \<TemplateContent>  
+ \<ProjectItem>  
   
 ## <a name="syntax"></a>구문  
   
@@ -112,4 +107,3 @@ ms.locfileid: "51747949"
  [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)   
  [방법: 다중 파일 항목 템플릿 만들기](../ide/how-to-create-multi-file-item-templates.md)   
  [템플릿 매개 변수](../ide/template-parameters.md)
-

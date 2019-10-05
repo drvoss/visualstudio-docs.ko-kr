@@ -1,27 +1,22 @@
 ---
 title: Windows 탭, 창 속성 대화 상자 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Window Properties dialog box, Windows Tab
 ms.assetid: 9001342a-09a8-4f5e-b6ed-881a3b9d7246
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 04bba4490d5cfaebd6bb3d99ac7ad2911b3f548e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c474a85499b221a3ee1d5dfd6befb872f6710f63
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159688"
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>창 속성 대화 상자, 창 탭
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,6 +32,3 @@ ms.locfileid: "51774629"
 |**부모 창**|("None" 부모가 없는 경우)이이 창의 부모 창의 핸들입니다. 부모 창의 속성을 보려면이 항목을 선택 합니다.|  
 |**첫 번째 자식**|이 창의 첫 번째 자식 창의 순서로 (z 좌표) ("none" 자식 창이 없는 경우) 창이 트리 뷰에 표시 된 핸들입니다. 첫 번째 자식 창의 속성을 보려면이 값을 선택 합니다.|  
 |**소유자 창**|이 창의 소유자 창의 핸들입니다. 응용 프로그램의 주 창에는 일반적으로 예를 들어 ("none" 이면 소유자) 시스템 모달 대화 상자 창에서 소유 합니다. 소유자 창의 속성을 보려면이 항목을 선택 합니다.|
-
-
-

@@ -1,21 +1,20 @@
 ---
 title: IntelliTest 참조 설명서 | Microsoft 개발자 테스트 도구
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest Reference Manual, IntelliTest
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c8db2e17f18d96f8d8b6c9eee3261c9329ece0b6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d7258549b242091737e14e00980447eb48d5e78b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62551595"
 ---
 # <a name="intellitest-reference-manual"></a>IntelliTest 참조 설명서
 
@@ -31,11 +30,11 @@ ms.locfileid: "53926942"
     * [언어](introduction.md#language)
     * [상징적 지각](introduction.md#symbolic-reasoning)
     * [잘못된 스택 추적](introduction.md#incorrect-stack-traces)
-  - [추가 정보](introduction.md#further-reading)<p>&nbsp;</p>
+  - [추가 정보](introduction.md#further-reading)
 
 * **[IntelliTest 시작](getting-started.md)**
   - [중요한 특성](getting-started.md#important-attributes)
-  - [중요한 정적 도우미 클래스](getting-started.md#helper-classes)<p>&nbsp;</p>
+  - [중요한 정적 도우미 클래스](getting-started.md#helper-classes)
 
 * **[테스트 생성](test-generation.md)**
   - [테스트 생성기](test-generation.md#test-generators)
@@ -48,7 +47,7 @@ ms.locfileid: "53926942"
   - [사후 조건](test-generation.md#postcondition)
   - [테스트 실패](test-generation.md#test-failures)
   - [설치 및 해체](test-generation.md#setup-teardown)
-  - [추가 정보](test-generation.md#further-reading)<p>&nbsp;</p>
+  - [추가 정보](test-generation.md#further-reading)
 
 * **[입력 생성](input-generation.md)**
   - [제약 조건 해결기](input-generation.md#constraint-solver)
@@ -61,7 +60,7 @@ ms.locfileid: "53926942"
   - [구조체](input-generation.md#structs)
   - [배열 및 문자열](input-generation.md#arrays-and-strings)
   - [추가 입력 가져오기](input-generation.md#additional-inputs)
-  - [추가 정보](input-generation.md#further-reading)<p>&nbsp;</p>
+  - [추가 정보](input-generation.md#further-reading)
 
 * **[탐색 경계](exploration-bounds.md)**
   - [MaxConstraintSolverTime](exploration-bounds.md#maxconstraintsolvertime)
@@ -76,7 +75,7 @@ ms.locfileid: "53926942"
   - [MaxExceptions](exploration-bounds.md#maxexceptions)
   - [TestExcludePathBoundsExceeded](exploration-bounds.md#testexcludepathboundsexceeded)
   - [TestEmissionFilter](exploration-bounds.md#testemissionfilter)
-  - [TestEmissionBranchHits](exploration-bounds.md#testemissionbranchhits)<p>&nbsp;</p>
+  - [TestEmissionBranchHits](exploration-bounds.md#testemissionbranchhits)
 
 * **[특성 용어집](attribute-glossary.md)**
   - [PexAssumeNotNull](attribute-glossary.md#pexassumenotnull)
@@ -91,7 +90,7 @@ ms.locfileid: "53926942"
   - [PexAllowedException](attribute-glossary.md#pexallowedexception)
   - [PexAllowedExceptionFromAssembly](attribute-glossary.md#pexallowedexceptionfromassembly)
   - [PexAllowedExceptionFromType](attribute-glossary.md#pexallowedexceptionfromtype)
-  - [PexAllowedExceptionFromTypeUnderTest](attribute-glossary.md#pexallowedexceptionfromtypeundertest)<p>&nbsp;</p>
+  - [PexAllowedExceptionFromTypeUnderTest](attribute-glossary.md#pexallowedexceptionfromtypeundertest)
 
 * **[폭포수형 설정](settings-waterfall.md)**
 
@@ -100,7 +99,7 @@ ms.locfileid: "53926942"
   - [PexAssert](static-helper-classes.md#pexassert)
   - [PexChoose](static-helper-classes.md#pexchoose)
   - [PexObserve](static-helper-classes.md#pexobserve)
-  - [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue)<p>&nbsp;</p>
+  - [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue)
 
 * **[경고 및 오류](warnings-and-errors.md)**
   - [MaxBranches 초과](warnings-and-errors.md#maxbranches-exceeded)
@@ -122,7 +121,7 @@ ms.locfileid: "53926942"
   - [테스트 가능성 문제](warnings-and-errors.md#testability-issue)
   - [제한](warnings-and-errors.md#limitation)
   - [관촬된 호출 불일치](warnings-and-errors.md#observed-call-mismatch)
-  - [정적 필드에 저장된 값](warnings-and-errors.md#value-static-field)<p>&nbsp;</p>
+  - [정적 필드에 저장된 값](warnings-and-errors.md#value-static-field)
 
 ## <a name="got-feedback"></a>피드백이 있으신가요?
 

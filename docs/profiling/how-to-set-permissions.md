@@ -1,8 +1,6 @@
 ---
-title: '방법: 권한 설정 | Microsoft 문서'
-ms.custom: ''
+title: '방법: 권한 설정 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling, setting permissions
@@ -12,21 +10,21 @@ helpviewer_keywords:
 - performance tools, setting profiling permissions
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6acd54a140d3281f4fd539cc12d07adb11cfd6d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e40438b6b14414371adaba6cb7eafc6377ae1187
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62539187"
 ---
 # <a name="how-to-set-permissions"></a>방법: 권한 설정
 
 이 문서에서는 컴퓨터 관리자가 해당 컴퓨터에 대한 관리자 권한이 없는 사용자 또는 그룹에 프로파일링에 필요한 보안 권한을 부여하는 방식을 설명합니다.
 
-기본 보안 원칙에 의하면 응용 프로그램은 필요한 권한보다 크지 않은 권한으로 실행되어야 합니다. 이 원칙은 사용자에게도 적용됩니다. 사용자가 Administrators 그룹이 아닌 사용자 그룹의 구성원으로 로그온할 때 전체 권한을 가질 수 있다면 사용자에게 관리자 권한을 부여하면 안 됩니다. 첫 번째 절차 "사용자 권한을 가진 사용자 계정을 만들려면"에서는 사용자 그룹의 구성원에 대한 사용자 계정을 만드는 방법을 설명합니다.
+기본 보안 원칙에 의하면 애플리케이션은 필요한 권한보다 크지 않은 권한으로 실행되어야 합니다. 이 원칙은 사용자에게도 적용됩니다. 사용자가 Administrators 그룹이 아닌 사용자 그룹의 구성원으로 로그온할 때 전체 권한을 가질 수 있다면 사용자에게 관리자 권한을 부여하면 안 됩니다. 첫 번째 절차 "사용자 권한을 가진 사용자 계정을 만들려면"에서는 사용자 그룹의 구성원에 대한 사용자 계정을 만드는 방법을 설명합니다.
 
 사용자 그룹의 구성원은 팀의 다른 구성원과 공유되는 디스크의 폴더 및 파일에 대한 액세스 권한이 필요합니다. 두 번째 절차 "공유된 프로젝트 파일에 대한 액세스 권한을 부여하려면"에서는 이 액세스 권한을 부여하는 방법을 설명합니다.
 
@@ -84,7 +82,7 @@ ms.locfileid: "49897385"
 2. 디렉터리를 다음으로 변경합니다.
 
     ```cmd
-    <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools
+    <drive>:\Program Files\Microsoft Visual Studio 14\Team Tools\Performance Tools
     ```
 
 3. 다음 명령을 실행합니다.
@@ -123,6 +121,6 @@ ms.locfileid: "49897385"
 
 ## <a name="see-also"></a>참고 항목
 
-[성능 세션 구성](../profiling/configuring-performance-sessions.md)  
-[VSPerfCmd](../profiling/vsperfcmd.md)  
-[프로파일링 및 Windows Vista 보안](../profiling/profiling-and-windows-vista-security.md)
+[성능 세션 구성](../profiling/configuring-performance-sessions.md)
+[VSPerfCmd](../profiling/vsperfcmd.md)
+[프로 파일링 및 Windows Vista 보안](../profiling/profiling-and-windows-vista-security.md)

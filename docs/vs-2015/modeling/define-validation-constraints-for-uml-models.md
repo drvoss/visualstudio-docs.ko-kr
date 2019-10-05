@@ -1,25 +1,22 @@
 ---
 title: UML 모델에 대 한 유효성 검사 제약 조건 정의 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, validation constraints
 ms.assetid: 87b3b0da-122d-4121-9318-200c38ff49d0
 caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6647d37636ed0e79d817113e388ae5df23a88a29
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4107a5fb88392f9d02cca8f41b0f53d5844d9490
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422719"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>UML 모델에 대한 유효성 검사 제약 조건 정의
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +42,9 @@ ms.locfileid: "51782416"
 ## <a name="defining-a-validation-extension"></a>유효성 검사 확장 정의  
  UML 디자이너에 대한 유효성 검사 확장을 만들려면 유효성 검사 제약 조건을 정의하는 클래스를 만들고 해당 클래스를 VSIX(Visual Studio Integration Extension)에 포함해야 합니다. VSIX는 제약 조건을 설치할 수 있는 컨테이너 역할을 합니다. 유효성 검사 확장을 정의하는 대신 다음 두 가지 방법을 사용할 수 있습니다.  
   
--   **프로젝트 템플릿을 사용 하 여 자체 VSIX에서 유효성 검사 확장을 만듭니다.** 이는 더 빠른 방법입니다. 유효성 검사 제약 조건을 메뉴 명령, 사용자 지정 도구 상자 또는 제스처 처리기와 같은 다른 형식 확장과 결합하지 않으려면 이 방법을 사용합니다. 하나의 클래스에서 여러 제약 조건을 정의할 수 있습니다.  
+- **프로젝트 템플릿을 사용 하 여 자체 VSIX에서 유효성 검사 확장을 만듭니다.** 이는 더 빠른 방법입니다. 유효성 검사 제약 조건을 메뉴 명령, 사용자 지정 도구 상자 또는 제스처 처리기와 같은 다른 형식 확장과 결합하지 않으려면 이 방법을 사용합니다. 하나의 클래스에서 여러 제약 조건을 정의할 수 있습니다.  
   
--   **별도 유효성 검사 클래스 및 VSIX 프로젝트를 만듭니다.** 여러 확장 형식을 같은 VSIX로 결합하려면 이 방법을 사용합니다. 예를 들어 메뉴 명령에서 모델이 특정 제약 조건을 따르도록 요구하면 유효성 검사 방법과 동일한 VSIX에 해당 제스처 처리기를 포함할 수 있습니다.  
+- **별도 유효성 검사 클래스 및 VSIX 프로젝트를 만듭니다.** 여러 확장 형식을 같은 VSIX로 결합하려면 이 방법을 사용합니다. 예를 들어 메뉴 명령에서 모델이 특정 제약 조건을 따르도록 요구하면 유효성 검사 방법과 동일한 VSIX에 해당 제스처 처리기를 포함할 수 있습니다.  
   
 #### <a name="to-create-a-validation-extension-in-its-own-vsix"></a>자체 VSIX에서 유효성 검사 확장을 만들려면  
   
@@ -58,7 +55,7 @@ ms.locfileid: "51782416"
     자세한 내용은 [유효성 검사 제약 조건 평가](#Implementing)를 참조하세요.  
   
    > [!IMPORTANT]
-   >  **.cs** 파일에 다음 `using` 문이 포함되어 있는지 확인합니다.  
+   > **.cs** 파일에 다음 `using` 문이 포함되어 있는지 확인합니다.  
    >   
    >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
   
@@ -84,29 +81,29 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 #### <a name="to-create-a-separate-validation-constraint-in-a-class-library-project"></a>클래스 라이브러리 프로젝트에서 별도 유효성 검사 제약 조건을 만들려면  
   
-1.  클래스 라이브러리 프로젝트를 만들어 기존 VSIX 솔루션에 추가하거나 새 솔루션을 만듭니다.  
+1. 클래스 라이브러리 프로젝트를 만들어 기존 VSIX 솔루션에 추가하거나 새 솔루션을 만듭니다.  
   
-    1.  **파일** 메뉴에서 **새로 만들기**, **프로젝트**를 차례로 선택합니다.  
+    1. **파일** 메뉴에서 **새로 만들기**, **프로젝트**를 차례로 선택합니다.  
   
-    2.  **설치된 템플릿**에서 **Visual C#** 또는 **Visual Basic**을 확장하고 가운데 열에서 **클래스 라이브러리**를 선택합니다.  
+    2. **설치된 템플릿**에서 **Visual C#** 또는 **Visual Basic**을 확장하고 가운데 열에서 **클래스 라이브러리**를 선택합니다.  
   
-2.  솔루션에 포함되어 있지 않으면 VSIX 프로젝트를 만듭니다.  
+2. 솔루션에 포함되어 있지 않으면 VSIX 프로젝트를 만듭니다.  
   
-    1.  **솔루션 탐색기**의 솔루션 바로 가기 메뉴에서  **추가**, **새 프로젝트**를 선택합니다.  
+    1. **솔루션 탐색기**의 솔루션 바로 가기 메뉴에서  **추가**, **새 프로젝트**를 선택합니다.  
   
-    2.  **설치된 템플릿**에서 **Visual C#** 또는 **Visual Basic**을 확장한 다음 **확장성**을 선택합니다. 가운데 열에서 **VSIX 프로젝트**를 클릭합니다.  
+    2. **설치된 템플릿**에서 **Visual C#** 또는 **Visual Basic**을 확장한 다음 **확장성**을 선택합니다. 가운데 열에서 **VSIX 프로젝트**를 클릭합니다.  
   
-3.  VSIX 프로젝트를 솔루션의 시작 프로젝트로 설정합니다.  
+3. VSIX 프로젝트를 솔루션의 시작 프로젝트로 설정합니다.  
   
-    -   솔루션 탐색기의 VSIX 프로젝트 바로 가기 메뉴에서 **시작 프로젝트로 설정**을 선택합니다.  
+    - 솔루션 탐색기의 VSIX 프로젝트 바로 가기 메뉴에서 **시작 프로젝트로 설정**을 선택합니다.  
   
-4.  **source.extension.vsixmanifest**의 **콘텐츠**에서 클래스 라이브러리 프로젝트를 MEF 구성 요소로 추가합니다.  
+4. **source.extension.vsixmanifest**의 **콘텐츠**에서 클래스 라이브러리 프로젝트를 MEF 구성 요소로 추가합니다.  
   
-    1.  **메타데이터** 탭에서 VSIX 이름을 설정합니다.  
+    1. **메타데이터** 탭에서 VSIX 이름을 설정합니다.  
   
-    2.  **설치 대상** 탭에서 Visual Studio 버전을 대상으로 설정합니다.  
+    2. **설치 대상** 탭에서 Visual Studio 버전을 대상으로 설정합니다.  
   
-    3.  **자산** 탭에서 **새로 만들기**를 선택하고 대화 상자에서 다음을 설정합니다.  
+    3. **자산** 탭에서 **새로 만들기**를 선택하고 대화 상자에서 다음을 설정합니다.  
   
          **형식** = **MEF 구성 요소**  
   
@@ -116,9 +113,9 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 #### <a name="to-define-the-validation-class"></a>유효성 검사 클래스를 정의하려면  
   
-1.  유효성 검사 프로젝트 템플릿에서 자체 VSIX를 사용하여 유효성 검사 클래스를 만든 경우에는 이 절차가 필요하지 않습니다.  
+1. 유효성 검사 프로젝트 템플릿에서 자체 VSIX를 사용하여 유효성 검사 클래스를 만든 경우에는 이 절차가 필요하지 않습니다.  
   
-2.  유효성 검사 클래스 프로젝트에서 다음 [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] 어셈블리에 대한 참조를 추가합니다.  
+2. 유효성 검사 클래스 프로젝트에서 다음 [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] 어셈블리에 대한 참조를 추가합니다.  
   
      `Microsoft.VisualStudio.Modeling.Sdk.[version]`  
   
@@ -128,11 +125,11 @@ using Microsoft.VisualStudio.Uml.Classes;
   
      `System.ComponentModel.Composition`  
   
-3.  다음 예제와 비슷한 코드를 포함하는 파일을 클래스 라이브러리 프로젝트에 추가합니다.  
+3. 다음 예제와 비슷한 코드를 포함하는 파일을 클래스 라이브러리 프로젝트에 추가합니다.  
   
-    -   각 유효성 검사 제약 조건은 특정 특성으로 표시된 메서드 내에 포함됩니다. 메서드는 모델 요소 형식의 매개 변수를 허용합니다. 유효성 검사가 호출되면 유효성 검사 프레임워크가 해당 매개 변수 형식을 준수하는 모든 모델 요소에 모든 유효성 검사 메서드를 적용합니다.  
+    - 각 유효성 검사 제약 조건은 특정 특성으로 표시된 메서드 내에 포함됩니다. 메서드는 모델 요소 형식의 매개 변수를 허용합니다. 유효성 검사가 호출되면 유효성 검사 프레임워크가 해당 매개 변수 형식을 준수하는 모든 모델 요소에 모든 유효성 검사 메서드를 적용합니다.  
   
-    -   이러한 메서드는 임의 클래스와 네임스페이스에 배치할 수 있습니다. 원하는 대로 메서드를 변경합니다.  
+    - 이러한 메서드는 임의 클래스와 네임스페이스에 배치할 수 있습니다. 원하는 대로 메서드를 변경합니다.  
   
     ```  
     using System.Collections.Generic;  
@@ -181,52 +178,52 @@ using Microsoft.VisualStudio.Uml.Classes;
     }  
     ```  
   
-##  <a name="Executing"></a> 유효성 검사 제약 조건 실행  
+## <a name="Executing"></a> 유효성 검사 제약 조건 실행  
  테스트를 위해 디버그 모드에서 유효성 검사 메서드를 실행합니다.  
   
 #### <a name="to-test-the-validation-constraint"></a>유효성 검사 제약 조건을 테스트하려면  
   
-1.  **F5**키를 누르거나, **디버그** 메뉴에서 **디버깅 시작**을 선택합니다.  
+1. **F5**키를 누르거나, **디버그** 메뉴에서 **디버깅 시작**을 선택합니다.  
   
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 의 실험적 인스턴스가 시작됩니다.  
   
-     **문제 해결**: 새 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 가 시작되지 않는 경우:  
+     **문제 해결**: 새 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 시작 되지 않습니다.  
   
-    -   프로젝트가 두 개 이상 있으면 VSIX 프로젝트가 솔루션의 시작 프로젝트로 설정되었는지 확인합니다.  
+    - 프로젝트가 두 개 이상 있으면 VSIX 프로젝트가 솔루션의 시작 프로젝트로 설정되었는지 확인합니다.  
   
-    -   솔루션 탐색기의 시작 또는 전용 프로젝트 바로 가기 메뉴에서 **속성**을 선택합니다. 프로젝트 속성 편집기에서 **디버그** 탭을 선택합니다. 시작 외부 프로그램** 필드의 문자열이 보통 다음과 같은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 전체 경로 이름인지 확인합니다.  
+    - 솔루션 탐색기의 시작 또는 전용 프로젝트 바로 가기 메뉴에서 **속성**을 선택합니다. 프로젝트 속성 편집기에서 **디버그** 탭을 선택합니다. **시작 외부 프로그램** 필드의 문자열이 보통 다음과 같은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 전체 경로 이름인지 확인합니다.  
   
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
-2.  실험적 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 모델링 프로젝트를 열거나 만들고 모델링 다이어그램을 열거나 만듭니다.  
+2. 실험적 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 모델링 프로젝트를 열거나 만들고 모델링 다이어그램을 열거나 만듭니다.  
   
-3.  이전 섹션에서 제공된 샘플 제약 조건에 대해 테스트를 설정하려면  
+3. 이전 섹션에서 제공된 샘플 제약 조건에 대해 테스트를 설정하려면  
   
-    1.  클래스 다이어그램을 엽니다.  
+    1. 클래스 다이어그램을 엽니다.  
   
-    2.  클래스를 만들고 동일한 이름을 가진 두 개의 특성을 추가합니다.  
+    2. 클래스를 만들고 동일한 이름을 가진 두 개의 특성을 추가합니다.  
   
-4.  다이어그램에 있는 바로 가기 메뉴에서 **유효성 검사**를 선택합니다.  
+4. 다이어그램에 있는 바로 가기 메뉴에서 **유효성 검사**를 선택합니다.  
   
-5.  모델의 모든 오류가 오류 창에 보고됩니다.  
+5. 모델의 모든 오류가 오류 창에 보고됩니다.  
   
-6.  오류 보고서를 두 번 클릭합니다. 보고서에 언급된 요소가 화면에 표시되는 경우 강조 표시됩니다.  
+6. 오류 보고서를 두 번 클릭합니다. 보고서에 언급된 요소가 화면에 표시되는 경우 강조 표시됩니다.  
   
-     **문제 해결**: **유효성 검사** 명령이 메뉴에 표시되지 않는 경우 다음을 확인합니다.  
+     **문제 해결**: 경우는 **유효성 검사** 명령이 나타나지 않으면 메뉴에 있는지 확인 합니다.  
   
-    -   유효성 검사 프로젝트가 VSIX 프로젝트에서 **source.extensions.manifest** 의 **자산** 탭에 MEF 구성 요소로 나열됩니다.  
+    - 유효성 검사 프로젝트가 VSIX 프로젝트에서 **source.extensions.manifest** 의 **자산** 탭에 MEF 구성 요소로 나열됩니다.  
   
-    -   올바른 `Export` 및 `ValidationMethod` 특성이 유효성 검사 메서드에 연결되었습니다.  
+    - 올바른 `Export` 및 `ValidationMethod` 특성이 유효성 검사 메서드에 연결되었습니다.  
   
-    -   `ValidationCategories.Menu` 에 대 한 인수에 포함 되는 `ValidationMethod` 특성 및 해당 논리 OR을 사용 하 여 다른 값으로 구성 됩니다 (&#124;).  
+    - `ValidationCategories.Menu` 에 대 한 인수에 포함 되는 `ValidationMethod` 특성 및 해당 논리 OR을 사용 하 여 다른 값으로 구성 됩니다 (&#124;).  
   
-    -   모든 `Import` 및 `Export` 특성의 매개 변수가 유효합니다.  
+    - 모든 `Import` 및 `Export` 특성의 매개 변수가 유효합니다.  
   
-##  <a name="Implementing"></a> 제약 조건 평가  
+## <a name="Implementing"></a> 제약 조건 평가  
  유효성 검사 메서드는 적용할 유효성 검사 제약 조건이 true 또는 false인지를 확인해야 합니다. true이면 아무 작업도 수행하면 안 됩니다. false이면 `ValidationContext` 매개 변수가 제공하는 메서드를 사용하여 오류를 보고해야 합니다.  
   
 > [!NOTE]
->  유효성 검사 메서드는 모델을 변경하면 안 됩니다. 제약 조건을 실행되는 시기 또는 순서에 대한 보장은 없습니다. 유효성 검사 실행 내에서 유효성 검사 메서드의 연속 실행 간에 정보를 전달해야 하는 경우 [여러 유효성 검사 조정](#ContextCache)에서 설명된 컨텍스트 캐시를 사용할 수 있습니다.  
+> 유효성 검사 메서드는 모델을 변경하면 안 됩니다. 제약 조건을 실행되는 시기 또는 순서에 대한 보장은 없습니다. 유효성 검사 실행 내에서 유효성 검사 메서드의 연속 실행 간에 정보를 전달해야 하는 경우 [여러 유효성 검사 조정](#ContextCache)에서 설명된 컨텍스트 캐시를 사용할 수 있습니다.  
   
  예를 들어 모든 형식(클래스, 인터페이스 또는 열거자)의 이름이 3자 이상인지 확인하려는 경우 다음 메서드를 사용할 수 있습니다.  
   
@@ -278,7 +275,7 @@ public void ValidateSomething
   
 - `elementsWithError`는 모델의 요소를 식별합니다. 사용자가 오류 보고서를 두 번 클릭하면 이 요소를 나타내는 모양이 선택됩니다.  
   
-  `LogError(),` `LogWarning()` 및 `LogMessage()`는 오류 목록의 서로 다른 섹션에 메시지를 배치합니다.  
+  `LogError(),` `LogWarning()` 및 `LogMessage()` 오류 목록의 서로 다른 섹션에 메시지를 배치 합니다.  
   
 ## <a name="how-validation-methods-are-applied"></a>유효성 검사 메서드가 적용되는 방법  
  유효성 검사는 클래스의 특성 및 작업의 매개 변수와 같은 더 큰 요소의 부분과 관계를 포함하여 모델의 모든 요소에 적용됩니다.  
@@ -352,7 +349,7 @@ IUseCase useCase = useCaseShape.Element;
 context.LogError(... , usecase);  
 ```  
   
-###  <a name="ContextCache"></a> 여러 유효성 검사 조정  
+### <a name="ContextCache"></a> 여러 유효성 검사 조정  
  예를 들어 사용자가 다이어그램 메뉴에서 유효성 검사를 호출하면 각 유효성 검사 메서드가 각 모델 요소에 적용됩니다. 즉, 유효성 검사 프레임워크의 단일 호출에서 동일한 메서드가 여러 요소에 여러 번 적용될 수 있습니다.  
   
  이 경우 요소 간의 관계를 처리하는 유효성 검사에서 문제가 발생합니다. 예를 들어 사용 사례에서 시작되고 **include** 관계를 트래버스하여 루프가 없는지 확인하는 유효성 검사를 작성할 수 있습니다. 그러나 많은 **include** 링크를 포함하는 모델의 각 사용 사례에 메서드가 적용되는 경우 모델의 동일한 영역을 반복적으로 처리할 가능성이 큽니다.  
@@ -366,26 +363,26 @@ context.LogError(... , usecase);
 |`context.GetValue<T>(name)`|값을 가져옵니다.|  
 |`Context.GetValue<T>()`|지정된 형식의 값을 가져옵니다.|  
   
-##  <a name="Installing"></a> 설치 및 확장 제거  
+## <a name="Installing"></a> 설치 및 확장 제거  
  사용 중인 컴퓨터 및 다른 컴퓨터에서 모두 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 확장을 설치할 수 있습니다.  
   
 #### <a name="to-install-an-extension"></a>확장을 설치하려면  
   
-1.  컴퓨터에서 VSIX 프로젝트를 통해 작성된 **.vsix** 파일을 찾습니다.  
+1. 컴퓨터에서 VSIX 프로젝트를 통해 작성된 **.vsix** 파일을 찾습니다.  
   
-    1.  **솔루션 탐색기**의 VSIX 프로젝트 바로 가기 메뉴에서 **Windows 탐색기에서 폴더 열기**를 선택합니다.  
+    1. **솔루션 탐색기**의 VSIX 프로젝트 바로 가기 메뉴에서 **Windows 탐색기에서 폴더 열기**를 선택합니다.  
   
-    2.  파일을 찾습니다 **bin\\\*\\**_YourProject_**.vsix**  
+    2. 파일을 찾습니다 **bin\\\*\\** _YourProject_ **.vsix**  
   
-2.  확장을 설치할 대상 컴퓨터에 **.vsix** 파일을 복사합니다. 이 컴퓨터는 사용 중인 컴퓨터이거나 다른 컴퓨터일 수 있습니다.  
+2. 확장을 설치할 대상 컴퓨터에 **.vsix** 파일을 복사합니다. 이 컴퓨터는 사용 중인 컴퓨터이거나 다른 컴퓨터일 수 있습니다.  
   
-    -   대상 컴퓨터의 버전 중 하나가 있어야 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 에서 지정한 **source.extension.vsixmanifest**합니다.  
+    - 대상 컴퓨터의 버전 중 하나가 있어야 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 에서 지정한 **source.extension.vsixmanifest**합니다.  
   
-3.  대상 컴퓨터에서 **.vsix** 파일을 엽니다.  
+3. 대상 컴퓨터에서 **.vsix** 파일을 엽니다.  
   
      **Visual Studio 확장 설치 관리자** 에서 확장을 열고 설치합니다.  
   
-4.  [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]를 시작하거나 다시 시작합니다.  
+4. [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]를 시작하거나 다시 시작합니다.  
   
 #### <a name="to-uninstall-an-extension"></a>확장을 제거하려면  
   
@@ -397,9 +394,9 @@ context.LogError(... , usecase);
   
    드물게 결함이 있는 확장은 로드되지 않고 오류 창에 보고서를 생성하지만 확장 관리자에 나타나지 않습니다. 다음 위치에서 파일을 삭제 하 여 확장을 제거할 수는 경우 여기서 *% LocalAppData %* 일반적으로 *DriveName*: \Users\\*사용자이름*\AppData\Local:  
   
-   *% LocalAppData %* **\Microsoft\VisualStudio\\[version] \Extensions**  
+   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**  
   
-##  <a name="Example"></a> 예제  
+## <a name="Example"></a> 예제  
  이 예제에서는 요소 간 종속성 관계에서 루프를 찾습니다.  
   
  저장 시 및 유효성 검사 메뉴 명령에 의해 유효성을 검사합니다.  
@@ -479,6 +476,3 @@ private bool NoDependencyLoops(ValidationContext context,
 ## <a name="see-also"></a>참고 항목  
  [모델링 확장 정의 및 설치](../modeling/define-and-install-a-modeling-extension.md)   
  [UML API를 사용한 프로그래밍](../modeling/programming-with-the-uml-api.md)
-
-
-

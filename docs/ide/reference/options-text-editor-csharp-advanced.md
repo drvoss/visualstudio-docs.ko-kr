@@ -1,23 +1,21 @@
 ---
 title: 옵션, 텍스트 편집기, C#, 고급
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7cfbc6d57e5bfd3c6a8f317967448039a9b3f5e4
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 010f2a2e6dc163f24a29e8e352b21d8ef8d72b48
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670717"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62811834"
 ---
 # <a name="options-text-editor-c-advanced"></a>옵션, 텍스트 편집기, C#, 고급
 
@@ -48,7 +46,7 @@ ms.locfileid: "50670717"
    using Newtonsoft.Json;
    using System;
    ```
-   
+
    정렬 이후:
 
    ```csharp
@@ -59,7 +57,7 @@ ms.locfileid: "50670717"
    using FluentValidation;
    using Newtonsoft.Json;
    ```
-   
+
 - Using 지시문 그룹 구분
 
    선택한 경우, 마우스 오른쪽 단추 클릭 메뉴의 **using 제거 및 정렬** 명령은 동일한 루트 네임스페이스를 가진 지시문 그룹 사이에 빈 줄을 삽입하여 `using` 지시문을 구분합니다.
@@ -74,28 +72,28 @@ ms.locfileid: "50670717"
    using Newtonsoft.Json;
    using System;
    ```
-   
+
    정렬 이후:
-   
+
    ```csharp
    using AutoMapper;
-   
+
    using FluentValidation;
-   
+
    using Newtonsoft.Json;
-   
+
    using System;
    using System.Collections.Generic;
    using System.Linq;
    ```
-   
-- 참조 어셈블리의 형식에 대한 using 제안 
-- NuGet 패키지의 형식에 대한 using 제안 
+
+- 참조 어셈블리의 형식에 대한 using 제안
+- NuGet 패키지의 형식에 대한 using 제안
 
    이러한 옵션을 선택한 경우 [빠른 작업](../quick-actions.md)을 사용하여 NuGet 패키지를 설치하고 참조되지 않은 형식에 대한 `using` 지시문을 추가할 수 있습니다.
 
    ![Visual Studio의 NuGet 패키지 설치 빠른 작업](media/nuget-lightbulb.png)
-  
+
 ## <a name="highlighting"></a>강조 표시
 
 - 커서 아래의 기호에 대한 참조 강조
@@ -110,13 +108,17 @@ ms.locfileid: "50670717"
 
 - 프로시저 줄 구분선 표시
 
-   텍스트 편집기가 프로시저의 시각적 범위를 표시합니다. 다음 표에 나열된 위치에서 프로젝트의 *.vb* 소스 파일에 줄이 그려집니다.
+   텍스트 편집기가 프로시저의 시각적 범위를 표시합니다. 다음 표에 나열된 위치에서 프로젝트의 *.cs* 소스 파일에 줄이 그려집니다.
 
-   |.vb 소스 파일 내 위치|선 위치의 예|
+   |.cs 소스 파일 내 위치|선 위치의 예|
    |---------------------------------|------------------------------|
    |블록 선언 구문의 닫기 뒤|-   클래스, 구조체, 모듈, 인터페이스 또는 열거형의 끝<br />-   속성, 함수 또는 하위 뒤<br />-   속성에서 get 및 set 절 사이 아님|
    |일련의 한 줄 구문 뒤|-   가져오기 문 뒤, 클래스 파일에서 형식 정의 앞<br />-   클래스에서 선언된 모든 프로시저 뒤, 프로시저 앞|
    |한 줄 선언 뒤(블록 수준 선언 외)|-   가져오기 문, 상속 문, 변수 선언, 이벤트 선언, 대리자 선언 및 DLL 선언 문에 이어서|
+
+## <a name="block-structure-guides"></a>블록 구조 가이드
+
+코드에서 중괄호(**{}**) 사이에 세로 점선을 표시하려면 이 확인란을 선택합니다. 그러면 선언 수준 및 코드 수준 구문의 개별 코드 블록을 쉽게 확인할 수 있습니다.
 
 ## <a name="editor-help"></a>편집기 도움말
 

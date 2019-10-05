@@ -2,7 +2,6 @@
 title: IDebugApplication::HandleBreakPoint | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16b05533c566cb90529766d81fb7197dbc284664
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
-ms.translationtype: MT
+ms.openlocfilehash: 5e3444e6eedde9576216552e41abb0e97aafa2d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412387"
 ---
 # <a name="idebugapplicationhandlebreakpoint"></a>IDebugApplication::HandleBreakPoint
-현재 스레드를 차단 하 고 IDE 디버거 중단점에 대 한 알림을 보냅니다.  
+현재 스레드를 차단 하 고 디버거 IDE 중단점에 대 한 알림을 보냅니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT HandleBreakPoint(  
    BREAKREASON         br,  
    BREAKRESUMEACTION*  pbra  
@@ -39,7 +38,7 @@ HRESULT HandleBreakPoint(
   
 #### <a name="parameters"></a>매개 변수  
  `br`  
- [in] 나누기에 대 한 설명입니다.  
+ [in] 중단 된 이유입니다.  
   
  `pbra`  
  [out] 디버거에서 응용 프로그램을 다시 시작 될 때 수행할 동작입니다.  
@@ -52,12 +51,12 @@ HRESULT HandleBreakPoint(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 중단점에 도달 하는 스레드의 컨텍스트에서이 메서드를 호출 하는 언어 엔진입니다. 이 메서드는 현재 스레드를 차단 하 고 디버거 IDE에 중단점 알림을 보냅니다. 디버거에서 응용 프로그램을 다시 시작 될 때의 `pbra` 매개 변수는 수행할 작업을 지정 합니다.  
+ 언어 엔진의 중단점에 도달 하는 스레드 컨텍스트에서이 메서드를 호출 합니다. 이 메서드는 현재 스레드를 차단 하 고 디버거 IDE에 중단점 알림을 보냅니다. 디버거에서 응용 프로그램을 다시 시작 될 때를 `pbra` 매개 변수는 수행할 작업을 지정 합니다.  
   
 > [!NOTE]
->  스레드 스택 열거와 같은 프레임 또는 중단점 중 포함 된 식을 평가 하는 작업을 수행 하 여 언어 엔진을 호출할 수 있습니다.  
+> 언어 엔진 프레임 또는 중단점 중 식을 평가할 스택 열거와 같은 작업을 수행 하는 스레드에서 호출할 수 있습니다.  
   
- 이 메서드를 사용 하면 `IApplicationDebugger::onHandleBreakPoint` 를 호출할 수 있습니다.  
+ 이 메서드를 사용 하면 `IApplicationDebugger::onHandleBreakPoint` 호출할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugApplication 인터페이스](../../winscript/reference/idebugapplication-interface.md)   

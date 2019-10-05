@@ -1,14 +1,9 @@
 ---
 title: 편집기 사용자 지정 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - editors, Code Editor customization
 - Code Editor, customizing
@@ -16,13 +11,13 @@ ms.assetid: 7f4eee2a-586f-49ae-a763-4d9c0ac5bc71
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f0b9d01c6582d1bf67b0b33e5372d94700a62587
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 54e2e44650179cafb4fd4cc9169ac27810bbdf91
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259328"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183340"
 ---
 # <a name="customizing-the-editor"></a>편집기 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "49259328"
 ## <a name="in-this-section"></a>섹션 내용  
  다음 항목에서는 텍스트 및 코드 편집기의 모양 및 동작을 조정하는 방법을 설명합니다.  
   
- [방법: 편집기에서 텍스트의 대/소문자 변경](../ide/how-to-change-text-case-in-the-editor.md)  
+ [방법: 편집기에서 텍스트 대/소문자 변경](../ide/how-to-change-text-case-in-the-editor.md)  
  코드에서 텍스트의 대/소문자를 변경하는 방법을 설명합니다.  
   
  [방법: 편집기 창 관리](../ide/how-to-manage-editor-windows.md)  
@@ -47,6 +42,3 @@ ms.locfileid: "49259328"
  [옵션 대화 상자, 환경, 일반](../ide/reference/general-environment-options-dialog-box.md)   
  [문서, 환경, 옵션 대화 상자](../ide/reference/documents-environment-options-dialog-box.md)   
  [옵션 대화 상자, 환경, 글꼴 및 색](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)
-
-
-

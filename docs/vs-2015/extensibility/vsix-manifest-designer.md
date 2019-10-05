@@ -1,14 +1,9 @@
 ---
 title: VSIX 매니페스트 디자이너 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - VS.Sdk.VsixManifestEditor
 helpviewer_keywords:
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 72639c3fbef6b8e297d9e81a7383b2ee8220d896
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 450d306718906c3b76bf05982594045e7fd215f0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387564"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX 매니페스트 디자이너
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ VSIX 패키지 매니페스트 파일을 Visual Studio 확장에 대 한 설치 
  열려는 합니다 **VSIX 매니페스트 디자이너**에서 source.extension.vsixmanifest 파일을 찾습니다 **솔루션 탐색기**, 파일을 엽니다. 파일에 올바른 XML이 없으면 매니페스트 디자이너 열리지 않습니다.  
   
 > [!NOTE]
->  Source.extension.vsixmanifest은 패키지를 빌드하면 extension.vsixmanifest 출력 됩니다.  
+> Source.extension.vsixmanifest은 패키지를 빌드하면 extension.vsixmanifest 출력 됩니다.  
   
 ## <a name="uielement-list"></a>UI 요소 목록  
  합니다 **VSIX 매니페스트 디자이너** 스키마의 최상위 이러한 요소에 해당 하는 4 개의 섹션이 포함 되어 있습니다.  
@@ -97,7 +92,7 @@ VSIX 패키지 매니페스트 파일을 Visual Studio 확장에 대 한 설치 
   **설치 유형**  
   나열 **Visual Studio 확장** 하 고 **확장명 SDK** 설치 유형을 대상으로 합니다. 옵션은 선택한 유형에 따라 다릅니다.  
   
-  **Visual Studio 확장**  
+  **Visual Studio Extension**  
   나열 된 **에서 InstallationTarget** 패키지를 설치할 수 있습니다 및 Visual Studio 제품에이 확장을 설치할 수 있습니다 하는 방법을 설명 하는 요소입니다. 각 제품 이름 및 버전 또는 버전 범위 별로 개별적으로 식별 됩니다.  제품을 목록에 추가, 수정 및 삭제 될 수 있습니다. 이름 및 제품의 버전에 해당 하는 **Id** 및 **버전** 관련 된 특성 **에서 InstallationTarget** 요소입니다.  
   
   **버전 범위** 은 [12.0, 14.0] 다음 표기법을 사용 합니다.  
@@ -112,7 +107,7 @@ VSIX 패키지 매니페스트 파일을 Visual Studio 확장에 대 한 설치 
   
 - 단일 버전 #-지정된 된 버전만  
   
-  **확장 SDK**  
+  **Extension SDK**  
   특정 제품 및 버전 범위가 지정 되지 않는 전역 설치를 지정 합니다. **대상 플랫폼 식별자** "Windows에서" 대상으로 하는 등의 플랫폼입니다. **대상 플랫폼 버전** 는 대상 플랫폼의 8.0과 같은 버전입니다. **SDK 이름** 하 고 **SDK 버전** 각각은 이름 및 SDK의 버전 번호입니다.  
   
   **이 VSIX는 모든 사용자 용 으로만 설치 (설치 시 권한 상승이 필요한)** 확인란  
@@ -158,4 +153,3 @@ VSIX 패키지 매니페스트 파일을 Visual Studio 확장에 대 한 설치 
 ## <a name="see-also"></a>참고 항목  
  [VSIX 확장 스키마 2.0 참조](../extensibility/vsix-extension-schema-2-0-reference.md)   
  [VSIX 패키지 분석](../extensibility/anatomy-of-a-vsix-package.md)
-

@@ -1,26 +1,21 @@
 ---
 title: 기능 플래그 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, capability flags
 ms.assetid: a3f6071c-eac8-4bcd-8ffd-8d0a2d24a252
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6fd526abb5580b6eb3899df9ee76baacd91e56d7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 831a52818cfc5c7b75c01a9551b70cd26b95dbcf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184513"
 ---
 # <a name="capability-flags"></a>기능 플래그
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +65,7 @@ SCC_CAP_*xxx* 플래그는 비트 플래그는 소스 제어 플러그 인의 �
 ## <a name="capability-bits-added-in-version-13"></a>버전 1.3에에서 추가 하는 기능 비트  
  이러한 플래그를 한 번에 하나씩 전달 되는 [SccGetExtendedCapabilities](../extensibility/sccgetextendedcapabilities-function.md) 기능이 지원 되는지 여부를 결정 하는 함수입니다.  
   
-|확장된 기능 코드|값|설명|  
+|확장된 기능 코드|값|Description|  
 |------------------------------|-----------|-----------------|  
 |`SCC_EXCAP_CHECKOUT_LOCALVER`|1|지원 된 `SCC_CHECKOUT_LOCALVER` 체크 아웃에 대 한 옵션입니다.|  
 |`SCC_EXCAP_BACKGROUND_GET`|2|지원 합니다 [SccBackgroundGet](../extensibility/sccbackgroundget-function.md)합니다.|  
@@ -80,10 +75,9 @@ SCC_CAP_*xxx* 플래그는 비트 플래그는 소스 제어 플러그 인의 �
 |`SCC_EXCAP_ADD_FILES_FROM_SCC`|6|지원 합니다 [SccAddFilesFromSCC](../extensibility/sccaddfilesfromscc-function.md)합니다.|  
 |`SCC_EXCAP_GET_USER_OPTIONS`|7|지원 합니다 [SccGetUserOption](../extensibility/sccgetuseroption-function.md)합니다.|  
 |`SCC_EXCAP_THREADSAFE_QUERY_INFO`|8|SccQueryInfo 여러 스레드에서 호출을 지원 합니다.|  
-|`SCC_EXCAP_REMOVE_DIR`|10|SccRemoveDir 함수를 지원합니다.|  
+|`SCC_EXCAP_REMOVE_DIR`|9|SccRemoveDir 함수를 지원합니다.|  
 |`SCC_EXCAP_DELETE_CHECKEDOUT`|10|체크 아웃 된 파일을 삭제할 수 있습니다.|  
 |`SCC_EXCAP_RENAME_CHECKEDOUT`|11|체크 아웃 된 파일 이름을 바꿀 수 있습니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [소스 제어 플러그 인](../extensibility/source-control-plug-ins.md)
-

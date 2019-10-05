@@ -1,14 +1,9 @@
 ---
 title: '방법: IDE에서 이동 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - environments [Visual Studio], navigation
 - documents [Visual Studio], navigating
@@ -22,13 +17,13 @@ ms.assetid: 6c36b6eb-c93f-496b-af08-4199f7afd8bd
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ea104d08216a4ef7bdb07fc42b5a22eb5352d757
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 93200995c3afa59b0a4a27aaa9c674fa17b5ee3f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049621"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685593"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>방법: Visual Studio IDE에서 이동
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "53049621"
 IDE(통합 개발 환경)는 기본 설정이나 프로젝트 요구 사항에 따라 몇 가지 방법으로 창에서 창으로 이동하고 파일에서 파일로 이동할 수 있도록 하기 위해 설계되었습니다. 편집기에 열려 있는 파일 전체를 순환하거나 IDE의 모든 활성 도구 창을 순환하도록 선택할 수 있습니다. 마지막으로 액세스한 순서에 관계없이 편집기에 열려 있는 원하는 파일로 직접 전환할 수도 있습니다. 이러한 기능은 IDE에서 작업할 때 생산성을 높이는 데 유용할 수 있습니다.
 
 > [!NOTE]
->  대화 상자에서 사용할 수 있는 옵션과 메뉴 명령의 이름 및 위치는 실제 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 이 도움말 페이지는 **일반 개발 설정**을 염두에 두고 작성되었습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.
+> 대화 상자에서 사용할 수 있는 옵션과 메뉴 명령의 이름 및 위치는 실제 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 이 도움말 페이지는 **일반 개발 설정**을 염두에 두고 작성되었습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.
 
 ## <a name="keyboard-shortcuts"></a>바로 가기 키
  Visual Studio의 거의 모든 메뉴 명령에는 바로 가기 키가 있습니다. 또한 사용자가 직접 바로 가기를 만들 수도 있습니다. 자세한 내용은 [바로 가기 키 식별 및 사용자 지정](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)을 참조하세요.
@@ -53,48 +48,48 @@ IDE(통합 개발 환경)는 기본 설정이나 프로젝트 요구 사항에 �
 - 역순으로 열려 있는 문서를 활성화하려면 Ctrl+Shift+빼기 기호를 누릅니다.
 
   > [!NOTE]
-  >  **뒤로 탐색** 및 **앞으로 탐색**은 **보기** 메뉴에서도 찾을 수 있습니다.
+  > **뒤로 탐색** 및 **앞으로 탐색**은 **보기** 메뉴에서도 찾을 수 있습니다.
 
   **IDE 탐색기**, 편집기의 **활성 파일** 목록 또는 **창** 대화 상자를 사용하여, 마지막으로 파일에 액세스한 시점과 관계없이 편집기에 열려 있는 특정 파일로 전환할 수도 있습니다.
 
-  **IDE 탐색기**는 Windows 응용 프로그램 전환기와 매우 유사하게 작동합니다. IDE 탐색기는 메뉴에서 사용할 수 없으며 바로 가기 키를 사용해서만 액세스할 수 있습니다. 두 명령 중 하나를 사용하여 **IDE 탐색기**(아래 참조)에 액세스하고 순환하려는 순서에 따라 파일 전체를 순환할 수 있습니다.
+  **IDE 탐색기**는 Windows 애플리케이션 전환기와 매우 유사하게 작동합니다. IDE 탐색기는 메뉴에서 사용할 수 없으며 바로 가기 키를 사용해서만 액세스할 수 있습니다. 두 명령 중 하나를 사용하여 **IDE 탐색기**(아래 참조)에 액세스하고 순환하려는 순서에 따라 파일 전체를 순환할 수 있습니다.
 
   ![Visual Studio IDE 탐색기](../ide/media/vs2015-ide-navigator.png "VS2015_IDE_Navigator")
 
   `Window.PreviousDocumentWindowNav`는 가장 최근에 액세스한 파일을 이동할 수 있도록 하고 `Window.NextDocumentWindowNav`는 역순으로 이동할 수 있도록 합니다. 일반 개발 설정은 Ctrl+Shift+Tab을 `Window.PreviousDocumentWindowNav`에 할당하고 Ctrl+Tab을 `Window.NextDocumentWindowNav`에 할당합니다.
 
 > [!NOTE]
->  사용하고 있는 설정 조합에 이 명령에 할당된 바로 가기 키 조합이 아직 없는 경우 **옵션** 대화 상자의 **키보드** 페이지를 사용하여 사용자 고유의 사용자 지정 명령을 할당할 수 있습니다. 자세한 내용은 [바로 가기 키 식별 및 사용자 지정](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)을 참조하세요.
+> 사용하고 있는 설정 조합에 이 명령에 할당된 바로 가기 키 조합이 아직 없는 경우 **옵션** 대화 상자의 **키보드** 페이지를 사용하여 사용자 고유의 사용자 지정 명령을 할당할 수 있습니다. 자세한 내용은 [바로 가기 키 식별 및 사용자 지정](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)을 참조하세요.
 
 #### <a name="to-switch-to-specific-files-in-the-editor"></a>편집기에서 특정 파일로 전환하려면
 
--   Ctrl+Tab을 눌러 **IDE 탐색기**를 표시합니다. Ctrl 키를 누른 상태에서 전환하려는 파일을 선택할 때까지 Tab 키를 반복해서 누릅니다.
+- Ctrl+Tab을 눌러 **IDE 탐색기**를 표시합니다. Ctrl 키를 누른 상태에서 전환하려는 파일을 선택할 때까지 Tab 키를 반복해서 누릅니다.
 
     > [!TIP]
-    >  **활성 파일** 목록을 이동하는 순서를 반대로 하려면 Ctrl+Shift 키를 누른 상태에서 Tab 키를 누릅니다.
+    > **활성 파일** 목록을 이동하는 순서를 반대로 하려면 Ctrl+Shift 키를 누른 상태에서 Tab 키를 누릅니다.
 
      \- 또는 -
 
--   편집기의 오른쪽 위에서 **활성 파일** 단추를 선택한 다음 전환할 목록에서 파일을 선택합니다.
+- 편집기의 오른쪽 위에서 **활성 파일** 단추를 선택한 다음 전환할 목록에서 파일을 선택합니다.
 
      \- 또는 -
 
--   메뉴 모음에서 **창**, **창**을 선택합니다.
+- 메뉴 모음에서 **창**, **창**을 선택합니다.
 
--   목록에서 보려는 파일을 선택한 다음 **활성화**를 선택합니다.
+- 목록에서 보려는 파일을 선택한 다음 **활성화**를 선택합니다.
 
 ## <a name="navigating-among-tool-windows-in-the-ide"></a>IDE에서 도구 창 탐색
  **IDE 탐색기**를 사용하여 IDE에서 연 도구 창 전체를 순환할 수도 있습니다. 두 명령 중 하나를 사용하여 **IDE 탐색기**에 액세스하고 순환하려는 순서에 따라 도구 창 전체를 순환할 수 있습니다. `Window.PreviousToolWindowNav`는 가장 최근에 액세스한 파일을 이동할 수 있도록 하고 `Window.NextToolWindowNav`는 역순으로 이동할 수 있도록 합니다. 일반 개발 설정은 Shift+Alt+F7을 `Window.PreviousDocumentWindowNav`에 할당하고 Alt+F7을 `Window.NextDocumentWindowNav`에 할당합니다.
 
 > [!NOTE]
->  사용하고 있는 설정 조합에 이 명령에 할당된 바로 가기 키 조합이 아직 없는 경우 **옵션** 대화 상자의 **키보드** 페이지를 사용하여 사용자 고유의 사용자 지정 명령을 할당할 수 있습니다. 자세한 내용은 [바로 가기 키 식별 및 사용자 지정](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)을 참조하세요.
+> 사용하고 있는 설정 조합에 이 명령에 할당된 바로 가기 키 조합이 아직 없는 경우 **옵션** 대화 상자의 **키보드** 페이지를 사용하여 사용자 고유의 사용자 지정 명령을 할당할 수 있습니다. 자세한 내용은 [바로 가기 키 식별 및 사용자 지정](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)을 참조하세요.
 
 #### <a name="to-switch-to-a-specific-tool-window-in-the-ide"></a>IDE에서 특정 도구 창으로 전환하려면
 
--   Alt+F7을 눌러 **IDE 탐색기**를 표시합니다. Alt 키를 누른 상태에서 전환하려는 창을 선택할 때까지 F7 키를 반복해서 누릅니다.
+- Alt+F7을 눌러 **IDE 탐색기**를 표시합니다. Alt 키를 누른 상태에서 전환하려는 창을 선택할 때까지 F7 키를 반복해서 누릅니다.
 
     > [!TIP]
-    >  **활성 도구 창** 목록을 이동하는 순서를 반대로 하려면 Shift+Alt 키를 누른 상태에서 F7 키를 누릅니다.
+    > **활성 도구 창** 목록을 이동하는 순서를 반대로 하려면 Shift+Alt 키를 누른 상태에서 F7 키를 누릅니다.
 
 ## <a name="see-also"></a>참고 항목
  [창 레이아웃 사용자 지정](../ide/customizing-window-layouts-in-visual-studio.md) [기본 바로 가기 키](../ide/default-keyboard-shortcuts-in-visual-studio.md)

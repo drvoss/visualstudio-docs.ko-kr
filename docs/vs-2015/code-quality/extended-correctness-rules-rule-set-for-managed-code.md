@@ -1,25 +1,20 @@
 ---
 title: 관리 코드에 대 한 확장된 수정 규칙 규칙 집합 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 5b181f5b-6c7a-4e46-a783-360e1da427a0
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cebb3f492bb3aec873f503c2efcacb7220ec9739
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ef74b2fbb2bd8e0f2ff130de246b35c06455c850
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152170"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>관리 코드에 대한 확장 수정 규칙 규칙 집합
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,14 +61,14 @@ ms.locfileid: "49187431"
 |[CA2124](../code-quality/ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md)|취약한 finally 절을 외부 try에 래핑하십시오.|  
 |[CA2126](../code-quality/ca2126-type-link-demands-require-inheritance-demands.md)|형식 링크 요청에는 상속 요청이 필요합니다.|  
 |[CA2131](../code-quality/ca2131-security-critical-types-may-not-participate-in-type-equivalence.md)|보안에 중요한 형식은 형식 동등에 참여할 수 없습니다.|  
-|[CA2132](../code-quality/ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md)|기본 생성자는 최소한 기본 형식 기본 생성자 만큼 중요 해야 합니다.|  
+|[CA2132](../code-quality/ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md)|기본 생성자는 기본 형식의 기본 생성자 이상으로 중요해야 합니다.|  
 |[CA2133](../code-quality/ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md)|대리자는 투명도가 일관된 메서드에 바인딩되어야 합니다.|  
 |[CA2134](../code-quality/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md)|메서드는 기본 메서드를 재정의할 때 일관된 투명도를 유지해야 합니다.|  
 |[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|투명 메서드에는 확인할 수 있는 IL만 포함되어야 합니다.|  
 |[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|투명 메서드는 SuppressUnmanagedCodeSecurity 특성을 사용하여 메서드를 호출해서는 안 됩니다.|  
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|투명 코드는 보안에 중요한 항목을 참조해서는 안 됩니다.|  
 |[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|투명 메서드는 LinkDemands를 충족해서는 안 됩니다|  
-|[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|형식은 최소한 기본 형식 및 인터페이스 만큼 중요 해야 합니다.|  
+|[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|형식은 기본 형식 및 인터페이스 이상으로 중요해야 합니다.|  
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|투명 메서드는 보안 어설션을 사용할 수 없습니다.|  
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|투명 메서드는 네이티브 코드를 호출해서는 안 됩니다.|  
 |[CA2200](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)|스택 정보를 유지하도록 다시 throw하십시오.|  
@@ -94,72 +89,69 @@ ms.locfileid: "49187431"
 |[CA2240](../code-quality/ca2240-implement-iserializable-correctly.md)|ISerializable을 올바르게 구현하십시오.|  
 |[CA2241](../code-quality/ca2241-provide-correct-arguments-to-formatting-methods.md)|서식 지정 메서드에 올바른 인수를 제공하십시오.|  
 |[CA2242](../code-quality/ca2242-test-for-nan-correctly.md)|NaN에 대해 정확하게 테스트하십시오.|  
-|[CA1008](../code-quality/ca1008-enums-should-have-zero-value.md)|열거형 값이 0 이면 있어야 합니다.|  
-|[CA1013](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|오버 로드에 같음 연산자를 오버 더하기 및 빼기|  
-|[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|리터럴을 지역화 된 매개 변수로 전달 하지 마십시오|  
-|[CA1308](../code-quality/ca1308-normalize-strings-to-uppercase.md)|문자열을 대문자로 정규화 하십시오.|  
-|[CA1806](../code-quality/ca1806-do-not-ignore-method-results.md)|메서드 결과 무시 하지 마십시오|  
-|[CA1816](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)|GC를 호출 합니다. SuppressFinalize 올바르게|  
-|[CA1819](../code-quality/ca1819-properties-should-not-return-arrays.md)|속성은 배열을 반환 해서는|  
-|[CA1820](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|문자열 길이 사용 하 여 문자열이 비었는지 테스트|  
-|[CA1903](../code-quality/ca1903-use-only-api-from-targeted-framework.md)|대상된 프레임 워크에서 API만 사용|  
-|[CA2004](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|GC에 대 한 호출을 제거 합니다. KeepAlive|  
-|[CA2006](../code-quality/ca2006-use-safehandle-to-encapsulate-native-resources.md)|네이티브 리소스를 캡슐화 하기 위해 SafeHandle 사용|  
-|[CA2102](../code-quality/ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md)|일반 처리기에서 비 CLSCompliant 예외를 catch 합니다.|  
-|[CA2104](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)|읽기 전용 참조 형식을 선언 하지 마십시오.|  
-|[CA2105](../code-quality/ca2105-array-fields-should-not-be-read-only.md)|배열 필드는 읽기 전용 이면 안|  
-|[CA2106](../code-quality/ca2106-secure-asserts.md)|보안 어설션|  
-|[CA2115](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)|GC를 호출 합니다. KeepAlive 네이티브 리소스를 사용 하는 경우|  
-|[CA2119](../code-quality/ca2119-seal-methods-that-satisfy-private-interfaces.md)|Private 인터페이스를 만족 하는 메서드를 봉인|  
-|[CA2120](../code-quality/ca2120-secure-serialization-constructors.md)|보안 serialization 생성자|  
-|[CA2121](../code-quality/ca2121-static-constructors-should-be-private.md)|정적 생성자는 private 이어야 합니다.|  
-|[CA2130](../code-quality/ca2130-security-critical-constants-should-be-transparent.md)|보안 위험 상수는 투명 해야 합니다.|  
-|[CA2205](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)|관리 되는 Win32 api를 사용 합니다.|  
-|[CA2215](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)|Dispose 메서드는 기본 클래스 dispose를 호출 해야 합니다.|  
-|[CA2221](../code-quality/ca2221-finalizers-should-be-protected.md)|종료자는 protected 여야|  
-|[CA2222](../code-quality/ca2222-do-not-decrease-inherited-member-visibility.md)|노출 수준을 낮추지 마십시오 상속 된 멤버 표시 유형|  
-|[CA2223](../code-quality/ca2223-members-should-differ-by-more-than-return-type.md)|멤버 반환 형식 이외의 달라 야 합니다.|  
-|[CA2224](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)|같음 연산자를 오버 로드할 때 equals 재정의|  
-|[CA2226](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)|연산자에는 대칭 오버 로드가 있어야 합니다.|  
-|[CA2227](../code-quality/ca2227-collection-properties-should-be-read-only.md)|컬렉션 속성은 읽기 전용 이어야|  
-|[CA2239](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)|선택적 필드에 deserialization 메서드를 제공 합니다.|  
-|[CA1032](../code-quality/ca1032-implement-standard-exception-constructors.md)|표준 예외 생성자를 구현 합니다.|  
-|[CA1054](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)|URI 매개 변수는 문자열이 면 안 됩니다.|  
-|[CA1055](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)|URI 반환 값은 문자열이 면 안 됩니다.|  
-|[CA1056](../code-quality/ca1056-uri-properties-should-not-be-strings.md)|URI 속성은 문자열이 면 안 됩니다.|  
-|[CA1057](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)|문자열 URI 오버 로드는 System.Uri 오버 로드를 호출|  
-|[CA1402](../code-quality/ca1402-avoid-overloads-in-com-visible-interfaces.md)|COM 노출 인터페이스에서 오버 로드 방지|  
-|[CA1406](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)|Visual Basic 6 클라이언트에서 Int64 인수를 방지 합니다.|  
-|[CA1407](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)|COM 노출 형식에 정적 멤버를 방지 합니다.|  
-|[CA1408](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)|AutoDual ClassInterfaceType을 사용 하지 마십시오|  
+|[CA1008](../code-quality/ca1008-enums-should-have-zero-value.md)|열거형에는 0 값이 있어야 합니다.|  
+|[CA1013](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|더하기 및 빼기를 오버로드할 때 같음 연산자를 오버로드하세요.|  
+|[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|리터럴을 지역화된 매개 변수로 전달하지 마세요.|  
+|[CA1308](../code-quality/ca1308-normalize-strings-to-uppercase.md)|대문자로 문자열을 정규화하세요.|  
+|[CA1806](../code-quality/ca1806-do-not-ignore-method-results.md)|메서드 결과를 무시하지 마세요.|  
+|[CA1816](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)|GC.SuppressFinalize를 올바르게 호출하세요.|  
+|[CA1819](../code-quality/ca1819-properties-should-not-return-arrays.md)|속성은 배열을 반환해서는 안 됩니다.|  
+|[CA1820](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|문자열 길이를 사용하여 빈 문자열을 테스트하세요.|  
+|[CA1903](../code-quality/ca1903-use-only-api-from-targeted-framework.md)|대상 프레임워크의 API만 사용하세요.|  
+|[CA2004](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|GC.KeepAlive에 대한 호출을 제거하세요.|  
+|[CA2006](../code-quality/ca2006-use-safehandle-to-encapsulate-native-resources.md)|SafeHandle을 사용하여 네이티브 리소스를 캡슐화하세요.|  
+|[CA2102](../code-quality/ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md)|일반 처리기에서 비 CLSCompliant 예외를 catch하세요.|  
+|[CA2104](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)|변경 가능한 읽기 전용 참조 형식을 선언하지 마세요.|  
+|[CA2105](../code-quality/ca2105-array-fields-should-not-be-read-only.md)|배열 필드는 읽기 전용이면 안 됩니다.|  
+|[CA2106](../code-quality/ca2106-secure-asserts.md)|어설션을 안전하게 보호하세요.|  
+|[CA2115](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)|네이티브 리소스를 사용하는 경우에는 GC.KeepAlive를 호출하세요.|  
+|[CA2119](../code-quality/ca2119-seal-methods-that-satisfy-private-interfaces.md)|private 인터페이스를 만족하는 메서드를 봉인하세요.|  
+|[CA2120](../code-quality/ca2120-secure-serialization-constructors.md)|serialization 생성자를 안전하게 하세요.|  
+|[CA2121](../code-quality/ca2121-static-constructors-should-be-private.md)|정적 생성자는 private이어야 합니다.|  
+|[CA2130](../code-quality/ca2130-security-critical-constants-should-be-transparent.md)|보안에 중요한 상수는 투명해야 합니다.|  
+|[CA2205](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)|Win32 API의 동일한 관리형 기능을 사용하세요.|  
+|[CA2215](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)|Dispose 메서드는 기본 클래스 Dispose를 호출해야 합니다.|  
+|[CA2221](../code-quality/ca2221-finalizers-should-be-protected.md)|종료자는 protected여야 합니다.|  
+|[CA2222](../code-quality/ca2222-do-not-decrease-inherited-member-visibility.md)|상속된 멤버 노출 수준을 낮추지 마세요.|  
+|[CA2223](../code-quality/ca2223-members-should-differ-by-more-than-return-type.md)|멤버는 반환 형식 이외의 것도 달라야 합니다.|  
+|[CA2224](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)|같음 연산자를 오버로드할 때 Equals를 재정의하세요.|  
+|[CA2226](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)|연산자에는 대칭 오버로드가 있어야 합니다.|  
+|[CA2227](../code-quality/ca2227-collection-properties-should-be-read-only.md)|컬렉션 속성은 읽기 전용이어야 합니다.|  
+|[CA2239](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)|선택적 필드에 deserialization 메서드를 제공하세요.|  
+|[CA1032](../code-quality/ca1032-implement-standard-exception-constructors.md)|표준 예외 생성자를 구현하세요.|  
+|[CA1054](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)|URI 매개 변수는 문자열이면 안 됩니다.|  
+|[CA1055](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)|URI 반환 값은 문자열이면 안 됩니다.|  
+|[CA1056](../code-quality/ca1056-uri-properties-should-not-be-strings.md)|URI 속성은 문자열이면 안 됩니다.|  
+|[CA1057](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)|문자열 URI 오버로드는 System.Uri 오버로드를 호출합니다.|  
+|[CA1402](../code-quality/ca1402-avoid-overloads-in-com-visible-interfaces.md)|COM 노출 인터페이스에서 오버로드를 사용하지 마세요.|  
+|[CA1406](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)|Visual Basic 6 클라이언트에서는 Int64 인수를 사용하지 마세요.|  
+|[CA1407](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)|COM 노출 형식에 정적 멤버를 사용하지 마세요.|  
+|[CA1408](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)|AutoDual ClassInterfaceType을 사용하지 마세요.|  
 |[CA1409](../code-quality/ca1409-com-visible-types-should-be-creatable.md)|Com 노출 형식을 만들 수 있어야 합니다.|  
-|[CA1411](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)|COM 등록 메서드를 표시 해야 합니다.|  
-|[CA1412](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)|ComSource 인터페이스 IDispatch로 표시|  
-|[CA1413](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)|COM 노출 값 형식에 public이 아닌 필드를 방지 합니다.|  
-|[CA1414](../code-quality/ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md)|부울 P/Invoke 인수를 marshalas로 표시|  
-|[CA1600](../code-quality/ca1600-do-not-use-idle-process-priority.md)|유휴 프로세스 우선 순위를 사용 하지 마세요|  
-|[CA1601](../code-quality/ca1601-do-not-use-timers-that-prevent-power-state-changes.md)|전원 상태 변경을 방해 하는 타이머를 사용 하지 마십시오|  
-|[CA1824](../code-quality/ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md)|NeutralResourcesLanguageAttribute로 어셈블리 표시|  
-|[CA2001](../code-quality/ca2001-avoid-calling-problematic-methods.md)|문제가 있는 메서드를 호출 하지 마십시오.|  
-|[CA2003](../code-quality/ca2003-do-not-treat-fibers-as-threads.md)|파이버를 스레드로 취급 하지 마십시오|  
-|[CA2135](../code-quality/ca2135-level-2-assemblies-should-not-contain-linkdemands.md)|수준 2 어셈블리는 LinkDemands를 포함 하지|  
-|[CA2136](../code-quality/ca2136-members-should-not-have-conflicting-transparency-annotations.md)|멤버 충돌 하는 투명도 주석을 가져서는 안|  
-|[CA2139](../code-quality/ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute.md)|투명 한 메서드는 HandleProcessCorruptingExceptions 특성을 사용할 수 없습니다.|  
-|[CA2142](../code-quality/ca2142-transparent-code-should-not-be-protected-with-linkdemands.md)|투명 코드는 LinkDemands를 사용 하 여 보호 해서는 안|  
-|[CA2143](../code-quality/ca2143-transparent-methods-should-not-use-security-demands.md)|투명 한 메서드는 보안 요청을 사용 하지 않아야|  
-|[CA2144](../code-quality/ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays.md)|투명 코드는 바이트 배열에서 어셈블리를 로드 하지|  
-|[CA2145](../code-quality/ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute.md)|투명 한 메서드는 SuppressUnmanagedCodeSecurityAttribute로 데코레이팅 해야|  
-|[CA2204](../code-quality/ca2204-literals-should-be-spelled-correctly.md)|리터럴 철자가 맞아야 합니다.|  
-|[CA2211](../code-quality/ca2211-non-constant-fields-should-not-be-visible.md)|비상수 필드를 표시 해야 합니다.|  
-|[CA2217](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)|열거형을 FlagsAttribute로 표시 하지 마십시오.|  
-|[CA2218](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)|Equals GetHashCode를 재정의 합니다.|  
-|[CA2219](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)|Exception 절에서 예외를 발생 하지 않습니다|  
-|[CA2225](../code-quality/ca2225-operator-overloads-have-named-alternates.md)|연산자 오버 로드는 명명 된 대체|  
-|[CA2228](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md)|릴리스되지 않은 리소스 형식을 제공 하지 마십시오.|  
-|[CA2230](../code-quality/ca2230-use-params-for-variable-arguments.md)|가변 인수로 params를 사용|  
-|[CA2233](../code-quality/ca2233-operations-should-not-overflow.md)|연산은 오버플로되지 않아야|  
-|[CA2234](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)|문자열 대신 System.Uri 개체를 전달 합니다.|  
-|[CA2243](../code-quality/ca2243-attribute-string-literals-should-parse-correctly.md)|특성 문자열 리터럴이 올바르게 구문 분석 되어야 합니다.|
-
-
-
+|[CA1411](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)|COM 등록 메서드는 노출되면 안 됩니다.|  
+|[CA1412](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)|ComSource 인터페이스를 IDispatch로 표시하세요.|  
+|[CA1413](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)|COM 노출 값 형식에 public이 아닌 필드를 사용하지 마세요.|  
+|[CA1414](../code-quality/ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md)|부울 P/Invoke 인수를 MarshalAs로 표시하세요.|  
+|[CA1600](../code-quality/ca1600-do-not-use-idle-process-priority.md)|유휴 프로세스 우선 순위를 사용하지 마세요.|  
+|[CA1601](../code-quality/ca1601-do-not-use-timers-that-prevent-power-state-changes.md)|전원 상태 변경을 방해하는 타이머를 사용하지 마세요.|  
+|[CA1824](../code-quality/ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md)|NeutralResourcesLanguageAttribute로 어셈블리를 표시하세요.|  
+|[CA2001](../code-quality/ca2001-avoid-calling-problematic-methods.md)|문제가 있는 메서드는 호출하지 마세요.|  
+|[CA2003](../code-quality/ca2003-do-not-treat-fibers-as-threads.md)|파이버를 스레드로 취급하지 마세요.|  
+|[CA2135](../code-quality/ca2135-level-2-assemblies-should-not-contain-linkdemands.md)|수준 2 어셈블리는 LinkDemands를 포함할 수 없습니다.|  
+|[CA2136](../code-quality/ca2136-members-should-not-have-conflicting-transparency-annotations.md)|멤버는 충돌하는 투명도 주석을 포함할 수 없습니다.|  
+|[CA2139](../code-quality/ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute.md)|투명 메서드는 HandleProcessCorruptingExceptions 특성을 사용할 수 없습니다.|  
+|[CA2142](../code-quality/ca2142-transparent-code-should-not-be-protected-with-linkdemands.md)|투명 코드는 LinkDemands로 보호될 수 없습니다.|  
+|[CA2143](../code-quality/ca2143-transparent-methods-should-not-use-security-demands.md)|투명 메서드는 보안 요청을 사용할 수 없습니다.|  
+|[CA2144](../code-quality/ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays.md)|투명 코드는 바이트 배열에서 어셈블리를 로드할 수 없습니다.|  
+|[CA2145](../code-quality/ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute.md)|투명 메서드는 SuppressUnmanagedCodeSecurityAttribute 특성으로 데코레이팅할 수 없습니다.|  
+|[CA2204](../code-quality/ca2204-literals-should-be-spelled-correctly.md)|리터럴의 맞춤법이 정확해야 합니다.|  
+|[CA2211](../code-quality/ca2211-non-constant-fields-should-not-be-visible.md)|비상수 필드는 노출되면 안 됩니다.|  
+|[CA2217](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)|열거형을 FlagsAttribute로 표시하지 마세요.|  
+|[CA2218](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)|Equals를 재정할 때 GetHashCode를 재정의하세요.|  
+|[CA2219](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)|exception 절에서 예외를 발생시키지 마세요.|  
+|[CA2225](../code-quality/ca2225-operator-overloads-have-named-alternates.md)|연산자 오버로드에는 명명된 대체 항목이 있습니다.|  
+|[CA2228](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md)|릴리스되지 않은 리소스 형식을 제공하지 마세요.|  
+|[CA2230](../code-quality/ca2230-use-params-for-variable-arguments.md)|가변 인수로 params를 사용하세요.|  
+|[CA2233](../code-quality/ca2233-operations-should-not-overflow.md)|연산은 오버플로되지 않아야 합니다.|  
+|[CA2234](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)|문자열 대신 System.Uri 개체를 전달하세요.|  
+|[CA2243](../code-quality/ca2243-attribute-string-literals-should-parse-correctly.md)|특성 문자열 리터럴이 올바르게 구문 분석되어야 합니다.|

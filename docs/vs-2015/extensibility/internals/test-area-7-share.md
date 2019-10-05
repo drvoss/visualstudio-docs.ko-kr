@@ -1,29 +1,24 @@
 ---
 title: '테스트 영역 7: 공유 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], sharing items
 - source control plug-ins, sharing items
 ms.assetid: 6ec4780a-bda4-4327-bb3e-c6c9e7eabf35
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e9389d03da7c4e4b763e979a721a22639ecb9fbe
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a788eb73c65a84731dd5505af54f4dd78439d456
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203137"
 ---
-# <a name="test-area-7-share"></a>테스트 영역 7: 공유
+# <a name="test-area-7-share"></a>테스트 영역 7: Share
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 이 테스트 영역을 통해 위치 간에 공유 항목을 설명 합니다 **공유** 명령입니다.  
@@ -32,13 +27,13 @@ ms.locfileid: "51796924"
   
  공유 폴더에 하나 이상의 파일에 소스 제어를 사용 하 여 폴더를 선택 하는 경우 작동 합니다. 다음과 같은 공유 명령을 비활성화 됩니다.  
   
--   선택한 폴더에 빈 폴더 경우.  
+- 선택한 폴더에 빈 폴더 경우.  
   
--   실제 폴더 올바르지만 없습니다 소스 제어 파일을 포함 합니다.  
+- 실제 폴더 올바르지만 없습니다 소스 제어 파일을 포함 합니다.  
   
--   가상 폴더의 경우 소스 제어에서 파일 인지의 여부.  
+- 가상 폴더의 경우 소스 제어에서 파일 인지의 여부.  
   
--   원격 사이트 웹 프로젝트인 경우입니다.  
+- 원격 사이트 웹 프로젝트인 경우입니다.  
   
 ## <a name="command-menu-access"></a>명령 메뉴 액세스  
  다음 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 통합된 개발 환경 메뉴 경로 테스트 사례에서 사용 됩니다.  
@@ -47,11 +42,11 @@ ms.locfileid: "51796924"
   
 ## <a name="expected-behavior"></a>예상된 된 동작  
   
--   공유 된 파일 공유 위치에 나타납니다.  
+- 공유 된 파일 공유 위치에 나타납니다.  
   
--   파일 공유는 원본 제어 버전 저장소 기록에서는 볼 수 있습니다.  
+- 파일 공유는 원본 제어 버전 저장소 기록에서는 볼 수 있습니다.  
   
--   파일의 위치를 모두 편집 공유 파일을 편집 합니다.  
+- 파일의 위치를 모두 편집 공유 파일을 편집 합니다.  
   
 ## <a name="test-cases"></a>테스트 사례  
  공유 테스트 영역에 대 한 특정 테스트 사례는 다음과 같습니다.  
@@ -67,4 +62,3 @@ ms.locfileid: "51796924"
   
 ## <a name="see-also"></a>참고 항목  
  [소스 제어 플러그 인에 대한 테스트 가이드](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

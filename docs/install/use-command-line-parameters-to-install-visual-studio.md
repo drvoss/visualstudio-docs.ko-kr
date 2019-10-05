@@ -2,10 +2,8 @@
 title: 명령줄 매개 변수를 사용하여 Visual Studio 설치
 titleSuffix: ''
 description: 명령줄 매개 변수를 사용하여 Visual Studio 설치를 제어하거나 사용자 지정하는 방법을 알아봅니다.
+ms.date: 09/11/2019
 ms.custom: seodec18
-ms.date: 11/14/2018
-ms.technology: vs-acquisition
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - command-line parameters
@@ -14,40 +12,54 @@ f1_keywords:
 ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba270b4d7240d30db5b20388d6c75782dba6a256
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 1f9e5d1dadd9caf95b8e6cb8e5fec70daf984ac9
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159726"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913240"
 ---
-# <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>명령줄 매개 변수를 사용하여 Visual Studio 2017 설치
+# <a name="use-command-line-parameters-to-install-visual-studio"></a>명령줄 매개 변수를 사용하여 Visual Studio 설치
 
-명령 프롬프트에서 Visual Studio 2017를 설치할 때 다양한 명령줄 매개 변수를 사용하여 설치를 제어하거나 사용자 지정할 수 있습니다. 명령줄에서 다음 작업을 수행할 수 있습니다.
+명령 프롬프트에서 Visual Studio를 설치할 때 다양한 명령줄 매개 변수를 사용하여 설치를 제어하거나 사용자 지정할 수 있습니다. 명령줄에서 다음 작업을 수행할 수 있습니다.
 
 - 특정 옵션이 미리 선택된 상태로 설치를 시작합니다.
 - 설치 프로세스를 자동화합니다.
 - 나중에 사용할 설치 파일의 캐시(레이아웃)를 만듭니다.
 
-명령줄 옵션은 다운로드 프로세스를 시작하는 작은(약 1MB) 파일인 설치 부트스트래퍼와 함께 사용됩니다. 부트스트래퍼는 Visual Studio 사이트에서 다운로드할 때 첫 번째로 실행되는 실행 파일입니다. 다음 링크를 사용하여 설치 중인 제품 버전에 대한 최신 릴리스 부트스트래퍼에 직접 연결된 링크를 가져옵니다.
+명령줄 옵션은 다운로드 프로세스를 시작하는 작은(1MB) 파일인 설치 부트스트래퍼와 함께 사용됩니다. 부트스트래퍼는 Visual Studio 사이트에서 다운로드할 때 첫 번째로 실행되는 실행 파일입니다. 다음 링크를 사용하여 설치 중인 제품 버전에 대한 최신 릴리스 부트스트래퍼에 직접 연결된 링크를 가져옵니다.
 
-- [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+::: moniker range="vs-2017"
 
-## <a name="list-of-command-line-parameters"></a>명령줄 매개 변수 목록
+- [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+- [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+- [Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
+- [Visual Studio 2019 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
+- [Visual Studio 2019 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
+
+::: moniker-end
+
+## <a name="command-line-parameters"></a>명령줄 매개 변수
 
  Visual Studio 명령줄 매개 변수는 대/소문자를 구분하지 않습니다.
 
 > 구문: `vs_enterprise.exe [command] <options>...`
 
-(설치 중인 제품 버전에 적합하게 `vs_enterprise.exe`를 바꿉니다.)
+설치 중인 제품 버전에 적합하게 `vs_enterprise.exe`를 바꿉니다. 또는 `vs_installer.exe`를 사용할 수 있습니다.
 
 >[!TIP]
-> 명령줄을 사용하여 Visual Studio 2017을 설치하는 방법에 대한 자세한 예제는 [명령줄 매개 변수 예제](command-line-parameter-examples.md) 페이지를 참조하세요.
+> 명령줄을 사용하여 Visual Studio를 설치하는 방법에 대한 자세한 예제는 [명령줄 매개 변수 예제](command-line-parameter-examples.md) 페이지를 참조하세요.
 
 | **명령** | **설명** |
 | ----------------------- | --------------- |
@@ -56,7 +68,9 @@ ms.locfileid: "53159726"
 | `update` | 설치된 제품을 업데이트합니다. |
 | `repair` | 설치된 제품을 복구합니다. |
 | `uninstall` | 설치된 제품을 제거합니다. |
-| `export` | **15.9의 새로운 기능**: 설치 선택 항목을 설치 구성 파일로 내보냅니다. |
+| `export` | **버전 15.9의 새로운 기능**: 설치 선택 항목을 설치 구성 파일로 내보냅니다. **참고**: vs_installer.exe와 함께만 사용할 수 있습니다. |
+
+## <a name="install-options"></a>설치 옵션
 
 | **설치 옵션** | **설명** |
 | ----------------------- | --------------- |
@@ -78,7 +92,10 @@ ms.locfileid: "53159726"
 | `--help, --?, -h, -?` | 이 페이지의 오프라인 버전을 표시합니다. |
 | `--config <path>` | **선택 사항** 및 **15.9의 새로운 기능**: 설치 또는 수정 작업 중에 이전에 저장한 설치 구성 파일을 기반으로 추가할 워크로드 및 구성 요소를 결정합니다. 이 작업은 추가 작업이며 파일에 없는 워크로드나 구성 요소를 제거하지 않습니다. 또한 제품에 적용되지 않는 항목은 추가되지 않습니다. 내보내기 작업 중에 설치 구성 파일을 저장할 위치가 결정됩니다. |
 
-> 참고: 여러 워크로드와 구성 요소를 지정할 경우 각 항목에 대해 `--add` 또는 `--remove` 명령줄 스위치를 반복해야 합니다.
+> [!IMPORTANT]
+> 여러 워크로드와 구성 요소를 지정할 경우 각 항목에 대해 `--add` 또는 `--remove` 명령줄 스위치를 반복해야 합니다.
+
+## <a name="layout-options"></a>레이아웃 옵션
 
 | **레이아웃 옵션** | **설명** |
 | ----------------------- | --------------- |
@@ -95,7 +112,7 @@ ms.locfileid: "53159726"
 | **고급 설치 옵션** | **설명** |
 | ----------------------- | --------------- |
 | `--channelId <id>` | **선택 사항**: 설치할 인스턴스의 채널 ID입니다. 설치 명령에 필요하며, `--installPath`가 지정된 경우 다른 명령에서는 무시됩니다. |
-| `--channelUri <uri>` | **선택 사항**: 채널 매니페스트의 URI입니다. 업데이트가 필요하지 않으면 `--channelUri`는 존재하지 않는 파일을 가리킬 수 있습니다. 예를 들어 --channelUri C:\doesntExist.chman과 같습니다. 이 옵션은 install 명령에 사용할 수 있으며, 다른 명령에서는 무시됩니다. |
+| `--channelUri <uri>` | **선택 사항**: 채널 매니페스트의 URI입니다. 업데이트를 원하지 않는 경우 `--channelUri`는 존재하지 않는 파일(예: --channeluri C:\doesntExist.chman)을 가리킬 수 있습니다. 설치 명령에 사용할 수 있습니다. 다른 명령에서는 무시됩니다. |
 | `--installChannelUri <uri>` | **선택 사항**: 설치에 사용할 채널 매니페스트의 URI입니다. `--channelUri`(`--installChannelUri`가 지정된 경우 지정해야 함)로 지정된 URI는 업데이트를 검색하는 데 사용됩니다. 설치 명령에 사용할 수 있습니다. 다른 명령에서는 무시됩니다. |
 | `--installCatalogUri <uri>` | **선택 사항**: 설치에 사용할 카탈로그 매니페스트의 URI입니다. 지정된 경우 채널 관리자는 설치 채널 매니페스트의 URI를 사용하기 전에 이 URI에서 카탈로그 매니페스트를 다운로드하려고 합니다. 이 매개 변수는 이미 다운로드한 제품 카탈로그를 사용하여 레이아웃 캐시가 생성되는 오프라인 설치를 지원하는 데 사용됩니다. 설치 명령에 사용할 수 있습니다. 다른 명령에서는 무시됩니다. |
 | `--productId <id>` | **선택 사항**: 설치할 인스턴스에 대한 제품 ID입니다. 이는 일반적인 설치 조건에서 미리 채워져 있습니다. |
@@ -104,7 +121,7 @@ ms.locfileid: "53159726"
 | `--cache` | **15.2의 새로운 기능, 선택 사항**: 있는 경우, 패키지가 이후 복구를 위해 설치된 후에도 유지됩니다. 이는 이후 설치, 복구 또는 수정에 사용할 전역 정책 설정을 재정의합니다. 기본 정책은 패키지를 캐시하는 것입니다. 제거 명령의 경우 무시됩니다. 자세한 내용은 [패키지 캐시를 사용하지 않도록 설정 또는 이동](disable-or-move-the-package-cache.md)하는 방법을 참조하세요. |
 | `--nocache` | **15.2의 새로운 기능, 선택 사항**: 패키지가 있는 경우 설치 또는 복구된 후에 삭제됩니다. 필요한 경우에만 다시 다운로드되고 사용한 후 다시 삭제됩니다. 이는 이후 설치, 복구 또는 수정에 사용할 전역 정책 설정을 재정의합니다. 기본 정책은 패키지를 캐시하는 것입니다. 제거 명령의 경우 무시됩니다. 자세한 내용은 [패키지 캐시를 사용하지 않도록 설정 또는 이동](disable-or-move-the-package-cache.md)하는 방법을 참조하세요. |
 | `--noUpdateInstaller` | **15.2의 새로운 기능, 선택 사항**: 있는 경우, quiet가 지정되었을 때 설치 프로그램이 자동으로 업데이트되지 않습니다. quiet와 함께 noUpdateInstaller가 지정되었는데 설치 프로그램 업데이트가 필요한 경우 설치 프로그램에서 명령을 실패로 처리하고 0이 아닌 종료 코드를 반환합니다. |
-| `--noWeb` | **15.3의 새로운 기능, 선택 사항**: 설치 프로그램이 이제 설치하는 콘텐츠를 인터넷에서 다운로드합니다.  설치되는 모든 콘텐츠를 오프라인 레이아웃에서 사용할 수 있어야 합니다.  레이아웃에 콘텐츠에 없으면 설치에 실패합니다.  자세한 내용은 [네트워크 설치에서 배포](create-a-network-installation-of-visual-studio.md)를 참조하세요. |
+| `--noWeb` | **15.3의 새로운 기능, 선택 사항**: 있는 경우, Visual Studio 설치 프로그램에서 레이아웃 디렉터리에 있는 파일을 사용하여 Visual Studio를 설치합니다. 사용자가 레이아웃에 없는 구성 요소를 설치하려고 시도하면 설치에 실패합니다.  자세한 내용은 [네트워크 설치에서 배포](create-a-network-installation-of-visual-studio.md)를 참조하세요. <br/><br/> **중요**: 이 스위치는 Visual Studio 설치 프로그램에서 업데이트를 확인하는 과정을 허용합니다. 자세한 내용은 [네트워크 기반 Visual Studio 배포에 대한 업데이트 제어](controlling-updates-to-visual-studio-deployments.md)를 참조하세요.|
 | `--path <name>=<path>` | **15.7의 새로운 기능, 선택 사항**: 설치에 대해 사용자 지정 설치 경로를 지정하는 데 사용합니다. 지원되는 경로 이름은 공유, 캐시 및 설치입니다. |
 | `--path cache=<path>` | **15.7의 새로운 기능, 선택 사항**: 설치 파일을 다운로드하는 데 사용자가 지정한 위치를 사용합니다. 이 위치는 처음 Visual Studio를 설치할 때만 설정할 수 있습니다. 예: `--path cache="C:\VS\cache"` |
 | `--path shared=<path>` | **15.7의 새로운 기능, 선택 사항**: Visual Studio 병렬 설치를 위한 공유 파일을 포함합니다. 일부 도구 및 SDK가 이 드라이브의 위치에 설치되지만 나머지는 이 설정을 재정의하고 다른 드라이브에 설치될 수 있습니다. 예: `--path shared="C:\VS\shared"` <br><br>중요: 이는 Visual Studio를 처음으로 설치할 때 한 번만 설정하면 됩니다. |
@@ -112,7 +129,7 @@ ms.locfileid: "53159726"
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>작업 ID 및 구성 요소 ID 목록
 
-Visual Studio 제품별로 정렬된 워크로드 및 구성 요소 ID 목록은 [Visual Studio 2017 워크로드 및 구성 요소 ID](workload-and-component-ids.md) 페이지를 참조하세요.
+Visual Studio 제품별로 정렬된 워크로드 및 구성 요소 ID 목록은 [Visual Studio 워크로드 및 구성 요소 ID](workload-and-component-ids.md) 페이지를 참조하세요.
 
 ## <a name="list-of-language-locales"></a>언어 로캘 목록
 
@@ -137,14 +154,7 @@ Visual Studio 제품별로 정렬된 워크로드 및 구성 요소 ID 목록은
 
 작업 결과에 따라 `%ERRORLEVEL%` 환경 변수는 다음 값 중 하나로 설정됩니다.
 
-| **값** | **결과** |
-| --------- | ---------- |
-| 0 | 작업이 완료되었습니다. |
-| 1602 | 작업이 취소되었습니다. |
-| 3010 | 작업이 완료되었지만, 사용하려면 다시 부팅해야 합니다. |
-| 5004 | 작업이 취소되었습니다. |
-| 5007 | 작업이 차단되었습니다. 컴퓨터가 요구 사항에 맞지 않습니다. |
-| 기타 | 오류 조건 발생 - 자세한 내용은 로그를 확인하세요. |
+[!INCLUDE[install-error-codes-md](includes/install-error-codes-md.md)]
 
 각 작업은 `%TEMP%` 디렉터리에 설치 진행률을 나타내는 여러 로그 파일을 생성합니다. 폴더를 날짜별로 정렬하고 부트스트래퍼, 설치 관리자 앱 및 설치 엔진 각각에 대해 `dd_bootstrapper`, `dd_client` 및 `dd_setup`으로 시작하는 파일을 찾습니다.
 
@@ -152,7 +162,7 @@ Visual Studio 제품별로 정렬된 워크로드 및 구성 요소 ID 목록은
 
 ## <a name="see-also"></a>참고 항목
 
-- [Visual Studio 2017 설치에 대한 명령줄 매개 변수 예](command-line-parameter-examples.md)
-- [Visual Studio 2017의 오프라인 설치 만들기](create-an-offline-installation-of-visual-studio.md)
+- [Visual Studio 설치에 대한 명령줄 매개 변수 예](command-line-parameter-examples.md)
+- [Visual Studio의 오프라인 설치 만들기](create-an-offline-installation-of-visual-studio.md)
 - [지시 파일을 사용하여 Visual Studio 설치 자동화](automated-installation-with-response-file.md)
-- [Visual Studio 2017 워크로드 및 구성 요소 ID](workload-and-component-ids.md)
+- [Visual Studio 작업 및 구성 요소 ID](workload-and-component-ids.md)

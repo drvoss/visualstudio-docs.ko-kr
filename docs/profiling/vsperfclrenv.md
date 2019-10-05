@@ -1,8 +1,6 @@
 ---
 title: VSPerfCLREnv | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - command-line tools, VSPerfCLREnv
@@ -12,19 +10,19 @@ helpviewer_keywords:
 - VSPerfCLREnv tool
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5623cfc9d6f72805e4ced489ef7a786aaad155e6
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 119aa0a710218635cca945372ba9ea6fb6d4d27b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822887"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 
-VSPerfCLREnv 도구는 .NET Framework 응용 프로그램을 프로파일링하는 데 필요한 환경 변수를 설정하는 데 사용됩니다. 이 도구는 다음 구문을 사용합니다.
+VSPerfCLREnv 도구는 .NET Framework 애플리케이션을 프로파일링하는 데 필요한 환경 변수를 설정하는 데 사용됩니다. 이 도구는 다음 구문을 사용합니다.
 
 ```cmd
 VsPerfCLREnv [/option]
@@ -40,9 +38,9 @@ VsPerfCLREnv [/option]
 > [!WARNING]
 > 계층 상호 작용 프로파일링은 Visual Studio의 모든 버전을 사용하여 수집할 수 있습니다. 그러나 계층 상호 작용 프로파일링 데이터는 Visual Studio Enterprise에서만 볼 수 있습니다.
 
-계층 상호 작용 프로파일링에서는 다층 계층 응용 프로그램의 ADO.NET 쿼리에 대한 추가 정보를 제공합니다. 동기 함수 호출에 대해서만 데이터가 수집됩니다. 원하는 프로파일링 방법을 사용하여 상호 작용 데이터를 프로파일링 실행에 추가할 수 있습니다.
+계층 상호 작용 프로파일링에서는 다층 계층 애플리케이션의 ADO.NET 쿼리에 대한 추가 정보를 제공합니다. 동기 함수 호출에 대해서만 데이터가 수집됩니다. 원하는 프로파일링 방법을 사용하여 상호 작용 데이터를 프로파일링 실행에 추가할 수 있습니다.
 
-**InteractionOn** 및 **GlobalInteractionOn** 옵션을 사용하면 계층 상호 작용 데이터를 수집할 수 있습니다. 응용 프로그램을 프로파일링하는 데 필요한 VSPerfCLREnv 환경 변수를 설정한 후에 상호 작용 옵션을 설정해야 합니다.
+**InteractionOn** 및 **GlobalInteractionOn** 옵션을 사용하면 계층 상호 작용 데이터를 수집할 수 있습니다. 애플리케이션을 프로파일링하는 데 필요한 VSPerfCLREnv 환경 변수를 설정한 후에 상호 작용 옵션을 설정해야 합니다.
 
 다음 예제에는 샘플링 방법을 사용하는 프로파일링 실행의 계층 상호 작용 데이터가 포함되어 있습니다.
 
@@ -58,7 +56,7 @@ VSPerfCmd /Start:Sample /Output:MyApp.exe.vsp /Launch:MyApp.exe
 VSPerfCLREnv /GlobalSampleOn
 VSPerfCLREnv /GlobalInteractionOn
 REM Restart the computer and start the service
-VSPerfCmd /Start:Sample /Output:MyService.exe.vsp 
+VSPerfCmd /Start:Sample /Output:MyService.exe.vsp
 VSPerfCmd /Attach:MyService.exe
 ```
 
@@ -85,7 +83,7 @@ VSPerfCmd /Attach:MyService.exe
 
 ## <a name="vsperfclrenv-options-for-global-profiling"></a>전역 프로파일링을 위한 VSPerfCLREnv 옵션
 
-사용자가 시작하는 것이 아니라 운영 체제에 의해 시작되는 ASP.NET 웹 응용 프로그램과 관리 서비스를 프로파일링하려면 VSPerfCLREnv 옵션의 전역 프로파일링용 옵션을 사용합니다. 다음 표에는 VSPerfCLREnv 옵션의 전역 버전에 대한 설명이 나와 있습니다. 이러한 옵션은 레지스트리에서 적절한 환경 변수를 설정합니다.
+사용자가 시작하는 것이 아니라 운영 체제에 의해 시작되는 ASP.NET 웹 애플리케이션과 관리 서비스를 프로파일링하려면 VSPerfCLREnv 옵션의 전역 프로파일링용 옵션을 사용합니다. 다음 표에는 VSPerfCLREnv 옵션의 전역 버전에 대한 설명이 나와 있습니다. 이러한 옵션은 레지스트리에서 적절한 환경 변수를 설정합니다.
 
 |옵션|설명|
 |------------|-----------------|
@@ -98,16 +96,16 @@ VSPerfCmd /Attach:MyService.exe
 
 ## <a name="vsperfclrenv-options-to-delete-environment-settings"></a>환경 설정 삭제를 위한 VSPerfCLREnv 옵션
 
- 관리되는 응용 프로그램 프로파일링을 완료한 후에는 다음 옵션 중 하나를 사용하여 VSPerfCLREnv가 추가한 환경 변수를 삭제합니다. 다음 표에서는 표준 환경 변수와 전역 환경 변수를 둘 다 삭제하는 방법을 설명합니다.
+ 관리되는 애플리케이션 프로파일링을 완료한 후에는 다음 옵션 중 하나를 사용하여 VSPerfCLREnv가 추가한 환경 변수를 삭제합니다. 다음 표에서는 표준 환경 변수와 전역 환경 변수를 둘 다 삭제하는 방법을 설명합니다.
 
 |옵션|설명|
 |------------|-----------------|
 |**Off**|표준 .NET 프로파일링용 환경 변수를 삭제합니다. 비전역 VSPerfClrEnv 옵션을 사용하여 프로파일러 환경 변수를 설정한 경우 이 옵션을 사용합니다.|
-|**GlobalOff**|전역 .NET 프로파일링용 환경 변수를 삭제합니다. 프로파일러가 아닌 운영 체제에 의해 응용 프로그램이 시작된 경우 이 옵션을 사용합니다.|
+|**GlobalOff**|전역 .NET 프로파일링용 환경 변수를 삭제합니다. 프로파일러가 아닌 운영 체제에 의해 애플리케이션이 시작된 경우 이 옵션을 사용합니다.|
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-IDE의 성능 탐색기를 사용하여 응용 프로그램을 시작한 경우에는 관리되는 응용 프로그램을 프로파일링하는 데 이러한 옵션이 필요하지 않습니다. 성능 탐색기가 필요한 모든 환경 설정을 자동으로 지정합니다.
+IDE의 성능 탐색기를 사용하여 애플리케이션을 시작한 경우에는 관리되는 애플리케이션을 프로파일링하는 데 이러한 옵션이 필요하지 않습니다. 성능 탐색기가 필요한 모든 환경 설정을 자동으로 지정합니다.
 
 프로파일링 중에 올바른 환경이 설정되지 않은 경우에는 분석 중에 경고가 보고되며 관리되는 함수 이름이 적절하게 확인되지 않습니다.
 

@@ -7,15 +7,13 @@ helpviewer_keywords:
 ms.assetid: 9649226a-857d-41ef-8ec7-047b6e498033
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: f280911be68616a1c2632195769547023832b061
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 9751ce3b08a0ac963cccdf091ccb99001c6f2c9f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785775"
 ---
 # <a name="modify-load-test-logging-settings"></a>부하 테스트 로깅 설정 수정
 
@@ -28,7 +26,7 @@ ms.locfileid: "53060040"
 |작업|관련 항목|
 |-|-----------------------|
 |**부하 테스트가 실패할 경우 로그 저장:** 부하 테스트가 실패할 때마다 테스트 로그를 저장할지 여부를 지정할 수 있습니다.|-   [방법: 테스트 실패를 테스트 로그에 저장할지 여부 지정](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
-|**로그 파일의 최대 파일 크기 설정:** 테스트 컨트롤러 서비스와 연결된 XML 구성 파일을 편집하여 로그 파일에 사용할 최대 파일 크기를 지정할 수 있습니다.|[방법: 로그 파일의 최대 크기 지정](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|
+|**로그 파일의 최대 파일 크기 설정:** 테스트 컨트롤러 서비스와 연결된 XML 구성 파일을 편집하여 로그 파일에 사용할 최대 파일 크기를 지정할 수 있습니다.|*QTCcontroller.exe.config* XML 구성 파일에서 `<add key="LogSizeLimitInMegs" value="20"/>`을 수정합니다.|
 
 ## <a name="see-also"></a>참고 항목
 

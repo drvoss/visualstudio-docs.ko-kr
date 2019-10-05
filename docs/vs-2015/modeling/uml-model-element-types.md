@@ -1,25 +1,22 @@
 ---
 title: UML 모델 요소 형식 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API, types
 ms.assetid: 25345a53-7246-4eb7-8ad9-0b695aa171a2
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 55311d02bef9654637a1b413519cc562a5c7f52b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4c755a0293e6bbf5dd119002f367f266a69bc3ec
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193744"
 ---
 # <a name="uml-model-element-types"></a>UML 모델 요소 형식
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -201,6 +198,3 @@ Classes.IElement
  [UML을 확장 하는 프로필 정의](../modeling/define-a-profile-to-extend-uml.md)   
  [UML 모델에 대 한 유효성 검사 제약 조건 정의](../modeling/define-validation-constraints-for-uml-models.md)   
  [UML 모델링 확장성을 위한 API 참조](../modeling/api-reference-for-uml-modeling-extensibility.md)
-
-
-

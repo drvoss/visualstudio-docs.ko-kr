@@ -1,14 +1,9 @@
 ---
 title: 디버거 프로젝트 설정 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,13 +19,13 @@ ms.assetid: 5e1b2a30-d2db-49e8-aba3-2d3a190eea80
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ed31c4490738d007375d1a73728a00ac17c20897
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0953b68989b36dbe85466c71760f75e71498a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755047"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189575"
 ---
 # <a name="debugger-project-settings"></a>디버거 프로젝트 설정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,8 +63,5 @@ ms.locfileid: "51755047"
  [디버거 설정 및 준비](../debugger/debugger-settings-and-preparation.md)  
  디버거 관련 속성 설정에 대해 설명하고 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 디버거를 사용하여 프로그램을 디버깅하는 데 필요한 준비 사항에 대해 설명합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [디버거 보안](../debugger/debugger-security.md)
-
-
-

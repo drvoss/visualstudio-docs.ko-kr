@@ -1,8 +1,6 @@
 ---
 title: '방법: 형식 간의 연결 만들기(클래스 디자이너)'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.associationline
@@ -15,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: adccb9c8-2f8a-4086-9fa9-f70f99fb6e00
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b27530abeec1c01b5537fd91bfbe3e0e10448af
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 723d1565dae55852829daf0038201d0c8685b3ce
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33958557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975387"
 ---
 # <a name="how-to-create-associations-between-types-in-class-designer"></a>방법: 클래스 디자이너에서 형식 간의 연결 만들기
 

@@ -1,22 +1,20 @@
 ---
 title: Visual C++ 코드 조각
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: mikeblome
+ms.author: mblome
+manager: markl
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f119f3b2bc438eacfaaa722bd57fb440aa303052
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9c1bcef00116e0c5f09099344926d924113e5982
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948930"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461632"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C++ 코드 조각
 
@@ -26,7 +24,7 @@ Visual Studio에서 코드 조각을 사용하여 일반적으로 사용되는 �
 
 ## <a name="insert-a-code-snippet"></a>코드 조각 삽입
 
-코드 조각을 삽입하려면 C++ 코드 파일(*.cpp* 또는 *.h*)을 열고, 파일 내에서 아무 곳이나 클릭하고, 다음의 하나를 수행합니다.
+코드 조각을 삽입하려면 C++ 코드 파일( *.cpp* 또는 *.h*)을 열고, 파일 내에서 아무 곳이나 클릭하고, 다음의 하나를 수행합니다.
 
 - 마우스 오른쪽 단추를 클릭하여 상황에 맞는 메뉴를 표시하고 **코드 조각 삽입**을 선택합니다.
 
@@ -146,7 +144,7 @@ for (int i = length - 1; i >= 0; i--)
 
 ## <a name="the-destructor-snippet-"></a>소멸자 조각(~)
 
-소멸자 코드 조각(**~**)은 다양한 컨텍스트에서 다양한 동작을 보여 줍니다. 이 조각을 클래스 내부에 삽입하면 이 조각이 해당 클래스에 대한 소멸자를 제공합니다. 예를 들어, 다음과 같이 코드를 가정합니다.
+소멸자 코드 조각( **~** )은 다양한 컨텍스트에서 다양한 동작을 보여 줍니다. 이 조각을 클래스 내부에 삽입하면 이 조각이 해당 클래스에 대한 소멸자를 제공합니다. 예를 들어, 다음과 같이 코드를 가정합니다.
 
 ```cpp
 class SomeClass {

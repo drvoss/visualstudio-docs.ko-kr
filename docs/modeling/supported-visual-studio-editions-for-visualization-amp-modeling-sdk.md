@@ -7,16 +7,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, supported Visual Studio editions
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 402c746f23eb472b3b63066389464c4fed6346a0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1e5898a95f10875f0880e4b4799f17b78aa8e79b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003424"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>시각화 및 모델링 SDK에서 지원되는 Visual Studio 버전
 
@@ -38,13 +37,13 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]에서는 작성하는 DSL(Domain-Specific Language)을 배포하기 위한 다음 구성을 지원합니다.
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
--   Visual Studio Professional
+- Visual Studio Professional
 
--   Visual Studio Shell (통합된 모드) 재배포 가능 패키지
+- Visual Studio Shell (통합된 모드) 재배포 가능 패키지
 
--   Visual Studio Shell(격리 모드) 재배포 가능 패키지
+- Visual Studio Shell(격리 모드) 재배포 가능 패키지
 
 > [!NOTE]
 > DSL Shell 제품에서 실행할 수 있도록 설정 해야 합니다 **VS 버전 지원** 확장 매니페스트에서 필드입니다. 자세한 내용은 [도메인별 언어 솔루션 배포](../modeling/deploying-domain-specific-language-solutions.md)합니다.

@@ -2,7 +2,6 @@
 title: IDebugCodeContext::SetBreakPoint | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a0111deba23f29aa6b7d31a1aed8d729ff4e7fa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7bbfe38c1db9f7c9afff34f5a92b8c43b0f4f9ba
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725833"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974529"
 ---
 # <a name="idebugcodecontextsetbreakpoint"></a>IDebugCodeContext::SetBreakPoint
-설정 하거나이 코드 컨텍스트에 중단점을 해제 합니다.  
+설정 하거나이 코드 컨텍스트에 중단점을 지웁니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT SetBreakPoint(  
    BREAKPOINT_STATE  bps  
 );  
@@ -48,7 +47,7 @@ HRESULT SetBreakPoint(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드를 설정 하거나 여기서 코드에 중단점을 해제 합니다.  
+ 이 메서드를 설정 하거나이 코드 컨텍스트에 중단점을 지웁니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugCodeContext 인터페이스](../../winscript/reference/idebugcodecontext-interface.md)   

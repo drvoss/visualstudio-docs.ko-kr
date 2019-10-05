@@ -1,14 +1,9 @@
 ---
 title: 보고서 매크로 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.macros
 dev_langs:
@@ -28,13 +23,13 @@ ms.assetid: f2085314-a3a8-4caf-a5a4-2af9ad5aad05
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dc2a5226b3d6f512d2c2f89d9fef2a80eef34340
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e4aee33d571f95e24a359fa2bc7e12ae8d64eae0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758453"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431630"
 ---
 # <a name="macros-for-reporting"></a>보고서 매크로
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,8 +38,8 @@ ms.locfileid: "51758453"
   
 |매크로|설명|  
 |-----------|-----------------|  
-|**_RPT0**, **_RPT1**를 **_RPT2**하십시오 **_RPT3**, **_RPT4**|메시지 문자열과 0을 네 개의 인수로 출력합니다. _Rpt1부터 **_RPT4**, 메시지 문자열 인수에 대해 printf 스타일 형식 지정 문자열 표현으로 사용 합니다.|  
-|**_RPTF0**하십시오 **_RPTF1**를 **, _RPTF2**, **_RPTF4**|동일 **_RPTn** , 있지만 이러한 매크로 매크로 위치한 파일 이름과 줄 번호를 출력 합니다.|  
+|**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|메시지 문자열과 0을 네 개의 인수로 출력합니다. _RPT1부터 **_RPT4**까지는 메시지 문자열이 인수에 대해 printf 스타일의 서식 문자열로 사용됩니다.|  
+|**_RPTF0**, **_RPTF1**, **,_RPTF2**, **_RPTF4**|동일 **_RPTn** , 있지만 이러한 매크로 매크로 위치한 파일 이름과 줄 번호를 출력 합니다.|  
   
  다음 예제를 참조하세요.  
   
@@ -57,13 +52,13 @@ ms.locfileid: "51758453"
 #endif  
 ```  
   
- 이 코드의 값을 출력 `someVar` 하 고 `otherVar` 하 **stdout**합니다. 다음 `_RPTF2` 호출을 사용하여 동일한 값과 파일 이름, 줄 번호를 보고할 수 있습니다.  
+ 이 코드는 `someVar`과 `otherVar`의 값을 **stdout**로 출력합니다. 다음 `_RPTF2` 호출을 사용하여 동일한 값과 파일 이름, 줄 번호를 보고할 수 있습니다.  
   
 ```  
 if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d, otherVar= %d\n", someVar, otherVar );  
 ```  
   
- 특정 응용 프로그램에서 C 런타임 라이브러리와 함께 제공된 매크로가 없다는 디버그 보고가 필요할 경우, 필요에 맞게 특별히 디자인된 매크로를 작성할 수 있습니다. 헤더 파일 중 하나에서 예를 들어, 있습니다 수 같은 코드를 포함 매크로 정의 하려면 다음을 호출 **ALERT_IF2**:  
+ 특정 애플리케이션에서 C 런타임 라이브러리와 함께 제공된 매크로가 없다는 디버그 보고가 필요할 경우, 필요에 맞게 특별히 디자인된 매크로를 작성할 수 있습니다. 예를 들어 헤더 파일 중 하나에서 다음과 같은 코드를 포함하여 **ALERT_IF2** 매크로를 정의할 수 있습니다.  
   
 ```  
 #ifndef _DEBUG                  /* For RELEASE builds */  
@@ -90,6 +85,3 @@ someVar=%d, otherVar=%d.\n", someVar, otherVar );
   
 ## <a name="see-also"></a>참고 항목  
  [CRT 디버깅 기술](../debugger/crt-debugging-techniques.md)
-
-
-

@@ -1,27 +1,24 @@
 ---
 title: 텍스트 템플릿 변형 프로세스 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, transformation process
 ms.assetid: 80b3f0e0-49e7-4865-a1ac-dba068abe96b
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 146d391cc843291b79dc34af29851cfed4c80a46
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0f92b4053006aa5da3c28d9330b372466f84d0fd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199961"
 ---
-# <a name="the-text-template-transformation-process"></a>텍스트 템플릿 변형 프로세스
+# <a name="the-text-template-transformation-process"></a>텍스트 템플릿 변환 프로세스
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 텍스트 템플릿 변형 프로세스의 입력으로 텍스트 템플릿 파일을 출력으로 새 텍스트 파일을 생성 합니다. 예를 들어 텍스트 템플릿을 사용 하 여 Visual Basic 또는 C# 코드를 생성 하거나 HTML 보고서를 생성할 수 있습니다.  
@@ -32,9 +29,9 @@ ms.locfileid: "49203777"
   
 ## <a name="components"></a>구성 요소  
   
-|구성 요소|설명|사용자 지정 가능한 (예/아니요)|  
+|구성 요소|Description|사용자 지정 가능한 (예/아니요)|  
 |---------------|-----------------|------------------------------|  
-|엔진|텍스트 템플릿 변형 프로세스를 제어 하는 엔진 구성 요소|아니요.|  
+|Engine|텍스트 템플릿 변형 프로세스를 제어 하는 엔진 구성 요소|아니요.|  
 |호스트|호스트는 엔진에서 사용자 환경 사이의 인터페이스입니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 텍스트 변환 프로세스의 호스트가입니다.|예. 사용자 지정 호스트를 작성할 수 있습니다.|  
 |지시문 프로세서|지시문 프로세서는 텍스트 템플릿에서 지시문을 처리 하는 클래스입니다. 텍스트 템플릿에 입력된 원본에서 데이터를 제공 하도록 지시문을 사용할 수 있습니다.|예. 사용자 지정 지시문 프로세서를 작성할 수 있습니다.|  
   
@@ -44,19 +41,19 @@ ms.locfileid: "49203777"
 ## <a name="the-host"></a>호스트  
  호스트는 다음과 같은 변환 프로세스 외부의 환경에 연결 하는 아무 것도 담당 합니다.  
   
--   텍스트 및 엔진 또는 지시문 프로세서를 요청한 이진 파일을 찾고 있습니다. 호스트는 디렉터리와 어셈블리를 전역 어셈블리 캐시를 검색할 수 있습니다. 호스트는 엔진에 대 한 사용자 지정 지시문 프로세서 코드를 찾을 수 있습니다. 호스트 수 또한 텍스트 파일을 읽을 찾아 그 내용을 문자열로 반환 합니다.  
+- 텍스트 및 엔진 또는 지시문 프로세서를 요청한 이진 파일을 찾고 있습니다. 호스트는 디렉터리와 어셈블리를 전역 어셈블리 캐시를 검색할 수 있습니다. 호스트는 엔진에 대 한 사용자 지정 지시문 프로세서 코드를 찾을 수 있습니다. 호스트 수 또한 텍스트 파일을 읽을 찾아 그 내용을 문자열로 반환 합니다.  
   
--   표준 어셈블리 및 네임 스페이스를 만드는 데 사용 되는 엔진에 의해 생성된 된 변형 클래스 목록을 제공 합니다.  
+- 표준 어셈블리 및 네임 스페이스를 만드는 데 사용 되는 엔진에 의해 생성된 된 변형 클래스 목록을 제공 합니다.  
   
--   컴파일 및 생성된 된 변형 클래스를 실행 하는 경우 사용 되는 응용 프로그램 도메인을 제공 합니다. 별도 응용 프로그램 도메인을 호스트 응용 프로그램 템플릿 코드에서 오류 로부터 보호 하기 위해 사용 됩니다.  
+- 컴파일 및 생성된 된 변형 클래스를 실행 하는 경우 사용 되는 응용 프로그램 도메인을 제공 합니다. 별도 응용 프로그램 도메인을 호스트 응용 프로그램 템플릿 코드에서 오류 로부터 보호 하기 위해 사용 됩니다.  
   
--   생성된 된 출력 파일을 작성합니다.  
+- 생성된 된 출력 파일을 작성합니다.  
   
--   생성된 된 출력 파일에 대 한 기본 확장을 설정 합니다.  
+- 생성된 된 출력 파일에 대 한 기본 확장을 설정 합니다.  
   
--   텍스트 템플릿 변환 오류를 처리 합니다. 예를 들어 호스트 사용자 인터페이스에서 오류를 표시 하거나 파일을 쓸 수 있습니다. (에서 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], 오류 메시지 창에 오류가 표시 됩니다.)  
+- 텍스트 템플릿 변환 오류를 처리 합니다. 예를 들어 호스트 사용자 인터페이스에서 오류를 표시 하거나 파일을 쓸 수 있습니다. (에서 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], 오류 메시지 창에 오류가 표시 됩니다.)  
   
--   사용자가 값을 제공 하지 않고 지시문을 호출 하는 경우 필수 매개 변수 값을 제공 합니다. 지시문 프로세서 지시문 및 매개 변수 이름을 지정 하 고 있는 경우 기본 값을 제공 하는 호스트를 요청할 수 있습니다.  
+- 사용자가 값을 제공 하지 않고 지시문을 호출 하는 경우 필수 매개 변수 값을 제공 합니다. 지시문 프로세서 지시문 및 매개 변수 이름을 지정 하 고 있는 경우 기본 값을 제공 하는 호스트를 요청할 수 있습니다.  
   
 ## <a name="directives-and-directive-processors"></a>지시문 및 지시문 프로세서  
  지시문은 텍스트 템플릿에 명령입니다. 매개 변수는 생성 프로세스를 제공합니다. 일반적으로 지시문 원본 및 유형의 모델 또는 다른 입력 및 출력 파일의 파일 이름 확장명을 정의 합니다.  
@@ -68,6 +65,3 @@ ms.locfileid: "49203777"
  `<#@ import namespace="System.Text" #>`  
   
  표준 지시문 프로세서를 변환 하려면이 옵션을 `using` 생성된 된 변형 클래스에는 문입니다. 사용할 수는 `StringBuilder` 로 한정 하지 않고 템플릿 코드의 나머지 부분에서 클래스 `System.Text.StringBuilder`합니다.
-
-
-

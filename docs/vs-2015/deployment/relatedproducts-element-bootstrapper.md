@@ -1,14 +1,9 @@
 ---
 title: '&lt;RelatedProducts&gt; 요소 (부트스트래퍼) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.MissingDependency
 - MSBuild.GenerateBootstrapper.DuplicateItems
@@ -26,13 +21,13 @@ ms.assetid: bf152712-4c1e-48bd-9b7f-311cf0fdb832
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: c78aa559bf64b110909134426c676f302ca5fe04
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 70afe724be5b782bc90e162fd65f83ad1b0d0d23
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202532"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt; 요소 (부트스트래퍼)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +60,7 @@ ms.locfileid: "49296298"
   
  `DependsOnProduct` 다음과 같은 특성이 있습니다.  
   
-|특성|설명|  
+|특성|Description|  
 |---------------|-----------------|  
 |`Code`|에 지정 된 대로 포함된 된 제품의 코드명 합니다 `ProductCode` 특성을 `Product` 요소. 자세한 내용은 [ \<제품 > 요소](../deployment/product-element-bootstrapper.md)합니다.|  
   
@@ -77,7 +72,7 @@ ms.locfileid: "49296298"
   
  `IncludesProduct` 다음과 같은 특성이 있습니다.  
   
-|특성|설명|  
+|특성|Description|  
 |---------------|-----------------|  
 |`Code`|에 지정 된 대로 포함된 된 제품의 코드명 합니다 `ProductCode` 특성을 `Product` 요소. 자세한 내용은 [ \<제품 > 요소](../deployment/product-element-bootstrapper.md)합니다.|  
   
@@ -91,7 +86,4 @@ ms.locfileid: "49296298"
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [\<제품 > 요소](../deployment/product-element-bootstrapper.md)
-
-
-
+ [\<Product> 요소](../deployment/product-element-bootstrapper.md)

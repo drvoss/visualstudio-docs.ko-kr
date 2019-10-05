@@ -1,41 +1,36 @@
 ---
 title: PROFILE_CURRENTID | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - PROFILE_CURRENTID
 ms.assetid: 55ccf665-a05e-48c3-adf7-7714c0a9aaef
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f8e39234d9767be0cfb1305d25d107324ee073e7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 42ac8c5d7c00be51b3accc662fb0ffb52b5bfab3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792842"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198052"
 ---
 # <a name="profilecurrentid"></a>PROFILE_CURRENTID
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 PROFILE_CURRENTID는 NameProfile, StartProfile, StopProfile, SuspendProfile 및 ResumeProfile 함수에 대한 호출에서 스레드 ID 또는 프로세스 ID에 대한 의사(pseudo) 토큰을 반환합니다. 구체적으로 지정된 것보다 현재 스레드 또는 프로세스에서 작동하는 함수를 발생하는 데 사용합니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  PROFILE_CURRENTID는 VSPerf.h에서 다음으로 정의됩니다.  
   
 ```  
 static const unsigned int PROFILE_CURRENTID = (unsigned int)-1;  
 ```  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  다음은 PROFILE_CURRENTID에 대한 예입니다. 예제는 [StartProfile](../profiling/startprofile.md) 함수에 대한 호출에서 현재 스레드를 식별하는 매개 변수로 PROFILE_CURRENTID를 사용합니다.  
   
 ```  
@@ -72,6 +67,3 @@ void ExerciseProfileCurrentID()
  [StartProfile](../profiling/startprofile.md)   
  [StopProfile](../profiling/stopprofile.md)   
  [SuspendProfile](../profiling/suspendprofile.md)
-
-
-

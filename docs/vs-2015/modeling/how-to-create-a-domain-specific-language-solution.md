@@ -1,12 +1,9 @@
 ---
 title: '방법: 도메인별 언어 솔루션 만들기 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.designerwizard
 helpviewer_keywords:
@@ -17,15 +14,15 @@ ms.assetid: e585b63b-34d2-405a-8d81-39ea22317975
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 2650afc2172cdcceca892d4ad19a05becac3e472
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: eae08b771f3bd5748485f9029f7f12725df6f28f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908945"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698128"
 ---
-# <a name="how-to-create-a-domain-specific-language-solution"></a>방법: 도메인별 언어 솔루션 만들기
+# <a name="how-to-create-a-domain-specific-language-solution"></a>방법: 도메인 특정 언어 솔루션 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 도메인 특정 언어 (DSL) 이라는 특수을 사용 하 여 만들어지는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 솔루션입니다.  
@@ -58,7 +55,7 @@ ms.locfileid: "49908945"
        합니다 **도메인별 언어 디자이너 마법사** 나타납니다.  
   
       > [!NOTE]
-      >  가급적 코드 생성에 사용할 수 있으므로 이름을 입력 하는 유효한 Visual C# 식별자를 해야 합니다.  
+      > 가급적 코드 생성에 사용할 수 있으므로 이름을 입력 하는 유효한 Visual C# 식별자를 해야 합니다.  
   
       ![DSL 만들기 대화 상자](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
   
@@ -70,18 +67,18 @@ ms.locfileid: "49908945"
   
 3. 파일 이름 확장명을 입력 합니다 **파일 확장명** 페이지입니다. 컴퓨터에서 고유 해야 하 고 DSL을 설치 하려는 모든 컴퓨터에서. 메시지가 나타납니다 **응용 프로그램이 나 Visual Studio 편집기는이 확장을 사용할**합니다.  
   
-   -   완전히 설치 되지 않은 이전 실험적 Dsl의 파일 이름 확장명을 사용한 경우 지울 수는 있습니다 축소를 사용 하 여 합니다 **실험적 인스턴스 다시 설정** 에서 찾을 수 있는 도구는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK 메뉴.  
+   - 완전히 설치 되지 않은 이전 실험적 Dsl의 파일 이름 확장명을 사용한 경우 지울 수는 있습니다 축소를 사용 하 여 합니다 **실험적 인스턴스 다시 설정** 에서 찾을 수 있는 도구는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK 메뉴.  
   
-   -   다른 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장이 파일 확장명을 사용 하는 컴퓨터에 완전히 설치 되 면 제거 하는 것이 좋습니다. 에 **도구** 메뉴에서 클릭 **확장 관리자**합니다.  
+   - 다른 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장이 파일 확장명을 사용 하는 컴퓨터에 완전히 설치 되 면 제거 하는 것이 좋습니다. 에 **도구** 메뉴에서 클릭 **확장 관리자**합니다.  
   
 4. 를 검사 하 고 필요한 경우 필드를 조정, 마법사의 나머지 페이지의 키를 누릅니다. 설정에 만족 했으면 클릭 **완료**합니다. 설정에 대 한 자세한 내용은 참조 하세요. [DSL 디자이너 마법사 페이지](#settings)합니다.  
   
     마법사 라는 두 개의 프로젝트가 포함 된 솔루션을 만듭니다 **Dsl** 하 고 **DslPackage**합니다.  
   
    > [!NOTE]
-   >  신뢰할 수 없는 소스에서 텍스트 템플릿을 실행 하려면 클릭 하지 경고를 생성 하는 메시지가 표시 되 면 **확인**합니다. 이 메시지가 다시 표시 하지를 설정할 수 있습니다.  
+   > 신뢰할 수 없는 소스에서 텍스트 템플릿을 실행 하려면 클릭 하지 경고를 생성 하는 메시지가 표시 되 면 **확인**합니다. 이 메시지가 다시 표시 하지를 설정할 수 있습니다.  
   
-##  <a name="settings"></a> DSL 디자이너 마법사 페이지  
+## <a name="settings"></a> DSL 디자이너 마법사 페이지  
  다양 한 해당 기본값에서 변경 되지 않은 필드를 둘 수 있습니다. 그러나 파일 확장명 필드를 설정 하는 해야 합니다.  
   
 ### <a name="solution-settings-page"></a>솔루션 설정 페이지  
@@ -101,15 +98,15 @@ ms.locfileid: "49908945"
   
  도구 또는 패키지의 목록에 표시 되 면 다음 중 하나를 수행 해야 합니다.  
   
--   다른 파일 확장명을 입력 합니다.  
+- 다른 파일 확장명을 입력 합니다.  
   
      \- 또는 -  
   
--   다시 설정 된 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 실험적 인스턴스. 이전에 만든 Dsl의 모든 등록을 취소 합니다. 에 **시작** 메뉴에서 클릭 **모든 프로그램**, **Microsoft Visual Studio 2010 SDK**, **도구**를 차례로 **다시 설정 합니다 Microsoft Visual Studio 2010 실험적 인스턴스**합니다. 다시 사용 하려는 다른 모든 Dsl을 다시 작성할 수 있습니다.  
+- 다시 설정 된 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 실험적 인스턴스. 이전에 만든 Dsl의 모든 등록을 취소 합니다. 에 **시작** 메뉴에서 클릭 **모든 프로그램**, **Microsoft Visual Studio 2010 SDK**, **도구**를 차례로 **다시 설정 합니다 Microsoft Visual Studio 2010 실험적 인스턴스**합니다. 다시 사용 하려는 다른 모든 Dsl을 다시 작성할 수 있습니다.  
   
      \- 또는 -  
   
--   경우는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장이 파일 확장명을 사용 하는 컴퓨터에 완전히 설치 되 면 제거 합니다. 에 **도구** 메뉴에서 클릭 **확장 관리자**합니다.  
+- 경우는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장이 파일 확장명을 사용 하는 컴퓨터에 완전히 설치 되 면 제거 합니다. 에 **도구** 메뉴에서 클릭 **확장 관리자**합니다.  
   
 ### <a name="product-settings-page"></a>제품 설정 페이지  
  **새 도메인 특정 언어에 속하는 제품의 이름은 무엇입니까?**  
@@ -136,7 +133,4 @@ ms.locfileid: "49908945"
   
 ## <a name="see-also"></a>참고 항목  
  [도메인 특정 언어를 정의 하는 방법](../modeling/how-to-define-a-domain-specific-language.md)   
- [도메인 특정 언어 도구 용어집](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

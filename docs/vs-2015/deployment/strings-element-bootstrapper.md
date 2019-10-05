@@ -1,14 +1,9 @@
 ---
 title: '&lt;문자열&gt; 요소 (부트스트래퍼) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.NoStringsForCulture
 - MSBuild.GenerateBootstrapper.ProductCultureNotFound
@@ -23,13 +18,13 @@ ms.assetid: d5ea3613-5fc9-4a11-bef3-46a01178bf60
 caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 3bd559054202d59fd4ca035b7d72cd89a872c544
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: dd799020e50121e2f3e9a6ba7ad90fd79a1241cb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62421527"
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;문자열&gt; 요소 (부트스트래퍼)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +52,7 @@ ms.locfileid: "49177361"
   
 |특성|설명|  
 |---------------|-----------------|  
-|`Name`|필수. 문자열의 이름입니다.|  
+|`Name`|필수 요소. 문자열의 이름입니다.|  
   
 ## <a name="example"></a>예제  
  다음 코드 예제 모두에 대 한 영어 문자열이 지정 된 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 설치 관리자입니다.  
@@ -82,7 +77,4 @@ ms.locfileid: "49177361"
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [\<패키지 > 요소](../deployment/package-element-bootstrapper.md)
-
-
-
+ [\<Package> 요소](../deployment/package-element-bootstrapper.md)

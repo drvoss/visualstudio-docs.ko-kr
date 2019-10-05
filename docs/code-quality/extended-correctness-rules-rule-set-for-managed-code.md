@@ -1,29 +1,29 @@
 ---
 title: 관리 코드에 대한 확장 수정 규칙 규칙 집합
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 5b181f5b-6c7a-4e46-a783-360e1da427a0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 000b1780b0124d579ed0b9481c7d18966663ca51
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9ec1bdaf421e3976872a3460dc22fecd24b4386b
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987316"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585115"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>관리 코드에 대한 확장 수정 규칙 규칙 집합
-코드 분석에서 보고 하는 논리 및 프레임 워크 사용 오류를 최대화 하는 Microsoft 확장 수정 규칙 규칙 집합입니다. COM 상호 운용성 및 모바일 응용 프로그램 같은 특정 시나리오에 주안점을 둡니다. 프로젝트 또는 프로젝트의 추가 문제 찾기 이러한 시나리오 중 하나가 적용 되는 경우이 규칙 집합을 포함 하는 것이 좋습니다.
 
- Microsoft 확장 수정 규칙 규칙 집합 Microsoft 기본 수정 규칙 규칙에 설정 된 규칙을 포함 합니다. 기본 수정 규칙 Microsoft 최소 권장 규칙 규칙에 설정 된 규칙을 포함 합니다. 자세한 내용은 참조 [관리 되는 코드에 대 한 기본 수정 규칙 규칙 집합](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) 고 [관리 코드에 대 한 관리 권장 규칙 규칙 집합](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+Microsoft 확장 수정 규칙 규칙 집합은 코드 분석을 통해 보고 되는 논리 및 프레임 워크 사용 오류를 최대화 합니다. COM 상호 운용성 및 모바일 응용 프로그램과 같은 특정 시나리오에 대 한 추가 강조가 있습니다. 이러한 시나리오 중 하나가 프로젝트에 적용 되거나 프로젝트에서 추가 문제를 발견 하는 경우이 규칙 집합을 포함 하는 것을 고려해 야 합니다.
 
- 다음 표에 모든 Microsoft 확장 수정 규칙 규칙 집합에 있는 규칙이 있습니다.
+Microsoft 확장 수정 규칙 규칙 집합에는 [관리 권장 규칙](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) 규칙 집합에 있는 규칙을 포함 하는 [기본 수정 규칙](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) 규칙 집합에 있는 규칙이 포함 됩니다.
 
-|규칙|설명|
+다음 표에서는 Microsoft 확장 수정 규칙 규칙 집합의 모든 규칙에 대해 설명 합니다.
+
+|규칙|Description|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|삭제 가능한 필드가 있는 형식은 삭제 가능해야 합니다.|
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|이벤트 처리기를 제대로 선언하십시오.|

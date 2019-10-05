@@ -1,14 +1,9 @@
 ---
 title: 디버거에서 데이터 보기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -27,13 +22,13 @@ ms.assetid: 13e1105f-f987-402e-9108-ec6ac12be042
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b5409f74a3e6be8f075155a2f87a35006209ea24
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1ade6c38a8edd73c181a3f135dd5e967901bf63f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178920"
 ---
 # <a name="viewing-data-in-the-debugger"></a>디버거에서 데이터 보기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,6 +45,3 @@ ms.locfileid: "51793102"
  [Debugger Basics](../debugger/debugger-basics.md) (디버거 기본 사항)  
  [명령 창](../ide/reference/command-window.md)   
  [디버거 보안](../debugger/debugger-security.md)
-
-
-

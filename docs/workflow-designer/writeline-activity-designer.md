@@ -2,21 +2,20 @@
 title: 워크플로 디자이너-WriteLine 활동 디자이너
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.WriteLine.UI
 ms.assetid: 1b5f29a8-b7fd-477e-949e-2f689cae3c96
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: baea87d2ab750da3ee0cfef2450ec0ad04d231cc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 17dd6e3c617749d82533d8bccb7f0caaa073ac26
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838622"
 ---
 # <a name="writeline-activity-designer"></a>WriteLine 활동 디자이너
 
@@ -34,7 +33,7 @@ ms.locfileid: "53857545"
 
 다음 표에서는 <xref:System.Activities.Statements.WriteLine> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. 이러한 속성은 속성 표에서 편집할 수 있습니다 하 고 그 중 일부는 워크플로 디자이너 화면에서 편집할 수 있습니다.
 
-|속성 이름|필수|용도|
+|속성 이름|필수|사용|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.WriteLine> 활동의 이름입니다. 기본값은 WriteLine입니다. <xref:System.Activities.Activity.DisplayName%2A>은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
 |<xref:System.Activities.Statements.WriteLine.Text%2A>|False|쓸 텍스트입니다. 속성을 설정 하려면 Visual Basic 식을 입력 합니다 **텍스트** 상자에 **WriteLine** 활동 디자이너나 속성 표의 합니다.|

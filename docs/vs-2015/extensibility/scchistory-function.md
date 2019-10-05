@@ -1,14 +1,9 @@
 ---
 title: SccHistory 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccHistory
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: a636d9d3-47c1-4b48-ac6b-bcfde19d6cf9
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8621b437cd21d0294abee65386c40465888bd3e8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8df85c03201e46768c43fb64cc41b7fa081eb91a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446815"
 ---
 # <a name="scchistory-function"></a>SccHistory 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,9 +76,8 @@ SCCRTN SccHistory(
  특정 상황에서,이 호출의 실행 하는 동안 검사할 파일이 변경 될 수 있습니다. 예를 들어를 [!INCLUDE[vsvss](../includes/vsvss-md.md)] 기록 명령은 사용자 파일의 이전 버전을 가져올 수 있는 기회를 제공 합니다. 이러한 경우에는 소스 제어 플러그 인 반환 `SCC_I_RELOAD` 경고 IDE 파일 다시 로드 해야 합니다.  
   
 > [!NOTE]
->  소스 제어 플러그 인 파일의 배열에 대해이 함수를 지원 하지 않으면, 첫 번째 파일에 대 한 파일 히스토리만 표시할 수 있습니다.  
+> 소스 제어 플러그 인 파일의 배열에 대해이 함수를 지원 하지 않으면, 첫 번째 파일에 대 한 파일 히스토리만 표시할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [원본 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)
-

@@ -1,14 +1,9 @@
 ---
-title: 'DA0006: 값 형식에 대해 Equals()를 재정의하십시오. | Microsoft Docs'
-ms.custom: ''
+title: 'DA0006: 값 형식에 대해 Equals() 재정의 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAOverrideEquals
 - vs.performance.6
@@ -18,15 +13,15 @@ ms.assetid: 4d85bdd6-b571-47e0-afd6-ba3764e4eed5
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a60bc533ccc826b09e288e7d8ca934702f0443e5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2229edad7ff338251fea23740343e23f87aa2792
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158675"
 ---
-# <a name="da0006-override-equals-for-value-types"></a>DA0006: 값 형식에 대해 Equals()를 재정의하십시오.
+# <a name="da0006-override-equals-for-value-types"></a>DA0006: 값 형식에 대해 Equals() 재정의
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 규칙 Id | DA0006 |  
@@ -44,7 +39,4 @@ ms.locfileid: "51768305"
  Equals 및 같음 연산자를 재정의하는 방법에 대한 자세한 내용은 [Equals 및 같음 연산자(==) 구현 지침](http://go.microsoft.com/fwlink/?LinkId=177818)을 참조하세요.  
   
 ## <a name="how-to-investigate-a-warning"></a>경고를 조사하는 방법  
- Equals 및 같음 연산자 구현의 예는 코드 분석 규칙 [CA1815: 값 형식에서 Equals 또는 같음 연산자를 재정의하십시오.](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)를 참조하세요.
-
-
-
+ Equals 및 같음 연산자 구현의 예는 코드 분석 규칙 [CA1815: 값 형식에서 Equals 또는 같음 연산자 재정의](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)를 참조하세요.

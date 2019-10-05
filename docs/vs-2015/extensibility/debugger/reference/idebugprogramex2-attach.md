@@ -1,14 +1,9 @@
 ---
 title: IDebugProgramEx2::Attach | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProgramEx2::Attach
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 33b22b2f-431e-4205-9441-d28a9c928c97
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ea96fab360df7b23090ba93918a5bff60a31ea32
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4fe729f2fc196380a3db1a60d1c32f62bbd70998
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439165"
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -65,8 +60,7 @@ int Attach( 
  프로그램을 포함 하는 포트에 값을 사용할 수 `pSession` 세션 프로그램에 연결 하려고 합니다. 확인 하려면. 예를 들어, 포트를 프로세스에 연결 하는 한 번에 하나만 디버그 세션을 허용 하는 경우 포트 동일한 세션 프로세스에서 다른 프로그램에 이미 연결 되어 있는지 확인할 수 있습니다.  
   
 > [!NOTE]
->  인터페이스에 전달 된 `pSession` 쿠키를 고유 하 게이 프로그램에 연결 하 여 세션 디버그 관리자를 식별 하는 값으로 서만 처리할지 제공 된 인터페이스의 메서드는 작동 합니다.  
+> 인터페이스에 전달 된 `pSession` 쿠키를 고유 하 게이 프로그램에 연결 하 여 세션 디버그 관리자를 식별 하는 값으로 서만 처리할지 제공 된 인터페이스의 메서드는 작동 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)
-

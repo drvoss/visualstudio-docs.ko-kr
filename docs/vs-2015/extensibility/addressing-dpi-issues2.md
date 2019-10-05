@@ -1,21 +1,17 @@
 ---
 title: DPI Issues2 주소 지정 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 542676de0efabcfa58945fc1572fc5539f52c209
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9b8bc5963ba9263d72800cc473cfa56324884ace
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752529"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699265"
 ---
 # <a name="addressing-dpi-issues"></a>DPI 문제 해결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,9 +94,9 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
   
 - LogicalToDeviceUnitsX/LogicalToDeviceUnitsY (함수 X에서 크기 조정을 허용 / Y 축)  
   
-- int 공간 = DpiHelper.LogicalToDeviceUnitsX (10).  
+- int space = DpiHelper.LogicalToDeviceUnitsX (10);  
   
-- int 높이 VsUI::DpiHelper::LogicalToDeviceUnitsY(5); =  
+- int height = VsUI::DpiHelper::LogicalToDeviceUnitsY(5);  
   
   Rect, 지점 및 크기와 같은 개체 확장을 허용 하려면 LogicalToDeviceUnits 오버 로드가 있습니다.  
   
@@ -120,19 +116,19 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
 ```  
   
 > [!NOTE]
->  모듈 수준 또는 클래스 수준 정적 변수에서 도우미 함수를 사용 하지 마세요. 스레드 동기화에 대 한 라이브러리도 사용 하 여 정적 및 순서 초기화 문제를 발생할 수 있습니다. 비정적 멤버 변수를 해당 정적 변환 하거나 (따라서 첫 번째 액세스에서 생성 되는) 함수를 래핑하십시오.  
+> 모듈 수준 또는 클래스 수준 정적 변수에서 도우미 함수를 사용 하지 마세요. 스레드 동기화에 대 한 라이브러리도 사용 하 여 정적 및 순서 초기화 문제를 발생할 수 있습니다. 비정적 멤버 변수를 해당 정적 변환 하거나 (따라서 첫 번째 액세스에서 생성 되는) 함수를 래핑하십시오.  
   
  Visual Studio 환경 내에서 실행 되는 관리 되는 코드에서 DPI 도우미 함수에 액세스 합니다.  
   
--   사용 하는 프로젝트 셸을 MPF의 최신 버전을 참조 해야 합니다. 예를 들어:  
+- 사용 하는 프로젝트 셸을 MPF의 최신 버전을 참조 해야 합니다. 예를 들어:  
   
     ```csharp  
     <Reference Include="Microsoft.VisualStudio.Shell.14.0.dll" />  
     ```  
   
--   프로젝트에 대 한 참조를 확인 하십시오 **System.Windows.Forms**를 **PresentationCore**, 및 **PresentationUI**합니다.  
+- 프로젝트에 대 한 참조를 확인 하십시오 **System.Windows.Forms**를 **PresentationCore**, 및 **PresentationUI**합니다.  
   
--   코드를 사용 합니다 **Microsoft.VisualStudio.PlatformUI** DpiHelper 클래스의 정적 함수 네임 스페이스를 호출 합니다. 지원 되는 형식 (점, 크기, 사각형 및 등)에 새 반환 하는 확장 함수 개체를 확장 제공. 예를 들어:  
+- 코드를 사용 합니다 **Microsoft.VisualStudio.PlatformUI** DpiHelper 클래스의 정적 함수 네임 스페이스를 호출 합니다. 지원 되는 형식 (점, 크기, 사각형 및 등)에 새 반환 하는 확장 함수 개체를 확장 제공. 예를 들어:  
   
     ```csharp  
     using Microsoft.VisualStudio.PlatformUI;  
@@ -151,7 +147,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
 - 메뉴 항목과도 해 이미지에 대 한는 <xref:System.Windows.Media.BitmapScalingMode> 기타 왜곡 아티팩트 허용량 (%200 및 300%)에서 제거를 수행 해도 해당 하는 경우에 사용 해야 합니다.  
   
-- • 대형 확대/축소 수준 퍼지 바랜 UI에서 이중 큐빅 결과 사용 하 여의 해 이미지를 크기 조정 (예를 들어 250% 또는 %350), 100%의 배수로 청구 되지 않습니다. 첫 번째 100% (예: 200% 또는 300%)의 가장 큰 배수로 NearestNeighbor 사용 하 여 이미지 크기 조정 및 여기에서 이중 큐빅을 사용 하 여 크기 조정 하 여 더 나은 결과 얻습니다. 특수 한 사례를 참조 하세요: 자세한 수준 큰 DPI에 대 한 WPF 이미지 prescaling 합니다.  
+- • 대형 확대/축소 수준 퍼지 바랜 UI에서 이중 큐빅 결과 사용 하 여의 해 이미지를 크기 조정 (예를 들어 250% 또는 %350), 100%의 배수로 청구 되지 않습니다. 첫 번째 100% (예: 200% 또는 300%)의 가장 큰 배수로 NearestNeighbor 사용 하 여 이미지를 확장 하 여 더 나은 결과 가져옵니다. 및 여기에서 이중 큐빅을 사용 하 여 크기 조정 합니다. 특수 한 사례를 참조 하세요: 자세한 수준 큰 DPI에 대 한 WPF 이미지 prescaling 합니다.  
   
   Microsoft.VisualStudio.PlatformUI 네임 스페이스의 DpiHelper 클래스 멤버를 제공 <xref:System.Windows.Media.BitmapScalingMode> 바인딩에 사용할 수 있습니다. Visual Studio shell은 비트맵 배율 조정을 제품 전체에서 일관 되 게 DPI 배율에 따라 제어 하는 허용 됩니다.  
   
@@ -169,7 +165,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
  일부 UI는 Visual Studio 텍스트 편집기 및 디자이너 WPF 기반 (WPF 데스크톱 및 Windows 스토어)와 같은 시스템 집합 DPI 확대/축소 수준을 독립적으로 확장할 수 있습니다. 이러한 경우 DpiHelper.BitmapScalingMode 해야 사용할 수 없습니다. 편집기에서이 문제를 해결 하려면 사용자 지정 속성을 생성 하는 IDE 팀 RenderOptions.BitmapScalingMode 제목 있습니다. 시스템 및 UI의 결합 된 확대/축소 수준에 따라 HighQuality 또는 NearestNeighbor 해당 속성 값을 설정 합니다.  
   
 ## <a name="special-case-prescaling-wpf-images-for-large-dpi-levels"></a>특별 한 경우: prescaling 큰 DPI 수준에 대 한 WPF 이미지  
- 100% (예를 들어 250%, 350%, 및 등)의 배수로 청구 되지 않는 매우 큰 확대/축소 수준에 대 한 유사 항목 바랜 UI에서 이중 큐빅 결과로도 해 이미지 크기를 조정 합니다. 선명한 텍스트와 함께 이러한 이미지 중 인상을 광학 감을의 거의 경우 텍스트와 관련 하 여 포커스 눈에 가깝게 이미지가 나타납니다. 첫 번째 100% (예: 200% 또는 300%)의 가장 큰 배수로 NearestNeighbor 사용 하 여 이미지 크기 조정 및 나머지 (추가 50%)을 이중 큐빅을 사용 하 여 크기 조정 하 여이 확대 크기로 크기 조정 결과 개선할 수 있습니다.  
+ 100% (예를 들어 250%, 350%, 및 등)의 배수로 청구 되지 않는 매우 큰 확대/축소 수준에 대 한 유사 항목 바랜 UI에서 이중 큐빅 결과로도 해 이미지 크기를 조정 합니다. 선명한 텍스트와 함께 이러한 이미지 중 인상을 광학 감을의 거의 경우 텍스트와 관련 하 여 포커스 눈에 가깝게 이미지가 나타납니다. 첫 번째 100% (예: 200% 또는 300%)의 가장 큰 배수로 NearestNeighbor 사용 하 여 이미지를 확장 하 여이 확대 크기로 크기 조정 결과 향상 시킬 수 있습니다. 및 이중 큐빅 나머지 (추가 50%)를 사용 하 여 크기 조정 합니다.  
   
  다음은 결과의 차이점에 대 한 예로 첫 번째 이미지 크기가 조정 되는 100%-> 향상 된 double 크기 조정 알고리즘을 사용 하 여 200% 250%->. 및-> 250% 이중 큐빅 100%가 포함 된 두 번째입니다.  
   
@@ -177,7 +173,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
   
  각 이미지 요소를 표시 하는 것에 대 한이 이중 확장, XAML 태그를 사용 하는 UI를 사용 하도록 설정 하려면 할 수정할 수 있습니다. 다음 예제에서는 Shell.12/14 고 DpiHelper 라이브러리를 사용 하 여 Visual Studio에서 WPF에서 이중 확장을 사용 하는 방법을 보여 줍니다.  
   
- 1 단계: 300%, 200%, 이미지 Prescale 등에 NearestNeighbor를 사용 하 여입니다.  
+ 1단계: 200%, 300% 등에 NearestNeighbor를 사용 하 여 이미지를 prescale입니다.  
   
  바인딩 또는 XAML 태그 확장을 사용 하 여 적용할 변환기를 사용 하 여 이미지를 prescale입니다. 예를 들어:  
   
@@ -207,17 +203,17 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 </Image>  
 ```  
   
- 2 단계: 현재 DPI에 최종 크기가 올바른지 확인 합니다.  
+ 2단계: 현재 DPI에 최종 크기가 올바른지 확인 하십시오.  
   
  WPF UI UIElement 설정 BitmapScalingMode 속성을 사용 하 여 현재 dpi를 확장 하기 때문에 해당 소스 2-3 배 보다 크게 보입니다 prescaled 이미지를 사용 하 여 이미지 컨트롤을 해야 합니다. 다음은이 효과 대처 하는 몇 가지 방법입니다.  
   
--   100%에 원본 이미지의 치수를 알고 있는 경우 이미지 컨트롤의 정확한 크기를 지정할 수 있습니다. 이러한 크기 확장 하기 전에 UI의 크기를 적용 하는 내용을 반영 합니다.  
+- 100%에 원본 이미지의 치수를 알고 있는 경우 이미지 컨트롤의 정확한 크기를 지정할 수 있습니다. 이러한 크기 확장 하기 전에 UI의 크기를 적용 하는 내용을 반영 합니다.  
   
     ```xaml  
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" Width="16" Height="16" />  
     ```  
   
--   원본 이미지의 크기를 알 수 없는 경우는 LayoutTransform 최종 이미지 개체 축소를 사용할 수 있습니다. 예를 들어:  
+- 원본 이미지의 크기를 알 수 없는 경우는 LayoutTransform 최종 이미지 개체 축소를 사용할 수 있습니다. 예를 들어:  
   
     ```xaml  
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" >  
@@ -232,7 +228,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 ## <a name="enabling-hdpi-support-to-the-weboc"></a>WebOC HDPI 지원을 사용 하도록 설정  
  기본적으로 WebOC 컨트롤 (예: WPF 또는 IWebBrowser2 인터페이스에서 WebBrowser 컨트롤) HDPI 검색 및 지원을 사용 하도록 설정 하지 않습니다. 결과 고해상도 디스플레이에 너무 작으면 콘텐츠 표시를 사용 하 여 포함 된 컨트롤 됩니다. 다음 특정 웹 WebOC 인스턴스에서 높은 DPI 지원을 사용 하도록 설정 하는 방법을 설명 합니다.  
   
- IDocHostUIHandler 인터페이스 구현 (MSDN 문서를 참조 합니다 [IDocHostUIHandler](http://msdn.microsoft.com/library/aa753260.aspx) 인터페이스):  
+ IDocHostUIHandler 인터페이스 구현 (MSDN 문서를 참조 합니다 [IDocHostUIHandler](https://msdn.microsoft.com/library/aa753260.aspx) 인터페이스):  
   
 ```idl  
 [ComImport, InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  
@@ -311,7 +307,7 @@ public interface IDocHostUIHandler
     }   
 ```  
   
- 필요에 따라 ICustomDoc 인터페이스를 구현 (MSDN 문서를 참조 합니다 [ICustomDoc](http://msdn.microsoft.com/library/aa753272.aspx) 인터페이스):  
+ 필요에 따라 ICustomDoc 인터페이스를 구현 (MSDN 문서를 참조 합니다 [ICustomDoc](https://msdn.microsoft.com/library/aa753272.aspx) 인터페이스):  
   
 ```idl  
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  
@@ -348,9 +344,9 @@ public int GetHostInfo(DOCHOSTUIINFO info)
   
 ## <a name="tips"></a>팁  
   
-1.  WebOC 컨트롤에 문서 속성이 변경 되 면 IDocHostUIHandler 클래스를 사용 하 여 문서를 다시 연결 해야 합니다.  
+1. WebOC 컨트롤에 문서 속성이 변경 되 면 IDocHostUIHandler 클래스를 사용 하 여 문서를 다시 연결 해야 합니다.  
   
-2.  위의 작동 하지 않는 경우 변경 된 DPI 플래그를 가져오지 WebOC의 알려진된 문제가 있습니다. 이 문제를 해결 하는 가장 안정적인 방법은 확대/축소 비율에 대 한 서로 다른 두 값을 사용 하 여 두 개의 호출을 의미 하 고 WebOC의 광학 확대/축소를 설정/해제 방법은입니다. 또한이 해결 방법은 필요한 경우 탐색 호출할 때마다 수행 해야 할 수 있습니다.  
+2. 위의 작동 하지 않는 경우 변경 된 DPI 플래그를 가져오지 WebOC의 알려진된 문제가 있습니다. 이 문제를 해결 하는 가장 안정적인 방법은 확대/축소 비율에 대 한 서로 다른 두 값을 사용 하 여 두 개의 호출을 의미 하 고 WebOC의 광학 확대/축소를 설정/해제 방법은입니다. 또한이 해결 방법은 필요한 경우 탐색 호출할 때마다 수행 해야 할 수 있습니다.  
   
     ```csharp  
     // browser2 is a SHDocVw.IWebBrowser2 in this case  
@@ -366,4 +362,3 @@ public int GetHostInfo(DOCHOSTUIINFO info)
                        ref commandOutput);  
     }  
     ```
-

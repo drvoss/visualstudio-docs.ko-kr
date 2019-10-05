@@ -1,14 +1,9 @@
 ---
 title: 명령 별칭 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - aliases, Visual Studio commands
 - Visual Studio, commands
@@ -21,17 +16,16 @@ ms.assetid: de8bb378-8c1c-4087-a9a5-537fa8314c19
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0caaea4b3bdb8c3b1018006f2943e49ac545744d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 573c120aafdf520b137e3fb50251ed8606f5c43a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052512"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160887"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
-
 
 별칭은 명령을 실행하는 데 필요한 텍스트를 단축함으로써 **찾기/명령** 상자 또는 **명령** 창에 명령을 입력하는 수단을 제공합니다. 예를 들어 **열려 있는 파일** 대화 상자를 표시하는 `>File.OpenFile`을 입력하는 대신 미리 정의된 별칭인 `>of`를 사용할 수 있습니다.
 
@@ -41,12 +35,12 @@ ms.locfileid: "53052512"
 
  다음 표에는 미리 정의된 Visual Studio 명령 별칭 목록이 포함되어 있습니다. 일부 명령에는 두 개 이상의 미리 정의된 별칭이 있습니다. 올바른 구문, 인수 및 해당 명령의 스위치에 대해 설명하는 자세한 항목을 표시하려면 아래의 명령 이름에 대한 링크를 클릭합니다.
 
-|명령 이름|Alias|전체 이름|
+|명령 이름|별칭|전체 이름|
 |------------------|-----------|-------------------|
 |[인쇄 명령](../../ide/reference/print-command.md)|?|Debug.Print|
 |[간략한 조사식 명령](../../ide/reference/quick-watch-command.md)|??|Debug.Quickwatch|
 |새 프로젝트 추가|AddProj|File.AddNewProject|
-|[별칭 명령](../../ide/reference/alias-command.md)|Alias|Tools.Alias|
+|[별칭 명령](../../ide/reference/alias-command.md)|별칭|Tools.Alias|
 |자동 창|자동|디버그.자동|
 |중단점 창|bl|디버그.중단점|
 |중단점 설정/해제|bp|Debug.ToggleBreakPoint|
@@ -56,8 +50,8 @@ ms.locfileid: "53052512"
 |모든 문서 닫기|CloseAll|Window.CloseAllDocuments|
 |모두 지우기|cls|Edit.ClearAll|
 |명령 모드|cmd|보기.명령창|
-|코드 보기|코드|보기.코드보기|
-|[메모리 목록 표시 명령](../../ide/reference/list-memory-command.md)|일|Debug.ListMemory|
+|코드 보기|code|보기.코드보기|
+|[메모리 목록 표시 명령](../../ide/reference/list-memory-command.md)|d|Debug.ListMemory|
 |ANSI로 [메모리 목록 표시 명령](../../ide/reference/list-memory-command.md)|da|Debug.ListMemory /Ansi|
 |[메모리 명령 목록](../../ide/reference/list-memory-command.md) One Byte 형식|db|Debug.ListMemory /Format:OneByte|
 |Four Byte 형식인 ANSI로 [메모리 명령 목록](../../ide/reference/list-memory-command.md)|dc|Debug.ListMemory /Format:FourBytes /Ansi|
@@ -71,13 +65,13 @@ ms.locfileid: "53052512"
 |[메모리 명령 목록](../../ide/reference/list-memory-command.md) Eight Byte 형식|dq|Debug.ListMemory /Format:EightBytes|
 |Unicode로 [메모리 목록 표시 명령](../../ide/reference/list-memory-command.md)|du|Debug.ListMemory /Unicode|
 |[문 실행 명령](../../ide/reference/evaluate-statement-command.md)|eval|Debug.EvaluateStatement|
-|끝내기|끝내기|File.Exit|
-|선택 영역 서식|format|편집.선택영역서식|
-|전체 화면|전체 화면|보기.전체화면|
+|종료|종료|File.Exit|
+|선택 영역 서식|형식|편집.선택영역서식|
+|전체 화면|FullScreen|보기.전체화면|
 |[시작 명령](../../ide/reference/start-command.md)|g|디버그.시작|
 |[이동 명령](../../ide/reference/go-to-command.md)|GotoLn|편집.이동|
 |중괄호로 이동|GotoBrace|Edit.GotoBrace|
-|F1도움말|도움말|도움말.F1도움말|
+|F1도움말|Help|도움말.F1도움말|
 |직접 실행 모드|immed|Tools.ImmediateMode|
 |텍스트로 파일 삽입|InsertFile|Edit.InsertFileAsText|
 |[호출 스택 목록 표시 명령](../../ide/reference/list-call-stack-command.md)|kb|Debug.ListCallStack|
@@ -86,7 +80,7 @@ ms.locfileid: "53052512"
 |줄 삭제|LineDel|편집.줄삭제|
 |멤버 목록|ListMembers|편집.멤버목록|
 |지역 창|로컬|디버그.지역|
-|[명령 창 출력 로그 명령](../../ide/reference/log-command-window-output-command.md)|로그|Tools.LogCommandWindowOutput|
+|[명령 창 출력 로그 명령](../../ide/reference/log-command-window-output-command.md)|Log|Tools.LogCommandWindowOutput|
 |명령 창 표시 모드|mark|Tools.CommandWindowMarkMode|
 |메모리 창|Memory Memory1|디버그.메모리1|
 |메모리 창 2|Memory2|디버그.메모리2|
@@ -107,7 +101,7 @@ ms.locfileid: "53052512"
 |파일 인쇄|print|파일.인쇄|
 |속성 창|props|보기.속성창|
 |Stop|q|디버그.디버깅중지|
-|다시 실행|redo|편집.다시실행|
+|Redo|다시 실행(redo)|편집.다시실행|
 |레지스터 창|레지스터|디버그.레지스터|
 |커서까지 실행|rtc|디버그.커서까지실행|
 |선택한 항목 저장|저장|파일.선택한항목저장|
@@ -126,12 +120,12 @@ ms.locfileid: "53052512"
 |도구 상자 창|도구 상자|보기.도구상자|
 |[디스어셈블리 목록 표시 명령](../../ide/reference/list-disassembly-command.md)|u|Debug.ListDisassembly|
 |대문자로|Ucase|편집.대문자로|
-|실행 취소|undo|편집.실행취소|
+|실행 취소|실행 취소|편집.실행취소|
 |선택 영역을 탭으로 바꾸지 않음|Untabify|Edit.UntabifySelection|
 |조사식 창|조사식|Debug.WatchN|
 |자동 줄 바꿈 설정/해제|WordWrap|편집.자동줄바꿈설정해제|
 |프로세스 목록 표시|&#124;|Debug.ListProcesses|
 |[스레드 목록 표시 명령](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [Visual Studio 명령](../../ide/reference/visual-studio-commands.md) [명령 창](../../ide/reference/command-window.md) [찾기/명령 상자](../../ide/find-command-box.md)

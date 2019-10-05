@@ -1,68 +1,63 @@
 ---
-title: '연습: 내 첫 번째 WPF 데스크톱 응용 프로그램2 | Microsoft Docs'
-ms.custom: ''
+title: '연습: 내 첫 WPF 데스크톱 응용 프로그램 2 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 3c460fa9-2ea1-413f-ae54-54a1f2a499d1
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7d8af02051774b744f9229e15a6184603c4d9f6b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bee99bc546eca3787db1f9cd082359afb6881d10
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421143"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>연습: 내 첫 WPF 데스크톱 응용 프로그램
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-name = "소개" ></a> 이 연습에서는 Windows Presentation Foundation (WPF) 개발에 대해 소개 합니다. XAML 태그, 코드 숨김, 응용 프로그램 정의, 컨트롤, 레이아웃, 데이터 바인딩, 스타일 등 대부분의 WPF 데스크톱 응용 프로그램에 공통된 요소를 포함하는 기본 응용 프로그램을 만듭니다.  
+name = "소개" ></a> 이 연습에서는 Windows Presentation Foundation (WPF) 개발에 대해 소개 합니다. 대부분의 WPF 데스크톱 응용 프로그램에 공통 된 요소를 포함 하는 기본 응용 프로그램을 만듭니다. XAML 태그, 코드 숨김, 응용 프로그램 정의 컨트롤, 레이아웃, 데이터 바인딩 및 스타일.  
   
-##  <a name="Create_The_Application_Code_Files"></a> 응용 프로그램 프로젝트 만들기  
- 이 섹션에서는 프로젝트와 주 창 또는 폼을 포함하는 응용 프로그램 인프라를 만듭니다.  
+## <a name="Create_The_Application_Code_Files"></a> 응용 프로그램 프로젝트 만들기  
+ 이 섹션에서는 프로젝트와 주 창 또는 폼을 포함하는 애플리케이션 인프라를 만듭니다.  
   
 #### <a name="to-create-the-project"></a>프로젝트를 만들려면  
   
-1.  메뉴 모음에서 **파일**, **새로 만들기**, **프로젝트**를 차례로 선택합니다.  
+1. 메뉴 모음에서 **파일**, **새로 만들기**, **프로젝트**를 차례로 선택합니다.  
   
-2.  **새 프로젝트** 대화 상자에서 **Visual C#** 또는 **Visual Basic** 노드를 확장하고 **Windows** 노드를 선택한 다음 **Windows** 노드를 확장하고 **클래식 바탕 화면** 노드를 선택합니다.  
+2. **새 프로젝트** 대화 상자에서 **Visual C#** 또는 **Visual Basic** 노드를 확장하고 **Windows** 노드를 선택한 다음 **Windows** 노드를 확장하고 **클래식 바탕 화면** 노드를 선택합니다.  
   
-3.  템플릿 목록에서 **WPF 응용 프로그램** 템플릿을 선택합니다.  
+3. 템플릿 목록에서 **WPF 애플리케이션** 템플릿을 선택합니다.  
   
-4.  **이름** 텍스트 상자에 `ExpenseIt`를 입력하고 **확인** 단추를 선택합니다.  
+4. **이름** 텍스트 상자에 `ExpenseIt`를 입력하고 **확인** 단추를 선택합니다.  
   
-     프로젝트가 생성되고 프로젝트 파일이 **솔루션 탐색기**에 추가된 다음 **MainWindow.xaml** 이라는 기본 응용 프로그램 창에 대한 디자이너가 표시됩니다.  
+     프로젝트가 생성되고 프로젝트 파일이 **솔루션 탐색기**에 추가된 다음 **MainWindow.xaml** 이라는 기본 애플리케이션 창에 대한 디자이너가 표시됩니다.  
   
 #### <a name="to-modify-the-main-window"></a>주 창을 수정하려면  
   
-1.  디자이너에서 활성 디자이너 탭이 아닌 경우 **MainWindow.xaml** 탭을 선택합니다.  
+1. 디자이너에서 활성 디자이너 탭이 아닌 경우 **MainWindow.xaml** 탭을 선택합니다.  
   
-2.  C#을 사용하는 경우 `<Window x:Class="ExpenseIt.MainWindow"` 줄을 찾아서 `<NavigationWindow x:Class="ExpenseIt.MainWindow"`로 바꿉니다.  
+2. C#을 사용하는 경우 `<Window x:Class="ExpenseIt.MainWindow"` 줄을 찾아서 `<NavigationWindow x:Class="ExpenseIt.MainWindow"`로 바꿉니다.  
   
      Visual Basic을 사용하는 경우 `<Window x:Class=" MainWindow"` 줄을 찾아서 `<NavigationWindow x:Class="MainWindow"`로 바꿉니다.  
   
      `<Window` 태그를 `<NavigationWindow`로 변경하는 경우 Intellisense가 자동으로 닫는 태그를 `</NavigationWindow>` 로 변경합니다.  
   
     > [!NOTE]
-    >  태그를 변경한 후 **오류 목록** 창이 열려 있으면 여러 오류가 표시될 수도 있습니다. 다음 몇 단계의 변경 작업을 수행하면 이러한 오류가 사라집니다.  
+    > 태그를 변경한 후 **오류 목록** 창이 열려 있으면 여러 오류가 표시될 수도 있습니다. 다음 몇 단계의 변경 작업을 수행하면 이러한 오류가 사라집니다.  
   
-3.  `<Grid>` 및 `</Grid>` 태그를 선택하고 삭제합니다.  
+3. `<Grid>` 및 `</Grid>` 태그를 선택하고 삭제합니다.  
   
      **NavigationWindow** 는 **Grid**와 같은 기타 UI 요소를 포함할 수 없습니다.  
   
-4.  **속성** 창에서 **일반** 범주 노드를 확장하고 **Title** 속성을 선택한 다음 `ExpenseIt` 를 입력하고 **Enter** 키를 누릅니다.  
+4. **속성** 창에서 **일반** 범주 노드를 확장하고 **Title** 속성을 선택한 다음 `ExpenseIt` 를 입력하고 **Enter** 키를 누릅니다.  
   
      XAML 창의 **Title** 요소가 새 값과 일치하도록 변경됩니다. XAML 창 또는 **속성** 창에서 XAML 속성을 수정할 수 있으며 변경 내용이 동기화됩니다.  
   
-5.  XAML 창에서 **Height** 요소의 값을 `375`로 설정하고 **Width** 속성의 값을 `500`서 무료 평가판 계정을 등록할 수 있습니다.  
+5. XAML 창에서 **Height** 요소의 값을 `375`로 설정하고 **Width** 속성의 값을 `500`서 무료 평가판 계정을 등록할 수 있습니다.  
   
      이러한 요소는 **속성** 창의 **레이아웃** 범주에 있는 **Height** 및 **Width** 속성에 해당합니다.  
   
@@ -98,26 +93,26 @@ name = "소개" ></a> 이 연습에서는 Windows Presentation Foundation (WPF) 
   
 #### <a name="to-modify-the-code-behind-file-c"></a>코드 숨김 파일을 수정하려면(C#)  
   
-1.  **솔루션 탐색기**에서 **MainWindow.xaml** 노드를 확장하고 **MainWindow.xaml.cs** 파일을 엽니다.  
+1. **솔루션 탐색기**에서 **MainWindow.xaml** 노드를 확장하고 **MainWindow.xaml.cs** 파일을 엽니다.  
   
-2.  `public partial class MainWindow : Window` 줄을 찾아서 `public partial class MainWindow : NavigationWindow`로 바꿉니다.  
+2. `public partial class MainWindow : Window` 줄을 찾아서 `public partial class MainWindow : NavigationWindow`로 바꿉니다.  
   
      이렇게 하면 `MainWindow` 클래스가 `NavigationWindow`에서 파생되도록 변경됩니다. Visual Basic에서는 XAML에서 창을 변경할 때 이 작업이 자동으로 수행되므로 코드를 변경해야 합니다.  
   
-##  <a name="add_files_to_the_application"></a> 응용 프로그램에 파일 추가  
- 이 섹션에서는 응용 프로그램에 두 페이지와 이미지를 추가합니다.  
+## <a name="add_files_to_the_application"></a> 응용 프로그램에 파일 추가  
+ 이 섹션에서는 애플리케이션에 두 페이지와 이미지를 추가합니다.  
   
 #### <a name="to-add-a-home-screen"></a>홈 화면을 추가하려면  
   
-1.  **솔루션 탐색기**에서 **ExpenseIt** 노드의 바로 가기 메뉴를 열고 **추가**, **페이지**를 선택합니다.  
+1. **솔루션 탐색기**에서 **ExpenseIt** 노드의 바로 가기 메뉴를 열고 **추가**, **페이지**를 선택합니다.  
   
-2.  **새 항목 추가** 대화 상자에서 **이름** 텍스트 상자를 선택하고 `ExpenseItHome`를 입력하고 **추가** 단추를 선택합니다.  
+2. **새 항목 추가** 대화 상자에서 **이름** 텍스트 상자를 선택하고 `ExpenseItHome`를 입력하고 **추가** 단추를 선택합니다.  
   
-     이 페이지는 응용 프로그램을 시작할 때 표시되는 첫 번째 창입니다.  
+     이 페이지는 애플리케이션을 시작할 때 표시되는 첫 번째 창입니다.  
   
-3.  디자이너에서 활성 디자이너 탭이 아닌 경우 **ExpenseItHome.xaml** 탭을 선택합니다.  
+3. 디자이너에서 활성 디자이너 탭이 아닌 경우 **ExpenseItHome.xaml** 탭을 선택합니다.  
   
-4.  `<Title>` 요소를 선택하고 제목을 **ExpenseIt – Home**으로 변경합니다.  
+4. `<Title>` 요소를 선택하고 제목을 **ExpenseIt – Home**으로 변경합니다.  
   
      이제 C#에서 **ExpenseItHome.xaml** 파일이 다음과 같이 표시됩니다.  
   
@@ -156,11 +151,11 @@ name = "소개" ></a> 이 연습에서는 Windows Presentation Foundation (WPF) 
     </Page>  
     ```  
   
-5.  디자이너에서 **MainWindow.xaml** 탭을 선택합니다.  
+5. 디자이너에서 **MainWindow.xaml** 탭을 선택합니다.  
   
-6.  줄 `Title="ExpenseIt" Height="375" Width="500">` 요소를 찾아서 `Source="ExpenseItHome.xaml"` 속성을 추가합니다.  
+6. 줄 `Title="ExpenseIt" Height="375" Width="500">` 요소를 찾아서 `Source="ExpenseItHome.xaml"` 속성을 추가합니다.  
   
-     이렇게 하면 **ExpenseItHome.xaml** 이 응용 프로그램을 시작할 때 열리는 첫 페이지로 설정됩니다. 이제 C#에서 **MainWindow.xaml** 파일이 다음과 같이 표시됩니다.  
+     이렇게 하면 **ExpenseItHome.xaml** 이 애플리케이션을 시작할 때 열리는 첫 페이지로 설정됩니다. 이제 C#에서 **MainWindow.xaml** 파일이 다음과 같이 표시됩니다.  
   
     ```xaml  
     <NavigationWindow x:Class="ExpenseIt.MainWindow"  
@@ -194,15 +189,15 @@ name = "소개" ></a> 이 연습에서는 Windows Presentation Foundation (WPF) 
   
 #### <a name="to-add-a-details-window"></a>세부 정보 창을 추가하려면  
   
-1.  **솔루션 탐색기**에서 **ExpenseIt** 노드의 바로 가기 메뉴를 열고 **추가**, **페이지**를 선택합니다.  
+1. **솔루션 탐색기**에서 **ExpenseIt** 노드의 바로 가기 메뉴를 열고 **추가**, **페이지**를 선택합니다.  
   
-2.  **새 항목 추가** 대화 상자에서 **이름** 텍스트 상자를 선택하고 `ExpenseReportPage`를 입력하고 **추가** 단추를 선택합니다.  
+2. **새 항목 추가** 대화 상자에서 **이름** 텍스트 상자를 선택하고 `ExpenseReportPage`를 입력하고 **추가** 단추를 선택합니다.  
   
      이 창에는 개별 경비 보고서가 표시됩니다.  
   
-3.  디자이너에서 활성 디자이너 탭이 아닌 경우 **ExpenseReportPage.xaml** 탭을 선택합니다.  
+3. 디자이너에서 활성 디자이너 탭이 아닌 경우 **ExpenseReportPage.xaml** 탭을 선택합니다.  
   
-4.  `<Title>` 요소를 선택하고 제목을 **ExpenseIt – View Expense**로 변경합니다.  
+4. `<Title>` 요소를 선택하고 제목을 **ExpenseIt – View Expense**로 변경합니다.  
   
      이제 C#에서 ExpenseReportPage.xaml 파일이 다음과 같이 표시됩니다.  
   
@@ -241,26 +236,26 @@ name = "소개" ></a> 이 연습에서는 Windows Presentation Foundation (WPF) 
     </Page>  
     ```  
   
-5.  메뉴 모음에서 **디버그**, **디버깅 시작** 을 선택하거나 F5 키를 눌러 응용 프로그램을 실행합니다.  
+5. 메뉴 모음에서 **디버그**, **디버깅 시작** 을 선택하거나 F5 키를 눌러 애플리케이션을 실행합니다.  
   
-     다음 그림에서는 탐색 창 단추가 포함된 응용 프로그램을 보여 줍니다.  
+     다음 그림에서는 탐색 창 단추가 포함된 애플리케이션을 보여 줍니다.  
   
      ![ExpenseIt 샘플 스크린샷](../designers/media/gettingstartedfigure1.png "GettingStartedFigure1")  
   
-6.  디자인 모드로 돌아가려면 응용 프로그램을 닫습니다.  
+6. 디자인 모드로 돌아가려면 애플리케이션을 닫습니다.  
   
-##  <a name="Add_Layout"></a> 사용자 인터페이스 만들기  
+## <a name="Add_Layout"></a> 사용자 인터페이스 만들기  
  레이아웃은 요소를 배치하는 순서가 지정된 방법을 제공하며 폼의 크기를 조정할 때 해당 요소의 크기와 위치도 관리합니다. 이 섹션에서는 3개의 행이 있는 단일 열 그리드를 만듭니다. 두 페이지에 컨트롤을 추가하고, 일부 코드를 추가하고, 마지막으로 컨트롤에 대해 재사용 가능한 스타일을 정의합니다.  
   
 #### <a name="to-create-the-layout"></a>레이아웃을 만들려면  
   
-1.  **ExpenseItHome.xaml** 을 열고 `<Grid>` 요소를 선택합니다.  
+1. **ExpenseItHome.xaml** 을 열고 `<Grid>` 요소를 선택합니다.  
   
-2.  **속성** 창에서 **Height** 범주 노드를 확장하고 **여백** 값을 왼쪽, 오른쪽, 위쪽 및 아래쪽 여백에 해당하는 `10`, `10`, `0`및 `10`으로 설정합니다.  
+2. **속성** 창에서 **Height** 범주 노드를 확장하고 **여백** 값을 왼쪽, 오른쪽, 위쪽 및 아래쪽 여백에 해당하는 `10`, `10`, `0`및 `10`으로 설정합니다.  
   
      `Margin="10,0,10,10"` 요소가 XAML의 `<Grid>` 요소에 추가됩니다. **속성** 창이 아니라 XAML 코드에서 직접 이러한 값을 입력하여 동일한 결과를 얻을 수도 있습니다.  
   
-3.  다음 XAML 코드를 `Grid` 요소에 추가하여 행 및 열 정의를 만듭니다.  
+3. 다음 XAML 코드를 `Grid` 요소에 추가하여 행 및 열 정의를 만듭니다.  
   
     ```xaml  
     <Grid.ColumnDefinitions>  
@@ -275,9 +270,9 @@ name = "소개" ></a> 이 연습에서는 Windows Presentation Foundation (WPF) 
   
 #### <a name="to-add-controls"></a>컨트롤을 추가하려면  
   
-1.  **ExpenseItHome.xaml**을 엽니다.  
+1. **ExpenseItHome.xaml**을 엽니다.  
   
-2.  다음 XAML 코드를 `</Grid>` 태그 바로 위에 추가하여 `Border`, `ListBox` 및 `Button` 컨트롤을 만듭니다.  
+2. 다음 XAML 코드를 `</Grid>` 태그 바로 위에 추가하여 `Border`, `ListBox` 및 `Button` 컨트롤을 만듭니다.  
   
     ```xaml  
     <!-- People list -->  
@@ -299,29 +294,29 @@ name = "소개" ></a> 이 연습에서는 Windows Presentation Foundation (WPF) 
   
      컨트롤이 디자인 창에 나타납니다. 또한 **도구 상자** 창에서 디자인 창으로 끌고 **속성** 창에서 해당 속성을 설정하여 컨트롤을 만들었을 수도 있습니다.  
   
-3.  응용 프로그램을 빌드 및 실행합니다. 다음 그림은 이 절차에서 XAML로 생성된 컨트롤의 런타임 모양을 보여 줍니다.  
+3. 애플리케이션을 빌드 및 실행합니다. 다음 그림은 이 절차에서 XAML로 생성된 컨트롤의 런타임 모양을 보여 줍니다.  
   
      ![ExpenseIt 샘플 스크린샷](../designers/media/gettingstartedfigure2.png "GettingStartedFigure2")  
   
-4.  디자인 모드로 돌아가려면 응용 프로그램을 닫습니다.  
+4. 디자인 모드로 돌아가려면 애플리케이션을 닫습니다.  
   
 #### <a name="to-add-a-background-image"></a>배경 이미지를 추가하려면  
   
-1.  다음 이미지를 선택하여 `watermark.png`로 저장합니다.  
+1. 다음 이미지를 선택하여 `watermark.png`로 저장합니다.  
   
      ![연습용 워터마크 이미지](../designers/media/wpf-watermark.png "WPF_watermark")  
   
     > [!NOTE]
-    >  이미지를 직접 만들어 `watermark.png`로 저장할 수도 있습니다.  
+    > 이미지를 직접 만들어 `watermark.png`로 저장할 수도 있습니다.  
   
-2.  **솔루션 탐색기**에서 **ExpenseIt** 노드의 바로 가기 메뉴를 열고 **추가**, **기존 항목**을 선택합니다.  
+2. **솔루션 탐색기**에서 **ExpenseIt** 노드의 바로 가기 메뉴를 열고 **추가**, **기존 항목**을 선택합니다.  
   
-3.  **기존 항목 추가** 대화 상자에서 방금 추가한 **watermark.png** 이미지를 찾아서 선택한 다음 **추가** 단추를 선택합니다.  
+3. **기존 항목 추가** 대화 상자에서 방금 추가한 **watermark.png** 이미지를 찾아서 선택한 다음 **추가** 단추를 선택합니다.  
   
     > [!NOTE]
-    >  **파일 형식** 목록을 확장하고 **이미지 파일**을 선택해야 할 수도 있습니다.  
+    > **파일 형식** 목록을 확장하고 **이미지 파일**을 선택해야 할 수도 있습니다.  
   
-4.  **ExpenseItHome.xaml** 파일을 열고 다음 XAML 코드를 `</Grid>` 태그 바로 위에 추가하여 배경 이미지를 만듭니다.  
+4. **ExpenseItHome.xaml** 파일을 열고 다음 XAML 코드를 `</Grid>` 태그 바로 위에 추가하여 배경 이미지를 만듭니다.  
   
     ```xaml  
     <Grid.Background>  
@@ -332,9 +327,9 @@ name = "소개" ></a> 이 연습에서는 Windows Presentation Foundation (WPF) 
   
 #### <a name="to-add-a-title"></a>제목을 추가하려면  
   
-1.  **ExpenseItHome.xaml**을 엽니다.  
+1. **ExpenseItHome.xaml**을 엽니다.  
   
-2.  `<Grid.ColumnDefinitions>` 줄을 찾은 다음 바로 아래에 다음을 추가합니다.  
+2. `<Grid.ColumnDefinitions>` 줄을 찾은 다음 바로 아래에 다음을 추가합니다.  
   
     ```xaml  
     <ColumnDefinition Width="230" />  
@@ -343,7 +338,7 @@ name = "소개" ></a> 이 연습에서는 Windows Presentation Foundation (WPF) 
   
      이렇게 하면 다른 열의 왼쪽에 고정 너비가 230픽셀인 열이 추가로 만들어집니다.  
   
-3.  `<Grid.RowDefinitions>` 줄을 찾은 다음 바로 아래에 다음을 추가합니다.  
+3. `<Grid.RowDefinitions>` 줄을 찾은 다음 바로 아래에 다음을 추가합니다.  
   
     ```xaml  
     <RowDefinition />  
@@ -352,15 +347,15 @@ name = "소개" ></a> 이 연습에서는 Windows Presentation Foundation (WPF) 
   
      이렇게 하면 그리드의 맨 위에 행이 추가됩니다.  
   
-4.  `Grid.Column` 값을 1로 설정하여 컨트롤을 두 번째 열로 이동합니다. 각 `Grid.Row` 값을 1씩 증가하여 각 컨트롤을 한 행 아래로 이동합니다.  
+4. `Grid.Column` 값을 1로 설정하여 컨트롤을 두 번째 열로 이동합니다. 각 `Grid.Row` 값을 1씩 증가하여 각 컨트롤을 한 행 아래로 이동합니다.  
   
-    1.  `<Border Grid.Column="0" Grid.Row="0" Height="35" Padding="5" Background="#4E87D4">`줄을 찾습니다. `Grid.Column="0"` 을 `Grid.Column="1"` 로 변경하고 `Grid.Row="0"` 을 `Grid.Row="1"`로 변경합니다.  
+    1. `<Border Grid.Column="0" Grid.Row="0" Height="35" Padding="5" Background="#4E87D4">`줄을 찾습니다. `Grid.Column="0"` 을 `Grid.Column="1"` 로 변경하고 `Grid.Row="0"` 을 `Grid.Row="1"`로 변경합니다.  
   
-    2.  `<ListBox Name="peopleListBox" Grid.Column="0" Grid.Row="1"`줄을 찾습니다. `Grid.Column="0"` 을 `Grid.Column="1"` 로 변경하고 `Grid.Row="1"` 을 `Grid.Row="2"`로 변경합니다.  
+    2. `<ListBox Name="peopleListBox" Grid.Column="0" Grid.Row="1"`줄을 찾습니다. `Grid.Column="0"` 을 `Grid.Column="1"` 로 변경하고 `Grid.Row="1"` 을 `Grid.Row="2"`로 변경합니다.  
   
-    3.  `<Button Grid.Column="0" Grid.Row="2" Margin="0,10,0,0" Width="125"`줄을 찾습니다. `Grid.Column="0"` 을 `Grid.Column="1"` 로 변경하고 `Grid.Row="2"` 을 `Grid.Row="3"`로 변경합니다.  
+    3. `<Button Grid.Column="0" Grid.Row="2" Margin="0,10,0,0" Width="125"`줄을 찾습니다. `Grid.Column="0"` 을 `Grid.Column="1"` 로 변경하고 `Grid.Row="2"` 을 `Grid.Row="3"`로 변경합니다.  
   
-5.  `<Border` 요소 바로 앞에 다음 XAML 코드를 추가하여 제목을 표시합니다.  
+5. `<Border` 요소 바로 앞에 다음 XAML 코드를 추가하여 제목을 표시합니다.  
   
     ```xaml  
     <Label Grid.Column="1" VerticalAlignment="Center" FontFamily="Trebuchet MS"   
@@ -466,15 +461,15 @@ name = "소개" ></a> 이 연습에서는 Windows Presentation Foundation (WPF) 
     </Page>  
     ```  
   
-6.  이때 응용 프로그램을 빌드 및 실행하는 경우 다음 그림과 같이 표시되어야 합니다.  
+6. 이때 애플리케이션을 빌드 및 실행하는 경우 다음 그림과 같이 표시되어야 합니다.  
   
      ![ExpenseIt 샘플 스크린샷](../designers/media/gettingstartedfigure3.png "GettingStartedFigure3")  
   
 #### <a name="to-add-code-to-the-button"></a>단추에 코드를 추가하려면  
   
-1.  **ExpenseItHome.xaml**을 엽니다.  
+1. **ExpenseItHome.xaml**을 엽니다.  
   
-2.  `<Button` 요소를 선택하고 다음 XAML 코드를 **HorizontalAlignment = "Right"** 요소 바로 뒤에 추가합니다. `Click="Button_Click"`.  
+2. `<Button` 요소를 선택하고 다음 XAML 코드를 **HorizontalAlignment = "Right"** 요소 바로 뒤에 추가합니다. `Click="Button_Click"`.  
   
      이렇게 하면 단추의 `Click` 이벤트에 대한 이벤트 처리기가 추가됩니다. 이제 **<Button** 요소 코드가 다음과 같이 표시됩니다.  
   
@@ -484,9 +479,9 @@ name = "소개" ></a> 이 연습에서는 Windows Presentation Foundation (WPF) 
     Height="25" HorizontalAlignment="Right" Click="Button_Click">View</Button>  
     ```  
   
-3.  **ExpenseItHome.xaml.cs** 또는 **ExpenseItHome.xaml.vb** 파일을 엽니다.  
+3. **ExpenseItHome.xaml.cs** 또는 **ExpenseItHome.xaml.vb** 파일을 엽니다.  
   
-4.  `ExpenseItHome` 클래스에 다음 코드를 추가합니다.  
+4. `ExpenseItHome` 클래스에 다음 코드를 추가합니다.  
   
     ```csharp  
     private void Button_Click(object sender, RoutedEventArgs e)  
@@ -510,11 +505,11 @@ name = "소개" ></a> 이 연습에서는 Windows Presentation Foundation (WPF) 
   
 #### <a name="to-create-the-ui-for-the-report-page"></a>보고서 페이지에 대한 UI를 만들려면  
   
-1.  **ExpenseReportPage.xaml**을 엽니다.  
+1. **ExpenseReportPage.xaml**을 엽니다.  
   
      이 페이지는 홈 페이지에서 선택된 사용자에 대한 경비 보고서를 표시합니다.  
   
-2.  다음 XAML 코드를 `<Grid>` 및 `</Grid>` 태그 사이에 추가합니다.  
+2. 다음 XAML 코드를 `<Grid>` 및 `</Grid>` 태그 사이에 추가합니다.  
   
     ```xaml  
     <Grid.Background>  
@@ -580,9 +575,9 @@ name = "소개" ></a> 이 연습에서는 Windows Presentation Foundation (WPF) 
   
      이 UI는 홈 페이지에 대해 만들어진 UI와 유사하지만 보고서 데이터가 **DataGrid** 컨트롤에 표시됩니다.  
   
-3.  응용 프로그램을 빌드 및 실행합니다.  
+3. 애플리케이션을 빌드 및 실행합니다.  
   
-4.  **보기** 단추를 선택합니다.  
+4. **보기** 단추를 선택합니다.  
   
      경비 보고서 페이지가 나타납니다.  
   
@@ -592,9 +587,9 @@ name = "소개" ></a> 이 연습에서는 Windows Presentation Foundation (WPF) 
   
 #### <a name="to-style-controls"></a>컨트롤의 스타일을 지정하려면  
   
-1.  **App.xaml** 파일(C#) 또는 **Application.xaml** 파일(Visual Basic)을 엽니다.  
+1. **App.xaml** 파일(C#) 또는 **Application.xaml** 파일(Visual Basic)을 엽니다.  
   
-2.  다음 XAML을 `<Application.Resources>` 및 `</Application.Resources>` 태그 사이에 추가합니다.  
+2. 다음 XAML을 `<Application.Resources>` 및 `</Application.Resources>` 태그 사이에 추가합니다.  
   
     ```xaml  
     <!-- Header text style -->  
@@ -647,19 +642,19 @@ name = "소개" ></a> 이 연습에서는 Windows Presentation Foundation (WPF) 
   
      이 XAML은 다음 스타일을 추가합니다.  
   
-    -   `headerTextStyle`: 페이지 제목 `Label`의 형식을 지정합니다.  
+    - `headerTextStyle`: 페이지 제목 서식을 지정 하려면 `Label`합니다.  
   
-    -   `labelStyle`: `Label` 컨트롤의 형식을 지정합니다.  
+    - `labelStyle`: 형식을 지정 하는 `Label` 컨트롤입니다.  
   
-    -   `columnHeaderStyle`: `DataGridColumnHeader`의 형식을 지정합니다.  
+    - `columnHeaderStyle`: 형식을 지정 하는 `DataGridColumnHeader`합니다.  
   
-    -   `listHeaderStyle`: 목록 헤더 `Border` 컨트롤의 형식을 지정합니다.  
+    - `listHeaderStyle`: 목록 헤더 형식을 `Border` 컨트롤입니다.  
   
-    -   `listHeaderTextStyle`: 목록 헤더 **Label**의 형식을 지정합니다.  
+    - `listHeaderTextStyle`: 목록 헤더 서식을 **레이블**합니다.  
   
-    -   `buttonStyle`: `Button` ExpenseItHome.xaml **pppage에 있는** 의 형식을 지정합니다.  
+    - `buttonStyle`: 형식을 지정 하는 `Button` 에 **ExpenseItHome.xaml** pppage 합니다.  
   
-3.  **ExpenseItHome.xaml** 을 열고 `<Grid>` 및 `</Grid>` 요소 사이에 있는 모든 내용을 다음 XAML로 바꿉니다.  
+3. **ExpenseItHome.xaml** 을 열고 `<Grid>` 및 `</Grid>` 요소 사이에 있는 모든 내용을 다음 XAML로 바꿉니다.  
   
     ```xaml  
     <Grid.ColumnDefinitions>  
@@ -696,7 +691,7 @@ name = "소개" ></a> 이 연습에서는 Windows Presentation Foundation (WPF) 
   
      스타일을 적용하면 각 컨트롤의 모양을 정의하는 `VerticalAlignment` 및 `FontFamily` 와 같은 속성이 제거되고 바뀝니다.  
   
-4.  **ExpenseReportPage.xaml** 을 열고 `<Grid>` 및 최종 `</Grid>` 요소 사이에 있는 모든 내용을 다음 XAML로 바꿉니다.  
+4. **ExpenseReportPage.xaml** 을 열고 `<Grid>` 및 최종 `</Grid>` 요소 사이에 있는 모든 내용을 다음 XAML로 바꿉니다.  
   
     ```xaml  
     <Grid.Background>  
@@ -759,9 +754,9 @@ name = "소개" ></a> 이 연습에서는 Windows Presentation Foundation (WPF) 
   
 #### <a name="to-bind-data-to-a-control"></a>데이터를 컨트롤에 바인딩하려면  
   
-1.  **ExpenseItHome.xaml** 을 열고 `<Grid>` 요소를 선택합니다.  
+1. **ExpenseItHome.xaml** 을 열고 `<Grid>` 요소를 선택합니다.  
   
-2.  다음 XAML 코드를 추가합니다.  
+2. 다음 XAML 코드를 추가합니다.  
   
     ```xaml  
   
@@ -796,7 +791,7 @@ name = "소개" ></a> 이 연습에서는 Windows Presentation Foundation (WPF) 
   
      이 코드에서는 각 사용자에 대한 데이터를 포함하는 `XmlDataProvider` 클래스를 만듭니다. 일반적으로 파일로 로드되지만 편의상 데이터가 인라인으로 추가됩니다.  
   
-3.  `<Grid.Resources>` 요소 내에 다음 XAML 코드를 추가합니다.  
+3. `<Grid.Resources>` 요소 내에 다음 XAML 코드를 추가합니다.  
   
     ```xaml  
     <!-- Name item template -->  
@@ -807,7 +802,7 @@ name = "소개" ></a> 이 연습에서는 Windows Presentation Foundation (WPF) 
   
      이렇게 하면 `Data Template` ListBox **에 데이터를 표시하는 방법을 정의하는**이 추가됩니다.  
   
-4.  기존 `<ListBox>` 요소를 다음 XAML로 바꿉니다.  
+4. 기존 `<ListBox>` 요소를 다음 XAML로 바꿉니다.  
   
     ```xaml  
     <ListBox Name="peopleListBox" Grid.Column="1" Grid.Row="2"   
@@ -820,9 +815,9 @@ name = "소개" ></a> 이 연습에서는 Windows Presentation Foundation (WPF) 
   
 #### <a name="to-connect-data-to-controls"></a>데이터를 컨트롤에 연결하려면  
   
-1.  **ExpenseReportPage.xaml.vb** 또는 **ExpenseReportPage.xaml.cs**를 엽니다.  
+1. **ExpenseReportPage.xaml.vb** 또는 **ExpenseReportPage.xaml.cs**를 엽니다.  
   
-2.  C#에서 다음 생성자를 **ExpenseReportPage** 클래스에 추가하거나 Visual Basic에서 기존 클래스를 다음으로 바꿉니다.  
+2. C#에서 다음 생성자를 **ExpenseReportPage** 클래스에 추가하거나 Visual Basic에서 기존 클래스를 다음으로 바꿉니다.  
   
     ```csharp  
     // Custom constructor to pass expense report data  
@@ -852,9 +847,9 @@ name = "소개" ></a> 이 연습에서는 Windows Presentation Foundation (WPF) 
   
      이 생성자는 데이터 개체를 매개 변수로 사용합니다. 이 경우 데이터 개체에 선택한 사용자의 이름이 포함됩니다.  
   
-3.  **ExpenseItHome.xaml.vb** 또는 **ExpenseItHome.xaml.cs**를 엽니다.  
+3. **ExpenseItHome.xaml.vb** 또는 **ExpenseItHome.xaml.cs**를 엽니다.  
   
-4.  `Click` 이벤트 처리기 코드를 다음으로 바꿉니다.  
+4. `Click` 이벤트 처리기 코드를 다음으로 바꿉니다.  
   
     ```csharp  
     private void Button_Click(object sender, RoutedEventArgs e)  
@@ -878,9 +873,9 @@ name = "소개" ></a> 이 연습에서는 Windows Presentation Foundation (WPF) 
   
 #### <a name="to-update-the-ui-with-data-templates"></a>데이터 템플릿을 사용하여 UI를 업데이트하려면  
   
-1.  **ExpenseReportPage.xaml**을 엽니다.  
+1. **ExpenseReportPage.xaml**을 엽니다.  
   
-2.  **이름** 및 **Department**`<StackPanel` 요소에 대한 XAML 코드를 다음으로 바꿉니다.  
+2. **이름** 및 **Department**`<StackPanel` 요소에 대한 XAML 코드를 다음으로 바꿉니다.  
   
     ```xaml  
     <!-- Name -->  
@@ -899,7 +894,7 @@ name = "소개" ></a> 이 연습에서는 Windows Presentation Foundation (WPF) 
   
      이렇게 하면 **Label** 컨트롤이 해당 데이터 원본 속성에 바인딩됩니다.  
   
-3.  `<Grid>` 요소 내에 다음 XAML 코드를 추가합니다.  
+3. `<Grid>` 요소 내에 다음 XAML 코드를 추가합니다.  
   
     ```xaml  
     <!--Templates to display expense report data-->  
@@ -918,7 +913,7 @@ name = "소개" ></a> 이 연습에서는 Windows Presentation Foundation (WPF) 
   
      이렇게 하면 경비 보고서 데이터를 표시하는 방법이 정의됩니다.  
   
-4.  `<DataGrid>` 요소를 다음으로 바꿉니다.  
+4. `<DataGrid>` 요소를 다음으로 바꿉니다.  
   
     ```xaml  
     <!-- Expense type and Amount table -->  
@@ -934,27 +929,27 @@ name = "소개" ></a> 이 연습에서는 Windows Presentation Foundation (WPF) 
   
      이렇게 하면 **ItemSource** 가 추가되고 비용 항목에 대한 바인딩이 정의됩니다.  
   
-5.  응용 프로그램을 빌드 및 실행합니다.  
+5. 애플리케이션을 빌드 및 실행합니다.  
   
-6.  사용자를 선택한 다음 **보기** 단추를 선택합니다.  
+6. 사용자를 선택한 다음 **보기** 단추를 선택합니다.  
   
-     다음 그림에서는 컨트롤, 레이아웃, 스타일, 데이터 바인딩 및 데이터 템플릿이 적용된 ExpenseIt 응용 프로그램의 페이지를 둘 다 보여 줍니다.  
+     다음 그림에서는 컨트롤, 레이아웃, 스타일, 데이터 바인딩 및 데이터 템플릿이 적용된 ExpenseIt 애플리케이션의 페이지를 둘 다 보여 줍니다.  
   
      ![ExpenseIt 샘플 스크린샷](../designers/media/gettingstartedfigure5.png "GettingStartedFigure5")  
   
-##  <a name="Best_Practices"></a> 모범 사례  
- 이 샘플은 WPF의 기본 사항을 보여 주므로 응용 프로그램 개발 모범 사례를 따르지 않습니다. WPF 및 .NET Framework 응용 프로그램 개발 모범 사례에 대한 자세한 내용은 다음 항목을 적절하게 참조하세요.  
+## <a name="Best_Practices"></a> 모범 사례  
+ 이 샘플은 WPF의 기본 사항을 보여 주므로 애플리케이션 개발 모범 사례를 따르지 않습니다. WPF 및 .NET Framework 애플리케이션 개발 모범 사례에 대한 자세한 내용은 다음 항목을 적절하게 참조하세요.  
   
--   접근성 - [접근성에 대한 유용한 정보](https://msdn.microsoft.com/library/aa350483\(v=vs.100\).aspx)  
+- 접근성 - [접근성에 대한 유용한 정보](https://msdn.microsoft.com/library/aa350483\(v=vs.100\).aspx)  
   
--   보안 - [Windows Presentation Foundation 보안](https://msdn.microsoft.com/library/aa970906\(v=vs.100\).aspx)  
+- 보안 - [Windows Presentation Foundation 보안](https://msdn.microsoft.com/library/aa970906\(v=vs.100\).aspx)  
   
--   지역화 - [WPF 전역화 및 지역화 개요](https://msdn.microsoft.com/library/ms788718\(v=vs.100\).aspx)  
+- 지역화 - [WPF 전역화 및 지역화 개요](https://msdn.microsoft.com/library/ms788718\(v=vs.100\).aspx)  
   
--   성능 - [WPF 응용 프로그램 성능 최적화](https://msdn.microsoft.com/library/aa970683\(v=vs.100\).aspx)  
+- 성능 - [WPF 애플리케이션 성능 최적화](https://msdn.microsoft.com/library/aa970683\(v=vs.100\).aspx)  
   
-##  <a name="Whats_Next"></a> 새로운 기능  
- 이제 WPF를 사용하여 데스크톱 응용 프로그램을 만들기 위한 다양한 기술을 사용할 수 있습니다. 데이터 바인딩된 WPF 응용 프로그램의 구성 요소에 대해 기본적인 내용을 이해하고 있을 것입니다. 이 항목은 전체 목록이 아니며 이 항목에 설명된 기술 외의 가능성을 스스로 발견할 수도 있습니다.  
+## <a name="Whats_Next"></a> 새로운 기능  
+ 이제 WPF를 사용하여 데스크톱 애플리케이션을 만들기 위한 다양한 기술을 사용할 수 있습니다. 데이터 바인딩된 WPF 애플리케이션의 구성 요소에 대해 기본적인 내용을 이해하고 있을 것입니다. 이 항목은 전체 목록이 아니며 이 항목에 설명된 기술 외의 가능성을 스스로 발견할 수도 있습니다.  
   
  WPF 아키텍처 및 프로그래밍 모델에 대한 자세한 내용은 다음 항목을 참조하세요.  
   
@@ -968,7 +963,7 @@ name = "소개" ></a> 이 연습에서는 Windows Presentation Foundation (WPF) 
   
 - [스타일 및 템플릿](https://msdn.microsoft.com/library/bb613570\(v=vs.100\).aspx)  
   
-  응용 프로그램을 만드는 방법에 대한 자세한 내용은 다음 항목을 참조하세요.  
+  애플리케이션을 만드는 방법에 대한 자세한 내용은 다음 항목을 참조하세요.  
   
 - [응용 프로그램 개발 개요](https://msdn.microsoft.com/library/bb613549\(v=vs.100\).aspx)  
   
@@ -981,8 +976,5 @@ name = "소개" ></a> 이 연습에서는 Windows Presentation Foundation (WPF) 
 - [WPF의 문서](https://msdn.microsoft.com/library/ms748388\(v=vs.100\).aspx)  
   
 ## <a name="see-also"></a>참고 항목  
- [연습: Azure 모바일 서비스에 연결된 WPF 데스크톱 응용 프로그램 만들기](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   
+ [연습: Azure 모바일 서비스에 연결 된 WPF 데스크톱 응용 프로그램 만들기](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   
  [Windows Presentation Foundation으로 최신 데스크톱 응용 프로그램 만들기](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
-
-
-

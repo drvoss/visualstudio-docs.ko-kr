@@ -1,8 +1,6 @@
 ---
 title: 코드 영역 축소 및 확장
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - outlining
@@ -14,15 +12,15 @@ helpviewer_keywords:
 - outlining code
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b39e9613e36b45f812738ab4eab6b945727b196b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d6451e835e44af23fbd41c9c1573e0bc5daed115
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62811918"
 ---
 # <a name="outlining"></a>개요
 

@@ -1,12 +1,9 @@
 ---
 title: T4 텍스트 템플릿 사용 하 여 런타임 텍스트 생성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Preprocessed Text Template project item
 - TextTemplatingFilePreprocessor custom tool
@@ -16,13 +13,13 @@ ms.assetid: 79b4b3c6-a9a7-4446-b6fd-e2388fc6b05f
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 75da17b32d3997121777f398a6663932c7d7143d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 586ad1d68ce1d0310b30b8bdac8aa2fb55acdeb5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920133"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411870"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>T4 텍스트 템플릿을 사용하여 런타임 텍스트 생성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,16 +53,16 @@ This report is Company Confidential.
   
 #### <a name="to-create-a-run-time-text-template"></a>런타임 텍스트 템플릿을 만들려면  
   
-1.  솔루션 탐색기에서 프로젝트의 바로 가기 메뉴 선택 **추가**하십시오 **새 항목**합니다.  
+1. 솔루션 탐색기에서 프로젝트의 바로 가기 메뉴 선택 **추가**하십시오 **새 항목**합니다.  
   
-2.  에 **새 항목 추가** 대화 상자에서 **런타임 텍스트 템플릿**합니다. (에 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 아래에서 확인 **일반적인 Items\General**.)  
+2. 에 **새 항목 추가** 대화 상자에서 **런타임 텍스트 템플릿**합니다. (에 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 아래에서 확인 **일반적인 Items\General**.)  
   
-3.  템플릿 파일의 이름을 입력 합니다.  
+3. 템플릿 파일의 이름을 입력 합니다.  
   
     > [!NOTE]
-    >  템플릿 파일 이름이 생성된 된 코드에서 클래스 이름으로 사용 됩니다. 따라서 공백이 나 문장 부호가 것이 없어야 합니다.  
+    > 템플릿 파일 이름이 생성된 된 코드에서 클래스 이름으로 사용 됩니다. 따라서 공백이 나 문장 부호가 것이 없어야 합니다.  
   
-4.  **추가**를 선택합니다.  
+4. **추가**를 선택합니다.  
   
      새 파일 확장명을 가진 만들어집니다 **.tt**합니다. 해당 **사용자 지정 도구** 속성이 **TextTemplatingFilePreprocessor**합니다. 다음 줄을 포함합니다.  
   
@@ -82,18 +79,18 @@ This report is Company Confidential.
   
 #### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>기존 텍스트 파일을 런타임에 템플릿으로 변환 하려면  
   
-1.  로 파일을 포함 하면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트입니다. 솔루션 탐색기에서 프로젝트의 바로 가기 메뉴 선택 **추가**하십시오 **기존 항목**합니다.  
+1. 로 파일을 포함 하면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트입니다. 솔루션 탐색기에서 프로젝트의 바로 가기 메뉴 선택 **추가**하십시오 **기존 항목**합니다.  
   
-2.  파일의 설정 **사용자 지정 도구** 속성을 **TextTemplatingFilePreprocessor**합니다. 솔루션 탐색기에서 파일의 바로 가기 메뉴 선택 **속성**합니다.  
+2. 파일의 설정 **사용자 지정 도구** 속성을 **TextTemplatingFilePreprocessor**합니다. 솔루션 탐색기에서 파일의 바로 가기 메뉴 선택 **속성**합니다.  
   
     > [!NOTE]
-    >  속성이 이미 있는지 확인 하십시오 **TextTemplatingFilePreprocessor** 아니라 **TextTemplatingFileGenerator**합니다. 이 확장에 이미 있는 파일을 포함 하는 경우 발생할 수 있습니다 **.tt**합니다.  
+    > 속성이 이미 있는지 확인 하십시오 **TextTemplatingFilePreprocessor** 아니라 **TextTemplatingFileGenerator**합니다. 이 확장에 이미 있는 파일을 포함 하는 경우 발생할 수 있습니다 **.tt**합니다.  
   
-3.  파일 이름 확장명을 변경 **.tt**합니다. 이 단계는 선택 사항, 있지만 잘못 된 편집기에서 파일을 열고 않을 수 있습니다.  
+3. 파일 이름 확장명을 변경 **.tt**합니다. 이 단계는 선택 사항, 있지만 잘못 된 편집기에서 파일을 열고 않을 수 있습니다.  
   
-4.  파일 이름의 주요 부분에서 공백 또는 문장 부호를 제거 합니다. 예를 들어 "내 웹 Page.tt"의 잘못 되지 것 이지만 "MyWebPage.tt" 올바른 있습니다. 파일 이름은 생성된 된 코드에서 클래스 이름으로 사용 됩니다.  
+4. 파일 이름의 주요 부분에서 공백 또는 문장 부호를 제거 합니다. 예를 들어 "내 웹 Page.tt"의 잘못 되지 것 이지만 "MyWebPage.tt" 올바른 있습니다. 파일 이름은 생성된 된 코드에서 클래스 이름으로 사용 됩니다.  
   
-5.  파일의 시작 부분에 다음 줄을 삽입 합니다. Visual Basic 프로젝트에서 작업 하는 경우 대체 "C#" "VB"를 사용 하 여 합니다.  
+5. 파일의 시작 부분에 다음 줄을 삽입 합니다. Visual Basic 프로젝트에서 작업 하는 경우 대체 "C#" "VB"를 사용 하 여 합니다.  
   
      `<#@ template language="C#" #>`  
   
@@ -292,7 +289,7 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 ### <a name="inheritance-between-run-time-text-templates"></a>런타임 텍스트 템플릿 간에 상속  
  해당 되는 추상 기본 클래스 템플릿을 작성 하 여 런타임 템플릿 사이의 콘텐츠를 공유할 수 있습니다. 사용 합니다 `inherits` 의 매개 변수는 `<@#template#>` 지시문 다른 런타임 템플릿 클래스를 참조 합니다.  
   
-#### <a name="inheritance-pattern-fragments-in-base-methods"></a>상속 패턴: 기본 메서드의 조각  
+#### <a name="inheritance-pattern-fragments-in-base-methods"></a>상속 패턴: 기본 메서드에서 조각  
  패턴의 예제에 사용 되는 경우 다음 사항에 유의 합니다.  
   
 - 기본 클래스 `SharedFragments` 메서드를 클래스 기능 블록 내에서 정의 `<#+ ... #>`합니다.  
@@ -348,7 +345,7 @@ begin 1
 end 1  
 ```  
   
-#### <a name="inheritance-pattern-text-in-base-body"></a>기본 본문의 상속 패턴: 텍스트  
+#### <a name="inheritance-pattern-text-in-base-body"></a>상속 패턴: 기본 본문 텍스트  
  템플릿 상속을 사용 하 여이 대체 접근 방법에서는 텍스트의 기본 템플릿에서 정의 됩니다. 데이터를 제공 하는 파생된 템플릿의 텍스트 조각 기본 내용에 적합 하며  
   
  **AbstractBaseTemplate1.tt:**  
@@ -424,14 +421,11 @@ End material for DerivedTemplate1.
 ```  
   
 ## <a name="related-topics"></a>관련 항목  
- 디자인 타임 템플릿: 템플릿을 사용 하 여 코드를 생성 하려는 경우 일부가 되는 응용 프로그램의 참조 하십시오 [T4 텍스트 템플릿을 사용 하 여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)합니다.  
+ 디자인 타임 템플릿: 응용 프로그램의 일부가 됩니다 하는 템플릿을 사용 하 여 코드를 생성 하려는 경우, 참조 [T4 텍스트 템플릿을 사용 하 여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)합니다.  
   
  런타임 템플릿은 컴파일 타임에 템플릿과 그 내용이 결정 됩니다 모든 응용 프로그램에서 사용할 수 있습니다. 그러나 작성 하려는 경우는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 런타임 시 변경, 참조 되는 템플릿에서 텍스트를 생성 하는 확장 [VS 확장에서 텍스트 변환 호출](../modeling/invoking-text-transformation-in-a-vs-extension.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [코드 생성 및 T4 텍스트 템플릿](../modeling/code-generation-and-t4-text-templates.md)   
  [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)   
- [Oleg 동기화 하 여 이해 T4: 전처리 된 텍스트 템플릿](http://www.olegsych.com/2009/09/t4-preprocessed-text-templates/)
-
-
-
+ [T4 이해: Oleg 동기화 하 여 전처리 된 텍스트 템플릿](https://github.com/olegsych/T4Toolbox)

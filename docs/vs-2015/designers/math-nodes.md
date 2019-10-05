@@ -1,25 +1,20 @@
 ---
 title: 수학 노드 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: adc225cc-1cf5-4f7c-9b00-e7ac8450b6b9
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bab77bbed9f14ccc81429c37ad367d7d51709871
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 51430c78dcf694a602ce6b8904262647a257ac32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403480"
 ---
 # <a name="math-nodes"></a>수학 노드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +22,7 @@ ms.locfileid: "49305775"
 셰이더 디자이너에서 수학 노드는 대수, 논리, 삼각 및 기타 수학 연산을 수행합니다.  
   
 > [!NOTE]
->  셰이더 디자이너에서 수학 노드를 사용하면 형식 승격이 특히 뚜렷하게 나타납니다. 형식 승격이 입력 매개 변수에 어떻게 영향을 주는지 알아보려면 [셰이더 디자이너 노드](../designers/shader-designer-nodes.md)에서 "입력의 승격" 섹션을 참조하세요.  
+> 셰이더 디자이너에서 수학 노드를 사용하면 형식 승격이 특히 뚜렷하게 나타납니다. 형식 승격이 입력 매개 변수에 어떻게 영향을 주는지 알아보려면 [셰이더 디자이너 노드](../designers/shader-designer-nodes.md)에서 "입력의 승격" 섹션을 참조하세요.  
   
 ## <a name="math-node-reference"></a>수학 노드 참조  
   
@@ -58,6 +53,3 @@ ms.locfileid: "49305775"
 |**Sqrt**|구성 요소별로 지정된 입력의 제곱근을 계산합니다.<br /><br /> 결과의 각 구성 요소에 대해 해당하는 구성 요소의 제곱근을 계산합니다.<br /><br /> **입력:**<br /><br /> `X`: `float`, `float2`, `float3` 또는 `float4`<br /> 제곱근을 계산할 값입니다.<br /><br /> **출력:**<br /><br /> `Output`: 입력 `X`과 동일<br /> 구성 요소별 제곱근입니다.|없음|  
 |**Subtract**|지정된 입력의 구성 요소 단위 차를 계산합니다.<br /><br /> 결과의 각 구성 요소에 대해 입력 `Y`의 해당 구성 요소를 입력 `X`의 해당 구성 요소에서 뺍니다. 첫 번째 입력에서 두 번째 입력으로 확장되는 벡터를 계산하는 데 사용할 수 있습니다.<br /><br /> **입력:**<br /><br /> `X`: `float`, `float2`, `float3` 또는 `float4`<br /> 뺄 값입니다.<br /><br /> `Y`: 입력 `X`과 동일<br /> 입력 `X`에서 뺄 값입니다.<br /><br /> **출력:**<br /><br /> `Output`: 입력 `X`과 동일<br /> 구성 요소별 차입니다.|없음|  
 |**3D 벡터 변환**|지정된 3차원 벡터를 다른 공간으로 변환합니다.<br /><br /> 의미 있는 계산을 수행하는 데 사용할 수 있도록 점 또는 벡터를 공용 공간으로 이동하는 데 사용할 수 있습니다.<br /><br /> **입력:**<br /><br /> `Vector`: `float3`<br /> 변형할 벡터입니다.<br /><br /> **출력:**<br /><br /> `Output`: `float3`<br /> 변형된 벡터입니다.|**원본 시스템**<br /> 벡터의 원시 공간입니다.<br /><br /> **대상 시스템**<br /> 벡터를 변환할 공간입니다.|
-
-
-

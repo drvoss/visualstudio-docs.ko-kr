@@ -1,7 +1,6 @@
 ---
 title: 'CA1717: FlagsAttribute 열거형만 복수형 이름을 가질 수 있습니다.'
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1717
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: a6855d8b-d78a-42c1-834e-61c31f5572ed
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c4b4b55e2a8f5ec2dd027cf62f494d3e07416dd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b352d8f49cb92f70b449427179229fd882dbc9ce
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915674"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234067"
 ---
 # <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717: FlagsAttribute 열거형만 복수형 이름을 가질 수 있습니다.
 
@@ -29,32 +28,47 @@ ms.locfileid: "53915674"
 |TypeName|OnlyFlagsEnumsShouldHavePluralNames|
 |CheckId|CA1717|
 |범주|Microsoft.Naming|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
- 외부에 표시 되는 열거형의 이름을 복수 word에서 끝나고 열거형으로 표시 되지 않으면를 <xref:System.FlagsAttribute?displayProperty=fullName> 특성입니다.
+
+열거 이름이 복수 단어로 끝나고 열거형이 <xref:System.FlagsAttribute?displayProperty=fullName> 특성으로 표시 되어 있지 않습니다.
+
+기본적으로이 규칙은 외부에서 볼 수 있는 열거만 보이지만 [구성 가능](#configurability)합니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 명명 규칙을 열거형에는 복수형 이름을 나타내는 열거형의 하나 이상의 값을 동시에 지정할 수 있음을 나타냅니다. <xref:System.FlagsAttribute> 열거형을 비트 연산은 열거형을 사용 하도록 설정 하는 비트 필드로 처리 해야 함을 컴파일러에 지시 합니다.
 
- 경우에 한 번에 하나의 열거형 값을 지정할 수 있습니다, 열거형의 이름은는 단일 단어 여야 합니다. 예를 들어 일 주를 정의 하는 열거형 수 사용 하려는 응용 프로그램에서 여러 날짜를 지정할 수 있습니다. 이 열거형 있어야는 <xref:System.FlagsAttribute> '일' 호출할 수 없습니다. 하루를 지정할 수 있도록 유사한 열거형은 특성 없고 수 'Day'를 호출 합니다.
+명명 규칙은 열거형의 복수형 이름이 둘 이상의 열거형 값을 동시에 지정할 수 있음을 나타냅니다. 는 <xref:System.FlagsAttribute> 열거형이 열거형에서 비트 연산을 가능 하 게 하는 비트 필드로 처리 되어야 함을 컴파일러에 알립니다.
 
- 명명 규칙은 공통 된 모양을 라이브러리에 대 한 해당 공용 언어 런타임을 대상으로 합니다. 이 관리 코드 개발의 전문 지식을 가진 사람이 라이브러리를 개발 하는 고객 신뢰도 높이고 새 소프트웨어 라이브러리를 익히는 데 필요한 시간이 줄어듭니다.
+열거형의 값을 한 번에 하나만 지정할 수 있는 경우 열거형의 이름은 단일 단어 여야 합니다. 예를 들어 요일을 정의 하는 열거형은 여러 날짜를 지정할 수 있는 응용 프로그램에서 사용 하기 위한 것입니다. 이 열거형에는를 <xref:System.FlagsAttribute> 포함 해야 하며 ' 일 '을 호출할 수 있습니다. 하루에 한 번만 지정할 수 있는 유사한 열거형은 특성이 없으며 ' Day '를 호출할 수 있습니다.
+
+명명 규칙은 공용 언어 런타임을 대상으로 하는 라이브러리에 대 한 일반적인 모양을 제공 합니다. 이렇게 하면 새 소프트웨어 라이브러리를 학습 하는 데 필요한 시간이 줄어들고, 관리 코드 개발에 대 한 전문 지식이 있는 사용자가 라이브러리를 개발 했다는 확신을 높일 수 있습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 열거형의 이름을 단 수 단어를 확인 하거나 추가 된 <xref:System.FlagsAttribute>합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
- 이름을 단수형 단어로 끝나는 경우 규칙에서 경고를 표시 하지 않아도 안전 합니다.
+열거형의 이름을 단수형 단어로 만들거나를 <xref:System.FlagsAttribute>추가 합니다.
 
-## <a name="related-rules"></a>관련된 규칙
- [CA1714: 플래그 열거형에는 복수형 이름을 사용 해야 합니다.](../code-quality/ca1714-flags-enums-should-have-plural-names.md)
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 
- [CA1027: 열거형을 FlagsAttribute로 표시](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+이름이 단수형 단어로 끝나는 경우 규칙에서 경고를 표시 하지 않는 것이 안전 합니다.
 
- [CA2217: 열거형을 FlagsAttribute로 표시 하지 마십시오.](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+## <a name="configurability"></a>구성이
 
-## <a name="see-also"></a>참고자료
+레거시 분석이 아닌 [FxCop 분석기](install-fxcop-analyzers.md) 에서이 규칙을 실행 하는 경우 해당 액세스 가능성에 따라이 규칙을 실행할 코드 베이스 부분을 구성할 수 있습니다. 예를 들어 public이 아닌 API 화면에 대해서만 규칙을 실행 하도록 지정 하려면 프로젝트의 editorconfig 파일에 다음 키-값 쌍을 추가 합니다.
+
+```ini
+dotnet_code_quality.ca1717.api_surface = private, internal
+```
+
+이 규칙에 대해서만이 옵션을 구성 하거나, 모든 규칙에 대해 또는이 범주의 모든 규칙에 대해이 옵션을 구성할 수 있습니다 (명명). 자세한 내용은 [FxCop 분석기 구성](configure-fxcop-analyzers.md)을 참조 하세요.
+
+## <a name="related-rules"></a>관련 규칙
+
+- [CA1714: 플래그 열거형에는 복수형 이름을 지정 해야 합니다.](../code-quality/ca1714-flags-enums-should-have-plural-names.md)
+- [CA1027: 열거형을 FlagsAttribute로 표시](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+- [CA2217: 열거형을 FlagsAttribute로 표시 하지 않습니다.](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+
+## <a name="see-also"></a>참고 항목
 
 - <xref:System.FlagsAttribute?displayProperty=fullName>
 - [열거형 디자인](/dotnet/standard/design-guidelines/enum)

@@ -1,14 +1,9 @@
 ---
 title: '&lt;패키지&gt; 요소 (부트스트래퍼) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: ecd06658-ad02-4440-bccd-88437b7fb816
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: b605d891fac3dceae77eb9bd3a1c0707b3fd6650
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 62c19953d1c4d82c0040e728fc2c2645c68589c9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157687"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;패키지&gt; 요소 (부트스트래퍼)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -153,8 +148,8 @@ ms.locfileid: "49298677"
   
 |특성|설명|  
 |---------------|-----------------|  
-|`Culture`|필수. 사용할 언어를 결정 하는이 패키지에 대 한 문화권을 정의 합니다. 이 특성은 키로는 `Strings` 요소를 설치 하는 동안 제품 이름 및 오류 메시지에 대 한 문화권 관련 문자열을 나열 합니다.|  
-|`Name`|필수. 와 같은 도구 내에서 개발자에 게 표시 되는 패키지의 이름을 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]입니다. 이 특성은 키로는 `Strings` 있어야 하는 요소를를 `String` 요소를 `Name` 및 `Culture` 속성과 일치 하도록 설정 합니다 `Name` 및 `Culture` 의 속성 `Package`.|  
+|`Culture`|필수 요소. 사용할 언어를 결정 하는이 패키지에 대 한 문화권을 정의 합니다. 이 특성은 키로는 `Strings` 요소를 설치 하는 동안 제품 이름 및 오류 메시지에 대 한 문화권 관련 문자열을 나열 합니다.|  
+|`Name`|필수 요소. 와 같은 도구 내에서 개발자에 게 표시 되는 패키지의 이름을 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]입니다. 이 특성은 키로는 `Strings` 있어야 하는 요소를를 `String` 요소를 `Name` 및 `Culture` 속성과 일치 하도록 설정 합니다 `Name` 및 `Culture` 의 속성 `Package`.|  
 |`LicenseAgreement`|선택 사항입니다. 최종 사용자 사용권 계약 (EULA)을 포함 하는 배포 패키지에 파일의 이름을 지정 합니다.  이 파일은 일반 텍스트 (.txt) 또는 서식 있는 텍스트 수 있습니다. (.rtf)|  
   
 ## <a name="example"></a>예제  
@@ -197,6 +192,3 @@ ms.locfileid: "49298677"
   
 ## <a name="see-also"></a>참고 항목  
  [제품 및 패키지 스키마 참조](../deployment/product-and-package-schema-reference.md)
-
-
-

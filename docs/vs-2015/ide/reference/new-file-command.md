@@ -1,14 +1,9 @@
 ---
 title: 새 파일 명령 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - file.newfile
 helpviewer_keywords:
@@ -18,18 +13,17 @@ ms.assetid: 767868d6-a525-425b-a43b-2198f636ab6b
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1043dc600d339e2a0989bb71fc7e8a09e712e102
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bb86a15e73ac2410ad763acd3b361e4a82bc44f1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199069"
 ---
 # <a name="new-file-command"></a>새 파일 명령
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 새 파일을 만들고 엽니다. 파일은 기타 파일 폴더 아래에 나타납니다.  
   
 ## <a name="syntax"></a>구문  
@@ -67,7 +61,7 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 /e:"Source Code (text) Editor"  
 ```  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  이 예제에서는 "test1.htm"이라는 새 웹 페이지를 만들고 소스 코드 편집기에서 엽니다.  
   
 ```  
@@ -80,6 +74,3 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
  [직접 실행 창](../../ide/reference/immediate-window.md)   
  [찾기/명령 상자](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

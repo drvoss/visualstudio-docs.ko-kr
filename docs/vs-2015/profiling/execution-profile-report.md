@@ -1,14 +1,9 @@
 ---
 title: 실행 프로필 보고서 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.execution
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: c8128472-a8ed-46f4-b1c8-a25358d6f2c1
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4c211271bbc4be147d22ab4cb0262b591f4b839a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a0d95d4593939b878194d2aeef79bdd0a8ad946a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160643"
 ---
 # <a name="execution-profile-report"></a>실행 프로필 보고서
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,17 +33,14 @@ ms.locfileid: "51763598"
   
 |열|설명|  
 |------------|-----------------|  
-|이름|호출 스택의 각 수준에 대한 함수의 이름입니다.|  
+|name|호출 스택의 각 수준에 대한 함수의 이름입니다.|  
 |포괄 샘플|호출 스택 트리의 이 수준으로 롤업되는 모든 스택에 대해 수집된 총 샘플 수입니다. 포괄 수는 이 함수에 대한 전용 샘플 및 모든 하위 노드에 대한 포괄 카운터의 합계입니다.|  
 |전용 샘플|이 함수가 호출 스택의 최하위 수준에 있는 경우 수집된 총 샘플 수입니다.|  
 |% 포함|포괄 샘플 열에 표시된 총 샘플의 백분율입니다. 백분율은 소수점 이하 두 자리까지 반올림됩니다.|  
 |% 제외|전용 샘플 열에 표시된 총 샘플의 백분율입니다. 백분율은 소수점 이하 두 자리까지 반올림됩니다.|  
-|설명|함수의 정규화된 이름입니다. 여기에는 사용 가능한 경우 줄 수가 포함됩니다.|  
+|세부 정보|함수의 정규화된 이름입니다. 여기에는 사용 가능한 경우 줄 수가 포함됩니다.|  
   
  이 보고서 테이블은 [실행 시간(스레드 뷰)](../profiling/execution-time-threads-view.md) 뷰에서 볼 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [스레드 뷰](../profiling/threads-view-parallel-performance.md)
-
-
-

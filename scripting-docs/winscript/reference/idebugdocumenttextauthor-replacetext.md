@@ -2,7 +2,6 @@
 title: IDebugDocumentTextAuthor::ReplaceText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6aa7ef34d035ad89a096414c285b4f66a4f4fa1e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 920b6851f5fea42597be7ec5dcc55350024abea9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946767"
 ---
 # <a name="idebugdocumenttextauthorreplacetext"></a>IDebugDocumentTextAuthor::ReplaceText
 문서에서 텍스트를 바꿉니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT ReplaceText(  
    ULONG    cCharacterPosition,  
    ULONG    cNumToReplace,  
@@ -43,7 +42,7 @@ HRESULT ReplaceText(
  [in] 바꿀 문자 범위의의 위치를 시작 합니다.  
   
  `cNumToReplace`  
- [in] 바꿀 문자 수입니다.  
+ [in] 교체할 문자 수입니다.  
   
  `pcharText[]`  
  [in] 이전 문자를 바꿀 새 문자를 포함 하는 버퍼입니다.  

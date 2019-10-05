@@ -9,17 +9,17 @@ helpviewer_keywords:
 - BuildOnLoad attribute [Visual Studio Templates]
 - BuildOnLoad element [Visual Studio Templates]
 ms.assetid: 950f5fc1-d041-4090-9a5c-60844768a4cc
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5be63468d6d290085778791d086a7b541395127f
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: f32056aae3c860aee250248c606bbda4dbf9506c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562440"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321266"
 ---
 # <a name="buildonload-attribute-and-element"></a>BuildOnLoad 특성 및 요소
 
@@ -82,7 +82,7 @@ ms.locfileid: "53562440"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [BuildProjectOnload 요소](buildprojectonload-element-visual-studio-templates.md)
 - [TemplateContent 요소](../extensibility/templatecontent-element-visual-studio-templates.md)

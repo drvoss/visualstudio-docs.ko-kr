@@ -1,42 +1,37 @@
 ---
-title: 프로파일러 명령줄을 사용하여 독립 실행형 응용 프로그램에 대한 .NET Framework 메모리 데이터 수집 | Microsoft 문서
-ms.custom: ''
+title: 프로파일러 명령줄을 사용하여 독립 실행형 애플리케이션에 대한 .NET Framework 메모리 데이터 수집 | Microsoft 문서
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 7bce69e2-407c-4342-8516-641586968928
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7cf9277b7ef80997fc4300ca7e96569048231c94
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 37609a2ee4b52931c8df1a95af9d494e64bb473e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158236"
 ---
-# <a name="collecting-net-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>프로파일러 명령줄을 사용하여 독립 실행형 응용 프로그램에 대한 .NET Framework 메모리 데이터 수집
+# <a name="collecting-net-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>프로파일러 명령줄을 사용하여 독립 실행형 애플리케이션에 대한 .NET Framework 메모리 데이터 수집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 섹션에서는 명령줄 도구에서 샘플링 방법을 사용하여 .NET 클라이언트(독립 실행형) 응용 프로그램에 대한 메모리 할당 및 개체 수명 데이터를 수집하기 위한 절차 및 옵션을 설명합니다.  
+이 섹션에서는 명령줄 도구에서 샘플링 방법을 사용하여 .NET 클라이언트(독립 실행형) 애플리케이션에 대한 메모리 할당 및 개체 수명 데이터를 수집하기 위한 절차 및 옵션을 설명합니다.  
   
 ## <a name="common-tasks"></a>일반 작업  
   
 |작업|관련 콘텐츠|  
 |----------|---------------------|  
-|**응용 프로그램 시작 및 .NET 메모리 프로파일링**|-   [방법: 프로파일러를 통해 .NET Framework 응용 프로그램을 시작하여 메모리 데이터 수집](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line.md)|  
-|**.NET 응용 프로그램에 프로파일러 연결**|-   [방법: .NET Framework 응용 프로그램에 프로파일러를 연결하여 메모리 데이터 수집](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line.md)|  
-|**응용 프로그램을 계측하여 .NET 메모리 데이터 수집**|-   [방법: 프로파일러를 사용하여 독립 실행형 .NET Framework 구성 요소 계측 및 메모리 데이터 수집](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line.md)|  
+|**응용 프로그램 시작 및 .NET 메모리 프로파일링**|-   [방법: 프로파일러를 통해 .NET Framework 애플리케이션을 시작하여 메모리 데이터 수집](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line.md)|  
+|**.NET 응용 프로그램에 프로파일러 연결**|-   [방법: .NET Framework 애플리케이션에 프로파일러를 연결하여 메모리 데이터 수집](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line.md)|  
+|**응용 프로그램을 계측하여 .NET 메모리 데이터 수집**|-   [방법: 프로파일러를 사용하여 독립 실행형 .NET Framework 구성 요소 계측 및 메모리 데이터 수집](/visualstudio/profiling/how-to-instrument-a-dotnet-framework-component-and-collect-memory-data?view=vs-2015)|  
   
 ## <a name="related-tasks"></a>관련 작업  
   
-### <a name="profiling-stand-alone-applications"></a>독립 실행형 응용 프로그램 프로파일링  
+### <a name="profiling-stand-alone-applications"></a>독립 실행형 애플리케이션 프로파일링  
   
 |작업|관련 콘텐츠|  
 |----------|---------------------|  
@@ -57,6 +52,3 @@ ms.locfileid: "51766522"
   
 ## <a name="reference"></a>참조  
  [명령줄 프로파일링 도구 참조](../profiling/command-line-profiling-tools-reference.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Vspackage의 보안 모범 사례 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - security [Visual Studio SDK]
 - security best practices, VSPackages
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 212a0504-cf6c-4e50-96b0-f2c1c575c0ff
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 49285b29c00f9f8a50232c2eaa2eb82a65cb71e6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 940644cd3950c38c6383371c1844b54b328acd0c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756238"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697276"
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>VSPackage의 보안 모범 사례
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,9 +30,8 @@ ms.locfileid: "51756238"
   
  사용자가 Vspackage 신뢰할 수 있는 원본 에서만에서 설치 해야 합니다. Vspackage를 개발 하는 회사를 해야 합니다. 강력한 이름을 서명 되도록 사용자는 변조 방지 됩니다. Vspackage 개발 회사와 같은 웹 서비스 및 원격 설치를 평가 하 고 보안 문제를 해결 하는 외부 종속성을 확인 해야 합니다.  
   
- 자세한 내용은.NET Framework에 대 한 보안 코딩 지침 참조 ([http://msdn.microsoft.com/library/d55zzx87.aspx](http://msdn.microsoft.com/library/d55zzx87.aspx)).  
+ 자세한 내용은.NET Framework에 대 한 보안 코딩 지침 참조 ([https://msdn.microsoft.com/library/d55zzx87.aspx](https://msdn.microsoft.com/library/d55zzx87.aspx)).  
   
 ## <a name="see-also"></a>참고 항목  
- [추가 기능 보안](http://msdn.microsoft.com/library/44a5c651-6246-4310-b371-65378917c799)   
- [DDEX 보안](http://msdn.microsoft.com/en-us/44a52a70-5c98-450e-993d-4a3b32f69ba8)
-
+ [추가 기능 보안](https://msdn.microsoft.com/library/44a5c651-6246-4310-b371-65378917c799)   
+ [DDEX 보안](https://msdn.microsoft.com/44a52a70-5c98-450e-993d-4a3b32f69ba8)

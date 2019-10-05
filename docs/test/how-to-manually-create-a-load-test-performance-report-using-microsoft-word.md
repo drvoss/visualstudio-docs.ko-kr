@@ -8,15 +8,13 @@ helpviewer_keywords:
 ms.assetid: 3b864c75-2699-48c1-a2b4-9651f108c267
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: c718501f4a3665f2383560f8c472102bfb5be757
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: a82479fabda0cd64e977af01f87492563a02853f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064458"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950074"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>방법: Microsoft Word를 사용하여 수동으로 부하 테스트 성능 보고서 만들기
 
@@ -32,27 +30,27 @@ ms.locfileid: "53064458"
 
 ## <a name="copy-summary-view-data"></a>요약 뷰 데이터 복사
 
-1.  요약 뷰가 현재 표시되어 있지 않은 경우 **부하 테스트 결과**의 도구 모음에서 **요약**을 클릭합니다.
+1. 요약 뷰가 현재 표시되어 있지 않은 경우 **부하 테스트 결과**의 도구 모음에서 **요약**을 클릭합니다.
 
-2.  요약 뷰에서 마우스 오른쪽 단추를 클릭하고 **모두 선택**을 선택합니다.
+2. 요약 뷰에서 마우스 오른쪽 단추를 클릭하고 **모두 선택**을 선택합니다.
 
-3.  요약 뷰에서 마우스 오른쪽 단추를 클릭하고 **복사**를 선택합니다. 그러면 요약 뷰 데이터가 HTML 형식으로 클립보드에 렌더링됩니다.
+3. 요약 뷰에서 마우스 오른쪽 단추를 클릭하고 **복사**를 선택합니다. 그러면 요약 뷰 데이터가 HTML 형식으로 클립보드에 렌더링됩니다.
 
-4.  Microsoft Word의 원하는 위치에 요약 뷰 데이터를 붙여넣습니다.
+4. Microsoft Word의 원하는 위치에 요약 뷰 데이터를 붙여넣습니다.
 
-5.  이제 보고 요구 사항을 충족하도록 복사한 내용을 수정하고, 서식을 지정하고, 삭제할 수 있습니다.
+5. 이제 보고 요구 사항을 충족하도록 복사한 내용을 수정하고, 서식을 지정하고, 삭제할 수 있습니다.
 
 ## <a name="copy-graph-view-data"></a>그래프 뷰 데이터 복사
 
-1.  그래프 보기가 현재 표시되어 있지 않은 경우 **부하 테스트 결과**의 도구 모음에서 **그래프**를 선택합니다.
+1. 그래프 보기가 현재 표시되어 있지 않은 경우 **부하 테스트 결과**의 도구 모음에서 **그래프**를 선택합니다.
 
-2.  (선택 사항) 다음 그림과 같이 Microsoft Word 문서에 복사할 특정 그래프를 확대합니다. 자세한 내용은 [방법: 그래프의 영역으로 확대](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)를 참조하세요.
+2. (선택 사항) 다음 그림과 같이 Microsoft Word 문서에 복사할 특정 그래프를 확대합니다. 자세한 내용은 [방법: 그래프의 영역으로 확대](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)를 참조하세요.
 
      ![그래프 뷰 확대/축소 컨트롤](../test/media/ltest_zoomcontrol.png)
 
-3.  Microsoft Word 문서에 복사할 그래프에서 마우스 오른쪽 단추를 클릭하고 **복사**를 선택합니다.
+3. Microsoft Word 문서에 복사할 그래프에서 마우스 오른쪽 단추를 클릭하고 **복사**를 선택합니다.
 
-4.  Microsoft Word의 원하는 위치에 그래프와 관련 테이블 데이터를 붙여넣습니다.
+4. Microsoft Word의 원하는 위치에 그래프와 관련 테이블 데이터를 붙여넣습니다.
 
     > [!WARNING]
     > 원격 데스크톱의 그래프를 복사하여 다른 컴퓨터에 붙여넣을 경우에는 그래프와 연결된 테이블 정보만 복사되고 그래프 이미지는 복사되지 않습니다. 그래프 이미지는 복사한 이미지가 있는 컴퓨터의 임시 디렉터리에 저장되므로 두 번째 컴퓨터에서 디렉터리를 역참조할 수는 없습니다.

@@ -1,14 +1,9 @@
 ---
 title: -Project(devenv.exe) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - /project Devenv switch
 - projects [Visual Studio], rebuilding
@@ -21,18 +16,17 @@ ms.assetid: 8b07859c-3439-436d-9b9a-a8ee744eee30
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a3e8ce83a345d27dfe6aef199af29569e75e8e98
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 398d92065b1ff1b5447017c7a21fc0def1e0da52
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243953"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200883"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 빌드, 정리, 다시 빌드 또는 배포하도록 솔루션 구성 내에서 단일 프로젝트를 식별합니다.  
   
 ## <a name="syntax"></a>구문  
@@ -56,10 +50,10 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName
  빌드 또는 다시 빌드 후 배포할 프로젝트를 지정합니다.  
   
  `SolnConfigName`  
- 필수. `SolutionName`으로 명명된 솔루션에 적용할 솔루션 구성의 이름입니다.  
+ 필수 요소. `SolutionName`으로 명명된 솔루션에 적용할 솔루션 구성의 이름입니다.  
   
  `SolutionName`  
- 필수. 솔루션 파일의 전체 경로 및 이름입니다.  
+ 필수 요소. 솔루션 파일의 전체 경로 및 이름입니다.  
   
  /project `ProjName`  
  선택 사항입니다. 솔루션 내에 있는 프로젝트 파일의 경로와 이름입니다. `SolutionName` 폴더에서 프로젝트 파일, 프로젝트의 표시 이름 또는 프로젝트 파일의 전체 경로와 이름까지의 상대 경로를 입력할 수 있습니다.  
@@ -69,13 +63,13 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName
   
 ## <a name="remarks"></a>설명  
   
--   `devenv /build`, /`clean`, `/rebuild` 또는 `/deploy` 명령의 일부로 사용해야 합니다.  
+- `devenv /build`, /`clean`, `/rebuild` 또는 `/deploy` 명령의 일부로 사용해야 합니다.  
   
--   공백을 포함하는 문자열은 큰따옴표로 묶습니다.  
+- 공백을 포함하는 문자열은 큰따옴표로 묶습니다.  
   
--   오류를 포함한 빌드에 대한 요약 정보는 **명령** 창 또는 `/out` 스위치로 지정된 로그 파일에 표시할 수 있습니다.  
+- 오류를 포함한 빌드에 대한 요약 정보는 **명령** 창 또는 `/out` 스위치로 지정된 로그 파일에 표시할 수 있습니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  이 예제에서는 `MySolution`의 `Debug` 솔루션 구성 내에 있는 `Debug` 프로젝트 빌드 구성을 사용하여 `CSharpConsoleApp` 프로젝트를 빌드합니다.  
   
 ```  
@@ -90,6 +84,3 @@ devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
  [/Rebuild(devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)   
  [/Deploy(devenv.exe)](../../ide/reference/deploy-devenv-exe.md)   
  [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)
-
-
-

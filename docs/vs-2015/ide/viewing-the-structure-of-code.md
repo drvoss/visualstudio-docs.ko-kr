@@ -1,14 +1,9 @@
 ---
 title: 코드 구조 보기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.documentoutline.window
 - vs.objectbrowser
@@ -32,13 +27,13 @@ ms.assetid: e6064f58-5ad9-4f05-8c3f-12e994b6583f
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d110056488b7555bc7bbccc5cbad3205d9de7405
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1277370ca14044755988affc5ccf2bf1fb851a09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901647"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443204"
 ---
 # <a name="viewing-the-structure-of-code"></a>코드 구조 보기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,14 +50,14 @@ Visual Studio 프로젝트의 개체 및 멤버, .NET Framework 구성 요소의
   
  [코드 정의 창(C#, C++)](#BKMK_CodeDefinition)  
   
- 사용할 수도 있습니다 **솔루션 탐색기** 형식 및 프로젝트의 멤버를 찾아보고, 기호에 대 한 검색, 메서드의 호출 계층 구조를 보려면 기호 참조 및 여러 도구 창 간에 전환 하지 않고도 더 찾기 이전에 나열 합니다.  
+ 또한 **솔루션 탐색기**를 사용하면 이전에 나열한 여러 도구 창 간에 전환하지 않고도 프로젝트의 형식 및 멤버를 찾아보고, 기호를 검색하고, 메서드의 호출 계층 구조를 확인하고, 기호 참조를 찾는 등의 작업을 수행할 수 있습니다.  
   
  Visual Studio Enterprise가 있는 경우 코드 맵을 사용하여 코드의 구조와 전체 솔루션에서의 해당 종속성을 시각화하고 관심이 있는 코드 부분으로 드릴다운할 수 있습니다. 자세한 내용은 [솔루션 간 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)을 참조하세요.  
   
 > [!NOTE]
->  사용 중인 Visual Studio 버전 및 설정이 IDE의 기능에 영향을 줄 수 있습니다. 이 항목에 설명된 내용과 다를 수 있습니다.  
+> 사용 중인 Visual Studio 버전 및 설정이 IDE의 기능에 영향을 줄 수 있습니다. 이 항목에 설명된 내용과 다를 수 있습니다.  
   
-##  <a name="BKMK_ClassView"></a> 클래스 뷰(Visual Basic, C#, C++)  
+## <a name="BKMK_ClassView"></a> 클래스 뷰(Visual Basic, C#, C++)  
  **클래스 뷰**는 **솔루션 탐색기**의 일부로 표시되며, 별도의 창으로 표시됩니다. **클래스 뷰** 창에는 응용 프로그램의 요소가 표시됩니다. 위쪽 창에는 네임스페이스, 형식, 인터페이스, 열거 및 클래스가 표시되고, 아래쪽 창에는 위쪽 창에서 선택한 형식에 속하는 멤버가 표시됩니다. 이 창을 사용하여 소스 코드(또는 요소가 솔루션의 외부에서 정의된 경우 **개체 브라우저**)의 멤버 정의로 이동할 수 있습니다.  
   
  **클래스 뷰**에서 해당 요소를 보기 위해 프로젝트를 컴파일할 필요가 없습니다. 프로젝트에서 코드를 수정하면 창이 새로 고쳐집니다.  
@@ -115,7 +110,7 @@ Visual Studio 프로젝트의 개체 및 멤버, .NET Framework 구성 요소의
 |**참조로 이동**|사용 가능한 경우 소스 코드에 형식 또는 멤버의 참조를 표시합니다.|  
 |**호출 계층 구조 보기**|**호출 계층 구조** 창에 선택한 메서드를 표시합니다.|  
   
-##  <a name="BKMK_CallHierarchy"></a> 호출 계층 구조(Visual Basic, C#, C++)  
+## <a name="BKMK_CallHierarchy"></a> 호출 계층 구조(Visual Basic, C#, C++)  
  **호출 계층 구조** 창은 지정된 메서드(또는 속성 또는 생성자)가 호출되는 위치를 보여 주고 해당 메서드에서 호출된 메서드를 나열합니다. 지정된 범위의 메서드 중 호출자/호출 수신자 관계를 보여 주는 호출 그래프의 여러 수준을 볼 수 있습니다.  
   
  메서드(또는 속성 또는 생성자)를 선택한 후 바로 가기 메뉴에서 **클래스 계층 구조 보기**를 선택하여 **호출 계층 구조** 창을 표시할 수 있습니다. 디스플레이는 다음 그림과 유사합니다.  
@@ -140,7 +135,7 @@ Visual Studio 프로젝트의 개체 및 멤버, .NET Framework 구성 요소의
 |**복사**|선택한 노드(하지만 해당 하위 노드는 아님)를 복사합니다.|  
 |**새로 고침**|정보를 새로 고칩니다.|  
   
-##  <a name="BKMK_ObjectBrowser"></a> 개체 브라우저  
+## <a name="BKMK_ObjectBrowser"></a> 개체 브라우저  
  **개체 브라우저**는 프로젝트의 코드 설명을 표시합니다.  
   
  **개체 브라우저**에서 보려는 항목을 필터링할 수 있습니다. 창 맨 위에 있는 드롭다운 목록을 사용하여 다음 옵션을 선택할 수 있습니다.  
@@ -153,7 +148,7 @@ Visual Studio 프로젝트의 개체 및 멤버, .NET Framework 구성 요소의
   
 - 사용자 지정 구성 요소 집합  
   
-  사용자 지정 구성 요소에는 관리 코드 실행 파일, 라이브러리 어셈블리, 형식 라이브러리 및 .ocx 파일이 포함될 수 있습니다. C++ 사용자 지정 구성 요소는 추가할 수 없습니다. 사용자 지정 설정은 Visual Studio 사용자 응용 프로그램 디렉터리, %APPDATA%\Roaming\Microsoft\VisualStudio\11.0\ObjBrowEX.dat에 저장됩니다.  
+  사용자 지정 구성 요소에는 관리 코드 실행 파일, 라이브러리 어셈블리, 형식 라이브러리 및 .ocx 파일이 포함될 수 있습니다. C++ 사용자 지정 구성 요소는 추가할 수 없습니다. 사용자 지정 설정은 Visual Studio 사용자 애플리케이션 디렉터리, %APPDATA%\Roaming\Microsoft\VisualStudio\11.0\ObjBrowEX.dat에 저장됩니다.  
   
   **개체 브라우저**의 왼쪽 창에는 .NET Framework 및 COM 구성 요소와 같은 물리적 컨테이너가 표시됩니다. 컨테이너 노드를 확장하여 해당 노드가 포함하는 네임스페이스를 표시한 후 네임스페이스를 확장하여 해당 네임스페이스가 포함하는 형식을 표시할 수 있습니다. 형식을 선택한 경우 해당 멤버(예: 속성 및 메서드)가 오른쪽 창에 나열됩니다. 오른쪽 아래 창에는 선택한 항목에 대한 자세한 정보가 표시됩니다.  
   
@@ -199,7 +194,7 @@ Visual Studio 프로젝트의 개체 및 멤버, .NET Framework 구성 요소의
 |**참조로 이동**|사용 가능한 경우 소스 코드에 형식 또는 멤버의 참조를 표시합니다.|  
 |**호출 계층 구조 보기**|**호출 계층 구조** 창에 선택한 메서드를 표시합니다.|  
   
-##  <a name="BKMK_CodeDefinition"></a> 코드 정의 창(C#, C++)  
+## <a name="BKMK_CodeDefinition"></a> 코드 정의 창(C#, C++)  
  **코드 정의** 창은 활성 프로젝트에서 선택한 형식 또는 멤버의 정의를 표시합니다. 형식 또는 멤버는 코드 편집기 또는 코드 보기 창에서 선택할 수 있습니다.  
   
  이 창은 읽기 전용이지만 안에 중단점 또는 책갈피를 설정할 수 있습니다. 표시된 정의를 수정하려면 바로 가기 메뉴의 **정의 편집**을 선택합니다. 그러면 코드 편집기에 소스 파일이 열리고 정의가 시작되는 줄로 삽입 지점이 이동합니다.  
@@ -229,6 +224,3 @@ Visual Studio 프로젝트의 개체 및 멤버, .NET Framework 구성 요소의
   
 ## <a name="see-also"></a>참고 항목  
  [클래스 뷰 및 개체 브라우저 아이콘](../ide/class-view-and-object-browser-icons.md)
-
-
-

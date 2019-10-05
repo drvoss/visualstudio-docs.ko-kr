@@ -1,14 +1,9 @@
 ---
-title: 'CA2119: private 인터페이스를 만족 하는 메서드를 봉인 | Microsoft Docs'
-ms.custom: ''
+title: 'CA2119: Private 인터페이스를 만족 하는 메서드를 봉인 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - SealMethodsThatSatisfyPrivateInterfaces
 - CA2119
@@ -20,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c6d3e102cde1fc010f777006d629fa2d19add894
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56b08d1b842e65e1c1c29a7409813c314cbf014d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825399"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687271"
 ---
-# <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: private 인터페이스를 만족하는 메서드를 봉인하십시오.
+# <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: private 인터페이스를 만족하는 메서드를 봉인하세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -46,15 +41,15 @@ ms.locfileid: "49825399"
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면 다음 중 하나를 사용 하 여 어셈블리 외부에서 재정의 되지 않도록:
 
--   선언 형식을 `sealed` (`NotInheritable` Visual basic에서).
+- 선언 형식을 `sealed` (`NotInheritable` Visual basic에서).
 
--   선언 형식의 액세스 가능성을 변경할 `internal` (`Friend` Visual basic에서).
+- 선언 형식의 액세스 가능성을 변경할 `internal` (`Friend` Visual basic에서).
 
--   선언 형식에서 모든 public 생성자를 제거 합니다.
+- 선언 형식에서 모든 public 생성자를 제거 합니다.
 
--   사용 하지 않고 메서드를 구현 합니다 `virtual` 한정자입니다.
+- 사용 하지 않고 메서드를 구현 합니다 `virtual` 한정자입니다.
 
--   메서드를 명시적으로 구현 합니다.
+- 메서드를 명시적으로 구현 합니다.
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이 경고를 표시 하지 않아도 안전 합니다 신중 하 게 검토 한 후 보안 문제가 있는 경우에 규칙 어셈블리 외부에서 메서드가 재정의 된 경우에 악용 될 수 있습니다.
@@ -74,7 +69,4 @@ ms.locfileid: "49825399"
  [!code-vb[FxCop.Security.SealMethods2#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Security.SealMethods2/vb/FxCop.Security.SealMethods2.vb#1)]
 
 ## <a name="see-also"></a>참고 항목
- [인터페이스](http://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37) [인터페이스](http://msdn.microsoft.com/library/61b06674-12c9-430b-be68-cc67ecee1f5b)
-
-
-
+ [인터페이스](https://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37) [인터페이스](https://msdn.microsoft.com/library/61b06674-12c9-430b-be68-cc67ecee1f5b)

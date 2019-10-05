@@ -1,43 +1,27 @@
 ---
 title: 일반, 텍스트 편집기, 옵션
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+ms.date: 01/18/2019
 ms.topic: reference
 f1_keywords:
-- VS.TOOLSOPTIONSPAGES.TEXT_EDITOR.SQL_SERVER_TOOLS.GENERAL
-- VS.ToolsOptionsPages.Text_Editor.All_Languages.General
-- VS.ToolsOptionsPages.Text_Editor.RDL_Expression.General
-- VS.ToolsOptionsPages.Text_Editor.SQL.General
-- vs.toolsoptionspages.text_editor
-- VS.ToolsOptionsPages.Text_Editor.XML.General
-- VS.ToolsOptionsPages.Text_Editor.T-SQL80.General
-- VS.ToolsOptionsPages.Text_Editor.CSS
-- VS.ToolsOptionsPages.Text_Editor.Plain_Text.General
-- VS.ToolsOptionsPages.Text_Editor.SQL_Script.General
-- VS.ToolsOptionsPages.Text_Editor.CSharp.General
-- VS.ToolsOptionsPages.Text_Editor.All_Languages
-- VS.ToolsOptionsPages.Text_Editor.T-SQL7.General
-- VS.ToolsOptionsPages.Text_Editor.Basic.General
-- VS.ToolsOptionsPages.Text_Editor.T-SQL.General
-- VS.ToolsOptionsPages.Text_Editor.F#.Tabs
-- VS.ToolsOptionsPages.Text_Editor.F#
-- VS.ToolsOptionsPages.Text_Editor.PL/SQL.General
-- VS.ToolsOptionsPages.Text_Editor.C/C++.General
-- VS.ToolsOptionsPages.Text_Editor.Plain_Text
-- VS.ToolsOptionsPages.Text_Editor.HTML
-- VS.ToolsOptionsPages.Text_Editor.XAML.General
 - VS.ToolsOptionsPages.Text_Editor
-- VS.ToolsOptionsPages.Text_Editor.F#.General
-- VS.ToolsOptionsPages.Text_Editor.XOML.General
-- VS.ToolsOptionsPages.Text_Editor.SQL
-- vs.toolsoptionspages.text_editor.c/c++
-- VS.ToolsOptionsPages.Text_Editor.SQL_Script
-- VS.ToolsOptionsPages.Text_Editor.T-SQL90.General
+- vs.toolsoptionspages.text_editor
+- VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting
+- VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.General
-- VS.ToolsOptionsPages.Text_Editor.CSharp
+- VS.ToolsOptionsPages.Text_Editor.PL/SQL
+- VS.ToolsOptionsPages.Text_Editor.PL/SQL.General
 - VS.ToolsOptionsPages.Text_Editor.Python
 - VS.ToolsOptionsPages.Text_Editor.R
+- VS.ToolsOptionsPages.Text_Editor.RDL_Expression.General
+- VS.ToolsOptionsPages.Text_Editor.SQL
+- VS.ToolsOptionsPages.Text_Editor.SQL.General
+- VS.ToolsOptionsPages.Text_Editor.SQL_Script
+- VS.ToolsOptionsPages.Text_Editor.SQL_Script.General
+- VS.ToolsOptionsPages.Text_Editor.T-SQL
+- VS.ToolsOptionsPages.Text_Editor.T-SQL.General
+- VS.ToolsOptionsPages.Text_Editor.T-SQL7.General
+- VS.ToolsOptionsPages.Text_Editor.T-SQL80
+- VS.ToolsOptionsPages.Text_Editor.T-SQL80.General
 helpviewer_keywords:
 - Text Editor Options dialog box
 - Code Editor
@@ -46,17 +30,17 @@ helpviewer_keywords:
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75051013e38d4acf5339193cf9f80e6da6758284
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 3b23edb73ee08762ae8e3efaea4f883693aaacbd
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388798"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606022"
 ---
-# <a name="options-text-editor-general"></a>일반, 텍스트 편집기, 옵션
+# <a name="options-dialog-box-text-editor--general"></a>옵션 대화 상자: 텍스트 편집기 \> 일반
 
 이 대화 상자에서는 Visual Studio 코드 및 텍스트 편집기에 대한 전역 설정을 변경할 수 있습니다. 이 대화 상자를 표시하려면 **도구** 메뉴에서 **옵션**을 선택하고, **텍스트 편집기** 폴더를 확장하고, **일반**을 선택합니다.
 
@@ -78,6 +62,16 @@ ms.locfileid: "52388798"
 
 기본적으로 편집기에서는 바이트 순서 표시 또는 문자 집합 태그를 검색하여 인코딩을 검색합니다. 현재 문서에서 아무것도 찾을 수 없으면 코드 편집기에서는 바이트 시퀀스를 검색하여 UTF-8 인코딩을 자동 검색합니다. 인코딩 자동 검색을 사용하지 않으려면 이 옵션의 선택을 취소합니다.
 
+### <a name="follow-project-coding-conventions"></a>프로젝트 코딩 규칙 따름
+
+선택할 경우 프로젝트의 지정된 코딩 규칙이 개인 프로젝트에서 사용하는 코딩 규칙을 재정의합니다.
+
+### <a name="enable-mouse-click-to-perform-go-to-definition"></a>마우스 클릭을 사용하여 정의로 이동 수행
+
+선택할 경우 **Ctrl** 키를 누르고 마우스를 클릭한 채 요소를 가리킬 수 있습니다. 이렇게 하면 선택한 요소의 정의로 이동합니다. **한정자 키 사용** 드롭다운에서 **Alt** 또는 **Ctrl** + **Alt**를 선택할 수도 있습니다.
+
+코드 편집기에서 현재 위치를 벗어나지 않고 창에 요소의 정의를 표시하려면 **Peek 뷰에서 정의 열기** 확인란을 선택합니다.
+
 ## <a name="display"></a>표시
 
 ### <a name="selection-margin"></a>선택 영역 여백
@@ -96,11 +90,15 @@ ms.locfileid: "52388798"
 
 이 옵션을 선택하면 커서가 놓이는 코드 줄 주위에 회색 상자가 표시됩니다.
 
+### <a name="show-structure-guide-lines"></a>구조 안내선 표시
+
+선택할 경우 세로 선이 편집기에 개별 코드 블록을 쉽게 식별할 수 있는 정형 코드 블록과 함께 일렬로 표시됩니다.
+
 ## <a name="see-also"></a>참고 항목
 
 - [옵션, 텍스트 편집기, 모든 언어](../../ide/reference/options-text-editor-all-languages.md)
 - [옵션, 텍스트 편집기, 모든 언어, 탭](../../ide/reference/options-text-editor-all-languages-tabs.md)
 - [옵션, 텍스트 편집기, 파일 확장명](../../ide/reference/options-text-editor-file-extension.md)
 - [바로 가기 키 식별 및 사용자 지정](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
-- [편집기 사용자 지정](../../ide/customizing-the-editor.md)
+- [편집기 사용자 지정](../how-to-change-text-case-in-the-editor.md)
 - [IntelliSense 사용](../../ide/using-intellisense.md)

@@ -1,14 +1,9 @@
 ---
 title: 메모리 목록 표시 명령 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.listmemory
 helpviewer_keywords:
@@ -19,18 +14,17 @@ ms.assetid: a84de361-a6a6-4f6d-96aa-a0d4a424371e
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 25be71041f0ab127037a25a03cff1d6ffe42ac97
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 884dda624d5405ec017b544afd223be0bebc97e9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199162"
 ---
 # <a name="list-memory-command"></a>메모리 목록 표시 명령
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 지정된 메모리 범위의 내용을 표시합니다.  
   
 ## <a name="syntax"></a>구문  
@@ -83,7 +77,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 |**dq**|Debug.ListMemory /Format:EightBytes|  
 |**du**|Debug.ListMemory /Unicode|  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
 ```  
 >Debug.ListMemory /Format:float /Count:30 /Unicode  
@@ -96,7 +90,3 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
  [명령 창](../../ide/reference/command-window.md)   
  [찾기/명령 상자](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-
-

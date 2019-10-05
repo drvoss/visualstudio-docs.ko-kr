@@ -1,8 +1,6 @@
 ---
 title: 성능 탐색기 | Microsoft Docs
-ms.custom: ''
 ms.date: 06/19/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance
@@ -11,21 +9,21 @@ helpviewer_keywords:
 - performance tools [Visual Studio ALM]
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 837c8d405245237962888a0a689fbdd17f6a0a92
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 5ad67acae549f67e16b34eb352cdebe5937c8de4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62794242"
 ---
 # <a name="performance-explorer"></a>성능 탐색기
 
 개발자는 Visual Studio 프로파일링 도구를 사용하여 코드의 성능 관련 문제를 측정, 평가 및 조정할 수 있습니다. 이러한 도구는 IDE에 완벽하게 통합되어 원활하고 편리한 사용자 환경을 제공합니다.
 
-응용 프로그램을 프로파일링하는 것은 간단합니다. 먼저 새 성능 세션을 만듭니다. Visual Studio Team System Development Edition에서는 성능 세션 마법사를 사용해서 새 성능 세션을 만들 수 있습니다. 성능 세션이 끝난 후 프로파일링하는 동안 수집된 데이터가 .*vsp* 파일에 저장됩니다. IDE 안에서 .*vsp* 파일을 볼 수 있습니다. 수집된 데이터에서 성능 문제를 시각화하고 감지하기 위해 여러 보고서 뷰를 사용할 수 있습니다.
+애플리케이션을 프로파일링하는 것은 간단합니다. 먼저 새 성능 세션을 만듭니다. Visual Studio Team System Development Edition에서는 성능 세션 마법사를 사용해서 새 성능 세션을 만들 수 있습니다. 성능 세션이 끝난 후 프로파일링하는 동안 수집된 데이터가 .*vsp* 파일에 저장됩니다. IDE 안에서 .*vsp* 파일을 볼 수 있습니다. 수집된 데이터에서 성능 문제를 시각화하고 감지하기 위해 여러 보고서 뷰를 사용할 수 있습니다.
 
 명령줄에서 프로파일링 도구를 사용할 수도 있습니다. 이를 통해 유연하게 명령줄에서 이러한 도구를 실행할 수도 있고 이러한 도구로 스크립트를 사용하는 작업을 자동화할 수도 있습니다.
 
@@ -35,12 +33,12 @@ ms.locfileid: "35669337"
 
 |작업|관련 내용|
 |----------|---------------------|
-|**Windows 8 이상에 대한 기술**|[Windows 8 및 Windows Server 2012 응용 프로그램의 성능 도구](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)|
+|**Windows 8 이상에 대한 기술**|[Windows 8 및 Windows Server 2012 애플리케이션의 성능 도구](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)|
 |**프로파일링 개념 이해:** 프로파일링 도구를 사용하여 코드 성능을 수집하고, 보고, 분석하는 데 사용하는 개념 및 용어에 대해 알아봅니다.|[개요](../profiling/overviews-performance-tools.md)|
 |**시작 및 작업:** 프로파일링 도구를 사용하여 코드 성능을 수집하고, 보고, 분석할 때 사용하는 기본적인 절차에 대해 알아봅니다. 실전 연습을 수행해 보세요.|[시작](../profiling/getting-started-with-performance-tools.md)|
 |**프로파일링 세션 구성:** 프로파일링할 프로젝트 또는 이진 파일을 지정하고, 프로파일링 방법을 선택하고, 수집할 성능 데이터를 선택하고, 기타 프로파일링 세션 옵션을 설정하는 고급 방법을 알아봅니다.|[성능 세션 구성](../profiling/configuring-performance-sessions.md)|
 |**프로파일러가 수집하는 데이터 제어:** 성능 세션 속성 및 대화형 절차를 사용하여 프로파일링을 시작 및 중지하는 방법, 원하는 정보만 수집하는 성능 데이터를 제한하는 방법을 알아봅니다.|[데이터 수집 제어](../profiling/controlling-data-collection.md)|
-|**성능 문제 찾기:** 프로파일링 도구 보고서 뷰 창에서 수집된 성능 데이터를 보고 분석하는 방법을 알아봅니다.|[성능 도구 데이터 분석](../profiling/analyzing-performance-tools-data.md)|
+|**성능 문제 찾기:** 프로파일링 도구 보고서 보기 창에서 수집된 성능 데이터를 보고 분석하는 방법을 알아봅니다.|[성능 도구 데이터 분석](../profiling/analyzing-performance-tools-data.md)|
 |**성능 변경 분석:** 두 프로파일러 데이터 파일을 비교하여 성능 변경을 분석하는 방법을 알아봅니다.|[성능 데이터 파일 비교](../profiling/comparing-performance-data-files.md)|
 |**결과 저장 및 공유:** 보관 또는 공유를 위해 프로파일링 데이터를 저장하는 방법을 알아봅니다.|[성능 도구 데이터 저장 및 내보내기](../profiling/saving-and-exporting-performance-tools-data.md)|
 |**프로파일링 자동화:** 명령 프롬프트에서 프로파일링 도구를 사용하는 방법을 알아봅니다.|[명령줄에서 프로파일링](../profiling/using-the-profiling-tools-from-the-command-line.md)|

@@ -2,7 +2,6 @@
 title: IEnumDebugPropertyInfo 인터페이스 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61504d60ccb59a0632376bf8e1ef762382b06326
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 736bea847908e3c70d6caf2f8e41af38608f4f23
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963431"
 ---
 # <a name="ienumdebugpropertyinfo-interface"></a>IEnumDebugPropertyInfo 인터페이스
 열거 `DebugPropertyInfo` 구조입니다.  
@@ -32,8 +31,8 @@ ms.locfileid: "24728233"
 |[IEnumDebugPropertyInfo::Next](../../winscript/reference/ienumdebugpropertyinfo-next.md)|지정된 된 수의 검색 `DebugPropertyInfo` 열거형 시퀀스에는 구조입니다.|  
 |[IEnumDebugPropertyInfo::Skip](../../winscript/reference/ienumdebugpropertyinfo-skip.md)|지정 된 개수의 건너뜁니다 `DebugPropertyInfo` 열거형 시퀀스에는 구조입니다.|  
 |[IEnumDebugPropertyInfo::Reset](../../winscript/reference/ienumdebugpropertyinfo-reset.md)|열거형 시퀀스를 시작 부분으로 다시 설정합니다.|  
-|[IEnumDebugPropertyInfo::Clone](../../winscript/reference/ienumdebugpropertyinfo-clone.md)|현재 열거자와 동일한 열거 상태가 포함 하는 열거자를 만듭니다.|  
-|[IEnumDebugPropertyInfo::GetCount](../../winscript/reference/ienumdebugpropertyinfo-getcount.md)|개수를 가져옵니다 `DebugPropertyInfo` 구조에는 열거자입니다.|  
+|[IEnumDebugPropertyInfo::Clone](../../winscript/reference/ienumdebugpropertyinfo-clone.md)|현재 열거자와 열거 상태가 같은 포함 하는 열거자를 만듭니다.|  
+|[IEnumDebugPropertyInfo::GetCount](../../winscript/reference/ienumdebugpropertyinfo-getcount.md)|개수를 가져옵니다 `DebugPropertyInfo` 열거자 구조입니다.|  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: dbgprop.h  

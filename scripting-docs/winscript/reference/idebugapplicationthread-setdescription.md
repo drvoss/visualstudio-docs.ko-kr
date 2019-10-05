@@ -2,7 +2,6 @@
 title: IDebugApplicationThread::SetDescription | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 941e2e5ac9843c8894a4dd83e23ab132620b8a02
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a81c2062e002d85002b991969c4b8ccd64a82aab
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945697"
 ---
 # <a name="idebugapplicationthreadsetdescription"></a>IDebugApplicationThread::SetDescription
-이 스레드에 대 한 설명을 설정 합니다.  
+이 스레드에 대 한 설명을 설정합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT SetDescription(  
    LPCOLESTR  pstrDescription  
 );  

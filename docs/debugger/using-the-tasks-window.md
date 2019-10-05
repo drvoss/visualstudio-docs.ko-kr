@@ -1,8 +1,6 @@
 ---
 title: 작업 창 사용 | Microsoft Docs
-ms.custom: ''
 ms.date: 03/18/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.paralleltasks
@@ -16,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: bd5e0612-a0dc-41cf-a7af-1e87d0d5c35f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bddcb7b36cd119f20fe8e03ed1152662284ac8c0
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: HT
+ms.openlocfilehash: b32dc6372a6ce4983e9bd11e05a4a662d0ad44ba
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901603"
 ---
-# <a name="using-the-tasks-window"></a>작업 창 사용
+# <a name="using-the-tasks-window-c-visual-basic-c"></a>작업 창 사용 (C#, Visual Basic의 경우 C++)
 
 **작업** 창은 **스레드** 창과 비슷하지만, 각 스레드 대신 <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](/cpp/parallel/concrt/reference/task-group-class) 또는 [WinJS.Promise](/previous-versions/windows/apps/br211867(v=win.10)) 개체에 대한 정보가 표시된다는 점이 다릅니다. 스레드와 마찬가지로, 작업은 동시에 실행할 수 있는 비동기 작업을 나타내지만 여러 작업이 같은 스레드에서 실행될 수도 있습니다.
 
@@ -61,7 +59,7 @@ JavaScript에서 사용할 수는 프라미스를 사용 하 여 작업할 때 �
 |**AsyncState**|관리 코드의 경우 작업 상태입니다. 기본적으로 이 열은 숨겨집니다. 이 열을 표시하려면 열 머리글 중 하나에 대한 상황에 맞는 메뉴를 엽니다. **열**, **AsyncState**를 선택합니다.|
 |**부모**|이 작업을 만든 작업의 ID입니다. 비어 있으면 작업에 부모가 없는 것입니다. 관리되는 프로그램에만 적용됩니다.|
 |**스레드 할당**|작업이 실행 중인 스레드의 ID 및 이름입니다.|
-|**AppDomain**|관리 코드의 경우 작업이 실행되고 있는 응용 프로그램 도메인입니다.|
+|**AppDomain**|관리 코드의 경우 작업이 실행되고 있는 애플리케이션 도메인입니다.|
 |**task_group**|네이티브 코드의 경우 작업을 예약한 [task_group](/cpp/parallel/concrt/reference/task-group-class) 개체의 주소입니다. 비동기 에이전트 및 간단한 작업의 경우 이 열은 0으로 설정됩니다.|
 |**Process**|작업이 실행 중인 프로세스의 ID입니다.|
 
@@ -70,7 +68,7 @@ JavaScript에서 사용할 수는 프라미스를 사용 하 여 작업할 때 �
  ![작업 창의 바로 가기 뷰 메뉴](../debugger/media/parallel_tasks_contextmenu.png "Parallel_Tasks_ContextMenu")
 
 ## <a name="sorting-tasks"></a>작업 정렬
- 열 조건으로 작업을 정렬하려면 열 머리글을 클릭합니다. 예를 들어,를 클릭 하 여 합니다 **ID** 열 머리글을 작업 ID로 작업을 정렬할 수 있습니다. 기타 등등 정렬 순서를 반대로 바꾸려면 열 머리글을 다시 클릭합니다. 현재 정렬 열과 정렬 순서는 열에 화살표로 표시됩니다.
+ 열 조건으로 작업을 정렬하려면 열 머리글을 클릭합니다. 예를 들어,를 클릭 하 여 합니다 **ID** 열 머리글을 작업 ID로 작업을 정렬할 수 있습니다. 1,2,3,4,5 및 등입니다. 정렬 순서를 반대로 바꾸려면 열 머리글을 다시 클릭합니다. 현재 정렬 열과 정렬 순서는 열에 화살표로 표시됩니다.
 
 ## <a name="grouping-tasks"></a>작업 그룹화
  목록 뷰에서 열을 기준으로 작업을 그룹화할 수 있습니다. 예를 들어, **상태** 열 머리글을 마우스 오른쪽 단추로 클릭하고 **상태별 그룹** > **[*status*]** 를 클릭하면 동일한 상태의 모든 작업을 그룹화할 수 있습니다. 예를 들어, 차단 된 이유 집중할 수 있도록 작업을 대기 중 신속 하 게 볼 수 있습니다. 또한 디버그 세션 중에 관심 없는 그룹을 축소할 수도 있습니다. 동일한 방식으로 다른 열을 기준으로 그룹화할 수 있습니다. 그룹 머리글 옆의 단추를 클릭하여 간단하게 그룹에 플래그를 설정하거나 해제할 수 있습니다. 다음 그림에서는 그룹화된 모드의 **작업** 창을 보여 줍니다.
@@ -94,7 +92,7 @@ JavaScript에서 사용할 수는 프라미스를 사용 하 여 작업할 때 �
 
 합니다 **작업으로 전환** 명령 활성 작업이 현재 작업을 수행 합니다. 합니다 **프레임으로 전환** 명령은 선택한 스택 프레임 활성 스택 프레임을 만듭니다. 디버거 컨텍스트는 현재 작업 또는 선택한 스택 프레임으로 전환 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [디버거 소개](../debugger/debugger-feature-tour.md)
 - [관리 코드 디버그](../debugger/debugging-managed-code.md)

@@ -1,14 +1,9 @@
 ---
 title: 호출자-호출 수신자 뷰 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.callercallee
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: d3511bcf-cce0-4cbe-aecb-b94c7c80ad1b
 caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7631085e0560c74ea162f8aeae9147bbcf9412e2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 58aca542571066ecfa9328c9600972665e757150
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176628"
 ---
 # <a name="callercallee-view"></a>호출자/호출 수신자 뷰
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,14 +38,11 @@ ms.locfileid: "51784431"
   
  뷰의 다른 두 부분에 나열되는 함수 중 하나를 두 번 클릭하여 다른 함수를 선택하면 보고서 뷰의 가운데 부분에 현재 함수가 표시되도록 할 수 있습니다. 보고서 뷰는 자동으로 업데이트되어 변경 내용을 반영합니다.  
   
- 열 이름을 클릭하면 데이터를 정렬할 수 있습니다. 호출자/호출 수신자 뷰에 열을 추가할 수 있습니다. 자세한 내용은 [방법: 보고서 뷰 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)을 참조하세요.  
+ 열 이름을 클릭하면 데이터를 정렬할 수 있습니다. 호출자/호출 수신자 뷰에 열을 추가할 수 있습니다. 자세한 내용은 [방법: 보고서 뷰 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [호출자/호출 수신자 뷰 - 샘플링 데이터](../profiling/caller-callee-view-sampling-data.md)   
  [호출자/호출 수신자 뷰 - 계측 데이터](../profiling/caller-callee-view-instrumentation-data.md)   
  [호출자/호출 수신자 뷰 - .NET 메모리 계측 데이터](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
  [호출자/호출 수신자 뷰 - .NET 메모리 샘플링 데이터](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
  [호출자/호출 수신자 뷰 - 경합 데이터](../profiling/caller-callee-view-contention-data.md)
-
-
-

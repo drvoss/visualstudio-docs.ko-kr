@@ -1,14 +1,9 @@
 ---
 title: 원본 제어 통합 필수 항목 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Source Control Integration, essentials
 - Source Control Integration,overview
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9893d5525bf66b167dea170c0c5fae8285aa40af
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b9189b647baa29d72975f84172696ecb54cd7f87
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780973"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183428"
 ---
 # <a name="source-control-integration-essentials"></a>소스 제어 통합 필수 항목
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "51780973"
   
 1. 에 지정 된 함수를 구현 하는 DLL을 만드는 [소스 제어 플러그 인](../../extensibility/source-control-plug-ins.md)합니다.  
   
-2. 에 설명 된 대로 적절 한 레지스트리 항목을 만들어 DLL을 등록 [방법: 소스 제어 플러그 인을 설치](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)합니다.  
+2. 에 설명 된 대로 적절 한 레지스트리 항목을 만들어 DLL을 등록 [방법: 소스 제어 플러그 인 설치](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)합니다.  
   
 3. 도우미 UI를 만들고 소스 컨트롤 어댑터 패키지에서 메시지가 표시 되 면 표시 (의 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 원본 제어 플러그 인을 통해 소스 제어 기능을 처리 하는 구성 요소).  
   
@@ -57,8 +52,7 @@ ms.locfileid: "51780973"
   
    자세한 내용은 [소스 제어 VSPackage를 만드는](../../extensibility/internals/creating-a-source-control-vspackage.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [개요](../../extensibility/internals/source-control-integration-overview.md)   
  [소스 제어 플러그 인 만들기](../../extensibility/internals/creating-a-source-control-plug-in.md)   
  [소스 제어 VSPackage 만들기](../../extensibility/internals/creating-a-source-control-vspackage.md)
-

@@ -2,7 +2,6 @@
 title: '&lt;appAddin&gt; 요소 (Visual Studio에서 Office 개발)'
 titleSuffix: ''
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -11,15 +10,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <appAddin> element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdba74f7022ec73cfd6d52c386e8a4594aa6ca7f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2116576acb06e6291749d9c0176fcf4ebb426739
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953246"
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt; 요소 (Visual Studio에서 Office 개발)
   합니다 **appAddin** 의 요소를 `vstov4` 네임 스페이스는 VSTO 추가 기능에 대 한 사용자 지정 관련 정보를 저장 합니다.
@@ -44,9 +43,9 @@ ms.locfileid: "53905441"
 
 |특성|설명|
 |---------------|-----------------|
-|**응용 프로그램**|필수 요소. Microsoft Office 애플리케이션을 식별합니다. 값은 다음 중 하나일 수 있습니다. Excel, InfoPath, Outlook, PowerPoint, Project, Visio 또는 Word|
-|**LoadBehavior**|선택 사항입니다. 기본적으로 **loadBehavior** 이 값을 설정 하 여 사용 하도록 설정 됩니다. 디버깅을 위해서는 이 값을 2로 설정하여 VSTO 추가 기능을 사용하지 않도록 설정할 수 있습니다. 자세한 내용은에서 LoadBehavior 값 표를 참조 [VSTO 추가 기능에 대 한 레지스트리 항목](../vsto/registry-entries-for-vsto-add-ins.md)합니다.|
-|**키 이름**|필수 요소. 이 값은 애플리케이션에서 VSTO 추가 기능을 로드할 때 사용할 레지스트리 키 이름입니다. 자세한 내용은 [VSTO 추가 기능에 대 한 레지스트리 항목](../vsto/registry-entries-for-vsto-add-ins.md)합니다.|
+|**application**|필수 요소. Microsoft Office 애플리케이션을 식별합니다. 값은 다음 중 하나일 수 있습니다. Excel, InfoPath, Outlook, PowerPoint, Project, Visio 또는 Word|
+|**loadBehavior**|선택 사항입니다. 기본적으로 **loadBehavior** 이 값을 설정 하 여 사용 하도록 설정 됩니다. 디버깅을 위해서는 이 값을 2로 설정하여 VSTO 추가 기능을 사용하지 않도록 설정할 수 있습니다. 자세한 내용은에서 LoadBehavior 값 표를 참조 [VSTO 추가 기능에 대 한 레지스트리 항목](../vsto/registry-entries-for-vsto-add-ins.md)합니다.|
+|**keyName**|필수 요소. 이 값은 애플리케이션에서 VSTO 추가 기능을 로드할 때 사용할 레지스트리 키 이름입니다. 자세한 내용은 [VSTO 추가 기능에 대 한 레지스트리 항목](../vsto/registry-entries-for-vsto-add-ins.md)합니다.|
 
  합니다 **appAddin** 요소에는 다음 자식 요소가 있습니다.
 
@@ -93,4 +92,4 @@ ms.locfileid: "53905441"
 
 - [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)
 - [Office 솔루션의 배포 매니페스트](../vsto/deployment-manifests-for-office-solutions.md)
-- [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md)
+- [ClickOnce 애플리케이션 매니페스트](../deployment/clickonce-application-manifest.md)

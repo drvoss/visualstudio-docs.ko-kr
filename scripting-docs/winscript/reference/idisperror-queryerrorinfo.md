@@ -2,7 +2,6 @@
 title: IDispError::QueryErrorInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a165edf2d8f9a0b386daa0035ece1a722401a443
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
-ms.translationtype: MT
+ms.openlocfilehash: 828497eac8bb2751baeca8b1fe19b5aeb5aae6a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726983"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446809"
 ---
 # <a name="idisperrorqueryerrorinfo"></a>IDispError::QueryErrorInfo
 특정 유형의 오류 정보를 검색합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT QueryErrorInfo(  
    GUID  guidErrorType,  
    IDispError**  ppde  
@@ -55,7 +54,7 @@ HRESULT QueryErrorInfo(
  `QueryErrorInfo` 메서드는 특정 유형의 오류 정보를 검색 합니다.  
   
 > [!NOTE]
->  이 메서드가 구현되지 않았습니다.  
+> 이 메서드가 구현되지 않았습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDispError 인터페이스](../../winscript/reference/idisperror-interface.md)

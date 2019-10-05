@@ -1,14 +1,9 @@
 ---
 title: 'CA2002: 약한 id 가진 개체를 잠그지 마십시오 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DoNotLockOnObjectsWithWeakIdentity
 - CA2002
@@ -20,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c8ddcd20275dc84cc1c575e00f539c2a436139c6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 39d233c126d35f303a30a955310859dd9a678c56
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907874"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681373"
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002: 약한 ID를 가진 개체를 잠그지 마십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,23 +36,23 @@ ms.locfileid: "49907874"
  스레드는 약한 id를 가진 개체에 대 한 잠금을 획득 하려고 시도 합니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 응용 프로그램 도메인 경계를 가로질러 직접 액세스할 수 있는 개체를 약한 ID를 가진 개체라고 합니다. 약한 ID를 가진 개체에 대해 잠금을 가져오려고 시도하는 스레드는 같은 개체에 대해 잠금을 가진 다른 응용 프로그램 도메인의 스레드에 의해 차단될 수 있습니다. 형식은 약한 id를 있고 규칙으로 플래그가 지정 됩니다.
+ 애플리케이션 도메인 경계를 가로질러 직접 액세스할 수 있는 개체를 약한 ID를 가진 개체라고 합니다. 약한 ID를 가진 개체에 대해 잠금을 가져오려고 시도하는 스레드는 같은 개체에 대해 잠금을 가진 다른 애플리케이션 도메인의 스레드에 의해 차단될 수 있습니다. 형식은 약한 id를 있고 규칙으로 플래그가 지정 됩니다.
 
--   <xref:System.MarshalByRefObject>
+- <xref:System.MarshalByRefObject>
 
--   <xref:System.ExecutionEngineException>
+- <xref:System.ExecutionEngineException>
 
--   <xref:System.OutOfMemoryException>
+- <xref:System.OutOfMemoryException>
 
--   <xref:System.StackOverflowException>
+- <xref:System.StackOverflowException>
 
--   <xref:System.String>
+- <xref:System.String>
 
--   <xref:System.Reflection.MemberInfo>
+- <xref:System.Reflection.MemberInfo>
 
--   <xref:System.Reflection.ParameterInfo>
+- <xref:System.Reflection.ParameterInfo>
 
--   <xref:System.Threading.Thread>
+- <xref:System.Threading.Thread>
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  이 규칙 위반 문제를 해결 하려면 설명 섹션의 목록에 있지 않은 형식에서 개체를 사용 합니다.
@@ -76,7 +71,4 @@ ms.locfileid: "49907874"
 
 ## <a name="see-also"></a>참고 항목
  <xref:System.Threading.Monitor> <xref:System.AppDomain>
- [lock 문](http://msdn.microsoft.com/library/656da1a4-707e-4ef6-9c6e-6d13b646af42) [SyncLock 문](http://msdn.microsoft.com/library/14501703-298f-4d43-b139-c4b6366af176)
-
-
-
+ [lock 문](https://msdn.microsoft.com/library/656da1a4-707e-4ef6-9c6e-6d13b646af42) [SyncLock 문](https://msdn.microsoft.com/library/14501703-298f-4d43-b139-c4b6366af176)

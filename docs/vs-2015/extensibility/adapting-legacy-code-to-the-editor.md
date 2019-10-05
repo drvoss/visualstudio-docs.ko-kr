@@ -1,28 +1,23 @@
 ---
 title: 레거시 코드 편집기로 적응 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - adapters
 ms.assetid: a208d38e-9bea-41c9-9fe2-38bd86a359cb
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 660ce81898750851f3b1b3f0c89fadc262a154ba
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 0bb90723a72c10dbf6cfda5edd4aa68f71f1c6b9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184912"
 ---
-# <a name="adapting-legacy-code-to-the-editor"></a>레거시 코드 편집기로 수정
+# <a name="adapting-legacy-code-to-the-editor"></a>레거시 코드를 편집기로 조정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 편집기에 기존 코드 구성 요소에서 액세스할 수 있는 많은 기능이 있습니다. 다음 지침을 예를 들어 VSPackage로 편집기 기능을 사용 하려면-MEF 구성 요소를 조정 하는 방법을 보여 줍니다. 지침에는 서비스를 가져올 편집기의 관리 및 비관리 코드에서 어댑터를 사용 하는 방법을 보여 줍니다.  
@@ -80,9 +75,9 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 #### <a name="to-create-an-adapter-for-ivstextview"></a>IVsTextView에 대 한 어댑터를 만들려면  
   
-1.  Microsoft.VisualStudio.Editor.dll에 대 한 참조를 추가 합니다. 했는지 `CopyLocal` 로 설정 된 `false`합니다.  
+1. Microsoft.VisualStudio.Editor.dll에 대 한 참조를 추가 합니다. 했는지 `CopyLocal` 로 설정 된 `false`합니다.  
   
-2.  인스턴스화하는 <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>다음과 같이 합니다.  
+2. 인스턴스화하는 <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>다음과 같이 합니다.  
   
     ```  
     using Microsoft.VisualStudio.Editor;  
@@ -90,7 +85,7 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
     IVsEditorAdaptersFactoryService adapterFactoryService = ComponentModel.GetService<IVsEditorAdaptersFactoryService>();  
     ```  
   
-3.  `CreateX()` 메서드를 호출합니다.  
+3. `CreateX()` 메서드를 호출합니다.  
   
     ```  
     adapterFactoryService.CreateTextViewAdapter(textView);  
@@ -101,9 +96,9 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 #### <a name="to-get-an-ivxtextbuffer"></a>IVxTextBuffer를 가져오려면  
   
-1.  IVx* 인터페이스에 대 한 정의에 VSEditor.h 파일에 포함 되는... Visual Studio SDK 설치의 \VisualStudioIntegration\Common\Inc\ 폴더입니다.  
+1. IVx* 인터페이스에 대 한 정의에 VSEditor.h 파일에 포함 되는... Visual Studio SDK 설치의 \VisualStudioIntegration\Common\Inc\ 폴더입니다.  
   
-2.  다음 코드를 사용 하 여 텍스트 버퍼를 인스턴스화하는 `IVsUserData->GetData()` 메서드. 다음 코드에서는 `pData` 에 대 한 포인터를 `IVsUserData` 개체입니다.  
+2. 다음 코드를 사용 하 여 텍스트 버퍼를 인스턴스화하는 `IVsUserData->GetData()` 메서드. 다음 코드에서는 `pData` 에 대 한 포인터를 `IVsUserData` 개체입니다.  
   
     ```  
     #include <textmgr.h>  
@@ -130,9 +125,9 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 #### <a name="to-consume-visual-studio-editor-components-from-a-non-mef-component"></a>비-MEF 구성 요소에서 Visual Studio 편집기 구성 요소를 사용 하려면  
   
-1.  Microsoft.VisualStudio.ComponentModelHost.dll 어셈블리에 대 한 참조를 추가 합니다... Visual Studio 설치의 \Common7\IDE\ 폴더입니다. 했는지 `CopyLocal` 로 설정 된 `false`합니다.  
+1. Microsoft.VisualStudio.ComponentModelHost.dll 어셈블리에 대 한 참조를 추가 합니다... Visual Studio 설치의 \Common7\IDE\ 폴더입니다. 했는지 `CopyLocal` 로 설정 된 `false`합니다.  
   
-2.  개인 추가 `IComponentModel` Visual Studio 편집기 서비스를 다음과 같이 사용 하려는 클래스 멤버입니다.  
+2. 개인 추가 `IComponentModel` Visual Studio 편집기 서비스를 다음과 같이 사용 하려는 클래스 멤버입니다.  
   
     ```  
     using Microsoft.VisualStudio.ComponentModelHost;  
@@ -140,17 +135,16 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
     private IComponentModel componentModel;  
     ```  
   
-3.  구성 요소에 대 한 초기화 메서드에서 구성 요소 모델을 인스턴스화하십시오.  
+3. 구성 요소에 대 한 초기화 메서드에서 구성 요소 모델을 인스턴스화하십시오.  
   
     ```  
     componentModel =  
      (IComponentModel)Package.GetGlobalService(typeof(SComponentModel));  
     ```  
   
-4.  그런 다음 Visual Studio 편집기 서비스 중 하나를 호출 하 여 가져올 수 있습니다는 `IComponentModel.GetService<T>()` 원하는 서비스에 대 한 메서드.  
+4. 그런 다음 Visual Studio 편집기 서비스 중 하나를 호출 하 여 가져올 수 있습니다는 `IComponentModel.GetService<T>()` 원하는 서비스에 대 한 메서드.  
   
     ```  
     textBufferFactoryService =  
          componentModel.GetService<ITextBufferFactoryService>();     
     ```
-

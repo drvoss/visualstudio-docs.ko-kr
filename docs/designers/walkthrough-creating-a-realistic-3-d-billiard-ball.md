@@ -1,21 +1,19 @@
 ---
 title: '연습: 사실적인 3D 당구공 만들기'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0f8596e8a2064f09ff817a768dd7ec994e3c920
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9f5788b2c6b2dab4b6f0f7a6c520aa1f2ab5f9ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844710"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>연습: 사실적인 3D 당구공 만들기
 
@@ -25,11 +23,11 @@ ms.locfileid: "49847645"
 
 이 연습을 완료하려면 다음 구성 요소와 기술이 필요합니다.
 
--   질감을 큐브 맵으로 어셈블하는 도구(예: June 2010 DirectX SDK에 포함된 DirectX Texture Tool).
+- 질감을 큐브 맵으로 어셈블하는 도구(예: June 2010 DirectX SDK에 포함된 DirectX Texture Tool).
 
--   Visual Studio의 이미지 편집기에 대한 지식.
+- Visual Studio의 이미지 편집기에 대한 지식.
 
--   Visual Studio의 셰이더 디자이너에 대한 지식.
+- Visual Studio의 셰이더 디자이너에 대한 지식.
 
 ## <a name="create-the-basic-appearance-with-shape-and-texture"></a>도형 및 질감을 사용하여 기본 모양 만들기
 
@@ -59,7 +57,7 @@ ms.locfileid: "49847645"
 
     ![당구공 질감](../designers/media/gfx_shader_demo_billiard_art_ball_texture.png)
 
-4. 필요한 경우 이 질감의 저장소 요구 사항을 줄여야 할 수 있습니다. 질감의 너비를 높이에 맞게 줄이면 됩니다. 그러면 너비에 따라 질감이 압축되지만 질감이 구에 매핑된 방식으로 인해 당구공이 렌더링될 때 질감이 확장됩니다. 크기를 조정한 후 질감은 다음과 같이 표시됩니다.
+4. 필요한 경우 이 질감의 스토리지 요구 사항을 줄여야 할 수 있습니다. 질감의 너비를 높이에 맞게 줄이면 됩니다. 그러면 너비에 따라 질감이 압축되지만 질감이 구에 매핑된 방식으로 인해 당구공이 렌더링될 때 질감이 확장됩니다. 크기를 조정한 후 질감은 다음과 같이 표시됩니다.
 
     ![사각형으로 압축된 당구공 질감](../designers/media/gfx_shader_demo_billiard_art_ball_texture_square.png)
 

@@ -1,21 +1,19 @@
 ---
 title: 3D 모델 작업
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: fa035091-1354-4d1c-be44-4fb83860466f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d38eb26e40d78ccdca57110d5a7b7966393e7859
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: fbca927a3c4bd26a37318fc9b3403d0eb8d7393c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892560"
 ---
 # <a name="work-with-3d-models"></a>3D 모델 작업
 

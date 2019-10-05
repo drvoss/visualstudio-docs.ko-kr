@@ -1,25 +1,22 @@
 ---
 title: 모델에서 테스트 개발 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - tests and requirements
 ms.assetid: 40f87192-ba85-4552-8804-314a678261ae
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c0613e43816e7ef7036c5e13b7abafe90b451b81
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9ab0d9ae382f9410418a98fea606eebbb236b157
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787187"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823324"
 ---
 # <a name="develop-tests-from-a-model"></a>모델에서 테스트 개발
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +36,7 @@ ms.locfileid: "51787187"
   
  하위 시스템 테스트는 시스템의 주요 구성 요소에 동일한 원칙을 적용합니다. 각 구성 요소가 다른 구성 요소와 별도로 테스트됩니다. 하위 시스템 테스트는 구성 요소의 사용자 인터페이스 또는 API에 표시되는 동작에 중점을 둡니다.  
   
- 테스트를 실행 하는 방법에 대 한 자세한 내용은 참조 하세요. [응용 프로그램 테스트](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)합니다.  
+ 테스트를 실행 하는 방법에 대 한 자세한 내용은 참조 하세요. [응용 프로그램 테스트](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)합니다.  
   
 ## <a name="deriving-system-tests-from-a-requirements-model"></a>요구 사항 모델에서 시스템 테스트 파생  
  시스템 테스트와 요구 사항 모델 간의 관계를 만들고 유지 관리할 수 있습니다. 이 관계를 설정하려면 요구 사항 모델의 주요 요소에 해당하는 테스트를 작성합니다. Visual Studio는 테스트 및 모델 파트 간에 링크를 만들 수 있도록 하여 해당 관계의 유지 관리를 도와줍니다. 요구 사항 모델에 대 한 자세한 내용은 참조 하세요. [사용자 요구 사항 모델](../modeling/model-user-requirements.md)합니다.  
@@ -49,26 +46,26 @@ ms.locfileid: "51787187"
   
  다음 지침이 도움이 될 수 있습니다.  
   
--   각 사용 사례에 주 경로 및 예외적 결과에 대한 여러 테스트가 있어야 합니다.  
+- 각 사용 사례에 주 경로 및 예외적 결과에 대한 여러 테스트가 있어야 합니다.  
   
--   요구 사항 모델의 사용 사례를 설명하는 경우 목표를 달성하기 위해 사용자가 따라야 하는 절차를 자세히 설명하는 것보다 사후 조건, 즉 달성되는 목표를 정의하는 것이 더 중요합니다. 예를 들어 음식 주문의 사후 조건은 식당에서 고객을 위해 음식을 준비하고 고객이 대금을 지불하는 것일 수 있습니다. 사후 조건은 테스트에서 확인해야 하는 조건입니다.  
+- 요구 사항 모델의 사용 사례를 설명하는 경우 목표를 달성하기 위해 사용자가 따라야 하는 절차를 자세히 설명하는 것보다 사후 조건, 즉 달성되는 목표를 정의하는 것이 더 중요합니다. 예를 들어 음식 주문의 사후 조건은 식당에서 고객을 위해 음식을 준비하고 고객이 대금을 지불하는 것일 수 있습니다. 사후 조건은 테스트에서 확인해야 하는 조건입니다.  
   
--   사후 조건의 개별 절에 따라 별도 테스트를 만듭니다. 예를 들어 레스토랑에 주문을 알리는 테스트와 고객으로부터 대금을 지불 받는 테스트를 별도로 만듭니다. 이렇게 구분하면 다음과 같은 이점이 있습니다.  
+- 사후 조건의 개별 절에 따라 별도 테스트를 만듭니다. 예를 들어 레스토랑에 주문을 알리는 테스트와 고객으로부터 대금을 지불 받는 테스트를 별도로 만듭니다. 이렇게 구분하면 다음과 같은 이점이 있습니다.  
   
-    -   요구 사항의 여러 측면에서 변경이 독립적으로 자주 발생합니다. 이런 방식으로 테스트를 여러 측면으로 분리하면 요구 사항이 변경될 때 테스트를 쉽게 업데이트할 수 있습니다.  
+  - 요구 사항의 여러 측면에서 변경이 독립적으로 자주 발생합니다. 이런 방식으로 테스트를 여러 측면으로 분리하면 요구 사항이 변경될 때 테스트를 쉽게 업데이트할 수 있습니다.  
+
+  - 개발 계획에서 사용 사례의 한 측면을 다른 측면보다 먼저 구현하는 경우 개발이 진행됨에 따라 테스트를 별도로 사용하도록 설정할 수 있습니다.  
   
-    -   개발 계획에서 사용 사례의 한 측면을 다른 측면보다 먼저 구현하는 경우 개발이 진행됨에 따라 테스트를 별도로 사용하도록 설정할 수 있습니다.  
-  
--   테스트를 디자인할 때 사후 조건이 달성되었는지 여부를 확인하는 테스트 데이터 선택 항목을 코드 또는 스크립트에서 구분합니다. 예를 들어 단순한 산술 함수 테스트는 입력 4, 출력이 2인지 확인이 될 수 있습니다. 대신, 스크립트를 입력 선택, 출력에 자신을 곱하고 결과가 원래 입력인지 확인으로 디자인합니다. 이 스타일을 사용하면 테스트의 본문을 변경하지 않고 테스트 입력을 확인할 수 있습니다.  
+- 테스트를 디자인할 때 사후 조건이 달성되었는지 여부를 확인하는 테스트 데이터 선택 항목을 코드 또는 스크립트에서 구분합니다. 예를 들어 단순한 산술 함수 테스트 수 있습니다. 입력 4; 출력이 2 인지 확인 합니다. 대신 스크립트를 디자인 합니다. 입력;를 선택 합니다. 자체적으로 출력을 곱하는 하 고 결과가 원래 입력 인지 확인 합니다. 이 스타일을 사용하면 테스트의 본문을 변경하지 않고 테스트 입력을 확인할 수 있습니다.  
   
 #### <a name="linking-tests-to-use-cases"></a>사용 사례에 테스트 연결  
  사용 중인 경우 [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] 를 디자인 및 테스트를 실행 하려면 요구 사항, 사용 사례 또는 사용자 스토리 작업 항목 아래에 테스트를 구성할 수 있습니다. 모델의 사용 사례에 이러한 작업 항목을 연결할 수 있습니다. 이렇게 하면 테스트에 대한 요구 사항 변경을 신속하게 추적할 수 있으며 각 사용 사례의 진행률을 추적하는 데 도움이 됩니다.  
   
 ###### <a name="to-link-tests-to-a-use-case"></a>사용 사례에 테스트를 연결하려면  
   
-1. [!INCLUDE[TCMlong](../includes/tcmlong-md.md)]에서 요구 사항을 만들고 요구 사항에 따라 테스트 도구 모음을 만듭니다. 내용은 작업을 수행 하는 방법을 알아보려면 [응용 프로그램 테스트](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)합니다.  
+1. [!INCLUDE[TCMlong](../includes/tcmlong-md.md)]에서 요구 사항을 만들고 요구 사항에 따라 테스트 도구 모음을 만듭니다. 내용은 작업을 수행 하는 방법을 알아보려면 [응용 프로그램 테스트](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)합니다.  
   
-    만드는 요구 사항은 [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]에서 작업 항목이 됩니다. 프로젝트가 [!INCLUDE[esprfound](../includes/esprfound-md.md)]에서 사용하는 프로세스 템플릿에 따라 사용자 스토리, 요구 사항 또는 사용 사례 작업 항목일 수 있습니다. 자세한 내용은 [Visual Studio Team Services 또는 Team Foundation Server를 사용 하 여 작업 추적](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)합니다.  
+    만드는 요구 사항은 [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]에서 작업 항목이 됩니다. 프로젝트가 [!INCLUDE[esprfound](../includes/esprfound-md.md)]에서 사용하는 프로세스 템플릿에 따라 사용자 스토리, 요구 사항 또는 사용 사례 작업 항목일 수 있습니다. 자세한 내용은 [Visual Studio Team Services 또는 Team Foundation Server를 사용 하 여 작업 추적](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)합니다.  
   
 2. 모델에서 하나 이상의 사용 사례에 요구 사항 작업 항목을 연결합니다.  
   
@@ -107,9 +104,9 @@ Assert (countAfter == countBefore = 1);
   
  이 메서드가 작동하려면 시스템에 액세스하여 현재 상태에 대한 정보를 검색하는 읽기 전용 함수 또는 접근자로 클래스의 속성을 정의해야 합니다. AddItemToOrder와 같은 사용 사례를 시뮬레이트하는 메서드는 해당 API나 사용자 인터페이스 아래의 레이어를 통해 시스템을 구동해야 합니다. Order 및 MenuItem과 같은 테스트 개체의 생성자는 시스템을 구동하여 시스템 내부에 해당 항목도 만들어야 합니다.  
   
- 대부분의 접근자와 업데이트 프로그램은 응용 프로그램의 일반 API를 통해 이미 사용할 수 있습니다. 그러나 테스트를 사용하도록 설정하기 위해 일부 추가 함수를 작성해야 할 수도 있습니다. 이러한 추가 접근자와 업데이트 프로그램을 '테스트 계측'이라고도 합니다. 접근자와 업데이트 프로그램은 시스템의 내부 디자인에 의존하므로 시스템 개발자가 제공해야 하는 반면, 테스터는 요구 사항 모델과 관련해서 테스트 코드를 작성합니다.  
+ 대부분의 접근자와 업데이트 프로그램은 애플리케이션의 일반 API를 통해 이미 사용할 수 있습니다. 그러나 테스트를 사용하도록 설정하기 위해 일부 추가 함수를 작성해야 할 수도 있습니다. 이러한 추가 접근자와 업데이트 프로그램을 '테스트 계측'이라고도 합니다. 접근자와 업데이트 프로그램은 시스템의 내부 디자인에 의존하므로 시스템 개발자가 제공해야 하는 반면, 테스터는 요구 사항 모델과 관련해서 테스트 코드를 작성합니다.  
   
- 자동화된 테스트를 작성하는 경우 일반 테스트를 사용하여 접근자와 업데이트 프로그램을 래핑할 수 있습니다. 자세한 내용은 [실행 파일 사용 하 여 제네릭 테스트는 자동화 된 테스트는 실행 만들기](http://msdn.microsoft.com/library/b8dadaf4-4473-49c5-a0d9-46eca9e65d52)합니다.  
+ 자동화된 테스트를 작성하는 경우 일반 테스트를 사용하여 접근자와 업데이트 프로그램을 래핑할 수 있습니다. 자세한 내용은 [실행 파일 사용 하 여 제네릭 테스트는 자동화 된 테스트는 실행 만들기](https://msdn.microsoft.com/library/b8dadaf4-4473-49c5-a0d9-46eca9e65d52)합니다.  
   
 ### <a name="tests-for-business-rules"></a>비즈니스 규칙 테스트  
  일부 요구 사항은 하나의 특정 사용 사례와 직접 관련되지 않습니다. 예를 들어 DinnerNow 비즈니스에서는 고객이 많은 메뉴에서 선택할 수 있지만 각 주문에서 선택된 모든 항목은 단일 메뉴에 속해야 합니다. 이 비즈니스 규칙은 요구 사항 클래스 모델에서 주문, 메뉴 및 항목 간의 연결에 대한 고정으로 표현될 수 있습니다.  
@@ -130,7 +127,7 @@ Assert (countAfter == countBefore = 1);
  각 메시지 또는 작업 후에 시스템의 상태를 확인합니다. 이를 위해 추가 계측이 필요할 수도 있습니다.  
   
 ## <a name="deriving-subsystem-tests-from-models"></a>모델에서 하위 시스템 테스트 파생  
- 대규모 시스템의 전반적인 디자인에서 구성 요소 또는 하위 시스템을 식별할 수 있습니다. 이러한 구성 요소 또는 하위 시스템은 별도로 디자인될 수 있거나, 서로 다른 컴퓨터에 있거나, 다양한 방식으로 다시 결합할 수 있는 재사용 가능한 모듈인 파트를 나타냅니다. 자세한 내용은 [UML 구성 요소 다이어그램: 지침](../modeling/uml-component-diagrams-guidelines.md)합니다.  
+ 대규모 시스템의 전반적인 디자인에서 구성 요소 또는 하위 시스템을 식별할 수 있습니다. 이러한 구성 요소 또는 하위 시스템은 별도로 디자인될 수 있거나, 서로 다른 컴퓨터에 있거나, 다양한 방식으로 다시 결합할 수 있는 재사용 가능한 모듈인 파트를 나타냅니다. 자세한 내용은 참조 하세요. [UML 구성 요소 다이어그램: 지침](../modeling/uml-component-diagrams-guidelines.md)합니다.  
   
  전체 시스템에 사용하는 것과 동일한 원칙을 각 주요 구성 요소에 적용할 수 있습니다. 대규모 프로젝트에서는 각 구성 요소에 자체 요구 사항 모델이 있을 수 있습니다. 작은 프로젝트에서는 아키텍처 모델 또는 전반적인 디자인을 만들어 주요 구성 요소 및 상호 작용을 표시할 수 있습니다. 자세한 내용은 [앱의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)합니다.  
   
@@ -150,38 +147,35 @@ Assert (countAfter == countBefore = 1);
   
  테스트 관점에서 요구 사항 모델은 테스트 축약형으로 간주될 수 있습니다. 따라서 프로젝트 전체에서 테스트와 모델 간의 관계를 유지하는 것이 중요합니다.  
   
-##  <a name="Attaching"></a> 모델 요소에 테스트 사례 연결  
+## <a name="Attaching"></a> 모델 요소에 테스트 사례 연결  
  프로젝트에서 [!INCLUDE[TCMlong](../includes/tcmlong-md.md)]를 사용하는 경우 모델의 요소에 테스트를 연결할 수 있습니다. 이렇게 하면 요구 사항 변경의 영향을 받는 테스트를 빠르게 찾을 수 있으며 요구 사항이 인식된 익스텐트를 추적하는 데 도움이 됩니다.  
   
  모든 종류의 요소에 테스트를 연결할 수 있습니다. 다음은 몇 가지 예입니다.  
   
--   실행하는 테스트에 사용 사례를 연결합니다.  
+- 실행하는 테스트에 사용 사례를 연결합니다.  
   
--   사용 사례 사후 조건 또는 목표의 절을 사용 사례에 연결된 주석에 작성하고 각 주석에 테스트를 연결합니다.  
+- 사용 사례 사후 조건 또는 목표의 절을 사용 사례에 연결된 주석에 작성하고 각 주석에 테스트를 연결합니다.  
   
--   클래스 다이어그램 또는 동작 다이어그램의 주석에 고정 규칙을 작성하고 테스트에 연결합니다.  
+- 클래스 다이어그램 또는 동작 다이어그램의 주석에 고정 규칙을 작성하고 테스트에 연결합니다.  
   
--   동작 다이어그램 또는 개별 동작에 테스트를 연결합니다.  
+- 동작 다이어그램 또는 개별 동작에 테스트를 연결합니다.  
   
--   테스트하는 구성 요소 또는 하위 시스템에 테스트 도구 모음을 연결합니다.  
+- 테스트하는 구성 요소 또는 하위 시스템에 테스트 도구 모음을 연결합니다.  
   
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>모델 요소 또는 관계에 테스트를 연결하려면  
   
-1.  [!INCLUDE[TCMlong](../includes/tcmlong-md.md)]에서 요구 사항을 만들고 요구 사항에 따라 테스트 도구 모음을 만듭니다. 내용은 작업을 수행 하는 방법을 알아보려면 [응용 프로그램 테스트](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)합니다.  
+1. [!INCLUDE[TCMlong](../includes/tcmlong-md.md)]에서 요구 사항을 만들고 요구 사항에 따라 테스트 도구 모음을 만듭니다. 내용은 작업을 수행 하는 방법을 알아보려면 [응용 프로그램 테스트](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)합니다.  
   
-     만드는 요구 사항은 [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]에서 작업 항목이 됩니다. 프로젝트가 [!INCLUDE[esprfound](../includes/esprfound-md.md)]에서 사용하는 프로세스 템플릿에 따라 사용자 스토리, 요구 사항 또는 사용 사례 작업 항목일 수 있습니다. 자세한 내용은 [Visual Studio Team Services 또는 Team Foundation Server를 사용 하 여 작업 추적](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)합니다.  
+     만드는 요구 사항은 [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]에서 작업 항목이 됩니다. 프로젝트가 [!INCLUDE[esprfound](../includes/esprfound-md.md)]에서 사용하는 프로세스 템플릿에 따라 사용자 스토리, 요구 사항 또는 사용 사례 작업 항목일 수 있습니다. 자세한 내용은 [Visual Studio Team Services 또는 Team Foundation Server를 사용 하 여 작업 추적](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)합니다.  
   
-2.  모델에서 하나 이상의 요소에 요구 사항 작업 항목을 연결합니다.  
+2. 모델에서 하나 이상의 요소에 요구 사항 작업 항목을 연결합니다.  
   
      모델링 다이어그램에서 요소, 주석 또는 관계를 마우스 오른쪽 단추로 클릭 한 다음 클릭 **작업 항목에 링크**합니다. 자세한 내용은 [모델 요소에 연결 하 고 작업 항목](../modeling/link-model-elements-and-work-items.md)합니다.  
   
-3.  모델 요소에서 표현된 요구 사항을 확인하는 테스트 사례를 테스트 도구 모음에 추가합니다.  
+3. 모델 요소에서 표현된 요구 사항을 확인하는 테스트 사례를 테스트 도구 모음에 추가합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [앱 용 모델 만들기](../modeling/create-models-for-your-app.md)   
  [사용자 요구 사항 모델링](../modeling/model-user-requirements.md)   
  [앱의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)   
  [아키텍처 분석 및 모델링](../modeling/analyze-and-model-your-architecture.md)
-
-
-

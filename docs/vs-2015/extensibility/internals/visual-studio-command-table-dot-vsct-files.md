@@ -1,27 +1,22 @@
 ---
 title: Visual Studio 명령 테이블 (합니다. Vsct) 파일 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, overview
 - Visual Studio command table configuration files (VSCT), overview
 ms.assetid: 1313adb4-add4-4e74-90e2-f4be522f5259
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7a68d9f5dac293cc9048cb4b84aaa487c5079250
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cde3b86e19788c41df6e8f1c79a6bf829f491170
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748831"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675253"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Visual Studio 명령 테이블(.Vsct) 파일
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ ms.locfileid: "51748831"
  [VSCT XML 스키마 참조](../../extensibility/vsct-xml-schema-reference.md)  
  명령 테이블 XML 구성 파일의 각 섹션에 대 한 세부 정보를 제공합니다.  
   
- [테이블 구성 명령 (합니다. Ctc) 파일](http://msdn.microsoft.com/en-us/3413dda1-f372-4669-bcf0-c64d3463842c)  
+ [테이블 구성 명령 (합니다. Ctc) 파일](https://msdn.microsoft.com/3413dda1-f372-4669-bcf0-c64d3463842c)  
  사용 되지 않는.ctc 파일 형식 개요를 제공합니다.  
   
  [VSPackage에서 사용자 인터페이스 요소를 추가하는 방법](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
@@ -52,4 +47,3 @@ ms.locfileid: "51748831"
   
  [명령, 메뉴 및 도구 모음](../../extensibility/internals/commands-menus-and-toolbars.md)  
  메뉴, 도구 모음 및 명령 콤보 상자를 포함하는 UI를 만드는 방법을 설명합니다.
-

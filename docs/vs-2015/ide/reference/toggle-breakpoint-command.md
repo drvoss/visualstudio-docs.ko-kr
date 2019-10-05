@@ -1,14 +1,9 @@
 ---
 title: 중단점 설정/해제 명령 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.togglebreakpoint
 helpviewer_keywords:
@@ -19,18 +14,17 @@ ms.assetid: d50dfadb-ce79-4d5e-9c09-1cfddd57876d
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f993d9a0377531b155301bed235c00bf8e6667c4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5a57f02a7c1b9845f4248daf2282b6f285f95489
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193369"
 ---
 # <a name="toggle-breakpoint-command"></a>중단점 설정/해제 명령
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 파일의 현재 위치에서 현재 상태에 따라 중단점을 켜거나 끕니다.  
   
 ## <a name="syntax"></a>구문  
@@ -43,7 +37,7 @@ Debug.ToggleBreakpoint [text]
  `text`  
  선택 사항입니다. 텍스트를 지정하는 경우 해당 줄은 명명된 중단점으로 표시됩니다. 그렇지 않은 경우 해당 줄은 F9 키를 누를 때처럼 명명되지 않은 중단점으로 표시됩니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  다음 예제에서는 현재 중단점을 설정/해제합니다.  
   
 ```  
@@ -55,6 +49,3 @@ Debug.ToggleBreakpoint [text]
  [명령 창](../../ide/reference/command-window.md)   
  [찾기/명령 상자](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

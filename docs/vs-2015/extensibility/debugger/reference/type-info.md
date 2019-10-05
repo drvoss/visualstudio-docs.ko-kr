@@ -1,14 +1,9 @@
 ---
 title: TYPE_INFO | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - TYPE_INFO
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: d725cb68-a565-49d1-a16f-ff0445c587a0
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 628d6e5ae2e13ea117cb3fd50aca3ba2150ac59f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 12102c297c34649c753cf1c811994f9e750b9605
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435689"
 ---
 # <a name="typeinfo"></a>TYPE_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -55,13 +50,13 @@ public struct TYPE_INFO {
  값을 [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) 합집합을 해석 하는 방법을 결정 하는 열거형입니다.  
   
  type.typeMeta  
- [C + + 전용] 포함 된 [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) 경우 구조체 `dwKind` 는 `TYPE_KIND_METADATA`합니다.  
+ [C++ 만] 포함 된 [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) 경우 구조체 `dwKind` 는 `TYPE_KIND_METADATA`합니다.  
   
  type.typePdb  
- [C + + 전용] 포함 된 [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) 경우 구조체 `dwKind` 는 `TYPE_KIND_PDB`합니다.  
+ [C++ 만] 포함 된 [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) 경우 구조체 `dwKind` 는 `TYPE_KIND_PDB`합니다.  
   
  type.typeBuilt  
- [C + + 전용] 포함 된 [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) 경우 구조체 `dwKind` 는 `TYPE_KIND_BUILT`합니다.  
+ [C++ 만] 포함 된 [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) 경우 구조체 `dwKind` 는 `TYPE_KIND_BUILT`합니다.  
   
  type.unused  
  사용 되지 않는 안쪽 여백입니다.  
@@ -76,7 +71,7 @@ public struct TYPE_INFO {
  이 구조에 전달 되는 [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) 메서드 위치에서 채워집니다. 구조체의 내용을 해석 되는 방식을 기반으로 합니다 `dwKind` 필드입니다.  
   
 > [!NOTE]
->  [C + + 전용] 경우 `dwKind` equals `TYPE_KIND_BUILT`, 기본 릴리스해야 하는 것 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 제거 하는 경우 개체는 `TYPE_INFO` 구조입니다. 이를 위해 `typeInfo.type.typeBuilt.pUnderlyingField->Release()`를 호출합니다.  
+> [C++ 만] 경우 `dwKind` equals `TYPE_KIND_BUILT`, 기본 릴리스해야 하는 것 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 제거 하는 경우 개체는 `TYPE_INFO` 구조입니다. 이를 위해 `typeInfo.type.typeBuilt.pUnderlyingField->Release()`를 호출합니다.  
   
  [C# 만] 다음 표에서 해석 하는 방법을 보여 줍니다는 `unionmember` 각 종류의 형식에 대 한 멤버입니다. 형식의 한 종류에 대 한이 작업을 수행 하는 방법을 보여 줍니다.  
   
@@ -113,9 +108,9 @@ namespace MyPackage
 ## <a name="requirements"></a>요구 사항  
  헤더: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>참고 항목  
  [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)   
@@ -124,4 +119,3 @@ namespace MyPackage
  [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)   
  [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)   
  [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)
-

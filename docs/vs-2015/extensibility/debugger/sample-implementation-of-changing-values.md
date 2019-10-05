@@ -1,48 +1,43 @@
 ---
 title: 샘플 값 변경의 구현 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, local values
 - debugging [Debugging SDK], expression evaluation
 ms.assetid: ee2d955b-12ca-4f27-89aa-c2d0e768b6b6
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: dd7be330e4db12be446683d460f19d5365bbd45a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6a7f8f8c352db4f2fcd0230f4eac66e8bddb94e6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436681"
 ---
 # <a name="sample-implementation-of-changing-values"></a>값 변경 샘플 구현
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  Visual Studio 2015에서 식 계산기를 구현 하는 이러한 방식으로 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 정보를 참조 하세요 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 하 고 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)합니다.  
+> Visual Studio 2015에서 식 계산기를 구현 하는 이러한 방식으로 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 정보를 참조 하세요 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 하 고 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)합니다.  
   
  에 표시 된 모든 로컬 합니다 **지역** 창에는 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 연결 된 개체입니다. 이 `IDebugProperty2` 지역 변수의 이름, 값 및 형식 개체에 포함 되어 있습니다. Visual Studio를 호출 하는 사용자의 로컬 값 변경 되 면 [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) 로컬 메모리에 값을 업데이트 합니다. 이 예제에서는 로컬 표시 됩니다는 `CFieldProperty` 클래스를 구현 하는 `IDebugProperty2` 인터페이스입니다.  
   
 > [!NOTE]
->  에 대 한 **조사식** 하 고 **간략 한 조사식** 식을 변경할 값으로 표시 됩니다는 `CValueProperty` MyCEE 샘플의 클래스. 그러나 구현의 `IDebugProperty2::SetValueAsString` 여기에 표시 된 대로 똑같습니다.  
+> 에 대 한 **조사식** 하 고 **간략 한 조사식** 식을 변경할 값으로 표시 됩니다는 `CValueProperty` MyCEE 샘플의 클래스. 그러나 구현의 `IDebugProperty2::SetValueAsString` 여기에 표시 된 대로 똑같습니다.  
   
  이 구현의 `IDebugProperty2::SetValueAsString` 다음 작업을 수행 합니다.  
   
-1.  값을 생성 하는 식을 계산 합니다.  
+1. 값을 생성 하는 식을 계산 합니다.  
   
-2.  연결 된 바인딩합니다 [IDebugField](../../extensibility/debugger/reference/idebugfield.md) 메모리 위치로 개체를 생성을 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) 개체입니다.  
+2. 연결 된 바인딩합니다 [IDebugField](../../extensibility/debugger/reference/idebugfield.md) 메모리 위치로 개체를 생성을 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) 개체입니다.  
   
-3.  값을 일련의 바이트로 변환합니다.  
+3. 값을 일련의 바이트로 변환합니다.  
   
-4.  호출 [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) 바이트 메모리에 저장할 수 있습니다.  
+4. 호출 [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) 바이트 메모리에 저장할 수 있습니다.  
   
 ## <a name="managed-code"></a>관리 코드  
  이 구현의 `IDebugProperty2::SetValueAsString` 관리 코드에서.  
@@ -432,4 +427,3 @@ HRESULT FieldSetValue(
 ## <a name="see-also"></a>참고 항목  
  [로컬 값을 변경](../../extensibility/debugger/changing-the-value-of-a-local.md)   
  [평가 컨텍스트](../../extensibility/debugger/evaluation-context.md)
-

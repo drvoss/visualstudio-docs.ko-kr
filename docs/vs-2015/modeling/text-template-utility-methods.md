@@ -1,25 +1,22 @@
 ---
 title: 텍스트 템플릿 유틸리티 메서드 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, utility methods
 ms.assetid: 8c11f9f7-678b-4f0c-b634-dc78fda699d1
 caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4a9c5a0b4b6c85a301c5d3a0e12ad3687f54aeb0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e69bd59782c2caa1dcb878df4e5316df798b0f21
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186305"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680981"
 ---
 # <a name="text-template-utility-methods"></a>텍스트 템플릿 유틸리티 메서드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +24,7 @@ ms.locfileid: "49186305"
 코드를 작성할 때 항상를 사용할 수 있는 여러 가지가 있습니다를 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 텍스트 템플릿. 에 정의 된 이러한 메서드가 <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>합니다.  
   
 > [!TIP]
->  또한 다른 메서드 및 일반 하지 전처리 된 텍스트 템플릿에서 호스트 환경에서 제공 하는 서비스를 사용할 수 있습니다. 예를 들어, 파일 경로 확인, 오류 로그를 가져올 수에서 제공 하는 서비스 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 모든 패키지를 로드 합니다.  자세한 내용은 [텍스트 템플릿에서 Visual Studio 액세스](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4)합니다.  
+> 또한 다른 메서드 및 일반 하지 전처리 된 텍스트 템플릿에서 호스트 환경에서 제공 하는 서비스를 사용할 수 있습니다. 예를 들어, 파일 경로 확인, 오류 로그를 가져올 수에서 제공 하는 서비스 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 모든 패키지를 로드 합니다.  자세한 내용은 [텍스트 템플릿에서 Visual Studio 액세스](https://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4)합니다.  
   
 ## <a name="write-methods"></a>메서드를 작성 합니다.  
  사용할 수는 `Write()` 고 `WriteLine()` 식 코드 블록을 사용 하는 대신 표준 코드 블록 내에 텍스트를 추가 하는 방법입니다. 다음 두 코드 블록 기능적으로 동일합니다.  
@@ -136,6 +133,3 @@ EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)
 ```  
   
  사용 된 `assembly` 컴파일된 클래스를 찾을 수 있는 어셈블리를 참조 하는 지시문입니다.
-
-
-

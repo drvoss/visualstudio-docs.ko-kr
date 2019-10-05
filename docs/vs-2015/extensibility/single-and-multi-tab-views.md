@@ -1,33 +1,28 @@
 ---
 title: 단일 및 다중 탭 보기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - single and multi-tab views
 ms.assetid: e3611704-349f-4323-b03c-f2b0a445d781
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8231581761199be4df9c368494fb27bdc7926c51
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 804a37a43ffe25335dc522542f5035b0882e63ee
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205560"
 ---
 # <a name="single-and-multi-tab-views"></a>단일 및 다중 탭 보기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 편집기 다양 한 뷰를 만들 수 있습니다. 한 가지 예는 코드 편집기 창은 다른 폼 디자이너가 있습니다.  
   
- 다중 탭 보기 여러 탭이 있는 뷰입니다. 예를 들어, HTML 편집기에서는 두 개의 탭 아래쪽에: **디자인** 하 고 **원본**각 논리적 보기. 디자인 뷰를 다른 웹 페이지를 구성 하는 HTML을 표시 하는 동안 렌더링된 된 웹 페이지를 표시 합니다.  
+ 다중 탭 보기 여러 탭이 있는 뷰입니다. 예를 들어, HTML 편집기에 맨 아래에 두 개의 탭이 있습니다. **디자인** 하 고 **소스**각 논리적 보기. 디자인 뷰를 다른 웹 페이지를 구성 하는 HTML을 표시 하는 동안 렌더링된 된 웹 페이지를 표시 합니다.  
   
 ## <a name="accessing-physical-views"></a>실제 보기에 액세스  
  실제 뷰 문서 뷰 개체를 각각 나타내는 코드 또는 양식과 같은 버퍼에 데이터의 뷰를 호스트 합니다. 따라서 각 문서 뷰 개체에 물리적 뷰 (실제 뷰 문자열로 알려진 것으로 식별 됨) 및 일반적으로 단일 논리적 보기  
@@ -123,4 +118,3 @@ Error:
  [여러 문서 보기 지원](../extensibility/supporting-multiple-document-views.md)   
  [방법: 문서 데이터에 보기 연결](../extensibility/how-to-attach-views-to-document-data.md)   
  [사용자 지정 편집기 및 디자이너 만들기](../extensibility/creating-custom-editors-and-designers.md)
-

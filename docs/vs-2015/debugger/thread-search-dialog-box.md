@@ -1,34 +1,29 @@
 ---
 title: 스레드 검색 대화 상자 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Thread Search
 ms.assetid: 52ecb289-9b86-455c-a52b-3dcd3f7255bf
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d64bf9c96381577505fd93302f469de6cd9f8a48
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7090045097ed8d11d18faee44dcd74bb6f573b1b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197460"
 ---
 # <a name="thread-search-dialog-box"></a>스레드 검색 대화 상자
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 대화 상자를 사용 하 여 찾아서 특정 스레드에 대 한 노드를 선택 [스레드 뷰](../debugger/threads-view.md)합니다. 이 대화 상자를 표시 하려면 포커스를 이동 하는 **스레드** 뷰 창. 선택한 **스레드 찾기** 에서 합니다 **검색** 메뉴.  
   
- 다음 설정은 사용할 수 있습니다.  
+ 다음 설정을 사용할 수 있습니다.  
   
  **스레드**  
  검색 스레드 ID입니다.  
@@ -57,6 +52,3 @@ ms.locfileid: "51764263"
   
  [Spy++ 사용](../debugger/using-spy-increment.md)  
  Spy + + 도구를 소개 하 고 사용할 수 있는 방법을 설명 합니다.
-
-
-

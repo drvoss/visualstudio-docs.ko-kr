@@ -1,14 +1,9 @@
 ---
 title: 로컬 속성 가져오기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, getting local properties
 - debugging [Debugging SDK], local properties
@@ -16,27 +11,27 @@ helpviewer_keywords:
 ms.assetid: 6c3a79e8-1ba1-4863-97c3-0216c3d9f092
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a96b9abfd215dc297a5b245e0ac670b4822d70c2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b174af9e107c13c3d8a79f00493fe5dbdd180ec6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799121"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436391"
 ---
 # <a name="getting-local-properties"></a>로컬 속성 가져오기
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  Visual Studio 2015에서 식 계산기를 구현 하는 이러한 방식으로 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 정보를 참조 하세요 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 하 고 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)합니다.  
+> Visual Studio 2015에서 식 계산기를 구현 하는 이러한 방식으로 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 정보를 참조 하세요 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 하 고 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)합니다.  
   
  Visual Studio 호출 [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) 가져오려고는 [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) 에 표시 되는 모든 지역에 대 한 액세스를 제공 하는 개체를 **지역** 창입니다. Visual Studio 호출 [다음](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md) 각 로컬에 대해 표시할 정보를 가져옵니다. 이 예제에서는 클래스 `CEnumPropertyInfo` 구현 된 `IEnumDebugPropertyInfo2` 인터페이스입니다.  
   
  이 구현의 `IEnumDebugPropertyInfo2::Next` 다음 작업을 수행 합니다.  
   
-1.  정보를 저장할 배열입니다를 지웁니다.  
+1. 정보를 저장할 배열입니다를 지웁니다.  
   
-2.  호출 [다음](../../extensibility/debugger/reference/ienumdebugfields-next.md) 각 로컬 저장 반환 된 [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) 반환할 배열의 합니다. 합니다 [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) 개체가 제공 된 경우이 `CEnumPropertyInfo` 클래스 인스턴스화 되었습니다.  
+2. 호출 [다음](../../extensibility/debugger/reference/ienumdebugfields-next.md) 각 로컬 저장 반환 된 [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) 반환할 배열의 합니다. 합니다 [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) 개체가 제공 된 경우이 `CEnumPropertyInfo` 클래스 인스턴스화 되었습니다.  
   
 ## <a name="managed-code"></a>관리 코드  
  이 예제에서는 구현을 보여 줍니다. `IEnumDebugPropertyInfo2::EnumChildren` 관리 코드에서 메서드의 지역에 대 한 합니다.  
@@ -166,4 +161,3 @@ STDMETHODIMP CEnumPropertyInfo::Next(
 ## <a name="see-also"></a>참고 항목  
  [지역 변수의 샘플 구현](../../extensibility/debugger/sample-implementation-of-locals.md)   
  [로컬 항목 열거](../../extensibility/debugger/enumerating-locals.md)
-

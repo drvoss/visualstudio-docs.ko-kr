@@ -1,14 +1,9 @@
 ---
 title: 성능 데이터 파일을 사용하여 기호 정보 저장 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - packsymbols, in profiling tools reports
 - profiling tools, packsymbols
@@ -16,20 +11,20 @@ ms.assetid: 8b802505-e94d-4ee0-83e4-fdd790a332c1
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dbe05d345e54a900fcdd5568aa898b80417bb68d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e9d2e8b0414746523d0f76e8266f6463d9c05574
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160293"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>성능 데이터 파일을 사용하여 기호 정보 저장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE(통합 개발 환경)를 사용하여 파일을 분석하는 경우 VSP 파일을 다른 컴퓨터로 이동하려면 보고서 파일에서 기호를 저장 또는 *serialize*하기 위한 성능 프로젝트 설정을 지정해야 합니다. 이렇게 하면 보고서 파일의 크기가 증가합니다. 기호를 serialize해야 하는 이유는 다음의 두 가지입니다.  
   
-- 대상 어셈블리가 임시 저장소의 해당 위치에서 손실되기 전에 성능 보고서에 코드 기호를 포함하기 위해  
+- 대상 어셈블리가 임시 스토리지의 해당 위치에서 손실되기 전에 성능 보고서에 코드 기호를 포함합니다.  
   
 - 기호를 유지하여 성능 보고서를 프로파일링된 컴퓨터에서 이식할 수 있도록 하고, 다른 기호를 사용할 수 있는 다른 컴퓨터에서 분석을 위해 보고서를 여는 경우 같은 정보가 출력되도록 하기 위해  
   
@@ -56,9 +51,9 @@ ms.locfileid: "51761261"
   
 - Windows 기호 캐시의 경로를 설정했는지 확인합니다. 기호 캐시 경로를 설정하려면 다음 중 하나를 수행합니다.  
   
-  -   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE의 디버거->기호 옵션을 올바른 경로로 설정합니다.  
+  - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE의 디버거->기호 옵션을 올바른 경로로 설정합니다.  
   
-  -   기호를 포함하도록 VSPerfReport 명령줄의 -symbolpath 옵션을 추가합니다.  
+  - 기호를 포함하도록 VSPerfReport 명령줄의 -symbolpath 옵션을 추가합니다.  
   
 - [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]에서 기호가 표시되지 않으면 ASP 서버에 대해 기호 서버를 올바르게 설정했는지 확인합니다.  
   
@@ -73,6 +68,3 @@ ms.locfileid: "51761261"
  [성능 도구 데이터 저장 및 내보내기](../profiling/saving-and-exporting-performance-tools-data.md)   
  [방법: Windows 기호 정보 참조](../profiling/how-to-reference-windows-symbol-information.md)   
  [VSPerfReport](../profiling/vsperfreport.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Windows의 종류 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - windows, splitting
 - windows, arranging
@@ -26,13 +21,13 @@ ms.assetid: 31b6ff46-8820-40ff-92ab-561d90e89ec6
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 15f7c9462bcf064f9d9e62ea5793ea2eaf29b2f0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 25ed7d2609f478881bce13ac60aecae5ecb8acff
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838700"
 ---
 # <a name="kinds-of-windows"></a>창 종류
 이 콘텐츠를 움직인 [창 레이아웃 사용자 지정](../ide/customizing-window-layouts-in-visual-studio.md)

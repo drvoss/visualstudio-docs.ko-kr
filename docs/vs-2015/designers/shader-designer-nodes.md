@@ -1,25 +1,20 @@
 ---
 title: 셰이더 디자이너 노드 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: f5192fbd-c78f-40a8-a4d4-443209610268
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f41d1d3d934ecd85ac36d24d704db561d42faa97
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: cde6b6a44649f3a9e100a0ff10e3dda21f2d6f3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187738"
 ---
 # <a name="shader-designer-nodes"></a>셰이더 디자이너 노드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,21 +30,21 @@ ms.locfileid: "49293503"
 ### <a name="promotion-of-inputs"></a>입력 승격  
  셰이더 디자이너는 게임 또는 앱에서 효과를 사용할 수 있도록 궁극적으로 HLSL 소스 코드를 생성해야 하기 때문에 셰이더 디자이너 노드에는 HLSL에서 사용하는 형식 승격 규칙이 적용됩니다. 그래픽 하드웨어는 주로 부동 소수점 값에서 작동하기 때문에 다른 형식 간의 승격(예: `int`에서 `float`로 또는 `float`에서 `double`로) 입력은 일반적이지 않습니다. 대신 그래픽 하드웨어에서 정보의 여러 부분에 대해 동일한 작업을 한 번에 사용하기 때문에 더 짧은 여러 개의 입력이 가장 긴 입력의 크기에 맞게 길어지는 다른 종류의 승격이 발생할 수 있습니다. 길이를 늘리는 방법은 입력 형식 및 연산 자체에 따라 다릅니다.  
   
--   **더 작은 형식이 스칼라 값인 경우**  
+- **더 작은 형식이 스칼라 값인 경우**  
   
      스칼라의 값은 큰 입력과 크기가 같은 벡터로 복제됩니다. 예를 들어 연산이 무엇이든 간에 연산의 최대 입력이 3개 요소 벡터이면 5.0 스칼라 입력은 벡터(5.0, 5.0, 5.0)이 됩니다.  
   
--   **더 작은 형식이 벡터이고 연산이 곱셈(\*, /, % 등)인 경우**  
+- **더 작은 형식이 벡터이고 연산이 곱셈(\*, /, % 등)인 경우**  
   
      벡터의 값이 더 큰 입력과 크기가 같은 벡터의 선행 요소로 복사되고 후행 요소는 1.0으로 설정됩니다. 예를 들어 4개 요소 벡터로 곱하는 경우 벡터 입력(5.0, 5.0)은 벡터(5.0, 5.0, 1.0, 1.0)이 됩니다. 이렇게 하면 1.0 곱셈 항등원을 사용하여 출력의 세 번째 및 네 번째 요소가 유지됩니다.  
   
--   **더 작은 형식이 벡터이고 연산이 덧셈(+, - 등)인 경우**  
+- **더 작은 형식이 벡터이고 연산이 덧셈(+, - 등)인 경우**  
   
      벡터의 값이 더 큰 입력과 크기가 같은 벡터의 선행 요소로 복사되고 후행 요소는 0.0으로 설정됩니다. 예를 들어 4개 요소 벡터에 더하는 경우 벡터 입력(5.0, 5.0)은 벡터(5.0, 5.0, 0.0, 0.0)이 됩니다. 이렇게 하면 0.0 덧셈 항등원을 사용하여 출력의 세 번째 및 네 번째 요소가 유지됩니다.  
   
 ## <a name="related-topics"></a>관련 항목  
   
-|제목|설명|  
+|제목|Description|  
 |-----------|-----------------|  
 |[상수 노드](../designers/constant-nodes.md)|셰이더 계산에서 리터럴 값 및 보간된 꼭짓점 상태 정보를 나타내는 데 사용할 수 있는 노드를 설명합니다. 꼭짓점 상태가 보간되고, 이에 따라 각 픽셀마다 다르기 때문에 각 픽셀 셰이더 인스턴스에서 다른 버전의 상수를 받습니다.|  
 |[매개 변수 노드](../designers/parameter-nodes.md)|셰이더 계산에서 카메라 위치, 재질 속성, 조명 매개 변수, 시간 및 기타 앱 상태 정보를 나타내는 데 사용할 수 있는 노드를 설명합니다.|  
@@ -57,6 +52,3 @@ ms.locfileid: "49293503"
 |[수학 노드](../designers/math-nodes.md)|HLSL 명령에 직접 매핑되는 대수, 논리, 삼각 및 기타 수학 연산을 수행하는 데 사용할 수 있는 노드를 설명합니다.|  
 |[유틸리티 노드](../designers/utility-nodes.md)|일반적인 조명 계산 및 HLSL 명령에 직접 매핑되지 않는 기타 일반 작업을 수행하는 데 사용할 수 있는 노드를 설명합니다.|  
 |[필터 노드](../designers/filter-nodes.md)|질감 필터링 및 색 필터링을 수행하는 데 사용할 수 있는 노드를 설명합니다.|
-
-
-

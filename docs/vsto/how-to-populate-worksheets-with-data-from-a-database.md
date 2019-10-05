@@ -11,15 +11,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], adding to worksheets
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf375b49525349cf28fb4b9dd1651ddadbf59360
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 67c12843d00bf8d5af51fa7af3175077527afa58
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850062"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967763"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>방법: 데이터베이스의 데이터로 워크시트 채우기
 
@@ -35,17 +35,17 @@ Windows Forms 프로젝트에서 데이터를 액세스 하는 동일한 방식�
 
 ### <a name="to-populate-a-worksheet-with-data-from-a-database"></a>데이터베이스의 데이터로 워크시트를 채우려면
 
-1.  디자이너에서 워크시트를 열고 Visual Studio에서 Excel 문서 수준 프로젝트를 엽니다.
+1. 디자이너에서 워크시트를 열고 Visual Studio에서 Excel 문서 수준 프로젝트를 엽니다.
 
-2.  **데이터 원본** 창을 열고 데이터베이스에서 데이터 원본을 만듭니다. 자세한 내용은 [새 연결 추가](../data-tools/add-new-connections.md)합니다.
+2. **데이터 원본** 창을 열고 데이터베이스에서 데이터 원본을 만듭니다. 자세한 내용은 [새 연결 추가](../data-tools/add-new-connections.md)합니다.
 
-3.  테이블에서 마우스를 끌어서 합니다 **데이터 원본** 워크시트 창.
+3. 테이블에서 마우스를 끌어서 합니다 **데이터 원본** 워크시트 창.
 
 다음 컨트롤 중 하나는 워크시트에 만들어집니다.
 
--   필드를 끌면는 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤이 워크시트에 만들어집니다. 자세한 내용은 [NamedRange 컨트롤](../vsto/namedrange-control.md)합니다.
+- 필드를 끌면는 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤이 워크시트에 만들어집니다. 자세한 내용은 [NamedRange 컨트롤](../vsto/namedrange-control.md)합니다.
 
--   테이블을 끌면는 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤이 워크시트에 만들어집니다. 자세한 내용은 [ListObject 컨트롤](../vsto/listobject-control.md)합니다.
+- 테이블을 끌면는 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤이 워크시트에 만들어집니다. 자세한 내용은 [ListObject 컨트롤](../vsto/listobject-control.md)합니다.
 
 테이블을 선택 하 여 다른 컨트롤을 추가 하거나 필드에 **데이터 원본** 창과 드롭 다운 목록에서 다른 컨트롤을 선택 합니다.
 
@@ -53,23 +53,23 @@ Windows Forms 프로젝트에서 데이터를 액세스 하는 동일한 방식�
 
 컨트롤 외에도 다음과 같은 데이터 관련 개체가 프로젝트에 자동으로 추가됩니다.
 
--   데이터베이스에서 연결된 데이터 테이블을 캡슐화하는 형식화된 데이터 집합. 자세한 내용은 [Visual Studio에서 데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md)합니다.
+- 데이터베이스에서 연결된 데이터 테이블을 캡슐화하는 형식화된 데이터 세트. 자세한 내용은 [Visual Studio에서 데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md)합니다.
 
--   컨트롤을 형식화된 데이터 집합에 연결하는 <xref:System.Windows.Forms.BindingSource>. 자세한 내용은 [BindingSource 구성 요소 개요](/dotnet/framework/winforms/controls/bindingsource-component-overview)합니다.
+- 컨트롤을 형식화된 데이터 세트에 연결하는 <xref:System.Windows.Forms.BindingSource>. 자세한 내용은 [BindingSource 구성 요소 개요](/dotnet/framework/winforms/controls/bindingsource-component-overview)합니다.
 
--   데이터베이스에 형식화 된 데이터 집합을 연결 하는 TableAdapter. 자세한 내용은 [TableAdapter 개요](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)합니다.
+- 데이터베이스에 형식화 된 데이터 집합을 연결 하는 TableAdapter. 자세한 내용은 [TableAdapter 개요](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)합니다.
 
--   TableAdapterManager를 계층적 업데이트를 사용 하도록 설정 하려면 데이터 집합의 테이블 어댑터를 조정 하는 데 사용 되는 합니다. 자세한 내용은 [계층적 업데이트](../data-tools/hierarchical-update.md) 하 고 [TableAdapterManager 참조](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference)합니다.
+- TableAdapterManager를 계층적 업데이트를 사용 하도록 설정 하려면 데이터 집합의 테이블 어댑터를 조정 하는 데 사용 되는 합니다. 자세한 내용은 [계층적 업데이트](../data-tools/hierarchical-update.md) 하 고 [TableAdapterManager 참조](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference)합니다.
 
 프로젝트를 실행하면 컨트롤이 데이터 소스의 첫 번째 레코드를 표시합니다. <xref:System.Windows.Forms.BindingSource>를 사용하여 사용자가 레코드를 스크롤할 수 있게 할 수 있습니다.
 
 ### <a name="to-scroll-through-the-records"></a>레코드를 스크롤하려면
 
--   <xref:System.Windows.Forms.BindingSource.MoveNext%2A> 및 <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>와 같은 <xref:System.Windows.Forms.BindingSource> 메서드를 사용합니다.
+- <xref:System.Windows.Forms.BindingSource.MoveNext%2A> 및 <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>와 같은 <xref:System.Windows.Forms.BindingSource> 메서드를 사용합니다.
 
 형식화 된 데이터 집합 및 데이터베이스에 업데이트를 보내는 방법에 대 한 정보를 참조 하세요. [방법: 호스트 컨트롤의 데이터로 데이터 소스를 업데이트](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [새 데이터 소스 추가](../data-tools/add-new-data-sources.md)

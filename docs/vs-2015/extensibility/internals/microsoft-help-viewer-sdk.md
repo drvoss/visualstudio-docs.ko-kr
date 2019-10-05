@@ -1,39 +1,34 @@
 ---
 title: Microsoft 도움말 뷰어 SDK | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d56d71dd8c8e144c8a2267ed4571b661cca378c2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 226762ef355a83a2539fa1402a4369398f9f52a4
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794701"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263145"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft 도움말 뷰어 SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 이 문서에서는 Visual Studio 도움말 뷰어 통합 업체에 대 한 다음 작업을 포함 됩니다.
 
--   (F1 지원) 항목 만들기
+- (F1 지원) 항목 만들기
 
--   도움말 뷰어 콘텐츠 브랜드 패키지 만들기
+- 도움말 뷰어 콘텐츠 브랜드 패키지 만들기
 
--   문서 집합을 배포합니다.
+- 문서 집합을 배포합니다.
 
--   Visual Studio shell (통합 또는 격리)에 추가 도움말
+- Visual Studio shell (통합 또는 격리)에 추가 도움말
 
--   추가 리소스
+- 추가 리소스
 
 ### <a name="creating-a-topic-f1-support"></a>(F1 지원) 항목 만들기
  이 섹션에서는 제공 된 항목, 항목에서는 요구 사항, 해당 렌더링 된 결과가 포함 된 항목 (F1 지원 요구 사항 포함) 및 마지막으로 예제 항목을 만드는 방법에 대 한 짧은 설명을의 구성 요소 개요를 제공 합니다.
@@ -137,20 +132,20 @@ ms.locfileid: "51794701"
 
  항목의 본문 (머리글 및 바닥글 제외 함)는 페이지 링크, 참고 섹션, 축소 가능한 영역, 코드 조각 및 언어 특정 텍스트 부분에 포함 됩니다.  브랜딩 표시 된 항목의 해당 영역에 대 한 자세한 내용은 섹션을 참조 하세요.
 
-1.  항목 제목 태그를 추가 합니다.  `<div class="title">Contoso Topic 4</div>`
+1. 항목 제목 태그를 추가 합니다.  `<div class="title">Contoso Topic 4</div>`
 
-2.  참고 섹션을 추가 합니다. `<div class="alert"> add your table tag and text </div>`
+2. 참고 섹션을 추가 합니다. `<div class="alert"> add your table tag and text </div>`
 
-3.  축소 가능한 영역을 추가 합니다.  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
+3. 축소 가능한 영역을 추가 합니다.  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
 
-4.  코드 조각을 추가 합니다.  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
+4. 코드 조각을 추가 합니다.  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5.  코드 언어에 대 한 특정 텍스트를 추가 합니다. `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` 해당 devLangnu 참고 = 다른 언어를 입력할 수 있습니다. 예를 들어 devLangnu = "Fortran" Fortran 표시 됩니다 때 코드 조각을 DisplayLanguage Fortran =
+5. 코드 언어에 대 한 특정 텍스트를 추가 합니다.  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` 해당 devLangnu 참고 = 다른 언어를 입력할 수 있습니다. 예를 들어 devLangnu = "Fortran" Fortran 표시 됩니다 때 코드 조각을 DisplayLanguage Fortran =
 
-6.  페이지 링크를 추가 합니다. `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
+6. 페이지 링크를 추가 합니다. `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
->  참고:에 대 한 지원 되지 않는 새로운 "표시 언어" (예제에서는 F#, Cobol, Fortran) 코드 조각에서 코드 색 지정 단색 됩니다.
+> 참고:에 대 한 지원 되지 않는 새로운 "표시 언어" (예제에서는 F#, Cobol, Fortran) 코드 조각에서 코드 색 지정 단색 됩니다.
 
  **예제에서는 도움말 뷰어 항목** 코드는 메타 데이터, 코드 조각, 축소 가능한 영역 및 언어 특정 텍스트를 정의 하는 방법을 보여 줍니다.
 
@@ -287,49 +282,49 @@ some F# code
 
  도움말 뷰어 기본 도움말 콘텐츠 소스 온라인 (브라우저에서 시작)로 설정 하면:
 
-- Visual Studio 파트너 (VSP) 기능 (속성 모음 prefix.keyword 및 레지스트리에서 찾을 접두사에 대 한 온라인 URL) F1 propertybag에 값을 내보냅니다: F1 VSP URL + 매개 변수를 브라우저에 보냅니다.
+- Visual Studio 파트너 (VSP) 기능 (속성 모음 prefix.keyword 및 레지스트리에서 찾을 접두사에 대 한 온라인 URL) F1 propertybag에 값을 내보냅니다. F1은 VSP URL + 매개 변수를 브라우저에 보냅니다.
 
-- Visual Studio 기능 (언어 편집기, Visual Studio 특정 메뉴 항목 등): F1 Visual Studio URL을 브라우저에 보냅니다.
+- Visual Studio 기능 (언어 편집기, Visual Studio 특정 메뉴 항목 등).  F1은 브라우저에는 Visual Studio URL을 보냅니다.
 
   도움말 뷰어 기본 도움말 콘텐츠 소스 로컬 도움말 (도움말 뷰어에서 시작)로 설정 하면:
 
-- VSP 기능 키워드 F1 속성 모음 및 로컬 저장소 인덱스 간에 일치 하는 위치 (속성 모음 prefix.keyword 즉, 로컬 저장소 인덱스에 있는 값 =): F1 도움말 뷰어에서 항목을 렌더링 합니다.
+- VSP 기능 키워드 F1 속성 모음 및 로컬 저장소 인덱스 간에 일치 하는 위치 (속성 모음 prefix.keyword 즉, 로컬 저장소 인덱스에 있는 값 =):  F1 도움말 뷰어에서 항목을 렌더링합니다.
 
-- Visual Studio 기능 (Visual Studio 기능에서 발생 하는 속성 모음의 재정의를 VSP에 대 한 옵션 없음): F1 도움말 뷰어에서 Visual Studio 항목을 렌더링 합니다.
+- Visual Studio 기능 (Visual Studio 기능에서 발생 하는 속성 모음의 재정의를 VSP에 대 한 옵션 없음): F1 도움말 뷰어에서 Visual Studio 항목을 렌더링합니다.
 
   공급 업체 도움말 콘텐츠에 대 한 F1 대체 (fallback)를 사용 하도록 설정 하려면 다음 레지스트리 값을 설정 합니다. F1 대체 (fallback)는 도움말 뷰어 F1 도움말 콘텐츠를 검색할 온라인으로 설정 하 고 공급 업체 콘텐츠 사용자의 하드 드라이브에 로컬로 설치 되어 있는지를 의미 합니다. 도움말 뷰어에서 온라인 도움말에 대 한 기본 설정은 이더라도 콘텐츠에 대 한 로컬 도움말 같아야 합니다.
 
 1. 설정 된 **VendorContent** 도움말 2.1 레지스트리 키 아래의 값:
 
-   -   32 비트 운영 체제:
+   - 32 비트 운영 체제:
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 
-        "VendorContent" = dword: 00000001
+        "VendorContent"=dword:00000001
 
-   -   64 비트 운영 체제:
+   - 64 비트 운영 체제:
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 
-        "VendorContent" = dword: 00000001
+        "VendorContent"=dword:00000001
 
 2. 도움말 2.1 레지스트리 키에서 파트너 네임 스페이스를 등록 합니다.
 
    - 32 비트 운영 체제:
 
-      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Partner<em>\\< 네임 스페이스\></em>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Partner<em>\\<namespace\></em>
 
       "위치" = "오프 라인"
 
    - 64 비트 운영 체제:
 
-      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Partner<em>\\< 네임 스페이스\></em>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Partner<em>\\<namespace\></em>
 
       "위치" = "오프 라인"
 
    **구문 분석 하는 기본 네이티브 Namespace**
 
-   기본 네임 스페이스를 기본 구문 분석을 설정 하려면 레지스트리에 추가 새로운 DWORD의 이름으로: BaseNativeNamespaces 해당 값을 1 (아래 지원 하고자 하는 카탈로그 키)로 설정 합니다.  예를 들어, Visual Studio 카탈로그를 사용 하려면 키 경로에 추가할 수 있습니다.
+   구문 분석 하는 기본 네이티브 네임 스페이스를 설정 하려면 레지스트리에 이름으로 새 DWORD를 추가 합니다. BaseNativeNamespaces 해당 값을 1 (아래 지원 하고자 하는 카탈로그 키)로 설정 합니다.  예를 들어, Visual Studio 카탈로그를 사용 하려면 키 경로에 추가할 수 있습니다.
 
    HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 
@@ -347,7 +342,7 @@ some F# code
 
   다음 레지스트리 키와 값을 추가 합니다.
 
-  HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\12.0\Dynamic 도움말 키: 소매 가격의 디버그 출력 표시: 예
+  HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\12.0\Dynamic Help key: 소매 가격에 디버그 출력을 표시 합니다. 예
 
   IDE에서 도움말 메뉴 항목의 "도움말 컨텍스트 디버그"를 선택 합니다.
 
@@ -357,19 +352,19 @@ some F# code
 
 |속성 (HTML 표시)|설명|
 |--------------------------------------|-----------------|
-|\< meta name="Microsoft.Help.Locale" 콘텐츠 = "[코드 언어]" / >|이 항목에 대 한 로캘을 설정합니다. 항목에서이 태그를 사용 하는 경우 한 번만 사용 해야 하 고 다른 Microsoft 도움말 태그 위에 삽입 해야 합니다. 항목의 본문 텍스트; 지정 된 경우 제품 로캘과 사용 하 여 연결 된 단어 분리기를 사용 하 여 인덱스화 되어이 태그를 사용 하지 않는 경우 이 고, 그렇지는 en-우리 단어 분리기가 사용 됩니다. 이 태그 ISOC RFC 4646을 준수 합니다. Microsoft 도움말 올바르게 작동 하도록 일반 언어 특성 대신이 속성을 사용 합니다.|
-|\< meta name="Microsoft.Help.TopicLocale" 콘텐츠 = "[코드 언어]" / >|다른 로캘에서 사용 하는 경우이 항목에 대 한 로캘을 설정 합니다. 이 태그 항목에서 사용 하는 경우 한 번만 사용 되어야 합니다. 카탈로그는 둘 이상의 언어로 콘텐츠를에서 포함 하는 경우이 태그를 사용 합니다. 카탈로그의 항목에서는 여러 ID가 같은 수 있지만 각 고유 TopicLocale 지정 해야 합니다. 카탈로그의 로캘과 일치 하는 TopicLocale를 지정 하는 항목에는 목차에 표시 되는 항목이입니다. 그러나 항목의 모든 언어 버전은 검색 결과에 표시 됩니다.|
+|\< meta name="Microsoft.Help.Locale" content="[language-code]" />|이 항목에 대 한 로캘을 설정합니다. 항목에서이 태그를 사용 하는 경우 한 번만 사용 해야 하 고 다른 Microsoft 도움말 태그 위에 삽입 해야 합니다. 항목의 본문 텍스트; 지정 된 경우 제품 로캘과 사용 하 여 연결 된 단어 분리기를 사용 하 여 인덱스화 되어이 태그를 사용 하지 않는 경우 이 고, 그렇지는 en-우리 단어 분리기가 사용 됩니다. 이 태그 ISOC RFC 4646을 준수 합니다. Microsoft 도움말 올바르게 작동 하도록 일반 언어 특성 대신이 속성을 사용 합니다.|
+|\< meta name="Microsoft.Help.TopicLocale" content="[language-code]" />|다른 로캘에서 사용 하는 경우이 항목에 대 한 로캘을 설정 합니다. 이 태그 항목에서 사용 하는 경우 한 번만 사용 되어야 합니다. 카탈로그는 둘 이상의 언어로 콘텐츠를에서 포함 하는 경우이 태그를 사용 합니다. 카탈로그의 항목에서는 여러 ID가 같은 수 있지만 각 고유 TopicLocale 지정 해야 합니다. 카탈로그의 로캘과 일치 하는 TopicLocale를 지정 하는 항목에는 목차에 표시 되는 항목이입니다. 그러나 항목의 모든 언어 버전은 검색 결과에 표시 됩니다.|
 |\< 제목 > [Title]\<제목/>|이 항목의 제목을 지정합니다. 이 태그는 필요 이며 항목을 한 번만 사용 해야 합니다. 항목의 본문에 제목이 없는 경우 \<d i v > 섹션에이 제목은 목차에서 항목에 표시 됩니다.|
-|\< meta 이름 = "Microsoft.Help.Keywords" 콘텐츠 = "[aKeywordPhrase]" / >|도움말 뷰어의 인덱스 창에 표시 되는 링크의 텍스트를 지정 합니다. 링크를 클릭 하면 해당 항목이 표시 됩니다. 항목에 대 한 여러 인덱스 키워드를 지정할 수 있습니다 또는 인덱스에 표시 하려면이 항목에 대 한 링크를 원하지 않는 경우이 태그를 생략할 수 있습니다. 이 속성에 이전 버전의 도움말에서 "K" 키워드를 변환할 수 있습니다.|
-|\< meta name="Microsoft.Help.Id" 콘텐츠 = "[TopicID]" / >|이 항목에 대 한 식별자를 설정합니다. 이 태그는 필요 이며 항목을 한 번만 사용 해야 합니다. ID는 로캘 설정이 같아야 하는 카탈로그의 항목 중에서 고유 해야 합니다. 다른 항목에서이 ID를 사용 하 여이 항목에 대 한 링크를 만들 수 있습니다.|
+|\< meta name=" Microsoft.Help.Keywords" content="[aKeywordPhrase]"/>|도움말 뷰어의 인덱스 창에 표시 되는 링크의 텍스트를 지정 합니다. 링크를 클릭 하면 해당 항목이 표시 됩니다. 항목에 대 한 여러 인덱스 키워드를 지정할 수 있습니다 또는 인덱스에 표시 하려면이 항목에 대 한 링크를 원하지 않는 경우이 태그를 생략할 수 있습니다. 이 속성에 이전 버전의 도움말에서 "K" 키워드를 변환할 수 있습니다.|
+|\< meta name="Microsoft.Help.Id" content="[TopicID]"/>|이 항목에 대 한 식별자를 설정합니다. 이 태그는 필요 이며 항목을 한 번만 사용 해야 합니다. ID는 로캘 설정이 같아야 하는 카탈로그의 항목 중에서 고유 해야 합니다. 다른 항목에서이 ID를 사용 하 여이 항목에 대 한 링크를 만들 수 있습니다.|
 |\< meta name="Microsoft.Help.F1" content="[System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator]"/ >|이 항목에 대 한 F1 키워드를 지정합니다. 이 항목에서는 응용 프로그램 사용자가 F1 키를 누를 때 표시할를 원하지 않는 경우이 태그를 생략할 수 있습니다 또는 항목에 대 한 여러 F1 키워드를 지정할 수 있습니다. 일반적으로 항목에 대 한 F1 키워드를 하나만 지정 됩니다. 이 속성에 이전 버전의 도움말에서 "F" 키워드를 변환할 수 있습니다.|
-|\< meta 이름 = "Description" content = "[항목 설명]" / >|이 항목의 내용에 대 한 짧은 요약을 제공합니다. 이 태그 항목에서 사용 하는 경우 한 번만 사용 되어야 합니다. 이 속성은 쿼리 library;에서 직접 액세스 인덱스 파일에 저장 되지 않습니다.|
- meta name="Microsoft.Help.TocParent" 콘텐츠 = "[parent_Id]" / >|목차에서이 항목의 부모 항목을 지정합니다. 이 태그는 필요 이며 항목을 한 번만 사용 해야 합니다. 값은 부모의 Microsoft.Help.Id. 항목 내용의 테이블의 한 위치에 있을 수 있습니다. "-1"에 목차 루트에 대 한 항목 ID로 간주 됩니다. [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)], 해당 페이지에는 도움말 뷰어 홈 페이지입니다. 에서는 특히 TocParent = 1 표시 되는 것 맨 위에 있는 수준 수 있도록 몇 가지 항목을 추가 하는 동일한 이유입니다. 도움말 뷰어 홈 페이지는 시스템 페이지와 하므로 대체 불가능 합니다. VSP에-1의 ID 사용 하 여 페이지를 추가 하려고 하는 경우 해당 콘텐츠 집합에 추가 될 수 있습니다 하지만 도움말 뷰어는 도움말 뷰어 홈 system 페이지-항상 사용|
-|\< meta name="Microsoft.Help.TocOrder" 콘텐츠 = "[양의 정수]" / >|목차에서이 항목에서는 표시 되는 피어 항목을 기준으로 지정 합니다. 이 태그는 필요 이며 항목을 한 번만 사용 해야 합니다. 값은 정수입니다. 값이 더 낮은 정수를 지정 하는 항목 값이 더 높은 정수를 지정 하는 항목 위에 나타납니다.|
+|\< meta name="Description" content="[topic description]" />|이 항목의 내용에 대 한 짧은 요약을 제공합니다. 이 태그 항목에서 사용 하는 경우 한 번만 사용 되어야 합니다. 이 속성은 쿼리 library;에서 직접 액세스 인덱스 파일에 저장 되지 않습니다.|
+ meta name="Microsoft.Help.TocParent" content="[parent_Id]"/>|목차에서이 항목의 부모 항목을 지정합니다. 이 태그는 필요 이며 항목을 한 번만 사용 해야 합니다. 값은 부모의 Microsoft.Help.Id. 항목 내용의 테이블의 한 위치에 있을 수 있습니다. "-1"에 목차 루트에 대 한 항목 ID로 간주 됩니다. [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)], 해당 페이지에는 도움말 뷰어 홈 페이지입니다. 에서는 특히 TocParent = 1 표시 되는 것 맨 위에 있는 수준 수 있도록 몇 가지 항목을 추가 하는 동일한 이유입니다. 도움말 뷰어 홈 페이지는 시스템 페이지와 하므로 대체 불가능 합니다. VSP에-1의 ID 사용 하 여 페이지를 추가 하려고 하는 경우 해당 콘텐츠 집합에 추가 될 수 있습니다 하지만 도움말 뷰어는 도움말 뷰어 홈 system 페이지-항상 사용|
+|\< meta name="Microsoft.Help.TocOrder" content="[positive integer]"/>|목차에서이 항목에서는 표시 되는 피어 항목을 기준으로 지정 합니다. 이 태그는 필요 이며 항목을 한 번만 사용 해야 합니다. 값은 정수입니다. 값이 더 낮은 정수를 지정 하는 항목 값이 더 높은 정수를 지정 하는 항목 위에 나타납니다.|
 |\< meta name="Microsoft.Help.Product" 콘텐츠 = "[product code]" / >|이 항목에 설명 된 제품을 지정 합니다. 이 태그 항목에서 사용 하는 경우 한 번만 사용 되어야 합니다. 이 정보는 도움말 인덱서에 전달 되는 매개 변수로 지정할 수도 있습니다.|
 |\< meta name="Microsoft.Help.ProductVersion" 콘텐츠 = "[버전]" / >|이 항목에 설명 된 제품의 버전을 지정 합니다. 이 태그 항목에서 사용 하는 경우 한 번만 사용 되어야 합니다. 이 정보는 도움말 인덱서에 전달 되는 매개 변수로 지정할 수도 있습니다.|
-|\< meta name="Microsoft.Help.Category" 콘텐츠 = "[string]" / >|제품 사용 콘텐츠의 하위 섹션을 식별 합니다. 항목에 대 한 여러 하위 섹션을 식별할 수 있습니다 또는 하위 섹션을 식별 하는 링크를 원하지 않는 경우이 태그를 생략할 수 있습니다. 이 태그는 특성을 저장 TargetOS 및 TargetFrameworkMoniker 도움말의 이전 버전에서 항목을 변환할 때 사용 됩니다. 콘텐츠의 형식이 AttributeName:AttributeValue 되었습니다.|
-|\< meta name="Microsoft.Help.TopicVersion 콘텐츠 ="[항목 버전 번호]"/ >|카탈로그에 여러 버전이 있을 경우 항목의이 버전을 지정 합니다. 항목의 버전이 둘 이상 카탈로그.NET Framework 3.5 및 항목에 대 한.NET Framework 4에 대 한 항목을 포함 하 고 둘 다 동일한 마이크로 경우 예를 들어 카탈로그에 있는 경우이 태그는 필요한 Microsoft.Help.Id 고유 하지 않으므로, 소프트 합니다. Help.Id 합니다.|
+|\< meta name="Microsoft.Help.Category" content="[string]"/>|제품 사용 콘텐츠의 하위 섹션을 식별 합니다. 항목에 대 한 여러 하위 섹션을 식별할 수 있습니다 또는 하위 섹션을 식별 하는 링크를 원하지 않는 경우이 태그를 생략할 수 있습니다. 이 태그는 특성을 저장 TargetOS 및 TargetFrameworkMoniker 도움말의 이전 버전에서 항목을 변환할 때 사용 됩니다. 콘텐츠의 형식이 AttributeName:AttributeValue 되었습니다.|
+|\< meta name="Microsoft.Help.TopicVersion content="[topic version number]"/>|카탈로그에 여러 버전이 있을 경우 항목의이 버전을 지정 합니다. 항목의 버전이 둘 이상 카탈로그.NET Framework 3.5 및 항목에 대 한.NET Framework 4에 대 한 항목을 포함 하 고 둘 다 동일한 마이크로 경우 예를 들어 카탈로그에 있는 경우이 태그는 필요한 Microsoft.Help.Id 고유 하지 않으므로, 소프트 합니다. Help.Id 합니다.|
 |\< meta 이름 = "SelfBranded" content = "[TRUE 또는 FALSE]" / >|이 항목에서는 도움말 라이브러리 관리자 시작 브랜드 패키지 또는 항목에 관련 된 브랜드 패키지를 사용 하는지 여부를 지정 합니다. 이 태그는 TRUE 여야 합니다. 또는 FALSE입니다. 있으면 TRUE, 관련된 항목에 대 한 브랜딩 패키지 항목의 다른 콘텐츠 렌더링에서 서로 다른 경우에 의도 한 대로 렌더링 되도록 도움말 라이브러리 관리자를 시작할 때 설정 된 브랜드 패키지를 재정의 합니다. FALSE 인 경우 현재 항목은 도움말 라이브러리 관리자를 시작할 때 설정 된 브랜드 패키지에 따라 렌더링 됩니다. 기본적으로 도움말 라이브러리 관리자 가정 SelfBranded 변수가; TRUE로 선언 된 경우가 아니면 false로 자체 브랜딩 따라서 선언할 필요가 없습니다 \<메타 이름 = "SelfBranded" content = "FALSE" / >입니다.|
 
 ### <a name="creating-a-branding-package"></a>브랜드 패키지 만들기
@@ -377,7 +372,7 @@ some F# code
 
  브랜드 패키지는 도움말 뷰어를 포함 하는 제품으로 설치 됩니다.  Visual Studio 제품:
 
-- 대체 (fallback) 브랜드 패키지 (Branding_\<로캘 >.mshc) 도움말 뷰어 2.1 응용 프로그램 루트에 설치 됩니다 (예: C:\Program Files (x86) \Microsoft Help Viewer\v2.1) 도움말 뷰어 언어 팩을 통해.  이 패키지를 브랜딩 제품 설치 되지 않은 경우에 사용 됩니다 (콘텐츠 없음 설치) 설치 된 브랜드 패키지가 없거나 손상 되었습니다.  Visual Studio 요소 (예: 로고 및 피드백) 앱 루트 대체 (fallback) 브랜드 패키지를 사용 하는 경우 무시 됩니다.
+- 대체 (fallback) 브랜드 패키지 (Branding_\<로캘 >.mshc) 도움말 뷰어 2.1 응용 프로그램 루트에 설치 됩니다 (예: C:\Program 파일 (x86) \Microsoft Help Viewer\v2.1) 도움말 뷰어 언어 팩을 통해.  이 패키지를 브랜딩 제품 설치 되지 않은 경우에 사용 됩니다 (콘텐츠 없음 설치) 설치 된 브랜드 패키지가 없거나 손상 되었습니다.  Visual Studio 요소 (예: 로고 및 피드백) 앱 루트 대체 (fallback) 브랜드 패키지를 사용 하는 경우 무시 됩니다.
 
 - 콘텐츠 패키지 서비스에서 Visual Studio 콘텐츠 설치 되 면 (첫 번째 시간 콘텐츠 설치 시나리오)에 대 한 브랜딩 패키지도 설치 됩니다.  브랜드 패키지에 대 한 업데이트 인 경우 다음 콘텐츠 업데이트 또는 추가 패키지 설치 작업을 수행 하는 경우 업데이트가 설치 됩니다.
 
@@ -453,11 +448,11 @@ some F# code
 |ViewColorizedText|컬러로 보기|
 |CombinedVBTabDisplayLanguage|Visual Basic (샘플)|
 |VBDeclaration|선언|
-|VBUsage|사용법|
+|VBUsage|사용|
 |기능:|**피드백, 바닥글 및 로고**|
 |사용:|전자 메일을 통해 현재 항목에 대 한 피드백을 제공 하는 고객에 대 한 피드백 컨트롤을 제공 합니다.  콘텐츠에 대 한 저작권 텍스트입니다.  로고 정의입니다.|
 |**요소**|**값 (콘텐츠 얼 리 어댑터 요구에 맞게 이러한 문자열을 수정할 수 있습니다.)**|
-|저작권|© 2013 Microsoft Corporation입니다. All rights reserved.|
+|CopyRight|© 2013 Microsoft Corporation. All rights reserved.|
 |SendFeedback|\<a = "{0}" {1}> 사용자 의견 보내기 \< /a >이 항목에서는 microsoft에서.|
 |FeedbackLink||
 |LogoTitle|[!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]|
@@ -515,7 +510,7 @@ some F# code
 |HomePageNoBooksInstalled|컴퓨터에 없는 콘텐츠 찾을 수 있습니다.|
 |HomePageHelpSettings|도움말 콘텐츠 설정|
 |HomePageHelpSettingsText|\<p > 현재 설정에는 로컬 도움말입니다. 도움말 뷰어는 컴퓨터에 설치 된 콘텐츠를 표시 합니다. \<b r / > Visual Studio 메뉴 모음에서 도움말 콘텐츠의 소스를 변경 하려면 선택 \<style = "{0}" > 도움말, 도움말 기본 설정 지정\</s p a n >.\< b r / > \< /p >|
-|메가바이트|MB|
+|MegaByte|MB|
 
  **branding.js**
 
@@ -531,7 +526,7 @@ some F# code
 |때 SelfBranded = False|onLoad|인쇄 요청 인지 확인 하려면 쿼리 문자열을 읽습니다.  사용자 기본 설정된 탭에 초점을 모든 codesnippets를 설정 합니다.  인쇄 요청 이기 isPrinterFriendly true로 설정 합니다. 고대비 모드를 확인 합니다.|
 |코드 조각|addSpecificTextLanguageTagSet||
 ||getIndexFromDevLang||
-||변경 탭||
+||ChangeTab||
 ||setCodesnippetLang||
 ||setCurrentLang||
 ||CopyToClipboard||
@@ -550,7 +545,7 @@ some F# code
 ||captionsOnOff(id)||
 ||toSeconds(t)||
 ||getAllComments(node)||
-||styleRectify (styleName, styleValue)||
+||styleRectify(styleName, styleValue)||
 ||showCC(id)||
 ||subtitle(id)||
 
@@ -562,22 +557,22 @@ some F# code
 |-|-|-|
 |**파일**|**사용 하 여**|**콘텐츠 원본 표시**|
 |homepage.htm|현재 설치 된 콘텐츠 및 해당 내용에 대 한 사용자에 게 제공 하는 적절 한 다른 메시지를 표시 하는 페이지입니다.  이 파일에 추가 메타 데이터 특성 "Microsoft.Help.Id" 콘텐츠 = "-1"이 콘텐츠는 로컬 콘텐츠 TOC의 맨 위에 있는 배치 합니다.||
-||&LT; META_HOME_PAGE_TITLE_ADD / &GT;|Branding.xml, 태그 \<HomePageTitle >|
+||<META_HOME_PAGE_TITLE_ADD />|Branding.xml, tag \<HomePageTitle>|
 ||&LT; HOME_PAGE_INTRODUCTION_SECTION_ADD / &GT;|Branding.xml, 태그 \<HomePageIntroduction >|
-||&LT; HOME_PAGE_CONTENT_INSTALL_SECTION_ADD / &GT;|Branding.xml, 태그 \<HomePageContentInstallText >|
+||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD />|Branding.xml, tag \<HomePageContentInstallText>|
 ||&LT; HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD / &GT;|Branding.xml 태그 섹션 제목\<HomePageInstalledBooks >, 응용 프로그램에서 생성 된 데이터 \<HomePageNoBooksInstalled > 설명서가 없습니다. 설치 된 경우.|
 ||&LT; HOME_PAGE_SETTINGS_SECTION_ADD / &GT;|Branding.xml 태그 섹션 제목 \<HomePageHelpSettings >, 텍스트 섹션 \<HomePageHelpSettingsText >.|
 |topiccorrupted.htm|하지만 어떤 이유로 든 표시 될 수 없는 항목 집합을 로컬에 있는 경우 (손상 된 콘텐츠).||
-||&LT; META_TOPIC_CORRUPTED_TITLE_ADD / &GT;|Branding.xml, 태그 \<TopicCorruptedTitle >|
-||&LT; TOPIC_CORRUPTED_SECTION_ADD / &GT;|Branding.xml, 태그 \<TopicCorruptedViewOnlineText >|
+||<META_TOPIC_CORRUPTED_TITLE_ADD />|Branding.xml, tag \<TopicCorruptedTitle>|
+||<TOPIC_CORRUPTED_SECTION_ADD />|Branding.xml, tag \<TopicCorruptedViewOnlineText>|
 |topicnotfound.htm|때 항목에에서 없는 로컬 콘텐츠를 설정 하거나 사용 가능한 온라인||
-||&LT; META_TOPIC_NOT_FOUND_TITLE_ADD / &GT;|Branding.xml, 태그 \<TopicNotFoundTitle >|
-||&LT; META_TOPIC_NOT_FOUND_ID_ADD / &GT;|태그, Branding.xml \<TopicNotFoundViewOnlineText > + \<TopicNotFoundDownloadContentText >|
-||&LT; TOPIC_NOT_FOUND_SECTION_ADD / &GT;|Branding.xml, 태그 \<TopicNotFoundText >|
+||<META_TOPIC_NOT_FOUND_TITLE_ADD />|Branding.xml, tag \<TopicNotFoundTitle>|
+||<META_TOPIC_NOT_FOUND_ID_ADD />|Branding.xml, tag \<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
+||<TOPIC_NOT_FOUND_SECTION_ADD />|Branding.xml, tag \<TopicNotFoundText>|
 |contentnotinstalled.htm|제품에 대 한 설치 된 로컬 콘텐츠가 없는 경우.||
-||&LT; META_CONTENT_NOT_INSTALLED_TITLE_ADD / &GT;|Branding.xml, 태그 \<ContentNotInstalledTitle >|
-||&LT; META_CONTENT_NOT_INSTALLED_ID_ADD / &GT;|Branding.xml, 태그 \<ContentNotInstalledDownloadContentText >|
-||&LT; CONTENT_NOT_INSTALLED_SECTION_ADD / &GT;|Branding.xml, 태그 \<ContentNotInstalledText >|
+||<META_CONTENT_NOT_INSTALLED_TITLE_ADD />|Branding.xml, tag \<ContentNotInstalledTitle>|
+||<META_CONTENT_NOT_INSTALLED_ID_ADD />|Branding.xml, tag \<ContentNotInstalledDownloadContentText>|
+||<CONTENT_NOT_INSTALLED_SECTION_ADD />|Branding.xml, tag \<ContentNotInstalledText>|
 
  **CSS 파일**
 
@@ -617,7 +612,7 @@ some F# code
 
  참고: 아래 구현은 예제에 포함 했습니다 브랜딩 패키지. 이것이 필요한 Visual Studio 콘텐츠 렌더링 요소 및 콘텐츠 동작을 얻기 위해 포함 하는 데 중요 합니다.
 
- 샘플 HelpContentSetup.msha 파일: ("콘텐츠 이름을 1을 설정 하는 데 사용"을 대체 및 "2" 등 파일 이름 집합 이름을 콘텐츠입니다.)
+ Sample HelpContentSetup.msha file: ("콘텐츠 설정 1 이름" 바꾸기 및 "2" 등 파일 이름 집합 이름을 콘텐츠입니다.)
 
 ```
 <html>
@@ -699,7 +694,7 @@ some F# code
 
 1. [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]
 
-2. [Visual Studio 2013 Shell 재배포 가능 패키지를 격리](http://www.microsoft.com/visualstudio/11/downloads#vs-shell)
+2. [Visual Studio 2013 Shell 재배포 가능 패키지를 격리](https://aka.ms/VS2013/IsoShell-LP/all)
 
    **개요**
 
@@ -728,11 +723,11 @@ some F# code
 
 - HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 
-   키: LocationPath 문자열 값: C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12\
+   키: LocationPath 문자열 값입니다. C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12\
 
 - HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12\en-US
 
-   키: CatalogName 문자열 값: [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] 설명서
+   키: CatalogName 문자열 값입니다. [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] 설명서
 
   **프로젝트 만들기**
 
@@ -799,7 +794,7 @@ some F# code
 
 14. 다음 레지스트리 키를 추가 합니다.
 
-     HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12Key LocationPath 문자열 값입니다.:
+     HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12Key: LocationPath 문자열 값입니다.
 
      ISO 셸용:
 
@@ -807,15 +802,15 @@ some F# code
 
      [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] 통합된 셸:
 
-     C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio12en-미국
+     C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio12en-US
 
-     키: CatalogName 문자열 값: [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] 설명서. ISO 셸에 대 한 카탈로그의 이름입니다.
+     키: CatalogName 문자열 값입니다. [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] 설명서입니다. ISO 셸에 대 한 카탈로그의 이름입니다.
 
 15. (택시 및 MSHC MSHA) 콘텐츠를 로컬 폴더로 복사 합니다.
 
 16. Integrated Shell 명령줄 예 콘텐츠 저장소를 테스트 합니다. ISO 셸에 대 한 제품에 맞게 적절히 카탈로그 및 launchingApp 값을 변경 합니다.
 
-      "C:\Program 파일 (x86) \Microsoft Help Viewer\v2.1\HlpViewer.exe" /catalogName VisualStudio12 /helpQuery 메서드 = "페이지 및 id ContosoTopic0 =" Microsoft visual Studio 12.0 /launchingApp
+      "C:\Program Files (x86)\Microsoft Help Viewer\v2.1\HlpViewer.exe" /catalogName VisualStudio12 /helpQuery method=”page&id=ContosoTopic0” /launchingApp Microsoft,VisualStudio,12.0
 
 17. (Contoso 앱 루트)에서 Contoso 응용 프로그램을 시작 합니다. ISO 셸 내에서 선택는 **도움말** 메뉴 항목을 변경 합니다 **도움말 기본 설정 지정** 에 **사용 하 여 로컬 도움말**합니다.
 
@@ -825,7 +820,7 @@ some F# code
 
 ### <a name="additional-resources"></a>추가 리소스
 
-런타임 API를 참조 하세요 [Windows API 도움말](http://msdn.microsoft.com/library/windows/desktop/hh447318\(v=vs.85\).aspx)합니다.
+런타임 API를 참조 하세요 [Windows API 도움말](https://msdn.microsoft.com/library/windows/desktop/hh447318\(v=vs.85\).aspx)합니다.
 
 API 도움말을 활용 하는 방법에 대 한 자세한 내용은 참조 하세요. [도움말 뷰어 코드 예제](http://visualstudiogallery.msdn.microsoft.com/f08f296f-7076-4aec-8da3-8f0fbe04461e)합니다.
 

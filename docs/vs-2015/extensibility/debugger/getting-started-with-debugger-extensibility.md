@@ -1,14 +1,9 @@
 ---
 title: 디버거 확장성 시작 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - getting started, Debugging SDK
 - debugging [Debugging SDK], getting started
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: d6ce6f43-1409-4bf7-93cd-f3464ca23504
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bafdd45b57a9fe660e97127c2c99c333ead0e60a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d1c616c7cf8ed90ec3d76046892167b9b742a1b0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152707"
 ---
 # <a name="getting-started-with-debugger-extensibility"></a>디버거 확장성 시작
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,11 +30,11 @@ ms.locfileid: "51721171"
   
  효율적으로 사용 하는 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], 다음 잘 알고 있어야 합니다.  
   
--   [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 통합된 개발 환경 (IDE)  
+- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 통합된 개발 환경 (IDE)  
   
--   C + + 프로그래밍 언어  
+- C++ 프로그래밍 언어  
   
--   ATL COM  
+- ATL COM  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [디버거 확장 로드맵](../../extensibility/debugger/roadmap-for-extending-the-debugger.md)  
@@ -56,4 +51,3 @@ ms.locfileid: "51721171"
   
  [디버깅 작업](../../extensibility/debugger/debugging-tasks.md)  
  프로그램을 시작 하 고 식을 계산 하는 등의 다양 한 디버깅 작업에 대 한 링크를 포함 합니다.
-

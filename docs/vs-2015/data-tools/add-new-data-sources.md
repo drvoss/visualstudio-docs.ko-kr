@@ -1,12 +1,9 @@
 ---
 title: 새 데이터 소스 추가 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - vs.datasource.datasourcefieldspicker
 dev_langs:
@@ -21,32 +18,31 @@ ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
 caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 50a18de0fa3006e1cf95e48d50f24411347fd135
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c9f6b7334c7032414bfd0fbf7ecf9ad48b414cb9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279151"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701040"
 ---
-# <a name="add-new-data-sources"></a>새 데이터 소스 추가
+# <a name="add-new-data-sources"></a>새 데이터 원본 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual Studio의.NET data tools의 컨텍스트에서 용어 *데이터 원본* 데이터 저장소에 연결 하 고.NET 응용 프로그램에 데이터를 노출 하는.NET 개체를 가리킵니다. Visual Studio 디자이너에서 데이터베이스 개체를 끌어서 폼에 데이터를 바인딩하는 상용구 코드를 생성 하는 데이터 원본의 출력을 사용할 수는 **데이터 원본** 창입니다. 이 유형의 데이터 원본 수 있습니다.  
   
--   일부 종류의 데이터베이스와 연결 된 Entity Framework 모델의 클래스입니다.  
+- 일부 종류의 데이터베이스와 연결 된 Entity Framework 모델의 클래스입니다.  
   
--   일부 종류의 데이터베이스와 연결 된 데이터 집합입니다.  
+- 일부 종류의 데이터베이스와 연결 된 데이터 집합입니다.  
   
--   Windows Communication Foundation (WCF) 데이터 서비스 또는 REST 서비스와 같은 네트워크 서비스를 나타내는 클래스입니다.  
+- Windows Communication Foundation (WCF) 데이터 서비스 또는 REST 서비스와 같은 네트워크 서비스를 나타내는 클래스입니다.  
   
--   SharePoint 서비스를 나타내는 클래스입니다.  
+- SharePoint 서비스를 나타내는 클래스입니다.  
   
--   클래스 또는 솔루션에서 수집 합니다.  
+- 클래스 또는 솔루션에서 수집 합니다.  
   
 > [!NOTE]
->  데이터 바인딩 기능을 사용 하지 않는 경우 데이터 집합, Entity Framework, LINQ to SQL, WCF, 또는 SharePoint에서 "data source" 개념이 적용 되지 않습니다. SQLCommand 개체를 사용 하 여 데이터베이스에 직접 연결 하 고 데이터베이스와 직접 통신 하기만 됩니다.  
+> 데이터 바인딩 기능을 사용 하지 않는 경우 데이터 집합, Entity Framework, LINQ to SQL, WCF, 또는 SharePoint에서 "data source" 개념이 적용 되지 않습니다. SQLCommand 개체를 사용 하 여 데이터베이스에 직접 연결 하 고 데이터베이스와 직접 통신 하기만 됩니다.  
   
  만들고 사용 하 여 데이터 소스를 편집 합니다 **데이터 소스 구성 마법사** Windows Forms 또는 Windows Presentation Foundation 응용 프로그램입니다. Entity Framework를 먼저 엔터티 클래스를 만들고 다음을 선택 하 여 마법사를 시작 **프로젝트** > **새 데이터 소스 추가** (이 문서의 뒷부분에서 자세히 설명).  
   
@@ -58,7 +54,7 @@ Visual Studio의.NET data tools의 컨텍스트에서 용어 *데이터 원본* 
   
 ## <a name="data-source-for-a-database-or-a-database-file"></a>데이터베이스 또는 데이터베이스 파일에 대 한 데이터 원본  
   
-### <a name="dataset"></a>데이터 집합  
+### <a name="dataset"></a>데이터 세트  
  데이터 원본으로 데이터 집합을 만들려면 다음을 실행 합니다 **데이터 소스 구성 마법사** (**프로젝트** > **새 데이터 추가** 원본) 선택 하 고는  **데이터베이스** 데이터 소스 형식입니다. 지시에 따라 새 또는 기존 데이터베이스 연결 또는 데이터베이스 파일을 지정 합니다.  
   
 ### <a name="entity-classes"></a>엔터티 클래스  
@@ -81,14 +77,14 @@ Visual Studio의.NET data tools의 컨텍스트에서 용어 *데이터 원본* 
   
  다음 유형의 서비스에서 데이터 소스를 만들 수 있습니다.  
   
--   WCF Data Services. 자세한 내용은 [개요](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)합니다.  
+- WCF Data Services. 자세한 내용은 [개요](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)합니다.  
   
--   WCF 데이터 서비스입니다. 자세한 내용은 [Windows Communication Foundation 서비스 및 Visual Studio의 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)합니다.  
+- WCF 데이터 서비스입니다. 자세한 내용은 [Windows Communication Foundation 서비스 및 Visual Studio의 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)합니다.  
   
--   웹 서비스 비교입니다.  
+- 웹 서비스 비교입니다.  
   
     > [!NOTE]
-    >  에 표시 되는 항목의 **데이터 원본** 창 서비스를 반환 하는 데이터에 따라 달라 집니다. 일부 서비스에 대 한 충분 한 정보를 제공 하지 않을 수 있습니다 합니다 **데이터 소스 구성 마법사** 바인딩할 수 있는 개체를 만들 수 있습니다. 예를 들어 서비스가 형식화 되지 않은 데이터 집합을 반환 하는 경우 항목이에 나타납니다 합니다 **데이터 원본** 창 마법사를 완료 합니다. 형식화 되지 않은 데이터 집합 스키마를 제공 하지 않으며 마법사가 데이터 원본을 만들려면 충분 한 정보를 갖고 있지 않으므로 때문입니다.  
+    > 에 표시 되는 항목의 **데이터 원본** 창 서비스를 반환 하는 데이터에 따라 달라 집니다. **데이터 원본 구성 마법사**에서 바인딩 가능한 개체를 만들기에 충분한 정보를 제공하지 않는 서비스도 있습니다. 예를 들어 서비스가 형식화 되지 않은 데이터 집합을 반환 하는 경우 항목이에 나타납니다 합니다 **데이터 원본** 창 마법사를 완료 합니다. 형식화 되지 않은 데이터 집합 스키마를 제공 하지 않으며 마법사가 데이터 원본을 만들려면 충분 한 정보를 갖고 있지 않으므로 때문입니다.  
   
 ## <a name="data-source-for-an-object"></a>개체에 대 한 데이터 원본  
  실행 하 여 하나 이상의 공용 속성을 노출 하는 개체 로부터 데이터 소스를 만들 수 있습니다 합니다 **데이터 소스 구성 마법사** 을 선택한 다음는 **개체** 데이터 소스 형식입니다. 개체의 모든 public 속성에 표시 되는 **데이터 원본** 창입니다.   Entity Framework를 사용 하는 모델을 생성 하는 경우 응용 프로그램에 대 한 데이터 원본 수 있는 엔터티 클래스를 찾을 위치입니다.  
@@ -98,14 +94,13 @@ Visual Studio의.NET data tools의 컨텍스트에서 용어 *데이터 원본* 
  어셈블리 또는 트리 보기에 나타나지 않으면 프로젝트의 개체에 바인딩하려면 클릭 **참조 추가** 사용 하 여는 **참조 추가 대화 상자** 어셈블리 또는 프로젝트에 대 한 참조를 추가 합니다. 참조를 추가한 후 어셈블리 또는 프로젝트를 트리 뷰에 추가 됩니다.  
   
 > [!NOTE]
->  개체는 트리 뷰에 표시 하려면 먼저 개체를 포함 하는 프로젝트를 작성 해야 합니다.  
+> 개체는 트리 뷰에 표시 하려면 먼저 개체를 포함 하는 프로젝트를 작성 해야 합니다.  
   
 > [!NOTE]
->  구현 하는 개체 끌어서 놓기 데이터 바인딩을 지원 하기 위해 합니다 <xref:System.ComponentModel.ITypedList> 또는 <xref:System.ComponentModel.IListSource> 인터페이스에는 기본 생성자가 있어야 합니다. 그렇지 않으면 Visual Studio 데이터 원본 개체를 인스턴스화할 수 없습니다 하 고 디자인 화면으로 항목을 끌면 오류가 표시 됩니다.  
+> 구현 하는 개체 끌어서 놓기 데이터 바인딩을 지원 하기 위해 합니다 <xref:System.ComponentModel.ITypedList> 또는 <xref:System.ComponentModel.IListSource> 인터페이스에는 기본 생성자가 있어야 합니다. 그렇지 않으면 Visual Studio 데이터 원본 개체를 인스턴스화할 수 없습니다 하 고 디자인 화면으로 항목을 끌면 오류가 표시 됩니다.  
   
 ## <a name="data-source-for-a-sharepoint-list"></a>SharePoint 목록을 데이터 원본  
  실행 하 여 SharePoint 목록의 데이터 소스를 만들 수는 **데이터 소스 구성 마법사** 선택 하 고는 **SharePoint** 데이터 소스 형식입니다. SharePoint를 통해 데이터를 노출 [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]이므로 서비스에서 데이터 원본을 만드는 것과 같습니다는 SharePoint 데이터 원본 만들기. 선택 하는 **SharePoint** 항목에 **데이터 소스 구성 마법사** 열립니다는 **서비스 참조 추가** 대화 상자에서 SharePoint 데이터 서비스에 연결 SharePoint 서버를 가리키면 됩니다.  SharePoint SDK 필요합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [.NET용 Visual Studio 데이터 도구](../data-tools/visual-studio-data-tools-for-dotnet.md)
-

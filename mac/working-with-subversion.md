@@ -1,20 +1,20 @@
 ---
 title: Subversion 작업
 description: Mac용 Visual Studio에서 Subversion 사용
-author: conceptdev
-ms.author: crdun
+author: jmatthiesen
+ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
-ms.openlocfilehash: 7dcbd619fe0c1a0ab84a8667f5a781d006f80999
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: d687215bc91dc01a284c49c141a6e52a16ce9e7a
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295204"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692134"
 ---
 # <a name="working-with-subversion"></a>Subversion 작업
 
-Subversion은 중앙 데이터의 단일 마스터 복사본을 체크 아웃할 수 있는 중앙 버전 제어 시스템입니다. Subversion 리포지토리를 체크 아웃하면 Git과 달리 전체 리포지토리가 복제되지 않고 해당 시점의 스냅숏만 생성됩니다.
+Subversion은 중앙 데이터의 단일 마스터 복사본을 체크 아웃할 수 있는 중앙 버전 제어 시스템입니다. Subversion 리포지토리를 체크 아웃하면 Git과 달리 전체 리포지토리가 복제되지 않고 해당 시점의 스냅샷만 생성됩니다.
 
 Subversion은 여러 사용자가 같은 리포지토리에서 동시에 작업할 수 있도록 복사-수정-병합 모델을 사용합니다. 즉, 각 사용자가 중앙 데이터의 로컬 또는 작업 복사본을 만들어 독립적으로 작업합니다. 사용자의 작업 복사본에 대한 변경 내용은 시간순으로 병합됩니다.
 

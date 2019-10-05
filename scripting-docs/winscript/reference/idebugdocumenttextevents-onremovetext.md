@@ -2,7 +2,6 @@
 title: IDebugDocumentTextEvents::onRemoveText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d58e45d6c3bfffae0067c9d53b3df8972deb0500
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 506d7c5349cf074ce4a4cbe60e33459a09a91b67
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946715"
 ---
 # <a name="idebugdocumenttexteventsonremovetext"></a>IDebugDocumentTextEvents::onRemoveText
 텍스트 문서에서 제거 된 것을 나타냅니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT onRemoveText(  
    ULONG  cCharacterPosition,  
    ULONG  cNumToRemove  
@@ -52,7 +51,7 @@ HRESULT onRemoveText(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 텍스트 문서에서 제거 되었음을 나타냅니다.  
+ 이 메서드는 텍스트 문서에서 제거 된 것을 나타냅니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugDocumentTextEvents 인터페이스](../../winscript/reference/idebugdocumenttextevents-interface.md)   

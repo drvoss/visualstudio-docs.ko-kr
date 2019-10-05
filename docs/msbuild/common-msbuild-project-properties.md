@@ -1,8 +1,6 @@
 ---
 title: 일반적인 MSBuild 프로젝트 속성 | Microsoft Docs
-ms.custom: ''
 ms.date: 01/18/2018
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,23 +15,23 @@ helpviewer_keywords:
 ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8bc70a93bf96e34fd3ce2cd09f728b1bd450bf5
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 586d28c1e04c7f1e85a077b559586098093812bb
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803496"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745896"
 ---
 # <a name="common-msbuild-project-properties"></a>일반적인 MSBuild 프로젝트 속성
-다음 표에서는 Visual Studio 프로젝트 파일에 정의되거나 MSBuild가 제공하는 *.targets* 파일에 포함된 자주 사용하는 속성을 보여 줍니다.  
-  
- Visual Studio의 프로젝트 파일(*.csproj*, *.vbproj*, *.vcxproj* 등)은 IDE를 사용하여 프로젝트를 빌드할 때 실행하는 MSBuild XML 코드를 포함합니다. 일반적으로 프로젝트에서는 하나 이상의 *.targets* 파일을 가져와서 빌드 프로세스를 정의합니다. 자세한 내용은 [MSBuild .targets 파일](../msbuild/msbuild-dot-targets-files.md)을 참조하세요.  
-  
-## <a name="list-of-common-properties-and-parameters"></a>공용 속성 및 매개 변수 목록  
-  
+다음 표에서는 Visual Studio 프로젝트 파일에 정의되거나 MSBuild가 제공하는 *.targets* 파일에 포함된 자주 사용하는 속성을 보여 줍니다.
+
+ Visual Studio의 프로젝트 파일( *.csproj*, *.vbproj*, *.vcxproj* 등)은 IDE를 사용하여 프로젝트를 빌드할 때 실행하는 MSBuild XML 코드를 포함합니다. 일반적으로 프로젝트에서는 하나 이상의 *.targets* 파일을 가져와서 빌드 프로세스를 정의합니다. 자세한 내용은 [MSBuild .targets 파일](../msbuild/msbuild-dot-targets-files.md)을 참조하세요.
+
+## <a name="list-of-common-properties-and-parameters"></a>공용 속성 및 매개 변수 목록
+
 | 속성 또는 매개 변수 이름 | 설명 |
 |------------------------------------| - |
 | AdditionalLibPaths | 컴파일러에서 참조 어셈블리를 조회해야 하는 추가 폴더를 지정합니다. |
@@ -41,7 +39,7 @@ ms.locfileid: "53803496"
 | ALToolPath | *AL.exe*를 찾을 수 있는 경로입니다. 이 속성은 다른 버전의 *AL.exe*를 사용으로 설정하기 위해 현재 버전을 재정의합니다. |
 | ApplicationIcon | Win32 아이콘으로 포함하기 위해 컴파일러에 전달할 *.ico* 아이콘 파일입니다. 이 속성은 `/win32icon` 컴파일러 스위치와 동일합니다. |
 | ApplicationManifest | 외부 UAC(사용자 계정 컨트롤) 매니페스트 정보를 생성하는 데 사용되는 파일의 경로를 지정합니다. [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]를 대상으로 하는 Visual Studio 프로젝트에만 적용됩니다.<br /><br /> 대부분의 경우 매니페스트는 포함되어 있지만 등록이 필요 없는 COM 또는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포를 사용할 경우 매니페스트가 애플리케이션 어셈블리와 함께 설치되는 외부 파일일 수 있습니다. 자세한 내용은 이 항목에서 NoWin32Manifest 속성을 참조하십시오. |
-| AssemblyOriginatorKeyFile | 어셈블리를 서명하는 데 사용되는 파일(*.snk* 또는 *.pfx*) 및 [ResolveKeySource 작업](../msbuild/resolvekeysource-task.md)으로 전달되어 어셈블리를 서명하는 데 사용되는 실제 키를 생성하는 파일을 지정합니다. |
+| AssemblyOriginatorKeyFile | 어셈블리를 서명하는 데 사용되는 파일( *.snk* 또는 *.pfx*) 및 [ResolveKeySource 작업](../msbuild/resolvekeysource-task.md)으로 전달되어 어셈블리를 서명하는 데 사용되는 실제 키를 생성하는 파일을 지정합니다. |
 | AssemblySearchPaths | 빌드 시간 참조 어셈블리 확인 동안 검색할 위치의 목록입니다. 앞에 있는 경로가 뒤에 있는 항목보다 우선하므로 이 목록에 경로가 표시되는 순서는 중요합니다. |
 | AssemblyName | 프로젝트가 빌드된 후의 마지막 출력 어셈블리 이름입니다. |
 | BaseAddress | 주 출력 어셈블리의 기준 주소를 지정합니다. 이 속성은 `/baseaddress` 컴파일러 스위치와 동일합니다. |
@@ -55,8 +53,8 @@ ms.locfileid: "53803496"
 | 구성 | 빌드하고 있는 구성으로, "디버그" 또는 "릴리스"입니다. |
 | CscToolPath | [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 컴파일러인 *csc.exe*의 경로입니다. |
 | CustomBeforeMicrosoftCommonTargets | 공통 대상을 가져오기 전에 자동으로 가져올 프로젝트 파일 또는 대상 파일의 이름입니다. |
-| DebugSymbols | 빌드 시 기호의 생성 여부를 나타내는 부울 값입니다.<br /><br /> 명령줄에서 **-p:DebugSymbols=false**를 설정하면 프로그램 데이터베이스(*.pdb*) 기호 파일이 생성되지 않습니다. |
-| DebugType | 생성할 디버그 정보의 수준을 정의합니다. 유효한 값은 "full", "pdbonly" 및 "none"입니다. |
+| DebugSymbols | 빌드 시 기호의 생성 여부를 나타내는 부울 값입니다.<br /><br /> 명령줄에서 **-p:DebugSymbols=false**를 설정하면 프로그램 데이터베이스( *.pdb*) 기호 파일이 생성되지 않습니다. |
+| DebugType | 생성할 디버그 정보의 수준을 정의합니다. 유효한 값은 “full”, “pdbonly”, “portable”, “embedded” 및 “none”입니다. |
 | DefineConstants | 조건부 컴파일러 상수를 정의합니다. 기호/값 쌍은 세미콜론으로 구분되고 다음 구문을 사용하여 지정됩니다.<br /><br /> *symbol1 = value1 ; symbol2 = value2*<br /><br /> 이 속성은 `/define` 컴파일러 스위치와 동일합니다. |
 | DefineDebug | DEBUG 상수를 정의할지 여부를 나타내는 부울 값입니다. |
 | DefineTrace | TRACE 상수를 정의할지 여부를 나타내는 부울 값입니다. |
@@ -70,7 +68,8 @@ ms.locfileid: "53803496"
 | FileAlignment | 출력 파일의 섹션에 맞출 위치(바이트)를 지정합니다. 올바른 값은 512, 1024, 2048, 4096, 8192입니다. 이 속성은 `/filealignment` 컴파일러 스위치와 동일합니다. |
 | FrameworkPathOverride | *mscorlib.dll* 및 *microsoft.visualbasic.dll*의 위치를 지정합니다. 이 매개 변수는 *vbc.exe* 컴파일러의 `/sdkpath` 스위치와 동일합니다. |
 | GenerateDocumentation | (Visual Basic만 해당) 빌드 시 문서의 생성 여부를 나타내는 부울 매개 변수입니다. `true`이면 빌드 시 문서 정보를 생성하여 이 정보를 빌드 작업에서 만든 실행 파일이나 라이브러리의 이름과 함께 *.xml* 파일에 배치합니다. |
-| IntermediateOutputPath | 경로가 지정되지 않은 경우 `BaseIntermediateOutputPath`에서 파생된 것과 같은 전체 중간 출력 경로입니다. 예를 들어 *\obj\debug\\*입니다. |
+| GenerateSerializationAssemblies | *SGen.exe*에서 XML 직렬화 어셈블리를 생성할지 여부를 표시하며 on, auto 또는 off로 설정할 수 있습니다. 이 속성은 .NET Framework만을 대상으로 하는 어셈블리에 사용됩니다. .NET 표준 또는 .NET Core 어셈블리에 대한 XML 직렬화 어셈블리를 생성하려면 *Microsoft.XmlSerializer.Generator* NuGet 패키지를 참조하세요. |
+| IntermediateOutputPath | 경로가 지정되지 않은 경우 `BaseIntermediateOutputPath`에서 파생된 것과 같은 전체 중간 출력 경로입니다. 예를 들어 *\obj\debug\\* 입니다. |
 | KeyContainerName | 강력한 이름 키 컨테이너의 이름입니다. |
 | KeyOriginatorFile | 강력한 이름 키 파일의 이름입니다. |
 | MSBuildProjectExtensionsPath | 프로젝트 확장명이 있는 경로를 지정합니다. 기본적으로 `BaseIntermediateOutputPath`와 동일한 값을 사용합니다. |
@@ -87,12 +86,14 @@ ms.locfileid: "53803496"
 | OutputPath | 프로젝트 디렉터리에 상대적인 출력 디렉터리 경로(예: *bin\Debug*)를 지정합니다. |
 | OutputType | 출력 파일의 파일 형식을 지정합니다. 이 매개 변수는 다음 값 중 하나를 가질 수 있습니다.<br /><br /> -   Library. 코드 라이브러리를 만듭니다. 기본값입니다.<br />-   Exe. 콘솔 애플리케이션을 만듭니다.<br />-   Module. 모듈을 만듭니다.<br />-   Winexe. Windows 기반 프로그램을 만듭니다.<br /><br /> 이 속성은 *vbc.exe* 컴파일러의 `/target` 스위치와 동일합니다. |
 | OverwriteReadOnlyFiles | 빌드에서 읽기 전용 파일을 덮어쓸지 아니면 오류를 트리거할지 여부를 나타내는 부울 값입니다. |
+| PathMap | 실제 경로를 컴파일러에서 출력되는 소스 경로 이름에 매핑하는 방법을 지정합니다. 이 속성은 *csc.exe* 컴파일러의 `/pathmap` 스위치와 동일합니다. |
 | PdbFile | 내보낼 *.pdb* 파일의 파일 이름입니다. 이 속성은 *csc.exe* 컴파일러의 `/pdb` 스위치와 동일합니다. |
 | 플랫폼 | 빌드하고 있는 운영 체제입니다. 유효한 값은 "Any CPU", "x86" 및 "x64"입니다. |
 | ProduceReferenceAssembly | 부울 값으로, `true`로 설정하면 현재 어셈블리에 대한 [참조 어셈블리](https://github.com/dotnet/roslyn/blob/master/docs/features/refout.md)를 생성합니다. 이 기능을 사용할 경우 `Deterministic`이 `true`여야 합니다. 이 속성은 *vbc.exe* 및 *csc.exe* 컴파일러의 `/refout` 스위치에 해당합니다. |
+| ProduceOnlyReferenceAssembly | 컴파일러에 컴파일된 코드가 아닌 참조 어셈블리만 내보내도록 지시하는 부울 값입니다. `ProduceReferenceAssembly`와 함께 사용할 수 없습니다.  이 속성은 *vbc.exe* 및 *csc.exe* 컴파일러의 `/refonly` 스위치에 해당합니다. |
 | RemoveIntegerChecks | 정수 오버플로 오류 검사를 비활성화할지 여부를 나타내는 부울 값입니다. 기본값은 `false`입니다. 이 속성은 *vbc.exe* 컴파일러의 `/removeintchecks` 스위치와 동일합니다. |
-| SGenUseProxyTypes | *SGen.exe*에서 프록시 형식을 생성해야 하는지 여부를 나타내는 부울 값입니다.<br /><br /> SGen 대상은 이 속성을 사용하여 UseProxyTypes 플래그를 설정합니다. 이 속성은 기본적으로 true로 설정되어 있으며 이를 변경할 UI가 없습니다. 웹 서비스가 아닌 형식에 대해 serialization 어셈블리를 생성하려면 이 속성을 프로젝트 파일에 추가하고 *Microsoft.Common.Targets* 또는 *C#/VB.targets*를 가져오기 전에 false로 설정합니다. |
-| SGenToolPath | 현재 버전의 *SGen.exe*를 재정의할 때 *SGen.exe*를 구할 수 있는 위치를 나타내는 선택적 도구 경로입니다. |
+| SGenUseProxyTypes | *SGen.exe*에서 프록시 형식을 생성해야 하는지 여부를 나타내는 부울 값입니다. *GenerateSerializationAssemblies*를 on으로 설정했으며 .NET Framework만 대상으로 할 경우에만 적용됩니다.<br /><br /> SGen 대상은 이 속성을 사용하여 UseProxyTypes 플래그를 설정합니다. 이 속성은 기본적으로 true로 설정되어 있으며 이를 변경할 UI가 없습니다. 웹 서비스가 아닌 형식에 대해 serialization 어셈블리를 생성하려면 이 속성을 프로젝트 파일에 추가하고 *Microsoft.Common.Targets* 또는 *C#/VB.targets*를 가져오기 전에 false로 설정합니다. |
+| SGenToolPath | 현재 버전의 *SGen.exe*를 재정의할 때 *SGen.exe*를 구할 수 있는 위치를 나타내는 선택적 도구 경로입니다. 이 속성은 .NET Framework에만 사용됩니다.|
 | StartupObject | Main 메서드 또는 Sub Main 프로시저가 포함된 클래스나 모듈을 지정합니다. 이 속성은 `/main` 컴파일러 스위치와 동일합니다. |
 | ProcessorArchitecture | 어셈블리 참조를 확인할 때 사용되는 프로세서 아키텍처입니다. 유효한 값은 "msil", "x86", "amd64" 또는 "ia64"입니다. |
 | RootNamespace | 포함 리소스의 이름을 지정할 때 사용할 루트 네임스페이스입니다. 이 네임스페이스는 포함 리소스 매니페스트 이름의 일부입니다. |
@@ -114,10 +115,10 @@ ms.locfileid: "53803496"
 | Satellite_Trademark | 위성 어셈블리의 Trademark 필드에 대한 문자열을 지정합니다. |
 | Satellite_Version | 위성 어셈블리의 버전 정보를 지정합니다. |
 | Satellite_Win32Icon | 위성 어셈블리에 *.ico* 아이콘 파일을 삽입합니다. |
-| Satellite_Win32Resource | 위성 어셈블리에 Win32 리소스(*.res* 파일)를 삽입합니다. |
+| Satellite_Win32Resource | 위성 어셈블리에 Win32 리소스( *.res* 파일)를 삽입합니다. |
 | SubsystemVersion | 생성된 실행 파일이 사용할 수 있는 하위 시스템의 최소 버전을 지정합니다. 이 속성은 `/subsystemversion` 컴파일러 스위치와 동일합니다. 이 속성의 기본값에 대한 자세한 내용은 [/subsystemversion(Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/subsystemversion) 또는 [/subsystemversion(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/subsystemversion-compiler-option)을 참조하세요. |
 | TargetCompactFramework | 빌드하고 있는 애플리케이션을 실행하는 데 필요한 .NET Compact Framework의 버전입니다. 이를 지정하면 다른 경우에는 참조할 수 없는 특정 프레임워크 어셈블리를 참조할 수 있습니다. |
-| TargetFrameworkVersion | 빌드하고 있는 애플리케이션을 실행하는 데 필요한 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]의 버전입니다. 이를 지정하면 다른 경우에는 참조할 수 없는 특정 프레임워크 어셈블리를 참조할 수 있습니다. |
+| TargetFrameworkVersion | 빌드하고 있는 애플리케이션을 실행하는 데 필요한 .NET Framework의 버전입니다. 이를 지정하면 다른 경우에는 참조할 수 없는 특정 프레임워크 어셈블리를 참조할 수 있습니다. |
 | TreatWarningsAsErrors | `true`이면 모든 경고가 오류로 처리되도록 하는 부울 매개 변수입니다. 이 매개 변수는 `/nowarn` 컴파일러 스위치와 동일합니다. |
 | UseHostCompilerIfAvailable | `true`이면 빌드 작업에서 가능한 경우 in-process 컴파일러 개체를 사용하도록 하는 부울 매개 변수입니다. 이 매개 변수는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서만 사용됩니다. |
 | Utf8Output | `true`이면 UTF-8 인코딩을 사용하여 컴파일러 출력을 기록하는 부울 매개 변수입니다. 이 매개 변수는 `/utf8Output` 컴파일러 스위치와 동일합니다. |
@@ -128,6 +129,6 @@ ms.locfileid: "53803496"
 | WarningsNotAsErrors | 오류로 처리하지 않을 경고 목록을 지정합니다. 이 매개 변수는 `/warnaserror` 컴파일러 스위치와 동일합니다. |
 | Win32Manifest | 최종 어셈블리에 포함해야 하는 매니페스트 파일의 이름입니다. 이 매개 변수는 `/win32Manifest` 컴파일러 스위치와 동일합니다. |
 | Win32Resource | 최종 어셈블리에 포함할 Win32 리소스의 파일 이름입니다. 이 매개 변수는 `/win32resource` 컴파일러 스위치와 동일합니다. |
-  
-## <a name="see-also"></a>참고 항목  
- [일반적인 MSBuild 프로젝트 항목](../msbuild/common-msbuild-project-items.md)
+
+## <a name="see-also"></a>참고 항목
+- [일반적인 MSBuild 프로젝트 항목](../msbuild/common-msbuild-project-items.md)

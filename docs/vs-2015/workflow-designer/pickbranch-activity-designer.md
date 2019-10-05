@@ -1,11 +1,8 @@
 ---
 title: PickBranch 활동 디자이너 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.PickBranch.UI
@@ -13,13 +10,13 @@ ms.assetid: f523ad47-bbc0-4cda-a35c-41e67c4ba081
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: f39479c9421ab87caf7c918e05be89272f0fb4de
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c47e893cfe84c984231891583abe5d0fea0178dc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887311"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694461"
 ---
 # <a name="pickbranch-activity-designer"></a>PickBranch 활동 디자이너
 <xref:System.Activities.Statements.PickBranch>는 들어오는 이벤트에 의해 트리거되는 <xref:System.Activities.Statements.Pick> 활동 내에서 이벤트 기반의 실행 경로를 제공합니다.  
@@ -50,10 +47,10 @@ ms.locfileid: "49887311"
   
    선택 해야 합니다 **PickBranch** 디자이너 내에서 작업 중 하나를 선택 하 여 해당 **트리거** 또는 **동작** 이러한 작업 중 하나는 상자 실수로 삭제 아니라 <xref:System.Activities.Statements.PickBranch> 개체입니다.  
   
-### <a name="pickbranch-properties-in-the-workflow-designer"></a>워크플로 디자이너의 PickBranch 속성  
+### <a name="pickbranch-properties-in-the-workflow-designer"></a>Workflow Designer의 PickBranch 속성  
  다음 표에서는 가장 유용한 <xref:System.Activities.Statements.PickBranch> 속성을 보여 주고 [!INCLUDE[wfd2](../includes/wfd2-md.md)]에서 이러한 속성을 사용하는 방법을 설명합니다.  
   
-|속성 이름|필수|용도|  
+|속성 이름|필수|사용|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Statements.PickBranch.DisplayName%2A>|False|헤더에 표시 되는 친숙 한 이름 합니다 **PickBranch** 디자이너입니다. 기본값은 분기입니다.<br /><br /> <xref:System.Activities.Activity.DisplayName%2A>은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|  
 |<xref:System.Activities.Statements.PickBranch.Trigger%2A>|True|각 <xref:System.Activities.Statements.PickBranch>에는 <xref:System.Activities.Statements.PickBranch.Trigger%2A>을 호출할 수 있는 <xref:System.Activities.Statements.PickBranch.Action%2A> 활동이 포함되어 있습니다.|  
@@ -61,5 +58,5 @@ ms.locfileid: "49887311"
   
 ## <a name="see-also"></a>참고 항목  
  [제어 흐름](../workflow-designer/control-flow-activity-designers.md)   
- [선택 활동](http://msdn.microsoft.com/library/b3e49b7f-0285-4720-8c09-11ae18f0d53e)   
- [Pick 작업 사용](http://msdn.microsoft.com/library/b89be812-a247-4025-b0e3-ffb20db027a6)
+ [선택 활동](https://msdn.microsoft.com/library/b3e49b7f-0285-4720-8c09-11ae18f0d53e)   
+ [Pick 작업 사용](https://msdn.microsoft.com/library/b89be812-a247-4025-b0e3-ffb20db027a6)

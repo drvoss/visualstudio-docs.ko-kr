@@ -1,14 +1,9 @@
 ---
 title: 병렬을 사용 하 여 스택 창 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.parallelstacks
 dev_langs:
@@ -22,18 +17,18 @@ ms.assetid: f50efb78-5206-4803-bb42-426ef8133f2f
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 602fdd683ecb1b3244289c305e4fc850d337b03e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: df764ac38f437be33b71e7a816709a46234f751e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792036"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684163"
 ---
 # <a name="using-the-parallel-stacks-window"></a>병렬 스택 창 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-합니다 **병렬 스택** 창은 다중 스레드 응용 프로그램을 디버깅할 때 유용 합니다. 해당 **스레드 뷰** 응용 프로그램에서 모든 스레드에 대 한 호출 스택 정보를 표시 합니다. 따라서 스레드와 스레드 스택 프레임 간을 탐색할 수 있습니다. 관리 코드에는 **작업 보기** 의 호출 스택이 표시 <xref:System.Threading.Tasks.Task?displayProperty=fullName> 개체입니다. 네이티브 코드에는 **작업 보기** 의 호출 스택이 표시 [작업 그룹](http://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077)를 [병렬 알고리즘](http://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [비동기 에이전트](http://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a), 및 [간단한 작업](http://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90)합니다.  
+합니다 **병렬 스택** 창은 다중 스레드 응용 프로그램을 디버깅할 때 유용 합니다. 해당 **스레드 뷰** 응용 프로그램에서 모든 스레드에 대 한 호출 스택 정보를 표시 합니다. 따라서 스레드와 스레드 스택 프레임 간을 탐색할 수 있습니다. 관리 코드에는 **작업 보기** 의 호출 스택이 표시 <xref:System.Threading.Tasks.Task?displayProperty=fullName> 개체입니다. 네이티브 코드에는 **작업 보기** 의 호출 스택이 표시 [작업 그룹](https://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077)를 [병렬 알고리즘](https://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [비동기 에이전트](https://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a), 및 [간단한 작업](https://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90)합니다.  
   
 ## <a name="threads-view"></a>스레드 뷰  
  다음 그림에서는 Main에서 A, B 및 외부 코드로 차례로 이동한 하나의 스레드를 보여 줍니다. 다른 두 스레드는 외부 코드에서 시작한 후 A로 이동했지만, 그 중 하나는 B로 진행한 후 외부 코드로 진행했고 다른 하나는 C로 진행한 후 AnonymousMethod로 진행했습니다.  
@@ -68,7 +63,7 @@ ms.locfileid: "51792036"
   
  ![병렬 스택 창의 도구 모음](../debugger/media/parallel-stackstoolbar.png "Parallel_StacksToolbar")  
   
-|설명선 문자|Control|설명|  
+|설명선 문자|컨트롤|설명|  
 |--------------------|-------------|-----------------|  
 |A|스레드/작업 콤보 상자|스레드의 호출 스택과 작업의 호출 스택 간에 뷰를 전환합니다. 자세한 내용은 작업 뷰와 스레드 뷰를 참조하십시오.|  
 |B|플래그가 지정된 항목만 표시|와 같은 다른 디버그 창에서 플래그가 지정 된 스레드에 대해서만 호출 스택이 표시 합니다 **GPU 스레드** 창 및 **병렬 조사식** 창입니다.|  
@@ -126,10 +121,7 @@ ms.locfileid: "51792036"
  [연습: 병렬 응용 프로그램 디버깅](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Debugger Basics](../debugger/debugger-basics.md) (디버거 기본 사항)  
  [Debugging Managed Code](../debugger/debugging-managed-code.md) (관리 코드 디버그)  
- [병렬 프로그래밍](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
+ [병렬 프로그래밍](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
  [작업 창 사용](../debugger/using-the-tasks-window.md)   
  [연습: 병렬 응용 프로그램 디버깅](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Task 클래스](../extensibility/debugger/task-class-internal-members.md)
-
-
-

@@ -8,15 +8,13 @@ helpviewer_keywords:
 ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 5f276702aef4bf062d7da3e921965e674d5ec738
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 6bd73c643cdc01be07d56857f65d3fb34c6346e0
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064998"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747577"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>방법: Microsoft Excel을 사용하여 부하 테스트 성능 보고서 만들기
 
@@ -26,9 +24,9 @@ ms.locfileid: "53064998"
 
 다음과 같은 두 가지 유형의 부하 테스트 보고서를 사용할 수 있습니다.
 
--   **비교 실행** 테이블과 가로 막대형 차트를 사용하여 두 부하 테스트 결과의 데이터를 비교하는 보고서 집합을 만듭니다.
+- **비교 실행** 테이블과 가로 막대형 차트를 사용하여 두 부하 테스트 결과의 데이터를 비교하는 보고서 집합을 만듭니다.
 
--   **추세** 둘 이상의 부하 테스트 결과에 대한 추세 분석을 생성할 수 있습니다. 결과는 꺾은선형 차트를 사용하여 표시되지만, 데이터는 피벗 테이블에서 사용할 수 있습니다.
+- **추세** 둘 이상의 부하 테스트 결과에 대한 추세 분석을 생성할 수 있습니다. 결과는 꺾은선형 차트를 사용하여 표시되지만, 데이터는 피벗 테이블에서 사용할 수 있습니다.
 
 > [!TIP]
 > 요약 뷰 및 그래프 뷰 및 테이블 뷰에서 데이터를 복사하여 붙여넣는 방법으로 Microsoft Word 보고서를 수동으로 만들 수도 있습니다. [방법: Microsoft Word를 사용하여 수동으로 부하 테스트 성능 보고서 만들기](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)를 참조하세요.
@@ -42,9 +40,9 @@ ms.locfileid: "53064998"
 > [!NOTE]
 > 그러나 해당 컴퓨터에 Visual Studio가 설치되어 있는 사용자만 Excel 통합 문서를 공유하여 모든 스프레드시트를 수정할 수 있습니다. 다른 사용자는 **Office** 리본 메뉴의 **부하 테스트 보고서** 옵션을 볼 수 없지만 통합 문서를 볼 수 있습니다.
 
-다음 그림에서는 트랜잭션(UpdateCart) 속도 저하와 % Processor 카운터 감소 간의 상관 관계를 나타내는 보고서의 예를 보여 줍니다. 이 보고서는 데이터베이스나 네트워크가 아니라 응용 프로그램 코드에 잠재적 문제가 있음을 나타내므로 ASP.NET 프로파일러를 사용하여 이를 진단하는 것이 좋습니다.
+다음 그림에서는 트랜잭션(UpdateCart) 속도 저하와 % Processor 카운터 감소 간의 상관 관계를 나타내는 보고서의 예를 보여 줍니다. 이 보고서는 데이터베이스나 네트워크가 아니라 애플리케이션 코드에 잠재적 문제가 있음을 나타내므로 ASP.NET 프로파일러를 사용하여 이를 진단하는 것이 좋습니다.
 
-![응용 프로그램 코드의 잠재적 문제](../test/media/lt_excel.png)
+![애플리케이션 코드의 잠재적 문제](../test/media/lt_excel.png)
 
 **부하 테스트 분석기**에서 도구 모음의 **Excel 보고서 만들기** 단추를 사용하거나, Excel에서 **Office** 리본 메뉴의 **부하 테스트** 탭에 있는 **부하 테스트 보고서** 옵션을 사용하여 Excel 보고서를 생성할 수 있습니다.
 
@@ -146,7 +144,7 @@ ms.locfileid: "53064998"
    > [!TIP]
    > 보다 유용한 보고서를 만들기 위해 부하 테스트 및 웹 성능 테스트에서 다양한 보고서를 생성할 수 있도록 몇 가지 속성을 사용할 수 있습니다. 페이지 요청에는 보고서에 표시되는 두 가지 속성이 있습니다. 목표 및 보고 이름. 페이지 응답 시간이 목표에 대해 보고되고 보고 이름은 보고서에서 URL 대신 사용됩니다. 부하 테스트 실행 설정의 카운터 집합 관리에서 컴퓨터 태그 속성이 보고서 컴퓨터 이름에 포함됩니다. 이는 보고서에서 특정 컴퓨터의 역할을 설명하는 데 매우 유용합니다.
 
-## <a name="net-framework-security"></a>.NET Framework 보안
+## <a name="net-security"></a>.NET 보안
 
 부하 테스트 결과 및 보고서에는 컴퓨터 또는 네트워크에 대한 공격을 생성하는 데 사용될 수 있는 중요한 정보가 포함되어 있습니다. 또한 부하 테스트 결과 및 보고서에는 컴퓨터 이름과 연결 문자열이 포함되어 있습니다. 따라서 부하 테스트 보고서를 다른 사용자와 공유하는 경우 이 점을 유의해야 합니다.
 

@@ -1,26 +1,21 @@
 ---
 title: '연습: QuickInfo 도구 설명 표시 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - QuickInfo
 ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9cd0e331536c194acdde95bdd74e5f41668a23e1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 79ce531d36b21ab26cf4c6e6dc76e8c4d98d8763
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806284"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58984316"
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>연습: QuickInfo 도구 설명 표시
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -183,4 +178,3 @@ ms.locfileid: "51806284"
   
 ## <a name="see-also"></a>참고 항목  
  [연습: 파일 이름 확장명에 콘텐츠 형식 연결](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-

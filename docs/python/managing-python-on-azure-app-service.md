@@ -1,24 +1,22 @@
 ---
 title: Azure App Service에서 Python 구성(Windows)
-description: Azure App Service에 Python 인터프리터 및 라이브러리를 설치하고 해당 인터프리터를 제대로 참조하도록 웹 응용 프로그램을 구성하는 방법입니다.
-ms.date: 10/18/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+description: Azure App Service에 Python 인터프리터 및 라이브러리를 설치하고 해당 인터프리터를 제대로 참조하도록 웹 애플리케이션을 구성하는 방법입니다.
+ms.date: 01/07/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: e21be06c26ec6a15b46ef72c0fe33a35b314c989
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 7ffe0de939eba8af38c132fc3de5c96a9499e3f0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62535993"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Azure App Service에서 Python 환경을 설정하는 방법(Windows)
 
@@ -78,7 +76,7 @@ Azure Resource Manager 템플릿을 사용하여 App Service를 배포하는 경
 
 ## <a name="set-webconfig-to-point-to-the-python-interpreter"></a>Python 인터프리터를 가리키도록 web.config 설정
 
-포털이나 Azure Resource Manager 템플릿을 통해 사이트 확장을 설치한 후, Python 인터프리터를 가리키도록 앱의 *web.config* 파일을 설정합니다. *web.config* 파일은 App Service에서 실행 중인 IIS(7 이상) 웹 서버에 FastCGI 또는 HttpPlatform을 통해 Python 요청을 처리해야 하는 방법을 지시합니다.
+포털이나 Azure Resource Manager 템플릿을 통해 사이트 확장을 설치한 후, Python 인터프리터를 가리키도록 앱의 *web.config* 파일을 설정합니다. *web.config* 파일은 App Service에서 실행 중인 IIS(7 이상) 웹 서버에 HttpPlatform(권장) 또는 FastCGI를 통해 Python 요청을 처리해야 하는 방법을 지시합니다.
 
 먼저 사이트 확장의 *python.exe*에 대한 전체 경로를 찾은 다음, 적절한 *web.config* 파일을 만들고 수정합니다.
 
@@ -99,37 +97,6 @@ App Service에서 특정 경로를 보려면 App Service 페이지에서 **확�
 1. App Service 페이지에서 **개발 도구** > **콘솔**을 선택합니다.
 1. `ls ../home` 또는 `dir ..\home` 명령을 입력하여 *Python361x64*와 같은 최상위 확장 폴더를 확인합니다.
 1. `ls ../home/python361x64` 또는 `dir ..\home\python361x64`와 같은 명령을 입력하여 *python.exe* 및 기타 인터프리터 파일이 포함되어 있는지 확인합니다.
-
-### <a name="configure-the-fastcgi-handler"></a>FastCGI 처리기 구성
-
-FastCGI는 요청 수준에서 작동하는 인터페이스입니다. IIS는 들어오는 연결을 받은 다음 하나 이상의 영구적 Python 프로세스에서 실행되는 WSGI 앱에 각 요청을 전달합니다. [wfastcgi 패키지](https://pypi.io/project/wfastcgi)는 사전 설치되고 각 Python 사이트 확장으로 구성되어 있으므로, Bottle 프레임워크를 기반으로 하는 웹앱에 대해 다음과 같은 코드를 *web.config*에 포함하여 쉽게 사용할 수 있습니다. *python.exe* 및 *wfastcgi.py*에 대한 전체 경로는 `PythonHandler` 키에 있습니다.
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<configuration>
-  <appSettings>
-    <add key="PYTHONPATH" value="D:\home\site\wwwroot"/>
-    <!-- The handler here is specific to Bottle; other frameworks vary. -->
-    <add key="WSGI_HANDLER" value="app.wsgi_app()"/>
-    <add key="WSGI_LOG" value="D:\home\LogFiles\wfastcgi.log"/>
-  </appSettings>
-  <system.webServer>
-    <handlers>
-      <add name="PythonHandler" path="*" verb="*" modules="FastCgiModule"
-           scriptProcessor="D:\home\Python361x64\python.exe|D:\home\Python361x64\wfastcgi.py"
-           resourceType="Unspecified" requireAccess="Script"/>
-    </handlers>
-  </system.webServer>
-</configuration>
-```
-
-여기서 정의된 `<appSettings>`는 앱에서 환경 변수로 사용할 수 있습니다.
-
-- `PYTHONPATH`의 값은 자유롭게 확장될 수 있지만 해당 앱의 루트를 포함해야 합니다.
-- `WSGI_HANDLER`는 해당 앱에서 가져올 수 있는 WSGI 앱을 가리켜야 합니다.
-- `WSGI_LOG`는 선택 사항이지만 앱 디버깅을 위해 권장됩니다. 
-
-[Azure에 게시](publishing-python-web-applications-to-azure-from-visual-studio.md)를 참조하여 Bottle, Flask 및 Django 웹앱을 위한 *web.config* 콘텐츠에 대한 추가 정보를 확인하세요.
 
 ### <a name="configure-the-httpplatform-handler"></a>HttpPlatform 처리기 구성
 
@@ -158,13 +125,44 @@ HttpPlatform 모듈은 소켓 연결을 독립 실행형 Python 프로세스에 
 
 여기에 표시된 `HTTP_PLATFORM_PORT` 환경 변수에는 로컬 서버가 localhost의 연결을 수신 대기해야 하는 포트가 포함됩니다. 이 예제에서는 원하는 경우 다른 환경 변수(이 경우 `SERVER_PORT`)를 만드는 방법도 보여 줍니다.
 
+### <a name="configure-the-fastcgi-handler"></a>FastCGI 처리기 구성
+
+FastCGI는 요청 수준에서 작동하는 인터페이스입니다. IIS는 들어오는 연결을 받은 다음 하나 이상의 영구적 Python 프로세스에서 실행되는 WSGI 앱에 각 요청을 전달합니다. [wfastcgi 패키지](https://pypi.io/project/wfastcgi)는 사전 설치되고 각 Python 사이트 확장으로 구성되어 있으므로, Bottle 프레임워크를 기반으로 하는 웹앱에 대해 다음과 같은 코드를 *web.config*에 포함하여 쉽게 사용할 수 있습니다. *python.exe* 및 *wfastcgi.py*에 대한 전체 경로는 `PythonHandler` 키에 있습니다.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <appSettings>
+    <add key="PYTHONPATH" value="D:\home\site\wwwroot"/>
+    <!-- The handler here is specific to Bottle; other frameworks vary. -->
+    <add key="WSGI_HANDLER" value="app.wsgi_app()"/>
+    <add key="WSGI_LOG" value="D:\home\LogFiles\wfastcgi.log"/>
+  </appSettings>
+  <system.webServer>
+    <handlers>
+      <add name="PythonHandler" path="*" verb="*" modules="FastCgiModule"
+           scriptProcessor="D:\home\Python361x64\python.exe|D:\home\Python361x64\wfastcgi.py"
+           resourceType="Unspecified" requireAccess="Script"/>
+    </handlers>
+  </system.webServer>
+</configuration>
+```
+
+여기서 정의된 `<appSettings>`는 앱에서 환경 변수로 사용할 수 있습니다.
+
+- `PYTHONPATH`의 값은 자유롭게 확장될 수 있지만 해당 앱의 루트를 포함해야 합니다.
+- `WSGI_HANDLER`는 해당 앱에서 가져올 수 있는 WSGI 앱을 가리켜야 합니다.
+- `WSGI_LOG`는 선택 사항이지만 앱 디버깅을 위해 권장됩니다.
+
+[Azure에 게시](publishing-python-web-applications-to-azure-from-visual-studio.md)를 참조하여 Bottle, Flask 및 Django 웹앱을 위한 *web.config* 콘텐츠에 대한 추가 정보를 확인하세요.
+
 ## <a name="install-packages"></a>패키지 설치
 
 사이트 확장을 통해 설치된 Python 인터프리터는 사용자의 Python 환경 중 한 부분일 뿐입니다. 해당 환경에서도 서로 다른 패키지를 설치해야 하는 경우가 많습니다.
 
 서버 환경에서 직접 패키지를 설치하려면 다음 방법 중 하나를 사용합니다.
 
-| 메서드 | 사용법 |
+| 메서드 | 사용 |
 | --- | --- |
 | [Azure App Service Kudu 콘솔](#azure-app-service-kudu-console) | 대화형으로 패키지를 설치합니다. 패키지는 순수한 Python이거나 휠을 게시해야 합니다. |
 | [Kudu REST API](#kudu-rest-api) | 패키지 설치를 자동화하는 데 사용할 수 있습니다.  패키지는 순수한 Python이거나 휠을 게시해야 합니다. |

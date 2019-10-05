@@ -1,14 +1,9 @@
 ---
 title: 찾기 명령 상자 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.findcommandbox
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: c81736dd-7a26-4e11-95c8-c2a2e56d7a41
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0e818df222e9b7343facc989c1b61be30c098b64
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b8bddc27eb4a59b65796c7837ae4561e5d56a5d5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172577"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160667"
 ---
 # <a name="findcommand-box"></a>찾기/명령 상자
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ ms.locfileid: "49172577"
  기본적으로 **찾기/명령** 상자에 텍스트를 지정한 다음 Enter 키를 선택하면 Visual Studio는 **파일에서 찾기** 대화 상자에 지정된 옵션을 사용하여 현재 문서 또는 도구 창을 검색합니다. 자세한 내용은 [Finding and Replacing Text](../ide/finding-and-replacing-text.md)를 참조하세요.  
   
 ## <a name="entering-commands"></a>명령 입력  
- 텍스트 검색보다는 **찾기/명령** 상자를 사용하여 단일 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 명령이나 별칭을 실행하려면 앞에 보다 큼(>) 기호를 배치하여 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 명령을 입력합니다. 예를 들어:  
+ 텍스트 검색보다는 **찾기/명령** 상자를 사용하여 단일 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 명령이나 별칭을 실행하려면 앞에 보다 큼(>) 기호를 배치하여 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 명령을 입력합니다. 예:  
   
 ```  
 >File.NewFile c:\temp\MyFile /t:"General\Text File"  
@@ -61,6 +56,3 @@ ms.locfileid: "49172577"
 ## <a name="see-also"></a>참고 항목  
  [명령 창](../ide/reference/command-window.md)   
  [텍스트 찾기 및 바꾸기](../ide/finding-and-replacing-text.md)
-
-
-

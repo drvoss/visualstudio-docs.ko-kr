@@ -1,33 +1,31 @@
 ---
 title: 성능을 향상시키기 위한 팁
 ms.date: 08/14/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1c4e55fe6275d750d3bc3b03fb8f0ac5eec2751
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 7fccae7d42d9e8f99c78fd55f74466e2f83e5dfa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62581786"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 성능 팁과 요령
 
 Visual Studio 성능 권장 사항은 드물게 발생할 수 있는 메모리 부족 상황에 대처하기 위해 제공됩니다. 이러한 상황에서는 사용하지 않는 특정 Visual Studio 기능을 최적화할 수 있습니다. 아래에서 제시하는 팁은 일반적인 권장 사항이 아닙니다.
 
 > [!NOTE]
-> 메모리 문제로 인해 제품을 사용하는 데 어려움이 있는 경우 [피드백 도구](../ide/how-to-report-a-problem-with-visual-studio-2017.md)를 통해 알려 주세요.
+> 메모리 문제로 인해 제품을 사용하는 데 어려움이 있는 경우 [피드백 도구](../ide/how-to-report-a-problem-with-visual-studio.md)를 통해 알려 주세요.
 
 ## <a name="use-a-64-bit-os"></a>64비트 OS 사용
 
 Windows 32비트 버전에서 64비트 버전으로 시스템을 업그레이드하면 Visual Studio에서 사용 가능한 가상 메모리가 2GB에서 4GB로 확장됩니다. Visual Studio는 32비트 프로세스이지만, 이렇게 하면 훨씬 더 큰 작업 부하에 대응할 수 ​​있습니다.
 
-자세한 내용은 [메모리 한도](/windows/desktop/Memory/memory-limits-for-windows-releases#memory_limits) 및 [64비트 Windows에서 /LARGEADDRESSAWARE 사용](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/)을 참조하세요.
+자세한 내용은 [메모리 한도](/windows/desktop/Memory/memory-limits-for-windows-releases) 및 [64비트 Windows에서 /LARGEADDRESSAWARE 사용](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/)을 참조하세요.
 
 ## <a name="disable-automatic-file-restore"></a>자동 파일 복원 사용 안 함
 
@@ -43,9 +41,9 @@ Visual Studio는 자동 문서 복원이 솔루션을 현저히 느리게 로드
 
 - 일반 **이동** 기능의 경우 **편집** > **이동** > **전체로 이동**을 선택하거나 **Ctrl**+**T**를 누릅니다.
 
-- Visual Studio 2017 버전 15.8 이상에서 **편집** > **이동** > **마지막 편집 위치로 이동**을 사용하거나 **Ctrl**+**Shift**+**백스페이스** 키를 눌러서 솔루션의 마지막 편집 위치로 이동할 수 있습니다.
+- **편집** > **이동** > **마지막 편집 위치로 이동**을 사용하거나 **Ctrl**+**Shift**+**Backspace**를 눌러서 솔루션의 마지막 편집 위치로 이동합니다.
 
-- Visual Studio 2017 버전 15.8 이상에서 **최근에 사용한 파일로 이동**을 사용하여 솔루션에서 최근에 방문한 파일 목록을 확인합니다. **편집** > **이동** > **최근 파일로 이동**을 선택하거나 **Ctrl**+**1**, **Ctrl**+**R**을 누릅니다.
+- **최근에 사용한 파일로 이동**을 사용하여 솔루션에서 최근에 방문한 파일 목록을 확인합니다. **편집** > **이동** > **최근 파일로 이동**을 선택하거나 **Ctrl**+**1**, **Ctrl**+**R**을 누릅니다.
 
 ## <a name="configure-debugging-options"></a>디버깅 옵션 구성
 
@@ -53,7 +51,7 @@ Visual Studio는 자동 문서 복원이 솔루션을 현저히 느리게 로드
 
 - **[내 코드만] 기능 사용**
 
-    가장 간단한 최적화는 **내 코드만** 기능을 사용하여 내 프로젝트의 기호만 로드하는 것입니다. 이 기능을 사용하면 관리되는 응용 프로그램(.NET)을 디버그할 때 상당한 메모리가 절약될 수 있습니다. 일부 프로젝트 형식에서는 이 옵션이 기본적으로 사용됩니다.
+    가장 간단한 최적화는 **내 코드만** 기능을 사용하여 내 프로젝트의 기호만 로드하는 것입니다. 이 기능을 사용하면 관리되는 애플리케이션(.NET)을 디버그할 때 상당한 메모리가 절약될 수 있습니다. 일부 프로젝트 형식에서는 이 옵션이 기본적으로 사용됩니다.
 
     **내 코드만** 기능을 사용하려면 **도구** > **옵션** > **디버깅** > **일반**을 선택한 다음, **내 코드만 사용**을 선택합니다.
 
@@ -107,7 +105,17 @@ Visual Studio는 자동 문서 복원이 솔루션을 현저히 느리게 로드
 
     확장 기능은 Visual Studio에 추가된 부가적인 소프트웨어 구성 요소로서 새로운 기능을 제공하거나 기존 기능을 확장합니다. 확장 기능은 메모리 리소스 문제의 원인이 될 수도 있습니다. 메모리 리소스 문제가 발생하는 경우 확장 기능을 하나씩 해제하면서 시나리오나 워크플로에 어떠한 영향이 있는지 확인해 보세요.
 
-    확장 기능을 해제하려면 **도구** > **확장 및 업데이트**로 이동하고 특정 확장 기능을 해제합니다.
+   ::: moniker range="vs-2017"
+
+    확장을 사용하지 않으려면 **도구** > **확장 및 업데이트**로 이동하여 특정 확장을 사용하지 않도록 설정합니다.
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+    확장을 사용하지 않으려면 **확장** > **확장 관리**로 이동하여 특정 확장을 사용하지 않도록 설정합니다.
+
+   ::: moniker-end
 
 - **XAML 디자이너 사용 안 함**
 
@@ -123,7 +131,7 @@ Visual Studio는 자동 문서 복원이 솔루션을 현저히 느리게 로드
 
 CLR은 가비지 수집 메모리 관리 시스템을 사용합니다. 이 시스템에서는 더 이상 필요하지 않은 개체에 메모리가 사용될 수도 있습니다. 이 상태는 일시적이며, 가비지 수집기에서 성능 및 리소스 사용량을 추론하여 메모리를 해제합니다. Visual Studio에서 바로 가기 키를 사용하여 CLR이 미사용 메모리를 모두 수집하도록 강제할 수 있습니다. 수집 대기 중인 가비지가 상당히 많을 때 가비지 수집을 강제 실행하면 **작업 관리자**에서 *devenv.exe* 프로세스의 메모리 사용량이 감소하는 것을 확인할 수 있습니다. 이 방법을 사용해야 하는 경우는 거의 없습니다. 그러나 전체 빌드, 디버그 세션 또는 솔루션 열기 이벤트와 같이 부담이 큰 작업이 완료된 후 프로세스에서 실제로 사용 중인 메모리의 양을 확인하는 데 도움이 됩니다. Visual Studio는 관리 방식과 네이티브가 혼합된 환경이므로 경우에 따라서는 네이티브 할당자와 가비지 수집기가 제한된 메모리 리소스를 두고 경쟁할 수 있습니다. 메모리 사용량이 많은 상황에서는 가비지 수집기를 강제 실행하는 방법이 유용할 수 있습니다.
 
-가비지 수집을 강제 실행하려면 **Ctrl**+**Alt**+**Shift**+**F12**, **Ctrl**+**Alt**+**Shift**+**F12** 단축키를 사용합니다(두 번 누름).
+가비지 수집을 강제로 실행하려면 바로 가기 키를 사용합니다. **Ctrl**+**Alt**+**Shift**+**F12**, **Ctrl**+**Alt**+**Shift**+**F12**(두 번 누름)
 
 가비지 수집을 강제 실행해야 시나리오가 안정적으로 작동한다면, 이 동작은 버그일 가능성이 크므로 Visual Studio 피드백 도구를 통해 보고해 주시기 바랍니다.
 
@@ -132,4 +140,4 @@ CLR 가비지 수집기에 대한 자세한 내용은 [가비지 수집 기본 �
 ## <a name="see-also"></a>참고 항목
 
 - [Visual Studio 성능 최적화](../ide/optimize-visual-studio-performance.md)
-- [솔루션을 더 빠르게 로드(Visual Studio 블로그)](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)
+- [솔루션을 더 빠르게 로드(Visual Studio 블로그)](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

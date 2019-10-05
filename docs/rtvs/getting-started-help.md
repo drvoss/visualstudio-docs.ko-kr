@@ -2,20 +2,18 @@
 title: R에 대한 도움말 창
 description: R에 대한 도움말은 ? 명령을 통해 Visual Studio의 대화형 창에 직접 통합됩니다.
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 6576a701abe699bfe47666acfc21c848dde1f53a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: af6c6156b1d88c1d015f7700fc7bed061bbe9a76
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35666685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950558"
 ---
 # <a name="help-in-r-tools-for-visual-studio"></a>Visual Studio용 R 도구의 도움말
 
@@ -42,7 +40,7 @@ R에 대한 도움말은 Visual Studio의 대화형 창에 직접 통합됩니�
 
 ## <a name="integrated-help-lookup"></a>통합 도움말 조회
 
-개발자는 종종 R 설명서에서 함수 이름, 데이터 집합 및 기타 요소에 대한 도움말을 검색합니다. RTVS(Visual Studio용 R 도구)에서는 도움말 조회를 편집기 및 대화형 창에 직접 통합하여 프로세스를 간소화합니다.
+개발자는 종종 R 설명서에서 함수 이름, 데이터 세트 및 기타 요소에 대한 도움말을 검색합니다. RTVS(Visual Studio용 R 도구)에서는 도움말 조회를 편집기 및 대화형 창에 직접 통합하여 프로세스를 간소화합니다.
 
 - 자동 완성 작업 중에 **F1** 키를 누르면 부분 문자열과 일치하는 도움말 결과 목록이 생성됩니다.
 - 검색어(예: 함수)를 마우스 오른쪽 단추로 클릭하고 **도움말** 명령을 선택하면 해당 함수에 대한 도움말이 열립니다. 선택에 대한 **도움말**을 호출할 수도 있습니다.

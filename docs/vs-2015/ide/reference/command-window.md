@@ -1,14 +1,9 @@
 ---
 title: 명령 창 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.CommandWindow
 helpviewer_keywords:
@@ -21,18 +16,17 @@ ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b83a9e86aea02e27242a0c1f02ca3f8459152214
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 491d6c044b22a89e8ea61a78d5dd70e0a348b893
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870187"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441445"
 ---
 # <a name="command-window"></a>명령 창
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **명령** 창은 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE(통합 개발 환경)에서 직접 명령 또는 별칭을 실행하는 데 사용됩니다. 메뉴 명령 및 메뉴에 나타나지 않는 명령을 둘 다 실행할 수 있습니다. **명령** 창을 표시하려면 **보기** 메뉴에서 **다른 창**을 선택하고 **명령 창**을 선택합니다.  
   
 ## <a name="displaying-the-values-of-variables"></a>변수 값 표시  
@@ -68,7 +62,7 @@ ms.locfileid: "49870187"
 |창을 아래로 스크롤합니다.|명령 창 콘텐츠|아래쪽 화살표 또는 CTRL+아래쪽 화살표|  
   
 > [!TIP]
->  명령으로 스크롤하고, 명령의 전부 또는 일부를 강조 표시하고 나서, Enter 키를 눌러 이전 명령의 전부 또는 일부를 입력 줄로 복사할 수 있습니다.  
+> 명령으로 스크롤하고, 명령의 전부 또는 일부를 강조 표시하고 나서, Enter 키를 눌러 이전 명령의 전부 또는 일부를 입력 줄로 복사할 수 있습니다.  
   
 ## <a name="mark-mode"></a>표시 모드  
  **명령** 창에서 이전 줄을 클릭하면 자동으로 표시 모드로 전환됩니다. 이 모드에서는 텍스트 편집기를 사용하는 것처럼 이전 명령의 텍스트를 선택, 편집 및 복사하고 현재 줄에 붙여넣을 수 있습니다.  
@@ -110,7 +104,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 - `var[1-3]+` 및 `oldpar`은 매개 변수입니다.  
   
   > [!NOTE]
-  >  공백이 포함된 명령, 매개 변수, 스위치 또는 값에는 양쪽에 큰따옴표가 있어야 합니다.  
+  > 공백이 포함된 명령, 매개 변수, 스위치 또는 값에는 양쪽에 큰따옴표가 있어야 합니다.  
   
   스위치 및 매개 변수의 위치는 명령줄에서 자유롭게 서로 바꿀 수 있습니다. 단, 스위치와 매개 변수가 특정 순서로 사용되어야 하는 [셸](../../ide/reference/shell-command.md) 명령은 예외입니다.  
   
@@ -125,7 +119,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 >Edit.Find ^^t /regex  
 ```  
   
- 캐럿은 따옴표 내부에 있든 외부에 있든 기능이 동일합니다. 캐럿이 줄에서 마지막 문자인 경우 무시됩니다. 여기에 표시 된 예제에는 패턴을 검색 하는 방법을 보여 줍니다. "^ t"입니다.  
+ 캐럿은 따옴표 내부에 있든 외부에 있든 기능이 동일합니다. 캐럿이 줄에서 마지막 문자인 경우 무시됩니다. 여기 표시된 예제는 “^t” 패턴을 검색하는 방법을 보여줍니다.  
   
 ## <a name="use-quotes-for-path-names-with-spaces"></a>공백이 있는 경로 이름에 따옴표 사용  
  예를 들어 경로에 공백이 포함된 파일을 열려면 공백이 포함된 경로 또는 경로 세그먼트 주위에 큰따옴표를 넣어야 합니다(예: **C:\\"Program Files"** 또는 **"C:\Program Files"**).  
@@ -133,6 +127,3 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ## <a name="see-also"></a>참고 항목  
  [Visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)   
  [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)
-
-
-

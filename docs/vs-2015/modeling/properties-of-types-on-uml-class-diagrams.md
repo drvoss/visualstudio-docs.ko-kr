@@ -1,12 +1,9 @@
 ---
 title: 클래스 다이어그램에 UML 형식의 속성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.shapes.properties
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: 6e1ef2d0-d67a-401a-bd64-d5e034decd2c
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e8baad41658cc6144f08d0b6b4d415aa4ff6e499
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 996f2f75499a54e0d5514590f2b087130b73ffb5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387783"
 ---
 # <a name="properties-of-types-on-uml-class-diagrams"></a>UML 클래스 다이어그램 형식의 속성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,17 +26,17 @@ ms.locfileid: "51750110"
 UML 클래스 다이어그램에는 *형식* 클래스, 인터페이스 또는 열거형입니다.  
   
 > [!NOTE]
->  이 항목은 UML 클래스 다이어그램 형식의 속성에 대한 것입니다. 자세한 내용은 다음 항목을 참조하세요.  
+> 이 항목은 UML 클래스 다이어그램 형식의 속성에 대한 것입니다. 자세한 내용은 다음 항목을 참조하세요.  
   
--   [UML 클래스 다이어그램: 참조](../modeling/uml-class-diagrams-reference.md)  
+- [UML 클래스 다이어그램: 참조](../modeling/uml-class-diagrams-reference.md)  
   
--   [UML 클래스 다이어그램: 지침](../modeling/uml-class-diagrams-guidelines.md)  
+- [UML 클래스 다이어그램: 지침](../modeling/uml-class-diagrams-guidelines.md)  
   
--   [UML 클래스 다이어그램 특성의 속성](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
+- [UML 클래스 다이어그램 특성의 속성](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
   
--   [UML 클래스 다이어그램 작업의 속성](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
+- [UML 클래스 다이어그램 작업의 속성](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
   
--   [UML 클래스 다이어그램 연결의 속성](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
+- [UML 클래스 다이어그램 연결의 속성](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
   
 ## <a name="properties"></a>속성  
  클래스, 인터페이스 또는 열거형의 속성입니다.  
@@ -49,7 +46,7 @@ UML 클래스 다이어그램에는 *형식* 클래스, 인터페이스 또는 �
 |**Property**|**기본**|표시되는 위치|설명|  
 |------------------|-----------------|----------------|-----------------|  
 |**이름**|기본 이름|모든 요소|요소를 식별합니다.|  
-|**정규화 된 이름**|패키지 :: 형식 이름 포함|모든 요소|요소를 고유하게 식별합니다. 요소를 포함하는 패키지의 정규화된 이름이 접두사로 추가됩니다.|  
+|**정규화 된 이름**|패키지를 포함:: 형식 이름|모든 요소|요소를 고유하게 식별합니다. 요소를 포함하는 패키지의 정규화된 이름이 접두사로 추가됩니다.|  
 |**색**|해당 종류의 형식에 대한 기본값|모든 요소|이 모양의 색입니다. 다른 속성과 달리 기본 모델 요소의 속성이 아닙니다. 동일한 형식의 다른 뷰는 서로 다른 색을 가질 수 있습니다.|  
 |**추상 클래스**|False|클래스|true이면 클래스를 인스턴스화할 수 없으며, 기본 클래스로 사용됩니다.|  
 |**리프는**|False|클래스, 인터페이스|true이면 형식이 파생 형식을 가질 수 없습니다.|  
@@ -65,6 +62,3 @@ UML 클래스 다이어그램에는 *형식* 클래스, 인터페이스 또는 �
  [UML 클래스 다이어그램 작업의 속성](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
  [UML 클래스 다이어그램 연결의 속성](../modeling/properties-of-associations-on-uml-class-diagrams.md)   
  [UML 클래스 다이어그램: 지침](../modeling/uml-class-diagrams-guidelines.md)
-
-
-

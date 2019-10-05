@@ -1,8 +1,6 @@
 ---
 title: 메모리 목록 표시 명령
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.listmemory
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: a84de361-a6a6-4f6d-96aa-a0d4a424371e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57d6c8c7821df8bd22723900ebd011c110a1857f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d6d0b694f9703c6260d95ad03e085fcdf774dc52
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815184"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919135"
 ---
 # <a name="list-memory-command"></a>메모리 목록 표시 명령
 지정된 메모리 범위의 내용을 표시합니다.
@@ -34,41 +32,41 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 ```
 
 ## <a name="arguments"></a>인수
- `expression`
+`expression`
 
- 선택 사항입니다. 메모리를 표시하기 시작할 메모리 주소입니다.
+선택 사항입니다. 메모리를 표시하기 시작할 메모리 주소입니다.
 
 ## <a name="switches"></a>스위치
- /ANSI&#124;Unicode
+/ANSI&#124;Unicode
 
- 선택 사항입니다. 메모리에 해당하는 문자(ANSI 또는 유니코드)로 메모리를 표시합니다.
+선택 사항입니다. 메모리에 해당하는 문자(ANSI 또는 유니코드)로 메모리를 표시합니다.
 
- /Count:`number`
+/Count:`number`
 
- 선택 사항입니다. `expression`에서 시작하여 표시할 메모리의 바이트 수를 결정합니다.
+선택 사항입니다. `expression`에서 시작하여 표시할 메모리의 바이트 수를 결정합니다.
 
- /Format:`formattype`
+/Format:`formattype`
 
- 선택 사항입니다. **메모리** 창에서 메모리 정보를 볼 형식(OneByte, TwoBytes, FourBytes, EightBytes, Float(32비트) 또는 Double(64비트))을 지정합니다. OneByte를 사용하는 경우 `/Unicode`를 사용할 수 없습니다.
+선택 사항입니다. **메모리** 창에서 메모리 정보를 볼 형식(OneByte, TwoBytes, FourBytes, EightBytes, Float(32비트) 또는 Double(64비트))을 지정합니다. OneByte를 사용하는 경우 `/Unicode`를 사용할 수 없습니다.
 
- /Hex&#124;Signed&#124;Unsigned
+/Hex&#124;Signed&#124;Unsigned
 
- 선택 사항입니다. 서명됨, 서명하지 않음 또는 16진수로 숫자를 볼 형식을 지정합니다.
+선택 사항입니다. 서명됨, 서명하지 않음 또는 16진수로 숫자를 볼 형식을 지정합니다.
 
 ## <a name="remarks"></a>설명
- 모든 스위치를 포함한 전체 **Debug.ListMemory** 명령을 작성하는 대신 특정 스위치를 지정된 값으로 미리 설정한 미리 정의된 별칭을 사용하여 명령을 호출할 수 있습니다. 예를 들어, 다음을 입력하는 대신
+모든 스위치를 포함한 전체 **Debug.ListMemory** 명령을 작성하는 대신 특정 스위치를 지정된 값으로 미리 설정한 미리 정의된 별칭을 사용하여 명령을 호출할 수 있습니다. 예를 들어, 다음을 입력하는 대신
 
 ```cmd
 >Debug.ListMemory /Format:float /Count:30 /Unicode
 ```
 
- 다음과 같이 작성할 수 있습니다.
+다음과 같이 작성할 수 있습니다.
 
 ```cmd
 >df /Count:30 /Unicode
 ```
 
- **Debug.ListMemory** 명령에 사용할 수 있는 별칭 목록은 다음과 같습니다.
+**Debug.ListMemory** 명령에 사용할 수 있는 별칭 목록은 다음과 같습니다.
 
 |Alias|명령 및 스위치|
 |-----------| - |

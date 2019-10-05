@@ -1,8 +1,6 @@
 ---
-title: 코드 분석을 위한 예제 c + + 프로젝트
+title: 코드 분석을 위한 샘플 C++ 프로젝트
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: sample
 helpviewer_keywords:
 - demo sample [Visual Studio ALM]
@@ -13,60 +11,60 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: aafbaaf682852adaea8f20a1373ea1ae4b025fad
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
-ms.translationtype: MT
+ms.openlocfilehash: ad28cae5e548a35e0166e1d8ed451450264241f7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820794"
 ---
-# <a name="sample-c-project-for-code-analysis"></a>코드 분석을 위한 예제 c + + 프로젝트
+# <a name="sample-c-project-for-code-analysis"></a>코드 분석을 위한 샘플 C++ 프로젝트
 
-이 다음 절차에 대 한 예제를 만드는 방법을 보여 줍니다. [연습: 분석 C/c + + 코드 오류에 대 한](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md)합니다. 절차 만들기:
+다음 절차에서는 [연습: 오류에 대한 C/C++ 코드 분석](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md)의 예제를 만드는 방법을 보여줍니다. 이 절차에서는 다음을 생성합니다.
 
-- Visual Studio 솔루션 이름이 CppDemo입니다.
+- CppDemo라는 Visual Studio 솔루션
 
-- 정적 라이브러리 프로젝트 이름이 CodeDefects입니다.
+- CodeDefects라는 정적 라이브러리 프로젝트
 
-- 정적 라이브러리 프로젝트 이름이 주석입니다.
+- Annotations라는 정적 라이브러리 프로젝트
 
-절차는 헤더에 대 한도 코드를 제공 하 고 *.cpp* 정적 라이브러리에 대 한 파일입니다.
+절차에서는 헤더에 대해 코드를 제공하고, 정적 라이브러리에 대해 *.cpp* 파일을 제공합니다.
 
-## <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>CppDemo 솔루션과 CodeDefects 프로젝트 만들기
+## <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>CppDemo 솔루션 및 CodeDefects 프로젝트 만들기
 
-1. 클릭는 **파일** 메뉴에서 **새로**, 클릭 하 고 **새 프로젝트**합니다.
+1. **파일** 메뉴를 클릭하고, **새로 만들기**를 가리킨 다음, **새 프로젝트**를 클릭합니다.
 
-2. 에 **프로젝트 형식** 목록 트리, Visual c + + VS의 기본 언어가 없는 경우 확장 **다른 언어**합니다.
+2. **프로젝트 형식** 트리 목록에서 Visual C++가 VS의 기본 언어가 아닌 경우 **다른 언어**를 확장합니다.
 
-3. 확장 **Visual c + +**, 클릭 하 고 **일반**합니다.
+3. **Visual C++** 를 확장한 다음, **일반**을 클릭합니다.
 
-4. **템플릿**, 클릭 **빈 프로젝트**합니다.
+4. **템플릿**에서 **빈 프로젝트**를 클릭합니다.
 
-5. 에 **이름** 텍스트 상자에서 **CodeDefects**합니다.
+5. **이름** 텍스트 상자에 **CodeDefects**를 입력합니다.
 
-6. 선택 된 **솔루션용 디렉터리 만들기** 확인란 합니다.
+6. **솔루션용 디렉터리 만들기** 확인란을 선택합니다.
 
-7. 에 **솔루션 이름** 텍스트 상자에서 **CppDemo**합니다.
+7. **솔루션 이름** 텍스트 상자에 **CppDemo**를 입력합니다.
 
-## <a name="configure-the-codedefects-project-as-a-static-library"></a>정적 라이브러리 CodeDefects 프로젝트를 구성 하는 중
+## <a name="configure-the-codedefects-project-as-a-static-library"></a>정적 라이브러리 형태로 CodeDefects 프로젝트 구성
 
-1. 솔루션 탐색기에서 마우스 오른쪽 단추로 클릭 **CodeDefects** 클릭 하 고 **속성**합니다.
+1. 솔루션 탐색기에서 **CodeDefects**를 마우스 오른쪽 단추로 클릭한 다음, **속성**을 클릭합니다.
 
-2. 확장 **구성 속성** 클릭 하 고 **일반**합니다.
+2. **구성 속성**을 확장한 다음, **일반**을 클릭합니다.
 
-3. 에 **일반** 목록에서 열에서 옆에 텍스트를 선택 **대상 확장명**, 한 다음 입력 **.lib**합니다.
+3. **일반** 목록의 **대상 확장** 옆에 있는 열에서 텍스트를 선택한 다음, **.lib**를 입력합니다.
 
-4. **프로젝트 기본값**, 해당 열 옆에 클릭 **구성 유형**, 클릭 하 고 **정적 라이브러리 (.lib)** 합니다.
+4. **프로젝트 기본값**의 **구성 형식** 옆에 있는 열을 클릭한 다음, **정적 라이브러리(.lib)** 를 클릭합니다.
 
-## <a name="add-the-header-and-source-file-to-the-codedefects-project"></a>CodeDefects 프로젝트는 헤더 및 원본 파일을 추가
+## <a name="add-the-header-and-source-file-to-the-codedefects-project"></a>CodeDefects 프로젝트에 헤더 및 원본 파일 추가
 
-1. 솔루션 탐색기에서 확장 **CodeDefects**를 마우스 오른쪽 단추로 클릭 **헤더 파일**, 클릭 **추가**, 클릭 하 고 **새 항목**합니다.
+1. 솔루션 탐색기에서 **CodeDefects**를 확장하고, **헤더 파일**을 마우스 오른쪽 단추로 클릭하고, **추가**를 클릭한 다음, **새 항목**을 클릭합니다.
 
-2. 에 **새 항목 추가** 대화 상자를 클릭 **코드**, 클릭 하 고 **헤더 파일 (.h)** 합니다.
+2. **새 항목 추가** 대화 상자에서 **코드**를 클릭한 다음, **헤더 파일(.h)** 을 클릭합니다.
 
-3. 에 **이름** 상자에 입력 합니다 **Bug.h** 클릭 하 고 **추가**합니다.
+3. **이름** 상자에 **Bug.h**를 입력한 다음, **추가**를 클릭합니다.
 
-4. 다음 코드를 복사 하 고에 붙여 넣은 *Bug.h* Visual Studio 편집기에서 파일입니다.
+4. 다음 코드를 복사하고, Visual Studio 편집기에서 *Bug.h* 파일에 붙여넣습니다.
 
     ```cpp
     #include <windows.h>
@@ -88,13 +86,13 @@ ms.locfileid: "33704865"
     const int ACCOUNT_DOMAIN_LEN = 128;
     ```
 
-5. 솔루션 탐색기에서 마우스 오른쪽 단추로 클릭 **소스 파일**, 가리킨 **새로**, 클릭 하 고 **새 항목**합니다.
+5. 솔루션 탐색기에서 **원본 파일**을 마우스 오른쪽 단추로 클릭하고, **새로 만들기**를 가리킨 다음, **새 항목**을 클릭합니다.
 
-6. 에 **새 항목 추가** 대화 상자를 클릭 하 여 **c + + 파일 (.cpp)**
+6. **새 항목 추가** 대화 상자에서 **C++ 파일(.cpp)** 을 클릭합니다.
 
-7. 에 **이름** 상자에 입력 합니다 **Bug.cpp** 클릭 하 고 **추가**합니다.
+7. **이름** 상자에 **Bug.cpp**를 입력한 다음, **추가**를 클릭합니다.
 
-8. 다음 코드를 복사 하 고에 붙여 넣은 *Bug.cpp* Visual Studio 편집기에서 파일입니다.
+8. 다음 코드를 복사하고, Visual Studio 편집기에서 *Bug.cpp* 파일에 붙여넣습니다.
 
     ```cpp
     #include <stdlib.h>
@@ -154,33 +152,33 @@ ms.locfileid: "33704865"
     }
     ```
 
-9. 클릭는 **파일** 메뉴를 차례로 클릭 **모두 저장**합니다.
+9. **파일** 메뉴를 클릭한 다음, **모두 저장**을 클릭합니다.
 
-## <a name="add-the-annotations-project-and-configure-it-as-a-static-library"></a>주석 프로젝트를 추가 하 고 정적 라이브러리로 구성
+## <a name="add-the-annotations-project-and-configure-it-as-a-static-library"></a>주석 프로젝트 추가 및 정적 라이브러리로 구성
 
-1. 솔루션 탐색기에서 클릭 **CppDemo**, 가리킨 **추가**, 클릭 하 고 **새 프로젝트**합니다.
+1. 솔루션 탐색기에서 **CppDemo**를 클릭하고, **추가**를 가리킨 다음, **새 프로젝트**를 클릭합니다.
 
-2. 에 **새 프로젝트 추가** 대화 상자, Visual c + +, 클릭 **일반**, 클릭 하 고 **빈 프로젝트**합니다.
+2. **새 프로젝트** 대화 상자에서 Visual C#을 확장하고, **일반**을 클릭한 다음, **빈 프로젝트**를 클릭합니다.
 
-3. 에 **이름** 텍스트 상자에서 **주석**, 클릭 하 고 **추가**합니다.
+3. **이름** 텍스트 상자에 **주석**을 입력한 다음, **추가**를 클릭합니다.
 
-4. 솔루션 탐색기에서 마우스 오른쪽 단추로 클릭 **주석** 클릭 하 고 **속성**합니다.
+4. 솔루션 탐색기에서 **주석**을 마우스 오른쪽 단추로 클릭한 다음, **속성**을 클릭합니다.
 
-5. 확장 **구성 속성** 클릭 하 고 **일반**합니다.
+5. **구성 속성**을 확장한 다음, **일반**을 클릭합니다.
 
-6. 에 **일반** 목록에서 열에서 옆에 텍스트를 선택 **대상 확장명**, 한 다음 입력 **.lib**합니다.
+6. **일반** 목록의 **대상 확장** 옆에 있는 열에서 텍스트를 선택한 다음, **.lib**를 입력합니다.
 
-7. **프로젝트 기본값**, 해당 열 옆에 클릭 **구성 유형**, 클릭 하 고 **정적 라이브러리 (.lib)** 합니다.
+7. **프로젝트 기본값**의 **구성 형식** 옆에 있는 열을 클릭한 다음, **정적 라이브러리(.lib)** 를 클릭합니다.
 
-## <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>소스 파일과 헤더 파일 주석 프로젝트에 추가
+## <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>주석 프로젝트에 헤더 파일 및 원본 파일 추가
 
-1. 솔루션 탐색기에서 확장 **주석**를 마우스 오른쪽 단추로 클릭 **헤더 파일**, 클릭 **추가**, 클릭 하 고 **새 항목**합니다.
+1. 솔루션 탐색기에서 **주석**을 확장하고, **헤더 파일**을 마우스 오른쪽 단추로 클릭하고, **추가**를 클릭한 다음, **새 항목**을 클릭합니다.
 
-2. 에 **새 항목 추가** 대화 상자를 클릭 **헤더 파일 (.h)** 합니다.
+2. **새 항목 추가** 대화 상자에서 **헤더 파일(.h)** 을 클릭합니다.
 
-3. 에 **이름** 상자에 입력 합니다 **annotations.h** 클릭 하 고 **추가**합니다.
+3. **이름** 상자에 **annotations.h**를 입력한 다음, **추가**를 클릭합니다.
 
-4. 다음 코드를 복사 하 고에 붙여 넣은 *annotations.h* Visual Studio 편집기에서 파일입니다.
+4. 다음 코드를 복사하고, Visual Studio 편집기에서 *annotations.h* 파일에 붙여넣습니다.
 
     ```cpp
     #include <CodeAnalysis/SourceAnnotations.h>
@@ -197,13 +195,13 @@ ms.locfileid: "33704865"
 
     ```
 
-5. 솔루션 탐색기에서 마우스 오른쪽 단추로 클릭 **소스 파일**, 가리킨 **새로**, 클릭 하 고 **새 항목**합니다.
+5. 솔루션 탐색기에서 **원본 파일**을 마우스 오른쪽 단추로 클릭하고, **새로 만들기**를 가리킨 다음, **새 항목**을 클릭합니다.
 
-6. 에 **새 항목 추가** 대화 상자를 클릭 **코드** 클릭 하 고 **c + + 파일 (.cpp)**
+6. **새 항목 추가** 대화 상자에서 **코드**를 클릭한 다음, **C++ 파일(.cpp)** 을 클릭합니다.
 
-7. 에 **이름** 상자에 입력 합니다 **annotations.cpp** 클릭 하 고 **추가**합니다.
+7. **이름** 상자에 **annotations.cpp**를 입력한 다음, **추가**를 클릭합니다.
 
-8. 다음 코드를 복사 하 고에 붙여 넣은 *annotations.cpp* Visual Studio 편집기에서 파일입니다.
+8. 다음 코드를 복사하고, Visual Studio 편집기에서 *annotations.cpp* 파일에 붙여넣습니다.
 
     ```cpp
     #include <CodeAnalysis/SourceAnnotations.h>
@@ -232,4 +230,4 @@ ms.locfileid: "33704865"
 
     ```
 
-9. 클릭는 **파일** 메뉴를 차례로 클릭 **모두 저장**합니다.
+9. **파일** 메뉴를 클릭한 다음, **모두 저장**을 클릭합니다.

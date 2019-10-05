@@ -11,17 +11,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, troubleshooting
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e72b1f8a7ca76aa2b3afd68041c500b24efd8db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bab7f45824def7a4b5a385381a4789b7adc276d0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53957964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008089"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>SharePoint 솔루션 문제 해결
   다음 문제 또는 경고를 사용 하 여 SharePoint 솔루션을 디버깅할 때 발생할 수 있습니다는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 디버거. 자세한 내용은 [SharePoint 2007 워크플로 솔루션 디버깅](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247)합니다.
@@ -115,9 +115,9 @@ ms.locfileid: "53957964"
 
 ##### <a name="to-reenter-the-workflow-wizard"></a>워크플로 마법사를 다시 입력
 
-1.  **솔루션 탐색기**에서 워크플로 노드를 선택 합니다.
+1. **솔루션 탐색기**에서 워크플로 노드를 선택 합니다.
 
-2.  에 **속성** 창의 줄임표 단추가 있는 임의의 속성에서 줄임표 (...) 단추를 선택 합니다.
+2. 에 **속성** 창의 줄임표 단추가 있는 임의의 속성에서 줄임표 (...) 단추를 선택 합니다.
 
 ## <a name="user-must-refresh-application-page-in-browser-while-debugging-to-view-updated-image"></a>사용자는 브라우저에서 응용 프로그램 페이지를 새로 고침 해야 업데이트 된 이미지를 보려면 디버그 하는 동안
  와 같은 이미지를 표시 하는 컨트롤을 사용 하 여 응용 프로그램 페이지를 포함 하는 SharePoint 솔루션 디버깅 하는 경우는 [!INCLUDE[TLA2#tla_html](../sharepoint/includes/tla2sharptla-html-md.md)] 이미지 컨트롤을 이미지에 대 한 모든 변경 사항을 표시 하려면 브라우저에서 페이지를 새로 고침 해야 합니다.
@@ -127,13 +127,13 @@ ms.locfileid: "53957964"
 
 ### <a name="error-message"></a>오류 메시지
 
--   SharePoint 사이트 위치가 올바르지 않습니다.
+- SharePoint 사이트 위치가 올바르지 않습니다.
 
 ### <a name="resolution"></a>해결
 
--   [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]을 설치합니다.
+- [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]을 설치합니다.
 
--   SharePoint 웹 사이트에 관리자 액세스할 수 있는지 확인 합니다. 자세한 내용은 참조는 [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] 온라인 문서 [할당 하거나 SharePoint Server의 서비스 응용 프로그램의 관리자가 제거](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications)합니다.
+- SharePoint 웹 사이트에 관리자 액세스할 수 있는지 확인 합니다. 자세한 내용은 참조는 [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] 온라인 문서 [할당 하거나 SharePoint Server의 서비스 응용 프로그램의 관리자가 제거](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications)합니다.
 
 ## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>이벤트 수신기가 프로젝트의 사이트 삭제 웹 이벤트가 발생 하지 않습니다.
  이벤트 수신기 프로젝트를 만들고 "사이트 삭제 되 고"와 같은 특정 웹 이벤트를 선택 하면 이벤트가 발생 하지 않습니다.
@@ -156,46 +156,46 @@ ms.locfileid: "53957964"
 
 ##### <a name="to-change-the-feature-scope-of-the-event-receiver"></a>이벤트 수신기의 기능 범위를 변경 하려면
 
-1.  **솔루션 탐색기**, 이벤트 수신기를 열고 *.feature* 파일을 **기능 디자이너** 파일을 두 번 클릭 하거나 바로 가기 메뉴를 열고 하 여 차례로 선택 **열려**합니다.
+1. **솔루션 탐색기**, 이벤트 수신기를 열고 *.feature* 파일을 **기능 디자이너** 파일을 두 번 클릭 하거나 바로 가기 메뉴를 열고 하 여 차례로 선택 **열려**합니다.
 
-2.  옆의 화살표를 선택 **범위**를 선택한 후 **사이트** 나타나는 목록에서.
+2. 옆의 화살표를 선택 **범위**를 선택한 후 **사이트** 나타나는 목록에서.
 
 ## <a name="deployment-error-appears-after-the-name-of-an-identifier-in-a-business-data-connectivity-model-project-is-changed"></a>비즈니스 데이터 연결 모델 프로젝트에 있는 식별자의 이름 변경 된 후 배포 오류가 나타남
  비즈니스 데이터 연결 (BDC) 모델의 엔터티 식별자 이름을 변경 하 고 솔루션을 배포 하려고 하는 경우이 문제가 발생 합니다.
 
 ### <a name="error-messages"></a>오류 메시지
 
--   \<*모델 이름*>에 다음 외부 콘텐츠 형식 활성화 오류가 발생 했습니다...
+- \<*모델 이름*>에 다음 외부 콘텐츠 형식 활성화 오류가 발생 했습니다...
 
--   이름의 IMetadataObject '\<*모델 이름*>'에 'name' 필드가 중복 된 값이 포함 하는 중...
+- 이름의 IMetadataObject '\<*모델 이름*>'에 'name' 필드가 중복 된 값이 포함 하는 중...
 
 ### <a name="resolution"></a>해결
  이 문제를 해결 하려면 모델을 수동으로 삭제 하 고 솔루션을 다시 배포 합니다.  다음 도구 중 하나를 사용 하 여 모델을 삭제할 수 있습니다.
 
--   SharePoint 2010 중앙 관리 합니다. 자세한 내용은 [BDC 모델 관리](http://go.microsoft.com/fwlink/?LinkID=181472) Microsoft TechNet 웹 사이트입니다.
+- SharePoint 2010 중앙 관리 합니다. 자세한 내용은 [BDC 모델 관리](http://go.microsoft.com/fwlink/?LinkID=181472) Microsoft TechNet 웹 사이트입니다.
 
--   Windows PowerShell. 명령 프롬프트에서이 명령을 입력 하 여 모델을 삭제할 수 있습니다. **제거-SPBusinessDataCatalogModel**합니다. 자세한 내용은 [일반 cmdlet (SharePoint Server 2010)](http://go.microsoft.com/fwlink/?LinkID=182375) Microsoft TechNet 웹 사이트입니다.
+- Windows PowerShell. 명령 프롬프트에서이 명령을 입력 하 여 모델을 삭제할 수 있습니다. **Remove-SPBusinessDataCatalogModel**. 자세한 내용은 [일반 cmdlet (SharePoint Server 2010)](http://go.microsoft.com/fwlink/?LinkID=182375) Microsoft TechNet 웹 사이트입니다.
 
 ## <a name="an-error-appears-when-you-try-to-view-a-visual-web-part-in-sharepoint"></a>Sharepoint에서 비주얼 웹 파트를 보려고 할 때 오류가 표시 됩니다.
  이 문제가 발생 하면를 **경로** 사용자 정의 컨트롤의 속성 문자열을 사용 하 여 시작 하지 않습니다 "CONTROLTEMPLATES\\" 합니다.
 
 ### <a name="error-messages"></a>오류 메시지
 
--   파일 ' /_CONTROLTEMPLATES/*\<프로젝트 이름 >*/*\<웹 파트 이름 >*/*\<사용자 정의 컨트롤 이름 >*.ascx'가 없습니다.
+- 파일 ' /_CONTROLTEMPLATES/ *\<프로젝트 이름 >* / *\<웹 파트 이름 >* / *\<사용자 정의 컨트롤 이름 >* .ascx'가 없습니다.
 
--   '/' 응용 프로그램에 서버 오류가 발생 했습니다.
+- '/' 응용 프로그램에 서버 오류가 발생 했습니다.
 
 ### <a name="resolution"></a>해결
 
 ##### <a name="to-resolve-this-issue"></a>이 문제를 해결 하려면
 
-1.  **솔루션 탐색기**, 해당 파일 이름 확장명은 사용자 컨트롤 파일을 *.ascx*합니다.
+1. **솔루션 탐색기**, 해당 파일 이름 확장명은 사용자 컨트롤 파일을 *.ascx*합니다.
 
-2.  메뉴 모음에서 선택 **뷰** > **속성 창**합니다.
+2. 메뉴 모음에서 선택 **뷰** > **속성 창**합니다.
 
-3.  에 **속성** 창에서 확장을 **배포 위치** 노드.
+3. 에 **속성** 창에서 확장을 **배포 위치** 노드.
 
-4.  값을 확인 합니다 **경로** 된 문자열로 시작 하는 속성 "CONTROLTEMPLATES\\"입니다.
+4. 값을 확인 합니다 **경로** 된 문자열로 시작 하는 속성 "CONTROLTEMPLATES\\"입니다.
 
 ## <a name="error-appears-when-an-imported-reusable-workflow-that-contains-a-task-form-field-is-run"></a>작업 양식 필드를 포함 하는 가져온된 재사용 가능한 워크플로 실행할 때 오류가 표시 됩니다.
  필드에 있는 태스크 폼을 포함 하는 워크플로 가져오고 다음 가져온 원본 동일한 시스템에서 새 워크플로 실행 하는 경우이 문제가 발생 합니다.
@@ -223,33 +223,33 @@ ms.locfileid: "53957964"
  에 중단점을 설정 하는 경우이 문제가 발생을 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 솔루션을 선택 합니다 **F5** 실행 한 다음 90 초 넘게 중단점에 머무르는 키.
 
 ### <a name="error-message"></a>오류 메시지
- 웹 서버 프로세스를 디버깅 하 고 있는 인터넷 정보 서비스 (IIS)에서 종료 되었습니다. IIS에서 응용 프로그램 풀 ping 설정을 구성하여 이 문제를 방지할 수 있습니다. 참조 추가 세부 정보에 대 한 도움말입니다.
+ 웹 서버 프로세스를 디버깅 하 고 있는 인터넷 정보 서비스 (IIS)에서 종료 되었습니다. IIS에서 애플리케이션 풀 ping 설정을 구성하여 이 문제를 방지할 수 있습니다. 참조 추가 세부 정보에 대 한 도움말입니다.
 
 ### <a name="resolution"></a>해결
  기본적으로 IIS 응용 프로그램 풀에는 응용 프로그램 닫기 전에 응답 응용 프로그램에 대 한 90 초 동안 기다립니다. 이 프로세스는 응용 프로그램을 "ping" 이라고 합니다. 이 문제를 해결 하려면 대기 시간을 늘리려면 또는 ping을 완전히 응용 프로그램을 사용 하지 않도록 설정 합니다.
 
 ##### <a name="to-access-the-iis-app-pool-settings"></a>IIS 앱 풀 설정에 액세스 하려면
 
-1.  IIS 관리자를 엽니다.
+1. IIS 관리자를 엽니다.
 
-2.  에 **연결** 창, SharePoint 서버 노드를 확장 한 다음 선택 합니다 **응용 프로그램 풀** 노드.
+2. 에 **연결** 창, SharePoint 서버 노드를 확장 한 다음 선택 합니다 **응용 프로그램 풀** 노드.
 
-3.  에 **응용 프로그램 풀** 페이지에서 SharePoint 응용 프로그램 풀 (대개 "SharePoint-80")를 선택를 선택한 후를 **작업** 창 선택 합니다 **고급 설정** 링크입니다.
+3. 에 **응용 프로그램 풀** 페이지에서 SharePoint 응용 프로그램 풀 (대개 "SharePoint-80")를 선택를 선택한 후를 **작업** 창 선택 합니다 **고급 설정** 링크입니다.
 
-4.  IIS 시간 제한 전에 대기 시간을 늘리려면 값을 변경 **Ping 최대 응답 시간 (초)** 90 초 보다 큰 값으로.
+4. IIS 시간 제한 전에 대기 시간을 늘리려면 값을 변경 **Ping 최대 응답 시간 (초)** 90 초 보다 큰 값으로.
 
-5.  Ping을 실행 하는 IIS를 사용 하지 않으려면 설정할 **Ping 사용** 하 **False**합니다.
+5. Ping을 실행 하는 IIS를 사용 하지 않으려면 설정할 **Ping 사용** 하 **False**합니다.
 
 ## <a name="auto-retract-leaves-orphaned-list-instance-in-sharepoint"></a>SharePoint에서 분리 된 목록 인스턴스를 떠날 자동 취소
  다음 단계를 수행 하는 경우이 문제가 발생 합니다.
 
-1.  있는 목록 인스턴스와 목록 정의 만들기 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]합니다.
+1. 있는 목록 인스턴스와 목록 정의 만들기 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]합니다.
 
-2.  선택 된 **F5** 키를 눌러 솔루션을 실행 합니다.
+2. 선택 된 **F5** 키를 눌러 솔루션을 실행 합니다.
 
-3.  디버깅을 중지 하거나 SharePoint 사이트를 닫습니다.
+3. 디버깅을 중지 하거나 SharePoint 사이트를 닫습니다.
 
-4.  SharePoint 사이트를 다시 열 및 목록 인스턴스를 엽니다.
+4. SharePoint 사이트를 다시 열 및 목록 인스턴스를 엽니다.
 
 ### <a name="error-message"></a>오류 메시지
  '/' 응용 프로그램에 서버 오류가 발생 했습니다.
@@ -275,7 +275,7 @@ ms.locfileid: "53957964"
  Web.config 구성 파일을 로드 하지 못했습니다. 잘못 된 형식의 XML 요소에 대 한 파일을 확인 하 고 다시 시도 합니다. 다음 오류가 발생했습니다. 지정 된 키가 사전에 없는 합니다.
 
 ### <a name="resolution"></a>해결
- 이 문제를 해결하려면 Visual Studio에서 SharePoint 프로젝트의 사이트 URL 속성 값이 웹 응용 프로그램의 대체 액세스 매핑에 대한 기본 영역에 할당된 URL과 일치하는지 확인합니다. 인트라넷 등의 다른 영역을 URL에 사용하여 오류를 해결할 수 없습니다. 프로젝트의 사이트 URL과 기본 영역의 URL은 일치해야 합니다. 대체 액세스 매핑에 액세스 하려면 SharePoint 2010 중앙 관리 유틸리티를 열어를 선택 합니다 **응용 프로그램 관리** 링크를 차례로 **웹 응용 프로그램**, 선택는  **대체 액세스 매핑 구성** 링크 합니다. 자세한 내용은 [웹 응용 프로그램에 대 한 영역을 만들](http://go.microsoft.com/fwlink/?LinkId=192274)합니다.
+ 이 문제를 해결하려면 Visual Studio에서 SharePoint 프로젝트의 사이트 URL 속성 값이 웹 애플리케이션의 대체 액세스 매핑에 대한 기본 영역에 할당된 URL과 일치하는지 확인합니다. 인트라넷 등의 다른 영역을 URL에 사용하여 오류를 해결할 수 없습니다. 프로젝트의 사이트 URL과 기본 영역의 URL은 일치해야 합니다. 대체 액세스 매핑에 액세스 하려면 SharePoint 2010 중앙 관리 유틸리티를 열어를 선택 합니다 **응용 프로그램 관리** 링크를 차례로 **웹 응용 프로그램**, 선택는  **대체 액세스 매핑 구성** 링크 합니다. 자세한 내용은 [웹 응용 프로그램에 대 한 영역을 만들](http://go.microsoft.com/fwlink/?LinkId=192274)합니다.
 
 ## <a name="see-also"></a>참고자료
 

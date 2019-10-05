@@ -1,14 +1,9 @@
 ---
 title: SccBeginBatch 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccBeginBatch
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 33968183-2e15-4e0d-955b-ca12212d1c25
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 31064e0bc746ecc6fb67f5e2feacbd9ae91ca7bd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 264d9057bf4f17281d6d8a16ed3a6794004e0e21
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724354"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189552"
 ---
 # <a name="sccbeginbatch-function"></a>SccBeginBatch 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ SCCRTN SccBeginBatch(void);
 ## <a name="return-value"></a>반환 값  
  원본 제어 플러그 인이 함수의 구현은 다음 값 중 하나를 반환 하:  
   
-|값|설명|  
+|값|Description|  
 |-----------|-----------------|  
 |SCC_OK|일괄 처리 작업을 성공적으로 시작 합니다.|  
 |SCC_E_UNKNOWNERROR|알 수 없는 오류가 발생 했습니다.|  
@@ -51,7 +46,6 @@ SCCRTN SccBeginBatch(void);
   
  일괄 처리 작업을 적용 하는 동안 소스 제어 플러그 인 사용자에 게 최대 모든 질문에 대 한 하나의 대화 상자를 표시 하 고 모든 후속 작업에서 해당 대화 상자에서 응답을 적용 해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [원본 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)   
  [SccEndBatch](../extensibility/sccendbatch-function.md)
-

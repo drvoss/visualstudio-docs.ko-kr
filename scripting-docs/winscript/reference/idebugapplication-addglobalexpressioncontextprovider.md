@@ -2,7 +2,6 @@
 title: IDebugApplication::AddGlobalExpressionContextProvider | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1cf88dfac1d102ace3f132e7ab61265c704c0b18
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 278811ae7c7f853396efb5f41a92a5350176943a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725383"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62991102"
 ---
 # <a name="idebugapplicationaddglobalexpressioncontextprovider"></a>IDebugApplication::AddGlobalExpressionContextProvider
-이 응용 프로그램 글로벌 식 컨텍스트 공급자를 추가합니다.  
+이 응용 프로그램 전역 식 컨텍스트 공급자를 추가합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT AddGlobalExpressionContextProvider(  
    IProvideExpressionContexts*  pdsfs,  
    DWORD_PTR*                   pdwCookie  
@@ -39,7 +38,7 @@ HRESULT AddGlobalExpressionContextProvider(
   
 #### <a name="parameters"></a>매개 변수  
  `pdsfs`  
- [in] 이 응용 프로그램에 추가할 전역 컨텍스트 공급자입니다.  
+ [in] 전역 컨텍스트 공급자에서이 응용 프로그램에 추가 합니다.  
   
  `pdwCookie`  
  [out] 응용 프로그램에서이 전역 식 컨텍스트 공급자를 제거 하는 데 사용 되는 쿠키입니다.  
@@ -52,7 +51,7 @@ HRESULT AddGlobalExpressionContextProvider(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는이 응용 프로그램 글로벌 식 컨텍스트 공급자를 추가합니다.  
+ 이 메서드는이 응용 프로그램 전역 식 컨텍스트 공급자를 추가합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugApplication 인터페이스](../../winscript/reference/idebugapplication-interface.md)   

@@ -1,8 +1,6 @@
 ---
 title: C++ Core Guidelines에 대한 정보
 ms.date: 03/22/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 helpviewer_keywords:
 - code analysis, C++ core check
@@ -12,16 +10,16 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c11386dcd742e64737a4b06f2db9f55145f535d7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0b725d0ee49590062ebdde9a1ef27f838678ccf5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62540796"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>C++ Core Guidelines에 대한 정보
 
-이 섹션에서는 C++ 핵심 지침 검사기 경고를 나열합니다. 코드 분석에 대 한 자세한 내용은 [/analyze (코드 분석)](/cpp/build/reference/analyze-code-analysis) 하 고 [빠른 시작: C/C++ 용 코드 분석](../code-quality/quick-start-code-analysis-for-c-cpp.md)합니다.
+이 섹션에서는 C++ 핵심 지침 검사기 경고를 나열합니다. 코드 분석에 대 한 자세한 내용은 [/analyze (코드 분석)](/cpp/build/reference/analyze-code-analysis) 고 [빠른 시작: C 용 코드 분석 /C++](../code-quality/quick-start-code-analysis-for-c-cpp.md)합니다.
 
 > [!NOTE]
 > 일부 경고 둘 이상의 그룹에 속하고 모든 경고의 경우에 완전 한 참조 항목입니다.
@@ -50,7 +48,7 @@ ms.locfileid: "53053388"
 
 [C26400 NO_RAW_POINTER_ASSIGNMENT](c26400.md) 소유자를 사용 하 여 함수 호출 또는 할당의 결과 할당 하지 마세요\<T >를 원시 포인터 값을 반환; 소유자를 사용 하 여\<T > 대신 합니다. 참조 [C++ Core Guidelines I.11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw)합니다.
 
-[C26401 DONT_DELETE_NON_OWNER](c26401.md) 소유자가 아닌 원시 포인터를 삭제 하지 마십시오\<T>입니다. 참조 [C++ Core Guidelines I.11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw)합니다.
+[C26401 DONT_DELETE_NON_OWNER](c26401.md) 소유자가 아닌 원시 포인터를 삭제 하지 마십시오\<T >입니다. 참조 [C++ Core Guidelines I.11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw)합니다.
 
 [C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT](C26402.md)  는 이동 생성자가 하는 경우 힙 할당 하는 대신 범위 개체를 반환 합니다. 참조 [C++ Core Guidelines R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr)합니다.
 
@@ -67,7 +65,7 @@ ms.locfileid: "53053388"
 [C26481 NO_POINTER_ARITHMETIC](C26481.md) 포인터 산술 연산을 사용 하지 마세요. 범위를 대신 사용 합니다. 참조 [C++ 핵심 지침 합니다 (bounds.1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)합니다.
 
 [C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md)합니다.
-식 '%expr% ': 없는 배열에서 포인터로 감소 합니다. 참조 [C++ 핵심 지침 Bounds.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)합니다.
+식 '%expr% '. 없는 배열에서 포인터로 감소 합니다. 참조 [C++ 핵심 지침 Bounds.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)합니다.
 
 ## <a name="uniquepointer-group"></a>UNIQUE_POINTER 그룹
 
@@ -97,7 +95,7 @@ ms.locfileid: "53053388"
 
 [C26427 NO_GLOBAL_INIT_EXTERNS](C26427.md) 전역 이니셜라이저가 extern 개체 '% 기호 %'에 액세스 합니다. 참조 [C++ Core Guidelines I.22](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#i22-avoid-complex-initialization-of-global-objects)합니다.
 
-[C26444 NO_UNNAMED_RAII_OBJECTS](c26444.md) 사용자 지정 생성 및 소멸을 사용 하 여 개체를 명명 되지 않은 하지 마십시오. 참조 [않습니다 (es.84: 하려고 하지 마세요 () 이름이 없는 지역 변수 선언](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)합니다.
+[C26444 NO_UNNAMED_RAII_OBJECTS](c26444.md) 사용자 지정 생성 및 소멸을 사용 하 여 개체를 명명 되지 않은 하지 마십시오. 참조 [않습니다 (es.84: 안 함 (시도) 이름이 없는 지역 변수 선언](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)합니다.
 
 ## <a name="class-group"></a>클래스 그룹
 
@@ -109,12 +107,9 @@ ms.locfileid: "53053388"
 
 [C26435 SINGLE_VIRTUAL_SPECIFICATION](c26435.md) 함수 '% 기호 %'는 'virtual', 'override' 또는 '최종' 중 하나만 지정 해야 합니다. 참조 [C.128: 가상 함수는 정확히 하나의 가상, 재정의 또는 최종 지정 해야](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)합니다.
 
-
 [C26436 NEED_VIRTUAL_DTOR](C26436.md) 가상 함수를 사용 하 여 ' % 기호 %' 형식에는 두 공용 가상 또는 보호 된 비가상 소멸자 필요 합니다. 참조 [C++ Core Guidelines가 필요 합니다 (c.35](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c35-a-base-class-destructor-should-be-either-public-and-virtual-or-protected-and-nonvirtual)합니다.
 
-
 [C26443 NO_EXPLICIT_DTOR_OVERRIDE](c26443.md) 재정의 소멸자 명시적인 'override' 또는 'virtual' 지정자를 사용 하지 않아야 합니다. 참조 [C.128: 가상 함수는 정확히 하나의 가상, 재정의 또는 최종 지정 해야](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)합니다.
-
 
 ## <a name="type-group"></a>형식 그룹
 
@@ -131,7 +126,7 @@ ms.locfileid: "53053388"
 [C26440 DECLARE_NOEXCEPT](C26440.md) '기호 % %' 함수를 선언할 수 있습니다 `noexcept`합니다. 참조 [C++ Core Guidelines F.6](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept)합니다.
 
 [C26447 DONT_THROW_IN_NOEXCEPT](c26447.md) 선언 **noexcept** 하지만 예외를 throw 할 수 있는 함수를 호출 합니다.
-참조 [C++ Core Guidelines: F.6: 함수가 throw 할 수 있으면 선언 noexcept](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept)합니다.
+참조 [ C++ 핵심 지침:  F.6: 함수가 throw 할 수 있으면 선언 noexcept](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept)합니다.
 
 ## <a name="concurrency-group"></a>동시성 그룹
 
@@ -185,7 +180,7 @@ ms.locfileid: "53053388"
 
 ## <a name="bounds-group"></a>범위 그룹
 
-[C26446 USE_GSL_AT](c26446.md) 사용을 선호 `gsl::at()` 검사 되지 않은 아래 첨자 연산자 대신 합니다. 참조 [C++ Core Guidelines: Bounds.4: 표준 라이브러리 함수 및 범위 선택 되지 않은 형식을 사용 하지 않는](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile)합니다.
+[C26446 USE_GSL_AT](c26446.md) 사용을 선호 `gsl::at()` 검사 되지 않은 아래 첨자 연산자 대신 합니다. 참조 [ C++ 핵심 지침:  Bounds.4: 표준 라이브러리 함수 및 범위 선택 되지 않은 형식을 사용 하지 않는](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile)합니다.
 
 [C26481 NO_POINTER_ARITHMETIC](C26481.md)합니다.
 포인터 산술 연산을 사용 하지 마세요. 범위를 대신 사용 합니다. 참조 [C++ Core 지침 합니다 (bounds.1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
@@ -194,20 +189,19 @@ ms.locfileid: "53053388"
 
 [C26483 STATIC_INDEX_OUT_OF_RANGE](c26483.md) 값 % 값 범위를 벗어납니다 (0, 바인딩된 %) 변수 '% 변수 %'. 배열 범위 내에 있는 상수 식을 사용 하는 배열로 인덱싱. 참조 [C++ Core 지침 Bounds.2](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
 
-[C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md) 식 '%expr% ': 없는 배열에서 포인터로 감소 합니다. 참조 [C++ Core 지침 Bounds.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
+[C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md) 식 '%expr% '. 없는 배열에서 포인터로 감소 합니다. 참조 [C++ Core 지침 Bounds.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
 
 ## <a name="gsl-group"></a>GSL 그룹
 
 [C26445 NO_SPAN_REF](c26445.md) 에 대 한 참조가 `gsl::span` 또는 `std::string_view` 수명 문제를 나타낼 수 있습니다.
-참조 [C++ Core 지침 GSL.view: 뷰](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views)
+참조 [ C++ 지침 GSL.view 핵심: 레이아웃](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views)
 
-[C26446 USE_GSL_AT](c26446.md) 사용을 선호 `gsl::at()` 검사 되지 않은 아래 첨자 연산자 대신 합니다. 참조 [C++ Core Guidelines: Bounds.4: 표준 라이브러리 함수 및 범위 선택 되지 않은 형식을 사용 하지 않는](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile)합니다.
+[C26446 USE_GSL_AT](c26446.md) 사용을 선호 `gsl::at()` 검사 되지 않은 아래 첨자 연산자 대신 합니다. 참조 [ C++ 핵심 지침:  Bounds.4: 표준 라이브러리 함수 및 범위 선택 되지 않은 형식을 사용 하지 않는](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile)합니다.
 
-[C26448 USE_GSL_FINALLY ](c26448.md) 사용해 보세요 `gsl::finally` 사용 되는 최종 동작 합니다. 참조 [C++ Core Guidelines: GSL.util: 유틸리티](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities)합니다.
+[C26448 USE_GSL_FINALLY](c26448.md) 사용해 보세요 `gsl::finally` 사용 되는 최종 동작 합니다. 참조 [ C++ 핵심 지침:  GSL.util: 유틸리티](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities)합니다.
 
 [C26449 NO_SPAN_FROM_TEMPORARY](c26449.md) 
- `gsl::span` 또는 `std::string_view` 임시에서 만든 유효 하지 않게 됩니다 때 임시 무효화 됩니다. 참조 [C++ Core Guidelines: GSL.view: 뷰](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views)합니다.
-
+ `gsl::span` 또는 `std::string_view` 임시에서 만든 유효 하지 않게 됩니다 때 임시 무효화 됩니다. 참조 [ C++ 핵심 지침: GSL.view: 뷰](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views)합니다.
 
 ## <a name="deprecated-warnings"></a>사용 되지 않는 경고
 

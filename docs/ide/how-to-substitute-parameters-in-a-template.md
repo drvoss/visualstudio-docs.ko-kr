@@ -1,8 +1,6 @@
 ---
 title: 프로젝트 및 항목 템플릿에 이름 매개 변수 추가
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - template parameters
@@ -10,13 +8,13 @@ helpviewer_keywords:
 - Visual Studio templates, using parameters
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7dbc27762319538053ecee5d7566d86c998db852
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: cf9a990be3f5e87180967a4f9f274ec79fbc357e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946884"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>방법: 템플릿 매개 변수 대체
 
@@ -26,7 +24,7 @@ ms.locfileid: "53062472"
 
 다음 섹션에서는 네임스페이스의 이름을 "안전한 프로젝트 이름"으로 바꾸도록 템플릿을 수정하는 방법을 보여 줍니다.
 
-## <a name="to-use-a-parameter-to-replace-the-namespace-name"></a>매개 변수를 사용하여 네임스페이스 이름을 바꾸려면
+## <a name="example---namespace-name"></a>예 - 네임스페이스 이름
 
 1. 템플릿의 하나 이상 코드 파일에 매개 변수를 삽입합니다. 예:
 

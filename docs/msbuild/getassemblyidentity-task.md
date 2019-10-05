@@ -1,8 +1,6 @@
 ---
 title: GetAssemblyIdentity 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GetAssemblyIdentity
@@ -17,35 +15,35 @@ helpviewer_keywords:
 ms.assetid: a977e072-37ad-4941-84a6-32a4483be55d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8762bb1207d7715a14effab7aee2d5d3ba5199b1
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 3e2d81701ae121b4666a10b6ce15fd8ae71e8920
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979925"
 ---
 # <a name="getassemblyidentity-task"></a>GetAssemblyIdentity 작업
-지정된 파일에서 어셈블리 ID를 검색하고 ID 정보를 출력합니다.  
-  
-## <a name="task-parameters"></a>작업 매개 변수  
- 다음 표에서는 `GetAssemblyIdentity` 작업의 매개 변수에 대해 설명합니다.  
-  
-|매개 변수|설명|  
-|---------------|-----------------|  
-|`Assemblies`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 검색된 어셈블리 ID를 포함합니다.|  
-|`AssemblyFiles`|필수 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> ID를 검색할 파일을 지정합니다.|  
-  
-## <a name="remarks"></a>설명  
- `Assemblies` 매개 변수에 의한 항목 출력에는 `Version`, `PublicKeyToken` 및 `Culture`라는 항목 메타데이터 항목이 포함됩니다.  
-  
- 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.  
-  
-## <a name="example"></a>예  
- 다음 예제에서는 `MyAssemblies` 항목을 지정한 파일의 ID를 검색하고 `MyAssemblyIdentities` 항목에 출력합니다.  
-  
+지정된 파일에서 어셈블리 ID를 검색하고 ID 정보를 출력합니다.
+
+## <a name="task-parameters"></a>작업 매개 변수
+다음 표에서는 `GetAssemblyIdentity` 작업의 매개 변수에 대해 설명합니다.
+
+|매개 변수|설명|
+|---------------|-----------------|
+|`Assemblies`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 검색된 어셈블리 ID를 포함합니다.|
+|`AssemblyFiles`|필수 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> ID를 검색할 파일을 지정합니다.|
+
+## <a name="remarks"></a>주의
+`Assemblies` 매개 변수에 의한 항목 출력에는 `Version`, `PublicKeyToken` 및 `Culture`라는 항목 메타데이터 항목이 포함됩니다.
+
+이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.
+
+## <a name="example"></a>예제
+다음 예제에서는 `MyAssemblies` 항목을 지정한 파일의 ID를 검색하고 `MyAssemblyIdentities` 항목에 출력합니다.
+
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <ItemGroup>
@@ -55,10 +53,10 @@ ms.locfileid: "37946591"
         <GetAssemblyIdentity AssemblyFiles="@(MyAssemblies)">
             <Output TaskParameter="Assemblies" ItemName="MyAssemblyIdentities" />
         </GetAssemblyIdentity>
-    </Target>  
-</Project>  
+    </Target>
+</Project>
 ```
 
-## <a name="see-also"></a>참고 항목  
- [작업](../msbuild/msbuild-tasks.md)   
- [작업 참조](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>참고 항목
+- [작업](../msbuild/msbuild-tasks.md)
+- [작업 참조](../msbuild/msbuild-task-reference.md)

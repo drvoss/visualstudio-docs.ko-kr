@@ -1,14 +1,9 @@
 ---
 title: '방법: 메시지 뷰에서 메시지 검색 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Message Search dialog box
 - Messages view
@@ -17,13 +12,13 @@ ms.assetid: 732b7ccc-54ea-41db-823b-2b96e3e4083e
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 08a2a08014d0927ecea29b1acb6bb36620f1a15a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6c89a763389abe364fe70166e63b41f932581837
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802105"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430902"
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>방법: 메시지 뷰에서 메시지 검색
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,13 +46,10 @@ ms.locfileid: "51802105"
 4. 값을 지정 하지 않을 필드의 선택을 취소 합니다.  
   
    > [!TIP]
-   >  화면이 혼란을 줄이기 위해 선택 된 **spy + + 숨기기** 옵션입니다. 이 옵션은 Spy + +의 주 창을 남아 숨기고 합니다 **창 찾기** 대화 상자를 다른 응용 프로그램을 기반으로 표시 합니다. Spy + + 주 창을 클릭할 때 복원 됩니다 **확인** 또는 **취소**, 선택을 취소 하면 또는 **Spy + + 숨기기** 옵션입니다.  
+   > 화면이 혼란을 줄이기 위해 선택 된 **spy + + 숨기기** 옵션입니다. 이 옵션은 Spy + +의 주 창을 남아 숨기고 합니다 **창 찾기** 대화 상자를 다른 응용 프로그램을 기반으로 표시 합니다. Spy + + 주 창을 클릭할 때 복원 됩니다 **확인** 또는 **취소**, 선택을 취소 하면 또는 **Spy + + 숨기기** 옵션입니다.  
   
 5. 선택 **위로** 또는 **아래로** 검색 초기 방향에 대 한 합니다.  
   
 6. **확인**을 클릭합니다.  
   
    일치 하는 메시지가 없으면 메시지 보기 창에서 강조 표시 됩니다. 참조 [메시지 뷰](../debugger/messages-view.md)합니다.
-
-
-

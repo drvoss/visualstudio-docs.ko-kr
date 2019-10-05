@@ -1,14 +1,9 @@
 ---
 title: DiaAddressMapEntry | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 5d0ae226-981d-4541-a801-fc4993fe663b
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fa2824b7fbd10e7628e5c6b0a016615620933df9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 67c0a3e297f3eebfbf44724e64c4989d9bb979fb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164351"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ struct DiaAddressMapEntry { 
   
 ## <a name="elements"></a>요소  
  `rva`  
- 1. 이미지의 상대 가상 주소 (RVA)  
+ 1\. 이미지의 상대 가상 주소 (RVA)  
   
  `rvaTo`  
  상대 가상 주소 `rva` 이미지 2.에 매핑된  
@@ -53,9 +48,9 @@ struct DiaAddressMapEntry { 
   
 1. 검색 항목에 대 한 맵을 `e`, 가장 큰 값을 사용 하 여 `rva` 보다 작거나 같음 `addrA`합니다.  
   
-2. 설정 `delta = addrA – e.rva`합니다.  
+2. `delta = addrA – e.rva`를 설정합니다.  
   
-3. 설정 `addrB = e.rvaTo + delta`합니다.  
+3. `addrB = e.rvaTo + delta`를 설정합니다.  
   
    배열을 `DiaAddressMapEntry` 구조에 전달 되는 [idiaaddressmap:: Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) 메서드.  
   
@@ -65,6 +60,3 @@ struct DiaAddressMapEntry { 
 ## <a name="see-also"></a>참고 항목  
  [열거형 및 구조체](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)
-
-
-

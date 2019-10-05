@@ -1,26 +1,21 @@
 ---
 title: 격리 셸의 요소 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, isolated mode
 ms.assetid: f8d68c3d-9134-4a8f-b566-485956cd321e
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e567fc212b9981d925fc11e8e0ae48132b3b05bf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3a95b7da718f050357f6ecd79c90c389dd6085d5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51816816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204609"
 ---
 # <a name="elements-of-the-isolated-shell"></a>격리 셸의 요소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +27,15 @@ ms.locfileid: "51816816"
   
  응용 프로그램을 실행 하는 경우 레지스트리 설정은 다음 순서 대로 정의 됩니다.  
   
-1.  응용 프로그램에 대 한 레지스트리 키가 만들어집니다.  
+1. 응용 프로그램에 대 한 레지스트리 키가 만들어집니다.  
   
-2.  레지스트리에 지정 된 키 및 항목을 정의 하 여 응용 프로그램의.pkgdef 파일에서 업데이트 됩니다.  
+2. 레지스트리에 지정 된 키 및 항목을 정의 하 여 응용 프로그램의.pkgdef 파일에서 업데이트 됩니다.  
   
-3.  응용 프로그램의 일부인 모든 패키지에 대 한 레지스트리는 해당 패키지의.pkgdef 파일에서 업데이트 됩니다. 각 패키지는 $RootKey$ \Packages 하 여 응용 프로그램의.pkgdef 파일에 정의 된\\{0}*vsPackageGuid*} 패키지에 대 한 키입니다.  
+3. 응용 프로그램의 일부인 모든 패키지에 대 한 레지스트리는 해당 패키지의.pkgdef 파일에서 업데이트 됩니다. 각 패키지는 $RootKey$ \Packages 하 여 응용 프로그램의.pkgdef 파일에 정의 된\\{0}*vsPackageGuid*} 패키지에 대 한 키입니다.  
   
-4.  AppEnvConfig.pkgdef와에서 BaseConfig.pkgdef 레지스트리 업데이트 되는 *Visual Studio SDK 설치 경로*\Common7\IDE\ShellExtensions\Platform 디렉터리. 이러한 파일은 Visual Studio의 일부 및도 Visual Studio Shell (격리 모드) 재배포 가능 패키지의 일부입니다.  
+4. AppEnvConfig.pkgdef와에서 BaseConfig.pkgdef 레지스트리 업데이트 되는 *Visual Studio SDK 설치 경로*\Common7\IDE\ShellExtensions\Platform 디렉터리. 이러한 파일은 Visual Studio의 일부 및도 Visual Studio Shell (격리 모드) 재배포 가능 패키지의 일부입니다.  
   
-5.  레지스트리에 지정 된 키 및 항목을 제거 하 여 응용 프로그램의.pkgundef 파일에서 업데이트 됩니다.  
+5. 레지스트리에 지정 된 키 및 항목을 제거 하 여 응용 프로그램의.pkgundef 파일에서 업데이트 됩니다.  
   
 ## <a name="run-time-settings"></a>런타임 설정  
  격리 셸 응용 프로그램을 시작 하는 경우 Visual Studio shell의 시작 진입점을 호출 합니다. 응용 프로그램 설정에는 응용 프로그램이 시작 되 면 다음과 같이 정의 됩니다.  
@@ -54,7 +49,7 @@ ms.locfileid: "51816816"
 ## <a name="the-start-entry-point"></a>시작 진입점  
  Appenvstub.dll 파일 격리 셸 액세스에 대 한 진입점을 포함 합니다. 응용 프로그램이 시작 되 면 시작 항목 Appenvstub.dll 지점을 호출 합니다.  
   
- 시작 진입점에 전달 되는 마지막 매개 변수 값을 변경 하 여 응용 프로그램의 동작을 변경할 수 있습니다. 자세한 내용은 [격리 된 셸 항목 지점 매개 변수 (c + +)](../extensibility/isolated-shell-entry-point-parameters-cpp.md)합니다.  
+ 시작 진입점에 전달 되는 마지막 매개 변수 값을 변경 하 여 응용 프로그램의 동작을 변경할 수 있습니다. 자세한 내용은 [격리 셸 진입점 매개 변수 (C++)](../extensibility/isolated-shell-entry-point-parameters-cpp.md)합니다.  
   
 ## <a name="the-vsct-file"></a>합니다. Vsct 파일  
  .Vsct 파일을 응용 프로그램에서 사용할 수는 표준 Visual Studio UI 요소를 지정할 수 있습니다. 자세한 내용은 참조 하세요. [합니다. Vsct 파일](../extensibility/modifying-the-isolated-shell-by-using-the-dot-vsct-file.md)합니다.  
@@ -82,4 +77,3 @@ ms.locfileid: "51816816"
 </dependentAssembly>  
   
 ```
-

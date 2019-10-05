@@ -1,14 +1,9 @@
 ---
 title: ResolveNativeReference 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveNativeReference
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: 56acd101-de77-4eec-92c6-f5c6d2187579
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a874055e5af1a0aafd48296a99f12a83d56369f8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 137ab6c54176c7c95c13c4b3e4defb3924937bc7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205630"
 ---
 # <a name="resolvenativereference-task"></a>ResolveNativeReference 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 네이티브 참조를 확인합니다. <xref:Microsoft.Build.Tasks.ResolveNativeReference> 클래스를 구현합니다. 이 클래스는 코드에서 직접 사용할 수 없는 .NET Framework 인프라를 지원합니다.  
   
 ## <a name="task-parameters"></a>작업 매개 변수  
@@ -57,6 +51,3 @@ ms.locfileid: "49281313"
 ## <a name="see-also"></a>참고 항목  
  [작업](../msbuild/msbuild-tasks.md)   
  [작업 참조](../msbuild/msbuild-task-reference.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: VC++ 프로젝트 설정, 프로젝트 및 솔루션, 옵션 대화 상자 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.VCBuild
 helpviewer_keywords:
@@ -23,25 +18,24 @@ ms.assetid: 56420efd-6a95-464e-b890-e2b38c48d66a
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a1491d639ace0cba80530ea1613525480bad07f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 65115be12d00f335272c65083be4a323a604b646
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238864"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689360"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>옵션 대화 상자, 프로젝트 및 솔루션, VC++ 프로젝트 설정
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 이 대화 상자를 사용하면 빌드 로깅 및 지원 파일 형식과 관련된 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 프로젝트 설정을 정의할 수 있습니다.  
   
 ### <a name="to-access-this-dialog-box"></a>이 대화 상자에 액세스하려면  
   
-1.  **도구** 메뉴에서 **옵션**을 클릭합니다.  
+1. **도구** 메뉴에서 **옵션**을 클릭합니다.  
   
-2.  **프로젝트 및 솔루션**을 선택한 다음 **VC++ 프로젝트 설정**을 선택합니다.  
+2. **프로젝트 및 솔루션**을 선택한 다음 **VC++ 프로젝트 설정**을 선택합니다.  
   
 ## <a name="build-customization-search-path"></a>빌드 사용자 지정 검색 경로  
  프로젝트에 대한 빌드 규칙을 정의하는 데 도움이 되는 .rules 파일을 포함하는 디렉터리 목록을 지정합니다.  
@@ -84,8 +78,5 @@ ms.locfileid: "49238864"
  프로젝트의 파일과 디스크의 파일을 프로젝트 폴더에 표시하도록 **솔루션 탐색기**를 구성합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [C/C++ 프로그램 빌드](http://msdn.microsoft.com/library/fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008)   
- [C/C++ 빌드 참조](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)
-
-
-
+ [C/C++ 프로그램 빌드](https://msdn.microsoft.com/library/fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008)   
+ [C/C++ 빌드 참조](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)

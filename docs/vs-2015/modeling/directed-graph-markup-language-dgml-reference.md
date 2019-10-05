@@ -1,23 +1,20 @@
 ---
 title: Directed Graph Markup Language (DGML) 참조 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 ms.assetid: cc3e4ae7-60fa-4e22-9227-98020b480b73
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f352d87975bf2c9705b348b465215a0a9fe72f2a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0de96057326a9e4b6a64865ef34972d5542aff30
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442993"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>DGML(Directed Graph Markup Language) 참조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +24,9 @@ DGML(Directed Graph Markup Language)은 시각화에 사용되고 복잡성 분�
  일부 버전의 Visual Studio DGML 기능의 하위 집합만 지원를 참조 하세요 [아키텍처 및 모델링 도구에 대 한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)합니다.  
   
 > [!NOTE]
->  .dgml 파일을 편집하는 경우 IntelliSense를 사용하면 각 요소 및 요소 값에 사용할 수 있는 특성을 식별할 수 있습니다. 특성에 색을 지정하려면 "Blue"와 같은 일반적인 색의 이름 또는 "#ffa0b1c3"과 같은 ARGB 16진수 값을 사용합니다. DGML은 WPF(Windows Presentation Foundation) 색 정의 형식의 일부를 사용합니다. 자세한 내용은 [Colors 클래스](http://go.microsoft.com/fwlink/?LinkId=182345)합니다.  
+> .dgml 파일을 편집하는 경우 IntelliSense를 사용하면 각 요소 및 요소 값에 사용할 수 있는 특성을 식별할 수 있습니다. 특성에 색을 지정하려면 "Blue"와 같은 일반적인 색의 이름 또는 "#ffa0b1c3"과 같은 ARGB 16진수 값을 사용합니다. DGML은 WPF(Windows Presentation Foundation) 색 정의 형식의 일부를 사용합니다. 자세한 내용은 [Colors 클래스](http://go.microsoft.com/fwlink/?LinkId=182345)합니다.  
   
-##  <a name="DGML"></a> DGML 구문  
+## <a name="DGML"></a> DGML 구문  
  다음 표에서는 DGML에서 사용되는 요소 종류에 대해 설명합니다.  
   
 - `<DirectedGraph></DirectedGraph>`  
@@ -70,10 +67,10 @@ DGML(Directed Graph Markup Language)은 시각화에 사용되고 복잡성 분�
   
 - `<Nodes></Nodes>`  
   
-   이 요소는 맵의 노드를 정의하는 `<Node/>` 요소 목록을 포함하는 선택적 요소입니다. 자세한 내용은 `<Node/>` 요소를 참조하세요.  
+   이 요소는 맵의 노드를 정의하는 `<Node/>` 요소 목록을 포함하는 선택적 요소입니다. 자세한 내용은 `<Node/>` 요소를 참조하십시오.  
   
   > [!NOTE]
-  >  `<Link/>` 요소에서 정의되지 않은 노드를 참조하는 경우 맵에서 `<Node/>` 요소를 자동으로 만듭니다.  
+  > `<Link/>` 요소에서 정의되지 않은 노드를 참조하는 경우 맵에서 `<Node/>` 요소를 자동으로 만듭니다.  
   
    예제:  
   
@@ -103,9 +100,9 @@ DGML(Directed Graph Markup Language)은 시각화에 사용되고 복잡성 분�
   
    스타일 특성. [DGML 파일을 편집하여 코드 맵 사용자 지정](../modeling/customize-code-maps-by-editing-the-dgml-files.md)을 참조하세요.  
   
-   `Category` - 이 특성을 공유하는 요소를 식별하는 범주의 이름입니다. 자세한 내용은 `<Category/>` 요소를 참조하세요.  
+   `Category` - 이 특성을 공유하는 요소를 식별하는 범주의 이름입니다. 자세한 내용은 `<Category/>` 요소를 참조하십시오.  
   
-   `Property` - 속성 값이 같은 요소를 식별하는 속성의 이름입니다. 자세한 내용은 `<Property/>` 요소를 참조하세요.  
+   `Property` - 속성 값이 같은 요소를 식별하는 속성의 이름입니다. 자세한 내용은 `<Property/>` 요소를 참조하십시오.  
   
    `Group` - 노드에 다른 노드가 포함된 경우 이 특성을 `Expanded` 또는 `Collapsed`로 설정하여 노드의 내용을 표시하거나 숨길 수 있습니다. `<Link/>` 특성을 포함하고, 부모 노드와 자식 노드를 각각 소스 노드와 대상 노드로 지정하는 `Category="Contains"` 요소가 있어야 합니다. 참조 [코드 요소를 그룹화](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes)합니다.  
   
@@ -136,7 +133,7 @@ DGML(Directed Graph Markup Language)은 시각화에 사용되고 복잡성 분�
   
 - `<Links></Links>`  
   
-   이 요소에는 노드 간의 링크를 정의하는 `<Link>` 요소 목록이 포함됩니다. 자세한 내용은 `<Link/>` 요소를 참조하세요.  
+   이 요소에는 노드 간의 링크를 정의하는 `<Link>` 요소 목록이 포함됩니다. 자세한 내용은 `<Link/>` 요소를 참조하십시오.  
   
    예제:  
   
@@ -154,7 +151,7 @@ DGML(Directed Graph Markup Language)은 시각화에 사용되고 복잡성 분�
    이 요소는 소스 노드를 대상 노드에 연결하는 단일 링크를 정의합니다. 또한 `<Links></Links>` 요소 목록 내에 나타납니다.  
   
   > [!NOTE]
-  >  이 요소가 정의되지 않은 노드를 참조하는 경우 맵 문서에서는 지정된 특성을 포함하는 노드를 자동으로 만듭니다.  
+  > 이 요소가 정의되지 않은 노드를 참조하는 경우 맵 문서에서는 지정된 특성을 포함하는 노드를 자동으로 만듭니다.  
   
    이 요소에는 다음과 같은 특성이 포함되어야 합니다.  
   
@@ -168,9 +165,9 @@ DGML(Directed Graph Markup Language)은 시각화에 사용되고 복잡성 분�
   
    스타일 특성. [DGML 파일을 편집하여 코드 맵 사용자 지정](../modeling/customize-code-maps-by-editing-the-dgml-files.md)을 참조하세요.  
   
-   `Category` - 이 특성을 공유하는 요소를 식별하는 범주의 이름입니다. 자세한 내용은 `<Category/>` 요소를 참조하세요.  
+   `Category` - 이 특성을 공유하는 요소를 식별하는 범주의 이름입니다. 자세한 내용은 `<Category/>` 요소를 참조하십시오.  
   
-   `Property` - 속성 값이 같은 요소를 식별하는 속성의 이름입니다. 자세한 내용은 `<Property/>` 요소를 참조하세요.  
+   `Property` - 속성 값이 같은 요소를 식별하는 속성의 이름입니다. 자세한 내용은 `<Property/>` 요소를 참조하십시오.  
   
    예제:  
   
@@ -194,7 +191,7 @@ DGML(Directed Graph Markup Language)은 시각화에 사용되고 복잡성 분�
   
 - `<Categories></Categories>`  
   
-   이 요소에는 `<Category/>` 요소 목록이 포함됩니다. 자세한 내용은 `<Category/>` 요소를 참조하세요.  
+   이 요소에는 `<Category/>` 요소 목록이 포함됩니다. 자세한 내용은 `<Category/>` 요소를 참조하십시오.  
   
    예제:  
   
@@ -251,7 +248,7 @@ DGML(Directed Graph Markup Language)은 시각화에 사용되고 복잡성 분�
   
 - `<Properties></Properties>`  
   
-   이 요소에는 `<Property/>` 요소 목록이 포함됩니다. 자세한 내용은 `<Property/>` 요소를 참조하세요.  
+   이 요소에는 `<Property/>` 요소 목록이 포함됩니다. 자세한 내용은 `<Property/>` 요소를 참조하십시오.  
   
    예제:  
   
@@ -305,7 +302,7 @@ DGML(Directed Graph Markup Language)은 시각화에 사용되고 복잡성 분�
   </DirectedGraph>  
   ```  
   
-###  <a name="AddAlias"></a> 일반적으로 사용 되는 경로 대 한 별칭  
+### <a name="AddAlias"></a> 일반적으로 사용 되는 경로 대 한 별칭  
  일반적으로 사용되는 경로를 별칭으로 바꾸면 .dgml 파일의 크기뿐만 아니라 파일을 로드하거나 저장하는 데 필요한 시간을 줄일 수 있습니다. 별칭을 만들려면 .dgml 파일의 끝에 `<Paths></Paths>` 섹션을 추가합니다. 다음과 같이 이 섹션에서 `<Path/>` 요소를 추가하여 경로의 별칭을 정의합니다.  
   
 ```xml  
@@ -329,6 +326,3 @@ DGML(Directed Graph Markup Language)은 시각화에 사용되고 복잡성 분�
  [솔루션 전체의 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)   
  [코드 맵을 사용 하 여 응용 프로그램 디버그](../modeling/use-code-maps-to-debug-your-applications.md)   
  [코드 맵 분석기를 사용하여 잠재적 문제 찾기](../modeling/find-potential-problems-using-code-map-analyzers.md)
-
-
-

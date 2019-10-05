@@ -1,27 +1,22 @@
 ---
 title: 등록 및 선택 (소스 제어 VSPackage) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, source control packages
 - source control packages, registration
 ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 caps.latest.revision: 35
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 636e70357c23059a505d657af0078653de413976
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 692f2a9f34edd41839179f7229e079ec8e791800
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764465"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185829"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>등록 및 선택(소스 제어 VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,18 +33,18 @@ ms.locfileid: "51764465"
 ### <a name="registry-entries"></a>레지스트리 항목  
  소스 제어 패키지를 개인 guid가 세 개 필요합니다.  
   
-- 패키지 GUID: 소스 제어 구현 (이 단원의 ID_Package 라고 함)를 포함 하는 패키지에 대 한 기본 GUID입니다.  
+- 패키지 GUID: 원본 제어 구현 (이 단원의 ID_Package 라고 함)를 포함 하는 패키지에 대 한 기본 GUID입니다.  
   
-- 소스 제어 GUID:이 소스 제어는 Visual Studio 원본 제어 스텁을 등록 하는 데 사용 되는 VSPackage에 대 한 GUID 및 명령 UI 컨텍스트의 GUID로도 사용 됩니다. 원본 제어 서비스 GUID를 GUID 소스 제어에 등록 됩니다. 예제에서는 소스 제어 GUID ID_SccProvider 라고 합니다.  
+- 소스 제어 GUID: 이 소스 제어는 Visual Studio 원본 제어 스텁을 등록 하는 데 사용 되는 VSPackage에 대 한 GUID 및 명령 UI 컨텍스트의 GUID로도 사용 됩니다. 원본 제어 서비스 GUID를 GUID 소스 제어에 등록 됩니다. 예제에서는 소스 제어 GUID ID_SccProvider 라고 합니다.  
   
-- 원본 제어 서비스에서 GUID: 개인 서비스 (이 단원의 SID_SccPkgService 라고 함)는 Visual Studio에서 사용 되는 GUID입니다. 그 뿐 아니라 소스 제어 패키지 하 고 Vspackage에서 도구 창에 대 한 다른 Guid를 정의 해야 합니다.  
+- 소스 제어 서비스 GUID: 개인 서비스 (이 단원의 SID_SccPkgService 라고 함)는 Visual Studio에서 사용 되는 GUID입니다. 그 뿐 아니라 소스 제어 패키지 하 고 Vspackage에서 도구 창에 대 한 다른 Guid를 정의 해야 합니다.  
   
   다음 레지스트리 항목을 소스 제어 VSPackage에서 이루어져야 합니다.  
   
 |키 이름|항목|  
 |--------------|-------------|  
 |`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\`|(기본값) = rg_sz: {ID_SccProvider}|  
-|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\`|(기본값) = rg_sz:\<패키지의 이름 ><br /><br /> 서비스 = rg_sz: {SID_SccPkgService}|  
+|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\`|(기본값) = rg_sz:\<패키지의 이름 ><br /><br /> Service = rg_sz:{SID_SccPkgService}|  
 |`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\`|(기본값) = rg_sz: #\<지역화 된 이름에 대 한 리소스 ID ><br /><br /> 패키지 rg_sz =: {ID_Package}|  
 |`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SolutionPersistence\             <PackageName>\`<br /><br /> (유의 키 이름을 `SourceCodeControl`에서 이미 사용 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 에 대 한 선택 항목으로 사용할 수 없는 \<PackageName >.)|(기본값) = rg_sz: {ID_Package}|  
   
@@ -86,9 +81,8 @@ ms.locfileid: "51764465"
   
   이전 버전과 달리 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], IDE 다시 시작을 소스 제어 Vspackage를 전환 하려면 유일한 방법은 더 이상. 자동으로 VSPackage 선택이 됩니다. 패키지를 전환 하려면 Windows 사용자 권한 (관리자 또는 Power User 없습니다) 해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>   
  [기능](../../extensibility/internals/source-control-vspackage-features.md)   
  [소스 제어 플러그 인 만들기](../../extensibility/internals/creating-a-source-control-plug-in.md)   
  [VSPackage](../../extensibility/internals/vspackages.md)
-

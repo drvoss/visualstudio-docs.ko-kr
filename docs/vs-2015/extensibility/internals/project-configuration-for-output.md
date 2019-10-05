@@ -1,26 +1,21 @@
 ---
 title: 프로젝트 출력에 대 한 구성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project configurations, output
 ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1c23f9210175b848bfdf3ddab56776092e39212c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d14435917e982328220aa6b778d081a8837f0396
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443877"
 ---
 # <a name="project-configuration-for-output"></a>출력에 대한 프로젝트 구성
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51740898"
  구현 하 여 개발 된 구문을 `IVsOutputGroup` 프로젝트 사용량에 따라 출력 그룹에 있습니다. 예를 들어 해당 프로그램 데이터베이스 (PDB)를 사용 하 여 DLL은 그룹화 할 수 있습니다.  
   
 > [!NOTE]
->  디버깅 정보를 포함 하는 PDB 파일 및.dll 또는.exe를 빌드할 때 ' 디버그 정보 생성 ' 옵션을 지정 하는 경우 만들어집니다. .Pdb 파일 디버그 프로젝트 구성의 경우 일반적으로 생성 됩니다.  
+> 디버깅 정보를 포함 하는 PDB 파일 및.dll 또는.exe를 빌드할 때 ' 디버그 정보 생성 ' 옵션을 지정 하는 경우 만들어집니다. .Pdb 파일 디버그 프로젝트 구성의 경우 일반적으로 생성 됩니다.  
   
  프로젝트 그룹 내에 포함 된 출력 수가 구성에서 구성 달라질 경우에, 지원 되는 각 구성에 대 한 그룹 수가 반환 해야 합니다. 예를 들어, 프로젝트 Matt의 DLL 디버그 구성에 mattd.dll 및 mattd.pdb 포함 되었지만 matt.dll 보려면 소매 구성을 포함 합니다.  
   
@@ -56,4 +51,3 @@ ms.locfileid: "51740898"
  [빌드에 대 한 프로젝트 구성](../../extensibility/internals/project-configuration-for-building.md)   
  [프로젝트 구성 개체](../../extensibility/internals/project-configuration-object.md)   
  [솔루션 구성](../../extensibility/internals/solution-configuration.md)
-

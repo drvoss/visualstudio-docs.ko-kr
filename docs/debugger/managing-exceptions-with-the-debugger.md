@@ -2,7 +2,6 @@
 title: 디버거를 사용한 예외 관리 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/09/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.exceptions
@@ -31,21 +30,21 @@ helpviewer_keywords:
 ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97c4694ec66c9769f9433c08e74e4d0a14a952c2
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: MTE95
+ms.openlocfilehash: b83cb026bec6d33490517e5703a042b4a8e2434c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846583"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Visual Studio에서 디버거를 사용한 예외 관리
 
-예외는 프로그램이 실행되는 동안 발생하는 오류 상태를 나타냅니다. 예외 또는 집합 예외를 중단 하도록 디버거에 지시할 수 있습니다 하 고이 시점에서 중단 하도록 디버거 하려는 키를 누릅니다. 디버거가 중단 되 면 예외가 throw 된 보여줍니다. 추가 하거나 예외를 삭제할 수도 있습니다. Visual Studio에서 열려 있는 솔루션을 사용 하 여 **디버그 > Windows > 예외 설정** 열려는 합니다 **예외 설정** 창입니다.
+예외는 프로그램이 실행되는 동안 발생하는 오류 상태를 나타냅니다. 예외 또는 집합 예외를 중단 하도록 디버거에 지시할 수 있습니다 및 중단 하도록 디버거를 원하는 시점 (즉, 디버거에서 일시 중지) 합니다. 디버거가 중단 되 면 예외가 throw 된 보여줍니다. 추가 하거나 예외를 삭제할 수도 있습니다. Visual Studio에서 열려 있는 솔루션을 사용 하 여 **디버그 > Windows > 예외 설정** 열려는 합니다 **예외 설정** 창입니다.
 
-가장 중요 한 예외에 응답 하는 처리기를 제공 합니다. 또한 항상 몇 가지 예외에 대 한 실행을 중단 하도록 디버거를 구성 하는 방법에 알아봅니다.
+가장 중요 한 예외에 응답 하는 처리기를 제공 합니다. 예외에 대 한 처리기를 추가, 참조 하는 방법을 알아야 하는 경우 [잘 작성 하 여 버그를 수정 합니다. C# 코드](../debugger/write-better-code-with-visual-studio.md)합니다. 또한 항상 몇 가지 예외에 대 한 실행을 중단 하도록 디버거를 구성 하는 방법에 알아봅니다.
 
 예외가 발생하면 디버거가 **출력** 창에 예외 메시지를 씁니다. 다음에서 실행을 중단할 수 있으므로 경우 사례:
 
@@ -67,7 +66,7 @@ ms.locfileid: "53561527"
 
 에 **예외 설정** 창 (**디버그 > Windows > 예외 설정**), 같은 예외 범주에 대 한 노드를 확장 **Common Language Runtime Exceptions**. 선택한 다음 해당 범주 내의 특정 예외에 대 한 확인란을 같은 **System.AccessViolationException**합니다. 전체 예외 범주를 선택할 수도 있습니다.
 
-![AccessViolationException 체크](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")
+![Checked AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")
 
 > [!TIP]
 > 사용 하 여 특정 예외를 찾을 수 있습니다 합니다 **검색** 창에는 **예외 설정** 도구 모음 또는 검색 특정 네임 스페이스에 대 한 필터링을 사용 (같은 **System.IO**).
@@ -205,7 +204,7 @@ public class GenericException<T> : Exception
 사용 된 **예외 설정** 예외에 조건을 설정 하는 창입니다. 현재 지원 되는 조건을 포함 하거나 제외할 예외에 대 한 모듈 이름을 포함 합니다. 모듈 이름 조건으로로 설정 하면 특정 코드 모듈에만 예외에 대 한 중단 하도록 선택할 수 있습니다. 특정 모듈에서 분리를 방지할 수도 있습니다.
 
 > [!NOTE]
-> 새로운 예외가에 조건 추가 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]합니다.
+> 부터 지원 되는 예외에 조건 추가 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]합니다.
 
 조건부 예외를 추가 합니다.
 
@@ -217,14 +216,14 @@ public class GenericException<T> : Exception
 
    ![예외에 대 한 추가 조건을](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. 각 상태 줄에 대 한 모듈의 이름을 입력 하 고 비교 연산자 목록 변경 **Equals** 또는 **Not Equals**합니다. 와일드 카드를 지정할 수 있습니다 (* *\\* * *) 모듈을 둘 이상 지정 하려면 이름에 있습니다.
+3. 각 상태 줄에 대 한 모듈의 이름을 입력 하 고 비교 연산자 목록 변경 **Equals** 또는 **Not Equals**합니다. 와일드 카드를 지정할 수 있습니다 (**\\\***) 모듈을 둘 이상 지정 하려면 이름에 있습니다.
 
 4. 조건을 삭제 해야 할 경우 선택 합니다 **X** 조건 줄의 끝입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[예외 후 실행 계속](../debugger/continuing-execution-after-an-exception.md)<br/>
-[방법: 예외 발생 후 시스템 코드 검사](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
-[방법: 네이티브 런타임 검사 사용](../debugger/how-to-use-native-run-time-checks.md)<br/>
-[C 런타임 라이브러리 없이 런타임 검사 사용](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
-[디버거 소개](../debugger/debugger-feature-tour.md)
+- [예외 후 실행 계속](../debugger/continuing-execution-after-an-exception.md)<br/>
+- [방법: 예외 발생 후 시스템 코드 검사](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
+- [방법: 네이티브 런타임 검사 사용](../debugger/how-to-use-native-run-time-checks.md)<br/>
+- [C 런타임 라이브러리 없이 런타임 검사 사용](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
+- [디버거 소개](../debugger/debugger-feature-tour.md)

@@ -1,25 +1,20 @@
 ---
 title: 도움말 콘텐츠 관리자에 대한 명령줄 인수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: conceptual
 ms.assetid: 3aa9890a-1147-42ba-adea-17935d184038
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5ac0d333f8103f6904bce517397a73cc010b1d36
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ae1643b4a01c9bcab3878ec82b1808444cdc7712
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873411"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188812"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>도움말 콘텐츠 관리자에 대한 명령줄 인수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ ms.locfileid: "49873411"
 HlpCtntmgr.exe /operation Value /catalogname CatalogName /locale Locale /sourceuri InstallationPoint  
 ```  
   
- 예를 들면 다음과 같습니다.  
+ 예:  
   
 ```  
 hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us /sourceuri d:\productDocumentation\HelpContentSetup.msha  
@@ -63,7 +58,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us /sou
 |/membership|아니요|-   **Minimum**--/skuId 스위치를 사용하여 지정한 SKU를 기반으로 도움말 콘텐츠의 최소 집합을 설치합니다. SKU와 콘텐츠 집합 간의 매핑은 서비스 API에서 노출됩니다.<br />-   **Recommended**--/skuId 인수를 사용하여 지정한 SKU에 대한 권장되는 책의 집합을 설치합니다. 설치 원본은 서비스 API 또는 .MSHA입니다.<br />-   **Full**--/skuId 인수를 사용하여 지정한 SKU에 대한 책의 전체 집합을 설치합니다. 설치 원본은 서비스 API 또는 .MSHA입니다.|  
 |/locationpath|아니요|로컬 도움말 콘텐츠의 기본 폴더를 지정합니다. 이 스위치는 콘텐츠를 설치하거나 이동하는 데만 사용해야 합니다. 이 스위치를 지정하는 경우 /silent 스위치도 지정해야 합니다.|  
 |/silent|아니요|사용자에게 메시지를 표시하거나 상태 알림 영역의 아이콘을 비롯한 UI를 표시하지 않고 도움말 콘텐츠를 설치하거나 제거합니다. 출력은 %Temp% 디렉터리의 파일에 기록됩니다. **중요:** 콘텐츠를 자동으로 설치하려면 .mshc 파일이 아니라 디지털 서명된 .cab 파일을 사용해야 합니다.|  
-|/launchingApp|아니요|도움말 뷰어가 부모 응용 프로그램 없이 시작될 때 응용 프로그램 및 카탈로그 컨텍스트를 정의합니다. 이 스위치의 인수는 *CompanyName*, *ProductName* 및 *VersionNumber*(예: `/launchingApp Microsoft,VisualStudio,11.0`)입니다.<br /><br /> 이 스위치는 /silent 매개 변수를 사용하여 콘텐츠를 설치하는 데 필요합니다.|  
+|/launchingApp|아니요|도움말 뷰어가 부모 애플리케이션 없이 시작될 때 애플리케이션 및 카탈로그 컨텍스트를 정의합니다. 이 스위치의 인수는 *CompanyName*, *ProductName* 및 *VersionNumber*(예: `/launchingApp Microsoft,VisualStudio,11.0`)입니다.<br /><br /> 이 스위치는 /silent 매개 변수를 사용하여 콘텐츠를 설치하는 데 필요합니다.|  
 |/wait *Seconds*|아니요|설치, 제거 및 새로 고침 작업을 일시 중지합니다. 작업이 이미 카탈로그에 대해 진행 중인 경우 프로세스는 지정된 기간(초)까지 대기한 다음 계속됩니다. 무한정 기다리려면 0을 사용합니다.|  
 |/?|아니요|도움말 콘텐츠 관리자용 명령줄 도구에 대한 스위치와 해당 설명을 나열합니다.|  
   
@@ -96,6 +91,3 @@ UpdateAlreadyRunning = 1300 – (Signals that the update didn't run because anot
 ## <a name="see-also"></a>참고 항목  
  [도움말 뷰어 관리자 가이드](../ide/help-viewer-administrator-guide.md)   
  [도움말 콘텐츠 관리자 재정의](../ide/help-content-manager-overrides.md)
-
-
-

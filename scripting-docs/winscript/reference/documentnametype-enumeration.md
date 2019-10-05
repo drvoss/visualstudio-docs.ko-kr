@@ -2,7 +2,6 @@
 title: DOCUMENTNAMETYPE 열거형 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0bd21dddd209f21ae64ea2775bbaa0da226f077
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5ee258602c47951f4731dc1378542cc83d57d72b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955218"
 ---
 # <a name="documentnametype-enumeration"></a>DOCUMENTNAMETYPE 열거형
 문서에 대한 가져올 유형을 설명합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 typedef enum tagDOCUMENTNAMETYPE {  
    DOCUMENTNAMETYPE_APPNODE,  
    DOCUMENTNAMETYPE_TITLE,  
@@ -43,11 +42,11 @@ DOCUMENTNAMETYPE_UNIQUE_TITLE,} DOCUMENTNAMETYPE;
   
 |멤버|설명|  
 |------------|-----------------|  
-|DOCUMENTNAMETYPE_APPNODE|응용 프로그램 트리에 나타나는 이름을 가져옵니다.|  
+|DOCUMENTNAMETYPE_APPNODE|응용 프로그램 트리에서 표시 된 대로 이름을 가져옵니다.|  
 |DOCUMENTNAMETYPE_TITLE|뷰어의 제목 표시줄에 표시 된 대로 이름을 가져옵니다.|  
 |DOCUMENTNAMETYPE_FILE_TAIL|경로 없이 파일 이름을 가져옵니다.|  
 |DOCUMENTNAMETYPE_URL|문서의 URL을 가져옵니다.|  
-|DOCUMENTNAMETYPE_UNIQUE_TITLE|Id에 대 한 열거와 함께 추가 제목을 가져옵니다.|  
+|DOCUMENTNAMETYPE_UNIQUE_TITLE|Id에 대 한 열거형을 사용 하 여 추가 된 제목을 가져옵니다.|  
   
 ## <a name="see-also"></a>참고 항목  
  [액티브 스크립트 디버거 상수, 열거형 및 구조체](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

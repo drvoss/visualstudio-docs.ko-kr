@@ -1,25 +1,20 @@
 ---
 title: '연습: LinqToXmlDataBinding 예제 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: aedf42e8-896c-48fa-88df-7f7c9536aa69
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3c69c69cfed53b0080614984853b3128908c2e89
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 379c95e4de7831c833d8d82d48643a9da10be323
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187482"
 ---
 # <a name="walkthrough-linqtoxmldatabinding-example"></a>연습: LinqToXmlDataBinding 예제
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,10 +22,10 @@ ms.locfileid: "49893652"
 이 연습에서는 LinqToXmlDataBinding 예제에 대해 설명하고 두 가지 기본 소스 파일인 L2DBForm.xaml과 L2DBForm.xaml.cs의 몇 가지 흥미로운 내용을 살펴봅니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
- 이 연습을 읽기 전에 [방법: LinqToXmlDataBinding 예제 빌드 및 실행](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)에서 설명한 대로 LinqToXmlDataBinding 프로그램을 빌드하고 실행하는 것이 좋습니다.  
+ 이 연습을 읽기 전에 [방법: LinqToXmlDataBinding 예제 빌드 및 실행](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)합니다.  
   
 ## <a name="remarks"></a>설명  
- LinqToXmlDataBinding 프로그램은 C# 및 XAML 소스 파일로 구성된 WPF(Windows Presentation Foundation) 응용 프로그램입니다. 이 프로그램에는 책 목록을 정의하고 사용자가 이러한 항목을 보고, 추가하고, 삭제하고, 편집할 수 있도록 하는 포함된 XML 문서가 들어 있습니다. 이 프로그램은 다음 두 가지 기본 소스 파일로 구성되어 있습니다.  
+ LinqToXmlDataBinding 프로그램은 C# 및 XAML 소스 파일로 구성된 WPF(Windows Presentation Foundation) 애플리케이션입니다. 이 프로그램에는 책 목록을 정의하고 사용자가 이러한 항목을 보고, 추가하고, 삭제하고, 편집할 수 있도록 하는 포함된 XML 문서가 들어 있습니다. 이 프로그램은 다음 두 가지 기본 소스 파일로 구성되어 있습니다.  
   
 - L2DBForm.xaml에는 기본 창의 UI(사용자 인터페이스)에 대한 XAML 선언 코드가 포함되어 있습니다. 또한 책 목록에 대한 포함된 XML 문서와 데이터 공급자를 정의하는 창 리소스 섹션도 포함되어 있습니다.  
   
@@ -48,14 +43,11 @@ ms.locfileid: "49893652"
   
 ## <a name="in-this-section"></a>섹션 내용  
   
-|항목|설명|  
+|항목|Description|  
 |-----------|-----------------|  
 |[L2DBForm.xaml 소스 코드](../designers/l2dbform-xaml-source-code.md)|L2DBForm.xaml 파일의 XAML 코드에 대한 내용과 설명이 포함되어 있습니다.|  
 |[L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md)|L2DBForm.xaml.cs 파일의 C# 소스 코드에 대한 내용과 설명이 포함되어 있습니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [LINQ to XML 예제를 사용한 WPF 데이터 바인딩](../designers/wpf-data-binding-using-linq-to-xml-example.md)   
  [방법: LinqToXmlDataBinding 예제 빌드 및 실행](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)
-
-
-

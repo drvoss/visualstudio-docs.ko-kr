@@ -1,14 +1,9 @@
 ---
 title: POPLISTFUNC | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - POPDIRLISTFUNC
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: b2199fd5-d707-4628-92dd-e2a01e2f507a
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6109dcdda535d3ee420c161c8277dcd8ca19040e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8c3ae2ce451f076c33ea5613b71c6d262c1d7a0e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51804526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430831"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,11 +62,10 @@ typedef BOOL (*POPLISTFUNC) (
  소스 제어 플러그 인을 추가 하거나 파일 목록에서 삭제 하려는 각 파일에 대해 전달,이 함수를 호출 합니다 `lpFileName`합니다. `fAddRemove` 플래그 목록에 추가할 새 파일 또는 삭제 하려면 이전 파일을 나타냅니다. `nStatus` 매개 변수는 파일의 상태를 제공 합니다. 반환 하는 플러그 인 SCC 파일 추가 및 삭제 완료 되 면 합니다 [SccPopulateList](../extensibility/sccpopulatelist-function.md) 호출 합니다.  
   
 > [!NOTE]
->  `SCC_CAP_POPULATELIST` 기능 비트 Visual Studio에 필요 합니다.  
+> `SCC_CAP_POPULATELIST` 기능 비트 Visual Studio에 필요 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDE에 의해 구현 된 콜백 함수](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [원본 제어 플러그 인](../extensibility/source-control-plug-ins.md)   
  [SccPopulateList](../extensibility/sccpopulatelist-function.md)   
  [파일 상태 코드](../extensibility/file-status-code-enumerator.md)
-

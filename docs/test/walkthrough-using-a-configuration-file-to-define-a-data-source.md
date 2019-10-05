@@ -1,8 +1,6 @@
 ---
-title: '연습: 구성 파일을 사용하여 데이터 원본 정의'
+title: 구성 파일을 사용하여 원본 데이터 정의
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
@@ -10,15 +8,15 @@ helpviewer_keywords:
 - data sources, defining with configuration files
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d329e1aedb5b81c2be2d52614e4c540ecb8ef8aa
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d6bfb122649f688ece90e981c419325564776215
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066995"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746757"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>연습: 구성 파일을 사용하여 데이터 원본 정의
 
@@ -52,9 +50,9 @@ ms.locfileid: "53066995"
 
      **새 항목 추가** 창이 열립니다.
 
-3. **응용 프로그램 구성 파일** 템플릿을 선택하고 **추가**를 클릭합니다.
+3. **애플리케이션 구성 파일** 템플릿을 선택하고 **추가**를 클릭합니다.
 
-##  <a name="define-a-custom-configuration-section"></a>사용자 지정 구성 섹션 정의
+## <a name="define-a-custom-configuration-section"></a>사용자 지정 구성 섹션 정의
 
 *app.config* 파일을 검토합니다. XML 선언과 루트 요소는 반드시 포함되어야 합니다.
 
@@ -64,20 +62,20 @@ ms.locfileid: "53066995"
 
 2. **configSections** 요소 내에 **section** 요소를 만듭니다.
 
-3. **section** 요소에서 `name`이라는 특성을 추가하고 여기에 `microsoft.visualstudio.testtools` 값을 할당합니다. `type`이라는 다른 특성을 추가하고 여기에 `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a` 값을 할당합니다.
+3. **section** 요소에서 `name`이라는 특성을 추가하고 여기에 `microsoft.visualstudio.testtools` 값을 할당합니다. `type`이라는 다른 특성을 추가하고 여기에 `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions` 값을 할당합니다.
 
 **section** 요소는 다음과 유사하게 표시됩니다.
 
 ```xml
-<section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+<section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions" />
 ```
 
 > [!NOTE]
-> 어셈블리 이름은 사용 중인 Microsoft Visual Studio .NET Framework 빌드와 일치해야 합니다. Visual Studio .NET Framework 3.5를 사용 중인 경우 버전을 9.0.0.0으로 설정합니다. Visual Studio .NET Framework 2.0을 사용 중인 경우 버전을 8.0.0.0으로 설정합니다.
+> 어셈블리 이름이 사용 중인 버전과 일치해야 합니다.
 
 ## <a name="define-connection-strings"></a>연결 문자열 정의
 
-연결 문자열은 데이터 소스 액세스를 위한 공급자 특정 정보를 정의합니다. 구성 파일에 정의된 연결 문자열은 응용 프로그램 전체에서 재사용 가능한 데이터 공급자 정보를 제공합니다. 이 섹션에서는 사용자 지정 구성 섹션에 정의된 데이터 원본에서 사용되는 두 개의 연결 문자열을 만듭니다.
+연결 문자열은 데이터 소스 액세스를 위한 공급자 특정 정보를 정의합니다. 구성 파일에 정의된 연결 문자열은 애플리케이션 전체에서 재사용 가능한 데이터 공급자 정보를 제공합니다. 이 섹션에서는 사용자 지정 구성 섹션에 정의된 데이터 원본에서 사용되는 두 개의 연결 문자열을 만듭니다.
 
 ### <a name="to-define-connection-strings"></a>연결 문자열을 정의하려면
 

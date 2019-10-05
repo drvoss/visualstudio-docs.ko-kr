@@ -1,14 +1,9 @@
 ---
 title: IDebugEngine3 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugEngine3
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 8bdf4bb7-3b5d-4991-8981-772d4f6bb656
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f66a17335c2bd9a4401f8490887f7ab2ab77ae80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1e43da0b05062c6c7b1c4d3cfe771ff0b93f83a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760995"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195786"
 ---
 # <a name="idebugengine3"></a>IDebugEngine3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ IDebugEngine3 : IDebugEngine2
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
  상속 된 메서드 외에도 [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md), `IDebugEngine3` 인터페이스는 다음 메서드를 노출 합니다.  
   
-|메서드|설명|  
+|메서드|Description|  
 |------------|-----------------|  
 |[SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)|디버깅 기호를 검색 하는 DE는 데 사용할 경로 또는 경로 설정 합니다.|  
 |[LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)|기호를 로드 아직 발생 하지 않은 모든 모듈에 대 한 기호를 로드 합니다.|  
@@ -55,10 +50,9 @@ IDebugEngine3 : IDebugEngine2
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
-

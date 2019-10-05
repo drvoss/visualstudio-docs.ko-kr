@@ -1,27 +1,22 @@
 ---
 title: VSCT XML 스키마 조건부 특성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, conditional attributes
 - conditional attributes (VSCT XML schema)
 ms.assetid: 754d4f32-319b-44c9-915f-f7c60e53222e
 caps.latest.revision: 6
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9524f1306c86f110498d71d4057378cd834d207b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6294ee8027b61840149096561efc91b8a4a3c3ec
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62422164"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>VSCT XML 스키마 조건부 특성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,8 +37,8 @@ ms.locfileid: "51817245"
 |(,)|그룹화|  
 |!|논리 NOT|  
 |\<, >, \<=, >=, ==, !=|관계형 및 같음|  
-|를 갖는|부울|  
-|또는|부울|  
+|및|Boolean|  
+|또는|Boolean|  
   
 ## <a name="examples"></a>예제  
   
@@ -78,4 +73,3 @@ and !Defined(DEBUG)">
   
 ## <a name="see-also"></a>참고 항목  
  [Visual Studio 명령 테이블(.Vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

@@ -1,27 +1,22 @@
 ---
 title: Visual Studio Shell | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - shell, Visual Studio
 - Visual Studio, shell
 ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7ebe79d8ee93206e8d7950112386793a65812d38
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2ec79aab58e167ff2c935317897ba10a042a2e5a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180363"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,21 +36,21 @@ ms.locfileid: "51748908"
   
 - 공유 서비스와 같은 특정 관리 <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>, 기본 셸 기능을 제공 하는 및 <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, 기본적인 창 관리 기능을 제공 하는 합니다.  
   
-- 솔루션 (.sln) 파일을 관리 합니다. 솔루션 관련된 프로젝트를 Visual c + + 6.0에서 작업 영역 (.dsw) 파일과 유사한 그룹에 포함 됩니다.  
+- 솔루션 (.sln) 파일을 관리 합니다. 시각적 개체의 작업 영역 (.dsw) 파일과 유사한 관련된 프로젝트의 그룹을 포함 하는 솔루션 C++ 6.0.  
   
 - 셸 전체 선택 영역 추적, 컨텍스트 및 통화입니다. 셸은은 다음과 같은 유형의 항목을 추적합니다.  
   
-  -   현재 프로젝트  
+  - 현재 프로젝트  
   
-  -   현재 프로젝트 항목 또는 현재 ItemID <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
+  - 현재 프로젝트 항목 또는 현재 ItemID <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
   
-  -   현재 선택을 합니다 **속성** 창 또는 `SelectionContainer`  
+  - 현재 선택을 합니다 **속성** 창 또는 `SelectionContainer`  
   
-  -   Id 또는 CmdUIGuids 명령, 메뉴 및 도구 모음의 표시 유형을 제어 하는 UI 컨텍스트  
+  - Id 또는 CmdUIGuids 명령, 메뉴 및 도구 모음의 표시 유형을 제어 하는 UI 컨텍스트  
   
-  -   활성 창, 문서 및 실행 취소 관리자와 같은 현재 요소  
+  - 활성 창, 문서 및 실행 취소 관리자와 같은 현재 요소  
   
-  -   동적 도움말을 구동 하는 사용자 컨텍스트 특성  
+  - 동적 도움말을 구동 하는 사용자 컨텍스트 특성  
   
   셸에는 설치 된 Vspackage 및 현재 서비스 간의 통신은 중재합니다. Shell의 주요 기능을 지원 하 고 통합 하는 모든 Vspackage를 사용할 수 있게 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]합니다. 이러한 핵심 기능에 다음 항목을 포함 합니다.  
   
@@ -91,4 +86,3 @@ ms.locfileid: "51748908"
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>   
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>   
  [VSPackage](../../extensibility/internals/vspackages.md)
-

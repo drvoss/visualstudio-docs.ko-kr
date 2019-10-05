@@ -1,23 +1,20 @@
 ---
 title: '방법: 끌어서 놓기 처리기 추가 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 39ee88a0-85c3-485e-8c0a-d9644c6b25d9
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f89ea35c9113ddff67a9d1322b1c83c41e05709a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 54218fd5c351b400ce9744620987f50d35e0558f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848984"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825390"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>방법: 끌어서 놓기 처리기 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,19 +25,19 @@ ms.locfileid: "49848984"
   
 ## <a name="in-this-topic"></a>항목 내용  
   
--   처음 두 섹션에서는 제스처 처리기를 정의하는 여러 방법에 대해 설명합니다.  
+- 처음 두 섹션에서는 제스처 처리기를 정의하는 여러 방법에 대해 설명합니다.  
   
-    -   [ShapeElement 메서드를 재정의 하 여 제스처 처리기 정의](#overrideShapeElement)합니다. `OnDragDrop`, `OnDoubleClick`, `OnDragOver` 및 기타 메서드를 재정의할 수 있습니다.  
+  - [ShapeElement 메서드를 재정의 하 여 제스처 처리기 정의](#overrideShapeElement)합니다. `OnDragDrop`, `OnDoubleClick`, `OnDragOver` 및 기타 메서드를 재정의할 수 있습니다.  
+
+  - [MEF를 사용 하 여 제스처 처리기 정의](#MEF)합니다. 타사 개발자가 DSL에 대해 고유한 처리기를 정의할 수 있도록 하려면 이 메서드를 사용합니다. 사용자는 DSL을 설치한 후 타사 확장을 설치할 수 있습니다.  
   
-    -   [MEF를 사용 하 여 제스처 처리기 정의](#MEF)합니다. 타사 개발자가 DSL에 대해 고유한 처리기를 정의할 수 있도록 하려면 이 메서드를 사용합니다. 사용자는 DSL을 설치한 후 타사 확장을 설치할 수 있습니다.  
+- [끌어 온된 항목을 디코딩하는 방법](#extracting)합니다. 임의의 창이나 바탕 화면 또는 DSL에서 요소를 끌 수 있습니다.  
   
--   [끌어 온된 항목을 디코딩하는 방법](#extracting)합니다. 임의의 창이나 바탕 화면 또는 DSL에서 요소를 끌 수 있습니다.  
+- [끌어 온 항목 원본을 가져오는 방법](#getOriginal)합니다. 끌어 온 항목이 DSL 요소이면 소스 모델을 열어 해당 요소에 액세스할 수 있습니다.  
   
--   [끌어 온 항목 원본을 가져오는 방법](#getOriginal)합니다. 끌어 온 항목이 DSL 요소이면 소스 모델을 열어 해당 요소에 액세스할 수 있습니다.  
+- [마우스 작업 사용: 구획 항목 끌기](#mouseActions)합니다. 이 샘플에서는 모양 필드에서 마우스 작업을 가로채는 낮은 수준의 처리기를 보여줍니다. 사용자는 이 예를 토대로 마우스로 항목을 끌어 구획에서 항목 순서를 변경할 수 있습니다.  
   
--   [마우스 작업 사용: 구획 항목 끌기](#mouseActions)합니다. 이 샘플에서는 모양 필드에서 마우스 작업을 가로채는 낮은 수준의 처리기를 보여줍니다. 사용자는 이 예를 토대로 마우스로 항목을 끌어 구획에서 항목 순서를 변경할 수 있습니다.  
-  
-##  <a name="overrideShapeElement"></a> ShapeElement 메서드를 재정의 하 여 제스처 처리기 정의  
+## <a name="overrideShapeElement"></a> ShapeElement 메서드를 재정의 하 여 제스처 처리기 정의  
  DSL 프로젝트에 새 코드 파일을 추가합니다. 일반적으로 제스처 처리기의 경우 최소한 다음 `using` 문을 포함해야 합니다.  
   
 ```csharp  
@@ -91,14 +88,14 @@ using System.Linq;
   
   끌어 온 항목이 적절한지 여부를 확인하도록 `IsAcceptableDropItem(e)`을 정의하고 항목을 놓을 때 모델을 업데이트하도록 ProcessDragDropItem(e)을 정의합니다. 이러한 메서드는 먼저 이벤트 인수에서 항목을 추출해야 합니다. 그렇게 하는 방법에 대 한 정보를 참조 하세요 [끌어 온된 항목에 대 한 참조를 가져오는 방법을](#extracting)합니다.  
   
-##  <a name="MEF"></a> MEF를 사용 하 여 제스처 처리기 정의  
- MEF(Managed Extensibility Framework)를 사용하면 최소한의 구성으로 설치 가능한 구성 요소를 정의할 수 있습니다. 자세한 내용은 [MEF(관리되는 확장성 프레임워크 개요)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)를 참조하십시오.  
+## <a name="MEF"></a> MEF를 사용 하 여 제스처 처리기 정의  
+ MEF(Managed Extensibility Framework)를 사용하면 최소한의 구성으로 설치 가능한 구성 요소를 정의할 수 있습니다. 자세한 내용은 [MEF(관리되는 확장성 프레임워크 개요)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)를 참조하십시오.  
   
 #### <a name="to-define-a-mef-gesture-handler"></a>MEF 제스처 처리기를 정의하려면  
   
-1.  추가할 사용자 **Dsl** 및 **DslPackage** 프로젝트를 **MefExtension** 파일에 설명 된 [MEF를 사용 하 여 DSL 확장](../modeling/extend-your-dsl-by-using-mef.md)합니다.  
+1. 추가할 사용자 **Dsl** 및 **DslPackage** 프로젝트를 **MefExtension** 파일에 설명 된 [MEF를 사용 하 여 DSL 확장](../modeling/extend-your-dsl-by-using-mef.md)합니다.  
   
-2.  이제 제스처 처리기를 MEF 구성 요소로 정의할 수 있습니다.  
+2. 이제 제스처 처리기를 MEF 구성 요소로 정의할 수 있습니다.  
   
     ```  
   
@@ -132,18 +129,18 @@ using System.Linq;
   
      여러 형식의 개체를 끌어 온 등의 경우에는 둘 이상의 제스처 처리기 구성 요소를 만들 수 있습니다.  
   
-3.  대상 모양, 연결선 또는 다이어그램 클래스에 대해 partial 클래스 정의를 추가하고 `IsAcceptableDropItem()` 및 `ProcessDragDropItem()` 메서드를 정의합니다. 이러한 메서드는 먼저 이벤트 인수에서 끈 항목을 추출해야 합니다. 자세한 내용은 [끌어 온된 항목에 대 한 참조를 가져오는 방법을](#extracting)합니다.  
+3. 대상 모양, 연결선 또는 다이어그램 클래스에 대해 partial 클래스 정의를 추가하고 `IsAcceptableDropItem()` 및 `ProcessDragDropItem()` 메서드를 정의합니다. 이러한 메서드는 먼저 이벤트 인수에서 끈 항목을 추출해야 합니다. 자세한 내용은 [끌어 온된 항목에 대 한 참조를 가져오는 방법을](#extracting)합니다.  
   
-##  <a name="extracting"></a> 끌어 온된 항목을 디코딩하는 방법  
+## <a name="extracting"></a> 끌어 온된 항목을 디코딩하는 방법  
  사용자가 다이어그램으로 항목을 끌거나 다이어그램의 부분 간에 항목을 끌 때는 끌어 놓는 항목에 대한 정보를 `DiagramDragEventArgs`에서 사용할 수 있습니다. 끌기 작업은 화면에 표시된 임의의 개체에서 시작되었을 수 있으므로 다양한 형식 중 하나로 데이터를 사용할 수 있습니다. 코드는 처리 가능한 형식을 인식해야 합니다.  
   
  끌기 소스 정보를 사용할 수 있는 형식을 검색하려면 `OnDragOver()` 또는 `CanDragDrop()` 진입 위치에 중단점을 설정하여 디버깅 모드에서 코드를 실행합니다. `DiagramDragEventArgs` 매개 변수의 값을 검사합니다. 정보는 두 가지 형식으로 제공됩니다.  
   
 - <xref:System.Windows.Forms.IDataObject>  `Data` –이 속성은 보통 둘 이상의 형식으로 원본 개체의 serialize 된 버전을 제공 합니다. 이 속성의 가장 유용한 기능은 다음과 같습니다.  
   
-  -   diagramEventArgs.Data.GetDataFormats() - 끌어 온 개체를 디코딩할 수 있는 형식을 나열합니다. 예를 들어 사용자가 바탕 화면에서 파일을 끄는 경우 사용 가능한 형식에는 파일 이름("`FileNameW`")이 포함됩니다.  
+  - diagramEventArgs.Data.GetDataFormats() - 끌어 온 개체를 디코딩할 수 있는 형식을 나열합니다. 예를 들어 사용자가 바탕 화면에서 파일을 끄는 경우 사용 가능한 형식에는 파일 이름("`FileNameW`")이 포함됩니다.  
   
-  -   `diagramEventArgs.Data.GetData(format)` - 끌어 온 개체를 지정된 형식으로 디코딩하고 적절한 형식으로 개체를 캐스팅합니다. 예를 들면 다음과 같습니다.  
+  - `diagramEventArgs.Data.GetData(format)` - 끌어 온 개체를 지정된 형식으로 디코딩하고 적절한 형식으로 개체를 캐스팅합니다. 예를 들어:  
   
        `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`  
   
@@ -166,22 +163,22 @@ using System.Linq;
   
   `DiagramDragEventArgs`에는 현재 마우스 포인터 위치와 사용자가 Ctrl, Alt, Shift 키를 누르고 있는지 여부를 나타내는 속성도 있습니다.  
   
-##  <a name="getOriginal"></a> 끌어 온 요소의 원본을 가져오는 방법  
+## <a name="getOriginal"></a> 끌어 온 요소의 원본을 가져오는 방법  
  이벤트 인수의 `Data` 및 `Prototype` 속성은 끌어 온 모양의 참조만을 포함합니다. 일반적으로는 특정 방식으로 프로토타입에서 파생되는 대상 DSL에 개체를 만들려면 파일 내용을 읽거나 모양이 표시하는 모델 요소로 이동하는 등의 방법으로 원본에 액세스해야 합니다.  Visual Studio ModelBus를 사용하면 원본에 액세스할 수 있습니다.  
   
 ### <a name="to-prepare-a-dsl-project-for-model-bus"></a>ModelBus용 DSL 프로젝트를 준비하려면  
   
-1.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus에서 소스 DSL에 액세스할 수 있도록 설정합니다.  
+1. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus에서 소스 DSL에 액세스할 수 있도록 설정합니다.  
   
-    1.  Visual Studio ModelBus 확장을 이미 설치하지 않은 경우 다운로드하여 설치합니다. 자세한 내용은 [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)합니다.  
+    1. Visual Studio ModelBus 확장을 이미 설치하지 않은 경우 다운로드하여 설치합니다. 자세한 내용은 [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)합니다.  
   
-    2.  DSL Designer에서 소스 DSL의 DSL 정의 파일을 엽니다. 디자인 화면을 마우스 오른쪽 단추로 누른 **Modelbus**합니다. 대화 상자에서 옵션 중 하나 또는 둘 다를 선택합니다.  **확인**을 클릭합니다. "ModelBus"라는 새 프로젝트가 DSL 솔루션에 추가됩니다.  
+    2. DSL Designer에서 소스 DSL의 DSL 정의 파일을 엽니다. 디자인 화면을 마우스 오른쪽 단추로 누른 **Modelbus**합니다. 대화 상자에서 옵션 중 하나 또는 둘 다를 선택합니다.  **확인**을 클릭합니다. "ModelBus"라는 새 프로젝트가 DSL 솔루션에 추가됩니다.  
   
-    3.  클릭 **모든 템플릿 변환** 는 솔루션을 다시 빌드합니다.  
+    3. 클릭 **모든 템플릿 변환** 는 솔루션을 다시 빌드합니다.  
   
-###  <a name="mbr"></a> 소스 DSL에서에서 개체를 보내려면  
+### <a name="mbr"></a> 소스 DSL에서에서 개체를 보내려면  
   
-1.  ElementOperations 서브클래스에서 `Copy()`를 재정의하여 MBR(모델 버스 참조)을 IDataObject로 인코딩하도록 지정합니다. 사용자가 소스 다이어그램에서 끌기를 시작하면 이 메서드가 호출됩니다. 그러면 사용자가 대상 다이어그램에 개체를 놓을 때 인코딩된 MBR을 IDataObject에서 사용할 수 있습니다.  
+1. ElementOperations 서브클래스에서 `Copy()`를 재정의하여 MBR(모델 버스 참조)을 IDataObject로 인코딩하도록 지정합니다. 사용자가 소스 다이어그램에서 끌기를 시작하면 이 메서드가 호출됩니다. 그러면 사용자가 대상 다이어그램에 개체를 놓을 때 인코딩된 MBR을 IDataObject에서 사용할 수 있습니다.  
   
     ```  
   
@@ -223,13 +220,13 @@ using System.Linq;
   
 ### <a name="to-receive-a-model-bus-reference-from-a-dsl-in-a-target-dsl-or-uml-project"></a>DSL에서 보낸 모델 버스 참조를 대상 DSL 또는 UML 프로젝트에서 수신하려면  
   
-1.  대상 DSL 프로젝트에서 다음 항목에 대한 참조를 추가합니다.  
+1. 대상 DSL 프로젝트에서 다음 항목에 대한 참조를 추가합니다.  
   
-    -   소스 DSL 프로젝트  
+    - 소스 DSL 프로젝트  
   
-    -   소스 ModelBus 프로젝트  
+    - 소스 ModelBus 프로젝트  
   
-2.  제스처 처리기 코드 파일에서 다음 네임스페이스 참조를 추가합니다.  
+2. 제스처 처리기 코드 파일에서 다음 네임스페이스 참조를 추가합니다.  
   
     ```csharp  
     using Microsoft.VisualStudio.Modeling;  
@@ -242,7 +239,7 @@ using System.Linq;
   
     ```  
   
-3.  다음 샘플에서는 소스 모델 요소에 액세스하는 방법을 보여줍니다.  
+3. 다음 샘플에서는 소스 모델 요소에 액세스하는 방법을 보여줍니다.  
   
     ```  
     partial class MyTargetShape // or diagram or connector   
@@ -290,7 +287,7 @@ using System.Linq;
   
 ### <a name="to-accept-an-element-sourced-from-a-uml-model"></a>UML 모델을 소스로 사용하는 요소를 수락하려면  
   
--   다음 코드 샘플은 UML 다이어그램에서 놓은 개체를 수락합니다.  
+- 다음 코드 샘플은 UML 다이어그램에서 놓은 개체를 수락합니다.  
   
     ```csharp  
   
@@ -339,7 +336,7 @@ using System.Linq;
   
     ```  
   
-##  <a name="mouseActions"></a> 마우스 작업 사용: 구획 항목 끌기  
+## <a name="mouseActions"></a> 마우스 작업 사용: 구획 항목 끌기  
  모양 필드에서 마우스 작업을 가로채는 처리기를 작성할 수 있습니다. 사용자는 다음 예를 토대로 마우스로 항목을 끌어 구획에서 항목 순서를 변경할 수 있습니다.  
   
  이 예제를 빌드하려면를 사용 하 여 솔루션을 만들 합니다 **클래스 다이어그램** 솔루션 템플릿. 이때 코드 파일과 다음 코드를 추가하고 네임스페이스를 실제 네임스페이스와 동일하게 조정합니다.  
@@ -593,6 +590,3 @@ namespace Company.CompartmentDrag  // EDIT.
 ## <a name="see-also"></a>참고 항목  
  [복사 동작 사용자 지정](../modeling/customizing-copy-behavior.md)   
  [도메인별 언어 솔루션 배포](../modeling/deploying-domain-specific-language-solutions.md)
-
-
-

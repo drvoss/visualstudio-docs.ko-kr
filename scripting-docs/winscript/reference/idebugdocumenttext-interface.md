@@ -2,7 +2,6 @@
 title: IDebugDocumentText 인터페이스 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 763678b08c22fe34ec6ffebbe670fb8b50af6576
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8878e1ce6e9ad05fc94b134a2e71847b67d578d2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843459"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008617"
 ---
 # <a name="idebugdocumenttext-interface"></a>IDebugDocumentText 인터페이스
 디버그 문서의 텍스트 전용 버전에 대한 액세스를 제공합니다. 이 인터페이스는 다음 규칙을 사용 합니다.  

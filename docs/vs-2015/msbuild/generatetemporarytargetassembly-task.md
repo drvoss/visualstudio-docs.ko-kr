@@ -1,14 +1,9 @@
 ---
 title: GenerateTemporaryTargetAssembly 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -23,18 +18,17 @@ ms.assetid: 92b6539c-6897-45e0-8989-0c234bbfe782
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1dd1df7ce9d7672917296207e38a846ff69aba5a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2ce412fdeb8d466708f3231cba14718d13720c69
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205169"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676621"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 프로젝트에서 하나 이상의 [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] 페이지가 해당 프로젝트에서 로컬로 선언된 형식을 참조할 경우 <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> 작업은 어셈블리를 생성합니다. 생성된 어셈블리는 빌드 프로세스가 완료된 후 또는 빌드 프로세스가 실패하는 경우에 제거됩니다.  
   
 ## <a name="task-parameters"></a>작업 매개 변수  
@@ -51,7 +45,7 @@ ms.locfileid: "49205169"
 |`ReferencePath`|선택적 **ITaskItem[]** 매개 변수입니다.<br /><br /> 임시 대상 어셈블리로 컴파일되는 형식에 의해 참조되는 어셈블리 목록을 경로 및 파일 이름별로 지정합니다.|  
 |`ReferencePathTypeName`|필수 **String** 매개 변수입니다.<br /><br /> 어셈블리 참조의 목록(**ReferencePath**)을 지정하는 컴파일 대상(**CompileTargetName**) 매개 변수에 사용되는 매개 변수를 지정합니다. 적절한 값은 **ReferencePath**입니다.|  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md)에 의해 실행되는 첫 번째 마크업 컴파일 패스는 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 파일을 이진 형식으로 컴파일합니다. 결과적으로 컴파일러에는 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 파일에서 사용되는 혀식을 포함하는 참조된 어셈블리 목록이 필요합니다. 그러나 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 파일이 동일한 프로젝트에 정의된 형식을 사용하는 경우 프로젝트가 빌드될 때까지 해당 프로젝트의 해당 어셈블리는 만들어지지 않습니다. 따라서 첫 번째 마크업 컴파일 패스 동안 어셈블리 참조가 제공될 수 없습니다.  
   
  대신, **MarkupCompilePass1**는 동일한 프로젝트의 형식에 대한 참조를 포함하는 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 파일의 변환을 [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md)에 의해 실행되는 두 번째 마크업 컴파일 패스로 연기합니다. **MarkupCompilePass2**가 실행되기 전에 임시 어셈블리가 생성됩니다. 이 어셈블리에는 해당 마크업 컴파일 패스가 지연되는 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 파일에서 사용되는 형식이 포함됩니다. 지연된 컴파일 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 파일이 이진 형식으로 변환될 수 있도록 하기 위해 생성된 어셈블리에 대한 참조가 **MarkupCompilePass2** 실행 시에 제공됩니다.  
@@ -84,8 +78,5 @@ ms.locfileid: "49205169"
  [작업 참조](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild 참조](../msbuild/msbuild-reference.md)   
  [작업 참조](../msbuild/msbuild-task-reference.md)   
- [WPF 응용 프로그램 빌드(WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
- [WPF XAML 브라우저 응용 프로그램 개요](http://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)
-
-
-
+ [WPF 애플리케이션 빌드(WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
+ [WPF XAML 브라우저 애플리케이션 개요](https://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)

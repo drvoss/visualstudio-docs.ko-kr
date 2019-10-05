@@ -1,25 +1,20 @@
 ---
 title: 모범 사례 및 예제 (SAL) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 666276fb-99c2-4dc9-8bac-d74861c203ea
 caps.latest.revision: 14
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 9327ab850bb5f62158e48abc4c8445d3f9b6fe9b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 56e57d182a21429d73b8eae0b79f96532732ae7b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743744"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428575"
 ---
 # <a name="best-practices-and-examples-sal"></a>모범 사례 및 예제(SAL)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -246,7 +241,7 @@ _Ret_maybenull_ void *MightReturnNullPtr2();
  이 예제에서 `_Out_opt_`는 포인터가 사전 조건의 일부로 NULL일 수 있는 것으로 지정합니다. 하지만 사전 조건은 반환 값에 적용할 수 없습니다. 이 경우에 올바른 주석은 `_Ret_maybenull_`입니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [C/c + + 코드 오류를 줄이기 위한 SAL 주석 사용](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [SAL 주석은 C를 줄이기 위해 사용 하 여 /C++ 오류 코드](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [SAL 이해](../code-quality/understanding-sal.md)   
  [함수 매개 변수 및 반환 값에 주석 지정](../code-quality/annotating-function-parameters-and-return-values.md)   
  [함수 동작에 주석 지정](../code-quality/annotating-function-behavior.md)   
@@ -254,6 +249,3 @@ _Ret_maybenull_ void *MightReturnNullPtr2();
  [잠금 동작에 주석 지정](../code-quality/annotating-locking-behavior.md)   
  [주석 적용 시기 및 위치 지정](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [내장 함수](../code-quality/intrinsic-functions.md)
-
-
-

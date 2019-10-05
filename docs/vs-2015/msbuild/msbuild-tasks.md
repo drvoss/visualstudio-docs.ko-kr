@@ -1,14 +1,9 @@
 ---
 title: MSBuild 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - tasks
 - MSBuild, tasks
@@ -16,18 +11,17 @@ ms.assetid: 5d3cc4a7-e5db-4f73-b707-8b6882fddcf8
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dff7c0ce45c71340f3b931e32843adb6a90ea075
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 756c19da1aeb8878c2d045f4ee471d8449d2a954
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154811"
 ---
 # <a name="msbuild-tasks"></a>MSBuild 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 빌드 플랫폼에는 빌드 프로세스 중에 동작을 필요한 수만큼 실행할 수 있는 기능이 필요합니다. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에서는 *작업*을 통해 이러한 동작을 수행합니다. 작업은 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에서 원자성 빌드 작업을 수행하는 데 사용하는 실행 코드 단위입니다.  
   
 ## <a name="task-logic"></a>작업 논리  
@@ -78,5 +72,3 @@ ms.locfileid: "49176702"
  [MSBuild](msbuild.md)   
  [작업 작성](../msbuild/task-writing.md)   
  [인라인 작업](../msbuild/msbuild-inline-tasks.md)
-
-

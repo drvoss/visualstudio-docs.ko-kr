@@ -2,7 +2,6 @@
 title: IActiveScriptProfilerControl2 인터페이스 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9bc0dfa31b37a6bf99427c8eddfe2bd038da9b9d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 11987054ed934f4004333f136ea35696ff6c394f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993036"
 ---
 # <a name="iactivescriptprofilercontrol2-interface"></a>IActiveScriptProfilerControl2 인터페이스
 시작 하거나 스크립트를 실행 중일 때 프로 파일링을 중지 하는 기능을 추가 하는 메서드를 제공 합니다.  
@@ -28,8 +27,8 @@ ms.locfileid: "24724753"
   
 |메서드|설명|  
 |------------|-----------------|  
-|[IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)|적용 가능한 모든 스크립팅 엔진에서 프로 파일링 시작 했다고 프로파일러에 알립니다. 따라서 완전 한 호출 스택을 얻을 수 있습니다 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 프로 파일링을 시작 하는 경우를 실행 합니다.|  
-|[IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)|적용 가능한 모든 스크립팅 엔진에서 프로 파일링을 중지 하려는 프로파일러에 알립니다. 이렇게 하면 경우 완전 한 호출 스택이 가져오려면 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 프로 파일링을 중지 하는 경우를 실행 합니다.|  
+|[IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)|모든 적용 가능한 스크립팅 엔진에서 프로 파일링 시작 했다고 프로파일러에 알립니다. 이렇게 하면 전체 호출 스택을 확인할 수 있습니다 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 프로 파일링을 시작할 때 실행 됩니다.|  
+|[IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)|모든 적용 가능한 스크립팅 엔진에서 프로 파일링을 중지 하려는 프로파일러에 알립니다. 이렇게 하면 전체 호출 스택을 확인할 수 있습니다 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 프로 파일링을 중지 하면 실행 됩니다.|  
   
 ## <a name="see-also"></a>참고 항목  
  [IActiveScriptProfilerControl 인터페이스](../../winscript/reference/iactivescriptprofilercontrol-interface.md)   

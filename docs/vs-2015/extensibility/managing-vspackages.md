@@ -1,14 +1,9 @@
 ---
 title: Vspackage 관리 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, autoloading
 - VSPackages, delayed loading
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 386e0ce5-4107-4164-b0cd-1cf43eb5e7cf
 caps.latest.revision: 36
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8cb96dfbdecd5182d328d425a209f52833ede23c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0b56ab490342cfbda9c16408aa0937abd80728c9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194383"
 ---
 # <a name="managing-vspackages"></a>VSPackage 관리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,14 +35,13 @@ ms.locfileid: "51781597"
  Vspackage는 CMDUICONTEXT GUID 켜져 특정 autoload를 설정할 수 있습니다. 자세한 내용은 [Vspackage 로드](../extensibility/loading-vspackages.md)합니다.  
   
 ## <a name="using-asyncpackage-to-load-vspackages-in-the-background"></a>AsyncPackage를 사용 하 여 백그라운드에서 Vspackage를 로드 합니다.  
- AsyncPackage 클래스에는 Visual Studio에서 UI 응답성 향상에 대 한 백그라운드 스레드에서 로드 패키지 수 있습니다. 자세한 내용은 [방법: 백그라운드에서 로드 Vspackage를 사용 하 여 AsyncPackage](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md)합니다.  
+ AsyncPackage 클래스에는 Visual Studio에서 UI 응답성 향상에 대 한 백그라운드 스레드에서 로드 패키지 수 있습니다. 자세한 내용은 [방법: AsyncPackage를 사용 하 여 백그라운드에서 Vspackage를 로드](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md)합니다.  
   
 ## <a name="rule-based-ui-context-for-extensions"></a>확장에 대 한 규칙 기반 UI 컨텍스트  
- 규칙 기반 UI 컨텍스트 확장 작성자를는 UI 컨텍스트의 활성화 되 고 연결된 Vspackage 로드 정확한 조건을 정의할 수 있습니다. 자세한 내용은 [방법: Visual Studio 확장에 대 한 사용 하 여 규칙 기반 UI 컨텍스트](../extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)합니다.  
+ 규칙 기반 UI 컨텍스트 확장 작성자를는 UI 컨텍스트의 활성화 되 고 연결된 Vspackage 로드 정확한 조건을 정의할 수 있습니다. 자세한 내용은 [방법: 규칙 기반 UI 컨텍스트를 사용 하 여 Visual Studio 확장에 대 한](../extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)합니다.  
   
 ## <a name="troubleshooting-vspackages"></a>VSPackage 문제 해결  
- Vspackage 로드 안 함 또는 오류가 발생 하는 문제 해결을 위한 기술을 확인: [Vspackage 문제 해결](../extensibility/troubleshooting-vspackages.md)  
+ Vspackage 로드 안 함 또는 오류가 발생 하는 문제 해결을 위한 기술을 확인 합니다. [VSPackage 문제 해결](../extensibility/troubleshooting-vspackages.md)  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [VSPackage](../extensibility/internals/vspackages.md)
-

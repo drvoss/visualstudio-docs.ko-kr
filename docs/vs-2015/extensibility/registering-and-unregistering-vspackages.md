@@ -1,27 +1,22 @@
 ---
 title: 등록 하 고 Vspackage 등록 취소 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, VSPackages
 - VSPackages, registering
 ms.assetid: e25e7a46-6a55-4726-8def-ca316f553d6b
 caps.latest.revision: 36
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e14422b7430dc0429954bf11c77b30619fb7f7da
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1f6bc85fb00c15831dcf1a9f64e4b886272df218
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193825"
 ---
 # <a name="registering-and-unregistering-vspackages"></a>VSPackage 등록 및 등록 취소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,6 +50,5 @@ public sealed class BasicPackage : Package
 <location of Visual Studio 2015 install>\"Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin\regpkg” /unregister <pathToVSPackage assembly>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [VSPackage](../extensibility/internals/vspackages.md)
-

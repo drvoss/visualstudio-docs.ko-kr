@@ -2,21 +2,19 @@
 title: Linux에서 원격 R 서비스 설정
 description: Ubuntu 및 Linux용 Windows 하위 시스템에서 원격 R 서비스를 설정하는 방법입니다.
 ms.date: 12/04/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 ms.reviewer: karthiknadig
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 81a0a5c26e91056e757bc6e6f68cd217e98c7e06
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: c4d65388db0ef90f807ec85b8c9216d717c2b571
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809559"
 ---
 # <a name="remote-r-service-for-linux"></a>Linux용 원격 R 서비스
 
@@ -168,6 +166,6 @@ Linux용 원격 R 서비스는 현재 rtvs-daemon으로 패키지됩니다. Ubun
     ```bash
     az container create --image myimage:latest --name myaz-container --resource-group myaz-container-res --ip-address public --port 5444 --cpu 2 --memory 4 --command-line "rtvsd"
     ```
+
 1. `az container list` 명령을 사용하여 상태를 확인합니다. `provisioningState`: `Succeeded`를 찾습니다.
 1. 프로비전에 성공하는 경우 이제 컨테이너에 연결할 수 있습니다. `ipAddress` 필드에서 공용 IP 주소를 찾습니다. 여기서는 Docker 파일의 자격 증명을 사용하여 RTVS의 컨테이너에 연결합니다.
-

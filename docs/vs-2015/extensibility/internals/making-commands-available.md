@@ -1,14 +1,9 @@
 ---
 title: 명령을 사용할 수 있도록 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - menus [Visual Studio SDK], commands
 - best practices, menu and toolbar commands
@@ -17,22 +12,22 @@ helpviewer_keywords:
 ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 00ed8231641718b6d0dce8d535b0c43e40b83dd8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cab4244fbf9173895159a4b104260006fc93f0c2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436256"
 ---
 # <a name="making-commands-available"></a>명령을 사용 가능하게 지정
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Visual Studio에 여러 Vspackage를 추가 하는 경우 사용자 인터페이스 (UI) 명령을 사용 하 여 들어오지 될 수 있습니다. 다음과 같이이 문제를 줄이기 위해 패키지를 프로그래밍할 수 있습니다.  
   
--   패키지 프로그램 사용자는 경우에 로드 되도록 필요한 합니다.  
+- 패키지 프로그램 사용자는 경우에 로드 되도록 필요한 합니다.  
   
--   통합된 개발 환경 (IDE)의 현재 상태의 컨텍스트에서 해야 할 수 있습니다 하는 경우에 해당 명령을 표시 되도록 패키지를 프로그래밍 합니다.  
+- 통합된 개발 환경 (IDE)의 현재 상태의 컨텍스트에서 해야 할 수 있습니다 하는 경우에 해당 명령을 표시 되도록 패키지를 프로그래밍 합니다.  
   
 ## <a name="delayed-loading"></a>지연 로드  
  사용 하도록 설정 하는 일반적인 방법은 해당 명령이 UI에 표시 됩니다 있지만 패키지 자체에 사용자가 명령 중 하나를 클릭할 때까지 로드 되지 않습니다 있도록 VSPackage를 디자인 하는 지연 로드. .Vsct 파일에서이 위해 명령 플래그가 없으므로 명령을 만듭니다.  
@@ -64,7 +59,7 @@ Visual Studio에 여러 Vspackage를 추가 하는 경우 사용자 인터페이
 |---------------------|-----------------|  
 |현재 프로젝트 형식|대부분의 프로젝트 형식에 대 한이 `GUID` 값은 프로젝트를 구현 하는 VSPackage의 GUID와 동일 합니다. 그러나 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 프로젝트에 프로젝트 형식을 사용 하 여 `GUID` 값으로.|  
 |활성 창|일반적으로 이것이 키 바인딩에 대 한 현재 UI 컨텍스트를 설정 하는 마지막 활성 문서 창입니다. 그러나 내부 웹 브라우저를 유사한 키 바인딩을 두 테이블에 있는 도구 창 수도 있습니다. HTML 편집기와 같은 다중 탭 문서 창에 대 한 모든 탭에는 다른 명령을 컨텍스트가 `GUID`합니다.|  
-|현재 언어 서비스|텍스트 편집기에 현재 표시 되는 파일과 연관 된 언어 서비스입니다.|  
+|Active Language Service|텍스트 편집기에 현재 표시 되는 파일과 연관 된 언어 서비스입니다.|  
 |활성 도구 창|가 열려 있고 포커스가 있는 도구 창입니다.|  
   
  다섯 번째 주요 상황에 맞는 영역을 IDE의 UI 상태를입니다. 활성 명령 컨텍스트에서 UI 컨텍스트 식별 됩니다 `GUID`같이 s:  
@@ -99,14 +94,14 @@ Visual Studio에 여러 Vspackage를 추가 하는 경우 사용자 인터페이
 ### <a name="custom-context-guids"></a>사용자 지정 컨텍스트 Guid  
  경우 GUID는 아직 정의 되지 않은 적절 한 명령 컨텍스트를 VSPackage의 하나를 정의 하 고 프로그램을 작성 하 게 활성 또는 비활성 명령의 표시 유형을 제어 하려면 필요에 따라 수입니다. 사용 된 <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> 서비스:  
   
--   컨텍스트 Guid를 등록 (호출 하 여는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> 메서드).  
+- 컨텍스트 Guid를 등록 (호출 하 여는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> 메서드).  
   
--   컨텍스트의 상태를 가져올 `GUID` (호출 하 여는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> 메서드).  
+- 컨텍스트의 상태를 가져올 `GUID` (호출 하 여는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> 메서드).  
   
--   컨텍스트를 설정 `GUID`켜고 s (호출 하 여는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> 메서드).  
+- 컨텍스트를 설정 `GUID`켜고 s (호출 하 여는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> 메서드).  
   
     > [!CAUTION]
-    >  VSPackage 영향을 주지 않습니다 모든 기존 컨텍스트 GUID의 상태에 따라 달라질 수 있습니다 다른 Vspackage 때문에 있는지 확인 합니다.  
+    > VSPackage 영향을 주지 않습니다 모든 기존 컨텍스트 GUID의 상태에 따라 달라질 수 있습니다 다른 Vspackage 때문에 있는지 확인 합니다.  
   
 ## <a name="example"></a>예제  
  VSPackage 명령의 다음 예제에서는 VSPackage를 로드 하지 않고 명령 컨텍스트에서 관리 되는 명령의 동적 표시 유형을 보여 줍니다.  
@@ -156,4 +151,3 @@ Visual Studio에 여러 Vspackage를 추가 하는 경우 사용자 인터페이
  [Vspackage에서 사용자 인터페이스 요소를 추가 하는 방법](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Vspackage의 명령 라우팅](../../extensibility/internals/command-routing-in-vspackages.md)   
  [메뉴 항목 동적 추가](../../extensibility/dynamically-adding-menu-items.md)
-

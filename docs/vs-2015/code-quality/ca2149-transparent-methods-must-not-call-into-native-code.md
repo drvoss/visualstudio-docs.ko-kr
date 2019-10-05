@@ -1,14 +1,9 @@
 ---
-title: 'CA2149: 투명 한 메서드 호출 해서는 네이티브 코드로 | Microsoft Docs'
-ms.custom: ''
+title: 'CA2149: 투명 한 메서드는 네이티브 코드를 호출 하지 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2149
 ms.assetid: 28951bd7-f3db-4871-99aa-bad68d1ead80
@@ -16,14 +11,14 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9a70f491064178ce9daa3fbb560b425a366852e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 37d4ee90f5f8732ff4c42b8b086fa56620b97234
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142610"
 ---
-# <a name="ca2149-transparent-methods-must-not-call-into-native-code"></a>CA2149: 투명한 메서드는 네이티브 코드를 호출해서는 안 됩니다.
+# <a name="ca2149-transparent-methods-must-not-call-into-native-code"></a>CA2149: 투명 메서드는 네이티브 코드를 호출해서는 안 됩니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -47,6 +42,3 @@ ms.locfileid: "49821450"
 
 ## <a name="example"></a>예제
  [!code-csharp[FxCop.Security.CA2149.TransparentMethodsMustNotCallNativeCode#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2149.transparentmethodsmustnotcallnativecode/cs/ca2149 - transparentmethodsmustnotcallnativecode.cs#1)]
-
-
-

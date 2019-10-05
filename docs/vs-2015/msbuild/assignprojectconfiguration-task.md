@@ -1,14 +1,9 @@
 ---
 title: AssignProjectConfiguration 작업 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -18,18 +13,17 @@ ms.assetid: 09633a0b-8f6f-4aba-8058-7cb4d13ce2c0
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 57e513dc8b5cb914fd26f23b63e1a7e7d4908b76
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e2091fad7e527990e8ed89ea8622cf41c1ae1ac4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187025"
 ---
 # <a name="assignprojectconfiguration-task"></a>AssignProjectConfiguration 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 이 작업은 목록 구성 문자열을 허용하고 여기에 지정된 프로젝트를 할당합니다.  
   
 ## <a name="task-parameters"></a>작업 매개 변수  
@@ -38,8 +32,8 @@ ms.locfileid: "49290513"
 |매개 변수|설명|  
 |---------------|-----------------|  
 |`SolutionConfigurationContents`|선택적 `string` 출력 매개 변수입니다.<br /><br /> 각 프로젝트에 대한 프로젝트 구성을 포함하는 XML 문자열을 포함합니다. 구성은 명명된 프로젝트에 할당됩니다.|  
-|`DefaultToVcxPlatformMapping`|선택적 `string` 출력 매개 변수입니다.<br /><br /> 대부분의 형식에 사용된 플랫폼 이름에서 .vcxproj 파일에 사용된 이름으로의<br /><br /> 매핑 목록을 세미콜론으로 구분하여 포함합니다.<br /><br /> 예를 들어:<br /><br /> `"AnyCPU=Win32;X86=Win32;X64=X64"`|  
-|`VcxToDefaultPlatformMapping`|Optional<br /><br /> `string` 출력 매개 변수입니다.<br /><br /> .vcxproj 플랫폼 이름에서 대부분의 형식에 사용되는 플랫폼 이름으로의 매핑 목록을 세미콜론으로 구분하여 포함합니다.<br /><br /> 예를 들어:<br /><br /> `"Win32=AnyCPU;X64=X64"`|  
+|`DefaultToVcxPlatformMapping`|선택적 `string` 출력 매개 변수입니다.<br /><br /> 대부분의 형식에 사용된 플랫폼 이름에서 .vcxproj 파일에 사용된 이름으로의<br /><br /> 매핑 목록을 세미콜론으로 구분하여 포함합니다.<br /><br /> 예:<br /><br /> `"AnyCPU=Win32;X86=Win32;X64=X64"`|  
+|`VcxToDefaultPlatformMapping`|Optional<br /><br /> `string` 출력 매개 변수입니다.<br /><br /> .vcxproj 플랫폼 이름에서 대부분의 형식에 사용되는 플랫폼 이름으로의 매핑 목록을 세미콜론으로 구분하여 포함합니다.<br /><br /> 예:<br /><br /> `"Win32=AnyCPU;X64=X64"`|  
 |`CurrentProjectConfiguration`|선택적 `string` 출력 매개 변수입니다.<br /><br /> 현재 프로젝트에 대한 구성을 포함합니다.|  
 |`CurrentProjectPlatform`|선택적 `string` 출력 매개 변수입니다.<br /><br /> 현재 프로젝트에 대한 플랫폼을 포함합니다.|  
 |`OnlyReferenceAndBuildProjectsEnabledInSolutionConfiguration`|선택적 `bool` 출력 매개 변수입니다.<br /><br /> 프로젝트 구성에서 사용되지 않은 경우에도 참조를 빌드해야 함을 나타내는 플래그를 포함합니다.|  
@@ -55,6 +49,3 @@ ms.locfileid: "49290513"
 ## <a name="see-also"></a>참고 항목  
  [작업](../msbuild/msbuild-tasks.md)   
  [작업 참조](../msbuild/msbuild-task-reference.md)
-
-
-

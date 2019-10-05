@@ -1,26 +1,21 @@
 ---
 title: 레거시 언어 서비스 모델 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, model
 ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 76838d6beb5d24f7586ddd44f7bd5400dec4f355
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 27d51df6dd11509b86e6648d59978b87d9cd8a02
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157661"
 ---
 # <a name="model-of-a-legacy-language-service"></a>레거시 언어 서비스 모델
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ ms.locfileid: "51795189"
   
   다음 표에서 모델에서 개체의 개요를 제공합니다.  
   
-|구성 요소|Object|기능|  
+|구성 요소|Object|함수|  
 |---------------|------------|--------------|  
 |텍스트 버퍼|<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>|유니코드 읽기/쓰기 텍스트 스트림입니다. 다른 인코딩을 사용 하는 텍스트는 것이 가능 합니다.|  
 |코드 창|<xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>|하나 이상의 텍스트 뷰를 포함 하는 문서 창입니다. 때 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 는 코드 창 (MDI) 다중 문서 인터페이스 모드로 MDI 자식입니다.|  
@@ -57,4 +52,3 @@ ms.locfileid: "51795189"
   
 ## <a name="see-also"></a>참고 항목  
  [사용자 지정 편집기의 문서 데이터 및 문서 보기](../../extensibility/document-data-and-document-view-in-custom-editors.md)
-

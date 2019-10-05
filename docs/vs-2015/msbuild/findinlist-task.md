@@ -1,14 +1,9 @@
 ---
 title: FindInList 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -21,18 +16,17 @@ ms.assetid: d49b9f84-52a2-4242-9269-b741a7a7e9f7
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d4a9d6a1fc6dbf8f160400ffae10a4a5fb355f3d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d1fdbc29cfe2fb7d387c6f261953930d2f528150
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149728"
 ---
 # <a name="findinlist-task"></a>FindInList 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 지정된 목록에서 일치하는 itemspec이 있는 항목을 찾습니다.  
   
 ## <a name="parameters"></a>매개 변수  
@@ -53,6 +47,3 @@ ms.locfileid: "49206806"
 ## <a name="see-also"></a>참고 항목  
  [작업](../msbuild/msbuild-tasks.md)   
  [작업 참조](../msbuild/msbuild-task-reference.md)
-
-
-

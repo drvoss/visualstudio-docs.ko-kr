@@ -8,15 +8,13 @@ helpviewer_keywords:
 ms.assetid: 31874114-459a-45d5-9f8b-2ea503627db8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 7edc5612015d9e0655dfbf00d4db38ba47fb6da9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: dcd7a3a6e3aca3320cfc016d9e3b5db4aa0991ba
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066446"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786343"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>테스트 비교 또는 추세 분석을 위한 부하 테스트 결과 보고
 

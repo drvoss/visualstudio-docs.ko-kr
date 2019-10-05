@@ -1,23 +1,20 @@
 ---
 title: 상태 시스템 활동 디자이너 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 97f0bff5-7e48-4914-8f04-8015a1c6bfae
 caps.latest.revision: 5
 author: steved0x
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: fff12b5d3ba67f01a210d708081a010c4c20eea1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5efc22f6254ec0040dc4d767d7ac2831b4bd96f7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245520"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949164"
 ---
 # <a name="state-machine-activity-designers"></a>상태 시스템 활동 디자이너
 [!INCLUDE[wfd1](../includes/wfd1-md.md)]에는 워크플로를 생성할 때 사용할 수 있는 여러 가지 활동 디자이너가 포함되어 있습니다. 이 단원에서는 상태 시스템 워크플로를 만들고 관리하는 데 사용되는 시스템 제공 활동 디자이너에 대해 다룹니다. 다음 항목을 통해 이러한 디자이너에 대해 설명하고 사용 방법에 대한 지침을 제공합니다.  

@@ -1,5 +1,5 @@
 ---
-title: 데이터 집합의 데이터 편집
+title: 데이터 세트의 데이터 편집
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,19 +11,17 @@ helpviewer_keywords:
 ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c1ad74243c70b4ca7aaa8460759abbc898d30bb9
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
-ms.translationtype: MT
+ms.openlocfilehash: eb6651d788979343752fac30c4570d955b53068c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757151"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402853"
 ---
-# <a name="edit-data-in-datasets"></a>데이터 집합의 데이터 편집
+# <a name="edit-data-in-datasets"></a>데이터 세트의 데이터 편집
 모든 데이터베이스의 테이블에서 데이터를 편집할 때 처럼 데이터 테이블의에서 데이터를 편집 합니다. 프로세스는 삽입, 업데이트 및 테이블의 레코드를 삭제 하는 중에 포함할 수 있습니다. 데이터 바인딩된 폼에 있는 사용자가 편집 가능한 필드를 지정할 수 있습니다. 이러한 경우 데이터 바인딩 인프라는 모든 변경 내용 추적 나중에 변경 내용을 데이터베이스로 다시 전송 수 있도록 처리 합니다. 프로그래밍 방식으로 데이터를 편집을 수행한 경우 해당 변경 내용을 다시 데이터베이스에 전송 하려는 개체와 수에 대 한 변경 내용 추적을 수행 하는 메서드를 사용 해야 합니다.
 
 실제 데이터를 변경 하는 것 외에도 쿼리할 수도 있습니다는 <xref:System.Data.DataTable> 특정 데이터 행을 반환 합니다. 예를 들어, 개별 행, 행 (원래 및 제안 된)의 특정 버전에서 변경 된 행 또는 오류가 있는 행에 대해 쿼리할 수 있습니다.
@@ -55,12 +53,12 @@ ms.locfileid: "36757151"
 
 #### <a name="to-delete-records-from-a-data-table"></a>데이터 테이블에서 레코드를 삭제 하려면
 
--   호출 된 <xref:System.Data.DataRow.Delete%2A> 메서드는 <xref:System.Data.DataRow>합니다.
+- 호출 된 <xref:System.Data.DataRow.Delete%2A> 메서드는 <xref:System.Data.DataRow>합니다.
 
      이 메서드 레코드를 물리적으로 제거 하지 않습니다. 대신, 삭제에 대 한 레코드를 표시합니다.
 
     > [!NOTE]
-    >  count 속성을 표시 하는 경우는 <xref:System.Data.DataRowCollection>, 결과 횟수가 삭제 표시 된 레코드를 포함 합니다. 컬렉션을 반복할 수 있습니다 삭제 용으로 표시 되지 않은 레코드의 정확한 개수를 가져오려면는 <xref:System.Data.DataRow.RowState%2A> 각 레코드의 속성입니다. (삭제 표시 된 레코드를 <xref:System.Data.DataRow.RowState%2A> 의 <xref:System.Data.DataRowState.Deleted>.) 또는 행 상태에 따라 필터링 하는 데이터 집합의 데이터 뷰를 만들 수 있으며 여기에서 count 속성을 가져올 수 있습니다.
+    > count 속성을 표시 하는 경우는 <xref:System.Data.DataRowCollection>, 결과 횟수가 삭제 표시 된 레코드를 포함 합니다. 컬렉션을 반복할 수 있습니다 삭제 용으로 표시 되지 않은 레코드의 정확한 개수를 가져오려면는 <xref:System.Data.DataRow.RowState%2A> 각 레코드의 속성입니다. (삭제 표시 된 레코드를 <xref:System.Data.DataRow.RowState%2A> 의 <xref:System.Data.DataRowState.Deleted>.) 또는 행 상태에 따라 필터링 하는 데이터 집합의 데이터 뷰를 만들 수 있으며 여기에서 count 속성을 가져올 수 있습니다.
 
 다음 예제에서는 호출 하는 방법을 보여 줍니다 합니다 <xref:System.Data.DataRow.Delete%2A> 첫 번째 행을 표시 하는 방법의 `Customers` 테이블 삭제:
 
@@ -72,15 +70,15 @@ ms.locfileid: "36757151"
 
 변경이 추적 된 두 가지 방법으로 각 데이터 행 합니다.
 
--   와 관련 된 정보를 포함 하는 각 데이터 행의 <xref:System.Data.DataRow.RowState%2A> (예를 들어 <xref:System.Data.DataRowState.Added>, <xref:System.Data.DataRowState.Modified>, <xref:System.Data.DataRowState.Deleted>, 또는 <xref:System.Data.DataRowState.Unchanged>).
+- 와 관련 된 정보를 포함 하는 각 데이터 행의 <xref:System.Data.DataRow.RowState%2A> (예를 들어 <xref:System.Data.DataRowState.Added>, <xref:System.Data.DataRowState.Modified>, <xref:System.Data.DataRowState.Deleted>, 또는 <xref:System.Data.DataRowState.Unchanged>).
 
--   해당 행의 여러 버전을 포함 하는 각 변경 된 데이터 행 (<xref:System.Data.DataRowVersion>), (하기 전에 변경) 원래 버전과 (변경) 후 현재 버전입니다. 변경 보류 중인 경우 기간 (에 응답 하는 경우에 <xref:System.Data.DataTable.RowChanging> 이벤트), 세 번째 버전-제안 된 버전-도 사용할 수 있습니다.
+- 해당 행의 여러 버전을 포함 하는 각 변경 된 데이터 행 (<xref:System.Data.DataRowVersion>), (하기 전에 변경) 원래 버전과 (변경) 후 현재 버전입니다. 변경 보류 중인 경우 기간 (에 응답 하는 경우에 <xref:System.Data.DataTable.RowChanging> 이벤트), 세 번째 버전-제안 된 버전-도 사용할 수 있습니다.
 
 합니다 <xref:System.Data.DataSet.HasChanges%2A> 데이터 집합의 반환 `true` 데이터 집합의 변경 된 경우. 에 변경 된 행이 있는지 확인 한 후 호출할 수 있습니다는 `GetChanges` 메서드를 <xref:System.Data.DataSet> 또는 <xref:System.Data.DataTable> 변경 된 행 집합을 반환 합니다.
 
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>모든 행에 변경 사항이 생겼는지 확인 하려면
 
--   호출 된 <xref:System.Data.DataSet.HasChanges%2A> 메서드를 확인 하는 데이터 집합의 행을 변경 합니다.
+- 호출 된 <xref:System.Data.DataSet.HasChanges%2A> 메서드를 확인 하는 데이터 집합의 행을 변경 합니다.
 
 다음 예제에서는 반환 값을 확인 하는 방법의 <xref:System.Data.DataSet.HasChanges%2A> 변경 된 행 이라는 데이터 집합에 있는지 여부를 검색 하는 방법 `NorthwindDataset1`:
 
@@ -92,7 +90,7 @@ ms.locfileid: "36757151"
 
 #### <a name="to-determine-what-type-of-changes-have-been-made-to-a-row"></a>확인 하려면 어떤 유형의 변경에 적용 된 행
 
--   전달 된 <xref:System.Data.DataRowState> 값을 <xref:System.Data.DataSet.HasChanges%2A> 메서드.
+- 전달 된 <xref:System.Data.DataRowState> 값을 <xref:System.Data.DataSet.HasChanges%2A> 메서드.
 
 다음 예제에서는 명명 된 데이터 집합을 확인 하는 방법을 보여 줍니다 `NorthwindDataset1` 새 행을 추가한 경우를 확인 하려면:
 
@@ -102,9 +100,9 @@ ms.locfileid: "36757151"
 ## <a name="to-locate-rows-that-have-errors"></a>오류가 있는 행을 찾기 위한
 개별 열 및 행의 데이터를 사용할 때 오류가 발생할 수 있습니다. 확인할 수 있습니다 합니다 `HasErrors` 속성에 오류가 있는지 확인 하는 <xref:System.Data.DataSet>를 <xref:System.Data.DataTable>, 또는 <xref:System.Data.DataRow>합니다.
 
-1.  확인 된 `HasErrors` 속성을 데이터 집합에 오류가 있는지 확인 합니다.
+1. 확인 된 `HasErrors` 속성을 데이터 집합에 오류가 있는지 확인 합니다.
 
-2.  경우는 `HasErrors` 속성은 `true`, 테이블의 컬렉션을 반복 차례로 통해 행을 오류 행을 찾습니다.
+2. 경우는 `HasErrors` 속성은 `true`, 테이블의 컬렉션을 반복 차례로 통해 행을 오류 행을 찾습니다.
 
 [!code-csharp[VbRaddataEditing#23](../data-tools/codesnippet/CSharp/edit-data-in-datasets_7.cs)]
 [!code-vb[VbRaddataEditing#23](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_7.vb)]

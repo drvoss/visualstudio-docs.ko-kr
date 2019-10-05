@@ -1,27 +1,22 @@
 ---
 title: ResumeProfile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - ResumeProfile
 ms.assetid: 876f145b-ec07-4240-ade6-4f6e44baadce
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 242c0785523ab1a84279211ba866bf15709724ad
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 289aff1025570d0840eb4f0815b88d9023033a7c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149251"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +72,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
   
  가져오기 라이브러리: VSPerf.lib  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  다음 예제에서는 ResumeProfile 함수를 보여 줍니다. 예제에서는 SuspendProfile 메서드에 대한 호출이 [PROFILE_CURRENTID](../profiling/profile-currentid.md)에서 식별된 동일한 스레드 또는 프로세스에 대해 만들어졌다고 가정합니다.  
   
 ```  
@@ -112,6 +107,3 @@ void ExerciseResumeProfile()
   
 ## <a name="see-also"></a>참고 항목  
  [Visual Studio 프로파일러 API 참조(네이티브)](../profiling/visual-studio-profiler-api-reference-native.md)
-
-
-

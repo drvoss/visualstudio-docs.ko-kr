@@ -1,24 +1,22 @@
 ---
 title: package.json을 포함하는 npm 패키지 구성
 description: package.json을 사용하여 npm 패키지 버전 지정
-ms.custom: ''
 ms.date: 09/06/2018
-ms.technology: vs-nodejs
 ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 711d7b65eb329e844fedb0148006cacb1c7a0ebf
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 652ff7b0380fc03a3f9c8155a2f8696d9dfee5b9
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219097"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692366"
 ---
 # <a name="packagejson-configuration"></a>package.json configuration
 
@@ -26,9 +24,11 @@ ms.locfileid: "50219097"
 
 npm 패키지 버전 관리 시스템에는 엄격한 규칙이 있습니다. 버전 형식은 다음과 같습니다.
 
-    [major].[minor].[patch]
+```
+[major].[minor].[patch]
+```
 
-5.2.1 버전의 앱에 패키지가 있다고 가정해 보겠습니다. 주 버전은 5, 부 버전은 2, 패치는 1입니다.
+5\.2.1 버전의 앱에 패키지가 있다고 가정해 보겠습니다. 주 버전은 5, 부 버전은 2, 패치는 1입니다.
 
 * 주 버전 업데이트에서 패키지에는 이전 버전과 호환되지 않는 새로운 기능 즉, 호환성이 손상되는 변경이 포함됩니다.
 * 부 버전 업데이트에서는 새 기능이 패키지에 추가되었으며 이전 패키지 버전과 호환됩니다.

@@ -1,14 +1,9 @@
 ---
 title: 기호 형식의 계층 구조 클래스 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 0ccd6990-4654-44cd-a6f3-bdd82fe90f6c
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4c400479f761cb7d1bbe02c1aedade916da5596a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3a7b3edb0262e3e2b4f0cde51b499e25b04aba51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793037"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442905"
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>기호 형식의 클래스 계층 구조
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,12 +46,9 @@ ms.locfileid: "51793037"
 |[크기](../../debugger/debug-interface-access/dimension.md)|배열 차원에 대 한 기호입니다.|  
   
 > [!NOTE]
->  각 기호가 기호 뿐만 아니라 다른 기호에 대 한 참조에 대 한 정보를 포함 하는 속성을 가질 수 있습니다. 이러한 속성은 개별 기호 항목에 나열 됩니다.  
+> 각 기호가 기호 뿐만 아니라 다른 기호에 대 한 참조에 대 한 정보를 포함 하는 속성을 가질 수 있습니다. 이러한 속성은 개별 기호 항목에 나열 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [CV_access_e 열거형](../../debugger/debug-interface-access/cv-access-e.md)   
  [기호 형식의 어휘 계층 구조](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
  [기호 및 기호 태그](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
-
-
-

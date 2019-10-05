@@ -1,8 +1,6 @@
 ---
 title: '방법: 최적화 된 코드 디버깅 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -20,17 +18,17 @@ helpviewer_keywords:
 ms.assetid: fc8eeeb8-6629-4c9b-99f7-2016aee81dff
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6e212129c17ec7b4fe6cb9a6808c91cb302deb3
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: MTE95
+ms.openlocfilehash: 9b498bdb491e3a15dddf005d43435d84b837fcd0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52387865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387753"
 ---
-# <a name="how-to-debug-optimized-code"></a>방법: 최적화된 코드 디버깅
+# <a name="how-to-debug-optimized-code"></a>방법: 최적화된 코드 디버그
 
 > [!NOTE]
 > 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 도구 메뉴에서 설정 가져오기 및 내보내기를 선택합니다. 자세한 내용은 [재설정 설정](../ide/environment-settings.md#reset-settings)을 참조하세요.
@@ -76,10 +74,10 @@ ms.locfileid: "52387865"
 
 8. `Custom`에 대해 `Optimization` 옵션을 선택한 경우 속성 목록에 있는 다른 속성에도 옵션을 설정할 수 있습니다.
 
-9. 구성 속성, C/C++, 프로젝트 속성 페이지의 명령줄 노드를 선택하고 `(`[/Zo](/cpp/build/reference/zo-enhance-optimized-debugging)`)`를 **추가 옵션** 텍스트 상자에 추가합니다.
+9. 구성 속성, C를 선택 /C++, 줄 노드의 프로젝트 속성 페이지 명령 및 추가 `(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` 하는 **추가 옵션** 텍스트 상자입니다.
 
     > [!WARNING]
-    >  `/Zo`를 사용하려면 Visual Studio 2013 업데이트 3 이상이 필요합니다.
+    > `/Zo`를 사용하려면 Visual Studio 2013 업데이트 3 이상이 필요합니다.
     >
     >  `/Zo`를 추가하면 [편집하며 계속하기](../debugger/edit-and-continue-visual-csharp.md)를 사용할 수 없습니다.
 
@@ -91,7 +89,7 @@ for (x=0; x<10; x++)
 
  이 줄에 중단점을 설정할 경우, 중단점이 열 번 적중될 것으로 기대하겠지만 코드가 최적화되면 중단점은 한 번만 적중됩니다. 이는 첫 번째 명령에서 `x` 값을 0으로 설정하기 때문입니다. 컴파일러는 이 명령이 한 번만 수행되는 것으로 인식하여 루프 밖으로 명령을 이동합니다. 중단점도 함께 이동합니다. `x`를 비교하고 증가시키는 명령은 루프 내에 남아 있습니다. **디스어셈블리** 창에서는 더 효과적으로 제어하기 위해 [단계별 실행](/previous-versions/visualstudio/visual-studio-2010/ek13f001(v=vs.100))이 명령으로 자동 설정되며, 이는 최적화된 코드를 단계별로 실행하는 데 유용합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [디버거 보안](../debugger/debugger-security.md)
 - [네이티브 코드 디버그](../debugger/debugging-native-code.md)

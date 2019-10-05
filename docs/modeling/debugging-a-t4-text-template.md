@@ -7,16 +7,15 @@ helpviewer_keywords:
 - text templates, debugging
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 608cb5881d7e2bc6911fb6a0f7b90f79ca448f9e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ec82c71a359bed423785cc914c58b97db954f4f5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994671"
 ---
 # <a name="debugging-a-t4-text-template"></a>T4 텍스트 템플릿 디버깅
 텍스트 템플릿에서 중단점을 설정할 수 있습니다. 디자인 타임 텍스트 템플릿 디버그 텍스트 템플릿 파일을 저장 하 고 선택한 **T4 템플릿 디버그** 솔루션 탐색기에서 파일의 바로 가기 메뉴. 런타임 텍스트 템플릿 디버깅을 단순히 속해 있는 응용 프로그램을 디버깅 합니다.

@@ -2,7 +2,6 @@
 title: IActiveScriptStats::GetStatEx | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5cb8adf27811f3046de7b447e537443ef129a8c3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
-ms.translationtype: MT
+ms.openlocfilehash: 3e5f25887d8fdd5b5fb774cc2e8619c1a93432c1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442771"
 ---
 # <a name="iactivescriptstatsgetstatex"></a>IActiveScriptStats::GetStatEx
 사용자 지정 스크립트 통계를 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetStatEx(  
    REFGUID  guid,  
    ULONG*   pluHi,  
@@ -40,7 +39,7 @@ HRESULT GetStatEx(
   
 #### <a name="parameters"></a>매개 변수  
  `guid`  
- [in] 반환할 통계를 지정 합니다. 의미 체계는 특정에 해당 하는 통계의 GUID는 전적으로 정의 된 엔진입니다.  
+ [in] 반환할 통계를 지정 합니다. 의미 체계에 따라 특정 통계의 GUID가 완전히 정의 하는 엔진입니다.  
   
  `pluHi`  
  [out] 통계를 나타내는 64 비트 부호 없는 정수의 상위 32 비트입니다.  
@@ -57,10 +56,10 @@ HRESULT GetStatEx(
 |`E_NOTIMPL`|메서드가 구현 되지 않았습니다.|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 사용자 지정 호스트를 의미 있는 통계를 반환 하는 사용자 지정 스크립트 엔진을 수 있습니다.  
+ 이 메서드는 사용자 지정 호스트에 의미 있는 통계를 반환 하는 사용자 지정 스크립트 엔진을 수 있습니다.  
   
 > [!NOTE]
->  이 메서드가 현재 구현 되지 않습니다.  
+> 이 메서드가 현재 구현 되지 않습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IActiveScriptStats::GetStat](../../winscript/reference/iactivescriptstats-getstat.md)   

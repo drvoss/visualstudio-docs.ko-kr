@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 380618e0cee57a1cf0f45a1324d150170e5ee16e
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 39be02226a46aaa95742caa760e94fe6be4efdf4
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027343"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253050"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 사용
 
@@ -101,7 +101,7 @@ Visual Studio Tools for Unity를 통해 Visual Studio의 강력한 디버거를 
 
 ### <a name="debug-in-the-unity-editor"></a>Unity 편집기에서 디버그
 
-#### <a name="start-debugging"></a>디버깅 시작
+#### <a name="start-debugging"></a>디버그 시작
 
 1. **Unity에 연결** 레이블이 지정된 **재생** 단추를 클릭하여 Visual Studio를 Unity에 연결하거나, 바로 가기 키 **F5** 키를 사용합니다.
 
@@ -161,7 +161,7 @@ Visual Studio를 사용하여 다양한 Unity 플레이어의 개발 빌드를 �
 
    이 Unity의 인스턴스에서 실행되는 Unity 프로젝트의 이름입니다.
 
-   **컴퓨터** 이 Unity가 실행되고 있는 컴퓨터 또는 장치의 이름입니다.
+   **컴퓨터** 이 Unity가 실행되고 있는 컴퓨터 또는 디바이스의 이름입니다.
 
    **형식** 이 Unity의 인스턴스가 Unity 편집기의 일부로 실행 중인 경우 **편집기**이며 이 Unity의 인스턴스가 독립 실행형 플레이어인 경우 **플레이어**입니다.
 
@@ -189,6 +189,9 @@ Visual Studio를 사용하여 다양한 Unity 플레이어의 개발 빌드를 �
 
 2. DLL 프로젝트에서 올바른 Unity 프레임워크 프로필을 참조하세요. Visual Studio의 DLL 프로젝트 속성에서 **대상 프레임워크** 속성을 사용 중인 Unity 프레임워크 버전으로 설정합니다. 이는 Unity 전체, 마이크로, 또는 웹 기반 클래스 라이브러리 등 프로젝트가 대상으로 하는 API 호환성과 일치하는 Unity 기반 클래스 라이브러리입니다. 다른 프레임워크 또는 호환성 수준에 있지만 사용 중인 Unity 프레임워크 버전에는 없을 수 있는 프레임워크 메서드를 DLL에서 호출하는 것을 방지합니다.
 
+> [!NOTE]
+> 다음은 Unity의 레거시 런타임을 사용하는 경우에만 필요합니다. 새 Unity 런타임을 사용하는 경우에는 해당 전용 3.5 프로필을 더 이상 사용할 필요가 없습니다. Unity 버전과 호환되는 .NET 4.x 프로필을 사용합니다.
+
    ![Unity 프레임워크에 DLL의 대상 프레임워크를 설정합니다.](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
 
 3. Unity 프로젝트의 자산 폴더에 DLL을 복사합니다. Unity에서 자산은 런타임에 로드될 수 있도록 Unity 앱과 함께 배포되고 패키지되는 파일입니다. DLL은 런타임에 연결되므로 DDL을 자산으로 배포해야 합니다. 자산으로 배포하기 위해 Unity 편집기는 Unity 프로젝트에서 자산 폴더 안에 DLL을 배치할 것을 요구합니다. 다음 두 가지 방법으로 이 작업을 수행할 수 있습니다.
@@ -197,7 +200,9 @@ Visual Studio를 사용하여 다양한 Unity 플레이어의 개발 빌드를 �
 
    - DLL 프로젝트의 빌드 설정을 수정하여 Unity 프로젝트의 **자산** 폴더로 해당 출력 폴더를 설정합니다. DLL 및 PDB 파일은 모두 **자산** 폴더에 배치됩니다.
 
-   PDB 파일은 DLL의 디버깅 기호를 포함하며 DLL 코드를 소스 코드 형태로 매핑하므로 디버깅에 필요합니다. Visual Studio Tools for Unity에서는 DLL 및 PDB의 정보를 사용하여 Unity 스크립팅 엔진에서 사용되는 디버그 기호 형식인 DLL.MDB 파일을 만듭니다.
+   PDB 파일은 DLL의 디버깅 기호를 포함하며 DLL 코드를 소스 코드 형태로 매핑하므로 디버깅에 필요합니다. 레거시 런타임을 대상으로 지정하면 Visual Studio Tools for Unity에서는 DLL 및 PDB의 정보를 사용하여 레거시 Unity 스크립팅 엔진에서 사용되는 디버그 기호 형식인 DLL.MDB 파일을 만듭니다. 새 런타임을 대상으로 지정하고 이식 가능한 PDB를 사용하면 새 Unity 런타임이 기본적으로 이식 가능한 PDB를 사용할 수 있으므로 Visual Studio Tools for Unity에서는 기호 변환을 수행하지 않습니다.
+
+   PDB 생성에 대한 자세한 내용은 [여기](https://docs.microsoft.com/visualstudio/debugger/how-to-set-debug-and-release-configurations)에서 확인할 수 있습니다. 새 런타임을 대상으로 지정하는 경우 이식 가능한 PDB를 제대로 생성하려면 “디버깅 정보”가 “이식 가능”으로 설정되어 있는지 확인하세요. 레거시 런타임을 대상으로 지정하는 경우에는 “전체”를 사용해야 합니다.
 
 4. 코드를 디버그합니다. 이제 Unity 프로젝트의 소스 코드와 함께 DLL 소스 코드를 디버그할 수 있으며 중단점 및 단계별 코드 실행 등 익숙한 디버깅 기능을 모두 사용할 수 있습니다.
 

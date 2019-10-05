@@ -1,27 +1,22 @@
 ---
 title: 디자이너 초기화 및 메타 데이터 구성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK], initializing
 - designers [Visual Studio SDK], configuring metadata
 ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8f5a4bbd24e571100dfc708d7c34f87b6c84adcf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2dec3937616c712c56b7012949e044702e6b11f2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736213"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703065"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>디자이너 초기화 및 메타데이터 구성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,15 +31,15 @@ ms.locfileid: "51736213"
 ### <a name="customizing-initialization"></a>사용자 지정 초기화  
  디자이너, 구성 요소 또는 디자이너 화면에 사용자 지정 하는 작업에 포함 됩니다.  
   
-1.  디자이너 메타 데이터를 수정 하 고 효과적으로 특정 방법 변경 <xref:System.Type> 액세스 되거나 변환 됩니다.  
+1. 디자이너 메타 데이터를 수정 하 고 효과적으로 특정 방법 변경 <xref:System.Type> 액세스 되거나 변환 됩니다.  
   
      일반적으로 이렇게 합니다 <xref:System.Drawing.Design.UITypeEditor> 또는 <xref:System.ComponentModel.TypeConverter> 메커니즘입니다.  
   
      예를 들어 때 <xref:System.Windows.Forms>-기반된 디자이너는 초기화 되는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 환경 수정 합니다 <xref:System.Drawing.Design.UITypeEditor> 에 대 한 <xref:System.Web.UI.WebControls.Image> 디자이너를 사용 하 여 리소스 관리자를 사용 하 여 파일 시스템 보다는 비트맵을 가져오려고 하는 데 사용할 개체입니다.  
   
-2.  이벤트 구독 또는 프로젝트 구성 정보를 가져오는 예를 들어, 환경에 통합 합니다. 프로젝트 구성 정보를 가져오고을 확보 하 여 이벤트를 구독할 수는 <xref:System.ComponentModel.Design.ITypeResolutionService> 인터페이스입니다.  
+2. 이벤트 구독 또는 프로젝트 구성 정보를 가져오는 예를 들어, 환경에 통합 합니다. 프로젝트 구성 정보를 가져오고을 확보 하 여 이벤트를 구독할 수는 <xref:System.ComponentModel.Design.ITypeResolutionService> 인터페이스입니다.  
   
-3.  적절 한를 활성화 하 여 사용자 환경의 수정 **도구 상자** 범주 또는 인스턴스에 적용 하 여 디자이너의 적용 가능성을 제한 하 여는 <xref:System.ComponentModel.ToolboxItemFilterAttribute> 디자이너 클래스입니다.  
+3. 적절 한를 활성화 하 여 사용자 환경의 수정 **도구 상자** 범주 또는 인스턴스에 적용 하 여 디자이너의 적용 가능성을 제한 하 여는 <xref:System.ComponentModel.ToolboxItemFilterAttribute> 디자이너 클래스입니다.  
   
 ### <a name="designer-initialization-by-a-vspackage"></a>Vspackage 디자이너 초기화  
  VSPackage 디자이너 초기화를 처리 해야 합니다.  
@@ -52,7 +47,7 @@ ms.locfileid: "51736213"
 1. 구현 하는 개체 만들기는 <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> 클래스입니다.  
   
    > [!NOTE]
-   >  합니다 <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> 클래스와 같은 개체에 구현 되지 해야는 <xref:Microsoft.VisualStudio.Shell.Package> 클래스입니다.  
+   > 합니다 <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> 클래스와 같은 개체에 구현 되지 해야는 <xref:Microsoft.VisualStudio.Shell.Package> 클래스입니다.  
   
 2. 구현 하는 클래스를 등록 <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> 의 인스턴스를 적용 하 여 VSPackage의 디자이너 확장에 대 한 지원을 제공 하는 것 <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>를 <xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute> 하 고 <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> VSPackage의 구현을 제공 하는 클래스에 <xref:Microsoft.VisualStudio.Shell.Package> .  
   
@@ -98,11 +93,10 @@ ms.locfileid: "51736213"
   `internal class MyPackage : Package {}`  
   
 > [!NOTE]
->  현 시점 디자인 화면을 만드는 구성 요소를 지원 하 고 따라서 구성 요소만 로컬 메타 데이터를 가질 수 합니다. 위의 예제에서와 같은 속성을 수정 하 려 했던 것을 `Color` 개체의 속성입니다. 하는 경우 `false` 전역 플래그에 대 한 전달 된 `CustomBrowser` 디자이너의 인스턴스를 실제로 만들어지기 때문에 표시 되지 않습니다 `Color`합니다. 전역 플래그 설정을 `false` 컨트롤, 타이머 및 대화 상자와 같은 구성 요소에 대해 유용 합니다.  
+> 현 시점 디자인 화면을 만드는 구성 요소를 지원 하 고 따라서 구성 요소만 로컬 메타 데이터를 가질 수 합니다. 위의 예제에서와 같은 속성을 수정 하 려 했던 것을 `Color` 개체의 속성입니다. 하는 경우 `false` 전역 플래그에 대 한 전달 된 `CustomBrowser` 디자이너의 인스턴스를 실제로 만들어지기 때문에 표시 되지 않습니다 `Color`합니다. 전역 플래그 설정을 `false` 컨트롤, 타이머 및 대화 상자와 같은 구성 요소에 대해 유용 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>   
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>   
  <xref:System.ComponentModel.ToolboxItemFilterType>   
- [디자인 타임 지원 확장](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
-
+ [디자인 타임 지원 확장](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)

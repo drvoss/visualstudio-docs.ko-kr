@@ -1,14 +1,9 @@
 ---
-title: 컨텍스트 연산자 (c + +) | Microsoft Docs
-ms.custom: ''
+title: 컨텍스트 연산자 (C++) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.operators
 dev_langs:
@@ -27,23 +22,23 @@ ms.assetid: 73cc9afe-f4a4-474e-bb89-5a33fb5e570c
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5807b8e3c6a85c25511374e756b02fabfa5abba5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f6351dd9db7e6f8f29bdd15f376f84511c64bfe7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51731680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161533"
 ---
 # <a name="context-operator-c"></a>컨텍스트 연산자(C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 C++에서 컨텍스트 연산자를 사용하여 중단점 위치, 변수 이름 또는 식을 한정할 수 있습니다. 컨텍스트 연산자는 로컬 이름에 의해 숨겨진 외부 범위에서 이름을 지정하는 데 유용합니다.  
   
-##  <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> 구문  
+## <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> 구문  
  컨텍스트를 지정하는 방법에는 다음 두 가지가 있습니다.  
   
-1.  {,,[*모듈*] } *식*  
+1. {,,[*모듈*] } *식*  
   
      중괄호에는 쉼표 두 개와 모듈(실행 파일 또는 DLL) 이름 또는 전체 경로가 포함되어야 합니다.  
   
@@ -53,7 +48,7 @@ C++에서 컨텍스트 연산자를 사용하여 중단점 위치, 변수 이름
     {,,EXAMPLE.dll}SomeFunction  
     ```  
   
-2.  *모듈*!*식*  
+2. *모듈*!*식*  
   
     ```cpp  
     EXAMPLE.dll!SomeFunction  
@@ -71,17 +66,12 @@ C++에서 컨텍스트 연산자를 사용하여 중단점 위치, 변수 이름
   
   식 계산기는 식에서 기호가 나오면 다음과 같은 순서로 기호를 검색합니다.  
   
-1.  현재 블록(중괄호에 포함된 일련의 문)에서 시작하여 바깥쪽 블록의 외부로 계속되는 바깥쪽 어휘 범위. 현재 블록은 현재 위치(명령 포인터 주소)가 포함된 코드입니다.  
+1. 현재 블록(중괄호에 포함된 일련의 문)에서 시작하여 바깥쪽 블록의 외부로 계속되는 바깥쪽 어휘 범위. 현재 블록은 현재 위치(명령 포인터 주소)가 포함된 코드입니다.  
   
-2.  함수 범위. 현재 함수입니다.  
+2. 함수 범위. 현재 함수입니다.  
   
-3.  현재 위치가 C++ 멤버 함수 내부인 경우 클래스 범위. 클래스 범위에는 모든 기본 클래스가 포함됩니다. 식 계산기는 일반 우위 규칙을 사용합니다.  
+3. 현재 위치가 C++ 멤버 함수 내부인 경우 클래스 범위. 클래스 범위에는 모든 기본 클래스가 포함됩니다. 식 계산기는 일반 우위 규칙을 사용합니다.  
   
-4.  현재 모듈의 전역 기호  
+4. 현재 모듈의 전역 기호  
   
-5.  현재 프로그램의 공용 기호
-
-
-
-
-
+5. 현재 프로그램의 공용 기호

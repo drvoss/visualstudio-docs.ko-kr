@@ -1,14 +1,9 @@
 ---
 title: ImportGroup 요소 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,18 +16,17 @@ ms.assetid: dac3fa2d-6678-4017-af35-93686f53f302
 caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d4522099c893c7fb5dc37c0ad78d40cb0600e84b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1b6fb90cd12dc59edc760b081e7108c52c815a72
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192252"
 ---
 # <a name="importgroup-element"></a>ImportGroup 요소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 선택적인 조건으로 그룹화된 `Import` 요소의 컬렉션을 포함합니다. 자세한 내용은 [Import 요소(MSBuild)](../msbuild/import-element-msbuild.md)를 참조하세요.  
   
  \<Project>  
@@ -70,7 +64,7 @@ ms.locfileid: "49219975"
   
 ## <a name="remarks"></a>설명  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  다음 코드 예제에서는 `ImportGroup` 요소를 보여 줍니다.  
   
 ```  
@@ -86,6 +80,3 @@ ms.locfileid: "49219975"
 ## <a name="see-also"></a>참고 항목  
  [프로젝트 파일 스키마 참조](../msbuild/msbuild-project-file-schema-reference.md)   
  [항목](../msbuild/msbuild-items.md)
-
-
-

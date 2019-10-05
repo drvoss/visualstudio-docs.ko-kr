@@ -8,15 +8,13 @@ helpviewer_keywords:
 ms.assetid: 08a7fe98-a7f7-4b8d-94a3-ec82b65a2aaf
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: c583418fa34a44d4bc0bf78996df4cb35908b4f0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: ef80a10954e9cf58db04e46f11934ffd86974bea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786106"
 ---
 # <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>방법: 부하 테스트 편집기를 사용하여 테스트 실패를 테스트 로그에 저장할지 여부 지정
 
@@ -29,17 +27,17 @@ ms.locfileid: "53064406"
 
 ## <a name="to-specify-if-the-test-log-is-saved-when-a-test-fails-in-a-scenario"></a>시나리오에서 테스트가 실패할 때 테스트 로그가 저장되는지 여부를 지정하려면
 
-1.  부하 테스트를 엽니다.
+1. 부하 테스트를 엽니다.
 
      **부하 테스트 편집기**가 나타납니다. 부하 테스트 트리가 표시됩니다.
 
-2.  부하 테스트 트리 **실행 설정** 폴더에서 최대 테스트 반복 횟수를 지정할 실행 설정 노드를 선택합니다.
+2. 부하 테스트 트리 **실행 설정** 폴더에서 최대 테스트 반복 횟수를 지정할 실행 설정 노드를 선택합니다.
 
-3.  **보기** 메뉴에서 **속성 창**을 선택합니다.
+3. **보기** 메뉴에서 **속성 창**을 선택합니다.
 
      실행 설정 범주와 속성이 **속성** 창에 표시됩니다.
 
-4.  **테스트 실패 시 로그 저장** 속성에서 **True** 또는 **False**를 선택하여 시나리오에서 테스트가 실패할 경우 테스트 로그를 저장할 것인지 여부를 지정합니다.
+4. **테스트 실패 시 로그 저장** 속성에서 **True** 또는 **False**를 선택하여 시나리오에서 테스트가 실패할 경우 테스트 로그를 저장할 것인지 여부를 지정합니다.
 
      속성 변경을 마친 다음, **파일** 메뉴에서 **저장**을 선택합니다.
 

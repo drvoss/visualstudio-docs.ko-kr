@@ -1,14 +1,9 @@
 ---
-title: 'CA1030: 적절 한 경우 이벤트를 사용 | Microsoft Docs'
-ms.custom: ''
+title: 'CA1030: 적절 한 이벤트를 사용 하 여 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UseEventsWhereAppropriate
 - CA1030
@@ -20,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b1b4989b5b8ca47bc41328c75610cf984926aae2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9d00db6f9a00a273198cc50704d65ed6d2e4bb33
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157695"
 ---
-# <a name="ca1030-use-events-where-appropriate"></a>CA1030: 적절한 경우 이벤트를 사용하십시오.
+# <a name="ca1030-use-events-where-appropriate"></a>CA1030: 적절한 경우 이벤트를 사용하세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -40,13 +35,13 @@ ms.locfileid: "49870135"
 ## <a name="cause"></a>원인
  Public, protected 또는 private 메서드 이름이 다음 중 하나를 사용 하 여 시작합니다.
 
--   추가 기능
+- AddOn
 
--   RemoveOn
+- RemoveOn
 
--   실행
+- 실행
 
--   raise
+- raise
 
 ## <a name="rule-description"></a>규칙 설명
  이 규칙에서는 보통 이벤트에 사용되는 이름을 갖는 메서드를 찾아냅니다. 이벤트는 관찰자 또는 게시-구독 디자인 패턴에 따라 사용 하면 하나의 개체에서 상태 변경을 다른 개체에 전달 해야 합니다. 명확 하 게 정의 된 상태 변경에 대 한 응답에는 메서드가 호출 되는 경우 이벤트 처리기에서 메서드를 호출 해야 합니다. 메서드를 호출하는 개체는 메서드를 직접 호출하는 대신 이벤트를 발생시켜야 합니다.
@@ -58,6 +53,3 @@ ms.locfileid: "49870135"
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  메서드를 사용 하 여 작동 하지 않는 경우이 규칙에서 경고를 표시 합니다 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 이벤트 모델.
-
-
-

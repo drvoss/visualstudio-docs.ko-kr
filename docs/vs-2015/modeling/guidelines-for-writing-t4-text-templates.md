@@ -1,23 +1,20 @@
 ---
 title: T4 텍스트 템플릿 작성에 대 한 지침 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 04dd3fc4-10e8-488a-bdea-4d615f50f063
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c3ed1415572dc00509abf36e7cb84311f95e4805
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f88666d15293e6900ae99cecdc39853cda8e2f9e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546611"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>T4 텍스트 템플릿 작성 지침
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +54,7 @@ ms.locfileid: "49812753"
   포함 파일 또는 런타임 템플릿에 공통 자료를 이동 합니다.  
   텍스트 및 여러 서식 파일에서 코드의 유사한 요소 반복을 방지 하려면 사용는 `<#@ include #>` 지시문입니다. 자세한 내용은 [T4 Include 지시문](../modeling/t4-include-directive.md)합니다.  
   
-  별도 프로젝트에서 런타임 텍스트 템플릿 빌드하고 디자인 타임 템플릿의 부르도 있습니다. 이 위해 사용 하 여는 `<#@ assembly #>` 지시문 별도 프로젝트에 액세스할 수 있습니다. 예제를 보려면 [상속에 텍스트 "템플릿" Gareth Jones 블로그의](http://go.microsoft.com/fwlink/?LinkId=208373)합니다.  
+  별도 프로젝트에서 런타임 텍스트 템플릿 빌드하고 디자인 타임 템플릿의 부르도 있습니다. 이 위해 사용 하 여는 `<#@ assembly #>` 지시문 별도 프로젝트에 액세스할 수 있습니다.
   
   큰 코드 블록을 별도 어셈블리로 이동 하는 것이 좋습니다.  
   대규모 코드 블록과 클래스 기능 블록에 있는 경우에 별도 프로젝트에서 컴파일되지 메서드로 이동 하는이 코드의 일부에 유용할 수 있습니다. 사용할 수는 `<#@ assembly #>` 템플릿에서 코드에 액세스 하는 지시문입니다. 자세한 내용은 [T4 Assembly 지시문](../modeling/t4-assembly-directive.md)합니다.  
@@ -160,6 +157,3 @@ Team Members:
 ## <a name="see-also"></a>참고 항목  
  [T4 텍스트 템플릿을 사용하여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)   
  [T4 텍스트 템플릿을 사용하여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)
-
-
-

@@ -1,25 +1,20 @@
 ---
 title: BC 텍스처 압축 변형 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 2d0f5305-585b-4b01-bc9a-7a32d6e991da
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 818998511a4ef8b7f10b8225e71b414edafd9769
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f0758d9eb5a003b0353ceb4fee21996d90685fa5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161697"
 ---
 # <a name="bc-texture-compression-variant"></a>BC 텍스처 압축 변형
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,20 +24,20 @@ B8G8R8X8, B8G8R8A8 또는 R8G8B8A8의 변형인 픽셀 형식이 있는 질감�
 ## <a name="interpretation"></a>해석  
  BC1, BC2 및 BC3과 같은 블록 기반 압축 형식은 압축되지 않은 이미지 형식보다 메모리를 훨씬 더 적게 차지하므로 메모리 대역폭도 상당히 적게 사용합니다. 픽셀당 32비트를 사용하는 압축되지 않은 형식과 비교하여 BC1(이전의 DXT1)의 압축률은 8:1이고 BC3(이전의 DXT5)의 압축률은 4:1입니다. BC1과 BC3 간의 차이점은 BC1은 알파 채널을 지원하지 않는 반면에 BC3은 블록 압축 알파 채널을 지원한다는 점입니다. 압축률이 높음에도 불구하고 일반적인 질감에 대한 이미지 품질은 약간만 떨어집니다. 그러나 특정 종류의 질감(예: 작은 영역에서 색상 변형이 상당한 질감)에 대한 블록 압축 결과는 허용치보다 떨어질 수 있습니다.  
   
- 질감이 블록 기반 압축에 적절하고 완벽한 색 충실도가 필요 없는 경우 블록 압축 형식을 사용하여 메모리와 대역폭 사용량을 줄일 것을 고려해 보세요.   
+ 질감이 블록 기반 압축에 적절하고 완벽한 색 충실도가 필요 없는 경우 블록 압축 형식을 사용하여 메모리와 대역폭 사용량을 줄일 것을 고려해 보세요.  
   
 ## <a name="remarks"></a>설명  
  원본 질감을 만드는 `ID3DDevice::CreateTexture2D`를 호출할 때마다 블록 기반 압축 형식을 사용하여 질감을 압축합니다. 특히, 질감은 다음과 같은 경우 압축됩니다.  
   
 - `D3D11_TEXTURE2D_DESC`에서 전달된 `pDesc` 개체가 변하지 않는 셰이더를 설명하는 경우, 즉 다음과 같은 경우입니다.  
   
-  -   BindFlags 멤버에 D3D11_BIND_SHADER_RESOURCE 플래그 집합만 있는 경우  
+  - BindFlags 멤버에 D3D11_BIND_SHADER_RESOURCE 플래그 집합만 있는 경우  
   
-  -   Usage 멤버가 D3D11_USAGE_DEFAULT 또는 D3D11_USAGE_IMMUTABLE로 설정된 경우  
+  - Usage 멤버가 D3D11_USAGE_DEFAULT 또는 D3D11_USAGE_IMMUTABLE로 설정된 경우  
   
-  -   CPUAccessFlags 멤버가 0으로 설정된 경우(CPU 액세스 없음)  
+  - CPUAccessFlags 멤버가 0으로 설정된 경우(CPU 액세스 없음)  
   
-  -   SamplerDesc 멤버에 1로 설정된 Count 멤버가 있는 경우(MSAA(MultiSample Anti-Aliasing) 없음)  
+  - SamplerDesc 멤버에 1로 설정된 Count 멤버가 있는 경우(MSAA(MultiSample Anti-Aliasing) 없음)  
   
 - 초기 데이터가 `CreateTexture2D`에 대한 호출에 제공된 경우  
   
@@ -70,6 +65,3 @@ B8G8R8X8, B8G8R8A8 또는 R8G8B8A8의 변형인 픽셀 형식이 있는 질감�
   
 ## <a name="see-also"></a>참고 항목  
  [반기/분기 텍스처 차원 변형](../debugger/half-quarter-texture-dimensions-variant.md)
-
-
-

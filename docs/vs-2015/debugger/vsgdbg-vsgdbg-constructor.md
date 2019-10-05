@@ -1,25 +1,20 @@
 ---
 title: 'Vsgdbg:: Vsgdbg (생성자) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 670651e6-5e79-4845-b0c2-671beb7055a8
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 056c5f5e19a4d1e025969aa40ad75f3852b4201b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f3bd179aea7d961df6145b7af2f074927fcdc3e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781922"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157435"
 ---
 # <a name="vsgdbgvsgdbg-constructor"></a>VsgDbg::VsgDbg(생성자)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,10 +39,7 @@ VsgDbg(
  `bDefaultInit`이 `false`로 설정된 상태로 생성자가 호출되면 `Init` 함수를 호출하여 나중에 그래픽 정보를 캡처하고 기록하도록 그래픽 진단의 사용자 앱 구성 요소를 준비할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [VsgDbg:: ~ VsgDbg (소멸자)](../debugger/vsgdbg-tilde-vsgdbg-destructor.md)   
+ [VsgDbg::~VsgDbg(소멸자)](../debugger/vsgdbg-tilde-vsgdbg-destructor.md)   
  [Init](../debugger/init.md)   
  [DONT_SAVE_VSGLOG_TO_TEMP](../debugger/dont-save-vsglog-to-temp.md)   
  [VSG_DEFAULT_RUN_FILENAME](../debugger/vsg-default-run-filename.md)
-
-
-

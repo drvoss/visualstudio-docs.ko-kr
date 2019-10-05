@@ -2,7 +2,6 @@
 title: IDebugExtendedProperty 인터페이스 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 11edca1fbce6b7dab755a25dfc3e192225b5f6e5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c1e042f75cf0ab0d8c4807c0c0db6ce04e8423f9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727133"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945876"
 ---
 # <a name="idebugextendedproperty-interface"></a>IDebugExtendedProperty 인터페이스
 확장 `IDebugProperty` 인터페이스입니다.  
@@ -29,8 +28,8 @@ ms.locfileid: "24727133"
   
 |메서드|설명|  
 |------------|-----------------|  
-|[IDebugExtendedProperty::GetExtendedPropertyInfo](../../winscript/reference/idebugextendedproperty-getextendedpropertyinfo.md)|가져옵니다는 `ExtendedDebugPropertyInfo` 이 설명 하는`IDebugExtendedProperty``.`|  
-|[IDebugExtendedProperty::EnumExtendedMembers](../../winscript/reference/idebugextendedproperty-enumextendedmembers.md)|확장된 속성의 멤버를 열거 합니다.|  
+|[IDebugExtendedProperty::GetExtendedPropertyInfo](../../winscript/reference/idebugextendedproperty-getextendedpropertyinfo.md)|가져옵니다는 `ExtendedDebugPropertyInfo` 이 설명 하는 `IDebugExtendedProperty``.`|  
+|[IDebugExtendedProperty::EnumExtendedMembers](../../winscript/reference/idebugextendedproperty-enumextendedmembers.md)|확장된 속성의 멤버를 열거합니다.|  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: dbgprop.h  

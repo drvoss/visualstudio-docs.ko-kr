@@ -1,14 +1,9 @@
 ---
 title: 파일 속성, JavaScript | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - javascript.project.property.expandedsdknode.fileversion
 - javascript.project.property.expandedsdknode.uri
@@ -30,21 +25,20 @@ ms.assetid: 085913b8-a97b-45f7-85fa-bbb0902f3ee9
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8db05d62bd1a8b1e1bf5fee6642810c654265c97
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 00527cf13d978da5a10e7745049df63f24e7a15c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909735"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688737"
 ---
 # <a name="file-properties-javascript"></a>파일 속성, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 파일 속성을 사용하여 프로젝트 시스템이 파일에 대해 수행해야 하는 작업을 지정할 수 있습니다. 예를 들어 파일 속성을 설정하여 파일을 패키지에 리소스 파일로 추가해야 하는지 여부를 지정할 수 있습니다.  
   
- 솔루션 탐색기에서 파일을 선택하고 속성 창에서 해당 속성을 검사할 수 있습니다. JavaScript 파일에는 **출력 디렉터리에 복사**, **패키지 작업**, **파일 이름**, **파일 경로**의 네 가지 속성이 있습니다.  
+ 솔루션 탐색기에서 파일을 선택하고 속성 창에서 해당 속성을 검사할 수 있습니다. JavaScript 파일에는 다음과 같은 네 가지 속성이 있습니다. **출력 디렉터리에 복사**, **패키지 작업**, **파일 이름** 및 **파일 경로**  
   
 ## <a name="file-properties"></a>파일 속성  
  이 섹션에서는 JavaScript 파일에 공통적인 속성을 설명합니다.  
@@ -59,7 +53,7 @@ ms.locfileid: "49909735"
   
 - **콘텐츠** - 파일이 패키지 매니페스트에 포함됩니다. 예를 들어 이 설정은 .htm, .js, .css, 이미지, 오디오 또는 비디오 파일의 기본값입니다.  
   
-- **매니페스트** –의 파일이 패키지 매니페스트에 포함 되지 않습니다. 대신에 패키지 매니페스트를 생성할 때 파일이 입력에 사용됩니다. 이 값은 package.appxmanifest 파일의 기본값입니다.  
+- **매니페스트** – 파일이 패키지 매니페스트에 포함되지 않습니다. 대신에 패키지 매니페스트를 생성할 때 파일이 입력에 사용됩니다. 이 값은 package.appxmanifest 파일의 기본값입니다.  
   
 - **리소스** - 파일이 패키지 매니페스트에 포함되지 않습니다. 대신에 파일 콘텐츠가 패키지 매니페스트로 이동되는 PRI(패키지 리소스 인덱스)로 인덱싱됩니다. 일반적으로 리소스 파일에 사용됩니다.  
   
@@ -96,13 +90,10 @@ ms.locfileid: "49909735"
  참조된 SDK 파일의 경로를 표시합니다.  
   
 ### <a name="uri"></a>URI  
- 소스 파일로 파일을 포함 하도록 프로젝트의 HTML 또는 JavaScript 파일에 포함 되어야 하는 URI를 표시 합니다.  
+ 파일을 소스 파일로 포함하기 위해 프로젝트의 HTML 또는 JavaScript 파일에 포함해야 하는 URI를 표시합니다.  
   
 ### <a name="version"></a>버전  
  참조의 버전을 표시합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [NIB: 프로젝트 속성 (Visual Studio)](http://msdn.microsoft.com/en-us/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)
-
-
-
+ [NIB: 프로젝트 속성 (Visual Studio)](https://msdn.microsoft.com/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)

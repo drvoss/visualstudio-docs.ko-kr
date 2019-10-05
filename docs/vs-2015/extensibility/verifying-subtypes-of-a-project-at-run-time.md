@@ -1,27 +1,22 @@
 ---
 title: 런타임에 프로젝트의 하위 형식 확인 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project subtypes
 - check subtypes
 ms.assetid: b87780ec-36a3-4e9a-9ee2-7abdc26db739
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 892ba25ff70f62f77016bea1b88436c4f5a6a5b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1e3940097ac53255b7bdd2c12c9ccc64605016e1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779894"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584907"
 ---
 # <a name="verifying-subtypes-of-a-project-at-run-time"></a>런타임에 프로젝트의 하위 형식 확인
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51779894"
   
 ### <a name="to-verify-the-presence-of-a-subtype"></a>하위 형식이 있는지 확인 하려면  
   
-1.  프로젝트 계층 구조는 프로젝트 및 솔루션 개체에서 가져올를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> VSPackage에 다음 코드를 추가 하 여 개체입니다.  
+1. 프로젝트 계층 구조는 프로젝트 및 솔루션 개체에서 가져올를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> VSPackage에 다음 코드를 추가 하 여 개체입니다.  
   
     ```  
     EnvDTE.DTE dte;  
@@ -47,7 +42,7 @@ ms.locfileid: "51779894"
   
     ```  
   
-2.  계층을 캐스팅 합니다 <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected> 인터페이스입니다.  
+2. 계층을 캐스팅 합니다 <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected> 인터페이스입니다.  
   
     ```  
     IVsAggregatableProjectCorrected AP;  
@@ -55,14 +50,14 @@ ms.locfileid: "51779894"
   
     ```  
   
-3.  호출 하 여 프로젝트 형식 Guid의 목록을 가져옵니다는 <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A>합니다.  
+3. 호출 하 여 프로젝트 형식 Guid의 목록을 가져옵니다는 <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A>합니다.  
   
     ```  
     string projTypeGuids = AP.GetAggregateProjectTypeGuids().ToUpper();  
   
     ```  
   
-4.  지정 된 하위의 GUID 목록을 확인 합니다.  
+4. 지정 된 하위의 GUID 목록을 확인 합니다.  
   
     ```  
     // Replace the string "MyGUID" with the GUID of the subtype.  
@@ -77,4 +72,3 @@ ms.locfileid: "51779894"
  [프로젝트 하위 형식](../extensibility/internals/project-subtypes.md)   
  [프로젝트 하위 형식 디자인](../extensibility/internals/project-subtypes-design.md)   
  [프로젝트 하위 형식에 의해 확장된 속성 및 메서드](../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)
-

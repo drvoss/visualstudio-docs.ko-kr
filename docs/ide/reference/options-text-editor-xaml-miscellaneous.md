@@ -1,8 +1,6 @@
 ---
 title: 옵션, 텍스트 편집기, XAML, 기타
 ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XAML.Miscellaneous
@@ -27,15 +25,15 @@ helpviewer_keywords:
 ms.assetid: 2a420e58-a408-4e8d-9220-44eeb4f67801
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 30986c0f18a2cc272cb917be9ce24b2a335c0b4b
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 9b124b86b98f86c775165d8fe33164a352d8e20a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388636"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969243"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>옵션, 텍스트 편집기, XAML, 기타
 

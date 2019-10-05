@@ -1,14 +1,9 @@
 ---
-title: 'CA2214: 생성자에서 재정의 가능한 메서드를 호출 하지 마십시오 | Microsoft Docs'
-ms.custom: ''
+title: 'CA2214: 생성자의 재정의 가능한 메서드를 호출 하지 마십시오 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DoNotCallOverridableMethodsInConstructors
 - CA2214
@@ -20,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b43400dbd516328e133ed6e103d4a4f2a7ccf8a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0a2e107429bb48b2bf17a625e25866a19c7781b6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142413"
 ---
 # <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214: 재정의 가능한 메서드를 생성자에서 호출하지 마십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,9 +52,6 @@ ms.locfileid: "49921472"
 
  이 예제의 결과는 다음과 같습니다.
 
- **기본 생성자를 호출 합니다. ** 
- **파생 DoSomething 라고-초기화? 아니오**
+ **기본 생성자를 호출 합니다.** 
+**파생 DoSomething 라고-초기화? 아니오**
 **호출 ctor를 파생 합니다.**
-
-
-

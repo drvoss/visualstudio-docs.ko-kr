@@ -1,14 +1,9 @@
 ---
 title: 디버거 기본 사항 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 - CSharp
@@ -22,21 +17,21 @@ ms.assetid: 4da42a10-384d-44d7-b4dc-032202ff784b
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5bb755dd5e6936e030c1569edcdd065b8bef0547
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1228b75b1e0e579012f0c2a04a100cb615ae1687
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145714"
 ---
 # <a name="debugger-basics"></a>디버거 기본 사항
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-Visual Studio 디버거를 사용하여 프로그램의 런타임 동작을 관찰하고 논리 오류를 찾아낼 수 있습니다. 디버거는 모든 Visual Studio 프로그래밍 언어 및 관련 라이브러리와 함께 작동합니다. 디버거를 사용하여 실행을 중단하고 코드를 단계별로 실행하고 응용 프로그램의 변수를 평가할 수 있습니다.
+Visual Studio 디버거를 사용하여 프로그램의 런타임 동작을 관찰하고 논리 오류를 찾아낼 수 있습니다. 디버거는 모든 Visual Studio 프로그래밍 언어 및 관련 라이브러리와 함께 작동합니다. 디버거를 사용하여 실행을 중단하고 코드를 단계별로 실행하고 애플리케이션의 변수를 평가할 수 있습니다.
   
 ## <a name="in-this-section"></a>섹션 내용  
  [디버거 시작](../debugger/getting-started-with-the-debugger.md)  
- 디버거를 사용하여 응용 프로그램의 실행을 제어하는 방법을 설명합니다.  
+ 디버거를 사용하여 애플리케이션의 실행을 제어하는 방법을 설명합니다.  
   
  [디버거로 코드 탐색](../debugger/navigating-through-code-with-the-debugger.md)  
  디버거를 사용하여 코드를 단계별로 실행하는 방법을 설명합니다.  
@@ -60,13 +55,10 @@ Visual Studio 디버거를 사용하여 프로그램의 런타임 동작을 관�
  디버깅을 위해 기호 및 소스 파일을 지정하는 방법을 설명합니다.  
   
  [64비트 응용 프로그램 디버그](../debugger/debug-64-bit-applications.md)  
- 64비트 응용 프로그램을 디버그하는 방법 및 문제 해결 방법을 설명합니다.  
+ 64비트 애플리케이션을 디버그하는 방법 및 문제 해결 방법을 설명합니다.  
   
  [디버거 보안](../debugger/debugger-security.md)  
  디버거에 대한 보안 방법을 설명합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Visual Studio의 디버깅](../debugger/debugging-in-visual-studio.md)
-
-
-

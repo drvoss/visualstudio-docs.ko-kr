@@ -2,7 +2,6 @@
 title: IDebugDocumentTextAuthor::RemoveText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 24a366b35c777d09a14a0ad96e0f6dc25c03a26b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 989031a6d4b207c69d1a58b2ff99e5797a629440
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726833"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007769"
 ---
 # <a name="idebugdocumenttextauthorremovetext"></a>IDebugDocumentTextAuthor::RemoveText
 문서에서 텍스트를 제거합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT RemoveText(  
    ULONG  cCharacterPosition,  
    ULONG  cNumToRemove  
@@ -39,7 +38,7 @@ HRESULT RemoveText(
   
 #### <a name="parameters"></a>매개 변수  
  `cCharacterPosition`  
- [in] 문자 범위를 제거 하려면의 위치를 시작 합니다.  
+ [in] 제거할 문자 범위의 위치를 시작 합니다.  
   
  `cNumToRemove`  
  [in] 제거할 문자 수입니다.  

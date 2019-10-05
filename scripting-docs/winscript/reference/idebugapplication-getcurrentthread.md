@@ -2,7 +2,6 @@
 title: IDebugApplication::GetCurrentThread | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2240a62b62c917e94f3ace8f516a10f9de66c74d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6fc64250732ee36cf12c0fb0203ab22a20991975
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990882"
 ---
 # <a name="idebugapplicationgetcurrentthread"></a>IDebugApplication::GetCurrentThread
-현재 실행 중인 스레드와 연결 된 스레드를 반환 합니다.  
+현재 실행 중인 스레드와 연결 되는 스레드를 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetCurrentThread(  
    IDebugApplicationThread**  pat  
 );  
@@ -48,7 +47,7 @@ HRESULT GetCurrentThread(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 현재 실행 중인 스레드와 연결 된 스레드를 반환 합니다.  
+ 이 메서드는 현재 실행 중인 스레드와 연결 되는 스레드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugApplication 인터페이스](../../winscript/reference/idebugapplication-interface.md)

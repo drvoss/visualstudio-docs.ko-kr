@@ -1,8 +1,6 @@
 ---
 title: 'Idiainjectedsource:: Get_sourcecompression | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,36 +9,37 @@ helpviewer_keywords:
 ms.assetid: 854b142f-23a9-466c-bf7f-98e581d5abcd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46ad24a6bf8e4efbcb0c1a0009bb8210247ccb5e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 00c7783752a183e8afc580c4c74285add8a51041
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839916"
 ---
 # <a name="idiainjectedsourcegetsourcecompression"></a>IDiaInjectedSource::get_sourceCompression
-사용 되는 원본 압축 표시기를 검색 합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```C++  
-HRESULT get_sourceCompression (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
- `pRetVal`  
- [out] 사용 되는 원본 압축 표시기를 반환 합니다. 0 값 압축 하지 않고 소스를 사용 했는지를 나타냅니다.  
-  
-## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.  
-  
-## <a name="remarks"></a>설명  
- 이 메서드에서 반환 된 값 사용 된 컴파일러와 관련이 있습니다. 예를 들어, 컴파일러는 실행 길이 인코딩 또는 Huffman 스타일 압축을 사용할 수 있습니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
+사용 되는 원본 압축 표시기를 검색 합니다.
+
+## <a name="syntax"></a>구문
+
+```C++
+HRESULT get_sourceCompression ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>매개 변수
+ `pRetVal`
+
+[out] 사용 되는 원본 압축 표시기를 반환 합니다. 0 값 압축 하지 않고 소스를 사용 했는지를 나타냅니다.
+
+## <a name="return-value"></a>반환 값
+ 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.
+
+## <a name="remarks"></a>설명
+ 이 메서드에서 반환 된 값 사용 된 컴파일러와 관련이 있습니다. 예를 들어, 컴파일러는 실행 길이 인코딩 또는 Huffman 스타일 압축을 사용할 수 있습니다.
+
+## <a name="see-also"></a>참고 항목
+- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

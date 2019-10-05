@@ -1,27 +1,22 @@
 ---
 title: '검사 목록: 레거시 언어 서비스 만들기 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services
 - language services, native code
 ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 330270b34d55e88c883b9d8a6270b4abad02d9c1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3b79afe64aafac473d4fe5d22464998d0c2f0537
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437620"
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>검사 목록: 레거시 언어 서비스 만들기
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,13 +25,13 @@ ms.locfileid: "51782988"
   
 ## <a name="steps-for-creating-a-language-service"></a>언어 서비스를 만들기 위한 단계  
   
-1.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> 인터페이스를 구현합니다.  
+1. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> 인터페이스를 구현합니다.  
   
-    -   VSPackage, 구현 된 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> 언어 서비스를 제공 하는 인터페이스입니다.  
+    - VSPackage, 구현 된 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> 언어 서비스를 제공 하는 인터페이스입니다.  
   
-    -   언어 서비스를 통합된 개발 환경 (IDE)에 사용할 수 있도록 프로그램 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> 구현 합니다.  
+    - 언어 서비스를 통합된 개발 환경 (IDE)에 사용할 수 있도록 프로그램 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> 구현 합니다.  
   
-2.  구현 된 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> 주 언어 서비스 클래스의 인터페이스입니다.  
+2. 구현 된 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> 주 언어 서비스 클래스의 인터페이스입니다.  
   
      <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> 인터페이스는 핵심 편집기 및 언어 서비스 간의 상호 작용의 시작 지점입니다.  
   
@@ -68,9 +63,9 @@ ms.locfileid: "51782988"
     처리 해야 하는 명령을 제공 되는 서비스에 따라 달라 집니다. 자세한 내용은 [언어 서비스 필터에 대 한 중요 명령](../../extensibility/internals/important-commands-for-language-service-filters.md)입니다.  
   
   > [!NOTE]
-  >  합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> 동일한 개체에서 인터페이스를 구현 해야 합니다 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 인터페이스입니다.  
+  > 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> 동일한 개체에서 인터페이스를 구현 해야 합니다 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 인터페이스입니다.  
   
-- 문 완성  
+- 문 완성   
   
    <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> 인터페이스를 구현합니다.  
   
@@ -116,7 +111,7 @@ ms.locfileid: "51782988"
   
 - 개요  
   
-   여러 가지 방법으로 개요 표시 지원 합니다. 예를 들어, 지원할 수 있습니다 합니다 **정의 부분만 보이기** 명령, 편집기 제어 개요 영역을 제공 하거나 클라이언트 제어 영역을 지원 합니다. 자세한 내용은 [방법: 제공 확장 개요 표시 지원 레거시 언어 서비스의](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)합니다.  
+   여러 가지 방법으로 개요 표시 지원 합니다. 예를 들어, 지원할 수 있습니다 합니다 **정의 부분만 보이기** 명령, 편집기 제어 개요 영역을 제공 하거나 클라이언트 제어 영역을 지원 합니다. 자세한 내용은 [방법: 레거시 언어 서비스의 확장된 개요 표시 지원 제공](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)합니다.  
   
 - 언어 서비스 등록  
   
@@ -126,11 +121,10 @@ ms.locfileid: "51782988"
   
    다음 방법 중 하나로 편집기 컨텍스트를 제공 합니다.  
   
-  -   구현 하 여 텍스트 표식에 대 한 컨텍스트를 제공 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> 인터페이스입니다.  
+  - 구현 하 여 텍스트 표식에 대 한 컨텍스트를 제공 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> 인터페이스입니다.  
   
   구현 하 여 모든 사용자 컨텍스트를 제공 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> 인터페이스입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [레거시 언어 서비스 개발](../../extensibility/internals/developing-a-legacy-language-service.md)   
  [CLR 식 계산기 작성](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
-

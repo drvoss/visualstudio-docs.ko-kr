@@ -1,14 +1,9 @@
 ---
 title: 확장명 찾기 및 사용 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.ExtensionManager
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
 caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8de9a0394c72043bc54dd6fa0632d3ed3e6edfd5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: f4878827ae65a8f42e8225c7daab207a27a0614a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062802"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426383"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Visual Studio 확장명 찾기 및 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,10 +30,10 @@ Visual Studio 확장은 Visual Studio 내에서 실행되고 새로운 기능 �
  **확장 및 업데이트** 대화 상자를 사용하여 웹 사이트 및 다른 위치에서 Visual Studio 확장과 샘플을 설치를 할 수 있으며 사용, 사용 안 함, 업데이트 또는 제거를 할 수 있습니다. **도구 / 확장 및 업데이트**로 이동하거나 **빠른 실행** 창에 **확장** 을 입력합니다. 대화 상자에는 설치된 샘플 및 확장의 업데이트도 표시됩니다. 확장을 웹 사이트에서 다운로드하거나 다른 개발자에게서 얻을 수도 있습니다.
 
 > [!NOTE]
->  Visual Studio 2015부터 Visual Studio 갤러리에서 호스트된 확장이 자동으로 업데이트됩니다.  **확장 및 업데이트** 대화 상자를 통해 이 설정을 변경할 수 있습니다.  자세한 내용은 아래에서 **자동 확장 업데이트** 에 대한 단원을 참조하세요.
+> Visual Studio 2015부터 Visual Studio 갤러리에서 호스트된 확장이 자동으로 업데이트됩니다.  **확장 및 업데이트** 대화 상자를 통해 이 설정을 변경할 수 있습니다.  자세한 내용은 아래에서 **자동 확장 업데이트** 에 대한 단원을 참조하세요.
 
 ## <a name="finding-visual-studio-extensions"></a>Visual Studio 확장 찾기
- Microsoft 웹 사이트에서 [Visual Studio 갤러리](http://go.microsoft.com/fwlink/?LinkID=178891) 또는 [샘플 갤러리](http://go.microsoft.com/fwlink/?LinkId=245175) 에서 확장을 설치합니다. 확장은 Visual Studio에 기능을 추가하는 제어, 샘플, 템플릿 또는 기타 구성 요소일 수 있습니다. Visual Studio는 VSIX 패키지 형식에서 프로젝트 템플릿, 항목 템플릿, **도구 상자** 항목, MEF(Managed Extension Framework) 구성 요소 및 VSPackage 등의 확장을 지원합니다. MSI 기반 확장도 다운로드하고 설치할 수 있지만 **확장 및 업데이트** 대화 상자에서 해당 확장을 사용하거나 사용하지 않도록 설정할 수 없습니다. Visual Studio 갤러리에는 VSIX 및 MSI 확장이 모두 포함되어 있습니다.
+ 확장을 설치 합니다 [Visual Studio Marketplace](https://marketplace.visualstudio.com/) 또는 [샘플 갤러리](https://code.msdn.microsoft.com/vstudio) Microsoft 웹 사이트입니다. 확장은 Visual Studio에 기능을 추가하는 제어, 샘플, 템플릿 또는 기타 구성 요소일 수 있습니다. Visual Studio는 VSIX 패키지 형식에서 프로젝트 템플릿, 항목 템플릿, **도구 상자** 항목, MEF(Managed Extension Framework) 구성 요소 및 VSPackage 등의 확장을 지원합니다. MSI 기반 확장도 다운로드하고 설치할 수 있지만 **확장 및 업데이트** 대화 상자에서 해당 확장을 사용하거나 사용하지 않도록 설정할 수 없습니다. Visual Studio 갤러리에는 VSIX 및 MSI 확장이 모두 포함되어 있습니다.
 
 ## <a name="installing-or-uninstalling-visual-studio-extensions"></a>Visual Studio 확장 설치 또는 제거
  **확장 및 업데이트**에서 설치하려는 확장을 찾습니다. 확장의 이름이나 이름 일부를 알고 있는 경우 **Visual Studio 갤러리 검색** 창에서 검색할 수 있습니다. **다운로드**를 클릭한 다음 **설치**를 클릭합니다. 확장을 로드하려면 Visual Studio를 다시 시작해야 합니다.
@@ -59,12 +54,12 @@ Visual Studio 확장은 Visual Studio 내에서 실행되고 새로운 기능 �
 
  자동 업데이트를 사용하지 않도록 설정하려는 경우 해당 기능을 모든 확장에 대해 사용하지 않도록 설정할 수도 있고 특정 확장에 대해서만 사용하지 않도록 설정할 수도 있습니다.
 
--   모든 확장에 대해 자동 업데이트를 사용하지 않도록 설정하려면 **확장 및 업데이트** 대화 상자에서 **확장 및 업데이트 설정 변경** 을 클릭하고 **자동으로 확장 업데이트**의 선택을 취소합니다.
+- 모든 확장에 대해 자동 업데이트를 사용하지 않도록 설정하려면 **확장 및 업데이트** 대화 상자에서 **확장 및 업데이트 설정 변경** 을 클릭하고 **자동으로 확장 업데이트**의 선택을 취소합니다.
 
--   특정 확장에 대해 자동 업데이트를 사용하지 않도록 설정하려면 **확장 및 업데이트** 대화 상자 오른쪽에 있는 확장 세부 정보 창에서 **자동으로 이 확장 업데이트** 의 선택을 취소합니다.
+- 특정 확장에 대해 자동 업데이트를 사용하지 않도록 설정하려면 **확장 및 업데이트** 대화 상자 오른쪽에 있는 확장 세부 정보 창에서 **자동으로 이 확장 업데이트** 의 선택을 취소합니다.
 
 > [!NOTE]
->  Visual Studio 2015 업데이트 2부터 사용자별 확장, 모든 사용자 확장 또는 둘 다(기본 설정)에 대해 자동 업데이트를 사용할지를 지정할 수 있습니다(**도구/옵션/환경/확장 및 업데이트**).
+> Visual Studio 2015 업데이트 2부터 사용자별 확장, 모든 사용자 확장 또는 둘 다(기본 설정)에 대해 자동 업데이트를 사용할지를 지정할 수 있습니다(**도구/옵션/환경/확장 및 업데이트**).
 
 ## <a name="sample-master-copies-and-working-copies"></a>샘플 마스터 복사본 및 작업 복사본
  온라인 샘플을 설치하면 솔루션은 다음 두 위치에 저장됩니다.
@@ -94,4 +89,4 @@ Visual Studio 확장은 Visual Studio 내에서 실행되고 새로운 기능 �
  Visual Studio에서는 Microsoft Installer(MSI)에 의해 설치되는 확장은 계속 지원하지만 수정 없이 **확장 및 업데이트** 대화 상자를 통해 설치되는 확장은 지원하지 않습니다.
 
 > [!TIP]
->  MSI 기반 확장은 extension.vsixmanifest 파일을 포함하는 경우 **확장 및 업데이트** 대화 상자에 나타납니다.
+> MSI 기반 확장은 extension.vsixmanifest 파일을 포함하는 경우 **확장 및 업데이트** 대화 상자에 나타납니다.

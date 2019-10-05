@@ -1,20 +1,18 @@
 ---
-title: 단위 테스트에서 Microsoft.VisualStudio.TestTools.UnitTesting 멤버 사용
+title: 단위 테스트에서 Microsoft.VisualStudio.TestTools.UnitTesting 사용
 ms.date: 03/02/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: reference
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bad6f01a49856e44120c0dc121ee262d9d26506c
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: a9fcf54abf6227fe020d98d2fdc9aed6de021983
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295607"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68869833"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>단위 테스트에서 MSTest 프레임워크 사용
 
@@ -79,9 +77,11 @@ ClassInitialize 및 ClassCleanup은 클래스를 로드한 직후와 클래스�
 
 ## <a name="assert-classes-and-related-exceptions"></a>Assert 클래스 및 관련 예외
 
-단위 테스트에서는 다양한 종류의 어설션, 예외 및 특성을 사용하여 특정 응용 프로그램 동작을 확인할 수 있습니다. 자세한 내용은 [Assert 클래스 사용](../test/using-the-assert-classes.md)을 참조하세요.
+단위 테스트에서는 다양한 종류의 어설션, 예외 및 특성을 사용하여 특정 애플리케이션 동작을 확인할 수 있습니다. 자세한 내용은 [Assert 클래스 사용](../test/using-the-assert-classes.md)을 참조하세요.
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
+
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType>
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CollectionAssert>
 
@@ -92,8 +92,6 @@ ClassInitialize 및 ClassCleanup은 클래스를 로드한 직후와 클래스�
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertInconclusiveException>
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException>
-
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute>
 
 ## <a name="the-testcontext-class"></a>TestContext 클래스
 
@@ -115,7 +113,7 @@ ClassInitialize 및 ClassCleanup은 클래스를 로드한 직후와 클래스�
 
 ## <a name="test-configuration-classes"></a>테스트 구성 클래스
 
-- <xref:Microsoft.TeamFoundation.TestManagement.Client.ObjectTypes>
+- [ObjectTypes](/previous-versions/visualstudio/visual-studio-2013/dd987428(v=vs.120))
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection>
 

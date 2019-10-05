@@ -6,15 +6,15 @@ helpviewer_keywords:
 - deployment, VSIX
 ms.assetid: 680c3b25-7901-4768-8363-6d1fcd1ea636
 ms.author: heaths
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9d74c0a899139046cab1d73b59086e4ab9e2276
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a7187fbcc3e3aca990846176676a47f5d17aaf00
+ms.sourcegitcommit: 62f42113ae4dae1ddfff1c4e02445acc09913445
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955135"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64878152"
 ---
 # <a name="locate-visual-studio"></a>Visual Studio를 찾습니다
 
@@ -39,6 +39,7 @@ Visual Studio 2017부터 동일한 버전 또는 심지어 버전의 여러 인�
 | [VSSetup cmdlet](https://github.com/Microsoft/vssetup.powershell) | 지원 되는 PowerShell cmdlet 동일한 조건에 따라 인스턴스를 찾는 데 사용할 수 있는 개체로 풍부한 정보를 반환 하는 2.0 이상 _vswhere_ 및 인스턴스에 대 한 더 많은 속성을 검색 합니다. 참조 된 [wiki](https://github.com/Microsoft/vssetup.powershell/wiki) 예입니다. |
 | [VSIXBootstrapper](https://github.com/Microsoft/vsixbootstrapper) | 자동으로 찾습니다 _VSIXInstaller_ 하 고 설치 하려면 명령줄을 통해 전달 된 **.vsix* 파일입니다. 이 기능은 쿼리 Api에 대 한 직접 지원 되지 않은 설치 관리자에서 유용할 수 있습니다. 참조 된 [wiki](https://github.com/Microsoft/vsixbootstrapper/wiki) 예입니다. |
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-* [Visual Studio 2017 설치 프로그램 변경 내용](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup/)
+* [Visual Studio 2017 설치 프로그램 변경 내용](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup/)
+* [DTE를 사용 하 여 Visual Studio를 시작 합니다.](launch-visual-studio-dte.md)

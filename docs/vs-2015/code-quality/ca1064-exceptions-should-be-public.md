@@ -1,14 +1,9 @@
 ---
-title: 'CA1064: 예외는 public 이어야 | Microsoft Docs'
-ms.custom: ''
+title: 'CA1064: 예외는 public 이어야 합니다. | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1064
 - ExceptionsShouldBePublic
@@ -20,12 +15,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e9d85fef6cd581f32be9438b94264c201869ba01
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 00d188188f722907c2bac20e84cb9291ef8bc0fe
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200421"
 ---
 # <a name="ca1064-exceptions-should-be-public"></a>CA1064: 예외는 public이어야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,6 +50,3 @@ ms.locfileid: "49888478"
  이 규칙은 첫 번째 예제에서는 메서드, FirstCustomException 예외 클래스 예외에서 직접 파생 되 고 내부 이기 때문입니다. 규칙은 클래스를 public으로 선언 되어 클래스도 예외에서 직접 파생 하지만 SecondCustomException 클래스에서 발생 하지 않습니다. 세 번째 클래스도 발생 하지 않습니다 규칙에서 직접 파생 되지 않습니다 <xref:System.Exception?displayProperty=fullName>하십시오 <xref:System.SystemException?displayProperty=fullName>, 또는 <xref:System.ApplicationException?displayProperty=fullName>합니다.
 
  [!code-csharp[FxCop.Design.ExceptionsShouldBePublic.CA1064#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.design.exceptionsshouldbepublic.ca1064/cs/ca1064 - exceptionsshouldbepublic.cs#1)]
-
-
-

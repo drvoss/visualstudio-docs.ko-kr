@@ -6,16 +6,15 @@ helpviewer_keywords:
 - Domain-Specific Language, domain path
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 13a8ab293a6a18856ba98edc7aa04154bc876d40
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 47c2adc2894cc67b337243c30f4a62bc3642ff39
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834934"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834176"
 ---
 # <a name="domain-path-syntax"></a>도메인 경로 구문
 DSL 정의는 XPath 유형 구문을 사용하여 모델에서 특정 요소를 찾습니다.

@@ -1,31 +1,29 @@
 ---
-title: Visual Studio Desktop Express 2017 워크로드 및 구성 요소 ID
+title: Visual Studio Desktop Express 워크로드 및 구성 요소 ID
 titleSuffix: ''
 description: 작업 및 구성 요소 ID를 사용하여 명령줄로 Visual Studio를 설치하거나 VSIX 매니페스트에서 종속성으로 지정합니다.
 keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.date: 11/13/2018
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.service: ''
-ms.technology: vs-acquisition
-ms.prod: visual-studio-dev15
 ms.assetid: a3c0cc76-e3ce-435c-a1af-a6318b5a4dbe
-ms.workload:
-- multiple
-ms.openlocfilehash: 6b11aec1291847e917ad7c5d53ad81a3a5b37390
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+monikerRange: vs-2017
+ms.openlocfilehash: 2447f0eab7ee3931df70f503519f3f110f4ba272
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051745"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818962"
 ---
-# <a name="visual-studio-2017-desktop-express-component-directory"></a>Visual Studio 2017 Desktop Express 구성 요소 디렉터리
+# <a name="visual-studio-desktop-express-component-directory"></a>Visual Studio Desktop Express 구성 요소 디렉터리
 
 이 페이지의 표에는 명령줄을 사용하여 Visual Studio를 설치하는 데 사용할 수 있는 ID 또는 VSIX 매니페스트에서 종속성으로 지정할 수 있는 ID가 나열되어 있습니다. Visual Studio에 대한 업데이트를 릴리스할 때 추가 구성 요소가 추가될 것입니다.
 

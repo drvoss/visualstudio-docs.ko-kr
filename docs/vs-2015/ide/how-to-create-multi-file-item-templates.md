@@ -1,14 +1,9 @@
 ---
 title: '방법: 다중 파일 항목 템플릿 만들기 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
@@ -17,13 +12,13 @@ ms.assetid: fe3c4257-e383-4c80-b8af-c5c521959c33
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 00d7fbaa97172c98db61f93706f7e596bb22ddee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c6c6dde1880881bfb236909fde6ce6deb6bf596f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201850"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>방법: 다중 파일 항목 템플릿 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,9 +35,9 @@ ms.locfileid: "49862179"
   
 ### <a name="to-manually-create-a-multi-file-item-template"></a>다중 파일 항목 템플릿을 수동으로 만들려면  
   
-1.  단일 파일 항목 템플릿을 만드는 것처럼 항목 템플릿을 만듭니다. 자세한 내용은 [방법: 항목 템플릿 만들기](../ide/how-to-create-item-templates.md)를 참조하세요.  
+1. 단일 파일 항목 템플릿을 만드는 것처럼 항목 템플릿을 만듭니다. 자세한 내용은 [방법: 항목 템플릿 만들기](../ide/how-to-create-item-templates.md)합니다.  
   
-2.  `TargetFileName` 특성을 모든 `ProjectItem` 요소에 추가합니다. `TargetFileName` 특성 값을 $fileinputname$.*FileExtension*으로 설정합니다. 여기서 *FileExtension*은 템플릿에 포함될 파일의 파일 이름 확장명입니다. 예를 들어:  
+2. `TargetFileName` 특성을 모든 `ProjectItem` 요소에 추가합니다. `TargetFileName` 특성 값을 $fileinputname$.*FileExtension*으로 설정합니다. 여기서 *FileExtension*은 템플릿에 포함될 파일의 파일 이름 확장명입니다. 예를 들어:  
   
     ```  
     <ProjectItem TargetFileName="$fileinputname$.vb">  
@@ -58,9 +53,9 @@ ms.locfileid: "49862179"
   
      이 템플릿에서 파생된 항목이 프로젝트에 추가되면 파일 이름은 사용자가 **새 항목 추가** 대화 상자에 입력한 이름을 기반으로 합니다.  
   
-3.  템플릿에 포함할 파일을 선택하고 선택 영역을 마우스 오른쪽 단추로 클릭한 다음 **보내기**를 클릭하고 **압축(ZIP) 폴더**를 클릭합니다. 선택한 파일이 .zip 파일로 압축됩니다.  
+3. 템플릿에 포함할 파일을 선택하고 선택 영역을 마우스 오른쪽 단추로 클릭한 다음 **보내기**를 클릭하고 **압축(ZIP) 폴더**를 클릭합니다. 선택한 파일이 .zip 파일로 압축됩니다.  
   
-4.  .zip 파일을 사용자 항목 템플릿 위치에 배치합니다. 기본적으로 이 디렉터리는 \My Documents\Visual Studio *Version*\Templates\ItemTemplates\\입니다. 자세한 내용은 [방법: 템플릿 찾기 및 구성](../ide/how-to-locate-and-organize-project-and-item-templates.md)을 참조하세요.  
+4. .zip 파일을 사용자 항목 템플릿 위치에 배치합니다. 기본적으로 이 디렉터리는 \My Documents\Visual Studio *Version*\Templates\ItemTemplates\\입니다. 자세한 내용은 [방법: 템플릿 찾기 및 구성](../ide/how-to-locate-and-organize-project-and-item-templates.md)을 참조하세요.  
   
 ## <a name="example"></a>예제  
  다음 예제에서는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Windows Forms 템플릿을 보여 줍니다. 이 템플릿을 기반으로 항목이 생성되면 생성된 3개 파일의 이름은 **새 항목 추가** 대화 상자에 입력된 이름과 일치합니다.  
@@ -88,11 +83,8 @@ ms.locfileid: "49862179"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)   
  [방법: 항목 템플릿 만들기](../ide/how-to-create-item-templates.md)   
  [템플릿 매개 변수](../ide/template-parameters.md)   
- [방법: 템플릿 매개 변수 대체](../ide/how-to-substitute-parameters-in-a-template.md)
-
-
-
+ [방법: 템플릿의 매개 변수 대체](../ide/how-to-substitute-parameters-in-a-template.md)

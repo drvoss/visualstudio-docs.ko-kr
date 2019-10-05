@@ -1,14 +1,9 @@
 ---
-title: ': 식별자 ca1716 키워드 | Microsoft Docs'
-ms.custom: ''
+title: 'CA1716: 식별자는 키워드와 일치 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - IdentifiersShouldNotMatchKeywords
 - CA1716
@@ -20,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 000e28642a10c565e525b2714eed0d7abaca9340
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 35a97e62e17895cb700a1420c7851878f329112a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189107"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: 식별자는 키워드와 달라야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,6 +53,3 @@ ms.locfileid: "49858877"
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  식별자는 API의 사용자를 혼동 하지는 및에서 사용 가능한 모든 언어에서 사용 가능한 라이브러리는 확신 하는 경우이 규칙에서 경고를 표시 하지 않을 수는 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]합니다.
-
-
-

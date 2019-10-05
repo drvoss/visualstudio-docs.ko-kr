@@ -1,7 +1,6 @@
 ---
 title: 표준 코드 분석 체크 인 정책 만들기 또는 업데이트
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.policyeditor
@@ -9,15 +8,15 @@ helpviewer_keywords:
 - code analysis, migrating check-in policy
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22a74926f4fd9136e15757eb6967d5eb56a8ecbf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 768efb3e874f6427cd23f63f14671aa2db1bea71
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816359"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>방법: 표준 코드 분석 체크 인 정책 만들기 또는 업데이트
 
@@ -30,7 +29,7 @@ ms.locfileid: "53890341"
 
 - 관리 되는 코드를 지정 하 여 체크 인 정책 설정 된 *규칙 집합* 코드 분석 규칙의 하위 집합을 포함 하는 합니다.
 
-- C/c + + 코드의 경우 Visual Studio 2017 버전 15.6 및 이전 버전의 경우에서 모든 코드 분석 규칙이 실행 되는 체크 인 정책 필요 합니다. Azure DevOps 프로젝트에서 개별 코드 프로젝트에 대 한 특정 규칙을 사용 하지 않도록 설정 하는 전처리기 지시문을 추가할 수 있습니다. 15.7에서 나중에 사용할 수 있습니다 **/analyze: ruleset** 실행 하는 규칙을 지정 합니다. 자세한 내용은 [규칙 규칙 집합 실행에 c + + 규칙 지정을 사용 하 여](using-rule-sets-to-specify-the-cpp-rules-to-run.md)입니다.
+- C /C++ Visual Studio 2017 버전 15.6 및 이전 버전의 경우에서 코드를 체크 인 정책에 따라 모든 코드 분석 규칙이 실행 됩니다. Azure DevOps 프로젝트에서 개별 코드 프로젝트에 대 한 특정 규칙을 사용 하지 않도록 설정 하는 전처리기 지시문을 추가할 수 있습니다. 15.7에서 나중에 사용할 수 있습니다 **/analyze: ruleset** 실행 하는 규칙을 지정 합니다. 자세한 내용은 [규칙 규칙 집합 지정을 사용 하 여는 C++ 실행 하는 규칙](using-rule-sets-to-specify-the-cpp-rules-to-run.md)합니다.
 
 관리 코드에 대 한 체크 인 정책을 지정한 후 팀 멤버는 코드 프로젝트에 Azure DevOps 프로젝트 정책 설정에 대 한 코드 분석 설정을 동기화 할 수 있습니다.
 
@@ -53,7 +52,7 @@ ms.locfileid: "53890341"
 |옵션|설명|
 |------------|-----------------|
 |**체크 인 현재 솔루션의 일부인 파일만 포함 하도록 적용 합니다.**|코드 분석 솔루션 및 프로젝트 구성 파일에 지정 된 파일 에서만 실행할 수 있습니다. 이 정책은 솔루션의 일부인 모든 코드를 분석 하는 것을 보장 합니다.|
-|**C/c + + 코드 분석 적용 (/analyze)**|필요는 모든 C 또는 c + + 프로젝트를 빌드하는 /analyze 컴파일러 옵션 검사 하기 전에 코드 분석을 실행 하도록 합니다.|
+|**C 적용 /C++ 코드 분석 (/analyze)**|모든 C 또는 C++ 프로젝트를 빌드하는 /analyze 컴파일러 옵션 검사 하기 전에 코드 분석을 실행 하려면.|
 |**관리 코드에 대 한 코드 분석 적용**|모든 관리 되는 프로젝트 코드 분석 실행 검사 하기 전에 작성 해야 합니다.|
 
 ## <a name="to-specify-a-managed-rule-set"></a>관리 되는 규칙 집합을 지정 하려면

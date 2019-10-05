@@ -2,7 +2,6 @@
 title: 'Ijsdebugdatatarget:: Getthreadcontext 메서드 | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,19 +15,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e2f858c66eda2ad09b04d7beab776c793b6f195
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d7904ef81eb900c6466069267101f30d89e362a1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62582835"
 ---
 # <a name="ijsdebugdatatargetgetthreadcontext-method"></a>IJsDebugDataTarget::GetThreadContext 메서드
-에 대 한 검색 컨텍스트 스레드를 지정 합니다.  
+스레드가 제공 하는 컨텍스트를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetThreadContext(  
    DWORD threadId,  
    ULONG32 contextFlags,  
@@ -42,13 +41,13 @@ HRESULT GetThreadContext(
  [in] 대상 프로세스에서 실행 되는 스레드입니다.  
   
  `contextFlags`  
- [in] 상황에 맞는 플래그를 지정합니다. (자세한 내용은 참조 winnt.h CONTEXT_ALL 검색)에 대 한 컨텍스트 ContextFlags 필드와 같습니다.  
+ [in] 상황에 맞는 플래그를 지정합니다. (자세한 내용은 winnt.h에서 context_all 검색)에 대 한 CONTEXT의 ContextFlags 필드와 동일 합니다.  
   
  `contextSize`  
- [in] PContext로 지정 된 버퍼의 크기입니다.  
+ [in] Pcontext가 지정한 버퍼의 크기입니다.  
   
  `pContext`  
- [out] PContext로 지정 된 버퍼에 플랫폼 관련 컨텍스트 구조를 수신 합니다.  
+ [out] 플랫폼별 컨텍스트 구조체를 pcontext 지정한 버퍼로 받습니다.  
   
 ## <a name="return-value"></a>반환 값  
   

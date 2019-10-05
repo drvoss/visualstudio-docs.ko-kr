@@ -1,14 +1,9 @@
 ---
 title: 도움말 뷰어 창 관리 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: conceptual
 helpviewer_keywords:
 - Help Viewer 2.0, rearranging the window
 - Help Viewer 2.0, restoring the default window layout
@@ -16,13 +11,13 @@ ms.assetid: 98625016-acce-46c9-9b5a-2107d2939a5e
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 37d7ccda7d04fd135968608b6272199c9949ed67
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8931b37805e1f24dfaf7fad35a70434da3ed9ebf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186075"
 ---
 # <a name="manage-the-help-viewer-window"></a>도움말 뷰어 창 관리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,6 +34,3 @@ ms.locfileid: "49281491"
   
 ## <a name="minimize-a-navigation-tab"></a>탐색 탭 최소화  
  탐색 탭에 고정 아이콘을 선택하여 항목을 보기 위한 더 많은 공간을 만듭니다. 이러한 탭을 최소화하면 레이블만 창의 가장 가까운 가장자리에 나타납니다. 탭을 복원하려면 탭의 레이블을 선택한 다음 핀 아이콘을 다시 선택합니다.
-
-
-

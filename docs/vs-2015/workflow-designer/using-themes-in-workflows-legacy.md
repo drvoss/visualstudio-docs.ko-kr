@@ -1,11 +1,8 @@
 ---
 title: 테마를 사용 하 여 워크플로의 (레거시) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - workflows, themes
@@ -15,13 +12,13 @@ ms.assetid: 10225f34-aced-432a-846c-82cf6137d7c0
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: b69913605e57ed0ef4b4a2b025287821f679369d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 79dc06eb352c3196418d5ebe274b10c6740f5e75
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62855690"
 ---
 # <a name="using-themes-in-workflows-legacy"></a>워크플로에서 테마 사용(레거시)
 이 항목에서는 [!INCLUDE[wf](../includes/wf-md.md)] 또는 [!INCLUDE[wfd1](../includes/wfd1-md.md)]를 대상으로 하는 레거시 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)]를 사용할 경우 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]에서 테마를 사용하는 방법에 대해 설명합니다.  

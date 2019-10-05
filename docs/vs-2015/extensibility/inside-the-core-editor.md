@@ -1,45 +1,40 @@
 ---
 title: 핵심 편집기 내에서 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - core editor
 ms.assetid: 8265f31c-c45b-4858-882c-6d9f1e3b9083
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9aca4bb8ad55dbd4cac0a6f899731711ccb6db8f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cf9bc42aec3aac5acc996487f99c7e1f29ca252c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203946"
 ---
-# <a name="inside-the-core-editor"></a>핵심 편집기 내에서
+# <a name="inside-the-core-editor"></a>핵심 편집기 내부
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 핵심 편집기가 텍스트 정보를 쿼리하고 수정할 수 있는 여러 구성 요소 집합입니다. 핵심 편집기 기존 API를 사용 하 여 사용자 지정 하면, 편집기 어댑터를 통해 라우팅되는 이러한 사용자 지정을 사용 하 여 계속 수 있습니다. 하지만 좋습니다, 새 편집기 API로 사용자 지정을 적용 하는.  
   
  다음 영역은 핵심 편집기의 몇 가지 중요 한 측면을 보여 줍니다.  
   
--   텍스트 버퍼  
+- 텍스트 버퍼  
   
--   텍스트 보기  
+- 텍스트 보기  
   
--   코드 창  
+- 코드 창  
   
--   텍스트 마커  
+- 텍스트 마커  
   
--   텍스트 관리자  
+- 텍스트 관리자  
   
--   언어 서비스와의 통합  
+- 언어 서비스와의 통합  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [레거시 API를 사용하여 핵심 편집기 인스턴스화](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)  
@@ -84,4 +79,3 @@ ms.locfileid: "51798549"
   
  [방법: 사용자 지정 텍스트 표식 만들기](../extensibility/how-to-create-custom-text-markers.md)  
  사용자 지정 텍스트 마커를 만드는 방법 및 표식 유형 서비스로 제공 하는 방법에 대 한 단계별 지침을 제공 합니다.
-

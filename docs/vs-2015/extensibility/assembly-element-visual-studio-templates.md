@@ -1,14 +1,9 @@
 ---
 title: Assembly 요소 (Visual Studio 템플릿) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Assembly
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 9242f76a-1273-4b8a-8f26-6606f91829ef
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 40bb0b99bfe22c7842296c2fbaa2b868ca1ef259
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 10c894f3507ae760624b6ae18f785aae6016cd5e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802033"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184698"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly 요소(Visual Studio 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51802033"
 서식 파일 프로젝트에 해당 어셈블리 참조를 추가 하는 어셈블리에 대 한 정보를 지정 합니다.  
   
  \<VSTemplate>  
- \<TemplateContent >  
+ \<TemplateContent>  
  \<참조 >  
  \<참조 >  
  \<어셈블리 >  
@@ -62,7 +57,7 @@ ms.locfileid: "51802033"
   
  이 텍스트는 항목 템플릿이 인스턴스화될 때 프로젝트에 추가할 어셈블리를 지정 합니다. 다음 방법 중 하나에서이 어셈블리 이름을 지정 해야 합니다.  
   
--   전체 어셈블리 이름입니다. 예를 들어:  
+- 전체 어셈블리 이름입니다. 예를 들어:  
   
     ```  
     <Assembly>  
@@ -70,7 +65,7 @@ ms.locfileid: "51802033"
     </Assembly>  
     ```  
   
--   단순한 텍스트 참조 합니다. 예를 들어:  
+- 단순한 텍스트 참조 합니다. 예를 들어:  
   
     ```  
     <Assembly> System </Assembly>  
@@ -105,4 +100,3 @@ ms.locfileid: "51802033"
 ## <a name="see-also"></a>참고 항목  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
  [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
-

@@ -2,7 +2,6 @@
 title: IRemoteDebugApplicationEvents::OnDebugOutput | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 022a2297e135f308a8250fa0b493dd5943da7687
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2c7f4c6572a7b06a8ab0ca78419b0bd6518f0e55
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974464"
 ---
 # <a name="iremotedebugapplicationeventsondebugoutput"></a>IRemoteDebugApplicationEvents::OnDebugOutput
 디버거 출력 이벤트를 처리합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT OnDebugOutput(  
    LPCOLESTR  pstr  
 );  
@@ -48,7 +47,7 @@ HRESULT OnDebugOutput(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 디버거 출력 이벤트를 처리합니다.  
+ 이 메서드를 디버거 출력 이벤트를 처리합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IRemoteDebugApplicationEvents 인터페이스](../../winscript/reference/iremotedebugapplicationevents-interface.md)

@@ -1,30 +1,24 @@
 ---
 title: Visual Studio Tools for Unity 사용 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-unity-tools
+ms.topic: conceptual
 ms.assetid: e67ec9a2-a449-413e-8930-9a471bd43a06
 caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
-manager: ghogen
-ms.openlocfilehash: a7dbe0e13691e5ac0dbf67945728bada3ef4e57f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: cd05f5ebad1a07e818e377b90aeb5e137f296cd9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443358"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 이 섹션에서는 Visual Studio Tools for Unity의 통합 및 생산성 기능을 사용하는 방법과 Unity 개발을 위해 Visual Studio 디버거를 사용하는 방법에 대해 배워 봅니다.  
   
 ## <a name="unity-integration-and-productivity"></a>Unity 통합 및 생산성  
@@ -35,7 +29,7 @@ ms.locfileid: "51771309"
   
 ##### <a name="to-access-unity-documentation"></a>Unity 설명서에 액세스하려면  
   
--   Visual Studio에서 알아보려는 Unity API를 강조 표시하거나 그 위로 커서를 가져간 다음 **Ctrl+Alt+M, Ctrl+H**를 누릅니다.  
+- Visual Studio에서 알아보려는 Unity API를 강조 표시하거나 그 위로 커서를 가져간 다음 **Ctrl+Alt+M, Ctrl+H**를 누릅니다.  
   
 ### <a name="unity-monobehavior-scripting-wizard"></a>Unity MonoBehavior 스크립팅 마법사  
  Unity에서 대부분의 스크립트는 MonoBehavior 클래스에서 파생하고 해당 메서드 중 일부를 재정의하여 구현됩니다. MonoBehavior 마법사를 사용하여 오버로드하려는 MonoBehavior 메서드의 빈 정의를 신속하게 만들 수 있습니다. 이 마법사를 사용하여 사용할 수 있는 메서드의 목록에서 오버로드하려는 하나 이상의 메서드를 지정하고, 코드에서 메서드를 삽입할 위치를 선택하고, 메서드가 사용되는 방법에 대한 설명을 포함할지 여부를 결정할 수 있습니다.  
@@ -65,13 +59,13 @@ ms.locfileid: "51771309"
   
 ###### <a name="to-create-an-empty-monobehavior-method-definition-by-using-the-quick-monobehavior-wizard"></a>빠른 MonoBehavior 마법사를 사용하여 빈 MonoBehavior 메서드 정의를 만들려면  
   
-1.  Visual Studio에서 메서드를 삽입할 위치에 커서를 놓은 다음 **Ctrl+Shift+Q**를 눌러 빠른 MonoBehavior 마법사를 시작합니다. 새 메서드는 항상 그곳에 삽입되어 있으므로 다른 MonoBehavior 마법사와는 달리 이 마법사를 사용할 때는 의도적으로 커서를 배치해야 합니다.  
+1. Visual Studio에서 메서드를 삽입할 위치에 커서를 놓은 다음 **Ctrl+Shift+Q**를 눌러 빠른 MonoBehavior 마법사를 시작합니다. 새 메서드는 항상 그곳에 삽입되어 있으므로 다른 MonoBehavior 마법사와는 달리 이 마법사를 사용할 때는 의도적으로 커서를 배치해야 합니다.  
   
-2.  **스크립트 메서드 만들기** 창의 오른쪽 상단 모서리에 표시되는 프레임워크 버전이 사용 중인 버전과 일치하는지 확인합니다. 일치하지 않으면 사용하려는 버전의 드롭다운 값을 변경합니다.  
+2. **스크립트 메서드 만들기** 창의 오른쪽 상단 모서리에 표시되는 프레임워크 버전이 사용 중인 버전과 일치하는지 확인합니다. 일치하지 않으면 사용하려는 버전의 드롭다운 값을 변경합니다.  
   
-3.  오버로드하려는 메서드를 찾습니다. 스크립트 메서드 만들기 창에서 텍스트 상자에 메서드의 이름을 입력하기 시작합니다. 입력한 이름과 일치하는 메서드 목록이 표시됩니다.  
+3. 오버로드하려는 메서드를 찾습니다. 스크립트 메서드 만들기 창에서 텍스트 상자에 메서드의 이름을 입력하기 시작합니다. 입력한 이름과 일치하는 메서드 목록이 표시됩니다.  
   
-4.  오버로드하려는 메서드를 선택합니다. 원하는 메서드가 목록에 표시되면 마우스 또는 화살표 키로 선택한 다음 **Enter** 키를 누릅니다. 목록에 메서드가 하나만 표시되는 경우 **Enter** 키를 누르기만 하면 됩니다. 메서드는 코드에 삽입됩니다.  
+4. 오버로드하려는 메서드를 선택합니다. 원하는 메서드가 목록에 표시되면 마우스 또는 화살표 키로 선택한 다음 **Enter** 키를 누릅니다. 목록에 메서드가 하나만 표시되는 경우 **Enter** 키를 누르기만 하면 됩니다. 메서드는 코드에 삽입됩니다.  
   
 ### <a name="unity-project-explorer"></a>Unity 프로젝트 탐색기  
  Unity 프로젝트 탐색기를 사용하여 Visual Studio 내의 Unity 프로젝트를 탐색할 수 있습니다.  
@@ -109,21 +103,21 @@ ms.locfileid: "51771309"
 ## <a name="unity-debugging"></a>Unity 디버깅  
  Visual Studio Tools for Unity를 통해 Visual Studio의 강력한 디버거를 사용하여 Unity 프로젝트에 대해 편집기와 게임 스크립트를 모두 디버그할 수 있습니다.  
   
-###  <a name="connecting-visual-studio-to-unity"></a> Unity에 Visual Studio 연결  
+### <a name="connecting-visual-studio-to-unity"></a> Unity에 Visual Studio 연결  
  Visual Studio Tools for Unity는 UDP 연결을 통해 Unity와 통신합니다. 즉, 로컬 또는 네트워크 어느 곳에서나 실행되는 Unity 인스턴스에 완전히 동일한 방식으로 연결할 수 있습니다. **Unity 인스턴스 선택** 대화 상자를 사용하여 네트워크에서 볼 수 있는 모든 Unity 인스턴스에 연결할 수 있습니다.  
   
 ##### <a name="to-open-the-select-unity-instance-dialog"></a>Unity 인스턴스 선택 대화 상자를 열려면  
   
--   Visual Studio의 주 메뉴에서 **디버그**, **Unity 디버거 연결**을 선택합니다.  
+- Visual Studio의 주 메뉴에서 **디버그**, **Unity 디버거 연결**을 선택합니다.  
   
      ![Unity 디버거를 연결합니다.](../cross-platform/media/vstu-debugging-attach-unity-debugger.png "vstu_debugging_attach_unity_debugger")  
   
--   *또는* Visual Studio의 상태 표시줄에서 Visual Studio의 오른쪽 아래 모서리에 있는 플러그 아이콘을 선택합니다.  
+- *또는* Visual Studio의 상태 표시줄에서 Visual Studio의 오른쪽 아래 모서리에 있는 플러그 아이콘을 선택합니다.  
   
      ![이 아이콘은 VSTU가 Unity에 연결되었음을 보여 줍니다.](../cross-platform/media/vstu-connection-connected.png "vstu_connection_connected")  
   
 > [!TIP]
->  플러그 아이콘에 확인 표시가 보이면 Unity 인스턴스에 이미 연결되어 있는 것입니다.  
+> 플러그 아이콘에 확인 표시가 보이면 Unity 인스턴스에 이미 연결되어 있는 것입니다.  
   
  **Unity 인스턴스 선택** 대화 상자는 연결할 수 있는 각 Unity 인스턴스에 대한 일부 정보를 표시합니다.  
   
@@ -142,9 +136,9 @@ ms.locfileid: "51771309"
  이 Unity의 인스턴스에서 통신하는 데 사용하는 UDP 소켓의 포트 번호입니다.  
   
 > [!IMPORTANT]
->  Visual Studio Tools for Unity 및 Unity 인스턴스가 UDP 네트워크 소켓을 통해 통신 중이므로 방화벽이 이를 감지할 수 있습니다. 이 경우 VSTU 및 Unity가 통신할 수 있도록  연결 권한을 부여해야 합니다.  
+> Visual Studio Tools for Unity 및 Unity 인스턴스가 UDP 네트워크 소켓을 통해 통신 중이므로 방화벽이 이를 감지할 수 있습니다. 이 경우 VSTU 및 Unity가 통신할 수 있도록  연결 권한을 부여해야 합니다.  
   
-###  <a name="debugging-your-project-in-a-unity-player"></a> Unity 플레이어에서 프로젝트 디버그  
+### <a name="debugging-your-project-in-a-unity-player"></a> Unity 플레이어에서 프로젝트 디버그  
  Unity 편집기를 실행 중이지 않은 경우 Visual Studio Tools for Unity를 독립 실행형 플레이어에서 실행 중인 Unity 앱으로 직접 연결하거나 플랫폼 특정적인 문제를 디버그할 수 있습니다.  
   
 ##### <a name="to-enable-script-debugging-in-a-unity-player"></a>Unity 플레이어에서 스크립트 디버깅을 활성화하려면  
@@ -160,7 +154,7 @@ ms.locfileid: "51771309"
 - Unity 웹 플레이어의 상황에 맞는 메뉴에서 **릴리스 채널**을 선택하고 **개발** 옵션이 활성화되어 있는지 확인합니다.  
   
   > [!IMPORTANT]
-  >  Unity 4.2 이상 버전에서는 웹 플레이어 상황에 맞는 메뉴에서 **릴리스 채널** 상황에 맞는 메뉴 항목을 사용하려면 상황에 맞는 메뉴를 열 때 **Alt** 키를 누르고 있어야 합니다. 웹 플레이어가 Mac OS X에서 실행 중인 경우 **Option** 키를 대신 누릅니다.  
+  > Unity 4.2 이상 버전에서는 웹 플레이어 상황에 맞는 메뉴에서 **릴리스 채널** 상황에 맞는 메뉴 항목을 사용하려면 상황에 맞는 메뉴를 열 때 **Alt** 키를 누르고 있어야 합니다. 웹 플레이어가 Mac OS X에서 실행 중인 경우 **Option** 키를 대신 누릅니다.  
   
   마지막으로 디버그하려는 Unity 인스턴스에 연결되어 있는지 확인합니다. 그렇게 하는 방법에 대한 내용은 [Unity에 Visual Studio 연결](#connecting-visual-studio-to-unity) 섹션을 참조하세요.  
   
@@ -168,7 +162,7 @@ ms.locfileid: "51771309"
  많은 Unity 개발자가 개발하는 기능을 쉽게 다른 프로젝트와 공유할 수 있도록 코드 구성 요소를 외부 DLL로 작하고 있습니다. Visual Studio Tools for Unity를 통해 Unity 프로젝트에서 이러한 DDL의 코드를 다른 코드와 함께 원활하게 디버그할 수 있습니다.  
   
 > [!NOTE]
->  이때 Visual Studio Tools for Unity는 관리 DLL만 지원합니다. C++에서 작성한 것과 같은 네이티브 코드 DLL의 디버깅은 지원하지 않습니다.  
+> 이때 Visual Studio Tools for Unity는 관리 DLL만 지원합니다. C++에서 작성한 것과 같은 네이티브 코드 DLL의 디버깅은 지원하지 않습니다.  
   
  여기에 설명된 시나리오에서는 사용자에게 소스 코드가 있다고 가정합니다. 즉, 자사 코드를 개발 또는 다시 사용하는 중이거나 타사 라이브러리에 대한 소스 코드가 있으며 이를 Unity 프로젝트에서 DLL로 배포하도록 계획 중이라고 가정합니다. 이 시나리오는 소스 코드가 없는 DLL 디버깅에 대해서는 설명하지 않습니다.  
   
@@ -193,4 +187,3 @@ ms.locfileid: "51771309"
      PDB 파일은 DLL의 디버깅 기호를 포함하며 DLL 코드를 소스 코드 형태로 매핑하므로 디버깅에 필요합니다. Visual Studio Tools for Unity에서는 DLL 및 PDB의 정보를 사용하여 Unity 스크립팅 엔진에서 사용되는 디버그 기호 형식인 DLL.MDB 파일을 만듭니다.  
   
 4. 코드를 디버그합니다. 이제 Unity 프로젝트의 소스 코드와 함께 DLL 소스 코드를 디버그할 수 있으며 중단점 및 단계별 코드 실행 등 익숙한 디버깅 기능을 모두 사용할 수 있습니다.
-

@@ -1,8 +1,6 @@
 ---
 title: 클래스 디자이너에서 클래스 및 형식 이름 바꾸기 및 이동
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.ClassDesigner.OverrideMembersDialog
@@ -18,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: dcf07bb4-fa3b-4224-9dec-566fd924a8ce
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d5683f28150089335f04e9cf2e5274ad3ff413c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d99fc68f6b42b442a87ead02aba888063b1b42a1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975088"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>클래스 디자이너에서 클래스 및 형식 리팩터링
 
@@ -40,8 +38,8 @@ ms.locfileid: "49922525"
 |작업|지원 내용|
 |----------| - |
 |**클래스 리팩터링:** 리팩터링 작업을 통해 클래스를 부분 클래스로 분할하거나 추상 기본 클래스를 구현할 수 있습니다.|-   [방법: 클래스를 부분 클래스로 분할](how-to-split-a-class-into-partial-classes.md)|
-|**인터페이스 사용:** 클래스 디자이너에서는 인터페이스 메서드의 코드를 제공하는 클래스에 인터페이스를 연결하여 클래스 다이어그램에서 인터페이스를 구현할 수 있습니다.|-   [방법: 인터페이스 구현](how-to-implement-an-interface.md)|
-|**형식, 형식 구성원 및 매개 변수 리팩터링:** 클래스 디자이너를 사용하여 형식 이름을 바꾸거나, 형식 구성원을 재정의하거나, 한 형식에서 다른 형식으로 이동할 수 있습니다. nullable 형식을 만들 수도 있습니다.|-   [형식 및 형식 멤버 이름 바꾸기](#rename-types-and-type-members)<br />-   [형식 간에 형식 멤버 이동](#move-type-members-from-one-type-to-another)<br />-   [방법: Nullable 형식 만들기](how-to-create-a-nullable-type.md)|
+|**인터페이스 작업:** 클래스 디자이너에서는 인터페이스 메서드의 코드를 제공하는 클래스에 인터페이스를 연결하여 클래스 다이어그램에서 인터페이스를 구현할 수 있습니다.|-   [방법: 인터페이스 구현](how-to-implement-an-interface.md)|
+|**형식, 형식 멤버 및 매개 변수 리팩터링:** 클래스 디자이너를 사용하여 형식 이름을 바꾸거나, 형식 구성원을 재정의하거나, 한 형식에서 다른 형식으로 이동할 수 있습니다. nullable 형식을 만들 수도 있습니다.|-   [형식 및 형식 멤버 이름 바꾸기](#rename-types-and-type-members)<br />-   [형식 간에 형식 멤버 이동](#move-type-members-from-one-type-to-another)<br />-   [방법: Nullable 형식 만들기](how-to-create-a-nullable-type.md)|
 
 ## <a name="rename-types-and-type-members"></a>형식 및 형식 멤버 이름 바꾸기
 
@@ -90,5 +88,4 @@ ms.locfileid: "49922525"
 
 ## <a name="see-also"></a>참고 항목
 
-- [형식 및 관계 보기](viewing-types-and-relationships.md)
-- [클래스 및 형식 디자인](designing-classes-and-types.md)
+- [클래스 및 형식 디자인](designing-and-viewing-classes-and-types.md)

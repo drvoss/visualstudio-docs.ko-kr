@@ -1,12 +1,9 @@
 ---
 title: 파일 저장소 및 XML Serialization을 사용자 지정 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.xmlbehavior
 helpviewer_keywords:
@@ -15,15 +12,15 @@ ms.assetid: 76c53ef1-e3b9-45da-b425-1bddb3c01395
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 574fad0cdccd0112d7d078e86486569d16919a75
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b41f5f6a3d937f23db1039fdab5e1cf7e36960ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867449"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433261"
 ---
-# <a name="customizing-file-storage-and-xml-serialization"></a>파일 저장소 및 XML Serialization 사용자 지정
+# <a name="customizing-file-storage-and-xml-serialization"></a>파일 스토리지 및 XML Serialization 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 사용자 인스턴스를 저장 하는 경우 또는 *모델*, 도메인 특정 언어 (DSL)의 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], XML 파일로 만들어지거나 업데이트 됨. 파일은 저장소에 모델을 다시 다시 로드 될 수 있습니다.  
@@ -33,22 +30,22 @@ ms.locfileid: "49867449"
  또한 고급 사용자 지정에 대 한 프로그램 코드를 작성할 수 있습니다.  
   
 > [!NOTE]
->  특정 형식으로 모델을 저장 하려면 해당 형식에서 다시 로드 해야 하지만 경우에 텍스트 템플릿을 사용 하 여 사용자 지정 serialization 체계 대신이 모델에서 출력을 생성 하는 것이 좋습니다. 자세한 내용은 [도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)합니다.  
+> 특정 형식으로 모델을 저장 하려면 해당 형식에서 다시 로드 해야 하지만 경우에 텍스트 템플릿을 사용 하 여 사용자 지정 serialization 체계 대신이 모델에서 출력을 생성 하는 것이 좋습니다. 자세한 내용은 [도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)합니다.  
   
 ## <a name="model-and-diagram-files"></a>모델 및 다이어그램 파일  
  각 모델은 일반적으로 두 개의 파일에 저장 됩니다.  
   
--   모델 파일의 이름이 같은 **Model1.mydsl**합니다. 모델 요소 및 관계와 해당 속성을 저장합니다. 와 같은 파일 확장명 **.mydsl** 에 의해 결정 됩니다 합니다 **FileExtension** 속성을 **편집기** DSL 정의에서 노드.  
+- 모델 파일의 이름이 같은 **Model1.mydsl**합니다. 모델 요소 및 관계와 해당 속성을 저장합니다. 와 같은 파일 확장명 **.mydsl** 에 의해 결정 됩니다 합니다 **FileExtension** 속성을 **편집기** DSL 정의에서 노드.  
   
--   다이어그램 파일의 이름이 같은 **Model1.mydsl.diagram**합니다. 셰이프, 커넥터 및 해당 위치, 색, 선 두께 및 기타 세부 정보는 다이어그램의 모양을 저장합니다. 사용자를 삭제 하는 경우는 **.diagram** 파일인 모델에는 중요 한 정보는 손실 되지 않습니다. 다이어그램의 레이아웃만 손실 됩니다. 모델 파일을 열면 모양의 기본 설정 및 커넥터 생성 됩니다.  
+- 다이어그램 파일의 이름이 같은 **Model1.mydsl.diagram**합니다. 셰이프, 커넥터 및 해당 위치, 색, 선 두께 및 기타 세부 정보는 다이어그램의 모양을 저장합니다. 사용자를 삭제 하는 경우는 **.diagram** 파일인 모델에는 중요 한 정보는 손실 되지 않습니다. 다이어그램의 레이아웃만 손실 됩니다. 모델 파일을 열면 모양의 기본 설정 및 커넥터 생성 됩니다.  
   
 #### <a name="to-change-the-file-extension-of-a-dsl"></a>DSL의 파일 확장명을 변경 하려면  
   
-1.  DSL 정을 엽니다. DSL 탐색기에서 편집기 노드를 클릭 합니다.  
+1. DSL 정을 엽니다. DSL 탐색기에서 편집기 노드를 클릭 합니다.  
   
-2.  속성 창에서 편집 합니다 **FileExtension** 속성입니다. 초기 포함 되지 않습니다 "." 파일 이름 확장명입니다.  
+2. 속성 창에서 편집 합니다 **FileExtension** 속성입니다. 초기 포함 되지 않습니다 "." 파일 이름 확장명입니다.  
   
-3.  솔루션 탐색기에서 두 항목 템플릿 파일의 이름을 변경 **DslPackage\ProjectItemTemplates**합니다. 이러한 파일에 다음과 같은이 형식 이름이:  
+3. 솔루션 탐색기에서 두 항목 템플릿 파일의 이름을 변경 **DslPackage\ProjectItemTemplates**합니다. 이러한 파일에 다음과 같은이 형식 이름이:  
   
      `myDsl.diagram`  
   
@@ -84,17 +81,17 @@ ms.locfileid: "49867449"
   
  직렬화 된 모델에 대 한 다음 사항에 유의 합니다.  
   
--   각 XML 노드 이름이 도메인 클래스 이름으로 동일한 첫 글자는 소문자입니다. 예를 들어 `familyTreeModel` 및 `person`를 지정합니다.  
+- 각 XML 노드 이름이 도메인 클래스 이름으로 동일한 첫 글자는 소문자입니다. 예를 들어 `familyTreeModel` 및 `person`를 지정합니다.  
   
--   도메인 속성 이름과 생 년 등 XML 노드에 특성으로 serialize 됩니다. 마찬가지로 속성 이름의 초기 문자를 소문자로 변환 됩니다.  
+- 도메인 속성 이름과 생 년 등 XML 노드에 특성으로 serialize 됩니다. 마찬가지로 속성 이름의 초기 문자를 소문자로 변환 됩니다.  
   
--   각 관계는 관계의 원본 끝을 내부에 중첩 된 XML 노드로 serialize 됩니다. 노드 이름이 같은 소문자 초기 문자를 사용 하 여 원본 역할 속성으로.  
+- 각 관계는 관계의 원본 끝을 내부에 중첩 된 XML 노드로 serialize 됩니다. 노드 이름이 같은 소문자 초기 문자를 사용 하 여 원본 역할 속성으로.  
   
      역할 이라고 하는 DSL 정의에서 예를 들어 **사람들** 소스로 합니다 **FamilyTree** 클래스.  Xml에서 명명 된 노드에 의해 표시 됩니다 `people` 안에 중첩 된 `familyTreeModel` 노드.  
   
--   각 포함 관계의 대상 끝 관계 아래에 중첩 노드로 serialize 됩니다. 예를 들어 합니다 `people` 여러 노드에 포함 `person` 노드.  
+- 각 포함 관계의 대상 끝 관계 아래에 중첩 노드로 serialize 됩니다. 예를 들어 합니다 `people` 여러 노드에 포함 `person` 노드.  
   
--   각 참조 관계의 대상 끝으로 serialize 되는 *모니커*, 대상 요소에 대 한 참조를 인코딩하는 합니다.  
+- 각 참조 관계의 대상 끝으로 serialize 되는 *모니커*, 대상 요소에 대 한 참조를 인코딩하는 합니다.  
   
      예를 들어 아래는 `person` 노드를 있을 수 있습니다는 `children` 관계입니다. 이 노드에 같은 모니커를 포함 합니다.  
   
@@ -128,33 +125,33 @@ ms.locfileid: "49867449"
   
 #### <a name="to-set-a-domain-class-to-be-referenced-by-id-monikers"></a>도메인 클래스 ID 모니커를 참조할 수를 설정 하려면  
   
-1.  했는지 **모니커 키가** 는 `false` 클래스와 기준 클래스의 모든 도메인 속성에 대 한 합니다.  
+1. 했는지 **모니커 키가** 는 `false` 클래스와 기준 클래스의 모든 도메인 속성에 대 한 합니다.  
   
-    1.  DSL 탐색기에서 확장 **Xml Serialization Behavior\Class 데이터\\**_\<도메인 클래스 >_**\Element 데이터**입니다.  
+    1. DSL 탐색기에서 확장 **Xml Serialization Behavior\Class 데이터\\** _\<도메인 클래스 >_ **\Element 데이터**입니다.  
   
-    2.  확인 **모니커 키가** 는 `false` 모든 도메인 속성에 대 한 합니다.  
+    2. 확인 **모니커 키가** 는 `false` 모든 도메인 속성에 대 한 합니다.  
   
-    3.  도메인 클래스는 기본 클래스에 해당 클래스의 절차를 반복 합니다.  
+    3. 도메인 클래스는 기본 클래스에 해당 클래스의 절차를 반복 합니다.  
   
-2.  설정할 **Id Serialize**  =  `true` 도메인 클래스에 대 한 합니다.  
+2. 설정할 **Id Serialize**  =  `true` 도메인 클래스에 대 한 합니다.  
   
      이 속성에서 찾을 수 있습니다 **Xml 직렬화 동작**합니다.  
   
 #### <a name="to-set-a-domain-class-to-be-referenced-by-qualified-key-monikers"></a>정규화 된 모니커 키에서 참조 하는 도메인 클래스를 설정 하려면  
   
--   설정할 **모니커 키가** 기존 도메인 클래스의 도메인 속성에 대 한 합니다. 속성의 형식 이어야 합니다 `string`합니다.  
+- 설정할 **모니커 키가** 기존 도메인 클래스의 도메인 속성에 대 한 합니다. 속성의 형식 이어야 합니다 `string`합니다.  
   
-    1.  DSL 탐색기에서 확장 **Xml Serialization Behavior\Class 데이터\\**_\<도메인 클래스 >_**\Element 데이터**를 선택한 후는 도메인 속성입니다.  
+    1. DSL 탐색기에서 확장 **Xml Serialization Behavior\Class 데이터\\** _\<도메인 클래스 >_ **\Element 데이터**를 선택한 후는 도메인 속성입니다.  
   
-    2.  속성 창에서 설정할 **모니커 키가** 에 `true`입니다.  
+    2. 속성 창에서 설정할 **모니커 키가** 에 `true`입니다.  
   
--   \- 또는 -  
+- \- 또는 -  
   
      사용 하 여 새 도메인 클래스는 **명명 된 도메인 클래스** 도구입니다.  
   
      이 도구는 Name 이라는 도메인 속성이 포함 된 새 클래스를 만듭니다. 합니다 **Is Element Name** 하 고 **모니커 키가** 이 도메인 속성의 속성으로 초기화 됩니다 `true`합니다.  
   
--   \- 또는 -  
+- \- 또는 -  
   
      도메인 클래스에서 모니커 키 속성이 포함 된 다른 클래스에 상속 관계를 만듭니다.  
   
@@ -163,11 +160,11 @@ ms.locfileid: "49867449"
   
  이 상황을 방지 하는 데 도움이 되는 방법은 여러 가지가 있습니다.  
   
--   설정할 **Is Element Name**  =  `true` 키 도메인 속성에 대 한 합니다. DSL 정의 다이어그램에서 도메인 속성을 선택 하 고 속성 창에서 값을 설정 합니다.  
+- 설정할 **Is Element Name**  =  `true` 키 도메인 속성에 대 한 합니다. DSL 정의 다이어그램에서 도메인 속성을 선택 하 고 속성 창에서 값을 설정 합니다.  
   
      사용자 클래스의 새 인스턴스를 만들 때이 값을 사용 하면 도메인 속성을 다른 값을 자동으로 할당 합니다. 기본 동작을 클래스 이름 끝에 숫자를 추가합니다. 사용자는 중복 된 이름을 변경 하지 못하게 되지는 않습니다 하지만 도움이 됩니다 경우에서 사용자 모델을 저장 하기 전에 값을 설정 하지 않습니다.  
   
--   DSL에 대 한 유효성 검사를 사용 하도록 설정 합니다. DSL 탐색기에서 Editor\Validation를 선택 하 고 설정 된 **사용 하는 중...**  속성을 `true`입니다.  
+- DSL에 대 한 유효성 검사를 사용 하도록 설정 합니다. DSL 탐색기에서 Editor\Validation를 선택 하 고 설정 된 **사용 하는 중...**  속성을 `true`입니다.  
   
      모호성에 대 한 확인 하는 자동으로 생성 된 유효성 검사 메서드를 있습니다. 이 메서드를는 `Load` 유효성 검사 범주입니다. 이렇게 하면는 사용자 경고가 표시 됩니다 다시 파일을 열 수도 없습니다.  
   
@@ -207,7 +204,7 @@ ms.locfileid: "49867449"
 ## <a name="customizing-the-structure-of-the-xml"></a>XML의 구조를 사용자 지정  
  다음 사용자 지정을 하려면 확장 합니다 **Xml 직렬화 동작** DSL 탐색기에서 노드. 도메인 클래스에서 속성 및이 클래스에서 제공 되는 관계의 목록을 보려면 요소 데이터 노드를 확장 합니다. 관계를 선택 하 고 속성 창에서 해당 옵션을 조정 합니다.  
   
--   설정할 **생략 요소** 대상 요소의 목록만 종료 소스 역할 노드를 생략 하려면 true입니다. 원본 및 대상 클래스 간에 둘 이상의 관계가 있으면이 옵션을 설정 하지 않아야 합니다.  
+- 설정할 **생략 요소** 대상 요소의 목록만 종료 소스 역할 노드를 생략 하려면 true입니다. 원본 및 대상 클래스 간에 둘 이상의 관계가 있으면이 옵션을 설정 하지 않아야 합니다.  
   
     ```  
   
@@ -221,7 +218,7 @@ ms.locfileid: "49867449"
   
     ```  
   
--   설정 **사용 하 여 전체 폼** 관계 인스턴스를 나타내는 노드에서 대상 노드를 포함 합니다. 이 옵션은 도메인 관계에 도메인 속성을 추가할 때 자동으로 설정 됩니다.  
+- 설정 **사용 하 여 전체 폼** 관계 인스턴스를 나타내는 노드에서 대상 노드를 포함 합니다. 이 옵션은 도메인 관계에 도메인 속성을 추가할 때 자동으로 설정 됩니다.  
   
     ```  
   
@@ -239,7 +236,7 @@ ms.locfileid: "49867449"
   
     ```  
   
--   설정할 **표현을** = **요소** 특성 값으로 대신 요소로 저장 됩니다 도메인 속성이 있어야 합니다.  
+- 설정할 **표현을** = **요소** 특성 값으로 대신 요소로 저장 됩니다 도메인 속성이 있어야 합니다.  
   
     ```  
     <person name="Elizabeth I" birthYear="1533">  
@@ -247,7 +244,7 @@ ms.locfileid: "49867449"
     </person>  
     ```  
   
--   특성 및 관계 serialize 되는 순서를 변경 하려면 요소 데이터에서 항목을 마우스 오른쪽 단추로 클릭 하 고 사용 합니다 **위로 이동** 또는 **아래로 이동** 메뉴 명령입니다.  
+- 특성 및 관계 serialize 되는 순서를 변경 하려면 요소 데이터에서 항목을 마우스 오른쪽 단추로 클릭 하 고 사용 합니다 **위로 이동** 또는 **아래로 이동** 메뉴 명령입니다.  
   
 ## <a name="major-customization-using-program-code"></a>프로그램 코드를 사용 하 여 주요 사용자 지정  
  Serialization 알고리즘의 일부 또는 전체를 대체할 수 있습니다.  
@@ -256,13 +253,13 @@ ms.locfileid: "49867449"
   
 #### <a name="to-customize-the-serialization-of-a-particular-class"></a>특정 클래스의 serialization을 사용자 지정 하려면  
   
-1.  설정 **Is Custom** 아래에서 해당 클래스 노드에 **Xml 직렬화 동작**합니다.  
+1. 설정 **Is Custom** 아래에서 해당 클래스 노드에 **Xml 직렬화 동작**합니다.  
   
-2.  모든 템플릿 변환 하 고 솔루션을 빌드하고 결과 컴파일 오류를 조사 합니다. 각 오류 근처 주석을 제공 해야 하는 코드를 설명 합니다.  
+2. 모든 템플릿 변환 하 고 솔루션을 빌드하고 결과 컴파일 오류를 조사 합니다. 각 오류 근처 주석을 제공 해야 하는 코드를 설명 합니다.  
   
 #### <a name="to-provide-your-own-serialization-for-the-whole-model"></a>전체 모델에 대 한 고유한 직렬화를 제공 합니다.  
   
-1.  Dsl\GeneratedCode\SerializationHelper.cs에서 메서드를 재정의  
+1. Dsl\GeneratedCode\SerializationHelper.cs에서 메서드를 재정의  
   
 ## <a name="options-in-xml-serialization-behavior"></a>Xml Serialization 동작 옵션  
  DSL 탐색기의 Xml 직렬화 동작 노드는 각 도메인 클래스, 관계, 모양, 연결선 및 다이어그램 클래스에 대 한 자식 노드를 포함합니다. 각 노드 아래에 있는 속성 및 해당 요소에서 발생 해야 하는 관계의 목록이입니다. 관계는 독자적인와 해당 소스 클래스 아래에 표시 됩니다.  
@@ -313,6 +310,3 @@ ms.locfileid: "49867449"
 ## <a name="see-also"></a>참고 항목  
  [탐색 및 프로그램 코드에서 모델 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)
-
-
-

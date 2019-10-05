@@ -1,24 +1,23 @@
 ---
 title: XML 조각 사용 방법
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 3a27375b-81cc-48f6-a884-e1cb8c4f78f5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 514e3efe56c18288a596d4414512064ed4dcc157
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e4a56249c0a87b2516dc233818208f7c7c4b696e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002059"
 ---
 # <a name="how-to-use-xml-snippets"></a>방법: XML 조각 사용
 
-XML 편집기 바로 가기 메뉴에서 다음 두 명령을 사용하여 XML 조각을 호출할 수 있습니다. 합니다 **코드 조각 삽입** 명령은 커서 위치에서 XML 조각을 삽입 합니다. 합니다 **감싸기** 명령을 선택한 텍스트 주위의 XML 조각을 래핑합니다. 각 XML 조각에는 조각 형식이 지정되어 있습니다. 조각 형식은 조각을 사용 하 여 사용할 수 있는지 확인 합니다 **코드 조각 삽입** 명령인을 **감싸기** 명령 또는 둘 다.
+XML 편집기 바로 가기 메뉴에서 다음 두 명령을 사용 하 여 XML 조각을 호출할 수 있습니다. 합니다 **코드 조각 삽입** 명령은 커서 위치에서 XML 조각을 삽입 합니다. 합니다 **감싸기** 명령을 선택한 텍스트 주위의 XML 조각을 래핑합니다. 각 XML 조각에는 조각 형식이 지정되어 있습니다. 조각 형식은 조각을 사용 하 여 사용할 수 있는지 확인 합니다 **코드 조각 삽입** 명령인을 **감싸기** 명령 또는 둘 다.
 
 XML 조각을 편집기에 추가한 후 조각에서 편집 가능한 필드가 노란색으로 강조되며 편집 가능한 첫 번째 필드에 커서가 놓입니다.
 
@@ -81,7 +80,7 @@ XML 조각을 편집기에 추가한 후 조각에서 편집 가능한 필드가
 
 ### <a name="to-use-surround-with-from-the-context-menu"></a>상황에 맞는 메뉴에서 감싸기 사용 하려면
 
-1. XML 편집기에 포함시킬 텍스트를 선택합니다.
+1. XML 편집기에서 묶을 텍스트를 선택 합니다.
 
 2. 마우스 오른쪽 단추로 클릭 **감싸기**합니다.
 
@@ -91,7 +90,7 @@ XML 조각을 편집기에 추가한 후 조각에서 편집 가능한 필드가
 
 ### <a name="to-use-surround-with-from-the-intellisense-menu"></a>IntelliSense 메뉴에서 감싸기 사용 하려면
 
-1. XML 편집기에 포함시킬 텍스트를 선택합니다.
+1. XML 편집기에서 묶을 텍스트를 선택 합니다.
 
 2. **편집** 메뉴에서 **IntelliSense**를 선택한 후 **감싸기**합니다.
 
@@ -111,7 +110,7 @@ XML 조각을 선택하면 코드 조각의 텍스트가 커서 위치에 자동
 
 편집 가능한 코드 조각 필드에 대 한 기본 색을 수정 하 여 변경할 수 있습니다는 **코드 조각 필드** 에서 설정 합니다 **글꼴 및 색** 창의 **옵션** 대화 상자. 자세한 내용은 [방법: 편집기의 글꼴 및 색 변경](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [XML 조각](../xml-tools/xml-snippets.md)
 - [방법: XML 스키마에서 XML 조각 생성](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

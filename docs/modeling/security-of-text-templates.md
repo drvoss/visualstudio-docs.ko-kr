@@ -6,23 +6,22 @@ helpviewer_keywords:
 - text templates, security
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: bb5ad4348d681a2b7bc59c588bb74e0a27813e73
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 66159516c6b1360203130dedb56c0e6c192a118a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824022"
 ---
 # <a name="security-of-text-templates"></a>텍스트 템플릿 보안
 텍스트 템플릿 모두 다음 보안 고려 사항:
 
--   텍스트 템플릿은 임의의 코드 삽입에 취약 합니다.
+- 텍스트 템플릿은 임의의 코드 삽입에 취약 합니다.
 
--   호스트 된 지시문 프로세서를 찾는 데 사용 하는 메커니즘에 보안이 설정 되지 않으면 악성 지시문 프로세서를 실행할 수 있습니다.
+- 호스트 된 지시문 프로세서를 찾는 데 사용 하는 메커니즘에 보안이 설정 되지 않으면 악성 지시문 프로세서를 실행할 수 있습니다.
 
 ## <a name="arbitrary-code"></a>임의의 코드
  서식 파일을 작성 하는 경우 내 코드를 넣을 수 있습니다는 \<# # > 태그입니다. 이렇게 하면 임의의 코드를 텍스트 템플릿 내에서 실행할 수 있습니다.

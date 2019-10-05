@@ -3,7 +3,6 @@ title: Visual Studio 디버거를 사용하여 C++를 디버그하는 방법 알
 description: Visual Studio 디버거를 시작하고, 코드를 단계별로 실행하고, 데이터를 검사하는 방법을 알아봅니다.
 ms.custom: debug-experiment
 ms.date: 08/01/2018
-ms.technology: vs-ide-debug
 ms.topic: tutorial
 dev_langs:
 - C++
@@ -12,23 +11,19 @@ helpviewer_keywords:
 ms.assetid: 62734c0d-a75a-4576-8f73-0e97c19280e1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3578955d72dcb223baeb022a199fb274c0cc659
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 070cbcc79a79aea16e37f17ea775ce7838b41d59
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065250"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70179816"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>자습서: Visual Studio를 사용하여 C++ 코드를 디버그하는 방법 알아보기
 
-이 문서에서는 단계별 연습을 통해 Visual Studio 디버거의 기능을 소개합니다. 디버거 기능을 개략적으로 살펴보려면 [디버거 기능 둘러보기](../debugger/debugger-feature-tour.md)를 참조하세요. *애플리케이션을 디버그*하는 경우는 일반적으로 디버거가 연결된 상태에서 애플리케이션을 실행하고 있음을 의미합니다. 이렇게 하면 디버거가 실행되는 동안 코드에서 수행하는 작업을 확인할 수 있는 여러 가지 방법이 제공됩니다. 코드를 단계별로 실행하고, 변수에 저장된 값을 살펴보고, 변수에 대한 조사식을 설정하여 값이 변경되는 경우를 확인하며, 코드의 실행 경로를 검사하고, 코드의 분기가 실행되는지 등을 확인할 수 있습니다. 코드를 처음으로 디버그하려고 하는 경우 이 문서를 계속 진행하기 전에 먼저 [완전 초보자를 위한 디버깅](../debugger/debugging-absolute-beginners.md)을 참조하는 것이 좋습니다.
-
-| | |
-|---------|---------|
-| ![비디오에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기") | 비슷한 단계를 보여 주는 [디버깅에 대한 비디오를 시청하세요](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171). |
+이 문서에서는 단계별 연습을 통해 Visual Studio 디버거의 기능을 소개합니다. 디버거 기능을 개략적으로 살펴보려면 [디버거 소개](../debugger/debugger-feature-tour.md)를 참조하세요. *애플리케이션을 디버그*하는 경우는 일반적으로 디버거가 연결된 상태에서 애플리케이션을 실행하고 있음을 의미합니다. 이렇게 하면 디버거가 실행되는 동안 코드에서 수행하는 작업을 확인할 수 있는 여러 가지 방법이 제공됩니다. 코드를 단계별로 실행하고, 변수에 저장된 값을 살펴보고, 변수에 대한 조사식을 설정하여 값이 변경되는 경우를 확인하며, 코드의 실행 경로를 검사하고, 코드의 분기가 실행되는지 등을 확인할 수 있습니다. 코드를 처음으로 디버그하려고 하는 경우 이 문서를 계속 진행하기 전에 먼저 [완전 초보자를 위한 디버깅](../debugger/debugging-absolute-beginners.md)을 참조하는 것이 좋습니다.
 
 이 자습서에서 다음을 수행합니다.
 
@@ -40,25 +35,37 @@ ms.locfileid: "53065250"
 
 ## <a name="prerequisites"></a>전제 조건
 
-* Visual Studio 2017이 설치되어 있어야 하고 **C++로 데스크톱 개발** 워크로드가 있어야 합니다.
+::: moniker range=">=vs-2019"
 
-    아직 Visual Studio를 설치하지 않은 경우  [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  페이지로 이동하여 체험용으로 설치합니다.
+Visual Studio 2019가 설치되어 있어야 하고 **C++로 데스크톱 개발** 워크로드가 있어야 합니다.
 
-    워크로드를 설치해야 하지만 이미 Visual Studio가 있는 경우 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Open Visual Studio 설치 관리자** 링크를 클릭합니다(**파일** > **새로 만들기** > **프로젝트**를 선택합니다). Visual Studio 설치 관리자가 시작됩니다. **C++를 사용한 데스크톱 개발** 워크로드를 선택한 다음, **수정** 단추를 선택합니다.
+::: moniker-end
+::: moniker range="vs-2017"
+
+Visual Studio 2017이 설치되어 있어야 하고 **C++로 데스크톱 개발** 워크로드가 있어야 합니다.
+
+::: moniker-end
+
+아직 Visual Studio를 설치하지 않은 경우  [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads)  페이지로 이동하여 체험용으로 설치합니다.
+
+워크로드는 설치해야 하지만 Visual Studio는 이미 있는 경우 **도구** > **도구 및 기능 가져오기...** 로 이동하면 Visual Studio 설치 관리자가 열립니다. Visual Studio 설치 관리자가 시작됩니다. **C++를 사용한 데스크톱 개발** 워크로드를 선택한 다음, **수정** 단추를 선택합니다.
 
 ## <a name="create-a-project"></a>프로젝트 만들기
 
-1. Visual Studio에서 **파일 > 새 프로젝트**를 선택합니다.
+1. Visual Studio를 엽니다.
 
-2. **Visual C++** 에서 **Windows 데스크톱**을 선택한 다음, 가운데 창에서 **Windows 콘솔 응용 프로그램**을 선택합니다.
+    ::: moniker range=">=vs-2019"
+    **Esc** 키를 눌러 시작 창을 닫습니다. **Ctrl + Q**를 입력하여 검색 상자를 열고 **c++** 를 입력하고 **템플릿**을 선택한 다음, **새 콘솔 앱 프로젝트 만들기**를 선택합니다. 표시되는 대화 상자에 **get-started-debugging**과 같은 이름을 입력한 다음, **만들기**를 선택합니다.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C++** 아래에 **Windows 데스크톱**을 선택한 다음, 가운데 창에서 **Windows 콘솔 애플리케이션**을 선택합니다. **MyDbgApp**과 같은 이름을 입력하고 **확인**을 클릭합니다.
+    ::: moniker-end
 
-    **Windows 콘솔 응용 프로그램** 프로젝트 템플릿이 표시되지 않으면 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Studio 설치 관리자 열기** 링크를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. **C++를 사용한 데스크톱 개발** 워크로드를 선택한 다음, **수정** 단추를 선택합니다.
-
-3. **get-started-debugging**과 같은 이름을 입력하고 **확인**을 클릭합니다.
+    **Windows 콘솔 애플리케이션** 프로젝트 템플릿이 표시되지 않는 경우 **도구** > **도구 및 기능 가져오기**로 이동하면 Visual Studio 설치 관리자가 열립니다. Visual Studio 설치 관리자가 시작됩니다. **C++를 사용한 데스크톱 개발** 워크로드를 선택한 다음, **수정** 단추를 선택합니다.
 
     Visual Studio가 프로젝트를 만듭니다.
 
-4. *get-started-debugging.cpp*에서 다음 코드를
+1. *get-started-debugging.cpp*에서 다음 코드를
 
     ```c++
     int main()
@@ -188,7 +195,7 @@ ms.locfileid: "53065250"
 
     중단점을 설정하면 빨간색 원이 나타납니다.
 
-    중단점은 신뢰할 수 있는 디버깅의 가장 기본적이 고 필수적인 기능입니다. 중단점은 변수의 값, 메모리의 동작 또는 코드 분기의 실행 여부를 확인할 수 있도록 Visual Studio에서 실행 중인 코드를 일시 중단해야 하는 위치를 나타냅니다. 
+    중단점은 신뢰할 수 있는 디버깅의 가장 기본적이 고 필수적인 기능입니다. 중단점은 변수의 값, 메모리의 동작 또는 코드 분기의 실행 여부를 확인할 수 있도록 Visual Studio에서 실행 중인 코드를 일시 중단해야 하는 위치를 나타냅니다.
 
 2. **F5** 키 또는 **디버깅 시작** 단추 ![Start Debugging](../debugger/media/dbg-tour-start-debugging.png "Start Debugging"를 누르면 앱이 시작되고, 중단점이 설정된 코드 줄에서 디버거가 실행됩니다.
 
@@ -223,7 +230,7 @@ ms.locfileid: "53065250"
      ![실행하려면 클릭 기능 사용](../debugger/media/get-started-run-to-click-cpp.png "실행하려면 클릭")
 
    > [!NOTE]
-   > **실행하려면 클릭** 단추는 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]의 새로운 기능입니다. 녹색 화살표 단추가 표시되지 않으면 이 예에서 **F11** 키를 대신 사용하여 디버거를 올바른 위치로 이동시킵니다.
+   > **실행하려면 클릭** 단추는 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]부터 사용할 수 있습니다. 녹색 화살표 단추가 표시되지 않으면 이 예에서 **F11** 키를 대신 사용하여 디버거를 올바른 위치로 이동시킵니다.
 
 2. **실행하려면 클릭** 단추 ![실행하려면 클릭](../debugger/media/dbg-tour-run-to-click.png "RunToClick")을 클릭합니다.
 

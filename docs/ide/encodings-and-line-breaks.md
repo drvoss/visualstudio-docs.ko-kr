@@ -1,8 +1,6 @@
 ---
 title: 인코딩 및 줄 바꿈 문자
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.Encoding
@@ -16,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 8f9b3ffc-7b8d-44f4-87cb-dc29105be12d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7acf048b112a88b73c614e8c383722c6e2adb051
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 59ed38c28c6818fb618156450d47c05b4f35d63d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978170"
 ---
 # <a name="encodings-and-line-endings"></a>인코딩 및 줄 끝
 
@@ -40,7 +38,7 @@ Visual Studio에서 다음 문자는 줄 바꿈으로 해석됩니다.
 
 - PS: 단락 구분 기호, 유니코드 문자 2029
 
-다른 응용 프로그램에서 복사되는 텍스트는 원래 인코딩 및 줄 바꿈 문자를 유지합니다. 예를 들어 메모장에서 텍스트를 복사하고 Visual Studio의 텍스트 파일로 붙여넣으면 텍스트에는 메모장의 텍스트와 같은 설정이 포함됩니다.
+다른 애플리케이션에서 복사되는 텍스트는 원래 인코딩 및 줄 바꿈 문자를 유지합니다. 예를 들어 메모장에서 텍스트를 복사하고 Visual Studio의 텍스트 파일로 붙여넣으면 텍스트에는 메모장의 텍스트와 같은 설정이 포함됩니다.
 
 다른 줄 바꿈 문자가 포함된 파일을 열 경우 일치하지 않는 줄 바꿈 문자를 정규화할지 여부 및 선택할 줄 바꿈 형식을 묻는 대화 상자가 표시될 수 있습니다.
 

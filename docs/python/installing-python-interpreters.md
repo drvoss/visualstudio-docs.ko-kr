@@ -1,29 +1,36 @@
 ---
 title: Python 인터프리터 선택 및 설치
 description: 설치 관리자를 찾을 위치에 대한 간단한 지침이 포함된 Visual Studio에서 지원되는 Python 인터프리터의 전체 목록입니다.
-ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 06/05/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de7bd0dcbdd36b9d30ea252a70a380b190adcce2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 16c8773e87784c43b4203b6837fb7c58ba5adce5
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063563"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043487"
 ---
 # <a name="install-python-interpreters"></a>Python 인터프리터 설치
 
-기본적으로 Visual Studio 2017에 Python 개발 워크로드를 설치하면 Python 3(64비트)도 설치됩니다. 필요한 경우 [설치](installing-python-support-in-visual-studio.md)에 설명된 대로 32비트 및 64비트 버전의 Python 2, Python 3, Anaconda 2 및 Anaconda 3을 설치하도록 선택할 수 있습니다.
+기본적으로 Visual Studio 2017 이상에 Python 개발 워크로드를 설치하면 Python 3(64비트)도 설치됩니다. 필요한 경우 [설치](installing-python-support-in-visual-studio.md)에 설명된 대로 32비트 및 64비트 버전의 Python 2, Python 3과 Miniconda(Visual Studio 2019) 또는 Anaconda 2/Anaconda 3(Visual Studio 2017)을 함께 설치하도록 선택할 수 있습니다.
+
+::: moniker range=">=vs-2019"
+또는 **환경 추가** 대화 상자에서 표준 Python 인터프리터를 설치할 수 있습니다. **Python 환경** 창 또는 Python 도구 모음에서 **환경 추가** 명령을 선택하고, **Python 설치** 탭을 선택하고, 설치할 인터프리터를 표시하고, **설치**를 선택합니다.
+::: moniker-end
 
 Visual Studio 설치 관리자 외부에서 아래 표에 나열된 인터프리터를 수동으로 설치할 수도 있습니다. 예를 들어 Visual Studio를 설치하기 전에 Anaconda 3을 설치한 경우 Visual Studio 설치 관리자를 통해 다시 설치할 필요가 없습니다. 예를 들어 Visual Studio 설치 관리자에 아직 표시되지 않는 사용 가능한 인터프리터의 최신 버전이 있는 경우에도 인터프리터를 수동으로 설치할 수 있습니다.
+
+::: moniker range=">=vs-2019"
+> [!Note]
+> Visual Studio는 Python 버전 2.7과 버전 3.5 이상을 지원합니다. Visual Studio를 사용하여 다른 버전의 Python에서 작성된 코드도 편집할 수 있지만, 해당 버전은 공식적으로 지원되지 않으며 IntelliSense, 디버깅 등의 기능이 작동하지 않을 수 있습니다.
+::: moniker-end
 
 **Visual Studio 2015 이하**의 경우 인터프리터 중 하나를 수동으로 설치해야 합니다.
 

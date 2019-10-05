@@ -1,21 +1,20 @@
 ---
 title: MSBuild 15의 새로운 기능 | Microsoft Docs
-ms.custom: ''
 ms.date: 03/01/2017
-ms.technology: msbuild
 ms.topic: conceptual
 ms.assetid: 9976b6fd-d052-4017-b848-35b5bf4b2f66
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2333f45cca5510a4ba3bb0f54abf45a569454cf8
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+monikerRange: '>=vs-2017'
+ms.openlocfilehash: cd3e86e3cbaaf9c368f848cbd0136c0473932490
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028965"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913105"
 ---
 # <a name="whats-new-in-msbuild-15"></a>MSBuild 15의 새로운 기능
 
@@ -25,7 +24,7 @@ MSBuild는 현재 [.NET Core SDK](https://www.microsoft.com/net/download/core)�
 
  MSBuild는 이제 각 Visual Studio 버전 아래의 폴더에 설치됩니다. 예: *C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild*. 또한 다음 PowerShell 모듈을 사용하여 MSBuild를 찾을 수도 있습니다. [vssetup.powershell](https://github.com/Microsoft/vssetup.powershell).
 
- MSBuild는 전역 어셈블리 캐시에 더 이상 설치되지 않습니다. MSBuild를 프로그래밍 방식으로 참조하려면 NuGet 패키지를 사용하세요.
+ MSBuild는 전역 어셈블리 캐시에 더 이상 설치되지 않습니다. MSBuild를 프로그래밍 방식으로 참조하려면 NuGet 패키지를 사용하세요. 자세한 내용은 [MSBuild 15.0에 대한 기존 애플리케이션 업데이트](../msbuild/updating-an-existing-application.md)를 참조하세요.
 
 ## <a name="changed-properties"></a>변경된 속성
 
@@ -53,4 +52,4 @@ MSBuild는 현재 [.NET Core SDK](https://www.microsoft.com/net/download/core)�
 - `GetPathOfFileAbove`는 바로 앞에 오는 파일의 경로를 반환합니다. `<Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />`를 호출하는 것과 기능적으로 동일합니다.
 
 ## <a name="see-also"></a>참고 항목
-[MSBuild](../msbuild/msbuild.md)
+- [MSBuild](../msbuild/msbuild.md)

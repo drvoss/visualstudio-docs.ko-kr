@@ -1,22 +1,21 @@
 ---
 title: 코드 분석 규칙 집합 편집기 사용
 ms.date: 04/04/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 548f50b3d348c520ed7746b7dc3d123ffeb4c6aa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 719d8f1e11365de0b864f41f54546fb4bfc64cd2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820316"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>코드 분석 규칙 집합 편집기 사용
 
@@ -27,7 +26,7 @@ ms.locfileid: "53826038"
 |작업 (심각도)|설명|
 |-|-|
 |경고|경고를 생성 합니다 **오류 목록** 및 빌드 시간에도 합니다.|
-|오류|오류를 생성 합니다 **오류 목록** 및 빌드 시간에도 합니다.|
+|Error|오류를 생성 합니다 **오류 목록** 및 빌드 시간에도 합니다.|
 |Info|메시지를 생성 합니다 **오류 목록**합니다.|
 |Hidden|위반은 사용자에 게 표시 되지 않습니다. IDE에 있지만 위반을 알립니다.|
 |없음|규칙 표시 되지 않습니다. 동작 규칙 규칙 집합에서 제거 된 경우와 같습니다.|

@@ -1,14 +1,9 @@
 ---
 title: '방법: 다중 프로젝트 템플릿 만들기 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project templates
 - project templates, creating multi-project templates
@@ -17,13 +12,13 @@ ms.assetid: 8c7f7065-137e-40ad-868d-37e007270efd
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: eee52a4f77c7d3a07b237f01877c5cba30e53900
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 394c9adf6794ae6e6c547a46e1fe469e0c642ba8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950851"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176684"
 ---
 # <a name="how-to-create-multi-project-templates"></a>방법: 다중 프로젝트 템플릿 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,15 +79,15 @@ ms.locfileid: "49950851"
   
 ### <a name="to-create-a-multi-project-template"></a>다중 프로젝트 템플릿을 만들려면  
   
-1.  다중 프로젝트 템플릿에 포함할 프로젝트를 만듭니다.  
+1. 다중 프로젝트 템플릿에 포함할 프로젝트를 만듭니다.  
   
-2.  모든 프로젝트에 .vstemplate 파일을 만듭니다. 자세한 내용은 [방법: 프로젝트 템플릿 만들기](../ide/how-to-create-project-templates.md)를 참조하세요.  
+2. 모든 프로젝트에 .vstemplate 파일을 만듭니다. 자세한 내용은 [방법: 프로젝트 템플릿 만들기](../ide/how-to-create-project-templates.md)합니다.  
   
-3.  다중 프로젝트 템플릿의 메타데이터를 포함하는 루트 .vstemplate 파일을 만듭니다. 자세한 내용은 다음 섹션의 첫 번째 예제를 참조하세요.  
+3. 다중 프로젝트 템플릿의 메타데이터를 포함하는 루트 .vstemplate 파일을 만듭니다. 자세한 내용은 다음 섹션의 첫 번째 예제를 참조하세요.  
   
-4.  템플릿에 포함할 파일 및 폴더를 선택하고 선택 영역을 마우스 오른쪽 단추로 클릭한 다음 **보내기**를 클릭하고 **압축(ZIP) 폴더**를 클릭합니다. 파일 및 폴더가 .zip 파일로 압축됩니다.  
+4. 템플릿에 포함할 파일 및 폴더를 선택하고 선택 영역을 마우스 오른쪽 단추로 클릭한 다음 **보내기**를 클릭하고 **압축(ZIP) 폴더**를 클릭합니다. 파일 및 폴더가 .zip 파일로 압축됩니다.  
   
-5.  .zip 템플릿 파일을 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트 템플릿 디렉터리에 배치합니다. 기본적으로 이 디렉터리는 \My Documents\Visual Studio *Version*\Templates\ProjectTemplates\\입니다.  
+5. .zip 템플릿 파일을 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트 템플릿 디렉터리에 배치합니다. 기본적으로 이 디렉터리는 \My Documents\Visual Studio *Version*\Templates\ProjectTemplates\\입니다.  
   
 ## <a name="example"></a>예제  
  이 예제에서는 기본 다중 프로젝트 루트 .vstemplate 파일을 보여줍니다. 이 예제에서 템플릿에는 `My Windows Application` 프로젝트와 `My Class Library` 프로젝트가 들어 있습니다. `ProjectName` 요소의 `ProjectTemplateLink` 특성은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]가 이 프로젝트에 할당할 이름을 설정합니다. `ProjectName` 특성이 없으면 .vstemplate 파일의 이름이 프로젝트 이름으로 사용됩니다.  
@@ -161,6 +156,3 @@ ms.locfileid: "49950851"
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
  [SolutionFolder 요소(Visual Studio 템플릿)](../extensibility/solutionfolder-element-visual-studio-templates.md)   
  [ProjectTemplateLink 요소(Visual Studio 템플릿)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
-
-
-

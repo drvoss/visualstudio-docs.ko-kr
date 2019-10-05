@@ -1,17 +1,17 @@
 ---
-title: Mac용 Visual Studio 오프라인 설치 관리자 만들기
+title: 오프라인 설치 관리자 만들기
 description: ''
-author: conceptdev
-ms.author: crdun
+author: asb3993
+ms.author: amburns
 ms.date: 11/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 5CA4B8C1-2D01-46EA-A6B2-8573B324509B
-ms.openlocfilehash: 12151a4aaaae1226678eb77ad029f1d4cf17ec1e
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 66835d6e983e9522dd7aab28670e747655a16029
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948090"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872096"
 ---
 # <a name="create-an-offline-installer-for-visual-studio-for-mac"></a>Mac용 Visual Studio 오프라인 설치 관리자 만들기
 

@@ -1,16 +1,17 @@
 ---
 title: 코드 리팩터링
-description: 소스 분석을 사용하면 Mac용 Visual Studio에서 코드를 간편하게 재구성할 수 있습니다.
-author: conceptdev
-ms.author: crdun
-ms.date: 05/06/2018
+description: Mac용 Visual Studio 및 빠른 작업을 사용하여 코드를 개선합니다.
+author: cobey
+ms.author: cobey
+ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
-ms.openlocfilehash: 672c7547da9360ae3e278f783b160ffdaed05e03
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.custom: video
+ms.openlocfilehash: 5a87b87f3a14462daec1e069fe222164818d2a19
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296465"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691293"
 ---
 # <a name="refactoring"></a>리팩터링
 
@@ -22,25 +23,45 @@ Mac용 Visual Studio는 Microsoft의 오픈 소스 .NET 컴파일러 플랫폼�
 
 ## <a name="renaming"></a>이름 바꾸기
 
-*이름 바꾸기* 리팩터링 명령은 모든 코드 식별자(예: 클래스 이름, 속성 이름)에 사용하여 해당 식별자와 일치하는 항목을 찾아 변경할 수 있습니다. 기호의 이름을 바꾸려면 기호를 마우스 오른쪽 버튼으로 클릭한 다음 **리팩터링 > 이름 바꾸기** 또는 **Cmd+R** 키 바인딩을 선택하세요.
+*이름 바꾸기* 리팩터링 명령은 모든 코드 식별자(예: 클래스 이름, 속성 이름)에 사용하여 해당 식별자와 일치하는 항목을 찾아 변경할 수 있습니다. 기호의 이름을 바꾸려면 기호를 마우스 오른쪽 단추로 클릭하고 **이름 바꾸기...** 를 선택하거나 **Cmd(⌘) + R** 키 바인딩을 사용합니다.
 
 ![메뉴 항목 이름 바꾸기](media/refactoring-renaming1.png)
 
-이렇게 하면 기호와 기호에 대한 모든 참조가 강조 표시됩니다. 새 이름을 입력하면 코드 내의 모든 참조가 자동으로 변경되며, **Enter**를 눌러 이름 바꾸기가 완료되었음을 알릴 수 있습니다.
+이렇게 하면 기호와 기호에 대한 모든 참조가 강조 표시됩니다. 새 이름을 입력하면 코드 내의 모든 참조가 자동으로 변경되고 **Enter**를 눌러 변경 내용을 커밋할 수 있습니다.
 
 ![이름 바꾸기 및 식별자](media/refactoring-renaming2.png)
 
-## <a name="context-actions"></a>컨텍스트 작업
+## <a name="quick-actions"></a>빠른 작업
 
-컨텍스트 작업을 통해 C# 코드를 검사하고 가능한 리팩터링 옵션을 전부 확인할 수 있습니다.
+빠른 작업을 사용하면 단일 작업으로 쉽게 코드를 리팩터링하거나, 생성하거나, 수정할 수 있습니다.
 
-**해결** 및 **리팩터링** 컨텍스트 항목이 사용 가능한 모든 컨텍스트 작업을 제공하는 하나의 *빠른 수정...* 항목으로 결합되었습니다.
+빠른 작업은 다음에 사용할 수 있습니다.
+
+* 코드 분석기 규칙 위반에 대한 코드 수정 적용
+* 코드 분석기 규칙 위반 표시 안 함
+* 리팩터링 적용(예: 임시 변수 인라인)
+* 코드 생성(예: 지역 변수 도입)
+
+빠른 작업은 전구 ![전구 아이콘](media/quick-actions-light-bulb-icon.png) 또는 스쿠루 드라이버![스크루 드라이버 아이콘](media/quick-actions-screwdriver-icon.png) 아이콘을 사용하거나 커서가 작업을 사용할 수 있는 코드 줄에 있을 때 **옵션(⌥)** +**Enter**를 눌러 적용할 수 있습니다. 오류를 나타내는 빨간 물결 무늬가 있는 경우 오류 전구![오류 전구 아이콘](media/quick-actions-error-light-bulb-icon.png)가 표시되고 Visual Studio에는 해당 오류에 사용할 수 있는 해결 방법이 있습니다.
+
+어떤 언어든지 타사에서 SDK에 포함하는 방식 등을 통해 사용자 지정 진단 및 제안을 제공할 수 있으며 Visual Studio 전구는 이러한 규칙을 기반으로 켜집니다.
+
+### <a name="quick-action-icons"></a>빠른 작업 아이콘
+빠른 작업을 사용할 수 있을 때 나타나는 아이콘은 사용 가능한 해결 방법 또는 리팩터링 형식을 나타냅니다. *스크루드라이버*![스크루드라이버 아이콘](media/quick-actions-screwdriver-icon.png) 아이콘은 코드를 변경하는 데 사용할 수 있는 작업이 있음을 나타내지만 반드시 사용해야 하는 것은 아닙니다. *노란색 전구*![전구 아이콘](media/quick-actions-light-bulb-icon.png) 아이콘은 코드 개선을 위해 *해야 하는* 작업이 있음을 나타냅니다. *오류 전구*![오류 전구 아이콘](media/quick-actions-error-light-bulb-icon.png) 아이콘은 코드에서 오류를 수정하는 데 사용할 수 있는 작업이 있음을 나타냅니다.
+
+### <a name="to-see-a-light-bulb-or-screwdriver"></a>전구 또는 스크루드라이버를 표시하려면
+
+- 해결 방법을 사용할 수 있는 경우 오류 위치를 마우스로 가리킬 때 전구가 자동으로 나타납니다.
+
+   ![마우스로 가리킨 전구](media/refactoring-lightbulb-hover.png)
+
+- 빠른 작업을 사용할 수 있는 코드 줄로 캐럿을 옮기면 전구 및 스크루드라이버가 편집기의 왼쪽 여백에 나타납니다.
+
+- **옵션(⌥)** +**Enter**를 눌러 사용 가능한 빠른 작업 및 리팩토링 목록을 어디에서나 볼 수 있습니다.
 
 ![컨텍스트 항목 표시](media/refactoring-context-action.png)
 
 컨텍스트 작업을 마우스로 가리키면 코드에서 추가하거나 제거할 내용을 미리 볼 수 있습니다.
-
-또는 코드의 원하는 위치에서 **Option+Enter**를 눌러도 됩니다.
 
 ![Option Enter 컨텍스트 항목](media/refactoring-image2a.png)
 
@@ -52,47 +73,9 @@ Mac용 Visual Studio는 Microsoft의 오픈 소스 .NET 컴파일러 플랫폼�
 
 ![C# 소스 분석 작업](media/refactoring-image3a.png)
 
-### <a name="common-context-actions"></a>일반적인 컨텍스트 작업
+### <a name="common-quick-actions"></a>일반적인 빠른 작업
 
-가장 자주 사용되는 컨텍스트 작업 중 일부는 아래에 설명되어 있습니다.
-
-#### <a name="extract-method"></a>메서드 추출
-
-메서드 추출 리팩터링 작업을 사용하면 기존 멤버에서 선택한 코드를 추출하여 새 메서드를 만들 수 있습니다. 이 작업은 다음 두 가지를 수행합니다.
-
-* 선택한 코드를 포함하는 새 메서드를 만듭니다.
-* 선택한 코드가 있는 곳에서 새 메서드를 호출합니다.
-
-##### <a name="example"></a>예
-
-1. 다음 코드를 추가합니다.
-
-```csharp
-    class MainClass
-    {
-
-        double CalculatePyramidVolume(double baseArea, double height)
-        {
-
-            double volume = (baseArea * height) / 3;
-
-            return volume;
-        }
-    }
-```
-
-2. `double volume = (baseArea * height) / 3;` 줄을 강조 표시하고 마우스 오른쪽 단추로 클릭한 다음 **리팩터링 > 메서드 추출**을 선택합니다.
-
-3. 화살표 키를 사용하여 코드 내에서 새 메서드를 배치할 위치를 선택합니다.
-
-#### <a name="encapsulate-field"></a>필드 캡슐화
-
-필드 캡슐화 작업을 통해 기존 필드로부터 속성을 만들고 새로 만든 속성을 참조하도록 코드를 업데이트할 수 있습니다. 필드를 캡슐화하는 속성을 만들면 공용 필드에 직접 액세스할 수 없도록 하여 다른 개체가 필드를 수정할 수 없습니다.
-
-이 작업은 다음을 수행합니다.
-
-* 액세스 한정자를 비공개로 변경합니다.
-* 필드에 getter 및 setter를 생성합니다(단, 필드가 읽기 전용이 아니어야 하며, 읽기 전용인 경우에는 getter만 생성).
+[일반적인 빠른 작업](/visualstudio/ide/common-quick-actions) 문서에서 일반적인 빠른 작업에 대해 자세히 알아볼 수 있습니다.
 
 ## <a name="source-analysis"></a>소스 분석
 
@@ -105,6 +88,10 @@ Mac용 Visual Studio는 Microsoft의 오픈 소스 .NET 컴파일러 플랫폼�
 상단의 원을 클릭하면 심각도가 가장 높은 문제부터 순서대로 표시된 상태에서 각 제안을 반복할 수 있습니다. 개별 결과나 줄을 마우스로 가리키면 문제가 표시되며, 이 문제는 컨텍스트 작업을 통해 수정할 수 있습니다.
 
 ![소스 분석 항목](media/refactoring-image5.png)
+
+## <a name="related-video"></a>관련 동영상
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Refactoring-Code/player]
 
 ## <a name="see-also"></a>참고 항목
 

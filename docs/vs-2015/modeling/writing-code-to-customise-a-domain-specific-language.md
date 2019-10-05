@@ -1,25 +1,22 @@
 ---
 title: 도메인별 언어 사용자 지정 하는 코드 작성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming
 ms.assetid: a4a17f5b-9c97-4575-b2d1-3182c1896b72
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: affa3db292ed23ca52b0cca810daf5ca70ad0fd1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 03b92c8ea9b764df517b02dc0dc256b5837a6c10
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187108"
 ---
 # <a name="writing-code-to-customise-a-domain-specific-language"></a>도메인별 언어를 사용자 지정하는 코드 작성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +33,7 @@ ms.locfileid: "49866326"
   
 - **텍스트 변환 합니다.** 모델에 액세스 하 고 예를 들어 프로그램 코드를 생성 하는 텍스트 파일을 생성 하는 코드를 포함 하는 텍스트 템플릿을 작성할 수 있습니다. 자세한 내용은 [도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)합니다.  
   
-- **다른 Visual Studio 확장입니다.** 읽기 및 모델을 수정 하는 별도 VSIX 확장을 작성할 수 있습니다. 자세한 내용은 참조 하세요. [방법: 프로그램 코드로 파일에서 모델 열기](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
+- **다른 Visual Studio 확장입니다.** 읽기 및 모델을 수정 하는 별도 VSIX 확장을 작성할 수 있습니다. 자세한 내용은 [방법: 프로그램 코드로 파일에서 모델 열기](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
   
   DslDefinition.dsl에서 정의 하는 클래스의 인스턴스는 데이터 구조에 유지 되는 *메모리 내 저장소* (IMS) 또는 *스토어*합니다. 항상 DSL에서 정의 하는 클래스 생성자에 인수로 저장소를 사용 합니다. 예를 들어 DSL 예제를 호출 하는 클래스를 정의 하는 경우:  
   
@@ -44,7 +41,7 @@ ms.locfileid: "49866326"
   
   여러 가지 이점을 제공 (대신 방금으로 일반 개체) 저장소에 개체를 유지 합니다.  
   
-- **트랜잭션**합니다. 일련의 관련된 변경 내용 트랜잭션으로 그룹화 할 수 있습니다.  
+- **트랜잭션**. 일련의 관련된 변경 내용 트랜잭션으로 그룹화 할 수 있습니다.  
   
    `using (Transaction t = store.TransactionManager.BeginTransaction("updates"))`  
   
@@ -78,8 +75,5 @@ ms.locfileid: "49866326"
   
 - **Serialization**합니다. 저장소 파일에 포함 하는 개체를 serialize 하는 표준 방법을 제공 합니다. 직렬화 및 역직렬화에 대 한 규칙을 사용자 지정할 수 있습니다. 자세한 내용은 [사용자 지정 파일 저장소 및 XML Serialization](../modeling/customizing-file-storage-and-xml-serialization.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [도메인별 언어 사용자 지정 및 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)
-
-
-

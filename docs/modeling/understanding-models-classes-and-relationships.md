@@ -6,16 +6,15 @@ helpviewer_keywords:
 - Domain-Specific Language, models
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 749c75af9056bc50689c47ca9ef8de037dfd71e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: d629c0049966d0520e0e40d23b0fd41798ccf2b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386978"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>모델, 클래스 및 관계 이해
 도메인 특정 언어 (DSL) 작성할 수 있는 모든 사용자 지정 프로그램 코드와 함께 해당 DSL 정의 파일에서 정의 됩니다. DSL 솔루션에 있는 프로그램 코드의 대부분은이 파일에서 생성 됩니다.
@@ -25,13 +24,13 @@ ms.locfileid: "53908646"
 ## <a name="the-dsl-definition"></a>DSL 정의
  열면 `Dsl\DslDefinition.dsl`, Visual Studio 창에 다음 그림과 유사 합니다.
 
- ![DSL 디자이너](../modeling/media/dsl_designer.png)
+ ![dsl 디자이너](../modeling/media/dsl_designer.png)
 
  DSL 정의에서 가장 중요 한 정보는 DSL 정의 다이어그램에 표시 됩니다. DslDefinition.dsl의 일부 이며, 추가 정보를 일반적으로 옆쪽 다이어그램에 표시 되는 DSL 탐색기에 표시 됩니다. 빈도가 가장 높은 작업에 대 한 다이어그램와 고급 사용자 지정에 대 한 DSL 탐색기를 사용 하 여 작업 합니다.
 
  DSL 정의 다이어그램의 모델 요소 및 모델 요소 간에 링크를 정의 하는 관계를 정의 하는 도메인 클래스를 보여 줍니다. 셰이프 및 사용자에 게 모델 요소를 표시 하는 데 사용 되는 커넥터에도 보여 줍니다.
 
- ![스윔 레인이 있는 DSL 디자이너](../modeling/media/dsl_desinger.png)
+ ![스윔 레인이 있는 dsl 디자이너](../modeling/media/dsl_desinger.png)
 
  다이어그램 또는 DSL 탐색기에서 DSL 정의에서 항목을 선택 하면 속성 창에 정보가 표시 됩니다. 추가 정보는 DSL 세부 정보 창에 표시 될 수 있습니다.
 
@@ -62,13 +61,13 @@ ms.locfileid: "53908646"
 
  DSL 정의 다이어그램을 다시 정렬 하려면 다음을 수행할 수 있습니다.
 
--   기본 교환 및 사용 하 여 뷰를 참조 합니다 **여기로 트리 가져오기** 하 고 **트리 분할** 명령 합니다. 이 명령은 표시 하는 단일 도메인 클래스를 마우스 오른쪽 단추로 클릭 합니다.
+- 기본 교환 및 사용 하 여 뷰를 참조 합니다 **여기로 트리 가져오기** 하 고 **트리 분할** 명령 합니다. 이 명령은 표시 하는 단일 도메인 클래스를 마우스 오른쪽 단추로 클릭 합니다.
 
--   Ctrl + 위쪽 및 Ctrl + 아래쪽 화살표 키를 눌러 도메인 클래스와 모양 클래스를 다시 정렬 합니다.
+- Ctrl + 위쪽 및 Ctrl + 아래쪽 화살표 키를 눌러 도메인 클래스와 모양 클래스를 다시 정렬 합니다.
 
--   축소 하거나 각 셰이프의 오른쪽 위에 있는 아이콘을 사용 하 여 클래스를 확장 합니다.
+- 축소 하거나 각 셰이프의 오른쪽 위에 있는 아이콘을 사용 하 여 클래스를 확장 합니다.
 
--   도메인 클래스의 맨 아래에 있는 빼기 기호 (-)를 클릭 하 여 트리의 특정 부분을 축소 합니다.
+- 도메인 클래스의 맨 아래에 있는 빼기 기호 (-)를 클릭 하 여 트리의 특정 부분을 축소 합니다.
 
 ## <a name="inheritance"></a>상속
  상속을 사용 하 여 도메인 클래스를 정의할 수 있습니다. 상속 파생을 만들려면 상속 도구, 파생 클래스 및 기본 클래스를 차례로 클릭 합니다. 모델 요소에는 기본 클래스에서 상속 된 모든 속성과 함께 자체 도메인 클래스에 정의 된 모든 속성이 있습니다. 또한 관계에 해당 역할을 상속합니다.
@@ -94,7 +93,7 @@ ms.locfileid: "53908646"
  모델을 저장 하는 경우 XML 형식에서 파일에 포함 된 요소 내에 중첩 된 부모 serialization 사용자 지정 하지 않으면.
 
 > [!NOTE]
->  포함은 상속과는 다릅니다. 포함 관계에 있는 자식 부모의 속성을 상속 하지 않습니다. 모델 요소 간의 링크 형식에는 포함 합니다. 상속은 클래스 간의 관계 이며 모델 요소 간에 링크를 만들지 않습니다.
+> 포함은 상속과는 다릅니다. 포함 관계에 있는 자식 부모의 속성을 상속 하지 않습니다. 모델 요소 간의 링크 형식에는 포함 합니다. 상속은 클래스 간의 관계 이며 모델 요소 간에 링크를 만들지 않습니다.
 
 ### <a name="embedding-rules"></a>포함 규칙
  인스턴스 모델의 모든 요소에는 모델의 루트를 제외 하 고 정확히 하나의 포함 링크의 대상 이어야 합니다.

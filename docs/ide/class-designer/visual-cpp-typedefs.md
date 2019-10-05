@@ -1,8 +1,6 @@
 ---
 title: 클래스 디자이너의 Visual C++ 형식 정의
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.typedef
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c1984108-71fc-4d3a-b4d4-3eac2c6b4ebf
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6eb831422df42a246a5d5c23ccdd480bce47a0e6
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: ded9e1b6bea0a6f03dd9599b592bba5fba6f91fe
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33958336"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975132"
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>클래스 디자이너의 Visual C++ 형식 정의
 
@@ -45,7 +43,7 @@ typedef class coord
 
 클래스와 구조체에는 그 안에 선언된 typedef가 중첩되어 있을 수 있습니다. **클래스 디자이너**에서 클래스 및 구조체 모양은 중첩된 typedef 선언을 중첩된 도형으로 표시할 수 있습니다.
 
-Typedef 도형은 상황에 맞는 메뉴에서 **형식 연결로 표시** 및 **컬렉션 형식 연결로 표시** 명령을 지원합니다.
+Typedef 도형은 오른쪽 클릭 메뉴(상황에 맞는 메뉴)에서 **형식 연결로 표시** 및 **컬렉션 형식 연결로 표시** 명령을 지원합니다.
 
 ### <a name="class-typedef-example"></a>Typedef 클래스 예제
 

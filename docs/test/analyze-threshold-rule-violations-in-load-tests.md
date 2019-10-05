@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 969ed346-cf2e-4d48-82b3-edb3e075e1c0
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: be0784197c03aa3117d559cd4aa99797027c8170
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 011b010eaad5def8943fd18a84da9fefdb01eff5
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061813"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918628"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>부하 테스트 분석기를 사용하여 부하 테스트에서 임계값 규칙 위반 분석
 
@@ -34,7 +32,7 @@ ms.locfileid: "53061813"
 
 ## <a name="view-threshold-violations-in-the-table"></a>테이블에서 임계값 위반 보기
 
- 임계값 위반 테이블에는 처음 1,000개의 위반이 표시됩니다. 이 테이블에는 다음과 같은 열이 있습니다.
+임계값 위반 테이블에는 처음 1,000개의 위반이 표시됩니다. 이 테이블에는 다음과 같은 열이 있습니다.
 
 |열|설명|기본적으로 표시되는지 여부|
 |-|-|-|
@@ -48,33 +46,33 @@ ms.locfileid: "53061813"
 > [!NOTE]
 > 열 머리글을 선택하여 테이블을 정렬할 수 있습니다.
 
- 자세한 내용은 [테이블 뷰에서 부하 테스트 결과 및 오류 분석](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)을 참조하세요.
+자세한 내용은 [테이블 뷰에서 부하 테스트 결과 및 오류 분석](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)을 참조하세요.
 
 ## <a name="view-threshold-violations-in-the-counters-panel"></a>카운터 패널에서 임계값 위반 보기
 
- **카운터** 패널에 있는 부하 테스트의 성능 카운터를 나열하는 트리에서 임계값 위반을 볼 수 있습니다. **카운터** 패널의 아이콘을 통해 임계값 위반이 표시됩니다. 이러한 아이콘은 다음 중 하나입니다.
+**카운터** 패널에 있는 부하 테스트의 성능 카운터를 나열하는 트리에서 임계값 위반을 볼 수 있습니다. **카운터** 패널의 아이콘을 통해 임계값 위반이 표시됩니다. 이러한 아이콘은 다음 중 하나입니다.
 
- 이러한 아이콘은 다음 중 하나입니다.
+이러한 아이콘은 다음 중 하나입니다.
 
- ![임계값 위반 없음](../test/media/icon_ltest_1.gif) 임계값 위반 없음
+![임계값 위반 없음](../test/media/icon_ltest_1.gif) 임계값 위반 없음
 
- ![마지막 기간에서 중요한 임계값 위반 발생](../test/media/icon_ltest_2.gif) 마지막 간격에서 중요 임계값 위반이 발생함
+![마지막 기간에서 중요한 임계값 위반 발생](../test/media/icon_ltest_2.gif) 마지막 간격에서 중요 임계값 위반이 발생함
 
- ![이전 기간에서 중요한 임계값 위반 발생](../test/media/icon_ltest_3.gif) 이전 간격에서 중요 임계값 위반이 발생함
+![이전 기간에서 중요한 임계값 위반 발생](../test/media/icon_ltest_3.gif) 이전 간격에서 중요 임계값 위반이 발생함
 
- ![마지막 기간에서 경고 임계값 위반 발생](../test/media/icon_ltest_4.gif) 마지막 간격에서 경고 임계값 위반이 발생함
+![마지막 기간에서 경고 임계값 위반 발생](../test/media/icon_ltest_4.gif) 마지막 간격에서 경고 임계값 위반이 발생함
 
- ![이전 기간에서 경고 임계값 위반 발생](../test/media/icon_ltest_5.gif) 이전 간격에서 경고 임계값 위반이 발생함
+![이전 기간에서 경고 임계값 위반 발생](../test/media/icon_ltest_5.gif) 이전 간격에서 경고 임계값 위반이 발생함
 
- 그래프에 임계값 위반이 표시될 수도 있습니다. 임계값 아이콘은 그래프에서 임계값 위반이 발생한 데이터 요소 옆에 표시됩니다.
+그래프에 임계값 위반이 표시될 수도 있습니다. 임계값 아이콘은 그래프에서 임계값 위반이 발생한 데이터 요소 옆에 표시됩니다.
 
- 카운터 트리에서 임계값 위반 아이콘은 특정 카운터 노드에서 루트 노드까지 거슬러 올라가면서 전파됩니다. 따라서 트리를 확장하지 않아 카운터가 표시되지 않은 경우에도 카운터에서 위반이 발생했음을 확인할 수 있습니다.
+카운터 트리에서 임계값 위반 아이콘은 특정 카운터 노드에서 루트 노드까지 거슬러 올라가면서 전파됩니다. 따라서 트리를 확장하지 않아 카운터가 표시되지 않은 경우에도 카운터에서 위반이 발생했음을 확인할 수 있습니다.
 
 ## <a name="view-threshold-violations-on-the-graph"></a>그래프에서 임계값 위반 보기
 
- 그래프에서 임계값 위반을 볼 수 있습니다. 그래프에서도 **카운터** 패널과 비슷한 아이콘을 통해 임계값 위반이 표시됩니다. 그래프에서 임계값 위반이 발생한 데이터 요소 옆에 아이콘이 표시됩니다. 그래프에 표시되지 않은 카운터에서 임계값 위반이 발생한 경우 **카운터** 패널에서 그래프로 카운터를 끌어 놓아 그래프에 해당 카운터를 추가할 수 있습니다.
+그래프에서 임계값 위반을 볼 수 있습니다. 그래프에서도 **카운터** 패널과 비슷한 아이콘을 통해 임계값 위반이 표시됩니다. 그래프에서 임계값 위반이 발생한 데이터 요소 옆에 아이콘이 표시됩니다. 그래프에 표시되지 않은 카운터에서 임계값 위반이 발생한 경우 **카운터** 패널에서 그래프로 카운터를 끌어 놓아 그래프에 해당 카운터를 추가할 수 있습니다.
 
- 자세한 내용은 [그래프 뷰에서 부하 테스트 결과 분석](../test/analyze-load-test-results-in-the-graphs-view.md)을 참조하세요.
+자세한 내용은 [그래프 뷰에서 부하 테스트 결과 분석](../test/analyze-load-test-results-in-the-graphs-view.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -8,15 +8,13 @@ helpviewer_keywords:
 ms.assetid: 45a625db-b3e7-4d64-beda-b9a76248096d
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: e250096a99cfc272cd23b58bf0f7b70eeb3a7c9d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 277c2ad8ffa6ebad55de3957f3d98917a4765ee1
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059842"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431981"
 ---
 # <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>방법: 부하 테스트 실행 설정에서 테스트 반복 횟수 지정
 
@@ -31,19 +29,19 @@ ms.locfileid: "53059842"
 
 ## <a name="to-specify-the-number-of-test-iterations-in-a-run-setting"></a>실행 설정의 테스트 반복 횟수를 지정하려면
 
-1.  부하 테스트를 엽니다.
+1. 부하 테스트를 엽니다.
 
      **부하 테스트 편집기**가 나타나고 부하 테스트 트리가 표시됩니다.
 
-2.  부하 테스트 트리의 **실행 설정** 폴더에서 실행 설정을 선택합니다.
+2. 부하 테스트 트리의 **실행 설정** 폴더에서 실행 설정을 선택합니다.
 
-3.  **보기** 메뉴에서 **속성 창**을 선택하여 부하 실행 설정의 범주와 속성을 확인합니다.
+3. **보기** 메뉴에서 **속성 창**을 선택하여 부하 실행 설정의 범주와 속성을 확인합니다.
 
-4.  **테스트 반복 사용** 속성을 **True**로 설정합니다.
+4. **테스트 반복 사용** 속성을 **True**로 설정합니다.
 
-5.  **테스트 반복** 속성에서 부하 테스트 중 실행할 테스트 반복 횟수를 나타내는 숫자를 입력합니다.
+5. **테스트 반복** 속성에서 부하 테스트 중 실행할 테스트 반복 횟수를 나타내는 숫자를 입력합니다.
 
-6.  속성 변경을 마친 다음, **파일** 메뉴에서 **저장**을 선택합니다. 그러면 새 **테스트 반복** 값을 사용하여 부하 테스트를 실행할 수 있습니다.
+6. 속성 변경을 마친 다음, **파일** 메뉴에서 **저장**을 선택합니다. 그러면 새 **테스트 반복** 값을 사용하여 부하 테스트를 실행할 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 

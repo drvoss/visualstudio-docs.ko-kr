@@ -2,7 +2,6 @@
 title: IDebugDocumentContext::GetDocument | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6776a65ca9adbcf9304e57e0b93f4ebcb4a33bc4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9bfcc5b3e2d2e197619f9bc4ec19b55c9eaf1d2a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974438"
 ---
 # <a name="idebugdocumentcontextgetdocument"></a>IDebugDocumentContext::GetDocument
 이 컨텍스트를 포함 하는 문서를 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetDocument(  
    IDebugDocument**  ppsd  
 );  
@@ -48,7 +47,7 @@ HRESULT GetDocument(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- `GetDocument` 메서드는이 컨텍스트를 포함 하는 문서를 반환 합니다.  
+ `GetDocument` 메서드가이 컨텍스트를 포함 하는 문서를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugDocumentContext 인터페이스](../../winscript/reference/idebugdocumentcontext-interface.md)

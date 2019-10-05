@@ -1,25 +1,20 @@
 ---
 title: Blend의 바로 가기 키 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 3a1b6830-30c2-4a36-bd14-6961f5edf9cb
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4cf0dd03a496d97f883bd1543f133f9f5213ba93
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4f96dcdeb8c53645f314c9456a3328ddb6e7959e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49262508"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428016"
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>Blend의 바로 가기 키
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,6 +119,3 @@ ms.locfileid: "49262508"
 |사용 중인 작업 영역 레이아웃 다시 설정|Ctrl+Shift+R|  
 |작업 영역 이동|스페이스바를 누른 채로 유지|  
 |다른 도구가 선택되어 있는 동안 임시로 **선택** 도구 사용|Ctrl 키를 누른 채로 유지|
-
-
-

@@ -2,10 +2,8 @@
 title: Visual Studio 관리자 가이드
 titleSuffix: ''
 description: 엔터프라이즈 환경에 Visual Studio를 배포하는 방법을 자세히 알아봅니다.
+ms.date: 06/02/2019
 ms.custom: seodec18
-ms.date: 05/29/2018
-ms.technology: vs-acquisition
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -14,78 +12,157 @@ helpviewer_keywords:
 ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 358614cae2001f46588bb447d97a863cf19b8036
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 89f34d027ec238b1e34724924ffb163267d56dc0
+ms.sourcegitcommit: 0bd63f3bc429ae059b9df6e45c6b8dcae6152940
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159466"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70026479"
 ---
-# <a name="visual-studio-2017-administrator-guide"></a>Visual Studio 2017 관리자 가이드
+# <a name="visual-studio-administrator-guide"></a>Visual Studio 관리자 가이드
 
-엔터프라이즈 환경에서는 일반적으로 시스템 관리자가 네트워크 공유 또는 시스템 관리 소프트웨어를 사용하여 최종 사용자에게 설치를 배포합니다. Visual Studio 설치 엔진은 엔터프라이즈 배포를 지원하여 시스템 관리자가 네트워크 설치 위치를 만들고, 설치 기본값을 미리 구성하고, 설치 프로세스에서 제품 키를 배포하고, 출시 후 제품 업데이트를 관리할 수 있도록 구성되었습니다. 이 관리자 가이드에서는 네트워크 환경의 엔터프라이즈 배포에 대한 시나리오 기반 지침을 제공합니다.
+엔터프라이즈 환경에서는 일반적으로 시스템 관리자가 네트워크 공유 또는 시스템 관리 소프트웨어를 사용하여 최종 사용자에게 설치를 배포합니다. Visual Studio 설치 엔진은 엔터프라이즈 배포를 지원하여 시스템 관리자가 네트워크 설치 위치를 만들고, 설치 기본값을 미리 구성하고, 설치 프로세스에서 제품 키를 배포하고, 출시 후 제품 업데이트를 관리하도록 구성되었습니다.
 
-## <a name="deploy-visual-studio-2017-in-an-enterprise-environment"></a>엔터프라이즈 환경에 Visual Studio 2017 배포
+이 관리자 가이드에서는 네트워크 환경의 엔터프라이즈 배포에 대한 시나리오 기반 지침을 제공합니다.
 
-각 대상 컴퓨터가 [최소 설치 요구 사항](/visualstudio/productinfo/vs2017-system-requirements-vs)을 충족하면 클라이언트 워크스테이션에 Visual Studio 2017을 배포할 수 있습니다. System Center 같은 소프트웨어를 통해 배포하든 아니면 배치 파일을 통해 배포하든 대개 다음 단계를 수행하게 됩니다.
+## <a name="before-you-begin"></a>시작하기 전에
 
-1. 네트워크 위치에 [Visual Studio 제품 파일이 포함된 네트워크 공유를 만듭니다](create-a-network-installation-of-visual-studio.md).
+조직 전체에 Visual Studio를 배포하기 전에 몇 가지 결정할 사항과 완료할 작업이 있습니다.
 
-2. 설치하려는 [워크로드 및 구성 요소 선택](workload-and-component-ids.md)
+::: moniker range="vs-2019"
 
-3. 기본 설치 옵션이 포함된 [지시 파일을 만듭니다](automated-installation-with-response-file.md). 또는 명령줄 매개 변수를 사용하여 설치를 제어하는 [설치 스크립트를 빌드](use-command-line-parameters-to-install-visual-studio.md)합니다.
+* 각 대상 컴퓨터가 [최소 설치 요구 사항](/visualstudio/releases/2019/system-requirements/)을 충족하는지 확인합니다.
 
-4. 필요에 따라 설치 스크립트의 일부로 [볼륨 라이선스 제품 키를 적용](automatically-apply-product-keys-when-deploying-visual-studio.md)하여 사용자가 소프트웨어를 별도로 활성화할 필요가 없도록 합니다.
+* 서비스 요구 사항을 결정합니다.
 
-5. 네트워크 레이아웃을 업데이트하여 [제품 업데이트가 최종 사용자에게 전달되는 시점을 제어](controlling-updates-to-visual-studio-deployments.md)합니다.
+  회사가 어떤 기능 집합을 오래 유지해야 하지만 정기 서비스 업데이트도 받고자 하는 경우 서비스 기준선의 사용을 계획합니다. 자세한 내용은 [Visual Studio 제품 수명 주기 및 서비스](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) 페이지의 ***Enterprise 및 Professional 고객용 지원 옵션*** 섹션 및 [방법: 서비스 기준선에서 Visual Studio 업데이트](update-servicing-baseline.md) 페이지를 참조하세요.
 
-6. 필요에 따라 레지스트리 키를 설정하여 [클라이언트 워크스테이션에 캐시되는 항목을 제어](set-defaults-for-enterprise-deployments.md)합니다.
+  누적 기능 업데이트와 함께 서비스 업데이트를 적용할 계획인 경우 최신 정보를 선택할 수 있습니다.
 
-7. 선택한 배포 기술을 사용하여 대상 개발자 워크스테이션의 이전 단계에서 생성된 스크립트를 실행합니다.
+* 업데이트 모델을 결정합니다.
 
-8. 1단계에서 사용한 명령을 정기적으로 실행하여 업데이트된 구성 요소를 추가하는 방법으로 [네트워크 위치를 최신 업데이트로 갱신](update-a-network-installation-of-visual-studio.md)합니다.
+  업데이트를 가져오려면 개별 클라이언트 컴퓨터를 어디에 두어야 할까요? 특히 업데이트를 인터넷에서 가져올지 아니면 회사 전체 로컬 공유에서 가져올지 결정합니다. 그런 다음, 로컬 공유 사용을 선택한 경우 개별 사용자가 자신의 고유한 클라이언트를 업데이트할 수 있는지 아니면 관리자가 프로그램에 의해 클라이언트를 업데이트할지 결정합니다.
 
-> [!IMPORTANT]
-> 네트워크 공유에서 설치하는 경우 소스 위치가 “기억”됩니다. 이는 클라이언트 컴퓨터 복구 시 클라이언트가 원래 설치된 네트워크 공유로 돌아가야 할 수도 있음을 의미합니다. 조직에서 Visual Studio 2017 클라이언트를 실행하는 예상 수명에 맞도록 네트워크 위치를 신중하게 선택합니다.
+* 회사에 필요한 [워크로드 및 구성 요소](workload-and-component-ids.md?view=vs-2019)를 결정합니다.
 
-## <a name="use-visual-studio-tools"></a>Visual Studio 도구 사용
+* [응답 파일](automated-installation-with-response-file.md?view=vs-2019)(스크립트 파일의 세부 정보 관리를 단순하게 해주는)을 사용할지 여부를 결정합니다.
 
-클라이언트 컴퓨터에 [설치된 Visual Studio 인스턴스를 검색 및 관리](tools-for-managing-visual-studio-instances.md)하는 데 사용할 수 있는 여러 가지 도구가 있습니다.
+* 그룹 정책을 사용할지 여부 및 개별 컴퓨터에 대한 고객 피드백을 사용하지 않도록 Visual Studio를 구성할지 여부를 결정합니다.
 
-> [!TIP]
-> Visual Studio 2017 설치 방법에 대한 자세한 내용은 관리자 가이드의 문서와 [Heath Stewart의 블로그](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/)를 참조하세요.
+::: moniker-end
 
-## <a name="specify-customer-feedback-settings"></a>사용자 의견 설정 지정
+::: moniker range="vs-2017"
 
-기본적으로 Visual Studio 설치에서는 고객 의견을 허용합니다. 그룹 정책을 사용하면 개별 컴퓨터에서 고객 피드백을 사용하지 않도록 Visual Studio를 구성할 수 있습니다. 이렇게 하려면 다음 키에 레지스트리 기반 정책을 설정합니다.
+* 각 대상 컴퓨터가 [최소 설치 요구 사항](/visualstudio/productinfo/vs2017-system-requirements-vs/)을 충족하는지 확인합니다.
 
-**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM**
+* 서비스 요구 사항을 결정합니다.
 
-항목 = **OptIn**
+  회사가 어떤 기능 집합을 오래 유지해야 하지만 정기 서비스 업데이트도 받고자 하는 경우 서비스 기준선의 사용을 계획합니다. 자세한 내용은 [Visual Studio 제품 수명 주기 및 서비스](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) 페이지의 ***이전 버전의 Visual Studio 지원*** 섹션 및 [방법: 서비스 기준선에서 Visual Studio 업데이트](update-servicing-baseline.md) 페이지를 참조하세요.
 
-값 = (DWORD)
-* **0**은 옵트아웃된 것입니다.
-* **1**은 옵트인된 것입니다.
+  누적 기능 업데이트와 함께 서비스 업데이트를 적용할 계획인 경우 최신 정보를 선택할 수 있습니다.
 
-고객 의견 설정에 대한 자세한 내용은 [Visual Studio 사용자 환경 개선 프로그램](../ide/visual-studio-experience-improvement-program.md) 페이지를 참조하세요.
+* 업데이트 모델을 결정합니다.
+
+  업데이트를 가져오려면 개별 클라이언트 컴퓨터를 어디에 두어야 할까요? 특히 업데이트를 인터넷에서 가져올지 아니면 회사 전체 로컬 공유에서 가져올지 결정합니다. 그런 다음, 로컬 공유 사용을 선택한 경우 개별 사용자가 자신의 고유한 클라이언트를 업데이트할 수 있는지 아니면 관리자가 프로그램에 의해 클라이언트를 업데이트할지 결정합니다.
+
+* 회사에 필요한 [워크로드 및 구성 요소](workload-and-component-ids.md?view=vs-2017)를 결정합니다.
+
+* [응답 파일](automated-installation-with-response-file.md?view=vs-2017)(스크립트 파일의 세부 정보 관리를 단순하게 해주는)을 사용할지 여부를 결정합니다.
+
+* 그룹 정책을 사용할지 여부 및 개별 컴퓨터에 대한 고객 피드백을 사용하지 않도록 Visual Studio를 구성할지 여부를 결정합니다.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+## <a name="step-1---download-visual-studio-product-files"></a>1단계 - Visual Studio 제품 파일 다운로드
+
+* 설치하려는 [워크로드 및 구성 요소를 선택](workload-and-component-ids.md?view=vs-2019)합니다.
+
+* [Visual Studio 제품 파일에 대한 네트워크 공유를 만듭니다](create-a-network-installation-of-visual-studio.md?view=vs-2019).
+
+## <a name="step-2---build-an-installation-script"></a>2단계 - 설치 스크립트를 빌드
+
+* [명령줄 매개 변수](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019)를 사용하여 설치를 제어하는 설치 스크립트를 빌드합니다.
+
+  >[!NOTE]
+  > [응답 파일](automated-installation-with-response-file.md?view=vs-2019)을 사용하여 스크립트를 단순화할 수 있습니다. 반드시 기본 설치 옵션이 포함된 응답 파일을 만들어야 합니다.
+
+* (선택 사항) 사용자가 소프트웨어를 별도로 활성화할 필요가 없도록 설치 스크립트의 일부로 [볼륨 라이선스 제품 키를 적용](automatically-apply-product-keys-when-deploying-visual-studio.md?view=vs-2019)합니다.
+
+* (선택 사항) 네트워크 레이아웃을 업데이트하여 [제품 업데이트가 최종 사용자에게 전달되는 시점 및 위치를 제어](controlling-updates-to-visual-studio-deployments.md?view=vs-2019)합니다.
+
+* (선택 사항) 다른 버전 또는 인스턴스와 공유되는 일부 패키지를 설치하는 위치, [패키지를 캐시하는 위치](set-defaults-for-enterprise-deployments.md?view=vs-2019) 또는 [패키지를 캐시하는지 여부](disable-or-move-the-package-cache.md?view=vs-2019) 등 Visual Studio의 배포에 영향을 미치는 레지스트리 정책을 설정합니다.
+
+* (선택 사항) 그룹 정책을 설정합니다. 개별 컴퓨터에서 [고객 피드백을 사용하지 앟도록 Visual Studio를 구성](../ide/visual-studio-experience-improvement-program.md)할 수도 있습니다.
+
+## <a name="step-3---deploy"></a>3단계 - 배포
+
+* 선택한 배포 기술을 사용하여 대상 개발자 워크스테이션에서 스크립트를 실행합니다.
+
+## <a name="step-4---deploy-updates"></a>4단계 - 업데이트 배포
+
+* 1단계에서 사용한 명령을 정기적으로 실행하여 업데이트된 구성 요소를 추가하는 방법으로 [네트워크 위치를 최신 업데이트로 갱신](update-a-network-installation-of-visual-studio.md?view=vs-2019)합니다.
+
+  업데이트 스크립트를 사용하여 Visual Studio를 업데이트할 수 있습니다. [`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) 명령줄 매개 변수를 사용하면 됩니다.
+
+## <a name="step-5---optional-use-visual-studio-tools"></a>5단계 - (선택 사항) Visual Studio 도구 사용
+
+클라이언트 컴퓨터에 [설치된 Visual Studio 인스턴스를 검색 및 관리](tools-for-managing-visual-studio-instances.md?view=vs-2019)하는 데 사용할 수 있는 여러 가지 도구가 있습니다.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+## <a name="step-1---download-visual-studio-product-files"></a>1단계 - Visual Studio 제품 파일 다운로드
+
+* 설치하려는 [워크로드 및 구성 요소를 선택](workload-and-component-ids.md?view=vs-2017)합니다.
+
+* [Visual Studio 제품 파일에 대한 네트워크 공유를 만듭니다](create-a-network-installation-of-visual-studio.md?view=vs-2017).
+
+## <a name="step-2---build-an-installation-script"></a>2단계 - 설치 스크립트를 빌드
+
+* [명령줄 매개 변수](use-command-line-parameters-to-install-visual-studio.md?view=vs-2017)를 사용하여 설치를 제어하는 설치 스크립트를 빌드합니다.
+
+  >[!NOTE]
+  > [응답 파일](automated-installation-with-response-file.md?view=vs-2017)을 사용하여 스크립트를 단순화할 수 있습니다. 반드시 기본 설치 옵션이 포함된 응답 파일을 만들어야 합니다.
+
+* (선택 사항) 사용자가 소프트웨어를 별도로 활성화할 필요가 없도록 설치 스크립트의 일부로 [볼륨 라이선스 제품 키를 적용](automatically-apply-product-keys-when-deploying-visual-studio.md?view=vs-2017)합니다.
+
+* (선택 사항) 네트워크 레이아웃을 업데이트하여 [제품 업데이트가 최종 사용자에게 전달되는 시점 및 위치를 제어](controlling-updates-to-visual-studio-deployments.md?view=vs-2017)합니다.
+
+* (선택 사항) 다른 버전 또는 인스턴스와 공유되는 일부 패키지를 설치하는 위치, [패키지를 캐시하는 위치](set-defaults-for-enterprise-deployments.md?view=vs-2019) 또는 [패키지를 캐시하는지 여부](disable-or-move-the-package-cache.md?view=vs-2017) 등 Visual Studio의 배포에 영향을 미치는 레지스트리 정책을 설정합니다.
+
+* (선택 사항) 그룹 정책을 설정합니다. 개별 컴퓨터에서 [고객 피드백을 사용하지 앟도록 Visual Studio를 구성](../ide/visual-studio-experience-improvement-program.md)할 수도 있습니다.
+
+## <a name="step-3---deploy"></a>3단계 - 배포
+
+* 선택한 배포 기술을 사용하여 대상 개발자 워크스테이션에서 스크립트를 실행합니다.
+
+## <a name="step-4---deploy-updates"></a>4단계 - 업데이트 배포
+
+* 1단계에서 사용한 명령을 정기적으로 실행하여 업데이트된 구성 요소를 추가하는 방법으로 [네트워크 위치를 최신 업데이트로 갱신](update-a-network-installation-of-visual-studio.md?view=vs-2017)합니다.
+
+  업데이트 스크립트를 사용하여 Visual Studio를 업데이트할 수 있습니다. [`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) 명령줄 매개 변수를 사용하면 됩니다.
+
+## <a name="step-5---optional-use-visual-studio-tools"></a>5단계 - (선택 사항) Visual Studio 도구 사용
+
+클라이언트 컴퓨터에 [설치된 Visual Studio 인스턴스를 검색 및 관리](tools-for-managing-visual-studio-instances.md?view=vs-2017)하는 데 사용할 수 있는 여러 가지 도구가 있습니다.
+
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>참고 항목
 
-* [Visual Studio 2017 설치](install-visual-studio.md)
-* [명령줄 매개 변수를 사용하여 Visual Studio 2017 설치](use-command-line-parameters-to-install-visual-studio.md)
-  * [명령줄 매개 변수 예](command-line-parameter-examples.md)
-  * [워크로드 및 구성 요소 ID 참조](workload-and-component-ids.md)
-* [Visual Studio의 네트워크 기반 설치 만들기](create-a-network-installation-of-visual-studio.md)
-  * [Visual Studio 오프라인 설치에 필요한 인증서 설치](install-certificates-for-visual-studio-offline.md)
-* [지시 파일을 사용하여 Visual Studio 자동화](automated-installation-with-response-file.md)
-* [Visual Studio를 배포할 때 제품 키를 자동으로 적용](automatically-apply-product-keys-when-deploying-visual-studio.md)
-* [Visual Studio의 엔터프라이즈 배포에 대한 기본값 설정](set-defaults-for-enterprise-deployments.md)
-* [패키지 캐시를 사용하지 않도록 설정 또는 이동](disable-or-move-the-package-cache.md)
-* [Visual Studio의 네트워크 기반 설치 업데이트](update-a-network-installation-of-visual-studio.md)
-* [Visual Studio 배포에 대한 업데이트 제어](controlling-updates-to-visual-studio-deployments.md)
-* [Visual Studio 인스턴스 검색 및 관리 도구](tools-for-managing-visual-studio-instances.md)
+* [명령줄 매개 변수 예](command-line-parameter-examples.md)
+* [Visual Studio 오프라인 설치에 필요한 인증서 설치](install-certificates-for-visual-studio-offline.md)
+* [설치 구성 가져오기 또는 내보내기](import-export-installation-configurations.md)
+* [Visual Studio 설치 보관](https://devblogs.microsoft.com/setup/tag/vs2017/)
+* [Visual Studio 제품 수명 주기 및 서비스](/visualstudio/releases/2019/servicing/)
+* [동기 자동 로드 설정](../extensibility/synchronously-autoloaded-extensions.md)

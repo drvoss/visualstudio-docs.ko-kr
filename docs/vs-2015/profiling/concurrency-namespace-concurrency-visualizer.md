@@ -1,14 +1,9 @@
 ---
 title: 동시성 네임스페이스(동시성 시각화 도우미) | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency
 helpviewer_keywords:
@@ -17,18 +12,18 @@ ms.assetid: 001fbfce-a278-4502-aa27-26d65dd61453
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e684aa03e0485a4467c083dc795492eb9c9cd3a5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e975986a03e7005835653dc98931fc9a44681e28
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774239"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700479"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>동시성 네임스페이스(동시성 시각화 도우미)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`Concurrency` 네임스페이스는 C++용 동시 프로그래밍 프레임워크인 동시성 런타임에 액세스하는 데 사용할 수 있는 클래스와 함수를 제공합니다. 자세한 내용은 [동시성 런타임](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)을 참조하세요.  
+`Concurrency` 네임스페이스는 C++용 동시 프로그래밍 프레임워크인 동시성 런타임에 액세스하는 데 사용할 수 있는 클래스와 함수를 제공합니다. 자세한 내용은 [동시성 런타임](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)을 참조하세요.  
   
 ## <a name="syntax"></a>구문  
   
@@ -49,6 +44,3 @@ namespace Concurrency;
   
 ## <a name="see-also"></a>참고 항목  
  [C 라이브러리 참조](../profiling/c-library-reference.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: 평균 CPU 사용률 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.cpu.percentage
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 5797d004-2325-46cf-bbf3-6739a15958ec
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5534da38c373b36a7e34bb1623d0a83f9bc405cb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: abd175e2ebc69fc21481aeeee9f5da76d1c40109
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202450"
 ---
 # <a name="average-cpu-utilization"></a>평균 CPU 사용률
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,6 +28,3 @@ ms.locfileid: "51787005"
 ## <a name="see-also"></a>참고 항목  
  [코어 뷰](../profiling/cores-view.md)   
  [CPU 사용률 그래프](../profiling/cpu-utilization-graph.md)
-
-
-

@@ -8,15 +8,13 @@ helpviewer_keywords:
 ms.assetid: 4414a638-1fa2-40ad-b1f4-b99f90b62e62
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 65508c3a7594c0943b80fbbb898c62b0fc013557
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+manager: jillfra
+ms.openlocfilehash: 86ed8346a27a02eb7e04c1f7a9fa361b0e03431a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785958"
 ---
 # <a name="load-test-scenario-properties"></a>부하 테스트 시나리오 속성
 
@@ -30,7 +28,7 @@ ms.locfileid: "52894601"
 |-|----------------|
 |**이름**|시나리오의 이름입니다.|
 
-## <a name="mix"></a>목록
+## <a name="mix"></a>조합
 
 |속성|정의|
 |-|----------------|

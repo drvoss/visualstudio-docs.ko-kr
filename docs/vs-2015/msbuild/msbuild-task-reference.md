@@ -1,14 +1,9 @@
 ---
 title: MSBuild 작업 참조 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -20,18 +15,17 @@ ms.assetid: b3144b27-a426-4259-b8ae-5f7991b202b6
 caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b6f1767ce1c572e1e3d8eacae8ba3a60f3593476
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 19fe581985ec173099790311517c0442a9c29c2f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154115"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild 작업 참조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 작업은 빌드 프로세스 동안 실행되는 코드를 제공합니다. 다음 목록의 작업이 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에 포함되어 있습니다. [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]가 설치되면 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] 프로젝트를 빌드하는 데 사용되는 추가 작업을 사용할 수 있습니다. 자세한 내용은 [Visual C++ 작업](../msbuild/msbuild-tasks-specific-to-visual-cpp.md)을 참조하세요.  
   
  이 섹션의 항목에 나열된 매개 변수 외에도 각 작업에는 다음과 같은 매개 변수가 있습니다.  
@@ -39,7 +33,7 @@ ms.locfileid: "49193994"
 |매개 변수|설명|  
 |---------------|-----------------|  
 |`Condition`|선택적 `String` 매개 변수입니다.<br /><br /> [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 엔진이 이 작업이 실행될지 여부를 결정하는 데 사용하는 `Boolean` 식입니다. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에서 지원되는 조건에 대한 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요.|  
-|`ContinueOnError`|선택적 매개 변수입니다. 다음 값 중 하나를 포함할 수 있습니다.<br /><br /> -   **WarnAndContinue** 또는 **true**. 작업이 실패할 경우 [Target](../msbuild/target-element-msbuild.md) 요소의 후속 작업과 빌드가 계속 실행되고 작업에서 발생한 모든 오류가 경고로 처리됩니다.<br />-   **ErrorAndContinue**. 작업이 실패할 경우 `Target` 요소의 후속 작업과 빌드가 계속 실행되고 작업에서 발생한 모든 오류가 오류로 처리됩니다.<br />-   **ErrorAndStop** 또는 **false**(기본값). 작업이 실패할 경우 `Target` 요소의 나머지 작업이 실행되지 않고 전체 `Target` 요소와 빌드가 실패한 것으로 간주됩니다.<br /><br /> .NET Framework 4.5 이전 버전은 `true` 및 `false` 값만 지원합니다.<br /><br /> 자세한 내용은 [방법: 작업의 오류 무시](../msbuild/how-to-ignore-errors-in-tasks.md)를 참조하세요.|  
+|`ContinueOnError`|선택적 매개 변수입니다. 다음 값 중 하나를 포함할 수 있습니다.<br /><br /> -   **WarnAndContinue** 또는 **true**. 작업이 실패할 경우 [Target](../msbuild/target-element-msbuild.md) 요소의 후속 작업과 빌드가 계속 실행되고 작업에서 발생한 모든 오류가 경고로 처리됩니다.<br />-   **ErrorAndContinue**. 작업이 실패할 경우 `Target` 요소의 후속 작업과 빌드가 계속 실행되고 작업에서 발생한 모든 오류가 오류로 처리됩니다.<br />-   **ErrorAndStop** 또는 **false**(기본값). 작업이 실패할 경우 `Target` 요소의 나머지 작업이 실행되지 않고 전체 `Target` 요소와 빌드가 실패한 것으로 간주됩니다.<br /><br /> .NET Framework 4.5 이전 버전은 `true` 및 `false` 값만 지원합니다.<br /><br /> 자세한 내용은 [방법: 작업의 오류 무시](../msbuild/how-to-ignore-errors-in-tasks.md)합니다.|  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [Task 기본 클래스](../msbuild/task-base-class.md)  
@@ -55,7 +49,7 @@ ms.locfileid: "49193994"
  모듈 또는 리소스 파일에 해당하는 하나 이상의 파일에 있는 매니페스트로 어셈블리를 만듭니다.  
   
  [AspNetCompiler 작업](../msbuild/aspnetcompiler-task.md)  
- ASP.NET 응용 프로그램을 미리 컴파일하는 유틸리티인 aspnet_compiler.exe를 래핑합니다.  
+ ASP.NET 애플리케이션을 미리 컴파일하는 유틸리티인 aspnet_compiler.exe를 래핑합니다.  
   
  [AssignCulture 작업](../msbuild/assignculture-task.md)  
  항목에 문화권 식별자를 할당합니다.  
@@ -121,7 +115,7 @@ ms.locfileid: "49193994"
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램 매니페스트 또는 네이티브 매니페스트를 생성합니다.  
   
  [GenerateBootstrapper 작업](../msbuild/generatebootstrapper-task.md)  
- 응용 프로그램과 해당 필수 조건을 검색, 다운로드, 설치할 수 있는 자동화된 방법을 제공합니다.  
+ 애플리케이션과 해당 필수 조건을 검색, 다운로드, 설치할 수 있는 자동화된 방법을 제공합니다.  
   
  [GenerateDeploymentManifest 작업](../msbuild/generatedeploymentmanifest-task.md)  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 배포 매니페스트를 생성합니다.  
@@ -130,7 +124,7 @@ ms.locfileid: "49193994"
  .txt 및 .resx 파일을 공용 언어 런타임 이진 .resources 파일로 변환합니다.  
   
  [GenerateTrustInfo 작업](../msbuild/generatetrustinfo-task.md)  
- 기본 매니페스트, `TargetZone` 및 `ExcludedPermissions` 매개 변수에서 응용 프로그램 신뢰를 생성합니다.  
+ 기본 매니페스트, `TargetZone` 및 `ExcludedPermissions` 매개 변수에서 애플리케이션 신뢰를 생성합니다.  
   
  [GetAssemblyIdentity 작업](../msbuild/getassemblyidentity-task.md)  
  지정된 파일에서 어셈블리 ID를 검색하고 ID 정보를 출력합니다.  
@@ -172,7 +166,7 @@ ms.locfileid: "49193994"
  지정된 항목 컬렉션에서 중복된 항목을 제거합니다.  
   
  [RequiresFramework35SP1Assembly 작업](../msbuild/requiresframework35sp1assembly-task.md)  
- 응용 프로그램에 .NET Framework 3.5 SP1이 필요한지 여부를 확인합니다.  
+ 애플리케이션에 .NET Framework 3.5 SP1이 필요한지 여부를 확인합니다.  
   
  ResGen 작업  
  사용되지 않습니다. [GenerateResource 작업](../msbuild/generateresource-task.md)을 사용하여 .txt 및 .resx 파일을 공용 언어 런타임 이진 .resources 파일로 변환하거나 그 반대로 변환합니다.  
@@ -235,6 +229,3 @@ ms.locfileid: "49193994"
  [MSBuild 참조](../msbuild/msbuild-reference.md)   
  [작업 작성](../msbuild/task-writing.md)   
  [작업](../msbuild/msbuild-tasks.md)
-
-
-

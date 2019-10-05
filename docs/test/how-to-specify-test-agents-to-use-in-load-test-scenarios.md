@@ -11,15 +11,13 @@ helpviewer_keywords:
 ms.assetid: e86806dd-5897-4e4c-bfd4-8d687fb72a6e
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: db7c901dd081155fe7341433f700f60de415a153
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 6045466d93a0017b648ca4327e80c801517c1359
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786434"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>방법: 부하 테스트 시나리오에서 사용할 테스트 에이전트 지정
 
@@ -47,24 +45,24 @@ ms.locfileid: "53061019"
 
 ## <a name="to-specify-the-agents-to-use-for-a-scenario"></a>시나리오에 사용할 에이전트를 지정하려면
 
-1.  부하 테스트를 엽니다.
+1. 부하 테스트를 엽니다.
 
      **부하 테스트 편집기**가 나타납니다. 부하 테스트 트리가 표시됩니다.
 
-2.  부하 테스트 트리 **시나리오** 폴더에서 사용할 에이전트를 지정할 시나리오 노드를 선택합니다.
+2. 부하 테스트 트리 **시나리오** 폴더에서 사용할 에이전트를 지정할 시나리오 노드를 선택합니다.
 
-3.  **보기** 메뉴에서 **속성 창**을 선택합니다.
+3. **보기** 메뉴에서 **속성 창**을 선택합니다.
 
      시나리오의 범주와 속성이 **속성** 창에 표시됩니다.
 
-4.  **사용할 에이전트** 속성의 텍스트 상자에 시나리오가 실행될 수 있는 에이전트 목록을 입력합니다.
+4. **사용할 에이전트** 속성의 텍스트 상자에 시나리오가 실행될 수 있는 에이전트 목록을 입력합니다.
 
      에이전트는 "**Agent1, Agent2, Agent3**"과 같이 쉼표로 구분해야 합니다. 속성을 공백으로 두면 시나리오에서 사용 가능한 모든 에이전트를 사용하도록 지정됩니다.
 
     > [!NOTE]
     > 로컬 실행의 경우에는 **사용할 에이전트** 속성이 무시됩니다. 원격 실행의 경우에는 **사용할 에이전트**에 에이전트가 지정되어 있지 않으면 시나리오의 테스트가 실행되지 않습니다.
 
-5.  속성을 변경한 후 **파일** 메뉴에서 **저장**을 선택합니다. 그러면 새 **사용할 에이전트** 값을 사용하여 부하 테스트를 실행할 수 있습니다.
+5. 속성을 변경한 후 **파일** 메뉴에서 **저장**을 선택합니다. 그러면 새 **사용할 에이전트** 값을 사용하여 부하 테스트를 실행할 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 

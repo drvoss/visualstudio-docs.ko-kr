@@ -1,8 +1,6 @@
 ---
 title: 외부 도구 관리
 ms.date: 11/20/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.externaltools
@@ -10,15 +8,15 @@ helpviewer_keywords:
 - external tools [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eeeee2e6e7ae5d043124faaa79bc6bad7c527702
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3562ed9ebf2d62ab002ac227486218c8c38ad337
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945885"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62535690"
 ---
 # <a name="manage-external-tools"></a>외부 도구 관리
 
@@ -28,11 +26,22 @@ ms.locfileid: "31945885"
 
 **도구** 메뉴에는 다음과 같은 몇 가지 기본 제공 명령이 포함되어 있습니다.
 
+::: moniker range="vs-2017"
+
 * [Visual Studio 확장 관리](finding-and-using-visual-studio-extensions.md)를 위한 **확장 및 업데이트**
 * [코드 조각 구성을 위한](code-snippets.md) **코드 조각 관리자**
-* [Dotfuscator CE(Community Edition)](dotfuscator/index.md)이 [설치](dotfuscator/install.md)된 경우 실행하기 위한 **PreEmptive Protection - Dotfuscator**
 * [메뉴 및 도구 모음 사용자 지정](how-to-customize-menus-and-toolbars-in-visual-studio.md)을 위한 **사용자 지정**
 * [Visual Studio IDE 및 기타 도구에 대한 다양한 옵션 설정](reference/options-dialog-box-visual-studio.md)을 위한 **옵션**
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+* [코드 조각 구성을 위한](code-snippets.md) **코드 조각 관리자**
+* [메뉴 및 도구 모음 사용자 지정](how-to-customize-menus-and-toolbars-in-visual-studio.md)을 위한 **사용자 지정**
+* [Visual Studio IDE 및 기타 도구에 대한 다양한 옵션 설정](reference/options-dialog-box-visual-studio.md)을 위한 **옵션**
+
+::: moniker-end
 
 ## <a name="add-new-tools-to-the-tools-menu"></a>도구 메뉴에 새 도구 추가
 
@@ -66,8 +75,8 @@ ms.locfileid: "31945885"
 |대상 이름|$(Targetname)|빌드할 항목의 파일 이름입니다.|
 |대상 확장명|$ (Targetext)|빌드할 항목의 파일 이름 확장명입니다.|
 |이진 디렉터리|$(BinDir)|빌드 중인 이진의 최종 위치(드라이브 + 경로)입니다.|
-|프로젝트 디렉터리|$(ProjDir)|현재 프로젝트의 디렉터리(드라이브 + 경로)입니다.|
-|프로젝트 파일 이름|$(ProjFileName)|현재 프로젝트의 파일 이름(드라이브 + 경로 + 파일 이름)입니다.|
+|프로젝트 디렉터리|$(ProjectDir)|현재 프로젝트의 디렉터리(드라이브 + 경로)입니다.|
+|프로젝트 파일 이름|$(ProjectFileName)|현재 프로젝트의 파일 이름(드라이브 + 경로 + 파일 이름)입니다.|
 |솔루션 디렉터리|$(Solutiondir)|현재 솔루션의 디렉터리(드라이브 + 경로)입니다.|
 |솔루션 파일 이름|$(SolutionFileName)|현재 솔루션의 파일 이름(드라이브 + 경로 + 파일 이름)입니다.|
 

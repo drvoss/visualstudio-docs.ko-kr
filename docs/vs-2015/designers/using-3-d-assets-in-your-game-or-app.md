@@ -1,14 +1,9 @@
 ---
 title: 게임 또는 앱에서 3차원 자산 사용 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.ImageContentTask.ContentOutput
 - VC.Project.MeshContentTask.ContentOutput
@@ -20,13 +15,13 @@ ms.assetid: ea587909-e434-46a8-abf8-9b3e95a58b4f
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e04f4c82e6f11f2659b4cc65549efb291009b720
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 20076e4f8cc05ad971a1cbe710c95f444b80938b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386884"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>게임 또는 응용 프로그램에 3차원 자산 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,9 +35,9 @@ ms.locfileid: "49863597"
   
 #### <a name="to-add-the-build-customizations-to-your-project"></a>프로젝트에 빌드 사용자 지정을 추가하려면  
   
-1.  **솔루션 탐색기**에서 프로젝트에 대한 바로 가기 메뉴를 열고 **빌드 종속성**, **빌드 사용자 지정**을 차례로 선택합니다. **Visual C++ 빌드 사용자 지정 파일** 대화 상자가 표시됩니다.  
+1. **솔루션 탐색기**에서 프로젝트에 대한 바로 가기 메뉴를 열고 **빌드 종속성**, **빌드 사용자 지정**을 차례로 선택합니다. **Visual C++ 빌드 사용자 지정 파일** 대화 상자가 표시됩니다.  
   
-2.  **사용 가능한 빌드 사용자 지정 파일**에서 다음 테이블에서 설명한 대로 프로젝트에서 사용하려는 자산 형식에 해당하는 확인란을 선택합니다.  
+2. **사용 가능한 빌드 사용자 지정 파일**에서 다음 테이블에서 설명한 대로 프로젝트에서 사용하려는 자산 형식에 해당하는 확인란을 선택합니다.  
   
     |자산 형식|빌드 사용자 지정 이름|  
     |----------------|------------------------------|  
@@ -50,7 +45,7 @@ ms.locfileid: "49863597"
     |3-D 모델|**MeshContentTask(.targets, .props)**|  
     |셰이더|**ShaderGraphContentTask(.targets, .props)**|  
   
-3.  **확인** 단추를 선택합니다.  
+3. **확인** 단추를 선택합니다.  
   
 ## <a name="including-assets-in-your-build"></a>빌드에 자산 포함  
  이제 프로젝트에서는 사용자가 사용하려는 여러 종류의 3-D 자산에 대해 알고 있으므로 그 다음으로는 어떤 파일이 3-D 파일이고 이러한 파일이 어떤 종류의 자산인지 프로젝트에 알립니다.  
@@ -64,13 +59,13 @@ ms.locfileid: "49863597"
 3. **구성 속성** 아래에서 **일반**을 선택한 다음, 속성 표의 **일반** 아래에서 **항목 형식** 속성을 적절한 현재 파이프라인 항목 형식으로 설정합니다. 예를 들어 이미지 또는 질감 파일의 경우 **이미지 콘텐츠 파이프라인**을 선택합니다.  
   
    > [!IMPORTANT]
-   >  기본적으로 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에 기본 제공되는 **이미지** 항목 형식을 사용하여 여러 종류의 이미지 파일을 분류한다고 가정합니다. 따라서 이미지 콘텐츠 파이프라인에서 처리하려는 각 이미지의 **항목 형식** 속성을 변경해야 합니다. 3차원 모델과 시각적 셰이더 그래픽에 대한 다른 형식의 콘텐츠 파이프라인 원본 파일은 기본적으로 올바른 **항목 형식**으로 설정됩니다.  
+   > 기본적으로 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에 기본 제공되는 **이미지** 항목 형식을 사용하여 여러 종류의 이미지 파일을 분류한다고 가정합니다. 따라서 이미지 콘텐츠 파이프라인에서 처리하려는 각 이미지의 **항목 형식** 속성을 변경해야 합니다. 3차원 모델과 시각적 셰이더 그래픽에 대한 다른 형식의 콘텐츠 파이프라인 원본 파일은 기본적으로 올바른 **항목 형식**으로 설정됩니다.  
   
 4. **확인** 단추를 선택합니다.  
   
    다음은 3가지 콘텐츠 파이프라인 항목 형식, 관련 소스 및 출력 파일 형식입니다.  
   
-|항목 형식|원본 파일 형식|출력 파일 형식|  
+|항목 종류|원본 파일 형식|출력 파일 형식|  
 |---------------|-----------------------|------------------------|  
 |**이미지 콘텐츠 파이프라인**|Portable Network Graphics(.png)<br /><br /> JPEG(.jpg, .jpeg, .jpe, .jfif)<br /><br /> Direct Draw Surface(.dds)<br /><br /> Graphics Interchange Format(.gif)<br /><br /> Bitmap(.bmp, .dib)<br /><br /> Tagged Image File Format(.tif, .tiff)<br /><br /> Targa(.tga)|DirectDraw Surface(.dds)|  
 |**메시 콘텐츠 파이프라인**|AutoDesk FBX 교환 파일(.fbx)<br /><br /> Collada DAE 파일(.dae)<br /><br /> Wavefront OBJ 파일(.obj)|3-D 메시 파일(.cmo)|  
@@ -81,13 +76,13 @@ ms.locfileid: "49863597"
   
 #### <a name="to-configure-content-pipeline-properties"></a>콘텐츠 파이프라인 속성을 구성하려면  
   
-1.  **솔루션 탐색기**의 프로젝트에서 자산 파일의 바로 가기 메뉴를 연 다음 **속성**을 선택합니다. 자산의 **속성 페이지** 대화 상자가 표시됩니다.  
+1. **솔루션 탐색기**의 프로젝트에서 자산 파일의 바로 가기 메뉴를 연 다음 **속성**을 선택합니다. 자산의 **속성 페이지** 대화 상자가 표시됩니다.  
   
-2.  **구성** 및 **플랫폼** 속성이 변경 내용을 적용하려는 값으로 설정되어 있는지 확인합니다.  
+2. **구성** 및 **플랫폼** 속성이 변경 내용을 적용하려는 값으로 설정되어 있는지 확인합니다.  
   
-3.  **구성 속성** 아래에서 콘텐츠 파이프라인 노드(예: 질감 및 이미지 자산에 대한 **이미지 콘텐츠 파이프라인**)를 선택한 다음, 속성 표에서 속성을 적절한 값으로 설정합니다. 예를 들어 빌드 시간에 질감 자산에 대한 MIP 맵을 생성하려면 **MIP 생성** 속성을 **예**로 설정합니다.  
+3. **구성 속성** 아래에서 콘텐츠 파이프라인 노드(예: 질감 및 이미지 자산에 대한 **이미지 콘텐츠 파이프라인**)를 선택한 다음, 속성 표에서 속성을 적절한 값으로 설정합니다. 예를 들어 빌드 시간에 질감 자산에 대한 MIP 맵을 생성하려면 **MIP 생성** 속성을 **예**로 설정합니다.  
   
-4.  **확인** 단추를 선택합니다.  
+4. **확인** 단추를 선택합니다.  
   
 ### <a name="image-content-pipeline-configuration"></a>이미지 콘텐츠 파이프라인 구성  
  이미지 콘텐츠 파이프라인 도구를 사용하여 질감 자산을 빌드하는 경우 다양한 방법으로 질감을 압축하고 빌드 시 MIP 수준을 생성해야 할지 여부를 나타내고 출력 파일의 이름을 변경할 수 있습니다.  
@@ -97,26 +92,26 @@ ms.locfileid: "49863597"
 |**압축**|출력 파일에 사용할 압축 형식을 지정합니다.<br /><br /> 사용 가능한 옵션은 다음과 같습니다.<br /><br /> -   **압축 안 함**<br />-   **BC1_UNORM 압축**<br />-   **BC1_UNORM_SRGB 압축**<br />-   **BC2_UNORM 압축**<br />-   **BC2_UNORM_SRGB 압축**<br />-   **BC3_UNORM 압축**<br />-   **BC3_UNORM_SRGB 압축**<br />-   **BC4_UNORM 압축**<br />-   **BC4_SNORM 압축**<br />-   **BC5_UNORM 압축**<br />-   **BC5_SNORM 압축**<br />-   **BC6H_UF16 압축**<br />-   **BC6H_SF16 압축**<br />-   **BC7_UNORM 압축**<br />-   **BC7_UNORM_SRGB 압축**<br /><br /> 다른 버전의 DirectX에서 지원되는 압축 형식에 대한 자세한 내용은 [DXGI 프로그래밍 가이드](http://go.microsoft.com/fwlink/p/?LinkId=246265)를 참조하세요.|  
 |미리 곱한 알파 형식으로 변환|이미지를 출력 파일에서 미리 곱한 알파 형식으로 변환하려면 **예**를 선택하고, 그렇지 않으면 **아니요**를 선택합니다. 출력 파일만 변경되고 원본 이미지는 그대로 남습니다.|  
 |**MIP 생성**|빌드 시간에 전체 MIP 체인을 생성한 다음 출력 파일에 포함하려면 **예**를 선택하고, 그렇지 않으면 **아니요**를 선택합니다. **아니요**이고 이미 원본 파일에 MIP 맵 체인이 포함되어 있는 경우 출력 파일에 MIP 체인이 있게 됩니다. 그렇지 않으면 출력 파일에 MIP 체인이 없습니다.|  
-|**콘텐츠 출력**|출력 파일의 이름을 지정합니다. **중요:** 출력 파일의 확장명을 변경하더라도 파일 형식에는 아무런 영향을 주지 않습니다.|  
+|**콘텐츠 출력**|출력 파일의 이름을 지정합니다. **중요:**  출력 파일의 확장명을 변경하더라도 파일 형식에는 아무런 영향을 미치지 않습니다.|  
   
 ### <a name="mesh-content-pipeline-configuration"></a>메시 콘텐츠 파이프라인 구성  
  메시 콘텐츠 파이프라인 도구를 사용하여 메시 자산을 빌드하는 경우 출력 파일의 이름을 변경할 수 있습니다.  
   
 |속성|설명|  
 |--------------|-----------------|  
-|**콘텐츠 출력**|출력 파일의 이름을 지정합니다. **중요:** 출력 파일의 확장명을 변경하더라도 파일 형식에는 아무런 영향을 주지 않습니다.|  
+|**콘텐츠 출력**|출력 파일의 이름을 지정합니다. **중요:**  출력 파일의 확장명을 변경하더라도 파일 형식에는 아무런 영향을 미치지 않습니다.|  
   
 ### <a name="shader-content-pipeline-configuration"></a>셰이더 콘텐츠 파이프라인 구성  
  셰이더 콘텐츠 파이프라인 도구를 사용하여 셰이더 자산을 빌드하는 경우 출력 파일의 이름을 변경할 수 있습니다.  
   
 |속성|설명|  
 |--------------|-----------------|  
-|**콘텐츠 출력**|출력 파일의 이름을 지정합니다. **중요:** 출력 파일의 확장명을 변경하더라도 파일 형식에는 아무런 영향을 주지 않습니다.|  
+|**콘텐츠 출력**|출력 파일의 이름을 지정합니다. **중요:**  출력 파일의 확장명을 변경하더라도 파일 형식에는 아무런 영향을 미치지 않습니다.|  
   
 ## <a name="loading-and-using-3-d-assets-at-run-time"></a>런타임에 3-D 자산 로드 후 사용  
   
 ### <a name="using-textures-and-images"></a>질감 및 이미지 사용  
- Direct3D에서는 질감 리소스를 만들기 위한 기능을 제공합니다. Direct3D 11에서 D3DX11 유틸리티 라이브러리는 이미지 파일에서 직접 질감 리소스 및 리소스 뷰를 만들 수 있는 추가 기능을 제공합니다. Direct3D 11에서 질감 리소스를 만드는 방법에 대한 자세한 내용은 [질감](http://go.microsoft.com/fwlink/p/?LinkID=246267)을 참조하세요. D3DX11 라이브러리를 사용하여 이미지 파일에서 질감 리소스 또는 리소스 뷰를 만드는 방법에 대한 자세한 내용은 [방법: 파일에서 질감 초기화](http://go.microsoft.com/fwlink/p/?LinkId=246268)를 참조하세요.  
+ Direct3D에서는 질감 리소스를 만들기 위한 기능을 제공합니다. Direct3D 11에서 D3DX11 유틸리티 라이브러리는 이미지 파일에서 직접 질감 리소스 및 리소스 뷰를 만들 수 있는 추가 기능을 제공합니다. Direct3D 11에서 질감 리소스를 만드는 방법에 대한 자세한 내용은 [질감](http://go.microsoft.com/fwlink/p/?LinkID=246267)을 참조하세요. D3DX11 라이브러리를 사용하여 이미지 파일에서 질감 리소스 또는 리소스 보기를 만드는 방법에 대한 자세한 내용은 [방법: 파일에서 질감 초기화](http://go.microsoft.com/fwlink/p/?LinkId=246268)합니다.  
   
 ### <a name="using-3-d-models"></a>3-D 모델 사용  
  Direct3D 11은 3-D 모델에서 리소스를 만드는 기능을 제공하지 않습니다. 대신 3-D 모델 파일을 읽고 모델에 필요한 3-D 모델 및 모든 리소스(예: 질감 또는 셰이더)를 나타내는 꼭짓점 및 인덱스 버퍼를 만드는 코드를 작성해야 합니다.  
@@ -212,6 +207,3 @@ cbuffer MiscVars : register(b3)
 |[방법: Direct2D 또는 Javascript 앱과 함께 사용하기 위해 질감 내보내기](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|이미지 콘텐츠 파이프라인을 사용하여 Direct2D 또는 JavaScript 앱에서 사용할 수 있는 질감을 내보내는 방법에 대해 설명합니다.|  
 |[게임 및 응용 프로그램을 위한 3D 자산 작업](../designers/working-with-3-d-assets-for-games-and-apps.md)|Visual Studio에서는 질감 및 이미지, 3-D 모델 및 셰이더를 비롯한 3-D 자산을 만들고 조작하는 편집 도구에 대해 설명합니다.|  
 |[방법: 셰이더 내보내기](../designers/how-to-export-a-shader.md)|셰이더 디자이너에서 셰이더를 내보내는 방법을 설명합니다.|
-
-
-

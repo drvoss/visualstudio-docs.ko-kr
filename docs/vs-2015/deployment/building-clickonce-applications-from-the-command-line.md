@@ -1,14 +1,9 @@
 ---
 title: 명령줄에서 ClickOnce 응용 프로그램 빌드 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,15 +16,15 @@ ms.assetid: d9bc6212-c584-4f72-88c9-9a4b998c555e
 caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: c9a9b2e248e4f10e9b5d3f045c67a9622edd2c2b
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 2625a8d4caa7dd53e9ce86395a98622f91d686b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155705"
 ---
-# <a name="building-clickonce-applications-from-the-command-line"></a>명령줄에서 ClickOnce 응용 프로그램 빌드
+# <a name="building-clickonce-applications-from-the-command-line"></a>명령줄에서 ClickOnce 애플리케이션 빌드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], 통합된 개발 환경 (IDE)에서 만들어진 경우에 명령줄에서 프로젝트를 빌드할 수 있습니다. 사용 하 여 만든 프로젝트를 다시 작성할 수는 사실 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 만 있는 다른 컴퓨터에는 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 설치 합니다. 이 자동화 된 프로세스를 사용 하 여 빌드를 재현할 수 있습니다, 그리고 예를 들어, 중앙 빌드에서 랩 또는 사용 하 여 고급 스크립팅 기술 자체는 프로젝트 빌드 범위를 벗어납니다.  
@@ -43,7 +38,7 @@ ms.locfileid: "50220019"
   
  `/target:publish` 명령 게시 대상을 호출 하는 MSBuild 지시 합니다. 게시 대상 빌드 대상에 따라 달라 집니다. 이 게시 작업 빌드 작업의 상위 집합 임을 의미 합니다. 예를 들어, Visual Basic 또는 C# 소스 파일 중 하나를 변경한 경우 게시 작업에서 해당 어셈블리를 자동으로 다시 빌드됩니다.  
   
- 전체를 생성 하는 방법은 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 만들려면 Mage.exe 명령줄 도구를 사용 하 여 배포 프로그램 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 매니페스트를 참조 하십시오 [연습: ClickOnce 응용 프로그램 수동 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ 전체를 생성 하는 방법은 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 만들려면 Mage.exe 명령줄 도구를 사용 하 여 배포 프로그램 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 내용은 매니페스트 [연습: 수동으로 ClickOnce 애플리케이션 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)  
   
 ## <a name="creating-and-building-a-basic-clickonce-application-using-msbuild"></a>만들기 및 MSBuild를 사용 하 여 기본 ClickOnce 응용 프로그램 빌드  
   
@@ -73,13 +68,13 @@ ms.locfileid: "50220019"
   
 2. Windows에서 **시작** 메뉴에서 클릭 **프로그램도**, 다음 **Microsoft Visual Studio**, 다음 **Visual Studio Tools**, 다음 **Visual Studio 명령 프롬프트**합니다. 이 현재 사용자의 루트 폴더의 명령 프롬프트를 열어야 합니다.  
   
-3. 에 **Visual Studio 명령 프롬프트**, 위에서 빌드한 프로젝트의 위치를 현재 디렉터리를 변경 합니다. 예를 들어 `chdir My Documents\Visual Studio\Projects\CmdLineDemo`을 입력합니다.  
+3. 에 **Visual Studio 명령 프롬프트**, 위에서 빌드한 프로젝트의 위치를 현재 디렉터리를 변경 합니다. 예를 들어 `chdir My Documents\Visual Studio\Projects\CmdLineDemo`과 같이 입력합니다.  
   
 4. 생성 된 기존 파일을 제거 하려면 "만들고 게시 하는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 프로젝트를" 형식 `rmdir /s publish`합니다.  
   
     이 단계는 선택 사항이 있지만 새 파일 모두에 의해 생성 된 명령줄 빌드를 보장 합니다.  
   
-5. `msbuild /target:publish`를 입력합니다.  
+5. `msbuild /target:publish`을 입력합니다.  
   
    위의 단계는 전체를 생성 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 라는 프로젝트의 하위 폴더에 응용 프로그램 배포 **게시**합니다. CmdLineDemo.application 되는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 배포 매니페스트 합니다. 폴더 CmdLineDemo_1.0.0.0 CmdLineDemo.exe 및 CmdLineDemo.exe.manifest, 파일이 포함 된 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램 매니페스트 합니다. Setup.exe가 기본적으로 설치 하도록 구성 된 부트스트래퍼를 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]입니다. DotNetFX 폴더에 대 한 재배포 가능 패키지를 포함 합니다 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]합니다. 웹을 통해 또는 UNC 또는 CD/DVD를 통해 응용 프로그램을 배포 하는 데 필요한 파일의 전체 집합입니다.  
   
@@ -162,10 +157,10 @@ msbuild /target:publish /property:BootstrapperEnabled=false
   
 - `IsWebBootstrapper` setup.exe 부트스트래퍼 웹을 통해 또는 디스크 기반 모드에서 작동 하는지 여부를 결정 합니다.  
   
-## <a name="installurl-supporturl-publishurl-and-updateurl"></a>InstallURL "," SupportUrl "," PublishURL, "및" UpdateURL  
+## <a name="installurl-supporturl-publishurl-and-updateurl"></a>InstallURL, SupportUrl, PublishURL, 및 UpdateURL  
  다음 표에서 ClickOnce 배포를 위한 네 가지 URL 옵션을 보여 줍니다.  
   
-|URL 옵션|설명|  
+|URL 옵션|Description|  
 |----------------|-----------------|  
 |`PublishURL`|웹 사이트에 ClickOnce 응용 프로그램을 게시 하는 경우 필요 합니다.|  
 |`InstallURL`|선택 사항입니다. 설치 사이트와 다른 경우이 URL 옵션을 설정 합니다 `PublishURL`합니다. 예를 들어, 설정할 수 있습니다는 `PublishURL` 을 설정 하 고는 FTP 경로 `InstallURL` 웹 url입니다.|  
@@ -177,7 +172,4 @@ msbuild /target:publish /property:BootstrapperEnabled=false
  <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>   
  <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest>   
  [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)   
- [연습: ClickOnce 응용 프로그램 수동 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
-
-
-
+ [연습: 수동으로 ClickOnce 애플리케이션 배포](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

@@ -1,8 +1,6 @@
 ---
 title: 코드 조각 선택
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.expansionpicker
@@ -12,15 +10,15 @@ helpviewer_keywords:
 - code snippets, Code Snippet Picker
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 774ee47f02fe146caade0540be5ee2fb7f59904e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 84a93ed9cac1c3f352b3e658f28da4b492612338
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944182"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953207"
 ---
 # <a name="code-snippet-picker"></a>코드 조각 선택
 

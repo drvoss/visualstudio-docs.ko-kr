@@ -1,14 +1,9 @@
 ---
-title: ': Ca1714 플래그 열거형에는 복수형 이름을 사용 해야 합니다. | Microsoft Docs'
-ms.custom: ''
+title: 'CA1714: 플래그 열거형에는 복수형 이름을 사용 해야 합니다. | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - FlagsEnumsShouldHavePluralNames
 - CA1714
@@ -20,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: bb2314b0cc0b12b56c7807bef5668e1c79a71cc5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bf0e75596bfc2b274f12d9b58d2718881931b7df
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830043"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700506"
 ---
 # <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714: 플래그 열거형에는 복수형 이름을 사용해야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,12 +47,9 @@ ms.locfileid: "49830043"
  이름이 복수형 단어 이지만 끝나지 위반을 보류 하려면 안전의 '. 예를 들어, 이전에 설명 된 여러 날짜 열거형 'DaysOfTheWeek' 이름이 지정 된,이 규칙이 있지만 의도 하지 논리를 위반 것입니다. 이러한 위반은 표시 하지 않아야 합니다.
 
 ## <a name="related-rules"></a>관련된 규칙
- [CA1027: 열거형을 FlagsAttribute로 표시하십시오.](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+ [CA1027: 열거형을 FlagsAttribute로 표시](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
- [CA2217: 열거형을 FlagsAttribute로 표시하지 마십시오.](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+ [CA2217: 열거형을 FlagsAttribute로 표시 하지 마십시오.](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>참고 항목
- <xref:System.FlagsAttribute?displayProperty=fullName> [열거형 디자인](http://msdn.microsoft.com/library/dd53c952-9d9a-4736-86ff-9540e815d545)
-
-
-
+ <xref:System.FlagsAttribute?displayProperty=fullName> [열거형 디자인](https://msdn.microsoft.com/library/dd53c952-9d9a-4736-86ff-9540e815d545)

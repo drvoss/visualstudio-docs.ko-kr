@@ -7,15 +7,13 @@ helpviewer_keywords:
 ms.assetid: 3a94dd07-6d17-402c-ae8f-7947143755c9
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: f657babf33c315be2760cf59f3ec57525643f70e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+manager: jillfra
+ms.openlocfilehash: 04b1a894fbeb20059b79e65327ed8a7d18730e01
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786006"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>방법: 데스크톱과 상호 작용하는 테스트를 실행하도록 테스트 에이전트 설정
 

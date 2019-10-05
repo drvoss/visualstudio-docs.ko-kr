@@ -1,24 +1,23 @@
 ---
 title: 컴파일 빌드
 ms.date: 07/14/2017
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
 - builds [Visual Studio], about building in Visual Studio
 - custom build steps, types of builds
 ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: ghogen
+ms.author: ghogen
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7681ad9cd109dbc8da266721d9d8382d3552eda6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 2c99408530344c72d2e9669178c5e79f7c34d551
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062595"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211249"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Visual Studio에서 컴파일 및 빌드
 
@@ -26,9 +25,9 @@ ms.locfileid: "53062595"
 
 코드를 자주 빌드하면 잘못된 구문, 맞춤법 오류가 있는 키워드 및 형식 불일치와 같은 컴파일 시간 오류를 빠르게 식별할 수 있습니다. 디버그 버전의 코드를 빌드하고 실행하면 논리 오류 및 의미 오류와 같은 런타임 오류도 찾아 해결할 수 있습니다.
 
-성공적인 빌드를 위해서는 애플리케이션의 소스 코드에 올바른 구문이 포함돼 있어야 하고 라이브러리, 어셈블리 및 기타 구성 요소에 대한 모든 정적 참조를 확인해야 합니다. 애플리케이션 실행 파일이 생성되면 [디버깅 환경](../debugger/index.md)과 다양한 수동/자동 테스트 환경 모두에서 해당 파일이 제대로 작동하는지 테스트하여 [코드 품질의 유효성을 검사](../test/improve-code-quality.md)할 수 있습니다. 애플리케이션이 완전히 테스트되면 고객에게 배포할 릴리스 버전을 컴파일할 수 있습니다. 이 프로세스에 대한 개요는 [연습: 애플리케이션 빌드](../ide/walkthrough-building-an-application.md)를 참조하세요.
+성공적인 빌드를 위해서는 애플리케이션의 소스 코드에 올바른 구문이 포함돼 있어야 하고 라이브러리, 어셈블리 및 기타 구성 요소에 대한 모든 정적 참조를 확인해야 합니다. 애플리케이션 실행 파일이 생성되면 [디버깅 환경](../debugger/index.yml)과 다양한 수동/자동 테스트 환경 모두에서 해당 파일이 제대로 작동하는지 테스트하여 [코드 품질의 유효성을 검사](../test/improve-code-quality.md)할 수 있습니다. 애플리케이션이 완전히 테스트되면 고객에게 배포할 릴리스 버전을 컴파일할 수 있습니다. 이 프로세스에 대한 개요는 [연습: 애플리케이션 빌드](../ide/walkthrough-building-an-application.md)를 참조하세요.
 
-Visual Studio IDE, MSBuild 명령줄 도구 및 Azure Pipelines와 같은 방법 중 하나를 사용하여 응용 프로그램을 빌드할 수 있습니다.
+Visual Studio IDE, MSBuild 명령줄 도구 및 Azure Pipelines와 같은 방법 중 하나를 사용하여 애플리케이션을 빌드할 수 있습니다.
 
 | 빌드 방법 | 이점 |
 | --- |--- | --- |

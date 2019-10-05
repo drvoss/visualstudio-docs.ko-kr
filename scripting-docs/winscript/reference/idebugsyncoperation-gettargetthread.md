@@ -2,7 +2,6 @@
 title: IDebugSyncOperation::GetTargetThread | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df3e65d53e20dd51d045f26855c4f5e058dff159
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e270757ba26d61288a897bee4128317e6f4499cb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004904"
 ---
 # <a name="idebugsyncoperationgettargetthread"></a>IDebugSyncOperation::GetTargetThread
 이 동기화 작업에 대해 대상 응용 프로그램 스레드를 반환합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetTargetThread(  
    IDebugApplicationThread**  ppatTarget  
 );  

@@ -1,11 +1,11 @@
 ---
 ms.topic: include
-ms.openlocfilehash: f5ad14db8803f0bc444904a27ec6335f13037d3f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: e73dec3914463f123a84a68a5ca5d8080a6f1d05
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896798"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68148795"
 ---
 > [!NOTE]
-> 자동화된 UI 기반 기능 테스트를 위해 코딩된 UI 테스트는 사용되지 않습니다. Visual Studio 2019는 코딩된 UI 테스트를 사용할 수 있는 마지막 버전입니다. 웹앱 테스트에는 [Selenium](https://docs.seleniumhq.org/)을 사용하고, 데스크톱 및 UWP 앱 테스트에는 [WinAppDriver가 있는 Appium](https://github.com/Microsoft/WinAppDriver)을 사용하는 것이 좋습니다.
+> 자동화된 UI 기반 기능 테스트를 위해 코딩된 UI 테스트는 사용되지 않습니다. Visual Studio 2019는 코딩된 UI 테스트를 사용할 수 있는 마지막 버전입니다. 웹앱 테스트에는 [Selenium](https://docs.seleniumhq.org/)을 사용하고, 데스크톱 및 UWP 앱 테스트에는 [WinAppDriver가 있는 Appium](https://github.com/Microsoft/WinAppDriver)을 사용하는 것이 좋습니다. NUnit 테스트 프레임워크를 사용하여 iOS 및 Android 앱을 테스트할 때는 [Xamarin.UITest](/appcenter/test-cloud/uitest/)를 사용하는 것이 좋습니다.

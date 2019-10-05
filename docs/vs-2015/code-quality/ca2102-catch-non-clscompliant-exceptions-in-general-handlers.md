@@ -1,14 +1,9 @@
 ---
-title: 'CA2102: 일반 처리기에서 비 CLSCompliant 예외를 Catch | Microsoft Docs'
-ms.custom: ''
+title: 'CA2102: 일반 처리기에서 비 CLSCompliant 예외를 catch | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2102
 - CatchNonClsCompliantExceptionsInGeneralHandlers
@@ -19,14 +14,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5c2797b32bbcabd1c63fbfd510aec05c8bf54d21
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3fc0803e4ad73b08e99a05fa62930e039e1b7534
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877424"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687435"
 ---
-# <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102: 일반 처리기에서 비 CLSCompliant 예외를 catch하십시오.
+# <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102: 일반 처리기에서 비 CLSCompliant 예외를 catch하세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -44,7 +39,7 @@ ms.locfileid: "49877424"
 
 - C#: `catch {}`
 
-- C + +: `catch(...) {}` 또는 `catch(Object^) {}`
+- C++: `catch(...) {}` 또는 `catch(Object^) {}`
 
   처리 되지 않은 비-CLS 규격 예외가 catch 블록에서 이전에 허용 된 권한 제거 되 면 보안 문제가 됩니다. 비 CLS 규격이 아닌 예외를 발견 하지 및 때문에 비-CLS 규격 예외가 throw 되는 악성 메서드는 높은 권한으로 실행 수 없습니다.
 
@@ -84,10 +79,7 @@ csc /r:ThrowNonClsCompliantException.dll CatchNonClsCompliantException.cs
 ```
 
 ## <a name="related-rules"></a>관련된 규칙
- [CA1031: 일반적인 예외 형식을 catch하지 마십시오.](../code-quality/ca1031-do-not-catch-general-exception-types.md)
+ [CA1031: 일반적인 예외 형식을 catch 하지 마십시오.](../code-quality/ca1031-do-not-catch-general-exception-types.md)
 
 ## <a name="see-also"></a>참고 항목
- [예외 및 예외 처리](http://msdn.microsoft.com/library/0001887f-4fa2-47e2-8034-2819477e2344) [Ilasm.exe (IL 어셈블러)](http://msdn.microsoft.com/library/4ca3a4f0-4400-47ce-8936-8e219961c76f) [보안 검사 재정의](http://msdn.microsoft.com/en-us/4acdeff5-fc05-41bf-8505-7387cdbfca28) [Language Independence and Language-independent Components](http://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)
-
-
-
+ [예외 및 예외 처리](https://msdn.microsoft.com/library/0001887f-4fa2-47e2-8034-2819477e2344) [Ilasm.exe (IL 어셈블러)](https://msdn.microsoft.com/library/4ca3a4f0-4400-47ce-8936-8e219961c76f) [보안 검사 재정의](https://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28) [Language Independence and Language-independent Components](https://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)

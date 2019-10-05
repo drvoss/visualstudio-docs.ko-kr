@@ -1,14 +1,9 @@
 ---
 title: 부실 코드 경고 대화 상자 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.ENC.stalecode
 dev_langs:
@@ -25,25 +20,22 @@ ms.assetid: 594b894c-e652-4e13-a980-9909473d5712
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7d09355e1e565a2ed35ebd2b065677c42c66d662
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a89738446bf8c08680835ddccb7efa30c2f740f5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771450"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694694"
 ---
 # <a name="stale-code-warning-dialog-box"></a>부실 코드 경고 대화 상자
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 대화 상자가 나타납니다 했으면 코드 기본 변경을 **편집 하며 계속 하기** 즉시 적용 하지 못했습니다. 그 결과 현재 스택 프레임의 일부 네이티브 코드가 만료되어 부실 코드가 됩니다. 자세한 내용은 [방법: 부실 코드 작업](http://msdn.microsoft.com/en-us/c7536e95-66a6-44a0-995d-3fe5035250b4)합니다.  
+이 대화 상자는 네이티브 코드에서 **편집하며 계속하기**가 즉시 적용될 수 없는 변경을 수행했을 때 표시됩니다. 그 결과 현재 스택 프레임의 일부 네이티브 코드가 만료되어 부실 코드가 됩니다. 자세한 내용은 [방법: 부실 코드 작업](https://msdn.microsoft.com/c7536e95-66a6-44a0-995d-3fe5035250b4)합니다.  
   
  **이 대화 상자를 다시 표시 안 함**  
- 이 확인란을 선택하면 이후에는 편집하며 계속하기에서 권한을 확인하지 않고 코드 변경 내용을 적용합니다. 다시 설정할 수 있습니다이 경고로 이동 하 여는 **옵션** 대화 상자를 열기를 **디버깅** 폴더를 클릭 하는 **편집 하며 계속 하기** 페이지 및 선택 **부실 코드 경고**합니다.  
+ 이 확인란을 선택하면 이후에는 편집하며 계속하기에서 권한을 확인하지 않고 코드 변경 내용을 적용합니다. **옵션** 대화 상자로 이동하여 **디버깅** 폴더를 열고 **편집하며 계속하기** 페이지를 클릭한 다음, **부실 코드 경고**를 선택하면 다시 이 경고를 설정할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [지원 되는 코드 변경 (c + +)](../debugger/supported-code-changes-cpp.md)   
- [옵션 대화 상자, 디버깅, 편집하며 계속하기](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)
-
-
-
+ [코드 변경 내용을 지원 (C++)](../debugger/supported-code-changes-cpp.md)   
+ [옵션 대화 상자, 디버깅, 편집하며 계속하기](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)

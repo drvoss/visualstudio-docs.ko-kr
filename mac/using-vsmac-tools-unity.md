@@ -3,14 +3,14 @@ title: Mac용 Visual Studio Tools for Unity 사용
 description: 이 가이드에서는 Mac용 Visual Studio Tools for Unity 확장을 사용하는 방법을 설명합니다.
 author: therealjohn
 ms.author: johmil
-ms.date: 07/17/2017
+ms.date: 06/18/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: d4df59273db1fab8492b36e87e48e0e770072f17
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: daffb7721164ae49888a894bec7cad3ac74801a4
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027304"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692214"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Mac용 Visual Studio Tools for Unity 사용
 
@@ -61,7 +61,7 @@ Unity 엔진은 MonoBehaviour 스크립트에 메시지를 전송하므로 개�
 
 ## <a name="adding-new-unity-files-and-folders"></a>새 Unity 파일 및 폴더 추가
 
-언제든지 Unity 편집기에서 Unity 프로젝트에 새 파일을 추가할 수 있지만, Mac용 Visual Studio를 사용하면 Visual Studio 내에서 Unity 스크립트, 셰이더 및 폴더를 손쉽게 새로 만들 수 있습니다.
+언제든지 Unity 편집기에서 Unity 프로젝트에 새 파일을 추가할 수 있지만, Mac용 Visual Studio를 사용하면 Visual Studio 내에서 Unity 스크립트, 셰이더, 구조체, 열거형 및 폴더를 손쉽게 새로 만들 수 있습니다.
 
 ### <a name="add-a-new-c-monobehaviour-script"></a>새 C# MonoBehaviour 스크립트 추가
 
@@ -103,6 +103,12 @@ Mac용 Visual Studio로 Unity 프로젝트를 디버그할 수 있습니다.
 
 3. Visual Studio에 연결된 Unity 편집기에서 게임을 실행하면 중단점에 도달할 때 게임 실행이 일시 중지되고 게임이 중단점에 도달한 코드 줄이 Mac용 Visual Studio에 표시됩니다.
 
+### <a name="start-debugging-in-a-single-step"></a>단일 단계에서 디버깅 시작
+
+디버깅 시작 및 Unity 편집기 재생은 **Unity에 연결 및 재생** 구성을 선택하여 Mac용 Visual Studio에서 직접 한 번에 완료할 수 있습니다.
+
+![Unity에 연결 및 재생 선택](media/using-vsmac-tools-unity-image8.png)
+
 ### <a name="stop-debugging"></a>디버깅 중지
 
 디버깅을 중지하려면
@@ -110,5 +116,8 @@ Mac용 Visual Studio로 Unity 프로젝트를 디버그할 수 있습니다.
 1. Mac용 Visual Studio에서 **중지** 단추를 클릭하거나 **Shift+Command+Return**을 누릅니다.
 
    ![Visual Studio에서 [중지] 클릭](media/using-vsmac-tools-unity-image7.png)
+
+> [!NOTE]
+> **Unity에 연결 및 재생** 구성을 사용하여 디버깅을 시작한 경우 **중지** 단추로도 Unity를 중지할 수 있습니다.
 
 Mac용 Visual Studio의 디버깅에 대한 자세한 내용은 [Using the debugger](debugging.md)(디버거 사용)를 참조하세요.

@@ -1,26 +1,21 @@
 ---
 title: 텍스트 마커를 사용 하 여 레거시 API를 사용 하 여 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text markers
 ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 600e9635fb0ee5ea78226277860ac41e183f47b5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3dff5e6ecf60d389730841e99b87db584465e020
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745915"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695471"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>텍스트 마커를 사용 하 여 레거시 API를 사용 하 여
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51745915"
  텍스트 마커를 사용 하 여 연결 된 성능 오버 헤드 때문에 텍스트 버퍼에 대 한 많은 표식을 만들지 마십시오. 각 표식에는 사용자 편집 하는 버퍼의 내용이 될 때마다 업데이트 됩니다.  
   
 > [!NOTE]
->  사용자 표시 표식 유형을 하지만 하지 해당 모양과 스타일의 색을 변경할 수 있습니다. 자세한 내용은 [글꼴 및 색, 환경, 옵션 대화 상자](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)합니다.  
+> 사용자 표시 표식 유형을 하지만 하지 해당 모양과 스타일의 색을 변경할 수 있습니다. 자세한 내용은 [글꼴 및 색, 환경, 옵션 대화 상자](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)합니다.  
   
 ## <a name="related-topics"></a>관련 항목  
   
@@ -41,7 +36,7 @@ ms.locfileid: "51745915"
 |[방법: 사용자 지정 텍스트 표식 만들기](../extensibility/how-to-create-custom-text-markers.md)|만들고 텍스트 보기에 사용자 지정 텍스트 표식 유형을 추가 하는 방법을 설명 합니다.|  
 |[방법: 텍스트 표식 사용](../extensibility/how-to-use-text-markers.md)|텍스트 마커를 추가 하는 방법에 설명 합니다.|  
 |[핵심 편집기 내부](../extensibility/inside-the-core-editor.md)|핵심 편집기의 기능을 설명 하 고 핵심 편집기 사용자 지정 하는 방법에 대 한 세부 정보를 제공 합니다.|  
-|[편집기 기능](http://msdn.microsoft.com/en-us/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|사용할 수 있는 기능에 설명 합니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 핵심 편집기입니다.|  
+|[편집기 기능](https://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|사용할 수 있는 기능에 설명 합니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 핵심 편집기입니다.|  
   
 ## <a name="reference"></a>참조  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>  
@@ -76,4 +71,3 @@ ms.locfileid: "51745915"
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStreamMarker>  
  에 대 한 액세스를 제공 하 고 1 차원 좌표를 사용 하 여 텍스트 마커를 텍스트 버퍼의 위치를 조정 합니다. 가능한 경우에이 인터페이스를 사용 하지 마십시오.
-

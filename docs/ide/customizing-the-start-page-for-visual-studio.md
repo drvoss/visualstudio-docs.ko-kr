@@ -1,8 +1,6 @@
 ---
-title: 사용자 지정 시작 페이지 설치 또는 시작 항목 변경
+title: 시작 환경 변경
 ms.date: 02/01/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.ToolsOptionsPages.Startup
@@ -12,27 +10,45 @@ helpviewer_keywords:
 - Visual Studio Start Page
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8f09302a459e31406d69596d43b5c39a67c8268
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c8b31f033b9c04871e57836dd263071d87a24fda
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064049"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824258"
 ---
-# <a name="customize-the-start-page-for-visual-studio"></a>Visual Studio 시작 페이지 사용자 지정
+# <a name="customize-startup"></a>시작 사용자 지정
 
-**프로젝트 열기** 대화 상자 표시 또는 가장 최근에 로드한 솔루션 열기 등 Visual Studio의 시작 환경을 다양한 방법으로 사용자 지정할 수 있습니다. 도구 창에서 실행되는 WPF(Windows Presentation Foundation) XAML 페이지인 사용자 지정 시작 페이지를 표시하고 Visual Studio 내부에 있는 명령을 실행할 수도 있습니다.
+가장 최근의 솔루션을 열거나 빈 개발 환경을 여는 것과 같은 여러 가지 방법으로 Visual Studio의 시작 환경을 사용자 지정할 수 있습니다.
+
+::: moniker range="vs-2017"
+
+도구 창에서 실행되는 WPF(Windows Presentation Foundation) XAML 페이지인 사용자 지정 시작 페이지를 표시하고 Visual Studio 내부에 있는 명령을 실행할 수도 있습니다.
+
+::: moniker-end
 
 ## <a name="to-change-the-startup-item"></a>시작 항목을 변경하려면
 
 1. 메뉴 모음에서 **도구** > **옵션**을 선택합니다.
 
-1. **환경**을 확장한 다음 **시작**을 선택합니다.
+2. **환경**을 확장한 다음 **시작**을 선택합니다.
 
-1. **시작 시** 목록에서 Visual Studio가 시작된 후 표시할 항목을 선택합니다.
+::: moniker range="vs-2017"
+
+3. **시작 시** 목록에서 Visual Studio가 시작된 후 표시할 항목을 선택합니다.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. **시작 시 열기** 목록에서 Visual Studio 시작 후에 수행할 작업을 선택합니다. **시작 창**(새 프로젝트 또는 기존 프로젝트를 열 수 있음), **최근 솔루션** 또는 **빈 환경** 중에서 선택할 수 있습니다.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 ## <a name="to-show-a-custom-start-page"></a>사용자 지정 시작 페이지를 표시하려면
 
@@ -42,15 +58,17 @@ Visual Studio SDK를 사용하여 [사용자 지정 시작 페이지를 만들�
 
 ### <a name="to-select-which-custom-start-page-to-display"></a>표시할 사용자 지정 시작 페이지를 선택하려면
 
-1. 메뉴 모음에서 **도구** > **옵션**을 선택합니다.
+1. 메뉴 모음에서 **도구** >**옵션**을 차례로 선택합니다.
 
 1. **환경**을 확장한 다음 **시작**을 선택합니다.
 
 1. **시작 페이지 사용자 지정** 목록에서 원하는 페이지를 선택합니다.
 
-> [!NOTE]
-> 사용자 지정 시작 페이지에 오류가 있어 Visual Studio에 충돌이 발생하면 안전 모드에서 Visual Studio를 시작한 다음 기본 시작 페이지를 사용하도록 설정할 수 있습니다. [/SafeMode(devenv.exe)](../ide/reference/safemode-devenv-exe.md)를 참조하세요.
+> [!TIP]
+> 사용자 지정 시작 페이지에 오류가 있어 Visual Studio에 크래시가 발생하면 안전 모드로 Visual Studio를 열고 기본 시작 페이지를 사용하도록 설정할 수 있습니다. [/SafeMode(devenv.exe)](../ide/reference/safemode-devenv-exe.md)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
 - [Visual Studio IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)
+
+::: moniker-end

@@ -1,23 +1,20 @@
 ---
 title: 요소 도구 사용자 지정 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 6dac48b6-db68-4bcd-8aa2-422c2ad5d28b
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: cf2d48ee0ec4c8f2f9986f4655eb98b44583beef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 72457070c63cdf6c76207bd92521ab7944d4318a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220508"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199853"
 ---
 # <a name="customizing-element-tools"></a>요소 도구 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,8 +62,5 @@ public partial class CircuitDiagramToolboxHelper
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [요소 만들기 및 이동 사용자 지정](../modeling/customizing-element-creation-and-movement.md)
-
-
-

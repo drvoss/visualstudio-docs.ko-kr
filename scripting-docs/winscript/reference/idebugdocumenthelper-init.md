@@ -1,8 +1,7 @@
 ---
-title: IDebugDocumentHelper::Init | Microsoft Docs
+title: 'Idebugdocumenthelper:: Init | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 45cd57e4ba9e86bf84f927f487c637d61aa5339b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3b399f51fc042aa1ed297ab30a7bf2c9bc4befca
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000987"
 ---
 # <a name="idebugdocumenthelperinit"></a>IDebugDocumentHelper::Init
-`Init` 메서드 이름과 초기 특성으로 디버그 문서 도우미를 초기화 합니다.  
+`Init` 메서드 이름과 초기 특성을 사용 하 여 디버그 문서 도우미를 초기화 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT Init(  
    IDebugApplication*  pda,  
    LPCOLESTR           pszShortName,  
@@ -41,13 +40,13 @@ HRESULT Init(
   
 #### <a name="parameters"></a>매개 변수  
  `pda`  
- [in] 이 문서와 관련 된 디버그 응용 프로그램입니다.  
+ [in] 이 문서와 연결 된 디버그 응용 프로그램입니다.  
   
  `pszShortName`  
- [in] 문서의 짧은 이름이 포함 된 null로 끝나는 문자열입니다.  
+ [in] 문서의 짧은 이름을 포함 하는 null 종료 문자열입니다.  
   
  `pszLongName`  
- [in] 문서의 긴 이름을 포함 하는 null로 끝나는 문자열.  
+ [in] 문서의 긴 이름을 포함 하는 null 종료 문자열입니다.  
   
  `docAttr`  
  [in] 텍스트 문서 특성을 지정합니다.  
@@ -60,9 +59,9 @@ HRESULT Init(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 이름과 초기 특성으로 디버그 문서 도우미를 초기화합니다.  
+ 이 메서드 이름과 초기 특성을 사용 하 여 디버그 문서 도우미를 초기화합니다.  
   
- 이 문서 될 때까지 트리에 나타나지 않으면 `IDebugDocumentHelper::Attach` 호출 됩니다.  
+ 이 문서까지 트리에 나타나지 `IDebugDocumentHelper::Attach` 라고 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugDocumentHelper::Attach](../../winscript/reference/idebugdocumenthelper-attach.md)   

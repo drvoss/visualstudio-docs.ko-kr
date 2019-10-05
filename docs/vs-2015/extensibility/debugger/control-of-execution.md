@@ -1,26 +1,21 @@
 ---
 title: 실행 제어 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], control of execution
 ms.assetid: 97071846-007e-450f-95a6-f072d0f5e61e
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f4fe5259d49424fa1d46ea1ef33c0808dfc7b7be
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d3ce9f3fc810a1f2fd37166d4272b7c57c07927c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203275"
 ---
 # <a name="control-of-execution"></a>실행 제어
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -68,4 +63,3 @@ ms.locfileid: "51776371"
   
 ## <a name="see-also"></a>참고 항목  
  [디버깅 작업](../../extensibility/debugger/debugging-tasks.md)
-

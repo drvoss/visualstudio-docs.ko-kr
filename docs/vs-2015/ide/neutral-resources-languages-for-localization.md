@@ -1,14 +1,9 @@
 ---
 title: 지역화를 위한 중립 리소스 언어 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - localization [Visual Studio], resources
 - NeutralResourcesLanguageAttribute class
@@ -20,13 +15,13 @@ ms.assetid: ef064995-3b84-4698-a708-9689b7723533
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 45fadacc75b2772ba32d7cb0d796c972076b81ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: da39ed9373daaa1dbef21ad36931ce97ea1f1e1b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62558270"
 ---
 # <a name="neutral-resources-languages-for-localization"></a>지역화를 위한 중립 리소스 언어
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,8 +43,7 @@ ms.locfileid: "49256702"
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.Resources.ResourceManager>   
- [.NET Framework 기반의 국가별 응용 프로그램 소개](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)   
+ [.NET Framework 기반의 국가별 애플리케이션 소개](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)   
  [지역화를 위한 리소스의 계층적 구성](../ide/hierarchical-organization-of-resources-for-localization.md)   
- [응용 프로그램 지역화](../ide/localizing-applications.md)   
- [응용 프로그램 전역화 및 지역화](../ide/globalizing-and-localizing-applications.md)
-
+ [애플리케이션 지역화](../ide/localizing-applications.md)   
+ [애플리케이션 전역화 및 지역화](../ide/globalizing-and-localizing-applications.md)

@@ -1,31 +1,26 @@
 ---
 title: 만들기 및 관리 모달 대화 상자 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - dialog boxes, managing in Visual Studio
 ms.assetid: 491bc0de-7dba-478c-a76b-923440e090f3
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4ef32fa43a1242ce8220f9e6454dbac03f0f5ad7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 29b0066f201fbb791d471d5cfb433d9a335aa775
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736634"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431578"
 ---
 # <a name="creating-and-managing-modal-dialog-boxes"></a>모달 대화 상자 만들기 및 관리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 내에서 모달 대화 상자를 만들 때 대화 상자의 부모 창 대화 상자 표시 되는 동안 않도록은 다음 대화 상자를 닫은 후 다시 부모 창을 사용 하도록 설정 해야 합니다. 이렇게 하지 않으면 오류가 나타날 수 있습니다. "Microsoft Visual Studio 모달 대화 상자가 활성화 되어 있으므로를 종료할 수 없는 합니다. 활성 대화 상자를 닫고 다시 시도 하십시오. "  
+Visual Studio 내에서 모달 대화 상자를 만들 때 대화 상자의 부모 창 대화 상자 표시 되는 동안 않도록은 다음 대화 상자를 닫은 후 다시 부모 창을 사용 하도록 설정 해야 합니다. 이렇게 하지 않는 경우 오류가 나타날 수 있습니다. "Microsoft Visual Studio 모달 대화 상자가 활성화 되어 있으므로를 종료할 수 없는 합니다. 활성 대화 상자를 닫고 다시 시도 하십시오. "  
   
  이 작업을 수행 하는 방법은 두 가지가 있습니다. 파생 하는 WPF 대화 상자를 사용 하는 경우 권장 되는 방법은 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>를 호출한 다음 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.ShowModal%2A> 대화 상자를 표시 합니다. 이 작업을 수행 하는 경우 부모 창의 모달 상태를 관리할 필요가 없습니다.  
   
@@ -33,32 +28,32 @@ Visual Studio 내에서 모달 대화 상자를 만들 때 대화 상자의 부�
   
 ## <a name="creating-a-dialog-box-derived-from-dialogwindow"></a>DialogWindow에서 파생 된 대화 상자 만들기  
   
-1.  라는 VSIX 프로젝트를 만듭니다 **OpenDialogTest** 라는 메뉴 명령을 추가 하 고 **OpenDialog**합니다. 이 작업을 수행 하는 방법에 대 한 자세한 내용은 참조 하세요. [메뉴 명령을 사용 하 여 확장을 만드는](../extensibility/creating-an-extension-with-a-menu-command.md)합니다.  
+1. 라는 VSIX 프로젝트를 만듭니다 **OpenDialogTest** 라는 메뉴 명령을 추가 하 고 **OpenDialog**합니다. 이 작업을 수행 하는 방법에 대 한 자세한 내용은 참조 하세요. [메뉴 명령을 사용 하 여 확장을 만드는](../extensibility/creating-an-extension-with-a-menu-command.md)합니다.  
   
-2.  사용 하는 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> 클래스에 다음 어셈블리에 대 한 참조를 추가 해야 합니다 (프레임 워크 탭에서를 **참조 추가** 대화 상자):  
+2. 사용 하는 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> 클래스에 다음 어셈블리에 대 한 참조를 추가 해야 합니다 (프레임 워크 탭에서를 **참조 추가** 대화 상자):  
   
-    -   PresentationCore  
+    - PresentationCore  
   
-    -   PresentationFramework  
+    - PresentationFramework  
   
-    -   WindowsBase  
+    - WindowsBase  
   
-    -   System.Xaml  
+    - System.Xaml  
   
-3.  OpenDialog.cs에서 다음을 추가 `using` 문:  
+3. OpenDialog.cs에서 다음을 추가 `using` 문:  
   
     ```csharp  
     using Microsoft.VisualStudio.PlatformUI;  
     ```  
   
-4.  이라는 클래스를 선언 **TestDialogWindow** 에서 파생 되는 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>:  
+4. 이라는 클래스를 선언 **TestDialogWindow** 에서 파생 되는 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>:  
   
     ```csharp  
     class TestDialogWindow : DialogWindow  
     {. . .}  
     ```  
   
-5.  최소화 하 고 대화 상자를 최대화 하는 일을 할 수를 설정 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMaximizeButton%2A> 고 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMinimizeButton%2A> 로:  
+5. 최소화 하 고 대화 상자를 최대화 하는 일을 할 수를 설정 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMaximizeButton%2A> 고 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMinimizeButton%2A> 로:  
   
     ```csharp  
     internal TestDialogWindow()  
@@ -68,40 +63,40 @@ Visual Studio 내에서 모달 대화 상자를 만들 때 대화 상자의 부�
     }  
     ```  
   
-6.  에 **OpenDialog.ShowMessageBox** 메서드를 기존 코드를 다음으로 바꿉니다.  
+6. 에 **OpenDialog.ShowMessageBox** 메서드를 기존 코드를 다음으로 바꿉니다.  
   
     ```csharp  
     TestDialogWindow testDialog = new TestDialogWindow();  
     testDialog.ShowModal();  
     ```  
   
-7.  응용 프로그램을 빌드 및 실행합니다. Visual Studio의 실험적 인스턴스가 표시 됩니다. 에 **도구** 실험적 인스턴스의 메뉴 라는 명령이 표시 됩니다 **OpenDialog 호출**합니다. 이 명령은 클릭 하면 대화 상자 창이 표시 됩니다. 최소화 하 고 창을 최대화 수 있어야 합니다.  
+7. 애플리케이션을 빌드 및 실행합니다. Visual Studio의 실험적 인스턴스가 표시 됩니다. 에 **도구** 실험적 인스턴스의 메뉴 라는 명령이 표시 됩니다 **OpenDialog 호출**합니다. 이 명령은 클릭 하면 대화 상자 창이 표시 됩니다. 최소화 하 고 창을 최대화 수 있어야 합니다.  
   
 ## <a name="creating-and-managing-a-dialog-box-not-derived-from-dialogwindow"></a>만들기 및 관리 DialogWindow에서 파생 되지 않은 대화 상자  
   
-1.  이 절차를 따르면 합니다 **OpenDialogTest** 동일한 어셈블리 참조를 사용 하 여 이전 절차에서 만든 솔루션입니다.  
+1. 이 절차를 따르면 합니다 **OpenDialogTest** 동일한 어셈블리 참조를 사용 하 여 이전 절차에서 만든 솔루션입니다.  
   
-2.  다음 추가 `using` 선언 합니다.  
+2. 다음 추가 `using` 선언 합니다.  
   
     ```csharp  
     using System.Windows;  
     using Microsoft.Internal.VisualStudio.PlatformUI;  
     ```  
   
-3.  라는 클래스를 만듭니다 **TestDialogWindow2** 에서 파생 되는 <xref:System.Windows.Window>:  
+3. 라는 클래스를 만듭니다 **TestDialogWindow2** 에서 파생 되는 <xref:System.Windows.Window>:  
   
     ```csharp  
     class TestDialogWindow2 : Window  
     {. . .}  
     ```  
   
-4.  개인에 대 한 참조를 추가 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>:  
+4. 개인에 대 한 참조를 추가 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>:  
   
     ```  
     private IVsUIShell shell;  
     ```  
   
-5.  에 대 한 참조를 설정 하는 생성자를 추가 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>:  
+5. 에 대 한 참조를 설정 하는 생성자를 추가 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>:  
   
     ```csharp  
     public TestDialogWindow2(IVsUIShell uiShell)  
@@ -110,7 +105,7 @@ Visual Studio 내에서 모달 대화 상자를 만들 때 대화 상자의 부�
     }  
     ```  
   
-6.  에 **OpenDialog.ShowMessageBox** 메서드를 기존 코드를 다음으로 바꿉니다.  
+6. 에 **OpenDialog.ShowMessageBox** 메서드를 기존 코드를 다음으로 바꿉니다.  
   
     ```csharp  
     IVsUIShell uiShell = (IVsUIShell)ServiceProvider.GetService(typeof(SVsUIShell));  
@@ -132,5 +127,4 @@ Visual Studio 내에서 모달 대화 상자를 만들 때 대화 상자의 부�
     }  
     ```  
   
-7.  응용 프로그램을 빌드 및 실행합니다. 에 **도구가** 메뉴 라는 명령이 표시 됩니다 **OpenDialog 호출**합니다. 이 명령은 클릭 하면 대화 상자 창이 표시 됩니다.
-
+7. 애플리케이션을 빌드 및 실행합니다. 에 **도구가** 메뉴 라는 명령이 표시 됩니다 **OpenDialog 호출**합니다. 이 명령은 클릭 하면 대화 상자 창이 표시 됩니다.

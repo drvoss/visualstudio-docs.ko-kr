@@ -1,14 +1,9 @@
 ---
 title: '방법: CD 설치를 위한 자동 시작 사용 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: caaec619-900c-4790-90e3-8c91f5347635
 caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 2fde610731ca5ec315b94d2e46f58edb2a7b56fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c4bd14060517793d28e24818a051df63efb8f0e0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153778"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>방법: CD 설치를 위한 자동 시작 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,23 +33,20 @@ ms.locfileid: "49273145"
   
 ### <a name="to-enable-autostart"></a>자동 시작 기능을 사용 하도록 설정 하려면  
   
-1.  **솔루션 탐색기**에서 프로젝트를 선택한 상태에서 **프로젝트** 메뉴에서 **속성**을 클릭합니다.  
+1. **솔루션 탐색기**에서 프로젝트를 선택한 상태에서 **프로젝트** 메뉴에서 **속성**을 클릭합니다.  
   
-2.  클릭 합니다 **게시** 탭 합니다.  
+2. **게시** 탭을 클릭합니다.  
   
-3.  클릭 합니다 **옵션** 단추입니다.  
+3. **옵션** 단추를 클릭합니다.  
   
      합니다 **게시 옵션** 대화 상자가 나타납니다.  
   
-4.  클릭 **배포**합니다.  
+4. 클릭 **배포**합니다.  
   
-5.  선택 된 **CD 설치는 자동으로 설치를 시작 CD를 삽입 하면** 확인란 합니다.  
+5. 선택 된 **CD 설치는 자동으로 설치를 시작 CD를 삽입 하면** 확인란 합니다.  
   
      Autorun.inf 파일을 응용 프로그램을 게시할 때 게시 위치에 복사 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [ClickOnce 응용 프로그램 게시](../deployment/publishing-clickonce-applications.md)   
- [방법: 게시 마법사를 사용하여 ClickOnce 응용 프로그램 게시](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-
-
-
+ [방법: 게시 마법사를 사용하여 ClickOnce 애플리케이션 게시](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

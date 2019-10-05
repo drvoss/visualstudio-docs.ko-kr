@@ -1,8 +1,6 @@
 ---
 title: '방법: 프로젝트 종속성 만들기 및 제거'
 ms.date: 06/21/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - VS.ProjectDependenciesDlg
@@ -14,17 +12,18 @@ helpviewer_keywords:
 - dependencies, project
 - projects [Visual Studio], dependencies
 ms.assetid: e2a0a8ff-dae7-40a8-b774-b88aa5235183
-author: gewarren
-ms.author: gewarren
-manager: douge
+ms.technology: vs-ide-compile
+author: ghogen
+ms.author: ghogen
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7075f21f7927a87968dd573863402a71a40c3c4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ce26c74aced2dd979f9f9847d5c56ead30f897ce
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856017"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415602"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>방법: 프로젝트 종속성 만들기 및 제거
 
@@ -49,18 +48,18 @@ ms.locfileid: "49856017"
 
 ## <a name="to-remove-dependencies-from-projects"></a>프로젝트에서 종속성을 제거하려면
 
-1.  **솔루션 탐색기**에서 프로젝트를 선택합니다.
+1. **솔루션 탐색기**에서 프로젝트를 선택합니다.
 
-2.  **프로젝트** 메뉴에서 **프로젝트 종속성**을 선택합니다.
+2. **프로젝트** 메뉴에서 **프로젝트 종속성**을 선택합니다.
 
      **프로젝트 종속성** 대화 상자가 열립니다.
 
     > [!NOTE]
     > **프로젝트 종속성** 옵션은 프로젝트가 두 개 이상 포함된 솔루션에서만 사용할 수 있습니다.
 
-3.  **종속성** 탭의 **프로젝트** 드롭다운 메뉴에서 프로젝트를 선택합니다.
+3. **종속성** 탭의 **프로젝트** 드롭다운 메뉴에서 프로젝트를 선택합니다.
 
-4.  **다음에 종속** 필드에서 더 이상 이 프로젝트의 종속성이 아닌 모든 다른 프로젝트 옆의 확인란을 선택 취소합니다.
+4. **다음에 종속** 필드에서 더 이상 이 프로젝트의 종속성이 아닌 모든 다른 프로젝트 옆의 확인란을 선택 취소합니다.
 
 ## <a name="see-also"></a>참고 항목
 

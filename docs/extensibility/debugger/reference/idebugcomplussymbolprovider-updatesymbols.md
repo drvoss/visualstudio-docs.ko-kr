@@ -1,95 +1,98 @@
 ---
 title: IDebugComPlusSymbolProvider::UpdateSymbols | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - UpdateSymbols
 - IDebugComPlusSymbolProvider::UpdateSymbols
 ms.assetid: d530f6f1-4af2-454b-bab0-02478a8fe81e
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bad7f7d4d8127e814f4b89a8309ee59ca670553c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: def89659f49b25b09e777abf3df1d71db5506537
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53897789"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352766"
 ---
 # <a name="idebugcomplussymbolproviderupdatesymbols"></a>IDebugComPlusSymbolProvider::UpdateSymbols
-지정 된 데이터 스트림에서 메모리의 디버그 기호를 업데이트합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```cpp  
-HRESULT UpdateSymbols (  
-   ULONG32  ulAppDomainID,  
-   GUID     guidModule,  
-   IStream* pUpdateStream  
-);  
-```  
-  
-```csharp  
-int UpdateSymbols (  
-   uint    ulAppDomainID,  
-   Guid    guidModule,  
-   IStream pUpdateStream  
-);  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
- `ulAppDomainID`  
- [in] 응용 프로그램 도메인의 식별자입니다.  
-  
- `guidModule`  
- [in] 모듈의 고유 식별자입니다.  
-  
- `pUpdateStream`  
- [in] 업데이트 된 디버그 기호를 포함 하는 데이터 스트림.  
-  
-## <a name="example"></a>예제  
- 다음 예제에서는이 메서드를 구현 하는 방법을 보여 줍니다는 **CDebugSymbolProvider** 노출 하는 개체를 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스입니다.  
-  
-```cpp  
-HRESULT CDebugSymbolProvider::UpdateSymbols(  
-    ULONG32 ulAppDomainID,  
-    GUID guidModule,  
-    IStream* pUpdateStream  
-)  
-{  
-    ASSERT(!"Use UpdateSymbols2 on IDebugENCSymbolProvider2");  
-    return E_NOTIMPL;  
-}  
-  
-HRESULT CDebugSymbolProvider::UpdateSymbols2(  
-    ULONG32 ulAppDomainID,  
-    GUID guidModule,  
-    IStream* pUpdateStream,  
-    LINEDELTA* pDeltaLines,  
-    ULONG cDeltaLines  
-)  
-{  
-    HRESULT hr = S_OK;  
-    CComPtr<CModule> pModule;  
-    Module_ID idModule(ulAppDomainID, guidModule);  
-  
-    METHOD_ENTRY( CDebugSymbolProvider::UpdateSymbols );  
-  
-    IfFailGo( GetModule( idModule, &pModule ) );  
-    IfFailGo( pModule->UpdateSymbols( pUpdateStream, pDeltaLines, cDeltaLines ) );  
-  
-Error:  
-  
-    METHOD_EXIT( CDebugSymbolProvider::UpdateSymbols, hr );  
-  
-    return hr;  
-}  
-```  
-  
-## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+지정 된 데이터 스트림에서 메모리의 디버그 기호를 업데이트합니다.
+
+## <a name="syntax"></a>구문
+
+```cpp
+HRESULT UpdateSymbols (
+    ULONG32  ulAppDomainID,
+    GUID     guidModule,
+    IStream* pUpdateStream
+);
+```
+
+```csharp
+int UpdateSymbols (
+    uint    ulAppDomainID,
+    Guid    guidModule,
+    IStream pUpdateStream
+);
+```
+
+## <a name="parameters"></a>매개 변수
+`ulAppDomainID`\
+[in] 응용 프로그램 도메인의 식별자입니다.
+
+`guidModule`\
+[in] 모듈의 고유 식별자입니다.
+
+`pUpdateStream`\
+[in] 업데이트 된 디버그 기호를 포함 하는 데이터 스트림.
+
+## <a name="example"></a>예제
+다음 예제에서는이 메서드를 구현 하는 방법을 보여 줍니다는 **CDebugSymbolProvider** 노출 하는 개체를 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 인터페이스입니다.
+
+```cpp
+HRESULT CDebugSymbolProvider::UpdateSymbols(
+    ULONG32 ulAppDomainID,
+    GUID guidModule,
+    IStream* pUpdateStream
+)
+{
+    ASSERT(!"Use UpdateSymbols2 on IDebugENCSymbolProvider2");
+    return E_NOTIMPL;
+}
+
+HRESULT CDebugSymbolProvider::UpdateSymbols2(
+    ULONG32 ulAppDomainID,
+    GUID guidModule,
+    IStream* pUpdateStream,
+    LINEDELTA* pDeltaLines,
+    ULONG cDeltaLines
+)
+{
+    HRESULT hr = S_OK;
+    CComPtr<CModule> pModule;
+    Module_ID idModule(ulAppDomainID, guidModule);
+
+    METHOD_ENTRY( CDebugSymbolProvider::UpdateSymbols );
+
+    IfFailGo( GetModule( idModule, &pModule ) );
+    IfFailGo( pModule->UpdateSymbols( pUpdateStream, pDeltaLines, cDeltaLines ) );
+
+Error:
+
+    METHOD_EXIT( CDebugSymbolProvider::UpdateSymbols, hr );
+
+    return hr;
+}
+```
+
+## <a name="return-value"></a>반환 값
+성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+
+## <a name="see-also"></a>참고자료
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

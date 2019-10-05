@@ -1,26 +1,21 @@
 ---
 title: 지원 되는 이벤트 유형 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], supported events
 ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: dd6f8f5b7c2782bb908538426cb531db216b72fb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f671e8d0128bee2c52dc1191b33edb889c92d2e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446448"
 ---
 # <a name="supported-event-types"></a>지원되는 이벤트 형식
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ ms.locfileid: "51781467"
     인터페이스 [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) 하 고 [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) 은 중지 이벤트의 예입니다.  
   
   > [!NOTE]
-  >  비동기 중지 이벤트 지원 되지 않습니다. 만들어질 비동기 중지 이벤트를 전송 하려면 오류가 발생 합니다.  
+  > 비동기 중지 이벤트 지원 되지 않습니다. 만들어질 비동기 중지 이벤트를 전송 하려면 오류가 발생 합니다.  
   
 ## <a name="discussion"></a>토론  
  이벤트의 실제 구현에 독일의 디자인에 따라 달라 집니다. 전송 된 각 이벤트의 종류는 DE를 디자인할 때 설정 되는 해당 특성에 의해 결정 됩니다. 예를 들어, 하나의 DE 보낼 수 있습니다는 [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) 중지 이벤트로 보낼 수 있습니다 다른 동안 비동기 이벤트입니다.  
@@ -58,7 +53,7 @@ ms.locfileid: "51781467"
  다음 표에서 프로그램 및 스레드 매개 변수는 이벤트 유형 뿐만 아니라는 이벤트에 대 한 필요를 지정 합니다. 모든 이벤트를 동기적 일 수 있습니다. 이벤트가 없습니다 동기 해야 합니다.  
   
 > [!NOTE]
->  합니다 [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) 인터페이스는 모든 이벤트에 대 한 필요 합니다.  
+> 합니다 [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) 인터페이스는 모든 이벤트에 대 한 필요 합니다.  
   
 |이벤트(event)|IDebugProgram2|IDebugThread2|이벤트를 중지합니다.|  
 |-----------|--------------------|-------------------|---------------------|  
@@ -69,8 +64,8 @@ ms.locfileid: "51781467"
 |[IDebugBreakpointUnboundEvent2](../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)|하지만 필수가 아닌 허용|하지만 필수가 아닌 허용|아니요|  
 |[IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)|필수|필수|예|  
 |[IDebugCanStopEvent2](../../extensibility/debugger/reference/idebugcanstopevent2.md)|필수|필수|아니요|  
-|[IDebugDocumentTextEvents2](../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|허용 되지 않음|허용 되지 않음|아니요|  
-|[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)|허용 되지 않음|허용 되지 않음|아니요|  
+|[IDebugDocumentTextEvents2](../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|허용되지 않음|허용되지 않음|아니요|  
+|[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)|허용되지 않음|허용되지 않음|아니요|  
 |[IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md)|필수|필수|예|  
 |[IDebugErrorEvent2](../../extensibility/debugger/reference/idebugerrorevent2.md)|하지만 필수가 아닌 허용|하지만 필수가 아닌 허용|가능 여부|  
 |[IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)|필수|필수|예|  
@@ -94,4 +89,3 @@ ms.locfileid: "51781467"
   
 ## <a name="see-also"></a>참고 항목  
  [이벤트 보내기](../../extensibility/debugger/sending-events.md)
-

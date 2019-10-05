@@ -2,7 +2,6 @@
 title: IScriptScriptlet::SetEventName | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 244888d49e1e9a84b8865e9c86a845617af6a5d9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a6bfa0bd69673ec8bbfc65f7f171dfbb933c7a68
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786726"
 ---
 # <a name="iscriptscriptletseteventname"></a>IScriptScriptlet::SetEventName
-스크립틀릿와 연결 된 이벤트의 이름을 설정 합니다.  
+Scriptlet과 연결 된 이벤트의 이름을 설정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT SetEventName(  
    LPCOLESTR          psz  
 );  
@@ -38,7 +37,7 @@ HRESULT SetEventName(
   
 #### <a name="parameters"></a>매개 변수  
  `psz`  
- [in] 연결 된 이벤트 이름을 포함 하는 버퍼의 `IScriptScriptlet` 개체입니다.  
+ [in] 연결 된 이벤트 이름을 포함 하는 버퍼를 `IScriptScriptlet` 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
  `HRESULT`입니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  

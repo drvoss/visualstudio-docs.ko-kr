@@ -1,10 +1,8 @@
 ---
 title: 지시 파일을 사용하여 설치 자동화
 description: Visual Studio 설치를 자동화하는 데 도움이 되는 JSON 지시 파일을 만드는 방법을 알아봅니다.
-ms.date: 08/14/2017
-ms.technology: vs-acquisition
+ms.date: 03/30/2019
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - response file
@@ -13,15 +11,17 @@ helpviewer_keywords:
 - command-line
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30e7af50259a2087a0a380b1fe2d0c96c0d83f9a
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: eb822a275f55b8c0f833f0c284aba2fd663a27fd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53158777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974451"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>지시 파일에서 설정을 정의하는 방법
 
@@ -50,6 +50,8 @@ Visual Studio 설치 프로그램을 레이아웃 폴더에서 실행하면 _자
 
 레이아웃의 기본 `response.json` 파일은 다음 예제와 유사하며, 여기에 설치할 제품 및 채널에 대한 값이 더 포함됩니다.
 
+::: moniker range="vs-2017"
+
 ```json
 {
   "installChannelUri": ".\\ChannelManifest.json",
@@ -60,11 +62,29 @@ Visual Studio 설치 프로그램을 레이아웃 폴더에서 실행하면 _자
 }
 ```
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+```json
+{
+  "installChannelUri": ".\\ChannelManifest.json",
+  "channelUri": "https://aka.ms/vs/16/release/channel",
+  "installCatalogUri": ".\\Catalog.json",
+  "channelId": "VisualStudio.16.Release",
+  "productId": "Microsoft.VisualStudio.Product.Enterprise"
+}
+```
+
+::: moniker-end
+
 레이아웃을 만들거나 업데이트하면 response.template.json 파일도 만들어집니다.  이 파일에는 사용할 수 있는 모든 워크로드, 구성 요소 및 언어 ID가 포함됩니다.  이 파일은 사용자 지정 설치에 포함할 수 있는 모든 항목에 대한 템플릿으로 제공됩니다.  관리자는 이 파일을 사용자 지정 지시 파일을 만들기 위한 기준으로 삼을 수 있습니다.  설치하지 않을 항목에 대한 ID를 제거하고 고유한 지시 파일로 저장하면 됩니다.  response.template.json 파일의 경우 레이아웃이 업데이트되면 변경 내용이 손실되므로 사용자 지정하지 마세요.
 
 ## <a name="example-layout-response-file-content"></a>레이아웃 지시 파일 콘텐츠의 예
 
 다음 예제에서는 6개의 일반 워크로드 및 구성 요소가 포함되고 영어 및 프랑스어 UI 언어가 모두 포함된 Visual Studio Enterprise를 설치합니다. 이 예제를 템플릿으로 사용할 수 있고, 이 경우 워크로드 및 구성 요소를 설치할 항목으로 변경하면 됩니다.
+
+::: moniker range="vs-2017"
 
 ```json
 {
@@ -97,8 +117,45 @@ Visual Studio 설치 프로그램을 레이아웃 폴더에서 실행하면 _자
 }
 ```
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+```json
+{
+  "installChannelUri": ".\\ChannelManifest.json",
+  "channelUri": "https://aka.ms/vs/16/release/channel",
+  "installCatalogUri": ".\\Catalog.json",
+  "channelId": "VisualStudio.16.Release",
+  "productId": "Microsoft.VisualStudio.Product.Enterprise",
+
+  "installPath": "C:\\VS2019",
+  "quiet": false,
+  "passive": false,
+  "includeRecommended": true,
+  "norestart": false,
+
+  "addProductLang": [
+    "en-US",
+    "fr-FR"
+    ],
+
+    "add": [
+        "Microsoft.VisualStudio.Workload.ManagedDesktop",
+        "Microsoft.VisualStudio.Workload.Data",
+        "Microsoft.VisualStudio.Workload.NativeDesktop",
+        "Microsoft.VisualStudio.Workload.NetWeb",
+        "Microsoft.VisualStudio.Workload.Office",
+        "Microsoft.VisualStudio.Workload.Universal",
+        "Component.GitHub.VisualStudio"
+    ]
+}
+```
+
+::: moniker-end
+
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>참고 항목
 
-* [Visual Studio 2017 워크로드 및 구성 요소 ID](workload-and-component-ids.md)
+* [Visual Studio 작업 및 구성 요소 ID](workload-and-component-ids.md)

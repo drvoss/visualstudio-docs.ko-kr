@@ -1,11 +1,8 @@
 ---
 title: 워크플로 디자이너의 바로 가기 키 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - WFDKeyboardShortcuts.UI
@@ -13,19 +10,19 @@ ms.assetid: 9be75438-a4a3-4781-94e5-45b7ec082358
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 409a39dc889970ee7ad0eff3354fa43de15b7dbe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: b1a03463d292fa1d4d980c62daa74b291d6a8cb1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951959"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>워크플로 디자이너의 바로 가기 키
 키보드를 사용하여 [!INCLUDE[wfd1](../includes/wfd1-md.md)]의 모든 핵심 기능에 액세스할 수 있습니다.  
   
-## <a name="navigating-the-workflow-designer-using-the-keyboard"></a>키보드를 사용하여 Workflow Designer 탐색  
- [!INCLUDE[vs2010](../includes/vs2010-md.md)]에서는 [!INCLUDE[wfd2](../includes/wfd2-md.md)]에 전역 바로 가기와 디버깅 바로 가기가 적용됩니다. 또한 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 고유의 바로 가기 키도 여러 가지가 있습니다. [!INCLUDE[vs2010](../includes/vs2010-md.md)]에서 모든 바로 가기 키를 다시 매핑할 수 있습니다. 하지만 다시 호스트된 응용 프로그램에는 이러한 바로 가기 키가 하드 코딩되어 있습니다.  
+## <a name="navigating-the-workflow-designer-using-the-keyboard"></a>키보드를 사용하여 워크플로 디자이너 탐색  
+ [!INCLUDE[vs2010](../includes/vs2010-md.md)]에서는 [!INCLUDE[wfd2](../includes/wfd2-md.md)]에 전역 바로 가기와 디버깅 바로 가기가 적용됩니다. 또한 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 고유의 바로 가기 키도 여러 가지가 있습니다. [!INCLUDE[vs2010](../includes/vs2010-md.md)]에서 모든 바로 가기 키를 다시 매핑할 수 있습니다. 하지만 다시 호스트된 애플리케이션에는 이러한 바로 가기 키가 하드 코딩되어 있습니다.  
   
 ### <a name="workflow-designer-keyboard-shortcuts"></a>Workflow Designer 바로 가기 키  
  다음 표에는 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 명령에 할당된 기본 바로 가기 키가 요약되어 있습니다.  
@@ -57,13 +54,13 @@ ms.locfileid: "49895342"
   
 - 활동을 연결하려면  
   
-  1.  소스 활동으로 이동하여 해당 활동을 선택합니다.  
+  1. 소스 활동으로 이동하여 해당 활동을 선택합니다.  
   
-  2.  Ctrl+E, M을 여러 번 눌러 키보드 포커스를 대상 활동으로 옮깁니다.  
+  2. Ctrl+E, M을 여러 번 눌러 키보드 포커스를 대상 활동으로 옮깁니다.  
   
-  3.  Ctrl+E, S를 눌러 대상 활동을 선택 항목에 추가합니다.  
+  3. Ctrl+E, S를 눌러 대상 활동을 선택 항목에 추가합니다.  
   
-  4.  Ctrl+E, F를 눌러 소스의 커넥터를 대상에 추가합니다.  
+  4. Ctrl+E, F를 눌러 소스의 커넥터를 대상에 추가합니다.  
   
   키보드로 활동을 연결하는 방법에 대한 참고 사항은 다음과 같습니다.  
   
@@ -76,18 +73,18 @@ ms.locfileid: "49895342"
 ### <a name="expression-editing"></a>식 편집  
  기본적으로 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]의 식 편집기에는 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 텍스트 편집을 위한 기본 바로 가기 키가 적용되며 다음과 같은 제한 사항이 있습니다.  
   
--   다음 명령에 대한 바로 가기 키를 다시 매핑할 수 없습니다. 식을 편집할 때 이러한 명령에 액세스하기 위해서는 기본 바로 가기 키만 사용할 수 있습니다.  
+- 다음 명령에 대한 바로 가기 키를 다시 매핑할 수 없습니다. 식을 편집할 때 이러한 명령에 액세스하기 위해서는 기본 바로 가기 키만 사용할 수 있습니다.  
   
-    1.  잘라내기  
+    1. 잘라내기  
   
-    2.  복사  
+    2. 복사  
   
-    3.  붙여넣기  
+    3. 붙여넣기  
   
-    4.  모두 선택  
+    4. 모두 선택  
   
-    5.  실행 취소  
+    5. 실행 취소  
   
-    6.  다시 실행  
+    6. 다시 실행  
   
--   [!INCLUDE[wfd2](../includes/wfd2-md.md)]의 [!INCLUDE[vs2010](../includes/vs2010-md.md)]에서 식 편집 명령에 대한 바로 가기 키를 다시 매핑하려면 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 범위에서 바로 가기를 편집합니다. 텍스트 편집기 범위에서 변경한 내용이 [!INCLUDE[wfd2](../includes/wfd2-md.md)]에 자동으로 적용되지는 않습니다. 따라서 양쪽 모두에서 바로 가기를 다시 매핑하려면 범위마다 한 번씩 변경을 두 번 적용해야 합니다.
+- [!INCLUDE[wfd2](../includes/wfd2-md.md)]의 [!INCLUDE[vs2010](../includes/vs2010-md.md)]에서 식 편집 명령에 대한 바로 가기 키를 다시 매핑하려면 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 범위에서 바로 가기를 편집합니다. 텍스트 편집기 범위에서 변경한 내용이 [!INCLUDE[wfd2](../includes/wfd2-md.md)]에 자동으로 적용되지는 않습니다. 따라서 양쪽 모두에서 바로 가기를 다시 매핑하려면 범위마다 한 번씩 변경을 두 번 적용해야 합니다.

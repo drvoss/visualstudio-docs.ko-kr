@@ -5,17 +5,15 @@ ms.topic: reference
 ms.assetid: 3794e88b-4d3d-4e7a-ade6-8208eabe3eae
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fd679e9275aedc8db9f65864a240e1c12e4faffc
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 1b9f10c171d8369adfe460424b9b6abe047b1a24
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089466"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458253"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>선택한 데이터베이스 개체 중 하나 이상이 대상 클래스의 스키마와 일치하지 않는 스키마를 반환합니다.
 
@@ -25,11 +23,10 @@ ms.locfileid: "37089466"
 
 ## <a name="to-correct-this-error"></a>이 오류를 해결하려면
 
-1. 클릭 **확인** 대화 상자를 닫습니다.
+1. **확인**을 클릭하여 대화 상자를 닫습니다.
 
-2. 대상 클래스의 스키마와 일치 하는 데이터를 반환 하는 데이터베이스 개체 선택 (데이터베이스 개체를 끌어 놓는에서 클래스를 **O/R 디자이너**).
+2. **O/R 디자이너**에서 데이터베이스 개체를 끌어 놓는 대상 클래스의 스키마와 일치하는 데이터를 반환하는 데이터베이스 개체를 선택합니다.
 
 ## <a name="see-also"></a>참고자료
 
-- [O/R 디자이너 메시지](../data-tools/o-r-designer-messages.md)
-- [Visual Studio에서 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

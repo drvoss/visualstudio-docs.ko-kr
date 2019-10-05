@@ -1,14 +1,9 @@
 ---
 title: ProjectSubType 요소 (Visual Studio 템플릿) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectSubType
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: f6895cd4-3e95-4f0e-aa9e-8c7750f46ed4
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bfc64d4f5a1de6223178321eecb3050478ed9960
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d07a62027b494242d3c25aba00fbd5f4d75df78b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193916"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType 요소(Visual Studio 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51807766"
   
  \<VSTemplate>  
  \<TemplateData>  
- \<ProjectSubType >  
+ \<ProjectSubType>  
   
 ## <a name="syntax"></a>구문  
   
@@ -71,9 +66,9 @@ ms.locfileid: "51807766"
   
   템플릿을 포함 하는 경우는 `ProjectType` 의 값을 가진 요소가 `Web`, `ProjectSubType` 요소 서식 파일의 프로그래밍 언어를 지정 합니다. 이 요소는 다음 값을 가질 수 있습니다.  
   
-- `CSharp`: 템플릿이 만들도록 지정을 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 웹 프로젝트 또는 항목입니다.  
+- `CSharp`: 서식 파일을 만들도록 지정을 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 웹 프로젝트 또는 항목입니다.  
   
-- `VisualBasic`: 템플릿이 만들도록 지정을 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 웹 프로젝트 또는 항목입니다.  
+- `VisualBasic`: 서식 파일을 만들도록 지정을 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 웹 프로젝트 또는 항목입니다.  
   
 ## <a name="example"></a>예제  
  다음 예제에서는 프로젝트 템플릿에 대 한 메타 데이터를 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 장치 응용 프로그램을 대상으로 하는 [!INCLUDE[Compact](../includes/compact-md.md)] 버전 2.0입니다.  
@@ -107,4 +102,3 @@ ms.locfileid: "51807766"
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
  [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)   
  [ProjectType 요소(Visual Studio 템플릿)](../extensibility/projecttype-element-visual-studio-templates.md)
-

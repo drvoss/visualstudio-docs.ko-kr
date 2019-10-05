@@ -1,28 +1,27 @@
 ---
 title: Boost.Test for C++를 사용하는 방법
-ms.date: 01/29/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
+description: Boost.Test를 사용하여 Visual Studio에서 단위 테스트를 만듭니다.
+ms.date: 05/06/2019
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65ee2d95d85c657057f7ef4494c19f8b5644513e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: cf962ec4ecade1bb88d9e301d62eb6ab8a5131cf
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063249"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226094"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Visual Studio에서 Boost.Test for C++를 사용하는 방법
 
-**Visual Studio 2017 버전 15.5** 이상에서 Boost.Test 테스트 어댑터는 **C++로 데스크톱 개발** 워크로드의 구성 요소로 Visual Studio IDE에 통합되어 있습니다.
+Visual Studio 2017 이상에서는 Boost.Test 테스트 어댑터가 **C++를 사용한 데스크톱 개발** 워크로드의 구성 요소로 Visual Studio IDE에 통합되어 있습니다.
 
 ![Test Adapter for Boost.Test](media/cpp-boost-component.png)
 
-**C++를 사용한 데스크톱 개발** 워크로드가 설치되지 않은 경우 **Visual Studio 설치 관리자**를 열고 **수정**을 선택합니다. **C++를 사용한 데스크톱 개발** 워크로드를 선택한 다음 **수정** 단추를 선택합니다.
+**C++를 사용한 데스크톱 개발** 워크로드가 설치되지 않은 경우 **Visual Studio 설치 관리자**를 엽니다. **C++를 사용한 데스크톱 개발** 워크로드를 선택한 다음 **수정** 단추를 선택합니다.
 
 ## <a name="install-boost"></a>Boost를 설치합니다.
 
@@ -50,13 +49,13 @@ Boost.Test에는 [Boost](http://www.boost.org/)가 필요합니다! Boost가 설
 
 항목 템플릿은 Boost.Test의 단일 헤더 변형을 사용하지만 독립 실행형 라이브러리 변형을 사용하도록 #include 경로를 수정할 수 있습니다. 자세한 내용은 [include 지시문 추가](#add-include-directives)를 참조하세요.
 
-## <a name="create-a-test-project-visual-studio-2017-version-155"></a>테스트 프로젝트를 만듭니다(Visual Studio 2017 버전 15.5).
+## <a name="create-a-test-project"></a>테스트 프로젝트 만들기
 
-Visual Studio 2017 버전 15.5에서는 미리 구성된 테스트 프로젝트 또는 항목 템플릿을 Boost.Test에 사용할 수 없습니다. 따라서 테스트를 포함할 콘솔 응용 프로그램 프로젝트를 만들고 구성해야 합니다.
+Visual Studio 2017 버전 15.5에서는 미리 구성된 테스트 프로젝트 또는 항목 템플릿을 Boost.Test에 사용할 수 없습니다. 따라서 테스트를 포함할 콘솔 애플리케이션 프로젝트를 만들고 구성해야 합니다.
 
 1. **솔루션 탐색기**에서 솔루션 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **새 프로젝트**를 차례로 선택합니다.
 
-1. 왼쪽 창에서 **Visual C++** > **Windows 데스크톱**을 선택한 다음 **Windows 콘솔 응용 프로그램** 템플릿을 선택합니다.
+1. 왼쪽 창에서 **Visual C++** > **Windows 데스크톱**을 선택한 다음 **Windows 콘솔 애플리케이션** 템플릿을 선택합니다.
 
 1. 프로젝트 이름을 지정하고 **확인**을 선택합니다.
 
@@ -75,6 +74,7 @@ Visual Studio 2017 버전 15.5에서는 미리 구성된 테스트 프로젝트 
         <VcpkgEnabled>true</VcpkgEnabled>
     </PropertyGroup>
     ```
+
    c. *\*.vcxproj* 파일을 저장하고 닫은 다음, 프로젝트를 다시 로드합니다.
 
    d. **속성 페이지**를 열려면 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.

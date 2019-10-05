@@ -1,8 +1,6 @@
 ---
-title: 문 실행 명령
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+title: EvaluateStatement
+ms.date: 02/25/2019
 ms.topic: reference
 f1_keywords:
 - debug.evaluatestatement
@@ -12,51 +10,36 @@ helpviewer_keywords:
 ms.assetid: 032039bc-9477-4f93-9b9d-66d4be0e90f4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f713cd511225e03ec50c2cbe699c40bd704faa20
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: c7eff96d1b413ea10b1274eb7d7938148727acbc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790878"
 ---
 # <a name="evaluate-statement-command"></a>문 실행 명령
+
 지정된 문을 평가 및 표시합니다.
 
 ## <a name="syntax"></a>구문
 
 ```cmd
-Debug.EvaluateStatement text
+>Debug.EvaluateStatement text
 ```
 
 ## <a name="arguments"></a>인수
- `text` 필수입니다. 평가할 문입니다.
 
-## <a name="remarks"></a>설명
- **EvaluateStatement** 명령을 입력하는 데 사용되는 창에서는 같음 기호(=)를 비교 연산자 또는 대입 연산자로 해석할지 결정합니다.
+`text`
 
- **명령** 창에서 같음 기호(=)는 비교 연산자로 해석됩니다. 따라서 예를 들면 `a` 및 `b` 변수 값이 다른 경우
+필수 요소. 평가할 문입니다.
 
-```cmd
->Debug.EvaluateStatement(a=b)
-```
-
- 명령은 `false` 값을 반환합니다.
-
- 이와 달리 **직접 실행** 창에서는 같음 기호(=)가 대입 연산자로 해석됩니다. 따라서 예를 들면
+## <a name="example"></a>예제
 
 ```cmd
->Debug.EvaluateStatement(a=b)
-```
-
- 명령은 `a` 변수에 `b` 변수의 값을 할당합니다.
-
-## <a name="example"></a>예
-
-```cmd
->Debug.EvaluateStatement(a+b)
+>Debug.EvaluateStatement args.Length
 ```
 
 ## <a name="see-also"></a>참고 항목
@@ -65,4 +48,4 @@ Debug.EvaluateStatement text
 - [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)
 - [명령 창](../../ide/reference/command-window.md)
 - [찾기/명령 상자](../../ide/find-command-box.md)
-- [Visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,30 +1,24 @@
 ---
 title: XML 편집기 IntelliSense 기능 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4dbb96ffcca47303a90b1ff4c71643a63f6b4aa5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9c691eea7417e882ee3b73e9f2adc538714b486a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158564"
 ---
 # <a name="xml-editor-intellisense-features"></a>XML 편집기 IntelliSense 기능
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML 편집기에서는 Visual Studio에서 제공하는 다른 언어 편집기에 버금가는 완전한 IntelliSense 기능을 제공합니다. 이 단원에서는 XSD(XML 스키마 정의 언어) 및 XSLT 문서와 함께 IntelliSense를 사용하는 방법에 대해 설명합니다.  
   
 ## <a name="intellisense-in-an-xsd-document"></a>XSD 문서의 IntelliSense  
@@ -91,19 +85,19 @@ XML 편집기에서는 Visual Studio에서 제공하는 다른 언어 편집기�
   
  XML 편집기에서는 다음 항목에 대해 이 작업을 수행합니다.  
   
--   일치하는 시작 태그와 끝 태그  
+- 일치하는 시작 태그와 끝 태그  
   
--   쌍 "\<" 또는 ">" 꺾쇠 괄호입니다.  
+- 쌍 "\<" 또는 ">" 꺾쇠 괄호입니다.  
   
--   주석의 시작과 끝  
+- 주석의 시작과 끝  
   
--   처리 명령의 시작과 끝  
+- 처리 명령의 시작과 끝  
   
--   CDATA 블록의 시작과 끝  
+- CDATA 블록의 시작과 끝  
   
--   DTD 선언의 시작과 끝  
+- DTD 선언의 시작과 끝  
   
--   특성의 여는 따옴표와 닫는 따옴표  
+- 특성의 여는 따옴표와 닫는 따옴표  
   
 ## <a name="modifying-the-intellisense-options"></a>IntelliSense 옵션 수정  
  IntelliSense 및 자동 완성 기능은 기본적으로 활성화되어 있습니다. 그러나 도구-옵션 설정을 수정하여 이를 변경할 수 있습니다.  
@@ -118,16 +112,13 @@ XML 편집기에서는 Visual Studio에서 제공하는 다른 언어 편집기�
   
 #### <a name="to-change-the-auto-completion-behavior"></a>자동 완성 동작을 변경하려면  
   
-1.  **도구** 메뉴에서 **옵션**을 선택합니다.  
+1. **도구** 메뉴에서 **옵션**을 선택합니다.  
   
-2.  확장 **텍스트 편집기**를 확장 하 고 **XML**를 선택 하 고 **기타**.  
+2. 확장 **텍스트 편집기**를 확장 하 고 **XML**를 선택 하 고 **기타**.  
   
-3.  아무 것도 변경 합니다 **자동 삽입** 섹션을 클릭 **확인**합니다.  
+3. 아무 것도 변경 합니다 **자동 삽입** 섹션을 클릭 **확인**합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [XML 편집기](../xml-tools/xml-editor.md)   
  [IntelliSense 사용](../ide/using-intellisense.md)   
  [연습: XSLT IntelliSense 사용](../xml-tools/walkthrough-using-xslt-intellisense.md)
-
-
-

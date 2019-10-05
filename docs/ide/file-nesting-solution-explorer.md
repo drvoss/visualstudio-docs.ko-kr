@@ -2,24 +2,22 @@
 title: 솔루션 탐색기의 파일 중첩 규칙
 ms.date: 05/25/2018
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 helpviewer_keywords:
 - file nesting
 - Solution Explorer, file nesting
 author: angelosp
 ms.author: angelpe
-manager: douge
-ms.openlocfilehash: d50d16d23c2f12ac5ac9feaaa37ee3797802c97e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a36ca2535785f72756ad66a69c2ebe4d7d5a373b
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928700"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67587021"
 ---
-# <a name="customize-file-nesting-in-solution-explorer"></a>솔루션 탐색기에서 파일 중첩 사용자 지정
+# <a name="file-nesting-in-solution-explorer"></a>솔루션 탐색기에서 파일 중첩
 
-**솔루션 탐색기**에서 관련 파일을 중첩하는 것은 새로운 방법이 아니지만, 지금까지는 중첩 규칙을 제어할 수 없었습니다. 사전 설정 **끄기**, **기본값** 및 **웹** 중에서 선택할 수 있지만, 원하는 대로 정확하게 중첩을 사용자 지정할 수도 있습니다. 솔루션별 설정 및 프로젝트별 설정을 만들 수도 있지만 나중에 모든 설정을 추가로 생성할 수 있습니다. 먼저 기본적으로 제공되는 기능을 살펴보겠습니다.
+**솔루션 탐색기**는 관련 파일들을 중첩시켜 보다 쉽게 찾고 정리할 수 있도록 합니다. 예를 들어 Windows Forms 양식을 프로젝트에 추가하면 양식의 코드 파일이 **솔루션 탐색기**의 양식 아래에 중첩됩니다. ASP.NET Core 프로젝트에서는 파일 중첩을 한 단계 더 수행할 수 있습니다. 파일 중첩 미리 설정을 **끄기**, **기본값**, **웹** 중에서 선택할 수 있습니다. [새 파일의 중첩 방식을 사용자 지정](#customize-file-nesting)하거나 [솔루션별 설정 및 프로젝트별 설정을 만들 수도 있습니다](#create-project-specific-settings).
 
 > [!NOTE]
 > 이 기능은 현재 ASP.NET Core 프로젝트에만 지원됩니다.
@@ -50,7 +48,7 @@ ms.locfileid: "49928700"
 
 노드 **dependentFileProviders**와 그 자식 노드를 중점적으로 살펴보겠습니다. 각 자식 노드는 Visual Studio에서 파일을 중첩하는 데 사용할 수 있는 규칙 형식입니다. 예를 들어 **파일 이름은 동일하지만 확장명이 다름**은 하나의 규칙 형식입니다. 사용 가능한 규칙은 다음과 같습니다.
 
-* **extensionToExtension**: *file.ts* 아래에 *file.js*를 중첩하려면 이 규칙 형식을 사용합니다.
+* **extensionToExtension**: *file.js* 아래에 *file.js*를 중첩하려면 이 규칙 형식을 사용합니다.
 
 * **fileSuffixToExtension**: *file.js* 아래에 *file-vsdoc.js*를 중첩하려면 이 규칙 형식을 사용합니다.
 
@@ -58,7 +56,7 @@ ms.locfileid: "49928700"
 
 * **pathSegment**: *jquery.js* 아래에 *jquery.min.js*를 중첩하려면 이 규칙 형식을 사용합니다.
 
-* **allExtensions**: *file.js* 아래에 *file.**를 중첩하려면 이 규칙 형식을 사용합니다.
+* **allExtensions**: *file.js* 아래에 *file.* *를 중첩하려면 이 규칙 형식을 사용합니다.
 
 * **fileToFile**: *.bowerrc* 아래에 *bower.json*을 중첩하려면 이 규칙 형식을 사용합니다.
 
@@ -88,19 +86,43 @@ ms.locfileid: "49928700"
 
 ### <a name="the-addedextension-provider"></a>addedExtension 공급자
 
-이 공급자는 추가 확장명 없이 파일 아래에 추가 확장명을 사용하여 파일을 중첩합니다. 추가 확장명은 전체 파일 이름 끝에만 나타날 수 있습니다. 다음 예제를 참조하세요.
+이 공급자는 추가 확장명 없이 파일 아래에 추가 확장명을 사용하여 파일을 중첩합니다. 추가 확장명은 전체 파일 이름 끝에만 나타날 수 있습니다.
+
+다음 예제를 참조하세요.
 
 ![addedExtension 예제 규칙](media/filenesting_addedextension.png) ![addedExtension 예제 효과](media/filenesting_addedextension_effect.png)
 
 * *file.html.css*는 **addedExtension** 규칙 때문에 *file.html* 아래에 중첩됩니다.
 
+> [!NOTE]
+> `addedExtension` 규칙에 대해 파일 확장명을 지정하지 않으면, 자동으로 모든 파일 확장명에 적용됩니다. 즉, 다른 파일과 동일한 이름 및 확장명과 끝에 추가 확장명이 붙은 파일은 모두 다른 파일 아래에 중첩됩니다. 이 공급자의 효과를 특정 파일 확장명만으로 제한할 수는 없습니다.
+
 ### <a name="the-pathsegment-provider"></a>pathSegment 공급자
 
-이 공급자는 추가 확장명 없이 파일 아래에 추가 확장명을 사용하여 파일을 중첩합니다. 추가 확장명은 전체 파일 이름 중간에만 나타날 수 있습니다. 다음 예제를 참조하세요.
+이 공급자는 추가 확장명 없이 파일 아래에 추가 확장명을 사용하여 파일을 중첩합니다. 추가 확장명은 전체 파일 이름 중간에만 나타날 수 있습니다.
+
+다음 예제를 참조하세요.
 
 ![pathSegment 예제 규칙](media/filenesting_pathsegment.png) ![pathSegment 예제 효과](media/filenesting_pathsegment_effect.png)
 
 * *jquery.min.js*는 **pathSegment** 규칙 때문에 *jquery.js* 아래에 중첩됩니다.
+
+> [!NOTE]
+> - `pathSegment` 규칙에 대해 특정 파일 확장명을 지정하지 않으면, 모든 파일 확장명에 적용됩니다. 즉, 다른 파일과 동일한 이름 및 확장명과 중간에 추가 확장명이 붙은 파일은 모두 다른 파일 아래에 중첩됩니다.
+> - 다음 방법으로 지정하면 `pathSegment` 규칙의 효과를 특정 파일 확장명으로 제한할 수 있습니다.
+>
+>    ```json
+>    "pathSegment": {
+>       "add": {
+>         ".*": [
+>           ".js",
+>           ".css",
+>           ".html",
+>           ".htm"
+>         ]
+>       }
+>    }
+>    ```
 
 ### <a name="the-allextensions-provider"></a>allExtensions 공급자
 
@@ -130,9 +152,9 @@ ms.locfileid: "49928700"
 
 ![사용자 지정 파일 중첩 규칙 활성화](media/filenesting_activatecustom.png)
 
-## <a name="create-solution-specific-and-project-specific-settings"></a>솔루션별 설정 및 프로젝트별 설정 만들기
+## <a name="create-project-specific-settings"></a>프로젝트별 설정 만들기
 
-각 솔루션 및 프로젝트의 바로 가기 메뉴를 통해 솔루션별 설정 및 프로젝트별 설정을 만들 수 있습니다.
+각 솔루션 및 프로젝트의 오른쪽 클릭 메뉴(상황에 맞는 메뉴)를 통해 솔루션별 설정 및 프로젝트별 설정을 만들 수 있습니다.
 
 ![솔루션 및 프로젝트별 중첩 규칙](media/filenesting_solutionprojectspecific.png)
 
@@ -144,7 +166,7 @@ ms.locfileid: "49928700"
 
 솔루션별 설정 및 프로젝트별 설정을 소스 제어에 체크인할 수 있으며, 코드베이스를 작업하는 전체 팀이 이를 공유할 수 있습니다.
 
-## <a name="disable-global-file-nesting-rules-for-a-particular-solution-or-project"></a>특정 솔루션 또는 프로젝트에 대한 전역 파일 중첩 규칙 사용 안 함
+## <a name="disable-file-nesting-rules-for-a-project"></a>프로젝트에 파일 중첩 규칙 사용 안 함
 
 공급자에 대해 **추가** 대신 **제거** 작업을 사용하여 특정 솔루션 또는 프로젝트에 대한 기존 전역 파일 중첩 규칙을 사용하지 않을 수 있습니다. 예를 들어, 다음 설정 코드를 프로젝트에 추가하면 이 특정 프로젝트에 대해 전역으로 존재할 수 있는 모든 **pathSegment** 규칙이 비활성화됩니다.
 
@@ -159,3 +181,4 @@ ms.locfileid: "49928700"
 ## <a name="see-also"></a>참고 항목
 
 - [IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)
+- [Visual Studio의 솔루션 및 프로젝트](solutions-and-projects-in-visual-studio.md)

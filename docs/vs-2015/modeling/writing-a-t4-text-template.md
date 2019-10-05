@@ -1,12 +1,9 @@
 ---
 title: T4 텍스트 템플릿 작성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, syntax
 - text templates, guide
@@ -15,13 +12,13 @@ ms.assetid: 94328da7-953b-4e92-9587-648543d1f732
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7aa5a216b9be48eae7f2905084f0c39109688d6c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1e2f40421c2b59e61de1560619422491a37ed8d8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897799"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684698"
 ---
 # <a name="writing-a-t4-text-template"></a>T4 텍스트 템플릿 쓰기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,7 +100,7 @@ Hello!
  코드에서 `Write();` 문이 허용되는 모든 위치에 텍스트 블록을 삽입할 수 있습니다.  
   
 > [!NOTE]
->  예: 루프 또는 조건부 복합 문 내에 텍스트 블록을 포함 하는 경우 항상 {...} 괄호 사용 텍스트 블록을 포함 합니다.  
+> 예: 루프 또는 조건부 복합 문 내에 텍스트 블록을 포함 하는 경우 항상 {...} 괄호 사용 텍스트 블록을 포함 합니다.  
   
 ### <a name="expression-control-blocks"></a>식 제어 블록  
  식 제어 블록은 식을 평가한 다음 문자열로 변환합니다. 이 문이 출력 파일에 삽입됩니다.  
@@ -116,7 +113,7 @@ Hello!
 <#= 2 + 3 #>  
 ```  
   
- 여기서 여는 기호에는 "<#="의 3개 문자가 있습니다.  
+ 여는 기호는 3 개의 문자 "< #="입니다.  
   
  식은 범위 내의 모든 변수를 포함할 수 있습니다. 예를 들어 다음 블록은 숫자가 포함된 줄을 출력합니다.  
   
@@ -164,7 +161,7 @@ private int Square(int i)
  제어 블록에 대 한 자세한 내용은 참조 하세요. [텍스트 템플릿 제어 블록](../modeling/text-template-control-blocks.md)합니다.  
   
 ### <a name="class-feature-blocks-can-contain-text-blocks"></a>텍스트 블록을 포함할 수 있는 클래스 기능 블록  
- 텍스트를 생성하는 메서드를 작성할 수 있습니다. 예를 들면 다음과 같습니다.  
+ 텍스트를 생성하는 메서드를 작성할 수 있습니다. 예를 들어:  
   
 ```  
 List of Squares:  
@@ -200,7 +197,7 @@ private void WriteSquareLine(int i)
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>  
 ```  
   
- 매크로 목록은 참조 하세요 [빌드 명령 및 속성에 대 한 일반 매크로](http://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)합니다.  
+ 매크로 목록은 참조 하세요 [빌드 명령 및 속성에 대 한 일반 매크로](https://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)합니다.  
   
  Assembly 지시문에 적용 되지 않습니다는 [전처리 된 텍스트 템플릿을](../modeling/run-time-text-generation-with-t4-text-templates.md)합니다.  
   
@@ -217,7 +214,7 @@ private void WriteSquareLine(int i)
   
  자세한 내용은 [T4 Import 지시문](../modeling/t4-import-directive.md)합니다.  
   
-###  <a name="Include"></a> 코드 및 텍스트를 포함 하 여  
+### <a name="Include"></a> 코드 및 텍스트를 포함 하 여  
  `include` 지시문은 다른 템플릿 파일의 텍스트를 삽입합니다. 예를 들어 다음 지시문은 `test.txt`의 내용을 삽입합니다.  
   
  `<#@ include file="c:\test.txt" #>`  
@@ -233,7 +230,7 @@ private void WriteSquareLine(int i)
   
  자세한 내용은 [텍스트 템플릿 유틸리티 메서드](../modeling/text-template-utility-methods.md)합니다.  
   
-## <a name="transforming-data-and-models"></a>데이터 및 모델 변형  
+## <a name="transforming-data-and-models"></a>데이터 및 모델 변환  
  텍스트 템플릿의 가장 유용한 적용 사례는 모델, 데이터베이스 또는 데이터 파일과 같은 소스의 내용에 따라 자료를 생성하는 것입니다. 템플릿은 데이터를 추출한 다음 서식을 다시 지정합니다. 템플릿 컬렉션은 이러한 소스를 여러 파일로 변환할 수 있습니다.  
   
  소스 파일을 읽는 방식은 다양합니다.  
@@ -247,7 +244,7 @@ private void WriteSquareLine(int i)
   
  **탐색 가능한 모델로 파일을 로드**합니다. 즉, 텍스트 템플릿 코드가 탐색할 수 있는 모델로 데이터를 읽는 보다 효율적인 방식을 사용할 수 있습니다. 예를 들어 XML 파일을 로드한 다음 XPath 식을 사용하여 탐색할 수 있습니다. 사용할 수도 있습니다 [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765) XML 데이터를 읽을 수 있는 클래스 집합을 만들려고 합니다.  
   
- **다이어그램 또는 폼에서 모델 파일을 편집 합니다.** [!INCLUDE[dsl](../includes/dsl-md.md)] 모델을 다이어그램 또는 Windows form으로 편집할 수 있는 도구를 제공 합니다. 그러면 생성된 응용 프로그램의 사용자와 모델에 대해 보다 쉽게 논의할 수 있습니다. [!INCLUDE[dsl](../includes/dsl-md.md)]에서는 모델 구조를 반영하는 강력한 형식의 클래스 집합도 만듭니다. 자세한 내용은 [도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)합니다.  
+ **다이어그램 또는 폼에서 모델 파일을 편집 합니다.** [!INCLUDE[dsl](../includes/dsl-md.md)] 모델을 다이어그램 또는 Windows form으로 편집할 수 있는 도구를 제공 합니다. 그러면 생성된 애플리케이션의 사용자와 모델에 대해 보다 쉽게 논의할 수 있습니다. [!INCLUDE[dsl](../includes/dsl-md.md)]에서는 모델 구조를 반영하는 강력한 형식의 클래스 집합도 만듭니다. 자세한 내용은 [도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)합니다.  
   
  **UML 모델을 사용 하 여**입니다. UML 모델에서 코드를 생성할 수 있습니다. 이 경우 익숙한 표기법을 사용해 모델을 다이어그램으로 편집할 수 있다는 이점이 있습니다. 또한 다이어그램을 디자인하지 않아도 됩니다. 자세한 내용은 [UML 모델에서 파일 생성](../modeling/generate-files-from-a-uml-model.md)합니다.  
   
@@ -267,7 +264,7 @@ Content of MyFile.txt is:
   
 ```  
   
- 호스트가 제공하는 다른 서비스도 가져올 수 있습니다. 자세한 내용은 [Visual Studio에 액세스 또는 다른 호스트 템플릿에서](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4)합니다.  
+ 호스트가 제공하는 다른 서비스도 가져올 수 있습니다. 자세한 내용은 [Visual Studio에 액세스 또는 다른 호스트 템플릿에서](https://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4)합니다.  
   
 ### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>별도의 AppDomain에서 실행되는 디자인 타임 텍스트 템플릿  
  알고 있어야 하는 [디자인 타임 텍스트 템플릿](../modeling/design-time-code-generation-by-using-t4-text-templates.md) 주 응용 프로그램과 별개인 AppDomain에서 실행 됩니다. 이러한 방식은 대부분의 경우 중요하지 않지만 복잡한 코드를 사용하는 특정 사례에서는 제한이 적용될 수 있습니다. 예를 들어 별도의 서비스에서 템플릿 내부나 외부로 데이터를 전달하려는 경우 해당 서비스가 serializable API를 제공해야 합니다.  
@@ -275,7 +272,7 @@ Content of MyFile.txt is:
  (의 true가 아닙니다를 [런타임 텍스트 템플릿](../modeling/run-time-text-generation-with-t4-text-templates.md), 코드의 나머지 부분과 함께 컴파일되는 코드를 제공 하는.)  
   
 ## <a name="editing-templates"></a>템플릿 편집  
- 확장명 관리자 온라인 갤러리에서 특수한 텍스트 템플릿 편집기를 다운로드할 수 있습니다. 에 **도구** 메뉴에서 클릭 **확장 관리자**합니다. 클릭 **온라인 갤러리**, 한 다음 검색 도구를 사용 합니다.  
+ 확장 관리자 온라인 갤러리에서 특수한 텍스트 템플릿 편집기를 다운로드할 수 있습니다. 에 **도구** 메뉴에서 클릭 **확장 관리자**합니다. 클릭 **온라인 갤러리**, 한 다음 검색 도구를 사용 합니다.  
   
 ## <a name="related-topics"></a>관련 항목  
   
@@ -287,6 +284,3 @@ Content of MyFile.txt is:
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 외부에서 텍스트 생성을 실행합니다.|[TextTransform 유틸리티 사용하여 파일 생성](../modeling/generating-files-with-the-texttransform-utility.md)|  
 |DSL(Domain-Specific Language) 형식으로 데이터를 변형합니다.|[도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)|  
 |고유한 데이터 소스를 변형하는 지시문 프로세서를 작성합니다.|[T4 텍스트 변환 사용자 지정](../modeling/customizing-t4-text-transformation.md)|
-
-
-

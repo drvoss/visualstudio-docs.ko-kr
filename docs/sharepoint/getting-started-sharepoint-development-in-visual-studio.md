@@ -9,24 +9,24 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, getting started
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2159bbec0d89b43d37bcdd3c30a60ad9b329531c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c45635da013f360ccbb1fe2343bca23a58f142c4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557179"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>시작 (SharePoint 개발에 Visual Studio)
   이 섹션은 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 를 사용하여 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 및 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]을 활용하는 SharePoint 솔루션 개발을 시작하는 데 도움이 됩니다.
 
- SharePoint 2013 및 SharePoint 추가 기능에 대한 자세한 내용은 [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) 및 [SharePoint 추가 기능 빌드](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)를 참조하세요.
+ SharePoint 2013 및 SharePoint 추가 기능에 대한 자세한 내용은 [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) 및 [SharePoint 추가 기능 빌드](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)를 참조하세요.
 
- SharePoint는 웹 기반 공동 작업 플랫폼을 제공합니다. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 에서는 목록 정의, 워크플로, 비즈니스 데이터 연결 모델 및 사이트 정의를 비롯하여 SharePoint 사이트 및 콘텐츠를 만들기 위한 다양한 프로젝트 템플릿을 제공합니다. 또한 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 SharePoint 프로젝트 및 도구의 확장을 만들 수 있습니다.
+ SharePoint는 웹 기반 협업 플랫폼을 제공합니다. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 에서는 목록 정의, 워크플로, 비즈니스 데이터 연결 모델 및 사이트 정의를 비롯하여 SharePoint 사이트 및 콘텐츠를 만들기 위한 다양한 프로젝트 템플릿을 제공합니다. 또한 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 SharePoint 프로젝트 및 도구의 확장을 만들 수 있습니다.
 
 ## <a name="in-this-section"></a>단원 내용
 
@@ -39,10 +39,11 @@ ms.locfileid: "53847420"
 |항목|설명|
 |-----------|-----------------|
 |[SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)|[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 SharePoint 개발을 설명합니다.|
+|[SharePoint에 대 한 일반 개발 환경 설정](/sharepoint/dev/general-development/set-up-a-general-development-environment-for-sharepoint)|SharePoint 솔루션을 만들기 위한 필수 설치를 설명 합니다.|
 |[SharePoint 용 사이트 열, 콘텐츠 형식 및 목록 만들기](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)|SharePoint 개발에 Visual Studio 도구를 사용하여 SharePoint의 사용자 지정 사이트 열, 콘텐츠 형식 및 목록을 만드는 방법을 설명합니다.|
 |[SharePoint 워크플로 솔루션 만들기](../sharepoint/creating-sharepoint-workflow-solutions.md)|워크플로 디자인 및 개발을 설명합니다.|
 |[SharePoint 비즈니스 데이터 통합](../sharepoint/integrating-business-data-into-sharepoint.md)|BDC(비즈니스 데이터 연결) 모델에 연결하여 비즈니스 데이터를 통합하는 방법을 설명합니다.|
-|[SharePoint 용 Creatie 웹 파트](../sharepoint/creating-web-parts-for-sharepoint.md)|SharePoint 사이트의 페이지 구성 요소인 웹 파트와 웹 파트 페이지를 설명합니다.|
+|[SharePoint 용 웹 파트 만들기](../sharepoint/creating-web-parts-for-sharepoint.md)|SharePoint 사이트의 페이지 구성 요소인 웹 파트와 웹 파트 페이지를 설명합니다.|
 |[SharePoint 용 응용 프로그램 페이지 만들기](../sharepoint/creating-application-pages-for-sharepoint.md)|디자이너를 사용하여 애플리케이션 페이지를 디자인하는 방법을 설명합니다.|
 |[웹 파트 또는 응용 프로그램 페이지에 대 한 재사용 가능한 컨트롤 만들기](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|SharePoint에서 애플리케이션 페이지 및 웹 파트를 위해 재사용 가능한 사용자 지정 컨트롤을 만드는 방법을 설명합니다.|
 |[서버 탐색기를 사용 하 여 SharePoint 연결 찾아보기](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Visual Studio 도구 창에서 SharePoint 사이트의 구성 요소를 통해 탐색하는 방법을 설명합니다.|

@@ -2,7 +2,6 @@
 title: IDispError::GetHresult | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 859708b8aec4f89dd1ea49bf6e248d7bcade7624
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
-ms.translationtype: MT
+ms.openlocfilehash: 6eb4518e39fdab432590601d91b462d869c38e1a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446892"
 ---
 # <a name="idisperrorgethresult"></a>IDispError::GetHresult
-검색에서 오류 코드는 `IDispError` 개체입니다.  
+오류 코드를 검색 합니다 `IDispError` 개체입니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetHresult(  
    HRESULT*  phr  
 );  
@@ -48,10 +47,10 @@ HRESULT GetHresult(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드 검색에서 오류 코드는 `IDispError` 개체입니다.  
+ 오류 코드를 검색 하는이 메서드는 `IDispError` 개체입니다.  
   
 > [!NOTE]
->  이 메서드가 구현되지 않았습니다.  
+> 이 메서드가 구현되지 않았습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDispError 인터페이스](../../winscript/reference/idisperror-interface.md)

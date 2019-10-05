@@ -1,25 +1,20 @@
 ---
 title: GPU 사용량 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 957fed3c-4ded-4e05-87c6-ccc33de65349
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3068f614275c14d022ed4d74fa6a10ffe396f68b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b7dee579f726a1edfc81e1f3e1ec62bf7d8beba4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437949"
 ---
 # <a name="gpu-usage"></a>GPU 사용량
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ Visual Studio 성능 및 진단 허브의 GPU 사용량 도구를 사용하여 D
 - 필수적인 타이밍 계측을 지원하는 GPU 및 드라이버  
   
   > [!NOTE]
-  >  지원되는 하드웨어 및 드라이버에 대한 자세한 내용은 이 문서 끝에 있는 [하드웨어 및 드라이버 지원](#hwsupport)을 참조하세요.  
+  > 지원되는 하드웨어 및 드라이버에 대한 자세한 내용은 이 문서 끝에 있는 [하드웨어 및 드라이버 지원](#hwsupport)을 참조하세요.  
   
   그래픽 진단 요구 사항에 대한 자세한 내용은 [시작](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md)을 참조하세요.  
   
@@ -45,14 +40,14 @@ Visual Studio 성능 및 진단 허브의 GPU 사용량 도구를 사용하여 D
   
 #### <a name="to-start-the-gpu-usage-tool"></a>GPU 사용량 도구를 시작하려면  
   
-1. 주 메뉴에서 **디버그**를 선택한 다음 **성능 및 진단**을 선택합니다(키보드: Alt+F2 누름).  
+1. 주 메뉴에서 **디버그**를 선택한 다음, **성능 및 진단**을 선택합니다(키보드: Alt+F2 키 누름).  
   
 2. 성능 및 진단 허브에서 **GPU 사용량** 옆에 있는 상자를 선택합니다. 선택적으로, 사용하려는 다른 도구 옆에 있는 확인란을 선택합니다. 다수의 성능 및 진단 도구를 동시에 실행하여 앱 성능을 보다 자세히 확인할 수 있습니다.  
   
     ![사용하려는 진단 도구를 선택합니다.](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
   
    > [!NOTE]
-   >  일부 성능 및 진단 도구는 동시에 사용할 수 없습니다.  
+   > 일부 성능 및 진단 도구는 동시에 사용할 수 없습니다.  
   
 3. 성능 및 진단 허브의 맨 아래에 있는 파란색 **시작** 단추를 선택하면 선택한 도구 아래에서 앱이 실행됩니다.  
   
@@ -99,7 +94,7 @@ Visual Studio 성능 및 진단 허브의 GPU 사용량 도구를 사용하여 D
 |--------------------|-----------------|  
 |**Process**|관심 있는 프로세스의 이름입니다. 진단 세션 도중에 GPU를 사용한 모든 프로세스가 이 드롭다운에 포함됩니다. 이 드롭다운에 있는 프로세스와 연결된 색은 아래 타임라인에 나오는 스레드 작업의 색입니다.|  
 |**스레드**|관심 있는 스레드 ID입니다. 다중 스레드 앱에서는 이 컨트롤을 사용하여 관심 있는 프로세스에 속한 특정 스레드를 격리시킬 수 있습니다. 선택한 스레드와 관련 있는 이벤트는 각 타임라인에서 강조 표시됩니다.|  
-|**표시**|새로 고침 빈도가 표시되는 디스플레이의 수입니다. **참고:** 일부 드라이버는 여러 개의 실제 디스플레이를 하나의 대형 가상 디스플레이로 표현되도록 구성할 수 있습니다. 컴퓨터에 여러 디스플레이가 연결되었더라도 목록에 디스플레이가 하나만 표시될 수 있습니다.|  
+|**표시**|새로 고침 빈도가 표시되는 디스플레이의 수입니다. **참고:**  일부 드라이버는 여러 개의 실제 디스플레이를 하나의 대형 가상 디스플레이로 표현되도록 구성할 수 있습니다. 컴퓨터에 여러 디스플레이가 연결되었더라도 목록에 디스플레이가 하나만 표시될 수 있습니다.|  
 |**필터**|관심 있는 키워드입니다. 보고서 하단에 나오는 이벤트에는 키워드 전체 또는 일부와 일치하는 이벤트만 포함됩니다. 여러 키워드를 세미콜론(;)으로 구분하여 지정할 수 있습니다.|  
 |**계층 정렬**|사용자 표식을 통해 정의된 이벤트 계층 구조를 유지하는지 아니면 무시하는지 나타내는 확인란입니다.|  
   
@@ -115,27 +110,27 @@ Visual Studio 성능 및 진단 허브의 GPU 사용량 도구를 사용하여 D
 |**스레드 ID**|이벤트가 발생한 스레드 ID입니다.|  
   
 > [!IMPORTANT]
->  이벤트 특성 상속에 Windows 8.1이 필요합니다. 또한 GPU 또는 드라이버가 필수 측정 기능을 지원하지 않는 경우 모든 이벤트는 'unattributed'로 표시됩니다. 이 문제가 발생하는 경우 GPU 드라이버를 업데이트한 후 다시 시도해 봅니다. 자세한 내용은 아래에서 [하드웨어 및 드라이버 지원](#hwsupport)을 참조하세요.  
+> 이벤트 특성 상속에 Windows 8.1이 필요합니다. 또한 GPU 또는 드라이버가 필수 측정 기능을 지원하지 않는 경우 모든 이벤트는 'unattributed'로 표시됩니다. 이 문제가 발생하는 경우 GPU 드라이버를 업데이트한 후 다시 시도해 봅니다. 자세한 내용은 아래에서 [하드웨어 및 드라이버 지원](#hwsupport)을 참조하세요.  
   
 ## <a name="gpu-usage-settings"></a>GPU 사용량 설정  
  앱이 시작되자마자 정보 수집을 시작하는 대신 프로파일링 정보 수집을 연기하도록 GPU 사용량 도구를 구성할 수 있습니다. 프로파일링 정보의 크기가 상당히 클 수 있으므로, 이 옵션은 앱 성능 저하가 나중에 나타날 것임을 알고 있는 경우에 유용합니다.  
   
 #### <a name="to-postpone-profiling-from-the-start-of-the-app"></a>앱 시작 이후 프로파일링을 연기하려면  
   
-1.  주 메뉴에서 **디버그**를 선택한 다음 **성능 및 진단**을 선택합니다(키보드: Alt+F2 누름).  
+1. 주 메뉴에서 **디버그**를 선택한 다음, **성능 및 진단**을 선택합니다(키보드: Alt+F2 키 누름).  
   
-2.  성능 및 진단 허브에서 **GPU 사용량** 옆에 있는 **설정** 링크를 선택합니다.  
+2. 성능 및 진단 허브에서 **GPU 사용량** 옆에 있는 **설정** 링크를 선택합니다.  
   
-3.  **일반** 속성 페이지의 **GPU 프로파일링 구성** 아래에서 **앱 시작 시 프로파일링 시작** 확인란의 선택을 취소하여 프로파일링을 연기합니다.  
+3. **일반** 속성 페이지의 **GPU 프로파일링 구성** 아래에서 **앱 시작 시 프로파일링 시작** 확인란의 선택을 취소하여 프로파일링을 연기합니다.  
   
      ![GPU 사용량 수집이 시작되면 구성](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
 > [!IMPORTANT]
->  현재 Direct3D 12 앱에 대해서는 프로파일링 연기가 지원되지 않습니다.  
+> 현재 Direct3D 12 앱에 대해서는 프로파일링 연기가 지원되지 않습니다.  
   
  이 설정을 사용하여 프로파일링 정보 컬렉션을 연기하는 경우 GPU 사용량 도구에서 앱을 실행할 때 GPU 사용량 도구 창 하단에서 추가 링크를 사용할 수 있게 됩니다. 프로파일링 정보 수집을 시작하려면 **자세한 GPU 사용량 데이터를 추가로 수집하기 시작합니다.** 메시지에서 **시작** 링크를 선택합니다.  
   
-##  <a name="hwsupport"></a> 하드웨어 및 드라이버 지원  
+## <a name="hwsupport"></a> 하드웨어 및 드라이버 지원  
  지원되는 GPU 하드웨어 및 드라이버는 다음과 같습니다.  
   
 |Vendor|GPU 설명|필요한 드라이버 버전|  
@@ -148,13 +143,10 @@ Visual Studio 성능 및 진단 허브의 GPU 사용량 도구를 사용하여 D
   
 ## <a name="see-also"></a>참고자료  
   
--   [DirectX 도구를 사용하여 어려운 게임 그래픽 문제 해결(비디오)](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
+- [DirectX 도구를 사용하여 어려운 게임 그래픽 문제 해결(비디오)](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
   
--   [Visual Studio의 GPU 사용량 도구(비디오)](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
+- [Visual Studio의 GPU 사용량 도구(비디오)](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
   
--   [Visual Studio 2013 업데이트 4 CTP1의 GPU 사용량 도구(블로그)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
+- [Visual Studio 2013 업데이트 4 CTP1의 GPU 사용량 도구(블로그)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
   
--   [Visual Studio의 DirectX에 대한 GPU 사용량(블로그)](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)
-
-
-
+- [Visual Studio의 DirectX에 대한 GPU 사용량(블로그)](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)

@@ -1,27 +1,22 @@
 ---
-title: '연습: 장치 상태로 인해 개체 누락 된 | Microsoft Docs'
-ms.custom: ''
+title: '연습: 누락 된 장치 상태로 인해 개체 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 1b0d2bbd-0729-4aa5-8308-70c5bf1468c5
 caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5c0ad6017dd6ff660dfbd47977e1a53346cf6c55
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 51fb019d428ed7196818c96e759c0abc8f8e68c7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773732"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58985464"
 ---
-# <a name="walkthrough-missing-objects-due-to-device-state"></a>연습: 장치 상태로 인해 누락된 개체
+# <a name="walkthrough-missing-objects-due-to-device-state"></a>연습: 디바이스 상태로 인해 누락된 개체
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 연습에서는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 그래픽 진단을 사용하여 잘못 구성된 디바이스 상태로 인해 누락된 개체를 조사하는 방법을 보여 줍니다.  
@@ -113,6 +108,3 @@ ms.locfileid: "51773732"
    렌더링 문제의 원인이 잘못 구성된 깊이 함수라는 사실을 확인한 후에는 이 정보와 코드에 대한 지식을 함께 사용하여 깊이 함수가 잘못 설정된 위치를 찾아 문제를 해결할 수 있습니다. 코드에 친숙하지 않은 경우에는 디버깅 중에 수집한 단서를 사용하여 문제를 검색할 수 있습니다. 예를 들어 이 시나리오에서는 **깊이 스텐실 설명** 을 사용하여 코드에서 "depth" 또는 "GREATER"와 같은 단어를 찾을 수 있습니다. 코드를 수정한 후 다시 빌드하고 앱을 다시 실행하여 렌더링 문제가 해결되었는지 검색합니다.  
   
    ![앱 문제를 해결 한 후](../debugger/media/vsg-walkthru1-finalview.png "vsg_walkthru1_finalview")
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: IDiaSymbol::get_isAcceleratorStubFunction | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: cc4ea375-76f6-4ba8-baed-c5fa82108137
 caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e89dcf2ef1e9ed8c435d454a2bdcaef48467998c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 69f82f836be6ab91fe73af5a0febf7a39723b191
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724412"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "68199888"
 ---
 # <a name="idiasymbolgetisacceleratorstubfunction"></a>IDiaSymbol::get_isAcceleratorStubFunction
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,8 +37,5 @@ HRESULT get_isAcceleratorStubFunction(
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

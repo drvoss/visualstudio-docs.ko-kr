@@ -1,25 +1,22 @@
 ---
 title: 다른 모델 및 도구를 사용 하 여 UML 모델을 통합 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, references to models
 ms.assetid: 9e75e7d1-93cf-4196-baa3-bd10b9af16d3
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d1cc5a26a9c2febb0dd1dff3c0d14ba3786dde9f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1a8b67e5c784e24b1af71089d33e7db60cb1f92c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764133"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190381"
 ---
 # <a name="integrate-uml-models-with-other-models-and-tools"></a>UML 모델을 다른 모델 및 도구와 통합
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +40,7 @@ ms.locfileid: "51764133"
   
    자세한 내용은 [UML을 확장 하는 프로필 정의](../modeling/define-a-profile-to-extend-uml.md)합니다.  
   
-   프로필이 메뉴 명령 및 제스처 처리기와 함께 배포 되는 샘플 프로젝트를 참조 하세요 [샘플: UML 프로필](http://go.microsoft.com/fwlink/?LinkID=213811)합니다.  
+   프로필이 메뉴 명령 및 제스처 처리기와 함께 배포 되는 샘플 프로젝트를 참조 하세요. [샘플: UML 프로필](http://go.microsoft.com/fwlink/?LinkID=213811)합니다.  
   
 - **참조입니다.** 문자열 집합을 UML 요소에 연결할 수 있습니다. 파일 이름 또는 다른 요소의 GUID와 같은 정보를 저장하는 코드를 작성할 수 있습니다. 추가 정의를 제공하지 않고 이 작업을 수행할 수 있습니다. 참조는 사용자에게 직접 표시되지 않습니다.  
   
@@ -68,12 +65,12 @@ ms.locfileid: "51764133"
   
 2. **VMSDK 이벤트** 예를 들어 모델 외부에 변경 내용을 전파 하는 데, 연결 된 문서의 파일 이름을 변경 하거나 다른 모델의 요소를 변경 하려면 사용할 수 있습니다.  
   
-   이러한 두 메커니즘에 대 한 정보를 참조 하세요 [방법: UML 모델의 변경 내용에 응답할](../misc/how-to-respond-to-changes-in-a-uml-model.md)합니다.  
+   이러한 두 메커니즘에 대 한 정보를 참조 하세요. [방법: UML 모델의 변경 내용에 응답할](../misc/how-to-respond-to-changes-in-a-uml-model.md)합니다.  
   
    요소를 끌어 모델 간에 복사  
    사용자가 항목을 UML 다이어그램으로 끌어와 요소를 만들게 할 수 있습니다. 만든 요소가 원본의 복사본일 필요는 없습니다. 예를 들어 사용자가 솔루션 탐색기에서 다른 동작 다이어그램으로 동작 다이어그램을 끌어와 새 작업을 만들게 할 수 있습니다.  
   
-   자세한 내용은 참조 하세요. [모델링 다이어그램의 제스처 처리기 정의](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) 하 고 [방법: 끌어서 놓기 처리기 추가](../modeling/how-to-add-a-drag-and-drop-handler.md).  
+   자세한 내용은 참조 [모델링 다이어그램의 제스처 처리기 정의](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) 고 [방법: 끌어서 놓기 처리기 추가](../modeling/how-to-add-a-drag-and-drop-handler.md)합니다.  
   
 ## <a name="samples"></a>샘플  
  코드 샘플을 참조 하세요 [다이어그램 또는 기타 파일에 UML 요소 연결](http://go.microsoft.com/fwlink/?LinkId=213813)합니다. 이 샘플에서는 사용자가 파일을 UML 요소로 끌어오고 나중에 요소를 두 번 클릭하여 파일을 열 수 있습니다. 예를 들어 동작 다이어그램을 사용 사례 요소에 연결할 수 있습니다. 아이콘은 링크가 있는 요소를 표시합니다.  
@@ -100,13 +97,10 @@ ms.locfileid: "51764133"
   
   UML 모델의 예로 DSL에서 읽을 수, 참조 [방법: 끌어서 놓기 처리기 추가](../modeling/how-to-add-a-drag-and-drop-handler.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [모델링 다이어그램의 메뉴 명령 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [모델링 다이어그램의 제스처 처리기 정의](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)   
  [방법: 끌어서 놓기 처리기 추가](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [방법: UML 모델의 변경 내용에 응답](../misc/how-to-respond-to-changes-in-a-uml-model.md)   
  [샘플: UML 프로필](http://go.microsoft.com/fwlink/?LinkID=213811)   
  [다이어그램 또는 기타 파일에 UML 요소 연결](http://go.microsoft.com/fwlink/?LinkId=213813)
-
-
-

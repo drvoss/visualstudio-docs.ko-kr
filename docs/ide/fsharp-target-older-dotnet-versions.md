@@ -2,20 +2,19 @@
 title: F#용 이전 .NET Framework 버전 대상 지정
 description: Visual Studio에서 F#을 사용하는 경우 .NET Framework의 이전 버전을 대상으로 지정하는 방법을 알아봅니다.
 ms.date: 07/11/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: troubleshooting
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2cb32f37bde0a55da081105cbee52a8744db2b88
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+monikerRange: vs-2017
+ms.openlocfilehash: 2e0d580ac18142010a306d3fb4de19eb69b0b91b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978645"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746709"
 ---
 # <a name="target-older-versions-of-net-f"></a>.NET의 이전 버전 대상 지정(F#)
 
@@ -55,7 +54,7 @@ Visual Studio를 설치할 때 설치된 .NET Framework의 버전을 검색합�
 
 ### <a name="to-install-the-f-20-runtime"></a>F# 2.0 런타임을 설치하려면 다음을 수행합니다.
 
-[Visual Studio 2017 복구 단계](../install/repair-visual-studio.md)를 수행합니다.
+[Visual Studio 복구 단계](../install/repair-visual-studio.md)를 수행합니다.
 
 ## <a name="see-also"></a>참고 항목
 

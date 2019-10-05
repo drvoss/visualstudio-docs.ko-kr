@@ -1,26 +1,21 @@
 ---
 title: 마법사 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], providing wizard support
 ms.assetid: 59d9a77f-ee80-474b-a14f-90f477ab717b
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: cbf2eceeb3ae8a3870954d53f8d85c46f3322d24
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6e58ebd736f7bb9f35df6e41d5235f36f7037259
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747600"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687623"
 ---
 # <a name="wizards"></a>마법사
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,9 +50,8 @@ ms.locfileid: "51747600"
  [프로젝트 형식](../../extensibility/internals/project-types.md)  
  새 프로젝트 형식을 디자인 하는 방법에 대 한 정보를 제공 하는 추가 항목에 대 한 링크를 제공 합니다.  
   
- [연습: 마법사 만들기](http://msdn.microsoft.com/library/adb41fe9-fcca-4e87-bf4f-bf2fa68e8b06)  
+ [연습: 마법사 만들기](https://msdn.microsoft.com/library/adb41fe9-fcca-4e87-bf4f-bf2fa68e8b06)  
  마법사를 만드는 방법을 보여 줍니다.  
   
  [프로젝트 확장](../../extensibility/extending-projects.md)  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 프로젝트 및 솔루션을 사용하여 코드 파일 및 리소스 파일을 구성하는 방법 및 소스 제어를 구현하는 방법을 설명합니다.
-

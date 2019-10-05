@@ -1,8 +1,6 @@
 ---
 title: 도구 상자, HTML 탭
 ms.date: 06/21/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.toolbox.html
@@ -12,21 +10,21 @@ helpviewer_keywords:
 - HTML tab in Toolbox
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90dfae7e891c805a785db8bba00d3c75d2a84bf3
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 72492b984e7f47b87ea326fe8ebcce414ee978ec
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384164"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926051"
 ---
 # <a name="toolbox-html-tab"></a>도구 상자, HTML 탭
 
 도구 상자의 **HTML** 탭에서는 웹 페이지와 Web Forms에서 유용한 구성 요소를 제공합니다. 이 탭을 보려면 먼저 HTML 디자이너에서 편집할 문서를 엽니다. **보기** 메뉴에서 **도구 상자**를 클릭하고 도구 상자의 **HTML** 탭을 클릭합니다.
 
- **HTML** 탭에서 도구 인스턴스를 만들려면 도구를 두 번 클릭하여 현재 삽입 지점에 있는 문서에 추가하거나 도구를 선택하고 편집 화면의 원하는 위치로 끌어다 놓습니다.
+**HTML** 탭에서 도구 인스턴스를 만들려면 도구를 두 번 클릭하여 현재 삽입 지점에 있는 문서에 추가하거나 도구를 선택하고 편집 화면의 원하는 위치로 끌어다 놓습니다.
 
 ## <a name="ui-elements"></a>UI 요소
 
@@ -52,7 +50,7 @@ ms.locfileid: "44384164"
 
 **Input (Reset)**
 
-![HTMLpageResetButton 스크린샷](../../ide/reference/media/vxreset.gif)
+![HTMLpageResetButton 스크린 샷](../../ide/reference/media/vxreset.gif)
 
 `type="reset"`의 `input` 요소를 삽입합니다. 표시되는 텍스트를 변경하려면 `name` 속성을 편집합니다. 기본적으로 `id="Reset1"`은 첫 번째 다시 설정 단추로 삽입되고, `id="Reset2"`는 두 번째 다시 설정 단추로 삽입되는 식으로 항목이 삽입됩니다.
 
@@ -64,7 +62,7 @@ ms.locfileid: "44384164"
 
 **Input (Submit)**
 
-![HTMLpageToolbarSubmitButton 스크린샷](../../ide/reference/media/vxsubmit.gif)
+![HTMLpageToolbarSubmitButton 스크린 샷](../../ide/reference/media/vxsubmit.gif)
 
 `type="submit"`의 `input` 요소를 삽입합니다. 표시되는 텍스트를 변경하려면 `name` 속성을 편집합니다. 기본적으로 `id="Submit1"`은 첫 번째 제출 단추로 삽입되고, `id="Submit2"`는 두 번째 제출 단추로 삽입되는 식으로 항목이 삽입됩니다.
 
@@ -76,7 +74,7 @@ ms.locfileid: "44384164"
 
 **Input (Text)**
 
-![HTMLpageToolbarTextField 스크린샷](../../ide/reference/media/vxtextfield.gif)
+![HTMLpageToolbarTextField 스크린 샷](../../ide/reference/media/vxtextfield.gif)
 
 `type="text"`의 `input` 요소를 문서에 삽입합니다. 표시되는 기본 텍스트를 변경하려면 `value` 특성을 편집합니다. 기본적으로 `id="Text1"`은 첫 번째 텍스트 필드로 삽입되고, `id="Text2"`는 두 번째 텍스트 필드로 삽입되는 식으로 항목이 삽입됩니다.
 
@@ -117,7 +115,7 @@ ms.locfileid: "44384164"
 ```
 
 > [!IMPORTANT]
-> 응용 프로그램에서 사용자 이름과 암호를 전송할 경우 SSL(Secure Sockets Layer)을 사용하여 전송을 암호화하도록 웹 사이트를 구성해야 합니다. 자세한 내용은 [연결 보안](/previous-versions/tn-archive/bb418917(v=technet.10))을 참조하세요. 또한 모든 사용자 입력의 유효성을 검사하는 것이 좋습니다. 자세한 내용은 [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)(ASP.NET 웹 페이지(Razor) 사이트에서 사용자 입력 유효성 검사)를 참조하세요.
+> 애플리케이션에서 사용자 이름과 암호를 전송할 경우 SSL(Secure Sockets Layer)을 사용하여 전송을 암호화하도록 웹 사이트를 구성해야 합니다. 자세한 내용은 [연결 보안](/previous-versions/tn-archive/bb418917(v=technet.10))을 참조하세요. 또한 모든 사용자 입력의 유효성을 검사하는 것이 좋습니다. 자세한 내용은 [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)(ASP.NET 웹 페이지(Razor) 사이트에서 사용자 입력 유효성 검사)를 참조하세요.
 
 **Input (Check box)**
 
@@ -133,7 +131,7 @@ ms.locfileid: "44384164"
 
 **Input (Radio)**
 
-![VisualStudioHTMLpageRadioButton 스크린샷](../../ide/reference/media/vxradio.gif)
+![VisualStudioHTMLpageRadioButton 스크린 샷](../../ide/reference/media/vxradio.gif)
 
 `type="radio"`의 `input` 요소를 삽입합니다. 표시되는 텍스트를 변경하려면 `name` 속성을 편집합니다. 기본적으로 `id="Radio1"`은 첫 번째 라디오 단추로 삽입되고, `id="Radio2"`는 두 번째 라디오 단추로 삽입되는 식으로 항목이 삽입됩니다.
 
@@ -172,7 +170,7 @@ ms.locfileid: "44384164"
 
 **Table**
 
-![HTMLpageToolbarTable 스크린샷](../../ide/reference/media/vxtable.gif)
+![HTMLpageToolbarTable 스크린 샷](../../ide/reference/media/vxtable.gif)
 
 `table` 요소를 삽입합니다.
 
@@ -210,7 +208,7 @@ size 속성 값을 늘려 여러 줄 `select` 요소를 만들 수 있습니다.
 
 **Horizontal Rule**
 
-![HTML 페이지 가로줄 항목](../../ide/reference/media/vxhorizontal.gif)
+![HTML 페이지 단락 구분선 항목](../../ide/reference/media/vxhorizontal.gif)
 
 `hr` 요소를 삽입합니다. 줄 두께를 늘리려면 `size` 특성을 편집합니다.
 

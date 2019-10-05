@@ -1,31 +1,26 @@
 ---
-title: 새로운&#39;Visual Studio에서 디자인에 대 한 새로운 | Microsoft Docs
-ms.custom: ''
+title: 새로운&#39;디자인에 대 한 새로운
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
-- what's new [VIsual Studio ALM], architecture and modeling
+- what's new [VIsual Studio], architecture and modeling
 - architecture [Visual Studio Ultimate], modeling
-- modeling software [Visual Studio ALM], What's New
+- modeling software [Visual Studio], What's New
 ms.assetid: 36ab5c17-6dc0-4075-a28e-a0fa49b11260
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ee504d0054c52649d48676451168e7dea171b6af
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 148da7602d8198a4c85e2a7fbee2107b4e9662d1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187118"
 ---
-# <a name="whats-new-for-design-in-visual-studio"></a>Visual Studio의 디자인에 대한 새로운 기능
+# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Visual Studio 2015에서 Visual Studio에서 디자인에 대 한 새로운 기능
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 이 Visual Studio 릴리스에는 더 효율적으로 코드를 이해하고 디자인할 수 있도록 다음과 같은 개선 기능이 포함되어 있습니다.
 
@@ -41,7 +36,7 @@ ms.locfileid: "51771281"
 
 - **향상된 하향식 다이어그램**. 이제 중간 규모부터 대규모 Visual Studio 솔루션까지 간소화된 아키텍처 메뉴를 사용하여 솔루션에 보다 유용한 코드 맵을 이용할 수 있습니다. 솔루션 어셈블리가 솔루션 폴더별로 그룹화되므로, 컨텍스트 내에서 이를 확인하고 솔루션을 구조화하는 데 투입한 노력을 활용할 수 있습니다. 프로젝트 및 어셈블리 참조를 즉시 확인할 수 있으며, 링크 형식이 나타납니다. 또한 솔루션에 대한 외부 어셈블리가 보다 간결한 방식으로 그룹화됩니다.
 
-- **테스트 프로젝트는 다른 방식으로 스타일이 지정되며, 필터링이 지원됨**. 이제 테스트 프로젝트의 스타일이 다르게 지정되므로 맵에서 테스트 프로젝트를 쉽고 빠르게 식별할 수 있습니다. 또한 필터도 적용할 수 있으므로, 응용 프로그램의 작업 코드에 집중할 수 있습니다.
+- **테스트 프로젝트는 다른 방식으로 스타일이 지정되며, 필터링이 지원됨**. 이제 테스트 프로젝트의 스타일이 다르게 지정되므로 맵에서 테스트 프로젝트를 쉽고 빠르게 식별할 수 있습니다. 또한 필터도 적용할 수 있으므로, 애플리케이션의 작업 코드에 집중할 수 있습니다.
 
 - **간단한 외부 종속성 링크**. 종속성 링크는 더 이상 System.Object, System.ValueType, System.Enum, System.Delegate에서 상속성을 나타내지 않으므로, 코드 맵에서 외부 종속성을 보다 쉽게 확인할 수 있습니다.
 
@@ -51,7 +46,7 @@ ms.locfileid: "51771281"
 
 - **보다 신속하게 반응 코드 맵 얻기**. 끌어 놓기 작업은 즉각적인 결과를 생산하고 노드 간 링크는 보다 빠르게 생성되며, 이때 노드 확장 또는 추가 노드 요청과 같은 후속 사용자 시작 작업에는 영향을 주지 않습니다. 솔루션을 빌드하지 않고 코드 맵을 만드는 경우, 이제 어셈블리를 작성하지 않은 경우와 같은 비정상적인 상황이 모두 처리됩니다.
 
-- **솔루션 다시 빌드 건너뛰기입니다.** 다이어그램을 만들고 편집할 때 더 나은 성능을 제공합니다.
+- **솔루션 다시 빌드 건너뛰기** 다이어그램을 만들고 편집할 때 더 나은 성능을 제공합니다.
 
 - **코드 포인트 노드 및 그룹 필터링**. 범주별로 코드 포인트를 표시하거나 숨기고 솔루션 폴더, 어셈블리, 네임스페이스, 프로젝트 폴더, 형식별로 코드 포인트를 그룹화하여 맵을 빠르게 정리할 수 있습니다.
 
@@ -61,7 +56,7 @@ ms.locfileid: "51771281"
 
   [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md)을 참조하세요.
 
-  **이 릴리스에서 다른 디자인 및 모델링 변경:**
+  **이 릴리스의 다른 디자인 및 모델링 변경 내용:**
 
 - **레이어 다이어그램**. 클래스 뷰 및 개체 브라우저를 사용하여 이러한 다이어그램을 업데이트합니다. 소프트웨어 디자인 요구 사항에 충족하기 위해, 레이어 다이어그램을 사용하여 소프트웨어에 대한 원하는 종속성을 설명합니다. 이러한 제약 조건을 충족하지 않는 코드를 찾고 이 기준에 맞춰 향후 코드의 유효성을 검사하여 코드를 이 디자인과 일관되게 유지합니다.
 
@@ -69,7 +64,7 @@ ms.locfileid: "51771281"
 
 - **아키텍처 탐색기**. 이제 아키텍처 탐색기를 사용하여 다이어그램을 만들 수 없습니다. 하지만 솔루션 탐색기를 사용할 수 있습니다.
 
-##  <a name="VersionSupport"></a> 아키텍처 및 모델링 도구에 대 한 버전 지원
+## <a name="VersionSupport"></a> 아키텍처 및 모델링 도구에 대 한 버전 지원
 
 Visual Studio 2015는 여러 버전에서 사용할 수 있습니다. 이러한 일부 아키텍처 및 모델링 도구에 대 한 지원을 제공 합니다. 다음 표에서는 각 도구의 사용 가능 여부를 보여 줍니다.
 

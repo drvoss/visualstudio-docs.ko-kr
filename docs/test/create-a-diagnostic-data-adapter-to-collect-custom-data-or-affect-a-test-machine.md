@@ -8,19 +8,17 @@ helpviewer_keywords:
 ms.assetid: b0b53fae-7007-4ad9-a604-21685937622f
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 67eb1a1128a811868db97dfc682c7b4eec7b2c61
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 800e866e2bfa915590060b09a98539533460bed3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965744"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>진단 데이터 어댑터를 만들어 사용자 지정 데이터를 수집하거나 테스트 머신에 영향 주기
 
-테스트를 실행할 때 진단 데이터 어댑터를 직접 만들어 데이터를 수집하거나, 테스트의 일부로 컴퓨터에 영향을 줄 수 있습니다. 예를 들어, 테스트 중인 응용 프로그램에서 만든 로그 파일을 수집하고 테스트 결과에 연결하거나 컴퓨터에 남아 있는 디스크 공간이 제한적인 상황에서 테스트를 실행할 수 있습니다. Visual Studio Enterprise에서 제공하는 API를 사용하여 테스트 실행의 특정 지점에서 작업을 수행하는 코드를 작성할 수 있습니다. 예를 들어 테스트 실행을 시작할 때, 각 개별 테스트가 완료되기 전후, 그리고 테스트 실행이 완료될 때 작업을 수행할 수 있습니다.
+테스트를 실행할 때 진단 데이터 어댑터를 직접 만들어 데이터를 수집하거나, 테스트의 일부로 컴퓨터에 영향을 줄 수 있습니다. 예를 들어, 테스트 중인 애플리케이션에서 만든 로그 파일을 수집하고 테스트 결과에 연결하거나 컴퓨터에 남아 있는 디스크 공간이 제한적인 상황에서 테스트를 실행할 수 있습니다. Visual Studio Enterprise에서 제공하는 API를 사용하여 테스트 실행의 특정 지점에서 작업을 수행하는 코드를 작성할 수 있습니다. 예를 들어 테스트 실행을 시작할 때, 각 개별 테스트가 완료되기 전후, 그리고 테스트 실행이 완료될 때 작업을 수행할 수 있습니다.
 
 구성 설정 파일을 사용하여 사용자 지정 진단 데이터 어댑터에 대한 기본 입력을 제공할 수 있습니다. 예를 들어 수집한 후 테스트 결과에 첨부할 파일의 위치 또는 시스템에 남겨 둘 디스크 공간에 대한 정보를 제공할 수 있습니다. 이 데이터는 만드는 각 테스트 설정에 대해 구성할 수 있습니다. Microsoft Test Manager에서 제공된 기본 편집기를 사용하여 이 데이터를 표시하고 편집하거나 편집기로 사용할 자체 사용자 정의 컨트롤을 만들 수 있습니다. 편집기에서 어댑터 구성에 대해 변경한 모든 내용은 테스트 설정과 함께 저장됩니다.
 

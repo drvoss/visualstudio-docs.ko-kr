@@ -8,15 +8,13 @@ helpviewer_keywords:
 ms.assetid: 93a6a1dd-663b-4ab5-8760-7d6b081561d3
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: eacdcf65619909c052f786a8b22b61b4d48292d9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: ab103b11659ee1e73537f6f41ff1fe0e6ed32076
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064500"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978564"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>방법: 웹 성능 테스트 API 사용
 
@@ -33,34 +31,34 @@ ms.locfileid: "53064500"
 
 ## <a name="to-use-the-webtesting-namespace"></a>WebTesting 네임스페이스를 사용하려면
 
-1.  웹 성능 테스트가 포함된 웹 성능 및 부하 테스트 프로젝트를 엽니다.
+1. 웹 성능 테스트가 포함된 웹 성능 및 부하 테스트 프로젝트를 엽니다.
 
-2.  테스트 솔루션에 Visual C# 또는 Visual Basic 클래스 라이브러리 프로젝트를 추가합니다.
+2. 테스트 솔루션에 Visual C# 또는 Visual Basic 클래스 라이브러리 프로젝트를 추가합니다.
 
-3.  클래스 라이브러리 프로젝트에 웹 성능 및 부하 테스트 프로젝트의 참조를 추가합니다.
+3. 클래스 라이브러리 프로젝트에 웹 성능 및 부하 테스트 프로젝트의 참조를 추가합니다.
 
-4.  클래스 라이브러리 프로젝트에 Microsoft.VisualStudio.QualityTools.WebTestFramework DLL에 대한 참조를 추가합니다.
+4. 클래스 라이브러리 프로젝트에 Microsoft.VisualStudio.QualityTools.WebTestFramework DLL에 대한 참조를 추가합니다.
 
-5.  클래스 라이브러리 프로젝트에 있는 클래스 파일에 `using` 네임스페이스에 대한 <xref:Microsoft.VisualStudio.TestTools.WebTesting> 문을 추가합니다.
+5. 클래스 라이브러리 프로젝트에 있는 클래스 파일에 `using` 네임스페이스에 대한 <xref:Microsoft.VisualStudio.TestTools.WebTesting> 문을 추가합니다.
 
-6.  <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin> 인터페이스를 구현하는 클래스를 만듭니다.
+6. <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin> 인터페이스를 구현하는 클래스를 만듭니다.
 
-7.  프로젝트를 빌드합니다.
+7. 프로젝트를 빌드합니다.
 
-8.  웹 성능 테스트 편집기를 사용하여 새 웹 성능 테스트 플러그 인을 추가합니다.
+8. 웹 성능 테스트 편집기를 사용하여 새 웹 성능 테스트 플러그 인을 추가합니다.
 
-    1.  도구 모음의 **웹 테스트 플러그 인 추가**를 선택합니다.
+    1. 도구 모음의 **웹 테스트 플러그 인 추가**를 선택합니다.
 
          **웹 테스트 플러그 인 추가** 대화 상자가 표시됩니다.
 
-    2.  **플러그 인 선택**에서 웹 성능 테스트 플러그 인 클래스를 선택합니다.
+    2. **플러그 인 선택**에서 웹 성능 테스트 플러그 인 클래스를 선택합니다.
 
-    3.  **선택한 플러그 인에 대한 속성** 창에서 런타임에 사용할 플러그 인의 초기 값을 설정합니다.
+    3. **선택한 플러그 인에 대한 속성** 창에서 런타임에 사용할 플러그 인의 초기 값을 설정합니다.
 
         > [!NOTE]
         > 플러그 인에서 속성을 원하는 만큼 노출할 수 있습니다. 속성을 공용이고 설정 가능한 기본 형식(정수, 부울 또는 문자열 등)으로 지정하기만 하면 됩니다. 나중에 [속성] 창을 사용하여 웹 성능 테스트 플러그 인 속성을 편집할 수도 있습니다.
 
-    4.  **확인**을 선택합니다.
+    4. **확인**을 선택합니다.
 
 9. 웹 성능 테스트를 실행합니다.
 

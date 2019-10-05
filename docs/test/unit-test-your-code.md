@@ -1,24 +1,22 @@
 ---
 title: 단위 테스트
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, unit tests
 - unit tests, verifying code with
 - testing code, automated tests
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 84ed32f0d8ca966449c5795094fde1feeb4d49af
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 5682d752ba2c1430d8ab708e3dadda754a1ba757
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804262"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461392"
 ---
 # <a name="unit-test-your-code"></a>코드 단위 테스트
 
@@ -26,9 +24,9 @@ ms.locfileid: "53804262"
 
 단위 테스트 도구는 다음과 같습니다.
 
-* **테스트 탐색기**&mdash;단위 테스트를 실행하고 해당 결과를 **테스트 탐색기**에서 확인할 수 있습니다. 타사 프레임워크를 비롯하여 **테스트 탐색기**용 어댑터가 있는 모든 단위 테스트 프레임워크를 사용할 수 있습니다.
+* **테스트 탐색기**&mdash;단위 테스트를 실행하고 **테스트 탐색기**에서 결과를 확인합니다. 타사 프레임워크를 비롯하여 **테스트 탐색기**용 어댑터가 있는 모든 단위 테스트 프레임워크를 사용할 수 있습니다.
 
-* **관리 코드용 Microsoft 단위 테스트 프레임우크**&mdash;관리 코드용 Microsoft 단위 테스트 프레임워크는 Visual Studio와 함께 설치되며 .NET 코드 테스트용 프레임워크를 제공합니다.
+* **관리 코드용 Microsoft 단위 테스트 프레임워크**&mdash;관리 코드용 Microsoft 단위 테스트 프레임워크는 Visual Studio와 함께 설치되며 .NET 코드 테스트용 프레임워크를 제공합니다.
 
 * **C++용 Microsoft 단위 테스트 프레임워크**&mdash;C++용 Microsoft 단위 테스트 프레임워크는 **C++을 통한 데스크톱 개발** 워크로드의 일부로 설치됩니다. 네이티브 코드 테스트용 프레임워크를 제공합니다. Google Test, Boost.Test 및 CTest 프레임워크도 포함되며 타사 어댑터를 추가 테스트 프레임 워크에서 사용할 수 있습니다. 자세한 내용은 [C/C++에 대한 단위 테스트 작성](../test/writing-unit-tests-for-c-cpp.md)을 참조하세요.
 
@@ -40,18 +38,18 @@ ms.locfileid: "53804262"
 
 ## <a name="key-tasks"></a>주요 작업
 
-다음 항목은 단위 테스트를 이해하고 만드는 데 유용합니다.
+단위 테스트를 이해하고 만드는 데 도움이 되는 다음 문서를 사용합니다.
 
 |작업|관련 항목|
 |-|-----------------------|
-|**빠른 시작 및 연습:** 다음 항목을 사용하여 코드 예제에서 Visual Studio의 단위 테스트에 대해 알아봅니다.|-   [연습: 관리 코드에 대한 단위 테스트 만들기 및 실행](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [빠른 시작: 테스트 탐색기를 사용한 테스트 기반 개발](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [기존 C++ 애플리케이션에 단위 테스트 추가](../test/how-to-use-microsoft-test-framework-for-cpp.md)|
-|**테스트 탐색기를 사용한 단위 테스트:** 테스트 탐색기를 통해 보다 다 생산적이고 효율적인 단위 테스트를 만드는 방법에 대해 알아봅니다.|-   [유닛 테스트 기본 사항](../test/unit-test-basics.md)<br />-   [단위 테스트 프로젝트 만들기](../test/create-a-unit-test-project.md)<br />-   [테스트 탐색기를 사용하여 단위 테스트 실행](../test/run-unit-tests-with-test-explorer.md)<br />-   [타사 단위 테스트 프레임워크 설치](../test/install-third-party-unit-test-frameworks.md)|
-|**C++ 코드 단위 테스트**|-   [C++용 Microsoft 단위 테스트 프레임워크를 사용하여 C/C++에 대한 단위 테스트 작성](../test/writing-unit-tests-for-c-cpp.md)|
-|**단위 테스트 격리**|-   [Microsoft Fakes를 사용하여 테스트 대상 코드 격리](../test/isolating-code-under-test-with-microsoft-fakes.md)|
-|**코드 검사를 사용하여 테스트된 프로젝트의 코드의 비율 식별:** Visual Studio 테스트 도구의 코드 검사 기능에 대해 알아봅니다.|-   [코드 검사를 사용하여 테스트할 코드 범위 결정](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**부하 테스트를 사용하여 스트레스 및 성능 분석 수행:** 애플리케이션에서 성능 및 스트레스 문제를 격리하기 위해 부하 테스트를 만들고 여기에 단위 테스트를 추가할 수 있습니다.|-   [부하 테스트(Azure Test Plans 및 TFS)](/azure/devops/test/load-test/index?view=vsts)|
-|**품질 게이트 설정:** 코드의 품질을 확인하기 위해 코드를 체크 인하거나 병합하기 전에 테스트가 실행되도록 품질 게이트를 만들 수 있습니다.|-   [체크 인 정책(Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
-|**테스트 옵션 설정:** 예를 들어 테스트 결과가 저장되는 위치를 지정할 수 있습니다.|[.runsettings 파일을 사용하여 단위 테스트 구성](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
+|**빠른 시작 및 연습:** 코드 예제에서 Visual Studio의 단위 테스트에 대해 알아봅니다.|- [연습: 관리 코드에 대한 단위 테스트 만들기 및 실행](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />- [빠른 시작: 테스트 탐색기를 사용한 테스트 기반 개발](../test/quick-start-test-driven-development-with-test-explorer.md)<br />- [방법: C++ 앱에 단위 테스트 추가](../test/how-to-use-microsoft-test-framework-for-cpp.md)|
+|**테스트 탐색기를 사용한 단위 테스트:** 테스트 탐색기를 통해 보다 다 생산적이고 효율적인 단위 테스트를 만드는 방법에 대해 알아봅니다.|- [유닛 테스트 기본 사항](../test/unit-test-basics.md)<br />- [단위 테스트 프로젝트 만들기](../test/create-a-unit-test-project.md)<br />- [테스트 탐색기를 사용하여 단위 테스트 실행](../test/run-unit-tests-with-test-explorer.md)<br />- [타사 단위 테스트 프레임워크 설치](../test/install-third-party-unit-test-frameworks.md)|
+|**단위 테스트 C++**|- [C/C++에 대한 단위 테스트 작성](../test/writing-unit-tests-for-c-cpp.md)|
+|**단위 테스트 격리**|- [Microsoft Fakes를 사용하여 테스트 대상 코드 격리](../test/isolating-code-under-test-with-microsoft-fakes.md)|
+|**코드 검사를 사용하여 테스트된 프로젝트의 코드의 비율 식별:** Visual Studio 테스트 도구의 코드 검사 기능에 대해 알아봅니다.|- [코드 검사를 사용하여 테스트할 코드 범위 결정](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
+|**부하 테스트를 사용하여 스트레스 및 성능 분석 수행:** 애플리케이션의 성능 및 스트레스 문제를 격리하는 데 도움이 되는 부하 테스트를 만드는 방법을 알아봅니다.|- [빠른 시작: 부하 테스트 프로젝트 만들기](../test/quickstart-create-a-load-test-project.md)<br />- [부하 테스트(Azure Test Plans 및 TFS)](/azure/devops/test/load-test/index?view=vsts)|
+|**품질 게이트 설정:** 코드를 체크 인하거나 병합하기 전에 테스트가 실행되도록 하는 품질 게이트를 만드는 방법에 대해 알아봅니다.|- [체크 인 정책(Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
+|**테스트 옵션 설정:** 테스트 결과가 저장되는 위치와 같이 테스트 옵션을 구성하는 방법에 대해 알아봅니다.|[.runsettings 파일을 사용하여 단위 테스트 구성](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="api-reference-documentation"></a>API 참조 설명서
 

@@ -1,14 +1,9 @@
 ---
 title: 셸 명령 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - tools.shell
 helpviewer_keywords:
@@ -23,18 +18,17 @@ ms.assetid: 737fda23-b852-45c4-a9fe-41cbce6ba70f
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5f760e449921a45f7ad22a3d81376bca432fe24a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9a85b8ef5dd99da6c82c9f63da31bec783a7c9a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242218"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438015"
 ---
 # <a name="shell-command"></a>셸 명령
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 내에서 실행 프로그램을 시작합니다.  
   
 ## <a name="syntax"></a>구문  
@@ -45,7 +39,7 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
   
 ## <a name="arguments"></a>인수  
  `path`  
- 필수. 실행할 파일의 경로와 파일 이름 또는 열 문서. 지정된 파일이 PATH 환경 변수에 있는 디렉터리 중 하나에 없으면 전체 경로가 필요합니다.  
+ 필수 요소. 실행할 파일의 경로와 파일 이름 또는 열 문서. 지정된 파일이 PATH 환경 변수에 있는 디렉터리 중 하나에 없으면 전체 경로가 필요합니다.  
   
  `args`  
  선택 사항입니다. 호출된 프로그램에 전달할 인수입니다.  
@@ -60,13 +54,13 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
  /outputwindow [또는] /output [또는] /out [또는] /o  
  선택 사항입니다. 실행 파일에 대한 출력이 **출력** 창에 표시되도록 지정합니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  `Tools.Shell` 바로 뒤에 /dir /o /c 스위치를 지정해야 합니다. 실행 파일 이름 뒤에 지정된 모든 내용은 명령줄 인수로 전달됩니다.  
   
  미리 정의된 별칭 `Shell`을 `Tools.Shell` 대신 사용할 수 있습니다.  
   
 > [!CAUTION]
->  `path` 인수가 디렉터리 경로와 파일 이름을 제공하면 다음과 같이 전체 경로 이름을 리터럴 따옴표(""")로 묶어야 합니다.  
+> `path` 인수가 디렉터리 경로와 파일 이름을 제공하면 다음과 같이 전체 경로 이름을 리터럴 따옴표(""")로 묶어야 합니다.  
   
 ```  
 Tools.Shell """C:\Program Files\SomeFile.exe"""  
@@ -79,7 +73,7 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 ```  
   
 > [!CAUTION]
->  리터럴 따옴표(""")로 경로 문자열을 묶지 않으면 Windows는 첫 번째 공백까지의 문자열 부분만 사용합니다. 예를 들어 위의 경로 문자열이 제대로 인용되지 않으면 Windows는 C:\ 루트 디렉터리에 있는 "Program"이라는 파일을 찾습니다. C:\Program.exe 실행 파일을 실제로 사용할 수 있는 경우 Windows는 불법적 인 변조로 설치한 경우 조차도 원하는 "c:\Program Files\SomeFile.exe" 프로그램 대신 해당 프로그램을 실행하려고 시도합니다.  
+> 리터럴 따옴표(""")로 경로 문자열을 묶지 않으면 Windows는 첫 번째 공백까지의 문자열 부분만 사용합니다. 예를 들어 위의 경로 문자열이 제대로 인용되지 않으면 Windows는 C:\ 루트 디렉터리에 있는 "Program"이라는 파일을 찾습니다. C:\Program.exe 실행 파일을 실제로 사용할 수 있는 경우 Windows는 불법적 인 변조로 설치한 경우 조차도 원하는 "c:\Program Files\SomeFile.exe" 프로그램 대신 해당 프로그램을 실행하려고 시도합니다.  
   
 ## <a name="example"></a>예제  
  다음 명령은 xcopy.exe를 사용하여 `MyText.txt` 파일을 `Text` 폴더에 복사합니다. xcopy.exe 출력은 **명령 창** 및 **출력** 창 모두에 표시됩니다.  
@@ -94,6 +88,3 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
  [출력 창](../../ide/reference/output-window.md)   
  [찾기/명령 상자](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

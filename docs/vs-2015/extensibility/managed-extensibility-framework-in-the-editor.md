@@ -1,26 +1,21 @@
 ---
 title: Managed Extensibility Framework 편집기에서 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - using MEF for extensions
 ms.assetid: 3f59a285-6c33-4ae3-a4fb-ec1f5aa21bd1
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 41d5768c8cfddc3474616d7a2eee16b84cd24d56
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f19b71c86d972b59a9d46f379bf7ec93f63aeb9a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754695"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679950"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>편집기의 Managed Extensibility Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51754695"
   
  MEF는.NET Framework 버전 4 System.ComponentModel.Composition.dll 어셈블리에 포함 됩니다.  
   
- MEF에 대 한 자세한 내용은 참조 하세요. [Framework MEF (Managed Extensibility)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)합니다.  
+ MEF에 대 한 자세한 내용은 참조 하세요. [Framework MEF (Managed Extensibility)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)합니다.  
   
 ### <a name="component-parts-and-composition-containers"></a>구성 요소 및 컴퍼지션 컨테이너  
  구성 요소 부분은 다음 중 하나 (또는 둘 다)를 수행할 수 있는 클래스의 멤버 이거나 클래스:  
@@ -89,26 +84,25 @@ internal IClassificationTypeRegistryService ClassificationRegistry;
   
 #### <a name="to-consume-editor-functionality-from-a-mef-component-part"></a>MEF 구성 요소 파트에서 편집기 기능을 사용 하려면  
   
-1.  전역 어셈블리 캐시 (GAC)에 있는 System.Composition.ComponentModel.dll를 편집기 어셈블리에 참조를 추가 합니다.  
+1. 전역 어셈블리 캐시 (GAC)에 있는 System.Composition.ComponentModel.dll를 편집기 어셈블리에 참조를 추가 합니다.  
   
-2.  추가 관련 문을 사용 하 여 합니다.  
+2. 추가 관련 문을 사용 하 여 합니다.  
   
     ```  
     using System.ComponentModel.Composition;  
     using Microsoft.VisualStudio.Text;  
     ```  
   
-3.  추가 된 `[Import]` 에 서비스 인터페이스에 특성을 다음과 같이 합니다.  
+3. 추가 된 `[Import]` 에 서비스 인터페이스에 특성을 다음과 같이 합니다.  
   
     ```  
     [Import]  
     ITextBufferFactoryService textBufferService;  
     ```  
   
-4.  서비스를 가져온 경우에 해당 구성 요소 중 하나를 사용할 수 있습니다.  
+4. 서비스를 가져온 경우에 해당 구성 요소 중 하나를 사용할 수 있습니다.  
   
-5.  경우에 배치 하 여 어셈블리를 컴파일한 합니다... Visual Studio 설치의 \Common7\IDE\Components\ 폴더입니다.  
+5. 경우에 배치 하 여 어셈블리를 컴파일한 합니다... Visual Studio 설치의 \Common7\IDE\Components\ 폴더입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [언어 서비스 및 편집기 확장 지점](../extensibility/language-service-and-editor-extension-points.md)
-

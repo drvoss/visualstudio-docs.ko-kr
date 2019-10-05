@@ -1,14 +1,9 @@
 ---
 title: 명령, 메뉴 및 도구 모음 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - menus [Visual Studio SDK], commands
 - commands [Visual Studio]
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 07b4ed90-dbbd-40df-b6c9-8395fd6f2ab6
 caps.latest.revision: 61
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5c9641f788951e79efb392927371bb55b49ec294
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 337bc4de9171d2f98bf0be0068b298b7f600b979
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752577"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155841"
 ---
 # <a name="commands-menus-and-toolbars"></a>명령, 메뉴 및 도구 모음
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,9 +28,9 @@ ms.locfileid: "51752577"
   
 - 일반적으로 도구 모음은 단추와 콤보 상자, 목록 상자, 텍스트 상자 및 메뉴 컨트롤러와 같은 다른 컨트롤의 행입니다. 모든 도구 모음 컨트롤은 명령과 연결됩니다. 도구 모음 단추를 클릭하면 연결된 명령이 활성화됩니다. 인쇄 명령의 프린터와 같이 일반적으로 도구 모음 단추에는 기본 명령을 나타내는 아이콘이 있습니다. 드롭다운 목록 컨트롤에서 목록의 각 항목은 다른 명령과 연결됩니다. 메뉴 컨트롤러는 컨트롤의 한 쪽은 도구 모음 단추이고 다른 쪽은 클릭할 경우 추가 명령을 표시하는 아래쪽 화살표인 하이브리드입니다. 자세한 내용은 [도구 모음에 메뉴 컨트롤러 추가](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)합니다.  
   
-- 명령을 만드는 경우 해당 이벤트 처리기도 만들어야 합니다. 이벤트 처리기는 명령이 표시되거나 사용할 수 있는 경우를 결정하며, 해당 텍스트를 수정할 수 있게 하고, 활성화된 경우 명령이 적절히 응답("라우팅")하도록 합니다. 대부분의 경우 IDE는 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 인터페이스를 사용하여 명령을 처리합니다. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]의 명령은 로컬 선택 기반의 가장 안쪽의 명령 컨텍스트부터 전역 선택 기반의 가장 바깥쪽 컨텍스트로 진행하는 계층적 방식으로 라우팅합니다. 주 메뉴에 추가된 명령은 즉시 스크립팅에 사용할 수 있습니다. 자세한 내용은 참조 하세요. [Menucommand 합니다. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md) 하 고 [선택 컨텍스트 개체](../../extensibility/internals/selection-context-objects.md)합니다.  
+- 명령을 만드는 경우 해당 이벤트 처리기도 만들어야 합니다. 이벤트 처리기는 명령이 표시되거나 사용할 수 있는 경우를 결정하며, 해당 텍스트를 수정할 수 있게 하고, 활성화된 경우 명령이 적절히 응답("라우팅")하도록 합니다. 대부분의 경우 IDE는 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 인터페이스를 사용하여 명령을 처리합니다. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 의 명령은 로컬 선택 기반의 가장 안쪽의 명령 컨텍스트부터 전역 선택 기반의 가장 바깥쪽 컨텍스트로 진행하는 계층적 방식으로 라우팅합니다. 주 메뉴에 추가된 명령은 즉시 스크립팅에 사용할 수 있습니다. 자세한 내용은 참조 하세요. [Menucommand 합니다. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md) 하 고 [선택 컨텍스트 개체](../../extensibility/internals/selection-context-objects.md)합니다.  
   
-  새 메뉴 및 도구 모음을 정의하려면 Visual Studio 명령 테이블(.vsct) 파일에서 설명해야 합니다. Visual Studio 패키지 템플릿은 템플릿에서 선택한 명령, 도구 모음 및 편집기를 지원하는 데 필요한 요소와 함께 자동으로 이 파일을 만듭니다. 또는 [VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md)에 설명된 xml 스키마를 사용하여 고유한 .vsct 파일을 작성할 수 있습니다.  
+  새 메뉴 및 도구 모음을 정의하려면 Visual Studio 명령 테이블(.vsct) 파일에서 설명해야 합니다. Visual Studio 패키지 템플릿은 템플릿에서 선택한 명령, 도구 모음 및 편집기를 지원하는 데 필요한 요소와 함께 자동으로 이 파일을 만듭니다. 또는 여기 설명 된 xml 스키마를 사용 하 여 고유한.vsct 파일을 작성할 수 있습니다. [VSCT XML 스키마 참조](../../extensibility/vsct-xml-schema-reference.md)합니다.  
   
   .Vsct 파일 작업에 대 한 자세한 내용은 참조 하세요. [Visual Studio 명령 테이블 (합니다. Vsct) 파일](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)합니다.  
   
@@ -69,4 +64,3 @@ ms.locfileid: "51752577"
 ## <a name="related-sections"></a>관련 단원  
  [VSPackage의 명령 라우팅](../../extensibility/internals/command-routing-in-vspackages.md)  
  Vspackage의 명령 라우팅 설명 합니다.
-

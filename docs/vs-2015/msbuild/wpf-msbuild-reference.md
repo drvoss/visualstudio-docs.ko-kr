@@ -1,14 +1,9 @@
 ---
 title: WPF MSBuild 참조 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -21,18 +16,17 @@ ms.assetid: 94b12890-365d-479a-b239-71109fbcb462
 caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b7b02761cad83684087099de7a061d7eed38d83b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a940cf371373d23d98ce8f89005197ee3ea7c309
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263382"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687060"
 ---
 # <a name="wpf-msbuild-reference"></a>WPF MSBuild 참조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 WPF(Windows Presentation Foundation)는 이 섹션에서 설명되는 추가 빌드 지원을 사용하여 Microsoft Build Engine(MSBuild)을 확장합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
@@ -58,7 +52,4 @@ WPF(Windows Presentation Foundation)는 이 섹션에서 설명되는 추가 빌
  빌드 작업 창 어셈블리.  
   
 ## <a name="see-also"></a>참고 항목  
- [MSBuild](http://msdn.microsoft.com/en-us/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)
-
-
-
+ [MSBuild](https://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)

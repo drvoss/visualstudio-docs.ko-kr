@@ -1,14 +1,9 @@
 ---
 title: CreateItem 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#CreateItem
 dev_langs:
@@ -23,30 +18,29 @@ ms.assetid: c4311f38-979e-4324-b524-9e8c1cbdc41a
 caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7db76f3ec603c493cef38536b6fb54b74ac6c43b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 758491a068fe2c2c7318717f5481b41839c49a3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419769"
 ---
 # <a name="createitem-task"></a>CreateItem 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 항목 컬렉션을 입력 항목으로 채웁니다. 이를 통해 한 목록의 항목을 다른 목록으로 복사할 수 있습니다.  
   
 > [!NOTE]
->  이 작업은 더 이상 사용되지 않습니다. .NET Framework 3.5부터 항목 그룹은 [Target](../msbuild/target-element-msbuild.md) 요소 내에 배치될 수 있습니다. 자세한 내용은 [항목](../msbuild/msbuild-items.md)을 참조하세요.  
+> 이 작업은 더 이상 사용되지 않습니다. .NET Framework 3.5부터 항목 그룹은 [Target](../msbuild/target-element-msbuild.md) 요소 내에 배치될 수 있습니다. 자세한 내용은 [항목](../msbuild/msbuild-items.md)을 참조하세요.  
   
 ## <a name="attributes"></a>특성  
  다음 표에서는 `CreateItem` 작업의 매개 변수에 대해 설명합니다.  
   
 |매개 변수|설명|  
 |---------------|-----------------|  
-|`AdditionalMetadata`|선택적 `String` 배열 매개 변수입니다.<br /><br /> 출력 항목에 연결할 추가 메타데이터를 지정합니다.  다음 구문을 사용하여 항목의 메타데이터 이름 및 값을 지정합니다.<br /><br /> *MetadataName* `=` *MetadataValue*<br /><br /> 여러 메타데이터 이름/값 쌍은 세미콜론으로 구분해야 합니다. 이름 또는 값에 세미콜론이나 기타 특수 문자가 포함되는 경우 이스케이프되어야 합니다. 자세한 내용은 [방법: MSBuild의 이스케이프 특수 문자](../msbuild/how-to-escape-special-characters-in-msbuild.md)를 참조하세요.|  
-|`Exclude`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 출력 항목 컬렉션에서 제외할 항목을 지정합니다. 이 매개 변수는 와일드카드 지정을 포함할 수 있습니다. 자세한 내용은 [항목](../msbuild/msbuild-items.md) 및 [방법: 빌드에서 파일 제외](../msbuild/how-to-exclude-files-from-the-build.md)를 참조하세요.|  
+|`AdditionalMetadata`|선택적 `String` 배열 매개 변수입니다.<br /><br /> 출력 항목에 연결할 추가 메타데이터를 지정합니다.  다음 구문을 사용하여 항목의 메타데이터 이름 및 값을 지정합니다.<br /><br /> *MetadataName* `=` *MetadataValue*<br /><br /> 여러 메타데이터 이름/값 쌍은 세미콜론으로 구분해야 합니다. 이름 또는 값에 세미콜론이나 기타 특수 문자가 포함되는 경우 이스케이프되어야 합니다. 자세한 내용은 [방법: MSBuild의 이스케이프 특수 문자](../msbuild/how-to-escape-special-characters-in-msbuild.md)합니다.|  
+|`Exclude`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 출력 항목 컬렉션에서 제외할 항목을 지정합니다. 이 매개 변수는 와일드카드 지정을 포함할 수 있습니다. 자세한 내용은 [항목](../msbuild/msbuild-items.md) 및 [방법: 빌드에서 파일 제외](../msbuild/how-to-exclude-files-from-the-build.md)합니다.|  
 |`Include`|필수 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수<br /><br /> 출력 항목 컬렉션에 포함할 항목을 지정합니다. 이 매개 변수는 와일드카드 지정을 포함할 수 있습니다.|  
 |`PreserveExistingMetadata`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `True`인 경우 추가 메타데이터만 적용합니다(아직 존재하지 않을 경우).|  
   
@@ -88,6 +82,3 @@ ms.locfileid: "49180910"
 ## <a name="see-also"></a>참고 항목  
  [작업 참조](../msbuild/msbuild-task-reference.md)   
  [작업](../msbuild/msbuild-tasks.md)
-
-
-

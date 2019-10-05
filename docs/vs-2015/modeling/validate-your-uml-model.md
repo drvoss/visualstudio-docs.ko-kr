@@ -1,12 +1,9 @@
 ---
 title: UML 모델 유효성 검사 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, constraints
 - UML, validation
@@ -14,13 +11,13 @@ ms.assetid: deed5092-c11d-4431-a801-1e866a103075
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fea958a20e5eee78f79f324ad19ef646f7920951
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f795928677f4a232c3ae3cec0d3bab9d9266cb35
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437454"
 ---
 # <a name="validate-your-uml-model"></a>UML 모델 유효성 검사
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ Visual Studio에서 그릴 수 있는 일부 UML 모델은 프로젝트에서 �
 - **유효성 검사 명령입니다.** 언제 든 지 유효성 검사를 호출 하려면 **UML 모델 유효성 검사** 에 **아키텍처** 메뉴.  
   
   > [!NOTE]
-  >  유효성 검사 제약 조건이 설치된 경우에만 명령이 나타납니다.  
+  > 유효성 검사 제약 조건이 설치된 경우에만 명령이 나타납니다.  
   
 - **모델을 저장 합니다.** 모델을 저장할 때 유효성 검사 제약 조건이 적용될 수 있습니다. 이들 제약 조건을 사용하면 프로젝트 해석에 따라 잘못된 모델을 저장하지 않게 할 수 있습니다.  
   
@@ -52,29 +49,26 @@ Visual Studio에서 그릴 수 있는 일부 UML 모델은 프로젝트에서 �
   
 #### <a name="to-install-a-visual-studio-extension"></a>Visual Studio 확장을 설치하려면  
   
-1.  두 번 클릭 합니다 **.vsix** Windows 탐색기 (또는 파일 탐색기)의 파일입니다.  
+1. 두 번 클릭 합니다 **.vsix** Windows 탐색기 (또는 파일 탐색기)의 파일입니다.  
   
-2.  이미 실행 중인 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 인스턴스를 다시 시작합니다.  
+2. 이미 실행 중인 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 인스턴스를 다시 시작합니다.  
   
 ## <a name="disabling-and-uninstalling-validation-constraints"></a>유효성 검사 제약 조건 사용 안 함 및 제거  
  제약 조건이 적용되지 않은 모델을 사용하려는 경우 제약 조건이 포함된 확장을 일시적으로 사용하지 않도록 설정할 수 있습니다. 이 방법으로 여러 가지 확장을 사용하거나 사용하지 않도록 설정하여 서로 다른 시간에 다양한 모델을 사용할 수 있습니다.  
   
 #### <a name="to-disable-or-uninstall-a-visual-studio-extension"></a>Visual Studio 확장을 사용하지 않도록 설정하거나 제거하려면  
   
-1.  에 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **도구** 메뉴에서 클릭 **확장 및 업데이트**합니다.  
+1. 에 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **도구** 메뉴에서 클릭 **확장 및 업데이트**합니다.  
   
-2.  클릭 확장과 **사용 안 함** 일시적으로 확장을 사용 하지 않도록 설정 합니다. 다시 활성화할 수 있습니다이 나중에 돌아가서 합니다 **확장 및 업데이트** 창입니다.  
+2. 클릭 확장과 **사용 안 함** 일시적으로 확장을 사용 하지 않도록 설정 합니다. 다시 활성화할 수 있습니다이 나중에 돌아가서 합니다 **확장 및 업데이트** 창입니다.  
   
      \- 또는 -  
   
      클릭 **제거** 확장을 제거 하려면.  
   
-3.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 다시 시작합니다.  
+3. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 다시 시작합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [UML 모델에 대 한 유효성 검사 제약 조건 정의](../modeling/define-validation-constraints-for-uml-models.md)   
  [앱 용 모델 만들기](../modeling/create-models-for-your-app.md)   
  [개발 프로세스에서 모델 사용](../modeling/use-models-in-your-development-process.md)
-
-
-

@@ -1,12 +1,9 @@
 ---
 title: ADO.NET을 사용 하 여 간단한 데이터 응용 프로그램 만들기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,75 +13,74 @@ ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4754cad05858ed48fd421301b4b0f1d2c569a926
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 70fca5b1329dc9091e0672b41de0798d93aba01a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824284"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705176"
 ---
-# <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET을 사용 하 여 간단한 데이터 응용 프로그램 만들기
+# <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET을 사용하여 간단한 데이터 애플리케이션 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
-데이터베이스의 데이터를 조작하는 응용 프로그램을 만들면 연결 문자열 정의, 데이터 삽입 및 저장 프로시저 실행과 같은 기본 작업을 수행합니다. 이 항목에 따라 Visual C# 또는 Visual Basic 및 ADO.NET을 사용 하 여 간단한 Windows Forms "데이터 폼" 응용 프로그램 내에서 데이터베이스와 상호 작용 하는 방법을 확인할 수 있습니다.  모든.NET 데이터 기술-LINQ to SQL과 Entity Framework 데이터 집합을 포함 하 여, 궁극적으로이 문서에 나와 있는 것과 매우 유사한 단계를 수행 합니다.  
+데이터베이스의 데이터를 조작하는 애플리케이션을 만들면 연결 문자열 정의, 데이터 삽입 및 저장 프로시저 실행과 같은 기본 작업을 수행합니다. 이 항목에 따라 Visual C# 또는 Visual Basic 및 ADO.NET을 사용 하 여 간단한 Windows Forms "데이터 폼" 응용 프로그램 내에서 데이터베이스와 상호 작용 하는 방법을 확인할 수 있습니다.  모든.NET 데이터 기술-LINQ to SQL과 Entity Framework 데이터 집합을 포함 하 여, 궁극적으로이 문서에 나와 있는 것과 매우 유사한 단계를 수행 합니다.  
   
  이 문서는 데이터베이스에서 데이터를 매우 빠르게 방식으로 참여 하는 간단한 방법을 보여 줍니다. 응용 프로그램을 trivial이 아닌 방법으로 데이터를 수정 하 고 데이터베이스를 업데이트 하는 경우에 Entity Framework를 사용 하 여 및 데이터 바인딩 기본 데이터의 변경 내용에 사용자 인터페이스 컨트롤을 자동으로 동기화를 사용 해야 합니다.  
   
 > [!IMPORTANT]
->  코드를 간단히 유지하기 위해 프로덕션에 사용하는 예외 처리는 포함되어 있지 않습니다.  
+> 코드를 간단히 유지하기 위해 프로덕션에 사용하는 예외 처리는 포함되어 있지 않습니다.  
   
  **항목 내용**  
   
--   [샘플 데이터베이스 설정](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
+- [샘플 데이터베이스 설정](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
   
--   [폼 만들기 및 컨트롤 추가](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_createtheformsandaddcontrols)  
+- [폼 만들기 및 컨트롤 추가](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_createtheformsandaddcontrols)  
   
--   [연결 문자열 저장](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)  
+- [연결 문자열 저장](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)  
   
--   [연결 문자열 검색](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)  
+- [연결 문자열 검색](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)  
   
--   [폼에 대 한 코드 작성](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)  
+- [폼에 대 한 코드 작성](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)  
   
--   [응용 프로그램 테스트](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
+- [응용 프로그램 테스트](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
   
 ## <a name="prerequisites"></a>전제 조건  
- 응용 프로그램을 만들려면 다음이 필요 합니다.  
+ 애플리케이션을 만들려면 다음이 필요 합니다.  
   
-- Visual Studio Community Edition입니다.  
+- Visual Studio Community Edition.  
   
-- SQL Server Express LocalDB입니다.  
+- SQL Server Express LocalDB.  
   
 - 단계를 수행 하 여 만든 작은 예제 데이터베이스 [스크립트를 사용 하 여 SQL 데이터베이스를 만들](../data-tools/create-a-sql-database-by-using-a-script.md)합니다.  
   
 - 데이터베이스에 대해 설정한 연결 문자열입니다. 열어이 값을 찾을 수 있습니다 **SQL Server 개체 탐색기**데이터베이스에 대 한 바로 가기 메뉴를 열고, 선택 **속성**, 고 다음으로 스크롤 하는 **ConnectionString** 속성입니다.  
   
-  이 항목에서는 사용자가 Visual Studio IDE의 기본 기능에 익숙하고 Windows Forms 응용 프로그램 작성, 프로젝트에 폼 추가, 폼에 단추 및 기타 컨트롤 배치, 이러한 컨트롤의 속성 설정 및 간단한 이벤트 코드 작성을 수행할 수 있다고 가정합니다. 이러한 작업에 익숙하지 경우 완료 하는 것이 좋습니다 합니다 [Getting Started with Visual C# 및 Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) 이 항목에서는 시작 하기 전에 합니다.  
+  이 항목에서는 사용자가 Visual Studio IDE의 기본 기능에 익숙하고 Windows Forms 애플리케이션 작성, 프로젝트에 폼 추가, 폼에 단추 및 기타 컨트롤 배치, 이러한 컨트롤의 속성 설정 및 간단한 이벤트 코드 작성을 수행할 수 있다고 가정합니다. 이러한 작업에 익숙하지 경우 완료 하는 것이 좋습니다 합니다 [Getting Started with Visual C# 및 Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) 이 항목에서는 시작 하기 전에 합니다.  
   
-##  <a name="BKMK_setupthesampledatabase"></a> 샘플 데이터베이스 설정  
- 이 연습의 샘플 데이터베이스는 고객 및 주문 테이블로 구성되어 있습니다. 테이블에는 처음에 데이터가 없지만 사용자가 만드는 응용 프로그램을 실행할 때 데이터가 추가됩니다. 데이터베이스에는 5개의 간단한 저장 프로시저도 있습니다. [스크립트를 사용 하 여 SQL database 만들기](../data-tools/create-a-sql-database-by-using-a-script.md) 테이블, 기본 및 외래 키, 제약 조건 및 저장된 프로시저를 만드는 TRANSACT-SQL 스크립트가 들어 있습니다.  
+## <a name="BKMK_setupthesampledatabase"></a> 샘플 데이터베이스 설정  
+ 이 연습의 샘플 데이터베이스는 고객 및 주문 테이블로 구성되어 있습니다. 테이블에는 처음에 데이터가 없지만 사용자가 만드는 애플리케이션을 실행할 때 데이터가 추가됩니다. 데이터베이스에는 5개의 간단한 저장 프로시저도 있습니다. [스크립트를 사용 하 여 SQL database 만들기](../data-tools/create-a-sql-database-by-using-a-script.md) 테이블, 기본 및 외래 키, 제약 조건 및 저장된 프로시저를 만드는 TRANSACT-SQL 스크립트가 들어 있습니다.  
   
-##  <a name="BKMK_createtheformsandaddcontrols"></a> 폼 만들기 및 컨트롤 추가  
+## <a name="BKMK_createtheformsandaddcontrols"></a> 폼 만들기 및 컨트롤 추가  
   
 1. Windows Forms 응용 프로그램의 경우 프로젝트를 만들고 SimpleDataApp 이름입니다.  
   
     Visual Studio에서 프로젝트와 Form1이라는 빈 Windows 폼을 포함한 여러 파일을 만듭니다.  
   
-2. 세 개의 폼을 갖도록 두 개의 Windows forms 프로젝트에 추가 하 고 다음과 같은 이름 지정:  
+2. 프로젝트에 두 개의 Windows 양식을 추가하여 총 세 개의 양식을 만든 다음, 다음 이름을 지정합니다.  
   
-   -   탐색  
+   - 탐색  
   
-   -   NewCustomer  
+   - NewCustomer  
   
-   -   FillOrCancel  
+   - FillOrCancel  
   
 3. 각 폼에 대해 다음 그림에 나오는 텍스트 상자, 단추 및 기타 컨트롤을 추가합니다. 각 컨트롤에 대해 테이블이 설명하는 속성을 설정합니다.  
   
    > [!NOTE]
-   >  그룹 상자 및 레이블 컨트롤도 선명성을 더해 주지만 코드에서는 사용하지 않습니다.  
+   > 그룹 상자 및 레이블 컨트롤도 선명성을 더해 주지만 코드에서는 사용하지 않습니다.  
   
-   **Navigation 폼**  
+   **탐색 양식**  
   
    ![탐색 대화 상자](../data-tools/media/simpleappnav.png "SimpleAppNav")  
   
@@ -94,7 +90,7 @@ ms.locfileid: "49824284"
 |단추|Name = btnGoToFillOrCancel|  
 |단추|Name = btnExit|  
   
- **NewCustomer 폼**  
+ **NewCustomer 양식**  
   
  ![새 고객을 추가 하 고 주문 하기](../data-tools/media/simpleappnewcust.png "SimpleAppNewCust")  
   
@@ -109,7 +105,7 @@ ms.locfileid: "49824284"
 |단추|Name = btnAddAnotherAccount|  
 |단추|Name = btnAddFinish|  
   
- **FillOrCancel 폼**  
+ **FillOrCancel 양식**  
   
  ![주문 입력 또는 취소](../data-tools/media/simpleappcancelfill.png "SimpleAppCancelFill")  
   
@@ -123,33 +119,33 @@ ms.locfileid: "49824284"
 |단추|Name = btnFillOrder|  
 |단추|Name = btnFinishUpdates|  
   
-##  <a name="BKMK_storetheconnectionstring"></a> 연결 문자열 저장  
- 응용 프로그램이 데이터베이스에 대한 연결을 열려면 응용 프로그램에는 연결 문자열에 액세스할 수 있어야 합니다. 각 폼에 문자열을 수동으로 입력를 방지 하려면 프로젝트에서 app.config 파일에 문자열을 저장 하 고 응용 프로그램의 폼에서 메서드를 호출할 때 문자열을 반환 하는 메서드를 만듭니다.  
+## <a name="BKMK_storetheconnectionstring"></a> 연결 문자열 저장  
+ 애플리케이션이 데이터베이스에 대한 연결을 열려면 애플리케이션에는 연결 문자열에 액세스할 수 있어야 합니다. 각 폼에 문자열을 수동으로 입력를 방지 하려면 프로젝트에서 app.config 파일에 문자열을 저장 하 고 응용 프로그램의 폼에서 메서드를 호출할 때 문자열을 반환 하는 메서드를 만듭니다.  
   
  연결 문자열을 찾을 수 있습니다 **SQL Server 개체 탐색기** 데이터베이스를 마우스 오른쪽 단추로 클릭를 선택 하 여 **속성**를 찾아 ConnectionString 속성입니다. Ctrl + A를 사용 하 여 문자열을 선택 합니다.  
   
-1.  **솔루션 탐색기**를 선택 합니다 **속성** 노드는 프로젝트를 선택한 후 아래의 **생성 되는 Settings.settings**합니다.  
+1. **솔루션 탐색기**를 선택 합니다 **속성** 노드는 프로젝트를 선택한 후 아래의 **생성 되는 Settings.settings**합니다.  
   
-2.  에 **이름을** 열, 입력 `connString`합니다.  
+2. 에 **이름을** 열, 입력 `connString`합니다.  
   
-3.  에 **형식** 목록에서 **(문자열)** 합니다.  
+3. 에 **형식** 목록에서 **(문자열)** 합니다.  
   
-4.  에 **범위** 목록에서 **응용 프로그램**합니다.  
+4. 에 **범위** 목록에서 **응용 프로그램**합니다.  
   
-5.  에 **값** 열 (하지 않고 따옴표 외부), 연결 문자열을 입력 하 고 다음 변경 내용을 저장 합니다.  
+5. 에 **값** 열 (하지 않고 따옴표 외부), 연결 문자열을 입력 하 고 다음 변경 내용을 저장 합니다.  
   
 > [!NOTE]
->  실제 응용 프로그램에서 연결 문자열을 안전 하 게에 설명 된 대로 저장 해야 [연결 문자열 및 구성 파일](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8)합니다.  
+> 실제 응용 프로그램에서 연결 문자열을 안전 하 게에 설명 된 대로 저장 해야 [연결 문자열 및 구성 파일](https://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8)합니다.  
   
-##  <a name="BKMK_retrievetheconnectionstring"></a> 연결 문자열 검색  
+## <a name="BKMK_retrievetheconnectionstring"></a> 연결 문자열 검색  
   
-1.  메뉴 모음에서 선택 **프로젝트** > **참조 추가**, 한 다음 System.Configuration.dll에 대 한 참조를 추가 합니다.  
+1. 메뉴 모음에서 선택 **프로젝트** > **참조 추가**, 한 다음 System.Configuration.dll에 대 한 참조를 추가 합니다.  
   
-2.  메뉴 모음에서 선택 **프로젝트** > **클래스 추가** 클래스 파일을 프로젝트에 추가 하 여 다음 파일 이름을 `Utility`입니다.  
+2. 메뉴 모음에서 선택 **프로젝트** > **클래스 추가** 클래스 파일을 프로젝트에 추가 하 여 다음 파일 이름을 `Utility`입니다.  
   
      Visual Studio에서 파일을 만들고 및에 표시 **솔루션 탐색기**합니다.  
   
-3.  유틸리티 파일에서 자리 표시자 코드를 다음 코드로 바꿉니다. 코드 섹션을 식별하는 번호가 매겨진 주석(Util- 접두사 포함)을 주목하세요. 코드 아래 표에 요점이 요약되어 있습니다.  
+3. 유틸리티 파일에서 자리 표시자 코드를 다음 코드로 바꿉니다. 코드 섹션을 식별하는 번호가 매겨진 주석(Util- 접두사 포함)을 주목하세요. 코드 아래 표에 요점이 요약되어 있습니다.  
   
     ```csharp  
     using System;  
@@ -223,11 +219,11 @@ ms.locfileid: "49824284"
     |Util-2|`returnValue` 변수를 정의하고 `null`(C#) 또는 `Nothing`(Visual Basic)으로 초기화합니다.|  
     |Util-3|입력 한 경우에 `connString` 연결 문자열의 이름으로는 **속성** 지정 해야 창 `"SimpleDataApp.Properties.Settings.connString"` (C#) 또는 `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) 코드에서입니다.|  
   
-##  <a name="BKMK_writethecodefortheforms"></a> 폼에 대 한 코드 작성  
+## <a name="BKMK_writethecodefortheforms"></a> 폼에 대 한 코드 작성  
  이 섹션에서는 각 폼에서 수행되는 작업에 대한 간단한 개요를 포함하며, 폼을 만드는 코드를 보여 줍니다. 번호가 매겨진 주석은 해당 코드 섹션을 식별합니다.  
   
 ### <a name="navigation-form"></a>Navigation 폼  
- 응용 프로그램을 실행하면 Navigation 폼이 열립니다. 합니다 **계정 추가** 단추는 NewCustomer 폼이 열립니다. 합니다 **채우기 또는 취소 주문** 단추 FillOrCancel 폼이 열립니다. 합니다 **종료** 단추는 응용 프로그램을 닫습니다.  
+ 애플리케이션을 실행하면 Navigation 폼이 열립니다. **계정 추가** 단추는 NewCustomer 양식을 엽니다. **주문 이행 또는 취소** 단추를 누르면 FillOrCancel 양식이 열립니다. **끝내기** 단추를 클릭하면 애플리케이션이 닫힙니다.  
   
 #### <a name="make-the-navigation-form-the-startup-form"></a>Navigation 폼을 시작 폼으로 만들기  
  사용 하는 C#의 경우 **솔루션 탐색기**Program.cs를 열고 변경 하는 `Application.Run` 이 줄: `Application.Run(new Navigation());`  
@@ -730,11 +726,11 @@ End Namespace
 |NC-12|사용 합니다 `ExecuteNonQuery` 에 대 한 메서드 `cmdNewCustomer` 실행 하는 `Sales.uspNewCustomer` 저장 프로시저. 이 저장 프로시저가 실행 될은 `INSERT` 문, 쿼리 없습니다.|  
 |NC-13|데이터베이스에서 IDENTITY 값으로 `@CustomerID` 값이 반환됩니다. 에 표시할 문자열로 변환 해야 하는 정수 이기 때문에 합니다 **고객 ID** 입력란입니다.<br /><br /> -선언 하면 `parsedCustomerID` NC-2에서 합니다.<br />-저장 된 `@CustomerID` 값 `parsedCustomerID` 나중에 사용할 수 있습니다.<br />-반환 된 고객 ID를 문자열로 변환 하 고에 삽입 `txtCustomerID.Text`합니다.|  
 |NC-14|이 샘플에서는 간단한 (비프로덕션 품질) catch 절을 추가 합니다.|  
-|NC-15|연결을 사용한 후에는 반드시 닫아야 연결 풀로 해제됩니다. 참조 [SQL Server 연결 풀링 (ADO.NET)](http://msdn.microsoft.com/library/8xx3tyca\(l=en-us,v=VS.110\).aspx)합니다.|  
+|NC-15|연결을 사용한 후에는 반드시 닫아야 연결 풀로 해제됩니다. 참조 [SQL Server 연결 풀링 (ADO.NET)](https://msdn.microsoft.com/library/8xx3tyca\(l=en-us,v=VS.110\).aspx)합니다.|  
 |NC-16|고객 이름이 있는지 확인하는 메서드를 정의합니다.<br /><br /> -텍스트 상자가 비어 있는 경우 메시지를 표시 하 고 반환 `false`이므로 계정을 만들려면 이름이 필요 합니다.<br />-텍스트 상자가 비어 있지 않은 경우 반환 `true`합니다.|  
 |NC-17|`btnPlaceOrder` 단추에 대한 클릭 이벤트 처리기에 코드를 추가합니다.|  
 |NC-18|필수 입력이 없는 경우 `uspPlaceNewOrder`가 실행되지 않도록 `btnPlaceOrder_Click` 이벤트 코드 주변의 `isPlaceOrderReady`에 대한 호출을 래핑합니다.|  
-|NC-19~NC-25|이러한 코드 섹션은 `btnCreateAccount_Click` 이벤트 처리기에 추가한 코드와 유사합니다.<br /><br /> -NC-19입니다. `SqlCommand` 개체인 `cmdNewOrder`를 만들고 `Sales.uspPlaceOrder`를 저장 프로시저로 지정합니다.<br />-NC-20-23 NC는 저장된 프로시저에 대 한 입력된 매개 변수입니다.<br />-NC-24입니다. `@RC`에는 데이터베이스에서 생성된 주문 ID인 반환 값이 포함됩니다. 이 매개 변수의 방향은 `ReturnValue`로 지정됩니다.<br />-NC-25입니다. NC-2에서 선언한 `orderID` 변수에 주문 ID 값을 저장하고 값을 메시지 상자에 표시합니다.|  
+|NC-19~NC-25|이러한 코드 섹션은 `btnCreateAccount_Click` 이벤트 처리기에 추가한 코드와 유사합니다.<br /><br /> -   NC-19. `SqlCommand` 개체인 `cmdNewOrder`를 만들고 `Sales.uspPlaceOrder`를 저장 프로시저로 지정합니다.<br />-NC-20-23 NC는 저장된 프로시저에 대 한 입력된 매개 변수입니다.<br />-   NC-24. `@RC`에는 데이터베이스에서 생성된 주문 ID인 반환 값이 포함됩니다. 이 매개 변수의 방향은 `ReturnValue`로 지정됩니다.<br />-   NC-25. NC-2에서 선언한 `orderID` 변수에 주문 ID 값을 저장하고 값을 메시지 상자에 표시합니다.|  
 |NC-26|고객 ID가 있는지와 금액이 `numOrderAmount`에 지정되었는지 확인할 수 있는 메서드를 정의합니다.|  
 |NC-27|`btnAddAnotherAccount` 클릭 이벤트 처리기에서 `ClearForm` 메서드를 호출합니다.|  
 |NC-28|다른 고객을 추가하려면 폼에서 값을 지우는 `ClearForm` 메서드를 만듭니다.|  
@@ -1143,6 +1139,5 @@ End Namespace
 |FC-8|`btnFillOrder`에 대한 Click 이벤트 처리기에 추가합니다. 이 코드는 `Sales.uspFillOrder` 저장 프로시저를 실행합니다.|  
 |FC-9|확인 하는 메서드를 만듭니다 `OrderID` 매개 변수로 전송 될 준비가 되는 `SqlCommand` 개체입니다.<br /><br /> -확인에 ID를 입력 된 않도록 `txtOrderID`합니다.<br />-사용 `Regex.IsMatch` 에 정수가 아닌 문자에 대 한 간단한 검사를 정의 합니다.<br />-선언 하는 `parsedOrderID` FC 2에 있는 변수입니다.<br />-올바르면 입력 텍스트를 정수로 변환 하 고 값을 저장 합니다 `parsedOrderID` 변수입니다.<br />-줄 바꿈 합니다 `isOrderID` 관련 메서드는 `btnFindByOrderID`, `btnCancelOrder`, 및 `btnFillOrder` Click 이벤트 처리기.|  
   
-##  <a name="BKMK_testyourapplication"></a> 응용 프로그램 테스트  
+## <a name="BKMK_testyourapplication"></a> 응용 프로그램 테스트  
  빌드 및 각 Click 이벤트 처리기를 코딩 한 후 응용 프로그램을 테스트 하려면 F5 키를 선택 하 고 코딩을 마친 후 다음입니다.
-

@@ -1,8 +1,6 @@
 ---
 title: 메서드에 대한 호출 찾기
 ms.date: 05/18/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.CallHierarchy
@@ -10,15 +8,15 @@ helpviewer_keywords:
 - Call Hierarchy
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f386d3d73de45c539752207fb55200e8e8ee715
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ad95d1c48992b8ecac6715db41aa9d85791999bb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791366"
 ---
 # <a name="view-call-hierarchy"></a>호출 계층 구조 보기
 

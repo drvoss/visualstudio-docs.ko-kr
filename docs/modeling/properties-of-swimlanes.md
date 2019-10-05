@@ -8,16 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, swimlane
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: f89dd915498d2528a0a40a3e7a0af8b5d65a5b4f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ab2e10eed7452bf58390513bed68fac3f4c9a0f6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823907"
 ---
 # <a name="properties-of-swimlanes"></a>스윔 레인의 속성
 다이어그램에 스윔 레인을 추가할 수 있습니다. 스윔 레인은 다이어그램을 세로 또는 가로 영역 나눕니다. 스윔 레인 내에서 표시할 다른 셰이프를 정의할 수 있습니다. 자세한 내용은 [도메인별 언어 정의 방법](../modeling/how-to-define-a-domain-specific-language.md)합니다. 이러한 속성을 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [사용자 지정 및 도메인 특정 언어 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)합니다.

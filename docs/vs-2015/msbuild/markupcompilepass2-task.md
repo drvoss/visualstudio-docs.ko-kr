@@ -1,14 +1,9 @@
 ---
 title: MarkupCompilePass2 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -22,18 +17,17 @@ ms.assetid: 1d25689a-d21f-4b05-be26-95aa0ed4fd03
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ea61e827bfae47c3bea961cb15c208f585aa6ed9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 47e27dbfa221a9476488d563ae2a48235a08f769
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179240"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703496"
 ---
 # <a name="markupcompilepass2-task"></a>MarkupCompilePass2 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass2> 작업은 같은 프로젝트의 형식을 참조하는 [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] 파일에 대해 두 번째 패스 태그 컴파일을 수행합니다.  
   
 ## <a name="task-parameters"></a>작업 매개 변수  
@@ -53,7 +47,7 @@ ms.locfileid: "49179240"
 |`RootNamespace`|선택적 **문자열** 매개 변수입니다.<br /><br /> 프로젝트 내에 있는 클래스에 대한 루트 네임스페이스를 지정합니다. **RootNamespace**는 해당 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 파일에 `x:Class` 특성이 포함되어 있지 않을 때 생성된 관리 코드 파일의 기본 네임스페이스로도 사용됩니다.|  
 |`XAMLDebuggingInformation`|선택적 **Boolean** 매개 변수입니다.<br /><br /> **true**이면 디버깅에 도움을 주기 위해 진단 정보가 생성되고 컴파일된 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)]에 포함됩니다.|  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  **MarkupCompilePass2**를 실행하기 전에 해당 마크업 컴파일 패스가 지연된 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 파일에서 사용되는 형식을 포함하는 임시 어셈블리를 생성해야 합니다. **GenerateTemporaryTargetAssembly** 작업을 실행하여 임시 어셈블리를 생성합니다.  
   
  생성된 임시 어셈블리에 대한 참조가 <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass2> 작업이 실행될 때 제공되어 첫 번째 태그 컴파일 패스에서 컴파일이 지연되었던 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 파일이 이진 형식으로 컴파일되도록 합니다.  
@@ -82,8 +76,5 @@ ms.locfileid: "49179240"
  [작업 참조](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild 참조](../msbuild/msbuild-reference.md)   
  [작업 참조](../msbuild/msbuild-task-reference.md)   
- [WPF 응용 프로그램 빌드(WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
- [WPF XAML 브라우저 응용 프로그램 개요](http://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)
-
-
-
+ [WPF 애플리케이션 빌드(WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
+ [WPF XAML 브라우저 애플리케이션 개요](https://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)

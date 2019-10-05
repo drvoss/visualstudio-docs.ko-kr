@@ -1,26 +1,21 @@
 ---
 title: 편집기 가져오기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
 ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8f82815871f59dfcf4d384157a9461388e96d05e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1fc32d0126d912acab104ecefe3cb62d80b8513f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759023"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690311"
 ---
 # <a name="editor-imports"></a>편집기 가져오기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51759023"
  편집기 가져오기를 사용 하려면 가져올 있습니다 필드 또는 Managed Extensibility Framework 구성 요소 파트를 내보내는 클래스의 속성으로.  
   
 > [!NOTE]
->  Managed Extensibility Framework에 대 한 자세한 내용은 참조 하세요. [Framework MEF (Managed Extensibility)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)합니다.  
+> Managed Extensibility Framework에 대 한 자세한 내용은 참조 하세요. [Framework MEF (Managed Extensibility)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)합니다.  
   
 ## <a name="import-syntax"></a>가져오기 구문  
  다음 예제에서는 편집기를 가져오는 방법 옵션 팩터리 서비스를 보여 줍니다.  
@@ -51,15 +46,15 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  [연습: 여백 문자 모양 만들기](../extensibility/walkthrough-creating-a-margin-glyph.md)  
   
- [연습: 텍스트 뷰 사용자 지정](../extensibility/walkthrough-customizing-the-text-view.md)  
+ [연습: 텍스트 보기 사용자 지정](../extensibility/walkthrough-customizing-the-text-view.md)  
   
  [연습: 텍스트 강조 표시](../extensibility/walkthrough-highlighting-text.md)  
   
  [연습: QuickInfo 도구 설명 표시](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [연습: 서명 도움말 표시](../extensibility/walkthrough-displaying-signature-help.md)  
+ [연습: 시그니처 도움말 표시](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [연습: 문 완성 표시](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [연습: 명령문 완성 표시](../extensibility/walkthrough-displaying-statement-completion.md)  
   
  [연습: 스마트 태그 표시](../misc/walkthrough-displaying-smarttags.md)  
   
@@ -71,7 +66,7 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
 internal SVsServiceProvider ServiceProvider = null;   
 ```  
   
- 참조 [연습: 편집기 확장에서 DTE 개체 액세스](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) 자세한 내용은 합니다.  
+ [연습: 편집기 확장에서 DTE 개체 액세스](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) 자세한 내용은 합니다.  
   
 ## <a name="services"></a>서비스  
  편집기 서비스는 서비스를 제공 하 고 여러 구성 요소 간에 공유 되는 일반적으로 단일 엔터티입니다.  
@@ -129,4 +124,3 @@ internal SVsServiceProvider ServiceProvider = null;
   
 ## <a name="see-also"></a>참고 항목  
  [언어 서비스 및 편집기 확장 지점](../extensibility/language-service-and-editor-extension-points.md)
-

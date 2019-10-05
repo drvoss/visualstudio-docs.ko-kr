@@ -1,5 +1,5 @@
 ---
-title: WPF 응용 프로그램에서 관련 데이터 표시
+title: WPF 애플리케이션에서 관련 데이터 표시
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,19 +13,17 @@ helpviewer_keywords:
 ms.assetid: 3aa80194-0191-474d-9d28-5ec05654b426
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f37fdeb7ddd305c7c258958d92c08cf1d8f2a4a8
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: MTE95
+ms.openlocfilehash: da6f276e714c816ea9b3c1b735ad50f31ffdc3c0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567073"
 ---
-# <a name="display-related-data-in-wpf-applications"></a>WPF 응용 프로그램에서 관련 데이터 표시
+# <a name="display-related-data-in-wpf-applications"></a>WPF 애플리케이션에서 관련 데이터 표시
 
 일부 응용 프로그램에서 여러 테이블 또는 부모-자식 관계에서 서로 관련 된 엔터티를 함께 제공 되는 데이터로 작업 하는 것이 좋습니다. 예를 들어 고객을 표시 하는 표를 표시 하려면 수는 `Customers` 테이블입니다. 사용자가 특정 고객을 선택 하면 다른 표의 관련에서 해당 고객의 주문을 `Orders` 테이블입니다.
 
@@ -33,9 +31,9 @@ ms.locfileid: "52304599"
 
 ## <a name="to-create-controls-that-display-related-records"></a>관련된 레코드를 표시 하는 컨트롤을 만들려면
 
-1. 데이터 **메뉴에서 데이터 소스 표시**를 클릭하여 데이터 소스** 창을 엽니다.
+1. **데이터** 메뉴에서 **데이터 원본 표시**를 클릭하여 **데이터 원본** 창을 엽니다.
 
-2. 새 데이터 소스 추가**를 클릭하고 데이터 소스 구성 마법사**를 완료합니다.
+2. **새 데이터 원본 추가**를 클릭하고 **데이터 원본 구성 마법사** 완료합니다.
 
 3. WPF 디자이너를 열고 디자이너의 항목에 대 한 유효한 놓기 대상 컨테이너가 포함 되어 있는지 확인 합니다 **데이터 원본** 창입니다.
 
@@ -57,7 +55,7 @@ ms.locfileid: "52304599"
 
      ![관계를 보여 주는 데이터 소스 창](../data-tools/media/datasources2.gif)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [Visual Studio에서 데이터에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [WPF 응용 프로그램에서 조회 테이블 만들기](../data-tools/create-lookup-tables-in-wpf-applications.md)

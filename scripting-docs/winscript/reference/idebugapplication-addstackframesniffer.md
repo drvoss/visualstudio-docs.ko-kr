@@ -2,7 +2,6 @@
 title: IDebugApplication::AddStackFrameSniffer | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 89faa6481bd5e5934ae2d3b85a0bade83949633a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 16fb941a91482c548284dc3d4317a472fd9be641
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725563"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62991057"
 ---
 # <a name="idebugapplicationaddstackframesniffer"></a>IDebugApplication::AddStackFrameSniffer
 이 응용 프로그램에는 스택 프레임 열거자 공급자를 추가합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT AddStackFrameSniffer(  
    IDebugStackFrameSniffer*  pdsfs,  
    DWORD*                    pdwCookie  
@@ -52,7 +51,7 @@ HRESULT AddStackFrameSniffer(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 언어 엔진에서 일반적으로 해당 스택 프레임이 하 고 디버거를 노출 하려면이 메서드를 호출 하지만 다른 엔터티의 스택 프레임을 노출 하는 것이 같습니다.  
+ 언어 엔진에서 일반적으로 해당 스택 프레임을 디버거에 노출 하려면이 메서드를 호출 이지만 다른 엔터티 스택 프레임을 노출할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugApplication 인터페이스](../../winscript/reference/idebugapplication-interface.md)   

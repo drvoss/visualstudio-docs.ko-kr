@@ -1,30 +1,24 @@
 ---
 title: 옵션 페이지, 디버깅 노드 속성 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 ms.assetid: 564cc8b2-0084-420e-b560-200cc5621a7e
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8bcc4637ebb933c2d6cc8a06d15ad70c1fbb76c1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bd02ae0c3cd9f05e817e335b942a76c849655e44
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223851"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674724"
 ---
 # <a name="options-page-debugging-node-properties"></a>옵션 페이지, 디버깅 노드 속성
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 다음 표에서는 **옵션** 대화 상자의 **디버깅** 범주, `DTE.Properties("Debugging", <Property Page>)`와 연관된 일부 페이지(또는 속성 컬렉션)에 대해 설명합니다.  
   
 ## <a name="general"></a>일반  
@@ -66,7 +60,7 @@ ms.locfileid: "49223851"
 |InvokedByCommands|Get/Set (Boolean)|사용자가 **한 단계 실행** 또는 **계속**과 같은 디버깅 명령을 선택할 때 편집하며 계속하기가 자동으로 코드 변경 내용을 적용할지 결정합니다. 이 옵션은 네이티브 코드에만 적용됩니다.|  
 |InvokedByCommandsAskFirst|Get/Set (Boolean)|사용자가 **한 단계 실행** 또는 **계속**과 같은 디버깅 명령을 선택할 때 편집하며 계속하기가 코드 변경 내용을 적용하기 위한 권한에 대한 프롬프트를 사용자에게 표시할지 결정합니다. 이 옵션은 네이티브 코드에만 적용됩니다.|  
 |WarnAboutStaleCode|Get/Set (Boolean)|편집하며 계속하기에서 오래되거나 부실한 코드가 실행될 경우 디버거가 경고 메시지를 실행할지 결정합니다. 이 옵션은 네이티브 코드에만 적용됩니다.|  
-|RelinkChangesOnStop|Get/Set(Short)|응용 프로그램 실행이 중지될 때 편집하며 계속하기에 의해 적용된 코드 변경 내용을 Visual Studio가 다시 연결할지 결정합니다. 이 옵션은 네이티브 코드에만 적용됩니다.|  
+|RelinkChangesOnStop|Get/Set(Short)|애플리케이션 실행이 중지될 때 편집하며 계속하기에 의해 적용된 코드 변경 내용을 Visual Studio가 다시 연결할지 결정합니다. 이 옵션은 네이티브 코드에만 적용됩니다.|  
 |AllowPrecompiling|Get/Set(Short)|편집하며 계속하기가 백그라운드에서 미리 컴파일된 헤더를 로드하도록 허용할지 결정합니다. 이 옵션은 네이티브 코드에만 적용됩니다.|  
   
 ## <a name="just-in-time"></a>Just-In-Time  
@@ -87,13 +81,10 @@ ms.locfileid: "49223851"
 |EnableRPC|Get/Set (Boolean)|디버거가 COM 원격 프로시저 호출에 대해 한 단계씩 코드를 실행할 수 있는지 결정합니다.|  
   
 ## <a name="see-also"></a>참고 항목  
- [옵션 설정 제어](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
- [옵션 페이지에서 속성 항목의 이름 확인](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
+ [옵션 설정 제어](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
+ [옵션 페이지에서 속성 항목의 이름 확인](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [옵션 페이지, 글꼴 및 색 노드 속성](../../ide/reference/options-page-fonts-and-colors-node-properties.md)   
  [옵션 페이지, 텍스트 편집기 노드 속성](../../ide/reference/options-page-text-editor-node-properties.md)   
  [옵션 대화 상자, 디버깅, 일반](../../debugger/general-debugging-options-dialog-box.md)   
- [옵션 대화 상자, 디버깅, 편집하며 계속하기](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
+ [옵션 대화 상자, 디버깅, 편집하며 계속하기](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
  [옵션 대화 상자, 디버깅, Just-In-Time](../../debugger/just-in-time-debugging-options-dialog-box.md)
-
-
-

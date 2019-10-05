@@ -1,14 +1,9 @@
 ---
 title: MSBuild 특수 문자 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - escape characters
 - escape
@@ -17,21 +12,20 @@ ms.assetid: 545e6a59-1093-4514-935e-78679a46fb3c
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0c9ce1697f370ec1beec8ce12faceb15825fbe5f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a54f446cb82b3181ee057d4887b37940868a5920
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256453"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150758"
 ---
 # <a name="msbuild-special-characters"></a>MSBuild 특수 문자
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]는 특정 컨텍스트에서 특별한 용도로 사용할 일부 문자를 예약합니다. 예약된 컨텍스트에서 문자 그대로 사용하려는 경우 이러한 문자를 이스케이프 처리해야 합니다. 예를 들어 별표는 항목 정의의 `Include` 및 `Exclude` 특성 및 `CreateItem`에 대한 호출에서만 특별한 의미를 가집니다. 별표를 해당 컨텍스트 중 하나에서 별표로 표시하려면 이스케이프 처리해야 합니다. 모든 다른 컨텍스트에서 별표를 표시하려는 곳에 입력합니다.  
   
- 특수 문자를 이스케이프 처리하려면 %*xx* 구문을 사용합니다. 여기서 *xx*는 문자의 ASCII 16진수 값을 나타냅니다. 자세한 내용은 [방법: MSBuild의 이스케이프 특수 문자](../msbuild/how-to-escape-special-characters-in-msbuild.md)를 참조하세요.  
+ 특수 문자를 이스케이프 처리하려면 %*xx* 구문을 사용합니다. 여기서 *xx*는 문자의 ASCII 16진수 값을 나타냅니다. 자세한 내용은 [방법: MSBuild의 이스케이프 특수 문자](../msbuild/how-to-escape-special-characters-in-msbuild.md)합니다.  
   
 ## <a name="special-characters"></a>특수 문자  
  다음 표에서는 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 특수 문자를 나열합니다.  
@@ -48,7 +42,4 @@ ms.locfileid: "49256453"
   
 ## <a name="see-also"></a>참고 항목  
  [고급 개념](../msbuild/msbuild-advanced-concepts.md)   
- [항목](../msbuild/msbuild-items.md)
-
-
-
+ [Items](../msbuild/msbuild-items.md)

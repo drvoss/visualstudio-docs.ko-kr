@@ -1,26 +1,21 @@
 ---
 title: 포트에 알림 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - ports, notification
 ms.assetid: f9fce48e-7d4e-4627-a0fb-77b75428146a
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c3cfcc4ee357301aa0e38468b13b983c3d5ca55a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8cf3969dda783882f24d02a748f345cdb66fe413
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410065"
 ---
 # <a name="notifying-the-port"></a>포트에 알림
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,12 +33,12 @@ ms.locfileid: "51763370"
    프로그래밍 방식으로 포트를 프로그램에 새 노드를 먼저 받으면 만듭니다는 [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) 프로그램을 나타내는 인터페이스입니다.  
   
 > [!NOTE]
->  이 혼동 하지는 `IDebugProgram2` 디버그 엔진 (DE)에 의해 나중에 생성 된 인터페이스입니다.  
+> 이 혼동 하지는 `IDebugProgram2` 디버그 엔진 (DE)에 의해 나중에 생성 된 인터페이스입니다.  
   
  전송 포트를 [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) COM 사용 하 여 세션 디버그 관리자 SDM ()를 다시 생성 이벤트를 프로그램 `IConnectionPoint` 인터페이스.  
   
 > [!NOTE]
->  이 혼동 하지는 `IDebugProgramCreateEvent2` 는 DE에서 나중에 전송 되는 인터페이스입니다.  
+> 이 혼동 하지는 `IDebugProgramCreateEvent2` 는 DE에서 나중에 전송 되는 인터페이스입니다.  
   
  포트 이벤트 인터페이스 자체와 함께 보냅니다 합니다 [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md), [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md), 및 [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) 포트를 나타내는 인터페이스를 처리 하 고 프로그램을 각각. SDM 호출 [IDebugProgram2::GetEngineInfo](../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md) 프로그램을 디버그할 수 있는 DE의 GUID를 가져오려고 합니다. 처음 가져온 GUID를 [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) 인터페이스입니다.  
   
@@ -55,4 +50,3 @@ ms.locfileid: "51763370"
  [프로그램 시작](../../extensibility/debugger/launching-a-program.md)   
  [시작 후 연결](../../extensibility/debugger/attaching-after-a-launch.md)   
  [디버깅 작업](../../extensibility/debugger/debugging-tasks.md)
-

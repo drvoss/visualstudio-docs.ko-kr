@@ -1,20 +1,18 @@
 ---
 title: C# Equals 및 GetHashCode 메서드 재정의 생성
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5ec552e320b0c19c5c05e145fd9c5a4588f31b4c
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: bbe04ac7a28666f32aa1da3bebe5ed50f96fb900
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295711"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790590"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Visual Studio에서 Equals 및 GetHashCode 메서드 재정의 생성
 
@@ -22,7 +20,7 @@ ms.locfileid: "51295711"
 
 - C#
 
-**대상:** **Equals** 및 **GetHashCode** 메서드를 생성할 수 있습니다.
+**내용:** **Equals** 및 **GetHashCode** 메서드를 생성할 수 있습니다.
 
 **시기:** 메모리의 개체 위치 대신 하나 이상의 필드에서 비교되어야 하는 형식이 있을 경우 이러한 재정의를 생성합니다.
 
@@ -45,7 +43,7 @@ ms.locfileid: "51295711"
 
 1. 다음 작업 중 하나를 수행합니다.
 
-   - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
+   - 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
 
    - 마우스 오른쪽 단추로 클릭하고 **빠른 작업 및 리팩터링** 메뉴를 선택합니다.
 

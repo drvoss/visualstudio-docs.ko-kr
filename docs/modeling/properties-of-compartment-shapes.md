@@ -8,16 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, compartment shape
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 6a15432e170c814a6e80aebb86a9db31d073a98b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b44b32f98406e4692de97562bbf97e2656b3a7de
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62964289"
 ---
 # <a name="properties-of-compartment-shapes"></a>구획 모양의 속성
 구획 도형은 도메인 특정 언어의 도메인 클래스를 표시 하 여 셰이프 중 하나입니다. 확장 및 구획을 축소할 수 있습니다.
@@ -28,7 +27,7 @@ ms.locfileid: "53835223"
 
 |속성|설명|기본|
 |-|-|-|
-|기본 확장 축소 상태|경우 `Expanded`, 생성 시 구획이 표시 됩니다. 경우 `Collapsed`, 않습니다.|확장됨|
+|기본 확장 축소 상태|경우 `Expanded`, 생성 시 구획이 표시 됩니다. 경우 `Collapsed`, 않습니다.|넓게|
 |채우기 색|이 도형의 채우기 색입니다.|하얀|
 |채우기 그라데이션 모드|이 도형의 채우기 그라데이션 모드입니다.|가로|
 |기 하 도형|이 셰이프 (직사각형 또는 모서리가 둥근 사각형)의 기 하 도형입니다.|사각형|

@@ -1,23 +1,21 @@
 ---
 title: 문제 보고서에 대한 개인 데이터
 ms.date: 06/21/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - developer community privacy
 - privacy, developer community
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21515d6e9841d943cf91799224afdebf8326e07e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 447a06d64691af1d77a634179631ce7822b6d43d
+ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836829"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864673"
 ---
 # <a name="developer-community-data-privacy"></a>개발자 커뮤니티 데이터 개인 정보
 
@@ -56,36 +54,40 @@ Visual Studio에서 **문제 보고**가 시작되면 다음 유형의 데이터
 
 - Visual Studio 메모리 내 활동 로그 파일
 
-- *VSFeedbackPerfWatsonData* 폴더의 PerfWatson 파일(Watson 컬렉션이 활성화된 경우)
+- PerfWatson 파일(Watson 컬렉션이 사용하도록 설정된 경우)
 
-- *VSFeedbackVSRTCLogs* 폴더의 LiveShare 로그 파일(있는 경우)
+- LiveShare 로그 파일(있는 경우)
 
-- *%LOCALAPPDATA%\Xamarin\Logs*의 Xamarin 로그 파일(있는 경우)
+- Xamarin 로그 파일(있는 경우)
 
-- *%TEMP%\NuGetScratch\nuget-dg\nugetSpec.dg*의 Nuget 로그 파일(있는 경우)
+- Nuget 로그 파일(있는 경우)
 
 - 웹 디버거 로그 파일(있는 경우)
 
-   - *%TEMP%\vscode-chrome-debug.txt*
+- 서비스 허브 로그 및 MEF 오류 로그(있는 경우)
 
-   - *%TEMP%\vscode-node-debug2.txt*
+- Python 로그(있는 경우)
 
-   - *%TEMP%\vscode-edge-debug.txt*
+- Windows Forms 로그(있는 경우)
+
+> [!NOTE]
+> 로그 파일이 포함된 문제 보고서를 제출하여 사용 권한을 제공하는 경우에만 로그 파일이 Microsoft로 전송됩니다. ‘문제 보고’ 창의 ‘요약’ 단계에 포함된 파일을 확인할 수 있습니다(이 메모에 포함된 스크린샷 참조). 수집된 로그는 %temp% 폴더에 저장되며 각 업로드 후 정기적으로 정리됩니다. 문제 보고서에 로그를 포함하지 않으려면 보고서를 제출하기 전에 %temp% 폴더에서 파일을 삭제합니다.  
+  > ![문제 보고 - 수집된 로그 요약](media/report-a-problem-logs-collected.png)
 
 - 스크린샷(포함하도록 선택한 경우)
-
+  
 - 다음을 포함하는 데이터 기록(기록을 포함하도록 선택한 경우):
 
-   - 문제를 재현하기 위한 단계
+  - 문제를 재현하기 위한 단계
 
-   - ETL 추적 파일
+  - ETL 추적 파일
 
-   - 덤프 파일
+  - 덤프 파일
 
-    > [!NOTE]
-    > 보고서를 제출하기 전에 제출하지 않으려는 기록 데이터를 삭제할 수 있습니다.
+  > [!NOTE]
+  > 보고서를 제출하기 전에 제출하지 않으려는 기록 데이터를 삭제할 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 
-- [Visual Studio의 문제를 보고하는 방법](how-to-report-a-problem-with-visual-studio-2017.md)
+- [Visual Studio의 문제를 보고하는 방법](how-to-report-a-problem-with-visual-studio.md)
 - [C++ 문제 보고서 데이터 개인 정보](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset#reports-and-privacy)

@@ -2,7 +2,6 @@
 title: IDebugThreadCall::ThreadCallHandler | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e2b7a22026090c8b3b8b7ded4c960ebf92689cd4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d1802cdcdabe2ae462960378d0e869838cdaa6e5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000913"
 ---
 # <a name="idebugthreadcallthreadcallhandler"></a>IDebugThreadCall::ThreadCallHandler
-코드가 다른 스레드에서 실행에 대 한 호출을 처리 합니다.  
+다른 스레드에서 코드 실행에 대 한 호출을 처리 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT ThreadCallHandler(  
    DWORD_PTR  dwParam1,  
    DWORD_PTR  dwParam2,  
@@ -56,7 +55,7 @@ HRESULT ThreadCallHandler(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드 코드를 실행 하는 디버거 스레드에서 호출을 처리 합니다.  
+ 이 메서드는 디버거 스레드에서 코드 실행에 대 한 호출을 처리 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugThreadCall 인터페이스](../../winscript/reference/idebugthreadcall-interface.md)   

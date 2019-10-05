@@ -1,11 +1,8 @@
 ---
 title: 단계별 디버깅 옵션 (레거시) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - branch stepping
@@ -17,16 +14,16 @@ ms.assetid: 3e9e3041-68c7-4f16-9bd6-da5e5144744b
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: b7dfaa4fb659418c26d5aa0144fac4188ef4b16b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: b1f0761ba750146ce7f8cc52e6992dae689f7779
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976954"
 ---
 # <a name="debug-stepping-options-legacy"></a>단계별 디버깅 옵션(레거시)
-이 항목에서는 [!INCLUDE[wf](../includes/wf-md.md)]에서 동시 활동이 있는 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 응용 프로그램을 디버깅하는 방법에 대해 설명합니다. 레거시 [!INCLUDE[wfd2](../includes/wfd2-md.md)]는 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 또는 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]를 대상으로 해야 하는 경우에 사용합니다.  
+이 항목에서는 [!INCLUDE[wf](../includes/wf-md.md)]에서 동시 활동이 있는 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 애플리케이션을 디버깅하는 방법에 대해 설명합니다. 레거시 [!INCLUDE[wfd2](../includes/wfd2-md.md)]는 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 또는 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]를 대상으로 해야 하는 경우에 사용합니다.  
   
  동시에 실행 예는 레거시 활동을 디버깅할 때 **ParallelActivity** 하거나 **ConditionedActivityGroup**, 코드를 단계별로 실행 하려면 다음 두 옵션 중 하나를 사용할 수 있습니다 .  
   

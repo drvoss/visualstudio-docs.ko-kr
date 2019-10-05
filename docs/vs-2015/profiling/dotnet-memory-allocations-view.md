@@ -1,14 +1,9 @@
 ---
 title: .NET 메모리 할당 뷰 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.allocation
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 01eb876e-c413-4516-977b-4f896929e8a6
 caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 73a2be1314b01a0a7de73f71794bc94b18f0e851
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a3c24d8aa984ddc947d3c532020974a196192940
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179072"
 ---
 # <a name="net-memory-allocations-view"></a>.NET 메모리 할당 뷰
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,9 +39,9 @@ ms.locfileid: "51760353"
 ## <a name="highlighting-the-execution-hot-path"></a>실행 부하 과다 경로 강조 표시  
  부모 유형의 대부분의 개체를 생성한 호출 트리의 실행 경로를 찾을 수 있습니다.  
   
--   최대 활성 경로를 표시하려면 형식 또는 함수를 마우스 오른쪽 단추로 클릭한 후 **실행 부하 과다 경로 확장**을 클릭합니다.  
+- 최대 활성 경로를 표시하려면 형식 또는 함수를 마우스 오른쪽 단추로 클릭한 후 **실행 부하 과다 경로 확장**을 클릭합니다.  
   
-|열|설명|  
+|Column|설명|  
 |------------|-----------------|  
 |**이름**|할당된 형식 또는 함수의 이름입니다.|  
 |**프로세스 ID**|프로파일링 실행의 PID(프로세스 ID)입니다.|  
@@ -55,7 +50,7 @@ ms.locfileid: "51760353"
 |**모듈 경로**|형식 또는 함수가 포함된 모듈의 경로입니다.|  
 |**소스 파일**|형식 또는 함수의 정의가 포함된 소스 파일입니다.|  
 |**함수 줄 번호**|소스 파일에서 이 형식 정의 또는 함수가 시작되는 줄 번호입니다.|  
-|**수준**|데이터가 형식 또는 함수에 대한 것인지 여부를 나타냅니다.|  
+|**Level**|데이터가 형식 또는 함수에 대한 것인지 여부를 나타냅니다.|  
 |**포함 할당**|-   함수의 경우 함수에 의해 생성된 부모 형식의 개체의 총 수입니다. 이 수는 자식 함수에서 만든 개체를 포함합니다.<br />-   형식의 경우 생성된 해당 형식의 총 인스턴스 수입니다.|  
 |**포함 할당 비율(%)**|-   함수의 경우 함수에 의한 부모 형식의 포함 할당으로, 프로파일링 실행 시 생성된 모든 개체의 비율입니다.<br />-   형식의 경우 형식의 인스턴스인 프로파일링 실행에서 생성된 개체의 총 수 백분율입니다.|  
 |**제외 할당**|-   함수의 경우 함수가 호출 스택의 맨 위에서 직접 실행 중일 때 생성된 개체의 수입니다. 이 수는 자식 함수에서 만든 개체를 포함하지 않습니다.<br />-   형식의 경우 생성된 해당 형식의 총 인스턴스 수입니다.|  
@@ -64,6 +59,3 @@ ms.locfileid: "51760353"
 |**포함 바이트 비율(%)**|-   함수의 경우 함수에 의한 부모 형식의 포함 할당으로, 프로파일링 실행 시 할당된 모든 메모리의 비율입니다.<br />-   형식의 경우 형식의 인스턴스에 대해 할당된 프로파일링 실행 시 할당된 모든 메모리의 비율입니다.|  
 |**제외 바이트**|-   함수의 경우 부모 형식의 개체에 대해 함수가 할당한 메모리의 바이트 수입니다. 이 수는 해당 자식 함수에 의해 할당된 메모리를 포함하지 않습니다.<br />-   형식의 경우 형식의 인스턴스에 대해 프로파일링 실행 시 할당된 총 바이트 수입니다.|  
 |**제외 바이트(%)**|-   함수의 경우 함수에 의한 부모 형식의 제외 할당으로, 프로파일링 실행 시 할당된 모든 메모리의 비율입니다.<br />-   형식의 경우 형식의 인스턴스에 대해 할당된 프로파일링 실행 시 할당된 모든 메모리의 비율입니다.|
-
-
-

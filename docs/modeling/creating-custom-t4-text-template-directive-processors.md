@@ -6,18 +6,17 @@ helpviewer_keywords:
 - text templates, custom directive processors
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 5db3772b782af666023f39fd833e18ba2092c176
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3f9d514178e4b899ca727e17ead260719697b562
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989152"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476644"
 ---
-# <a name="creating-custom-t4-text-template-directive-processors"></a>사용자 지정 T4 텍스트 템플릿 지시문 프로세서 만들기
+# <a name="create-custom-t4-text-template-directive-processors"></a>사용자 지정 T4 텍스트 템플릿 지시문 프로세서 만들기
 
 *텍스트 템플릿 변형 프로세스* 사용을 *텍스트 템플릿* 파일을 입력 하 고 텍스트 파일을 출력으로 생성 합니다. 합니다 *텍스트 템플릿 변환 엔진* 프로세스 엔진과 상호 작용 하는 텍스트 템플릿 변형 호스트와 하나 이상의 텍스트 템플릿 컨트롤 *지시문 프로세서* 완료 하는 프로세스입니다. 자세한 내용은 [은 텍스트 템플릿 변형 프로세스](../modeling/the-text-template-transformation-process.md)합니다.
 
@@ -41,9 +40,9 @@ ms.locfileid: "53989152"
 
 사용자 지정 지시문 프로세서의 몇 가지 예는 다음과 같습니다.
 
--   사용자 이름 및 암호를 매개 변수로 허용 하는 데이터베이스에서 데이터를 반환 하는 지시문 프로세서.
+- 사용자 이름 및 암호를 매개 변수로 허용 하는 데이터베이스에서 데이터를 반환 하는 지시문 프로세서.
 
--   매개 변수로 파일 이름을 허용 하는 파일을 열고 지시문 프로세서입니다.
+- 매개 변수로 파일 이름을 허용 하는 파일을 열고 지시문 프로세서입니다.
 
 ### <a name="principal-parts-of-a-custom-directive-processor"></a>사용자 지정 지시문 프로세서의 주요 부분
 
@@ -51,19 +50,19 @@ ms.locfileid: "53989152"
 
 가장 중요 한 `DirectiveProcessor` 구현 해야 하는 메서드는 다음과 같습니다.
 
--   `bool IsDirectiveSupported(string directiveName)` -반환 `true` 경우 지시문 프로세서가 명명된 된 지시문을 사용 하 여 처리할 수 있습니다.
+- `bool IsDirectiveSupported(string directiveName)` -반환 `true` 경우 지시문 프로세서가 명명된 된 지시문을 사용 하 여 처리할 수 있습니다.
 
--   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` -템플릿 엔진 템플릿에서 지시문의 각 항목에 대 한이 메서드를 호출합니다. 프로세서는 결과 저장 해야 합니다.
+- `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` -템플릿 엔진 템플릿에서 지시문의 각 항목에 대 한이 메서드를 호출합니다. 프로세서는 결과 저장 해야 합니다.
 
 ProcessDirective()에 대 한 모든 호출 후 템플릿 엔진은 이러한 메서드를 호출 합니다.
 
--   `string[] GetReferencesForProcessingRun()` -템플릿 코드에 필요한 어셈블리의 이름을 반환 합니다.
+- `string[] GetReferencesForProcessingRun()` -템플릿 코드에 필요한 어셈블리의 이름을 반환 합니다.
 
--   `string[] GetImportsForProcessingRun()` -템플릿 코드에서 사용할 수 있는 네임 스페이스를 반환 합니다.
+- `string[] GetImportsForProcessingRun()` -템플릿 코드에서 사용할 수 있는 네임 스페이스를 반환 합니다.
 
--   `string GetClassCodeForProcessingRun()` -메서드, 속성 및 템플릿 코드를 사용할 수 있는 다른 선언의 코드를 반환 합니다. 이 작업을 수행 하는 가장 쉬운 방법은 C# 또는 Visual Basic 코드를 포함 하는 문자열을 작성 하는 경우 지시문 프로세서를 CLR 언어를 사용 하는 서식 파일에서 호출 될 수 있도록 하려면 문을 CodeDom 트리를 생성할 수 있으며 다음 템플릿에 의해 사용 되는 언어에서 트리를 직렬화 하는 작업의 결과 반환 수 있습니다.
+- `string GetClassCodeForProcessingRun()` -메서드, 속성 및 템플릿 코드를 사용할 수 있는 다른 선언의 코드를 반환 합니다. 이 작업을 수행 하는 가장 쉬운 방법은 C# 또는 Visual Basic 코드를 포함 하는 문자열을 작성 하는 경우 지시문 프로세서를 CLR 언어를 사용 하는 서식 파일에서 호출 될 수 있도록 하려면 문을 CodeDom 트리를 생성할 수 있으며 다음 템플릿에 의해 사용 되는 언어에서 트리를 직렬화 하는 작업의 결과 반환 수 있습니다.
 
--   자세한 내용은 [연습: 사용자 지정 지시문 프로세서 만들기](../modeling/walkthrough-creating-a-custom-directive-processor.md)합니다.
+- 자세한 내용은 [연습: 사용자 지정 지시문 프로세서 만들기](../modeling/walkthrough-creating-a-custom-directive-processor.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 

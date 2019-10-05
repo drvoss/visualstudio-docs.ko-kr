@@ -1,32 +1,27 @@
 ---
 title: IDiaSymbol::get_isAcceleratorPointerTagLiveRange | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: d195aec4-6d3c-42e0-88a5-3d463539f0b8
 caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7bbfa079e3944162fbf67e3a2c14f21149e6b785
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5a53faf8c9395867b570909ac4d34cf329da12c6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766848"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "68149451"
 ---
 # <a name="idiasymbolgetisacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-기호에 해당 하는지 여부를 나타내는 플래그를 검색 합니다 *정의 범위 기호* c + + AMP 액셀러레이터에 대해 컴파일된 코드에서 포인터 변수의 태그 구성 요소에 대 한 합니다. 정의 범위 기호는 주소 범위에 대 한 변수의 위치입니다.  
+기호에 해당 하는지 여부를 나타내는 플래그를 검색 합니다 *정의 범위 기호* 에 대해 컴파일된 코드에서 변수 대 한 포인터의 태그 구성 요소를 C++ AMP 액셀러레이터입니다. 정의 범위 기호는 주소 범위에 대 한 변수의 위치입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -44,6 +39,3 @@ HRESULT get_isAcceleratorPointerTagLiveRange(
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

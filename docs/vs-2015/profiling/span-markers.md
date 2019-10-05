@@ -1,32 +1,27 @@
 ---
 title: 범위 표식 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.markers.span
 ms.assetid: 736b7765-9c71-44d7-85e5-79787d13d91c
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 115ae981e463e0df744177c8158fa37376d23c74
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8f733ccec12e422a11532b8012836422d14d93b9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198307"
 ---
 # <a name="span-markers"></a>범위 표식
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-범위 표식은 응용 프로그램에서 중요한 한 단계를 나타냅니다. 예를 들어 범위를 사용하면 특정 작업 항목을 처리하는 기간의 간격을 나타낼 수 있습니다. 범위의 길이는 해당 응용 프로그램 단계의 길이를 나타냅니다. 다음 그림은 동시성 시각화 도우미에서 범위를 보여줍니다.  
+범위 표식은 애플리케이션에서 중요한 한 단계를 나타냅니다. 예를 들어 범위를 사용하면 특정 작업 항목을 처리하는 기간의 간격을 나타낼 수 있습니다. 범위의 길이는 해당 애플리케이션 단계의 길이를 나타냅니다. 다음 그림은 동시성 시각화 도우미에서 범위를 보여줍니다.  
   
  ![Concurrency 시각화의 범위 표식](../profiling/media/cvmarkerspan.png "CVMarkerSpan")  
 동시성 시각화 도우미의 범위 표식  
@@ -46,6 +41,3 @@ ms.locfileid: "51805602"
 ## <a name="see-also"></a>참고 항목  
  [동시성 시각화 도우미 표식](../profiling/concurrency-visualizer-markers.md)   
  [동시성 시각화 도우미 SDK](../profiling/concurrency-visualizer-sdk.md)
-
-
-

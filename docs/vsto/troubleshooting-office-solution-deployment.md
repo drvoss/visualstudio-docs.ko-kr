@@ -9,17 +9,17 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], troubleshooting
 - Office development in Visual Studio, troubleshooting
 - deploying applications [Office development in Visual Studio], troubleshooting
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d6dc3a871389b8b7624b31a4f2a4d3e4e185865
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dfebb3ce5293e7594827a17b30261403b0f3ae9a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947259"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821307"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Office 솔루션 배포 문제 해결
   이 항목에는 Office 솔루션을 배포할 때 발생할 수 있는 일반적인 문제를 해결하는 방법에 대한 정보가 포함되어 있습니다.
@@ -43,11 +43,11 @@ ms.locfileid: "53947259"
 
 #### <a name="to-set-the-time-out-value"></a>시간 제한 값을 설정하려면
 
-1.  레지스트리에서 다음 키로 이동합니다.
+1. 레지스트리에서 다음 키로 이동합니다.
 
      **HKEY_CURRENT_USER\Software\Microsoft\VSTA**
 
-2.  **AddInTimeout** 하위 키에서 시간 제한 값을 밀리초 단위로 설정합니다.
+2. **AddInTimeout** 하위 키에서 시간 제한 값을 밀리초 단위로 설정합니다.
 
      **AddInTimeout** 하위 키가 존재하지 않는 경우 DWORD 값으로 만듭니다.
 
@@ -73,9 +73,12 @@ ms.locfileid: "53947259"
 
 2. **응용 프로그램** 페이지에서 **어셈블리 정보**를 선택합니다.
 
-3. 첫 번째에서 **어셈블리 버전** 상자에 별표를 입력 합니다 (\*)를 선택한 후 합니다 **확인** 단추입니다.
+3. 수정 번호, 세 번째 필드를 설정 합니다 **어셈블리 버전**를 와일드 카드 (\*). 예를 들어, "1.0. *"입니다.  선택 합니다 **확인** 단추입니다.
 
    어셈블리 버전을 변경하면 강력한 이름으로 어셈블리에 서명할 수 있고 Fusion에서 최신 버전의 사용자 지정을 로드합니다.
+
+ [!NOTE]
+> 와일드 카드를 사용 하 여 어셈블리 버전 빌드 오류를 시도 하는 경우 Visual Studio 2017부터 발생 합니다.  즉, 와일드 카드 어셈블리 버전의 MSBuild 결정적 기능이 중단 됩니다. 어셈블리 버전에서 와일드 카드를 제거 하거나 결정성을 사용 하지 않도록 설정 하 라는 지침이 나타납니다.  결정적 기능에 대 한 자세한 내용은 참조: [일반적인 MSBuild 프로젝트 속성](../msbuild/common-msbuild-project-properties.md) 고 [빌드 사용자 지정](../msbuild/customize-your-build.md)
 
 ## <a name="installation-fails-when-the-uri-has-characters-that-arent-us-ascii"></a>URI에 US-ASCII 아닌 문자를 때 설치가 실패 함
  HTTP/HTTPS/FTP 위치에 Office 솔루션을 게시할 경우 경로에 US-ASCII가 아닌 유니코드 문자를 사용할 수 없습니다. 이러한 문자를 사용하면 설치 프로그램에서 일관되지 않은 동작이 발생할 수 있습니다. 설치 경로에 US-ASCII 문자를 사용합니다.
@@ -118,7 +121,7 @@ ms.locfileid: "53947259"
 ## <a name="cant-install-a-clickonce-solution-by-opening-the-deployment-manifest-from-the-web"></a>웹에서 배포 매니페스트를 열어 ClickOnce 솔루션을 설치할 수 없습니다.
  사용자는 웹에서 배포 매니페스트를 열어 Office 솔루션을 설치할 수 있습니다. 그러나 일부 설치의 인터넷 정보 서비스 (IIS)를 차단 합니다 *.vsto* 파일 이름 확장명입니다. Office 솔루션 배포에 사용 하기 전에 IIS에서 MIME 형식을 정의 해야 합니다.
 
- IIS 7에서 MIME 형식을 정의 하는 방법에 대 한 자세한 내용은 [MIME 형식 (IIS7) 추가](http://technet.microsoft.com/library/cc725608(WS.10).aspx)합니다.
+ IIS 7에서 MIME 형식을 정의 하는 방법에 대 한 자세한 내용은 [MIME 형식 (IIS7) 추가](https://technet.microsoft.com/library/cc725608(WS.10).aspx)합니다.
 
  확장명을 **.vsto** 로 설정하고 MIME 형식을 **application/x-ms-vsto**로 설정합니다.
 

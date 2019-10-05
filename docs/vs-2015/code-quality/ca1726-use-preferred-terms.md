@@ -1,14 +1,9 @@
 ---
-title: 'CA1726: 기본 설정된 용어를 사용 합니다. | Microsoft Docs'
-ms.custom: ''
+title: 'CA1726: 기본 설정된 용어를 사용 하 여 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UsePreferredTerms
 - CA1726
@@ -19,17 +14,17 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c17514d00be7b0a3303b1c5bf703702fe564e0d1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67dab4c732faa04af44800f740d78c4ce4f9dc80
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143156"
 ---
-# <a name="ca1726-use-preferred-terms"></a>CA1726: 기본 설정 용어를 사용하십시오.
+# <a name="ca1726-use-preferred-terms"></a>CA1726: 기본 설정 용어를 사용하세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017에서 최신 설명서를 참조 하세요 [CA1726: 기본 설정된 용어를 사용 하 여](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms) docs.microsoft.com에서 제공 합니다.  
+Visual Studio에서 최신 설명서를 참조 하세요. [CA1726: 기본 설정된 용어를 사용 하 여](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms)입니다.  
   
 |||  
 |-|-|  
@@ -46,30 +41,30 @@ Visual Studio 2017에서 최신 설명서를 참조 하세요 [CA1726: 기본 �
   
 |사용 되지 않는 용어|기본 용어|  
 |-------------------|--------------------|  
-|되지 않습니다.|오지|  
-|취소됨|Canceled|  
-|수 없음|수 없습니다.|  
-|ComPlus|EnterpriseServices|  
-|수 없음|CouldNot|  
-|Didnt|DidNot|  
-|Doesnt|하지 않습니다|  
-|Dont|안 함|  
-|플래그 또는 플래그|대체 용어가 없는 경우 사용하지 마십시오.|  
-|하지|HadNot|  
-|되지 않았습니다.|HasNot|  
-|아직|HaveNot|  
-|인덱스|Indexes|  
-|되지 않습니다.|IsNot|  
-|로그인|로그온|  
-|로그 아웃|로그 오프|  
-|Shouldnt|ShouldNot|  
-|Sign On|로그인|  
-|사인 오프|로그 아웃|  
-|Wasnt|WasNot|  
-|되지 않았습니다.|WereNot|  
-|안 됨|WillNot|  
-|Wouldnt|WouldNot|  
-|쓰기 가능|쓰기 가능|  
+|`Arent`|`AreNot`|
+|`Cancelled`|`Canceled`|
+|`Cant`|`Cannot`|
+|`ComPlus`|`EnterpriseServices`|
+|`Couldnt`|`CouldNot`|
+|`Didnt`|`DidNot`|
+|`Doesnt`|`DoesNot`|
+|`Dont`|`DoNot`|
+|`Flag` 또는 `Flags`|대체 용어가 없는 경우 사용하지 마십시오.|
+|`Hadnt`|`HadNot`|
+|`Hasnt`|`HasNot`|
+|`Havent`|`HaveNot`|
+|`Indices`|`Indexes`|
+|`Isnt`|`IsNot`|
+|`LogIn`|`LogOn`|
+|`LogOut`|`LogOff`|
+|`Shouldnt`|`ShouldNot`|
+|`SignOn`|`SignIn`|
+|`SignOff`|`SignOut`|
+|`Wasnt`|`WasNot`|
+|`Werent`|`WereNot`|
+|`Wont`|`WillNot`|
+|`Wouldnt`|`WouldNot`|
+|`Writeable`|`Writable`|
   
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법  
  이 규칙 위반 문제를 해결 하는 기본 대체 용어를 사용 하 여 용어를 대체 합니다.  
@@ -79,4 +74,3 @@ Visual Studio 2017에서 최신 설명서를 참조 하세요 [CA1726: 기본 �
   
 ## <a name="related-rules"></a>관련된 규칙  
  [이름 지정 경고](../code-quality/naming-warnings.md)
-

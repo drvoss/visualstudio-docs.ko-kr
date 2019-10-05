@@ -2,52 +2,64 @@
 title: Windows의 Visual Studio에서 Python 지원
 titleSuffix: ''
 description: Windows에서 최상의 Python IDE(PTVS(Visual Studio용 Python 도구)로도 알려짐)로 만드는 Visual Studio의 Python 기능에 대한 요약입니다.
-ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 06/05/2019
 ms.topic: overview
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cec872f5df927bae3caf20f35d4bcd8f8e7460b3
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 24bbfd276b30444742b329f30c346ac1857c2cc9
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068541"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154963"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows의 Visual Studio에서 Python 작업
 
-Python은 안정적이고 유연하며 배우기 쉬울뿐만 아니라 모든 운영 체제에서 무료로 사용할 수 있으며, 유용한 개발자 커뮤니티와 다양한 무료 라이브러리에서 지원되며 널리 사용되는 프로그래밍 언어입니다. Python은 웹 응용 프로그램, 웹 서비스, 데스크톱 앱, 스크립팅 및 과학적 컴퓨팅 등 모든 방식의 개발을 지원하며 대학, 과학자, 아마추어 개발자 및 전문 개발자 등 많은 분야에 사용됩니다. [python.org](https://www.python.org) 및 [Python for Beginners](https://www.python.org/about/gettingstarted/)(초보자를 위한 Python)에서 이 언어에 대해 자세히 알아볼 수 있습니다.
+Python은 안정적이고 유연하며 배우기 쉬울뿐만 아니라 모든 운영 체제에서 무료로 사용할 수 있으며, 유용한 개발자 커뮤니티와 다양한 무료 라이브러리에서 지원되며 널리 사용되는 프로그래밍 언어입니다. Python은 웹 애플리케이션, 웹 서비스, 데스크톱 앱, 스크립팅 및 과학적 컴퓨팅 등 모든 방식의 개발을 지원하며 대학, 과학자, 아마추어 개발자 및 전문 개발자 등 많은 분야에 사용됩니다. [python.org](https://www.python.org) 및 [Python for Beginners](https://www.python.org/about/gettingstarted/)(초보자를 위한 Python)에서 이 언어에 대해 자세히 알아볼 수 있습니다.
 
-Visual Studio는 Windows에서 강력한 Python IDE입니다. Visual Studio는 **Python 개발** 및 **데이터 과학** 워크로드(Visual Studio 2017)와 무료 Visual Studio용 Python 도구 확장(Visual Studio 2015 및 이전 버전)을 통해 Python 언어에 대한 [오픈 소스](https://github.com/Microsoft/ptvs) 지원을 제공합니다.
+Visual Studio는 Windows에서 강력한 Python IDE입니다. Visual Studio는 **Python 개발** 및 **데이터 과학** 워크로드(Visual Studio 2017 이상)와 무료 Visual Studio용 Python 도구 확장(Visual Studio 2015 및 이전 버전)을 통해 Python 언어에 대한 [오픈 소스](https://github.com/Microsoft/ptvs) 지원을 제공합니다.
 
 Python은 현재 Mac용 Visual Studio에서 지원되지 않지만 Visual Studio Code를 통해 Mac 및 Linux에서 사용할 수 있습니다([질문 및 답변](#questions-and-answers) 참조).
 
 시작하려면 다음을 수행합니다.
 
 - [설치 지침](installing-python-support-in-visual-studio.md)에 따라 Python 워크로드를 설치합니다.
-- 이 문서의 섹션을 통해 Visual Studio의 Python 기능을 숙지합니다. Visual Studio의 Python 소개 [비디오 시리즈(Microsoft Virtual Academy)를 시청](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)할 수 있습니다(총 22분).
+- 이 문서의 섹션을 통해 Visual Studio의 Python 기능을 숙지합니다.
+::: moniker range="vs-2017"
 - 빠른 시작을 하나 이상 수행하여 프로젝트를 만듭니다. 확실하지 않은 경우 [Flask를 사용하여 웹앱 만들기](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)부터 시작합니다.
-- 전체 종단 간 환경을 위한 [Visual Studio에서 Python 작업](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) 자습서를 수행합니다.
+::: moniker-end
+::: moniker range=">=vs-2019"
+- 빠른 시작을 하나 이상 수행하여 프로젝트를 만듭니다. 확실하지 않은 경우 [빠른 시작: 폴더에서 Python 코드 열기 및 실행](quickstart-05-python-visual-studio-open-folder.md) 또는 [Flask를 사용하여 웹앱 만들기](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)로 시작합니다.
+::: moniker-end
+- 전체 엔드투엔드 환경을 위한 [Visual Studio에서 Python 작업](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) 자습서를 수행합니다.
+
+::: moniker range=">=vs-2019"
+> [!Note]
+> Visual Studio는 Python 버전 2.7과 버전 3.5 이상을 지원합니다. Visual Studio를 사용하여 다른 버전의 Python에서 작성된 코드도 편집할 수 있지만, 해당 버전은 공식적으로 지원되지 않으며 IntelliSense, 디버깅 등의 기능이 작동하지 않을 수 있습니다.
+::: moniker-end
 
 ## <a name="support-for-multiple-interpreters"></a>다중 인터프리터 지원.
 
 Visual Studio의 **Python 환경** 창(넓게 확장된 뷰에서 아래에 표시)은 전역 Python 환경, Conda 환경 및 가상 환경 모두를 관리하기 위한 단일 위치를 제공합니다. Visual Studio는 자동으로 기본 위치에 Python 설치를 검색하고 사용자 지정 설치를 구성할 수 있습니다. 각 환경을 사용하여 패키지를 쉽게 관리하고 해당 환경에 대한 대화형 창을 열고 환경 폴더에 액세스할 수 있습니다.
 
-![Python 환경 창의 확장된 뷰](media/environments-expanded-view.png)
+::: moniker range="vs-2017"
+![Python 환경 창의 확장된 뷰](media/environments/environments-expanded-view.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Python 환경 창의 확장된 뷰](media/environments/environments-expanded-view-2019.png)
+::: moniker-end
 
-Visual Studio의 컨텍스트 내에서 Python을 대화형으로 실행하려면 **대화형 창 열기** 명령을 사용합니다. 선택한 환경의 폴더에서 별도의 명령 창을 열려면 **PowerShell에서 열기** 명령을 사용합니다. 해당 명령 창에서 모든 Python 스크립트를 실행할 수 있습니다. 
+Visual Studio의 컨텍스트 내에서 Python을 대화형으로 실행하려면 **대화형 창 열기** 명령을 사용합니다. 선택한 환경의 폴더에서 별도의 명령 창을 열려면 **PowerShell에서 열기** 명령을 사용합니다. 해당 명령 창에서 모든 Python 스크립트를 실행할 수 있습니다.
 
 추가 정보
 
-- 비디오(2분 35초): [Python 환경 관리](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
-- 문서: [Python 환경 관리](managing-python-environments-in-visual-studio.md)
-- 문서: [Python 환경 참조](python-environments-window-tab-reference.md)
+- [Python 환경 관리](managing-python-environments-in-visual-studio.md)
+- [Python 환경 참조](python-environments-window-tab-reference.md)
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>다양한 편집 기능, IntelliSense 및 코드 이해
 
@@ -57,7 +69,6 @@ Visual Studio에서는 구문 색 지정, 모든 코드 및 라이브러리에 �
 
 추가 정보
 
-- 비디오(2분 30초): [Python 코드 편집](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
 - 문서: [Python 코드 편집](editing-python-code-in-visual-studio.md)
 - 문서: [코드 형식](formatting-python-code.md)
 - 문서: [코드 리팩터링](refactoring-python-code.md)
@@ -76,13 +87,17 @@ Visual Studio에 알려진 모든 Python 환경의 경우 별도 명령 프롬�
 
 추가 정보
 
-- 비디오(2분 22초: [Python 대화형 창](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)
-- 문서: [대화형 창](python-interactive-repl-in-visual-studio.md)
-- 문서: [Visual Studio의 IPython](interactive-repl-ipython.md)
+- [대화형 창](python-interactive-repl-in-visual-studio.md)
+- [Visual Studio의 IPython](interactive-repl-ipython.md)
 
 ## <a name="project-system-and-project-and-item-templates"></a>프로젝트 시스템, 프로젝트 및 항목 템플릿
 
-Visual Studio에서는 시간이 지남에 따라 커지는 프로젝트의 복잡성을 관리할 수 있습니다. 프로젝트는 폴더 구조보다 훨씬 더 복잡합니다. 곧, 다른 파일이 어떻게 사용되는지 그리고 서로 어떤 관계인지에 대한 이해가 포함됩니다. Visual Studio를 사용하면 앱 코드, 태스트 코드, 웹 페이지, JavaScript, 빌드 스크립트 등을 구분한 다음, 파일에 적합한 기능을 사용하도록 설정할 수 있습니다. 또한 Visual Studio 솔루션에서는 Python 프로젝트 및 C++ 확장 프로젝트 같은 다수의 관련 프로젝트를 관리할 수 있습니다.
+::: moniker range=">=vs-2019"
+> [!Note]
+> Visual Studio 2019는 Visual Studio 프로젝트 및 솔루션 파일을 만들지 않고도 Python 코드가 포함된 폴더를 열어 해당 코드를 실행하도록 지원합니다. 자세한 내용은 [빠른 시작: 폴더에서 Python 코드 열기 및 실행](quickstart-05-python-visual-studio-open-folder.md)을 참조하세요. 하지만 이 섹션에서 설명한 대로 프로젝트 파일 사용을 통해 얻을 수 있는 이점이 있습니다.
+::: moniker-end
+
+Visual Studio에서는 시간이 지남에 따라 커지는 프로젝트의 복잡성을 관리할 수 있습니다. ‘Visual Studio 프로젝트’는 폴더 구조보다 훨씬 더 복잡합니다. 프로젝트에는 다른 파일이 어떻게 사용되는지 그리고 서로 어떤 관계인지에 대한 이해가 포함됩니다.  Visual Studio를 사용하면 앱 코드, 태스트 코드, 웹 페이지, JavaScript, 빌드 스크립트 등을 구분한 다음, 파일에 적합한 기능을 사용하도록 설정할 수 있습니다. 또한 Visual Studio 솔루션에서는 Python 프로젝트 및 C++ 확장 프로젝트 같은 다수의 관련 프로젝트를 관리할 수 있습니다.
 
 ![Python 및 C++ 프로젝트가 포함된 Visual Studio 솔루션](media/projects-solution-explorer-two-projects.png)
 
@@ -105,9 +120,12 @@ Visual Studio의 장점 중 하나는 강력한 디버거입니다. 특히 Pytho
 
 ![예외 팝업을 표시하는 Python용 Visual Studio 디버거](media/debugging-exception-popup.png)
 
+::: moniker range=">=vs-2019"
+Visual Studio 2019에서 Visual Studio 프로젝트 파일 없이 코드를 실행하고 디버그할 수 있습니다. [빠른 시작: 폴더에서 Python 코드 열기 및 실행](quickstart-05-python-visual-studio-open-folder.md)의 예를 참조하세요.
+::: moniker-end
+
 추가 정보
 
-- 비디오: [Python 디버깅 3분 32초](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567)
 - 문서: [Python 디버그](debugging-python-in-visual-studio.md)
 - 문서: [Python/C++ 혼합 모드 디버깅](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - 문서: [Linux에서 원격 디버깅](debugging-python-code-on-remote-linux-machines.md)
@@ -115,13 +133,12 @@ Visual Studio의 장점 중 하나는 강력한 디버거입니다. 특히 Pytho
 
 ## <a name="profiling-tools-with-comprehensive-reporting"></a>포괄적인 보고를 제공하는 프로파일링 도구
 
-프로파일링은응용 프로그램 내에서 시간이 어떻게 쓰이는지를 탐색합니다. Visual Studio는 CPython 기반 인터프리터를 사용한 프로 파일링을 지원하고 다른 프로파일링 실행 간 성능을 비교하는 기능을 포함합니다.
+프로파일링은애플리케이션 내에서 시간이 어떻게 쓰이는지를 탐색합니다. Visual Studio는 CPython 기반 인터프리터를 사용한 프로 파일링을 지원하고 다른 프로파일링 실행 간 성능을 비교하는 기능을 포함합니다.
 
 [![Python 프로젝트에 대한 Visual Studio 프로파일러 결과](media/profiling-results.png)](media/profiling-results.png#lightbox)
 
 추가 정보
 
-- 비디오: [Python 프로파일링 3분 00초](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=s6FoC6LWE_1005918567)
 - 문서: [Python 프로파일링 도구](profiling-python-code-in-visual-studio.md)
 - 일반 Visual Studio 기능 문서: [프로파일링 기능 둘러보기](../profiling/profiling-feature-tour.md). (Python에 대해 일부 Visual Studio 프로파일링 기능만 사용할 수 있습니다).
 
@@ -133,21 +150,14 @@ Visual Studio **테스트 탐색기**에서 테스트를 검색, 실행 및 관�
 
 추가 정보
 
-- 비디오: [Python 테스트 2분 31초](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567)
 - 문서: [Python용 단위 테스트 도구](unit-testing-python-in-visual-studio.md)
 - 일반 Visual Studio 기능 문서: [코드 단위 테스트](../test/unit-test-your-code.md).
 
 ## <a name="azure-sdk-for-python"></a>Python용 Azure SDK
 
-Python 워크로드는 Windows, Mac OS X, Linux 앱에서 Azure 서비스를 간편하게 사용할 수 있도록 해주는 Python용 Azure SDK도 포함합니다.
+Python용 Azure 라이브러리는 Windows, Mac OS X 및 Linux 앱에서 Azure 서비스 사용을 간소화합니다. 라이브러리를 사용하여 Azure 리소스를 만들고 관리할 뿐만 아니라, Azure 서비스에 연결할 수 있습니다. 
 
-자세한 내용은 [Python용 Azure SDK](azure-sdk-for-python.md)를 참조하세요.
-
-## <a name="python-training-on-microsoft-virtual-academy"></a>Microsoft Virtual Academy의 Python 교육
-
-|   |   |
-|---|---|
-| ![비디오에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기") | <ul><li>[Python을 사용한 프로그래밍 소개](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Python 초보자: 문자열 및 함수](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Python 기본 사항: 목록 및 루프](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[Python에 대해 가장 많이 하는 질문](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
+자세한 내용은 [Python용 Azure SDK](/azure/python/) 및 [Python용 Azure 라이브러리](/azure/python/python-sdk-azure-overview)를 참조하세요.
 
 ## <a name="questions-and-answers"></a>질문과 대답
 
@@ -161,13 +171,16 @@ Python 워크로드는 Windows, Mac OS X, Linux 앱에서 Azure 서비스를 간
 
 **질문: Python 프로젝트에서 독립 실행형 실행 파일을 생성할 수 있나요?**
 
-대답: Python은 일반적으로 Visual Studio, 웹 서버와 같은 적합한 Python 지원 환경에서 요청 시 코드를 실행하는 데 사용되는 해석된 언어입니다. 현재는 Visual Studio 자체에서 독립 실행형 실행 파일을 만드는 방법을 제공하지 않습니다. 즉, 기본적으로 포함된 Python 인터프리터가 있는 프로그램입니다. 그러나 [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency)에 설명된 것처럼 Python 커뮤니티에서는 실행 파일을 만드는 다양한 방법을 제공합니다. 또한 CPython은 블로그 게시물 [Using CPython's embeddable zip file](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/)(CPython의 포함 가능한 zip 파일 사용)에 설명된 것처럼 네이티브 응용 프로그램 내에 포함되는 기능을 지원합니다.
+대답: Python은 일반적으로 Visual Studio, 웹 서버와 같은 적합한 Python 지원 환경에서 요청 시 코드를 실행하는 데 사용되는 해석된 언어입니다. 현재는 Visual Studio 자체에서 독립 실행형 실행 파일을 만드는 방법을 제공하지 않습니다. 즉, 기본적으로 포함된 Python 인터프리터가 있는 프로그램입니다. 그러나 [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency)에 설명된 것처럼 Python 커뮤니티에서는 실행 파일을 만드는 다양한 방법을 제공합니다. 또한 CPython은 블로그 게시물 [Using CPython's embeddable zip file](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/)(CPython의 포함 가능한 zip 파일 사용)에 설명된 것처럼 네이티브 애플리케이션 내에 포함되는 기능을 지원합니다.
 
-## <a name="features-matrix"></a>기능 매트릭스
+::: moniker range="<=vs-2017"
+
+## <a name="feature-support"></a>기능 지원
 
 [설치 가이드](installing-python-support-in-visual-studio.md)에 설명된 대로 Visual Studio의 다음 버전(edition)에 Python 기능을 설치할 수 있습니다.
 
-- [Visual Studio 2017(모든 버전)](https://visualstudio.microsoft.com/vs/)
+- [Visual Studio 2019(모든 버전)](https://visualstudio.microsoft.com/vs/)
+- Visual Studio 2017(모든 버전)
 - Visual Studio 2015(모든 버전)
 - Visual Studio 2013 Community Edition
 - Visual Studio 2013 Express for Web 업데이트 2 이상
@@ -181,7 +194,7 @@ Visual Studio 2015 및 이전 버전은 [visualstudio.microsoft.com/vs/older-dow
 > [!Important]
 > 기능이 Visual Studio의 최신 버전에 대해서만 완전하게 지원 및 유지 관리됩니다. 기능이 이전 버전에서 사용할 수 있지만 적극적으로 유지 관리되지 않습니다.
 
-|          Python 지원          |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|          Python 지원          |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |----------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 |   여러 인터프리터 관리   | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 | 자동 검색에 자주 사용되는 인터프리터 | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
@@ -191,8 +204,7 @@ Visual Studio 2015 및 이전 버전은 [visualstudio.microsoft.com/vs/older-dow
 
 <br/>
 
-
-|         프로젝트 시스템         |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ |      2012 Pro+       | 2010 SP1 Pro+ |
+|         프로젝트 시스템         |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ |      2012 Pro+       | 2010 SP1 Pro+ |
 |--------------------------------|----------|----------|-----------|--------------|----------|-----------|----------------------|---------------|
 | 기존 코드에서 새 프로젝트 | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  |       &#10004;       |   &#10004;    |
 |         모든 파일 표시         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  |       &#10004;       |   &#10004;    |
@@ -201,8 +213,7 @@ Visual Studio 2015 및 이전 버전은 [visualstudio.microsoft.com/vs/older-dow
 
 <br/>
 
-
-|           편집            |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|           편집            |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 |     구문 강조      | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 |        자동 완성         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
@@ -222,25 +233,22 @@ Visual Studio 2015 및 이전 버전은 [visualstudio.microsoft.com/vs/older-dow
 
 <br/>
 
-
-|     대화형 창     |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|     대화형 창     |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |----------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 |     대화형 창     | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 | 인라인 그래프가 있는 IPython | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 
 <br/>
 
-
-|               바탕 화면               |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|               바탕 화면               |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |-------------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
-|     콘솔/Windows 응용 프로그램     | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|     콘솔/Windows 애플리케이션     | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 | IronPython WPF(XAML 디자이너 포함) | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 |      IronPython Windows Forms       | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 
 <br/>
 
-
-|         웹         |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|         웹         |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |---------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 | Django 웹 프로젝트  | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 | Bottle 웹 프로젝트  | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
@@ -249,8 +257,7 @@ Visual Studio 2015 및 이전 버전은 [visualstudio.microsoft.com/vs/older-dow
 
 <br/>
 
-
-|         Azure          |   2017   |   2015   | 2013 Comm | 2013 Desktop |       2013 Web       |      2013 Pro+       |      2012 Pro+       |    2010 SP1 Pro+     |
+|         Azure          |   2017+   |   2015   | 2013 Comm | 2013 Desktop |       2013 Web       |      2013 Pro+       |      2012 Pro+       |    2010 SP1 Pro+     |
 |------------------------|----------|----------|-----------|--------------|----------------------|----------------------|----------------------|----------------------|
 |   웹 사이트에 배포   | &#10004; | &#10004; | &#10004;  |   &#10007;   |       &#10004;       |       &#10004;       |       &#10004;       | &#10004;<sup>2</sup> |
 |   웹 역할에 배포   | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> |       &#10007;       |
@@ -261,8 +268,7 @@ Visual Studio 2015 및 이전 버전은 [visualstudio.microsoft.com/vs/older-dow
 
 <br/>
 
-
-|           Django 템플릿           |   2017   |   2015   | 2013 Comm | 2013 Desktop |       2013 Web       |      2013 Pro+       | 2012 Pro+ | 2010 SP1 Pro+ |
+|           Django 템플릿           |   2017+   |   2015   | 2013 Comm | 2013 Desktop |       2013 Web       |      2013 Pro+       | 2012 Pro+ | 2010 SP1 Pro+ |
 |--------------------------------------|----------|----------|-----------|--------------|----------------------|----------------------|-----------|---------------|
 |              디버깅               | &#10004; | &#10004; | &#10004;  |   &#10007;   |       &#10004;       |       &#10004;       | &#10004;  |   &#10004;    |
 |            자동 완성             | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>5</sup> | &#10004;<sup>5</sup> | &#10004;  |   &#10004;    |
@@ -270,8 +276,7 @@ Visual Studio 2015 및 이전 버전은 [visualstudio.microsoft.com/vs/older-dow
 
 <br/>
 
-
-|                  디버깅                  |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|                  디버깅                  |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |---------------------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 |                  디버깅                  | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 |         프로젝트 없이 디버깅         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
@@ -284,15 +289,13 @@ Visual Studio 2015 및 이전 버전은 [visualstudio.microsoft.com/vs/older-dow
 
 <a name="matrix-profiling"></a>
 
-
-| 프로파일링 |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+| 프로파일링 |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |-----------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 | 프로파일링 | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10007; | &#10004;  | &#10004;  |   &#10004;    |
 
 <br/>
 
-
-|     테스트      |   2017   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|     테스트      |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |---------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 | 테스트 탐색기 | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10007;    |
 |   테스트 실행    | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10007;    |
@@ -300,7 +303,7 @@ Visual Studio 2015 및 이전 버전은 [visualstudio.microsoft.com/vs/older-dow
 
 <br/>
 
-1. Visual Studio 2012에 대한 Git 지원은 Git용 Visual Studio Tools 확장에서 사용 가능하며 [Visual Studio 갤러리](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.VisualStudioToolsforGit)에서 제공됩니다.
+1. Visual Studio 2012에 대한 Git 지원은 Git용 Visual Studio Tools 확장에서 사용 가능하며 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.VisualStudioToolsforGit)에서 제공됩니다.
 
 1. Azure 웹 사이트에 배포하려면 [.NET 2.1용 Azure SDK - Visual Studio 2010 SP1](https://go.microsoft.com/fwlink/?LinkId=313855)이 필요합니다. 이후 버전에서는 Visual Studio 2010을 지원하지 않습니다.
 
@@ -315,9 +318,4 @@ Visual Studio 2015 및 이전 버전은 [visualstudio.microsoft.com/vs/older-dow
 1. Windows 8 이상이 필요합니다. **서버 탐색기**에서 **디버거 연결(Python)** 명령을 사용하려면 [.NET 2.3용 Azure SDK - Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=323510) 이상이 필요합니다.
 
 1. Windows 8 이상이 필요합니다.
-
-## <a name="additional-resources"></a>추가 자료
-
-- [IIS 및 Python 간 WFastCGI 브리지](https://pypi.org/p/wfastcgi)(pypi.org)
-- [Microsoft Virtual Academy의 무료 Python 코스](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
-- [Microsoft Virtual Academy의 Python에 대해 가장 많이 하는 질문](https://aka.ms/mva-top-python-questions)
+::: moniker-end

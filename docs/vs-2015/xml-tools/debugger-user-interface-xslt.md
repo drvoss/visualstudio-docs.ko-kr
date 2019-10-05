@@ -1,25 +1,20 @@
 ---
 title: 디버거 사용자 인터페이스 (XSLT) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 02ba962a3410b2e964e7653fcb6308b9209def44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f7ffc67bd1175a84bf5708c613661a169c093dbd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891858"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697020"
 ---
 # <a name="debugger-user-interface-xslt"></a>디버거 사용자 인터페이스(XSLT)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ ms.locfileid: "49891858"
 |`position()`|컨텍스트 크기에 상대적인 컨텍스트 노드의 위치 또는 인덱스 번호입니다.|  
 |`self::node()`|컨텍스트 노드의 값입니다.|  
   
- 자세한 내용은 [방법: 디버거 컨텍스트 변경](http://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e)합니다.  
+ 자세한 내용은 [방법: 디버거 컨텍스트 변경](https://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e)합니다.  
   
 ## <a name="output-window"></a>출력 창  
  출력 창에는 디버깅하는 동안 발생하는 오류 메시지 또는 보안 예외가 표시됩니다.  
@@ -61,7 +56,7 @@ ms.locfileid: "49891858"
  작업 목록에는 XSLT 파일의 스크립트 블록에서 발생한 모든 오류가 포함됩니다.  
   
 > [!NOTE]
->  XSLT 디버거에는 경고가 없으므로 작업 목록에 절대로 표시되지 않습니다.  
+> XSLT 디버거에는 경고가 없으므로 작업 목록에 절대로 표시되지 않습니다.  
   
 ## <a name="breakpoints-window"></a>중단점 창  
  중단점 창에는 현재 프로젝트에 설정된 모든 중단점이 표시됩니다. 창이 표시되어 있는 동안 중단점을 추가하면 자동으로 창이 업데이트되어 새 중단점을 표시합니다.  
@@ -106,5 +101,4 @@ ms.locfileid: "49891858"
 ## <a name="see-also"></a>참고 항목  
  [XSLT 디버깅](../xml-tools/debugging-xslt.md)   
  [Debugger Basics](../debugger/debugger-basics.md) (디버거 기본 사항)  
- [변수 Windows](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
-
+ [변수 창](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

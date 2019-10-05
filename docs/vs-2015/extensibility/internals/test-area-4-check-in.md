@@ -1,27 +1,22 @@
 ---
 title: '테스트 영역 4: 체크 인 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], checking items in
 - source control plug-ins, checking items in
 ms.assetid: d0329fa8-7a8d-4d30-b67b-6f2a97b75a30
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 97a610325a5165a1de2cc50fede5bbabf182ef5e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 738b2608d5afa188cad38d92ed613307d2919ca0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155952"
 ---
 # <a name="test-area-4-check-in"></a>테스트 영역 4: 체크 인
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,16 +35,16 @@ ms.locfileid: "51783307"
   
 ## <a name="common-expected-behavior"></a>예상 되는 일반적인 동작  
   
--   프로젝트 및 솔루션 또는 프로젝트를 소스 제어에 추가 된 파일에 표시 합니다 **체크** 대화 상자와 **보류 중인 체크 인** 창입니다.  
+- 프로젝트 및 솔루션 또는 프로젝트를 소스 제어에 추가 된 파일에 표시 합니다 **체크** 대화 상자와 **보류 중인 체크 인** 창입니다.  
   
--   체크 인 후 소스 제어에 추가 항목이 나타납니다.  
+- 체크 인 후 소스 제어에 추가 항목이 나타납니다.  
   
--   체크 인 한 후 업데이트 된 항목은 저장소에서 버전이 적절히 관리입니다.  
+- 체크 인 한 후 업데이트 된 항목은 저장소에서 버전이 적절히 관리입니다.  
   
 ## <a name="test-cases"></a>테스트 사례  
  체크 인 테스트 영역에 대 한 특정 테스트 사례는 다음과 같습니다.  
   
-### <a name="case-4a-modified-items"></a>4a 사례: 항목 수정  
+### <a name="case-4a-modified-items"></a>사례 4a: 수정 된 항목  
  수정 된 원본 제어에서 파일을 업데이트 하려면 체크 인 작업의 사용을 설명 합니다.  
   
 |작업|테스트 단계|확인 하려면 예상된 결과|  
@@ -57,7 +52,7 @@ ms.locfileid: "51783307"
 |체크 아웃 하는 텍스트 파일을 수정, 체크 인 파일만 (**체크 인** 대화 상자)|1.  텍스트 파일을 사용 하 여 새 프로젝트를 만듭니다.<br />2.  소스 제어에 솔루션을 추가 합니다.<br />3.  체크 아웃 하 고 텍스트 파일을 수정 합니다.<br />4.  체크 인 대화 상자를 통해 체크 인 (**파일**를 **소스 제어**합니다 **체크**).|일반적인 예상된 동작입니다.|  
 |체크 아웃 하는 텍스트 파일을 수정, 체크 인 파일만 (**보류 중인 체크 인** 창)|1.  텍스트 파일을 사용 하 여 새 프로젝트를 만듭니다.<br />2.  소스 제어에 솔루션을 추가 합니다.<br />3.  체크 아웃 하 고 텍스트 파일을 수정 합니다.<br />4.  통해 체크 인 합니다 **보류 중인 체크 인** 창입니다.|일반적인 예상된 동작입니다.|  
   
-### <a name="case-4b-adding-files"></a>4b 경우: 파일 추가  
+### <a name="case-4b-adding-files"></a>사례 4b: 파일 추가  
  프로젝트 또는 솔루션 항목에 파일을 추가, 프로젝트 또는 솔루션도 변경 해야 합니다. 따라서 부모 파일도 체크 아웃 하 고 추가 완료 하려면 체크 인해야 합니다.  
   
 |작업|테스트 단계|확인 하려면 예상된 결과|  
@@ -65,7 +60,7 @@ ms.locfileid: "51783307"
 |텍스트 파일을 추가 하 고 모두 체크 인 (**체크 인** 대화 상자)|1.  새 프로젝트를 만듭니다.<br />2.  소스 제어에 솔루션을 추가 합니다.<br />3.  텍스트 파일을 프로젝트에 추가 합니다.<br />4.  메시지가 표시 되 면 프로젝트의 체크 아웃을 허용 합니다.<br />5.  솔루션 선택 **솔루션 탐색기**합니다.<br />6.  체크 인 합니다 **체크 인** 대화 상자.|일반적인 예상된 동작입니다.|  
 |텍스트 파일을 추가 하 고 모두 체크 인 (**보류 중인 체크 인** 창)|1.  새 프로젝트를 만듭니다.<br />2.  소스 제어에 솔루션을 추가 합니다.<br />3.  텍스트 파일을 프로젝트에 추가 합니다.<br />4.  메시지가 표시 되 면 프로젝트의 체크 아웃을 허용 합니다.<br />5.  솔루션을 체크 **보류 중인 체크 인** 창입니다.|예상 되는 일반적인 동작|  
   
-### <a name="case-4c-adding-projects"></a>4c 사례: 프로젝트를 추가 합니다.  
+### <a name="case-4c-adding-projects"></a>사례 4 c: 프로젝트를 추가합니다.  
  프로젝트를 솔루션에 추가할 때 솔루션도 변경 해야 합니다. 있으므로 솔루션 파일을 체크 아웃 되 고 추가 완료 하려면 체크 인해야 합니다.  
   
 |작업|테스트 단계|확인 하려면 예상된 결과|  
@@ -75,4 +70,3 @@ ms.locfileid: "51783307"
   
 ## <a name="see-also"></a>참고 항목  
  [소스 제어 플러그 인에 대한 테스트 가이드](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

@@ -1,8 +1,6 @@
 ---
 title: 디버그 인터페이스 액세스 SDK | Microsoft Docs
-ms.custom: ''
 ms.date: 07/24/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 4c0abe53-11d3-4b7a-bdc7-b054f85aaf40
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 279f5b883ca359c38ad8d357d153d02ea022b9da
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 915f594a984af41da167e0fd3d58beb2f6ddd978
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251668"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554911"
 ---
 # <a name="debug-interface-access-sdk"></a>디버그 인터페이스 액세스 SDK
 
@@ -29,17 +27,22 @@ Microsoft 디버그 인터페이스 액세스 소프트웨어 개발 키트 (DIA
 
 ## <a name="in-this-section"></a>단원 내용
 
-[시작](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)  
+[시작](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)
+
 DIA SDK의 개요 기능을 제공 하 고 필요한 헤더 및 라이브러리 파일 DIA SDK가 설치 하는 위치를 지정 합니다.
 
-[.Pdb 파일 쿼리](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
+[.Pdb 파일 쿼리](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
+
 DIA API를 사용 하 여.pdb 파일을 쿼리 하는 방법에 지침을 제공 합니다.
 
-[기호 및 기호 태그](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)  
+[기호 및 기호 태그](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
+
 DIA API에서 기호 및 기호 태그를 사용 하는 방법을 설명 합니다.
 
-[참조](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
+[참조](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
+
 인터페이스, 메서드, 열거형 및 DIA API의 구조를 포함합니다.
 
-[Dia2dump 샘플](../../debugger/debug-interface-access/dia2dump-sample.md)  
+[Dia2dump 샘플](../../debugger/debug-interface-access/dia2dump-sample.md)
+
 DIA API 검색 및 찾아보기 디버그 정보를 사용 하는 방법을 보여 줍니다.

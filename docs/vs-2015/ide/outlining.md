@@ -1,14 +1,9 @@
 ---
 title: 개요 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - outlining
 - Visual Studio, expand/collapse code
@@ -21,13 +16,13 @@ ms.assetid: d1476758-9d35-4d74-b63c-310661932ecd
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: af7f854f6e097471cdd744537a4be4cbd1646400
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: db33392deb16664e48c3b2d90df883294d5cfbaa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441160"
 ---
 # <a name="outlining"></a>개요
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ ms.locfileid: "49282518"
  **편집** 메뉴의 **실행 취소** 및 **다시 실행** 명령은 이러한 작업에 영향을 줍니다. **복사**, **잘라내기**, **붙여넣기** 및 끌어서 놓기 작업은 개요 정보를 유지하지만 축소 가능한 영역의 상태는 유지되지 않습니다. 예를 들어 축소된 영역을 복사하는 경우 **붙여넣기** 작업은 복사된 텍스트를 확장된 영역으로 붙여넣습니다.  
   
 > [!CAUTION]
->  개요 보기로 표시된 영역을 변경하는 경우 개요가 손실될 수 있습니다. 예를 들어 삭제 또는 찾기/바꾸기 작업으로 인해 영역의 끝이 지워질 수 있습니다.  
+> 개요 보기로 표시된 영역을 변경하는 경우 개요가 손실될 수 있습니다. 예를 들어 삭제 또는 찾기/바꾸기 작업으로 인해 영역의 끝이 지워질 수 있습니다.  
   
  **편집/개요** 하위 메뉴에서 다음 명령을 찾을 수 있습니다.  
   
@@ -57,6 +52,3 @@ ms.locfileid: "49282518"
 |모두 축소: \<논리적 구조>|(Visual C++) 함수 내부의 모든 구조를 축소합니다.|  
   
  Visual Studio SDK를 사용하여 확장 또는 축소할 텍스트 영역을 정의할 수도 있습니다. [연습: 개요](../extensibility/walkthrough-outlining.md)를 참조하세요.
-
-
-

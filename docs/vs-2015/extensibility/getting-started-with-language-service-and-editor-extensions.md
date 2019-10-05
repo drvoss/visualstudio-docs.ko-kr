@@ -1,26 +1,21 @@
 ---
 title: 언어 서비스 및 편집기 확장 시작 하기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f09056d184256e2d62387af08c61186c6ff57c02
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4c4278679cabb72e9d06f79c1668e7546f24194d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735209"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703753"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>언어 서비스 및 편집기 확장 시작
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,18 +25,18 @@ ms.locfileid: "51735209"
  편집기 확장 작성을 시작, Visual Studio SDK의 일부로 설치 되는 편집기 프로젝트 템플릿을 사용 합니다. Visual Studio SDK는 Vspackage를 사용 하 여 또는 Framework MEF (Managed Extensibility)를 사용 하 여 Visual Studio 확장 개발을 쉽게 해 주는 도구 집합을 다운로드 합니다.  
   
 > [!NOTE]
->  Visual Studio SDK에 대 한 자세한 내용은 참조 하세요. [Visual Studio SDK](../extensibility/visual-studio-sdk.md)합니다.  
+> Visual Studio SDK에 대 한 자세한 내용은 참조 하세요. [Visual Studio SDK](../extensibility/visual-studio-sdk.md)합니다.  
   
  사용자 고유의 편집기 확장을 작성 하기 전에 다음과 같은 개념과 기술에 대 한 설명 하는 것이 좋습니다.  
   
 ## <a name="the-windows-presentation-foundation-wpf-and-editor-extensions"></a>Windows Presentation Foundation (WPF) 및 편집기 확장  
- Visual Studio 편집기 사용자 인터페이스 (UI)는 Windows Presentation Foundation (WPF)를 사용 하 여 구현 됩니다. WPF는 풍부한 시각적 환경 및 비즈니스 논리에서 코드의 시각적 측면을 구분 하는 일관성 있는 프로그래밍 모델을 제공 합니다. 편집기 확장을 만들 때 여러 가지 WPF 요소와 기능을 사용할 수 있습니다. 자세한 내용은 [Windows Presentation Foundation](http://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d)합니다.  
+ Visual Studio 편집기 사용자 인터페이스 (UI)는 Windows Presentation Foundation (WPF)를 사용 하 여 구현 됩니다. WPF는 풍부한 시각적 환경 및 비즈니스 논리에서 코드의 시각적 측면을 구분 하는 일관성 있는 프로그래밍 모델을 제공 합니다. 편집기 확장을 만들 때 여러 가지 WPF 요소와 기능을 사용할 수 있습니다. 자세한 내용은 [Windows Presentation Foundation](https://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d)합니다.  
   
 ## <a name="the-managed-extensibility-framework-mef-and-editor-extensions"></a>Managed Extensibility Framework (MEF) 및 편집기 확장  
  Visual Studio 편집기는 구성 요소와 확장을 관리 하는 프레임 워크 MEF (Managed Extensibility)를 사용 합니다. MEF에는 또한 개발자를 자세한 Visual Studio와 같은 호스트 응용 프로그램에 대 한 확장을 쉽게 만들 수 있습니다. 이 프레임 워크에서는 MEF 계약에 따라 확장을 정의 하 고 MEF 구성 요소 부분으로 내보내야 합니다. 호스트 응용 프로그램 찾을 수 있으며, 등록 하면 올바른 컨텍스트에 적용 되는 선택 되어 있는지 확인 하는 구성 요소 부분을 관리 합니다.  
   
 > [!NOTE]
->  편집기에서 MEF에 대 한 자세한 내용은 참조 하세요. [편집기에서 Managed Extensibility Framework](../extensibility/managed-extensibility-framework-in-the-editor.md)합니다.  
+> 편집기에서 MEF에 대 한 자세한 내용은 참조 하세요. [편집기에서 Managed Extensibility Framework](../extensibility/managed-extensibility-framework-in-the-editor.md)합니다.  
   
 ## <a name="visual-studio-editor-extension-points-and-extensions"></a>Visual Studio 편집기 확장 지점 및 확장  
  편집기 확장 지점은 MEF 구성 요소 파트를 사용자 지정 및 확장할 수 있습니다. 일부 경우에 인터페이스를 구현 하 여 올바른 메타 데이터와 함께 내보내기 확장 지점을 확장 합니다. 다른 경우에만 확장 선언을 특정 형식으로 내보내기.  
@@ -50,7 +45,7 @@ ms.locfileid: "51735209"
   
 - 여백 및 스크롤 막대  
   
-- Tags  
+- 태그  
   
 - 선의 도구 영역  
   
@@ -66,12 +61,12 @@ ms.locfileid: "51735209"
  컴퓨터에서 확장을 설치할 때 Visual Studio에 알려진 폴더의 하위 폴더에 이진 파일 및 매니페스트를 포함 합니다.  
   
 > [!WARNING]
->  Visual Studio에 포함 된 편집기 확장성 템플릿 중 하나를 사용 하는 경우 매니페스트 및 배포 위치 세부 정보에 걱정할 필요가 없습니다. 템플릿을 등록 하 고 확장을 배포 하는 데 필요한 모든 포함 합니다.  
+> Visual Studio에 포함 된 편집기 확장성 템플릿 중 하나를 사용 하는 경우 매니페스트 및 배포 위치 세부 정보에 걱정할 필요가 없습니다. 템플릿을 등록 하 고 확장을 배포 하는 데 필요한 모든 포함 합니다.  
   
 ## <a name="running-extensions-in-the-experimental-instance"></a>실험적 인스턴스에서 확장을 실행합니다.  
  실험적 폴더 (Windows Vista 및 Windows 7)에 배포 하 여 확장을 개발 하는 동안 작업 버전의 Visual Studio를 분리 수 있습니다.  
   
- *% LOCALAPPDATA %* \VisualStudio\10.0Exp\Extensions\\*회사*\\*ExtensionID*  
+ *%LOCALAPPDATA%* \VisualStudio\10.0Exp\Extensions\\*Company*\\*ExtensionID*  
   
  여기서 *% LOCALAPPDATA %* 로그온 한 사용자의 이름입니다 *회사* 확장을 소유 하는 회사의 이름 및 *ExtensionID* 확장의 ID입니다.  
   
@@ -89,10 +84,9 @@ ms.locfileid: "51735209"
   
  작업을 Visual Studio 패키지 확장에서 MEF 구성 요소 편집기도 만들 수도 있습니다. 자세한 다음 연습을 참조 하세요.  
   
--   [연습: 편집기 확장에서 셸 명령 사용](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
+- [연습: 편집기 확장에서 셸 명령 사용](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
   
--   [연습: 편집기 확장에서 바로 가기 키 사용](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
+- [연습: 편집기 확장에서 바로 가기 키 사용](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
   
 ## <a name="see-also"></a>참고 항목  
  [언어 서비스 및 편집기 확장 지점](../extensibility/language-service-and-editor-extension-points.md)
-

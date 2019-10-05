@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, deployment considerations
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bacb7a8226ac9f82987eede32b9df18a103270a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 433819e269e546b224dd34cf47b2f127ea9813aa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932946"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332707"
 ---
 # <a name="vspackage-setup-scenarios"></a>VSPackage 설치 시나리오
 
@@ -78,5 +78,5 @@ Side-by-side-어셈블리의 배포에 대 한 자세한 내용은 참조 하세
 
 ## <a name="see-also"></a>참고 항목
 
-[Windows Installer](/windows/desktop/Msi/windows-installer-portal)  
-[여러 버전의 Visual Studio 지원](../../extensibility/supporting-multiple-versions-of-visual-studio.md)
+- [Windows Installer](/windows/desktop/Msi/windows-installer-portal)
+- [여러 버전의 Visual Studio 지원](../../extensibility/supporting-multiple-versions-of-visual-studio.md)

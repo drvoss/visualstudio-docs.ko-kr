@@ -1,14 +1,9 @@
 ---
 title: 공통 데이터 뷰 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,views
 - Profiling Tools,reports
@@ -16,13 +11,13 @@ ms.assetid: ee5e964c-1222-496d-b825-166443a89d2b
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 120e4ba8b05af3998fd75d973a4cfdb4a662630f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 708bb96beab51fa69910deef40dc468a1fd21058
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753674"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62421410"
 ---
 # <a name="common-data-views"></a>공통 데이터 뷰
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,6 +61,3 @@ ms.locfileid: "51753674"
   
  [.NET 메모리 데이터 뷰](../profiling/dotnet-memory-data-views.md)  
  .NET 메모리 수집을 사용하여 생성된 프로파일러 데이터 파일의 뷰와 보고서에 대한 참조 정보입니다.
-
-
-

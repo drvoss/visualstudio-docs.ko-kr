@@ -2,19 +2,18 @@
 title: 워크플로 디자이너-기본 형식 활동 디자이너
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 ms.assetid: 0a2b613e-dc04-49a1-a787-caec2ec63b90
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 910e241195a7aac5f51a341825b5605ecce5c6bc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0facda4d2dfab4862208a6267f2b0f5f4db61b08
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969360"
 ---
 # <a name="primitives-activity-designers"></a>기본 형식 활동 디자이너
 
@@ -35,6 +34,6 @@ ms.locfileid: "53873623"
 
  [오류 처리](../workflow-designer/error-handling-activity-designers.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [활동 디자이너 사용](../workflow-designer/using-the-activity-designers.md)

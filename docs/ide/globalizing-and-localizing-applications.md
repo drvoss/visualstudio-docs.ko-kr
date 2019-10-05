@@ -1,9 +1,7 @@
 ---
-title: 응용 프로그램 전역화 및 지역화
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
-ms.topic: conceptual
+title: 지역화 도구
+ms.date: 02/15/2019
+ms.topic: reference
 helpviewer_keywords:
 - globalization [Visual Studio]
 - Visual Basic code, international applications
@@ -14,33 +12,44 @@ helpviewer_keywords:
 ms.assetid: 4d9815ae-3e80-4b4d-933d-f8309aee18d5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73e638b2474342987963c02f442f5d7a98a6e44e
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 934427c2bfba769968b7aeb364625b71af47eca7
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863598"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820874"
 ---
-# <a name="globalizing-and-localizing-applications"></a>응용 프로그램 전역화 및 지역화
+# <a name="develop-globalized-and-localized-apps"></a>세계화 및 지역화된 앱 개발
 
-응용 프로그램을 전 세계의 대상에게 배포할 계획이라면 설계 및 개발 단계에서 몇 가지 사항을 고려해야 합니다. 이런 계획이 없더라도 응용 프로그램의 미래 버전에서 계획이 변경될 경우 미리 작은 노력으로 작업을 훨씬 더 간소화할 수 있습니다. [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]에 기본 제공된 서비스를 사용하면 Visual Studio에서 관리 개발을 통해 다양한 로캘에 맞게 조정될 수 있는 단일 응용 프로그램을 쉽게 개발할 수 있습니다.
+Visual Studio는 [.NET](/dotnet/standard/globalization-localization/)에 기본 제공된 서비스를 이용하여 전 세계의 사용자를 대상으로 쉽게 개발할 수 있습니다.
 
-## <a name="resources"></a>자료
+예를 들어, Windows Forms 앱용 프로젝트 시스템은 대체(fallback) UI 문화권 및 추가 UI 문화권에 대한 리소스 파일을 생성할 수 있습니다. Visual Studio에서 프로젝트를 빌드할 때 리소스 파일은 Visual Studio XML 형식(.resx)에서 중간 이진 형식(.resources)으로 컴파일된 다음, 위성 어셈블리에 포함됩니다. 자세한 내용은 [Visual Studio의 리소스 파일](/dotnet/framework/resources/creating-resource-files-for-desktop-apps#VSResFiles) 및 [데스크톱 앱용 위성 어셈블리 만들기](/dotnet/framework/resources/creating-satellite-assemblies-for-desktop-apps)를 참조하세요.
 
- Visual Studio는 처음부터 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]에 기본 제공된 서비스를 이용하여 전 세계의 대상을 위해 쉽게 개발할 수 있도록 고안되었습니다. 다음 문서에서는 Visual Studio에 기본 제공된 국제화 기능을 소개합니다.
+## <a name="bidirectional-languages"></a>양방향 언어
 
- [.NET Framework 기반의 국가별 응용 프로그램 소개](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Visual Studio 및 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]을 사용하여 국제 시장용 소프트웨어를 개발하는 방법에 대한 개념을 소개합니다.
+Visual Studio를 사용하여 아랍어 및 히브리어와 같이 오른쪽에서 왼쪽으로 기록되는 언어로 텍스트를 제대로 표시하는 애플리케이션을 만들 수 있습니다. 일부 기능의 경우 속성만 설정하면 됩니다. 기타 경우에는 기능을 코드로 구현해야 합니다.
 
- [응용 프로그램 지역화](../ide/localizing-applications.md) 특정 문화권에 맞게 응용 프로그램을 사용자 지정하는 방법에 대한 페이지의 링크를 제공합니다.
+> [!NOTE]
+> 양방향 언어를 입력 및 표시하려면 적절한 언어로 구성된 Windows 버전을 사용해야 합니다. 적절한 언어 팩이 설치된 Windows 영어 버전 또는 적절히 지역화된 Windows 버전 중 하나일 수 있습니다.
 
- [응용 프로그램 전역화](../ide/globalizing-applications.md) 여러 문화권을 지원하는 응용 프로그램을 만드는 방법에 대한 페이지의 링크를 제공합니다.
+### <a name="apps-that-support-bidirectional-languages"></a>양방향 언어를 지원하는 앱
+
+- Windows 앱
+
+   양방향 텍스트, 오른쪽에서 왼쪽 읽기 순서 및 미러링(창 레이아웃, 메뉴, 대화 상자 등 반전)에 대한 지원이 포함된 완전 양방향 애플리케이션을 만들 수 있습니다. 미러링을 제외하고 이러한 기능은 기본적으로 또는 속성 설정으로 사용할 수 있습니다. 미러링은 메시지 상자와 같은 일부 기능에만 기본적으로 지원됩니다. 다른 경우에는 미러링을 코드로 구현해야 합니다. 자세한 내용은 [Windows Forms 애플리케이션에 대한 양방향 지원](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications)을 참조하세요.
+
+- 웹앱
+
+   웹 서비스는 양방향 언어가 포함된 애플리케이션에 적합해지도록 UTF-8 및 유니코드 텍스트의 송수신을 지원합니다. 웹 클라이언트 애플리케이션은 브라우저를 기반으로 사용자 인터페이스를 제공하므로 웹 애플리케이션의 양방향 지원 정도는 사용자의 브라우저가 이 양방향 기능을 얼마나 잘 지원하는지에 따라 달라집니다. Visual Studio에서는 아랍어 및 히브리어 텍스트, 오른쪽에서 왼쪽 읽기 순서, 파일 인코딩 및 로컬 문화권 설정에 대한 지원을 사용하여 애플리케이션을 만들 수 있습니다. 자세한 내용은 [ASP.NET 웹 애플리케이션을 위한 양방향 지원](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)을 참조하세요.
+
+> [!NOTE]
+> 콘솔 앱에는 양방향 언어에 대한 텍스트 지원이 포함되지 않습니다. 이는 Windows가 콘솔 애플리케이션과 작동하는 방식 때문입니다.
 
 ## <a name="see-also"></a>참고 항목
 
-- [지역화 대비 응용 프로그램 개발을 위한 최선의 구현 방법](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps)에서는 전 세계 대상을 위한 프로그래밍에 대한 배경 정보를 제공합니다.
-- [클래스 라이브러리 개요](/dotnet/standard/class-library-overview)에서는 개발 과정을 단축하고 최적화하며 시스템 기능에 액세스할 수 있는 클래스, 인터페이스, 값 형식을 소개합니다.
-- <xref:System.Globalization>은 언어, 국가/지역, 사용하는 달력, 날짜, 통화 및 숫자 형식 패턴, 문자열 정렬 순서 등의 문화권 관련 정보를 정의하는 이 네임스페이스의 클래스를 나타냅니다.
-- <xref:System.Resources>는 응용 프로그램에 사용되는 여러 가지 문화권별 리소스를 개발자가 만들고, 저장하고, 관리할 수 있게 하는 이 네임스페이스의 클래스와 인터페이스를 나타냅니다.
+- [Visual Studio에서 양방향 언어에 대한 지원](use-bidirectional-languages.md)
+- [.NET 앱 세계화 및 지역화](/dotnet/standard/globalization-localization/)
+- [.NET 앱의 리소스](/dotnet/framework/resources/)

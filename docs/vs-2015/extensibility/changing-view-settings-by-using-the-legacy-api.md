@@ -1,28 +1,23 @@
 ---
 title: 레거시 API를 사용 하 여 보기 설정 변경 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - changing view settings
 ms.assetid: 12c9b300-0894-4124-96a1-764326176d77
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: df84fa92cb0da8dd408b1cc8717628afa3d5ba19
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a7d58d1477b9d7f58242f8cb4db7c3c360c248b9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730627"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184473"
 ---
-# <a name="changing-view-settings-by-using-the-legacy-api"></a>레거시 API를 사용 하 여 보기 설정 변경
+# <a name="changing-view-settings-by-using-the-legacy-api"></a>레거시 API를 사용하여 보기 설정 변경
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 가상 공간, 자동 줄 바꿈 및 선택 영역 여백 등의 핵심 편집기 기능에 대 한 설정을 이용 하 여 사용자가 변경할 수 있습니다 합니다 **옵션** 대화 상자. 하지만 이러한 설정을 변경할 수 이기도 프로그래밍 방식으로 합니다.  
@@ -32,13 +27,13 @@ ms.locfileid: "51730627"
   
  다음은 핵심 편집기 인스턴스에 대 한 보기 설정을 변경 하기 위한 일반적인 프로세스입니다.  
   
-1.  호출 `QueryInterface` 에 (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>)에 대 한는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> 인터페이스입니다.  
+1. 호출 `QueryInterface` 에 (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>)에 대 한는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> 인터페이스입니다.  
   
-2.  호출 된 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> GUID_EditPropCategory_View_MasterSettings에 대 한 값을 지정 하는 메서드를는 `rguidCategory` 매개 변수입니다.  
+2. 호출 된 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> GUID_EditPropCategory_View_MasterSettings에 대 한 값을 지정 하는 메서드를는 `rguidCategory` 매개 변수입니다.  
   
      이렇게에 대 한 포인터를 반환 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> 인터페이스 뷰에 대 한 강제 속성 집합이 포함 되어 있습니다. 이 그룹의 모든 설정이 영구적으로 강제로 적용 합니다. 설정이이 그룹에 없는 경우 지정 된 옵션 따릅니다 합니다 **옵션** 대화 상자 또는 사용자의 명령을 합니다.  
   
-3.  호출을 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> 메서드에 적절 한 설정 값을 지정 하는 `idprop` 매개 변수입니다.  
+3. 호출을 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> 메서드에 적절 한 설정 값을 지정 하는 `idprop` 매개 변수입니다.  
   
      예를 들어, 자동 줄 바꿈을 강제 적용 하려면 호출 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> VSEDITPROPID_ViewLangOpt_WordWrap의 값을 지정 `vt` 에 대 한는 `idprop` 매개 변수입니다. 이 호출 `vt` VT_BOOL 형식의 변형 및 `vt.boolVal` 가 VARIANT_TRUE입니다.  
   
@@ -53,4 +48,3 @@ ms.locfileid: "51730627"
  [핵심 편집기 내에서](../extensibility/inside-the-core-editor.md)   
  [레거시 API를 사용 하 여 텍스트 보기에 액세스](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)   
  [옵션 대화 상자](../ide/reference/options-dialog-box-visual-studio.md)
-

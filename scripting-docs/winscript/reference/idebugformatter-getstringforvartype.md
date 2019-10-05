@@ -2,7 +2,6 @@
 title: IDebugFormatter::GetStringForVarType | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e056fa2ef9613c1af776840d1dae61078e26f83
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3d83df97ac9cb6c38d989470b71da93aceb5d50b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979216"
 ---
 # <a name="idebugformattergetstringforvartype"></a>IDebugFormatter::GetStringForVarType
 지정한 VARTYPE 값을 나타내는 문자열을 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetStringForVarType(  
    VARTYPE    vt,  
    TYPEDESC*  ptdescArrayType,  
@@ -40,7 +39,7 @@ HRESULT GetStringForVarType(
   
 #### <a name="parameters"></a>매개 변수  
  `vt`  
- [in] VARTYPE string으로 나타낼 수 있습니다.  
+ [in] 문자열로 나타내는 VARTYPE 합니다.  
   
  `ptdescArrayType`  
  [in] 형식에 설명 하는 구조체의 배열입니다.  

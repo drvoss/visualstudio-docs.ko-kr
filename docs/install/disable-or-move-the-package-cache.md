@@ -2,9 +2,7 @@
 title: 패키지 캐시를 사용하지 않도록 설정 또는 이동
 description: Visual Studio 배포에 대해 패키지 캐시를 사용하지 않도록 설정하거나, 사용하도록 설정하거나, 이동하는 방법을 알아봅니다.
 ms.date: 04/14/2017
-ms.technology: vs-acquisition
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - cache
@@ -15,15 +13,17 @@ helpviewer_keywords:
 ms.assetid: 2429993A-3F0E-41C5-9562-FEA6AE994440
 author: heaths
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 006e7112a2b6c7b990fb412c6a9a2c458bc9e8b2
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 47793cff733d84634c79355fb7639dbdad1cd82f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974243"
 ---
 # <a name="disable-or-move-the-package-cache"></a>패키지 캐시를 사용하지 않도록 설정 또는 이동
 
@@ -50,7 +50,7 @@ Visual Studio를 설치, 수정 또는 복구하기 전에 캐시가 사용되�
 
 ## <a name="move-the-package-cache"></a>패키지 캐시 이동
 
-일반적인 시스템 구성은 소스 코드, 프로그램 이진 파일 등의 개발 요구 사항에 맞게 더 큰 하드 디스크가 포함된 SSD에 Windows를 설치하는 것입니다. 오프라인에서 작업하려는 경우 패키지 캐시를 이동할 수 있습니다.
+일반적인 시스템 구성은 소스 코드, 프로그램 이진 파일 등의 개발 요구 사항에 맞게 더 큰 하드 디스크가 포함된 SSD에 Windows를 설치하는 것입니다. 오프라인에서 작업하려는 경우 패키지 캐시를 대신 이동할 수 있습니다.
 
 현재는 Visual Studio를 설치, 수정 또는 복구하기 전에 `CachePath` [레지스트리 정책](set-defaults-for-enterprise-deployments.md)을 설정하는 경우에만 이 작업을 할 수 있습니다.
 

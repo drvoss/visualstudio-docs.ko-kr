@@ -1,22 +1,21 @@
 ---
-title: 워크플로 디자이너-매개 변수를 추가 및 인수 추가 대화 상자
+title: '워크플로 디자이너: 추가 매개 변수 및 인수 추가 대화 상자'
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - AddParameters.UI
 ms.assetid: a21fb4fe-134b-40b0-8497-86b842940ca1
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f0a9868566ad77441d31929acc2d6fddb1736eb2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7acb273430ac2dea8bc1f95a5c9a6e5c1d45c6f5
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823871"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177739"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>매개 변수 추가 및 인수 추가 대화 상자
 

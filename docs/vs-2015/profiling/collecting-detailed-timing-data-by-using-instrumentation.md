@@ -1,14 +1,9 @@
 ---
 title: 계측을 사용하여 자세한 타이밍 데이터 수집 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,instrumentation method
 - instrumentation profiling method
@@ -16,26 +11,26 @@ ms.assetid: e9deb370-c459-45ac-84d3-14d646590d05
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 53a73bca3e8f868d94a548d9e45416dcd68f0553
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c129ddf016e02fe6c29d5cf63fe57ba07fbd4e95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176650"
 ---
 # <a name="collecting-detailed-timing-data-by-using-instrumentation"></a>계측을 사용하여 자세한 타이밍 데이터 수집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로파일링 도구 계측 방법은 모듈의 복사본에 프로파일링 코드를 삽입합니다. 코드는 프로파일링 실행 중 모듈의 각 함수 시작, 종료 및 함수 호출을 기록합니다. 계측 방법은 코드의 한 섹션에 대한 자세한 타이밍 정보를 수집하고 입력 및 출력 작업이 응용 프로그램 성능에 미치는 영향을 이해하는 데 유용합니다.  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로파일링 도구 계측 방법은 모듈의 복사본에 프로파일링 코드를 삽입합니다. 코드는 프로파일링 실행 중 모듈의 각 함수 시작, 종료 및 함수 호출을 기록합니다. 계측 방법은 코드의 한 섹션에 대한 자세한 타이밍 정보를 수집하고 입력 및 출력 작업이 애플리케이션 성능에 미치는 영향을 이해하는 데 유용합니다.  
   
  다음 절차 중 하나를 사용하여 계측 방법을 지정할 수 있습니다.  
   
--   프로파일링 마법사의 첫 페이지에서 **계측**을 선택합니다.  
+- 프로파일링 마법사의 첫 페이지에서 **계측**을 선택합니다.  
   
--   **성능 탐색기** 도구 모음의 **메서드** 목록에서 **계측**을 클릭합니다.  
+- **성능 탐색기** 도구 모음의 **메서드** 목록에서 **계측**을 클릭합니다.  
   
--   성능 세션에 대한 속성 대화 상자의 **일반** 페이지에서 **계측**을 선택합니다.  
+- 성능 세션에 대한 속성 대화 상자의 **일반** 페이지에서 **계측**을 선택합니다.  
   
 ## <a name="common-tasks"></a>일반 작업  
  성능 세션의 _성능 세션_**속성 페이지** 대화 상자에서 추가 옵션을 지정할 수 있습니다. 이 대화 상자를 열려면  
@@ -55,6 +50,3 @@ ms.locfileid: "51747013"
 |**Windows 이벤트** 페이지에서 샘플링 데이터로 수집할 ETW(Windows용 이벤트 추적) 이벤트를 하나 이상 선택합니다.|-   [방법: ETW(Windows용 이벤트 추적) 데이터 수집](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|  
 |**Windows 카운터** 페이지에서 프로파일링 데이터에 표시로 추가할 운영 체제 성능 카운터를 하나 이상 지정합니다.|-   [방법: Windows 카운터 데이터 수집](../profiling/how-to-collect-windows-counter-data.md)|  
 |**고급** 페이지에서 특정 함수를 포함하거나 제외하는 옵션 등 VSInstr 계측 프로그램에 전달하려는 추가 옵션을 지정합니다.|-   [방법: 추가 계측 옵션 지정](../profiling/how-to-specify-additional-instrumentation-options.md)<br />-   [방법: 특정 함수로 계측 제한](../profiling/how-to-limit-instrumentation-to-specific-functions.md)<br />-   [VSInstr](../profiling/vsinstr.md)|
-
-
-

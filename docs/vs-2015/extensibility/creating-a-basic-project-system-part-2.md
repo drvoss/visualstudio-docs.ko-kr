@@ -1,14 +1,9 @@
 ---
 title: 기본 프로젝트 시스템 만들기, 2 부 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
 - project system
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 98cdcf426f2aeeb794e9e33754108c792f9725e5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: b6d44e99b584ec347abd407753f965170658969b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753975"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685421"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>기본 프로젝트 시스템 만들기, 2부
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,18 +28,18 @@ ms.locfileid: "51753975"
   
  이 연습에서는 이러한 작업을 수행 하는 방법에 설명 합니다.  
   
--   Visual Studio 템플릿을 만듭니다.  
+- Visual Studio 템플릿을 만듭니다.  
   
--   Visual Studio 템플릿을 배포 합니다.  
+- Visual Studio 템플릿을 배포 합니다.  
   
--   프로젝트 형식 자식 노드를 만드는 합니다 **새 프로젝트** 대화 상자.  
+- 프로젝트 형식 자식 노드를 만드는 합니다 **새 프로젝트** 대화 상자.  
   
--   Visual Studio 템플릿에서 매개 변수 대체를 사용 하도록 설정 합니다.  
+- Visual Studio 템플릿에서 매개 변수 대체를 사용 하도록 설정 합니다.  
   
--   프로젝트 속성 페이지를 만듭니다.  
+- 프로젝트 속성 페이지를 만듭니다.  
   
 > [!NOTE]
->  이 연습 단계에서는 C# 프로젝트를 기반으로 합니다. 그러나 파일 이름 확장명 및 코드와 같은 세부 정보를 제외 하 고 Visual Basic 프로젝트에 대 한 동일한 단계를 사용할 수 있습니다.  
+> 이 연습 단계에서는 C# 프로젝트를 기반으로 합니다. 그러나 파일 이름 확장명 및 코드와 같은 세부 정보를 제외 하 고 Visual Basic 프로젝트에 대 한 동일한 단계를 사용할 수 있습니다.  
   
 ## <a name="creating-a-visual-studio-template"></a>Visual Studio 템플릿 만들기  
  [기본 프로젝트 시스템, 1 부 만들기](../extensibility/creating-a-basic-project-system-part-1.md) 기본 프로젝트 템플릿을 만들고 프로젝트 시스템에 추가 하는 방법을 보여 줍니다. 또한이 템플릿은 Visual Studio를 사용 하 여 등록 하는 방법을 보여 줍니다는 <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> \Templates\Projects\SimpleProject\ 폴더의 전체 경로를 시스템 레지스트리에 쓰는 특성입니다.  
@@ -105,7 +100,7 @@ ms.locfileid: "51753975"
 - 합니다 \<ProjectType > 요소에 프로젝트 이름 합니다 **새 프로젝트** 대화 상자. 이 이름은 ProvideProjectFactory 특성의 프로젝트 이름 매개 변수를 대체 합니다.  
   
   > [!NOTE]
-  >  \<ProjectType > 요소와 일치 해야 합니다 `LanguageVsTemplate` 인수는 `ProvideProjectFactory` SimpleProjectPackage.cs 파일의 특성에에서.  
+  > \<ProjectType > 요소와 일치 해야 합니다 `LanguageVsTemplate` 인수는 `ProvideProjectFactory` SimpleProjectPackage.cs 파일의 특성에에서.  
   
   \<TemplateContent > 섹션에 새 프로젝트가 만들어질 때 생성 되는 이러한 파일에 설명 합니다.  
   
@@ -120,14 +115,14 @@ ms.locfileid: "51753975"
   Visual Studio 템플릿 스키마의 요소에 대 한 자세한 내용은 참조는 [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)합니다.  
   
 > [!NOTE]
->  프로젝트를 Visual Studio 템플릿이 둘 이상 있으면 모든 템플릿은 별도 폴더에서입니다. 해당 폴더의 모든 파일도 있어야 합니다 **빌드 작업** 로 설정 **ZipProject**합니다.  
+> 프로젝트를 Visual Studio 템플릿이 둘 이상 있으면 모든 템플릿은 별도 폴더에서입니다. 해당 폴더의 모든 파일도 있어야 합니다 **빌드 작업** 로 설정 **ZipProject**합니다.  
   
 ## <a name="adding-a-minimal-vsct-file"></a>최소.vsct 파일 추가  
  Visual Studio 새롭거나 수정 된 Visual Studio 템플릿을 인식 설치 모드에서 실행 되어야 합니다. 설치 모드 있어야.vsct 파일을 필요 합니다. 따라서 최소.vsct 파일을 프로젝트에 추가 해야 합니다.  
   
-1.  SimpleProject 프로젝트 SimpleProject.vsct 이라는 XML 파일을 추가 합니다.  
+1. SimpleProject 프로젝트 SimpleProject.vsct 이라는 XML 파일을 추가 합니다.  
   
-2.  SimpleProject.vsct 파일의 내용을 다음 코드로 바꿉니다.  
+2. SimpleProject.vsct 파일의 내용을 다음 코드로 바꿉니다.  
   
     ```  
     <?xml version="1.0" encoding="utf-8" ?>  
@@ -136,25 +131,25 @@ ms.locfileid: "51753975"
     </CommandTable>  
     ```  
   
-3.  설정 된 **빌드 작업** 이 파일의 **VSCTCompile**합니다. 이렇게 하려면.csproj 파일에만 없습니다 합니다 **속성** 창입니다. 있는지 확인 합니다 **빌드 작업** 로 설정 되어이 파일의 **None** 이 시점에서.  
+3. 설정 된 **빌드 작업** 이 파일의 **VSCTCompile**합니다. 이렇게 하려면.csproj 파일에만 없습니다 합니다 **속성** 창입니다. 있는지 확인 합니다 **빌드 작업** 로 설정 되어이 파일의 **None** 이 시점에서.  
   
-    1.  SimpleProject 노드를 마우스 오른쪽 단추로 누른 **SimpleProject.csproj 편집**합니다.  
+    1. SimpleProject 노드를 마우스 오른쪽 단추로 누른 **SimpleProject.csproj 편집**합니다.  
   
-    2.  .Csproj 파일에서 SimpleProject.vsct 항목을 찾습니다.  
+    2. .Csproj 파일에서 SimpleProject.vsct 항목을 찾습니다.  
   
         ```  
         <None Include="SimpleProject.vsct" />  
         ```  
   
-    3.  빌드 동작을 변경 **VSCTCompile**합니다.  
+    3. 빌드 동작을 변경 **VSCTCompile**합니다.  
   
         ```  
         <VSCTCompile Include="SimpleProject.vsct" />  
         ```  
   
-    4.  프로젝트 파일 및 편집기를 닫습니다.  
+    4. 프로젝트 파일 및 편집기를 닫습니다.  
   
-    5.  SimpleProject 노드를 저장 한 다음에 **솔루션 탐색기** 클릭 **프로젝트 다시 로드**합니다.  
+    5. SimpleProject 노드를 저장 한 다음에 **솔루션 탐색기** 클릭 **프로젝트 다시 로드**합니다.  
   
 ## <a name="examining-the-visual-studio-template-build-steps"></a>Visual Studio 템플릿 빌드 단계를 검사합니다.  
  .Vstemplate 파일 변경 되거나.vstemplate 파일을 포함 하는 프로젝트를 다시 작성 하는 경우 VSPackage 프로젝트 빌드 시스템은 설치 모드에서 Visual Studio를 실행 되는 일반적으로 합니다. 보통 이상 MSBuild의 자세한 정도 설정 하 여 따라 할 수 있습니다.  
@@ -191,9 +186,9 @@ ZipProjects:
   
 1. Visual Studio SDK 실험적 인스턴스 다시 설정 합니다.  
   
-    [!INCLUDE[win7](../includes/win7-md.md)]: 시작 메뉴에서 찾을 합니다 **Microsoft Visual Studio/Microsoft Visual Studio SDK/Tools** 폴더를 선택한 후 **Microsoft Visual Studio 실험적 인스턴스 다시 설정**합니다.  
+    [!INCLUDE[win7](../includes/win7-md.md)]: 시작 메뉴에서 찾을 합니다 **Microsoft Visual Studio/Microsoft Visual Studio SDK/Tools** 폴더를 선택한 후 **Microsoft Visual Studio 실험적 인스턴스 재설정**합니다.  
   
-    Windows의 이후 버전: 시작 화면에서를 입력 **Microsoft Visual Studio를 다시 설정 \<버전 > 실험적 인스턴스**합니다.  
+    Windows의 이후 버전: 시작 화면에서 입력 **Microsoft Visual Studio를 다시 설정 \<버전 > 실험적 인스턴스**합니다.  
   
 2. 명령 프롬프트 창이 나타납니다. 단어가 표시 되 면 `Press any key to continue`, enter 키를 클릭 합니다. 창을 닫은 후에 Visual Studio를 엽니다.  
   
@@ -214,11 +209,11 @@ ZipProjects:
   
  이 섹션에서는 SimpleProject 프로젝트 형식에 대 한 콘솔 자식 노드를 만드는 방법을 보여 줍니다.  
   
-1.  \Templates\Projects\ConsoleApp \Templates\Projects\SimpleProject\ 폴더의 이름을\\입니다.  
+1. \Templates\Projects\ConsoleApp \Templates\Projects\SimpleProject\ 폴더의 이름을\\입니다.  
   
-2.  에 **속성** 창 \Templates\Projects\ConsoleApp\ 폴더에서 모든 5 개의 파일을 선택 하 고 있는지 확인 합니다 **빌드 작업** 로 설정 되어 **ZipProject**합니다.  
+2. 에 **속성** 창 \Templates\Projects\ConsoleApp\ 폴더에서 모든 5 개의 파일을 선택 하 고 있는지 확인 합니다 **빌드 작업** 로 설정 되어 **ZipProject**합니다.  
   
-3.  SimpleProject.vstemplate 파일에 다음 줄의 끝에 추가 된 \<TemplateData > 닫는 태그 바로 앞의 섹션입니다.  
+3. SimpleProject.vstemplate 파일에 다음 줄의 끝에 추가 된 \<TemplateData > 닫는 태그 바로 앞의 섹션입니다.  
   
     ```  
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>  
@@ -226,11 +221,11 @@ ZipProjects:
   
      이렇게 하면 콘솔 응용 프로그램 템플릿을 콘솔 자식 노드와 SimpleProject 부모 노드의 자식 노드 위의 한 수준에서 표시 합니다.  
   
-4.  SimpleProject.vstemplate 파일을 저장 합니다.  
+4. SimpleProject.vstemplate 파일을 저장 합니다.  
   
-5.  .Csproj 파일에서 추가 \<OutputSubPath > 각 ZipProject 요소입니다. 앞으로 프로젝트를 업로드 하 고 프로젝트 파일을 편집 합니다.  
+5. .Csproj 파일에서 추가 \<OutputSubPath > 각 ZipProject 요소입니다. 앞으로 프로젝트를 업로드 하 고 프로젝트 파일을 편집 합니다.  
   
-6.  찾을 \<ZipProject > 요소입니다. 각 \<ZipProject > 요소에 추가 \<OutputSubPath > 요소 콘솔 값을 지정 합니다. ZipProject  
+6. 찾을 \<ZipProject > 요소입니다. 각 \<ZipProject > 요소에 추가 \<OutputSubPath > 요소 콘솔 값을 지정 합니다. ZipProject  
   
     ```  
     <ZipProject Include="Templates\Projects\ConsoleApp\AssemblyInfo.cs">  
@@ -250,7 +245,7 @@ ZipProjects:
         </ZipProject>  
     ```  
   
-7.  이 추가 \<PropertyGroup > 프로젝트 파일에:  
+7. 이 추가 \<PropertyGroup > 프로젝트 파일에:  
   
     ```  
     <PropertyGroup>  
@@ -258,7 +253,7 @@ ZipProjects:
     </PropertyGroup>  
     ```  
   
-8.  프로젝트 파일을 저장 하 고 프로젝트를 다시 로드 합니다.  
+8. 프로젝트 파일을 저장 하 고 프로젝트를 다시 로드 합니다.  
   
 ## <a name="testing-the-project-type-child-node"></a>프로젝트 형식 자식 노드를 테스트합니다.  
  확인 하려면 수정 된 프로젝트 파일을 테스트 하는지 여부를 **콘솔** 에 자식 노드가 표시 됩니다는 **새 프로젝트** 대화 상자.  
@@ -286,19 +281,19 @@ ZipProjects:
   
 - $safeprojectname $는 사용자가 제공한 이름 합니다 **새 프로젝트** 대화 상자에서 모든 안전 하지 않은 문자 및 공백을 제거 하도록 수정 합니다.  
   
-  템플릿 매개 변수의 전체 목록은 [템플릿 매개 변수](../ide/template-parameters.md)를 참조하세요.  사용자 고유의 사용자 지정 템플릿 매개 변수를 만들려는 경우 참조 [NIB: 방법: 사용자 지정 매개 변수를 템플릿에 전달](http://msdn.microsoft.com/en-us/5bc2ad11-84c7-4683-a276-e5e00d85d8fb)합니다.  
+  템플릿 매개 변수의 전체 목록은 [템플릿 매개 변수](../ide/template-parameters.md)를 참조하세요.  사용자 고유의 사용자 지정 템플릿 매개 변수를 만들려는 경우 참조 [NIB: 방법: 템플릿 사용자 지정 매개 변수를 전달할](https://msdn.microsoft.com/5bc2ad11-84c7-4683-a276-e5e00d85d8fb)합니다.  
   
 #### <a name="to-substitute-project-template-parameters"></a>프로젝트 템플릿 매개 변수를 대체 합니다.  
   
-1.  SimpleProjectNode.cs 파일에서 제거 된 `AddFileFromTemplate` 메서드.  
+1. SimpleProjectNode.cs 파일에서 제거 된 `AddFileFromTemplate` 메서드.  
   
-2.  \Templates\Projects\ConsoleApp\SimpleProject.myproj 파일에서 찾습니다는 \<RootNamespace > 속성 $safeprojectname $ 해당 값을 변경 합니다.  
+2. \Templates\Projects\ConsoleApp\SimpleProject.myproj 파일에서 찾습니다는 \<RootNamespace > 속성 $safeprojectname $ 해당 값을 변경 합니다.  
   
     ```  
     <RootNamespace>$safeprojectname$</RootNamespace>  
     ```  
   
-3.  \Templates\Projects\SimpleProject\Program.cs 파일에서 파일의 내용을 다음 코드로 바꿉니다.  
+3. \Templates\Projects\SimpleProject\Program.cs 파일에서 파일의 내용을 다음 코드로 바꿉니다.  
   
     ```  
     using System;  
@@ -320,11 +315,11 @@ ZipProjects:
     }  
     ```  
   
-4.  SimpleProject 프로젝트 다시 빌드 및 디버깅을 시작 합니다. 실험적 인스턴스에서 표시 됩니다.  
+4. SimpleProject 프로젝트 다시 빌드 및 디버깅을 시작 합니다. 실험적 인스턴스에서 표시 됩니다.  
   
-5.  새 SimpleProject 콘솔 응용 프로그램을 만듭니다. (에 **프로젝트 형식** 창 **SimpleProject**합니다. 아래 **Visual Studio 설치 된 템플릿**를 선택 **콘솔 응용 프로그램**.)  
+5. 새 SimpleProject 콘솔 응용 프로그램을 만듭니다. (에 **프로젝트 형식** 창 **SimpleProject**합니다. 아래 **Visual Studio 설치 된 템플릿**를 선택 **콘솔 응용 프로그램**.)  
   
-6.  새로 만든 프로젝트에서 Program.cs를 엽니다. 다음과 같이 표시 됩니다 (파일의 GUID 값이 달라 집니다.):  
+6. 새로 만든 프로젝트에서 Program.cs를 엽니다. 다음과 같이 표시 됩니다 (파일의 GUID 값이 달라 집니다.):  
   
     ```  
     using System;  
@@ -353,11 +348,11 @@ ZipProjects:
   
  이 섹션에서 만든 속성 페이지를 사용 하 여 변경 하 고 이러한 프로젝트 속성을 저장할 수 있습니다.  
   
--   AssemblyName  
+- AssemblyName  
   
--   OutputType  
+- OutputType  
   
--   RootNamespace 합니다.  
+- RootNamespace.  
   
 1. 추가 SimpleProjectPackage.cs 파일인 `ProvideObject` 특성을 `SimpleProjectPackage` 클래스:  
   
@@ -500,4 +495,3 @@ ZipProjects:
 8. Visual Studio의 실험적 인스턴스를 닫습니다.  
   
    ![](../extensibility/media/simpproj2-proppage2.png "SimpProj2_PropPage2")
-

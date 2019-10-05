@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - profile settings, creating categories
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4653883dbb9d82fd23d5188a2a247db0ec6b69cd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 02ef202436e12ae075c41f507577bacaa968c60b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935621"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341589"
 ---
 # <a name="create-a-settings-category"></a>설정 범주 만들기
 
@@ -33,9 +33,9 @@ ms.locfileid: "53935621"
 
 ### <a name="to-create-a-settings-category"></a>설정 범주를 만들려면
 
-1.  완료 합니다 [옵션 페이지 만들기](../extensibility/creating-an-options-page.md)합니다.
+1. 완료 합니다 [옵션 페이지 만들기](../extensibility/creating-an-options-page.md)합니다.
 
-2.  열기는 *VSPackage.resx* 파일과 이러한 3 개의 문자열 리소스를 추가 합니다.
+2. 열기는 *VSPackage.resx* 파일과 이러한 3 개의 문자열 리소스를 추가 합니다.
 
     |이름|값|
     |----------|-----------|
@@ -46,9 +46,9 @@ ms.locfileid: "53935621"
      그러면 해당 범주 "My Category"는 개체 "My Settings", 이름과 범주 설명을 "OptionInteger 및 OptionFloat" 리소스가 만들어집니다.
 
     > [!NOTE]
-    >  이 세 가지 범주 이름만에 나타나지 않으면 합니다 **설정 가져오기 및 내보내기** 마법사.
+    > 이 세 가지 범주 이름만에 나타나지 않으면 합니다 **설정 가져오기 및 내보내기** 마법사.
 
-3.  *MyToolsOptionsPackage.cs*, 추가 `float` 라는 속성이 `OptionFloat` 에 `OptionPageGrid` 다음 예와에서 같이 클래스입니다.
+3. *MyToolsOptionsPackage.cs*, 추가 `float` 라는 속성이 `OptionFloat` 에 `OptionPageGrid` 다음 예와에서 같이 클래스입니다.
 
     ```csharp
     public class OptionPageGrid : DialogPage
@@ -76,41 +76,41 @@ ms.locfileid: "53935621"
     ```
 
     > [!NOTE]
-    >  합니다 `OptionPageGrid` 범주 이제 "My Category" 라는 두 속성은 이루어져 `OptionInteger` 및 `OptionFloat`합니다.
+    > 합니다 `OptionPageGrid` 범주 이제 "My Category" 라는 두 속성은 이루어져 `OptionInteger` 및 `OptionFloat`합니다.
 
-4.  추가 된 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> 에 `MyToolsOptionsPackage` 클래스 및 CategoryName "My Category"를 지정 하 고, ObjectName "My Settings"를 지정 하 고 isToolsOptionPage true로 설정 합니다. 이전에 만든 Id를 해당 문자열 리소스에 categoryResourceID, objectNameResourceID, 및 DescriptionResourceID를 설정 합니다.
+4. 추가 된 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> 에 `MyToolsOptionsPackage` 클래스 및 CategoryName "My Category"를 지정 하 고, ObjectName "My Settings"를 지정 하 고 isToolsOptionPage true로 설정 합니다. 이전에 만든 Id를 해당 문자열 리소스에 categoryResourceID, objectNameResourceID, 및 DescriptionResourceID를 설정 합니다.
 
     ```csharp
     [ProvideProfileAttribute(typeof(OptionPageGrid),
         "My Category", "My Settings", 106, 107, isToolsOptionPage:true, DescriptionResourceID = 108)]
     ```
 
-5.  프로젝트를 빌드하고 디버깅을 시작합니다. 실험적 인스턴스에서 것을 확인할 수 **그리드 페이지 내** 모두 정수 및 부동 소수점 값을 얻었습니다.
+5. 프로젝트를 빌드하고 디버깅을 시작합니다. 실험적 인스턴스에서 것을 확인할 수 **그리드 페이지 내** 모두 정수 및 부동 소수점 값을 얻었습니다.
 
 ## <a name="examine-the-settings-file"></a>설정 파일을 검사 합니다.
  이 섹션에서는 속성 범주 값 설정 파일을 내보냅니다. 파일을 검사 하 고 속성 범주로 다시 값을 가져옵니다.
 
-1.  키를 눌러 디버그 모드에서 프로젝트를 시작 **F5**합니다. 실험적 인스턴스에서 시작 됩니다.
+1. 키를 눌러 디버그 모드에서 프로젝트를 시작 **F5**합니다. 실험적 인스턴스에서 시작 됩니다.
 
-2.  엽니다는 **도구** > **옵션** 대화 합니다.
+2. 엽니다는 **도구** > **옵션** 대화 합니다.
 
-3.  왼쪽 창의 트리 뷰에서 확장 **My Category** 을 클릭 한 다음 **그리드 페이지 내**합니다.
+3. 왼쪽 창의 트리 뷰에서 확장 **My Category** 을 클릭 한 다음 **그리드 페이지 내**합니다.
 
-4.  값을 변경 **OptionFloat** 3.1416입니다 하 고 **OptionInteger** 12입니다. **확인**을 클릭합니다.
+4. 값을 변경 **OptionFloat** 3.1416입니다 하 고 **OptionInteger** 12입니다. **확인**을 클릭합니다.
 
-5.  **도구** 메뉴에서 **설정 가져오기 및 내보내기**를 선택합니다.
+5. **도구** 메뉴에서 **설정 가져오기 및 내보내기**를 선택합니다.
 
      합니다 **설정 가져오기 및 내보내기** 마법사가 나타납니다.
 
-6.  했는지 **선택한 환경 설정 내보내기** 를 선택한 다음 클릭 **다음**합니다.
+6. 했는지 **선택한 환경 설정 내보내기** 를 선택한 다음 클릭 **다음**합니다.
 
      합니다 **내보낼 설정 선택** 페이지가 나타납니다.
 
-7.  클릭 **내 설정**합니다.
+7. 클릭 **내 설정**합니다.
 
      합니다 **설명을** 변경 **OptionInteger 및 OptionFloat**합니다.
 
-8.  했는지 **내 설정** 를 선택한 다음 클릭 하는 유일한 범주가 **다음**합니다.
+8. 했는지 **내 설정** 를 선택한 다음 클릭 하는 유일한 범주가 **다음**합니다.
 
      합니다 **설정 파일 이름** 페이지가 나타납니다.
 

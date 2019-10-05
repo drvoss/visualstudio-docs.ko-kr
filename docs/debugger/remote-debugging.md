@@ -4,7 +4,6 @@ ms.custom:
 - remotedebugging
 - seodec18
 ms.date: 07/02/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.remote.overview
@@ -19,18 +18,18 @@ helpviewer_keywords:
 ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6701a05d76117e0b8164488de3ec858c61021e17
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MTE95
+ms.openlocfilehash: 9918a2de67693c0232c94a736f12c7af0a0b959c
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065508"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043324"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
-다른 컴퓨터에 배포된 Visual Studio 응용 프로그램을 디버그할 수 있습니다. 이렇게 하려면 Visual Studio 원격 디버거를 사용합니다.
+다른 컴퓨터에 배포된 Visual Studio 애플리케이션을 디버그할 수 있습니다. 이렇게 하려면 Visual Studio 원격 디버거를 사용합니다.
 
 원격 디버깅에 대 한 자세한 내용은 다음이 항목을 참조 하세요.
 
@@ -58,11 +57,22 @@ ms.locfileid: "53065508"
 
 원격 디버거를 찾을 수 있습니다 (*msvsmon.exe*) Visual Studio Community, Professional 또는 Enterprise를 이미 설치 된 컴퓨터에 있습니다. 일부 시나리오에 대 한 원격 디버깅을 설정 하는 가장 쉬운 방법은 파일 공유에서 원격 디버거 (msvsmon.exe)를 실행 하는 것입니다. 사용 제한 사항에 대 한 원격 디버거의 도움말 페이지를 참조 하세요. (**도움말 > 사용량** 원격 디버거의).
 
-1. 찾을 *msvsmon.exe* Visual Studio 버전과 일치 하는 디렉터리에 있습니다. Visual Studio enterprise 2017:
+1. 찾을 *msvsmon.exe* Visual Studio 버전과 일치 하는 디렉터리에 있습니다.
 
-      *프로그램 파일 (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
+   ::: moniker range=">=vs-2019"
 
-      *프로그램 파일 (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
+   *Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
+
+   *Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
+
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+
+   *Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
+
+   *Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
+
+   ::: moniker-end
 
 2. 공유 합니다 **원격 디버거** Visual Studio 컴퓨터의 폴더입니다.
 
@@ -78,21 +88,21 @@ ms.locfileid: "53065508"
 ### <a name="configure_msvsmon"></a> 원격 디버거 구성
 원격 디버거를 처음으로 시작한 후에 원격 디버거 구성의 일부 측면을 변경할 수 있습니다.
 
--   선택에 원격 디버거를 연결할 다른 사용자에 대 한 사용 권한을 추가 하는 경우 **도구 > 권한을**합니다. 사용 권한을 부여하거나 거부하려면 관리자 권한이 있어야 합니다.
+- 선택에 원격 디버거를 연결할 다른 사용자에 대 한 사용 권한을 추가 하는 경우 **도구 > 권한을**합니다. 사용 권한을 부여하거나 거부하려면 관리자 권한이 있어야 합니다.
 
      > [!IMPORTANT]
      > Visual Studio 컴퓨터에서 사용 하는 사용자 계정에서 다른 사용자 계정으로 원격 디버거를 실행할 수는 있지만 원격 디버거의 사용 권한에 다른 사용자 계정을 추가 해야 합니다.
 
      또는 사용 하 여 명령줄에서 원격 디버거를 시작할 수 있습니다 합니다 **허용 / \<사용자 이름 >** 매개 변수: **msvsmon /allow \< username@computer>** 합니다.
 
--   인증 모드 또는 포트 번호를 변경 하거나 원격 도구의 시간 제한 값을 지정 하는 경우: 선택할 **도구 > 옵션**합니다.
+- 인증 모드 또는 포트 번호를 변경 하거나 원격 도구의 시간 제한 값을 지정 하는 경우: 선택할 **도구 > 옵션**합니다.
 
      기본적으로 사용 되는 포트 번호의 나열을 참조 하세요 [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)합니다.
 
      > [!WARNING]
-     >  원격 도구를 인증 안 함 모드에서 실행할 수도 있지만 이 모드는 사용하지 않는 것이 좋습니다. 이 모드에서 실행할 때는 네트워크 보안이 없습니다. 네트워크에 악의적인 트래픽이나 유해 트래픽 위험이 확실히 없는 경우에만 인증 안 함 모드를 선택하세요.
+     > 원격 도구를 인증 안 함 모드에서 실행할 수도 있지만 이 모드는 사용하지 않는 것이 좋습니다. 이 모드에서 실행할 때는 네트워크 보안이 없습니다. 네트워크에 악의적인 트래픽이나 유해 트래픽 위험이 확실히 없는 경우에만 인증 안 함 모드를 선택하세요.
 
-##  <a name="bkmk_configureService"></a> (선택 사항) 원격 디버거를 서비스로 구성
+## <a name="bkmk_configureService"></a> (선택 사항) 원격 디버거를 서비스로 구성
 ASP.NET 및 기타 서버 환경에서 디버깅을 위해 관리자 권한으로 원격 디버거를 실행 하거나, 항상 실행 하려는 경우 원격 디버거를 서비스로 실행 됩니다.
 
  원격 디버거를 서비스로 구성 하려는 경우 다음이 단계를 수행 합니다.
@@ -121,9 +131,9 @@ ASP.NET 및 기타 서버 환경에서 디버깅을 위해 관리자 권한으�
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-- [디버거 기능 둘러보기](../debugger/debugger-feature-tour.md)
+- [디버거 소개](../debugger/debugger-feature-tour.md)
 - [원격 디버깅을 위해 Windows 방화벽 구성](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [원격 디버거 포트 할당](../debugger/remote-debugger-port-assignments.md)
 - [원격 디버깅 원격 IIS 컴퓨터에서 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)

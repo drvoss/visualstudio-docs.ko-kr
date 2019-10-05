@@ -1,14 +1,9 @@
 ---
 title: '방법: 런타임 오류 보고 함수 작성 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,13 +20,13 @@ ms.assetid: 989bf312-5038-44f3-805f-39a34d18760e
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e5d7c9e3d87f7b73ccfad822ef0e7800baaa5b44
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6468e14e3ed588386440e992d9a570e735123bab
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771512"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678900"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function"></a>방법: 런타임 오류 보고 함수 작성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +67,7 @@ int MyErrorFunc(int errorType, const wchar_t *filename,
 ```  
   
 ## <a name="example"></a>예제  
- 다음 예제는 좀 더 복잡한 사용자 지정 보고 함수를 보여 줍니다. 이 예제에서 switch 문은 `reportType`의 `_CrtDbgReportW` 매개 변수에서 정의한 여러 가지 오류 형식을 처리합니다. `_CrtDbgReportW`를 바꾸는 것이므로 `_CrtSetReportMode`는 사용할 수 없습니다. 사용자 지정 함수에서 출력을 처리해야 합니다. 이 함수의 첫째 가변 인수는 런타임 오류 번호를 사용합니다. 자세한 내용은 [_RTC_SetErrorType](http://msdn.microsoft.com/library/f5f99be7-d357-4b11-b8f5-ddd3428f2b06)합니다.  
+ 다음 예제는 좀 더 복잡한 사용자 지정 보고 함수를 보여 줍니다. 이 예제에서 switch 문은 `reportType`의 `_CrtDbgReportW` 매개 변수에서 정의한 여러 가지 오류 형식을 처리합니다. `_CrtDbgReportW`를 바꾸는 것이므로 `_CrtSetReportMode`는 사용할 수 없습니다. 사용자 지정 함수에서 출력을 처리해야 합니다. 이 함수의 첫째 가변 인수는 런타임 오류 번호를 사용합니다. 자세한 내용은 [_RTC_SetErrorType](https://msdn.microsoft.com/library/f5f99be7-d357-4b11-b8f5-ddd3428f2b06)합니다.  
   
 ```  
 #include <windows.h>  
@@ -117,7 +112,7 @@ int Catch_RTC_Failure(int errType, const wchar_t *file, int line,
 ```  
   
 ## <a name="example"></a>예제  
- `_RTC_SetErrorFuncW`를 사용하여 `_CrtDbgReportW` 대신 사용자 지정 함수를 설치합니다. 자세한 내용은 [_RTC_SetErrorFuncW](http://msdn.microsoft.com/library/b3e0d71f-1bd3-4c37-9ede-2f638eb3c81a)합니다. `_RTC_SetErrorFuncW`의 반환 값은 이전 보고 함수이며 필요한 경우 이를 저장하고 복원할 수 있습니다.  
+ `_RTC_SetErrorFuncW`를 사용하여 `_CrtDbgReportW` 대신 사용자 지정 함수를 설치합니다. 자세한 내용은 [_RTC_SetErrorFuncW](https://msdn.microsoft.com/library/b3e0d71f-1bd3-4c37-9ede-2f638eb3c81a)를 참조하세요. `_RTC_SetErrorFuncW`의 반환 값은 이전 보고 함수이며 필요한 경우 이를 저장하고 복원할 수 있습니다.  
   
 ```  
 #include <rtcapi.h>  
@@ -134,8 +129,3 @@ int main()
   
 ## <a name="see-also"></a>참고 항목  
  [네이티브 런타임 검사 사용자 지정](../debugger/native-run-time-checks-customization.md)
-
-
-
-
-

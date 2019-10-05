@@ -2,7 +2,6 @@
 title: IRemoteDebugApplicationEvents::OnConnectDebugger | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 66ea40164dee8b4f7b82166ebc23abe1bc254226
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d720df480133e10b1556939531d5d9a8427d23f3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943658"
 ---
 # <a name="iremotedebugapplicationeventsonconnectdebugger"></a>IRemoteDebugApplicationEvents::OnConnectDebugger
-디버거 처리 이벤트에 연결합니다.  
+디버거는 핸들 이벤트를 연결합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT OnConnectDebugger(  
    IApplicationDebugger*  pad  
 );  

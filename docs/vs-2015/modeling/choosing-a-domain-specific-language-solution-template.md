@@ -1,25 +1,22 @@
 ---
 title: 도메인별 언어 솔루션 템플릿 선택 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, solution templates
 ms.assetid: 9c05955f-1548-4df6-b09b-4b348823c237
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 618a26740759431ffe9de2b6ed5b51ffb32ea69e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 36b821219b02fa77171d89214d8cf4813ce92303
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433397"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>도메인별 언어 솔루션 템플릿 선택
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +26,7 @@ ms.locfileid: "49268497"
  다음 솔루션 템플릿은 도메인별 언어 디자이너 마법사에서 사용할 수 있습니다.  
   
 > [!NOTE]
->  템플릿의 용도 시작 DSL을 제공 하는 것입니다. 클래스 및 구성 요소 다이어그램의 명명 된 템플릿 전체 UML 다이어그램 않습니다. UML 모델을 만들려는 경우 UML을 모델링 도구는 단일 모델을 중심으로 통합 된 다이어그램 집합을 제공 하는 것이 좋습니다. ModelBus를 사용하면 이러한 다이어그램을 확장할 수 있으며 DSL과 통합할 수 있습니다. 자세한 내용은 [앱에 대 한 모델을 만들](../modeling/create-models-for-your-app.md)합니다.  
+> 템플릿의 용도 시작 DSL을 제공 하는 것입니다. 클래스 및 구성 요소 다이어그램의 명명 된 템플릿 전체 UML 다이어그램 않습니다. UML 모델을 만들려는 경우 UML을 모델링 도구는 단일 모델을 중심으로 통합 된 다이어그램 집합을 제공 하는 것이 좋습니다. ModelBus를 사용하면 이러한 다이어그램을 확장할 수 있으며 DSL과 통합할 수 있습니다. 자세한 내용은 [앱에 대 한 모델을 만들](../modeling/create-models-for-your-app.md)합니다.  
   
 |템플릿|기능|설명|  
 |--------------|--------------|-----------------|  
@@ -43,6 +40,3 @@ ms.locfileid: "49268497"
   
 ## <a name="see-also"></a>참고 항목  
  [도메인별 언어 도구 개요](../modeling/overview-of-domain-specific-language-tools.md)
-
-
-

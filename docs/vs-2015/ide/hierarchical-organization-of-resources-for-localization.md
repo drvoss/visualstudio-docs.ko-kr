@@ -1,14 +1,9 @@
 ---
 title: 지역화를 위한 리소스의 계층적 구성 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - resource files, localized
 - localization [Visual Studio], resources
@@ -23,13 +18,13 @@ ms.assetid: dadf8f2c-f74c-44d7-bec0-a1e956d8d38d
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 11eeaa2c6742675372acf8b96280737f556c7799
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 02f136fa0daa23484e31deab8f138a02b8a0b592
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914140"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704338"
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>지역화를 위한 리소스의 계층적 구성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,9 +39,9 @@ Visual Studio에서 지역화된 리소스(각 문화권에 적절한 문자열 
   
 - 중립 문화권의 리소스 아래에는 특정 문화권에 대한 리소스가 있습니다. 특정 문화권은 언어 및 국가/지역과 연관이 있습니다. 예를 들어 프랑스어(캐나다)("fr-CA")는 특정 문화권입니다.  
   
-  응용 프로그램에서 문자열과 같은 지역화된 리소스를 로드하려는데 찾지 못한 경우 요청한 리소스가 포함된 리소스 파일을 찾을 때까지 계층 구조 위로 이동합니다.  
+  애플리케이션에서 문자열과 같은 지역화된 리소스를 로드하려는데 찾지 못한 경우 요청한 리소스가 포함된 리소스 파일을 찾을 때까지 계층 구조 위로 이동합니다.  
   
-  리소스를 저장하는 가장 좋은 방법은 가급적 일반화하는 것입니다. 즉, 지역화된 문자열, 이미지 등을 가능하면 특정 문화권이 아니라 중립 문화권에 대한 리소스 파일에 저장합니다. 예를 들어 프랑스어(벨기에)("fr-BE") 문화권에 대한 리소스가 있고 그 바로 위의 리소스가 영어로 된 대체 리소스인 경우 다른 사람이 프랑스어(캐나다) 문화권용으로 구성된 시스템에서 사용자의 응용 프로그램을 사용하려고 하면 문제가 발생할 수 있습니다. 즉, 시스템에서는 "fr-CA"에 대한 위성 어셈블리를 찾다가 못 찾은 경우 프랑스 리소스를 로드하는 대신 대체 리소스(영어)가 포함된 주 어셈블리를 로드합니다. 다음 그림에서는 이 바람직하지 않은 시나리오를 보여 줍니다.  
+  리소스를 저장하는 가장 좋은 방법은 가급적 일반화하는 것입니다. 즉, 지역화된 문자열, 이미지 등을 가능하면 특정 문화권이 아니라 중립 문화권에 대한 리소스 파일에 저장합니다. 예를 들어 프랑스어(벨기에)("fr-BE") 문화권에 대한 리소스가 있고 그 바로 위의 리소스가 영어로 된 대체 리소스인 경우 다른 사람이 프랑스어(캐나다) 문화권용으로 구성된 시스템에서 사용자의 애플리케이션을 사용하려고 하면 문제가 발생할 수 있습니다. 즉, 시스템에서는 "fr-CA"에 대한 위성 어셈블리를 찾다가 못 찾은 경우 프랑스 리소스를 로드하는 대신 대체 리소스(영어)가 포함된 주 어셈블리를 로드합니다. 다음 그림에서는 이 바람직하지 않은 시나리오를 보여 줍니다.  
   
   ![특정 리소스 전용](../ide/media/vbspecificresourcesonly.gif "vbSpecificResourcesOnly")  
   
@@ -59,6 +54,5 @@ Visual Studio에서 지역화된 리소스(각 문화권에 적절한 문자열 
  [보안 및 지역화된 위성 어셈블리](../ide/security-and-localized-satellite-assemblies.md)   
  [응용 프로그램 지역화](../ide/localizing-applications.md)   
  [응용 프로그램 전역화 및 지역화](../ide/globalizing-and-localizing-applications.md)   
- [방법: Windows Forms 전역화를 위한 Culture 및 UI Culture 설정](http://msdn.microsoft.com/en-us/694e049f-0b91-474a-9789-d35124f248f0)   
- [방법: ASP.NET 웹 페이지 세계화를 위한 문화권 및 UI 문화권 설정](http://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0)
-
+ [방법: Windows Forms 전역화를 위한 문화권 및 UI 문화권 설정](https://msdn.microsoft.com/694e049f-0b91-474a-9789-d35124f248f0)   
+ [방법: ASP.NET 웹 페이지 세계화를 위한 문화권 및 UI 문화권 설정](https://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0)

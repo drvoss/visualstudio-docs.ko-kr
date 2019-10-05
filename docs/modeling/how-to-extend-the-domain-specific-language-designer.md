@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: d1cec12a7a97ffa23f2eb75ffd9fc53da8ad2ed1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 85a4356837180d13428acf34636f28cca668a423
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993165"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>방법: 도메인 특정 언어 디자이너 확장
 
@@ -27,25 +26,23 @@ DSL 정의 편집 하는 데 사용 하는 디자이너에 확장을 만들 수 
 
 ### <a name="to-create-a-dsl-designer-extension-solution"></a>DSL 디자이너 확장 솔루션을 만들려면
 
-1.  클래스 라이브러리 프로젝트 템플릿을 사용 하 여 새 프로젝트를 만듭니다. 에 **새 프로젝트** 대화 상자, 클릭 **Visual C#** 하 고 클릭 한 다음 가운데 창에서 **클래스 라이브러리**합니다.
+1. 사용 하 여 새 프로젝트를 **클래스 라이브러리** 프로젝트 템플릿. 이 프로젝트에는 확장 코드가 포함 됩니다.
 
-     이 프로젝트에는 확장 코드가 포함 됩니다.
-
-2.  VSIX 프로젝트 템플릿을 사용 하 여 새 프로젝트를 만듭니다. 에 **새 프로젝트** 대화 상자에서 **Visual C#**, 클릭 **확장성**를 선택한 다음 가운데 창의 선택 **VSIX 프로젝트**합니다.
+2. 새 **VSIX 프로젝트** 프로젝트입니다.
 
      선택 **솔루션을 추가할**합니다.
 
-     Source.extension.vsixmanifest은 VSIX 매니페스트 편집기에서 열립니다.
+     *Source.extension.vsixmanifest* VSIX 매니페스트 편집기에서 열립니다.
 
-3.  콘텐츠 필드 위에 클릭 **콘텐츠 추가**합니다.
+3. 콘텐츠 필드 위에 클릭 **콘텐츠 추가**합니다.
 
-4.  에 **콘텐츠 추가** 대화 상자에서 **콘텐츠 형식 선택** 하 **MEF 구성 요소**, 설정 및 **프로젝트** 클래스 라이브러리 프로젝트에.
+4. 에 **콘텐츠 추가** 대화 상자에서 **콘텐츠 형식 선택** 하 **MEF 구성 요소**, 설정 및 **프로젝트** 클래스 라이브러리 프로젝트에.
 
-5.  클릭 **버전 선택** 했는지 **Visual Studio Enterprise** 확인란이 선택 되어 있습니다.
+5. 클릭 **버전 선택** 했는지 **Visual Studio Enterprise** 확인란이 선택 되어 있습니다.
 
-6.  VSIX 프로젝트를 솔루션의 시작 프로젝트 인지 확인 합니다.
+6. VSIX 프로젝트를 솔루션의 시작 프로젝트 인지 확인 합니다.
 
-7.  클래스 라이브러리 프로젝트에서 다음 어셈블리에 대 한 참조를 추가 합니다.
+7. 클래스 라이브러리 프로젝트에서 다음 어셈블리에 대 한 참조를 추가 합니다.
 
      Microsoft.VisualStudio.CoreUtility
 
@@ -71,17 +68,17 @@ DSL 정의 편집 하는 데 사용 하는 디자이너에 확장을 만들 수 
 
 Visual Studio의 주를 다른 컴퓨터에 확장을 배포 하려면 다음이 단계를 수행 합니다.
 
-1.  Bin의 VSIX 프로젝트에 VSIX 설치 파일을 찾거나\\*\*\\\*.vsix
+1. Bin의 VSIX 프로젝트에 VSIX 설치 파일을 찾거나\\*\*\\\*.vsix
 
-2.  대상 컴퓨터에이 파일을 복사 하 고 Windows 탐색기 (또는 파일 탐색기)에서 두 번 클릭 합니다.
+2. 대상 컴퓨터에이 파일을 복사 하 고 Windows 탐색기 (또는 파일 탐색기)에서 두 번 클릭 합니다.
 
      확장이 설치 되어 있는지 확인 하려면 Visual Studio 확장 관리자가 열립니다.
 
 확장을 제거 하려면 다음이 단계를 수행 합니다.
 
-1.  Visual Studio에서에 **도구** 메뉴에서 클릭 **확장 관리자**합니다.
+1. Visual Studio에서에 **도구** 메뉴에서 클릭 **확장 관리자**합니다.
 
-2.  확장을 선택 하 여 삭제 합니다.
+2. 확장을 선택 하 여 삭제 합니다.
 
 ## <a name="add-a-shortcut-menu-command"></a>바로 가기 메뉴 명령을 추가합니다
 

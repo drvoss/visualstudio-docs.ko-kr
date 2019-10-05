@@ -1,32 +1,26 @@
 ---
 title: '연습: MSBuild 사용 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 56d8ea0c4b79764c1326c96b42748b8291349ac2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: b6e77934f8e565800eb4a7a753df4beb3b003fbb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445587"
 ---
 # <a name="walkthrough-using-msbuild"></a>연습: MSBuild 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 MSBuild는 Microsoft 및 Visual Studio용 빌드 플랫폼입니다. 이 연습에서는 MSBuild의 구성 요소를 소개하고 MSBuild 프로젝트를 작성, 조작 및 디버깅하는 방법을 보여 줍니다. 학습 내용은 다음과 같습니다.  
   
 - 프로젝트 파일 만들기 및 조작  
@@ -42,11 +36,11 @@ MSBuild는 Microsoft 및 Visual Studio용 빌드 플랫폼입니다. 이 연습�
   
 #### <a name="to-create-a-project-file"></a>프로젝트 파일을 만들려면  
   
-1.  Visual Studio를 엽니다.  
+1. Visual Studio를 엽니다.  
   
-2.  **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 클릭합니다.  
+2. **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 클릭합니다.  
   
-3.  **새 프로젝트** 대화 상자에서 Visual C# 프로젝트 형식을 선택하고 **Windows Forms 응용 프로그램** 템플릿을 선택합니다. **이름** 상자에 `BuildApp`을 입력합니다. 솔루션의 **위치**를 `D:\`와 같이 입력합니다. **솔루션용 디렉터리 만들기**의 기본값(선택된 상태), **소스 제어에 추가**의 기본값(선택되지 않은 상태) 및 **솔루션 이름**의 기본값(`BuildApp`)을 적용합니다.  
+3. **새 프로젝트** 대화 상자에서 Visual C# 프로젝트 형식을 선택하고 **Windows Forms 응용 프로그램** 템플릿을 선택합니다. **이름** 상자에 `BuildApp`을 입력합니다. 솔루션의 **위치**를 `D:\`와 같이 입력합니다. **솔루션용 디렉터리 만들기**의 기본값(선택된 상태), **소스 제어에 추가**의 기본값(선택되지 않은 상태) 및 **솔루션 이름**의 기본값(`BuildApp`)을 적용합니다.  
   
      **확인**을 클릭하여 프로젝트 파일을 만듭니다.  
   
@@ -55,13 +49,13 @@ MSBuild는 Microsoft 및 Visual Studio용 빌드 플랫폼입니다. 이 연습�
   
 #### <a name="to-examine-the-project-file"></a>프로젝트 파일을 검사하려면  
   
-1.  **솔루션 탐색기**에서 프로젝트 노드 BuildApp을 클릭합니다.  
+1. **솔루션 탐색기**에서 프로젝트 노드 BuildApp을 클릭합니다.  
   
-2.  **속성** 브라우저에서 **프로젝트 파일** 속성이 BuildApp.csproj인지 확인합니다. 모든 프로젝트 파일 이름에는 접미사 "proj"가 추가됩니다. Visual Basic 프로젝트를 만든 경우 프로젝트 파일 이름은 BuildApp.vbproj가 됩니다.  
+2. **속성** 브라우저에서 **프로젝트 파일** 속성이 BuildApp.csproj인지 확인합니다. 모든 프로젝트 파일 이름에는 접미사 "proj"가 추가됩니다. Visual Basic 프로젝트를 만든 경우 프로젝트 파일 이름은 BuildApp.vbproj가 됩니다.  
   
-3.  프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **프로젝트 언로드**를 클릭합니다.  
+3. 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **프로젝트 언로드**를 클릭합니다.  
   
-4.  프로젝트 노드를 다시 마우스 오른쪽 단추로 클릭하고 **BuildApp.csproj 편집**을 클릭합니다.  
+4. 프로젝트 노드를 다시 마우스 오른쪽 단추로 클릭하고 **BuildApp.csproj 편집**을 클릭합니다.  
   
      프로젝트 파일이 코드 편집기에 나타납니다.  
   
@@ -75,11 +69,11 @@ MSBuild는 Microsoft 및 Visual Studio용 빌드 플랫폼입니다. 이 연습�
   
  프로젝트 요소에서 xmlns 네임스페이스를 지정해야 합니다.  
   
- 응용 프로그램 빌드 작업에서는 [대상](../msbuild/target-element-msbuild.md) 및 [작업](../msbuild/task-element-msbuild.md) 요소를 사용합니다.  
+ 애플리케이션 빌드 작업에서는 [대상](../msbuild/target-element-msbuild.md) 및 [작업](../msbuild/task-element-msbuild.md) 요소를 사용합니다.  
   
 - 작업(task)은 작업(work)의 최소 단위(빌드의 "구성 요소")이며, 입력과 출력을 포함할 수 있는 독립적인 실행 가능 구성 요소입니다. 현재 프로젝트 파일에는 참조되거나 정의된 작업(task)이 없습니다. 아래 섹션에서 프로젝트 파일에 작업(task)을 추가합니다. 자세한 내용은 [작업](../msbuild/msbuild-tasks.md) 항목을 참조하세요.  
   
-- 대상은 작업의 명명된 순서입니다. 프로젝트 파일의 끝에는 현재 HTML 주석으로 묶인 두 개의 대상(BeforeBuild 및 AfterBuild)이 있습니다.  
+- 대상은 작업의 명명된 순서입니다. 현재 HTML 주석에 포함 된 프로젝트 파일의 끝에 두 대상을 가지가 있습니다. BeforeBuild 및 AfterBuild입니다.  
   
   ```  
   <Target Name="BeforeBuild">  
@@ -138,21 +132,21 @@ MSBuild는 Microsoft 및 Visual Studio용 빌드 플랫폼입니다. 이 연습�
  **Visual Studio 명령 프롬프트**에서 MSBuild를 실행하여 위에 정의되어 있는 HelloWorld 대상을 빌드합니다. /Target 또는 /t 명령줄 스위치를 사용하여 대상을 선택합니다.  
   
 > [!NOTE]
->  이하 섹션에서는 **Visual Studio 명령 프롬프트**를 **명령 창**으로 지칭하겠습니다.  
+> 이하 섹션에서는 **Visual Studio 명령 프롬프트**를 **명령 창**으로 지칭하겠습니다.  
   
 #### <a name="to-build-the-target"></a>대상을 빌드하려면  
   
-1.  **시작**, **모든 프로그램**을 차례로 클릭합니다. **Visual Studio Tools** 폴더에서 **Visual Studio 명령 프롬프트**를 찾아서 클릭합니다.  
+1. **시작**, **모든 프로그램**을 차례로 클릭합니다. **Visual Studio Tools** 폴더에서 **Visual Studio 명령 프롬프트**를 찾아서 클릭합니다.  
   
-2.  명령 창에서 프로젝트 파일을 포함하는 폴더(이 연습의 경우 D:\BuildApp\BuildApp)로 이동합니다.  
+2. 명령 창에서 프로젝트 파일을 포함하는 폴더(이 연습의 경우 D:\BuildApp\BuildApp)로 이동합니다.  
   
-3.  명령 스위치 /t:HelloWorld를 사용하여 msbuild를 실행합니다. 그러면 HelloWorld 대상이 선택 및 빌드됩니다.  
+3. 명령 스위치 /t:HelloWorld를 사용하여 msbuild를 실행합니다. 그러면 HelloWorld 대상이 선택 및 빌드됩니다.  
   
     ```  
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-4.  **명령 창**에서 출력을 검사합니다. "Hello" 및 "World"의 두 줄이 표시됩니다.  
+4. **명령 창**에서 출력을 검사합니다. "Hello" 및 "World"의 두 줄이 표시됩니다.  
   
     ```  
     Hello  
@@ -160,12 +154,12 @@ MSBuild는 Microsoft 및 Visual Studio용 빌드 플랫폼입니다. 이 연습�
     ```  
   
 > [!NOTE]
->  이 두 줄 대신 `The target "HelloWorld" does not exist in the project`가 표시되는 경우에는 코드 편집기에서 프로젝트 파일을 저장하지 않은 것일 수 있습니다. 파일을 저장하고 다시 시도합니다.  
+> 이 두 줄 대신 `The target "HelloWorld" does not exist in the project`가 표시되는 경우에는 코드 편집기에서 프로젝트 파일을 저장하지 않은 것일 수 있습니다. 파일을 저장하고 다시 시도합니다.  
   
  코드 편집기와 명령 창을 오가면서 프로젝트 파일을 변경하고 결과를 빠르게 확인할 수 있습니다.  
   
 > [!NOTE]
->  /t 명령 스위치 없이 msbuild를 실행하는 경우 msbuild는 Project 요소의 DefaultTarget 특성에 의해 제공되는 대상(이 연습의 경우에는 "Build")을 빌드합니다. 그러면 Windows Forms 응용 프로그램 BuildApp.exe가 빌드됩니다.  
+> /t 명령 스위치 없이 msbuild를 실행하는 경우 msbuild는 Project 요소의 DefaultTarget 특성에 의해 제공되는 대상(이 연습의 경우에는 "Build")을 빌드합니다. 그러면 Windows Forms 애플리케이션 BuildApp.exe가 빌드됩니다.  
   
 ## <a name="build-properties"></a>빌드 속성  
  빌드 속성은 빌드를 안내하는 이름-값 쌍입니다. 여러 빌드 속성이 프로젝트 파일의 위쪽에 이미 정의되어 있습니다.  
@@ -208,7 +202,7 @@ $(PropertyName)
   
 #### <a name="to-examine-a-property-value"></a>속성값을 검사하려면  
   
-1.  코드 편집기에서 HelloWorld 대상을 다음 코드로 바꿉니다.  
+1. 코드 편집기에서 HelloWorld 대상을 다음 코드로 바꿉니다.  
   
     ```  
     <Target Name="HelloWorld">  
@@ -217,15 +211,15 @@ $(PropertyName)
     </Target>  
     ```  
   
-2.  프로젝트 파일을 저장합니다.  
+2. 프로젝트 파일을 저장합니다.  
   
-3.  **명령 창**에서 다음 줄을 입력하고 실행합니다.  
+3. **명령 창**에서 다음 줄을 입력하고 실행합니다.  
   
     ```  
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-4.  출력을 검사합니다. 다음과 같은 두 줄이 표시됩니다. 사용 중인 .NET Framework 버전은 이 줄과 다를 수 있습니다.  
+4. 출력을 검사합니다. 다음과 같은 두 줄이 표시됩니다. 사용 중인 .NET Framework 버전은 이 줄과 다를 수 있습니다.  
   
     ```  
     Configuration is Debug  
@@ -233,7 +227,7 @@ $(PropertyName)
     ```  
   
 > [!NOTE]
->  이 두 줄이 표시되지 않는 경우에는 코드 편집기에서 프로젝트 파일을 저장하지 않은 것일 수 있습니다. 파일을 저장하고 다시 시도합니다.  
+> 이 두 줄이 표시되지 않는 경우에는 코드 편집기에서 프로젝트 파일을 저장하지 않은 것일 수 있습니다. 파일을 저장하고 다시 시도합니다.  
   
 ### <a name="conditional-properties"></a>조건부 속성  
  Configuration 등의 대다수 속성은 조건부로 정의됩니다. 즉, 속성 요소에 Condition 특성이 나타납니다. 조건부 속성은 조건이 "true"로 확인되는 경우에만 정의되거나 다시 정의됩니다. 정의되지 않은 속성에는 기본값(빈 문자열)이 제공됩니다. 예를 들어 개체에 적용된  
@@ -247,10 +241,10 @@ $(PropertyName)
  거의 모든 MSBuild 요소는 Condition 특성을 포함할 수 있습니다. Condition 특성을 사용하는 방법에 대한 자세한 내용은 [조건](../msbuild/msbuild-conditions.md)을 참조하세요.  
   
 ### <a name="reserved-properties"></a>예약된 속성  
- MSBuild는 몇 개의 속성 이름을 예약하여 프로젝트 파일과 MSBuild 이진 파일에 대한 정보를 저장합니다. MSBuildToolsPath는 예약된 속성의 한 예입니다. 예약된 속성은 다른 속성과 마찬가지로 $ 표기법을 사용하여 참조됩니다. 자세한 내용은 [방법: 프로젝트 파일의 이름 또는 위치 참조](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)과 [MSBuild의 예약된 속성 및 잘 알려진 속성](../msbuild/msbuild-reserved-and-well-known-properties.md)을 참조하세요.  
+ MSBuild는 몇 개의 속성 이름을 예약하여 프로젝트 파일과 MSBuild 이진 파일에 대한 정보를 저장합니다. MSBuildToolsPath는 예약된 속성의 한 예입니다. 예약된 속성은 다른 속성과 마찬가지로 $ 표기법을 사용하여 참조됩니다. 자세한 내용은 [방법: 이름 또는 프로젝트 파일의 위치 참조](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) 하 고 [MSBuild 예약 된 속성 및 잘 알려진 속성](../msbuild/msbuild-reserved-and-well-known-properties.md)합니다.  
   
 ### <a name="environment-variables"></a>환경 변수  
- 프로젝트 파일의 환경 변수는 빌드 속성과 같은 방식으로 참조할 수 있습니다. 예를 들어 프로젝트 파일에서 PATH 환경 변수를 사용하려면 $(Path)를 사용합니다. 프로젝트에 환경 변수와 이름이 같은 속성 정의가 포함되어 있으면 프로젝트의 속성이 환경 변수의 값을 재정의합니다. 자세한 내용은 [방법: 빌드 시 환경 변수 사용](../msbuild/how-to-use-environment-variables-in-a-build.md)을 참조하세요.  
+ 프로젝트 파일의 환경 변수는 빌드 속성과 같은 방식으로 참조할 수 있습니다. 예를 들어 프로젝트 파일에서 PATH 환경 변수를 사용하려면 $(Path)를 사용합니다. 프로젝트에 환경 변수와 이름이 같은 속성 정의가 포함되어 있으면 프로젝트의 속성이 환경 변수의 값을 재정의합니다. 자세한 내용은 [방법: 환경 변수를 사용 하 여 빌드에서](../msbuild/how-to-use-environment-variables-in-a-build.md)합니다.  
   
 ## <a name="setting-properties-from-the-command-line"></a>명령줄에서 속성 설정  
  /property 또는 /p 명령줄 스위치를 사용하여 명령줄에서 속성을 정의할 수 있습니다. 명령줄에서 수신된 속성값은 프로젝트 파일 및 환경 변수에 설정되어 있는 속성값을 재정의합니다.  
@@ -312,7 +306,7 @@ $(PropertyName)
 </ItemGroup>  
 ```  
   
- 위의 코드는 두 항목이 포함된 항목 그룹을 정의합니다. 항목 종류 Compile에는 "Program.cs" 및 "Properties\AssemblyInfo.cs"의 두 값이 있습니다.  
+ 위의 코드는 두 항목이 포함된 항목 그룹을 정의합니다. 항목 종류 컴파일에는 다음 두 가지 값이 있습니다. "Program.cs" 및 "properties\ assemblyinfo.cs"입니다.  
   
  다음 코드는 이 두 파일을 모두 세미콜론으로 구분하여 Include 특성 하나에 선언하는 방식으로 같은 항목 종류를 만듭니다.  
   
@@ -325,7 +319,7 @@ $(PropertyName)
  자세한 내용은 [항목](../msbuild/msbuild-items.md)을 참조하세요.  
   
 > [!NOTE]
->  파일 경로는 MSBuild 프로젝트 파일을 포함하는 폴더에 대한 상대 경로입니다.  
+> 파일 경로는 MSBuild 프로젝트 파일을 포함하는 폴더에 대한 상대 경로입니다.  
   
 ## <a name="examining-item-type-values"></a>항목 종류 값 검사  
  항목 종류의 값을 가져오려면 다음 구문을 사용합니다. 여기서 ItemType은 항목 종류의 이름입니다.  
@@ -372,19 +366,19 @@ $(PropertyName)
   
 #### <a name="to-display-item-type-values-one-per-line"></a>항목 종류 값을 한 줄에 하나씩 표시하려면  
   
-1.  코드 편집기에서 메시지 작업을 다음 줄로 바꿉니다.  
+1. 코드 편집기에서 메시지 작업을 다음 줄로 바꿉니다.  
   
     ```  
     <Message Text="Compile item type contains @(Compile, '%0A%0D')" />  
     ```  
   
-2.  프로젝트 파일을 저장합니다.  
+2. 프로젝트 파일을 저장합니다.  
   
-3.  **명령 창**에서 다음 줄을 입력하고 실행합니다.  
+3. **명령 창**에서 다음 줄을 입력하고 실행합니다.  
   
      `msbuild buildapp.csproj /t:HelloWorld`  
   
-4.  출력을 검사합니다. 다음 줄이 표시됩니다.  
+4. 출력을 검사합니다. 다음 줄이 표시됩니다.  
   
     ```  
     Compile item type contains Form1.cs  
@@ -408,7 +402,7 @@ $(PropertyName)
 <Photos Include="images\**.jpeg" />  
 ```  
   
- 위의 코드는 images 폴더 및 모든 하위 폴더에 있는 파일 확장명이 ".jpeg"인 모든 파일을 Photos 항목 종류에 추가합니다. 더 많은 예제를 확인하려면 [방법: 빌드할 파일 선택](../msbuild/how-to-select-the-files-to-build.md)을 참조하세요.  
+ 위의 코드는 images 폴더 및 모든 하위 폴더에 있는 파일 확장명이 ".jpeg"인 모든 파일을 Photos 항목 종류에 추가합니다. 추가 예제는 [방법: 빌드할 파일 선택](../msbuild/how-to-select-the-files-to-build.md)합니다.  
   
  선언하는 항목은 항목 종류에 추가됩니다. 예를 들어 개체에 적용된  
   
@@ -429,7 +423,7 @@ $(PropertyName)
 <Compile Include="*.cs" Exclude="*Designer*">  
 ```  
   
- 위의 코드는 이름에 "Designer"라는 문자열이 포함된 파일을 제외하고 파일 확장명이 ".cs"인 모든 파일을 Compile 항목 종류에 추가합니다. 더 많은 예제를 확인하려면 [방법: 빌드에서 파일 제외](../msbuild/how-to-exclude-files-from-the-build.md)를 참조하세요.  
+ 위의 코드는 이름에 "Designer"라는 문자열이 포함된 파일을 제외하고 파일 확장명이 ".cs"인 모든 파일을 Compile 항목 종류에 추가합니다. 추가 예제는 [방법: 빌드에서 파일 제외](../msbuild/how-to-exclude-files-from-the-build.md)합니다.  
   
  Exclude 특성은 Include 특성과 Exclude 특성을 모두 포함하는 항목 요소에서 Include 특성에 의해 추가된 항목에만 영향을 줍니다. 예를 들어 개체에 적용된  
   
@@ -442,13 +436,13 @@ $(PropertyName)
   
 ##### <a name="to-include-and-exclude-items"></a>항목을 포함 및 제외하려면  
   
-1.  코드 편집기에서 메시지 작업을 다음 줄로 바꿉니다.  
+1. 코드 편집기에서 메시지 작업을 다음 줄로 바꿉니다.  
   
     ```  
     <Message Text="Compile item type contains @(XFiles)" />  
     ```  
   
-2.  Import 요소 바로 뒤에 다음 항목 그룹을 추가합니다.  
+2. Import 요소 바로 뒤에 다음 항목 그룹을 추가합니다.  
   
     ```  
     <ItemGroup>  
@@ -456,15 +450,15 @@ $(PropertyName)
     </ItemGroup>  
     ```  
   
-3.  프로젝트 파일을 저장합니다.  
+3. 프로젝트 파일을 저장합니다.  
   
-4.  **명령 창**에서 다음 줄을 입력하고 실행합니다.  
+4. **명령 창**에서 다음 줄을 입력하고 실행합니다.  
   
     ```  
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-5.  출력을 검사합니다. 다음 줄이 표시됩니다.  
+5. 출력을 검사합니다. 다음 줄이 표시됩니다.  
   
     ```  
     Compile item type contains Form1.cs;Program.cs;Properties/Resources.resx  
@@ -582,10 +576,8 @@ $(PropertyName)
    이 구문으로 표현되는 메타데이터로 인해 일괄 처리가 수행되지는 않습니다.  
   
 ## <a name="whats-next"></a>새로운 기능  
- 간단한 프로젝트 파일을 단계별로 만드는 방법을 알아보려면 [연습: 처음부터 새로 MSBuild 프로젝트 파일 만들기](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)를 진행해 보세요.  
+ 간단한 프로젝트 파일을 단계별로 만드는 방법을 알아보려면 [연습: 처음부터 새로 MSBuild 프로젝트 파일 만들기](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목
 [MSBuild 개요](msbuild.md)  
  [MSBuild 참조](../msbuild/msbuild-reference.md)
-
-

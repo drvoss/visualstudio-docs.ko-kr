@@ -1,14 +1,9 @@
 ---
 title: CodeIndex 명령 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - command-line tools [Team Foundation Server]
 - TFSConfig
@@ -17,13 +12,13 @@ ms.assetid: b79568d4-6a64-4ca9-a1ee-3e57f92a9c5c
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9586348a1862820540613a5f191132c49fa6a74d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f16d21889421a00fc2723412f34b426f75847822
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282362"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701617"
 ---
 # <a name="codeindex-command"></a>CodeIndex 명령
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,10 +27,10 @@ ms.locfileid: "49282362"
   
  **필요한 권한**  
   
- **CodeIndex** 명령을 사용하려면 **Team Foundation Administrators** 보안 그룹의 멤버여야 합니다. [Team Foundation Server에 대한 사용 권한 참조](http://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6)를 참조하세요.  
+ **CodeIndex** 명령을 사용하려면 **Team Foundation Administrators** 보안 그룹의 멤버여야 합니다. [Team Foundation Server에 대한 사용 권한 참조](https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6)를 참조하세요.  
   
 > [!NOTE]
->  관리자 자격 증명으로 로그온한 경우에도 이 명령을 실행하려면 관리자 권한 명령 프롬프트 창을 열어야 합니다. 또한 Team Foundation의 응용 프로그램 계층에서 이 명령을 실행해야 합니다.  
+> 관리자 자격 증명으로 로그온한 경우에도 이 명령을 실행하려면 관리자 권한 명령 프롬프트 창을 열어야 합니다. 또한 Team Foundation의 애플리케이션 계층에서 이 명령을 실행해야 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -67,7 +62,7 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 ## <a name="examples"></a>예제  
   
 > [!NOTE]
->  용례에 사용된 회사, 기관, 제품, 도메인 이름, 메일 주소, 로고, 사람, 장소 및 이벤트는 실제 데이터가 아닙니다.  어떠한 실제 회사, 기관, 제품, 도메인 이름, 전자 메일 주소, 로고, 사람, 장소 또는 이벤트와도 연관시킬 의도가 없으며 그렇게 유추해서도 안 됩니다.  
+> 용례에 사용된 회사, 기관, 제품, 도메인 이름, 메일 주소, 로고, 사람, 장소 및 이벤트는 실제 데이터가 아닙니다.  어떠한 실제 회사, 기관, 제품, 도메인 이름, 전자 메일 주소, 로고, 사람, 장소 또는 이벤트와도 연관시킬 의도가 없으며 그렇게 유추해서도 안 됩니다.  
   
  코드 인덱싱 상태 및 구성을 보려면  
   
@@ -130,8 +125,5 @@ TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [TFSConfig를 사용하여 서버 구성 관리](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62)   
- [TFS용 명령줄 도구](http://msdn.microsoft.com/en-us/be8c997a-b97b-4e59-97f5-04db0a601a6c)
-
-
-
+ [TFSConfig를 사용하여 서버 구성 관리](https://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62)   
+ [TFS용 명령줄 도구](https://msdn.microsoft.com/be8c997a-b97b-4e59-97f5-04db0a601a6c)

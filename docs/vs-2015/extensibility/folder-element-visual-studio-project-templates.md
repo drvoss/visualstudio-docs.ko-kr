@@ -1,14 +1,9 @@
 ---
 title: Folder 요소 (Visual Studio 프로젝트 템플릿) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Folder
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 558e3d41-0db5-4c44-82bb-6bb87892b093
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 81d2856bb7c261219fd69ec1e12db85cfb41d7e8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 35448f4324213739cb2dc14a95598ac9a3d4432f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787668"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204365"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder 요소(Visual Studio 프로젝트 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51787668"
 프로젝트에 추가 될 폴더를 지정 합니다.  
   
  \<VSTemplate>  
- \<TemplateContent >  
+ \<TemplateContent>  
  \<Project>  
  \<폴더 >  
   
@@ -58,11 +53,11 @@ ms.locfileid: "51787668"
 |요소|설명|  
 |-------------|-----------------|  
 |`Folder`|프로젝트에 추가할 폴더를 지정 합니다. `Folder` 요소에는 자식 포함 될 수 있습니다 `Folder` 요소입니다.|  
-|[프로젝트 항목](../extensibility/projectitem-element-visual-studio-item-templates.md)|프로젝트에 추가할 파일을 지정 합니다.|  
+|[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|프로젝트에 추가할 파일을 지정 합니다.|  
   
 ### <a name="parent-elements"></a>부모 요소  
   
-|요소|설명|  
+|요소|Description|  
 |-------------|-----------------|  
 |[프로젝트](../extensibility/project-element-visual-studio-templates.md)|선택적 자식 요소 [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)합니다.|  
   
@@ -71,7 +66,7 @@ ms.locfileid: "51787668"
   
  템플릿에서 폴더에 프로젝트 항목을 구성 하려면 다음 방법 중 하나를 사용할 수 있습니다.  
   
--   템플릿.zip 파일의 폴더를 포함 하 고 파일에 경로 지정 하 여 프로젝트 템플릿의.vstemplate 파일에 추가 합니다 `ProjectItem` 요소를 사용 하 여 `Folder` 요소입니다. 이것이 권장된 방법입니다. 예를 들어:  
+- 템플릿.zip 파일의 폴더를 포함 하 고 파일에 경로 지정 하 여 프로젝트 템플릿의.vstemplate 파일에 추가 합니다 `ProjectItem` 요소를 사용 하 여 `Folder` 요소입니다. 이것이 권장된 방법입니다. 예를 들어:  
   
      `...`  
   
@@ -81,7 +76,7 @@ ms.locfileid: "51787668"
   
      `...`  
   
--   템플릿.zip 파일의 폴더를 포함 하 고 사용 하 여.vstemplate 파일에서 프로젝트에 추가할 `Folder` 요소입니다. 예를 들어:  
+- 템플릿.zip 파일의 폴더를 포함 하 고 사용 하 여.vstemplate 파일에서 프로젝트에 추가할 `Folder` 요소입니다. 예를 들어:  
   
      `...`  
   
@@ -95,7 +90,7 @@ ms.locfileid: "51787668"
   
      `...`  
   
--   템플릿.zip 파일의 폴더를 포함 하지 않지만 사용 하 여 폴더를 추가 합니다 `TargetFileName` 특성을 `ProjectItem` 요소입니다. 예를 들어:  
+- 템플릿.zip 파일의 폴더를 포함 하지 않지만 사용 하 여 폴더를 추가 합니다 `TargetFileName` 특성을 `ProjectItem` 요소입니다. 예:  
   
      `...`  
   
@@ -138,4 +133,3 @@ ms.locfileid: "51787668"
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
  [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)   
  [ProjectItem 요소(Visual Studio 항목 템플릿)](../extensibility/projectitem-element-visual-studio-item-templates.md)
-

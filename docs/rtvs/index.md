@@ -1,20 +1,19 @@
 ---
 title: R Tools for Visual Studio
-description: Visual Studio용 R 도구(RTVS)는 IntelliSense, 디버깅 및 원격 작업 영역을 비롯한 여러 언어 기능을 제공하는 무료 오픈 소스 확장입니다.
+description: Visual Studio 2017용 R 도구(RTVS)는 IntelliSense, 디버깅 및 원격 작업 영역을 비롯한 여러 언어 기능을 제공하는 무료 오픈 소스 확장입니다.
 ms.date: 11/13/2017
-ms.prod: visual-studio-dev15
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: c2ae060c889065f7f8ba543e0cb20e8ea40ec758
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 385d58834aa96a3ad9e2002020dd1ce4fda3c87f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000015"
 ---
 # <a name="work-with-r-in-visual-studio"></a>Visual Studio에서 R 작업
 
@@ -23,7 +22,7 @@ R은 통계 계산 및 그래픽을 위한 고도로 확장 가능한 언어 및
 RTVS(R Tools for Visual Studio)는 MIT 라이선스에 따라 출시된 Visual Studio 2017 및 Visual Studio 2015 Update 3 이상을 위한 무료 [오픈 소스](https://github.com/microsoft/RTVS) 확장 프로그램입니다. ([RHost](https://github.com/microsoft/R-Host)라고 하며 R 인터프리터 이진 파일에 연결되는 또 다른 오픈 소스 구성 요소가 GNU 공용 라이선스 V2에 따라 출시되었습니다.)
 
 > [!Note]
-> RTVS는 현재 Windows의 Visual Studio에서만 지원되며 Mac용 Visual Studio에서는 지원되지 않습니다.
+> RTVS는 현재 Windows 기반의 Visual Studio 2017에서만 지원되고 Mac용 Visual Studio에서는 지원되지 않습니다. Visual Studio 2019에는 사용할 수 없습니다.
 
 Visual Studio에서 R을 사용해 보려면
 

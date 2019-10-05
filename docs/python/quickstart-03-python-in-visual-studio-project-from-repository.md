@@ -2,26 +2,24 @@
 title: 빠른 시작 - Python 코드의 리포지토리 복제
 description: 이 빠른 시작에서는 Visual Studio 팀 탐색기를 사용하는 Python koans 리포지토리를 복제하여 Visual Studio에서 Python 프로젝트를 만듭니다.
 ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: quickstart
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 871a5f620cc90db5064562461336fdeac38ba757
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 446c2622c01e1b127347a668e199e3e6e6e0b1c5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430685"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>빠른 시작: Visual Studio에서 Python 코드의 리포지토리 복제
 
-[Visual Studio 2017에 Python 지원을 설치](installing-python-support-in-visual-studio.md)하면 Visual Studio용 GitHub 확장을 추가할 수 있습니다. 확장 기능을 사용하면 Python 코드의 리포지토리를 쉽게 복제하고 IDE 내에서 프로젝트를 만들 수 있습니다. 명령줄에서 항상 리포지토리를 복제한 다음, Visual Studio에서 작업할 수 있습니다.
+[Visual Studio에 Python 지원을 설치](installing-python-support-in-visual-studio.md)하면 Visual Studio용 GitHub 확장을 추가할 수 있습니다. 확장 기능을 사용하면 Python 코드의 리포지토리를 쉽게 복제하고 IDE 내에서 프로젝트를 만들 수 있습니다. 명령줄에서 항상 리포지토리를 복제한 다음, Visual Studio에서 작업할 수 있습니다.
 
 ## <a name="install-the-github-extension-for-visual-studio"></a>Visual Studio용 GitHub 확장 설치
 

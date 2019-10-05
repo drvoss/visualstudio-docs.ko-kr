@@ -1,12 +1,9 @@
 ---
 title: 데이터베이스에 데이터를 저장 합니다. | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -28,18 +25,17 @@ ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6b6fd99b2b1a41d6baa3a110b2a595afb1dd7e3f
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+manager: jillfra
+ms.openlocfilehash: 2882434f0638d565133efd9744a94d224d39d121
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281851"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692543"
 ---
 # <a name="save-data-back-to-the-database"></a>데이터를 다시 데이터베이스에 저장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 데이터 집합에는 데이터의 메모리 내 복사본입니다. 해당 데이터를 수정할 경우 해당 변경 내용을 다시 데이터베이스에 저장 하는 것이 좋습니다. 이렇게 하면 세 가지 방법 중 하나에서:  
   
 - 하나를 호출 하 여 `Update` TableAdapter의 메서드  
@@ -63,7 +59,7 @@ ms.locfileid: "52281851"
 |[데이터베이스에 데이터 저장(여러 테이블)](../data-tools/save-data-to-a-database-multiple-tables.md)|레코드를 편집 하 고 다시 데이터베이스에 여러 테이블에 변경 내용을 저장 하는 방법|  
 |[개체에서 데이터베이스로 데이터 저장](../data-tools/save-data-from-an-object-to-a-database.md)|TableAdapter DbDirect 메서드를 사용 하 여 데이터베이스에 데이터 집합에 없는 개체에서 데이터를 전달 하는 방법|  
 |[TableAdapter DBDirect 메서드를 사용하여 데이터 저장](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|TableAdapter를 사용 하 여 SQL 쿼리를 데이터베이스로 직접 보내는 방법|  
-|[데이터 집합을 XML로 저장](../data-tools/save-a-dataset-as-xml.md)|XML 문서에 데이터 집합을 저장 하는 방법|  
+|[데이터 세트를 XML로 저장](../data-tools/save-a-dataset-as-xml.md)|XML 문서에 데이터 집합을 저장 하는 방법|  
   
 ## <a name="two-stage-updates"></a>2 단계 업데이트  
  데이터 소스를 업데이트 하는 것은 2 단계 프로세스입니다. 첫 번째 단계는 삭제 된 레코드 또는 변경 된 레코드를 사용 하는, 새 레코드를 사용 하 여 데이터 집합을 업데이트 하는 것입니다. 응용 프로그램 되지을 보내는 경우 해당 변경 내용을 다시 데이터 소스에 다음 완료 했으면 업데이트 합니다.  
@@ -80,27 +76,27 @@ ms.locfileid: "52281851"
   
  데이터 집합을 병합 하는 경우 부울 인수를 전달할 수 있습니다 (`preserveChanges`)을 설명 하는 <xref:System.Data.DataSet.Merge%2A> 메서드 기존 수정 대상 데이터 집합에 유지할지 여부를 합니다. 레코드의 여러 버전을 유지 하는 데이터 집합 이므로 레코드의 버전이 둘 이상 병합 되는 점을 염두 해야 합니다. 다음 표에서 두 개의 데이터 집합에서 레코드를 병합 하는 방법을 보여 줍니다.  
   
-|DataRowVersion|대상 데이터 집합|원본 데이터 집합|  
+|DataRowVersion|대상 데이터 세트|원본 데이터 집합|  
 |--------------------|--------------------|--------------------|  
 |원래 색|James Wilson|James C. Wilson|  
 |현재|Jim Wilson|James C. Wilson|  
   
  호출 된 <xref:System.Data.DataSet.Merge%2A> 메서드를 사용 하 여 이전 테이블 `preserveChanges=false targetDataset.Merge(sourceDataset)` 다음에서 결과:  
   
-|DataRowVersion|대상 데이터 집합|원본 데이터 집합|  
+|DataRowVersion|대상 데이터 세트|원본 데이터 집합|  
 |--------------------|--------------------|--------------------|  
 |원래 색|James C. Wilson|James C. Wilson|  
 |현재|James C. Wilson|James C. Wilson|  
   
  호출 된 <xref:System.Data.DataSet.Merge%2A> 메서드를 사용 하 여 `preserveChanges = true targetDataset.Merge(sourceDataset, true)` 다음에서 결과:  
   
-|DataRowVersion|대상 데이터 집합|원본 데이터 집합|  
+|DataRowVersion|대상 데이터 세트|원본 데이터 집합|  
 |--------------------|--------------------|--------------------|  
 |원래 색|James C. Wilson|James C. Wilson|  
 |현재|Jim Wilson|James C. Wilson|  
   
 > [!CAUTION]
->  에 `preserveChanges = true` 시나리오에서는 경우는 <xref:System.Data.DataSet.RejectChanges%2A> 메서드는 대상 데이터 집합의 레코드에 대해 다음 원본 데이터로 돌아갑니다를 *원본* 데이터 집합. 즉, 대상 데이터 집합을 사용 하 여 원래 데이터 소스를 업데이트 하려고 하면 원래 행 업데이트를 찾을 수 없습니다. 데이터 원본에서 업데이트 된 레코드를 사용 하 여 다른 데이터 집합을 채운 다음 동시성 위반을 방지 하기 위해 병합을 수행 하는 동시성 위반을 방지할 수 있습니다. (동시성 위반을 데이터 집합을 채워진 후 다른 사용자가 데이터 소스의 레코드를 수정할 때 발생 합니다.)  
+> 에 `preserveChanges = true` 시나리오에서는 경우는 <xref:System.Data.DataSet.RejectChanges%2A> 메서드는 대상 데이터 집합의 레코드에 대해 다음 원본 데이터로 돌아갑니다를 *원본* 데이터 집합. 즉, 대상 데이터 집합을 사용 하 여 원래 데이터 소스를 업데이트 하려고 하면 원래 행 업데이트를 찾을 수 없습니다. 데이터 원본에서 업데이트 된 레코드를 사용 하 여 다른 데이터 집합을 채운 다음 동시성 위반을 방지 하기 위해 병합을 수행 하는 동시성 위반을 방지할 수 있습니다. (동시성 위반을 데이터 집합을 채워진 후 다른 사용자가 데이터 소스의 레코드를 수정할 때 발생 합니다.)  
   
 ## <a name="update-constraints"></a>제약 조건 업데이트  
  기존 데이터 행을 변경 하려면 추가 하거나 개별 열에 데이터를 업데이트 합니다. 데이터 집합 제약 조건 (예: 외래 키 또는 null이 아닌 제약 조건)에 있으면 가능으로 업데이트 하 고 레코드 오류 상태의 수 일시적으로 있습니다. 즉, 하나의 열 업데이트를 완료 하지만 다음에 도달 하기 전에 오류 상태에서 수 있습니다.  
@@ -114,7 +110,7 @@ ms.locfileid: "52281851"
   업데이트를 완료 한 후 다시 활성화할 수 있습니다 제약 조건 검사 이벤트를 발생 시킨 및는 다시 업데이트 이벤트를 사용 하도록 설정 합니다.  
   
 > [!NOTE]
->  Datagrid에 기본 제공 되는 데이터 바인딩 아키텍처는 Windows Forms에서 제약 조건 검사 포커스를 행 외부로 이동 하 고 명시적으로 호출할 필요가 없습니다 될 때까지 일시 중단 합니다 <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A>, 또는 <xref:System.Data.DataRow.CancelEdit%2A> 메서드.  
+> Datagrid에 기본 제공 되는 데이터 바인딩 아키텍처는 Windows Forms에서 제약 조건 검사 포커스를 행 외부로 이동 하 고 명시적으로 호출할 필요가 없습니다 될 때까지 일시 중단 합니다 <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A>, 또는 <xref:System.Data.DataRow.CancelEdit%2A> 메서드.  
   
  제약 조건은 자동으로 비활성화 될 때를 <xref:System.Data.DataSet.Merge%2A> 메서드는 데이터 집합에서 호출 됩니다. 병합이 완료 되 면 사용할 수 없는 데이터 집합의 모든 제약 조건이 있는 경우는 <xref:System.Data.ConstraintException> throw 됩니다. 이 이런 경우에 <xref:System.Data.DataSet.EnforceConstraints%2A> 속성이로 설정 되어 `false,` 다시 설정 하기 전에 모든 제약 조건 위반을 해결 해야 합니다 <xref:System.Data.DataSet.EnforceConstraints%2A> 속성을 `true`입니다.  
   
@@ -170,7 +166,7 @@ ms.locfileid: "52281851"
   
  `GetChanges` 자체적으로 변경 된 모든 레코드를 반환합니다. 이와 대조적으로 전달한 후 원하는 <xref:System.Data.DataRowState> 매개 변수로 `GetChanges` 메서드를 원하는 변경된 레코드의 하위 집합을 지정할 수 있습니다: 새로 분리 된 레코드를 삭제 표시 된 레코드를 추가 또는 수정 된 레코드입니다.  
   
- 변경 된 레코드의 하위 집합 가져오기 처리를 위해 다른 구성 요소에 레코드를 보내려고 할 때 유용 합니다. 전체 데이터 집합을 전송 하는 대신 구성 요소에서 필요로 하는 레코드만 가져와서 다른 구성 요소와 통신 하는 오버 헤드를 줄일 수 있습니다. 자세한 내용은 [방법: 변경 행 검색](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9)합니다.  
+ 변경 된 레코드의 하위 집합 가져오기 처리를 위해 다른 구성 요소에 레코드를 보내려고 할 때 유용 합니다. 전체 데이터 집합을 전송 하는 대신 구성 요소에서 필요로 하는 레코드만 가져와서 다른 구성 요소와 통신 하는 오버 헤드를 줄일 수 있습니다. 자세한 내용은 [방법: 변경 된 행을 검색](https://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9)합니다.  
   
 ## <a name="committing-changes-in-the-dataset"></a>데이터 집합의 변경 내용 커밋  
  데이터 집합에서 변경 되는 <xref:System.Data.DataRow.RowState%2A> 변경 된 행의 속성을 설정 합니다. 레코드의 원래 버전과 현재 버전은 설정, 유지 관리 하 고에서 사용자에 게 제공 된 <xref:System.Data.DataRowView.RowVersion%2A> 속성입니다. 이러한 변경 된 행의 속성에 저장 된 메타 데이터는 데이터 원본에 올바른 업데이트를 전송 하는 데 필요한 합니다.  
@@ -186,12 +182,12 @@ ms.locfileid: "52281851"
 - 한 후 데이터 집합을 로드 합니다. TableAdapter를 호출 하 여 데이터 집합을 로드 하는 경우 `Fill` 메서드를 다음 어댑터 자동으로 변경 내용을 커밋하고 있습니다. 그러나 다른 데이터 집합을 병합 하 여 데이터 집합을 로드 하는 경우 다음 해야 수동으로 변경 내용을 커밋해야 합니다.  
   
   > [!NOTE]
-  >  호출할 때 변경 내용을 자동으로 커밋할 어댑터를 방지할 수 있습니다 합니다 `Fill` 설정 하 여 메서드를 `AcceptChangesDuringFill` 어댑터의 속성 `false`합니다. 로 설정 된 경우 `false`, 해당 <xref:System.Data.DataRow.RowState%2A> 로 설정 되어 채우기 중에 삽입 되는 각 행의 <xref:System.Data.DataRowState>합니다.  
+  > 호출할 때 변경 내용을 자동으로 커밋할 어댑터를 방지할 수 있습니다 합니다 `Fill` 설정 하 여 메서드를 `AcceptChangesDuringFill` 어댑터의 속성 `false`합니다. 로 설정 된 경우 `false`, 해당 <xref:System.Data.DataRow.RowState%2A> 로 설정 되어 채우기 중에 삽입 되는 각 행의 <xref:System.Data.DataRowState>합니다.  
   
 - 한 후 데이터 집합 변경 내용을 XML 웹 서비스와 같은 다른 프로세스에 보냅니다.  
   
   > [!CAUTION]
-  >  이 방법은 변경을 커밋한 변경 정보가 지워집니다. 데이터 집합의 어떤 변경 사항이 생겼는지 알아야 응용 프로그램 필요로 하는 작업을 수행 하지 커밋 변경 될 때까지 한 후 완료 수행 합니다.  
+  > 이 방법은 변경을 커밋한 변경 정보가 지워집니다. 데이터 집합의 어떤 변경 사항이 생겼는지 알아야 응용 프로그램 필요로 하는 작업을 수행 하지 커밋 변경 될 때까지 한 후 완료 수행 합니다.  
   
   이 메서드는 다음을 수행합니다.  
   
@@ -212,7 +208,7 @@ ms.locfileid: "52281851"
 |<xref:System.Data.DataSet.AcceptChanges%2A?displayProperty=fullName>|데이터 집합의 모든 테이블의 모든 행에 변경 내용이 커밋됩니다.|  
   
 > [!NOTE]
->  TableAdapter를 호출 하 여 데이터 집합을 로드 하는 경우 `Fill` 메서드를 필요가 없습니다 변경 내용을 명시적으로 적용 합니다. 기본적으로 `Fill` 메서드 호출을 `AcceptChanges` 데이터 테이블 채우기 완료 된 후에 메서드.  
+> TableAdapter를 호출 하 여 데이터 집합을 로드 하는 경우 `Fill` 메서드를 필요가 없습니다 변경 내용을 명시적으로 적용 합니다. 기본적으로 `Fill` 메서드 호출을 `AcceptChanges` 데이터 테이블 채우기 완료 된 후에 메서드.  
   
  관련된 메서드 `RejectChanges`를 복사 하 여 변경의 효과 실행 합니다 <xref:System.Data.DataRowVersion> 버전에 다시를 <xref:System.Data.DataRowVersion> 레코드의 버전. 또한 설정 합니다 <xref:System.Data.DataRow.RowState%2A> 의 각 레코드 다시 <xref:System.Data.DataRowState>입니다.  
   
@@ -221,14 +217,14 @@ ms.locfileid: "52281851"
   
  여러 가지 방법으로 데이터를 확인할 수 있습니다.  
   
-- 비즈니스 계층에서 데이터의 유효성을 검사 하도록 응용 프로그램 코드를 추가 하 여 합니다. 데이터 집합을 한 곳이 수행할 수 있습니다. 데이터 집합을 백 엔드 유효성 검사의 장점 중 일부를 제공 합니다.-열 및 행 값을 변경 하는 변경의 유효성을 검사 하는 기능과 같은 합니다. 자세한 내용은 [데이터 집합의 데이터 유효성 검사](../data-tools/validate-data-in-datasets.md)합니다.  
+- 비즈니스 계층에서 데이터의 유효성을 검사 하도록 응용 프로그램 코드를 추가 하 여 합니다. 데이터 집합을 한 곳이 수행할 수 있습니다. 데이터 집합 디자이너를 사용 하는 백 엔드 유효성 검사의 장점 중 일부를 제공 합니다.-열 및 행 값을 변경 하는 변경의 유효성을 검사 하는 기능과 같은 합니다. 자세한 내용은 [데이터 집합의 데이터 유효성 검사](../data-tools/validate-data-in-datasets.md)합니다.  
   
-- 프레젠테이션 레이어의 양식에 유효성 검사를 추가 하 여 합니다. 자세한 내용은 [Windows Forms에서 사용자 입력 유효성 검사](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1)합니다.  
+- 프레젠테이션 레이어의 양식에 유효성 검사를 추가 하 여 합니다. 자세한 내용은 [Windows Forms에서 사용자 입력 유효성 검사](https://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1)합니다.  
   
 - 데이터 원본에 데이터를 전송 하 여 백 엔드에서 데이터에서-예를 들어 데이터베이스-수락 하거나 데이터를 거부할 수 있도록 지원 합니다. 복잡 한 데이터 유효성 검사 및 오류 정보를 제공 하는 기능에는 데이터베이스를 사용 하 여 작업 하는 경우에서 제공 되는 위치에 관계 없이 데이터의 유효성을 검사 하기 때문에 실질적인 방법이 될 수 있습니다. 그러나이 방법은 응용 프로그램별 유효성 검사 요구 사항을 허용 하지 않을 수 있습니다. 또한 데이터 소스 데이터의 유효성을 검사 수 발생할 다양 한 왕복에 응용 프로그램 백 엔드에 의해 발생 하는 유효성 검사 오류 확인을 용이 하 게 하는 방법에 따라 데이터 원본에 합니다.  
   
   > [!IMPORTANT]
-  >  데이터 명령을 사용 하는 경우는 <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> 로 설정 된 속성 <xref:System.Data.CommandType>, 신중 하 게 데이터베이스에 전달 하기 전에 클라이언트에서 전송 되는 정보를 확인 합니다. 악의적인 사용자가 송신 하려고 할 수 있습니다 (삽입) 하기 위해 무단으로 액세스 하거나 데이터베이스를 손상 시키는 SQL 문을 수정 또는 추가 합니다. 데이터베이스에 사용자 입력을 전송 하기 전에 항상 정보가 유효한 지 확인 합니다. 매개 변수가 있는 쿼리 또는 저장된 프로시저를 가능 하면 항상 사용 하는 것이 좋습니다. 자세한 내용은 [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)를 참조하세요.  
+  > 데이터 명령을 사용 하는 경우는 <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> 로 설정 된 속성 <xref:System.Data.CommandType>, 신중 하 게 데이터베이스에 전달 하기 전에 클라이언트에서 전송 되는 정보를 확인 합니다. 악의적인 사용자가 인증되지 않은 액세스 권한을 얻거나 데이터베이스를 손상시키기 위해 수정되었거나 추가된 SQL 문을 전송(주입)할 수도 있습니다. 데이터베이스에 사용자 입력을 전송 하기 전에 항상 정보가 유효한 지 확인 합니다. 매개 변수가 있는 쿼리 또는 저장된 프로시저를 가능 하면 항상 사용 하는 것이 좋습니다. 자세한 내용은 [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)를 참조하세요.  
   
   데이터 집합을 변경한 후에 데이터 원본에 변경 내용을 전송할 수 있습니다. 가장 일반적으로이 호출 하 여 수행 된 `Update` TableAdapter (또는 데이터 어댑터) 메서드. 데이터 테이블의 각 레코드 메서드 반복 어떤 유형의 업데이트가 필요한 확인 (업데이트, 삽입 또는 삭제), 한 다음 적절 한 명령을 실행 합니다.  
   
@@ -249,18 +245,18 @@ ms.locfileid: "52281851"
 (Modified)     c400         Nancy Buchanan    Preferred  
 ```  
   
- 이제 응용 프로그램에서 `Update` 메서드를 호출하여 데이터 집합을 데이터베이스로 전송합니다. 메서드는 각 행을 다시 검사합니다. 첫 번째 행에 대해 메서드를 해당 행에는 데이터베이스에서 원래 페치된 이후로 변경 되지 않았기 때문 SQL 문이 없는 데이터베이스에 전송 합니다.  
+ 이제 애플리케이션에서 `Update` 메서드를 호출하여 데이터 세트을 데이터베이스로 전송합니다. 메서드는 각 행을 다시 검사합니다. 첫 번째 행에 대해 메서드를 해당 행에는 데이터베이스에서 원래 페치된 이후로 변경 되지 않았기 때문 SQL 문이 없는 데이터베이스에 전송 합니다.  
   
  그러나 두 번째 행에 대 한는 `Update` 메서드에서 자동으로 올바른 데이터 명령을 호출 하 고 데이터베이스로 전송 합니다. 특정 SQL 문의 구문을 내부 데이터 저장소에서 지원 되는 SQL의 언어에 따라 달라 집니다. 하지만 다음과 같은 일반 특성은 전송 된 SQL 문을 주목할 만한있지 않습니다.  
   
--   전송된 된 SQL 문과 UPDATE 문의 경우 때문에 UPDATE 문을 사용 하 여에 어댑터를 알고 있는 값을 <xref:System.Data.DataRow.RowState%2A> 속성은 <xref:System.Data.DataRowState>합니다.  
+- 전송된 된 SQL 문과 UPDATE 문의 경우 때문에 UPDATE 문을 사용 하 여에 어댑터를 알고 있는 값을 <xref:System.Data.DataRow.RowState%2A> 속성은 <xref:System.Data.DataRowState>합니다.  
   
--   UPDATE 문의 대상이 행 임을 나타내는 WHERE 절을 포함 하는 전송 된 SQL 문이 여기서 `CustomerID = 'c400'`합니다. 때문에이 부분에서는 SELECT 문은 다른 모든 사용자 로부터 대상 행을 구별 합니다 `CustomerID` 대상 테이블의 기본 키가 있습니다. WHERE 절은 레코드의 원래 버전에서 파생 하는 것에 대 한 정보 (`DataRowVersion.Original`) 행을 식별 하는 데 필요한 값을 변경한 경우.  
+- UPDATE 문의 대상이 행 임을 나타내는 WHERE 절을 포함 하는 전송 된 SQL 문이 여기서 `CustomerID = 'c400'`합니다. 때문에이 부분에서는 SELECT 문은 다른 모든 사용자 로부터 대상 행을 구별 합니다 `CustomerID` 대상 테이블의 기본 키가 있습니다. WHERE 절은 레코드의 원래 버전에서 파생 하는 것에 대 한 정보 (`DataRowVersion.Original`) 행을 식별 하는 데 필요한 값을 변경한 경우.  
   
--   전송 된 SQL 문을 수정 된 열의 새 값을 설정 하는 SET 절을 포함 합니다.  
+- 전송 된 SQL 문을 수정 된 열의 새 값을 설정 하는 SET 절을 포함 합니다.  
   
     > [!NOTE]
-    >  경우 TableAdapter의 `UpdateCommand` 속성 저장된 프로시저의 이름으로 설정 된 경우 어댑터는 SQL 문을 생성 하지 않습니다. 대신 전달 된 적절 한 매개 변수를 사용 하 여 저장된 프로시저를 호출 합니다.  
+    > 경우 TableAdapter의 `UpdateCommand` 속성 저장된 프로시저의 이름으로 설정 된 경우 어댑터는 SQL 문을 생성 하지 않습니다. 대신 전달 된 적절 한 매개 변수를 사용 하 여 저장된 프로시저를 호출 합니다.  
   
 ## <a name="passing-parameters"></a>매개 변수 전달  
  일반적으로 매개 변수를 사용 하 여 데이터베이스에서 업데이트 하려는 레코드에 대 한 값을 전달 합니다.  경우 TableAdapter의 `Update` 는 UPDATE 문을 실행 하는 메서드, 매개 변수 값을 입력 해야 합니다. 이러한 값을 가져와서를 `Parameters` 적절 한 데이터 명령에 대 한 컬렉션-이 경우는 `UpdateCommand` TableAdapter의 개체입니다.  
@@ -272,17 +268,10 @@ ms.locfileid: "52281851"
  UPDATE 문에서 새 값을 모두 지정 (하는 레코드를 쓸) 뿐만 아니라 이전 값 (있도록 레코드를 데이터베이스에 있을 수 있습니다) 해야 합니다. 따라서 각 값에 대 한 매개 변수가 두 개: SET 절 및 WHERE 절에 서로 대 한 합니다. 두 매개 변수 데이터 업데이트 되는 레코드에서 읽지만 된 매개 변수에 따라 열 값의 서로 다른 버전을 받게 [SqlParameter.SourceVersion 속성](https://msdn.microsoft.com/library/system.data.sqlclient.sqlparameter.sourceversion.aspx)합니다. SET 절에 대 한 매개 변수는 현재 버전을 가져오고 WHERE 절에 대 한 매개 변수는 원래 버전을 가져옵니다.  
   
 > [!NOTE]
->  값을 설정할 수도 있습니다는 `Parameters` 컬렉션 데이터 어댑터의 이벤트 처리기에서 일반적으로 수행 하는 코드에서 직접 <xref:System.Data.DataTable.RowChanging> 이벤트입니다.  
+> 값을 설정할 수도 있습니다는 `Parameters` 컬렉션 데이터 어댑터의 이벤트 처리기에서 일반적으로 수행 하는 코드에서 직접 <xref:System.Data.DataTable.RowChanging> 이벤트입니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [TableAdapter 개요](../data-tools/tableadapter-overview.md)   
  [TableAdapter를 사용 하 여 데이터를 업데이트 합니다.](../data-tools/update-data-by-using-a-tableadapter.md)   
- [Visual Studio에서 데이터 응용 프로그램 개요](../data-tools/overview-of-data-applications-in-visual-studio.md)   
- [Visual Studio에서 데이터에 연결](../data-tools/connecting-to-data-in-visual-studio.md)   
- [데이터를 받기 위해 응용 프로그램 준비](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
- [응용 프로그램에 데이터를 가져오는 중](../data-tools/fetching-data-into-your-application.md)   
+ [데이터를 받기 위해 애플리케이션 준비](https://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Visual Studio에서 데이터에 컨트롤 바인딩](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [응용 프로그램에서 데이터 편집](../data-tools/editing-data-in-your-application.md)   
- [데이터 유효성 검사](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
- [데이터 저장](../data-tools/saving-data.md)
-
+ [데이터 유효성 검사](https://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   

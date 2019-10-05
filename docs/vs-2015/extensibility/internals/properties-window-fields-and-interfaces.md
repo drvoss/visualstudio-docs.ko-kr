@@ -1,26 +1,21 @@
 ---
 title: 속성 Window Fields and Interfaces | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, fields and interfaces
 ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8b9e7705af131bdc8c81b6cbeeac3ed4dda80aa4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b58314d64536ecf33cc5589609ee5524a9352629
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721030"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700817"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Properties Window Fields and Interfaces
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "51721030"
   
 3. 호출 <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> 선택한 계층 항목에 전달 하는 `VSHPROPID_BrowseObject` 매개 변수를 채웁니다는 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> 개체입니다.  
   
-4. 파생 된 개체를 [IDispatch 인터페이스](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) 에 대해 반환 됩니다 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> 항목을 요청 하 고 환경에 래핑되어는 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> (다음 단계 참조). 환경에 대 한 두 번째 호출에서는 호출에 실패 하는 경우 `IVsHierarchy::GetProperty`, 선택 컨테이너 전달 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> 항목 계층 구조를 제공 합니다.  
+4. 파생 된 개체를 [IDispatch 인터페이스](https://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) 에 대해 반환 됩니다 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> 항목을 요청 하 고 환경에 래핑되어는 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> (다음 단계 참조). 환경에 대 한 두 번째 호출에서는 호출에 실패 하는 경우 `IVsHierarchy::GetProperty`, 선택 컨테이너 전달 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> 항목 계층 구조를 제공 합니다.  
   
     VSPackage를 만들지 않습니다 프로젝트가 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> 구현 하는 VSPackage의 환경에서 제공한 창 (예를 들어 **솔루션 탐색기**) 생성 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> 을 대신 합니다.  
   
@@ -52,4 +47,3 @@ ms.locfileid: "51721030"
   
 ## <a name="see-also"></a>참고 항목  
  [속성 확장](../../extensibility/internals/extending-properties.md)
-

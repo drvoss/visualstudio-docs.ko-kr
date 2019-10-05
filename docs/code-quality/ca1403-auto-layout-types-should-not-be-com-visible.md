@@ -1,7 +1,6 @@
 ---
 title: 'CA1403: 자동 레이아웃 형식은 COM 노출이면 안 됩니다.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - AutoLayoutTypesShouldNotBeComVisible
@@ -12,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: a7007714-f9b4-4730-94e0-67d3dc68991f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f713ac012509dd36d483ca354630e125066360b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ef7b693a881aaa1457004c84968ebc80936fc2b2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954541"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714856"
 ---
 # <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403: 자동 레이아웃 형식은 COM 노출이면 안 됩니다.
 
@@ -40,7 +39,7 @@ ms.locfileid: "53954541"
 
 ## <a name="rule-description"></a>규칙 설명
 
-<xref:System.Runtime.InteropServices.LayoutKind> 레이아웃 형식은 공용 언어 런타임에 의해 관리 됩니다. 이러한 형식의 레이아웃은 특정 레이아웃이 필요한 COM 클라이언트는.NET Framework의 버전 간에 변경 수 있습니다. 경우는 <xref:System.Runtime.InteropServices.StructLayoutAttribute> 특성을 지정 하지 않으면 C#, Visual Basic 및 c + + 컴파일러 지정 [LayoutKind.Auto](<xref:System.Runtime.InteropServices.LayoutKind.Auto>) 값 형식에 대 한 합니다.
+<xref:System.Runtime.InteropServices.LayoutKind> 레이아웃 형식은 공용 언어 런타임에 의해 관리 됩니다. 이러한 형식의 레이아웃 버전의.NET 특정 레이아웃이 필요한 COM 클라이언트는 달라질 수 있습니다. 경우는 <xref:System.Runtime.InteropServices.StructLayoutAttribute> 특성을 지정 하지 않으면 합니다 C#, Visual Basic의 경우 및 C++ 컴파일러 지정 [LayoutKind.Auto](<xref:System.Runtime.InteropServices.LayoutKind.Auto>) 값 형식에 대 한 합니다.
 
 그렇지 않은 경우에 표시 하지 않는 한 모든 public, 제네릭이 아닌 형식은 COM에 노출 하 고 모든 public이 아닌 제네릭 형식과 COM에 표시 되지 않습니다. 그러나 가양성을 줄이기 위해이 규칙에 명시적으로 지정할 형식의 COM 표시를 해야 합니다. 포함 하는 어셈블리 표시 되어야 합니다는 <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> 로 설정 `false` 형식으로 표시 되어야 합니다 및는 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 로 설정 `true`.
 

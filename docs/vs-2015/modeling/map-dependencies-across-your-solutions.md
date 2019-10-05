@@ -1,11 +1,8 @@
 ---
 title: 솔루션 전체의 종속성 매핑 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.codemap
@@ -31,13 +28,13 @@ ms.assetid: e04850a2-17c5-459b-93ec-6c74143b3292
 caps.latest.revision: 245
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 20122a1b254eee15efb557b5899e59fc914fda3a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: cb62c82722cbfc76264e760e117c828a6dc3bef0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740044"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687153"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>솔루션 전체의 종속성 매핑
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,21 +45,21 @@ ms.locfileid: "51740044"
   
  **아래에는 이와 관련한 몇 가지 비디오가 나와 있습니다**.  
   
--   [시각화를 통해 코드 종속성 이해](http://go.microsoft.com/fwlink/?LinkID=252065)  
+- [시각화를 통해 코드 종속성 이해](http://go.microsoft.com/fwlink/?LinkID=252065)  
   
--   [변경 영향 시각화](http://go.microsoft.com/fwlink/?LinkID=252068)  
+- [변경 영향 시각화](http://go.microsoft.com/fwlink/?LinkID=252068)  
   
--   [코드 맵으로 복잡한 코드 이해하기](http://go.microsoft.com/fwlink/?LinkID=259869)  
+- [코드 맵으로 복잡한 코드 이해하기](http://go.microsoft.com/fwlink/?LinkID=259869)  
   
-##  <a name="GetStarted"></a> 코드 맵 시작  
+## <a name="GetStarted"></a> 코드 맵 시작  
  **코드 맵을 사용하려면 다음이 필요합니다**.  
   
--   Visual Studio Enterprise: 코드 편집기, 솔루션 탐색기, 클래스 뷰 또는 개체 브라우저에서 코드 맵을 만듭니다.  
+- Visual Studio Enterprise: 코드 편집기, 솔루션 탐색기, 클래스 뷰 또는 개체 브라우저에서에서 코드 맵을 만듭니다.  
   
--   Visual Studio Professional: 코드 맵을 열고, 제한된 편집을 수행하고, 코드를 탐색합니다.  
+- Visual Studio Professional: 코드 맵을 열고, 제한 된 편집을 확인 하 고 코드를 탐색 합니다.  
   
 > [!WARNING]
->  Visual Studio Enterprise에서 만든 맵을 Visual Studio Professional 사용자와 공유하기 전에 숨겨진 항목, 확장된 그룹 및 그룹 간 링크 등의 모든 항목이 맵에 표시되어 있어야 합니다.  
+> Visual Studio Enterprise에서 만든 맵을 Visual Studio Professional 사용자와 공유하기 전에 숨겨진 항목, 확장된 그룹 및 그룹 간 링크 등의 모든 항목이 맵에 표시되어 있어야 합니다.  
   
  **다음 언어로 코드에 대한 종속성을 매핑할 수 있습니다**.  
   
@@ -72,55 +69,55 @@ ms.locfileid: "51740044"
   
 - Microsoft Dynamics AX용 .NET 모듈의 X++ 프로젝트 및 어셈블리  
   
-  **참고:** C# 또는 Visual Basic .NET이 아닌 다른 프로젝트의 경우 코드 맵을 시작하거나 기존 코드 맵에 항목을 추가하는 옵션이 더 적습니다. 예를 들어 C++ 프로젝트의 텍스트 편집기에서는 개체를 마우스 오른쪽 단추로 클릭하여 코드 맵에 추가할 수 없습니다. 그러나 솔루션 탐색기, 클래스 뷰 및 개체 브라우저에서 개별 코드 요소 또는 파일을 끌어서 놓을 수 있습니다.  
+  **참고:** 다른 프로젝트에 대 한 C# 또는 Visual Basic.NET에서는 옵션이 더 적습니다 경우 코드 맵을 시작 하거나 기존 코드 맵에 항목을 추가 합니다. 예를 들어 C++ 프로젝트의 텍스트 편집기에서는 개체를 마우스 오른쪽 단추로 클릭하여 코드 맵에 추가할 수 없습니다. 그러나 솔루션 탐색기, 클래스 뷰 및 개체 브라우저에서 개별 코드 요소 또는 파일을 끌어서 놓을 수 있습니다.  
   
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>솔루션 전체의 종속성을 확인하려면  
   
-1.  **아키텍처** 메뉴를 엽니다.  
+1. **아키텍처** 메뉴를 엽니다.  
   
-2.  솔루션을 열었지만 빌드하지 않았거나 마지막으로 빌드한 후 코드가 변경된 경우 **솔루션용 코드 맵 생성**을 선택합니다.  
+2. 솔루션을 열었지만 빌드하지 않았거나 마지막으로 빌드한 후 코드가 변경된 경우 **솔루션용 코드 맵 생성**을 선택합니다.  
   
-3.  마지막으로 빌드한 후 코드가 변경되지 않은 경우 **빌드하지 않고 솔루션용 코드 맵 생성** 을 선택하여 맵을 더 빠르게 만들 수 있습니다.  
+3. 마지막으로 빌드한 후 코드가 변경되지 않은 경우 **빌드하지 않고 솔루션용 코드 맵 생성** 을 선택하여 맵을 더 빠르게 만들 수 있습니다.  
   
-4.  [전체 종속성을 확인](#SeeOverviewSource) 하여 코드 맵을 통해 솔루션의 전체 종속성을 보는 방법을 알아보세요.  
+4. [전체 종속성을 확인](#SeeOverviewSource) 하여 코드 맵을 통해 솔루션의 전체 종속성을 보는 방법을 알아보세요.  
   
 #### <a name="to-see-specific-dependencies-within-your-solution"></a>솔루션 내에서 특정 종속성을 확인하려면  
   
-1.  솔루션이 로드되면 **솔루션 탐색기**를 엽니다.  
+1. 솔루션이 로드되면 **솔루션 탐색기**를 엽니다.  
   
-2.  매핑할 모든 프로젝트, 어셈블리 참조, 폴더, 파일, 형식 또는 멤버를 선택합니다.  
+2. 매핑할 모든 프로젝트, 어셈블리 참조, 폴더, 파일, 형식 또는 멤버를 선택합니다.  
   
-3.  에 **솔루션 탐색기** 도구 모음 선택 **코드 맵에 표시**![만들 새 그래프에서 선택한 노드 단추](../modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton "). 또는 바로 가기 메뉴를 열고 **코드 맵에 표시**를 선택합니다. 클래스 뷰 또는 개체 브라우저에서 신규 또는 기존 코드 맵으로 항목을 끌 수도 있습니다.  
+3. 에 **솔루션 탐색기** 도구 모음 선택 **코드 맵에 표시**![만들 새 그래프에서 선택한 노드 단추](../modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton "). 또는 바로 가기 메뉴를 열고 **코드 맵에 표시**를 선택합니다. 클래스 뷰 또는 개체 브라우저에서 신규 또는 기존 코드 맵으로 항목을 끌 수도 있습니다.  
   
-4.  [특정 종속성을 확인](#SeeSpecificSource) 하여 코드 맵을 통해 솔루션 내의 특정 종속성을 보는 방법을 알아보세요.  
+4. [특정 종속성을 확인](#SeeSpecificSource) 하여 코드 맵을 통해 솔루션 내의 특정 종속성을 보는 방법을 알아보세요.  
   
-###  <a name="CreateEmptyMap"></a> 솔루션에 빈 코드 맵을 새로 추가하려면  
+### <a name="CreateEmptyMap"></a> 솔루션에 빈 코드 맵을 새로 추가하려면  
   
-1.  **솔루션 탐색기**에서 최상위 솔루션 노드의 바로 가기 메뉴를 엽니다. **추가** , **새 항목**을 차례로 선택합니다.  
+1. **솔루션 탐색기**에서 최상위 솔루션 노드의 바로 가기 메뉴를 엽니다. **추가** , **새 항목**을 차례로 선택합니다.  
   
-2.  **설치됨**에서 **일반**을 선택합니다.  
+2. **설치됨**에서 **일반**을 선택합니다.  
   
-3.  오른쪽 창에서 **방향이 지정된 그래프 문서** , **추가**를 차례로 선택합니다.  
+3. 오른쪽 창에서 **방향이 지정된 그래프 문서** , **추가**를 차례로 선택합니다.  
   
      그러면 빈 맵이 솔루션의 **솔루션 항목** 폴더에 표시됩니다.  
   
 #### <a name="to-create-a-new-empty-code-map-without-adding-it-to-your-solution"></a>솔루션에 추가하지 않고 빈 코드 맵을 새로 만들려면  
   
-1.  **아키텍처** 메뉴를 열고 **새 코드 맵**을 선택합니다.  
+1. **아키텍처** 메뉴를 열고 **새 코드 맵**을 선택합니다.  
   
      \- 또는 -  
   
-2.  **파일** 메뉴를 열고 **새로 만들기** , **파일**을 차례로 선택합니다.  
+2. **파일** 메뉴를 열고 **새로 만들기** , **파일**을 차례로 선택합니다.  
   
-3.  **설치됨**에서 **일반**을 선택합니다.  
+3. **설치됨**에서 **일반**을 선택합니다.  
   
-4.  오른쪽 창에서 **방향이 지정된 그래프 문서** , **열기**를 차례로 선택합니다.  
+4. 오른쪽 창에서 **방향이 지정된 그래프 문서** , **열기**를 차례로 선택합니다.  
   
      그러면 빈 맵이 솔루션의 폴더에 표시되지 않습니다.  
   
-##  <a name="SeeOverviewSource"></a> 전체 종속성을 확인  
+## <a name="SeeOverviewSource"></a> 전체 종속성을 확인  
   
-###  <a name="OverviewSource"></a> 솔루션 전체의 종속성 확인  
+### <a name="OverviewSource"></a> 솔루션 전체의 종속성 확인  
   
 1. **아키텍처** 메뉴에서 **솔루션용 코드 맵 생성**을 선택합니다.  
   
@@ -145,7 +142,7 @@ ms.locfileid: "51740044"
     또는 항목을 선택하고 더하기 키(**+**)를 눌러서 키보드를 사용합니다. 코드를 더 자세히 살펴보려면 네임스페이스, 형식 및 멤버에 대해 같은 작업을 수행합니다.  
   
    > [!TIP]
-   >  자세한 코드를 사용 하는 마우스, 키보드 및 터치 참조를 사용 하 여 매핑합니다 [찾아보기 및 다시 정렬 코드 맵](../modeling/browse-and-rearrange-code-maps.md)합니다.  
+   > 자세한 코드를 사용 하는 마우스, 키보드 및 터치 참조를 사용 하 여 매핑합니다 [찾아보기 및 다시 정렬 코드 맵](../modeling/browse-and-rearrange-code-maps.md)합니다.  
   
 5. 맵을 단순화하고 개별 파트에 포커스를 지정하려면 코드 맵 도구 모음에서 **필터** 를 선택하고 원하는 노드 및 링크의 형식만 선택합니다. 예를 들어 모든 솔루션 폴더 및 어셈블리 컨테이너를 숨길 수 있습니다.  
   
@@ -160,7 +157,7 @@ ms.locfileid: "51740044"
     이 예제에서 자주색 링크는 호출이고, 점선 링크는 참조이고, 연한 파란색 링크는 필드 액세스입니다. 녹색 링크는 상속이거나, 관계 또는 *범주* 의 형식 두 개 이상을 나타내는 *집합체 링크*일 수 있습니다.  
   
    > [!TIP]
-   >  녹색 링크가 표시된다고 해서 단순히 상속 관계만 있는 것은 아닙니다. 메서드 호출도 있을 수 있지만 해당 호출은 상속 관계에 의해 숨겨집니다. 특정 링크 형식을 확인하려면 **필터** 창의 확인란을 사용하여 원하지 않는 형식을 숨깁니다.  
+   > 녹색 링크가 표시된다고 해서 단순히 상속 관계만 있는 것은 아닙니다. 메서드 호출도 있을 수 있지만 해당 호출은 상속 관계에 의해 숨겨집니다. 특정 링크 형식을 확인하려면 **필터** 창의 확인란을 사용하여 원하지 않는 형식을 숨깁니다.  
   
 7. 항목 또는 링크에 대한 자세한 정보를 확인하려면 도구 설명이 나타날 때까지 포인터를 항목 또는 링크의 맨 위로 이동합니다. 이렇게 하면 링크가 나타내는 코드 요소 또는 범주의 세부 정보가 표시됩니다.  
   
@@ -186,56 +183,56 @@ ms.locfileid: "51740044"
   
     참고 항목:  
   
--   [코드 맵 찾아보기 및 다시 정렬](../modeling/browse-and-rearrange-code-maps.md)  
+- [코드 맵 찾아보기 및 다시 정렬](../modeling/browse-and-rearrange-code-maps.md)  
   
--   [DGML 파일을 편집하여 코드 맵 사용자 지정](../modeling/customize-code-maps-by-editing-the-dgml-files.md)  
+- [DGML 파일을 편집하여 코드 맵 사용자 지정](../modeling/customize-code-maps-by-editing-the-dgml-files.md)  
   
--   [분석기를 실행](../modeling/find-potential-problems-using-code-map-analyzers.md)하여 코드에서 발생할 수 있는 문제를 찾습니다.  
+- [분석기를 실행](../modeling/find-potential-problems-using-code-map-analyzers.md)하여 코드에서 발생할 수 있는 문제를 찾습니다.  
   
-###  <a name="OverviewCompiled"></a> 어셈블리 또는 이진 파일 간의 종속성 확인  
+### <a name="OverviewCompiled"></a> 어셈블리 또는 이진 파일 간의 종속성 확인  
   
-1.  [빈 코드 맵을 만들거나](#GetStarted)기존 코드 맵(.dgml 파일)을 엽니다.  
+1. [빈 코드 맵을 만들거나](#GetStarted)기존 코드 맵(.dgml 파일)을 엽니다.  
   
-2.  어셈블리 또는 이진 파일을 외부 Visual Studio에서 맵으로 끕니다. 예를 들어 Windows 탐색기 또는 파일 탐색기에서 어셈블리 또는 이진 파일을 끕니다.  
+2. 어셈블리 또는 이진 파일을 외부 Visual Studio에서 맵으로 끕니다. 예를 들어 Windows 탐색기 또는 파일 탐색기에서 어셈블리 또는 이진 파일을 끕니다.  
   
 > [!NOTE]
->  Windows 탐색기 또는 파일 탐색기와 Visual Studio를 동일한 UAC(사용자 액세스 제어) 권한 수준에서 실행하는 경우에만 Windows 탐색기 또는 파일 탐색기에서 어셈블리 또는 이진 파일을 끌 수 있습니다. 예를 들어 UAC가 켜져 있고 Visual Studio를 관리자 권한으로 실행하는 경우 Windows 탐색기 또는 파일 탐색기에서 끌기 작업이 차단됩니다. 이 문제를 해결하려면 둘 다 같은 관리자 권한으로 실행하거나 UAC를 해제합니다.  
+> Windows 탐색기 또는 파일 탐색기와 Visual Studio를 동일한 UAC(사용자 액세스 제어) 권한 수준에서 실행하는 경우에만 Windows 탐색기 또는 파일 탐색기에서 어셈블리 또는 이진 파일을 끌 수 있습니다. 예를 들어 UAC가 켜져 있고 Visual Studio를 관리자 권한으로 실행하는 경우 Windows 탐색기 또는 파일 탐색기에서 끌기 작업이 차단됩니다. 이 문제를 해결하려면 둘 다 같은 관리자 권한으로 실행하거나 UAC를 해제합니다.  
   
-##  <a name="SeeSpecificSource"></a> 특정 종속성을 확인  
+## <a name="SeeSpecificSource"></a> 특정 종속성을 확인  
  예를 들어 보류 중인 변경 내용이 있는 일부 파일에서 코드 검토를 수행하려는 경우 변경 내용의 종속성을 확인하려면 해당 파일에서 코드 맵을 만듭니다.  
   
  ![코드 맵에 특성 종속성 표시](../modeling/media/codemapsspecificdependenciesintro.png "CodeMapsSpecificDependenciesIntro")  
   
 ### <a name="see-specific-dependencies-in-your-solution"></a>솔루션의 특정 종속성 확인  
   
-1.  **솔루션 탐색기**를 열고 원하는 프로젝트, 어셈블리 참조, 폴더, 파일, 형식 및 멤버를 선택합니다. 형식이나 멤버에 대한 종속성을 포함하는 항목을 찾으려면 **솔루션 탐색기**에서 해당 형식 또는 멤버의 바로 가기 메뉴를 열고 종속성 형식을 선택하고 결과를 선택합니다.  
+1. **솔루션 탐색기**를 열고 원하는 프로젝트, 어셈블리 참조, 폴더, 파일, 형식 및 멤버를 선택합니다. 형식이나 멤버에 대한 종속성을 포함하는 항목을 찾으려면 **솔루션 탐색기**에서 해당 형식 또는 멤버의 바로 가기 메뉴를 열고 종속성 형식을 선택하고 결과를 선택합니다.  
   
-2.  항목 및 해당 멤버를 매핑합니다. 에 **솔루션 탐색기** 도구 모음 클릭 **코드 맵에 표시**![만들 새 그래프에서 선택한 노드 단추](../modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton").  
+2. 항목 및 해당 멤버를 매핑합니다. 에 **솔루션 탐색기** 도구 모음 클릭 **코드 맵에 표시**![만들 새 그래프에서 선택한 노드 단추](../modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton").  
   
      ![매핑할 항목 선택](../modeling/media/codemapsselectinsolutionexplorer.png "CodeMapsSelectInSolutionExplorer")  
   
-3.  맵에는 포함하는 어셈블리 내에서 선택한 항목이 표시됩니다.  
+3. 맵에는 포함하는 어셈블리 내에서 선택한 항목이 표시됩니다.  
   
      ![선택한 지도에 그룹으로 표시 된 항목](../modeling/media/codemapsshowitemsfromsolnexplorer.png "CodeMapsShowItemsFromSolnExplorer")  
   
      솔루션 탐색기, 클래스 뷰 또는 개체 브라우저에서 신규 빈 코드 맵이나 기존 코드 맵으로 항목을 끌 수도 있습니다. 빈 맵을 만들려면 [빈 코드 맵 만들기](#GetStarted)를 참조하세요. 항목의 부모 계층 구조를 포함하려면 항목을 끄는 동안 **Ctrl** 키를 누르고 있거나, 코드 맵 도구 모음에서 **프로젝트 포함** 단추를 사용하여 기본 작업을 지정합니다.  
   
     > [!NOTE]
-    >  Windows Phone 또는 Windows 스토어와 같은 여러 앱에 공유되는 프로젝트에서 항목을 추가할 경우 해당 항목은 현재 활성화된 앱 프로젝트와 함께 맵에 나타납니다. 다른 앱 프로젝트에 대한 컨텍스트를 변경하고 공유 프로젝트의 항목을 추가하면 해당 항목이 새로 활성화된 앱 프로젝트와 함께 나타납니다. 맵의 항목에 수행하는 작업은 동일한 컨텍스트를 공유하는 항목에만 적용됩니다.  
+    > Windows Phone 또는 Windows 스토어와 같은 여러 앱에 공유되는 프로젝트에서 항목을 추가할 경우 해당 항목은 현재 활성화된 앱 프로젝트와 함께 맵에 나타납니다. 다른 앱 프로젝트에 대한 컨텍스트를 변경하고 공유 프로젝트의 항목을 추가하면 해당 항목이 새로 활성화된 앱 프로젝트와 함께 나타납니다. 맵의 항목에 수행하는 작업은 동일한 컨텍스트를 공유하는 항목에만 적용됩니다.  
   
-4.  항목을 탐색하려면 해당 항목을 확장합니다. 항목을 확장하려면 항목 위로 마우스 포인터를 이동한 다음 펼침 단추(아래쪽 화살표) 아이콘이 나타나면 클릭합니다.  
+4. 항목을 탐색하려면 해당 항목을 확장합니다. 항목을 확장하려면 항목 위로 마우스 포인터를 이동한 다음 펼침 단추(아래쪽 화살표) 아이콘이 나타나면 클릭합니다.  
   
      ![코드 맵에서 노드를 확장](../modeling/media/dependencygraph-containment.png "DependencyGraph_Containment")  
   
      모든 항목을 확장하려면 **Ctrl+A**를 눌러 모든 항목을 선택하고 맵에 대한 바로 가기 메뉴를 연 다음 **그룹**, **확장**을 차례로 선택합니다. 그러나 이 옵션은 모든 그룹을 확장할 때 사용할 수 없는 맵 또는 메모리 문제가 발생하는 경우 사용할 수 없습니다.  
   
-5.  필요하면 클래스 및 멤버 수준 바로 아래쪽으로 원하는 항목을 계속 확장합니다.  
+5. 필요하면 클래스 및 멤버 수준 바로 아래쪽으로 원하는 항목을 계속 확장합니다.  
   
      ![클래스 및 멤버 수준으로 그룹 확장명](../modeling/media/codemapsexpandtoclassandmember.png "CodeMapsExpandToClassAndMember")  
   
      맵에서 코드에 있지만 나타나지 멤버를 보려면 클릭 합니다 **페치** 아이콘 ![자식 다시 페치 아이콘](../modeling/media/dependencygraph-deletednodesicon.png "DependencyGraph_DeletedNodesIcon") 위 그룹의 왼쪽된 모퉁이입니다.  
   
-6.  맵의 항목과 관련된 추가 항목을 확인하려면 항목을 선택하고, 코드 맵 도구 모음에서 **관련 항목 표시** 를 선택하고, 맵에 추가할 관련 항목 형식을 선택합니다. 또는 항목을 하나 이상 선택하고, 바로 가기 메뉴를 열고, 맵에 추가할 관련 항목 형식에 대한 **표시...** 옵션을 선택합니다. 예를 들어:  
+6. 맵의 항목과 관련된 추가 항목을 확인하려면 항목을 선택하고, 코드 맵 도구 모음에서 **관련 항목 표시** 를 선택하고, 맵에 추가할 관련 항목 형식을 선택합니다. 또는 항목을 하나 이상 선택하고, 바로 가기 메뉴를 열고, 맵에 추가할 관련 항목 형식에 대한 **표시...** 옵션을 선택합니다. 예를 들어:  
   
      **어셈블리**인 경우 다음을 선택합니다.  
   
@@ -278,30 +275,30 @@ ms.locfileid: "51740044"
   
      ![이 멤버에 의해 호출 된 메서드 표시](../modeling/media/codemapsshowrelatedmethods.png "CodeMapsShowRelatedMethods")  
   
-7.  맵에 관계가 표시됩니다. 이 예제에서는 `Find` 메서드를 통해 호출되는 메서드와 솔루션 내부 또는 외부에서 해당 위치를 나타냅니다.  
+7. 맵에 관계가 표시됩니다. 이 예제에서는 `Find` 메서드를 통해 호출되는 메서드와 솔루션 내부 또는 외부에서 해당 위치를 나타냅니다.  
   
      ![코드 맵에 특성 종속성 표시](../modeling/media/codemapsspecificdependenciesintro.png "CodeMapsSpecificDependenciesIntro")  
   
-8.  맵을 단순화하고 개별 파트에 포커스를 지정하려면 코드 맵 도구 모음에서 **필터** 를 선택하고 원하는 노드 및 링크의 형식만 선택합니다. 예를 들어 솔루션 폴더, 어셈블리 및 네임스페이스의 표시를 해제합니다.  
+8. 맵을 단순화하고 개별 파트에 포커스를 지정하려면 코드 맵 도구 모음에서 **필터** 를 선택하고 원하는 노드 및 링크의 형식만 선택합니다. 예를 들어 솔루션 폴더, 어셈블리 및 네임스페이스의 표시를 해제합니다.  
   
      ![필터 창을 사용 하 여 디스플레이 단순화](../modeling/media/almcodemapfilterpane.png "ALMCodeMapFilterPane")  
   
-##  <a name="SeeSourceHeader"></a> C 및 C++ 소스 파일과 헤더 파일 간 종속성 확인  
- C++ 프로젝트에 대해 보다 완전한 맵을 만들려면 해당 프로젝트에 대해 찾아보기 정보 컴파일러 옵션(**/FR**)을 설정합니다. [/FR, /Fr (Create .Sbr File)](http://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896)를 참조하세요. 그렇지 않으면 메시지가 표시되고 이 옵션을 설정하라는 메시지가 나타납니다. **확인**을 선택하면 현재 맵에 대해서만 옵션이 설정됩니다. 이후 모든 맵에 대해 메시지를 숨기도록 선택할 수 있습니다. 이 메시지를 숨기는 경우 다시 표시되도록 설정할 수 있습니다. 이렇게 하려면 다음 레지스트리 키를 `0` 으로 설정하거나 해당 키를 삭제합니다.  
+## <a name="SeeSourceHeader"></a> C 및 C++ 소스 파일과 헤더 파일 간 종속성 확인  
+ C++ 프로젝트에 대해 보다 완전한 맵을 만들려면 해당 프로젝트에 대해 찾아보기 정보 컴파일러 옵션(**/FR**)을 설정합니다. [/FR, /Fr (Create .Sbr File)](https://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896)를 참조하세요. 그렇지 않으면 메시지가 표시되고 이 옵션을 설정하라는 메시지가 나타납니다. **확인**을 선택하면 현재 맵에 대해서만 옵션이 설정됩니다. 이후 모든 맵에 대해 메시지를 숨기도록 선택할 수 있습니다. 이 메시지를 숨기는 경우 다시 표시되도록 설정할 수 있습니다. 이렇게 하려면 다음 레지스트리 키를 `0` 으로 설정하거나 해당 키를 삭제합니다.  
   
  **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
   
  Visual C++ 프로젝트가 포함된 솔루션을 열 때 IntelliSense 데이터베이스를 업데이트하는 데 시간이 걸릴 수 있습니다. 이 동안에는 IntelliSense 데이터베이스가 업데이트를 완료할 때까지 헤더 파일(.h 또는 `#include`)에 관한 코드 맵을 만들 수 없습니다. Visual Studio 상태 표시줄에서 업데이트 진행률을 모니터링할 수 있습니다. 특정 IntelliSense 설정을 사용할 수 없으므로 나타나는 문제 또는 메시지를 해결하려면 [C 및 C++ 코드의 맵 문제 해결](#Troubleshooting)을 참조하세요.  
   
--   솔루션의 모든 소스 파일과 헤더 파일 간 종속성을 확인하려면 **아키텍처** 메뉴에서 **포함 파일의 그래프 생성**을 클릭합니다.  
+- 솔루션의 모든 소스 파일과 헤더 파일 간 종속성을 확인하려면 **아키텍처** 메뉴에서 **포함 파일의 그래프 생성**을 클릭합니다.  
   
      ![네이티브 코드의 종속성 그래프](../modeling/media/dependencygraphgeneral-nativecode.png "DependencyGraphGeneral_NativeCode")  
   
--   현재 열려 있는 파일과 관련 소스 파일 및 헤더 파일 간의 종속성을 확인하려면 소스 파일이나 헤더 파일을 열고 파일 내 임의의 위치에서 파일 바로 가기 메뉴를 연 다음 **포함 파일의 그래프 생성**을 선택합니다.  
+- 현재 열려 있는 파일과 관련 소스 파일 및 헤더 파일 간의 종속성을 확인하려면 소스 파일이나 헤더 파일을 열고 파일 내 임의의 위치에서 파일 바로 가기 메뉴를 연 다음 **포함 파일의 그래프 생성**을 선택합니다.  
   
      ![첫 번째&#45;.h 파일에 대 한 종속성 그래프](../modeling/media/dependencygraph-native-firstlevel.png "DependencyGraph_Native_FirstLevel")  
   
-###  <a name="Troubleshooting"></a> C 및 C++ 코드의 맵 문제 해결  
+### <a name="Troubleshooting"></a> C 및 C++ 코드의 맵 문제 해결  
  다음 항목은 C 및 C++ 코드에서 지원되지 않습니다.  
   
 - 기본 형식은 부모 계층 구조가 포함된 맵에 나타나지 않습니다.  
@@ -314,14 +311,14 @@ ms.locfileid: "51740044"
 |---------------|------------------------|--------------------|  
 |코드 맵을 생성하지 못했습니다.|솔루션에 프로젝트가 성공적으로 만들어지지 않습니다.|발생한 빌드 오류를 수정하고 맵을 재생성합니다.|  
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 아키텍처 **메뉴에서 코드 맵을 생성하려고 하면** 가 응답하지 않습니다.|프로그램 데이터베이스 파일(.pdb)이 손상될 수 있습니다.<br /><br /> .pdb 파일에는 형식, 메서드 및 소스 파일 정보와 같은 디버깅 정보가 저장됩니다.|솔루션을 다시 빌드한 다음 다시 시도합니다.|  
-|IntelliSense 검색 데이터베이스에 대한 특정 설정을 사용할 수 없습니다.|특정 IntelliSense 설정을 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**옵션** 대화 상자에서 사용하지 못할 수 있습니다.|설정을 사용할 수 있도록 설정합니다.<br /><br /> 참조 [옵션, 텍스트 편집기, C/c + +, 고급](../ide/reference/options-text-editor-c-cpp-advanced.md)합니다.|  
-|**알 수 없는 메서드** 라는 메시지가 메서드 노드에 나타납니다.<br /><br /> 이 문제는 메서드의 이름을 확인할 수 없기 때문에 발생합니다.|이진 파일에 기본 재배치 테이블이 없을 수 있습니다.|링커에서 **/FIXED:NO** 옵션을 설정합니다.<br /><br /> [/FIXED (Fixed Base Address)](http://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5)를 참조하세요.|  
-||프로그램 데이터베이스 파일(.pdb)이 빌드되지 않았을 수 있습니다.<br /><br /> .pdb 파일에는 형식, 메서드 및 소스 파일 정보와 같은 디버깅 정보가 저장됩니다.|링커에서 **/DEBUG** 옵션을 설정합니다.<br /><br /> [/DEBUG (Generate Debug Info)](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103)를 참조하세요.|  
+|IntelliSense 검색 데이터베이스에 대한 특정 설정을 사용할 수 없습니다.|특정 IntelliSense 설정을 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**옵션** 대화 상자에서 사용하지 못할 수 있습니다.|설정을 사용할 수 있도록 설정합니다.<br /><br /> 참조 [옵션, 텍스트 편집기, C /C++고급](../ide/reference/options-text-editor-c-cpp-advanced.md)합니다.|  
+|**알 수 없는 메서드** 라는 메시지가 메서드 노드에 나타납니다.<br /><br /> 이 문제는 메서드의 이름을 확인할 수 없기 때문에 발생합니다.|이진 파일에 기본 재배치 테이블이 없을 수 있습니다.|링커에서 **/FIXED:NO** 옵션을 설정합니다.<br /><br /> [/FIXED (Fixed Base Address)](https://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5)를 참조하세요.|  
+||프로그램 데이터베이스 파일(.pdb)이 빌드되지 않았을 수 있습니다.<br /><br /> .pdb 파일에는 형식, 메서드 및 소스 파일 정보와 같은 디버깅 정보가 저장됩니다.|링커에서 **/DEBUG** 옵션을 설정합니다.<br /><br /> [/DEBUG (Generate Debug Info)](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103)를 참조하세요.|  
 ||.pdb 파일을 열 수 없거나 예상되는 위치에서 찾을 수 없습니다.|.pdb 파일이 예상되는 위치에 있는지 확인합니다.|  
-||디버그 정보가 .pdb 파일에서 제거되었습니다.|**/PDBSTRIPPED** 옵션이 링커에서 사용된 경우 전체 .pdb 파일을 대신 포함합니다.<br /><br /> [/PDBSTRIPPED (Strip Private Symbols)](http://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55)를 참조하세요.|  
-||호출자가 함수가 아니며 이진 파일의 썽크이거나 데이터 섹션의 포인터입니다.|호출자가 썽크이면 썽크를 방지하기 위해 `_declspec(dllimport)`를 사용해 봅니다.<br /><br /> 참조<br /><br /> -   [일반 규칙 및 제한 사항](http://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [__Declspec (dllimport)을 사용 하 여 함수 호출 가져오기](http://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](http://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|  
+||디버그 정보가 .pdb 파일에서 제거되었습니다.|**/PDBSTRIPPED** 옵션이 링커에서 사용된 경우 전체 .pdb 파일을 대신 포함합니다.<br /><br /> [/PDBSTRIPPED (Strip Private Symbols)](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55)를 참조하세요.|  
+||호출자가 함수가 아니며 이진 파일의 썽크이거나 데이터 섹션의 포인터입니다.|호출자가 썽크이면 썽크를 방지하기 위해 `_declspec(dllimport)`를 사용해 봅니다.<br /><br /> 참조<br /><br /> -   [일반 규칙 및 제한 사항](https://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [__Declspec (dllimport)을 사용 하 여 함수 호출 가져오기](https://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](https://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|  
   
-##  <a name="RenderMoreQuickly"></a> 코드 맵을 더 빠르게 렌더링  
+## <a name="RenderMoreQuickly"></a> 코드 맵을 더 빠르게 렌더링  
  맵을 처음으로 생성하는 경우 Visual Studio는 검색된 모든 종속성을 인덱싱합니다. 특히 대형 솔루션의 경우 이 프로세스에 다소 시간이 걸릴 수도 있지만 이후에는 성능이 개선됩니다. 코드가 변경되면 Visual Studio는 업데이트된 코드만 다시 인덱싱합니다. 맵 렌더링을 완료하는 데 걸리는 시간을 최소화하려면 다음을 고려합니다.  
   
 - [원하는 종속성만 매핑합니다.](#SeeSpecificSource)  
@@ -342,7 +339,7 @@ ms.locfileid: "51740044"
   
   올바르게 빌드된 코드에 대해서만 완료된 맵에 종속성이 표시됩니다. 특성 구성 요소에 대해 빌드 오류가 발생하면 해당 오류가 맵에 나타납니다. 이 맵을 기반으로 아키텍처 관련 사항을 결정하기 전에 구성 요소가 실제로 빌드되는지와 해당 구성 요소에 종속성이 있는지를 확인해야 합니다.  
   
-##  <a name="SavingExporting"></a> 코드 맵 공유  
+## <a name="SavingExporting"></a> 코드 맵 공유  
   
 ### <a name="share-the-map-with-other-visual-studio-users"></a>다른 Visual Studio 사용자와 맵 공유  
  **파일** 메뉴를 사용하여 맵을 저장합니다.  
@@ -356,39 +353,36 @@ ms.locfileid: "51740044"
  Visual Studio는 맵을 Visual Studio Enterprise 및 Visual Studio Professional의 다른 사용자와 공유할 수 있는 .dgml 파일로 저장합니다.  
   
 > [!NOTE]
->  Visual Studio Professional 사용자와 맵을 공유하기 전에 모든 그룹을 확장하고, 숨겨진 노드와 그룹 간 링크를 표시하고, 삭제된 노드 중 다른 작업자가 맵 상에서 볼 수 있도록 하려는 노드를 검색합니다. 그렇지 않으면 다른 사용자가 이러한 항목을 볼 수 없습니다.  
+> Visual Studio Professional 사용자와 맵을 공유하기 전에 모든 그룹을 확장하고, 숨겨진 노드와 그룹 간 링크를 표시하고, 삭제된 노드 중 다른 작업자가 맵 상에서 볼 수 있도록 하려는 노드를 검색합니다. 그렇지 않으면 다른 사용자가 이러한 항목을 볼 수 없습니다.  
 >   
->  모델링 프로젝트에 있거나 모델링 프로젝트에서 다른 위치로 복사된 맵을 저장할 때 다음 오류가 발생할 수 있습니다.  
+> 모델링 프로젝트에 있거나 모델링 프로젝트에서 다른 위치로 복사된 맵을 저장할 때 다음 오류가 발생할 수 있습니다.  
 >   
->  "프로젝트 디렉터리 외부에 *fileName* 을 저장할 수 없습니다. 연결된 항목이 지원되지 않습니다."  
+> "프로젝트 디렉터리 외부에 *fileName* 을 저장할 수 없습니다. 연결된 항목이 지원되지 않습니다."  
 >   
->  Visual Studio에서 오류가 표시되지만 저장된 버전이 만들어집니다. 이 오류가 발생하지 않게 하려면 모델링 프로젝트 외부에 맵을 만듭니다. 그런 다음 원하는 위치에 그래프를 저장할 수 있습니다. 파일을 솔루션의 다른 위치에 복사하고 저장해 보는 것으로는 문제가 해결되지 않습니다.  
+> Visual Studio에서 오류가 표시되지만 저장된 버전이 만들어집니다. 이 오류가 발생하지 않게 하려면 모델링 프로젝트 외부에 맵을 만듭니다. 그런 다음 원하는 위치에 그래프를 저장할 수 있습니다. 파일을 솔루션의 다른 위치에 복사하고 저장해 보는 것으로는 문제가 해결되지 않습니다.  
   
-### <a name="export-the-map-as-an-image-so-you-can-copy-it-into-other-applications-such-as-microsoft-word-or-powerpoint"></a>맵을 이미지로 내보내면 Microsoft Word나 PowerPoint 같이 다른 응용 프로그램으로 그래프를 복사할 수 있습니다.  
+### <a name="export-the-map-as-an-image-so-you-can-copy-it-into-other-applications-such-as-microsoft-word-or-powerpoint"></a>맵을 이미지로 내보내면 Microsoft Word나 PowerPoint 같이 다른 애플리케이션으로 그래프를 복사할 수 있습니다.  
   
-1.  코드 맵 도구 모음에서 **공유**, **이미지로 메일 보내기** 또는 **이미지 복사**를 선택합니다.  
+1. 코드 맵 도구 모음에서 **공유**, **이미지로 메일 보내기** 또는 **이미지 복사**를 선택합니다.  
   
-2.  이미지를 다른 응용 프로그램에 붙여넣습니다.  
+2. 이미지를 다른 애플리케이션에 붙여넣습니다.  
   
 ### <a name="export-the-map-as-an-xps-file-so-you-can-see-it-in-xml-or-xaml-viewers-like-internet-explorer"></a>맵을 XPS 파일로 내보내면 Internet Explorer 같이 XML 또는 XAML 뷰어에서 맵을 확인할 수 있습니다.  
   
-1.  코드 맵 도구 모음에서 **공유**, **이미지로 메일 보내기** 또는 **이식 가능한 XPS로 저장**을 선택합니다.  
+1. 코드 맵 도구 모음에서 **공유**, **이미지로 메일 보내기** 또는 **이식 가능한 XPS로 저장**을 선택합니다.  
   
-2.  파일을 저장할 위치를 찾습니다.  
+2. 파일을 저장할 위치를 찾습니다.  
   
-3.  코드 맵 이름을 지정합니다. 있는지 확인 합니다 **형식으로 저장** 로 설정한 **XPS 파일 (\*.xps)** 합니다. **저장**을 선택합니다.  
+3. 코드 맵 이름을 지정합니다. 있는지 확인 합니다 **형식으로 저장** 로 설정한 **XPS 파일 (\*.xps)** 합니다. **저장**을 선택합니다.  
   
 ## <a name="what-else-can-i-do"></a>어떻게 해야 하나요?  
   
--   [코드 맵을 사용하여 응용 프로그램 디버그](../modeling/use-code-maps-to-debug-your-applications.md)  
+- [코드 맵을 사용하여 응용 프로그램 디버그](../modeling/use-code-maps-to-debug-your-applications.md)  
   
--   [디버그하는 동안 호출 스택의 메서드 매핑](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)  
+- [디버그하는 동안 호출 스택의 메서드 매핑](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)  
   
--   [코드 맵 분석기를 사용하여 잠재적 문제 찾기](../modeling/find-potential-problems-using-code-map-analyzers.md)  
+- [코드 맵 분석기를 사용하여 잠재적 문제 찾기](../modeling/find-potential-problems-using-code-map-analyzers.md)  
   
--   [코드 맵 찾아보기 및 다시 정렬](../modeling/browse-and-rearrange-code-maps.md)  
+- [코드 맵 찾아보기 및 다시 정렬](../modeling/browse-and-rearrange-code-maps.md)  
   
--   [DGML 파일을 편집하여 코드 맵 사용자 지정](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
-
-
-
+- [DGML 파일을 편집하여 코드 맵 사용자 지정](../modeling/customize-code-maps-by-editing-the-dgml-files.md)

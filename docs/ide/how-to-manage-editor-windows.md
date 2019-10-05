@@ -1,8 +1,6 @@
 ---
 title: '방법: 편집기 창 관리'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - editor windows
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 340143d4-8a71-490d-823e-162b276f4c6d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3b90db0173275b984c63aa22018ba4ae37328ee
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 8a8b6d1d4c39f09382dd0e4a12660bed31ad9b2d
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446961"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531934"
 ---
 # <a name="how-to-manage-editor-windows"></a>방법: 편집기 창 관리
 
@@ -35,9 +33,9 @@ ms.locfileid: "34446961"
 
 ### <a name="to-split-a-pane"></a>창을 분할하려면
 
-1.  편집기 창 안을 클릭하여 포커스를 지정합니다.
+1. 편집기 창 안을 클릭하여 포커스를 지정합니다.
 
-2.  **창** 메뉴에서 **분할**을 선택합니다.
+2. **창** 메뉴에서 **분할**을 선택합니다.
 
      편집 영역이 분할 막대로 구분된 두 개 창으로 나뉩니다. 이 창을 독립적으로 스크롤하여 활성 문서의 다른 부분을 동시에 보고 편집할 수 있습니다. 하나의 창에서 변경한 내용은 다른 창에 반영됩니다.
 
@@ -46,7 +44,7 @@ ms.locfileid: "34446961"
 
 ### <a name="to-return-to-single-pane-view"></a>단일 창 보기로 돌아가려면
 
--   **창** 메뉴에서 **분할 제거**를 선택합니다.
+- **창** 메뉴에서 **분할 제거**를 선택합니다.
 
 ## <a name="create-new-windows"></a>새 창 만들기
 
@@ -58,6 +56,5 @@ ms.locfileid: "34446961"
 
 ## <a name="see-also"></a>참고 항목
 
-- [편집기 사용자 지정](../ide/customizing-the-editor.md)
 - [코드 편집기의 기능](../ide/writing-code-in-the-code-and-text-editor.md)
 - [창 레이아웃 사용자 지정](../ide/customizing-window-layouts-in-visual-studio.md)

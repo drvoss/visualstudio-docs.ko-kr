@@ -1,14 +1,9 @@
 ---
 title: '방법: 메시지 로그 표시 시작 및 중지 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - message log display, starting
 - logging, starting message log display
@@ -17,13 +12,13 @@ ms.assetid: 3036611c-acf3-42b6-b5d7-1a0c653f6af9
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: adbb69caf7d167849c107806318fce0eae8750b4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d2e31fc094b777b328347bdcd783b69f1539f246
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785484"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "68176549"
 ---
 # <a name="how-to-start-and-stop-the-message-log-display"></a>방법: 메시지 로그 표시 시작 및 중지
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +27,8 @@ ms.locfileid: "51785484"
   
 ### <a name="to-start-the-message-log-display"></a>메시지 로그 표시 시작  
   
-1.  **메시지** 메뉴 선택 **로깅 시작**합니다.  
+1. **메시지** 메뉴 선택 **로깅 시작**합니다.  
   
 ### <a name="to-stop-the-message-log-display"></a>메시지 로그 표시를 중지 하려면  
   
-1.  **메시지** 메뉴 선택 **로깅 중지**합니다.
-
-
-
+1. **메시지** 메뉴 선택 **로깅 중지**합니다.

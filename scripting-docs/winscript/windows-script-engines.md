@@ -2,7 +2,6 @@
 title: Windows 스크립트 엔진 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16e699ee789ae10883152b5d8aa7d8ffee0ddffd
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 1acbc364e9ee2a5a4911564eb6d2c7d4c34de458
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416001"
 ---
 # <a name="windows-script-engines"></a>Windows 스크립트 엔진
 Microsoft Windows 스크립트 엔진을 구현하려면 다음 인터페이스를 지원하는 OLE COM 개체를 만듭니다.  
@@ -29,10 +28,10 @@ Microsoft Windows 스크립트 엔진을 구현하려면 다음 인터페이스�
 |인터페이스|설명|  
 |[IActiveScript](../winscript/reference/iactivescript.md)|기본 스크립팅 기능을 제공합니다. 이 인터페이스의 구현이 필요합니다.|  
 |[IActiveScriptParse](../winscript/reference/iactivescriptparse.md)|스크립트 텍스트를 추가하고, 식을 평가하는 등의 기능을 제공합니다. 이 인터페이스 구현은 선택 사항입니다. 그러나 구현되지 않으면 스크립트 엔진에서 스크립트를 로드하기 위해 IPersist* 인터페이스 중 하나를 구현해야 합니다.|  
-|IPersist*|지속성 지원을 제공합니다. [IActiveScriptParse](../winscript/reference/iactivescriptparse.md)가 구현되지 않은 경우 다음 인터페이스 중 하나 이상을 구현해야 합니다.<br /><br /> IPersistStorage: OBJECT 태그의 DATA={url} 특성 지원을 제공합니다.<br /><br /> IPersistStreamInit: OBJECT 태그의 DATA="string-encoded byte stream" 특성 외에도 `IPersistStorage`와 동일한 지원을 제공합니다.<br /><br /> IPersistPropertyBag: OBJECT 태그의 PARAM= 특성 지원을 제공합니다.|  
+|IPersist*|지속성 지원을 제공합니다. [IActiveScriptParse](../winscript/reference/iactivescriptparse.md)가 구현되지 않은 경우 다음 인터페이스 중 하나 이상을 구현해야 합니다.<br /><br /> IPersistStorage: OBJECT 태그의 DATA={url} 특성 지원을 제공합니다.<br /><br /> IPersistStreamInit: OBJECT 태그의 DATA="string-encoded byte stream" 특성 외에도 `IPersistStorage`와 동일한 지원을 제공합니다.<br /><br /> IPersistPropertyBag: OBJECT 태그의 PARAM= 특성에 대한 지원을 제공합니다.|  
   
 > [!NOTE]
->  `IPersist*`를 통해 스크립트 상태를 저장하거나 복원하기 위해 스크립팅 엔진을 전혀 호출하지 않을 수 있습니다. 대신, [IActiveScriptParse](../winscript/reference/iactivescriptparse.md)는 [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md)를 호출하여 빈 스크립트를 작성하는 데 사용하고, [IActiveScriptParse::AddScriptlet](../winscript/reference/iactivescriptparse-addscriptlet.md)를 사용하여 scriptlet을 이벤트에 추가하고 연결한 다음 [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md)로 일반 코드를 추가합니다. 그런데도 다른 호스트 응용 프로그램에서 사용할 수 있으므로 스크립팅 엔진에서 하나 이상의 `IPersist*` 인터페이스(`IPersistStreamInit`가 선호됨)를 완벽하게 구현해야 합니다.  
+> `IPersist*`를 통해 스크립트 상태를 저장하거나 복원하기 위해 스크립팅 엔진을 전혀 호출하지 않을 수 있습니다. 대신, [IActiveScriptParse](../winscript/reference/iactivescriptparse.md)는 [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md)를 호출하여 빈 스크립트를 작성하는 데 사용하고, [IActiveScriptParse::AddScriptlet](../winscript/reference/iactivescriptparse-addscriptlet.md)를 사용하여 scriptlet을 이벤트에 추가하고 연결한 다음 [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md)로 일반 코드를 추가합니다. 그런데도 다른 호스트 애플리케이션에서 사용할 수 있으므로 스크립팅 엔진에서 하나 이상의 `IPersist*` 인터페이스(`IPersistStreamInit`가 선호됨)를 완벽하게 구현해야 합니다.  
   
  다음 섹션에서는 Windows 스크립팅 엔진 구현에 대해 자세히 설명합니다.  
   
@@ -67,11 +66,11 @@ Microsoft Windows 스크립트 엔진을 구현하려면 다음 인터페이스�
  다음 그림은 스크립팅 엔진이 다양한 상태 전환 중에 수행하는 작업을 보여줍니다.  
   
 ## <a name="scripting-engine-threading"></a>스크립팅 엔진 스레딩  
- Windows 스크립트 엔진은 여러 환경에서 사용할 수 있으므로, 실행 모델을 최대한 유연하게 유지하는 것이 중요합니다. 예를 들어, 서버 기반 호스트는 Windows 스크립트를 효율적인 방식으로 사용하는 동안 다중 스레드 디자인을 유지해야 합니다. 마찬가지로, 일반 응용 프로그램과 같이 스레딩을 사용하지 않는 호스트에는 스레딩 관리의 부담이 없어야 합니다. Windows 스크립트에서는 자유 스레드 스크립팅 엔진이 호스트를 다시 호출할 수 있는 방법을 제한하여 호스트에 이 부담을 주지 않으므로 균형을 맞출 수 있습니다.  
+ Windows 스크립트 엔진은 여러 환경에서 사용할 수 있으므로, 실행 모델을 최대한 유연하게 유지하는 것이 중요합니다. 예를 들어, 서버 기반 호스트는 Windows 스크립트를 효율적인 방식으로 사용하는 동안 다중 스레드 디자인을 유지해야 합니다. 마찬가지로, 일반 애플리케이션과 같이 스레딩을 사용하지 않는 호스트에는 스레딩 관리의 부담이 없어야 합니다. Windows 스크립트에서는 자유 스레드 스크립팅 엔진이 호스트를 다시 호출할 수 있는 방법을 제한하여 호스트에 이 부담을 주지 않으므로 균형을 맞출 수 있습니다.  
   
  서버에서 사용되는 스크립팅 엔진은 일반적으로 자유 스레딩 COM 개체로 구현됩니다. 즉, [IActiveScript](../winscript/reference/iactivescript.md) 인터페이스와 해당 관련 인터페이스의 메서드를 마샬링하지 않고 프로세스의 모든 스레드에서 호출할 수 있습니다. (안타깝게도, 이것은 스크립팅 엔진을 In-process 서버로 구현해야 한다는 점도 나타냅니다. OLE에서 현재 자유 스레드 개체의 프로세스 간 마샬링을 지원하지 않기 때문입니다.) 동기화는 스크립팅 엔진에서 담당합니다. 내부적으로 재진입하지 않는 스크립팅 엔진이나 다중 스레드되지 않은 언어 모델의 경우, 동기화를 수행하기 위해 뮤텍스로 스크립트 엔진에 대한 액세스를 직렬화하기만 하면 됩니다. 물론 [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md)와 같은 특정 메서드는 이 방식으로 직렬화할 수 없으므로 다른 스레드에서 중단 스크립트를 종료해야 합니다.  
   
- 일반적으로 [IActiveScript](../winscript/reference/iactivescript.md)가 자유 스레드라는 점은 대개 [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) 인터페이스와 호스트의 개체 모델도 자유 스레드여야 함을 나타냅니다. 따라서 호스트 구현이 상당히 어려워집니다. 특히 호스트가 개체 모델에 아파트 모델 ActiveX 제어 또는 단일 스레드를 포함하는 단일 스레드 Windows 기반 응용 프로그램인 일반적인 경우에 더욱 그렇습니다. 따라서 스크립팅 엔진에서 [IActiveScriptSite](../winscript/reference/iactivescriptsite.md)를 사용할 때 다음과 같은 제한 사항이 있습니다.  
+ 일반적으로 [IActiveScript](../winscript/reference/iactivescript.md)가 자유 스레드라는 점은 대개 [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) 인터페이스와 호스트의 개체 모델도 자유 스레드여야 함을 나타냅니다. 따라서 호스트 구현이 상당히 어려워집니다. 특히 호스트가 개체 모델에 아파트 모델 ActiveX 제어 또는 단일 스레드를 포함하는 단일 스레드 Windows 기반 애플리케이션인 일반적인 경우에 더욱 그렇습니다. 따라서 스크립팅 엔진에서 [IActiveScriptSite](../winscript/reference/iactivescriptsite.md)를 사용할 때 다음과 같은 제한 사항이 있습니다.  
   
  스크립트 사이트는 항상 호스트 스레드의 컨텍스트에서 호출됩니다. 즉, 스크립팅 엔진은 스크립팅 엔진이 만든 스레드의 컨텍스트에서는 스크립트 사이트를 호출하지 않으며, [IActiveScript](../winscript/reference/iactivescript.md) 및 해당 파생 항목을 통하거나, 노출된 스크립팅 엔진의 디스패치 개체를 통하거나, Windows 메시지를 통하거나, 호스트의 개체 모델에 있는 이벤트 소스에서 호출된 스크립팅 엔진 메서드에서만 호출합니다.  
   

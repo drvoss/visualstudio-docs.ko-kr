@@ -1,14 +1,9 @@
 ---
 title: SccDirQueryInfo 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccDirQueryInfo
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 459e2d99-573d-47c4-b834-6d82c5e14162
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f2df4dd52ff9984059eb28f21edf49b9db741358
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7334ddd1ce6c7f9feac63253246e55b65121e18b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784899"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432448"
 ---
 # <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,9 +64,8 @@ LPLONG  lpStatus
  IDE는 해당 프로젝트에 있는지를 쿼리하여 디렉터리는 소스 제어 하는지 여부를 확인 하려면 디렉터리 이름이 전에이 함수를 사용 합니다. 소스 제어에서 디렉터리가 없는 경우 IDE는 사용자에 게 적절 한 경고를 제공할 수 있습니다.  
   
 > [!NOTE]
->  소스 제어 플러그 인을 하나 이상 상태 값은 구현 하지 하기로 구현 되지 않은 비트를 0으로 설정 되어야 합니다.  
+> 소스 제어 플러그 인을 하나 이상 상태 값은 구현 하지 하기로 구현 되지 않은 비트를 0으로 설정 되어야 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [원본 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)   
  [디렉터리 상태 코드](../extensibility/directory-status-code-enumerator.md)
-

@@ -1,23 +1,21 @@
 ---
 title: Python 코드 서식 지정
 description: Visual Studio는 간격, 명령문, 래핑 및 주석을 포함하여 Python 코드를 자동으로 다시 포맷할 수 있습니다.
-ms.date: 10/28/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 452dc1104147e5b29dd38790cbfa726ad0de7b1f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 6e95d05c3fbc0dd46d235c7480bd4a9caa48947e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052195"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957539"
 ---
 # <a name="format-python-code"></a>Python 코드 서식 지정
 
@@ -45,8 +43,8 @@ Visual Studio에서는 미리 구성된 서식 옵션과 일치하도록 빠르�
 다양한 옵션에 대한 예제가 다음 표에 나와 있습니다.
 
 | 클래스 정의 옵션 | 선택한 상태 | 선택 취소됨 |
-| --- | --- | --- | 
-| **클래스 선언의 이름과 기본 목록 사이에 공백 삽입** | `class X (object): pass` | `class X(object): pass` | 
+| --- | --- | --- |
+| **클래스 선언의 이름과 기본 목록 사이에 공백 삽입** | `class X (object): pass` | `class X(object): pass` |
 | **기본 목록 괄호 내에 공백 삽입** | `class X( object ): pass` | `class X(object): pass` |
 | **빈 기본 목록 괄호 내에 공백 삽입** | `class X( ): pass` | `class X(): pass` |
 
@@ -54,7 +52,7 @@ Visual Studio에서는 미리 구성된 서식 옵션과 일치하도록 빠르�
 
 | 함수 정의 옵션 | 선택한 상태 | 선택 취소됨 |
 | --- | --- | --- |
-| **함수 선언의 이름과 매개 변수 목록 사이에 공백 삽입** | `def X (): pass` | `def X(): pass` | 
+| **함수 선언의 이름과 매개 변수 목록 사이에 공백 삽입** | `def X (): pass` | `def X(): pass` |
 | **매개 변수 목록 괄호 내에 공백 삽입** | `def X( a, b ): pass` | `def X(a, b): pass` |
 | **빈 매개 변수 목록 괄호 내에 공백 삽입** | `def X( ): pass` | `def X(): pass` |
 | **기본 매개 변수 값의 '=' 주위에 공백 삽입** | `includes X(a = 42): pass` | `includes X(a=42): pass` |

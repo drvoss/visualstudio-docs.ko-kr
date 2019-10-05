@@ -3,22 +3,20 @@ title: Visual Studio, 1단계, Django 기본 사항에서 Django 자습서 알�
 titleSuffix: ''
 description: Visual Studio 프로젝트 컨텍스트에서 Django 기본 사항을 검토하는 연습 과정으로, Django 개발을 위해 Visual Studio에서 제공하는 지원을 설명합니다.
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 549bd552cee0d9b833d1dee36f29f3a36b3f5f07
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b41ed3901cd4ad18a1b52ddbdc7ee6fd82cb5380
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62962262"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>자습서: Visual Studio에서 Django 웹 프레임워크 시작
 
@@ -36,7 +34,7 @@ ms.locfileid: "53061082"
 
 ## <a name="prerequisites"></a>전제 조건
 
-- 다음 옵션을 포함하는 Windows의 Visual Studio 2017:
+- 다음 옵션을 포함하는 Windows의 Visual Studio 2017 이상:
   - **Python 개발** 워크로드(설치 관리자의 **워크로드**) 자세한 내용은 [Visual Studio에서 Python 지원 설치](installing-python-support-in-visual-studio.md)를 참조하세요.
   - **코드 도구**의 **개별 구성 요소** 탭에 있는 **Git for Windows** 및 **Visual Studio용 GitHub 확장**
 
@@ -46,9 +44,9 @@ Django 프로젝트 템플릿은 Visual Studio용 Python 도구의 모든 이전
 
 ### <a name="visual-studio-projects-and-django-projects"></a>“Visual Studio 프로젝트” 및 “Django 프로젝트”
 
-Django 용어에서 “Django 프로젝트”는 전체 웹 응용 프로그램을 만들기 위해 웹 호스트에 배포하는 하나 이상의 “앱”과 함께 여러 개의 사이트 수준 구성 파일로 구성됩니다. Django 프로젝트에는 여러 앱이 포함될 수 있으며, 동일한 앱이 여러 Django 프로젝트에 있을 수 있습니다.
+Django 용어에서 “Django 프로젝트”는 전체 웹 애플리케이션을 만들기 위해 웹 호스트에 배포하는 하나 이상의 “앱”과 함께 여러 개의 사이트 수준 구성 파일로 구성됩니다. Django 프로젝트에는 여러 앱이 포함될 수 있으며, 동일한 앱이 여러 Django 프로젝트에 있을 수 있습니다.
 
-Visual Studio 프로젝트에는 여러 앱과 함께 Django 프로젝트가 포함될 수 있습니다. 간단한 설명을 위해 이 자습서에서 “프로젝트”라고만 하면 Visual Studio 프로젝트를 나타내는 것입니다. 웹 응용 프로그램의 “Django 프로젝트” 부분을 나타낼 때는 명확하게 “Django 프로젝트”를 사용합니다.
+Visual Studio 프로젝트에는 여러 앱과 함께 Django 프로젝트가 포함될 수 있습니다. 간단한 설명을 위해 이 자습서에서 “프로젝트”라고만 하면 Visual Studio 프로젝트를 나타내는 것입니다. 웹 애플리케이션의 “Django 프로젝트” 부분을 나타낼 때는 명확하게 “Django 프로젝트”를 사용합니다.
 
 이 자습서의 과정에서는 별도의 Django 프로젝트 세 개가 포함된 단일 Visual Studio 솔루션을 만들며, 각 프로젝트에는 단일 Django 앱이 포함됩니다. 프로젝트를 동일한 솔루션에 유지하면 서로 다른 파일 간에 쉽게 전환하여 비교할 수 있습니다.
 
@@ -67,7 +65,7 @@ Visual Studio 프로젝트에는 여러 앱과 함께 Django 프로젝트가 포
     - **솔루션**: 이 컨트롤을 기본 **새 솔루션 만들기** 옵션으로 설정된 상태로 둡니다.
     - **솔루션 이름**: 이 자습서의 여러 프로젝트에 대한 컨테이너로 솔루션에 적합한 **LearningDjango**로 설정합니다.
     - **솔루션용 디렉터리 만들기**: 설정을 그대로 둡니다(기본값).
-    - **새 Git 리포지토리 만들기**: Visual Studio에서 솔루션을 만들 때 로컬 Git 리포지토리를 만들도록 이 옵션(기본적으로 선택 취소되어 있음)을 선택합니다. 이 옵션이 표시되지 않으면 Visual Studio 2017 설치 프로그램을 실행하고 **코드 도구**의 **개별 구성 요소** 탭에 **Windows용 Git** 및 **Visual Studio용 GitHub 확장**을 추가합니다.
+    - **새 Git 리포지토리 만들기**: Visual Studio에서 솔루션을 만들 때 로컬 Git 리포지토리를 만들도록 이 옵션(기본적으로 선택 취소되어 있음)을 선택합니다. 이 옵션이 표시되지 않으면 Visual Studio 설치 관리자를 실행하고 **코드 도구** 아래의 **개별 구성 요소** 탭에 **Windows용 Git** 및 **Visual Studio용 GitHub 확장**을 추가합니다.
 
 1. 잠시 후 Visual Studio에는 **이 프로젝트에는 외부 패키지가 필요합니다.** 라는 대화 상자가 표시됩니다(아래 표시). 이 대화 상자는 템플릿에 최신 Django 1.x 패키지를 참조하는 *requirements.txt* 파일이 포함되어 있기 때문에 나타납니다. 정확한 종속성을 확인하려면 **필수 패키지 표시**를 선택하세요.
 
@@ -149,7 +147,7 @@ Visual Studio 프로젝트에는 여러 앱과 함께 Django 프로젝트가 포
 
 ### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>질문: 가상 환경을 만들려는 이유는 무엇인가요?
 
-대답: 가상 환경은 앱의 정확한 종속성을 격리하는 좋은 방법입니다. 이러한 격리는 전역 Python 환경 내에서 충돌을 방지하고 테스트 및 공동 작업을 지원합니다. 시간에 따라 앱을 개발하면서 여러 유용한 Python 패키지가 동일하게 표시됩니다. 프로젝트별 가상 환경에 패키지를 유지하면 소스 제어에 포함되어 있는, 해당 환경을 설명하는 프로젝트의 *requirements.txt* 파일을 쉽게 업데이트할 수 있습니다. 빌드 서버, 배포 서버 및 기타 개발 컴퓨터를 포함하여 다른 컴퓨터에 프로젝트를 복사하는 경우 *requirements.txt*만 사용하여 환경을 다시 만들기가 수월합니다. 따라서 환경이 소스 제어에 있을 필요가 없습니다. 자세한 내용은 [가상 환경 사용](selecting-a-python-environment-for-a-project.md#use-virtual-environments)을 참조하세요.
+대답: 가상 환경은 앱의 정확한 종속성을 격리하는 좋은 방법입니다. 이러한 격리는 전역 Python 환경 내에서 충돌을 방지하고 테스트 및 협업을 지원합니다. 시간에 따라 앱을 개발하면서 여러 유용한 Python 패키지가 동일하게 표시됩니다. 프로젝트별 가상 환경에 패키지를 유지하면 소스 제어에 포함되어 있는, 해당 환경을 설명하는 프로젝트의 *requirements.txt* 파일을 쉽게 업데이트할 수 있습니다. 빌드 서버, 배포 서버 및 기타 개발 컴퓨터를 포함하여 다른 컴퓨터에 프로젝트를 복사하는 경우 *requirements.txt*만 사용하여 환경을 다시 만들기가 수월합니다. 따라서 환경이 소스 제어에 있을 필요가 없습니다. 자세한 내용은 [가상 환경 사용](selecting-a-python-environment-for-a-project.md#use-virtual-environments)을 참조하세요.
 
 ### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>질문: 소스 제어에 이미 커밋된 가상 환경을 제거하려면 어떻게 해야 하나요?
 

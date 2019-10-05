@@ -2,7 +2,6 @@
 title: ISetNextStatement::CanSetNextStatement | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,19 +15,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5bd32ddf73076f9e29ca3377186ff64be256b8fc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: eb65faaf107c42b44201ea18c1150f8093b1654c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733743"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786617"
 ---
 # <a name="isetnextstatementcansetnextstatement"></a>ISetNextStatement::CanSetNextStatement
-이 메서드는 지정된 된 위치에 실행할 코드의 다음 문으로 결정 하는 실행 위치를 설정할 수 있는지 여부를 결정 합니다.  
+이 메서드는 지정된 된 위치에 결정 실행할 코드의 다음 문을 실행 위치를 설정할 수 있는지 여부를 결정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT CanSetNextStatement(  
    IDebugStackFrame*  pStackFrame,  
    IDebugCodeContext*  pCodeContext  

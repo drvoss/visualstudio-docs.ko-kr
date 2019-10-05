@@ -2,22 +2,20 @@
 title: F# 도구
 description: F#에서 지원되는 Visual Studio의 기능에 대해 알아봅니다.
 ms.date: 07/11/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - F# features [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4512a6ad5efe519c203a764b18cdfc352ed6e81a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fef50748942aaa800cf1181e4c8f8b8a030f99ee
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921433"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211307"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Visual F#을 사용하여 Visual Studio에서 개발
 
@@ -43,14 +41,14 @@ Visual Studio의 F#에서 다양한 프로젝트 및 항목 템플릿을 사용�
 
 다음 표에 F#에 대한 프로젝트 속성의 기능이 요약되어 있습니다.
 
-|프로젝트 설정|F#에서 지원되는지 여부|노트|
+|프로젝트 설정|F#에서 지원되는지 여부|메모|
 |---------------|----------------|-----|
 |리소스 파일|예||
 |빌드, 디버그 및 참조 설정|예||
 |다중 대상 지정|예||
 |아이콘 및 매니페스트|아니요|컴파일러 명령줄 옵션을 통해 사용할 수 있습니다.|
 |ASP.NET 클라이언트 서비스|아니요||
-|ClickOnce|아니요|해당하는 경우에 다른 .NET Framework 언어에서 클라이언트 프로젝트를 사용합니다.|
+|ClickOnce|아니요|해당하는 경우에 다른 .NET 언어에서 클라이언트 프로젝트를 사용합니다.|
 |강력한 이름 지정|아니요|컴파일러 명령줄 옵션을 통해 사용할 수 있습니다.|
 |어셈블리 게시 및 버전 관리|아니요||
 |코드 분석|아니요|코드 분석 도구를 수동으로 또는 빌드 후 명령의 일부로 실행할 수 있습니다.|
@@ -62,13 +60,13 @@ Visual Studio의 F#에서 다양한 프로젝트 및 항목 템플릿을 사용�
 
 |프로젝트 디자이너 페이지|관련 링크|설명|
 | - |-------------|-----------|
-|응용 프로그램|[응용 프로그램 페이지, 프로젝트 디자이너](reference/application-page-project-designer-csharp.md)|라이브러리 또는 실행 파일을 만드는지 여부, 응용 프로그램이 대상으로 지정하는 .NET Framework의 버전 및 응용 프로그램이 사용하는 리소스 파일이 저장되는 위치에 대한 정보와 같은 응용 프로그램 수준 설정 및 속성을 지정할 수 있습니다.|
+|애플리케이션|[애플리케이션 페이지, 프로젝트 디자이너](reference/application-page-project-designer-csharp.md)|라이브러리 또는 실행 파일을 만드는지 여부, 애플리케이션이 대상으로 지정하는 .NET의 버전 및 애플리케이션이 사용하는 리소스 파일이 저장되는 위치에 대한 정보와 같은 애플리케이션 수준 설정 및 속성을 지정할 수 있습니다.|
 |빌드|[프로젝트 디자이너, 빌드 페이지](reference/build-page-project-designer-csharp.md)|코드가 컴파일되는 방식을 제어할 수 있습니다.|
 |빌드 이벤트|[빌드 이벤트 페이지, 프로젝트 디자이너](reference/build-events-page-project-designer-csharp.md)|컴파일 전후에 실행할 명령을 지정할 수 있습니다.|
-|디버그|[프로젝트 디자이너, 디버그 페이지](reference/debug-page-project-designer.md)|디버깅하는 동안 응용 프로그램 실행 방식을 제어할 수 있습니다. 사용할 명령 및 응용 프로그램의 시작 디렉터리, 네이티브 코드 및 SQL과 같이 활성화하려는 특수한 디버깅 모드가 포함됩니다.|
-|패키지(.NET SDK에만 해당)|N/A|NuGet 패키지로 게시하려는 경우 NuGet 패키지 메타데이터를 정의할 수 있습니다.|
+|디버그|[프로젝트 디자이너, 디버그 페이지](reference/debug-page-project-designer.md)|디버깅하는 동안 애플리케이션 실행 방식을 제어할 수 있습니다. 사용할 명령 및 애플리케이션의 시작 디렉터리, 네이티브 코드 및 SQL과 같이 활성화하려는 특수한 디버깅 모드가 포함됩니다.|
+|패키지(.NET SDK에만 해당)|해당 사항 없음|NuGet 패키지로 게시하려는 경우 NuGet 패키지 메타데이터를 정의할 수 있습니다.|
 |참조 경로|[프로젝트에서 참조 관리](managing-references-in-a-project.md)|코드가 사용하는 어셈블리를 검색할 위치를 지정할 수 있습니다.|
-|리소스(.NET SDK에만 해당)|N/A|기본 리소스 파일을 생성하고 관리할 수 있습니다.|
+|리소스(.NET SDK에만 해당)|해당 사항 없음|기본 리소스 파일을 생성하고 관리할 수 있습니다.|
 
 ### <a name="f-specific-settings"></a>F# - 특정 설정
 
@@ -91,7 +89,7 @@ Visual Studio 코드 및 텍스트 편집기의 다음 기능은 F#에서 지원
 |들여쓰기 변경|선택한 줄을 들여쓰거나 내어씁니다.|예|
 |스마트 들여쓰기|F# 범위 지정 규칙에 따라 커서를 자동으로 들여쓰고 들여쓰기를 취소합니다.|예|
 |[텍스트 찾기 및 바꾸기](finding-and-replacing-text.md)|파일, 프로젝트 또는 솔루션에서 검색하고 잠재적으로 텍스트를 변경할 수 있습니다.|예|
-|.NET Framework API에 대한 정의로 이동|.NET Framework API에 커서를 놓으면 .NET Framework 메타데이터에서 생성된 코드를 보여 줍니다.|아니요|
+|.NET API에 대한 정의로 이동|.NET API에 커서를 놓으면 .NET 메타데이터에서 생성된 코드를 보여 줍니다.|아니요|
 |사용자 정의 API에 대한 정의로 이동|지정한 프로그램 엔터티에 커서를 놓으면 엔터티가 정의된 위치의 코드에서 해당 위치로 커서를 이동합니다.|예|
 |줄 이동|줄 번호에 따라 파일에서 특정 줄로 이동할 수 있습니다.|예|
 |파일의 위쪽에 있는 탐색 모음|함수 이름과 같은 코드에 있는 위치로 점프할 수 있습니다.|예|
@@ -148,7 +146,7 @@ IntelliSense에 대한 일반적인 정보는 [IntelliSense 사용](using-intell
 |한 단계씩 코드 실행|실행을 발전시키고 함수 호출으로 이동할 수 있습니다.|예|
 |프로시저 단위 실행|현재 스택 프레임에서 실행하면서 지난 함수 호출로 이동할 수 있습니다.|예|
 
-Visual Studio 디버거에 대한 일반적인 정보는 [Visual Studio의 디버깅](../debugger/index.md)을 참조하세요.
+Visual Studio 디버거에 대한 일반적인 정보는 [Visual Studio의 디버깅](../debugger/index.yml)을 참조하세요.
 
 ## <a name="additional-tools"></a>추가 도구
 
@@ -166,7 +164,7 @@ Visual Studio 디버거에 대한 일반적인 정보는 [Visual Studio의 디�
 |성능 분석|코드의 성능을 측정하기 위한 도구를 제공합니다.|예|
 |속성 창|포커스가 있는 개발 환경에서 개체의 속성 편집을 표시하고 사용하도록 설정합니다.|예|
 |서버 탐색기|다양한 서버 리소스와 상호 작용하는 방법을 제공합니다.|예|
-|솔루션 탐색기|프로젝트 및 파일을 보고 관리할 수 있습니다.|예|
+|Controllers\HomeController.cs|프로젝트 및 파일을 보고 관리할 수 있습니다.|예|
 |작업 목록|코드와 관련된 작업 항목을 관리할 수 있습니다.|아니요|
 |테스트 프로젝트|코드를 테스트하는 데 도움이 되는 기능을 제공합니다.|아니요|
 |도구 상자|텍스트 또는 코드의 섹션 및 컨트롤과 같이 끌기 가능한 개체를 포함하는 탭을 표시합니다.|예|

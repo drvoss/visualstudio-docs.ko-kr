@@ -1,27 +1,31 @@
 ---
 title: Azure App Service에 게시
-ms.custom: ''
-ms.date: 06/22/2018
-ms.technology: vs-ide-deployment
+ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
 ms.assetid: fc82b1f1-d342-4b82-9a44-590479f0a895
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: a8de7175b33a91c310da4b3d6d9e4c05c40c3522
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: d1703fb5386c7b29446b621d2e83f9486e93dd3d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341692"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679269"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Visual Studio를 사용하여 Azure App Service에 웹앱 게시
 
-**게시** 도구를 사용하여 Azure App Service 또는 Azure App Service Linux에 ASP.NET, ASP.NET Core, Node.js 및 .NET Core 앱을 게시할 수 있습니다(컨테이너를 사용하여). Python 앱의 경우 [Python - Azure App Service에 게시](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)의 단계를 따릅니다.
+ASP.NET, ASP.NET Core, Node.js 및 .NET Core 앱의 경우, 다음 방법 중 하나를 사용하여 Azure App Service 또는 Azure App Service Linux(컨테이너 사용)에 게시합니다.
+
+* 연속(또는 자동) 배포 앱의 경우 Azure DevOps를 [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops)과 함께 사용합니다.
+
+* 일회성(또는 수동) 배포 앱의 경우 Visual Studio의 **게시** 도구를 사용하여 ASP.NET, ASP.NET Core, Node.js 및 .NET Core 앱을 Azure App Service 또는 Linux용 App Service(컨테이너 사용)에 배포합니다. Python 앱의 경우 [Python - Azure App Service에 게시](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)의 단계를 따릅니다.
+
+이 문서에서는 일회성 배포를 위해 **게시** 도구를 사용하는 방법을 설명합니다.
 
 [!INCLUDE [quickstart-prereqs-azure](includes/quickstart-prereqs-azure.md)]
 

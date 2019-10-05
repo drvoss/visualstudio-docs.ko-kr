@@ -2,7 +2,6 @@
 title: IActiveScriptProperty | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,15 +13,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 13603bf00d758a99ba421c4ed2ef23ed30f3c25b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 62b0d49ea4ebccfe70955c2f5315918807121447
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992783"
 ---
 # <a name="iactivescriptproperty"></a>IActiveScriptProperty
-`IActiveScriptProperty` 인터페이스 가져오고 구성 속성을 설정 하는 데 사용 됩니다.  
+`IActiveScriptProperty` 인터페이스를 사용을 가져오고 구성 속성을 설정 합니다.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
   

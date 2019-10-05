@@ -1,14 +1,9 @@
 ---
 title: SccAddFilesFromSCC 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccAddFilesFromSCC
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: f21a3500-ade8-4dd8-8647-10e2179be9c1
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 537ec62d6bd504a588a70931a7c66e20989fd9f2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d5af748c9180644cae928d1b6db3a3f880b6b286
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805605"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200913"
 ---
 # <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,14 +71,13 @@ SCCRTN SccAddFilesFromSCC(
 ## <a name="return-value"></a>반환 값  
  원본 제어 플러그 인이 함수의 구현은 다음 값 중 하나를 반환 하:  
   
-|값|설명|  
+|값|Description|  
 |-----------|-----------------|  
 |SCC_E_PROJNOTOPEN|프로젝트 열려 있지 않습니다.|  
 |SCC_E_OPNOTPERFORMED|연결에 지정 된 대로 동일한 프로젝트에 아닙니다. `lpAuxProjPath.`|  
 |SCC_E_NOTAUTHORIZED|사용자는 데이터베이스를 업데이트할 권한이 없습니다.|  
-|SCC_E_NONSPECIFICERROR|알 수 없는 오류가 발생 했습니다.|  
+|SCC_E_NONSPECIFICERROR|알 수 없는 오류입니다.|  
 |SCC_I_RELOADFILE|파일 또는 프로젝트 다시 로드 해야 합니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
-

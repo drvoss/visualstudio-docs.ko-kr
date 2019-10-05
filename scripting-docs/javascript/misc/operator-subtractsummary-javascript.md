@@ -1,29 +1,23 @@
 ---
-title: 연산자 요약 (JavaScript) | Microsoft Docs
-ms.custom: ''
+title: 연산자 개요 (JavaScript) | Microsoft Docs
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 3bc55336-912f-4ff8-8d28-1e26e0144840
-caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 302ad9c9a853fb7ed7f24de9669d0cc7a66195aa
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: dadd47684978bf4be6c9029646d4b6041cb431ee
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2018
-ms.locfileid: "29753577"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006481"
 ---
 # <a name="operator-summary-javascript"></a>연산자 개요(JavaScript)
 다음 테이블은 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 해당 범주에는 연산자입니다.  
@@ -36,7 +30,7 @@ ms.locfileid: "29753577"
 |[감소](../../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
 |[나누기](../../javascript/reference/division-operator-decrement-javascript.md)|/|  
 |[증분](../../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
-|[Remainder](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
+|[나머지](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
 |[곱하기](../../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
 |[빼기](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
 |[단항 부정](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  

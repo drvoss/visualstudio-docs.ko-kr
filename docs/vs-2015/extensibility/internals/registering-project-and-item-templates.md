@@ -1,14 +1,9 @@
 ---
 title: 프로젝트 및 항목 템플릿 등록 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], adding items
 - registry, Add New Item dialog box
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 06a9840680c76103373cde00ac37310bb6138095
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: a06e7a292d960e675ad4b0de97499557542fef1c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185832"
 ---
 # <a name="registering-project-and-item-templates"></a>프로젝트 템플릿 및 항목 템플릿 등록
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,7 +57,7 @@ ms.locfileid: "51764292"
 "SortPriority"=dword:00000064  
 ```  
   
-|이름|형식|설명|  
+|이름|형식|Description|  
 |----------|----------|-----------------|  
 |@|REG_SZ|항목 추가 템플릿에 대 한 리소스 ID입니다.|  
 |TemplatesDir|REG_SZ|에 대 한 대화 상자에서 표시 된 프로젝트 항목의 경로 **새 항목 추가** 마법사.|  
@@ -89,7 +84,7 @@ ms.locfileid: "51764292"
 "SortPriority"=dword:00000064  
 ```  
   
-|이름|형식|설명|  
+|이름|형식|Description|  
 |----------|----------|-----------------|  
 |CommonFindFilesFilter|REG_DWORD|공통 필터 중 하나에서 필터를 사용 하면 합니다 **파일에서 찾기** 대화 상자. 공통 필터는 필터 일반적으로 표시 되지 전에 필터 목록에 나열 됩니다.|  
 |CommonOpenFilesFilter|REG_DWORD|공통 필터 중 하나에서 필터를 사용 하면 합니다 **열려 있는 파일** 대화 상자. 공통 필터는 필터 일반적으로 표시 되지 전에 필터 목록에 나열 됩니다.|  
@@ -117,15 +112,14 @@ ms.locfileid: "51764292"
   
  \Form  
   
- \Web 페이지  
+ \Web Page  
   
  \HelperFiles (다중 파일 프로젝트 항목에 사용 되는 파일 포함)  
   
  \WizardFiles  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [프로젝트 및 프로젝트 항목 템플릿 추가](../../extensibility/internals/adding-project-and-project-item-templates.md)   
  [마법사](../../extensibility/internals/wizards.md)   
  [응용 프로그램 지역화](../../ide/localizing-applications.md)   
  [일반적으로 프로젝트를 확장하는 데 사용되는 개체에 대한 CATID](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
-

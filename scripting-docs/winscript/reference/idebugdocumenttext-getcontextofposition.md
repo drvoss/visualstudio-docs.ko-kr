@@ -2,7 +2,6 @@
 title: IDebugDocumentText::GetContextOfPosition | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f1be8bb6d350a2ca68912622396af52f1625985a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: df63362c422289652d45ed4bbc80f117e17fb73c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008719"
 ---
 # <a name="idebugdocumenttextgetcontextofposition"></a>IDebugDocumentText::GetContextOfPosition
 제공 된 문자 위치 범위에 해당 하는 문서 컨텍스트 개체를 만듭니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetContextOfPosition(  
    ULONG                    cCharacterPosition,  
    ULONG                    cNumChars,  
@@ -40,7 +39,7 @@ HRESULT GetContextOfPosition(
   
 #### <a name="parameters"></a>매개 변수  
  `cCharacterPosition`  
- [in] 시작 문자 위치 범위의 위치입니다.  
+ [in] 시작 문자 위치 범위의 위치 합니다.  
   
  `cNumChars`  
  [in] 범위에 있는 문자의 수입니다.  

@@ -1,27 +1,22 @@
 ---
 title: 원본 제어 플러그 인 용어집 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - glossary [Visual Studio SDK]
 - source control plug-ins, glossary
 ms.assetid: f224bbc9-38fc-4c80-ab09-51dcc8969f8e
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9535987cc729c78c7d72ee9f51529aeb91b59450
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f5120a5c6678cac32ef65e08ef7dc34649364cf9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160601"
 ---
 # <a name="source-control-plug-in-glossary"></a>소스 제어 플러그 인 용어집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "51732281"
  클라이언트  
  소스 코드 제어 시스템을 사용 하는 프로그램입니다. 이 문서에서는 Visual Studio IDE는 것입니다.  
   
- 주석  
+ 설명  
  소스 제어 작업을 수행할 때 사용자 수정 버전을 연결할 수 있는 변경 내용을 설명 하는 메시지입니다.  
   
  충돌  
@@ -59,7 +54,7 @@ ms.locfileid: "51732281"
  병합  
  프로세스 중 두 개 이상의 소스 코드 파일 결합 되어 이전 파일에서 모든 기능을 통합 하는 새 파일입니다. 이 개념은 여기서 두 개 이상의 개발자가 작업 파일에 동시에 버전 제어에서 중요 합니다.  
   
- 프로젝트  
+ Project  
  소스 제어 폴더는 프로젝트 라고도 합니다. Visual Studio에서 프로젝트 또는 솔루션을 사용 하 여 관계가 없습니다.  
   
  플러그 인  
@@ -68,9 +63,8 @@ ms.locfileid: "51732281"
  리포지토리  
  원본 시스템을 제어 하는 경우 마스터 복사본을 프로젝트의 전체 수정 기록을 저장 합니다. 각 프로젝트에는 정확히 하나의 저장소를 있습니다.  
   
- 수정 버전  
+ Revision  
  파일의 기록 또는 파일 집합에는 커밋된 변경 내용. 수정 버전 하나인 지속적으로 변화는 프로젝트의 스냅숏.  
   
 ## <a name="see-also"></a>참고 항목  
  [소스 제어 플러그 인](../extensibility/source-control-plug-ins.md)
-

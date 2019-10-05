@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], developing
 - Web Parts [SharePoint development in Visual Studio], creating
 - Web Parts [SharePoint development in Visual Studio], designing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f2c851659d09cc118f8f54b6e82bb3b806d7e34
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 622dfafbe16efee1e953fbc42bfa3b94cfa3cc58
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965273"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>연습: SharePoint 용 웹 파트 만들기
 
@@ -214,9 +214,9 @@ ms.locfileid: "53944287"
 
      모든 직원에 게 웹 파트에 표시 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[SharePoint 용 웹 파트 만들기](../sharepoint/creating-web-parts-for-sharepoint.md)  
-[방법: SharePoint 웹 파트 만들기](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
-[방법: 디자이너를 사용 하 여 SharePoint 웹 파트 만들기](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)  
+[SharePoint 용 웹 파트를 만들](../sharepoint/creating-web-parts-for-sharepoint.md)
+[방법: SharePoint 웹 파트를 만듭니다](../sharepoint/how-to-create-a-sharepoint-web-part.md)
+[방법: 디자이너를 사용 하 여 SharePoint 웹 파트를 만듭니다](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)
 [연습: 디자이너를 사용 하 여 SharePoint 용 웹 파트 만들기](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)

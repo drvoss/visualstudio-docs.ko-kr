@@ -2,7 +2,6 @@
 title: IRemoteDebugApplicationEvents::OnCreateThread | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3eb78f96d2621eac3794ba5c7c017590a775bd8e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 64317666fe5c449207c2eedac550ca6a1effc1ab
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943628"
 ---
 # <a name="iremotedebugapplicationeventsoncreatethread"></a>IRemoteDebugApplicationEvents::OnCreateThread
-Create 스레드 이벤트를 처리합니다.  
+만들기 스레드 이벤트를 처리합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT OnCreateThread(  
    IRemoteDebugApplicationThread*  prdat  
 );  
@@ -38,7 +37,7 @@ HRESULT OnCreateThread(
   
 #### <a name="parameters"></a>매개 변수  
  `prdat`  
- [in] 새로 만든된 스레드입니다.  
+ [in] 새로 생성된 된 스레드입니다.  
   
 ## <a name="return-value"></a>반환 값  
  이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  

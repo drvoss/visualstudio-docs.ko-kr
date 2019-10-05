@@ -2,7 +2,6 @@
 title: IObjectIdentity::IsEqualObject | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 52e386055e458568f8d4076a37489b7b2397f399
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c215a15a1239f07272079783366a1617c3a626e2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944884"
 ---
 # <a name="iobjectidentityisequalobject"></a>IObjectIdentity::IsEqualObject
-개체는 현재 개체와 같은지 확인 합니다.  
+개체는 현재 개체와 같은지 여부를 결정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT IsEqualObject(  
   IUnknown*punk  
 );  
@@ -46,10 +45,10 @@ HRESULT IsEqualObject(
 |값|설명|  
 |-----------|-----------------|  
 |`S_OK`|개체가 동일 합니다.|  
-|`S_FALSE`|개체가 같지 않습니다.|  
+|`S_FALSE`|개체가 다릅니다.|  
   
 ## <a name="remarks"></a>설명  
- 구현에서 `IsEqualObject` 메서드를 반환 하도록 `S_OK` 개체가 동일한 경우에 합니다.  
+ 구현의 합니다 `IsEqualObject` 메서드는 반환 해야 `S_OK` 개체가 동일한 경우에 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IObjectIdentity 인터페이스](../../winscript/reference/iobjectidentity-interface.md)

@@ -1,14 +1,9 @@
 ---
 title: BP_LOCATION | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - BP_LOCATION
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: ed1e874c-f289-4c31-8b6c-04dde03ad0f5
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6e154fe6b1121855e50c32b342c3c11566cbcd03
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2a3e5f690a679118c7bb02c110d6e5d066a2bd0d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153390"
 ---
 # <a name="bplocation"></a>BP_LOCATION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -62,25 +57,25 @@ public struct BP_LOCATION {
  값을 [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) 해석 하는 데 사용 하는 열거형을 `bpLocation` union 또는 `unionmemberX` 멤버.  
   
  `bpLocation`.`bplocCodeFileLine`  
- [C + + 전용] 포함 된 [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md) 하는 경우 구조체 `bpLocationType`  =  `BPLT_CODE_FILE_LINE`합니다.  
+ [C++ 만] 포함 된 [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md) 하는 경우 구조체 `bpLocationType`  =  `BPLT_CODE_FILE_LINE`합니다.  
   
  `bpLocation.bplocCodeFuncOffset`  
- [C + + 전용] 포함 된 [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) 하는 경우 구조체 `bpLocationType`  =  `BPLT_CODE_FUNC_OFFSET`합니다.  
+ [C++ 만] 포함 된 [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) 하는 경우 구조체 `bpLocationType`  =  `BPLT_CODE_FUNC_OFFSET`합니다.  
   
  `bpLocation.bplocCodeContext`  
- [C + + 전용] 포함 된 [BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md) 하는 경우 구조체 `bpLocationType`  =  `BPLT_CODE_CONTEXT`합니다.  
+ [C++ 만] 포함 된 [BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md) 하는 경우 구조체 `bpLocationType`  =  `BPLT_CODE_CONTEXT`합니다.  
   
  `bpLocation.bplocCodeString`  
- [C + + 전용] 포함 된 [BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md) 하는 경우 구조체 `bpLocationType`  =  `BPLT_CODE_STRING`합니다.  
+ [C++ 만] 포함 된 [BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md) 하는 경우 구조체 `bpLocationType`  =  `BPLT_CODE_STRING`합니다.  
   
  `bpLocation.bplocCodeAddress`  
- [C + + 전용] 포함 된 [BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md) 하는 경우 구조체 `bpLocationType`  =  `BPLT_CODE_ADDRESS`합니다.  
+ [C++ 만] 포함 된 [BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md) 하는 경우 구조체 `bpLocationType`  =  `BPLT_CODE_ADDRESS`합니다.  
   
  `bpLocation.bplocDataString`  
- [C + + 전용] 포함 된 [BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md) 하는 경우 구조체 `bpLocationType`  =  `BPLT_DATA_STRING`합니다.  
+ [C++ 만] 포함 된 [BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md) 하는 경우 구조체 `bpLocationType`  =  `BPLT_DATA_STRING`합니다.  
   
  `bpLocation.bplocResolution`  
- [C + + 전용] 포함 된 [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md) 하는 경우 구조체 `bpLocationType`  =  `BPLT_RESOLUTION`합니다.  
+ [C++ 만] 포함 된 [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md) 하는 경우 구조체 `bpLocationType`  =  `BPLT_RESOLUTION`합니다.  
   
  `unionmember1`  
  [C# 만] 해석 하는 방법에 대 한 설명을 참조 하세요.  
@@ -138,9 +133,9 @@ namespace MyPackage
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>참고 항목  
  [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)   
@@ -152,4 +147,3 @@ namespace MyPackage
  [BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md)   
  [BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md)   
  [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md)
-

@@ -1,8 +1,6 @@
 ---
 title: 파일에서 찾기 및 바꾸기
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.findreplace.replaceinfiles
@@ -13,15 +11,15 @@ helpviewer_keywords:
 - replace in files
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 625cb98391199bad78fb4492e635b2b1767debe7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: fddd048d7c0cc1ffc32dfa81f17964d14d917ec9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788943"
 ---
 # <a name="replace-in-files"></a>파일에서 바꾸기
 

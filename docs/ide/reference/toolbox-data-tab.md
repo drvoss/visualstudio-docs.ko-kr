@@ -1,8 +1,6 @@
 ---
 title: 도구 상자, 데이터 탭
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Toolbox, Data tab
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2ae38b2a-29d2-461c-a67d-29dad274bf45
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1af6ac0f9a382a91d2c87e5cb84053b8b51bf961
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: e9bee601f488c377c19eff8af060d854a7e7152e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089674"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747691"
 ---
 # <a name="toolbox-data-tab"></a>도구 상자, 데이터 탭
 
@@ -30,11 +28,11 @@ ms.locfileid: "37089674"
 
 ## <a name="ui-element-list"></a>UI 요소 목록
 
-구성 요소에 대한 .NET Framework 참조 페이지로 직접 이동하려면 **도구 상자**의 항목 또는 디자이너 트레이의 구성 요소 항목에서 **F1** 키를 누릅니다.
+구성 요소에 대한 .NET 참조 페이지로 직접 이동하려면 **도구 상자**의 항목 또는 디자이너 트레이의 구성 요소 항목에서 **F1** 키를 누릅니다.
 
 |name|설명|
 |----------|-----------------|
-|<xref:System.Data.DataSet>|형식화된 데이터 집합 또는 형식화되지 않은 데이터 집합의 인스턴스를 폼 또는 구성 요소에 추가합니다. 이 개체를 디자이너로 끌면 기존 형식화된 데이터 집합 클래스를 선택하거나 새로운 빈 형식화되지 않은 데이터 집합을 만들도록 지정할 수 있는 대화 상자가 표시됩니다. **참고:** **도구 상자**에서는 새 형식화된 데이터 집합 스키마 및 클래스를 만드는 데 <xref:System.Data.DataSet> 개체를 사용하지 않습니다. 자세한 내용은 [데이터 집합 만들기 및 구성](../../data-tools/create-and-configure-datasets-in-visual-studio.md)을 참조하세요.|
+|<xref:System.Data.DataSet>|형식화된 데이터 세트 또는 형식화되지 않은 데이터 세트의 인스턴스를 폼 또는 구성 요소에 추가합니다. 이 개체를 디자이너로 끌면 기존 형식화된 데이터 세트 클래스를 선택하거나 새로운 빈 형식화되지 않은 데이터 세트를 만들도록 지정할 수 있는 대화 상자가 표시됩니다. **참고:**  **도구 상자**에서는 새 형식화된 데이터 세트 스키마 및 클래스를 만드는 데 <xref:System.Data.DataSet> 개체를 사용하지 않습니다. 자세한 내용은 [데이터 세트 만들기 및 구성](../../data-tools/create-and-configure-datasets-in-visual-studio.md)을 참조하세요.|
 |<xref:System.Windows.Forms.DataGridView>|데이터를 표 형식으로 효과적이고 유연하게 표시할 수 있습니다.|
 |<xref:System.Windows.Forms.BindingSource>|내부 데이터 소스에 컨트롤을 바인딩하는 프로세스를 간소화합니다.|
 |<xref:System.Windows.Forms.BindingNavigator>|데이터에 바인딩된 폼의 컨트롤에 대한 탐색 및 조작 UI(사용자 인터페이스)를 나타냅니다.|
@@ -43,8 +41,8 @@ ms.locfileid: "37089674"
 
 - [Visual Studio에서 데이터 액세스](../../data-tools/accessing-data-in-visual-studio.md)
 - [.NET용 Visual Studio 데이터 도구](../../data-tools/visual-studio-data-tools-for-dotnet.md)
-- [Visual Studio의 데이터 집합 도구](../../data-tools/dataset-tools-in-visual-studio.md)
+- [Visual Studio의 데이터 세트 도구](../../data-tools/dataset-tools-in-visual-studio.md)
 - [Visual Studio에서 데이터에 컨트롤 바인딩](../../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Visual Studio에서 데이터에 Windows Forms 컨트롤 바인딩](../../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [데이터 집합의 데이터 편집](../../data-tools/edit-data-in-datasets.md)
-- [데이터 집합의 데이터 유효성 검사](../../data-tools/validate-data-in-datasets.md)
+- [데이터 세트의 데이터 편집](../../data-tools/edit-data-in-datasets.md)
+- [데이터 세트의 데이터 유효성 검사](../../data-tools/validate-data-in-datasets.md)

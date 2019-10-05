@@ -1,14 +1,9 @@
 ---
-title: '방법: 클래스 다이어그램 요소를 Microsoft Office 문서에 복사(클래스 디자이너) | Microsoft Docs'
-ms.custom: ''
+title: '방법: 클래스 다이어그램 요소를 Microsoft Office 문서 (클래스 디자이너)에 복사 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, copying elements to Office documents
 - Office documents [Visual Studio]
@@ -16,13 +11,13 @@ ms.assetid: c43061ad-d258-46b1-be66-f97a312e86d5
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7bdae912e1eb43d3fa323850fa9dae35f2c56f18
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f48dd69cf58a6ca3fbe292c5ed39aa3da51c4188
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146137"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer"></a>방법: 클래스 다이어그램 요소를 Microsoft Office 문서에 복사(클래스 디자이너)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +26,13 @@ ms.locfileid: "49923214"
   
 ### <a name="to-copy-a-single-element"></a>단일 요소를 복사하려면  
   
--   도형을 마우스 오른쪽 단추로 클릭하고 **이미지 복사**를 선택합니다.  
+- 도형을 마우스 오른쪽 단추로 클릭하고 **이미지 복사**를 선택합니다.  
   
 ### <a name="to-copy-several-elements"></a>여러 요소를 복사하려면  
   
-1.  다이어그램에서 복사할 셰이프를 선택합니다.  
+1. 다이어그램에서 복사할 셰이프를 선택합니다.  
   
-2.  선택 항목을 마우스 오른쪽 단추로 클릭하고 **이미지 복사**를 선택합니다.  
+2. 선택 항목을 마우스 오른쪽 단추로 클릭하고 **이미지 복사**를 선택합니다.  
   
 ### <a name="to-copy-all-the-elements-in-a-class-diagram"></a>클래스 다이어그램에 있는 모든 요소를 복사하려면  
   
@@ -45,11 +40,8 @@ ms.locfileid: "49923214"
   
 2. **편집** 메뉴에서 **이미지 복사**를 선택합니다.  
   
-   **이미지 복사** 대신 **복사**를 선택할 수도 있습니다. **복사**를 선택하면 이미지가 일반 비트맵으로 복사됩니다. **이미지 복사**를 선택하면 이미지가 벡터 기반 이미지로 복사되며 대부분의 Office 응용 프로그램의 경우 이 옵션을 선택하는 것이 좋습니다.  
+   **이미지 복사** 대신 **복사**를 선택할 수도 있습니다. **복사**를 선택하면 이미지가 일반 비트맵으로 복사됩니다. **이미지 복사**를 선택하면 이미지가 벡터 기반 이미지로 복사되며 대부분의 Office 애플리케이션의 경우 이 옵션을 선택하는 것이 좋습니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [방법: 클래스 다이어그램 인쇄(클래스 디자이너)](../ide/how-to-print-class-diagrams-class-designer.md)   
+ [방법: 클래스 다이어그램 인쇄 (클래스 디자이너)](../ide/how-to-print-class-diagrams-class-designer.md)   
  [방법: 클래스 다이어그램을 이미지로 내보내기(클래스 디자이너)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)
-
-
-

@@ -1,25 +1,23 @@
 ---
-title: Python용 웹 응용 프로그램 템플릿
+title: Python용 웹 애플리케이션 템플릿
 description: Visual Studio는 Bottle, Flask 및 Django 프레임워크를 사용하는 Python 웹 애플리케이션용 템플릿을 제공합니다. 지원에는 디버깅 구성 및 Azure App Service에 게시하는 것이 포함됩니다.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 01/28/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 06513030b34f7ab3217210a931722d72a6368ab3
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 952c4d9ab82275ff7b1550a3704e89b93c6260a3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068330"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954829"
 ---
-# <a name="python-web-application-project-templates"></a>Python 웹 응용 프로그램 프로젝트 템플릿
+# <a name="python-web-application-project-templates"></a>Python 웹 애플리케이션 프로젝트 템플릿
 
 Visual Studio의 Python은 다양한 프레임워크를 처리하도록 구성할 수 있는 디버그 시작 관리자 및 프로젝트 템플릿을 통해 Bottle, Flask 및 Django 프레임워크에서 웹 프로젝트 개발을 지원합니다. 이러한 템플릿에는 필요한 종속성을 선언하는 *requirements.txt* 파일이 포함됩니다. 이러한 템플릿 중 하나에서 프로젝트를 만들 때 Visual Studio에서 해당 패키지를 설치하라는 메시지가 표시됩니다. 이 아티클의 뒷부분에 나오는 [프로젝트 요구 사항 설치](#install-project-requirements)를 참조하세요.
 

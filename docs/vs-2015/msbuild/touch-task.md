@@ -1,14 +1,9 @@
 ---
 title: Touch 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Touch
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: 8a978645-1393-4904-ae69-42afabd8c109
 caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ac0614a8496d932f733d7e8bbd2d2b954329dd05
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cf68bf5dada310a23136e431fdaecad3e738d4bc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302057"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144283"
 ---
 # <a name="touch-task"></a>Touch 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 파일의 액세스 및 수정 시간을 설정합니다.  
   
 ## <a name="parameters"></a>매개 변수  
@@ -51,7 +45,7 @@ ms.locfileid: "49302057"
 ## <a name="remarks"></a>설명  
  이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)를 참조하세요.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  다음 예제에서는 `Touch` 작업을 사용하여 `Files` 항목 컬렉션에 지정된 파일의 액세스 및 수정 시간을 변경하고 성공적으로 터치한 파일을 `FilesTouched` 항목 컬렉션에 추가합니다.  
   
 ```  
@@ -75,6 +69,3 @@ ms.locfileid: "49302057"
 ## <a name="see-also"></a>참고 항목  
  [작업](../msbuild/msbuild-tasks.md)   
  [작업 참조](../msbuild/msbuild-task-reference.md)
-
-
-

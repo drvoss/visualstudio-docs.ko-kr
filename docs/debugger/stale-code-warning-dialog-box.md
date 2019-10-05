@@ -1,8 +1,6 @@
 ---
 title: 부실 코드 경고 대화 상자 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.ENC.stalecode
@@ -19,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 594b894c-e652-4e13-a980-9909473d5712
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a2f7f1817b562b555a8ac026e165712bb81f912
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
-ms.translationtype: HT
+ms.openlocfilehash: 9173563239084b8367d9815b46f28d0626ebe04a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684732"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62902493"
 ---
 # <a name="stale-code-warning-dialog-box"></a>부실 코드 경고 대화 상자
 

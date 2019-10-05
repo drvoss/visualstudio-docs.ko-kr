@@ -1,14 +1,9 @@
 ---
 title: 전체 텍스트 검색 팁 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - hv_search
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: bcaad23d-2ca7-4bec-8b54-b884bc34e70b
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 85770dfd3c610f92bcb190b7a2c151b40cd31a4c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 686bf7962e164e718f007a44c83febfc8f49418d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850050"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584685"
 ---
 # <a name="full-text-search-tips"></a>전체 텍스트 검색 팁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ ms.locfileid: "49850050"
   
 > [!IMPORTANT]
 > 1. 문구 검색은 지원되지 않습니다. 검색 문자열에 여러 단어를 지정하는 경우 지정한 단어를 모두 포함하지만 지정한 정확한 문구가 아닌 항목도 반환됩니다.  
->    2.  검색 문구에서 단어 간의 관계를 지정하려면 논리 연산자를 사용합니다. AND, OR, NOT, NEAR 등의 논리 연산자를 포함하여 검색을 구체화할 수 있습니다. 예를 들어 "declaring NEAR union"을 검색하는 경우 "declaring" 및 "union" 단어를 포함하고 그 사이에 몇 단어만 있는 항목이 검색 결과에 포함됩니다. 자세한 내용은 [검색 식의 논리 연산자](../ide/logical-operators-in-search-expressions.md)를 참조하세요.  
+>    2. 검색 문구에서 단어 간의 관계를 지정하려면 논리 연산자를 사용합니다. AND, OR, NOT, NEAR 등의 논리 연산자를 포함하여 검색을 구체화할 수 있습니다. 예를 들어 "declaring NEAR union"을 검색하는 경우 "declaring" 및 "union" 단어를 포함하고 그 사이에 몇 단어만 있는 항목이 검색 결과에 포함됩니다. 자세한 내용은 [검색 식의 논리 연산자](../ide/logical-operators-in-search-expressions.md)를 참조하세요.  
   
 ### <a name="filters"></a>필터  
  고급 검색 연산자를 사용하여 검색 결과를 더욱 제한할 수 있습니다. 도움말에는 전체 텍스트 검색 결과를 필터링하는 데 사용할 수 있는 세 가지 범주(제목, 코드 및 키워드)가 포함되어 있습니다. 자세한 내용은 [검색 식의 고급 검색 연산자](../ide/advanced-search-operators-in-search-expressions.md)를 참조하세요.  
@@ -56,11 +51,11 @@ ms.locfileid: "49850050"
 ### <a name="ranking-of-search-results"></a>검색 결과의 순위 지정  
  검색 알고리즘은 특정 조건을 적용하여 결과 목록에서 검색 결과의 순위를 위나 아래로 조정합니다. 일반적으로 다음과 같이 작동합니다.  
   
-1.  제목에 검색어를 포함하는 콘텐츠의 순위가 그렇지 않은 콘텐츠보다 높습니다.  
+1. 제목에 검색어를 포함하는 콘텐츠의 순위가 그렇지 않은 콘텐츠보다 높습니다.  
   
-2.  근접한 위치에 검색어를 포함하는 콘텐츠의 순위가 그렇지 않은 콘텐츠보다 높습니다.  
+2. 근접한 위치에 검색어를 포함하는 콘텐츠의 순위가 그렇지 않은 콘텐츠보다 높습니다.  
   
-3.  높은 밀도의 검색어를 포함하는 콘텐츠의 순위가 낮은 밀도의 검색어를 포함하는 콘텐츠보다 높습니다.  
+3. 높은 밀도의 검색어를 포함하는 콘텐츠의 순위가 낮은 밀도의 검색어를 포함하는 콘텐츠보다 높습니다.  
   
 ### <a name="words-ignored-in-searches-stop-words"></a>검색에서 무시되는 단어(중지 단어)  
  자주 사용되는 단어 또는 숫자(중지 단어라고도 함)는 전체 텍스트 검색 시 자동으로 무시됩니다. 예를 들어 "pass through" 문구를 검색하는 경우 검색 결과에 "pass" 단어를 포함하는 항목이 표시되지만 "through" 단어를 포함하는 항목은 표시되지 않습니다.  
@@ -68,6 +63,3 @@ ms.locfileid: "49850050"
 ## <a name="see-also"></a>참고 항목  
  [정보 찾기](../ide/locate-information.md)   
  [검색 식의 논리 연산자](../ide/logical-operators-in-search-expressions.md)
-
-
-

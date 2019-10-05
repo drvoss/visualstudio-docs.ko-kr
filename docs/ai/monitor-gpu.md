@@ -1,11 +1,18 @@
 ---
-ms.technology: vs-ai-tools
-ms.openlocfilehash: 01097a738c24c44f3dd2800ce852d3e79a60ba44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+title: GPU 사용률 모니터
+author: lisawong19
+ms.author: liwong
+manager: routlaw
+ms.date: 11/13/2017
+ms.topic: conceptual
+ms.workload:
+- multiple
+ms.openlocfilehash: f455a1cbfbad58ebe724c879837e161954cf4be2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62560950"
 ---
 # <a name="monitoring-gpu-utilization"></a>GPU 사용률 모니터
 

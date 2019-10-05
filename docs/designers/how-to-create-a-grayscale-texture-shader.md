@@ -1,21 +1,19 @@
 ---
 title: '방법: 회색조 질감 셰이더 만들기'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 79181d81-44af-445e-9a18-03483dd70260
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c1910926c6cb2d181f4e5e24ffb1bc1c75a56b3
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 4a8e0295864986ad5cfae2f304f5b0f802f2fb12
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924189"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924309"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>방법: 회색조 질감 셰이더 만들기
 
@@ -27,18 +25,18 @@ ms.locfileid: "37924189"
 
 시작하기 전에 **속성** 창과 **도구 상자**가 표시되는지 확인하세요.
 
-1.  [방법: 기본 질감 셰이더 만들기](../designers/how-to-create-a-basic-texture-shader.md)에 설명된 대로 기본 질감 셰이더를 만듭니다.
+1. [방법: 기본 질감 셰이더 만들기](../designers/how-to-create-a-basic-texture-shader.md)에 설명된 대로 기본 질감 셰이더를 만듭니다.
 
-2.  **최종 색**노드의 **RGB** 터미널에서 **질감 샘플** 노드의 **RGB** 터미널 연결을 끊습니다. **선택** 모드에서 **질감 샘플** 노드의 **RGB** 터미널을 선택하고 **연결 끊기**를 선택합니다. 그러면 다음 단계에서 추가되는 노드에 대한 공간이 생깁니다.
+2. **최종 색**노드의 **RGB** 터미널에서 **질감 샘플** 노드의 **RGB** 터미널 연결을 끊습니다. **선택** 모드에서 **질감 샘플** 노드의 **RGB** 터미널을 선택하고 **연결 끊기**를 선택합니다. 그러면 다음 단계에서 추가되는 노드에 대한 공간이 생깁니다.
 
-3.  **흐리기** 노드를 그래프에 추가합니다. **도구 상자**의 **필터**에서 **흐리기**를 선택하고 디자인 화면으로 이동합니다.
+3. **흐리기** 노드를 그래프에 추가합니다. **도구 상자**의 **필터**에서 **흐리기**를 선택하고 디자인 화면으로 이동합니다.
 
-4.  **흐리기** 노드를 사용하여 회색조 값을 계산합니다. **선택** 모드에서 **질감 샘플** 노드의 **RGB** 터미널을 **흐리기** 노드의 **RGB** 터미널로 이동합니다.
+4. **흐리기** 노드를 사용하여 회색조 값을 계산합니다. **선택** 모드에서 **질감 샘플** 노드의 **RGB** 터미널을 **흐리기** 노드의 **RGB** 터미널로 이동합니다.
 
     > [!NOTE]
     > 기본적으로 **흐리기** 노드는 입력 코드의 채도를 완전히 감소시키고 회색조 변환을 위해 표준 광도 가중치를 사용합니다. **광도** 속성의 값을 변경하거나 입력 색의 채도를 부분적으로만 감소시켜서 **흐리기** 노드의 동작 방식을 변경할 수 있습니다. 입력 색의 채도를 부분적으로 감소시키려면 **흐리기** 노드의 **백분율** 터미널에 [0,1) 범위의 스칼라 값을 제공합니다.
 
-5.  회색조 색 값을 최종 색에 연결합니다. **흐리기** 노드의 **출력** 터미널을 **최종 색** 노드의 **RGB** 터미널로 이동합니다.
+5. 회색조 색 값을 최종 색에 연결합니다. **흐리기** 노드의 **출력** 터미널을 **최종 색** 노드의 **RGB** 터미널로 이동합니다.
 
 다음 그림은 정육면체에 적용된 셰이더의 완료된 셰이더 그래프 및 미리 보기를 보여 줍니다.
 
@@ -53,6 +51,6 @@ ms.locfileid: "37924189"
 
 - [방법: 3D 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [방법: 셰이더 내보내기](../designers/how-to-export-a-shader.md)
-- [이미지 편집기](../designers/image-editor.md)
+- [Image Editor](../designers/image-editor.md)
 - [셰이더 디자이너](../designers/shader-designer.md)
 - [셰이더 디자이너 노드](../designers/shader-designer-nodes.md)

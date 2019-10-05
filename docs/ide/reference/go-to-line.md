@@ -1,8 +1,6 @@
 ---
 title: 줄 이동
 ms.date: 05/18/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.gotoline
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 529fa251-b7b3-49cf-863c-10e0b82ac7cc
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfbe70232537556bee826653d533bab8728e3d1c
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 3ae4db65bc4e220a38e8fd5e5fefc221aa7d2eda
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789701"
 ---
 # <a name="go-to-line-dialog-box"></a>행 이동 대화 상자
 

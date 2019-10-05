@@ -1,14 +1,9 @@
 ---
 title: '방법: 작업의 오류 무시 | Microsoft 문서'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, ignoring errors
 - ContinueOnError attribute [MSBuild]
@@ -16,18 +11,17 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 72f638a17fd6d49157f13d54a6ec1deba0e2bf27
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5025cc3e9dc0e13c3ae4658d129f5d0ac94f6fd6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891195"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156597"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>방법: 작업의 오류 무시
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 경우에 따라 빌드에서 특정 작업의 폴트 발생을 허용하고자 합니다. 중요하지 않은 작업이 실패할 경우 필요한 출력이 계속 생성될 수 있으므로 빌드를 계속 진행하고자 합니다. 예를 들어 각 구성 요소가 빌드된 후 프로젝트에서 `SendMail` 작업을 사용하여 전자 메일 메시지를 보낸다면 메일 서버를 사용할 수 없고 상태 메시지를 보낼 수 없는 경우에도 완료될 때까지 빌드를 진행하도록 허용할 수 있습니다. 또는 예를 들어 일반적으로 빌드 중에 중간 파일이 삭제된다면 해당 파일을 삭제할 수 없는 경우에도 완료될 때까지 빌드를 진행하도록 허용할 수 있습니다.  
   
 ## <a name="using-the-continueonerror-attribute"></a>ContinueOnError 특성 사용  
@@ -47,11 +41,11 @@ ms.locfileid: "49891195"
   
 #### <a name="to-ignore-an-error-in-a-task"></a>작업의 오류를 무시하려면  
   
--   작업의 `ContinueOnError` 특성을 사용합니다. 예를 들어:  
+- 작업의 `ContinueOnError` 특성을 사용합니다. 예:  
   
      `<Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>`  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  다음 코드 예제에서는 `Delete` 작업이 실패하더라도 `Build` 대상이 계속 실행되고 빌드가 성공한 것으로 간주됨을 보여 줍니다.  
   
 ```  
@@ -74,5 +68,3 @@ ms.locfileid: "49891195"
 [MSBuild](msbuild.md)  
  [작업 참조](../msbuild/msbuild-task-reference.md)   
  [작업](../msbuild/msbuild-tasks.md)
-
-

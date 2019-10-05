@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 9e4c80dee056d559822006627c86f4b4884942c8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fa5c02fc28e7ffec4765d94758c838ab149e7ac3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53991138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960490"
 ---
 # <a name="add-extensions-to-dsl-definitions"></a>DSL 정의에 확장 추가
 
@@ -21,15 +20,15 @@ DSL 정의 확장을 사용 하면 도메인 특정 언어 (DSL)에 대 한 확�
 
 DSL 확장 같은 기능을 포함할 수 있습니다.
 
--   모델 및 프레젠테이션 요소에 대 한 속성
+- 모델 및 프레젠테이션 요소에 대 한 속성
 
--   모양 및 연결선에 대 한 decorator
+- 모양 및 연결선에 대 한 decorator
 
--   클래스, 관계, 모양 및 연결선
+- 클래스, 관계, 모양 및 연결선
 
--   유효성 검사 제약 조건
+- 유효성 검사 제약 조건
 
--   도구 상자 항목 및 탭
+- 도구 상자 항목 및 탭
 
 확장된을 사용 하는 DSL의 사용자를 만들고 추가 기능은 인스턴스를 포함 하는 모델을 저장할 수 있습니다. 적절 한 확장명 설치 되어 있는 다른 사용자가 모델을 읽을 수 있습니다. 확장을 설치 하지 않은 사용자는 추가 기능을 사용할 수 없습니다 하지만 업데이트 하 고 추가 기능을 손실 하지 않고 모델을 저장할 수 있습니다.
 
@@ -37,4 +36,4 @@ DSL 확장 같은 기능을 포함할 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 
-- [관련된 블로그 게시물](https://blogs.msdn.microsoft.com/visualstudioalm/tag/code-index/)
+- [관련된 블로그 게시물](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)

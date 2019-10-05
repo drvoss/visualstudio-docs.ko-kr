@@ -1,14 +1,9 @@
 ---
 title: 추가 하 고 속성 페이지를 제거 합니다. | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - property pages, adding
 - property pages, project subtypes
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 680a375d025d59d12c2a070bc564ff94085bc4b5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 98838f09df3094e16d5f1a18263ffdad603ded0b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440133"
 ---
 # <a name="adding-and-removing-property-pages"></a>속성 페이지 추가 및 제거
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "51798965"
   
 #### <a name="to-remove-a-property-page-in-project-designer"></a>프로젝트 디자이너의 속성 페이지를 제거 하려면  
   
-1.  재정의 `GetProperty(uint itemId, int propId, out object property)` 속성 페이지를 필터링 하 고 가져오는 메서드를 `clsids` 목록입니다.  
+1. 재정의 `GetProperty(uint itemId, int propId, out object property)` 속성 페이지를 필터링 하 고 가져오는 메서드를 `clsids` 목록입니다.  
   
     ```vb  
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)  
@@ -80,7 +75,7 @@ ms.locfileid: "51798965"
     }  
     ```  
   
-2.  제거 된 **빌드 이벤트** 페이지에서 가져온 `clsids` 목록입니다.  
+2. 제거 된 **빌드 이벤트** 페이지에서 가져온 `clsids` 목록입니다.  
   
     ```vb  
     Private buildEventsPageGuid As String = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}"  
@@ -116,7 +111,7 @@ ms.locfileid: "51798965"
   
 #### <a name="to-add-a-property-page-in-project-designer"></a>프로젝트 디자이너의 속성 페이지를 추가 하려면  
   
-1.  추가 하려는 속성 페이지를 만듭니다.  
+1. 추가 하려는 속성 페이지를 만듭니다.  
   
     ```vb  
     Class DeployPropertyPage  
@@ -161,7 +156,7 @@ ms.locfileid: "51798965"
     }  
     ```  
   
-2.  새 속성 페이지를 등록 합니다.  
+2. 새 속성 페이지를 등록 합니다.  
   
     ```vb  
     <MSVSIP.ProvideObject(GetType(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)>  
@@ -171,7 +166,7 @@ ms.locfileid: "51798965"
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]  
     ```  
   
-3.  재정의 `GetProperty(uint itemId, int propId, out object property)` 속성 페이지를 필터링을 가져오는 메서드를 `clsids` 나열 하 고 새 속성 페이지를 추가 합니다.  
+3. 재정의 `GetProperty(uint itemId, int propId, out object property)` 속성 페이지를 필터링을 가져오는 메서드를 `clsids` 나열 하 고 새 속성 페이지를 추가 합니다.  
   
     ```vb  
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer  
@@ -210,8 +205,7 @@ ms.locfileid: "51798965"
     ```  
   
 > [!NOTE]
->  이 항목에서 제공 하는 모든 코드 예제는 보다 큰 예의 일부 [VSSDK 샘플](../misc/vssdk-samples.md)합니다.  
+> 이 항목에서 제공 하는 모든 코드 예제는 보다 큰 예의 일부 [VSSDK 샘플](../misc/vssdk-samples.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [프로젝트 하위 형식](../extensibility/internals/project-subtypes.md)
-

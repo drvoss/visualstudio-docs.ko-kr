@@ -1,14 +1,9 @@
 ---
 title: SGen 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#SGen
 dev_langs:
@@ -23,19 +18,18 @@ ms.assetid: 22c5ade4-4159-4667-b891-0c1aa06f4df5
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b9e1d87b895108ac890ace3f077d4c1c0a26d8bf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3be3aa5426c2d1283b8b4cded51cc9c2772642ab
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268036"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682105"
 ---
 # <a name="sgen-task"></a>SGen 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
-지정된 어셈블리의 형식에 대한 XML serialization 어셈블리를 만듭니다. 이 작업은 XML Serializer 생성기 도구(Sgen.exe)를 래핑합니다. 자세한 내용은 [XML Serializer 생성기 도구(Sgen.exe)](http://msdn.microsoft.com/library/cc1d1f1c-fb26-4be9-885a-3fe84c81cec6)를 참조하세요.  
+지정된 어셈블리의 형식에 대한 XML serialization 어셈블리를 만듭니다. 이 작업은 XML Serializer 생성기 도구(Sgen.exe)를 래핑합니다. 자세한 내용은 [XML Serializer 생성기 도구(Sgen.exe)](https://msdn.microsoft.com/library/cc1d1f1c-fb26-4be9-885a-3fe84c81cec6)를 참조하세요.  
   
 ## <a name="parameters"></a>매개 변수  
  다음 표에서는 `SGen` 작업의 매개 변수에 대해 설명합니다.  
@@ -45,8 +39,8 @@ ms.locfileid: "49268036"
 |`BuildAssemblyName`|필수 `String` 매개 변수입니다.<br /><br /> serialization 코드를 생성할 어셈블리입니다.|  
 |`BuildAssemblyPath`|필수 `String` 매개 변수입니다.<br /><br /> serialization 코드를 생성할 어셈블리 경로입니다.|  
 |`DelaySign`|선택적 `Boolean` 매개 변수입니다.<br /><br /> 완전히 서명된 어셈블리를 만들려는 경우 `true`를 지정합니다. 어셈블리에 공개 키만 저장하려 경우 `false`를 지정합니다.<br /><br /> 이 매개 변수는 `KeyFile` 또는 `KeyContainer` 매개 변수와 함께 사용하지 않는 한 효과가 없습니다.|  
-|`KeyContainer`|선택적 `String` 매개 변수입니다.<br /><br /> 키 쌍을 보관하는 컨테이너를 지정합니다. 어셈블리 매니페스트에 공개 키를 삽입하여 어셈블리에 서명합니다. 그런 다음 이 작업은 개인 키를 사용하여 최종 어셈블리에 서명합니다.|  
-|`KeyFile`|선택적 `String` 매개 변수입니다.<br /><br /> 어셈블리 서명에 사용할 키 쌍 또는 공개 키를 지정합니다. 컴파일러는 공개 키를 어셈블리 매니페스트에 삽입한 다음 개인 키를 사용하여 최종 어셈블리에 서명합니다.|  
+|`KeyContainer`|선택적 `String` 매개 변수입니다.<br /><br /> 키 쌍을 보관하는 컨테이너를 지정합니다. 어셈블리 매니페스트에 공개 키를 삽입하여 어셈블리에 서명합니다. 그런 다음 이 작업은 프라이빗 키를 사용하여 최종 어셈블리에 서명합니다.|  
+|`KeyFile`|선택적 `String` 매개 변수입니다.<br /><br /> 어셈블리 서명에 사용할 키 쌍 또는 공개 키를 지정합니다. 컴파일러는 퍼블릭 키를 어셈블리 매니페스트에 삽입한 다음 프라이빗 키를 사용하여 최종 어셈블리에 서명합니다.|  
 |`Platform`|선택적 `String` 매개 변수입니다.<br /><br /> 출력 어셈블리를 생성하는 데 사용되는 컴파일러 플랫폼을 가져오거나 설정합니다. 이 매개 변수는 `x86`, `x64` 또는 `anycpu` 값을 가질 수 있습니다. 기본값은 `anycpu`입니다.|  
 |`References`|선택적 `String[]` 매개 변수입니다.<br /><br /> XML serialization이 필요한 형식에서 참조하는 어셈블리를 지정합니다.|  
 |`SdkToolsPath`|선택적 `String` 매개 변수입니다.<br /><br /> resgen.exe와 같은 SDK 도구에 대한 경로를 지정합니다.|  
@@ -58,13 +52,10 @@ ms.locfileid: "49268036"
 |`Types`|선택적 `String[]` 매개 변수입니다.<br /><br /> serialization 코드를 생성하기 위한 특정 형식의 목록을 가져오거나 설정합니다. SGen은 해당 형식에 대해서만 serialization 코드를 생성합니다.|  
 |`UseProxyTypes`|필수 `Boolean` 매개 변수입니다.<br /><br /> `true`이면 SGen 작업은 XML Web services 프록시 형식에 대해서만 serialization 코드를 생성합니다.|  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.ToolTask> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [ToolTaskExtension 기본 클래스](../msbuild/tooltaskextension-base-class.md)를 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
  [작업 참조](../msbuild/msbuild-task-reference.md)   
  [작업](../msbuild/msbuild-tasks.md)   
  [MSBuild 개념](../msbuild/msbuild-concepts.md)
-
-
-

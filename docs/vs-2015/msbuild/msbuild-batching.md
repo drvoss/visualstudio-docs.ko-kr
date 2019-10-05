@@ -1,14 +1,9 @@
 ---
 title: MSBuild 일괄 처리 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - batching [MSBuild]
 - MSBuild, batching
@@ -16,18 +11,17 @@ ms.assetid: d35c085b-27b8-49d7-b6f8-8f2f3a0eec38
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 24baafbaf213e90999a5e4e0eea030f2ef608501
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d96330c01ab340d4db67694f358717a2dae0bce3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439370"
 ---
 # <a name="msbuild-batching"></a>MSBuild 일괄 처리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에는 항목 목록을 항목 메타데이터에 따라 여러 다른 범주 또는 일괄 처리로 나누고 각 일괄 처리를 사용하여 한 번에 하나의 대상 또는 작업을 실행하는 기능이 있습니다.  
   
 ## <a name="task-batching"></a>작업 일괄 처리  
@@ -36,7 +30,7 @@ ms.locfileid: "49304176"
  작업 특성 중 하나에서 %(*ItemMetaDataName*) 표기법을 사용하여 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]가 작업에서 일괄 처리를 수행하도록 지정합니다. 다음 예제에서는 `Example` 항목 목록을 `Color` 항목 메타데이터 값에 기반한 일괄 처리로 분할하고 일괄 처리 각각을 `MyTask` 작업에 개별적으로 전달합니다.  
   
 > [!NOTE]
->  작업 특성의 다른 위치에서 항목 목록을 참조하지 않거나 메타데이터 이름이 모호할 수 있는 경우 %(*ItemCollection.ItemMetaDataName*) 표기법을 사용하여 일괄 처리에 사용할 항목 메타데이터 값을 정규화할 수 있습니다.  
+> 작업 특성의 다른 위치에서 항목 목록을 참조하지 않거나 메타데이터 이름이 모호할 수 있는 경우 %(*ItemCollection.ItemMetaDataName*) 표기법을 사용하여 일괄 처리에 사용할 항목 메타데이터 값을 정규화할 수 있습니다.  
   
 ```  
 <Project  
@@ -94,13 +88,13 @@ ms.locfileid: "49304176"
  대상 일괄 처리의 또 다른 예제는 [대상 일괄 처리의 항목 메타데이터](../msbuild/item-metadata-in-target-batching.md)를 참조하세요.  
   
 ## <a name="property-functions-using-metadata"></a>메타데이터를 사용하는 속성 함수  
- 메타데이터를 포함하는 속성 함수에서 일괄 처리를 제어할 수 있습니다. 예를 들어 개체에 적용된  
+ 메타데이터를 포함하는 속성 함수에서 일괄 처리를 제어할 수 있습니다. 예를 들면 다음과 같습니다.  
   
  `$([System.IO.Path]::Combine($(RootPath),%(Compile.Identity)))`  
   
  <xref:System.IO.Path.Combine%2A>를 사용하여 컴파일 항목 경로와 루트 폴더 경로를 결합합니다.  
   
- 속성 함수는 메타데이터 값 내에 나타나지 않을 수 있습니다.  예를 들어 개체에 적용된  
+ 속성 함수는 메타데이터 값 내에 나타나지 않을 수 있습니다.  예를 들면 다음과 같습니다.  
   
  `%(Compile.FullPath.Substring(0,3))`  
   
@@ -113,6 +107,3 @@ ms.locfileid: "49304176"
  [MSBuild 개념](../msbuild/msbuild-concepts.md)   
  [MSBuild 참조](../msbuild/msbuild-reference.md)   
  [고급 개념](../msbuild/msbuild-advanced-concepts.md)
-
-
-

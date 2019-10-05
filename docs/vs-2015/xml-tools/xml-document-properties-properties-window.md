@@ -1,34 +1,28 @@
 ---
 title: XML 문서 속성, 속성 창 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c93defe6f5c56966195f1514b5aa76464f6f3013
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7906cc40eef813fcfd8996954e7073eb3e8508e1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236563"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438851"
 ---
 # <a name="xml-document-properties-properties-window"></a>XML 문서 속성, 속성 창
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 합니다 **속성** 창 XML 편집기에서 활성화 되어 있는 문서에 대 한 기본 정보를 제공 합니다. 현재 활성화되어 있는 XML 문서의 형식에 따라 사용할 수 있는 속성이 달라집니다.  
   
 > [!NOTE]
->  모든 XML 문서 속성은 솔루션에 저장됩니다. 그러면 다음에 솔루션을 열 때는 이러한 값을 다시 입력하지 않아도 됩니다.  
+> 모든 XML 문서 속성은 솔루션에 저장됩니다. 그러면 다음에 솔루션을 열 때는 이러한 값을 다시 입력하지 않아도 됩니다.  
   
  **인코딩**  
  파일에 대한 문자 인코딩입니다. 이 속성을 변경하면 XML 선언의 인코딩 특성도 변경되며 XML 선언의 인코딩 특성을 변경하면 이 속성도 변경됩니다. 파일을 저장할 때 새 인코딩을 사용하여 파일이 인코딩됩니다.  
@@ -56,6 +50,3 @@ ms.locfileid: "49236563"
 ## <a name="see-also"></a>참고 항목  
  [XML 편집기](../xml-tools/xml-editor.md)   
  [XML 편집기 구성 요소](../xml-tools/xml-editor-components.md)
-
-
-

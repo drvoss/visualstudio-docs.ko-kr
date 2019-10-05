@@ -1,16 +1,16 @@
 ---
 title: Git 리포지토리 설정
 description: Mac용 Visual Studio에서 Git 및 Subversion 사용
-author: conceptdev
-ms.author: crdun
-ms.date: 05/06/2018
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 02/15/2019
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: c8d1cec438c0d942290997a6d51c4c0f2252bf8e
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 9b21ed322d2b22be619a71e474a3b5078607bbe5
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296218"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70107897"
 ---
 # <a name="set-up-a-git-repository"></a>Git 리포지토리 설정
 
@@ -44,7 +44,7 @@ Git 리포지토리를 설정하려면 다음 단계를 수행하세요.
 
 기존 프로젝트가 버전 제어에 아직 _존재하지 않는_ 경우 다음 단계를 사용해 Git에서 이를 설정합니다.
 
-1.  Mac용 Visual Studio의 Solution Pad에서 솔루션 이름을 선택합니다.
+1. Mac용 Visual Studio의 Solution Pad에서 솔루션 이름을 선택합니다.
 
 2. 메뉴 모음에서 **버전 제어 > 버전 제어에서 게시**를 선택하여 **리포지토리 선택** 대화 상자를 표시합니다.
 
@@ -68,7 +68,10 @@ Git 리포지토리를 설정하려면 다음 단계를 수행하세요.
 
 6. **확인**을 클릭한 다음 경고 대화 상자에서 **게시**를 클릭합니다.
 
-7. Mac용 Visual Studio 기본 설정에서 Git 자격 증명을 입력하지 않았으면 지금 입력합니다. 우선 암호 대신 사용할 액세스 토큰을 만들어야 합니다. 액세스 토큰을 만들지 않은 경우에는 Git [액세스 토큰](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) 설명서의 단계를 따르세요.
+7. **Git 자격 증명** 창에 GitHub 사용자 이름 및 암호를 입력합니다. 
+
+> [!NOTE]
+> 계정에 2단계 인증(2FA)이 사용 설정된 경우 암호 대신 사용되는 액세스 토큰을 만들어야 합니다. 액세스 토큰을 만들지 않은 경우에는 Git [액세스 토큰](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) 설명서의 단계를 따르세요.
 
 8. 사용자 이름과 개인용 액세스 토큰을 입력하고 **확인**을 누릅니다.
 
@@ -78,15 +81,51 @@ Git 리포지토리를 설정하려면 다음 단계를 수행하세요.
 
     ![버전 제어 메뉴](media/version-control-git10.png)
 
-10. 추가적인 변경 작업을 시작한 경우,  **변경 내용 푸시** 를 선택하여 변경 내용을  **원격**  리포지토리로 푸시합니다. 이렇게 하면 github.com에서 해당하는 모든 사용자가 변경 사항을 볼 수 있습니다.
+10. 추가적인 변경 작업을 시작한 경우, **변경 내용 푸시...** 를 선택하여 변경 내용을 **원격** 리포지토리로 푸시합니다. 이렇게 하면 github.com에서 해당하는 모든 사용자가 변경 사항을 볼 수 있습니다.
 
     ![원격 리포지토리에 변경 사항 푸시](media/version-control-git11.png)
 
 ## <a name="publishing-a-new-project"></a>새 프로젝트 게시
 
-새 프로젝트 대화 상자를 사용하면 Git를 사용하여 새 프로젝트를 게시할 수 있습니다. 사용하려면 다음 스크린샷과 같이 **버전 제어에 git을 사용합니다.** 확인란을 선택하세요. 이렇게 하면 리포지토리가 초기화되고 선택적 .gitignore 파일이 추가됩니다.
+새 프로젝트 대화 상자를 사용하여 로컬 git 리포지토리로 새 프로젝트를 만들 수 있습니다. 활성화하려면 다음 스크린샷에 표시된 대로 **버전 제어에 git 사용** 확인란을 선택합니다. 이렇게 하면 리포지토리가 초기화되고 선택적 .gitignore 파일이 추가됩니다.
 
-![원격 리포지토리에 변경 사항 푸시](media/version-control-git12.png)
+![git 지원으로 새 프로젝트 만들기](media/version-control-git-publish-new1.png)
+
+새 GitHub 리포지토리로 새 로컬 리포지토리를 푸시하려면 다음 단계를 수행합니다.
+
+> [!NOTE]
+> GitHub 리포지토리를 아직 만들지 않은 경우 [GitHub에서 원격 리포지토리 만들기](#creating-a-remote-repo-on-github) 섹션을 참조하세요.
+
+1. 메뉴 모음에서 **버전 제어 > 솔루션 검토 및 커밋**으로 이동하여 첫 번째 커밋을 만듭니다.
+
+2. 상태 탭에서 왼쪽 상단에 있는 **커밋**을 선택합니다.
+
+3. 커밋 메시지(예: "첫 번째" 커밋)를 작성한 다음, **커밋**을 클릭합니다.
+
+    ![git 리포지토리에 초기 변경 사항 커밋](media/version-control-git-publish-new2.png)
+
+4. 그런 다음, 메뉴 모음에서 **버전 제어 > 분기 및 원격 관리**로 이동합니다.
+
+5. **원격 원본** 탭으로 이동한 다음, **추가**를 클릭합니다.
+
+6. **원격 원본** 창에서 이전에 만든 GitHub 리포지토리의 세부 정보를 추가하고 **확인**을 클릭합니다.
+
+    ![git 리포지토리용 원격 원본 구성](media/version-control-git-publish-new3.png)
+
+7. **Git 리포지토리 구성** 창을 닫은 다음, 메뉴 모음에서 **버전 제어 > 변경 내용 푸시**로 이동합니다.
+
+8. **리포지토리에 푸시** 창에서 **변경 내용 푸시** 단추를 클릭합니다.
+
+    ![원격 리포지토리에 변경 내용 푸시](media/version-control-git-publish-new4.png)
+
+9. 메시지가 표시되면 GitHub 사용자 이름과 암호를 입력합니다.
+
+> [!NOTE]
+> 계정에 2단계 인증(2FA)이 사용 설정된 경우 암호 대신 사용되는 액세스 토큰을 만들어야 합니다. 액세스 토큰을 만들지 않은 경우에는 Git [액세스 토큰](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) 설명서의 단계를 따르세요.
+
+Mac용 visual Studio는 이제 원격 GitHub 리포지토리에 변경 내용을 푸시합니다.
+
+![푸시 작업이 성공적으로 완료되었습니다.](media/version-control-git11.png)
 
 ## <a name="check-out-an-existing-repository"></a>기존 리포지토리 체크 아웃
 

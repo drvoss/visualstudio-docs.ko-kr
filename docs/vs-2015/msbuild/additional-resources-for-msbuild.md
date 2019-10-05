@@ -1,14 +1,9 @@
 ---
 title: MSBuild를 위한 추가 리소스 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,18 +15,17 @@ ms.assetid: 3206dc09-daa4-43c4-8073-731a82e36a89
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 54e432917957a361f736785550cd07b23f5d14a9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4ea89855a83cdf01255cacc7c8c639c6fcfe1cc4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187073"
 ---
 # <a name="additional-resources-for-msbuild"></a>MSBuild를 위한 추가 리소스
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 다음 웹 사이트 및 포럼을 사용하면 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]로 작업할 때 생기는 일반적인 질문에 대한 답을 쉽게 찾을 수 있습니다.  
   
 ## <a name="microsoft-resources"></a>Microsoft 리소스  
@@ -50,5 +44,3 @@ ms.locfileid: "49248965"
  [MSBuild](msbuild.md)   
  [MSBuild 개념](../msbuild/msbuild-concepts.md)   
  [MSBuild 참조](../msbuild/msbuild-reference.md)
-
-

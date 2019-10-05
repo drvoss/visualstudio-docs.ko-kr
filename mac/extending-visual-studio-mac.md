@@ -1,17 +1,17 @@
 ---
 title: Mac용 Visual Studio 확장
 description: 확장 패키지라는 모듈을 사용하여 Mac용 Visual Studio의 기능을 확장할 수 있습니다. 이 가이드의 첫 번째 부분에서는 간단한 Mac용 Visual Studio 확장 패키지를 만들어 문서에 날짜와 시간을 삽입합니다. 이 가이드의 두 번째 부분에서는 확장 패키지 시스템의 기본 사항 및 Mac용 Visual Studio의 기초를 형성하는 몇 가지 핵심 API를 소개합니다.
-author: conceptdev
-ms.author: crdun
-ms.date: 04/14/2017
+author: alanjclark
+ms.author: alcl
+ms.date: 05/07/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 8212039cd4f83cd9ea2b53a1050f32ed5dbad367
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: f9c14b408a7714f06ae8a96b0ecc60dfc4b8ebe7
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295139"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691654"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Mac용 Visual Studio 확장
 
@@ -28,7 +28,7 @@ Mac용 Visual Studio에서 확장 패키지를 빌드하려면 Mac용 Visual Stu
 이 모듈식 디자인의 이점은 Mac용 Visual Studio를 확장할 수 있다는 것입니다. 사용자 지정 확장 패키지로 빌드할 수 있는 많은 확장 지점이 있습니다. 현재 확장 패키지의 예로 C# 및 F# 지원, 디버거 도구, 프로젝트 템플릿 등이 있습니다.
 
 > [!NOTE]
-> **참고**: Add-in Maker 1.2 이전에 만든 Add-in Maker 프로젝트가 있는 경우 [여기](https://mhut.ch/addinmaker/1.2)에 나와 있는 단계에 따라 프로젝트를 마이그레이션해야 합니다.
+> Add-in Maker 1.2 이전에 만든 Add-in Maker 프로젝트가 있는 경우 [여기](https://mhut.ch/addinmaker/1.2)에 나와 있는 단계에 따라 프로젝트를 마이그레이션해야 합니다.
 
 <!---The [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) topic explains how to build an extension package that uses a *Command* to insert the date and time into an open text document.--->
 
@@ -36,7 +36,7 @@ Mac용 Visual Studio에서 확장 패키지를 빌드하려면 Mac용 Visual Stu
 
 ## <a name="attribute-files"></a>특성 파일
 
-확장 패키지는 이름, 버전, 종속성, 기타 정보에 대한 메타데이터를 C# 특성에 저장합니다. Add-in Maker는 `AddinInfo.cs` 및 `AssemblyInfo.cs`라는 두 개의 파일을 만들어 이 정보를 저장하고 구성합니다. 확장 패키지의 *Addin 특성*에 고유 ID와 네임스페이스가 지정되어 있어야 합니다.
+확장 패키지는 이름, 버전, 종속성, 기타 정보에 대한 메타데이터를 C# 특성에 저장합니다. Add-in Maker는 `AddinInfo.cs` 및 `AssemblyInfo.cs`라는 두 개의 파일을 만들어 이 정보를 저장하고 구성합니다. 확장 패키지의 ‘`Addin` 특성’에 고유 ID와 네임스페이스가 지정되어 있어야 합니다. 
 
 ```csharp
 [assembly:Addin (
@@ -46,7 +46,7 @@ Mac용 Visual Studio에서 확장 패키지를 빌드하려면 Mac용 Visual Stu
 )]
 ```
 
-또한 확장 패키지에서 연결되는 확장 지점을 소유하는 확장 패키지에 대한 종속성을 선언해야 합니다. 이 종속성은 빌드 시간에 자동으로 참조됩니다.
+또한 확장 패키지에서 연결되는 확장 지점을 소유한 확장 패키지에 대한 종속성을 선언해야 합니다. 이 종속성은 빌드 시간에 자동으로 참조됩니다.
 
 또한 다음 이미지와 같이 프로젝트에 대한 Solution Pad의 추가 기능 참조 노드를 통해 참조를 더 추가할 수 있습니다.
 
@@ -81,10 +81,10 @@ Mac용 Visual Studio에서 확장 패키지를 빌드하려면 Mac용 Visual Stu
 
 확장 노드에는 연결되는 확장 지점(이 경우 `/MonoDevelop/Ide/Commands/Edit`)을 지정하는 경로 특성이 있습니다. 또한 명령에 대한 부모 노드로 동작합니다. 명령 노드에는 다음과 같은 특성이 있습니다.
 
-*   **id** - 이 명령의 식별자를 지정합니다. 명령 식별자는 열거형 멤버로 선언되어야 하며 Commands를 CommandItems에 연결하는 데 사용됩니다.
-*   **_label** - 메뉴에 표시할 텍스트입니다.
-*   **_description** - 도구 모음 단추에 대한 도구 설명으로 표시할 텍스트입니다.
-*   **defaultHandler** - 명령을 구동하는 `CommandHandler` 클래스를 지정합니다.
+* `id` - 이 명령의 식별자를 지정합니다. 명령 식별자는 열거형 멤버로 선언되어야 하며 Commands를 CommandItems에 연결하는 데 사용됩니다.
+* `_label` - 메뉴에 표시할 텍스트입니다.
+* `_description` - 도구 모음 단추의 도구 설명으로 표시할 텍스트입니다.
+* `defaultHandler` - 명령을 구동하는 `CommandHandler` 클래스를 지정합니다.
 
 <!--To invoke the command from the Edit Menu, the walkthrough creates a CommandItem extension that plugs into the `/MonoDevelop/Ide/MainMenu/Edit` extension point:-->
 
@@ -96,7 +96,7 @@ Mac용 Visual Studio에서 확장 패키지를 빌드하려면 Mac용 Visual Stu
 </Extension>
 ```
 
-CommandItem은 해당 id 특성에 지정된 명령을 메뉴에 배치합니다. 이 CommandItem은 명령의 레이블을 **편집 메뉴**에 표시하는 `/MonoDevelop/Ide/MainMenu/Edit` 확장 지점을 확장합니다. CommandItem의 **id**는 명령 노드의 id인 `InsertDate`에 해당합니다. CommandItem을 제거하면 **날짜 삽입** 옵션이 편집 메뉴에서 사라집니다.
+CommandItem은 해당 `id` 특성에 지정된 명령을 메뉴에 배치합니다. 이 CommandItem은 명령의 레이블을 **편집 메뉴**에 표시하는 `/MonoDevelop/Ide/MainMenu/Edit` 확장 지점을 확장합니다. CommandItem의 ID는 명령 노드의 ID인 `InsertDate`에 해당합니다. CommandItem을 제거하면 **날짜 삽입** 옵션이 편집 메뉴에서 사라집니다.
 
 ### <a name="command-handlers"></a>명령 처리기
 
@@ -129,7 +129,7 @@ public enum DateInserterCommands
 }
 ```
 
-그러면 Command와 CommandItem이 연결됩니다. **편집 메뉴**에서 CommandItem을 선택하면 CommandItem이 Command를 호출합니다.
+이제 Command와 CommandItem이 연결되었습니다. **편집 메뉴**에서 CommandItem을 선택하면 CommandItem이 Command를 호출합니다.
 
 ## <a name="ide-apis"></a>IDE API
 
@@ -137,27 +137,56 @@ public enum DateInserterCommands
 
 개발에 사용할 수 있는 영역의 범위에 대한 자세한 내용은 [확장 트리 참조](http://monodevelop.com/Developers/Articles/Extension_Tree_Reference) 및 [API 개요](http://monodevelop.com/Developers/Articles/API_Overview)를 참조하세요. 고급 확장 패키지를 빌드하는 경우 [개발자 문서](http://monodevelop.com/Developers/Articles)도 참조하세요. 다음은 사용자 지정이 가능한 영역의 부분 목록입니다.
 
-*   패드
-*   키 바인딩 구성표
-*   정책
-*   코드 포맷터
-*   프로젝트 파일 형식
-*   기본 설정 패널
-*   옵션 패널
-*   디버거 프로토콜
-*   디버거 시각화 도우미
-*   작업 영역 레이아웃
-*   Solution Pad 트리 노드
-*   소스 편집기 여백
-*   단위 테스트 엔진
-*   코드 생성기
-*   코드 조각
-*   대상 프레임워크
-*   대상 런타임
-*   VCS 백 엔드
-*   리팩터링
-*   실행 처리기
-*   구문 강조
+* 패드
+* 키 바인딩 구성표
+* 정책
+* 코드 포맷터
+* 프로젝트 파일 형식
+* 기본 설정 패널
+* 옵션 패널
+* 디버거 프로토콜
+* 디버거 시각화 도우미
+* 작업 영역 레이아웃
+* Solution Pad 트리 노드
+* 소스 편집기 여백
+* 단위 테스트 엔진
+* 코드 생성기
+* 코드 조각
+* 대상 프레임워크
+* 대상 런타임
+* VCS 백 엔드
+* 리팩터링
+* 실행 처리기
+* 구문 강조
+
+## <a name="extending-the-new-editor"></a>새 편집기 확장
+
+Mac용 Visual Studio에서 [새로 도입된 네이티브 Cocoa 텍스트 편집기 UI](https://aka.ms/vs/mac/editor/learn-more)는 Windows용 Visual Studio의 동일한 편집기 계층을 기반으로 해서 구축되었습니다.
+
+Visual Studio와 Mac용 Visual Studio 간에 편집기를 공유할 경우의 많은 이점 중 하나는 Visual Studio 편집기를 대상으로 하는 코드를 Mac용 Visual Studio에서 실행되도록 조정할 수 있다는 것입니다.
+
+> [!NOTE]
+> 현재 새 편집기는 C# 파일만 지원합니다. 다른 언어 및 파일 형식은 레거시 편집기에서 열립니다. 하지만 레거시 편집기도 아래에 설명된 Visual Studio 편집기 API 중 일부를 구현합니다.
+
+### <a name="visual-studio-editor-overview"></a>Visual Studio 편집기 개요
+
+![Visual Studio 편집기 아키텍처](media/vs-editor-architecture.png)
+
+Mac용 Visual Studio와 관련된 확장 정보를 살펴보기 전에 공유 편집기 자체를 자세히 파악하는 것이 도움이 됩니다. 공유 편집기를 깊이 이해하는 데 유용할 수 있는 몇 가지 리소스는 다음과 같습니다.
+
+* [Managed Extensibility Framework](https://docs.microsoft.com/dotnet/framework/mef/index)
+* [편집기의 MEF](https://docs.microsoft.com/visualstudio/extensibility/managed-extensibility-framework-in-the-editor)
+* [편집기 기본 사항](https://docs.microsoft.com/visualstudio/extensibility/inside-the-editor)
+* [언어 서비스 및 편집기 확장 지점](https://docs.microsoft.com/visualstudio/extensibility/language-service-and-editor-extension-points)
+* [편집기 아키텍처 소개 비디오](https://www.youtube.com/watch?v=PkYVztKjO9A)
+
+이러한 리소스에서 숙지해야 하는 기본 개념은 [`ITextBuffer`](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.itextbuffer) 및 [`ITextView`](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.editor.itextview)입니다.
+
+* `ITextBuffer`는 시간이 지남에 따라 변경될 수 있는 텍스트의 메모리 내 표현입니다. `ITextBuffer`의 `CurrentSnapshot` 속성은 현재 버퍼 내용의 ‘변경이 불가능한’ 표현인 `ITextSnapshot` 인스턴스를 반환합니다.  버퍼를 편집하면 CurrentSnapshot 속성이 최신 버전으로 업데이트됩니다. 분석기는 모든 스레드의 텍스트 스냅샷 및 해당 콘텐츠가 변경되지 않았는지 검사할 수 있습니다.
+
+* `ITextView`는 화면의 편집기 컨트롤에서 `ITextBuffer`가 렌더링되는 방식의 UI 표현입니다. 해당 텍스트 버퍼에 대한 참조와 `Caret`, `Selection` 및 기타 UI 관련 개념이 있습니다.
+
+지정된 [`MonoDevelop.Ide.Gui.Document`](http://source.monodevelop.com/#MonoDevelop.Ide/MonoDevelop.Ide.Gui/Document.cs,4e960d4735f089b5)에 연결된 기본 `ITextBuffer` 및 `ITextView`는 각각 `Document.GetContent<ITextBuffer>()` 및 `Document.GetContent<ITextView>()`를 통해 검색할 수 있습니다.
 
 ## <a name="additional-information"></a>추가 정보
 

@@ -1,20 +1,18 @@
 ---
 title: 스크롤 막대 지도 모드 및 막대 모드
 ms.date: 09/25/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f60d7f573ed275ff4d827e0a4209f21444ee64c
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 77f7db396b814eb9163c055b8fadb8793432acee
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219954"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62548323"
 ---
 # <a name="how-to-customize-the-scroll-bar"></a>방법: 스크롤 막대 사용자 지정
 
@@ -28,7 +26,7 @@ ms.locfileid: "50219954"
 
    2. **세로 스크롤 막대 위에 주석 표시**를 선택한 다음, 표시할 주석을 선택합니다. 사용 가능한 주석은 다음과 같습니다.
 
-      - 변경됨
+      - 변경 내용
       - 표시
       - 오류
       - 캐럿 위치

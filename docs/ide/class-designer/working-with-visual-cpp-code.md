@@ -1,8 +1,6 @@
 ---
 title: Visual C++ 코드 사용(클래스 디자이너)
 ms.date: 06/21/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.cpplimitation
@@ -17,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: f5b40921-2ef7-4de0-b595-45b44c79ffa6
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 109c2408e16c5ca4943855889191733234778761
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 16dbcbecece0e8ec38e3f38391ca5063e2e3d36c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33958453"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975010"
 ---
 # <a name="work-with-visual-c-code-in-class-designer"></a>클래스 디자이너에서 Visual C++ 코드 사용
 
@@ -48,7 +46,7 @@ ms.locfileid: "33958453"
 - Typedef
 
 > [!NOTE]
-> 이 UML 클래스 다이어그램에서 모델링 프로젝트를 만들 수 있습니다 수 없습니다. 자세한 내용은 [UML 클래스 다이어그램: 참조](../../modeling/uml-class-diagrams-reference.md)를 참조하세요.
+> 이 UML 클래스 다이어그램에서 모델링 프로젝트를 만들 수 있습니다 수 없습니다. 자세한 내용은 [UML 클래스 다이어그램: 참조](../../modeling/create-uml-modeling-projects-and-diagrams.md)를 참조하세요.
 
 ## <a name="troubleshoot-type-resolution-and-display-issues"></a>형식 확인 및 표시 문제 해결
 
@@ -112,8 +110,6 @@ MSDN(Microsoft Developer Network) 공개 포럼에서 오류 및 경고 문제 �
 
 ## <a name="see-also"></a>참고 항목
 
-- [클래스와 형식 디자인 및 보기](designing-and-viewing-classes-and-types.md)
-- [클래스 다이어그램 작업](working-with-class-diagrams.md)
 - [클래스와 형식 디자인 및 보기](designing-and-viewing-classes-and-types.md)
 - [클래스 디자이너 오류에 대한 추가 정보](additional-information-about-errors.md)
 - [클래스 디자이너의 Visual C++ 클래스](visual-cpp-classes.md)

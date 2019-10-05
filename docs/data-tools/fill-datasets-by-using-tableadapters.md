@@ -1,5 +1,5 @@
 ---
-title: Tableadapter를 사용 하 여 데이터 집합 채우기
+title: TableAdapters를 사용하여 데이터 세트 채우기
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,24 +16,22 @@ helpviewer_keywords:
 ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 673c364c1750afbaa4b319c40550be7cfac3b53b
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: f0047ee38a6fda4738c773c36a85e14cba1e37fe
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131975"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745534"
 ---
-# <a name="fill-datasets-by-using-tableadapters"></a>Tableadapter를 사용 하 여 데이터 집합 채우기
+# <a name="fill-datasets-by-using-tableadapters"></a>TableAdapters를 사용하여 데이터 세트 채우기
 
 TableAdapter 구성 요소를 기반으로 쿼리 또는 저장된 프로시저 수를 지정 하는 하나 이상의 데이터베이스에서 데이터를 사용 하 여 데이터 집합을 채웁니다. Tableadapter를 수행할 수도 있습니다 추가, 업데이트 및 데이터 집합에 수행한 변경 내용을 유지 하려면 데이터베이스를 삭제 합니다. 또한 특정 테이블에 관련 되지 않은 전역 명령을 실행할 수 있습니다.
 
 > [!NOTE]
-> Tableadapter는 Visual Studio 디자이너에서 생성 됩니다. 데이터 집합을 프로그래밍 방식으로 만들려는 경우에.NET Framework 클래스는 DataAdapter를 사용 합니다.
+> Tableadapter는 Visual Studio 디자이너에서 생성 됩니다. 데이터 집합을 프로그래밍 방식으로 만들려는 경우에.NET 클래스는 DataAdapter를 사용 합니다.
 
 TableAdapter 작업에 대 한 자세한 내용은 다음이 항목 중 하나에 직접 건너뛸 수 있습니다.
 
@@ -42,9 +40,9 @@ TableAdapter 작업에 대 한 자세한 내용은 다음이 항목 중 하나�
 |[TableAdapter 만들기 및 구성](../data-tools/create-and-configure-tableadapters.md)|Tableadapter 만들기 및 구성 하는 디자이너를 사용 하는 방법|
 |[매개 변수가 있는 TableAdapter 쿼리 만들기](../data-tools/create-parameterized-tableadapter-queries.md)|사용자가 인수 TableAdapter 프로시저 또는 쿼리를 제공할 수 있게 하는 방법|
 |[TableAdapter를 사용하여 데이터베이스에 직접 액세스](../data-tools/directly-access-the-database-with-a-tableadapter.md)|Tableadapter의 Dbdirect 메서드를 사용 하는 방법|
-|[데이터 집합을 채우는 동안 제약 조건 해제](../data-tools/turn-off-constraints-while-filling-a-dataset.md)|데이터를 업데이트할 때 foreign key 제약 조건을 사용 하는 방법|
-|[TableAdapter의 기능을 확장 하는 방법](../data-tools/fill-datasets-by-using-tableadapters.md)|Tableadapter를 사용자 지정 코드를 추가 하는 방법|
-|[XML 데이터를 Dataset에 읽어오기](../data-tools/read-xml-data-into-a-dataset.md)|XML을 사용 하는 방법|
+|[데이터 세트를 채우는 동안 제약 조건 해제](../data-tools/turn-off-constraints-while-filling-a-dataset.md)|데이터를 업데이트할 때 foreign key 제약 조건을 사용 하는 방법|
+|[TableAdapter의 기능 확장 방법](../data-tools/fill-datasets-by-using-tableadapters.md)|Tableadapter를 사용자 지정 코드를 추가 하는 방법|
+|[XML 데이터를 데이터 세트에 읽어오기](../data-tools/read-xml-data-into-a-dataset.md)|XML을 사용 하는 방법|
 
 <a name="tableadapter-overview"></a>
 
@@ -52,7 +50,7 @@ TableAdapter 작업에 대 한 자세한 내용은 다음이 항목 중 하나�
 
 Tableadapter는 데이터베이스, 쿼리 실행된 또는 저장된 프로시저를 연결 하 고 반환된 된 데이터를 사용 하 여 해당 DataTable을 채울는 디자이너에서 생성 된 구성 요소입니다. Tableadapter 다시 데이터베이스에 응용 프로그램에서 업데이트 된 데이터를 보낼 수도 있습니다. TableAdapter와 연결 된 테이블의 스키마를 따르는 데이터를 반환 하기만 TableAdapter에 원하는 만큼 많은 쿼리를 실행할 수 있습니다. 다음 다이어그램에서는 Tableadapter 데이터베이스와 메모리 내에서 기타 개체와 상호 작용 하는 방법을 보여 줍니다.
 
-![클라이언트 응용 프로그램의 데이터 흐름](../data-tools/media/clientdatadiagram.gif)
+![클라이언트 애플리케이션의 데이터 흐름](../data-tools/media/clientdatadiagram.gif)
 
 사용 하 여 Tableadapter 설계 되어는 **데이터 집합 디자이너**, TableAdapter 클래스의 중첩 클래스로 생성 되지 않습니다 <xref:System.Data.DataSet>합니다. 각 데이터 집합에 관련 된 별도 네임 스페이스에 있습니다. 예를 들어 라는 데이터 집합이 있다고 `NorthwindDataSet`, 연관 된 Tableadapter <xref:System.Data.DataTable>의 합니다 `NorthwindDataSet` 에 `NorthwindDataSetTableAdapters` 네임 스페이스입니다. 특정 TableAdapter에 프로그래밍 방식으로 액세스 하려면 TableAdapter의 새 인스턴스를 선언 해야 합니다. 예를 들어:
 
@@ -87,7 +85,7 @@ Tableadapter 구성 캡슐화 하 여 표준 데이터 어댑터의 기능을 �
 
 ## <a name="tableadapter-methods-and-properties"></a>TableAdapter 메서드 및 속성
 
-TableAdapter 클래스를 부분을 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]입니다. 즉, 설명서에서를 찾을 수 없습니다. 있습니다 또는 **개체 브라우저**합니다. 앞에서 언급 한 마법사 중 하나를 사용 하면 디자인 타임에 생성 됩니다. 만들 때 TableAdapter에 할당 된 이름은 사용 하는 테이블의 이름을 기반으로 합니다. 예를 들어, 명명 된 데이터베이스의 테이블을 기반으로 TableAdapter를 만들 때 `Orders`, TableAdapter 이름은 `OrdersTableAdapter`합니다. TableAdapter의 클래스 이름을 사용 하 여 변경할 수 있습니다 합니다 **이름을** 속성에는 **데이터 집합 디자이너**합니다.
+TableAdapter 클래스는.NET 형식이 아닙니다. 즉, 설명서에서를 찾을 수 없습니다. 있습니다 또는 **개체 브라우저**합니다. 앞에서 언급 한 마법사 중 하나를 사용 하면 디자인 타임에 생성 됩니다. 만들 때 TableAdapter에 할당 된 이름은 사용 하는 테이블의 이름을 기반으로 합니다. 예를 들어, 명명 된 데이터베이스의 테이블을 기반으로 TableAdapter를 만들 때 `Orders`, TableAdapter 이름은 `OrdersTableAdapter`합니다. TableAdapter의 클래스 이름을 사용 하 여 변경할 수 있습니다 합니다 **이름을** 속성에는 **데이터 집합 디자이너**합니다.
 
 다음은 일반적으로 사용 되는 메서드 및 Tableadapter의 속성입니다.
 
@@ -124,7 +122,7 @@ Tableadapter에 nullable 형식 지원 `Nullable(Of T)` 고 `T?`입니다. Visua
 
 기본적으로 관련된 테이블이 포함 된 데이터 집합을 만들 때 TableAdapterManager 클래스를 생성 합니다. 클래스 생성을 방지 하려면 값을 변경 합니다 `Hierarchical Update` false 데이터 집합의 속성입니다. Windows Form 또는 WPF 페이지의 디자인 화면으로 관계가 있는 테이블을 끌어 놓으면 Visual Studio 클래스의 멤버 변수를 선언 합니다. 데이터 바인딩을 사용 하지 않는 경우 수동으로 변수를 선언 해야 합니다.
 
-TableAdapterManager 클래스가 아닌 부분을 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]입니다. 따라서 설명서에서를 찾을 수 없습니다. 데이터 집합 만들기 프로세스의 일부로 디자인 타임에 생성 됩니다.
+TableAdapterManager 클래스는.NET 형식이 아닙니다. 따라서 설명서에서를 찾을 수 없습니다. 데이터 집합 만들기 프로세스의 일부로 디자인 타임에 생성 됩니다.
 
 다음은 자주 사용 되는 메서드 및 속성을 `TableAdapterManager` 클래스:
 
@@ -137,7 +135,7 @@ TableAdapterManager 클래스가 아닌 부분을 [!INCLUDE[dnprdnshort](../code
 
 ## <a name="security"></a>보안
 
-CommandType 속성이로 설정 된 데이터 명령을 사용 하면 <xref:System.Data.CommandType.Text>, 신중 하 게 데이터베이스에 전달 하기 전에 클라이언트에서 전송 되는 정보를 확인 합니다. 악의적인 사용자가 송신 하려고 할 수 있습니다 (삽입) 하기 위해 무단으로 액세스 하거나 데이터베이스를 손상 시키는 SQL 문을 수정 또는 추가 합니다. 데이터베이스에 사용자 입력을 전송 하기 전에 항상 정보가 유효한 지 확인 합니다. 매개 변수가 있는 쿼리 또는 저장된 프로시저를 가능 하면 항상 사용 하는 것이 좋습니다.
+CommandType 속성이로 설정 된 데이터 명령을 사용 하면 <xref:System.Data.CommandType.Text>, 신중 하 게 데이터베이스에 전달 하기 전에 클라이언트에서 전송 되는 정보를 확인 합니다. 악의적인 사용자가 인증되지 않은 액세스 권한을 얻거나 데이터베이스를 손상시키기 위해 수정되었거나 추가된 SQL 문을 전송(주입)할 수도 있습니다. 데이터베이스에 사용자 입력을 전송 하기 전에 항상 정보가 유효한 지 확인 합니다. 매개 변수가 있는 쿼리 또는 저장된 프로시저를 가능 하면 항상 사용 하는 것이 좋습니다.
 
 ## <a name="see-also"></a>참고자료
 

@@ -1,7 +1,7 @@
 ﻿---
 title: '빠른 시작: C/C++ 코드 분석'
+description: 정적 분석을 실행 C++ 일반적인 코딩 문제 및 결함을 검색할 Visual Studio에서 코드입니다.
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
@@ -11,16 +11,16 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 00dedc25185dfc3a9f12ba645205ce47925003df
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 039ffcd1717dba8ec3c76ae1ca4a691d60851ee5
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825203"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226087"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>빠른 시작: C/C++용 코드 분석
 
-C 또는 C++ 코드에 대한 코드 분석을 정기적으로 실행하여 응용 프로그램의 품질을 향상시킬 수 있습니다. 이 테스트를 통해 발견 하기 어려운 결함 또는 프로그래밍 관행의 위반의 일반적인 문제를 찾을 수 있습니다. 코드 분석은 유효하지만 해당 코드를 사용하는 당사자나 다른 사용자에게 계속 문제를 일으킬 수 있는 특정 코드 패턴을 검색하므로, 코드 분석 경고는 컴파일러 오류 및 경고와 다릅니다.
+C 또는 C++ 코드에 대한 코드 분석을 정기적으로 실행하여 애플리케이션의 품질을 향상시킬 수 있습니다. 이 테스트를 통해 발견 하기 어려운 결함 또는 프로그래밍 관행의 위반의 일반적인 문제를 찾을 수 있습니다. 코드 분석은 유효하지만 해당 코드를 사용하는 당사자나 다른 사용자에게 계속 문제를 일으킬 수 있는 특정 코드 패턴을 검색하므로, 코드 분석 경고는 컴파일러 오류 및 경고와 다릅니다.
 
 ## <a name="configure-rule-sets-for-a-project"></a>프로젝트에 대한 규칙 집합 구성
 
@@ -51,7 +51,7 @@ Visual Studio에는 네이티브 코드에 대한 두 가지 표준 규칙 집�
 
 |규칙 집합|설명|
 |--------------|-----------------|
-|Microsoft 네이티브 최소 권장 규칙|이러한 규칙은 잠재적 보안 허점 및 응용 프로그램 충돌을 포함하여 네이티브 코드의 가장 중요한 문제 설정에 중점을 둡니다. 네이티브 프로젝트에 대해 만드는 모든 사용자 지정 규칙 집합에 이 규칙 집합을 포함해야 합니다.|
+|Microsoft 네이티브 최소 권장 규칙|이러한 규칙은 잠재적 보안 허점 및 애플리케이션 충돌을 포함하여 네이티브 코드의 가장 중요한 문제 설정에 중점을 둡니다. 네이티브 프로젝트에 대해 만드는 모든 사용자 지정 규칙 집합에 이 규칙 집합을 포함해야 합니다.|
 |Microsoft 네이티브 권장 규칙|이 규칙 집합에서는 다양한 문제를 다룹니다. Microsoft 기본 최소 권장 규칙의 모든 규칙을 포함합니다.|
 
 ## <a name="run-code-analysis"></a>코드 분석 실행
@@ -96,7 +96,7 @@ Visual Studio에는 네이티브 코드에 대한 두 가지 표준 규칙 집�
 
 작업 항목 추적 기능을 사용하여 Visual Studio에서 버그를 기록할 수 있습니다. 이 기능을 사용하려면 Team Foundation Server 인스턴스에 연결해야 합니다.
 
-**하나 이상의 C/c + + 코드 경고에 대 한 작업 항목을 만들려면**
+**하나 이상의 C/C++ 코드 경고에 대 한 작업 항목을 만들려면**
 
 1. 오류 목록에서 확장 하 고 경고를 선택 합니다.
 
@@ -116,4 +116,4 @@ Visual Studio에는 네이티브 코드에 대한 두 가지 표준 규칙 집�
 
 ## <a name="see-also"></a>참고자료
 
-[C/C++ 용 코드 분석](../code-quality/code-analysis-for-c-cpp-overview.md)
+[C 용 코드 분석 /C++](../code-quality/code-analysis-for-c-cpp-overview.md)

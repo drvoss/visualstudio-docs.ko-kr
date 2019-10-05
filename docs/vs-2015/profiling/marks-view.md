@@ -1,14 +1,9 @@
 ---
 title: 표시 뷰 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.marks
 helpviewer_keywords:
@@ -18,22 +13,22 @@ ms.assetid: b2773344-8081-4116-85a1-58f770448f6a
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 10d893a4f643404161d0bcbe6b2c8f623719d0c7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 77cf26d9746336a614b36d7dcd443b841afa06f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762702"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699757"
 ---
 # <a name="marks-view"></a>표시 뷰
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-표시 뷰에는 응용 프로그램에 삽입된 샘플링 및 ETW 이벤트가 표시됩니다.  
+표시 뷰에는 애플리케이션에 삽입된 샘플링 및 ETW 이벤트가 표시됩니다.  
   
  보고서에 미리 채워지는 기본 표시는 프로그램의 시작과 프로그램의 끝을 레이블로 지정합니다.  
   
- 자동으로 생성되는 표시의 Windows 카운터 데이터는 이 뷰에도 표시됩니다. 자세한 내용은 [방법: Windows 카운터 데이터 수집](../profiling/how-to-collect-windows-counter-data.md)을 참조하세요.  
+ 자동으로 생성되는 표시의 Windows 카운터 데이터는 이 뷰에도 표시됩니다. 자세한 내용은 [방법: Windows 카운터 데이터 수집](../profiling/how-to-collect-windows-counter-data.md)합니다.  
   
  두 표시 사이에 필터를 만들려면 표시를 선택하고 마우스 오른쪽 단추로 클릭한 다음 **표시에 대한 필터 추가** 또는 **타임스탬프에 대한 필터 추가**를 클릭합니다.  
   
@@ -53,10 +48,7 @@ ms.locfileid: "51762702"
   
 ## <a name="see-also"></a>참고 항목  
  [성능 보고서 개요](../profiling/performance-report-overview.md)   
- [< PAVE_OVER > 방법: 프로 파일링 표시 구성](http://msdn.microsoft.com/library/65a23880-e5e8-4d5a-82b3-6498b9ef8975)   
- [< PAVE_OVER > 방법: Profiler 데이터 파일에 표시 삽입](http://msdn.microsoft.com/library/856bfc81-a60f-42e5-a9bc-71b986c1e09d)   
+ [< PAVE_OVER > 방법: 프로 파일링 표시 구성](https://msdn.microsoft.com/library/65a23880-e5e8-4d5a-82b3-6498b9ef8975)   
+ [< PAVE_OVER > 방법: Profiler 데이터 파일에 표시 삽입](https://msdn.microsoft.com/library/856bfc81-a60f-42e5-a9bc-71b986c1e09d)   
  [방법: Windows 카운터 데이터 수집](../profiling/how-to-collect-windows-counter-data.md)   
- [&#91;NIB&#93; 데이터 수집 제어 창](http://msdn.microsoft.com/en-us/98d740d8-459f-4605-bf04-fb17aafaaa8f)
-
-
-
+ [&#91;NIB&#93; 데이터 수집 제어 창](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)

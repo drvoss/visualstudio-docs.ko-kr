@@ -1,11 +1,8 @@
 ---
 title: WriteLine 활동 디자이너 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.WriteLine.UI
@@ -13,13 +10,13 @@ ms.assetid: 1b5f29a8-b7fd-477e-949e-2f689cae3c96
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 8fa22ecee8bf365b02dcce9e4bc5607bb3a9838b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 591ecf53e04eaff115d45e1358f385a009ab29f5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62855224"
 ---
 # <a name="writeline-activity-designer"></a>WriteLine 활동 디자이너
 합니다 **WriteLine** 활동 디자이너는 만들기 및 구성 하는 데 사용 되는 <xref:System.Activities.Statements.WriteLine> 활동입니다.  
@@ -35,7 +32,7 @@ ms.locfileid: "49280971"
 ### <a name="the-writeline-properties"></a>WriteLine 속성  
  다음 표에서는 <xref:System.Activities.Statements.WriteLine> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. 이러한 속성은 속성 표에서 편집할 수 있으며 일부 속성은 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 디자이너 화면에서 편집할 수 있습니다.  
   
-|속성 이름|필수|용도|  
+|속성 이름|필수|사용|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.WriteLine> 활동의 이름입니다. 기본값은 WriteLine입니다. <xref:System.Activities.Activity.DisplayName%2A>은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|  
 |<xref:System.Activities.Statements.WriteLine.Text%2A>|False|쓸 텍스트입니다. 속성을 설정 하려면 Visual Basic 식을 입력 합니다 **텍스트** 상자에 **WriteLine** 활동 디자이너나 속성 표의 합니다.|  
@@ -43,6 +40,6 @@ ms.locfileid: "49280971"
   
 ## <a name="see-also"></a>참고 항목  
  [기본 형식](../workflow-designer/primitives-activity-designers.md)   
- [할당](../workflow-designer/assign-activity-designer.md)   
+ [Assign](../workflow-designer/assign-activity-designer.md)   
  [지연](../workflow-designer/delay-activity-designer.md)   
  [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)

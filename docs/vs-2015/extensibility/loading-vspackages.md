@@ -1,27 +1,22 @@
 ---
 title: Vspackage를 로드 합니다. | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, autoloading
 - VSPackages, loading
 ms.assetid: f4c3dcea-5051-4065-898f-601269649d92
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e351f49ea3e9579202e21868361e5d6f3d53b8fd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e20caff476e116ad59430692719bdbbe22c4914c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439775"
 ---
 # <a name="loading-vspackages"></a>VSPackage 로드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +24,13 @@ ms.locfileid: "51753876"
 Vspackage는 해당 기능이 필요한 경우에 Visual Studio에 로드 됩니다. 예를 들어, Visual Studio 프로젝트 팩터리 또는 VSPackage 구현 하는 서비스를 사용 하는 경우 VSPackage가 로드 됩니다. 이 기능은 성능 향상을 위해 가능할 때마다 사용 되는 지연 된 로드를 라고 합니다.  
   
 > [!NOTE]
->  Visual Studio에는 VSPackage를 로드 하지 않고, VSPackage에서 제공 하는 명령 등과 같이 특정 VSPackage 정보를 확인할 수 있습니다.  
+> Visual Studio에는 VSPackage를 로드 하지 않고, VSPackage에서 제공 하는 명령 등과 같이 특정 VSPackage 정보를 확인할 수 있습니다.  
   
  Vspackage 설정할 수 있습니다 특정 사용자 인터페이스 (UI) 컨텍스트에서 자동 로드 하려면 예를 들어 솔루션이 열려 있는 경우. <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> 특성이이 컨텍스트를 설정 합니다.  
   
 ### <a name="autoloading-a-vspackage-in-a-specific-context"></a>특정 컨텍스트에서 VSPackage 자동 로드  
   
--   추가 된 `ProvideAutoLoad` VSPackage 특성에 특성:  
+- 추가 된 `ProvideAutoLoad` VSPackage 특성에 특성:  
   
     ```csharp  
     [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]  
@@ -48,11 +43,11 @@ Vspackage는 해당 기능이 필요한 경우에 Visual Studio에 로드 됩니
   
      열거형된 필드를 참조 하세요. <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> UI 컨텍스트 및 GUID 값의 목록에 대 한 합니다.  
   
--   중단점을 설정 합니다 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 메서드.  
+- 중단점을 설정 합니다 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 메서드.  
   
--   VSPackage를 빌드 및 디버깅을 시작 합니다.  
+- VSPackage를 빌드 및 디버깅을 시작 합니다.  
   
--   솔루션을 로드 하거나 새로 만드십시오.  
+- 솔루션을 로드 하거나 새로 만드십시오.  
   
      VSPackage 로드 하 고 중단점에서 중지 됩니다.  
   
@@ -61,7 +56,7 @@ Vspackage는 해당 기능이 필요한 경우에 Visual Studio에 로드 됩니
   
  사용할 수는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> 강제로 VSPackage를 로드 하는 방법입니다.  
   
--   이 코드를 삽입 합니다 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 강제로 다른 VSPackage를 로드 하는 VSPackage의 메서드:  
+- 이 코드를 삽입 합니다 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 강제로 다른 VSPackage를 로드 하는 VSPackage의 메서드:  
   
     ```csharp  
     IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;  
@@ -134,4 +129,3 @@ public override void Unregister(RegistrationContext context)
   
 ## <a name="see-also"></a>참고 항목  
  [VSPackage](../extensibility/internals/vspackages.md)
-

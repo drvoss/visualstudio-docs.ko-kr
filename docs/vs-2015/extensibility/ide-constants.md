@@ -1,14 +1,9 @@
 ---
 title: IDE 상수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - IDE, errors
 - logical views
@@ -20,13 +15,13 @@ helpviewer_keywords:
 ms.assetid: 5030e70a-241d-474a-ba8c-e3b1cf947ff0
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: aa8fb2e4af74facc0ca00343e6abad36b7fcec50
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 18256996d829d34117caa11f4e581d8e54d738b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204036"
 ---
 # <a name="ide-constants"></a>IDE 상수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "51743308"
   
 ## <a name="logical-and-physical-views"></a>논리적 및 물리적 보기  
   
-|값|설명|  
+|값|Description|  
 |-----------|-----------------|  
 |[LOGVIEWID_Code_guid](/dotnet/api/microsoft.visualstudio.vsconstants.logviewid.code_guid?view=visualstudiosdk-2015)|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` 이 값을 전달 해야 하는 처리기를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 메서드를 합니다 **연결** 가능한 코드 보기에이 경우에서 대화 상자.|  
 |[LOGVIEWID_Debugging_guid](/dotnet/api/microsoft.visualstudio.vsconstants.logviewid.debugging_guid?view=visualstudiosdk-2015)|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` 이 값을 전달 하는 처리기를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 메서드를 합니다 **연결** 대화 상자,이 경우 가능한 채워집니다 <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid> 디버깅으로 동일한 보기에 매핑되는 뷰 <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>합니다.|  
@@ -46,7 +41,7 @@ ms.locfileid: "51743308"
   
 ## <a name="editor-factory-flags"></a>편집기 팩터리 플래그  
   
-|값|설명|  
+|값|Description|  
 |-----------|-----------------|  
 |[CEF.CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015)|사용 되지 않는 플래그 비트의 첫 번째 매개 변수로 결합 된 <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> 메서드.|  
 |[CEF.CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015)|첫 번째 매개 변수로 비트 결합을 <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>, 메서드를 나타냅니다 편집기 팩터리 필요한 수정 프로그램을 수행 해야 합니다.|  
@@ -55,7 +50,7 @@ ms.locfileid: "51743308"
   
 ## <a name="visual-studio-errors"></a>Visual Studio 오류  
   
-|값|설명|  
+|값|Description|  
 |-----------|-----------------|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|비동기 동작 인터페이스에서 반환 된 상수 때 해당 개체에서 이미 사용 중|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|"호환 되지 않는 문서 데이터"에 대 한 Visual Studio에 관련 된 HRESULT 오류입니다.|  
@@ -71,7 +66,7 @@ ms.locfileid: "51743308"
   
 ## <a name="visual-studio-constants"></a>Visual Studio 상수  
   
-|값|설명|  
+|값|Description|  
 |-----------|-----------------|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|Visual Studio와 관련 된 HRESULT 오류가 나타냅니다 "프로젝트를 전달 합니다."|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|"도구 상자 표식입니다."에 대 한 Visual Studio에 관련 된 상수|  
@@ -81,7 +76,7 @@ ms.locfileid: "51743308"
 |<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|쿠키 설정 되어 있지 않음을 나타내는 Visual Studio에 해당 되는 상수입니다.|  
 |[VSITEMID.Nil](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|프로젝트 항목의 없음을 나타내는 Visual Studio 항목 식별자입니다. 이 값은 현재 선택 영역이 없는 경우 사용 됩니다.|
 |[VSITEMID.Root](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|프로젝트 계층의 루트를 나타내는 단일 항목 대신 전체 계층 구조를 식별 하기 위해 사용 하는 Visual Studio 항목 식별자입니다.|
-|[VSITEMID 합니다. 선택](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|현재 선택된 된 항목 또는 계층의 루트를 포함할 수 있는 항목을 나타내는 Visual Studio 항목 식별자입니다.| 
+|[VSITEMID.Selection](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|현재 선택된 된 항목 또는 계층의 루트를 포함할 수 있는 항목을 나타내는 Visual Studio 항목 식별자입니다.| 
   
 ## <a name="ivsselectionevents"></a>IVsSelectionEvents  
  IDE의 구성 요소는 무엇입니까을 방금 선택한 후에 설명는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A> 예를 들어를 호출 합니다.  
@@ -122,6 +117,5 @@ ms.locfileid: "51743308"
 |<xref:Microsoft.VisualStudio.VSConstants.CPPM_QUERYCANSELECT>|WM_USER + 1286|  
 |<xref:Microsoft.VisualStudio.VSConstants.CPPM_SETMULTISELECT>|WM_USER + 1289|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [프로젝트 시스템 확장을 위한 IDE 정의 명령](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
-

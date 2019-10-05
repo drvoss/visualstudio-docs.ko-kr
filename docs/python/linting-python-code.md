@@ -1,23 +1,21 @@
 ---
 title: Python 코드에 PyLint 사용
 description: Visual Studio에서 PyLint를 실행하여 linting을 사용자 지정하는 명령줄 옵션을 포함하여 Python 코드의 문제를 확인합니다.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 52b9abf49176f37de98d47d87bc1d7ae265ded1e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bf503cff7d8de2c00a93385113de05de00059390
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066186"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62956816"
 ---
 # <a name="use-pylint-to-check-python-code"></a>PyLint를 사용하여 Python 코드 검사
 
@@ -59,4 +57,4 @@ PyLint 설명서의 [명령줄 옵션](https://pylint.readthedocs.io/en/latest/u
 1. *.pylintrc* 파일을 저장하고 PyLint를 다시 실행하여 해당 경고가 표시되지 않는지 확인합니다.
 
 > [!Tip]
-> 네트워크 공유에서 *.pylintrc* 파일을 사용하려면 UNC 경로나 매핑된 드라이브 문자를 사용하여 네트워크 공유의 파일 이름의 값을 통해 이름이 `PYLINTRC`인 환경 변수를 만듭니다. 예를 들어 `PYLINTRC=\\myshare\python\.pylintrc`과 같은 형식입니다.
+> 네트워크 공유에서 *.pylintrc* 파일을 사용하려면 UNC 경로나 매핑된 드라이브 문자를 사용하여 네트워크 공유의 파일 이름의 값을 통해 이름이 `PYLINTRC`인 환경 변수를 만듭니다. 예를 들어, `PYLINTRC=\\myshare\python\.pylintrc`을 입력합니다.

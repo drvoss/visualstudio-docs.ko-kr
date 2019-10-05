@@ -1,37 +1,39 @@
 ---
-title: '방법: 코드 조각 배포'
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+title: 코드 조각을 확장명으로 배포
+ms.date: 03/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
 ms.assetid: 5f717abd-e167-47ae-818c-6b0bae100ceb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: cd6aba7c20c920c0c4351a1e9aa263fc73cd4415
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 0f0b3211352dc16e51b64196e13f7378bf2a423c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429553"
 ---
 # <a name="how-to-distribute-code-snippets"></a>방법: 코드 조각 배포
 
-친구에게 코드 조각을 제공하고 **코드 조각 관리자**를 사용하여 고유한 컴퓨터에 코드 조각을 설치하면 됩니다. 그러나 배포할 코드 조각이 여러 개이거나 더 광범위하게 배포하려는 경우 Visual Studio 확장에 코드 조각 파일을 포함합니다. 그런 다음, Visual Studio 사용자는 확장을 설치할 수 있습니다.
+친구에게 코드 조각을 제공하고 **코드 조각 관리자**를 사용하여 고유한 컴퓨터에 코드 조각을 설치하면 됩니다. 그러나 배포할 코드 조각이 여러 개이거나 더 광범위하게 배포하려는 경우 Visual Studio 확장에 코드 조각 파일을 포함할 수 있습니다. 그런 다음, Visual Studio 사용자는 확장을 설치하여 코드 조각을 가져올 수 있습니다.
 
-Visual Studio 확장을 만들려면 Visual Studio SDK를 설치해야 합니다. [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)에서 사용 중인 Visual Studio와 일치하는 VSSDK 버전을 찾습니다.
+## <a name="prerequisites"></a>전제 조건
+
+**Visual Studio 확장 개발** 워크로드를 설치하여 **VSIX 프로젝트** 프로젝트 템플릿에 액세스합니다.
+
+![Visual Studio 확장 개발 워크로드](media/vs-2019/extension-development-workload.png)
 
 ## <a name="set-up-the-extension"></a>확장 설정
 
-이 프로시저에서는 [연습: 코드 조각 만들기](../ide/walkthrough-creating-a-code-snippet.md)에서 만들어진 동일한 Hello World 코드 조각을 사용합니다. *.snippet* 텍스트가 제공되므로 돌아가서 코드 조각을 만들 필요가 없습니다.
+이 프로시저에서는 다음 연습에서 만들어진 동일한 Hello World 코드 조각을 사용합니다. [연습: 코드 조각 만들기](../ide/walkthrough-creating-a-code-snippet.md)를 참조하세요. 이 문서에서는 코드 조각 XML을 제공하므로, 돌아가서 코드 조각을 만들 필요가 없습니다.
 
-1. **TestSnippet**이라는 새 VSIX 프로젝트를 만듭니다. (**파일** > **새로 만들기** > **프로젝트** > **Visual C#(또는 Visual Basic)** > **확장성**)
+1. **빈 VSIX 프로젝트** 템플릿에서 새 프로젝트를 만들고 프로젝트의 이름을 **TestSnippet**으로 지정합니다.
 
 2. **TestSnippet** 프로젝트에서 새 XML 파일을 추가하고 *VBCodeSnippet.snippet*을 호출합니다. 콘텐츠를 다음 XML로 바꿉니다.
 
@@ -69,7 +71,17 @@ Visual Studio 확장을 만들려면 Visual Studio SDK를 설치해야 합니다
 
 ### <a name="add-the-pkgdef-file"></a>.pkgdef 파일 추가
 
+::: moniker range="vs-2017"
+
 1. *HelloWorldVB* 폴더에 텍스트 파일을 추가하고 이름을 *HelloWorldVB.pkgdef*로 지정합니다. 이 파일을 사용하여 특정 키를 레지스트리에 추가합니다. 이 경우에 새 하위 키를 **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Languages\CodeExpansions\Basic** 키에 추가합니다.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. *HelloWorldVB* 폴더에 텍스트 파일을 추가하고 이름을 *HelloWorldVB.pkgdef*로 지정합니다. 이 파일을 사용하여 특정 키를 레지스트리에 추가합니다. 이 경우에 새 하위 키를 **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Languages\CodeExpansions\Basic** 키에 추가합니다.
+
+::: moniker-end
 
 2. 파일에 다음 줄을 추가합니다.
 
@@ -103,7 +115,9 @@ Visual Studio 확장을 만들려면 Visual Studio SDK를 설치해야 합니다
 
 4. 조각을 테스트합니다. 실험적 인스턴스에서 Visual Basic 프로젝트를 열고 코드 파일의 하나를 엽니다. 코드의 임의 위치에 커서를 놓고 마우스 오른쪽 단추를 클릭하고 나서 상황에 맞는 메뉴에서 **조각 삽입**을 선택합니다.
 
-5. *HelloWorldVB*가 폴더의 하나로 표시되어야 합니다. 폴더를 두 번 클릭합니다. 드롭다운 **HelloWorldVB**가 포함된 **코드 조각 삽입: HelloWorldVB >** 팝업이 표시되어야 합니다. **HelloWorldVB** 드롭다운을 클릭합니다. 파일에 추가된 다음 줄을 확인해야 합니다.
+5. *HelloWorldVB*가 폴더의 하나로 표시되어야 합니다. 폴더를 두 번 클릭합니다. **코드 조각 삽입: HelloWorldVB >** 팝업이 표시되어야 하고 여기에는 드롭다운 **HelloWorldVB**가 포함됩니다. **HelloWorldVB** 드롭다운을 클릭합니다.
+
+   다음 줄이 코드 파일에 추가됩니다.
 
     ```vb
     Console.WriteLine("Hello, World!")

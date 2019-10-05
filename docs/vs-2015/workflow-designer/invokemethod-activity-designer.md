@@ -1,11 +1,8 @@
 ---
 title: InvokeMethod 활동 디자이너 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.InvokeMethod.UI
@@ -13,13 +10,13 @@ ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: a3fa1c07bbb32bc1da963a0d2f0a91ae6c193a30
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 61398efe1849c6038e13a68ae3b2e2f5f80f1d5d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863687"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952011"
 ---
 # <a name="invokemethod-activity-designer"></a>InvokeMethod 활동 디자이너
 **InvokeMethod** 디자이너 만들기 및 구성 되는 <xref:System.Activities.Statements.InvokeMethod> 활동입니다.  
@@ -35,7 +32,7 @@ ms.locfileid: "49863687"
 ### <a name="the-invokemethod-properties"></a>InvokeMethod 속성  
  다음 표에서는 <xref:System.Activities.Statements.InvokeMethod> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. 이러한 속성은 속성 표에서 편집할 수 있으며 일부 속성은 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 디자이너 화면에서 편집할 수 있습니다.  
   
-|속성 이름|필수|용도|  
+|속성 이름|필수|사용|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.InvokeMethod> 활동의 이름입니다. 기본값은 InvokeMethod입니다.<br /><br /> <xref:System.Activities.Activity.DisplayName%2A>은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|  
 |<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|True|작업이 실행될 때 호출할 메서드의 이름입니다. 호출된 된 메서드에서 선언 해야 합니다 **공용**합니다. 이 속성은 디자이너 화면에서 편집할 수 있습니다. 이 속성은 필수 속성입니다.|  
@@ -57,12 +54,12 @@ ms.locfileid: "49863687"
   
 3. <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> 컬렉션을 반복하고 각 인수를 등록합니다.  
   
-   다음과 같은 메시지와 함께 <xref:System.Activities.InvalidWorkflowException> 형식의 예외가 발생합니다. 'InvokeMethod': 이름이 'TargetObject'인 변수(RuntimeArgument 또는 DelegateArgument) 변수가 이미 있습니다. 이름은 환경 범위 내에서 고유해야 합니다.  
+   예외가 발생 합니다 형식의 <xref:System.Activities.InvalidWorkflowException> 다음 메시지와 함께 합니다. 'InvokeMethod': 이름이 ''를 사용 하 여 변수를 RuntimeArgument 또는 DelegateArgument를을 이미 존재합니다. 이름은 환경 범위 내에서 고유해야 합니다.  
   
    <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> 및 <xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>는 워크플로 인수가 아니고 따라서 <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A> 메서드에서 <xref:System.Activities.Statements.InvokeMethod> 활동의 <xref:System.Activities.Activity.CacheMetadata%2A> 컬렉션에 등록되어 있지 않기 때문에 이러한 제한이 적용되지 않습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [기본 형식](../workflow-designer/primitives-activity-designers.md)   
- [할당](../workflow-designer/assign-activity-designer.md)   
+ [Assign](../workflow-designer/assign-activity-designer.md)   
  [지연](../workflow-designer/delay-activity-designer.md)   
  [WriteLine](../workflow-designer/writeline-activity-designer.md)

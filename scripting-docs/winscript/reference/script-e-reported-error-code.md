@@ -2,7 +2,6 @@
 title: SCRIPT_E_REPORTED 오류 코드 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 018cdb5c5fef4e12dc62cf4a06ef0e2b52a98216
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4466869f4da6a0efe20955af6e6ef35ca9479f6c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734053"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840267"
 ---
 # <a name="scriptereported-error-code"></a>SCRIPT_E_REPORTED 오류 코드
 스크립팅 엔진을 통해 호스트에 처리 되지 않은 예외를 보고 했습니다 [IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md)합니다. 호스트는이 오류를 무시 해도 됩니다.  

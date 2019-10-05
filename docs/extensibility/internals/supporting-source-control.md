@@ -5,53 +5,54 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], supporting
 ms.assetid: 567acde3-354e-4f39-8d99-0ef86c103396
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 523c7de972958eff9224896d3a59543163eb7b9e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2b4f12790de00cc835f7268830bf6d9a4734b839
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936817"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331238"
 ---
 # <a name="supporting-source-control"></a>소스 제어 지원
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 파일 체크 아웃, 체크 인 및 프로젝트 또는 편집기에 대 한 다른 소스 제어 작업을 지원합니다. 원본 제어 클라이언트로 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 와 같은 소스 제어 패키지를 상호 작용 하도록 설계 됩니다 [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], 보관, 버전 관리 및 동적으로 정의 된 파일 집합에 대 한 제어 기능을 제공 하는.  
-  
-## <a name="in-this-section"></a>섹션 내용  
- [소스 제어 패키지 모델](../../extensibility/internals/model-for-source-control-packages.md)  
- 프로젝트 형식을 구현 해야 하는 인터페이스에 설명 합니다. 소스 제어를 지원 하도록 합니다.  
-  
- [디자인 결정](../../extensibility/internals/source-control-design-decisions.md)  
- 해당 대답 프로젝트 형식을 구현 하는 방법을 변경 하는 질문을 제공 합니다.  
-  
- [구성 세부 정보](../../extensibility/internals/source-control-configuration-details.md)  
- 소스 제어를 지 원하는 프로젝트 형식 구현의 변경 하는 방법을 설명 합니다.  
-  
- [프로젝트 및 편집기에 대한 추가 지침](../../extensibility/internals/additional-source-control-guidelines-for-projects-and-editors.md)  
- 프로젝트 형식 및 편집기에 대 한 모범 사례를 설명합니다.  
-  
- [런타임 세부 정보](../../extensibility/internals/source-control-runtime-details.md)  
- 사용자 소스 제어 시스템에 추가 하는 경우 프로젝트를 등록 하는 방법을 설명 합니다.  
-  
-## <a name="reference"></a>참조  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>  
- 메모리에서 변경 되거나 저장 될 파일에는 원본 제어 패키지를 환경에 나타냅니다.  
-  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>  
- 프로젝트 및 계층 소스 제어를 사용 하 여 자체를 등록 하 고 소스 제어 상태에 대 한 정보를 얻을 수 있습니다.  
-  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>  
- 프로젝트 파일 및 프로젝트 항목에 대 한 소스 제어를 제공 하는 프로젝트 시스템에서 구현 됩니다.  
-  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>  
- 쿼리를 추가, 제거 또는 파일 또는 솔루션의 디렉터리 이름 바꾸기 사용 권한에 대 한 환경 프로젝트에서 사용 합니다.  
-  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>  
- 프로젝트 파일 또는 디렉터리에 대 한 변경 내용을 클라이언트를 알립니다.  
-  
-## <a name="related-sections"></a>관련 단원  
- [프로젝트 형식](../../extensibility/internals/project-types.md)  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 파일 체크 아웃, 체크 인 및 프로젝트 또는 편집기에 대 한 다른 소스 제어 작업을 지원합니다. 원본 제어 클라이언트로 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 와 같은 소스 제어 패키지를 상호 작용 하도록 설계 됩니다 [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], 보관, 버전 관리 및 동적으로 정의 된 파일 집합에 대 한 제어 기능을 제공 하는.
+
+## <a name="in-this-section"></a>섹션 내용
+- [소스 제어 패키지 모델](../../extensibility/internals/model-for-source-control-packages.md)
+
+ 프로젝트 형식을 구현 해야 하는 인터페이스에 설명 합니다. 소스 제어를 지원 하도록 합니다.
+
+- [디자인 결정](../../extensibility/internals/source-control-design-decisions.md)
+
+ 해당 대답 프로젝트 형식을 구현 하는 방법을 변경 하는 질문을 제공 합니다.
+
+- [구성 세부 정보](../../extensibility/internals/source-control-configuration-details.md)
+
+ 소스 제어를 지 원하는 프로젝트 형식 구현의 변경 하는 방법을 설명 합니다.
+
+- [프로젝트 및 편집기에 대한 추가 지침](../../extensibility/internals/additional-source-control-guidelines-for-projects-and-editors.md)
+
+ 프로젝트 형식 및 편집기에 대 한 모범 사례를 설명합니다.
+
+- [런타임 세부 정보](../../extensibility/internals/source-control-runtime-details.md)
+
+ 사용자 소스 제어 시스템에 추가 하는 경우 프로젝트를 등록 하는 방법을 설명 합니다.
+
+## <a name="reference"></a>참조
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> 메모리에서 변경 되거나 저장 될 파일에는 원본 제어 패키지를 환경에 나타냅니다.
+
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2> 프로젝트 및 계층 소스 제어를 사용 하 여 자체를 등록 하 고 소스 제어 상태에 대 한 정보를 얻을 수 있습니다.
+
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2> 프로젝트 파일 및 프로젝트 항목에 대 한 소스 제어를 제공 하는 프로젝트 시스템에서 구현 됩니다.
+
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> 쿼리를 추가, 제거 또는 파일 또는 솔루션의 디렉터리 이름 바꾸기 사용 권한에 대 한 환경 프로젝트에서 사용 합니다.
+
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> 프로젝트 파일 또는 디렉터리에 대 한 변경 내용을 클라이언트를 알립니다.
+
+## <a name="related-sections"></a>관련 단원
+- [프로젝트 형식](../../extensibility/internals/project-types.md)
+
  기본 빌딩 블록으로 프로젝트의 개요를 제공 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 통합된 개발 환경 (IDE)입니다. 프로젝트 빌드 및 컴파일 코드를 제어 하는 방법을 설명 하는 추가 항목 링크가 제공 됩니다.

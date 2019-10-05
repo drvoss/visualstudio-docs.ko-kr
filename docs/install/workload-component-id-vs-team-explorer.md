@@ -1,65 +1,46 @@
 ---
-title: Visual Studio Team Explorer 2017 워크로드 및 구성 요소 ID
+title: Visual Studio Team Explorer 워크로드 및 구성 요소 ID
 titleSuffix: ''
 description: Visual Studio 작업 및 구성 요소 ID를 사용하여 테스터를 위한 통합된 테스트 도구를 제공합니다.
 keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: douge
-ms.date: 11/13/2018
+manager: jillfra
+ms.date: 05/22/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.service: ''
-ms.technology: vs-acquisition
-ms.prod: visual-studio-dev15
 ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
-ms.workload:
-- multiple
-ms.openlocfilehash: 7b54e0f73f4f0d504df3757ffc881b2282fc9471
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: f2ffd7b021e3ca3a699acfb136c14e8b53c9a87d
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066108"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037492"
 ---
-# <a name="visual-studio-team-explorer-2017-component-directory"></a>Visual Studio Team Explorer 2017 구성 요소 디렉터리
+# <a name="visual-studio-team-explorer-component-directory"></a>Visual Studio Team Explorer 구성 요소 디렉터리
 
-이 페이지의 표에는 명령줄을 사용하여 Visual Studio를 설치하는 데 사용할 수 있는 ID 또는 VSIX 매니페스트에서 종속성으로 지정할 수 있는 ID가 나열되어 있습니다. Visual Studio에 대한 업데이트를 릴리스할 때 추가 구성 요소가 추가될 것입니다.
+[!INCLUDE[workloads-components-universal-header_md](includes/workloads-components-universal-header_md.md)]
 
-또한 이 페이지에 대해 다음 사항에 유의하세요.
+::: moniker range="vs-2017"
 
-* 각 작업에는 고유한 섹션 및 작업 ID와 해당 작업에 사용할 수 있는 구성 요소 표가 있습니다.
-* 기본적으로 **필수** 구성 요소는 작업을 설치할 때 설치됩니다.
-* 원하는 경우 **권장** 및 **선택적** 구성 요소를 설치할 수도 있습니다.
-* 작업과 관련이 없는 추가 구성 요소를 나열하는 섹션도 추가했습니다.
+[!INCLUDE[workloads-components-header-2017_md](includes/workloads-components-header-2017_md.md)]
 
-VSIX 매니페스트에 종속성을 설정하는 경우 구성 요소 ID만 지정해야 합니다. 이 페이지의 표를 사용하여 최소 구성 요소 종속성을 확인합니다. 일부 시나리오에서는 작업에서 하나의 구성 요소만 지정한다고 의미할 수 있습니다. 다른 시나리오에서는 단일 작업에서 여러 구성 요소를 지정하거나 여러 작업에서 여러 구성 요소를 지정한다고 의미할 수 있습니다. 자세한 내용은 [방법: 확장성 프로젝트를 Visual Studio 2017로 마이그레이션](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) 페이지를 참조하세요.
+[!include[Visual Studio Team Explorer 2017](includes/vs-2017/workload-component-id-vs-team-explorer.md)]
 
-이러한 ID를 사용하는 방법에 대한 자세한 내용은 [명령줄 매개 변수를 사용하여 Visual Studio 2017 설치](use-command-line-parameters-to-install-visual-studio.md) 페이지를 참조하세요. 다른 제품의 작업 및 구성 요소 ID 목록은 [Visual Studio 2017 작업 및 구성 요소 ID](workload-and-component-ids.md) 페이지를 참조하세요.
+::: moniker-end
 
-## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2017"></a>Visual Studio 핵심 편집기(Visual Studio Team Explorer 2017에 포함)
+::: moniker range=">= vs-2019"
 
-**ID:** Microsoft.VisualStudio.Workload.CoreEditor
+[!INCLUDE[workloads-components-header-2019_md](includes/workloads-components-header-2019_md.md)]
 
-**설명:** 구문 인식 코드 편집, 소스 코드 제어, 작업 항목 관리 등을 포함하는 Visual Studio 코어 셸 환경입니다.
+[!include[Visual Studio Team Explorer 2019](includes/vs-2019/workload-component-id-vs-team-explorer.md)]
 
-### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
-
-구성 요소 ID | name | 버전 | 종속성 유형
---- | --- | --- | ---
-Microsoft.VisualStudio.Component.CoreEditor | Visual Studio 핵심 편집기 | 15.8.27729.1 | 필수
-Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | C++ 사용자용 Visual Studio 시작 페이지 | 15.0.27128.1 | Optional
-
-## <a name="unaffiliated-components"></a>독립적 구성 요소
-
-이러한 구성 요소는 작업에 포함되지 않지만 개별 구성 요소로 선택할 수 있습니다.
-
-구성 요소 ID | name | 버전
---- | --- | ---
-N/A | N/A | N/A
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

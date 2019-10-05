@@ -2,7 +2,6 @@
 title: 액티브 스크립트 디버거 상수, 열거형 및 구조체 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,12 +15,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6bd41fe91fdf030b957d800248343198f2617018
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b287001371b80612a2b09a9672e59aff51309cc9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24642073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62997332"
 ---
 # <a name="active-script-debugger-constants-enumerations-and-structures"></a>액티브 스크립트 디버거 상수, 열거형 및 구조체
 다음 상수, 열거형 및 구조체는 활성 디버깅 인터페이스에서 사용됩니다.  
@@ -30,13 +29,13 @@ ms.locfileid: "24642073"
   
 |상수|설명|  
 |---------------|-----------------|  
-|[APPBREAKFLAGS 상수](../../winscript/reference/appbreakflags-enumeration.md)|현재 응용 프로그램 및 스레드에 대한 디버그 상태를 나타냅니다.|  
+|[APPBREAKFLAGS 상수](../../winscript/reference/appbreakflags-enumeration.md)|현재 애플리케이션 및 스레드에 대한 디버그 상태를 나타냅니다.|  
 |[DEBUG_TEXT 상수](../../winscript/reference/debug-text-constants.md)|옵션 플래그를 사용 하는 동안 [IDebugExpressionContext::ParseLanguageText](../../winscript/reference/idebugexpressioncontext-parselanguagetext.md)합니다.|  
 |[TEXT_DOC_ATTR 상수](../../winscript/reference/text-doc-attr-constants.md)|문서의 특성을 설명합니다.|  
   
 |열거형|설명|  
 |------------------|-----------------|  
-|[APPBREAKFLAGS 상수](../../winscript/reference/appbreakflags-enumeration.md)|현재 응용 프로그램 및 스레드에 대한 디버그 상태를 나타냅니다.|  
+|[APPBREAKFLAGS 상수](../../winscript/reference/appbreakflags-enumeration.md)|현재 애플리케이션 및 스레드에 대한 디버그 상태를 나타냅니다.|  
 |[APPLICATION_NODE_EVENT_FILTER 열거형](../../winscript/reference/application-node-event-filter-enumeration.md)|필터를 사용하여 제외할 노드를 나타냅니다.|  
 |[BREAKPOINT_STATE 열거형](../../winscript/reference/breakpoint-state-enumeration.md)|중단점의 상태를 나타냅니다.|  
 |[BREAKREASON 열거형](../../winscript/reference/breakreason-enumeration.md)|중단된 원인을 나타냅니다.|  

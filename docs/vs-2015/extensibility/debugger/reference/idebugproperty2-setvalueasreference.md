@@ -1,14 +1,9 @@
 ---
 title: IDebugProperty2::SetValueAsReference | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProperty2::SetValueAsReference
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 341b1b89-4ab8-4e1c-abe2-fb955df5c6b0
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f116d2ab53df42a080ab90b6dbecf2ec985fa08a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a94e3767ee05e39e847af27dc5999fa8bbbe2d44
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773745"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193446"
 ---
 # <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -65,14 +60,13 @@ int SetValueAsReference(
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`; 그렇지 않으면 오류 반환 코드, 일반적으로 다음 중 하나:  
   
-|Error|설명|  
+|Error|Description|  
 |-----------|-----------------|  
 |`E_SETVALUEASREFERENCE_NOTSUPPORTED`|참조에서 값을 설정 하는 것은 지원 되지 않습니다.|  
 |`E_SETVALUE_VALUE_CANNOT_BE_SET`|이 속성 메서드를 참조 하는 대로 값을 설정할 수 없습니다.|  
 |`E_SETVALUE_VALUE_IS_READONLY`|값을 읽기 전용 이며 설정할 수 없습니다.|  
 |`E_NOTIMPL`|메서드가 구현 되지 않았습니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
-

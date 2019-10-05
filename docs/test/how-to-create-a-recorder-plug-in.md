@@ -7,15 +7,13 @@ helpviewer_keywords:
 ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 822c5cc1b657e6b5ada886ef7f10219a42df723a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: e49fbb3411aee98fce5899c522b9743b3f2afa33
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950256"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>방법: 레코더 플러그 인 만들기
 
@@ -35,36 +33,26 @@ ms.locfileid: "53064629"
 
 ### <a name="to-create-a-recorder-plug-in"></a>레코더 플러그 인을 만들려면
 
-1.  레코더 플러그 인을 만들려는 웹 성능 테스트가 포함된 웹 성능 및 부하 테스트 프로젝트가 들어 있는 솔루션을 엽니다.
+1. 레코더 플러그 인을 만들려는 웹 성능 테스트가 포함된 웹 성능 및 부하 테스트 프로젝트가 들어 있는 솔루션을 엽니다.
 
-2.  **솔루션 탐색기**에서 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가**를 선택한 다음, **새 프로젝트**를 선택합니다.
+2. 새 **클래스 라이브러리** 프로젝트를 솔루션에 추가합니다.
 
-     **새 프로젝트 추가** 대화 상자가 표시됩니다.
-
-3.  **설치된 템플릿**에서 **Visual C#** 을 선택합니다.
-
-4.  템플릿 목록에서 **클래스 라이브러리**를 선택합니다.
-
-5.  **이름** 텍스트 상자에 레코더 플러그 인의 이름을 입력합니다.
-
-     클래스 라이브러리가 **솔루션 탐색기**에 추가되고 새 클래스가 **코드 편집기**에서 열립니다.
-
-6.  **솔루션 탐색기**의 새 클래스 라이브러리 프로젝트 폴더에서 **References** 폴더를 마우스 오른쪽 단추로 클릭하고 **참조 추가**를 선택합니다.
+3. **솔루션 탐색기**의 새 클래스 라이브러리 프로젝트 폴더에서 **References** 폴더를 마우스 오른쪽 단추로 클릭하고 **참조 추가**를 선택합니다.
 
     > [!TIP]
     > 새 클래스 라이브러리 프로젝트 폴더의 예는 **RecorderPlugins**입니다.
 
      **참조 추가** 대화 상자가 표시됩니다.
 
-7.  **.NET** 탭을 선택합니다.
+4. **.NET** 탭을 선택합니다.
 
-8.  아래로 스크롤하여 **Microsoft.VisualStudio.QualityTools.WebTestFramework**를 선택한 다음, **확인**을 선택합니다.
+5. 아래로 스크롤하여 **Microsoft.VisualStudio.QualityTools.WebTestFramework**를 선택한 다음, **확인**을 선택합니다.
 
      **Microsoft.VisualStudio.QualityTools.WebTestFramework**가 **솔루션 탐색기**의 **References** 폴더에 추가됩니다.
 
-9. 레코더 플러그 인의 코드를 작성합니다. 먼저 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>에서 파생되는 새 공용 클래스를 만듭니다.
+6. 레코더 플러그 인의 코드를 작성합니다. 먼저 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>에서 파생되는 새 공용 클래스를 만듭니다.
 
-10. <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*> 메서드를 재정의합니다.
+7. <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*> 메서드를 재정의합니다.
 
     ```csharp
     public class Class1 : WebTestRecorderPlugin
@@ -81,11 +69,11 @@ ms.locfileid: "53064629"
     > [!NOTE]
     > 웹 성능 테스트를 수정할 경우에는 <xref:Microsoft.VisualStudio.TestTools.WebTesting.PostWebTestRecordingEventArgs.RecordedWebTestModified*> 속성도 true로 설정해야 합니다(`e.RecordedWebTestModified = true;`).
 
-11. 웹 기록이 발생한 후 레코더 플러그 인에서 실행할 작업에 따라 원하는 코드를 더 추가합니다. 예를 들어 다음 샘플과 같이 사용자 지정 상관 관계를 처리하는 코드를 추가할 수 있습니다. 주석을 트랜잭션으로 변환하거나 웹 성능 테스트에 유효성 검사 규칙을 추가하는 등의 작업을 위한 레코더 플러그 인을 만들 수도 있습니다.
+8. 웹 기록이 발생한 후 레코더 플러그 인에서 실행할 작업에 따라 원하는 코드를 더 추가합니다. 예를 들어 다음 샘플과 같이 사용자 지정 상관 관계를 처리하는 코드를 추가할 수 있습니다. 주석을 트랜잭션으로 변환하거나 웹 성능 테스트에 유효성 검사 규칙을 추가하는 등의 작업을 위한 레코더 플러그 인을 만들 수도 있습니다.
 
-12. **빌드** 메뉴에서 **\<클래스 라이브러리 프로젝트 이름> 빌드**를 선택합니다.
+9. **빌드** 메뉴에서 **\<클래스 라이브러리 프로젝트 이름> 빌드**를 선택합니다.
 
-13. 그런 다음 레코더 플러그 인을 Visual Studio에 등록하기 위해 배포해야 합니다.
+그런 다음, Visual Studio에 등록하기 위해 레코더 플러그 인을 배포합니다.
 
 ### <a name="deploy-the-recorder-plug-in"></a>레코더 플러그 인 배포
 
@@ -98,13 +86,13 @@ ms.locfileid: "53064629"
 > [!WARNING]
 > 레코더 플러그 인을 두 위치 중 하나에 복사한 후 Visual Studio를 다시 시작해야 레코더 플러그 인이 등록됩니다.
 
-### <a name="to-execute-the-recorder-plug-in"></a>레코더 플러그 인을 실행하려면
+### <a name="execute-the-recorder-plug-in"></a>레코더 플러그 인 실행
 
-1.  새 웹 성능 테스트를 만듭니다.
+1. 새 웹 성능 테스트를 만듭니다.
 
      **WebTestRecordPlugins 사용** 대화 상자가 나타납니다.
 
-2.  레코더 플러그 인의 확인란을 선택하고 **확인**을 선택합니다.
+2. 레코더 플러그 인의 확인란을 선택하고 **확인**을 선택합니다.
 
      웹 성능 테스트의 기록이 완료된 후 새 레코더 플러그 인이 실행됩니다.
 
@@ -125,9 +113,7 @@ ms.locfileid: "53064629"
 > [!NOTE]
 > 전체 샘플 코드 목록은 이 항목의 맨 아래에 있습니다.
 
-**샘플 코드 검토**
-
-## <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>결과를 반복하여 ReportSession이 있는 첫 번째 페이지 찾기
+### <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>결과를 반복하여 ReportSession이 있는 첫 번째 페이지 찾기
 
 이 코드 샘플 부분에서는 기록된 각 개체를 반복하고 응답 본문에서 ReportSession을 검색합니다.
 
@@ -144,7 +130,7 @@ foreach (WebTestResultUnit unit in e.RecordedWebTestResult.Children)
              {
 ```
 
-## <a name="add-an-extraction-rule"></a>추출 규칙 추가
+### <a name="add-an-extraction-rule"></a>추출 규칙 추가
 
 응답을 찾았으면 추출 규칙을 추가해야 합니다. 이 코드 샘플 부분에서는 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRuleReference> 클래스를 사용하여 추출 규칙을 만든 다음, 웹 성능 테스트에서 추출 규칙을 추가할 올바른 요청을 찾습니다. 각 결과 개체에는 웹 성능 테스트에서 올바른 요청을 가져오기 위해 코드에서 사용되는 DeclarativeWebTestItemId라는 새 속성이 추가되어 있습니다.
 
@@ -168,7 +154,7 @@ ExtractionRuleReference ruleReference = new ExtractionRuleReference();
      }
 ```
 
-## <a name="replace-query-string-parameters"></a>쿼리 문자열 매개 변수 바꾸기
+### <a name="replace-query-string-parameters"></a>쿼리 문자열 매개 변수 바꾸기
 
 이제 코드에서는 다음 코드 샘플 부분과 같이 이름이 ReportSession인 모든 쿼리 문자열 매개 변수를 찾아 해당 값을 {{SessionId}}로 변경합니다.
 

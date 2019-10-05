@@ -1,35 +1,30 @@
 ---
 title: 편집기 어댑터를 사용 하 여 새롭거나 변경 된 동작 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - adapter behavior
 ms.assetid: 5555b116-cfdb-4773-ba62-af80fda64abd
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: cac26a6aeca6985546bcd21aec6cf45d72164e8a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fc7ddaf7ec67a1e33248d5ce424868849200d3e6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194172"
 ---
-# <a name="new-or-changed-behavior-with-editor-adapters"></a>편집기 어댑터를 사용 하 여 새롭거나 변경 된 동작
+# <a name="new-or-changed-behavior-with-editor-adapters"></a>편집기 어댑터를 사용하는 새롭거나 변경된 동작
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 편집기 어댑터의 동작에 다음과 같은 차이점을 알도록 해야 Visual Studio 핵심 편집기의 이전 버전에 대해 작성 된 코드를 업데이트 하는 새로운 API를 사용 하는 대신 편집기 어댑터 (또는 shim)를 사용 하려는 경우 이전 코어 편집기 관련 하 여입니다.  
   
 ## <a name="features"></a>기능  
   
-#### <a name="using-setsite"></a>SetSite()를 사용 하 여  
+#### <a name="using-setsite"></a>Using SetSite()  
  호출 해야 <xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite.SetSite%2A> 텍스트 버퍼에 텍스트 뷰를 cocreate 하지 못했습니다. 하 고 다른 작업을 수행 하기 전에 windows 코드입니다. 그러나 사용 하는 경우에 필요 없는 합니다 <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService> 자체는이 서비스의 create () 메서드를 호출 하므로, 만들려는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.SetSite%2A>합니다.  
   
 #### <a name="hosting-ivscodewindow-and-ivstextview-in-your-own-content"></a>고유한 콘텐츠에 IVsCodeWindow 및 IVsTextView 호스팅  
@@ -48,7 +43,7 @@ ms.locfileid: "51817401"
  WPF 모드는 두 가지 방법으로 Win32 모드에서 서로 다릅니다. 먼저 WPF 컨텍스트에서 텍스트 뷰를 호스트할 수 있습니다. WPF 창 캐스팅 하 여 액세스할 수 있습니다는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 하 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElementPane> 호출 및 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElement.GetUIObject%2A>합니다. 두 번째 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWindowHandle%2A> 여전히 반환 HWND, 하지만이 HWND의 위치를 확인 하 고 포커스를 설정에 사용할 수 있습니다. 이 편집기 창을 그리는 방법에 영향을 주지 WM_PAINT 메시지에 응답할이 HWND를 사용 하지 해야 합니다. 이 HWND 어댑터를 사용 하 여 새 코드 편집기로의 전환을 용이 하 게에 표시 됩니다. 사용 하지는 않는 것이 좋습니다 `VIF_NO_HWND_SUPPORT` 구성 요소는 HWND에서 반환 된 HWND의 제한으로 인해 작업에 필요한 경우 `GetWindowHandle` 이 모드에서.  
   
 #### <a name="passing-arrays-as-parameters-in-native-code"></a>네이티브 코드의 배열을 매개 변수로 전달  
- 가지 배열 및 개수를 포함 하는 매개 변수가 있는 레거시 편집기 API에서에서 많은 방법이 있습니다. 예제입니다.  
+ 가지 배열 및 개수를 포함 하는 매개 변수가 있는 레거시 편집기 API에서에서 많은 방법이 있습니다. 예는 다음과 같습니다.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx.AppendViewOnlyMarkerTypes%2A>  
   
@@ -62,7 +57,7 @@ ms.locfileid: "51817401"
  버퍼 어댑터 UI 스레드에서 호출 해야 합니다. 버퍼 어댑터는 COM 마샬링 관리 코드에서 해당 호출을 바이패스 하 고 호출은 자동으로 마샬링할 수 없는 UI 스레드는 관리 되는 개체입니다.  백그라운드 스레드에서 버퍼 어댑터를 호출 하는 경우 사용 해야 <xref:System.Windows.Threading.Dispatcher.Invoke%2A> 또는 비슷한 메서드.  
   
 #### <a name="lockbuffer-methods"></a>LockBuffer 메서드  
- 모든 LockBuffer() 메서드 사용 되지 않습니다. 예제입니다.  
+ 모든 LockBuffer() 메서드 사용 되지 않습니다. 예는 다음과 같습니다.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.LockBuffer%2A>  
   
@@ -90,32 +85,32 @@ ms.locfileid: "51817401"
   
  영향을 받는 메서드 (목록 목록은 전체 목록이 아닙니다) 하는 다음과 같습니다.  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.CenterLines%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.CenterLines%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetCaretPos%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetCaretPos%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetLineAndColumn%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetLineAndColumn%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetNearestPosition%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetNearestPosition%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetPointOfLineColumn%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetPointOfLineColumn%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetTextStream%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetTextStream%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWordExtent%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWordExtent%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.PositionCaretForEditing%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.PositionCaretForEditing%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.ReplaceTextOnLine%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.ReplaceTextOnLine%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetCaretPos%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetCaretPos%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetSelection%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetSelection%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetTopLine%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetTopLine%2A>  
   
 #### <a name="outlining"></a>개요  
- 클라이언트 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> 를 사용 하 여 추가 된 개요 영역 으로만 나타납니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>또는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSessionEx.AddHiddenRegionsEx%2A>합니다. 임시 지역 편집기 어댑터를 통해 추가 하지 않으므로 표시 되지 됩니다. 마찬가지로, 이러한 클라이언트는 개요 편집기 어댑터 보다는 새 편집기 코드를 사용 하는 언어 (C# 및 c + + 포함)에서 추가 영역을 표시 되지 않습니다.  
+ 클라이언트 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> 를 사용 하 여 추가 된 개요 영역 으로만 나타납니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>또는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSessionEx.AddHiddenRegionsEx%2A>합니다. 임시 지역 편집기 어댑터를 통해 추가 하지 않으므로 표시 되지 됩니다. 마찬가지로, 이러한 클라이언트 표시 언어에서 추가 지역 개요 (포함 하 여 C# 및 C++) 편집기 어댑터 보다는 새 편집기 코드를 사용 하는 합니다.  
   
 #### <a name="line-heights"></a>줄 높이  
  새 편집기에서 텍스트 줄에는 글꼴 크기 및 다른 줄을 기준으로 줄을 이동할 수 있는 가능한 줄 변환에 따라 높이가 다른 있을 수 있습니다. 줄 높이 같은 메서드에서 반환 된 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetLineHeight%2A> 적용 없는 줄 변환을 사용 하 여 기본 글꼴 크기를 사용 하 여 줄의 높이입니다. 이 높이 수도 있고 실제 뷰에서 줄의 높이 나타내지 않을 수 있습니다.  
@@ -125,9 +120,9 @@ ms.locfileid: "51817401"
   
 #### <a name="intellisense"></a>IntelliSense  
   
--   합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateTipWindow%2A> 메서드 중 하나를 구현 하지 않는 클래스에서 전달 하는 경우 실패 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextTipWindow2> 또는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow3>합니다. 사용자 지정 Win32 소유자가 그린 팝업은 더 이상 지원 합니다.  
+- 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateTipWindow%2A> 메서드 중 하나를 구현 하지 않는 클래스에서 전달 하는 경우 실패 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextTipWindow2> 또는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow3>합니다. 사용자 지정 Win32 소유자가 그린 팝업은 더 이상 지원 합니다.  
   
-#### <a name="smarttags"></a>스마트 태그  
+#### <a name="smarttags"></a>SmartTags  
  스마트 태그를 사용 하 여 만든 어댑터 지원 되지 않습니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagData>하십시오 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow>, 및 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow2> 인터페이스.  
   
 #### <a name="dte"></a>DTE  
@@ -150,4 +145,3 @@ ms.locfileid: "51817401"
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.AfterCompletorCommit%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.BeforeCompletorCommit%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.Exec%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetContextLocation%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetServiceProvider%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSmartTagRect%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSubjectCaretPos%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSubjectSelection%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.GetSubjectText%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.QueryStatus%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.ReplaceSubjectTextSpan%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.SetSubjectCaretPos%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.SetSubjectSelection%2A><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateSmartTagWindow%2A>|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewIntellisenseHost>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewIntellisenseHost.SetSubjectFromPrimaryBuffer%2A> 개요 UI에 의해 무시 하지만 어댑터에서 구현 됩니다.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegionEx>|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegionEx.GetBannerAttr%2A> 개요 UI에 의해 무시 하지만 어댑터에서 구현 됩니다.|
-

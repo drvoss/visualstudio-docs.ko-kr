@@ -1,14 +1,9 @@
 ---
 title: IDebugThread2::SetThreadName | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugThread2::SetThreadName
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: fa934121-3f58-44dc-9c30-d3f752e44c8b
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 66da83ecb71fad08fdc4f22e3992508bdfaa989e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e6a427eaa8677cdf1cdf1ba9b89c6bee98a2e1b9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788188"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152976"
 ---
 # <a name="idebugthread2setthreadname"></a>IDebugThread2::SetThreadName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -53,7 +48,6 @@ int SetThreadName ( 
 ## <a name="remarks"></a>설명  
  스레드 이름을 가져오려면 호출 합니다 [GetName](../../../extensibility/debugger/reference/idebugthread2-getname.md) 메서드.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [GetName](../../../extensibility/debugger/reference/idebugthread2-getname.md)
-

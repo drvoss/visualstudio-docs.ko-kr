@@ -47,7 +47,7 @@
                   topicHref: /visualstudio/extensibility/debugger/reference/reference-visual-studio-debugging-apis
             - name: 사용자 환경 지침
               tocHref: /visualstudio/extensibility/ux-guidelines/
-              topicHref: /visualstudio/extensibility/visual-studio-user-experience-guidelines
+              topicHref: /visualstudio/extensibility/ux-guidelines/visual-studio-user-experience-guidelines
         - name: IDE 클래스 디자이너
           tocHref: /visualstudio/ide/class-designer
           topicHref: /visualstudio/ide/class-designer/designing-and-viewing-classes-and-types
@@ -57,9 +57,9 @@
         - name: MSBuild
           tocHref: /visualstudio/msbuild/
           topicHref: /visualstudio/msbuild/msbuild
-        - name: Node.js
+        - name: JavaScript 및 TypeScript
           tocHref: /visualstudio/javascript/
-          topicHref: /visualstudio/javascript/tutorial-nodejs
+          topicHref: /visualstudio/javascript/index
         - name: 프로파일링
           tocHref: /visualstudio/profiling/
           topicHref: /visualstudio/profiling/index

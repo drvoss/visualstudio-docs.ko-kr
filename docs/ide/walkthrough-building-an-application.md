@@ -1,32 +1,31 @@
 ---
-title: '연습: 응용 프로그램 빌드'
+title: '연습: 애플리케이션 구축'
 ms.date: 09/25/2017
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: ghogen
+ms.author: ghogen
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2987df6c8ed8a26c2cf95020e26f67c36721d676
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 8964fc81b8323b6720d7c6d960449c7a9134658b
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672784"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416894"
 ---
-# <a name="walkthrough-build-an-application"></a>연습: 응용 프로그램 빌드
+# <a name="walkthrough-build-an-application"></a>연습: 애플리케이션 구축
 
-이 연습을 완료하면 Visual Studio로 응용 프로그램을 빌드할 때 구성할 수 있는 여러 옵션에 더 익숙해집니다. 샘플 응용 프로그램에 대한 사용자 지정 빌드 구성을 만들고, 특정 경고 메시지를 숨기고, 빌드 출력 정보를 늘립니다.
+이 연습을 완료하면 Visual Studio로 애플리케이션을 빌드할 때 구성할 수 있는 여러 옵션에 더 익숙해집니다. 샘플 애플리케이션에 대한 사용자 지정 빌드 구성을 만들고, 특정 경고 메시지를 숨기고, 빌드 출력 정보를 늘립니다.
 
-## <a name="install-the-sample-application"></a>응용 프로그램 예제 설치
+## <a name="install-the-sample-application"></a>애플리케이션 예제 설치
 
-[WPF 응용 프로그램 빌드 소개](https://code.msdn.microsoft.com/Introduction-to-Building-b8d16419) 샘플을 다운로드합니다. C# 또는 Visual Basic을 선택합니다. *.zip* 파일을 다운로드한 후 압축을 풀고 Visual Studio를 사용하여 *ExpenseItIntro.sln* 파일을 엽니다.
+[WPF 애플리케이션 빌드 소개](https://code.msdn.microsoft.com/Introduction-to-Building-b8d16419) 샘플을 다운로드합니다. C# 또는 Visual Basic을 선택합니다. *.zip* 파일을 다운로드한 후 압축을 풀고 Visual Studio를 사용하여 *ExpenseItIntro.sln* 파일을 엽니다.
 
 ## <a name="create-a-custom-build-configuration"></a>사용자 지정 빌드 구성 만들기
 
-솔루션을 만들면 솔루션에 대한 디버그 및 릴리스 빌드 구성과 해당 기본 플랫폼 대상이 자동으로 정의됩니다. 나중에 이러한 구성을 사용자 지정하거나 고유한 구성을 만들 수 있습니다. 빌드 구성은 빌드 형식을 지정합니다. 빌드 플랫폼은 응용 프로그램이 해당 구성에 대한 대상으로 지정하는 운영 체제를 지정합니다. 자세한 내용은 [빌드 구성 이해](../ide/understanding-build-configurations.md), [빌드 플랫폼 이해](../ide/understanding-build-platforms.md) 및 [방법: 디버그 및 릴리스 프로젝트 구성 설정](../debugger/how-to-set-debug-and-release-configurations.md)을 참조하세요.
+솔루션을 만들면 솔루션에 대한 디버그 및 릴리스 빌드 구성과 해당 기본 플랫폼 대상이 자동으로 정의됩니다. 나중에 이러한 구성을 사용자 지정하거나 고유한 구성을 만들 수 있습니다. 빌드 구성은 빌드 형식을 지정합니다. 빌드 플랫폼은 애플리케이션이 해당 구성에 대한 대상으로 지정하는 운영 체제를 지정합니다. 자세한 내용은 [빌드 구성 이해](../ide/understanding-build-configurations.md), [빌드 플랫폼 이해](../ide/understanding-build-platforms.md) 및 [방법: 디버그 및 릴리스 구성 설정](../debugger/how-to-set-debug-and-release-configurations.md)을 참조하세요.
 
 **구성 관리자** 대화 상자를 사용하여 구성 및 플랫폼 설정을 변경하거나 만들 수 있습니다. 이 절차에서는 테스트용 빌드 구성을 만듭니다.
 
@@ -60,13 +59,13 @@ ms.locfileid: "50672784"
 
 ![솔루션 구성 옵션 표준 도구 모음](../ide/media/buildwalk_standardtoolbarsolutioncongfig.png)
 
-## <a name="build-the-application"></a>응용 프로그램 빌드
+## <a name="build-the-application"></a>애플리케이션 빌드
 
 다음에는 사용자 지정 빌드 구성을 사용하여 솔루션을 빌드합니다.
 
 ### <a name="build-the-solution"></a>솔루션 빌드
 
--   메뉴 모음에서 **빌드** > **솔루션 빌드**를 선택합니다.
+- 메뉴 모음에서 **빌드** > **솔루션 빌드**를 선택합니다.
 
     **출력** 창에는 빌드 결과가 표시됩니다. 빌드에 성공했습니다.
 
@@ -166,7 +165,7 @@ ms.locfileid: "50672784"
 
 ## <a name="create-a-release-build"></a>릴리스 빌드 만들기
 
-전달에 최적화된 샘플 응용 프로그램 버전을 빌드할 수 있습니다. 릴리스 빌드의 경우 빌드가 시작되기 전에 실행 파일이 네트워크 공유에 복사되도록 지정합니다.
+전달에 최적화된 샘플 애플리케이션 버전을 빌드할 수 있습니다. 릴리스 빌드의 경우 빌드가 시작되기 전에 실행 파일이 네트워크 공유에 복사되도록 지정합니다.
 
 자세한 내용은 [방법: 빌드 출력 디렉터리 변경](../ide/how-to-change-the-build-output-directory.md) 및 [Visual Studio에서 프로젝트 및 솔루션 빌드 및 정리](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)를 참조하세요.
 
@@ -189,11 +188,11 @@ ms.locfileid: "50672784"
     > [!IMPORTANT]
     > 지정한 네트워크 공유가 신뢰할 수 있는 위치가 아님을 경고하는 메시지 상자가 나타날 수 있습니다. 지정한 위치를 신뢰하는 경우 메시지 상자에서 **확인** 단추를 선택합니다.
 
-1. 응용 프로그램을 빌드합니다.
+1. 애플리케이션을 빌드합니다.
 
      ![빌드 메뉴의 솔루션 빌드 명령](../ide/media/exploreide-buildsolution.png)
 
-### <a name="specify-a-release-build-for-c"></a>C#에 대한 릴리스 빌드 지정 #
+### <a name="specify-a-release-build-for-c"></a>C용 릴리스 빌드 지정\#
 
 1. **프로젝트 디자이너**를 엽니다.
 
@@ -214,7 +213,7 @@ ms.locfileid: "50672784"
 
 1. **표준 도구 모음**에서 솔루션 구성을 **릴리스**로, 솔루션 플랫폼을 **x86**으로 설정합니다.
 
-1. 응용 프로그램을 빌드합니다.
+1. 애플리케이션을 빌드합니다.
 
      ![빌드 메뉴의 솔루션 빌드 명령](../ide/media/exploreide-buildsolution.png)
 
@@ -225,5 +224,5 @@ ms.locfileid: "50672784"
 ## <a name="see-also"></a>참고 항목
 
 - [연습: 프로젝트 빌드(C++)](/cpp/ide/walkthrough-building-a-project-cpp)
-- [ASP.NET 웹 응용 프로그램 프로젝트 미리 컴파일 개요](/previous-versions/aspnet/aa983464\(v\=vs.110\))
+- [ASP.NET 웹 애플리케이션 프로젝트 미리 컴파일 개요](/previous-versions/aspnet/aa983464\(v\=vs.110\))
 - [연습: MSBuild 사용](../msbuild/walkthrough-using-msbuild.md)

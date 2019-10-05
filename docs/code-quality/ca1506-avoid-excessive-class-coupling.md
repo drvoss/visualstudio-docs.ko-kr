@@ -1,7 +1,6 @@
 ---
 title: 'CA1506: 클래스를 지나치게 많이 결합하지 마세요.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - AvoidExcessiveClassCoupling
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9f0943c0-e802-4e3f-8798-2ab8653ddc80
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa8d2e85ebacdedfde9d6731ff3e24a557de3e13
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1721fd52c00c5b312c88f19d48b668b12d28f050
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988558"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234489"
 ---
 # <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506: 클래스를 지나치게 많이 결합하지 마세요.
 
@@ -29,21 +28,25 @@ ms.locfileid: "53988558"
 |TypeName|AvoidExcessiveClassCoupling|
 |CheckId|CA1506|
 |범주|Microsoft.Maintainability|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
- 형식 또는 메서드를 여러 가지 결합 됩니다.
+
+형식 또는 메서드가 다른 많은 형식과 결합 되어 있습니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 이 규칙은 형식 또는 메서드에 들어 있는 고유한 형식 참조의 개수를 계산하여 클래스 결합을 측정합니다.
 
- 형식과 메서드를 클래스 결합 수준이 높은 유지 관리 하기 어려울 수 있습니다. 형식 및 메서드가 낮은 결합 및 높은 응집력은 서로를 보는 것이 좋습니다.
+이 규칙은 형식 또는 메서드에 들어 있는 고유한 형식 참조의 개수를 계산하여 클래스 결합을 측정합니다.
+
+클래스 결합 수준이 높은 형식과 메서드는 관리 하기 어려울 수 있습니다. 낮은 결합 및 높은 응집을 나타내는 형식 및 메서드를 포함 하는 것이 좋습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 위반을 해결 하려면 형식 또는 메서드는 결합 된 형식의 수를 줄이기 위해를 다시 디자인 해 보십시오.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
- 형식 또는 메서드가 크더라도 아직 많은 다른 형식에 대 한 종속성에도 불구 하 고 하는 경우이 경고를 제외 합니다.
+이 위반 문제를 해결 하려면 형식이 나 메서드를 다시 디자인 하 여 결합 된 형식의 수를 줄여야 합니다.
+
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
+
+형식 또는 메서드가 다른 형식에 대 한 많은 종속성에도 불구 하 고 유지 관리 되는 것으로 간주 되는 경우이 경고를 제외 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

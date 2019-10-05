@@ -3,22 +3,20 @@ title: Visual Studio 4단계, 웹 프로젝트 템플릿에서 Django 자습서 
 titleSuffix: ''
 description: Visual Studio 프로젝트 컨텍스트에서 Django 기본 사항을 검토하는 연습 과정으로, Django 웹 프로젝트 템플릿에서 제공하는 기능을 구체적으로 설명합니다.
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 865a0368933fa0a66728afaead6677cbeca84834
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c778d830b20797962306700a5af938eb3a3bb142
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961696"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>4단계: 전체 Django 웹 프로젝트 템플릿 사용
 

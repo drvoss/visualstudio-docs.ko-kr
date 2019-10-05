@@ -1,7 +1,6 @@
 ---
 title: C/C++용 코드 분석 경고
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - code analysis, warnings for C/C++ code
@@ -19,15 +18,15 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 369aee6e9d94aa1f2f25029022609d11aac9d7a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dc3f09575085039986a0b2fbbf3eb386ee5f5e1b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907922"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62540783"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>C/C++용 코드 분석 경고
-이 섹션에서는 발생 하는 작업을 제외한 C/c + + 코드 분석 경고를 나열 합니다 [c + + 핵심 지침 검사기](code-analysis-for-cpp-corecheck.md)합니다. 코드 분석에 대 한 자세한 내용은 [/analyze (코드 분석)](/cpp/build/reference/analyze-code-analysis) 고 [빠른 시작: C/c + + 코드 분석](../code-quality/quick-start-code-analysis-for-c-cpp.md)합니다.
+이 섹션에서는 C /C++ 에서 발생 하는 코드 분석 경고 제외한는 [ C++ 핵심 지침 검사기](code-analysis-for-cpp-corecheck.md)합니다. 코드 분석에 대 한 자세한 내용은 [/analyze (코드 분석)](/cpp/build/reference/analyze-code-analysis) 고 [빠른 시작: C 용 코드 분석 /C++](../code-quality/quick-start-code-analysis-for-c-cpp.md)합니다.
 
 ## <a name="see-also"></a>참고 항목
 

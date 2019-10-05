@@ -2,21 +2,20 @@
 title: 워크플로 디자이너-CorrelatesOn 정의 대화 상자
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - CorrelatesOnDefinition.UI
 ms.assetid: 8b2b627a-f236-4479-aa09-525df65e3413
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bdc8dd059679c0ba1407585525d30a28dfd8440
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d7b7336a3f3b0c2725f4e52116d0add8bf13b90e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949824"
 ---
 # <a name="correlateson-definition-dialog-box"></a>CorrelatesOn 정의 대화 상자
 
@@ -35,9 +34,8 @@ ms.locfileid: "53988286"
 
 합니다 **수신** 활동 디자이너에서 끌 수 있습니다 **도구 상자** 일반적으로 활동을 배치 하는 위치, 워크플로 디자이너 화면에 끌어 놓 및 합니다. Activity designer 만들어집니다를 <xref:System.ServiceModel.Activities.Receive> 기본값을 사용 하 여 작업 <xref:System.Activities.Activity.DisplayName%2A> 수신 합니다. 열려는 **CorrelatesOn 정의** 대화 상자를 선택 합니다 **수신** 활동 디자이너에 다음 속성 표의 컬렉션 텍스트 옆 줄임표 단추를 선택는  **CorrelatesOn** 속성입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - <xref:System.ServiceModel.Activities.Receive>
 - [상관 관계 이니셜라이저 추가 대화 상자](../workflow-designer/add-correlationinitializers-dialog-box.md)
-- [추가 상관 관계 대화 상자](http://msdn.microsoft.com/en-us/9e41a149-e8ab-41b1-8886-ea06a63041b6)
 - [상관 관계 초기화 대화 상자](../workflow-designer/initialize-correlation-dialog-box.md)

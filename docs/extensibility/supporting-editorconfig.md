@@ -1,21 +1,21 @@
 ---
-title: Visual Studio에서 EditorConfig 지원 하도록 언어 서비스 확장 | Microsoft Docs
+title: EditorConfig 지원 하도록 언어 서비스 확장
 ms.date: 11/22/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - editorconfig [extensibility]
 - editorconfig, supporting in a language service
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3061f1a2efdf05a775f563311ccfbb4c48c49bc9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5c6974c7943a751f50cafb0b141ba9c1dfc85677
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830893"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353501"
 ---
 # <a name="supporting-editorconfig-for-your-language-service"></a>EditorConfig 언어 서비스에 대 한 지원
 
@@ -43,7 +43,7 @@ Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uIndentSize<br/>Micro
 -------|--------
 Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uTabSize<br/>Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs.TabSize|textBufferOptions.GetOptionValue(DefaultOptions.TabSizeOptionId)<br/>textView.Options.GetOptionValue(DefaultOptions.TabSizeOptionId)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[EditorConfig를 사용 하 여 이식 가능한 편집기 설정 만들기](../ide/create-portable-custom-editor-options.md)  
-[편집기 및 언어 서비스 확장](../extensibility/extending-the-editor-and-language-services.md)
+- [EditorConfig를 사용 하 여 이식 가능한 편집기 설정 만들기](../ide/create-portable-custom-editor-options.md)
+- [편집기 및 언어 서비스 확장](../extensibility/extending-the-editor-and-language-services.md)

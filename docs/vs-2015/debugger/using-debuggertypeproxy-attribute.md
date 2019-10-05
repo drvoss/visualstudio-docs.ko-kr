@@ -1,14 +1,9 @@
 ---
 title: DebuggerTypeProxy 특성 사용 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,18 +17,18 @@ ms.assetid: 943f3bb1-993e-4800-a47e-0af78b063014
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 14e42546245aad8e5e5071a843da87f23a038149
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f6e349dd5bea4e0d89c31864960a5438d1e2b13f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754335"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684080"
 ---
 # <a name="using-debuggertypeproxy-attribute"></a>DebuggerTypeProxy 특성 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAttribute?qualifyHint=False & autoUpgrade = True)에 프록시가 지정 또는 대리 항목 형식과 방법 형식 변경에 대 한 디버거 창에 표시 됩니다. 프록시에 원래 형식 대신 프록시가 있는 변수를 볼 때 합니다 **표시할**합니다. 디버거 변수 창에는 프록시 형식의 공용 멤버만 표시됩니다. 개인 멤버는 표시되지 않습니다.  
+DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAttribute?qualifyHint=False & autoUpgrade = True)에 프록시가 지정 또는 대리 항목 형식과 방법 형식 변경에 대 한 디버거 창에 표시 됩니다. 프록시가 있는 변수를 볼 때 원래 형식 대신 프록시가 **표시**에 나타납니다. 디버거 변수 창에는 프록시 형식의 공용 멤버만 표시됩니다. 개인 멤버는 표시되지 않습니다.  
   
  이 특성은 다음 항목에 적용될 수 있습니다.  
   
@@ -62,7 +57,7 @@ DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAt
   
  `DebuggerTypeProxy`에서 제네릭 형식을 대상으로 사용하는 경우 이 구문을 사용해야 합니다. `DebuggerTypeProxy` 메커니즘은 형식 매개 변수를 자동으로 유추합니다.  
   
- C#의 개방형 형식과 닫힌 형식에 대 한 자세한 내용은 참조는 [C# 언어 사양](http://msdn.microsoft.com/library/e5d5a5cc-636b-4bff-b9c8-a8edc6207c22), 섹션 20.5.2 개방형 형식 및 닫힌 형식을 합니다.  
+ C#의 개방형 형식과 닫힌 형식에 대 한 자세한 내용은 참조는 [C# 언어 사양](https://msdn.microsoft.com/library/e5d5a5cc-636b-4bff-b9c8-a8edc6207c22), 섹션 20.5.2 개방형 형식 및 닫힌 형식을 합니다.  
   
  Visual Basic에는 개방형 형식 구문이 없으므로 Visual Basic의 경우 이와 같은 작업을 수행할 수 없습니다. 대신 개방형 형식 이름의 문자열 표현을 사용해야 합니다.  
   
@@ -70,7 +65,4 @@ DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAt
   
 ## <a name="see-also"></a>참고 항목  
  [DebuggerDisplay 특성 사용](../debugger/using-the-debuggerdisplay-attribute.md)   
-  [디버거 표시 특성을 사용하여 디버깅 향상](http://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
-
-
-
+  [디버거 표시 특성을 사용하여 디버깅 향상](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)

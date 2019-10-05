@@ -1,8 +1,6 @@
 ---
 title: C# 코드 조각
 ms.date: 06/05/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - snippets [C#]
@@ -11,23 +9,23 @@ helpviewer_keywords:
 - C#, code snippets
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: feec485f752ac13b43310e4afd97bdfaac93ee51
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7a785623ea36fe25833f24f760c29f49ca40b459
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849166"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918664"
 ---
 # <a name="c-code-snippets"></a>C# 코드 조각
 
 코드 조각은 신속하게 코드에 삽입할 수 있는 준비된 코드 조각입니다. 예를 들어 `for` 코드 조각에서는 비어 있는 `for` 루프를 만듭니다. 일부 코드 조각은 코드 감싸기 코드 조각으로, 코드 줄을 선택한 다음 선택한 코드 줄을 통합하는 코드 조각을 선택할 수 있습니다. 예를 들어 코드 줄을 선택한 다음 `for` 코드 조각을 활성화하는 경우 루프 블록 안에 해당 코드 줄을 포함하여 `for` 루프를 만듭니다. 코드 조각을 사용하면 빠르고 쉽게, 안정적으로 프로그램 코드를 작성할 수 있습니다.
 
- 커서 위치에 코드 조각을 삽입하거나, 현재 선택한 코드 주위에 코드 감싸기 코드 조각을 삽입할 수 있습니다. 코드 조각 삽입기는 **IntelliSense**메뉴의 **코드 조각 삽입** 또는 **코드 감싸기** 명령을 통해 또는 각각 키보드 바로 가기 **Ctrl**+**K**,**X** 또는 **Ctrl**+**K**,**S**를 사용하여 호출됩니다.
+커서 위치에 코드 조각을 삽입하거나, 현재 선택한 코드 주위에 코드 감싸기 코드 조각을 삽입할 수 있습니다. 코드 조각 삽입기는 **IntelliSense**메뉴의 **코드 조각 삽입** 또는 **코드 감싸기** 명령을 통해 또는 각각 키보드 바로 가기 **Ctrl**+**K**,**X** 또는 **Ctrl**+**K**,**S**를 사용하여 호출됩니다.
 
- **코드 조각 삽입기**에 사용 가능한 모든 코드 조각에 대한 코드 조각 이름이 표시됩니다. 또한 코드 조각 삽입기에는 코드 조각의 이름이나 코드 조각 이름의 일부를 입력할 수 있는 입력 대화 상자가 포함되어 있습니다. 코드 조각 삽입기에서 코드 조각 이름과 가장 일치하는 항목이 강조 표시됩니다. 언제든지 **Tab** 키를 누르면 코드 조각 삽입기가 해제되고 현재 선택한 코드 조각이 삽입됩니다. **Esc** 키를 입력하거나 코드 편집기에서 마우스를 클릭하면 코드 조각을 삽입하지 않고 코드 조각 삽입기가 해제됩니다.
+**코드 조각 삽입기**에 사용 가능한 모든 코드 조각에 대한 코드 조각 이름이 표시됩니다. 또한 코드 조각 삽입기에는 코드 조각의 이름이나 코드 조각 이름의 일부를 입력할 수 있는 입력 대화 상자가 포함되어 있습니다. 코드 조각 삽입기에서 코드 조각 이름과 가장 일치하는 항목이 강조 표시됩니다. 언제든지 **Tab** 키를 누르면 코드 조각 삽입기가 해제되고 현재 선택한 코드 조각이 삽입됩니다. **Esc** 키를 입력하거나 코드 편집기에서 마우스를 클릭하면 코드 조각을 삽입하지 않고 코드 조각 삽입기가 해제됩니다.
 
 ## <a name="default-code-snippets"></a>기본 코드 조각
 

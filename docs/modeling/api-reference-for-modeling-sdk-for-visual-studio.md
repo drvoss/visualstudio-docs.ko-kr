@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 5f5ecea7313610ff89616cd1c9373130d22a4176
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 429ce6ed8d44387d3289ee7100da4e639f16ad8e
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930325"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870598"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Visual Studio용 모델링 SDK에 대한 API 참조
 
@@ -34,11 +33,11 @@ Visual Studio Visualization and Modeling SDK-도메인별 언어 (DSL) 도구는
 |<xref:Microsoft.VisualStudio.Modeling.Extensibility?displayProperty=fullName>|DSL 확장성을 구현 하는 모델 요소에 대 한 확장 메서드.|
 |<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement?displayProperty=fullName>|확장 특성|
 |<xref:Microsoft.VisualStudio.Modeling.Immutability?displayProperty=fullName>|읽기 전용으로 모델의 일부를 만들 수 있습니다.|
-|<xref:Microsoft.VisualStudio.Modeling.Integration?displayProperty=fullName>|Modelbus API를 사용 하면 다른 모델을 통합 합니다.|
-|<xref:Microsoft.VisualStudio.Modeling.Integration.Picker?displayProperty=fullName>|사용자가 모델 및 Modelbus 참조를 만들 요소를 이동할 수 있는 대화 상자입니다.|
-|<xref:Microsoft.VisualStudio.Modeling.Integration.Picker.Hosting?displayProperty=fullName>|선택 서비스입니다.|
-|<xref:Microsoft.VisualStudio.Modeling.Integration.Shell?displayProperty=fullName>|Visual studio Modelbus 어댑터 프레임 워크입니다.|
-|<xref:Microsoft.VisualStudio.Modeling.Integration.Shell.Picker?displayProperty=fullName>|사용자가 모델 및 Modelbus 참조를 만들 요소를 이동할 수 있는 선택 대화 상자.|
+|[VisualStudio. 통합](/previous-versions/ee904412(v=vs.140))|Modelbus API를 사용 하면 다른 모델을 통합 합니다.|
+|[VisualStudio를 선택 합니다.](/previous-versions/ee904394(v=vs.140))|사용자가 모델 및 Modelbus 참조를 만들 요소를 이동할 수 있는 대화 상자입니다.|
+|`Microsoft.VisualStudio.Modeling.Integration.Picker.Hosting`|선택 서비스입니다.|
+|[VisualStudio입니다.](/previous-versions/ee869435(v=vs.140))|Visual studio Modelbus 어댑터 프레임 워크입니다.|
+|[VisualStudio를 선택 합니다.](/previous-versions/ee886769(v=vs.140))|사용자가 모델 및 Modelbus 참조를 만들 요소를 이동할 수 있는 선택 대화 상자.|
 |<xref:Microsoft.VisualStudio.Modeling.Shell?displayProperty=fullName>|Visual Studio Dsl 사이의 인터페이스입니다.|
 |<xref:Microsoft.VisualStudio.Modeling.Shell.ExtensionEnablement?displayProperty=fullName>|바로 가기 (상황에 맞는) 메뉴 명령을 정의할 수 있습니다.|
 |<xref:Microsoft.VisualStudio.Modeling.Validation?displayProperty=fullName>|유효성 검사 제약 조건을 정의할 수 있습니다.|

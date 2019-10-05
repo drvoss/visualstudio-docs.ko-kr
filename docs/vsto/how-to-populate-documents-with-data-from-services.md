@@ -11,15 +11,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e935501e2e38c7e6c3abdb1c16e351342cf52a8a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6239bc351872dc7a945c3fbff8ad1ed13817c3ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967786"
 ---
 # <a name="how-to-populate-documents-with-data-from-services"></a>방법: 서비스의 데이터로 문서 채우기
 
@@ -33,25 +33,25 @@ Windows Forms 프로젝트에서와 동일한 방식으로 Microsoft Office에 �
 
 ## <a name="to-populate-a-document-level-project-with-data-from-a-web-service"></a>웹 서비스에서 데이터를 사용 하 여 문서 수준 프로젝트를 채우려면
 
-1.  **데이터 원본** 창을 열고 프로젝트에 대한 서비스 데이터 원본을 만듭니다. 자세한 내용은 [새 데이터 소스 추가](../data-tools/add-new-data-sources.md)를 참조하세요.
+1. **데이터 원본** 창을 열고 프로젝트에 대한 서비스 데이터 원본을 만듭니다. 자세한 내용은 [새 데이터 소스 추가](../data-tools/add-new-data-sources.md)를 참조하세요.
 
-2.  **데이터 원본** 창에서 원하는 테이블 또는 필드를 문서로 끌어옵니다.
+2. **데이터 원본** 창에서 원하는 테이블 또는 필드를 문서로 끌어옵니다.
 
      문서에 컨트롤이 만들어지고 프로젝트의 개체 클래스에 바인딩된 <xref:System.Windows.Forms.BindingSource> 가 만들어지며 서비스에 대해 클래스가 생성됩니다.
 
-3.  코드에서 1 단계에서 연결 하는 웹 서비스 클래스의 인스턴스를 만듭니다.
+3. 코드에서 1 단계에서 연결 하는 웹 서비스 클래스의 인스턴스를 만듭니다.
 
-4.  웹 서비스와의 통신에 필요한 속성의 경우 해당 속성의 인스턴스를 만듭니다.
+4. 웹 서비스와의 통신에 필요한 속성의 경우 해당 속성의 인스턴스를 만듭니다.
 
-5.  4단계에서 만든 웹 서비스 및 모든 속성 인스턴스에서 노출된 메서드를 사용하여 데이터 요청을 만들어 보냅니다.
+5. 4단계에서 만든 웹 서비스 및 모든 속성 인스턴스에서 노출된 메서드를 사용하여 데이터 요청을 만들어 보냅니다.
 
      사용 하는 메서드는 웹 서비스 제공에 따라 다릅니다.
 
-6.  웹 서비스의 데이터 응답을 할당 합니다 <xref:System.Windows.Forms.BindingSource.DataSource%2A> 의 속성을 <xref:System.Windows.Forms.BindingSource>합니다.
+6. 웹 서비스의 데이터 응답을 할당 합니다 <xref:System.Windows.Forms.BindingSource.DataSource%2A> 의 속성을 <xref:System.Windows.Forms.BindingSource>합니다.
 
 프로젝트를 실행하면 컨트롤이 데이터 원본 첫 번째 레코드를 표시합니다. <xref:System.Windows.Forms.BindingSource>의 개체를 사용하여 통화 이벤트를 처리하여 레코드를 스크롤하게 할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [새 데이터 소스 추가](../data-tools/add-new-data-sources.md)

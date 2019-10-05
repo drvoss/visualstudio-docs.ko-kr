@@ -1,10 +1,7 @@
 ---
 title: 네트워크 또는 프록시 오류 문제 해결
 description: 방화벽 또는 프록시 서버 배후에서 Visual Studio를 설치하거나 사용할 때 발생할 수 있는 네트워크 또는 프록시 관련 오류에 대한 솔루션을 찾습니다.
-ms.custom: ''
-ms.date: 02/12/2018
-ms.technology: vs-acquisition
-ms.prod: visual-studio-dev15
+ms.date: 05/22/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -15,17 +12,19 @@ helpviewer_keywords:
 ms.assetid: ''
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d344682f948421bf6d02ff14d41fa26fec1c3f32
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 7879efca149c31fbe3114b0ddfcba2f2a347f5e6
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53047618"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062782"
 ---
-# <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Visual Studio 설치 또는 사용 시의 네트워크 관련 오류 문제 해결
+# <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Visual Studio 설치 또는 사용 시의 네트워크 관련 오류 문제 해결
 
 방화벽 또는 프록시 서버 배후에서 Visual Studio를 설치하거나 사용할 때 발생할 수 있는 가장 일반적인 네트워크 또는 프록시 관련 오류에 대한 솔루션이 있습니다.
 
@@ -37,23 +36,25 @@ ms.locfileid: "53047618"
 
 - Visual Studio를 다시 시작합니다. 프록시 인증 대화 상자가 나타납니다. 대화 상자에 메시지가 표시되면 자격 증명을 입력합니다.
 
-- Visual Studio를 다시 시작해도 문제가 해결되지 않으면 프록시 서버에서 http:&#47;&#47;go.microsoft.com 주소가 아닌 &#42;.visualStudio.com 주소에 대한 자격 증명을 입력하라는 메시지를 표시하기 때문일 수 있습니다. 이러한 서버에 대해 다음 URL을 허용 목록에 포함하여 Visual Studio에서 모든 로그인 시나리오의 차단을 해제하는 것이 좋습니다.
+- Visual Studio를 다시 시작해도 문제가 해결되지 않으면 프록시 서버에서 http:&#47;&#47;go.microsoft.com 주소가 아닌 &#42;.visualStudio.microsoft.com 주소에 대한 자격 증명을 입력하라는 메시지를 표시하기 때문일 수 있습니다. 이러한 서버에 대해 다음 URL을 허용 목록에 포함하여 Visual Studio에서 모든 로그인 시나리오의 차단을 해제하는 것이 좋습니다.
 
-    - &#42;.windows.net
+  - &#42;.windows.net
 
-    - &#42;.microsoftonline.com
+  - &#42;.microsoftonline.com
 
-    - &#42;.visualstudio.com
+  - &#42;.visualstudio.microsoft.com
 
-    - &#42;.microsoft.com
+  - &#42;.microsoft.com
 
-    - &#42;.live.com
+  - &#42;.live.com
 
-- 또는 Visual Studio를 다시 시작할 때 http:&amp;#47;&amp;#47;go.microsoft.com 주소 및 서버 엔드포인트 둘 다에 대해 프록시 인증 대화 상자가 표시되도록 허용 목록에서 http:&amp;#47;&amp;#47;go.microsoft.com 주소를 제거할 수 있습니다.
+- 또는 Visual Studio를 다시 시작할 때 http:&#47;&#47;go.microsoft.com 주소 및 서버 엔드포인트 둘 다에 대해 프록시 인증 대화 상자가 표시되도록 허용 목록에서 http:&#47;&#47;go.microsoft.com 주소를 제거할 수 있습니다.
 
-    또는
+  -또는-
 
 - 프록시에 기본 자격 증명을 사용하려는 경우 다음 작업을 수행할 수 있습니다.
+
+::: moniker range="vs-2017"
 
   1. **devenv.exe.config** (the devenv.exe configuration file) in: **%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** 또는 **%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE**를 찾습니다.
 
@@ -61,15 +62,35 @@ ms.locfileid: "53047618"
 
       ```xml
       <defaultProxy enabled="true" useDefaultCredentials="true">
-          <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#>" http://<yourproxy:port#>"/>
+          <proxy bypassonlocal="True" proxyaddress="http://<yourproxy:port#>"/>
       </defaultProxy>
       ```
 
       `proxyaddress="<http://<yourproxy:port#>`에는 네트워크의 올바른 프록시 주소를 삽입해야 합니다.
 
-     또는
+     > [!NOTE]
+     > 자세한 내용은 [&lt;defaultProxy&gt; 요소(네트워크 설정)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) 및 [&lt;프록시&gt; 요소(네트워크 설정)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings) 페이지를 참조하세요.
 
-- 또한 [How to connect through an authenticated Web Proxy](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/)(인증된 웹 프록시를 통해 연결하는 방법) 블로그 게시물의 지침에 따라 프록시 사용을 허용하는 코드를 추가할 수도 있습니다.
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+  1. **devenv.exe.config** (the devenv.exe configuration file) in: **%ProgramFiles%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE** 또는 **%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE**를 찾습니다.
+
+  2. 구성 파일에서 `<system.net>` 블록을 찾아 다음 코드를 추가합니다.
+
+      ```xml
+      <defaultProxy enabled="true" useDefaultCredentials="true">
+          <proxy bypassonlocal="True" proxyaddress="http://<yourproxy:port#>"/>
+      </defaultProxy>
+      ```
+
+      `proxyaddress="<http://<yourproxy:port#>`에는 네트워크의 올바른 프록시 주소를 삽입해야 합니다.
+
+     > [!NOTE]
+     > 자세한 내용은 [&lt;defaultProxy&gt; 요소(네트워크 설정)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) 및 [&lt;프록시&gt; 요소(네트워크 설정)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings) 페이지를 참조하세요.
+
+::: moniker-end
 
 ## <a name="error-the-underlying-connection-was-closed"></a>오류: “기본 연결이 닫혔습니다.”
 
@@ -99,7 +120,7 @@ Visual Studio는 TLS(전송 계층 보안) 1.2 프로토콜을 사용하여 네�
 
 - &#42;.azurewebsites.net(Azure 연결의 경우)
 
-- &#42;.visualstudio.com
+- &#42;.visualstudio.microsoft.com
 
 - cdn.vsassets.io(콘텐츠 배달 네트워크 또는 CDN, 콘텐츠 호스트)
 
@@ -118,4 +139,4 @@ Visual Studio는 TLS(전송 계층 보안) 1.2 프로토콜을 사용하여 네�
 
 * [방화벽 또는 프록시 서버 뒤에 Visual Studio 설치 및 사용](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Visual Studio 관리자 가이드](visual-studio-administrator-guide.md)
-* [Visual Studio 2017 설치](install-visual-studio.md)
+* [Visual Studio 설치](install-visual-studio.md)

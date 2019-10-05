@@ -1,45 +1,40 @@
 ---
 title: 지역 변수를 계산 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], evaluating locals
 - expression evaluation, evaluating locals
 ms.assetid: 7d1ed528-4e7a-4d8f-87b4-162440644a75
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 88b9fdd5ac8451056454b80ad0262b8aa9bf951b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7e31aa560422c9f18ec30a6e203559ef3ed10c52
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444762"
 ---
 # <a name="evaluating-locals"></a>로컬 항목 계산
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  Visual Studio 2015에서 식 계산기를 구현 하는 이러한 방식으로 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 정보를 참조 하세요 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 하 고 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)합니다.  
+> Visual Studio 2015에서 식 계산기를 구현 하는 이러한 방식으로 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 정보를 참조 하세요 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 하 고 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)합니다.  
   
  [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) 로컬 뿐만 아니라 지역 변수의 이름 및 형식 값을 얻기 위해 호출 됩니다. 로컬 값 프로그램의 현재 상태에 종속 되므로 메모리에서 지역 변수의 값을 얻어야 합니다. 합니다 [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) 개체는 바인딩하는 데 사용 되는 [IDebugField](../../extensibility/debugger/reference/idebugfield.md) 로컬 값을 포함 하는 메모리에서 해당 위치를 나타내는 개체입니다. 메모리에서이 위치에서 표시 됩니다는 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) 개체입니다.  
   
  이 기능은 로컬 값을 검색 하는 다음 작업을 수행 하는 도우미 함수에 캡슐화 됩니다.  
   
-1.  바인딩하는 `IDebugField` 메모리를 얻으려고 하는 개체는 `IDebugObject` 개체입니다.  
+1. 바인딩하는 `IDebugField` 메모리를 얻으려고 하는 개체는 `IDebugObject` 개체입니다.  
   
-2.  메모리에서 값을 가져옵니다. 이 값은 일련의 바이트로로 표시 됩니다.  
+2. 메모리에서 값을 가져옵니다. 이 값은 일련의 바이트로로 표시 됩니다.  
   
-3.  지역 변수의 형식을 기반으로 값 형식을 지정 합니다.  
+3. 지역 변수의 형식을 기반으로 값 형식을 지정 합니다.  
   
-4.  지역 변수의 값을 포함 하는 일반 개체를 반환 합니다. 이것이 C#의 경우에 `object`, 이것이 c + +에서는 `VARIANT`.  
+4. 지역 변수의 값을 포함 하는 일반 개체를 반환 합니다. C#,이 `object`, 및 C++,이 `VARIANT`합니다.  
   
 ## <a name="managed-code"></a>관리 코드  
  관리 코드에서 로컬 변수의 값을 검색 하는 함수는 구현입니다.  
@@ -200,4 +195,3 @@ HRESULT FieldGetPrimitiveValue(
  [지역 변수의 샘플 구현](../../extensibility/debugger/sample-implementation-of-locals.md)   
  [로컬 값 가져오기](../../extensibility/debugger/getting-local-values.md)   
  [평가 컨텍스트](../../extensibility/debugger/evaluation-context.md)
-

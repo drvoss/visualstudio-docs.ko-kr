@@ -6,16 +6,15 @@ helpviewer_keywords:
 - Domain-Specific Language, namespace
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 3209f1942e95e8cfd883f938722ccfbc713e64db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 16fec4cf6150fe0711812d9fabe57fc667e36eef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993502"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>방법: 도메인 특정 언어의 네임 스페이스를 변경 합니다.
 
@@ -47,7 +46,7 @@ ms.locfileid: "53890000"
 
 10. Visual Studio 실험적 인스턴스 다시 설정 합니다.
 
-    1. 삭제할 **\Users\\**_{name}_**\AppData\Local\Microsoft\VisualStudio\\\*Exp**합니다.
+    1. 삭제할 **\Users\\** _{name}_ **\AppData\Local\Microsoft\VisualStudio\\\*Exp**합니다.
 
     2. 에 Windows **시작** 메뉴에서 선택 **프로그램도** > **Microsoft Visual Studio 2010 SDK** > **도구**  >  **실험적 인스턴스 재설정**합니다.
 

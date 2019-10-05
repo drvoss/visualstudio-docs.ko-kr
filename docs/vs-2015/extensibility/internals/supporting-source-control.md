@@ -1,26 +1,21 @@
 ---
 title: 소스 제어 지원 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], supporting
 ms.assetid: 567acde3-354e-4f39-8d99-0ef86c103396
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8310a18d9390858256067ba8dd16b61129b819a6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d1166197a5c79dcb0d1ddf4018227914346a6172
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746330"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156069"
 ---
 # <a name="supporting-source-control"></a>소스 제어 지원
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,4 +57,3 @@ ms.locfileid: "51746330"
 ## <a name="related-sections"></a>관련 단원  
  [프로젝트 형식](../../extensibility/internals/project-types.md)  
  기본 빌딩 블록으로 프로젝트의 개요를 제공 합니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 통합된 개발 환경 (IDE)입니다. 프로젝트 빌드 및 컴파일 코드를 제어 하는 방법을 설명 하는 추가 항목 링크가 제공 됩니다.
-

@@ -2,7 +2,6 @@
 title: IActiveScriptProfilerControl::StartProfiling | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,19 +15,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5540573991be11230acb33b088174bbb5c39f7f7
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 780886e4ca21abbe11580992244cee0d6a28b134
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281717"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993139"
 ---
 # <a name="iactivescriptprofilercontrolstartprofiling"></a>IActiveScriptProfilerControl::StartProfiling
 스크립팅 엔진에서 프로 파일링을 시작 합니다. 스크립팅 엔진을 호출 하 여 프로파일러 개체의 인스턴스를 만듭니다 [CoCreateInstance](https://docs.microsoft.com/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance)합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT StartProfiling(  
     [in] REFCLSID clsidProfilerObject,  
     [in] DWORD dwEventMask,  

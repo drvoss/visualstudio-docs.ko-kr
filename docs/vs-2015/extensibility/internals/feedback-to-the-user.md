@@ -1,14 +1,9 @@
 ---
 title: 사용자에 게 피드백 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user model feedback
 - environment, context
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 2d472a24-3813-4f5f-9783-b491ad8a71ad
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 509dffa0d2a474059277dbb3df2ba984fa35fe42
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7773c611733ccec525fc25264311e72c1dfe36e2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751168"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537682"
 ---
 # <a name="feedback-to-the-user"></a>사용자에 대한 피드백
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -68,4 +63,3 @@ ms.locfileid: "51751168"
  [IDE의 선택 및 통화](../../extensibility/internals/selection-and-currency-in-the-ide.md)   
  [선택 컨텍스트 개체](../../extensibility/internals/selection-context-objects.md)   
  [계층 구조 및 선택](../../extensibility/internals/hierarchies-and-selection.md)
-

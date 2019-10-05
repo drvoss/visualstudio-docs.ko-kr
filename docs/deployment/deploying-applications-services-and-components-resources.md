@@ -2,7 +2,6 @@
 title: 배포 개요 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 06/22/2018
-ms.technology: vs-ide-deployment
 ms.topic: overview
 dev_langs:
 - FSharp
@@ -11,19 +10,19 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d578dcf3702b340adcbef36002b64b20f65a5c73
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: b7c322b960360231c2e8a1d2aa1a9920bbcf5521
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684238"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263310"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Visual Studio에서 배포 개요
 
-다른 컴퓨터, 장치, 서버 또는 클라우드에 설치할 수 있도록 응용 프로그램, 서비스 또는 구성 요소를 배포할 수 있습니다. Visual Studio에서 필요한 배포 유형에 적합한 방법을 선택할 수 있습니다.
+다른 컴퓨터, 디바이스, 서버 또는 클라우드에 설치할 수 있도록 애플리케이션, 서비스 또는 구성 요소를 배포할 수 있습니다. Visual Studio에서 필요한 배포 유형에 적합한 방법을 선택할 수 있습니다.
 
 많은 일반적인 앱 형식의 경우 Visual Studio의 솔루션 탐색기에서 애플리케이션을 바로 배포할 수 있습니다. 이 기능의 둘러보기는 [배포 소개](../deployment/deploying-applications-services-and-components.md)를 참조하세요.
 
@@ -36,7 +35,7 @@ Visual Studio 내에서 애플리케이션을 다음 대상에 직접 게시할 
 - [Azure App Service](#azure-app-service)
 - [Azure Virtual Machines](#azure-virtual-machines)
 - [파일 시스템](#file-system)
-- [사용자 지정 대상(IIS, FTP 등)](#custom-targets)(임의의 모든 웹 서버 포함)
+- [사용자 지정 대상(IIS, FTP 등)](#custom-targets-iis-ftp)(임의의 모든 웹 서버 포함)
 
 **게시** 탭에서 기존 게시 프로필을 선택하거나, 기존 게시 프로필을 가져오거나, 여기에 설명된 옵션을 사용하여 새로 만들 수 있습니다. 다양한 앱 형식에 대한 IDE에서 게시 옵션을 둘러보려면 [배포 소개](../deployment/deploying-applications-services-and-components.md)를 참조하세요.
 
@@ -119,7 +118,7 @@ Visual Studio에서 원하는 수의 사용자 지정 배포 프로필을 만들
 
 - [게시 도구를 사용하여 .NET Core 애플리케이션 배포](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Azure에 ASP.NET Core 앱 게시](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- [Visual C++의 개발](/cpp/ide/deployment-in-visual-cpp)
+- [Visual C++의 개발](/cpp/windows/deployment-in-visual-cpp)
 - [UWP 앱 배포](/windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [웹 배포를 사용하여 Azure에 Node.js 앱 게시](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Azure App Service에 Python 앱 게시](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)

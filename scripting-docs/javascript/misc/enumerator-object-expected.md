@@ -1,14 +1,9 @@
 ---
 title: Enumerator 개체가 필요 | Microsoft 문서
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5015
 dev_langs:
@@ -16,16 +11,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: dc6e32c1-a6e6-4e12-ac99-e3f65f91c8d7
-caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 485e6e387f07fd3a54727f5f8e08c0a00743c6d9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 06005f635e5173e903cfba6a952750d64181d0bf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946344"
 ---
 # <a name="enumerator-object-expected"></a>Enumerator 개체가 필요합니다.
 호출 하려고 합니다 **Enumerator.prototype.atEnd, Enumerator.prototype.item Enumerator.prototype.moveFirst를** 또는 **Enumerator.prototype.moveNext** 형식의 다른 개체에서 메서드 보다 `Enumerator`합니다. 이 형식의 호출 개체 유형 이어야 `Enumerator`합니다. 이 규칙을 중단 하는 코드의 예는 다음과 같습니다.  
@@ -38,9 +32,9 @@ o.f();
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
--   만 호출 합니다 **Enumerator.prototype.atEnd**, **Enumerator.prototype.item**합니다 **Enumerator.prototype.moveFirst**, 또는  **Enumerator.prototype.moveNext** 형식의 개체에 있는 메서드의 `Enumerator`합니다. 개체가 있는지 확인 하려면를 `Enumerator` 개체를 사용 합니다.  
+- 만 호출 합니다 **Enumerator.prototype.atEnd**, **Enumerator.prototype.item**합니다 **Enumerator.prototype.moveFirst**, 또는  **Enumerator.prototype.moveNext** 형식의 개체에 있는 메서드의 `Enumerator`합니다. 개체가 있는지 확인 하려면를 `Enumerator` 개체를 사용 합니다.  
   
-    ```  
+    ```js
     if(x instanceof Enumerator)  
     ```  
   

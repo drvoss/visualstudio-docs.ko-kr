@@ -1,25 +1,22 @@
 ---
 title: 도메인 관계의 속성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, domain relationships
 ms.assetid: 9ccb3dc2-b80c-4585-932f-3c5f87bafbcd
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 48af74aa470f195c1cfbd49ffbabb37e2461251d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6e30843b0a60ed4183491c16ff9992df8773fd1a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263733"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701883"
 ---
 # <a name="properties-of-domain-relationships"></a>도메인 관계의 속성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ ms.locfileid: "49263733"
 |상속 한정자|도메인 관계에서 생성 되는 소스 코드 클래스의 상속의 종류에 설명 합니다 (`none`하십시오 `abstract` 또는 `sealed`).|\<없음 >|  
 |중복 허용|경우 `True`, 동일한 두 요소 간에 도메인 관계의 중복 링크를 만들 수 있습니다.|`False`|  
 |기본 관계|도메인 관계 파생 되는 경우 도메인 관계의 기본 관계입니다.|\<없음 >|  
-|포함은|경우 `True`, 도메인 관계는 관계를 포함 합니다. 경우 `False`, 참조 관계입니다.|\<모두 >|  
+|포함은|경우 `True`, 도메인 관계는 관계를 포함 합니다. 경우 `False`, 참조 관계입니다.|\<both>|  
 |이름|도메인 관계의 이름입니다.|현재 이름|  
 |네임스페이스|도메인 관계와 연결 되어 있는 네임 스페이스입니다.|현재 네임 스페이스|  
 |노트|도메인 관계와 연결 된 비공식 메모입니다.|\<없음 >|  
@@ -44,7 +41,4 @@ ms.locfileid: "49263733"
 |Help Keyword|도메인 관계에 대 한 F1 도움말을 인덱싱하는 데는 선택적 키워드입니다.|\<없음 >|  
   
 ## <a name="see-also"></a>참고 항목  
- [도메인 특정 언어 도구 용어집](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -1,14 +1,9 @@
 ---
 title: SccAddFromScc 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccAddFromScc
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b366c6c80dc52436743da0f69266105cc0ba5db8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ccf3a25bda14cf98fdba4a58b0032444badc4c4a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432490"
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,9 +67,8 @@ SCCRTN SccAddFromScc (
  `lplpFileNames` 가 `char ***` 포인터입니다. 소스 제어 플러그 인이 API에 대 한 표준 방식에서 목록을 전달 하므로 파일 이름에 대 한 포인터의 배열에 대 한 포인터를 배치 합니다.  
   
 > [!NOTE]
->  VSSCI API의 초기 버전에 추가 된 파일에 대 한 대상 프로젝트를 표시 하는 방법을 제공 하지 않았습니다. 이의 의미 체계에 맞게는 `lplpFIleNames` 매개 변수는 출력 매개 변수 보다는 입/출력 매개 변수를 확인 하려면 향상 되었습니다. 단일 파일을 지정 하는 경우 즉, 값을 가리키는 `lpnFiles` = 1 이면 첫 번째 요소 `lplpFileNames` 대상 폴더를 포함 합니다. 이러한 새로운 의미 체계를 호출 하 여 IDE 사용 하는 `SccSetOption` 함수를 사용 합니다 `nOption`매개 변수 설정 `SCC_OPT_SHARESUBPROJ`합니다. 경우에 소스 제어 플러그 인 의미 체계를 지원 하지 않습니다, 반환 `SCC_E_OPTNOTSUPPORTED`합니다. 따라서 사용 하지 않도록 설정 사용을 수행 하는 **소스 제어에서 추가** 기능입니다. 경우 플러그 인을 지원 합니다 **소스 제어에서 추가** 기능 (`SCC_CAP_ADDFROMSCC`), 새로운 의미 체계를 지원 하 고 반환 하는 다음 `SCC_I_SHARESUBPROJOK`합니다.  
+> VSSCI API의 초기 버전에 추가 된 파일에 대 한 대상 프로젝트를 표시 하는 방법을 제공 하지 않았습니다. 이의 의미 체계에 맞게는 `lplpFIleNames` 매개 변수는 출력 매개 변수 보다는 입/출력 매개 변수를 확인 하려면 향상 되었습니다. 단일 파일을 지정 하는 경우 즉, 값을 가리키는 `lpnFiles` = 1 이면 첫 번째 요소 `lplpFileNames` 대상 폴더를 포함 합니다. 이러한 새로운 의미 체계를 호출 하 여 IDE 사용 하는 `SccSetOption` 함수를 사용 합니다 `nOption`매개 변수 설정 `SCC_OPT_SHARESUBPROJ`합니다. 경우에 소스 제어 플러그 인 의미 체계를 지원 하지 않습니다, 반환 `SCC_E_OPTNOTSUPPORTED`합니다. 따라서 사용 하지 않도록 설정 사용을 수행 하는 **소스 제어에서 추가** 기능입니다. 경우 플러그 인을 지원 합니다 **소스 제어에서 추가** 기능 (`SCC_CAP_ADDFROMSCC`), 새로운 의미 체계를 지원 하 고 반환 하는 다음 `SCC_I_SHARESUBPROJOK`합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [원본 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)   
  [SccSetOption](../extensibility/sccsetoption-function.md)
-

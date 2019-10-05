@@ -1,8 +1,6 @@
 ---
 title: 관리자 권한으로 실행
 ms.date: 06/05/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, user permissions
@@ -11,15 +9,15 @@ helpviewer_keywords:
 - permissions
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c581797c36cfd69032ef635a9944b339333d6de
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: 97ecddfa317eb522a8ce29a53482df5581912dad
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684680"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891240"
 ---
 # <a name="user-permissions-and-visual-studio"></a>사용자 권한 및 Visual Studio
 
@@ -35,14 +33,15 @@ Visual Studio IDE에서 일반 사용자로 거의 모든 작업을 수행할 �
 |설치|Visual Studio를 설치합니다.|[Visual Studio 설치](../install/install-visual-studio.md)|
 ||로컬 도움말 콘텐츠를 설치, 업데이트 또는 제거합니다.|[로컬 도움말 콘텐츠 설치 및 관리](../help-viewer/install-manage-local-content.md)|
 |도구 상자|**도구 상자**에 클래식 COM 컨트롤을 추가합니다.|[도구 상자](../ide/reference/toolbox.md)|
-|빌드|구성 요소를 등록하는 빌드 후 이벤트를 사용합니다.|[사용자 지정 빌드 단계 및 빌드 이벤트 이해](/cpp/ide/understanding-custom-build-steps-and-build-events)|
+|빌드|구성 요소를 등록하는 빌드 후 이벤트를 사용합니다.|[사용자 지정 빌드 단계 및 빌드 이벤트 이해](/cpp/build/understanding-custom-build-steps-and-build-events)|
 ||C++ 프로젝트를 빌드할 때 등록 단계를 포함합니다.||
 |디버깅|높은 권한으로 실행되는 애플리케이션 디버깅합니다.|[디버거 설정 및 준비](../debugger/debugger-settings-and-preparation.md)|
 ||ASP.NET 웹 사이트와 같이 다른 사용자 계정으로 실행되는 애플리케이션을 디버깅합니다.|[ASP.NET 및 AJAX 애플리케이션 디버그](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|
 ||XBAP(XAML 브라우저 애플리케이션) 영역에서 디버깅합니다.|[WPF 호스트(PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|
 ||에뮬레이터를 사용하여 Microsoft Azure용 클라우드 서비스 프로젝트를 디버깅합니다.|[Visual Studio에서 클라우드 서비스 디버깅](/azure/vs-azure-tools-debug-cloud-services-virtual-machines)|
 ||원격 디버깅을 위한 방화벽을 구성합니다.|[원격 디버깅](../debugger/remote-debugging.md)|
-|성능 도구|애플리케이션 프로파일링|[초보자를 위한 성능 프로파일링 지침](../profiling/beginners-guide-to-performance-profiling.md)|
+|성능 도구|관리자 권한으로 실행하는 애플리케이션에 연결합니다.|[초보자를 위한 성능 프로파일링 지침](../profiling/beginners-guide-to-performance-profiling.md)|
+||GPU 프로파일러를 사용합니다.|[GPU 프로파일링](../profiling/gpu-usage.md)|
 |배포|로컬 컴퓨터에서 IIS(인터넷 정보 서비스)에 웹 애플리케이션을 배포합니다.|[Visual Studio를 사용하여 ASP.NET 웹앱 배포](/aspnet/web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/)|
 
 ## <a name="run-visual-studio-as-an-administrator"></a>관리자 권한으로 Visual Studio 실행
@@ -52,11 +51,25 @@ Visual Studio IDE에서 일반 사용자로 거의 모든 작업을 수행할 �
 > [!NOTE]
 > 이러한 지침은 Windows 10에 대한 것입니다. 다른 버전의 Windows와 유사합니다.
 
+::: moniker range="vs-2017"
+
 1. **시작** 메뉴를 열고 Visual Studio 2017로 스크롤합니다.
 
 1. **Visual Studio 2017**의 마우스 오른쪽 단추 클릭 또는 상황에 맞는 메뉴에서 **추가** > **관리자 권한으로 실행**을 선택합니다.
 
    Visual Studio가 시작되면 제목 표시줄의 제품 이름 뒤에 **(관리자)** 가 나타납니다.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. **시작** 메뉴를 열고 Visual Studio 2019로 스크롤합니다.
+
+1. **Visual Studio 2019**의 마우스 오른쪽 단추 클릭 또는 상황에 맞는 메뉴에서 **추가** > **관리자 권한으로 실행**을 선택합니다.
+
+   Visual Studio가 시작되면 제목 표시줄의 제품 이름 뒤에 **(관리자)** 가 나타납니다.
+
+::: moniker-end
 
 또한 애플리케이션 바로 가기를 수정하여 항상 관리자 권한으로 실행하도록 할 수 있습니다.
 

@@ -8,19 +8,17 @@ helpviewer_keywords:
 ms.assetid: ba16ed02-137e-40bf-a4cb-45d87d922d37
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: a2bc06ed17522eef36841b72859554163068afa6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 130f7296985aa5c5e6115cd3e61b00efd90f25c7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784053"
 ---
 # <a name="edit-load-tests"></a>부하 테스트 편집
 
-부하 테스트는 웹 성능 테스트 또는 단위 테스트를 실행하여 많은 사용자가 동시에 서버에 액세스하는 것을 시뮬레이트합니다. 부하 테스트를 사용하여 응용 프로그램 스트레스 및 성능 데이터에 액세스할 수 있습니다. 부하 테스트에서 사용자 부하 및 네트워크 형식과 같은 여러 부하 조건을 에뮬레이트하도록 구성할 수 있습니다.
+부하 테스트는 웹 성능 테스트 또는 단위 테스트를 실행하여 많은 사용자가 동시에 서버에 액세스하는 것을 시뮬레이트합니다. 부하 테스트를 사용하여 애플리케이션 스트레스 및 성능 데이터에 액세스할 수 있습니다. 부하 테스트에서 사용자 부하 및 네트워크 형식과 같은 여러 부하 조건을 에뮬레이트하도록 구성할 수 있습니다.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -34,7 +32,7 @@ ms.locfileid: "53048635"
 
 ## <a name="edit-load-test-scenario-settings"></a>부하 테스트 시나리오 설정 편집
 
-시나리오는 사용자 그룹이 서버 응용 프로그램과 상호 작용하는 방법을 모델링하는 데 사용됩니다. 시나리오는 부하 패턴, 테스트 조합 모델, 테스트 조합, 브라우저 조합 및 네트워크 조합으로 구성됩니다. 부하 테스트에는 두 개 이상의 시나리오가 있을 수 있고 단일 시나리오는 웹 성능 테스트 및 단위 테스트를 포함할 수 있습니다. 유사한 설정을 그룹화하면 시나리오를 사용하여 유사한 특성의 테스트를 그룹화하고 테스트할 수 있습니다.
+시나리오는 사용자 그룹이 서버 애플리케이션과 상호 작용하는 방법을 모델링하는 데 사용됩니다. 시나리오는 부하 패턴, 테스트 조합 모델, 테스트 조합, 브라우저 조합 및 네트워크 조합으로 구성됩니다. 부하 테스트에는 두 개 이상의 시나리오가 있을 수 있고 단일 시나리오는 웹 성능 테스트 및 단위 테스트를 포함할 수 있습니다. 유사한 설정을 그룹화하면 시나리오를 사용하여 유사한 특성의 테스트를 그룹화하고 테스트할 수 있습니다.
 
 자세한 내용은 [부하 테스트 시나리오 편집](../test/edit-load-test-scenarios.md) 및 [부하 테스트 시나리오 속성](../test/load-test-scenario-properties.md)을 참조하세요.
 

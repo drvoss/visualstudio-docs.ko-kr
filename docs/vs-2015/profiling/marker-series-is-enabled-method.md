@@ -1,14 +1,9 @@
 ---
 title: marker_series::is_enabled 메서드 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::marker_series::is_enabled
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 8ce4dd50-ca29-4c72-98d6-582693f7d501
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6e512e51cfcd33d44072308fcff1ef0c9d69e112
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9ccef8ebbf63835a71027643b518280d5f4f867b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156408"
 ---
 # <a name="markerseriesisenabled-method"></a>marker_series::is_enabled 메서드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ bool is_enabled(
  `_Category`  
  범주입니다.  
   
-## <a name="return-value"></a>반환 값  
+## <a name="return-value"></a>Return Value  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더:** cvmarkersobj.h  
@@ -56,6 +51,3 @@ bool is_enabled(
   
 ## <a name="see-also"></a>참고 항목  
  [marker_series 클래스](../profiling/marker-series-class.md)
-
-
-

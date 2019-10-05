@@ -1,14 +1,9 @@
 ---
 title: 구조는 Content_types].xml 파일 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - content_types
 - content types
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d5892ab545c41f7d58f0d097f3d27c90c090f0ff
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e94e8cd065908671446486d2ec00e167d8fb4f4e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736570"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697104"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>구조는 Content_types].xml 파일
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51736570"
 VSIX 패키지에서 원하는 콘텐츠 종류에 대 한 정보를 포함합니다. Visual Studio는 패키지를 설치 하려면 [Content_Types].xml 파일을 사용 하지만 파일 자체를 설치 하지 않습니다.  
   
 > [!NOTE]
->  [Content_Types].xml 파일 형식을의 일부인이 항목에서는 VSIX 패키지에 사용 되는 [Content_Type].xml 파일에만 적용 되는 *OPC Open Packaging Conventions ()* 표준입니다. 자세한 내용은 [OPC:는 새로운 표준에 대 한 패키징 Your Data](http://go.microsoft.com/fwlink/?LinkID=148207) MSDN 웹 사이트입니다.  
+> [Content_Types].xml 파일 형식을의 일부인이 항목에서는 VSIX 패키지에 사용 되는 [Content_Type].xml 파일에만 적용 되는 *OPC Open Packaging Conventions ()* 표준입니다. 자세한 내용은 참조 하세요. [OPC: 새로운 표준에 대 한 패키징 Your 데이터](http://go.microsoft.com/fwlink/?LinkID=148207) MSDN 웹 사이트입니다.  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
  다음 섹션에서는 루트 요소 및 해당 특성 및 자식 요소를 설명합니다.  
@@ -75,14 +70,14 @@ VSIX 패키지에서 원하는 콘텐츠 종류에 대 한 정보를 포함합�
 |---------------|-----------------|  
 |txt|텍스트/일반|  
 |pkgdef|텍스트/일반|  
-|xml|text/xml|  
+|Xml|text/xml|  
 |vsixmanifest|text/xml|  
-|htm 또는 html|텍스트/html|  
+|htm 또는 html|text/html|  
 |rtf|응용 프로그램/서식 있는 텍스트|  
-|pdf|응용 프로그램/pdf|  
-|gif|이미지/gif|  
-|jpg 또는 jpeg|jpg 이미지 /|  
-|Tiff|tiff 이미지 /|  
+|pdf|application/pdf|  
+|GIF|image/gif|  
+|jpg 또는 jpeg|image/jpg|  
+|Tiff|image/tiff|  
 |vsix|application/zip|  
 |zip|application/zip|  
 |dll|application/octet-stream|  
@@ -108,6 +103,5 @@ VSIX 패키지에서 원하는 콘텐츠 종류에 대 한 정보를 포함합�
   
 ## <a name="see-also"></a>참고 항목  
  [VSIX 패키지 분석](../extensibility/anatomy-of-a-vsix-package.md)   
- [VSIX 확장 스키마 1.0 참조](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
+ [VSIX 확장 스키마 1.0 참조](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
  [OPC: 데이터 패키징을 위한 새로운 표준](http://go.microsoft.com/fwlink/?LinkID=148207)
-

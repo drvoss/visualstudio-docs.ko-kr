@@ -1,27 +1,22 @@
 ---
 title: 사용자 지정 색 항목 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - colorable items
 - language services, custom colorable items
 ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 272d16b9f5f8fb33b68c911c5e7bd27923f4c2db
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 24a4db907ec859c6075c06956f86939047379897
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409365"
 ---
 # <a name="custom-colorable-items"></a>사용자 지정 색 항목
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,11 +30,11 @@ ms.locfileid: "51796950"
  IDE의 색 항목 사용자 재정의 처리 하기 때문에 합니다 **글꼴 및 색** 대화 상자에서 해야만 이름으로 각 사용자 지정 색 항목을 제공 합니다. 이 이름은에 나타나는 항목의 **항목을 표시** 목록. 색 항목 사전순으로 표시 합니다. 언어 서비스의 사용자 지정 색 항목 그룹을 시작할 수 있습니다 각 이름에 언어 이름의 예를 들어 **NewLanguage-주석** 하 고 **NewLanguage-키워드**합니다.  
   
 > [!CAUTION]
->  기존 색 항목 이름과 충돌 하지 않도록 하려면 색 항목 이름에 언어 이름을 포함 해야 합니다. 개발 중 색 항목 중 하나의 이름을 변경한 경우에 색 항목 액세스 된 처음 만들어진 캐시를 다시 설정 해야 합니다. 디렉터리에 일반적으로 Visual Studio SDK와 함께 설치 되는 CreateExpInstance 도구를 사용 하 여 실험적 캐시를 다시 설정할 수 있습니다.  
+> 기존 색 항목 이름과 충돌 하지 않도록 하려면 색 항목 이름에 언어 이름을 포함 해야 합니다. 개발 중 색 항목 중 하나의 이름을 변경한 경우에 색 항목 액세스 된 처음 만들어진 캐시를 다시 설정 해야 합니다. 디렉터리에 일반적으로 Visual Studio SDK와 함께 설치 되는 CreateExpInstance 도구를 사용 하 여 실험적 캐시를 다시 설정할 수 있습니다.  
 >   
->  **C:\Program 파일 (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
+> **C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
 >   
->  캐시를 다시 설정 하려면 호출 `CreateExpInstance /Reset`합니다. CreateExpInstance에 대 한 자세한 내용은 참조 하세요. [CreateExpInstance 유틸리티](../../extensibility/internals/createexpinstance-utility.md)합니다.  
+> 캐시를 다시 설정 하려면 호출 `CreateExpInstance /Reset`합니다. CreateExpInstance에 대 한 자세한 내용은 참조 하세요. [CreateExpInstance 유틸리티](../../extensibility/internals/createexpinstance-utility.md)합니다.  
   
  색 항목 목록에서 첫 번째 항목 참조 되지 않습니다. 첫 번째 항목 인덱스에 해당 하는 색 항목 0 및 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 항상 기본 텍스트 색 및 해당 항목에 대 한 특성을 제공 합니다. 첫 번째 항목으로 목록에 자리 표시자 색 항목을 제공 하는 가장 쉬운 방법은이 참조 되지 않은 항목을 처리 하는 경우  
   
@@ -77,4 +72,3 @@ ms.locfileid: "51796950"
  [레거시 언어 서비스의 구문 색 지정](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
  [구문 색 지정 구현](../../extensibility/internals/implementing-syntax-coloring.md)   
  [방법: 기본 제공 색 항목 사용](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
-

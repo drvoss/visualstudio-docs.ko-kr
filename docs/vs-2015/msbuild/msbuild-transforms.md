@@ -1,14 +1,9 @@
 ---
 title: MSBuild 변환 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - MSBuild, transforms
 - transforms [MSBuild]
@@ -16,18 +11,17 @@ ms.assetid: d0bcfc3c-14fa-455e-805c-63ccffa4a3bf
 caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ce1d0b63518fb48636fca38b2788eea2d0c189a8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3f9a6f7985e3ebb3e77dcc605157f75e00a0842b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426028"
 ---
-# <a name="msbuild-transforms"></a>MSBuild 변형
+# <a name="msbuild-transforms"></a>MSBuild 변환
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 변환은 항목 목록 간의 일대일 변환입니다. 변환을 수행하면 프로젝트가 항목 목록을 변환할 수 있을 뿐만 아니라, 대상이 입력과 출력 간의 직접 매핑을 식별할 수 있습니다. 이 항목에서는 변환 및 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에서 변환을 사용하여 보다 효율적으로 프로젝트를 빌드하는 방법을 설명합니다.  
   
 ## <a name="transform-modifiers"></a>변환 한정자  
@@ -40,7 +34,7 @@ ms.locfileid: "49223708"
 ```  
   
 > [!NOTE]
->  표준 항목 목록에 구분 기호를 지정한 것과 동일한 방식으로 변환된 항목 목록에 사용자 지정 구분 기호를 지정할 수 있습니다. 예를 들어 기본 세미콜론(;) 대신 쉼표(,)를 사용하여 변환된 항목 목록을 구분하려면 다음 XML을 사용합니다.  
+> 표준 항목 목록에 구분 기호를 지정한 것과 동일한 방식으로 변환된 항목 목록에 사용자 지정 구분 기호를 지정할 수 있습니다. 예를 들어 기본 세미콜론(;) 대신 쉼표(,)를 사용하여 변환된 항목 목록을 구분하려면 다음 XML을 사용합니다.  
   
 ```  
 @(RESXFile->'Toolset\%(filename)%(extension)', ',')  
@@ -60,7 +54,7 @@ ms.locfileid: "49223708"
 ## <a name="dependency-analysis"></a>종속성 분석  
  변환은 변환 항목 목록과 원래 항목 목록 간에 일대일 매핑을 보장합니다. 따라서 대상이 입력의 변환인 출력을 만드는 경우 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]는 입력 및 출력의 타임 스탬프를 분석하고, 대상을 건너뛰거나, 빌드하거나, 부분적으로 다시 빌드할지를 결정할 수 있습니다.  
   
- 다음 예제의 [복사 작업](../msbuild/copy-task.md)에서 `BuiltAssemblies` 항목 목록의 모든 파일은 `Outputs` 특성에서 변환을 사용하여 지정된 작업의 대상 폴더에 있는 파일에 매핑됩니다. `BuiltAssemblies` 항목 목록의 파일이 변경되면 `Copy` 작업은 변경된 파일에 대해서만 실행되고 다른 모든 파일을 건너뜁니다. 종속성 분석 및 변환을 사용하는 방법에 대한 자세한 내용은 [방법: 증분 빌드](../msbuild/how-to-build-incrementally.md)를 참조하세요.  
+ 다음 예제의 [복사 작업](../msbuild/copy-task.md)에서 `BuiltAssemblies` 항목 목록의 모든 파일은 `Outputs` 특성에서 변환을 사용하여 지정된 작업의 대상 폴더에 있는 파일에 매핑됩니다. `BuiltAssemblies` 항목 목록의 파일이 변경되면 `Copy` 작업은 변경된 파일에 대해서만 실행되고 다른 모든 파일을 건너뜁니다. 종속성 분석 및 변환을 사용하는 방법에 대한 자세한 내용은 [방법: 증분 빌드](../msbuild/how-to-build-incrementally.md)합니다.  
   
 ```  
 <Target Name="CopyOutputs"  
@@ -117,7 +111,4 @@ extension: .xsd
 ## <a name="see-also"></a>참고 항목  
  [MSBuild 개념](../msbuild/msbuild-concepts.md)   
  [MSBuild 참조](../msbuild/msbuild-reference.md)   
- [방법: 증분 빌드](../msbuild/how-to-build-incrementally.md)
-
-
-
+ [방법: 증분 방식으로 빌드](../msbuild/how-to-build-incrementally.md)

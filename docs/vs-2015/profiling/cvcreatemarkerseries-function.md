@@ -1,14 +1,9 @@
 ---
 title: CvCreateMarkerSeries 함수 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - cvmarkers/CvCreateMarkerSeriesA
 - cvmarkers/CvCreateMarkerSeriesW
@@ -19,13 +14,13 @@ ms.assetid: e280530b-137a-43a7-8643-aa514ab86ed7
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 52ef56d1e33ddb66a4c35f7c46596ea080478a6c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6dc4af6ef3b2ffc89ec0e69a6dd63923f5c55ffe
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734717"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155547"
 ---
 # <a name="cvcreatemarkerseries-function"></a>CvCreateMarkerSeries 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +51,7 @@ _Check_return_ HRESULT CvCreateMarkerSeriesA(
  `ppMarkerSeries`  
  표식 계열 컨텍스트를 저장할 출력 변수의 주소입니다. NULL일 수 없습니다.  
   
-## <a name="return-value"></a>반환 값  
+## <a name="return-value"></a>Return Value  
  표식 계열이 성공적으로 생성된 경우 S_OK이고, 오류가 발생한 경우 오류 코드입니다. SUCCEEDED/FAILED 매크로를 사용하여 오류 조건을 확인할 수 있습니다.  
   
 ## <a name="requirements"></a>요구 사항  
@@ -68,6 +63,3 @@ _Check_return_ HRESULT CvCreateMarkerSeriesA(
   
 ## <a name="see-also"></a>참고 항목  
  [C++ 라이브러리 참조](../profiling/cpp-library-reference.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: '방법: 코드 메트릭 데이터 생성 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code metrics results, generate
 - code metrics results
@@ -17,13 +12,13 @@ ms.assetid: 7bd2c906-ee9c-484a-9550-4cddecc8f042
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0e2b09b81f6b5197c8edd0a501395199f4b57ec9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: aeba6a777dd060f310f9cbb8801b2405cd76f6b2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759062"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201332"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>방법: 코드 메트릭 데이터 생성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,15 +31,15 @@ ms.locfileid: "51759062"
   
 ### <a name="to-generate-code-metrics-results-for-an-entire-solution"></a>전체 솔루션에 대해 코드 메트릭 결과 생성 하려면  
   
--   클릭 **분석 메뉴**를 클릭 하 고 **솔루션에 대 한 메트릭을 CalculateCode**합니다.  
+- 클릭 **분석 메뉴**를 클릭 하 고 **솔루션에 대 한 메트릭을 CalculateCode**합니다.  
   
      \- 또는 -  
   
--   **솔루션 탐색기**에서 솔루션을 마우스 오른쪽 단추로 클릭 하 고 클릭 **CalculateCode 메트릭**합니다.  
+- **솔루션 탐색기**에서 솔루션을 마우스 오른쪽 단추로 클릭 하 고 클릭 **CalculateCode 메트릭**합니다.  
   
      \- 또는 -  
   
--   에 **코드 메트릭 결과** 창 클릭 합니다 **솔루션에 대해 CalculateCode 메트릭** 단추.  
+- 에 **코드 메트릭 결과** 창 클릭 합니다 **솔루션에 대해 CalculateCode 메트릭** 단추.  
   
      결과가 생성 되 고 **코드 메트릭 결과** 창이 표시 됩니다.  
   
@@ -62,10 +57,7 @@ ms.locfileid: "51759062"
   
 ### <a name="to-view-the-results-details"></a>결과 세부 정보를 보려면  
   
--   트리를 확장 합니다 **계층** 열입니다.  
+- 트리를 확장 합니다 **계층** 열입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [관리 코드의 복잡성 및 유지 관리 용이성 측정](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
-
-
-

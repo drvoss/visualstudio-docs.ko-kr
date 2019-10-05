@@ -1,11 +1,8 @@
 ---
 title: '방법: 선언적 규칙 조건 만들기 (레거시) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - declarative rule conditions
@@ -15,13 +12,13 @@ ms.assetid: 804b6129-c433-408f-a424-46987967730c
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 2508404840db81f03ba4865a3e5d5af91e5c653b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: dbdcc268b71f2926307b500126840391dd5308fd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62931239"
 ---
 # <a name="how-to-create-a-declarative-rule-condition-legacy"></a>방법: 선언적 규칙 조건 만들기(레거시)
 이 항목에서는 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 또는 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)]를 대상으로 하는 레거시 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]를 사용하여 규칙 조건을 선언하는 방법에 대해 설명합니다.  
@@ -30,37 +27,37 @@ ms.locfileid: "49187414"
   
  선언적 규칙 조건은 기본적으로 제공되는 다음과 같은 Windows Workflow Foundation 활동에 사용됩니다.  
   
--   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
+- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
   
--   [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
+- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
   
--   [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
+- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
   
--   [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
+- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
--   [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
+- [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
   
--   [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
+- [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
   
 ### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>규칙 조건 편집기를 사용하여 선언적 규칙 조건을 만들려면  
   
-1.  활동에서 **속성** 창 클릭 합니다 **조건** 속성 또는 **UntilCondition** activity에 따라 속성입니다.  
+1. 활동에서 **속성** 창 클릭 합니다 **조건** 속성 또는 **UntilCondition** activity에 따라 속성입니다.  
   
-2.  선택 **선언적 규칙 조건** 속성 목록에서.  
+2. 선택 **선언적 규칙 조건** 속성 목록에서.  
   
-3.  확장을 **조건을** 하거나 **UntilCondition** 속성입니다.  
+3. 확장을 **조건을** 하거나 **UntilCondition** 속성입니다.  
   
-4.  클릭 합니다 **ConditionName** 속성입니다.  
+4. 클릭 합니다 **ConditionName** 속성입니다.  
   
-5.  클릭 합니다 **ConditionName** 줄임표 **[...]**  열려면 합니다 **조건 선택** 대화 상자.  
+5. 클릭 합니다 **ConditionName** 줄임표 **[...]**  열려면 합니다 **조건 선택** 대화 상자.  
   
-6.  클릭 **새 조건** 열려는 합니다 **Rule Condition Editor** 대화 상자.  
+6. 클릭 **새 조건** 열려는 합니다 **Rule Condition Editor** 대화 상자.  
   
-7.  조건에 식을 입력 합니다 **조건을** 입력란입니다.  
+7. 조건에 식을 입력 합니다 **조건을** 입력란입니다.  
   
      조건식을 만드는 방법에 대 한 자세한 내용은 [규칙 조건 편집기 대화 상자 (레거시)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)합니다.  
   
-8.  조건 식 만들기 완료 되 면 **확인** 를 대화 상자를 닫고 할당 된 이름으로 규칙 조건을 만듭니다.  
+8. 조건 식 만들기 완료 되 면 **확인** 를 대화 상자를 닫고 할당 된 이름으로 규칙 조건을 만듭니다.  
   
      합니다 **조건 선택** 대화 상자가 열립니다.  
   

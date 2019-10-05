@@ -1,25 +1,22 @@
 ---
 title: UML 모델에서 요소 및 관계 만들기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: cae81d32-8cc7-4f7c-9f00-20119952bc51
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5ed918bc96168196400dd34d87ec65574fdfc5b6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ce1f236347ad811f1c5d115f30907b7e3356e3af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785874"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159641"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>UML 모델에서 요소 및 관계 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +35,7 @@ Visual Studio 확장에 대한 프로그램 코드에서 요소 및 관계를 �
 ### <a name="obtain-the-owner-of-the-element-you-want-to-create"></a>만들려는 요소의 소유자를 가져옵니다.  
  모델은 단일 트리를 구성하므로 모든 항목에는 모델 루트를 제외한 하나의 소유자가 포함됩니다. 모델 루트는 `IModel` 형식인 `IPackage` 형식입니다.  
   
- 사용자의 현재 다이어그램과 같은 특정 다이어그램에 표시될 요소를 만들고 있으면 대개 해당 다이어그램에 연결된 패키지에서 요소를 만들어야 합니다. 예:  
+ 사용자의 현재 다이어그램과 같은 특정 다이어그램에 표시될 요소를 만들고 있으면 대개 해당 다이어그램에 연결된 패키지에서 요소를 만들어야 합니다. 예를 들어:  
   
 ```  
 IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;  
@@ -46,7 +43,7 @@ IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;
   
  이 표에서는 일반적인 모델 요소의 소유권을 간략히 설명합니다.  
   
-|만들 요소|Owner|  
+|만들 요소|소유자|  
 |---------------------------|-----------|  
 |`IActor, IUseCase, IComponent, IClass, IInterface, IEnumeration`<br /><br /> `IActivity, IInteraction`|`IPackage, IModel`|  
 |`IAttribute, IOperation`|`IClass, IInterface`|  
@@ -55,7 +52,7 @@ IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;
 |`ILifeline, IMessage, ICombinedFragment`|`IInteraction`|  
   
 ### <a name="invoke-the-create-method-on-the-owner"></a>소유자에 대해 Create 메서드 호출  
- 메서드 이름 형식입니다. `Create` *OwnedType*`()`합니다. 예를 들어:  
+ 메서드 이름 폼입니다. `Create`*OwnedType*`()`. 예를 들어:  
   
 ```  
 IUseCase usecase1 = linkedPackage.CreateUseCase();  
@@ -90,20 +87,20 @@ using Microsoft.VisualStudio.Uml.Extensions;
   
 #### <a name="to-create-an-association"></a>연결을 만들려면  
   
-1.  대개 관계의 소스 끝이 포함된 패키지 또는 모델인 연결의 소유자를 가져옵니다.  
+1. 대개 관계의 소스 끝이 포함된 패키지 또는 모델인 연결의 소유자를 가져옵니다.  
   
-2.  소유자에 대해 필요한 Create 메서드를 호출합니다.  
+2. 소유자에 대해 필요한 Create 메서드를 호출합니다.  
   
-3.  이름과 같은 관계의 속성을 설정합니다.  
+3. 이름과 같은 관계의 속성을 설정합니다.  
   
-     예:  
+     예를 들어:  
   
     ```  
     IAssociation association = subject.Package.CreateAssociation(subject, observer);  
     association .Name = "Observes";  
     ```  
   
-4.  관계의 각 끝에 대한 속성을 설정합니다. 항상 `MemberEnds` 두 개가 있습니다. 예:  
+4. 관계의 각 끝에 대한 속성을 설정합니다. 항상 `MemberEnds` 두 개가 있습니다. 예를 들어:  
   
     ```  
     association .MemberEnds[0].Name = "subject";   // role name  
@@ -128,13 +125,10 @@ anElement.Delete();
   
  모델에서 요소를 삭제할 경우:  
   
--   연결된 모든 관계도 삭제됩니다.  
+- 연결된 모든 관계도 삭제됩니다.  
   
--   다이어그램에서 요소를 나타낸 모든 모양도 삭제됩니다.  
+- 다이어그램에서 요소를 나타낸 모든 모양도 삭제됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [UML 모델 및 다이어그램 확장](../modeling/extend-uml-models-and-diagrams.md)   
  [다이어그램에 UML 모델 표시](../modeling/display-a-uml-model-on-diagrams.md)
-
-
-

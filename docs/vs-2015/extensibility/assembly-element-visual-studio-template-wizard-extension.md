@@ -1,14 +1,9 @@
 ---
 title: Assembly 요소 (Visual Studio 템플릿 마법사 확장명) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Assembly
 helpviewer_keywords:
@@ -17,21 +12,21 @@ helpviewer_keywords:
 ms.assetid: 0c3dc280-1753-4ea2-a13c-d31d13b935b2
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 556906747d086d6ec3193c58811806bf72e4ff35
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d947c0f2996bcaaeff6c6dbf084151237f1fdb3d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184728"
 ---
-# <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly 요소(Visual Studio 템플릿 마법사 확장명)
+# <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly 요소(Visual Studio 템플릿 마법사 확장)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이름 또는 구현 하는 어셈블리의 강력한 이름을 지정 합니다 `IWizard` 인터페이스입니다.  
   
  \<VSTemplate>  
-\<WizardExtension >  
+\<WizardExtension>  
 \<어셈블리 >  
   
 ## <a name="syntax"></a>구문  
@@ -58,7 +53,7 @@ ms.locfileid: "51741203"
 ## <a name="text-value"></a>텍스트 값  
  텍스트 값은 필수입니다.  
   
- 구현 하는 어셈블리를 지정 하는이 텍스트는 `IWizard` 인터페이스입니다. 전체 어셈블리 이름으로이 어셈블리 이름을 지정 해야 합니다. 예를 들어, `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`을 입력합니다.  
+ 구현 하는 어셈블리를 지정 하는이 텍스트는 `IWizard` 인터페이스입니다. 전체 어셈블리 이름으로이 어셈블리 이름을 지정 해야 합니다. `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null` )을 입력합니다.  
   
 ## <a name="remarks"></a>설명  
  `Assembly`은 `WizardExtension`의 필수 자식 요소입니다.  
@@ -98,4 +93,3 @@ ms.locfileid: "51741203"
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
  [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)   
  [방법: 프로젝트 템플릿에 마법사 사용](../extensibility/how-to-use-wizards-with-project-templates.md)
-

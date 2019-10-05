@@ -1,21 +1,19 @@
 ---
 title: 필터 노드
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: reference
 ms.assetid: f7cae2dc-e9a7-49d4-8be5-58b79868624e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cf0902847899f8796ac34765c66c79530248e81
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 95a8bfeedea11060cbf3a0aefbf2c11a30230060
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62845070"
 ---
 # <a name="filter-nodes"></a>필터 노드
 
@@ -23,7 +21,7 @@ ms.locfileid: "31922229"
 
 ## <a name="filter-node-reference"></a>필터 노드 참조
 
-|노드|설명|속성|
+|노드|세부 정보|속성|
 |----------|-------------|----------------|
 |**흐리게**|가우스 함수를 사용하여 질감에서 픽셀을 흐리게 합니다.<br /><br /> 이 노드를 사용하여 질감에서 색 세부 정보나 노이즈를 줄일 수 있습니다.<br /><br /> **입력:**<br /><br /> `UV`: `float2`<br /> 테스트할 텍셀의 좌표입니다.<br /><br /> **출력:**<br /><br /> `Output`: `float4`<br /> 흐리게 표시된 색 값입니다.|**질감**<br /> 흐리게 표시 중에 사용된 샘플러와 연결된 질감 레지스터입니다.|
 |**흐리기**|지정된 색에서 색의 양을 줄입니다.<br /><br /> 색이 제거되면 색 값은 해당 회색조 값에 가까워집니다.<br /><br /> **입력:**<br /><br /> `RGB`: `float3`<br /> 채도를 낮출 색입니다.<br /><br /> `Percent`: `float`<br /> 제거할 색의 비율로, [0, 1] 범위의 정규화된 값으로 표시됩니다.<br /><br /> **출력:**<br /><br /> `Output`: `float3`<br /> 채도를 낮춘 색입니다.|**광도**<br /> 빨간색, 녹색 및 파란색 구성 요소에 지정되는 가중치입니다.|

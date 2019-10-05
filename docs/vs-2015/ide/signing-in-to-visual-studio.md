@@ -9,13 +9,13 @@ ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: be7577aba812e95f7788f8c3c54350ae8e4bcd33
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 96676ee8021e09a5e7d0a9808cea1e615f58717a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066303"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679825"
 ---
 # <a name="signing-in-to-visual-studio"></a>Visual Studio에 로그인
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,19 +25,19 @@ IDE에 로그인하여 개인 설정 계정을 설정하면 Visual Studio의 개
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Visual Studio에 로그인해야 하는 이유는 무엇인가요?
  Visual Studio에 로그인하면 다음과 같은 이점이 있습니다.
 
--   Visual Studio Dev Essentials 프로그램을 통해 무료 소프트웨어, 교육, 지원 등을 비롯해**다양한 혜택을 이용** 할 수 있습니다. 자세한 내용은 [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) 를 참조하세요.
+- Visual Studio Dev Essentials 프로그램을 통해 무료 소프트웨어, 교육, 지원 등을 비롯해**다양한 혜택을 이용** 할 수 있습니다. 자세한 내용은 [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) 를 참조하세요.
 
--   **Visual Studio 설정 동기화** – 아무 장치에서나 Visual Studio에 로그인하면 키 바인딩, 창 레이아웃 및 색 테마 등의 사용자 지정 설정이 즉시 적용됩니다. [Visual Studio의 동기화된 설정](http://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx)을 참조하세요.
+- **Visual Studio 설정 동기화** – 아무 디바이스에서나 Visual Studio에 로그인하면 키 바인딩, 창 레이아웃 및 색 테마 등의 사용자 지정 설정이 즉시 적용됩니다. [Visual Studio의 동기화된 설정](https://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx)을 참조하세요.
 
--   **Visual Studio Express 버전 잠금을 영구적으로 해제** – 평가 기간 30일의 제한 없이 원하는 만큼 Visual Studio Express의 모든 버전을 사용할 수 있습니다.
+- **Visual Studio Express 버전 잠금을 영구적으로 해제** – 평가 기간 30일의 제한 없이 원하는 만큼 Visual Studio Express의 모든 버전을 사용할 수 있습니다.
 
--   **Visual Studio Community 버전 잠금 해제** - 평가 기간을 30일로 제한하지 않습니다.
+- **Visual Studio Community 버전 잠금 해제** - 평가 기간을 30일로 제한하지 않습니다.
 
--   **Visual Studio 평가 기간 연장** – 평가 기간을 30일로 제한하지 않고 추가로 90일동안 Visual Studio Professional 또는 Visual Studio Enterprise를 사용할 수 있습니다.
+- **Visual Studio 평가 기간 연장** – 평가 기간을 30일로 제한하지 않고 추가로 90일동안 Visual Studio Professional 또는 Visual Studio Enterprise를 사용할 수 있습니다.
 
--   **MSDN 또는 VSO 구독과 연결된 계정을 사용하는 경우 Visual Studio 잠금 해제**- [Visual Studio 잠금을 해제하는 방법](../ide/how-to-unlock-visual-studio.md)을 참조하세요.
+- **MSDN 또는 VSO 구독과 연결된 계정을 사용하는 경우 Visual Studio 잠금 해제**- [Visual Studio 잠금을 해제하는 방법](../ide/how-to-unlock-visual-studio.md)을 참조하세요.
 
--   IDE에서 동일한 계정의 자격 증명을 묻는 메시지를 다시 표시하지 않고**Azure 및 Visual Studio Team Services 등의 서비스에 자동으로 연결** 합니다.
+- IDE에서 동일한 계정의 자격 증명을 묻는 메시지를 다시 표시하지 않고**Azure 및 Visual Studio Team Services 등의 서비스에 자동으로 연결** 합니다.
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Visual Studio에 로그인하는 방법
  Visual Studio를 처음 시작할 때 로그인할지 묻는 메시지가 나타나고 기본적인 등록 정보를 제공합니다. 자신을 가장 잘 나타내는 Microsoft 계정이나 회사 또는 학교 계정을 선택해야 합니다. 이러한 계정이 없으면 무료로 Microsoft 계정을 만들 수 있습니다. [Microsoft 계정을 등록하려면 어떻게 하나요?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)를 참조하세요.
@@ -53,12 +53,12 @@ IDE에 로그인하여 개인 설정 계정을 설정하면 Visual Studio의 개
 ## <a name="to-change-your-profile-information"></a>프로필 정보를 변경하려면
  **파일 &#124; 계정 설정**에서 Visual Studio 프로필 및 라이선스에 대한 정보를 표시하고 업데이트할 수 있습니다. 계정 이름, 아바타 그림 또는 메일 주소 같은 프로필 정보를 편집하려면
 
-1.  **파일 &#124; 계정 설정**으로 이동합니다.
+1. **파일 &#124; 계정 설정**으로 이동합니다.
 
-2.  **계정 설정** 대화 상자에서 **Visual Studio 프로필 관리** 링크를 선택합니다.
+2. **계정 설정** 대화 상자에서 **Visual Studio 프로필 관리** 링크를 선택합니다.
 
-3.  브라우저의 **내 Microsoft 정보** 페이지에서 **정보 편집** 단추를 선택합니다.
+3. 브라우저의 **내 Microsoft 정보** 페이지에서 **정보 편집** 단추를 선택합니다.
 
-4.  원하는 설정을 변경합니다.
+4. 원하는 설정을 변경합니다.
 
-5.  완료되면 **변경 내용 저장** 단추를 선택합니다.
+5. 완료되면 **변경 내용 저장** 단추를 선택합니다.

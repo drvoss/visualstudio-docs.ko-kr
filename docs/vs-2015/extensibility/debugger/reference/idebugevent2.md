@@ -1,14 +1,9 @@
 ---
 title: IDebugEvent2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugEvent2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: de3d714d-96fb-4e12-b66b-a75391472153
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e3d4b1022d8eda4cfb992e9bfcc997193a84ee37
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f663be5910b342a6adba5da0b84d7e0d80cacc10
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770010"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695407"
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ IDebugEvent2 : IUnknown
  디버그 엔진 (DE) 및 사용자 지정 포트 공급자를 다른 모든 이벤트 인터페이스와 같은 개체에서이 인터페이스를 구현 합니다.  
   
 ## <a name="notes-for-callers"></a>호출자에 대 한 정보  
- 인터페이스에 지정 된 ID (IID) 인수를 사용 하 여 [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) 또는 [이벤트](../../../extensibility/debugger/reference/idebugportevents2-event.md), 세션 디버그 관리자 (SDM) 호출 [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) 에 `IDebugEvent2` 를 얻기 위해 인터페이스 적절 한 이벤트 인터페이스입니다.  
+ 인터페이스에 지정 된 ID (IID) 인수를 사용 하 여 [이벤트](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) 또는 [이벤트](../../../extensibility/debugger/reference/idebugportevents2-event.md), 세션 디버그 관리자 (SDM) 호출 [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) 에 `IDebugEvent2` 를 얻기 위해 인터페이스 적절 한 이벤트 인터페이스입니다.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
  다음 표에서의 메서드를 보여 줍니다. `IDebugEvent2`합니다.  
@@ -54,12 +49,11 @@ IDebugEvent2 : IUnknown
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>참고 항목  
  [Core 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)   
  [이벤트](../../../extensibility/debugger/reference/idebugportevents2-event.md)   
  [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
-

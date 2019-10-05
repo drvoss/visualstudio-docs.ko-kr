@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 4786b0ba6ee981ce14b60b1af87252e3d9582a0e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: fcc08f9af3452289b3e0e76fe6970e75e8f854db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414821"
 ---
 # <a name="customizing-copy-behavior"></a>복사 동작 사용자 지정
 Visual Studio Visualization and Modeling SDK를 사용 하 여 만든 도메인 특정 언어 (DSL)에서 사용자는 복사 하 고 요소를 붙여넣을 때 일어나 변경할 수 있습니다.
@@ -33,7 +32,7 @@ Visual Studio Visualization and Modeling SDK를 사용 하 여 만든 도메인 
 
   복사한 요소와 링크는 serialize되어 클립보드에 배치되는 EGP(<xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>)에 저장됩니다.
 
-  복사한 요소의 이미지도 클립보드에 배치됩니다. 따라서 사용자가 Word 등의 다른 응용 프로그램에 해당 이미지를 붙여넣을 수 있습니다.
+  복사한 요소의 이미지도 클립보드에 배치됩니다. 따라서 사용자가 Word 등의 다른 애플리케이션에 해당 이미지를 붙여넣을 수 있습니다.
 
   사용자는 DSL 정의에 따라 요소를 수락할 수 있는 대상에 복사한 요소를 붙여넣을 수 있습니다. 예를 들어 구성 요소 솔루션 템플릿에서 생성된 DSL에서 사용자는 포트를 구성 요소에는 붙여넣을 수 있지만 다이어그램에는 붙여넣을 수 없으며, 구성 요소를 다이어그램에는 붙여넣을 수 있지만 다른 구성 요소에는 붙여넣을 수 없습니다.
 
@@ -233,7 +232,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  복사, 붙여넣기, 만들기 및 개체의 삭제와 관련 하 여 DSL 동작의 다양 한 측면의 인스턴스에 의해 제어 됩니다 <xref:Microsoft.VisualStudio.Modeling.ElementOperations> 는 다이어그램에 결합 됩니다. 고유한 클래스를 파생 하 여 DSL의 동작을 수정할 수 있습니다 <xref:Microsoft.VisualStudio.Modeling.ElementOperations> 재정의 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> 다이어그램 클래스의 속성입니다.
 
 > [!TIP]
->  프로그램 코드를 사용 하 여 모델을 사용자 지정 하는 방법에 대 한 자세한 내용은 참조 하세요. [탐색 및 업데이트 프로그램 코드에서 모델](../modeling/navigating-and-updating-a-model-in-program-code.md)합니다.
+> 프로그램 코드를 사용 하 여 모델을 사용자 지정 하는 방법에 대 한 자세한 내용은 참조 하세요. [탐색 및 업데이트 프로그램 코드에서 모델](../modeling/navigating-and-updating-a-model-in-program-code.md)합니다.
 
  ![복사 작업의 시퀀스 다이어그램](../modeling/media/dslcopyseqdiagram.png)
 
@@ -285,9 +284,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 
  ElementOperations 클래스에서 두 메서드를 정의합니다.
 
--   `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` 이 메서드는 소스 요소를 대상 모양, 연결선 또는 다이어그램으로 끌 수 있는지 여부를 결정합니다.
+- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` 이 메서드는 소스 요소를 대상 모양, 연결선 또는 다이어그램으로 끌 수 있는지 여부를 결정합니다.
 
--   `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` 이 메서드는 소스 요소를 대상에 결합합니다.
+- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` 이 메서드는 소스 요소를 대상에 결합합니다.
 
 ### <a name="canmerge"></a>CanMerge()
  `CanMerge()` 이 메서드는 다이어그램에서 마우스를 이동하면 사용자에게 제공되어야 하는 피드백을 확인하기 위해 호출됩니다. 이 메서드의 매개 변수는 마우스로 가리키는 요소와 끌기 작업을 수행한 소스에 대한 데이터입니다. 사용자는 화면의 어느 위치에서나 끌기를 수행할 수 있습니다. 그러므로 소스 개체는 다양한 형식이 될 수 있으며 여러 형식으로 serialize할 수 있습니다. 소스가 DSL 또는 UML 모델이면 데이터 매개 변수는 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>의 serialization입니다. 끌기, 복사 및 도구 상자 작업에서는 ElementGroupPrototypes를 사용하여 모델의 코드 조각을 표시합니다.
@@ -557,7 +556,6 @@ namespace Company.MyDsl
 
 - [요소 만들기 및 이동 사용자 지정](../modeling/customizing-element-creation-and-movement.md)
 - [방법: 끌어서 놓기 처리기 추가](../modeling/how-to-add-a-drag-and-drop-handler.md)
-- [삭제 동작 사용자 지정](../modeling/customizing-deletion-behavior.md)
 - [샘플: VMSDK 회로 다이어그램 샘플](http://go.microsoft.com/fwlink/?LinkId=213879)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

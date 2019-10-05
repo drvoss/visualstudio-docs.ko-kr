@@ -2,21 +2,20 @@
 title: 워크플로 디자이너-Send 활동 디자이너
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.ServiceModel.Activities.Send.UI
 ms.assetid: b514f2e4-767c-4b94-ac61-dd3a54d4b96d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 788884590054b29ae31df9c5ba2ca31ac0ea5c49
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8d27bd9be1b769215dd77d1e906a5698e17bd18b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009131"
 ---
 # <a name="send-activity-designer"></a>Sent 활동 디자이너
 
@@ -38,8 +37,7 @@ ms.locfileid: "53954028"
 
 다음 표에서는 <xref:System.ServiceModel.Activities.Send> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. 속성 표에서 또는 워크플로 디자이너 화면에서 이러한 속성을 편집할 수 있습니다.
 
-
-| 속성 이름 | 필수 | 용도 |
+| 속성 이름 | 필수 | 사용 |
 |-|----------|-|
 | <xref:System.Activities.Activity.DisplayName%2A> | False | <xref:System.ServiceModel.Activities.Send> 활동의 이름입니다. 기본값은 Send입니다. <xref:System.Activities.Activity.DisplayName%2A>은 꼭 필요하지 않더라도 사용하는 것이 좋습니다. |
 | <xref:System.ServiceModel.Activities.Send.OperationName%2A> | True | 이 <xref:System.ServiceModel.Activities.Send> 활동에 의해 호출되는 서비스 작업의 이름입니다. 이 속성의 기본값 생성을 사용 하는 **작업** 속성 경우 합니다 **작업** 속성이 명시적으로 설정 되어 있지. |
@@ -56,7 +54,7 @@ ms.locfileid: "53954028"
 | <xref:System.ServiceModel.Activities.Send.EndpointAddress%2A> | | 메시지가 전달될 <xref:System.ServiceModel.EndpointAddress>입니다. |
 | <xref:System.ServiceModel.Activities.Send.EndpointConfigurationName%2A> | | 엔드포인트 구성의 이름입니다. 이 속성은 구성 파일에서 엔드포인트를 구성할 때 설정됩니다. 이 속성에 지정 된 이름으로 설정 해야 합니다  **\<끝점 >** 프로그램 구성 파일의 요소입니다. 이 속성을 설정 하는 경우는 <xref:System.ServiceModel.Activities.Send.Endpoint%2A> 속성은 같아야 **null**합니다. |
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)

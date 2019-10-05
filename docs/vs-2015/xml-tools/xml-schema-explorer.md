@@ -1,30 +1,24 @@
 ---
 title: XML 스키마 탐색기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 2fc39e98-b194-456b-a452-cfafb0a52d66
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 32116de7bb88fe937980b02e1789830a27ca36b1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 550c43532db89132ec4e1b123005ad02ef547414
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198033"
 ---
 # <a name="xml-schema-explorer"></a>XML 스키마 탐색기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML 스키마 탐색기는 XSD(XML 스키마 정의 언어) 스키마 작업을 수행할 수 있도록 Microsoft Visual Studio 및 XML 편집기와 통합되었습니다. XML 스키마 파일을 열면 합니다 **스키마 집합** 노드가 XML 스키마 탐색기에 나타납니다. 대상 파일은 물론 `include` 또는 `import` 문에서 참조되는 모든 파일에 대해 포함된 스키마, 가져온 스키마 또는 다시 정의된 스키마도 모두 XML 스키마 탐색기에 나타납니다.  
   
  XML 스키마 탐색기를 사용하면 다음을 수행할 수 있습니다.  
@@ -73,11 +67,11 @@ XML 스키마 탐색기는 XSD(XML 스키마 정의 언어) 스키마 작업을 
   
  노드를 활성화 하려면 두 번 클릭 하거나 눌러 **Enter** 노드를 선택 하는 경우.  
   
--   파일이 아직 열려 있지 않은 경우 노드를 활성화하면 이 노드가 정의된 파일이 열리고 파일의 노드가 선택됩니다.  
+- 파일이 아직 열려 있지 않은 경우 노드를 활성화하면 이 노드가 정의된 파일이 열리고 파일의 노드가 선택됩니다.  
   
--   파일이 아직 열려 있지 않은 경우 파일 노드를 활성화하면 선택된 파일이 열리고 `<schema>` 노드가 강조 표시됩니다.  
+- 파일이 아직 열려 있지 않은 경우 파일 노드를 활성화하면 선택된 파일이 열리고 `<schema>` 노드가 강조 표시됩니다.  
   
--   SchemaSet 또는 네임스페이스 노드를 활성화하는 경우에는 아무 작업도 수행되지 않습니다.  
+- SchemaSet 또는 네임스페이스 노드를 활성화하는 경우에는 아무 작업도 수행되지 않습니다.  
   
 ## <a name="draging-and-dropping-nodes"></a>노드 끌어서 놓기  
  전역 노드, 파일 노드 및 네임스페이스 노드를 XSD 디자이너 뷰로 끌어서 놓을 수 있습니다. 현재 뷰가 경우는 [시작 뷰](../xml-tools/start-view.md), 열립니다는 노드를 뷰로 끌어 합니다 [그래프 뷰](../xml-tools/graph-view.md)합니다. 현재 뷰가 경우 합니다 [콘텐츠 모델 뷰](../xml-tools/content-model-view.md) 또는 그래프 뷰의 경우 노드를 끌어 놓으면 뷰가 변경 되지 것입니다.  
@@ -88,20 +82,13 @@ XML 스키마 탐색기는 XSD(XML 스키마 정의 언어) 스키마 작업을 
   
 ## <a name="in-this-section"></a>섹션 내용  
   
--   [스키마 집합 검색](../xml-tools/searching-the-schema-set.md)  
+- [스키마 집합 검색](../xml-tools/searching-the-schema-set.md)  
   
--   [정렬, 필터링 및 그룹화](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)  
+- [정렬, 필터링 및 그룹화](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)  
   
--   [상황에 맞는 메뉴](../xml-tools/context-menus-xml-schema-explorer.md)  
+- [상황에 맞는 메뉴](../xml-tools/context-menus-xml-schema-explorer.md)  
   
--   [XML 리터럴과 XML 스키마 탐색기와의 통합](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
+- [XML 리터럴과 XML 스키마 탐색기와의 통합](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
   
 ## <a name="see-also"></a>참고 항목  
  [방법: XML 스키마 탐색기에서 작업 영역에 노드 추가](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)
-
-
-
-
-
-
-

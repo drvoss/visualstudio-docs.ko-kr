@@ -1,27 +1,22 @@
 ---
 title: 구성 요소 관리 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], components
 - installation [Visual Studio SDK], file management
 ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 626717ed559257d04cb0bbcca3c76283aac22d63
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 56a110f382d0b182eed0ea1a95cd4dabf2877037
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191856"
 ---
 # <a name="component-management"></a>구성 요소 관리
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,27 +29,26 @@ Windows 설치 관리자에서 작업의 단위는 Windows 설치 관리자 구�
   
 ## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>Side-by-side-설치에 대 한 설치 프로그램을 작성 지침  
   
--   작성자 파일 및 레지스트리 키에 고유한 구성 요소 버전 간에 공유 되는 합니다.  
+- 작성자 파일 및 레지스트리 키에 고유한 구성 요소 버전 간에 공유 되는 합니다.  
   
      이 옵션을 사용 하면 다음 버전에서 쉽게 사용할 수 있습니다. 예를 들어, 전역으로 등록 된 형식 라이브러리 파일 확장명을 HKEY_CLASSES_ROOT를에 등록 된 다른 항목입니다.  
   
--   공유 구성 요소에 별도 병합 모듈을 그룹화 합니다.  
+- 공유 구성 요소에 별도 병합 모듈을 그룹화 합니다.  
   
      이 통해-side-by-side 앞에 올바르게 작성할을 수 있습니다.  
   
--   버전 간에 동일한 Windows Installer 구성 요소를 사용 하 여 공유 파일 및 레지스트리 키를 설치 합니다.  
+- 버전 간에 동일한 Windows Installer 구성 요소를 사용 하 여 공유 파일 및 레지스트리 키를 설치 합니다.  
   
      다른 구성 요소를 사용 하는 경우 다른 VSPackage 여전히 설치 되어 있지만 하나의 버전 관리 VSPackage 제거 하는 경우에 파일과 레지스트리 항목이 제거 됩니다.  
   
--   동일한 구성 요소 버전 관리 및 공유 항목을 혼합 하지 마십시오.  
+- 동일한 구성 요소 버전 관리 및 공유 항목을 혼합 하지 마십시오.  
   
      이렇게 하면 격리 된 위치에 버전이 지정 된 항목과 전역 위치에 공유 항목을 설치 하려면 불가능 합니다.  
   
--   버전이 지정 된 파일을 가리키는 공유 레지스트리 키를 갖지 않습니다.  
+- 버전이 지정 된 파일을 가리키는 공유 레지스트리 키를 갖지 않습니다.  
   
      이렇게 하면 다른 버전 관리 VSPackage를 설치할 때 공유 키를 덮어쓰게 됩니다. 두 번째 버전을 제거한 후에 키가 가리키고 파일은 사라집니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [공유 및 버전 관리 Vspackage 중에서 선택](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   
  [VSPackage 설치 시나리오](../../extensibility/internals/vspackage-setup-scenarios.md)
-

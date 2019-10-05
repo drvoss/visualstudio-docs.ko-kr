@@ -1,14 +1,9 @@
 ---
 title: Element(XElement 동적 속성) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 api_name:
 - XElement.Element
 api_type:
@@ -17,13 +12,13 @@ ms.assetid: c6c25b8d-a1da-41ff-aeff-867ff1dcf749
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 879e5afb112df1f4c82cec150175b24456c1b0a4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e7789a94c38f7c6d7db22d9214b19857e4c62055
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195156"
 ---
 # <a name="element-xelement-dynamic-property"></a>요소(XElement 동적 속성)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,10 +37,7 @@ elem.Element[{namespaceName}localName]
 ## <a name="remarks"></a>설명  
  이 속성은 <xref:System.Xml.Linq.XContainer.Element%2A> 클래스의 <xref:System.Xml.Linq.XContainer?displayProperty=fullName> 메서드와 동일합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  <xref:System.Xml.Linq.XContainer.Element%2A?displayProperty=fullName>   
  [XAttribute 클래스 동적 속성](../designers/xelement-class-dynamic-properties.md)   
  [요소](../designers/elements-xelement-dynamic-property.md)
-
-
-

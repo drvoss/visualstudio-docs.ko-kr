@@ -1,26 +1,21 @@
 ---
 title: 설정 저장소를 사용 하 여 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Settings Store, using
 ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 421ae479d2c25fc6b01ae63083f18c2b1c55c69d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4b6c2810a81ada06152faea06e86a27f7907a643
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430105"
 ---
 # <a name="using-the-settings-store"></a>설정 저장소 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +31,9 @@ ms.locfileid: "51749919"
 ## <a name="creating-the-example-project"></a>예제 프로젝트 만들기  
  이 섹션에는 데모에 대 한 메뉴 명령을 사용 하 여 간단한 확장 프로젝트를 만드는 방법을 보여 줍니다.  
   
-1.  모든 Visual Studio 확장은 확장 자산을 포함 하는 VSIX 배포 프로젝트를 시작 합니다. 만들기는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 라는 VSIX 프로젝트 `SettingsStoreExtension`합니다. VSIX 프로젝트 템플릿을 찾을 수 있습니다 합니다 **새 프로젝트** 대화 상자의 **Visual C# / 확장성**합니다.  
+1. 모든 Visual Studio 확장은 확장 자산을 포함 하는 VSIX 배포 프로젝트를 시작 합니다. 만들기는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 라는 VSIX 프로젝트 `SettingsStoreExtension`합니다. VSIX 프로젝트 템플릿을 찾을 수 있습니다 합니다 **새 프로젝트** 대화 상자의 **Visual C# / 확장성**합니다.  
   
-2.  이제 라는 사용자 지정 명령 항목 서식 파일을 추가할 **SettingsStoreCommand**합니다. 에 **새 항목 추가** 대화 상자에서로 이동 **Visual C# / 확장성** 선택한 **사용자 지정 명령**입니다. 에 **이름을** 창의 맨 아래에 있는 필드에 명령 파일 이름을 **SettingsStoreCommand.cs**합니다. 사용자 지정 명령을 만드는 방법에 대 한 자세한 내용은 참조 하세요. [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)  
+2. 이제 라는 사용자 지정 명령 항목 서식 파일을 추가할 **SettingsStoreCommand**합니다. 에 **새 항목 추가** 대화 상자에서로 이동 **Visual C# / 확장성** 선택한 **사용자 지정 명령**입니다. 에 **이름을** 창의 맨 아래에 있는 필드에 명령 파일 이름을 **SettingsStoreCommand.cs**합니다. 사용자 지정 명령을 만드는 방법에 대 한 자세한 내용은 참조 하세요. [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
 ## <a name="using-the-configuration-settings-store"></a>구성 설정 저장소를 사용 하 여  
  이 섹션에서는 검색 구성 설정을 표시 하는 방법을 보여 줍니다.  
@@ -84,12 +79,11 @@ ms.locfileid: "51749919"
   
 #### <a name="to-use-a-registry-editor-to-verify-configuration-settings"></a>레지스트리 편집기를 사용 하 여 구성 설정을 확인 하려면  
   
-1.  Regedit.exe를 엽니다.  
+1. Regedit.exe를 엽니다.  
   
-2.  HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts 이동할\\합니다.  
+2. Navigate to HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\.  
   
     > [!NOTE]
-    >  \14.0Exp_Config\ 및 없습니다 \14.0_Config 포함 하는 키에서 찾으려는 있는지\\합니다. Visual Studio의 실험적 인스턴스를 실행 하면 구성 설정은 레지스트리 하이브 "14.0Exp_Config"에 있습니다.  
+    > \14.0Exp_Config\ 및 없습니다 \14.0_Config 포함 하는 키에서 찾으려는 있는지\\합니다. Visual Studio의 실험적 인스턴스를 실행 하면 구성 설정은 레지스트리 하이브 "14.0Exp_Config"에 있습니다.  
   
-3.  \Installed Products\ 노드를 확장 합니다. 이전 단계에서 메시지 이면 **Microsoft Windows Phone 개발자 도구 설치: True**, \Installed Products\ Microsoft Windows Phone 개발자 도구 노드를 포함 해야 합니다. 메시지 이면 **Microsoft Windows Phone 개발자 도구 설치: False**, \Installed Products\ Microsoft Windows Phone 개발자 도구 노드를 포함 하지 않아야 합니다.
-
+3. \Installed Products\ 노드를 확장 합니다. 이전 단계에서 메시지 이면 **Microsoft Windows Phone 개발자 도구 설치: True**, \Installed Products\ Microsoft Windows Phone 개발자 도구 노드를 포함 해야 합니다. 메시지 이면 **Microsoft Windows Phone 개발자 도구 설치: False**, \Installed Products\ Microsoft Windows Phone 개발자 도구 노드를 포함 하지 않아야 합니다.

@@ -1,23 +1,20 @@
 ---
 title: T4 CleanUpBehavior 지시문 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 9e5a211f-a3bf-4229-bff0-7d2e45b71c64
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ee1882b6b63dbb2729070d32fcee7c1e58d280c5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f964f37b347d588b1f7e590d918018c50e9f41c0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199828"
 ---
 # <a name="t4-cleanupbehavior-directive"></a>T4 CleanUpBehavior 지시문
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,6 +30,3 @@ ms.locfileid: "49263404"
  이렇게 하면 텍스트 처리 속도가 느려지지만, 리소스가 삭제되었는지 확인하는 데에는 유용할 수 있습니다.  
   
  이 지시문은 Visual Studio 호스트에서만 작동합니다.
-
-
-

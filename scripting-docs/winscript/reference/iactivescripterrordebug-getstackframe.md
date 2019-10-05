@@ -2,7 +2,6 @@
 title: IActiveScriptErrorDebug::GetStackFrame | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: affb385f2c057b7ac69b56d1e8b8c22d7391e43f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: aecda7be418f2a89fb39bc1d754c8e94cf1130bd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645743"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954943"
 ---
 # <a name="iactivescripterrordebuggetstackframe"></a>IActiveScriptErrorDebug::GetStackFrame
-런타임 오류에 대 한 적용 되는 스택 프레임을 제공 합니다.  
+런타임 오류에 적용 되는 스택 프레임을 제공 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetStackFrame(  
    IDebugStackFrame**  ppdsf  
 );  
@@ -48,7 +47,7 @@ HRESULT GetStackFrame(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 런타임 오류에 대 한 적용 되는 스택 프레임을 제공 합니다.  
+ 이 메서드는 런타임 오류에 적용 되는 스택 프레임을 제공 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IActiveScriptErrorDebug 인터페이스](../../winscript/reference/iactivescripterrordebug-interface.md)

@@ -1,14 +1,9 @@
 ---
 title: ProjectType 요소 (Visual Studio 템플릿) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectType
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: ccf9d83f-c7f3-49c7-a31f-e1f22bec004c
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d76962d5a8b90b5cc947721608aa1758193fe6c7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b01dd370fe5e3d7a5207363c5ab7ec4f2a0254c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721719"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388388"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType 요소(Visual Studio 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +25,11 @@ ms.locfileid: "51721719"
 지정 된 그룹에 나타나도록 프로젝트 템플릿을 분류 합니다 **새 프로젝트** 하거나 **새 항목 추가** 대화 상자.  
   
 > [!WARNING]
->  Visual Studio 2012에서 시작 하는 c + + 프로젝트 템플릿이 지원 됩니다. Visual Studio 2010 및 이전 버전의 c + +에 대 한 지원 되지 않습니다.  
+> 에 대 한 프로젝트 템플릿은 지원 되지만 C++ Visual Studio 2012에서 시작 합니다. 에 대 한 지원 되지 않습니다 C++ Visual Studio 2010 및 이전 버전입니다.  
   
  \<VSTemplate>  
  \<TemplateData>  
- \<ProjectType >  
+ \<ProjectType>  
   
 ## <a name="syntax"></a>구문  
   
@@ -62,11 +57,11 @@ ms.locfileid: "51721719"
   
  이 값에는 프로젝트 템플릿 만들고, 유형과 다음 값 중 하나를 포함 해야 합니다 지정 합니다.  
   
--   `CSharp`: 템플릿이 만들도록 지정을 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 프로젝트 또는 항목입니다.  
+- `CSharp`: 서식 파일을 만들도록 지정을 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 프로젝트 또는 항목입니다.  
   
--   `VisualBasic`: 템플릿이 만들도록 지정을 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 프로젝트 또는 항목입니다.  
+- `VisualBasic`: 서식 파일을 만들도록 지정을 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 프로젝트 또는 항목입니다.  
   
--   `Web`: 템플릿이 웹 프로젝트 또는 항목을 만들도록 지정 합니다. 경우는 `ProjectType` 이 값을 포함 하는 요소, 프로젝트 또는 항목의 언어에 정의 된 합니다 [ProjectSubType 요소 (Visual Studio 템플릿)](../extensibility/projectsubtype-element-visual-studio-templates.md)합니다.  
+- `Web`: 템플릿이 웹 프로젝트 또는 항목을 만들도록 지정 합니다. 경우는 `ProjectType` 이 값을 포함 하는 요소, 프로젝트 또는 항목의 언어에 정의 된 합니다 [ProjectSubType 요소 (Visual Studio 템플릿)](../extensibility/projectsubtype-element-visual-studio-templates.md)합니다.  
   
 ## <a name="remarks"></a>설명  
  `ProjectType`은 `TemplateData`의 필수 자식 요소입니다.  
@@ -106,4 +101,3 @@ ms.locfileid: "51721719"
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
  [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)   
  [ProjectSubType 요소(Visual Studio 템플릿)](../extensibility/projectsubtype-element-visual-studio-templates.md)
-

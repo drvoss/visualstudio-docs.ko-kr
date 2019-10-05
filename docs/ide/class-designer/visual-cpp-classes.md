@@ -1,8 +1,6 @@
 ---
 title: 클래스 디자이너의 Visual C++ 클래스
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.inheritancelinelabel
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d2ff2b6660b7ef7530d3a37d251904fa54b5ce0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b8312e0db76dd3ce064172116aecd82daab56e90
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856199"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975049"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>클래스 디자이너의 Visual C++ 클래스
 
@@ -37,7 +35,7 @@ class A {};
 class B : A {};
 ```
 
-클래스 B만 클래스 다이어그램으로 끌어 B에 대한 클래스 모양을 마우스 오른쪽 단추로 클릭한 다음 **기본 클래스 표시**를 클릭할 수도 있습니다. 그러면 기본 클래스가 A로 표시됩니다.
+클래스 B만 클래스 다이어그램으로 끌어 B에 대한 클래스 모양을 마우스 오른쪽 단추로 클릭한 다음 **기본 클래스 표시**를 클릭할 수도 있습니다. 그러면 기본 클래스가 다음으로 표시됩니다. 대답:
 
 ## <a name="multiple-inheritance"></a>다중 상속
 
@@ -130,7 +128,6 @@ typedef struct
 ## <a name="template-classes"></a>템플릿 클래스
 
 **클래스 디자이너**는 템플릿 클래스의 시각화를 지원합니다. 중첩된 선언도 지원합니다. 다음 표는 몇 가지 일반적인 선언을 보여 줍니다.
-
 
 | Code 요소 | 클래스 디자이너 보기 |
 | - | - |

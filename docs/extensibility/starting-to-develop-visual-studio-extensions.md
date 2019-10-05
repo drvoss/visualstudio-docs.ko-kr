@@ -1,98 +1,98 @@
 ---
-title: Visual Studio 확장 개발 시작 | Microsoft Docs
+title: Visual Studio 확장 개발을 시작 하는 중 | Microsoft Docs
 ms.date: 09/18/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - getting started, Visual Studio integration
 - Visual Studio, integration
 ms.assetid: 8fe5e2ab-a424-4173-9d39-dd082c4d58d0
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55c0e4b1c8df4ed0198c2c346f2909a4984c5e9b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3a22e867fe043437e76ebbf61220dd2adda89c12
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830822"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822330"
 ---
-# <a name="starting-to-develop-visual-studio-extensions"></a>Visual Studio 확장 개발 시작
+# <a name="starting-to-develop-visual-studio-extensions"></a>Visual Studio Extensions 확장 기능 개발 시작
 
-전에 Visual Studio 확장을 써 본 적, 아마도 경우 몇 가지 질문입니다. 몇 가지 가장 일반적인 위협을 여기 나열 되어 있습니다. 피드백 단추를 사용 하 여 원하는 정보를 표시 되지 않는 경우 (**이 페이지가 도움이 되었나요?** 화면의 맨 아래에서) 원하는 요청 합니다.
+이전에 Visual Studio 확장을 작성 한 적이 없는 경우 몇 가지 질문이 있을 수 있습니다. 여기에는 가장 일반적인 몇 가지 항목이 나열 되어 있습니다. 원하는 정보가 표시 되지 않으면 사용자 의견 단추를 사용 합니다 (화면 맨 아래에서**이 페이지가 도움이 되었나요?** ).
 
 > [!NOTE]
-> 이 문서에서는 Windows에서 Visual Studio에 적용 됩니다. Mac 용 Visual Studio에 대 한 참조 [Mac 용 Visual Studio 확장](/visualstudio/mac/extending-visual-studio-mac)합니다.
+> 이 문서는 Windows의 Visual Studio에 적용 됩니다. Mac용 Visual Studio [Mac용 Visual Studio 확장](/visualstudio/mac/extending-visual-studio-mac)을 참조 하세요.
 
-## <a name="what-software-do-i-need-to-develop-visual-studio-extensions"></a>소프트웨어 Visual Studio 확장 개발 하나요?
+## <a name="what-software-do-i-need-to-develop-visual-studio-extensions"></a>Visual Studio 확장을 개발 하는 데 필요한 소프트웨어는 무엇 인가요?
 
-Visual Studio 확장을 개발 하려면 Visual Studio 외에도 Visual Studio SDK를 설치 해야 합니다. 일반 설치의 일부로 Visual Studio SDK를 설치할 수 있습니다 하거나 나중에 설치할 수 있습니다. Visual Studio SDK를 설치 하는 방법에 대 한 자세한 내용은 참조 하세요. [Visual Studio SDK](../extensibility/visual-studio-sdk.md)합니다.
+Visual studio 확장을 개발 하려면 visual studio 외에도 visual studio SDK를 설치 해야 합니다. Visual Studio SDK를 일반 설치의 일부로 설치 하거나 나중에 설치할 수 있습니다. Visual Studio SDK를 설치 하는 방법에 대 한 자세한 내용은 [Visual STUDIO sdk](../extensibility/visual-studio-sdk.md)를 참조 하세요.
 
-## <a name="what-kinds-of-things-can-i-do-with-visual-studio-extensions"></a>어떤 종류의 Visual Studio 확장을 사용 하 여 합니까?
+## <a name="what-kinds-of-things-can-i-do-with-visual-studio-extensions"></a>Visual Studio 확장을 사용 하 여 어떤 종류의 작업을 수행할 수 있나요?
 
-무궁무진 하더라도 다른 Visual Studio 확장을 상상 일 뿐입니다. 물론, 대부분의 확장 코드를 작성 하는와 관련이 없지만 경우 없는 합니다. 종류의 확장을 만들 수 있는 몇 가지 예는 다음과 같습니다.
+서로 다른 Visual Studio 확장을 발견 하는 경우에는 하늘 제한이 제공 됩니다. 물론 대부분의 확장은 코드를 작성 하는 데 사용할 수 있지만이 경우에는 그렇지 않습니다. 빌드할 수 있는 확장 종류에 대 한 몇 가지 예는 다음과 같습니다.
 
-- 구문 색 지정, IntelliSense 및 컴파일러 및 디버그 지원을 사용 하 여 Visual Studio에 포함 되지 않은 언어에 대 한 지원
+- 구문 색 지정, IntelliSense, 컴파일러 및 디버그 지원을 통해 Visual Studio에 포함 되지 않은 언어 지원
 
-- 추가 템플릿, 코드 리팩터링, 새 대화 상자 또는 도구 창을 사용 하 여 핵심을 확장 하는 생산성 도구 IDE 환경
+- 추가 템플릿, 코드 리팩터링, 새 대화 상자 또는 도구 창을 사용 하 여 핵심 IDE 환경을 확장 하는 생산성 도구
 
-- 데이터 디자인 또는 클라우드 지원 등의 시나리오에 대 한 도메인 관련 디자이너
+- 데이터 디자인 또는 클라우드 지원과 같은 시나리오를 위한 도메인별 디자이너
 
-확장의 예제를 확인 합니다 [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)합니다. 여러 확장 오픈 소스로 제공, 되며 Marketplace 링크는 GitHub 리포지토리를 포함 합니다.
+확장의 예제를 보려면 [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)를 확인 하세요. 많은 확장은 오픈 소스 이며 Marketplace에는 GitHub 리포지토리에 대 한 링크가 포함 되어 있습니다.
 
-## <a name="which-visual-studio-features-can-i-extend"></a>Visual Studio 기능을 확장할 수 있나요?
+## <a name="which-visual-studio-features-can-i-extend"></a>어떤 Visual Studio 기능을 확장할 수 있나요?
 
-이론적으로 Visual Studio의 거의 모든 부분을 확장할 수 있습니다: 메뉴, 도구 모음, 명령, windows, 솔루션, 프로젝트, 편집기 및 등입니다.
+이론적으로는 메뉴, 도구 모음, 명령, 창, 솔루션, 프로젝트, 편집기 등을 비롯 한 Visual Studio의 일부만 확장할 수 있습니다.
 
-실제로 대부분의 사람들이 확장 기능 명령, 메뉴 및 도구 모음, windows, IntelliSense 및 프로젝트는 발견 했습니다. 관련 섹션에 대 한 링크는 다음과 같습니다.
+실제로 대부분의 사용자가 확장 하려는 기능이 명령, 메뉴 및 도구 모음, 창, IntelliSense 및 프로젝트입니다. 관련 섹션에 대 한 링크는 다음과 같습니다.
 
--   [메뉴 및 명령 확장](../extensibility/extending-menus-and-commands.md): Visual Studio 메뉴 및 도구 모음에 사용자 고유의 항목을 추가 합니다. 새 Visual Studio 기능 또는 자신의 외부 도우미 응용 프로그램을 시작 하 고 사용할 수 있습니다. 메뉴 항목에 대 한 사용자 지정 바로 가기 키를 제공할 수도 있습니다.
+- [메뉴 및 명령 확장](../extensibility/extending-menus-and-commands.md): Visual Studio 메뉴 및 도구 모음에 고유한 항목을 추가 합니다. 이러한 기능을 사용 하 여 새 Visual Studio 기능 또는 고유한 외부 도우미 응용 프로그램을 시작할 수 있습니다. 메뉴 항목에 대 한 사용자 지정 바로 가기를 제공할 수도 있습니다.
 
--   [확장 및 사용자 지정 도구 Windows](../extensibility/extending-and-customizing-tool-windows.md): 기존 도구 창 확장 또는 사용자 고유의 도구 창을 만들 수 있습니다. 예를 들어, 새 속성을 추가할 수 있습니다 합니다 **속성**, 또는 추가 기능을 추가 하는 새 도구 창을 만들 수 있습니다.
+- [도구 창 확장 및 사용자 지정](../extensibility/extending-and-customizing-tool-windows.md): 기존 도구 창을 확장 하거나 사용자 고유의 도구 창을 만듭니다. 예를 들어 **속성**에 새 속성을 추가 하거나 새 도구 창을 만들어 추가 기능을 추가할 수 있습니다.
 
--   [편집기 및 언어 서비스 확장](../extensibility/editor-and-language-service-extensions.md): 새 프로그래밍 언어에 대 한 지원을 만들거나 사용자 고유의 사용자 지정 Visual Studio 언어에 대 한 제공 되는 IntelliSense를 추가 합니다. 새 문 완성, 제안 및 QuickInfo 도구 설명 표시를 새로 만들 수 있습니다. 전구를 사용 하 여 리팩터링 제안을 추가 하 고 새 프로그래밍 언어를 지원 하기 위해 코드를 수정 합니다.
+- [편집기 및 언어 서비스 확장](../extensibility/editor-and-language-service-extensions.md): Visual Studio 언어용으로 제공 된 IntelliSense의 고유한 사용자 지정 항목을 추가 하거나 새 프로그래밍 언어에 대 한 지원을 만들 수 있습니다. 새 문 완성, 제안 및 새 QuickInfo 도구 설명을 만들 수 있습니다. Light 전구를 사용 하면 새 프로그래밍 언어를 지원 하기 위해 리팩터링 제안 사항 및 코드 수정을 추가할 수 있습니다.
 
--   [프로젝트 확장](../extensibility/extending-projects.md)
+- [프로젝트 확장](../extensibility/extending-projects.md)
 
--   [사용자 설정 및 옵션 확장](../extensibility/extending-user-settings-and-options.md)
+- [사용자 설정 및 옵션 확장](../extensibility/extending-user-settings-and-options.md)
 
--   [속성 및 속성 창 확장](../extensibility/extending-properties-and-the-property-window.md)
+- [속성 및 속성 창 확장](../extensibility/extending-properties-and-the-property-window.md)
 
--   [Visual Studio의 다른 부분 확장](../extensibility/extending-other-parts-of-visual-studio.md)
+- [Visual Studio의 다른 부분 확장](../extensibility/extending-other-parts-of-visual-studio.md)
 
--   [Visual Studio Shell(격리)](/visualstudio/extensibility/shell/visual-studio-isolated-shell)
+- [Visual Studio Shell(격리)](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
 
-##  <a name="BKMK_ProjectTemplate"></a> 프로젝트 템플릿은 무엇 VSSDK에서 제공 하는?
- 확장의 두 가지 주요 유형은 Vspackage 및 MEF 확장입니다. 일반적으로 VSPackage 확장을 사용 하거나 명령, 도구 창 및 프로젝트를 확장 하는 확장에 사용 됩니다. MEF 확장은 확장 하거나 Visual Studio 편집기 사용자 지정 하는 데 사용 됩니다.
+## <a name="BKMK_ProjectTemplate"></a>이상에서 제공 하는 프로젝트 템플릿은 무엇 인가요?
+ 두 가지 주요 확장 유형은 Vspackage 및 MEF 확장입니다. 일반적으로 VSPackage 확장은 명령, 도구 창 및 프로젝트를 사용 하거나 확장 하는 확장에 사용 됩니다. MEF 확장은 Visual Studio 편집기를 확장 하거나 사용자 지정 하는 데 사용 됩니다.
 
- Visual C# 및 Visual Basic 확장용 VSSDK 메뉴 명령, 도구 창 및 편집기 확장을 만드는 새 항목 템플릿을 함께 사용할 수 있는 빈 VSIX 프로젝트 템플릿을 제공 합니다. 또한 다른 사용자에 게 배포에 대 한이 서식 파일을 패키지 프로젝트 템플릿, 코드 조각 및 기타 아티팩트를 사용할 수 있습니다.
+ 시각적 개체 C# 및 Visual Basic 확장의 경우, 사용자는 메뉴 명령, 도구 창 및 편집기 확장을 만드는 새 항목 템플릿과 함께 사용할 수 있는 빈 VSIX 프로젝트 템플릿을 제공 합니다. 이 템플릿을 사용 하 여 다른 사용자에 게 배포 하기 위해 프로젝트 템플릿, 코드 조각 및 기타 아티팩트를 패키지할 수도 있습니다.
 
- C + +에서 VSPackage 마법사 메뉴 명령, 도구 창 및 사용자 지정 편집기를 추가 하는 코드를 제공 합니다.
+ 의 C++경우 VSPackage 마법사는 메뉴 명령, 도구 창 및 사용자 지정 편집기를 추가 하는 코드를 제공 합니다.
 
- 격리 셸 템플릿 버전의 브랜딩 및 사용자 고유의으로 배포할 수 있는 Visual Studio shell에서 확장 패키지에 사용 됩니다. 다음 항목에서는 각 유형의 확장을 사용 하 여 시작 하는 방법을 보여 줍니다.
+ 격리 된 셸 템플릿은 사용자가 직접 브랜드 및 배포할 수 있는 Visual Studio Shell 버전의 확장을 패키지 하는 데 사용 됩니다. 다음 항목에서는 각 종류의 확장을 시작 하는 방법을 보여 줍니다.
 
--   메뉴 명령: [메뉴 명령을 사용하여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)
+- 메뉴 명령: [메뉴 명령을 사용하여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)
 
--   도구 창: [도구 창으로 확장 만들기](../extensibility/creating-an-extension-with-a-tool-window.md)
+- 도구 창: [도구 창으로 확장 만들기](../extensibility/creating-an-extension-with-a-tool-window.md)
 
--   편집기 확장: [편집기 항목 템플릿을 사용하여 확장 만들기](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- 편집기 확장: [편집기 항목 템플릿을 사용하여 확장 만들기](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
--   기본 Vspackage의 경우: [로 확장 만들기](../extensibility/creating-an-extension-with-a-vspackage.md)
+- 기본 Vspackage: [로 확장 만들기](../extensibility/creating-an-extension-with-a-vspackage.md)
 
--   VSIX 프로젝트 템플릿: [VSIX 프로젝트 템플릿 시작](../extensibility/getting-started-with-the-vsix-project-template.md)
+- VSIX 프로젝트 템플릿: [VSIX 프로젝트 템플릿 시작](../extensibility/getting-started-with-the-vsix-project-template.md)
 
-## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>Visual Studio 처럼 my 확장 가져오기
- 확장에 대 한 UI를 디자인 하기 위한 유용한 팁을 얻을 [Visual Studio User Experience Guidelines](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)합니다.
+## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>Visual Studio와 같은 확장을 가져올 어떻게 할까요? 있나요?
+ [Visual Studio 사용자 환경 지침](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)에서 확장에 대 한 UI를 디자인 하는 데 유용한 팁을 확인 하세요.
 
-## <a name="where-can-i-find-examples-of-vssdk-code"></a>VSSDK 코드 예제는 어디서 찾을 수 있습니까?
- 이전 섹션에서 나열 된 링크의 각 특정 기능을 구현 하는 방법을 보여 주는 단계별 연습을 있습니다. 찾을 수도 있습니다 오픈 소스에서 GitHub에서 VSSDK 샘플 [Visual Studio 샘플](https://github.com/Microsoft/VSSDK-Extensibility-Samples)합니다.
+## <a name="where-can-i-find-examples-of-vssdk-code"></a>어디에서 나를 수 있나요?
+ 이전 섹션에 나열 된 각 링크에는 특정 기능을 구현 하는 방법을 보여 주는 단계별 연습이 있습니다. [Visual Studio 샘플](https://github.com/Microsoft/VSSDK-Extensibility-Samples)에서 GitHub의 오픈 소스에 대 한 진한 샘플을 찾을 수도 있습니다.
 
-## <a name="how-can-i-distribute-my-extension"></a>My 확장을 배포할 수는 방법
- 다른 컴퓨터에 확장을 설치 하거나.vsix 파일을 두 번 클릭 하 여 설치 파일로 친구에 게 보낼 수 있습니다. VSIX 패키지에 대 한 자세한 내용을 확인할 수 있습니다 [Visual Studio 확장 전달](../extensibility/shipping-visual-studio-extensions.md)합니다.
+## <a name="how-can-i-distribute-my-extension"></a>내 확장을 배포 하려면 어떻게 해야 하나요?
+ 다른 컴퓨터에 확장을 설치 하거나 친구에 게 .vsix 파일로 보낼 수 있습니다 .이 파일을 두 번 클릭 하 여 설치 합니다. VSIX 패키지에 대 한 자세한 내용은 [Visual Studio 확장](../extensibility/shipping-visual-studio-extensions.md)제공에서 확인할 수 있습니다.
 
- 또한 많은 수의 Visual Studio 고객에 게 표시 하는 Visual Studio Marketplace에서 확장 프로그램을 게시할 수 있습니다. Marketplace 확장 패키지의 예제를 참조 하세요. [연습: Visual Studio 확장 기능 게시](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)합니다. Marketplace에 게시 하기 위해 수행 해야 하는 방법에 대 한 자세한 내용은 참조 하세요. [제품 및 Visual Studio 용 확장](/azure/devops/extend/overview?view=vsts)합니다.
+ 또한 Visual Studio Marketplace에 확장을 게시 하면 많은 수의 Visual Studio 고객이 볼 수 있습니다. Marketplace에 확장을 패키징하는 방법에 대 한 예제를 [보려면 연습: Visual Studio 확장](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)을 게시 합니다. Marketplace에 게시 하기 위해 수행 해야 하는 작업에 대 한 자세한 내용은 [Visual Studio 용 제품 및 확장](/azure/devops/extend/overview?view=vsts)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [Mac용 Visual Studio 확장](/visualstudio/mac/extending-visual-studio-mac)

@@ -1,0 +1,48 @@
+- name: Visual Studio 컨테이너 도구
+  href: index.yml
+  expanded: true
+  items:
+    - name: 개요
+      href: overview.md
+    - name: 빠른 시작
+      expanded: true
+      items:
+        - name: 컨테이너의 ASP.NET Core 앱
+          href: container-tools.md
+        - name: 컨테이너의 React.js 단일 페이지 앱
+          href: container-tools-react.md
+    - name: 자습서
+      expanded: true
+      items:
+        - name: Docker Compose를 사용한 다중 컨테이너 앱
+          href: tutorial-multicontainer.md
+        - name: Visual Studio의 Kubernetes
+          href: tutorial-kubernetes-tools.md
+    - name: 방법
+      items:
+        - name: 로컬 Docker 컨테이너에서 앱 디버그
+          href: edit-and-refresh.md
+        - name: 컨테이너 레지스트리에 배포
+          href: hosting-web-apps-in-docker.md
+        - name: Azure App Service에 배포
+          href: deploy-app-service.md
+        - name: Docker Hub에 배포
+          href: deploy-docker-hub.md
+        - name: 컨테이너 보기 및 진단
+          href: view-and-diagnose-containers.md
+        - name: 컨테이너 도구 구성
+          href: container-tools-configure.md
+    - name: 개념
+      items:
+        - name: 컨테이너화된 앱 빌드
+          href: container-build.md
+    - name: 문제 해결
+      href: troubleshooting-docker-errors.md
+    - name: 참조
+      items:
+        - name: 컨테이너 프로젝트에 대한 MSBuild 속성
+          href: container-msbuild-properties.md
+        - name: Docker Compose 프로젝트에 대한 설정
+          href: docker-compose-properties.md
+        - name: 시작 설정
+          href: container-launch-settings.md

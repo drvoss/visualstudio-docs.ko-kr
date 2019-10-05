@@ -1,22 +1,20 @@
 ---
 title: 접근할 수 없는 리팩터링 제거
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 34bd11fe681199cecd0acd2e79cbc2f5d11fc494
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b1c88fbeb9daf293df868a835247098e2ce999e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62576027"
 ---
 # <a name="remove-unreachable-code-refactoring"></a>접근할 수 없는 리팩터링 제거
 

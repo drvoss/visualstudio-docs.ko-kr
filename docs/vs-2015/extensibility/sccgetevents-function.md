@@ -1,14 +1,9 @@
 ---
 title: SccGetEvents 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccGetEvents
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 32f8147d-6dcc-465e-b07b-42da5824f9b0
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 821d8f565c4f8ebb926459da9031a055c6c7992f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d975570334aeab7c6709db92f3240a8e8d06b131
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807064"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200117"
 ---
 # <a name="sccgetevents-function"></a>SccGetEvents 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ SCCRTN SccGetEvents (
 |값|설명|  
 |-----------|-----------------|  
 |SCC_OK|성공 이벤트를 가져옵니다.|  
-|SCC_E_OPNOTSUPPORTED|이 함수는 지원 되지 않습니다.|  
+|SCC_E_OPNOTSUPPORTED|이 함수는 지원되지 않습니다.|  
 |SCC_E_NONSPECIFICERROR|알 수 없는 오류가 발생 했습니다.|  
   
 ## <a name="remarks"></a>설명  
@@ -70,4 +65,3 @@ SCCRTN SccGetEvents (
 ## <a name="see-also"></a>참고 항목  
  [원본 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)   
  [파일 상태 코드](../extensibility/file-status-code-enumerator.md)
-

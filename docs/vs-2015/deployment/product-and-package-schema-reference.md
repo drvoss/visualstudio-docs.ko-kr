@@ -1,14 +1,9 @@
 ---
 title: 제품 및 패키지 스키마 참조 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: reference
 f1_keywords:
 - MSBuild.GenerateBootstrapper.CircularIncludes
 - MSBuild.ResolveManifestFiles.PublishFileNotFound
@@ -30,13 +25,13 @@ ms.assetid: 5a74878f-b896-4cca-b968-98d00fe78fb0
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 6fb70a1dff0f166aabeaf0facdd4b031f3d4fb6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 2fe0d270593ef526405b0be4cde8bc5da10af413
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271037"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188963"
 ---
 # <a name="product-and-package-schema-reference"></a>제품 및 패키지 스키마 참조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,13 +42,13 @@ A *제품 파일* 에 필요한 외부 종속성의 모든 설명 하는 XML 매
   
 |요소|설명|특성|  
 |-------------|-----------------|----------------|  
-|[\<제품 > 요소](../deployment/product-element-bootstrapper.md)|제품 파일의 최상위 요소가 필요 합니다.|없음|  
-|[\<패키지 > 요소](../deployment/package-element-bootstrapper.md)|패키지 파일의 최상위 요소가 필요 합니다.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
-|[\<RelatedProducts > 요소](../deployment/relatedproducts-element-bootstrapper.md)|제품 파일에 대 한 선택적 요소입니다. 다른 제품을이 제품을 설치 또는 변경에 따라 달라 집니다.|없음|  
-|[\<InstallChecks > 요소](../deployment/installchecks-element-bootstrapper.md)|필수적 요소입니다. 목록 종속성을 설치 하는 동안 로컬 컴퓨터에서 수행 하려면 확인 합니다.|없음|  
-|[\<명령 > 요소](../deployment/commands-element-bootstrapper.md)|필수적 요소입니다.  에 설명 된 대로 하나 이상의 설치 검사를 실행 `InstallChecks`, 설치할 패키지를 확인 해야은 실패 합니다.|없음|  
-|[\<PackageFiles > 요소](../deployment/packagefiles-element-bootstrapper.md)|필수적 요소입니다. 이 설치 프로세스에서 설치할 수 있는 패키지를 나열 합니다.|없음|  
-|[\<문자열 > 요소](../deployment/strings-element-bootstrapper.md)|필수적 요소입니다. 저장소 버전의 제품 이름 및 오류 문자열을 지역화 합니다.|없음|  
+|[\<Product> 요소](../deployment/product-element-bootstrapper.md)|제품 파일의 최상위 요소가 필요 합니다.|없음|  
+|[\<Package> 요소](../deployment/package-element-bootstrapper.md)|패키지 파일의 최상위 요소가 필요 합니다.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
+|[\<RelatedProducts> 요소](../deployment/relatedproducts-element-bootstrapper.md)|제품 파일에 대 한 선택적 요소입니다. 다른 제품을이 제품을 설치 또는 변경에 따라 달라 집니다.|없음|  
+|[\<InstallChecks> 요소](../deployment/installchecks-element-bootstrapper.md)|필수적 요소입니다. 목록 종속성을 설치 하는 동안 로컬 컴퓨터에서 수행 하려면 확인 합니다.|없음|  
+|[\<Commands> 요소](../deployment/commands-element-bootstrapper.md)|필수적 요소입니다.  에 설명 된 대로 하나 이상의 설치 검사를 실행 `InstallChecks`, 설치할 패키지를 확인 해야은 실패 합니다.|없음|  
+|[\<PackageFiles> 요소](../deployment/packagefiles-element-bootstrapper.md)|필수적 요소입니다. 이 설치 프로세스에서 설치할 수 있는 패키지를 나열 합니다.|없음|  
+|[\<Strings> 요소](../deployment/strings-element-bootstrapper.md)|필수적 요소입니다. 저장소 버전의 제품 이름 및 오류 문자열을 지역화 합니다.|없음|  
   
 ## <a name="remarks"></a>설명  
  패키지 스키마는 Setup.exe를 자체의 작은 하드 코드 된 논리를 포함 하는 MS Build 부트스트랩 작업에 의해 생성 된 스텁 프로그램에서 사용 됩니다. 스키마는 설치 프로세스의 모든 측면을 구동합니다.  
@@ -165,9 +160,6 @@ A *제품 파일* 에 필요한 외부 종속성의 모든 설명 하는 XML 매
 </Product>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [ClickOnce 배포 매니페스트](../deployment/clickonce-deployment-manifest.md)   
  [ndptecclick](../deployment/clickonce-application-manifest.md)
-
-
-

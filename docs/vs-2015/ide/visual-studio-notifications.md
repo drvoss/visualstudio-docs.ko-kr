@@ -1,25 +1,20 @@
 ---
 title: 알림을 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: cfbbc30a-bb61-42e6-b58e-b4ea9d33c440
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 66104972b216e8a9a9800691abafa80164799568
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 9aacdbf7bbde890abd0b7ac03f5cd5d714d6c9c8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154943"
 ---
 # <a name="visual-studio-notifications"></a>Visual Studio 알림
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

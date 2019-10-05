@@ -1,14 +1,9 @@
 ---
 title: 파일에서 바꾸기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.findreplace.replaceinfiles
 - vs.replaceinfiles
@@ -20,29 +15,29 @@ ms.assetid: ca361466-53bd-44db-a28a-3a74bc03b028
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 92029377d5e7d4faf4c6b7f38deda1eecdeaa395
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 72a20b0271542dd914aeb592dda3f0cb446a0000
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228828"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698679"
 ---
 # <a name="replace-in-files"></a>파일에서 바꾸기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-파일 * *에서 바꾸기 문자열 또는 식에 대 한 파일의 지정 된 집합의 코드를 검색 하 고 찾은 일치 항목의 일부 또는 전부를 변경할 수 있습니다. 찾은 일치 항목과 수행된 작업이 **결과 옵션**에서 선택된 **결과 찾기** 창에 나열됩니다.  
+파일**에서 바꾸기를 사용하여 지정된 파일 집합의 코드에서 문자열 또는 식을 검색하고 찾은 일부 또는 전체 일치 항목을 변경합니다. 찾은 일치 항목과 수행된 작업이 **결과 옵션**에서 선택된 **결과 찾기** 창에 나열됩니다.  
   
 > [!NOTE]
->  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 도구 메뉴에서 설정 가져오기 및 내보내기를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
+> 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 도구 메뉴에서 설정 가져오기 및 내보내기를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
   
  다음 방법 중 하나를 사용하여 **찾기 및 바꾸기** 창에서 **파일에서 바꾸기**를 표시할 수 있습니다.  
   
 ### <a name="to-display-replace-in-files"></a>파일에서 바꾸기를 표시하려면  
   
-1.  **편집** 메뉴에서 **찾기 및 바꾸기**를 확장합니다.  
+1. **편집** 메뉴에서 **찾기 및 바꾸기**를 확장합니다.  
   
-2.  **파일에서 바꾸기**를 선택합니다.  
+2. **파일에서 바꾸기**를 선택합니다.  
   
      — 또는 —  
   
@@ -58,7 +53,7 @@ ms.locfileid: "49228828"
  **찾는 위치** 드롭다운 목록에서 선택한 옵션은 **파일에서 바꾸기**가 현재 활성 파일에서만 검색하는지 또는 특정 폴더 내에 저장된 모든 파일을 검색하는지를 결정합니다. 목록에서 검색 범위를 선택하거나, 폴더 경로를 입력하거나, **찾아보기(...)** 단추를 클릭하여 **검색 폴더 선택** 대화 상자를 표시하고 검색할 폴더 집합을 선택합니다. **찾는 위치** 상자에 경로를 직접 입력할 수도 있습니다.  
   
 > [!NOTE]
->  선택한 **찾는 위치** 옵션으로 인해 소스 코드 제어에서 체크 아웃한 파일이 검색되는 경우 로컬 컴퓨터에 다운로드된 파일 버전만 검색됩니다.  
+> 선택한 **찾는 위치** 옵션으로 인해 소스 코드 제어에서 체크 아웃한 파일이 검색되는 경우 로컬 컴퓨터에 다운로드된 파일 버전만 검색됩니다.  
   
 ## <a name="find-options"></a>찾기 옵션  
  **찾기 옵션** 섹션을 확장하거나 축소할 수 있습니다. 다음 옵션을 선택하거나 선택 취소할 수 있습니다.  
@@ -93,12 +88,9 @@ ms.locfileid: "49228828"
  이 옵션을 선택하면 바꾸기를 수행한 모든 파일이 열려 있으므로 변경 내용을 실행 취소하거나 저장할 수 있습니다. 메모리 제약 조건은 바꾸기 작업 후에 열려 있을 수 있는 파일 수를 제한할 수 있습니다.  
   
 > [!CAUTION]
->  편집을 위해 열려 있는 파일에서만 **실행 취소**를 사용할 수 있습니다. 이 옵션을 선택하지 않으면 편집을 위해 열려 있지 않던 파일은 닫혀 있고 **실행 취소** 옵션을 해당 파일에서 사용할 수 있습니다.  
+> 편집을 위해 열려 있는 파일에서만 **실행 취소**를 사용할 수 있습니다. 이 옵션을 선택하지 않으면 편집을 위해 열려 있지 않던 파일은 닫혀 있고 **실행 취소** 옵션을 해당 파일에서 사용할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [텍스트 찾기 및 바꾸기](../ide/finding-and-replacing-text.md)   
  [파일에서 찾기](../ide/find-in-files.md)   
  [Visual Studio 명령](../ide/reference/visual-studio-commands.md)
-
-
-

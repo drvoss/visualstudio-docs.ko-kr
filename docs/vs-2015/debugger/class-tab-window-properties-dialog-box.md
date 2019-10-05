@@ -1,27 +1,22 @@
 ---
 title: 창 속성 대화 상자, 클래스 탭 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Window Properties dialog box, Class Tab
 ms.assetid: eaec9f07-d580-436d-934d-76c4e59439aa
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6eba6a12714c1b4f58ae9d6bb17f696c3c452411
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9a7f81a100b2c2311444732434df0f5c5599742a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161606"
 ---
 # <a name="class-tab-window-properties-dialog-box"></a>창 속성 대화 상자, 클래스 탭
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51749325"
   
  다음 설정을 사용할 합니다 **클래스** 탭:  
   
-|입력|설명|  
+|입력|Description|  
 |-----------|-----------------|  
 |**클래스 이름**|이 창 클래스의 이름 (또는 서 수).|  
 |**클래스 스타일**|클래스 스타일 코드의 조합입니다.|  
@@ -43,6 +38,3 @@ ms.locfileid: "51749325"
 |**아이콘 핸들**|("None" 아이콘이 없을 경우)이이 클래스의 windows와 사용 하 여 연결 된 아이콘에 대 한 핸들입니다.|  
 |**커서 핸들**|("None" 커서가 있는 경우)이이 클래스의 windows와 사용 하 여 연결 된 커서의 핸들입니다.|  
 |**배경 브러시**|이 클래스 또는 ("none" 이면 브러시 없음) 창 배경을 그리는 미리 정의 된 COLOR_ * 색 중 하나는 windows와 연결 된 배경 브러시에 대 한 핸들입니다.|
-
-
-

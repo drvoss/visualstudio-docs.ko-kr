@@ -1,32 +1,27 @@
 ---
 title: MenuCommand 및 OleMenuCommands | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - commands, creating in VSPackages
 - command buttons, creating and placing
 - menus, creating commands
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 46
-manager: douge
-ms.openlocfilehash: 3b548a43cabcb097250411c3475f47774c840511
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 42c471ca924bfded62db32a956a26c07240459eb
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911917"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624449"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommand 및 OleMenuCommand
-<xref:System.ComponentModel.Design.MenuCommand> 또는 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 개체에서 파생하고 적절한 이벤트 처리기를 구현하여 메뉴 명령을 만들 수 있습니다. 대부분의 경우 <xref:System.ComponentModel.Design.MenuCommand>를 VSPackage 프로젝트 템플릿으로 사용할 수 있지만 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>를 사용해야 할 때가 있습니다.  
+파생 하 여 메뉴 명령을 만들 수 있습니다 <xref:System.ComponentModel.Design.MenuCommand> 주고 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 개체를 적절 한 이벤트 처리기를 구현 합니다. 대부분의 경우 <xref:System.ComponentModel.Design.MenuCommand>를 VSPackage 프로젝트 템플릿으로 사용할 수 있지만 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>를 사용해야 할 때가 있습니다.  
   
- 사용자가 VSPackage를 사용하려면 IDE에서 VSPackage를 사용할 수 있는 명령이 표시되어야 하고 사용하도록 설정되어야 합니다. Visual Studio Package 프로젝트 템플릿을 사용하여 .vsct 파일에서 명령이 만들어지면 기본적으로 표시되고 사용하도록 설정됩니다. `DynamicItemStart` 등의 일부 명령 플래그를 설정하면 기본 동작을 변경할 수 있습니다. 표시 여부, 사용 설정 상태 및 명령의 기타 속성은 명령과 관련된 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 개체에 액세스하여 런타임 시 코드에서 변경할 수도 있습니다.  
+ 사용자가 VSPackage를 사용하려면 IDE에서 VSPackage를 사용할 수 있는 명령이 표시되어야 하고 사용하도록 설정되어야 합니다. Visual Studio Package 프로젝트 템플릿을 사용하여 .vsct 파일에서 명령이 만들어지면 기본적으로 표시되고 사용하도록 설정됩니다. `DynamicItemStart`등의 일부 명령 플래그를 설정하면 기본 동작을 변경할 수 있습니다. 표시 여부, 사용 설정 상태 및 명령의 기타 속성은 명령과 관련된 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 개체에 액세스하여 런타임 시 코드에서 변경할 수도 있습니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
  이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)합니다.  
@@ -69,9 +64,9 @@ ms.locfileid: "49911917"
    </Button>
    ``` 
      
-   1.  `guid` 및 `id` 필드를 새 명령의 GUID:ID와 일치하도록 설정합니다.  
+   1. `guid` 및 `id` 필드를 새 명령의 GUID:ID와 일치하도록 설정합니다.  
   
-   2.  `priority` 특성을 설정합니다.  
+   2. `priority` 특성을 설정합니다.  
   
         `priority` 특성은 .vsct에서 해당 부모 그룹의 다른 개체 간에 단추 위치를 결정하는 데 사용됩니다.  
   
@@ -79,7 +74,7 @@ ms.locfileid: "49911917"
   
         `priority` 특성을 생략하면 값이 0으로 설정됩니다.  
   
-   3.  `type` 특성을 설정합니다. 대부분의 경우 값은 `"Button"`으로 설정됩니다. 다른 유효한 단추 형식에 대한 설명은 [Button Element](../extensibility/button-element.md)를 참조하세요.  
+   3. `type` 특성을 설정합니다. 대부분의 경우 값은 `"Button"`으로 설정됩니다. 다른 유효한 단추 형식에 대한 설명은 [Button Element](../extensibility/button-element.md)를 참조하세요.  
   
 5. 단추 정의에서 [ButtonText](../extensibility/strings-element.md) 요소가 포함된 [Strings](../extensibility/buttontext-element.md) 요소를 만들어 IDE에 나타나는 메뉴 이름을 포함하고, [CommandName](../extensibility/commandname-element.md) 요소를 만들어 **명령** 창에서 메뉴에 액세스하는 데 사용되는 명령 이름을 포함합니다.  
   
@@ -95,7 +90,7 @@ ms.locfileid: "49911917"
   
     디자인에 따라 두 가지 방법 중 하나로 이 작업을 수행할 수 있습니다.  
   
-   -   `Button` 요소에서 [Parent](../extensibility/parent-element.md) 요소를 만들고 해당 `guid` 및 `id` 필드를 명령을 호스트할 그룹( *기본 부모 그룹*)의 GUID 및 ID로 설정합니다.  
+   - `Button` 요소에서 [Parent](../extensibility/parent-element.md) 요소를 만들고 해당 `guid` 및 `id` 필드를 명령을 호스트할 그룹( *기본 부모 그룹*)의 GUID 및 ID로 설정합니다.  
   
         다음 예제에서는 사용자 정의 메뉴에 표시될 명령을 정의합니다.  
   
@@ -110,7 +105,7 @@ ms.locfileid: "49911917"
        </Button>
        ```
       
-   -   명령 배치를 사용하여 명령을 배치할 경우 `Parent` 요소를 생략할 수 있습니다. 다음 예제와 같이 [섹션 전에](../extensibility/commandplacements-element.md) CommandPlacements `Symbols` 요소를 만들고 명령의 [및](../extensibility/commandplacement-element.md) , `guid` 및 부모를 포함하는 `id` CommandPlacement `priority`요소를 추가합니다.  
+   - 명령 배치를 사용하여 명령을 배치할 경우 `Parent` 요소를 생략할 수 있습니다. 다음 예제와 같이 [섹션 전에](../extensibility/commandplacements-element.md) CommandPlacements `Symbols` 요소를 만들고 명령의 [및](../extensibility/commandplacement-element.md) , `guid` 및 부모를 포함하는 `id` CommandPlacement `priority`요소를 추가합니다.  
   
    ```xml
    <CommandPlacements>
@@ -120,7 +115,7 @@ ms.locfileid: "49911917"
    </CommandPlacements>
    ```
       
-        Creating multiple command placements that have the same GUID:ID and have different parents causes a menu to appear in multiple locations. For more information, see [CommandPlacements](../extensibility/commandplacements-element.md) element.  
+      GUID:ID가 동일하고 부모가 서로 다른 명령 배치를 여러 개 만들면 메뉴가 여러 위치에 나타납니다. 자세한 내용은 [CommandPlacements](../extensibility/commandplacements-element.md) 요소를 참조하세요.  
   
     명령 그룹 및 부모/자식 관리에 대 한 자세한 내용은 참조 하세요. [단추가의 다시 사용할 수 있는 그룹 만들기](../extensibility/creating-reusable-groups-of-buttons.md)합니다.  
   
@@ -131,27 +126,27 @@ ms.locfileid: "49911917"
   
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 인터페이스를 사용하여 직접 명령을 처리하는 코드의 경우 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 인터페이스 및 해당 메서드를 구현해야 합니다. 두 개의 가장 중요한 메서드는 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 및 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>입니다.  
   
-1.  다음 예제와 같이 <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> 인스턴스를 가져옵니다.  
+1. 다음 예제와 같이 <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> 인스턴스를 가져옵니다.  
   
      [!code-csharp[ButtonGroup#21](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#21)]  
   
-2.  다음 예제와 같이 처리할 명령의 GUID 및 ID를 해당 매개 변수로 사용하는 <xref:System.ComponentModel.Design.CommandID> 개체를 만듭니다.  
+2. 다음 예제와 같이 처리할 명령의 GUID 및 ID를 해당 매개 변수로 사용하는 <xref:System.ComponentModel.Design.CommandID> 개체를 만듭니다.  
   
      [!code-csharp[ButtonGroup#22](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#22)]  
   
-     Visual Studio 패키지 템플릿은 명령의 GUID 및 ID를 저장하는 `GuidList` 및 `PkgCmdIDList` 컬렉션을 제공합니다. 이러한 컬렉션은 템플릿을 통해 추가된 명령에 자동으로 채워지지만 수동으로 추가한 명령의 경우 ID 항목을 `PkgCmdIdList` 클래스에 추가해야 합니다.  
+     Visual Studio 패키지 템플릿은 명령의 GUID 및 ID를 저장하는 `GuidList` 및 `PkgCmdIDList`컬렉션을 제공합니다. 이러한 컬렉션은 템플릿을 통해 추가된 명령에 자동으로 채워지지만 수동으로 추가한 명령의 경우 ID 항목을 `PkgCmdIdList` 클래스에 추가해야 합니다.  
   
      또는 GUID의 원시 문자열 값 및 ID의 정수 값을 사용하여 <xref:System.ComponentModel.Design.CommandID> 개체를 채울 수 있습니다.  
   
-3.  다음 예제에서처럼 <xref:System.ComponentModel.Design.MenuCommand> 또는 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 개체를 인스턴스화합니다. 이 개체들은 <xref:System.ComponentModel.Design.CommandID>와 함께 명령을 처리하는 메서드를 지정합니다.  
+3. 다음 예제에서처럼 <xref:System.ComponentModel.Design.MenuCommand> 또는 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 개체를 인스턴스화합니다. 이 개체들은 <xref:System.ComponentModel.Design.CommandID>와 함께 명령을 처리하는 메서드를 지정합니다.  
   
      [!code-csharp[ButtonGroup#23](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#23)]  
   
-     <xref:System.ComponentModel.Design.MenuCommand>는 정적 명령에 적합합니다. 동적 메뉴 항목 표시에는 QueryStatus 이벤트 처리기가 필요합니다. <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 는 명령의 호스트 메뉴가 열릴 때 발생하는 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> 이벤트와 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>등의 다른 일부 속성을 추가합니다.  
+     <xref:System.ComponentModel.Design.MenuCommand> 는 정적 명령에 적합합니다. 동적 메뉴 항목 표시에는 QueryStatus 이벤트 처리기가 필요합니다. <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 는 명령의 호스트 메뉴가 열릴 때 발생하는 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> 이벤트와 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>등의 다른 일부 속성을 추가합니다.  
   
-     패키지 템플릿으로 만든 명령은 기본적으로 패키지 클래스에 있는 `Initialize()` 메서드의 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 개체에 전달됩니다.  
+     패키지 템플릿으로 만든 명령은 기본적으로 패키지 클래스에 있는 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 메서드의 `Initialize()` 개체에 전달됩니다.  
   
-4.  <xref:System.ComponentModel.Design.MenuCommand> 는 정적 명령에 적합합니다. 동적 메뉴 항목 표시에는 QueryStatus 이벤트 처리기가 필요합니다. <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 는 명령의 호스트 메뉴가 열릴 때 발생하는 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> 이벤트와 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>등의 다른 일부 속성을 추가합니다.  
+4. <xref:System.ComponentModel.Design.MenuCommand> 는 정적 명령에 적합합니다. 동적 메뉴 항목 표시에는 QueryStatus 이벤트 처리기가 필요합니다. <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 는 명령의 호스트 메뉴가 열릴 때 발생하는 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> 이벤트와 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>등의 다른 일부 속성을 추가합니다.  
   
      패키지 템플릿으로 만든 명령은 기본적으로 패키지 클래스에 있는 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 메서드의 `Initialize()` 개체에 전달됩니다. Visual Studio 마법사는 `Initialize` 를 사용하여 `MenuCommand`메서드를 구현합니다. 동적 메뉴 항목 표시의 경우 다음 단계와 같이 `OleMenuCommand`로 변경해야 합니다. 또한 메뉴 항목의 텍스트를 변경하려면 다음 예제와 같이 .vsct 파일의 메뉴 명령 단추에 TextChanges 명령 플래그를 추가해야 합니다.  
   
@@ -167,11 +162,11 @@ ms.locfileid: "49911917"
     </Button>
     ```
       
-5.  새 메뉴 명령을 <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> 인터페이스의 <xref:System.ComponentModel.Design.IMenuCommandService> 메서드에 전달합니다. 이 작업은 다음 예제와 같이 패키지 템플릿으로 만든 명령에 대해 기본적으로 수행됩니다.  
+5. 새 메뉴 명령을 <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> 인터페이스의 <xref:System.ComponentModel.Design.IMenuCommandService> 메서드에 전달합니다. 이 작업은 다음 예제와 같이 패키지 템플릿으로 만든 명령에 대해 기본적으로 수행됩니다.  
   
      [!code-csharp[ButtonGroup#24](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#24)]  
   
-6.  명령을 처리하는 메서드를 구현합니다.  
+6. 명령을 처리하는 메서드를 구현합니다.  
   
 #### <a name="to-implement-querystatus"></a>QueryStatus를 구현하려면  
   
@@ -210,7 +205,7 @@ ms.locfileid: "49911917"
   
 1. 유효한 명령에 대해 <xref:Microsoft.VisualStudio.VSConstants.S_OK> 를 반환합니다.  
   
-2. `prgCmds` 매개 변수의 `cmdf` 요소를 설정합니다.  
+2. `cmdf` 매개 변수의 `prgCmds` 요소를 설정합니다.  
   
     `cmdf` 요소의 값은 논리적 OR( <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> ) 연산자를 사용하여 결합한`|`열거형 값의 논리적 공용 구조체입니다.  
   
@@ -238,7 +233,7 @@ ms.locfileid: "49911917"
   
       `prgCmds[0] cmdf |= OLECMDF_DEFHIDEONCTXMENU`  
   
-   - 명령에서 `TEXTCHANGES` 플래그를 사용하는 경우 `pCmdText` 매개 변수의 `rgwz` 요소를 명령의 새 텍스트로 설정하고 `pCmdText` 매개 변수의 `cwActual` 요소를 명령 문자열의 크기로 설정합니다.  
+   - 명령에서 `TEXTCHANGES` 플래그를 사용하는 경우 `rgwz` 매개 변수의 `pCmdText` 요소를 명령의 새 텍스트로 설정하고 `cwActual` 매개 변수의 `pCmdText` 요소를 명령 문자열의 크기로 설정합니다.  
   
      오류 조건의 경우 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 메서드는 다음과 같은 오류 사례를 처리해야 합니다.  
   
@@ -250,11 +245,11 @@ ms.locfileid: "49911917"
   
 ##### <a name="to-implement-the-exec-method"></a>Exec 메서드를 구현하려면  
   
--   `GUID` 명령을 알 수 없는 경우 `OLECMDERR_E_UNKNOWNGROUP`을 반환합니다.  
+- `GUID` 명령을 알 수 없는 경우 `OLECMDERR_E_UNKNOWNGROUP`을 반환합니다.  
   
--   `GUID` 가 알려졌지만 명령 ID를 알 수 없는 경우 `OLECMDERR_E_NOTSUPPORTED`를 반환합니다.  
+- `GUID` 가 알려졌지만 명령 ID를 알 수 없는 경우 `OLECMDERR_E_NOTSUPPORTED`를 반환합니다.  
   
--   `GUID` 및 명령 ID가 .vsct 파일의 명령에 사용되는 GUID:ID 쌍과 일치하는 경우 명령과 연결된 코드를 실행하고 <xref:Microsoft.VisualStudio.VSConstants.S_OK>를 반환합니다.  
+- `GUID` 및 명령 ID가 .vsct 파일의 명령에 사용되는 GUID:ID 쌍과 일치하는 경우 명령과 연결된 코드를 실행하고 <xref:Microsoft.VisualStudio.VSConstants.S_OK>를 반환합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [VSCT XML 스키마 참조](../extensibility/vsct-xml-schema-reference.md)   

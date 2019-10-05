@@ -1,14 +1,9 @@
 ---
 title: 문서 테이블 실행 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - read locks
 - running document table (RDT), IVsDocumentLockHolder interface
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bd7b8cd44c72ea058f71575bdd1774efafa86731
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7ea32df892efa47c91d8292bdc9065080318a059
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155552"
 ---
 # <a name="running-document-table"></a>문서 테이블 실행
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ IDE에는 실행 중인 문서 테이블 (RDT) 라는 내부 구조에 현재 �
 ## <a name="elements-of-the-running-document-table"></a>실행 중인 문서 테이블의 요소  
  다음 항목을 포함 하는 문서 테이블 실행 합니다.  
   
-|요소|설명|  
+|요소|Description|  
 |-------------|-----------------|  
 |문서 모니커|문서 데이터 개체를 고유 하 게 식별 하는 문자열입니다. 이 절대 파일 경로 (예를 들어 C:\MyProject\MyFile) 파일을 관리 하는 프로젝트 시스템에 대 한 것입니다. 이 문자열 이외의 데이터베이스에 저장된 프로시저와 같은 파일 시스템 저장소에 저장 하는 프로젝트에도 사용 됩니다. 이 경우 프로젝트 시스템에서 인식 하 고 문서를 저장 하는 방법을 결정할 수 있는 구문 분석할 수 있는 고유 문자열로 고안 수 있습니다.|  
 |계층 소유자|에 표시 된 대로 문서를 소유 하는 계층 개체는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 인터페이스입니다.|  
@@ -59,11 +54,10 @@ IDE에는 실행 중인 문서 테이블 (RDT) 라는 내부 구조에 현재 �
   
  Resurface를 IDE도 사용 하 여는 RDT (맨 앞으로) 사용자가 해당 문서를 요청 하는 경우 열려 있는 문서입니다. 자세한 내용은 [열린 파일 명령을 사용 하 여 표시 파일](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)합니다. 에 파일을 RDT에서 열려 있는지 여부를 확인 하려면 다음을 수행할 하나.  
   
--   항목이 열려 있는지 확인 하려면 문서 모니커 (즉, 전체 문서 경로)에 대 한 쿼리.  
+- 항목이 열려 있는지 확인 하려면 문서 모니커 (즉, 전체 문서 경로)에 대 한 쿼리.  
   
--   계층 이나 항목 ID를 사용 하 여 전체 문서 경로에 프로젝트 시스템을 요청 하 고 다음 항목에서에서 조회를 RDT입니다.  
+- 계층 이나 항목 ID를 사용 하 여 전체 문서 경로에 프로젝트 시스템을 요청 하 고 다음 항목에서에서 조회를 RDT입니다.  
   
-## <a name="see-also"></a>참고 항목  
- [RDT_ReadLock 사용법](../../extensibility/internals/rdt-readlock-usage.md)   
+## <a name="see-also"></a>관련 항목  
+ [RDT_ReadLock Usage](../../extensibility/internals/rdt-readlock-usage.md)   
  [지속성 및 실행 중인 문서 테이블](../../extensibility/internals/persistence-and-the-running-document-table.md)
-

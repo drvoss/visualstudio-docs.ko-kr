@@ -1,14 +1,9 @@
 ---
 title: 옵션 및 옵션 페이지 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], managed package framework support
 - managed package framework, Tools Options pages support
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 caps.latest.revision: 35
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 005aeceb328a24c8c90994b6b274dbddc6b874f8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 643ffd8dc48eb6b0fc35ea035c8c599efbea85c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438953"
 ---
 # <a name="options-and-options-pages"></a>옵션 및 옵션 페이지
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -66,7 +61,7 @@ ms.locfileid: "51783281"
 - <xref:System.ComponentModel.DescriptionAttribute> 옵션의 설명에 따라 결정 됩니다.  
   
   > [!NOTE]
-  >  해당 특성, SRCategory, LocDisplayName, SRDescription, 지역화 문자열 리소스를 사용 하 여 및에 정의 된 합니다 [관리 되는 프로젝트 샘플](http://go.microsoft.com/fwlink/?LinkId=122774)합니다.  
+  > 해당 특성, SRCategory, LocDisplayName, SRDescription, 지역화 문자열 리소스를 사용 하 여 및에 정의 된 합니다 [관리 되는 프로젝트 샘플](http://go.microsoft.com/fwlink/?LinkId=122774)합니다.  
   
   다음과 같은 코드 조각을 생각해 봅시다.  
   
@@ -91,5 +86,4 @@ ms.locfileid: "51783281"
  자동화 속성의 레지스트리 경로 결합 하 여 결정 됩니다 <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, 단어, AutomationProperties, 및 옵션 페이지 범주 및 이름입니다. 예를 들어 옵션 페이지에는 My Category 범주 내 그리드 페이지 이름 및 <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>가 레지스트리 키를 HKEY_LOCAL_MACHINE\SOFTWARE\ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp을 자동화 속성 Microsoft\VisualStudio\8.0Exp\AutomationProperties\My Category\My 그리드 페이지입니다.  
   
 > [!NOTE]
->  정식 이름을 Category.My 그리드 페이지 내에이 키의 이름 하위 키의 값입니다.
-
+> 정식 이름을 Category.My 그리드 페이지 내에이 키의 이름 하위 키의 값입니다.

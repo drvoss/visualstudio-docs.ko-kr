@@ -1,49 +1,44 @@
 ---
 title: 언어 서비스 및 편집기 확장 지점 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extension points
 ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
 caps.latest.revision: 34
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0bcbef5094bd12392b7ea79865e1d28e2934a11e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5bf0e34c76406b054ea2d27434f749b676b0b30c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439798"
 ---
 # <a name="language-service-and-editor-extension-points"></a>언어 서비스 및 편집기 확장 지점
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 편집기에는 대부분의 언어 서비스 기능을 포함 하 여 Framework MEF (Managed Extensibility) 구성 요소 파트로 확장할 수 있는 확장 지점을 제공 합니다. 다음은 이러한 주요 확장 포인트 범주:  
   
--   콘텐츠 형식  
+- 내용 유형  
   
--   분류 유형 및 분류 형식  
+- 분류 유형 및 분류 형식  
   
--   여백 및 스크롤 막대  
+- 여백 및 스크롤 막대  
   
--   Tags  
+- 태그  
   
--   선의 도구 영역  
+- 선의 도구 영역  
   
--   마우스 프로세서  
+- 마우스 프로세서  
   
--   처리기를 삭제 합니다.  
+- 처리기를 삭제 합니다.  
   
--   옵션  
+- 옵션  
   
--   IntelliSense  
+- IntelliSense  
   
 ## <a name="extending-content-types"></a>콘텐츠 형식 확장  
  콘텐츠 유형은 예를 들어 편집기에서 처리 하는 텍스트, "text", "코드" 또는 "CSharp" 종류의 정의입니다. 형식의 변수를 선언 하 여 새 콘텐츠 형식을 정의한 <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> 및 새 콘텐츠 형식에 고유한 이름을 지정 합니다. 콘텐츠 형식 편집기를 등록 하려면 다음 특성을 함께 내보내기:  
@@ -98,7 +93,7 @@ internal static ContentTypeDefinition TestContentTypeDefinition;
   
 - ENC  
   
-- 내용은 찾기 결과  
+- FindResults  
   
 - F#  
   
@@ -120,7 +115,7 @@ internal IContentTypeRegistryService ContentTypeRegistryService { get; set; }
  콘텐츠 형식을 파일 이름 확장명을 사용 하 여 연결을 사용 하 여 <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>입니다.  
   
 > [!NOTE]
->  Visual Studio에서 파일 이름 확장명은 사용 하 여 등록을 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute> 언어 서비스 패키지에 있습니다. <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> MEF content-type이 방식으로 등록 된 파일 이름 확장명을 사용 하 여 연결 합니다.  
+> Visual Studio에서 파일 이름 확장명은 사용 하 여 등록을 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute> 언어 서비스 패키지에 있습니다. <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> MEF content-type이 방식으로 등록 된 파일 이름 확장명을 사용 하 여 연결 합니다.  
   
  파일 이름 확장명에 콘텐츠 형식 정의 내보내려면 다음 특성을 포함 해야 합니다.  
   
@@ -283,7 +278,7 @@ internal class TestTaggerProvider : ITaggerProvider
 - <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>: adornment와 사용 하 여 연결 합니다.  
   
   > [!NOTE]
-  >  예는 <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>에서 HighlightWordTag 정의 참조 하십시오 [연습: 텍스트 강조 표시](../extensibility/walkthrough-highlighting-text.md)합니다.  
+  > 예는 <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>에서 HighlightWordTag 정의 [연습: 텍스트를 강조 표시](../extensibility/walkthrough-highlighting-text.md)합니다.  
   
 - <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>: 확장 하거나 개요에서 축소할 수 있는 영역을 사용 하 여 연결 합니다.  
   
@@ -329,7 +324,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
  이 형식 정의 태그를 적용 하려면 클래스 (표시 이름 아님)의 이름 특성에 설정 이름을 참조 합니다.  
   
 > [!NOTE]
->  예는 <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>에서 HighlightWordFormatDefinition 클래스를 참조 하십시오 [연습: 텍스트 강조 표시](../extensibility/walkthrough-highlighting-text.md)합니다.  
+> 예는 <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>에서 HighlightWordFormatDefinition 클래스 참조 [연습: 텍스트를 강조 표시](../extensibility/walkthrough-highlighting-text.md)합니다.  
   
 ## <a name="extending-adornments"></a>선의 도구 영역 확장  
  장식은 텍스트 보기에 표시 되는 텍스트에 추가할 수 있습니다 또는 텍스트 자체를 볼 수 있는 시각 효과 정의 합니다. 모든 형식으로 사용자 고유의 adornment를 정의할 수 있습니다 <xref:System.Windows.UIElement>합니다.  
@@ -338,7 +333,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
   
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: 이름 장식입니다.  
   
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: adornment 레이어가 관련 하 여 장식의 순서입니다. 클래스 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> 네 가지 기본 계층을 정의 합니다: 선택, 개요, 캐럿을 및 텍스트입니다.  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: adornment 레이어가 관련 하 여 장식의 순서입니다. 클래스 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> 네 가지 기본 계층을 정의 합니다. 선택 영역, 개요, 캐럿을 및 텍스트입니다.  
   
   다음 예제에서는 adornment 계층 정의 내보내기 특성을 보여 줍니다.  
   
@@ -414,21 +409,21 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
   
 - <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.DropFormatAttribute>:이 드롭다운 처리기 유효 텍스트 형식입니다. 다음 형식으로 순위가 가장 높은 우선 순위 순서로 처리 됩니다.  
   
-  1.  사용자 지정 형식  
+  1. 사용자 지정 형식  
   
-  2.  FileDrop  
+  2. FileDrop  
   
-  3.  EnhancedMetafile  
+  3. EnhancedMetafile  
   
-  4.  WaveAudio  
+  4. WaveAudio  
   
-  5.  Riff  
+  5. Riff  
   
-  6.  Dif  
+  6. Dif  
   
-  7.  로캘  
+  7. 로캘  
   
-  8.  색상표  
+  8. 색상표  
   
   9. PenData  
   
@@ -512,39 +507,39 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 ### <a name="implementing-an-intellisense-source"></a>IntelliSense 소스 구현  
  소스를 사용자 지정 하려면 다음 원본 인터페이스 중 하나 (또는 이상)를 구현 해야 합니다.  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> 위해 되지 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>합니다.  
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> 위해 되지 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>합니다.  
   
  또한 같은 종류의 공급자를 구현 해야 합니다.  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSourceProvider>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSourceProvider>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> 위해 되지 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>합니다.  
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> 위해 되지 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>합니다.  
   
  다음 특성을 함께 공급자를 내보내기를 수행 해야 합니다.  
   
--   <xref:Microsoft.VisualStudio.Utilities.NameAttribute>:는 원본의 이름입니다.  
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>:는 원본의 이름입니다.  
   
--   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: 원본 적용 되는 콘텐츠 (예: "text" 또는 "code")의 종류입니다.  
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: 원본 적용 되는 콘텐츠 (예: "text" 또는 "code")의 종류입니다.  
   
--   <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: 순서 (다른 원본)에 대해 원본 나타납니다.  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: 순서 (다른 원본)에 대해 원본 나타납니다.  
   
--   다음 예제에서는 완료 원본 공급자에 내보내기 특성을 보여 줍니다.  
+- 다음 예제에서는 완료 원본 공급자에 내보내기 특성을 보여 줍니다.  
   
 ```  
 Export(typeof(ICompletionSourceProvider))]  
@@ -558,9 +553,9 @@ internal class TestCompletionSourceProvider : ICompletionSourceProvider
   
  [연습: QuickInfo 도구 설명 표시](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [연습: 서명 도움말 표시](../extensibility/walkthrough-displaying-signature-help.md)  
+ [연습: 시그니처 도움말 표시](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [연습: 문 완성 표시](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [연습: 명령문 완성 표시](../extensibility/walkthrough-displaying-statement-completion.md)  
   
 ### <a name="implementing-an-intellisense-controller"></a>IntelliSense 컨트롤러를 구현합니다.  
  컨트롤러를 사용자 지정 하려면 구현 해야 합니다 <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController> 인터페이스입니다. 또한 다음과 같은 특성을 컨트롤러 공급자를 구현 해야 합니다.  
@@ -584,4 +579,3 @@ internal class TestIntellisenseControllerProvider : IIntellisenseControllerProvi
  IntelliSense 컨트롤러를 사용 하는 방법에 대 한 자세한 내용은 다음 연습을 참조 하세요.  
   
  [연습: QuickInfo 도구 설명 표시](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
-

@@ -1,27 +1,38 @@
 ﻿---
 title: Node.js 및 Express 앱 만들기
 description: 이 자습서에서는 Visual Studio용 Node.js 도구를 사용하여 앱을 만듭니다.
-ms.custom: ''
 ms.date: 09/24/2018
-ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 8e7a1d04b83ffef2f7ec6efc786af6f5bc6e992e
-ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
+ms.openlocfilehash: bfb5f28763e4f95a2713e67543fca35398536fa9
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168346"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180311"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>자습서: Visual Studio에서 Node.js 및 Express 앱 만들기
-Node.js 및 Express를 사용하여 Visual Studio를 개발하기 위한 이 자습서에서는 Node.js 웹 응용 프로그램을 만들고, 일부 코드를 추가하며, IDE의 일부 기능을 살펴보고, 앱을 실행합니다. 아직 Visual Studio를 설치하지 않은 경우 [여기](http://visualstudio.microsoft.com)에서 평가판을 설치합니다.
+
+Node.js 및 Express를 사용하여 Visual Studio를 개발하기 위한 이 자습서에서는 Node.js 웹 애플리케이션을 만들고, 일부 코드를 추가하며, IDE의 일부 기능을 살펴보고, 앱을 실행합니다. 
+
+::: moniker range="vs-2017"
+
+아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 페이지로 이동하여 체험용으로 설치합니다.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 체험용으로 설치합니다.
+
+::: moniker-end
 
 이 자습서에서는 다음과 같은 작업을 수행하는 방법을 살펴봅니다.
 > [!div class="checklist"]
@@ -49,11 +60,18 @@ Express는 웹 응용 프로그램 프레임워크로, Node.js가 웹 응용 프
 
 ## <a name="prerequisites"></a>전제 조건
 
-* Node.js 개발 워크로드와 Visual Studio 2017이 설치되어 있어야 합니다.
+* Node.js 개발 워크로드와 Visual Studio가 설치되어 있어야 합니다.
 
-    아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 페이지로 이동하여 체험용으로 설치합니다.
+    ::: moniker range=">=vs-2019"
+    아직 Visual Studio 2019를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/) 페이지로 이동하여 체험용으로 설치합니다.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    아직 Visual Studio 2017을 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/) 페이지로 이동하여 체험용으로 설치합니다.
+    ::: moniker-end
 
-    워크로드를 설치해야 하지만 이미 Visual Studio가 있는 경우 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Open Visual Studio 설치 관리자** 링크를 클릭합니다(**파일** > **새로 만들기** > **프로젝트**를 선택합니다). Visual Studio 설치 관리자가 시작됩니다. **Node.js 개발** 워크로드를 선택한 다음 **수정**을 선택합니다.
+    워크로드는 설치해야 하지만 Visual Studio는 이미 있는 경우 **도구** > **도구 및 기능 가져오기...** 로 이동하면 Visual Studio 설치 관리자가 열립니다. **Node.js 개발** 워크로드를 선택한 다음 **수정**을 선택합니다.
+
+    ![VS 설치 관리자에서 Node.js 워크로드](../ide/media/quickstart-nodejs-workload.png)
 
 * Node.js 런타임을 설치해야 합니다.
 
@@ -63,17 +81,21 @@ Express는 웹 응용 프로그램 프레임워크로, Node.js가 웹 응용 프
 
 ## <a name="create-a-new-nodejs-project"></a>새 Node.js 프로젝트 만들기
 
-Visual Studio는 *프로젝트*에서 단일 응용 프로그램에 대한 파일을 관리합니다. 프로젝트에는 소스 코드, 리소스 및 구성 파일이 포함됩니다.
+Visual Studio는 *프로젝트*에서 단일 애플리케이션에 대한 파일을 관리합니다. 프로젝트에는 소스 코드, 리소스 및 구성 파일이 포함됩니다.
 
 이 자습서에서는 Node.js 및 Express 앱에 대한 코드를 포함한 간단한 프로젝트부터 시작합니다.
 
-1. Visual Studio 2017을 엽니다.
+1. Visual Studio를 엽니다.
 
-1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례로 선택합니다.
+1. 새 프로젝트를 만듭니다.
 
-1. **새 프로젝트** 대화 상자의 왼쪽 창에서 **JavaScript**를 확장한 후 **Node.js**를 선택합니다. 가운데 창에서 **기본 Azure Node.js Express 4 응용 프로그램**을 선택한 후, **확인**을 선택합니다.
-
-     **기본 Azure Node.js Express 4 응용 프로그램** 프로젝트 템플릿이 표시되지 않으면 먼저 **Node.js 개발** 워크로드를 설치해야 합니다(지침에 대한 필수 조건 참조).
+    ::: moniker range=">=vs-2019"
+    **Esc** 키를 눌러 시작 창을 닫습니다. **Ctrl + Q**를 입력하여 검색 상자를 열고 **Node.js**를 입력한 다음, **새 기본 Azure Node.js Express 4 애플리케이션 만들기**(JavaScript)를 선택합니다. 표시되는 대화 상자에서 **만들기**를 선택합니다.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **JavaScript**를 확장한 다음, **Node.js**를 선택합니다. 가운데 창에서 **기본 Azure Node.js Express 4 애플리케이션**을 선택한 후 **확인**을 선택합니다.
+    ::: moniker-end
+    **기본 Azure Node.js Express 4 애플리케이션** 프로젝트 템플릿이 표시되지 않으면 **Node.js 개발** 워크로드를 추가해야 합니다. 자세한 지침은 [필수 조건](#prerequisites)을 참조하세요.
 
     Visual Studio가 새 솔루션을 만들고 오른쪽 창에서 프로젝트를 엽니다. *app.js* 프로젝트 파일이 편집기에 열립니다(왼쪽 창).
 
@@ -95,7 +117,7 @@ Visual Studio는 *프로젝트*에서 단일 응용 프로그램에 대한 파�
 
 ## <a name="add-some-code"></a>일부 코드를 추가합니다.
 
-응용 프로그램은 프런트 엔드 JavaScript 프레임워크에 대해 Pug를 사용합니다. Pug은 HTML로 컴파일되는 간단한 표시 코드를 사용합니다. (Pug은 *app.js*에서 뷰 엔진으로 설정됩니다. *app.js*에서 뷰 엔진을 설정하는 코드는 `app.set('view engine', 'pug');`입니다.)
+애플리케이션은 프런트 엔드 JavaScript 프레임워크에 대해 Pug를 사용합니다. Pug은 HTML로 컴파일되는 간단한 표시 코드를 사용합니다. (Pug은 *app.js*에서 뷰 엔진으로 설정됩니다. *app.js*에서 뷰 엔진을 설정하는 코드는 `app.set('view engine', 'pug');`입니다.)
 
 1. 솔루션 탐색기(오른쪽 창)에서 Views 폴더를 연 다음, *index.pug*를 엽니다.
 
@@ -190,15 +212,20 @@ IntelliSense는 코드를 작성할 때 지원하는 Visual Studio 도구입니�
 
     ![중단점 설정](../javascript/media/tutorial-nodejs-set-breakpoint.png)
 
-## <a name="run-the-application"></a>응용 프로그램 실행
+## <a name="run-the-application"></a>애플리케이션 실행
 
-1. 디버그 도구 모음(예: Edge 또는 Chrome)에서 디버그 대상을 선택합니다.
+1. 디버그 도구 모음(예: Microsoft Edge 또는 Chrome)에서 디버그 대상을 선택합니다.
 
+    ::: moniker range=">=vs-2019"
+    ![디버그 대상 선택](../javascript/media/vs-2019/tutorial-nodejs-deploy-target.png)
+    ::: moniker-end
+    ::: moniker range="vs-2017"
     ![디버그 대상 선택](../javascript/media/tutorial-nodejs-deploy-target.png)
+    ::: moniker-end
 
     머신에서 Chrome을 사용할 수 있지만 옵션으로 표시되지 않는 경우 디버그 대상 드롭다운 목록에서 **브라우저 선택**을 선택하고 기본 브라우저 대상으로 Chrome을 선택합니다(**기본값으로 설정** 선택).
 
-1. **F5**(**디버그** > **디버깅 시작**) 키를 눌러 응용 프로그램을 실행합니다.
+1. **F5**(**디버그** > **디버깅 시작**) 키를 눌러 애플리케이션을 실행합니다.
 
     디버거가 설정한 중단점에서 일시 중지됩니다. 이제 앱 상태를 검사할 수 있습니다.
 

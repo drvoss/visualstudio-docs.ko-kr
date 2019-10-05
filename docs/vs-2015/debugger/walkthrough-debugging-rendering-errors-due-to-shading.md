@@ -1,38 +1,33 @@
 ---
-title: '연습: 음영으로 인 한 오류를 렌더링 디버깅 | Microsoft Docs'
-ms.custom: ''
+title: '연습: 렌더링 음영으로 인 한 오류 디버깅 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5d65c3d2525533e5881b4626941e43fb302ce2aa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b4c158c4ce6762b69f73a55915cc459f84cd7fff
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733191"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183636"
 ---
-# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>연습: 음영으로 인한 렌더링 오류 디버깅
+# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>연습: 음영으로 인한 렌더링 오류 디버그
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 연습에서는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 그래픽 진단을 사용하여 셰이더 버그로 인해 색상이 잘못 지정된 개체를 조사하는 방법을 보여 줍니다.  
   
  이 연습에서는 다음 방법을 설명합니다.  
   
--   그래픽 로그 문서를 검사하여 문제를 나타내는 픽셀을 확인합니다.  
+- 그래픽 로그 문서를 검사하여 문제를 나타내는 픽셀을 확인합니다.  
   
--   **그래픽 픽셀 기록** 창에서 픽셀 상태를 좀 더 자세히 검토합니다.  
+- **그래픽 픽셀 기록** 창에서 픽셀 상태를 좀 더 자세히 검토합니다.  
   
--   **HLSL 디버거** 를 사용하여 픽셀 및 꼭지점 셰이더를 검사합니다.  
+- **HLSL 디버거** 를 사용하여 픽셀 및 꼭지점 셰이더를 검사합니다.  
   
 ## <a name="scenario"></a>시나리오  
  개체 색상이 잘못 지정되는 문제는 일반적으로 꼭지점 셰이더가 픽셀 셰이더에 올바르지 않거나 불완전한 정보를 전달할 때 발생합니다.  
@@ -90,7 +85,7 @@ ms.locfileid: "51733191"
   
 2. 꼭지점 셰이더의 출력 구조를 찾습니다. 이것이 픽셀 셰이더의 입력에 해당합니다. 이 시나리오에서 이 구조의 이름은 `output`입니다. 꼭짓점 셰이더 코드를 검사하고 사용자의 디버깅 활동으로 인해 `color` 구조의 `output` 멤버가 완전히 불투명한 검정색으로 명시적으로 설정되어 있는지 확인합니다.  
   
-3. 색상 멤버가 입력 구조에서 복사되지 않았음을 확인합니다. `output.color` 값이 `output` 구조가 반환되기 직전에 완전히 불투명한 검정색으로 설정되어 있으므로 `output` 의 값이 이전 줄에서 올바르게 초기화되지 않았음을 확인하는 것이 좋습니다. `output.color`의 값을 살펴보는 동안 `output.color`를 검정색으로 설정하는 줄에 도달할 때까지 꼭짓점 셰이더를 단계별로 수행합니다. `output.color` 값이 검정색으로 설정될 때까지 초기화되지 않음을 확인합니다. 이렇게 하면 `output.color` 를 검정색으로 설정하는 코드 줄을 삭제하기 보다는 수정해야 함을 확인할 수 있습니다.  
+3. 색상 멤버가 입력 구조에서 복사되지 않았음을 확인합니다. `output.color` 값이 `output` 구조가 반환되기 직전에 완전히 불투명한 검정색으로 설정되어 있으므로 `output` 의 값이 이전 줄에서 올바르게 초기화되지 않았음을 확인하는 것이 좋습니다. `output.color` 의 값을 살펴보는 동안 `output.color`를 검정색으로 설정하는 줄에 도달할 때까지 꼭짓점 셰이더를 단계별로 수행합니다. `output.color` 값이 검정색으로 설정될 때까지 초기화되지 않음을 확인합니다. 이렇게 하면 `output.color` 를 검정색으로 설정하는 코드 줄을 삭제하기 보다는 수정해야 함을 확인할 수 있습니다.  
   
     !["Output.color"의 값은 검정입니다. ](../debugger/media/gfx-diag-demo-render-error-shader-step-7.png "gfx_diag_demo_render_error_shader_step_7")  
   
@@ -113,6 +108,3 @@ output.color = input.color;
  코드를 수정한 후 다시 빌드하고 앱을 다시 실행하여 렌더링 문제가 해결되었는지 검색합니다.  
   
  ![개체가 올바른 색으로 렌더링 됩니다. ](../debugger/media/gfx-diag-demo-render-error-shader-resolution.png "gfx_diag_demo_render_error_shader_resolution")
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: '방법: 관리 코드 오류에 대 한 작업 항목 만들기 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - managed code, creating work items for code defects
 - code analysis, creating work items
@@ -17,12 +12,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d0ed4ad9693ffbca44154f328a74b45810705457
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ab8744e84e035501ba9bb8d531d982f4c17e206e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235090"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201375"
 ---
 # <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>방법: 관리 코드 오류에 대한 작업 항목 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,19 +26,16 @@ ms.locfileid: "49235090"
   
 ### <a name="to-create-a-work-item-for-managed-code-defect"></a>관리 코드 오류에 대 한 작업 항목을 만들려면  
   
-1.  에 **코드 분석** 창에서 경고를 선택 합니다.  
+1. 에 **코드 분석** 창에서 경고를 선택 합니다.  
   
-2.  선택 **동작**, 선택한 **작업 항목 만들기** 만들려는 작업 항목의 유형을 선택 합니다.  
+2. 선택 **동작**, 선택한 **작업 항목 만들기** 만들려는 작업 항목의 유형을 선택 합니다.  
   
      오류 정보를 지정할 수 있습니다 새 작업 항목이 생성 됩니다.  
   
 ### <a name="to-create-a-work-item-for-multiple-managed-code-defects"></a>여러 관리 코드 오류에 대 한 작업 항목을 만들려면  
   
-1.  에 **오류 목록**, 여러 경고를 선택 하 고 경고를 마우스 오른쪽 단추로 클릭 합니다.  
+1. 에 **오류 목록**, 여러 경고를 선택 하 고 경고를 마우스 오른쪽 단추로 클릭 합니다.  
   
-2.  가리킨 **작업 항목 만들기** 만들려는 작업 항목의 유형을 클릭 합니다.  
+2. 가리킨 **작업 항목 만들기** 만들려는 작업 항목의 유형을 클릭 합니다.  
   
      버그 정보를 지정할 수 있도록 선택한 모든 경고에 대 한 단일 작업 항목 생성 됩니다.
-
-
-

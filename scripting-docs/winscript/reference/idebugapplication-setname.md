@@ -1,8 +1,7 @@
 ---
-title: IDebugApplication::SetName | Microsoft Docs
+title: 'Idebugapplication:: Setname | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad54c1c9ba950c7f1b98d393bec2bf65c385ec60
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4ac0b253d5193fc507e2d74a2d9dbcdd893e9fdb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990759"
 ---
 # <a name="idebugapplicationsetname"></a>IDebugApplication::SetName
 응용 프로그램의 이름을 설정합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT SetName(  
    LPCOLESTR  pstrName  
 );  
@@ -48,9 +47,9 @@ HRESULT SetName(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드에 제공 된 이름에 대 한 후속 호출에서 반환 됩니다는 `IRemoteDebugApplication::GetName` 메서드.  
+ 이 메서드에 제공 된 이름에 대 한 후속 호출에서 되는 `IRemoteDebugApplication::GetName` 메서드.  
   
- 이 메서드를 호출 하기 전에 호출 해야는 `IProcessDebugManager::AddApplication` 메서드.  
+ 이 메서드를 호출 하기 전에 호출 해야 합니다 `IProcessDebugManager::AddApplication` 메서드.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugApplication 인터페이스](../../winscript/reference/idebugapplication-interface.md)   

@@ -1,14 +1,9 @@
 ---
 title: 성능 세션 개요 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools, performance session
 - performance sessions
@@ -16,13 +11,13 @@ ms.assetid: 35752f95-a57a-4def-b64d-cf4899669e99
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b71f507e783552e066d41fe74e63fbc6b6146338
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ce2c8f124b30d7ff85a96d857894bd84578b318c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62422112"
 ---
 # <a name="performance-session-overview"></a>성능 세션 개요
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +30,11 @@ ms.locfileid: "51750041"
   
 1. 수집 방법과 수집할 데이터를 지정하여 성능 세션을 구성합니다.  
   
-2. 성능 세션에서 응용 프로그램을 실행하여 프로파일링 데이터를 수집합니다.  
+2. 성능 세션에서 애플리케이션을 실행하여 프로파일링 데이터를 수집합니다.  
   
 3. 데이터를 분석하여 성능 문제를 파악합니다.  
   
-4. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE(통합 개발 환경)에서 코드를 수정하여 코드의 응용 프로그램 성능을 개선합니다.  
+4. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE(통합 개발 환경)에서 코드를 수정하여 코드의 애플리케이션 성능을 개선합니다.  
   
 5. 변경된 코드에서 프로파일링 데이터를 수집하여 원래 데이터와 변경된 데이터의 프로파일링 데이터를 비교합니다.  
   
@@ -52,19 +47,19 @@ ms.locfileid: "51750041"
   
 - 프로파일링 방법에는 샘플링, 추적 및 메모리 할당이 포함됩니다.  
   
-- 데이터 값에는 시간, 프로세서 및 운영 체제 성능 카운터와 응용 프로그램 이벤트(예: 페이지 폴트, 커널 전환) 등이 있습니다.  
+- 데이터 값에는 시간, 프로세서 및 운영 체제 성능 카운터와 애플리케이션 이벤트(예: 페이지 폴트, 커널 전환) 등이 있습니다.  
   
   프로젝트 솔루션의 일부분으로 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트에서 성능 세션을 구성하거나, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE를 통해 임의의 이진 파일을 프로파일링할 수 있습니다. 성능 세션 속성 페이지에서 세션 속성을 지정할 수도 있고 프로파일링 마법사를 사용할 수도 있습니다.  
   
 ## <a name="collect-profiling-data"></a>프로파일링 데이터 수집  
  **성능 탐색기**에서 프로파일링 데이터 수집을 시작합니다. 프로파일링을 일시 중지하고 다시 시작하여 수집하는 데이터의 양을 제한할 수 있습니다. 이미 실행 중인 프로세스에 연결할 수도 있습니다.  
   
- 응용 프로그램이 시작되는 즉시 **데이터 수집 제어** 창이 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE에 표시됩니다. **데이터 수집 제어** 창에서 수집 프로세스를 일시 중지하고 다시 시작하여 특정 응용 프로그램 부분을 프로파일링할 수 있습니다. **데이터 수집 제어** 창을 사용하여 수집되는 데이터에 표시를 삽입할 수도 있습니다. 표시는 프로파일링 뷰에 표시되며 프로파일링 데이터를 필터링하는 데 사용할 수 있는 사용자 정의 데이터 요소입니다.  
+ 애플리케이션이 시작되는 즉시 **데이터 수집 제어** 창이 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE에 표시됩니다. **데이터 수집 제어** 창에서 수집 프로세스를 일시 중지하고 다시 시작하여 특정 애플리케이션 부분을 프로파일링할 수 있습니다. **데이터 수집 제어** 창을 사용하여 수집되는 데이터에 표시를 삽입할 수도 있습니다. 표시는 프로파일링 뷰에 표시되며 프로파일링 데이터를 필터링하는 데 사용할 수 있는 사용자 정의 데이터 요소입니다.  
   
- 대상 응용 프로그램이 종료되면 프로파일링 도구는 프로파일링 데이터 파일(*.vsp)을 생성하고 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE에 요약 보고서 뷰를 표시합니다.  
+ 대상 애플리케이션이 종료되면 프로파일링 도구는 프로파일링 데이터 파일(*.vsp)을 생성하고 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE에 요약 보고서 뷰를 표시합니다.  
   
 ## <a name="analyze-the-data-and-identify-performance-issues"></a>데이터 분석 및 성능 문제 파악  
- 프로파일링 실행을 종료하면 데이터가 분석되어 프로파일링 도구 **성능 보고서** 뷰 창에 요약이 표시됩니다. 대상 응용 프로그램의 개별 함수와 호출 스택에 대해 프로파일링 데이터가 수집됩니다. 보고서 뷰에는 응용 프로그램 프로세스, 스레드, 모듈, 함수 및 소스 코드 줄의 데이터 범위에 대한 성능 분석이 표시됩니다. 함수의 프로파일링 데이터 값에는 다음 항목이 포함됩니다.  
+ 프로파일링 실행을 종료하면 데이터가 분석되어 프로파일링 도구 **성능 보고서** 뷰 창에 요약이 표시됩니다. 대상 애플리케이션의 개별 함수와 호출 스택에 대해 프로파일링 데이터가 수집됩니다. 보고서 뷰에는 애플리케이션 프로세스, 스레드, 모듈, 함수 및 소스 코드 줄의 데이터 범위에 대한 성능 분석이 표시됩니다. 함수의 프로파일링 데이터 값에는 다음 항목이 포함됩니다.  
   
 - 함수 및 해당 함수가 호출한 자식 함수에서 소요된 전체 시간(포괄 값)  
   
@@ -72,7 +67,7 @@ ms.locfileid: "51750041"
   
   12개가 넘는 개별 뷰를 통해 가장 효율적인 방식으로 프로파일링 데이터를 분석할 수 있습니다. 뷰를 사용자 지정하면 데이터를 필터링하고 정렬하여 성능 문제를 발생시킬 수 있는 함수를 찾을 수 있습니다. 실행 부하 과다 경로 필터링을 수행하면 호출 트리 및 모듈 뷰에서 가장 사용량이 많은 경로가 즉시 강조 표시됩니다.  
   
-## <a name="modify-the-application-code"></a>응용 프로그램 코드 수정  
+## <a name="modify-the-application-code"></a>애플리케이션 코드 수정  
  관련 성능 문제가 하나 이상 파악되면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE를 사용하여 코드를 수정한 다음 변경 내용에 대해 프로파일링 데이터를 수집할 수 있습니다.  
   
 ## <a name="collect-profiling-data-again-and-compare-the-data-between-the-profiling-runs"></a>프로파일링 데이터 다시 수집 및 프로파일링 실행 간에 데이터 비교  
@@ -84,6 +79,3 @@ ms.locfileid: "51750041"
 ## <a name="see-also"></a>참고 항목  
  [개요](../profiling/overviews-performance-tools.md)   
  [연습: 성능 문제 확인](../profiling/walkthrough-identifying-performance-problems.md)
-
-
-

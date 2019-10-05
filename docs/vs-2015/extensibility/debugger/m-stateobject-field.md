@@ -1,26 +1,21 @@
 ---
 title: m_stateObject 필드 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - m_stateObject field, Task class [.NET Framework debug engines]
 ms.assetid: 68c54b22-3e1c-4031-b9c7-b972c519d8a0
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3231f63d91e8393e5fa1417d97202d1b46cdd571
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8e9cfc6f689504bef2a8366f90282641d1e9e105
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149047"
 ---
 # <a name="mstateobject-field"></a>m_stateObject 필드
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,4 +39,3 @@ ms.locfileid: "51732360"
   
 ## <a name="see-also"></a>참고 항목  
  [Task 클래스](../../extensibility/debugger/task-class-internal-members.md)
-

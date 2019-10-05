@@ -1,27 +1,22 @@
 ---
 title: 명령 디자인 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - commands
 - commands, implementation
 ms.assetid: 097108c3-f758-4b87-89d6-b32d12d9041a
 caps.latest.revision: 35
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9aed86eef616702363a661ece0ab565a768f2f75
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a6e9eaf69be62b38a880b07fd8eb51cfc9c256a3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195070"
 ---
 # <a name="command-design"></a>명령 디자인
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -67,7 +62,7 @@ VSPackage에 명령을 추가할 때 표시할 경우, 사용 가능한 경우 �
   
 ## <a name="related-topics"></a>관련 항목  
   
-|제목|설명|  
+|제목|Description|  
 |-----------|-----------------|  
 |[구현](../../extensibility/internals/command-implementation.md)|VSPackage에서 명령을 구현 하는 방법에 설명 합니다.|  
 |[가용성](../../extensibility/internals/command-availability.md)|Visual Studio 컨텍스트에 사용할 수 있는 명령을 확인 하는 방법을 설명 합니다.|  
@@ -77,4 +72,3 @@ VSPackage에 명령을 추가할 때 표시할 경우, 사용 가능한 경우 �
 |[기본 명령, 그룹 및 도구 모음 배치](../../extensibility/internals/default-command-group-and-toolbar-placement.md)|Vspackage Visual Studio에 포함 된 명령 수 최대한 활용 하는 방법을 설명 합니다.|  
 |[VSPackage 관리](../../extensibility/managing-vspackages.md)|Visual Studio에서 Vspackage를 로드 하는 방법을 설명 합니다.|  
 |[Visual Studio 명령 테이블(.Vsct) 파일](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)|레이아웃 및 모양을 Vspackage의 명령에 대해 설명 하는 데 사용 되는 XML 기반.vsct 파일에 대 한 정보를 제공 합니다.|
-

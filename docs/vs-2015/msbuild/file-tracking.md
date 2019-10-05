@@ -1,32 +1,26 @@
 ---
 title: 파일 추적 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, file tracking
 ms.assetid: e6c66ac0-3464-451f-9192-3b98dca21b4a
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 179124c09e0846cbbf649a819bd8c954b5a72e7a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d8d999d65b207f72542b732842f6eb984df40764
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228191"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156467"
 ---
 # <a name="file-tracking"></a>파일 추적
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 파일 추적은 프로세스 및 해당 자식 프로세스에 Windows 파일 시스템에 대한 호출을 기록합니다. 프로그램은 아래에 나열된 함수를 호출하여 이 로깅 기능을 켜고 끄는 시점을 제어하고 사용할 로그 파일을 지정합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
@@ -56,6 +50,3 @@ ms.locfileid: "49228191"
   
  [WriteContextTLogs](../msbuild/writecontexttlogs.md)  
  현재 컨텍스트에 대한 추적 로그를 씁니다.
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: 이동 명령 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - edit.goto
 helpviewer_keywords:
@@ -18,18 +13,17 @@ ms.assetid: 201e1dd2-6701-467d-8cc1-faec2ef20511
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d23f7b9961f8386fb023fa747a647c14c9cd5db1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 010d2c395d77be590b3d8d3bc26fc83aaa63adfa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199255"
 ---
 # <a name="go-to-command"></a>이동 명령
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 지정된 줄로 커서를 이동합니다.  
   
 ## <a name="syntax"></a>구문  
@@ -49,7 +43,7 @@ Edit.GoTo [linenumber]
   
  이 명령에 대한 별칭은 GoToLn입니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
 ```  
 >Edit.GoTo 125  
@@ -60,6 +54,3 @@ Edit.GoTo [linenumber]
  [명령 창](../../ide/reference/command-window.md)   
  [찾기/명령 상자](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

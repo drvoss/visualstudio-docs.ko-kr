@@ -1,14 +1,9 @@
 ---
 title: Visual Basic에서 경고 구성 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - errors [Visual Basic], warnings
 - run-time errors, warnings
@@ -17,13 +12,13 @@ ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c3b28bea858c867bd7fae8e1b4045d79d5e4b513
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3fb723097a3b61508d9f9023d3a2ea1dcdb5f8f6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297611"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701425"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Configuring Warnings in Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "49297611"
   
  경우에 따라 컴파일러에서는 사용자가 오류 발생이 예상되는 작업이 아닌 긴급한 작업에 집중할 수 있도록 사용자 대신 추가 논리를 제공합니다. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]의 이전 버전에서 `Option Strict`는 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 컴파일러가 제공하는 추가 논리를 제한하는 데 사용되었습니다. 경고를 구성하면 이 논리를 개별 경고 수준에서 더 세밀하게 제한할 수 있습니다.  
   
- 프로젝트를 사용자 지정하고 응용 프로그램에 관련되지 않은 일부 경고를 끄면서 다른 경고를 오류로 전환하고자 할 수 있습니다. 이 페이지에서는 개별 경고를 켜고 끄는 방법을 설명합니다.  
+ 프로젝트를 사용자 지정하고 애플리케이션에 관련되지 않은 일부 경고를 끄면서 다른 경고를 오류로 전환하고자 할 수 있습니다. 이 페이지에서는 개별 경고를 켜고 끄는 방법을 설명합니다.  
   
 ## <a name="turning-warnings-off-and-on"></a>경고 끄기 및 켜기  
  경고를 구성하는 방법은 두 가지입니다. **프로젝트 디자이너**를 사용하여 구성하거나 **/warnaserror** 및 **/nowarn** 컴파일러 옵션을 사용할 수 있습니다.  
@@ -126,14 +121,9 @@ ms.locfileid: "49297611"
   
 ## <a name="see-also"></a>참고 항목  
  [예외 도우미 대화 상자](../debugger/exception-assistant-dialog-box.md)   
- [오류 형식](http://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)   
- [Try...Catch...Finally 문](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b)   
- [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83)   
- [/warnaserror(Visual Basic)](http://msdn.microsoft.com/library/49819f1d-a1bd-4201-affe-5afe6d9712e1)   
+ [오류 형식](https://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)   
+ [Try...Catch...Finally 문](https://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b)   
+ [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83)   
+ [/warnaserror(Visual Basic)](https://msdn.microsoft.com/library/49819f1d-a1bd-4201-affe-5afe6d9712e1)   
  [프로젝트 디자이너, 컴파일 페이지(Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
- [기본적으로 해제되어 있는 컴파일러 경고](http://msdn.microsoft.com/library/69809cfb-a38a-4035-b154-283a61938df8)
-
-
-
-
-
+ [기본적으로 해제되어 있는 컴파일러 경고](https://msdn.microsoft.com/library/69809cfb-a38a-4035-b154-283a61938df8)

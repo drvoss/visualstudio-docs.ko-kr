@@ -1,8 +1,6 @@
 ---
-title: '방법: 수집 방법 선택 | Microsoft 문서'
-ms.custom: ''
+title: '방법: 수집 방법 선택 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, choosing collection method
@@ -10,21 +8,21 @@ helpviewer_keywords:
 - performance collection methods
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54efd3d68e81908d3843525b588d9c28cc1be3ad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bbe046f07a27a9fdcf07fc891f7c264a45a3d61c
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921290"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744722"
 ---
 # <a name="how-to-choose-collection-methods"></a>방법: 수집 방법 선택
 
 Visual Studio 프로파일링 도구는 성능 데이터를 수집하는 세 가지 방법, 샘플링, 계측 및 동시성을 지원합니다. 샘플링 또는 계측 방법을 사용하여 .NET 메모리 할당 및 수명 데이터를 수집할 수도 있습니다.
 
-성능 세션 **Method** 속성을 사용하여 응용 프로그램에 가장 적절한 수집 방법을 지정할 수 있습니다. 성능 마법사, 성능 탐색기 또는 성능 세션의 속성 페이지에서 수집 방법을 설정할 수 있습니다. 명령줄 도구를 사용할 경우 자세한 내용은 [명령줄에서 프로파일링](../profiling/using-the-profiling-tools-from-the-command-line.md)을 참조하세요.
+성능 세션 **Method** 속성을 사용하여 애플리케이션에 가장 적절한 수집 방법을 지정할 수 있습니다. 성능 마법사, 성능 탐색기 또는 성능 세션의 속성 페이지에서 수집 방법을 설정할 수 있습니다. 명령줄 도구를 사용할 경우 자세한 내용은 [명령줄에서 프로파일링](../profiling/using-the-profiling-tools-from-the-command-line.md)을 참조하세요.
 
 ## <a name="performance-wizard"></a>성능 마법사
 
@@ -34,9 +32,9 @@ Visual Studio 프로파일링 도구는 성능 데이터를 수집하는 세 가
 
 | 옵션 | 설명 |
 |----------------------------| - |
-| **CPU 샘플링** | 초기 분석 및 CPU 사용률 문제 분석에 유용한 응용 프로그램 통계를 수집합니다. |
+| **CPU 샘플링** | 초기 분석 및 CPU 사용률 문제 분석에 유용한 애플리케이션 통계를 수집합니다. |
 | **계측** | 집중 분석 및 입/출력 성능 문제 분석에 유용한 자세한 타이밍 데이터를 수집합니다. |
-| **.NET 메모리 할당** | 샘플링 프로파일링 방법을 사용하여 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 메모리 할당 데이터를 수집합니다. |
+| **.NET 메모리 할당** | 샘플링 프로파일링 방법을 사용하여 .NET Framework 메모리 할당 데이터를 수집합니다. |
 | **동시성** | 숫자 리소스 경합 데이터를 수집합니다. |
 
 ## <a name="performance-explorer"></a>성능 탐색기
@@ -77,7 +75,7 @@ Visual Studio 프로파일링 도구는 성능 데이터를 수집하는 세 가
 
 4. **샘플링** 또는 **계측**을 클릭합니다.
 
-5. **.NET 개체 할당 정보 수집**을 클릭하여 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 개체 할당의 크기와 개수를 수집합니다.
+5. **.NET 개체 할당 정보 수집**을 클릭하여 .NET Framework 개체 할당의 크기와 개수를 수집합니다.
 
 6. (선택 사항) **추가적으로 .NET 개체 수명 정보 수집**을 클릭하여 개체 메모리가 회수된 가비지 수집 생성에 대한 데이터를 수집합니다.
 
@@ -93,6 +91,6 @@ Visual Studio 프로파일링 도구는 성능 데이터를 수집하는 세 가
 
 ## <a name="see-also"></a>참고 항목
 
-[성능 세션 구성](../profiling/configuring-performance-sessions.md)  
-[샘플링 데이터 값 이해](../profiling/understanding-sampling-data-values.md)  
+[성능 세션 구성](../profiling/configuring-performance-sessions.md)
+[샘플링 데이터 값 이해](../profiling/understanding-sampling-data-values.md)
 [성능 세션 속성](../profiling/performance-session-properties.md)

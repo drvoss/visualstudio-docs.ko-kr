@@ -1,14 +1,9 @@
 ---
 title: 문 실행 명령 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.evaluatestatement
 helpviewer_keywords:
@@ -18,18 +13,17 @@ ms.assetid: 032039bc-9477-4f93-9b9d-66d4be0e90f4
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d3e50b519b162201d741f2460a8e9dbbe675c16e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f774458eb63d9e56b99a635e7b32309375a903ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199369"
 ---
 # <a name="evaluate-statement-command"></a>문 실행 명령
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 지정된 문을 평가 및 표시합니다.  
   
 ## <a name="syntax"></a>구문  
@@ -40,7 +34,7 @@ Debug.EvaluateStatement text
   
 ## <a name="arguments"></a>인수  
  `text`  
- 필수. 평가할 문입니다.  
+ 필수 요소. 평가할 문입니다.  
   
 ## <a name="remarks"></a>설명  
  **EvaluateStatement** 명령을 입력하는 데 사용되는 창에서는 같음 기호(=)를 비교 연산자 또는 대입 연산자로 해석할지 결정합니다.  
@@ -61,7 +55,7 @@ Debug.EvaluateStatement text
   
  명령은 `a` 변수에 `b` 변수의 값을 할당합니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
 ```  
 >Debug.EvaluateStatement(a+b)  
@@ -73,6 +67,3 @@ Debug.EvaluateStatement text
  [명령 창](../../ide/reference/command-window.md)   
  [찾기/명령 상자](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

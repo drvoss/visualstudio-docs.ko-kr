@@ -1,14 +1,9 @@
 ---
 title: 모듈 뷰 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.modules
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: 4314a404-2120-425b-be42-180cd4bac840
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 90e81530a3d682b1604a5226bb66f9e62637dd0e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d396aec92b43aebca9b398c6d481962138354e0e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51731361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195606"
 ---
 # <a name="modules-view"></a>모듈 뷰
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ ms.locfileid: "51731361"
   
  모듈 성능 데이터의 뷰를 표시하거나 닫으려면 모듈 이름을 확장하거나 축소합니다.  
   
- 열을 추가 또는 제거하려면 보고서 창을 오른쪽 단추로 클릭한 다음 **열 추가/제거**를 선택합니다. 열 이름을 클릭하면 데이터를 정렬할 수 있습니다. 자세한 내용은 [방법: 보고서 뷰 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)을 참조하세요.  
+ 열을 추가 또는 제거하려면 보고서 창을 오른쪽 단추로 클릭한 다음 **열 추가/제거**를 선택합니다. 열 이름을 클릭하면 데이터를 정렬할 수 있습니다. 자세한 내용은 [방법: 보고서 뷰 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)합니다.  
   
  모듈 뷰에서 사용할 수 있는 열은 데이터를 수집하는 데 사용된 프로파일링 방법(샘플링 또는 계측) 및 프로파일링 실행 시 .NET 메모리 데이터가 수집되었는지 여부에 따라 달라집니다.  
   
@@ -44,6 +39,3 @@ ms.locfileid: "51731361"
  [모듈 뷰 - 계측](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [모듈 뷰 - 샘플링](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [모듈 뷰](../profiling/modules-view-contention-data.md)
-
-
-

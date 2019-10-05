@@ -1,14 +1,9 @@
 ---
 title: 클래스 디자이너의 Visual C++ 클래스 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.inheritancelinelabel
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d4193dda70aeda8534b9dc2fa3428ca08a9d89fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5e772d5dddcdde2306212e8a8fc48b9e39ae47a8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285690"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696396"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>클래스 디자이너의 Visual C++ 클래스
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "49285690"
 클래스 디자이너는 C++ 클래스를 지원하며, C++ 클래스가 여러 상속 관계를 포함한다는 점을 제외하고 Visual Basic 및 Visual C# 클래스 모양과 동일한 방식으로 네이티브 C++ 클래스를 시각화합니다. 클래스 모양을 확장하여 추가 필드와 메서드를 클래스에 표시하거나 축소하여 공간을 절약할 수 있습니다.  
   
 > [!NOTE]
->  클래스 디자이너는 공용 구조체(해당 데이터 멤버 중 가장 큰 데이터 멤버에 필요한 만큼만 메모리가 할당되는 특수한 클래스 형식)를 지원하지 않습니다.  
+> 클래스 디자이너는 공용 구조체(해당 데이터 멤버 중 가장 큰 데이터 멤버에 필요한 만큼만 메모리가 할당되는 특수한 클래스 형식)를 지원하지 않습니다.  
   
 ## <a name="simple-inheritance"></a>단순 상속  
  둘 이상의 클래스를 클래스 다이어그램으로 끌면 클래스에는 클래스 상속 관계가 설정되고 화살표가 클래스를 연결합니다. 화살표는 기본 클래스의 방향을 가리킵니다. 예를 들어 다음 클래스가 클래스 다이어그램에 표시되면 화살표는 B에서 A를 가리키도록 클래스를 연결합니다.  
@@ -57,9 +52,9 @@ class Penguin : public Bird, public Swimmer {};
  클래스 모양을 마우스 오른쪽 단추로 클릭한 다음 **기본 클래스 표시**를 클릭하면 선택한 클래스에 대한 기본 클래스가 표시됩니다.  
   
 > [!NOTE]
->  C++ 코드에는 **파생 클래스 표시** 명령이 지원되지 않습니다. 클래스 뷰로 이동하여 형식 노드를 확장하고 **파생 형식** 하위 폴더를 확장한 후 해당 형식을 클래스 다이어그램으로 끌어 파생 클래스를 표시할 수 있습니다.  
+> C++ 코드에는 **파생 클래스 표시** 명령이 지원되지 않습니다. 클래스 뷰로 이동하여 형식 노드를 확장하고 **파생 형식** 하위 폴더를 확장한 후 해당 형식을 클래스 다이어그램으로 끌어 파생 클래스를 표시할 수 있습니다.  
   
- 다중 클래스 상속에 대한 자세한 내용은 [(NOTINBUILD) 다중 상속](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca) 및 [다중 기본 클래스](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)를 참조하세요.  
+ 다중 클래스 상속에 대한 자세한 내용은 [(NOTINBUILD) 다중 상속](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) 및 [다중 기본 클래스](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)를 참조하세요.  
   
 ## <a name="abstract-classes"></a>추상 클래스  
  클래스 디자이너는 추상 클래스(“추상 기본 클래스” 라고도 함)를 지원합니다. 추상 클래스는 인스턴스화하지는 않고 여기에서 다른 클래스를 파생할 수는 있는 클래스입니다. 이 문서 앞부분에 있는 “다중 상속”의 예제를 사용하여 `Bird` 클래스를 개별 개체로 인스턴스화할 수 있습니다.  
@@ -126,7 +121,7 @@ typedef struct
   
  구조체는 익명일 수도 있습니다. 클래스 디자이너는 익명 클래스와 구조체를 해당 형식을 표시할 때와 같이 표시합니다. 익명 클래스와 구조체를 선언하고 표시할 수 있지만 클래스 디자이너는 사용자가 지정한 태그 이름을 사용하지 않습니다. 클래스 뷰가 생성하는 이름을 사용합니다. 클래스 또는 구조체는 클래스 뷰 및 클래스 디자이너에서 **__unnamed**라는 요소로 나타납니다.  
   
- 익명 클래스에 대한 자세한 내용은 [익명 클래스 형식](http://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)을 참조하세요.  
+ 익명 클래스에 대한 자세한 내용은 [익명 클래스 형식](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)을 참조하세요.  
   
 ## <a name="template-classes"></a>템플릿 클래스  
  클래스 디자이너는 템플릿 클래스의 시각화를 지원합니다. 중첩된 선언도 지원합니다. 다음 표는 몇 가지 일반적인 선언을 보여 줍니다.  
@@ -176,11 +171,8 @@ typedef struct
   
 ## <a name="see-also"></a>참고 항목  
  [Visual C++ 코드 작업(클래스 디자이너)](../ide/working-with-visual-cpp-code-class-designer.md)   
- [클래스 및 구조체](http://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
- [익명 클래스 형식](http://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)   
- [(NOTINBUILD) 다중 상속](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
- [다중 기본 클래스](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)   
- [템플릿](http://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)
-
-
-
+ [클래스 및 구조체](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
+ [익명 클래스 형식](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)   
+ [(NOTINBUILD) 다중 상속](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
+ [다중 기본 클래스](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)   
+ [템플릿](https://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)

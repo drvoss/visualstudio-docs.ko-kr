@@ -1,14 +1,9 @@
 ---
 title: '오류: 대상 컴퓨터의 Visual Studio 원격 디버거 서비스가이 컴퓨터에 다시 연결할 수 없습니다. | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.service_access_denied_oncallback
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 89ecf99d-66bf-4da0-a840-aa95b0be1702
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7f1e457829f7b6ab5050a02bd8f20e1c51d5df14
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 8f598d765e45b1f97d6a3e95d1ad57c325ea38fe
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798471"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697355"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>오류: 대상 컴퓨터의 Visual Studio 원격 디버거 서비스가 이 컴퓨터에 다시 연결할 수 없습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,47 +38,44 @@ ms.locfileid: "51798471"
 |작업 그룹의 한 컴퓨터 또는 두 컴퓨터|아니요|아니요|예|  
 |서로 다른 도메인의 컴퓨터|아니요|아니요|예|  
   
- 기타  
+ 이 밖에도 다음 지침을 따릅니다.  
   
--   모든 프로세스를 디버깅할 수 있으려면 Visual Studio 원격 디버거 서비스를 실행하는 데 사용되는 계정이 원격 컴퓨터의 관리자 계정이어야 합니다.  
+- 모든 프로세스를 디버깅할 수 있으려면 Visual Studio 원격 디버거 서비스를 실행하는 데 사용되는 계정이 원격 컴퓨터의 관리자 계정이어야 합니다.  
   
--   계정도 부여 하는 경우는 `Log on as a service` 사용 하 여 원격 컴퓨터에 대 한 권한이 합니다 **로컬 보안 정책** 관리 도구입니다.  
+- 또한 계정에는 **로컬 보안 정책** 관리 도구를 사용하는 원격 컴퓨터에 대한 `Log on as a service` 권한이 부여되어야 합니다.  
   
--   로컬 계정을 사용하여 컴퓨터에 액세스하는 경우 Visual Studio 원격 디버거 서비스를 로컬 계정으로 실행해야 합니다.  
+- 로컬 계정을 사용하여 컴퓨터에 액세스하는 경우 Visual Studio 원격 디버거 서비스를 로컬 계정으로 실행해야 합니다.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
-1.  원격 컴퓨터에서 Visual Studio 원격 디버거 서비스가 올바르게 설정되어 있는지 확인합니다. 자세한 내용은 [설정 Up the Remote Tools 장치의](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)합니다.  
+1. 원격 컴퓨터에서 Visual Studio 원격 디버거 서비스가 올바르게 설정되어 있는지 확인합니다. 자세한 내용은 [설정 Up the Remote Tools 장치의](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)합니다.  
   
-2.  위 표에 나와 있듯이 디버거 호스트 컴퓨터에 액세스할 수 있는 계정으로 원격 디버거 서비스를 실행합니다.  
+2. 위 표에 나와 있듯이 디버거 호스트 컴퓨터에 액세스할 수 있는 계정으로 원격 디버거 서비스를 실행합니다.  
   
 ### <a name="to-add-log-on-as-a-service-privilege"></a>"서비스로 로그온" 권한을 추가하려면  
   
-1.  에 **시작** 메뉴 선택 **제어판**합니다.  
+1. **시작** 메뉴에서 **제어판**을 선택합니다.  
   
-2.  제어판에서 선택 **클래식 보기**필요한 경우.  
+2. 필요한 경우 제어판에서 **클래식 보기**를 선택합니다.  
   
-3.  **관리 도구**를 두 번 클릭합니다.  
+3. **관리 도구**를 두 번 클릭합니다.  
   
-4.  관리 도구 창에서 두 번 클릭 **로컬 보안 정책**합니다.  
+4. 관리 도구 창에서 **로컬 보안 정책**을 두 번 클릭합니다.  
   
-5.  에 **로컬 보안 설정** 창에서 확장을 **로컬 정책** 폴더.  
+5. **로컬 보안 설정** 창에서 **로컬 정책** 폴더를 확장합니다.  
   
-6.  클릭 **사용자 권한 할당**합니다.  
+6. **사용자 권한 할당**을 클릭합니다.  
   
-7.  에 **정책** 열을 두 번 클릭 **서비스로 로그온** 에서 현재 로컬 그룹 정책 할당을 볼 수는 **서비스로 로그온** 대화 상자.  
+7. **P정책** 열에서 **서비스로 로그온**을 두 번 클릭하여 현재 로컬 그룹 정책 할당을 **서비스로 로그온** 대화 상자에 표시합니다.  
   
-8.  새 사용자를 추가 하려면 클릭 합니다 **사용자 또는 그룹 추가** 단추입니다.  
+8. 새 사용자를 추가하려면 **사용자 또는 그룹 추가** 단추를 클릭합니다.  
   
-9. 사용자를 추가 했으면 클릭 **확인**합니다.  
+9. 사용자 추가를 마쳤으면 **확인**을 클릭합니다.  
   
 ### <a name="to-work-around-this-error"></a>이 오류를 해결하려면  
   
--   원격 디버깅 모니터를 서비스가 아닌 응용 프로그램으로 실행합니다.  
+- 원격 디버깅 모니터를 서비스가 아닌 애플리케이션으로 실행합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [원격 디버깅 오류 및 문제 해결](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Remote Debugging](../debugger/remote-debugging.md)
-
-
-

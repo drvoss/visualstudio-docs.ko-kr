@@ -1,22 +1,20 @@
 ---
 title: 폭포수형 설정 | Microsoft IntelliTest 개발자 테스트 도구
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Settings waterfall
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 27eb9b7e3cda7c05515f5a7413b067dce2b8567e
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 966182ca79ffd06e17642e1b24d6e48b8e637efe
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939133"
 ---
 # <a name="settings-waterfall"></a>폭포수형 설정
 
@@ -39,7 +37,7 @@ using Microsoft.Pex.Framework;
 
 namespace MyTests
 {
-    [PexClass(MaxBranches = 500)] // we override the 1000 value and set maxbranches to 500 
+    [PexClass(MaxBranches = 500)] // we override the 1000 value and set maxbranches to 500
     public partial class MyTests
     {
         [PexMethod(MaxBranches = 100)] // we override again, maxbranches = 100

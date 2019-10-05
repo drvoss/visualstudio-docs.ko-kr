@@ -1,20 +1,19 @@
 ---
-title: '워크플로 디자이너-방법: 활동 대리자 정의 및 사용'
+title: '워크플로 디자이너: 활동 대리자 정의 및 사용'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 95aede6217bca263be7edd7440cc5e9bb23e25ab
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 34cb06bbc5c9575f5a10507a8015c9819e7b533b
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908464"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431789"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>방법: 워크플로 디자이너에서 활동 대리자 정의 및 사용
 
@@ -22,12 +21,10 @@ ms.locfileid: "53908464"
 
 ## <a name="define-an-activity-delegate"></a>작업 대리자 정의
 
-1. Visual Studio에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
-
-2. 에 **새 프로젝트** 대화 상자에서를 **워크플로** 왼쪽의 범주를 선택한는 **워크플로 콘솔 응용 프로그램** 프로젝트 템플릿. 원하는 경우 프로젝트 이름을 지정 하 고 클릭 **확인**합니다.
+1. 새 **워크플로 콘솔 응용 프로그램** 프로젝트입니다.
 
    > [!NOTE]
-   > 표시 되지 않는 경우는 **워크플로** 범주, 첫 번째 설치를 **Windows Workflow Foundation** Visual Studio 2017 구성 요소입니다. 자세한 지침은 [Windows Workflow Foundation 설치](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)합니다.
+   > 표시 되지 않는 경우는 **워크플로** 템플릿 프로젝트를 먼저 설치 합니다 **Windows Workflow Foundation** Visual Studio의 구성 요소입니다. 자세한 지침은 [Windows Workflow Foundation 설치](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)합니다.
 
 3. 프로젝트를 마우스 오른쪽 단추로 클릭 **솔루션 탐색기** 선택한 **추가** > **새 항목**합니다. 선택 된 **워크플로** 범주를 선택한 후는 **활동** 항목 템플릿. 새 활동 이름을 **MyForEach.xaml** 선택한 후 **확인**합니다.
 
@@ -55,7 +52,7 @@ ms.locfileid: "53908464"
 
 14. 에 **변수 형식** 열 선택 **Int32**합니다. 유지 된 **범위** 으로 **하는 동안**, 및 **기본** 열은 비워 둠.
 
-15. 설정 합니다 **조건** 의 속성을 <xref:System.Activities.Statements.While> 활동을 **인덱스 < Items.Length;**.
+15. 설정 합니다 **조건** 의 속성을 <xref:System.Activities.Statements.While> 활동을 **인덱스 < Items.Length;** .
 
 16. 끌어서는 <xref:System.Activities.Statements.InvokeDelegate> 활동에서를 **기본** 에 도구 상자의 섹션을 **본문** 의 <xref:System.Activities.Statements.While> 활동입니다.
 
@@ -73,17 +70,17 @@ ms.locfileid: "53908464"
 
 ## <a name="use-the-custom-activity-in-a-workflow"></a>워크플로에서 사용자 지정 활동 사용
 
-1.  키를 눌러 프로젝트를 빌드할 **Ctrl**+**Shift**+**B**합니다.
+1. 키를 눌러 프로젝트를 빌드할 **Ctrl**+**Shift**+**B**합니다.
 
-2.  **솔루션 탐색기**오픈 **Workflow1.xaml** 디자이너에서 합니다.
+2. **솔루션 탐색기**오픈 **Workflow1.xaml** 디자이너에서 합니다.
 
-3.  끌어서를 **MyForEach** 활동을 도구 상자에서 디자이너 화면으로 합니다. 작업은 프로젝트와 동일한 이름 사용 하 여 도구 상자의 섹션.
+3. 끌어서를 **MyForEach** 활동을 도구 상자에서 디자이너 화면으로 합니다. 작업은 프로젝트와 동일한 이름 사용 하 여 도구 상자의 섹션.
 
-4.  설정 합니다 **항목** 의 속성을 **MyForEach** 활동을 **new Object {1, "abc"}**.
+4. 설정 합니다 **항목** 의 속성을 **MyForEach** 활동을 **new Object {1, "abc"}** .
 
-5.  끌어서를 <xref:System.Activities.Statements.WriteLine> 활동에서를 **기본** 에 도구 상자의 섹션을 **Delegate: Body** 섹션을 **MyForEach** 활동입니다.
+5. 끌어서를 <xref:System.Activities.Statements.WriteLine> 활동에서를 **기본** 에 도구 상자의 섹션을 **Delegate: Body** 섹션을 **MyForEach** 활동입니다.
 
-6.  설정 합니다 **텍스트** 의 속성을 <xref:System.Activities.Statements.WriteLine> 활동을 **argument.tostring ()**.
+6. 설정 합니다 **텍스트** 의 속성을 <xref:System.Activities.Statements.WriteLine> 활동을 **argument.tostring ()** .
 
 워크플로가 실행 되 면 다음 출력이 콘솔에 표시:
 

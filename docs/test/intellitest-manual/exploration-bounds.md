@@ -1,22 +1,20 @@
 ---
 title: 탐색 경계 | Microsoft IntelliTest 개발자 테스트 도구
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Exploration bounds
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9d1ac08a2314119c924417191ca509a4bcd18021
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: ffa6908fe759f33ad1e82f2fd44975d6731cdf16
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978551"
 ---
 # <a name="exploration-bounds"></a>탐색 경계
 
@@ -31,17 +29,17 @@ public partial class FooTest {...}
 
 * **제약 조건 해결 경계**
   * [MaxConstraintSolverTime](#maxconstraintsolvertime) - [제약 조건 해결기](input-generation.md#constraint-solver)가 새롭거나 다른 실행 경로를 따르게 만드는 입력을 검색해야 하는 시간(초)입니다.
-  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory) - [제약 조건 해결기](input-generation.md#constraint-solver)가 입력을 검색하는 데 사용할 수 있는 크기(MB)입니다.<p />
+  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory) - [제약 조건 해결기](input-generation.md#constraint-solver)가 입력을 검색하는 데 사용할 수 있는 크기(MB)입니다.
 * **탐색 경로 경계**
   * [MaxBranches](#maxbranches) - 단일 실행 경로를 따라 사용할 수 있는 최대 분기 수입니다.
   * [MaxCalls](#maxcalls) - 단일 실행 경로 중에 생성될 수 있는 최대 호출 수입니다.
   * [MaxStack](#maxstack) - 단일 실행 경로 중 임의 시점에 활성 호출 프레임 수로 측정된 최대 스택 크기입니다.
-  * [MaxConditions](#maxconditions) - 단일 실행 경로 중에 확인될 수 있는 입력에 대한 최대 조건 수입니다.<p />
+  * [MaxConditions](#maxconditions) - 단일 실행 경로 중에 확인될 수 있는 입력에 대한 최대 조건 수입니다.
 * **탐색 경계**
   * [MaxRuns](#maxruns) - 탐색 중에 시도될 최대 실행 수입니다.
   * [MaxRunsWithoutNewTests](#maxrunswithoutnewtests) - 새 테스트를 내보내지 않는 최대 연속 실행 수입니다.
   * [MaxRunsWithUniquePaths](#maxrunswithuniquepaths) - 탐색 중에 시도될 고유한 실행 경로를 사용한 최대 실행 수입니다.
-  * [MaxExceptions](#maxexceptions) - 모든 검색된 실행 경로 조합에 대해 검색될 수 있는 최대 예외 수입니다.<p />
+  * [MaxExceptions](#maxexceptions) - 모든 검색된 실행 경로 조합에 대해 검색될 수 있는 최대 예외 수입니다.
 * **테스트 도구 모음 코드 생성 설정**
   * [TestExcludePathBoundsExceeded](#testexcludepathboundsexceeded) - True인 경우 경로 경계([MaxCalls](#maxcalls), [MaxBranches](#maxbranches), [MaxStack](#maxstack), [MaxConditions](#maxconditions))를 초과하는 실행 경로는 무시됩니다.
   * [TestEmissionFilter](#testemissionfilter) - IntelliTest가 테스트를 내보내는 환경을 나타냅니다.
@@ -107,7 +105,7 @@ for (int i=0; i<100; i++) { }
 
 ```csharp
 [PexMethod]
-void ParameterizedTest(int n) 
+void ParameterizedTest(int n)
 {
      for (int i=0; i<n; i++) { // conditions are "0<n", "1<n", ..., "!(n<n)"
           ...
@@ -145,10 +143,10 @@ IntelliTest가 탐색 중에 고려할 최대 고유 경로 수입니다.
 
 이 탐색 경계의 목적은 루프 또는 반복이 포함된 코드에 무한 수의 실행 경로가 있으므로 [입력 생성](input-generation.md) 중에 IntelliTest를 제한하는 것입니다.
 
-두 가지 설정 **MaxRuns** 및 **MaxRunsWithUniquePaths**는 다음과 같이 관련됩니다. 
+두 가지 설정 **MaxRuns** 및 **MaxRunsWithUniquePaths**는 다음과 같이 관련됩니다.
 
 * IntelliTest는 다른 테스트 입력을 통해 매개 변수가 있는 테스트 메서드를 **MaxRuns**번까지 호출합니다.
-* 실행된 코드가 결정적이면 IntelliTest는 매번 다른 경로를 사용합니다. 그러나 조건에 따라 실행된 코드가 다른 입력을 통해 이전에 이미 사용된 실행 경로를 따를 수 있습니다. 
+* 실행된 코드가 결정적이면 IntelliTest는 매번 다른 경로를 사용합니다. 그러나 조건에 따라 실행된 코드가 다른 입력을 통해 이전에 이미 사용된 실행 경로를 따를 수 있습니다.
 * IntelliTest는 발견한 고유한 실행 경로 수를 계산합니다. 이 개수는 **MaxRunsWithUniquePaths** 옵션으로 제한됩니다.
 
 <a name="maxexceptions"></a>

@@ -1,27 +1,22 @@
 ---
 title: 프로세스 뷰 - 경합 데이터 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Process view
 ms.assetid: 8821d98c-0771-43b2-a38b-e9039a3abd75
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 46bd3506744d37d3f203215cd9c152cef20142f0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e43541ddb75b067faa23437d315ce5f239256b1a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180227"
 ---
 # <a name="process-view---contention-data"></a>프로세스 뷰 - 경합 데이터
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,6 +44,3 @@ ms.locfileid: "51776683"
 ## <a name="see-also"></a>참고 항목  
  [방법: 보고서 뷰 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)   
  [프로세스 뷰](../profiling/process-view.md)
-
-
-

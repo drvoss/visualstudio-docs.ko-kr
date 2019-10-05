@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 41e27d2d7a3fc79695fa1d476a76e199348c5320
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: d52e02947a9148463396260afd3e389fa1d248ee
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320893"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824707"
 ---
 # <a name="devops-with-unity-apps"></a>Unity 앱을 사용한 DevOps
 
@@ -26,7 +26,7 @@ Visual Studio는 Azure DevOps Services 및 Team Foundation Server와 함께 다�
 
 ## <a name="agile-tools"></a>Agile 도구
 
-참조 링크: [Agile 도구 및 Agile 프로젝트 관리 정보](/azure/devops/boards/backlogs/overview?view=vsts)(Azure Boards 또는 TFS 사용, Team Explorer Everywhere 포함)
+참조 링크: [Agile 도구 및 Agile 프로젝트 관리 정보](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)(Azure Boards 또는 TFS 사용, Team Explorer Everywhere 포함)
 
 일반 설명: 모든 계획 및 추적 기능은 프로젝트 형식 및 코딩 언어와 독립적입니다.
 
@@ -34,7 +34,7 @@ Visual Studio는 Azure DevOps Services 및 Team Foundation Server와 함께 다�
 |-------------|--------------------------|-------------------------|
 |백로그 및 스프린트 관리|예||
 |작업 추적|예||
-|단체 방 공동 작업|예||
+|단체 방 협업|예||
 |Kanban 보드|예||
 |보고 및 진행률 시각화|예||
 
@@ -42,7 +42,7 @@ Visual Studio는 Azure DevOps Services 및 Team Foundation Server와 함께 다�
 
 참조 링크: **[분석 및 모델 아키텍처](../modeling/analyze-and-model-your-architecture.md)**
 
-일반 설명: 이러한 디자인 기능은 코딩 언어에 독립적이거나 C#과 같은 .NET 언어로 작동하지만 개체 계층 구조 및 클래스 관계를 포함하는 기존 응용 프로그램 패러다임에서 작동합니다. Unity 내에서 게임을 디자인하는 경우 완전히 다른 패러다임, 즉 그래픽 개체, 소리, 셰이더, 스크립트 등의 관계가 필요합니다. 이러한 이유로 Visual Studio 모델링 다이어그램 도구는 Unity 프로젝트 전체와 특별한 관련이 없습니다. C# 스크립트 내에서 관계를 관리하는 데 사용될 수 있지만 전체의 일부일 뿐입니다.
+일반 주석: 이러한 디자인 기능은 코딩 언어에 독립적이거나 C#과 같은 .NET 언어로 작동하지만 개체 계층 구조 및 클래스 관계를 포함하는 기존 애플리케이션 패러다임에서 작동합니다. Unity 내에서 게임을 디자인하는 경우 완전히 다른 패러다임, 즉 그래픽 개체, 소리, 셰이더, 스크립트 등의 관계가 필요합니다. 이러한 이유로 Visual Studio 모델링 다이어그램 도구는 Unity 프로젝트 전체와 특별한 관련이 없습니다. C# 스크립트 내에서 관계를 관리하는 데 사용될 수 있지만 전체의 일부일 뿐입니다.
 
 |기능|Unity에서 지원 여부|추가 설명|
 |-------------|--------------------------|-------------------------|
@@ -63,7 +63,7 @@ Visual Studio는 Azure DevOps Services 및 Team Foundation Server와 함께 다�
 |[Azure Repos에서 Git 시작하기](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio)|예|표 뒤에 나오는 설명을 참조하세요.|
 |[코드 품질 향상](../test/improve-code-quality.md)|예||
 |[코드 변경 내용 및 기타 기록 찾기](../ide/find-code-changes-and-other-history-with-codelens.md)|예||
-|[코드 맵을 사용하여 응용 프로그램 디버그](../modeling/use-code-maps-to-debug-your-applications.md)|예||
+|[코드 맵을 사용하여 애플리케이션 디버그](../modeling/use-code-maps-to-debug-your-applications.md)|예||
 
 Unity로 버전 제어를 수행하기 위한 특별 고려 사항:
 
@@ -71,7 +71,7 @@ Unity로 버전 제어를 수행하기 위한 특별 고려 사항:
 
 2. Unity 프로젝트의 일부 파일 및 폴더는 위의 링크에 설명된 것처럼 소스 제어에 적합하지 않습니다. Assets 및 ProjectSettings 폴더는 추가해야 하고 Library 및 Temp 폴더는 추가하면 안 됩니다. 소스 제어로 이동하지 않는 생성된 파일의 추가 목록에 대해서는 StackOverflow의 [Unity3D 소스 제어에 Git을 사용하는 방법](http://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control)을 참조하세요. 독립적으로 이 주제에 대한 블로그 게시물을 올린 개발자도 많습니다.
 
-3. 질감 또는 오디오 파일과 같은 Unity 프로젝트의 이진 자산은 많은 저장 공간을 차지할 수 있습니다. Git와 같은 다양한 소스 제어 시스템은 변경 내용이 파일의 일부에만 영향을 주는 경우에도 변경될 때마다 파일의 고유 복사본을 저장합니다. 이로 인해 Git 리포지토리가 너무 커질 수 있습니다. 이 문제를 해결하기 위해 대개 Unity 개발자는 최종 자산만 리포지토리에 추가하고 OneDrive, DropBox, git-annex 등의 다른 방법으로 자산의 작업 기록을 유지합니다. 일반적으로 이러한 자산은 소스 코드 변경에 따라 버전을 관리할 필요가 없으므로 이 접근 방식은 유용합니다. 또한 개발자는 일반적으로 프로젝트 편집기의 Asset Serialization Mode를 Force Text로 설정하여 이진 형식이 아니라 텍스트에 장면 파일을 저장하므로 소스 제어에서 병합할 수 있습니다. 자세한 내용은 [편집기 설정](http://docs.unity3d.com/Manual/class-EditorManager.html)(Unity 설명서)을 참조하세요.
+3. 질감 또는 오디오 파일과 같은 Unity 프로젝트의 이진 자산은 많은 스토리지 공간을 차지할 수 있습니다. Git와 같은 다양한 소스 제어 시스템은 변경 내용이 파일의 일부에만 영향을 주는 경우에도 변경될 때마다 파일의 고유 복사본을 저장합니다. 이로 인해 Git 리포지토리가 너무 커질 수 있습니다. 이 문제를 해결하기 위해 대개 Unity 개발자는 최종 자산만 리포지토리에 추가하고 OneDrive, DropBox, git-annex 등의 다른 방법으로 자산의 작업 기록을 유지합니다. 일반적으로 이러한 자산은 소스 코드 변경에 따라 버전을 관리할 필요가 없으므로 이 접근 방식은 유용합니다. 또한 개발자는 일반적으로 프로젝트 편집기의 Asset Serialization Mode를 Force Text로 설정하여 이진 형식이 아니라 텍스트에 장면 파일을 저장하므로 소스 제어에서 병합할 수 있습니다. 자세한 내용은 [편집기 설정](http://docs.unity3d.com/Manual/class-EditorManager.html)(Unity 설명서)을 참조하세요.
 
 ## <a name="build"></a>빌드
 
@@ -102,9 +102,9 @@ Unity로 버전 제어를 수행하기 위한 특별 고려 사항:
 
 |기능|Unity에서 지원 여부|추가 설명|
 |-------------|--------------------------|-------------------------|
-|[관리 코드 품질 분석](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|예|Visual Studio 내에서 C# 스크립트 코드를 분석할 수 있습니다.|
+|[관리 코드 품질 분석](../code-quality/code-analysis-for-managed-code-overview.md)|예|Visual Studio 내에서 C# 스크립트 코드를 분석할 수 있습니다.|
 |[코드 복제본 검색을 사용하여 중복 코드 찾기](https://msdn.microsoft.com/library/hh205279.aspx)|예|Visual Studio 내에서 C# 스크립트 코드를 분석할 수 있습니다.|
-|[관리 코드의 복잡성 및 유지 관리 용이성 측정](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|예|Visual Studio 내에서 C# 스크립트 코드를 분석할 수 있습니다.|
+|[관리 코드의 복잡성 및 유지 관리 용이성 측정](../code-quality/code-metrics-values.md)|예|Visual Studio 내에서 C# 스크립트 코드를 분석할 수 있습니다.|
 |[성능 탐색기](../profiling/performance-explorer.md)|아니요|[Unity 프로파일러](http://docs.unity3d.com/Manual/Profiler.html)(Unity 웹 사이트)를 사용합니다.|
 |[.NET Framework 메모리 문제 분석](https://msdn.microsoft.com/library/dn342825.aspx)|아니요|Visual Studio 도구에는 프로파일링을 위한 모노 프레임워크(Unity에서 사용)에 대한 후크가 없습니다. [Unity 프로파일러](http://docs.unity3d.com/Manual/Profiler.html)(Unity 설명서)를 사용합니다.|
 

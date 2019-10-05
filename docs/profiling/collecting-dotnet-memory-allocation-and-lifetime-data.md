@@ -1,34 +1,32 @@
 ---
 title: .NET 메모리 할당 및 수명 데이터 수집 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - .NET memory profiling method
 - Profiling Tools,.NET memory method
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2484072a0f85b002ff2e59512f44ca0826540fd3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: dbdc92ff0d8a4020c664de527b60e95ed6113329
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62535465"
 ---
 # <a name="collect-net-memory-allocation-and-lifetime-data"></a>.NET 메모리 할당 및 수명 데이터 수집
 
-Visual Studio 프로파일링 도구는 .NET 메모리 할당 및 개체 수명 데이터의 수집을 지원하므로, 응용 프로그램에서 메모리 관련 성능 문제를 감지하는 데 도움이 됩니다.
+Visual Studio 프로파일링 도구는 .NET 메모리 할당 및 개체 수명 데이터의 수집을 지원하므로, 애플리케이션에서 메모리 관련 성능 문제를 감지하는 데 도움이 됩니다.
 
 - .NET 메모리 할당에 대한 데이터에는 할당된 .NET Framework 메모리 개체의 크기와 수가 포함됩니다.
 
 - 개체 수명 데이터에는 3개의 가비지 수집 세대에서 회수된 .NET Framework 메모리 개체의 크기와 수가 포함됩니다.
 
 > [!NOTE]
-> Windows 8 및 Windows Server 2012의 강화된 보안 기능을 위해 Visual Studio 프로파일러가 이러한 플랫폼에서 데이터를 수집하는 방법을 상당히 변경해야 했습니다. 또한 UWP 앱에는 새로운 수집 기술도 필요합니다. [Windows 8 및 Windows Server 2012 응용 프로그램의 성능 도구](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)를 참조하세요.
+> Windows 8 및 Windows Server 2012의 강화된 보안 기능을 위해 Visual Studio 프로파일러가 이러한 플랫폼에서 데이터를 수집하는 방법을 상당히 변경해야 했습니다. 또한 UWP 앱에는 새로운 수집 기술도 필요합니다. [Windows 8 및 Windows Server 2012 애플리케이션의 성능 도구](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)를 참조하세요.
 
 샘플링 또는 계측 프로파일링 방법을 사용하여 데이터를 수집할 수 있습니다.
 
@@ -47,7 +45,7 @@ Visual Studio 프로파일링 도구는 .NET 메모리 할당 및 개체 수명 
 
 1. **성능 탐색기**에서 성능 세션을 마우스 오른쪽 단추로 클릭한 다음 **속성**을 클릭합니다.
 
-2. ‘성능 세션’ **속성 페이지** 대화 상자에서 **일반** 탭을 클릭하고, **.NET 개체 할당 정보 수집** 확인란을 선택합니다.
+2. ‘성능 세션’ **속성 페이지** 대화 상자에서 **일반** 탭을 클릭하고, **.NET 개체 할당 정보 수집** 확인란을 선택합니다. 
 
 3. .NET 개체 수명 데이터를 수집하려면 **추가적으로 .NET 개체 수명 정보 수집** 확인란을 선택합니다.
 
@@ -62,11 +60,11 @@ Visual Studio 프로파일링 도구는 .NET 메모리 할당 및 개체 수명 
 |작업|관련 내용|
 |----------|---------------------|
 |**일반** 페이지에서 생성된 프로파일링 데이터(.vsp) 파일에 대한 이름 지정 세부 정보를 지정합니다.|- [.NET 메모리 할당 및 수명 데이터 수집](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />- [방법: 성능 데이터 파일 이름 옵션 설정](../profiling/how-to-set-performance-data-file-name-options.md)|
-|**시작** 페이지에서 코드 솔루션에 .여러 .exe 프로젝트가 있는 경우 시작할 응용 프로그램을 선택합니다.|- [계층 상호 작용 데이터 수집](../profiling/collecting-tier-interaction-data.md)|
+|**시작** 페이지에서 코드 솔루션에 .여러 .exe 프로젝트가 있는 경우 시작할 애플리케이션을 선택합니다.|- [계층 상호 작용 데이터 수집](../profiling/collecting-tier-interaction-data.md)|
 |**계층 상호 작용** 페이지에서 프로파일링 실행에 ADO.NET 호출 데이터를 추가합니다.|- [계층 상호 작용 데이터 수집](../profiling/collecting-tier-interaction-data.md)|
 |**Windows 이벤트** 페이지에서 샘플링 데이터로 수집할 ETW(Windows용 이벤트 추적) 이벤트를 하나 이상 지정합니다.|- [방법: ETW(Windows용 이벤트 추적) 데이터 수집](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|
 |**Windows 카운터** 페이지에서 프로파일링 데이터에 표시로 추가할 운영 체제 성능 카운터를 하나 이상 지정합니다.|- [방법: Windows 카운터 데이터 수집](../profiling/how-to-collect-windows-counter-data.md)|
-|**고급** 페이지에서, 응용 프로그램 모듈이 여러 버전을 사용하는 경우 프로파일링할 .NET Framework 런타임의 버전을 지정합니다. 기본적으로 첫 번째 로드된 버전이 프로파일링됩니다.|- [방법: .NET Framework 런타임 지정](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|
+|**고급** 페이지에서, 애플리케이션 모듈이 여러 버전을 사용하는 경우 프로파일링할 .NET Framework 런타임의 버전을 지정합니다. 기본적으로 첫 번째 로드된 버전이 프로파일링됩니다.|- [방법: .NET Framework 런타임 지정](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|
 
 ## <a name="instrumentation-tasks"></a>계측 작업
 
@@ -81,6 +79,6 @@ Visual Studio 프로파일링 도구는 .NET 메모리 할당 및 개체 수명 
 
 ## <a name="see-also"></a>참고 항목
 
-[성능 세션 구성](../profiling/configuring-performance-sessions.md)  
-[방법: 수집 방법 선택](../profiling/how-to-choose-collection-methods.md)  
+[성능 세션 구성](../profiling/configuring-performance-sessions.md)
+[방법: 수집 방법 선택](../profiling/how-to-choose-collection-methods.md)
 [성능 세션 속성](../profiling/performance-session-properties.md)

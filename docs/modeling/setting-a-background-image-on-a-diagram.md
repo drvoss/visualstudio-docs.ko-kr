@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 63243df353dc141363a3ebfdd61a5f90a2fe6258
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e79a7fd37bd5f2d5298bda6dca7568c6ba4db6ce
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887869"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823959"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>다이어그램에 배경 이미지 설정
 Visual Studio Visualization and Modeling SDK에서 사용자 지정 코드를 사용 하 여 생성된 된 디자이너의 배경 이미지를 설정할 수 있습니다.
@@ -22,21 +21,21 @@ Visual Studio Visualization and Modeling SDK에서 사용자 지정 코드를 �
 
 #### <a name="to-set-a-background-image-for-a-generated-designer"></a>생성된 디자이너의 배경 이미지를 설정하려면
 
-1.  다이어그램 배경으로 사용할 이미지 파일을 현재 프로젝트의 Dsl\Resources 디렉터리에 복사합니다.
+1. 다이어그램 배경으로 사용할 이미지 파일을 현재 프로젝트의 Dsl\Resources 디렉터리에 복사합니다.
 
-2.  **솔루션 탐색기**Dsl\Resources 폴더를 마우스 오른쪽 단추로 클릭, 가리킨 **추가**를 클릭 하 고 **기존 항목**합니다.
+2. **솔루션 탐색기**Dsl\Resources 폴더를 마우스 오른쪽 단추로 클릭, 가리킨 **추가**를 클릭 하 고 **기존 항목**합니다.
 
-3.  에 **기존 항목 추가** 대화 상자에서 Dsl\Resources 폴더를 찾습니다.
+3. 에 **기존 항목 추가** 대화 상자에서 Dsl\Resources 폴더를 찾습니다.
 
-4.  에 **파일 형식** 목록에서 클릭 **이미지 파일**합니다.
+4. 에 **파일 형식** 목록에서 클릭 **이미지 파일**합니다.
 
-5.  디렉터리에 복사한 이미지 파일을 클릭 한 다음 클릭 **추가**합니다.
+5. 디렉터리에 복사한 이미지 파일을 클릭 한 다음 클릭 **추가**합니다.
 
-6.  Dsl을 마우스 오른쪽 단추로 클릭 하 고 클릭 **속성** Dsl 프로젝트의 속성을 엽니다.
+6. Dsl을 마우스 오른쪽 단추로 클릭 하 고 클릭 **속성** Dsl 프로젝트의 속성을 엽니다.
 
-7.  에 **리소스** 탭을 클릭 **이 프로젝트에 기본 리소스 파일이 없습니다. 기본 리소스 파일을 만들려면 여기를 클릭하십시오.** 를 클릭합니다.
+7. 에 **리소스** 탭을 클릭 **이 프로젝트에 기본 리소스 파일이 없습니다. 기본 리소스 파일을 만들려면 여기를 클릭하십시오.** 를 클릭합니다.
 
-8.  이미지 파일에서 그림을 드래그 하 여 리소스 파일에 추가할 **솔루션 탐색기** 리소스 창으로 합니다.
+8. 이미지 파일에서 그림을 드래그 하 여 리소스 파일에 추가할 **솔루션 탐색기** 리소스 창으로 합니다.
 
 9. 파일 메뉴를 열고 프로젝트 속성을 저장할 옵션을 클릭합니다.
 

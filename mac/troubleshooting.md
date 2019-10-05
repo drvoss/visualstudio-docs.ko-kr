@@ -2,16 +2,16 @@
 title: 문제 해결
 description: Mac용 Visual Studio 사용자를 위한 일반적인 문제 및 해결
 ms.topic: troubleshooting
-author: conceptdev
-ms.author: crdun
-ms.date: 05/06/2018
+author: therealjohn
+ms.author: johmil
+ms.date: 06/18/2019
 ms.assetid: CE860D79-E29E-4B93-B094-BE74B35FC1C2
-ms.openlocfilehash: 3a5ea59e6f98891cd113ccad9a74038ca52cccf8
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: b0f10e1f70349126ab48c41efc40f982212836f1
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294645"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691894"
 ---
 # <a name="troubleshooting"></a>문제 해결
 

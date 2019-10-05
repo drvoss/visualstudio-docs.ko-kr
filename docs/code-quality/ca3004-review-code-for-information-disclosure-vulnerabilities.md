@@ -1,0 +1,131 @@
+---
+title: 'CA3004: 코드에서 정보 공개 취약성에 대해 검토합니다.'
+ms.date: 04/03/2019
+ms.topic: reference
+author: dotpaul
+ms.author: paulming
+manager: jillfra
+dev_langs:
+- CSharp
+- VB
+ms.workload:
+- multiple
+ms.openlocfilehash: 4965c9df3c2256511b8e44de8d388a9155d0d8f9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237372"
+---
+# <a name="ca3004-review-code-for-information-disclosure-vulnerabilities"></a>CA3004: 코드에서 정보 공개 취약성에 대해 검토합니다.
+
+|||
+|-|-|
+|TypeName|ReviewCodeForInformationDisclosureVulnerabilities|
+|CheckId|CA3004|
+|범주|Microsoft.Security|
+|주요 변경 내용|최신이 아님|
+
+## <a name="cause"></a>원인
+
+예외의 메시지, 스택 추적 또는 문자열 표현은 웹 출력에 도달 합니다.
+
+## <a name="rule-description"></a>규칙 설명
+
+예외 정보를 공개 하면 공격자가 응용 프로그램의 내부 정보를 파악할 수 있으므로 공격자가 다른 취약점을 악용할 수 있습니다.
+
+이 규칙은 HTTP 응답에 대 한 출력에서 예외 메시지, 스택 추적 또는 문자열 표현을 찾으려고 시도 합니다.
+
+> [!NOTE]
+> 이 규칙은 어셈블리 간에 데이터를 추적할 수 없습니다. 예를 들어 한 어셈블리에서 예외를 catch 한 다음 예외를 출력 하는 다른 어셈블리에이를 전달 하는 경우이 규칙은 경고를 생성 하지 않습니다.
+
+> [!NOTE]
+> 이 규칙에서 메서드 호출을 통해 데이터 흐름을 분석 하는 데 구성 가능한 제한이 있습니다. EditorConfig 파일에서 제한을 구성 하는 방법에 대 한 [Analyzer 구성](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) 을 참조 하세요.
+
+## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
+
+예외 정보를 HTTP 응답에 출력 하지 않습니다. 대신 일반 오류 메시지를 제공 합니다. 자세한 지침은 [OWASP의 오류 처리 페이지](https://www.owasp.org/index.php/Error_Handling) 를 참조 하세요.
+
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
+
+웹 출력이 응용 프로그램의 트러스트 경계 내에 있고 외부에 노출 되지 않는 경우이 경고를 표시 하지 않을 수 있습니다. 이는 드물게 발생 합니다. 응용 프로그램의 트러스트 경계 및 데이터 흐름이 시간이 지남에 따라 변경 될 수 있다는 점을 고려해 야 합니다.
+
+## <a name="pseudo-code-examples"></a>의사 코드 예제
+
+### <a name="violation"></a>위반
+
+```csharp
+using System;
+
+public partial class WebForm : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs eventArgs)
+    {
+        try
+        {
+            object o = null;
+            o.ToString();
+        }
+        catch (Exception e)
+        {
+            this.Response.Write(e.ToString());
+        }
+    }
+}
+```
+
+```vb
+Imports System
+
+Partial Public Class WebForm
+    Inherits System.Web.UI.Page
+
+    Protected Sub Page_Load(sender As Object, eventArgs As EventArgs)
+        Try
+            Dim o As Object = Nothing
+            o.ToString()
+        Catch e As Exception
+            Me.Response.Write(e.ToString())
+        End Try
+    End Sub
+End Class
+```
+
+### <a name="solution"></a>솔루션
+
+```csharp
+using System;
+
+public partial class WebForm : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs eventArgs)
+    {
+        try
+        {
+            object o = null;
+            o.ToString();
+        }
+        catch (Exception e)
+        {
+            this.Response.Write("An error occurred. Please try again later.");
+        }
+    }
+}
+```
+
+```vb
+Imports System
+
+Partial Public Class WebForm
+    Inherits System.Web.UI.Page
+
+    Protected Sub Page_Load(sender As Object, eventArgs As EventArgs)
+        Try
+            Dim o As Object = Nothing
+            o.ToString()
+        Catch e As Exception
+            Me.Response.Write("An error occurred. Please try again later.")
+        End Try
+    End Sub
+End Class
+```

@@ -1,94 +1,58 @@
-### YamlMime:YamlDocument
-ms.openlocfilehash: 693ef554635db44e96f2feaa2bb05e595e8e62a8
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53442016"
-documentType: LandingData
-title: Visual Studio | Python
+### YamlMime:Landing
+title: Visual Studio | Python 설명서
+summary: Visual Studio를 사용하여 Python 앱을 개발하는 방법에 대한 자습서 및 문서를 제공합니다.
 metadata:
   title: Visual Studio를 사용한 Python 개발
-  titleSuffix: ''
-  meta.description: Tutorials and conceptual articles about developing Python apps with Visual Studio.
-  author: kraigb
-  manager: douge
-  ms.prod: visual-studio-dev15
+  description: Visual Studio를 사용하여 Python 앱을 개발하는 방법에 대한 자습서 및 문서를 제공합니다.
+  ms.prod: visual-studio-windows
   ms.technology: vs-python
   ms.topic: landing-page
-  ms.date: 12/14/2018
-  ms.author: kraigb
-  dev_langs:
-  - Python
-sections:
-- title: Visual Studio 시작
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
-    items:
-    - href: ../../install/install-visual-studio.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_setup.svg
-      title: Visual Studio 설치
-    - href: visual-studio-ide.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_visual-studio.svg
-      title: Visual Studio IDE 둘러보기
-- title: Python 자습서
-  items:
-  - type: paragraph
-    text: Visual Studio에서 Python 시작
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
-    items:
-    - href: tutorial-working-with-python-in-visual-studio-step-00-installation.md
-      html: <p>Python용 Visual Studio 경험하기</p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_python.svg
-    - href: learn-django-in-visual-studio-step-01-project-and-solution.md
-      html: <p>Django 프레임워크를 사용하여 웹앱 만들기</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_web-color.svg
-    - href: learn-flask-visual-studio-step-01-project-solution.md
-      html: <p>Flask 프레임워크를 사용하여 웹앱 만들기</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_web-color.svg
-- title: 애플리케이션 개발
-  items:
-  - type: paragraph
-    text: Visual Studio를 사용하여 Python으로 애플리케이션을 개발하는 방법에 대한 자습서
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
-    items:
-    - href: editing-python-code-in-visual-studio.md
-      html: <p>코드 작성 및 편집</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_code-edit.svg
-    - href: python-interactive-repl-in-visual-studio.md
-      html: <p>대화형 REPL 사용</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_cligeneric.svg
-    - href: managing-python-environments-in-visual-studio.md
-      html: <p>Python 환경 관리</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_package.svg
-    - href: debugging-python-in-visual-studio.md
-      html: <p>코드 디버그</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_debug.svg
-    - href: working-with-c-cpp-in-visual-studio.md
-      html: <p>Python용 C/C++ 확장 작성</p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_Cplusplus.svg
-    - href: unit-testing-python-in-visual-studio.md
-      html: <p>단위 테스트 작성 및 실행</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_unit-testing.svg
+  ms.collection: collection
+  author: JoshuaPartlow
+  ms.author: joshuapa
+  ms.date: 09/23/2019
+  ms.openlocfilehash: e85bdedfc91c949213528718d147a7f1890964ce
+  ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
+  ms.translationtype: HT
+  ms.contentlocale: ko-KR
+  ms.lasthandoff: 09/27/2019
+  ms.locfileid: "71322481"
+landingContent:
+- title: Visual Studio의 Python 지원 정보
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Python 지원 개요
+      url: overview-of-python-tools-for-visual-studio.md
+    - text: Visual Studio IDE 둘러보기
+      url: visual-studio-ide.md
+- title: Python 시작
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Visual Studio에서 Python 지원 설치
+      url: installing-python-support-in-visual-studio.md
+    - text: 코드 작성 및 편집
+      url: editing-python-code-in-visual-studio.md
+    - text: 코드 디버그
+      url: debugging-python-in-visual-studio.md
+    - text: 테스트 작성 및 실행
+      url: unit-testing-python-in-visual-studio.md
+    - text: 대화형 REPL 사용
+      url: python-interactive-repl-in-visual-studio.md
+    - text: Python 환경 관리
+      url: managing-python-environments-in-visual-studio.md
+    - text: Python용 C/C++ 확장 작성
+      url: working-with-c-cpp-python-in-visual-studio.md
+  - linkListType: tutorial
+    links:
+    - text: Visual Studio에서 Python 작업
+      url: tutorial-working-with-python-in-visual-studio-step-00-installation.md
+- title: 웹 개발 시작
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Django 프레임워크를 사용하여 웹앱 만들기
+      url: learn-django-in-visual-studio-step-01-project-and-solution.md
+    - text: Flask 프레임워크를 사용하여 웹앱 만들기
+      url: learn-flask-visual-studio-step-01-project-solution.md

@@ -2,7 +2,6 @@
 title: IScriptNode::GetLanguage | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10bab879574f378a1000c398a8f566eea7dd9b4b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 36b7076bf7f261e462802174c6f9014403606ac8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786960"
 ---
 # <a name="iscriptnodegetlanguage"></a>IScriptNode::GetLanguage
-현재 스크립트 노드에서 사용 하는 스크립트 언어를 반환 합니다.  
+현재 스크립트 노드에 의해 사용 되는 스크립트 언어를 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetLanguage(  
    BSTR               *pbstr  
 );  
@@ -38,7 +37,7 @@ HRESULT GetLanguage(
   
 #### <a name="parameters"></a>매개 변수  
  `pbstr`  
- [out] 스크립트 노드 사용 하는 경우 "VBScript" 또는 JScript 스크립트 노드 Visual Basic Scripting Edition (VBScript)를 사용 하는 경우 "JScript"를 반환 합니다.  
+ [out] 스크립트 노드를 사용 하는 경우 JScript 또는 "VBScript" 스크립트 노드 Visual Basic Scripting Edition (VBScript)를 사용 하는 경우 "JScript"를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
  `HRESULT`입니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  

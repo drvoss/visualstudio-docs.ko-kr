@@ -1,25 +1,20 @@
 ---
 title: 디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: eb36ad055f126ce034fbb7323877b65aa8e3105c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 806eeba9b3dfee8dc45c90f0a6d2f99ed0772ec7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722248"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191646"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,23 +22,23 @@ ms.locfileid: "51722248"
 Visual Studio에서는 이제 성능 도구를 선택할 수 있습니다. 그 중 일부(예: **CPU 사용** 및 **메모리 사용**)는 디버거를 사용하거나 사용하지 않고 실행될 수 있습니다. 디버거가 없는 성능 도구는 릴리스 구성에서 실행될 수 있으며, 디버거 통합 도구는 디버그 구성에서 실행될 수 있습니다.  
   
 ## <a name="should-i-run-the-tool-with-or-without-the-debugger"></a>디버거를 사용하여 도구를 실행할지 여부 선택  
- 디버거 통합 성능 도구에서는 디버거가 없는 도구로 수행할 수 없는 중단점 설정, 변수 값 검사 등의 많은 작업을 수행할 수 있습니다. 디버거가 없는 도구는 릴리스된 응용 프로그램의 사용자가 볼 수 있는 것에 가까운 환경을 제공합니다.  
+ 디버거 통합 성능 도구에서는 디버거가 없는 도구로 수행할 수 없는 중단점 설정, 변수 값 검사 등의 많은 작업을 수행할 수 있습니다. 디버거가 없는 도구는 릴리스된 애플리케이션의 사용자가 볼 수 있는 것에 가까운 환경을 제공합니다.  
   
  목적에 적합한 도구의 종류를 결정하는 데 도움이 될 수 있는 몇 가지 질문은 다음과 같습니다.  
   
-1.  응용 프로그램이 개발되는 동안 문제가 발견되었나요? 아니면 릴리스 버전에서 문제가 발견되었나요?  
+1. 애플리케이션이 개발되는 동안 문제가 발견되었나요? 아니면 릴리스 버전에서 문제가 발견되었나요?  
   
      처리하고 있는 문제가 개발 중에 발견된 경우 릴리스 빌드에서 성능 도구를 실행할 필요가 없을 수도 있습니다. 문제가 릴리스 버전에서 발견된 경우 릴리스 구성에서 문제를 재현한 다음 디버거가 추가 조사에 도움이 될지 여부를 결정해야 합니다.  
   
-2.  문제가 CPU를 많이 사용하는 처리 때문에 발생하나요?  
+2. 문제가 CPU를 많이 사용하는 처리 때문에 발생하나요?  
   
      많은 문제의 원인이 파일 I/O 또는 네트워크 응답 성능과 같은 외부 성능 문제이므로 디버거를 사용하거나 사용하지 않고 성능 도구를 실행하는지 여부는 큰 차이를 발생시키지 않습니다. 문제의 원인이 CPU를 많이 사용하는 호출인 경우 릴리스 구성과 디버그 구성 간의 차이는 상당할 수 있으며 디버거 통합 도구를 사용하기 전에 릴리스 빌드에 문제가 있는지 확인해야 할 수 있습니다.  
   
-3.  성능을 정확히 측정해야 하나요, 아니면 대략적인 수치라도 괜찮은가요?  
+3. 성능을 정확히 측정해야 하나요, 아니면 대략적인 수치라도 괜찮은가요?  
   
      디버그 빌드에는 릴리스 빌드에서 제공하는 함수 호출 및 상수 인라인 처리, 사용되지 않는 코드 경로 정리 및 디버거가 사용할 수 없는 방식으로 변수 저장과 같은 특정 최적화가 없습니다. 디버거 자체가 디버깅에 필요한 특정 작업(예: 예외 및 모듈 로드 이벤트 가로채기)을 수행하기 때문에 성능 시간을 변경합니다. 따라서 디버거 통합 도구의 성능 수치는 수십 밀리초 범위까지만 정확합니다. 디버거가 없는 도구를 사용한 릴리스 구성의 성능 수치는 훨씬 더 정확합니다.  
   
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> 디버깅하는 동안 프로파일링 데이터 수집  
+## <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> 디버깅하는 동안 프로파일링 데이터 수집  
  다음 섹션에서는 로컬 디버그에 대해 설명합니다. 디바이스에서의 디버그 또는 원격 디버그에 대해서는 뒤의 섹션에서 확인할 수 있습니다.  
   
 1. 디버그할 프로젝트를 연 다음 **디버그 / 디버깅 시작** 을 클릭합니다(또는 도구 모음에서 **시작** 을 클릭하거나 **F5**사용).  
@@ -79,7 +74,7 @@ Visual Studio에서는 이제 성능 도구를 선택할 수 있습니다. 그 �
   
 1. Visual Studio에서 프로젝트를 엽니다.  
   
-2. **디버그** 메뉴에서 **성능 프로파일러...** 를 선택합니다(바로 가기 키: Alt+F2).  
+2. **디버그** 메뉴에서 **성능 프로파일러...** 를 (바로 가기 키: Alt+f2)입니다.  
   
 3. 진단 시작 페이지에서, 세션에서 실행할 하나 이상의 도구를 선택합니다. 프로젝트 형식, 운영 체제 및 프로그래밍 언어에 적용되는 도구만 표시됩니다. 진단 도구를 선택하면 같은 진단 세션에서 실행할 수 없는 도구 선택을 사용할 수 없게 설정됩니다. C# Windows 유니버설 앱의 경우 선택 항목이 다음과 같이 표시될 수 있습니다.  
   
@@ -140,11 +135,8 @@ Visual Studio에서는 이제 성능 도구를 선택할 수 있습니다. 그 �
   
  [비디오: Visual Studio 2015를 사용하여 성능 문제 디버그](https://channel9.msdn.com/Events/Build/2015/3-731)  
   
- [성능 팁: Visual Studio를 사용하여 디버그하는 동안 성능 정보 요약](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
+ [PerfTips: Visual Studio에서 디버깅 중에 성능 정보 한눈에 확인](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
   
  [Visual Studio 2015의 진단 도구 디버거 창](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
   
  [Visual Studio Enterprise 2015의 IntelliTrace](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/intellitrace-in-visual-studio-ultimate-2015.aspx)
-
-
-

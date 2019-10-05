@@ -1,14 +1,9 @@
 ---
 title: 클래스 뷰 및 개체 브라우저 아이콘 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - icons, in Object Browser
 - signal icons
@@ -22,18 +17,18 @@ ms.assetid: 58cc3f44-c296-4a88-a008-09d28598d9c0
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: af7ce3ee9b97996f92ac9ca8537c583b063a3445
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ef14396e681f77eca469f40b2253c8a64296423d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279742"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422834"
 ---
 # <a name="class-view-and-object-browser-icons"></a>클래스 뷰 및 개체 브라우저 아이콘
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-클래스 보기 * * 및 **개체 브라우저** 예를 들어 코드 엔터티를 나타내는 아이콘, 네임 스페이스, 클래스, 함수 및 변수를 표시 합니다. 다음 표에서는 아이콘에 대해 설명합니다.  
+클래스 뷰** 및 **개체 브라우저**는 코드 엔터티(예: 네임스페이스, 클래스, 함수 및 변수)를 나타내는 아이콘을 표시합니다. 다음 표에서는 아이콘에 대해 설명합니다.  
   
 |아이콘|설명|아이콘|설명|  
 |----------|-----------------|----------|-----------------|  
@@ -41,11 +36,11 @@ ms.locfileid: "49279742"
 |![클래스 아이콘](../ide/media/vxclass-icon.gif "vxClass_Icon")|클래스|![연산자 기호](../ide/media/vxoperator-icon.gif "vxOperator_Icon")|연산자|  
 |![롤리팝 인터페이스 기호](../ide/media/vxinterface-icon.gif "vxInterface_Icon")|인터페이스|![속성 기호](../ide/media/vxproperty-icon.gif "vxProperty_Icon")|속성|  
 |![구조체 기호](../ide/media/vxstruct-icon.gif "vxStruct_Icon")|구조체|![필드 아이콘](../ide/media/vxfield-icon.gif "vxField_Icon")|필드 또는 변수|  
-|![공용 구조체 기호](../ide/media/vxunion-icon.gif "vxUnion_Icon")|공용 구조체|![이벤트 기호](../ide/media/vxevent-icon.gif "vxEvent_Icon")|이벤트(event)|  
+|![공용 구조체 기호](../ide/media/vxunion-icon.gif "vxUnion_Icon")|Union|![이벤트 기호](../ide/media/vxevent-icon.gif "vxEvent_Icon")|이벤트(event)|  
 |![열거형 기호](../ide/media/vxenum-icon.gif "vxEnum_Icon")|Enum|![상수 아이콘](../ide/media/vxconstant-icon.gif "vxConstant_Icon")|상수|  
 |![형식 정의 기호](../ide/media/vxtypedef-icon.gif "vxTypeDef_Icon")|TypeDef|![항목 열거 기호](../ide/media/vxenumitem-icon.gif "vxEnumItem_Icon")|항목 열거|  
 |![Visual Studio 모듈 기호](../ide/media/vxmodule-icon.gif "vxModule_Icon")|Module|![맵 항목 기호](../ide/media/vxmapitem-icon.gif "vxMapItem_Icon")|맵 항목|  
-|![확장명 메서드 기호](../ide/media/extensionmethod.gif "ExtensionMethod")|확장명 메서드|![선언 기호](../ide/media/vxmethod-icon.gif "vxMethod_Icon")|외부 선언|  
+|![확장명 메서드 기호](../ide/media/extensionmethod.gif "ExtensionMethod")|확장 메서드|![선언 기호](../ide/media/vxmethod-icon.gif "vxMethod_Icon")|외부 선언|  
 |![대리자 기호](../ide/media/vxdelegate-icon.gif "vxDelegate_Icon")|대리자|![클래스 뷰 및 개체 브라우저의 오류 아이콘](../ide/media/erroricon.gif "ErrorIcon")|Error|  
 |![예외 기호](../ide/media/vxexception-icon.gif "vxException_Icon")|예외|![템플릿 기호](../ide/media/vxtemplate-icon.gif "vxTemplate_Icon")|템플릿|  
 |![맵 기호](../ide/media/vxmap-icon.gif "vxMap_Icon")|맵|![오류 느낌표 기호](../ide/media/vxerror-icon.gif "vxError_Icon")|알 수 없음|  
@@ -55,7 +50,7 @@ ms.locfileid: "49279742"
  다음 신호 아이콘은 이전의 모든 아이콘에 적용되며 액세스 가능성을 나타냅니다.  
   
 > [!NOTE]
->  프로젝트가 소스 제어 데이터베이스에 포함되어 있는 경우, 추가 신호 아이콘이 표시되어 체크 인 또는 체크 아웃과 같은 소스 제어 상태를 나타낼 수 있습니다.  
+> 프로젝트가 소스 제어 데이터베이스에 포함되어 있는 경우, 추가 신호 아이콘이 표시되어 체크 인 또는 체크 아웃과 같은 소스 제어 상태를 나타낼 수 있습니다.  
   
 |아이콘|설명|  
 |----------|-----------------|  
@@ -68,6 +63,3 @@ ms.locfileid: "49279742"
   
 ## <a name="see-also"></a>참고 항목  
  [코드 구조 보기](../ide/viewing-the-structure-of-code.md)
-
-
-

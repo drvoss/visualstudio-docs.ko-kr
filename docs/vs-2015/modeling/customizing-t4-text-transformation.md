@@ -1,12 +1,9 @@
 ---
 title: T4 텍스트 변환 사용자 지정 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, API
 - text templates, custom hosts
@@ -14,15 +11,15 @@ ms.assetid: 62cd9a3c-a6e1-4b29-93f5-f2a0cf47dc92
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: dc44c1de2e0a590b73916a8496a7fe5cae7cb07e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ea2881cfebaf10d7a72e8651214cf3a6f64debae
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164668"
 ---
-# <a name="customizing-t4-text-transformation"></a>T4 텍스트 변형 사용자 지정
+# <a name="customizing-t4-text-transformation"></a>T4 텍스트 변환 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 텍스트 템플릿은의 기능 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로그램 코드 또는 변환 프로세스를 통해 기타 텍스트 파일을 생성할 수 있도록 합니다. 사용 하 여 [!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)], 텍스트 템플릿 지시문 프로세서 또는 텍스트 템플릿 호스트를 사용자 지정 하 여 기본 템플릿 변형 프로세스를 확장할 수 있습니다.  
@@ -46,6 +43,3 @@ ms.locfileid: "49200241"
  [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)  
   
  텍스트 템플릿 지시문 및 제어 블록의 구문을 제공합니다.
-
-
-

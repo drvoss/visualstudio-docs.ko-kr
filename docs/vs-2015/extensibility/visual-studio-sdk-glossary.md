@@ -1,26 +1,21 @@
 ---
 title: Visual Studio SDK 용어집 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - glossary [Visual Studio SDK]
 ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0ec2300e8bf700deacd50a4a980e02aa4b903bae
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8c189c4c9e06d224d7cef296a2c39e732cbc29f6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62538717"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Visual Studio SDK 용어집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -191,4 +186,3 @@ ms.locfileid: "51758946"
   
   VSPackage  
   다음 중 하나 이상을 제공 하 여 Visual Studio IDE를 확장 하는 소프트웨어를 설치할 수 있는 부분: 사용자 인터페이스, 서비스, 프로젝트 형식 또는 편집기/디자이너입니다. VSPackage를 구현 하는 COM 개체로 구성 됩니다는 `IVsPackage` 인터페이스 및 하나 이상의 다른 COM 개체 선택 및 기타 기능을 지원 하기 위해 다른 인터페이스를 구현 합니다. 또한 VSPackage 특정 등록 요구 사항이 있습니다.
-

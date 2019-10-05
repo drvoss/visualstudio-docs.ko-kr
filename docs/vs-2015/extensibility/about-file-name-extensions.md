@@ -1,27 +1,22 @@
 ---
 title: 파일 이름 확장명에 대 한 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - file extensions
 - file name extensions
 ms.assetid: 99f4f9ff-fb84-4258-9787-6890f308a57f
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 680f9e9f79430ea53da3566686b058c44894e494
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 866a30279ca2c79f4a490a040f76bc3a86c6a6e1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776085"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148028"
 ---
 # <a name="about-file-name-extensions"></a>파일 확장명 정보
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,6 @@ HKEY_CLASSES_ROOT\
   
  특정 경우에는 파일 확장명과 연결 된 ProgID는 변경 되어야 합니다. 예를 들어,.htm 파일 확장명에 대 한 ProgID (progid htmlfile =).htm 및.html 파일을 사용 하 여 널리 알려진 및에서 사용 되는 연결 이며 여러 운영 체제에서 위치에에서 하드 코드 됩니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [Side-by-side-배포에 대 한 파일 이름 확장명 등록](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)   
  [파일 이름 확장명에 대한 파일 처리기 지정](../extensibility/specifying-file-handlers-for-file-name-extensions.md)
-

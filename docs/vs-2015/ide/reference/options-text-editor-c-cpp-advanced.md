@@ -1,14 +1,9 @@
 ---
-title: 옵션, 텍스트 편집기, C / c + +, 고급 | Microsoft Docs
-ms.custom: ''
+title: 옵션, 텍스트 편집기, C-C++, 고급 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C\C++.Advanced
 - VS.ToolsOptionsPages.Text_Editor.C%2FC%2B%2B.Advanced
@@ -19,24 +14,23 @@ ms.assetid: 67c82ae5-fddd-49df-baec-8e7498b156f3
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: aafa46e62af6eadb56d8cf53cb2190bc7403358b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: a17931b9d7ccb8ef60158d6ea6d22e8b2f27b031
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285703"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697170"
 ---
 # <a name="options-text-editor-cc-advanced"></a>옵션, 텍스트 편집기, C/C++, 고급
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 이러한 옵션을 변경하면 C 또는 C++에서 프로그래밍할 때 IntelliSense 및 검색 데이터베이스 관련 동작을 변경할 수 있습니다.  
   
  이 페이지에 액세스하려면 왼쪽 창의 **옵션** 대화 상자에서 **텍스트 편집기**를 확장하고 **C/C++** 를 확장한 다음 **고급**을 선택합니다.  
   
 > [!NOTE]
->  일부 Visual Studio 사용자 인터페이스 요소의 경우 다음 지침에 설명된 것과 다른 이름 또는 위치가 시스템에 표시될 수 있습니다. 이러한 요소는 사용하는 Visual Studio 버전 및 설정에 따라 결정됩니다. [Visual Studio에서 개발 설정 사용자 지정](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
+> 일부 Visual Studio 사용자 인터페이스 요소의 경우 다음 지침에 설명된 것과 다른 이름 또는 위치가 시스템에 표시될 수 있습니다. 이러한 요소는 사용하는 Visual Studio 버전 및 설정에 따라 결정됩니다. [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
   
 ## <a name="browsingnavigation"></a>검색/탐색  
  솔루션이 커서 데이터베이스 작업이 시스템 리소스를 너무 많이 사용하는 드문 경우를 제외하고는 이러한 옵션을 선택하면 안 됩니다.  
@@ -79,19 +73,19 @@ ms.locfileid: "49285703"
   
  다음 옵션의 합계를 사용하여 설정됩니다.  
   
--   0 - 없음  
+- 0 - 없음  
   
--   1 - 일반  
+- 1 - 일반  
   
--   2 - 유휴 상태  
+- 2 - 유휴 상태  
   
--   4 - 작업 항목  
+- 4 - 작업 항목  
   
--   8 - IntelliSense  
+- 8 - IntelliSense  
   
--   16 - ACPerf  
+- 16 - ACPerf  
   
--   32 - ClassView  
+- 32 - ClassView  
   
 ## <a name="fallback-location"></a>대체(fallback) 위치  
  대체(fallback) 위치는 기본 위치(솔루션과 동일한 디렉터리)가 사용되지 않는 경우 SDF 및 IntelliSense 지원 파일(예: iPCH)이 배치되는 위치입니다. 사용자에게 솔루션 디렉터리에 쓸 수 있는 권한이 없거나 솔루션 디렉터리가 느린 디바이스에 있는 경우 이러한 상황이 발생할 수 있습니다. 기본 대체(fallback) 위치는 사용자의 임시 디렉터리에 있습니다.  
@@ -130,7 +124,7 @@ ms.locfileid: "49285703"
  **캐시되는 최대 변환 단위**  
  IntelliSense 요청 시 활성으로 유지되는 최대 변환 단위 수입니다. 2에서 15 사이의 값을 지정해야 합니다. 이 숫자는 지정된 Visual Studio 인스턴스에 대해 실행할 VCPkgSrv.exe 프로세스의 최대 개수와 직접적인 관련이 있습니다. 기본값은 2지만, 사용 가능한 메모리가 있는 경우 이 값을 늘려 IntelliSense 성능을 좀 더 개선할 수 있습니다.  
   
- 변환 단위에 대한 자세한 내용은 [변환 단계](http://msdn.microsoft.com/library/a7f7a8c9-e8ba-4321-9e50-ebfbbdcce9db)를 참조하세요.  
+ 변환 단위에 대한 자세한 내용은 [변환 단계](https://msdn.microsoft.com/library/a7f7a8c9-e8ba-4321-9e50-ebfbbdcce9db)를 참조하세요.  
   
  **적극적 멤버 목록 사용 안 함**  
  형식 또는 변수의 이름을 입력하는 동안 멤버 목록이 나타나지 않습니다. **멤버 목록 커밋 문자** 옵션에 정의된 커밋 문자 중 하나를 입력한 후에만 목록이 나타납니다.  
@@ -164,6 +158,3 @@ ms.locfileid: "49285703"
   
 ## <a name="see-also"></a>참고 항목  
  [언어별 편집기 옵션 설정](../../ide/reference/setting-language-specific-editor-options.md)
-
-
-

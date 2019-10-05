@@ -1,14 +1,9 @@
 ---
 title: DebuggerDisplay 특성 사용 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: f4eb7c76-af4e-493b-9ab6-9cb05949d9b3
 caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9637bd2d2a057615fd758ecec80a914931822b64
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: aba6feb17a4e7bd4cabfe40bd45480a0f7a9f552
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736878"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683932"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>DebuggerDisplay 특성 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ ms.locfileid: "51736878"
  디버거가 이 암시적 `ToString()` 호출을 평가할지 여부는 **도구/옵션/디버깅** 대화 상자의 사용자 설정에 따라 결정됩니다. Visual Basic에서는 이 암시적 `ToString()` 평가를  구현하지 않습니다.  
   
 > [!IMPORTANT]
->  **변수 창에서 개체의 원시 구조체 표시** 확인란이 **도구/옵션/디버깅** 대화 상자에서 선택되어 있는 경우 `DebuggerDisplay` 특성이 무시됩니다.  
+> **변수 창에서 개체의 원시 구조체 표시** 확인란이 **도구/옵션/디버깅** 대화 상자에서 선택되어 있는 경우 `DebuggerDisplay` 특성이 무시됩니다.  
   
  다음 표에서는 `DebuggerDisplay` 특성의 사용 예와 예제 출력을 보여 줍니다.  
   
@@ -80,7 +75,7 @@ csc /t:library autoexp.cs
   
 - 식은 식을 작성한 언어의 식 계산기가 아닌 현재 스택 프레임 언어의 식 계산기에 의해 계산됩니다. 언어가 서로 다를 경우 이로 인해 예기치 않은 결과가 발생할 수 있습니다.  
   
-- 식을 계산하면 응용 프로그램의 상태가 변경될 수 있습니다. 예를 들어 속성의 값을 설정하는 식은 실행 코드에서 속성 값을 변경합니다.  
+- 식을 계산하면 애플리케이션의 상태가 변경될 수 있습니다. 예를 들어 속성의 값을 설정하는 식은 실행 코드에서 속성 값을 변경합니다.  
   
   식 계산의 가능한 문제를 줄이는 한 가지 방법은 작업을 수행하고 문자열을 반환하는 private 속성을 만드는 것입니다. 이렇게 하면 DebuggerDisplay 특성이 private 속성 값을 표시할 수 있습니다. 다음 예제에서는 이 패턴을 구현합니다.  
   
@@ -185,7 +180,4 @@ class MyHashtable
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [DebuggerTypeProxy 특성 사용](../debugger/using-debuggertypeproxy-attribute.md) [디버거 표시 특성을 사용 하 여 디버깅 향상](http://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
-
-
-
+ [DebuggerTypeProxy 특성 사용](../debugger/using-debuggertypeproxy-attribute.md) [디버거 표시 특성을 사용 하 여 디버깅 향상](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)

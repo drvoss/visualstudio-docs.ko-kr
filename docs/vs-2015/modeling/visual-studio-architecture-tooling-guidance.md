@@ -1,23 +1,20 @@
 ---
 title: Visual Studio 아키텍처 도구 가이드 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: fce6b398-935e-4241-bdf4-875d09ff57c7
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: feca9ea9ae09bc41082392d5e47a474408d1c901
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d23afb98b1818f4f7320041f202857e61873975a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765909"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200551"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Visual Studio 아키텍처 도구 사용 지침
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,6 +24,3 @@ ms.locfileid: "51765909"
  콘텐츠 만들어졌거나를 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ALM Rangers에서 특수 그룹의 멤버가 있는 합니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 제품 팀, Microsoft 서비스, Microsoft Valued Professionals (Mvp) 및 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 커뮤니티 잠재 고객.  
   
  [아키텍처 도구 가이드를 다운로드 하려면 여기를 클릭 합니다. ](http://go.microsoft.com/fwlink/?LinkID=191984).
-
-
-

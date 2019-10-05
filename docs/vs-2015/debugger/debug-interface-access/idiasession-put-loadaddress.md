@@ -1,14 +1,9 @@
 ---
 title: 'Idiasession:: Put_loadaddress | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: b157b245-1ea0-4b80-8962-d8b278dbc742
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: daf1e7748a95ae0ad2d7fce3592e0a6948077f45
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f697384874726904960fc5ba04733c3acfe1cd06
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438462"
 ---
 # <a name="idiasessionputloadaddress"></a>IDiaSession::put_loadAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,10 +41,7 @@ HRESULT put_loadAddress ( 
  기호 가상 주소 (VA) 속성 값이 메서드를 사용 하 여 계산 됩니다. 가상 주소에는이 속성이 설정 되지 않았으면 0이 아닌 계산 되지 않습니다.  
   
 > [!NOTE]
->  가져올 때이 메서드를 호출 해야 합니다 [IDiaSession](../../debugger/debug-interface-access/idiasession.md) 개체 및 기호에서 모든 가상 속성을 사용 하는 경우 개체를 사용 하 여을 시작 하기 전에 합니다.  
+> 가져올 때이 메서드를 호출 해야 합니다 [IDiaSession](../../debugger/debug-interface-access/idiasession.md) 개체 및 기호에서 모든 가상 속성을 사용 하는 경우 개체를 사용 하 여을 시작 하기 전에 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
-
-
-

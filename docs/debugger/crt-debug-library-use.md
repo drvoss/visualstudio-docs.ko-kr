@@ -1,8 +1,6 @@
 ---
 title: CRT 디버그 라이브러리 사용 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - c.debug.runtime
@@ -27,28 +25,29 @@ helpviewer_keywords:
 ms.assetid: 464de16b-4215-4787-9bfa-921aaff9d9f4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e550a5fa705f3c85b3464046cd3c92d96bc47ca
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9434be46f357a97ad01f10ceec184ebe6c52eb43
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467958"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565549"
 ---
 # <a name="crt-debug-library-use"></a>CRT 디버그 라이브러리 사용
-C 런타임 라이브러리는 디버깅을 폭넓게 지원합니다. 와 연결 해야 CRT 디버그 라이브러리 중 하나를 사용 하려면 [/debug](/cpp/build/reference/debug-generate-debug-info) 컴파일하여 **/MDd**, **/MTd**, 또는 **/LDd**합니다.  
-  
-## <a name="remarks"></a>설명  
- CRT 디버깅의 주요 정의와 매크로는 CRTDBG.h 헤더 파일에 포함되어 있습니다.  
-  
- CRT 디버그 라이브러리의 함수는 디버그 정보로 컴파일한 ([/Z7, /Zd, /Zi, /ZI (디버깅 정보 형식)](/cpp/build/reference/z7-zi-zi-debug-information-format)) 최적화 없이 합니다. 일부 함수는 함수에 전달된 매개 변수를 확인하기 위해 어설션을 사용하며 소스 코드를 제공합니다. 이 소스 코드를 사용하면 CRT 함수를 단계적으로 실행하여 원하는 대로 함수가 작동하고 있는지 확인하고 잘못된 매개 변수나 메모리 상태를 검사할 수 있습니다. 일부 CRT 기술은 독점되어 있어서 예외 처리, 부동 소수점 및 다른 몇 가지 루틴에 대한 소스 코드를 제공하지 않습니다.  
-  
- Visual C++를 설치할 때 하드 디스크에 C 런타임 라이브러리 소스 코드를 설치할지 선택할 수 있습니다. 소스 코드를 설치하지 않으면 CD-ROM을 사용하여 CRT 함수를 단계적으로 실행해야 합니다.  
-  
- 사용할 수는 다양 한 런타임 라이브러리에 대 한 자세한 내용은 참조 하십시오. [C 런타임 라이브러리](/cpp/c-runtime-library/crt-library-features)합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [CRT 디버깅 기술](../debugger/crt-debugging-techniques.md)   
- [/MD, /MT, /LD(런타임 라이브러리 사용)](/cpp/build/reference/md-mt-ld-use-run-time-library)
+C 런타임 라이브러리는 디버깅을 폭넓게 지원합니다. CRT 디버그 라이브러리 중 하나를 사용 하려면 사용 하 여 연결 해야 합니다 [디버그](/cpp/build/reference/debug-generate-debug-info) 컴파일하여 **/MDd**를 **/MTd**, 또는 **/LDd**합니다.
+
+## <a name="remarks"></a>설명
+ CRT 디버깅의 주요 정의와 매크로는 CRTDBG.h 헤더 파일에 포함되어 있습니다.
+
+ CRT 디버그 라이브러리의 함수는 최적화 없이 디버그 정보([/Z7, /Zd, /Zi, /ZI(디버깅 정보 형식)](/cpp/build/reference/z7-zi-zi-debug-information-format))를 사용하여 컴파일됩니다. 일부 함수는 함수에 전달된 매개 변수를 확인하기 위해 어설션을 사용하며 소스 코드를 제공합니다. 이 소스 코드를 사용하면 CRT 함수를 단계적으로 실행하여 원하는 대로 함수가 작동하고 있는지 확인하고 잘못된 매개 변수나 메모리 상태를 검사할 수 있습니다. 일부 CRT 기술은 독점되어 있어서 예외 처리, 부동 소수점 및 다른 몇 가지 루틴에 대한 소스 코드를 제공하지 않습니다.
+
+ Visual C++를 설치할 때 하드 디스크에 C 런타임 라이브러리 소스 코드를 설치할지 선택할 수 있습니다. 소스 코드를 설치하지 않으면 CD-ROM을 사용하여 CRT 함수를 단계적으로 실행해야 합니다.
+
+ 사용할 수 있는 런타임 라이브러리에 대한 자세한 내용은 [C 런타임 라이브러리](/cpp/c-runtime-library/crt-library-features)를 참조하세요.
+
+## <a name="see-also"></a>참고 항목
+
+- [CRT 디버깅 기술](../debugger/crt-debugging-techniques.md)
+- [/MD, /MT, /LD(런타임 라이브러리 사용)](/cpp/build/reference/md-mt-ld-use-run-time-library)

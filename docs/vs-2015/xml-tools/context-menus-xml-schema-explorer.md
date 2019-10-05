@@ -1,36 +1,30 @@
 ---
 title: 상황에 맞는 메뉴 (XML 스키마 탐색기) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 854ea473f2f606b28052b093978253372b4fec59
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d6c14a268ef58dec31f65fe73e176eac8f690d9c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157749"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>상황에 맞는 메뉴(XML 스키마 탐색기)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 다음의 상황에 맞는 메뉴 항목을 사용하여 스키마 관련 검색 및 기타 작업을 수행할 수 있습니다.  
   
 ## <a name="node-type-schema-set"></a>노드 형식: 스키마 집합  
  다음 표에서는 스키마 집합 노드에 사용할 수 있는 옵션에 대해 설명합니다.  
   
-|옵션|설명|  
+|옵션|Description|  
 |------------|-----------------|  
 |**가장 가능성 있는 루트 요소를 보여 줍니다.**|다른 전역 요소에서 참조하지 않는 모든 전역 요소를 찾아서 강조 표시합니다.|  
 |**전역 형식 표시**|스키마 집합에서 모든 전역 형식을 찾아서 강조 표시합니다.|  
@@ -40,7 +34,7 @@ ms.locfileid: "49294623"
 ## <a name="node-type-namespace"></a>노드 형식: 네임스페이스  
  다음 표에서는 네임스페이스 노드에 사용할 수 있는 옵션에 대해 설명합니다.  
   
-|옵션|설명|  
+|옵션|Description|  
 |------------|-----------------|  
 |**모든 인바운드 참조 표시**|선택된 네임스페이스를 가져오는 파일을 찾아서 강조 표시합니다.|  
 |**모든 아웃 바운드 참조 표시**|선택된 네임스페이스의 모든 파일에 대해 다음 항목을 찾아서 강조 표시합니다.<br /><br /> -모든 네임 스페이스에 대 한 참조 없이 import 문에서 `schemaLocation` 특성입니다.<br />-모든 파일에 지정 된 선택 된 것 이외의 네임 스페이스에는 `schemaLocation` 가져오기 특성 및 문을 포함 합니다.|  
@@ -51,7 +45,7 @@ ms.locfileid: "49294623"
 ## <a name="node-type-file"></a>노드 형식: 파일  
  다음 표에서는 파일 노드에 사용할 수 있는 옵션에 대해 설명합니다.  
   
-|옵션|설명|  
+|옵션|Description|  
 |------------|-----------------|  
 |**모든 인바운드 참조 표시**|include 문과 import 문의 `schemaLocation` 특성에서 선택된 파일을 지정하는 모든 파일을 찾아서 강조 표시합니다.|  
 |**모든 아웃 바운드 참조 표시**|다음 항목을 찾아서 강조 표시합니다.<br /><br /> -모든 네임 스페이스의 모든 네임 스페이스 특성에 지정 되지 않은 문을 가져오기는 `schemaLocation` 특성입니다.<br />-모든 파일에 지정 된 된 `schemaLocation` 특성의 모든 import 문과 include 문의 합니다.|  
@@ -63,7 +57,7 @@ ms.locfileid: "49294623"
 ## <a name="all-global-node-types"></a>모든 전역 노드 형식  
  다음 표에서는 모든 전역 노드에 사용할 수 있는 옵션에 대해 설명합니다.  
   
-|옵션|설명|  
+|옵션|Description|  
 |------------|-----------------|  
 |**그래프 뷰로 표시**|그래프 뷰를 엽니다. 선택된 노드가 작업 영역에 없는 경우 해당 노드를 작업 영역에 추가하고 노드를 선택합니다.|  
 |**콘텐츠 모델 뷰로 표시**|콘텐츠 모델 뷰를 엽니다. 선택된 노드가 작업 영역에 없는 경우 해당 노드를 작업 영역에 추가하고 노드를 선택합니다.|  
@@ -73,7 +67,7 @@ ms.locfileid: "49294623"
 ## <a name="node-type-element"></a>노드 형식: 요소  
  요소 노드에 대한 상황에 맞는 메뉴에는 위에서 설명한 전역 노드 옵션 이외에도 다음 옵션이 있습니다.  
   
-|옵션|설명|  
+|옵션|Description|  
 |------------|-----------------|  
 |**형식 정의로 이동**|선택된 요소의 형식 정의를 탐색합니다. 이 옵션은 요소에 사용된 형식이 전역 형식일 경우에 적용됩니다.|  
 |**원래 요소로 이동 합니다.**|요소 참조의 경우 요소의 실제 정의를 탐색합니다.|  
@@ -85,7 +79,7 @@ ms.locfileid: "49294623"
 ## <a name="node-type-global-types"></a>노드 형식: 전역 형식  
  전역 형식 노드에 대한 상황에 맞는 메뉴에는 위에서 설명한 전역 노드 옵션 이외에도 다음 옵션이 있습니다.  
   
-|옵션|설명|  
+|옵션|Description|  
 |------------|-----------------|  
 |**기본 형식 표시**|선택된 형식이 전역 형식에서 파생된 경우 선택된 형식의 기본 형식을 탐색합니다.|  
 |**모든 참조 표시**|선택된 형식에 대한 모든 참조를 찾아서 강조 표시합니다. 여기에는 선택된 형식의 요소 및 특성과 선택된 형식에서 파생된 형식이 포함됩니다.|  
@@ -104,7 +98,7 @@ ms.locfileid: "49294623"
 ## <a name="node-type-attribute-group"></a>노드 형식: 특성 그룹  
  특성 그룹 노드에 대한 상황에 맞는 메뉴에는 위에서 설명한 전역 노드 옵션 이외에도 다음 옵션이 있습니다.  
   
-|옵션|설명|  
+|옵션|Description|  
 |------------|-----------------|  
 |**정의로 이동**|참조의 경우 특성의 실제 정의를 탐색합니다.|  
 |**모든 멤버 표시**|특성 그룹의 모든 멤버를 찾아서 강조 표시합니다.|  
@@ -122,6 +116,3 @@ ms.locfileid: "49294623"
 ## <a name="see-also"></a>참고 항목  
  [XML 스키마 탐색기](../xml-tools/xml-schema-explorer.md)   
  [스키마 집합 검색](../xml-tools/searching-the-schema-set.md)
-
-
-

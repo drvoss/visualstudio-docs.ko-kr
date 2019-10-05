@@ -1,8 +1,6 @@
 ---
 title: '방법: 클래스를 부분 클래스로 분할(클래스 디자이너)'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Class Designer, partial classes
@@ -10,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 6f6b0b30-3996-4569-9200-20482b3adf90
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f5ee6aa016cb75ef9c9822dcd79046680f689fa2
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e1426b1ad9799984f7b14604a1d8b685e9ce8813
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179169"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615406"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>방법: 클래스 디자이너에서 클래스를 부분 클래스로 분할
 
@@ -38,11 +36,11 @@ partial 메서드는 두 가지 종류가 있습니다. C#에서는 선언(decla
 다음 예제에서는 클래스 `Employee`의 정의를 두 개의 선언으로 분할합니다(여기서 각 선언은 서로 다른 프로시저를 정의함). 이 예제에서 두 개의 partial 정의는 하나의 소스 파일에 있거나 두 개의 서로 다른 소스 파일에 있을 수 있습니다.
 
 > [!NOTE]
-> Visual Basic에서는 partial 클래스 정의를 사용하여 Visual Studio 생성 코드와 사용자 작성 코드를 구분합니다. 코드는 별도의 소스 파일로 구분됩니다. 예를 들어, **Windows Form 디자이너**에서는 `Form`과 같은 컨트롤에 대해 partial 클래스를 정의합니다. 이런 컨트롤에서 생성된 코드를 수정해서는 안 됩니다.
+> Visual Basic에서는 부분 클래스 정의를 사용하여 Visual Studio 생성 코드와 사용자 작성 코드를 구분합니다. 코드는 별도의 소스 파일로 구분됩니다. 예를 들어, **Windows Form 디자이너**에서는 `Form`과 같은 컨트롤에 대해 partial 클래스를 정의합니다. 이런 컨트롤에서 생성된 코드를 수정해서는 안 됩니다.
 
 Visual Basic의 부분 형식(Partial Type)에 대한 자세한 내용은 [Partial](/dotnet/visual-basic/language-reference/modifiers/partial)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 클래스 정의를 분할하려면 다음 예제와 같이 `partial` 키워드(Visual Basic의 `Partial`)를 사용합니다.
 

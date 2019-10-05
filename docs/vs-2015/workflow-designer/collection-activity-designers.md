@@ -1,23 +1,20 @@
 ---
 title: 컬렉션 활동 디자이너 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 6a07ed95-8319-44a2-8a1d-b4a89f16d0d9
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: d9324c49cd05d82feab670ee3b0f9d4e261ca24f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1b1cb65a2c1eec8df194136bb5a4bffb358696e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291995"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977282"
 ---
 # <a name="collection-activity-designers"></a>컬렉션 활동 디자이너
 컬렉션 활동 디자이너는 컬렉션을 관리하는 데 사용되는 활동을 만들고 구성하는 데 사용됩니다. 이 단원에 포함되어 있으며 다음 표에 나열된 항목은 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 활동 및 템플릿 디자이너를 사용하는 방법을 설명합니다.  

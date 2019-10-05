@@ -1,14 +1,9 @@
 ---
 title: NameProfile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - NameProfile
 - NameProfileA
@@ -16,13 +11,13 @@ ms.assetid: 1bb05441-c4ff-4323-9fef-f3924fba4430
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7e56788c36e8c77ec134ed24a7636475c54da664
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1c2134c38a3910a5dd1308990b0788002a7ded2d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441906"
 ---
 # <a name="nameprofile"></a>NameProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +76,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 |NAME_ERROR_TEXTTRUNCATED|이름 텍스트가 null 문자를 포함하여 32자를 초과했으므로 잘렸습니다.|  
 |NAME_OK|이름이 등록되었습니다.|  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  하나의 이름만 각 프로세스 또는 스레드에 할당될 수 있습니다. 프로파일링 요소에 이름이 지정된 후 해당 요소의 NameProfile에 대한 후속 호출은 무시됩니다.  
   
  서로 다른 스레드 또는 프로세스에 같은 이름이 지정된 경우 보고서는 해당 이름을 가진 해당 수준에서 모든 요소의 데이터를 포함합니다.  
@@ -89,7 +84,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
  현재 이외의 프로세스 또는 스레드를 지정하는 경우 이름을 지정하기 전에 초기화되었고 실행이 시작되었는지 확인해야 합니다. 그렇지 않으면 NameProfile 메서드가 실패합니다.  
   
 > [!IMPORTANT]
->  CreateProcess() 및 CreateThread() API 함수는 스레드 또는 프로세스가 초기화되기 전에 반환할 수 있습니다.  
+> CreateProcess() 및 CreateThread() API 함수는 스레드 또는 프로세스가 초기화되기 전에 반환할 수 있습니다.  
   
 ## <a name="net-framework-equivalent"></a>.NET Framework의 해당 값  
  Microsoft.VisualStudio.Profiler.dll  
@@ -142,6 +137,3 @@ void ExerciseNameProfile()
   
 ## <a name="see-also"></a>참고 항목  
  [Visual Studio 프로파일러 API 참조(네이티브)](../profiling/visual-studio-profiler-api-reference-native.md)
-
-
-

@@ -1,24 +1,19 @@
 ---
 title: 관리 코드에서 다중 스레드 관리 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 59730063-cc29-4dae-baff-2234ad8d0c8f
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a33b17ddc0eb2d6169761260905b9bf056a4c55e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4e7198623283fa3ef9c82d6a39a1f7c1db6c760c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433047"
 ---
 # <a name="managing-multiple-threads-in-managed-code"></a>관리 코드에서 다중 스레드 관리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,11 +23,11 @@ ms.locfileid: "51802358"
  일반적으로 전환할 수 UI 스레드에서 다른 스레드 또는 그 반대의 경우도 마찬가지입니다. 메서드는 반환 될 때 현재 스레드를 원래 호출한 스레드가 됩니다.  
   
 > [!IMPORTANT]
->  다음 지침의 Api를 사용 합니다 <xref:Microsoft.VisualStudio.Threading> 네임 스페이스, 특히는 <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> 클래스입니다. 이 네임 스페이스의 Api에 새로 추가 된 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]합니다. 인스턴스를 가져올 수 있습니다는 <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> 에서 합니다 <xref:Microsoft.VisualStudio.Shell.ThreadHelper> 속성 `ThreadHelper.JoinableTaskFactory`합니다.  
+> 다음 지침의 Api를 사용 합니다 <xref:Microsoft.VisualStudio.Threading> 네임 스페이스, 특히는 <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> 클래스입니다. 이 네임 스페이스의 Api에 새로 추가 된 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]합니다. 인스턴스를 가져올 수 있습니다는 <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> 에서 합니다 <xref:Microsoft.VisualStudio.Shell.ThreadHelper> 속성 `ThreadHelper.JoinableTaskFactory`합니다.  
   
 ## <a name="switching-from-the-ui-thread-to-a-background-thread"></a>UI 스레드에서 백그라운드 스레드로 전환  
   
-1.  UI 스레드에서 되며 백그라운드 스레드에서 비동기 작업을 수행 하려는 경우 Task.Run()를 사용 합니다.  
+1. UI 스레드에서 되며 백그라운드 스레드에서 비동기 작업을 수행 하려는 경우 Task.Run()를 사용 합니다.  
   
     ```csharp  
     await Task.Run(async delegate{  
@@ -42,7 +37,7 @@ ms.locfileid: "51802358"
   
     ```  
   
-2.  UI 스레드에서 사용 하 여 백그라운드 스레드에서 작업을 수행 하는 동안 동기적으로 차단 하려는 경우는 <xref:System.Threading.Tasks.TaskScheduler> 속성 `TaskScheduler.Default` 내에서 <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:  
+2. UI 스레드에서 사용 하 여 백그라운드 스레드에서 작업을 수행 하는 동안 동기적으로 차단 하려는 경우는 <xref:System.Threading.Tasks.TaskScheduler> 속성 `TaskScheduler.Default` 내에서 <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:  
   
     ```csharp  
     // using Microsoft.VisualStudio.Threading;  
@@ -56,7 +51,7 @@ ms.locfileid: "51802358"
   
 ## <a name="switching-from-a-background-thread-to-the-ui-thread"></a>백그라운드 스레드에서 UI 스레드로 전환  
   
-1.  백그라운드 스레드에서 및 사용 하 여 UI 스레드에서 작업을 수행 하려는 경우 <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:  
+1. 백그라운드 스레드에서 및 사용 하 여 UI 스레드에서 작업을 수행 하려는 경우 <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:  
   
     ```csharp  
     // Switch to main thread  
@@ -74,4 +69,3 @@ ms.locfileid: "51802358"
         // Do your work on the main thread here.  
     });  
     ```
-

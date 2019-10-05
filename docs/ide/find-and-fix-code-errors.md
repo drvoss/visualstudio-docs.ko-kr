@@ -2,21 +2,19 @@
 title: 프로그램 오류 수정 및 코드 개선
 description: 이 문서에서는 빌드 오류, 코드 분석, 디버깅 도구, 단위 테스트 등을 포함하여 코드에서 문제를 찾아 수정하는 데 Visual Studio가 도움이 될 수 있는 몇 가지 기본적인 방법을 설명합니다.
 ms.date: 05/02/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 320615daa95ba9fad69fe48490f83c19ccf8e1ce
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 30ee7364ba925eebb18d66fc8ede2b7983d46116
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34065119"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211377"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Visual Studio에서 코드를 작동하게 하기
 
@@ -26,7 +24,7 @@ Visual Studio에서는 프로젝트 빌드 및 디버깅 도구의 강력한 통
 
 ## <a name="build-your-code"></a>코드 빌드
 
-빌드 구성에는 **디버그** 및 **릴리스**의 두 가지 기본 유형이 있습니다. **디버그** 구성은 보다 풍부한 대화형 런타임 디버깅 환경을 허용하는 더 느리고 큰 실행 파일을 생성합니다. **디버그** 실행 파일은 쉬핑해서는 안 됩니다. **릴리스** 구성은 적어도 컴파일러의 관점에서 배송하기에 적합한 더 빠르고 최적화된 실행 파일을 빌드합니다. 기본 빌드 구성은 **디버그**입니다.
+빌드 구성에는 다음 두 가지 기본 유형이 있습니다. **디버그** 및 **릴리스**. **디버그** 구성은 보다 풍부한 대화형 런타임 디버깅 환경을 허용하는 더 느리고 큰 실행 파일을 생성합니다. **디버그** 실행 파일은 쉬핑해서는 안 됩니다. **릴리스** 구성은 적어도 컴파일러의 관점에서 배송하기에 적합한 더 빠르고 최적화된 실행 파일을 빌드합니다. 기본 빌드 구성은 **디버그**입니다.
 
 프로젝트를 빌드하는 가장 쉬운 방법은 **F7** 키를 누르는 것이지만 주 메뉴에서 **빌드** > **솔루션 빌드**를 선택하여 빌드를 시작할 수도 있습니다.
 
@@ -46,7 +44,7 @@ Visual Studio UI 아래쪽의 **출력** 창에서 빌드 프로세스를 관찰
 
 ![Visual Studio 출력 및 오류 목록](../ide/media/vs_ide_gs_debug_bad_build_error_list.png)
 
-**오류 목록** 창에서 오류 코드 줄을 클릭하여 오류가 발생한 줄로 이동합니다. 또는 오른쪽 위에서 **빠른 실행** 표시줄을 클릭하고 “줄 번호”를 입력한 다음, **Enter** 키를 눌러 줄 번호를 설정합니다. 이는 줄 번호를 설정할 수 있는 **옵션** 대화 상자에 액세스하는 가장 빠른 방법입니다. **빠른 실행** 표시줄을 사용하여 UI 클릭 수를 상당히 줄이는 방법을 알아봅니다.
+**오류 목록** 창에서 오류 코드 줄을 클릭하여 오류가 발생한 줄로 이동합니다. (또는 **Ctrl**+**Q**를 누르고 **줄 번호**를 입력한 다음, 결과에서 **줄 번호 설정/해제**를 선택하여 줄 번호를 켭니다. 줄 번호를 켤 수 있는 **옵션** 대화 상자에 액세스하는 가장 빠른 방법입니다.)
 
 ![줄 번호가 있는 Visual Studio 편집기](../ide/media/vs_ide_gs_debug_line_numbers.png)
 
@@ -76,7 +74,7 @@ Visual Studio UI 아래쪽의 **출력** 창에서 빌드 프로세스를 관찰
 
 ### <a name="c-and-visual-basic-code-analysis"></a>C# 및 Visual Basic 코드 분석
 
-Visual Studio 2017에는 입력한 C# 및 Visual Basic 코드를 검사하는 기본 제공 [.NET 컴파일러 플랫폼 분석기](../code-quality/roslyn-analyzers-overview.md) 집합이 포함되어 있습니다. Visual Studio 확장이나 NuGet 패키지로 다른 분석기를 설치할 수 있습니다. 규칙 위반이 발생하면 코드 편집기에서 문제의 코드 아래에 물결선이 표시되며 **오류 목록**에도 보고됩니다.
+Visual Studio에는 입력한 C# 및 Visual Basic 코드를 검사하는 기본 제공 [.NET 컴파일러 플랫폼 분석기](../code-quality/roslyn-analyzers-overview.md) 세트가 포함되어 있습니다. Visual Studio 확장이나 NuGet 패키지로 다른 분석기를 설치할 수 있습니다. 규칙 위반이 발생하면 코드 편집기에서 문제의 코드 아래에 물결선이 표시되며 **오류 목록**에도 보고됩니다.
 
 ### <a name="c-code-analysis"></a>C++ 코드 분석
 
@@ -90,9 +88,9 @@ IDE 아래쪽에 있는 **오류 목록** 탭에 새로운 경고나 업데이�
 
 ![경고가 포함된 Visual Studio 오류 목록](../ide/media/cpp-code-analysis-warning.png)
 
-## <a name="use-light-bulbs-to-fix-or-refactor-code"></a>전구를 사용하여 코드 수정 또는 리팩터링
+## <a name="use-quick-actions-to-fix-or-refactor-code"></a>빠른 작업을 사용하여 코드 수정 또는 리팩터링
 
-전구 또는 스크루 드라이버 아이콘에서 사용할 수 있는 [빠른 작업](../ide/quick-actions.md)을 통해 인라인으로 코드를 리팩터링할 수 있습니다. 전구를 통해 일반적인 경고를 C#, C++ 및 Visual Basic에서 빠르고 효율적으로 수정할 수 있습니다. 액세스하려면 경고 물결선을 마우스 오른쪽 단추로 클릭하고 **빠른 작업 및 리팩터링**을 선택합니다. 또는 커서가 색 있는 물결선 위에 있을 때 **Ctrl**+ **키를 누릅니다.** 또는 여백에서 전구 또는 스크루 드라이버 아이콘을 선택합니다. 해당 코드 줄에 적용할 수 있는 가능한 수정 또는 리팩터링 목록이 표시됩니다.
+전구 또는 스크루 드라이버 아이콘에서 사용할 수 있는 [빠른 작업](../ide/quick-actions.md)을 통해 인라인으로 코드를 리팩터링할 수 있습니다. 전구를 통해 일반적인 경고를 C#, C++ 및 Visual Basic에서 빠르고 효율적으로 수정할 수 있습니다. 액세스하려면 경고 물결선을 마우스 오른쪽 단추로 클릭하고 **빠른 작업 및 리팩터링**을 선택합니다. 또는 커서가 색 있는 물결선 위에 있을 때 **Ctrl**+ **키를 누릅니다.** 또는 여백에서 전구, 오류 전구 또는 스크루드라이버 아이콘을 선택합니다. 해당 코드 줄에 적용할 수 있는 가능한 수정 또는 리팩터링 목록이 표시됩니다.
 
 ![Visual Studio 전구 미리 보기](../ide/media/quick-actions-options.png)
 
@@ -102,13 +100,25 @@ IDE 아래쪽에 있는 **오류 목록** 탭에 새로운 경고나 업데이�
 
 경험이 생기면 화살표 키와 **Ctrl**+**를 신속하게 사용할 수 있습니다.** 빠른 옵션 리팩터링 기회를 쉽게 확인하고 코드를 정리할 수 있습니다.
 
+::: moniker range="vs-2019"
+
+## <a name="run-code-cleanup"></a>코드 정리 실행
+
+Visual Studio는 편집기의 맨 아래에 있는 **코드 정리** 단추를 통해 코드 스타일 기본 설정을 비롯한 [C# 코드 파일의 주문형 서식](code-styles-and-code-cleanup.md#apply-code-styles)을 제공합니다.
+
+![Visual Studio 2019의 코드 정리 단추](media/execute-code-cleanup.png)
+
+파일에서 공백, 들여쓰기 등의 서식을 지정하는 것 외에도, **코드 정리**는 정의된 코드 스타일 규칙 집합을 적용합니다. 각 코드 스타일의 기본 설정은 [EditorConfig 파일](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files)(프로젝트에 대해 설정된 경우) 또는 **옵션** 대화 상자의 [코드 스타일 설정](code-styles-and-code-cleanup.md#code-styles-in-the-options-dialog-box)에서 읽어옵니다.
+
+::: moniker-end
+
 ## <a name="debug-your-running-code"></a>실행 중인 코드 디버그
 
 성공적으로 코드를 빌드하고 약간의 정리 작업을 수행했으므로 이제 **F5** 키를 누르거나 **디버그** > **디버깅 시작**을 선택하여 실행합니다. 그러면 디버그 환경에서 앱이 시작되므로 해당 동작을 자세히 관찰할 수 있습니다. Visual Studio IDE는 앱이 실행되는 동안 변경됩니다. 기본 창 구성에서는 **출력** 창이 **자동/지역/조사식** 탭 창과 **호출 스택/중단점/예외 설정/출력** 탭 창의 새로운 두 창으로 대체됩니다. 이러한 창에는 실행 시 앱의 변수, 스레드, 호출 스택 및 기타 다양한 동작을 검사 및 평가할 수 있게 해주는 여러 탭이 있습니다.
 
 ![Visual Studio 자동 및 호출 스택 창](../ide/media/vs_ide_gs_debug_autos_and_call_stack.png)
 
-**Shift**+**F5**를 누르거나 **중지** 단추를 클릭하여 앱을 중지합니다. 또는 단순히 앱의 주 창(또는 명령줄 대화 상자)을 닫을 수 있습니다.
+**Shift**+**F5**를 누르거나 **중지** 단추를 클릭하여 앱을 중지합니다. 또는 앱의 주 창(또는 명령줄 대화 상자)을 닫기만 해도 됩니다.
 
 코드가 예상대로 정확히 완벽하게 실행되면 성공한 것입니다. 그러나 정지되거나 작동이 중단되거나 이상한 결과를 제공하는 경우 해당 문제의 소스를 찾아 버그를 수정해야 합니다.
 
@@ -144,7 +154,7 @@ IDE 아래쪽에 있는 **오류 목록** 탭에 새로운 경고나 업데이�
 
 ![Visual Studio 런타임 값 검사](../ide/media/vs_ide_gs_debug_inspect_value.png)
 
-변수 위에 마우스를 가져가 현재 값과 참조를 확인합니다. 예상하지 않은 값이 표시되는 경우 이전 또는 호출하는 코드에 버그가 있을 가능성이 큽니다. 자세한 디버깅 정보를 알아보려면 디버거 사용해 대해 [알아보세요](../debugger/getting-started-with-the-debugger.md).
+변수 위에 마우스를 가져가 현재 값과 참조를 확인합니다. 예상하지 않은 값이 표시되는 경우 이전 또는 호출하는 코드에 버그가 있을 가능성이 큽니다. 자세한 디버깅 정보를 알아보려면 디버거 사용해 대해 [알아보세요](../debugger/debugger-feature-tour.md).
 
 또한 Visual Studio에서는 앱의 시간별 CPU 및 메모리 사용량을 관찰할 수 있는 **진단 도구** 창을 표시합니다. 나중에 앱 개발 시 이러한 도구를 사용하여 예기치 않은 과도한 CPU 사용량이나 메모리 할당을 찾을 수 있습니다. **조사식** 창 및 중단점과 함께 사용하여 예기치 않은 높은 사용량이나 해제되지 않은 리소스의 원인을 확인합니다. 자세한 내용은 [프로파일링 기능 둘러보기](../profiling/profiling-feature-tour.md)를 참조하세요.
 
@@ -158,6 +168,6 @@ Visual Studio의 단위 테스트 및 단위 테스트를 통해 더 나은 품�
 
 ## <a name="see-also"></a>참고 항목
 
-- [디버거 기능 둘러보기](../debugger/debugger-feature-tour.md)
-- [디버거 사용에 대해 자세히 알아보기](../debugger/getting-started-with-the-debugger.md)
+- [디버거 소개](../debugger/debugger-feature-tour.md)
+- [디버거 사용에 대해 자세히 알아보기](../debugger/index.yml)
 - [코드 생성 및 수정](../ide/code-generation-in-visual-studio.md)

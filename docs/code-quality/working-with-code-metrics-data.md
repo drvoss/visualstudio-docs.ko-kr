@@ -1,7 +1,6 @@
 ---
 title: 코드 메트릭 창
 ms.date: 12/12/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.codemetrics.output
@@ -11,15 +10,15 @@ helpviewer_keywords:
 - results window, code metrics
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31690ccc3c2f32b4abb2ff9fefcc268c83977595
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bbe2c216a9293ddc8c5c1212957c2987924d14e1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856321"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825073"
 ---
 # <a name="use-the-code-metrics-results-window"></a>코드 메트릭 결과 창 사용
 
@@ -49,15 +48,15 @@ ms.locfileid: "53856321"
 
 ### <a name="to-filter-the-code-metrics-results"></a>코드 메트릭 결과 필터링
 
-1.  **필터** 목록에서 열 이름을 선택 합니다.
+1. **필터** 목록에서 열 이름을 선택 합니다.
 
-2.  **Min**, 표시할 최소 값을 입력 합니다.
+2. **Min**, 표시할 최소 값을 입력 합니다.
 
-3.  **최대**에 표시할 최대 값을 입력 합니다.
+3. **최대**에 표시할 최대 값을 입력 합니다.
 
-4.  클릭 합니다 **필터 적용** 단추입니다.
+4. 클릭 합니다 **필터 적용** 단추입니다.
 
-5.  결과 세부 정보를 보려면 계층 구조 트리를 확장 합니다.
+5. 결과 세부 정보를 보려면 계층 구조 트리를 확장 합니다.
 
 ## <a name="add-remove-and-rearrange-data-columns"></a>추가, 제거 및 데이터 열 다시 정렬
 
@@ -89,23 +88,23 @@ Azure 보드에 대 한 자세한 내용은 작업 항목을 참조 하십시오
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>결과에 따라 작업 항목을 만들려면
 
-1.  결과 마우스 오른쪽 단추로 클릭 합니다.
+1. 결과 마우스 오른쪽 단추로 클릭 합니다.
 
-2.  가리킨 **작업 항목 만들기**를 만들려는 작업 항목의 종류를 클릭 하 고 (**버그**를 **태스크**등).
+2. 가리킨 **작업 항목 만들기**를 만들려는 작업 항목의 종류를 클릭 하 고 (**버그**를 **태스크**등).
 
-3.  모든 필수 필드에 입력 하 여 작업 항목 폼을 완료 합니다.
+3. 모든 필수 필드에 입력 하 여 작업 항목 폼을 완료 합니다.
 
-4.  에 **파일** 메뉴에서 클릭 **모두 저장** 작업 항목을 저장 합니다.
+4. 에 **파일** 메뉴에서 클릭 **모두 저장** 작업 항목을 저장 합니다.
 
 ### <a name="to-create-a-bug-based-on-a-result"></a>결과 기반으로 버그를 만들려면
 
-1.  결과 선택를 클릭 합니다.
+1. 결과 선택를 클릭 합니다.
 
-2.  클릭 합니다 **작업 항목 만들기** 단추입니다.
+2. 클릭 합니다 **작업 항목 만들기** 단추입니다.
 
-3.  모든 필수 필드에 입력 하 여 작업 항목 폼을 완료 합니다.
+3. 모든 필수 필드에 입력 하 여 작업 항목 폼을 완료 합니다.
 
-4.  에 **파일** 메뉴에서 클릭 **모두 저장** 작업 항목을 저장 합니다.
+4. 에 **파일** 메뉴에서 클릭 **모두 저장** 작업 항목을 저장 합니다.
 
 ## <a name="see-also"></a>참고자료
 

@@ -1,14 +1,9 @@
 ---
 title: 채널(스레드 뷰) | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.channelnames
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 2f798c17-2363-42a4-be94-a5751d208eac
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: feebccb0905a4e3161484b5c1fe9f0142fa41d53
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 445eaf5269ce59e6f6f8fa323020a80648567f54
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193630"
 ---
 # <a name="channels-threads-view"></a>채널(스레드 뷰)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "51743533"
 |||  
 |-|-|  
 |주 스레드|응용 프로그램을 시작한 스레드입니다.|  
-|작업자 스레드|응용 프로그램의 주 스레드에 의해 생성된 스레드입니다.|  
+|작업자 스레드|애플리케이션의 주 스레드에 의해 생성된 스레드입니다.|  
 |CLR 작업자 스레드|CLR(공용 언어 런타임)에 의해 생성된 작업자 스레드입니다.|  
 |디버거 도우미|Visual Studio 디버거에 의해 생성된 작업자 스레드입니다.|  
 |ConcRT 스레드|Microsoft 동시성 런타임에 의해 생성된 스레드입니다.|  
@@ -57,6 +52,3 @@ ms.locfileid: "51743533"
   
 ## <a name="see-also"></a>참고 항목  
  [스레드 뷰](../profiling/threads-view-parallel-performance.md)
-
-
-

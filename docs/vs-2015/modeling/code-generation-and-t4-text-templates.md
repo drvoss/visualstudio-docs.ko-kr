@@ -1,14 +1,9 @@
 ---
 title: 코드 생성 및 T4 텍스트 템플릿 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.TextTemplating.TextTemplating
 helpviewer_keywords:
@@ -21,13 +16,13 @@ ms.assetid: 74a0a748-5b11-4999-8bea-49572967827d
 caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d1310d08138e4df172a5dc9f390d0407a68fe769
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4886a23272962d2dee03576504d60d64067faf20
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433401"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>코드 생성 및 T4 텍스트 템플릿
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,9 +42,9 @@ ms.locfileid: "49229829"
   
  템플릿은 생성된 출력과 유사합니다. 결과 출력과 템플릿이 유사하기 때문에 템플릿을 변경하려는 경우 실수를 방지할 수 있습니다.  
   
- 또한 템플릿에는 프로그램 코드 조각이 포함됩니다. 이러한 조각을 사용하여 텍스트 섹션을 반복하고, 조건부 섹션을 만들고, 응용 프로그램의 데이터를 표시할 수 있습니다.  
+ 또한 템플릿에는 프로그램 코드 조각이 포함됩니다. 이러한 조각을 사용하여 텍스트 섹션을 반복하고, 조건부 섹션을 만들고, 애플리케이션의 데이터를 표시할 수 있습니다.  
   
- 출력을 생성하기 위해 응용 프로그램은 템플릿에 의해 생성된 함수를 호출합니다. 예:  
+ 출력을 생성하기 위해 애플리케이션은 템플릿에 의해 생성된 함수를 호출합니다. 예:  
   
 ```csharp  
 string webResponseText = new MyTemplate().TransformText();  
@@ -65,7 +60,7 @@ string webResponseText = new MyTemplate().TransformText();
  **디자인 타임 T4 텍스트 템플릿** 은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에서 실행되어 소스 코드의 일부와 응용 프로그램의 다른 리소스를 정의합니다.  
  일반적으로 단일 입력 파일이나 데이터베이스의 데이터를 읽고 `.cs`, `.vb`또는 다른 소스 파일의 일부를 생성하는 여러 템플릿을 사용합니다. 각 템플릿이 하나의 파일을 생성합니다. 템플릿은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 또는 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]내에서 실행됩니다.  
   
- 예를 들어 입력 데이터는 구성 데이터의 XML 파일일 수 있습니다. 개발 중에 XML 파일을 편집할 때마다 텍스트 템플릿에서 응용 프로그램 코드의 일부가 다시 생성됩니다. 템플릿 중 하나는 다음 예제와 유사할 수 있습니다.  
+ 예를 들어 입력 데이터는 구성 데이터의 XML 파일일 수 있습니다. 개발 중에 XML 파일을 편집할 때마다 텍스트 템플릿에서 애플리케이션 코드의 일부가 다시 생성됩니다. 템플릿 중 하나는 다음 예제와 유사할 수 있습니다.  
   
 ```  
 <#@ output extension=".txt" #>  
@@ -98,16 +93,16 @@ namespace Fabrikam.FirstJob
  자세한 내용은 [T4 텍스트 템플릿을 사용 하 여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)합니다. 템플릿 구문에 대 한 자세한 내용은 참조 [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)합니다.  
   
 > [!NOTE]
->  *모델* 이란 용어는 때때로 하나 이상의 템플릿에서 읽은 데이터를 설명하는 데 사용됩니다. 모델은 모든 형식과 종류의 파일 또는 데이터베이스일 수 있으며 UML 모델이나 도메인 특정 언어 모델이 아니어도 됩니다. '모델'은 단지 데이터가 코드와 달리 비즈니스 개념 측면에서 정의될 수 있음을 나타냅니다.  
+> *모델* 이란 용어는 때때로 하나 이상의 템플릿에서 읽은 데이터를 설명하는 데 사용됩니다. 모델은 모든 형식과 종류의 파일 또는 데이터베이스일 수 있으며 UML 모델이나 도메인 특정 언어 모델이 아니어도 됩니다. '모델'은 단지 데이터가 코드와 달리 비즈니스 개념 측면에서 정의될 수 있음을 나타냅니다.  
   
  텍스트 템플릿 변환 기능을 *T4*라고 합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [T4 텍스트 템플릿을 사용하여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)  
- 텍스트 파일을 생성하는 응용 프로그램에서 미리 컴파일된 텍스트 템플릿을 사용하면 안정적으로 쉽게 텍스트를 정의할 수 있습니다. 그러나 런타임에 변경되는 텍스트 템플릿에는 이 방법을 사용할 수 없습니다.  
+ 텍스트 파일을 생성하는 애플리케이션에서 미리 컴파일된 텍스트 템플릿을 사용하면 안정적으로 쉽게 텍스트를 정의할 수 있습니다. 그러나 런타임에 변경되는 텍스트 템플릿에는 이 방법을 사용할 수 없습니다.  
   
  [T4 텍스트 템플릿을 사용하여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)  
- 모델에서 코드 및 다른 리소스를 생성하는 경우 모델을 업데이트하면 응용 프로그램을 업데이트할 수 있습니다.  
+ 모델에서 코드 및 다른 리소스를 생성하는 경우 모델을 업데이트하면 애플리케이션을 업데이트할 수 있습니다.  
   
  [빌드 프로세스의 코드 생성](../modeling/code-generation-in-a-build-process.md)  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK를 설치한 경우 생성된 소프트웨어가 모델의 최신 변경 내용을 반영하는지 확인할 수 있습니다.  
@@ -130,6 +125,3 @@ namespace Fabrikam.FirstJob
 ## <a name="see-also"></a>참고 항목  
  [UML 모델에서 파일을 생성 합니다.](../modeling/generate-files-from-a-uml-model.md)   
  [도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)
-
-
-

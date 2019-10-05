@@ -1,5 +1,5 @@
 ---
-title: '연습: IntelliTrace를 사용 하 여 SharePoint 응용 프로그램을 디버깅 | Microsoft Docs'
+title: IntelliTrace를 사용 하 여 SharePoint 응용 프로그램 디버그
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -11,17 +11,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, IntelliTrace
 - data collector
 - IntelliTrace
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2c36d2781e34f85e46fc8a1a56d384bad713399
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 59407696743b15262db83f915feb075a10e22225
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865468"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401038"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>연습: IntelliTrace를 사용 하 여 SharePoint 응용 프로그램 디버그
 
@@ -33,15 +33,15 @@ IntelliTrace를 사용 하 여 SharePoint 솔루션을 보다 쉽게 디버깅�
 
  이 연습에서는 다음 작업을 수행합니다.
 
-- [기능 수신기 만들기](#BKMK_CreateReceiver)
+- [기능 수신기 만들기](#create-a-feature-receiver)
 
-- [기능 수신기에 코드 추가](#BKMK_AddCode)
+- [기능 수신기에 코드 추가](#add-code-to-the-feature-receiver)
 
-- [프로젝트 테스트](#BKMK_Test1)
+- [프로젝트 테스트](#test-the-project)
 
-- [Microsoft Monitoring Agent를 사용 하 여 IntelliTrace 데이터 수집](#BKMK_CollectDiagnosticData)
+- [Microsoft Monitoring Agent를 사용 하 여 IntelliTrace 데이터 수집](#collect-intellitrace-data-by-using-microsoft-monitoring-agent)
 
-- [디버깅 하 고 SharePoint 솔루션 수정](#BKMK_DebugSolution)
+- [디버깅 하 고 SharePoint 솔루션 수정](#debug-and-fix-the-sharepoint-solution)
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -258,7 +258,7 @@ IntelliTrace를 사용 하 여 SharePoint 솔루션을 보다 쉽게 디버깅�
 
 2. 공지 사항 및 작업 목록의 내용을 표시 합니다.
 
-     알림 목록 이라고 하는 새 공지 사항이 있어야 **Activated 기능: IntelliTraceTest_Feature1**, 작업 목록 이라고 하는 새 작업을 해야 했으며 **비활성화 기능: IntelliTraceTest_Feature1**합니다. 이러한 항목 중 하나가 없는 경우 기능이 활성화 되어 있는지 여부를 확인 합니다. 이 활성화 되지 않은 경우이 활성화 합니다.
+     알림 목록 이라고 하는 새 공지 사항이 있어야 **Activated 기능: IntelliTraceTest_Feature1**, 작업 목록 이라고 하는 새 작업을 해야 했으며 **비활성화 기능: IntelliTraceTest_Feature1**. 이러한 항목 중 하나가 없는 경우 기능이 활성화 되어 있는지 여부를 확인 합니다. 이 활성화 되지 않은 경우이 활성화 합니다.
 
 3. 다음 단계를 수행 하 여 기능을 비활성화 합니다.
 
@@ -329,7 +329,7 @@ SharePoint를 실행 하는 시스템에서 Microsoft Monitoring Agent를 설치
 
      코드는 이제 제대로 실행 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [확인 하 고 SharePoint 코드 디버그](../sharepoint/verifying-and-debugging-sharepoint-code.md)
 - [IntelliTrace](../debugger/intellitrace.md)

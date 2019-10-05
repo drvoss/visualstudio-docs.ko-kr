@@ -1,14 +1,9 @@
 ---
 title: 'Idiadatasource:: Opensession | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: a3319ed0-3979-483b-9852-c0af96852c48
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 79c3ec1974341ddee0a147830491bf324b1fe0c5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4bec5507d15374e6e88afd4567d4b0fec9ca6cb7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198596"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,10 +40,10 @@ HRESULT openSession ( 
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다. 다음 표에서이 메서드에 대 한 가능한 반환 값을 보여 줍니다.  
   
-|값|설명|  
+|값|Description|  
 |-----------|-----------------|  
 |E_UNEXPECTED|합니다 [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) 개체 기호는 소스를 사용 하 여 이전에 초기화 되지 않았습니다.|  
-|E_INVALIDARG|잘못 된 `ppSession` 매개 변수입니다.|  
+|E_INVALIDARG|잘못된 `ppSession` 매개 변수입니다.|  
 |E_OUTOFMEMORY|메모리가 부족 하 여 세션을 열에 없습니다.|  
   
 ## <a name="remarks"></a>설명  
@@ -72,6 +67,3 @@ if (FAILED(hr))
  [개요](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [.Pdb 파일 쿼리](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
-
-
-

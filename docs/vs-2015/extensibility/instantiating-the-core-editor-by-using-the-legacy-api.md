@@ -1,28 +1,23 @@
 ---
 title: 레거시 API를 사용 하 여 핵심 편집기 인스턴스화 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - instantiating editor
 ms.assetid: dda23b18-96ef-43c6-b0dc-06d15cbe5cbb
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d092994ad66d96a3fe7141cb898c7ef9b811eaf5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 29306a16390039c8ee6e424b81a5ff617e533ab4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203918"
 ---
-# <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>레거시 API를 사용 하 여 핵심 편집기 인스턴스화
+# <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>레거시 API를 사용하여 핵심 편집기 인스턴스화
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 편집기는 텍스트 삽입, 삭제, 복사 및 붙여넣기 등의 기능을 편집 합니다. 이러한 함수는 텍스트 색 지정, 들여쓰기 및 IntelliSense 문 완성 등의 언어 서비스와 결합 합니다.  
@@ -69,10 +64,9 @@ ms.locfileid: "51765787"
   
  경우는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> 핵심 편집기의 인스턴스를 자동으로 가져옵니다 기본 바로 가기 키, 텍스트 편집기로 동일한 명령을 GUID를 반환 합니다.  
   
- 일반적인 정보를 참조 하세요 [연습: 핵심 편집기 만들기 및 등록 된 편집기 파일 형식이](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)합니다.  
+ 일반 정보를 참조 하세요. [연습: 핵심 편집기 만들기 및 등록 된 편집기 파일 형식이](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [핵심 편집기 내에서](../extensibility/inside-the-core-editor.md)   
  [열기 및 프로젝트 항목 저장](../extensibility/internals/opening-and-saving-project-items.md)   
  [연습: 코어 편집기 만들기 및 편집기 파일 형식 등록](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)
-

@@ -2,19 +2,18 @@
 title: 스냅숏 디버거에 대 한 시작 페이지
 ms.date: 07/14/2018
 robots: noindex, nofollow
-ms.technology: vs-ide-debug
 ms.topic: reference
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7b5b48aeeb0cfcaeed72a06bfb6709892c58de7
-ms.sourcegitcommit: e2373d40ca9829cee63519152a97172763471e21
+ms.openlocfilehash: cf2aba33089623dc98a90c23166291bb2d6e7123
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "39310119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905270"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>스냅숏 디버거를 시작 하기
 
@@ -28,17 +27,17 @@ Visual Studio 스냅숏 디버거를 서비스에 연결 되 고 디버깅 하�
 
 ### <a name="set-a-snappoint"></a>Snappoint를 설정 합니다.
 
-1. 코드 편집기에서 관심 있는에서 snappoint를 설정 하려면 코드 줄 옆에 있는 왼쪽된 여백을 클릭 합니다. 실행될지 알고 있는 코드 인지 확인 합니다. 
+1. 코드 편집기에서 관심 있는에서 snappoint를 설정 하려면 코드 줄 옆에 있는 왼쪽된 여백을 클릭 합니다. 실행될지 알고 있는 코드 인지 확인 합니다.
 
     ![편집기에서 snappoint를 설정](../media/snapshot-startpage-set-snappoint.png)
 
     자주색 육각형 왼쪽 클릭 하면 표시 됩니다.
 
-2. 클릭 **수집 시작** snappoint를 설정 하려면.
+2. **컬렉션 시작**을 클릭하여 snappoint를 켭니다.
 
 ### <a name="open-a-snapshot"></a>스냅숏을 열기
 
-1. Snappoint는 적중 될 때 스냅숏이 오른쪽 위에 있는 진단 도구 창에 표시 됩니다. 창이 열리지 않으면 경우 선택 하 여 열 수 있습니다 **디버깅할** > **Windows** > **진단 도구 표시**합니다. 
+1. Snappoint는 적중 될 때 스냅숏이 오른쪽 위에 있는 진단 도구 창에 표시 됩니다. 창이 열리지 않으면 경우 선택 하 여 열 수 있습니다 **디버깅할** > **Windows** > **진단 도구 표시**합니다.
 
     ![진단 도구 창에서 스냅숏](../media/snapshot-startpage-diagsession-window.png)
 
@@ -48,7 +47,7 @@ Visual Studio 스냅숏 디버거를 서비스에 연결 되 고 디버깅 하�
 
 DataTips를 보고, 조사식, 지역 변수를 사용 하 여, 호출 하는 변수를 마우스로 가리키면이 보기에서 windows, 스택 및 식 평가 합니다.
 
-라이브 상태인 웹 사이트 자체 이며 최종 사용자에 게 영향을 받는 되지 않습니다. 기본적으로 하나의 스냅숏만 snappoint 당 캡처됩니다. 즉, 스냅숏으로 캡처된 후 snappoint를 해제 합니다. snappoint에 다른 스냅숏을 캡처하려면 하려는 경우 켤 수 있습니다 snappoint를 다시 클릭 하 여 **컬렉션 업데이트**합니다.
+웹 사이트 자체는 계속 라이브 상태이며 최종 사용자는 영향을 받지 않습니다. 기본적으로 하나의 스냅숏만 snappoint 당 캡처됩니다. 즉, 스냅숏으로 캡처된 후 snappoint를 해제 합니다. snappoint에서 또 하나의 스냅샷을 캡처하려면 **컬렉션 업데이트**를 클릭하여 snappoint를 다시 켤 수 있습니다.
 
 ### <a name="set-a-logpoint"></a>Logpoint를 설정 합니다.
 
@@ -58,18 +57,18 @@ DataTips를 보고, 조사식, 지역 변수를 사용 하 여, 호출 하는 �
 
     ![Snappoint 조건](../media/snapshot-startpage-logpoint.png)
 
-3. 에 **메시지** 필드에 기록 하려는 로그 메시지를 입력 합니다. 중괄호 안에 배치 하 여 로그 메시지의 변수를 평가할 수 있습니다.
+3. 에 **메시지** 필드에 기록 하려는 로그 메시지를 입력 합니다. 로그 메시지에서 변수를 중괄호 안에 배치하여 변수를 평가할 수도 있습니다.
 
-    선택 하면 **출력 창에 보냅니다**, 메시지는 logpoint 적중 될 때 진단 도구 창에 나타납니다. 
+    선택 하면 **출력 창에 보냅니다**, 메시지는 logpoint 적중 될 때 진단 도구 창에 나타납니다.
 
     선택 하면 **응용 프로그램 로그 보내기**, 메시지의 메시지에서 볼 수 있는 아무 곳 이나 표시 `System.Diagnostics.Trace` (또는 `ILogger` .NET Core에서), App Insights는 logpoint 적중 될 때 같은 합니다.
 
-## <a name="learn-more"></a>자세히
+## <a name="learn-more"></a>자세한 내용
 
 스냅숏 디버거에 대 한 자세한 정보를 찾을 수 있습니다 합니다 [docs 페이지](../debug-live-azure-applications.md)합니다. 쉽게 버그를 찾는 조건을 설정 하는 방법에 대 한 자세히 알아봅니다.
 
-## <a name="dont-show-me-this-again"></a>안 함 ' 다시 표시
+## <a name="dont-show-me-this-again"></a>다시 표시 안 함
 
-다시 표시 안 함 스냅숏 디버거 시작 페이지를 스냅숏 디버거를 연결 하는 경우를 변경 합니다 **세션 시작 시 'Getting Started 페이지 표시** 옵션 **도구**  >   **옵션** > **스냅숏 디버거**합니다. 
+스냅숏 디버거를 연결 하는 경우 스냅숏 디버거 시작 페이지를 다시 표시 안 함, 변경 된 **세션 시작 시 'Getting Started 페이지 표시** 옵션 **도구**  >   **옵션** > **스냅숏 디버거**합니다.
 
 ![스냅숏 디버거 도구 옵션 페이지](../media/snapshot-startpage-tools-options.png)

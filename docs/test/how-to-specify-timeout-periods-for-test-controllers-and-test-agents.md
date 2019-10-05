@@ -10,15 +10,13 @@ helpviewer_keywords:
 ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 53127df8837f9f86d49cb5d5fa36ca3b50f401fa
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 5e703ca3e1770d92a2dc01402acaaba0b4988e92
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970638"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>방법: 테스트 컨트롤러 및 테스트 에이전트의 시간 제한 기간 지정
 
@@ -28,7 +26,7 @@ ms.locfileid: "53064681"
 
 테스트 컨트롤러 또는 테스트 에이전트의 다양한 제한 시간 설정을 편집하려면 아래 표의 키 이름 및 값을 사용하여 다음 구성 파일을 수정합니다.
 
--   테스트 컨트롤러: *QTController.exe.config*
+- 테스트 컨트롤러: *QTController.exe.config*
 
     |키 이름|설명|값|
     |-|-----------------|-|
@@ -37,7 +35,7 @@ ms.locfileid: "53064681"
     |AgentInitializeTimeout|테스트 실행 시작 시 모든 에이전트 및 해당 데이터 수집기가 초기화되기를 기다릴 시간(초)으로, 이후에는 테스트 실행이 중단됩니다. 데이터 수집기를 사용하는 경우 이 값은 충분히 커야 합니다.|"n"초 기본값: "120"(2분).|
     |AgentCleanupTimeout|모든 에이전트 및 해당 데이터 수집기가 정리되기를 기다릴 시간(초)으로, 이후에는 테스트 실행이 완료됩니다. 데이터 수집기를 사용하는 경우 이 값은 충분히 커야 합니다.|"n"초 기본값: "120"(2분).|
 
--   테스트 에이전트: *QTAgentService.exe.config*
+- 테스트 에이전트: *QTAgentService.exe.config*
 
     |키 이름|설명|값|
     |-|-----------------|-|
@@ -119,5 +117,4 @@ ms.locfileid: "53064681"
 - [테스트 에이전트 설치 및 구성](../test/lab-management/install-configure-test-agents.md)
 - [부하 테스트 로깅 설정 수정](../test/modify-load-test-logging-settings.md)
 - [테스트 컨트롤러 및 테스트 에이전트 포트 구성](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [방법: 로그 파일의 최대 크기 지정](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [방법: 네트워크 어댑터에 테스트 컨트롤러 또는 테스트 에이전트 바인딩](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)

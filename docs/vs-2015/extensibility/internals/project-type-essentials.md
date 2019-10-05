@@ -1,26 +1,21 @@
 ---
 title: 프로젝트 형식 필수 항목 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types [Visual Studio SDK]
 ms.assetid: 09991589-2300-430e-b6a4-7f2b95fe676f
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5a719ea26473874cb0d771b46ee05ea15092fb17
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7e45d5f252deaf1788ae5093048ef8afb900fbe4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746450"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704068"
 ---
 # <a name="project-type-essentials"></a>프로젝트 형식 필수 항목
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ ms.locfileid: "51746450"
   
 - 프로젝트 형식은 인터페이스 집합을 구현 하는 VSPackage에서 개체 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 필요 합니다. 사용 중인 경우 C# 프로젝트 형식을 개발, 관리 패키지 프레임 워크 프로젝트 클래스를 필요한 인터페이스를 구현 되며 해당 구현을 상속할 수 있습니다. 자세한 내용은 [프로젝트 형식 (C#)를 구현 하는 관리 패키지 프레임 워크를 사용 하 여](../../extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp.md)입니다.  
   
-- C + + 개발자를 위한 HierUtil 라이브러리의 클래스는 비슷한 방식으로 작동합니다. 자세한 내용은 [빌드에 없음: 프로젝트 형식 (c + +)를 구현 하려면 HierUtil7 프로젝트 클래스를 사용 하 여](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)입니다.  
+- 에 대 한 C++ 개발자 HierUtil 라이브러리의 클래스는 비슷한 방식으로 작동 합니다. 자세한 내용은 참조 하세요. [빌드에 없음: 프로젝트 유형을 구현 하도록 HierUtil7 프로젝트 클래스를 사용 하 여 (C++)](https://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)합니다.  
   
 - 프로젝트 형식에는.exe 또는.dll 어셈블리로 작성 하는 일반적인 소스 코드 파일 이외의 데이터 지원할 수 있습니다. 예를 들어 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 데이터베이스 프로젝트 디스크에 저장 하는 스크립트 및 쿼리 파일에 대 한 참조를 포함 하 고 하는 명령을 추가 **솔루션 탐색기** 실행 하는 스크립트 및 데이터베이스에 있지만 프로젝트에 대 한 쿼리 지원 하지 않습니다 동작을 빌드하십시오. 자세한 내용은 [열기 및 프로젝트 항목 저장](../../extensibility/internals/opening-and-saving-project-items.md)합니다.  
   
@@ -73,4 +68,3 @@ ms.locfileid: "51746450"
   
 ## <a name="see-also"></a>참고 항목  
  [프로젝트 형식 배포](../../extensibility/internals/deploying-project-types.md)
-

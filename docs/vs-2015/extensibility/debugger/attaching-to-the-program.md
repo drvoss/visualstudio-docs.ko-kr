@@ -1,26 +1,21 @@
 ---
 title: 프로그램에 연결 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
 ms.assetid: 9a3f5b83-60b5-4ef0-91fe-a432105bd066
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8c16c13b4dec412fa44be5cbfbbdd8494b805545
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ab9301f31976b084c3c8565329dca248503e40ae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437422"
 ---
 # <a name="attaching-to-the-program"></a>프로그램에 연결
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,19 +45,19 @@ ms.locfileid: "51777944"
   
   후 합니다 `IDebugEngine2::Attach` 메서드가 호출 되 면 구현에서 다음이 단계를 수행 합니다 `IDebugEngine2::Attach` 메서드:  
   
-1.  보내기는 [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) SDM 이벤트 개체입니다. 자세한 내용은 [이벤트를 보내는](../../extensibility/debugger/sending-events.md)합니다.  
+1. 보내기는 [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) SDM 이벤트 개체입니다. 자세한 내용은 [이벤트를 보내는](../../extensibility/debugger/sending-events.md)합니다.  
   
-2.  호출을 [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) 메서드는 [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) 에 전달 된 개체는 `IDebugEngine2::Attach` 메서드.  
+2. 호출을 [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) 메서드는 [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) 에 전달 된 개체는 `IDebugEngine2::Attach` 메서드.  
   
      반환 된 `GUID` 프로그램을 식별 하는 데 사용 되는 합니다. `GUID` 를 나타내는 로컬 프로그램 DE, 해당 반환 해야 하는 경우 개체에 저장 되어야 합니다는 `IDebugProgram2::GetProgramId` 메서드를 호출 합니다 `IDebugProgram2` 인터페이스입니다.  
   
     > [!NOTE]
-    >  구현 하는 경우는 `IDebugProgramNodeAttach2` 프로그램의 인터페이스 `GUID` 에 전달 되는 `IDebugProgramNodeAttach2::OnAttach` 메서드. 이렇게 `GUID` 프로그램에 사용 됩니다 `GUID` 반환한는 `IDebugProgram2::GetProgramId` 메서드.  
+    > 구현 하는 경우는 `IDebugProgramNodeAttach2` 프로그램의 인터페이스 `GUID` 에 전달 되는 `IDebugProgramNodeAttach2::OnAttach` 메서드. 이렇게 `GUID` 프로그램에 사용 됩니다 `GUID` 반환한는 `IDebugProgram2::GetProgramId` 메서드.  
   
-3.  보내기는 [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) SDM을 알리는 이벤트 개체는 로컬 `IDebugProgram2` 는 DE에 프로그램을 나타내는 개체를 만든 합니다. 자세한 내용은 참조 하세요 [이벤트를 보내는](../../extensibility/debugger/sending-events.md)합니다.  
+3. 보내기는 [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) SDM을 알리는 이벤트 개체는 로컬 `IDebugProgram2` 는 DE에 프로그램을 나타내는 개체를 만든 합니다. 자세한 내용은 참조 하세요 [이벤트를 보내는](../../extensibility/debugger/sending-events.md)합니다.  
   
     > [!NOTE]
-    >  이 다릅니다 `IDebugProgram2` 에 전달 된 개체는 `IDebugEngine2::Attach` 메서드. 이전에 전달 된 `IDebugProgram2` 개체 에서만 포트에서 인식 되 고 별도 개체입니다.  
+    > 이 다릅니다 `IDebugProgram2` 에 전달 된 개체는 `IDebugEngine2::Attach` 메서드. 이전에 전달 된 `IDebugProgram2` 개체 에서만 포트에서 인식 되 고 별도 개체입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [실행 기반 첨부 파일](../../extensibility/debugger/launch-based-attachment.md)   
@@ -75,6 +70,5 @@ ms.locfileid: "51777944"
  [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)   
  [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md)   
- [연결](../../extensibility/debugger/reference/idebugprogramex2-attach.md)   
+ [Attach](../../extensibility/debugger/reference/idebugprogramex2-attach.md)   
  [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md)
-

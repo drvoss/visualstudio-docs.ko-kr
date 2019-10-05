@@ -1,22 +1,20 @@
 ---
 title: 원격 도구 다운로드를 차단 해제
-ms.custom: ''
 ms.date: 07/19/2018
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 helpviewer_keywords:
 - remote debugging, unblock download
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0586b8f0699ec2eca5843d59df1b6ddd7cecbd3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8a243033bf5831952d83fdf688302651e02b76b7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180662"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903028"
 ---
 # <a name="how-to-unblock-the-download-of-the-remote-tools-on-windows-server"></a>방법: Windows Server에서 원격 도구 다운로드를 차단 해제
 
@@ -46,7 +44,7 @@ Windows Server의 도구를 다운로드 하려면 좋습니다 다음 중 하�
   * my.visualstudio.com
   * login.microsoftonline.com
   * login.live.com
-  * secure.aadcdn.microsoftonline 오류가
+  * secure.aadcdn.microsoftonline-p.com
   * msft.sts.microsoft.com
   * auth.gfx.ms
   * app.vssps.visualstudio.com

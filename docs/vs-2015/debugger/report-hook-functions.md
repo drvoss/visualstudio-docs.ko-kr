@@ -1,14 +1,9 @@
 ---
 title: 보고서 후크 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.hooks
 dev_langs:
@@ -29,18 +24,18 @@ ms.assetid: 1854bca7-d7eb-4502-89bf-b1ee64cb50ef
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d3b7916f729f0d1ea1a254ecde8e5c53ea8b8a51
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0a492a1db8b65cad74d02cec0f43bf0c81461730
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777262"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687505"
 ---
 # <a name="report-hook-functions"></a>보고서 후크 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-보고서 후크 함수를 사용 하 여 설치할 [_CrtSetReportHook](http://msdn.microsoft.com/library/1ae7c64f-8c84-4797-9574-b59f00f7a509), 때마다 호출 됩니다 [_CrtDbgReport](http://msdn.microsoft.com/library/6e581fb6-f7fb-4716-9432-f0145d639ecc) 디버그 보고서를 생성 합니다. 보고서 후크 함수를 사용하여 특정한 할당 형식에 맞게 보고서를 필터링할 수 있습니다. 보고서 후크 함수에는 다음과 같이 프로토타입이 있어야 합니다.  
+[_CrtSetReportHook](https://msdn.microsoft.com/library/1ae7c64f-8c84-4797-9574-b59f00f7a509)를 사용하여 설치한 보고서 후크 함수는 [_CrtDbgReport](https://msdn.microsoft.com/library/6e581fb6-f7fb-4716-9432-f0145d639ecc)가 디버그 보고서를 생성할 때마다 호출됩니다. 보고서 후크 함수를 사용하여 특정한 할당 형식에 맞게 보고서를 필터링할 수 있습니다. 보고서 후크 함수에는 다음과 같이 프로토타입이 있어야 합니다.  
   
 ```  
 int YourReportHook(int nRptType, char *szMsg, int *retVal);  
@@ -52,13 +47,10 @@ int YourReportHook(int nRptType, char *szMsg, int *retVal);
 typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);  
 ```  
   
- 런타임 라이브러리에 후크 함수를 호출 하는 경우는 *nRptType* 보고서의 범주를 포함 하는 인수 (**_CRT_WARN**합니다 **_CRT_ERROR**, 또는 **_CRT _ASSERT**), *szMsg* 는 완전히 어셈블된 보고서 메시지 문자열에 대 한 포인터를 포함 하 고 *retVal* 지정 하는지 여부를 `_CrtDbgReport` 정상적인 실행을 계속할지 보고서 또는 디버거를 시작 합니다를 생성 합니다. (A *retVal* 값이 0 이면 계속 실행 하 고 값이 1 디버거를 시작 합니다.)  
+ 런타임 라이브러리가 후크 함수를 호출하면, *nRptType* 인수는 보고서의 범주(**_CRT_WARN**, **_CRT_ERROR** 또는 **_CRT_ASSERT**)를 포함하고, *szMsg*는 완전히 어셈블된 보고서 메시지 문자열에 대한 포인터를 포함하며, *retVal*은 보고서 생성 후에 `_CrtDbgReport`가 계속 정상적으로 실행되어야 할 것인지 또는 디버거를 시작해야 할 것인지 지정합니다. (*retVal* 값이 0이면 계속 실행하고 값이 1이면 디버거를 시작합니다.)  
   
- 경우는 해당 메시지를 후크가 완전히 처리는 더 이상 보고 하지 않으려면 검사가 필요 하도록, 반환할 **TRUE**합니다. 반환 하는 경우 **FALSE**, `_CrtDbgReport` 보고서 메시지를 일반적으로 됩니다.  
+ 요청한 메시지를 후크가 완전히 처리하여 더 이상 보고할 필요가 없으면 **TRUE**를 반환해야 합니다. **FALSE**를 반환하면 `_CrtDbgReport`가 정상적으로 메시지를 보고합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [디버그 후크 함수 작성](../debugger/debug-hook-function-writing.md)   
- [crt_dbg2 샘플](http://msdn.microsoft.com/en-us/21e1346a-6a17-4f57-b275-c76813089167)
-
-
-
+ [crt_dbg2 샘플](https://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)

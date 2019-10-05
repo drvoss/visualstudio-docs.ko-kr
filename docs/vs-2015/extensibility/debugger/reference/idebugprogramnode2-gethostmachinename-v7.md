@@ -1,14 +1,9 @@
 ---
 title: IDebugProgramNode2::GetHostMachineName_V7 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProgramNode2::GetHostMachineName
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: a992f2c9-f68b-4146-8cc2-027753bf7ce6
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0f3c8d43e0186ff368494d65a681ded58ef7f2bd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 63e4f1a3621dde3fba5e8a2dabf45eaceb5d8ea4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765939"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418050"
 ---
 # <a name="idebugprogramnode2gethostmachinenamev7"></a>IDebugProgramNode2::GetHostMachineName_V7
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -54,8 +49,7 @@ int GetHostMachineName_V7 ( 
 ## <a name="remarks"></a>설명  
   
 > [!WARNING]
->  일부로 [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)],이 메서드는 더 이상 사용 하 고 항상 반환 `E_NOTIMPL`합니다.  
+> 일부로 [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)],이 메서드는 더 이상 사용 하 고 항상 반환 `E_NOTIMPL`합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
-

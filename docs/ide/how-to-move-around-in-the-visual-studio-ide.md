@@ -1,8 +1,6 @@
 ---
 title: IDE에서 이동하는 방법
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - environments [Visual Studio], navigation
@@ -16,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 6c36b6eb-c93f-496b-af08-4199f7afd8bd
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bdfae0808ff5daa10f8faa621e6af293543bce66
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5933d89e38d040b088879f10911f2f1fff049aab
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62547693"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>방법: Visual Studio IDE에서 이동
 
@@ -45,16 +43,16 @@ Visual Studio의 거의 모든 메뉴 명령에는 바로 가기 키가 있습�
 
 ### <a name="to-move-through-open-files-in-order-of-use"></a>사용한 순서대로 열려 있는 파일 간을 이동하려면
 
--   가장 최근에 액세스한 순서대로 열려 있는 문서를 활성화하려면 **Ctrl**+**-** 을 누릅니다.
+- 가장 최근에 액세스한 순서대로 열려 있는 문서를 활성화하려면 **Ctrl**+**-** 을 누릅니다.
 
--   역순으로 열려 있는 문서를 활성화하려면 **Ctrl**+**Shift**+**-** 를 누릅니다.
+- 역순으로 열려 있는 문서를 활성화하려면 **Ctrl**+**Shift**+**-** 를 누릅니다.
 
     > [!NOTE]
     > **뒤로 탐색** 및 **앞으로 탐색**은 **보기** 메뉴에서도 찾을 수 있습니다.
 
 **IDE 탐색기**, 편집기의 **활성 파일** 목록 또는 **창** 대화 상자를 사용하여, 마지막으로 파일에 액세스한 시점과 관계없이 편집기에 열려 있는 특정 파일로 전환할 수도 있습니다.
 
-**IDE 탐색기**는 Windows 응용 프로그램 전환기와 매우 유사하게 작동합니다. IDE 탐색기는 메뉴에서 사용할 수 없으며 바로 가기 키를 사용해서만 액세스할 수 있습니다. 두 명령 중 하나를 사용하여 **IDE 탐색기**(아래 참조)에 액세스하고 순환하려는 순서에 따라 파일 전체를 순환할 수 있습니다.
+**IDE 탐색기**는 Windows 애플리케이션 전환기와 매우 유사하게 작동합니다. IDE 탐색기는 메뉴에서 사용할 수 없으며 바로 가기 키를 사용해서만 액세스할 수 있습니다. 두 명령 중 하나를 사용하여 **IDE 탐색기**(아래 참조)에 액세스하고 순환하려는 순서에 따라 파일 전체를 순환할 수 있습니다.
 
 ![Visual Studio IDE 탐색기](../ide/media/vs2015_ide_navigator.png)
 
@@ -65,20 +63,20 @@ Visual Studio의 거의 모든 메뉴 명령에는 바로 가기 키가 있습�
 
 ### <a name="to-switch-to-specific-files-in-the-editor"></a>편집기에서 특정 파일로 전환하려면
 
--   **Ctrl**+**Tab**을 눌러 **IDE 탐색기**를 표시합니다. **Ctrl** 키를 누른 상태에서 전환하려는 파일을 선택할 때까지 **Tab** 키를 반복해서 누릅니다.
+- **Ctrl**+**Tab**을 눌러 **IDE 탐색기**를 표시합니다. **Ctrl** 키를 누른 상태에서 전환하려는 파일을 선택할 때까지 **Tab** 키를 반복해서 누릅니다.
 
     > [!TIP]
     > **활성 파일** 목록을 이동하는 순서를 반대로 하려면 **Ctrl**+**Shift** 키를 누른 상태에서 **Tab** 키를 누릅니다.
 
     \- 또는 -
 
--   편집기의 오른쪽 위에서 **활성 파일** 단추를 선택한 다음 전환할 목록에서 파일을 선택합니다.
+- 편집기의 오른쪽 위에서 **활성 파일** 단추를 선택한 다음 전환할 목록에서 파일을 선택합니다.
 
     \- 또는 -
 
--   메뉴 모음에서 **창** > **창**을 선택합니다.
+- 메뉴 모음에서 **창** > **창**을 선택합니다.
 
--   목록에서 보려는 파일을 선택한 다음 **활성화**를 선택합니다.
+- 목록에서 보려는 파일을 선택한 다음 **활성화**를 선택합니다.
 
 ## <a name="navigate-among-tool-windows-in-the-ide"></a>IDE에서 도구 창 탐색
 
@@ -89,7 +87,7 @@ Visual Studio의 거의 모든 메뉴 명령에는 바로 가기 키가 있습�
 
 ### <a name="to-switch-to-a-specific-tool-window-in-the-ide"></a>IDE에서 특정 도구 창으로 전환하려면
 
--   **Alt**+**F7**을 눌러 **IDE 탐색기**를 표시합니다. **Alt** 키를 누른 상태에서 전환하려는 창을 선택할 때까지 **F7** 키를 반복해서 누릅니다.
+- **Alt**+**F7**을 눌러 **IDE 탐색기**를 표시합니다. **Alt** 키를 누른 상태에서 전환하려는 창을 선택할 때까지 **F7** 키를 반복해서 누릅니다.
 
     > [!TIP]
     > **활성 도구 창** 목록을 이동하는 순서를 반대로 하려면 **Shift**+**Alt** 키를 누른 상태에서 **F7** 키를 누릅니다.

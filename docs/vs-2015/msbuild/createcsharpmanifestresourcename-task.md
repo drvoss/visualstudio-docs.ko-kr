@@ -1,14 +1,9 @@
 ---
 title: CreateCSharpManifestResourceName 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -21,18 +16,17 @@ ms.assetid: 2ace88c1-d757-40a7-8158-c1d3f5ff0511
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 32aa7fdb5779d7ae042e8efa9652f25df70a2754
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9308f94e865bfe54384719d8f57f3ad1819c79fb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247847"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184036"
 ---
 # <a name="createcsharpmanifestresourcename-task"></a>CreateCSharpManifestResourceName 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 지정된 .resx 파일 이름 또는 기타 리소스에서 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 스타일 매니페스트 이름을 만듭니다.  
   
 ## <a name="parameters"></a>매개 변수  
@@ -54,6 +48,3 @@ ms.locfileid: "49247847"
 ## <a name="see-also"></a>참고 항목  
  [작업](../msbuild/msbuild-tasks.md)   
  [작업 참조](../msbuild/msbuild-task-reference.md)
-
-
-

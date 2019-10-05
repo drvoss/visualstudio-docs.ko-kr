@@ -1,14 +1,9 @@
 ---
 title: 옵션 페이지, 글꼴 및 색 노드 속성 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Tools Options settings, Fonts and Colors node properties
 - automation [Visual Studio], controlling Tools Options
@@ -16,18 +11,17 @@ ms.assetid: 8e1ab784-5f85-4e2b-8ef9-e5d59ca4dbcb
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 538711a72a1f22a9dfd984f6fcd36ea7787742f6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 788d6077af99e6fe9fa99328aa9281d6327297b1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296070"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697176"
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>옵션 페이지, 글꼴 및 색 노드 속성
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 이 문서에서는 **옵션** 대화 상자의 **환경** 범주에 있는 **글꼴 및 색** 범주 아래에 표시되도록 등록된 도구 창의 글꼴 및 색 속성을 설명합니다. 이는 VSPackage가 설치 또는 제거될 경우 변경할 수 있는 색 항목 그룹의 동적 특성을 지원합니다.  
   
  다음 섹션에서는 등록된 창 형식의 예제와 각 창에 사용할 수 있는 속성을 보여 줍니다.  
@@ -50,10 +44,7 @@ ms.locfileid: "49296070"
 |FontSize|Get/Set(Short)|사용할 글꼴 크기(포인트). 예: 10 또는 12.|  
   
 ## <a name="see-also"></a>참고 항목  
- [옵션 설정 제어](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
- [옵션 페이지에서 속성 항목의 이름 확인](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
+ [옵션 설정 제어](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
+ [옵션 페이지에서 속성 항목의 이름 확인](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [옵션 페이지, 환경, 노드 속성](../../ide/reference/options-page-environment-node-properties.md)   
  [옵션 페이지, 텍스트 편집기 노드 속성](../../ide/reference/options-page-text-editor-node-properties.md)
-
-
-

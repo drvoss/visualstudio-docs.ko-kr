@@ -1,7 +1,6 @@
 ---
 title: 'CA1720: 식별자에 형식 이름을 포함하면 안 됩니다.'
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1720
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: c95ee48f-f23a-45f0-ac9e-a3c1ecfabdea
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7dd351368ddb66cb389eee12b23dcff91b0653ce
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a2677c2ef5342b795bb684f3ab06bc7cf5195cf7
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912271"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233888"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: 식별자에 형식 이름을 포함하면 안 됩니다.
 
@@ -29,121 +28,96 @@ ms.locfileid: "53912271"
 |TypeName|IdentifiersShouldNotContainTypeNames|
 |CheckId|CA1720|
 |범주|Microsoft.Naming|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
- 데이터 형식 이름을 포함 하는 외부에서 볼 수 있는 멤버의 매개 변수 이름입니다.
 
- 또는
+멤버의 매개 변수 이름에는 데이터 형식 이름이 포함 됩니다.
 
- 언어 특정 데이터 형식 이름을 포함 하는 외부에서 볼 수 있는 멤버의 이름입니다.
+또는
+
+멤버의 이름에는 언어별 데이터 형식 이름이 포함 됩니다.
+
+기본적으로이 규칙은 외부에서 볼 수 있는 멤버만 볼 수 있지만이를 [구성할](#configurability)수 있습니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 매개 변수 및 멤버의 이름과 설명, 개발 도구에 의해 제공 될 예상 되는 형식 보다는 의미를 전달할 잘 사용 됩니다. 멤버 이름에 대 한 데이터 형식 이름을 사용 해야 하는 경우 언어별 단일 대신 언어 독립적인 이름을 사용 합니다. 예를 들어 C# 형식 이름 'int', 대신 언어 독립적 데이터 형식 이름, Int32를 사용 합니다.
 
- 각 개별 토큰 매개 변수 또는 멤버의 이름을 다음 언어 특정 데이터 형식 이름에 대해 대/소문자 구분 방식으로 확인 됩니다.
+매개 변수 및 멤버 이름은 개발 도구에서 제공 해야 하는 형식을 설명 하는 것 보다 의미를 전달 하는 데 더 적합 합니다. 멤버의 이름으로 데이터 형식 이름을 사용 해야 하는 경우 언어 관련 이름을 사용 하는 대신 언어 독립적 이름을 사용 합니다. 예를 들어 C# 형식 이름 `int`대신 언어 독립적 데이터 형식 이름인를 `Int32`사용 합니다.
+
+매개 변수 또는 멤버의 이름에 있는 각 불연속 토큰은 대/소문자를 구분 하지 않는 방식으로 다음과 같은 언어 관련 데이터 형식 이름에 대해 확인 됩니다.
 
 - Bool
-
 - WChar
-
 - Int8
-
 - UInt8
-
 - Short
-
 - UShort
-
 - Int
-
-- UInt
-
+- 단위
 - 정수
-
 - UInteger
-
 - Long
-
 - ULong
-
 - 부호 없음
-
 - 서명
-
 - Float
+- Float32
+- 아니면
 
-- float32
-
-- float64
-
-또한 매개 변수의 이름은 확인 됩니다 다음 언어에 관계 없이 데이터 형식 이름에 대해 대/소문자 구분 방식.
+또한 매개 변수의 이름도 대/소문자를 구분 하지 않는 방식으로 다음과 같은 언어 독립적 데이터 형식 이름에 대해 확인 됩니다.
 
 - 개체
-
-- obj
-
+- 인스턴스인
 - 부울
-
 - Char
-
 - 문자열
-
 - SByte
-
 - Byte
-
 - UByte
-
 - Int16
-
 - UInt16
-
 - Int32
-
 - UInt32
-
 - Int64
-
 - UInt64
-
 - IntPtr
-
 - ptr
-
 - 포인터
-
 - UInptr
-
 - UPtr
-
 - UPointer
-
 - Single
-
 - Double
-
 - Decimal
-
-- Guid
+- GUID
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- **매개 변수에서 발생 한 경우:**
 
- 데이터 형식 식별자를 매개 변수 이름을 더 의미를 설명 하는 용어 또는 'value'와 같은 보다 일반적인 용어를 바꿉니다.
+**매개 변수에 대해 발생 하는 경우:**
 
- **발생 한 경우 멤버에 대해:**
+매개 변수 이름에 있는 데이터 형식 식별자를 의미를 더 잘 설명 하는 용어 또는 ' value '와 같은 보다 일반적인 용어로 바꾸십시오.
 
- 해당 의미, 언어에 관계 없이 해당 하는, 'value'와 같은 보다 일반적인 용어를 더 잘 설명 하는 용어를 사용 하 여 멤버 이름의 언어 특정 데이터 형식 식별자를 대체 합니다.
+**멤버에 대해 발생 한 경우:**
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
- 형식 기반 매개 변수 및 멤버 이름의 가끔 사용 적절할 수 있습니다. 그러나 새로운 개발에 알려져 있지 않습니다에 대 한 시나리오 발생이 규칙에서 경고를 표시 해야 하는 위치입니다. 에 이전에 제공 된 라이브러리에 대 한이 규칙에서 경고를 표시 해야 합니다.
+멤버의 이름에 있는 언어별 데이터 형식 식별자를 의미, 언어에 관계 없이 해당 하는 용어 또는 ' value '와 같은 보다 일반적인 용어를 더 잘 설명 하는 용어로 바꿉니다.
 
-## <a name="related-rules"></a>관련된 규칙
- [CA1709: 식별자에는 올바르게 표기를 사용 해야](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 
- [CA1708: 식별자 대/소문자만 달라 야 합니다.](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+때때로 형식 기반 매개 변수 및 멤버 이름을 사용 하는 것이 적절할 수 있습니다. 그러나 새로운 개발의 경우에는이 규칙에서 경고를 표시 하지 않아야 하는 알려진 시나리오가 발생 하지 않습니다. 이전에 제공 된 라이브러리의 경우이 규칙에서 경고를 표시 하지 않을 수 있습니다.
 
- [CA1707: 식별자에는 밑줄 없어야 합니다.](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+## <a name="configurability"></a>구성이
 
- [CA1719: 매개 변수 이름은 멤버 이름과 일치 하지는](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)
+레거시 분석이 아닌 [FxCop 분석기](install-fxcop-analyzers.md) 에서이 규칙을 실행 하는 경우 해당 액세스 가능성에 따라이 규칙을 실행할 코드 베이스 부분을 구성할 수 있습니다. 예를 들어 public이 아닌 API 화면에 대해서만 규칙을 실행 하도록 지정 하려면 프로젝트의 editorconfig 파일에 다음 키-값 쌍을 추가 합니다.
+
+```ini
+dotnet_code_quality.ca1720.api_surface = private, internal
+```
+
+이 규칙에 대해서만이 옵션을 구성 하거나, 모든 규칙에 대해 또는이 범주의 모든 규칙에 대해이 옵션을 구성할 수 있습니다 (명명). 자세한 내용은 [FxCop 분석기 구성](configure-fxcop-analyzers.md)을 참조 하세요.
+
+## <a name="related-rules"></a>관련 규칙
+
+- [CA1709: 식별자의 대/소문자를 올바르게 지정 해야 합니다.](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708: 식별자는 대/소문자가 달라 야 합니다.](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1707: 식별자에는 밑줄을 사용할 수 없습니다.](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+- [CA1719: 매개 변수 이름은 멤버 이름과 일치 하면 안 됩니다.](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)

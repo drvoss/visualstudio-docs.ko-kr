@@ -1,14 +1,9 @@
 ---
 title: 참조 페이지, 프로젝트 디자이너(Visual Basic) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesReference
 - vb.ProjectPropertiesUnusedReference
@@ -21,18 +16,17 @@ ms.assetid: 5a47c595-e084-401c-86e1-74e0bf74fd86
 caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0dabf5b84eb1adde1d6e579b7ec5ad6a6c443723
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 4cdda457fec0b98e6d90760376688727b9018f8b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859059"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689830"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>참조 페이지, 프로젝트 디자이너(Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **프로젝트 디자이너**의 **참조** 페이지를 사용하여 프로젝트에서 참조, 웹 참조 및 가져온 네임스페이스를 관리합니다. 프로젝트에는 COM 구성 요소, XML 웹 서비스, .NET Framework 클래스 라이브러리나 어셈블리 또는 기타 클래스 라이브러리에 대한 참조가 포함될 수 있습니다. 참조 사용에 대한 자세한 내용은 [프로젝트의 참조 관리](../../ide/managing-references-in-a-project.md)를 참조하세요.  
   
  **참조** 페이지에 액세스하려면 **솔루션 탐색기**에서 프로젝트 노드(**솔루션** 노드 아님)를 선택합니다. 그런 다음 메뉴 모음에서 **프로젝트**, **속성**을 선택합니다. 프로젝트 디자이너가 나타나면 **참조** 탭을 클릭합니다.  
@@ -49,12 +43,12 @@ ms.locfileid: "49859059"
  **참조 경로** 대화 상자에 액세스하려면 이 단추를 클릭합니다.  
   
 > [!NOTE]
->  프로젝트 시스템이 어셈블리 참조를 찾으면 시스템에서는 다음 순서로 다음 위치를 확인하여 참조를 확인합니다.  
+> 프로젝트 시스템이 어셈블리 참조를 찾으면 시스템에서는 다음 순서로 다음 위치를 확인하여 참조를 확인합니다.  
 > 
 > 1. 프로젝트 폴더. 프로젝트 폴더 파일은 **모든 파일 표시**가 적용되지 않을 경우 **솔루션 탐색기**에 표시됩니다.  
->    2.  **참조 경로** 대화 상자에 지정된 폴더.  
->    3.  **참조 추가** 대화 상자에 파일을 표시하는 폴더.  
->    4.  프로젝트의 obj 폴더. COM 참조를 프로젝트에 추가하면 하나 이상의 어셈블리가 프로젝트의 obj 폴더에 추가될 수 있습니다.  
+>    2. **참조 경로** 대화 상자에 지정된 폴더.  
+>    3. **참조 추가** 대화 상자에 파일을 표시하는 폴더.  
+>    4. 프로젝트의 obj 폴더. COM 참조를 프로젝트에 추가하면 하나 이상의 어셈블리가 프로젝트의 obj 폴더에 추가될 수 있습니다.  
   
  **참조**  
  이 목록에는 프로젝트에 있는 사용되거나 사용되지 않은 모든 참조가 표시됩니다.  
@@ -86,17 +80,14 @@ ms.locfileid: "49859059"
  **사용자 가져오기 업데이트**  
  네임스페이스 목록에서 사용자가 지정한 네임스페이스를 선택하고, **가져온 네임스페이스** 상자에서 해당 네임스페이스를 대체할 이름을 입력하고 나서, 이 단추를 클릭하여 새 네임스페이스로 변경합니다. 이 단추는 선택된 네임스페이스가 **사용자 가져오기 추가** 단추를 사용하여 목록에 추가한 네임스페이스인 경우에만 활성화됩니다. 다음을 추가할 수 있습니다.  
   
--   클래스 또는 네임스페이스(예: <xref:System.Math?displayProperty=fullName>).  
+- 클래스 또는 네임스페이스(예: <xref:System.Math?displayProperty=fullName>).  
   
--   별칭이 지정된 가져오기(예: `VB=Microsoft.VisualBasic`).  
+- 별칭이 지정된 가져오기(예: `VB=Microsoft.VisualBasic`).  
   
--   XML 네임스페이스(예: `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`).  
+- XML 네임스페이스(예: `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`).  
   
 ## <a name="see-also"></a>참고 항목  
- [NIB 방법: 참조 추가 대화 상자를 사용하여 참조 추가 또는 제거](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
- [방법: 가져온 네임스페이스 추가 또는 제거(Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)   
- [NIB: 웹 참조 추가 대화 상자](http://msdn.microsoft.com/en-us/bdf05776-c591-40af-bfd7-e1e2aa1e87b5)   
- [Imports 문(XML 네임스페이스)](http://msdn.microsoft.com/library/1f4d50a6-08c7-4c2e-8206-ccae35fcd1b4)
-
-
-
+ [NIB 방법: 참조 추가 또는 제거 참조 추가 대화 상자를 사용 하 여](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
+ [방법: 추가 또는 제거 가져온 네임 스페이스 (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)   
+ [NIB: 웹 참조 추가 대화 상자](https://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5)   
+ [Imports 문(XML 네임스페이스)](https://msdn.microsoft.com/library/1f4d50a6-08c7-4c2e-8206-ccae35fcd1b4)

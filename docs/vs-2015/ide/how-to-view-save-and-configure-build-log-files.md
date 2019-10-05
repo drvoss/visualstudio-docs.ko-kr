@@ -1,25 +1,20 @@
 ---
 title: '방법: 빌드 로그 파일 보기, 저장 및 구성 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 26ece0c0d46e5c747ac05bae8c2d4fc793c34601
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7bd8bae0213755b11c145c4bef9c312fe3990c4d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432325"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>방법: 빌드 로그 파일 보기, 저장 및 구성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,23 +25,23 @@ Visual Studio IDE에서 프로젝트를 빌드한 후에 **출력** 창에서 �
   
 ### <a name="to-view-the-build-log-file-for-a-c-project"></a>C++ 프로젝트에 대한 빌드 로그 파일을 보려면  
   
-1.  **Windows 탐색기** 또는 **파일 탐색기**에서 다음 파일을 엽니다. \\...\Visual Studio *Version*\Projects\\*ProjectName*\\*ProjectName*\Debug\\*ProjectName*.txt  
+1. **Windows 탐색기** 또는 **파일 탐색기**에서 다음 파일을 엽니다. \\...\Visual Studio *Version*\Projects\\*ProjectName*\\*ProjectName*\Debug\\*ProjectName*.txt  
   
 ### <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>관리 코드 프로젝트에 빌드 로그 파일을 만들려면  
   
-1.  메뉴 모음에서 **빌드**, **솔루션 빌드**를 선택합니다.  
+1. 메뉴 모음에서 **빌드**, **솔루션 빌드**를 선택합니다.  
   
-2.  **출력** 창에서 빌드의 정보를 강조 표시한 다음 클립보드에 복사합니다.  
+2. **출력** 창에서 빌드의 정보를 강조 표시한 다음 클립보드에 복사합니다.  
   
-3.  메모장과 같은 텍스트 편집기를 열고 정보를 파일에 붙여넣은 다음 저장합니다.  
+3. 메모장과 같은 텍스트 편집기를 열고 정보를 파일에 붙여넣은 다음 저장합니다.  
   
 ### <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>빌드 로그에 포함되는 정보의 양을 변경하려면  
   
-1.  메뉴 모음에서 **도구**, **옵션**을 선택합니다.  
+1. 메뉴 모음에서 **도구**, **옵션**을 선택합니다.  
   
-2.  **프로젝트 및 솔루션** 페이지에서 **빌드 및 실행** 페이지를 선택합니다.  
+2. **프로젝트 및 솔루션** 페이지에서 **빌드 및 실행** 페이지를 선택합니다.  
   
-3.  **MSBuild 프로젝트 빌드 출력 세부 정보 표시** 목록에서 다음 값 중 하나를 선택하고 **확인** 단추를 선택합니다.  
+3. **MSBuild 프로젝트 빌드 출력 세부 정보 표시** 목록에서 다음 값 중 하나를 선택하고 **확인** 단추를 선택합니다.  
   
     |세부 정보 표시 수준|설명|  
     |---------------------|-----------------|  
@@ -59,12 +54,9 @@ Visual Studio IDE에서 프로젝트를 빌드한 후에 **출력** 창에서 �
      자세한 내용은 [옵션 대화 상자, 프로젝트 및 솔루션, 빌드 및 실행](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) 및 <xref:Microsoft.Build.Framework.LoggerVerbosity>를 참조하세요.  
   
     > [!IMPORTANT]
-    >  **출력** 창(모든 프로젝트) 및 *ProjectName*.txt 파일(C++ 프로젝트에만 해당)에 적용할 변경 내용에 대한 프로젝트를 다시 작성해야 합니다.  
+    > **출력** 창(모든 프로젝트) 및 *ProjectName*.txt 파일(C++ 프로젝트에만 해당)에 적용할 변경 내용에 대한 프로젝트를 다시 작성해야 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [빌드 로그 가져오기](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Visual Studio에서 프로젝트 및 솔루션 빌드 및 정리](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [컴파일 및 빌드](../ide/compiling-and-building-in-visual-studio.md)
-
-
-

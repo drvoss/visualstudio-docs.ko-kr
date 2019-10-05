@@ -1,8 +1,6 @@
 ---
 title: 클래스 디자이너용 키보드 및 마우스 바로 가기
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.classdetails.window
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c12d8dac-9902-4fde-b721-2a8116da53b7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87b447c3cf2fbba77584675edf3d34f44a98cb64
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 37c56a14e5ac4358be53baa41094c23253608bbb
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848503"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043032"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>클래스 다이어그램 및 클래스 세부 내용 창의 키보드 및 마우스 바로 가기
 
@@ -58,7 +56,7 @@ ms.locfileid: "49848503"
 
 클래스 다이어그램에서는 다음과 같은 키보드 동작이 지원됩니다.
 
-|Key|컨텍스트|설명|
+|키|컨텍스트|설명|
 |---------|-------------|-----------------|
 |**화살표 키**|내부 형식 모양|모양 내용에 대한 트리 스타일 탐색(모양을 둘러싼 래핑이 지원됨) 왼쪽 및 오른쪽 키는 확장 가능한 경우 현재 항목을 확장/축소하고, 그렇지 않은 경우 부모로 이동합니다(자세한 동작은 트리 뷰 탐색 참조).|
 |**화살표 키**|최상위 모양|다이어그램에서 모양 이동|
@@ -91,9 +89,9 @@ ms.locfileid: "49848503"
 
 |||
 |-|-|
-|Key|결과|
-|**,**(쉼표)|커서가 매개 변수 행에 있는 경우 쉼표를 입력하면 커서가 다음 매개 변수의 이름 필드로 이동합니다. 커서가 메서드의 마지막 매개 변수 행에 있는 경우 새 매개 변수를 만드는 데 사용할 수 있는 \<매개 변수 추가> 필드로 커서를 이동합니다.<br /><br /> 커서가 **클래스 세부 내용** 창의 다른 곳에 있는 경우 쉼표를 입력하면 현재 필드에 쉼표가 리터럴로 추가됩니다.|
-|**;**(세미콜론) 또는 **)** (닫는 괄호)|**클래스 세부 내용** 창 그리드에서 다음 멤버 행의 이름 필드로 커서를 이동합니다.|
+|키|결과|
+|**,** (쉼표)|커서가 매개 변수 행에 있는 경우 쉼표를 입력하면 커서가 다음 매개 변수의 이름 필드로 이동합니다. 커서가 메서드의 마지막 매개 변수 행에 있는 경우 새 매개 변수를 만드는 데 사용할 수 있는 \<매개 변수 추가> 필드로 커서를 이동합니다.<br /><br /> 커서가 **클래스 세부 내용** 창의 다른 곳에 있는 경우 쉼표를 입력하면 현재 필드에 쉼표가 리터럴로 추가됩니다.|
+|**;** (세미콜론) 또는 **)** (닫는 괄호)|**클래스 세부 내용** 창 그리드에서 다음 멤버 행의 이름 필드로 커서를 이동합니다.|
 |**Tab**|먼저 왼쪽에서 오른쪽으로 이동한 다음 위쪽에서 아래쪽으로 이동하여 커서를 다음 필드로 이동합니다. 커서가 텍스트를 입력한 필드에서 이동하는 경우 **클래스 세부 내용**에서 해당 텍스트를 처리하고 오류를 생성하지 않으면 저장합니다.<br /><br /> 커서가 \<매개 변수 추가>와 같은 빈 필드에 있는 경우 Tab 키를 누르면 다음 행의 첫 번째 필드로 이동합니다.|
 |**스페이스바**|먼저 왼쪽에서 오른쪽으로 이동한 다음 위쪽에서 아래쪽으로 이동하여 커서를 다음 필드로 이동합니다. 커서가 \<매개 변수 추가>와 같은 빈 필드에 있는 경우 다음 행의 첫 번째 필드로 이동합니다. 쉼표 바로 뒤에 입력된 \<스페이스바>는 무시됩니다.<br /><br /> 커서가 요약 필드에 있는 경우 스페이스바를 입력하면 공백 문자가 추가됩니다.<br /><br /> 커서가 지정된 행의 숨기기 열에 있는 경우 스페이스바를 입력하면 숨기기 확인란의 값이 설정/해제됩니다.|
 |**Ctrl**+**Tab**|다른 문서 창으로 전환합니다. 예를 들어 **클래스 세부 내용** 창에서 열려 있는 코드 파일로 전환합니다.|
@@ -105,3 +103,6 @@ ms.locfileid: "49848503"
 ## <a name="see-also"></a>참고 항목
 
 - [형식 멤버 만들기 및 구성](creating-and-configuring-type-members.md)
+- [단독으로 키보드를 사용하는 방법](../reference/how-to-use-the-keyboard-exclusively.md)
+- [Visual Studio의 기본 바로 가기 키](../default-keyboard-shortcuts-in-visual-studio.md)
+- [Blend의 바로 가기 키](../../designers/keyboard-shortcuts-in-blend.md)

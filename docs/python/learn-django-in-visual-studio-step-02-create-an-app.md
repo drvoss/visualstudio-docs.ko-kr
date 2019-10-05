@@ -3,22 +3,20 @@ title: Visual Studio 2단계, 보기 및 페이지 템플릿에서 Django 자습
 titleSuffix: ''
 description: Visual Studio 프로젝트 컨텍스트에서 Django 기본 사항을 검토하는 연습 과정으로, 앱을 만들고 보기 및 템플릿을 사용하는 단계를 구체적으로 설명합니다.
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dade4ee20aec654a32fac6904cca121c2ea726e6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: de486593c21813746c6c13fa835506d7b1703279
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62958227"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>2단계: 보기 및 페이지 템플릿을 사용하여 Django 앱 만들기
 
@@ -36,7 +34,7 @@ ms.locfileid: "53058547"
 
 ## <a name="step-2-1-create-an-app-with-a-default-structure"></a>2-1단계: 기본 구조로 앱 만들기
 
-Django 앱은 특정 용도로 관련 파일 집합을 포함하는 별도의 Python 패키지입니다. Django 프로젝트에는 많은 앱이 포함될 수 있으며, 이는 웹 호스트가 단일 도메인 이름으로 많은 별도의 진입점을 제공할 수 있다는 사실을 반영합니다. 예를 들어 contoso.com과 같은 도메인에 대한 Django 프로젝트에는 www.contoso.com용 앱 하나와 support.contoso.com용 두 번째 앱 및 docs.contoso.com용 세 번째 앱이 포함될 수 있습니다. 이 경우에 Django 프로젝트는 해당 *urls.py* 및 *settings.py* 파일에서 사이트 수준 URL 라우팅 및 설정을 처리하는 반면, 각 앱은 내부 라우팅, 보기, 모델, 정적 파일 및 관리 인터페이스를 통해 고유한 스타일 및 동작을 갖습니다.
+Django 앱은 특정 용도로 관련 파일 집합을 포함하는 별도의 Python 패키지입니다. Django 프로젝트에는 많은 앱이 포함될 수 있으며, 이는 웹 호스트가 단일 도메인 이름으로 많은 별도의 진입점을 제공할 수 있다는 사실을 반영합니다. 예를 들어 contoso.com과 같은 도메인에 대한 Django 프로젝트에는 `www.contoso.com`용 앱 하나와 support.contoso.com용 두 번째 앱 및 docs.contoso.com용 세 번째 앱이 포함될 수 있습니다. 이 경우에 Django 프로젝트는 해당 *urls.py* 및 *settings.py* 파일에서 사이트 수준 URL 라우팅 및 설정을 처리하는 반면, 각 앱은 내부 라우팅, 보기, 모델, 정적 파일 및 관리 인터페이스를 통해 고유한 스타일 및 동작을 갖습니다.
 
 Django 앱은 일반적으로 표준 파일 집합으로 시작합니다. Visual Studio는 Django 프로젝트 내에서 Django 앱을 초기화하는 항목 템플릿을 동일한 용도로 사용되는 통합 메뉴 명령과 함께 제공합니다.
 

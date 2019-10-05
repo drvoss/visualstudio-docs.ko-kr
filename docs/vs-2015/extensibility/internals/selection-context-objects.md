@@ -1,27 +1,22 @@
 ---
 title: 선택 컨텍스트 개체 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - selection, tracking
 - selection, context objects
 ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: beaf1b9c67cdad3237d1ac48b4a8e464b0a203a7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7e1a43997d56f8d89f194fb83d20c1f160378873
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769407"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187423"
 ---
 # <a name="selection-context-objects"></a>선택 컨텍스트 개체
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,11 +35,11 @@ ms.locfileid: "51769407"
   
   다음 순서 대로 선택 영역 추적의 일반적인 과정을 보여 줍니다.  
   
-1.  IDE는 새로 열린된 창에서 선택 항목 컨텍스트를 검색 하 고 전역 선택 컨텍스트에 넣습니다. 선택 항목 컨텍스트 HIERARCHY_DONTPROPAGATE 또는 SELCONTAINER_DONTPROPAGATE을 사용 하는 경우 해당 정보는 전역 컨텍스트를 전파 되지 않습니다. 자세한 내용은 [사용자에 게 피드백](../../extensibility/internals/feedback-to-the-user.md)합니다.  
+1. IDE는 새로 열린된 창에서 선택 항목 컨텍스트를 검색 하 고 전역 선택 컨텍스트에 넣습니다. 선택 항목 컨텍스트 HIERARCHY_DONTPROPAGATE 또는 SELCONTAINER_DONTPROPAGATE을 사용 하는 경우 해당 정보는 전역 컨텍스트를 전파 되지 않습니다. 자세한 내용은 [사용자에 게 피드백](../../extensibility/internals/feedback-to-the-user.md)합니다.  
   
-2.  알림 이벤트를 요청한 모든 VSPackage에 브로드캐스트 됩니다.  
+2. 알림 이벤트를 요청한 모든 VSPackage에 브로드캐스트 됩니다.  
   
-3.  VSPackage는 도구 또는 기타 유사한 작업을 다시 활성화 계층을 업데이트 하는 등의 작업을 수행 하 여 수신한 이벤트에서 작동 합니다.  
+3. VSPackage는 도구 또는 기타 유사한 작업을 다시 활성화 계층을 업데이트 하는 등의 작업을 수행 하 여 수신한 이벤트에서 작동 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>   
@@ -52,4 +47,3 @@ ms.locfileid: "51769407"
  [Visual Studio에서 계층 구조](../../extensibility/internals/hierarchies-in-visual-studio.md)   
  [IDE의 선택 및 통화](../../extensibility/internals/selection-and-currency-in-the-ide.md)   
  [프로젝트 형식](../../extensibility/internals/project-types.md)
-

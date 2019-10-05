@@ -1,14 +1,9 @@
 ---
 title: Import 요소(MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Import
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: 3bfecaf1-69fd-4008-b651-c9dafd4389d9
 caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 575fd2e83abd309b67e6e1684fd38b8d5c9953ac
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9f8edefc8e097f7ada67041b807231f594774548
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248471"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433552"
 ---
 # <a name="import-element-msbuild"></a>Import 요소(MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 한 프로젝트 파일의 내용을 다른 프로젝트 파일로 가져옵니다.  
   
  \<Project>  
@@ -81,9 +75,9 @@ ms.locfileid: "49248471"
  가져온 프로젝트의 스키마는 표준 프로젝트의 스키마와 동일합니다. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]는 가져온 프로젝트를 빌드할 수는 있지만 그럴 가능성은 매우 낮습니다. 일반적으로 가져온 프로젝트에는 설정할 속성 또는 대상을 실행할 순서에 대한 정보가 포함되어 있지 않기 때문입니다. 가져온 프로젝트는 그것을 가져온 상위 프로젝트에 의존하여 해당 정보를 제공합니다.  
   
 > [!NOTE]
->  조건부 import 문은 명령줄 MSBuild에서 작동하지만, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE(통합 개발 환경)에서는 MSBuild와 작동하지 않습니다. 조건부 가져오기는 프로젝트를 로드할 때 설정된 구성 및 플랫폼 값을 사용하여 평가됩니다. 이후 프로젝트 파일의 조건을 재평가하도록 요구하는 변경(예: 플랫폼 변경)이 발생하는 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]는 속성 및 항목에 대한 조건은 재평가하지만 가져오기에 대한 조건은 재평가하지 않습니다. 가져오기 조건부는 재평가되지 않으므로 가져오기는 건너뜁니다.  
+> 조건부 import 문은 명령줄 MSBuild에서 작동하지만, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE(통합 개발 환경)에서는 MSBuild와 작동하지 않습니다. 조건부 가져오기는 프로젝트를 로드할 때 설정된 구성 및 플랫폼 값을 사용하여 평가됩니다. 이후 프로젝트 파일의 조건을 재평가하도록 요구하는 변경(예: 플랫폼 변경)이 발생하는 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]는 속성 및 항목에 대한 조건은 재평가하지만 가져오기에 대한 조건은 재평가하지 않습니다. 가져오기 조건부는 재평가되지 않으므로 가져오기는 건너뜁니다.  
 >   
->  이 문제를 해결하려면 조건부 가져오기를 .targets 파일에 넣거나 조건부 블록(예: [Choose Element (MSBuild)](../msbuild/choose-element-msbuild.md) 블록)에 코드를 넣습니다.  
+> 이 문제를 해결하려면 조건부 가져오기를 .targets 파일에 넣거나 조건부 블록(예: [Choose Element (MSBuild)](../msbuild/choose-element-msbuild.md) 블록)에 코드를 넣습니다.  
   
 ## <a name="wildcards"></a>와일드카드  
  .NET Framework 4에서는 MSBuild가 Project 특성에 와일드카드를 사용하도록 허용합니다. 와일드카드가 있으면 발견되는 모든 일치 항목이 정렬되고(재현 가능성을 위해), 마치 해당 순서가 명시적으로 설정된 것처럼 순서대로 가져오기가 수행됩니다.  
@@ -123,6 +117,3 @@ ms.locfileid: "49248471"
 ## <a name="see-also"></a>참고 항목  
  [프로젝트 파일 스키마 참조](../msbuild/msbuild-project-file-schema-reference.md)   
  [방법: 여러 프로젝트 파일에서 동일한 대상 사용](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
-
-
-

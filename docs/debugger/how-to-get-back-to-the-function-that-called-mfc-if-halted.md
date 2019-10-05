@@ -2,7 +2,6 @@
 title: 중지 된 경우 MFC를 호출한 함수로 돌아갈 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.mfc
@@ -22,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: d254a5a9-afbd-4923-9d7a-7422d824cabf
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c746fc287435ea6219e0f6052bc9372fc2ae5d25
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MTE95
+ms.openlocfilehash: f846b636d2790839de6d05d048fc7e24d0bc6253
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048570"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906694"
 ---
 # <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>방법: 중지된 경우 MFC를 호출한 함수로 돌아가기
 
@@ -43,9 +42,9 @@ ms.locfileid: "53048570"
 
 ## <a name="navigate-to-the-function-from-which-mfc-was-called"></a>MFC를 호출한 함수로 이동 합니다.
 
--   **호출 스택** 창을 사용합니다.
+- **호출 스택** 창을 사용합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [네이티브 코드 디버그 FAQ](../debugger/debugging-native-code-faqs.md)
 - [네이티브 코드 디버그](../debugger/debugging-native-code.md)

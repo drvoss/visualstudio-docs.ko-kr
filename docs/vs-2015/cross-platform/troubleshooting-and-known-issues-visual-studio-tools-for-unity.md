@@ -1,30 +1,24 @@
 ---
 title: 문제 해결 및 알려진 문제(Visual Studio Tools for Unity) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-unity-tools
+ms.topic: troubleshooting
 ms.assetid: 8f5db192-8d78-4627-bd07-dbbc803ac554
 caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
-manager: ghogen
-ms.openlocfilehash: 94240d5af43944b23890a32b757fe1b4f14b77ec
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6e1b34cbc2497bd70f65021c83db4f59480519f1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755511"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62573208"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>문제 해결 및 알려진 문제(Visual Studio Tools for Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 이 섹션에서는 Visual Stuio Tools for Unity와 관련된 일반적인 문제에 대한 솔루션, 알려진 문제의 설명을 찾아보고 오류를 보고하여 Visual Studio Tools for Unity를 개선하는 데 도움이 되는 방법을 알아봅니다.  
   
 ## <a name="troubleshooting"></a>문제 해결  
@@ -35,11 +29,11 @@ ms.locfileid: "51755511"
   
 ##### <a name="to-migrate-your-unity-project-from-unityvs-18-to-visual-studio-tools-for-unity-19"></a>UnityVS 1.8에서 Visual Studio Tools for Unity 1.9로 Unity 프로젝트를 마이그레이션하려면  
   
-1.  Unity 프로젝트에서 이전 솔루션 및 프로젝트 파일을 삭제합니다. Unity 프로젝트의 루트 디렉터리에서 Visual Studio .sln 및 .* proj 파일을 찾아 모두 삭제합니다.  
+1. Unity 프로젝트에서 이전 솔루션 및 프로젝트 파일을 삭제합니다. Unity 프로젝트의 루트 디렉터리에서 Visual Studio .sln 및 .* proj 파일을 찾아 모두 삭제합니다.  
   
-2.  Visual Studio Tools for Unity 패키지를 Unity 프로젝트로 가져옵니다. VSTU 패키지를 가져오는 방법에 대한 자세한 내용은 [시작](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) 페이지에서 Visual Studio Tools for Unity 구성을 참조하세요.  
+2. Visual Studio Tools for Unity 패키지를 Unity 프로젝트로 가져옵니다. VSTU 패키지를 가져오는 방법에 대한 자세한 내용은 [시작](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) 페이지에서 Visual Studio Tools for Unity 구성을 참조하세요.  
   
-3.  새 솔루션 및 프로젝트 파일을 생성합니다. 지금 생성하려면 Unity 편집기의 주 메뉴에서 **Visual Studio Tools**, **프로젝트 파일 생성**을 선택합니다. 그렇지 않으면 원하는 경우 이 단계를 건너뛸 수 있습니다. **Visual Studio Tools**, **Visual Studio에서 열기**를 선택하면 Visual Studio Tools for Unity에서 새 파일을 자동으로 생성합니다.  
+3. 새 솔루션 및 프로젝트 파일을 생성합니다. 지금 생성하려면 Unity 편집기의 주 메뉴에서 **Visual Studio Tools**, **프로젝트 파일 생성**을 선택합니다. 그렇지 않으면 원하는 경우 이 단계를 건너뛸 수 있습니다. **Visual Studio Tools**, **Visual Studio에서 열기**를 선택하면 Visual Studio Tools for Unity에서 새 파일을 자동으로 생성합니다.  
   
 ### <a name="visual-studio-wont-load-the-solution-that-visual-studio-tools-for-unity-created"></a>Visual Studio는 Visual Studio Tools for Unity에서 만든 솔루션을 로드하지 않습니다.  
  자세한 내용은 [the answer to this stackoverflow question(이 stackoverflow 질문의 답변)](http://stackoverflow.com/a/24035907/36702)을 참조하세요.  
@@ -50,11 +44,11 @@ ms.locfileid: "51755511"
 ## <a name="known-issues"></a>알려진 문제  
  Visual Studio Tools for Unity에는 디버거가 C# 컴파일러의 Unity 이전 버전과 상호작용하는 방법에서 발생하는 알려진 문제가 있습니다. 문제를 해결하기 위해 노력 중이지만 해결하기 전까지는 다음과 같은 문제가 발생할 수 있습니다.  
   
--   디버그할 때 Unity가 충돌되는 경우가 있습니다.  
+- 디버그할 때 Unity가 충돌되는 경우가 있습니다.  
   
--   디버그할 때 Unity가 중지되는 경우가 있습니다.  
+- 디버그할 때 Unity가 중지되는 경우가 있습니다.  
   
--   특히 반복기 또는 switch 문 내에서 경우에 따라 메서드를 한 단계씩 코드 실행하고 메서드의 프로시저에서 나가는 동작이 제대로 작동하지 않습니다.  
+- 특히 반복기 또는 switch 문 내에서 경우에 따라 메서드를 한 단계씩 코드 실행하고 메서드의 프로시저에서 나가는 동작이 제대로 작동하지 않습니다.  
   
 ## <a name="reporting-errors"></a>오류 보고  
  충돌, 고정 또는 기타 오류가 발생하는 경우 오류 보고서를 전송하여 Visual Studio Tools for Unity의 품질을 개선할 수 있도록 도와주시기 바랍니다. Visual Studio Tools for Unity의 문제를 조사하고 해결하는 데 도움이 됩니다. 감사합니다!  
@@ -81,4 +75,3 @@ ms.locfileid: "51755511"
     **명령** 창이 먼저 표시되도록 해야 할 수 있습니다. Visual Studio의 주 메뉴에서 **보기**, **다른 창**, **명령 창**을 선택합니다.  
   
 6. 마지막으로 Visual Studio가 중지되었을 때 수행한 작업에 대한 설명과 함께 스레드 덤프를 [vstusp@microsoft.com](mailto:vstusp@microsoft.com)으로 보냅니다.
-

@@ -1,14 +1,9 @@
 ---
 title: 바꾸기 명령 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - edit.replace
 helpviewer_keywords:
@@ -18,18 +13,17 @@ ms.assetid: a15767f1-5a3d-44f5-8c77-7b0f1157f340
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 83281a656d553dfa677d7ae25bf043fc0b588978
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4ef58a39f1ff96a3c72cbb5a48940e378997cbca
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157822"
 ---
 # <a name="replace-command"></a>바꾸기 명령
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **찾기 및 바꾸기** 창의 **파일에서 바꾸기**에서 사용할 수 있는 옵션의 하위 집합을 사용하여 파일의 텍스트를 바꿉니다.  
   
 ## <a name="syntax"></a>구문  
@@ -42,10 +36,10 @@ Edit.Replace findwhat replacewith [/all] [/case]
   
 ## <a name="arguments"></a>인수  
  `findwhat`  
- 필수. 일치하는 텍스트입니다.  
+ 필수 요소. 일치하는 텍스트입니다.  
   
  `replacewith`  
- 필수. 일치된 텍스트를 대체할 텍스트입니다.  
+ 필수 요소. 일치된 텍스트를 대체할 텍스트입니다.  
   
 ## <a name="switches"></a>스위치  
  /all 또는 /a  
@@ -87,7 +81,7 @@ Edit.Replace findwhat replacewith [/all] [/case]
  /word 또는 /w  
  선택 사항입니다. 전체 단어만을 검색합니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  이 예제에서는 열린 모든 문서에서 `btnSend`를 `btnSubmit`으로 바꿉니다.  
   
 ```  
@@ -100,6 +94,3 @@ Edit.Replace findwhat replacewith [/all] [/case]
  [찾기/명령 상자](../../ide/find-command-box.md)   
  [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

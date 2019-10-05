@@ -1,30 +1,24 @@
 ---
 title: '연습: XSLT 계층 구조를 사용 하 여 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 5e60c8ec-cd05-4597-b856-55038218acf4
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5b94a958a915ad7858575e093cae525df17cc23e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ed644c1dda4ac3674ef60d0027c37532fc6d0f92
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158617"
 ---
 # <a name="walkthrough-using-xslt-hierarchy"></a>연습: XSLT 계층 구조 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XSLT 계층 구조 도구를 사용하면 많은 XML 개발 작업을 간단하게 수행할 수 있습니다. XSLT 스타일시트에서는 `includes` 및 `imports` 명령을 사용하는 경우가 자주 있습니다. 컴파일은 주 스타일시트에서 시작하지만 XSLT 스타일시트를 컴파일했을 때 오류가 발생하는 경우 이러한 오류는 주 스타일시트와 다른 소스에서 발생된 것일 수 있습니다. 오류를 해결하거나 스타일시트를 편집하려면 포함되거나 가져온 스타일시트에 액세스할 수 있어야 합니다. 디버거에서 스타일시트를 단계별로 실행하면 포함되거나 가져온 스타일시트가 열릴 수 있으며 하나 이상의 포함된 스타일시트의 일부 지점에 중단점을 추가할 수 있습니다.  
   
  XSLT 계층 구조 도구가 유용한 다른 시나리오는 기본 제공 템플릿 규칙에 중단점을 지정하는 것입니다. 템플릿 규칙은 스타일시트의 각 노드에 대해 생성되며 노드와 일치하는 다른 템플릿이 없는 경우 `xsl:apply-templates`에 의해 호출되는 특수 템플릿입니다. 기본 제공 템플릿 규칙에서 디버깅을 구현하려면 XSLT 디버거가 임시 폴더에서 규칙을 사용하여 파일을 생성하고 주 스타일시트를 사용하여 이러한 파일을 함께 컴파일합니다. 일부 `xsl:apply-template`에서 코드를 한 단계씩 실행하지 않고는 주 스타일시트에 포함된 스타일시트를 찾거나 기본 제공 템플릿 규칙을 사용하여 스타일시트를 열기가 어려울 수 있습니다.  
@@ -33,7 +27,7 @@ XSLT 계층 구조 도구를 사용하면 많은 XML 개발 작업을 간단하�
   
 ### <a name="procedure-title"></a>절차 제목  
   
-1.  Visual Studio에서 XML 문서를 엽니다. 이 예제에서는 다음 `collection.xml` 문서를 사용합니다.  
+1. Visual Studio에서 XML 문서를 엽니다. 이 예제에서는 다음 `collection.xml` 문서를 사용합니다.  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -57,7 +51,7 @@ XSLT 계층 구조 도구를 사용하면 많은 XML 개발 작업을 간단하�
     </COLLECTION>  
     ```  
   
-2.  다음 `xslincludefile.xsl`을 추가합니다.  
+2. 다음 `xslincludefile.xsl`을 추가합니다.  
   
     ```  
     <?xml version='1.0'?>  
@@ -80,7 +74,7 @@ XSLT 계층 구조 도구를 사용하면 많은 XML 개발 작업을 간단하�
     </xsl:stylesheet>  
     ```  
   
-3.  다음 `xslinclude.xsl` 파일을 추가합니다.  
+3. 다음 `xslinclude.xsl` 파일을 추가합니다.  
   
     ```  
     <?xml version='1.0'?>  
@@ -114,14 +108,11 @@ XSLT 계층 구조 도구를 사용하면 많은 XML 개발 작업을 간단하�
     </xsl:stylesheet>  
     ```  
   
-4.  `<xsl:include href="xslincludefile.xsl" />` 명령에 중단점을 추가합니다.  
+4. `<xsl:include href="xslincludefile.xsl" />` 명령에 중단점을 추가합니다.  
   
-5.  디버깅을 시작합니다.  
+5. 디버깅을 시작합니다.  
   
-6.  `<xsl:include href="xslincludefile.xsl" />` 명령에서 디버거가 중지되면 한 단계씩 코드 실행 단추를 누릅니다. 참조된 스타일시트에서 디버깅을 계속할 수 있습니다. 계층 구조가 표시되며 디자이너에서 올바른 경로를 표시합니다.  
+6. `<xsl:include href="xslincludefile.xsl" />` 명령에서 디버거가 중지되면 한 단계씩 코드 실행 단추를 누릅니다. 참조된 스타일시트에서 디버깅을 계속할 수 있습니다. 계층 구조가 표시되며 디자이너에서 올바른 경로를 표시합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [연습: XSLT 프로파일러](../xml-tools/walkthrough-xslt-profiler.md)
-
-
-

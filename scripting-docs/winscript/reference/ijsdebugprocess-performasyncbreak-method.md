@@ -2,7 +2,6 @@
 title: 'Ijsdebugprocess:: Performasyncbreak 메서드 | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,19 +15,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e2d3ad50c1be5da0f4e93748227933d5f1ffd92
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5a4fdb70341744c764779d406372bbd55418fd29
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557987"
 ---
 # <a name="ijsdebugprocessperformasyncbreak-method"></a>IJsDebugProcess::PerformAsyncBreak 메서드
-다음 스크립트 명령에서 중단 하도록 프로그램이 중단 모드에서 스크립트 엔진을 넣습니다.  
+다음 스크립트 명령 실행을 중단 하므로 중단 모드에서 스크립트 엔진을 배치 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT PerformAsyncBreak(  
    DWORD threadId  
 );  

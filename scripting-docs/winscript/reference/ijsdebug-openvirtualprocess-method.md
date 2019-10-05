@@ -2,7 +2,6 @@
 title: 'Ijsdebug:: Openvirtualprocess 메서드 | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,20 +15,20 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5acb137337e46a6e84f7d68c9330a3ca847f2e5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 97a055bf1550d74dc6b86d93ffdb9ca406afb43d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727363"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583596"
 ---
 # <a name="ijsdebugopenvirtualprocess-method"></a>IJsDebug::OpenVirtualProcess 메서드
-팩터리 메서드를 새 가상 프로세스 개체를 만드는 데 사용 합니다.  
+새 가상 프로세스 개체를 만드는 데 사용 되는 팩터리 메서드.  
   
 ## <a name="syntax"></a>구문  
   
-```  
- HRESULT OpenVirtualProcess(  
+```cpp
+HRESULT OpenVirtualProcess(  
    DWORD processId,  
    UINT64 runtimeJsBaseAddress,  
    IJsDebugDataTarget *pDataTarget,  
@@ -39,13 +38,13 @@ ms.locfileid: "24727363"
   
 #### <a name="parameters"></a>매개 변수  
  `processId`  
- [in] 디버거를 연결 하는 프로세스 Id입니다.  
+ [in] 디버거를 연결할 프로세스 Id입니다.  
   
  `runtimeJsBaseAddress`  
- [in] JavaScript 런타임이 대상 프로세스에 로드 하는 기본 주소입니다.  
+ [in] JavaScript 런타임에서 대상 프로세스로 로드에는 기본 주소입니다.  
   
  `pDataTarget`  
- [in] 디버거 프로세스의 상태에 대 한 쿼리를 제공 된 인터페이스입니다.  
+ [in] 디버거 프로세스의 상태에 대 한 쿼리 인터페이스를 제공된 합니다.  
   
  `ppProcess`  
  [out] 새 디버그 프로세스 개체  
@@ -53,7 +52,7 @@ ms.locfileid: "24727363"
 ## <a name="return-value"></a>반환 값  
   
 ## <a name="remarks"></a>설명  
- Jscript9diag 및 Jscript9 일치 하지 않는 경우 E_JsDEBUG_MISMATCHED_RUNTIME를 반환 합니다.  
+ Jscript9diag 및 jscript9와 일치 하지 않으면 E_JsDEBUG_MISMATCHED_RUNTIME를 반환 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더:** jscript9diag.h  

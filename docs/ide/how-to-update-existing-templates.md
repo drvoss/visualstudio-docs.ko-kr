@@ -1,8 +1,6 @@
 ---
 title: 기존 프로젝트 항목 템플릿 업데이트
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - item templates, updating
@@ -11,27 +9,27 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 52f24f76ff217b694a1e5d2b510d16b0911d2fda
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 57e457224d47e278df169b931c6e9cf6b8ae25e1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974698"
 ---
 # <a name="how-to-update-existing-templates"></a>방법: 기존 템플릿 업데이트
 
-템플릿을 만들고 파일을 *.zip* 파일로 압축한 후 템플릿을 수정하려고 할 수 있습니다. 템플릿의 파일을 수동으로 변경하거나 해당 템플릿을 기반으로 하는 프로젝트에서 새 템플릿을 내보내는 방법으로 이 작업을 수행할 수 있습니다.
+템플릿을 만들고 파일을 *.zip* 파일로 압축한 후 템플릿을 수정하려고 할 수 있습니다. 템플릿의 파일을 수동으로 변경하거나 템플릿을 기반으로 하는 프로젝트에서 새 템플릿을 내보내는 방법으로 이 작업을 수행할 수 있습니다.
 
-## <a name="using-the-export-template-wizard-to-update-an-existing-project-template"></a>템플릿 내보내기 마법사를 사용하여 기존 프로젝트 템플릿 업데이트
+## <a name="use-the-export-template-wizard"></a>템플릿 내보내기 마법사 사용
 
 Visual Studio에서는 기존 템플릿을 업데이트하는 데 사용할 수 있는 **템플릿 내보내기** 마법사를 제공합니다.
 
-1. **파일** > **새로 만들기** > **프로젝트**를 선택하여 **새 프로젝트** 대화 상자를 엽니다.
+1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 선택합니다.
 
-1. 업데이트할 템플릿을 선택하고 프로젝트의 이름과 위치를 입력한 다음 **확인**을 선택합니다.
+1. 업데이트할 템플릿을 선택하고 새 프로젝트를 만드는 단계를 계속 진행합니다.
 
-1. Visual Studio에서 프로젝트를 수정합니다.
+1. Visual Studio에서 프로젝트를 수정합니다. 예를 들어 출력 형식을 변경하거나 새 파일을 프로젝트에 추가합니다.
 
 1. **프로젝트** 메뉴에서 **템플릿 내보내기**를 선택합니다.
 
@@ -39,7 +37,7 @@ Visual Studio에서는 기존 템플릿을 업데이트하는 데 사용할 수 
 
 1. 마법사에서 표시되는 메시지를 따라 템플릿을 *.zip* 파일로 내보냅니다.
 
-1. (선택 사항) **새 프로젝트** 대화 상자에 템플릿을 추가하려면 *%USERPROFILE%\Documents\Visual Studio \<버전\>\Templates\ProjectTemplates* 디렉터리에 *.zip* 파일을 추가합니다. **템플릿 내보내기 마법사**에서 **템플릿을 자동으로 Visual Studio로 가져오기** 옵션을 선택하지 않은 경우 이 단계를 수행해야 합니다.
+1. (선택 사항) *.zip* 파일을 *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates* 디렉터리에 배치하여 선택할 수 있도록 합니다. **템플릿 내보내기 마법사**에서 **템플릿을 자동으로 Visual Studio로 가져오기** 옵션을 선택하지 않은 경우 이 단계를 수행해야 합니다.
 
 1. 이전 템플릿 *.zip* 파일을 삭제합니다.
 

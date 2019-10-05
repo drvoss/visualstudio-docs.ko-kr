@@ -1,14 +1,9 @@
 ---
 title: 프로젝트에서 파일을 엽니다는 편집기 결정 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], determining which editor opens a file
 - projects [Visual Studio SDK], determining which editor opens file
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: acbcf4d8-a53a-4727-9043-696a47369479
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 832fd838246c075087700494b09757184be687a7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1c79860f770a6b04a17786cfb281fc3c0e4dffda
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196767"
 ---
 # <a name="determining-which-editor-opens-a-file-in-a-project"></a>프로젝트에서 파일을 여는 편집기 결정
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ ms.locfileid: "51741612"
   
  기타 파일 프로젝트에는 모든 파일을 다른 프로젝트에서 요구 하지는 클레임입니다. 이 이렇게 하면 사용자 지정 편집기 문서를 열고 하 수 표준 편집기 열기 전에 합니다. 환경을 호출 하는 기타 파일 프로젝트 파일을 클레임 하는 경우는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 메서드를 표준 편집기를 사용 하 여 파일을 엽니다. 환경에는.rtf 파일을 처리 하는 하나에 대해 등록 된 편집기의 내부 목록을 검사 합니다. 이 목록은 레지스트리에서 다음 키:  
   
- [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<`version`> \Editors\\{0} <`editor factory guid`>} \Extensions]  
+ [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<`version`>\Editors\\{<`editor factory guid`>}\Extensions]  
   
  또한 환경 HKEY_CLASSES_ROOT\CLSID 키 하위 키 DocObject 있는 모든 개체에 대 한 클래스 식별자를 확인 합니다. 파일 확장명을 찾을 수 없으면, Microsoft Word와 같은 응용 프로그램의 임베디드 버전이 Visual Studio에서 전체 만들어집니다. 이러한 문서 개체를 구현 하는 복합 파일 이어야 합니다는 <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage> 인터페이스 또는 개체를 구현 해야 합니다는 <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> 인터페이스입니다.  
   
@@ -53,4 +48,3 @@ ms.locfileid: "51741612"
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>
-

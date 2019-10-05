@@ -1,26 +1,21 @@
 ---
 title: 레거시 API를 사용 하 여 편집기 컨트롤 및 메뉴를 사용자 지정 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - controls and menus
 ms.assetid: 1ce1f55b-6825-4654-a60a-7831af2ab44f
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ad505c9f2d6f63d275a0f4aea49dc38e0be1bb4d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e2f6faa99ad0ff9d564522baad47f9d252157ff2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62556053"
 ---
 # <a name="customizing-editor-controls-and-menus-by-using-the-legacy-api"></a>레거시 API를 사용 하 여 편집기 컨트롤 및 메뉴를 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,4 +38,3 @@ ms.locfileid: "51798770"
 ## <a name="related-sections"></a>관련 단원  
  [편집기 및 언어 서비스 확장](../extensibility/editor-and-language-service-extensions.md)  
  다양 한 Visual Studio에서 사용할 수는 편집기를 소개 합니다.
-

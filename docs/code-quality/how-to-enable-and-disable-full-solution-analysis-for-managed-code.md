@@ -1,21 +1,20 @@
 ---
-title: '방법: 사용 하도록 설정 하 고 관리 되는 코드에 대 한 전체 솔루션 분석 사용 안 함'
+title: 사용 및 관리 코드에 대 한 전체 솔루션 분석 사용 안 함
 ms.date: 03/23/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - full solution analysis
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b6e5d73f0a08511730cb79eccf60570bad804137
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a445439014e3b1f68b634865265089eb68e790a6
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937886"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260884"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>방법: 관리 코드에 대 한 전체 솔루션 분석 활성화 및 비활성화
 

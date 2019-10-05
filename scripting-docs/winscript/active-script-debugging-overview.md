@@ -2,7 +2,6 @@
 title: 액티브 스크립트 디버깅 개요 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d8624c1405931edefe2e1e53e579ad28a7b238f1
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 31fb3f5bf88b0caf179a43d02358bb6a9f1a2831
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975782"
 ---
 # <a name="active-script-debugging-overview"></a>액티브 스크립트 디버깅 개요
 액티브 스크립트 디버깅 인터페이스는 언어 중립적, 호스트 중립적 디버깅을 허용하고 다양한 개발 환경을 지원합니다.  
@@ -33,19 +32,19 @@ ms.locfileid: "50220224"
   
  아래의 하위 섹션에서는 활성 디버깅의 각 핵심 구성 요소와 관련 인터페이스에 대해 설명합니다. 그러나 계속하기 전에 몇 가지 주요 활성 디버깅 개념을 정의해야 합니다.  
   
- **호스트 응용 프로그램**  
- 스크립트 엔진을 호스팅하고 스크립트 가능한 개체 집합(또는 "개체 모델")을 제공하는 응용 프로그램입니다.  
+ **호스트 애플리케이션**  
+ 스크립트 엔진을 호스팅하고 스크립트 가능한 개체 집합(또는 "개체 모델")을 제공하는 애플리케이션입니다.  
   
  **언어 엔진**  
  특정 언어에 대한 구문 분석, 실행 및 디버깅 추상화를 제공하는 구성 요소입니다.  
   
  **디버거 IDE**  
- 호스트 응용 프로그램 및 언어 엔진과 통신하여 디버깅 UI를 제공하는 응용 프로그램입니다.  
+ 호스트 애플리케이션 및 언어 엔진과 통신하여 디버깅 UI를 제공하는 애플리케이션입니다.  
   
- **머신 디버그 관리자** 디버깅 가능한 응용 프로그램 프로세스의 레지스트리를 유지 관리하는 구성 요소입니다.  
+ **머신 디버그 관리자** 디버깅 가능한 애플리케이션 프로세스의 레지스트리를 유지 관리하는 구성 요소입니다.  
   
  **프로세스 디버그 관리자**  
- 특정 응용 프로그램에 대해 디버깅 가능한 문서 트리 유지 관리, 실행 중인 스레드 추적 등을 수행하는 하는 구성 요소입니다.  
+ 특정 애플리케이션에 대해 디버깅 가능한 문서 트리 유지 관리, 실행 중인 스레드 추적 등을 수행하는 하는 구성 요소입니다.  
   
  **문서 컨텍스트**  
  문서 컨텍스트는 호스트 문서의 소스 코드에서 특정 범위를 나타내는 추상화입니다.  
@@ -76,7 +75,7 @@ ms.locfileid: "50220224"
   
 - 스택 열거 및 구문 분석  
   
-  다음은 디버깅, 식 평가 및 개체 검색을 제공하기 위해 스크립트 엔진에서 지원해야 하는 인터페이스입니다. 이러한 인터페이스는 호스트 응용 프로그램에서 문서 컨텍스트와 엔진의 코드 컨텍스트 간에 매핑하고, 디버거 UI를 통해 식 평가, 스택 열거 및 개체 검색을 수행하는 데 사용됩니다.  
+  다음은 디버깅, 식 평가 및 개체 검색을 제공하기 위해 스크립트 엔진에서 지원해야 하는 인터페이스입니다. 이러한 인터페이스는 호스트 애플리케이션에서 문서 컨텍스트와 엔진의 코드 컨텍스트 간에 매핑하고, 디버거 UI를 통해 식 평가, 스택 열거 및 개체 검색을 수행하는 데 사용됩니다.  
   
   [IActiveScriptDebug 인터페이스](../winscript/reference/iactivescriptdebug-interface.md)  
   구문 색 지정 및 코드 컨텍스트 열거를 제공합니다.  
@@ -135,7 +134,7 @@ ms.locfileid: "50220224"
   
 - 디버그할 수 있는 문서 트리 및 해당 내용을 정의합니다.  
   
-- 스크립트를 가상 응용 프로그램으로 구성합니다.  
+- 스크립트를 가상 애플리케이션으로 구성합니다.  
   
   호스트에는 다음 두 가지 종류가 있습니다.  
   
@@ -197,7 +196,7 @@ ms.locfileid: "50220224"
   
 - 개체/클래스 검색  
   
-- 가상 응용 프로그램 구조 검색  
+- 가상 애플리케이션 구조 검색  
   
   디버거에서 구현하는 인터페이스:  
   
@@ -217,10 +216,10 @@ ms.locfileid: "50220224"
   `IDebugApplicationNode` 인터페이스에 대한 이벤트 인터페이스를 제공합니다.  
   
 ### <a name="machine-debug-manager"></a>컴퓨터 디버그 관리자  
- 컴퓨터 디버그 관리자는 활성 가상 응용 프로그램 목록을 유지 관리하고 열거하여 가상 응용 프로그램과 디버거 간의 연결 지점을 제공합니다.  
+ 컴퓨터 디버그 관리자는 활성 가상 애플리케이션 목록을 유지 관리하고 열거하여 가상 애플리케이션과 디버거 간의 연결 지점을 제공합니다.  
   
  [IDebugSessionProvider 인터페이스](../winscript/reference/idebugsessionprovider-interface.md)  
- 실행 중인 응용 프로그램에 대한 디버그 세션을 설정합니다.  
+ 실행 중인 애플리케이션에 대한 디버그 세션을 설정합니다.  
   
  [IMachineDebugManager 인터페이스](../winscript/reference/imachinedebugmanager-interface.md)  
  컴퓨터 디버그 관리자에 대한 기본 인터페이스입니다.  
@@ -229,10 +228,10 @@ ms.locfileid: "50220224"
  `IMachineDebugManager` 인터페이스와 비슷하지만 이 인터페이스는 디버그 쿠키를 지원합니다.  
   
  [IMachineDebugManagerEvents 인터페이스](../winscript/reference/imachinedebugmanagerevents-interface.md)  
- 컴퓨터 디버그 관리자에서 관리하는 실행 중인 응용 프로그램 목록의 변경을 알립니다.  
+ 컴퓨터 디버그 관리자에서 관리하는 실행 중인 애플리케이션 목록의 변경을 알립니다.  
   
  [IEnumRemoteDebugApplications 인터페이스](../winscript/reference/ienumremotedebugapplications-interface.md)  
- 컴퓨터에서 실행 중인 응용 프로그램을 열거합니다.  
+ 컴퓨터에서 실행 중인 애플리케이션을 열거합니다.  
   
 ### <a name="process-debug-manager"></a>프로세스 디버그 관리자  
  PDM은 다음을 수행합니다.  
@@ -254,22 +253,22 @@ ms.locfileid: "50220224"
   다음은 프로세스 디버그 관리자에서 제공하는 인터페이스입니다.  
   
   [IProcessDebugManager 인터페이스](../winscript/reference/iprocessdebugmanager-interface.md)  
-  프로세스 디버그 관리자에 대한 기본 인터페이스입니다. 이 인터페이스는 프로세스에서 가상 응용 프로그램을 작성, 추가 또는 제거할 수 있습니다.  
+  프로세스 디버그 관리자에 대한 기본 인터페이스입니다. 이 인터페이스는 프로세스에서 가상 애플리케이션을 작성, 추가 또는 제거할 수 있습니다.  
   
   [IRemoteDebugApplication 인터페이스](../winscript/reference/iremotedebugapplication-interface.md)  
-  실행 중인 응용 프로그램을 나타냅니다.  
+  실행 중인 애플리케이션을 나타냅니다.  
   
   [IDebugApplication 인터페이스](../winscript/reference/idebugapplication-interface.md)  
   언어 엔진 및 호스트에서 사용할 비원격 디버깅 메서드를 노출합니다.  
   
   [IRemoteDebugApplicationThread 인터페이스](../winscript/reference/iremotedebugapplicationthread-interface.md)  
-  특정 응용 프로그램 내의 실행 스레드를 나타냅니다.  
+  특정 애플리케이션 내의 실행 스레드를 나타냅니다.  
   
   [IDebugApplicationThread 인터페이스](../winscript/reference/idebugapplicationthread-interface.md)  
   언어 엔진과 호스트에서 스레드 동기화를 제공하고 스레드별 디버그 상태 정보를 유지할 수 있도록 합니다.  
   
   [IEnumRemoteDebugApplicationThreads 인터페이스](../winscript/reference/ienumremotedebugapplicationthreads-interface.md)  
-  응용 프로그램에서 실행 중인 스레드를 열거합니다.  
+  애플리케이션에서 실행 중인 스레드를 열거합니다.  
   
   [IDebugThreadCall 인터페이스](../winscript/reference/idebugthreadcall-interface.md)  
   마샬링된 호출을 발송합니다.  
@@ -278,7 +277,7 @@ ms.locfileid: "50220224"
   계층 구조에서 문서의 위치를 유지 관리합니다.  
   
   [IEnumDebugApplicationNodes 인터페이스](../winscript/reference/ienumdebugapplicationnodes-interface.md)  
-  응용 프로그램과 연결된 노드의 자식 노드를 열거합니다.  
+  애플리케이션과 연결된 노드의 자식 노드를 열거합니다.  
   
   [IEnumDebugStackFrames 인터페이스](../winscript/reference/ienumdebugstackframes-interface.md)  
   엔진에서 병합된 스레드에 해당하는 스택 프레임을 열거합니다.  

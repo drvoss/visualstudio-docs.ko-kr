@@ -1,22 +1,20 @@
 ---
 title: 개요 | Microsoft IntelliTest 개발자 테스트 도구
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Visual Studio IntelliTest developer testing tool
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c2a8e6df93d3af64bd114e0e9994aadce58e7f8d
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 5aa67bd32f6895e4e1dfc4e7c558bc3bc0d8001b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296023"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461487"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Microsoft IntelliTest 개요
 
@@ -117,8 +115,7 @@ IntelliTest는 [매개 변수가 있는 단위 테스트](test-generation.md#par
 
 또한 프로그램을 다시 실행할 때 외부 소스의 값이 변경될 경우 프로그램을 비결정적으로 간주합니다. 이 경우 IntelliTest가 프로그램 실행을 제어할 수 없어서 해당 검색은 비효율적인 것이 됩니다.
 
-때때로 언제 이 문제가 발생하는지가 분명하지 않습니다.
-다음 예제를 살펴보세요.
+때때로 언제 이 문제가 발생하는지가 분명하지 않습니다. 다음 예제를 살펴보세요.
 
 * **GetHashCode()** 메서드의 결과가 비관리 코드에 의해 제공되고 예측할 수 없습니다.
 * **System.Random** 클래스가 현재 시스템 시간을 사용하여 실제로 무작위 값을 제공합니다.
@@ -153,5 +150,5 @@ IntelliTest는 각 계측된 메서드에서 예외를 catch하고 “rethrow”
 
 ## <a name="further-reading"></a>추가 정보
 
-* [소개 블로그 게시물](https://blogs.msdn.microsoft.com/devops/2014/11/19/introducing-smart-unit-tests/).
+* [소개 블로그 게시물](https://devblogs.microsoft.com/devops/introducing-smart-unit-tests/).
 * [IntelliTest를 사용하여 코드에 대한 단위 테스트 생성](../../test/generate-unit-tests-for-your-code-with-intellitest.md)

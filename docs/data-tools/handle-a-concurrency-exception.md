@@ -15,17 +15,15 @@ helpviewer_keywords:
 ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fef30f836ab27cd7a67d85a04254be0018d5b33e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: MTE95
+ms.openlocfilehash: a8e14a53719d4913bcc04bcb2b702ca4ec4a8c55
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388740"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566744"
 ---
 # <a name="handle-a-concurrency-exception"></a>동시성 예외 처리
 
@@ -33,7 +31,7 @@ ms.locfileid: "52388740"
 
 이 연습에서는 다음 프로세스를 안내합니다.
 
-1. 새 **Windows Forms 응용 프로그램** 프로젝트를 만듭니다.
+1. 새 **Windows Forms 애플리케이션** 프로젝트를 만듭니다.
 
 2. Northwind Customers 테이블을 기반으로 새 데이터 집합을 만듭니다.
 
@@ -71,7 +69,7 @@ ms.locfileid: "52388740"
 
 1. Visual Studio에서에 **파일** 메뉴에서 **새로 만들기** > **프로젝트**합니다.
 
-2. 확장 **시각적 C#**  하거나 **Visual Basic** 왼쪽 창에서 선택한 **Windows Desktop**.
+2. 확장 **Visual C#** 하거나 **Visual Basic** 왼쪽 창에서 선택한 **Windows Desktop**합니다.
 
 3. 가운데 창에서 선택 합니다 **Windows Forms 앱** 형식 프로젝션 합니다.
 
@@ -85,7 +83,7 @@ ms.locfileid: "52388740"
 
 1. 에 **데이터** 메뉴 선택 **새 데이터 소스 추가**합니다.
 
-   데이터 소스 구성 마법사가 열립니다.
+   데이터 원본 구성 마법사가 열립니다.
 
 2. 에 **데이터 소스 형식 선택** 화면에서 **데이터베이스**합니다.
 
@@ -208,12 +206,12 @@ ms.locfileid: "52388740"
 
 8. 양식의 첫 번째 레코드에서 (**ALFKI**)을 변경 **ContactName** 하 **Maria Anders1**합니다.
 
-9. 선택 된 **저장할** 단추입니다.
+9. **저장** 단추를 선택합니다.
 
      동시성 오류가 발생 하 고 메시지 상자가 나타납니다.
 
    선택 **No** 업데이트를 취소 하 고 현재 데이터베이스에 있는 값을 사용 하 여 데이터 집합을 업데이트 합니다. 선택 **예** 제안 된 값이 데이터베이스에 기록 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [데이터를 다시 데이터베이스에 저장](../data-tools/save-data-back-to-the-database.md)

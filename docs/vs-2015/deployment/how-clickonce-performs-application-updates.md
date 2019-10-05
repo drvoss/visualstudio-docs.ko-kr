@@ -1,14 +1,9 @@
 ---
 title: ClickOnce 응용 프로그램 업데이트를 수행 하는 방법 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,15 +16,15 @@ ms.assetid: d54313c2-cf0c-420d-b151-99953a95f0bb
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 5c2e135a2b872ecd389149626ac09caf02734f40
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d2e8a3c1054219bb7d5b0f9a9ef5e710786344e4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152838"
 ---
-# <a name="how-clickonce-performs-application-updates"></a>ClickOnce에서 응용 프로그램 업데이트가 수행되는 방식
+# <a name="how-clickonce-performs-application-updates"></a>ClickOnce에서 애플리케이션 업데이트가 수행되는 방식
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ClickOnce 응용 프로그램의 배포 매니페스트에 지정 된 파일 버전 정보를 사용 하 여 응용 프로그램의 파일을 업데이트할 것인지를 결정 합니다. ClickOnce 라는 기술을 사용 하 여 업데이트가 시작 된 후 *파일을 패치* 응용 프로그램 파일의 중복 다운로드를 방지 합니다.  
@@ -46,6 +41,3 @@ ClickOnce 응용 프로그램의 배포 매니페스트에 지정 된 파일 버
 ## <a name="see-also"></a>참고 항목  
  [ClickOnce 업데이트 전략 선택](../deployment/choosing-a-clickonce-update-strategy.md)   
  [ClickOnce 배포 전략 선택](../deployment/choosing-a-clickonce-deployment-strategy.md)
-
-
-

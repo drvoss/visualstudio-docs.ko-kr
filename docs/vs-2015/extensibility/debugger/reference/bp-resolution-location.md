@@ -1,14 +1,9 @@
 ---
 title: BP_RESOLUTION_LOCATION | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - BP_RESOLUTION_LOCATION
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 21dc5246-69c1-43e3-855c-9cd4e596c0e6
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: dc70710ea0a811b75e6bad3098fbbc46dae0bd3b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2ea6539f2ed790dda5cc4c9de126aa226f4b2686
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153288"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -57,13 +52,13 @@ public struct BP_RESOLUTION_LOCATION {
  값을 [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) 해석 하는 방법을 지정 하는 열거형을 `bpResLocation` union 또는 `unionmemberX` 멤버.  
   
  `bpResLocation.bpresCode`  
- [C + + 전용] 포함 된 [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) 하는 경우 구조체 `bpType`  =  `BPT_CODE`합니다.  
+ [C++ 만] 포함 된 [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) 하는 경우 구조체 `bpType`  =  `BPT_CODE`합니다.  
   
  `bpResLocation.bpresData`  
- [C + + 전용] 포함 된 [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) 하는 경우 구조체 `bpType`  =  `BPT_DATA`합니다.  
+ [C++ 만] 포함 된 [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) 하는 경우 구조체 `bpType`  =  `BPT_DATA`합니다.  
   
  `bpResLocation.unused`  
- [C + + 전용] 자리 표시자입니다.  
+ [C++ 만] 자리 표시자입니다.  
   
  `unionmember1`  
  [C# 만] 해석 하는 방법에 대 한 설명을 참조 하세요.  
@@ -120,9 +115,9 @@ namespace MyPackage
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>참고 항목  
  [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)   
@@ -132,4 +127,3 @@ namespace MyPackage
  [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md)   
  [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)   
  [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md)
-

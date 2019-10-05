@@ -1,23 +1,26 @@
 ---
 title: IDebugProgramNode2::Attach_V7 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProgramNode2::Attach
 helpviewer_keywords:
 - IDebugProgramNode2::Attach_V7
 - IDebugProgramNode2::Attach
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0e7726786d3488cc4578dbc6efd016510a3d52d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a90b162476872700ee0ec69a3bb9e6e575e7862a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935439"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351179"
 ---
 # <a name="idebugprogramnode2attachv7"></a>IDebugProgramNode2::Attach_V7
 
@@ -42,13 +45,16 @@ int Attach_V7 (
 );
 ```
 
-#### <a name="parameters"></a>매개 변수
+## <a name="parameters"></a>매개 변수
 
-`pMDMProgram` [in] 합니다 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 연결할 프로그램을 나타내는 인터페이스입니다.
+`pMDMProgram`\
+[in] 합니다 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 연결할 프로그램을 나타내는 인터페이스입니다.
 
- `pCallback` [in] 합니다 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) SDM에 디버그 이벤트를 보내는 데 사용할 인터페이스입니다.
+`pCallback`\
+[in] 합니다 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) SDM에 디버그 이벤트를 보내는 데 사용할 인터페이스입니다.
 
- `dwReason` [in] 값을 [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) 연결에 대 한 이유를 지정 하는 열거형입니다.
+`dwReason`\
+[in] 값을 [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) 연결에 대 한 이유를 지정 하는 열거형입니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -67,15 +73,15 @@ int Attach_V7 (
 
 DE 호출 해야 합니다는 [GetProgramId](../../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) 메서드는 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 에서 제공 하는 개체를 [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) 이벤트 개체를 해당 프로그램의 GUID를 저장 해야 합니다 인스턴스 데이터에 `IDebugProgram2` 는 DE 구현한 개체입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)  
-[IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)  
-[Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)  
-[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)  
-[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)  
-[IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md)  
-[IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)  
-[IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)  
-[IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md)  
-[ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md)
+- [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
+- [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)
+- [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)
+- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
+- [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
+- [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md)
+- [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)
+- [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)
+- [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md)
+- [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md)

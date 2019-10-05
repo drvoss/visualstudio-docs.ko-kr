@@ -2,20 +2,18 @@
 title: R Markdown
 description: Visual Studio에서 R Markdown 문서를 만들어 고품질 보고서, 프레젠테이션 및 대시보드를 생성하는 방법입니다.
 ms.date: 11/16/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 1bb6779e0e8174dd10f209d9825ffb861d00455d
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: b8f87f831c8076b22a61d7032d16be8d13f21b62
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235428"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998623"
 ---
 # <a name="create-r-markdown-documents"></a>R Markdown 문서 만들기
 
@@ -35,6 +33,7 @@ RTVS(Visual Studio용 R 도구)는 R Markdown 항목 템플릿, 편집기 지원
     install.packages("rmarkdown")
 
     ```
+
 1. **파일** > **새로 만들기** > **파일** 메뉴 명령을 사용하고 목록에서 **R** > **R Markdown**을 선택하여 새로운 R Markdown 파일을 만듭니다. 프로젝트의 컨텍스트에서 솔루션 탐색기의 프로젝트를 마우스 오른쪽 단추로 클릭하고 **R Markdown 추가**를 선택(또는 **추가** > **새 항목**을 선택하고 목록에서 **R Markdown**을 선택)합니다.
 
 1. 새 파일의 기본 콘텐츠는 다음과 같습니다.

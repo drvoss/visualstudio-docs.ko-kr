@@ -2,22 +2,20 @@
 title: Python용 C++ 확장명 작성
 description: 혼합 모드 디버깅을 비롯하여 Visual Studio, CPython 및 PyBind11을 사용하여 Python에 대한 C++ 확장을 만드는 연습 과정입니다.
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 437cd7f926465b4a9c4986f0eeb4b30e53936895
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9c81984e8921e44e32b58ae7f5c5c27c5fe8b12f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053479"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62956960"
 ---
 # <a name="create-a-c-extension-for-python"></a>Python용 C++ 확장 만들기
 
@@ -40,19 +38,19 @@ C++(또는 C)로 작성된 모듈은 하위 수준 운영 체제 기능에 대�
 
 ## <a name="prerequisites"></a>전제 조건
 
-- 기본 옵션과 함께 설치된 **C++를 사용한 데스크톱 개발** 및 **Python 개발** 워크로드를 모두 사용하는 Visual Studio 2017.
+- 기본 옵션과 함께 설치된 **C++를 사용한 데스크톱 개발** 및 **Python 개발** 워크로드를 모두 사용하는 Visual Studio 2017 이상.
 - **Python 개발** 워크로드에서 **Python 네이티브 개발 도구** 오른쪽에 있는 상자를 선택합니다. 이 옵션은 이 문서에 설명된 대부분의 구성을 설정합니다. 이 옵션에는 C++ 워크로드도 자동으로 포함됩니다.
 
     ![Python 네이티브 개발 도구 옵션 선택](media/cpp-install-native.png)
 
     > [!Tip]
-    > **데이터 과학 및 분석 응용 프로그램** 워크로드 설치에는 Python 및 **Python 네이티브 개발 도구** 옵션이 기본적으로 포함됩니다.
+    > **데이터 과학 및 분석 애플리케이션** 워크로드 설치에는 Python 및 **Python 네이티브 개발 도구** 옵션이 기본적으로 포함됩니다.
 
 다른 버전의 Visual Studio 사용을 포함한 자세한 내용은 [Visual Studio용 Python 지원 설치](installing-python-support-in-visual-studio.md)를 참조하세요. Python을 별도로 설치하는 경우 설치 관리자의 **고급 옵션**에서 **디버깅 기호 다운로드** 및 **디버그 버전의 이진 파일 다운로드**를 선택해야 합니다. 이 옵션은 디버그 빌드를 수행하도록 선택할 경우 필요한 디버그 라이브러리를 사용할 수 있도록 합니다.
 
-## <a name="create-the-python-application"></a>Python 응용 프로그램 만들기
+## <a name="create-the-python-application"></a>Python 애플리케이션 만들기
 
-1. **파일** > **새로 만들기** > **프로젝트**를 선택하여 Visual Studio에서 새 Python 프로젝트를 만듭니다. “Python”을 검색하고 **Python 응용 프로그램** 템플릿을 선택한 다음 적합한 이름과 위치를 지정하고 **확인**을 선택합니다.
+1. **파일** > **새로 만들기** > **프로젝트**를 선택하여 Visual Studio에서 새 Python 프로젝트를 만듭니다. “Python”을 검색하고 **Python 애플리케이션** 템플릿을 선택한 다음 적합한 이름과 위치를 지정하고 **확인**을 선택합니다.
 
 1. C++로 작업하려면 32비트 Python 인터프리터(Python 3.6 이상 권장)를 사용해야 합니다. Visual Studio의 **솔루션 탐색기** 창에서 프로젝트 노드를 확장한 다음, **Python 환경** 노드를 확장합니다. 32비트 환경이 기본값으로 표시(굵게 표시 또는 **전역 기본값** 레이블 지정)되지 않는 경우 [프로젝트에 대한 Python 환경 선택](selecting-a-python-environment-for-a-project.md)의 지침을 따르세요. 32비트 인터프리터가 설치되지 않은 경우 [Python 인터프리터 설치](installing-python-interpreters.md)를 참조하세요.
 
@@ -109,7 +107,7 @@ C++(또는 C)로 작성된 모듈은 하위 수준 운영 체제 기능에 대�
 1. "C++"를 검색하고, **빈 프로젝트**를 선택하고, 이름을 "superfastcode"(두 번째 프로젝트는 "superfastcode2")로 지정하고 **확인**을 선택합니다.
 
     > [!Tip]
-    > Visual Studio 2017에 설치된 **Python 네이티브 개발 도구**를 사용하면 아래 설명된 내용이 이미 많이 포함되어 있는 **Python 확장 모듈** 템플릿으로 시작할 수 있습니다. 그러나 이 연습에서는 빈 프로젝트로 시작하여 확장 모듈 빌드를 단계별로 보여 줍니다. 프로세스를 이해하고 나면 사용자 고유의 확장을 작성할 때 템플릿으로 시간을 절약할 수 있습니다.
+    > Visual Studio에 설치된 **Python 네이티브 개발 도구**를 사용하면 아래 설명된 내용이 이미 많이 포함되어 있는 **Python 확장 모듈** 템플릿으로 시작할 수 있습니다. 그러나 이 연습에서는 빈 프로젝트로 시작하여 확장 모듈 빌드를 단계별로 보여 줍니다. 프로세스를 이해하고 나면 사용자 고유의 확장을 작성할 때 템플릿으로 시간을 절약할 수 있습니다.
 
 1. 새 프로젝트에서 **소스 파일** 노드를 마우스 오른쪽 단추로 클릭하여 C++ 파일을 만들고 **추가** > **새 항목**을 선택한 다음, **C++ 파일**을 선택하여 이름을 `module.cpp`로 지정하고 **확인**을 선택합니다.
 
@@ -128,7 +126,7 @@ C++(또는 C)로 작성된 모듈은 하위 수준 운영 체제 기능에 대�
     | | **일반** > **대상 확장명** | **.pyd** |
     | | **프로젝트 기본값** > **구성 형식** | **동적 라이브러리(.dll)** |
     | **C/C++** > **일반** | **추가 포함 디렉터리** | 설치에 맞게 Python *include* 폴더를 추가합니다(예: `c:\Python36\include`).  |
-    | **C/C++** > **전처리기** | **전처리기 정의** | `Py_LIMITED_API;`를 문자열의 시작 부분에 추가합니다(세미콜론 포함). 이 정의로 Python에서 호출할 수 있는 일부 함수가 제한되고 다른 버전의 Python 간 코드 이식성이 향상됩니다. |
+    | **C/C++** > **전처리기** | **전처리기 정의** | **CPython만**: `Py_LIMITED_API;`를 문자열의 시작 부분에 추가합니다(세미콜론 포함). 이 정의로 Python에서 호출할 수 있는 일부 함수가 제한되고 다른 버전의 Python 간 코드 이식성이 향상됩니다. PyBind11을 사용하는 경우 이 정의를 추가하지 마세요. 추가하면 빌드 오류가 표시됩니다. |
     | **C/C++** > **코드 생성** | **런타임 라이브러리** | **다중 스레드 DLL(/MD)**(아래 경고 참조) |
     | **링커** > **일반** | **추가 라이브러리 디렉터리** | *.lib* 파일을 포함하는 Python *libs* 폴더를 설치에 맞게 추가합니다(예: `c:\Python36\libs`). *.py* 파일을 포함하는 *Lib* 폴더가 ‘아니라’ *.lib* 파일을 포함하는 *libs* 폴더를 가리켜야 합니다. |
 
@@ -136,7 +134,7 @@ C++(또는 C)로 작성된 모듈은 하위 수준 운영 체제 기능에 대�
     > 프로젝트 속성에서 C/C++ 탭이 표시되지 않는 경우 프로젝트에 C/C++ 소스 파일로 식별되는 파일이 포함되어 있지 않기 때문입니다. *.c* 또는 *.cpp* 확장명을 사용하지 않고 소스 파일을 만드는 경우 이런 상태가 발생할 수 있습니다. 예를 들어 이전의 새 항목 대화 상자에서 실수로 `module.cpp` 대신 `module.coo`를 입력한 경우 Visual Studio에서 파일을 만들지만, C/C++ 속성 탭을 활성화하는 “C/C++ 코드”로 파일 형식을 설정하지 않습니다. 파일 이름을 `.cpp`로 변경하는 경우에도 여전히 잘못 식별됩니다. 파일 형식을 제대로 설정하려면 **솔루션 탐색기**에서 파일을 마우스 오른쪽 단추로 클릭하고 **속성**을 선택한 다음, **파일 형식**을 **C/C++ 코드**로 설정합니다.
 
     > [!Warning]
-    > 디버그 구성에 대해서도 **C/C++** > **코드 생성** > **런타임 라이브러리** 옵션을 항상 **다중 스레드 DLL(/MD)** 로 설정합니다. 이 설정은 디버그가 아닌 Python 이진을 빌드할 때 사용되기 때문입니다. **다중 스레드 디버그 DLL(/MDd)** 옵션을 설정하는 경우 **디버그** 구성을 빌드하면 **C1189: Py_LIMITED_API는 Py_DEBUG, Py_TRACE_REFS 및 Py_REF_DEBUG와 호환되지 않음** 오류가 발생합니다. 또한 빌드 오류를 방지하기 위해 `Py_LIMITED_API`를 제거하는 경우 모듈을 가져오려고 하면 Python이 충돌합니다. (뒷부분에 설명된 대로 크래시는 DLL의 `PyModule_Create` 호출 내에서 발생하고 **심각한 Python 오류: PyThreadState_Get: 현재 스레드 없음**이라는 메시지가 출력됩니다.)
+    > 디버그 구성에 대해서도 **C/C++** > **코드 생성** > **런타임 라이브러리** 옵션을 항상 **다중 스레드 DLL(/MD)** 로 설정합니다. 이 설정은 디버그가 아닌 Python 이진을 빌드할 때 사용되기 때문입니다. CPython에서는 **다중 스레드 디버그 DLL(/MDd)** 옵션을 설정하는 경우 **디버그** 구성을 빌드하면 **C1189: Py_LIMITED_API는 Py_DEBUG, Py_TRACE_REFS 및 Py_REF_DEBUG와 호환되지 않음** 오류가 발생합니다. 또한 빌드 오류를 방지하기 위해 `Py_LIMITED_API`(CPython에는 필요하지만 PyBind11에는 필요하지 않음)를 제거하는 경우 모듈을 가져오려고 하면 Python이 충돌합니다. (뒷부분에 설명된 대로 크래시는 DLL의 `PyModule_Create` 호출 내에서 발생하고 **심각한 Python 오류: PyThreadState_Get: 현재 스레드 없음**이라는 메시지가 출력됩니다.)
     >
     > /MDd 옵션은 Python 디버그 이진 파일(예: *python_d.exe*)을 빌드하는 데 사용되지만 확장 DLL용으로 선택하면 `Py_LIMITED_API`에서 빌드 오류가 발생합니다.
 
@@ -286,7 +284,7 @@ Python 프로젝트와 C++ 프로젝트가 같은 솔루션에 있는 경우 첫
 
 다음 단계에 설명된 두 번째 방법은 다른 Python 프로젝트에서도 사용 가능하도록 모듈을 전역 Python 환경에 설치합니다. (이 경우 Visual Studio 2017 버전 15.5 및 이전 버전에서는 일반적으로 해당 환경에 대한 IntelliSense 완성 데이터베이스를 새로 고쳐야 합니다. 환경에서 모듈을 제거하는 경우에도 새로 고침이 필요합니다.)
 
-1. Visual Studio 2017을 사용하고 있는 경우 Visual Studio 설치 관리자를 실행하고 **수정**을 선택한 다음, **개별 구성 요소** > **컴파일러, 빌드 도구 및 런타임** > **Visual C++ 2015.3 v140 도구 집합**을 선택합니다. 이 단계가 필요한 이유는 Python(Windows용) 자체는 Visual Studio 2015(버전 14.0)로 빌드되며 여기에 설명된 메서드를 통해 확장을 빌드할 경우 이러한 도구를 사용할 수 있다고 예상하기 때문입니다. (Python의 32비트 버전을 설치하고 DLL 대상을 x64가 아닌 Win32로 지정해야 할 수 있습니다.)
+1. Visual Studio 2017 이상을 사용하고 있는 경우 Visual Studio 설치 관리자를 실행하고 **수정**을 선택한 다음, **개별 구성 요소** > **컴파일러, 빌드 도구 및 런타임** > **Visual C++ 2015.3 v140 도구 집합**을 선택합니다. 이 단계가 필요한 이유는 Python(Windows용) 자체는 Visual Studio 2015(버전 14.0)로 빌드되며 여기에 설명된 메서드를 통해 확장을 빌드할 경우 이러한 도구를 사용할 수 있다고 예상하기 때문입니다. (Python의 32비트 버전을 설치하고 DLL 대상을 x64가 아닌 Win32로 지정해야 할 수 있습니다.)
 
 1. 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가** > **새 항목**을 선택하여 C++ 프로젝트에서 *setup.py*라는 파일을 만듭니다. 그런 다음, **C++ 파일(.cpp)** 을 선택하고 파일 이름을 `setup.py`로 변경한 다음, **확인**을 선택합니다(*.py* 확장명을 사용하여 파일 이름을 지정하면 C++ 파일 템플릿을 사용해도 Visual Studio에서 Python으로 인식함). 편집기에 파일이 표시되면 확장 메서드에 적절하게 다음 코드를 붙여넣습니다.
 
@@ -324,7 +322,7 @@ Python 프로젝트와 C++ 프로젝트가 같은 솔루션에 있는 경우 첫
 
     setup(
         name = 'superfastcode2',
-        version = '1.0',    
+        version = '1.0',
         description = 'Python package with superfastcode2 C++ extension (PyBind11)',
         ext_modules = [sfc_module],
     )
@@ -410,7 +408,7 @@ Visual Studio는 디버깅 Python 및 C++ 코드를 함께 지원합니다. 이 
 | ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | 컴파일 안 함, 광범위한 가용성. | 번거로운 C 구조체 액세스 및 변경과 오류 발생 가능성. |
 | SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | 한 번에 여러 언어에 대한 바인딩 생성. | Python이 유일한 대상일 경우 과도한 오버헤드. |
 | cffi | 2013 | [cryptography](https://cryptography.io/en/latest/), [pypy](https://pypy.org/) | 간편한 통합, PyPy 호환성. | 더 새롭고 완성도 낮음. |
-| [cppyy](https://cppyy.readthedocs.io/en/latest/) | 2017 | | C++를 사용한 cffi와 유사합니다. | 최신 기능이며, VS 2017에서는 몇 가지 문제가 발생할 수 있습니다. |  
+| [cppyy](https://cppyy.readthedocs.io/en/latest/) | 2017 | | C++를 사용한 cffi와 유사합니다. | 최신 기능이며, VS 2017에서는 몇 가지 문제가 발생할 수 있습니다. |
 
 ## <a name="see-also"></a>참고 항목
 

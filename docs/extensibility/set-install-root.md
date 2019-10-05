@@ -3,31 +3,32 @@ title: VSIX v3 사용 하 여 확장 폴더 외부에 설치 | Microsoft Docs
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 913c3745-8aa9-4260-886e-a05aecfb2225
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 847ce9bc55e93f292ffdfe6f237e8c39eeac9fd4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2d5fc36c1244edd0988b6b76f8106020369cd90b
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968500"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852208"
 ---
-# <a name="installing-outside-the-extensions-folder"></a>확장 폴더 외부에 설치
+# <a name="install-outside-the-extensions-folder"></a>확장 폴더 외부에 설치
 
-Visual Studio 2017 및 VSIX v3부터 (버전 3), 확장 폴더 외부의 확장 자산을 설치 하기 위한 현재 지원은 합니다. 현재 다음 위치 (여기서 [INSTALLDIR]에 매핑되는 Visual Studio 인스턴스의 설치 디렉터리)는 올바른 설치 위치로 사용 됩니다.
+(버전 3) 확장 자산을 Visual Studio 2017 및 VSIX v3을 사용 하 여 시작 하는 확장 폴더 외부에서 설치할 수 있습니다. 현재 다음 위치 (여기서 [INSTALLDIR]에 매핑되는 Visual Studio 인스턴스의 설치 디렉터리)는 올바른 설치 위치로 사용 됩니다.
 
-* [INSTALLDIR] \MSBuild
-* [INSTALLDIR] \Xml\Schemas
-* [INSTALLDIR] \Common7\IDE\PublicAssemblies
-* [INSTALLDIR] \Licenses
-* [INSTALLDIR] \Common7\IDE\ReferenceAssemblies
-* [INSTALLDIR] \Common7\IDE\RemoteDebugger
-* [INSTALLDIR] \Common7\IDE\VC\VCTargets
+* [INSTALLDIR]\MSBuild
+* [INSTALLDIR]\Xml\Schemas
+* [INSTALLDIR]\Common7\IDE\PublicAssemblies
+* [INSTALLDIR]\Licenses
+* [INSTALLDIR]\Common7\IDE\ReferenceAssemblies
+* [INSTALLDIR]\Common7\IDE\RemoteDebugger
+* [INSTALLDIR] \Common7\IDE\VC\VCTargets (만 Visual Studio 2017에 대 한 지원 되는; Visual Studio 2019에 대 한 사용 되지 않는 이상)
 
->**참고:** VSIX 형식 구조 외부에 있는 VS 설치 폴더를 설치할 수 없도록 합니다.
+> [!NOTE]
+> VSIX 형식은 Visual Studio 설치 폴더 구조 외에 설치 하도록 허용 하지 않습니다. 
 
 이러한 디렉터리에 설치를 지원 하기 위해 VSIX "인스턴스별 컴퓨터별" 설치 되어야 합니다. 이 extension.vsixmanifest 디자이너에서 "모든 사용자" 확인란을 선택 하 여 활성화할 수 있습니다.
 
@@ -49,7 +50,8 @@ Visual Studio 2017 및 VSIX v3부터 (버전 3), 확장 폴더 외부의 확장 
  </ProjectReference>
 ```
 
->**참고:** 원하는 경우.csproj 파일을 직접 편집할 수 있습니다.
+> [!NOTE]
+> 원하는 경우.csproj 파일을 직접 편집할 수 있습니다.
 
 ## <a name="how-to-set-a-subpath-under-the-installroot"></a>InstallRoot 아래의 하위 경로 설정 하는 방법
 

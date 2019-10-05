@@ -1,22 +1,20 @@
 ---
 title: 테스트 생성 | Microsoft IntelliTest 개발자 테스트 도구
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Test generation
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 20bacca2343cb2689ed52096c1a9b0d9c3d74703
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: eb567327950604fac1895ead24b776aefe434548
+ms.sourcegitcommit: dae5dfd626277b58ebd7b21a75757f683f1eacc5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295867"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739286"
 ---
 # <a name="test-generation"></a>테스트 생성
 
@@ -24,7 +22,7 @@ ms.locfileid: "51295867"
 
 * [메서드 호출의 시퀀스](test-generation.md#test-generators)
 * 메서드와 함께 호출된 인수, 인수는 [테스트 입력](input-generation.md)입니다.
-* [어설션](#assumptions-and-assertions) 집합을 명시하여 테스트된 응용 프로그램의 의도한 동작에 대한 유효성 검사
+* [어설션](#assumptions-and-assertions) 집합을 명시하여 테스트된 애플리케이션의 의도한 동작에 대한 유효성 검사
 
 다음은 예제 테스트 구조입니다.
 
@@ -138,7 +136,7 @@ void SomeTest() {...}
 IntelliTest는 볼 수 있는 internal 형식을 “테스트”할 수 있습니다. IntelliTest가 형식을 볼 수 있도록 Visual Studio IntelliTest 마법사를 통해 다음 특성이 제품 또는 테스트 프로젝트에 추가됩니다.
 
 ```csharp
-[assembly: InternalsVisibleTo("Microsoft.Pex, PublicKey=002400000480000094000000060200000024000052534131000400000100010007d1fa57c4aed9f0a32e84aa0faefd0de9e8fd6aec8f87fb03766c834c99921eb23be79ad9d5dcc1dd9ad236132102900b723cf980957fc4e177108fc607774f29e8320e92ea05ece4e821c0a5efe8f1645c4c0c93c1ab99285d622caa652c1dfad63d745d6f2de5f17e5eaf0fc4963d261c8a12436518206dc093344d5ad293
+[assembly: InternalsVisibleTo("Microsoft.Pex, PublicKey=002400000480000094000000060200000024000052534131000400000100010007d1fa57c4aed9f0a32e84aa0faefd0de9e8fd6aec8f87fb03766c834c99921eb23be79ad9d5dcc1dd9ad236132102900b723cf980957fc4e177108fc607774f29e8320e92ea05ece4e821c0a5efe8f1645c4c0c93c1ab99285d622caa652c1dfad63d745d6f2de5f17e5eaf0fc4963d261c8a12436518206dc093344d5ad293")]
 ```
 
 <a name="assumptions-and-assertions"></a>
@@ -239,8 +237,8 @@ namespace MyTests
 <a name="further-reading"></a>
 ## <a name="further-reading"></a>추가 정보
 
-* [Test to code binding](https://blogs.msdn.microsoft.com/devops/2015/04/18/smart-unit-tests-test-to-code-binding-test-case-management/)(테스트-코드 바인딩)
-* [One test to rule them all](https://blogs.msdn.microsoft.com/devops/2015/07/05/intellitest-one-test-to-rule-them-all/)(한 번 테스트로 모두 제어)
+* [Test to code binding](https://devblogs.microsoft.com/devops/smart-unit-tests-test-to-code-binding-test-case-management/)(테스트-코드 바인딩)
+* [One test to rule them all](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)(한 번 테스트로 모두 제어)
 
 ## <a name="got-feedback"></a>피드백이 있으신가요?
 

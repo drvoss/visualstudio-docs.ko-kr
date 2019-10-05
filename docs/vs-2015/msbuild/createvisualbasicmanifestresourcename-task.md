@@ -1,14 +1,9 @@
 ---
 title: CreateVisualBasicManifestResourceName 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -21,18 +16,17 @@ ms.assetid: 251c47b9-de32-414b-a138-bf45290af12e
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 43cd2b3c4516479f7cf97182d2a66570066e891a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d923c83c513ff33b971e1b5ca77109d6ff057db7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184073"
 ---
 # <a name="createvisualbasicmanifestresourcename-task"></a>CreateVisualBasicManifestResourceName 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 지정된 .resx 파일 이름 또는 기타 리소스에서 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 스타일 매니페스트 이름을 만듭니다.  
   
 ## <a name="parameters"></a>매개 변수  
@@ -54,6 +48,3 @@ ms.locfileid: "49302824"
 ## <a name="see-also"></a>참고 항목  
  [작업](../msbuild/msbuild-tasks.md)   
  [작업 참조](../msbuild/msbuild-task-reference.md)
-
-
-

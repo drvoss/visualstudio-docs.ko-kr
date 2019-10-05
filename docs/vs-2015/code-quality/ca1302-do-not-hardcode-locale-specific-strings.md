@@ -1,14 +1,9 @@
 ---
 title: 'CA1302: 로캘별 문자열을 하드 코딩 하지 마십시오 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DoNotHardcodeLocaleSpecificStrings
 - CA1302
@@ -20,14 +15,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 23f2b807d66662691afaa4805a50b34255a39bdb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d52489ba25fe2c541d2d0329fcad61aef75350e9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200418"
 ---
-# <a name="ca1302-do-not-hardcode-locale-specific-strings"></a>CA1302: 로캘별 문자열을 하드 코딩하지 마십시오.
+# <a name="ca1302-do-not-hardcode-locale-specific-strings"></a>CA1302: 로캘별 문자열을 하드코드하지 마세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -58,7 +53,4 @@ ms.locfileid: "49842419"
  [!code-vb[FxCop.Globalization.HardcodedLocaleStrings#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Globalization.HardcodedLocaleStrings/vb/FxCop.Globalization.HardcodedLocaleStrings.vb#1)]
 
 ## <a name="related-rules"></a>관련된 규칙
- [CA1303: 리터럴을 지역화된 매개 변수로 전달하지 마십시오.](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)
-
-
-
+ [CA1303: 리터럴을 지역화 된 매개 변수로 전달 하지 마십시오](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)

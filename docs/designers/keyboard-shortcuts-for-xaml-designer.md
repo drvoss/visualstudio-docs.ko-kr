@@ -1,21 +1,17 @@
 ---
 title: XAML 디자이너에 대한 바로 가기 키
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 40211cc7-294a-4943-85a4-941ad6418dad
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.workload:
-- uwp
-ms.openlocfilehash: 86c7eea623401edbce5638c9385dc3a5d082548f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e9a3260733ce67cde32aa8800b160314cf1ed8bb
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855445"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821783"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>XAML 디자이너에 대한 바로 가기 키
 

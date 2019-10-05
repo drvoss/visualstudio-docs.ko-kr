@@ -1,14 +1,9 @@
 ---
 title: 텍스트 편집기 옵션 대화 상자 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Miscellaneous
@@ -25,25 +20,24 @@ ms.assetid: 90d4e522-6391-4571-927d-b466a9766342
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 939438c2506a95c98005144dde395028d18cc481
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 82c314870acfa3cbb836a7570d62a6f0c5ac8884
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68163232"
 ---
 # <a name="text-editor-options-dialog-box"></a>텍스트 편집기 옵션 대화 상자
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **옵션** 대화 상자의 편집기 옵션은 편집기의 모양 및 동작을 사용자 지정하는 방법을 제공합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [방법: 편집기의 글꼴 및 색 변경](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)  
  편집기 글꼴 및 색을 변경하는 방법을 설명합니다.  
   
- [방법: 편집기에서 줄 바꿈 관리](../../ide/reference/how-to-manage-word-wrap-in-the-editor.md)  
+ [방법: 편집기에서 자동 줄 바꿈 관리](../../ide/reference/how-to-manage-word-wrap-in-the-editor.md)  
  자동 줄 바꿈 옵션을 설명합니다.  
   
  [방법: 편집기에서 줄 번호 표시](../../ide/reference/how-to-display-line-numbers-in-the-editor.md)  
@@ -97,6 +91,3 @@ ms.locfileid: "49260236"
 ## <a name="related-sections"></a>관련 단원  
  [코드 작성](../../ide/writing-code-in-the-code-and-text-editor.md)  
  코드 편집기를 사용하는 여러 가지 방법에 대해 설명합니다.
-
-
-

@@ -1,17 +1,17 @@
 ---
 title: 디버깅 - 데이터 시각화
 description: 디버깅은 프로그래밍의 공통적인 필수 부분입니다. Mac용 Visual Studio에는 편리한 디버깅을 위한 전체 기능 모음이 포함되어 있습니다. 이 문서에서는 디버거에서 개체를 검사할 때 볼 수 있는 다양한 데이터 시각화를 살펴보겠습니다.
-author: conceptdev
-ms.author: crdun
+author: jmatthiesen
+ms.author: jomatthi
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 896fa055c536f9f3ee693773ad4f4ae0edd7e7fe
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 14696040160dfc33f89b7647fb73b116b41afa16
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349441"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691740"
 ---
 # <a name="data-visualizations"></a>데이터 시각화
 
@@ -88,18 +88,18 @@ IEnumerable은 모든 값을 열거합니다. **값 표시** 단추를 클릭하
 
 ![기타 시각화](media/data-visualizations-image23.png)
 
-*   **Primitives**
-    *   기본 형식의 원시 값을 표시됩니다.
-*   **Enum**
-    *   열거형 형식 한정자 없이 필드 값을 표시합니다.
-*   **Tuple**
-    *   (,) 형식으로 표시됩니다.
-*   **Null**
-    *   “null” 값을 표시합니다.
-*   **URL**
-    *   클릭 가능한 하이퍼링크를 표시합니다.
-*   **IntPtr**
-    *   IntPtr의 16진수 표현을 표시합니다.
+* **Primitives**
+  * 기본 형식의 원시 값을 표시됩니다.
+* **Enum**
+  * 열거형 형식 한정자 없이 필드 값을 표시합니다.
+* **Tuple**
+  * (,) 형식으로 표시됩니다.
+* **Null**
+  * “null” 값을 표시합니다.
+* **URL**
+  * 클릭 가능한 하이퍼링크를 표시합니다.
+* **IntPtr**
+  * IntPtr의 16진수 표현을 표시합니다.
 
 ## <a name="see-also"></a>참고 항목
 

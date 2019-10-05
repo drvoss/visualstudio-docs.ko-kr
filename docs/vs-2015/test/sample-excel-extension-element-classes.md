@@ -1,26 +1,21 @@
 ---
-title: '샘플 Excel 확장: Element 클래스 | Microsoft 문서'
-ms.custom: ''
+title: '샘플 Excel 확장: Element 클래스 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 7c251098-00aa-49cf-9e37-5717c0c6b3f1
 caps.latest.revision: 11
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fb5085bdd9a79330f7c4f73fb39993af63eb0a78
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 052ef261270b2cd6e66d71bbbb0c9cc3d12696eb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194896"
 ---
-# <a name="sample-excel-extension-element-classes"></a>샘플 Excel 확장: 요소 클래스
+# <a name="sample-excel-extension-element-classes"></a>샘플 Excel 확장: Element 클래스
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 확장에서는 <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>에서 파생되며 [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]의 워크시트 컨트롤 및 셀 컨트롤을 나타내는 클래스를 사용합니다.  
@@ -54,10 +49,7 @@ ms.locfileid: "49811948"
   
  `Utilities` 클래스에는 UI에 대한 여러 정보를 반환하는 도우미 메서드가 있습니다. **USER32.DLL**, **OLEACC.DLL** 등의 외부 시스템 DLL을 직접 호출하여 UI에서 창 핸들을 가져오는 메서드도 있습니다<strong>.</strong>  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  <xref:System.Runtime.InteropServices.ComVisibleAttribute>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.IQueryElement>   
  [Microsoft Excel을 지원하도록 코딩된 UI 테스트 및 작업 기록 확장](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
-
-
-

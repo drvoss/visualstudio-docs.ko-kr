@@ -1,31 +1,28 @@
 ---
-title: Visual Studio Test Professional 2017 워크로드 및 구성 요소 ID
+title: Visual Studio Test Professional 워크로드 및 구성 요소 ID
 titleSuffix: ''
 description: Visual Studio 작업 및 구성 요소 ID를 사용하여 테스터를 위한 통합된 테스트 도구를 제공합니다.
-keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: douge
-ms.date: 11/13/2018
+manager: jillfra
+ms.date: 09/23/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.service: ''
-ms.technology: vs-acquisition
-ms.prod: visual-studio-dev15
 ms.assetid: 70c03438-8434-4921-ada0-c172519af431
-ms.workload:
-- multiple
-ms.openlocfilehash: fa09c844d4ea0fa1b6d4c255f10af6bda4f3128c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+monikerRange: vs-2017
+ms.openlocfilehash: d61105a16919e8384aad961d62a81ff3a8688b25
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049285"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213657"
 ---
-# <a name="visual-studio-test-professional-2017-component-directory"></a>Visual Studio Test Professional 2017 구성 요소 디렉터리
+# <a name="visual-studio-test-professional-component-directory"></a>Visual Studio Test Professional 구성 요소 디렉터리
 
 이 페이지의 표에는 명령줄을 사용하여 Visual Studio를 설치하는 데 사용할 수 있는 ID 또는 VSIX 매니페스트에서 종속성으로 지정할 수 있는 ID가 나열되어 있습니다. Visual Studio에 대한 업데이트를 릴리스할 때 추가 구성 요소가 추가될 것입니다.
 
@@ -59,7 +56,7 @@ Microsoft.VisualStudio.Component.TestTools.MicrosoftTestManager | Microsoft Test
 
 구성 요소 ID | name | 버전
 --- | --- | ---
-N/A | N/A | N/A
+해당 없음 | 해당 없음 | 해당 없음
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

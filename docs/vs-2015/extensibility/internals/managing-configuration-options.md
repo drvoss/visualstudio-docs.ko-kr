@@ -1,26 +1,21 @@
 ---
 title: 관리 구성 옵션 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - configuration options
 ms.assetid: 596c28ee-f48d-4252-a5c4-f730c43a39e6
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5f7407a4c75321899498f2f4fa9e555f32198c0c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4d88cd0c20a8bbb29fee6b35d65813fd81f2eeb6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192634"
 ---
 # <a name="managing-configuration-options"></a>구성 옵션 관리
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51748726"
  [개요](../../extensibility/internals/configuration-options-overview.md)  
  에 대해 설명 하는 방법의 프로젝트 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 여러 구성을 지원할 수 있습니다.  
   
- [속성 페이지](../../extensibility/internals/property-pages.md)  
+ [속성 페이지(Visual C++)](../../extensibility/internals/property-pages.md)  
  사용자가 보고 하 고 속성 페이지를 사용 하 여 프로젝트 구성에 대 한 종속 속성 및 독립적인 속성을 변경할 수에 대해 설명 합니다.  
   
  [솔루션 구성](../../extensibility/internals/solution-configuration.md)  
@@ -52,4 +47,3 @@ ms.locfileid: "51748726"
 ## <a name="related-sections"></a>관련 단원  
  [프로젝트 형식](../../extensibility/internals/project-types.md)  
  기본 빌딩 블록으로 프로젝트의 개요를 제공 합니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 통합된 개발 환경 (IDE)입니다. 프로젝트 빌드 및 컴파일 코드를 제어 하는 방법을 설명 하는 추가 항목 링크가 제공 됩니다.
-

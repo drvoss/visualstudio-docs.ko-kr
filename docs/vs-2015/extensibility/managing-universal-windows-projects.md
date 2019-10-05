@@ -1,40 +1,35 @@
 ---
 title: 유니버설 Windows 프로젝트 관리 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b2c10232b917e8343ace8d1a31fcd3609ecdfb95
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 08d88ce08c6c91cbf46bcc6d15cbf098d61e604d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783781"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679923"
 ---
 # <a name="managing-universal-windows-projects"></a>유니버설 Windows 프로젝트 관리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-유니버설 Windows 앱은 Windows 8.1 및 Windows Phone 8.1, 두 가지 플랫폼에서 코드 및 기타 자산을 사용 하는 개발자를 대상으로 하는 앱입니다. 플랫폼 특정 코드 및 리소스를 별도 프로젝트, Windows 및 Windows Phone 대 한 다른 유지 되는 동안 공유 코드 및 리소스를 공유 프로젝트에 유지 됩니다. 유니버설 Windows 앱에 대 한 자세한 내용은 참조 하세요. [유니버설 Windows 앱](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx)합니다. Visual Studio 확장 프로젝트를 관리 하는 유니버설 Windows 앱 프로젝트는 단일 플랫폼 앱에서 다른 구조를 알고 있어야 합니다. 이 연습에서는 공유 프로젝트를 이동 하 고 공유 항목을 관리 하는 방법을 보여 줍니다.  
+유니버설 Windows 앱은 Windows 8.1 및 Windows Phone 8.1, 두 가지 플랫폼에서 코드 및 기타 자산을 사용 하는 개발자를 대상으로 하는 앱입니다. 플랫폼 특정 코드 및 리소스를 별도 프로젝트, Windows 및 Windows Phone 대 한 다른 유지 되는 동안 공유 코드 및 리소스를 공유 프로젝트에 유지 됩니다. 유니버설 Windows 앱에 대 한 자세한 내용은 참조 하세요. [유니버설 Windows 앱](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx)합니다. Visual Studio 확장 프로젝트를 관리 하는 유니버설 Windows 앱 프로젝트는 단일 플랫폼 앱에서 다른 구조를 알고 있어야 합니다. 이 연습에서는 공유 프로젝트를 이동 하 고 공유 항목을 관리 하는 방법을 보여 줍니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
  Visual Studio 2015부터 수행 설치 하면 Visual Studio SDK 다운로드 센터에서. Visual Studio 설치에서 선택적 기능으로 포함 됩니다. 또한 VS SDK를 나중에 설치할 수 있습니다. 자세한 내용은 [Visual Studio SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)합니다.  
   
 ### <a name="navigate-the-shared-project"></a>공유 프로젝트를 이동 합니다.  
   
-1.  라는 C# VSIX 프로젝트를 만듭니다 **TestUniversalProject**합니다. (**파일, 새로 만들기, 프로젝트** 차례로 **C#, 확장성, Visual Studio 패키지**). 추가 된 **사용자 지정 명령** 프로젝트 항목 템플릿 (솔루션 탐색기에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 선택 **추가 / 새 항목**이동한 다음 **확장성**). 파일 이름을 **TestUniversalProject**합니다.  
+1. 라는 C# VSIX 프로젝트를 만듭니다 **TestUniversalProject**합니다. (**파일, 새로 만들기, 프로젝트** 차례로 **C#, 확장성, Visual Studio 패키지**). 추가 된 **사용자 지정 명령** 프로젝트 항목 템플릿 (솔루션 탐색기에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 선택 **추가 / 새 항목**이동한 다음 **확장성**). 파일 이름을 **TestUniversalProject**합니다.  
   
-2.  Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll에 대 한 참조를 추가 (에 **확장** 섹션).  
+2. Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll에 대 한 참조를 추가 (에 **확장** 섹션).  
   
-3.  TestUniversalProject.cs를 열고 다음을 추가 `using` 문:  
+3. TestUniversalProject.cs를 열고 다음을 추가 `using` 문:  
   
     ```csharp  
     using EnvDTE;  
@@ -47,7 +42,7 @@ ms.locfileid: "51783781"
     using System.Windows.Forms;  
     ```  
   
-4.  TestUniversalProject 클래스를 가리키는 개인 필드를 추가 합니다 **출력** 창입니다.  
+4. TestUniversalProject 클래스를 가리키는 개인 필드를 추가 합니다 **출력** 창입니다.  
   
     ```csharp  
     public sealed class TestUniversalProject   
@@ -57,7 +52,7 @@ ms.locfileid: "51783781"
     }  
     ```  
   
-5.  TestUniversalProject 생성자 내에서 출력 창에 대 한 참조를 설정 합니다.  
+5. TestUniversalProject 생성자 내에서 출력 창에 대 한 참조를 설정 합니다.  
   
     ```csharp  
     private TestUniversalProject(Package package)  
@@ -82,7 +77,7 @@ ms.locfileid: "51783781"
     }  
     ```  
   
-6.  기존 코드를 제거 합니다 `ShowMessageBox` 메서드:  
+6. 기존 코드를 제거 합니다 `ShowMessageBox` 메서드:  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)   
@@ -90,7 +85,7 @@ ms.locfileid: "51783781"
     }  
     ```  
   
-7.  이 연습에서 여러 다양 한 용도로 사용 하는 DTE 개체를 가져옵니다. 또한 솔루션을 메뉴 단추를 클릭할 때 로드 되도록 해야 합니다.  
+7. 이 연습에서 여러 다양 한 용도로 사용 하는 DTE 개체를 가져옵니다. 또한 솔루션을 메뉴 단추를 클릭할 때 로드 되도록 해야 합니다.  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
@@ -108,7 +103,7 @@ ms.locfileid: "51783781"
     }  
     ```  
   
-8.  공유 프로젝트를 찾습니다. 공유 프로젝트 컨테이너인 순수 빌드 하거나 출력을 생성 하지 않습니다. 다음 메서드를 검색 하 여 솔루션에서 첫 번째 공유 프로젝트를 찾습니다는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 공유 프로젝트 기능을 가진 개체입니다.  
+8. 공유 프로젝트를 찾습니다. 공유 프로젝트 컨테이너인 순수 빌드 하거나 출력을 생성 하지 않습니다. 다음 메서드를 검색 하 여 솔루션에서 첫 번째 공유 프로젝트를 찾습니다는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 공유 프로젝트 기능을 가진 개체입니다.  
   
     ```csharp  
     private IVsHierarchy FindSharedProject()  
@@ -240,7 +235,7 @@ ms.locfileid: "51783781"
     ```  
   
     > [!IMPORTANT]
-    >  사용자는 c + + 유니버설 Windows 앱 프로젝트에서 실험적 인스턴스를 연 경우 위의 코드는 예외가 throw 됩니다. 이것은 알려진 문제입니다. 예외를 방지 하려면 대체는 `foreach` 위에 다음을 사용 하 여 차단 합니다.  
+    > 사용자를 연 경우는 C++ 실험적 인스턴스에서 유니버설 Windows 앱 프로젝트에서 위의 코드는 예외가 throw 됩니다. 이것은 알려진 문제입니다. 예외를 방지 하려면 대체는 `foreach` 위에 다음을 사용 하 여 차단 합니다.  
   
     ```csharp  
     var importingProjects = sharedAssetsProject.EnumImportingProjects();  
@@ -311,7 +306,7 @@ ms.locfileid: "51783781"
   
 ### <a name="manage-the-shared-items-in-the-platform-project"></a>플랫폼 프로젝트에서 공유 항목 관리  
   
-1.  플랫폼 프로젝트에서 공유 항목을 찾습니다. 공유 프로젝트에서 항목 플랫폼 프로젝트에서 공유 항목으로 표시 합니다. 보이지 합니다 **솔루션 탐색기**, 찾기 프로젝트 계층 구조를 탐색할 수 있지만. 다음 메서드는 계층에 설명 하 고 모든 공유 항목을 수집 합니다. 필요에 따라 각 항목의 캡션을 출력합니다. 공유 항목을 새 속성으로 식별 됩니다 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7>합니다.  
+1. 플랫폼 프로젝트에서 공유 항목을 찾습니다. 공유 프로젝트에서 항목 플랫폼 프로젝트에서 공유 항목으로 표시 합니다. 보이지 합니다 **솔루션 탐색기**, 찾기 프로젝트 계층 구조를 탐색할 수 있지만. 다음 메서드는 계층에 설명 하 고 모든 공유 항목을 수집 합니다. 필요에 따라 각 항목의 캡션을 출력합니다. 공유 항목을 새 속성으로 식별 됩니다 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7>합니다.  
   
     ```csharp  
     private void InspectHierarchyItems(IVsHierarchy hier, uint itemid, int level, List<uint> itemIds, bool getSharedItems, bool printItems)  
@@ -343,7 +338,7 @@ ms.locfileid: "51783781"
     }  
     ```  
   
-2.  에 `ShowMessageBox` 메서드를 플랫폼 프로젝트 계층 구조 항목을 탐색 하려면 다음 코드를 추가 합니다. 내에서 삽입 된 `foreach` 블록입니다.  
+2. 에 `ShowMessageBox` 메서드를 플랫폼 프로젝트 계층 구조 항목을 탐색 하려면 다음 코드를 추가 합니다. 내에서 삽입 된 `foreach` 블록입니다.  
   
     ```csharp  
     output.OutputStringThreadSafe("Walk the active platform project:\n");  
@@ -351,7 +346,7 @@ ms.locfileid: "51783781"
     this.InspectHierarchyItems(activePlatformHier, (uint)VSConstants.VSITEMID.Root, 1, sharedItemIds, true, true);  
     ```  
   
-3.  공유 항목을 읽습니다. 숨겨진 연결 파일로 플랫폼 프로젝트에서 공유 항목을 표시 하 고 일반 연결 파일로 모든 속성을 읽을 수 있습니다. 다음 코드는 첫 번째 공유 항목의 전체 경로 읽습니다.  
+3. 공유 항목을 읽습니다. 숨겨진 연결 파일로 플랫폼 프로젝트에서 공유 항목을 표시 하 고 일반 연결 파일로 모든 속성을 읽을 수 있습니다. 다음 코드는 첫 번째 공유 항목의 전체 경로 읽습니다.  
   
     ```csharp  
     var sharedItemId = sharedItemIds[0];  
@@ -360,7 +355,7 @@ ms.locfileid: "51783781"
     output.OutputStringThreadSafe(string.Format("Shared item full path: {0}\n", fullPath));  
     ```  
   
-4.  이제 사용해 보세요. F5 키를 눌러 실험적 인스턴스를 시작 합니다. 실험적 인스턴스에서 C# 유니버설 허브 앱 프로젝트를 만듭니다 (에 **새 프로젝트** 대화 상자에서 **Visual C# / Windows / Windows 8 유니버설 / / 허브 앱**)로 이동 합니다 **도구** 메뉴를 클릭 **TestUniversalProject 호출**, 한 다음 텍스트를 확인 합니다 **출력** 창. 다음과 같은 정보가 표시됩니다.  
+4. 이제 사용해 보세요. F5 키를 눌러 실험적 인스턴스를 시작 합니다. 실험적 인스턴스에서 C# 유니버설 허브 앱 프로젝트를 만듭니다 (에 **새 프로젝트** 대화 상자에서 **Visual C# / Windows / Windows 8 유니버설 / / 허브 앱**)로 이동 합니다 **도구** 메뉴를 클릭 **TestUniversalProject 호출**, 한 다음 텍스트를 확인 합니다 **출력** 창. 다음과 같은 정보가 표시됩니다.  
   
     ```  
     Found shared project: HubApp.Shared  
@@ -530,7 +525,7 @@ ms.locfileid: "51783781"
 9. 공유 항목을 수정 합니다. 플랫폼 프로젝트에서 공유 항목을 수정할 수 없습니다. 대신, 이러한 항목의 실제 소유자가 공유 프로젝트에서 수정할 해야 있습니다. 공유 프로젝트에 해당 하는 항목 ID를 가져올 수 있습니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A>를 공유 하는 항목의 전체 경로 제공 합니다. 그런 다음 공유 항목을 수정할 수 있습니다. 플랫폼 프로젝트에 변경 내용이 전파 됩니다.  
   
     > [!IMPORTANT]
-    >  프로젝트 항목을 수정 하기 전에 공유 항목 인지 아닌지 파악 해야 합니다.  
+    > 프로젝트 항목을 수정 하기 전에 공유 항목 인지 아닌지 파악 해야 합니다.  
   
      다음 메서드는 프로젝트 항목 파일의 이름을 수정합니다.  
   
@@ -578,4 +573,3 @@ ms.locfileid: "51783781"
     ```  
   
 13. 프로젝트를 빌드하고 실행합니다. 실험적 인스턴스에서 C# 유니버설 프로젝트를 만들고로 이동 합니다 **도구** 메뉴를 클릭 **TestUniversalProject 호출**, 일반 출력 창에 텍스트를 확인 합니다. 모두 표시 해야 플랫폼 프로젝트에서 파일의 이름이 바뀐 후는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> 이벤트 및 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> 이벤트입니다. 변경 이후 파일 인해 다른 모든 파일을 변경할 수 없기 때문에 아무 곳 이나 플랫폼 프로젝트의 항목에 대 한 변경 내용을 전파 하지 않습니다만 각 이러한 이벤트 중 하나를
-

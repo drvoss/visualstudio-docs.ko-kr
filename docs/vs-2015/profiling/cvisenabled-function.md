@@ -1,14 +1,9 @@
 ---
 title: CvIsEnabled 함수 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - cvmarkers/CvIsEnabledEx
 - cvmarkers/CvIsEnabled
@@ -19,13 +14,13 @@ ms.assetid: 2e4fea6d-758d-4150-8744-6102a1d58c1c
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 91a8a0a27456299a914b2919aaf169fa72edf540
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ba30f3ab75504c0115b8a881f2014910f3b9fd0b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51723889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177783"
 ---
 # <a name="cvisenabled-function"></a>CvIsEnabled 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +50,7 @@ HRESULT CvIsEnabledEx(
  `pProvider`  
  올바른 공급자 개체입니다. NULL일 수 없습니다.  
   
-## <a name="return-value"></a>반환 값  
+## <a name="return-value"></a>Return Value  
  현재 공급자를 사용할 수 있는 경우 S_OK입니다. 현재 공급자를 사용할 수 없는 경우 S_FALSE입니다. 오류가 발생한 경우 오류 코드입니다. FAILED 매크로를 사용하여 오류 조건을 확인한 후 S_OK/S_FALSE를 확인할 수 있습니다.  
   
 ## <a name="requirements"></a>요구 사항  
@@ -63,6 +58,3 @@ HRESULT CvIsEnabledEx(
   
 ## <a name="see-also"></a>참고 항목  
  [C++ 라이브러리 참조](../profiling/cpp-library-reference.md)
-
-
-

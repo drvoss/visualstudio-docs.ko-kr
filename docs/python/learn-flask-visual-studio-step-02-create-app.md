@@ -2,23 +2,21 @@
 title: Visual Studio 2단계, 보기 및 템플릿에서 Flask 자습서 알아보기
 titleSuffix: ''
 description: Visual Studio 프로젝트 컨텍스트에서 Flask 기본 사항을 검토하는 연습 과정으로, 앱을 만들고 보기 및 템플릿을 사용하는 단계를 구체적으로 설명합니다.
-ms.date: 09/04/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 01/07/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cbdf9232bdff56fa2d244f8baeed2d070dcb37a9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 188865b715c7c071222f7132c6f9bdd9b3dc596a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961757"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>2단계: 보기 및 페이지 템플릿을 사용하여 Flask 앱 만들기
 
@@ -79,6 +77,7 @@ ms.locfileid: "53052947"
 
         app.run(HOST, PORT)
     ```
+
 6. 전체 프로젝트 구조는 다음 이미지와 같아야 합니다.
 
     ![코드 리팩터링 후 프로젝트 구조](media/flask/step02-project-structure.png)

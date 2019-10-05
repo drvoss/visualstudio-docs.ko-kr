@@ -1,29 +1,30 @@
 ---
 title: 로컬 폴더에 배포
-ms.custom: ''
-ms.date: 06/22/2018
-ms.technology: vs-ide-deployment
+ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, local folder
 ms.assetid: adb461c4-812a-4b8c-b2ab-96002379f6a9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 517698aa2e042d74138579dae3633930b338cd61
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 862310c8c763ce366798bfacd4f4759d606bb33c
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781915"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128204"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Visual Studio를 사용하여 로컬 폴더에 앱 배포
 
 **게시** 도구를 사용하여 ASP.NET, ASP.NET Core, .NET Core 및 Python 앱을 Visual Studio의 로컬 폴더에 게시합니다. Node.js의 경우 단계는 지원되지만 사용자 인터페이스는 다릅니다.
 
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
+
+> [!NOTE]
+> 로컬 폴더에 Windows 데스크톱 애플리케이션을 게시해야 하는 경우 [ClickOnce를 사용하여 데스크톱 앱 배포](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)(C# 또는 Visual Basic)를 참조하세요. C++/CLI의 경우 [ClickOnce를 사용하여 네이티브 앱 배포](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)를 참조하고, C/C++의 경우 [설치 프로젝트를 사용하여 네이티브 앱 배포](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)를 참조하세요.
 
 ## <a name="deploy-to-a-local-folder"></a>로컬 폴더에 배포
 
@@ -55,6 +56,6 @@ ms.locfileid: "38781915"
 
 ## <a name="next-steps"></a>다음 단계
 
-- [게시 도구를 사용하여 .NET Core 응용 프로그램 배포](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+- [게시 도구를 사용하여 .NET Core 애플리케이션 배포](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Microsoft Store(데스크톱 브리지)의 데스크톱 앱 패키지](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - (.NET) [.NET Framework 및 애플리케이션 배포](/dotnet/framework/deployment/)

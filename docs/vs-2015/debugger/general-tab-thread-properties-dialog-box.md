@@ -1,14 +1,9 @@
 ---
 title: 스레드 속성 대화 상자, 일반 탭 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - threading [Visual Studio], thread properties
 - thread properties
@@ -16,22 +11,22 @@ ms.assetid: 46b6c668-6786-456e-97dc-337bcac0d812
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2777096e13ef649f2a340d3b3cae92d050d9531f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b1a8e6fd583f6035fc84f0c86adcee059562235d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159949"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>스레드 속성 대화 상자, 일반 탭
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 특정 스레드에 대 한 자세한 내용은이 대화 상자를 사용 합니다. 이 대화 상자를 표시 하려면 포커스를 이동 하는 [스레드 뷰](../debugger/threads-view.md) 창을 열거나 [메시지 뷰](../debugger/messages-view.md) 메시지를 확장 합니다. 선택한 스레드 노드 트리에서 선택 **속성** 에서 합니다 **보기** 메뉴.  
   
- **Thread Properties** 대화 상자에는 하나의 창에는 **일반** 탭. 다음 설정은 사용할 수 있습니다.  
+ **Thread Properties** 대화 상자에는 하나의 창에는 **일반** 탭. 다음 설정을 사용할 수 있습니다.  
   
-|입력|설명|  
+|입력|Description|  
 |-----------|-----------------|  
 |**모듈 이름**|모듈의 이름입니다.|  
 |**스레드 ID**|이 스레드의 고유 ID입니다. 스레드 ID 번호는 다시 사용; 참고 스레드의 수명 동안만 스레드를 식별합니다.|  
@@ -40,13 +35,10 @@ ms.locfileid: "51728975"
 |**대기 원인**|스레드가 대기 상태에 있을 경우에 적용 됩니다. 이벤트 쌍은 보호 된 하위 시스템을 사용 하 여 통신 하는 데 사용 됩니다.|  
 |**CPU 시간**|이 프로세스와 해당 스레드에서 소요 된 총 CPU 시간입니다. 사용자 시간 + 특권을과 같습니다.|  
 |**사용자 시간**|이 스레드가 사용자 모드에서 코드를 실행 중인 데 걸린 총 경과 시간입니다. 응용 프로그램 창 관리자 그래픽 엔진 등 하위 시스템 사용자 모드에서 실행 됩니다.|  
-|**권한이 부여 된 시간**|이 스레드가 특권 모드에서 실행 중인 코드 데 걸린 총 경과 시간입니다. Windows 시스템 서비스를 호출 하면 서비스는 종종 시스템 전용 데이터에 액세스할 수 있는 특권 모드에서 실행 됩니다. 이러한 데이터는 사용자 모드에서 실행 되는 스레드의 액세스 로부터 보호 됩니다. 시스템에 대 한 호출 명시적 일 수 또는 페이지 폴트 또는 인터럽트가 발생 하는 경우와 같은 암시적 일 수 있습니다.|  
-|**경과 된 시간**|총 경과 시간 (초)이이 스레드가 실행 되었습니다.|  
+|**권한 있는 시간**|이 스레드가 특권 모드에서 실행 중인 코드 데 걸린 총 경과 시간입니다. Windows 시스템 서비스를 호출 하면 서비스는 종종 시스템 전용 데이터에 액세스할 수 있는 특권 모드에서 실행 됩니다. 이러한 데이터는 사용자 모드에서 실행 되는 스레드의 액세스 로부터 보호 됩니다. 시스템에 대 한 호출 명시적 일 수 또는 페이지 폴트 또는 인터럽트가 발생 하는 경우와 같은 암시적 일 수 있습니다.|  
+|**경과 시간**|총 경과 시간 (초)이이 스레드가 실행 되었습니다.|  
 |**현재 우선 순위**|이 스레드의 현재 동적 우선 순위입니다. 스레드는 프로세스 내에서 발생 하 고 프로세스의 기본 우선 순위를 기준으로 자신의 기본 우선 순위를 낮출 수 있습니다.|  
 |**기본 우선 순위**|이 스레드에 대 한 현재 기본 우선 순위입니다.|  
 |**시작 주소**|이 스레드에 대 한 시작 가상 주소입니다.|  
 |**사용자 PC**|사용자 프로그램 스레드에 대 한 카운터입니다.|  
 |**컨텍스트 전환**|다른 스레드 간에서 전환의 수입니다. 단일 프로세스 내에서 또는 프로세스 간 스레드 전환 발생할 수 있습니다. 다른 정보를 요청 하는 한 스레드에 의해 또는 더 높은 우선 순위 스레드는 실행할 준비가 되 면 선점 되는 스레드에서 스레드 스위치를 발생할 수 있습니다.|
-
-
-

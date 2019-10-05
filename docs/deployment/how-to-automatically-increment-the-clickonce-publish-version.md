@@ -1,8 +1,6 @@
 ---
 title: '방법: 게시 버전 자동 증가 ClickOnce | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 686ab88a-6305-4914-a05b-fe269cc0ae1e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7dd1723d9d92d9bc1b667cc3fddbc3ea297d8b8
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: MTE95
+ms.openlocfilehash: cce9dfe48e34d642b115c8391de73c0350ce515b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389126"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928495"
 ---
 # <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>방법: ClickOnce 게시 버전 자동 증가
 
@@ -37,13 +35,13 @@ ms.locfileid: "52389126"
 
 ## <a name="to-disable-automatically-incrementing-the-publish-version"></a>게시 버전 자동 증가 사용 하지 않도록 설정
 
-1.  **솔루션 탐색기**에서 프로젝트를 선택한 상태에서 **프로젝트** 메뉴에서 **속성**을 클릭합니다.
+1. **솔루션 탐색기**에서 프로젝트를 선택한 상태에서 **프로젝트** 메뉴에서 **속성**을 클릭합니다.
 
-2.  **게시** 탭을 클릭합니다.
+2. **게시** 탭을 클릭합니다.
 
-3.  에 **게시 버전** 섹션의 선택을 취소는 **자동 릴리스마다 수정 번호 증가** 확인란 합니다.
+3. 에 **게시 버전** 섹션의 선택을 취소는 **자동 릴리스마다 수정 번호 증가** 확인란 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [방법: ClickOnce 게시 버전 설정](../deployment/how-to-set-the-clickonce-publish-version.md)
 - [ClickOnce 애플리케이션 게시](../deployment/publishing-clickonce-applications.md)

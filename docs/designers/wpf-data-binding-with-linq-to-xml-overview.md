@@ -1,21 +1,19 @@
 ---
 title: LINQ to XML로 WPF 데이터 바인딩 개요
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 3bf80845-891b-41de-a71b-4080b5bd3ea6
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15f726527a743e70cced0e274fbde6b7afa8691a
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 400686710e09c19a806493232d471a1c946a630d
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890372"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715074"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>LINQ to XML로 WPF 데이터 바인딩 개요
 
@@ -23,7 +21,7 @@ ms.locfileid: "37890372"
 
 ## <a name="xaml-and-linq-to-xml"></a>XAML 및 LINQ to XML
 
-XAML(eXtensible Application Markup Language)은 .NET Framework 3.0 기술을 지원하기 위해 Microsoft에서 만드는 XML 언어입니다. XAML은 사용자 인터페이스 요소와 이벤트 및 데이터 바인딩과 같은 관련 기능을 나타내기 위해 WPF에서 사용됩니다. Windows Workflow Foundation에서 XAML은 프로그램 제어(*워크플로*)와 같은 프로그램 구조를 나타내는 데 사용됩니다. XAML을 통해 프로그램의 더욱 개별화된 동작을 정의하는 기술의 선언적 측면을 관련 절차형 코드에서 분리할 수 있습니다.
+XAML(Extensible Application Markup Language)은 .NET 기술을 지원하기 위해 Microsoft에서 만드는 XML 언어입니다. XAML은 사용자 인터페이스 요소와 이벤트 및 데이터 바인딩과 같은 관련 기능을 나타내기 위해 WPF에서 사용됩니다. Windows Workflow Foundation에서 XAML은 프로그램 제어(*워크플로*)와 같은 프로그램 구조를 나타내는 데 사용됩니다. XAML을 통해 프로그램의 더욱 개별화된 동작을 정의하는 기술의 선언적 측면을 관련 절차형 코드에서 분리할 수 있습니다.
 
 XAML과 LINQ to XML은 다음 두 가지 주요 방식으로 상호 작용할 수 있습니다.
 
@@ -41,7 +39,7 @@ WPF 데이터 바인딩을 통해 UI 요소에서 속성 중 하나를 데이터
 |---------------|-----------------|
 |바인딩 대상|데이터 소스와 연결할 UI 요소입니다. WPF의 시각적 요소는 <xref:System.Windows.UIElement> 클래스에서 파생됩니다.|
 |대상 속성|데이터 바인딩 원본의 값을 반영하는 바인딩 대상의 *종속성 속성*입니다. 종속성 속성은 <xref:System.Windows.DependencyObject>가 파생되는 <xref:System.Windows.UIElement> 클래스에서 직접 지원합니다.|
-|바인딩 원본|표시하기 위해 UI 요소에 제공되는 하나 이상의 값에 대한 원본 개체입니다. WPF는 CLR 개체, ADO.NET 데이터 개체, XML 데이터(XPath 또는 LINQ to XML 쿼리의 데이터) 또는 다른 <xref:System.Windows.DependencyObject>를 바인딩 원본으로 자동으로 지원합니다.|
+|바인딩 원본|표시하기 위해 UI 요소에 제공되는 하나 이상의 값에 대한 원본 개체입니다. WPF는 자동으로 바인딩 원본으로 다음과 같은 형식을 지원합니다. CLR 개체, ADO.NET 데이터 개체, XML 데이터(XPath 또는 LINQ to XML 쿼리) 또는 기타 <xref:System.Windows.DependencyObject>|
 |원본 경로|바인딩될 값이나 값의 집합으로 확인되는 바인딩 원본의 속성입니다.|
 
 종속성 속성은 UI 요소의 동적으로 계산된 속성을 나타내는 WPF에 특정한 개념입니다. 예를 들어, 종속성 속성에는 기본값이나 부모 요소에서 제공하는 값이 있는 경우가 많습니다. 이러한 특수 속성은 표준 속성의 경우처럼 필드가 아니라 <xref:System.Windows.DependencyProperty> 클래스의 인스턴스로 지원됩니다. 자세한 내용은 [종속성 속성 개요](/dotnet/framework/wpf/advanced/dependency-properties-overview)를 참조하세요.

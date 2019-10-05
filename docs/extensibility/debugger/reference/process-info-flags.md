@@ -1,22 +1,25 @@
 ---
 title: PROCESS_INFO_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - PROCESS_INFO_FLAGS
 helpviewer_keywords:
 - PROCESS_INFO_FLAGS enumeration
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c7d319d2053cfa67bd4e7fe77c68474fceb03a2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e0694d83409a492a1d950a17ac5e2298ba9b8578
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896125"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309396"
 ---
 # <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
 
@@ -43,18 +46,18 @@ enum enum_PROCESS_INFO_FLAGS { 
 };
 ```
 
-## <a name="members"></a>멤버
+## <a name="fields"></a>필드
 
-PIFLAG_SYSTEM_PROCESS  
+`PIFLAG_SYSTEM_PROCESS`\
 프로세스가 시스템 프로세스 임을 나타냅니다.
 
-PIFLAG_DEBUGGER_ATTACHED  
+`PIFLAG_DEBUGGER_ATTACHED`\
 프로세스는 디버거에서 디버깅 되 고 있는지를 나타냅니다. 것을 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 디버거, 또는 일부 다른 디버거, 예를 들어, WinDbg를 수 있습니다.
 
-PIFLAG_PROCESS_STOPPED  
+`PIFLAG_PROCESS_STOPPED`\
 프로세스 중지 되었음을 나타냅니다. 경우에만 유효한 `PIFLAG_DEBUGGER_ATTACHED` 도 지정 합니다. Visual Studio 2005 이상 사용할 수 있습니다.
 
-PIFLAG_PROCESS_RUNNING  
+`PIFLAG_PROCESS_RUNNING`\
 프로세스가 실행 중임을 나타냅니다. 경우에만 유효한 `PIFLAG_DEBUGGER_ATTACHED` 도 지정 합니다. Visual Studio 2005 이상 사용할 수 있습니다.
 
 ## <a name="remarks"></a>설명
@@ -71,7 +74,7 @@ PIFLAG_PROCESS_RUNNING
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)
+- [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)

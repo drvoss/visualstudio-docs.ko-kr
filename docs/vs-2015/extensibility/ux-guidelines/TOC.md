@@ -7,7 +7,7 @@
 ### [Visual Studio의 시각적 언어 사전](visual-language-dictionary-for-visual-studio.md)
 ## [Visual Studio의 메뉴 및 명령](menus-and-commands-for-visual-studio.md)
 ## [Visual Studio의 상호 작용 패턴](interaction-patterns-for-visual-studio.md)
-### [Visual Studio의 응용 프로그램 패턴](application-patterns-for-visual-studio.md)
+### [Visual Studio의 애플리케이션 패턴](application-patterns-for-visual-studio.md)
 ### [Visual Studio의 일반 컨트롤 패턴](common-control-patterns-for-visual-studio.md)
 ### [Visual Studio의 복합 패턴](composite-patterns-for-visual-studio.md)
 ## [Visual Studio의 UI 텍스트 및 도움말](ui-text-and-help-for-visual-studio.md)

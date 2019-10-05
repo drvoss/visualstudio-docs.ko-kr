@@ -1,33 +1,28 @@
 ---
 title: 레거시 API를 사용 하 여 언어 서비스 컨텍스트에서 제공 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - language service context
 ms.assetid: daa2df22-9181-4bad-b007-a7d40302bce1
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 322dc704524a5b0172797c9351e7beb60d778ab4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4471b71b612008ba7d0733c92286415cd3c3f6b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193878"
 ---
-# <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>레거시 API를 사용 하 여 언어에 대 한 서비스 컨텍스트 제공
+# <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>레거시 API를 사용하여 언어 서비스 컨텍스트 제공
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 두 가지 옵션을 사용 하 여 사용자 컨텍스트를 제공 하는 언어 서비스는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 핵심 편집기: 텍스트 표식 컨텍스트를 제공 하거나 모든 사용자 컨텍스트를 제공 합니다. 여기에 각 간의 차이점 요약 되어 있습니다.  
   
- 사용자 고유의 편집기에 연결 된 언어 서비스에 대 한 컨텍스트를 제공 하는 방법은 참조 하세요 [방법: 편집기에 대 한 컨텍스트를 제공](../extensibility/how-to-provide-context-for-editors.md)합니다.  
+ 사용자 고유의 편집기에 연결 된 언어 서비스에 대 한 컨텍스트를 제공 하는 방법은 참조 하세요. [방법: 편집기에 대 한 컨텍스트를 제공](../extensibility/how-to-provide-context-for-editors.md)합니다.  
   
 ## <a name="provide-text-marker-context-to-the-editor"></a>편집기 텍스트 표식 컨텍스트를 제공 합니다.  
  텍스트 표식으로 표시 하는 컴파일러 오류에 대 한 컨텍스트를 제공 하는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 핵심 편집기를 구현 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> 인터페이스입니다. 이 시나리오에서는 텍스트 마커에 커서가 있는 경우에 언어 서비스 컨텍스트를 제공 합니다. 이렇게 하면 편집기에서 커서를 키워드를 제공 하는 **동적 도움말** 특성이 없는 창입니다.  
@@ -56,4 +51,3 @@ ms.locfileid: "51781935"
   
 ## <a name="context-guidelines-for-editors-and-designers"></a>편집기 및 디자이너에 대 한 상황에 맞는 지침  
  디자이너와 편집기 편집기 또는 디자이너 창에 대 한 일반 키워드를 제공 해야 합니다. 이 수행 되 면 f1 키를 누를 때 디자이너 또는 편집기에 대 한 도움말 항목을 일반, 하지만 적절 하 게 표시 됩니다. 편집기 해야 합니다이 외에도 현재 커서 위치에 키워드를 제공 하거나 현재 선택에 따라 키 용어를 제공 합니다. 텍스트 또는 UI 요소에 대 한 도움말 항목을 가리키는 하거나 f1 키를 누를 때 표시를 선택한 않도록 수행 됩니다. 디자이너를 폼에 단추와 같은 디자이너에서 선택한 항목에 대 한 컨텍스트를 제공 합니다. 편집기 및 디자이너 해야에 설명 된 대로 언어 서비스에 연결할 수도 [레거시 언어 서비스 필수 항목](../extensibility/internals/legacy-language-service-essentials.md)합니다.
-

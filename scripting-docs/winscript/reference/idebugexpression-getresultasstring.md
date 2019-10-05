@@ -2,7 +2,6 @@
 title: IDebugExpression::GetResultAsString | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 557fe65859d1e3046d64884982070ad233e12559
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 84255e364630245564a0cbab5d38c6dff38df0a8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978474"
 ---
 # <a name="idebugexpressiongetresultasstring"></a>IDebugExpression::GetResultAsString
 문자열 작업의 반환 값을 식 평가의 결과 반환합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetResultAsString(  
    HRESULT*  phrResult,  
    BSTR*     pbstrResult  
@@ -50,12 +49,12 @@ HRESULT GetResultAsString(
 |값|설명|  
 |-----------|-----------------|  
 |`S_OK`|메서드가 성공했으며|  
-|`E_PENDING`|작업은 여전히 보류 중입니다.|  
+|`E_PENDING`|작업이 여전히 보류 중입니다.|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 작업의 문자열을 식 평가의 결과 반환 `HRESULT`합니다.  
+ 이 메서드가 작업의 문자열을 식 평가의 결과 반환 합니다. `HRESULT`합니다.  
   
- 이 메서드가 반환 `S_OK` 및 `phrResult` 반환 `E_ABORT` 경우 `Abort` 작업을 중단 합니다.  
+ 이 메서드는 반환 `S_OK` 하 고 `phrResult` 반환 `E_ABORT` 경우 `Abort` 작업을 중단 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugExpression 인터페이스](../../winscript/reference/idebugexpression-interface.md)

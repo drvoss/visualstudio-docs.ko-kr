@@ -1,14 +1,9 @@
 ---
 title: IDebugReference2::GetReferenceInfo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugReference2::GetReferenceInfo
 helpviewer_keywords:
@@ -16,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: ae611714-f114-4cf2-b5bb-37461e6ff289
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1771c36459931c5b8c6079eae6b84a08fb9cd670
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 77cccb562db79d9f6a53113bda0c4434e19c6813
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155822"
 ---
 # <a name="idebugreference2getreferenceinfo"></a>IDebugReference2::GetReferenceInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-가져옵니다 합니다 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 대 한 참조를 설명 하는 구조입니다. 나중에 사용하기 위해 예약되어 있습니다.  
+가져옵니다 합니다 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 대 한 참조를 설명 하는 구조입니다. 나중에 사용하도록 예약되어 있습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -75,8 +70,7 @@ int GetReferenceInfo ( 
 ## <a name="return-value"></a>반환 값  
  항상 `E_NOTIMPL`를 반환합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)   
  [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)   
  [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)
-

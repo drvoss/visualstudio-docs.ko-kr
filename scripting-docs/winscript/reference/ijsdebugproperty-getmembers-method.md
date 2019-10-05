@@ -2,7 +2,6 @@
 title: 'Ijsdebugproperty:: Getmembers 메서드 | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,19 +15,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 066db431f27eca01fab63d10d0396575b3895527
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3be31a0f02869ea740809fb68dbddf48843b2f3e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793671"
 ---
 # <a name="ijsdebugpropertygetmembers-method"></a>IJsDebugProperty::GetMembers 메서드
 이 개체의 멤버를 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetMembers(  
    JS_PROPERTY_MEMBERS members,  
    IJsEnumDebugProperty **ppEnum  
@@ -37,7 +36,7 @@ HRESULT GetMembers(
   
 #### <a name="parameters"></a>매개 변수  
  `members`  
- [in] 멤버 정보에 포함 된 요소를 지정 하는 플래그입니다.  
+ [in] 멤버 정보에 포함 된 항목을 지정 하는 플래그입니다.  
   
  `ppEnum`  
  [out] 개체의 멤버입니다.  

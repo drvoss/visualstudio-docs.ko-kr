@@ -1,14 +1,9 @@
 ---
 title: 오류 코드 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - error codes, source control plug-ins
 - source control plug-ins, error codes
@@ -16,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: d9cbd1c4-719b-467a-8100-333c1e146d3b
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bb27b2b64df0d7f8c0aefb5975844126363fe31d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fef596fdfa9bb29fac38c72890392c33a86b31d2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51808352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204554"
 ---
 # <a name="error-codes"></a>오류 코드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 원본 제어 플러그 인 API 함수에서 오류를 반환 하는 경우 다음 오류 코드 중 하나를 사용할 수 있습니다. 모든 오류는 경고 또는 정보 제공 용 이므로 오류 코드는 양수, 음수 이며 성공 0입니다.  
   
-|오류 코드|값|설명|  
+|오류 코드|값|Description|  
 |----------------|-----------|-----------------|  
 |`SCC_I_SHARESUBPROJOK`|7|두 단계에서 소스 제어에서 파일을 추가 하는 플러그 인 지원 합니다. 자세한 내용은 [SccSetOption](../extensibility/sccsetoption-function.md)합니다.|  
 |`SCC_I_FILEDIFFERS`|6|로컬 파일을 소스 제어 데이터베이스의 파일에서 다릅니다 (예를 들어 [SccDiff](../extensibility/sccdiff-function.md) 이 값을 반환할 수 있습니다).|  
@@ -68,7 +63,7 @@ ms.locfileid: "51808352"
 |`SCC_E_FILESYNTAXERR`|-27|파일 구문 오류가 있습니다.|  
 |`SCC_E_FILENOTEXIST`|-28|오류, 로컬 파일이 존재 하지 않습니다.|  
 |`SCC_E_CONNECTIONFAILURE`|-29|오류: 연결이 실패가 했습니다.|  
-|`SCC_E_UNKNOWNERROR`|-30|알 수 없는 오류가 발생 했습니다.|  
+|`SCC_E_UNKNOWNERROR`|-30|알 수 없는 오류입니다.|  
 |`SCC_E_BACKGROUNDGETINPROGRESS`|-31|백그라운드 가져오기 작업이 현재 진행 중입니다.|  
   
 ## <a name="macros-provided-for-quick-checking"></a>빠른 검사를 제공 하는 매크로  
@@ -86,6 +81,5 @@ IS_SCC_WARNING(rtn) (((rtn) > 0) ? TRUE : FALSE)
   
  소스 제어 플러그 인 플러그 인 했습니다 파일 읽기 전용으로 표시 하는 동안 일부 작업 하는 경우에 작업 폴더의 파일에 대 한 권한이 대 한 어떠한가 정도 하지 확인 해야 합니다. 작업 폴더에 파일을 이동, 삭제 및 컨트롤에 대 한 플러그 인-외부에서 변경 수 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [소스 제어 플러그 인](../extensibility/source-control-plug-ins.md)
-

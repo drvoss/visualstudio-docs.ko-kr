@@ -2,7 +2,6 @@
 title: IEnumDebugPropertyInfo::Next | Microsoft 문서
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a9f3fe796a518fd7d40c5b30f5b45f8a7d946686
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b1568d2387422bebc86ce2b035ba997610833e85
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963418"
 ---
 # <a name="ienumdebugpropertyinfonext"></a>IEnumDebugPropertyInfo::Next
 지정된 된 수의 검색 `DebugPropertyInfo` 열거형 시퀀스에는 구조입니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT Next (  
    ULONGcelt,  
    DebugPropertyInfo*rgelt,  

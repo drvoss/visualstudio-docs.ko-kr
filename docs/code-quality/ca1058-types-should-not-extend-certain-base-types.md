@@ -1,7 +1,6 @@
 ---
 title: 'CA1058: 형식은 특정 기본 형식을 확장하면 안 됩니다.'
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - TypesShouldNotExtendCertainBaseTypes
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 8446ee40-beb1-49fa-8733-4d8e813471c0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d52d4f38dc01380c097afb9486963b42faa3c98
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fa1ffbb393700647f12c455c8d1307a77548f2d1
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864909"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235490"
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: 형식은 특정 기본 형식을 확장하면 안 됩니다.
 
@@ -29,36 +28,34 @@ ms.locfileid: "53864909"
 |TypeName|TypesShouldNotExtendCertainBaseTypes|
 |CheckId|CA1058|
 |범주|Microsoft.Design|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
- 외부에서 볼 수 있는 형식이 특정 기본 형식을 확장합니다. 현재이 규칙은 보고 형식에서 파생 되는 형식:
+
+형식은 다음 기본 형식 중 하나를 확장 합니다.
 
 - <xref:System.ApplicationException?displayProperty=fullName>
-
 - <xref:System.Xml.XmlDocument?displayProperty=fullName>
-
 - <xref:System.Collections.CollectionBase?displayProperty=fullName>
-
 - <xref:System.Collections.DictionaryBase?displayProperty=fullName>
-
 - <xref:System.Collections.Queue?displayProperty=fullName>
-
 - <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
-
 - <xref:System.Collections.SortedList?displayProperty=fullName>
-
 - <xref:System.Collections.Stack?displayProperty=fullName>
 
-## <a name="rule-description"></a>규칙 설명
- .NET Framework 버전 1에 대 한 것을 권장 했습니다에서 새 예외를 파생 시키는 <xref:System.ApplicationException>합니다. 새 예외에서 파생 되어야 하 고는 권장 사항이 변경 되었습니다 <xref:System.Exception?displayProperty=fullName> 또는 해당 하위 클래스 중 하나는 <xref:System> 네임 스페이스입니다.
+기본적으로이 규칙은 외부에서 볼 수 있는 형식만 볼 수 있지만이를 [구성할](#configurability)수 있습니다.
 
- 서브 클래스를 만들지 마십시오 <xref:System.Xml.XmlDocument> 기본 개체 모델 또는 데이터 원본 XML 뷰를 만들려는 경우입니다.
+## <a name="rule-description"></a>규칙 설명
+
+예외는 <xref:System> 네임 스페이스 <xref:System.Exception?displayProperty=fullName> 의 서브 클래스 중 하나 또는에서 파생 되어야 합니다.
+
+기본 개체 모델 또는 데이터 원본의 <xref:System.Xml.XmlDocument> XML 뷰를 만들려는 경우의 서브 클래스를 만들지 마십시오.
 
 ### <a name="non-generic-collections"></a>제네릭이 아닌 컬렉션
- 사용 하거나 가능한 제네릭 컬렉션을 확장 합니다. 이전에 제공한 경우가 아니면 코드에서 제네릭이 아닌 컬렉션을 확장 되지 않습니다.
 
- **잘못 된 사용의 예**
+가능 하면 언제 든 지 및/또는 제네릭 컬렉션을 확장 하십시오. 이전에 제공 하지 않는 한 코드에서 제네릭이 아닌 컬렉션을 확장 하지 마십시오.
+
+**잘못 된 사용 예**
 
 ```csharp
 public class MyCollection : CollectionBase
@@ -70,7 +67,7 @@ public class MyReadOnlyCollection : ReadOnlyCollectionBase
 }
 ```
 
- **올바른 사용법의 예**
+**올바른 사용법의 예**
 
 ```csharp
 public class MyCollection : Collection<T>
@@ -83,7 +80,19 @@ public class MyReadOnlyCollection : ReadOnlyCollection<T>
 ```
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 형식을 다른 기본 형식 또는 제네릭 컬렉션에서 파생 됩니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
- 에 대 한 위반에 대 한이 규칙에서 경고를 표시 하지 마십시오 <xref:System.ApplicationException>합니다. 에 대 한 위반에 대 한이 규칙에서 경고를 표시 하지 않아도 안전 합니다 <xref:System.Xml.XmlDocument>합니다. 코드를 이전에 릴리스된 경우 제네릭이 아닌 컬렉션에 대 한 경고를 표시 하지 않으려면 안전 합니다.
+이 규칙 위반 문제를 해결 하려면 다른 기본 형식 또는 제네릭 컬렉션에서 형식을 파생 시킵니다.
+
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
+
+위반에 대해이 규칙에서 경고를 표시 하지 마십시오 <xref:System.ApplicationException>. 위반에 대해이 규칙에서 경고를 표시 하지 않는 것이 <xref:System.Xml.XmlDocument>안전 합니다. 코드가 이전에 릴리스된 경우 제네릭이 아닌 컬렉션에 대 한 경고를 표시 하지 않는 것이 안전 합니다.
+
+## <a name="configurability"></a>구성이
+
+레거시 분석이 아닌 [FxCop 분석기](install-fxcop-analyzers.md) 에서이 규칙을 실행 하는 경우 해당 액세스 가능성에 따라이 규칙을 실행할 코드 베이스 부분을 구성할 수 있습니다. 예를 들어 public이 아닌 API 화면에 대해서만 규칙을 실행 하도록 지정 하려면 프로젝트의 editorconfig 파일에 다음 키-값 쌍을 추가 합니다.
+
+```ini
+dotnet_code_quality.ca1058.api_surface = private, internal
+```
+
+이 규칙에 대해서만이 옵션을 구성 하거나, 모든 규칙에 대해 또는이 범주의 모든 규칙에 대해이 옵션을 구성할 수 있습니다 (디자인). 자세한 내용은 [FxCop 분석기 구성](configure-fxcop-analyzers.md)을 참조 하세요.

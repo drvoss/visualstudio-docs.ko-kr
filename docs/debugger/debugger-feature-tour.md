@@ -1,24 +1,23 @@
 ---
-title: VS 2017에서 디버깅 시작
+title: 디버거 소개
 description: Visual Studio 디버거를 사용하여 애플리케이션 디버깅 시작
-ms.custom: mvc
-ms.date: 06/15/2018
-ms.technology: vs-ide-debug
+ms.custom: seoapril2019
+ms.date: 04/08/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
 ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5c479251b7002e506f1dff5e64a028875aa8f80
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 249b8aa88b11643ed0b353df25bef3a054ef5e55
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882668"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "70987786"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>먼저 Visual Studio 디버거 살펴보기
 
@@ -28,7 +27,7 @@ ms.locfileid: "49882668"
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>중단점 설정 및 디버거 시작
 
-디버그하려면 앱 프로세스에 연결된 디버거로 앱을 시작해야 합니다. **F5**(**디버그 > 디버깅 시작**)는 디버그 작업을 수행하는 가장 일반적인 방법입니다. 그러나 지금 앱 코드를 검사할 중단점을 설정하지 않았으므로 먼저 중단점을 설정한 다음, 디버깅을 시작합니다. 중단점은 신뢰할 수 있는 디버깅의 가장 기본적이 고 필수적인 기능입니다. 중단점은 변수의 값, 메모리의 동작 또는 코드 분기의 실행 여부를 확인할 수 있도록 Visual Studio에서 실행 중인 코드를 일시 중단해야 하는 위치를 나타냅니다. 
+디버그하려면 앱 프로세스에 연결된 디버거로 앱을 시작해야 합니다. **F5**(**디버그 > 디버깅 시작**)는 디버그 작업을 수행하는 가장 일반적인 방법입니다. 그러나 지금 앱 코드를 검사할 중단점을 설정하지 않았으므로 먼저 중단점을 설정한 다음, 디버깅을 시작합니다. 중단점은 신뢰할 수 있는 디버깅의 가장 기본적이 고 필수적인 기능입니다. 중단점은 변수의 값, 메모리의 동작 또는 코드 분기의 실행 여부를 확인할 수 있도록 Visual Studio에서 실행 중인 코드를 일시 중단해야 하는 위치를 나타냅니다.
 
 코드 편집기에 파일이 열려 있는 경우 코드 줄의 왼쪽 여백을 클릭하여 중단점을 설정할 수 있습니다.
 
@@ -78,7 +77,7 @@ F10 키는 앱 코드의 함수 또는 메서드를 한 단계씩 실행하지 �
 ![실행하려면 클릭](../debugger/media/dbg-tour-run-to-click-2.png "실행하려면 클릭")
 
 > [!NOTE]
-> **실행하려면 클릭**(여기까지 실행) 단추는 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]의 새로운 기능입니다.
+> **실행하려면 클릭**(여기까지 실행) 단추는 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]부터 사용할 수 있습니다.
 
 **실행하려면 클릭**(여기까지 실행) 단추를 클릭합니다. 디버거는 클릭한 코드 줄로 이동합니다.
 
@@ -116,6 +115,16 @@ F10 키는 앱 코드의 함수 또는 메서드를 한 단계씩 실행하지 �
 **다시 시작**을 누르면 앱을 중지하고 디버거를 다시 시작하는 것에 비해 시간이 절약됩니다. 디버거가 코드를 실행하여 적중한 첫 번째 중단점에서 일시 중지합니다.
 
 디버거를 중지하고 코드 편집기로 다시 돌아가려는 경우 **다시 시작** 대신 빨간색 중지![디버깅 중지](../debugger/media/dbg-tour-stop-debugging.png "디버깅 중지") 단추를 누를 수 있습니다.
+
+## <a name="edit-your-code-and-continue-debugging-c-vb-c-xaml"></a>코드를 편집하고 디버깅 계속하기(C#, VB, C++, XAML)
+
+Visual Studio에서 지원되는 대부분의 언어에서 디버깅 세션 중에 코드를 편집하고 디버깅을 계속할 수 있습니다. 이 기능을 사용하려면 디버거에서 일시 중지된 동안 커서를 사용하여 코드를 클릭하고 편집을 수행한 후 **F5**, **F10** 또는 **F11**을 눌러 디버깅을 계속합니다.
+
+![디버깅 편집하며 계속하기](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
+
+기능 사용 및 기능 제한에 대한 자세한 내용은 [편집하며 계속하기](../debugger/edit-and-continue.md)를 참조하세요.
+
+디버깅 세션 중 XAML 코드를 수정하려면 [XAML 핫 다시 로드를 사용하여 코드 작성 및 실행 중인 XAML 코드 디버그](xaml-hot-reload.md)를 참조하세요.
 
 ## <a name="inspect-variables-with-data-tips"></a>데이터 팁을 사용하여 변수 검사
 
@@ -186,28 +195,28 @@ F10 키는 앱 코드의 함수 또는 메서드를 한 단계씩 실행하지 �
 
 이 예제에서는 `DirectoryInfo` 호출이 `value` 변수에 저장된 빈 문자열에서 발생한 오류를 지정했습니다.
 
-예외 도우미는 오류를 디버깅할 수 있는 좋은 기능입니다. 오류 세부 정보 보기와 같은 작업을 수행하고 예외 도우미에서 조사식을 추가할 수도 있습니다. 또는 필요한 경우 특정 예외를 throw하는 것에 대한 조건을 변경할 수 있습니다.
+예외 도우미는 오류를 디버깅할 수 있는 좋은 기능입니다. 오류 세부 정보 보기와 같은 작업을 수행하고 예외 도우미에서 조사식을 추가할 수도 있습니다. 또는 필요한 경우 특정 예외를 throw하는 것에 대한 조건을 변경할 수 있습니다. 코드의 예외를 처리하는 방법에 대한 자세한 내용은 [디버깅 기법 및 도구](../debugger/write-better-code-with-visual-studio.md)를 참조하세요.
 
 > [!NOTE]
-> 예외 도우미는 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]의 예외 도우미를 대체합니다.
+> 예외 도우미(Exception Helper)는 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]부터 예외 도우미(Exception Assistant)를 대체했습니다.
 
 **예외 설정** 노드를 확장하여 이 예외 형식을 처리하는 방법에 대한 더 많은 옵션을 확인합니다. 그러나 이 작업을 위해 아무 것도 변경할 필요가 없습니다!
 
 ## <a name="debug-live-aspnet-apps-in-azure-app-service"></a>Azure App Service에서 라이브 ASP.NET 앱 디버그
 
-**스냅숏 디버거**는 관심이 있는 코드가 실행될 때 프로덕션 상태 앱의 스냅숏을 생성합니다. 디버거가 스냅숏을 생성하도록 명령하려면 코드에서 snappoint와 logpoint를 설정합니다. 디버거를 통해 프로덕션 응용 프로그램의 트래픽에 영향을 미치지 않으면서 정확히 무엇이 잘못되었는지를 볼 수 있습니다. 스냅샷 디버거를 사용하면 프로덕션 환경에서 발생하는 문제를 해결하는 데 걸리는 시간을 상당히 줄일 수 있습니다.
+**스냅샷 디버거**는 관심이 있는 코드가 실행될 때 프로덕션 상태 앱의 스냅샷을 생성합니다. 디버거가 스냅샷을 생성하도록 명령하려면 코드에서 snappoint와 logpoint를 설정합니다. 디버거를 통해 프로덕션 애플리케이션의 트래픽에 영향을 미치지 않으면서 정확히 무엇이 잘못되었는지를 볼 수 있습니다. 스냅샷 디버거를 사용하면 프로덕션 환경에서 발생하는 문제를 해결하는 데 걸리는 시간을 상당히 줄일 수 있습니다.
 
-![스냅숏 디버거 시작](../debugger/media/snapshot-launch.png "스냅숏 디버거 시작")
+![스냅샷 디버거 시작](../debugger/media/snapshot-launch.png "스냅샷 디버거 시작")
 
-스냅숏 컬렉션은 Azure App Service에서 실행되는 ASP.NET 애플리케이션에서 사용할 수 있습니다. ASP.NET 애플리케이션은 .NET Framework 4.6.1 이상에서 실행돼야 하며, ASP.NET Core 애플리케이션은 Windows의 .NET Core 2.0 이상에서 실행돼야 합니다.
+스냅샷 컬렉션은 Azure App Service에서 실행되는 ASP.NET 애플리케이션에서 사용할 수 있습니다. ASP.NET 애플리케이션은 .NET Framework 4.6.1 이상에서 실행돼야 하며, ASP.NET Core 애플리케이션은 Windows의 .NET Core 2.0 이상에서 실행돼야 합니다.
 
-자세한 내용은 [스냅숏 디버거를 사용하여 라이브 ASP.NET 앱 디버그](../debugger/debug-live-azure-applications.md)를 참조하세요.
+자세한 내용은 [스냅샷 디버거를 사용하여 라이브 ASP.NET 앱 디버그](../debugger/debug-live-azure-applications.md)를 참조하세요.
 
-## <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise"></a>IntelliTrace 뒤로 이동을 사용하여 스냅숏 보기(Visual Studio Enterprise)
+## <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise"></a>IntelliTrace 뒤로 이동을 사용하여 스냅샷 보기(Visual Studio Enterprise)
 
-**IntelliTrace 뒤로 이동**은 모든 중단점 및 디버거 단계 이벤트에서 애플리케이션의 스냅숏을 자동으로 생성합니다. 기록된 스냅숏을 통해 이전 중단점 또는 단계로 돌아가서 응용 프로그램의 과거 상태를 볼 수 있습니다. IntelliTrace 뒤로 이동을 사용하면 이전 응용 프로그램 상태를 보고 싶지만 디버깅을 다시 시작하거나 원하는 앱 상태를 다시 만들지 않으려는 경우에 시간을 절약할 수 있습니다.
+**IntelliTrace 뒤로 이동**은 모든 중단점 및 디버거 단계 이벤트에서 애플리케이션의 스냅샷을 자동으로 생성합니다. 기록된 스냅샷을 통해 이전 중단점 또는 단계로 돌아가서 애플리케이션의 과거 상태를 볼 수 있습니다. IntelliTrace 뒤로 이동을 사용하면 이전 애플리케이션 상태를 보고 싶지만 디버깅을 다시 시작하거나 원하는 앱 상태를 다시 만들지 않으려는 경우에 시간을 절약할 수 있습니다.
 
-디버그 도구 모음의 **뒤로 가기**와 **앞으로 가기** 단추를 사용하여 이동하고 스냅숏을 볼 수 있습니다. 이 단추를 사용하여 **진단 도구** 창의 **이벤트** 탭에 나타나는 이벤트를 탐색할 수 있습니다.
+디버그 도구 모음의 **뒤로 가기**와 **앞으로 가기** 단추를 사용하여 이동하고 스냅샷을 볼 수 있습니다. 이 단추를 사용하여 **진단 도구** 창의 **이벤트** 탭에 나타나는 이벤트를 탐색할 수 있습니다.
 
 ![뒤로 가기 및 앞으로 가기 단추](../debugger/media/intellitrace-step-back-icons-description.png  "뒤로 가기 및 앞으로 가기 단추")
 
@@ -215,7 +224,7 @@ F10 키는 앱 코드의 함수 또는 메서드를 한 단계씩 실행하지 �
 
 ## <a name="next-steps"></a>다음 단계
 
-이 자습서에서는 많은 디버거 기능을 간략하게 살펴봤습니다. 샘플 애플리케이션을 사용하여 이러한 기능을 더 자세히 살펴보려 할 수 있습니다.
+이 자습서에서는 많은 디버거 기능을 간략하게 살펴봤습니다. 중단점과 같은 이러한 기능 중 하나를 더 자세히 살펴보기를 원할 수 있습니다.
 
 > [!div class="nextstepaction"]
-> [Visual Studio를 사용하여 디버깅하는 자세한 내용](../debugger/getting-started-with-the-debugger.md)
+> [중단점 사용에 대해 알아보기](../debugger/using-breakpoints.md)

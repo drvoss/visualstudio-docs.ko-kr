@@ -1,14 +1,9 @@
 ---
 title: 전달 로거 만들기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, forwarding loggers
 - MSBuild, logging
@@ -16,21 +11,20 @@ ms.assetid: 3aebf9c8-b62c-4cb2-b2d6-8cdfcd369a24
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 46cff57e8238e00f914f8437fbc81d1887e7d629
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ecc9bae7176c0d8c0f79452baff87a7a697db459
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184025"
 ---
 # <a name="creating-forwarding-loggers"></a>전달 로거 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 전달 로거는 다중 프로세서 시스템에서 프로젝트를 빌드할 때 모니터링하려는 이벤트를 선택할 수 있도록 하여 로깅 효율성을 개선합니다. 전달 로거를 사용하여 원하지 않는 이벤트가 중앙 로거를 가득 채우고, 빌드 시간이 느려지고, 로그를 어지럽히지 않도록 방지할 수 있습니다.  
   
- 전달 로거를 만들려면 <xref:Microsoft.Build.Framework.IForwardingLogger> 인터페이스를 구현한 다음 해당 메서드를 수동으로 구현하거나, <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> 클래스 및 미리 구성된 해당 메서드를 사용할 수 있습니다. (두 번째 방법은 대부분의 응용 프로그램에서 충분히 사용할 수 있습니다.)  
+ 전달 로거를 만들려면 <xref:Microsoft.Build.Framework.IForwardingLogger> 인터페이스를 구현한 다음 해당 메서드를 수동으로 구현하거나, <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> 클래스 및 미리 구성된 해당 메서드를 사용할 수 있습니다. (두 번째 방법은 대부분의 애플리케이션에서 충분히 사용할 수 있습니다.)  
   
 ## <a name="register-events-and-respond-to-them"></a>등록 이벤트 및 해당 이벤트에 대한 응답  
  전달 로거는 보조 빌드 엔진에서 빌드 이벤트를 보고할 때 이에 대한 정보를 수집합니다. 이 작업은 다중 프로세서 시스템에서 빌드하는 동안 기본 빌드 프로세스에 의해 만들어진 작업자 프로세스입니다. 그런 다음 전달 로거는 지정한 지침에 따라 중앙 로거에 전달할 이벤트를 선택합니다.  
@@ -51,6 +45,3 @@ ms.locfileid: "49281244"
  [빌드 로그 가져오기](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [빌드 로거](../msbuild/build-loggers.md)   
  [다중 프로세서 환경에서의 로그인](../msbuild/logging-in-a-multi-processor-environment.md)
-
-
-

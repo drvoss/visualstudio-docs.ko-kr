@@ -1,12 +1,8 @@
 ---
 title: 의견 보내기 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - product support [Visual Studio]
 - Help [Visual Studio], product support
@@ -14,31 +10,29 @@ ms.assetid: e0846d4d-2ce1-48e3-b219-674ff070bf4e
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d046603919c0639427b29cb23cdfa6f8ea74337c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 3f3238a94f027ad27b69682ec6f797de0dbdd6d9
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289837"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821508"
 ---
 # <a name="talk-to-us"></a>Talk to Us
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017에서 최신 설명서를 참조 하세요 [의견을 보내](https://docs.microsoft.com/visualstudio/ide/talk-to-us) docs.microsoft.com에서 제공 합니다.  
-
-  
+Visual Studio에 대 한 최신 설명서는 [microsoft와 의견 보내기](https://docs.microsoft.com/visualstudio/ide/feedback-options)를 참조 하세요.  
 
 설명서를 개선할 수 있도록 여러분의 아이디어를 보내 주세요. 개인적으로 회신을 드릴 수는 없지만 여러분의 의견을 담당자에게 전해 드리겠습니다.  
   
 ## <a name="i-likedislike-something-in-the-visual-studio-documentation"></a>Visual Studio 설명서에서 유용한 사항/개선되었으면 하는 사항  
- 페이지 아래쪽의 피드백 단추(**이 페이지가 도움이 되었나요?**)를 사용하세요. 이 단추는 모든 MSDN 페이지에 있습니다. 원하는 정보를 찾을 수 없는 경우 알려 주시기 바랍니다.  
+ 페이지 아래쪽의 피드백 단추(**이 페이지가 도움이 되었나요?** )를 사용하세요. 이 단추는 모든 MSDN 페이지에 있습니다. 원하는 정보를 찾을 수 없는 경우 알려 주시기 바랍니다.  
   
 ## <a name="i-would-like-to-report-a-problem-with-visual-studio"></a>Visual Studio의 문제를 보고하려는 경우  
- 작동 중단, 느려지는 성능, 예기치 않은 동작 등 Visual Studio를 사용 하 여 문제를 실행 하는 경우 문제를 알려 주세요 옆에 있는 피드백 아이콘에서 마우스 오른쪽 단추로 **빠른 실행**, 또는 를선택하여 **도움말 &#124; 사용자 의견 보내기 &#124; 문제 보고** 주 메뉴에서. 자세한 내용은 [Visual Studio를 사용 하 여 문제를 보고 하는 방법을](../ide/how-to-report-a-problem-with-visual-studio-2015.md)합니다.  
+ 크래시, 성능 저하, 예기치 않은 동작 등 Visual Studio를 사용 하 여 문제가 발생 하는 경우 **빠른**실행 옆에 있는 피드백 아이콘을 마우스 오른쪽 단추로 클릭 하거나 **도움말 &#124; 보내기를 선택 하 여 문제를 보고 해 주세요. 사용자 &#124; 의견** 주 메뉴에서 문제 보고 자세한 내용은 [Visual Studio의 문제를 보고하는 방법](../ide/how-to-report-a-problem-with-visual-studio-2015.md)을 참조하세요.  
   
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Visual Studio 기능에 대한 제안 보내기  
- 더 개선할 사항이 있으면 알려주세요. **제안하기** 를 선택하여 기능이나 변경 사항을 Visual Studio 팀에 제한해 주세요. 제안은 다른 사람들이 투표할 수 있는 [UserVoice](https://visualstudio.uservoice.com)에 자동으로 게시됩니다.  
+ 더 개선할 사항이 있으면 알려주세요. **제안하기** 를 선택하여 기능이나 변경 사항을 Visual Studio 팀에 제한해 주세요.   
   
 ## <a name="rate-this-product"></a>이 제품 평가  
  Visual Studio의 시험판 버전에는 **이 제품 평가** 메뉴 항목이 있어서 실행 중인 빌드의 품질에 대한 의견을 보낼 수 있습니다. 릴리스 버전의 제품에는 이 메뉴가 표시되지 않습니다.  

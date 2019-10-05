@@ -1,27 +1,22 @@
 ---
 title: UsedCommand 요소 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - UsedCommands element (VSCT XML schema)
 - VSCT XML schema elements, UsedCommands
 ms.assetid: 99cd05d3-644a-42ff-b289-8458cd1b20c0
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8b34c2dbafe9126339638691bc345cab1d347924
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 91929038d77bcf14c6997f9b60551ed8c9c3b820
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742534"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186373"
 ---
 # <a name="usedcommand-element"></a>UsedCommand 요소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,10 +34,10 @@ ms.locfileid: "51742534"
   
 ### <a name="attributes"></a>특성  
   
-|특성|설명|  
+|특성|Description|  
 |---------------|-----------------|  
-|guid|필수. 명령을 식별 하는 GUID ID 쌍의 GUID입니다.|  
-|ID|필수. 명령을 식별 하는 GUID ID 쌍의 ID입니다.|  
+|guid|필수 요소. 명령을 식별 하는 GUID ID 쌍의 GUID입니다.|  
+|id|필수 요소. 명령을 식별 하는 GUID ID 쌍의 ID입니다.|  
 |조건|선택 사항입니다. 참조 [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)합니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
@@ -58,7 +53,7 @@ ms.locfileid: "51742534"
 |[UsedCommands 요소](../extensibility/usedcommands-element.md)|UsedCommand 요소를 그룹화 하 고 기타 UsedCommands 그룹화 합니다.|  
   
 ## <a name="remarks"></a>설명  
- 명령을 추가 하 여는 `<UsedCommands>` 요소인 VSPackage 알립니다는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 환경 VSPackage의 명령에 필요 합니다. 추가 해야는 `<UsedCommand>` 요소는 패키지에 필요한 모든 명령에 대 한 모든 버전 및 Visual Studio의 구성에 포함 되지 않을 수 있습니다. 예를 들어, Visual c + +에 관련 된 명령을 호출 하는 패키지를 하는 경우 명령이 제공 되지 Visual Web Developer의 사용자에 게 포함 하지 않으면는 `<UsedCommand>` 명령에 대 한 요소입니다.  
+ 명령을 추가 하 여는 `<UsedCommands>` 요소인 VSPackage 알립니다는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 환경 VSPackage의 명령에 필요 합니다. 추가 해야는 `<UsedCommand>` 요소는 패키지에 필요한 모든 명령에 대 한 모든 버전 및 Visual Studio의 구성에 포함 되지 않을 수 있습니다. 예를 들어 패키지 visual 특정 명령을 호출 하는 경우 C++를 포함 하지 않으면이 명령은 Visual Web Developer의 사용자에 게 사용할 수 없습니다는 `<UsedCommand>` 명령에 대 한 요소입니다.  
   
 ## <a name="example"></a>예제  
   
@@ -73,4 +68,3 @@ ms.locfileid: "51742534"
 ## <a name="see-also"></a>참고 항목  
  [UsedCommands 요소](../extensibility/usedcommands-element.md)   
  [Visual Studio 명령 테이블(.Vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

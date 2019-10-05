@@ -2,7 +2,6 @@
 title: IWebAppDiagnosticsObjectInitialization::Initialize | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,18 +13,18 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 32dab78619635f9603fa33794810deef9685a7d7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
-ms.translationtype: MT
+ms.openlocfilehash: e7d3a3f966563e9d32294547ad604246ccd046e3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446214"
 ---
 # <a name="iwebappdiagnosticsobjectinitializationinitialize"></a>IWebAppDiagnosticsObjectInitialization::Initialize
-만든 개체를 초기화 [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)합니다.  
+사용 하 여 만든 개체를 초기화 [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)합니다.  
   
 > [!IMPORTANT]
->  [IWebAppDiagnosticsObjectInitialization 인터페이스](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md) 은 activdbg100.h에서에서 찾을 수 있습니다.  
+> [IWebAppDiagnosticsObjectInitialization 인터페이스](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md) 는 activdbg100.h에서에서 찾을 수 있습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,7 +34,7 @@ HRESULT Initialize(        [in, annotation("__in")] HANDLE_PTR hPassedHandle,   
   
 #### <a name="parameters"></a>매개 변수  
  `hPassedHandle`  
- 에 전달 된 핸들은 [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) 에서 메서드는 `hPassToObject` 매개 변수입니다.  
+ 에 전달 된 핸들은 [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) 에서 메서드를 `hPassToObject` 매개 변수입니다.  
   
  `pDebugApplication`  
- 개체를 만들 되는 PDM 응용 프로그램입니다.
+ 개체를 만든 PDM 응용 프로그램입니다.

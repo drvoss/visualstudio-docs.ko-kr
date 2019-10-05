@@ -1,14 +1,9 @@
 ---
 title: 빌드 전 이벤트 및 빌드 후 이벤트 명령줄 대화 상자 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuildEventsBuilder
 - vb.ProjectPropertiesBuildEventsBuilder
@@ -38,29 +33,28 @@ ms.assetid: d49b2c57-24bf-4fb2-8351-5c4b6cca938f
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f4c2f0297195dc1a9be23a1dd8aca980a6e32958
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 213535d983f95f304b8e0fba3241fa502577f0f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438064"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>빌드 전 이벤트/빌드 후 이벤트 명령줄 대화 상자
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 편집 상자에서 직접 [빌드 이벤트 페이지, 프로젝트 디자이너(C#)](../../ide/reference/build-events-page-project-designer-csharp.md)에 대한 빌드 전후 이벤트를 입력할 수 있습니다. 또는 사용 가능한 매크로 목록에서 빌드 전후 매크로를 선택할 수 있습니다.  
   
 > [!NOTE]
->  프로젝트가 최신 상태이고 빌드가 트리거되지 않으면 빌드 전 이벤트가 실행되지 않습니다.  
+> 프로젝트가 최신 상태이고 빌드가 트리거되지 않으면 빌드 전 이벤트가 실행되지 않습니다.  
   
 ## <a name="ui-element-list"></a>UI 요소 목록  
  **명령줄 편집 상자**  
  빌드 전 또는 빌드 후에 실행할 이벤트를 포함합니다.  
   
 > [!NOTE]
->  .bat 파일을 실행하는 모든 빌드 후 이벤트 명령 앞에 `call` 문을 추가합니다. 예를 들어 `call C:\MyFile.bat` 또는 `call C:\MyFile.bat call C:\MyFile2.bat`로 이름을 지정할 수 있습니다.  
+> .bat 파일을 실행하는 모든 빌드 후 이벤트 명령 앞에 `call` 문을 추가합니다. 예를 들어 `call C:\MyFile.bat` 또는 `call C:\MyFile.bat call C:\MyFile2.bat`로 이름을 지정할 수 있습니다.  
   
  **매크로**  
  입력란을 확장하여 명령줄 편집 상자에 삽입할 매크로의 목록을 표시합니다.  
@@ -99,8 +93,5 @@ ms.locfileid: "49202516"
 ## <a name="see-also"></a>참고 항목  
  [Visual Studio에서 사용자 지정 빌드 이벤트 지정](../../ide/specifying-custom-build-events-in-visual-studio.md)   
  [프로젝트 디자이너, 빌드 이벤트 페이지(C#)](../../ide/reference/build-events-page-project-designer-csharp.md)   
- [방법: 빌드 이벤트 지정(Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
+ [방법: 빌드 이벤트 지정 (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
  [방법: 빌드 이벤트 지정(C#)](../../ide/how-to-specify-build-events-csharp.md)
-
-
-

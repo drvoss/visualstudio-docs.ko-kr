@@ -1,14 +1,9 @@
 ---
 title: 메타 데이터를 소스로 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 dev_langs:
 - CSharp
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: 4945a07f-b3be-4f05-a587-fc29058aa8fa
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 8bcac8071d0cc76c29a5b9d0478727fea0b59901
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5883708d0ed32f636c5e229147676cf1545f8a47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444602"
 ---
 # <a name="metadata-as-source"></a>소스로서의 메타데이터
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "49232949"
 메타데이터를 소스로 사용하면 읽기 전용 버퍼에 C# 소스 코드로 표시되는 메타데이터를 볼 수 있습니다. 이 경우 구현 없이 형식 및 멤버의 선언을 볼 수 있습니다. 프로젝트 또는 솔루션에서 해당 소스 코드를 사용할 수 없는 형식 또는 멤버에 대해 **정의로 이동** 명령을 실행하면 메타데이터를 소스로 볼 수 있습니다.  
   
 > [!NOTE]
->  내부로 표시된 형식 또는 멤버에 대해 **정의로 이동** 명령을 실행하려고 하면 참조하는 어셈블리가 friend인지 여부에 관계없이 IDE(통합 개발 환경)에서 해당 메타데이터를 소스로 표시하지 않습니다.  
+> 내부로 표시된 형식 또는 멤버에 대해 **정의로 이동** 명령을 실행하려고 하면 참조하는 어셈블리가 friend인지 여부에 관계없이 IDE(통합 개발 환경)에서 해당 메타데이터를 소스로 표시하지 않습니다.  
   
  코드 편집기 또는 **코드 정의** 창에서 메타데이터를 소스로 볼 수 있습니다.  
   

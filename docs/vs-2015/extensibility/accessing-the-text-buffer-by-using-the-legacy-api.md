@@ -1,28 +1,23 @@
 ---
 title: 레거시 API를 사용 하 여 텍스트 버퍼에 액세스 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text buffers
 ms.assetid: cd6cf4ae-fff5-4e23-b293-7cbafdb8aed2
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7c52e4beb1397e9919c3bf670e009d7ca1060ce1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f2cfbd84bc4f9298358a2a2d1ba87f76d6e5303c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722195"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184990"
 ---
-# <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>레거시 API를 사용 하 여 텍스트 버퍼에 액세스
+# <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>레거시 API를 사용하여 텍스트 버퍼에 액세스
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 텍스트는 텍스트 스트림 및 파일 유지 관리 하는 일을 담당 합니다. 버퍼 수를 읽거나 쓰려면 다른 형식이 있지만 버퍼를 사용 하 여 모든 일반 통신 유니코드를 사용 하 여 수행 됩니다. 레거시 Api에서 텍스트 버퍼 1 개 또는 2 차원 좌표 시스템을 하 여 버퍼의 문자 위치를 식별 합니다.  
@@ -44,6 +39,5 @@ ms.locfileid: "51722195"
  [텍스트 관리자를 사용하여 글로벌 설정 모니터링](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
  전역 설정을 모니터링 하는 텍스트 관리자를 사용 하는 방법에 설명...  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [핵심 편집기 내부](../extensibility/inside-the-core-editor.md)
-

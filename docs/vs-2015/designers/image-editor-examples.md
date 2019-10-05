@@ -1,25 +1,20 @@
 ---
 title: 이미지 편집기 예제 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 9f887976-25ae-4099-b987-87ea97f98c58
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1f6a00dfb0ce15280bb028fb38eb116754c43db1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 921ed880d7a1827a8e52914fa21738f628cf17fd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155413"
 ---
 # <a name="image-editor-examples"></a>이미지 편집기 예제
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,6 +32,3 @@ ms.locfileid: "49206754"
 |[방법: 밉 맵을 포함하는 질감 내보내기](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|이미지 콘텐츠 파이프라인을 사용하여 미리 계산된 Mip 맵이 포함된 질감을 내보내는 방법에 대해 설명합니다.|  
 |[방법: 미리 증가된 알파를 사용하는 질감 내보내기](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|이미지 콘텐츠 파이프라인을 사용하여 사전 곱셈된 알파 값이 포함된 질감을 내보내는 방법에 대해 설명합니다.|  
 |[방법: Direct2D 또는 Javascript 앱과 함께 사용하기 위해 질감 내보내기](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|이미지 콘텐츠 파이프라인을 사용하여 Direct2D 또는 JavaScript 앱에서 사용할 수 있는 질감을 내보내는 방법을 설명합니다.|
-
-
-

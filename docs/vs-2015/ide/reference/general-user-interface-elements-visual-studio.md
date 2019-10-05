@@ -1,25 +1,20 @@
 ---
 title: 일반 사용자 인터페이스 요소 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 ms.assetid: bc67652d-1001-4979-ba71-d57147d21928
 caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f2559cc618b006213fd5aa1f8fe66ecdce9d9f84
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: a510ad25e741fc5924597d4b26841518c63f83a1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054439"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690969"
 ---
 # <a name="general-user-interface-elements-visual-studio"></a>일반 사용자 인터페이스 요소(Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,15 +41,15 @@ ms.locfileid: "53054439"
 
  [옵션, 텍스트 편집기, 기본 (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md) Visual Basic 파일에 대 한 옵션을 지정할 수 있습니다.
 
- [옵션, 텍스트 편집기, C/c + +, 서식 지정](../../ide/reference/options-text-editor-c-cpp-formatting.md) C 또는 c + + 파일에 대 한 서식 옵션을 지정할 수 있습니다.
+ [옵션, 텍스트 편집기, C /C++, 서식 지정](../../ide/reference/options-text-editor-c-cpp-formatting.md) C에 대 한 서식 옵션을 지정할 수 있습니다 또는 C++ 파일입니다.
 
- [옵션, 텍스트 편집기, C/c + +, 고급](../../ide/reference/options-text-editor-c-cpp-advanced.md) C 또는 c + + 파일에 대 한 고급 옵션을 지정할 수 있습니다.
+ [옵션, 텍스트 편집기, C /C++고급](../../ide/reference/options-text-editor-c-cpp-advanced.md) C 용 고급 옵션을 지정할 수 있습니다 또는 C++ 파일입니다.
 
- [옵션, 텍스트 편집기 C#, 서식 지정](../../ide/reference/options-text-editor-csharp-formatting.md) 에 대 한 서식 옵션을 지정할 수 있습니다 C# 파일입니다.
+ [옵션, 텍스트 편집기, C#, 서식](../../ide/reference/options-text-editor-csharp-formatting.md) C# 파일에 대 한 서식 옵션을 지정할 수 있습니다.
 
- [옵션, 텍스트 편집기 C#고급](../../ide/reference/options-text-editor-csharp-advanced.md) 에 대 한 고급 옵션을 지정할 수 있습니다 C# 파일입니다.
+ [옵션, 텍스트 편집기, C#, 고급](../../ide/reference/options-text-editor-csharp-advanced.md) C# 파일에 대 한 고급 옵션을 지정할 수 있습니다.
 
- [옵션, 텍스트 편집기 C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) 에 대 한 IntelliSense 옵션을 지정할 수 있습니다 C# 파일입니다.
+ [옵션, 텍스트 편집기, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) C# 파일에 대 한 IntelliSense 옵션을 지정할 수 있습니다.
 
  [옵션, 텍스트 편집기, XAML, 서식 지정](../../ide/reference/options-text-editor-xaml-formatting.md) XAML 파일에 대 한 서식 옵션을 지정할 수 있습니다.
 
@@ -74,6 +69,6 @@ ms.locfileid: "53054439"
 
  [도구 상자, HTML 탭](../../ide/reference/toolbox-html-tab.md) 디자인 화면에 html 태그를 추가할 수 있습니다.
 
- [CSS, 텍스트 편집기, 옵션 대화 상자, 일반](http://msdn.microsoft.com/library/b33a7617-e69d-4a11-938e-2e218a34a10c) CSS 파일에 대 한 옵션을 지정할 수 있습니다.
+ [CSS, 텍스트 편집기, 옵션 대화 상자, 일반](https://msdn.microsoft.com/library/b33a7617-e69d-4a11-938e-2e218a34a10c) CSS 파일에 대 한 옵션을 지정할 수 있습니다.
 
- [유효성 검사, HTML, 텍스트 편집기, 옵션 대화 상자](http://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863) HTML 페이지에 대 한 옵션을 지정할 수 있습니다.
+ [유효성 검사, HTML, 텍스트 편집기, 옵션 대화 상자](https://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863) HTML 페이지에 대 한 옵션을 지정할 수 있습니다.

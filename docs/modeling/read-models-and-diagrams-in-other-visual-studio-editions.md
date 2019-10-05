@@ -7,16 +7,15 @@ helpviewer_keywords:
 - models, versions of Visual Studio
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 06a34bd09c84c3afc4162c4930fc34963b56b8fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7d8366c0f87830a77f550dabbce2e8f875171418
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823983"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>다른 Visual Studio 버전에서 모델 및 다이어그램 읽기
 
@@ -35,16 +34,16 @@ ms.locfileid: "53905454"
 
 종속성 다이어그램을 읽으려면 해야 하는 파일의 최소 집합은 다음과 같습니다.
 
--   두 개의 다이어그램 파일 하려는 내용은 예를 들어 다이어그램 **MyDiagram.classdiagram 및 MyDiagram.classdiagram.layout**합니다.
+- 두 개의 다이어그램 파일 하려는 내용은 예를 들어 다이어그램 **MyDiagram.classdiagram 및 MyDiagram.classdiagram.layout**합니다.
 
     > [!NOTE]
     > 종속성 다이어그램에 대 한 있어야 라는 파일이 _MyDiagram_**. layerdiagram.suppressions**합니다.
 
--   모델링 프로젝트 파일 (**MyModel.modelproj**)
+- 모델링 프로젝트 파일 (**MyModel.modelproj**)
 
--   루트 모델 파일 (**ModelDefinition\MyModel.uml**)
+- 루트 모델 파일 (**ModelDefinition\MyModel.uml**)
 
--   다이어그램에서 참조 된 패키지에 대 한 패키지 파일 (**ModelDefinition\MyPackage.uml**)
+- 다이어그램에서 참조 된 패키지에 대 한 패키지 파일 (**ModelDefinition\MyPackage.uml**)
 
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>읽기 전용 모드에서 수행할 수 있는 변경 내용
 

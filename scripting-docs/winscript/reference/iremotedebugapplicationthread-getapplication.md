@@ -2,7 +2,6 @@
 title: IRemoteDebugApplicationThread::GetApplication | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 15f503f98492606424752dff169fd4b61b6cc8b4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: abe33d75f7e03944eb0a6f533f2955871ddee342
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788234"
 ---
 # <a name="iremotedebugapplicationthreadgetapplication"></a>IRemoteDebugApplicationThread::GetApplication
 이 스레드와 연결 된 응용 프로그램 개체를 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetApplication(  
    IRemoteDebugApplication**  pprda  
 );  
@@ -48,7 +47,7 @@ HRESULT GetApplication(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는이 스레드에 연결 된 응용 프로그램 개체를 반환 합니다.  
+ 이 메서드는이 스레드와 연결 된 응용 프로그램 개체를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IRemoteDebugApplicationThread 인터페이스](../../winscript/reference/iremotedebugapplicationthread-interface.md)

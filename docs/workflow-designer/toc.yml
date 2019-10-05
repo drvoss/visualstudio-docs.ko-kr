@@ -1,181 +1,200 @@
 - name: 워크플로 디자이너를 사용하여 앱 개발
   href: developing-applications-with-the-workflow-designer.md
+- name: 워크플로 프로젝트
   items:
     - name: 워크플로 프로젝트 만들기
       href: creating-a-workflow-project.md
+    - name: 워크플로 프로젝트에 새 항목 추가
+      href: how-to-add-a-new-item-to-a-workflow-project.md
+- name: 도구 상자에 활동 추가
+  href: how-to-add-activities-to-the-toolbox.md
+- name: 인수 디자이너 사용
+  href: how-to-use-the-argument-designer.md
+- name: 변수 디자이너 사용
+  href: how-to-use-the-variable-designer.md
+- name: 식 편집기 사용
+  href: how-to-use-the-expression-editor.md
+- name: 가져오기 디자이너 사용
+  href: how-to-use-the-imports-designer.md
+- name: 이동 경로 탐색 사용
+  href: how-to-use-breadcrumb-navigation.md
+- name: 검색 사용
+  href: how-to-use-search-in-the-workflow-designer.md
+- name: 활동 대리자 정의 및 사용
+  href: how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md
+- name: 워크플로에 설명 추가
+  href: how-to-add-comments-to-a-workflow-in-the-workflow-designer.md
+- name: 활동 디자이너
+  items:
+    - name: 제어 흐름 활동 디자이너
       items:
-        - name: 워크플로 프로젝트에 새 항목 추가
-          href: how-to-add-a-new-item-to-a-workflow-project.md
-    - name: 도구 상자에 활동 추가
-      href: how-to-add-activities-to-the-toolbox.md
-    - name: 인수 디자이너 사용
-      href: how-to-use-the-argument-designer.md
-    - name: 변수 디자이너 사용
-      href: how-to-use-the-variable-designer.md
-    - name: 식 편집기 사용
-      href: how-to-use-the-expression-editor.md
-    - name: 가져오기 디자이너 사용
-      href: how-to-use-the-imports-designer.md
-    - name: 이동 경로 탐색 사용
-      href: how-to-use-breadcrumb-navigation.md
-    - name: 워크플로 디자이너에서 검색 사용
-      href: how-to-use-search-in-the-workflow-designer.md
-    - name: 워크플로 디자이너에서 활동 대리자 정의 및 사용
-      href: how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md
-    - name: 워크플로 디자이너에서 워크플로에 주석 추가
-      href: how-to-add-comments-to-a-workflow-in-the-workflow-designer.md
-    - name: 활동 디자이너
-      href: using-the-activity-designers.md
-      items:
-        - name: 제어 흐름 활동 디자이너
+        - name: 개요 및 참조
+          displayName: Control flow activity designers
           href: control-flow-activity-designers.md
-          items:
-            - name: DoWhile 활동 디자이너
-              href: dowhile-activity-designer.md
-            - name: ForEach<T> 활동 디자이너
-              href: foreach-t-activity-designer.md
-            - name: If 활동 디자이너
-              href: if-activity-designer.md
-            - name: Parallel 활동 디자이너
-              href: parallel-activity-designer.md
-            - name: ParallelForEach<T> 활동 디자이너 사용
-              href: parallelforeach-t-activity-designer.md
-            - name: Pick 활동 디자이너
-              href: pick-activity-designer.md
-            - name: PickBranch 활동 디자이너
-              href: pickbranch-activity-designer.md
-            - name: Sequence 활동 디자이너
-              href: sequence-activity-designer.md
-            - name: Switch<T> 활동 디자이너
-              href: switch-t-activity-designer.md
-            - name: While 활동 디자이너
-              href: while-activity-designer.md
-        - name: 순서도 활동 디자이너
+        - name: DoWhile 활동 디자이너
+          href: dowhile-activity-designer.md
+        - name: ForEach<T> 활동 디자이너
+          href: foreach-t-activity-designer.md
+        - name: If 활동 디자이너
+          href: if-activity-designer.md
+        - name: Parallel 활동 디자이너
+          href: parallel-activity-designer.md
+        - name: ParallelForEach<T> 활동 디자이너 사용
+          href: parallelforeach-t-activity-designer.md
+        - name: Pick 활동 디자이너
+          href: pick-activity-designer.md
+        - name: PickBranch 활동 디자이너
+          href: pickbranch-activity-designer.md
+        - name: Sequence 활동 디자이너
+          href: sequence-activity-designer.md
+        - name: Switch<T> 활동 디자이너
+          href: switch-t-activity-designer.md
+        - name: While 활동 디자이너
+          href: while-activity-designer.md
+    - name: 순서도 활동 디자이너
+      items:
+        - name: 개요 및 참조
+          displayName: Flow chart activity designers
           href: flowchart-activity-designers.md
-          items:
-            - name: 순서도 활동 디자이너
-              href: flowchart-activity-designer.md
-            - name: FlowDecision 활동 디자이너
-              href: flowdecision-activity-designer.md
-            - name: FlowSwitch<T> 활동 디자이너
-              href: flowswitch-t-activity-designer.md
-        - name: 상태 시스템 활동 디자이너
+        - name: 순서도 활동 디자이너
+          href: flowchart-activity-designer.md
+        - name: FlowDecision 활동 디자이너
+          href: flowdecision-activity-designer.md
+        - name: FlowSwitch<T> 활동 디자이너
+          href: flowswitch-t-activity-designer.md
+    - name: 상태 시스템 활동 디자이너
+      items:
+        - name: 개요 및 참조
+          displayName: State machine activity designers
           href: state-machine-activity-designers.md
-          items:
-            - name: StateMachine 활동 디자이너
-              href: statemachine-activity-designer.md
-            - name: 상태 활동 디자이너
-              href: state-activity-designer.md
-            - name: FinalState 활동 디자이너
-              href: finalstate-activity-designer.md
-            - name: 전환 활동 디자이너
-              href: transition-activity-designer.md
-        - name: 메시징 활동 디자이너
+        - name: StateMachine 활동 디자이너
+          href: statemachine-activity-designer.md
+        - name: 상태 활동 디자이너
+          href: state-activity-designer.md
+        - name: FinalState 활동 디자이너
+          href: finalstate-activity-designer.md
+        - name: 전환 활동 디자이너
+          href: transition-activity-designer.md
+    - name: 메시징 활동 디자이너
+      items:
+        - name: 개요 및 참조
+          displayName: Messaging activity designers
           href: messaging-activity-designers.md
-          items:
-            - name: CorrelationScope 활동 디자이너
-              href: correlationscope-activity-designer.md
-            - name: InitializeCorrelation 활동 디자이너
-              href: initializecorrelation-activity-designer.md
-            - name: Receive 활동 디자이너
-              href: receive-activity-designer.md
-            - name: ReceiveAndSendReply 템플릿 디자이너
-              href: receiveandsendreply-template-designer.md
-            - name: Sent 활동 디자이너
-              href: send-activity-designer.md
-            - name: SendAndReceiveReply 템플릿 디자이너
-              href: sendandreceivereply-template-designer.md
-            - name: TransactedReceiveScope 활동 디자이너
-              href: transactedreceivescope-activity-designer.md
-        - name: 런타임 활동 디자이너
+        - name: CorrelationScope 활동 디자이너
+          href: correlationscope-activity-designer.md
+        - name: InitializeCorrelation 활동 디자이너
+          href: initializecorrelation-activity-designer.md
+        - name: Receive 활동 디자이너
+          href: receive-activity-designer.md
+        - name: ReceiveAndSendReply 템플릿 디자이너
+          href: receiveandsendreply-template-designer.md
+        - name: Sent 활동 디자이너
+          href: send-activity-designer.md
+        - name: SendAndReceiveReply 템플릿 디자이너
+          href: sendandreceivereply-template-designer.md
+        - name: TransactedReceiveScope 활동 디자이너
+          href: transactedreceivescope-activity-designer.md
+    - name: 런타임 활동 디자이너
+      items:
+        - name: 개요 및 참조
+          displayName: Run-time activity designers
           href: runtime-activity-designers.md
-          items:
-            - name: Persist 활동 디자이너
-              href: persist-activity-designer.md
-            - name: TerminateWorkflow 활동 디자이너
-              href: terminateworkflow-activity-designer.md
-        - name: 기본 형식 활동 디자이너
+        - name: Persist 활동 디자이너
+          href: persist-activity-designer.md
+        - name: TerminateWorkflow 활동 디자이너
+          href: terminateworkflow-activity-designer.md
+    - name: 기본 형식 활동 디자이너
+      items:
+        - name: 개요 및 참조
+          displayName: Primitives activity designers
           href: primitives-activity-designers.md
-          items:
-            - name: Assign 활동 디자이너
-              href: assign-activity-designer.md
-            - name: Delay 활동 디자이너
-              href: delay-activity-designer.md
-            - name: InvokeDelegate
-              href: invokedelegate.md
-            - name: InvokeMethod 활동 디자이너
-              href: invokemethod-activity-designer.md
-            - name: WriteLine 활동 디자이너
-              href: writeline-activity-designer.md
-        - name: 트랜잭션 활동 디자이너
+        - name: Assign 활동 디자이너
+          href: assign-activity-designer.md
+        - name: Delay 활동 디자이너
+          href: delay-activity-designer.md
+        - name: InvokeDelegate
+          href: invokedelegate.md
+        - name: InvokeMethod 활동 디자이너
+          href: invokemethod-activity-designer.md
+        - name: WriteLine 활동 디자이너
+          href: writeline-activity-designer.md
+    - name: 트랜잭션 활동 디자이너
+      items:
+        - name: 개요 및 참조
+          displayName: Transaction activity designers
           href: transaction-activity-designers.md
-          items:
-            - name: CancellationScope 활동 디자이너
-              href: cancellationscope-activity-designer.md
-            - name: CompensableActivity 활동 디자이너
-              href: compensableactivity-activity-designer.md
-            - name: Compensate 활동 디자이너
-              href: compensate-activity-designer.md
-            - name: Confirm 활동 디자이너
-              href: confirm-activity-designer.md
-            - name: TransactionScope 활동 디자이너
-              href: transactionscope-activity-designer.md
-        - name: 컬렉션 활동 디자이너
+        - name: CancellationScope 활동 디자이너
+          href: cancellationscope-activity-designer.md
+        - name: CompensableActivity 활동 디자이너
+          href: compensableactivity-activity-designer.md
+        - name: Compensate 활동 디자이너
+          href: compensate-activity-designer.md
+        - name: Confirm 활동 디자이너
+          href: confirm-activity-designer.md
+        - name: TransactionScope 활동 디자이너
+          href: transactionscope-activity-designer.md
+    - name: 컬렉션 활동 디자이너
+      items:
+        - name: 개요 및 참조
+          displayName: Collection activity designers
           href: collection-activity-designers.md
-          items:
-            - name: AddToCollection<T> 활동 디자이너
-              href: addtocollection-t-activity-designer.md
-            - name: ClearCollection<T> 활동 디자이너
-              href: clearcollection-t-activity-designer.md
-            - name: ExistsInCollection<T> 활동 디자이너
-              href: existsincollection-t-activity-designer.md
-            - name: RemoveFromCollection<T> 활동 디자이너
-              href: removefromcollection-t-activity-designer.md
-        - name: 오류 처리 활동 디자이너
+        - name: AddToCollection<T> 활동 디자이너
+          href: addtocollection-t-activity-designer.md
+        - name: ClearCollection<T> 활동 디자이너
+          href: clearcollection-t-activity-designer.md
+        - name: ExistsInCollection<T> 활동 디자이너
+          href: existsincollection-t-activity-designer.md
+        - name: RemoveFromCollection<T> 활동 디자이너
+          href: removefromcollection-t-activity-designer.md
+    - name: 오류 처리 활동 디자이너
+      items:
+        - name: 개요 및 참조
+          displayName: Error handling activity designers
           href: error-handling-activity-designers.md
-          items:
-            - name: Rethrow 활동 디자이너
-              href: rethrow-activity-designer.md
-            - name: Throw 활동 디자이너
-              href: throw-activity-designer.md
-            - name: TryCatch 활동 디자이너
-              href: trycatch-activity-designer.md
-        - name: 마이그레이션 활동 디자이너
+        - name: Rethrow 활동 디자이너
+          href: rethrow-activity-designer.md
+        - name: Throw 활동 디자이너
+          href: throw-activity-designer.md
+        - name: TryCatch 활동 디자이너
+          href: trycatch-activity-designer.md
+    - name: 마이그레이션 활동 디자이너
+      items:
+        - name: 개요 및 참조
+          displayName: Migration activity designers
           href: migration-activity-designers.md
-          items:
-            - name: Interop 활동 디자이너
-              href: interop-activity-designer.md
+        - name: Interop 활동 디자이너
+          href: interop-activity-designer.md
+- name: 디버그
+  items:
     - name: 워크플로 디버깅
       href: debugging-workflows-with-the-workflow-designer.md
-      items:
-        - name: 워크플로에 중단점 설정
-          href: how-to-set-breakpoints-in-workflows.md
-        - name: 워크플로 디자이너로 XAML 디버그
-          href: how-to-debug-xaml-with-the-workflow-designer.md
-        - name: 지원되지 않는 디버깅 시나리오
-          href: unsupported-debugging-scenarios-in-the-workflow-designer.md
-    - name: UI 참조
-      href: workflow-designer-ui-help.md
-      items:
-        - name: .NET 유형 선택 대화 상자
-          href: browse-and-select-a-dotnet-type-dialog-box.md
-        - name: CorrelatesOn 정의 대화 상자
-          href: correlateson-definition-dialog-box.md
-        - name: 상관 관계 이니셜라이저 추가 대화 상자
-          href: add-correlationinitializers-dialog-box.md
-        - name: 매개 변수 추가 및 인수 추가 대화 상자
-          href: add-parameters-and-add-arguments-dialog-boxes.md
-        - name: 형식 컬렉션 편집기 대화 상자
-          href: type-collection-editor-dialog-box.md
-        - name: 콘텐츠 정의 대화 상자
-          href: content-definition-dialog-box.md
-        - name: 상관 관계 초기화 대화 상자
-          href: initialize-correlation-dialog-box.md
-        - name: 'System.Activities 탭, 도구 상자 항목 선택 대화 상자'
-          href: system-activities-tab-choose-toolbox-items-dialog-box.md
-        - name: 워크플로 디자이너 셸 기능
-          href: workflow-designer-shell-features.md
-        - name: 바로 가기 키
-          href: keyboard-shortcuts-in-the-workflow-designer.md
-        - name: 오류 메시지
-          href: error-messages-in-workflow-designer.md
+    - name: 워크플로에 중단점 설정
+      href: how-to-set-breakpoints-in-workflows.md
+    - name: 워크플로 디자이너로 XAML 디버그
+      href: how-to-debug-xaml-with-the-workflow-designer.md
+    - name: 지원되지 않는 디버깅 시나리오
+      href: unsupported-debugging-scenarios-in-the-workflow-designer.md
+- name: UI 참조
+  items:
+    - name: .NET 유형 선택 대화 상자
+      href: browse-and-select-a-dotnet-type-dialog-box.md
+    - name: CorrelatesOn 정의 대화 상자
+      href: correlateson-definition-dialog-box.md
+    - name: 상관 관계 이니셜라이저 추가 대화 상자
+      href: add-correlationinitializers-dialog-box.md
+    - name: 매개 변수 추가 및 인수 추가 대화 상자
+      href: add-parameters-and-add-arguments-dialog-boxes.md
+    - name: 형식 컬렉션 편집기 대화 상자
+      href: type-collection-editor-dialog-box.md
+    - name: 콘텐츠 정의 대화 상자
+      href: content-definition-dialog-box.md
+    - name: 상관 관계 초기화 대화 상자
+      href: initialize-correlation-dialog-box.md
+    - name: 'System.Activities 탭, 도구 상자 항목 선택 대화 상자'
+      href: system-activities-tab-choose-toolbox-items-dialog-box.md
+    - name: Workflow Designer 셸 기능
+      href: workflow-designer-shell-features.md
+    - name: 바로 가기 키
+      href: keyboard-shortcuts-in-the-workflow-designer.md
+    - name: 오류 메시지
+      href: error-messages-in-workflow-designer.md

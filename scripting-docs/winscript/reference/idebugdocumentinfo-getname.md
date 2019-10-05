@@ -2,7 +2,6 @@
 title: IDebugDocumentInfo::GetName | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da369c328c2f92915c60b1c50517938bf76d5202
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9975563c27b986190fbd2731c3f36b1e32719c0b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970967"
 ---
 # <a name="idebugdocumentinfogetname"></a>IDebugDocumentInfo::GetName
 지정 된 문서 이름을 반환합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetName(  
    DOCUMENTNAMETYPE  dnt,  
    BSTR*             pbstrName  
@@ -39,7 +38,7 @@ HRESULT GetName(
   
 #### <a name="parameters"></a>매개 변수  
  `dnt`  
- [in] 형식 반환할 문서 이름입니다.  
+ [in] 반환할 문서 이름의 형식입니다.  
   
  `pbstrName`  
  [out] 이름을 포함 하는 문자열입니다.  

@@ -1,24 +1,19 @@
 ---
 title: 지연 된 문서 로드 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 94d79af00fced81dc7da38f323598ade926d26f4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5565749a21614bb0b882beab8c83ed63bc839229
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196866"
 ---
 # <a name="delayed-document-loading"></a>지연된 문서 로드
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,21 +29,21 @@ ms.locfileid: "51755483"
   
 - 창 프레임의 GetProperty 메서드 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> 다음 속성 중 하나:  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
   확장 관리 코드를 사용 하는 경우를 호출 하지 않아야 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> 것이 확실 하지 않으면 문서 초기화 보류 중 상태가 아니거나 완전히 초기화 될 문서... 이 메서드는 항상 문서 반환 하기 때문에 이것이 필요한 경우 새로 만드는 데이터 개체입니다. 대신 IVsRunningDocumentTable4 인터페이스에서 메서드 중 하나를 호출 해야 있습니다.  
   
-  C + +를 사용 하는 확장 프로그램을 전달 하면 `null` 않으려는 매개 변수에 대 한 합니다.  
+  확장을 사용 하는 경우 C++를 전달할 수 있습니다 `null` 않으려는 매개 변수에 대 한 합니다.  
   
   관련 속성에 대 한 요청 하기 전에 다음 방법 중 하나를 호출 하 여 불필요 한 문서 로드를 방지할 수 있습니다: 다른 속성에 대 한 요청 전에 합니다.  
   
@@ -70,4 +65,3 @@ ms.locfileid: "51755483"
  확장 강제로 초기화 되어 경우 찾기가 어려울 수 있으므로 문서 초기화 되었는지 여부를 나타내는 표시 큐 없는 경우 텍스트가 완전히 초기화 되지 않은 모든 문서의 제목을 하면 되므로 더 쉽게 확인 하는 레지스트리 키를 설정할 수 있습니다 `[Stub]` 제목에서입니다.  
   
  **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]** 설정 **StubTabTitleFormatString** 하  **{0} [스텁]** 합니다.
-

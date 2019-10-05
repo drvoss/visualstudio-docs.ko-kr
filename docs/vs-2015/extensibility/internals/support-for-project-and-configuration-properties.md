@@ -1,41 +1,36 @@
 ---
 title: 프로젝트 및 구성 속성에 대 한 지원 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project properties, supporting with Visual Studio SDK
 - configuration properties, suppporting with Visual Studio SDK
 ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 37c41e4c2074f6bb4896c6ff91ea292c5e21ba81
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ae770d36c0f030a060eccfe86bc3939dad9622d8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760643"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691875"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>프로젝트 및 구성 속성 지원
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 합니다 **속성** 창에는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 통합된 개발 환경 (IDE) 프로젝트 및 구성 속성을 표시할 수 있습니다. 사용자는 응용 프로그램에 대 한 속성을 설정할 수 있도록 고유한 프로젝트 형식에 대 한 속성 페이지를 제공할 수 있습니다.  
   
- 프로젝트 노드를 선택 하 여 **솔루션 탐색기** 클릭 한 다음 **속성** 에 **프로젝트** 메뉴에서 프로젝트 및 구성을 포함 하는 대화 상자를 열 수 있습니다 속성입니다. [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 하 고 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)],이 대화 상자에 탭 페이지로 표시 됩니다. 이러한 언어에서 파생 된 형식 프로젝트를 [일반, 환경, 옵션 대화 상자](../../ide/reference/general-environment-options-dialog-box.md). 자세한 내용은 [빌드에 없음: 연습: 프로젝트 노출 및 구성 속성 (C#)](http://msdn.microsoft.com/en-us/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)합니다.  
+ 프로젝트 노드를 선택 하 여 **솔루션 탐색기** 클릭 한 다음 **속성** 에 **프로젝트** 메뉴에서 프로젝트 및 구성을 포함 하는 대화 상자를 열 수 있습니다 속성입니다. [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 하 고 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)],이 대화 상자에 탭 페이지로 표시 됩니다. 이러한 언어에서 파생 된 형식 프로젝트를 [일반, 환경, 옵션 대화 상자](../../ide/reference/general-environment-options-dialog-box.md). 자세한 내용은 참조 하세요. [빌드에 없음: 연습: 프로젝트 및 구성 속성을 노출 (C#)](https://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)합니다.  
   
  프로젝트 (MPFProj)에 대 한 관리 되는 패키지 프레임 워크는 만들고 새로운 프로젝트 시스템을 관리 하기 위한 도우미 클래스를 제공 합니다. 소스 코드와 컴파일 지침을 찾을 수 있습니다 [프로젝트용-Visual Studio 2013 MPF](http://mpfproj12.codeplex.com/)합니다.  
   
 ## <a name="persistence-of-project-and-configuration-properties"></a>프로젝트 및 구성 속성의 지 속성  
- 프로젝트 및 구성 속성에는 예를 들어 프로젝트 형식과 연결 된 파일 이름 확장명,.csproj,.vbproj, 및.myproj 프로젝트 파일에 저장 됩니다. 언어 프로젝트는 일반적으로 프로젝트 파일을 생성 하는 템플릿 파일을 사용 합니다. 그러나 실제로 여러 가지 프로젝트 형식 및 서식 파일을 연결 합니다. 자세한 내용은 [NIB: Visual Studio 템플릿](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041) 고 [템플릿 디렉터리 설명 (합니다. Vsdir) 파일](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)합니다.  
+ 프로젝트 및 구성 속성에는 예를 들어 프로젝트 형식과 연결 된 파일 이름 확장명,.csproj,.vbproj, 및.myproj 프로젝트 파일에 저장 됩니다. 언어 프로젝트는 일반적으로 프로젝트 파일을 생성 하는 템플릿 파일을 사용 합니다. 그러나 실제로 여러 가지 프로젝트 형식 및 서식 파일을 연결 합니다. 자세한 내용은 참조 하세요. [NIB: Visual Studio 템플릿](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041) 고 [템플릿 디렉터리 설명 (합니다. Vsdir) 파일](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)합니다.  
   
- 프로젝트 및 구성 속성은 템플릿 파일에 항목을 추가 하 여 생성 됩니다. 이러한 속성은 다음이 템플릿을 사용 하는 프로젝트 유형을 사용 하 여 만든 프로젝트에 사용할 수 있습니다. [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 프로젝트 및 둘 다 사용 MPFProj 합니다 [빌드에 없음: MSBuild 개요](http://msdn.microsoft.com/en-us/b588fd73-a45b-4706-908f-cc131bccfbde) 템플릿 파일에 대 한 스키마입니다. 이러한 파일은 각 구성에 대 한 PropertyGroup 섹션입니다. 프로젝트의 속성 구성 인수가 null 문자열로 설정 하는 첫 번째 PropertyGroup 섹션에서 일반적으로 유지 됩니다.  
+ 프로젝트 및 구성 속성은 템플릿 파일에 항목을 추가 하 여 생성 됩니다. 이러한 속성은 다음이 템플릿을 사용 하는 프로젝트 유형을 사용 하 여 만든 프로젝트에 사용할 수 있습니다. [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 프로젝트 및 둘 다 사용 하 여 MPFProj는 [빌드에 없음: MSBuild 개요](https://msdn.microsoft.com/b588fd73-a45b-4706-908f-cc131bccfbde) 템플릿 파일에 대 한 스키마입니다. 이러한 파일은 각 구성에 대 한 PropertyGroup 섹션입니다. 프로젝트의 속성 구성 인수가 null 문자열로 설정 하는 첫 번째 PropertyGroup 섹션에서 일반적으로 유지 됩니다.  
   
  다음 코드에서는 기본 MSBuild 프로젝트 파일의 시작 부분을 보여 줍니다.  
   
@@ -58,7 +53,7 @@ ms.locfileid: "51760643"
  이 프로젝트 파일의 프로젝트 및 구성 속성을 유지 하려면 프로젝트의 경우입니다.  
   
 > [!NOTE]
->  프로젝트는 기본값에서 다른 유지만 속성 값에 따라 지 속성을 최적화할 수 있습니다.  
+> 프로젝트는 기본값에서 다른 유지만 속성 값에 따라 지 속성을 최적화할 수 있습니다.  
   
 ## <a name="support-for-project-and-configuration-properties"></a>프로젝트 및 구성 속성 지원  
  `Microsoft.VisualStudio.Package.SettingsPage` 클래스는 프로젝트 및 구성 속성 페이지를 구현 합니다. 기본 구현을 `SettingsPage` 제네릭 속성 표에 사용자에 게 공용 속성을 제공 합니다. 합니다 `Microsoft.VisualStudio.Package.HierarchyNode.GetPropertyPageGuids` 에서 파생 된 클래스를 선택 하는 메서드 `SettingsPage` 프로젝트 속성 그리드의 합니다. 합니다 `Microsoft.VisualStudio.Package.ProjectNode.GetConfigPropertyPageGuids` 에서 파생 된 클래스를 선택 하는 메서드 `SettingsPage` 구성 속성 그리드의 합니다. 프로젝트 형식이 적절 한 속성 페이지를 선택 하려면 이러한 메서드를 재정의 해야 합니다.  
@@ -70,7 +65,7 @@ ms.locfileid: "51760643"
 - `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` 및 `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` 구성 속성을 유지 합니다.  
   
   > [!NOTE]
-  >  구현 합니다 `Microsoft.VisualStudio.Package.SettingsPage` 및 `Microsoft.VisualStudio.Package.ProjectNode` 클래스를 사용 하 여는 `Microsoft.Build.BuildEngine` (MSBuild) 및 메서드를 가져올 프로젝트 파일에서 프로젝트 및 구성 속성을 설정 합니다.  
+  > 구현 합니다 `Microsoft.VisualStudio.Package.SettingsPage` 및 `Microsoft.VisualStudio.Package.ProjectNode` 클래스를 사용 하 여는 `Microsoft.Build.BuildEngine` (MSBuild) 및 메서드를 가져올 프로젝트 파일에서 프로젝트 및 구성 속성을 설정 합니다.  
   
   파생 클래스 `SettingsPage` 구현 해야 합니다 `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` 및 `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` 프로젝트나 구성 속성이 프로젝트 파일의 유지 되도록 합니다.  
   
@@ -88,7 +83,7 @@ ms.locfileid: "51760643"
  합니다 <xref:System.ComponentModel.CategoryAttribute>, <xref:System.ComponentModel.DisplayNameAttribute>, 및 <xref:System.ComponentModel.DescriptionAttribute> 특성 결정 레이아웃, 레이블 지정 및 일반 속성 페이지에서 프로젝트 및 구성 속성에 대해 설명 합니다. 이러한 특성 범주를 확인, 각각 표시 이름 및 옵션을 설명 합니다.  
   
 > [!NOTE]
->  해당 특성, SRCategory, LocDisplayName, SRDescription, 지역화 문자열 리소스를 사용 하 여 및에 정의 된 [프로젝트용-Visual Studio 2013 MPF](http://mpfproj12.codeplex.com/)합니다.  
+> 해당 특성, SRCategory, LocDisplayName, SRDescription, 지역화 문자열 리소스를 사용 하 여 및에 정의 된 [프로젝트용-Visual Studio 2013 MPF](http://mpfproj12.codeplex.com/)합니다.  
   
  다음과 같은 코드 조각을 생각해 봅시다.  
   
@@ -98,10 +93,9 @@ ms.locfileid: "51760643"
  `MyConfigProp` 구성 속성으로 구성 속성 페이지에 나타납니다 **구성 속성에 내** 범주에서 **My Category**합니다. 옵션을 선택 하는 경우 설명을 **내 설명**, 설명 창에 표시 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [빌드에 없음: 연습: 프로젝트 및 구성 속성 (C#)를 노출 합니다.](http://msdn.microsoft.com/en-us/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)   
+ [빌드에 없음: 연습: 프로젝트 및 구성 속성을 노출 (C#)](https://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)   
  [추가 하 고 속성 페이지를 제거 합니다.](../../extensibility/adding-and-removing-property-pages.md)   
- [VSPackage 상태](../../misc/vspackage-state.md)   
+ [VSPackage State](../../misc/vspackage-state.md)   
  [프로젝트](../../extensibility/internals/projects.md)   
- [NIB: Visual Studio 템플릿](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041)   
+ [NIB: Visual Studio 템플릿](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)   
  [템플릿 디렉터리 설명(.Vsdir) 파일](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)
-

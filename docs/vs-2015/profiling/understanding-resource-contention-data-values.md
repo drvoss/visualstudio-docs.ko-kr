@@ -1,14 +1,9 @@
 ---
 title: 리소스 경합 데이터 값 이해 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - concurrency profiling method
 - Profiling Tools, concurrency method
@@ -16,18 +11,18 @@ ms.assetid: 071c0f0f-1eba-4dc8-ae87-0810e4086dd0
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 64bad925b7d0ac6170a4ac581fc327450aa2dd04
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+manager: jillfra
+ms.openlocfilehash: 5983396924f38c31b6dafcd42b762042e1880e8d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145429"
 ---
 # <a name="understanding-resource-contention-data-values"></a>리소스 경합 데이터 값 이해
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-리소스 경합 프로파일링에서는 응용 프로그램에서 경쟁하는 스레드가 공유 리소스에 액세스하기 위해 대기해야 할 때마다 자세한 호출 스택 정보를 수집합니다.  
+리소스 경합 프로파일링에서는 애플리케이션에서 경쟁하는 스레드가 공유 리소스에 액세스하기 위해 대기해야 할 때마다 자세한 호출 스택 정보를 수집합니다.  
   
  **요구 사항**  
   
@@ -46,6 +41,3 @@ ms.locfileid: "51948116"
 - [리소스 정보 뷰](../profiling/resource-details-view-contention-data.md)  
   
   동시성 프로파일링의 두 번째 모드에 대한 자세한 내용은 [Concurrency 시각화](../profiling/concurrency-visualizer.md)를 참조하세요.
-
-
-

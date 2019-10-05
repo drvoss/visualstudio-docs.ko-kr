@@ -1,12 +1,9 @@
 ---
 title: 사용자 요구 사항 모델링 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - requirements
 - stories
@@ -15,18 +12,18 @@ ms.assetid: 359900f8-6d69-493d-bfdf-2c9069c74a26
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ab92a08aa7359aa4393b3356384a4ccc352afb27
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8b1d3a5209490c253f4646210d4eeeda9d807155
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417810"
 ---
 # <a name="model-user-requirements"></a>사용자 요구 사항 모델링
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수행하는 작업에 대한 다이어그램을 그려 사용자 요구 사항을 이해, 논의 및 전달할 수 있도록 도와줍니다. 요구 사항 모델은 각각 사용자 요구의 다른 측면에 중점을 두는 다이어그램 집합입니다. 비디오 데모는 [비즈니스 도메인 모델링](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)을 참조하세요.  
+Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수행하는 작업에 대한 다이어그램을 그려 사용자 요구 사항을 이해, 논의 및 전달할 수 있도록 도와줍니다. 요구 사항 모델은 각각 사용자 요구의 다른 측면에 중점을 두는 다이어그램 집합입니다. 비디오 데모를 참조 하세요. [비즈니스 도메인 모델링](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)합니다.  
   
  각 모델 형식을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)를 참조하세요.  
   
@@ -46,10 +43,10 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
   
 - 시스템 테스트의 기초로 모델을 사용하여 테스트 및 요구 사항 간의 관계를 명확하게 합니다. 요구 사항이 변경될 때 이 관계는 테스트를 올바르게 업데이트하는 데 도움이 됩니다. 이렇게 하면 시스템이 새 요구 사항을 충족합니다.  
   
-  요구 사항 모델은 사용자 또는 해당 담당자와 논의에 집중하는 데 사용하고 반복을 시작할 때마다 다시 살펴보는 경우에 가장 큰 혜택을 제공합니다. 코드를 작성하기 전에 자세히 완료할 필요는 없습니다. 일반적으로 훨씬 간소화된 경우에도 부분적으로 작동하는 응용 프로그램이 사용자와 요구 사항을 논의하는 데 가장 효율적인 기초가 됩니다. 모델은 이러한 논의의 결과를 요약하는 효과적인 방법입니다. 자세한 내용은 [모델을 사용 하 여 개발 프로세스에서](../modeling/use-models-in-your-development-process.md)합니다.  
+  요구 사항 모델은 사용자 또는 해당 담당자와 논의에 집중하는 데 사용하고 반복을 시작할 때마다 다시 살펴보는 경우에 가장 큰 혜택을 제공합니다. 코드를 작성하기 전에 자세히 완료할 필요는 없습니다. 일반적으로 훨씬 간소화된 경우에도 부분적으로 작동하는 애플리케이션이 사용자와 요구 사항을 논의하는 데 가장 효율적인 기초가 됩니다. 모델은 이러한 논의의 결과를 요약하는 효과적인 방법입니다. 자세한 내용은 [모델을 사용 하 여 개발 프로세스에서](../modeling/use-models-in-your-development-process.md)합니다.  
   
 > [!NOTE]
->  이러한 항목 전체에서 "시스템"은 개발 중인 시스템 또는 응용 프로그램을 의미합니다. 다양한 소프트웨어 및 하드웨어 구성 요소의 큰 컬렉션이거나, 단일 응용 프로그램이거나, 큰 시스템 내의 소프트웨어 구성 요소일 수 있습니다. 어떤 경우에든, 요구 사항 모델은 사용자 인터페이스 또는 API를 통해 시스템 외부에서 표시되는 동작을 설명합니다.  
+> 이러한 항목 전체에서 "시스템"은 개발 중인 시스템 또는 애플리케이션을 의미합니다. 다양한 소프트웨어 및 하드웨어 구성 요소의 큰 컬렉션이거나, 단일 애플리케이션이거나, 큰 시스템 내의 소프트웨어 구성 요소일 수 있습니다. 어떤 경우에든, 요구 사항 모델은 사용자 인터페이스 또는 API를 통해 시스템 외부에서 표시되는 동작을 설명합니다.  
   
 ## <a name="common-tasks"></a>일반 작업  
  사용자 요구 사항의 여러 가지 뷰를 만들 수 있습니다.  각 뷰는 특정 유형의 정보를 제공합니다.  이러한 뷰를 만들 때는 뷰 간에 자주 이동하는 것이 좋습니다. 임의 뷰에서 시작할 수 있습니다.  
@@ -65,7 +62,7 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
   
  대부분의 다이어그램 형식은 다른 용도로 사용할 수 있습니다. 다이어그램 유형에 대 한 개요를 참조 하세요 [앱에 대 한 모델을 만들](../modeling/create-models-for-your-app.md)합니다. 다이어그램을 그리는 방법에 대 한 기본 정보를 참조 하세요 [편집 UML 모델 및 다이어그램](../modeling/edit-uml-models-and-diagrams.md)합니다.  
   
-##  <a name="UseCases"></a> 시스템을 사용 하는 방법을 설명 합니다.  
+## <a name="UseCases"></a> 시스템을 사용 하는 방법을 설명 합니다.  
  사용 사례 다이어그램을 만들어 누가 시스템을 어떤 용도로 사용하는지 설명합니다. 사용 사례는 시스템 사용자의 목표 및 목표를 달성하기 위해 수행하는 절차를 나타냅니다.  
   
  한 예로, 온라인 음식 판매 시스템은 고객이 메뉴에서 항목을 선택할 수 있도록 해야 하며 공급 식당에서 메뉴를 업데이트할 수 있도록 해야 합니다. 사용 사례 다이어그램에서 다음과 같이 요약할 수 있습니다.  
@@ -96,7 +93,7 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
 |사용 사례 다이어그램의 요소|[UML 사용 사례 다이어그램: 참조](../modeling/uml-use-case-diagrams-reference.md)|  
 |사용 사례에서 코드를 개발하는 방법|[앱의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="RequirementsClasses"></a> 요구 사항을 설명 하는 데 사용 되는 용어 정의  
+## <a name="RequirementsClasses"></a> 요구 사항을 설명 하는 데 사용 되는 용어 정의  
  UML 클래스 다이어그램을 통해 다음 용도로 사용되는 비즈니스 개념의 일관된 어휘를 개발할 수 있습니다.  
   
 - 사용자가 시스템이 작동하는 비즈니스를 논의하는 데 사용합니다.  
@@ -141,9 +138,9 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
 |개념적 클래스 다이어그램의 요소|[UML 클래스 다이어그램: 참조](../modeling/uml-class-diagrams-reference.md)|  
 |개념적 클래스에서 코드를 개발하는 방법|[앱의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)|  
   
- 개념적 클래스 다이어그램에서 연결에 화살표를 배치하여 검색성을 나타내는 것은 일반적으로 유용하지 않습니다. 다이어그램이 구현을 나타내지 않기 때문입니다. 연결은 실제 개체 간의 관계를 나타냅니다. 다음 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장에서는 비방향 화살표가 기본값으로 설정됩니다. [샘플: UML 도메인 모델링 기능](http://go.microsoft.com/fwlink/?LinkId=213849).  
+ 개념적 클래스 다이어그램에서 연결에 화살표를 배치하여 검색성을 나타내는 것은 일반적으로 유용하지 않습니다. 다이어그램이 구현을 나타내지 않기 때문입니다. 연결은 실제 개체 간의 관계를 나타냅니다. 다음 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장 비 방향 화살표가 기본값을 확인 합니다. [샘플: UML 도메인 모델링 기능](http://go.microsoft.com/fwlink/?LinkId=213849)합니다.  
   
-##  <a name="BusinessRules"></a> Showing Business Rules  
+## <a name="BusinessRules"></a> Showing Business Rules  
  비즈니스 규칙은 특정 사용 사례와 연결되지 않은 요구 사항이며 시스템 전체에서 관찰되어야 합니다.  
   
  대부분의 비즈니스 규칙은 개념적 클래스 간의 관계에 대한 제약 조건입니다. 이 작성할 수 있습니다 *정적 비즈니스 규칙* 개념적 클래스 다이어그램의 관련 클래스를 사용 하 여 연결 된 주석으로 합니다. 예를 들어:  
@@ -164,7 +161,7 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
 |개념적 클래스 다이어그램의 요소|[UML 클래스 다이어그램: 참조](../modeling/uml-class-diagrams-reference.md)|  
 |비즈니스 규칙을 준수하는 코드를 개발하는 방법|[앱의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="QoSRequirements"></a> Describing Quality of Service Requirements  
+## <a name="QoSRequirements"></a> Describing Quality of Service Requirements  
  여러 범주의 서비스 품질 요구 사항이 있습니다. 이러한 형식은 다음과 같습니다.  
   
 - 성능  
@@ -185,11 +182,10 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
   
 |자세한 정보|읽기|  
 |--------------------|----------|  
-|서비스 품질 요구 사항을 기록하는 방법에 대한 자세한 정보|[서비스 품질 요구 사항 정의 지침](http://msdn.microsoft.com/en-us/9677a437-c2cb-4ac4-8c2d-4e3350005f06)|  
 |사용 사례에 추가 문서 연결|[문서 및 다이어그램에 사용 사례 연결](../modeling/link-a-use-case-to-documents-and-diagrams.md)|  
 |서비스 품질 요구 사항을 준수하는 코드를 개발하는 방법|[앱의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="Workflow"></a> 사용자와 시스템 간의 작업 흐름 표시  
+## <a name="Workflow"></a> 사용자와 시스템 간의 작업 흐름 표시  
  동작 다이어그램을 사용하여 서로 다른 사용 사례 간의 작업 흐름을 표시할 수 있습니다. 대체로 사용자가 시스템 내부 및 외부에서 수행하는 주요 작업을 표시하는 동작 다이어그램을 그려 요구 사항 모델을 시작하는 것이 유용합니다.  
   
  예를 들어:  
@@ -210,7 +206,7 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
 |동작 다이어그램의 요소|[UML 동작 다이어그램: 참조](../modeling/uml-activity-diagrams-reference.md)|  
 |동작 다이어그램에서 코드를 개발하는 방법|[앱의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="Sequences"></a> 사용자와 시스템 간의 상호 작용을 보여 주는  
+## <a name="Sequences"></a> 사용자와 시스템 간의 상호 작용을 보여 주는  
  시퀀스 다이어그램을 사용하여 시스템과 외부 행위자 간 또는 시스템 파트 간의 메시지 교환을 표시할 수 있습니다. 이렇게 하면 상호 작용 시퀀스를 명확하게 표시하는 사용 사례의 단계 뷰가 제공됩니다. 시퀀스 다이어그램은 사용 사례에 상호 작용하는 여러 대상이 있고 시스템에 API가 있는 경우에 특히 유용합니다.  
   
  예를 들어:  
@@ -250,8 +246,5 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
  [샘플 VS 확장: UML 도메인 모델링 기능](http://go.microsoft.com/fwlink/?LinkId=213849)   
  [샘플 VS 확장: 스테레오 타입 별로 UML 요소 색상](http://go.microsoft.com/fwlink/?LinkID=213841)   
  [샘플 VS 확장: 다이어그램, 파일 및 기타 요소에 UML 요소 연결](http://go.microsoft.com/fwlink/?LinkID=213813)   
- [샘플 VS 확장: UML 다이어그램에서 셰이프를 정렬 합니다.](http://go.microsoft.com/fwlink/?LinkID=213809)   
+ [샘플 VS 확장: UML 다이어그램에서 셰이프 정렬](http://go.microsoft.com/fwlink/?LinkID=213809)   
  [비디오: 비즈니스 도메인 모델링](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)
-
-
-

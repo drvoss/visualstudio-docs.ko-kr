@@ -1,7 +1,6 @@
 ---
 title: 'CA1402: COM 노출 인터페이스에서 오버로드를 사용하지 마세요.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - AvoidOverloadsInComVisibleInterfaces
@@ -12,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 2724c1f9-d5d3-4704-b124-21c4d398e5df
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 056e572ef7a572c83731851d49420e0c713c6cc9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fdbb6012fb1252c90014ba91caf8ad7dacf901c2
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935530"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234855"
 ---
 # <a name="ca1402-avoid-overloads-in-com-visible-interfaces"></a>CA1402: COM 노출 인터페이스에서 오버로드를 사용하지 마세요.
 
@@ -32,13 +31,13 @@ ms.locfileid: "53935530"
 |TypeName|AvoidOverloadsInComVisibleInterfaces|
 |CheckId|CA1402|
 |범주|Microsoft.Interoperability|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
- 오버 로드 된 메서드는 구성 요소 개체 모델 (COM) 표시 되는 인터페이스를 선언 합니다.
+COM (구성 요소 개체 모델) 표시 인터페이스는 오버 로드 된 메서드를 선언 합니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 오버로드된 메서드가 COM 클라이언트에 노출되면 첫 번째 메서드 오버로드만 이름이 유지됩니다. 이후의 오버 로드는 밑줄 문자 '_' 및 오버 로드 선언 순서에 해당 하는 정수 이름에 추가 되어 고유한 이름이 지정 됩니다. 예를 들어 다음 메서드를 고려 합니다.
+오버로드된 메서드가 COM 클라이언트에 노출되면 첫 번째 메서드 오버로드만 이름이 유지됩니다. 후속 오버 로드는 이름에 밑줄 문자 ' _ '을 추가 하 고 오버 로드의 선언 순서에 해당 하는 정수를 추가 하 여 고유 하 게 이름을 바꿉니다. 예를 들어, 다음 메서드를 살펴보겠습니다.
 
 ```csharp
 void SomeMethod(int valueOne);
@@ -57,25 +56,25 @@ void SomeMethod_3(int valueOne, int valueTwo);
 Visual Basic 6 COM 클라이언트는 이름에 밑줄을 사용 하 여 인터페이스 메서드를 구현할 수 없습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하는 고유한 이름이 되도록 오버 로드 된 메서드를 이름을 바꿉니다. 또는 숨기기 인터페이스를 COM에 대 한 접근성을 변경 하 여 `internal` (`Friend` 에 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 또는 적용 하 여 합니다 <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> 특성이로 설정 `false`합니다.
+이 규칙 위반 문제를 해결 하려면 이름이 고유 하도록 오버 로드 된 메서드의 이름을 바꿉니다. 또는에서 액세스 가능성 `internal` 을 (`Friend` 에서 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])로 변경 하거나 <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> 특성을로 `false`설정 하 여 COM에서 인터페이스를 숨깁니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
- 이 규칙에서는 경고를 표시해야 합니다.
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
+이 규칙에서는 경고를 표시해야 합니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는 규칙을 위반 하는 인터페이스와 규칙을 충족 하는 인터페이스를 보여 줍니다.
+다음 예제에서는 규칙을 위반 하는 인터페이스와 규칙을 충족 하는 인터페이스를 보여 줍니다.
 
- [!code-vb[FxCop.Interoperability.OverloadsInterface#1](../code-quality/codesnippet/VisualBasic/ca1402-avoid-overloads-in-com-visible-interfaces_1.vb)]
- [!code-csharp[FxCop.Interoperability.OverloadsInterface#1](../code-quality/codesnippet/CSharp/ca1402-avoid-overloads-in-com-visible-interfaces_1.cs)]
+[!code-vb[FxCop.Interoperability.OverloadsInterface#1](../code-quality/codesnippet/VisualBasic/ca1402-avoid-overloads-in-com-visible-interfaces_1.vb)]
+[!code-csharp[FxCop.Interoperability.OverloadsInterface#1](../code-quality/codesnippet/CSharp/ca1402-avoid-overloads-in-com-visible-interfaces_1.cs)]
 
-## <a name="related-rules"></a>관련된 규칙
- [CA1413: COM 노출 값 형식에 public이 아닌 필드를 방지 합니다.](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
+## <a name="related-rules"></a>관련 규칙
+[CA1413: COM 노출 값 형식에 public이 아닌 필드를 사용 하지 마십시오.](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
 
- [CA1407: COM 노출 형식에 정적 멤버를 방지 합니다.](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
+[CA1407: COM 노출 형식에 정적 멤버를 사용 하지 마십시오.](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
 
- [CA1017: ComVisibleAttribute로 어셈블리 표시](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+[CA1017: ComVisibleAttribute로 어셈블리 표시](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [비관리 코드와의 상호 운용](/dotnet/framework/interop/index)
 - [Long 데이터 형식](/dotnet/visual-basic/language-reference/data-types/long-data-type)

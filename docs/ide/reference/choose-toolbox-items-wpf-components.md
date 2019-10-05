@@ -1,8 +1,6 @@
 ---
 title: 도구 상자 항목 선택, WPF 구성 요소
 ms.date: 06/21/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.chooseitems.wpfcomponents
@@ -11,15 +9,15 @@ helpviewer_keywords:
 - Choose Toolbox Items dialog box, WPF Components tab
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d05e69acb414c08e752593fbfdb08246c3d14a2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ac9e9c7bbafcf54e7bd31bde20469310c2ad3f81
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949622"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68869755"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>도구 상자 항목 선택, WPF 구성 요소
 
@@ -33,7 +31,7 @@ ms.locfileid: "31949622"
 - 구성 요소 옆의 확인란이 선택 취소되면 해당 아이콘이 **도구 상자**에서 제거됩니다.
 
     > [!NOTE]
-    > 구성 요소의 아이콘이 **도구 상자**에 표시되는지 여부에 관계없이 컴퓨터에 설치된 .NET Framework 구성 요소를 계속 사용할 수 있습니다.
+    > 구성 요소의 아이콘이 **도구 상자**에 표시되는지 여부에 관계없이 컴퓨터에 설치된 .NET 구성 요소를 계속 사용할 수 있습니다.
 
 **WPF 구성 요소** 탭에는 다음 정보가 포함됩니다.
 
@@ -43,15 +41,15 @@ ms.locfileid: "31949622"
 
 **네임스페이스**
 
-구성 요소 구조를 정의하는 [.NET Framework 클래스 API](/dotnet/api/?view=netframework-4.7) 네임스페이스의 계층 구조를 표시합니다. 컴퓨터에 설치된 각 .NET Framework 네임스페이스 내에서 사용 가능한 구성 요소를 나열하려면 이 열을 기준으로 정렬합니다.
+구성 요소 구조를 정의하는 [.NET API](/dotnet/api/?view=netframework-4.7) 네임스페이스의 계층 구조를 표시합니다. 컴퓨터에 설치된 각 .NET 네임스페이스 내에서 사용 가능한 구성 요소를 나열하려면 이 열을 기준으로 정렬합니다.
 
 **어셈블리 이름**
 
-각 구성 요소의 네임스페이스가 포함된 .NET Framework 어셈블리의 이름을 표시합니다. 컴퓨터에 설치된 각 .NET Framework 어셈블리에 포함된 네임스페이스를 나열하려면 이 열을 기준으로 정렬합니다.
+각 구성 요소의 네임스페이스가 포함된 .NET 어셈블리의 이름을 표시합니다. 컴퓨터에 설치된 각 .NET 어셈블리에 포함된 네임스페이스를 나열하려면 이 열을 기준으로 정렬합니다.
 
 **디렉터리**
 
-.NET Framework 어셈블리의 위치를 표시합니다. 모든 어셈블리의 기본 위치는 전역 어셈블리 캐시(GAC)입니다. 전역 어셈블리 캐시에 대한 자세한 내용은 [어셈블리 및 전역 어셈블리 캐시 사용](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac)을 참조하세요.
+.NET 어셈블리의 위치를 표시합니다. 모든 어셈블리의 기본 위치는 전역 어셈블리 캐시(GAC)입니다. 전역 어셈블리 캐시에 대한 자세한 내용은 [어셈블리 및 전역 어셈블리 캐시 사용](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac)을 참조하세요.
 
 ## <a name="uielement-list"></a>UI 요소 목록
 
@@ -79,7 +77,7 @@ WPF 컨트롤이 포함된 어셈블리로 이동할 수 있는 **열기** 대�
 
 - 솔루션 구성을 디버그에서 릴리스로 또는 릴리스에서 디버그로 변경하면 제대로 업데이트되지 않습니다. 이는 참조가 프로젝트 참조가 아니라 디스크의 어셈블리에 대한 참조이기 때문입니다. 컨트롤이 현재 솔루션에 포함된 경우 디버그에서 릴리스로 변경하면 프로젝트에서는 계속해서 컨트롤의 디버그 버전을 참조합니다.
 
-또한 디자인 타임 메타데이터가 사용자 지정 컨트롤에 적용되고 이 메타데이터에서 <xref:Microsoft.Windows.Design.ToolboxBrowsableAttribute>가 `false`로 설정되도록 지정하면 컨트롤이 도구 상자에 표시되지 않습니다.
+또한 디자인 타임 메타데이터가 사용자 지정 컨트롤에 적용되고 이 메타데이터에서 [Microsoft.Windows.Design.ToolboxBrowsableAttribute](/previous-versions/visualstudio/visual-studio-2010/bb547991(v=vs.100))가 `false`로 설정되도록 지정하면 컨트롤이 도구 상자에 표시되지 않습니다.
 
 컨트롤에 대한 네임스페이스 및 어셈블리를 매핑하면 XAML에서 직접 컨트롤을 참조할 수 있습니다.
 

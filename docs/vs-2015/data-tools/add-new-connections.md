@@ -1,27 +1,24 @@
 ---
 title: 새 연결 추가 | Microsoft Docs
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 8a93c287-2834-4a83-a590-bdc3fe8d293f
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 03407962b4ea8160d492971367f121835fa39aae
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ff1ec43d6faec329db6138598d84e47db009113e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218510"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192567"
 ---
 # <a name="add-new-connections"></a>새 연결 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 데이터베이스 또는 서비스에 대 한 연결을 테스트 하 고 데이터베이스의 내용과 스키마를 사용 하 여 탐색할 수 있습니다 **서버 탐색기**하십시오 **클라우드 탐색기**, 또는 **SQL Server 개체 탐색기**. 이러한 windows 기능을 어느 정도 까지는 겹칩니다. 기본 차이점은:  
   
  서버 탐색기  
@@ -54,6 +51,5 @@ ms.locfileid: "49218510"
   
  만들 준비가 테스트가 성공 하는 경우는 *데이터 원본*, 있으며 실제로 의미 하는 Visual Studio 용어입니다는 *데이터 모델* 기본 데이터베이스 또는 서비스를 기반으로 하는 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [.NET용 Visual Studio 데이터 도구](../data-tools/visual-studio-data-tools-for-dotnet.md)
-

@@ -1,14 +1,9 @@
 ---
 title: QUERYCHANGESFUNC | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - QUERYCHANGESFUNC
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 9d383e2c-eee1-4996-973a-0652d4c5951c
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b9a0bbf3c26f797ec1bbf67ad8439e5f5ba05b11
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 42f901fa31b3b682c7e19c98f5707adb3b4fb3f3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764215"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193842"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,13 +46,13 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 ## <a name="return-value"></a>반환 값  
  IDE에는 적절 한 오류 코드를 반환합니다.  
   
-|값|설명|  
+|값|Description|  
 |-----------|-----------------|  
 |SCC_OK|계속 처리 합니다.|  
 |SCC_I_OPERATIONCANCELED|처리를 중지 합니다.|  
 |SCC_E_xxx|적절 한 SCC 오류 처리를 중지 해야 합니다.|  
   
-##  <a name="LinkQUERYCHANGESDATA"></a> QUERYCHANGESDATA 구조  
+## <a name="LinkQUERYCHANGESDATA"></a> QUERYCHANGESDATA 구조  
  각 파일에 전달 된 구조체는 다음과 같습니다.  
   
 ```cpp#  
@@ -105,8 +100,7 @@ struct QUERYCHANGESDATA_W
  lpLatestName  
  이 항목에 대 한 현재 파일 이름입니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDE에 의해 구현 된 콜백 함수](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [SccQueryChanges](../extensibility/sccquerychanges-function.md)   
  [오류 코드](../extensibility/error-codes.md)
-

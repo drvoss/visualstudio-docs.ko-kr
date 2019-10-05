@@ -1,14 +1,9 @@
 ---
 title: FindAppConfigFile 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -21,18 +16,17 @@ ms.assetid: e292de3e-7482-4426-83ce-d921061808bf
 caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 28f1178431816948f711ea44d3818ff46620ca57
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fb9e1f3fbdc1a6f4d7c4e2c589f620f331a904ed
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179603"
 ---
 # <a name="findappconfigfile-task"></a>FindAppConfigFile 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 제공된 목록에서 app.config 파일(있는 경우)을 찾습니다.  
   
 ## <a name="parameters"></a>매개 변수  
@@ -51,6 +45,3 @@ ms.locfileid: "49251736"
 ## <a name="see-also"></a>참고 항목  
  [작업](../msbuild/msbuild-tasks.md)   
  [작업 참조](../msbuild/msbuild-task-reference.md)
-
-
-

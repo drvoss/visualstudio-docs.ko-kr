@@ -1,25 +1,22 @@
 ---
 title: DSL 정의의 속성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, definition file
 ms.assetid: 38debcfe-e1a6-4a3f-9d69-3ab07520f2b6
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 50b4325d2329bbaf402dcf2f059c51b5a796bdcd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 77f0a384797217440600d1ba5db0f190f4bdafa3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197368"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685358"
 ---
 # <a name="properties-of-a-dsl-definition"></a>DSL 정의의 속성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,10 +44,7 @@ DslDefinition 속성 정의 *도메인별 언어* 버전 번호와 같은 정의
 |빌드|이 도메인별 언어 정의 대 한 증분 빌드 번호입니다.|0|  
 |주 버전|이 도메인별 언어 정의 증분 주 빌드 번호입니다.|1|  
 |부 버전|이 도메인별 언어 정의 대 한 증분 부 빌드 번호입니다.|0|  
-|수정 버전|증분 수정 빌드이 도메인별 언어 정의 대 한 번호입니다.|0|  
+|Revision|증분 수정 빌드이 도메인별 언어 정의 대 한 번호입니다.|0|  
   
 ## <a name="see-also"></a>참고 항목  
- [도메인 특정 언어 도구 용어집](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -1,25 +1,20 @@
 ---
 title: 'PTVS 시작: 코딩 시작(프로젝트) | Microsoft 문서'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-python
+ms.topic: conceptual
 ms.assetid: 14b85e70-b9a8-415c-a307-8c8c316a0495
 caps.latest.revision: 7
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: a8e0bd339d8e7b6d145cc9a916dafc2be9fc975e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 28622f290d82f86bf3d18cc4f40cfcfc8e953dad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845786"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537155"
 ---
 # <a name="getting-started-with-ptvs-start-coding-projects"></a>PTVS 시작: 코딩 시작(프로젝트)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ PTVS(Python Tools for Visual Studio)는 코드 관리에 도움이 됩니다.
  
 - 구성 요소 경계를 정의합니다. 앱에 여러 구성 요소가 있는 경우 각각 별도의 프로젝트에 넣을 수 있습니다. 이러한 프로젝트는 결국 다른 빌드 또는 디버그 설정으로 빌드된 다른 서버에 배포되거나, C++ 또는 Node.js와 같은 Visual Studio에서 지원하는 다른 언어를 사용하여 작성될 수 있습니다. 
  
-  시작하는 데 도움이 되는 여러 프로젝트 템플릿이 있습니다. 작업하려는 Python 코드가 이미 있는 경우 기존 코드 마법사를 통해 모든 파일을 포함하는 프로젝트를 만들 수 있습니다. 일부 인기 있는 프레임워크에 대한 여러 개의 웹 프로젝트가 있습니다. PTVS 샘플 팩에서 추가 템플릿을 사용할 수 있습니다. 제공된 웹 템플릿이 다른 프레임워크에서 작동하게 하는 옵션이 있습니다. Python 응용 프로그램 템플릿은 깨끗한 빈 프로젝트입니다. 시작하기 위한 모듈 한 개가 있습니다. 
+  시작하는 데 도움이 되는 여러 프로젝트 템플릿이 있습니다. 작업하려는 Python 코드가 이미 있는 경우 기존 코드 마법사를 통해 모든 파일을 포함하는 프로젝트를 만들 수 있습니다. 일부 인기 있는 프레임워크에 대한 여러 개의 웹 프로젝트가 있습니다. PTVS 샘플 팩에서 추가 템플릿을 사용할 수 있습니다. 제공된 웹 템플릿이 다른 프레임워크에서 작동하게 하는 옵션이 있습니다. Python 애플리케이션 템플릿은 깨끗한 빈 프로젝트입니다. 시작하기 위한 모듈 한 개가 있습니다. 
  
   Visual Studio는 모든 파일, 검색 경로 및 Python 환경을 포함하여 열린 프로젝트를 솔루션 탐색기 창에 표시합니다. 새 항목을 추가하려면 프로젝트 폴더를 선택하고 상황에 맞는 메뉴(오른쪽 포인터 단추 누름)에서 추가, 새 항목을 차례로 선택합니다. 대화 상자에서 항목을 선택하고 항목의 이름을 사용자 지정한 다음 프로젝트에 항목을 추가할 수 있습니다. 
  
@@ -45,5 +40,4 @@ PTVS(Python Tools for Visual Studio)는 코드 관리에 도움이 됩니다.
   짧은 [youtube 동영상](https://www.youtube.com/watch?v=KHPoVpL7zHg&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=2)을 통해 이러한 지침을 확인할 수 있습니다. 
  
 ## <a name="see-also"></a>참고 항목 
- [Wiki 설명서](https://github.com/Microsoft/PTVS/wiki/Projects) [PTVS 시작 및 심층 분석 비디오](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
-
+ [Wiki 설명서](https://github.com/Microsoft/PTVS/wiki/Projects) [PTVS 시작 및 자세히 알아보기 동영상](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

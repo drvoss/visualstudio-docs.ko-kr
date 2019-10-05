@@ -1,14 +1,9 @@
 ---
 title: 호출 계층 구조 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.CallHierarchy
 helpviewer_keywords:
@@ -17,18 +12,17 @@ ms.assetid: c55bda01-d7de-4823-8f9a-1bcc37dbb74a
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 86cf4e12f412e6448f4a4b7c38af8268f10d9c56
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 41c7aa12e4adf2a757689670cdfed394f2a534c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851125"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433706"
 ---
 # <a name="call-hierarchy"></a>호출 계층 구조
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 호출 계층 구조를 사용하면 선택된 메서드, 속성 또는 생성자에서 모든 호출을 표시하여 코드를 탐색할 수 있습니다. 이렇게 하면 코드가 흐르는 방식을 더 잘 이해하고 코드에 대한 변경 사항의 영향을 평가할 수 있습니다. 메서드 호출의 복합 체인과 코드에 대한 추가적인 진입점을 보기 위해 여러 수주의 코드를 검토하여 모든 가능한 실행 경로를 탐색할 수 있습니다.  
   
  호출 계층 구조는 디버거를 통해 표시되는 호출 스택 달리 디자인 타임에서 사용 가능합니다.  
@@ -61,7 +55,7 @@ ms.locfileid: "49851125"
 - **코드 정의 창**이 열려 있는 경우 선택한 멤버에 대 한 코드를 표시 합니다. 이 창은 C# 및 C++에서 사용 가능합니다. 이 창에 대한 자세한 내용은 [코드 구조 보기](../../ide/viewing-the-structure-of-code.md)를 참조하세요.  
   
 > [!NOTE]
->  호출 계층 구조에서는 메서드가 이벤트 처리기로 추가되거나 대리자에 할당되는 위치가 포함된 메서드 그룹 참조를 찾지 않습니다. 메서드에 대한 모든 참조를 찾으려면 **모든 참조 찾기** 명령을 사용할 수 있습니다.  
+> 호출 계층 구조에서는 메서드가 이벤트 처리기로 추가되거나 대리자에 할당되는 위치가 포함된 메서드 그룹 참조를 찾지 않습니다. 메서드에 대한 모든 참조를 찾으려면 **모든 참조 찾기** 명령을 사용할 수 있습니다.  
   
 ## <a name="shortcut-menu-items"></a>바로 가기 메뉴 항목  
  다음 표는 트리 뷰 창에서 노드를 마우스 오른쪽 단추로 클릭할 때 사용할 수 있는 여러 가지 바로 가기 메뉴 옵션을 설명합니다.  
@@ -74,6 +68,3 @@ ms.locfileid: "49851125"
 |**모든 참조 찾기**|선택한 노드에서 모든 참조 찾기 명령을 실행합니다. 그러면 클래스 또는 멤버를 참조하는 프로젝트에서 모든 코드 줄을 찾습니다.<br /><br /> 또한 SHIFT+F12를 사용하여 선택한 노드에서 모든 참조 찾기 명령을 실행할 수도 있습니다.|  
 |**복사**|선택한 노드(하위 노드 제외)의 내용을 복사합니다.|  
 |**새로 고침**|선택한 노드를 축소한 다음 다시 확장하면 현재 정보가 표시됩니다.|
-
-
-

@@ -36,17 +36,17 @@ helpviewer_keywords:
 - Visual Studio, Office documents in
 - worksheets [Office development in Visual Studio]
 - VST.Designer.ExcelVST.Designer.Word
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59d9a0ac865dff8ec1eb0fe8a2b97cad9b6ab5e0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 65f3a3abfe7e49872c7131a247d74612200bf42a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842719"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978060"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Visual Studio 환경의 office 프로젝트
   Microsoft Office 프로젝트에는 Windows Forms 프로젝트를 비롯하여 Visual Studio의 다른 프로젝트 형식과 비슷한 개발 환경이 있습니다. Office 프로젝트를 만들거나 열 경우 **솔루션 탐색기**에 프로젝트 항목이 나타납니다. 문서 수준 프로젝트의 경우 문서(Word 문서 또는 Excel 통합 문서)가 Visual Studio에서 열리고 이 문서가 비주얼 디자이너와 같은 기능을 수행합니다.
@@ -73,7 +73,7 @@ ms.locfileid: "53842719"
 ### <a name="temporary-certificates"></a>임시 인증서
  Office 프로젝트에는 *Project Name*_TemporaryKey.pfx라는 임시 인증서도 포함되어 있습니다. 이 인증서는 개발 중 프로젝트의 애플리케이션 및 배포 매니페스트에 서명하는 데 사용됩니다. 자세한 내용은 [Office 솔루션에 신뢰를 부여](../vsto/granting-trust-to-office-solutions.md) 하 고 [Secure Office 솔루션](../vsto/securing-office-solutions.md).
 
-###  <a name="hiddenfiles"></a> 숨겨진된 프로젝트 파일
+### <a name="hiddenfiles"></a> 숨겨진된 프로젝트 파일
  몇 개의 프로젝트 파일은 기본적으로 숨겨져 있습니다. 이러한 파일은 Visual Studio에서 생성되며 프로젝트 형식에 따라 달라집니다. 숨김 파일을 표시하려면 **솔루션 탐색기** 에서 **모든 파일 표시**를 클릭합니다.
 
  숨겨진 프로젝트 파일은 수정하지 마십시오. 이러한 파일은 직접 변경할 수 없으며 변경할 경우 프로젝트가 손상될 수 있습니다. 숨겨진 프로젝트 파일은 문서가 변경될 때마다 다시 생성됩니다. 숨겨진 프로젝트 파일을 수동으로 변경할 경우 해당 변경 내용은 파일이 다시 생성될 때 손실됩니다.

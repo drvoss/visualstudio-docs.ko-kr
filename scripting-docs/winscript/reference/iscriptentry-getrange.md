@@ -2,7 +2,6 @@
 title: IScriptEntry::GetRange | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0ae0ee34298e03fdd2e9c6bc841d9fbe90967e8f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7baa284be4fa7f45f247df7f4b3d140869f254b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729043"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62787739"
 ---
 # <a name="iscriptentrygetrange"></a>IScriptEntry::GetRange
 시작 위치와 항목의 길이 반환합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetRange(  
    ULONG              *pichMin  
    ULONG              *pcch  
@@ -41,16 +40,16 @@ HRESULT GetRange(
  `pichMin`  
  [out] 에 대 한 `IScriptEntry` 스크립트 블록을 지정 하는 개체는 0을 반환 합니다.  
   
- 에 대 한 `IScriptEntry` 함수 개체를 지정 하는 개체는 현재 스크립트 블록의 함수 시작 위치를 반환 합니다.  
+ 에 대 한 `IScriptEntry` 현재 스크립트 블록의 함수 시작 위치를 반환 하는 함수 개체를 지정 하는 개체입니다.  
   
  에 대 한 `IScriptScriptlet` 개체, 0을 반환 합니다.  
   
  `pcch`  
  [out] 에 대 한 `IScriptEntry` 스크립트 블록을 지정 하는 개체는 텍스트의 길이 반환 합니다.  
   
- 에 대 한 `IScriptEntry` 함수 개체를 지정 하는 개체 함수 정의의 길이 반환 합니다.  
+ 에 대 한 `IScriptEntry` 함수 정의의 길이 반환 하는 함수 개체를 지정 하는 개체입니다.  
   
- 에 대 한 `IScriptScriptlet` 개체, 해당 항목의 길이 반환 합니다.  
+ 에 대 한 `IScriptScriptlet` 개체, 항목의 길이 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
  `HRESULT`입니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  

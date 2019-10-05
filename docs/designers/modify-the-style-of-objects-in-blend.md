@@ -1,28 +1,27 @@
 ---
-title: Blend에서 개체 스타일 수정
+title: 개체 스타일 수정
+titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ae494a82e92086cfa0e8e2a69b7f7eee022807a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 53a2071e17898fc77aba8a5d51dda77ea2927187
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917204"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821966"
 ---
-# <a name="modify-the-style-of-objects-in-blend"></a>Blend에서 개체 스타일 수정
+# <a name="modify-the-style-of-objects-in-blend-for-visual-studio"></a>Blend for Visual Studio에서 개체 스타일 수정
 
 개체를 사용자 지정하는 가장 쉬운 방법은 **속성** 창에서 속성을 설정하는 방법입니다.
 
 설정이나 설정 그룹을 다시 사용하려면 다시 사용할 수 있는 리소스를 만듭니다. 이러한 리소스로는 *스타일*, *템플릿* 또는 사용자 지정 색 등을 들 수 있습니다. 또한 해당 상태에 따라 컨트롤이 다르게 표시되도록 할 수 있습니다. 예를 들어 사용자가 단추를 클릭할 때 단추가 녹색으로 바뀝니다.
 
-## <a name="brushes-modify-the-appearance-of-an-object"></a>브러시: 개체의 모양 수정
+## <a name="brushes-modify-the-appearance-of-an-object"></a>브러시: 개체의 모양을 수정합니다.
 
 모양을 변경하려는 경우 브러시를 개체에 적용합니다.
 
@@ -44,7 +43,7 @@ ms.locfileid: "31917204"
 
 ![비주얼 브러시](../designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png) ![비주얼 브러시 바둑판식](../designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png)
 
-## <a name="styles-and-templates-create-a-consistent-look-and-feel-across-controls"></a>스타일 및 템플릿: 컨트롤 간 일관된 모양과 느낌 만들기
+## <a name="styles-and-templates-create-a-consistent-look-and-feel-across-controls"></a>스타일 및 템플릿: 컨트롤 간 일관된 모양과 느낌을 만듭니다.
 
 컨트롤의 모양 및 동작을 한 번 디자인하고 해당 디자인을 다른 컨트롤에 적용하여 컨트롤의 모양과 동작을 개별적으로 유지 관리하지 않아도 됩니다.
 
@@ -80,25 +79,25 @@ ms.locfileid: "31917204"
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>컨트롤에 스타일이나 템플릿 적용
 
-[개체 및 타임라인](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-objects-and-timeline-panel) 패널에서 개체를 마우스 오른쪽 단추로 클릭하고 **템플릿 편집**을 선택한 후 **리소스 적용**을 선택합니다.
+[개체 및 타임라인](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#objects-and-timeline-window) 창에서 개체를 마우스 오른쪽 단추로 클릭하고 **템플릿 편집**을 선택한 다음, **리소스 적용**을 선택합니다.
 
 ![리소스 적용 메뉴](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png)
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>컨트롤의 기본 스타일이나 템플릿 복원
 
-컨트롤을 선택하고 [속성](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-properties-panel) 패널에서 **스타일**이나 **템플릿** 속성을 찾습니다. **고급 옵션**을 선택한 다음, 바로 가기 메뉴에서 **다시 설정**을 클릭합니다.
+컨트롤을 선택하고 **속성** ** 창에서 **스타일**이나 **템플릿** 속성을 찾습니다. **고급 옵션**을 선택한 다음, 바로 가기 메뉴에서 **다시 설정**을 클릭합니다.
 
-## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a>시각적 상태: 해당 상태에 따라 컨트롤의 모양 변경
+## <a name="visual-states"></a>시각적 상태
 
-컨트롤에는 사용자 상호 작용에 따라 여러 시각적 모양이 포함될 수 있습니다. 예를 들어 사용자가 클릭하거나 애니메이션 실행 시 단추가 녹색으로 바뀌도록 설정할 수 있습니다. 전환을 사용하여 시각적 상태 간의 시간을 줄이거나 늘릴 수 있습니다.
+시각적 상태를 사용하여 해당 상태에 따라 컨트롤의 모양을 변경할 수 있습니다. 컨트롤에는 사용자 상호 작용에 따라 여러 시각적 모양이 포함될 수 있습니다. 예를 들어 사용자가 클릭하거나 애니메이션 실행 시 단추가 녹색으로 바뀌도록 설정할 수 있습니다. 전환을 사용하여 시각적 상태 간의 시간을 줄이거나 늘릴 수 있습니다.
 
 ![마우스를 위에 놓았을 때 상태](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png)
 
-**짧은 비디오 보기:** ![재생 단추](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Manage the state of your WPF controls](https://www.youtube.com/watch?v=m0PlkF5i6uw)(WPF 컨트롤 상태 관리).
+**짧은 비디오 시청:** ![재생 단추](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF 컨트롤의 상태 관리](https://www.youtube.com/watch?v=m0PlkF5i6uw)
 
-## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>리소스: 색, 스타일 및 템플릿을 만들고 나중에 다시 사용
+## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>리소스: 색, 스타일 및 템플릿을 만들고 나중에 다시 사용합니다.
 
-프로젝트의 모든 항목을 리소스로 변환할 수 있습니다. 리소스는 응용 프로그램의 다른 위치에 다시 사용할 수 있는 단순한 개체입니다. 예를 들어 색을 한 번 만들어 리소스로 만든 후 해당 색을 여러 개체에 사용할 수 있습니다. 이러한 모든 개체의 색을 변경하려면 색 리소스를 변경하기만 하면 됩니다.
+프로젝트의 모든 항목을 리소스로 변환할 수 있습니다. 리소스는 애플리케이션의 다른 위치에 다시 사용할 수 있는 단순한 개체입니다. 예를 들어 색을 한 번 만들어 리소스로 만든 후 해당 색을 여러 개체에 사용할 수 있습니다. 이러한 모든 개체의 색을 변경하려면 색 리소스를 변경하기만 하면 됩니다.
 
 ![색을 리소스로 변환 단추](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png) ![색 리소스 만들기 대화 상자](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png)
 

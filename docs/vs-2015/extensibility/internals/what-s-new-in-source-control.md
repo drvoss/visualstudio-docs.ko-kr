@@ -1,29 +1,25 @@
 ---
-title: 새로운&#39;소스 제어의 새로운 | Microsoft Docs
-ms.custom: ''
+title: 소스 제어의 새로운 기능
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - what's new [Visual Studio SDK], source control
 - source control [Visual Studio SDK], what's new
 ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9a108acb2ae32b64292cd819c75de4726f067a00
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 31b55c57f47f25814eff24f13bcf91408468d0f4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200946"
 ---
-# <a name="what39s-new-in-source-control"></a>새로운&#39;소스 제어 기능
+# <a name="what39s-new-in-source-control-in-visual-studio-2015"></a>새로운&#39;Visual Studio 2015에서 소스 제어 기능
+
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] 소스 제어 VSPackage를 구현 하 여 긴밀히 통합된 원본 제어 솔루션을 제공할 수 있습니다. 이 섹션에서는 소스 제어 Vspackage의 기능을 설명 하 고 구현 하는 단계 개요를 제공 합니다.  
@@ -37,17 +33,17 @@ ms.locfileid: "51752461"
   
  다음 단계를 소스 제어 패키지를 구현 하는 데 필요한 사항을의 일반적인 개요를 제공 합니다. 자세한 내용은 참조 하세요 [소스 제어 VSPackage를 만드는](../../extensibility/internals/creating-a-source-control-vspackage.md)합니다.  
   
-1.  개인 원본 제어 서비스 proffers 된 VSPackage를 만듭니다.  
+1. 개인 원본 제어 서비스 proffers 된 VSPackage를 만듭니다.  
   
-2.  제공 되는 원본 제어와 관련 된 서비스에서 인터페이스를 구현할 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (예를 들어 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> 및 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider> 인터페이스).  
+2. 제공 되는 원본 제어와 관련 된 서비스에서 인터페이스를 구현할 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (예를 들어 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> 및 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider> 인터페이스).  
   
-3.  소스 제어 VSPackage를 등록 합니다.  
+3. 소스 제어 VSPackage를 등록 합니다.  
   
-4.  모든 소스 제어 메뉴 항목, 대화 상자, 도구 모음 및 상황에 맞는 메뉴를 포함 하 여 UI를 구현 합니다.  
+4. 모든 소스 제어 메뉴 항목, 대화 상자, 도구 모음 및 상황에 맞는 메뉴를 포함 하 여 UI를 구현 합니다.  
   
-5.  모든 소스 제어와 관련 된 이벤트 이며 VSPackage에서 처리 해야 하는 경우 소스 제어 VSackage 전달 됩니다.  
+5. 모든 소스 제어와 관련 된 이벤트 이며 VSPackage에서 처리 해야 하는 경우 소스 제어 VSackage 전달 됩니다.  
   
-6.  소스 제어 VSPackage 구현 같은 이벤트를 수신 해야 합니다는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> Track 프로젝트 문서 TPD () 이벤트 뿐만 아니라 인터페이스 (구현 되는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> 인터페이스) 필요한 조치를 취합니다.  
+6. 소스 제어 VSPackage 구현 같은 이벤트를 수신 해야 합니다는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> Track 프로젝트 문서 TPD () 이벤트 뿐만 아니라 인터페이스 (구현 되는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> 인터페이스) 필요한 조치를 취합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>   
@@ -56,4 +52,3 @@ ms.locfileid: "51752461"
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>   
  [개요](../../extensibility/internals/source-control-integration-overview.md)   
  [소스 제어 VSPackage 만들기](../../extensibility/internals/creating-a-source-control-vspackage.md)
-

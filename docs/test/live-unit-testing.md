@@ -1,8 +1,6 @@
 ---
 title: Live Unit Testing
-ms.date: 2017-03-07
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
+ms.date: 03/07/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -11,49 +9,32 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7be078044454ebf5d6b3a6d99a60fff66ab1f69b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e4ace476a2454c7f6735f19cd07f222d6c06564e
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066212"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913330"
 ---
-# <a name="live-unit-testing-with-visual-studio-2017"></a>Visual Studio 2017을 사용한 Live Unit Testing
+# <a name="live-unit-testing-with-visual-studio"></a>Visual Studio를 사용한 Live Unit Testing
 
-응용 프로그램을 개발할 때 Live Unit Testing은 자동으로 백그라운드에서 영향을 받는 단위 테스트를 실행하고 Visual Studio IDE에서 실시간으로 결과 및 코드 검사 라이브를 표시합니다. 코드를 수정할 때 Live Unit Testing은 변경 내용이 기존 테스트에 영향을 주는 방법 및 추가한 새 코드를 하나 이상의 기존 테스트에서 검사할지 여부에 대한 피드백을 제공합니다. 그러면 버그를 수정하거나 새로운 기능을 추가할 경우에 사용자가 단위 테스트를 작성하도록 알려 줄 수 있습니다.
+애플리케이션을 개발할 때 Live Unit Testing은 자동으로 백그라운드에서 영향을 받는 단위 테스트를 실행하고 Visual Studio IDE에서 실시간으로 결과 및 코드 검사 라이브를 표시합니다. 코드를 수정할 때 Live Unit Testing은 변경 내용이 기존 테스트에 영향을 주는 방법 및 추가한 새 코드를 하나 이상의 기존 테스트에서 검사할지 여부에 대한 피드백을 제공합니다. 그러면 버그를 수정하거나 새로운 기능을 추가할 경우에 사용자가 단위 테스트를 작성하도록 알려 줄 수 있습니다.
 
 > [!NOTE]
-> Visual Studio 2017 Enterprise Edition에서 .NET Core 또는 .NET Framework를 대상으로 하는 C# 및 Visual Basic 프로젝트에 Live Unit Testing을 사용할 수 있습니다.
+> Visual Studio의 Enterprise Edition에서 .NET Core 또는 .NET Framework를 대상으로 하는 C# 및 Visual Basic 프로젝트에 Live Unit Testing을 사용할 수 있습니다.
 
 테스트를 위해 Live Unit Testing을 사용하는 경우 Live Unit Testing은 테스트 상태에 대한 데이터를 유지합니다. Live Unit Testing은 영구 데이터를 사용하는 기능을 통해 코드 변경에 대한 응답으로 테스트를 동적으로 실행하는 동안 뛰어난 성능을 제공할 수 있습니다.
 
 ## <a name="supported-test-frameworks"></a>지원되는 테스트 프레임워크
 Live Unit Testing은 다음 테이블에 나열된 세 가지 인기 있는 단위 테스트 프레임워크를 사용합니다. 해당 어댑터와 프레임워크를 지원하는 최소 버전은 테이블에 나열됩니다. 단위 테스트 프레임워크는 NuGet.org에서 모두 사용할 수 있습니다.
 
-<table>
-<tr>
-   <th>테스트 프레임워크</th>
-   <th>Visual Studio 어댑터 최소 버전</th>
-   <th>프레임워크 최소 버전</th>
-</tr>
-<tr>
-   <td>xUnit.net</td>
-   <td> xunit.runner.visualstudio 버전 2.2.0-beta3-build1187</td>
-   <td>xunit 1.9.2</td>
-</tr>
-<tr>
-   <td>NUnit</td>
-   <td>NUnit3TestAdapter 버전 3.5.1</td>
-   <td>NUnit 버전 3.5.0</td>
-</tr>
-<tr>
-   <td>MSTest</td>
-   <td>MSTest.TestAdapter 1.1.4-미리 보기</td>
-   <td>MSTest.TestFramework 1.0.5-미리 보기</td>
-</tr>
-</table>
+|테스트 프레임워크  |Visual Studio 어댑터 최소 버전  |프레임워크 최소 버전  |
+|---------|---------|---------|
+|xUnit.net |xunit.runner.visualstudio 버전 2.2.0-beta3-build1187 |xunit 1.9.2 |
+|NUnit |NUnit3TestAdapter 버전 3.5.1 |NUnit 버전 3.5.0 |
+|MSTest |MSTest.TestAdapter 1.1.4-미리 보기 |MSTest.TestFramework 1.0.5-미리 보기 |
 
-`Microsoft.VisualStudio.QualityTools.UnitTestFramework`를 참조하는 이전 MSTest 기반 테스트 프로젝트가 있고 최신 MSTest NuGet 패키지로 이동하지 않으려면 Visual Studio 2017 버전 15.4로 업그레이드하세요.
+`Microsoft.VisualStudio.QualityTools.UnitTestFramework`를 참조하는 이전 MSTest 기반 테스트 프로젝트가 있고 최신 MSTest NuGet 패키지로 이동하지 않으려면 Visual Studio 2017 버전 15.4 이상으로 업그레이드하세요.
 
 경우에 따라 Live Unit Testing이 작동하기 위해 솔루션의 프로젝트에서 참조하는 NuGet 패키지를 명시적으로 복원해야 합니다. 이렇게 하려면 솔루션의 명시적 빌드를 수행합니다(최상위 Visual Studio 메뉴에서 **빌드** > **솔루션 다시 빌드**를 선택). 또는 Living Unit Testing을 활성화하기 전에 솔루션에서 패키지를 복원합니다(솔루션을 마우스 오른쪽 단추로 클릭하고 **NuGet 패키지 복원**을 선택).
 
@@ -143,7 +124,7 @@ Live Unit Testing은 일단 활성화되면 Visual Studio 편집기에서 코드
 
 ## <a name="diagnose-and-correct-test-failures"></a>테스트 실패 진단 및 해결
 
-실패한 테스트에서 제품 코드에 쉽게 디버깅하고 편집을 수행하며 응용 프로그램을 계속 개발할 수 있습니다. Live Unit Testing이 백그라운드에서 실행되므로 디버그, 편집 및 진행 주기 동안 Live Unit Testing을 중지했다가 다시 시작할 필요는 없습니다.
+실패한 테스트에서 제품 코드에 쉽게 디버깅하고 편집을 수행하며 애플리케이션을 계속 개발할 수 있습니다. Live Unit Testing이 백그라운드에서 실행되므로 디버그, 편집 및 진행 주기 동안 Live Unit Testing을 중지했다가 다시 시작할 필요는 없습니다.
 
 예를 들어 이전 그림에 표시된 테스트 오류로 인해 테스트 메서드에서 알파벳이 아닌 문자가 <xref:System.Char.IsLower%2A?displayProperty=fullName> 메서드에 전달될 때 `true`을 반환한다는 잘못된 가정을 발생시켰습니다. 테스트 메서드를 수정하면 모든 테스트를 통과합니다. 이러는 동안 Live Unit Testing을 일시 중지하거나 중지할 필요는 없습니다.
 
@@ -163,14 +144,14 @@ Live Unit Testing은 일단 활성화되면 Visual Studio 편집기에서 코드
 Live Unit Testing이 테스트 결과를 자동으로 실행하고 업데이트는 것과 **Test Explorer**에서 테스트를 명시적으로 실행하는 것은 다릅니다. 이러한 차이점에는 다음이 포함됩니다.
 
 - Test Explorer 창에서 테스트를 실행 또는 디버깅하면 일반 이진 파일을 실행합니다. 반면 Live Unit Testing은 계측된 이진 파일을 실행합니다.
-- Live Unit Testing은 테스트를 실행할 새 응용 프로그램 도메인을 만들지 않지만 기본 도메인에서 테스트를 실행합니다. **Test Explorer** 창에서 테스트를 실행하면 새 응용 프로그램 도메인을 만들지 않습니다.
-- Live Unit Testing은 테스트 어셈블리 각각에서 순차적으로 테스트를 실행합니다. **Test Explorer** 창에서 여러 테스트를 실행하고 **동시에 테스트 실행** 단추를 선택한 경우 테스트가 동시에 실행됩니다.
+- Live Unit Testing은 테스트를 실행할 새 애플리케이션 도메인을 만들지 않지만 기본 도메인에서 테스트를 실행합니다. **Test Explorer** 창에서 테스트를 실행하면 새 애플리케이션 도메인을 만들지 않습니다.
+- Live Unit Testing은 테스트 어셈블리 각각에서 순차적으로 테스트를 실행합니다. **테스트탐색기** 창에서 여러 테스트를 병렬로 실행하는 옵션을 선택할 수 있습니다.
 
 ## <a name="live-unit-testing-and-large-solutions"></a>Live Unit Testing 및 대규모 솔루션
 
 솔루션에 10개 이상의 프로젝트가 있고 Live Unit Testing을 시작할 때 지속형 데이터가 없는 경우 또는 최상위 Visual Studio 메뉴에서 **테스트** > **Live Unit Testing** > **정리 다시 설정** 옵션을 선택하는 경우 Visual Studio에는 다음과 같은 대화 상자가 표시되어 대규모 프로젝트의 많은 테스트를 동적으로 실행 시 상당한 성능 저하가 발생할 수 있음을 경고합니다. **확인**을 선택하면 Live Unit Testing에서 솔루션의 모든 테스트를 실행합니다. **취소**를 선택하면 실행할 테스트를 선택할 수 있습니다. 이 작업을 수행하는 방법은 다음 [테스트 프로젝트 및 테스트 메서드 포함 및 제외](#include-and-exclude-test-projects-and-test-methods) 섹션을 참조하세요.
 
- ![대규모 프로젝트에 대한 Live Unit Testing 대화 상자](media/lut-large-project.png)
+![대규모 프로젝트에 대한 Live Unit Testing 대화 상자](media/lut-large-project.png)
 
 ## <a name="include-and-exclude-test-projects-and-test-methods"></a>테스트 프로젝트 및 테스트 메서드 포함 및 제외
 
@@ -180,12 +161,12 @@ Live Unit Testing이 테스트 결과를 자동으로 실행하고 업데이트�
 
 단위 테스트에서 개별 프로젝트를 선택하려면 Live Unit Testing을 시작한 후에 다음을 수행합니다.
 
-1.  **솔루션 탐색기**에서 솔루션을 마우스 오른쪽 단추로 클릭하고 **라이브 테스트** > **제외**를 선택하여 전체 솔루션을 제외합니다.
-1.  테스트에 포함하려는 테스트 프로젝트 각각을 마우스 오른쪽 단추로 클릭하고 **라이브 테스트** > **포함**을 선택합니다.
+1. **솔루션 탐색기**에서 솔루션을 마우스 오른쪽 단추로 클릭하고 **라이브 테스트** > **제외**를 선택하여 전체 솔루션을 제외합니다.
+1. 테스트에 포함하려는 테스트 프로젝트 각각을 마우스 오른쪽 단추로 클릭하고 **라이브 테스트** > **포함**을 선택합니다.
 
 **코드 편집기 창에서 개별 테스트 제외**
 
-코드 편집기 창을 사용하여 개별 테스트 메서드를 포함하거나 제외시킬 수 있습니다. 코드 편집기 창에서 테스트 메서드의 시그니처를 마우스 오른쪽 단추로 클릭하고 **라이브 테스트** > **[선택한 메서드] 포함**, **라이브 테스트** > **[선택한 메서드] 제외** 또는 **라이브 테스트** > **[선택한 메서드]를 빼고 모두 제외**를 선택합니다. 여기서 "선택한 메서드"는 코드 창에서 선택한 메서드의 이름입니다.
+코드 편집기 창을 사용하여 개별 테스트 메서드를 포함하거나 제외시킬 수 있습니다. 코드 편집기 창에서 테스트 메서드의 시그니처를 마우스 오른쪽 단추로 클릭하고 **라이브 테스트** >  **[선택한 메서드] 포함**, **라이브 테스트** >  **[선택한 메서드] 제외** 또는 **라이브 테스트** >  **[선택한 메서드]를 빼고 모두 제외**를 선택합니다. 여기서 "선택한 메서드"는 코드 창에서 선택한 메서드의 이름입니다.
 
 **프로그래밍 방식으로 테스트 제외**
 
@@ -197,9 +178,15 @@ Live Unit Testing이 테스트 결과를 자동으로 실행하고 업데이트�
 - NUnit: `[Category("SkipWhenLiveUnitTesting")]`
 - MSTest: `[TestCategory("SkipWhenLiveUnitTesting")]`
 
+전체 테스트 어셈블리를 Live Unit Testing에서 제외할 수도 있습니다.
+
+- xUnit: `[assembly: AssemblyTrait("Category", "SkipWhenLiveUnitTesting")]`
+- NUnit: `[assembly: Category("SkipWhenLiveUnitTesting")]`
+- MSTest: `[assembly: TestCategory("SkipWhenLiveUnitTesting")]`
+
 ## <a name="see-also"></a>참고 항목
 
 - [코드 테스트 도구](https://visualstudio.microsoft.com/vs/testing-tools/)
 - [Live Unit Testing 블로그](https://go.microsoft.com/fwlink/?linkid=842514)
 - [Live Unit Testing FAQ](live-unit-testing-faq.md)
-- [Channel 9 비디오: Visual Studio 2017의 Live Unit Testing](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
+- [Channel 9 비디오: Visual Studio의 Live Unit Testing](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)

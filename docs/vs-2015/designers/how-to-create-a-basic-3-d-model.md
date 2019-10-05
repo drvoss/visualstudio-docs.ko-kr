@@ -1,42 +1,37 @@
 ---
-title: '방법: 기본 3D 모델 만들기 | Microsoft 문서'
-ms.custom: ''
+title: '방법: 기본 3d 모델 만들기 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 83d4069135adf37156457321b8ce15a254c9c27b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 834651f525ccb292f82d5cf0ab5a7068a1cf7f20
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197803"
 ---
-# <a name="how-to-create-a-basic-3-d-model"></a>방법: 기본 3차원 모델 만들기
+# <a name="how-to-create-a-basic-3-d-model"></a>방법: 기본 3D 모델 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 문서에서는 모델 편집기를 사용하여 기본 3D 모델을 만드는 방법을 설명합니다.  
   
  이 문서는 다음 활동을 보여 줍니다.  
   
--   장면에 개체 추가  
+- 장면에 개체 추가  
   
--   면 및 가장자리 선택  
+- 면 및 가장자리 선택  
   
--   선택 영역 변환  
+- 선택 영역 변환  
   
--   **면 나누기** 및 **면 돌출** 도구 사용  
+- **면 나누기** 및 **면 돌출** 도구 사용  
   
--   **삼각 측량** 명령 사용  
+- **삼각 측량** 명령 사용  
   
 ## <a name="creating-a-basic-3-d-model"></a>기본 3D 모델 만들기  
  모델 편집기를 사용하여 게임 또는 앱에 사용할 3D 모델 및 장면을 만들고 수정할 수 있습니다. 다음 단계에서는 모델 편집기를 사용하여 집의 단순 3D 모델을 만드는 방법을 보여줍니다. 단순 모델은 계속 생성 중인 최종 아트 자산의 대체물로, 충돌 탐지를 위한 메시로, 표현하는 개체가 너무 멀어 자세한 렌더링을 사용할 수 없을 때 덜 자세한 모델로 사용할 수 있습니다.  
@@ -79,12 +74,9 @@ ms.locfileid: "49825493"
   
    ![완료된 간이형 집 모델](../designers/media/gfx-model-demo-house-final.png "gfx_model_demo_house_final")  
   
-   다음 단계로 이 3D 모델에 셰이더를 적용할 수 있습니다. 자세한 내용은 [방법: 3D 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md)을 참조하세요.  
+   다음 단계로 이 3D 모델에 셰이더를 적용할 수 있습니다. 자세한 내용은 [방법: 3 차원 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [방법: 3D 지형 모델 만들기](../designers/how-to-model-3-d-terrain.md)   
+## <a name="see-also"></a>관련 항목  
+ [방법: 3d 지형 모델](../designers/how-to-model-3-d-terrain.md)   
  [모델 편집기](../designers/model-editor.md)   
  [셰이더 디자이너](../designers/shader-designer.md)
-
-
-

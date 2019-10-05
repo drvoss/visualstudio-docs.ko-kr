@@ -1,14 +1,9 @@
 ---
 title: Visual C++ 코드 사용(클래스 디자이너) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.cpplimitation
 helpviewer_keywords:
@@ -23,13 +18,13 @@ ms.assetid: f5b40921-2ef7-4de0-b595-45b44c79ffa6
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f777c9bdd0cf2ea300d2df8e7cbfbc8900c25c2a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ebe8c65748ba0380a7c4f171d940c3d78f52a577
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929532"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698076"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Visual C++ 코드 사용(클래스 디자이너)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,22 +33,22 @@ ms.locfileid: "49929532"
   
  클래스 디자이너에서 지원되는 C++ 코드 요소는 다음과 같습니다.  
   
--   클래스(상속 관계가 여러 개 있을 수 있다는 점을 제외하고는 관리되는 클래스의 모양과 비슷함)  
+- 클래스(상속 관계가 여러 개 있을 수 있다는 점을 제외하고는 관리되는 클래스의 모양과 비슷함)  
   
--   익명 클래스(익명 형식에 대해 클래스 뷰에서 생성된 이름이 표시됨)  
+- 익명 클래스(익명 형식에 대해 클래스 뷰에서 생성된 이름이 표시됨)  
   
--   템플릿 클래스  
+- 템플릿 클래스  
   
--   구조체  
+- 구조체  
   
--   Enum  
+- Enum  
   
--   매크로(후처리된 매크로 뷰가 표시됨)  
+- 매크로(후처리된 매크로 뷰가 표시됨)  
   
--   Typedef  
+- Typedef  
   
 > [!NOTE]
->  이 UML 클래스 다이어그램에서 모델링 프로젝트를 만들 수 있습니다 수 없습니다. 자세한 내용은 [UML 클래스 다이어그램: 참조](../modeling/uml-class-diagrams-reference.md)를 참조하세요.  
+> 이 UML 클래스 다이어그램에서 모델링 프로젝트를 만들 수 있습니다 수 없습니다. 자세한 내용은 [UML 클래스 다이어그램: 참조](../modeling/uml-class-diagrams-reference.md)를 참조하세요.  
   
 ## <a name="troubleshooting-type-resolution-and-display-issues"></a>형식 확인 및 표시 문제 해결  
   
@@ -68,7 +63,7 @@ ms.locfileid: "49929532"
 ### <a name="type-resolution-issues"></a>형식 확인 문제  
  클래스 디자이너에서는 다음과 같은 경우에 형식을 확인할 수 없습니다.  
   
-- 클래스 다이어그램이 속한 프로젝트에서 참조되지 않는 프로젝트나 어셈블리에 형식이 있습니다. 이 오류를 수정하려면 해당 형식을 포함하는 프로젝트나 어셈블리에 대한 참조를 추가합니다. 자세한 내용은 [NIB 방법: 참조 추가 대화 상자를 사용하여 참조 추가 또는 제거](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)를 참조하세요.  
+- 클래스 다이어그램이 속한 프로젝트에서 참조되지 않는 프로젝트나 어셈블리에 형식이 있습니다. 이 오류를 수정하려면 해당 형식을 포함하는 프로젝트나 어셈블리에 대한 참조를 추가합니다. 자세한 내용은 [NIB 방법: 참조 추가 대화 상자를 사용하여 참조 추가 또는 제거](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)를 참조하세요.  
   
 - 형식이 올바른 범위에 있지 않아 클래스 디자이너에서 해당 형식을 찾을 수 없습니다. 이 경우 코드에 `using`, `imports` 또는 `#include` 문이 누락되지 않았는지 확인합니다. 또한 해당 형식이나 관련 형식을 원래 있던 네임스페이스 밖으로 이동하지 않았는지 확인합니다.  
   
@@ -82,34 +77,34 @@ ms.locfileid: "49929532"
   
 - 입력한 형식이 클래스 디자이너에서 지원되는지 확인합니다. [C++ 코드 요소에 대한 제한 사항](#limitations)을 참조하세요.  
   
-- 형식을 확인해 보세요. 프로젝트 또는 클래스 다이어그램이 속한 프로젝트에서 참조되지 않는 어셈블리 형식이 있을 수 있습니다. 이 오류를 수정하려면 해당 형식을 포함하는 프로젝트나 어셈블리에 대한 참조를 추가합니다. 자세한 내용은 [NIB 방법: 참조 추가 대화 상자를 사용하여 참조 추가 또는 제거](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)를 참조하세요.  
+- 형식을 확인해 보세요. 프로젝트 또는 클래스 다이어그램이 속한 프로젝트에서 참조되지 않는 어셈블리 형식이 있을 수 있습니다. 이 오류를 수정하려면 해당 형식을 포함하는 프로젝트나 어셈블리에 대한 참조를 추가합니다. 자세한 내용은 [NIB 방법: 참조 추가 대화 상자를 사용하여 참조 추가 또는 제거](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)를 참조하세요.  
   
 - 클래스 디자이너에서 찾을 수 있도록 형식이 올바른 범위에 있는지 확인하세요. 이 경우 코드에 `using`, `imports` 또는 `#include` 문이 누락되지 않았는지 확인합니다. 또한 해당 형식이나 관련 형식을 원래 있던 네임스페이스 밖으로 이동하지 않았는지 확인합니다.  
   
 ### <a name="troubleshooting-other-error-messages"></a>기타 오류 메시지 문제 해결  
  MSDN(Microsoft Developer Network) 공개 포럼에서 오류 및 경고 문제 해결 관련 지원 정보를 찾을 수 있습니다. [Visual Studio Class Designer Forum](http://go.microsoft.com/fwlink/?linkid=160754)(Visual Studio 클래스 디자이너 포럼)을 참조하세요.  
   
-##  <a name="limitations"></a> C++ 코드 요소에 대한 제한 사항  
+## <a name="limitations"></a> C++ 코드 요소에 대한 제한 사항  
   
--   Visual C++ 프로젝트가 로드되면 클래스 디자이너는 읽기 전용 방식으로 작동합니다. 즉, 클래스 다이어그램을 변경할 수 있지만 클래스 다이어그램에서 변경한 내용을 소스 코드에 저장할 수는 없습니다.  
+- Visual C++ 프로젝트가 로드되면 클래스 디자이너는 읽기 전용 방식으로 작동합니다. 즉, 클래스 다이어그램을 변경할 수 있지만 클래스 다이어그램에서 변경한 내용을 소스 코드에 저장할 수는 없습니다.  
   
--   클래스 디자이너에서는 네이티브 C++ 의미 체계만 지원됩니다. 관리 코드로 컴파일된 Visual C++ 프로젝트의 경우 클래스 디자이너에는 네이티브 형식인 코드 요소만 시각화됩니다. 따라서 프로젝트에 클래스 다이어그램을 추가할 수는 있지만 `IsManaged` 속성이 `true`로 설정된 요소, 즉 값 형식과 참조 형식은 클래스 디자이너에 시각화되지 않습니다.  
+- 클래스 디자이너에서는 네이티브 C++ 의미 체계만 지원됩니다. 관리 코드로 컴파일된 Visual C++ 프로젝트의 경우 클래스 디자이너에는 네이티브 형식인 코드 요소만 시각화됩니다. 따라서 프로젝트에 클래스 다이어그램을 추가할 수는 있지만 `IsManaged` 속성이 `true`로 설정된 요소, 즉 값 형식과 참조 형식은 클래스 디자이너에 시각화되지 않습니다.  
   
--   Visual C++ 프로젝트의 경우 클래스 디자이너에서는 형식의 정의만 읽습니다. 예를 들어 헤더 파일(.h)에 형식을 정의하고 해당 멤버는 구현 파일(.cpp)에 정의할 경우, 구현 파일(.cpp)에서 "클래스 다이어그램 보기"를 호출하면 클래스 디자이너에 아무 것도 표시되지 않습니다. 또 다른 예로, `#include` 문을 사용하여 다른 파일을 포함하지만 실제 클래스 정의는 포함하지 않는 .cpp 파일에서 "클래스 다이어그램 보기"를 호출할 경우에도 클래스 디자이너에 아무 것도 표시되지 않습니다.  
+- Visual C++ 프로젝트의 경우 클래스 디자이너에서는 형식의 정의만 읽습니다. 예를 들어 헤더 파일(.h)에 형식을 정의하고 해당 멤버는 구현 파일(.cpp)에 정의할 경우, 구현 파일(.cpp)에서 "클래스 다이어그램 보기"를 호출하면 클래스 디자이너에 아무 것도 표시되지 않습니다. 또 다른 예로, `#include` 문을 사용하여 다른 파일을 포함하지만 실제 클래스 정의는 포함하지 않는 .cpp 파일에서 "클래스 다이어그램 보기"를 호출할 경우에도 클래스 디자이너에 아무 것도 표시되지 않습니다.  
   
--   COM 인터페이스와 형식 라이브러리를 정의하는 IDL 파일(.idl)은 네이티브 C++ 코드로 컴파일되기 전까지는 다이어그램에 표시되지 않습니다.  
+- COM 인터페이스와 형식 라이브러리를 정의하는 IDL 파일(.idl)은 네이티브 C++ 코드로 컴파일되기 전까지는 다이어그램에 표시되지 않습니다.  
   
--   클래스 디자이너에서는 전역 함수 및 변수가 지원되지 않습니다.  
+- 클래스 디자이너에서는 전역 함수 및 변수가 지원되지 않습니다.  
   
--   클래스 디자이너에서는 공용 구조체가 지원되지 않습니다. 공용 구조체는 해당 데이터 멤버 중 가장 큰 데이터 멤버에 필요한 만큼만 메모리가 할당되는 특수한 클래스 형식입니다.  
+- 클래스 디자이너에서는 공용 구조체가 지원되지 않습니다. 공용 구조체는 해당 데이터 멤버 중 가장 큰 데이터 멤버에 필요한 만큼만 메모리가 할당되는 특수한 클래스 형식입니다.  
   
--   클래스 디자이너에서는 `int`, `char` 등의 기본 데이터 형식이 표시되지 않습니다.  
+- 클래스 디자이너에서는 `int`, `char` 등의 기본 데이터 형식이 표시되지 않습니다.  
   
--   클래스 디자이너에서는 현재 프로젝트에 프로젝트 외부에 정의된 형식에 대한 올바른 참조가 없을 경우 해당 형식이 표시되지 않습니다.  
+- 클래스 디자이너에서는 현재 프로젝트에 프로젝트 외부에 정의된 형식에 대한 올바른 참조가 없을 경우 해당 형식이 표시되지 않습니다.  
   
--   클래스 디자이너에서 중첩된 형식을 표시할 수는 있지만 중첩된 형식과 기타 형식 사이의 관계는 표시할 수 없습니다.  
+- 클래스 디자이너에서 중첩된 형식을 표시할 수는 있지만 중첩된 형식과 기타 형식 사이의 관계는 표시할 수 없습니다.  
   
--   클래스 디자이너에서는 void 형식이거나 void 형식에서 파생된 형식을 표시할 수 없습니다.  
+- 클래스 디자이너에서는 void 형식이거나 void 형식에서 파생된 형식을 표시할 수 없습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [클래스와 형식 디자인 및 보기](../ide/designing-and-viewing-classes-and-types.md)   
@@ -121,6 +116,3 @@ ms.locfileid: "49929532"
  [클래스 디자이너의 Visual C++ 구조체](../ide/visual-cpp-structures-in-class-designer.md)   
  [클래스 디자이너의 Visual C++ 열거형](../ide/visual-cpp-enumerations-in-class-designer.md)   
  [클래스 디자이너의 Visual C++ 형식 정의](../ide/visual-cpp-typedefs-in-class-designer.md)
-
-
-

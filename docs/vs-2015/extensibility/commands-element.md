@@ -1,14 +1,9 @@
 ---
 title: 요소는 명령 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - Commands
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 47cf16a5-d78b-452e-86f6-b5893856dddf
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0016deb1cf3852754e94c94a2ed153a3155d041a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 194768a3b540511996e1d99e6450a7a9b24ebc74
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184297"
 ---
 # <a name="commands-element"></a>Commands 요소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,13 +44,13 @@ VSPackage 도구 모음에서 명령의 컬렉션을 나타냅니다. 컬렉션 
   
 ### <a name="attributes"></a>특성  
   
-|특성|설명|  
+|특성|Description|  
 |---------------|-----------------|  
 |패키지|명령을 제공 하는 VSPackage를 식별 하는 GUID입니다.<br /><br /> 예를 들어 패키지 = "guidVsPackage1Pkg"입니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
   
-|요소|설명|  
+|요소|Description|  
 |-------------|-----------------|  
 |[Menus 요소](../extensibility/menus-element.md)|VSPackage를 구현 하는 모든 메뉴를 정의 합니다.|  
 |[Groups 요소](../extensibility/groups-element.md)|VSPackage의 명령 그룹을 정의 하는 항목을 포함 합니다.|  
@@ -65,7 +60,7 @@ VSPackage 도구 모음에서 명령의 컬렉션을 나타냅니다. 컬렉션 
   
 ### <a name="parent-elements"></a>부모 요소  
   
-|요소|설명|  
+|요소|Description|  
 |-------------|-----------------|  
 |[CommandTable 요소](../extensibility/commandtable-element.md)|VSPackage는 IDE를 제공 하는 명령을 나타내는 모든 요소를 정의 합니다. 가능한 요소에는 메뉴 항목, 메뉴, 도구 모음 및 콤보 상자는입니다.|  
   
@@ -98,4 +93,3 @@ VSPackage 도구 모음에서 명령의 컬렉션을 나타냅니다. 컬렉션 
 ## <a name="see-also"></a>참고 항목  
  [Vspackage에서 사용자 인터페이스 요소를 추가 하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)
-

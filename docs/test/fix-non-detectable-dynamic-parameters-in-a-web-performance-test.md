@@ -9,25 +9,23 @@ helpviewer_keywords:
 ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 54f0b23da975738cf1dd33e03ef577efbfc2be38
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: bf305125fceb4c07bb0565fa227e7e88bb90e3a3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063783"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918484"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>웹 성능 테스트에서 검색할 수 없는 동적 매개 변수 수정
 
-웹 사이트와 응용 프로그램에 따라서는 일부 해당 웹 요청을 처리하는 데 동적 매개 변수를 사용할 수 있습니다. 동적 매개 변수는 사용자가 응용 프로그램을 실행할 때마다 해당 값이 다시 생성되는 매개 변수입니다. 동적 매개 변수의 예로는 세션 ID가 있습니다. 세션 ID는 일반적으로 5-30분마다 변경됩니다. 웹 성능 테스트 레코더 및 재생 엔진에서는 일반적인 유형의 동적 매개 변수 대부분을 자동으로 처리합니다.
+웹 사이트와 응용 프로그램에 따라서는 일부 해당 웹 요청을 처리하는 데 동적 매개 변수를 사용할 수 있습니다. 동적 매개 변수는 사용자가 애플리케이션을 실행할 때마다 해당 값이 다시 생성되는 매개 변수입니다. 동적 매개 변수의 예로는 세션 ID가 있습니다. 세션 ID는 일반적으로 5-30분마다 변경됩니다. 웹 성능 테스트 레코더 및 재생 엔진에서는 일반적인 유형의 동적 매개 변수 대부분을 자동으로 처리합니다.
 
--   쿠키 값에 설정된 동적 매개 변수 값. 이러한 값은 웹 성능 테스트 엔진에서 테스트를 재생할 때 자동으로 처리됩니다.
+- 쿠키 값에 설정된 동적 매개 변수 값. 이러한 값은 웹 성능 테스트 엔진에서 테스트를 재생할 때 자동으로 처리됩니다.
 
--   ASP.NET 뷰 상태와 같이 HTML 페이지의 숨겨진 필드에 설정된 동적 매개 변수 값. 이러한 값은 레코더에서 숨겨진 필드 추출 규칙을 테스트에 추가하여 자동으로 처리됩니다.
+- ASP.NET 뷰 상태와 같이 HTML 페이지의 숨겨진 필드에 설정된 동적 매개 변수 값. 이러한 값은 레코더에서 숨겨진 필드 추출 규칙을 테스트에 추가하여 자동으로 처리됩니다.
 
--   쿼리 문자열 또는 폼 게시 매개 변수로 설정된 동적 매개 변수 값. 이러한 값은 웹 성능 테스트를 기록한 후 동적 매개 변수 검색을 통해 처리됩니다.
+- 쿼리 문자열 또는 폼 게시 매개 변수로 설정된 동적 매개 변수 값. 이러한 값은 웹 성능 테스트를 기록한 후 동적 매개 변수 검색을 통해 처리됩니다.
 
 동적 매개 변수 중에는 검색되지 않는 형식도 있습니다. 감지되지 않는 동적 매개 변수를 사용하면 테스트를 실행할 때마다 동적 값이 달라지므로 웹 성능 테스트가 실패합니다. 이러한 매개 변수를 올바르게 처리하기 위해서는 웹 성능 테스트에서 동적 매개 변수에 대한 추출 규칙을 수동으로 추가할 수 있습니다.
 
@@ -35,19 +33,19 @@ ms.locfileid: "53063783"
 
 ## <a name="create-and-run-a-web-app-with-dynamic-parameters"></a>동적 매개 변수로 웹 응용 프로그램 만들기 및 실행
 
-검색할 수 있는 동적 매개 변수 및 검색할 수 없는 동적 매개 변수 모두를 보여 주기 위해, 컨트롤 몇 가지와 일부 사용자 지정 코드가 제공되는 세 가지 웹 폼이 있는 단순한 ASP.NET 웹 응용 프로그램을 만듭니다. 그런 다름 동적 매개 변수를 격리하고 이를 처리하는 방법에 대해 알아봅니다.
+검색할 수 있는 동적 매개 변수 및 검색할 수 없는 동적 매개 변수 모두를 보여 주기 위해, 컨트롤 몇 가지와 일부 사용자 지정 코드가 제공되는 세 가지 웹 폼이 있는 단순한 ASP.NET 웹 애플리케이션을 만듭니다. 그런 다름 동적 매개 변수를 격리하고 이를 처리하는 방법에 대해 알아봅니다.
 
-1.  **DynamicParameterSample**이라는 새 ASP.NET 프로젝트를 만듭니다.
+1. **DynamicParameterSample**이라는 새 ASP.NET 프로젝트를 만듭니다.
 
-     ![빈 ASP.NET 웹 응용 프로그램 프로젝트 만들기](../test/media/web_test_dynamicparameter_aspproject.png)
+     ![빈 ASP.NET 웹 애플리케이션 프로젝트 만들기](../test/media/web_test_dynamicparameter_aspproject.png)
 
-2.  *Querystring.aspx*라는 웹 폼을 추가합니다.
+2. *Querystring.aspx*라는 웹 폼을 추가합니다.
 
-3.  디자인 뷰에서 HiddenField를 페이지로 끌어 놓고 (ID) 속성의 값을 HiddenFieldSessionID로 변경합니다.
+3. 디자인 뷰에서 HiddenField를 페이지로 끌어 놓고 (ID) 속성의 값을 HiddenFieldSessionID로 변경합니다.
 
      ![HiddenField 추가](../test/media/web_test_dynamicparameter_hiddenfield.png)
 
-4.  Querystring 페이지에 대한 소스 보기로 변경하고 모의 세션 ID 동적 매개 변수를 생성하는 데 사용되는 다음의 강조 표시된 ASP.NET 및 JavaScript 코드를 추가합니다.
+4. Querystring 페이지에 대한 소스 보기로 변경하고 모의 세션 ID 동적 매개 변수를 생성하는 데 사용되는 다음의 강조 표시된 ASP.NET 및 JavaScript 코드를 추가합니다.
 
     ```html
     <head runat="server">
@@ -64,7 +62,7 @@ ms.locfileid: "53063783"
     </html>
     ```
 
-5.  *Querystring.aspx.cs* 파일을 열고, Page_Load 메서드에 다음에 강조 표시된 코드를 추가합니다.
+5. *Querystring.aspx.cs* 파일을 열고, Page_Load 메서드에 다음에 강조 표시된 코드를 추가합니다.
 
     ```csharp
     public partial class Querystring : System.Web.UI.Page
@@ -76,13 +74,13 @@ ms.locfileid: "53063783"
     }
     ```
 
-6.  *ASPQuery.aspx*라는 두 번째 웹 폼을 추가합니다.
+6. *ASPQuery.aspx*라는 두 번째 웹 폼을 추가합니다.
 
-7.  디자인 뷰에서 **레이블**을 페이지로 끈 다음, **(ID)** 속성의 값을 **IndexLabel**로 변경합니다.
+7. 디자인 뷰에서 **레이블**을 페이지로 끈 다음, **(ID)** 속성의 값을 **IndexLabel**로 변경합니다.
 
      ![Web Form에 레이블 추가](../test/media/web_test_dynamicparameter_label.png)
 
-8.  **하이퍼링크**를 페이지로 끌어 해당 **텍스트** 속성에 대한 베일을 **Back**으로 변경합니다.
+8. **하이퍼링크**를 페이지로 끌어 해당 **텍스트** 속성에 대한 베일을 **Back**으로 변경합니다.
 
      ![Web Form에 하이퍼링크 추가](../test/media/web_test_dynamicparameter_hyperlink.png)
 
@@ -124,7 +122,7 @@ ms.locfileid: "53063783"
 
      ![Querystring.aspx에 시작 페이지 설정](../test/media/web_test_dynamicparameter_setstartpage.png)
 
-15. **Ctrl**+**F5**를 눌러 브라우저에서 해당 웹 응용 프로그램을 실행합니다. URL을 복사합니다. 테스트를 기록할 때 필요합니다.
+15. **Ctrl**+**F5**를 눌러 브라우저에서 해당 웹 애플리케이션을 실행합니다. URL을 복사합니다. 테스트를 기록할 때 필요합니다.
 
 16. 두 링크를 모두 시도합니다. "성공"이라는 메시지를 각각 표시해야 합니다. Dynamic querystring parameter was found."라는 메시지가 나타납니다.
 
@@ -134,31 +132,31 @@ ms.locfileid: "53063783"
 
 ## <a name="create-a-web-performance-test"></a>웹 성능 테스트를 만듭니다.
 
-1.  웹 성능 및 부하 테스트 프로젝트를 솔루션에 추가합니다.
+1. 웹 성능 및 부하 테스트 프로젝트를 솔루션에 추가합니다.
 
      ![웹 성능 및 부하 테스트 프로젝트 추가](../test/media/web_test_dynamicparameter_addtestproject.png)
 
-2.  WebTest1.webtest를 DynamicParameterSampleApp.webtest로 이름을 바꿉니다.
+2. WebTest1.webtest를 DynamicParameterSampleApp.webtest로 이름을 바꿉니다.
 
      ![웹 성능 테스트 이름 바꾸기](../test/media/web_test_dynamicparameter_renametest.png)
 
-3.  테스트를 기록합니다.
+3. 테스트를 기록합니다.
 
      ![웹 성능 테스트 기록](../test/media/web_test_dynamicparameter_recordtest.png)
 
-4.  테스트하는 웹 사이트에서 URL을 복사하여 브라우저에 붙여넣습니다.
+4. 테스트하는 웹 사이트에서 URL을 복사하여 브라우저에 붙여넣습니다.
 
      ![테스트할 웹 사이트에서 URL 붙여넣기](../test/media/web_test_dynamicparameter_recordtest2.png)
 
-5.  웹 응용 프로그램을 통해 찾아봅니다. ASP.NET 링크, 뒤로 링크, javascript 링크, 뒤로 링크를 차례로 선택합니다.
+5. 웹 애플리케이션을 통해 찾아봅니다. ASP.NET 링크, 뒤로 링크, javascript 링크, 뒤로 링크를 차례로 선택합니다.
 
      웹 테스트 레코더는 웹 응용 프로그램으로 탐색할 때 HTTP 요청 및 응답 URL을 표시합니다.
 
-6.  테스트 레코더에서 **중지** 단추를 선택합니다.
+6. 테스트 레코더에서 **중지** 단추를 선택합니다.
 
      동적 매개 변수를 검색하기 위한 대화 상자에 수신된 HTTP 응답에서 매개 변수의 검색 상태를 보여 주는 진행률 표시줄이 표시됩니다.
 
-7.  ASPQuery 페이지에서 CustomQueryString에 대한 동적 매개 변수가 자동으로 검색되었습니다. 그러나 JScriptQuery 페이지에서 CustomQueryString에 대한 동적 매개 변수가 검색되지 않습니다.
+7. ASPQuery 페이지에서 CustomQueryString에 대한 동적 매개 변수가 자동으로 검색되었습니다. 그러나 JScriptQuery 페이지에서 CustomQueryString에 대한 동적 매개 변수가 검색되지 않습니다.
 
      *Querystring.aspx*에 추출 규칙을 추가하려면 **확인**을 선택하고, ASPQuery 페이지에 바인딩합니다.
 
@@ -172,15 +170,15 @@ ms.locfileid: "53063783"
 
      ![추출 규칙에 바인딩된 CustomQueryString](../test/media/web_test_dynamicparameter_autoextractionrule2.png)
 
-8.  테스트를 저장합니다.
+8. 테스트를 저장합니다.
 
 ## <a name="run-the-test-to-isolate-the-non-detected-dynamic-parameter"></a>검색되지 않은 동적 매개 변수를 격리하려면 테스트 실행
 
-1.  테스트를 실행합니다.
+1. 테스트를 실행합니다.
 
      ![웹 성능 테스트 실행](../test/media/web_test_dynamicparameter_runtest.png)
 
-2.  *JScriptQuery.aspx* 페이지에 대한 네 번째 요청이 실패합니다. 웹 테스트로 이동합니다.
+2. *JScriptQuery.aspx* 페이지에 대한 네 번째 요청이 실패합니다. 웹 테스트로 이동합니다.
 
      ![테스트 결과의 동적 매개 변수 오류](../test/media/web_test_dynamicparameter_runresults.png)
 
@@ -188,11 +186,11 @@ ms.locfileid: "53063783"
 
      ![CustomQueryString의 의심스러운 동적 매개 변수](../test/media/web_test_dynamicparameter_runresults2.png)
 
-3.  웹 성능 테스트 결과 뷰어로 돌아가서 실패한 *JScriptQuery.aspx* 페이지를 선택합니다. 요청 탭을 누르고, 원시 데이터 표시 확인란의 선택이 취소되었는지 확인하고, 아래로 스크롤하여 CustomQueryString에서 빠른 찾기를 선택합니다.
+3. 웹 성능 테스트 결과 뷰어로 돌아가서 실패한 *JScriptQuery.aspx* 페이지를 선택합니다. 요청 탭을 누르고, 원시 데이터 표시 확인란의 선택이 취소되었는지 확인하고, 아래로 스크롤하여 CustomQueryString에서 빠른 찾기를 선택합니다.
 
      ![빠른 찾기를 사용하여 동적 매개 변수 격리](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
 
-4.  테스트 편집기를 보면 *JScriptQuery.aspx* 요청의 CustomQueryString에 `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl`의 값이 할당되었고 의심되는 동적 부분은 “1v0yhyiyr0raa2w4j4pwf5zl”이라는 것을 알 수 있습니다. 찾을 내용 드롭다운 목록에서 검색 문자열의 의심 가는 부분을 제거합니다. 그러면 검색 문자열은 "CustomQueryString=jScriptQueryString___"이 됩니다.
+4. 테스트 편집기를 보면 *JScriptQuery.aspx* 요청의 CustomQueryString에 `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl`의 값이 할당되었고 의심되는 동적 부분은 “1v0yhyiyr0raa2w4j4pwf5zl”이라는 것을 알 수 있습니다. 찾을 내용 드롭다운 목록에서 검색 문자열의 의심 가는 부분을 제거합니다. 그러면 검색 문자열은 "CustomQueryString=jScriptQueryString___"이 됩니다.
 
      동적 매개 변수는 오류가 있는 요청보다 먼저 발생한 요청 중 하나에서 값을 할당 받았습니다. 따라서 [위로 검색] 확인란을 선택하고 *Querystring.aspx*에 대한 이전 요청이 요청 패널에 강조 표시될 때까지 다음 찾기를 계속 선택합니다. 다음 찾기를 세 번 선택한 다음에 발생합니다.
 
@@ -207,17 +205,17 @@ ms.locfileid: "53063783"
 
      이제 오류가 발생하는 위치를 확인했으며, sessionId에 대한 값을 추출해야 한다는 것도 확인했습니다. 그러나 추출 값은 텍스트뿐이므로 sessionId의 실제 값이 표시되는 문자열을 찾아 오류를 보다 구체적으로 격리해야 합니다. 코드를 살펴보면 var sessionId가 HiddenFieldSessionID에서 반환된 값과 같음을 알 수 있습니다.
 
-5.  HiddenFieldSessionID에서 빠른 찾기를 사용해서 검색 확인란을 비우고 현재 요청을 선택합니다.
+5. HiddenFieldSessionID에서 빠른 찾기를 사용해서 검색 확인란을 비우고 현재 요청을 선택합니다.
 
      ![HiddenFieldSession에 빠른 찾기 사용](../test/media/web_test_dynamicparameter_runresultsquckfindhiddensession.png)
 
      반환된 값은 원래 웹 성능 테스트 기록의 값과 동일한 문자열이 아닙니다. 이 테스트 실행의 경우 반환 값은 "5w4v3yrse4wa4axrafykqksq"이고 원래 기록에서는 값이 "1v0yhyiyr0raa2w4j4pwf5zl"입니다. 값이 원래 기록의 값과 일치하지 않기 때문에 오류가 생성된 것입니다.
 
-6.  원래 기록에서 동적 매개 변수를 해결해야 하므로 도구 모음에서 기록된 결과를 선택합니다.
+6. 원래 기록에서 동적 매개 변수를 해결해야 하므로 도구 모음에서 기록된 결과를 선택합니다.
 
      ![기록된 결과 선택](../test/media/web_test_dynamicparameter_recordedresult.png)
 
-7.  기록된 결과에서 테스트 실행 결과에 격리된 같은 *Querystringrequest.aspx* 요청에 있는 세 번째 요청을 선택합니다.
+7. 기록된 결과에서 테스트 실행 결과에 격리된 같은 *Querystringrequest.aspx* 요청에 있는 세 번째 요청을 선택합니다.
 
      ![기록된 결과에서 동일한 요청 선택](../test/media/web_test_dynamicparameter_recordedresultsselectnode.png)
 
@@ -231,7 +229,7 @@ ms.locfileid: "53063783"
 
      ![추출 규칙 생성됨](../test/media/web_test_dynamicparameter_addextractiondialog.png)
 
-8.  **다음 찾기**를 선택합니다. 첫 번째 일치 항목은 변경해야 하는 항목이며 JScriptQuery 페이지의 CustomQueryString에 대한 매개 변수입니다.
+8. **다음 찾기**를 선택합니다. 첫 번째 일치 항목은 변경해야 하는 항목이며 JScriptQuery 페이지의 CustomQueryString에 대한 매개 변수입니다.
 
      ![매개 변수에 대한 텍스트를 찾아 바꾸기](../test/media/web_test_dynamicparameter_addextractionfindreplace.png)
 
@@ -253,9 +251,9 @@ ms.locfileid: "53063783"
 
 ### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>Q: 내 웹앱이 수정되었다면 동적 매개 변수 검색을 다시 실행할 수 있습니까?
 
- **A:** 예, 다음 절차를 수행합니다.
+**A:** 예, 다음 절차를 수행합니다.
 
-1.  도구 모음에서 **동적 매개 변수를 웹 테스트 매개 변수로 수준 올리기** 단추를 선택합니다.
+1. 도구 모음에서 **동적 매개 변수를 웹 테스트 매개 변수로 수준 올리기** 단추를 선택합니다.
 
      검색 프로세스를 완료한 후 동적 매개 변수가 검색되면 **동적 매개 변수를 웹 테스트 매개 변수로 수준 올리기** 대화 상자가 나타납니다.
 
@@ -263,8 +261,8 @@ ms.locfileid: "53063783"
 
      **동적 매개 변수를 웹 테스트 매개 변수로 수준 올리기** 대화 상자에서 동적 매개 변수를 선택하면 두 요청이 웹 성능 테스트 편집기 요청 트리에서 강조 표시됩니다. 첫 번째 요청에 추출 규칙이 추가됩니다. 두 번째 요청에 추출된 값이 바인딩됩니다.
 
-2.  자동으로 연관시킬 동적 매개 변수의 옆에 있는 확인란을 선택하거나 선택 취소합니다. 기본적으로 모든 동적 매개 변수가 선택됩니다.
+2. 자동으로 연관시킬 동적 매개 변수의 옆에 있는 확인란을 선택하거나 선택 취소합니다. 기본적으로 모든 동적 매개 변수가 선택됩니다.
 
 ### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>Q: 동적 매개 변수를 검색하려면 Visual Studio를 구성해야 하나요?
 
- **A:** 기본 Visual Studio 구성에서는 웹 성능 테스트를 기록할 때 동적 매개 변수를 검색합니다. 하지만 Visual Studio 옵션에서 동적 매개 변수를 검색하지 않도록 구성했거나 테스트 중인 웹 응용 프로그램이 추가 동적 매개 변수로 수정된 경우 웹 성능 테스트 편집기에서 동적 매개 변수 검색을 실행할 수 있습니다.
+**A:** 기본 Visual Studio 구성에서는 웹 성능 테스트를 기록할 때 동적 매개 변수를 검색합니다. 하지만 Visual Studio 옵션에서 동적 매개 변수를 검색하지 않도록 구성했거나 테스트 중인 웹 애플리케이션이 추가 동적 매개 변수로 수정된 경우 웹 성능 테스트 편집기에서 동적 매개 변수 검색을 실행할 수 있습니다.

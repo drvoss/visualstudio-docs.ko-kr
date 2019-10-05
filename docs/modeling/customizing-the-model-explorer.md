@@ -8,27 +8,26 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, Domain-Specific Language Explorer
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: f3b9df35c4dd69b52c6c4562f3e634dd9a2bdb56
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: 65ada4a061fd928a074c9fcdb24fab60a277c457
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445849"
 ---
 # <a name="customizing-the-model-explorer"></a>모델 탐색기 사용자 지정
 변경할 수 있습니다 탐색기의 동작과 모양을 도메인별 언어 디자이너에 대 한 다음과 같습니다.
 
--   창 제목을 변경 합니다.
+- 창 제목을 변경 합니다.
 
--   탭 아이콘을 변경 합니다.
+- 탭 아이콘을 변경 합니다.
 
--   노드에 대 한 아이콘을 변경 합니다.
+- 노드에 대 한 아이콘을 변경 합니다.
 
--   노드를 숨깁니다.
+- 노드를 숨깁니다.
 
 ## <a name="changing-the-window-title"></a>창 제목 변경
  생성 된 탐색기의 창 제목을 변경 하려면 선택 **탐색기 동작** 에 **DSL 탐색기**, 한 다음 합니다 **속성** 창에서  **제목** 속성을 추가할 제목입니다.
@@ -60,32 +59,32 @@ ms.locfileid: "53986819"
     세 가지 탐색기에 표시 됩니다 **행위자** 아이콘에 있는 노드.
 
 > [!NOTE]
->  생성 된 탐색기에 표시 되는 모든 요소에 대 한 노드 아이콘을 사용 하도록 설정한 경우 모든 탐색기 노드 아이콘이 표시 됩니다. 아이콘 없음에 설정한 경우 노드는 기본 아이콘이 표시 됩니다.
+> 생성 된 탐색기에 표시 되는 모든 요소에 대 한 노드 아이콘을 사용 하도록 설정한 경우 모든 탐색기 노드 아이콘이 표시 됩니다. 아이콘 없음에 설정한 경우 노드는 기본 아이콘이 표시 됩니다.
 
 ## <a name="changing-the-name-displayed-on-an-explorer-node"></a>탐색기 노드에 표시 되는 이름 변경
  탐색기에서 모델 요소의 이름이 표시 되는 방식을 변경할 수 있습니다. 다음 절차의 이름을 표시 하는 방법을 보여 줍니다 합니다 **태스크** 에서 참조 되는 **주석** 주석 노드에서.
 
 #### <a name="to-display-a-property"></a>속성을 표시 하려면
 
-1.  이전 절차에서 만든 솔루션을 엽니다.
+1. 이전 절차에서 만든 솔루션을 엽니다.
 
-2.  있는지 확인 합니다 **주석** 속성 이름 가진 role의 복합성을 설정 하 여 단일 도메인 클래스만 참조 **주제** 0.. 1로 합니다. 속성 이름이 되어서는 **주체**, 관계 이름 수 있어야 하 고 **CommentReferencesSubject**합니다.
+2. 있는지 확인 합니다 **주석** 속성 이름 가진 role의 복합성을 설정 하 여 단일 도메인 클래스만 참조 **주제** 0.. 1로 합니다. 속성 이름이 되어서는 **주체**, 관계 이름 수 있어야 하 고 **CommentReferencesSubject**합니다.
 
-3.  에 **DSL 탐색기**를 마우스 오른쪽 단추로 클릭 **탐색기 동작** 클릭 하 고 **새 탐색기 노드 설정을 추가**합니다.
+3. 에 **DSL 탐색기**를 마우스 오른쪽 단추로 클릭 **탐색기 동작** 클릭 하 고 **새 탐색기 노드 설정을 추가**합니다.
 
      **ExplorerNodeSettings** 노드 아래에 나타납니다 합니다 **사용자 지정 노드 설정** 노드.
 
-4.  선택 **ExplorerNodeSettings**, 한 다음는 **속성** 창에서 **클래스** 하 **주석**합니다.
+4. 선택 **ExplorerNodeSettings**, 한 다음는 **속성** 창에서 **클래스** 하 **주석**합니다.
 
-5.  마우스 오른쪽 단추로 클릭 합니다 **주석** 노드를 차례로 클릭 한 다음 **새 속성 경로 추가**합니다.
+5. 마우스 오른쪽 단추로 클릭 합니다 **주석** 노드를 차례로 클릭 한 다음 **새 속성 경로 추가**합니다.
 
      이라는 새 노드가 나타납니다 **속성을 표시**합니다.
 
-6.  선택 **속성을 표시**, 한 다음는 **속성** 창에서 값 필드를 클릭 **속성 경로**합니다. 선택 **주석**, 한 다음 **CommentReferencesSubject**, 한 다음 **FlowElement**합니다. 결과 경로 유사 **CommentReferencesSubject.Subject/! 주체**합니다.
+6. 선택 **속성을 표시**, 한 다음는 **속성** 창에서 값 필드를 클릭 **속성 경로**합니다. 선택 **주석**, 한 다음 **CommentReferencesSubject**, 한 다음 **FlowElement**합니다. 결과 경로 유사 **CommentReferencesSubject.Subject/! 주체**합니다.
 
-7.  값 필드에 **속성**를 선택 **이름**합니다.
+7. 값 필드에 **속성**를 선택 **이름**합니다.
 
-8.  모든 템플릿 변환 하 고 빌드 후 솔루션을 실행 합니다.
+8. 모든 템플릿 변환 하 고 빌드 후 솔루션을 실행 합니다.
 
 9. 생성된 된 디자이너에서 샘플 다이어그램을 엽니다.
 
@@ -98,17 +97,17 @@ ms.locfileid: "53986819"
 
 #### <a name="to-hide-an-explorer-node"></a>탐색기 노드를 숨기려면
 
-1.  이전 절차에서 만든 솔루션을 엽니다.
+1. 이전 절차에서 만든 솔루션을 엽니다.
 
-2.  에 **DSL 탐색기**를 마우스 오른쪽 단추로 클릭 **탐색기 동작** 클릭 하 고 **새 도메인 경로 추가**합니다.
+2. 에 **DSL 탐색기**를 마우스 오른쪽 단추로 클릭 **탐색기 동작** 클릭 하 고 **새 도메인 경로 추가**합니다.
 
      A **도메인 경로** 노드 아래에 나타납니다 **숨겨진 노드**합니다.
 
-3.  선택 **도메인 경로**, 한 다음는 **속성** 창에서 값 필드를 클릭 **경로 정의**합니다. 선택 **FlowGraph**, 한 다음 **FlowGraphHasComments**합니다. 결과 경로 유사 **FlowGraphHasComments.Comments**
+3. 선택 **도메인 경로**, 한 다음는 **속성** 창에서 값 필드를 클릭 **경로 정의**합니다. 선택 **FlowGraph**, 한 다음 **FlowGraphHasComments**합니다. 결과 경로 유사 **FlowGraphHasComments.Comments**
 
-4.  모든 템플릿 변환 하 고 빌드 후 솔루션을 실행 합니다.
+4. 모든 템플릿 변환 하 고 빌드 후 솔루션을 실행 합니다.
 
-5.  생성된 된 디자이너에서 샘플 다이어그램을 엽니다.
+5. 생성된 된 디자이너에서 샘플 다이어그램을 엽니다.
 
      탐색기를만 표시 됩니다는 **행위자** 노드를 표시 되지 않아야 하 고는 **주석** 노드.
 

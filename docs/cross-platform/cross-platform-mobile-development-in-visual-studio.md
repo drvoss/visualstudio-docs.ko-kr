@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 5923e3106ad93608effe2604d4305cc0f3038a58
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: fcf28d844124b7a2ae8a0b380739433261c5a3ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802802"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816188"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio에서 플랫폼 간 모바일 개발
 
@@ -38,9 +38,9 @@ Xamarin용 Visual Studio Tools를 사용하면 동일한 솔루션 및 공유 �
 |[Xamarin 모바일 앱 개발 설명서](/xamarin/) |
 |[Xamarin 앱을 사용한 DevOps](/xamarin/tools/ci/devops/) |
 |[Visual Studio의 유니버설 Windows 앱에 대한 자세한 정보](https://visualstudio.microsoft.com/vs/universal-windows-platform/)(VisualStudio.com)|
-|[Swift와 C# 간의 유사점에 대해 알아보기](http://aka.ms/scposter) (download.microsoft.com)|
+|[Swift와 C# 간의 유사점에 대해 알아보기](https://aka.ms/scposter) (download.microsoft.com)|
 
-###  <a name="AndroidHTML"></a> 단일 코드 베이스에서 Android, iOS 및 Windows를 대상으로 지정
+### <a name="AndroidHTML"></a> 단일 코드 베이스에서 Android, iOS 및 Windows를 대상으로 지정
 
  C# 또는 F#(Visual Basic은 현재 지원되지 않음)을 사용하여 Android, iOS 및 Windows용 네이티브 앱을 빌드할 수 있습니다.  시작하려면 Visual Studio 2017을 설치하고, 설치 관리자에서 **.NET을 사용한 모바일 개발** 옵션을 선택합니다.
 
@@ -56,7 +56,7 @@ Xamarin용 Visual Studio Tools를 사용하면 동일한 솔루션 및 공유 �
 
  앱 디자인의 복잡도에 따라 프로젝트 템플릿의 *모바일 앱* 그룹에서 **Xamarin.Forms** 템플릿을 사용하여 앱을 빌드하는 것이 효과적일 수 있습니다. Xamarin.Forms는 Android, iOS 및 Windows에서 공유할 수 있는 단일 인터페이스를 만들 수 있는 UI 도구 키트입니다.  Xamarin.Forms 솔루션을 컴파일하면 Android 앱, iOS 앱 및 Windows 앱을 얻게 됩니다. 자세한 내용은 [Xamarin을 사용한 모바일 개발에 대해 알아보기](/xamarin/cross-platform/get-started/introduction-to-mobile-development/) 및 [Xamarin.Forms 문서](/xamarin/xamarin-forms/)를 참조하세요.
 
-####  <a name="ShareHTML"></a> Android, iOS 및 Windows 앱 간에 코드 공유
+#### <a name="ShareHTML"></a> Android, iOS 및 Windows 앱 간에 코드 공유
 
  Xamarin.Forms를 사용하지 않고 각 플랫폼에 대해 개별적으로 디자인하는 경우 플랫폼 프로젝트(Android, iOS 및 Windows) 간에 UI가 아닌 코드를 대부분 공유할 수 있습니다. 여기에는 비즈니스 논리, 클라우드 통합, 데이터베이스 액세스 또는 .NET Framework를 대상으로 하는 다른 코드가 포함됩니다. 공유할 수 없는 코드는 특정 플랫폼을 대상으로 하는 코드뿐입니다.
 
@@ -69,7 +69,7 @@ Xamarin용 Visual Studio Tools를 사용하면 동일한 솔루션 및 공유 �
 |[Sharing Code Options](/xamarin/cross-platform/app-fundamentals/code-sharing/)(코드 공유 옵션)(Xamarin) |
 |[.NET을 사용한 코드 공유 옵션](/dotnet/standard/cross-platform/) |
 
-###  <a name="WindowsHTML"></a> Windows 10 디바이스를 대상으로 지정
+### <a name="WindowsHTML"></a> Windows 10 디바이스를 대상으로 지정
 
  ![Windows 디바이스](../cross-platform/media/windowsdevices.png "Windows 디바이스")
 
@@ -84,7 +84,7 @@ Xamarin용 Visual Studio Tools를 사용하면 동일한 솔루션 및 공유 �
 |[UWP(유니버설 Windows 플랫폼)용 앱 개발](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
 |[UWP(유니버설 Windows 플랫폼)로 앱 마이그레이션](https://msdn.microsoft.com/library/mt148501.aspx)|
 
-##  <a name="HTML"></a> Android, iOS 및 Windows용 앱 빌드(HTML/JavaScript)
+## <a name="HTML"></a> Android, iOS 및 Windows용 앱 빌드(HTML/JavaScript)
 
  ![Windows, iOS 및 Android 디바이스](../cross-platform/media/homedevices.png "Windows, iOS 및 Android 디바이스")
 
@@ -94,9 +94,9 @@ Xamarin용 Visual Studio Tools를 사용하면 동일한 솔루션 및 공유 �
 
  이러한 API는 크로스 플랫폼이기 때문에 작성하는 코드를 세 플랫폼 간에 대부분 공유할 수 있습니다. 따라서 개발 및 유지 관리 비용이 줄어듭니다. 또한 처음부터 다시 시작할 필요가 없습니다. 다양한 유형의 웹 애플리케이션을 만든 경우 어떤 방식으로든 수정하거나 다시 디자인할 필요 없이 해당 파일을 Cordova 앱과 공유할 수 있습니다.
 
- ![Javascript로 작성된 다중 장치 하이브리드 앱](../cross-platform/media/multidevicehybridapps.png "Javascript로 작성된 다중 장치 하이브리드 앱")
+ ![Javascript로 작성된 다중 디바이스 하이브리드 앱](../cross-platform/media/multidevicehybridapps.png "Javascript로 작성된 다중 디바이스 하이브리드 앱")
 
- 시작하려면 Visual Studio 2017을 설치하고 설정하는 동안 **JavaScript로 모바일 개발** 기능을 선택합니다. Cordova 도구는 다중 플랫폼 앱을 빌드하는 데 필요한 모든 타사 소프트웨어를 자동으로 설치합니다.
+ 시작하려면 Visual Studio를 설치하고 설정하는 동안 **JavaScript를 사용한 모바일 개발** 기능을 선택합니다. Cordova 도구는 다중 플랫폼 앱을 빌드하는 데 필요한 모든 타사 소프트웨어를 자동으로 설치합니다.
 
  확장을 설치한 후 Visual Studio를 열고 **새 응용 프로그램(Apache Cordova)** 프로젝트를 만듭니다. 그런 다음 JavaScript 또는 Typescript를 사용하여 앱을 개발할 수 있습니다. 플러그 인을 추가하여 앱 기능을 확장할 수도 있습니다. 플러그 인의 API는 코드 작성 시 IntelliSense에 표시됩니다.
 
@@ -158,7 +158,7 @@ Xamarin용 Visual Studio Tools를 사용하면 동일한 솔루션 및 공유 �
 |[Visual Studio를 사용하여 Unity 게임을 제작하는 방법 알아보기](https://visualstudio.microsoft.com/vs/features/game-development/#tab-4b0d0be8de5f65564ad)|
 |[Visual Studio Tools for Unity에 대해 자세히 알아보기](../cross-platform/visual-studio-tools-for-unity.md) |
 |[Visual Studio Tools for Unity 사용 시작](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) |
-|[Visual Studio Tools for Unity 2.0 Preview에서 향상된 최신 기능에 대해 알아보기](https://blogs.msdn.microsoft.com/visualstudio/2014/12/03/visual-studio-tools-for-unity-2-0-preview/) (Visual Studio 블로그)|
+|[Visual Studio Tools for Unity 2.0 Preview에서 향상된 최신 기능에 대해 알아보기](https://devblogs.microsoft.com/visualstudio/visual-studio-tools-for-unity-2-0-preview/) (Visual Studio 블로그)|
 |[Visual Studio Tools for Unity 2.0 Preview에 대한 동영상 소개 보기](http://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (동영상)|
 |[Unity에 대해 알아보기](http://unity3d.com/) (Unity 웹 사이트)|
 

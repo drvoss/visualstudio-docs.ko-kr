@@ -1,18 +1,16 @@
 ---
 title: 팀 탐색기의 프로젝트에 연결
 ms.date: 12/04/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.author: gewarren
 author: gewarren
-ms.manager: douge
-ms.openlocfilehash: 6b021dbeddc8d8ed5dd0896853d2ca38641b146b
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.manager: jillfra
+ms.openlocfilehash: d65ea17ad642ea882820bc04f5d217e6290a8a6d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976669"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>팀 탐색기의 프로젝트에 연결
 

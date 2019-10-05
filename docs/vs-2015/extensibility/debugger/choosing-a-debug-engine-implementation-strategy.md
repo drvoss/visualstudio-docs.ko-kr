@@ -1,26 +1,21 @@
 ---
 title: 디버그 엔진 구현 전략 선택 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, implementation strategies
 ms.assetid: 90458fdd-2d34-4f10-82dc-6d8f31b66d8b
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9d2f4d4f907dcabb2aff5457abbbe215507d7601
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6b03e69892da217d84d56b39b7df61784907d2b0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183464"
 ---
 # <a name="choosing-a-debug-engine-implementation-strategy"></a>디버그 엔진 구현 전략 선택
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,10 +29,9 @@ ms.locfileid: "51734621"
   
  그렇지 않으면 in-process SDM로 또는 프로그램을 디버깅 하는 프로세스에는 DE 만드는 간에 선택할 수 있습니다. 식 계산기는 DE의 프로그램 기호 저장소에 자주 액세스 해야 하는 여부와 빠른 액세스를 위해 메모리에 기호 저장소를 로드할 수 있는지 여부를 고려 하는 것이 반드시 합니다. 또한 다음을 고려 합니다.  
   
--   식 계산기 및 기호 저장소 간의 호출 수 없는 경우, SDM 메모리 공간에 기호 저장소를 읽을 수 있으면 DE in-process SDM 만듭니다. 프로그램에 연결할 때 SDM을 디버그 엔진의 CLSID를 반환 해야 합니다. SDM이이 CLSID를 사용 하 여는 DE의 in process 인스턴스를 만듭니다.  
+- 식 계산기 및 기호 저장소 간의 호출 수 없는 경우, SDM 메모리 공간에 기호 저장소를 읽을 수 있으면 DE in-process SDM 만듭니다. 프로그램에 연결할 때 SDM을 디버그 엔진의 CLSID를 반환 해야 합니다. SDM이이 CLSID를 사용 하 여는 DE의 in process 인스턴스를 만듭니다.  
   
--   DE 기호 저장소에 액세스 하는 프로그램을 호출 해야 프로그램과 DE-프로세스를 만듭니다. 이 경우 프로그램은 DE의 인스턴스를 만듭니다.  
+- DE 기호 저장소에 액세스 하는 프로그램을 호출 해야 프로그램과 DE-프로세스를 만듭니다. 이 경우 프로그램은 DE의 인스턴스를 만듭니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Visual Studio 디버거 확장성](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
-

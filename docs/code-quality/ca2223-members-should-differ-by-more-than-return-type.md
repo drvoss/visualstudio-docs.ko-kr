@@ -1,7 +1,6 @@
 ---
 title: 'CA2223: 멤버는 반환 형식 이외의 것도 달라야 합니다.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - MembersShouldDifferByMoreThanReturnType
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: eb326d9f-50d9-48cb-84be-d41c84a8fe09
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c09239fbb904edac6481cee372b9e96e0183b62a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5283c96a484f47fe280a07c5889b8db877db5ffc
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890785"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71230993"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: 멤버는 반환 형식 이외의 것도 달라야 합니다.
 
@@ -29,22 +28,22 @@ ms.locfileid: "53890785"
 |TypeName|MembersShouldDifferByMoreThanReturnType|
 |CheckId|CA2223|
 |범주|Microsoft.Usage|
-|변경 수준|주요 변경|
+|주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
- 두 명의 public 또는 protected 멤버에 반환 형식을 제외 하 고 동일 시그니처가 있습니다.
+두 public 또는 protected 멤버에는 반환 형식을 제외 하 고 동일한 시그니처가 있습니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 있지만 동일한 멤버를 구별 하는 반환 형식 사용을 허용 하는 공용 언어 런타임 경우이 기능은 되지 공용 언어 사양에 않으며.NET 프로그래밍 언어의 공통 기능이 아닙니다. 멤버는 반환 형식만 다를 때 개발자와 개발 도구가 될 수 있습니다 하지 올바르게 구별할 합니다.
+공용 언어 런타임에서는 반환 형식을 사용 하 여 동일한 멤버를 구분할 수 있지만,이 기능은 공용 언어 사양에 있지 않으며 .NET 프로그래밍 언어의 일반적인 기능입니다. 멤버가 반환 형식만 다른 경우 개발자 및 개발 도구는 이러한 멤버를 제대로 구분 하지 못할 수 있습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하는 고유 이름 및 매개 변수 형식에만 기반 하거나 멤버를 노출 하지 않습니다 있도록 멤버의 디자인을 변경 합니다.
+이 규칙 위반 문제를 해결 하려면 멤버의 디자인을 변경 하 여 해당 이름 및 매개 변수 형식만을 기준으로 고유 하거나 멤버를 노출 하지 않도록 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
- 이 규칙에서는 경고를 표시해야 합니다.
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
+이 규칙에서는 경고를 표시해야 합니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는 MSIL (Microsoft intermediate language),이 규칙을 위반 하는 형식을 표시 합니다. C# 또는 Visual Basic을 사용 하 여이 규칙을 위반 될 수 없습니다. 알 수 있습니다.
+다음 예제에서는 MSIL (Microsoft 중간 언어)에서이 규칙을 위반 하는 형식을 보여 줍니다. 또는 Visual Basic를 사용 C# 하 여이 규칙을 위반할 수 없습니다.
 
 ```
 .namespace UsageLibrary

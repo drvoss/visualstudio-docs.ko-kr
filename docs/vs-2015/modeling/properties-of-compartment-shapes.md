@@ -1,12 +1,9 @@
 ---
 title: 구획 모양의 속성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.dsltools.dsldesigner.compartmentshape
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: 9a9e112d-210d-413b-a44f-0e976a4a78bc
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: bb5730093a9eda6464bd6b67fa09976a4e9cd2f6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9176fe7bc7f9824610b7a77f1e1ef3b374b69ef3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216387"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701720"
 ---
 # <a name="properties-of-compartment-shapes"></a>구획 모양의 속성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +31,7 @@ ms.locfileid: "49216387"
   
 |속성|설명|기본|  
 |--------------|-----------------|-------------|  
-|기본 확장 축소 상태|경우 `Expanded`, 생성 시 구획이 표시 됩니다. 경우 `Collapsed`, 않습니다.|확장됨|  
+|기본 확장 축소 상태|경우 `Expanded`, 생성 시 구획이 표시 됩니다. 경우 `Collapsed`, 않습니다.|넓게|  
 |채우기 색|이 도형의 채우기 색입니다.|하얀|  
 |채우기 그라데이션 모드|이 도형의 채우기 그라데이션 모드입니다.|가로|  
 |기 하 도형|이 셰이프 (직사각형 또는 모서리가 둥근 사각형)의 기 하 도형입니다.|사각형|  
@@ -63,7 +60,4 @@ ms.locfileid: "49216387"
 |Help Keyword|이 셰이프에 대 한 F1 도움말을 인덱싱하는 데는 키워드입니다.|\<없음 >|  
   
 ## <a name="see-also"></a>참고 항목  
- [도메인 특정 언어 도구 용어집](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

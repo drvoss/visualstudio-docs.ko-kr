@@ -15,17 +15,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, workflows
 - workflows [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b0a1e4d1e3aa548d51225ac50dacf78b73e1efae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: d78d82a51f88bfaf076b56692629e801689e103e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820506"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443534"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>SharePoint 워크플로 솔루션 만들기
 
@@ -57,7 +57,7 @@ SharePoint에 대 한 자세한 내용은 참조 하세요. [Microsoft SharePoin
  워크플로 만든 후 속성 창에서 해당 속성을 수정할 수 있습니다. 대부분의 워크플로 속성이 속성 창에서 직접 변경할 수 있지만 일부 해야 줄임표 단추를 클릭 (![ASP.NET 모바일 디자이너 줄임표](../sharepoint/media/mwellipsis.gif "ASP.NET 모바일 디자이너 줄임표"))를 해당 값을 변경 합니다. 이 단추를 다시 시작 합니다 **SharePoint 사용자 지정 마법사**합니다. 선택 값이 변경 된 속성을 변경한 후 합니다 **완료** 단추 하 여 종료 합니다.
 
 > [!NOTE]
->  합니다 **워크플로 유형** 속성이 읽기 전용 이므로 변경할 수 없습니다. 워크플로 형식을 변경 하려는 경우에 다른 워크플로 만들어야 합니다.
+> 합니다 **워크플로 유형** 속성이 읽기 전용 이므로 변경할 수 없습니다. 워크플로 형식을 변경 하려는 경우에 다른 워크플로 만들어야 합니다.
 
 ## <a name="design-a-sharepoint-workflow"></a>SharePoint 워크플로 디자인 합니다.
  사용 하 여 비즈니스 프로세스에서 모든 단계를 정의 하 고 나면는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 워크플로 디자이너는 SharePoint 워크플로 디자인 합니다. 디자이너를 열려면에서 Workflow1.cs 또는 Workflow1.vb를 두 번 클릭 **솔루션 탐색기**, 또는 이러한 파일 중 하나에 대 한 바로 가기 메뉴를 열고 선택한 후 **엽니다**합니다.
@@ -119,7 +119,7 @@ SharePoint에 대 한 자세한 내용은 참조 하세요. [Microsoft SharePoin
   이러한 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 연결 및 초기화 폼에 대 한 항목 템플릿이 포함 되어 있습니다. 예는 *연결 양식* 지출 비용 워크플로의 등 워크플로에 관련 된 매개 변수를 워크플로 설치 관리자가 있는 입력 됩니다. 예는 *양식을* 은 입력을 소비 하는 워크플로에 비용 워크플로의 사용자 수입니다. 이러한 양식 유형에 대 한 자세한 내용은 참조 하세요. [SharePoint 프로젝트 및 프로젝트 항목 템플릿](../sharepoint/sharepoint-project-and-project-item-templates.md)합니다.
 
 ### <a name="item-properties"></a>항목 속성
- SharePoint 라이브러리 또는 목록 항목의 속성을 사용 하 여 사용자 로부터 정보를 수집할 수 있습니다. Workflow1.cs 또는 Workflow1.vb 주 코드 파일 이름의 Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties 클래스의 인스턴스를 선언 `workflowProperties`합니다. 사용 된 `workflowProperties` 라이브러리의 코드 목록 속성에 액세스 하는 개체입니다. 예를 들어 참조 [연습: SharePoint 워크플로 솔루션을 만들고](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)합니다.
+ SharePoint 라이브러리 또는 목록 항목의 속성을 사용 하 여 사용자 로부터 정보를 수집할 수 있습니다. Workflow1.cs 또는 Workflow1.vb 주 코드 파일 이름의 Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties 클래스의 인스턴스를 선언 `workflowProperties`합니다. 사용 된 `workflowProperties` 라이브러리의 코드 목록 속성에 액세스 하는 개체입니다. 예제를 보려면 [연습: SharePoint 워크플로 솔루션을 만들고](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)합니다.
 
 ## <a name="debug-a-sharepoint-workflow-template"></a>SharePoint 워크플로 템플릿 디버그
  디버깅할 수 SharePoint 워크플로 프로젝트를 동일한 다른 디버그할 때 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 웹 기반 프로젝트입니다. 시작 하는 경우는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 디버거를 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 에 지정 된 설정을 사용 하는 **SharePoint 사용자 지정 마법사** 적절 한 SharePoint 웹 사이트를 열고 자동 워크플로 템플릿을 연결 적절 한 라이브러리 또는 목록입니다. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 또한 연결 합니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 디버거를 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 라는 프로세스가 *w3wp.exe*합니다.

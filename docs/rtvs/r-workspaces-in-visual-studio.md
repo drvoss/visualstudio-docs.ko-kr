@@ -2,20 +2,18 @@
 title: R 작업 영역
 description: Visual Studio에서 작업 영역을 사용하여 R 코드가 실행되는 위치를 제어하는 방법입니다.
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 11b5086c934b433d4e28095c1d50471ea44e15a8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 97ce4f226c39a20ad41c5977f800aa178450c69c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998796"
 ---
 # <a name="control-where-r-code-runs-with-workspaces"></a>작업 영역에서 R 코드가 실행되는 위치 제어
 
@@ -35,7 +33,7 @@ RTVS(Visual Studio용 R 도구)의 작업 영역에서는 R 세션이 실행되�
 
 ## <a name="local-workspaces"></a>로컬 작업 영역
 
-로컬 작업 영역 목록에는 컴퓨터에 설치한 모든 R 인터프리터가 표시됩니다. 
+로컬 작업 영역 목록에는 컴퓨터에 설치한 모든 R 인터프리터가 표시됩니다.
 
 Visual Studio는 시작될 때 **HKEY_LOCAL_MACHINE\Software\R-Core\\** 레지스트리 키를 검색하여 설치한 R 버전을 모두 자동으로 탐지하려고 합니다. 이 확인은 시작 시에만 수행되므로 새 R 인터프리터를 설치할 경우 Visual Studio를 다시 시작해야 합니다.
 
@@ -124,13 +122,13 @@ Visual Studio에서 R 프로젝트를 사용할 경우 원격 작업 영역을 �
 - 이미 서버에 있는 모든 파일을 덮어씁니다.
 
 > [!Note]
-> RTVS가 모든 R 함수 호출을 확실히 가로챌 수는 없으므로 대화형 창 내에서 `source()` 또는 `runApp()`(Shiny 응용 프로그램의 경우) 등의 함수를 호출하면 파일이 원격 작업 영역으로 복사되지 *않습니다*.
+> RTVS가 모든 R 함수 호출을 확실히 가로챌 수는 없으므로 대화형 창 내에서 `source()` 또는 `runApp()`(Shiny 애플리케이션의 경우) 등의 함수를 호출하면 파일이 원격 작업 영역으로 복사되지 *않습니다*.
 
 [프로젝트 속성](r-projects-in-visual-studio.md#project-properties)은 프로젝트가 실행될 때 RTVS가 파일을 복사할지 여부, 그리고 정확히 복사되는 파일을 제어합니다. 이 페이지를 열려면 **프로젝트** > **(이름) 속성** 메뉴 명령을 선택하거나 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.
 
 ![파일 전송 설정이 있는 프로젝트 속성 실행 탭](media/workspaces-remote-file-transfer-filter-settings.png)
 
-여기서 **실행할 전송 파일** 속성은 RTVS가 프로젝트 파일을 자동으로 복사할지 여부를 결정합니다. **전송할 파일** 값은 정확히 전송되는 파일을 필터링합니다. 기본 동작은 *.R*, *.Rmd*, *.sql*, *.md* 및 *.cpp* 파일만 복사합니다. 이 동작은 실행할 때마다 큰 데이터 파일이 의도치 않게 서버로 복사되지 않도록 합니다. 
+여기서 **실행할 전송 파일** 속성은 RTVS가 프로젝트 파일을 자동으로 복사할지 여부를 결정합니다. **전송할 파일** 값은 정확히 전송되는 파일을 필터링합니다. 기본 동작은 *.R*, *.Rmd*, *.sql*, *.md* 및 *.cpp* 파일만 복사합니다. 이 동작은 실행할 때마다 큰 데이터 파일이 의도치 않게 서버로 복사되지 않도록 합니다.
 
 ## <a name="copy-files-from-a-remote-workspace"></a>원격 작업 영역에서 파일 복사
 

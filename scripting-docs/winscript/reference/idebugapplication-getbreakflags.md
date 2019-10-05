@@ -2,7 +2,6 @@
 title: IDebugApplication::GetBreakFlags | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3bdccefb3a679694360ed9a7c6fea35eae6bdb1b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 389f50cf6883cd59cd540ef278aa1b4f69a6a629
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990907"
 ---
 # <a name="idebugapplicationgetbreakflags"></a>IDebugApplication::GetBreakFlags
-응용 프로그램에 대 한 현재 나누기 플래그를 반환합니다.  
+응용 프로그램에 대 한 현재 중단 플래그를 반환합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetBreakFlags(  
    APPBREAKFLAGS*                   pabf,  
    IRemoteDebugApplicationThread**  pprdatSteppingThread  
@@ -39,7 +38,7 @@ HRESULT GetBreakFlags(
   
 #### <a name="parameters"></a>매개 변수  
  `pabf`  
- [out] 응용 프로그램에 대 한 현재 나누기 플래그를 지정 합니다.  
+ [out] 응용 프로그램에 대 한 현재 중단 플래그입니다.  
   
  `pprdatSteppingThread`  
  [out] 현재 실행 중인 스레드입니다.  
@@ -52,7 +51,7 @@ HRESULT GetBreakFlags(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 응용 프로그램에 대 한 현재 나누기 플래그를 반환합니다.  
+ 이 메서드는 응용 프로그램에 대 한 현재 중단 플래그를 반환합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugApplication 인터페이스](../../winscript/reference/idebugapplication-interface.md)   

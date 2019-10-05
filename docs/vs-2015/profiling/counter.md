@@ -1,25 +1,20 @@
 ---
 title: Counter | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: aa4b4cdb-e6ea-433a-9579-56f3785e1385
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4d0d15c404284dfb40105f7a52cb23aef132f3a9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5da78c33af599accf5ff3a2e09a9afb52982573a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149283"
 ---
 # <a name="counter"></a>카운터
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,13 +54,13 @@ VSPerfCmd.exe /Start:Method /Counter:Name[,Reload[,FriendlyName]][/Counter:Name[
  프로파일러를 초기화하여 계측 방법을 사용합니다.  
   
  **Launch:** `AppName`  
- 지정한 응용 프로그램 및 프로파일러를 시작합니다. 샘플링 방법을 사용하려면 프로파일러를 초기화해야 합니다.  
+ 지정한 애플리케이션 및 프로파일러를 시작합니다. 샘플링 방법을 사용하려면 프로파일러를 초기화해야 합니다.  
   
  **Attach:** `PID`  
  프로파일러를 시작하고 프로세스 ID로 지정한 프로세스에 연결합니다. 샘플링 방법을 사용하려면 프로파일러를 초기화해야 합니다.  
   
-## <a name="example"></a>예제  
- 샘플링 방법 예제는 일반 프로파일러 카운터 NonHaltedCycles가 1000번 발생할 때마다 응용 프로그램을 샘플링하는 방법을 보여 줍니다.  
+## <a name="example"></a>예  
+ 샘플링 방법 예제는 일반 프로파일러 카운터 NonHaltedCycles가 1000번 발생할 때마다 애플리케이션을 샘플링하는 방법을 보여 줍니다.  
   
  계측 방법 예제는 프로파일러를 초기화하여 L2InstructionFetches 카운터 이벤트를 수집하는 방법을 보여 줍니다. L2InstructionFetches 카운터 이름은 프로세서마다 고유합니다.  
   
@@ -80,9 +75,6 @@ VSPerfCmd.exe /Start:Trace /Output:TestApp.exe.vsp /Counter:L2InstructionFetches
   
 ## <a name="see-also"></a>참고 항목  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [독립 실행형 응용 프로그램 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [ASP.NET 웹 응용 프로그램 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [독립 실행형 애플리케이션 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [ASP.NET 웹 애플리케이션 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [서비스 프로파일링](../profiling/command-line-profiling-of-services.md)
-
-
-

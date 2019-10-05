@@ -1,14 +1,9 @@
 ---
 title: IDiaStackWalkHelper::get_registerValue | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 46ac5eee-73a3-44a1-8635-6c58ba193cb6
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8f155c32d9d96350b1c9955ea44dcb0d289d6aa8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4dde30ebcda46d75271b15ec5b7f7c1ac49f384b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150108"
 ---
 # <a name="idiastackwalkhelpergetregistervalue"></a>IDiaStackWalkHelper::get_registerValue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,9 +47,6 @@ HRESULT get_registerValue ( 
 ## <a name="remarks"></a>설명  
  크기에도 불구 하 고는 `pRetVal` 매개 변수를 구현만 무엇입니까 레지스터 일반적으로 보유 저장 해야 합니다. 예를 들어는 8 비트 레지스터만 가장 낮은 8-의 비트를 지정된 된 값을 보유합니다. 이 8 비트 값이 메서드에서 반환 하는 경우 64 비트로 확장 됩니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
  [CV_HREG_e 열거형](../../debugger/debug-interface-access/cv-hreg-e.md)
-
-
-

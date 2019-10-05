@@ -1,14 +1,9 @@
 ---
 title: 디버그 인터페이스 액세스 SDK 참조 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: 7cdbbce1-8b59-43ce-b6aa-a948bb4d7148
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fd4d86aac5e32a29893f87effe60a486bca141b3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dbc7503e5df9ad3482cbf1595ff6b4eec018d5d2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197643"
 ---
 # <a name="debug-interface-access-sdk-reference"></a>디버그 인터페이스 액세스 SDK 참조
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,8 +41,5 @@ ms.locfileid: "51735540"
  [기호 및 기호 태그](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)  
  기호 이란 무엇 이며 형식으로 확인 하는 방법을 설명 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [디버그 인터페이스 액세스 SDK](../../debugger/debug-interface-access/debug-interface-access-sdk.md)
-
-
-

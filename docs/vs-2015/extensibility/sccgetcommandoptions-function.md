@@ -1,14 +1,9 @@
 ---
 title: SccGetCommandOptions 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccGetCommandOptions
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: bbe4aa4e-b4b0-403e-b7a0-5dd6eb24e5a9
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 10f47a193a3ff47412249e094c1c9364653350ae
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 55d4d2cae73dd77fc601ca85ab45d969fc0e4de8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432418"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,9 +75,8 @@ SCCRTN SccGetCommandOptions(
  마지막으로 클릭할 때 **확인** ide의 **가져오기** 대화 상자에서 IDE 호출 하 여는 [SccGet](../extensibility/sccget-function.md)에서 반환 하는 구조체를 전달 `ppvOptions` 를 포함 하는 고급 옵션입니다.  
   
 > [!NOTE]
->  명령을 `SCC_COMMAND_OPTIONS` IDE를 표시 하는 경우 사용 되는 **옵션** 사용자 수 있는 대화 상자에는 통합의 작동 방식을 제어 하는 기본 설정을 합니다. 표시할 수는 소스 제어 플러그 인에서 자체 기본 설정 대화 상자를 제공 하려는 경우는 **고급** IDE의 기본 설정 대화 상자에서 단추입니다. 플러그 인은 책임을 가져오고이 정보를 유지 합니다. IDE 사용 하지 않거나 수정 합니다.  
+> 명령을 `SCC_COMMAND_OPTIONS` IDE를 표시 하는 경우 사용 되는 **옵션** 사용자 수 있는 대화 상자에는 통합의 작동 방식을 제어 하는 기본 설정을 합니다. 표시할 수는 소스 제어 플러그 인에서 자체 기본 설정 대화 상자를 제공 하려는 경우는 **고급** IDE의 기본 설정 대화 상자에서 단추입니다. 플러그 인은 책임을 가져오고이 정보를 유지 합니다. IDE 사용 하지 않거나 수정 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [원본 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)   
  [명령 코드](../extensibility/command-code-enumerator.md)
-

@@ -1,23 +1,20 @@
 ---
 title: 복사 동작 사용자 지정 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 87fff01c-60ba-440a-b8a0-185edcef83ac
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c2478925ecf481aaf49dbfbe5818d8839b9ad54f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b88d3541bc9c3b2f890c2aadf0103c48d3dad865
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433294"
 ---
 # <a name="customizing-copy-behavior"></a>복사 동작 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +36,7 @@ ms.locfileid: "49844092"
   
   복사한 요소와 링크는 serialize되어 클립보드에 배치되는 EGP(<xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>)에 저장됩니다.  
   
-  복사한 요소의 이미지도 클립보드에 배치됩니다. 따라서 사용자가 Word 등의 다른 응용 프로그램에 해당 이미지를 붙여넣을 수 있습니다.  
+  복사한 요소의 이미지도 클립보드에 배치됩니다. 따라서 사용자가 Word 등의 다른 애플리케이션에 해당 이미지를 붙여넣을 수 있습니다.  
   
   사용자는 DSL 정의에 따라 요소를 수락할 수 있는 대상에 복사한 요소를 붙여넣을 수 있습니다. 예를 들어 구성 요소 솔루션 템플릿에서 생성된 DSL에서 사용자는 포트를 구성 요소에는 붙여넣을 수 있지만 다이어그램에는 붙여넣을 수 없으며, 구성 요소를 다이어그램에는 붙여넣을 수 있지만 다른 구성 요소에는 붙여넣을 수 없습니다.  
   
@@ -218,9 +215,9 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 ```  
   
  **요소를 끌어서 사용자 수 있습니다.**  
- 참조 [방법: 끌어서 놓기 처리기 추가](../modeling/how-to-add-a-drag-and-drop-handler.md)합니다.  
+ [방법: 끌어서 놓기 처리기 추가](../modeling/how-to-add-a-drag-and-drop-handler.md)합니다.  
   
-##  <a name="customizeLinks"></a> 링크 복사 동작 사용자 지정  
+## <a name="customizeLinks"></a> 링크 복사 동작 사용자 지정  
  사용자가 요소를 복사할 때의 표준 동작은 포함된 요소도 모두 복사하는 것입니다. 이러한 표준 복사 동작을 수정할 수 있습니다. DSL 정의에서 속성 창의 설정에 관계의 한쪽의 역할을 선택 합니다 **Propagates Copy** 값입니다.  
   
  ![도메인 역할의 복사 속성 전파](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")  
@@ -241,7 +238,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  개체 복사, 붙여넣기, 만들기, 삭제와 관련한 대부분의 DSL 동작 측면은 다이어그램에 연결되는 <xref:Microsoft.VisualStudio.Modeling.ElementOperations> 인스턴스를 통해 규정됩니다. <xref:Microsoft.VisualStudio.Modeling.ElementOperations>에서 고유한 클래스를 파생시키고 다이어그램 클래스의 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> 속성을 재정의하여 DSL 동작을 수정할 수 있습니다.  
   
 > [!TIP]
->  프로그램 코드를 사용 하 여 모델을 사용자 지정 하는 방법에 대 한 자세한 내용은 참조 하세요. [탐색 및 업데이트 프로그램 코드에서 모델](../modeling/navigating-and-updating-a-model-in-program-code.md)합니다.  
+> 프로그램 코드를 사용 하 여 모델을 사용자 지정 하는 방법에 대 한 자세한 내용은 참조 하세요. [탐색 및 업데이트 프로그램 코드에서 모델](../modeling/navigating-and-updating-a-model-in-program-code.md)합니다.  
   
  ![복사 작업에 대 한 시퀀스 다이어그램](../modeling/media/dslcopyseqdiagram.png "dslCopySeqDiagram")  
   
@@ -294,9 +291,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
   
  ElementOperations 클래스에서 두 메서드를 정의합니다.  
   
--   `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` 이 메서드는 소스 요소를 대상 모양, 연결선 또는 다이어그램으로 끌 수 있는지 여부를 결정합니다.  
+- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` 이 메서드는 소스 요소를 대상 모양, 연결선 또는 다이어그램으로 끌 수 있는지 여부를 결정합니다.  
   
--   `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` 이 메서드는 소스 요소를 대상에 결합합니다.  
+- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` 이 메서드는 소스 요소를 대상에 결합합니다.  
   
 ### <a name="canmerge"></a>CanMerge()  
  `CanMerge()` 이 메서드는 다이어그램에서 마우스를 이동하면 사용자에게 제공되어야 하는 피드백을 확인하기 위해 호출됩니다. 이 메서드의 매개 변수는 마우스로 가리키는 요소와 끌기 작업을 수행한 소스에 대한 데이터입니다. 사용자는 화면의 어느 위치에서나 끌기를 수행할 수 있습니다. 그러므로 소스 개체는 다양한 형식이 될 수 있으며 여러 형식으로 serialize할 수 있습니다. 소스가 DSL 또는 UML 모델이면 데이터 매개 변수는 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>의 serialization입니다. 끌기, 복사 및 도구 상자 작업에서는 ElementGroupPrototypes를 사용하여 모델의 코드 조각을 표시합니다.  
@@ -571,6 +568,3 @@ namespace Company.MyDsl
  [방법: 끌어서 놓기 처리기 추가](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [삭제 동작 사용자 지정](../modeling/customizing-deletion-behavior.md)   
  [샘플: VMSDK 회로 다이어그램 샘플](http://go.microsoft.com/fwlink/?LinkId=213879)
-
-
-

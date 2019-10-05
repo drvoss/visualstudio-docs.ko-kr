@@ -1,20 +1,18 @@
 ---
 title: 프로젝트 템플릿 및 항목 템플릿의 로드 문제 해결
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: troubleshooting
 helpviewer_keywords:
 - templates [Visual Studio], troubleshooting
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 2963bdbd4f788f6321d963bc52001f1875c48a14
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 70782646a52a5bca5741a864eee1f965941bb34b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62547595"
 ---
 # <a name="how-to-troubleshoot-templates"></a>방법: 템플릿 문제 해결
 
@@ -22,7 +20,17 @@ ms.locfileid: "53061871"
 
 ## <a name="validate-the-vstemplate-file"></a>vstemplate 파일의 유효성 검사
 
+::: moniker range="vs-2017"
+
 템플릿에서 *vstemplate* 파일이 Visual Studio 템플릿 스키마를 따르지 않으면 해당 템플릿은 **새 프로젝트** 대화 상자에 표시되지 않을 수 있습니다.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+템플릿의 *vstemplate* 파일이 Visual Studio 템플릿 스키마를 따르지 않으면 새 프로젝트를 만드는 대화 상자에 템플릿이 표시되지 않을 수 있습니다.
+
+::: moniker-end
 
 ### <a name="to-validate-the-vstemplate-file"></a>vstemplate 파일의 유효성을 검사하려면
 

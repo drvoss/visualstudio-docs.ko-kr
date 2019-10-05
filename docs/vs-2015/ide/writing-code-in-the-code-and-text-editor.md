@@ -1,14 +1,9 @@
 ---
 title: 코드 및 텍스트 편집기에서 코드 작성 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.texteditor
 dev_langs:
@@ -64,13 +59,13 @@ ms.assetid: cb53ab9a-5b76-4759-b9e8-7bf32298ecbe
 caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bd12cfee50db7dd085fee6c0591dfff3f579e640
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 23dd08e95100f186c172fff2cfa6a392bd11eee4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838688"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698095"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>코드 및 텍스트 편집기에서 코드 작성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,7 +78,7 @@ Visual Studio 편집기에서는 코드를 더 쉽게 작성 및 관리할 수 �
  다양한 Visual Studio 언어가 다양한 기능 집합을 제공하고 경우에 따라 기능은 언어별로 다르게 동작합니다. 이들 차이점은 대부분 기능 설명에 지정되지만 자세한 내용은 특정 Visual Studio 언어에 대한 섹션에서 확인할 수 있습니다.  
 
 > [!IMPORTANT]
->  사용 중인 Visual Studio 버전 및 설정이 IDE의 기능에 영향을 줄 수 있습니다. 이 항목에 설명된 내용과 다를 수 있습니다.  
+> 사용 중인 Visual Studio 버전 및 설정이 IDE의 기능에 영향을 줄 수 있습니다. 이 항목에 설명된 내용과 다를 수 있습니다.  
 
 ## <a name="editor-features"></a>편집기 기능  
 
@@ -92,7 +87,7 @@ Visual Studio 편집기에서는 코드를 더 쉽게 작성 및 관리할 수 �
 |구문 색 지정|코드 및 태그 파일의 일부 구문 요소에는 구분을 위해 다른 색이 지정됩니다. 예를 들어 키워드(예: C#의 `using` 및 Visual Basic의 `Imports` )는 한 색이지만 형식(예: `Console` 및 `Uri`)은 다른 색입니다. 문자열 리터럴 및 주석과 같은 기타 구문 요소에도 색이 지정됩니다. C++에서는 색을 사용하여 기타 토큰 사이에서 형식, 열거형 및 매크로를 구분합니다.<br /><br /> 각 형식의 기본 색을 확인할 수 있고 [도구](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)메뉴에서 열 수 있는 **Fonts and Colors, Environment, Options Dialog Box** 에서 특정 구문 요소의 색을 변경할 수 있습니다.|  
 |오류 및 경고 표식|코드를 추가하고 솔루션을 빌드할 때 코드에는 (a) 다른 색이 지정된 물결 무늬 밑줄(물결선) 또는 (b) 전구가 나타납니다. 빨간색 물결선은 구문 오류를 나타내고, 파란색 물결선은 컴파일러 오류를 나타내고, 녹색 물결선은 경고를 나타내고, 자주색 물결선은 기타 유형 오류를 나타냅니다. [전구](../ide/perform-quick-actions-with-light-bulbs.md) 는 문제에 대한 수정 내용을 제안하고 수정 내용을 쉽게 적용할 수 있도록 합니다.<br /><br /> **도구/옵션/환경/글꼴 및 색** 대화 상자에서 각 오류 및 경고 물결선의 기본 색을 확인할 수 있습니다. **구문 오류**, **컴파일러 오류**, **경고**및 **기타 오류**를 찾아보세요.|  
 |중괄호 일치|코드 파일에서 삽입 지점이 여는 괄호에 배치되면 여는 괄호와 닫는 괄호가 강조 표시됩니다. 이 기능을 통해 잘못 배치되거나 누락된 괄호를 즉시 파악할 수 있습니다. **자동 구분 기호 강조 표시** 설정(**도구/옵션/텍스트 편집기**)으로 중괄호 일치를 설정하거나 해제할 수 있습니다. **글꼴 및 색** 설정(**도구/옵션/환경**)에서 강조 표시 색을 변경할 수 있습니다. **중괄호 일치(강조 표시)** 또는 **중괄호 일치(사각형)** 를 찾아보세요.|  
-|줄 번호|코드 창의 왼쪽 여백에 줄 번호를 표시할 수 있습니다. 줄 번호는 기본적으로 표시되지 않습니다. **텍스트 편집기 모든 언어** 설정(**도구/옵션/텍스트 편집기/모든 언어**)에서 이 옵션을 설정할 수 있습니다. 해당 언어의 설정을 변경하여 개별 프로그래밍 언어의 줄 번호를 표시할 수 있습니다(**도구/옵션/텍스트 편집기/\<language>**). 줄 번호를 인쇄하려면 **인쇄** 대화 상자에서 줄 번호 포함을 선택해야 합니다.|  
+|줄 번호|코드 창의 왼쪽 여백에 줄 번호를 표시할 수 있습니다. 줄 번호는 기본적으로 표시되지 않습니다. **텍스트 편집기 모든 언어** 설정(**도구/옵션/텍스트 편집기/모든 언어**)에서 이 옵션을 설정할 수 있습니다. 해당 언어의 설정을 변경하여 개별 프로그래밍 언어의 줄 번호를 표시할 수 있습니다(**도구/옵션/텍스트 편집기/\<language>** ). 줄 번호를 인쇄하려면 **인쇄** 대화 상자에서 줄 번호 포함을 선택해야 합니다.|  
 |변경 내용 추적|왼쪽 여백의 색을 사용하여 파일에서 수행한 변경을 계속 추적할 수 있습니다. 파일이 열린 후 변경되었으나 저장되지 않은 내용은 왼쪽 여백(선택 여백)에 노란색 막대로 나타냅니다. 변경 내용을 저장하면(파일을 닫기 전) 막대가 녹색으로 바뀝니다. 파일을 저장하고 나서 변경을 실행 취소하면 막대가 주황색으로 바뀝니다. 이 기능을 해제 및 설정하려면 **텍스트 편집기** 설정( **도구/옵션/텍스트 편집기** )에서**변경 내용 추적**옵션을 변경합니다.|  
 |코드 및 텍스트 선택|줄 집합이 아니라 텍스트의 사각형 부분을 선택하는 상자 모드 또는 표준 연속 스트림 모드에서 텍스트를 선택할 수 있습니다. 상자 모드에서 선택하려면 Alt 키를 누른 채 마우스를 선택 영역 위로 끌거나 Alt+Shift+\<화살표 키>를 누릅니다. 선택 영역에는 선택 영역의 첫 번째 문자와 마지막 문자로 정의된 사각형 안의 모든 문자가 포함됩니다. 선택 영역으로 입력하거나 붙여넣은 모든 내용이 각 줄의 같은 지점에 삽입됩니다.|  
 |확대/축소|코드 창을 확대하거나 축소하려면 CTRL 키를 누른 채 마우스의 스크롤 휠을 이동하거나 CTRL + SHIFT + .를 눌러 확대하고 CTRL + SHIFT + ,를 눌러 축소합니다. 코드 창의 왼쪽 아래에 있는  확대/축소 상자를 사용하여 특정 확대/축소 백분율을 설정할 수도 있습니다. 도구 창에서는 확대/축소 기능이 작동하지 않습니다.|  
@@ -127,17 +122,17 @@ Visual Studio 편집기에서는 코드를 더 쉽게 작성 및 관리할 수 �
 
  ![앞으로 및 뒤로 탐색 단추](../ide/media/vs2015-nav-buttons.png "VS2015_Nav_buttons")  
 
- 코드 창에서 향상된 스크롤 막대를 사용하여 코드의 조감도를 볼 수도 있습니다. 지도 모드에서는 커서를 스크롤 막대의 위/아래로 이동할 때 코드 미리 보기를 확인할 수 있습니다. 자세한 내용은 [방법: 스크롤 막대를 사용자 지정하여 코드 추적](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)을 참조하세요.  
+ 코드 창에서 향상된 스크롤 막대를 사용하여 코드의 조감도를 볼 수도 있습니다. 맵 모드에서는 있습니다 수 코드 미리 보기 커서를 이동 및 아래로 스크롤 막대에 대 한 자세한 내용은 참조 하십시오 [방법: 스크롤 막대를 사용자 지정 하 여 코드 추적](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)합니다.  
 
  다음 명령은 코드 관련 탐색 방법입니다.  
 
 |||  
 |-|-|  
-|\<줄 번호>로 이동|(**편집/이동** 또는 CTRL + G): 활성 문서에서 특정 줄 번호로 이동합니다.|  
-|다음 탐색|(**편집/탐색** 또는 CTRL + ,): 활성 솔루션에서 기호나 파일을 찾습니다. 이를 통해 쿼리에서 적합한 일치 결과 집합을 선택할 수 있습니다. 카멜 표기법 및 밑줄 문자를 사용하여 기호를 키워드로 구분하는 방식으로 기호에 포함된 키워드를 검색할 수 있습니다.|  
+|\<줄 번호>로 이동|(**편집/이동** 또는 CTRL + G): 활성 문서의 특정 줄 번호로 이동 합니다.|  
+|탐색|(**를 편집/이동** 또는 CTRL +,): 활성 솔루션에서 기호나 파일을 찾습니다. 이를 통해 쿼리에서 적합한 일치 결과 집합을 선택할 수 있습니다. 카멜 표기법 및 밑줄 문자를 사용하여 기호를 키워드로 구분하는 방식으로 기호에 포함된 키워드를 검색할 수 있습니다.|  
 |모든 참조 찾기|(상황에 맞는 메뉴): 솔루션에서 선택한 요소에 대한 참조를 모두 찾습니다.|  
-|정의로 이동|(상황에 맞는 메뉴 또는 F12 키): 선택한 요소의 정의를 찾습니다.|  
-|정의 피킹|(상황에 맞는 메뉴 또는 Alt+F12 키): 선택한 요소의 정의를 찾고 팝업 창에 표시합니다. 자세한 내용은 [방법: 정의 피킹(Peeking)을 사용하여 코드 보기 및 편집(Alt+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)을 참조하세요.|  
+|정의로 이동|(상황에 맞는 메뉴 또는 f12 키): 선택한 요소의 정의 찾습니다.|  
+|정의 피킹|(상황에 맞는 메뉴 또는 alt+f12): 선택한 요소의 정의 찾아서 팝업 창에 표시 합니다. 자세한 내용은 [방법: 코드 보기 및 편집 피킹 (Alt + f12 키)를 사용 하 여](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)입니다.|  
 |다음 메서드, 이전 메서드|(**편집/다음 메서드, 이전 메서드**) Visual Basic 코드 파일에서 이들 명령을 사용하여 삽입 지점을 다른 메서드로 이동합니다.|  
 |참조 강조 표시|소스 코드에서 기호를 클릭하면 해당 기호의 모든 인스턴스가 문서에서 강조 표시됩니다. 강조 표시된 기호에는 선언 및 참조와 **모든 참조 찾기** 에서 반환하는 다양한 기타 기호가 포함될 수 있습니다. 여기에는 클래스, 개체, 변수, 메서드 및 속성의 이름이 포함됩니다. Visual Basic 코드에서 많은 컨트롤 구조체에 대한 키워드도 강조 표시됩니다. 다음 또는 이전 강조 표시된 기호로 이동하려면 CTRL+SHIFT+아래쪽 화살표 또는 CTRL+SHIFT+위쪽 화살표를 누릅니다. **도구/옵션/환경/글꼴 및 색/강조 표시된 참조**에서 강조 표시 색을 변경할 수 있습니다.|  
 |코드 관련 정보 찾기|코드 편집기에서 CodeLens를 사용하면 변경 내용 및 변경한 사용자, 참조, 버그, 작업 항목, 코드 검토, 단위 테스트 상태 같은 특정 코드에 대한 정보를 찾을 수 있습니다. Visual Studio Enterprise를 Team Foundation Server에서 사용할 경우 CodeLens는 화면 표시처럼 작동합니다. [코드 변경 내용 및 기타 기록 찾기](../ide/find-code-changes-and-other-history-with-codelens.md)를 참조하세요.|  
@@ -161,7 +156,7 @@ Visual Studio 편집기에서는 코드를 더 쉽게 작성 및 관리할 수 �
   부분 클래스에서 현재 코드 파일 외부에 정의된 멤버는 회색으로 표시될 수 있습니다.  
 
 ## <a name="find-code-using-navigate-to"></a>탐색을 사용하여 코드 찾기
-"이동" 명령을 visual Studio의 코드 파일, 파일 경로 및 코드 기호에서 지정 된 요소를 신속 하 게 찾을 수 있도록 코드의 포커스가 있는 검색을 수행 합니다. 찾기, 파일에서 찾기 등의 다른 텍스트 검색과 달리 탐색은 파일, 폼, 코드 모듈 등 실제 코드가 있는 영역으로 검색을 제한합니다. 예를 들어 전체 솔루션에서 찾기 또는 파일에서 찾기를 사용하여 ASP.NET 웹 응용 프로그램에서 문자열을 검색하는 경우 코드 설명에 있는 문자열의 인스턴스까지 포함하여 여러 개의 결과가 표시될 수 있습니다. 그러나 탐색을 사용 하 여 표시 될 수 있습니다만 단일 함수 코드 설명에서 문자열의 모든 인스턴스를 무시 합니다.
+Visual Studio의 "탐색" 명령은 코드 파일, 파일 경로 및 코드 기호에서 지정한 요소를 찾기 쉽도록 포커스가 있는 코드 검색을 수행합니다. 찾기, 파일에서 찾기 등의 다른 텍스트 검색과 달리 탐색은 파일, 폼, 코드 모듈 등 실제 코드가 있는 영역으로 검색을 제한합니다. 예를 들어 전체 솔루션에서 찾기 또는 파일에서 찾기를 사용하여 ASP.NET 웹 애플리케이션에서 문자열을 검색하는 경우 코드 설명에 있는 문자열의 인스턴스까지 포함하여 여러 개의 결과가 표시될 수 있습니다. 그러나 탐색을 사용 하 여 표시 될 수 있습니다만 단일 함수 코드 설명에서 문자열의 모든 인스턴스를 무시 합니다.
 
 ### <a name="navigate-code-using-navigate-to"></a>탐색을 사용하여 코드 탐색
 
@@ -176,10 +171,9 @@ Visual Studio 편집기에서는 코드를 더 쉽게 작성 및 관리할 수 �
     입력 시 텍스트 상자 아래의 드롭다운 목록에 결과가 나타납니다.
 1. 요소로 이동하려면 목록에서 선택합니다.
 
-
 ### <a name="filter-your-search"></a>검색 필터링
 
-검색을 코드 기호로만 제한하려면 탐색 쿼리 앞에 "@" 문자를 추가합니다. 예를 들어 `@application`을 검색하는 경우 탐색 시 "application" 단어가 포함된 클래스만 표시됩니다.
+검색을 코드 기호로 제한, 앞으로 탐색 쿼리는 "\@" 문자입니다. 예를 들어 `@application`을 검색하는 경우 탐색 시 "application" 단어가 포함된 클래스만 표시됩니다.
 
 코드에서 캐멀(camel) 대/소문자를 사용하는 경우 코드 요소 이름의 대문자만 입력하여 코드 요소를 더 빠르게 찾을 수 있습니다. 예를 들어 코드에 `ViewSwitcher`라는 구성 요소가 있는 경우 탐색 창에서 이름의 대문자(`"VS"`)만 입력하면 찾을 수 있습니다.
 
@@ -188,53 +182,51 @@ Visual Studio 편집기에서는 코드를 더 쉽게 작성 및 관리할 수 �
 이 기능은 코드에 긴 이름이 있는 경우에 특히 유용합니다.
 
 ## <a name="customize-the-editor"></a>편집기 사용자 지정  
- **설정 가져오기 및 내보내기**: **도구** 메뉴에서 **설정 가져오기 및 내보내기 마법사** 를 사용하여 다른 개발자와 설정을 공유하거나, 설정이 표준을 준수하도록 하거나, Visual Studio 기본 설정으로 돌아갈 수 있습니다. 일반 설정 또는 언어와 프로젝트 관련 설정을 변경할 수 있습니다.  
+ **설정 가져오기 및 내보내기**: 다른 개발자와 설정을 공유을 사용 하 여 Visual Studio 기본 설정으로 복원 하거나, 표준을 준수 하도록 설정이 합니다 **설정 가져오기 및 내보내기 마법사** 에 **도구** 메뉴. 일반 설정 또는 언어와 프로젝트 관련 설정을 변경할 수 있습니다.  
 
- **키보드 매핑**: 도구/옵션/환경/키보드 설정에서 새 바로 가기 키를 정의하거나 기존 바로 가기 키를 다시 정의할 수 있습니다. 바로 가기 키에 대한 자세한 내용은 [기본 바로 가기 키](../ide/default-keyboard-shortcuts-in-visual-studio.md)를 참조하세요.  
+ **키보드 매핑**: 기존 도구/옵션/환경/키보드 설정에서 다시 정의 하거나 새 바로 가기 키를 정의할 수 있습니다. 바로 가기 키에 대한 자세한 내용은 [기본 바로 가기 키](../ide/default-keyboard-shortcuts-in-visual-studio.md)를 참조하세요.  
 
  언어별 편집기 옵션에 대한 자세한 내용은 다음을 참조하세요.  
 
--   [Visual Basic 설정](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
+- [Visual Basic 설정](https://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
 
--   [C#용 Visual Studio 개발 환경 사용](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
+- [C#용 Visual Studio 개발 환경 사용](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
 
--   [옵션, 텍스트 편집기, JavaScript, 서식](../ide/reference/options-text-editor-javascript-formatting.md)  
+- [옵션, 텍스트 편집기, JavaScript, 서식](../ide/reference/options-text-editor-javascript-formatting.md)  
 
 ## <a name="in-this-section"></a>단원 내용  
 
--   [텍스트 찾기 및 바꾸기](../ide/finding-and-replacing-text.md)  
+- [텍스트 찾기 및 바꾸기](../ide/finding-and-replacing-text.md)  
 
--   [인코딩 및 줄 바꿈](../ide/encodings-and-line-breaks.md)  
+- [인코딩 및 줄 바꿈](../ide/encodings-and-line-breaks.md)  
 
--   [개요](../ide/outlining.md)  
+- [개요](../ide/outlining.md)  
 
--   [리팩터링](../ide/refactoring-in-visual-studio.md)  
+- [리팩터링](../ide/refactoring-in-visual-studio.md)  
 
--   [생산성 팁](../ide/productivity-tips-for-visual-studio.md)  
+- [생산성 팁](../ide/productivity-tips-for-visual-studio.md)  
 
--   [IntelliSense 사용](../ide/using-intellisense.md)  
+- [IntelliSense 사용](../ide/using-intellisense.md)  
 
--   [편집기 사용자 지정](../ide/customizing-the-editor.md)  
+- [편집기 사용자 지정](../ide/customizing-the-editor.md)  
 
--   [방법: 스크롤 막대를 사용자 지정하여 코드 추적](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
+- [방법: 스크롤 막대를 사용자 지정하여 코드 추적](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
 
--   [방법: 정의 피킹(Peeking)을 사용하여 코드 보기 및 편집(Alt+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
+- [방법: 정의 피킹(Peeking)을 사용하여 코드 보기 및 편집(Alt+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
 
--   [전구를 사용하여 빠른 작업 수행](../ide/perform-quick-actions-with-light-bulbs.md)  
+- [전구를 사용하여 빠른 작업 수행](../ide/perform-quick-actions-with-light-bulbs.md)  
 
--   [코드 조각](../ide/code-snippets.md)  
+- [코드 조각](../ide/code-snippets.md)  
 
--   [도구 상자 사용](../ide/using-the-toolbox.md)  
+- [도구 상자 사용](../ide/using-the-toolbox.md)  
 
--   [코드 구조 보기](../ide/viewing-the-structure-of-code.md)  
+- [코드 구조 보기](../ide/viewing-the-structure-of-code.md)  
 
--   [코드에 책갈피 설정](../ide/setting-bookmarks-in-code.md)  
+- [코드에 책갈피 설정](../ide/setting-bookmarks-in-code.md)  
 
--   [작업 목록 사용](../ide/using-the-task-list.md)  
+- [작업 목록 사용](../ide/using-the-task-list.md)  
 
--   [코드 변경 내용 및 기타 기록 찾기](../ide/find-code-changes-and-other-history-with-codelens.md)  
+- [코드 변경 내용 및 기타 기록 찾기](../ide/find-code-changes-and-other-history-with-codelens.md)  
 
 ## <a name="see-also"></a>참고 항목  
  [Visual Studio IDE](../ide/visual-studio-ide.md)
-
-

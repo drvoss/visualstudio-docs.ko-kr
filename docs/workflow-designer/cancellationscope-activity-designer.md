@@ -2,21 +2,20 @@
 title: 워크플로 디자이너-CancellationScope 활동 디자이너
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.CancellationScope.UI
 ms.assetid: 2c85d663-b219-4142-9866-7693ffd46379
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 124b4d5d1b8e35611d990fd6c169a880a4e13a5c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 43a818be208c7e07ef74a8f35923f3042bb8fad5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009792"
 ---
 # <a name="cancellationscope-activity-designer"></a>CancellationScope 활동 디자이너
 
@@ -36,13 +35,13 @@ ms.locfileid: "53872254"
 
 다음 표에서는 <xref:System.Activities.Statements.CancellationScope> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. <xref:System.Activities.Activity.DisplayName%2A> 속성 속성 표에서 편집할 수 있지만 다른 속성을 워크플로 디자이너 화면에서 편집 해야 합니다.
 
-|속성 이름|필수|용도|
+|속성 이름|필수|사용|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.CancellationScope> 활동의 선택적 이름입니다. 기본값은 CancellationScope입니다. <xref:System.Activities.Activity.DisplayName%2A> 값은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
 |<xref:System.Activities.Statements.CancellationScope.Body%2A>|True|취소 논리가 제공되는 활동을 지정합니다. 추가할 합니다 <xref:System.Activities.Statements.CancellationScope.Body%2A> 활동에서 활동 **도구 상자** 에 **본문** 상자에 **CancellationScope** 활동 디자이너입니다. 여기에 작업 놓기 "힌트 텍스트를 추가 합니다.|
 |<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|True|취소가 없을 경우 실행 되는 작업을 지정 합니다. 추가할 합니다 <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> 활동에서 활동 **도구 상자** 에 **CancellationHandler** 상자에 **CancellationScope** 활동 디자이너입니다. 여기에 작업 놓기 "힌트 텍스트를 추가 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [트랜잭션](../workflow-designer/transaction-activity-designers.md)
 - [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)

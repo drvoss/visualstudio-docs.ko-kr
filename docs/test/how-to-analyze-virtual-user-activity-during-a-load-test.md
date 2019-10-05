@@ -7,15 +7,13 @@ helpviewer_keywords:
 ms.assetid: 8bda19b3-91c1-4daf-b6c7-09108bddadff
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 0cac452a7fa4799c986df0f182643ed1b94afbe6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: dadc35d09ad70986f728104396502f13a06c0995
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979421"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>방법: 가상 사용자 작업 차트를 사용하여 부하 테스트 중에 가상 사용자가 수행하는 작업 분석
 
@@ -27,9 +25,9 @@ ms.locfileid: "53059524"
 
 ## <a name="to-view-the-virtual-user-activity-chart-in-your-load-test-results"></a>부하 테스트 결과에서 가상 사용자 동작 차트를 보려면
 
-1.  가상 사용자 데이터를 보려면 부하 테스트와 연결된 **타이밍 정보 저장소** 속성에 대한 **모든 개인 정보** 설정을 구성해야 합니다. 그런 다음 부하 테스트를 실행합니다.
+1. 가상 사용자 데이터를 보려면 부하 테스트와 연결된 **타이밍 정보 스토리지** 속성에 대한 **모든 개인 정보** 설정을 구성해야 합니다. 그런 다음 부하 테스트를 실행합니다.
 
-2.  부하 테스트를 실행하면 테스트 결과 요약 페이지가 표시됩니다. 도구 모음에서 **사용자 정보** 단추를 선택합니다.
+2. 부하 테스트를 실행하면 테스트 결과 요약 페이지가 표시됩니다. 도구 모음에서 **사용자 정보** 단추를 선택합니다.
 
      또는
 
@@ -68,7 +66,7 @@ ms.locfileid: "53059524"
    - **테스트 로그**(테스트 로그 링크)
 
      > [!NOTE]
-     > 응용 프로그램 디버깅을 돕기 위해 **테스트 로그** 링크를 선택하면 로그에 연결된 웹 테스트 결과 또는 단위 테스트 결과가 열립니다.
+     > 애플리케이션 디버깅을 돕기 위해 **테스트 로그** 링크를 선택하면 로그에 연결된 웹 테스트 결과 또는 단위 테스트 결과가 열립니다.
 
      **가상 사용자 동작 차트**에 제공되는 필터링 및 강조 표시 작업을 사용할 수 있습니다.
 

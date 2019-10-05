@@ -6,11 +6,11 @@ ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
 ms.openlocfilehash: cbf0d99bd87b31484b6c74e9a6d67ac88dc5ba99
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62984160"
 ---
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>Mac용 Visual Studio 확장 연습
 
@@ -106,7 +106,7 @@ ms.locfileid: "51294307"
     }
     ```
 
-12. 이 시점에는 작동하는 확장 패키지가 있어야 합니다. 작업 내용을 저장하고 응용 프로그램을 실행하여 테스트할 수 있습니다. IDE에서 새 확장 패키지가 설치된 Mac용 Visual Studio의 새 인스턴스를 시작합니다. **편집 메뉴**로 이동하면 아래 스크린샷과 같이 Mac용 Visual Studio에 **날짜 삽입**이라는 새 옵션이 있습니다.
+12. 이 시점에는 작동하는 확장 패키지가 있어야 합니다. 작업 내용을 저장하고 애플리케이션을 실행하여 테스트할 수 있습니다. IDE에서 새 확장 패키지가 설치된 Mac용 Visual Studio의 새 인스턴스를 시작합니다. **편집 메뉴**로 이동하면 아래 스크린샷과 같이 Mac용 Visual Studio에 **날짜 삽입**이라는 새 옵션이 있습니다.
 
     ![날짜 삽입 명령](media/extending-visual-studio-mac-addin11.png)
 

@@ -1,14 +1,9 @@
 ---
-title: '연습: 규칙 집합을 구성 하 고 사용자 지정을 사용 하 여 | Microsoft Docs'
-ms.custom: ''
+title: '연습: 규칙 집합 구성 및 사용자 지정을 사용 하 여 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, walkthroughs
 - code analysis, rule sets
@@ -17,35 +12,35 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5976ee0c0fbfc4befe97f2ab25c46744a8267134
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: fa3a91df779094e3e11722dfc7bfc03c58bcea7e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906054"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383415"
 ---
-# <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>연습: 사용자 지정 규칙 집합 구성 및 사용
+# <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>연습: 사용자 지정 규칙 세트 구성 및 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 연습에서는 사용자 지정을 사용 하도록 구성 된 코드 분석 도구를 사용 하는 방법을 보여 줍니다 *규칙 집합* 클래스 라이브러리에서. 대체 규칙 집합을 특정 요구 사항에 줄 바꿈하지 않는 방식으로 해결할 수 있는 문제에 대 한 레거시 코드 검사와 같은 솔루션에 지정 하거나 선택할 수 있습니다 하는 프로젝트 형식에 연결 하는 규칙 집합을 선택할 수 있습니다. 두 경우 모두 규칙 집합 또한 사용자 지정할 수 있습니다 제대로 프로젝트 요구 사항에 맞게 조정 합니다.  
   
  이 연습에서는 이러한 프로세스를 단계별로 진행 합니다.  
   
--   클래스 라이브러리를 만듭니다.  
+- 클래스 라이브러리를 만듭니다.  
   
--   선택 된 **Microsoft 기본 디자인 지침 규칙** 코드 분석 규칙 집합입니다.  
+- 선택 된 **Microsoft 기본 디자인 지침 규칙** 코드 분석 규칙 집합입니다.  
   
--   클래스에 사용자 고유의 코드를 추가 합니다.  
+- 클래스에 사용자 고유의 코드를 추가 합니다.  
   
--   코드 분석을 실행 합니다.  
+- 코드 분석을 실행 합니다.  
   
--   규칙 집합을 사용자 지정 합니다.  
+- 규칙 집합을 사용자 지정 합니다.  
   
--   코드 분석을 실행 하 고 규칙 사용자 지정 동작을 설정 하는 방법을 참조 하세요.  
+- 코드 분석을 실행 하 고 규칙 사용자 지정 동작을 설정 하는 방법을 참조 하세요.  
   
 ## <a name="prerequisites"></a>전제 조건  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]또는 [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]또는 [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 ## <a name="using-rule-sets-with-code-analysis"></a>에 코드 분석 규칙 집합 사용  
  먼저 간단한 클래스 라이브러리를 만듭니다.  
@@ -75,9 +70,9 @@ ms.locfileid: "49906054"
     파일 메뉴에서 클릭 **선택한 항목 저장** 선택한 규칙 집합에 대 한 정보 및 해당 설정을 사용 하 여 프로젝트 파일을 업데이트 합니다.  
   
    > [!TIP]
-   >  실제 상황에서는 코드 분석을 사용 하 여 대상으로 하려는 하는 문제를 우선 순위 지정에 대 한 사용 하는 것이 좋습니다는 시작 하는 **최소 권장 규칙** 규칙 집합에서 원하는 문제를 해결 하 고 다음 증분 방식으로 추가 규칙 또는 규칙을 찾고 추가 문제 해결 설정 합니다.  
+   > 실제 상황에서는 코드 분석을 사용 하 여 대상으로 하려는 하는 문제를 우선 순위 지정에 대 한 사용 하는 것이 좋습니다는 시작 하는 **최소 권장 규칙** 규칙 집합에서 원하는 문제를 해결 하 고 다음 증분 방식으로 추가 규칙 또는 규칙을 찾고 추가 문제 해결 설정 합니다.  
   
-   다음으로, 일부 코드를 CA1704 위반을 보여 주기 위해 사용 되는 클래스 라이브러리에 추가 "식별자는 정확한 철자 를" 코드 분석 규칙. 자세한 내용은 [CA1704: 식별자에는 정확한 철자를 사용 해야](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)합니다.  
+   다음으로, 일부 코드를 CA1704 위반을 보여 주기 위해 사용 되는 클래스 라이브러리에 추가 "식별자는 정확한 철자 를" 코드 분석 규칙. 자세한 내용은 참조 하세요. [CA1704: 식별자에는 정확한 철자를 사용 해야](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)합니다.  
   
 #### <a name="add-your-own-code"></a>사용자 고유의 코드를 추가 합니다.  
   
@@ -115,7 +110,7 @@ ms.locfileid: "49906054"
   
 2. 오류 목록 창에서 클릭 **경고** 을 클릭 한 다음는 **설명** 경고를 정렬 하려면 열 머리글 사전순으로 합니다.  
   
-    실제 응용 프로그램에서는 시점에서 수정할 필요가 규칙 위반을 수정 또는 필요에 따라 해제 하거나를 수정할 필요가 되지 않았음을 확인 하는 경우 규칙을 표시 하지 않습니다. 자세한 내용은 [표시 하지 않으려면 경고 사용 하 여 SuppressMessage 특성](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md)합니다.  
+    실제 응용 프로그램에서는 시점에서 수정할 필요가 규칙 위반을 수정 또는 필요에 따라 해제 하거나를 수정할 필요가 되지 않았음을 확인 하는 경우 규칙을 표시 하지 않습니다. 자세한 내용은 [SuppressMessage 특성을 사용하여 경고 표시 안 함](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md)을 참조하세요.  
   
 3. CA1704 경고를 확인할 수 있습니다. 이 규칙 위반 나타내는 고려해 야 하 는"매개 변수 보다 의미 있는 이름을 제공 합니다." 코드에서 문제를 해결 하거나 다음 절차에 설명 된 대로 규칙을 비활성화할 수 있습니다.  
   
@@ -153,13 +148,10 @@ ms.locfileid: "49906054"
   
 #### <a name="run-code-analysis-on-the-rulesetsample-project-for-the-second-time"></a>두 번째로 RuleSetSample 프로젝트에서 코드 분석 실행  
   
-1.  에 **분석** 메뉴에서 클릭 **RuleSetSample에서 코드 분석 실행**합니다.  
+1. 에 **분석** 메뉴에서 클릭 **RuleSetSample에서 코드 분석 실행**합니다.  
   
-2.  오류 목록 창에는 알 수 있듯이 클릭 하면 **경고**, 더 이상 "식별자 철자가" 규칙에 대 한 경고 CA1704 위반을 볼 수 없습니다.  
+2. 오류 목록 창에는 알 수 있듯이 클릭 하면 **경고**, 더 이상 "식별자 철자가" 규칙에 대 한 경고 CA1704 위반을 볼 수 없습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [방법: 관리 코드 프로젝트에 대 한 코드 분석 구성](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
  [코드 분석 규칙 집합 참조](../code-quality/code-analysis-rule-set-reference.md)
-
-
-

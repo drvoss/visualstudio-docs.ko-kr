@@ -7,29 +7,31 @@ helpviewer_keywords:
 - performance [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 f1_keywords:
 - vs.performancecenter
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: f5fe9324360a01700024e14e6c70755d61aa3e60
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c34755fdffb9dd2084f9999aafb01bd6b9fdb4f0
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065777"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180131"
 ---
 # <a name="optimize-visual-studio-performance"></a>Visual Studio 성능 최적화
 
 이 문서에서는 Visual Studio 느리게 실행되는 경우 몇 가지 시도해볼 제안을 제공합니다. 성능 향상 방법에 대한 더 많은 제안은 [Visual Studio 성능 팁 및 요령](../ide/visual-studio-performance-tips-and-tricks.md)을 참조할 수 있습니다.
 
-## <a name="upgrade-to-visual-studio-2017-version-156-or-later"></a>Visual Studio 2017 버전 15.6 이상으로 업그레이드
+## <a name="upgrade-visual-studio"></a>Visual Studio 업그레이드
 
-현재 Visual Studio 2015를 사용하는 경우 무료로 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)을 다운로드하여 향상된 성능을 확인해보십시오. 솔루션은 다른 영역에서도 성능 향상으로 Visual Studio 2017에서 2-3배 더 빠르게 로드합니다. Visual Studio 2017은 Visual Studio 2015와 호환가능하므로 2017을 사용해도 어떤 손실도 없습니다.
+현재 Visual Studio 2015를 사용하는 경우 무료로 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 또는 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)를 다운로드하여 향상된 성능을 확인해 보세요. 솔루션은 Visual Studio 2015에 비해 2-3배 더 빠르게 로드되며 다른 영역에서도 성능이 향상됩니다. Visual Studio 2017 및 Visual Studio 2019는 Visual Studio 2015와 호환 가능하므로 사용해도 아무런 손실이 없습니다.
 
-현재 Visual Studio 2017을 사용 중인 경우 버전 15.6 이상을 실행하고 있는지 확인합니다. 데이터에 따르면 버전 15.6에서 솔루션이 최대 2-3배 더 빠르게 로드됩니다. [여기서](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 다운로드하세요.
+::: moniker range="vs-2017"
+
+이미 Visual Studio 2017을 사용 중인 경우 버전 15.6 이상을 실행하고 있는지 확인합니다. 데이터에 따르면 버전 15.6에서 솔루션이 최대 2-3배 더 빠르게 로드됩니다. [여기서](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 다운로드하세요.
+
+::: moniker-end
 
 ## <a name="extensions-and-tool-windows"></a>확장명 및 도구 창
 
@@ -47,9 +49,9 @@ ms.locfileid: "53065777"
 
 ## <a name="help-us-improve"></a>개선할 수 있도록 도와주세요
 
-여러분의 의견이 개선에 도움이 됩니다. **문제 보고** 기능을 사용하여 추적을 "레코드"하고 당사에 보내십시오. **빠른 실행** 옆에 있는 피드백 아이콘을 선택하거나 메뉴 모음에서 **도움말** > **의견 보내기** > **문제 보고**를 선택합니다. 자세한 내용은 [Visual Studio 2017의 문제를 보고하는 방법](../ide/how-to-report-a-problem-with-visual-studio-2017.md)을 참조하세요.
+여러분의 의견이 개선에 도움이 됩니다. **문제 보고** 기능을 사용하여 추적을 "레코드"하고 당사에 보내십시오. **빠른 실행** 옆에 있는 피드백 아이콘을 선택하거나 메뉴 모음에서 **도움말** > **의견 보내기** > **문제 보고**를 선택합니다. 자세한 내용은 [Visual Studio의 문제를 보고하는 방법](../ide/how-to-report-a-problem-with-visual-studio.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
 - [성능 팁 및 요령](../ide/visual-studio-performance-tips-and-tricks.md)
-- [Visual Studio 블로그 - Visual Studio 2017 버전 15.6으로 더 빠르게 솔루션 로드](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)
+- [Visual Studio 블로그 - Visual Studio 2017 버전 15.6으로 더 빠르게 솔루션 로드](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

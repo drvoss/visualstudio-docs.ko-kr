@@ -1,25 +1,23 @@
 ---
 title: 옵션, 텍스트 편집기, XML, 서식 지정
 ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XML.Formatting
 ms.assetid: 203e60b2-7b80-4ff4-9fa1-aa9f4374377b
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 652d9ff3b2178089b4ef35838a4181408aef7f09
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+manager: jillfra
+ms.openlocfilehash: e20b2f7ebe351aa050ea66468fb33aba8e4a31bc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969269"
 ---
 # <a name="options-text-editor-xml-formatting"></a>옵션, 텍스트 편집기, XML, 서식 지정
 
-**서식 지정** 속성 페이지를 사용하여 XML 문서에서 요소와 특성의 형식 지정 방법을 지정할 수 있습니다. **옵션** 대화 상자를 열려면 **도구** 메뉴를 클릭한 후 **옵션**을 클릭합니다. **서식 지정** 속성 페이지에 액세스하려면 **텍스트 편집기** > **XML** > **서식 지정** 노드를 확장합니다.
+**서식 지정** 옵션 페이지를 사용하여 XML 문서에서 요소와 특성의 형식 지정 방법을 지정할 수 있습니다. XML 서식 지정 옵션에 액세스하려면 **도구** > **옵션** > **텍스트 편집기** > **XML**을 선택한 다음, **서식 지정**을 선택합니다.
 
 ## <a name="attributes"></a>특성
 
@@ -32,7 +30,7 @@ ms.locfileid: "52388301"
 
 **별도의 줄에 특성 맞춤**
 
-첫 번째 특성의 들여쓰기와 일치하도록 두 번째 특성 및 그 이후 특성을 세로로 정렬합니다. 다음 XML 텍스트는 특성 정렬 방식의 예제입니다.
+첫 번째 특성의 들여쓰기와 일치하도록 두 번째 특성 및 그 이후 특성을 세로로 정렬합니다. 다음 XML 텍스트는 특성을 정렬하는 방법의 예제입니다.
 
 ```xml
 <item id = "123-A"
@@ -68,5 +66,5 @@ ms.locfileid: "52388301"
 
 ## <a name="see-also"></a>참고 항목
 
-- [방법: 방법: XML 문서 만들기(Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
-- [코드 생성](../code-generation-in-visual-studio.md)
+- [XML 옵션 - 기타](options-text-editor-xml-miscellaneous.md)
+- [Visual Studio의 XML 도구](../../xml-tools/xml-tools-in-visual-studio.md)

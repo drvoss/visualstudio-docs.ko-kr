@@ -1,64 +1,46 @@
 ---
-title: Visual Studio Test Controller 2017 워크로드 및 구성 요소 ID
+title: Visual Studio Test Controller 워크로드 및 구성 요소 ID
 titleSuffix: ''
 description: Visual Studio 작업 및 구성 요소 ID를 사용하여 자동화된 테스트를 여러 컴퓨터에 배포합니다.
 keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: douge
-ms.date: 11/13/2018
+manager: jillfra
+ms.date: 05/22/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.service: ''
-ms.technology: vs-acquisition
-ms.prod: visual-studio-dev15
 ms.assetid: fbbda9c8-d2c6-474d-b52d-a95227d52fe7
-ms.workload:
-- multiple
-ms.openlocfilehash: 48d95724c64d1335067139a8e036febdef137d52
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 0637d76ebf2201f36f6d967c023ea29fe5e852da
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048449"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037380"
 ---
-# <a name="visual-studio-test-controller-2017-component-directory"></a>Visual Studio Test Controller 2017 구성 요소 디렉터리
+# <a name="visual-studio-test-controller-component-directory"></a>Visual Studio Test Controller 구성 요소 디렉터리
 
-이 페이지의 표에는 명령줄을 사용하여 Visual Studio를 설치하는 데 사용할 수 있는 ID 또는 VSIX 매니페스트에서 종속성으로 지정할 수 있는 ID가 나열되어 있습니다. Visual Studio에 대한 업데이트를 릴리스할 때 추가 구성 요소가 추가될 것입니다.
+[!INCLUDE[workloads-components-universal-header_md](includes/workloads-components-universal-header_md.md)]
 
-또한 이 페이지에 대해 다음 사항에 유의하세요.
+::: moniker range="vs-2017"
 
-* 각 작업에는 고유한 섹션 및 작업 ID와 해당 작업에 사용할 수 있는 구성 요소 표가 있습니다.
-* 기본적으로 **필수** 구성 요소는 작업을 설치할 때 설치됩니다.
-* 원하는 경우 **권장** 및 **선택적** 구성 요소를 설치할 수도 있습니다.
-* 작업과 관련이 없는 추가 구성 요소를 나열하는 섹션도 추가했습니다.
+[!INCLUDE[workloads-components-header-2017_md](includes/workloads-components-header-2017_md.md)]
 
-VSIX 매니페스트에 종속성을 설정하는 경우 구성 요소 ID만 지정해야 합니다. 이 페이지의 표를 사용하여 최소 구성 요소 종속성을 확인합니다. 일부 시나리오에서는 작업에서 하나의 구성 요소만 지정한다고 의미할 수 있습니다. 다른 시나리오에서는 단일 작업에서 여러 구성 요소를 지정하거나 여러 작업에서 여러 구성 요소를 지정한다고 의미할 수 있습니다. 자세한 내용은 [방법: 확장성 프로젝트를 Visual Studio 2017로 마이그레이션](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) 페이지를 참조하세요.
+[!include[Visual Studio Test Controller 2017](includes/vs-2017/workload-component-id-vs-test-controller.md)]
 
-이러한 ID를 사용하는 방법에 대한 자세한 내용은 [명령줄 매개 변수를 사용하여 Visual Studio 2017 설치](use-command-line-parameters-to-install-visual-studio.md) 페이지를 참조하세요. 다른 제품의 작업 및 구성 요소 ID 목록은 [Visual Studio 2017 작업 및 구성 요소 ID](workload-and-component-ids.md) 페이지를 참조하세요.
+::: moniker-end
 
-## <a name="test-controller"></a>Test Controller
+::: moniker range=">= vs-2019"
 
-**ID:** Microsoft.VisualStudio.Workload.TestController
+[!INCLUDE[workloads-components-header-2019_md](includes/workloads-components-header-2019_md.md)]
 
-**설명:** 자동화된 테스트를 여러 컴퓨터에 배포
+[!include[Visual Studio Test Controller 2019](includes/vs-2019/workload-component-id-vs-test-controller.md)]
 
-### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
-
-구성 요소 ID | name | 버전 | 종속성 유형
---- | --- | --- | ---
-Microsoft.VisualStudio.ComponentGroup.TestTools.TestController | Test Controller 핵심 기능 | 15.6.27309.0 | 필수
-
-## <a name="unaffiliated-components"></a>독립적 구성 요소
-
-이러한 구성 요소는 작업에 포함되지 않지만 개별 구성 요소로 선택할 수 있습니다.
-
-구성 요소 ID | name | 버전
---- | --- | ---
-N/A | N/A | N/A
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

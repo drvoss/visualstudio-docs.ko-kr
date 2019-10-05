@@ -7,17 +7,15 @@ helpviewer_keywords:
 ms.assetid: 40b51f5a-d52c-44ac-8f84-037a0917af33
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d8671c46cf2e88ab5d5797dd7a009ff29b953c4e
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+ms.openlocfilehash: 2a86d9511e470c9a810ff58e80e4cae1f9a0cb11
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567242"
 ---
 # <a name="database-projects-and-data-tier-applications"></a>데이터베이스 프로젝트 및 데이터 계층 응용 프로그램
 
@@ -29,9 +27,9 @@ ms.locfileid: "52281734"
 
 | 상위 수준 작업 | 지원 내용 |
 | - | - |
-| **데이터 계층 응용 프로그램의 개발을 시작할:** SQL Server 2008을 사용 하 여 데이터 계층 응용 프로그램 (DAC)을 개념이 도입 되었습니다. DAC는 SQL Server 데이터베이스 및 클라이언트-서버 또는 3 계층 응용 프로그램에서 사용 되는 인스턴스 개체 지원에 대 한 정의 포함 합니다. DAC는 테이블 및 뷰, 로그인 등 인스턴스 엔터티가 같은 데이터베이스 개체를 포함합니다. DAC 프로젝트를 만들고 DAC 패키지 파일을 빌드, SQL Server 데이터베이스 엔진의 인스턴스에 배포에 대 한 데이터베이스 관리자는 DAC 패키지 파일 보내기를 Visual Studio를 사용할 수 있습니다. | - [데이터 계층 응용 프로그램](/sql/relational-databases/data-tier-applications/data-tier-applications)<br />- [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms) |
-| **반복 데이터베이스 개발을 수행 합니다.** 개발자 프로젝트의 부분을 확인 하는 격리 된 개발 환경에서 업데이트 합니다. 이러한 유형의 환경을 사용 하 여 팀의 다른 멤버에 영향을 주지 않고 변경 내용을 테스트할 수 있습니다. 변경 내용을 완료 되 면 다시 버전 제어, 다른 팀 멤버 수에 변경 내용을 가져오는 및 빌드 및 테스트 서버에 배포 하는 위치에 파일을 확인 합니다. | - [프로젝트 기반 오프 라인 데이터베이스 개발 (SQL Server Data Tools)](/sql/ssdt/project-oriented-offline-database-development)<br />- [TRANSACT-SQL 디버거 (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |
-| **프로토타입 생성, 확인 테스트 결과 및 수정 하 고 데이터베이스 스크립트 및 개체:** TRANSACT-SQL 편집기를 사용 하 여 이러한 일반적인 작업 중 하나를 수행할 수 있습니다. | - [쿼리 및 텍스트 편집기 (SQL Server Management Studio)](/sql/ssms/scripting/query-and-text-editors-sql-server-management-studio) |
+| **데이터 계층 응용 프로그램 개발을 시작 합니다.** SQL Server 2008을 사용 하 여 데이터 계층 응용 프로그램 (DAC)을 개념이 도입 되었습니다. DAC는 SQL Server 데이터베이스 및 클라이언트-서버 또는 3 계층 응용 프로그램에서 사용 되는 인스턴스 개체 지원에 대 한 정의 포함 합니다. DAC는 테이블 및 뷰, 로그인 등 인스턴스 엔터티가 같은 데이터베이스 개체를 포함합니다. DAC 프로젝트를 만들고 DAC 패키지 파일을 빌드, SQL Server 데이터베이스 엔진의 인스턴스에 배포에 대 한 데이터베이스 관리자는 DAC 패키지 파일 보내기를 Visual Studio를 사용할 수 있습니다. | - [데이터 계층 애플리케이션](/sql/relational-databases/data-tier-applications/data-tier-applications)<br />- [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms) |
+| **반복 데이터베이스 개발을 수행 합니다.** 개발자는 프로젝트의 부분을 확인 하 고 격리 된 개발 환경에서 업데이트할 수 있습니다. 이러한 유형의 환경을 사용 하 여 팀의 다른 멤버에 영향을 주지 않고 변경 내용을 테스트할 수 있습니다. 변경 내용을 완료 되 면 다시 버전 제어, 다른 팀 멤버 수에 변경 내용을 가져오는 및 빌드 및 테스트 서버에 배포 하는 위치에 파일을 확인 합니다. | - [프로젝트 기반 오프 라인 데이터베이스 개발 (SQL Server Data Tools)](/sql/ssdt/project-oriented-offline-database-development)<br />- [TRANSACT-SQL 디버거 (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |
+| **프로토타입 만들기, 테스트 결과 및 수정 하 고 데이터베이스 스크립트 및 개체를 확인 합니다.** 이러한 일반적인 작업 중 하나를 수행 하 여 TRANSACT-SQL 편집기를 사용할 수 있습니다. | - [쿼리 및 텍스트 편집기 (SQL Server Management Studio)](/sql/ssms/scripting/query-and-text-editors-sql-server-management-studio) |
 
 ## <a name="see-also"></a>참고자료
 

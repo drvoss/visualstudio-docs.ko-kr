@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Visual Studio, extending tools
 - extensibility [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, extending tools
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 01a595536b85bac6948cee607af2e0897a7be1c7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7d70d9b5bac260dc0731d06ebb11780114f0edf5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967424"
 ---
 # <a name="extend-the-sharepoint-tools-in-visual-studio"></a>Visual Studio에서 SharePoint 도구 확장
   Visual Studio에서 SharePoint 도구에는 많은 응용 프로그램 개발 시나리오의 요구 사항을 충족 합니다. 그러나 사용자 또는 다른 개발자가 필요로 하는 기능 제공 하지 않는 경우를 발견할 수 있습니다. 이러한 경우에는 필요한 기능을 만들 수 있는 SharePoint 도구를 확장할 수 있습니다.
@@ -48,7 +48,7 @@ ms.locfileid: "53890984"
 
  Visual Studio SDK를 설치 하려면 [Visual Studio SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)합니다. Visual Studio 확장에 대 한 자세한 내용은 참조 하세요. [Visual Studio 확장 개발 시작](../extensibility/starting-to-develop-visual-studio-extensions.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [SharePoint의 프로그래밍 모델 개요 도구 확장](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
 - [SharePoint 프로젝트 시스템 확장](../sharepoint/extending-the-sharepoint-project-system.md)

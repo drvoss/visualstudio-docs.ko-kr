@@ -1,14 +1,9 @@
 ---
 title: 코드 조각 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code snippets [Visual Studio], functions
 - snippets [Visual Studio], functions
@@ -17,18 +12,18 @@ ms.assetid: c0a2bf21-8fa5-4457-9281-f599beb53e7d
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3874b162719deb02813ceb7eae09b373e208f458
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5a7a7522d0c3ddab224e19150f47120b92b2dd32
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270883"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701533"
 ---
 # <a name="code-snippet-functions"></a>코드 조각 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-세 가지 함수를 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 코드 조각에 사용할 수 있습니다. 함수는 코드 조각의 [Function](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df) 요소에 지정됩니다. 코드 조각을 만드는 방법에 대한 자세한 내용은 [코드 조각](../ide/code-snippets.md)을 참조하세요.  
+세 가지 함수를 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 코드 조각에 사용할 수 있습니다. 함수는 코드 조각의 [Function](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) 요소에 지정됩니다. 코드 조각을 만드는 방법에 대한 자세한 내용은 [코드 조각](../ide/code-snippets.md)을 참조하세요.  
   
 ## <a name="functions"></a>함수  
  다음 표에서는 코드 조각의 `Function` 요소에 사용할 수 있는 함수를 설명합니다.  
@@ -159,8 +154,5 @@ ms.locfileid: "49270883"
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [Function 요소(Intellisense 코드 조각)](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
+ [Function 요소(Intellisense 코드 조각)](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
  [코드 조각 스키마 참조](../ide/code-snippets-schema-reference.md)
-
-
-

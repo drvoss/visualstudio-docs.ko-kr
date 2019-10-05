@@ -1,8 +1,8 @@
 ---
-title: Cloud services 디버깅 Azure 옵션 | Microsoft Docs
-description: Azure cloud services 디버깅
+title: Azure Cloud Services 디버깅 옵션 | Microsoft Docs
+description: Azure Cloud Services 디버깅
 author: mikejo5000
-manager: douge
+manager: jillfra
 ms.assetid: 80755da7-8350-4f5c-97ce-2962beabb36d
 ms.topic: conceptual
 ms.workload: azure-vs
@@ -10,24 +10,24 @@ ms.date: 03/18/2017
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.openlocfilehash: bd2608371871b7adc925fc11927fe061b00a1ec6
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 3b489b97551e5b5522cb58868b34dee4d9e5fb7b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51002883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963652"
 ---
-# <a name="learn-the-various-ways-to-debug-an-azure-cloud-service"></a>Azure 클라우드 서비스를 디버그하는 다양한 방법 알아보기
-이 문서에서는 Azure 클라우드 서비스를 디버그 하는 다양 한 방법에 대 한 링크를 제공 합니다. 
+# <a name="learn-the-various-ways-to-debug-an-azure-cloud-service"></a>Azure 클라우드 서비스를 디버그하는 다양한 방법을 알아봅니다.
+이 문서에서는 Azure 클라우드 서비스를 디버그하는 다양한 방법에 대한 링크를 제공합니다. 
 
 ## <a name="debugging-an-azure-cloud-service-in-visual-studio"></a>Visual Studio에서 Azure 클라우드 서비스 디버깅
-시간을 절약할 수 및 Azure를 사용 하 여 비용 계산 에뮬레이터는 로컬 컴퓨터에서 클라우드 서비스를 디버그 합니다. 배포 하기 전에 로컬로 서비스를 디버깅, 계산 시간에 대 한 비용을 지불 하지 않고 안정성과 성능을 향상 시킬 수 있습니다. 그러나 일부 오류는 Azure에서 클라우드 서비스를 실행 하는 경우에 발생할 수 있습니다. 서비스에 게시할 때 원격 디버깅 및 다음 역할 인스턴스에 디버거를 연결 함으로써 Azure에서 클라우드 서비스를 실행 하는 경우에 발생 하는 오류를 디버그할 수 있습니다. 자세한 내용은 [로컬 컴퓨터에서 클라우드 서비스 디버그](vs-azure-tools-debug-cloud-services-virtual-machines.md#debug-your-cloud-service-on-your-local-computer)합니다.
+Azure 컴퓨팅 에뮬레이터를 사용하여 로컬 컴퓨터에서 클라우드 서비스 디버그하면 시간과 돈을 절약할 수 있습니다. 배포하기 전에 로컬로 서비스를 디버깅하면, 컴퓨팅 시간이 소요되지 않고 안정성과 성능을 향상할 수 있습니다. 그러나, Azure에서 클라우드 서비스를 실행하는 경우, 일부 오류가 발생할 수 있습니다. Azure에서 클라우드 서비스를 실행할 때만 발생하는 오류는 서비스를 게시할 때 원격 디버깅을 사용하도록 설정한 다음 역할 인스턴스에 디버거를 연결하여 디버그할 수 있습니다. 자세한 내용은 [로컬 컴퓨터에서 클라우드 서비스 디버그](vs-azure-tools-debug-cloud-services-virtual-machines.md#debug-your-cloud-service-on-your-local-computer)를 참조하세요.
 
 ## <a name="using-intellitrace"></a>IntelliTrace 사용 
-Visual Studio Enterprise를 사용 하 여.NET Framework 4.5를 대상으로 역할을 작성 하는, 경우에 Visual Studio에서 Azure 클라우드 서비스를 배포 하는 시점에 IntelliTrace를 사용할 수 있습니다. IntelliTrace는 Azure에서 실행 되는 것 처럼 응용 프로그램을 디버깅 하려면 Visual Studio를 사용 하 여 사용할 수 있는 로그를 제공 합니다. 자세한 내용은 [IntelliTrace 및 Visual Studio를 사용 하 여 게시 된 클라우드 서비스 디버깅](http://go.microsoft.com/fwlink/p/?LinkId=623016)합니다.
+Visual Studio를 사용하여 .NET Framework 4.5를 대상으로 하는 역할을 작성하는 경우, Visual Studio에서 Azure 클라우드 서비스를 배포할 때 IntelliTrace를 사용할 수 있습니다. IntelliTrace는 Azure에서 실행할 때처럼 애플리케이션을 디버그하는 Visual Studio와 사용 가능한 로그를 제공합니다. 자세한 내용은 [IntelliTrace 및 Visual Studio를 사용하여 게시된 클라우드 서비스 디버깅](http://go.microsoft.com/fwlink/p/?LinkId=623016)을 참조하십시오.
 
 ## <a name="remote-debugging"></a>원격 디버깅 
-Visual Studio에서 클라우드 서비스를 배포 하는 경우 시간에 클라우드 서비스에서 원격 디버깅을 사용할 수 있습니다. 배포에 대 한 원격 디버깅을 사용 하려는 경우 원격 디버깅 서비스는 각 역할 인스턴스를 실행 하는 가상 컴퓨터에 설치 됩니다. 와 같은 서비스 `msvsmon.exe` -하지 성능에 영향을 않거나 추가 비용이 발생 합니다. 자세한 내용은 [Azure에서 클라우드 서비스 디버그](vs-azure-tools-debug-cloud-services-virtual-machines.md#debug-a-cloud-service-in-azure)합니다.
+Visual Studio에서 클라우드 서비스를 배포할 때 클라우드 서비스를 원격 디버깅할 수 있습니다. 배포에 원격 디버깅 사용을 선택하면 원격 디버깅 서비스는 각 역할 인스턴스에 실행되는 가상 머신에 설치됩니다. `msvsmon.exe` 같은 서비스는 성능에 영향을 주지 않거나 추가 비용이 발생하지 않습니다. 자세한 내용은 [Azure에서 클라우드 서비스 디버그](vs-azure-tools-debug-cloud-services-virtual-machines.md#debug-a-cloud-service-in-azure)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
-- [Azure 클라우드 서비스 또는 VM Visual Studio에서 디버깅](./vs-azure-tools-debug-cloud-services-virtual-machines.md) -Azure cloud services를 디버깅 하는 방법 자세히 알아봅니다.
+- [Visual Studio에서 Azure 클라우드 서비스 또는 VM 디버깅](./vs-azure-tools-debug-cloud-services-virtual-machines.md) - Azure Cloud Services를 디버그하는 방법을 자세히 알아봅니다.

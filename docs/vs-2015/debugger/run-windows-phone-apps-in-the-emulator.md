@@ -1,14 +1,9 @@
 ---
 title: 에뮬레이터에서 Windows Phone 앱 실행 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,25 +13,25 @@ ms.assetid: c7590788-beb3-403c-a7dd-18472a9e585e
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e7035e4a77b67fb5207f878c8e0650236afda7c6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5673ebf28cc652e3bcd973808db87b5bb058659c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739980"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683532"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>에뮬레이터에서 Windows Phone 앱 실행
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Windows Phone 에뮬레이터는 실제 장치 없이 컴퓨터에서 Windows Phone 앱을 디버그하고 테스트할 수 있는 가상화된 환경을 제공합니다. 일반적인 터치 및 회전 이벤트를 시뮬레이트하고 에뮬레이트하려는 실제 화면 크기와 해상도를 선택할 수 있습니다. 일반적으로 사용되는 여러 기능(예: 위치, 네트워킹, 알림, 센서, 가속도계 및 선택적 SD 카드)을 테스트할 수도 있습니다.  
+Windows Phone 에뮬레이터는 실제 디바이스 없이 컴퓨터에서 Windows Phone 앱을 디버그하고 테스트할 수 있는 가상화된 환경을 제공합니다. 일반적인 터치 및 회전 이벤트를 시뮬레이트하고 에뮬레이트하려는 실제 화면 크기와 해상도를 선택할 수 있습니다. 일반적으로 사용되는 여러 기능(예: 위치, 네트워킹, 알림, 센서, 가속도계 및 선택적 SD 카드)을 테스트할 수도 있습니다.  
   
- 에뮬레이터에서 테스트할 수 있는 기능에 대 한 자세한 내용은 참조 하세요. [Windows Phone 에뮬레이터에서 앱 기능 테스트](http://msdn.microsoft.com/en-us/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1)합니다.  
+ 에뮬레이터에서 테스트할 수 있는 기능에 대 한 자세한 내용은 참조 하세요. [Windows Phone 에뮬레이터에서 앱 기능 테스트](https://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1)합니다.  
   
  에뮬레이터는 Visual Studio와 함께 Windows Phone 앱을 디자인하고 개발, 디버깅 및 테스트할 수 있는 완벽한 환경을 제공합니다.  
   
-##  <a name="BKMK_run"></a> 에뮬레이터에서 Windows Phone 앱 실행  
- Windows Phone 앱을 개발하는 동안 Windows Phone 에뮬레이터를 사용하여 앱을 빠르게 배포 및 테스트할 수 있습니다. 그러나 Windows Phone 스토어에 앱을 게시하기 전에 실제 Windows Phone 장치에서 앱을 테스트하는 것이 좋습니다. 이렇게 하면 사용자처럼 앱을 사용해 볼 수 있습니다.  
+## <a name="BKMK_run"></a> 에뮬레이터에서 Windows Phone 앱 실행  
+ Windows Phone 앱을 개발하는 동안 Windows Phone 에뮬레이터를 사용하여 앱을 빠르게 배포 및 테스트할 수 있습니다. 그러나 Windows Phone 스토어에 앱을 게시하기 전에 실제 Windows Phone 디바이스에서 앱을 테스트하는 것이 좋습니다. 이렇게 하면 사용자처럼 앱을 사용해 볼 수 있습니다.  
   
  Windows Phone 에뮬레이터에서 처음으로 Windows Phone 앱을 실행하는 경우 다음 이벤트가 발생합니다.  
   
@@ -53,19 +48,19 @@ Windows Phone 에뮬레이터는 실제 장치 없이 컴퓨터에서 Windows Ph
    선택한 에뮬레이터가 이미 실행 중이면 실행 중인 에뮬레이터에서 앱이 배포되어 시작됩니다. 한 번에 각 에뮬레이터의 인스턴스 하나만 실행할 수 있습니다.  
   
 > [!TIP]
->  에뮬레이터에서 앱을 테스트하는 경우 앱을 빠르게 다시 실행할 수 있도록 디버깅 세션 사이에 에뮬레이터를 열어 둡니다.  
+> 에뮬레이터에서 앱을 테스트하는 경우 앱을 빠르게 다시 실행할 수 있도록 디버깅 세션 사이에 에뮬레이터를 열어 둡니다.  
   
-###  <a name="BKMK_vs"></a> Visual Studio에서 앱 실행  
+### <a name="BKMK_vs"></a> Visual Studio에서 앱 실행  
   
 ##### <a name="to-deploy-and-run-an-app-from-visual-studio"></a>Visual Studio에서 앱을 배포하여 실행하려면  
   
-1.  Visual Studio에서 Windows Phone 프로젝트를 엽니다.  
+1. Visual Studio에서 Windows Phone 프로젝트를 엽니다.  
   
-2.  에 **표준** 도구 모음에서 에뮬레이터 옵션 중 하나를 선택 합니다.  
+2. 에 **표준** 도구 모음에서 에뮬레이터 옵션 중 하나를 선택 합니다.  
   
      ![Windows Phone 에뮬레이터 이미지 목록을](../debugger/media/wp-emulator-list.png "WP_Emulator_list")  
   
-3.  배포에서 디버깅을 사용 하 여 앱을 실행 하는 **디버그** 메뉴에서 클릭 **디버깅 시작**, 하거나 F5 키를 누릅니다.  
+3. 배포에서 디버깅을 사용 하 여 앱을 실행 하는 **디버그** 메뉴에서 클릭 **디버깅 시작**, 하거나 F5 키를 누릅니다.  
   
      배포에서 디버깅 하지 않고 앱을 실행 하는 **디버그** 메뉴에서 클릭 **디버깅 하지 않고 시작**, 하거나 ctrl+f5를 누릅니다.  
   
@@ -85,32 +80,32 @@ Windows Phone 에뮬레이터는 실제 장치 없이 컴퓨터에서 Windows Ph
   
 ##### <a name="to-restart-an-app-without-debugging"></a>디버깅하지 않고 앱을 다시 시작하려면  
   
-1.  에뮬레이터의 시작 화면에서 왼쪽으로 살짝 밀어 앱 목록을 봅니다.  
+1. 에뮬레이터의 시작 화면에서 왼쪽으로 살짝 밀어 앱 목록을 봅니다.  
   
-2.  앱 목록에서 앱 아이콘을 누릅니다. 디버깅하지 않고 앱이 다시 시작됩니다.  
+2. 앱 목록에서 앱 아이콘을 누릅니다. 디버깅하지 않고 앱이 다시 시작됩니다.  
   
 ##### <a name="to-deactivate-a-running-app"></a>실행 중인 앱을 비활성화하려면  
   
-1.  앱을 실행 하기 전에 Visual Studio에서 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 선택한 후 **속성** 열려는 **프로젝트 디자이너**합니다.  
+1. 앱을 실행 하기 전에 Visual Studio에서 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 선택한 후 **속성** 열려는 **프로젝트 디자이너**합니다.  
   
-2.  **프로젝트 디자이너**에 **디버그** 페이지에서 **디버깅 중 비활성화 되 면 삭제 표시** 확인란 선택 되지 않은 경우 응용 프로그램을 유휴로 이동할 경우 상태의 비활성화 합니다. 비활성화 시 앱을 삭제 표시하려면 이 확인란을 선택합니다.  
+2. **프로젝트 디자이너**에 **디버그** 페이지에서 **디버깅 중 비활성화 되 면 삭제 표시** 확인란 선택 되지 않은 경우 응용 프로그램을 유휴로 이동할 경우 상태의 비활성화 합니다. 비활성화 시 앱을 삭제 표시하려면 이 확인란을 선택합니다.  
   
-3.  에 **디버그** 메뉴에서 클릭 **디버깅 시작**, 하거나 f5 키를 눌러 앱을 실행 합니다.  
+3. 에 **디버그** 메뉴에서 클릭 **디버깅 시작**, 하거나 f5 키를 눌러 앱을 실행 합니다.  
   
-4.  키를 눌러 에뮬레이터에서 합니다 **시작** 단추입니다. 시작 화면이 나타나고 앱이 비활성화됩니다. 앱 유휴 상태가 되거나 삭제 설정에 따라 표시 합니다 **디버깅 중 비활성화 되 면 삭제 표시** 확인란 합니다.  
+4. 키를 눌러 에뮬레이터에서 합니다 **시작** 단추입니다. 시작 화면이 나타나고 앱이 비활성화됩니다. 앱 유휴 상태가 되거나 삭제 설정에 따라 표시 합니다 **디버깅 중 비활성화 되 면 삭제 표시** 확인란 합니다.  
   
 ##### <a name="to-reactivate-a-dormant-or-tombstoned-app"></a>유휴 상태이거나 삭제 표시된 앱을 다시 활성화하려면  
   
--   키를 눌러 에뮬레이터에서 합니다 **다시** 단추를 앱에 반환 합니다. 키를 눌러 할 다른 페이지로 탐색 하거나 다른 앱을 열 경우 합니다 **다시** 단추 두 번 이상 앱을 다시 활성화 합니다.  
+- 키를 눌러 에뮬레이터에서 합니다 **다시** 단추를 앱에 반환 합니다. 키를 눌러 할 다른 페이지로 탐색 하거나 다른 앱을 열 경우 합니다 **다시** 단추 두 번 이상 앱을 다시 활성화 합니다.  
   
      디버깅 세션이 다시 시작됩니다. 디버거가 앱에서 분리된 경우 디버깅 세션을 다시 시작하려면 F5 키를 눌러야 할 수 있습니다.  
   
-###  <a name="BKMK_depltool"></a> 응용 프로그램 배포 도구로 앱 실행  
+### <a name="BKMK_depltool"></a> 응용 프로그램 배포 도구로 앱 실행  
  Windows Phone 응용 프로그램 배포 도구를 사용할 수도 있습니다 (**AppDeploy.exe**) 에뮬레이터에서 응용 프로그램을 실행 합니다. 이 도구는 Windows Phone 개발 도구 설치 시 설치되는 독립 실행형 앱입니다.  
   
- 자세한 내용은 참조 하세요. [응용 프로그램 배포 도구를 사용 하 여 배포할 Windows Phone 8.1 앱](http://msdn.microsoft.com/library/23700f82-1399-44d9-bc0c-714be4a48ee6)합니다.  
+ 자세한 내용은 참조 하세요. [응용 프로그램 배포 도구를 사용 하 여 배포할 Windows Phone 8.1 앱](https://msdn.microsoft.com/library/23700f82-1399-44d9-bc0c-714be4a48ee6)합니다.  
   
-##  <a name="BKMK_toolbar"></a> 에뮬레이터 도구 모음을 사용 하 여 Windows Phone 에뮬레이터 구성  
+## <a name="BKMK_toolbar"></a> 에뮬레이터 도구 모음을 사용 하 여 Windows Phone 에뮬레이터 구성  
  다음 표에는 에뮬레이터 도구 모음에서 사용할 수 있는 구성 단추가 나와 있습니다.  
   
 |도구 모음 단추|구성 옵션|  
@@ -119,7 +114,7 @@ Windows Phone 에뮬레이터는 실제 장치 없이 컴퓨터에서 Windows Ph
 |![Windows Phone 에뮬레이터 도구 모음의 방향](../debugger/media/wp-emulator-rotation.png "WP_Emulator_rotation")|**에뮬레이터의 방향 구성**<br /><br /> Windows Phone 에뮬레이터에서 방향을 세로, 가로 왼쪽 또는 가로 오른쪽 중에 하나로 변경할 수 있습니다. 방향 변경 시 에뮬레이터의 크기는 변경되지 않습니다.<br /><br /> 방향을 변경 하려면 클릭 합니다 **왼쪽으로 회전** 단추 또는 **오른쪽으로 회전** 단추입니다.|  
 |![Windows Phone 에뮬레이터 도구 모음에서 옵션을 크기 조정](../debugger/media/wp-emulator-size.png "WP_Emulator_size")|**에뮬레이터의 크기를 구성 합니다.**<br /><br /> 호스트 컴퓨터 화면에서 에뮬레이터의 크기를 변경할 수 있습니다. 에뮬레이터의 DPI(인치당 도트 수)는 확대/축소 값에 상관없이 호스트 모니터 DPI를 기반으로 합니다.<br /><br /> -에 맞게 에뮬레이터를 화면을 클릭 합니다 **화면에 맞추기** 단추입니다.<br />-확대/축소 설정을 변경 하려면 클릭 합니다 **확대/축소** 단추입니다. 합니다 **확대/축소** 대화 상자가 열립니다. 에 **확대/축소** 대화 상자에 33과 100 사이의 확대/축소 값을 입력 합니다.|  
   
-##  <a name="BKMK_buttons"></a> 에뮬레이터에서 시뮬레이트된 하드웨어 단추 사용  
+## <a name="BKMK_buttons"></a> 에뮬레이터에서 시뮬레이트된 하드웨어 단추 사용  
  에뮬레이터 화면의 오른쪽에 있는 시뮬레이트된 하드웨어 단추를 사용하여 휴대폰의 하드웨어 단추 사용을 시뮬레이트합니다.  
   
 - 클릭 합니다 **전원** 단추를 디스플레이 끄기 및 켜기를 시뮬레이트합니다. 길게 클릭하면 휴대폰 끄기가 시뮬레이트됩니다.  
@@ -138,8 +133,8 @@ Windows Phone 에뮬레이터는 실제 장치 없이 컴퓨터에서 Windows Ph
   
    ![Windows Phone 에뮬레이터에서 단추](../debugger/media/wp-emulator-buttons.png "WP_Emulator_buttons")  
   
-##  <a name="BKMK_tasks_kbd"></a> 에뮬레이터에서 컴퓨터 키보드 사용  
- 에뮬레이터는 개발 컴퓨터의 하드웨어 키보드를 Windows Phone의 키보드로 매핑하는 기능을 지원합니다. 키 동작은 Windows Phone 장치와 동일합니다.  
+## <a name="BKMK_tasks_kbd"></a> 에뮬레이터에서 컴퓨터 키보드 사용  
+ 에뮬레이터는 개발 컴퓨터의 하드웨어 키보드를 Windows Phone의 키보드로 매핑하는 기능을 지원합니다. 키 동작은 Windows Phone 디바이스와 동일합니다.  
   
  기본적으로 하드웨어 키보드는 사용하도록 설정되어 있지 않습니다. 이러한 구현은 배포 후에만 사용할 수 있는 슬라이딩 키보드와 동일합니다. 하드웨어 키보드를 사용하도록 설정하기 전에는 에뮬레이터에서 컨트롤 키의 키 입력만 허용합니다.  
   
@@ -165,15 +160,15 @@ Windows Phone 에뮬레이터는 실제 장치 없이 컴퓨터에서 Windows Ph
 |F10|볼륨 작게||  
 |F11|해당 사항 없음.||  
 |F12|전원|잠금 화면을 사용하려면 F12 키를 두 번 누릅니다.<br /><br /> 길게 누르면 예상대로 작동합니다.|  
-|Esc 키|뒤로|길게 누르면 예상대로 작동합니다.|  
+|Esc|뒤로|길게 누르면 예상대로 작동합니다.|  
 |Pause/Break|키보드 전환(Windows 8/8.1 에뮬레이터만 해당)|Windows 10 에뮬레이터에는 해당하지 않습니다.|  
 |Page Up|하드웨어 키보드를 사용하도록 설정합니다(Windows 8/8.1 에뮬레이터만 해당).|Windows 10 에뮬레이터에는 해당하지 않습니다.|  
 |Page Down|하드웨어 키보드를 사용하지 않도록 설정합니다(Windows 8/8.1 에뮬레이터만 해당).|Windows 10 에뮬레이터에는 해당하지 않습니다.|  
   
-##  <a name="BKMK_checkpoints"></a> 저장 하 고 사용자 지정 검사점 로드  
+## <a name="BKMK_checkpoints"></a> 저장 하 고 사용자 지정 검사점 로드  
  사용 하 여 에뮬레이터의 상태 스냅숏을 저장 합니다 **검사점** 에뮬레이터의 탭 **추가 도구**합니다. 이 기능은 동일한 데이터와 설정으로 앱을 자주 테스트하는 경우 유용합니다.  
   
- 예를 들어 앱에 여러 연락처가 필요한 경우 연락처 레코드를 한 번 만들면 에뮬레이터의 스냅숏을 저장할 수 있습니다.  그렇지 않으면 에뮬레이터를 시작할 때마다 연락처 레코드를 다시 만들어야 합니다.  
+ 예를 들어 앱에 여러 연락처가 필요한 경우 연락처 레코드를 한 번 만들면 에뮬레이터의 스냅샷을 저장할 수 있습니다. 그렇지 않으면 에뮬레이터를 시작할 때마다 연락처 레코드를 다시 만들어야 합니다.  
   
 - 클릭 **새 검사점** 데이터 및 응용 프로그램을 나중에 다시 테스트 하는 데 필요한 설정으로 에뮬레이터 상태의 새 스냅숏을 캡처하려면 하 합니다. 새 검사점에 추가 되는 **검사점** 목록입니다.  
   
@@ -187,11 +182,11 @@ Windows Phone 에뮬레이터는 실제 장치 없이 컴퓨터에서 Windows Ph
   
 - 클릭 **삭제** 더 이상 필요 없는 스냅숏을 삭제 합니다.  
   
-  원래 에뮬레이터 이미지는 항상 첫 번째 항목으로 나타나고 합니다 **검사점** 목록 및 변경 하거나 삭제할 수 있습니다. 그러나 다른 스냅숏을 기본 에뮬레이터 이미지로 선택할 수 있습니다.  
+  원래 에뮬레이터 이미지는 항상 첫 번째 항목으로 나타나고 합니다 **검사점** 목록 및 변경 하거나 삭제할 수 있습니다. 그러나 다른 스냅샷을 기본 에뮬레이터 이미지로 선택할 수 있습니다.  
   
   ![Windows Phone 에뮬레이터의 체크 포인트 탭](../debugger/media/wp-emulator-checkpoints.png "WP_Emulator_checkpoints")  
   
-##  <a name="BKMK_tasks_shot"></a> 에뮬레이터에서 스크린 샷 캡처  
+## <a name="BKMK_tasks_shot"></a> 에뮬레이터에서 스크린 샷 캡처  
  추가 도구 창에서 스크린 샷 도구를 사용하여 Windows Phone 앱의 스크린 샷을 만들 수 있습니다. 이 도구는 실행 중인 에뮬레이터의 해상도와 일치하는 PNG 파일을 만듭니다.  
   
  ![스크린 샷을 Windows Phone Emulator](../debugger/media/wp-emulator-screenshots.png "WP_Emulator_screenshots")  
@@ -222,9 +217,6 @@ Windows Phone 에뮬레이터는 실제 장치 없이 컴퓨터에서 Windows Ph
   
 #### <a name="to-disable-frame-rate-counters-in-the-emulator-before-capturing-screenshots"></a>스크린 샷을 캡처하기 전에 에뮬레이터에서 프레임 속도 카운터를 사용하지 않도록 설정하려면  
   
--   Visual Studio에서 릴리스 빌드를 지정합니다. 릴리스 빌드를 지정한 후 선택 하 여 앱을 시작 합니다 **배포 _[앱 이름]_**  링크를 합니다 **빌드** 메뉴.  
+- Visual Studio에서 릴리스 빌드를 지정합니다. 릴리스 빌드를 지정한 후 선택 하 여 앱을 시작 합니다 **배포 _[앱 이름]_**  링크를 합니다 **빌드** 메뉴.  
   
--   또는 app.xaml.cs 또는 app.xaml.vb 파일에서 `EnableFrameRateCounter`의 값을 `true`로 설정하는 코드 줄을 주석으로 처리할 수 있습니다.
-
-
-
+- 또는 app.xaml.cs 또는 app.xaml.vb 파일에서 `EnableFrameRateCounter`의 값을 `true`로 설정하는 코드 줄을 주석으로 처리할 수 있습니다.

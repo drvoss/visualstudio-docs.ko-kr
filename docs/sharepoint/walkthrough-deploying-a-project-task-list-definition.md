@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3df4f161eddc5d10b77887b99d93be2204821c24
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ea7063ce432841e812312b7c7c36721a7d2d099
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784233"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>연습: 프로젝트 작업 목록 정의 배포
 

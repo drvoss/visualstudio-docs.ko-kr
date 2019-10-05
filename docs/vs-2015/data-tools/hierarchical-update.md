@@ -1,12 +1,9 @@
 ---
 title: 계층적 업데이트 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -26,26 +23,25 @@ ms.assetid: 68bae3f6-ec9b-45ee-a33a-69395029f54c
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d0176f203f7decb701d678a110856acdad36750b
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 521f878c9d4fafa61f8c717f4c9752622ef339d9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220181"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699806"
 ---
 # <a name="hierarchical-update"></a>계층적 업데이트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 계층적 업데이트 * 무결성 규칙을 유지 하면서 데이터베이스에 다시 (둘 이상의 관련된 테이블을 사용 하 여 데이터 집합)에서 업데이트 된 데이터를 저장 하는 프로세스를 말합니다. *참조 무결성* 삽입, 업데이트 및 삭제 관련된 레코드의 동작을 제어 하는 데이터베이스에서 제약 조건에 의해 제공 되는 일관성 규칙을 가리킵니다. 예를 들어 참조 무결성 적용 해당 고객에 대 한 주문을 만들 수 있도록 허용 하기 전에 고객 레코드를 생성 하는 것입니다.  데이터 집합의 관계에 대 한 자세한 내용은 참조 하세요. [데이터 집합의 관계](../data-tools/relationships-in-datasets.md)  
   
- 계층적 업데이트 기능을 사용 하는 `TableAdapterManager` 관리 하는 `TableAdapter`형식화 된 데이터 집합의 합니다. `TableAdapterManager` 구성 요소는를 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-않으므로 생성 된 클래스에 부분을 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]입니다. Windows Form 또는 WPF 페이지에 데이터 소스 창에서 테이블을 끌어 Visual Studio의 폼 이나 페이지에서 TableAdapterManager 형식의 변수를 추가 하 고 구성 요소 트레이에 디자이너에 표시 합니다. 에 대 한 자세한 내용은 합니다 `TableAdapterManager` 클래스의 TableAdapterManager 참조 섹션을 참조 하십시오 [TableAdapterManager 개요](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)합니다.  
+ 계층적 업데이트 기능을 사용 하는 `TableAdapterManager` 관리 하는 `TableAdapter`형식화 된 데이터 집합의 합니다. `TableAdapterManager` 구성 요소는를 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-않으므로 생성 된 클래스에 부분을 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]입니다. Windows Form 또는 WPF 페이지에 데이터 소스 창에서 테이블을 끌어 Visual Studio의 폼 이나 페이지에서 TableAdapterManager 형식의 변수를 추가 하 고 구성 요소 트레이에 디자이너에 표시 합니다. 에 대 한 자세한 내용은 합니다 `TableAdapterManager` 클래스의 TableAdapterManager 참조 섹션을 참조 하십시오 [TableAdapterManager 개요](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)합니다.  
   
  기본적으로 데이터 집합 취급 관련된 테이블 "관계에만 해당" 즉, foreign key 제약 조건을 강제 적용 하지 않습니다. 데이터 집합 디자이너를 사용 하 여 디자인 타임에 해당 설정을 수정할 수 있습니다. 표시 하기 위해 두 테이블 간의 관계 선을 선택 합니다 **관계** 대화 상자. 여기에서 수행한 변경 내용을 TableAdapterManager 때 동작 하는 방법을 결정 하는 변경 내용이 관련된 테이블의 데이터베이스에 다시 보내는 것입니다.  
   
 ## <a name="enablehierarchical-update-in-a-dataset"></a>데이터 집합의 Enablehierarchical 업데이트  
- 기본적으로 계층적 업데이트는 프로젝트에서 생성 되거나 추가 되는 모든 새 데이터 집합에 대 한 설정 됩니다. 설정 하 여 계층적 업데이트를 켜거나 끌 합니다 **계층적 업데이트** 의 형식화 된 데이터 집합 속성을 [만들기 및 편집 형식화 된 데이터 집합](../data-tools/creating-and-editing-typed-datasets.md) 에 **True** 또는 **False**:  
+ 기본적으로 계층적 업데이트는 프로젝트에서 생성 되거나 추가 되는 모든 새 데이터 집합에 대 한 설정 됩니다. 설정 하 여 계층적 업데이트를 켜거나 끌 합니다 **계층적 업데이트** 데이터 집합 디자이너의 형식화 된 데이터 집합 속성 **True** 하거나 **False**:  
   
  ![계층적 업데이트 설정을](../data-tools/media/hierarchical-update-setting.png "계층적 업데이트 설정")  
   
@@ -59,15 +55,15 @@ ms.locfileid: "50220181"
   
  기본적으로 데이터 집합에 있는 데이터 테이블 관계를 사용 하 여 생성 됩니다 (<xref:System.Data.DataRelation>)과 일치 하는 데이터베이스의 관계. 그러나 데이터 집합에서 관계는 외래 키 제약 조건으로 생성 되지 않습니다. 합니다 <xref:System.Data.DataRelation> 로 구성 됩니다 **관계만** 없이 <xref:System.Data.ForeignKeyConstraint.UpdateRule%2A> 또는 <xref:System.Data.ForeignKeyConstraint.DeleteRule%2A> 적용 합니다.  
   
- 기본적으로 연속 업데이트 및 삭제는 해제 되어 연속 업데이트를 사용 하 여 데이터베이스 관계를 설정 및/또는 설정 삭제를 연계 하는 경우에 합니다. 예를 들어, 새 고객을 만들고 새 주문을 다음 데이터를 저장 하는 동안 발생할 수 있습니다 충돌 하는 데이터베이스에 정의 된 외래 키 제약 조건. 자세한 내용은 [방법: 데이터 집합의 Foreign Key 제약 조건 구성](http://msdn.microsoft.com/library/3954c388-e209-4a67-a34e-5ca106282f8e)합니다.  
+ 기본적으로 연속 업데이트 및 삭제는 해제 되어 연속 업데이트를 사용 하 여 데이터베이스 관계를 설정 및/또는 설정 삭제를 연계 하는 경우에 합니다. 예를 들어, 새 고객을 만들고 새 주문을 다음 데이터를 저장 하는 동안 발생할 수 있습니다 충돌 하는 데이터베이스에 정의 된 외래 키 제약 조건. 자세한 내용은 [방법: 데이터 집합의 외래 키 제약 조건을 구성할](https://msdn.microsoft.com/library/3954c388-e209-4a67-a34e-5ca106282f8e)합니다.  
   
 ## <a name="set-the-order-to-perform-updates"></a>업데이트를 수행 하는 순서를 설정 합니다.  
  집합의 개별 주문 삽입, 업데이트 및 삭제 하는 업데이트를 수행 하는 순서를 설정 합니다. 데이터 집합의 모든 테이블의 수정된 된 모든 데이터를 저장 하려면 필요 합니다. 계층적 업데이트를 사용 하는 경우 삽입 먼저 수행 하는 다음 업데이트 및 삭제 합니다. 합니다 `TableAdapterManager` 제공을 `UpdateOrder` 먼저 업데이트를 수행 하는 집합을 삽입 및 삭제 될 수 있는 속성입니다.  
   
 > [!NOTE]
->  업데이트 순서는 모두 포괄 이해 하는 것이 반드시 합니다. 즉, 업데이트가 수행 된 삽입 및 삭제 데이터 집합의 모든 테이블에 대해 수행 됩니다.  
+> 업데이트 순서는 모두 포괄 이해 하는 것이 반드시 합니다. 즉, 업데이트가 수행 된 삽입 및 삭제 데이터 집합의 모든 테이블에 대해 수행 됩니다.  
   
- 설정 하는 `UpdateOrder` 에서 항목을 위로 끌어 놓은 후 속성을를 [데이터 소스 창](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) 폼으로 선택는 `TableAdapterManager` 구성 요소 트레이를 설정을 `UpdateOrder` 속성에는 **속성** 창입니다. 자세한 내용은 [방법: 계층적 업데이트를 순서 대로 수행 하 고 설정](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83)합니다.  
+ 설정 하는 `UpdateOrder` 에서 항목을 위로 끌어 놓은 후 속성을를 [데이터 소스 창](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) 폼으로 선택는 `TableAdapterManager` 구성 요소 트레이를 설정을 `UpdateOrder` 속성에는 **속성** 창입니다. 자세한 내용은 [방법: 계층적 업데이트를 수행 하는 경우 순서 설정](https://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83)합니다.  
   
 ## <a name="create-a-backup-copy-of-a-dataset-before-performing-a-hierarchical-update"></a>계층적 업데이트를 수행 하기 전에 백업 복사본을 데이터 집합 만들기  
  데이터를 저장 하는 경우 (호출 하 여 합니다 `TableAdapterManager.UpdateAll()` 메서드), `TableAdapterManager` 단일 트랜잭션에서 각 테이블에 대 한 데이터를 업데이트 하려고 합니다. 모든 테이블에 대 한 업데이트의 일부가 실패 하면 전체 트랜잭션이 롤백됩니다. 대부분의 경우 롤백이를 원래 상태로 응용 프로그램을 반환합니다.  
@@ -75,39 +71,39 @@ ms.locfileid: "50220181"
  그러나 경우에 따라 백업 복사본에서 데이터 집합을 복원 해야 할 수 있습니다. 이 한 가지 예는 자동 증분 값을 사용 하는 경우에 발생할 수 있습니다. 예를 들어, 저장 작업은 실패, 데이터 집합에서는 자동 증분 값 재설정 되지 않습니다 및 자동 증분 값을 만들려는 데이터 집합을 계속 합니다. 이런 응용 프로그램에서 사용할 수 없는 번호에 간격이 있습니다. 상황에 여기서 문제는이 `TableAdapterManager` 제공을 `BackupDataSetBeforeUpdate` 트랜잭션이 실패할 경우 백업 복사본을 사용 하 여 기존 데이터 집합을 대체 하는 속성입니다.  
   
 > [!NOTE]
->  백업 복사본은 하는 동안 메모리에만 `TableAdapterManager.UpdateAll` 메서드를 실행 합니다. 따라서 있습니다 이므로이 백업 데이터 집합에 프로그래밍 방식으로 액세스할 수 없습니다 원래 데이터 집합을 대체 하거나 범위를 벗어날 즉시는 `TableAdapterManager.UpdateAll` 메서드 실행이 완료 합니다.  
+> 백업 복사본은 하는 동안 메모리에만 `TableAdapterManager.UpdateAll` 메서드를 실행 합니다. 따라서 있습니다 이므로이 백업 데이터 집합에 프로그래밍 방식으로 액세스할 수 없습니다 원래 데이터 집합을 대체 하거나 범위를 벗어날 즉시는 `TableAdapterManager.UpdateAll` 메서드 실행이 완료 합니다.  
   
 ## <a name="modify-the-generated-save-code-to-perform-the-hierarchical-update"></a>생성 된 저장 계층적 업데이트를 수행 하는 코드 수정  
- `TableAdapterManager.UpdateAll` 메서드를 호출한 다음 관련 테이블이 포함된 데이터 집합의 이름을 전달하여 데이터 집합의 관련 데이터 테이블에서 데이터베이스로 변경 내용을 저장합니다. 예를 들어 NorthwindDataset에 포함된 모든 테이블의 업데이트를 백 엔드 데이터베이스로 보내려면 `TableAdapterManager.UpdateAll(NorthwindDataset)` 메서드를 실행합니다.  
+ `TableAdapterManager.UpdateAll` 메서드를 호출한 다음 관련 테이블이 포함된 데이터 세트의 이름을 전달하여 데이터 세트의 관련 데이터 테이블에서 데이터베이스로 변경 내용을 저장합니다. 예를 들어 NorthwindDataset에 포함된 모든 테이블의 업데이트를 백 엔드 데이터베이스로 보내려면 `TableAdapterManager.UpdateAll(NorthwindDataset)` 메서드를 실행합니다.  
   
- 항목을 삭제 한 후를 **데이터 원본** 창에서 코드를 자동으로 추가 됩니다는 `Form_Load` 이벤트를 각 테이블을 채웁니다 (합니다 `TableAdapter.Fill` 메서드). 코드에도 추가 됩니다는 **저장** 단추 클릭 이벤트에는 <xref:System.Windows.Forms.BindingNavigator> 다시 데이터베이스에 데이터 집합에서 데이터를 저장 하려면 (의 `TableAdapterManager.UpdateAll` 메서드).  
+ **데이터 원본** 창에서 항목을 놓으면 코드가 `Form_Load` 이벤트에 자동으로 추가되어 각 테이블을 채웁니다(`TableAdapter.Fill` 메서드). 또한 데이터 세트의 데이터를 데이터베이스에 다시 저장할 수 있도록 <xref:System.Windows.Forms.BindingNavigator>의 **저장** 단추 클릭 이벤트에도 코드가 추가됩니다(`TableAdapterManager.UpdateAll` 메서드).  
   
- 생성된 저장 코드에는 `CustomersBindingSource.EndEdit` 메서드를 호출하는 코드 줄도 포함됩니다. 호출 보다 구체적으로 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 메서드의 첫 번째 <xref:System.Windows.Forms.BindingSource>폼에 추가 된 합니다. 즉,이 코드는만에서 끌어 첫 번째 테이블에 대 한 생성 된 **데이터 원본** 창에서 폼입니다. <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 호출에서는 현재 편집 중인 데이터 바인딩된 컨트롤의 프로세스에 포함된 모든 변경 내용을 커밋합니다. 따라서 데이터 바인딩된 컨트롤에 있는 경우 여전히 포커스 클릭 하면 합니다 **저장** 단추를 보류 중인 모든 편집 컨트롤 실제 저장 전에 커밋된에 (의 `TableAdapterManager.UpdateAll` 메서드).  
+ 생성된 저장 코드에는 `CustomersBindingSource.EndEdit` 메서드를 호출하는 코드 줄도 포함됩니다. 호출 보다 구체적으로 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 메서드의 첫 번째 <xref:System.Windows.Forms.BindingSource>폼에 추가 된 합니다. 즉,이 코드는만에서 끌어 첫 번째 테이블에 대 한 생성 된 **데이터 원본** 창에서 폼입니다. <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 호출에서는 현재 편집 중인 데이터 바인딩된 컨트롤의 프로세스에 포함된 모든 변경 내용을 커밋합니다. 따라서 데이터 바인딩된 컨트롤에 계속 포커스가 있는 상태에서 **저장** 단추를 클릭하면 실제 저장 전에 해당 컨트롤에서 보류 중인 모든 편집 내용이 커밋됩니다(`TableAdapterManager.UpdateAll` 메서드).  
   
 > [!NOTE]
->  데이터 집합 디자이너만 추가 된 `BindingSource.EndEdit` 폼에 놓은 첫 번째 테이블에 대 한 코드입니다. 그러므로 폼의 각 관련 테이블에 대해 `BindingSource.EndEdit` 메서드를 호출하는 코드 줄을 추가해야 합니다. 이 연습에서는 `OrdersBindingSource.EndEdit` 메서드 호출을 추가해야 합니다.  
+> 데이터 집합 디자이너만 추가 된 `BindingSource.EndEdit` 폼에 놓은 첫 번째 테이블에 대 한 코드입니다. 그러므로 폼의 각 관련 테이블에 대해 `BindingSource.EndEdit` 메서드를 호출하는 코드 줄을 추가해야 합니다. 이 연습에서는 `OrdersBindingSource.EndEdit` 메서드 호출을 추가해야 합니다.  
   
 #### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>저장 전에 관련 테이블로 변경 내용을 커밋하도록 코드를 업데이트하려면  
   
-1. 두 번 클릭 합니다 **저장** 단추를 <xref:System.Windows.Forms.BindingNavigator> 열려는 **Form1** 코드 편집기에서.  
+1. <xref:System.Windows.Forms.BindingNavigator>에서 **저장** 단추를 두 번 클릭하여 코드 편집기에서 **Form1**을 엽니다.  
   
-2. `OrdersBindingSource.EndEdit` 메서드를 호출하는 줄 뒤에 `CustomersBindingSource.EndEdit` 메서드를 호출하는 코드 줄을 추가합니다. 코드를 **저장** 단추 클릭 이벤트는 다음과 같습니다.  
+2. `OrdersBindingSource.EndEdit` 메서드를 호출하는 줄 뒤에 `CustomersBindingSource.EndEdit` 메서드를 호출하는 코드 줄을 추가합니다. **저장** 단추 클릭 이벤트 내의 코드는 다음과 같습니다.  
   
     [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs#1)]
     [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb#1)]  
   
-   이처럼 데이터를 데이터베이스에 저장하기 전에 관련 자식 테이블에 대해 변경 내용을 커밋해야 할 뿐 아니라 새 자식 레코드를 데이터 집합에 추가하기 전에 새로 만든 부모 레코드도 커밋해야 할 수 있습니다. 다시 말해서 외래 키 제약 조건으로 인해 새 자식 레코드(Orders)를 데이터 집합에 추가할 수 있도록 설정되기 전에 새 부모 레코드(Customer)를 데이터 집합에 추가해야 할 수 있습니다. 자식 `BindingSource.AddingNew` 이벤트를 사용하면 이 작업을 수행할 수 있습니다.  
+   이처럼 데이터를 데이터베이스에 저장하기 전에 관련 자식 테이블에 대해 변경 내용을 커밋해야 할 뿐 아니라 새 자식 레코드를 데이터 세트에 추가하기 전에 새로 만든 부모 레코드도 커밋해야 할 수 있습니다. 다시 말해서 외래 키 제약 조건으로 인해 새 자식 레코드(Orders)를 데이터 세트에 추가할 수 있도록 설정되기 전에 새 부모 레코드(Customer)를 데이터 세트에 추가해야 할 수 있습니다. 자식 `BindingSource.AddingNew` 이벤트를 사용하면 이 작업을 수행할 수 있습니다.  
   
 > [!NOTE]
->  새 부모 레코드를 적용 해야 하는지 여부를 데이터 원본에 바인딩하는 데 사용 되는 컨트롤의 유형에 따라 달라 집니다. 이 연습에서는 개별 컨트롤을 사용 하 여 부모 테이블에 바인딩합니다. 이 새 부모 레코드를 커밋하는 추가 코드가 필요 합니다. 같은 부모 레코드 대신 복잡 한 바인딩 컨트롤에서 표시 된 경우는 <xref:System.Windows.Forms.DataGridView>이 추가 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 부모 레코드가 필요 하지 않을 것에 대 한 호출 합니다. 컨트롤의 기본 데이터 바인딩 기능이 새 레코드 커밋을 처리하기 때문입니다.  
+> 새 부모 레코드를 적용 해야 하는지 여부를 데이터 원본에 바인딩하는 데 사용 되는 컨트롤의 유형에 따라 달라 집니다. 이 연습에서는 개별 컨트롤을 사용 하 여 부모 테이블에 바인딩합니다. 이 새 부모 레코드를 커밋하는 추가 코드가 필요 합니다. 같은 부모 레코드 대신 복잡 한 바인딩 컨트롤에서 표시 된 경우는 <xref:System.Windows.Forms.DataGridView>이 추가 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 부모 레코드가 필요 하지 않을 것에 대 한 호출 합니다. 컨트롤의 기본 데이터 바인딩 기능이 새 레코드 커밋을 처리하기 때문입니다.  
   
-#### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>새 자식 레코드를 추가하기 전에 데이터 집합에서 부모 레코드를 커밋하는 코드를 추가하려면  
+#### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>새 자식 레코드를 추가하기 전에 데이터 세트에서 부모 레코드를 커밋하는 코드를 추가하려면  
   
-1.  `OrdersBindingSource.AddingNew` 이벤트에 대한 이벤트 처리기를 만듭니다.  
+1. `OrdersBindingSource.AddingNew` 이벤트에 대한 이벤트 처리기를 만듭니다.  
   
-    -   오픈 **Form1** 디자인 뷰에서 선택 **OrdersBindingSource** 구성 요소 트레이에 선택 **이벤트** 에 **속성** 창 및 다음 두 번 클릭 합니다 **AddingNew** 이벤트입니다.  
+    - 오픈 **Form1** 디자인 뷰에서 선택 **OrdersBindingSource** 구성 요소 트레이에 선택 **이벤트** 에 **속성** 창 및 다음 두 번 클릭 합니다 **AddingNew** 이벤트입니다.  
   
-2.  호출 하는 이벤트 처리기에 코드 줄을 추가 합니다 `CustomersBindingSource.EndEdit` 메서드. `OrdersBindingSource_AddingNew` 이벤트 처리기의 코드는 다음과 같습니다.  
+2. 호출 하는 이벤트 처리기에 코드 줄을 추가 합니다 `CustomersBindingSource.EndEdit` 메서드. `OrdersBindingSource_AddingNew` 이벤트 처리기의 코드는 다음과 같습니다.  
   
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#2](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs#2)]
      [!code-vb[VSProDataOrcasHierarchicalUpdate#2](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb#2)]  
@@ -124,8 +120,7 @@ ms.locfileid: "50220181"
 |`UpdateAll` 메서드|모든 데이터 테이블에서 모든 데이터를 저장합니다.|  
 |`BackUpDataSetBeforeUpdate` 속성|실행 하기 전에 데이터 집합의 백업 복사본을 만들지 여부를 결정 합니다 `TableAdapterManager.UpdateAll` 메서드. 부울 값입니다.|  
 |*tableName* `TableAdapter` 속성|나타냅니다는 `TableAdapter`합니다. 생성 된 `TableAdapterManager` 각각에 대 한 속성을 포함 `TableAdapter` 관리 합니다. 예를 들어, Customers 및 Orders 테이블이 포함 된 데이터 집합 사용 하 여 생성 됩니다는 `TableAdapterManager` 포함 된 `CustomersTableAdapter` 및 `OrdersTableAdapter` 속성입니다.|  
-|`UpdateOrder` 속성|개별 insert, update 및 delete 명령 순서를 제어합니다. 이 설정의 값 중 하나에 `TableAdapterManager.UpdateOrderOption` 열거형입니다.<br /><br /> 기본적으로 `UpdateOrder` 로 설정 된 **InsertUpdateDelete**합니다. 이 즉, 삽입, 업데이트 하 고 삭제 한 다음 데이터 집합의 모든 테이블에 대해 수행 됩니다. 자세한 내용은 [방법: 계층적 업데이트를 순서 대로 수행 하 고 설정](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83)합니다.|  
+|`UpdateOrder` 속성|개별 insert, update 및 delete 명령 순서를 제어합니다. 이 설정의 값 중 하나에 `TableAdapterManager.UpdateOrderOption` 열거형입니다.<br /><br /> 기본적으로 `UpdateOrder` 로 설정 된 **InsertUpdateDelete**합니다. 이 즉, 삽입, 업데이트 하 고 삭제 한 다음 데이터 집합의 모든 테이블에 대해 수행 됩니다. 자세한 내용은 [방법: 계층적 업데이트를 수행 하는 경우 순서 설정](https://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83)합니다.|  
   
 ## <a name="see-also"></a>참고 항목  
  [데이터를 다시 데이터베이스에 저장](../data-tools/save-data-back-to-the-database.md)
-

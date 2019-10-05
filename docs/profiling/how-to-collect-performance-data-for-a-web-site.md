@@ -1,8 +1,6 @@
 ---
 title: '방법: 웹 사이트에 대한 성능 데이터 수집 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vsperf.url.url
@@ -16,19 +14,19 @@ helpviewer_keywords:
 - ASP.NET, performance profilng
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2d9cb832d8797eb4ebf16482f4bef02aa6644a3
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f91646575fba2df1f48c08adc7a9233bb63f27df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974023"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>방법: 웹 사이트에 대한 성능 데이터 수집
 
-[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 응용 프로그램에 대한 성능 데이터를 수집하려면 **성능 마법사**를 사용할 수 있습니다. Visual Studio에 열려 있는 웹 응용 프로그램을 프로파일링하거나, 로컬 컴퓨터에 있고 Visual Studio IDE에 열려 있지 않은 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 사이트를 프로파일링할 수 있습니다.
+[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 애플리케이션에 대한 성능 데이터를 수집하려면 **성능 마법사**를 사용할 수 있습니다. Visual Studio에 열려 있는 웹 애플리케이션을 프로파일링하거나, 로컬 컴퓨터에 있고 Visual Studio IDE에 열려 있지 않은 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 사이트를 프로파일링할 수 있습니다.
 
 > [!NOTE]
 > **성능 마법사** 에서는 계층 상호 작용(TIP) 데이터, JScript 성능 데이터 또는 둘 모두를 수집된 프로파일링 데이터에 추가할 수 있습니다. TIP 옵션은 서버 쪽 프로세스에서 데이터를 수집합니다. JScript 프로파일링은 로컬 또는 원격 웹 사이트에서 실행 중인 스크립트에서 데이터를 수집합니다. 대부분의 경우 옵션을 하나만 선택해야 합니다.
@@ -49,9 +47,9 @@ ms.locfileid: "53064299"
 
 2. **분석** 메뉴에서 **성능 프로파일러**를 선택하고 **성능 탐색기**를 선택한 다음 **시작**을 선택합니다.
 
-3. 마법사의 첫 번째 페이지에서 프로파일링 방법을 선택하고 **다음**을 클릭합니다. 프로파일링 방법에 대한 자세한 내용은 [성능 컬렉션 메서드 이해](../profiling/understanding-performance-collection-methods.md)를 참조하세요. 동시성 시각화 도우미 프로파일링 방법은 웹 응용 프로그램에 사용할 수 없습니다.
+3. 마법사의 첫 번째 페이지에서 프로파일링 방법을 선택하고 **다음**을 클릭합니다. 프로파일링 방법에 대한 자세한 내용은 [성능 컬렉션 메서드 이해](../profiling/understanding-performance-collection-methods.md)를 참조하세요. 동시성 시각화 도우미 프로파일링 방법은 웹 애플리케이션에 사용할 수 없습니다.
 
-4. **다음 응용 프로그램 중 프로파일링할 대상을 선택하세요.** 드롭다운 목록에서 현재 프로젝트가 선택되어 있는지 확인하고 **다음**을 클릭합니다.
+4. **다음 애플리케이션 중 프로파일링할 대상을 선택하세요.** 드롭다운 목록에서 현재 프로젝트가 선택되어 있는지 확인하고 **다음**을 클릭합니다.
 
 5. 마법사의 세 번째 페이지에서 TIP(계층 상호 작용 프로파일링) 데이터, 웹 페이지에서 실행 중인 JavaScript의 데이터 또는 둘 모두를 선택할 수 있습니다.
 
@@ -63,7 +61,7 @@ ms.locfileid: "53064299"
 
 7. 마법사의 네 번째 페이지에서 **마침**을 클릭합니다.
 
-8. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 응용 프로그램에 대해 성능 세션이 만들어지고 브라우저에서 웹 사이트가 시작됩니다. 프로파일링을 수행할 기능을 실행하고 브라우저를 닫습니다.
+8. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 애플리케이션에 대해 성능 세션이 만들어지고 브라우저에서 웹 사이트가 시작됩니다. 프로파일링을 수행할 기능을 실행하고 브라우저를 닫습니다.
 
      프로파일러는 데이터 파일을 생성하고 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 주 창에 데이터의 요약 보기를 표시합니다.
 
@@ -75,13 +73,13 @@ ms.locfileid: "53064299"
 
 3. 마법사의 첫 번째 페이지에서 프로파일링 방법을 선택하고 **다음**을 클릭합니다. 자세한 내용은 [성능 컬렉션 메서드 이해](../profiling/understanding-performance-collection-methods.md)를 참조하세요.
 
-4. 마법사의 두 번째 페이지에서 **ASP.NET 또는 JavaScript 응용 프로그램 프로파일링** 옵션을 선택하고 **다음**을 클릭합니다.
+4. 마법사의 두 번째 페이지에서 **ASP.NET 또는 JavaScript 애플리케이션 프로파일링** 옵션을 선택하고 **다음**을 클릭합니다.
 
-5. 마법사의 세 번째 페이지에서 **웹 응용 프로그램이 실행될 URL 또는 경로** 상자에 응용 프로그램 홈 페이지에 대한 URL을 입력하고 **다음**을 클릭합니다.
+5. 마법사의 세 번째 페이지에서 **웹 애플리케이션이 실행될 URL 또는 경로** 상자에 애플리케이션 홈 페이지에 대한 URL을 입력하고 **다음**을 클릭합니다.
 
-   - 서버(IIS) 기반 웹 사이트의 경우 **<`http://localhost/MySite/default.aspx`>** 와 같은 URL을 입력합니다. 이렇게 하면 MySite의 응용 프로그램 루트에서 로컬 컴퓨터의 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 응용 프로그램이 프로파일링되며, 해당 사이트의 default.aspx 페이지가 Internet Explorer에서 시작되어 세션이 시작됩니다.
+   - 서버(IIS) 기반 웹 사이트의 경우 **<`http://localhost/MySite/default.aspx`>** 와 같은 URL을 입력합니다. 이렇게 하면 MySite의 애플리케이션 루트에서 로컬 컴퓨터의 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 애플리케이션이 프로파일링되며, 해당 사이트의 default.aspx 페이지가 Internet Explorer에서 시작되어 세션이 시작됩니다.
 
-   - 파일 기반 웹 사이트에는 file///**c:\WebSites\MySite\default.aspx**같은 경로를 입력합니다. 이렇게 하면 c:\webSites\MySite에 있는 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 응용 프로그램이 프로파일링되고 `http://localhost:nnnn/MySite/default.aspx` 페이지가 Internet Explorer에서 시작되어 세션이 시작됩니다.
+   - 파일 기반 웹 사이트에는 file///**c:\WebSites\MySite\default.aspx**같은 경로를 입력합니다. 이렇게 하면 c:\webSites\MySite에 있는 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 애플리케이션이 프로파일링되고 `http://localhost:nnnn/MySite/default.aspx` 페이지가 Internet Explorer에서 시작되어 세션이 시작됩니다.
 
    - JavaScript 데이터를 수집할 외부 사이트에는 `http://www.contoso.com`과 같은 URL을 입력합니다.
 
@@ -103,7 +101,7 @@ ms.locfileid: "53064299"
 
 ## <a name="see-also"></a>참고 항목
 
-[개요](../profiling/overviews-performance-tools.md)  
-[성능 세션 구성](../profiling/configuring-performance-sessions.md)  
-[계측 데이터 값 이해](../profiling/understanding-instrumentation-data-values.md)  
+[개요](../profiling/overviews-performance-tools.md)
+[성능 세션 구성](../profiling/configuring-performance-sessions.md)
+[계측 데이터 값 이해](../profiling/understanding-instrumentation-data-values.md)
 [샘플링 데이터 값 이해](../profiling/understanding-sampling-data-values.md)

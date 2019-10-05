@@ -1,14 +1,9 @@
 ---
-title: 'CA2213: 삭제 가능한 필드는 삭제 | Microsoft Docs'
-ms.custom: ''
+title: 'CA2213: 삭제 가능한 필드를 삭제 해야 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DisposableFieldsShouldBeDisposed
 - CA2213
@@ -20,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b4e59dd35ab1f787dcaada5448443e35efc1f6c9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cbb606729fe89eb5c2ebe3c814096ef39120836a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910506"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685263"
 ---
 # <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: 삭제 가능한 필드는 삭제해야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ ms.locfileid: "49910506"
  안전 자신이 담당 하지 않는 필드를 보유 하는 리소스를 해제 한 경우 또는 경우에이 규칙에서 경고를 표시 하 게 호출 <xref:System.IDisposable.Dispose%2A> 규칙 검사를 보다 자세히 호출 수준에서 발생 합니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는 형식을 보여 줍니다 `TypeA` 구현 하는 <xref:System.IDisposable> (`FT` 이전 설명에서).
+ 다음 예제에서는 형식을 보여 줍니다 `TypeA` 구현 하는 <xref:System.IDisposable> (`FT` 이전 토론에서).
 
  [!code-csharp[FxCop.Usage.IDisposablePattern#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposablePattern/cs/FxCop.Usage.IDisposablePattern.cs#1)]
 
@@ -60,7 +55,4 @@ ms.locfileid: "49910506"
  [!code-csharp[FxCop.Usage.IDisposableFields#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposableFields/cs/FxCop.Usage.IDisposableFields.cs#1)]
 
 ## <a name="see-also"></a>참고 항목
- <xref:System.IDisposable?displayProperty=fullName> [삭제 패턴](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
-
-
-
+ <xref:System.IDisposable?displayProperty=fullName> [삭제 패턴](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

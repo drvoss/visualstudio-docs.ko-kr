@@ -1,26 +1,23 @@
 ---
 title: 메시징 활동 디자이너 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 897e63cf-a42f-4edd-876f-c4ccfffaf6d6
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 254b8d819da8cd1d06d21699940c3b118aa75119
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 250b213fc3bc54d67f55d41c5eb3aba7e3488cd4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62420212"
 ---
 # <a name="messaging-activity-designers"></a>메시징 활동 디자이너
-메시징 활동 디자이너는 [!INCLUDE[indigo1](../includes/indigo1-md.md)] 응용 프로그램에서 [!INCLUDE[wf](../includes/wf-md.md)] 메시지를 보내고 받는 메시징 활동을 만들고 구성하는 데 사용됩니다. [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]에는 다섯 가지 메시징 활동이 도입되었으며, [!INCLUDE[wfd1](../includes/wfd1-md.md)]에는 두 가지 새로운 템플릿 디자이너가 있어 워크플로 내의 메시징을 관리할 수 있습니다. 이 단원의 항목 및 아래 표의 항목에서는 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 활동 및 템플릿 디자이너의 사용 방법에 대한 지침을 제공합니다.  
+메시징 활동 디자이너는 [!INCLUDE[indigo1](../includes/indigo1-md.md)] 애플리케이션에서 [!INCLUDE[wf](../includes/wf-md.md)] 메시지를 보내고 받는 메시징 활동을 만들고 구성하는 데 사용됩니다. [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]에는 다섯 가지 메시징 활동이 도입되었으며, [!INCLUDE[wfd1](../includes/wfd1-md.md)]에는 두 가지 새로운 템플릿 디자이너가 있어 워크플로 내의 메시징을 관리할 수 있습니다. 이 단원의 항목 및 아래 표의 항목에서는 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 활동 및 템플릿 디자이너의 사용 방법에 대한 지침을 제공합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
   

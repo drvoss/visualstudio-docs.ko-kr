@@ -1,14 +1,9 @@
 ---
 title: 차단 시간 프로필 보고서 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.blocking
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 3bc45af0-3ba6-4fa3-a336-be8e9ae95107
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 31be25e5fb41f2e7a92ee2c19803d74c442fcad4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0efeb7fb0eb481d0b8d62ff4a9ebf9daad98c39f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147235"
 ---
 # <a name="blocking-time-profile-report"></a>차단 시간 프로필 보고서
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,12 +36,12 @@ ms.locfileid: "51807025"
   
 |열 이름|설명|  
 |-----------------|-----------------|  
-|이름|호출 스택의 각 수준에 대한 함수의 이름입니다.|  
+|name|호출 스택의 각 수준에 대한 함수의 이름입니다.|  
 |인스턴스|보이는 기간에 대한 차단 호출의 인스턴스 수입니다.|  
 |포함 차단 시간|호출 스택 트리의 이 수준까지 이르는 모든 스택에 소요된 총 차단 시간입니다. 포함 수는 이 함수에 대한 제외 차단 시간과 모든 하위 노드에 대한 제외 차단 시간의 합입니다.|  
 |제외 차단 시간|이 함수가 호출 스택에서 최하위 수준에 있는 동안 소요된 총 차단 시간입니다. 제외 차단 시간 값이 높은 고유한 호출 스택 항목이 관심 함수일 수 있습니다.|  
 |API/대기 범주|호출 스택의 최하위 수준에 있는 함수에만 표시됩니다. 차단 호출의 서명이 인식되는 곳에서는 차단 API의 이름이 제공됩니다. 시그니처가 인식되지 않으면 커널에서 보고된 정보가 제공됩니다.|  
-|설명|함수의 정규화된 이름입니다. 여기에는 사용 가능한 경우 줄 수가 포함됩니다.|  
+|세부 정보|함수의 정규화된 이름입니다. 여기에는 사용 가능한 경우 줄 수가 포함됩니다.|  
   
 ### <a name="synchronization"></a>동기화  
  동기화 보고서에는 동기화에서 차단되는 세그먼트를 처리하는 호출 및 각 호출 스택의 집계 차단 시간이 표시됩니다. 자세한 내용은 [동기화 시간](../profiling/synchronization-time.md)을 참조하세요.  
@@ -68,6 +63,3 @@ ms.locfileid: "51807025"
   
 ## <a name="see-also"></a>참고 항목  
  [스레드 뷰](../profiling/threads-view-parallel-performance.md)
-
-
-

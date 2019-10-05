@@ -1,14 +1,9 @@
 ---
 title: XslTransformation 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -21,18 +16,17 @@ ms.assetid: 6f3a7d81-3ae3-4703-9a06-870b32b69d80
 caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dad55677c5b75ec2c2721bd489a031cbf29597da
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1705fd2b79f8b5044aa4ffa0b65801d6db6c7f33
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292320"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198952"
 ---
 # <a name="xsltransformation-task"></a>XslTransformation 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XSLT 또는 컴파일된 XSLT 및 출력을 사용하여 XML 입력을 출력 디바이스 또는 파일로 변환합니다.  
   
 ## <a name="parameters"></a>매개 변수  
@@ -54,6 +48,3 @@ XSLT 또는 컴파일된 XSLT 및 출력을 사용하여 XML 입력을 출력 �
 ## <a name="see-also"></a>참고 항목  
  [작업](../msbuild/msbuild-tasks.md)   
  [작업 참조](../msbuild/msbuild-task-reference.md)
-
-
-

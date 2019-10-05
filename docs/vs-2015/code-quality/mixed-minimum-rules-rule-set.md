@@ -1,31 +1,25 @@
 ---
 title: 혼합된 최소 규칙 규칙 집합 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 50a327173bd1d5edac9a378e0251a50ce045a256
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7c690389b5abc3b6e37aed1629ae5a640a5d99a7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831447"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682200"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>혼합 최소 규칙 규칙 집합
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Microsoft 혼합 최소 규칙은 잠재적 보안 허점 및 응용 프로그램 작동 중단을 포함 하 여 공용 언어 런타임을 지 원하는 c + + 프로젝트에서 가장 중요 한 문제에 집중 합니다. 공용 언어 런타임을 지 원하는 c + + 프로젝트에 대해 만든 모든 사용자 지정 규칙 집합에 설정 합니다.이 규칙을 포함 해야 합니다.  
-
+Microsoft 혼합 최소 규칙의 가장 중요 한 문제에 집중 하 C++ 잠재적 보안 허점 및 응용 프로그램 작동 중단을 포함 하 여 공용 언어 런타임을 지 원하는 프로젝트입니다. 이 규칙 집합에 대해 만든 모든 사용자 지정 규칙 집합에 포함 해야 하면 C++ 공용 언어 런타임에서 지 원하는 프로젝트입니다.  
 
 |                                            규칙                                             |                                                  설명                                                  |
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
@@ -44,7 +38,7 @@ Microsoft 혼합 최소 규칙은 잠재적 보안 허점 및 응용 프로그�
 |                              [C6270](../code-quality/c6270.md)                              |                                   Format 함수에 부동 인수 없음                                   |
 |                              [C6271](../code-quality/c6271.md)                              |                                       Format 함수의 추가 인수                                       |
 |                              [C6272](../code-quality/c6272.md)                              |                                     Format 함수의 비부동 인수                                     |
-|                              [C6273](../code-quality/c6273.md)                              |                                    Format 함수의 비정수 인수                                     |
+|                              [C6273](../code-quality/c6273.md)                              |                                    Format 함수에 비정수 인수                                     |
 |                              [C6274](../code-quality/c6274.md)                              |                                   Format 함수의 비문자 인수                                   |
 |                              [C6276](../code-quality/c6276.md)                              |                                              잘못된 문자열 캐스팅                                              |
 |                              [C6277](../code-quality/c6277.md)                              |                                          잘못된 CreateProcess 호출                                           |
@@ -65,7 +59,7 @@ Microsoft 혼합 최소 규칙은 잠재적 보안 허점 및 응용 프로그�
 |                              [C6504](../code-quality/c6504.md)                              |                                              비포인터에 대한 Null                                              |
 |                              [C6505](../code-quality/c6505.md)                              |                                               Void에 대한 MustCheck                                               |
 |                              [C6506](../code-quality/c6506.md)                              |                                      비포인터 또는 배열에 대한 버퍼 크기                                      |
-|        [C6507](http://msdn.microsoft.com/en-us/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       역참조 0에서의 Null 불일치                                       |
+|        [C6507](https://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       역참조 0에서의 Null 불일치                                       |
 |                              [C6508](../code-quality/c6508.md)                              |                                           상수에 대한 쓰기 액세스                                            |
 |                              [C6509](../code-quality/c6509.md)                              |                                          사전 조건에서 반환이 사용됨                                          |
 |                              [C6510](../code-quality/c6510.md)                              |                                        비포인터에 대한 Null 종료                                         |
@@ -76,13 +70,12 @@ Microsoft 혼합 최소 규칙은 잠재적 보안 허점 및 응용 프로그�
 |                              [C6516](../code-quality/c6516.md)                              |                                          특성에 대한 속성 없음                                           |
 |                              [C6517](../code-quality/c6517.md)                              |                                       읽기 불가능 버퍼에 대한 유효 크기                                       |
 |                              [C6518](../code-quality/c6518.md)                              |                                     쓰기 불가능 버퍼에 대한 쓰기 가능 크기                                      |
-|        [C6519](http://msdn.microsoft.com/en-us/2b6326b0-0539-4d26-8fb1-720114933232)        |                  주석이 잘못되었습니다. 'NeedsRelease' 속성의 값은 Yes 또는 No여야 합니다.                   |
-|        [C6521](http://msdn.microsoft.com/en-us/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)        |                                        잘못된 크기 문자열 역참조                                        |
+|        [C6521](https://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)        |                                        잘못된 크기 문자열 역참조                                        |
 |                              [C6522](../code-quality/c6522.md)                              |                                           잘못된 크기 문자열 유형                                            |
-|        [C6523](http://msdn.microsoft.com/en-us/11397a31-b224-46b0-afb7-d49ca576a3bb)        |                                         잘못된 크기 문자열 매개 변수                                         |
+|        [C6523](https://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)        |                                         잘못된 크기 문자열 매개 변수                                         |
 |                              [C6525](../code-quality/c6525.md)                              |                                   잘못된 크기 문자열 접근할 수 없는 위치                                    |
-|        [C6526](http://msdn.microsoft.com/en-us/59c590c7-0098-4166-a1ac-87f324596002)        |                                        잘못된 크기 문자열 버퍼 유형                                        |
-|                              [C6527](../code-quality/c6527.md)                              |              주석이 잘못되었습니다. 'NeedsRelease' 속성은 void 형식 값에 사용할 수 없습니다.               |
+|        [C6526](https://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)        |                                        잘못된 크기 문자열 버퍼 유형                                        |
+|                              [C6527](../code-quality/c6527.md)                              |              주석이 잘못 되었습니다. 'NeedsRelease ' 속성은 void 형식의 값에 사용할 수 없습니다.               |
 |                              [C6530](../code-quality/c6530.md)                              |                                       인식할 수 없는 형식 문자열 스타일                                        |
 |                              [C6540](../code-quality/c6540.md)                              | 이 함수에 특성 주석을 사용하면 기존의 모든 __declspec 주석이 무효화됩니다.  |
 |                              [C6551](../code-quality/c6551.md)                              |                              크기 사양이 잘못되었습니다. 식을 구문 분석할 수 없습니다.                              |
@@ -97,18 +90,18 @@ Microsoft 혼합 최소 규칙은 잠재적 보안 허점 및 응용 프로그�
 |                             [C28182](../code-quality/c28182.md)                             |         NULL 포인터를 역참조하고 있습니다. 포인터에 다른 포인터와 동일한 NULL 값이 포함되어 있습니다.          |
 |                             [C28202](../code-quality/c28202.md)                             |                                    비정적 멤버에 대한 잘못된 참조입니다.                                     |
 |                             [C28203](../code-quality/c28203.md)                             |                                     클래스 멤버에 대한 모호한 참조입니다.                                      |
-|                             [C28205](../code-quality/c28205.md)                             |                           \_성공\_ 나 \_On_failure\_ 불법적인 컨텍스트에 사용                            |
+|                             [C28205](../code-quality/c28205.md)                             |                           \_Success\_ 또는 \_On_failure\_가 잘못된 컨텍스트에서 사용되었습니다.                            |
 |                             [C28206](../code-quality/c28206.md)                             |                                   왼쪽 피연산자가 구조체를 가리킵니다. '->'를 사용하세요.                                   |
 |                             [C28207](../code-quality/c28207.md)                             |                                       왼쪽 피연산자가 구조체입니다. '.'를 사용하세요.                                       |
 |                             [C28210](../code-quality/c28210.md)                             |                 __on_failure 컨텍스트에 대한 주석이 명시적 사전 컨텍스트에 없어야 합니다.                  |
 |                             [C28211](../code-quality/c28211.md)                             |                                 SAL_context에 대해 정적 컨텍스트 이름이 필요합니다.                                  |
 |                             [C28212](../code-quality/c28212.md)                             |                                  주석에 대한 포인터 식이 있어야 합니다.                                   |
-|                             [C28213](../code-quality/c28213.md)                             | 합니다 \_Use_decl_annotations\_ 이전 선언을 수정 하지 않고 참조 하려면 주석을 사용 해야 합니다. |
+|                             [C28213](../code-quality/c28213.md)                             | 이전 선언을 수정하지 않고 참조하려면 \_Use_decl_annotations\_ 주석을 사용해야 합니다. |
 |                             [C28214](../code-quality/c28214.md)                             |                                   특성 매개 변수 이름은 p1...p9여야 합니다.                                   |
 |                             [C28215](../code-quality/c28215.md)                             |                    typefix는 이미 typefix가 있는 매개 변수에 적용할 수 없습니다.                    |
 |                             [C28216](../code-quality/c28216.md)                             |        checkReturn 주석은 특정 함수 매개 변수에 대한 사전 조건에만 적용됩니다.         |
 |                             [C28217](../code-quality/c28217.md)                             |            함수의 경우 주석에 대한 매개 변수 개수가 파일에 있는 개수와 일치하지 않습니다.             |
-|                             [C28218](../code-quality/c28218.md)                             |             함수 매개 변수의 경우 주석의 매개 변수가 파일에 있는 매개 변수와 일치하지 않습니다.              |
+|                             [C28218](../code-quality/c28218.md)                             |             함수 매개 변수의 경우 주석의 매개 변수 일치 하지 않는 파일              |
 |                             [C28219](../code-quality/c28219.md)                             |                 주석에 있는 매개 변수 주석에 열거의 멤버가 필요합니다.                 |
 |                             [C28220](../code-quality/c28220.md)                             |                  주석에 있는 매개 변수에 정수 식이 필요합니다.                   |
 |                             [C28221](../code-quality/c28221.md)                             |                        주석에 있는 매개 변수에 문자열 식이 필요합니다.                         |
@@ -142,26 +135,25 @@ Microsoft 혼합 최소 규칙은 잠재적 보안 허점 및 응용 프로그�
 |                             [C28254](../code-quality/c28254.md)                             |                               dynamic_cast<>()는 주석에서 지원되지 않습니다.                                |
 |                             [C28262](../code-quality/c28262.md)                             |                    주석에 대한 주석 구문 오류가 함수에 있습니다.                     |
 |                             [C28263](../code-quality/c28263.md)                             |                 내장 주석에 대한 조건부 주석에 구문 오류가 있습니다.                 |
-|       [C28264](http://msdn.microsoft.com/en-us/bf6ea983-a06e-4752-a042-747a7dbf338c)        |                                    결과 목록 값은 상수여야 합니다.                                     |
 |                             [C28267](../code-quality/c28267.md)                             |                    함수 주석에서 주석 구문 오류가 발견되었습니다.                    |
 |                             [C28272](../code-quality/c28272.md)                             |      함수, 매개 변수에 대한 주석이 검사 시 함수 선언과 일치하지 않습니다.      |
 |                             [C28273](../code-quality/c28273.md)                             |                    함수의 경우 단서가 함수 선언과 일치하지 않습니다.                     |
-|                             [C28275](../code-quality/c28275.md)                             |                                   매개 변수의 \_Macro_value\_ isnull                                    |
+|                             [C28275](../code-quality/c28275.md)                             |                                   \_Macro_value\_에 대한 매개 변수가 null입니다.                                    |
 |                             [C28279](../code-quality/c28279.md)                             |                           기호의 경우 일치하는 'end'가 없는 'begin'이 있습니다.                            |
 |                             [C28280](../code-quality/c28280.md)                             |                           기호의 경우 일치하는 'begin'이 없는 'end'가 있습니다.                           |
 |                             [C28282](../code-quality/c28282.md)                             |                                    형식 문자열이 사전 조건에 있어야 합니다.                                    |
 |                             [C28285](../code-quality/c28285.md)                             |                                    함수의 경우 매개 변수에 구문 오류가 있습니다.                                    |
 |                             [C28286](../code-quality/c28286.md)                             |                                    함수의 경우 끝 부분 근처에 구문 오류가 있습니다.                                    |
-|                             [C28287](../code-quality/c28287.md)                             |                함수의 경우 주석에 구문 오류가에 \_에서\_() 주석에 (인식할 수 없는 매개 변수 이름)                |
-|                             [C28288](../code-quality/c28288.md)                             |                  함수의 경우 주석에 구문 오류가에 \_에서\_() 주석에 (잘못 된 매개 변수 이름)                   |
-|                             [C28289](../code-quality/c28289.md)                             |                함수의 경우 ReadableTo 또는 WritableTo에 limit-spec가 매개 변수로 포함되지 않았습니다.                |
+|                             [C28287](../code-quality/c28287.md)                             |                함수의 경우 \_At\_() 주석에 구문 오류(인식할 수 없는 매개 변수 이름)                |
+|                             [C28288](../code-quality/c28288.md)                             |                  함수의 경우 \_At\_() 주석에 구문 오류(잘못된 매개 변수 이름)                   |
+|                             [C28289](../code-quality/c28289.md)                             |                함수의 경우: ReadableTo 또는 WritableTo 없는 위한 제한 사양을 매개 변수로                |
 |                             [C28290](../code-quality/c28290.md)                             |           함수의 주석에 실제 매개 변수 개수보다 많은 외부 참조가 있습니다.            |
 |                             [C28291](../code-quality/c28291.md)                             |                        함수의 경우 역참조 수준 0에서 post null/notnull이 의미가 없습니다.                        |
 |                             [C28300](../code-quality/c28300.md)                             |                            연산자에 호환되지 않는 형식의 식 피연산자입니다.                             |
 |                             [C28301](../code-quality/c28301.md)                             |                               함수의 첫 번째 선언에 대한 주석이 없습니다.                               |
-|                             [C28302](../code-quality/c28302.md)                             |                             추가 \_Deref\_ 연산자에서 발견 되었습니다.                              |
-|                             [C28303](../code-quality/c28303.md)                             |                           모호한 \_Deref\_ 연산자에서 발견 되었습니다.                            |
-|                             [C28304](../code-quality/c28304.md)                             |                     부적절 하 게 배치 \_Notref\_ 토큰에 적용할 연산자를 찾을 수 있습니다.                      |
+|                             [C28302](../code-quality/c28302.md)                             |                             주석에 추가 \_Deref\_ 연산자가 있습니다.                              |
+|                             [C28303](../code-quality/c28303.md)                             |                           주석에 모호한 \_Deref\_ 연산자가 있습니다.                            |
+|                             [C28304](../code-quality/c28304.md)                             |                     토큰에 부적절하게 배치된 \_Notref\_ 연산자가 적용되었습니다.                      |
 |                             [C28305](../code-quality/c28305.md)                             |                                토큰을 구문 분석하는 동안 오류가 발생했습니다.                                 |
 |                             [C28350](../code-quality/c28350.md)                             |                  주석이 조건부로 적용할 수 없는 상황을 설명합니다.                   |
 |                             [C28351](../code-quality/c28351.md)                             |         주석이 동적 값(변수)을 조건에 사용할 수 없는 경우를 설명합니다.          |
@@ -169,4 +161,3 @@ Microsoft 혼합 최소 규칙은 잠재적 보안 허점 및 응용 프로그�
 |                 [CA1821](../code-quality/ca1821-remove-empty-finalizers.md)                 |                                            빈 종료자를 제거하십시오.                                            |
 |          [CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)           |                                     삭제 가능한 필드는 삭제해야 합니다.                                      |
 | [CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md) |                            ValueType.Equals를 재정의할 때 같음 연산자를 오버로드하십시오.                            |
-

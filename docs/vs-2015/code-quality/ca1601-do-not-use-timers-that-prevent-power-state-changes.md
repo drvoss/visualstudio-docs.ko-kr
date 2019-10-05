@@ -1,14 +1,9 @@
 ---
-title: 'CA1601: 전원 상태 변경을 방해 하는 타이머를 사용 하지 마십시오 | Microsoft Docs'
-ms.custom: ''
+title: 'CA1601: 전원 상태 변경을 방해 하는 타이머를 사용 하지 않는 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1601
 - DoNotUseTimersThatPreventPowerStateChanges
@@ -20,14 +15,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 27c4098412dfead4a17945b389d9a14ffddbc495
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 228c95a8f0c3e1b9b1643e529e78f52f1e059bc5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189258"
 ---
-# <a name="ca1601-do-not-use-timers-that-prevent-power-state-changes"></a>CA1601: 전원 상태 변경을 방해하는 타이머를 사용하지 마십시오.
+# <a name="ca1601-do-not-use-timers-that-prevent-power-state-changes"></a>CA1601: 전원 상태 변경을 방해하는 타이머를 사용하지 마세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -48,6 +43,3 @@ ms.locfileid: "49912749"
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  타이머를 초당 여러 번 발생 하는 것은 필수 및 이동성 고려 사항을 무시할 수는 경우에이 규칙을 표시 하지 않습니다.
-
-
-

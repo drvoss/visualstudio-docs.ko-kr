@@ -1,12 +1,9 @@
 ---
 title: 스윔 레인의 속성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.dsltools.dsldesigner.swimlane
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: 47edbc2d-09e4-48ac-b4d1-5268a06a27e6
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c914703d4cbe48e516d1d4e1aa48afb20c9e1cfe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: dd4435ed0930a920cd36e741ac7461e6f95ba815
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189938"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701509"
 ---
 # <a name="properties-of-swimlanes"></a>스윔 레인의 속성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +55,4 @@ ms.locfileid: "49189938"
 |Help Keyword|이 스윔 레인에 대 한 F1 도움말을 인덱싱하는 데는 키워드입니다.|\<없음 >|  
   
 ## <a name="see-also"></a>참고 항목  
- [도메인 특정 언어 도구 용어집](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

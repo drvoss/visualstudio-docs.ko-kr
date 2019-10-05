@@ -1,25 +1,20 @@
 ---
 title: 하위 항목(XElement 동적 속성) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 9611d00f-23bf-444b-ab0c-f30701bfc13d
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 2a21527162a8204ec47c5af9630caf3041d8e220
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8c89e04346a4b08d6ee7bbc0012ef52f3b648512
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178207"
 ---
 # <a name="descendants-xelement-dynamic-property"></a>하위 항목(XElement 동적 속성)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,6 +40,3 @@ elem.Descendants[{namespaceName}localName]
 ## <a name="see-also"></a>참고 항목  
  [XAttribute 클래스 동적 속성](../designers/xelement-class-dynamic-properties.md)   
  [요소](../designers/elements-xelement-dynamic-property.md)
-
-
-

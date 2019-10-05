@@ -1,22 +1,20 @@
 ---
 title: 자동화된 테스트를 위해 Azure Pipelines 사용
 ms.date: 10/19/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - automated testing, lab management, test lab
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7a410601b0d7ab6b6a3901333b062e515555ec2d
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: d9bb59a383db46fdfc3b7e5a9a2f429399630873
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50218663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952778"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>자동화된 테스트를 위해 Lab Management 대신 Azure Test Plans 사용
 
@@ -24,7 +22,7 @@ ms.locfileid: "50218663"
 
 ## <a name="build-deploy-test-automation"></a>빌드-배포-테스트 자동화
 
-Microsoft Test Manage 및 Lab Management는 XAML 빌드 정의를 사용하여 응용 프로그램의 빌드, 배포 및 테스트를 자동화합니다. XAML 빌드는 랩 환경, 테스트 도구 모음 및 테스트 설정과 같은 Microsoft Test Manager에서 만들어진 다양한 생성자와 빌드 컨트롤러, 빌드 에이전트, 테스트 컨트롤 및 테스트 에이전트와 같은 다양한 인프라 구성 요소를 사용하여 이 목표를 달성합니다. Azure Pipelines 또는 TFS를 사용하여 더 적은 단계로 동일하게 수행할 수 있습니다.
+Microsoft Test Manage 및 Lab Management는 XAML 빌드 정의를 사용하여 애플리케이션의 빌드, 배포 및 테스트를 자동화합니다. XAML 빌드는 랩 환경, 테스트 도구 모음 및 테스트 설정과 같은 Microsoft Test Manager에서 만들어진 다양한 생성자와 빌드 컨트롤러, 빌드 에이전트, 테스트 컨트롤 및 테스트 에이전트와 같은 다양한 인프라 구성 요소를 사용하여 이 목표를 달성합니다. Azure Pipelines 또는 TFS를 사용하여 더 적은 단계로 동일하게 수행할 수 있습니다.
 
 | 단계 | XAML 빌드 사용 | 빌드 또는 릴리스에서 |
 |-------|----------------------|-----------------|
@@ -53,7 +51,7 @@ Lab Center의 셀프 서비스 프로비전 기능에는 두 가지 목표가 �
 
 * 팀이 테스트 및 배포 활동에서 가상 컴퓨터를 사용할 수 있는 더 간단한 방법을 제공합니다. 예를 들어 간편한 사용을 위해 동일한 프로젝트 보안 모델을 통해 랩 환경에 액세스할 수 있고 테스트 시나리오에서 해당 가상 머신을 통합 사용하도록 했습니다.
 
-그러나 [Microsoft Azure](https://azure.microsoft.com/) 및 [Microsoft Azure Stack](https://azure.microsoft.com/overview/azure-stack/)과 같은 더 다양한 공용 및 사설 클라우드 관리 시스템의 발전을 고려한다면 TFS 2017 이상에는 인프라 관리 기능의 발전이 없습니다. 대신에 해당 클라우드 인프라를 통해 관리되는 리소스의 간편한 사용에 계속 초점을 맞춥니다.
+그러나 [Microsoft Azure](https://azure.microsoft.com/) 및 [Microsoft Azure Stack](https://azure.microsoft.com/overview/azure-stack/)과 같은 더 다양한 퍼블릭 및 프라이빗 클라우드 관리 시스템의 발전을 고려한다면 TFS 2017 이상에는 인프라 관리 기능의 발전이 없습니다. 대신에 해당 클라우드 인프라를 통해 관리되는 리소스의 간편한 사용에 계속 초점을 맞춥니다.
 
 다음 표에는 랩 센터에서 수행하는 일반적인 활동과 SCVMM 또는 Azure(인프라 관리 활동인 경우)를 통해서 또는 TFS 및 Azure DevOps Services(테스트 또는 배포 활동인 경우)를 통해 해당 활동을 수행하는 방법이 요약되어 있습니다.
 

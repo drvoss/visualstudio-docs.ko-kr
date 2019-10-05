@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 69f4f4c2b55670d510652b44a203b9f0eafcc53a
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68143535"
+---
 
 1. UI에서 업데이트된 구성 옵션을 표시하려면 IIS 관리 콘솔을 닫았다가 다시 엽니다.
 
@@ -34,6 +42,6 @@
    * 이후 단계에서 호스트 이름을 사용하여 Visual Studio에서 원격 호스트에 연결할 수 없는 경우 호스트 이름 대신 IP 주소를 테스트합니다.
 
      > [!NOTE]
-     > Azure VM에서 실행되는 IIS에 게시하는 경우 웹 배포 및 IIS 포트를 네트워크 보안 그룹에서 열어야 입니다. 자세한 내용은 [IIS 설치 및 실행](/azure/virtual-machines/windows/quick-create-portal#open-port-80-for-web-traffic)을 참조하세요.
+     > Azure VM에서 실행되는 IIS에 게시하는 경우 웹 배포 및 IIS 포트를 네트워크 보안 그룹에서 열어야 입니다. 자세한 내용은 [IIS 설치 및 실행](/azure/virtual-machines/windows/quick-create-portal#install-web-server)을 참조하세요.
 
 5. Visual Studio를 실행 중인 컴퓨터에 이 파일을 복사합니다.

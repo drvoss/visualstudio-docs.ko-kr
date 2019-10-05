@@ -1,14 +1,9 @@
 ---
 title: '오류: 웹 서버에서 디버깅을 시작할 수 없습니다. | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.http
 - vwd.nonadmin.error.
@@ -32,22 +27,22 @@ ms.assetid: f62e378a-3a99-4f78-9d97-8bb63a4da181
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 168aaff6e7165c0566b198dab22174b14dad9949
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0b0cbd7afe90b1dbc091263e3a2594c9ca739e1c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185477"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>오류: 웹 서버에서 디버깅을 시작할 수 없습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-웹 서버에서 실행 중인 ASP.NET 응용 프로그램을 디버깅하려고 하면 ‘웹 서버에서 디버깅을 시작할 수 없습니다.’라는 오류 메시지가 표시될 수 있습니다.
+웹 서버에서 실행 중인 ASP.NET 응용 프로그램을 디버깅 하려고 할 때이 오류 메시지가 표시 될 수 있습니다. 웹 서버에서 디버깅을 시작할 수 없습니다.
   
 대부분의 경우 IIS가 올바르게 구성 되지 않아이 오류가 발생 합니다.
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a> IIS 구성 확인
+## <a name="vxtbshttpservererrorsthingstocheck"></a> IIS 구성 확인
 
 여기에서는 및 디버깅을 다시 시도 하기 전에 자세한 문제를 해결 하는 단계를 수행한 후 IIS를 다시 설정 해야 할 수 있습니다. 관리자 명령 프롬프트를 열고 입력 하 여 이렇게 `iisreset`, 또는이 IIS 관리자에서를 수행할 수 있습니다. 
 
@@ -93,10 +88,6 @@ Visual Studio의 이전 버전 사용 중인 경우:
     (나중에 수정) 이전 버전의 버그는 몇 가지 ASP.NET 디버깅 시나리오에서에서 상승 된 권한이 필요 합니다.
     
 - Visual Studio의 여러 인스턴스를 실행 하는 경우 Visual Studio의 한 인스턴스에서 프로젝트를 다시 열고 다시 시도 합니다.
-   
-  
+
 ## <a name="see-also"></a>참고 항목  
- [웹 응용 프로그램 디버그: 오류 및 문제 해결](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
-
-
-
+ [웹 애플리케이션 디버그: 오류 및 문제 해결](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

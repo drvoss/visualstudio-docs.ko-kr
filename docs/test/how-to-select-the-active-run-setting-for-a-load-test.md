@@ -7,15 +7,13 @@ helpviewer_keywords:
 ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 9a99df580ec50eec27bd1cb13a1ef883944acd48
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 12582aa4c1aa41aa0a38f652cf4841ba1f9953e1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949944"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>방법: 부하 테스트에 대한 활성 실행 설정 선택
 
@@ -34,11 +32,11 @@ ms.locfileid: "53067387"
 
 ## <a name="select-the-active-run-setting"></a>활성 실행 설정 선택
 
-1.  부하 테스트를 엽니다.
+1. 부하 테스트를 엽니다.
 
-2.  **실행 설정** 폴더를 확장합니다.
+2. **실행 설정** 폴더를 확장합니다.
 
-3.  활성화할 실행 설정 노드를 마우스 오른쪽 단추로 클릭한 다음, **활성 상태로 설정**을 선택합니다.
+3. 활성화할 실행 설정 노드를 마우스 오른쪽 단추로 클릭한 다음, **활성 상태로 설정**을 선택합니다.
 
      **부하 테스트 편집기**에서 영향을 받는 실행 설정 노드는 "[Active]" 접미사로 업데이트됩니다.
 

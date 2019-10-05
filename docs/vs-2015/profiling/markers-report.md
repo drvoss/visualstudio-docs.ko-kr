@@ -1,27 +1,22 @@
 ---
 title: 표식 보고서 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.markers
 ms.assetid: 829ce099-172e-4c7e-bbd0-578b110c59bd
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 044df49c466c98466e15078b38e6240420b0a6fe
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 97705dab6f11ca0d9d51c27bfc56d315b454bc52
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809716"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64837706"
 ---
 # <a name="markers-report"></a>표식 보고서
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,4 @@ ms.locfileid: "51809716"
   표식 보고서를 CSV 파일로 저장하려면 **내보내기** 단추를 선택합니다. CSV 파일의 데이터는 다른 응용 프로그램 또는 도구에서 사용할 수 있습니다.  
   
 > [!NOTE]
->  표식 보고서는 1,000개의 표식을 표시할 수 있습니다. 모든 표식을 보려면 전체 보고서를 CSV 파일로 내보냅니다.
-
-
-
+> 표식 보고서는 1,000개의 표식을 표시할 수 있습니다. 모든 표식을 보려면 전체 보고서를 CSV 파일로 내보냅니다.

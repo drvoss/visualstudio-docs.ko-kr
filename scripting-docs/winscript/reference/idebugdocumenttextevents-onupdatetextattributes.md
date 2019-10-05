@@ -2,7 +2,6 @@
 title: IDebugDocumentTextEvents::onUpdateTextAttributes | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ea7caa1c1632e1a85e12010ec39593b8e0a6d63
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 746339cb281d4d039759f350bb5516456ce142cf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62989806"
 ---
 # <a name="idebugdocumenttexteventsonupdatetextattributes"></a>IDebugDocumentTextEvents::onUpdateTextAttributes
-기본 문자 위치 범위와 연관 된 텍스트 특성 변경 되었다는 것을 나타냅니다.  
+기본 문자 위치 범위의 연관 된 텍스트 특성 변경 되었다는 것을 나타냅니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT onUpdateTextAttributes(  
    ULONG  cCharacterPosition,  
    ULONG  cNumToUpdate  
@@ -39,7 +38,7 @@ HRESULT onUpdateTextAttributes(
   
 #### <a name="parameters"></a>매개 변수  
  `cCharacterPosition`  
- [in] 특성이 변경 된 첫 번째 문자의 문자 위치입니다.  
+ [in] 특성 변경 된 첫 번째 문자의 문자 위치입니다.  
   
  `cNumToUpdate`  
  [in] 범위에 있는 문자의 수입니다.  
@@ -52,7 +51,7 @@ HRESULT onUpdateTextAttributes(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 기본 문자 위치 범위와 연관 된 텍스트 특성 변경 되었다는 나타냅니다.  
+ 이 메서드는 기본 문자 위치 범위와 연결 된 텍스트 특성을 변경한 나타냅니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugDocumentTextEvents 인터페이스](../../winscript/reference/idebugdocumenttextevents-interface.md)

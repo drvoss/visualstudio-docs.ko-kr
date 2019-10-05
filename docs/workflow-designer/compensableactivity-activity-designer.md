@@ -2,21 +2,20 @@
 title: 워크플로 디자이너-CompensableActivity 활동 디자이너
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.CompensableActivity.UI
 ms.assetid: e0340d89-d39e-4a52-8557-13e27040d7b5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4194ef3d4cfbf4b4654b1695c022d715fc7d885
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cfe5a207136b44e61beff77bec8c8c7b869568b6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949900"
 ---
 # <a name="compensableactivity-activity-designer"></a>CompensableActivity 활동 디자이너
 
@@ -33,7 +32,7 @@ ms.locfileid: "53857927"
 ### <a name="the-compensableactivity-properties"></a>CompensableActivity 속성
  다음 표에서는 <xref:System.Activities.Statements.CompensableActivity> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. 합니다 <xref:System.Activities.Activity.DisplayName%2A> 고 <xref:System.Activities.Activity%601.Result%2A> 속성 속성 표에서 편집할 수 있지만 다른 속성을 워크플로 디자이너 화면에서 편집 해야 합니다.
 
-|속성 이름|필수|용도|
+|속성 이름|필수|사용|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.CompensableActivity> 활동의 선택적 이름입니다. 기본값은 CompensableActivity입니다.|
 |<xref:System.Activities.Activity%601.Result%2A>|False|<xref:System.Activities.Statements.CompensableActivity>의 반환 값을 지정합니다. 이 속성은 속성 표에서 편집해야 합니다.|

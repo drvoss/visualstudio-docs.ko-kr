@@ -2,7 +2,6 @@
 title: IDebugProperty::GetParent | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f78d72bad8cb12b72f4b51e113d23dcd64ada8fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2aeac5e23ec38aa79e5ff5057847429ac97dbb23
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838363"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979138"
 ---
 # <a name="idebugpropertygetparent"></a>IDebugProperty::GetParent
 속성의 부모 속성을 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetParent (  
    IDebugProperty** ppParent  
 );  

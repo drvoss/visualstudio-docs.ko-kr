@@ -1,14 +1,9 @@
 ---
 title: IEnumDebugFields | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IEnumDebugFields
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 403c2a51-3ba5-431f-a1dd-2f3b2046c00c
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9c336b48b0502843415c7d093afebd2376893e07
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5e3c9a43b6903522fe2caf0e329f8e8faa69cd6b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161086"
 ---
 # <a name="ienumdebugfields"></a>IEnumDebugFields
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -44,11 +39,11 @@ IEnumDebugFields : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
  이 인터페이스는 다음 메서드를 구현 합니다.  
   
-|메서드|설명|  
+|메서드|Description|  
 |------------|-----------------|  
 |[다음](../../../extensibility/debugger/reference/ienumdebugfields-next.md)|다음 집합을 검색 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 열거형 개체입니다.|  
 |[Skip](../../../extensibility/debugger/reference/ienumdebugfields-skip.md)|지정된 된 개수의 항목을 건너뜁니다.|  
-|[Reset](../../../extensibility/debugger/reference/ienumdebugfields-reset.md)|첫 번째 항목을 열거를 다시 설정합니다.|  
+|[다시 설정](../../../extensibility/debugger/reference/ienumdebugfields-reset.md)|첫 번째 항목을 열거를 다시 설정합니다.|  
 |[Clone](../../../extensibility/debugger/reference/ienumdebugfields-clone.md)|현재 열거형의 복사본을 검색 합니다.|  
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugfields-getcount.md)|열거형 항목을 검색합니다.|  
   
@@ -57,13 +52,12 @@ IEnumDebugFields : IUnknown
 ## <a name="requirements"></a>요구 사항  
  헤더: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>참고 항목  
  [기호 공급자 인터페이스](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)   
  [GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)
-

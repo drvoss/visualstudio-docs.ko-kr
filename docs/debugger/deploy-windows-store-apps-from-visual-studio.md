@@ -2,7 +2,6 @@
 title: UWP 앱 배포 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 01/16/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -11,15 +10,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d8006fb0ddcab4ab3eeee1616632d2dc513428ba
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MTE95
+ms.openlocfilehash: 02bfb1b4797973b3946405c38598409bf3247c70
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851728"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Visual Studio에서 UWP 앱 배포
 
@@ -29,7 +28,7 @@ Visual Studio 배포 기능을 작성 하 고 대상 장치에서 Visual Studio�
 
 - 대상이 원격 디바이스인 경우 Visual Studio에서는 원격 컴퓨터로 필수 파일을 복사한 다음 해당 디바이스에서 앱을 등록합니다.
 
-디버깅 시작** 옵션(키보드: F5 키) 또는 **디버깅 하지 않고 시작** 옵션 (키보드: CTRL+F5 또한 앱을 수동으로 배포할 수도 있습니다. 수동 배포는 다음 시나리오에서 유용합니다.
+사용 하 여 Visual Studio에서 앱을 디버그할 때 배포가 자동 되는 **디버깅 시작** 옵션 (키보드: F5 키) 또는 **디버깅 하지 않고 시작** 옵션 (키보드: CTRL + F5)입니다. 또한 앱을 수동으로 배포할 수도 있습니다. 수동 배포는 다음 시나리오에서 유용합니다.
 
 - 로컬 또는 원격 컴퓨터에서 애드혹 테스트
 
@@ -37,20 +36,20 @@ Visual Studio 배포 기능을 작성 하 고 대상 장치에서 Visual Studio�
 
 - 다른 앱 또는 메서드에서 시작되는 경우 디버깅할 앱 배포
 
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> UWP 앱을 배포 하는 방법
+## <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> UWP 앱을 배포 하는 방법
  수동 앱 배포 프로세스는 다음과 같이 간단합니다.
 
-1.  원격 디바이스에 배포하는 경우 앱 시작 프로젝트의 속성 프로젝트 페이지에서 디바이스의 이름 또는 IP 주소를 지정합니다. 이 작업 단계는 이 항목 아래에 나열되어 있습니다.
+1. 원격 디바이스에 배포하는 경우 앱 시작 프로젝트의 속성 프로젝트 페이지에서 디바이스의 이름 또는 IP 주소를 지정합니다. 이 작업 단계는 이 항목 아래에 나열되어 있습니다.
 
-2.  디버거 Visual Studio 도구 모음의 **디버깅 시작** 단추 옆에 있는 드롭다운 목록에서 배포 대상을 선택합니다.
+2. 디버거 Visual Studio 도구 모음의 **디버깅 시작** 단추 옆에 있는 드롭다운 목록에서 배포 대상을 선택합니다.
 
      ![로컬 컴퓨터에서 실행할](../debugger/media/vsrun_f5_local.png "VSRUN_F5_Local")
 
-3.  **빌드** 메뉴에서 **배포**를 선택합니다.
+3. **빌드** 메뉴에서 **배포**를 선택합니다.
 
-##  <a name="BKMK_How_to_specify_a_remote_device"></a> 원격 장치 지정 방법
+## <a name="BKMK_How_to_specify_a_remote_device"></a> 원격 디바이스 지정 방법
 
-**필수 구성 요소**
+**필수 조건**
 
 Windows 10 원격 장치에서 활성화 해야 합니다 [개발자 모드](/windows/uwp/get-started/enable-your-device-for-development)합니다. 작성자의 업데이트를 실행 하는 Windows 10 장치에서 하거나 나중에 원격 도구를 자동으로 설치 된 앱을 배포 하는 경우. 자세한 내용은 [설치 된 앱 패키지 디버그](../debugger/debug-installed-app-package.md)합니다.
 
@@ -77,7 +76,7 @@ Windows 10 원격 장치에서 활성화 해야 합니다 [개발자 모드](/wi
 
     합니다 **원격 연결** 대화 상자에서 로컬 네트워크 서브넷의 모든 장치와 이더넷 케이블을 통해 Visual Studio 컴퓨터에 직접 연결 되어 장치가 표시 됩니다.
 
-   **JavaScript 또는 Visual C++ 프로젝트 페이지에서 원격 장치 지정**
+   **시각적 개체에서 원격 장치 지정 C++ 프로젝트 페이지**
 
    ![C&#43; &#43; 프로젝트 속성 원격 디버깅용](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
 
@@ -93,7 +92,7 @@ Windows 10 원격 장치에서 활성화 해야 합니다 [개발자 모드](/wi
 
 10. **원격 컴퓨터** 상자에 원격 장치의 네트워크 이름을 입력하거나 **찾기** 를 클릭하여 **원격 디버거 연결 선택** 대화 상자에서 장치를 선택합니다.
 
-##  <a name="BKMK_Deployment_options"></a> 배포 옵션
+## <a name="BKMK_Deployment_options"></a> 배포 옵션
 
 시작 프로젝트의 디버그 속성 페이지에서 다음 배포 옵션을 설정할 수 있습니다.
 
@@ -105,18 +104,18 @@ Windows 10 원격 장치에서 활성화 해야 합니다 [개발자 모드](/wi
 
 - 에 C# 및 Visual Basic 디버그 속성 페이지의 선택을 취소 합니다 **네트워크 루프백 허용** 확인란 합니다.
 
-- JavaScript 및 디버그 속성 페이지에서 **네트워크 루프백 허용** 값을 **아니요**로 설정합니다.
+- 에 C++ 디버그 속성 페이지, 설정 합니다 **네트워크 루프백 허용** 값을 **No**합니다.
 
-**시작 하지 않음 시작 시 코드를 디버그 (C# 및 Visual Basic) / 응용 프로그램 시작 (JavaScript 및 c + +)**
+**시작 하지 않음 시작 시 코드를 디버그 (C# 및 Visual Basic) / 응용 프로그램 시작 (C++)**
 
 앱 시작 시 디버깅 세션을 자동으로 시작하도록 배포를 구성하려면
 
 - 에 C# 및 Visual Basic 디버그 속성 페이지를 확인 합니다 **시작 하지 않음 시작 시 코드를 디버그** 확인란 합니다.
 
-- JavaScript 및 디버그 속성 페이지에서 **응용 프로그램 시작** 값을 **예**로 설정합니다.
+- 에 C++ 디버그 속성 페이지, 설정 된 **응용 프로그램 시작** 값을 **예**합니다.
 
 ## <a name="see-also"></a>참고 항목
 
 - [고급 원격 배포 옵션](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)
 - [설치된 앱 패키지 디버그](../debugger/debug-installed-app-package.md)
-- [Visual Studio에서 앱 실행](../debugger/run-store-apps-from-visual-studio.md)
+- [Visual Studio에서 앱 실행](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)

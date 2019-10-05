@@ -2,18 +2,17 @@
 title: 작업 영역 및 Visual Studio에서 언어 서비스 | Microsoft Docs
 ms.date: 02/21/2018
 ms.topic: conceptual
-ms.assetid: 8631ffea-83c8-4fd4-a01e-c59772e89c84
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28ecd995446969c271694c554ae21e03c1afc79d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2893ae2bcd70ff317ba799fea6cfd2751c685731
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850270"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952707"
 ---
 # <a name="workspaces-and-language-services"></a>작업 영역 및 언어 서비스
 
@@ -61,4 +60,4 @@ ms.locfileid: "53850270"
 
 ## <a name="next-steps"></a>다음 단계
 
-* [작업 영역 빌드](workspace-build.md) -폴더 열기에서 지 원하는 MSBuild 및 메이크파일와 같은 시스템을 구축 합니다. 
+* [작업 영역 빌드](workspace-build.md) -폴더 열기에서 지 원하는 MSBuild 및 메이크파일와 같은 시스템을 구축 합니다.

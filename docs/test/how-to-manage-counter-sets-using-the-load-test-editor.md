@@ -12,15 +12,13 @@ helpviewer_keywords:
 ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 995cf0653886745d44ede4553e03f81ed45d37d7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 4ca910038e35ee65e6d97999f08013f398eaec9e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950122"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>방법: 부하 테스트 편집기를 사용하여 카운터 집합 관리
 
@@ -37,9 +35,9 @@ ms.locfileid: "53049083"
 
 ## <a name="to-manage-counter-sets"></a>카운터 집합을 관리하려면
 
-1.  부하 테스트를 엽니다.
+1. 부하 테스트를 엽니다.
 
-2.  **카운터 집합 관리** 단추를 선택합니다.
+2. **카운터 집합 관리** 단추를 선택합니다.
 
      -또는-
 
@@ -47,20 +45,20 @@ ms.locfileid: "53049083"
 
      **카운터 집합 관리** 대화 상자가 표시됩니다.
 
-3.  (선택 사항) **선택한 컴퓨터 및 카운터 집합이 추가될 실행 설정** 목록 상자에서 다른 실행 설정을 선택합니다.
+3. (선택 사항) **선택한 컴퓨터 및 카운터 집합이 추가될 실행 설정** 목록 상자에서 다른 실행 설정을 선택합니다.
 
     > [!NOTE]
     > 이 내용은 부하 테스트에 실행 설정이 둘 이상 있는 경우에만 적용됩니다.
 
-4.  (선택 사항) **컴퓨터 추가**를 선택하여 모니터링할 새 컴퓨터를 추가합니다. 이름을 입력하라는 메시지가 표시됩니다. 컴퓨터의 이름을 입력하면 새 항목 아래에 노드가 표시됩니다. 예를 들어 **ASP.NET**, **IIS**, **SQL** 등이 표시됩니다. 선택할 노드 앞에 있는 확인란을 선택합니다. 그러면 **선택 내용 미리 보기** 창에 새 카운터가 표시됩니다.
+4. (선택 사항) **컴퓨터 추가**를 선택하여 모니터링할 새 컴퓨터를 추가합니다. 이름을 입력하라는 메시지가 표시됩니다. 컴퓨터의 이름을 입력하면 새 항목 아래에 노드가 표시됩니다. 예를 들어 **ASP.NET**, **IIS**, **SQL** 등이 표시됩니다. 선택할 노드 앞에 있는 확인란을 선택합니다. 그러면 **선택 내용 미리 보기** 창에 새 카운터가 표시됩니다.
 
-5.  (선택 사항) **컴퓨터 태그** 텍스트 상자에 컴퓨터와 연결할 태그를 입력합니다. 예를 들어 "TestMachine12 in lab3"을 입력합니다.
+5. (선택 사항) **컴퓨터 태그** 텍스트 상자에 컴퓨터와 연결할 태그를 입력합니다. 예를 들어 "TestMachine12 in lab3"을 입력합니다.
 
      컴퓨터 태그를 사용하면 구별하기 쉬운 이름으로 컴퓨터를 식별할 수 있습니다.
 
      이 태그는 부하 테스트 편집기의 트리에 있는 **카운터 집합 매핑** 노드에 표시됩니다. 더욱 중요한 것은 이 태그가 Excel 보고서에 표시된다는 점입니다. 따라서 관련자가 부하 테스트에서 컴퓨터에 할당된 역할(예: "lab2의 Web Server1" 또는 "피닉스 사무실의 SQL Server2")을 쉽게 확인할 수 있습니다. 자세한 내용은 [테스트 비교 또는 추세 분석을 위한 부하 테스트 결과 보고](../test/compare-load-test-results.md)를 참조하세요.
 
-6.  **확인**을 선택합니다.
+6. **확인**을 선택합니다.
 
 ## <a name="see-also"></a>참고 항목
 

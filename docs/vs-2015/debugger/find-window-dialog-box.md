@@ -1,14 +1,9 @@
 ---
 title: 창 찾기 대화 상자 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Spy++, finding windows
 - finding windows with Spy++
@@ -16,20 +11,20 @@ ms.assetid: ee733077-d17a-4439-8a49-bc2f5dbc60d0
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7d55a52b0b892f739dd542301b5665339baeae41
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 34d6a847f96f548cdf68ed912d23f6a7ee112d54
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158476"
 ---
 # <a name="find-window-dialog-box"></a>창 찾기 대화 상자
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 대화 상자를 사용 하 여 창을 선택 하 고 해당 속성이 나 메시지를 표시 합니다. 이 대화 상자를 표시 하려면 선택 **창 찾기** 에서 합니다 **Spy** 메뉴.  
   
- 다음 설정은 사용할 수 있습니다.  
+ 다음 설정을 사용할 수 있습니다.  
   
  **찾기 도구**  
  끌어서 놓기 도구 창을 선택 하는 데 사용 합니다.  
@@ -49,7 +44,7 @@ ms.locfileid: "51768526"
  **스타일**  
  창 스타일입니다.  
   
- **rect**  
+ **사각형**  
  창에 대 한 경계 사각형입니다.  
   
  **속성 또는 메시지 표시**  
@@ -76,6 +71,3 @@ ms.locfileid: "51768526"
   
  [Spy++ 참조](../debugger/spy-increment-reference.md)  
  각 Spy + + 메뉴 및 대화 상자를 설명 하는 섹션을 포함 합니다.
-
-
-

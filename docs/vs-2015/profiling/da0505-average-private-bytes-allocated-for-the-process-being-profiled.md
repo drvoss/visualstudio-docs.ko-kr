@@ -1,14 +1,9 @@
 ---
-title: 'DA0505: 프로파일링 중인 프로세스에 할당되는 평균 전용 바이트 | Microsoft 문서'
-ms.custom: ''
+title: 'DA0505: 프로파일링 중인 프로세스에 할당되는 평균 전용 바이트 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0505
 - vs.performance.rules.DA0505
@@ -17,21 +12,21 @@ ms.assetid: 32c612ea-d077-44ba-8e6f-3a96333bad00
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 60f1bce7fe6f0199928e68dcc86b5062e327209a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fde4228538a26a4601dc7eb5638a4b803dafbacb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789956"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205903"
 ---
-# <a name="da0505-average-private-bytes-allocated-for-the-process-being-profiled"></a>DA0505: 프로파일링 중인 프로세스에 할당되는 평균 전용 바이트
+# <a name="da0505-average-private-bytes-allocated-for-the-process-being-profiled"></a>DA0505: 프로파일링되고 있는 프로세스에 할당된 평균 전용 바이트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 규칙 Id | DA0505 |  
 | 범주 | 리소스 관리 |  
 | 프로 파일링 방법을 | 모든 |  
-| 메시지 | 이 정보는 참고용 으로만 수집 되었습니다. Process Private Bytes 카운터는 프로파일링하고 있는 프로세스에 의해 할당된 가상 메모리를 측정합니다. 보고 된 값은 모든 측정 간격에 걸쳐 계산 된 평균값입니다. |  
+| 메시지 | 이 정보는 참고용 으로만 수집 되었습니다. Process Private Bytes 카운터는 프로파일링하고 있는 프로세스에 의해 할당된 가상 메모리를 측정합니다. 보고된 값은 모든 측정 간격에 걸쳐 계산된 평균값입니다.|  
 | 규칙 유형 | 정보 |  
   
  샘플링, .NET 메모리 또는 리소스 경합 방법을 사용하여 프로파일링할 경우 이 규칙을 트리거하려면 10개 이상의 샘플을 수집해야 합니다.  
@@ -48,7 +43,4 @@ ms.locfileid: "51789956"
  프로세스 주소 공간에 대한 자세한 내용은 Windows 메모리 관리 설명서에서 [Virtual Address Space](http://go.microsoft.com/fwlink/?LinkId=177832)(가상 주소 공간)를 참조하세요.  
   
 ## <a name="how-to-use-rule-data"></a>규칙 데이터를 사용하는 방법  
- 보고된 값을 사용하여 프로그램의 여러 가지 버전이나 빌드에 대한 성능을 비교하거나 여러 가지 프로파일링 시나리오에서 응용 프로그램의 성능을 파악합니다.
-
-
-
+ 보고된 값을 사용하여 프로그램의 여러 가지 버전이나 빌드에 대한 성능을 비교하거나 여러 가지 프로파일링 시나리오에서 애플리케이션의 성능을 파악합니다.

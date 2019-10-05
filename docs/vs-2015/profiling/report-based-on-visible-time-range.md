@@ -1,14 +1,9 @@
 ---
 title: 표시되는 시간 범위를 기반으로 하는 보고서 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.reportnav.profile
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: ef4f6259-a110-43b6-a325-364154e1ba00
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5576619a2e1c6f5ab955fb393316a873367fac48
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 793b0e49a8e2dcb38b5b2421f09bd2b2ad3d7eed
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160316"
 ---
 # <a name="report-based-on-visible-time-range"></a>표시되는 시간 범위를 기반으로 하는 보고서
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,6 +39,3 @@ ms.locfileid: "51728269"
  [디스크 작업 보고서](../profiling/disk-operations-report-threads-view.md)   
  [스레드별 요약 보고서](../profiling/per-thread-summary-report.md)   
  [스레드 뷰](../profiling/threads-view-parallel-performance.md)
-
-
-

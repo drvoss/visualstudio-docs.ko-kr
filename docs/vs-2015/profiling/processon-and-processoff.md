@@ -1,25 +1,20 @@
 ---
 title: ProcessOn 및 ProcessOff | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: d3dc6a7e-bc0f-48a6-a4ec-f386348bb296
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 64ebad6b1491fd599f27e98b0f61e12017434ffe
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 77e21a280700520b6861dd42e01a4aefa4faa704
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180200"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn 및 ProcessOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
  명령줄 프로파일링 세션을 초기화하고 지정된 프로파일링 방법을 설정합니다.  
   
  **Launch:** `AppName`  
- 지정된 응용 프로그램을 시작하고 샘플링 방법으로 프로파일링을 시작합니다.  
+ 지정된 애플리케이션을 시작하고 샘플링 방법으로 프로파일링을 시작합니다.  
   
  **Attach:** `PID`  
  지정된 프로세스의 프로파일링을 시작합니다.  
@@ -67,11 +62,11 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
  **GlobalOff**&#124;**GlobalOn**  
  명령줄 프로파일링 세션에서 모든 프로세스에 대한 프로파일링을 중지하거나 시작합니다.  
   
- {**ThreadOff**&#124;**ThreadOn**}**:**`TID`  
+ {**ThreadOff**&#124;**ThreadOn**} **:** `TID`  
  지정된 스레드에 대한 프로파일링을 중지 또는 시작합니다(계측 방법만 해당).  
   
-## <a name="example"></a>예제  
- 이 예제에서 **ProcessOff** 하위 명령은 응용 프로그램 시작에 대한 프로파일링 데이터를 수집하는 데 사용됩니다.  
+## <a name="example"></a>예  
+ 이 예제에서 **ProcessOff** 하위 명령은 애플리케이션 시작에 대한 프로파일링 데이터를 수집하는 데 사용됩니다.  
   
 ```  
 ; Initialize the profiler.  
@@ -87,9 +82,6 @@ VSPerfCmd /Shutdown
   
 ## <a name="see-also"></a>참고 항목  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [독립 실행형 응용 프로그램 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [ASP.NET 웹 응용 프로그램 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [독립 실행형 애플리케이션 프로파일링](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [ASP.NET 웹 애플리케이션 프로파일링](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [서비스 프로파일링](../profiling/command-line-profiling-of-services.md)
-
-
-

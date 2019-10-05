@@ -1,32 +1,27 @@
 ---
 title: SAL 이해 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
 caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 712d99f3839982632e54b622b3512eb611f2bf95
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0a898096c282a22201d60995693144cc0e187812
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435392"
 ---
 # <a name="understanding-sal"></a>SAL 이해
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Microsoft 소스 코드 주석 언어 (SAL) 함수에서 해당 매개 변수에 가정 및 완료 될 때 수행 하는 보장을 사용 하는 방법을 설명 하는 데 사용할 수 있는 주석의 집합을 제공 합니다. 주석 헤더 파일에 정의 된 `<sal.h>`합니다. C + + 용 visual Studio 코드 분석 SAL 주석을 사용 하 여 함수에 대 한 분석 내용을 수정. Windows 드라이버 개발에 대 한 SAL 2.0에 대 한 자세한 내용은 참조 [Windows 드라이버에 대 한 SAL 2.0 주석](http://go.microsoft.com/fwlink/?LinkId=250979)합니다.  
+Microsoft 소스 코드 주석 언어 (SAL) 함수에서 해당 매개 변수에 가정 및 완료 될 때 수행 하는 보장을 사용 하는 방법을 설명 하는 데 사용할 수 있는 주석의 집합을 제공 합니다. 주석 헤더 파일에 정의 된 `<sal.h>`합니다. Visual Studio 코드 분석에 대 한 C++ SAL 주석을 사용 하 여 함수에 대 한 분석 내용을 수정 합니다. Windows 드라이버 개발에 대 한 SAL 2.0에 대 한 자세한 내용은 참조 [Windows 드라이버에 대 한 SAL 2.0 주석](http://go.microsoft.com/fwlink/?LinkId=250979)합니다.  
   
- 기본적으로, C 및 c + + 개발자가 일관 되 게 의도 및 불변성을 표현 하는 데만 제한적된으로 제공 합니다. SAL 주석을 사용 하 여 하를 사용 하는 개발자 사용 하는 방법을 보다 잘 이해할 수 있도록 자세히 함수를 설명할 수 있습니다.  
+ 기본적으로, C 및 C++ 개발자가 일관 되 게 의도 및 불변성을 표현 하는 데만 제한적된으로 제공 합니다. SAL 주석을 사용 하 여 하를 사용 하는 개발자 사용 하는 방법을 보다 잘 이해할 수 있도록 자세히 함수를 설명할 수 있습니다.  
   
 ## <a name="what-is-sal-and-why-should-you-use-it"></a>SAL의 정의 및 이를 사용해야 하는 이유  
  간단히 말해서 SAL는 코드를 확인 하 고 컴파일러에 저렴 한 방법입니다.  
@@ -47,7 +42,7 @@ void * memcpy(
  이 함수가 수행 하는 새로운 알 수 있습니까? 함수를 호출 또는 구현 된 경우 프로그램 정확성을 유지 하려면 특정 속성을 유지 되어야 합니다. 예와에서 같은 선언을 확인 하 여 무엇 인지 모르는 경우 SAL 주석 없이 문서 또는 코드 주석에 의존 해야 합니다. 다음에 대 한 MSDN 설명서를은 `memcpy` 표시 됩니다.  
   
 > "복사본 src 대상의 바이트를 계산 하는 데 사용 합니다. 소스와 대상이 겹치는 경우 memcpy의 동작은 정의 되지 않습니다. Memmove를 사용 하 여 겹치는 영역을 처리 합니다.   
-> **보안 정보:** 크기 또는 소스 버퍼 보다 큰 대상 버퍼 동일한 인지 확인 합니다. 자세한 내용은 참조 버퍼 오버런 방지 합니다. "  
+> **보안 정보:** 대상 버퍼의 크기가 소스 버퍼의 크기보다 크거나 같아야 합니다. 자세한 내용은 참조 버퍼 오버런 방지 합니다. "  
   
  설명서에는 두 프로그램 정확성을 유지 하려면 특정 속성을 유지 하기 위해 코드에 제안 하는 정보의 비트:  
   
@@ -117,7 +112,7 @@ wchar_t * wmemcpy(
   
 ##### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>Visual Studio 코드 분석 도구 및 SAL을 사용하려면  
   
-1. Visual Studio에서 SAL 주석을 포함 하는 c + + 프로젝트를 엽니다.  
+1. Visual Studio에서 엽니다는 C++ SAL 주석을 포함 하는 프로젝트입니다.  
   
 2. 메뉴 모음에서 **빌드**하십시오 **솔루션에서 코드 분석 실행**합니다.  
   
@@ -126,18 +121,18 @@ wchar_t * wmemcpy(
    > **C6387 잘못 된 매개 변수 값**   
    > '고정'는 '0' 일 수 있습니다:이 'InCallee' 함수에 대 한 사양을 따르지 않습니다.  
   
-### <a name="example-the-in-annotation"></a>예: 합니다 \_에서\_ 주석  
+### <a name="example-the-in-annotation"></a>예제: 합니다 \_에서\_ 주석  
  `_In_` 주석이 나타냅니다.  
   
--   매개 변수는 유효 해야 하며 수정 되지 않습니다.  
+- 매개 변수는 유효 해야 하며 수정 되지 않습니다.  
   
--   함수는 단일 요소 버퍼에서 읽을 수만.  
+- 함수는 단일 요소 버퍼에서 읽을 수만.  
   
--   호출자는 버퍼를 제공 하 고 초기화 해야 합니다.  
+- 호출자는 버퍼를 제공 하 고 초기화 해야 합니다.  
   
--   `_In_` "읽기 전용"를 지정합니다. 일반적인 실수를 적용할 `_In_` 있어야 하는 매개 변수에 `_Inout_` 주석 대신 합니다.  
+- `_In_` "읽기 전용"를 지정합니다. 일반적인 실수를 적용할 `_In_` 있어야 하는 매개 변수에 `_Inout_` 주석 대신 합니다.  
   
--   `_In_` 포인터가 아닌 스칼라에 분석기에 의해 무시 하지만 허용 됩니다.  
+- `_In_` 포인터가 아닌 스칼라에 분석기에 의해 무시 하지만 허용 됩니다.  
   
 ```cpp  
 void InCallee(_In_ int *pInt)  
@@ -164,7 +159,7 @@ void BadInCaller()
   
  이 예제에서 Visual Studio Code 분석을 사용 하는 경우 호출자에 대 한 초기화 버퍼에 Null이 아닌 포인터를 전달 하는 검사 `pInt`합니다. 이 경우 `pInt` 포인터는 NULL 일 수 없습니다.  
   
-### <a name="example-the-inopt-annotation"></a>예: 합니다 \_In_opt\_ 주석  
+### <a name="example-the-inopt-annotation"></a>예제: 합니다 \_In_opt\_ 주석  
  `_In_opt_` 동일 `_In_`있다는 점을 제외 하면 입력된 매개 변수는 NULL 일 수를이 함수를 확인 해야 하므로, 합니다.  
   
 ```cpp  
@@ -192,7 +187,7 @@ void InOptCaller()
   
  Visual Studio Code Analysis 함수 NULL에 대 한 버퍼에 액세스 하기 전에 확인 하는 유효성을 검사 합니다.  
   
-### <a name="example-the-out-annotation"></a>예: 합니다 \_Out\_ 주석  
+### <a name="example-the-out-annotation"></a>예제: 합니다 \_Out\_ 주석  
  `_Out_` 일반적인 시나리오는 요소 버퍼를 가리키는 NULL이 아닌 포인터를 전달 하 고 요소를 초기화 하는 함수를 지원 합니다. 호출자는 호출 전에 버퍼를 초기화 하지 않아도 호출된 된 함수가 반환 하기 전에 초기화 하는 데 약속 합니다.  
   
 ```cpp  
@@ -219,7 +214,7 @@ void OutCaller()
   
  Visual Studio Code 분석 도구에 대 한 버퍼에 NULL이 아닌 포인터를 전달 하 호출자가 유효성을 검사 `pInt` 버퍼를 반환 하기 전에 함수에 의해 초기화 되 고 있습니다.  
   
-### <a name="example-the-outopt-annotation"></a>예: 합니다 \_Out_opt\_ 주석  
+### <a name="example-the-outopt-annotation"></a>예제: 합니다 \_Out_opt\_ 주석  
  `_Out_opt_` 동일 `_Out_`단, 매개 변수는 NULL 일 수를이 함수를 따라서 확인 해야 합니다.  
   
 ```cpp  
@@ -247,11 +242,11 @@ void OutOptCaller()
   
  Visual Studio 코드 분석 하기 전에 NULL 확인이 함수는 유효성을 검사 `pInt` 역참조가 경우에 `pInt` 반환 하기 전에 함수에서 버퍼가 초기화 되는 NULL이 아닙니다.  
   
-### <a name="example-the-inout-annotation"></a>예: 합니다 \_Inout\_ 주석  
+### <a name="example-the-inout-annotation"></a>예제: 합니다 \_Inout\_ 주석  
  `_Inout_` 포인터 매개 변수는 함수에 의해 변경 될 수 있는 주석을 추가 하는 데 사용 됩니다. 포인터를 호출 하기 전에 올바른 초기화 데이터를 가리켜야 하 고 변경 될 경우에 여전히 있어야 올바른 값을 반환 합니다. 주석이 함수에서 읽기 및 요소가 하나인 버퍼에 쓰기를 자유롭게 수를 지정 합니다. 호출자는 버퍼를 제공 하 고 초기화 해야 합니다.  
   
 > [!NOTE]
->  와 같은 `_Out_`, `_Inout_` 수정 가능한 값에 적용 해야 합니다.  
+> 와 같은 `_Out_`, `_Inout_` 수정 가능한 값에 적용 해야 합니다.  
   
 ```cpp  
   
@@ -279,7 +274,7 @@ void BadInOutCaller()
   
  호출자에 대 한 초기화 버퍼에 NULL이 아닌 포인터를 전달 하는 visual Studio 코드 분석의 유효성을 검사 `pInt`, 하 고, 반환 하기 전에 `pInt` 여전히 NULL이 아닌 버퍼가 초기화 되 고 있습니다.  
   
-### <a name="example-the-inoutopt-annotation"></a>예: 합니다 \_Inout_opt\_ 주석  
+### <a name="example-the-inoutopt-annotation"></a>예제: 합니다 \_Inout_opt\_ 주석  
  `_Inout_opt_` 동일 `_Inout_`있다는 점을 제외 하면 입력된 매개 변수는 NULL 일 수를이 함수를 확인 해야 하므로, 합니다.  
   
 ```cpp  
@@ -309,7 +304,7 @@ void InOutOptCaller()
   
  이 함수 NULL에 대 한 버퍼에 액세스 하기 전에 확인 하는 visual Studio 코드 분석의 유효성을 검사 `pInt` 반환 하기 전에 함수에서 버퍼가 초기화 되는 NULL이 아닙니다.  
   
-### <a name="example-the-outptr-annotation"></a>예: 합니다 \_Outptr\_ 주석  
+### <a name="example-the-outptr-annotation"></a>예제: 합니다 \_Outptr\_ 주석  
  `_Outptr_` 에 대 한 포인터를 반환 하기 위한 옵션에 매개 변수를 주석을 추가 하는 데 사용 됩니다.  매개 변수 자체에 NULL이를 사용 해야 합니다. 호출된 된 함수에 대 한 NULL이 아닌 포인터를 반환 하 고 포인터 초기화 데이터를 가리킵니다.  
   
 ```cpp  
@@ -340,7 +335,7 @@ void OutPtrCaller()
   
  Visual Studio 코드 분석의 호출자에 대 한 NULL이 아닌 포인터를 전달 하는 유효성을 검사 `*pInt`, 버퍼를 반환 하기 전에 함수에 의해 초기화 되 고 있습니다.  
   
-### <a name="example-the-outptropt-annotation"></a>예: 합니다 \_Outptr_opt\_ 주석  
+### <a name="example-the-outptropt-annotation"></a>예제: 합니다 \_Outptr_opt\_ 주석  
  `_Outptr_opt_` 동일 `_Outptr_`한다는 점을 제외 하는 매개 변수는 선택 사항-매개 변수에 대해 NULL 포인터에서 호출자에 게 전달할 수 있습니다.  
   
 ```cpp  
@@ -373,8 +368,8 @@ void OutPtrOptCaller()
   
  Visual Studio 코드 분석 하기 전에 NULL 확인이 함수는 유효성을 검사 `*pInt` 역참조가 버퍼를 반환 하기 전에 함수에 의해 초기화 되 고 있습니다.  
   
-### <a name="example-the-success-annotation-in-combination-with-out"></a>예: 합니다 \_성공\_ 조합 하 여 주석 \_아웃\_  
- 대부분의 개체에 주석은 적용할 수 있습니다.  특히 전체 함수에 주석을 달 수 있습니다.  함수의 가장 확실 한 특징 중 하나에 성공 또는 실패 수는입니다. 하지만 같은 버퍼와 크기 간의 연결, C/c + + 함수 성공 또는 실패 표현할 수 없습니다. 사용 하 여는 `_Success_` 주석을 함수의 성공을 같습니다 말할 수 있습니다.  매개 변수는 `_Success_` 주석 식이면 방금 것은 사실 나타내는 함수 성공 했다는 것입니다. 식 주석 파서에서 처리할 수 있는 아무 이름이 나 가능 합니다. 함수가 성공 하는 경우에 함수가 반환 되 면 주석의 효과 적용 됩니다. 이 예제에서는 어떻게 `_Success_` 상호 작용 `_Out_` 오른쪽 작업을 수행. 키워드를 사용할 수 있습니다 `return` 를 나타내는 값을 반환 합니다.  
+### <a name="example-the-success-annotation-in-combination-with-out"></a>예제: 합니다 \_성공\_ 조합 하 여 주석 \_아웃\_  
+ 대부분의 개체에 주석은 적용할 수 있습니다.  특히 전체 함수에 주석을 달 수 있습니다.  함수의 가장 확실 한 특징 중 하나에 성공 또는 실패 수는입니다. 하지만 버퍼와 해당 크기에 C 간의 연결을 같은 /C++ 함수 성공 또는 실패를 표현할 수 없습니다. 사용 하 여는 `_Success_` 주석을 함수의 성공을 같습니다 말할 수 있습니다.  매개 변수는 `_Success_` 주석 식이면 방금 것은 사실 나타내는 함수 성공 했다는 것입니다. 식 주석 파서에서 처리할 수 있는 아무 이름이 나 가능 합니다. 함수가 성공 하는 경우에 함수가 반환 되 면 주석의 효과 적용 됩니다. 이 예제에서는 어떻게 `_Success_` 상호 작용 `_Out_` 오른쪽 작업을 수행. 키워드를 사용할 수 있습니다 `return` 를 나타내는 값을 반환 합니다.  
   
 ```cpp  
   
@@ -417,13 +412,10 @@ bool GetValue(_Out_ int *pInt, bool flag)
  [코드 분석 팀 블로그](http://go.microsoft.com/fwlink/p/?LinkId=251197)  
   
 ## <a name="see-also"></a>참고 항목  
- [C/c + + 코드 오류를 줄이기 위한 SAL 주석 사용](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [SAL 주석은 C를 줄이기 위해 사용 하 여 /C++ 오류 코드](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [함수 매개 변수 및 반환 값에 주석 지정](../code-quality/annotating-function-parameters-and-return-values.md)   
  [함수 동작에 주석 지정](../code-quality/annotating-function-behavior.md)   
  [구조체 및 클래스에 주석 지정](../code-quality/annotating-structs-and-classes.md)   
  [잠금 동작에 주석 지정](../code-quality/annotating-locking-behavior.md)   
  [주석 적용 시기 및 위치 지정](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [모범 사례 및 예제](../code-quality/best-practices-and-examples-sal.md)
-
-
-

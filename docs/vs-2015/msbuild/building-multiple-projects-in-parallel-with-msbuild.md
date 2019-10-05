@@ -1,14 +1,9 @@
 ---
 title: MSBuild를 사용하여 병렬로 여러 프로젝트 빌드 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - parallel project builds
 - building multiple projects in parallel
@@ -17,26 +12,25 @@ ms.assetid: c8c9aadc-33ad-4aa1-b07d-b879e9eabda0
 caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 98444a8af0dfd231d63748a1dd0e9b62ca54b651
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4de5eebdf9c1f4f66d26b29d194b57172e9af3be
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285378"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426993"
 ---
 # <a name="building-multiple-projects-in-parallel-with-msbuild"></a>MSBuild를 사용하여 병렬로 여러 프로젝트 빌드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 다중 프로젝트를 빌드하기 위해 MSBuild를 사용하여 병렬로 실행하면 더 빠를 수 있습니다. 빌드를 병렬로 실행하려면 다중 코어 또는 다중 프로세서 컴퓨터에서 다음 설정을 사용합니다.  
   
--   명령 프롬프트에서 `/maxcpucount` 스위치.  
+- 명령 프롬프트에서 `/maxcpucount` 스위치.  
   
--   MSBuild 작업에서 <xref:Microsoft.Build.Tasks.MSBuild.BuildInParallel%2A> 작업 매개 변수.  
+- MSBuild 작업에서 <xref:Microsoft.Build.Tasks.MSBuild.BuildInParallel%2A> 작업 매개 변수.  
   
 > [!NOTE]
->  명령줄의 **/verbosity**(**/v**) 스위치는 빌드 성능에 영향을 줄 수도 있습니다. 빌드 로그 정보의 자세한 정도는 문제 해결을 위해 사용되는 자세히 또는 진단으로 설정되어 있는 경우 빌드 성능이 저하될 수 있습니다. 자세한 내용은 [빌드 로그 가져오기](../msbuild/obtaining-build-logs-with-msbuild.md) 및 [명령줄 참조](../msbuild/msbuild-command-line-reference.md)를 참조하세요.  
+> 명령줄의 **/verbosity**(**/v**) 스위치는 빌드 성능에 영향을 줄 수도 있습니다. 빌드 로그 정보의 자세한 정도는 문제 해결을 위해 사용되는 자세히 또는 진단으로 설정되어 있는 경우 빌드 성능이 저하될 수 있습니다. 자세한 내용은 [빌드 로그 가져오기](../msbuild/obtaining-build-logs-with-msbuild.md) 및 [명령줄 참조](../msbuild/msbuild-command-line-reference.md)를 참조하세요.  
   
 ## <a name="maxcpucount-switch"></a>/maxcpucount 스위치  
  시간을 줄이기 위해 `/maxcpucount` 스위치 또는 `/m`을 사용하는 경우 MSBuild는 병렬로 실행될 수 있는 MSBuild.exe 프로세스를 지정된 수만큼 생성할 수 있습니다. 이러한 프로세스는 "작업자 프로세스"라고도 합니다. 각 작업자 프로세스는 사용 가능한 다른 프로세스가 다른 프로젝트를 빌드할 때 동시에 별도의 코어 또는 프로세서(사용 가능한 경우)를 사용하여 프로젝트를 빌드합니다. 예를 들어, 해당 스위치의 값을 "4"로 설정하면 MSBuild에서 4개의 작업자 프로세스를 만들어 프로젝트를 빌드할 수 있습니다.  
@@ -82,6 +76,3 @@ msbuild.exe myproj.proj /maxcpucount:3
  [다중 프로세서를 사용하여 프로젝트 빌드](../msbuild/using-multiple-processors-to-build-projects.md)   
  [다중 프로세서 인식 로거 작성](../msbuild/writing-multi-processor-aware-loggers.md)   
  [C++ 빌드 병렬 처리 블로그](http://go.microsoft.com/fwlink/?LinkId=251457)
-
-
-

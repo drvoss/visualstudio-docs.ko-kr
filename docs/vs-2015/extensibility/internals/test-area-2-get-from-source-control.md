@@ -1,27 +1,22 @@
 ---
 title: '테스트 영역 2: 소스 제어에서 가져올 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, getting items from source control
 - source control [Visual Studio SDK], getting items from
 ms.assetid: cbd345c5-ca43-4630-b7a4-85564f4e2090
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 96b00cfc9965b6006fa51b3cd313566658d604bd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 069c396ce4cb75c9153082fdbb352b2ba713c8a8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156013"
 ---
 # <a name="test-area-2-get-from-source-control"></a>테스트 영역 2: 소스 제어에서 가져오기
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,13 +28,13 @@ ms.locfileid: "51786160"
   
 ##### <a name="get-latest-version"></a>최신 버전을 가져옵니다.  
   
--   **파일**하십시오 **소스 제어**, **최신 버전 가져오기**합니다.  
+- **파일**하십시오 **소스 제어**, **최신 버전 가져오기**합니다.  
   
--   **파일**하십시오 **최신 버전 가져오기**합니다.  
+- **파일**하십시오 **최신 버전 가져오기**합니다.  
   
--   바로 가기 메뉴에서 **최신 버전 가져오기**합니다.  
+- 바로 가기 메뉴에서 **최신 버전 가져오기**합니다.  
   
--   Get: **파일**를 **소스 제어**합니다 **가져오기**합니다.  
+- 가져오기: **파일**하십시오 **소스 제어**, **가져오기**합니다.  
   
 ## <a name="expected-behavior"></a>예상된 된 동작  
   
@@ -62,4 +57,3 @@ ms.locfileid: "51786160"
   
 ## <a name="see-also"></a>참고 항목  
  [소스 제어 플러그 인에 대한 테스트 가이드](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

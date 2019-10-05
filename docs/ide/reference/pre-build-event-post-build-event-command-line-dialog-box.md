@@ -1,8 +1,7 @@
 ---
 title: 빌드 전 이벤트-빌드 후 이벤트 명령줄 대화 상자
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuildEventsBuilder
@@ -30,48 +29,49 @@ helpviewer_keywords:
 - $(ProjectName)
 - build events, macros
 ms.assetid: d49b2c57-24bf-4fb2-8351-5c4b6cca938f
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: ghogen
+ms.author: ghogen
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e27a7e624607009e986d301fa802fdbe1597a3c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d5671a75a847d81caedeffc17ea436eade060f3e
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947975"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461312"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>빌드 전 이벤트/빌드 후 이벤트 명령줄 대화 상자
+
 편집 상자에서 직접 [빌드 이벤트 페이지, 프로젝트 디자이너(C#)](../../ide/reference/build-events-page-project-designer-csharp.md)에 대한 빌드 전후 이벤트를 입력할 수 있습니다. 또는 사용 가능한 매크로 목록에서 빌드 전후 매크로를 선택할 수 있습니다.
 
 > [!NOTE]
 > 프로젝트가 최신 상태이고 빌드가 트리거되지 않으면 빌드 전 이벤트가 실행되지 않습니다.
 
-
 ## <a name="ui-element-list"></a>UI 요소 목록
- **명령줄 편집 상자**
 
- 빌드 전 또는 빌드 후에 실행할 이벤트를 포함합니다.
+**명령줄 편집 상자**
+
+빌드 전 또는 빌드 후에 실행할 이벤트를 포함합니다.
 
 > [!NOTE]
 > .bat 파일을 실행하는 모든 빌드 후 이벤트 명령 앞에 `call` 문을 추가합니다. 예를 들어 `call C:\MyFile.bat` 또는 `call C:\MyFile.bat call C:\MyFile2.bat`로 이름을 지정할 수 있습니다.
 
+**매크로**
 
- **매크로**
+입력란을 확장하여 명령줄 편집 상자에 삽입할 매크로의 목록을 표시합니다.
 
- 입력란을 확장하여 명령줄 편집 상자에 삽입할 매크로의 목록을 표시합니다.
+**매크로 테이블**
 
- **매크로 테이블**
+사용 가능한 매크로 및 해당 값을 나열합니다. 각각에 대한 설명은 아래 매크로를 참조하세요. 한 번에 명령줄 편집 상자에 삽입할 하나의 매크로만을 선택할 수 있습니다.
 
- 사용 가능한 매크로 및 해당 값을 나열합니다. 각각에 대한 설명은 아래 매크로를 참조하세요. 한 번에 명령줄 편집 상자에 삽입할 하나의 매크로만을 선택할 수 있습니다.
+**삽입**
 
- **삽입**
-
- 매크로 테이블에서 선택된 매크로를 명령줄 편집 상자에 삽입합니다.
+매크로 테이블에서 선택된 매크로를 명령줄 편집 상자에 삽입합니다.
 
 ### <a name="macros"></a>매크로
- 이 매크로 중 하나를 사용하여 파일 위치를 지정하거나 여러 개를 선택한 경우 입력 파일의 실제 이름을 가져올 수 있습니다. 이러한 매크로는 대/소문자를 구분하지 않습니다.
+
+이 매크로 중 하나를 사용하여 파일 위치를 지정하거나 여러 개를 선택한 경우 입력 파일의 실제 이름을 가져올 수 있습니다. 이러한 매크로는 대/소문자를 구분하지 않습니다.
 
 |매크로|설명|
 |-----------|-----------------|

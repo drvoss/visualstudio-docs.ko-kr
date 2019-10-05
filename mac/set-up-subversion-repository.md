@@ -1,20 +1,20 @@
 ---
 title: Subversion 리포지토리 설정
 description: Mac용 Visual Studio에서 Subversion 사용
-author: conceptdev
-ms.author: crdun
+author: jmatthiesen
+ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 0D58FB37-530E-495B-BED6-FD499477A9B6
-ms.openlocfilehash: 3995db4ef4609f68512dede454855da1f770141f
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 7d95c73b8d745826b256d515f161194ee9dbb587
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295555"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692379"
 ---
 # <a name="set-up-a-subversion-repository"></a>Subversion 리포지토리 설정
 
-Subversion은 중앙 집중화된 _버전 제어 시스템_이므로, 모든 파일과 수정 버전을 포함하는 단일 서버가 있으며 사용자는 여기에서 임의의 파일 버전을 체크 아웃할 수 있습니다. 원격 Subversion 리포지토리에서 파일을 체크 아웃하면 사용자는 해당 시점을 기준으로 리포지토리의 스냅숏을 가져옵니다.
+Subversion은 중앙 집중화된 _버전 제어 시스템_이므로, 모든 파일과 수정 버전을 포함하는 단일 서버가 있으며 사용자는 여기에서 임의의 파일 버전을 체크 아웃할 수 있습니다. 원격 Subversion 리포지토리에서 파일을 체크 아웃하면 사용자는 해당 시점을 기준으로 리포지토리의 스냅샷을 가져옵니다.
 
 버전 제어를 위해 Subversion을 사용하려면 Subversion이 컴퓨터에 설치되어 있어야 합니다. 컴퓨터에 Subversion이 설치되어 있는지 확인하려면 터미널에서 다음 명령을 사용합니다.
 
@@ -54,7 +54,7 @@ Subversion이 컴퓨터에 설치되면 SVN에서 다음 단계를 사용하여 
 
     ![Subversion 리포지토리에 대한 자격 증명 입력](media/version-control-subversion5.png)
 
-8.  이제 사용할 수 있는 모든 버전 제어 명령이 버전 제어 메뉴에 표시됩니다.
+8. 이제 사용할 수 있는 모든 버전 제어 명령이 버전 제어 메뉴에 표시됩니다.
 
 ## <a name="see-also"></a>참고 항목
 

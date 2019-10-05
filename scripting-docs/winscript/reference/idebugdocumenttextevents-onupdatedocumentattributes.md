@@ -2,7 +2,6 @@
 title: IDebugDocumentTextEvents::onUpdateDocumentAttributes | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ef9313f612d539e3068c2dd4bb20eb5d343fc53b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ef8791a68086c02b7e1cc8d0a603deba63943af4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727943"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946679"
 ---
 # <a name="idebugdocumenttexteventsonupdatedocumentattributes"></a>IDebugDocumentTextEvents::onUpdateDocumentAttributes
 문서 속성 변경 되었음을 나타냅니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT onUpdateDocumentAttributes(  
    TEXT_DOC_ATTR  textdocattr  
 );  
@@ -48,7 +47,7 @@ HRESULT onUpdateDocumentAttributes(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 문서 특성이 변경 되었음을 나타냅니다.  
+ 이 메서드 문서 특성 변경 되었다는 것을 나타냅니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugDocumentTextEvents 인터페이스](../../winscript/reference/idebugdocumenttextevents-interface.md)   

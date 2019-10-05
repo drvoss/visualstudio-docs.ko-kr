@@ -1,14 +1,9 @@
 ---
-title: 'CA1815: 때 equals를 재정의 하 고 값 형식에서 equals 또는 같음 연산자 | Microsoft Docs'
-ms.custom: ''
+title: 'CA1815: Equals를 재정의 하 고 값 형식에서 equals 또는 같음 연산자 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1815
 - OverrideEqualsAndOperatorEqualsOnValueTypes
@@ -20,14 +15,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3868e5e1e78fd5640e9a2b55b133a9c6e0b47816
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e21585a7a56fde2fb46ea86adde92eecfd1a4565
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912606"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201689"
 ---
-# <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815: 값 형식에서 Equals 또는 같음 연산자를 재정의하십시오.
+# <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815: 값 형식에서 Equals 또는 같음 연산자를 재정의하세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -51,7 +46,7 @@ ms.locfileid: "49912606"
 
 ## <a name="example-of-a-violation"></a>위반의 예
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
  다음 예제에서는이 규칙을 위반 하는 구조체 (값 형식)를 보여 줍니다.
 
 ### <a name="code"></a>코드
@@ -59,21 +54,18 @@ ms.locfileid: "49912606"
 
 ## <a name="example-of-how-to-fix"></a>수정 하는 방법의 예
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
  다음 예제에서는 재정의 하 여 위반을 해결 <xref:System.ValueType.Equals%2A?displayProperty=fullName> 및 같음 연산자를 구현 합니다. (= =,! =) 합니다.
 
 ### <a name="code"></a>코드
  [!code-csharp[FxCop.Performance.OverrideEqualsFixed#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.OverrideEqualsFixed/cs/FxCop.Performance.OverrideEqualsFixed.cs#1)]
 
 ## <a name="related-rules"></a>관련된 규칙
- [CA2224: 같음 연산자를 오버로드할 때 Equals를 재정의하십시오.](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+ [CA2224: 같음 연산자를 오버 로드할 때 equals 재정의](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
  [CA2231: ValueType.Equals를 재정의할 때 같음 연산자를 오버로드하십시오.](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
 
- [CA2226: 연산자에는 대칭 오버로드가 있어야 합니다.](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+ [CA2226: 연산자에는 대칭 오버 로드가 있어야 합니다.](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
 ## <a name="see-also"></a>참고 항목
  <xref:System.Object.Equals%2A?displayProperty=fullName>
-
-
-

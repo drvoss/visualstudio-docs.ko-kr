@@ -11,17 +11,17 @@ helpviewer_keywords:
 - IDE, constants
 - physical views
 ms.assetid: 5030e70a-241d-474a-ba8c-e3b1cf947ff0
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 337d5dd0e8a167bd4e49f084d819eb4c1145c6a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d16b758a34eb1b9f48e912f75c4eec144a07ce4a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837474"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311324"
 ---
 # <a name="ide-constants"></a>IDE 상수
 
@@ -75,7 +75,7 @@ ms.locfileid: "53837474"
 |<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|쿠키 설정 되어 있지 않음을 나타내는 Visual Studio에 해당 되는 상수입니다.|
 |[VSITEMID.Nil](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|프로젝트 항목의 없음을 나타내는 Visual Studio 항목 식별자입니다. 이 값은 현재 선택 영역이 없는 경우 사용 됩니다.|
 |[VSITEMID.Root](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|프로젝트 계층의 루트를 나타내는 단일 항목 대신 전체 계층 구조를 식별 하기 위해 사용 하는 Visual Studio 항목 식별자입니다.|
-|[VSITEMID 합니다. 선택](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|현재 선택된 된 항목 또는 계층의 루트를 포함할 수 있는 항목을 나타내는 Visual Studio 항목 식별자입니다.|
+|[VSITEMID.Selection](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|현재 선택된 된 항목 또는 계층의 루트를 포함할 수 있는 항목을 나타내는 Visual Studio 항목 식별자입니다.|
 
 ## <a name="ivsselectionevents"></a>IVsSelectionEvents
  IDE의 구성 요소는 무엇입니까을 방금 선택한 후에 설명는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A> 예를 들어를 호출 합니다.

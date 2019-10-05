@@ -1,30 +1,27 @@
 ---
 title: 모양 및 연결선 정의 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 1fae548d-9288-4dd5-a24f-ff0d69c73628
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 61cd27b307b4761e3f7773f91583965466892285
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 761e0e77a0fe9f6f32f08045d81f6eab815801dd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181892"
 ---
 # <a name="defining-shapes-and-connectors"></a>모양 및 연결선 정의
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 DSL(Domain-Specific Language)에서 다이어그램에 정보를 표시하는 데 사용할 수 있는 다양한 기본 모양 형식이 있습니다.  
   
-##  <a name="shapeTypes"></a> 모양 및 연결선의 기본 형식  
+## <a name="shapeTypes"></a> 모양 및 연결선의 기본 형식  
  DSL 다이어그램에는 표시의 컬렉션인 *셰이프* 선이나 또는 *커넥터*합니다.  이러한 모양에는 일반적으로 다음 사항이 적용됩니다(항상은 아님).  
   
 - 모양은 모델 요소가 표시되는 표현입니다.  
@@ -39,7 +36,7 @@ DSL(Domain-Specific Language)에서 다이어그램에 정보를 표시하는 �
   
   다음 모양 형식을 사용할 수 있습니다.  
   
-|모양 형식|설명|  
+|모양 형식|Description|  
 |----------------|-----------------|  
 |기하 도형|일반적으로 사용되는 사각형 또는 타원형 모양입니다. 모양 경계를 기준으로 특정 위치에 텍스트 및 아이콘 Decorator를 표시할 수 있습니다.<br /><br /> 기 하 도형 내에 모양을 중첩, 참조 [중첩 셰이프](../modeling/nesting-shapes.md)합니다.|  
 |구획 모양|UML 클래스와 같이 헤더 및 구획을 포함하는 사각형입니다. 각 구획은 텍스트 행 목록을 포함할 수 있습니다.<br /><br /> 행은 보통 모양으로 표시되는 요소 아래에 포함된 요소를 나타냅니다. 예를 들어 클래스 다이어그램 솔루션 템플릿에서 DSL을 만들 수 있습니다.|  
@@ -48,8 +45,5 @@ DSL(Domain-Specific Language)에서 다이어그램에 정보를 표시하는 �
 |스윔 레인|스윔 레인은 다이어그램을 수평 또는 수직 세그먼트로 분할하며, 항상 다이어그램의 다른 모양 아래에 있습니다.<br /><br /> 일반적으로 스윔 레인 모델 요소의 부모는 모델 루트이고 자식은 다른 요소입니다. 예를 들어 작업 흐름 솔루션 템플릿에서 DSL을 만들 수 있습니다.|  
 |연결선|모양 간에 그려지는 선은 보통 참조 관계를 나타냅니다. 연결선을 직선이나 직각선으로 만들고 여러 화살촉 형식을 사용하는 옵션을 설정할 수 있습니다.|  
   
-##  <a name="shapeInheritance"></a> 모양 상속  
+## <a name="shapeInheritance"></a> 모양 상속  
  모양은 다른 모양에서 상속될 수 있습니다. 그러나 이 경우 모양의 종류가 같아야 합니다. 예를 들어 기하 도형만이 기하 도형을 상속할 수 있습니다. 상속된 도형은 기본 도형의 구획과 Decorator를 포함합니다. 연결선은 연결선에서 상속될 수 있습니다.
-
-
-

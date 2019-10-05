@@ -1,27 +1,22 @@
 ---
 title: 자동화 모델 개요 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], about automation
 - extensibility
 ms.assetid: 12b6d6db-0d22-4aaa-aa7d-1365f759b7b0
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bd1e8ced29b1b1b090fd0feabca93f23dcb67a15
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e17164976062ec916074c6210be6ae42e8ea1d03
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809677"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699501"
 ---
 # <a name="automation-model-overview"></a>자동화 모델 개요
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ ms.locfileid: "51809677"
  ![Visual Studio 자동화 개체 차트](../../extensibility/internals/media/vsvisualstudioautomationobjectchart.gif "vsVisualStudioAutomationObjectChart")  
 Visual Studio 자동화 개체  
   
- 자세한 내용은 [Visual Studio 환경 확장](http://msdn.microsoft.com/library/4173a963-7ac7-4966-9bb7-e28a9d9f6792)합니다.  
+ 자세한 내용은 [Visual Studio 환경 확장](https://msdn.microsoft.com/library/4173a963-7ac7-4966-9bb7-e28a9d9f6792)합니다.  
   
  환경의 서로 다른 기능 영역에 대 한 모델을 제공합니다. 예를 들어 코드에서 찾을 수 있는 다양 한 요소에 대 한 코드 모델을 있습니다. 다양 한 문서 요소에 대 한 문서 모델이 있습니다. 프로젝트 영역을 한 곳은 VSPackage 공급자 특정 유용 합니다. 새 프로젝트 형식을 거의 동일한 방법으로 자동화 모델에 기여 하는 경우가 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 고 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 자동화 모델에 기여 합니다. 프로세스를 간략하게 설명 [Vspackage에 대 한 자동화 제공](../../extensibility/internals/providing-automation-for-vspackages.md)합니다.  
   
@@ -48,8 +43,7 @@ Visual Studio 자동화 개체
   
 - 빌드  
   
-  Automation에 대 한 자세한 내용은 참조 하세요. [Visual Studio의 자동화 및 확장성](http://msdn.microsoft.com/library/f71a2253-3e68-4e5e-9a18-edbba816caf6)합니다. 이 문서 및 문서 링크, VSPackage에 대 한 자동화를 제공 해야 하는 방법에 대 한 결정을 내릴 수 있도록 제공 합니다.  
+  Automation에 대 한 자세한 내용은 참조 하세요. [Visual Studio의 자동화 및 확장성](https://msdn.microsoft.com/library/f71a2253-3e68-4e5e-9a18-edbba816caf6)합니다. 이 문서 및 문서 링크, VSPackage에 대 한 자동화를 제공 해야 하는 방법에 대 한 결정을 내릴 수 있도록 제공 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [방법: 추가 기능 만들기](http://msdn.microsoft.com/library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)
-
+ [방법: 추가 기능 만들기](https://msdn.microsoft.com/library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)

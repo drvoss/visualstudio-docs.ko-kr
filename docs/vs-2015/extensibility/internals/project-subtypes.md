@@ -1,27 +1,22 @@
 ---
 title: 프로젝트 하위 형식 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], subtypes
 - project subtypes [Visual Studio SDK]
 ms.assetid: d235b47b-cf11-4d47-a63f-e33d9d16105d
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f4562eab97c28437d8722eacbb60459bd2732dfa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5ad1e105d43c40782b13d8799b20626e57363c2f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421839"
 ---
 # <a name="project-subtypes"></a>프로젝트 하위 형식
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +24,7 @@ ms.locfileid: "51752691"
 프로젝트 하위 형식을 사용 하면 사용자 지정 하거나의 프로젝트 시스템의 동작을 flavor [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]합니다. 사용자 지정 포함 프로젝트 파일을 추가 하거나 항목을 필터링의 추가 데이터를 저장 합니다 **새 항목 추가** 어셈블리는 디버깅 및 배포 하는 방법을 제어 하 고 대화 상자에서 프로젝트를 확장 하 고 **속성 페이지** 대화 상자. Vspackage는 프로젝트 하위 형식 COM 집계를 사용 하 여 구현 합니다.  
   
 > [!NOTE]
->  Visual c + + 프로젝트 시스템에서 프로젝트 하위 형식을 지원 하지 않습니다. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 자체 프로젝트 하위 형식을 사용 하 여 SQL Server 및 스마트 장치 프로젝트를 구현 합니다.  
+> 시각적 개체 C++ 프로젝트 시스템이 프로젝트 하위 형식을 지원 하지 않습니다. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 자체 프로젝트 하위 형식을 사용 하 여 SQL Server 및 스마트 장치 프로젝트를 구현 합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [프로젝트 하위 형식 디자인](../../extensibility/internals/project-subtypes-design.md)  
@@ -65,4 +60,3 @@ ms.locfileid: "51752691"
 ## <a name="related-sections"></a>관련 단원  
  [프로젝트 형식](../../extensibility/internals/project-types.md)  
  자세히 설명 하는 항목 링크를 제공 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 프로젝트입니다.
-

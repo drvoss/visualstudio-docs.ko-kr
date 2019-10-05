@@ -2,18 +2,17 @@
 title: Visual Studio에서 작업 영역 | Microsoft 문서
 ms.date: 02/21/2018
 ms.topic: conceptual
-ms.assetid: 3489592a-dc0c-4cd3-9b08-cd367626980a
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 406d55b773a586d5cb0128599e225dabbadf21d3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 011781b434c4d005e473c5f97c60a9269dc5d034
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952765"
 ---
 # <a name="workspaces"></a>작업 영역
 
@@ -176,9 +175,21 @@ UI 컨텍스트의 자동 로드 패키지를 사용할 수 있습니다. 값이
 
 ### <a name="the-sourceexplorerpackage-package-did-not-load-correctly"></a>SourceExplorerPackage 패키지가 제대로 로드 되지 않았습니다.
 
-작업 영역 확장성 많이 MEF 기반 이며 컴퍼지션 오류로 인해 패키지를 로드 하지 못하도록 폴더 열기를 호스트 합니다. 예를 들어 확장 형식을 사용 하 여 내보냅니다 `ExportFileContextProviderAttribute`, 형식에서만 구현 되지만 `IWorkspaceProviderFactory<IFileContextActionProvider>`, Visual Studio에서 폴더를 열려고 할 때 오류가 발생 합니다. 오류 세부 정보에서 확인할 수 있습니다 _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_합니다. 확장에 의해 구현 된 형식에 대 한 오류를 해결 합니다.
+작업 영역 확장성 많이 MEF 기반 이며 컴퍼지션 오류로 인해 패키지를 로드 하지 못하도록 폴더 열기를 호스트 합니다. 예를 들어 확장 형식을 사용 하 여 내보냅니다 `ExportFileContextProviderAttribute`, 형식에서만 구현 되지만 `IWorkspaceProviderFactory<IFileContextActionProvider>`, Visual Studio에서 폴더를 열려고 할 때 오류가 발생 합니다.
+
+::: moniker range="vs-2017"
+
+오류 세부 정보에서 확인할 수 있습니다 _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_합니다. 확장에 의해 구현 된 형식에 대 한 오류를 해결 합니다.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+오류 세부 정보에서 확인할 수 있습니다 _%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_합니다. 확장에 의해 구현 된 형식에 대 한 오류를 해결 합니다.
+
+::: moniker-end
 
 ## <a name="next-steps"></a>다음 단계
 
-* [파일 컨텍스트를](workspace-file-contexts.md) -파일 상황에 맞는 공급자 폴더 열기 작업 영역에 대 한 코드 인텔리전스를 제공 합니다. 
+* [파일 컨텍스트를](workspace-file-contexts.md) -파일 상황에 맞는 공급자 폴더 열기 작업 영역에 대 한 코드 인텔리전스를 제공 합니다.
 * [인덱싱](workspace-indexing.md) -작업 영역 인덱싱 수집 및 작업 영역에 대 한 정보를 유지 합니다.

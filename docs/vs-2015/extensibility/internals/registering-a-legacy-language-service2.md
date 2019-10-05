@@ -1,14 +1,9 @@
 ---
 title: 레거시 언어 Service2 등록 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, language services
 - language services, registry information
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: ca312aa3-f9f1-4572-8553-89bf3a724deb
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c9077ca36a560c51ec8f8455cc04fb2fe9ba09eb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 07d70bb1d77dc3022b06c4036317e31692307f98
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188845"
 ---
 # <a name="registering-a-legacy-language-service"></a>레거시 언어 서비스 등록
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,11 +29,11 @@ ms.locfileid: "51803658"
 ## <a name="registry-entries-for-language-service-options"></a>언어 서비스 옵션에 대 한 레지스트리 항목  
  합니다 *VS 레지스트리 루트*\Languages\Language Services\\*언어 이름을* 키는 다음 값을 포함할 수 있습니다.  
   
-|이름|형식|범위|설명|  
+|이름|형식|범위|Description|  
 |----------|----------|-----------|-----------------|  
-|(기본값)|REG_SZ|*\<GUID &GT;*|언어 서비스의 GUID입니다.|  
+|(기본값)|REG_SZ|*\<GUID>*|언어 서비스의 GUID입니다.|  
 |LangResID|REG_DWORD|0x0-0xffff|리소스 식별자 (ResID) 언어의 이름 지역화 된 텍스트 문자열입니다.|  
-|패키지|REG_SZ|*\<GUID &GT;*|VSPackage의 GUID입니다.|  
+|패키지|REG_SZ|*\<GUID>*|VSPackage의 GUID입니다.|  
 |ShowCompletion|REG_DWORD|0-1|지정 여부를 **문 완성** 옵션을 **옵션** 대화 상자가 활성화 됩니다.|  
 |ShowSmartIndent|REG_DWORD|0-1|지정 여부를 선택할 수 있는 옵션이 **스마트** 에서 들여쓰기를 **옵션** 대화 상자가 활성화 됩니다.|  
 |RequestStockColors|REG_DWORD|0-1|지정 여부 사용자 지정 또는 기본 색 키워드 색을 사용 합니다.|  
@@ -71,9 +66,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-debugger-languages-options"></a>디버거 언어 옵션에 대 한 레지스트리 항목  
  합니다 *VS 레지스트리 루트*\Languages\Language Services\\*언어 이름을*\Debugger 언어\\*GUID*\ 키 다음에 포함 될 수 있습니다 값입니다.  
   
-|이름|형식|범위|설명|  
+|이름|형식|범위|Description|  
 |----------|----------|-----------|-----------------|  
-|(기본값)|REG_SZ|텍스트|기본값은 문서 언어의 이름에 사용할 수 있습니다. 이 키의 이름은 해당 하는 항목에 있는 식 계산기의 GUID  *\<VS 레지스트리 루트 >* \AD7Metrics\Expression 계산기입니다.|  
+|(기본값)|REG_SZ|text|기본값은 문서 언어의 이름에 사용할 수 있습니다. 이 키의 이름은 해당 하는 항목에 있는 식 계산기의 GUID  *\<VS 레지스트리 루트 >* \AD7Metrics\Expression 계산기입니다.|  
   
 ### <a name="example"></a>예제  
   
@@ -90,11 +85,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-tools-options"></a>편집기 도구 옵션에 대 한 레지스트리 항목  
  속성 페이지 및 속성 노드에 대해 EditorToolsOptions 키 아래에 레지스트리 키를 추가할 수 있습니다. 이러한 키와 값의 속성 페이지를 확인 합니다 **옵션** 대화 상자 (에 **도구** 메뉴) 언어 서비스를 구성 하는 데 사용 되는 합니다. 다음 예에서 *페이지 이름* 속성 페이지의 이름입니다 및 *노드 이름이* 은 트리에서 노드 이름에는 **옵션** 대화 상자. 페이지 항목 및 노드 항목을 개별적으로 지정 되어야 합니다.  
   
-|이름|형식|범위|설명|  
+|이름|형식|범위|Description|  
 |----------|----------|-----------|-----------------|  
-|(기본값)|REG_SZ|resID|이 옵션 페이지의 지역화 된 표시 이름입니다. 리터럴 텍스트 또는 # 이름일 수 있습니다`nnn`여기서 `nnn` 위성 DLL의 지정 된 VSPackage에서에서 문자열 리소스 ID입니다.|  
+|(기본값)|REG_SZ|ResID|이 옵션 페이지의 지역화 된 표시 이름입니다. 리터럴 텍스트 또는 # 이름일 수 있습니다`nnn`여기서 `nnn` 위성 DLL의 지정 된 VSPackage에서에서 문자열 리소스 ID입니다.|  
 |패키지|REG_SZ|*GUID*|이 옵션 페이지를 구현 하는 VSPackage의 GUID입니다.|  
-|페이지|REG_SZ|*GUID*|호출 하 여 VSPackage에서 요청 속성 페이지의 GUID를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> 메서드. 이 레지스트리 항목이 없는 경우 노드를 페이지가 아닌 레지스트리 키에 설명 합니다.|  
+|Page|REG_SZ|*GUID*|호출 하 여 VSPackage에서 요청 속성 페이지의 GUID를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> 메서드. 이 레지스트리 항목이 없는 경우 노드를 페이지가 아닌 레지스트리 키에 설명 합니다.|  
   
 ### <a name="example"></a>예제  
   
@@ -124,7 +119,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-file-name-extension-options"></a>파일 이름 확장명 옵션에 대 한 레지스트리 항목  
  파일 확장명에 대 한 항목 앞에 마침표를 예를 들어 ".myext"를 포함 해야 합니다.  
   
-|이름|형식|범위|설명|  
+|이름|형식|범위|Description|  
 |----------|----------|-----------|-----------------|  
 |(기본값)|REG_SZ|*GUID*|이 파일 확장명 형식에 대 한 기본 언어 서비스에 대 한 서비스 GUID입니다.|  
   
@@ -141,14 +136,14 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-options"></a>편집기 옵션에 대 한 레지스트리 항목  
  합니다 *VS 레지스트리 루트*\Editors 키는 다음 값을 포함할 수 있습니다.  
   
-|이름|형식|범위|설명|  
+|이름|형식|범위|Description|  
 |----------|----------|-----------|-----------------|  
 |(기본값)|REG_SZ|""|사용 되지 않는; 설명서에 대 한 여기에 이름을 입력할 수 있습니다.|  
 |DefaultToolboxTab|REG_SZ|""|편집기가 활성화 하는 경우 기본값으로 설정 하려면 도구 상자 탭의 이름입니다.|  
-|DisplayName|REG_SZ|resID|에 표시할 이름을 합니다 **연결 프로그램** 대화 상자. 이름이 표준 형식 문자열 리소스 ID 또는 이름입니다.|  
+|DisplayName|REG_SZ|ResID|에 표시할 이름을 합니다 **연결 프로그램** 대화 상자. 이름이 표준 형식 문자열 리소스 ID 또는 이름입니다.|  
 |ExcludeDefTextEditor|REG_DWORD|0-1|에 사용 합니다 **연결** 메뉴 명령입니다. 특정 파일 형식에 대해 사용할 수 있는 편집기의 목록에서 기본 텍스트 편집기를 나열 하려면이 값을 1로 설정 합니다.|  
-|LinkedEditorGUID|REG_SZ|*\<GUID &GT;*|코드 페이지 지원 파일을 열 수 있는 모든 언어 서비스에 사용 합니다. 예를 들어.txt 파일을 사용 하 여 열면 합니다 **프로그램** 명령을 사용 하 여 및 인코딩 없이 소스 코드 편집기를 사용 하 여에 대 한 옵션이 제공 됩니다.<br /><br /> 하위 키의 이름을 지정 된 GUID는 코드 페이지 편집기 팩터리의; 이 특정 레지스트리 항목에 지정 된 연결된 GUID 일반 편집기 팩터리입니다. 이 항목의 목적은 IDE 기본 편집기를 사용 하 여 파일이 열리지 않으면, IDE 편집기를 사용 하는 다음 목록에서 시도 됩니다. 다음이 편집기는이 편집기 팩터리는 기본적으로 실패 한 편집기 팩터리와 동일 하기 때문에 코드 페이지 편집기 팩터리 되지 않아야 합니다.|  
-|패키지|REG_SZ|*\<GUID &GT;*|VSPackage의 GUID ResID 표시 이름입니다.|  
+|LinkedEditorGUID|REG_SZ|*\<GUID>*|코드 페이지 지원 파일을 열 수 있는 모든 언어 서비스에 사용 합니다. 예를 들어.txt 파일을 사용 하 여 열면 합니다 **프로그램** 명령을 사용 하 여 및 인코딩 없이 소스 코드 편집기를 사용 하 여에 대 한 옵션이 제공 됩니다.<br /><br /> 하위 키의 이름을 지정 된 GUID는 코드 페이지 편집기 팩터리의; 이 특정 레지스트리 항목에 지정 된 연결된 GUID 일반 편집기 팩터리입니다. 이 항목의 목적은 IDE 기본 편집기를 사용 하 여 파일이 열리지 않으면, IDE 편집기를 사용 하는 다음 목록에서 시도 됩니다. 다음이 편집기는이 편집기 팩터리는 기본적으로 실패 한 편집기 팩터리와 동일 하기 때문에 코드 페이지 편집기 팩터리 되지 않아야 합니다.|  
+|패키지|REG_SZ|*\<GUID>*|VSPackage의 GUID ResID 표시 이름입니다.|  
   
 ### <a name="example"></a>예제  
   
@@ -166,10 +161,10 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-logical-view-options"></a>논리 뷰 옵션에 대 한 레지스트리 항목  
  합니다 *VS 레지스트리 루트*\Editors\\*편집기 GUI >* \LogicalViews 키는 다음 값을 포함할 수 있습니다.  
   
-|이름|형식|범위|설명|  
+|이름|형식|범위|Description|  
 |----------|----------|-----------|-----------------|  
 |(기본값)|REG_SZ||사용되지 않습니다.|  
-|*\<GUID &GT;*|REG_SZ|""|지원 되는 논리 보기에는 키입니다. 필요에 따라 여러 가지 있을 수 있습니다. 레지스트리 항목의 이름을, 중요 한 것은 값이 아닌은 항상 빈 문자열입니다.|  
+|*\<GUID>*|REG_SZ|""|지원 되는 논리 보기에는 키입니다. 필요에 따라 여러 가지 있을 수 있습니다. 레지스트리 항목의 이름을, 중요 한 것은 값이 아닌은 항상 빈 문자열입니다.|  
   
 ### <a name="example"></a>예제  
   
@@ -188,10 +183,10 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-extension-options"></a>편집기 확장 옵션에 대 한 레지스트리 항목  
  합니다 *VS 레지스트리 루트*\Editors\\*편집기 GUID*\Extensions 키는 다음 값을 포함할 수 있습니다. 파일 이름 확장명 앞에 마침표를 포함 되지 않습니다.  
   
-|이름|형식|범위|설명|  
+|이름|형식|범위|Description|  
 |----------|----------|-----------|-----------------|  
 |(기본값)|REG_SZ||사용되지 않습니다.|  
-|*\<ext >*|REG_DWORD|0-0xffffffff|확장의 상대적 우선 순위입니다. 두 개 이상의 언어 같은 확장 프로그램을 공유 하는 경우 우선 순위가 높은 언어 선택 됩니다.|  
+|*\<ext>*|REG_DWORD|0-0xffffffff|확장의 상대적 우선 순위입니다. 두 개 이상의 언어 같은 확장 프로그램을 공유 하는 경우 우선 순위가 높은 언어 선택 됩니다.|  
   
  편집기에 대 한 현재 사용자의 기본 선택을 HKEY_Current_User\Software\Microsoft\VisualStudio에 저장 되는 또한\\*X.Y*\Default 편집기\\*ext*합니다. 선택한 언어 서비스의 GUID는 사용자 지정 항목에는. 이 현재 사용자에 대 한 우선 합니다.  
   
@@ -214,7 +209,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\
   
  이러한 레지스트리 항목을 통해 액세스 된 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 클래스입니다.  
   
-|이름|형식|범위|설명|  
+|이름|형식|범위|Description|  
 |----------|----------|-----------|-----------------|  
 |CodeSense|REG_DWORD|0-1|IntelliSense 작업을 지원 합니다.|  
 |MatchBraces|REG_DWORD|0-1|일치 하는 중괄호, 괄호 및 대괄호와 같은 언어 쌍을 지원 합니다.|  
@@ -246,4 +241,3 @@ ExampleHKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
   
 ## <a name="see-also"></a>참고 항목  
  [레거시 언어 서비스 개발](../../extensibility/internals/developing-a-legacy-language-service.md)
-

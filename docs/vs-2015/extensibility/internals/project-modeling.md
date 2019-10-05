@@ -1,27 +1,22 @@
 ---
 title: 모델링 프로젝트 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], implementing project objects
 - project models, automation
 ms.assetid: c8db8fdb-88c1-4b12-86fe-f3c30a18f9ee
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 37b237a462900735ea641407d10719d43334262e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e0edca4a45419a4a4c962ebf62b65e99c4732a12
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51808416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431386"
 ---
 # <a name="project-modeling"></a>프로젝트 모델링
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,9 +29,9 @@ ms.locfileid: "51808416"
   
  `HRESULT GetProperty (`  
   
- `VSITEMID` `itemid`을 참조하십시오.  
+ `VSITEMID` `itemid`,  
   
- `VSHPROPID` `propid`을 참조하십시오.  
+ `VSHPROPID` `propid`,  
   
  `VARIANT` `*pvar`  
   
@@ -64,4 +59,3 @@ Projects
  <xref:EnvDTE.Projects>   
  <xref:EnvDTE.ProjectItem>   
  <xref:EnvDTE.ProjectItems>
-

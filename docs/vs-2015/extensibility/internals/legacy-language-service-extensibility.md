@@ -1,27 +1,22 @@
 ---
 title: 레거시 언어 서비스 확장성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services
 - Visual Studio, language services
 ms.assetid: 2700cd4d-5f68-43fc-b62f-dc80c3f3aa85
 caps.latest.revision: 43
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6481dfd425f549742ad208df0d2cd04dd182c82f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9346311aac4bc5833005423e90c2eb92faddcb84
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758271"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194990"
 ---
 # <a name="legacy-language-service-extensibility"></a>레거시 언어 서비스 확장성
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,4 +52,3 @@ ms.locfileid: "51758271"
   
  [디버깅에 대한 언어 서비스 지원](../../extensibility/internals/language-service-support-for-debugging.md)  
  Visual Studio 디버깅 sdk 만들기 및 프로그램을 디버그 하는 데 사용 되는 디버거 구성 요소를 사용자 지정 하는 데 필요한 정보를 포함 하는 방법에 대 한 정보 및 링크를 제공 합니다.
-

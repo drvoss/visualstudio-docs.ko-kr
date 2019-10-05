@@ -17,17 +17,15 @@ helpviewer_keywords:
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e33fa9b6047cbe470702cebdbb27f74d074e460e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 31b41a9c18a9e055c9d144c7115d3673ee2e4443
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916909"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566592"
 ---
 # <a name="save-data-back-to-the-database"></a>데이터를 다시 데이터베이스에 저장
 
@@ -49,12 +47,12 @@ Tableadapter에 익숙한 경우에 다음이 항목 중 하나에 직접 이동
 |[TableAdapter를 사용하여 데이터 업데이트](../data-tools/update-data-by-using-a-tableadapter.md)|Tableadapter 사용 하 여 업데이트를 수행 하는 방법|
 |[계층적 업데이트](../data-tools/hierarchical-update.md)|둘 이상의 관련된 테이블을 사용 하 여 데이터 집합에서 업데이트를 수행 하는 방법|
 |[동시성 예외 처리](../data-tools/handle-a-concurrency-exception.md)|두 사용자가 동시에 데이터베이스에서 동일한 데이터를 변경 하려고 할 때 예외를 처리 하는 방법|
-|[방법: 트랜잭션을 사용 하 여 데이터 저장](../data-tools/save-data-by-using-a-transaction.md)|시스템을 사용 하 여 트랜잭션에서 데이터를 저장 하는 방법입니다. Transactions 네임 스페이스와 TransactionScope 개체|
+|[방법: 트랜잭션을 사용하여 데이터 저장](../data-tools/save-data-by-using-a-transaction.md)|시스템을 사용 하 여 트랜잭션에서 데이터를 저장 하는 방법입니다. Transactions 네임 스페이스와 TransactionScope 개체|
 |[트랜잭션에 데이터 저장](../data-tools/save-data-in-a-transaction.md)|트랜잭션 내에서 데이터베이스에 데이터를 저장 하는 중 보여 주기 위해 Windows Forms 응용 프로그램을 만드는 연습|
 |[데이터베이스에 데이터 저장(여러 테이블)](../data-tools/save-data-to-a-database-multiple-tables.md)|레코드를 편집 하 고 다시 데이터베이스에 여러 테이블에 변경 내용을 저장 하는 방법|
 |[개체에서 데이터베이스로 데이터 저장](../data-tools/save-data-from-an-object-to-a-database.md)|TableAdapter DbDirect 메서드를 사용 하 여 데이터베이스에 데이터 집합에 없는 개체에서 데이터를 전달 하는 방법|
 |[TableAdapter DBDirect 메서드를 사용하여 데이터 저장](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|TableAdapter를 사용 하 여 SQL 쿼리를 데이터베이스로 직접 보내는 방법|
-|[데이터 집합을 XML로 저장](../data-tools/save-a-dataset-as-xml.md)|XML 문서에 데이터 집합을 저장 하는 방법|
+|[데이터 세트를 XML로 저장](../data-tools/save-a-dataset-as-xml.md)|XML 문서에 데이터 집합을 저장 하는 방법|
 
 ## <a name="two-stage-updates"></a>2 단계 업데이트
 
@@ -72,21 +70,21 @@ Tableadapter에 익숙한 경우에 다음이 항목 중 하나에 직접 이동
 
 데이터 집합을 병합 하는 경우 부울 인수를 전달할 수 있습니다 (`preserveChanges`)을 설명 하는 <xref:System.Data.DataSet.Merge%2A> 메서드 기존 수정 대상 데이터 집합에 유지할지 여부를 합니다. 레코드의 여러 버전을 유지 하는 데이터 집합 이므로 레코드의 버전이 둘 이상 병합 되는 점을 염두 해야 합니다. 다음 표에서 두 개의 데이터 집합에서 레코드를 병합 하는 방법을 보여 줍니다.
 
-|DataRowVersion|대상 데이터 집합|원본 데이터 집합|
+|DataRowVersion|대상 데이터 세트|원본 데이터 집합|
 | - | - | - |
 |원래 색|James Wilson|James C. Wilson|
 |현재|Jim Wilson|James C. Wilson|
 
 호출 된 <xref:System.Data.DataSet.Merge%2A> 메서드를 사용 하 여 이전 테이블 `preserveChanges=false targetDataset.Merge(sourceDataset)` 다음 데이터에서 결과:
 
-|DataRowVersion|대상 데이터 집합|원본 데이터 집합|
+|DataRowVersion|대상 데이터 세트|원본 데이터 집합|
 | - | - | - |
 |원래 색|James C. Wilson|James C. Wilson|
 |현재|James C. Wilson|James C. Wilson|
 
 호출 된 <xref:System.Data.DataSet.Merge%2A> 메서드를 사용 하 여 `preserveChanges = true targetDataset.Merge(sourceDataset, true)` 다음 데이터에서 결과:
 
-|DataRowVersion|대상 데이터 집합|원본 데이터 집합|
+|DataRowVersion|대상 데이터 세트|원본 데이터 집합|
 | - | - | - |
 |원래 색|James C. Wilson|James C. Wilson|
 |현재|Jim Wilson|James C. Wilson|
@@ -221,12 +219,12 @@ Tableadapter에 익숙한 경우에 다음이 항목 중 하나에 직접 이동
 
 - 비즈니스 계층에서 데이터의 유효성을 검사 하도록 응용 프로그램 코드를 추가 하 여 합니다. 데이터 집합을 한 곳이 수행할 수 있습니다. 데이터 집합을 백 엔드 유효성 검사의 장점 중 일부를 제공 합니다.-열 및 행 값을 변경 하는 변경의 유효성을 검사 하는 기능과 같은 합니다. 자세한 내용은 [데이터 집합의 데이터 유효성 검사](../data-tools/validate-data-in-datasets.md)합니다.
 
-- 프레젠테이션 레이어의 양식에 유효성 검사를 추가 하 여 합니다. 자세한 내용은 [사용자는 Windows Forms에서 유효성 검사 입력](/dotnet/framework/winforms/user-input-validation-in-windows-forms)합니다.
+- 프레젠테이션 레이어의 양식에 유효성 검사를 추가 하 여 합니다. 자세한 내용은 [Windows Forms에서 사용자 입력 유효성 검사](/dotnet/framework/winforms/user-input-validation-in-windows-forms)를 참조하세요.
 
 - 데이터 원본에 데이터를 전송 하 여 백 엔드에서 데이터에서-예를 들어 데이터베이스-수락 하거나 데이터를 거부할 수 있도록 지원 합니다. 복잡 한 데이터 유효성 검사 및 오류 정보를 제공 하는 기능에는 데이터베이스를 사용 하 여 작업 하는 경우에서 제공 되는 위치에 관계 없이 데이터의 유효성을 검사 하기 때문에 실질적인 방법이 될 수 있습니다. 그러나이 방법은 응용 프로그램별 유효성 검사 요구 사항을 허용 하지 않을 수 있습니다. 또한 데이터 소스 데이터의 유효성을 검사 수 발생할 다양 한 왕복에 응용 프로그램 백 엔드에 의해 발생 하는 유효성 검사 오류 확인을 용이 하 게 하는 방법에 따라 데이터 원본에 합니다.
 
    > [!IMPORTANT]
-   > 데이터 명령을 사용 하는 경우는 <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> 로 설정 된 속성 <xref:System.Data.CommandType.Text>, 신중 하 게 데이터베이스에 전달 하기 전에 클라이언트에서 전송 되는 정보를 확인 합니다. 악의적인 사용자가 송신 하려고 할 수 있습니다 (삽입) 하기 위해 무단으로 액세스 하거나 데이터베이스를 손상 시키는 SQL 문을 수정 또는 추가 합니다. 데이터베이스에 사용자 입력을 전송 하기 전에 항상 정보가 유효한 지 확인 합니다. 매개 변수가 있는 쿼리 또는 저장된 프로시저를 가능 하면 항상 사용 하는 것이 좋습니다.
+   > 데이터 명령을 사용 하는 경우는 <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> 로 설정 된 속성 <xref:System.Data.CommandType.Text>, 신중 하 게 데이터베이스에 전달 하기 전에 클라이언트에서 전송 되는 정보를 확인 합니다. 악의적인 사용자가 인증되지 않은 액세스 권한을 얻거나 데이터베이스를 손상시키기 위해 수정되었거나 추가된 SQL 문을 전송(주입)할 수도 있습니다. 데이터베이스에 사용자 입력을 전송 하기 전에 항상 정보가 유효한 지 확인 합니다. 매개 변수가 있는 쿼리 또는 저장된 프로시저를 가능 하면 항상 사용 하는 것이 좋습니다.
 
 ## <a name="transmit-updates-to-the-data-source"></a>데이터 원본에 대 한 업데이트를 전송 합니다.
 
@@ -248,7 +246,7 @@ Tableadapter에 익숙한 경우에 다음이 항목 중 하나에 직접 이동
 (Modified)     c400         Nancy Buchanan    Preferred
 ```
 
-이제 응용 프로그램에서 `Update` 메서드를 호출하여 데이터 집합을 데이터베이스로 전송합니다. 메서드는 각 행을 다시 검사합니다. 첫 번째 행에 대해 메서드를 해당 행에는 데이터베이스에서 원래 페치된 이후로 변경 되지 않았기 때문 SQL 문이 없는 데이터베이스에 전송 합니다.
+이제 애플리케이션에서 `Update` 메서드를 호출하여 데이터 세트을 데이터베이스로 전송합니다. 메서드는 각 행을 다시 검사합니다. 첫 번째 행에 대해 메서드를 해당 행에는 데이터베이스에서 원래 페치된 이후로 변경 되지 않았기 때문 SQL 문이 없는 데이터베이스에 전송 합니다.
 
 그러나 두 번째 행에 대 한는 `Update` 메서드에서 자동으로 올바른 데이터 명령을 호출 하 고 데이터베이스로 전송 합니다. 특정 SQL 문의 구문을 내부 데이터 저장소에서 지원 되는 SQL의 언어에 따라 달라 집니다. 그러나 전송 된 SQL 문을 다음과 같은 일반 특성은 중요 한:
 

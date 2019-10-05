@@ -1,8 +1,6 @@
 ---
-title: 보안, 버전 관리 및 ClickOnce 배포에서 매니페스트 문제 | Microsoft Docs
-ms.custom: ''
+title: ClickOnce 배포에서 매니페스트/security/버전 관리 문제
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,17 +19,17 @@ helpviewer_keywords:
 - ClickOnce applications, security issues
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7ae835b53960ca6952b71c10a2348f707785e16
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: bb2ec5229132265feb1095c9ee921d73a1568dd2
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081747"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745599"
 ---
-# <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>보안, 버전 관리 및 ClickOnce 배포에서 매니페스트 문제
+# <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>ClickOnce 배포의 보안, 버전 관리 및 매니페스트 문제
 
 다양 한 문제가 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 보안, 응용 프로그램 버전 관리 및 매니페스트 구문 및 의미 체계를 일으키는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포가 완료 되지 않습니다.
 
@@ -61,7 +59,7 @@ ms.locfileid: "39081747"
 
 ## <a name="specify-individual-net-framework-assemblies-in-the-manifest"></a>매니페스트에서 개별.NET Framework 어셈블리를 지정 합니다.
 
-응용 프로그램에서 수동으로 편집한 경우 로드에 실패 한 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 이전 버전의를 참조 하는 배포는 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 어셈블리입니다. 예를 들어, System.Net 어셈블리의 버전에 대 한 참조를 추가한 경우에 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 매니페스트에 지정 된 버전을 하기 전에 다음 오류가 발생 합니다. 일반적으로 개인에 대 한 참조를 지정 하지 말아야 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 어셈블리의 버전으로는 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 응용 프로그램이 실행 되는 것에 대 한 응용 프로그램 매니페스트에서 종속성으로 지정 됩니다.
+응용 프로그램에서 수동으로 편집한 경우 로드에 실패 한 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 이전 버전의.NET Framework 어셈블리를 참조 하는 배포 합니다. 예를 들어, System.Net 어셈블리 매니페스트에 지정 된 버전 보다 이전.NET Framework의 버전에 대 한 참조를 추가한 경우 다음 오류가 발생 합니다. 일반적으로 하지 않아야 개별.NET Framework 어셈블리에 대 한 참조를 지정 하는 응용 프로그램 매니페스트에서 종속성으로 지정 된 응용 프로그램이 실행 되는.NET Framework의 버전으로 합니다.
 
 ## <a name="manifest-parsing-issues"></a>매니페스트 구문 해석 문제
 
@@ -98,6 +96,6 @@ ms.locfileid: "39081747"
 
 ## <a name="see-also"></a>참고자료
 
-[ClickOnce 배포 문제 해결](../deployment/troubleshooting-clickonce-deployments.md)  
-[Securw ClickOnce 응용 프로그램](../deployment/securing-clickonce-applications.md)  
+[ClickOnce 배포 문제 해결](../deployment/troubleshooting-clickonce-deployments.md)
+[Secure ClickOnce 응용 프로그램](../deployment/securing-clickonce-applications.md)
 [ClickOnce 배포 전략 선택](../deployment/choosing-a-clickonce-deployment-strategy.md)

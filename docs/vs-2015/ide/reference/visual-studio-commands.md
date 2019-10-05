@@ -1,14 +1,9 @@
 ---
 title: 명령 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio, commands
 - commands, Visual Studio
@@ -17,17 +12,16 @@ ms.assetid: 76ffa394-ee89-4629-aba9-1a62b72e6cc1
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 91c04ad161e17ac2932ca8e75ddadfc1c2879785
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 10ce4bd59567d7d055dd107dd05358d994d22c36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160874"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio 명령
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
-
 
 Visual Studio에서는 **명령** 창, **직접 실행** 창 또는 **찾기/명령** 상자에서 명령을 호출할 수 있습니다. 각각의 경우 검색 또는 디버그 작업이 아닌 명령을 따라야 함을 나타내기 위해 보다 큼 부호(`>`)가 사용됩니다.
 
@@ -47,7 +41,7 @@ Visual Studio에서는 **명령** 창, **직접 실행** 창 또는 **찾기/명
 
  다음 명령은 인수 및/또는 스위치를 사용합니다.
 
-|명령 이름|설명|
+|명령 이름|Description|
 |------------------|-----------------|
 |[기존 항목 추가](../../ide/reference/add-existing-item-command.md)|현재 솔루션에 기존 파일을 추가하고 엽니다.|
 |[기존 프로젝트 추가](../../ide/reference/add-existing-project-command.md)|현재 솔루션에 기존 프로젝트를 추가합니다.|

@@ -1,5 +1,5 @@
 ---
-title: '방법: 도메인 특정 언어에서 표준 메뉴 명령 수정'
+title: DSL에서 표준 메뉴 명령 수정
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,16 +7,15 @@ helpviewer_keywords:
 - Domain-Specific Language, adding custom commands
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: bc7eedfbdf725333a5cd6d3cdd3d683437d1979c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 466df3030793603319cf73085910a164fd222e29
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870192"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890604"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>방법: 도메인 특정 언어에서 표준 메뉴 명령 수정
 
@@ -29,15 +28,15 @@ DSL에서 자동으로 정의되는 일부 표준 명령의 동작을 수정할 
 
 ### <a name="to-discover-what-commands-you-can-modify"></a>수정할 수 있는 명령을 파악하려면
 
-1.  에 `DslPackage` 프로젝트를 열고 `GeneratedCode\CommandSet.cs`합니다. 이 C# 파일의 보조 파일로 솔루션 탐색기에서 찾을 수 있습니다 `CommandSet.tt`합니다.
+1. 에 `DslPackage` 프로젝트를 열고 `GeneratedCode\CommandSet.cs`합니다. 이 C# 파일의 보조 파일로 솔루션 탐색기에서 찾을 수 있습니다 `CommandSet.tt`합니다.
 
-2.  사용 하 여 해당 이름 끝이이 파일에서 클래스를 찾을 "`CommandSet`", 예를 들어 `Language1CommandSet` 고 `Language1ClipboardCommandSet`입니다.
+2. 사용 하 여 해당 이름 끝이이 파일에서 클래스를 찾을 "`CommandSet`", 예를 들어 `Language1CommandSet` 고 `Language1ClipboardCommandSet`입니다.
 
-3.  각 명령 집합 클래스에서 "`override`"와 공백을 차례로 입력합니다. 그러면 IntelliSense에서 재정의할 수 있는 메서드 목록을 표시합니다. 각 명령에는 이름이 "`ProcessOnStatus`" 및 "`ProcessOnMenu`"로 시작하는 메서드 쌍이 있습니다.
+3. 각 명령 집합 클래스에서 "`override`"와 공백을 차례로 입력합니다. 그러면 IntelliSense에서 재정의할 수 있는 메서드 목록을 표시합니다. 각 명령에는 이름이 "`ProcessOnStatus`" 및 "`ProcessOnMenu`"로 시작하는 메서드 쌍이 있습니다.
 
-4.  수정할 명령이 포함된 명령 집합 클래스를 확인합니다.
+4. 수정할 명령이 포함된 명령 집합 클래스를 확인합니다.
 
-5.  편집 내용을 저장하지 않고 파일을 닫습니다.
+5. 편집 내용을 저장하지 않고 파일을 닫습니다.
 
     > [!NOTE]
     > 일반적으로는 생성된 파일을 편집하면 안 됩니다. 다음 번에 파일을 생성하면 편집 내용이 손실됩니다.
@@ -48,15 +47,15 @@ DSL에서 자동으로 정의되는 일부 표준 명령의 동작을 수정할 
 
 ### <a name="to-extend-the-command-set-class"></a>명령 집합 클래스를 확장하려면
 
-1.  솔루션 탐색기의 DslPackage 프로젝트에서 GeneratedCode 폴더를 열고 CommandSet.tt를 확인하여 생성된 CommandSet.cs 파일을 엽니다. 이 파일에 정의된 첫 번째 클래스의 이름과 네임스페이스를 확인합니다. 예를 들어 다음과 같은 코드가 표시될 수 있습니다.
+1. 솔루션 탐색기의 DslPackage 프로젝트에서 GeneratedCode 폴더를 열고 CommandSet.tt를 확인하여 생성된 CommandSet.cs 파일을 엽니다. 이 파일에 정의된 첫 번째 클래스의 이름과 네임스페이스를 확인합니다. 예를 들어 다음과 같은 코드가 표시될 수 있습니다.
 
      `namespace Company.Language1`
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2.  **DslPackage**, 라는 폴더를 만듭니다 **사용자 지정 코드**합니다. 이 폴더에서 이라는 새 클래스 파일을 만듭니다 `CommandSet.cs`합니다.
+2. **DslPackage**, 라는 폴더를 만듭니다 **사용자 지정 코드**합니다. 이 폴더에서 이라는 새 클래스 파일을 만듭니다 `CommandSet.cs`합니다.
 
-3.  새 파일에 생성된 partial 클래스와 이름 및 네임스페이스가 같은 partial 선언을 작성합니다. 예를 들어:
+3. 새 파일에 생성된 partial 클래스와 이름 및 네임스페이스가 같은 partial 선언을 작성합니다. 예를 들어:
 
     ```csharp
     using System;
@@ -66,7 +65,8 @@ DSL에서 자동으로 정의되는 일부 표준 명령의 동작을 수정할 
     { internal partial class Language1CommandSet { ...
     ```
 
-     **참고** 클래스 파일 템플릿을 사용 하는 새 파일을 만드는 경우 네임 스페이스 및 클래스 이름을 모두 수정 해야 합니다.
+    > [!NOTE]
+    > 클래스 파일 템플릿을 사용 하는 새 파일을 만드는 경우 네임 스페이스 및 클래스 이름을 모두 수정 해야 합니다.
 
 ## <a name="override-the-command-methods"></a>명령 메서드 재정의
 
@@ -129,21 +129,21 @@ protected override void ProcessOnMenuDeleteCommand()
 
 이러한 메서드 내에서는 다음 코드 조각이 유용하게 사용되는 경우가 많습니다.
 
--   `this.CurrentSelection`. 사용자가 마우스 오른쪽 단추로 클릭한 모양은 항상 이 모양 및 연결선 목록에 포함됩니다. 사용자가 다이어그램의 빈 부분을 클릭하는 경우의 목록 멤버는 Diagram뿐입니다.
+- `this.CurrentSelection`. 사용자가 마우스 오른쪽 단추로 클릭한 모양은 항상 이 모양 및 연결선 목록에 포함됩니다. 사용자가 다이어그램의 빈 부분을 클릭하는 경우의 목록 멤버는 Diagram뿐입니다.
 
--   `this.IsDiagramSelected()` - `true` 사용자가 다이어그램의 빈 부분입니다.
+- `this.IsDiagramSelected()` - `true` 사용자가 다이어그램의 빈 부분입니다.
 
--   `this.IsCurrentDiagramEmpty()`
+- `this.IsCurrentDiagramEmpty()`
 
--   `this.IsSingleSelection()` - 사용자가 여러 모양을 선택하지 않은 경우입니다.
+- `this.IsSingleSelection()` - 사용자가 여러 모양을 선택하지 않은 경우입니다.
 
--   `this.SingleSelection` - 사용자가 마우스 오른쪽 단추로 클릭한 모양이나 다이어그램입니다.
+- `this.SingleSelection` - 사용자가 마우스 오른쪽 단추로 클릭한 모양이나 다이어그램입니다.
 
--   `shape.ModelElement as MyLanguageElement` - 모양이 나타내는 모델 요소입니다.
+- `shape.ModelElement as MyLanguageElement` - 모양이 나타내는 모델 요소입니다.
 
 개체 및 링크를 만드는 방법에 대 한 요소를 이동 하는 방법에 대 한 자세한 내용은 참조 하세요 [탐색 및 업데이트 프로그램 코드에서 모델](../modeling/navigating-and-updating-a-model-in-program-code.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - <xref:System.ComponentModel.Design.MenuCommand>
 - [도메인별 언어를 사용자 지정하는 코드 작성](../modeling/writing-code-to-customise-a-domain-specific-language.md)

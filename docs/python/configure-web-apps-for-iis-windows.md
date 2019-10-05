@@ -2,23 +2,21 @@
 title: IIS용 Python 웹앱 구성
 description: Windows 가상 머신에서 인터넷 정보 서비스를 사용하여 실행할 Python 웹앱을 구성하는 방법입니다.
 ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 8de69c64cac5c841867f5d993395e5ab380625eb
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 551cff18849f0e8ad9fcd6f2c1e08561291b177f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957375"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>IIS용 Python 웹앱 구성
 
@@ -39,7 +37,7 @@ Windows 컴퓨터([Azure의 Windows 가상 머신](/azure/architecture/reference
 
 ## <a name="set-webconfig-to-point-to-the-python-interpreter"></a>Python 인터프리터를 가리키도록 web.config 설정
 
-앱의 *web.config* 파일은 Windows에서 실행 중인 IIS(7 이상) 웹 서버에 FastCGI 또는 HttpPlatform을 통해 Python 요청을 처리하는 방법을 지시합니다. Visual Studio 2017을 사용하는 경우 *web.config*를 수동으로 수정해야 합니다. 이후 섹션에 설명된 대로 Visual Studio 2015에서는 자동으로 수정합니다.
+앱의 *web.config* 파일은 Windows에서 실행 중인 IIS(7 이상) 웹 서버에 HttpPlatform(권장) 또는 FastCGI를 통해 Python 요청을 처리하는 방법을 지시합니다. Visual Studio 버전 2015 및 이전 버전에서는 이러한 수정 작업을 자동으로 확인합니다. Visual Studio 2017 이상을 사용하는 경우 *web.config*를 수동으로 수정해야 합니다.
 
 ### <a name="configure-the-httpplatform-handler"></a>HttpPlatform 처리기 구성
 

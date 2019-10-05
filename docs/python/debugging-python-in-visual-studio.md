@@ -1,23 +1,21 @@
 ---
 title: Python 코드 디버그
 description: Visual Studio는 중단점 설정, 단계별 실행, 값 검사, 예외 확인, 대화형 창에서 디버깅을 포함하여 Python 코드에 대한 풍부한 디버깅 기능을 제공합니다.
-ms.date: 10/10/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 64eafbffcf453832dd2ba764ef3396cb7129be89
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 4678e3508c16b38fec2a10cdeb79bc499eaf15fd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62959979"
 ---
 # <a name="debug-your-python-code"></a>Python 코드 디버그
 
@@ -28,10 +26,6 @@ Visual Studio에서는 실행 중인 프로세스에 연결하고, **조사식**
 - [Linux 원격 디버깅](debugging-python-code-on-remote-linux-machines.md)
 - [Python/C++ 혼합 모드 디버깅](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - [혼합 모드 디버깅 기호](debugging-symbols-for-mixed-mode-c-cpp-python.md)
-
-|   |   |
-|---|---|
-| ![비디오에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기") | Python 디버깅 데모 [비디오(Microsoft Virtual Academy)를 시청](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567)하세요(3분 32초).|
 
 <a name="debugging-without-a-project"></a>
 
@@ -46,7 +40,7 @@ Visual Studio에서는 실행 중인 프로세스에 연결하고, **조사식**
 
 기본적인 디버깅 워크플로에는 다음 섹션에서 설명한 대로 중단점 설정, 단계별 코드 실행, 값 검사 및 예외 처리가 포함됩니다.
 
-디버깅 세션은 **디버그** > **디버깅 시작** 명령, 도구 모음의 **시작** 단추 또는 **F5** 키로 시작됩니다. 이러한 작업은 프로젝트의 활성 환경 및 **프로젝트 속성**([프로젝트 디버깅 옵션](#project-debugging-options) 참조)에 지정된 명령줄 인수 또는 검색 경로가 포함된 프로젝트의 시작 파일(**솔루션 탐색기**에서 굵게 표시됨)을 실행합니다. **Visual Studio 2017 버전 15.6** 이상에서는 시작 파일이 설정되지 않은 경우 경고가 표시되고, 이전 버전에서는 Python 인터프리터를 실행하는 출력 창이 열리거나 출력 창이 잠시 표시되었다가 사라집니다. 어떤 경우든, 해당 파일을 마우스 오른쪽 단추로 클릭하고 **시작 파일로 설정**을 선택합니다.
+디버깅 세션은 **디버그** > **디버깅 시작** 명령, 도구 모음의 **시작** 단추 또는 **F5** 키로 시작됩니다. 이러한 작업은 프로젝트의 활성 환경 및 **프로젝트 속성**([프로젝트 디버깅 옵션](#project-debugging-options) 참조)에 지정된 명령줄 인수 또는 검색 경로가 포함된 프로젝트의 시작 파일(**솔루션 탐색기**에서 굵게 표시됨)을 실행합니다. Visual Studio 2017 버전 15.6 이상에서는 시작 파일이 설정되지 않은 경우 경고가 표시되고, 이전 버전에서는 Python 인터프리터를 실행하는 출력 창이 열리거나 출력 창이 잠시 표시되었다가 사라집니다. 어떤 경우든, 해당 파일을 마우스 오른쪽 단추로 클릭하고 **시작 파일로 설정**을 선택합니다.
 
 > [!Note]
 > 디버거는 프로젝트에 대해 항상 활성 Python 환경으로 시작합니다. 환경을 변경하려면 [프로젝트에 대한 Python 환경 선택](selecting-a-python-environment-for-a-project.md)에 설명된 대로 다른 환경을 활성화합니다.
@@ -188,10 +182,6 @@ HTML, XML 및 JSON 시각화는 구문 강조 표시 및 트리 보기가 있는
 
 **프로세스**, **스레드** 및 **호출 스택**과 같은 표준 디버거 창은 **대화형 디버그** 창과 동기화되지 않습니다. **대화형 디버그** 창에서 활성 프로세스, 스레드 또는 프레임을 변경하는 경우 다른 디버거 창에는 적용되지 않습니다. 마찬가지로, 다른 디버거 창에서 활성 프로세스, 스레드 또는 프레임을 변경하는 경우 **대화형 디버그** 창에는 적용되지 않습니다.
 
-**대화형 디버그** 창에는 **도구** > **옵션** > **Python 도구** > **대화형 디버그 창**을 통해 액세스할 수 있는 고유한 옵션 집합이 있습니다. 각 Python 환경마다 별도의 인스턴스가 있는 일반 **Python 대화형** 창과 달리, 하나의 **대화형 디버그** 창만 있으며, 디버깅 중인 프로세스에 대해 항상 Python 인터프리터를 사용합니다. [옵션 - 디버깅 옵션](python-support-options-and-settings-in-visual-studio.md#debugging-options)을 참조하세요.
-
-![대화형 디버그 창 옵션](media/debugging-interactive-options.png)
-
 <a name="use-the-experimental-debugger"></a>
 
 ## <a name="use-the-legacy-debugger"></a>레거시 디버거 사용
@@ -252,7 +242,7 @@ ptvsd 설치를 관리하려면:
 1. 다음 명령을 입력합니다.
 
     ```ps
-    DebugAdapterHost.Logging /On
+    DebugAdapterHost.Logging /On /OutputWindow
     ```
 
 1. 디버깅을 시작하고 문제를 재현하는 데 필요한 모든 단계를 진행합니다. 이 시간 동안 디버그 로그는 **출력** 창의 **디버그 어댑터 호스트 로그** 아래에 나타납니다. 그런 다음, 해당 창에서 로그를 복사하여 GitHub 문제, 전자 메일 등에 붙여넣을 수 있습니다.
@@ -262,7 +252,7 @@ ptvsd 설치를 관리하려면:
 1. Visual Studio가 중단되거나 달리 **출력** 창에 액세스할 수 없는 경우 Visual Studio를 다시 시작한 다음, 명령 창을 열고 다음 명령을 입력합니다.
 
     ```ps
-    DebugAdapterHost.Logging /On /OutputWindow
+    DebugAdapterHost.Logging /On
     ```
 
 1. 디버깅을 시작하고 문제를 다시 재현합니다. 그러면 `%temp%\DebugAdapterHostLog.txt`에서 디버거 로그를 찾을 수 있습니다.

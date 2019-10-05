@@ -1,25 +1,20 @@
 ---
 title: '7단계: 쌍 표시 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 42e1d08c-7b2e-4efd-9f47-85d6206afe35
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1b796fa9735337b5cc8f8cb8d955b33bc6a77e76
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4f0c0b7b3e1edb367db6a49987a67e8a6dfdc17c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178595"
 ---
 # <a name="step-7-keep-pairs-visible"></a>7단계: 쌍 표시
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ ms.locfileid: "49189009"
   
 ### <a name="to-keep-pairs-visible"></a>쌍을 표시하려면  
   
-1.  타이머를 시작하는 문 바로 위의 거의 코드 끝부분에서 `if` 이벤트 처리기 메서드에 다음 `label_Click()` 문을 추가합니다. 프로그램에 추가하는 동안 코드를 자세히 검토하고 코드가 어떻게 실행되는지 살펴보십시오.  
+1. 타이머를 시작하는 문 바로 위의 거의 코드 끝부분에서 `if` 이벤트 처리기 메서드에 다음 `label_Click()` 문을 추가합니다. 프로그램에 추가하는 동안 코드를 자세히 검토하고 코드가 어떻게 실행되는지 살펴보십시오.  
   
      [!code-csharp[VbExpressTutorial4Step7#9](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step7/cs/form1.cs#9)]
      [!code-vb[VbExpressTutorial4Step7#9](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step7/vb/form1.vb#9)]  
@@ -59,16 +54,13 @@ ms.locfileid: "49189009"
   
      이러한 두 문 중 첫 번째 문은 두 아이콘이 같은지 여부를 검사합니다. 두 값이 비교되므로 Visual C# 프로그램에서 `==` 같음 연산자를 사용합니다. 두 번째 문은 실제로 값을 변경(*할당*)하고 `firstClicked` 참조 변수를 `null`로 설정하여 다시 설정합니다. 이 때문에 `=` 할당 연산자가 대신 사용됩니다. Visual C#에서는 `=` 기호를 사용하여 값을 설정하고 `==` 기호를 사용하여 값을 비교합니다. Visual Basic에서는 변수 할당과 비교에 둘 다 `=` 기호를 사용합니다.  
   
-2.  프로그램을 저장하고 실행한 뒤 폼에서 아이콘 선택을 시작합니다. 일치하지 않는 쌍을 선택하면 타이머의 Tick 이벤트가 트리거되고 두 아이콘이 모두 사라집니다. 일치하는 쌍을 선택할 경우에는 새 `if` 문이 실행되고 return 문은 메서드가 타이머를 시작하는 코드를 건너뛰게 하므로 다음 그림과 같이 아이콘이 계속 표시됩니다.  
+2. 프로그램을 저장하고 실행한 뒤 폼에서 아이콘 선택을 시작합니다. 일치하지 않는 쌍을 선택하면 타이머의 Tick 이벤트가 트리거되고 두 아이콘이 모두 사라집니다. 일치하는 쌍을 선택할 경우에는 새 `if` 문이 실행되고 return 문은 메서드가 타이머를 시작하는 코드를 건너뛰게 하므로 다음 그림과 같이 아이콘이 계속 표시됩니다.  
   
      ![이 자습서에서 만드는 게임](../ide/media/express-finishedgame.png "Express_FinishedGame")  
 아이콘 쌍이 표시된 일치 게임  
   
 ### <a name="to-continue-or-review"></a>계속하거나 검토하려면  
   
--   다음 자습서 단계로 이동하려면 [8단계: 게임 플레이어가 이겼는지 여부를 확인하는 메서드 추가](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)를 참조하세요.  
+- 다음 자습서 단계로 이동하려면 [8단계: 플레이어가 겼는 지 여부를 확인 하는 메서드 추가](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)합니다.  
   
--   이전 자습서 단계로 돌아가려면 [6단계: 타이머 추가](../ide/step-6-add-a-timer.md)를 참조하세요.
-
-
-
+- 이전 자습서 단계로 돌아가려면 [6단계: 타이머 추가](../ide/step-6-add-a-timer.md)합니다.

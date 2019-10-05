@@ -2,7 +2,6 @@
 title: IActiveScriptSiteWindow::GetWindow | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b3257ac5632a2f3d713b6329a9a1eeebc4415851
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7b6efa066765339375a8315695aa9c1de2f9c46b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724903"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992051"
 ---
 # <a name="iactivescriptsitewindowgetwindow"></a>IActiveScriptSiteWindow::GetWindow
-스크립팅 엔진을 표시 해야 하는 팝업 창 소유자 역할을 수행할 수 있는 창에 대 한 핸들을 검색 합니다.  
+스크립팅 엔진을 표시 해야 하는 팝업 창의 소유자 역할을 수행할 수 있는 창에 핸들을 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetWindow(  
     HWND *phwnd  // address of variable for window handle  
 );  
@@ -38,7 +37,7 @@ HRESULT GetWindow(
   
 #### <a name="parameters"></a>매개 변수  
  `phwnd`  
- [out] 주소 창 핸들을 수신 하는 변수입니다.  
+ [out] 창 핸들을 받는 변수의 주소입니다.  
   
 ## <a name="return-value"></a>반환 값  
  반환 `S_OK` 성공 하면 또는 `E_FAIL` 오류가 발생 합니다.  

@@ -1,11 +1,8 @@
 ---
 title: Parallel 활동 디자이너 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Parallel.UI
@@ -13,13 +10,13 @@ ms.assetid: 0306dc3b-075a-4091-ac3a-96486fbabed5
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: f557eb013cb313321b336fb22fd1299e51faaa82
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 627a99fec632871b815904abd798c0e4bbfd6505
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971344"
 ---
 # <a name="parallel-activity-designer"></a>Parallel 활동 디자이너
 <xref:System.Activities.Statements.Parallel> 활동은 자식 활동 컬렉션을 동시에 실행합니다.  
@@ -36,10 +33,10 @@ ms.locfileid: "49221583"
   
  활동을 추가 하는 <xref:System.Activities.Statements.Parallel.Branches%2A> 병렬 활동의 컬렉션에서 다른 활동 디자이너를 끌어를 **도구 상자** 삼각형 안에 놓습니다를 **병렬** 활동 디자이너입니다. 이 삼각형은 분기에 포함된 활동 옆에 표시됩니다. 이 절차를 반복하여 다른 활동을 추가할 수 있습니다. 끌어서 놓는 내에서 작업을 다시 정렬할 수 있습니다 합니다 **병렬** 활동 디자이너입니다.  
   
-### <a name="parallel-activity-properties-in-the-workflow-designer"></a>워크플로 디자이너의 Parallel 활동 속성  
+### <a name="parallel-activity-properties-in-the-workflow-designer"></a>Workflow Designer의 Parallel 활동 속성  
  다음 표에서는 가장 유용한 Parallel 활동 속성을 보여 주고 디자이너에서 이러한 속성을 사용하는 방법을 설명합니다.  
   
-|속성 이름|필수|용도|  
+|속성 이름|필수|사용|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|머리글에 활동 디자이너의 표시 이름을 지정합니다. 기본값은 **병렬**합니다. 값을 선택적으로 편집할 수 있습니다 합니다 **속성** 표에서 또는 활동 디자이너 머리글에서 직접.|  
 |<xref:System.Activities.Statements.Parallel.Branches%2A>|True|실행할 자식 활동의 컬렉션을 포함합니다.|  
@@ -47,5 +44,5 @@ ms.locfileid: "49221583"
   
 ## <a name="see-also"></a>참고 항목  
  [시퀀스](../workflow-designer/sequence-activity-designer.md)   
- [ParallelForEach\<T >](../workflow-designer/parallelforeach-t-activity-designer.md)   
+ [ParallelForEach\<T>](../workflow-designer/parallelforeach-t-activity-designer.md)   
  [제어 흐름](../workflow-designer/control-flow-activity-designers.md)

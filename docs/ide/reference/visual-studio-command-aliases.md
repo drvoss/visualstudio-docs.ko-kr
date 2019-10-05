@@ -1,8 +1,6 @@
 ---
 title: 명령 별칭
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - aliases, Visual Studio commands
@@ -15,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: de8bb378-8c1c-4087-a9a5-537fa8314c19
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a74bc2bc38befe81ec3a26c5da4819dbe1c66148
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4ee8a41a6e72123a678cdf4be278a247cc3fa55e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056440"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789124"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 
@@ -65,8 +63,8 @@ ms.locfileid: "53056440"
 |[메모리 명령 목록](../../ide/reference/list-memory-command.md) Eight Byte 형식|dq|Debug.ListMemory /Format:EightBytes|
 |Unicode로 [메모리 목록 표시 명령](../../ide/reference/list-memory-command.md)|du|Debug.ListMemory /Unicode|
 |[문 실행 명령](../../ide/reference/evaluate-statement-command.md)|eval|Debug.EvaluateStatement|
-|끝내기|끝내기|File.Exit|
-|선택 영역 서식|format|편집.선택영역서식|
+|종료|종료|File.Exit|
+|선택 영역 서식|형식|편집.선택영역서식|
 |전체 화면|전체 화면|보기.전체화면|
 |[시작 명령](../../ide/reference/start-command.md)|g|디버그.시작|
 |[이동 명령](../../ide/reference/go-to-command.md)|GotoLn|편집.이동|
@@ -120,7 +118,7 @@ ms.locfileid: "53056440"
 |도구 상자 창|도구 상자|보기.도구상자|
 |[디스어셈블리 목록 표시 명령](../../ide/reference/list-disassembly-command.md)|u|Debug.ListDisassembly|
 |대문자로|Ucase|편집.대문자로|
-|실행 취소|undo|편집.실행취소|
+|실행 취소|실행 취소|편집.실행취소|
 |선택 영역을 탭으로 바꾸지 않음|Untabify|Edit.UntabifySelection|
 |조사식 창|조사식|Debug.WatchN|
 |자동 줄 바꿈 설정/해제|WordWrap|편집.자동줄바꿈설정해제|

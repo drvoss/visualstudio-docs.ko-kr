@@ -1,14 +1,9 @@
 ---
 title: 'CA1824: NeutralResourcesLanguageAttribute로 어셈블리 표시 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1824
 - MarkAssembliesWithNeutralResourcesLanguage
@@ -20,14 +15,14 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 13f635398ecab7c0bd9436a86a43a15d4908b163
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 795d48b96392057a3f96cf3a67f3c49de8aee9b9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203082"
 ---
-# <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824: NeutralResourcesLanguageAttribute로 어셈블리 표시
+# <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824: NeutralResourcesLanguageAttribute로 어셈블리를 표시하세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -50,16 +45,13 @@ ms.locfileid: "49892599"
 
 #### <a name="to-specify-the-language-of-the-resource-of-the-neutral-culture"></a>중립 문화권의 리소스의 언어를 지정 하려면
 
-1.  **솔루션 탐색기**프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 클릭 **속성**합니다.
+1. **솔루션 탐색기**프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 클릭 **속성**합니다.
 
-2.  왼쪽된 탐색 모음에서 선택 **응용 프로그램**를 클릭 하 고 **어셈블리 정보**합니다.
+2. 왼쪽된 탐색 모음에서 선택 **응용 프로그램**를 클릭 하 고 **어셈블리 정보**합니다.
 
-3.  **어셈블리 정보** 대화 상자에서 언어를 선택 합니다 **중립 언어** 드롭 다운 목록.
+3. **어셈블리 정보** 대화 상자에서 언어를 선택 합니다 **중립 언어** 드롭 다운 목록.
 
-4.  **확인**을 클릭합니다.
+4. **확인**을 클릭합니다.
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이 규칙에서 경고를 표시 하지 않을 것입니다. 그러나 시작 성능이 저하 될 수 있습니다.
-
-
-

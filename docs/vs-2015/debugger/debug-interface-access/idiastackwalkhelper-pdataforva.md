@@ -1,14 +1,9 @@
 ---
 title: IDiaStackWalkHelper::pdataForVA | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: fafc38fe-74dc-4726-9a51-eebf3a673d7f
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c937ac3039ef5807623d99a9d7fcaadada17a3e6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5af921caa989d7279bb9f52751c452d91045cf3e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51816751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150085"
 ---
 # <a name="idiastackwalkhelperpdataforva"></a>IDiaStackWalkHelper::pdataForVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,7 +50,7 @@ HRESULT pdataForVA( 
  [out에서] 요청된 된 데이터를 사용 하 여 입력 되는 버퍼입니다. 일 수 없습니다 `NULL`합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` 없습니다 PDATA 지정된 된 주소에 대 한 경우. 그러지 않으면 오류 코드가 반환됩니다.  
+ 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 없습니다 PDATA 지정된 된 주소에 대 한 경우. 그러지 않으면 오류 코드가 반환됩니다.  
   
 ## <a name="remarks"></a>설명  
  PDATA (".pdata" 라는 섹션 참조)는 컴파일 대상의 예외 처리 함수에 대 한 정보를 포함 합니다.  
@@ -64,6 +59,3 @@ HRESULT pdataForVA( 
   
 ## <a name="see-also"></a>참고 항목  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
-
-
-

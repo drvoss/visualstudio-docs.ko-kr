@@ -2,7 +2,6 @@
 title: ExtendedDebugPropertyInfo 구조체 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 62b9f3b5877f7919a57e9747355276e438240796
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1fe0eef00d2bf064a8a002925f4ba5607d36f31c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955188"
 ---
 # <a name="extendeddebugpropertyinfo-structure"></a>ExtendedDebugPropertyInfo 구조체
 확장 된 `DebugPropertyInfo` 확장된 속성을 특성화 하기 위한 추가 멤버를 사용 하 여 구조입니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 typedef struct ExtendedDebugPropertyInfo{  
    DBGPROP_INFO_FLAGS  dwValidFields;  
    LPOLESTR  bstrName;  

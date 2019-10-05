@@ -6,16 +6,15 @@ helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: f86082c1b382904dc721d3caab54bf6d18418096
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: 1ca2401333f7678b821b5c6fa68f7953a91996d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440016"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>계산된 저장소 속성 및 사용자 지정 저장소 속성
 도메인 특정 언어 (DSL)의 모든 도메인 속성에 언어 탐색기에서 다이어그램에 사용자에 게 표시 하 고 프로그램 코드에서 액세스할 수 있습니다. 그러나 속성은 해당 값을 저장 하는 방식에서 다릅니다.
@@ -34,30 +33,30 @@ ms.locfileid: "53938323"
 
 #### <a name="to-define-a-calculated-or-custom-storage-property"></a>계산 또는 사용자 지정 저장소 속성을 정의 하려면
 
-1.  DslDefinition.dsl을에서 도메인 속성에 또는 다이어그램에서 선택 **DSL 탐색기**합니다.
+1. DslDefinition.dsl을에서 도메인 속성에 또는 다이어그램에서 선택 **DSL 탐색기**합니다.
 
-2.  에 **속성** 창에서 설정 합니다 **종류** 필드를 **계산** 또는 **사용자 지정 저장소**.
+2. 에 **속성** 창에서 설정 합니다 **종류** 필드를 **계산** 또는 **사용자 지정 저장소**.
 
      도 설정 되어 있어야 해당 **형식** 말하고 있습니다.
 
-3.  클릭 **모든 템플릿 변형** 도구 모음에서 **솔루션 탐색기**합니다.
+3. 클릭 **모든 템플릿 변형** 도구 모음에서 **솔루션 탐색기**합니다.
 
-4.  **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.
+4. **빌드** 메뉴에서 **솔루션 빌드**를 클릭합니다.
 
      다음과 같은 오류 메시지가 표시됩니다. "*YourClass* Get에 대 한 정의가 없습니다*YourProperty*."
 
-5.  오류 메시지를 두 번 클릭 합니다.
+5. 오류 메시지를 두 번 클릭 합니다.
 
      Dsl\GeneratedCode\DomainClasses.cs 또는 DomainRelationships.cs 열립니다. 강조 표시 된 메서드 호출 위에 주석 가져오기에 대 한 구현을 제공 하 라는*YourProperty*().
 
     > [!NOTE]
-    >  이 파일은 DslDefinition.dsl에서 생성 됩니다. 이 파일을 편집 하는 경우에 변경 내용이 손실 됩니다을 클릭 하면 다음 번 **모든 템플릿 변환**합니다. 대신 별도 파일에 필요한 메서드를 추가 합니다.
+    > 이 파일은 DslDefinition.dsl에서 생성 됩니다. 이 파일을 편집 하는 경우에 변경 내용이 손실 됩니다을 클릭 하면 다음 번 **모든 템플릿 변환**합니다. 대신 별도 파일에 필요한 메서드를 추가 합니다.
 
-6.  만들거나 별도 폴더, 예를 들어 CustomCode 클래스 파일을 엽니다\\*YourDomainClass*. cs 합니다.
+6. 만들거나 별도 폴더, 예를 들어 CustomCode 클래스 파일을 엽니다\\*YourDomainClass*. cs 합니다.
 
      네임 스페이스는 생성 된 코드가 동일 해야 합니다.
 
-7.  도메인 클래스의 부분적 구현 클래스 파일을 작성 합니다. 클래스에서 누락 된에 대 한 정의 작성 `Get` 메서드를 다음 예제와 유사 합니다.
+7. 도메인 클래스의 부분적 구현 클래스 파일을 작성 합니다. 클래스에서 누락 된에 대 한 정의 작성 `Get` 메서드를 다음 예제와 유사 합니다.
 
     ```
     namespace Company.FamilyTree
@@ -67,7 +66,7 @@ ms.locfileid: "53938323"
     }  }
     ```
 
-8.  설정 하는 경우 **종류** 하 **사용자 지정 저장소**를 제공 해야 합니다는 `Set` 메서드. 예를 들어:
+8. 설정 하는 경우 **종류** 하 **사용자 지정 저장소**를 제공 해야 합니다는 `Set` 메서드. 예를 들어:
 
     ```
     void SetAgeValue(int value)
@@ -82,7 +81,7 @@ ms.locfileid: "53938323"
 
 10. 속성을 테스트 합니다. 시도 하는 했는지 **실행 취소** 하 고 **다시 실행**합니다.
 
-##  <a name="setters"></a> 트랜잭션 및 사용자 지정 Setter
+## <a name="setters"></a> 트랜잭션 및 사용자 지정 Setter
  사용자 지정 저장소 속성의 집합 메서드에서 필요가 없습니다 트랜잭션 열려는 메서드는 일반적으로 활성 트랜잭션 내에서 호출 되므로 합니다.
 
  그러나 실행 취소 또는 다시 실행을 호출 하는 사용자 또는 트랜잭션을 롤백하는 경우 Set 메서드 호출할 수도 있습니다. 때 <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> 가 true 이면 Set 메서드는 다음과 같이 동작 해야 합니다.

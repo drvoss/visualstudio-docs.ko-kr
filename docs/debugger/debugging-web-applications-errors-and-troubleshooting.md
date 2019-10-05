@@ -2,7 +2,6 @@
 title: 웹 앱-오류를 디버깅 및 문제 해결
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -25,37 +24,37 @@ helpviewer_keywords:
 ms.assetid: 63f2742e-2031-48a8-9773-d9b547c62230
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b089e3d095131e998729dc5d7a270d859673b2c7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MTE95
+ms.openlocfilehash: 1b1c8bb5e7f6ea8e0c68ec444bc5a1995bac4277
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851621"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>웹 애플리케이션 디버그: 오류 및 문제 해결
-웹 응용 프로그램을 디버깅하려고 할 때 다음과 같은 오류가 발생할 수 있습니다.  
-  
--   [문제 해결](../debugger/debugging-web-applications-troubleshooting.md)  
-  
--   [오류: 사이트에서 IP 주소를 사용합니다.](../debugger/error-site-uses-ip-address.md)  
-  
--   [오류: IIS 관리자 서비스에서 응답이 없기 때문에 보안 검사에 실패했습니다.](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)  
-  
--   [오류: ASP.NET이 설치되어 있지 않습니다.](../debugger/error-aspnet-not-installed.md)  
-  
--   [오류: Windows 통합 인증을 사용할 수 없기 때문에 디버깅하지 못했습니다.](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)  
-  
--   [오류: 웹 서버가 제대로 구성되어 있지 않습니다.](../debugger/error-the-web-server-is-not-configured-correctly.md)  
-  
--   [오류: 웹 서버가 잠겨 있기 때문에 디버깅을 사용하기 위해 필요한 DEBUG 동사를 사용할 수 없습니다.](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)  
-  
--   [오류: 웹 서비스를 디버깅하는 동안 시간이 초과되었습니다.](../debugger/error-timeout-while-debugging-web-services.md)  
-  
--   [오류: 웹 서버에서 디버깅을 시작할 수 없습니다.](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
-  
-## <a name="see-also"></a>참고 항목  
- [디버거 보안](../debugger/debugger-security.md)   
- [웹 응용 프로그램 및 스크립트 디버그](../debugger/debugging-web-applications-and-script.md)
+웹 애플리케이션을 디버깅하려고 할 때 다음과 같은 오류가 발생할 수 있습니다.
+
+- [문제 해결](../debugger/debugging-web-applications-troubleshooting.md)
+
+- [오류: 사이트에서 IP 주소를 사용합니다.](../debugger/error-site-uses-ip-address.md)
+
+- [오류: IIS 관리자 서비스에서 응답이 없기 때문에 보안 검사에 실패했습니다.](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)
+
+- [오류: ASP.NET이 설치되어 있지 않습니다.](../debugger/error-aspnet-not-installed.md)
+
+- [오류: Windows 통합 인증을 사용할 수 없기 때문에 디버깅하지 못했습니다.](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)
+
+- [오류: 웹 서버가 제대로 구성되어 있지 않습니다.](../debugger/error-the-web-server-is-not-configured-correctly.md)
+
+- [오류: 웹 서버가 잠겨 있기 때문에 디버깅을 사용하기 위해 필요한 DEBUG 동사를 사용할 수 없습니다.](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
+
+- [오류: 웹 서비스를 디버깅하는 동안 시간이 초과되었습니다.](../debugger/error-timeout-while-debugging-web-services.md)
+
+- [오류: 웹 서버에서 디버깅을 시작할 수 없습니다.](../debugger/error-unable-to-start-debugging-on-the-web-server.md)
+
+## <a name="see-also"></a>참고 항목
+- [디버거 보안](../debugger/debugger-security.md)
+- [웹 애플리케이션 및 스크립트 디버그](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)

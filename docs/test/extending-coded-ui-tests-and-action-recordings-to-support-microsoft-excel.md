@@ -1,20 +1,18 @@
 ---
 title: 코딩된 UI 테스트 및 작업 기록 확장
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cbf4d89fc0a32501a2ea275c5168969dd2a0fd19
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: e43706462cadce7f27efc9509ccb2c02677d43b1
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894120"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870081"
 ---
 # <a name="extend-coded-ui-tests-and-action-recordings"></a>코딩된 UI 테스트 및 작업 기록 확장
 
@@ -35,7 +33,7 @@ ms.locfileid: "52894120"
 
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>
+- [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110))
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>
 - [UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)
 - [코딩된 UI 테스트에 대한 모범 사례](../test/best-practices-for-coded-ui-tests.md)

@@ -1,14 +1,9 @@
 ---
 title: 중단점 선택 대화 상자 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.breakpt.choose
 dev_langs:
@@ -29,13 +24,13 @@ ms.assetid: 35cbd591-4c4f-4035-8731-8162ba1c8318
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 41f3e27b2a357f3b16a2b813bf91ec4443902c2e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5977eb6bad9063e1ef08502cac53159a37c27151
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161621"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>중단점 선택 대화 상자
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,8 +46,5 @@ ms.locfileid: "51726752"
  **없음**  
  에 나열 된 모든 중단점을 지웁니다 합니다 **중단점** 상자입니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [중단점 사용](../debugger/using-breakpoints.md)
-
-
-

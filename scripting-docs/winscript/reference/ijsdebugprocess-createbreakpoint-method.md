@@ -2,7 +2,6 @@
 title: 'Ijsdebugprocess:: Createbreakpoint 메서드 | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,19 +15,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10d734f32d092d341dbb1b02a5cc7a0c127223a4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b398b93c2e7b5ad43abd35d385407b39c0c980f9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557974"
 ---
 # <a name="ijsdebugprocesscreatebreakpoint-method"></a>IJsDebugProcess::CreateBreakPoint 메서드
 지정한 문서 위치에서 중단점을 설정합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT CreateBreakPoint(  
    UINT64 documentId,  
    DWORD characterOffset,  
@@ -49,7 +48,7 @@ HRESULT CreateBreakPoint(
  [in] 중단점을 삽입 해야 하는 문서 텍스트의 길이입니다.  
   
  `isEnabled`  
- [in] 중단점이 활성화 되어 있는지 여부를 지정 합니다.  
+ [in] 중단점 사용 되는지 여부를 지정 합니다.  
   
  `ppDebugBreakPoint`  
  [out] 생성 된 중단점을 나타내는 개체입니다.  

@@ -2,7 +2,6 @@
 title: 'Ijsdebugbreakpoint:: Getdocumentposition 메서드 | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,19 +15,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3c33751b0173626814f042fdc54a7d496b644573
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 146eb26c887cd24d1eb7af858535fcecac62b41d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583147"
 ---
 # <a name="ijsdebugbreakpointgetdocumentposition-method"></a>IJsDebugBreakPoint::GetDocumentPosition 메서드
 중단점이 바인딩된 문의 위치를 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetDocumentPosition(  
    UINT64 *pDocumentId,  
    DWORD *pCharacterOffset,  
@@ -38,13 +37,13 @@ HRESULT GetDocumentPosition(
   
 #### <a name="parameters"></a>매개 변수  
  `pDocumentId`  
- [out] 소스 문서 (포인터는 IDebugDocumentText에)에 대 한 고유 ID입니다.  
+ [out] 원본 문서 (IDebugDocumentText에 대 한 포인터)에 대 한 고유 ID입니다.  
   
  `pCharacterOffset`  
- [out] 스크립트의 시작 부분부터 0 기반 문자 오프셋입니다.  
+ [out] 스크립트의 시작 부분에서 0부터 시작 문자 오프셋입니다.  
   
  `pStatementCharCount`  
- [out] 시작 된 현재 문의 길이 * pCharacterOffset 문자 수입니다.  
+ [out] 시작 하는 현재 문의 길이 * pCharacterOffset 문자입니다.  
   
 ## <a name="return-value"></a>반환 값  
   

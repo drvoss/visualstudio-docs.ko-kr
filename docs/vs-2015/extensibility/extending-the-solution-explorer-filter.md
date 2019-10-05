@@ -1,27 +1,22 @@
 ---
 title: 솔루션 탐색기 필터 확장 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Solution Explorer, extending
 - extensibility [Visual Studio], projects and solutions
 ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0d218744a4fcfcb498054105e48019bf2b0ce66b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 687663a79ea5dca75da68013519f4652fa71460c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750182"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204389"
 ---
 # <a name="extending-the-solution-explorer-filter"></a>솔루션 탐색기 필터 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +28,13 @@ ms.locfileid: "51750182"
   
 ### <a name="create-a-visual-studio-package-project"></a>Visual Studio 패키지 프로젝트 만들기  
   
-1.  라는 VSIX 프로젝트를 만듭니다 `FileFilter`합니다. 명명 된 사용자 지정 명령 항목 템플릿을 추가 **FileFilter**합니다. 자세한 내용은 [메뉴 명령을 사용 하 여 확장을 만드는](../extensibility/creating-an-extension-with-a-menu-command.md)합니다.  
+1. 라는 VSIX 프로젝트를 만듭니다 `FileFilter`합니다. 명명 된 사용자 지정 명령 항목 템플릿을 추가 **FileFilter**합니다. 자세한 내용은 [메뉴 명령을 사용 하 여 확장을 만드는](../extensibility/creating-an-extension-with-a-menu-command.md)합니다.  
   
-2.  에 대 한 참조를 추가 `System.ComponentModel.Composition` 고 `Microsoft.VisualStudio.Utilities`입니다.  
+2. 에 대 한 참조를 추가 `System.ComponentModel.Composition` 고 `Microsoft.VisualStudio.Utilities`입니다.  
   
-3.  메뉴 명령에 표시를 확인 합니다 **솔루션 탐색기** 도구 모음입니다. FileFilterPackage.vsct 파일을 엽니다.  
+3. 메뉴 명령에 표시를 확인 합니다 **솔루션 탐색기** 도구 모음입니다. FileFilterPackage.vsct 파일을 엽니다.  
   
-4.  변경 된 `<Button>` 다음 블록:  
+4. 변경 된 `<Button>` 다음 블록:  
   
     ```xml  
     <Button guid="guidFileFilterPackageCmdSet" id="FileFilterId" priority="0x0400" type="Button">  
@@ -53,28 +48,28 @@ ms.locfileid: "51750182"
   
 ### <a name="update-the-manifest-file"></a>매니페스트 파일 업데이트  
   
-1.  Source.extension.vsixmanifest 파일에서 MEF 구성 요소는 자산을 추가 합니다.  
+1. Source.extension.vsixmanifest 파일에서 MEF 구성 요소는 자산을 추가 합니다.  
   
-2.  에 **자산** 탭을 선택 합니다 **새로 만들기** 단추입니다.  
+2. 에 **자산** 탭을 선택 합니다 **새로 만들기** 단추입니다.  
   
-3.  에 **형식** 필드를 선택 **Microsoft.VisualStudio.MefComponent**합니다.  
+3. 에 **형식** 필드를 선택 **Microsoft.VisualStudio.MefComponent**합니다.  
   
-4.  에 **소스** 필드를 선택 **현재 솔루션의 프로젝트**합니다.  
+4. 에 **소스** 필드를 선택 **현재 솔루션의 프로젝트**합니다.  
   
-5.  에 **프로젝트** 필드를 선택 **FileFilter**를 선택한 후는 **확인** 단추입니다.  
+5. 에 **프로젝트** 필드를 선택 **FileFilter**를 선택한 후는 **확인** 단추입니다.  
   
 ### <a name="add-the-filter-code"></a>필터 코드 추가  
   
-1.  일부 Guid FileFilterPackageGuids.cs 파일에 추가 합니다.  
+1. 일부 Guid FileFilterPackageGuids.cs 파일에 추가 합니다.  
   
     ```csharp  
     public const string guidFileFilterPackageCmdSetString = "00000000-0000-0000-0000-00000000"; // get your GUID from the .vsct file  
     public const int FileFilterId = 0x100;  
     ```  
   
-2.  FileNameFilter.cs FileFilter 프로젝트에 클래스 파일을 추가 합니다.  
+2. FileNameFilter.cs FileFilter 프로젝트에 클래스 파일을 추가 합니다.  
   
-3.  아래 코드를 사용 하 여 빈 네임 스페이스 및 빈 클래스를 대체 합니다.  
+3. 아래 코드를 사용 하 여 빈 네임 스페이스 및 빈 클래스를 대체 합니다.  
   
      합니다 `Task<IReadOnlyObservableSet> GetIncludedItemsAsync(IEnumerable<IVsHierarchyItem rootItems)` 메서드는 솔루션의 루트를 포함 하는 컬렉션 (`rootItems`) 필터에 포함할 항목의 컬렉션을 반환 합니다.  
   
@@ -165,7 +160,7 @@ ms.locfileid: "51750182"
   
     ```  
   
-4.  FileFilter.cs, FileFilter 생성자에서 명령 배치 및 처리 코드를 제거 합니다. 결과 다음과 같습니다.  
+4. FileFilter.cs, FileFilter 생성자에서 명령 배치 및 처리 코드를 제거 합니다. 결과 다음과 같습니다.  
   
     ```csharp  
     private FileFilter(Package package)  
@@ -181,7 +176,7 @@ ms.locfileid: "51750182"
   
      ShowMessageBox() 메서드를 사용할 경우에를 제거 합니다.  
   
-5.  FileFilterPackage, cs에서 initialize () 메서드의 코드를 다음으로 바꿉니다.  
+5. FileFilterPackage, cs에서 initialize () 메서드의 코드를 다음으로 바꿉니다.  
   
     ```csharp  
     protected override void Initialize()  
@@ -193,11 +188,10 @@ ms.locfileid: "51750182"
   
 ### <a name="test-your-code"></a>코드 테스트  
   
-1.  프로젝트를 빌드하고 실행합니다. 두 번째 Visual Studio 인스턴스가 표시됩니다. 이 실험적 인스턴스라고 합니다.  
+1. 프로젝트를 빌드하고 실행합니다. 두 번째 Visual Studio 인스턴스가 표시됩니다. 이 실험적 인스턴스라고 합니다.  
   
-2.  Visual Studio의 실험적 인스턴스에서에서 C# 프로젝트를 엽니다.  
+2. Visual Studio의 실험적 인스턴스에서에서 C# 프로젝트를 엽니다.  
   
-3.  솔루션 탐색기 도구 모음에서 추가 단추를 찾습니다. 왼쪽에서 네 번째 단추를 해야 합니다.  
+3. 솔루션 탐색기 도구 모음에서 추가 단추를 찾습니다. 왼쪽에서 네 번째 단추를 해야 합니다.  
   
-4.  단추를 클릭 하면, 모든 파일을 필터링 해야 하 고 "모든 항목이 필터링 되었습니다 뷰에서." 하는 것이 표시 솔루션 탐색기.
-
+4. 단추를 클릭 하면, 모든 파일을 필터링 해야 하 고 "모든 항목이 필터링 되었습니다 뷰에서." 하는 것이 표시 솔루션 탐색기.

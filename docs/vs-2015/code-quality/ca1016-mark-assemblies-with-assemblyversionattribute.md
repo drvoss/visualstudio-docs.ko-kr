@@ -1,14 +1,9 @@
 ---
 title: 'CA1016: AssemblyVersionAttribute로 어셈블리 표시 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - MarkAssembliesWithAssemblyVersion
 - CA1016
@@ -20,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cb3cb13484d427bb5389a0ec89573231376efdf8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 196ebcf2cea8cedfee14d1bb808bc7b68532786b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811143"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704236"
 ---
 # <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016: AssemblyVersionAttribute로 어셈블리 표시
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,10 +46,10 @@ ms.locfileid: "49811143"
 
 - 공개 키 (강력한 이름의 어셈블리)입니다.
 
-  [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]에서는 버전 번호를 사용하여 어셈블리를 고유하게 식별하고 강력한 이름이 지정된 어셈블리의 형식에 바인딩합니다. 버전 번호는 버전 및 게시자 정책과 함께 사용됩니다. 기본적으로 응용 프로그램은 해당 응용 프로그램이 빌드될 때 사용된 어셈블리 버전으로만 실행됩니다.
+  [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]에서는 버전 번호를 사용하여 어셈블리를 고유하게 식별하고 강력한 이름이 지정된 어셈블리의 형식에 바인딩합니다. 버전 번호는 버전 및 게시자 정책과 함께 사용됩니다. 기본적으로 애플리케이션은 해당 애플리케이션이 빌드될 때 사용된 어셈블리 버전으로만 실행됩니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 버전 번호를 어셈블리에 사용 하 여 추가 된 <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName> 특성입니다. 다음 예제를 참조하십시오.
+ 이 규칙 위반 문제를 해결 하려면 버전 번호를 어셈블리에 사용 하 여 추가 된 <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName> 특성입니다. 다음 예제를 참조하세요.
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  제 3 자에서 또는 프로덕션 환경에서 사용 되는 어셈블리에 대 한이 규칙에서 경고를 표시 하지 마십시오.
@@ -67,7 +62,4 @@ ms.locfileid: "49811143"
  [!code-vb[FxCop.Design.AssembliesVersion#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.AssembliesVersion/vb/FxCop.Design.AssembliesVersion.vb#1)]
 
 ## <a name="see-also"></a>참고 항목
- [어셈블리 버전 관리](http://msdn.microsoft.com/library/775ad4fb-914f-453c-98ef-ce1089b6f903) [방법: 게시자 정책 만들기](http://msdn.microsoft.com/library/8046bc5d-2fa9-4277-8a5e-6dcc96c281d9)
-
-
-
+ [어셈블리 버전 관리](https://msdn.microsoft.com/library/775ad4fb-914f-453c-98ef-ce1089b6f903) [방법: 게시자 정책 만들기](https://msdn.microsoft.com/library/8046bc5d-2fa9-4277-8a5e-6dcc96c281d9)

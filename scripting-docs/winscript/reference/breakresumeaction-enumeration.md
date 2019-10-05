@@ -2,7 +2,6 @@
 title: BREAKRESUMEACTION 열거형 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1b830d314b1db40d7b83557d894ad6f8751bdf9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e5c79aacc64eb57282bf09f7e4673980396b37ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955291"
 ---
 # <a name="breakresumeaction-enumeration"></a>BREAKRESUMEACTION 열거형
 중단점에서 계속하는 방법을 설명합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 typedef enum tagBREAKRESUME_ACTION {  
    BREAKRESUMEACTION_ABORT,  
    BREAKRESUMEACTION_CONTINUE,  
@@ -46,7 +45,7 @@ typedef enum tagBREAKRESUME_ACTION {
   
 |멤버|설명|  
 |------------|-----------------|  
-|BREAKRESUMEACTION_ABORT|응용 프로그램을 중단합니다.|  
+|BREAKRESUMEACTION_ABORT|애플리케이션을 중단합니다.|  
 |BREAKRESUMEACTION_CONTINUE|실행을 계속합니다.|  
 |BREAKRESUMEACTION_STEP_INTO|프로시저를 한 단계씩 실행합니다.|  
 |BREAKRESUMEACTION_STEP_OVER|절차를 건너뜁니다.|  

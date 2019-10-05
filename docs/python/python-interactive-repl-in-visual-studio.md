@@ -1,52 +1,46 @@
 ---
 title: Python 대화형 창(REPL)
 description: Visual Studio에서 빠른 Python 코드 개발을 위해 대화형 창(REPL)을 사용합니다.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 02/11/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3c3a3a6cd3694a0affa6ca1d5cfabac58b124ec9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 7ceecffec577528484cd67fd13d3e04f368fb916
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055717"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822396"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Python 대화형 창 작업
 
-Visual Studio는 각 Python 환경에 대화형 읽기-평가-인쇄 루프(REPL) 창을 제공하여 명령줄에서 *python.exe*와 관련한 REPL을 개선합니다. **대화형** 창(**보기** > **다른 창** > **&lt;환경&gt; 대화형** 창 메뉴 명령으로 열 수 있음)을 사용하면 임의의 Python 코드를 입력하고 즉각적인 결과를 확인할 수 있습니다. 이러한 방식의 코딩은 API 및 라이브러리와 관련된 내용을 배우고 실험하는 데 도움이 되고, 프로젝트에 포함할 작업 코드를 대화형으로 개발하는 데에도 유용합니다.
+Visual Studio는 각 Python 환경에 대화형 읽기-평가-인쇄 루프(REPL) 창을 제공하여 명령줄에서 *python.exe*와 관련한 REPL을 개선합니다. **대화형** 창(**보기** > **다른 창** >  **&lt;환경&gt; 대화형** 창 메뉴 명령으로 열 수 있음)을 사용하면 임의의 Python 코드를 입력하고 즉각적인 결과를 확인할 수 있습니다. 이러한 방식의 코딩은 API 및 라이브러리와 관련된 내용을 배우고 실험하는 데 도움이 되고, 프로젝트에 포함할 작업 코드를 대화형으로 개발하는 데에도 유용합니다.
 
 ![Python 대화형 창](media/interactive-window.png)
 
 Visual Studio에는 선택 가능한 다양한 Python REPL 모드가 있습니다.
 
-| REPL | 설명 | 편집 | 디버깅 | 이미지 |
+| REPL | 설명 | 편집 | 디버그 | 이미지 |
 | --- | --- | --- | --- | --- |
 | 표준 | 기본 REPL, Python에 직접 명령 | 표준 편집(여러 줄 등). | 예, `$attach`를 통해 | 아니요 |
 | 디버그 | 기본 REPL, 디버깅된 Python 프로세스에 명령 | 표준 편집 | 디버깅만 | 아니요 |
 | IPython | REPL이 IPython 백 엔드에 명령 | IPython 명령, Pylab의 편리한 기능 | 아니요 | 예, REPL에서 인라인으로 |
-| Pylab가 없는 IPython | REPL이 IPython 백 엔드에 명령 | 표준 IPython | 아니요 | 예, 별도의 창 | 
+| Pylab가 없는 IPython | REPL이 IPython 백 엔드에 명령 | 표준 IPython | 아니요 | 예, 별도의 창 |
 
 이 문서에서는 **표준** 및 **디버그** REPL 모드를 설명합니다. IPython 모드에 대한 자세한 내용은 [IPython REPL 사용](interactive-repl-ipython.md)을 참조하세요.
 
-**Ctrl**+**Enter** 등의 편집기 조작을 포함하여 예제를 사용한 자세한 연습을 보려면 [자습서 3단계: 대화형 REPL 창 사용](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)을 참조하세요. 
-
-|   |   |
-|---|---|
-| ![비디오에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기") | **대화형** 창에 대한 [비디오(Microsoft Virtual Academy)를 시청](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567)하세요(2분 22초).|
+**Ctrl**+**Enter** 등의 편집기 조작을 포함하여 예제를 사용한 자세한 연습을 보려면 [자습서 3단계: 대화형 REPL 창 사용](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)을 참조하세요.
 
 ## <a name="open-an-interactive-window"></a>대화형 창 열기
 
 특정 환경에서 **대화형** 창을 여는 방법에는 여러 가지가 있습니다.
 
-첫째, Python 환경 창(**보기** > **다른 창** > **Python 환경** 또는 **Ctrl**+**K** > **Ctrl**+**`**)으로 전환하고 선택한 환경에서 **대화형 창 열기** 명령 또는 단추를 선택합니다.
+첫째, Python 환경 창(**보기** > **다른 창** > **Python 환경** 또는 **Ctrl**+**K** > **Ctrl**+ **`** )으로 전환하고 선택한 환경에서 **대화형 창 열기** 명령 또는 단추를 선택합니다.
 
 ![Python 환경 창의 대화형 창 링크](media/interactive-window-opening.png)
 
@@ -62,7 +56,7 @@ Visual Studio에는 선택 가능한 다양한 Python REPL 모드가 있습니�
 
 ## <a name="interactive-window-options"></a>대화형 창 옵션
 
-**도구** > **옵션** > **Python 도구** > **대화형 창**을 통해 **대화형** 창의 다양한 측면을 제어할 수 있습니다([옵션](python-support-options-and-settings-in-visual-studio.md) 참조).
+**도구** > **옵션** > **Python** > **대화형 창**을 통해 **대화형** 창의 다양한 측면을 제어할 수 있습니다([옵션](python-support-options-and-settings-in-visual-studio.md) 참조).
 
 ![Python 대화형 창 옵션](media/options-interactive-windows.png)
 
@@ -117,7 +111,11 @@ Visual Studio에는 선택 가능한 다양한 Python REPL 모드가 있습니�
 
 <!-- After 15.3 is released, you can also press **Undo** after pasting to restore prompts. Press **Undo** a second time to remove the pasted code entirely. -->
 
-코드 파일을 잠깐 보관함으로 사용하는 경우 작은 코드 블록을 한 번에 모두 전송하려는 경우가 많습니다. 코드를 그룹화하려면 `#%%`로 시작하는 주석을 셀의 시작 부분에 추가하여 코드를 *코드 셀*로 표시합니다. 주석을 추가하면 이전 코드 셀은 종료됩니다. 코드 셀을 축소 및 확장할 수 있으며, 코드 셀 내부에서 **Ctrl**+**Enter**를 사용하면 전체 셀이 **대화형** 창으로 전송되고 다음 셀로 이동합니다.
+## <a name="work-with-code-cells"></a>코드 셀 작업
+
+코드 셀은 데이터를 분석하는 데 사용될 수 있으며 다양한 텍스트 편집기에서 지원됩니다.
+
+예를 들어 코드 파일을 잠깐 보관함으로 사용하는 경우 작은 코드 블록을 한 번에 모두 전송하려는 경우가 많습니다. 코드를 그룹화하려면 `#%%`로 시작하는 주석을 셀의 시작 부분에 추가하여 코드를 *코드 셀*로 표시합니다. 주석을 추가하면 이전 코드 셀은 종료됩니다. 코드 셀을 축소 및 확장할 수 있으며, 코드 셀 내부에서 **Ctrl**+**Enter**를 사용하면 전체 셀이 **대화형** 창으로 전송되고 다음 셀로 이동합니다.
 
 또한 Visual Studio는 `# In[1]:`과 같은 주석으로 시작하는 코드 셀도 검색합니다. 이 형식은 Jupyter Notebook을 Python 파일로 내보낼 때 사용되는 형식입니다. 이 검색을 통해 Python 파일로 다운로드하고 Visual Studio에서 연 다음, **Ctrl**+**Enter**로 각 셀을 실행하면 [Azure Notebook](https://notebooks.azure.com/)에서 노트북을 쉽게 실행할 수 있습니다.
 
@@ -127,4 +125,4 @@ Visual Studio에는 선택 가능한 다양한 Python REPL 모드가 있습니�
 
 IntelliSense가 소스 코드 분석만을 기반으로 하는 코드 편집기와 달리 **대화형** 창에는 라이브 개체를 기반으로 한 IntelliSense가 포함되어 있습니다. 동적으로 생성된 코드의 경우 특히 **대화형** 창의 제안이 더 정확합니다. 단점은 부작용(예: 로깅 메시지)이 있는 함수가 개발 환경에 영향을 줄 수 있다는 점입니다.
 
-이 동작이 문제가 될 경우 [옵션 - 대화형 창 옵션](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)에 설명된 대로 **도구** > **옵션** > **Python 도구** > **대화형** 창 아래의 **완료 모드** 그룹에서 설정을 변경합니다.
+이 동작이 문제가 될 경우 [옵션 - 대화형 창 옵션](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)에 설명된 대로 **도구** > **옵션** > **Python** > **대화형 창** 아래의 **완료 모드** 그룹에서 설정을 변경합니다.

@@ -1,25 +1,20 @@
 ---
 title: Visual Studio 수명 주기 정책 예외 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-install
+ms.topic: conceptual
 ms.assetid: c238489d-6181-42c6-aa60-f75d0889dc68
 caps.latest.revision: 3
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: c7c60747429bd702cdcea5f19891829411cd4a9c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b17693523c75dc434fdda258c07a9b17ecfda1b0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772627"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180245"
 ---
 # <a name="visual-studio-lifecycle-policy-exceptions"></a>Visual Studio 수명 주기 정책 예외
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ Visual Studio에는 여러 Microsoft 플랫폼에 대한 개발을 가능하게 
 |[Entity Framework 6](http://go.microsoft.com/fwlink/?LinkId=328950)|Entity Framework 6|  
 |[Exchange 2013](http://go.microsoft.com/fwlink/?LinkId=328950)|Exchange 웹 서비스|  
 |[Microsoft OWIN](http://go.microsoft.com/fwlink/?LinkId=328951)|Microsoft OWIN|  
-|[Microsoft Web 개발자 도구 2013](http://go.microsoft.com/fwlink/?LinkId=328952)|Microsoft Web Developer Tools 2013|  
+|[Microsoft Web Developer Tools 2013](http://go.microsoft.com/fwlink/?LinkId=328952)|Microsoft Web Developer Tools 2013|  
 |이러한 구성 요소에 대한 업데이트는 NuGet을 통해 배포되며 표준 Microsoft 수명 주기 정책을 따르지 않습니다.  자세한 내용은 [http://docs.nuget.org/](http://docs.nuget.org/)를 참조하세요.|Microsoft .NET Framework 4.5용 JSON 웹 토큰 처리기<br /><br /> NuGet 2.7<br /><br /> SignalR<br /><br /> 웹 최적화 프레임워크<br /><br /> WebGrease|  
 |[ODataLib](http://go.microsoft.com/fwlink/?LinkId=328954)|ODataLib|  
 |[Office 2013](http://support.microsoft.com/lifecycle/?p1=16674)|Open XML SDK|  
@@ -47,11 +42,11 @@ Visual Studio에는 여러 Microsoft 플랫폼에 대한 개발을 가능하게 
 |[Silverlight 5](http://support.microsoft.com/lifecycle/?p1=16278)<br /><br /> <br />> 참고 항목: [http://support.microsoft.com/gp/lifean45](http://support.microsoft.com/gp/lifean45)|Silverlight 5 런타임<br /><br /> Silverlight 5 SDK|  
 |[SQL Server 2008 R2](http://support.microsoft.com/lifecycle/search/default.aspx?sort=PN&alpha=SQL%20Server%202008%20R2&Filter=FilterNO)|SQL 시스템 CLR 형식(SQL Server 2008 R2)|  
 |[SQL Server 2012](http://support.microsoft.com/lifecycle/search/default.aspx?sort=PN&alpha=SQL%20Server%202012&Filter=FilterNO)|DACFx(DACFramework)<br /><br /> SMO(SharedManagementObjects)<br /><br /> SQL 명령줄 유틸리티<br /><br /> SQL 언어 서비스 - IntelliSense(TSQLLanguageService)<br /><br /> SQL LocalDB<br /><br /> SQL Native Client(Sqlncli)<br /><br /> SQL Server Express 2012 SP1<br /><br /> SQL 시스템 CLR 형식(SQL Server 2012)<br /><br /> SQLDOM|  
-|[SQL Server 2014](https://support.microsoft.com/en-us/lifecycle/search?sort=PN&alpha=SQL%20Server%202014&Filter=FilterNO)|DACFx(DACFramework)<br /><br /> SMO(SharedManagementObjects)<br /><br /> SQL 명령줄 유틸리티<br /><br /> SQL 언어 서비스 - IntelliSense(TSQLLanguageService)<br /><br /> SQL LocalDB<br /><br /> SQL Native Client(Sqlncli)<br /><br /> SQL Server Express 2014<br /><br /> SQL 시스템 CLR 형식(SQL Server 2014)<br /><br /> SQLDOM|  
+|[SQL Server 2014](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=SQL%20Server%202014&Filter=FilterNO)|DACFx(DACFramework)<br /><br /> SMO(SharedManagementObjects)<br /><br /> SQL 명령줄 유틸리티<br /><br /> SQL 언어 서비스 - IntelliSense(TSQLLanguageService)<br /><br /> SQL LocalDB<br /><br /> SQL Native Client(Sqlncli)<br /><br /> SQL Server Express 2014<br /><br /> SQL 시스템 CLR 형식(SQL Server 2014)<br /><br /> SQLDOM|  
 |[SQL Server Compact Edition 4.0](http://support.microsoft.com/lifecycle/?p1=16106)|SQL Server Compact Edition 4.0|  
-|[WCF RIA 서비스 v1.0 SP2](http://go.microsoft.com/fwlink/?LinkId=328955)|WCF RIA Services v1.0 SP2|  
+|[WCF RIA Services v1.0 SP2](http://go.microsoft.com/fwlink/?LinkId=328955)|WCF RIA Services v1.0 SP2|  
 |[Windows Server 2008](http://support.microsoft.com/lifecycle/search/default.aspx?sort=PN&alpha=Windows%20Server%202008&Filter=FilterNO)|Windows Server 2008용 WWS(Windows 웹 서비스)|  
 |[Windows 7](http://support.microsoft.com/lifecycle/?c2=14019)|Windows 7 SDK|  
 |[Windows 8](http://support.microsoft.com/lifecycle/?c2=16796)|Windows 8 SDK|  
 |[Windows 8.1](http://support.microsoft.com/lifecycle/search/default.aspx?sort=PN&alpha=windows%208.1&Filter=FilterNO)|Windows 8.1 SDK<br /><br /> JavaScript용 Windows 라이브러리(WinJS)|  
-|[Microsoft Azure](http://support.microsoft.com/gp/azure-cloud-lifecycle-faq)<br /><br /> <br />> 참고: [온라인 수명 주기 정책](http://support.microsoft.com/gp/OSSLpolicy)|Microsoft Azure 모바일 서비스 SDK<br /><br /> Microsoft Azure 모바일 서비스 도구|
+|[Microsoft Azure](http://support.microsoft.com/gp/azure-cloud-lifecycle-faq)<br /><br /> <br />> 참고 항목: [온라인 수명 주기 정책](http://support.microsoft.com/gp/OSSLpolicy)|Microsoft Azure 모바일 서비스 SDK<br /><br /> Microsoft Azure 모바일 서비스 도구|

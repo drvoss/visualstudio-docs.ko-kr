@@ -1,14 +1,9 @@
 ---
 title: 코드 분석 규칙 집합 참조 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 helpviewer_keywords:
 - code analysis, rule sets
 ms.assetid: 5874e854-e298-4d2e-bbe4-95e899d22587
@@ -16,12 +11,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 928b838a4172537ec12937b02c3deab2cf666ddd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a1f91b352da5a41ec2ef81fb6067976073c787ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62576756"
 ---
 # <a name="code-analysis-rule-set-reference"></a>코드 분석 규칙 집합 참조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,11 +36,8 @@ ms.locfileid: "49279164"
 |[관리 코드에 대한 전역화 규칙 규칙 집합](../code-quality/globalization-rules-rule-set-for-managed-code.md)|이러한 규칙은 다른 언어, 로캘 및 문화권에서 사용 될 때 올바로 표시 응용 프로그램에서 데이터를 방해 하는 문제에 집중 합니다. 응용 프로그램 지역화 되거나 전역화 하는 경우이 규칙 집합을 포함 합니다.|  
 |[관리 코드에 대한 관리 최소 규칙 규칙 집합](../code-quality/managed-minimun-rules-rule-set-for-managed-code.md)|이러한 규칙은 코드 분석은 가장 정확한 코드의 가장 중요 한 문제에 집중 합니다.  이러한 규칙은 수 적으며 제한 된 Visual Studio 버전에서 실행 하기 위해서만 합니다.  다른 Visual Studio 버전을 사용 하 여 MinimumRecommendedRules.ruleset을 사용 합니다.|  
 |[관리 코드에 대한 관리 권장 규칙 규칙 집합](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)|이러한 규칙은 잠재적 보안 허점, 응용 프로그램 충돌 및 기타 중요 한 논리 및 디자인 오류를 비롯 하 여 코드의 가장 중요 한 문제에 집중 합니다. 프로젝트에 대해 만든 모든 사용자 지정 규칙 집합에 설정 합니다.이 규칙을 포함 해야 합니다.|  
-|[혼합 최소 규칙 규칙 집합](../code-quality/mixed-minimum-rules-rule-set.md)|이러한 규칙은 잠재적 보안 허점 및 응용 프로그램 작동 중단을 포함 하 여 공용 언어 런타임을 지 원하는 c + + 프로젝트에서 가장 중요 한 문제에 집중 합니다. 공용 언어 런타임을 지 원하는 c + + 프로젝트에 대해 만든 모든 사용자 지정 규칙 집합에 설정 합니다.이 규칙을 포함 해야 합니다.|  
-|[혼합 권장 규칙 규칙 집합](../code-quality/mixed-recommended-rules-rule-set.md)|이러한 규칙은 잠재적 보안 허점, 응용 프로그램 충돌 및 기타 중요 한 논리 및 디자인 오류를 포함 하 여 공용 언어 런타임을 지 원하는 c + + 프로젝트에서 가장 일반적이 고 중요 한 문제에 집중 합니다. 공용 언어 런타임을 지 원하는 c + + 프로젝트에 대해 만든 모든 사용자 지정 규칙 집합에 설정 합니다.이 규칙을 포함 해야 합니다.  이 규칙 집합은 Visual Studio Professional edition 이상 구성 하도록 설계 되었습니다.|  
+|[혼합 최소 규칙 규칙 집합](../code-quality/mixed-minimum-rules-rule-set.md)|이러한 규칙의 가장 중요 한 문제에 초점을 맞춥니다에 C++ 잠재적 보안 허점 및 응용 프로그램 작동 중단을 포함 하 여 공용 언어 런타임을 지 원하는 프로젝트입니다. 이 규칙 집합에 대해 만든 모든 사용자 지정 규칙 집합에 포함 해야 하면 C++ 공용 언어 런타임에서 지 원하는 프로젝트입니다.|  
+|[혼합 권장 규칙 규칙 집합](../code-quality/mixed-recommended-rules-rule-set.md)|이러한 규칙의 가장 일반적인 및 중요 한 문제에 초점을 맞춥니다에 C++ 잠재적 보안 허점, 응용 프로그램 충돌 및 기타 중요 한 논리 및 디자인 오류를 포함 하 여 공용 언어 런타임을 지 원하는 프로젝트입니다. 이 규칙 집합에 대해 만든 모든 사용자 지정 규칙 집합에 포함 해야 하면 C++ 공용 언어 런타임에서 지 원하는 프로젝트입니다.  이 규칙 집합은 Visual Studio Professional edition 이상 구성 하도록 설계 되었습니다.|  
 |[네이티브 최소 규칙 규칙 집합](../code-quality/native-minimum-rules-rule-set.md)|이러한 규칙은 잠재적 보안 허점 및 응용 프로그램 충돌을 비롯 하 여 네이티브 코드의 가장 중요 한 문제에 집중 합니다. 네이티브 프로젝트에 대해 만드는 모든 사용자 지정 규칙 집합에 이 규칙 집합을 포함해야 합니다.|  
 |[네이티브 권장 규칙 규칙 집합](../code-quality/native-recommended-rules-rule-set.md)|이러한 규칙은 잠재적 보안 허점 및 응용 프로그램 충돌을 비롯 하 여 네이티브 코드의 가장 중요 하 고 일반적인 문제에 집중 합니다.  네이티브 프로젝트에 대해 만드는 모든 사용자 지정 규칙 집합에 이 규칙 집합을 포함해야 합니다.  이 규칙 집합은 Visual Studio Professional edition 이상 작동 하도록 설계 되었습니다.|  
 |[관리 코드에 대한 보안 규칙 규칙 집합](../code-quality/security-rules-rule-set-for-managed-code.md)|이 규칙 집합에는 모든 Microsoft 보안 규칙이 포함 되어 있습니다. 보고 되는 잠재적인 보안 문제 수를 최대화 하려면이 규칙 집합을 포함 합니다.|
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: CombinePath 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -21,18 +16,17 @@ ms.assetid: c20edbf4-3d4f-4f66-b1d5-753a0d858ed8
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 71176722443cc2e7f858bbfea85d526a4f4d772d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3b97714fc707d8f9174a01dcc1fe7b3b59176de2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160391"
 ---
 # <a name="combinepath-task"></a>CombinePath 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 지정된 경로를 단일 경로로 결합합니다.  
   
 ## <a name="task-parameters"></a>작업 매개 변수  
@@ -50,6 +44,3 @@ ms.locfileid: "49192688"
 ## <a name="see-also"></a>참고 항목  
  [작업](../msbuild/msbuild-tasks.md)   
  [작업 참조](../msbuild/msbuild-task-reference.md)
-
-
-

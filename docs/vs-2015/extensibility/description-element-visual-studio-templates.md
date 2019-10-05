@@ -1,26 +1,21 @@
 ---
 title: Description 요소 (Visual Studio 템플릿) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Description element [Visual Studio project templates]
 ms.assetid: 6e12be73-081f-4c7d-898f-027c307a9fe1
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5cd2598c434860b0818159aa53855e9779986bed
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d60244ea827433678afbd09dd1e8cf1c972595cd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162109"
 ---
 # <a name="description-element-visual-studio-templates"></a>Description 요소(Visual Studio 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ ms.locfileid: "51771886"
   
 |특성|설명|  
 |---------------|-----------------|  
-|`Package`|고급 사용자 시나리오에 대 한 선택적 특성입니다.<br /><br /> Visual Studio 패키지를 지정 하는 GUID id입니다.|  
+|`Package`|고급 사용자 시나리오에 대 한 선택적 특성입니다.<br /><br /> Visual Studio 패키지를 ID를 지정하는 GUID입니다.|  
 |`ID`|고급 사용자 시나리오에 대 한 선택적 특성입니다.<br /><br /> Visual Studio 리소스 ID를 지정합니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
@@ -63,7 +58,7 @@ ms.locfileid: "51771886"
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.|  
   
 ## <a name="text-value"></a>텍스트 값  
- 경우가 아니면 텍스트 값이 필요 합니다 `Package` 및 `ID` 특성이 사용 됩니다.  
+ `Package` 및 `ID` 특성이 사용되는 경우가 아니면 텍스트 값은 필수입니다.  
   
  텍스트 서식 파일에 대 한 설명을 제공합니다.  
   
@@ -97,7 +92,6 @@ ms.locfileid: "51771886"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
  [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
-

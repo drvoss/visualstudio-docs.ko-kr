@@ -1,27 +1,22 @@
 ---
-title: '방법: 특정 함수로 계측 제한 | Microsoft 문서'
-ms.custom: ''
+title: '방법: 특정 함수로 계측 제한 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, limiting instrumentation to functions
 ms.assetid: bd98d6bf-2560-4eba-b063-2facb09f87c4
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c7fa666c42d31035bd42841a2bbb41221bc16b5e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 8923323a3aed96a9dd441a4a36b2084ffd8197e6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432648"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>방법: 특정 함수로 계측 제한
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "51782572"
   계측 프로파일링 방법을 선택할 경우에만 이 방식으로 데이터 수집을 제한할 수 있습니다.  
   
 > [!NOTE]
->  **성능 세션** 속성 페이지의 **고급** 페이지를 사용하여 프로파일링 도구 [VSInstr](../profiling/vsinstr.md) 명령줄 계측 도구에 사용할 수 있는 기타 옵션을 설정할 수도 있습니다.  
+> **성능 세션** 속성 페이지의 **고급** 페이지를 사용하여 프로파일링 도구 [VSInstr](../profiling/vsinstr.md) 명령줄 계측 도구에 사용할 수 있는 기타 옵션을 설정할 수도 있습니다.  
   
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-performance-session"></a>성능 세션의 특정 함수로 계측을 제한하려면  
   
@@ -52,7 +47,7 @@ ms.locfileid: "51782572"
     `FuncSpec`는 네임스페이스 및 함수 이름입니다. 형식은 `Namespace`**::**`FunctionName`입니다. 세미콜론을 사용하여 여러 함수를 구분합니다. 별표(\*)를 사용하여 하나 이상의 문자에 대한 와일드 카드를 지정합니다. 예를 들어 **/include:MyNS::\\***는 MyNS 네임스페이스에 있는 모든 함수를 지정합니다.  
   
    > [!NOTE]
-   >  이진 파일의 함수를 나열하려면 프로파일링 도구 설치 디렉터리(일반적으로 [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] 설치 디렉터리 아래 \Team Tools\Performance Tools)에서 명령 프롬프트 창을 열고 **vsinstr /DumpFuncs**를 입력합니다.  
+   > 이진 파일의 함수를 나열하려면 프로파일링 도구 설치 디렉터리(일반적으로 [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] 설치 디렉터리 아래 \Team Tools\Performance Tools)에서 명령 프롬프트 창을 열고 **vsinstr /DumpFuncs**를 입력합니다.  
   
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-binary"></a>이진 파일의 특정 함수로 계측을 제한하려면  
   
@@ -71,12 +66,9 @@ ms.locfileid: "51782572"
     `FuncSpec`는 네임스페이스 및 함수 이름입니다. 형식은 `Namespace`**::**`FunctionName`입니다. 세미콜론을 사용하여 여러 함수를 구분합니다. 별표(\*)를 사용하여 하나 이상의 문자에 대한 와일드 카드를 지정합니다. 예를 들어 **/include:MyNS::\\***는 MyNS 네임스페이스에 있는 모든 함수를 지정합니다.  
   
    > [!NOTE]
-   >  이진 파일의 함수를 나열하려면 프로파일링 도구 설치 디렉터리(일반적으로 [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] 설치 디렉터리 아래 \Team Tools\Performance Tools)에서 명령 프롬프트 창을 열고 **vsinstr /DumpFuncs**를 입력합니다.  
+   > 이진 파일의 함수를 나열하려면 프로파일링 도구 설치 디렉터리(일반적으로 [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] 설치 디렉터리 아래 \Team Tools\Performance Tools)에서 명령 프롬프트 창을 열고 **vsinstr /DumpFuncs**를 입력합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [데이터 수집 제어](../profiling/controlling-data-collection.md)   
- [방법: 계측을 특정 DLL로 제한](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
+ [방법: 특정 Dll로 계측 제한](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
  [방법: 추가 계측 옵션 지정](../profiling/how-to-specify-additional-instrumentation-options.md)
-
-
-

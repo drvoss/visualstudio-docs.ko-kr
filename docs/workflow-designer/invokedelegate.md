@@ -2,22 +2,21 @@
 title: 워크플로 디자이너-InvokeDelegate
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - InvokeDelegate Designer
 - System.Activities.Statements.InvokeDelegate.UI
 ms.assetid: 289a7498-5127-453f-beb5-05f05b80d26f
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fd490d15d5dc1760222446a1ae507d0e764c73f4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 511d73ea2992887f31bc8750cc9ba32934bddd91
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537090"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 
@@ -35,12 +34,12 @@ ms.locfileid: "53870537"
 
 다음 표에서는 <xref:System.Activities.Statements.InvokeDelegate> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. 이러한 속성은 속성 표에서 편집할 수 있습니다 하 고 일부는 워크플로 디자이너 화면에서 편집할 수 있습니다.
 
-|속성 이름|필수|용도|
+|속성 이름|필수|사용|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.InvokeDelegate> 활동의 이름입니다. 기본값은 InvokeDelegate입니다.<br /><br /> 하지만 <xref:System.Activities.Activity.DisplayName%2A> 은 꼭 필요 하지 하나를 사용 하는 것이 좋습니다.|
 |<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|True|작업이 실행될 때 호출할 <xref:System.Activities.ActivityDelegate>의 이름입니다. 이 속성에는 디자이너 화면에서 편집할 수 있습니다 이며 필수입니다.|
 |<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|False|호출한 대리자의 인수 컬렉션입니다. 키 매개 변수 개체의 이름에는 <xref:System.Activities.ActivityDelegate>, 값은 인수 식에서 해당 평가 되 고 해당 매개 변수 개체에 할당 합니다. 표시할 합니다 **DelegateArguments** 이 속성을 설정할 수 있는 대화 상자에서 줄임표 단추를 클릭 합니다 **DelegateArguments** 속성 그리드의 필드입니다. 클릭 합니다 **인수 만들기** 필드는 인수를 추가 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [방법: 워크플로 디자이너에서 활동 대리자 정의 및 사용](../workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md)

@@ -1,26 +1,21 @@
 ---
 title: API 참조 (Visual Studio 디버깅) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], API reference
 ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c45f89a6deafad5317f4cde704b73d9d4a1f30a6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f3e95200cf29c8561798c858635c3864d635fb40
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424511"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>API 참조(Visual Studio 디버깅)
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -44,10 +39,10 @@ ms.locfileid: "51771707"
 |E_ACCESSDENIED|일반 액세스 거부 오류가 발생 합니다.|0x80070005|  
   
 > [!NOTE]
->  경우는 [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] 반환 메서드를 디버깅 `S_OK`를 매개 변수에 대 한 포인터는 유효한 모든, 즉, 유효성을 검사 하지 out 매개 변수가 포인터에서 수행 되는 가정 때 `S_OK` 반환 됩니다.  
+> 경우는 [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] 반환 메서드를 디버깅 `S_OK`를 매개 변수에 대 한 포인터는 유효한 모든, 즉, 유효성을 검사 하지 out 매개 변수가 포인터에서 수행 되는 가정 때 `S_OK` 반환 됩니다.  
   
 > [!NOTE]
->  잘못 된 또는 `NULL` [out] 매개 변수 IDE에서 충돌이 발생할 수 있습니다.  
+> 잘못 된 또는 `NULL` [out] 매개 변수 IDE에서 충돌이 발생할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [인터페이스](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)   
@@ -55,4 +50,3 @@ ms.locfileid: "51771707"
  [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [디버깅을 위한 SDK 도우미](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
  [Visual Studio 디버거 확장성](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)
-

@@ -120,7 +120,7 @@
 ## [AsyncTaskMethodBuilder 구조체](asynctaskmethodbuilder-structure-internal-members.md)
 ### [ObjectIdForDebugger 속성](asynctaskmethodbuilder-objectidfordebugger-property.md)
 ### [m_builder 필드](asynctaskmethodbuilder-m-builder-field.md)
-## [AsyncTaskMethodBuilder<TResult> 구조체](asynctaskmethodbuilder-tresult-structure-internal-members.md)
+## [AsyncTaskMethodBuilder\<TResult> 구조](asynctaskmethodbuilder-tresult-structure-internal-members.md)
 ### [ObjectIdForDebugger 속성](asynctaskmethodbuilder-tresult-objectidfordebugger-property.md)
 ### [m_task 필드](asynctaskmethodbuilder-tresult-m-task-field.md)
 ## [AsyncVoidMethodBuilder 구조체](asyncvoidmethodbuilder-structure-internal-members.md)
@@ -128,4 +128,3 @@
 ### [m_objectIdForDebugger 필드](asyncvoidmethodbuilder-m-objectidfordebugger-field.md)
 # [참조](reference/reference-visual-studio-debugging-apis.md)
 # [샘플](visual-studio-debugging-samples.md)
-

@@ -1,18 +1,16 @@
 ---
 title: 팀 탐색기 참조
 ms.date: 12/04/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
-ms.manager: douge
-ms.openlocfilehash: 85c7e06482a751b896534c81d227dade74ffbcb5
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.manager: jillfra
+ms.openlocfilehash: 6a7c1e9d0f5e8b8ef48a033d58038818d2d620e5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027776"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945086"
 ---
 # <a name="team-explorer-reference"></a>팀 탐색기 참조
 
@@ -35,7 +33,7 @@ ms.locfileid: "53027776"
 
 | Git를 사용한 **홈** 페이지 | TFVC를 사용한 **홈** 페이지 |
 | - | - |
-| ![Visual Studio 2019에서 Git를 포함하는 팀 탐색기 홈 페이지](media/team-explorer-reference/team-explorer-git.png) | ![Visual Studio 2017에서 TFVC를 포함하는 팀 탐색기 홈 페이지](media/team-explorer-reference/team-explorer-tfvc.png) |
+| ![Visual Studio 2019에서 Git를 포함하는 팀 탐색기 홈 페이지](media/team-explorer-reference/team-explorer-git.png) | ![Visual Studio에서 TFVC가 있는 팀 탐색기 홈 페이지](media/team-explorer-reference/team-explorer-tfvc.png) |
 
 ## <a name="changes-page-git"></a>변경 내용 페이지(Git)
 
@@ -81,8 +79,12 @@ ms.locfileid: "53027776"
 - [Outlook을 사용하여 쿼리 결과 목록을 이메일로 보내기](/azure/devops/boards/queries/share-plans)
 - [Excel에서 쿼리로 보고서 만들기](/azure/devops/report/excel/create-status-and-trend-excel-reports)(TFS에만 해당)
 
+::: moniker range=">= vs-2019"
+
 > [!NOTE]
-> Visual Studio 2019 미리 보기 1에 새 [작업 항목 환경](/azure/devops/boards/work-items/set-work-item-experience-vs)이 있습니다. Visual Studio 2019 미리 보기 1에서 작업 항목을 보는 방법에 대한 자세한 내용은 [작업 항목 보기 및 추가](/azure/devops/boards/work-items/view-add-work-items)를 참조하세요.
+> Visual Studio 2019에는 새로운 [작업 항목 환경](/azure/devops/boards/work-items/set-work-item-experience-vs)이 있습니다. Visual Studio 2019에서 작업 항목을 보는 방법에 대한 자세한 내용은 [작업 항목 보기 및 추가](/azure/devops/boards/work-items/view-add-work-items)를 참조하세요.
+
+::: moniker-end
 
 ## <a name="builds-page"></a>빌드 페이지
 

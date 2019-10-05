@@ -1,8 +1,7 @@
 ---
 title: 빌드 이벤트 대화 상자(Visual Basic)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesBuildEvents
@@ -13,17 +12,17 @@ helpviewer_keywords:
 - Build Events dialog box
 - post-build events
 ms.assetid: 3a81a7c7-39f9-47a8-ba5a-b351227f380e
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: ghogen
+ms.author: ghogen
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e81a9308439af6a0dd688440dc6aa193a66eabf
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: bb4cd0a46e5ab4cc9c3a9e00773818d536b84891
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219356"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461444"
 ---
 # <a name="build-events-dialog-box-visual-basic"></a>빌드 이벤트 대화 상자(Visual Basic)
 

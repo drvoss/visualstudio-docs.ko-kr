@@ -1,8 +1,6 @@
 ---
-title: 관리 되는 개체의 사용자 지정 뷰 만들기 | Microsoft Docs
-ms.custom: ''
-ms.date: 11/04/2016
-ms.technology: vs-ide-debug
+title: 개체의 사용자 지정 뷰 만들기 | Microsoft Docs
+ms.date: 01/08/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.data.elements
@@ -12,7 +10,7 @@ dev_langs:
 - FSharp
 - C++
 helpviewer_keywords:
-- data types [C#], custom
+- data types, custom
 - custom data types
 - managed code, custom data types
 - autoexp.dat file
@@ -22,37 +20,35 @@ helpviewer_keywords:
 ms.assetid: 9969e9b2-9008-4729-8a14-0d6deaa61576
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 970051c5f53c152ea6fee334c3c1f856172b5ed9
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 36e875bc8101bc8a1b0eb1bec6671c76e3b0c9b2
+ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280547"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71814293"
 ---
-# <a name="create-custom-views-of-managed-objects"></a>관리 개체의 사용자 지정 뷰 만들기
-Visual Studio에서 디버거 변수 창에 데이터 형식이 표시되는 방식을 사용자 지정할 수 있습니다.  
-  
-## <a name="attributes"></a>특성  
- C# 및 Visual Basic에서는 <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute> 및 <xref:System.Diagnostics.DebuggerBrowsableAttribute>를 사용하여 사용자 지정 데이터에 대한 확장을 추가할 수 있습니다.  
-  
- [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] 코드에서 Visual Basic은 DebuggerBrowsable 특성을 지원하지 않습니다. 최신 버전의 .NET Framework에서는 이러한 제한 사항이 제거되었습니다.  
-  
-## <a name="visualizers"></a>시각화 도우미  
- 시각화 도우미를 작성하여 관리되는 데이터 형식을 표시할 수 있습니다. 자세한 내용은 [방법: 시각화 도우미 작성](../debugger/how-to-write-a-visualizer.md)합니다.  
-  
-## <a name="native-code"></a>네이티브 코드  
- 네이티브 코드를 사용하는 경우 Program Files\Microsoft Visual Studio 11.0\Common7\Packages\Debugger 디렉터리에 있는 autoexp.dat 파일에 사용자 지정 데이터 형식 확장을 추가할 수 있습니다. `autoexp` 규칙의 작성 방법에 대한 지침은 해당 파일 내에 있습니다.  
-  
-> [!CAUTION]
->  이 파일의 구조와 autoexp 규칙의 구문은 Visual Studio 릴리스마다 다를 수 있습니다.  
-  
- 또한 식 계산기 추가 기능을 작성하여 네이티브 형식 뷰를 사용자 지정할 수도 있습니다. 자세한 내용은 [EEAddIn 샘플: 디버깅 식 계산기 추가 기능에서](https://msdn.microsoft.com/library/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e)합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [DebuggerTypeProxy 특성 사용](../debugger/using-debuggertypeproxy-attribute.md)   
- [DebuggerDisplay 특성 사용](../debugger/using-the-debuggerdisplay-attribute.md)   
- [조사식 및 간략 한 조사식 Windows](../debugger/watch-and-quickwatch-windows.md)   
- [디버거 표시 특성을 사용하여 디버깅 향상](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)
+# <a name="create-custom-views-of-objects-c-visual-basic-f-ccli"></a>개체의 사용자 지정 뷰 만들기C#(, Visual Basic F#, C++,/cli)
+Visual Studio에서 디버거 변수 창에 데이터 형식이 표시되는 방식을 사용자 지정할 수 있습니다.
+
+## <a name="attributes"></a>특성
+
+에서 C#, F#, 및 C++ Visual Basic (C++/cli 코드만 해당) <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute> 및 <xref:System.Diagnostics.DebuggerBrowsableAttribute>을 사용 하 여 사용자 지정 데이터에 대 한 확장을 추가할 수 있습니다.
+
+.NET Framework 2.0 코드에서 Visual Basic는 DebuggerBrowsable 특성을 지원 하지 않습니다. 최신 버전의 .NET Framework에서는 이러한 제한 사항이 제거되었습니다.
+
+## <a name="visualizers"></a>시각화 도우미
+
+시각화 도우미를 작성하여 관리되는 데이터 형식을 표시할 수 있습니다. 자세한 내용은 [방법: 시각화 도우미 작성](/visualstudio/debugger/create-custom-visualizers-of-data)을 참조하세요.
+
+> [!NOTE]
+> 코드의 경우 [디버거에서 개체의 C++ 사용자 지정 뷰 만들기](/visualstudio/debugger/create-custom-views-of-native-objects)에 설명 된 대로 Natvis 프레임 워크를 사용 하 여 사용자 지정 데이터 형식 확장을 추가할 수 있습니다. C++
+
+## <a name="see-also"></a>관련 항목
+
+- [DebuggerDisplay 특성을 사용 하 여 표시할 내용을 디버거에 알립니다.](../debugger/using-the-debuggerdisplay-attribute.md)
+- [DebuggerTypeProxy 특성을 사용 하 여 표시할 형식을 디버거에 알립니다.](../debugger/using-debuggertypeproxy-attribute.md)
+- [조사식 및 간략한 조사식 창](../debugger/watch-and-quickwatch-windows.md)
+- [디버거 표시 특성을 사용하여 디버깅 향상](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

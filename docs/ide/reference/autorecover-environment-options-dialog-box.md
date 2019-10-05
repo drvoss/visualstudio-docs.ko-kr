@@ -1,8 +1,6 @@
 ---
 title: 옵션 대화 상자, 환경, 자동 저장
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.DialogAutoRestore
@@ -16,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 397e5e44-4bbe-4289-94d1-642b466c9111
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 804ea0baa47925e35a282a615598ea66c843b911
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 59a28d73677011ef2de3ce4dd844757108b317ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790892"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>자동 복구, 환경, 옵션 대화 상자
 

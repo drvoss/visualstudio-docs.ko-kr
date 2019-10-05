@@ -1,14 +1,9 @@
 ---
 title: SccCloseProject 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccCloseProject
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 259c2069-d349-4814-810f-1c3151b7fb84
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e4af9d73c19708369bcd4d341b573e421f8bc015
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7d2364215f528f16d05ecf0c53b152f7334f4b4a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156141"
 ---
 # <a name="scccloseproject-function"></a>SccCloseProject 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ SCCRTN SccCloseProject (
 ## <a name="return-value"></a>반환 값  
  원본 제어 플러그 인이 함수의 구현은 다음 값 중 하나를 반환 하:  
   
-|값|설명|  
+|값|Description|  
 |-----------|-----------------|  
 |SCC_OK|프로젝트를 닫았습니다.|  
 |SCC_E_PROJNOTOPEN|프로젝트가 현재 열려 있습니다.|  
@@ -54,8 +49,7 @@ SCCRTN SccCloseProject (
 ## <a name="remarks"></a>설명  
  합니다 [SccOpenProject](../extensibility/sccopenproject-function.md) 는 항상이 함수 앞에 호출 됩니다. 이 함수에 대 한 호출을 호출 하 여 이어서 합니다 `SccOpenProject` 함수 또는 [SccUninitialize](../extensibility/sccuninitialize-function.md), 완전히 소스 제어 시스템에 대 한 연결을 종료 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [원본 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)
-

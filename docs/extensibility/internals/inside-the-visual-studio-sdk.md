@@ -7,19 +7,20 @@ helpviewer_keywords:
 - Visual Studio integration SDK roadmap
 - integration roadmap, Visual Studio SDK
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f356fe21f512ae1fabb51df3ab562b067a692665
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 05736ebc8ce242120b49b59ef6d6caf4c4992573
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821147"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349829"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Visual Studio SDK 기본 사항
+
 이 섹션에서는 Visual Studio 아키텍처, 구성 요소, 서비스, 스키마, 유틸리티 등을 비롯 한 Visual Studio 확장에 대 한 자세한 정보를 제공 합니다.
 
 ## <a name="extensibility-architecture"></a>확장성 아키텍처
@@ -55,20 +56,20 @@ ms.locfileid: "53821147"
 
  도구 창은 일반적으로 사용자 작용할 수 있는 다양 한 컨트롤을 제공 합니다. 예를 들어 합니다 **속성** 창에는 사용자가 특정 목적으로 사용 되는 개체의 속성을 설정할 수 있습니다. 합니다 **속성** 창 이므로 이런 점에서 특수 하지만 또한 일반 많은 다양 한 상황에서 사용할 수 있습니다. 마찬가지로, 합니다 **출력** 창 많은 하위 시스템 Visual Studio에서 Visual Studio 사용자에 게 출력을 제공 하는 데 사용할 수 있으므로 하지만 일반 텍스트 기반 출력을 제공 하기 때문에 맞게 특별히 설정 됩니다.
 
- 몇 가지 도구 창을 포함 하는 Visual Studio의 다음 그림을 것이 좋습니다.
+ 다음 그림의 몇 가지 도구 창을 포함 하는 Visual Studio를 고려 합니다.
 
  ![스크린 샷](../../extensibility/internals/media/t1gui.png "T1gui")
 
  도구 창 중 일부는 솔루션 탐색기 도구 창을 표시 하 고 다른 도구 창을 숨깁니다 있지만 탭을 클릭 하 여 사용할 수 있게 하는 단일 창에 함께 도킹 됩니다. 그림과 두 개의 다른 도구 창에는 **오류 목록** 하 고 **출력** 단일 창에 함께 도킹 창입니다.
 
- 여러 편집기 창에 표시 되는 주 문서 창을도 표시 됩니다. 도구 창에는 일반적으로 하나의 인스턴스만 필요는 없지만 (예를 들어 하나만 열 수 있습니다 **솔루션 탐색기**), 편집기 창에 도킹 되는 모든 있지만 별도 문서를 편집 하는 데는 각각의 여러 인스턴스를 가질 수 있습니다 같은 창입니다. 그림에는 두 개의 편집기 창, 하나의 폼 디자이너 창 및 시작 페이지를 표시 하는 브라우저 창이 있는 문서 창을 보여 줍니다. 문서 창에 있는 모든 창을 탭을 클릭 하 여 사용할 수 있지만 EditorPane.cs 파일이 포함 된 편집기 창이 표시 되 고 활성.
+ 여러 편집기 창에 표시 되는 주 문서 창을도 표시 됩니다. 도구 창에는 일반적으로 하나의 인스턴스만 필요는 없지만 (예를 들어 하나만 열 수 있습니다 **솔루션 탐색기**), 편집기 창에 도킹 되는 모든 있지만 별도 문서를 편집 하는 데는 각각의 여러 인스턴스를 가질 수 있습니다 같은 창입니다. 그림에는 두 개의 편집기 창, 하나의 폼 디자이너 창에 있는 문서 창을 보여 줍니다. 문서 창에 있는 모든 창을 탭을 클릭 하 여 사용할 수 있지만 EditorPane.cs 파일이 포함 된 편집기 창이 표시 되 고 활성.
 
  Visual Studio를 확장할 때 확장을 통해 Visual Studio 사용자가 수 있는 windows 상호 작용 하는 도구를 만들 수 있습니다. 또한 Visual Studio 사용자가 문서를 편집할 수 있는 사용자 고유의 편집기를 만들 수 있습니다. 도구 창 및 편집기에는 Visual Studio에 통합 되어야 하기 때문에 도킹 되거나 탭에 올바르게 표시 하도록 프로그래밍할 필요가 없습니다. Visual Studio에 올바르게 등록 되므로 때 자동으로 도구 창과 문서 창을 Visual Studio에서의 일반적인 기능을 갖습니다. 자세한 내용은 [확장 및 사용자 지정 도구 Windows](../../extensibility/extending-and-customizing-tool-windows.md)합니다.
 
 ## <a name="document-windows"></a>문서 창
  문서 창에는 다중 문서 인터페이스 (MDI) 창 프레임이 자식 창이입니다. 문서 창은 텍스트 편집기, 폼 편집기 (라고도 디자이너) 또는 편집 컨트롤을 호스트 하기 일반적으로 사용 되지만 다른 기능 종류를 호스팅할 수도 있습니다. 합니다 **새 파일** 대화 상자에 Visual Studio에서 제공 하는 문서 창의 예입니다.
 
- 대부분의 편집기는 프로그래밍 언어 또는 HTML 페이지, 프레임셋, c + + 파일 또는 헤더 파일과 같은 파일 형식에 적용 됩니다. 템플릿을 선택 하 여 합니다 **새 파일** 대화 상자에서 사용자를 동적으로 만듭니다 문서 창 편집기 템플릿과 사용 하 여 연결 된 파일 형식에 대 한 합니다. 사용자가 기존 파일을 열 때 문서 창이 만들어집니다.
+ 대부분의 편집기는 프로그래밍 언어 또는 프레임을 HTML 페이지와 같은 파일 형식에 특정 C++ 파일 또는 헤더 파일입니다. 템플릿을 선택 하 여 합니다 **새 파일** 대화 상자에서 사용자를 동적으로 만듭니다 문서 창 편집기 템플릿과 사용 하 여 연결 된 파일 형식에 대 한 합니다. 사용자가 기존 파일을 열 때 문서 창이 만들어집니다.
 
  문서 창은 MDI 클라이언트 영역으로 제한 됩니다. 각 문서 창 위쪽에 탭 및 탭 순서 MDI 영역에 열려 있을 수 있는 다른 창에 연결 됩니다. 여러 가로 또는 세로 탭 그룹을 MDI 영역을 분할 하는 옵션을 포함 하는 바로 가기 메뉴를 표시 문서 창의 탭을 마우스 오른쪽 단추로 클릭 합니다. MDI 영역 분할 여러 파일을을 동시에 볼 수 있습니다. 자세한 내용은 [문서 Windows](../../extensibility/internals/document-windows.md)합니다.
 
@@ -83,14 +84,15 @@ ms.locfileid: "53821147"
  언어 서비스의 핵심은 파서 및 스캐너를입니다. 스캐너 (또는 렉서) 소스 파일 토큰 이라고 하는 요소로 나누고 파서 토큰 간의 관계를 설정 합니다. 언어 서비스를 만들면 Visual Studio는 토큰 및 언어의 문법 이해할 수 있도록 파서와 스캐너 구현 해야 합니다. 관리 되거나 관리 되지 않는 언어 서비스를 만들 수 있습니다. 자세한 내용은 [레거시 언어 서비스 확장성](../../extensibility/internals/legacy-language-service-extensibility.md)합니다.
 
 ## <a name="projects"></a>프로젝트
- Visual Studio에서 프로젝트는 개발자가 구성 하 고 소스 코드 및 기타 리소스를 작성 하는 데 사용할 컨테이너를 사용 합니다. 구성, 빌드, 디버그 및 소스 코드를 배포할 수 있습니다. 프로젝트, 웹 서비스 및 데이터베이스 및 기타 리소스에 대 한 참조입니다. Vspackage는 프로젝트 형식, 프로젝트 하위 형식 및 사용자 지정 도구를 제공 하 여 Visual Studio 프로젝트 시스템을 확장할 수 있습니다.
 
- 프로젝트는 응용 프로그램을 만들기 위해 함께 작동 하는 하나 이상의 프로젝트를 그룹화 하 여 솔루션에도 수집할 수 수 있습니다. 솔루션에 관련 된 프로젝트 및 상태 정보는 두 솔루션 파일, 텍스트 기반 솔루션 (.sln) 파일 및 이진 솔루션 사용자 옵션 (.suo) 파일에 저장 됩니다. 이러한 파일은 이전 버전의 사용 된 그룹 (.vbg) 파일과 유사한 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], 작업 영역 (.dsw) 및 사용자 옵션 (.opt) 파일의 이전 버전에 사용 된 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]합니다.
+Visual Studio에서 프로젝트는 개발자가 구성 하 고 소스 코드 및 기타 리소스를 작성 하는 데 사용할 컨테이너를 사용 합니다. 구성, 빌드, 디버그 및 소스 코드를 배포할 수 있습니다. 프로젝트, 웹 서비스 및 데이터베이스 및 기타 리소스에 대 한 참조입니다. Vspackage는 프로젝트 형식, 프로젝트 하위 형식 및 사용자 지정 도구를 제공 하 여 Visual Studio 프로젝트 시스템을 확장할 수 있습니다.
 
- 자세한 내용은 [프로젝트](../../extensibility/internals/projects.md) 하 고 [솔루션](../../extensibility/internals/solutions.md)합니다.
+프로젝트 함께 수집할 수도 있습니다는 *솔루션*, 응용 프로그램을 만들기 위해 함께 작동 하는 하나 이상의 프로젝트의 그룹화 합니다. 솔루션에 관련 된 프로젝트 및 상태 정보는 텍스트를 기반으로 두 솔루션 파일에 저장 됩니다 [솔루션 (.sln) 파일](solution-dot-sln-file.md) 및 이진 [솔루션 사용자 옵션 (.suo) 파일](solution-user-options-dot-suo-file.md)합니다. 이러한 파일은 이전 버전의 Visual Basic의 경우에 사용 된 그룹 (.vbg) 파일 유사 하며 작업 영역 (.dsw) 및 사용자 옵션 (.opt) 파일의 이전 버전에 사용 된 C++입니다.
+
+자세한 내용은 [프로젝트](../../extensibility/internals/projects.md) 하 고 [솔루션](../../extensibility/internals/solutions-overview.md)합니다.
 
 ## <a name="project-and-item-templates"></a>프로젝트 및 항목 템플릿
- Visual Studio에는 미리 정의 된 프로젝트 템플릿 및 프로젝트 항목 템플릿을 포함합니다. 사용자 고유의 템플릿을 만들 수도 하 고 또는 커뮤니티에서 템플릿을 가져올 하 고, 다음 Visual Studio에 통합할 수 있습니다. 합니다 [MSDN 코드 갤러리](http://code.msdn.microsoft.com/Project/ProjectDirectory.aspx?ProjectSearchText=visual%20studio) 템플릿 및 확장에 대 한 이동할 위치입니다.
+ Visual Studio에는 미리 정의 된 프로젝트 템플릿 및 프로젝트 항목 템플릿을 포함합니다. 사용자 고유의 템플릿을 만들 수도 하 고 또는 커뮤니티에서 템플릿을 가져올 하 고, 다음 Visual Studio에 통합할 수 있습니다. 합니다 [MSDN 코드 갤러리](https://code.msdn.microsoft.com/site/search?query=visual%20studio) 템플릿 및 확장에 대 한 이동할 위치입니다.
 
  템플릿에 특정 종류의 응용 프로그램, 컨트롤, 라이브러리 또는 클래스를 작성 하는 데 필요한 기본 파일과 프로젝트 구조에 포함 됩니다. 템플릿 중 하 나와 유사한 소프트웨어를 개발 하려는 경우 템플릿을 기반으로 하는 프로젝트를 만들고 해당 프로젝트에서 파일을 수정 합니다.
 
@@ -102,7 +104,7 @@ ms.locfileid: "53821147"
 ## <a name="properties-and-options"></a>속성 및 옵션
  합니다 **속성** 단일 또는 여러 선택된 항목의 속성 창에 표시 됩니다. [속성 확장](../../extensibility/internals/extending-properties.md) 옵션 페이지, VSPackage 또는 프로그래밍 언어와 같은 특정 구성 요소와 관련 된 옵션 집합을 포함 합니다. [옵션 및 옵션 페이지](../../extensibility/internals/options-and-options-pages.md)합니다. 설정은 일반적으로 UI 관련 기능을 가져오고 내보낼 수 있습니다. [사용자 설정에 대 한 지원을](../../extensibility/internals/support-for-user-settings.md)합니다.
 
-## <a name="visual-studio-services"></a>Visual Studio 서비스
+## <a name="visual-studio-services"></a>Visual Studio Services
  서비스 구성 요소를 사용 하는 인터페이스의 특정 집합을 제공 합니다. Visual Studio 확장을 포함 하 여 모든 구성 요소에서 사용할 수 있는 서비스 집합을 제공 합니다. 예를 들어, Visual Studio 서비스를 표시 또는 도움말, 상태 표시줄에 또는 UI 이벤트에 액세스할 수 있도록 동적으로 숨겨진 도구 창을 사용 합니다. Visual Studio 편집기는 또한 편집기 확장에서 가져올 수 있는 서비스를 제공 합니다. 자세한 내용은 [사용 및 제공 서비스](../../extensibility/using-and-providing-services.md)합니다.
 
 ## <a name="debugger"></a>디버거

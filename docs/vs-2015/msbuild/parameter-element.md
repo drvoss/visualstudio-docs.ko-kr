@@ -1,14 +1,9 @@
 ---
 title: 매개 변수 요소 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,18 +16,17 @@ ms.assetid: b273afff-b500-4e97-8cfd-31f39fa64a51
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 632973aab0447ffcd8d2bff5e752683223ea3838
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a815d2ef623a35030469fa631cae65653c2fe2d1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185220"
 ---
 # <a name="parameter-element"></a>Parameter 요소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 `UsingTask``TaskFactory`에 의해 생성되는 작업에 대한 특정 매개 변수에 대한 정보를 포함합니다.  요소의 이름은 매개 변수의 이름입니다.  자세한 내용은 [UsingTask 요소(MSBuild)](../msbuild/usingtask-element-msbuild.md)를 참조하세요.  
   
  \<Project>  
@@ -68,7 +62,7 @@ ms.locfileid: "49844486"
 |-------------|-----------------|  
 |[ParameterGroup](../msbuild/parametergroup-element.md)|`UsingTask``TaskFactory`에 의해 생성된 작업에 존재할 매개 변수의 선택적 목록을 포함합니다.|  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  다음 예제에서는 `Parameter` 요소를 사용하는 방법을 보여 줍니다.  
   
 ```  
@@ -88,6 +82,3 @@ ms.locfileid: "49844486"
  [작업](../msbuild/msbuild-tasks.md)   
  [작업 참조](../msbuild/msbuild-task-reference.md)   
  [프로젝트 파일 스키마 참조](../msbuild/msbuild-project-file-schema-reference.md)
-
-
-

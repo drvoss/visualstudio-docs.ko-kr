@@ -1,14 +1,9 @@
 ---
 title: 명령줄 스위치를 추가 합니다. | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - command-line switches, adding
 - command-line switches, retrieving
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5034e6bcb5aa878c16dbf9dadf478d68276c4fac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e28a3f303849458a407b212d3aad1a8c198f6d25
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62562278"
 ---
 # <a name="adding-command-line-switches"></a>명령줄 스위치 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,4 +82,3 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
  [Devenv 명령줄 스위치](../ide/reference/devenv-command-line-switches.md)   
  [CreatePkgDef 유틸리티](../extensibility/internals/createpkgdef-utility.md)   
  [.pkgdef 파일](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)
-

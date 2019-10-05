@@ -1,20 +1,18 @@
 ---
 title: GPU 사용량 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/01/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8265ae81b5ea1c6395af352f8f981f41f77cea8
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: f16a518542e8acab636da6e395fdfee8d7a25085
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969880"
 ---
 # <a name="gpu-usage"></a>GPU 사용량
 
@@ -41,7 +39,7 @@ Visual Studio 성능 및 진단 허브의 GPU 사용량 도구를 사용하여 D
 
 **GPU 사용량 도구를 시작하려면:**
 
-1. 주 메뉴에서 **디버그**를 선택한 다음 **성능 및 진단**을 선택합니다(키보드: Alt+F2 누름).
+1. 주 메뉴에서 **디버그**를 선택한 다음, **성능 및 진단**을 선택합니다(키보드: Alt+F2 키 누름).
 
 2. 성능 및 진단 허브에서 **GPU 사용량** 옆에 있는 상자를 선택합니다. 선택적으로 사용하려는 다른 도구 옆에 있는 확인란을 선택합니다. 다수의 성능 및 진단 도구를 동시에 실행하여 앱 성능을 보다 자세히 확인할 수 있습니다.
 
@@ -104,7 +102,7 @@ GPU 사용량 보고서의 윗부분에는 CPU 처리 작업, GPU 렌더링 작�
 |--------------------|-----------------|
 |**Process**|관심 있는 프로세스의 이름입니다. 진단 세션 도중에 GPU를 사용한 모든 프로세스가 이 드롭다운에 포함됩니다. 이 드롭다운에 있는 프로세스와 연결된 색은 아래 타임라인에 나오는 스레드 작업의 색입니다.|
 |**스레드**|관심 있는 스레드 ID입니다. 다중 스레드 앱에서 이 정보를 사용하면 관심 있는 프로세스에 속한 특정 스레드를 격리시킬 수 있습니다. 선택한 스레드와 관련 있는 이벤트는 각 타임라인에서 강조 표시됩니다.|
-|**표시**|새로 고침 빈도가 표시되는 디스플레이의 수입니다. **참고:** 일부 드라이버는 여러 개의 실제 디스플레이를 하나의 대형 가상 디스플레이로 표현되도록 구성할 수 있습니다. 컴퓨터에 여러 디스플레이가 연결되었더라도 목록에 디스플레이가 하나만 표시될 수 있습니다.|
+|**표시**|새로 고침 빈도가 표시되는 디스플레이의 수입니다. **참고:**  일부 드라이버는 여러 개의 실제 디스플레이를 하나의 대형 가상 디스플레이로 표현되도록 구성할 수 있습니다. 컴퓨터에 여러 디스플레이가 연결되었더라도 목록에 디스플레이가 하나만 표시될 수 있습니다.|
 |**필터**|관심 있는 키워드입니다. 보고서 하단에 나오는 이벤트에는 키워드 전체 또는 일부와 일치하는 이벤트만 포함됩니다. 여러 키워드를 세미콜론(;)으로 구분하여 지정할 수 있습니다.|
 |**계층 정렬**|사용자 표식을 통해 정의된 이벤트 계층 구조를 유지하는지 아니면 무시하는지 나타내는 확인란입니다.|
 
@@ -128,7 +126,7 @@ GPU 사용량 보고서의 윗부분에는 CPU 처리 작업, GPU 렌더링 작�
 
 **앱 시작 이후 프로파일링을 연기하려면:**
 
-1. 주 메뉴에서 **디버그**를 선택한 다음 **성능 및 진단**을 선택합니다(키보드: Alt+F2 누름).
+1. 주 메뉴에서 **디버그**를 선택한 다음, **성능 및 진단**을 선택합니다(키보드: Alt+F2 키 누름).
 
 2. 성능 및 진단 허브에서 **GPU 사용량** 옆에 있는 **설정** 링크를 선택합니다.
 
@@ -157,7 +155,7 @@ GPU 사용량 도구에서 앱을 실행하면 GPU 사용량 도구 창 하단�
 
 - [DirectX 도구를 사용하여 어려운 게임 그래픽 문제 해결(비디오)](https://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)
 - [Visual Studio의 GPU 사용량 도구(비디오)](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)
-- [Visual Studio 2013 업데이트 4 CTP1의 GPU 사용량 도구(블로그)](https://blogs.msdn.microsoft.com/vcblog/2014/09/04/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1/)
+- [Visual Studio 2013 업데이트 4 CTP1의 GPU 사용량 도구(블로그)](https://devblogs.microsoft.com/cppblog/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1/)
 - [Visual Studio의 DirectX에 대한 GPU 사용량(블로그)](https://blogs.msdn.microsoft.com/ianhu/2014/12/16/gpu-usage-for-directx-in-visual-studio/)
 - [GPUView](/windows-hardware/drivers/display/using-gpuview)
 - [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer)

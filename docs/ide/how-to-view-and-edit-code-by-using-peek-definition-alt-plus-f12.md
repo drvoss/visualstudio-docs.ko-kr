@@ -1,32 +1,30 @@
 ---
 title: 정의 피킹(Peeking) 사용
 ms.date: 01/10/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 518256c550f56832c6711ab6d2ca2dae4eb0aa2c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 79bebcdaaf2d970f019da12141275358120ac70e
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059654"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043409"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>방법: 정의 피킹(Peeking)을 사용하여 코드 보기 및 편집(Alt+F12)
 
 **정의 피킹(Peeking)** 명령을 사용하여 작성하고 있는 코드에서 전환하지 않고 코드를 보고 편집할 수 있습니다. **정의 피킹(Peeking)** 및 **정의로 이동**은 같은 정보를 표시하지만 **정의 피킹(Peeking)** 은 팝업 창에 표시하고 **정의로 이동**은 별도의 코드 창에 코드를 표시합니다. **정의로 이동**을 사용하면 컨텍스트(즉, 활성 코드 창, 현재 줄 및 커서 위치)를 정의 코드 창으로 전환합니다. **정의 피킹(Peeking)** 을 사용하면 정의를 보고 편집하며 정의 파일 내부로 이동하여 원래 코드 파일을 유지할 수 있습니다.
 
-**정의 피킹(Peeking)** 은 C#, Visual Basic 및 C++ 코드에서 사용할 수 있습니다. Visual Basic에서 **정의 피킹(Peeking)** 은 정의 메타데이터가 없는 기호에 대한 **개체 브라우저** 링크를 보여 줍니다(예: 기본 제공되는 .NET Framework 형식).
+**정의 피킹(Peeking)** 은 C#, Visual Basic 및 C++ 코드에서 사용할 수 있습니다. Visual Basic에서 **정의 피킹(Peeking)** 은 정의 메타데이터가 없는 기호에 대한 **개체 브라우저** 링크를 보여 줍니다(예: 기본 제공되는 .NET 형식).
 
-## <a name="working-with-peek-definition"></a>정의 피킹(Peeking)으로 작업
+## <a name="use-peek-definition"></a>정의 피킹(Peeking) 사용
 
-### <a name="to-open-a-peek-definition-window"></a>정의 피킹(Peeking) 창을 열려면
+### <a name="open-a-peek-definition-window"></a>정의 피킹(Peeking) 창 열기
 
-1. 탐색하려는 형식 또는 멤버에 대한 상황에 맞는 메뉴에서 **정의 피킹(Peeking)** 을 선택하여 정의를 피킹할 수 있습니다. Visual Studio 2017 버전 15.4 이상에서 이 옵션을 설정하는 경우, **Ctrl** 키(또는 다른 한정자)를 누르고 멤버 이름을 클릭하여 마우스를 사용하는 정의를 피킹할 수 있습니다. 또는 키보드에서 **Alt**+**F12**를 누릅니다.
+1. 검색하려는 형식 또는 멤버의 오른쪽 클릭 메뉴에서 **정의 피킹**을 선택하여 정의를 피킹할 수 있습니다. 이 옵션을 설정하는 경우, **Ctrl** 키(또는 다른 한정자)를 누르고 멤버 이름을 클릭하여 마우스를 사용하는 정의를 피킹할 수도 있습니다. 또는 키보드에서 **Alt**+**F12**를 누릅니다.
 
      이 그림은 `Print()`라는 메서드에 대한 **정의 피킹(Peeking)** 창을 보여 줍니다.
 
@@ -77,7 +75,7 @@ ms.locfileid: "53059654"
 |정의 창 열기|**Alt**+**F12**|
 |정의 창 닫기|**Esc**|
 |정의 창을 일반 문서 탭으로 승격|**Shift**+**Alt**+**Home**|
-|정의창 사이 탐색|**Ctrl**+**Alt**+**-** 및 **Ctrl**+**Alt**+**=**|
+|정의창 사이 탐색|**Ctrl**+**Alt**+ **-** 및 **Ctrl**+**Alt**+ **=**|
 |여러 결과 사이 이동|**F8** 및 **Shift**+**F8**|
 |코드 편집기 창 또는 정의 창으로 전환|**Shift**+**Esc**|
 
@@ -88,4 +86,4 @@ ms.locfileid: "53059654"
 
 - [코드 탐색](../ide/navigating-code.md)
 - [정의로 이동 및 정의 피킹(Peeking)](../ide/go-to-and-peek-definition.md)
-- [생산성 팁](../ide/productivity-tips-for-visual-studio.md)
+- [Visual Studio의 생산성 기능](../ide/productivity-features.md)

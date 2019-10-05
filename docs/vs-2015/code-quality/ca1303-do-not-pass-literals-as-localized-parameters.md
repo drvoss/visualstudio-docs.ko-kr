@@ -1,14 +1,9 @@
 ---
-title: 'CA1303: 리터럴을 지역화 된 매개 변수 전달 하지 마십시오 | Microsoft Docs'
-ms.custom: ''
+title: 'CA1303: 리터럴을 지역화 된 매개 변수를 전달 하지 마십시오 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - Do not pass literals as localized parameters
 - DoNotPassLiteralsAsLocalizedParameters
@@ -21,14 +16,14 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d900abe23dab4d950b5790798916fe728a44af4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fafcf113f5f40da3bcc4666778330865dcdfb84c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886567"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686804"
 ---
-# <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: 리터럴을 지역화된 매개 변수로 전달하지 마십시오.
+# <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: 리터럴을 지역화된 매개 변수로 전달하지 마세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -43,11 +38,11 @@ ms.locfileid: "49886567"
 
  이 경고는 리터럴 문자열 매개 변수 또는 속성 값으로 전달 되 고 다음 경우 중 하나 이상의 참인 경우에 발생 합니다.
 
--   <xref:System.ComponentModel.LocalizableAttribute> 매개 변수 또는 속성의 특성은 설정을 true로 합니다.
+- <xref:System.ComponentModel.LocalizableAttribute> 매개 변수 또는 속성의 특성은 설정을 true로 합니다.
 
--   "Text", "Message" 또는 "캡션"를 포함 하는 매개 변수 또는 속성 이름입니다.
+- "Text", "Message" 또는 "캡션"를 포함 하는 매개 변수 또는 속성 이름입니다.
 
--   Console.Write 또는 Console.WriteLine 메서드에 전달 되는 문자열 매개 변수의 이름이 "value" 또는 "format"입니다.
+- Console.Write 또는 Console.WriteLine 메서드에 전달 되는 문자열 매개 변수의 이름이 "value" 또는 "format"입니다.
 
 ## <a name="rule-description"></a>규칙 설명
  소스 코드에 포함 된 문자열 리터럴을 지역화 하기 어렵습니다.
@@ -68,7 +63,4 @@ ms.locfileid: "49886567"
  [!code-vb[FxCop.Globalization.DoNotPassLiterals#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Globalization.DoNotPassLiterals/vb/FxCop.Globalization.DoNotPassLiterals.vb#1)]
 
 ## <a name="see-also"></a>참고 항목
- [데스크톱 앱의 리소스](http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)
-
-
-
+ [데스크톱 앱의 리소스](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)

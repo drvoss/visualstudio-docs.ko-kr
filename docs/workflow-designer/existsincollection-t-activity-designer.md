@@ -2,21 +2,20 @@
 title: 워크플로 디자이너-ExistsInCollection&lt;T&gt; 활동 디자이너
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.ExistsInCollection`1.UI
 ms.assetid: 0acf9a13-caf5-4bb4-ba22-ec37d2b7267a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb790bd7665bc5e9384dbc2e7426b0dd97065db0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 06892bcfdca33e5e77e8c01f06f594849e5293e5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952923"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949723"
 ---
 # <a name="existsincollectiont-activity-designer"></a>ExistsInCollection\<T > 활동 디자이너
 
@@ -36,7 +35,7 @@ ms.locfileid: "53952923"
 
 다음 표는 <xref:System.Activities.Statements.ExistsInCollection%601> 속성 디자이너에서 사용 되는 방법을 설명 합니다.
 
-|속성 이름|필수|용도|
+|속성 이름|필수|사용|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.ExistsInCollection%601> 활동의 이름입니다. 기본값은 ExistsInCollection < Int32\>합니다. <xref:System.Activities.Activity.DisplayName%2A> 값은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
 |<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|True|컬렉션에서 검색할 항목\<T >입니다. 이 항목은 형식의 *T*, 형식인 *TypeArgument*합니다. 이 항목을 지정하려면 속성 표에 Visual Basic 식을 입력합니다.|

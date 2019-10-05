@@ -2,20 +2,18 @@
 title: R에 대한 원격 작업 영역
 description: 원격 R 작업 영역을 설정하고 Visual Studio에서 이 작업 영역에 연결하는 방법입니다.
 ms.date: 12/04/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 207e4c2d6e7db9dd40288306b3a87086c4568f76
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0263afa4eeb9094802fe6272380b6b53106da4a2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810191"
 ---
 # <a name="set-up-remote-workspaces"></a>원격 작업 영역 설정
 
@@ -28,7 +26,7 @@ ms.locfileid: "49827716"
 
 ## <a name="install-an-ssl-certificate"></a>SSL 인증서 설치
 
-RTVS를 사용하려면 원격 서버와의 모든 통신이 HTTP를 통해 수행되어야 하며 이를 위해 서버에 SSL 인증서가 있어야 합니다. 신뢰할 수 있는 인증 기관에서 서명한 인증서(권장) 또는 자체 서명된 인증서를 사용할 수 있습니다. (자체 서명된 인증서를 사용할 경우 RTVS에서 연결 시 경고를 실행합니다.) 한 인증서를 준비하면 인증서를 컴퓨터에 설치하고 개인 키에 대한 액세스를 허용해야 합니다.
+RTVS를 사용하려면 원격 서버와의 모든 통신이 HTTP를 통해 수행되어야 하며 이를 위해 서버에 SSL 인증서가 있어야 합니다. 신뢰할 수 있는 인증 기관에서 서명한 인증서(권장) 또는 자체 서명된 인증서를 사용할 수 있습니다. (자체 서명된 인증서를 사용할 경우 RTVS에서 연결 시 경고를 실행합니다.) 한 인증서를 준비하면 인증서를 컴퓨터에 설치하고 프라이빗 키에 대한 액세스를 허용해야 합니다.
 
 ### <a name="obtain-a-trusted-certificate"></a>신뢰할 수 있는 인증서 가져오기
 
@@ -73,16 +71,16 @@ SSL 인증서를 Windows에서 수동으로 설치해야 합니다. 다음 지�
 
 ![인증서 가져오기 명령](media/workspaces-remote-certificate-import.png)
 
-### <a name="grant-permissions-to-read-the-ssl-certificates-private-key"></a>SSL 인증서의 개인 키를 읽을 권한 부여
+### <a name="grant-permissions-to-read-the-ssl-certificates-private-key"></a>SSL 인증서의 프라이빗 키를 읽을 권한 부여
 
-인증서를 가져온 후 다음 지침에 설명된 대로 `NETWORK SERVICE` 계정에 개인 키를 읽을 수 있는 권한을 부여합니다. `NETWORK_SERVICE`는 서버 컴퓨터에 들어오는 SSL 연결을 종료하는 서비스인 R Services Broker를 실행하는 데 사용되는 계정입니다.
+인증서를 가져온 후 다음 지침에 설명된 대로 `NETWORK SERVICE` 계정에 프라이빗 키를 읽을 수 있는 권한을 부여합니다. `NETWORK_SERVICE`는 서버 컴퓨터에 들어오는 SSL 연결을 종료하는 서비스인 R Services Broker를 실행하는 데 사용되는 계정입니다.
 
 1. 관리자 명령 프롬프트에서 *certlm.msc*(인증서 관리자)를 실행합니다.
-1. **개인** > **인증서**를 확장하고, 인증서를 마우스 오른쪽 단추로 클릭하고, **모든 작업** > **개인 키 관리**를 선택합니다.
-1. 인증서를 마우스 오른쪽 단추로 클릭하고 **모든 작업**에서 **개인 키 관리** 명령을 선택합니다.
+1. **개인** > **인증서**를 확장하고, 인증서를 마우스 오른쪽 단추로 클릭하고, **모든 작업** > **프라이빗 키 관리**를 선택합니다.
+1. 인증서를 마우스 오른쪽 단추로 클릭하고 **모든 작업**에서 **프라이빗 키 관리** 명령을 선택합니다.
 1. 대화 상자가 나타나면 **추가**를 선택하고 계정 이름으로 `NETWORK SERVICE`를 입력합니다.
 
-    ![개인 키 관리 대화 상자에서 NETWORK_SERVICE 추가](media/workspaces-remote-manage-private-key-dialog.png)
+    ![프라이빗 키 관리 대화 상자에서 NETWORK_SERVICE 추가](media/workspaces-remote-manage-private-key-dialog.png)
 
 1. **확인**을 두 번 선택하여 대화 상자를 닫고 변경 내용을 커밋합니다.
 
@@ -98,14 +96,19 @@ SSL 인증서를 Windows에서 수동으로 설치해야 합니다. 다음 지�
 
 1. Linux 머신에 SSH 또는 로그인합니다.
 2. `ssl-cert` 패키지를 설치합니다.
+
     ```sh
     sudo apt-get install ssl-cert
     ```
+
 3. `make-ssl-cert`를 실행하여 기본 자체 서명된 SSL 인증서를 생성합니다.
+
     ```sh
     sudo make-ssl-cert generate-default-snakeoil --force-overwrite
     ```
+
 4. 생성된 키와 PEM 파일을 PFX로 변환합니다. 생성된 PFX는 홈 폴더에 있어야 합니다.
+
     ```sh
     openssl pkcs12 -export -out ~/ssl-cert-snakeoil.pfx -inkey /etc/ssl/private/ssl-cert-snakeoil.key -in /etc/ssl/certs/ssl-cert-snakeoil.pem -password pass:SnakeOil
     ```
@@ -142,7 +145,7 @@ R 코드를 실행하려면 다음과 같이 원격 컴퓨터에 R 인터프리�
 
 2. [R Services 설치 관리자](https://aka.ms/rtvs-services)를 실행하고 메시지가 표시되면 다시 부팅합니다. 설치 관리자에서 다음을 수행합니다.
 
-    - *%PROGRAMFILES%\R Tools for Visual Studio\1.0\\*에 폴더를 만들고, 필요한 모든 이진 파일을 복사합니다.
+    - *%PROGRAMFILES%\R Tools for Visual Studio\1.0\\\* 에 폴더를 만들고, 필요한 모든 이진 파일을 복사합니다.
     - `RHostBrokerService` 및 `RUserProfileService`를 설치하고 자동으로 시작되도록 구성합니다.
     - `seclogon` 서비스가 자동으로 시작되도록 구성합니다.
     - *Microsoft.R.Host.exe* 및 *Microsoft.R.Host.Broker.exe*를 기본 포트 5444의 방화벽 인바운드 규칙에 추가합니다.
@@ -173,7 +176,7 @@ R 코드를 실행하려면 다음과 같이 원격 컴퓨터에 R 인터프리�
 
 1. 사용자 계정: 원격 컴퓨터에 액세스하는 각 사용자에 대한 계정을 만듭니다. 표준(권한 없음) 로컬 사용자 계정을 만들거나 R 서버 컴퓨터를 도메인에 조인하고 적절한 보안 그룹을 `Users` 보안 그룹에 추가할 수 있습니다.
 
-1. 방화벽 규칙: 기본적으로 `R Host Broker`는 TCP 포트 5444를 수신합니다. 따라서 인바운드 및 아웃바운드 트래픽에 둘 다 사용할 수 있는 Windows 방화벽 규칙이 있는지 확인합니다(패키지 및 비슷한 시나리오를 설치하려면 아웃바운드가 필요함).  R Services 설치 관리자에서는 기본 제공 Windows 방화벽에 대해 이러한 규칙을 자동으로 설정합니다. 그러나 타사 방화벽을 사용하는 경우 `R Host Broker`에 대해 포트 5444를 수동으로 엽니다.
+1. 방화벽 규칙: 기본적으로 `R Host Broker`는 TCP 포트 5444에서 수신 대기합니다. 따라서 인바운드 및 아웃바운드 트래픽에 둘 다 사용할 수 있는 Windows 방화벽 규칙이 있는지 확인합니다(패키지 및 비슷한 시나리오를 설치하려면 아웃바운드가 필요함).  R Services 설치 관리자에서는 기본 제공 Windows 방화벽에 대해 이러한 규칙을 자동으로 설정합니다. 그러나 타사 방화벽을 사용하는 경우 `R Host Broker`에 대해 포트 5444를 수동으로 엽니다.
 
 1. Azure 구성: 원격 컴퓨터가 Azure의 가상 머신인 경우 Windows 방화벽과 관계가 없는 Azure 네트워킹 내에서도 포트 5444를 엽니다. 자세한 내용은 Azure 설명서에서 [네트워크 보안 그룹을 사용하여 네트워크 트래픽 필터링](https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg)을 참조하세요.
 
@@ -214,7 +217,7 @@ R 코드를 실행하려면 다음과 같이 원격 컴퓨터에 R 인터프리�
 
 가능한 두 가지 이유는 다음과 같습니다.
 
-- `NETWORK SERVICE` 계정에는 SSL 인증서의 개인 키에 대한 액세스 권한이 없을 수 있습니다. 이전 지침에 따라 `NETWORK SERVICE`에 개인 키에 대한 액세스 권한을 부여합니다.
+- `NETWORK SERVICE` 계정에는 SSL 인증서의 프라이빗 키에 대한 액세스 권한이 없을 수 있습니다. 이전 지침에 따라 `NETWORK SERVICE`에 프라이빗 키에 대한 액세스 권한을 부여합니다.
 - `seclogon` 서비스가 실행 중인지 확인합니다. *services.msc*를 사용하여 `seclogon`이 자동으로 시작되도록 구성합니다.
 
 **질문: R 서버에 연결하는 동안 R 대화형 창에 “404 찾을 수 없음”이 표시되는 이유는 무엇인가요?**

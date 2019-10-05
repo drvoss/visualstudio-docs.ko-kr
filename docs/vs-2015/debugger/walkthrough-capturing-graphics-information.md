@@ -1,25 +1,20 @@
 ---
 title: '연습: 그래픽 정보 캡처 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 48f12f6e-57b4-48ec-a145-89fa71a42424
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2f419e80cec27807ba3bd7ac98f7fb7108a49377
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9ebd0453347084d1662c6bc7837fc1e96f498fbd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151464"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>연습: 그래픽 정보 캡처
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,18 +23,18 @@ ms.locfileid: "51802137"
   
  이 연습에서는 다음 작업을 설명합니다.  
   
--   앱에 그래픽 진단 후크  
+- 앱에 그래픽 진단 후크  
   
--   그래픽 정보 캡처  
+- 그래픽 정보 캡처  
   
 ## <a name="capturing-graphics-information"></a>그래픽 정보 캡처  
  그래픽 진단 도구를 사용하려면 먼저, 이 도구에서 사용하는 그래픽 정보를 캡처해야 합니다. 캡처를 사용하도록 설정하려면 **진단 시작** 명령을 사용하여 앱이 시작될 때 그래픽 진단을 후크합니다.  
   
 #### <a name="to-enable-the-capture-of-graphics-information-after-a-project-or-solution-is-loaded"></a>프로젝트 또는 솔루션이 로드된 후 그래픽 정보 캡처를 사용하도록 설정하려면  
   
-1.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 그래픽 정보를 캡처하려는 앱용 프로젝트 또는 솔루션 파일을 로드합니다.  
+1. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 그래픽 정보를 캡처하려는 앱용 프로젝트 또는 솔루션 파일을 로드합니다.  
   
-2.  그래픽 진단 도구 모음에서 **진단 시작**을 선택합니다.  
+2. 그래픽 진단 도구 모음에서 **진단 시작**을 선택합니다.  
   
 #### <a name="to-enable-the-capture-of-graphics-information-without-loading-a-project-or-solution"></a>프로젝트 또는 솔루션을 로드하지 않고 그래픽 정보 캡처를 사용하도록 설정하려면  
   
@@ -64,10 +59,7 @@ ms.locfileid: "51802137"
 ## <a name="next-steps"></a>다음 단계  
  이 연습에서는 그래픽 정보를 수동으로 캡처하는 방법을 보여 주었습니다. 다음 단계로 아래 옵션을 고려해 보세요.  
   
--   그래픽 진단 도구를 사용하여 캡처한 그래픽 정보를 분석하는 방법에 대해 알아봅니다. 참조 [개요](../debugger/overview-of-visual-studio-graphics-diagnostics.md)합니다.  
+- 그래픽 진단 도구를 사용하여 캡처한 그래픽 정보를 분석하는 방법에 대해 알아봅니다. 참조 [개요](../debugger/overview-of-visual-studio-graphics-diagnostics.md)합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [Capturing Graphics Information](../debugger/capturing-graphics-information.md)
-
-
-

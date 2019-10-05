@@ -1,16 +1,16 @@
 ---
 title: 블록 선택
 description: 이 문서에서는 Mac용 Visual Studio의 블록 선택 기능을 사용하는 방법에 대해 설명합니다.
-author: conceptdev
-ms.author: crdun
+author: cobey
+ms.author: cobey
 ms.date: 11/06/2018
 ms.assetid: E8E0831E-E076-44B1-A82A-A325382916A6
-ms.openlocfilehash: f4aa0283bc2dc950ce1c3f6573176f75b6a3da8f
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: be5a19b48355b871018684400f3f4a7b2e3135b6
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948806"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692863"
 ---
 # <a name="block-selection"></a>블록 선택
 
@@ -20,6 +20,6 @@ Mac용 Visual Studio를 사용하면 코드 섹션을 간단하게 선택, 잘�
 
 ![블록 선택 영역 및 텍스트 추가](media/source-editor-image16.png)
 
-# <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio에 대한 다중 캐럿 선택(Windows에서)](/visualstudio/ide/finding-and-replacing-text#multi-caret-selection)

@@ -10,15 +10,13 @@ helpviewer_keywords:
 ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 274585d864393877b225fe6231c1f775342620f6
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+manager: jillfra
+ms.openlocfilehash: 3ca2a69fc0f5777c34857f6f3da0c7faabcd81ce
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894744"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990543"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>부하 테스트에서 테스트 컨트롤러 및 테스트 에이전트 문제를 해결하기 위한 전략
 
@@ -26,7 +24,7 @@ ms.locfileid: "52894744"
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-##  <a name="unable-to-collect-performance-counters-on-test-agent-computer"></a>테스트 에이전트 컴퓨터에서 성능 카운터를 수집할 수 없음
+## <a name="unable-to-collect-performance-counters-on-test-agent-computer"></a>테스트 에이전트 컴퓨터에서 성능 카운터를 수집할 수 없음
 
 부하 테스트를 실행할 때 테스트 에이전트 컴퓨터에 연결하여 성능 카운터를 수집하려고 하면 오류가 발생하는 경우가 있습니다. 성능 카운터 데이터를 원격 컴퓨터에 제공하는 서비스는 원격 레지스트리 서비스입니다. 일부 운영 체제에서는 원격 레지스트리 서비스가 자동으로 시작되지 않습니다. 이 문제를 해결하려면 원격 레지스트리 서비스를 수동으로 시작하십시오.
 
@@ -41,11 +39,11 @@ ms.locfileid: "52894744"
 
 ### <a name="to-set-the-logging-level-on-a-test-controller-computer"></a>테스트 컨트롤러 컴퓨터의 로깅 수준을 설정하려면
 
-1.  테스트 컨트롤러 서비스를 중지합니다. 명령 프롬프트에서 `net stop vsttcontroller`를 입력합니다.
+1. 테스트 컨트롤러 서비스를 중지합니다. 명령 프롬프트에서 `net stop vsttcontroller`를 입력합니다.
 
-2.  *QTController.exe.config* 파일을 엽니다. 이 파일은 컨트롤러 설치 디렉터리에 있습니다.
+2. *QTController.exe.config* 파일을 엽니다. 이 파일은 컨트롤러 설치 디렉터리에 있습니다.
 
-3.  파일의 시스템 진단 섹션에서 `EqtTraceLevel` 스위치 항목을 편집합니다. 코드는 다음과 비슷합니다.
+3. 파일의 시스템 진단 섹션에서 `EqtTraceLevel` 스위치 항목을 편집합니다. 코드는 다음과 비슷합니다.
 
     ```xml
     <system.diagnostics>
@@ -66,23 +64,23 @@ ms.locfileid: "52894744"
     </system.diagnostics>
     ```
 
-4.  파일을 저장합니다.
+4. 파일을 저장합니다.
 
-5.  컨트롤러 서비스를 시작합니다. 명령 프롬프트에서 `net start vsttcontroller`를 입력합니다.
+5. 컨트롤러 서비스를 시작합니다. 명령 프롬프트에서 `net start vsttcontroller`를 입력합니다.
 
 이 내용은 테스트 컨트롤러, 테스트 에이전트 서비스 및 테스트 에이전트 프로세스에 적용됩니다. 문제를 진단할 때는 세 가지 프로세스 모두에 로깅을 사용하는 것이 좋습니다. 로깅 수준을 설정하는 절차는 앞에서 테스트 컨트롤러를 대상으로 설명한 내용과 같으며 세 가지 프로세스에서 모두 동일합니다. 테스트 에이전트 서비스 및 에이전트 프로세스의 로깅 수준을 설정하려면 다음 구성 파일을 사용합니다.
 
--   *QTController.exe.config* 컨트롤러 서비스
+- *QTController.exe.config* 컨트롤러 서비스
 
--   *QTAgentService.exe.config* 에이전트 서비스
+- *QTAgentService.exe.config* 에이전트 서비스
 
--   32비트 아키텍처의 경우 *QTDCAgent(32).exe.config* 에이전트 데이터 어댑터 프로세스
+- 32비트 아키텍처의 경우 *QTDCAgent(32).exe.config* 에이전트 데이터 어댑터 프로세스
 
--   64비트 아키텍처의 경우 *QTDCAgent(64).exe.config* 에이전트 데이터 어댑터 프로세스
+- 64비트 아키텍처의 경우 *QTDCAgent(64).exe.config* 에이전트 데이터 어댑터 프로세스
 
--   32비트 아키텍처의 경우 *QTAgent(32).exe.config* 에이전트 테스트 프로세스
+- 32비트 아키텍처의 경우 *QTAgent(32).exe.config* 에이전트 테스트 프로세스
 
--   64비트 아키텍처의 경우 *QTAgent(64).exe.config* 에이전트 테스트 프로세스
+- 64비트 아키텍처의 경우 *QTAgent(64).exe.config* 에이전트 테스트 프로세스
 
 ## <a name="bind-a-test-controller-to-a-network-adapter"></a>테스트 컨트롤러를 네트워크 어댑터에 바인딩
 
@@ -99,25 +97,25 @@ ms.locfileid: "52894744"
 
 ### <a name="to-obtain-the-ip-address-of-the-network-adapter"></a>네트워크 어댑터의 IP 주소를 가져오려면
 
-1.  **시작**을 선택한 다음, **실행**을 선택합니다.
+1. **시작**을 선택한 다음, **실행**을 선택합니다.
 
      **실행** 대화 상자가 표시됩니다.
 
-2.  `cmd`를 입력한 다음, **확인**을 선택합니다.
+2. `cmd`를 입력한 다음, **확인**을 선택합니다.
 
      명령 프롬프트가 열립니다.
 
-3.  `ipconfig /all`를 입력합니다.
+3. `ipconfig /all`을 입력합니다.
 
      네트워크 어댑터의 IP 주소가 표시됩니다. 컨트롤러를 바인딩할 네트워크 어댑터의 IP 주소를 기록해 둡니다.
 
 ### <a name="to-bind-a-test-controller-to-a-network-adapter"></a>테스트 컨트롤러를 네트워크 어댑터에 바인딩하려면
 
-1.  테스트 컨트롤러 서비스를 중지합니다. 명령 프롬프트에서 `net stop vsttcontroller`를 입력합니다.
+1. 테스트 컨트롤러 서비스를 중지합니다. 명령 프롬프트에서 `net stop vsttcontroller`를 입력합니다.
 
-2.  *QTController.exe.config* 파일을 엽니다. 이 파일은 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*에 위치합니다.
+2. *QTController.exe.config* 파일을 엽니다. 이 파일은 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*에 위치합니다.
 
-3.  응용 프로그램 설정에 `BindTo` 속성 항목을 추가합니다. 컨트롤러를 바인딩할 네트워크 어댑터의 IP 주소를 지정합니다. 코드는 다음과 비슷합니다.
+3. 애플리케이션 설정에 `BindTo` 속성 항목을 추가합니다. 컨트롤러를 바인딩할 네트워크 어댑터의 IP 주소를 지정합니다. 코드는 다음과 비슷합니다.
 
     ```xml
     <appSettings>
@@ -131,13 +129,13 @@ ms.locfileid: "52894744"
     </appSettings>
     ```
 
-4.  파일을 저장합니다.
+4. 파일을 저장합니다.
 
-5.  테스트 컨트롤러 서비스를 시작합니다. 명령 프롬프트에서 `net start vsttcontroller`를 입력합니다.
+5. 테스트 컨트롤러 서비스를 시작합니다. 명령 프롬프트에서 `net start vsttcontroller`를 입력합니다.
 
 ### <a name="to-connect-a-test-agent-to-a-bound-controller"></a>바인딩된 컨트롤러에 테스트 에이전트를 연결하려면
 
--   테스트 에이전트 설치를 다시 실행합니다. 이번에는 테스트 컨트롤러 이름 대신 테스트 컨트롤러의 IP 주소를 지정합니다.
+- 테스트 에이전트 설치를 다시 실행합니다. 이번에는 테스트 컨트롤러 이름 대신 테스트 컨트롤러의 IP 주소를 지정합니다.
 
 이 내용은 테스트 컨트롤러, 테스트 에이전트 서비스 및 테스트 에이전트 프로세스에 적용됩니다. 네트워크 어댑터가 둘 이상인 컴퓨터에서 실행되는 프로세스마다 `BindTo` 속성을 설정해야 합니다. `BindTo` 속성을 설정하는 절차는 앞에서 테스트 컨트롤러를 대상으로 설명한 내용과 같으며 세 가지 프로세스에서 모두 동일합니다. 테스트 에이전트 서비스 및 테스트 에이전트 프로세스의 로깅 수준을 설정하려면 [테스트 컨트롤러 컴퓨터의 로깅 수준 설정](#set-the-logging-level-on-a-test-controller-computer)에 나열된 구성 파일을 사용합니다.
 

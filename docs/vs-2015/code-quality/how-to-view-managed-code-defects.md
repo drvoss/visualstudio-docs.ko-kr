@@ -1,14 +1,9 @@
 ---
 title: '방법: 관리 코드 오류 보기 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - managed code, analyzing
 - code analysis, viewing managed code defects
@@ -18,12 +13,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4f0dff4744e3c77ed94afe78396008a3de7646c3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ef9b5f8da2cf38566c6cedbf10eae3fa5921362
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239423"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58971021"
 ---
 # <a name="how-to-view-managed-code-defects"></a>방법: 관리 코드 오류 보기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,6 +34,3 @@ ms.locfileid: "49239423"
 -   **경고 id를 선택 합니다.** 경고 id는 접두사로 **CA** 며 4 자리 숫자가 포함 됩니다. 예: CA1234.  
   
      경고에 대한 MSDN 라이브러리 도움말 항목이 표시됩니다. 도움말 항목에는 경고 원인에 대한 자세한 정보가 포함되며, 경고 문제가 발생하는 방법 및 해결 방법을 보여주는 예제가 있습니다.
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: 레거시 언어 서비스의 구문 색 지정 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - syntax coloring
 - language services, syntax coloring
 ms.assetid: f65ff67e-8c20-497a-bebf-5e2a5b5b012f
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 99082388534e39d02731e065bf586d6d221c67aa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 59d25c338cb0c7406c533afeceaf3675fbd16e96
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441267"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>레거시 언어 서비스의 구문 색 지정
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "51784067"
 간단한 colorizer 모델  
   
 > [!NOTE]
->  구문 색 서비스와 일반 별개인 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 메커니즘의 텍스트 색을 지정 합니다. 일반 대 한 자세한 내용은 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] 색 지정, 지원 되는 메커니즘을 참조 하세요 [사용 하 여 글꼴 및 색](../../extensibility/using-fonts-and-colors.md)합니다.  
+> 구문 색 서비스와 일반 별개인 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 메커니즘의 텍스트 색을 지정 합니다. 일반 대 한 자세한 내용은 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] 색 지정, 지원 되는 메커니즘을 참조 하세요 [사용 하 여 글꼴 및 색](../../extensibility/using-fonts-and-colors.md)합니다.  
   
  colorizer 외에도 언어 서비스는 광고 사용자 지정 색 항목을 제공 하 여 편집기에서 사용 되는 사용자 지정 색 항목을 제공할 수 있습니다. 구현 하 여이 수행할 수는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> 인터페이스를 구현 하는 동일한 개체에는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> 인터페이스. 편집기를 호출 하는 경우 사용자 지정 색 항목의 수를 반환 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> 메서드 및 해당 편집기를 호출 하는 경우 개별 사용자 지정 색 항목을 반환 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> 메서드.  
   
@@ -43,31 +38,31 @@ ms.locfileid: "51784067"
   
 ## <a name="how-a-vspackage-uses-a-language-service-colorizer"></a>VSPackage는 언어 서비스 Colorizer를 사용 하는 방법  
   
-1.  VSPackage에 다음을 수행 하는 VSPackage 언어 서비스를 실행 해야 하는 적절 한 언어 서비스를 가져와야 합니다.  
+1. VSPackage에 다음을 수행 하는 VSPackage 언어 서비스를 실행 해야 하는 적절 한 언어 서비스를 가져와야 합니다.  
   
-    1.  구현 하는 개체를 사용 하 여는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> 텍스트 색이 지정 하는 인터페이스입니다.  
+    1. 구현 하는 개체를 사용 하 여는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> 텍스트 색이 지정 하는 인터페이스입니다.  
   
          텍스트는 일반적으로 구현 하는 개체를 사용 하 여 표시 된 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 인터페이스입니다.  
   
-    2.  언어 서비스 GUID VSPackage의 서비스 공급자를 쿼리하여 언어 서비스를 가져옵니다. 언어 서비스는 레지스트리의 파일 확장명으로 식별 됩니다.  
+    2. 언어 서비스 GUID VSPackage의 서비스 공급자를 쿼리하여 언어 서비스를 가져옵니다. 언어 서비스는 레지스트리의 파일 확장명으로 식별 됩니다.  
   
-    3.  사용 하 여 언어 서비스를 연결 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> 를 호출 하 여 해당 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A> 메서드.  
+    3. 사용 하 여 언어 서비스를 연결 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> 를 호출 하 여 해당 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A> 메서드.  
   
-2.  이제 VSPackage 가져올 하 고 colorizer 개체를 다음과 같이 사용할 수 있습니다.  
+2. 이제 VSPackage 가져올 하 고 colorizer 개체를 다음과 같이 사용할 수 있습니다.  
   
     > [!NOTE]
-    >  핵심 편집기를 사용 하는 Vspackage는 언어 서비스의 colorizer 개체를 명시적으로 가져올 필요가 없습니다. 핵심 편집기의 인스턴스는 적절 한 언어 서비스를 얻고 즉시 여기에 표시 된 모든 색 지정 작업을 수행 합니다.  
+    > 핵심 편집기를 사용 하는 Vspackage는 언어 서비스의 colorizer 개체를 명시적으로 가져올 필요가 없습니다. 핵심 편집기의 인스턴스는 적절 한 언어 서비스를 얻고 즉시 여기에 표시 된 모든 색 지정 작업을 수행 합니다.  
   
-    1.  구현 하는 언어 서비스의 colorizer 개체를 가져올는 `T:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer`, 및 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer2> 인터페이스를 호출 하 여 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> 언어 서비스의 메서드 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> 개체입니다.  
+    1. 구현 하는 언어 서비스의 colorizer 개체를 가져올는 `T:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer`, 및 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer2> 인터페이스를 호출 하 여 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> 언어 서비스의 메서드 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> 개체입니다.  
   
-    2.  호출 된 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> 텍스트의 특정 범위에 대 한 colorizer 정보를 가져오는 방법입니다.  
+    2. 호출 된 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> 텍스트의 특정 범위에 대 한 colorizer 정보를 가져오는 방법입니다.  
   
          <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> 색으로 표시할 텍스트 범위의 각 문자에 대 한 값의 배열을 반환 합니다. 값은 코어 편집기에서 유지 관리 하는 기본 색 항목 목록이 나 사용자 지정 색 항목 목록을 관리 하는 언어 서비스 자체는 색 항목 목록에는 인덱스입니다.  
   
-    3.  반환 된 색 지정 정보를 사용 하는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> 선택한 텍스트를 표시 하는 방법입니다.  
+    3. 반환 된 색 지정 정보를 사용 하는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> 선택한 텍스트를 표시 하는 방법입니다.  
   
 > [!NOTE]
->  언어 서비스 colorizer를 사용 하는 것 외에도 VSPackage 사용할 수도 있습니다는 범용 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 텍스트 색 지정 메커니즘입니다. 이 메커니즘에 대 한 자세한 내용은 참조 하세요. [를 사용 하 여 글꼴 및 색](../../extensibility/using-fonts-and-colors.md)합니다.  
+> 언어 서비스 colorizer를 사용 하는 것 외에도 VSPackage 사용할 수도 있습니다는 범용 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 텍스트 색 지정 메커니즘입니다. 이 메커니즘에 대 한 자세한 내용은 참조 하세요. [를 사용 하 여 글꼴 및 색](../../extensibility/using-fonts-and-colors.md)합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [구문 색 지정 구현](../../extensibility/internals/implementing-syntax-coloring.md)  
@@ -81,4 +76,3 @@ ms.locfileid: "51784067"
   
 ## <a name="see-also"></a>참고 항목  
  [글꼴 및 색 사용](../../extensibility/using-fonts-and-colors.md)
-

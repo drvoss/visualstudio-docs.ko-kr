@@ -1,68 +1,60 @@
 ---
 title: Mac용 Visual Studio 둘러보기
-description: Mac용 Visual Studio에서는 iOS, Android, Mac, Xamarin.Forms용 Xamarin 프로젝트와 ASP.NET Core 웹 사이트를 비롯하여 macOS에서 .NET 응용 프로그램을 빌드하기 위한 통합 개발 환경을 제공합니다.
-zone_pivot_groups: mac-ide-version
-author: conceptdev
-ms.author: crdun
-ms.date: 11/03/2018
+description: Mac용 Visual Studio에서는 iOS, Android, Mac, Xamarin.Forms용 Xamarin 프로젝트와 ASP.NET Core 웹 사이트를 비롯하여 macOS에서 .NET 애플리케이션을 빌드하기 위한 통합 개발 환경을 제공합니다.
+author: asb3993
+ms.author: amburns
+ms.date: 09/18/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: e1787f6d396121263d91633a4ee6d4dd8ed2c35f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.custom: video
+ms.openlocfilehash: 60691ef47b3a3dfdb2fa1148507697a27a99ef7b
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895797"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213714"
 ---
-# <a name="visual-studio-for-mac-tour"></a>Mac용 Visual Studio 둘러보기
+# <a name="visual-studio-2019-for-mac-tour"></a>Mac용 Visual Studio 2019 둘러보기
 
-Mac용 Visual Studio는 Xamarin의 모바일 중심 IDE인 Xamarin Studio를 Mac의 모바일 우선, 클라우드 우선 개발 환경으로 발전시킵니다. 이 개발자 중심 도구를 통해 .NET의 기능을 사용하여 사용자에게 필요한 모든 플랫폼용 응용 프로그램을 만들 수 있습니다.
+Mac용 Visual Studio는 코드를 편집, 디버그 및 빌드한 다음, 앱을 게시하는 데 사용할 수 있는 Mac의 .NET _통합 개발 환경_입니다. Mac용 Visual Studio는 표준 편집기 및 디버거와 같은 예상 기능 외에도 컴파일러, 코드 완성 도구, 그래픽 디자이너 및 소프트웨어 개발 프로세스를 위한 소스 제어를 포함하고 있습니다.
 
-Mac용 Visual Studio의 UX(사용자 환경)는 해당하는 Windows 제품과 비슷하지만 네이티브 macOS 느낌이 있습니다. 앱을 만들고 열고 개발하는 작업은 이전에 Windows에서 Visual Studio를 사용한 적이 있는 모든 사용자에게 익숙한 경험일 것입니다. 또한 Mac용 Visual Studio에서는 해당하는 Windows 제품을 효과적인 IDE로 만드는 여러 가지 효과적인 도구를 활용합니다. Roslyn 컴파일러 플랫폼은 리팩터링 및 IntelliSense에 사용됩니다. 해당 프로젝트 시스템과 빌드 엔진은 MSBuild를 사용하고, 해당 소스 편집기는 TextMate 번들을 지원합니다. Xamarin 및 .NET Core 앱에 대해 동일한 디버거 엔진을 사용하고, Xamarin.iOS 및 Xamarin.Android에 대해 동일한 디자이너를 사용합니다.
+Mac용 Visual Studio는 `.csproj`, `.fsproj` 또는 `.sln` 파일과 같은 Windows 카운터파트와 동일한 여러 파일 형식을 지원하고 EditorConfig와 같은 기능을 지원합니다. 이는 가장 적합한 IDE를 사용할 수 있음을 의미합니다.
+앱을 만들고 열고 개발하는 작업은 이전에 Windows에서 Visual Studio를 사용한 적이 있는 모든 사용자에게 익숙한 경험일 것입니다. 또한 Mac용 Visual Studio에서는 해당하는 Windows 제품을 효과적인 IDE로 만드는 여러 가지 효과적인 도구를 활용합니다. Roslyn 컴파일러 플랫폼은 리팩터링 및 IntelliSense에 사용됩니다. 해당 프로젝트 시스템과 빌드 엔진은 MSBuild를 사용하고, 해당 소스 편집기는 Windows의 Visual Studio와 동일한 기반을 사용합니다. Xamarin 및 .NET Core 앱에 대해 동일한 디버거 엔진을 사용하고, Xamarin.iOS 및 Xamarin.Android에 대해 동일한 디자이너를 사용합니다.
 
-이 문서에서는 Mac용 Visual Studio의 다양한 섹션을 살펴보고, 플랫폼 간 응용 프로그램을 만들기 위한 효과적인 도구를 구성하는 몇 가지 기능을 설명합니다.
+## <a name="what-can-i-do-in-visual-studio-for-mac"></a>Mac용 Visual Studio에서 무엇을 할 수 있나요?
+
+Mac용 Visual Studio는 다음과 같은 개발 유형을 지원합니다.
+
+- Razor Pages, JavaScript, TypeScrip 지원, C#, F#을 사용한 ASP.NET Core 웹 애플리케이션
+- C# 또는 F#이 있는 .NET Core 콘솔 애플리케이션
+- C#이 있는 플랫폼 간 Unity 게임 및 애플리케이션
+- C# 또는 F# 및 XAML이 있는 Xamarin의 Android, iOS, tvOS 및 watchOS 애플리케이션
+- C# 또는 F#의 Cocoa 데스크톱 앱
+
+이 문서에서는 Mac용 Visual Studio의 다양한 섹션을 살펴보고, 이러한 애플리케이션을 만들기 위한 효과적인 도구를 구성하는 몇 가지 기능을 설명합니다.
 
 ## <a name="ide-tour"></a>IDE 둘러보기
 
-Mac용 Visual Studio는 응용 프로그램 파일 및 설정 관리, 응용 프로그램 코드 작성, 디버깅을 위한 여러 섹션으로 구성되어 있습니다.
+Mac용 Visual Studio는 애플리케이션 파일 및 설정 관리, 애플리케이션 코드 작성, 디버깅을 위한 여러 섹션으로 구성되어 있습니다.
 
-::: zone pivot="vsmac2019"
+## <a name="getting-started"></a>시작
 
-## <a name="visual-studio-for-mac-2019-start-window"></a>Mac용 Visual Studio 2019 시작 창
-
-> [!TIP]
-> Mac용 Visual Studio 2019 미리 보기를 [다운로드](install-preview.md)하여 테스트할 수 있습니다.
-
-Mac용 Visual Studio 2019 미리 보기를 시작하면 신규 사용자에게 로그인 창이 표시됩니다. Microsoft 계정으로 로그인하여 유료 라이선스를 활성화하거나(갖고 있는 경우) Azure 구독에 연결합니다. **건너뛰기**를 누르고 나중에 **Visual Studio > 로그인** 메뉴 항목에서 로그인해도 됩니다.
+Mac용 Visual Studio 2019를 시작하면 신규 사용자에게 로그인 창이 표시됩니다. Microsoft 계정으로 로그인하여 유료 라이선스를 활성화하거나(갖고 있는 경우) Azure 구독에 연결합니다. **나중에 하겠습니다.** 를 누른 다음, 나중에 **Visual Studio > 로그인** 메뉴 항목에서 로그인해도 됩니다.
 
 ![Microsoft 계정으로 로그인](media/ide-tour-2019-start-signin.png)
+
+그러면 원하는 바로 가기 키를 선택하여 IDE를 사용자 지정하는 옵션이 제공됩니다. Mac용 Visual Studio, Visual Studio, Visual Studio Code 또는 Xcode:
+
+![원하는 바로 가기 키 선택](media/ide-tour-2019-keyboard-shortcut.png)
 
 로그인한 사용자에게는 최근 프로젝트 목록과 기존 프로젝트를 열거나 새 프로젝트를 만드는 단추를 보여주는 새로운 _시작 창_이 표시됩니다.
 
 ![최근에 사용한 프로젝트 중에서 선택하거나 새로 만들기](media/ide-tour-2019-start-projects.png)
 
-::: zone-end
-::: zone pivot="vsmac2017"
-
-## <a name="welcome-screen-in-visual-studio-for-mac-2017"></a>Mac용 Visual Studio 2017의 시작 화면
-
-Mac용 Visual Studio를 시작하면 ‘시작 화면’이 표시됩니다.
-
-![시작 화면](media/ide-tour-image1.png)
-
-시작 화면에는 다음 섹션이 포함되어 있습니다.
-
-- **도구 모음** - 검색 창에 빠르게 액세스할 수 있습니다. 솔루션이 로드되면 이 도구 모음을 사용하여 앱 구성을 설정하고, 디버그하고, 오류를 표시합니다.
-- **시작** - Mac용 Visual Studio를 시작하는 개발자를 위한 유용한 항목에 빠르게 액세스할 수 있습니다.
-- **최근 솔루션** - 최근에 열어 본 솔루션에 빠르게 액세스할 수 있을 뿐 아니라 프로젝트를 열거나 만들 수 있는 편리한 단추가 제공됩니다.
-- **개발자 뉴스** - 최신 Microsoft 개발자 정보에 대해 알리는 뉴스 피드입니다.
-
-::: zone-end
-
 ## <a name="solutions-and-projects"></a>솔루션 및 프로젝트
 
-다음 이미지는 응용 프로그램이 로드된 Mac용 Visual Studio를 보여줍니다.
+다음 이미지는 애플리케이션이 로드된 Mac용 Visual Studio를 보여줍니다.
 
-![응용 프로그램이 로드된 Mac용 Visual Studio](media/ide-tour-image17.png)
+![애플리케이션이 로드된 Mac용 Visual Studio](media/ide-tour-image17.png)
 
 다음 섹션에서는 Mac용 Visual Studio의 주요 영역에 대한 개요를 제공합니다.
 
@@ -74,7 +66,7 @@ Solution Pad는 솔루션의 프로젝트를 구성합니다.
 
 여기서 소스 코드, 리소스, 사용자 인터페이스, 종속성에 대한 파일이 플랫폼별 프로젝트에 구성됩니다.
 
-Mac용 Visual Studio에서 프로젝트와 솔루션을 사용하는 방법에 대한 자세한 내용은 [프로젝트 및 솔루션](projects-and-solutions.md) 문서를 참조하세요.
+Mac용 Visual Studio에서 프로젝트와 솔루션을 사용하는 방법에 대한 자세한 내용은 [프로젝트 및 솔루션](/visualstudio/mac/projects-and-solutions) 문서를 참조하세요.
 
 ## <a name="assembly-references"></a>어셈블리 참조
 
@@ -86,31 +78,56 @@ Mac용 Visual Studio에서 프로젝트와 솔루션을 사용하는 방법에 �
 
 ![참조 편집 대화 상자](media/ide-tour-image20.png)
 
-Mac용 Visual Studio에서 참조를 사용하는 방법에 대한 자세한 내용은 [프로젝트의 참조 관리](managing-references-in-a-project.md) 문서를 참조하세요.
+Mac용 Visual Studio에서 참조를 사용하는 방법에 대한 자세한 내용은 [프로젝트의 참조 관리](/visualstudio/mac/managing-references-in-a-project) 문서를 참조하세요.
 
 ## <a name="dependencies--packages"></a>종속성/패키지
 
 앱에서 사용되는 모든 외부 종속성은 .NET Core 또는 Xamarin.iOS/Xamarin.Android 프로젝트를 사용 중인지에 따라 종속성 또는 패키지 폴더에 저장됩니다. 일반적으로 NuGet의 형태로 제공됩니다.
 
-NuGet은 가장 인기 있는 .NET 개발용 패키지 관리자입니다. Visual Studio의 NuGet 지원을 통해 쉽게 패키지를 검색하고 프로젝트 또는 응용 프로그램에 추가할 수 있습니다.
+NuGet은 가장 인기 있는 .NET 개발용 패키지 관리자입니다. Visual Studio의 NuGet 지원을 통해 쉽게 패키지를 검색하고 프로젝트 또는 애플리케이션에 추가할 수 있습니다.
 
-응용 프로그램에 종속성을 추가하려면 종속성/패키지 폴더를 마우스 오른쪽 단추로 클릭하고 **패키지 추가**를 선택합니다.
+애플리케이션에 종속성을 추가하려면 종속성/패키지 폴더를 마우스 오른쪽 단추로 클릭하고 **패키지 추가**를 선택합니다.
 
 ![NuGet 패키지 추가](media/ide-tour-image21.png)
 
-응용 프로그램에서 NuGet 패키지를 사용하는 방법에 대한 자세한 내용은 [사용자 프로젝트에 NuGet 프로젝트 포함](nuget-walkthrough.md) 문서를 참조하세요.
+애플리케이션에서 NuGet 패키지를 사용하는 방법에 대한 자세한 내용은 [사용자 프로젝트에 NuGet 프로젝트 포함](/visualstudio/mac/nuget-walkthrough) 문서를 참조하세요.
+
+## <a name="source-editor"></a>소스 편집기
+
+C#, XAML, Javascript 중 어떤 언어로 작성하든 간에 코드 편집기는 완전한 네이티브 사용자 인터페이스를 사용하여 Visual Studio Windows와 동일한 핵심 구성 요소를 공유합니다.
+
+따라서 다음과 같은 기능이 제공됩니다.
+
+* 네이티브 macOS(Cocoa 기반) 사용자 인터페이스(도구 설명, 편집기 화면, 여백 장식, 텍스트 렌더링 IntelliSense)
+* IntelliSense 형식 필터링 및 “가져오기 항목 표시”
+* 네이티브 텍스트 입력 지원
+* RTL/BiDi 언어 지원
+* Roslyn 3
+* 다중 캐럿 지원
+* 단어 줄 바꿈
+* 업데이트된 IntelliSense UI
+* 향상된 찾기/바꾸기
+* 코드 조각 지원 
+* 선택 영역 서식
+* 인라인 전구
+
+Mac용 Visual Studio에서 소스 편집기를 사용하는 방법에 대한 자세한 내용은 [소스 편집기](/visualstudio/mac/source-editor) 설명서를 참조하세요.
+
+항상 탭이 표시되도록 하려면 탭을 고정할 수 있습니다. 이렇게 하면 프로젝트를 시작할 때마다 필요한 탭이 항상 표시됩니다. 탭을 고정하려면 탭을 마우스로 가리키고 _고정_ 아이콘을 클릭합니다.
+
+![탭 고정](media/ide-tour-tabpin.png)
 
 ## <a name="refactoring"></a>리팩터링
 
-Mac용 Visual Studio에서는 코드를 리팩터링하는 두 가지 유용한 방법인 컨텍스트 작업과 소스 분석 기능을 제공합니다. 자세한 내용은 [리팩터링](refactoring.md) 문서를 참조하세요.
+Mac용 Visual Studio에서는 코드를 리팩터링하는 두 가지 유용한 방법인 컨텍스트 작업과 소스 분석 기능을 제공합니다. 자세한 내용은 [리팩터링](/visualstudio/mac/refactoring) 문서를 참조하세요.
 
-## <a name="debugging"></a>디버깅
+## <a name="debugging"></a>디버그
 
-Mac용 Visual Studio에 포함된 네이티브 디버거는 Xamarin.iOS, Xamarin.Mac, Xamarin.Android 응용 프로그램에 대한 디버깅을 지원합니다. Mac용 Visual Studio에서는 Mono 소프트 디버거를 사용합니다. 이 디버거는 Mono 런타임에 구현되어, IDE에서 모든 플랫폼의 관리 코드를 디버그할 수 있게 해줍니다. 디버깅에 대한 자세한 내용은 [디버깅](debugging.md) 문서를 참조하세요.
+Mac용 Visual Studio에 포함된 네이티브 디버거는 Xamarin.iOS, Xamarin.Mac, Xamarin.Android 애플리케이션에 대한 디버깅을 지원합니다. Mac용 Visual Studio에서는 Mono 소프트 디버거를 사용합니다. 이 디버거는 Mono 런타임에 구현되어, IDE에서 모든 플랫폼의 관리 코드를 디버그할 수 있게 해줍니다. 디버깅에 대한 자세한 내용은 [디버깅](/visualstudio/mac/debugging) 문서를 참조하세요.
 
-디버거에는 문자열, 색, URL, 크기, 좌표, 베지어 곡선 등의 특수 형식에 대한 풍부한 시각화 도우미가 포함되어 있습니다.
+디버거에는 문자열, 색, URL, 크기, 좌표, 베지어 곡선 등의 특수 형식에 대한 다양한 시각화 도우미가 포함되어 있습니다.
 
-디버거의 데이터 시각화에 대한 자세한 내용은 [데이터 시각화](data-visualizations.md) 문서를 참조하세요.
+디버거의 데이터 시각화에 대한 자세한 내용은 [데이터 시각화](/visualstudio/mac/data-visualizations) 문서를 참조하세요.
 
 ## <a name="version-control"></a>버전 제어
 
@@ -122,7 +139,16 @@ Mac용 Visual Studio는 Git 및 Subversion 소스 제어 시스템과 통합됩�
 
 ![Solution Pad의 커밋되지 않은 파일](media/ide-tour-image23.png)
 
-Visual Studio에서 버전 제어를 사용하는 방법에 대한 자세한 내용은 [버전 제어](version-control.md) 문서를 참조하세요.
+Visual Studio에서 버전 제어를 사용하는 방법에 대한 자세한 내용은 [버전 제어](/visualstudio/mac/version-control) 문서를 참조하세요.
+
+## <a name="next-steps"></a>다음 단계
+
+- [Mac용 Visual Studio 설치](installation.md)
+- [사용 가능한 워크로드 검토](workloads.md)
+
+## <a name="related-video"></a>관련 동영상
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Overview/player]
 
 ## <a name="see-also"></a>참고 항목
 

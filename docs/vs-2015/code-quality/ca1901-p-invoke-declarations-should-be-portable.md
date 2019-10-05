@@ -1,14 +1,9 @@
 ---
-title: 'CA1901: P-invoke 선언은 이식 가능 해야 | Microsoft Docs'
-ms.custom: ''
+title: 'CA1901: P / Invoke 선언은 이식 가능 해야 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1901
 - PInvokeDeclarationsShouldBePortable
@@ -20,12 +15,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a44e439ecafaa2e89df8cc93c131dbf2abe2dc30
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ccbbc3178a9f65c15d11a27dee1a625cca729240
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203075"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: P/Invoke 선언은 이식 가능해야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,9 +38,9 @@ ms.locfileid: "49948137"
 ## <a name="rule-description"></a>규칙 설명
  이 규칙을 위반 하는 다음 시나리오 중 하나가 발생 합니다.
 
--   로 입력 해야 하는 경우 반환 값 또는 매개 변수 고정 크기 정수로 입력 되는 `IntPtr`합니다.
+- 로 입력 해야 하는 경우 반환 값 또는 매개 변수 고정 크기 정수로 입력 되는 `IntPtr`합니다.
 
--   매개 변수를 반환 값으로 입력 된는 `IntPtr` 고정 크기의 정수로 경우 입력 해야 합니다.
+- 매개 변수를 반환 값으로 입력 된는 `IntPtr` 고정 크기의 정수로 경우 입력 해야 합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  사용 하 여이 위반을 해결할 수 있습니다 `IntPtr` 나 `UIntPtr` 대신 핸들을 나타내는 `Int32` 또는 `UInt32`합니다.
@@ -85,6 +80,3 @@ internal class NativeMethods{
 
 ## <a name="see-also"></a>참고 항목
  [Portability Warnings](../code-quality/portability-warnings.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: ProjectExtensions 요소(MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ProjectExtensions
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: f95f312f-ff92-41eb-9469-ad99e236a307
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 41b3ed5fc742f95cde3c834e5d8612daafef5d6d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0afc4f73ed287f753acf87bd0b112e6f5303e996
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189113"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62551266"
 ---
 # <a name="projectextensions-element-msbuild"></a>ProjectExtensions 요소(MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 프로젝트 파일이 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 이외의 정보를 포함하도록 허용합니다. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에서는 `ProjectExtensions` 요소 내의 모든 항목을 무시합니다.  
   
  \<Project>  
@@ -63,7 +57,7 @@ ms.locfileid: "49189113"
 |-------------|-----------------|  
 |[프로젝트](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 프로젝트 파일의 필수 루트 요소입니다.|  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 프로젝트에서는 `ProjectExtensions` 요소를 하나만 사용할 수 있습니다.  
   
 ## <a name="example"></a>예제  
@@ -84,5 +78,3 @@ ms.locfileid: "49189113"
 ## <a name="see-also"></a>참고 항목  
  [프로젝트 파일 스키마 참조](../msbuild/msbuild-project-file-schema-reference.md)  
  [MSBuild](msbuild.md)
-
-

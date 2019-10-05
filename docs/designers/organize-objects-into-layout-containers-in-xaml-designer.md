@@ -1,27 +1,23 @@
 ---
 title: XAML 디자이너에서 개체를 레이아웃 컨테이너로 구성
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.workload:
-- uwp
-ms.openlocfilehash: f8faa01ddc56c5beaa2412bd91a9e68a8bba9525
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+manager: jillfra
+ms.openlocfilehash: d0401d810f5f97b0306290faff2cfeb1785ba14f
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978179"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821940"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>XAML 디자이너에서 개체를 레이아웃 컨테이너로 구성
 
 이 문서에서는 XAML 디자이너에 대한 레이아웃 패널과 컨트롤을 설명합니다.
 
-페이지에 개체를 표시할 위치를 가정해 보겠습니다. 개체로는 이미지, 단추, 비디오 등을 들 수 있습니다. 개체를 행 및 열로 표시하거나 가로나 세로로 한 줄로 표시하거나 고정된 위치에 표시할 수 있습니다.
+페이지에 개체를 표시할 위치를 가정해 보겠습니다. &mdash;개체로는 이미지, 단추, 비디오 등을 들 수 있습니다. 개체를 행 및 열로 표시하거나 가로나 세로로 한 줄로 표시하거나 고정된 위치에 표시할 수 있습니다.
 
 페이지에 어떻게 표시할지 결정했으면 레이아웃 패널을 선택합니다. 개체를 추가할 대상이 필요하기 때문에 모든 페이지 작업은 여기에서 시작됩니다. 기본적으로 **Grid**가 설정되지만 변경할 수 있습니다.
 
@@ -31,19 +27,7 @@ ms.locfileid: "38978179"
 
 다음 레이아웃 패널 중 하나를 선택하여 페이지를 시작합니다. 페이지에 둘 이상의 레이아웃 패널을 지정할 수 있습니다. 예를 들어 **Grid** 레이아웃 패널에서 시작한 후 **Grid**의 영역에 **StackPanel**을 추가하여 해당 요소에서 컨트롤을 세로로 정렬할 수 있습니다.
 
-다음은 가장 많이 사용되는 레이아웃 패널이며, 다른 레이아웃 패널도 있습니다. 이러한 컨트롤은 모두 **자산** 패널에 있습니다.
-
-- [눈금](#Grid)
-
-- [UniformGrid](#UniformGrid)
-
-- [캔버스](#Canvas)
-
-- [StackPanel](#stackpanel)
-
-- [WrapPanel](#wrappanel)
-
-- [DockPanel](#dockpanel)
+다음은 가장 많이 사용되는 레이아웃 패널이며, 다른 레이아웃 패널도 있습니다. 이 모든 항목은 Visual Studio의 **도구 상자** 또는 Blend for Visual Studio의 **자산** 패널에서 확인할 수 있습니다.
 
 ### <a name="grid"></a>표
 
@@ -55,11 +39,11 @@ ms.locfileid: "38978179"
 
 개체를 동일하게 또는 균일하게 모눈 영역에 정렬합니다. 이 패널은 이미지의 목록을 정렬할 때 매우 유용 합니다.
 
-![UniformGrid 레이아웃 패널](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png)
-
 (WPF 프로젝트에만 사용 가능)
 
-### <a name="canvas"></a>Canvas
+![UniformGrid 레이아웃 패널](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png)
+
+### <a name="canvas"></a>캔버스
 
 원하는 방식으로 개체를 정렬합니다. 사용자가 앱을 실행할 때 이러한 요소는 화면에서 고정 위치에 표시됩니다.
 
@@ -87,21 +71,13 @@ ms.locfileid: "38978179"
 
 ![DockPanel 레이아웃 패널](../designers/media/72d46b58-9a49-4dd5-8af7-6843c0440226.png)
 
-**짧은 비디오 보기:** ![재생 단추](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF - DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
+**짧은 비디오 시청:** ![재생 단추](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF - DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
 
 ## <a name="layout-controls"></a>레이아웃 컨트롤
 
 개체를 레이아웃 컨트롤에도 추가할 수 있습니다. 이러한 개체는 레이아웃 패널만큼 기능이 다양하지는 않지만 특정 시나리오에서 유용할 수 있습니다.
 
-다음은 가장 많이 사용되는 레이아웃 컨트롤이며, 다른 레이아웃 컨트롤도 있습니다. 이러한 컨트롤은 모두 **자산** 패널에 있습니다.
-
-- [테두리](#Border)
-
-- [팝업](#Popup)
-
-- [ScrollViewer](#scrollviewer)
-
-- [Viewbox](#viewbox)
+다음은 가장 많이 사용되는 레이아웃 컨트롤이며, 다른 레이아웃 컨트롤도 있습니다. 이 모든 항목은 Visual Studio의 **도구 상자** 또는 Blend for Visual Studio의 **자산** 패널에서 확인할 수 있습니다.
 
 ### <a name="border"></a>테두리
 

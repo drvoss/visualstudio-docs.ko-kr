@@ -1,14 +1,9 @@
 ---
 title: 솔루션 사용자 옵션 (합니다. Suo) 파일 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - .suo files, VSPackages
 - suo files, VSPackages
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 75258e0d-600d-4a3d-94f4-3d7ac12cb47c
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f101f4efe0afe2132477b83731871872fdfc90c9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1a9825fabe08940e8950cf88a1dbf2bc149af0b2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197331"
 ---
 # <a name="solution-user-options-suo-file"></a>솔루션 사용자 옵션(.Suo) 파일
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +38,6 @@ ms.locfileid: "51799853"
   
  이러한 두 메서드 `SaveUserOptions` 하 고 `WriteUserOptions`에 대 한 포인터를 전달.suo 파일에 저장 되는 정보의 각 스트림에 대해 재귀적으로 호출 됩니다 `IVsSolutionPersistence`합니다. .Suo 파일에 여러 개의 스트림 작성할 수 있도록 재귀적으로 호출 됩니다. 이러한 방법으로 사용자 정보 솔루션을 사용 하 여 유지 되 고에 솔루션을 열 수 있습니다 되도록 보장 됩니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>   
- [솔루션](../../extensibility/internals/solutions.md)
-
+ [솔루션](../../extensibility/internals/solutions-overview.md)

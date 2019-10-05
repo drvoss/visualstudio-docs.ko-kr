@@ -1,21 +1,17 @@
 ---
 title: 이미지 라이브러리 뷰어 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6c0e277a123fe24da9824fae94b13eee686f5663
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 97d634f97eb7a13cfa54b2c0d326b19f31fb7d9d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778022"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685521"
 ---
 # <a name="image-library-viewer"></a>이미지 라이브러리 뷰어
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,7 +55,7 @@ Visual Studio 이미지 라이브러리 뷰어 도구를 로드 하 고 Visual S
 </ImageManifest>  
 ```  
   
- **기호**  
+ **Symbols**  
   
  가독성 및 유지 관리를 지 원하는 대로 이미지 매니페스트 특성 값에 대 한 기호를 사용할 수 있습니다. 기호는 다음과 같이 정의 됩니다.  
   
@@ -76,7 +72,7 @@ Visual Studio 이미지 라이브러리 뷰어 도구를 로드 하 고 Visual S
 |-|-|  
 |**하위 요소**|**정의**|  
 |가져오기|현재 매니페스트에서 사용 하 여 지정 된 매니페스트 파일의 기호를 가져옵니다.|  
-|GUID|GUID를 나타내는 기호와 GUID 서식 지정과 일치 해야 합니다.|  
+|Guid|GUID를 나타내는 기호와 GUID 서식 지정과 일치 해야 합니다.|  
 |ID|기호 ID를 나타내며 음수가 아닌 정수 여야 합니다.|  
 |문자열|기호는 임의의 문자열 값을 나타냅니다.|  
   
@@ -92,11 +88,11 @@ Visual Studio 이미지 라이브러리 뷰어 도구를 로드 하 고 Visual S
   
 |||  
 |-|-|  
-|**기호**|**설명**|  
+|**Symbol**|**설명**|  
 |CommonProgramFiles|% CommonProgramFiles % 환경 변수 값|  
 |LocalAppData|% LocalAppData % 환경 변수 값|  
 |ManifestFolder|매니페스트 파일을 포함 하는 폴더|  
-|내 문서|현재 사용자의 내 문서 폴더의 전체 경로|  
+|MyDocuments|현재 사용자의 내 문서 폴더의 전체 경로|  
 |ProgramFiles|% ProgramFiles % 환경 변수 값|  
 |시스템|Windows\System32 폴더|  
 |WinDir|% WinDir % 환경 변수 값|  
@@ -117,7 +113,7 @@ Visual Studio 이미지 라이브러리 뷰어 도구를 로드 하 고 Visual S
 |||  
 |-|-|  
 |**특성**|**정의**|  
-|GUID|[필수] 이미지 모니커의 GUID 부분|  
+|Guid|[필수] 이미지 모니커의 GUID 부분|  
 |ID|[필수] 이미지 모니커 ID 부분|  
 |AllowColorInversion|[선택 사항, 기본값은 true] 이미지를 프로그래밍 방식으로 어두운 배경을 사용 하는 경우 반전 된 색을 가질 수 있는지 여부를 나타냅니다.|  
   
@@ -134,8 +130,8 @@ Visual Studio 이미지 라이브러리 뷰어 도구를 로드 하 고 Visual S
 |||  
 |-|-|  
 |**특성**|**정의**|  
-|URI|[필수] 이미지를 로드할 수 있는 정의 하는 URI입니다. 다음 중 하나일 수 있습니다.<br /><br /> -A [Pack URI](http://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) 응용 프로그램을 사용 하 여: / / / 기관<br /><br /> -절대 구성 요소 리소스 참조<br /><br /> -네이티브 리소스를 포함 하는 파일 경로|  
-|배경|[선택 사항] 어떤 종류의 원본으로 사용할 목적이 백그라운드에서 나타냅니다.<br /><br /> 다음 중 하나일 수 있습니다.<br /><br /> - *Light*:는 밝은 배경의에서 소스를 사용할 수 있습니다.<br /><br /> - *어두운*: 어두운 배경을에서 소스를 사용할 수 있습니다.<br /><br /> - *고 대비*: 고대비 모드에서 백그라운드에서 소스를 사용할 수 있습니다.<br /><br /> - *HighContrastLight*: 소스는 밝은 배경의 고대비 모드에서 사용할 수 있습니다.<br /><br /> -*HighContrastDark*: 원본 어두운 배경을 고대비 모드에서 사용할 수 있습니다.<br /><br /> 경우는 **백그라운드** 특성을 생략 하면, 백그라운드에서 소스를 사용할 수 있습니다.<br /><br /> 경우 **백그라운드** 됩니다 *Light*를 *어두운*를 *HighContrastLight*, 또는 *HighContrastDark*, 원본의 색 반전 되지 않습니다. 하는 경우 **백그라운드** 생략 되거나로 *고 대비*, 소스의 색 반전을 이미지의 의해 제어 됩니다 **AllowColorInversion** 특성입니다.|  
+|URI|[필수] 이미지를 로드할 수 있는 정의 하는 URI입니다. 다음 중 하나일 수 있습니다.<br /><br /> -A [Pack URI](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) 응용 프로그램을 사용 하 여: / / / 기관<br /><br /> -절대 구성 요소 리소스 참조<br /><br /> -네이티브 리소스를 포함 하는 파일 경로|  
+|배경|[선택 사항] 어떤 종류의 원본으로 사용할 목적이 백그라운드에서 나타냅니다.<br /><br /> 다음 중 하나일 수 있습니다.<br /><br /> - *Light*: 밝은 배경에 소스를 사용할 수 있습니다.<br /><br /> - *Dark*: 어두운 배경을에서 소스를 사용할 수 있습니다.<br /><br /> - *HighContrast*: 고대비 모드에서 백그라운드에서 소스를 사용할 수 있습니다.<br /><br /> - *HighContrastLight*: 고대비 모드에서 밝은 배경에 소스를 사용할 수 있습니다.<br /><br /> -*HighContrastDark*: 고대비 모드에서 어두운 배경을에서 소스를 사용할 수 있습니다.<br /><br /> 경우는 **백그라운드** 특성을 생략 하면, 백그라운드에서 소스를 사용할 수 있습니다.<br /><br /> 경우 **백그라운드** 됩니다 *Light*를 *어두운*를 *HighContrastLight*, 또는 *HighContrastDark*, 원본의 색 반전 되지 않습니다. 하는 경우 **백그라운드** 생략 되거나로 *고 대비*, 소스의 색 반전을 이미지의 의해 제어 됩니다 **AllowColorInversion** 특성입니다.|  
   
  \<소스 > 요소는 다음 선택적 하위 요소 중 하나만 포함할 수 있습니다.  
   
@@ -143,9 +139,9 @@ Visual Studio 이미지 라이브러리 뷰어 도구를 로드 하 고 Visual S
 |-|-|-|  
 |**요소**|**특성 (모두 필요)**|**정의**|  
 |\<크기 >|값|원본 장치 단위로 지정된 된 크기의 이미지에 대 한 사용 됩니다. 이미지는 사각형 됩니다.|  
-|\<SizeRange >|MinSize, MaxSize|원본 장치 단위로 최대 크기로 MinSize에서 이미지에 대 한 포괄적 사용 됩니다. 이미지는 사각형 됩니다.|  
+|\<SizeRange>|MinSize, MaxSize|원본 장치 단위로 최대 크기로 MinSize에서 이미지에 대 한 포괄적 사용 됩니다. 이미지는 사각형 됩니다.|  
 |\<크기 >|너비, 높이|원본은 이미지의 지정 된 너비와 높이 (장치 단위)에 대 한 사용 됩니다.|  
-|\<DimensionRange >|MinWidth, MinHeight<br /><br /> MaxWidth, 최대 높이|원본 장치 단위로 최대 너비/높이에 최소 너비/높이의 이미지에 대 한 포괄적 사용 됩니다.|  
+|\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|원본 장치 단위로 최대 너비/높이에 최소 너비/높이의 이미지에 대 한 포괄적 사용 됩니다.|  
   
  A \<소스 > 요소는 선택적 수도 있습니다 \<NativeResource > 하위 요소를 정의 하는 \<원본 > 관리 되는 어셈블리 대신 네이티브 어셈블리에서 로드 되는 합니다.  
   
@@ -173,7 +169,7 @@ Visual Studio 이미지 라이브러리 뷰어 도구를 로드 하 고 Visual S
 |||  
 |-|-|  
 |**특성**|**정의**|  
-|GUID|[필수] 이미지 모니커의 GUID 부분|  
+|Guid|[필수] 이미지 모니커의 GUID 부분|  
 |ID|[필수] 이미지 모니커 ID 부분|  
 |외부|[선택 사항, 기본값: false] 이미지 모니커를 사용 하 여 현재 매니페스트에서 이미지를 참조 하는지 여부를 나타냅니다.|  
   
@@ -190,7 +186,7 @@ Visual Studio 이미지 라이브러리 뷰어 도구를 로드 하 고 Visual S
   
  기본적으로 도구를 Visual Studio 설치 디렉터리를 찾고 검색 디렉터리 목록에 해당 디렉터리를 추가 하려고 합니다. 도구를 찾지 못하면 디렉터리를 수동으로 추가할 수 있습니다.  
   
- 전환 하려면 도구를 사용할 수 모든 매니페스트 로드 되 면 **백그라운드** 색 **DPI**합니다 **고대비**, 또는 **색상 및 농도가 \** 에 대 한 이미지를 사용자에는 다양 한 설정에 대 한 제대로 렌더링 되는 확인 하려면 이미지 자산 시각적으로 확인할 수 있도록 합니다.  
+ 전환 하려면 도구를 사용할 수 모든 매니페스트 로드 되 면 **백그라운드** 색 **DPI**합니다 **고대비**, 또는 **색상 및 농도가** 에 대 한 이미지를 사용자에는 다양 한 설정에 대 한 제대로 렌더링 되는 확인 하려면 이미지 자산 시각적으로 확인할 수 있도록 합니다.  
   
  ![이미지 라이브러리 뷰어 배경](../../extensibility/internals/media/image-library-viewer-background.png "이미지 라이브러리 뷰어 배경")  
   
@@ -228,10 +224,9 @@ Visual Studio 이미지 라이브러리 뷰어 도구를 로드 하 고 Visual S
   
 ## <a name="notes"></a>노트  
   
--   기본적으로 도구는 Visual Studio 설치 디렉터리에 여러 이미지 매니페스트 가져오게 됩니다. 공개적으로 사용할 수 있는 모니커 있는 하나만 합니다 **Microsoft.VisualStudio.ImageCatalog** 매니페스트 합니다. GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (수행 **되지** 이 GUID는 사용자 지정 매니페스트 재정의) 형식: KnownMonikers  
+- 기본적으로 도구는 Visual Studio 설치 디렉터리에 여러 이미지 매니페스트 가져오게 됩니다. 공개적으로 사용할 수 있는 모니커 있는 하나만 합니다 **Microsoft.VisualStudio.ImageCatalog** 매니페스트 합니다. GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (수행 **되지** 이 GUID는 사용자 지정 매니페스트 재정의) 형식: KnownMonikers  
   
--   실제로 표시 하도록 응용 프로그램에 대 한 몇 초가 걸릴 수 있으므로 찾으면 모든 이미지 매니페스트를 로드 하는 시작 시 도구를 시도 합니다. 느리거나 응답이 없는 매니페스트를 로드 하는 동안 수도 수 있습니다.  
+- 실제로 표시 하도록 응용 프로그램에 대 한 몇 초가 걸릴 수 있으므로 찾으면 모든 이미지 매니페스트를 로드 하는 시작 시 도구를 시도 합니다. 느리거나 응답이 없는 매니페스트를 로드 하는 동안 수도 수 있습니다.  
   
 ## <a name="sample-output"></a>샘플 출력  
  이 도구는 모든 출력을 생성 하지 않습니다.
-

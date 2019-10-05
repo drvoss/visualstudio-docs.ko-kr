@@ -1,14 +1,9 @@
 ---
 title: 기호 형식의 어휘 계층 구조 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 912da653-ddfe-45a4-84aa-64281283739a
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0f9fa295a7faa85a0b7a7b3268702c4199869754
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e70b83046c41b13cb51324eb63e81b26a118a81f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403509"
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>기호 형식의 어휘 계층 구조
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,13 +46,10 @@ ms.locfileid: "51783261"
 |[UsingNameSpace](../../debugger/debug-interface-access/usingnamespace.md)|지정 된 `namespace`식별자입니다.|  
   
 > [!NOTE]
->  추가 기호 속성 기호 형식에 따라 사용할 수 있습니다. 이러한 속성은 개별 기호 항목에 나열 됩니다.  
+> 추가 기호 속성 기호 형식에 따라 사용할 수 있습니다. 이러한 속성은 개별 기호 항목에 나열 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [기호 형식의 클래스 계층 구조](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   
- [Idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)   
+ [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)   
  [기호 및 기호 태그](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)   
  [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md)
-
-
-

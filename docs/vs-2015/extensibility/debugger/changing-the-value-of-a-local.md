@@ -1,33 +1,28 @@
 ---
 title: 로컬 값을 변경 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, changing values programmatically
 ms.assetid: 8407d3df-d38a-4328-82d1-98084bef43ec
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 166b4d22ec24f3137044ab19255abb15b109fbe0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 516725510c5f5bc7baa8bd96d3f7fb969b6589e5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383447"
 ---
 # <a name="changing-the-value-of-a-local"></a>로컬 항목 값 변경
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  Visual Studio 2015에서 식 계산기를 구현 하는 이러한 방식으로 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 정보를 참조 하세요 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 하 고 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)합니다.  
+> Visual Studio 2015에서 식 계산기를 구현 하는 이러한 방식으로 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 정보를 참조 하세요 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 하 고 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)합니다.  
   
  값 필드에 새 값을 입력 한 경우는 **지역** 창 디버그 패키지 전달 문자열 식 계산기 (EE)을 입력 합니다. EE 간단한 값 또는 식을 포함할 수 있으며 연결 된 로컬에서 결과 값을 저장 합니다.이 문자열을 평가 합니다.  
   
@@ -37,13 +32,13 @@ ms.locfileid: "51807222"
   
 2. `IDebugProperty2::SetValueAsString`는 다음 작업을 수행합니다.  
   
-   1.  값을 생성 하는 문자열을 평가 합니다.  
+   1. 값을 생성 하는 문자열을 평가 합니다.  
   
-   2.  연결 된 바인딩합니다 [IDebugField](../../extensibility/debugger/reference/idebugfield.md) 가져올 개체를 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) 개체입니다.  
+   2. 연결 된 바인딩합니다 [IDebugField](../../extensibility/debugger/reference/idebugfield.md) 가져올 개체를 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) 개체입니다.  
   
-   3.  값을 일련의 바이트로 변환합니다.  
+   3. 값을 일련의 바이트로 변환합니다.  
   
-   4.  호출 [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) 디버깅 중인 프로그램에 액세스할 수 있도록 메모리에 값의 바이트를 배치 하 합니다.  
+   4. 호출 [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) 디버깅 중인 프로그램에 액세스할 수 있도록 메모리에 값의 바이트를 배치 하 합니다.  
   
 3. Visual Studio를 새로 고칩니다 합니다 **지역** 표시 (참조 [지역 표시](../../extensibility/debugger/displaying-locals.md) 세부 정보에 대 한).  
   
@@ -56,4 +51,3 @@ ms.locfileid: "51807222"
 ## <a name="see-also"></a>참고 항목  
  [CLR 식 계산기 작성](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [로컬 항목 표시](../../extensibility/debugger/displaying-locals.md)
-

@@ -1,14 +1,9 @@
 ---
 title: 'CA1013: 오버 로드에 같음 연산자를 오버 더하기 및 빼기 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - OverrideOperatorEqualsOnOverridingAddAndSubtract
 - OverrideOperatorEqualsOnOverloadingAddAndSubtract
@@ -24,14 +19,14 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 277f0c880ba9a3043744cf1c558ea8487062bd12
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1b70085c83d842ccb5f8addc661af9109b5a5976
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922004"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695618"
 ---
-# <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: 더하기 및 빼기를 오버로드할 때 같음 연산자를 오버로드하십시오.
+# <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: 더하기 및 빼기를 오버로드할 때 같음 연산자를 오버로드하세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -85,9 +80,6 @@ return left.Equals(right);
 **적절 한 형식: {3,3} {3,3} 같은지? 예**
 **적절 한 형식: {3,3} {3,3} 는 = =?   예**
 **잘못 된 형식: {2,2} {9,9} 같은지? 아니오**
-**적절 한 형식: {3,3} {9,9} 는 = =?   아니요**
+**적절 한 형식: {3,3} {9,9} 는 = =?   No**
 ## <a name="see-also"></a>참고 항목
- [같음 연산자](http://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)
-
-
-
+ [같음 연산자](https://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)

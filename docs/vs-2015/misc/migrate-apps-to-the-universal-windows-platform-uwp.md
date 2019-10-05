@@ -1,25 +1,20 @@
 ---
 title: 유니버설 Windows 플랫폼 (UWP)로 앱 마이그레이션 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: 5279ab9b-71d9-4be5-81f6-a1f24b06f5fb
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 8d4bc5d8e8a24483c30ac813d3253626e58dd353
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 86bc76b9b71c7b73a8d299aab41cb6e2eb37680d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791750"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686660"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>UWP(유니버설 Windows 플랫폼)로 앱 마이그레이션
 필요한 경우 Windows 스토어 8.1 앱, Windows Phone 8.1 앱 또는 Visual Studio 2015 RC로 만든 유니버설 Windows 앱에 대한 기존 프로젝트 파일을 수동으로 변경하면 Visual Studio 2015 RTM과 함께 사용할 수 있습니다. Windows 앱 프로젝트 및 Windows Phone 프로젝트를 둘 다 포함하는 Windows 8.1 유니버설 앱이 있는 경우 각 프로젝트를 마이그레이션하는 단계를 따라야 합니다.  
@@ -34,19 +29,19 @@ ms.locfileid: "51791750"
   
 - [Visual Studio 2015 RC로 만든 유니버설 Windows 앱의 기존 단위 테스트 프로젝트에 필요한 변경 내용](#MigrateUnitTest)  
   
-  이러한 모든 변경 내용을 적용하지 않으려면 새 유니버설 Windows 프로젝트에 [기존 앱을 포팅](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) 하는 방법을 알아보세요.  
+  이러한 모든 변경 내용을 적용하지 않으려면 새 유니버설 Windows 프로젝트에 [기존 앱을 포팅](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) 하는 방법을 알아보세요.  
   
-##  <a name="MigrateCSharp"></a> 유니버설 Windows 플랫폼을 사용 하려면 C# /VB Windows 스토어 8.1 또는 Windows Phone 8.1 앱 마이그레이션  
+## <a name="MigrateCSharp"></a> 유니버설 Windows 플랫폼을 사용 하려면 C# /VB Windows 스토어 8.1 또는 Windows Phone 8.1 앱 마이그레이션  
   
 #### <a name="migrate-your-cvb-project-files"></a>C#/VB 프로젝트 파일 마이그레이션  
   
-1.  설치한 유니버설 Windows 플랫폼을 찾으려면 **\Program Files (x86)\Windows Kits\10\Platforms\UAP**폴더를 엽니다. 이 폴더는 설치된 각 유니버설 Windows 플랫폼에 대한 폴더 목록을 포함합니다. 폴더 이름은 설치한 유니버설 Windows 플랫폼 버전입니다. 예를 들어 이 Windows 10 디바이스에는 버전 10.0.10240.0의 유니버설 Windows 플랫폼이 설치되어 있습니다.  
+1. 설치한 유니버설 Windows 플랫폼을 찾으려면 **\Program Files (x86)\Windows Kits\10\Platforms\UAP**폴더를 엽니다. 이 폴더는 설치된 각 유니버설 Windows 플랫폼에 대한 폴더 목록을 포함합니다. 폴더 이름은 설치한 유니버설 Windows 플랫폼 버전입니다. 예를 들어 이 Windows 10 디바이스에는 버전 10.0.10240.0의 유니버설 Windows 플랫폼이 설치되어 있습니다.  
   
      ![설치 된 버전을 보려면 폴더를 엽니다](../misc/media/uap-uwpversions.png "UAP_UWPVersions")  
   
      유니버설 Windows 플랫폼 버전을 두 개 이상 설치할 수 있습니다. 최신 버전을 앱에 사용하는 것이 좋습니다.  
   
-2.  파일 탐색기를 사용하여 UWP 프로젝트가 저장되어 있는 폴더로 이동합니다. 이 폴더에 .json 파일을 만듭니다. 파일의 이름을 project.json으로 지정하고 이 파일에 다음 콘텐츠를 추가합니다.  
+2. 파일 탐색기를 사용하여 UWP 프로젝트가 저장되어 있는 폴더로 이동합니다. 이 폴더에 .json 파일을 만듭니다. 파일의 이름을 project.json으로 지정하고 이 파일에 다음 콘텐츠를 추가합니다.  
   
     ```json  
     {  
@@ -71,7 +66,7 @@ ms.locfileid: "51791750"
   
     ```  
   
-3.  다음과 같은 내용으로 default.rd.xml이라는 파일을 만듭니다. VB 프로젝트가 있는 경우 프로젝트에 대한 My Project 디렉터리에 이 파일을 추가합니다. C# 프로젝트가 있는 경우 프로젝트에 대한 Properties 디렉터리에 이 파일을 추가합니다.  
+3. 다음과 같은 내용으로 default.rd.xml이라는 파일을 만듭니다. VB 프로젝트가 있는 경우 프로젝트에 대한 My Project 디렉터리에 이 파일을 추가합니다. C# 프로젝트가 있는 경우 프로젝트에 대한 Properties 디렉터리에 이 파일을 추가합니다.  
   
     ```xml  
     <?xml version="1.0"?>  
@@ -83,23 +78,23 @@ ms.locfileid: "51791750"
     </Application></Directives>  
     ```  
   
-4.  Visual Studio에서 기존 Windows 스토어 8.1 앱 또는 Windows Phone 8.1 앱을 포함하는 솔루션을 엽니다.  
+4. Visual Studio에서 기존 Windows 스토어 8.1 앱 또는 Windows Phone 8.1 앱을 포함하는 솔루션을 엽니다.  
   
-5.  솔루션 탐색기에서 앱에 대한 기존 프로젝트를 마우스 오른쪽 단추로 클릭하고 **프로젝트 언로드**를 선택합니다. 프로젝트가 언로드된 후 프로젝트 파일을 다시 마우스 오른쪽 단추로 클릭하고 .csproj 또는 .vbproj 파일을 편집하도록 선택합니다.  
+5. 솔루션 탐색기에서 앱에 대한 기존 프로젝트를 마우스 오른쪽 단추로 클릭하고 **프로젝트 언로드**를 선택합니다. 프로젝트가 언로드된 후 프로젝트 파일을 다시 마우스 오른쪽 단추로 클릭하고 .csproj 또는 .vbproj 파일을 편집하도록 선택합니다.  
   
      ![프로젝트를 마우스 오른쪽 단추로 클릭 하 고 편집을 선택 합니다](../misc/media/uap-editproject.png "UAP_EditProject")  
   
-6.  찾을 합니다 \<PropertyGroup > 포함 하는 요소는 \<TargetPlatformVersion > 값이 8.1 인 요소입니다. 이 다음 단계를 수행 \<PropertyGroup > 요소:  
+6. 찾을 합니다 \<PropertyGroup > 포함 하는 요소는 \<TargetPlatformVersion > 값이 8.1 인 요소입니다. 이 다음 단계를 수행 \<PropertyGroup > 요소:  
   
-    1.  값을 설정 합니다 \<플랫폼 > 요소를: **x86**합니다.  
+    1. 값을 설정 합니다 \<플랫폼 > 요소를: **x86**합니다.  
   
-    2.  추가 된 \<TargetPlatformIdentifier > 요소 및 해당 값을 설정: **UAP**.  
+    2. 추가 \<TargetPlatformIdentifier > 요소 및 해당 값을 설정 합니다. **UAP**.  
   
-    3.  기존 값을 변경 합니다 \<TargetPlatformVersion > 요소를 설치한 유니버설 Windows 플랫폼 버전 값입니다. 추가할 수도 \<TargetPlatformMinVersion > 요소 동일한 값을 지정 합니다.  
+    3. 기존 값을 변경 합니다 \<TargetPlatformVersion > 요소를 설치한 유니버설 Windows 플랫폼 버전 값입니다. 추가할 수도 \<TargetPlatformMinVersion > 요소 동일한 값을 지정 합니다.  
   
-    4.  값을 변경 합니다 \<MinimumVisualStudioVersion > 요소를: **14**합니다.  
+    4. 값을 변경 합니다 \<MinimumVisualStudioVersion > 요소입니다. **14**.  
   
-    5.  대체는 \<ProjectTypeGuids > 아래와 같이 요소:  
+    5. 대체는 \<ProjectTypeGuids > 아래와 같이 요소:  
   
          C#의 경우:  
   
@@ -113,9 +108,9 @@ ms.locfileid: "51791750"
         <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>  
         ```  
   
-    6.  추가 \<EnableDotNetNativeCompatibleProfile > 요소 및 해당 값을 설정: **true**합니다.  
+    6. 추가 \<EnableDotNetNativeCompatibleProfile > 요소 및 해당 값을 설정: **true**합니다.  
   
-    7.  유니버설 Windows 앱의 기본 자산 배율은 200입니다. 프로젝트가 200으로 배율 조정 되지 자산에 포함 된 경우 추가 해야 합니다는 \<UapDefaultAssetScale >이 PropertyGroup에 해당 자산의 배율 값을 가진 요소입니다. [자산 및 배율](http://msdn.microsoft.com/library/jj679352.aspx)에 대해 자세히 알아보세요.  
+    7. 유니버설 Windows 앱의 기본 자산 배율은 200입니다. 프로젝트가 200으로 배율 조정 되지 자산에 포함 된 경우 추가 해야 합니다는 \<UapDefaultAssetScale >이 PropertyGroup에 해당 자산의 배율 값을 가진 요소입니다. [자산 및 배율](https://msdn.microsoft.com/library/jj679352.aspx)에 대해 자세히 알아보세요.  
   
          이제 프로그램 \<PropertyGroup > 요소는이 예제와 비슷하게 표시 됩니다.  
   
@@ -134,7 +129,7 @@ ms.locfileid: "51791750"
         </PropertyGroup>  
         ```  
   
-7.  현재 사용 중인 Visual Studio 버전을 반영하도록 12.0의 모든 인스턴스를 14.0으로 바꿉니다. 다음 인스턴스와 같습니다.  
+7. 현재 사용 중인 Visual Studio 버전을 반영하도록 12.0의 모든 인스턴스를 14.0으로 바꿉니다. 다음 인스턴스와 같습니다.  
   
     ```xml  
     <Project Tools Version="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -145,7 +140,7 @@ ms.locfileid: "51791750"
         <VisualStudioVersion>14.0</VisualStudioVersion>  
     ```  
   
-8.  찾을 \<PropertyGroup > Condition 특성의 일부로 AnyCPU 플랫폼에 대해 구성 된 요소입니다. 이러한 요소와 해당 자식을 모두 제거합니다. Visual Studio 2015에서는 Windows 10 앱에 대해 AnyCPU가 지원되지 않습니다. 예를 들어 제거 해야 \<PropertyGroup >이 다음과 같은 요소:  
+8. 찾을 \<PropertyGroup > Condition 특성의 일부로 AnyCPU 플랫폼에 대해 구성 된 요소입니다. 이러한 요소와 해당 자식을 모두 제거합니다. Visual Studio 2015에서는 Windows 10 앱에 대해 AnyCPU가 지원되지 않습니다. 예를 들어 제거 해야 \<PropertyGroup >이 다음과 같은 요소:  
   
     ```xml  
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">  
@@ -251,35 +246,35 @@ ms.locfileid: "51791750"
   
      이제 Windows 스토어 8.1 또는 Windows Phone 8.1 프로젝트에 대해 [패키지 매니페스트 파일을 업데이트](#PackageManifest) 하는 단계를 수행해야 합니다.  
   
-##  <a name="MigrateCPlusPlus"></a> 유니버설 Windows 플랫폼을 사용 하려면 c + + Windows 스토어 8.1 또는 Windows Phone 8.1 앱을 마이그레이션하십시오.  
+## <a name="MigrateCPlusPlus"></a> 마이그레이션에 C++ 유니버설 Windows 플랫폼을 사용 하려면 Windows 스토어 8.1 또는 Windows Phone 8.1 앱  
   
 #### <a name="migrate-your-c-project-files"></a>C++ 프로젝트 파일 마이그레이션  
   
-1.  설치한 유니버설 Windows 플랫폼을 찾으려면 **\Program Files (x86)\Windows Kits\10\Platforms\UAP**폴더를 엽니다. 이 폴더는 설치된 각 유니버설 Windows 플랫폼에 대한 폴더 목록을 포함합니다. 폴더 이름은 설치한 유니버설 Windows 플랫폼 버전입니다. 예를 들어 이 Windows 10 디바이스에는 버전 10.0.10240.0의 유니버설 Windows 플랫폼이 설치되어 있습니다.  
+1. 설치한 유니버설 Windows 플랫폼을 찾으려면 **\Program Files (x86)\Windows Kits\10\Platforms\UAP**폴더를 엽니다. 이 폴더는 설치된 각 유니버설 Windows 플랫폼에 대한 폴더 목록을 포함합니다. 폴더 이름은 설치한 유니버설 Windows 플랫폼 버전입니다. 예를 들어 이 Windows 10 디바이스에는 버전 10.0.10240.0의 유니버설 Windows 플랫폼이 설치되어 있습니다.  
   
      ![설치 된 버전을 보려면 폴더를 엽니다](../misc/media/uap-uwpversions.png "UAP_UWPVersions")  
   
      유니버설 Windows 플랫폼 버전을 두 개 이상 설치할 수 있습니다. 최신 버전을 앱에 사용하는 것이 좋습니다.  
   
-2.  Visual Studio에서 기존 C++ Windows 스토어 8.1 앱 또는 Windows Phone 8.1 앱을 포함하는 솔루션을 엽니다.  
+2. Visual Studio에서 기존 C++ Windows 스토어 8.1 앱 또는 Windows Phone 8.1 앱을 포함하는 솔루션을 엽니다.  
   
      솔루션 탐색기에서 기존 프로젝트를 마우스 오른쪽 단추로 클릭하고 **프로젝트 언로드**를 선택합니다. 프로젝트가 언로드된 후 프로젝트 파일을 다시 마우스 오른쪽 단추로 클릭하고 .vcxproj 파일을 편집하도록 선택합니다.  
   
      ![오른쪽&#45;프로젝트 파일을 편집 하기로](../misc/media/uap-editcplusproject.png "UAP_EditCPlusProject")  
   
-3.  찾을 합니다 \<PropertyGroup > 포함 하는 요소는 \<ApplicationTypeRevision > 값이 8.1 인 요소입니다. 이 다음 단계를 수행 \<PropertyGroup > 요소:  
+3. 찾을 합니다 \<PropertyGroup > 포함 하는 요소는 \<ApplicationTypeRevision > 값이 8.1 인 요소입니다. 이 다음 단계를 수행 \<PropertyGroup > 요소:  
   
-    1.  추가 된 \<WindowsTargetPlatformVersion > 요소 및 \<WindowsTargetPlatformMinVersion > 요소 설치한 유니버설 Windows 플랫폼 버전 값을 부여 하 고 합니다.  
+    1. 추가 된 \<WindowsTargetPlatformVersion > 요소 및 \<WindowsTargetPlatformMinVersion > 요소 설치한 유니버설 Windows 플랫폼 버전 값을 부여 하 고 합니다.  
   
-    2.  ApplicationTypeRevision 요소의 값을 8.1에서 10.0으로 업데이트합니다.  
+    2. ApplicationTypeRevision 요소의 값을 8.1에서 10.0으로 업데이트합니다.  
   
-    3.  값을 변경 합니다 \<MinimumVisualStudioVersion > 요소를: 14입니다.  
+    3. 값을 변경 합니다 \<MinimumVisualStudioVersion > 요소입니다. 14.  
   
-    4.  추가 \<EnableDotNetNativeCompatibleProfile > 요소 및 해당 값을 설정: true.  
+    4. 추가 \<EnableDotNetNativeCompatibleProfile > 요소 및 해당 값을 설정: true.  
   
-    5.  유니버설 Windows 앱의 기본 자산 배율은 200입니다. 프로젝트가 200으로 배율 조정 되지 자산에 포함 된 경우 추가 해야 합니다는 \<UapDefaultAssetScale >이 PropertyGroup에 해당 자산의 배율 값을 가진 요소입니다. [자산 및 배율](http://msdn.microsoft.com/library/jj679352.aspx)에 대해 자세히 알아보세요.  
+    5. 유니버설 Windows 앱의 기본 자산 배율은 200입니다. 프로젝트가 200으로 배율 조정 되지 자산에 포함 된 경우 추가 해야 합니다는 \<UapDefaultAssetScale >이 PropertyGroup에 해당 자산의 배율 값을 가진 요소입니다. [자산 및 배율](https://msdn.microsoft.com/library/jj679352.aspx)에 대해 자세히 알아보세요.  
   
-    6.  Windows Phone 대 한 프로젝트에만 값을 변경 \<ApplicationType > Windows 스토어에 Windows Phone.  
+    6. Windows Phone 대 한 프로젝트에만 값을 변경 \<ApplicationType > Windows 스토어에 Windows Phone.  
   
          이제 프로그램 \<PropertyGroup > 요소는이 예제와 비슷하게 표시 됩니다.  
   
@@ -297,7 +292,7 @@ ms.locfileid: "51791750"
         </PropertyGroup>  
         ```  
   
-4.  모든 인스턴스는 \<PlatformToolset > 요소를 값 v140 합니다. 예를 들어:  
+4. 모든 인스턴스는 \<PlatformToolset > 요소를 값 v140 합니다. 예를 들어:  
   
     ```xml  
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">  
@@ -309,7 +304,7 @@ ms.locfileid: "51791750"
       </PropertyGroup>  
     ```  
   
-5.  각 남은 \<PropertyGroup > 요소, 요소는 릴리스 구성 사용 하 여 조건 특성이 있는지 확인 합니다. 하지만 없는 경우는 \<UseDotNetNativeToolchain > 요소를 하나를 추가 합니다. 값을 설정 합니다 \<UseDotNetNativeToolchain > 요소를 다음과 같이 true:  
+5. 각 남은 \<PropertyGroup > 요소, 요소는 릴리스 구성 사용 하 여 조건 특성이 있는지 확인 합니다. 하지만 없는 경우는 \<UseDotNetNativeToolchain > 요소를 하나를 추가 합니다. 값을 설정 합니다 \<UseDotNetNativeToolchain > 요소를 다음과 같이 true:  
   
     ```xml  
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|X64'" Label="Configuration">  
@@ -322,13 +317,13 @@ ms.locfileid: "51791750"
   
     ```  
   
-6.  변경 내용을 저장합니다. 프로젝트 파일을 닫습니다.  
+6. 변경 내용을 저장합니다. 프로젝트 파일을 닫습니다.  
   
-7.  솔루션 탐색기에서 프로젝트 파일을 마우스 오른쪽 단추로 클릭하고 상황에 맞는 메뉴에서 프로젝트 다시 로드를 선택합니다. 프로젝트의 모든 파일이 솔루션 탐색기에 표시됩니다.  
+7. 솔루션 탐색기에서 프로젝트 파일을 마우스 오른쪽 단추로 클릭하고 상황에 맞는 메뉴에서 프로젝트 다시 로드를 선택합니다. 프로젝트의 모든 파일이 솔루션 탐색기에 표시됩니다.  
   
      이제 Windows 스토어 8.1 또는 Windows Phone 8.1 프로젝트에 대해 [패키지 매니페스트 파일을 업데이트](#PackageManifest) 하는 단계를 수행해야 합니다.  
   
-##  <a name="PackageManifest"></a> 모든 Windows 스토어 8.1 또는 Windows Phone 8.1 프로젝트에 대 한 패키지 매니페스트 파일 업데이트  
+## <a name="PackageManifest"></a> 모든 Windows 스토어 8.1 또는 Windows Phone 8.1 프로젝트에 대 한 패키지 매니페스트 파일 업데이트  
  솔루션의 각 프로젝트에 대한 패키지 매니페스트 파일을 업데이트해야 합니다.  
   
 #### <a name="update-your-package-manifest-file"></a>패키지 매니페스트 파일 업데이트  
@@ -337,7 +332,7 @@ ms.locfileid: "51791750"
   
 2. 업데이트 해야 합니다 \<패키지 > 기존 프로젝트 형식에 따라 새 스키마를 사용 하 여 요소입니다. 먼저 Windows 스토어 또는 Windows Phone 프로젝트가 있는지 여부에 따라 아래 스키마를 제거합니다.  
   
-    **Windows 스토어 프로젝트의 경우 OLD:** 여 \<패키지 > 요소는이 다음과 비슷하게 표시 됩니다.  
+    **Windows 스토어 프로젝트에 대 한 이전:** 프로그램 \<패키지 > 요소가이 다음과 비슷하게 표시 됩니다.  
   
    ```xml  
    <Package  
@@ -346,7 +341,7 @@ ms.locfileid: "51791750"
   
    ```  
   
-    **Windows Phone 프로젝트의 경우 OLD:** 여 \<패키지 > 요소는이 다음과 비슷하게 표시 됩니다.  
+    **Windows Phone 프로젝트에 대 한 이전:** 프로그램 \<패키지 > 요소가이 다음과 비슷하게 표시 됩니다.  
   
    ```xml  
    <Package  
@@ -356,7 +351,7 @@ ms.locfileid: "51791750"
    xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">  
    ```  
   
-    **유니버설 Windows 플랫폼의 새로운 기능:** 아래 스키마를 추가 하면 \<패키지 > 요소입니다. 방금 제거한 스키마에 대한 요소에서 연결된 네임스페이스 식별자 접두사를 모두 제거합니다. IgnorableNamespaces 속성을 uap mp로 업데이트합니다. 새 \<패키지 > 요소는이 다음과 비슷하게 표시 됩니다.  
+    **유니버설 Windows 플랫폼에 대 한 새:** 아래 스키마를 추가 하면 \<패키지 > 요소입니다. 방금 제거한 스키마에 대한 요소에서 연결된 네임스페이스 식별자 접두사를 모두 제거합니다. IgnorableNamespaces 속성을 uap mp로 업데이트합니다. 새 \<패키지 > 요소는이 다음과 비슷하게 표시 됩니다.  
   
    ```xml  
    <Package  
@@ -367,7 +362,7 @@ ms.locfileid: "51791750"
   
    ```  
   
-3. 추가 된 \<종속성 > 자식 요소를는 \<패키지 > 요소입니다. 다음 추가 \<TargetDeviceFamily > 자식 요소를이 \<종속성 > Name, MinVersion 및 MaxVersionTested 특성을 가진 요소입니다. Name 특성에 Windows.Universal 값을 지정합니다. MinVersion 및 MaxVersionTested에 설치한 유니버설 Windows 플랫폼 버전 값을 지정합니다. 이 요소는 다음과 유사하게 표시됩니다.  
+3. 추가 된 \<종속성 > 자식 요소를는 \<패키지 > 요소입니다. 다음 추가 \<TargetDeviceFamily > 자식 요소를이 \<종속성 > Name, MinVersion 및 MaxVersionTested 특성을 가진 요소입니다. Name 특성 값을 제공 합니다. Windows.Universal. MinVersion 및 MaxVersionTested에 설치한 유니버설 Windows 플랫폼 버전 값을 지정합니다. 이 요소는 다음과 유사하게 표시됩니다.  
   
    ```xml  
    <Dependencies>  
@@ -375,7 +370,7 @@ ms.locfileid: "51791750"
    </Dependencies>  
    ```  
   
-4. **Windows 저장소만:** 에 추가 해야를 \<mp:PhoneIdentity > 자식 요소를는 \<패키지 > 요소입니다. PhoneProductId 특성 및 PhonePublisherId 특성을 추가합니다. PhoneProductId를 같은 이름 특성 값을 설정 합니다 \<Identity > 요소입니다. PhonePublishedId 값을 00000000-0000-0000-0000-000000000000으로 설정합니다. 다음과 같습니다.  
+4. **Windows 저장소에 해당:** 추가 해야는 \<mp:PhoneIdentity > 자식 요소는 \<패키지 > 요소입니다. PhoneProductId 특성 및 PhonePublisherId 특성을 추가합니다. PhoneProductId를 같은 이름 특성 값을 설정 합니다 \<Identity > 요소입니다. PhonePublishedId 값을 설정 합니다. 00000000-0000-0000-0000-000000000000. 다음과 같습니다.  
   
    ```xml  
    <Identity Name="aa3815a1-2d97-4c71-8c99-578135b28cd8" Publisher="CN=xxxxxxxx" Version="1.0.0.0" />   
@@ -384,7 +379,7 @@ ms.locfileid: "51791750"
   
 5. 찾기는 \<필수 구성 요소 > 요소가이 요소와 해당 자식 요소를 삭제 합니다.  
   
-6. 추가 된 **uap** 다음 네임 스페이스 \<리소스 > 요소: Scale, DXFeatureLevel. 예를 들어:  
+6. 추가 된 **uap** 네임 스페이스 다음과 \<리소스 > 요소: Scale, DXFeatureLevel입니다. 예를 들어:  
   
    ```xml  
    <Resources>  
@@ -419,7 +414,7 @@ ms.locfileid: "51791750"
   
    ```  
   
-    **Windows 스토어만 해당:** 타일 크기 이름이 변경되었습니다. 특성을 변경 합니다 \<VisualElements > 새 맞게 요소 타일 크기를 수렴 합니다. 70x70은 71x71이 되고, 30x30은 44x44가 됩니다.  
+    **Windows 스토어만 해당:** 타일 크기 이름이 변경 되었습니다. 특성을 변경 합니다 \<VisualElements > 새 맞게 요소 타일 크기를 수렴 합니다. 70x70은 71x71이 되고, 30x30은 44x44가 됩니다.  
   
     **OLD:** 타일 크기 이름  
   
@@ -487,7 +482,7 @@ ms.locfileid: "51791750"
   
 12. 프레임워크 종속성을 변경합니다. 모든 게시자 이름을 추가할 \<PackageDependency > 요소에 지정 되어 있지 않은 경우 MinVersion을 지정 합니다.  
   
-     **이전:** \<PackageDependency > 요소  
+     **OLD:** \<PackageDependency > 요소  
   
     ```xml  
     <Dependencies>  
@@ -496,7 +491,7 @@ ms.locfileid: "51791750"
   
     ```  
   
-     **신규:** \<PackageDependency > 요소  
+     **새로운:** \<PackageDependency > 요소  
   
     ```xml  
     <Dependencies>  
@@ -512,7 +507,7 @@ ms.locfileid: "51791750"
   
 13. gattCharacteristicNotification 및 rfcommConnection 백그라운드 형식 작업을 Bluetooth 형식 작업으로 바꿉니다. 예를 들어:  
   
-     **이전:**  
+     **OLD:**  
   
     ```xml  
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">  
@@ -523,7 +518,7 @@ ms.locfileid: "51791750"
     </Extension>  
     ```  
   
-     **NEW:** Bluetooth 형식 작업을 포함합니다.  
+     **새로운:** Bluetooth 형식 작업입니다.  
   
     ```xml  
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">  
@@ -535,7 +530,7 @@ ms.locfileid: "51791750"
   
 14. Bluetooth 디바이스 기능 bluetooth.rfcomm 및 bluetooth.genericAttributeProfile을 제네릭 Bluetooth 기능으로 바꿉니다. 예를 들어:  
   
-     **이전:**  
+     **OLD:**  
   
     ```xml  
     <Capabilities>  
@@ -552,7 +547,7 @@ ms.locfileid: "51791750"
     </Capabilities>  
     ```  
   
-     **NEW:** 제네릭 Bluetooth 기능으로 대체되었습니다.  
+     **새로운:** 제네릭 Bluetooth 기능으로 대체 합니다.  
   
     ```xml  
     <Capabilities>  
@@ -590,22 +585,22 @@ ms.locfileid: "51791750"
   
 17. 솔루션을 다시 열려면 먼저 일부 숨겨진 파일을 제거해야 합니다.  
   
-    1.  파일 탐색기를 열고 도구 모음에서 **보기** 를 클릭한 다음 **숨겨진 항목** 및 **파일 이름 확장명**을 선택합니다. 컴퓨터에이 폴더를 엽니다. \<솔루션의 위치에 대 한 경로 >\\.vs\\\v14 {Project Name}. 파일 확장명이 .suo인 파일이 있으면 삭제합니다.  
+    1. 파일 탐색기를 열고 도구 모음에서 **보기** 를 클릭한 다음 **숨겨진 항목** 및 **파일 이름 확장명**을 선택합니다. 컴퓨터에이 폴더를 엽니다. \<솔루션의 위치에 대 한 경로 >\\.vs\\\v14 {Project Name}. 파일 확장명이 .suo인 파일이 있으면 삭제합니다.  
   
-    2.  이제 솔루션이 있는 폴더로 돌아갑니다. 솔루션에 있는 프로젝트에 대한 폴더를 모두 엽니다. 이러한 프로젝트 폴더 내에서 . csproj.user 또는 . vbproj.user 확장명을 가진 파일을 삭제합니다.  
+    2. 이제 솔루션이 있는 폴더로 돌아갑니다. 솔루션에 있는 프로젝트에 대한 폴더를 모두 엽니다. 이러한 프로젝트 폴더 내에서 . csproj.user 또는 . vbproj.user 확장명을 가진 파일을 삭제합니다.  
   
          이제 Visual Studio에서 솔루션을 다시 열 수 있습니다. 유니버설 Windows 플랫폼을 사용하여 앱을 코딩, 빌드 및 디버그할 준비가 되었습니다.  
   
          유니버설 Windows 플랫폼의 새로운 기능을 활용하기 위해 [코드를 조정](https://msdn.microsoft.com/library/windows/apps/dn954974.aspx) 하는 방법을 알아보세요.  
   
-##  <a name="PreviousVersions"></a> Visual Studio 2015 RC로 만든 기존 유니버설 Windows 앱에 필요한 변경 내용  
+## <a name="PreviousVersions"></a> Visual Studio 2015 RC로 만든 기존 유니버설 Windows 앱에 필요한 변경 내용  
  Visual Studio 2015 RC로 Windows 10 유니버설 앱을 만든 경우 최신 Visual Studio 2015 릴리스와 함께 설치된 유니버설 Windows 플랫폼 버전을 사용하도록 프로젝트 대상을 다시 지정해야 합니다. 이전 버전은 모두 지원되지 않습니다. 필요한 변경 내용은 앱을 만드는 데 사용한 언어에 따라 달라집니다.  
   
--   [C# /VB 앱](#RCUpdate10CSharp)  
+- [C# /VB 앱](#RCUpdate10CSharp)  
   
--   [C + + 앱](#RCUpdate10CPlusPlus)  
+- [C++앱](#RCUpdate10CPlusPlus)  
   
-###  <a name="RCUpdate10CSharp"></a> 최신 유니버설 Windows 플랫폼을 사용 하도록 C# /VB 프로젝트 업데이트  
+### <a name="RCUpdate10CSharp"></a> 최신 유니버설 Windows 플랫폼을 사용 하도록 C# /VB 프로젝트 업데이트  
  기존 앱에 대한 솔루션을 열면 앱을 업데이트해야 한다고 표시됩니다.  
   
  ![솔루션 탐색기에서 프로젝트를 볼](../misc/media/uwp-updaterequired.png "UWP_UpdateRequired")  
@@ -656,7 +651,7 @@ ms.locfileid: "51791750"
   
 4. 찾을 합니다 \<PropertyGroup > 포함 하는 요소는 \<TargetPlatformVersion > 및 \<TargetPlatformMinVersion > 요소입니다. 기존 값을 변경 합니다 \<TargetPlatformVersion > 및 \<TargetPlatformMinVersion > 요소를 설치한 유니버설 Windows 플랫폼의 동일한 버전 이어야 합니다.  
   
-    유니버설 Windows 앱의 기본 자산 배율은 200입니다. 추가 해야 Visual Studio 2015 RC 포함 된 자산에 배율이 100을 사용 하 여 만든 프로젝트는 \<UapDefaultAssetScale > 100이 PropertyGroup에 값을 가진 요소입니다. [자산 및 배율](http://msdn.microsoft.com/library/jj679352.aspx)에 대해 자세히 알아보세요.  
+    유니버설 Windows 앱의 기본 자산 배율은 200입니다. 추가 해야 Visual Studio 2015 RC 포함 된 자산에 배율이 100을 사용 하 여 만든 프로젝트는 \<UapDefaultAssetScale > 100이 PropertyGroup에 값을 가진 요소입니다. [자산 및 배율](https://msdn.microsoft.com/library/jj679352.aspx)에 대해 자세히 알아보세요.  
   
 5. UWP 확장 SDK(예: Windows Mobile SDK)에 참조를 추가한 경우 SDK 버전을 업데이트해야 합니다. 예를 들어 다음 \<SDKReference > 요소:  
   
@@ -676,7 +671,7 @@ ms.locfileid: "51791750"
   
    ```  
   
-6. 찾기는 \<대상 > 요소 값이 있는 이름 특성을 가진: EnsureNuGetPackageBuildImports 합니다. 이 요소와 이 요소의 모든 자식을 삭제합니다.  
+6. 찾기는 \<대상 > 요소 값이 있는 이름 특성을 가진: EnsureNuGetPackageBuildImports. 이 요소와 이 요소의 모든 자식을 삭제합니다.  
   
    ```xml  
    <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">  
@@ -736,13 +731,13 @@ ms.locfileid: "51791750"
   
 13. 프로젝트에서 Package.appxmanifest 파일을 엽니다.  
   
-    1.  찾기는 \<TargetDeviceFamily > 요소입니다. MinVersion 및 MaxVersionTested 특성을 설치한 유니버설 Windows 플랫폼 버전에 맞도록 변경합니다. 다음과 같습니다.  
+    1. 찾기는 \<TargetDeviceFamily > 요소입니다. MinVersion 및 MaxVersionTested 특성을 설치한 유니버설 Windows 플랫폼 버전에 맞도록 변경합니다. 다음과 같습니다.  
   
         ```xml  
         <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10240.0" />  
         ```  
   
-    2.  변경 내용을 저장합니다.  
+    2. 변경 내용을 저장합니다.  
   
 14. NuGet 관리자를 사용하여 이전 단계에서 삭제한 패키지를 추가합니다. Visual Studio 2015 RC와 Visual Studio 2015 RTM에서 Windows 10 프로젝트 형식의 중요한 한 가지 차이점은 RTM 형식이 [NuGet](http://docs.nuget.org/) 버전 3을 사용한다는 것입니다.  
   
@@ -750,23 +745,23 @@ ms.locfileid: "51791750"
   
     유니버설 Windows 앱에 대한 단위 테스트 프로젝트가 있는 경우 [이 단계](#MigrateUnitTest)를 따라야 합니다.  
   
-###  <a name="RCUpdate10CPlusPlus"></a> 최신 유니버설 Windows 플랫폼을 사용 하도록 c + + 프로젝트 업데이트  
+### <a name="RCUpdate10CPlusPlus"></a> 업데이트에 C++ 최신 유니버설 Windows 플랫폼을 사용 하는 프로젝트  
   
-1.  설치한 유니버설 Windows 플랫폼을 찾으려면 **\Program Files (x86)\Windows Kits\10\Platforms\UAP**폴더를 엽니다. 이 폴더는 설치된 각 유니버설 Windows 플랫폼에 대한 폴더 목록을 포함합니다. 폴더 이름은 설치한 유니버설 Windows 플랫폼 버전입니다. 예를 들어 이 Windows 10 디바이스에는 버전 10.0.10240.0의 유니버설 Windows 플랫폼이 설치되어 있습니다.  
+1. 설치한 유니버설 Windows 플랫폼을 찾으려면 **\Program Files (x86)\Windows Kits\10\Platforms\UAP**폴더를 엽니다. 이 폴더는 설치된 각 유니버설 Windows 플랫폼에 대한 폴더 목록을 포함합니다. 폴더 이름은 설치한 유니버설 Windows 플랫폼 버전입니다. 예를 들어 이 Windows 10 디바이스에는 버전 10.0.10240.0의 유니버설 Windows 플랫폼이 설치되어 있습니다.  
   
      ![설치 된 버전을 보려면 폴더를 엽니다](../misc/media/uap-uwpversions.png "UAP_UWPVersions")  
   
      유니버설 Windows 플랫폼 버전을 두 개 이상 설치할 수 있습니다. 최신 버전을 앱에 사용하는 것이 좋습니다.  
   
-2.  C++ Windows 유니버설 앱을 포함하는 솔루션을 엽니다. 프로젝트 .vcxproj 파일을 마우스 오른쪽 단추로 클릭하고 프로젝트 파일을 언로드하도록 선택합니다. 프로젝트가 언로드된 후 프로젝트 파일을 다시 마우스 오른쪽 단추로 클릭하고 편집하도록 선택합니다.  
+2. C++ Windows 유니버설 앱을 포함하는 솔루션을 엽니다. 프로젝트 .vcxproj 파일을 마우스 오른쪽 단추로 클릭하고 프로젝트 파일을 언로드하도록 선택합니다. 프로젝트가 언로드된 후 프로젝트 파일을 다시 마우스 오른쪽 단추로 클릭하고 편집하도록 선택합니다.  
   
      ![프로젝트를 업로드 한 다음 프로젝트 파일을 편집](../misc/media/uap-editearliercplus.png "UAP_EditEarlierCPlus")  
   
-3.  찾을 \<PropertyGroup > Condition 특성을 포함 하지 마십시오 있지만 포함 하는 요소는 \<ApplicationTypeRevision > 요소입니다. ApplicationTypeRevision 값을 8.2에서 10.0으로 업데이트합니다. 추가 된 \<WindowsTargetPlatformVersion > 및 \<WindowsTargetPlatformMinVersion > 요소 설치한 유니버설 Windows 플랫폼 버전 값으로 해당 값을 설정 합니다.  
+3. 찾을 \<PropertyGroup > Condition 특성을 포함 하지 마십시오 있지만 포함 하는 요소는 \<ApplicationTypeRevision > 요소입니다. ApplicationTypeRevision 값을 8.2에서 10.0으로 업데이트합니다. 추가 된 \<WindowsTargetPlatformVersion > 및 \<WindowsTargetPlatformMinVersion > 요소 설치한 유니버설 Windows 플랫폼 버전 값으로 해당 값을 설정 합니다.  
   
      추가 \<EnableDotNetNativeCompatibleProfile > 요소 및 값 요소 아직 없는 경우 true로 설정 합니다.  
   
-     유니버설 Windows 앱의 기본 자산 배율은 200입니다. 추가 해야 Visual Studio 2015 RC 포함 된 자산에 배율이 100을 사용 하 여 만든 프로젝트는 \<UapDefaultAssetScale > 100이 PropertyGroup에 값을 가진 요소입니다. [자산 및 배율](http://msdn.microsoft.com/library/jj679352.aspx)에 대해 자세히 알아보세요.  
+     유니버설 Windows 앱의 기본 자산 배율은 200입니다. 추가 해야 Visual Studio 2015 RC 포함 된 자산에 배율이 100을 사용 하 여 만든 프로젝트는 \<UapDefaultAssetScale > 100이 PropertyGroup에 값을 가진 요소입니다. [자산 및 배율](https://msdn.microsoft.com/library/jj679352.aspx)에 대해 자세히 알아보세요.  
   
      따라서이 \<PropertyGroup > 요소가 이제 다음과 유사 하 게 됩니다.  
   
@@ -784,7 +779,7 @@ ms.locfileid: "51791750"
   
     ```  
   
-4.  각 남은 \<PropertyGroup > 요소, 요소는 릴리스 구성 사용 하 여 조건 특성이 있는지 확인 합니다. 하지만 없는 경우는 \<UseDotNetNativeToolchain > 요소를 하나를 추가 합니다. 값을 설정 합니다 \<UseDotNetNativeToolchain > 요소를 다음과 같이 true:  
+4. 각 남은 \<PropertyGroup > 요소, 요소는 릴리스 구성 사용 하 여 조건 특성이 있는지 확인 합니다. 하지만 없는 경우는 \<UseDotNetNativeToolchain > 요소를 하나를 추가 합니다. 값을 설정 합니다 \<UseDotNetNativeToolchain > 요소를 다음과 같이 true:  
   
     ```xml  
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">  
@@ -797,36 +792,36 @@ ms.locfileid: "51791750"
   
     ```  
   
-5.  업데이트 해야 합니다 \<EnableDotNetNativeCompatibleProfile > 요소 및 \<UseDotNetNativeToolchain > c + + 템플릿에서.NET 네이티브.NET 네이티브를 사용 하는 요소를 사용 하지 않습니다.  
+5. 업데이트 해야 합니다 \<EnableDotNetNativeCompatibleProfile > 요소 및 \<UseDotNetNativeToolchain > 요소를.NET 네이티브를.NET 네이티브 사용 가능 하지는 C++ 템플릿.  
   
      변경 내용을 저장합니다. 프로젝트 파일을 닫습니다.  
   
-6.  솔루션 탐색기에서 프로젝트 파일을 마우스 오른쪽 단추로 클릭하고 상황에 맞는 메뉴에서 프로젝트 다시 로드를 선택합니다. 프로젝트의 모든 파일이 솔루션 탐색기에 표시됩니다.  
+6. 솔루션 탐색기에서 프로젝트 파일을 마우스 오른쪽 단추로 클릭하고 상황에 맞는 메뉴에서 프로젝트 다시 로드를 선택합니다. 프로젝트의 모든 파일이 솔루션 탐색기에 표시됩니다.  
   
-7.  프로젝트에서 Package.appxmanifest 파일을 엽니다.  
+7. 프로젝트에서 Package.appxmanifest 파일을 엽니다.  
   
-    1.  찾기는 \<TargetDeviceFamily > 요소입니다. MinVersion 및 MaxVersionTested 특성을 설치한 유니버설 Windows 플랫폼 버전에 맞도록 변경합니다. 다음과 같습니다.  
+    1. 찾기는 \<TargetDeviceFamily > 요소입니다. MinVersion 및 MaxVersionTested 특성을 설치한 유니버설 Windows 플랫폼 버전에 맞도록 변경합니다. 다음과 같습니다.  
   
         ```xml  
         <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10240.0" />  
         ```  
   
-    2.  변경 내용을 저장합니다.  
+    2. 변경 내용을 저장합니다.  
   
          이제 앱을 코딩, 빌드 및 디버그할 수 있습니다.  
   
          유니버설 Windows 앱에 대한 단위 테스트 프로젝트가 있는 경우 [이 단계](#MigrateUnitTest)를 따라야 합니다.  
   
-##  <a name="MigrateUnitTest"></a> Visual Studio 2015 RC로 만든 유니버설 Windows 앱에 대 한 기존 단위 테스트 프로젝트에 필요한 변경 내용  
+## <a name="MigrateUnitTest"></a> Visual Studio 2015 RC로 만든 유니버설 Windows 앱에 대 한 기존 단위 테스트 프로젝트에 필요한 변경 내용  
  Visual Studio 2015 RC로 Windows 10 유니버설 앱에 대한 단위 테스트 프로젝트를 만든 경우 Visual Studio 2015의 최신 릴리스에서 이러한 테스트 프로젝트를 사용할 수 있도록 프로젝트 파일을 추가로 변경해야 합니다. 필요한 변경 내용은 앱을 만드는 데 사용한 언어에 따라 달라집니다.  
   
--   [C# /VB 앱](#UnitTestRCUpdate10CSharp)  
+- [C# /VB 앱](#UnitTestRCUpdate10CSharp)  
   
--   [C + + 앱](#UnitTestRCUpdate10CPlusPlus)  
+- [C++앱](#UnitTestRCUpdate10CPlusPlus)  
   
-###  <a name="UnitTestRCUpdate10CSharp"></a> C# /VB 단위 테스트 프로젝트를 업데이트 합니다.  
+### <a name="UnitTestRCUpdate10CSharp"></a> C# /VB 단위 테스트 프로젝트를 업데이트 합니다.  
   
-1. Visual Studio에서 C#/VB 단위 테스트 프로젝트를 포함하는 솔루션을 엽니다. 값을 변경 합니다 \<OuttputType > 요소를: AppContainerExe 합니다.  
+1. Visual Studio에서 C#/VB 단위 테스트 프로젝트를 포함하는 솔루션을 엽니다. 값을 변경 합니다 \<OuttputType > 요소입니다. AppContainerExe.  
   
    ```xml  
   
@@ -997,9 +992,9 @@ ms.locfileid: "51791750"
   
    이제 단위 테스트를 실행할 수 있습니다.  
   
-###  <a name="UnitTestRCUpdate10CPlusPlus"></a> 최신 유니버설 Windows 플랫폼을 사용 하도록 c + + 프로젝트 업데이트  
+### <a name="UnitTestRCUpdate10CPlusPlus"></a> 업데이트에 C++ 최신 유니버설 Windows 플랫폼을 사용 하는 프로젝트  
   
-1.  Visual Studio에서 C++ 단위 테스트 프로젝트를 포함하는 솔루션을 엽니다. 다음 요소를 제거합니다.  
+1. Visual Studio에서 C++ 단위 테스트 프로젝트를 포함하는 솔루션을 엽니다. 다음 요소를 제거합니다.  
   
     ```xml  
   
@@ -1010,7 +1005,7 @@ ms.locfileid: "51791750"
   
     ```  
   
-2.  다음을 추가 합니다 \<프로젝트 구성 >이 요소 아래의 요소 \<ItemGroup 레이블 = "ProjectConfigurations" > 있습니다 없는 경우이 파일에:  
+2. 다음을 추가 합니다 \<프로젝트 구성 >이 요소 아래의 요소 \<ItemGroup 레이블 = "ProjectConfigurations" > 있습니다 없는 경우이 파일에:  
   
     ```xml  
   
@@ -1025,7 +1020,7 @@ ms.locfileid: "51791750"
   
     ```  
   
-3.  다음 요소가 발생할 때마다  
+3. 다음 요소가 발생할 때마다  
   
     ```xml  
   
@@ -1041,7 +1036,7 @@ ms.locfileid: "51791750"
   
     ```  
   
-4.  이러한 추가 \<PropertyGroup > 요소가 아직 없는 파일의 경우:  
+4. 이러한 추가 \<PropertyGroup > 요소가 아직 없는 파일의 경우:  
   
     ```xml  
   
@@ -1060,7 +1055,7 @@ ms.locfileid: "51791750"
   
     ```  
   
-5.  다음 요소가 발생할 때마다  
+5. 다음 요소가 발생할 때마다  
   
     ```xml  
   
@@ -1075,7 +1070,7 @@ ms.locfileid: "51791750"
   
     ```  
   
-6.  다음 요소가 발생할 때마다  
+6. 다음 요소가 발생할 때마다  
   
     ```xml  
   
@@ -1091,7 +1086,7 @@ ms.locfileid: "51791750"
   
     ```  
   
-7.  이러한 추가 \<ItemDefinitionGroup > 이미 다른를 포함 하는 섹션의 요소 \<ItemDefinitionGroup > 요소:  
+7. 이러한 추가 \<ItemDefinitionGroup > 이미 다른를 포함 하는 섹션의 요소 \<ItemDefinitionGroup > 요소:  
   
     ```xml  
   
@@ -1118,7 +1113,7 @@ ms.locfileid: "51791750"
   
     ```  
   
-8.  다음을 삭제 \< ItemGroup > 요소:  
+8. 다음을 삭제 \< ItemGroup > 요소:  
   
     ```xml  
   

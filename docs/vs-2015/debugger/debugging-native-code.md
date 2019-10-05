@@ -1,14 +1,9 @@
 ---
 title: 네이티브 코드 디버깅 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -26,18 +21,18 @@ ms.assetid: d94eee90-7e0d-4cac-88c1-9831030daa5e
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a8c81efece10fe55dc1cf228a3d0c23e7f5a64af
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 61ee852f75737d85604fda106b15e61dc3634899
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196415"
 ---
 # <a name="debugging-native-code"></a>네이티브 코드 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 단원에서는 네이티브 응용 프로그램의 몇 가지 일반적인 디버깅 문제와 기술에 대해 설명합니다. 이 단원에서 설명하는 기술은 높은 수준의 기술입니다. Visual Studio 디버거를 사용 하는 방법은 참조 하세요 [디버거 로드맵](../debugger/debugger-basics.md)합니다.  
+이 단원에서는 네이티브 애플리케이션의 몇 가지 일반적인 디버깅 문제와 기술에 대해 설명합니다. 이 단원에서 설명하는 기술은 높은 수준의 기술입니다. Visual Studio 디버거를 사용 하는 방법은 참조 하세요 [디버거 로드맵](../debugger/debugger-basics.md)합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [방법: 최적화된 코드 디버그](../debugger/how-to-debug-optimized-code.md)  
@@ -62,7 +57,7 @@ ms.locfileid: "51730549"
  Visual C++ 프로그램의 디버깅에 대한 질문과 대답을 제공합니다.  
   
  [COM 및 ActiveX 디버깅](../debugger/com-and-activex-debugging.md)  
- COM 및 ActiveX 디버깅에 사용할 수 있는 도구와 COM 및 ActiveX 응용 프로그램 디버깅에 대한 정보를 제공합니다.  
+ COM 및 ActiveX 디버깅에 사용할 수 있는 도구와 COM 및 ActiveX 애플리케이션 디버깅에 대한 정보를 제공합니다.  
   
  [방법: 네이티브 DLL 디버그](../debugger/how-to-debug-native-dlls.md)  
  네이티브 코드에서 DLL 디버깅 설정 방법에 대해 설명합니다.  
@@ -70,8 +65,8 @@ ms.locfileid: "51730549"
  [방법: 삽입한 코드 디버그](../debugger/how-to-debug-injected-code.md)  
  특성을 사용하는 코드의 디버깅 방법에 대해 설명합니다. 여기에는 소스 주석을 표시하는 방법, 삽입한 코드를 보는 방법, 현재 실행 위치에서 디스어셈블리 코드를 보는 방법 등의 내용이 들어 있습니다.  
   
- [연습: 병렬 응용 프로그램 디버그](../debugger/walkthrough-debugging-a-parallel-application.md)  
- 사용 하는 방법에 설명 합니다 **병렬 작업** 및 **병렬 스택** 병렬 응용 프로그램을 디버깅 하는 windows 도구입니다.  
+ [연습: 병렬 애플리케이션 디버깅](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ **병렬 작업** 및 **병렬 스택** 도구 창을 사용하여 병렬 애플리케이션을 디버깅하는 방법을 설명합니다.  
   
 ## <a name="related-sections"></a>관련 단원  
  [Visual C++ 프로젝트 형식](../debugger/debugging-preparation-visual-cpp-project-types.md)  
@@ -83,6 +78,3 @@ ms.locfileid: "51730549"
 ## <a name="see-also"></a>참고 항목  
  [디버거 보안](../debugger/debugger-security.md)   
  [Visual Studio의 디버깅](../debugger/debugging-in-visual-studio.md)
-
-
-

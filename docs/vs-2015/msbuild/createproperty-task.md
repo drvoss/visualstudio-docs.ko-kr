@@ -1,14 +1,9 @@
 ---
 title: CreateProperty 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#CreateProperty
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: fbc31a88-62d4-43d2-b739-68ef3fac38f5
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3c18288e5088871703605da4915786486e2e864b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ea16950e47760e89204503413fd98811e781d059
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184051"
 ---
 # <a name="createproperty-task"></a>CreateProperty 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 전달된 값으로 속성을 채웁니다. 이를 통해 하나의 속성 또는 문자열에서 다른 속성 또는 문자열로 값을 복사할 수 있습니다.  
   
 ## <a name="attributes"></a>특성  
@@ -48,7 +42,7 @@ ms.locfileid: "49267659"
 ## <a name="remarks"></a>설명  
  이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)를 참조하세요.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  다음 예제는 `CreateProperty` 작업을 사용하여 `SourceFilename` 및 `SourceFileExtension` 속성 값의 조합을 사용하는 `NewFile` 속성을 만듭니다.  
   
 ```  
@@ -78,6 +72,3 @@ ms.locfileid: "49267659"
 ## <a name="see-also"></a>참고 항목  
  [작업 참조](../msbuild/msbuild-task-reference.md)   
  [작업](../msbuild/msbuild-tasks.md)
-
-
-

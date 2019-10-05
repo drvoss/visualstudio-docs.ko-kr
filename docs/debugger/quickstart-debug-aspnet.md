@@ -3,40 +3,42 @@ title: ASP.NET 디버그
 description: Visual Studio 디버거를 사용하여 ASP.NET 디버그
 ms.custom: mvc
 ms.date: 08/06/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
 ms.assetid: f4cea2e1-08dc-47ac-aba2-3b8c338e607f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 74671401b3e3eaeae5840110dfc37c926266f98a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 932c8331b7b706b783868a52e47afc5ead25ef9c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636989"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679252"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>빠른 시작: Visual Studio 디버거를 사용하여 ASP.NET 디버그
 
 Visual Studio 디버거는 앱을 디버그하도록 돕는 여러 가지 강력한 기능을 제공합니다. 이 항목에는 기본 기능 중 일부에 대해 알아보는 빠른 방법을 제공합니다.
 
-## <a name="create-a-new-project"></a>새 프로젝트 만들기 
+## <a name="create-a-new-project"></a>새 프로젝트 만들기
 
-1. Visual Studio에서 **파일 > 새 프로젝트**를 선택합니다.
+1. Visual Studio를 엽니다.
 
-1. **Visual C#** 에서 **웹**을 선택한 다음, 가운데 창에서 **ASP.NET Core 웹 애플리케이션**을 선택합니다.
+    ::: moniker range=">=vs-2019"
+    **Esc** 키를 눌러 시작 창을 닫습니다. **Ctrl + Q**를 입력하여 검색 상자를 열고 **asp.net**을 입력하고 **템플릿**을 선택한 다음, **새 ASP.NET Core 웹 애플리케이션 만들기**를 선택합니다. 표시되는 대화 상자에서 **만들기**를 선택합니다.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#** 아래에 **웹**을 선택한 다음, 가운데 창에서 **ASP.NET Core 웹 애플리케이션**을 선택합니다. **MyDbgApp**과 같은 이름을 입력하고 **확인**을 클릭합니다.
 
-1. **MyDbgApp**과 같은 이름을 입력하고 **확인**을 클릭합니다.
-
-1. 표시되는 대화 상자의 가운데 창에서 **웹 애플리케이션**을 선택한 다음, **확인**을 클릭합니다.
-
-     **웹 애플리케이션** 프로젝트 템플릿이 표시되지 않으면 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Studio 설치 관리자 열기** 링크를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. **ASP.NET 및 웹 개발** 워크로드를 선택한 후 **수정**을 선택합니다.
+    표시되는 대화 상자의 가운데 창에서 **웹 애플리케이션**을 선택한 다음, **확인**을 클릭합니다.
 
     ![웹 애플리케이션 선택](../debugger/media/dbg-qs-aspnet-choose-web-app.png)
+    ::: moniker-end
+
+    **ASP.NET Core 웹 애플리케이션** 프로젝트 템플릿이 표시되지 않는 경우 **도구** > **도구 및 기능 가져오기...** 로 이동하면 Visual Studio 설치 관리자가 열립니다. **ASP.NET 및 웹 개발** 워크로드를 선택한 후 **수정**을 선택합니다.
 
     Visual Studio가 프로젝트를 만듭니다.
 
@@ -95,7 +97,7 @@ Visual Studio 디버거는 앱을 디버그하도록 돕는 여러 가지 강력
 
 ## <a name="navigate-code"></a>코드 탐색
 
-디버거를 계속하도록 지시하는 다양한 명령이 있습니다. Visual Studio 2017의 새로운 유용한 코드 탐색 명령을 보여줍니다.
+디버거를 계속하도록 지시하는 다양한 명령이 있습니다. Visual Studio 2017부터 사용할 수 있는 유용한 코드 탐색 명령을 보여줍니다.
 
 중단점에서 일시 중지하는 동안 녹색의 **실행하려면 클릭** 단추 ![실행하려면 클릭](../debugger/media/dbg-tour-run-to-click.png)이 나타날 때까지 `return c2` 명령문을 마우스로 가리킨 다음, **실행하려면 클릭** 단추를 누릅니다.
 
@@ -103,7 +105,7 @@ Visual Studio 디버거는 앱을 디버그하도록 돕는 여러 가지 강력
 
 앱은 실행을 계속하고, 단추를 클릭한 코드 줄에서 일시 중지합니다.
 
-코드를 단계별로 실행하는 데 사용되는 일반적인 키보드 명령은 **F10** 및 **F11**을 포함합니다. 더 자세한 지침은 [초보자 가이드](../debugger/getting-started-with-the-debugger.md)를 참조하세요.
+코드를 단계별로 실행하는 데 사용되는 일반적인 키보드 명령은 **F10** 및 **F11**을 포함합니다. 자세한 지침은 [디버거 소개](../debugger/debugger-feature-tour.md)를 참조하세요.
 
 ## <a name="inspect-variables-in-a-datatip"></a>datatip에서 변수 검사
 
@@ -111,7 +113,7 @@ Visual Studio 디버거는 앱을 디버그하도록 돕는 여러 가지 강력
 
     ![datatip 보기](../debugger/media/dbg-qs-data-tip-aspnet.png)
 
-    datatip은 `c2` 변수의 현재 값을 보여주고 이를 통해 해당 속성을 검사할 수 있습니다. 디버깅할 때 예상하지 않은 값이 표시되는 경우 이전 또는 호출하는 코드 줄에 버그가 있을 가능성이 큽니다. 
+    datatip은 `c2` 변수의 현재 값을 보여주고 이를 통해 해당 속성을 검사할 수 있습니다. 디버깅할 때 예상하지 않은 값이 표시되는 경우 이전 또는 호출하는 코드 줄에 버그가 있을 가능성이 큽니다.
 
 2. datatip을 확장하여 `c2` 개체의 현재 속성 값을 확인합니다.
 
@@ -136,4 +138,4 @@ Visual Studio 디버거는 앱을 디버그하도록 돕는 여러 가지 강력
 이 자습서에서는 디버거를 시작하고, 코드를 단계별로 실행하며, 변수를 검사하는 방법을 알아보았습니다. 더 많은 정보에 대한 링크와 함께 디버거 기능에 대해 개략적으로 살펴보는 것이 좋습니다.
 
 > [!div class="nextstepaction"]
-> [디버거 기능 둘러보기](../debugger/debugger-feature-tour.md)
+> [디버거 소개](../debugger/debugger-feature-tour.md)

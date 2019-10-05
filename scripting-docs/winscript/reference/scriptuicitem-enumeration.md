@@ -2,7 +2,6 @@
 title: SCRIPTUICITEM 열거형 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,15 +11,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6620553bce810abcf1a51ac8592061ef017dd9bf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bd454780b4360daf844697ad92ab8a4e9da29317
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734043"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840137"
 ---
 # <a name="scriptuicitem-enumeration"></a>SCRIPTUICITEM 열거형
-UI 항목의 유형을 나타냅니다. 사용 되는 [iactivescriptsiteuicontrol:: Getuibehavior 메서드](../../winscript/reference/iactivescriptsiteuicontrol-getuibehavior-method.md)합니다.  
+UI 항목의 유형을 나타냅니다. 에 사용 된 [iactivescriptsiteuicontrol:: Getuibehavior 메서드](../../winscript/reference/iactivescriptsiteuicontrol-getuibehavior-method.md)합니다.  
   
 ## <a name="syntax"></a>구문  
   

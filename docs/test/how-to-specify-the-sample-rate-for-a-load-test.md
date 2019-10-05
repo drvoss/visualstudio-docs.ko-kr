@@ -7,15 +7,13 @@ helpviewer_keywords:
 ms.assetid: 51cbe7d6-5dfd-4842-bca3-f7f8a665dc84
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: b022b4648931bf0e403df589d37cb086fb2a9c2c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: c1e94bb6da2786b989208ea1104d509883bc0724
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053051"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970668"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>방법: 부하 테스트 실행 설정에 대한 샘플 주기 지정
 
@@ -38,19 +36,19 @@ ms.locfileid: "53053051"
 
 ## <a name="to-specify-performance-counter-sampling-rate-in-a-run-setting"></a>실행 설정에서 성능 카운터 샘플링 주기를 지정하려면
 
-1.  부하 테스트를 엽니다.
+1. 부하 테스트를 엽니다.
 
      **부하 테스트 편집기**가 나타납니다. 부하 테스트 트리가 표시됩니다.
 
-2.  부하 테스트 트리의 **실행 설정** 폴더에서 샘플링 주기를 지정할 실행 설정을 선택합니다.
+2. 부하 테스트 트리의 **실행 설정** 폴더에서 샘플링 주기를 지정할 실행 설정을 선택합니다.
 
-3.  **보기** 메뉴에서 **속성 창**을 선택합니다.
+3. **보기** 메뉴에서 **속성 창**을 선택합니다.
 
      부하 실행 설정의 범주와 속성이 **속성** 창에 표시됩니다.
 
-4.  **샘플링 주기** 속성에 부하 테스트 시 성능 카운터 데이터를 수집할 빈도를 나타내는 시간 값을 입력합니다.
+4. **샘플링 주기** 속성에 부하 테스트 시 성능 카운터 데이터를 수집할 빈도를 나타내는 시간 값을 입력합니다.
 
-5.  속성 변경을 마친 다음, **파일** 메뉴에서 **저장**을 선택합니다. 그러면 새 **샘플링 주기** 값을 사용하여 부하 테스트를 실행할 수 있습니다.
+5. 속성 변경을 마친 다음, **파일** 메뉴에서 **저장**을 선택합니다. 그러면 새 **샘플링 주기** 값을 사용하여 부하 테스트를 실행할 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 

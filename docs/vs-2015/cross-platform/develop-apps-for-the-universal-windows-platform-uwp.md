@@ -1,30 +1,24 @@
 ---
 title: UWP(유니버설 Windows 플랫폼)용 앱 개발 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 ms.assetid: eac59cb6-f12e-4a77-9953-6d62b164a643
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 24dfca5d4ac8432cbe659bb42ca54d0398c47c04
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MTE95
+ms.openlocfilehash: 8af5414b1c775a17421b87b9c18d58c34f544405
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766481"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698646"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>UWP(유니버설 Windows 플랫폼)용 앱 개발
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 유니버설 Windows 플랫폼과 단일 Windows 코어를 사용하여 휴대폰에서 데스크톱에 이르는 모든 Windows 10 디바이스에서 동일한 앱을 실행할 수 있습니다. Visual Studio 2015 및 유니버설 Windows 앱 개발 도구를 사용하여 이러한 유니버설 Windows 앱을 만듭니다.  
   
  ![유니버설 Windows 플랫폼](../cross-platform/media/uwp-coreextensions.png "UWP_CoreExtensions")  
@@ -37,7 +31,7 @@ ms.locfileid: "51766481"
   
  **유니버설 Windows 플랫폼이란 정확히 무엇인가요?**  
   
- 단순히 계약 및 버전 컬렉션입니다. 앱을 실행할 수 있는 대상을 지정하는 데 사용됩니다. 더 이상 운영 체제를 대상으로 지정하지 않습니다. 이제 하나 이상의 디바이스 제품군을 앱의 대상으로 지정합니다. 자세한 내용은 이 [플랫폼 가이드](http://msdn.microsoft.com/library/windows/apps/dn894631.aspx)를 참조하세요.  
+ 단순히 계약 및 버전 컬렉션입니다. 앱을 실행할 수 있는 대상을 지정하는 데 사용됩니다. 더 이상 운영 체제를 대상으로 지정하지 않습니다. 이제 하나 이상의 디바이스 제품군을 앱의 대상으로 지정합니다. 자세한 내용은 이 [플랫폼 가이드](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx)를 참조하세요.  
   
 ## <a name="requirements"></a>요구 사항  
  유니버설 Windows 앱 개발 도구에는 여러 다른 디바이스에서의 앱 모양을 확인하는 데 사용할 수 있는 에뮬레이터가 제공됩니다. 이러한 에뮬레이터를 사용하려는 경우 물리적 컴퓨터에서 이 소프트웨어를 설치해야 합니다. 물리적 컴퓨터는 Windows 8.1(x64) Professional Edition 이상을 실행하고 클라이언트 Hyper-V 및 SLAT(두 번째 수준 주소 변환)를 지원하는 프로세서가 있어야 합니다. Visual Studio가 가상 머신에 설치된 경우에는 에뮬레이터를 사용할 수 없습니다.  
@@ -54,16 +48,15 @@ ms.locfileid: "51766481"
   
   Windows 10 이외의 플랫폼에서 Visual Studio 2015를 사용하여 유니버설 Windows 앱을 개발하기로 선택한 경우 다음과 같은 제한 사항이 적용됩니다.  
   
-- Windows 8.1: 앱을 로컬로 실행할 수 없습니다(원격 Windows 10 디바이스에서만). Visual Studio에서 에뮬레이터를 사용할 수 있지만 시뮬레이터는 사용할 수 없습니다.  
+- Windows 8.1: (원격 Windows 10 장치) 에서만 앱을 로컬로 실행할 수 없습니다. Visual Studio에서 에뮬레이터를 사용할 수 있지만 시뮬레이터는 사용할 수 없습니다.  
   
-- Windows 7: 앱을 로컬로 실행할 수 없습니다(원격 Windows 10 디바이스에서만). Visual Studio에서 에뮬레이터나 시뮬레이터 중 하나만 사용할 수 있습니다.  
+- Windows 7: (원격 Windows 10 장치) 에서만 앱을 로컬로 실행할 수 없습니다. Visual Studio에서 에뮬레이터나 시뮬레이터 중 하나만 사용할 수 있습니다.  
   
   개발 플랫폼이 Windows 10인 경우에만 XAML 디자이너를 사용할 수 있습니다.  
   
 ## <a name="universal-windows-apps"></a>유니버설 Windows 앱  
- C#, Visual Basic, C++ 또는 JavaScript에서 기본 설정 개발 언어를 선택하여 [Windows 10 디바이스용 유니버설 Windows 앱을 만드세요](http://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10). 또는 [이 시작 동영상](http://channel9.msdn.com/Series/ConnectOn-Demand/229)을 시청하세요.  
+ C#, Visual Basic, C++ 또는 JavaScript에서 기본 설정 개발 언어를 선택하여 [Windows 10 디바이스용 유니버설 Windows 앱을 만드세요](https://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10). 또는 [이 시작 동영상](http://channel9.msdn.com/Series/ConnectOn-Demand/229)을 시청하세요.  
   
- 기존 Windows 스토어 8.1 앱, Windows Phone 8.1 앱 또는 Visual Studio 2015 RC를 사용하여 만든 유니버설 Windows 앱이 있으면 [이러한 기존 앱을 포팅](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) 하여 최신 유니버설 Windows 플랫폼을 사용합니다.  
+ 기존 Windows 스토어 8.1 앱, Windows Phone 8.1 앱 또는 Visual Studio 2015 RC를 사용하여 만든 유니버설 Windows 앱이 있으면 [이러한 기존 앱을 포팅](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) 하여 최신 유니버설 Windows 플랫폼을 사용합니다.  
   
  유니버설 Windows 앱을 만든 후 [앱을 패키지하여](https://msdn.microsoft.com/library/windows/apps/hh454036.aspx) Windows 10 디바이스에 설치하거나 Windows 스토어에 제출해야 합니다.
-

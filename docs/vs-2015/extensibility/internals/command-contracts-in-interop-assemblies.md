@@ -1,27 +1,22 @@
 ---
 title: Interop 어셈블리의 계약 명령 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - command handling with interop assemblies, command contracts
 - interop assemblies, command contracts
 ms.assetid: 57245708-f539-42dc-8963-2754a48f0189
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8089314293c92a24396a90f4be4dd4120c03bbcd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 50d48d3a8ff55559cce1c3a40142e31b8eebd85f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195130"
 ---
 # <a name="command-contracts-in-interop-assemblies"></a>Interop 어셈블리의 명령 계약
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,8 +29,7 @@ ms.locfileid: "51725091"
   
  명령을 계층 구조 창 내에서 작동 해야 하는 경우에는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> 인터페이스를 사용 해야 합니다. 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> 인터페이스에는 이와 유사한 메서드를 사용 하 여 비슷한 계약: <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> 및 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A>합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [Vspackage에서 사용자 인터페이스 요소를 추가 하는 방법](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Vspackage의 명령 라우팅](../../extensibility/internals/command-routing-in-vspackages.md)   
  [구현](../../extensibility/internals/command-implementation.md)
-

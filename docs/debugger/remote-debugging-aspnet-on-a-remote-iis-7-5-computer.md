@@ -4,35 +4,43 @@ ms.custom:
 - remotedebugging
 - seodec18
 ms.date: 05/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 9cb339b5-3caf-4755-aad1-4a5da54b2a23
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 336f34c1229e07eb3734f9d278070e5994957d16
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MTE95
+ms.openlocfilehash: ba255d1d1e906e8fe7bacd05d1f4afd4b7bf413b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407850"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>원격 IIS 컴퓨터의 ASP.NET 원격 디버그
 IIS에 배포 된 ASP.NET 응용 프로그램을 디버깅 하려면 설치 하 고 앱을 배포할 컴퓨터에서 원격 도구를 실행 한 다음 Visual Studio에서 실행 중인 앱에 연결 합니다.
 
 ![원격 디버거 구성 요소](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-이 가이드에는 설정 및 Visual Studio 2017 ASP.NET MVC 4.5.2 응용 프로그램을 구성 하 고, IIS에 배포 하 고 Visual Studio에서 원격 디버거를 연결 하는 방법을 설명 합니다.
+이 가이드에는 설정 및 Visual Studio ASP.NET MVC 4.5.2 응용 프로그램을 구성 하 고, IIS에 배포 하 고 Visual Studio에서 원격 디버거를 연결 하는 방법을 설명 합니다.
 
 > [!NOTE]
 > 원격 디버그 ASP.NET Core를 대신 참조 하세요 [IIS 컴퓨터에 있는 원격 디버그 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)합니다. Azure App Service에 대해 쉽게 배포 하 고 디버그할 수 중 하나를 사용 하 여 IIS의 미리 구성 된 인스턴스에서 [스냅숏 디버거](../debugger/debug-live-azure-applications.md) (.NET 4.6.1 필요) 또는 [서버 탐색기에서 디버거를 연결](../debugger/remote-debugging-azure.md)합니다.
 
+## <a name="prerequisites"></a>전제 조건
+
+::: moniker range=">=vs-2019"
+Visual Studio 2019은이 문서에 나와 있는 단계를 수행 해야 합니다.
+::: moniker-end
+::: moniker range="vs-2017"
+Visual Studio 2017은이 문서에 나와 있는 단계를 수행 해야 합니다.
+::: moniker-end
+
 이러한 절차 이러한 서버 구성에서 테스트 되었습니다.
 * Windows Server 2012 R2 및 IIS 8 (Windows Server 2008 R2 용 server 단계가 다릅니다)
 
-## <a name="requirements"></a>요구 사항
+## <a name="network-requirements"></a>네트워크 요구 사항
 
 원격 디버거는 Windows Server 2008 서비스 팩 2부터 Windows Server에서 지원 됩니다. 요구 사항의 전체 목록은 참조 하세요 [요구 사항](../debugger/remote-debugging.md#requirements_msvsmon)합니다.
 
@@ -48,8 +56,15 @@ IIS에 배포 된 ASP.NET 응용 프로그램을 디버깅 하려면 설치 하 
 * 앱 설정 되어 있는지를 배포 해야 하는 데 도움이 필요 하 고이 항목의 모든 단계에 따라 디버그할 수 있도록 IIS에서 올바르게 실행 했습니다.
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>ASP.NET 4.5.2를 만들려면 Visual Studio 컴퓨터에서 응용 프로그램
-  
-1. 새 MVC ASP.NET 응용 프로그램을 만듭니다. (**파일 > 새로 만들기 > 프로젝트**을 선택한 후 <strong>시각적 C# > 웹 > ASP.NET 웹 응용 프로그램입니다. ASP.NET 4.5.2 템플릿 섹션에서 MVC</strong>를 선택합니다. 했는지 **Docker 지원 활성화** 선택 하지 않으면 하 고 **인증** 로 설정 되어 **인증 안 함**합니다. 프로젝트 이름을 **MyASPApp**.)
+
+1. 새 MVC ASP.NET 애플리케이션을 만듭니다.
+
+    ::: moniker range=">=vs-2019"
+    Visual Studio 2019 입력 **Ctrl + Q** 입력 검색 상자를 열려면 **asp.net**, 선택 **템플릿**를 선택한 **만들기 새 ASP.NET 웹 응용 프로그램 (.NET 프레임 워크)** 합니다. 나타나는 대화 상자에서 프로젝트 이름을 **MyASPApp**를 선택한 후 **만들기**합니다. 선택 **MVC** 선택한 **만들기**합니다.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Visual Studio 2017에서이 작업을 수행 하려면 **파일 > 새로 만들기 > 프로젝트**을 선택한 후 **시각적 C# > 웹 > ASP.NET 웹 응용 프로그램**합니다. **ASP.NET 4.5.2** 템플릿 섹션에서 **MVC**를 선택합니다. 했는지 **Docker 지원 활성화** 선택 하지 않으면 하 고 **인증** 로 설정 되어 **인증 안 함**합니다. 프로젝트 이름을 **MyASPApp**.)
+    ::: moniker-end
 
 2. HomeController.cs 파일을 열고 `About()` 메서드에 중단점을 설정합니다.
 
@@ -81,7 +96,7 @@ IIS에서 ASP.NET을 설치 하려면 자세한 정보를 보려는 경우 참�
     > [!NOTE]
     > Windows Server 2008 R2를 사용 하는 경우이 명령을 사용 하는 ASP.NET 4를 설치 합니다.
 
-     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe ir**
+     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
 
 2. 시스템을 다시 시작하거나 명령 프롬프트에서 **net stop was /y**에 이어 **net start w3svc**를 실행하여 시스템 PATH에 대한 변경 내용을 선택합니다.
 
@@ -148,7 +163,7 @@ RoboCopy, Powershell을 사용 하 여 IIS에 응용 프로그램을 복사 하�
 게시 하 고 파일 시스템 또는 다른 도구를 사용 하 여 앱을 배포할 수도 있습니다.
 
 1. (ASP.NET 4.5.2) Web.config 파일에 올바른 버전의.NET Framework 표시 되어 있는지 확인 합니다.  예를 들어 ASP.NET 4.5.2를 대상으로 하는 경우이 버전은 web.config에 나열 되어 있는지 확인 합니다.
-  
+
     ```xml
     <system.web>
       <compilation debug="true" targetFramework="4.5.2" />
@@ -157,7 +172,7 @@ RoboCopy, Powershell을 사용 하 여 IIS에 응용 프로그램을 복사 하�
         <add name="ApplicationInsightsWebTracking" type="Microsoft.ApplicationInsights.Web.ApplicationInsightsHttpModule, Microsoft.AI.Web" />
       </httpModules>
     </system.web>
-  
+
     ```
 
     예를 들어 버전 4.5.2 대신 ASP.NET 4를 설치 하는 경우에 4.0 있어야 합니다.
@@ -166,10 +181,10 @@ RoboCopy, Powershell을 사용 하 여 IIS에 응용 프로그램을 복사 하�
 
 ## <a name="BKMK_msvsmon"></a> 다운로드 하 여 Windows Server에서 원격 도구 설치
 
-이 자습서에서는 Visual Studio 2017을 사용 하는 것입니다.
+Visual Studio의 버전과 일치 하는 원격 도구의 버전을 다운로드 합니다.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-  
+
 ## <a name="BKMK_setup"></a> Windows Server에서 원격 디버거 설정
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
@@ -179,47 +194,70 @@ RoboCopy, Powershell을 사용 하 여 IIS에 응용 프로그램을 복사 하�
 
 원격 디버거 서비스 실행에 대 한 내용은 참조 하세요 [원격 디버거를 서비스로 실행](../debugger/remote-debugging.md#bkmk_configureService)합니다.
 
-## <a name="BKMK_attach"></a> Visual Studio 컴퓨터에서 ASP.NET 응용 프로그램에 연결
+## <a name="BKMK_attach"></a> Visual Studio 컴퓨터에서 ASP.NET 애플리케이션에 연결
 
 1. Visual Studio 컴퓨터에서 디버그 하려는 된 솔루션을 엽니다 (**MyASPApp** 이 문서의 단계를 수행 하는 경우).
 2. Visual Studio에서 클릭 **디버그 > 프로세스에 연결** (Ctrl + Alt + P).
 
     > [!TIP]
-    > Visual Studio 2017에서 이전에 연결을 사용 하 여 동일한 프로세스에 다시 **디버그 > 프로세스에 다시 연결 하는 중...** Shift+Alt+P 
+    > Visual Studio 2017 이상 버전에서 이전에 연결을 사용 하 여 동일한 프로세스에 다시 **디버그 > 프로세스에 다시 연결 하는 중...** (Shift+Alt+P).
 
-3. 한정자 필드를 **\<원격 컴퓨터 이름>:4022**로 설정합니다.
+3. 한정자 필드에 설정할  **\<원격 컴퓨터 이름 >** 누릅니다 **Enter**합니다.
+
+    Visual Studio 형식으로 표시 되는 컴퓨터 이름에 필요한 포트를 추가 함을 확인 합니다.  **\<원격 컴퓨터 이름 >: 포트**
+
+    ::: moniker range=">=vs-2019"
+    Visual Studio 2019에 나타납니다  **\<원격 컴퓨터 이름 >: 4024**
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Visual Studio 2017에서 표시 되어야  **\<원격 컴퓨터 이름 >: 4022**
+    ::: moniker-end
+    포트는 필수입니다. 찾을 수 없으면 포트 번호를 수동으로 추가 합니다.
+
 4. **새로 고침**을 클릭합니다.
     일부 프로세스가 **사용 가능한 프로세스** 창에 표시됩니다.
 
     모든 프로세스가 표시 되지 않는 경우 (포트는 필수) 원격 컴퓨터 이름 대신 IP 주소를 사용해 보세요. 사용할 수 있습니다 `ipconfig` IPv4 주소를 가져오려면 명령줄에서.
 
 5. **모든 사용자의 프로세스 표시**를 선택합니다.
+
 6. 프로세스 이름 신속 하 게 찾을의 첫 글자를 입력 **w3wp.exe** ASP.NET 4.5에 대 한 합니다.
 
-    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess.png "RemoteDBG_AttachToProcess")
+    여러 프로세스를 보여 주는 경우 **w3wp.exe**를 확인 합니다 **사용자 이름** 열입니다. 일부 시나리오에서는 합니다 **사용자 이름** 와 같은 앱 풀 이름, 열에 표시 **IIS APPPOOL\DefaultAppPool**합니다. 응용 프로그램 풀을 표시, 올바른 프로세스를 식별 하는 간편한 방법은 새 디버그 하려는 앱 인스턴스에 대 한 응용 프로그램 풀 이름이 고 다음에서 쉽게 찾을 수 있습니다 합니다 **사용자 이름** 열입니다.
+
+    ::: moniker range=">=vs-2019"
+    ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
 
 7. **연결**을 클릭합니다.
 
 8. 원격 컴퓨터의 웹 사이트를 엽니다. 브라우저에서 **http://\<원격 컴퓨터 이름>** 으로 이동합니다.
-    
+
     ASP.NET 웹 페이지가 표시됩니다.
 9. 실행 중인 ASP.NET 응용 프로그램에 대 한 링크를 클릭 합니다 **에 대 한** 페이지입니다.
 
     Visual Studio에서 중단점이 적중됩니다.
 
-## <a name="bkmk_openports"></a> Windows Server에서 필요한 포트를 열고 문제 해결:
+## <a name="bkmk_openports"></a> 문제 해결: Windows Server에서 필요한 포트를 열려면
 
 대부분의 설치 프로그램에서 ASP.NET와 원격 디버거 설치를 통해 필요한 포트가 열려 있습니다. 그러나 포트가 열려 있는지 확인 해야 합니다.
 
 > [!NOTE]
-> Azure VM에서 포트를 통해 열어야 합니다 [네트워크 보안 그룹](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic)합니다. 
+> Azure VM에서 포트를 통해 열어야 합니다 [네트워크 보안 그룹](/azure/virtual-machines/windows/nsg-quickstart-portal)합니다.
 
 필요한 포트:
 
-- 80-IIS에 대 한 필요합니다.
-- 8172-(Visual Studio에서 앱을 배포 하려면 웹 배포 하는 데 필요한 선택 사항)
-- 4022-Visual Studio 2017에서 원격 디버깅을 위해 필요 합니다. (참조 [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md) 자세한 정보에 대 한 합니다.
-- UDP 3702-(선택 사항) 검색 포트 사용 하도록 설정 하는 **찾을** 단추 Visual Studio에서 원격 디버거를 연결 하는 경우.
+* 80-IIS에 대 한 필요합니다.
+::: moniker range=">=vs-2019"
+* 4024-Visual Studio 2019 원격 디버깅을 위해 필요 합니다. (참조 [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md) 자세한).
+::: moniker-end
+::: moniker range="vs-2017"
+* 4022-Visual Studio 2017에서 원격 디버깅을 위해 필요 합니다. (참조 [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md) 자세한).
+::: moniker-end
+* UDP 3702-(선택 사항) 검색 포트 사용 하도록 설정 하는 **찾을** 단추 Visual Studio에서 원격 디버거를 연결 하는 경우.
 
 1. Windows Server에서 포트를 열려면 합니다 **시작** 메뉴에서 검색 **Windows Firewall with Advanced Security**합니다.
 

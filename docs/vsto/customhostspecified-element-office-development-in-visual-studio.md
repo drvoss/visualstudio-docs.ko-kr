@@ -13,15 +13,15 @@ helpviewer_keywords:
 - customHostSpecified element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0880e0ddf4763cf2c67c10871992a24b76f59ef2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26597796c99d3ab8740812819cf3aa5568e2985b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62956181"
 ---
 # <a name="ltcustomhostspecifiedgt-element-office-development-in-visual-studio"></a>&lt;customHostSpecified&gt; 요소 (Visual Studio에서 Office 개발)
   `customHostSpecified` 요소는이 솔루션을 독립 실행형 응용 프로그램 아님을 나타냅니다. Office 솔루션은 Microsoft Office 응용 프로그램 내에서 호스트 되는 구성 요소를 포함 합니다.
@@ -52,4 +52,4 @@ ms.locfileid: "53896645"
 
 - [Office 솔루션에 대 한 응용 프로그램 매니페스트](../vsto/application-manifests-for-office-solutions.md)
 - [Office 솔루션의 배포 매니페스트](../vsto/deployment-manifests-for-office-solutions.md)
-- [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md)
+- [ClickOnce 애플리케이션 매니페스트](../deployment/clickonce-application-manifest.md)

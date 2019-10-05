@@ -1,14 +1,9 @@
 ---
 title: MSBuild 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#MSBuild
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: 76577f6c-7669-44ad-a840-363e37a04d34
 caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3782db2b2c3fb3cdc5d0cc9ed21459c2b2215250
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d2349c21d55c20bcb3bcd50ab96f383a9afcc00b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878260"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426106"
 ---
 # <a name="msbuild-task"></a>MSBuild 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 다른 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 프로젝트에서 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 프로젝트를 빌드합니다.  
   
 ## <a name="parameters"></a>매개 변수  
@@ -44,7 +38,7 @@ ms.locfileid: "49878260"
 |---------------|-----------------|  
 |`BuildInParallel`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 `Projects` 매개 변수에 지정된 프로젝트가 가능한 경우 병렬로 빌드됩니다. 기본값은 `false`입니다.|  
 |`Projects`|필수 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 빌드할 프로젝트 파일을 지정합니다.|  
-|`Properties`|선택적 `String` 매개 변수입니다.<br /><br /> 자식 프로젝트에 전역 속성으로 적용할 속성 이름/값 쌍의 세미콜론으로 구분된 목록입니다. 이 매개 변수는 지정하는 경우 [MSBuild.exe](../msbuild/msbuild-command-line-reference.md)를 사용하여 빌드할 때 **/property** 스위치가 포함된 속성을 설정하는 것과 동일한 기능을 제공합니다. 예를 들어:<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> `Properties` 매개 변수를 통해 프로젝트에 속성을 전달하면 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에서는 프로젝트 파일이 이미 로드되었더라도 프로젝트의 새 인스턴스를 만듭니다. 프로젝트의 새 인스턴스가 만들어지면 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]는 해당 인스턴스를 프로젝트의 다른 인스턴스와 병렬로 빌드할 수 있으며 다른 전역 속성이 포함된 다른 프로젝트로 처리합니다. 예를 들어 릴리스 구성을 디버그 구성과 동시에 빌드할 수 있습니다.|  
+|`Properties`|선택적 `String` 매개 변수입니다.<br /><br /> 자식 프로젝트에 전역 속성으로 적용할 속성 이름/값 쌍의 세미콜론으로 구분된 목록입니다. 이 매개 변수는 지정하는 경우 [MSBuild.exe](../msbuild/msbuild-command-line-reference.md)를 사용하여 빌드할 때 **/property** 스위치가 포함된 속성을 설정하는 것과 동일한 기능을 제공합니다. 예:<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> `Properties` 매개 변수를 통해 프로젝트에 속성을 전달하면 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에서는 프로젝트 파일이 이미 로드되었더라도 프로젝트의 새 인스턴스를 만듭니다. 프로젝트의 새 인스턴스가 만들어지면 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]는 해당 인스턴스를 프로젝트의 다른 인스턴스와 병렬로 빌드할 수 있으며 다른 전역 속성이 포함된 다른 프로젝트로 처리합니다. 예를 들어 릴리스 구성을 디버그 구성과 동시에 빌드할 수 있습니다.|  
 |`RebaseOutputs`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 빌드한 프로젝트의 대상 출력 항목 상대 경로가 호출 프로젝트를 기준으로 조정됩니다. 기본값은 `false`입니다.|  
 |`RemoveProperties`|선택적 `String` 매개 변수입니다.<br /><br /> 제거할 전역 속성의 집합을 지정합니다.|  
 |`RunEachTargetSeparately`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 작업이 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에 전달된 목록의 각 대상을 동시에 호출하는 대신 한 번에 하나씩 호출합니다. 이 매개 변수를 `true`로 설정하면 이전에 호출된 대상에 오류가 발생하더라도 후속 대상이 호출됩니다. 그렇지 않은 경우에는 빌드 오류로 인해 모든 후속 대상의 호출이 중지됩니다. 기본값은 `false`입니다.|  
@@ -57,7 +51,7 @@ ms.locfileid: "49878260"
 |`UnloadProjectsOnCompletion`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 작업이 완료되면 프로젝트가 언로드됩니다.|  
 |`UseResultsCache`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 캐시된 결과(있는 경우)가 반환됩니다. MSBuild 작업이 실행되면 해당 결과는 (ProjectFileName, GlobalProperties)[TargetNames] 범위에<br /><br /> 빌드 항목의 목록으로 캐시됩니다.|  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)를 참조하세요.  
   
  [Exec Task](../msbuild/exec-task.md)를 사용하여 MSBuild.exe를 시작하는 경우와 달리 이 작업에서는 동일한 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 프로세스를 사용하여 자식 개체를 빌드합니다. 건너뛸 수 있는 이미 빌드된 대상의 목록은 부모 빌드와 자식 빌드 간에 공유됩니다. 또한 새 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 프로세스가 만들어지지 않으므로 이 작업은 속도도 더 빠릅니다.  
@@ -74,7 +68,7 @@ ms.locfileid: "49878260"
  그러나 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5에서는 두 가지 새 예약된 메타데이터 항목인 Properties와 AdditionalProperties가 제공됩니다. 이러한 항목을 사용하면 [MSBuild 작업](../msbuild/msbuild-task.md)을 통해 빌드 중인 각 프로젝트에 대해 서로 다른 속성을 유동적으로 전달할 수 있습니다.  
   
 > [!NOTE]
->  이러한 새 메타데이터 항목은 [MSBuild 작업](../msbuild/msbuild-task.md)의 Projects 특성에 전달된 항목에만 적용됩니다.  
+> 이러한 새 메타데이터 항목은 [MSBuild 작업](../msbuild/msbuild-task.md)의 Projects 특성에 전달된 항목에만 적용됩니다.  
   
 ## <a name="multi-processor-build-benefits"></a>다중 프로세서 빌드의 이점  
  이러한 새 메타데이터를 사용하는 경우의 주요 이점 중 하나는 다중 프로세서 시스템에서 병렬로 프로젝트를 빌드할 때 제공됩니다. 메타데이터를 사용하면 일괄 처리 또는 조건부 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 작업을 수행하지 않고도 모든 프로젝트를 단일 [MSBuild 작업](../msbuild/msbuild-task.md)에 통합할 수 있습니다. 그리고 단일 [MSBuild 작업](../msbuild/msbuild-task.md)만 호출하면 Projects 특성에 나열된 모든 프로젝트가 병렬로 빌드됩니다. 단, `BuildInParallel=true` 특성이 [MSBuild 작업](../msbuild/msbuild-task.md)에 있어야 합니다. 자세한 내용은 [병렬로 여러 프로젝트 빌드](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)를 참조하세요.  
@@ -83,7 +77,7 @@ ms.locfileid: "49878260"
  일반적으로는 빌드 구성만 다르게 적용하여 [MSBuild 작업](../msbuild/msbuild-task.md)을 통해 여러 솔루션 파일을 빌드합니다. 예를 들어 a1 솔루션은 디버그 구성을 사용하여 빌드하고 a2 솔루션은 릴리스 구성을 사용하여 빌드할 수 있습니다. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0에서 이 프로젝트 파일은 다음과 같이 표시됩니다.  
   
 > [!NOTE]
->  다음 예제에서 "..."는 추가 솔루션 파일을 나타냅니다.  
+> 다음 예제에서 "..."는 추가 솔루션 파일을 나타냅니다.  
   
 ### <a name="aproj"></a>a.proj  
   
@@ -198,6 +192,3 @@ ms.locfileid: "49878260"
 ## <a name="see-also"></a>참고 항목  
  [작업](../msbuild/msbuild-tasks.md)   
  [작업 참조](../msbuild/msbuild-task-reference.md)
-
-
-

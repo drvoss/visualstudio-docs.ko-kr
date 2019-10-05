@@ -1,25 +1,25 @@
 ---
 title: 방화벽 또는 프록시 서버 뒤에 Mac용 Visual Studio 설치 및 사용
-description: 이 문서에서는 Mac용 Visual Studio(및 Xamarin을 포함하는 해당 워크로드)가 회사 환경에서 작동할 수 있도록 방화벽의 허용 목록에 추가해야 하는 호스트 목록을 제공합니다.
+description: 이 문서에서는 Mac용 Visual Studio(및 Xamarin을 포함하는 해당 워크로드)가 회사 환경에서 작동할 수 있도록 방화벽에서 허용해야 하는 호스트 목록을 제공합니다.
 ms.topic: troubleshooting
 ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
 author: asb3993
 ms.author: amburns
-ms.date: 10/23/2018
-ms.openlocfilehash: 70ac8defdcea9cccd8a3b3f9be71d38fb78c9c50
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.date: 09/18/2019
+ms.openlocfilehash: 3c5fce37b7cb26ef9aeceaba700e72e79e809d7d
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295197"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213642"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>방화벽 또는 프록시 서버 뒤에 Mac용 Visual Studio 설치 및 사용
 
-사용자 또는 사용자 조직에서 방화벽 또는 프록시 서버와 같은 보안 조치를 사용하는 경우 Mac용 Visual Studio와 Azure 서비스를 설치 및 사용할 때 최상의 경험을 얻으려면 특정 포트 및 프로토콜을 열고 특정 도메인 URL을 “허용 목록”에 추가하는 것이 좋습니다.
+사용자 또는 사용자 조직에서 방화벽 또는 프록시 서버와 같은 보안 조치를 사용하는 경우, Mac용 Visual Studio와 Azure 서비스를 설치 및 사용할 때 최상의 경험을 얻을 수 있도록 특정 도메인을 “허용 목록”에 추가하고 특정 포트와 프로토콜을 여는 것이 좋습니다.
 
-- [**Mac용 Visual Studio 설치**](#install-visual-studio-for-mac): 이 표에는 Mac용 Visual Studio의 모든 기능과 워크로드에 액세스할 수 있도록 허용 목록에 추가할 URL이 나와 있습니다.
+- [**Mac용 Visual Studio 설치**](#install-visual-studio-for-mac): 이 표에는 Mac용 Visual Studio의 모든 기능과 워크로드에 액세스할 수 있도록 연결을 허용해야 하는 도메인이 나와 있습니다.
 
-- [**Mac용 Visual Studio 사용**](#use-visual-studio-for-mac): 이 표에는 원하는 모든 서비스 및 기능에 액세스할 수 있도록 허용 목록에 추가할 URL이 나와 있습니다.
+- [**Mac용 Visual Studio 사용**](#use-visual-studio-for-mac): 이 표에는 관련 기능에 액세스할 수 있도록 연결을 허용해야 하는 도메인이 나와 있습니다.
 
 ## <a name="install-visual-studio-for-mac"></a>Mac용 Visual Studio 설치
 
@@ -27,7 +27,7 @@ Mac용 Visual Studio 설치 관리자는 다양한 도메인 및 다운로드 �
 
 ### <a name="microsoft-domains"></a>Microsoft 도메인
 
-| 도메인| 용도 |
+| 도메인| 목적 |
 | ----------------------------------- |---------------------------|
 | *.live.com| 자격 증명 관리 |
 | app.vssps.visualstudio.com| 설치 관리자 메타데이터|
@@ -38,11 +38,13 @@ Mac용 Visual Studio 설치 관리자는 다양한 도메인 및 다운로드 �
 | download.visualstudio.microsoft.com | 설치 관리자 패키지|
 | xamarin.azureedge.net | 설치 관리자 패키지|
 | developer.xamarin.com | 설치 관리자 패키지|
+| static.xamarin.com | 설치 관리자 패키지|
+| dl.xamarin.com | 설치 관리자 패키지|
 | dc.services.visualstudio.com| 크래시 보고 |
 
 ### <a name="third-party-domains"></a>타사 도메인
 
-| 도메인| 용도 |
+| 도메인| 목적 |
 | --------------------------|-------------------------|
 | dl.google.com | Android SDK |
 | download.oracle.com | Java SDK|
@@ -50,11 +52,11 @@ Mac용 Visual Studio 설치 관리자는 다양한 도메인 및 다운로드 �
 
 ## <a name="use-visual-studio-for-mac"></a>Mac용 Visual Studio 사용
 
-프록시 또는 방화벽 뒤에 있는 동안 Mac용 Visual Studio에서 필요한 모든 기능에 액세스할 수 있으려면 다음 도메인 및 포트를 허용 목록에 추가하는 것이 좋습니다.
+프록시 또는 방화벽 뒤에 있는 동안 Mac용 Visual Studio에서 필요한 모든 기능에 액세스할 수 있도록 다음 도메인과 포트를 액세스 허용 목록에 추가하는 것이 좋습니다.
 
 ### <a name="general"></a>일반
 
-| 도메인 | 포트|용도|
+| 도메인 | 포트|목적|
 | ----------------------|------------------|------------------|
 | go.microsoft.com | 80/443|Microsoft URL 확인 |
 | vsstartpage.blob.core.windows.net| 80/443| 시작 페이지 데이터|
@@ -63,9 +65,9 @@ Mac용 Visual Studio 설치 관리자는 다양한 도메인 및 다운로드 �
 | visualstudio-devdiv-c2s.msedge.net | 80/443| 실험적 기능 및 알림 |
 | targetednotifications.azurewebsites.net|  80/443| 전체 알림 목록을 특정 유형의 컴퓨터/사용 시나리오에만 적용 가능한 목록으로 필터링하는 데 사용됩니다.|
 
-### <a name="identity"></a>클레임
+### <a name="identity"></a>ID
 
-| 도메인 | 포트|용도|
+| 도메인 | 포트|목적|
 | ----------------------|------------------|------------------|
 | login.microsoftonline.com | 80/443| ID 공급자|
 | secure.aadcdn.microsoftonline-p.com | 80/443|ID 공급자|
@@ -74,14 +76,14 @@ Mac용 Visual Studio 설치 관리자는 다양한 도메인 및 다운로드 �
 
 ### <a name="nuget"></a>NuGet
 
-| 도메인 | 포트|용도|
+| 도메인 | 포트|목적|
 | ----------------------|------------------|------------------|
 | api.nuget.org | 80/443|NuGet API|
 | secure.aadcdn.microsoftonline-p.com |80/443| ID 공급자|
 
 ### <a name="android-projects"></a>Android 프로젝트
 
-| 도메인| 용도|
+| 도메인| 목적|
 | ------------------------------------|------------------------------------|
 | time.android.com| Android Emulator의 시간 서버 |
 | connectivitycheck.gstatic.com | Android Emulator의 연결|
@@ -89,5 +91,5 @@ Mac용 Visual Studio 설치 관리자는 다양한 도메인 및 다운로드 �
 
 ## <a name="see-also"></a>참고 항목
 
-- [방화벽 또는 프록시 서버 배후에서 Visual Studio 2017과 Azure 서비스 설치 및 사용](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server)
+- [방화벽 또는 프록시 서버 배후에서 Visual Studio와 Azure 서비스 설치 및 사용](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server)
 - [Windows에서 유사한 문제 해결](/visualstudio/install/troubleshooting-network-related-errors-in-visual-studio)

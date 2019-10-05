@@ -1,14 +1,9 @@
 ---
 title: SetThreadCount | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 api_name:
 - SetThreadCount
 api_location:
@@ -21,18 +16,17 @@ ms.assetid: 335335a5-8ca0-4e18-95f5-62aa6a691386
 caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a22e9819435114186e7b2d9afec02736f686537d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 79987c77da7959c4ba37a4ae8e5b689a052cbbbc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193634"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 전역 스레드 개수를 설정하고 해당 개수를 현재 스레드에 할당합니다.  
   
 ## <a name="syntax"></a>구문  
@@ -46,10 +40,7 @@ HRESULT WINAPI SetThreadCount(int threadCount);
  사용할 스레드 수입니다.  
   
 ## <a name="return-value"></a>반환 값  
- [HRESULT] (<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) [성공]를 사용 하 여 (<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) 스레드 개수가 업데이트 된 경우에 비트가 설정 합니다.  
+ [HRESULT] (<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) [성공] (<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) 스레드 개수가 업데이트 된 경우에 비트가 설정 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더:** FileTracker.h
-
-
-

@@ -1,32 +1,27 @@
 ---
 title: 식 계산 인터페이스 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - expression evaluation, interfaces
 ms.assetid: 2d259f60-2cd7-460e-b02d-24a8fb202850
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1c7365e17749d69d0dc36e06c3d11d053a44e94d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8a710019390120768b665cf3b27174831a67f0cc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774843"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435039"
 ---
 # <a name="expression-evaluation-interfaces"></a>Expression Evaluation Interfaces
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  Visual Studio 2015에서 식 계산기를 구현 하는 이러한 방식으로 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 정보를 참조 하세요 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 하 고 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)합니다.  
+> Visual Studio 2015에서 식 계산기를 구현 하는 이러한 방식으로 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 정보를 참조 하세요 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 하 고 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)합니다.  
   
  다음은에 대 한 식 계산 인터페이스는 [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] Debugging SDK.  
   
@@ -35,11 +30,11 @@ ms.locfileid: "51774843"
   
  테이블의 각 인터페이스에서는 다음 목록에서 구현할 수 있는 구성 요소를 보여 줍니다.  
   
--   디버그 엔진 (DE)  
+- 디버그 엔진 (DE)  
   
--   식 계산기 (EE)  
+- 식 계산기 (EE)  
   
--   Visual Studio (VS)  
+- Visual Studio (VS)  
   
 |인터페이스|에 의해 구현|설명|  
 |---------------|--------------------|-----------------|  
@@ -70,4 +65,3 @@ ms.locfileid: "51774843"
  [API 참조](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)   
  [CLR 식 계산기 작성](../../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [형식 시각화 도우미 및 사용자 지정 뷰어](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
-

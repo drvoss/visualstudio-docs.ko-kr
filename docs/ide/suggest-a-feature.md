@@ -1,43 +1,47 @@
 ---
 title: 기능 제안
 description: 개발자 커뮤니티의 제안 사항, 제안하는 방법 및 Microsoft에서 제안 사항을 Visual Studio 로드맵에 사용하는 방법을 설명합니다.
-ms.date: 11/15/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
+ms.date: 12/17/2018
 ms.topic: conceptual
 author: seaniyer
 ms.author: seiyer
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 541d8968ea71844d89903b9e4f146e86a15737e2
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 4da08c2a7fed28b7f4ca75770682673bf58e30c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951076"
 ---
-# <a name="overview-suggest-a-feature"></a>Overview: ADO.NET Data Services 기능 제안
+# <a name="overview-suggest-a-feature"></a>개요: 기능 제안
 
 [Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com)에서는 문제를 보고하는 현재 기능과 더불어 기능을 제안하기 위한 새로운 환경이 도입되었습니다. 이는 Visual Studio의 엔지니어링 워크플로에 직접 참여할 수 있는 새로운 방법입니다.
 
-지금까지 Visual Studio 사용자는 사용자 의견 포럼을 사용하여 새로운 기능 아이디어를 제안했습니다. 개발자 커뮤니티의 ‘기능 제안’ 환경을 사용하면 사용자 의견 포럼에서 Visual Studio 제품 팀과 직접 연결하는 모든 피드백을 위한 단일 플랫폼으로 전환할 수 있습니다.
+![개발자 커뮤니티에서 기능 단추 제안](media/suggest-a-feature/suggest-feature-button.png)
 
-사용자 의견 포럼의 초기 아이디어 집합이 개발자 커뮤니티로 마이그레이션되었습니다. 마이그레이션은 피드백의 커뮤니티 영향과 제품 로드맵 우선 순위에 따라 수행되었습니다. 누락되었을 수 있는 제안 사항을 여기에 표시하려면 자유롭게 개발자 커뮤니티에 추가하세요.
+기본 Visual Studio 창의 오른쪽 위에 있는 **피드백 제공** 아이콘에서 **제안하기**를 선택하여 Visual Studio에서 직접 기능 제안을 시작할 수도 있습니다.
 
-## <a name="votes"></a>투표
+![Visual Studio의 제안하기 메뉴](media/suggest-a-feature/provide-suggestion.png)
 
-사용자 의견의 투표 시스템은 개발자 커뮤니티의 투표와 다르게 운영됩니다. 개발자 커뮤니티 투표 개수의 무결성을 유지하고 투표의 왜곡을 피하기 위해 각 기능 제안 옆에 사용자 의견 투표 개수가 태그로 명확하게 표시됩니다. 향상된 개발자 커뮤니티에서도 제안에 대한 투표가 계속되므로 사용자 의견 투표 개수와 별도로 새 투표 개수가 표시됩니다.
+**제안하기**를 선택하면 [개발자 커뮤니티](https://developercommunity.visualstudio.com)로 이동하여 제안 사항을 입력할 수 있습니다.
 
 ## <a name="user-voice"></a>사용자 의견
 
-이제 사용자 의견 사이트는 읽기 전용이며, 컨텍스트를 위해 필요한 경우 다시 확인할 수 있습니다. 모든 새로운 기능 제안은 개발자 커뮤니티에서 제출해야 합니다.
+지금까지 Visual Studio 사용자는 사용자 의견에 대한 새로운 기능 아이디어를 제안했습니다. *기능 제안* 기능을 개발자 커뮤니티에 추가하면 Visual Studio 제품 팀에 대한 모든 피드백이 한 곳에서 제공됩니다.
+
+사용자 음성 사이트는 읽기 전용으로 설정되었습니다. 컨텍스트에서 필요에 따라 되돌아 볼 수 있지만 모든 새로운 기능 제안 사항은 개발자 커뮤니티에 제출해야 합니다.
+
+사용자 의견 포럼의 초기 아이디어 집합을 개발자 커뮤니티로 마이그레이션했습니다. 마이그레이션은 피드백의 커뮤니티 영향과 제품 로드맵 우선 순위에 따라 수행되었습니다. 누락되었을 수 있는 제안 사항을 여기에 표시하려면 자유롭게 개발자 커뮤니티에 추가하세요.
+
+## <a name="votes"></a>투표
+
+개발자 커뮤니티의 투표 시스템은 사용자 의견과 다릅니다. 개발자 커뮤니티 투표 개수의 무결성을 유지하고 투표의 왜곡을 피하기 위해 각 기능 제안 옆에 사용자 의견 투표 개수가 태그로 명확하게 표시됩니다. 향상된 개발자 커뮤니티에서도 제안에 대한 투표가 계속되므로 사용자 의견 투표 개수와 별도로 새 투표 개수가 표시됩니다.
 
 ## <a name="suggestion-status"></a>제안 상태
 
-기능 제안을 제출한 후 상태는 해당 수명 주기에서 기능 제출의 현재 위치를 나타냅니다. 피드백을 고려하고 워크플로를 따라 진행함에 따라 해당 상태가 태그로 지정됩니다.
-
-기능 제안과 관련된 다양한 상태가 의미 및 색상 표시기에 대한 설명과 함께 아래에 나와 있습니다.
+기능 제안을 제출한 후 상태는 해당 수명 주기에서 기능 제출의 현재 위치를 나타냅니다. 피드백을 고려하고 워크플로를 따라 진행함에 따라 해당 상태가 태그로 지정됩니다. 기능 제안과 관련된 다양한 상태가 의미 및 색상 표시기에 대한 설명과 함께 여기에 나와 있습니다.
 
 ![개발자 커뮤니티의 제안에 대한 신규 상태](../ide/media/SuggestStates/New.jpg)
 
@@ -122,3 +126,7 @@ ms.locfileid: "53160038"
 고객에게 유용한 경험을 제공하기 위해 기능 제안을 듣고 작업을 수행하기 위해 노력하고 있습니다. 제안에 대한 작업의 우선 순위는 보다 광범위한 커뮤니티에 미치는 영향을 기준으로 지정됩니다. 모든 제안에 개인적으로 응답할 수는 없지만, 피드백을 적합한 팀에게 전달되고 신중하게 평가할 것을 약속드립니다.
 
 응답 시간은 피드백의 현재 상태에 따라 다릅니다. 응답 시간을 이해하려면 이 문서에서 상태에 대한 설명을 검토하세요.
+
+## <a name="see-also"></a>참고 항목
+
+- [개발자 커뮤니티(Visual Studio 블로그)에서 '기능 제안' 소개](https://devblogs.microsoft.com/visualstudio/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral)

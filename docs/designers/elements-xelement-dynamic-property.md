@@ -1,8 +1,6 @@
 ---
 title: 요소(XElement 동적 속성)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: reference
 apiname:
 - XElement.Elements
@@ -10,15 +8,15 @@ apitype: Assembly
 ms.assetid: 3d5737f2-d2ed-410a-821c-349dbb2b574f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c78dece049aa2d446a0f03b24f3e2c2640131327
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 4ff2071ba71d60db87332b0e23948d63ac1b2289
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62845563"
 ---
 # <a name="elements-xelement-dynamic-property"></a>요소(XElement 동적 속성)
 
@@ -34,7 +32,7 @@ elem.Elements[{namespaceName}localName]
 
 `IEnumerable<XElement> Item(String expandedName)` 형식의 인덱서입니다. 이 인덱서는 원하는 자식 요소의 확장된 이름을 사용하여 <xref:System.Collections.IEnumerable>`<`<xref:System.Xml.Linq.XElement>`>` 컬렉션에서 일치하는 자식 요소를 반환합니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 이 속성은 <xref:System.Xml.Linq.XContainer.Elements(System.Xml.Linq.XName)?displayProperty=fullName> 클래스의 <xref:System.Xml.Linq.XContainer> 메서드와 동일합니다.
 

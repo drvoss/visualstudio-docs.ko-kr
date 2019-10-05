@@ -1,26 +1,21 @@
 ---
 title: IDebugSettingsCallback2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2 interface
 ms.assetid: 7e525d0b-7d7a-4d1c-8b78-e1398fa922f2
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 40198e146cc4a1a48c30375d568594dcac424070
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c3e962c00d6c9230cab765ed56e7607cbfd91765
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722061"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153149"
 ---
 # <a name="idebugsettingscallback2"></a>IDebugSettingsCallback2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -54,9 +49,9 @@ IDebugSettingsCallback2D : IUnknown
 ## <a name="requirements"></a>요구 사항  
  헤더: Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="example"></a>예제  
  다음 예제에서는 사용 하는 함수는 **IDebugSettingsCallback2** 개체를 매개 변수로 합니다.  
@@ -79,4 +74,3 @@ HRESULT GetDebugSettingsCallback (IDebugSettingsCallback2 **ppCallback)
     return ( hRes );  
 }  
 ```
-

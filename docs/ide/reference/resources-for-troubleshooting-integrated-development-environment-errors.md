@@ -1,8 +1,6 @@
 ---
 title: 오류 문제 해결을 위한 리소스
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: troubleshooting
 f1_keywords:
 - VS.Message.0x00005A89
@@ -92,15 +90,15 @@ f1_keywords:
 ms.assetid: 8f866eb5-a206-4c16-807e-96a0f2c0e645
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dcdcffbcf947efa7da8471a970d07a23fe90ba4
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 723a9e382256650ae70982d403c2c768fb1f1e8b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349291"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945557"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>통합 개발 환경 오류를 해결하기 위한 리소스
 

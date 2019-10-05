@@ -2,7 +2,6 @@
 title: 'Ijsdebugframe:: Getname 메서드 | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,19 +15,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 34bb58444a30926ac558ca63a3a7ffff4ed5ca50
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 314a365a76533343ef14db513856a7ab16168677
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62558231"
 ---
 # <a name="ijsdebugframegetname-method"></a>IJsDebugFrame::GetName 메서드
 스택 프레임의 이름을 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetName(  
    BSTR *pName  
 );  

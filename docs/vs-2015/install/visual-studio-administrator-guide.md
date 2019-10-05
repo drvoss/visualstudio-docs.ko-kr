@@ -1,14 +1,9 @@
 ---
 title: Visual Studio 관리자 가이드 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-install
+ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
 - administrator guide, Visual Studio
@@ -17,20 +12,20 @@ ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
 caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 25d6655969245adf1b2a28df2b3327561d149983
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 5a84f0a037df92ff31ce66eb6692367ef1d209f6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546663"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Administrator Guide
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017에 대 한 최신 설명서를 참조 하세요. 합니다 [Visual Studio 2017 관리자 가이드](/visualstudio/install/visual-studio-administrator-guide)합니다.
+Visual Studio에서 최신 설명서를 참조 하세요. 합니다 [Visual Studio 관리자 가이드](/visualstudio/install/visual-studio-administrator-guide)합니다.
 
-각 대상 컴퓨터가 충족으로 네트워크에서 Visual Studio 2015를 배포할 수 있습니다 합니다 [최소 설치 요구 사항](http://www.microsoft.com/visualstudio/eng/products/2013-editions)합니다. /Layout 스위치를 사용 하 여 설치 파일을 실행 하 여 네트워크 공유를 만들 수 있습니다 (에 설명 된 대로 [오프 라인 설치의 Visual Studio 만들기](../install/create-an-offline-installation-of-visual-studio.md) 페이지) 한 다음 로컬 컴퓨터에서 네트워크 공유에 복사 합니다. ISO를 사용 하는 경우 ISO를 탑재할 수 및 공유 하거나 ISO를 네트워크 공유에 복사 합니다.  
+각 대상 컴퓨터가 충족으로 네트워크에서 Visual Studio 2015를 배포할 수 있습니다 합니다 [최소 설치 요구 사항](https://visualstudio.microsoft.com/vs/older-downloads/)합니다. [Visual Studio의 오프라인 설치 만들기](../install/create-an-offline-installation-of-visual-studio.md) 페이지에 설명된 대로 /layout 스위치와 함께 설치 파일을 실행한 다음, 로컬 머신에서 네트워크 공유로 복사하면 네트워크 공유를 만들 수 있습니다. ISO를 사용 하는 경우 ISO를 탑재할 수 및 공유 하거나 ISO를 네트워크 공유에 복사 합니다.  
   
  네트워크 공유에서 설치하는 경우 소스 위치가 "기억"됩니다. 이는 클라이언트 컴퓨터 복구 시 클라이언트가 원래 설치된 네트워크 공유로 돌아가야 할 수도 있음을 의미합니다. 조직에서 Visual Studio 2015 클라이언트를 실행하는 예상 수명에 맞도록 네트워크 위치를 신중하게 선택합니다.  
   
@@ -59,15 +54,16 @@ Visual Studio 2017에 대 한 최신 설명서를 참조 하세요. 합니다 [V
 ## <a name="controlling-what-is-installed"></a>설치되는 기능 제어  
  최종 사용자가 설치할 수 있는 기능을 제어하려는 경우 관리자 파일 설치와 명령줄 옵션의 두 가지 옵션이 있습니다. 최종 사용자가 Visual Studio 설치 관리자 환경에서 선택할 수 있는 기능을 제한하려는 경우 관리자 파일 설치를 선택합니다. 초기 구성을 만들지만 최종 사용자가 고유한 Visual Studio 설치 관리자 환경을 선택할 수 있게 하려는 경우 명령줄 매개 변수를 선택합니다.  
   
- 관리자 파일 환경에 대한 자세한 내용은 [How to: Create and Run an Unattended Installation of Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) 및 [How to: Automatically apply product keys when deploying Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)을 참조하세요.  명령줄 컨트롤에 대 한 자세한 내용은 참조는 [Visual Studio 설치를 사용 하 여 명령줄 매개 변수](../install/use-command-line-parameters-to-install-visual-studio.md) 페이지입니다.  
+ 관리자 파일 환경에 대 한 자세한 내용은 참조 하세요. [방법: 만들기 및 Visual Studio의 무인된 설치 실행](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) 고 [방법: Visual Studio를 배포할 때 제품 키를 자동으로 적용](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)합니다.  명령줄 컨트롤에 대 한 자세한 내용은 참조는 [Visual Studio 설치를 사용 하 여 명령줄 매개 변수](../install/use-command-line-parameters-to-install-visual-studio.md) 페이지입니다.  
   
 ## <a name="specifying-customer-feedback-settings"></a>사용자 의견 설정 지정  
- 기본적으로 Visual Studio 설치에서는 고객 의견을 허용합니다. 다음 레지스트리 키의 값을 문자열 "0"으로 변경하여 Visual Studio에서 개별 컴퓨터의 고객 의견을 허용하지 않도록 구성할 수 있습니다.  
+
+기본적으로 Visual Studio 설치에서는 고객 의견을 허용합니다. 다음 레지스트리 키의 값을 문자열 "0"으로 변경하여 Visual Studio에서 개별 컴퓨터의 고객 의견을 허용하지 않도록 구성할 수 있습니다.  
   
- **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM**  
+**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM**  
 **OptIn**  
   
- 예를 들어 HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM OptIn="0"으로 변경합니다.  
+예를 들어 HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM OptIn="0"으로 변경합니다.  
   
 ## <a name="related-topics"></a>관련 항목  
   

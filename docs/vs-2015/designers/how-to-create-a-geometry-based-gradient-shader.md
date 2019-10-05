@@ -1,25 +1,20 @@
 ---
-title: '방법: 기하 도형 기반 그라데이션 셰이더 만들기 | Microsoft 문서'
-ms.custom: ''
+title: '방법: 기 하 도형 기반 그라데이션 셰이더 만들기 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 61dd80bb8d8ba4c272beff018d3ab65ffce41dc6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: eda8424aeb28231df0ae0355931989bec13a89b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436169"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>방법: 기하 도형 기반 그라데이션 셰이더 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,13 +23,13 @@ ms.locfileid: "49911878"
   
  이 문서는 다음 활동을 보여 줍니다.  
   
--   셰이더 그래프에 노드 추가  
+- 셰이더 그래프에 노드 추가  
   
--   노드 속성 설정  
+- 노드 속성 설정  
   
--   노드 연결 해제  
+- 노드 연결 해제  
   
--   노드 연결  
+- 노드 연결  
   
 ## <a name="creating-a-geometry-based-gradient-shader"></a>기하 도형 기반 그라데이션 셰이더 만들기  
  픽셀의 위치를 셰이더로 통합하여 기하 도형 기반 셰이더를 구현할 수 있습니다. 음영 언어에서 픽셀에는 2D 화면의 색상 및 위치 보다 더 많은 정보가 포함되어 있습니다. 일부 시스템에서는 *조각*이라고 하는 픽셀은 픽셀에 해당하는 표면을 설명하는 값의 모음입니다. 이 문서에 설명된 셰이더는 조각의 월드 공간에서 최종 출력 색상에 영향을 미치는 3D 개체의 각 픽셀 높이를 사용합니다.  
@@ -64,25 +59,22 @@ ms.locfileid: "49911878"
    다음 그림은 구에 적용된 셰이더의 완료된 셰이더 그래프 및 미리 보기를 보여 줍니다.  
   
 > [!NOTE]
->  이 그림에서 주황색은 셰이더의 효과를 더 잘 보여 주기 위해 지정되었지만, 미리 보기 도형은 세계 좌표 위치에서 위치가 없으므로 셰이더 디자이너에서 셰이더를 완전히 미리 볼 수 없습니다. 전체 효과를 보여 주려면 실제 장면에서 셰이더를 미리 봐야 합니다.  
+> 이 그림에서 주황색은 셰이더의 효과를 더 잘 보여 주기 위해 지정되었지만, 미리 보기 도형은 세계 좌표 위치에서 위치가 없으므로 셰이더 디자이너에서 셰이더를 완전히 미리 볼 수 없습니다. 전체 효과를 보여 주려면 실제 장면에서 셰이더를 미리 봐야 합니다.  
   
  ![셰이더 그래프 및 효과 미리 보기](../designers/media/digit-gradient-effect-graph.png "Digit-Gradient-Effect-Graph")  
   
  일부 셰이더의 경우 특정 도형을 사용하면 미리 보기가 더 잘 표시될 수 있습니다. 셰이더 디자이너에서 셰이더를 미리 보는 방법에 대한 자세한 내용은 [셰이더 디자이너](../designers/shader-designer.md)의 **셰이더 미리 보기**를 참조하세요.  
   
- 다음 그림은 [방법: 3D 지형 모델 만들기](../designers/how-to-model-3-d-terrain.md)에서 설명하는 3D 모델에 적용되는 이 문서에서 설명된 셰이더를 보여 줍니다. 세계 좌표 위치에서 점의 높이와 함께 색의 농도가 증가합니다.  
+ 다음 그림에 설명 된 3 차원 장면에 적용 되는이 문서에 설명 된 셰이더를 보여 줍니다. [방법: 3d 지형 모델 만들기](../designers/how-to-model-3-d-terrain.md)합니다. 세계 좌표 위치에서 점의 높이와 함께 색의 농도가 증가합니다.  
   
  ![3D 지형 모델에 적용된 그라데이션 효과](../designers/media/digit-gradient-effect-result.png "Digit-Gradient-Effect-Result")  
   
- 3D 모델에 셰이더를 적용하는 방법에 대한 자세한 내용은 [방법: 3D 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md)을 참조하세요.  
+ 3 차원 모델에 셰이더 적용 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 3 차원 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [방법: 3D 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+ [방법: 3 차원 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [방법: 셰이더 내보내기](../designers/how-to-export-a-shader.md)   
- [방법: 3D 지형 모델 만들기](../designers/how-to-model-3-d-terrain.md)   
+ [방법: 3d 지형 모델](../designers/how-to-model-3-d-terrain.md)   
  [방법: 회색조 질감 셰이더 만들기](../designers/how-to-create-a-grayscale-texture-shader.md)   
  [셰이더 디자이너](../designers/shader-designer.md)   
  [셰이더 디자이너 노드](../designers/shader-designer-nodes.md)
-
-
-

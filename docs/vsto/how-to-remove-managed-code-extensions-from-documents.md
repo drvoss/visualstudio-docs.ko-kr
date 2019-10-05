@@ -1,5 +1,5 @@
 ---
-title: '방법: 문서에서 관리 코드 확장명 제거'
+title: '방법: 문서에서 관리 코드 확장 제거'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -8,51 +8,51 @@ dev_langs:
 helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], removing
 - documents [Office development in Visual Studio], managed code extensions
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2057fe53a571bccf04373636f83aaedecebfd4ef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83bd57c8ffdcb268a560431c74806ddb6544d4e8
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964775"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252163"
 ---
-# <a name="how-to-remove-managed-code-extensions-from-documents"></a>방법: 문서에서 관리 코드 확장명 제거
-  프로그래밍 방식으로 문서 또는 Microsoft Office Word 또는 Microsoft Office Excel 용 문서 수준 사용자 지정을 포함 된 통합 문서에서 사용자 지정 어셈블리를 제거할 수 있습니다. 사용자가 다음 문서를 열 고 볼 수 있으며 콘텐츠를 하지만 문서에 추가한 모든 사용자 지정 사용자 인터페이스 (UI)는 표시 되지 코드가 실행 되지 않습니다.  
-  
- [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
-  
- 하나를 사용 하 여 사용자 지정 어셈블리를 제거할 수 있습니다 합니다 `RemoveCustomization` 에서 제공 하는 메서드는 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]합니다. 어떤 방법을 사용 하 여 런타임에 사용자 지정을 제거 하려는 여부에 따라 달라 집니다 (즉, 단어 하는 동안 사용자 지정에서 코드를 실행 하 여 문서 또는 Excel 통합 문서 연 경우) 또는 닫힌된 문서 또는 문서에서 사용자 지정을 제거 하려는 경우 해당 i Microsoft Office가 설치 되지 않은 서버에 대 한 s입니다.  
-  
- ![비디오 링크](../vsto/media/playvideo.gif "비디오 링크") 관련된 비디오 데모를 참조 하세요. [어떻게 할까요 연결 또는 분리를 VSTO 어셈블리 Word 문서에서? ](http://go.microsoft.com/fwlink/?LinkId=136782).  
-  
-## <a name="to-remove-the-customization-assembly-at-runtime"></a>런타임 시 사용자 지정 어셈블리를 제거 하려면  
-  
-1.  사용자 지정 코드에서 호출 된 <xref:Microsoft.Office.Tools.Word.Document.RemoveCustomization%2A> (Word 용) 메서드 또는 <xref:Microsoft.Office.Tools.Excel.Workbook.RemoveCustomization%2A> 메서드 (Excel 용). 더 이상 필요 없는 사용자 지정 후에이 메서드를 호출 해야 합니다.  
-  
-     코드에서이 메서드를 호출 하는 위치는 사용자 지정을 사용 하는 방법에 따라 달라 집니다. 예를 들어 경우 문서 자체 (사용자 지정 하지 함)만 해야 하는 다른 클라이언트에 문서를 보낼 준비가 될 때까지 사용자 지정의 기능을 사용 하는 고객을 제공할 수 있습니다를 호출 하는 몇 가지 UI `RemoveCustomization` 고객이 경우 클릭 합니다. 또는 사용자 지정 사용자 지정 고객에 게 직접 액세스할 수 있는 다른 기능을 제공 하지 않습니다 하지만 처음 열 때 데이터를 사용 하 여 문서를 채웁니다, 그런 다음 호출할 수 있습니다 RemoveCustomization 사용자 지정 되 자 마자 완료 된 문서를 초기화 합니다.  
-  
-## <a name="to-remove-the-customization-assembly-from-a-closed-document-or-a-document-on-a-server"></a>닫힌된 문서 또는 문서에는 서버에서 사용자 지정 어셈블리를 제거 하려면  
-  
-1.  콘솔 응용 프로그램 또는 Windows Forms 프로젝트와 같은 Microsoft Office를 필요 하지 않은 프로젝트에 대 한 참조를 추가 합니다 *Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll* 어셈블리입니다.  
-  
-2.  다음을 추가 합니다 **가져오기를** 또는 **사용 하 여** 문을 코드 파일의 맨 위에 있습니다.  
-  
+# <a name="how-to-remove-managed-code-extensions-from-documents"></a>방법: 문서에서 관리 코드 확장 제거
+  Microsoft Office Word 또는 Microsoft Office Excel에 대 한 문서 수준 사용자 지정의 일부인 문서 또는 통합 문서에서 프로그래밍 방식으로 사용자 지정 어셈블리를 제거할 수 있습니다. 그러면 사용자가 문서를 열고 내용을 볼 수 있지만 문서에 추가 하는 사용자 지정 UI (사용자 인터페이스)는 표시 되지 않으며 코드가 실행 되지 않습니다.
+
+ [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
+
+ 에서 제공 `RemoveCustomization` [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]하는 메서드 중 하나를 사용 하 여 사용자 지정 어셈블리를 제거할 수 있습니다. 런타임에 사용자 지정을 제거할지 (즉, Word 문서 또는 Excel 통합 문서가 열려 있는 상태에서 사용자 지정 코드를 실행 하 여), 아니면 닫힌 문서나 문서에서 사용자 지정을 제거할지 여부에 따라 사용 하는 방법이 달라 집니다. Microsoft Office 설치 되지 않은 서버에 있는 s.
+
+ ![비디오에 연결](../vsto/media/playvideo.gif "비디오에 연결") 관련 동영상 데모를 보려면 어떻게 할까요 [?를 참조 하세요. Word 문서에서 VSTO 어셈블리를 연결 하거나 분리 하 시겠습니까? ](http://go.microsoft.com/fwlink/?LinkId=136782).
+
+## <a name="to-remove-the-customization-assembly-at-run-time"></a>런타임에 사용자 지정 어셈블리를 제거 하려면
+
+1. 사용자 지정 코드에서 <xref:Microsoft.Office.Tools.Word.Document.RemoveCustomization%2A> 메서드 (Word의 경우) <xref:Microsoft.Office.Tools.Excel.Workbook.RemoveCustomization%2A> 또는 메서드 (Excel의 경우)를 호출 합니다. 이 메서드는 사용자 지정이 더 이상 필요 하지 않은 경우에만 호출 해야 합니다.
+
+     코드에서이 메서드를 호출 하는 위치는 사용자 지정이 사용 되는 방식에 따라 달라 집니다. 예를 들어 고객이 사용자 지정 기능을 사용 하는 경우 사용자 지정이 아닌 문서 자체에만 필요한 다른 클라이언트에 문서를 보낼 준비가 될 때까지 사용자 지정 기능을 사용 하는 경우 고객이 해당 `RemoveCustomization` 기능을 클릭할 때를 호출 하는 UI를 제공할 수 있습니다. 또는 사용자 지정이 처음 열 때 데이터를 사용 하 여 문서를 채우면 사용자 지정에서 고객이 직접 액세스할 수 있는 다른 기능을 제공 하지 않는 경우 사용자 지정이 끝나면 즉시 RemoveCustomization을 호출할 수 있습니다. 문서 초기화를 완료 합니다.
+
+## <a name="to-remove-the-customization-assembly-from-a-closed-document-or-a-document-on-a-server"></a>닫힌 문서 또는 서버의 문서에서 사용자 지정 어셈블리를 제거 하려면
+
+1. 콘솔 응용 프로그램 또는 Windows Forms 프로젝트와 같이 Microsoft Office 필요 없는 프로젝트에서는 *ServerDocument* 어셈블리에 대 한 참조를 추가 합니다.
+
+2. 다음 **Imports** 또는 **using** 문을 코드 파일의 맨 위에 추가 합니다.
+
      [!code-csharp[Trin_VstcoreDeployment#1](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#1)]
-     [!code-vb[Trin_VstcoreDeployment#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#1)]  
-  
-3.  정적 호출 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> 메서드는 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 클래스 및 솔루션의 문서 경로 매개 변수를 지정 합니다.  
-  
-     다음 코드 예제에서는 명명 된 문서에서 사용자 지정 제거 된다고 가정 *WordDocument1.docx* 바탕 화면입니다.  
-  
+     [!code-vb[Trin_VstcoreDeployment#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#1)]
+
+3. 클래스의 정적 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> 메서드를 호출 하 고 매개 변수에 대 한 솔루션 문서 경로를 지정 합니다. <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>
+
+     다음 코드 예제에서는 데스크톱에 있는 *worddocument1.docx* 라는 문서에서 사용자 지정을 제거 하는 것으로 가정 합니다.
+
      [!code-csharp[Trin_VstcoreDeployment#2](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#2)]
-     [!code-vb[Trin_VstcoreDeployment#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#2)]  
-  
-4.  프로젝트를 빌드하고 사용자 지정을 제거 하려는 컴퓨터의 응용 프로그램을 실행 합니다. 컴퓨터에는 Visual Studio 2010 Tools for Office 런타임 설치 되어 있어야 합니다.  
-  
-## <a name="see-also"></a>참고자료  
- [ServerDocument 클래스를 사용 하 여 서버의 문서 관리](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
- [방법: 문서에 관리 코드 확장명 연결](../vsto/how-to-attach-managed-code-extensions-to-documents.md)  
+     [!code-vb[Trin_VstcoreDeployment#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#2)]
+
+4. 프로젝트를 빌드하고 사용자 지정을 제거 하려는 컴퓨터에서 응용 프로그램을 실행 합니다. 컴퓨터에 Visual Studio 2010 Tools for Office runtime이 설치 되어 있어야 합니다.
+
+## <a name="see-also"></a>참고 항목
+- [ServerDocument 클래스를 사용 하 여 서버에서 문서 관리](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)
+- [방법: 문서에 관리 코드 확장명 연결](../vsto/how-to-attach-managed-code-extensions-to-documents.md)

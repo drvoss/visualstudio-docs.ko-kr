@@ -1,96 +1,90 @@
-items:
 - name: 버전 제어
   href: /visualstudio/version-control/index
 - name: 개요
   items:
-  - name: Git에 대한 자세한 정보
-    href: /azure/devops/repos/git/gitworkflow?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
-  - name: 오른쪽 버전 제어 선택
-    href: /azure/devops/repos/tfvc/comparison-git-tfvc?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: Git에 대한 자세한 정보
+      href: /azure/devops/repos/git/gitworkflow?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: 오른쪽 버전 제어 선택
+      href: /azure/devops/repos/tfvc/comparison-git-tfvc?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
 - name: 빠른 시작
   items:
-  - name: Git 리포지토리 만들기 - 웹
-    href: /azure/devops/repos/git/create-new-repo?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
-  - name: Git 리포지토리 만들기 - CLI
-    href: /azure/devops/repos/git/share-your-code-in-git-cmdline?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
-  - name: Git에서 코드 공유
-    href: /azure/devops/repos/git/share-your-code-in-git-vs-2017?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
-  - name: Azure Repo에 리포지토리 가져오기
-    href: /azure/devops/repos/git/import-git-repository?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
-  - name: TFVC에서 코드 공유
-    href: /azure/devops/repos/tfvc/share-your-code-in-tfvc-vs?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: Git 리포지토리 만들기 - 웹
+      href: /azure/devops/repos/git/create-new-repo?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: Git 리포지토리 만들기 - CLI
+      href: /azure/devops/repos/git/share-your-code-in-git-cmdline?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: Git에서 코드 공유
+      href: /azure/devops/repos/git/share-your-code-in-git-vs-2017?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: Azure Repo에 리포지토리 가져오기
+      href: /azure/devops/repos/git/import-git-repository?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: TFVC에서 코드 공유
+      href: /azure/devops/repos/tfvc/share-your-code-in-tfvc-vs?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
 - name: 자습서
   items:
-  - name: Git
-    href: /azure/devops/repos/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
-    items:
-    - name: 새 리포지토리 만들기
-      href: /azure/devops/repos/git/creatingrepo?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
-    - name: 기존 리포지토리 복제
-      href: /azure/devops/repos/git/clone?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
-    - name: 커밋으로 작업 저장
-      href: /azure/devops/repos/git/commits?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
-    - name: 분기에서 작업 만들기
-      href: /azure/devops/repos/git/branches?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
-    - name: 푸시로 코드 공유
-      href: /azure/devops/repos/git/pushing?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
-    - name: 가져오기 및 끌어오기로 코드 업데이트
-      href: /azure/devops/repos/git/pulling?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
-    - name: 끌어오기 요청으로 코드 검토
-      href: /azure/devops/repos/git/pullrequest?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
-    - name: 다시 지정으로 변경 내용 적용
-      href: /azure/devops/repos/git/rebase?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
-    - name: cherry-pick으로 변경 내용 복사
-      href: /azure/devops/repos/git/cherry-pick?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
-    - name: 병합 충돌 해결
-      href: /azure/devops/repos/git/merging?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
-    - name: 변경 취소
-      href: /azure/devops/repos/git/undo?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
-    - name: 파일 무시
-      href: /azure/devops/repos/git/ignore-files?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
-    - name: 기록 보기
-      href: /azure/devops/repos/git/review-history?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
-  - name: TFVC
-    items:
-    - name: '연습: 버그 수정 및 코드 검토'
-      href: /azure/devops/repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
-    - name: 'Visual Studio: 코드 검토'
-      href: /azure/devops/repos/tfvc/get-code-reviewed-vs?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: Git
+      items:
+        - name: Git
+          href: /azure/devops/repos/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+        - name: 새 리포지토리 만들기
+          href: /azure/devops/repos/git/creatingrepo?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+        - name: 기존 리포지토리 복제
+          href: /azure/devops/repos/git/clone?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+        - name: 커밋으로 작업 저장
+          href: /azure/devops/repos/git/commits?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+        - name: 분기에서 작업 만들기
+          href: /azure/devops/repos/git/branches?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+        - name: 푸시로 코드 공유
+          href: /azure/devops/repos/git/pushing?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+        - name: 가져오기 및 끌어오기로 코드 업데이트
+          href: /azure/devops/repos/git/pulling?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+        - name: 끌어오기 요청으로 코드 검토
+          href: /azure/devops/repos/git/pullrequest?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+        - name: 다시 지정으로 변경 내용 적용
+          href: /azure/devops/repos/git/rebase?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+        - name: cherry-pick으로 변경 내용 복사
+          href: /azure/devops/repos/git/cherry-pick?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+        - name: 병합 충돌 해결
+          href: /azure/devops/repos/git/merging?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+        - name: 변경 취소
+          href: /azure/devops/repos/git/undo?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+        - name: 파일 무시
+          href: /azure/devops/repos/git/ignore-files?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+        - name: 기록 보기
+          href: /azure/devops/repos/git/review-history?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: TFVC
+      items:
+        - name: '연습: 버그 수정 및 코드 검토'
+          href: /azure/devops/repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+        - name: 'Visual Studio: 코드 검토'
+          href: /azure/devops/repos/tfvc/get-code-reviewed-vs?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
 - name: 개념
   items:
-  - name: Git의 기록
-    href: /azure/devops/repos/git/history?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
-  - name: 기록 단순화
-    href: /azure/devops/articles/git-log-history-simplification?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
-  - name: 분기 조직
-    href: /azure/devops/repos/git/git-branching-guidance?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
-  - name: 포크
-    href: /azure/devops/repos/git/forks?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
-  - name: 인증
-    href: /azure/devops/repos/git/auth-overview?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
-  - name: Git의 날짜 이해
-    href: /azure/devops/repos/git/git-dates?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
-  - name: Git의 이름 이해
-    href: /azure/devops/repos/git/git-names?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: Git의 기록
+      href: /azure/devops/repos/git/history?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: 기록 단순화
+      href: /azure/devops/articles/git-log-history-simplification?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: 분기 조직
+      href: /azure/devops/repos/git/git-branching-guidance?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: 포크
+      href: /azure/devops/repos/git/forks?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: 인증
+      href: /azure/devops/repos/git/auth-overview?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: Git의 날짜 이해
+      href: /azure/devops/repos/git/git-dates?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: Git의 이름 이해
+      href: /azure/devops/repos/git/git-names?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
 - name: 방법 가이드
   items:
-  - name: SSH로 인증
-    href: /azure/devops/repos/git/use-ssh-keys-to-authenticate?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
-  - name: Git 자격 증명 관리자로 인증
-    href: /azure/devops/repos/git/set-up-credential-managers?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: SSH로 인증
+      href: /azure/devops/repos/git/use-ssh-keys-to-authenticate?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: Git 자격 증명 관리자로 인증
+      href: /azure/devops/repos/git/set-up-credential-managers?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
 - name: 참조
   items:
-  - name: 명령 참조
-    href: /azure/devops/repos/git/command-prompt?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
-  - name: 질문과 대답
-    href: /azure/devops/repos/git/howto?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: 명령 참조
+      href: /azure/devops/repos/git/command-prompt?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
+    - name: 질문과 대답
+      href: /azure/devops/repos/git/howto?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json
 - name: 자료
   items:
-  - name: Git이란?
-    href: /azure/devops/repos/get-started/what-is-repos#git
-ms.openlocfilehash: 9b2a5968cba8e1aefa09d7e10b9a5c0e2632f96f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279416"
+    - name: Git이란?
+      href: '/azure/devops/repos/get-started/what-is-repos#git'

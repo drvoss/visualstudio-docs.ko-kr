@@ -1,27 +1,22 @@
 ---
 title: 프로젝트 형식 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, adding
 - projects [Visual Studio SDK], adding new types
 ms.assetid: 263a084f-f97a-4e09-add7-f0e8a6a27daf
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: dd9828b947c9df8d86a7d66aff96990fbf753505
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e32778e6c1ab82eddb50bbac1e79430d827716e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51720982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203255"
 ---
 # <a name="project-types"></a>프로젝트 형식
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -74,4 +69,3 @@ ms.locfileid: "51720982"
   
  [프로젝트](../../extensibility/internals/projects.md)  
  확장 하는 방법에 설명 합니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 프로젝트 시스템.
-

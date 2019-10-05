@@ -2,7 +2,6 @@
 title: 'Ijsdebugstackwalker:: Getnext 메서드 | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,19 +15,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 695bb6cecc2a27565dce21b4a965ad08d90d7be7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ba8931a01f3afe05f791f4d89da60a9354868215
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977876"
 ---
 # <a name="ijsdebugstackwalkergetnext-method"></a>IJsDebugStackWalker::GetNext 메서드
 다음 프레임을 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetNext(  
    IJsDebugFrame **ppFrame  
 );  
@@ -41,7 +40,7 @@ HRESULT GetNext(
 ## <a name="return-value"></a>반환 값  
   
 ## <a name="remarks"></a>설명  
- 더 이상 스택 프레임이을 열거할 수 있는 경우 E_JsDEBUG_OUTSIDE_OF_VM를 반환 합니다.  
+ 열거할 자세한 스택 프레임이 없는 경우 E_JsDEBUG_OUTSIDE_OF_VM를 반환 합니다.  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더:** jscript9diag.h  

@@ -1,14 +1,9 @@
 ---
 title: '&lt;종속성&gt; 요소 (ClickOnce 응용 프로그램) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
 - urn:schemas-microsoft-com:asm.v2#os
@@ -31,13 +26,13 @@ ms.assetid: 09d6a1e0-60f8-4fbd-843b-8e49ee3115a3
 caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: e76d517af1e0bd93507a47facd63bd50ae98e635
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e79fadcab1a4f00c084d675c3267b5886772fe2c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199875"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;종속성&gt; 요소 (ClickOnce 응용 프로그램)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,21 +104,21 @@ ms.locfileid: "49233859"
 |`supportUrl`|선택 사항입니다. 종속 플랫폼에 대 한 지원 URL을 지정합니다. 이 URL은 필요한 플랫폼 없으면 사용자에 게 표시 됩니다.|  
 |`description`|선택 사항입니다. 에 설명 된 운영 체제를 이해 하기 쉬운 형태로 설명 된 `dependentOS` 요소입니다.|  
   
-### <a name="osversioninfo"></a>데  
- 필수. 이 요소는 `dependentOS` 요소의 자식이며 `os` 요소를 포함합니다. 이 요소에는 특성이 없습니다.  
+### <a name="osversioninfo"></a>osVersionInfo  
+ 필수 요소. 이 요소는 `dependentOS` 요소의 자식이며 `os` 요소를 포함합니다. 이 요소에는 특성이 없습니다.  
   
 ### <a name="os"></a>os  
- 필수. 이 요소는 `osVersionInfo` 요소의 자식입니다. 이 요소에는 다음 특성이 있습니다.  
+ 필수 요소. 이 요소는 `osVersionInfo` 요소의 자식입니다. 이 요소에는 다음 특성이 있습니다.  
   
 |특성|설명|  
 |---------------|-----------------|  
-|`majorVersion`|필수. 운영 체제의 주 버전 번호를 지정합니다.|  
-|`minorVersion`|필수. 운영 체제의 부 버전 번호를 지정합니다.|  
-|`buildNumber`|필수. Os 빌드 번호를 지정합니다.|  
-|`servicePackMajor`|필수. 운영 체제 서비스 팩 주 번호를 지정합니다.|  
+|`majorVersion`|필수 요소. 운영 체제의 주 버전 번호를 지정합니다.|  
+|`minorVersion`|필수 요소. 운영 체제의 부 버전 번호를 지정합니다.|  
+|`buildNumber`|필수 요소. Os 빌드 번호를 지정합니다.|  
+|`servicePackMajor`|필수 요소. 운영 체제 서비스 팩 주 번호를 지정합니다.|  
 |`servicePackMinor`|선택 사항입니다. 운영 체제 서비스 팩 부 버전 번호를 지정합니다.|  
 |`productType`|선택 사항입니다. 제품 유형 값을 식별합니다. 유효한 값은 `server`, `workstation` 및 `domainController`입니다. 예를 들어, Windows 2000 Professional,이 특성 값은 `workstation`합니다.|  
-|`suiteType`|선택 사항입니다. 시스템 또는 시스템의 구성 유형을 사용할 수 있는 제품군을 식별합니다. 유효한 값은 `backoffice`, `blade`, `datacenter`, `enterprise`를 `home`를 `professional`, `smallbusiness`를 `smallbusinessRestricted`, 및 `terminal`합니다. 예를 들어, Windows 2000 Professional,이 특성 값은 `professional`합니다.|  
+|`suiteType`|선택 사항입니다. 시스템 또는 시스템의 구성 유형을 사용할 수 있는 제품군을 식별합니다. 유효한 값은 `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted` 및 `terminal`입니다. 예를 들어, Windows 2000 Professional,이 특성 값은 `professional`합니다.|  
   
 ### <a name="dependentassembly"></a>dependentAssembly  
  선택 사항입니다. 포함 된 `assemblyIdentity` 요소입니다. `dependentOS` 및 `dependentAssembly` 요소는 함께: 둘 중 하나만 존재 해야 합니다는 `dependency` 요소, 하지만 둘 다.  
@@ -132,19 +127,19 @@ ms.locfileid: "49233859"
   
 |특성|설명|  
 |---------------|-----------------|  
-|`dependencyType`|필수. 종속성 유형을 지정합니다. 유효한 값은 `preprequisite` 및 `install`입니다. `install` 어셈블리의 일부로 설치 되는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램입니다. A `prerequisite` 어셈블리는 앞의 전역 어셈블리 캐시 (GAC)에 있어야 합니다 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램을 설치할 수 있습니다.|  
-|`allowDelayedBinding`|필수. 어셈블리를 런타임에 프로그래밍 방식으로 로드할 수 있는지 여부를 지정 합니다.|  
+|`dependencyType`|필수 요소. 종속성 유형을 지정합니다. 유효한 값은 `preprequisite` 및 `install`입니다. `install` 어셈블리의 일부로 설치 되는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램입니다. A `prerequisite` 어셈블리는 앞의 전역 어셈블리 캐시 (GAC)에 있어야 합니다 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램을 설치할 수 있습니다.|  
+|`allowDelayedBinding`|필수 요소. 어셈블리를 런타임에 프로그래밍 방식으로 로드할 수 있는지 여부를 지정 합니다.|  
 |`group`|선택 사항입니다. 경우는 `dependencyType` 특성이로 설정 된 `install`, 필요할 때 유일한 설치 프로그램을 어셈블리의 명명 된 그룹을 지정 합니다. 자세한 내용은 [연습: 디자이너를 사용하여 ClickOnce 배포 API에서 요청 시 어셈블리 다운로드](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)를 참조하세요.<br /><br /> 경우로 `framework` 하며 `dependencyType` 특성이로 설정 된 `prerequisite`,.NET Framework의 일부로 어셈블리를 지정 합니다. 전역 어셈블리 캐시 (GAC)에 설치 하는 경우이 어셈블리에 대 한 검사 되지 않습니다는 [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] 이상.|  
 |`codeBase`|때 필요 합니다 `dependencyType` 특성이로 설정 된 `install`합니다. 종속 어셈블리 경로입니다. 매니페스트의 코드의 상대 경로 또는 절대 경로, 기본 수 있습니다. 이 경로 유효한 어셈블리 매니페스트에 대 한 순서에 유효한 URI 여야 합니다.|  
 |`size`|때 필요 합니다 `dependencyType` 특성이로 설정 된 `install`합니다. 크기 (바이트)에서 종속 어셈블리입니다.|  
   
 ### <a name="assemblyidentity"></a>assemblyIdentity  
- 필수. 이 요소는 `dependentAssembly` 요소의 자식이며 다음과 같은 특성이 있습니다.  
+ 필수 요소. 이 요소는 `dependentAssembly` 요소의 자식이며 다음과 같은 특성이 있습니다.  
   
 |특성|설명|  
 |---------------|-----------------|  
-|`name`|필수. 응용 프로그램의 이름을 식별합니다.|  
-|`version`|필수. 다음 형식으로 응용 프로그램의 버전 번호를 지정합니다. `major.minor.build.revision`|  
+|`name`|필수 요소. 응용 프로그램의 이름을 식별합니다.|  
+|`version`|필수 요소. 다음 형식으로 응용 프로그램의 버전 번호를 지정합니다. `major.minor.build.revision`|  
 |`publicKeyToken`|선택 사항입니다. 마지막 8 바이트를 나타내는 16 자리의 16 진수 문자열을 지정 합니다 `SHA-1` 응용 프로그램이 나 어셈블리 서명에 사용 된 공개 키의 해시 값입니다. 카탈로그에 서명 하는 데 공개 키 2048 비트 이상 이어야 합니다.|  
 |`processorArchitecture`|선택 사항입니다. 프로세서를 지정합니다. 유효한 값은 `x86` 32 비트 Windows에 대 한 및 `I64` 64 비트 Windows에 대 한 합니다.|  
 |`language`|선택 사항입니다. 예: EN-US, 어셈블리의 두 부분 언어 코드를 식별합니다.|  
@@ -160,14 +155,14 @@ ms.locfileid: "49233859"
 ### <a name="dsigtransform"></a>dsig:Transform  
  합니다 `dsig:Transform` 의 필수 자식 요소인는 `dsig:Transforms` 요소입니다. `dsig:Transform` 요소에는 다음 특성이 있습니다.  
   
-|특성|설명|  
+|특성|Description|  
 |---------------|-----------------|  
 |`Algorithm`|이 파일에 대 한 다이제스트를 계산 하는 데 사용 된 알고리즘입니다. 사용 하는 유일한 값 현재 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 는 `urn:schemas-microsoft-com:HashTransforms.Identity`합니다.|  
   
 ### <a name="dsigdigestmethod"></a>dsig:DigestMethod  
  합니다 `dsig:DigestMethod` 의 필수 자식 요소인는 `hash` 요소입니다. `dsig:DigestMethod` 요소에는 다음 특성이 있습니다.  
   
-|특성|설명|  
+|특성|Description|  
 |---------------|-----------------|  
 |`Algorithm`|이 파일에 대 한 다이제스트를 계산 하는 데 사용 된 알고리즘입니다. 사용 하는 유일한 값 현재 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 는 `http://www.w3.org/2000/09/xmldsig#sha1`합니다.|  
   
@@ -224,9 +219,6 @@ ms.locfileid: "49233859"
 </dependency>  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [ClickOnce 응용 프로그램 매니페스트](../deployment/clickonce-application-manifest.md)   
- [\<종속성 > 요소](../deployment/dependency-element-clickonce-deployment.md)
-
-
-
+ [\<dependency> 요소](../deployment/dependency-element-clickonce-deployment.md)

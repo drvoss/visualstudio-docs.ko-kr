@@ -1,8 +1,6 @@
 ---
 title: 옵션, 텍스트 편집기, XAML, 서식
 ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XAML.Formatting.General
@@ -28,15 +26,15 @@ helpviewer_keywords:
 ms.assetid: ad3820b1-0d94-4807-a74c-c3467ed973a2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 4686760625062fea7984cdc05386284f8f98c4ee
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 3ed364d9c8995a93acb0de8002bafefd603c2d71
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969256"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>옵션, 텍스트 편집기, XAML, 서식
 
@@ -46,13 +44,13 @@ ms.locfileid: "52388990"
 
 다음 이벤트가 검색되면 자동 서식 지정이 실행될 수 있습니다.
 
--   끝 태그 또는 단순 태그의 완료.
+- 끝 태그 또는 단순 태그의 완료.
 
--   시작 태그의 완료.
+- 시작 태그의 완료.
 
--   클립보드에서 붙여넣기.
+- 클립보드에서 붙여넣기.
 
--   서식 키보드 명령.
+- 서식 키보드 명령.
 
 자동 서식 지정을 일으키는 이벤트를 지정할 수 있습니다.
 
@@ -148,7 +146,6 @@ Width="75">Hello</Button>
 
 ```xml
 <Grid>
-
 
 <Button Name="button1">Hello</Button>
 

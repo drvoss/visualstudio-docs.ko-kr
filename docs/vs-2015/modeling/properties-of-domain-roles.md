@@ -1,23 +1,20 @@
 ---
 title: 도메인 역할의 속성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 ms.assetid: 5a7bb18c-638e-45e8-9d79-9aa6a9e14b0e
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 51149979544c19b0a887ad77e80a26284051778b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b78c409a761a98439cbbbfdf088e052eca745f32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244090"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444473"
 ---
 # <a name="properties-of-domain-roles"></a>도메인 역할의 속성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,10 +43,7 @@ ms.locfileid: "49244090"
 |속성 표시 이름|생성 된 역할 속성에 대해 생성된 된 디자이너에 표시 되는 이름입니다.|속성 이름 속성은 조정 된 값입니다.|  
   
 > [!NOTE]
->  표시 이름의 기본값은 각 대문자 문자는 소문자 문자 앞에 및 다른 대문자가 나오지 않습니다 앞에 공백을 삽입 하 여 연결된 된 속성 값을 기반으로 합니다.  
+> 표시 이름의 기본값은 각 대문자 문자는 소문자 문자 앞에 및 다른 대문자가 나오지 않습니다 앞에 공백을 삽입 하 여 연결된 된 속성 값을 기반으로 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [도메인 관계의 속성](../modeling/properties-of-domain-relationships.md)
-
-
-

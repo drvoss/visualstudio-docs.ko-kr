@@ -1,26 +1,21 @@
 ---
 title: 원본 제어 플러그 인 아키텍처 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, architecture
 ms.assetid: 35351d4c-9414-409b-98fc-f2023e2426b7
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c7ded33f6296d9ddb0b87a3d2916a95249169f82
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 370f88ce4d8fc372ce31e1e85e88d5379f4e1ba5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183397"
 ---
 # <a name="source-control-plug-in-architecture"></a>소스 제어 플러그 인 아키텍처
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ ms.locfileid: "51805216"
 소스 제어 지원에 추가할 수 있습니다는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 구현 하 고 소스 제어 플러그 인을 연결 하 여 통합된 개발 환경 (IDE)입니다. IDE는 잘 정의 된 원본 제어 플러그 인 API를 통해 플러그 인 소스 제어에 연결합니다. IDE 도구 모음 및 메뉴 명령으로 구성 된 사용자 인터페이스 (UI)를 제공 하 여 원본 제어 시스템의 버전 제어 기능을 노출 합니다. 소스 제어 플러그 인 소스 제어 기능을 구현합니다.  
   
 ## <a name="source-control-plug-in-resources"></a>소스 제어 플러그 인 리소스  
- 원본 제어 플러그 인 만들기 및 버전 관리 응용 프로그램을 연결 하는 데 리소스를 제공 합니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE. 원본 제어 플러그 인에 통합 될 수 있도록 소스 제어 플러그 인에서 구현 해야 하는 API 사양을 포함 된 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE. 또한 기본 원본 제어 플러그 인 보여 주는 구현 하는 원본 제어 플러그 인 API를 사용 하 여 규정을 준수 하는 필수 기능을 구현 하는 코드 샘플 (c + +로 작성)를 포함 합니다.  
+ 원본 제어 플러그 인 만들기 및 버전 관리 응용 프로그램을 연결 하는 데 리소스를 제공 합니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE. 원본 제어 플러그 인에 통합 될 수 있도록 소스 제어 플러그 인에서 구현 해야 하는 API 사양을 포함 된 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE. 코드 샘플도 포함 (작성 된 C++)를 기본 원본 제어 플러그 인 설명 함수의 구현 형태가 필수 원본 제어 플러그 인 API를 사용 하 여 준수를 구현 하는 합니다.  
   
  원본 제어 플러그 인 API 사양을 사용 하면 필요한 원본 제어 플러그 인 API에 따라 구현 된 함수 집합을 사용 하 여 소스 제어 DLL을 만드는 경우 선택한 모든 소스 제어 시스템을 활용할 수 있습니다.  
   
@@ -48,4 +43,3 @@ ms.locfileid: "51805216"
  [원본 제어 플러그 인](../../extensibility/source-control-plug-ins.md)   
  [용어집](../../extensibility/source-control-plug-in-glossary.md)   
  [소스 제어 플러그 인 만들기](../../extensibility/internals/creating-a-source-control-plug-in.md)
-

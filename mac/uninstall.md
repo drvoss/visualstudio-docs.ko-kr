@@ -1,25 +1,26 @@
 ---
 title: Mac용 Visual Studio 제거
 description: Mac용 Visual Studio 및 관련 도구를 제거하는 방법을 안내합니다.
-author: conceptdev
-ms.author: crdun
-ms.date: 05/06/2018
+author: asb3993
+ms.author: amburns
+ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 4a0ecef49d8c3493ff6094be66f1d05ad588077c
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 7d86e5abbb25d8c348f550d28618aae614725471
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295672"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211515"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Mac용 Visual Studio 제거
 
-Mac용 Visual Studio와 같은 독립형 앱을 포함하여 플랫폼 간 응용 프로그램 개발을 지원하는 여러 가지 Xamarin 제품이 있습니다.
-
-이 가이드를 통해 관련 섹션으로 이동하여 각 제품을 개별적으로 제거하거나 [스크립트 제거](#uninstall-script) 섹션에 제공된 스크립트를 사용하여 모든 제품을 제거할 수 있습니다.
+이 가이드를 통해 관련 섹션으로 이동하여 Mac용 Visual Studio의 각 구성 요소를 개별적으로 제거하거나 [스크립트 제거](#uninstall-script) 섹션에 제공된 스크립트를 사용하여 모든 제품을 제거할 수 있습니다.
 
 이전에 Xamarin Studio를 머신에 설치한 경우 다음 단계에 더하여 [Xamarin의 제거](/xamarin/cross-platform/get-started/installation/uninstalling-xamarin#uninstall-xamarin-studio-on-mac) 가이드의 안내에 따라야 할 수도 있습니다.
+
+> [!NOTE]
+> 이 정보는 사용자의 컴퓨터에서 Mac용 Visual Studio 2019 또는 2017만 제거합니다. Visual Studio Code를 제거하려면 자세한 내용은 [이 문제](https://github.com/Microsoft/vscode/issues/52151)를 참조하세요.
 
 ## <a name="uninstall-script"></a>스크립트 제거
 
@@ -34,10 +35,11 @@ Mac용 Visual Studio 및 머신의 모든 구성 요소를 제거하는 데 사�
 
 [스크립트 제거](https://raw.githubusercontent.com/MicrosoftDocs/visualstudio-docs/master/mac/resources/uninstall-vsmac.sh)를 사용하면 Visual Studio 및 Xamarin 구성 요소를 한 번에 제거할 수 있습니다.
 
-이 제거 스크립트는 이 문서에 나와 있는 대부분의 명령을 포함합니다. 다음과 같은 두 가지 항목은 외부 종속성 문제의 소지가 있어 이 스크립트에 포함되지 않았습니다.
+이 제거 스크립트는 이 문서에 나와 있는 대부분의 명령을 포함합니다. 다음과 같은 세 가지 항목은 외부 종속성 문제의 소지가 있어 이 스크립트에 포함되지 않았습니다. 이를 제거하려면 아래 관련 섹션으로 이동하여 수동으로 제거하세요.
 
-- **Mono 제거**
-- **Android AVD 제거**
+- **[Mono 제거](#uninstall-mono-sdk-mdk)**
+- **[Android AVD 제거](#uninstall-android-avd)**
+- **[Android SDK 및 Java SDK 제거](#uninstall-android-sdk-and-java-sdk)**
 
 스크립트를 실행하려면 다음 단계를 수행하십시오.
 
@@ -45,15 +47,17 @@ Mac용 Visual Studio 및 머신의 모든 구성 요소를 제거하는 데 사�
 2. 터미널을 열고 스크립트를 다운로드한 위치로 작업 디렉터리를 변경합니다.
 
     ```bash
-    $ cd /location/of/file
+    cd /location/of/file
     ```
+
 3. 스크립트를 실행 가능으로 설정하고 **sudo**로 실행합니다.
 
     ```bash
-    $ chmod +x ./uninstall-vsmac.sh
-    $ sudo ./uninstall-vsmac.sh
+    chmod +x ./uninstall-vsmac.sh
+    sudo ./uninstall-vsmac.sh
     ```
-4. 마지막으로 제거 스크립트를 삭제합니다.
+
+4. 마지막으로 제거 스크립트를 삭제하고 도킹에서 Mac용 Visual Studio를 제거합니다(있는 경우).
 
 ### <a name="net-core-script"></a>.NET Core 스크립트
 
@@ -65,21 +69,23 @@ Mac용 Visual Studio 및 머신의 모든 구성 요소를 제거하는 데 사�
 2. 터미널을 열고 스크립트를 다운로드한 위치로 작업 디렉터리를 변경합니다.
 
     ```bash
-    $ cd /location/of/file
+    cd /location/of/file
     ```
+
 3. 스크립트를 실행 가능으로 설정하고 **sudo**로 실행합니다.
 
     ```bash
-    $ chmod +x ./dotnet-uninstall-pkgs.sh
-    $ sudo ./dotnet-uninstall-pkgs.sh
+    chmod +x ./dotnet-uninstall-pkgs.sh
+    sudo ./dotnet-uninstall-pkgs.sh
     ```
+
 4. 마지막으로 .NET Core 제거 스크립트를 삭제합니다.
 
 ## <a name="uninstall-visual-studio-for-mac"></a>Mac용 Visual Studio 제거
 
 Mac에서 Visual Studio를 제거하는 첫 번째 단계는 **/Applications** 디렉터리에서 **Visual Studio.app**을 찾아 **휴지통**으로 끌어놓는 것입니다. 또는 다음 이미지의 그림과 같이 마우스 오른쪽 단추를 클릭하고 **Move to Trash**(휴지통으로 이동)를 선택합니다.
 
-![Visual Studio 응용 프로그램을 휴지통으로 이동](media/uninstall-image1.png)
+![Visual Studio 애플리케이션을 휴지통으로 이동](media/uninstall-image1.png)
 
 Xamarin과 관련된 다른 파일이 여전히 파일 시스템에 남아 있다고 해도 이 앱 번들을 삭제하면 Mac용 Visual Studio가 제거됩니다.
 
@@ -93,9 +99,15 @@ rm -rf ~/Library/Preferences/Visual\ Studio
 rm -rf ~/Library/Logs/VisualStudio
 rm -rf ~/Library/VisualStudio
 rm -rf ~/Library/Preferences/Xamarin/
-rm -rf ~/Library/Developer/Xamarin
 rm -rf ~/Library/Application\ Support/VisualStudio
 rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
+rm -rf ~/Library/Application\ Support/VisualStudio/8.0/LocalInstall/Addins/
+```
+
+다양한 Xamarin 파일 및 폴더를 포함하는 다음 디렉터리를 제거할 수도 있습니다. 그러나 제거하기 전에 이 디렉터리에는 Android 서명 키가 포함되어 있다는 점에 유의해야 합니다. 자세한 내용은 **[Android SDK 및 Java SDK 제거](#uninstall-android-sdk-and-java-sdk)** 섹션을 참조하세요.
+
+```bash
+rm -rf ~/Library/Developer/Xamarin
 ```
 
 ## <a name="uninstall-mono-sdk-mdk"></a>Mono SDK(MDK) 제거
@@ -103,7 +115,7 @@ rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
 Mono는 Microsoft .NET Framework의 오픈 소스 구현으로서 Xamarin.iOS, Xamarin.Android 및 Xamarin.Mac 등의 모든 Xamarin 제품에서 해당 플랫폼을 대상으로 하여 C#으로 개발하는 데 사용됩니다.
 
 > [!WARNING]
-> Mac용 Visual Studio 이외에 Unity와 같은 응용 프로그램에서도 Mono를 사용합니다.
+> Mac용 Visual Studio 이외에 Unity와 같은 애플리케이션에서도 Mono를 사용합니다.
 > Mono를 제거하기 전에 Mono에 대한 다른 종속성이 없는지 확인하세요.
 
 컴퓨터에서 Mono 프레임워크를 제거하려면 터미널에서 다음 명령을 실행합니다.
@@ -129,7 +141,10 @@ sudo rm -rf /Library/Frameworks/Xamarin.Android.framework
 
 ### <a name="uninstall-android-sdk-and-java-sdk"></a>Android SDK 및 Java SDK 제거
 
-Android SDK는 Android 응용 프로그램 개발에 필요합니다. Android SDK의 모든 부분을 완전히 제거하려면 **~/Library/Developer/Xamarin/** 에서 해당 파일을 찾아 **휴지통**으로 이동합니다.
+Android SDK는 Android 애플리케이션 개발에 필요합니다. Android SDK의 모든 부분을 완전히 제거하려면 **\~/Library/Developer/Xamarin/** 에서 해당 파일을 찾아 **휴지통** 으로 이동합니다.
+
+> [!WARNING]
+> Mac용 Visual Studio에서 생성되는 Android 서명 키는 `~/Library/Developer/Xamarin/Keystore`에 있습니다. 해당 키를 적절하게 백업해야 합니다. 또는 키 저장소를 보존하려면 이 디렉터리를 제거하지 마세요.
 
 Java SDK(JDK)는 이미 Mac OS X/macOS에 포함되어 있으므로 제거할 필요가 없습니다.
 
@@ -152,7 +167,7 @@ rm -rf ~/.android/avd
 
 ## <a name="uninstall-xamarinios"></a>Xamarin.iOS 제거
 
-Xamarin.iOS를 사용하면 Mac용 Visual Studio에서 C# 또는 F#으로 iOS 응용 프로그램을 개발할 수 있습니다.
+Xamarin.iOS를 사용하면 Mac용 Visual Studio에서 C# 또는 F#으로 iOS 애플리케이션을 개발할 수 있습니다.
 
 터미널에서 다음 명령을 사용하여 파일 시스템에서 모든 Xamarin.iOS 파일을 제거합니다.
 
@@ -206,6 +221,28 @@ rm -rf ~/Library/Logs/XamarinInstaller/
 rm -rf ~/Library/Logs/VisualStudioInstaller/
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf "~/Library/Preferences/Visual Studio/"
+```
+
+* * * 
+
+
+
+
+
+## <a name="uninstall-visual-studio-2019-for-mac-preview"></a>Mac용 Visual Studio 2019 미리 보기 제거
+
+Mac용 Visual Studio 2019 미리 보기가 별도의 미리 보기로 시작되어 Mac용 Visual Studio 2017을 Side-by-Side로 설치하여 작업을 계속할 수 있습니다.
+
+Mac용 Visual Studio 2019가 출시되었으므로, 이제 Mac용 Visual Studio 2019 미리 보기 애플리케이션을 안전하게 제거할 수 있습니다.
+
+미리 보기 애플리케이션 번들을 제거하려면 **애플리케이션** 폴더에서 **Visual Studio(미리 보기)** 를 선택하고 다음 이미지에서 표시된 것처럼 **휴지통으로 이동**을 클릭합니다.
+
+![찾기에서 "휴지통으로 이동" 옵션 선택](media/uninstall-remove-vspreview.png)
+
+다음 명령을 사용하여 미리 보기 plist 파일을 제거할 수도 있습니다.
+
+```bash
+rm -rf ~/Library/Preferences/com.microsoft.visual-studio-preview.plist
 ```
 
 ## <a name="see-also"></a>참고 항목

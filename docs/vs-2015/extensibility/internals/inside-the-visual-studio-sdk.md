@@ -1,14 +1,9 @@
 ---
 title: Visual Studio SDK 기본 사항 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - roadmap, Visual Studio integration SDK
 - Visual Studio integration SDK roadmap
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 caps.latest.revision: 31
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b7a7642d8cd33d53bb7d6d2a472a0690713e25d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3bdc65a145b64071087d72fce9967c67cc2f8426
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795832"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687528"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Visual Studio SDK 기본 사항
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ Visual Studio 아키텍처의 일반화 된 보기
  Visual Studio shell 기본 기능을 제공 하 고 해당 구성 요소 Vspackage 및 MEF 확장 간에 간 통신을 지원 합니다. 자세한 내용은 [Visual Studio Shell](../../extensibility/internals/visual-studio-shell.md)합니다.  
   
 ## <a name="user-experience-guidelines"></a>사용자 환경 지침  
- 이러한 지침 디자인 및 유용성 팁에 대 한 참조를 수행 해야 Visual Studio에 대 한 새로운 기능을 디자인 하려는 경우: [Visual Studio User Experience Guidelines](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)합니다.  
+ Visual Studio에 대 한 새로운 기능을 디자인 하려는 경우를 살펴보고 디자인 및 유용성 팁에 대 한 이러한 지침을 수행 해야 합니다. [Visual Studio User Experience Guidelines](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)합니다.  
   
 ## <a name="commands"></a>명령  
  명령은 문서 인쇄, 보기 새로 고침 또는 새 파일 만들기 등의 작업을 수행하는 함수입니다.  
@@ -76,7 +71,7 @@ Visual Studio 아키텍처의 일반화 된 보기
 ## <a name="document-windows"></a>문서 창  
  문서 창에는 다중 문서 인터페이스 (MDI) 창 프레임이 자식 창이입니다. 문서 창은 텍스트 편집기, 폼 편집기 (라고도 디자이너) 또는 편집 컨트롤을 호스트 하기 일반적으로 사용 되지만 다른 기능 종류를 호스팅할 수도 있습니다. 합니다 **새 파일** 대화 상자에 Visual Studio에서 제공 하는 문서 창의 예입니다.  
   
- 대부분의 편집기는 프로그래밍 언어 또는 HTML 페이지, 프레임셋, c + + 파일 또는 헤더 파일과 같은 파일 형식에 적용 됩니다. 템플릿을 선택 하 여 합니다 **새 파일** 대화 상자에서 사용자를 동적으로 만듭니다 문서 창 편집기 템플릿과 사용 하 여 연결 된 파일 형식에 대 한 합니다. 사용자가 기존 파일을 열 때 문서 창이 만들어집니다.  
+ 대부분의 편집기는 프로그래밍 언어 또는 프레임을 HTML 페이지와 같은 파일 형식에 특정 C++ 파일 또는 헤더 파일입니다. 템플릿을 선택 하 여 합니다 **새 파일** 대화 상자에서 사용자를 동적으로 만듭니다 문서 창 편집기 템플릿과 사용 하 여 연결 된 파일 형식에 대 한 합니다. 사용자가 기존 파일을 열 때 문서 창이 만들어집니다.  
   
  문서 창은 MDI 클라이언트 영역으로 제한 됩니다. 각 문서 창 위쪽에 탭 및 탭 순서 MDI 영역에 열려 있을 수 있는 다른 창에 연결 됩니다. 여러 가로 또는 세로 탭 그룹을 MDI 영역을 분할 하는 옵션을 포함 하는 바로 가기 메뉴를 표시 문서 창의 탭을 마우스 오른쪽 단추로 클릭 합니다. MDI 영역 분할 여러 파일을을 동시에 볼 수 있습니다. 자세한 내용은 [문서 Windows](../../extensibility/internals/document-windows.md)합니다.  
   
@@ -95,22 +90,22 @@ Visual Studio 아키텍처의 일반화 된 보기
   
  프로젝트는 응용 프로그램을 만들기 위해 함께 작동 하는 하나 이상의 프로젝트를 그룹화 하 여 솔루션에도 수집할 수 수 있습니다. 솔루션에 관련 된 프로젝트 및 상태 정보는 두 솔루션 파일, 텍스트 기반 솔루션 (.sln) 파일 및 이진 솔루션 사용자 옵션 (.suo) 파일에 저장 됩니다. 이러한 파일은 이전 버전의 사용 된 그룹 (.vbg) 파일과 유사한 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)], 작업 영역 (.dsw) 및 사용자 옵션 (.opt) 파일의 이전 버전에 사용 된 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]합니다.  
   
- 자세한 내용은 [프로젝트](../../extensibility/internals/projects.md) 하 고 [솔루션](../../extensibility/internals/solutions.md)합니다.  
+ 자세한 내용은 [프로젝트](../../extensibility/internals/projects.md) 하 고 [솔루션](../../extensibility/internals/solutions-overview.md)합니다.  
   
 ## <a name="project-and-item-templates"></a>프로젝트 및 항목 템플릿  
- Visual Studio에는 미리 정의 된 프로젝트 템플릿 및 프로젝트 항목 템플릿을 포함합니다. 사용자 고유의 템플릿을 만들 수도 하 고 또는 커뮤니티에서 템플릿을 가져올 하 고, 다음 Visual Studio에 통합할 수 있습니다. 합니다 [MSDN 코드 갤러리](http://code.msdn.microsoft.com/Project/ProjectDirectory.aspx?ProjectSearchText=visual%20studio) 템플릿 및 확장에 대 한 이동할 위치입니다.  
+ Visual Studio에는 미리 정의 된 프로젝트 템플릿 및 프로젝트 항목 템플릿을 포함합니다. 사용자 고유의 템플릿을 만들 수도 하 고 또는 커뮤니티에서 템플릿을 가져올 하 고, 다음 Visual Studio에 통합할 수 있습니다. 합니다 [MSDN 코드 갤러리](https://code.msdn.microsoft.com/site/search?query=visual%20studio) 템플릿 및 확장에 대 한 이동할 위치입니다.  
   
  템플릿에 특정 종류의 응용 프로그램, 컨트롤, 라이브러리 또는 클래스를 작성 하는 데 필요한 기본 파일과 프로젝트 구조에 포함 됩니다. 템플릿 중 하 나와 유사한 소프트웨어를 개발 하려는 경우 템플릿을 기반으로 하는 프로젝트를 만들고 해당 프로젝트에서 파일을 수정 합니다.  
   
 > [!NOTE]
->  이 템플릿 구조에 대 한 지원 되지 않습니다 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 프로젝트입니다. 만드는 방법에 대 한 자세한 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 프로젝트 템플릿을 참조 하십시오 [마법사 디자인](http://msdn.microsoft.com/library/a7c0be7e-9297-4fed-83e3-5645c896d56b)합니다.  
+> 이 템플릿 구조에 대 한 지원 되지 않습니다 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 프로젝트입니다. 만드는 방법에 대 한 자세한 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 프로젝트 템플릿을 참조 하십시오 [마법사 디자인](https://msdn.microsoft.com/library/a7c0be7e-9297-4fed-83e3-5645c896d56b)합니다.  
   
  자세한 내용은 [추가 프로젝트 및 프로젝트 항목 템플릿](../../extensibility/internals/adding-project-and-project-item-templates.md)합니다.  
   
 ## <a name="properties-and-options"></a>속성 및 옵션  
- **속성** 단일 또는 여러 선택된 항목의 속성 창에 표시 됩니다. [확장 속성](../../extensibility/internals/extending-properties.md) 와 같은 특정 구성 요소에 관련 된 옵션의 집합을 포함 하는 옵션 페이지를 프로그래밍 언어 또는 VSPackage: [옵션 및 옵션 페이지](../../extensibility/internals/options-and-options-pages.md)합니다. 설정은 일반적으로 UI 관련 기능을 가져오고 내보낼 수 있습니다: [사용자 설정에 대 한 지원을](../../extensibility/internals/support-for-user-settings.md)합니다.  
+ 합니다 **속성** 단일 또는 여러 선택된 항목의 속성 창에 표시 됩니다. [속성 확장](../../extensibility/internals/extending-properties.md) 옵션 페이지, VSPackage 또는 프로그래밍 언어와 같은 특정 구성 요소와 관련 된 옵션 집합을 포함 합니다. [옵션 및 옵션 페이지](../../extensibility/internals/options-and-options-pages.md)합니다. 설정은 일반적으로 UI 관련 기능을 가져오고 내보낼 수 있습니다. [사용자 설정에 대 한 지원을](../../extensibility/internals/support-for-user-settings.md)합니다.  
   
-## <a name="visual-studio-services"></a>Visual Studio 서비스  
+## <a name="visual-studio-services"></a>Visual Studio Services  
  서비스 구성 요소를 사용 하는 인터페이스의 특정 집합을 제공 합니다. Visual Studio 확장을 포함 하 여 모든 구성 요소에서 사용할 수 있는 서비스 집합을 제공 합니다. 예를 들어, Visual Studio 서비스를 표시 또는 도움말, 상태 표시줄에 또는 UI 이벤트에 액세스할 수 있도록 동적으로 숨겨진 도구 창을 사용 합니다. Visual Studio 편집기는 또한 편집기 확장에서 가져올 수 있는 서비스를 제공 합니다. 자세한 내용은 [사용 및 제공 서비스](../../extensibility/using-and-providing-services.md)합니다.  
   
 ## <a name="debugger"></a>디버거  
@@ -133,4 +128,3 @@ Visual Studio 아키텍처의 일반화 된 보기
   
 ## <a name="help-viewer"></a>도움말 뷰어  
  고유한 도움말 및 페이지 F1 도움말 뷰어를 통합할 수 있습니다. 자세한 내용은 [Microsoft 도움말 뷰어 SDK](../../extensibility/internals/microsoft-help-viewer-sdk.md)합니다.
-

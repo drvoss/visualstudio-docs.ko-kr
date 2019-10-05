@@ -1,26 +1,21 @@
 ---
 title: 소스 제어 VSPackage를 구현할지 여부 결정 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, about source control packages
 ms.assetid: 60b3326e-e7e2-4729-95fc-b682e7ad5c99
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 18b7e24a246819b42b567d06cbcd556931f3244c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cff53700dcd6a80f841108d5a2b486dcb0ba7a11
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196804"
 ---
 # <a name="determining-whether-to-implement-a-source-control-vspackage"></a>소스 제어 VSPackage를 구현할지 여부 결정
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,16 +28,15 @@ ms.locfileid: "51757999"
 ## <a name="large-source-control-solution-with-a-rich-feature-set"></a>다양 한 기능 집합을 사용 하 여 큰 소스 제어 솔루션  
  원본 제어 플러그 인 API를 사용 하 여 적절 하 게 캡처하지 않은 다양 한 원본 제어 모델이 제공 하는 원본 제어 솔루션을 구현 하려는 경우 통합 경로로 소스 제어 패키지를 고려할 수 있습니다. 적용 됩니다 (원본 제어 플러그 인을 사용 하 여 통신를 제공 하는 UI를 기본 원본 제어) 소스 제어 어댑터 패키지는 대신 대체 하는 경우에 특히 사용자 고유의 사용자 지정 방식으로 원본 제어 이벤트를 처리할 수 있도록 합니다. UI를 제어 하 고 해당 환경에서 유지 하려는 만족 스러운 원본에 이미 있는 경우 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], 소스 제어 패키지 옵션을 사용 하는 작업을 수행할 수 있습니다. 소스 제어 패키지 제네릭이 아닌 및 사용 하 여 사용 하기 위해서 설계 되었습니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE.  
   
- 유연성 및 원본 제어 논리 및 UI를 통해 다양 한 제어를 제공 하는 원본 제어 솔루션을 구현 하려는 경우 원본 제어 패키지 통합 경로 수도 있습니다. 다음과 같은 작업을 수행할 수 있습니다.  
+ 유연성 및 원본 제어 논리 및 UI를 통해 다양 한 제어를 제공 하는 원본 제어 솔루션을 구현 하려는 경우 원본 제어 패키지 통합 경로 수도 있습니다. 다음을 할 수 있습니다.  
   
-1.  사용자 고유의 소스 제어 VSPackage를 등록 (참조 [등록과 선택](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)).  
+1. 사용자 고유의 소스 제어 VSPackage를 등록 (참조 [등록과 선택](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)).  
   
-2.  사용자 지정 UI를 사용 하 여 UI의 기본 소스 제어를 바꿉니다 (참조 [사용자 지정 사용자 인터페이스](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)).  
+2. 사용자 지정 UI를 사용 하 여 UI의 기본 소스 제어를 바꿉니다 (참조 [사용자 지정 사용자 인터페이스](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)).  
   
-3.  사용 되 고 솔루션 탐색기 문자 모양 이벤트를 처리할 문자 모양을 지정 (참조 [문자 모양 제어](../../extensibility/internals/glyph-control-source-control-vspackage.md)).  
+3. 사용 되 고 솔루션 탐색기 문자 모양 이벤트를 처리할 문자 모양을 지정 (참조 [문자 모양 제어](../../extensibility/internals/glyph-control-source-control-vspackage.md)).  
   
-4.  쿼리 편집 하 고 쿼리를 저장 하는 이벤트 처리 (참조 [쿼리 편집 쿼리 저장](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)).  
+4. 쿼리 편집 하 고 쿼리를 저장 하는 이벤트 처리 (참조 [쿼리 편집 쿼리 저장](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)).  
   
 ## <a name="see-also"></a>참고 항목  
  [소스 제어 플러그 인 만들기](../../extensibility/internals/creating-a-source-control-plug-in.md)
-

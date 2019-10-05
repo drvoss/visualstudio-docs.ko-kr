@@ -1,8 +1,6 @@
 ---
 title: 파일에서 찾기
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.findreplace.findinfiles
@@ -18,15 +16,15 @@ helpviewer_keywords:
 - Find in Files tab, Find and Replace window
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1470868e207687a7b35f46724b80b0da0a0e71c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1247bae6193294667953376f7e86c42cf5b8f8a8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977606"
 ---
 # <a name="find-in-files"></a>파일에서 찾기
 

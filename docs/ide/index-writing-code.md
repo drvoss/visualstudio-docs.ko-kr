@@ -1,27 +1,25 @@
 ---
 title: 코드 작성 및 관리
 description: Visual Studio의 코드 편집기 및 다른 도구를 사용하여 코드를 작성, 탐색, 관리 및 개선하는 방법에 대해 알아봅니다.
-layout: LandingPage
 ms.date: 01/01/2018
+layout: LandingPage
+ms.topic: landing-page
 author: gewarren
 ms.author: gewarren
-ms.topic: landing-page
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
-f1_keywords:
-- vs.newproject
 ms.workload:
 - multiple
-ms.openlocfilehash: 929ee8c5618c08431c27754327c9466a54a68b85
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 49c8ac683c83753b75c20e15ca9aa12845135905
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159379"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095237"
 ---
 # <a name="write-and-manage-code-using-visual-studio"></a>Visual Studio를 사용하여 코드 작성 및 관리
 
 Visual Studio의 코드 편집기 및 다른 도구를 사용하여 코드를 작성, 탐색, 관리 및 개선하는 방법에 대해 알아봅니다.
+
+<!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -158,7 +156,7 @@ Visual Studio에서 첫 번째 앱을 만듭니다.
         </a>
     </li>
     <li>
-        <a href="/visualstudio/ide/getting-started-with-cpp-in-visual-studio">
+        <a href="/cpp/get-started/tutorial-console-cpp">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -248,7 +246,7 @@ Visual Studio에서 첫 번째 앱을 만듭니다.
         </a>
     </li>
     <li>
-        <a href="/visualstudio/ide/quickstart-uwp-csharp">
+        <a href="/visualstudio/get-started/csharp/tutorial-uwp">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

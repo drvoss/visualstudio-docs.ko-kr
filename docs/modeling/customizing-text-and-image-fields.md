@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: c74b7547ea62942670b2c5442d16f460dc738f84
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: 607809b05688931b139b27fec1803719b928dfea
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445823"
 ---
 # <a name="customizing-text-and-image-fields"></a>텍스트 및 이미지 필드 사용자 지정
 셰이프의 텍스트 decorator를 정의한 경우에 텍스트 필드에서 표시 됩니다. TextFields와 다른 ShapeFields 초기화의 예제를 DSL 솔루션에서 Dsl\GeneratedCode\Shapes.cs를 검사 합니다.
@@ -89,7 +88,7 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
  그렇지 않은 경우 다음 재정의 하는 `InitializeShapeFields` 할당을 적절 한 값을 확인 하 고 모양 클래스의 메서드 `Default...` 텍스트 필드의 속성입니다.
 
 > [!WARNING]
->  재정의할 `InitializeShapeFields()`를 설정 해야 합니다는 **Generates Double Derived** 모양 클래스의 속성 `true` DSL 정의에서 합니다.
+> 재정의할 `InitializeShapeFields()`를 설정 해야 합니다는 **Generates Double Derived** 모양 클래스의 속성 `true` DSL 정의에서 합니다.
 
  이 예제에서는 도형에는 사용자 의견에 대 한 사용 될 텍스트 필드입니다. 표준 주석 글꼴을 사용 하려고 합니다. 스타일 집합에서 표준 글꼴 이기 때문에 기본 글꼴 id를 설정할 수 있습니다.
 
@@ -182,13 +181,13 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 #### <a name="to-create-a-subclass-of-imagefield"></a>이미지 필드의 하위 클래스를 만들려면
 
-1.  설정 된 **Generates Double Derived** DSL 정의에서 부모 모양 클래스의 속성입니다.
+1. 설정 된 **Generates Double Derived** DSL 정의에서 부모 모양 클래스의 속성입니다.
 
-2.  재정의 `InitializeShapeFields` 모양 클래스의 메서드.
+2. 재정의 `InitializeShapeFields` 모양 클래스의 메서드.
 
-    -   DSL 프로젝트에서 새 코드 파일을 만들고 모양 클래스에 대 한 partial 클래스 정의 작성 합니다. 있습니다 메서드 정의 재정의 합니다.
+    - DSL 프로젝트에서 새 코드 파일을 만들고 모양 클래스에 대 한 partial 클래스 정의 작성 합니다. 있습니다 메서드 정의 재정의 합니다.
 
-3.  코드 검사 `InitializeShapeFields` DSL\GeneratedCode\Shapes.cs에서.
+3. 코드 검사 `InitializeShapeFields` DSL\GeneratedCode\Shapes.cs에서.
 
      재정의 메서드에서 기본 메서드를 호출 하 고 사용자 고유의 이미지 필드 클래스의 인스턴스를 만듭니다. 일반 이미지 필드를 대체 하는 데 사용 된 `shapeFields` 목록입니다.
 
@@ -196,7 +195,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
  이 예제에서는 변경 아이콘 도형의 모델 요소의 상태에 따라 달라 집니다.
 
 > [!WARNING]
->  이 예제에서는 동적 이미지 데코레이터를 확인 하는 방법에 설명 합니다. 이지만 모델 변수의 상태에 따라 하나 또는 두 개의 이미지를 전환 하려는 경우 간단 하 게 여러 이미지 데코레이터를 만들고 셰이프를에서 같은 위치에 배치할 표시 유형 필터는 모델의 특정 값에 따라 달라 지도록 설정 변수입니다. 이 필터를 설정 하려면 DSL 정의에서 도형 맵에서 선택 하 고 DSL 세부 정보 창 열고 데코레이터 탭을 클릭 합니다.
+> 이 예제에서는 동적 이미지 데코레이터를 확인 하는 방법에 설명 합니다. 이지만 모델 변수의 상태에 따라 하나 또는 두 개의 이미지를 전환 하려는 경우 간단 하 게 여러 이미지 데코레이터를 만들고 셰이프를에서 같은 위치에 배치할 표시 유형 필터는 모델의 특정 값에 따라 달라 지도록 설정 변수입니다. 이 필터를 설정 하려면 DSL 정의에서 도형 맵에서 선택 하 고 DSL 세부 정보 창 열고 데코레이터 탭을 클릭 합니다.
 
  이 예제 코드를 실행 하려면 최소 언어 템플릿을 사용 하 여 새 DSL 솔루션을 만듭니다. 부울 도메인 속성 추가 `AlternateState` ExampleElement 도메인 클래스에 있습니다. ExampleShape 클래스에 아이콘 decorator를 추가 하 고 비트맵 파일에 해당 이미지를 설정 합니다. 클릭 **모든 템플릿 변환**합니다. DSL 프로젝트에서 새 코드 파일을 추가 하 고 다음 코드를 삽입 합니다.
 

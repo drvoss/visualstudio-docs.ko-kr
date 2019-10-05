@@ -1,39 +1,34 @@
 ---
-title: 'FAQ: VSPackage 확장으로 추가 기능 변환 | Microsoft Docs'
-ms.custom: ''
+title: 'FAQ: 추가 기능을 VSPackage 확장으로 변환 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b2318ff719f51660b4cec0eec6b7a051ea54aa67
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bc6ed31f96fc2021d0d9e104692f0440cfb78a5e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433747"
 ---
-# <a name="faq-converting-add-ins-to-vspackage-extensions"></a>FAQ: VSPackage 확장으로 추가 기능 변환
+# <a name="faq-converting-add-ins-to-vspackage-extensions"></a>FAQ: 추가 기능을 VSPackage 확장으로 변환
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 추가 기능은 이제 사용되지 않습니다. 새 Visual Studio 확장을 하려면 VSIX 확장 프로그램을 만드는 해야 합니다. 다음은 Visual Studio 추가 기능에서 VSIX 확장을 변환 하는 방법에 대 한 일부 자주 묻는 질문에 대 한 답변입니다.  
   
 > [!WARNING]
->  C# 및 Visual Basic 프로젝트의 경우 Visual Studio 2015부터 VSIX 프로젝트를 사용할 수 있으며 메뉴 명령과 도구 창, Vspackage에 대 한 항목 템플릿을 추가할 수도 있습니다. 자세한 내용은 [What's New in Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md)합니다.  
+> C# 및 Visual Basic 프로젝트의 경우 Visual Studio 2015부터 VSIX 프로젝트를 사용할 수 있으며 메뉴 명령과 도구 창, Vspackage에 대 한 항목 템플릿을 추가할 수도 있습니다. 자세한 내용은 [What's New in Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md)합니다.  
   
 > [!IMPORTANT]
->  대부분의 경우에서 VSPackage 프로젝트 항목을 사용 하 여 VSIX 프로젝트에 간단히 추가 코드를 전송할 수 있습니다. <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 메서드에서 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>를 호출하여 DTE 자동화 개체를 가져올 수 있습니다.  
+> 대부분의 경우에서 VSPackage 프로젝트 항목을 사용 하 여 VSIX 프로젝트에 간단히 추가 코드를 전송할 수 있습니다. <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 메서드에서 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>를 호출하여 DTE 자동화 개체를 가져올 수 있습니다.  
 >   
->  `DTE2 dte = (DTE2)GetService(typeof(DTE));`  
+> `DTE2 dte = (DTE2)GetService(typeof(DTE));`  
 >   
->  자세한 내용은 [VSPackage에서 추가 코드는 어떻게 실행할 수 있습니까?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_RunAddin) 아래.  
+> 자세한 내용은 [VSPackage에서 추가 코드는 어떻게 실행할 수 있습니까?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_RunAddin) 아래.  
   
 ## <a name="what-software-do-i-need-to-develop-vsix-extensions"></a>소프트웨어 VSIX 확장을 개발 하려면 하나요?  
  Visual Studio 2015부터 수행 설치 하면 Visual Studio SDK 다운로드 센터에서. Visual Studio 설치에서 선택적 기능으로 포함 됩니다. 또한 VS SDK를 나중에 설치할 수 있습니다. 자세한 내용은 [Visual Studio SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)합니다.  
@@ -44,22 +39,22 @@ ms.locfileid: "51817349"
 ## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>VSIX 프로젝트에 내 추가 기능 프로젝트를 변환할 수 있나요?  
  VSIX 프로젝트에 사용 되는 메커니즘은 추가 기능 프로젝트에서 동일 하기 때문에 VSIX 프로젝트에 직접 추가 기능 프로젝트를 변환할 수 없습니다. VSIX 프로젝트 템플릿 및 올바른 프로젝트 항목 템플릿을 비교적 쉽게 시작 하 고 VSIX 확장으로 실행 중인 코드의 많은 경우  
   
-##  <a name="BKMK_StartDeveloping"></a> VSIX 확장 개발 시작 하려면 어떻게 해야 하나요?  
+## <a name="BKMK_StartDeveloping"></a> VSIX 확장 개발 시작 하려면 어떻게 해야 하나요?  
  메뉴 명령이 포함 된 VSIX를 확인 하는 방법을 다음과 같습니다.  
   
 #### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>메뉴 명령이 포함 된 VSIX 확장을 확인 하려면  
   
-1.  VSIX 프로젝트를 만듭니다. (**파일**를 **새로 만들기**를 **프로젝트**, 또는 형식 **프로젝트** 에 **빠른 실행** 창). 에 **새 프로젝트** 대화 상자에서 **Visual C# / 확장성** 하거나 **Visual Basic / 확장성** 선택한 **VSIX 프로젝트**.) 프로젝트 이름을 **TestExtension** 에 대 한 위치를 지정 합니다.  
+1. VSIX 프로젝트를 만듭니다. (**파일**를 **새로 만들기**를 **프로젝트**, 또는 형식 **프로젝트** 에 **빠른 실행** 창). 에 **새 프로젝트** 대화 상자에서 **Visual C# / 확장성** 하거나 **Visual Basic / 확장성** 선택한 **VSIX 프로젝트**.) 프로젝트 이름을 **TestExtension** 에 대 한 위치를 지정 합니다.  
   
-2.  추가 된 **사용자 지정 명령** 프로젝트 항목 템플릿. (에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 합니다 **솔루션 탐색기** 선택한 **추가 / 새 항목**합니다. 에 **새 프로젝트** Visual C# 또는 Visual Basic의 경우 선택 대화 상자를 **확장성** 노드와 선택 **사용자 지정 명령**.)  
+2. 추가 된 **사용자 지정 명령** 프로젝트 항목 템플릿. (에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 합니다 **솔루션 탐색기** 선택한 **추가 / 새 항목**합니다. 에 **새 프로젝트** Visual C# 또는 Visual Basic의 경우 선택 대화 상자를 **확장성** 노드와 선택 **사용자 지정 명령**.)  
   
-3.  F5 키를 눌러 디버그 모드에서 프로젝트를 빌드하고 실행합니다.  
+3. F5 키를 눌러 디버그 모드에서 프로젝트를 빌드하고 실행합니다.  
   
      두 번째 Visual Studio 인스턴스가 표시됩니다. 이 두 번째 인스턴스는 실험적 인스턴스이며, 코드를 작성하는 데 사용하는 Visual Studio 인스턴스와 설정이 다를 수도 있습니다. 실험적 인스턴스를 처음 실행할 때는 VS Online에 로그인하고 테마와 프로필을 지정하라는 메시지가 표시됩니다.  
   
-     에 **도구** (실험적 인스턴스)에서 메뉴 단추가 표시 됩니다 **내 명령 이름**합니다. 이 단추를 선택 하면 메시지가 표시 됩니다. **Testvspackagepackage.menuitemcallback**합니다.  
+     에 **도구** (실험적 인스턴스)에서 메뉴 단추가 표시 됩니다 **내 명령 이름**합니다. 이 단추를 선택 하면 메시지가 표시 됩니다. **TestVSPackagePackage.MenuItemCallback() 내**합니다.  
   
-##  <a name="BKMK_RunAddin"></a> VSPackage에서 추가 기능에서 코드를 실행할 수는 방법  
+## <a name="BKMK_RunAddin"></a> VSPackage에서 추가 기능에서 코드를 실행할 수는 방법  
  추가 기능 코드는 보통 두 가지 방법 중 하나로 실행됩니다.  
   
 - 메뉴 명령을 통한 트리거. 코드는 `IDTCommandTarget.Exec` 메서드에 포함되어 있습니다.  
@@ -272,4 +267,3 @@ public void OnItemRenamed(EnvDTE.ProjectItem projItem, string oldName)
     string s = "[Event] Renamed " + oldName + " to " + Path.GetFileName(projItem.get_FileNames(1) + " in project " + projItem.ContainingProject.Name;   
 }  
 ```
-

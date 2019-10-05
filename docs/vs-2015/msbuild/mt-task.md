@@ -1,14 +1,9 @@
 ---
 title: MT 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCManifestTool.ResourceOutputFileName
 - VC.Project.VCManifestTool.SuppressDependencyElement
@@ -29,25 +24,24 @@ ms.assetid: bb94913c-1042-4968-9f08-b394518e899f
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c9b14de0b9e80379736dd7f6a02cb374d475fcda
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: efbdccf4d5774322b42a517831b22186103347b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430897"
 ---
 # <a name="mt-task"></a>MT 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Microsoft 매니페스트 도구, mt.exe를 래핑합니다. 자세한 내용은 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 웹 사이트에서 "Mt.exe"를 참조하세요.  
   
 ## <a name="parameters"></a>매개 변수  
  다음 표에서는 **MT** 작업의 매개 변수에 대해 설명합니다. 대부분의 작업 매개 변수 및 몇 가지 매개 변수 집합은 명령줄 옵션에 해당합니다.  
   
 > [!NOTE]
->  mt.exe 설명서는 명령줄 옵션에 대한 접두사로 하이픈(**-**)을 사용하지만 이 항목에서는 슬래시(**/**)를 사용합니다. 두 접두사 중 하나를 사용할 수 있습니다.  
+> mt.exe 설명서는 명령줄 옵션에 대한 접두사로 하이픈(**-**)을 사용하지만 이 항목에서는 슬래시(**/**)를 사용합니다. 두 접두사 중 하나를 사용할 수 있습니다.  
   
 |매개 변수|설명|  
 |---------------|-----------------|  
@@ -57,7 +51,7 @@ Microsoft 매니페스트 도구, mt.exe를 래핑합니다. 자세한 내용은
 |**ComponentFileName**|선택적 **문자열** 매개 변수입니다.<br /><br /> .rgs 또는.tlb 파일에서 빌드하려는 동적 연결 라이브러리의 이름을 지정합니다. **RegistrarScriptFile** 또는 **TypeLibraryFile** MT 작업 매개 변수를 지정하는 경우 이 매개 변수는 필수입니다.<br /><br /> 자세한 내용은 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 웹 사이트에서 "Mt.exe"의 **/dll** 옵션을 참조하세요.|  
 |**DependencyInformationFile**|선택적 **문자열** 매개 변수입니다.<br /><br /> 매니페스트 도구에 대한 빌드 종속성 정보를 추적하기 위해 Visual Studio에서 사용하는 종속성 정보 파일을 지정합니다.|  
 |**EmbedManifest**|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 어셈블리에 매니페스트 파일을 포함합니다. `false`인 경우 독립 실행형 매니페스트 파일로 만듭니다.|  
-|**EnableDPIAwareness**|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 응용 프로그램을 DPI 인식으로 표시하는 매니페스트 정보에 추가합니다. DPI 인식 응용 프로그램을 작성하면 사용자 인터페이스는 높은 DPI 디스플레이 설정의 광범위한 부분에서 일관성 있게 보입니다.<br /><br /> 자세한 내용은 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 웹 사이트에서 "High DPI"를 참조하세요.|  
+|**EnableDPIAwareness**|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 애플리케이션을 DPI 인식으로 표시하는 매니페스트 정보에 추가합니다. DPI 인식 애플리케이션을 작성하면 사용자 인터페이스는 높은 DPI 디스플레이 설정의 광범위한 부분에서 일관성 있게 보입니다.<br /><br /> 자세한 내용은 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 웹 사이트에서 "High DPI"를 참조하세요.|  
 |**GenerateCatalogFiles**|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 카탈로그 정의(.cdf) 파일을 생성합니다.<br /><br /> 자세한 내용은 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 웹 사이트에서 "Mt.exe"의 **/makecdfs** 옵션을 참조하세요.|  
 |**GenerateCategoryTags**|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 범주 태그가 생성됩니다. 이 매개 변수가 `true`인 경우 **ManifestFromManagedAssemblyMT** 작업 매개 변수도 지정되어야 합니다.<br /><br /> 자세한 내용은 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 웹 사이트에서 "Mt.exe"의 **/category** 옵션을 참조하세요.|  
 |**InputResourceManifests**|선택적 **문자열** 매개 변수입니다.<br /><br /> 지정한 식별자를 가진 RT_MANIFEST 형식의 리소스에서 매니페스트를 입력합니다. _\<file>[_**;**_[_**#**_]<resource_id>]_ 형식의 리소스를 지정합니다. 여기서 선택적 `resource_id` 매개 변수는 음수가 아닌 16비트 숫자입니다.<br /><br /> `resource_id`가 지정되지 않은 경우 CREATEPROCESS_MANIFEST_RESOURCE 기본값(1)이 사용됩니다.<br /><br /> 자세한 내용은 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 웹 사이트에서 "Mt.exe"의 **/inputresource** 옵션을 참조하세요.|  
@@ -77,10 +71,7 @@ Microsoft 매니페스트 도구, mt.exe를 래핑합니다. 자세한 내용은
 |**UpdateFileHashesSearchPath**|선택적 `String` 매개 변수입니다.<br /><br /> 파일 해시가 업데이트될 때 사용할 검색 경로를 지정합니다. **UpdateFileHashesMT** 작업 매개 변수와 함께 이 매개 변수를 사용합니다.<br /><br /> 자세한 내용은 이 표의 **UpdateFileHashes** 매개 변수를 참조하세요.|  
 |**VerboseOutput**|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 자세한 디버깅 정보를 표시합니다.<br /><br /> 자세한 내용은 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 웹 사이트에서 "Mt.exe"의 **/verbose** 옵션을 참조하세요.|  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
   
 ## <a name="see-also"></a>참고 항목  
  [작업 참조](../msbuild/msbuild-task-reference.md)
-
-
-

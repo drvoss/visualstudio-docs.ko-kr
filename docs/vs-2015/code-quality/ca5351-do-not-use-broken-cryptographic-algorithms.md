@@ -1,24 +1,19 @@
 ---
 title: CA5351 끊어진된 암호화 알고리즘 사용 안 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: 483f51b3-e186-4433-b48e-5ca24a9a9c94
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7067d1d08be6de121986c60ead67086a11548ea8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 780745e2b4213d8fdd130fe03cac292b233c5b0c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889817"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430671"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 끊어진 암호화 알고리즘 사용 안 함
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "49889817"
 |변경 수준|주요 변경 아님|  
   
 > [!NOTE]
->  이 경고는 2015년 11월에 마지막으로 업데이트되었습니다.  
+> 이 경고는 2015년 11월에 마지막으로 업데이트되었습니다.  
   
 ## <a name="cause"></a>원인  
  <xref:System.Security.Cryptography.MD5> 등의 해시 함수와 <xref:System.Security.Cryptography.DES> 및 <xref:System.Security.Cryptography.RC2> 등의 암호화 알고리즘은 상당한 위험을 노출시킬 수 있으며 무차별 암호 대입 공격 및 해시 충돌과 같은 간단한 공격 기법을 통해 중요한 정보가 노출될 수 있습니다.  
@@ -52,9 +47,9 @@ ms.locfileid: "49889817"
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법  
  보다 강력한 암호화 옵션을 사용합니다.  
   
--   MD5의 경우 [SHA-2](https://msdn.microsoft.com/en-us/library/windows/desktop/aa382459.aspx) 제품군(예: <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>)에 해시를 사용합니다.  
+- MD5의 경우 [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) 제품군(예: <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>)에 해시를 사용합니다.  
   
--   DES 및 RC2의 경우 <xref:System.Security.Cryptography.Aes> 암호화를 사용합니다.  
+- DES 및 RC2의 경우 <xref:System.Security.Cryptography.Aes> 암호화를 사용합니다.  
   
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우  
  암호화 전문가가 검토하지 않은 경우 이 규칙의 경고가 표시되지 않도록 하지 마세요.  

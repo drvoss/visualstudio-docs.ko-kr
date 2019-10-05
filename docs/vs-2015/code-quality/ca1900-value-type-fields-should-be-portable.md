@@ -1,14 +1,9 @@
 ---
-title: 'CA1900: 값 형식 필드는 이식 가능 해야 | Microsoft Docs'
-ms.custom: ''
+title: 'CA1900: 값 형식 필드는 이식 가능 해야 합니다. | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1900
 - ValueTypeFieldsShouldBePortable
@@ -20,17 +15,17 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d8794fc1e30e2afb70c6816b6d10feb8d69a5d86
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 97a83bf4ba71d0adc71fdb96d4e1c865358c08e2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203097"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: 값 형식 필드는 이식 가능해야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017에서 최신 설명서를 참조 하세요 [CA1900: 값 형식 필드는 이식 가능 해야](https://docs.microsoft.com/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable) docs.microsoft.com에서 제공 합니다.  
+Visual Studio에서 최신 설명서를 참조 하세요. [CA1900: 값 형식 필드는 이식 가능 해야](https://docs.microsoft.com/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable)합니다.  
   
 |||  
 |-|-|  
@@ -50,4 +45,3 @@ Visual Studio 2017에서 최신 설명서를 참조 하세요 [CA1900: 값 형�
   
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우  
  오류가 발생 하는 경우에이 경고를 표시 하지 않습니다.
-

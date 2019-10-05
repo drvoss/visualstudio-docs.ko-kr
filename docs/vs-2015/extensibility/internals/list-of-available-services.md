@@ -1,27 +1,22 @@
 ---
 title: 사용 가능한 서비스 목록 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - services, Visual Studio
 - Visual Studio, services
 ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
 caps.latest.revision: 50
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0363aba508ff1a00fcca34f4b0b7a857aa15fc4f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d67d0300d99cf43165446458414cc2244c6ede0c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203826"
 ---
 # <a name="list-of-available-services"></a>사용 가능한 서비스 목록
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,10 +27,10 @@ ms.locfileid: "51730701"
   
 ## <a name="the-services"></a>서비스  
   
-|서비스|인터페이스|Visual Studio|Visual Studio 2005|설명|  
+|서비스|인터페이스|Visual Studio|Visual Studio 2005|Description|  
 |-------------|---------------|-------------------|------------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.SBindHost>|<xref:Microsoft.VisualStudio.OLE.Interop.IBindHost>|예|예|가져오는 데 사용 하 여 Vspackage를 <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> 비동기 데이터 전송을 용이 하 게 ActiveX 컨트롤의 인터페이스입니다.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SDTE>|<xref:EnvDTE.DTE>|아니요|예|자동화에 사용 되는 확장성 DTE (디자인 타임) 개체를 가져옵니다.<br /><br /> C/C + + ID: SID_SDTE|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SDTE>|<xref:EnvDTE.DTE>|아니요|예|자동화에 사용 되는 확장성 DTE (디자인 타임) 개체를 가져옵니다.<br /><br /> C /C++ ID: SID_SDTE|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SCodeNavigate>|<xref:Microsoft.VisualStudio.Shell.Interop.ICodeNavigate>|예|예|Forms 디자이너 컨트롤에 대 한 기본 이벤트 처리기를 표시 하 여 구현 합니다.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.SContainerDispatch>|IDispatch|예|예|다른 VSPackage 또는 컨트롤의 자동화 인터페이스에 액세스 하기 위해 VSPackage를 사용 하도록 설정 합니다.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SExtendedTypeLib>|<xref:Microsoft.VisualStudio.Shell.Interop.IExtendedTypeLib>|예|예|확장 된 형식 라이브러리를 만들거나 추가 하려면 VSPackage를 사용 하도록 설정 합니다.|  
@@ -77,7 +72,7 @@ ms.locfileid: "51730701"
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsEnumHierarchyItemsFactory>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumHierarchyItemsFactory>|예|예|만들기 위한 팩터리 제공 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumHierarchyItemsFactory> 열거 하기 위해 사용 되는 개체 계층 (프로젝트)를 지정 합니다.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsErrorList>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsErrorList>|아니요|예|조작 하기 위한 추가 메서드를 제공 합니다 **빌드 오류 목록** 작업 창. 구체적으로 제공 합니다 **빌드 오류 목록** forefront 작업 창을 강제로 모든 오류가 표시 됩니다.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager>|예|예|에 대 한 액세스를 제공 합니다 **기타 파일** 현재 솔루션의 프로젝트 노드.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChange>||예|예|사용되지 않습니다. 사용 하 여 `SVsFileChangeEx` 대신 서비스입니다.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChange>||예|예|더 이상 사용되지 않습니다. 사용 하 여 `SVsFileChangeEx` 대신 서비스입니다.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx>|예|예|IDE에 의해 트리거되는 다양 한 파일 변경 이벤트에 대 한 액세스 권한을 얻으려고 VSPackage를 사용 하도록 설정 합니다.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsFilterAddProjectItemDlg>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg>|예|예|에 나타나는 항목을 필터링 하기 위해 VSPackage를 사용 하도록 설정 합니다 **항목 추가** 대화 상자.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsFilterKeys>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterKeys>|예|예|고급 키보드 필터링을 수행 하는 VSPackage를 사용 하도록 설정 합니다.|  
@@ -164,7 +159,6 @@ ms.locfileid: "51730701"
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsWindowFrame>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>|예|예|VSPackage는 패키지 또는 패키지의 파트 수 수 있는 창 프레임을 가져올 수 있습니다.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService>|예|예|특정 메타 데이터 파일을 사용 하 여 연결 하는 XML 형식 문서 파일에 대 한 액세스를 제공 합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [COM 및 관리 서비스](http://msdn.microsoft.com/en-us/6c5808b4-ad87-48d7-ae06-33a81e7052af)   
+## <a name="see-also"></a>관련 항목  
+ [COM 및 관리 서비스](/java/api/overview/partnercenter/managedservices?view=partnercenter-1.8.1)   
  [서비스 사용 및 제공](../../extensibility/using-and-providing-services.md)
-

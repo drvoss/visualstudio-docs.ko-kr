@@ -1,14 +1,9 @@
 ---
 title: 소스 제어 플러그 인을 구현 하기 위한 모범 사례 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, best practices
 - best practices, source control plug-ins
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 85e73b73-29dc-464f-8734-ed308742c435
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5bcbe41bc0b5cd6c348463426fe8bb97a38ac308
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 99166c8bf9a76deaa3805bfd8f5ac6db35e5c0a0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184722"
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>소스 제어 플러그 인 구현 모범 사례
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +59,6 @@ ms.locfileid: "51742353"
   
  대부분의 사용자 구성 가능 옵션 설정 원본 제어 플러그 인 간에 다양 하기 때문에 이런 방식으로 정의 되지 않습니다. 따라서 권장 되는 메커니즘은는 **고급** 단추입니다. 예를 들어 합니다 **가져오기** 대화 상자에서 IDE를 인식 하지만 표시 된 정보만 표시 됩니다는 **고급** 플러그 인에이 명령에 대 한 옵션 단추입니다. 클릭할 때 합니다 **고급** 단추를 호출 하 여 IDE를 [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) 비트 또는 날짜/시간 등의 정보를 입력 하도록 플러그 인 소스 제어를 사용 하도록 설정 합니다. 플러그 인 중에 다시 전달 되는 구조에이 정보를 반환 합니다 `SccGet` 명령입니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [원본 제어 플러그 인](../extensibility/source-control-plug-ins.md)   
  [소스 제어 플러그 인 만들기](../extensibility/internals/creating-a-source-control-plug-in.md)
-

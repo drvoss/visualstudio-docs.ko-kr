@@ -12,15 +12,13 @@ helpviewer_keywords:
 ms.assetid: 211edbd7-9fe4-4251-ba85-8bec4363261b
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 12aacb0ff6530e1ee21bd57639a7e84bdb65ea9d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: bd66bcb3615477abc2fc9a8122f2ec4675f37bbb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965779"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>테스트 컨트롤러 및 테스트 에이전트 포트 구성
 
@@ -30,7 +28,7 @@ ms.locfileid: "53068583"
 
 다음 그림에서는 테스트 컨트롤러, 테스트 에이전트 및 클라이언트 간의 연결 지점을 보여 줍니다. 이 그림에서는 들어오는 연결과 나가는 연결에 사용되는 포트와 이러한 포트에 사용되는 보안 제한 사항을 간략하게 보여 줍니다.
 
-![테스트 컨트롤러와 테스트 에이전트의 포트 및 보안](../test/media/test-controller-agent-firewall.png)
+![테스트 컨트롤러와 테스트 에이전트 포트 및 보안](../test/media/test-controller-agent-firewall.png)
 
 ## <a name="incoming-connections"></a>들어오는 연결
 

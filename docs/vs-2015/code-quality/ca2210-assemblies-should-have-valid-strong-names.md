@@ -1,14 +1,9 @@
 ---
-title: ': Ca2210 어셈블리에는 올바른 강력한 이름을 사용 해야 합니다. | Microsoft Docs'
-ms.custom: ''
+title: 'CA2210: 어셈블리에는 올바른 강력한 이름을 사용 해야 합니다. | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - AssembliesShouldHaveValidStrongNames
 - CA2210
@@ -20,12 +15,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1551cccb11fc33a21503e7030cfd671c953ee17d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f94183c6051ed0c2603bbfe35484fabb83a2160f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865819"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697983"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210: 어셈블리에는 올바른 강력한 이름을 사용해야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +67,7 @@ ms.locfileid: "49865819"
 
 - 에 대 한 합니다 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] v1.0 또는 v1.1을 사용 합니다 <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> 또는 <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> 특성입니다.
 
-- 에 대 한 합니다 [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)]를 사용 하 여 합니다 `/keyfile` 또는 `/keycontainer` 컴파일러 옵션 [/KEYFILE (지정 서명할 키 또는 키 쌍을 어셈블리)](http://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06) 또는 [/KEYCONTAINER (어셈블리에 서명할 키 컨테이너 지정)](http://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e) c + +에서 링커 옵션).
+- 에 대 한 합니다 [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)]를 사용 하 여 합니다 `/keyfile` 또는 `/keycontainer` 컴파일러 옵션 [/KEYFILE (지정 서명할 키 또는 키 쌍을 어셈블리)](https://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06) 또는 [/KEYCONTAINER (어셈블리에 서명할 키 컨테이너 지정)](https://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e) 링커 옵션 C++).
 
   **Visual Studio에서 강력한 이름의 어셈블리에 서명할**
 
@@ -94,14 +89,11 @@ ms.locfileid: "49865819"
 
    **Visual Studio 외부에서 강력한 이름의 어셈블리에 서명할**
 
--   제공 하는 강력한 이름 도구 (Sn.exe)를 사용 하 여 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] SDK. 자세한 내용은 [Sn.exe(강력한 이름 도구)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)를 참조하세요.
+- 제공 하는 강력한 이름 도구 (Sn.exe)를 사용 하 여 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] SDK. 자세한 내용은 [Sn.exe(강력한 이름 도구)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)를 참조하세요.
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  환경에서 어셈블리를 사용 하는 경우이 규칙에서 경고를 표시만 콘텐츠를 변조 하지 않아도 되는 경우.
 
 ## <a name="see-also"></a>참고 항목
  <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>
- [방법: 강력한 이름의 어셈블리에 서명할](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [Sn.exe (강력한 이름 도구)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)
-
-
-
+ [방법: 강력한 이름의 어셈블리에 서명할](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [Sn.exe (강력한 이름 도구)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)

@@ -1,29 +1,24 @@
 ---
-title: 격리 셸 진입점 매개 변수 (c + +) | Microsoft Docs
-ms.custom: ''
+title: 격리 셸 진입점 매개 변수 (C++) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Shell [Visual Studio], isolated mode%2C Start entry point
 - Visual Studio shell, isolated mode%2C Start entry point
 ms.assetid: 18f4b18b-2173-4afa-ba0a-42fe33e61118
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 270a5c932429a518447d0029b05d3c9522db7387
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9e736343212c4bf6acd833f5740b996c6c032c3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439815"
 ---
-# <a name="isolated-shell-entry-point-parameters-c"></a>격리 셸 진입점 매개 변수 (c + +)
+# <a name="isolated-shell-entry-point-parameters-c"></a>격리 셸 진입점 매개 변수 (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 셸 기반 응용 프로그램을 시작 하는 경우 Visual Studio shell의 시작 진입점을 호출 합니다. 셸 시작 진입점에 대 한 호출에서 다음 설정은 재정의할 수 있습니다. 각 설정에 대 한 참조 [합니다. Pkgdef 파일](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)합니다.  
@@ -32,7 +27,7 @@ Visual Studio 셸 기반 응용 프로그램을 시작 하는 경우 Visual Stud
   
 - AllowsDroppedFilesOnMainWindow  
   
-- 응용 프로그램 이름  
+- AppName  
   
 - CommandLineLogo  
   
@@ -80,21 +75,21 @@ typedef int (__cdecl *STARTFCN)(LPSTR, LPWSTR, int, GUID *, WCHAR *pszSettings);
  하나 이상의 설정을 재정의 하려면 재정의할 수 설정을 포함 하는 유니코드 문자열을 전달 합니다. 문자열은 이름-값 쌍의 세미콜론으로 구분 된 목록. 각 쌍에 설정을 적용할 값 뒤에 등호 (=) 뒤에 재정의 설정의 이름을 포함 합니다.  
   
 > [!NOTE]
->  유니코드 문자열에 공백을 포함 하지 않습니다.  
+> 유니코드 문자열에 공백을 포함 하지 않습니다.  
   
  부울 설정에 대 한 다음 문자열을 나타내는 값이 true입니다. 다른 모든 문자열 값 false를 나타냅니다. 이러한 문자열 대/소문자를 구분 하지 않습니다.  
   
--   \+  
+- \+  
   
--   1  
+- 1  
   
--   -1  
+- -1  
   
--   위치  
+- On  
   
--   true  
+- true  
   
--   예  
+- 예  
   
 ## <a name="example"></a>예제  
  추가 기능을 사용 하지 않도록 설정 하 고 응용 프로그램에 대 한 기본 프로젝트 위치를 변경 하려면 "AddinsAllowed=false;DefaultProjectsLocation=%USERPROFILE%\temp" 마지막 매개 변수를 설정할 수 있습니다.  
@@ -102,4 +97,3 @@ typedef int (__cdecl *STARTFCN)(LPSTR, LPWSTR, int, GUID *, WCHAR *pszSettings);
 ## <a name="see-also"></a>참고 항목  
  [격리 셸 사용자 지정](../extensibility/customizing-the-isolated-shell.md)   
  [.pkgdef 파일](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)
-

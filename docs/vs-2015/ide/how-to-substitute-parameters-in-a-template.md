@@ -1,14 +1,9 @@
 ---
 title: '방법: 템플릿 매개 변수 대체 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - template parameters, substituting
 - Visual Studio templates, using parameters
@@ -16,15 +11,15 @@ ms.assetid: a62924a7-4ba0-413d-b606-fdbe1fcf2807
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bab1d1fd7cd08813dadefbcbec27dbd84bd7b66b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3c0a710bc3ad504c6654528db33b9a6698f4f7ae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435157"
 ---
-# <a name="how-to-substitute-parameters-in-a-template"></a>방법: 템플릿 매개 변수 대체
+# <a name="how-to-substitute-parameters-in-a-template"></a>방법: 템플릿 매개 변수를 대체 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 템플릿을 기반으로 하는 파일을 만들 때 클래스 이름 및 네임스페이스와 같은 템플릿 매개 변수를 바꿀 수 있습니다. 템플릿 매개 변수의 전체 목록은 [템플릿 매개 변수](../ide/template-parameters.md)를 참조하세요.  
@@ -34,18 +29,18 @@ ms.locfileid: "49279749"
   
 #### <a name="to-use-a-parameter-to-replace-namespace-name-with-the-project-name"></a>매개 변수를 사용하여 네임스페이스 이름을 프로젝트 이름으로 바꾸려면  
   
-1.  템플릿의 하나 이상 코드 파일에 매개 변수를 삽입합니다. 예를 들어:  
+1. 템플릿의 하나 이상 코드 파일에 매개 변수를 삽입합니다. 예를 들어:  
   
     ```  
     namespace $safeprojectname$  
     ```  
   
     > [!NOTE]
-    >  템플릿 매개 변수는 $*parameter*$ 형식으로 작성됩니다.  
+    > 템플릿 매개 변수는 $*parameter*$ 형식으로 작성됩니다.  
   
-2.  템플릿에 대한 .vstemplate 파일에서 이 파일을 포함하는 `ProjectItem` 요소를 찾습니다.  
+2. 템플릿에 대한 .vstemplate 파일에서 이 파일을 포함하는 `ProjectItem` 요소를 찾습니다.  
   
-3.  `ProjectItem` 요소에 대해 `ReplaceParameters` 특성을 `true`로 설정합니다. 예를 들어:  
+3. `ProjectItem` 요소에 대해 `ReplaceParameters` 특성을 `true`로 설정합니다. 예를 들어:  
   
     ```  
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>  
@@ -56,6 +51,3 @@ ms.locfileid: "49279749"
  [템플릿 매개 변수](../ide/template-parameters.md)   
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
  [ProjectItem 요소(Visual Studio 항목 템플릿)](../extensibility/projectitem-element-visual-studio-item-templates.md)
-
-
-

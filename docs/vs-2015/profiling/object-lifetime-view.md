@@ -1,14 +1,9 @@
 ---
 title: 개체 수명 뷰 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.objectlifetime
 helpviewer_keywords:
@@ -21,22 +16,22 @@ ms.assetid: d0501fdd-4b3a-4e74-b6ac-51d950a2e15b
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4cc2e17084809e691838ea0e681e3d2b766d0769
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ef216c1220cbfda37da579d3ea2dfdd32837ab75
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756439"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195561"
 ---
 # <a name="object-lifetime-view"></a>개체 수명 뷰
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 개체 수명 뷰는 성능 세션 속성 페이지에서 **.NET 개체 수명 데이터도 수집**이 선택된 경우 사용 가능합니다.  
   
- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]의 가비지 수집기는 응용 프로그램의 메모리 할당 및 해제를 관리합니다. 가비지 수집기의 성능을 최적화하기 위해 관리되는 힙은 0세대, 1세대 및 2세대의 3개 세대로 나뉩니다. 런타임의 가비지 수집기는 새 개체를 0세대에 저장합니다. 수집이 완료된 후에 남아 있는 개체는 승격되어 1세대 및 2세대에 저장됩니다.  
+ [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]의 가비지 수집기는 애플리케이션의 메모리 할당 및 해제를 관리합니다. 가비지 수집기의 성능을 최적화하기 위해 관리되는 힙은 0세대, 1세대 및 2세대의 3개 세대로 나뉩니다. 런타임의 가비지 수집기는 새 개체를 0세대에 저장합니다. 수집이 완료된 후에 남아 있는 개체는 승격되어 1세대 및 2세대에 저장됩니다.  
   
- 가비지 수집기는 전체 개체 세대의 할당을 취소하여 메모리를 회수합니다. 프로파일링된 응용 프로그램이 만든 개체의 경우 개체 수명 뷰에는 개체의 수/크기와 해당 개체가 회수된 세대가 표시됩니다.  
+ 가비지 수집기는 전체 개체 세대의 할당을 취소하여 메모리를 회수합니다. 프로파일링된 애플리케이션이 만든 개체의 경우 개체 수명 뷰에는 개체의 수/크기와 해당 개체가 회수된 세대가 표시됩니다.  
   
 ## <a name="general"></a>일반  
   
@@ -81,6 +76,3 @@ ms.locfileid: "51756439"
   
 ## <a name="see-also"></a>참고 항목  
  [.NET 메모리 데이터 뷰](../profiling/dotnet-memory-data-views.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: '빠른 시작: HTML 및 CSS 디버그 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.DomExplorer
 dev_langs:
@@ -25,15 +20,15 @@ ms.assetid: 6d156cff-36c6-425a-acf8-e1f02d4f7869
 caps.latest.revision: 104
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 710bafe2383d95358ba06a287a300d9aea7baf66
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: be85bd5c09d59df576d66cef6cf2d4e7e34876ab
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729984"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687645"
 ---
-# <a name="quickstart-debug-html-and-css"></a>퀵 스타트: HTML 및 CSS 디버그
+# <a name="quickstart-debug-html-and-css"></a>빠른 시작: HTML 및 CSS 디버그
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
@@ -60,13 +55,13 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
   
 - [WebView 컨트롤 디버그](../debugger/debug-a-webview-control.md)  
   
-  기타 JavaScript 디버깅, JavaScript 콘솔 창을 사용 하 여 및 중단점 설정과 같은 기능에 대 한 정보를 참조 하세요. [퀵 스타트: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md) 하 고 [Visual Studio에서 앱을 디버그](../debugger/debug-store-apps-in-visual-studio.md)합니다.  
+  기타 JavaScript 디버깅, JavaScript 콘솔 창을 사용 하 여 및 중단점 설정과 같은 기능에 대 한 정보를 참조 하세요. [빠른 시작: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md) 하 고 [Visual Studio에서 앱을 디버그](../debugger/debug-store-apps-in-visual-studio.md)합니다.  
   
-##  <a name="InspectingDOM"></a> 라이브 DOM 검사  
+## <a name="InspectingDOM"></a> 라이브 DOM 검사  
  DOM 탐색기는 렌더링된 페이지의 뷰를 보여 주고, DOM 탐색기를 사용하여 값을 변경하고 변경 결과를 바로 확인할 수 있습니다. 그러면 디버거를 중지했다가 다시 시작하지 않고도 변경 내용을 테스트할 수 있습니다. 이 방법을 사용하여 페이지와 상호 작용할 때 프로젝트의 소스 코드는 변경되지 않으므로 원하는 코드 수정 내용을 찾으면 소스 코드를 변경합니다.  
   
 > [!TIP]
->  소스 코드를 변경할 때 디버거를 중지했다가 다시 시작하지 않으려면 디버그 도구 모음에서 **Windows 앱 새로 고침** 단추를 사용하거나 F4 키를 눌러 앱을 새로 고치면 됩니다. 자세한 내용은 참조 하세요. [앱 (JavaScript) 새로 고침](../debugger/refresh-an-app-javascript.md)합니다.  
+> 소스 코드를 변경할 때 디버거를 중지했다가 다시 시작하지 않으려면 디버그 도구 모음에서 **Windows 앱 새로 고침** 단추를 사용하거나 F4 키를 눌러 앱을 새로 고치면 됩니다. 자세한 내용은 참조 하세요. [앱 (JavaScript) 새로 고침](../debugger/refresh-an-app-javascript.md)합니다.  
   
  DOM 탐색기를 사용하면 다음 작업을 수행할 수 있습니다.  
   
@@ -76,15 +71,15 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
   
 - 페이지 요소에 CSS 스타일이 적용된 방식을 검사하고 적용된 규칙을 추적합니다.  
   
-  응용 프로그램을 디버깅할 때 주로 DOM 탐색기에서 요소를 선택해야 합니다. 요소를 선택하면 DOM 탐색기 오른쪽 탭에 나타나는 값이 DOM 탐색기에서 선택된 요소를 반영하도록 자동으로 업데이트됩니다. 이러한 탭으로는 **스타일**, **계산됨**, **레이아웃**탭이 있습니다. Windows 스토어 앱은 **이벤트** 및 **변경** 탭도 지원합니다. 요소를 선택하는 방법에 대한 자세한 내용은 [Selecting elements](#SelectingElements)을 참조하세요.  
+  응용 프로그램을 디버깅할 때 주로 DOM 탐색기에서 요소를 선택해야 합니다. 요소를 선택하면 DOM 탐색기 오른쪽 탭에 나타나는 값이 DOM 탐색기에서 선택된 요소를 반영하도록 자동으로 업데이트됩니다. 탭은 다음과 같습니다. **스타일**하십시오 **계산**를 **레이아웃**합니다. Windows 스토어 앱은 **이벤트** 및 **변경** 탭도 지원합니다. 요소를 선택하는 방법에 대한 자세한 내용은 [Selecting elements](#SelectingElements)을 참조하세요.  
   
 > [!TIP]
->  DOM 탐색기 창이 닫혀 있는 경우 **디버그**>**창** > **DOM 탐색기** 를 선택하여 창을 다시 엽니다. 창은 스크립트 디버깅 세션 중에만 나타납니다.  
+> DOM 탐색기 창이 닫혀 있는 경우 **디버그**>**창** > **DOM 탐색기** 를 선택하여 창을 다시 엽니다. 창은 스크립트 디버깅 세션 중에만 나타납니다.  
   
  이후에 나오는 절차에서 DOM 탐색기를 사용하여 응용 프로그램을 대화형으로 디버깅하는 과정을 살펴봅니다. 이때 `FlipView` 컨트롤을 사용하는 응용 프로그램을 만든 다음 디버깅합니다. 앱에는 여러 개의 오류가 포함되어 있습니다.  
   
 > [!WARNING]
->  다음 샘플 앱은 Windows 스토어 앱입니다. Cordova에 대해서도 동일한 기능이 지원되지만 앱이 다릅니다.  
+> 다음 샘플 앱은 Windows 스토어 앱입니다. Cordova에 대해서도 동일한 기능이 지원되지만 앱이 다릅니다.  
   
 #### <a name="to-debug-by-inspecting-the-live-dom"></a>라이브 DOM을 검사하여 디버그하려면  
   
@@ -188,14 +183,14 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
 10. Visual Studio로 전환하고 **DOM 탐색기** 탭을 다시 선택합니다.  
   
     > [!TIP]
-    >  Alt+Tab 또는 F12 키를 눌러 Visual Studio와 실행 중인 응용 프로그램 간에 전환할 수 있습니다.  
+    > Alt+Tab 또는 F12 키를 눌러 Visual Studio와 실행 중인 응용 프로그램 간에 전환할 수 있습니다.  
   
 11. DOM 탐색기 창에서 `"fView"`의 ID가 있는 섹션에 대한 DIV 요소를 선택합니다. 화살표 키를 사용하여 올바른 DIV 요소를 보고 선택합니다. (오른쪽 화살표 키를 사용하여 요소의 자식을 볼 수 있음)  
   
      ![DOM 탐색기](../debugger/media/js-dom-explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
-    >  >> 입력 프롬프트에서 `select(fView)`를 입력한 다음 Enter 키를 눌러 JavaScript 콘솔 창 왼쪽 아래에서 DIV 요소를 선택할 수도 있습니다.  
+    > 입력 하 여 JavaScript 콘솔 창의 왼쪽된 아래 모서리에서 DIV 요소를 선택할 수도 있습니다 `select(fView)` 에 >> 프롬프트 및 Enter 키를 입력 합니다.  
   
      DOM 탐색기 창의 오른쪽 탭에 나타나는 값이 DOM 탐색기의 현재 요소를 반영하도록 자동으로 업데이트됩니다.  
   
@@ -214,7 +209,7 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
 15. `width: 100px;height: 100px;`를 선택하고 Delete 키와 Enter 키를 차례로 누릅니다. Enter 키를 누르면 디버깅 세션을 중지하지 않았더라도 새 값이 시뮬레이터 또는 Phone 에뮬레이터에 바로 반영됩니다.  
   
     > [!IMPORTANT]
-    >  DOM 탐색기 창에서 특성을 업데이트할 수 있듯이 **스타일**, **계산됨**및 **레이아웃** 탭에 표시되는 값도 업데이트할 수 있습니다. 자세한 내용은 참조 하세요. [DOM 탐색기를 사용 하 여 디버그 하는 CSS 스타일](../debugger/debug-css-styles-using-dom-explorer.md) 하 고 [DOM 탐색기를 사용 하 여 디버그 레이아웃](../debugger/debug-layout-using-dom-explorer.md)합니다.  
+    > DOM 탐색기 창에서 특성을 업데이트할 수 있듯이 **스타일**, **계산됨**및 **레이아웃** 탭에 표시되는 값도 업데이트할 수 있습니다. 자세한 내용은 참조 하세요. [DOM 탐색기를 사용 하 여 디버그 하는 CSS 스타일](../debugger/debug-css-styles-using-dom-explorer.md) 하 고 [DOM 탐색기를 사용 하 여 디버그 레이아웃](../debugger/debug-layout-using-dom-explorer.md)합니다.  
   
 16. 시뮬레이터 또는 Phone 에뮬레이터를 선택하거나 Alt+Tab을 사용하여 앱을 전환합니다.  
   
@@ -234,9 +229,9 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
   
      **레이아웃** 탭에 다음 값이 표시됩니다.  
   
-    - 시뮬레이터: 320px(오프셋) 및 320px(여백)  
+    - 시뮬레이터: 320px (오프셋) 및 320px((여백)입니다.  
   
-    - Phone 에뮬레이터: 100px(오프셋) 및 100px(여백)  
+    - Phone 에뮬레이터. 100px (오프셋) 및 100px((여백)입니다.  
   
       다음 그림에는 Phone 에뮬레이터를 사용할 때 **레이아웃** 탭의 모양이 나와 있습니다(오프셋, 여백 100px).  
   
@@ -254,17 +249,17 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
   
 #### <a name="to-refresh-your-app-while-debugging"></a>디버깅하는 동안 응용 프로그램을 새로 고치려면  
   
-1.  응용 프로그램이 실행 중인 동안 Visual Studio로 전환합니다.  
+1. 응용 프로그램이 실행 중인 동안 Visual Studio로 전환합니다.  
   
-2.  default.html을 열고 `"fView"` DIV 요소의 높이와 너비를 100%로 변경하여 소스 코드를 수정합니다.  
+2. default.html을 열고 `"fView"` DIV 요소의 높이와 너비를 100%로 변경하여 소스 코드를 수정합니다.  
   
-3.  디버그 도구 모음에서 **Windows 앱 새로 고침** 단추를 선택하거나 F4 키를 누릅니다. 단추는 다음과 같습니다: ![새로 고침 Windows 앱 단추](../debugger/media/js-refresh.png "JS_Refresh")합니다.  
+3. 디버그 도구 모음에서 **Windows 앱 새로 고침** 단추를 선택하거나 F4 키를 누릅니다. 단추는 다음과 같습니다. ![Windows 응용 프로그램 단추를 새로 고칠](../debugger/media/js-refresh.png "JS_Refresh")합니다.  
   
      응용 프로그램 페이지가 다시 로드되고 시뮬레이터 또는 Phone 에뮬레이터가 전경으로 돌아갑니다.  
   
      새로 고침 기능에 대 한 자세한 내용은 참조 하세요. [앱 (JavaScript) 새로 고침](../debugger/refresh-an-app-javascript.md)합니다.  
   
-##  <a name="SelectingElements"></a> Selecting elements  
+## <a name="SelectingElements"></a> Selecting elements  
  응용 프로그램을 디버깅할 때 세 가지 방법으로 DOM 요소를 선택할 수 있습니다.  
   
 - DOM 탐색기 창에서 직접 요소를 클릭하거나 화살표 키 사용  
@@ -286,32 +281,29 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
   요소를 강조 표시할 경우 시뮬레이터에서 마우스로 가리키는 요소가 강조 표시됩니다. 하이라이트된 요소의 색은 DOM 탐색기의 **레이아웃** 탭에 나타나는 상자 모델과 일치합니다.  
   
 > [!NOTE]
->  요소를 마우스로 가리키면 강조 표시되는 기능은 Windows Phone 에뮬레이터에서만 일부 지원됩니다.  
+> 요소를 마우스로 가리키면 강조 표시되는 기능은 Windows Phone 에뮬레이터에서만 일부 지원됩니다.  
   
  사용 하 여 요소를 선택 하는 방법을 보여 주는 예는 **Select 요소** 단추를 참조 하십시오 [DOM 탐색기를 사용 하 여 디버그 하는 CSS 스타일](../debugger/debug-css-styles-using-dom-explorer.md)합니다.  
   
-##  <a name="BrowserSupport"></a> 브라우저 및 플랫폼 지원  
+## <a name="BrowserSupport"></a> 브라우저 및 플랫폼 지원  
  JavaScript용 Visual Studio 도구인 DOM 탐색기와 JavaScript 콘솔 창이 다음 플랫폼에서 지원됩니다.  
   
-- JavaScript와 HTML을 사용하는 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 및 Windows Phone 스토어 앱  
+- JavaScript와 HTML을 사용하는[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 및 Windows Phone 스토어 앱  
   
 - [!INCLUDE[win81](../includes/win81-md.md)]에서 실행 중인 Internet Explorer 11  
   
-- [!INCLUDE[win8](../includes/win8-md.md)]  
+-  [!INCLUDE[win8](../includes/win8-md.md)]  
   
-  [및 Visual Studio를 다운로드하려면](http://go.microsoft.com/fwlink/?LinkID=232448) 여기 [!INCLUDE[win8](../includes/win8-md.md)] 로 이동합니다.  
+  [및 Visual Studio를 다운로드하려면](https://developer.microsoft.com/windows/downloads/sdk-archive) 여기 [!INCLUDE[win8](../includes/win8-md.md)] 로 이동합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
  [DOM 탐색기를 사용 하 여 CSS 스타일 디버그](../debugger/debug-css-styles-using-dom-explorer.md)   
  [DOM 탐색기를 사용 하 여 레이아웃 디버그](../debugger/debug-layout-using-dom-explorer.md)   
  [DOM 이벤트 수신기 보기](../debugger/view-dom-event-listeners.md)   
- [앱 (JavaScript) 새로 고침](../debugger/refresh-an-app-javascript.md)   
+ [앱 새로 고침(JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [WebView 컨트롤 디버그](../debugger/debug-a-webview-control.md)   
  [바로 가기 키](../debugger/keyboard-shortcuts-html-and-javascript.md)   
  [JavaScript Console commands](../debugger/javascript-console-commands.md)   
  [HTML, CSS 및 JavaScript 샘플 코드 디버그](../debugger/debug-html-css-and-javascript-sample-code.md)   
- [기술 지원 및 접근성](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
-
-
-
+ [기술 지원 및 접근성](https://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)

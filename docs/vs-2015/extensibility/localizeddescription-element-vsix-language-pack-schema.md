@@ -1,29 +1,24 @@
 ---
 title: LocalizedDescription 요소 (VSIX 언어 팩 스키마) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 ms.assetid: 766a1732-bbaf-4875-b276-feb42169633a
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 408b582ec5145bab1f022776ba0793eb87b84dea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 281f3823d22ee0e290e4b6bb32a8280f4773a592
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797899"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679902"
 ---
 # <a name="localizeddescription-element-vsix-language-pack-schema"></a>LocalizedDescription 요소 (VSIX 언어 팩 스키마)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-필수. 확장 프로그램의 지역화 된 설명을 제공합니다.  
+필수 요소. 확장 프로그램의 지역화 된 설명을 제공합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -50,10 +45,10 @@ ms.locfileid: "51797899"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[VSIX LanguagePack 요소](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|필수. VSIX 언어 팩에 대 한 루트 요소를 제공합니다.|  
+|[VSIX LanguagePack 요소](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|필수 요소. VSIX 언어 팩에 대 한 루트 요소를 제공합니다.|  
   
 ## <a name="text-value"></a>텍스트 값  
- 필수. 대상 언어에서 확장의 텍스트 설명입니다.  
+ 필수 요소. 대상 언어에서 확장의 텍스트 설명입니다.  
   
 ## <a name="element-information"></a>요소 정보  
   
@@ -67,5 +62,4 @@ ms.locfileid: "51797899"
 ## <a name="see-also"></a>참고 항목  
  [VSX 언어 팩 스키마 참조](../extensibility/vsx-language-pack-schema-reference.md)   
  [VSIX 패키지 지역화](../extensibility/localizing-vsix-packages.md)   
- [VSIX 확장 스키마 1.0 참조](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
-
+ [VSIX 확장 스키마 1.0 참조](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)

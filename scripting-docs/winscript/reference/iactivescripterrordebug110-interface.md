@@ -2,7 +2,6 @@
 title: IActiveScriptErrorDebug110 인터페이스 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,18 +13,18 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 152f12154acc59b88fc8b1c9a176ac87a5da847d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
-ms.translationtype: MT
+ms.openlocfilehash: 72f545f5a48fc7b8aa3f9250b13a62ba659e94bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436052"
 ---
 # <a name="iactivescripterrordebug110-interface"></a>IActiveScriptErrorDebug110 인터페이스
-에 새로운 기능이 추가 된 [IActiveScriptDebug 인터페이스](../../winscript/reference/iactivescriptdebug-interface.md)합니다. 이 인터페이스는 BREAKREASON_ERROR 이벤트가 발생한 이유를 확인하기 위해 JavaScript 엔진에 의해 구현됩니다.  
+기능을 추가 합니다 [IActiveScriptDebug 인터페이스](../../winscript/reference/iactivescriptdebug-interface.md)합니다. 이 인터페이스는 BREAKREASON_ERROR 이벤트가 발생한 이유를 확인하기 위해 JavaScript 엔진에 의해 구현됩니다.  
   
 > [!IMPORTANT]
->  이 인터페이스는 PDM v11.0 이상에 의해 구현됩니다. activdbg100.h에서 찾을 수 있습니다.  
+> 이 인터페이스는 PDM v11.0 이상에 의해 구현됩니다. activdbg100.h에서 찾을 수 있습니다.  
   
 ## <a name="methods"></a>메서드  
  `IActiveScriptErrorDebug110` 인터페이스는 다음 메서드를 노출합니다.  

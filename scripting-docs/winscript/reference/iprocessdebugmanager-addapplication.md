@@ -1,8 +1,7 @@
 ---
-title: IProcessDebugManager::AddApplication | Microsoft Docs
+title: 'Iprocessdebugmanager:: Addapplication | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a221aa0038b0b3fd5046b9ada08e2de86f33a895
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 206baa92ae8d2803b2b07f4966565755a1785d61
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944977"
 ---
 # <a name="iprocessdebugmanageraddapplication"></a>IProcessDebugManager::AddApplication
-실행 중인 응용 프로그램의 컴퓨터 디버그 관리자 목록에 응용 프로그램을 추가 합니다.  
+컴퓨터 디버그 관리자의 목록에 응용 프로그램을 실행 하는 응용 프로그램을 추가 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT AddApplication(  
    IDebugApplication*  pda,  
    DWORD*              pdwAppCookie  
@@ -39,7 +38,7 @@ HRESULT AddApplication(
   
 #### <a name="parameters"></a>매개 변수  
  `pda`  
- [in] 디버그 응용 프로그램을 실행 중인 응용 프로그램의 목록에 추가 합니다.  
+ [in] 디버그 응용 프로그램을 실행 중인 응용 프로그램 목록에 추가 합니다.  
   
  `pdwAppCookie`  
  [out] 컴퓨터 디버그 관리자에서 응용 프로그램을 제거 하는 데 사용 되는 쿠키입니다.  
@@ -52,7 +51,7 @@ HRESULT AddApplication(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 응용 프로그램을 실행 하는 추가 컴퓨터 디버그 관리자의 응용 프로그램 목록입니다.  
+ 이 메서드는 응용 프로그램을 실행 하는 추가 컴퓨터 디버그 관리자에서 응용 프로그램 목록입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IProcessDebugManager 인터페이스](../../winscript/reference/iprocessdebugmanager-interface.md)   

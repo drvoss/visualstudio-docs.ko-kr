@@ -1,20 +1,19 @@
 ---
 title: XML 리터럴과 XML 스키마 탐색기와의 통합
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 57a29998-c6e8-48ac-bdb0-5788e73f9164
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57997b2fa338c69b1c253b4ea62862e179da43de
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 06f2942c2976179a44dc1b613d6d7c96d509a89a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002012"
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>XML 리터럴과 XML 스키마 탐색기와의 통합
 
@@ -30,6 +29,6 @@ Visual Basic 프로젝트에 XSD 파일에서 XML 리터럴의 포함 하는 경
 
 ![Visual Basic XML 리터럴, XML 스키마 탐색기](../xml-tools/media/vbxmlliteralswithxmlschemaexplorer2.gif)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [방법: XML 리터럴과 함께 XML 스키마 디자이너 사용](../xml-tools/how-to-use-the-xml-schema-designer-with-xml-literals.md)

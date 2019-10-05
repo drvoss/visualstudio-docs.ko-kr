@@ -1,14 +1,9 @@
 ---
 title: Assert 클래스 사용 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - Assert classes
 - Assert statements
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: da1b7a0d-4f1d-4d50-a07e-7b3ff60053f9
 caps.latest.revision: 29
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6775f7ea22bab5d210eb4e2993e81bd4a9587560
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fc27b7b0c0e277a0e39b406a07d677fe25bf8e73
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208314"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695069"
 ---
 # <a name="using-the-assert-classes"></a>Assert 클래스 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +49,7 @@ UnitTestingFramework 네임스페이스의 Assert 클래스를 사용하여 특�
  테스트 결과 Inconclusive 결과가 생성될 때마다 AssertInconclusiveException 예외가 throw됩니다. 일반적으로는 아직 작업 중엔 테스트에 Assert.Inconclusive 문을 추가하여 해당 테스트가 아직 실행할 준비가 되지 않았음을 나타냅니다.  
   
 > [!NOTE]
->  Ignore 특성을 사용하여 테스트 실행 준비가 되지 않았음을 표시하는 전략을 사용할 수도 있습니다. 그러나 이 전략을 사용하는 경우 구현 과정이 남아 있는 테스트 수에 대한 보고서를 쉽게 생성할 수 없다는 단점이 있습니다.  
+> Ignore 특성을 사용하여 테스트 실행 준비가 되지 않았음을 표시하는 전략을 사용할 수도 있습니다. 그러나 이 전략을 사용하는 경우 구현 과정이 남아 있는 테스트 수에 대한 보고서를 쉽게 생성할 수 없다는 단점이 있습니다.  
   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException>  
   
@@ -66,7 +61,4 @@ UnitTestingFramework 네임스페이스의 Assert 클래스를 사용하여 특�
   
 ## <a name="see-also"></a>참고 항목  
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting>   
- [기존 코드에 대한 단위 테스트 만들기 및 실행](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)
-
-
-
+ [기존 코드에 대한 단위 테스트 만들기 및 실행](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)

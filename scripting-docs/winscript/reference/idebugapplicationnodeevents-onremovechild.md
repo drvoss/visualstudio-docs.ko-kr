@@ -2,7 +2,6 @@
 title: IDebugApplicationNodeEvents::onRemoveChild | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4a62f187286f66f8adff8acda339e02a02bc6225
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8e59624e5ec6659e0fea3d55fdaddf7949eac18f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725993"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822162"
 ---
 # <a name="idebugapplicationnodeeventsonremovechild"></a>IDebugApplicationNodeEvents::onRemoveChild
-자식 노드 디버그 응용 프로그램 노드 개체에서 제거 될 때 이벤트를 처리 합니다.  
+디버그 응용 프로그램 노드 개체의 자식 노드를 제거할 때 이벤트를 처리 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT onRemoveChild(  
    IDebugApplicationNode*  prddpChild  
 );  
@@ -48,7 +47,7 @@ HRESULT onRemoveChild(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 자식 노드가 디버그 응용 프로그램 노드 개체에서 제거 될 때 이벤트를 처리 합니다.  
+ 이 메서드는 디버그 응용 프로그램 노드 개체의 자식 노드를 제거할 때 이벤트를 처리 합니다.  
   
  구현자는 `IDebugApplicationNode` 인터페이스에는이 이벤트가 발생 합니다.  
   

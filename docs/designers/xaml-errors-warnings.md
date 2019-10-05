@@ -1,21 +1,19 @@
 ---
 title: XAML 오류 및 경고
 ms.date: 03/06/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 34eac8a0-7ec5-4c40-b97a-0126ed367931
 author: karann-msft
 ms.author: karann
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09251f13cafa320e2736e9c61135283bb9e9739d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d3ae795b464d8a693371b1ebb9238a897debbf02
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844187"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892625"
 ---
 # <a name="xaml-errors-and-warnings"></a>XAML 오류 및 경고
 
@@ -34,7 +32,6 @@ XAML을 작성하면 Visual Studio에서는 입력한 코드를 분석합니다.
 > [!Note]
 > 일부 오류 또는 경고에는 해당 코드가 포함됩니다. 이러한 오류는 일반적으로 XAML 디자이너 오류입니다.
 
-
 ## <a name="suppress-xaml-designer-errors"></a>XAML 디자이너 오류 표시 안 함
 
 **도구 > 옵션**을 선택하여 **옵션** 대화 상자를 연 다음, **텍스트 편집기 > XAML > 기타**를 선택합니다.
@@ -42,5 +39,3 @@ XAML을 작성하면 Visual Studio에서는 입력한 코드를 분석합니다.
 **XAML 디자이너에 의해 검색된 오류 표시** 확인란의 선택을 취소합니다.
 
 ![XAML 디자이너 오류 표시 안 함](../designers/media/suppress_xaml_designer_errors.png)
-
-

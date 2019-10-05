@@ -1,14 +1,9 @@
 ---
 title: 'CA1819: 속성은 배열을 반환 해서는 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - PropertiesShouldNotReturnArrays
 - CA1819
@@ -20,12 +15,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6591431edf7ca6de84bbf18d431ad7350308a172
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 48f1b0c0860f8dfc38a83856570cdcdfa6f6ffc7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881731"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201726"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: 속성은 배열을 반환해서는 안 됩니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,23 +42,23 @@ ms.locfileid: "49881731"
  이 규칙 위반 문제를 해결 하려면 속성 메서드를 만들려면 하거나 컬렉션을 반환 하려면 속성을 변경 합니다.
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
- 특성은 배열을 반환 하는 속성을 포함할 수 있지만 컬렉션을 반환 하는 속성을 포함할 수 없습니다. [System.Attribute]에서 파생 되는 특성의 속성에 대해 발생 하는 경고를 무시할 수 있습니다 (<!-- TODO: review code entity reference <xref:assetId:///System.Attribute?qualifyHint=False&amp;autoUpgrade=True>  -->) 클래스입니다. 그렇지 않은 경우이 규칙에서 경고를 표시 하지 마십시오.
+ 특성은 배열을 반환 하는 속성을 포함할 수 있지만 컬렉션을 반환 하는 속성을 포함할 수 없습니다. [System.Attribute] (에서 파생 되는 특성의 속성에 대해 발생 하는 경고를 무시할 수 있습니다.<!-- TODO: review code entity reference <xref:assetId:///System.Attribute?qualifyHint=False&amp;autoUpgrade=True>  -->) 클래스입니다. 그렇지 않은 경우이 규칙에서 경고를 표시 하지 마십시오.
 
 ## <a name="example-violation"></a>예제 위반
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
  다음 예제에서는이 규칙을 위반 하는 속성을 보여 줍니다.
 
 ### <a name="code"></a>코드
  [!code-csharp[FxCop.Performance.PropertyArrayViolation#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyArrayViolation/cs/FxCop.Performance.PropertyArrayViolation.cs#1)]
  [!code-vb[FxCop.Performance.PropertyArrayViolation#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyArrayViolation/vb/FxCop.Performance.PropertyArrayViolation.vb#1)]
 
-### <a name="comments"></a>설명
+### <a name="comments"></a>주석
  이 규칙 위반 문제를 해결 하려면 속성 메서드를 만들려면 하거나 배열 대신 컬렉션을 반환 하려면 속성을 변경 합니다.
 
 ## <a name="change-the-property-to-a-method-example"></a>메서드 예제 속성 변경
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
  다음 예제에서는 메서드에 속성을 변경 하 여 위반을 수정 합니다.
 
 ### <a name="code"></a>코드
@@ -83,14 +78,14 @@ ms.locfileid: "49881731"
 
 ## <a name="allowing-users-to-modify-a-property"></a>사용자가 속성을 수정 하도록 허용
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
  속성을 수정 하려면 클래스의 소비자를 허용 하도록 좋습니다. 다음 예제에서는이 규칙을 위반 하는 읽기/쓰기 속성을 보여 줍니다.
 
 ### <a name="code"></a>코드
  [!code-csharp[FxCop.Performance.PropertyModifyViolation#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyModifyViolation/cs/FxCop.Performance.PropertyModifyViolation.cs#1)]
  [!code-vb[FxCop.Performance.PropertyModifyViolation#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyModifyViolation/vb/FxCop.Performance.PropertyModifyViolation.vb#1)]
 
-### <a name="comments"></a>설명
+### <a name="comments"></a>주석
  다음 예에서는 반환할 속성을 변경 하 여 위반을 수정 된 <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>합니다.
 
 ### <a name="code"></a>코드
@@ -98,7 +93,4 @@ ms.locfileid: "49881731"
  [!code-vb[FxCop.Performance.PropertyModifyFixed#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.PropertyModifyFixed/vb/FxCop.Performance.PropertyModifyFixed.vb#1)]
 
 ## <a name="related-rules"></a>관련된 규칙
- [CA1024: 적합한 속성을 사용하십시오.](../code-quality/ca1024-use-properties-where-appropriate.md)
-
-
-
+ [CA1024: 적절 한 속성을 사용 합니다.](../code-quality/ca1024-use-properties-where-appropriate.md)

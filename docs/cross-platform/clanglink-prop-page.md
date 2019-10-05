@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.assetid: 66e88848-116c-4eb0-bc57-183394d35b57
 author: corob
 ms.author: mblome
-manager: douge
+manager: jillfra
 f1_keywords:
 - VC.Project.VCLinkerTool.OutputFile
 - VC.Project.VCLinkerTool.ShowProgress
@@ -32,12 +32,12 @@ f1_keywords:
 - VC.Project.VCLinkerTool.LibraryDependencies
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 1b491257c561af337afdfd0d066c9ed8cd550c15
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 16dcb7ff5925f341fc78b57f1d9a4f011a27d576
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39230950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815779"
 ---
 # <a name="clang-linker-properties-android-c"></a>Clang 링커 속성(Android C++)
 

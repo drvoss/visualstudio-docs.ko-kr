@@ -1,8 +1,6 @@
 ---
 title: 파일로 이동, 기호로 이동, 줄로 이동
 ms.date: 08/14/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, go to
@@ -11,25 +9,25 @@ helpviewer_keywords:
 - go to
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d9ceeb7c4d24871bc0f2ddfc743c2c65e087205
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 588bc57dc2cda1030e9e1b8d1f989b2cc2d31662
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907055"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62550063"
 ---
 # <a name="find-code-using-go-to-commands"></a>이동 명령을 사용하여 코드 찾기
 
-Visual Studio의 **이동** 명령은 지정한 항목을 찾기 쉽도록 포커스가 있는 코드 검색을 수행합니다. 간단한 통합 인터페이스에서 특정 줄, 형식, 기호, 파일 및 멤버로 이동할 수 있습니다. 이 기능은 Visual Studio 2017 이상에 있습니다.
+Visual Studio의 **이동** 명령은 지정한 항목을 찾기 쉽도록 포커스가 있는 코드 검색을 수행합니다. 간단한 통합 인터페이스에서 특정 줄, 형식, 기호, 파일 및 멤버로 이동할 수 있습니다.
 
 ## <a name="how-to-use-it"></a>사용 방법
 
 입력 | 함수
 ------------ | ---
-**키보드** | **Ctrl**+**T** 또는 **Ctrl**+**,** 를 누름
+**키보드** | **Ctrl**+**T** 또는 **Ctrl**+ **,** 를 누름
 **마우스** | **편집** > **이동** > **전체로 이동**을 선택
 
 코드 편집기의 오른쪽 위에 작은 창이 표시됩니다.
@@ -40,7 +38,7 @@ Visual Studio의 **이동** 명령은 지정한 항목을 찾기 쉽도록 포�
 
 ![탐색 창](../ide/media/vside_navigatetowindow.png)
 
-물음표(**?**)를 입력하여 추가 도움말을 확인할 수도 있습니다.
+물음표( **?** )를 입력하여 추가 도움말을 확인할 수도 있습니다.
 
 ![전체로 이동 도움말](media/go-to-all-help.png)
 

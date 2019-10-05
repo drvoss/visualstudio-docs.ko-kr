@@ -1,14 +1,9 @@
 ---
-title: 'CA1065: 예기치 않은 위치에서 예외를 일으키지 않습니다 | Microsoft Docs'
-ms.custom: ''
+title: 'CA1065: 예기치 않은 위치에서 예외를 발생 하지 않습니다 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1065
 - DoNotRaiseExceptionsInUnexpectedLocations
@@ -20,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 142322360d4ba1ffed6ef893bf02254548ee2705
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6c5a393c32d7f7182fc3226689e24d20a4cae1ac
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200399"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: 예기치 않은 위치에서 예외를 발생시키지 마십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,24 +65,24 @@ ms.locfileid: "49887609"
 
  다음 예외는 속성 get 메서드에서 throw 될 수 있습니다.
 
--   <xref:System.InvalidOperationException?displayProperty=fullName> 및 모든 파생 버전 (포함 하 여 <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> 및 모든 파생 버전 (포함 하 여 <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
--   <xref:System.NotSupportedException?displayProperty=fullName> 및 모든 파생 항목
+- <xref:System.NotSupportedException?displayProperty=fullName> 및 모든 파생 항목
 
--   <xref:System.ArgumentException?displayProperty=fullName> (에서만 get 인덱싱됨)
+- <xref:System.ArgumentException?displayProperty=fullName> (에서만 get 인덱싱됨)
 
--   <xref:System.Collections.Generic.KeyNotFoundException> (에서만 get 인덱싱됨)
+- <xref:System.Collections.Generic.KeyNotFoundException> (에서만 get 인덱싱됨)
 
 ### <a name="event-accessor-methods"></a>이벤트 접근자 메서드
  이벤트 접근자에는 예외를 throw 하지 않는 간단한 작업 이어야 합니다. 이벤트 추가 또는 이벤트 처리기를 제거 하려고 할 때 예외를 throw 하지 해야 합니다.
 
  다음 예외는 이벤트 접근자에서는에서 throw 될 수 있습니다.
 
--   <xref:System.InvalidOperationException?displayProperty=fullName> 및 모든 파생 버전 (포함 하 여 <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> 및 모든 파생 버전 (포함 하 여 <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
--   <xref:System.NotSupportedException?displayProperty=fullName> 및 모든 파생 항목
+- <xref:System.NotSupportedException?displayProperty=fullName> 및 모든 파생 항목
 
--   <xref:System.ArgumentException> 와 파생 클래스
+- <xref:System.ArgumentException> 와 파생 클래스
 
 ### <a name="equals-methods"></a>Equals 메서드
  다음 **Equals** 메서드는 예외를 throw 하지 않아야 합니다.
@@ -138,10 +133,7 @@ ms.locfileid: "49887609"
  위반 throw 된 예외 대신 예외 선언으로 인해 발생 하는 경우이 규칙에서 경고를 표시 하지 않아도 안전 합니다.
 
 ## <a name="related-rules"></a>관련된 규칙
- [CA2219: exception 절에서 예외를 발생시키지 마십시오.](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
+ [CA2219: Exception 절에서 예외를 발생 하지 않습니다](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
 
 ## <a name="see-also"></a>참고 항목
  [디자인 경고](../code-quality/design-warnings.md)
-
-
-

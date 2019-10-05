@@ -1,8 +1,6 @@
 ---
 title: 'Idiaenumtables:: Clone | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,33 +9,34 @@ helpviewer_keywords:
 ms.assetid: beb21109-b12c-44d8-8c1f-a332216b3713
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f1ed2bbfe37b707aa00cafdd9ad3691fb3110e2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2f9fc227983818aa1d1c91e147a5dce650844ad8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934732"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832827"
 ---
 # <a name="idiaenumtablesclone"></a>IDiaEnumTables::Clone
-현재 열거자와 열거 상태가 같은 포함 하는 열거자를 만듭니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```C++  
-HRESULT Clone (   
-   IDiaEnumTables** ppenum  
-);  
-```  
-  
-#### <a name="parameters"></a>매개 변수  
- `ppenum`  
- [out] 반환 된 [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) 열거자의 중복을 포함 하는 개체입니다. 테이블에서 중복 되지 않았는지 열거자만 합니다.  
-  
-## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
+현재 열거자와 열거 상태가 같은 포함 하는 열거자를 만듭니다.
+
+## <a name="syntax"></a>구문
+
+```C++
+HRESULT Clone ( 
+   IDiaEnumTables** ppenum
+);
+```
+
+#### <a name="parameters"></a>매개 변수
+ `ppenum`
+
+[out] 반환 된 [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) 열거자의 중복을 포함 하는 개체입니다. 테이블에서 중복 되지 않았는지 열거자만 합니다.
+
+## <a name="return-value"></a>반환 값
+ 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+
+## <a name="see-also"></a>참고 항목
+- [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)

@@ -1,26 +1,21 @@
 ---
 title: 웹 프로젝트 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - web projects
 ms.assetid: d9c0329f-4b0b-4fda-8061-cce69f2f502d
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b3388d1e39ad4ad8e52339ab837cd04493481f16
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f2994c219dd1aadf7f5b9bc833eb7867baede9a6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796651"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144337"
 ---
 # <a name="web-projects"></a>웹 프로젝트
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,4 +32,3 @@ ms.locfileid: "51796651"
 ## <a name="related-sections"></a>관련 단원  
  [프로젝트](../../extensibility/internals/projects.md)  
  확장 하는 방법에 설명 합니다 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 프로젝트 시스템.
-

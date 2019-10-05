@@ -1,12 +1,9 @@
 ---
-title: '방법: 도메인별 언어에서 표준 메뉴 명령 수정 | Microsoft Docs'
-ms.custom: ''
+title: '방법: 도메인 특정 언어에서 표준 메뉴 명령 수정 | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
 - Domain-Specific Language, adding custom commands
@@ -14,15 +11,15 @@ ms.assetid: 9b9d8314-d0d8-421a-acb9-d7e91e69825c
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3d29a501ef6f55c835efd68e474bc39a847f745d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 966a81f7863f71296bb7b6bd307a5e3a5241c783
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837569"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441029"
 ---
-# <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>방법: 도메인별 언어에서 표준 메뉴 명령 수정
+# <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>방법: 도메인 특정 언어에서 표준 메뉴 명령 수정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 DSL에서 자동으로 정의되는 일부 표준 명령의 동작을 수정할 수 있습니다. 예를 들어, 수정할 수 있습니다 **잘라내기** 중요 한 정보가 제외 되도록 합니다. 이렇게 하려면 명령 집합 클래스에서 메서드를 재정의합니다. 이러한 클래스는 DslPackage 프로젝트의 CommandSet.cs 파일에서 정의되며 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>에서 파생됩니다.  
@@ -38,39 +35,39 @@ DSL에서 자동으로 정의되는 일부 표준 명령의 동작을 수정할 
    이 항목에서는 위의 절차에 대해 설명합니다.  
   
 > [!NOTE]
->  메뉴 명령을 직접 만들려는 경우 참조 [방법: 바로 가기 메뉴에 명령을 추가](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)합니다.  
+> 메뉴 명령을 직접 만들려는 경우 참조 [방법: 바로 가기 메뉴에 명령을 추가](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)합니다.  
   
-##  <a name="what"></a> 명령을 수정할 수 있습니까?  
+## <a name="what"></a> 명령을 수정할 수 있습니까?  
   
 #### <a name="to-discover-what-commands-you-can-modify"></a>수정할 수 있는 명령을 파악하려면  
   
-1.  에 `DslPackage` 프로젝트를 열고 `GeneratedCode\CommandSet.cs`합니다. 이 C# 파일의 보조 파일로 솔루션 탐색기에서 찾을 수 있습니다 `CommandSet.tt`합니다.  
+1. 에 `DslPackage` 프로젝트를 열고 `GeneratedCode\CommandSet.cs`합니다. 이 C# 파일의 보조 파일로 솔루션 탐색기에서 찾을 수 있습니다 `CommandSet.tt`합니다.  
   
-2.  사용 하 여 해당 이름 끝이이 파일에서 클래스를 찾을 "`CommandSet`", 예를 들어 `Language1CommandSet` 고 `Language1ClipboardCommandSet`입니다.  
+2. 사용 하 여 해당 이름 끝이이 파일에서 클래스를 찾을 "`CommandSet`", 예를 들어 `Language1CommandSet` 고 `Language1ClipboardCommandSet`입니다.  
   
-3.  각 명령 집합 클래스에서 "`override`"와 공백을 차례로 입력합니다. 그러면 IntelliSense에서 재정의할 수 있는 메서드 목록을 표시합니다. 각 명령에는 이름이 "`ProcessOnStatus`" 및 "`ProcessOnMenu`"로 시작하는 메서드 쌍이 있습니다.  
+3. 각 명령 집합 클래스에서 "`override`"와 공백을 차례로 입력합니다. 그러면 IntelliSense에서 재정의할 수 있는 메서드 목록을 표시합니다. 각 명령에는 이름이 "`ProcessOnStatus`" 및 "`ProcessOnMenu`"로 시작하는 메서드 쌍이 있습니다.  
   
-4.  수정할 명령이 포함된 명령 집합 클래스를 확인합니다.  
+4. 수정할 명령이 포함된 명령 집합 클래스를 확인합니다.  
   
-5.  편집 내용을 저장하지 않고 파일을 닫습니다.  
+5. 편집 내용을 저장하지 않고 파일을 닫습니다.  
   
     > [!NOTE]
-    >  일반적으로는 생성된 파일을 편집하면 안 됩니다. 다음 번에 파일을 생성하면 편집 내용이 손실됩니다.  
+    > 일반적으로는 생성된 파일을 편집하면 안 됩니다. 다음 번에 파일을 생성하면 편집 내용이 손실됩니다.  
   
-##  <a name="extend"></a> 적절 한 명령 집합 클래스 확장  
+## <a name="extend"></a> 적절 한 명령 집합 클래스 확장  
  명령 집합 클래스의 partial 선언이 포함된 새 파일을 만듭니다.  
   
 #### <a name="to-extend-the-command-set-class"></a>명령 집합 클래스를 확장하려면  
   
-1.  솔루션 탐색기의 DslPackage 프로젝트에서 GeneratedCode 폴더를 열고 CommandSet.tt를 확인하여 생성된 CommandSet.cs 파일을 엽니다. 이 파일에 정의된 첫 번째 클래스의 이름과 네임스페이스를 확인합니다. 예를 들어 다음과 같은 코드가 표시될 수 있습니다.  
+1. 솔루션 탐색기의 DslPackage 프로젝트에서 GeneratedCode 폴더를 열고 CommandSet.tt를 확인하여 생성된 CommandSet.cs 파일을 엽니다. 이 파일에 정의된 첫 번째 클래스의 이름과 네임스페이스를 확인합니다. 예를 들어 다음과 같은 코드가 표시될 수 있습니다.  
   
      `namespace Company.Language1`  
   
      `{ ...  internal partial class Language1CommandSet : ...`  
   
-2.  **DslPackage**, 라는 폴더를 만듭니다 **사용자 지정 코드**합니다. 이 폴더에서 이라는 새 클래스 파일을 만듭니다 `CommandSet.cs`합니다.  
+2. **DslPackage**, 라는 폴더를 만듭니다 **사용자 지정 코드**합니다. 이 폴더에서 이라는 새 클래스 파일을 만듭니다 `CommandSet.cs`합니다.  
   
-3.  새 파일에 생성된 partial 클래스와 이름 및 네임스페이스가 같은 partial 선언을 작성합니다. 예를 들어:  
+3. 새 파일에 생성된 partial 클래스와 이름 및 네임스페이스가 같은 partial 선언을 작성합니다. 예를 들어:  
   
     ```  
     using System;  
@@ -82,8 +79,8 @@ DSL에서 자동으로 정의되는 일부 표준 명령의 동작을 수정할 
   
      **참고** 클래스 파일 템플릿을 사용 하는 새 파일을 만드는 경우 네임 스페이스 및 클래스 이름을 모두 수정 해야 합니다.  
   
-##  <a name="override"></a> 명령 메서드 재정의  
- 대부분의 명령에 연결 된 메서드가 두: 같은 이름 사용 하 여 메서드 `ProcessOnStatus`... 명령이 표시 되 고 사용할 수 있어야 하는지 여부를 결정 합니다. 이 메서드는 사용자가 다이어그램을 마우스 오른쪽 단추로 클릭할 때마다 호출되고 빠르게 실행되며 아무것도 변경하지 않아야 합니다. `ProcessOnMenu`... 사용자 명령을 클릭 하 고 명령의 기능을 수행 해야 하는 경우 호출 됩니다. 이 두 메서드 중 하나 또는 둘 다를 재정의할 수 있습니다.  
+## <a name="override"></a> 명령 메서드 재정의  
+ 대부분의 명령에는 두 연결된 방법이 있습니다. 이름 사용 하 여 메서드 같은 `ProcessOnStatus`... 명령이 표시 되 고 사용할 수 있어야 하는지 여부를 결정 합니다. 이 메서드는 사용자가 다이어그램을 마우스 오른쪽 단추로 클릭할 때마다 호출되고 빠르게 실행되며 아무것도 변경하지 않아야 합니다. `ProcessOnMenu`... 사용자 명령을 클릭 하 고 명령의 기능을 수행 해야 하는 경우 호출 됩니다. 이 두 메서드 중 하나 또는 둘 다를 재정의할 수 있습니다.  
   
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>메뉴에 명령이 표시되는 경우를 변경하려면  
  ... Processonstatus 메서드. 이 메서드는 해당 MenuCommand 매개 변수의 Visible 및 Enabled 속성을 설정합니다. 일반적으로 명령은 this.CurrentSelection을 확인하여 명령이 선택한 요소에 적용되는지 여부를 결정하며, 이러한 요소의 속성을 확인하여 현재 상태에 명령을 적용할 수 있는지 여부도 결정할 수 있습니다.  
@@ -93,7 +90,7 @@ DSL에서 자동으로 정의되는 일부 표준 명령의 동작을 수정할 
  다음 예에서는 사용자가 둘 이상의 모양을 선택하면 Delete 메뉴 항목을 사용하지 않도록 설정합니다.  
   
 > [!NOTE]
->  이 메서드는 키 입력을 통해 명령을 사용할 수 있는지 여부에는 영향을 주지 않습니다. 예를 들어 Delete 메뉴 항목을 사용하지 않도록 설정해도 Delete 키를 통해 명령을 호출할 수는 있습니다.  
+> 이 메서드는 키 입력을 통해 명령을 사용할 수 있는지 여부에는 영향을 주지 않습니다. 예를 들어 Delete 메뉴 항목을 사용하지 않도록 설정해도 Delete 키를 통해 명령을 호출할 수는 있습니다.  
   
 ```  
 /// <summary>  
@@ -163,6 +160,3 @@ protected override void ProcessOnMenuDeleteCommand()
  [VSCT XML 스키마 참조](../extensibility/vsct-xml-schema-reference.md)   
  [VMSDK – 회로 다이어그램 샘플입니다. 광범위 한 DSL 사용자 지정](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)   
  [샘플 코드: 회로 다이어그램](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-

@@ -1,8 +1,6 @@
 ---
 title: 명령
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Visual Studio, commands
@@ -11,35 +9,39 @@ helpviewer_keywords:
 ms.assetid: 76ffa394-ee89-4629-aba9-1a62b72e6cc1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da258aab0a9c4e100591bf33abff710b1cf54f53
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 294ca45123faf1625b6f09a638ddc089a31d85cc
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063463"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043587"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio 명령
 
-Visual Studio에서는 **명령** 창, **직접 실행** 창 또는 **찾기/명령** 상자에서 명령을 호출할 수 있습니다. 각각의 경우 검색 또는 디버그 작업이 아닌 명령을 따라야 함을 나타내기 위해 보다 큼 부호(`>`)가 사용됩니다.
+**명령** 창, **직접 실행** 창 또는 **찾기/명령** 상자에서 Visual Studio 명령을 입력할 수 있습니다. 각 경우에서 보다 큼 기호(`>`)는 검색 또는 디버그 작업이 아닌 명령이 뒤에 표시됨을 나타냅니다.
 
-**키보드, 환경 옵션** 대화 상자에서 명령 및 구문의 전체 목록을 찾을 수 있습니다.
+**도구** > **옵션**  > **환경**의 **키보드** 페이지에서 전체 명령 목록 및 해당 구문을 확인할 수 있습니다.
 
-Visual Studio 명령의 이스케이프 문자는 캐럿(^) 문자입니다. 이는 바로 다음 문자가 제어 문자가 아닌 문자 그대로 해석된다는 것을 의미합니다. 이스케이프 문자는 매개 변수 또는 스위치 값에 곧은 큰따옴표("), 공백, 선행 슬래시, 캐럿 등 또는 리터럴 문자를 포함하기 위해 사용할 수 있습니다(스위치 이름 제외). 예를 들면 다음과 같습니다.
+IDE의 지역화된 버전에서는 IDE의 기본 언어 또는 영어로 명령 이름을 입력할 수 있습니다. 예를 들어 프랑스어 IDE에서 동일한 명령을 실행하려면 `File.NewFile` 또는 `Fichier.NouveauFichier` 를 입력할 수 있습니다.
+
+많은 명령에 별칭이 있습니다. 명령 별칭 목록은 [명령 별칭](../../ide/reference/visual-studio-command-aliases.md)을 참조하세요. 명령 바로 가기 키는 [Visual Studio의 기본 바로 가기 키](../default-keyboard-shortcuts-in-visual-studio.md)를 참조하세요.
+
+## <a name="escape-character"></a>이스케이프 문자
+
+Visual Studio 명령의 이스케이프 문자는 캐럿(^)입니다. 이스케이프 문자는 바로 뒤의 문자가 제어 문자가 아닌 문자 그대로 해석됨을 의미합니다. 이스케이프 문자는 매개 변수 또는 스위치 값에 곧은 큰따옴표("), 공백, 선행 슬래시, 캐럿 등 또는 리터럴 문자를 포함하기 위해 사용할 수 있습니다(스위치 이름 제외). 예:
 
 ```
 >Edit.Find ^^t /regex
 ```
 
-캐럿은 따옴표 내부에 있든 외부에 있든 기능이 동일합니다. 캐럿이 줄에서 마지막 문자인 경우 무시됩니다.
+캐럿은 따옴표 내부에 있든 외부에 있든 기능이 동일합니다. 캐럿이 줄에서 마지막 문자인 경우에는 무시됩니다.
 
-IDE의 지역화된 버전에서는 IDE의 기본 언어 또는 영어로 명령 이름을 입력할 수 있습니다. 예를 들어 프랑스어 IDE에서 동일한 명령을 실행하려면 `File.NewFile` 또는 `Fichier.NouveauFichier` 를 입력할 수 있습니다.
+## <a name="commands-with-arguments"></a>인수가 있는 명령
 
-많은 명령에 별칭이 있습니다. 명령 별칭 목록은 [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)를 참조하세요.
-
-다음 명령은 인수 및/또는 스위치를 사용합니다.
+다음 명령은 인수 또는 스위치를 사용합니다.
 
 | 명령 이름 | 설명 |
 | - | - |
@@ -80,4 +82,4 @@ IDE의 지역화된 버전에서는 IDE의 기본 언어 또는 영어로 명령
 
 - [명령 창](../../ide/reference/command-window.md)
 - [찾기/명령 상자](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,26 +1,21 @@
 ---
 title: 이벤트 전송 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], sending events
 ms.assetid: 064231e7-59b5-4437-8240-a23c0a7ec2a9
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9099cfe070f3c572823f8aa07a51e4456190f7b6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 98247b894d2db628d508713875ba0ea7d0642729
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749439"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204737"
 ---
 # <a name="sending-events"></a>이벤트 보내기
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,4 +45,3 @@ ms.locfileid: "51749439"
 ## <a name="related-sections"></a>관련 단원  
  [사용자 지정 디버그 엔진 만들기](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
  DE 디버깅 서비스를 제공 하도록 인터프리터 또는 운영 체제를 사용 하 여 작동 하는 방법을 설명 합니다.
-

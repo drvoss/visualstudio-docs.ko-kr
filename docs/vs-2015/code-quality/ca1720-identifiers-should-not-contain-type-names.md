@@ -1,14 +1,9 @@
 ---
-title: 'CA1720: 식별자 이름을 포함 하면 안 형식 | Microsoft Docs'
-ms.custom: ''
+title: 'CA1720: 식별자에 형식 이름을 포함 해야 합니다. | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1720
 - IdentifiersShouldNotContainTypeNames
@@ -20,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ec0980d312d4a65a770e63f0a23203a7e95c546f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 504c985bd276a891b76e8c9b2a7c0ef51c3a490a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62576730"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: 식별자에 형식 이름을 포함하면 안 됩니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,9 +74,9 @@ ms.locfileid: "49862341"
 
 - Float
 
-- float32
+- Float32
 
-- float64
+- Float64
 
   또한 매개 변수의 이름은 확인 됩니다 다음 언어에 관계 없이 데이터 형식 이름에 대해 대/소문자 구분 방식.
 
@@ -89,7 +84,7 @@ ms.locfileid: "49862341"
 
 - obj
 
-- 부울
+- Boolean
 
 - Char
 
@@ -131,7 +126,7 @@ ms.locfileid: "49862341"
 
 - Decimal
 
-- GUID
+- Guid
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
  **매개 변수에서 발생 한 경우:**
@@ -146,13 +141,10 @@ ms.locfileid: "49862341"
  형식 기반 매개 변수 및 멤버 이름의 가끔 사용 적절할 수 있습니다. 그러나 새로운 개발에 알려져 있지 않습니다에 대 한 시나리오 발생이 규칙에서 경고를 표시 해야 하는 위치입니다. 가 이전 함께 제공 되는 라이브러리에 대 한이 규칙에서 경고를 표시 해야 합니다.
 
 ## <a name="related-rules"></a>관련된 규칙
- [CA1709: 식별자는 정확한 대/소문자를 사용해야 합니다.](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709: 식별자에는 올바르게 표기를 사용 해야](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708: 식별자에는 대/소문자만 다른 이름을 사용할 수 없습니다.](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708: 식별자 대/소문자만 달라 야 합니다.](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
- [CA1707: 식별자에는 밑줄을 사용할 수 없습니다.](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+ [CA1707: 식별자에는 밑줄 없어야 합니다.](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
 
- [CA1719: 매개 변수 이름은 멤버 이름과 달라야 합니다.](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)
-
-
-
+ [CA1719: 매개 변수 이름은 멤버 이름과 일치 하지는](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)

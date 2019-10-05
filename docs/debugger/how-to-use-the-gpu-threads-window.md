@@ -1,8 +1,6 @@
 ---
 title: 디버거에서 GPU 스레드 보기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.gputthreads
@@ -17,94 +15,94 @@ helpviewer_keywords:
 ms.assetid: c647c502-a9f0-48e0-a430-976744a5fa51
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4f4577fc7e1a26481ff4ab5aa94888cf5668adf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 59229b1ca2b055fc8242bf6446541a395eceaa56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846865"
 ---
-# <a name="how-to-use-the-gpu-threads-window"></a>방법: GPU 스레드 창 사용
-GPU 스레드 창에서 디버깅 중인 응용 프로그램의 GPU에서 실행되는 스레드를 검사하고 관련 작업을 수행할 수 있습니다. GPU에서 실행 되는 응용 프로그램에 대 한 자세한 내용은 참조 하세요. [c + + AMP 개요](/cpp/parallel/amp/cpp-amp-overview)합니다.  
-  
- GPU 스레드 창에는 각 행이 모든 열에서 값이 동일한 GPU 스레드의 집합을 나타내는 테이블이 포함되어 있습니다. 열에 있는 항목의 정렬, 순서 변경, 제거 및 그룹화를 수행할 수 있습니다. GPU 스레드 창에서 스레드에 플래그를 지정하거나 해제할 수 있으며 스레드를 중지(일시 중단)하거나 재개(다시 시작)할 수 있습니다. 다음과 같은 열이 GPU 스레드 창에 표시됩니다.  
-  
-- 특히 주의할 스레드를 표시할 수 있는 플래그 열  
-  
-- 현재 스레드에는 노란색 화살표는 현재 스레드를 나타냅니다 열.  
-  
-- 합니다 **Thread Count** 동일한 위치에 있는 스레드 수를 표시 하는 열입니다.  
-  
-- 합니다 **줄** 열-각 스레드 그룹이 위치한 코드 줄을 표시 합니다.  
-  
-- 합니다 **주소** 열-각 스레드 그룹이 위치한 명령 주소를 표시 합니다. 기본적으로 이 열은 숨겨집니다.  
-  
-- 합니다 **위치** 소스 코드의 위치를 나타내는 열입니다.  
-  
-- 합니다 **상태** 열-스레드가 active, 차단, 시작 되지 않았는지 또는 완료 되었는지 여부를 표시 합니다.  
-  
-- 합니다 **타일** 열 행의 스레드에 대 한 타일 인덱스를 보여 줍니다.  
-  
-  테이블의 머리글은 표시되고 있는 타일과 스레드를 보여 줍니다.  
-  
-  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
-  
-### <a name="to-display-the-gpu-threads-window"></a>GPU 스레드 창을 표시하려면  
-  
-1.  **솔루션 탐색기**에서 프로젝트의 바로 가기 메뉴를 열고 **속성**을 선택합니다.  
-  
-2.  에 **속성 페이지** 프로젝트에 대 한 창에서 **구성 속성**, 선택 **디버깅**합니다.  
-  
-3.  에 **실행할 디버거** 목록에서 **로컬 Windows 디버거**합니다. 에 **디버거 형식** 목록에서 **GPU 전용**합니다. GPU에서 실행되는 코드의 중단점에서 중단하려면 이 디버거를 선택해야 합니다.  
-  
-4.  **확인** 단추를 선택합니다.  
-  
-5.  GPU 코드에서 중단점을 설정합니다.  
-  
-6.  메뉴 모음에서 **디버그**, **디버깅 시작**을 차례로 선택합니다. 응용 프로그램이 중단점에 도달할 때까지 기다립니다.  
-  
-7.  메뉴 하나를 선택 **디버그**, **Windows**합니다 **GPU 스레드**합니다.  
-  
-### <a name="to-switch-to-a-different-thread"></a>다른 스레드로 전환  
-  
--   열을 두 번 클릭합니다. 키보드에서는 행을 선택하고 Enter 키를 선택합니다.  
-  
-### <a name="to-display-a-particular-tile-and-thread"></a>특정 타일 및 스레드를 표시하려면  
-  
-1.  선택 된 **스레드 전환기** GPU 스레드 창에는 단추입니다.  
-  
-2.  텍스트 상자에 타일 및 스레드 값을 입력합니다.  
-  
-3.  위에 화살표가 있는 단추를 선택합니다.  
-  
-### <a name="to-display-or-hide-a-column"></a>열을 표시하거나 숨기려면  
-  
--   GPU 스레드 창에 대 한 바로 가기 메뉴를 열고 **열**를 선택한 다음 열을 표시 하거나 숨깁니다.  
-  
-### <a name="to-sort-by-a-column"></a>열을 기준으로 정렬하려면  
-  
--   열 머리글을 선택합니다.  
-  
-### <a name="to-group-threads"></a>스레드를 그룹화하려면  
-  
--   GPU 스레드 창에 대 한 바로 가기 메뉴를 열고 **Group By**, 표시 된 열 이름 중 하나를 선택 합니다. 선택 **None** 스레드 그룹을 해제 합니다.  
-  
-### <a name="to-freeze-or-thaw-a-row-of-threads"></a>스레드의 행을 중지하거나 재개하려면  
-  
--   행에 대 한 바로 가기 메뉴를 열고 **Freeze** 하거나 **재개**합니다.  
-  
-### <a name="to-flag-or-unflag-a-row-of-threads"></a>스레드의 행에 플래그를 지정하거나 해제하려면  
-  
--   스레드의 플래그 열을 선택 하거나 스레드에 대 한 바로 가기 메뉴를 열고 선택한 **플래그** 하거나 **플래그 해제**합니다.  
-  
-### <a name="to-display-only-flagged-threads"></a>플래그가 지정된 스레드만 표시하려면  
-  
--   GPU 스레드 창에서 플래그 단추를 선택합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [다중 스레드 응용 프로그램 디버그](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [방법: 병렬 조사식 창 사용](../debugger/how-to-use-the-parallel-watch-window.md)   
- [연습: C++ AMP 응용 프로그램 디버깅](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+# <a name="how-to-use-the-gpu-threads-window-c"></a>방법: GPU 스레드 창 사용 (C++)
+GPU 스레드 창에서 디버깅 중인 애플리케이션의 GPU에서 실행되는 스레드를 검사하고 관련 작업을 수행할 수 있습니다. GPU에서 실행 되는 응용 프로그램에 대 한 자세한 내용은 참조 하세요. [ C++ AMP 개요](/cpp/parallel/amp/cpp-amp-overview)합니다.
+
+ GPU 스레드 창에는 각 행이 모든 열에서 값이 동일한 GPU 스레드의 집합을 나타내는 테이블이 포함되어 있습니다. 열에 있는 항목의 정렬, 순서 변경, 제거 및 그룹화를 수행할 수 있습니다. GPU 스레드 창에서 스레드에 플래그를 지정하거나 해제할 수 있으며 스레드를 중지(일시 중단)하거나 재개(다시 시작)할 수 있습니다. 다음과 같은 열이 GPU 스레드 창에 표시됩니다.
+
+- 특히 주의할 스레드를 표시할 수 있는 플래그 열
+
+- 현재 스레드에는 노란색 화살표는 현재 스레드를 나타냅니다 열.
+
+- **스레드 수** 열 - 스레드 수를 동일한 위치에 표시합니다.
+
+- **줄** 열 - 각 스레드 그룹이 위치한 코드 줄을 표시합니다.
+
+- **주소** 열 - 각 스레드 그룹이 위치한 명령 주소를 표시합니다. 기본적으로 이 열은 숨겨집니다.
+
+- **위치** 열 - 소스 코드의 위치를 표시합니다.
+
+- **상태** 열 - 스레드가 활성화되어 있는지, 차단되어 있는지, 시작되지 않았는지 또는 완료되었는지를 표시합니다.
+
+- **타일** 열 - 행의 스레드에 대한 타일 인덱스를 표시합니다.
+
+  테이블의 머리글은 표시되고 있는 타일과 스레드를 보여 줍니다.
+
+  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
+
+### <a name="to-display-the-gpu-threads-window"></a>GPU 스레드 창을 표시하려면
+
+1. **솔루션 탐색기**에서 프로젝트의 바로 가기 메뉴를 열고 **속성**을 선택합니다.
+
+2. 프로젝트의 **속성 페이지** 창에 있는 **구성 속성** 아래에서 **디버깅**을 선택합니다.
+
+3. **실행할 디버거** 목록에서 **로컬 Windows 디버거**를 선택합니다. **디버거 형식** 목록에서 **GPU 전용**을 선택합니다. GPU에서 실행되는 코드의 중단점에서 중단하려면 이 디버거를 선택해야 합니다.
+
+4. **확인** 단추를 선택합니다.
+
+5. GPU 코드에서 중단점을 설정합니다.
+
+6. 메뉴 모음에서 **디버그**, **디버깅 시작**을 차례로 선택합니다. 애플리케이션이 중단점에 도달할 때까지 기다립니다.
+
+7. 메뉴 모음에서 **디버그**, **Windows**, **GPU 스레드**를 선택합니다.
+
+### <a name="to-switch-to-a-different-thread"></a>다른 스레드로 전환
+
+- 열을 두 번 클릭합니다. (키보드: 행을 선택 하 고 enter 키를 선택 합니다.)
+
+### <a name="to-display-a-particular-tile-and-thread"></a>특정 타일 및 스레드를 표시하려면
+
+1. GPU 스레드 창에서 **스레드 전환기 확장** 단추를 선택합니다.
+
+2. 텍스트 상자에 타일 및 스레드 값을 입력합니다.
+
+3. 위에 화살표가 있는 단추를 선택합니다.
+
+### <a name="to-display-or-hide-a-column"></a>열을 표시하거나 숨기려면
+
+- GPU 스레드 창에 대한 바로 가기 메뉴를 열고 **열**을 선택한 다음, 표시하거나 숨기려는 열을 선택합니다.
+
+### <a name="to-sort-by-a-column"></a>열을 기준으로 정렬하려면
+
+- 열 머리글을 선택합니다.
+
+### <a name="to-group-threads"></a>스레드를 그룹화하려면
+
+- GPU 스레드 창에 대한 바로 가기 메뉴를 열고 **그룹화 방법**을 선택한 다음, 표시된 열 이름 중 하나를 선택합니다. 스레드의 그룹을 해제하려면 **없음**을 선택합니다.
+
+### <a name="to-freeze-or-thaw-a-row-of-threads"></a>스레드의 행을 중지하거나 재개하려면
+
+- 행에 대한 바로 가기 메뉴를 열고 **중지** 또는 **재개**를 선택합니다.
+
+### <a name="to-flag-or-unflag-a-row-of-threads"></a>스레드의 행에 플래그를 지정하거나 해제하려면
+
+- 스레드의 플래그 열을 선택하거나 스레드에 대한 바로 가기 메뉴를 열고 **플래그** 또는 **플래그 해제**를 선택합니다.
+
+### <a name="to-display-only-flagged-threads"></a>플래그가 지정된 스레드만 표시하려면
+
+- GPU 스레드 창에서 플래그 단추를 선택합니다.
+
+## <a name="see-also"></a>참고 항목
+- [다중 스레드 애플리케이션 디버그](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [방법: 병렬 조사식 창 사용](../debugger/how-to-use-the-parallel-watch-window.md)
+- [연습: C++ AMP 애플리케이션 디버깅](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

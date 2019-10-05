@@ -1,12 +1,9 @@
 ---
 title: 이미지 모양의 속성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.dsltools.dsldesigner.selectimagedialog
 - vs.dsltools.dsldesigner.imageshape
@@ -16,13 +13,13 @@ ms.assetid: 9ce00ccd-07f2-4640-ac96-2a60481d0d72
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 9ea239fcdef2c9b2e5eccc82fd162e0b940bdf44
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: d51801c1be56504fa4bf4ed2046d463db0e99aae
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219967"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701497"
 ---
 # <a name="properties-of-image-shapes"></a>이미지 모양의 속성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +75,4 @@ ms.locfileid: "50219967"
 |이미지|이 모양에 사용 되는 이미지 파일 경로입니다.|\<없음 >|  
   
 ## <a name="see-also"></a>참고 항목  
- [도메인 특정 언어 도구 용어집](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

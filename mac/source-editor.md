@@ -1,20 +1,20 @@
 ---
 title: 소스 편집기
 description: Mac용 Visual Studio에서 소스 편집기 사용
-author: conceptdev
-ms.author: crdun
+author: cobey
+ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: b284cde511b17863861908d9967bbea7672e297b
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: d1ea74b4893032252d04ebe5fe5e65ca1eedaeeb
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295698"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493269"
 ---
 # <a name="source-editor"></a>소스 편집기
 
-코드를 간결하고 효율적으로 작성하려면 신뢰할 수 있는 소스 편집기가 꼭 필요합니다. Mac용 Visual Studio에서 제공하는 정교한 소스 편집기는 IDE 상호 작용의 핵심을 이룹니다. 소스 편집기는 구문 강조 표시, 코드 조각, 코드 접기 등의 기초적인 기능부터 Roslyn 컴파일러 통합에 따르는 완벽한 기능의 IntelliSense 코드 완성과 같은 이점에 이르기까지 작업의 편의성을 높여 주는 기능을 다양하게 제공합니다.
+코드를 간결하고 효율적으로 작성하려면 신뢰할 수 있는 소스 편집기가 꼭 필요합니다. Mac용 Visual Studio에서 제공하는 정교한 소스 편집기는 IDE 상호 작용의 핵심을 이룹니다. 소스 편집기는 예상할 수 있고 작업을 쉽게 수행할 수 있는 기능을 제공합니다. 구문 강조 표시, 코드 조각, 코드 접기 등과 같은 기본적인 기능부터 완전한 기능의 IntelliSense 코드 완성과 같은 Roslyn 컴파일러 통합에 이점에 이르기까지 다양합니다.
 
 Mac용 Visual Studio의 소스 편집기에서는 디버깅, 리팩터링, 버전 제어 통합 등 IDE의 다른 모든 기능을 원활하게 사용할 수 있습니다.
 
@@ -32,13 +32,13 @@ Mac용 Visual Studio는 플랫폼 간 개발을 최대한 편리하고 실용적
 
 코드 접기를 설정하려면 **Visual Studio > 기본 설정 > 텍스트 편집기 > 일반 > 코드 접기**로 이동합니다.
 
-![코드 접기 옵션](media/source-editor-image1.png)
+![코드 접기 옵션](media/source-neweditor-image1.png)
 
 이 메뉴에는 기본적으로 #regions 및 주석을 접고 코드 대신 명명된 힌트를 표시하는 옵션도 포함되어 있습니다.
 
 섹션을 표시하거나 숨기려면 줄 번호 옆의 노출 위젯을 사용합니다.
 
-![코드의 섹션 표시 또는 숨기기](media/source-editor-image2.png)
+![코드의 섹션 표시 또는 숨기기](media/source-neweditor-image2.png)
 
 **보기 > 접기 > 접기 토글/모든 접기 토글** 메뉴 항목을 사용하면 접기 표시 및 숨기기를 서로 전환할 수도 있습니다.
 
@@ -46,21 +46,19 @@ Mac용 Visual Studio는 플랫폼 간 개발을 최대한 편리하고 실용적
 
 이 메뉴 항목으로 코드 접기를 사용하거나 사용하지 않도록 설정할 수도 있습니다.
 
-## <a name="white-space"></a>공백
+## <a name="word-wrap"></a>단어 줄 바꿈
 
-소스 코드에서 보이지 않는 문자를 표시해야 하는 경우도 있습니다. 이는 코딩 표준을 준수하고 불필요한 공간 낭비를 방지하는 수단이 됩니다. 또한 정확한 줄 들여쓰기가 품질을 좌우하는 F# 코드를 작성할 때 유용합니다.
+자동 줄 바꿈은 긴 코드 줄 또는 제한된 보기 공간에서 작업할 때 공간을 관리하는 데 도움을 줄 수 있습니다. 또한 자동 줄 바꿈은 보기를 숨기거나 소스 보기의 너비를 줄일 수 있는 창을 여는 경우에도 코드 보기에 소스 파일의 전체 내용이 포함되도록 할 수 있습니다. 
 
-**Visual Studio > 기본 설정 > 텍스트 편집기 > 표식 및 눈금자**로 이동하여 공백을 표시하는 옵션을 설정합니다. 이 옵션을 선택하면 보이지 않는 문자를 표시할 _경우_ 를 안 함(Never), 선택 시(On Selection), 항상(Always) 중 하나로 설정할 수 있습니다.
+자동 줄 바꿈은 기본적으로 사용하지 않도록 설정되어 있지만 Mac용 Visual Studio의 **기본 설정**을 통해 사용하도록 설정할 수 있습니다. 
 
-![보이지 않는 문자 표시 옵션](media/source-editor-image3.png)
+자동 줄 바꿈 기능을 사용하도록 설정하려면 **Visual Studio > 기본 설정 > 텍스트 편집기 > 새 편집기 > 자동 줄 바꿈**으로 이동합니다.
 
-탭, 공백 및 줄 끝을 표시하는 옵션도 사용할 수 있습니다.
+![자동 줄 바꿈 옵션](media/source-neweditor-wordwrap1.png)
 
-![탭 및 공백 표시](media/source-editor-image4.png)
+자동 줄 바꿈이 사용 설정된 상태에서 소스 편집기 보기의 너비를 초과하는 줄은 자동으로 소스 파일 내의 다음 줄로 래핑됩니다. 줄 바꿈 옆에 나타나는 문자 모양을 표시하는 옵션을 사용하도록 설정할 수도 있습니다. 이렇게 하면 자동으로 래핑된 줄과 수동으로 래핑된 줄을 구분할 수 있습니다.
 
-보이지 않는 문자는 다음 이미지와 같이 회색 점으로 표시됩니다.
-
-![공백 표시](media/source-editor-image22.png)
+![자동 줄 바꿈이 사용 설정된 래핑된 텍스트](media/source-neweditor-wordwrap2.png)
 
 ## <a name="ruler"></a>눈금자
 

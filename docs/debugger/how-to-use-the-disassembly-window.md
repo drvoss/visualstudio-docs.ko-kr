@@ -2,7 +2,6 @@
 title: 디버거의 디스어셈블리 코드 보기 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/30/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.disassembly
@@ -20,17 +19,17 @@ helpviewer_keywords:
 ms.assetid: eaf84dd0-c82d-481b-af51-690b74e7794c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c35432bdd01b9b79c2afaa266d8078caf04bd62b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MTE95
+ms.openlocfilehash: 43214ee122b3aa5c3907b9176631f2dc22c9178e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063838"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846392"
 ---
-# <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visual Studio 디버거의 디스어셈블리 코드 보기 (C#, c + +, Visual Basic의 경우 F#)
+# <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visual Studio 디버거의 디스어셈블리 코드 보기 (C#, C++, Visual Basic의 경우 F#)
 
 **디스어셈블리** 창에는 컴파일러에서 만든 명령에 따라 어셈블리 코드가 표시됩니다. 관리 되는 코드를 디버깅 하는 경우 이러한 어셈블리 명령은 없습니다 Microsoft intermediate language (MSIL) Visual Studio 컴파일러에서 생성 시간 하기만 하면 됩니다 (JIT) 컴파일러에서 생성 하는 네이티브 코드에 해당 합니다.
 
@@ -70,7 +69,7 @@ ms.locfileid: "53063838"
 
 왼쪽된 여백의 노란색 화살표는 현재 실행 위치를 표시합니다. 네이티브 코드에 대해 실행 지점을 CPU의 프로그램 카운터에 해당합니다. 이 위치는 프로그램에서 다음에 실행될 명령을 나타냅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 * [메모리에서 페이지 위나 아래로 이동](../debugger/how-to-page-up-or-down-in-memory.md)
 * [디버거에서 데이터 보기](../debugger/viewing-data-in-the-debugger.md)

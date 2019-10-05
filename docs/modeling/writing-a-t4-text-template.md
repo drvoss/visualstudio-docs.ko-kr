@@ -8,16 +8,15 @@ helpviewer_keywords:
 - text templates, functions that generate text
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: b78e34205c2b7af36f3c43f2307fd62bfca6fe39
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: 2549ad27f0f05d3425dd6625e9d48fdfab4db3a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386075"
 ---
 # <a name="writing-a-t4-text-template"></a>T4 텍스트 템플릿 쓰기
 텍스트 템플릿은 해당 템플릿에서 생성될 텍스트를 포함합니다. 예를 들어, 웹 페이지를 만드는 템플릿으로 사용 될 "\<html >..." 및 HTML 페이지의 기타 모든 표준 부분입니다. 템플릿에 삽입 됩니다 *제어 블록*는 프로그램 코드 조각입니다. 제어 블록은 경우에 따라 다른 값을 제공하여 텍스트 부분을 조건부로/반복 적용할 수 있도록 합니다.
@@ -26,11 +25,11 @@ ms.locfileid: "53990518"
 
  텍스트 템플릿은 다음 부분으로 구성됩니다.
 
--   **지시문** -템플릿을 처리 되는 방식을 제어 하는 요소입니다.
+- **지시문** -템플릿을 처리 되는 방식을 제어 하는 요소입니다.
 
--   **텍스트 블록** -출력에 직접 복사 되는 내용입니다.
+- **텍스트 블록** -출력에 직접 복사 되는 내용입니다.
 
--   **제어 블록** -텍스트를 변수 값을 삽입 하 고 텍스트의 조건부 또는 반복 부분을 제어 하는 프로그램 코드입니다.
+- **제어 블록** -텍스트를 변수 값을 삽입 하 고 텍스트의 조건부 또는 반복 부분을 제어 하는 프로그램 코드입니다.
 
 이 항목의 예제를 실행 하려면 복사 하 여 템플릿 파일에 설명 된 대로 [T4 텍스트 템플릿을 사용 하 여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)합니다. 템플릿 파일을 편집한 후 저장 하 고 출력을 검사할 **.txt** 파일입니다.
 
@@ -95,7 +94,7 @@ Hello!
  코드에서 `Write();` 문이 허용되는 모든 위치에 텍스트 블록을 삽입할 수 있습니다.
 
 > [!NOTE]
->  예: 루프 또는 조건부 복합 문 내에 텍스트 블록을 포함 하는 경우 항상 {...} 괄호 사용 텍스트 블록을 포함 합니다.
+> 예: 루프 또는 조건부 복합 문 내에 텍스트 블록을 포함 하는 경우 항상 {...} 괄호 사용 텍스트 블록을 포함 합니다.
 
 ### <a name="expression-control-blocks"></a>식 제어 블록
  식 제어 블록은 식을 평가한 다음 문자열로 변환합니다. 이 문이 출력 파일에 삽입됩니다.
@@ -108,7 +107,7 @@ Hello!
 <#= 2 + 3 #>
 ```
 
- 여기서 여는 기호에는 "<#="의 3개 문자가 있습니다.
+ 여는 기호는 3 개의 문자 "< #="입니다.
 
  식은 범위 내의 모든 변수를 포함할 수 있습니다. 예를 들어 다음 블록은 숫자가 포함된 줄을 출력합니다.
 
@@ -156,7 +155,7 @@ private int Square(int i)
  제어 블록에 대 한 자세한 내용은 참조 하세요. [텍스트 템플릿 제어 블록](../modeling/text-template-control-blocks.md)합니다.
 
 ### <a name="class-feature-blocks-can-contain-text-blocks"></a>텍스트 블록을 포함할 수 있는 클래스 기능 블록
- 텍스트를 생성하는 메서드를 작성할 수 있습니다. 예를 들면 다음과 같습니다.
+ 텍스트를 생성하는 메서드를 작성할 수 있습니다. 예를 들어:
 
 ```
 List of Squares:
@@ -186,7 +185,7 @@ private void WriteSquareLine(int i)
 <#@ assembly name="System.Xml" #>
 ```
 
- 절대 경로 이름을 사용하거나 경로 이름에 표준 매크로 이름을 사용해야 합니다. 예:
+ 절대 경로 이름을 사용하거나 경로 이름에 표준 매크로 이름을 사용해야 합니다. 예를 들어:
 
 ```
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>
@@ -225,7 +224,7 @@ private void WriteSquareLine(int i)
 
  자세한 내용은 [텍스트 템플릿 유틸리티 메서드](../modeling/text-template-utility-methods.md)합니다.
 
-## <a name="transforming-data-and-models"></a>데이터 및 모델 변형
+## <a name="transforming-data-and-models"></a>데이터 및 모델 변환
  텍스트 템플릿의 가장 유용한 적용 사례는 모델, 데이터베이스 또는 데이터 파일과 같은 소스의 내용에 따라 자료를 생성하는 것입니다. 템플릿은 데이터를 추출한 다음 서식을 다시 지정합니다. 템플릿 컬렉션은 이러한 소스를 여러 파일로 변환할 수 있습니다.
 
  소스 파일을 읽는 방식은 다양합니다.
@@ -239,7 +238,7 @@ private void WriteSquareLine(int i)
 
  **탐색 가능한 모델로 파일을 로드**합니다. 즉, 텍스트 템플릿 코드가 탐색할 수 있는 모델로 데이터를 읽는 보다 효율적인 방식을 사용할 수 있습니다. 예를 들어 XML 파일을 로드한 다음 XPath 식을 사용하여 탐색할 수 있습니다. 사용할 수도 있습니다 [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765) XML 데이터를 읽을 수 있는 클래스 집합을 만들려고 합니다.
 
- **다이어그램 또는 폼에서 모델 파일을 편집 합니다.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 모델을 다이어그램 또는 Windows form으로 편집할 수 있는 도구를 제공 합니다. 그러면 생성된 응용 프로그램의 사용자와 모델에 대해 보다 쉽게 논의할 수 있습니다. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]에서는 모델 구조를 반영하는 강력한 형식의 클래스 집합도 만듭니다. 자세한 내용은 [도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)합니다.
+ **다이어그램 또는 폼에서 모델 파일을 편집 합니다.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 모델을 다이어그램 또는 Windows form으로 편집할 수 있는 도구를 제공 합니다. 그러면 생성된 애플리케이션의 사용자와 모델에 대해 보다 쉽게 논의할 수 있습니다. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]에서는 모델 구조를 반영하는 강력한 형식의 클래스 집합도 만듭니다. 자세한 내용은 [도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)합니다.
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>디자인 타임 템플릿의 상대 파일 경로
  에 [디자인 타임 텍스트 템플릿](../modeling/design-time-code-generation-by-using-t4-text-templates.md)사용 하 여 텍스트 템플릿에 상대적인 위치에 파일을 참조 하려는 경우, `this.Host.ResolvePath()`합니다. 또한 `hostspecific="true"` 지시문에서 `template`도 설정해야 합니다.
@@ -265,7 +264,7 @@ Content of MyFile.txt is:
  (의 true가 아닙니다를 [런타임 텍스트 템플릿](../modeling/run-time-text-generation-with-t4-text-templates.md), 코드의 나머지 부분과 함께 컴파일되는 코드를 제공 하는.)
 
 ## <a name="editing-templates"></a>템플릿 편집
- 확장명 관리자 온라인 갤러리에서 특수한 텍스트 템플릿 편집기를 다운로드할 수 있습니다. 에 **도구** 메뉴에서 클릭 **확장 관리자**합니다. 클릭 **온라인 갤러리**, 한 다음 검색 도구를 사용 합니다.
+ 확장 관리자 온라인 갤러리에서 특수한 텍스트 템플릿 편집기를 다운로드할 수 있습니다. 에 **도구** 메뉴에서 클릭 **확장 관리자**합니다. 클릭 **온라인 갤러리**, 한 다음 검색 도구를 사용 합니다.
 
 ## <a name="related-topics"></a>관련 항목
 

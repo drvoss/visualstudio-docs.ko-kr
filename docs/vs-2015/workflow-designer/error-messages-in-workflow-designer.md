@@ -1,11 +1,8 @@
 ---
 title: 워크플로 디자이너의 오류 메시지 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - WFDErrorMessages.UI
@@ -15,18 +12,18 @@ ms.assetid: 4d8bbc2e-34fc-477f-9140-4adfd70c34a0
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: efd6bc680be42f1074da8d2313b1a4b8e9307580
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 005a1db9d99b5eb91fb49d1694610cdc4ace9826
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894848"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823314"
 ---
-# <a name="error-messages-in-workflow-designer"></a>워크플로 디자이너의 오류 메시지
+# <a name="error-messages-in-workflow-designer"></a>Workflow Designer의 오류 메시지
 이 항목은 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 작업 시 발생할 수 있는 오류 메시지 유형을 설명합니다.  
   
-## <a name="situations-in-which-errors-in-the-workflow-designer-occur"></a>Workflow Designer에서 오류가 발생하는 경우  
+## <a name="situations-in-which-errors-in-the-workflow-designer-occur"></a>워크플로 디자이너에서 오류가 발생하는 경우  
  [!INCLUDE[wfd2](../includes/wfd2-md.md)]의 오류는 다음 경우에 발생합니다.  
   
 1. 식에 오류가 있습니다.  
@@ -51,4 +48,4 @@ ms.locfileid: "49894848"
  활동이 로드되지 못하면 "XAML에 오류가 발생하여 활동을 로드할 수 없습니다."라는 텍스트가 빨간색 상자에 나타납니다. 일반적으로 이 오류는 활동 형식을 확인할 수 없는 경우에 발생합니다. 빨간색 상자를 선택한 후 삭제하여 디자이너에서 잘못된 활동을 삭제할 수 있습니다.  
   
 ### <a name="workflow-load-errors"></a>워크플로 로드 오류  
- 워크플로를 로드하지 못하는 경우 워크플로 로드 실패의 원인이 된 예외 정보와 함께 "Workflow Designer에서 문서에 문제가 발생했습니다."라는 텍스트가 디자이너 화면에 나타납니다. 일반적으로 이 오류는 XAML 파일의 구문을 분석할 수 없는 경우에 발생합니다.
+ 워크플로를 로드하지 못하는 경우 워크플로 로드 실패의 원인이 된 예외 정보와 함께 "워크플로 디자이너에서 문서에 문제가 발생했습니다."라는 텍스트가 디자이너 화면에 나타납니다. 일반적으로 이 오류는 XAML 파일의 구문을 분석할 수 없는 경우에 발생합니다.

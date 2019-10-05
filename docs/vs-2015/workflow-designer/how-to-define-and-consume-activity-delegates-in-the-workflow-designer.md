@@ -1,23 +1,20 @@
 ---
 title: '방법: 워크플로 디자이너에서 활동 대리자 정의 및 사용 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
 caps.latest.revision: 3
 author: steved0x
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: f99816153870884f868a6b229068bdc281408337
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 37adb6cf6462887010b1c06c7d5af4a539203b15
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974581"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>방법: 워크플로 디자이너에서 활동 대리자 정의 및 사용
 [!INCLUDE[net_v45](../includes/net-v45-md.md)]에서는 <xref:System.Activities.Statements.InvokeDelegate> 작업에 대해 기본으로 제공되는 새 디자이너를 포함하고 있습니다. 이 디자이너는 <xref:System.Activities.ActivityDelegate> 또는 <xref:System.Activities.ActivityAction> 같은 <xref:System.Activities.ActivityFunc%601>에서 파생되는 작업에 대리자를 할당하는 데 사용할 수 있습니다.  
@@ -26,7 +23,7 @@ ms.locfileid: "49865494"
   
 1. [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]을 선택 **파일**를 **새로 만들기**를 **프로젝트**합니다. 선택 된 **워크플로** 왼쪽의 노드 및 **워크플로 콘솔 응용 프로그램** 오른쪽에서 템플릿. 원하는 경우 프로젝트 이름을 지정 하 고 클릭 **확인**합니다.  
   
-2. 프로젝트를 마우스 오른쪽 단추로 클릭 **솔루션 탐색기** 선택한 **추가**, **새 항목...** . 선택 합니다 **워크플로** 왼쪽에 노드 및 **활동** 오른쪽에서 템플릿. 새 활동 이름을 **MyForEach.xaml** 누릅니다 **확인**합니다. 워크플로 디자이너에서 활동이 열립니다.  
+2. 프로젝트를 마우스 오른쪽 단추로 클릭 **솔루션 탐색기** 선택한 **추가**, **새 항목...** . 선택 합니다 **워크플로** 왼쪽에 노드 및 **활동** 오른쪽에서 템플릿. 새 활동 이름을 **MyForEach.xaml** 누릅니다 **확인**합니다. Workflow Designer에서 활동이 열립니다.  
   
 3. 워크플로 디자이너에서을 클릭 합니다 **인수** 탭 합니다.  
   
@@ -34,7 +31,7 @@ ms.locfileid: "49865494"
   
 5. 에 **인수 형식** 열 선택 **Array of [T]** 합니다.  
   
-6. 형식 브라우저에서 선택 **개체**합니다. 클릭 **확인**합니다.  
+6. 형식 브라우저에서 선택 **개체**합니다. **확인**을 클릭합니다.  
   
 7. 클릭 **만드는 인수** 다시 합니다. 새 인수의 이름을 **본문**합니다. 에 **방향을** 선택 새 인수에 대 한 열 **속성**합니다.  
   

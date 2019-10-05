@@ -1,14 +1,9 @@
 ---
 title: GetAssemblyIdentity 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GetAssemblyIdentity
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: a977e072-37ad-4941-84a6-32a4483be55d
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b85d7679fe2869211826ed08f35a65031a6b77cf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9b4a578d1d22c6e912fd3f7edc203195dbba8987
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178403"
 ---
 # <a name="getassemblyidentity-task"></a>GetAssemblyIdentity 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 지정된 파일에서 어셈블리 ID를 검색하고 ID 정보를 출력합니다.  
   
 ## <a name="task-parameters"></a>작업 매개 변수  
@@ -50,7 +44,7 @@ ms.locfileid: "49175086"
   
  이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)를 참조하세요.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  다음 예제에서는 `MyAssemblies` 항목을 지정한 파일의 ID를 검색하고 `MyAssemblyIdentities` 항목에 출력합니다.  
   
 ```  
@@ -74,6 +68,3 @@ ms.locfileid: "49175086"
 ## <a name="see-also"></a>참고 항목  
  [작업](../msbuild/msbuild-tasks.md)   
  [작업 참조](../msbuild/msbuild-task-reference.md)
-
-
-

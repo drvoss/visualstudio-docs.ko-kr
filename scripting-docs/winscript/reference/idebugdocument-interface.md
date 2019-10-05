@@ -2,7 +2,6 @@
 title: IDebugDocument 인터페이스 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,15 +13,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 207dc0166cb9d0a59e99c03c511ec9bd75ea4bf2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b750dc586e241aa7e969362bb58f72a3ad77f0aa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974490"
 ---
 # <a name="idebugdocument-interface"></a>IDebugDocument 인터페이스
-모든 디버그 문서에 대 한 기본 인터페이스입니다.  
+모든 디버그 문서에 대한 기본 인터페이스입니다.  
   
 ## <a name="remarks"></a>설명  
- `IDebugDocument` 인터페이스에서 상속 하는 메서드만 노출 [IDebugDocumentInfo 인터페이스](../../winscript/reference/idebugdocumentinfo-interface.md)합니다. 추가 메서드를 노출 하지 않습니다.
+ 합니다 `IDebugDocument` 인터페이스에서 상속 된 메서드만 노출 [IDebugDocumentInfo 인터페이스](../../winscript/reference/idebugdocumentinfo-interface.md)합니다. 메서드를 노출 하지 않습니다.

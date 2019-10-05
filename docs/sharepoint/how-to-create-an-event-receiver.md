@@ -12,17 +12,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, event receivers
 - event receivers [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9a9f18bb4399e52c6afbac9b20a7b16d04a39843
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc42a92e1d7dcc73bb6bc0433da4e6a31d7fefb2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966759"
 ---
 # <a name="how-to-create-an-event-receiver"></a>방법: 이벤트 수신기 만들기
   만들어 *이벤트 수신기*, SharePoint 등 목록 또는 목록 항목을 사용 하 여 상호 작용할 때 응답할 수 있습니다. 예를 들어, 사용자 일정을 변경 하거나 연락처 목록에서 이름을 삭제 하는 경우 이벤트 수신기의 코드를 트리거할 수 있습니다. 이 항목에 따라 목록 인스턴스에 이벤트 수신기를 추가 하는 방법을 알아보십시오.
@@ -34,23 +34,23 @@ ms.locfileid: "53861574"
 
 #### <a name="to-add-an-event-receiver-to-the-list-instance"></a>목록 인스턴스에 이벤트 수신기를 추가 하려면
 
-1.  만든 프로젝트를 열고 [연습: SharePoint 용 사이트 열, 콘텐츠 형식 및 목록 만들기](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)합니다.
+1. 만든 프로젝트를 열고 [연습: SharePoint 용 사이트 열, 콘텐츠 형식 및 목록 만들기](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)합니다.
 
-2.  **솔루션 탐색기**, 이름으로 지정 된 SharePoint 프로젝트 노드를 선택 **클리닉**합니다.
+2. **솔루션 탐색기**, 이름으로 지정 된 SharePoint 프로젝트 노드를 선택 **클리닉**합니다.
 
-3.  메뉴 모음에서 **프로젝트** > **새 항목 추가**를 선택합니다.
+3. 메뉴 모음에서 **프로젝트** > **새 항목 추가**를 선택합니다.
 
-4.  준 **Visual C#** 또는 **Visual Basic**를 확장 합니다 **SharePoint** 노드를 선택한 후는 **2010** 항목입니다.
+4. 준 **Visual C#** 또는 **Visual Basic**를 확장 합니다 **SharePoint** 노드를 선택한 후는 **2010** 항목입니다.
 
-5.  에 **템플릿** 창 선택 **이벤트 수신기**, 이름을 **TestEventReceiver1**를 선택한 후는 **확인** 단추입니다.
+5. 에 **템플릿** 창 선택 **이벤트 수신기**, 이름을 **TestEventReceiver1**를 선택한 후는 **확인** 단추입니다.
 
      합니다 **SharePoint 사용자 지정 마법사** 나타납니다.
 
-6.  에 **이벤트 수신기 유형을 선택 하십시오?** 목록에서 선택 **목록 항목 이벤트**합니다.
+6. 에 **이벤트 수신기 유형을 선택 하십시오?** 목록에서 선택 **목록 항목 이벤트**합니다.
 
-7.  에 **이벤트 소스를 사용할 항목을?** 목록에서 선택 **환자 (Clinic\Patients)** 합니다.
+7. 에 **이벤트 소스를 사용할 항목을?** 목록에서 선택 **환자 (Clinic\Patients)** 합니다.
 
-8.  에 **다음 이벤트를 처리할** 목록 옆에 확인란을 선택 합니다 **항목이 추가 되었습니다**를 선택한 후는 **완료** 단추.
+8. 에 **다음 이벤트를 처리할** 목록 옆에 확인란을 선택 합니다 **항목이 추가 되었습니다**를 선택한 후는 **완료** 단추.
 
      새 이벤트 수신기에 대 한 코드 파일 이라고 하는 단일 메서드를 포함 `ItemAdded`합니다. 다음 단계에서는 모든 연락처 이름이 Scott Brown 기본적으로 지정 됩니다 있도록이 방법으로 코드를 추가할 수 있습니다.
 
@@ -69,6 +69,6 @@ ms.locfileid: "53861574"
 
      선택한 후는 **저장** 단추를 **환자 이름** Scott Brown 이름 열을 자동으로 업데이트 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)

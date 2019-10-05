@@ -1,51 +1,45 @@
 ---
 title: 항목 정의 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, item definitions
 ms.assetid: 8e3dc223-f9e5-4974-aa0e-5dc7967419cb
 caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 35506967ee20ff6c936e2de4a19d7860e154e4c5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7097311c3d1aae718096c3bf74ec04c3e5ea8818
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433582"
 ---
 # <a name="item-definitions"></a>항목 정의
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0에서는 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 요소를 사용하여 프로젝트 파일에서 항목의 정적 선언을 수행할 수 있습니다. 그러나 메타데이터는 모든 항목에 대해 동일하더라도 항목 수준에만 추가할 수 있습니다. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5부터 [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md)이라는 프로젝트 요소가 이 제한 사항을 해결합니다. *ItemDefinitionGroup*을 사용하면 명명된 항목 형식의 모든 항목에 기본 메타데이터 값을 추가하는 항목 정의 집합을 정의할 수 있습니다.  
   
  *ItemDefinitionGroup* 요소는 프로젝트 파일의 [Project](../msbuild/project-element-msbuild.md) 요소 바로 뒤에 표시됩니다. 항목 정의는 다음과 같은 기능을 제공합니다.  
   
--   대상 외부에 있는 항목에 대한 전역 기본 메타데이터를 정의할 수 있습니다. 즉, 동일한 메타데이터가 지정된 형식의 모든 항목에 적용됩니다.  
+- 대상 외부에 있는 항목에 대한 전역 기본 메타데이터를 정의할 수 있습니다. 즉, 동일한 메타데이터가 지정된 형식의 모든 항목에 적용됩니다.  
   
--   항목 형식은 여러 정의를 포함할 수 있습니다. 추가 메타데이터 사양이 형식에 추가되면 마지막 사양이 우선적으로 적용됩니다. \(메타데이터는 속성이 따르는 동일한 가져오기 순서를 따릅니다.\)  
+- 항목 형식은 여러 정의를 포함할 수 있습니다. 추가 메타데이터 사양이 형식에 추가되면 마지막 사양이 우선적으로 적용됩니다. \(메타데이터는 속성이 따르는 동일한 가져오기 순서를 따릅니다.\)  
   
--   메타데이터는 가산될 수 있습니다. 예를 들어 CDefines 값은 설정되는 속성에 따라 조건부로 누적됩니다. 예를 들어, `MT;STD_CALL;DEBUG;UNICODE`을 입력합니다.  
+- 메타데이터는 가산될 수 있습니다. 예를 들어 CDefines 값은 설정되는 속성에 따라 조건부로 누적됩니다. 예를 들어, `MT;STD_CALL;DEBUG;UNICODE`을 입력합니다.  
   
--   메타데이터는 제거될 수 있습니다.  
+- 메타데이터는 제거될 수 있습니다.  
   
--   메타데이터의 포함 여부를 제어하는 데 조건을 사용할 수 있습니다.  
+- 메타데이터의 포함 여부를 제어하는 데 조건을 사용할 수 있습니다.  
   
 ## <a name="item-metadata-default-values"></a>항목 메타데이터 기본값  
  ItemDefinitionGroup에 정의된 항목 메타데이터는 기본 메타데이터의 선언일 뿐입니다. 이 메타데이터는 ItemGroup을 사용하여 메타데이터 값을 포함하는 Item을 정의해야만 적용됩니다.  
   
 > [!NOTE]
->  이 항목에 나오는 대부분의 예제에서는 ItemDefinitionGroup 요소는 표시되지만 해당 ItemGroup 정의는 간결성을 위해 생략되어 있습니다.  
+> 이 항목에 나오는 대부분의 예제에서는 ItemDefinitionGroup 요소는 표시되지만 해당 ItemGroup 정의는 간결성을 위해 생략되어 있습니다.  
   
  ItemGroup에 명시적으로 정의된 메타데이터는 ItemDefinitionGroup의 메타데이터보다 우선합니다. ItemDefinitionGroup의 메타데이터는 ItemGroup의 정의되지 않은 메타데이터에만 적용됩니다. 예:  
   
@@ -67,29 +61,29 @@ ms.locfileid: "49866573"
  이 예제에서 기본 메타데이터 "m"은 Item "i"로 명시적으로 정의되지 않으므로 Item "i"에 적용됩니다. 그러나 기본 메타데이터 "n"은 Item "i"로 이미 정의되어 있으므로 Item "i"에 적용되지 않습니다.  
   
 > [!NOTE]
->  XML 요소 및 매개 변수 이름은 대소문자를 구분합니다. 항목 메타데이터 및 ITEM\/속성 이름은 대소문자를 구분하지 않습니다. 따라서 이름에서 대/소문자만 다른 ItemDefinitionGroup 항목은 같은 ItemGroup으로 취급해야 합니다.  
+> XML 요소 및 매개 변수 이름은 대소문자를 구분합니다. 항목 메타데이터 및 ITEM\/속성 이름은 대소문자를 구분하지 않습니다. 따라서 이름에서 대/소문자만 다른 ItemDefinitionGroup 항목은 같은 ItemGroup으로 취급해야 합니다.  
   
 ## <a name="value-sources"></a>값 소스  
  ItemDefinitionGroup에 정의된 메타데이터 값은 다음과 같은 다양한 소스에서 가져올 수 있습니다.  
   
--   PropertyGroup 속성  
+- PropertyGroup 속성  
   
--   ItemDefinitionGroup의 항목  
+- ItemDefinitionGroup의 항목  
   
--   ItemDefinitionGroup 항목의 항목 변환  
+- ItemDefinitionGroup 항목의 항목 변환  
   
--   환경 변수  
+- 환경 변수  
   
--   \(MSBuild.exe 명령줄의\) 전역 속성  
+- \(MSBuild.exe 명령줄의\) 전역 속성  
   
--   예약된 속성  
+- 예약된 속성  
   
--   ItemDefinitionGroup의 Item에 대한 잘 알려진 메타데이터  
+- ItemDefinitionGroup의 Item에 대한 잘 알려진 메타데이터  
   
--   CDATA 섹션 \<\!\[CDATA\[여기에 있는 내용은 구문 분석되지 않음\]\]\>  
+- CDATA 섹션 \<\!\[CDATA\[여기에 있는 내용은 구문 분석되지 않음\]\]\>  
   
 > [!NOTE]
->  ItemGroup의 항목 메타데이터는 ItemDefinitionGroup 요소가 ItemGroup 요소보다 먼저 처리되므로 ItemDefinitionGroup 메타데이터 선언에서 사용 가능하지 않습니다.  
+> ItemGroup의 항목 메타데이터는 ItemDefinitionGroup 요소가 ItemGroup 요소보다 먼저 처리되므로 ItemDefinitionGroup 메타데이터 선언에서 사용 가능하지 않습니다.  
   
 ## <a name="additive-and-multiple-definitions"></a>가산 및 다중 정의  
  정의를 추가하거나 여러 ItemDefinitionGroup을 사용할 때는 다음 사항에 유의하세요.  
@@ -98,7 +92,7 @@ ms.locfileid: "49866573"
   
 - 마지막 사양이 우선적으로 적용됩니다.  
   
-  여러 ItemDefinitionGroup이 있는 경우 각 후속 사양은 해당 메타데이터를 이전 정의에 추가합니다. 예를 들어:  
+  여러 ItemDefinitionGroup이 있는 경우 각 후속 사양은 해당 메타데이터를 이전 정의에 추가합니다. 예:  
   
 ```  
 <ItemDefinitionGroup>  
@@ -116,7 +110,7 @@ ms.locfileid: "49866573"
   
  이 예제에서는 "o" 메타데이터는 "m"와 "n"에 추가됩니다.  
   
- 또한 이전에 정의된 메타데이터 값을 추가할 수도 있습니다. 예를 들어:  
+ 또한 이전에 정의된 메타데이터 값을 추가할 수도 있습니다. 예:  
   
 ```  
 <ItemDefinitionGroup>  
@@ -134,7 +128,7 @@ ms.locfileid: "49866573"
  이 예제에서는 메타데이터 "m"에 대해 이전에 정의된 값 \(m1\)이 새 값 \(m2\)에 추가되므로 최종 값은 "m1;m2"가 됩니다.  
   
 > [!NOTE]
->  이 작업은 동일한 ItemDefinitionGroup에서도 발생할 수 있습니다.  
+> 이 작업은 동일한 ItemDefinitionGroup에서도 발생할 수 있습니다.  
   
  이전에 정의된 메타데이터를 재정의하면 마지막 사양이 우선적으로 적용됩니다. 다음 예제에서 메타데이터 "m"의 최종 값은 "m1"에서 "m1a"로 이동합니다.  
   
@@ -152,7 +146,7 @@ ms.locfileid: "49866573"
 ```  
   
 ## <a name="using-conditions-in-an-itemdefinitiongroup"></a>ItemDefinitionGroup에서 조건 사용  
- ItemDefinitionGroup에서 조건을 사용하여 메타데이터의 포함 여부를 제어할 수 있습니다. 예를 들어:  
+ ItemDefinitionGroup에서 조건을 사용하여 메타데이터의 포함 여부를 제어할 수 있습니다. 예:  
   
 ```  
 <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">  
@@ -165,9 +159,9 @@ ms.locfileid: "49866573"
  이 경우에 "Configuration" 속성의 값이 "Debug"인 경우에만 항목 "i"의 기본 메타데이터 "m1"이 포함됩니다.  
   
 > [!NOTE]
->  로컬 메타데이터 참조만 조건에서 지원됩니다.  
+> 로컬 메타데이터 참조만 조건에서 지원됩니다.  
   
- 이전 ItemDefinitionGroup에 정의된 메타데이터에 대한 참조는 정의 그룹이 아닌 항목에 로컬입니다. 즉, 참조의 범위는 항목별로 고유합니다. 예를 들어:  
+ 이전 ItemDefinitionGroup에 정의된 메타데이터에 대한 참조는 정의 그룹이 아닌 항목에 로컬입니다. 즉, 참조의 범위는 항목별로 고유합니다. 예:  
   
 ```  
 <ItemDefinitionGroup>  
@@ -180,10 +174,10 @@ ms.locfileid: "49866573"
 </ItemDefinitionGroup>  
 ```  
   
- 항목이이 예제에서는 "i"이 조건에서 "test" 항목을 참조합니다.  
+ 이 예제에서 항목 “i”는 Condition의 항목 “test”를 참조합니다.  
   
 ## <a name="overriding-and-deleting-metadata"></a>메타데이터 재정의 및 삭제  
- ItemDefinitionGroup 요소에 정의된 메타데이터는 메타데이터 값을 공백으로 설정하여 나중에 ItemDefinitionGroup 요소에서 재정의할 수 있습니다. 또한 빈 값으로 설정하면 메타데이터 항목을 효과적으로 삭제할 수 있습니다. 예를 들어:  
+ ItemDefinitionGroup 요소에 정의된 메타데이터는 메타데이터 값을 공백으로 설정하여 나중에 ItemDefinitionGroup 요소에서 재정의할 수 있습니다. 또한 빈 값으로 설정하면 메타데이터 항목을 효과적으로 삭제할 수 있습니다. 예:  
   
 ```  
 <ItemDefinitionGroup>  
@@ -234,7 +228,7 @@ ms.locfileid: "49866573"
 </ItemDefinitionGroup>  
 ```  
   
- [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5부터 ItemGroup 또한 자체 참조될 수 있습니다. 예를 들어:  
+ [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5부터 ItemGroup 또한 자체 참조될 수 있습니다. 예:  
   
 ```  
 <ItemGroup>  
@@ -247,6 +241,3 @@ ms.locfileid: "49866573"
   
 ## <a name="see-also"></a>참고 항목  
  [일괄 처리](../msbuild/msbuild-batching.md)
-
-
-

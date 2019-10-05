@@ -1,27 +1,22 @@
 ---
 title: 소스 제어 VSPackage 만들기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], creating source control packages
 - source control packages
 ms.assetid: cca0a9ed-48ff-409f-8036-ed8db0f7533e
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0e85c25f1a5d935d36466e922659b5c2021b4c71
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2b1516cf358a4488ff02e650f6c703a1761a94a2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196958"
 ---
 # <a name="creating-a-source-control-vspackage"></a>소스 제어 VSPackage 만들기
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,4 +44,3 @@ ms.locfileid: "51779036"
   
  [소스 제어](../../extensibility/internals/source-control.md)  
  소스 제어의 통합된 기능으로 구현 하기 위한 옵션에 설명 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]합니다.
-

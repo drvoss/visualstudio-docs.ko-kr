@@ -1,21 +1,19 @@
 ---
 title: 상수 노드
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: reference
 ms.assetid: 2c798a50-a2d7-459b-9879-ad4ad8290c9b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00185a4165c6b97a8fcf1dd8d7ce81b219abef75
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: af585d77176e52442d5eee37f3d16fcbafd31ef9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890118"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62897738"
 ---
 # <a name="constant-nodes"></a>상수 노드
 
@@ -29,7 +27,7 @@ ms.locfileid: "37890118"
 
 ## <a name="constant-node-reference"></a>상수 노드 참조
 
-|노드|설명|속성|
+|노드|세부 정보|속성|
 |----------|-------------|----------------|
 |**카메라 벡터**|현재 픽셀에서 세계 좌표 공간의 카메라를 확장하는 벡터입니다.<br /><br /> 이를 사용하여 세계 좌표 공간에서 반사를 계산할 수 있습니다.<br /><br /> **출력**<br /><br /> `Output`: `float3`<br /> 현재 픽셀에서 카메라까지의 벡터입니다.|없음|
 |**색 상수**|상수 색상 값입니다.<br /><br /> **출력**<br /><br /> `Output`: `float4`<br /> 색 값입니다.|**출력**<br /> 색 값입니다.|

@@ -1,14 +1,9 @@
 ---
 title: 옵션 대화 상자, 환경, 일반 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.Message.0x800a002e
 - VS.ToolsOptionsPages.Environment.General
@@ -31,28 +26,27 @@ ms.assetid: 90fc2e6f-572f-4384-96d8-5678299ce58e
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 967036aa0aedef2f789a1352e213079270f70339
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0725b2bdd14a89103b2695c7e4f1d3b0bbf77b7c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206884"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676469"
 ---
 # <a name="general-environment-options-dialog-box"></a>옵션 대화 상자, 환경, 일반
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 이 페이지에서는 IDE(통합 개발 환경)에 대한 다른 옵션 중에서도 색 테마, 상태 표시줄 설정 및 파일 확장명 연결을 변경할 수 있습니다. **도구** 메뉴를 열고 **옵션**을 선택한 다음 **환경** 폴더를 열고 **일반** 페이지를 선택하여 **옵션** 대화 상자에 액세스할 수 있습니다. 이 페이지가 목록에 나타나지 않으면 **옵션** 대화 상자에서 **모든 설정 표시** 확인란을 선택합니다.  
   
 > [!NOTE]
->  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴를 열고 **설정 가져오기 및 내보내기**를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
+> 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴를 열고 **설정 가져오기 및 내보내기**를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
   
 ## <a name="visual-experience"></a>시각적 효과  
  **색 테마**  
  IDE에 대해 **파란** 색 테마, **밝은** 색 테마 또는 **어두운** 색 테마를 선택합니다.  
   
- [Visual Studio 갤러리](https://visualstudiogallery.msdn.microsoft.com/site/search?f%5B0%5D.Type=RootCategory&f%5B0%5D.Value=tools)에서 **Visual Studio 2015 색 테마 편집기**를 다운로드 및 설치하여 미리 정의된 추가 테마를 설치하고 사용자 지정 테마를 만들 수 있습니다. 이 도구를 설치하면 색 테마 목록 상자에 추가적인 색 테마가 나타납니다.  
+ [Visual Studio Marketplace](https://marketplace.visualstudio.com)에서 **Visual Studio 2015 색 테마 편집기**를 다운로드 및 설치하여 미리 정의된 추가 테마를 설치하고 사용자 지정 테마를 만들 수 있습니다. 이 도구를 설치하면 색 테마 목록 상자에 추가적인 색 테마가 나타납니다.  
   
  메뉴 모음에 단어의 첫 글자를 대문자로 표시 적용  
  Visual Studio 2015에서는 기본적으로 메뉴에 **단어의 첫 글자를 대문자로 표시**가 적용됩니다. **모두 대문자로**로 설정하려면 이 옵션의 선택을 취소하세요.  
@@ -83,13 +77,10 @@ ms.locfileid: "49206884"
  **자동 숨기기** 단추를 클릭할 때 도킹된 집합의 모든 도구 창이 아니라 포커스가 있는 도구 창만 자동으로 숨겨지도록 지정합니다. 기본적으로 이 옵션은 선택되어 있지 않습니다.  
   
  **파일 연결 관리**  
- 일반적으로 Visual Studio와 연결되는 항목의 파일 확장명과 각 파일 형식을 열기 위한 현재 기본 프로그램을 볼 수 있는 **Windows 프로그램 연결 설정** 대화 상자를 표시합니다. 아직 연결되지 않은 파일 형식에 대한 기본 응용 프로그램으로 Visual Studio를 설정하려면 파일 확장명을 선택한 다음 **저장**을 선택합니다.  
+ 일반적으로 Visual Studio와 연결되는 항목의 파일 확장명과 각 파일 형식을 열기 위한 현재 기본 프로그램을 볼 수 있는 **Windows 프로그램 연결 설정** 대화 상자를 표시합니다. 아직 연결되지 않은 파일 형식에 대한 기본 애플리케이션으로 Visual Studio를 설정하려면 파일 확장명을 선택한 다음 **저장**을 선택합니다.  
   
- 이 옵션은 두 버전의 Visual Studio가 동일한 컴퓨터에 설치되어 있고 나중에 버전 중 하나를 제거하는 경우에 유용할 수 있습니다. 제거하면 Visual Studio 파일 아이콘이 더 이상 파일 탐색기에 나타나지 않습니다. 또한 Windows에서 이러한 파일을 편집하기 위한 기본 응용 프로그램으로 Visual Studio를 더 이상 인식하지 않습니다. 이 옵션은 이러한 연결을 복원합니다.  
+ 이 옵션은 두 버전의 Visual Studio가 동일한 컴퓨터에 설치되어 있고 나중에 버전 중 하나를 제거하는 경우에 유용할 수 있습니다. 제거하면 Visual Studio 파일 아이콘이 더 이상 파일 탐색기에 나타나지 않습니다. 또한 Windows에서 이러한 파일을 편집하기 위한 기본 애플리케이션으로 Visual Studio를 더 이상 인식하지 않습니다. 이 옵션은 이러한 연결을 복원합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [옵션 대화 상자, 환경](../../ide/reference/environment-options-dialog-box.md)   
  [창 레이아웃 사용자 지정](../../ide/customizing-window-layouts-in-visual-studio.md)
-
-
-

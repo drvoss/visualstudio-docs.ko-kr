@@ -1,25 +1,20 @@
 ---
 title: EventSource 이벤트를 표식으로 시각화 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3a10022a-5c37-48b1-a833-dd35902176b6
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c39f137299c1f229de8c3c6dc8d7329cba6033cb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a8cd0f0e5a420155cfc6786e4a8542bc59f93ece
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742552"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690212"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>EventSource 이벤트를 표식으로 시각화
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +26,11 @@ Concurrency 시각화는 EventSource 이벤트를 표식으로 표시할 수 있
   
 ### <a name="marker-type"></a>표식 종류  
   
-1.  [Opcode](http://msdn.microsoft.com/en-us/d97953df-669b-4c55-b1a8-925022b339b7) win:Start 또는 win:Stop이 포함된 이벤트는 각각 범위의 시작이나 끝으로 처리됩니다.  중첩되거나 겹치는 범위는 표시할 수 없습니다. 시작되는 스레드와 끝나는 스레드가 다른 이벤트 쌍은 표시할 수 없습니다.  
+1. [Opcode](https://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win:Start 또는 win:Stop이 포함된 이벤트는 각각 범위의 시작이나 끝으로 처리됩니다.  중첩되거나 겹치는 범위는 표시할 수 없습니다. 시작되는 스레드와 끝나는 스레드가 다른 이벤트 쌍은 표시할 수 없습니다.  
   
-2.  Opcode가 win:Start도 아니고 win:Stop도 아닌 이벤트는 해당 [Level](http://msdn.microsoft.com/en-us/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726)(EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR의 필드)이 win:Verbose 이상인 경우가 아니면 표식 플래그로 처리됩니다.  
+2. Opcode가 win:Start도 아니고 win:Stop도 아닌 이벤트는 해당 [Level](https://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726)(EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR의 필드)이 win:Verbose 이상인 경우가 아니면 표식 플래그로 처리됩니다.  
   
-3.  그 외의 모든 경우 이벤트는 메시지로 처리됩니다.  
+3. 그 외의 모든 경우 이벤트는 메시지로 처리됩니다.  
   
 ### <a name="importance"></a>중요도  
  다음 표에는 이벤트 수준과 표식 중요도 간의 매핑 방식이 정의되어 있습니다.  
@@ -43,7 +38,7 @@ Concurrency 시각화는 EventSource 이벤트를 표식으로 표시할 수 있
 |ETW 수준|Concurrency 시각화의 중요도|  
 |---------------|---------------------------------------|  
 |win:LogAlways|보통|  
-|win:Critical|위험|  
+|win:Critical|중요|  
 |win:Error|위험|  
 |win:Warning|높음|  
 |win:Informational|보통|  
@@ -79,7 +74,7 @@ Concurrency 시각화는 EventSource 이벤트를 표식으로 표시할 수 있
 |cvImportance 값|Concurrency 시각화의 중요도|  
 |------------------------|---------------------------------------|  
 |0|보통|  
-|1|위험|  
+|1|중요|  
 |2|높음|  
 |3|높음|  
 |4|보통|  
@@ -99,10 +94,7 @@ Concurrency 시각화는 EventSource 이벤트를 표식으로 표시할 수 있
  cvSpanId 필드(정수)를 사용하여 이벤트 쌍 일치를 확인합니다. 범위를 나타내는 각 시작/중지 이벤트 쌍의 값은 고유해야 합니다. 일반적으로 동시 코드의 경우 고유한 값을 지정하려면 <xref:System.Threading.Interlocked.Exchange%2A>와 같은 동기화 기본 형식을 사용하여 키(CvSpanID에 사용되는 값)가 정확한지 확인해야 합니다.  
   
 > [!NOTE]
->  SpanID를 사용하여 범위를 중첩하거나, 같은 스레드에서 해당 범위를 일부분 겹치거나, 시작되는 스레드와 끝나는 스레드를 서로 다르게 지정할 수는 없습니다.  
+> SpanID를 사용하여 범위를 중첩하거나, 같은 스레드에서 해당 범위를 일부분 겹치거나, 시작되는 스레드와 끝나는 스레드를 서로 다르게 지정할 수는 없습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [동시성 시각화 도우미 표식](../profiling/concurrency-visualizer-markers.md)
-
-
-

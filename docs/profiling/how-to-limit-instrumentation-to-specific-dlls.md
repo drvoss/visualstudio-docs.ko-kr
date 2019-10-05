@@ -1,26 +1,24 @@
 ---
-title: '방법: 계측을 특정 DLL로 제한 | Microsoft 문서'
-ms.custom: ''
+title: '방법: 계측을 특정 DLL로 제한 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, runtime profiling control window
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aefa0d5953d1e8d61615ac5bfe0af136082c96f3
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: b39689219b113343162aa0e814cfa68e2422f08d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843951"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62980917"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>방법: 계측을 특정 DLL로 제한
 
-계측 프로파일링 방법을 사용하여 프로파일링 데이터 수집을 응용 프로그램의 DLL 하나 이상으로 제한할 수 있습니다. 응용 프로그램에서 하나 이상의 DLL을 프로파일링하려면 .*dll* 파일이 대상으로 포함된 성능 세션을 만듭니다. 프로파일링할 DLL을 Visual Studio 솔루션의 프로젝트로 또는 독립 이진 파일로 지정할 수 있습니다.
+계측 프로파일링 방법을 사용하여 프로파일링 데이터 수집을 애플리케이션의 DLL 하나 이상으로 제한할 수 있습니다. 애플리케이션에서 하나 이상의 DLL을 프로파일링하려면 .*dll* 파일이 대상으로 포함된 성능 세션을 만듭니다. 프로파일링할 DLL을 Visual Studio 솔루션의 프로젝트로 또는 독립 이진 파일로 지정할 수 있습니다.
 
 ## <a name="to-limit-instrumentation-to-specific-dlls-in-a-visual-studio-solution"></a>Visual Studio 솔루션에서 계측을 특정 DLL로 제한하려면
 
@@ -56,7 +54,7 @@ ms.locfileid: "34843951"
 
     - **실행 파일 경로**에서 .*dll*을 실행할 실행 파일(.*exe*)의 경로 및 파일 이름을 입력합니다. 줄임표 단추(...)를 클릭하여 **시작할 실행 파일** 대화 상자에서 파일을 찾을 수도 있습니다.
 
-    - 선택 사항입니다. **명령줄 인수**로 실행 파일에 전달할 명령줄 인수를 입력합니다. 필요한 경우 **작업 디렉터리**에서 응용 프로그램의 작업 디렉터리를 지정합니다.
+    - 선택 사항입니다. **명령줄 인수**로 실행 파일에 전달할 명령줄 인수를 입력합니다. 필요한 경우 **작업 디렉터리**에서 애플리케이션의 작업 디렉터리를 지정합니다.
 
     - **다음**을 클릭합니다.
 
@@ -71,5 +69,5 @@ ms.locfileid: "34843951"
 
 ## <a name="see-also"></a>참고 항목
 
-[데이터 수집 제어](../profiling/controlling-data-collection.md)  
+[데이터 컬렉션 제어](../profiling/controlling-data-collection.md)
 [방법: 특정 함수로 계측 제한](../profiling/how-to-limit-instrumentation-to-specific-functions.md)

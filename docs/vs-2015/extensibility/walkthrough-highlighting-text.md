@@ -1,26 +1,21 @@
 ---
-title: '연습: 텍스트를 강조 표시. | Microsoft Docs'
-ms.custom: ''
+title: '연습: 텍스트를 강조 표시 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - highlight text
 ms.assetid: 64b772ad-4392-42e9-a237-5137f0384bf0
 caps.latest.revision: 43
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d4fad243b109cb8522f15e30d628d5eb27c09c07
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d398164e910f7700645c01d26afbc631b1d434bc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790723"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693330"
 ---
 # <a name="walkthrough-highlighting-text"></a>연습: 텍스트 강조 표시
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,38 +27,38 @@ Managed Extensibility Framework (MEF) 구성 요소 파트를 만들어 편집�
   
 ## <a name="creating-a-mef-project"></a>MEF 프로젝트 만들기  
   
-1.  C# VSIX 프로젝트를 만듭니다. (에 **새 프로젝트** 대화 상자에서 **Visual C# / 확장성**, 한 다음 **VSIX 프로젝트**.) 솔루션의 이름을 `HighlightWordTest`로 지정합니다.  
+1. C# VSIX 프로젝트를 만듭니다. (에 **새 프로젝트** 대화 상자에서 **Visual C# / 확장성**, 한 다음 **VSIX 프로젝트**.) 솔루션의 이름을 `HighlightWordTest`로 지정합니다.  
   
-2.  편집기 분류자 항목 템플릿을 프로젝트에 추가 합니다. 자세한 내용은 [편집기 항목 템플릿을 사용 하 여 확장을 만드는](../extensibility/creating-an-extension-with-an-editor-item-template.md)합니다.  
+2. 편집기 분류자 항목 템플릿을 프로젝트에 추가 합니다. 자세한 내용은 [편집기 항목 템플릿을 사용 하 여 확장을 만드는](../extensibility/creating-an-extension-with-an-editor-item-template.md)합니다.  
   
-3.  기존 클래스 파일을 삭제합니다.  
+3. 기존 클래스 파일을 삭제합니다.  
   
 ## <a name="defining-a-textmarkertag"></a>TextMarkerTag 정의  
  하위 텍스트를 강조 표시 하는 첫 번째 단계는 <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> 모양을 정의 합니다.  
   
 #### <a name="to-define-a-textmarkertag-and-a-markerformatdefinition"></a>TextMarkerTag 및 MarkerFormatDefinition를 정의 하려면  
   
-1.  클래스 파일을 추가 하 고 이름을 **HighlightWordTag**합니다.  
+1. 클래스 파일을 추가 하 고 이름을 **HighlightWordTag**합니다.  
   
-2.  다음 참조를 추가 합니다.  
+2. 다음 참조를 추가 합니다.  
   
-    1.  Microsoft.VisualStudio.CoreUtility  
+    1. Microsoft.VisualStudio.CoreUtility  
   
-    2.  Microsoft.VisualStudio.Text.Data  
+    2. Microsoft.VisualStudio.Text.Data  
   
-    3.  Microsoft.VisualStudio.Text.Logic  
+    3. Microsoft.VisualStudio.Text.Logic  
   
-    4.  Microsoft.VisualStudio.Text.UI  
+    4. Microsoft.VisualStudio.Text.UI  
   
-    5.  Microsoft.VisualStudio.Text.UI.Wpf  
+    5. Microsoft.VisualStudio.Text.UI.Wpf  
   
-    6.  System.ComponentModel.Composition  
+    6. System.ComponentModel.Composition  
   
-    7.  Presentation.Core  
+    7. Presentation.Core  
   
-    8.  Presentation.Framework  
+    8. Presentation.Framework  
   
-3.  다음 네임 스페이스를 가져옵니다.  
+3. 다음 네임 스페이스를 가져옵니다.  
   
     ```csharp  
     using System;  
@@ -80,7 +75,7 @@ Managed Extensibility Framework (MEF) 구성 요소 파트를 만들어 편집�
     using System.Windows.Media;  
     ```  
   
-4.  상속 되는 클래스를 만듭니다 <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> 하 고 이름을 `HighlightWordTag`입니다.  
+4. 상속 되는 클래스를 만듭니다 <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> 하 고 이름을 `HighlightWordTag`입니다.  
   
     ```csharp  
     internal class HighlightWordTag : TextMarkerTag  
@@ -89,11 +84,11 @@ Managed Extensibility Framework (MEF) 구성 요소 파트를 만들어 편집�
     }  
     ```  
   
-5.  상속 되는 두 번째 클래스를 만들고 <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, HighlightWordFormatDefinition 이라는 이름을 지정 합니다. 이 형식 정의 태그를 사용 하려면 다음과 같은 특성을 사용 하 여 내보내기 해야 합니다.  
+5. 상속 되는 두 번째 클래스를 만들고 <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, HighlightWordFormatDefinition 이라는 이름을 지정 합니다. 이 형식 정의 태그를 사용 하려면 다음과 같은 특성을 사용 하 여 내보내기 해야 합니다.  
   
-    -   <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: 태그를 사용 하 여이이 형식 참조  
+    - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: 태그를 사용 하 여이이 형식 참조  
   
-    -   <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>:이 인해 UI에 표시 하는 형식  
+    - <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>:이 인해 UI에 표시 하는 형식  
   
     ```csharp  
   
@@ -106,7 +101,7 @@ Managed Extensibility Framework (MEF) 구성 요소 파트를 만들어 편집�
     }  
     ```  
   
-6.  HighlightWordFormatDefinition에 대 한 생성자에서 해당 표시 이름 및 모양을 정의 합니다. Background 속성이 Foreground 속성 테두리 색을 정의 하는 동안 채우기 색을 정의 합니다.  
+6. HighlightWordFormatDefinition에 대 한 생성자에서 해당 표시 이름 및 모양을 정의 합니다. Background 속성이 Foreground 속성 테두리 색을 정의 하는 동안 채우기 색을 정의 합니다.  
   
     ```csharp  
     public HighlightWordFormatDefinition()  
@@ -118,7 +113,7 @@ Managed Extensibility Framework (MEF) 구성 요소 파트를 만들어 편집�
     }  
     ```  
   
-7.  HighlightWordTag에 대 한 생성자에서 방금 만든 형식 정의 이름을 전달 합니다.  
+7. HighlightWordTag에 대 한 생성자에서 방금 만든 형식 정의 이름을 전달 합니다.  
   
     ```  
     public HighlightWordTag() : base("MarkerFormatDefinition/HighlightWordFormatDefinition") { }  
@@ -129,7 +124,7 @@ Managed Extensibility Framework (MEF) 구성 요소 파트를 만들어 편집�
   
 #### <a name="to-implement-a-tagger"></a>태거를 구현 하려면  
   
-1.  구현 하는 클래스를 만듭니다 <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> 형식의 `HighlightWordTag`, 하 고 이름을 `HighlightWordTagger`입니다.  
+1. 구현 하는 클래스를 만듭니다 <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> 형식의 `HighlightWordTag`, 하 고 이름을 `HighlightWordTagger`입니다.  
   
     ```csharp  
     internal class HighlightWordTagger : ITagger<HighlightWordTag>  
@@ -138,23 +133,23 @@ Managed Extensibility Framework (MEF) 구성 요소 파트를 만들어 편집�
     }  
     ```  
   
-2.  클래스에 다음 private 필드 및 속성을 추가 합니다.  
+2. 클래스에 다음 private 필드 및 속성을 추가 합니다.  
   
-    -   <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, 현재 텍스트 보기에 해당 합니다.  
+    - <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, 현재 텍스트 보기에 해당 합니다.  
   
-    -   <xref:Microsoft.VisualStudio.Text.ITextBuffer>, 텍스트 뷰의 기반이 되는 텍스트 버퍼에 해당 합니다.  
+    - <xref:Microsoft.VisualStudio.Text.ITextBuffer>, 텍스트 뷰의 기반이 되는 텍스트 버퍼에 해당 합니다.  
   
-    -   <xref:Microsoft.VisualStudio.Text.Operations.ITextSearchService>, 텍스트를 찾기 위해 사용 되는 합니다.  
+    - <xref:Microsoft.VisualStudio.Text.Operations.ITextSearchService>, 텍스트를 찾기 위해 사용 되는 합니다.  
   
-    -   <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator>, 텍스트 범위 내에서 탐색 하기 위한 메서드가입니다.  
+    - <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator>, 텍스트 범위 내에서 탐색 하기 위한 메서드가입니다.  
   
-    -   <xref:Microsoft.VisualStudio.Text.NormalizedSnapshotSpanCollection>를 강조 표시 하는 단어 집합을 포함 하는 합니다.  
+    - <xref:Microsoft.VisualStudio.Text.NormalizedSnapshotSpanCollection>를 강조 표시 하는 단어 집합을 포함 하는 합니다.  
   
-    -   <xref:Microsoft.VisualStudio.Text.SnapshotSpan>을 현재 단어에 해당 합니다.  
+    - <xref:Microsoft.VisualStudio.Text.SnapshotSpan>을 현재 단어에 해당 합니다.  
   
-    -   <xref:Microsoft.VisualStudio.Text.SnapshotPoint>, 캐럿의 현재 위치에 해당 합니다.  
+    - <xref:Microsoft.VisualStudio.Text.SnapshotPoint>, 캐럿의 현재 위치에 해당 합니다.  
   
-    -   잠금 개체입니다.  
+    - 잠금 개체입니다.  
   
     ```csharp  
     ITextView View { get; set; }  
@@ -168,7 +163,7 @@ Managed Extensibility Framework (MEF) 구성 요소 파트를 만들어 편집�
   
     ```  
   
-3.  앞에 나열 된 속성을 초기화 하 고 추가 하는 생성자를 추가 <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> 고 <xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged> 이벤트 처리기입니다.  
+3. 앞에 나열 된 속성을 초기화 하 고 추가 하는 생성자를 추가 <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> 고 <xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged> 이벤트 처리기입니다.  
   
     ```csharp  
     public HighlightWordTagger(ITextView view, ITextBuffer sourceBuffer, ITextSearchService textSearchService,  
@@ -186,7 +181,7 @@ Managed Extensibility Framework (MEF) 구성 요소 파트를 만들어 편집�
   
     ```  
   
-4.  둘 다 호출 하는 이벤트 처리기는 `UpdateAtCaretPosition` 메서드.  
+4. 둘 다 호출 하는 이벤트 처리기는 `UpdateAtCaretPosition` 메서드.  
   
     ```csharp  
     void ViewLayoutChanged(object sender, TextViewLayoutChangedEventArgs e)  
@@ -204,12 +199,12 @@ Managed Extensibility Framework (MEF) 구성 요소 파트를 만들어 편집�
     }  
     ```  
   
-5.  추가 해야는 `TagsChanged` update 메서드에서 호출 되는 이벤트입니다.  
+5. 추가 해야는 `TagsChanged` update 메서드에서 호출 되는 이벤트입니다.  
   
      [!code-csharp[VSSDKHighlightWordTest#10](../snippets/csharp/VS_Snippets_VSSDK/vssdkhighlightwordtest/cs/highlightwordtag.cs#10)]
      [!code-vb[VSSDKHighlightWordTest#10](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkhighlightwordtest/vb/highlightwordtag.vb#10)]  
   
-6.  합니다 `UpdateAtCaretPosition()` 메서드는 커서 위치가 않았고 목록을 생성 단어와 동일한 텍스트 버퍼의 모든 단어를 찾습니다 <xref:Microsoft.VisualStudio.Text.SnapshotSpan> 단어의 발생 횟수에 해당 하는 개체입니다. 그런 다음 호출 `SynchronousUpdate`를 발생 시키는 `TagsChanged` 이벤트입니다.  
+6. 합니다 `UpdateAtCaretPosition()` 메서드는 커서 위치가 않았고 목록을 생성 단어와 동일한 텍스트 버퍼의 모든 단어를 찾습니다 <xref:Microsoft.VisualStudio.Text.SnapshotSpan> 단어의 발생 횟수에 해당 하는 개체입니다. 그런 다음 호출 `SynchronousUpdate`를 발생 시키는 `TagsChanged` 이벤트입니다.  
   
     ```csharp  
     void UpdateAtCaretPosition(CaretPosition caretPosition)  
@@ -291,7 +286,7 @@ Managed Extensibility Framework (MEF) 구성 요소 파트를 만들어 편집�
   
     ```  
   
-7.  `SynchronousUpdate` 에서 동기 업데이트를 수행 합니다 `WordSpans` 및 `CurrentWord` 속성 및 발생을 `TagsChanged` 이벤트.  
+7. `SynchronousUpdate` 에서 동기 업데이트를 수행 합니다 `WordSpans` 및 `CurrentWord` 속성 및 발생을 `TagsChanged` 이벤트.  
   
     ```vb  
     void SynchronousUpdate(SnapshotPoint currentRequest, NormalizedSnapshotSpanCollection newSpans, SnapshotSpan? newCurrentWord)  
@@ -311,7 +306,7 @@ Managed Extensibility Framework (MEF) 구성 요소 파트를 만들어 편집�
     }  
     ```  
   
-8.  구현 해야 합니다 <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> 메서드. 이 메서드는 컬렉션 <xref:Microsoft.VisualStudio.Text.SnapshotSpan> 개체 및 태그 범위의 열거형을 반환 합니다.  
+8. 구현 해야 합니다 <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> 메서드. 이 메서드는 컬렉션 <xref:Microsoft.VisualStudio.Text.SnapshotSpan> 개체 및 태그 범위의 열거형을 반환 합니다.  
   
      C#에서 태그의 지연 계산 (즉, 개별 항목을 액세스 하는 경우에 집합이 평가)을 사용 하도록 설정 하는 yield 반복기로이 메서드를 구현 합니다. Visual basic의 경우 목록에 태그를 추가 하 고 목록을 반환 합니다.  
   
@@ -358,11 +353,11 @@ Managed Extensibility Framework (MEF) 구성 요소 파트를 만들어 편집�
  구현 해야 하 태거를 만들려면를 <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>입니다. 이 클래스는 MEF 구성 요소 부분 이므로이 확장을 인식할 수 있도록 올바른 특성을 설정 해야 합니다.  
   
 > [!NOTE]
->  MEF에 대 한 자세한 내용은 참조 하세요. [Framework MEF (Managed Extensibility)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)합니다.  
+> MEF에 대 한 자세한 내용은 참조 하세요. [Framework MEF (Managed Extensibility)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)합니다.  
   
 #### <a name="to-create-a-tagger-provider"></a>태거 공급자를 만들려면  
   
-1.  라는 클래스를 만듭니다 `HighlightWordTaggerProvider` 구현 하는 <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>, 및 사용 하 여 내보내기는 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "text"와 <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> 의 <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>합니다.  
+1. 라는 클래스를 만듭니다 `HighlightWordTaggerProvider` 구현 하는 <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>, 및 사용 하 여 내보내기는 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "text"와 <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> 의 <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>합니다.  
   
     ```csharp  
     [Export(typeof(IViewTaggerProvider))]  
@@ -372,7 +367,7 @@ Managed Extensibility Framework (MEF) 구성 요소 파트를 만들어 편집�
     { }  
     ```  
   
-2.  두 개의 편집기 서비스를 가져와야 합니다 <xref:Microsoft.VisualStudio.Text.Operations.ITextSearchService> 및 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, 태거를 인스턴스화할 수입니다.  
+2. 두 개의 편집기 서비스를 가져와야 합니다 <xref:Microsoft.VisualStudio.Text.Operations.ITextSearchService> 및 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, 태거를 인스턴스화할 수입니다.  
   
     ```csharp  
     [Import]  
@@ -383,7 +378,7 @@ Managed Extensibility Framework (MEF) 구성 요소 파트를 만들어 편집�
   
     ```  
   
-3.  구현 된 <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> 의 인스턴스를 반환 하는 방법 `HighlightWordTagger`합니다.  
+3. 구현 된 <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> 의 인스턴스를 반환 하는 방법 `HighlightWordTagger`합니다.  
   
     ```csharp  
     public ITagger<T> CreateTagger<T>(ITextView textView, ITextBuffer buffer) where T : ITag  
@@ -404,14 +399,13 @@ Managed Extensibility Framework (MEF) 구성 요소 파트를 만들어 편집�
   
 #### <a name="to-build-and-test-the-highlightwordtest-solution"></a>빌드 및 HighlightWordTest 솔루션 테스트  
   
-1.  솔루션을 빌드합니다.  
+1. 솔루션을 빌드합니다.  
   
-2.  디버거에서 이 프로젝트를 실행하면 Visual Studio의 두 번째 인스턴스가 인스턴스화됩니다.  
+2. 디버거에서 이 프로젝트를 실행하면 Visual Studio의 두 번째 인스턴스가 인스턴스화됩니다.  
   
-3.  텍스트 파일을 만들고 예를 들어, "hello hello hello" 단어 반복 되는 일부 텍스트를 입력 합니다.  
+3. 텍스트 파일을 만들고 예를 들어, "hello hello hello" 단어 반복 되는 일부 텍스트를 입력 합니다.  
   
-4.  "Hello"의 항목 중 하나를 사용 하는 커서를 이동 합니다. 모든 파란색에서 강조 표시 됩니다.  
+4. "Hello"의 항목 중 하나를 사용 하는 커서를 이동 합니다. 모든 파란색에서 강조 표시 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [연습: 파일 이름 확장명에 콘텐츠 형식 연결](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-

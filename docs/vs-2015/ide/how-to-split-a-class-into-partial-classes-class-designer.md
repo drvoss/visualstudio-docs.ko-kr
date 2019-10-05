@@ -1,14 +1,9 @@
 ---
 title: '방법: 클래스를 Partial 클래스로 분할(클래스 디자이너) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Class Designer, partial classes
 - partial classes, Class Designer
@@ -16,13 +11,13 @@ ms.assetid: 6f6b0b30-3996-4569-9200-20482b3adf90
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6ae389e3bfe32e2e040da5bef3f41a51ff69555d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 23d344d2f350b5b7a2e376e8856c916d9baa01f2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245481"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702618"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>방법: 클래스를 부분 클래스로 분할(클래스 디자이너)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,9 +33,9 @@ Visual Basic의 `Partial` 키워드 또는 Visual C#의 `partial` 키워드를 �
  다음 예제에서는 클래스 `Employee`의 정의를 두 개의 선언으로 분할합니다(여기서 각 선언은 서로 다른 프로시저를 정의함). 이 예제에서 두 개의 partial 정의는 하나의 소스 파일에 있거나 두 개의 서로 다른 소스 파일에 있을 수 있습니다.  
   
 > [!NOTE]
->  Visual Basic에서는 partial 클래스 정의를 사용하여 Visual Studio 생성 코드와 사용자 작성 코드를 구분합니다. 코드는 별도의 소스 파일로 구분됩니다. 예를 들어, **Windows Form 디자이너**에서는 `Form`과 같은 컨트롤에 대해 partial 클래스를 정의합니다. 이런 컨트롤에서 생성된 코드를 수정해서는 안 됩니다.  
+> Visual Basic에서는 partial 클래스 정의를 사용하여 Visual Studio 생성 코드와 사용자 작성 코드를 구분합니다. 코드는 별도의 소스 파일로 구분됩니다. 예를 들어, **Windows Form 디자이너**에서는 `Form`과 같은 컨트롤에 대해 partial 클래스를 정의합니다. 이런 컨트롤에서 생성된 코드를 수정해서는 안 됩니다.  
   
- Visual Basic의 부분 형식(Partial Type)에 대한 자세한 내용은 [Partial](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)을 참조하세요.  
+ Visual Basic의 부분 형식(Partial Type)에 대한 자세한 내용은 [Partial](https://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)을 참조하세요.  
   
 ## <a name="example"></a>예제  
  Visual Basic의 클래스 정의를 분할하려면 다음 예제와 같이 `Partial` 키워드를 사용합니다.  
@@ -81,10 +76,7 @@ public partial class Employee
 ```  
   
 ## <a name="see-also"></a>참고 항목  
- [Partial 클래스 및 메서드](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1)   
- [partial(형식)](http://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334)   
- [partial(메서드)(C# 참조)](http://msdn.microsoft.com/library/43f40242-17e0-4452-8573-090503ad3137)   
- [부분](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)
-
-
-
+ [Partial 클래스 및 메서드](https://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1)   
+ [partial(형식)](https://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334)   
+ [partial(메서드)(C# 참조)](https://msdn.microsoft.com/library/43f40242-17e0-4452-8573-090503ad3137)   
+ [부분](https://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)

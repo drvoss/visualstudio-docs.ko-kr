@@ -1,21 +1,19 @@
 ---
 title: '방법: 기본 퐁 셰이더 만들기'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc27aa96b0e893ada745533d070b3b7aa29264e2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 895b797ad07018a9f4d4bf4c14b7f358a26f8eaa
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937813"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924407"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>방법: 기본 퐁 셰이더 만들기
 
@@ -46,20 +44,20 @@ ms.locfileid: "49937813"
 > [!NOTE]
 > 이 그림에서 셰이더의 효과를 더 잘 보여 주기 위해 셰이더의 **MaterialDiffuse** 매개 변수를 사용하여 주황색이 지정되었고, **MaterialSpecular** 및 **MaterialSpecularPower** 매개 변수를 사용하여 금속 재질 마감이 지정되었습니다. 재질 매개 변수에 대한 자세한 내용은 [셰이더 디자이너](../designers/shader-designer.md)의 셰이더 미리 보기 섹션을 참조하세요.
 
- ![셰이더 그래프 및 효과 미리 보기](../designers/media/digit-lighting-graph.png)
+![셰이더 그래프 및 효과 미리 보기](../designers/media/digit-lighting-graph.png)
 
- 일부 셰이더의 경우 특정 도형을 사용하면 미리 보기가 더 잘 표시될 수 있습니다. 셰이더 디자이너에서 셰이더를 미리 보는 방법에 대한 자세한 내용은 [셰이더 디자이너](../designers/shader-designer.md)의 셰이더 미리 보기 섹션을 참조하세요.
+일부 셰이더의 경우 특정 도형을 사용하면 미리 보기가 더 잘 표시될 수 있습니다. 셰이더 디자이너에서 셰이더를 미리 보는 방법에 대한 자세한 내용은 [셰이더 디자이너](../designers/shader-designer.md)의 셰이더 미리 보기 섹션을 참조하세요.
 
- 다음 그림은 3D 모델에 적용되는 이 문서에서 설명된 셰이더를 보여줍니다. **MaterialSpecular** 속성은 (1.00, 0.50, 0.20, 0.00)으로 설정되고 해당 **MaterialSpecularPower** 속성은 16으로 설정됩니다.
+다음 그림은 3D 모델에 적용되는 이 문서에서 설명된 셰이더를 보여줍니다. **MaterialSpecular** 속성은 (1.00, 0.50, 0.20, 0.00)으로 설정되고 해당 **MaterialSpecularPower** 속성은 16으로 설정됩니다.
 
 > [!NOTE]
 > **MaterialSpecular** 속성은 표면 재질의 외관 마감을 결정합니다. 유리 또는 플라스틱과 같은 고광택 표면은 흰색의 밝은 음영인 반사 색을 가지는 경향이 있습니다. 금속성 표면은 확산 색에 가까운 반사 색을 가지는 경향이 있습니다. 새틴 마감 표면은 회색의 어두운 음영인 반사 색을 가지는 경향이 있습니다.
 >
 > **MaterialSpecularPower** 속성은 반사 강조 표시의 강도를 결정합니다. 높은 반사 강도는 더 무디고 더 집중적인 강조 표시를 시뮬레이트합니다. 매우 낮은 반사 강도는 전체 표면의 색을 과포화시키고 숨길 수 있는 강도가 높고 포괄적인 강조 표시를 시뮬레이트합니다.
 
- ![모델에 적용된 퐁 조명](../designers/media/digit-lighting-model.png)
+![모델에 적용된 퐁 조명](../designers/media/digit-lighting-model.png)
 
- 3D 모델에 셰이더를 적용하는 방법에 대한 자세한 내용은 [방법: 3D 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md)을 참조하세요.
+3D 모델에 셰이더를 적용하는 방법에 대한 자세한 내용은 [방법: 3D 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

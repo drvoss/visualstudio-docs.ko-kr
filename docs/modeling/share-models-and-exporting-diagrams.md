@@ -7,16 +7,15 @@ helpviewer_keywords:
 - UML diagrams, saving
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: aec059dab655068d6dffaed6fe9a920cda1b6b7e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3cb1699db54691e81c49b686c245d96f9b5a5442
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53897984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003372"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>모델 공유 및 다이어그램 내보내기
 Visual Studio에서 여러 가지 방법으로 모델 및 다이어그램을 동료와 공유할 수 있습니다.
@@ -47,7 +46,7 @@ Visual Studio에서 여러 가지 방법으로 모델 및 다이어그램을 동
 |제목|설명|
 |-|-|
 |[모델링 솔루션 구성](../modeling/structure-your-modeling-solution.md)|대규모 또는 중간 규모 프로젝트에서 모델을 공유합니다.|
-|[다이어그램을 이미지로 내보내기](../modeling/export-diagrams-as-images.md)|다이어그램의 일부를 PowerPoint 또는 Word와 같은 응용 프로그램으로 복사하거나 다이어그램을 XPS 파일로 인쇄할 수 있습니다.|
+|[다이어그램을 이미지로 내보내기](../modeling/export-diagrams-as-images.md)|다이어그램의 일부를 PowerPoint 또는 Word와 같은 애플리케이션으로 복사하거나 다이어그램을 XPS 파일로 인쇄할 수 있습니다.|
 |[아키텍처 분석 및 모델링](../modeling/analyze-and-model-your-architecture.md)|모델 및 다이어그램의 개요입니다.|
 
 ## <a name="see-also"></a>참고 항목

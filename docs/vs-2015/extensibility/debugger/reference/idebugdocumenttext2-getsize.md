@@ -1,14 +1,9 @@
 ---
 title: IDebugDocumentText2::GetSize | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugDocumentText2::GetSize
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: bf515a8f-dcee-4004-8f81-543d547ceaae
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f7cd8f691b8c94dee8666a85f707674acaa73fa9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1f6d438db999e2e0b2aa85c45c0b38333238755e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745351"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200206"
 ---
 # <a name="idebugdocumenttext2getsize"></a>IDebugDocumentText2::GetSize
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -56,10 +51,9 @@ int GetSize( 
  성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="remarks"></a>설명  
- [C + + 전용] 특정 값을 원하지 않는 경우 매개 변수에 대해 NULL을 전달 합니다.  
+ [C++ 만] 특정 값을 원하지 않는 경우 매개 변수에 대해 NULL을 전달 합니다.  
   
  [C# 만] 매개 변수를 모두 지정 해야 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)
-

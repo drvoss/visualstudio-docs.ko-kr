@@ -1,33 +1,33 @@
 ---
-title: Visual Basic을 분석 하 고 C# 정적 코드 분석을 사용 하 여 스토어 앱의 품질을 코드
+title: 정적 코드 분석 C# 을 사용 하 여 스토어 앱의 Visual Basic 및 코드 품질 분석
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.technology: vs-ide-general
+ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.csvb.express
 ms.assetid: cab553fc-19a9-4cbf-858e-8200258ffe50
 caps.latest.revision: 16
-author: erickson-doug
+author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a3a3d753f9e2dd3b046159d191149b7af062fe16
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 7510b7fac5dfc633b88bd9f53347118a02227b92
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063214"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416649"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Visual Studio 정적 코드 분석을 사용하여 스토어 앱의 Visual Basic 및 C# 코드 품질 분석
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")
+Windows 및 Windows Phone]에 적용 됩니다. /Image/windows_and_phone_content.png "windows_and_phone_content")
 
  Visual Studio Express의 코드 분석 도구는 코드에 일련의 일반적인 오류 및 바람직한 프로그래밍 관행의 위반 사항이 있는지 검사합니다. 코드 분석 도구는 올바르지만 해당 코드를 사용하는 당사자나 다른 사용자에게 문제를 일으킬 수 있는 특정 코드 패턴을 검색하므로 컴파일러 오류 및 경고와는 다릅니다. 코드 분석 시 테스트를 통해 검색하기 힘든 코드 오류도 찾을 수 있습니다. 개발 프로세스에서 코드 분석 도구를 정기적으로 실행하면 완성된 응용 프로그램의 품질을 향상시킬 수 있습니다.
 
 > [!NOTE]
->  Visual Studio Ultimate, Visual Studio Premium 및 Visual Studio Professional에서는 코드 분석 기능을 모두 사용할 수 있습니다. MSDN 라이브러리의 [코드 분석 도구를 사용하여 응용 프로그램 품질 분석](http://msdn.microsoft.com/library/dd264897.aspx)을 참조하세요.
+> Visual Studio Ultimate, Visual Studio Premium 및 Visual Studio Professional에서는 코드 분석 기능을 모두 사용할 수 있습니다. MSDN 라이브러리의 [코드 분석 도구를 사용하여 애플리케이션 품질 분석](https://msdn.microsoft.com/library/dd264897.aspx)을 참조하세요.
 
 ## <a name="in-this-topic"></a>항목 내용
  다음 내용을 배울 수 있습니다.
@@ -42,7 +42,7 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
 
  [Visual Basic 및 C# 코드 분석 경고](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Warnings)
 
-##  <a name="BKMK_Run"></a> 코드 분석 실행
+## <a name="BKMK_Run"></a> 코드 분석 실행
  Visual Studio 솔루션에서 코드 문석을 실행하려면 다음을 수행합니다.
 
 - **빌드** 메뉴에서 **솔루션에서 코드 분석 실행**을 선택합니다.
@@ -57,21 +57,21 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
 
    ![코드 분석 창](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")
 
-##  <a name="BKMK_Analyze"></a> 코드 분석 경고 분석 및 해결
+## <a name="BKMK_Analyze"></a> 코드 분석 경고 분석 및 해결
  특정 경고를 분석하려면 코드 분석 창에서 경고 제목을 클릭합니다. 경고가 확장되어 문제에 대한 자세한 정보가 표시됩니다.
 
  ![확장된 코드 분석 경고](../test/media/ca-managed-callouts.png "CA_Managed_Callouts")
 
- 경고를 확장하면 Visual Studio Code 편집기에서 경고를 발생시킨 코드 줄이 강조 표시됩니다.
+ 경고를 확장하면 Visual Studio 코드 편집기에 경고를 발생시킨 코드 줄이 강조 표시됩니다.
 
  ![코드 분석 텍스트 강조 표시](../test/media/ca-managed-sourceline.png "CA_Managed_SourceLine")
 
  문제를 파악한 후 코드에서 문제를 해결할 수 있습니다. 그런 다음 코드 분석을 다시 실행하여 코드 분석 창에 더 이상 경고가 나타나지 않는지와 수정으로 인해 새로운 경고가 발생하지 않는지 확인합니다.
 
 > [!TIP]
->  코드 분석 창에서 코드 분석을 다시 실행할 수 있습니다. **분석** 단추를 클릭한 다음 분석 범위를 선택합니다. 전체 솔루션 또는 선택한 프로젝트에 대한 분석을 다시 실행할 수 있습니다.
+> 코드 분석 창에서 코드 분석을 다시 실행할 수 있습니다. **분석** 단추를 클릭한 다음 분석 범위를 선택합니다. 전체 솔루션 또는 선택한 프로젝트에 대한 분석을 다시 실행할 수 있습니다.
 
-##  <a name="BKMK_Suppress"></a> 코드 분석 경고 표시하지 않기
+## <a name="BKMK_Suppress"></a> 코드 분석 경고 표시하지 않기
  코드 분석 경고를 수정하지 않도록 결정하는 경우가 있습니다. 경고를 해결하려면 코드의 실제 구현에서 문제가 발생할 가능성과 관련하여 너무 많은 기록이 필요하다고 판단할 수 있습니다. 또는 경고에 사용되는 분석이 특정 컨텍스트에 적절하지 않다고 판단할 수도 있습니다. 코드 분석 창에 개별 경고가 나타나지 않도록 개별 경고를 표시하지 않을 수 있습니다.
 
  경고를 표시하지 않으려면 다음을 수행합니다.
@@ -88,22 +88,22 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
 
      경고를 소스 파일에서 표시하지 않을지 비표시 오류(Suppression) 파일에서 표시하지 않을지 여부는 해당 코딩 스타일과 요구에 따라 결정하면 됩니다.
 
-##  <a name="BKMK_Search"></a> 코드 분석 결과 검색 및 필터링
+## <a name="BKMK_Search"></a> 코드 분석 결과 검색 및 필터링
  긴 경고 메시지 목록을 검색하고 다중 프로젝트 솔루션에서 경고를 필터링할 수 있습니다.
 
  ![코드 분석 검색 및 필터 창](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
  [!INCLUDE[vs_dev11_expwin_long](../includes/vs-dev11-expwin-long-md.md)]에서는 모든 코드 분석 경고마다 경고의 심각도 수준이 있습니다.
 
-##  <a name="BKMK_Warnings"></a> Visual Basic 및 C# 코드 분석 경고
+## <a name="BKMK_Warnings"></a> Visual Basic 및 C# 코드 분석 경고
  코드 분석 시 다음과 같은 경고가 발생합니다.
 
- [CA1001: 삭제 가능한 필드가 있는 형식은 삭제 가능해야 합니다.](http://msdn.microsoft.com/library/ms182172.aspx)
+ [CA1001: 삭제 가능한 필드가 있는 형식은 삭제 가능해야 합니다.](https://msdn.microsoft.com/library/ms182172.aspx)
 
- [CA1821: 빈 종료자를 제거하십시오.](http://msdn.microsoft.com/library/bb264476.aspx)
+ [CA1821: 빈 종료자를 제거하십시오.](https://msdn.microsoft.com/library/bb264476.aspx)
 
- [CA2213: 삭제 가능한 필드는 삭제해야 합니다.](http://msdn.microsoft.com/library/ms182328.aspx)
+ [CA2213: 삭제 가능한 필드는 삭제해야 합니다.](https://msdn.microsoft.com/library/ms182328.aspx)
 
- [CA2229: serialization 생성자를 구현하십시오.](http://msdn.microsoft.com/library/ms182343.aspx)
+ [CA2229: serialization 생성자를 구현하십시오.](https://msdn.microsoft.com/library/ms182343.aspx)
 
- [CA2231: ValueType.Equals를 재정의할 때 같음 연산자를 오버로드하십시오.](http://msdn.microsoft.com/library/ms182359.aspx)
+ [CA2231: ValueType.Equals를 재정의할 때 같음 연산자를 오버로드하십시오.](https://msdn.microsoft.com/library/ms182359.aspx)

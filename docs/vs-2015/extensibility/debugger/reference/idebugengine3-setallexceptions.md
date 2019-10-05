@@ -1,14 +1,9 @@
 ---
 title: IDebugEngine3::SetAllExceptions | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugEngine3::SetAllExceptions
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 8f03a6ac-a854-42f7-933c-a2df1b351975
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9da26eda5b369cfbaf5f405bf036a1ae6096cc85
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 48abbfb47e346ad9acbfac7b92642e6638f67df3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51816842"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195896"
 ---
 # <a name="idebugengine3setallexceptions"></a>IDebugEngine3::SetAllExceptions
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -50,7 +45,6 @@ int SetAllExceptions(
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)   
  [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)
-

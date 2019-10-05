@@ -2,23 +2,21 @@
 title: Visual Studio 3단계, 정적 파일 및 페이지에서 Flask 자습서 알아보기
 titleSuffix: ''
 description: Visual Studio 프로젝트 컨텍스트에서 Flask 기본 사항을 검토하는 연습 과정으로, 정적 파일을 제공하고 앱에 페이지를 추가하고 템플릿 상속을 사용하는 방법을 구체적으로 설명합니다.
-ms.date: 09/04/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 01/07/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 906c44ca3b1d0771202e78910870d38f9d4fb995
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d9d6f94a81eb97cb06820381ba09e13d4bdeb9d8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957196"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>3단계: 정적 파일 제공, 페이지 추가 및 템플릿 상속 사용
 
@@ -289,5 +287,5 @@ Flask의 템플릿 시스템(기본적으로 Jinja)은 템플릿에서 특정 �
 
 - [Azure App Service에 웹앱 배포](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - 제어 흐름과 같은 Jinja 템플릿의 더 많은 기능을 보려면, [Jinja 템플릿 디자이너 문서](http://jinja.pocoo.org/docs/2.10/templates)(jinja.pocoo.org)를 참조하세요.
-- `url_for` 사용에 대한 자세한 내용은 Flask 응용 프로그램 개체 설명서(flask.pocoo.org) 내의 [url_for](http://flask.pocoo.org/docs/1.0/api/?highlight=url_for#flask.url_for)를 참조하세요.
+- `url_for` 사용에 대한 자세한 내용은 Flask 애플리케이션 개체 설명서(flask.pocoo.org) 내의 [url_for](http://flask.pocoo.org/docs/1.0/api/?highlight=url_for#flask.url_for)를 참조하세요.
 - GitHub의 자습서 소스 코드: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

@@ -1,14 +1,9 @@
 ---
 title: 리소스 경합 뷰 - 경합 데이터 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.resourcecontention
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 14a7f774-211f-4ef8-af05-94d1c8f65d2f
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dddc9c85731137c6499e976b4b571396af297f7a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c6a7d4d1e80323b4d260ac558661c222f72ec3c1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149274"
 ---
 # <a name="resource-contentions-view---contention-data"></a>리소스 경합 뷰 - 경합 데이터
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,16 +33,16 @@ ms.locfileid: "51810353"
 ### <a name="function-values"></a>함수 값  
  함수 값은 호출 트리에 표시되는 실행 경로에서 나타난 함수 인스턴스를 기준으로 합니다.  
   
--   전용 값은 함수가 함수 본문의 문을 실행할 때 발생한 이벤트를 기준으로 합니다. 함수가 호출한 함수에서 발생한 이벤트는 전용 값에 포함되지 않습니다.  
+- 전용 값은 함수가 함수 본문의 문을 실행할 때 발생한 이벤트를 기준으로 합니다. 함수가 호출한 함수에서 발생한 이벤트는 전용 값에 포함되지 않습니다.  
   
--   포괄 값은 함수 또는 함수가 호출한 함수를 실행할 때 발생한 이벤트를 기준으로 합니다.  
+- 포괄 값은 함수 또는 함수가 호출한 함수를 실행할 때 발생한 이벤트를 기준으로 합니다.  
   
 ### <a name="percentage-values"></a>백분율 값  
  백분율 값은 프로파일링 데이터의 총 시간 또는 경합 이벤트를 기준으로 합니다. 프로파일링 실행의 보고서나 뷰를 필터링하면 필터링된 데이터의 차단된 시간 및 경합만 전체 값으로 사용됩니다.  
   
 ## <a name="navigating-the-resource-allocation-view"></a>리소스 할당 뷰 탐색  
   
-|열|설명|  
+|Column|설명|  
 |------------|-----------------|  
 |**이름**|리소스 또는 함수의 이름입니다.|  
 |**차단된 전용 시간**|-   리소스의 경우 리소스 액세스가 차단되어 스레드가 대기해야 했던 총 시간입니다.<br />-   함수의 경우 함수가 함수 본문의 코드를 실행할 때 이러한 함수 인스턴스의 부모 리소스 액세스가 차단되었던 시간입니다. 해당 함수가 호출한 함수의 차단된 시간은 포함되지 않습니다.|  
@@ -58,13 +53,10 @@ ms.locfileid: "51810353"
 |**차단된 포괄 시간 비율(%)**|-   리소스의 경우 프로파일링 데이터의 모든 차단된 시간 중 이 리소스의 차단된 시간 백분율입니다.<br />-   함수의 경우 프로파일링 실행의 모든 차단된 시간 중 이러한 함수 인스턴스의 차단된 포괄 시간 백분율입니다.|  
 |**포괄 경합**|-   리소스의 경우 리소스 액세스가 차단되어 스레드가 대기해야 했던 총 횟수입니다.<br />-   함수의 경우 프로파일링 실행의 모든 경합 이벤트 중 부모 리소스에 대한 이 함수 인스턴스의 포괄 경합 이벤트 백분율입니다.|  
 |**포괄 경합 비율(%)**|-   리소스의 경우 프로파일링 실행의 모든 경합 이벤트 중 이 리소스 액세스에 대한 경합 이벤트의 백분율입니다.<br />-   함수의 경우 함수가 함수 본문의 코드를 실행할 때 이러한 함수 인스턴스의 부모 리소스 액세스가 차단되었던 횟수입니다. 해당 함수가 호출한 함수의 차단 이벤트는 포함되지 않습니다.|  
-|**수준**|호출 트리에서 이 함수의 수준입니다. [VSPerfReport](../profiling/vsperfreport.md) 명령줄 보고서에서만 사용됩니다.|  
+|**Level**|호출 트리에서 이 함수의 수준입니다. [VSPerfReport](../profiling/vsperfreport.md) 명령줄 보고서에만 해당합니다.|  
 |**함수 줄 번호**|소스 파일에서 이 함수가 시작되는 줄 번호입니다.|  
 |**모듈 이름**|함수가 포함된 모듈의 이름입니다.|  
 |**모듈 경로**|함수가 포함된 모듈의 경로입니다.|  
 |**프로세스 ID**|함수가 실행된 프로세스의 PID(프로세스 ID)입니다.|  
 |**프로세스 이름**|프로세스의 이름입니다.|  
 |**소스 파일**|이 함수의 정의가 포함된 소스 파일입니다.|
-
-
-

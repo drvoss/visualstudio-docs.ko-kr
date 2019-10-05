@@ -6,16 +6,15 @@ helpviewer_keywords:
 - Domain-Specific Language, providing overridable classes
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 3ea0446d53ad3cc74bd8af96e95fabada1098da5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9aa4f39fb54617ae1dbf048a1e13f009c8df5185
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814239"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>재정의 하 고 생성된 된 클래스를 확장 합니다.
 
@@ -55,9 +54,9 @@ public partial class Book
 
 예를 들어, 예제의 Library.dsl, 합니다 `CirculationBook` 도메인 클래스에는 `Generates``Double Derived` 속성이로 설정 `true`. 해당 도메인 클래스에 대해 생성된 된 코드에는 두 개의 클래스가 들어 있습니다.
 
--   `CirculationBookBase`에 추상 이며 모든 속성과 메서드를 포함 하는 합니다.
+- `CirculationBookBase`에 추상 이며 모든 속성과 메서드를 포함 하는 합니다.
 
--   `CirculationBook`에서 파생 된 `CirculationBookBase`합니다. 빈 생성자를 제외 하 고는 것입니다.
+- `CirculationBook`에서 파생 된 `CirculationBookBase`합니다. 빈 생성자를 제외 하 고는 것입니다.
 
 모든 메서드를 재정의 하는 파생된 클래스의 부분 정의 같은 만들 `CirculationBook`합니다. 생성된 된 메서드와 모델링 프레임 워크에서 상속 된 메서드를 재정의할 수 있습니다.
 
@@ -91,6 +90,6 @@ Partial 클래스 정의 생성된 된 파일을 별개의 파일을 작성 하 
 
 도형 일부 이벤트를 구독할 수 있습니다. 예를 들어 마우스 클릭에 수신 대기할 수 있습니다. 각 개체에 대 한 이벤트를 구독 하는 코드를 작성 해야 합니다. InitializeInstanceResources() 재정의에서이 코드를 작성할 수 있습니다.
 
-일부 이벤트에 데코레이터를 그리는 데 사용 되는 ShapeFields에 생성 됩니다. 예를 들어 참조 [방법: 모양 또는 데코레이터 클릭 가로채기](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)합니다.
+일부 이벤트에 데코레이터를 그리는 데 사용 되는 ShapeFields에 생성 됩니다. 예는 [방법: 모양 또는 데코레이터 클릭 가로채기](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)합니다.
 
 이러한 이벤트 일반적으로 발생 하지 않습니다는 트랜잭션 내에서. 저장소에서 변경 하려는 경우 트랜잭션을 만들어야 합니다.

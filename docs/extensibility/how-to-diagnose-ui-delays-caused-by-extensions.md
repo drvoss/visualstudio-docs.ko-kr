@@ -4,14 +4,14 @@ ms.date: 01/26/2018
 ms.topic: conceptual
 author: PooyaZv
 ms.author: pozandev
-manager: douge
+manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: 1bd09827899000e4f3d1f65fae27da969bcbc107
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 00266fd8fbc881707652247e08b093ca4b15a88d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912080"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>방법: 확장으로 인해 발생한 진단 UI 지연
 
@@ -21,7 +21,7 @@ UI가 응답 하지 않음, 리프로 시작 하 고 기본 노력 하 고 Visua
 
 알림을 UI 지연 (즉, ui에서 무응답) 되었을 확장에서 코드의 결과 사용자에 게 알립니다. 또한 확장 또는 해당 확장명에 대 한 향후 알림을 사용 하지 않도록 설정 하는 옵션을 사용 하 여 사용자를 제공 합니다.
 
-이 문서에서는 확장 프로그램 코드에서 원인을 UI 지연 알림 진단할 수 있습니다 하는 방법을 설명 합니다. 
+이 문서에서는 확장 프로그램 코드에서 원인을 UI 지연 알림 진단할 수 있습니다 하는 방법을 설명 합니다.
 
 > [!NOTE]
 > 진단 UI 지연 하는 Visual Studio 실험적 인스턴스를 사용 하지 마세요. 필요한 UI 지연 알림에 대 한 호출 스택이 분석의 일부 UI 지연 알림 표시 될 수 있습니다 즉 실험적 인스턴스를 사용 하는 경우 해제 됩니다.
@@ -43,7 +43,7 @@ UI가 응답 하지 않음, 리프로 시작 하 고 기본 노력 하 고 Visua
 
 ## <a name="restart-vs-with-activity-logging-on"></a>로그온 활동을 사용 하 여 VS를 다시 시작
 
-Visual Studio "활동 로그"를 생성할 수 있습니다 문제를 디버깅 하는 경우 유용한 정보를 제공 합니다. Visual Studio에 로그인 하는 작업을 설정 하려면 사용 하 여 Visual Studio를 시작 합니다 `/log` 명령줄 옵션입니다. Visual Studio가 시작 된 후 활동 로그는 다음 위치에 저장 됩니다.
+Visual Studio "활동 로그"를 생성할 수 있습니다 문제를 디버깅 하는 경우 유용한 정보를 제공 합니다. Visual Studio에 로그인 하는 작업을 설정 하려면 사용 하 여 Visual Studio를 열고는 `/log` 명령줄 옵션입니다. Visual Studio가 시작 된 후 활동 로그는 다음 위치에 저장 됩니다.
 
 ```DOS
 %APPDATA%\Microsoft\VisualStudio\<vs_instance_id>\ActivityLog.xml
@@ -102,7 +102,7 @@ PerfView 추적 컬렉션 시작 된 후 다시 표시 하려면 알림에 대 �
 그런 다음 왼쪽된 창에서 추적 파일을 선택 하 고 선택 하 여 엽니다 **엽니다** 마우스 오른쪽 단추 메뉴나 상황에 맞는 메뉴에서.
 
 > [!NOTE]
-> 기본적으로 PerfView Zip 보관 파일을 출력합니다. 열면 *trace.zip*를 자동으로 보관 압축을 해제 하 고 추적을 엽니다. 선택을 취소 하 여이 건너뛸 수 있습니다 합니다 **Zip** 추적 수집 하는 동안 상자입니다. 그러나 전송 하 고 여러 컴퓨터에서 추적을 사용 하려는 경우 좋습니다 선택을 취소 합니다 **Zip** 상자입니다. 이 옵션이 없으면 Ngen 어셈블리에 대 한 필수 Pdb에는 추적와 함께 제공 됩니다 하 고 따라서 Ngen 어셈블리의 기호는 확인할 수 없는 대상 컴퓨터에서. (참조 [이 블로그 게시물](https://blogs.msdn.microsoft.com/devops/2012/12/10/creating-ngen-pdbs-for-profiling-reports/) 어셈블리의 Ngen Pdb에 대 한 자세한 내용은 합니다.) 
+> 기본적으로 PerfView Zip 보관 파일을 출력합니다. 열면 *trace.zip*를 자동으로 보관 압축을 해제 하 고 추적을 엽니다. 선택을 취소 하 여이 건너뛸 수 있습니다 합니다 **Zip** 추적 수집 하는 동안 상자입니다. 그러나 전송 하 고 여러 컴퓨터에서 추적을 사용 하려는 경우 좋습니다 선택을 취소 합니다 **Zip** 상자입니다. 이 옵션이 없으면 Ngen 어셈블리에 대 한 필수 Pdb에는 추적와 함께 제공 됩니다 하 고 따라서 Ngen 어셈블리의 기호는 확인할 수 없는 대상 컴퓨터에서. (참조 [이 블로그 게시물](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) 어셈블리의 Ngen Pdb에 대 한 자세한 내용은 합니다.)
 
 PerfView 처리 하 여 추적 열에 대 일 분 정도 걸릴 수 있습니다. 추적을 연 후 그 아래 다양 한 "보기"의 목록이 표시 됩니다.
 

@@ -5,19 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, scenarios, iterations
 - load test, iterations
-- load tests, sceanrios
+- load tests, scenarios
 ms.assetid: ac480fb7-f4f7-47dc-9ae5-98be3aca4fba
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 28bc6d6cb35397d49868c0603f7beb17f9138c2d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: cce1da2d3cb20ca7f577c806d0506ffc0b947903
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055689"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918282"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>부하 테스트 시나리오에서 테스트 반복 구성
 
@@ -34,18 +32,18 @@ ms.locfileid: "53055689"
 > [!NOTE]
 > 부하 테스트 시나리오 속성과 해당 설명의 전체 목록을 보려면 [부하 테스트 시나리오 속성](../test/load-test-scenario-properties.md)을 참조하세요.
 
- 순차적인 테스트 조합의 경우에는 조합 내 모든 테스트가 실행되어야 한 번의 반복으로 계산됩니다. 다른 모든 테스트 조합에서는 한 번의 테스트 실행이 한 번의 반복으로 계산됩니다. 자세한 내용은 [목록 컨트롤 정보](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)를 참조하십시오.
+순차적인 테스트 조합의 경우에는 조합 내 모든 테스트가 실행되어야 한 번의 반복으로 계산됩니다. 다른 모든 테스트 조합에서는 한 번의 테스트 실행이 한 번의 반복으로 계산됩니다. 자세한 내용은 [목록 컨트롤 정보](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)를 참조하십시오.
 
- 부하 테스트가 지속 시간 중심의 부하 테스트이고 반복 수가 완료되기 전에 지속 시간이 만료되는 경우 테스트는 중지됩니다. 테스트가 반복 중심이고 최대 시나리오 반복 횟수에 도달하기 전에 최대 테스트 반복 횟수에 도달하는 경우 테스트는 중지됩니다. 지속 시간은 부하 테스트에서 실행 설정과 연결된 **속성** 창의 **실행 지속 시간** 속성을 사용하여 구성합니다.
+부하 테스트가 지속 시간 중심의 부하 테스트이고 반복 수가 완료되기 전에 지속 시간이 만료되는 경우 테스트는 중지됩니다. 테스트가 반복 중심이고 최대 시나리오 반복 횟수에 도달하기 전에 최대 테스트 반복 횟수에 도달하는 경우 테스트는 중지됩니다. 지속 시간은 부하 테스트에서 실행 설정과 연결된 **속성** 창의 **실행 지속 시간** 속성을 사용하여 구성합니다.
 
- 최대 시나리오 반복 횟수에 도달하면 시나리오가 중지되지만 다른 활성 시나리오는 계속 실행됩니다.
+최대 시나리오 반복 횟수에 도달하면 시나리오가 중지되지만 다른 활성 시나리오는 계속 실행됩니다.
 
 > [!NOTE]
 > 관련 속성은 웹 테스트 데이터 소스에 있는 **Unique** 속성으로서 데이터에서 행 단위로 순차적으로 이동하지만 한 레코드에서 한 번만 이동합니다. 자세한 내용은 [웹 성능 테스트에 데이터 소스 추가](../test/add-a-data-source-to-a-web-performance-test.md)를 참조하세요.
 
- **최대 테스트 반복 횟수** 속성은 다양한 상황에 유용합니다. 일부 부하 테스터는 반복 중심의 테스트를 선호하는 반면, 다른 부하 테스터는 지속 시간 중심의 테스트를 선호합니다.
+**최대 테스트 반복 횟수** 속성은 다양한 상황에 유용합니다. 일부 부하 테스터는 반복 중심의 테스트를 선호하는 반면, 다른 부하 테스터는 지속 시간 중심의 테스트를 선호합니다.
 
- ![시나리오의 테스트 반복 횟수 지정](../test/media/loadtest_prop.png)
+![시나리오의 테스트 반복 횟수 지정](../test/media/loadtest_prop.png)
 
 ### <a name="to-specify-the-maximum-test-iterations"></a>최대 테스트 반복 횟수를 지정하려면
 

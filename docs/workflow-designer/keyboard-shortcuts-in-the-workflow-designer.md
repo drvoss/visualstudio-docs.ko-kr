@@ -1,22 +1,21 @@
 ---
-title: 워크플로 디자이너-워크플로 디자이너의 바로 가기 키
+title: '워크플로 디자이너: 바로 가기 키'
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - WFDKeyboardShortcuts.UI
 ms.assetid: 9be75438-a4a3-4781-94e5-45b7ec082358
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 326a377cd93e15c52a699dfb83c7ec111866cc0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b2026c61d05425f0f0d48a9fb722c62f760fcba2
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858658"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825518"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>워크플로 디자이너의 바로 가기 키
 
@@ -24,9 +23,9 @@ ms.locfileid: "53858658"
 
 ## <a name="navigating-the-workflow-designer-using-the-keyboard"></a>키보드를 사용하여 워크플로 디자이너 탐색
 
-Visual Studio 내에서 전역 바로 가기와 디버깅 바로 가기가 워크플로 디자이너에 적용 됩니다. 또한 다양 한 워크플로 디자이너 관련 바로 가기 키를 만들었습니다. Visual Studio에서 모든 바로 가기 키를 다시 매핑할 수 있습니다. 하지만 다시 호스트된 응용 프로그램에는 이러한 바로 가기 키가 하드 코딩되어 있습니다.
+Visual Studio 내에서 전역 바로 가기와 디버깅 바로 가기가 워크플로 디자이너에 적용 됩니다. 또한 다양 한 워크플로 디자이너 관련 바로 가기 키를 만들었습니다. Visual Studio에서 모든 바로 가기 키를 다시 매핑할 수 있습니다. 하지만 다시 호스트된 애플리케이션에는 이러한 바로 가기 키가 하드 코딩되어 있습니다.
 
-### <a name="workflow-designer-keyboard-shortcuts"></a>워크플로 디자이너 바로 가기 키
+### <a name="workflow-designer-keyboard-shortcuts"></a>Workflow Designer 바로 가기 키
 
 다음 표에서 워크플로 디자이너 명령에 할당 된 기본 바로 가기 키를 보여 줍니다.
 
@@ -54,17 +53,17 @@ Visual Studio 내에서 전역 바로 가기와 디버깅 바로 가기가 워�
 
 - 순서도의 크기를 조정하려면 화살표 키를 사용하여 순서도의 현재 경계 너머로 활동을 이동합니다. 순서도의 크기가 자동으로 조정됩니다.
 
-- 활동을 시작 노드로 설정 하려면 사용 합니다 **노드로 설정** 상황에 맞는 메뉴 명령을 합니다.
+- 작업을 시작 노드로 설정 하려면 합니다 **노드로 설정** 오른쪽 클릭 메뉴에서 명령을 합니다.
 
 - 활동을 연결하려면
 
-    1.  소스 활동으로 이동하여 해당 활동을 선택합니다.
+    1. 소스 활동으로 이동하여 해당 활동을 선택합니다.
 
-    2.  Ctrl+E, M을 여러 번 눌러 키보드 포커스를 대상 활동으로 옮깁니다.
+    2. Ctrl+E, M을 여러 번 눌러 키보드 포커스를 대상 활동으로 옮깁니다.
 
-    3.  Ctrl+E, S를 눌러 대상 활동을 선택 항목에 추가합니다.
+    3. Ctrl+E, S를 눌러 대상 활동을 선택 항목에 추가합니다.
 
-    4.  Ctrl+E, F를 눌러 소스의 커넥터를 대상에 추가합니다.
+    4. Ctrl+E, F를 눌러 소스의 커넥터를 대상에 추가합니다.
 
 키보드로 활동을 연결하는 방법에 대한 참고 사항은 다음과 같습니다.
 
@@ -80,11 +79,11 @@ Visual Studio 내에서 전역 바로 가기와 디버깅 바로 가기가 워�
 
 - 다음 명령에 대한 바로 가기 키를 다시 매핑할 수 없습니다. 식을 편집할 때 이러한 명령에 액세스하기 위해서는 기본 바로 가기 키만 사용할 수 있습니다.
 
-   - 잘라내기
-   - 복사
-   - 붙여넣기
-   - 모두 선택
-   - 실행 취소
-   - 다시 실행
+  - 잘라내기
+  - 복사
+  - 붙여넣기
+  - 모두 선택
+  - 실행 취소
+  - Redo
 
 - Visual Studio에서 워크플로 디자이너 내에서 식 편집 명령에 대 한 바로 가기 키를 다시 매핑할, 워크플로 디자이너 범위에서 바로 가기를 편집 합니다. 텍스트 편집기 범위에서 변경한 내용을 자동으로 워크플로 디자이너에 적용 되지 않습니다. 따라서 양쪽 모두에서 바로 가기를 다시 매핑하려면 범위마다 한 번씩 변경을 두 번 적용해야 합니다.

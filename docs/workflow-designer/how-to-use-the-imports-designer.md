@@ -2,21 +2,20 @@
 title: '워크플로 디자이너-방법: 가져오기 디자이너 사용'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Presentation.View.ImportDesigner.UI
 ms.assetid: 61328ab6-9b66-4e12-8630-22e30ee8c9d1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f0ae017eaf9843b4411ecf762b91d29ff9d95c0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 11c0c959964fee21f2cdfe098907ab2dfe184f7e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949067"
 ---
 # <a name="how-to-use-the-imports-designer"></a>방법: 가져오기 디자이너 사용
 
@@ -34,14 +33,14 @@ ms.locfileid: "53823969"
 
 ## <a name="to-add-a-namespace-to-the-list-of-imported-namespaces"></a>가져온 네임스페이스 목록에 네임스페이스를 추가하려면
 
-1.  Visual Studio 또는 재 호스트 된 워크플로 응용 프로그램에서 WCF 워크플로 서비스 응용 프로그램, 워크플로 콘솔 응용 프로그램 또는 활동 라이브러리 프로젝트를 엽니다.
+1. Visual Studio 또는 재 호스트 된 워크플로 응용 프로그램에서 WCF 워크플로 서비스 응용 프로그램, 워크플로 콘솔 응용 프로그램 또는 활동 라이브러리 프로젝트를 엽니다.
 
-2.  클릭 **Imports** 기본 캔버스의 맨 아래에 있습니다. 가져오기 디자이너가 나타납니다.
+2. 클릭 **Imports** 기본 캔버스의 맨 아래에 있습니다. 가져오기 디자이너가 나타납니다.
 
-3.  가져오기 디자이너 맨 위에 있는 드롭다운 목록 컨트롤에서 네임스페이스를 입력하거나 선택합니다.
+3. 가져오기 디자이너 맨 위에 있는 드롭다운 목록 컨트롤에서 네임스페이스를 입력하거나 선택합니다.
 
      입력할 때 입력한 문자와 일치하는 유효한 네임스페이스 목록이 나타납니다.
 
-4.  키를 눌러 **Enter** 네임 스페이스 목록에 추가 합니다.
+4. 키를 눌러 **Enter** 네임 스페이스 목록에 추가 합니다.
 
-5.  목록에서 네임 스페이스를 제거 하려는 경우 네임 스페이스를 선택 하 고 다음 키를 누릅니다 합니다 **삭제** 키보드의 키입니다. 네임스페이스가 들어 있는 어셈블리를 프로젝트에서 더 이상 참조할 수 없는 경우처럼 네임스페이스가 어떤 이유로 유효하지 않은 경우에만 네임스페이스를 삭제할 수 있습니다.
+5. 목록에서 네임 스페이스를 제거 하려는 경우 네임 스페이스를 선택 하 고 다음 키를 누릅니다 합니다 **삭제** 키보드의 키입니다. 네임스페이스가 들어 있는 어셈블리를 프로젝트에서 더 이상 참조할 수 없는 경우처럼 네임스페이스가 어떤 이유로 유효하지 않은 경우에만 네임스페이스를 삭제할 수 있습니다.

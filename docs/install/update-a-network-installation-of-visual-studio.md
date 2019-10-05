@@ -1,10 +1,8 @@
 ---
 title: 네트워크 기반 설치 업데이트
 description: --layout 명령을 사용하여 네트워크 기반 Visual Studio 설치를 업데이트하는 방법 알아보기
-ms.date: 08/14/2017
-ms.technology: vs-acquisition
+ms.date: 03/30/2019
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
@@ -12,58 +10,75 @@ helpviewer_keywords:
 ms.assetid: 1AF69C0E-0AC9-451B-845D-AE4EDBCEA65C
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 736f8dc9c79faa5c81055296c9fbf534c512f6fa
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: fd7277c4c42856ceea5e4da0a45d54613bf66c74
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971370"
 ---
-# <a name="update-a-network-based-installation-of-visual-studio-2017"></a>Visual Studio 2017의 네트워크 기반 설치 업데이트
+# <a name="update-a-network-based-installation-of-visual-studio"></a>Visual Studio의 네트워크 기반 설치 업데이트
 
 최신 제품 업데이트를 사용하여 Visual Studio의 네트워크 설치 레이아웃을 업데이트할 수 있으므로, 해당 레이아웃을 Visual Studio의 최신 업데이트에 대한 설치 지점으로 사용하거나 이미 클라이언트 워크스테이션에 배포된 설치를 유지 관리하는 데 사용할 수 있습니다.
 
 ## <a name="how-to-update-a-network-layout"></a>네트워크 레이아웃을 업데이트하는 방법
 
-최신 업데이트를 포함하도록 네트워크 설치 공유를 새로 고치려면 --layout 명령을 실행하여 업데이트된 패키지를 점진적으로 다운로드합니다.
+최신 업데이트를 포함하도록 네트워크 설치 공유를 새로 고치려면 `--layout` 명령을 실행하여 업데이트된 패키지를 점진적으로 다운로드합니다.
 
-네트워크 레이아웃을 처음 만들 때 부분 레이아웃을 선택했다면 이러한 설정이 저장됩니다.  이후 모든 레이아웃 명령은 이전 옵션과 함께 지정하는 새 옵션을 사용합니다.  이는 15.3의 새로운 기능입니다.  이전 버전의 레이아웃을 사용 중인 경우에는 네트워크 설치 레이아웃을 처음 만들 때 사용한 것과 같은 명령줄 매개 변수(즉, 같은 워크로드 및 언어)를 사용하여 콘텐츠를 업데이트해야 합니다.
+::: moniker range="vs-2017"
 
-레이아웃을 파일 공유에서 호스트하는 경우 개인 레이아웃 복사본(예: c:\vs2017offline)을 업데이트하고 업데이트된 콘텐츠가 모두 다운로드된 후 해당 복사본을 파일 공유(예: \\server\products\VS2017)로 복사합니다. 이 작업을 하지 않으면 레이아웃이 업데이트되는 동안 설치 프로그램을 실행하는 사용자가 레이아웃에서 일부 콘텐츠를 가져오지 못할 수 있습니다. 이는 레이아웃이 완전히 업데이트되지 않았기 때문입니다.
+**15.3의 새로운 기능**: 네트워크 레이아웃을 처음 만들 때 부분 레이아웃을 선택했다면 이러한 설정이 저장됩니다. 이후 모든 레이아웃 명령은 이전 옵션과 함께 지정하는 새 옵션을 사용합니다. 그러나 이전 버전의 레이아웃을 사용 중인 경우에는 네트워크 설치 레이아웃을 처음 만들 때 사용한 것과 같은 명령줄 매개 변수(즉, 같은 워크로드 및 언어)를 사용하여 콘텐츠를 업데이트해야 합니다.
 
-레이아웃을 만든 다음 업데이트하는 방법을 살펴보겠습니다.
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+네트워크 레이아웃을 처음 만들 때 부분 레이아웃을 선택했다면 이러한 설정이 저장됩니다. 이후 모든 레이아웃 명령은 이전 옵션과 함께 지정하는 새 옵션을 사용합니다.
+
+::: moniker-end
+
+레이아웃을 파일 공유에서 호스트하는 경우 개인 레이아웃 복사본(예: c:\vsoffline)을 업데이트하고 업데이트된 콘텐츠가 모두 다운로드된 다음, 해당 복사본을 파일 공유(예: \\server\products\VS)로 복사합니다. 이 작업을 하지 않으면 레이아웃이 업데이트되는 동안 설치 프로그램을 실행하는 사용자가 레이아웃에서 일부 콘텐츠를 가져오지 못할 수 있습니다. 이는 레이아웃이 완전히 업데이트되지 않았기 때문입니다.
+
+레이아웃을 만든 다음, 업데이트하는 방법에 대한 몇 가지 예를 살펴보겠습니다.
 
 * 먼저, 다음은 영어용 워크로드 하나만 포함된 레이아웃을 만드는 방법의 예입니다.
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
+  vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
   ```
 
 * 다음은 이 동일한 레이아웃을 최신 버전으로 업데이트하는 방법입니다. 명령줄 매개 변수를 추가로 지정할 필요가 없습니다. 이전 설정이 저장되어 이 레이아웃 폴더의 모든 후속 레이아웃 명령에 사용됩니다.
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout
+  vs_enterprise.exe --layout c:\VSLayout
   ```
 
 * 무인 방식으로 레이아웃에 최신 버전으로 업데이트하는 방법은 다음과 같습니다. 레이아웃 작업은 새 콘솔 창에서 설치 프로세스를 실행합니다. 사용자가 최종 결과는 물론, 발생했을 수 있는 오류에 대한 요약을 볼 수 있도록 창이 열려 있습니다. 무인 방식으로 레이아웃 작업을 수행하고 있는 경우(예를 들어 레이아웃을 최신 버전으로 업데이트하기 위해 정기적으로 실행되는 스크립트가 있는 경우) `--passive` 매개 변수를 사용하면 프로세스는 창을 자동으로 종료하니다.
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout --passive
+  vs_enterprise.exe --layout c:\VSLayout --passive
   ```
 
-* 다음은 추가 워크로드와 지역화된 언어를 추가하는 방법입니다.  여기의 명령은 Azure 워크로드를 추가합니다.  이제 관리되는 데스크톱과 Azure가 이 레이아웃에 포함됩니다.  이러한 모든 워크로드에 대해 영어 및 독일어용 언어 리소스도 포함됩니다.  그리고 레이아웃이 사용 가능한 최신 버전으로 업데이트됩니다.
+* 다음은 추가 워크로드와 지역화된 언어를 추가하는 방법입니다.  (이 명령은 *Azure 개발* 워크로드를 추가합니다.)  이제 관리되는 데스크톱과 Azure가 이 레이아웃에 포함됩니다.  이러한 모든 워크로드에 대해 영어 및 독일어용 언어 리소스도 포함됩니다.  그리고 레이아웃이 사용 가능한 최신 버전으로 업데이트됩니다.
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
+  vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
   ```
 
-* 마지막으로 버전을 업데이트하지 않고 워크로드와 지역화된 언어를 추가하는 방법은 다음과 같습니다. 여기의 명령은 ASP.NET 및 웹 워크로드를 추가합니다.  이제 관리되는 데스크톱, Azure, ASP.NET 및 웹 워크로드가 이 레이아웃에 포함됩니다.  이러한 모든 워크로드에 대해 영어, 독일어 및 프랑스어용 언어 리소스도 포함됩니다.  그러나 이 명령이 실행될 때 레이아웃이 사용 가능한 최신 버전으로 업데이트되지 않았고,  기존 버전으로 유지됩니다.
+    > [!IMPORTANT]
+    > 업데이트 작업은 [응답 파일](automated-installation-with-response-file.md)의 "추가" 섹션에 이러한 구성 요소를 포함하더라도 새로 추가된 선택적 구성 요소를 설치하지 않습니다. 이는 업데이트하는 동안 추가 작업이 사용되지 않기 때문에 발생합니다.
+    >
+    > **해결 방법**: 업그레이드 후 별도의 수정 작업을 실행하여 누락된 구성 요소를 설치합니다.
+
+* 마지막으로 버전을 업데이트하지 않고 워크로드와 지역화된 언어를 추가하는 방법은 다음과 같습니다. (이 명령은 *ASP.NET 및 웹 개발* 워크로드를 추가합니다.)  이제 관리되는 데스크톱, Azure, ASP.NET 및 웹 개발 워크로드가 이 레이아웃에 포함됩니다. 이러한 모든 워크로드에 대해 영어, 독일어 및 프랑스어용 언어 리소스도 포함됩니다.  그러나 이 명령이 실행될 때 레이아웃이 사용 가능한 최신 버전으로 업데이트되지 않았고, 기존 버전으로 유지됩니다.
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion
+  vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion
   ```
 
 ## <a name="how-to-deploy-an-update-to-client-machines"></a>업데이트를 클라이언트 컴퓨터에 배포하는 방법
@@ -74,9 +89,21 @@ ms.locfileid: "53159492"
   * Visual Studio 설치 관리자를 실행합니다.
   * 그런 다음 **업데이트**를 클릭합니다.
 
+::: moniker range="vs-2017"
+
 * 관리자는 다음 두 가지 명령을 각각 사용하여 사용자 조작 없이 Visual Studio의 클라이언트 배포를 업데이트할 수 있습니다.
   * 먼저 Visual Studio 설치 관리자를 업데이트합니다. <br>```vs_enterprise.exe --quiet --update```
-  * 그다음에 Visual Studio 응용 프로그램 자체를 업데이트합니다. <br>```vs_enterprise.exe update --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" --quiet --wait --norestart```
+  * 그다음에 Visual Studio 애플리케이션 자체를 업데이트합니다. <br>```vs_enterprise.exe update --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" --quiet --wait --norestart```
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+* 관리자는 다음 두 가지 명령을 각각 사용하여 사용자 조작 없이 Visual Studio의 클라이언트 배포를 업데이트할 수 있습니다.
+  * 먼저 Visual Studio 설치 관리자를 업데이트합니다. <br>```vs_enterprise.exe --quiet --update```
+  * 그다음에 Visual Studio 애플리케이션 자체를 업데이트합니다. <br>```vs_enterprise.exe update --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" --quiet --wait --norestart```
+
+::: moniker-end
 
 > [!NOTE]
 > [vswhere.exe 명령](tools-for-managing-visual-studio-instances.md)을 사용하여 클라이언트 컴퓨터에서 기존 Visual Studio 인스턴스의 설치 경로를 확인합니다.
@@ -95,13 +122,16 @@ vs_enterprise.exe --layout <layoutDir> --verify
 vs_enterprise.exe는 layoutDir 내에서 호출할 수 있습니다.
 
 > [!NOTE]
-> `--verify` 옵션에 필요한 몇 가지 중요한 메타데이터 파일이 레이아웃 오프라인 캐시에 있어야 합니다. 이러한 메타데이터 파일을 사용할 수 없으면 “--verify”가 실행될 수 없고 설치 프로그램에서 오류가 발생합니다. 이 오류가 발생하는 경우 새 오프라인 레이아웃을 다른 폴더나 같은 오프라인 캐시 폴더에 다시 만듭니다. 이렇게 하려면 초기 오프라인 레이아웃을 만드는 데 사용한 동일한 레이아웃 명령을 실행합니다. 예를 들어 `Vs_enterprise.exe --layout <layoutDir>`과 같은 형식입니다.
+> `--verify` 옵션에 필요한 몇 가지 중요한 메타데이터 파일이 레이아웃 오프라인 캐시에 있어야 합니다. 이러한 메타데이터 파일을 사용할 수 없으면 “--verify”가 실행될 수 없고 설치 프로그램에서 오류가 발생합니다. 이 오류가 발생하는 경우 새 오프라인 레이아웃을 다른 폴더나 같은 오프라인 캐시 폴더에 다시 만듭니다. 이렇게 하려면 초기 오프라인 레이아웃을 만드는 데 사용한 동일한 레이아웃 명령을 실행합니다. 예를 들어, `vs_enterprise.exe --layout <layoutDir>`을 입력합니다.
 
 Microsoft에서 Visual Studio 업데이트를 정기적으로 제공하므로, 만드는 새 레이아웃은 초기 레이아웃과 버전이 같지 않을 수 있습니다.
 
+> [!NOTE]
+> 확인은 Visual Studio의 특정 부 버전의 최신 버전에 대해서만 작동합니다. 새 버전이 출시되는 즉시 동일한 부 버전의 이전 패치 수준 릴리스에서는 확인이 작동하지 않습니다.
+
 ## <a name="how-to-fix-a-layout"></a>레이아웃을 수정하는 방법
 
-`--fix`를 사용하여 `--verify`와 동일한 확인을 수행하고 식별된 문제를 해결해 볼 수도 있습니다. `--fix` 프로세스를 실행하려면 인터넷 연결이 필요하므로 `--fix`를 호출하기 전에 컴퓨터가 인터넷에 연결되어 있는지 확인합니다.
+`--fix`를 사용하여 `--verify`와 동일한 확인을 수행하고 식별된 문제를 해결해 볼 수도 있습니다. `--fix` 프로세스를 실행하려면 인터넷 연결이 필요하므로 `--fix`를 호출하기 전에 머신이 인터넷에 연결되어 있는지 확인합니다.
 
 ```cmd
 vs_enterprise.exe --layout <layoutDir> --fix
@@ -130,7 +160,7 @@ vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> --clean <
 vs_enterprise.exe를 &lt;layoutDir&gt; 내에서 호출할 수도 있습니다. 예를 들면 다음과 같습니다.
 
 ```cmd
-c:\VS2017Layout\vs_enterprise.exe --layout c:\VS2017Layout --clean c:\VS2017Layout\Archive\1cd70189-fc55-4583-8ad8-a2711e928325\Catalog.json --clean c:\VS2017Layout\Archive\d420889f-6aad-4ba4-99e4-ed7833795a10\Catalog.json
+c:\VSLayout\vs_enterprise.exe --layout c:\VSLayout --clean c:\VSLayout\Archive\1cd70189-fc55-4583-8ad8-a2711e928325\Catalog.json --clean c:\VS2017Layout\Archive\d420889f-6aad-4ba4-99e4-ed7833795a10\Catalog.json
 ```
 
 이 명령을 실행하면 설치 프로그램은 오프라인 캐시 폴더를 분석하여 제거할 파일 목록을 찾습니다. 그러면 삭제될 파일을 검토하고 삭제를 확인할 수 있습니다.
@@ -144,3 +174,4 @@ c:\VS2017Layout\vs_enterprise.exe --layout c:\VS2017Layout --clean c:\VS2017Layo
 * [명령줄 매개 변수를 사용하여 Visual Studio 설치](use-command-line-parameters-to-install-visual-studio.md)
 * [Visual Studio 인스턴스 검색 및 관리 도구](tools-for-managing-visual-studio-instances.md)
 * [네트워크 기반 Visual Studio 배포에 대한 업데이트 제어](controlling-updates-to-visual-studio-deployments.md)
+* [Visual Studio 제품 수명 주기 및 서비스](/visualstudio/releases/2019/servicing/)

@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: fbd977b733aa6e8e663cf4a69e577030f5c6106a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 048116c07f30267c6beb2703c3eaa6fb4d3655f0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998949"
 ---
 # <a name="properties-of-domain-roles"></a>도메인 역할의 속성
 다음 표의 속성이 도메인 역할 연관 됩니다. 도메인 역할에 대 한 자세한 내용은 [모델, 클래스 및 관계 이해](../modeling/understanding-models-classes-and-relationships.md)합니다. 이러한 속성을 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [사용자 지정 및 도메인 특정 언어 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)합니다.
@@ -29,7 +28,7 @@ ms.locfileid: "53839707"
 |복합성|반대쪽 역할을 재생할 수 있는 모델 요소의 수 (`0..1`, `1..1`를 `0..*`, 또는 `1..*`). 복합성이 1 인 경우 `0..*` 또는 `1..*`, 그런 다음 생성된 된 속성 컬렉션을 나타냅니다; 그렇지 않으면, 생성된 된 속성 단일 모델 요소를 나타냅니다.|관계 종류에 따라 달라 집니다, 그리고이 관계의 원본 또는 대상 역할입니다.|
 |이름|도메인 역할의 이름입니다. 이 속성에 공백을 포함할 수 없습니다.|이 역할에 대 한 역할 수행자의 도메인 클래스의 이름입니다.|
 |복사를 전파합니다.|`DoNotPropagateCopy` -복사 된 역할 수행자 복사본이 없는이 링크 해야 합니다.<br /><br /> `PropagateCopyToLinkOnly` 링크 복사 됨된-기존 반대 역할 수행자를 가리킵니다.<br /><br /> `PropagateCopyToLinkAndOppositeRolePlayer` -복사한 링크 반대 역할 수행자의 복사본을 가리킵니다.|`PropagateCopyToLinkAndOppositeRolePlayer` 포함의 소스 역할입니다.<br /><br /> `DoNotPropagateCopy` 다른 역할입니다.<br /><br /> 자세한 내용은 참조 하세요. [복사 동작 사용자 지정](../modeling/customizing-copy-behavior.md)|
-|삭제 전파|`True` 연결 된 링크가 삭제 되 면이 역할을 담당 하는 요소를 삭제 합니다.|`True` 포함 역할의 대상입니다.<br /><br /> `False` 다른 역할입니다.<br /><br /> 자세한 내용은 [삭제 동작 사용자 지정](../modeling/customizing-deletion-behavior.md)합니다.|
+|삭제 전파|`True` 연결 된 링크가 삭제 되 면이 역할을 담당 하는 요소를 삭제 합니다.|`True` 포함 역할의 대상입니다.<br /><br /> `False` 다른 역할입니다.|
 |속성 이름|역할 수행자의 코드에서 생성 된 속성의 이름입니다. 이 이름은 공백을 포함할 수 없습니다.|이 역할에는 0-1에 있는 경우 반대쪽 역할의 이름 또는 한 일 다중성입니다. 그렇지 않으면 반대쪽 역할의 이름을 복수화 합니다.|
 |역할 수행자|도메인 클래스 관계에서이 역할을 수행할 수 있는 요소입니다. 이 속성은 읽기 전용입니다.|이 역할에 대 한 역할 수행자의 도메인 클래스입니다.|
 |노트|도메인 역할을 사용 하 여 연결 된 비공식 메모입니다.|< 없음\>|

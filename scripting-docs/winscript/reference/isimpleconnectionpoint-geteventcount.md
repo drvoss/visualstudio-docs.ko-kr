@@ -2,7 +2,6 @@
 title: ISimpleConnectionPoint::GetEventCount | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 523748112d99f000d2eb88a7a64c88b60d5ea44f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 34796765ba15589c031e780df5f2507e6938a858
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786251"
 ---
 # <a name="isimpleconnectionpointgeteventcount"></a>ISimpleConnectionPoint::GetEventCount
-이 인터페이스에 노출 하는 이벤트 수를 반환 합니다.  
+이 인터페이스에서 노출 하는 이벤트의 수를 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetEventCount(  
    ULONG*  pulCount  
 );  
@@ -38,7 +37,7 @@ HRESULT GetEventCount(
   
 #### <a name="parameters"></a>매개 변수  
  `pulCount`  
- [out] 이 인터페이스 수에 노출 하는 이벤트 수입니다.  
+ [out] 이 인터페이스 수에 노출 하는 이벤트의 수입니다.  
   
 ## <a name="return-value"></a>반환 값  
  이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
@@ -48,7 +47,7 @@ HRESULT GetEventCount(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는이 인터페이스에 노출 하는 이벤트 수를 반환 합니다.  
+ 이 메서드는이 인터페이스에서 노출 하는 이벤트의 수를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [ISimpleConnectionPoint 인터페이스](../../winscript/reference/isimpleconnectionpoint-interface.md)

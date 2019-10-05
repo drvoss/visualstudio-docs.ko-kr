@@ -1,14 +1,9 @@
 ---
 title: 성능 도구 데이터 분석 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance, viewing data
 - performance reports, performance data
@@ -21,18 +16,18 @@ ms.assetid: ae3e198a-b994-4ecb-a633-dec98bd4fd45
 caps.latest.revision: 46
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 57d223cfe71db947a33545d27b6a75947db6b016
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9a141e6f02c8457adaee45ddc6905470a747123d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780453"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156438"
 ---
 # <a name="analyzing-performance-tools-data"></a>성능 도구 데이터 분석
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로파일링 도구의 성능 보고서를 사용하면 응용 프로그램 성능 문제를 확인하고 분석할 수 있습니다. 이 섹션에서는 성능 데이터를 검사하는 데 사용할 수 있는 성능 보고서 및 뷰에 대한 개요를 제공합니다.  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로파일링 도구의 성능 보고서를 사용하면 애플리케이션 성능 문제를 확인하고 분석할 수 있습니다. 이 섹션에서는 성능 데이터를 검사하는 데 사용할 수 있는 성능 보고서 및 뷰에 대한 개요를 제공합니다.  
   
 ## <a name="common-tasks"></a>일반 작업  
   
@@ -49,6 +44,3 @@ ms.locfileid: "51780453"
   
 ## <a name="see-also"></a>참고 항목  
  [성능 탐색기](../profiling/performance-explorer.md)
-
-
-

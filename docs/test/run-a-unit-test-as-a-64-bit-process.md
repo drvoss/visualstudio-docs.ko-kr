@@ -1,23 +1,21 @@
 ---
 title: 단위 테스트를 64비트 프로세스로 실행
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, creating
 - unit tests, running
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 4ee070adba33328253d7abeb122ec2ca2da145ef
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: cd4cf41906fc9c8d4b5fbce407f1910d5e972dee
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062718"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945749"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>단위 테스트를 64비트 프로세스로 실행
 

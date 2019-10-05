@@ -1,14 +1,9 @@
 ---
 title: TemplateData 요소 (Visual Studio 템플릿) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#TemplateData
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: db17ec9b-bfdf-46b1-bbe7-5ccc140056e2
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 29b481c8560e47dff4c4fadca9dab869e4f5b361
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 209d8066d232c63364a045aee6b8dd2153033666
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743778"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186448"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData 요소(Visual Studio 템플릿)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ ms.locfileid: "51743778"
   
 ### <a name="child-elements"></a>자식 요소  
   
-|요소|설명|  
+|요소|Description|  
 |-------------|-----------------|  
 |[이름](../extensibility/name-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 표시 된 대로 템플릿의 이름을 지정 합니다 **새 프로젝트** 또는 **새 항목 추가** 대화 상자.|  
 |[설명](../extensibility/description-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 표시 된 대로 템플릿의 설명을 지정 합니다 **새 프로젝트** 또는 **새 항목 추가** 대화 상자.|  
@@ -67,7 +62,7 @@ ms.locfileid: "51743778"
 |[ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md)|선택적 요소입니다.<br /><br /> 만들어질 때 Visual Studio 프로젝트 시스템에서 프로젝트 또는 항목에 대 한 기본 이름을 생성할 됩니다 있는지 여부를 지정 합니다.|  
 |[PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md)|선택적 요소입니다.<br /><br /> 임시 프로젝트로 프로젝트를 만들 수 있는지 여부를 지정 합니다.|  
 |[EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md)|선택적 요소입니다.<br /><br /> 지정 여부를 합니다 **찾아보기** 단추를 사용할 수는 **새 프로젝트** 대화 상자에서 사용자가 새 프로젝트를 저장 된 기본 디렉터리를 쉽게 수정할 수 있도록 합니다.|  
-|[숨겨진](../extensibility/hidden-element-visual-studio-templates.md)|선택적 요소입니다.<br /><br /> 템플릿 중 하나에 표시할지 여부를 지정 합니다 **새 프로젝트** 하거나 **새 항목 추가** 대화 상자.|  
+|[숨김](../extensibility/hidden-element-visual-studio-templates.md)|선택적 요소입니다.<br /><br /> 템플릿 중 하나에 표시할지 여부를 지정 합니다 **새 프로젝트** 하거나 **새 항목 추가** 대화 상자.|  
 |[NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)|선택적 요소입니다.<br /><br /> 부모 범주에 템플릿 표시 하는 횟수를 지정 합니다 **새 프로젝트** 대화 상자.|  
 |[LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md)|선택적 요소입니다.|  
 |[LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md)|선택적 요소입니다.<br /><br /> 지정 여부는 **위치** 텍스트 상자에 **새 프로젝트** 대화 상자는 활성화, 비활성화 또는 프로젝트 템플릿에 대 한 숨겨진 합니다.|  
@@ -79,7 +74,7 @@ ms.locfileid: "51743778"
   
 ### <a name="parent-elements"></a>부모 요소  
   
-|요소|설명|  
+|요소|Description|  
 |-------------|-----------------|  
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|필수적 요소입니다.<br /><br /> 프로젝트 템플릿, 항목 템플릿 또는 시작 키트에 대 한 모든 메타 데이터를 포함합니다.|  
   
@@ -118,4 +113,3 @@ ms.locfileid: "51743778"
 ## <a name="see-also"></a>참고 항목  
  [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
  [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
-

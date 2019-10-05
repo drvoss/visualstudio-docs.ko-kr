@@ -2,7 +2,6 @@
 title: SCRIPTUICHANDLING 열거형 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 40b538c6f28e29dcdef4a8335beae87d1c2b6ddd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d21be6a4e0d6fb24bec95cd7232a33dd20c67f31
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734063"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840176"
 ---
 # <a name="scriptuichandling-enumeration"></a>SCRIPTUICHANDLING 열거형
 UI 컨트롤을 처리 해야 하는 방식을 나타냅니다.  
@@ -32,6 +31,6 @@ typedef enum tagSCRIPTUICHANDLING {     SCRIPTUICHANDLING_ALLOW = 0,     SCRIPTU
   
 |||  
 |-|-|  
-|SCRIPTUICHANDLING_ALLOW|표시를 제어할을 수 있습니다.|  
+|SCRIPTUICHANDLING_ALLOW|컨트롤이 표시 되도록 할 수 있습니다.|  
 |SCRIPTUICHANDLING_NOUIERROR||  
 |SCRIPTUICHANDLING_NOUIDEFAULT||

@@ -1,8 +1,6 @@
 ---
 title: 프로젝트에서 참조 관리
-ms.date: 04/11/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+ms.date: 08/02/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
@@ -20,15 +18,15 @@ helpviewer_keywords:
 - objects [Visual Studio], referencing
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e772f4d861e4b16499ad9be9d7c814320e1a14f9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 77b52e66d0278d7e9f8446fe728cca285c8418fa
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950948"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787627"
 ---
 # <a name="manage-references-in-a-project"></a>프로젝트에서 참조 관리
 
@@ -40,13 +38,15 @@ ms.locfileid: "31950948"
 
 다음 형식의 구성 요소 및 서비스에 대한 참조를 추가할 수 있습니다.
 
-- .NET Framework 클래스 라이브러리 또는 어셈블리
+- .NET 클래스 라이브러리 또는 어셈블리
 
 - UWP 앱
 
 - COM 구성 요소
 
 - 동일 솔루션에 있는 다른 어셈블리 또는 프로젝트의 클래스 라이브러리
+
+- 공유 프로젝트
 
 - XML Web services
 
@@ -99,28 +99,32 @@ Windows 8.1 프로젝트의 대상을 Windows 10으로 다시 지정하도록 �
 
 런타임에 구성 요소는 프로젝트의 출력 경로 또는 GAC(전역 어셈블리 캐시)에 있어야 합니다. 프로젝트에 이러한 위치 중 하나에 없는 개체에 대한 참조가 포함되어 있는 경우 프로젝트를 빌드할 때 프로젝트의 출력 경로에 대한 참조를 복사해야 합니다. <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 속성은 복사본을 만들 수 있는지 여부를 나타냅니다. 값이 **True**이면 프로젝트를 빌드할 때 참조가 프로젝트 디렉터리에 복사됩니다. 값이 **False**이면 참조가 복사되지 않습니다.
 
-GAC에 등록되어 있는 사용자 지정 구성 요소에 대한 참조가 포함된 응용 프로그램을 배포하는 경우 구성 요소는 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 설정과 관계없이 응용 프로그램과 함께 배포되지 않습니다. 이전 버전의 Visual Studio에서는 어셈블리가 배포되었는지 확인하기 위해 참조에 대한 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 속성을 설정할 수 있습니다. 이제 \Bin 폴더에 어셈블리를 수동으로 추가해야 합니다. 그러면 모든 사용자 지정 코드가 조사되어 친숙하지 않은 사용자 지정 코드를 게시할 가능성이 줄어듭니다.
+GAC에 등록되어 있는 사용자 지정 구성 요소에 대한 참조가 포함된 애플리케이션을 배포하는 경우 구성 요소는 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 설정과 관계없이 애플리케이션과 함께 배포되지 않습니다. 이전 버전의 Visual Studio에서는 어셈블리가 배포되었는지 확인하기 위해 참조에 대한 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 속성을 설정할 수 있습니다. 이제 \Bin 폴더에 어셈블리를 수동으로 추가해야 합니다. 그러면 모든 사용자 지정 코드가 조사되어 친숙하지 않은 사용자 지정 코드를 게시할 가능성이 줄어듭니다.
 
 어셈블리 또는 구성 요소를 전역 어셈블리 캐시 내에 있거나 프레임워크 구성 요소인 경우 기본적으로 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 속성은 **False** 입니다. 그렇지 않으면 이 속성의 값은 **True**로 설정됩니다. 프로젝트 간 참조는 항상 **True**로 설정됩니다.
 
-## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>다른 버전의 .NET Framework를 대상으로 하는 프로젝트 또는 어셈블리 참조
+## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-net"></a>다른 버전의 .NET을 대상으로 하는 프로젝트 또는 어셈블리 참조
 
-다른 .NET Framework 버전을 대상으로 하는 프로젝트나 어셈블리를 참조하는 응용 프로그램을 만들 수 있습니다. 예를 들어 .NET Framework 4.5를 대상으로 하는 어셈블리를 참조하고 .NET Framework 4.6을 대상으로 하는 응용 프로그램을 만들 수 있습니다. 이전 버전의 .NET Framework를 대상으로 하는 프로젝트를 만드는 경우 해당 프로젝트에서 새 버전을 대상으로 하는 프로젝트나 어셈블리에 대한 참조를 설정할 수 없습니다.
+다른 버전의 .NET을 대상으로 하는 프로젝트나 어셈블리를 참조하는 애플리케이션을 만들 수 있습니다. 예를 들어 .NET Framework 4.5를 대상으로 하는 어셈블리를 참조하고 .NET Framework 4.6을 대상으로 하는 애플리케이션을 만들 수 있습니다. 이전 버전의 .NET를 대상으로 하는 프로젝트를 만드는 경우 해당 프로젝트에서 새 버전을 대상으로 하는 프로젝트나 어셈블리에 대한 참조를 설정할 수 없습니다.
 
-자세한 내용은 [멀티 타기팅 개요](../ide/visual-studio-multi-targeting-overview.md)를 참조하세요.
+자세한 내용은 [Framework 타기팅 개요](../ide/visual-studio-multi-targeting-overview.md)를 참조하세요.
 
 ## <a name="project-to-project-references"></a>프로젝트 간 참조
 
-프로젝트 간 참조는 어셈블리가 포함된 프로젝트에 대한 참조로, **프로젝트** 탭을 사용하여 만들 수 있습니다. 프로젝트에 경로가 지정되면 Visual Studio에서 어셈블리를 찾을 수 있습니다.
+프로젝트 간 참조는 어셈블리가 포함된 프로젝트에 대한 참조로, 참조 관리자 대화 상자의 **프로젝트** 탭에서 프로젝트 참조를 만듭니다. 프로젝트에 경로가 지정되면 Visual Studio에서 어셈블리를 찾을 수 있습니다.
 
-어셈블리를 생성하는 프로젝트를 사용하는 경우에는 프로젝트를 참조하고 파일 참조(아래 참조)를 사용하지 말아야 합니다. 프로젝트 간 참조의 이점은 빌드 시스템에서 프로젝트 간의 종속성을 만들 수 있다는 점입니다. 참조하는 프로젝트가 마지막으로 빌드된 이후 변경된 경우 종속 프로젝트가 빌드됩니다. 파일 참조는 빌드 종속성을 만들지 않습니다. 따라서 종속 프로젝트를 빌드하지 않고 참조되는 프로젝트를 빌드할 수 있으며 해당 참조가 더 이상 사용되지 않습니다. (즉, 프로젝트가 이전에 빌드된 프로젝트 버전을 참조할 수 있습니다.) 그러면 *bin* 디렉터리에 여러 버전의 단일 DLL이 필요하게 되는데 이것은 불가능합니다. 이러한 충돌이 발생하면 “경고: ‘프로젝트’ 프로젝트의 ‘파일’ 종속성을 실행 디렉터리에 복사할 수 없습니다. 그러면 ‘파일’ 참조를 덮어쓰기 때문입니다.”와 같은 메시지가 표시됩니다. 자세한 내용은 [끊어진 참조 문제 해결](../ide/troubleshooting-broken-references.md) 및 [방법: 프로젝트 종속성 만들기 및 제거](../ide/how-to-create-and-remove-project-dependencies.md)를 참조하세요.
+어셈블리를 생성하는 프로젝트를 사용하는 경우에는 프로젝트를 참조하고 파일 참조(아래 참조)를 사용하지 말아야 합니다. 프로젝트 간 참조의 이점은 빌드 시스템에서 프로젝트 간의 종속성을 만들 수 있다는 점입니다. 참조하는 프로젝트가 마지막으로 빌드된 이후 변경된 경우 종속 프로젝트가 빌드됩니다. 파일 참조는 빌드 종속성을 만들지 않습니다. 따라서 종속 프로젝트를 빌드하지 않고 참조되는 프로젝트를 빌드할 수 있으며 해당 참조가 더 이상 사용되지 않습니다. (즉, 프로젝트가 이전에 빌드된 프로젝트 버전을 참조할 수 있습니다.) 그러면 *bin* 디렉터리에 여러 버전의 단일 DLL이 필요하게 되는데 이것은 불가능합니다. 이러한 충돌이 발생하면 "경고: '프로젝트' 프로젝트의 '파일' 종속성을 실행 디렉터리에 복사할 수 없습니다. 그러면 '파일' 참조를 덮어쓰기 때문입니다."와 같은 메시지가 표시됩니다. 자세한 내용은 [끊어진 참조 문제 해결](../ide/troubleshooting-broken-references.md) 및 [방법: 프로젝트 종속성 만들기 및 제거](../ide/how-to-create-and-remove-project-dependencies.md)를 참조하세요.
 
 > [!NOTE]
 > 한 프로젝트의 대상 .NET Framework 버전이 버전 4.5이고 다른 프로젝트의 대상 버전이 버전 2, 3, 3.5 또는 4.0인 경우 프로젝트 간 참조 대신 파일 참조가 만들어집니다.
 
+## <a name="shared-project-references"></a>공유 프로젝트 참조
+
+대부분의 다른 프로젝트 형식과 달리 *공유 프로젝트*에는 이진 출력이 없습니다. 대신 코드는 코드를 참조하는 각 프로젝트로 컴파일됩니다. [공유 프로젝트](/xamarin/cross-platform/app-fundamentals/shared-projects?tabs=windows)를 사용하면 다양한 애플리케이션 프로젝트에서 참조되는 공통 코드를 작성할 수 있습니다. 코드는 각 참조하는 프로젝트의 일부로 컴파일되며 플랫폼 특정 기능을 공유 코드 베이스에 통합하는 데 도움이 되는 컴파일러 지시문을 포함할 수 있습니다. 참조 관리자 대화 상자의 **공유 프로젝트** 탭에서 공유 프로젝트에 대한 참조를 추가합니다.
+
 ## <a name="file-references"></a>파일 참조
 
-파일 참조는 Visual Studio 프로젝트의 컨텍스트 외부에서 어셈블리에 대한 직접 참조로서, **참조 관리자**의 **찾아보기** 탭을 사용하여 만들 수 있습니다. 어셈블리나 구성 요소는 있지만 이를 출력으로 작성하는 프로젝트가 없는 경우 파일 참조를 사용하세요.
+파일 참조는 Visual Studio 프로젝트의 컨텍스트 외부에서 어셈블리에 대한 직접 참조로서, 참조 관리자 대화 상자의 **찾아보기** 탭을 사용하여 만들 수 있습니다. 어셈블리나 구성 요소는 있지만 이를 출력으로 작성하는 프로젝트가 없는 경우 파일 참조를 사용하세요.
 
 ## <a name="see-also"></a>참고 항목
 

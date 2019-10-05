@@ -1,8 +1,6 @@
 ---
 title: CPU 및 Windows 카운터 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.counters
@@ -11,26 +9,26 @@ helpviewer_keywords:
 - CPU counters in Profiling Tools
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 585fb2fa8d2662d1a2bec7915bf1f08a4dc771e4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 37025177c026d0b6578644ca5765a6878be984ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865923"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553021"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU 및 Windows 카운터
 
 Visual Studio 프로파일러를 사용하면 운영 체제(Windows 카운터)에 의해 생성된 성능 데이터 및 프로세서 단위(CPU 카운터)에 의해 생성된 성능 데이터를 수집할 수 있습니다.
 
 > [!NOTE]
-> Windows 8 및 Windows Server 2012의 강화된 보안 기능을 위해 Visual Studio 프로파일러가 이러한 플랫폼에서 데이터를 수집하는 방법을 상당히 변경해야 했습니다. 또한 UWP 앱에는 새로운 수집 기술도 필요합니다. [Windows 8 및 Windows Server 2012 응용 프로그램의 성능 도구](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)를 참조하세요.
+> Windows 8 및 Windows Server 2012의 강화된 보안 기능을 위해 Visual Studio 프로파일러가 이러한 플랫폼에서 데이터를 수집하는 방법을 상당히 변경해야 했습니다. 또한 UWP 앱에는 새로운 수집 기술도 필요합니다. [Windows 8 및 Windows Server 2012 애플리케이션의 성능 도구](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)를 참조하세요.
 
 ## <a name="windows-counters"></a>Windows 카운터
 
-Windows 카운터는 운영 체제, 응용 프로그램, 서비스 또는 드라이버의 성능에 대한 정보를 제공하는 Windows 진단 인프라의 일부입니다. Windows 카운터는 현재 컴퓨터의 구성에 따라 다르며 다른 컴퓨터에서 사용하지 못할 수 있습니다. Windows 성능 카운터는 프로파일링 데이터 파일에 프로파일링 표시로 수집되므로 보기 및 보고서를 필터링하는 데 사용할 수 있습니다.
+Windows 카운터는 운영 체제, 애플리케이션, 서비스 또는 드라이버의 성능에 대한 정보를 제공하는 Windows 진단 인프라의 일부입니다. Windows 카운터는 현재 컴퓨터의 구성에 따라 다르며 다른 컴퓨터에서 사용하지 못할 수 있습니다. Windows 성능 카운터는 프로파일링 데이터 파일에 프로파일링 표시로 수집되므로 보기 및 보고서를 필터링하는 데 사용할 수 있습니다.
 
 ## <a name="cpu-counters"></a>CPU 카운터
 
@@ -127,13 +125,11 @@ Visual Studio IDE에서 컴퓨터에 사용 가능한 카운터를 나열하려�
 
      **\<Visual Studio 성능 도구 디렉터리>\VSPerfCmd /querycounters**
 
-     여기서 *\<Visual Studio 성능 도구 디렉터리>* 는 Visual Studio 설치의 성능 도구 디렉터리 경로이며, 일반적으로 다음과 같습니다.
-
-     *C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*
+     여기서 *\<Visual Studio 성능 도구 디렉터리>* 는 Visual Studio 설치의 성능 도구 디렉터리 경로입니다. 성능 도구에 대한 경로를 가져오려면 [명령줄 도구 경로 지정](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
-[개요](../profiling/overviews-performance-tools.md)  
-[방법: 샘플링 이벤트 선택](../profiling/how-to-choose-sampling-events.md)  
-[방법: CPU 카운터 데이터 수집](../profiling/how-to-collect-cpu-counter-data.md)  
+[개요](../profiling/overviews-performance-tools.md)
+[방법: 샘플링 이벤트 선택](../profiling/how-to-choose-sampling-events.md)
+[방법: CPU 카운터 데이터 수집](../profiling/how-to-collect-cpu-counter-data.md)
 [방법: Windows 카운터 데이터 수집](../profiling/how-to-collect-windows-counter-data.md)

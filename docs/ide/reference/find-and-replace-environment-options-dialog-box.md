@@ -1,8 +1,6 @@
 ---
 title: 옵션 대화 상자, 환경, 찾기 및 바꾸기
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.FindReplace
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f804d6d5-6309-46e4-8294-b83e880b5ec9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7481f7d374d3958245cc7d506b0e0cccf1b5dbcb
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 7bc2d1a97676416c040c11c3b55f5adef7a0a3cc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790637"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>옵션 대화 상자, 환경, 찾기 및 바꾸기
 

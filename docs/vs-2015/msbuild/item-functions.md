@@ -1,32 +1,26 @@
 ---
 title: Item 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, Item functions
 ms.assetid: 5e6df3cc-2db8-4cbd-8fdd-3ffd03ac0876
 caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 687d740a379bd3b04bd47d0d2e3111bb71e7934d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c94624aaea629c087b552ee46266a44f534888d5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192902"
 ---
 # <a name="item-functions"></a>항목 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 MSBuild 4.0부터 작업 및 대상의 코드는 프로젝트의 항목에 대한 정보를 얻기 위해 item 함수를 호출할 수 있습니다. 이러한 함수를 사용하면 Distinct() 항목을 간편하게 가져올 수 있으며 항목을 반복하는 방식보다 속도도 더 빠릅니다.  
   
 ## <a name="string-item-functions"></a>문자열 항목 함수  
@@ -60,12 +54,12 @@ MSBuild 4.0부터 작업 및 대상의 코드는 프로젝트의 항목에 대�
 ## <a name="intrinsic-item-functions"></a>내장 항목 함수  
  아래 표는 항목에 사용할 수 있는 내장 함수를 나열합니다.  
   
-|기능|예제|설명|  
+|함수|예|설명|  
 |--------------|-------------|-----------------|  
 |`Count`|`@(MyItem->Count())`|항목 수를 반환합니다.|  
 |`DirectoryName`|`@(MyItem->DirectoryName())`|각 항목에 대한 해당 `Path.DirectoryName`을 반환합니다.|  
 |`Distinct`|`@(MyItem->Distinct())`|고유한 `Include` 값이 있는 항목을 반환합니다. 메타데이터는 무시됩니다. 비교 시 대/소문자가 구분되지 않습니다.|  
-|`DistinctWithCase`|`@(MyItem->DistinctWithCase())`|고유한 `itemspec` 값이 있는 항목을 반환합니다. 메타데이터는 무시됩니다. 비교 시 대/소문자가 구분됩니다.|  
+|`DistinctWithCase`|`@(MyItem->DistinctWithCase())`|고유한 `itemspec` 값이 있는 항목을 반환합니다. 메타데이터는 무시됩니다. 대/소문자를 구분하고 비교합니다.|  
 |`Reverse`|`@(MyItem->Reverse())`|항목을 역순으로 반환합니다.|  
 |`AnyHaveMetadataValue`|`@(MyItem->AnyHaveMetadataValue("MetadataName", "MetadataValue"))`|모든 항목에 지정된 메타데이터 이름 및 값이 있는지 여부를 나타내도록 `boolean`을 반환합니다. 비교 시 대/소문자가 구분되지 않습니다.|  
 |`ClearMetadata`|`@(MyItem->ClearMetadata())`|해당 메타데이터가 지워진 항목을 반환합니다. `itemspec`만 유지됩니다.|  
@@ -110,6 +104,3 @@ MSBuild 4.0부터 작업 및 대상의 코드는 프로젝트의 항목에 대�
   
 ## <a name="see-also"></a>참고 항목  
  [항목](../msbuild/msbuild-items.md)
-
-
-

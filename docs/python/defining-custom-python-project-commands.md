@@ -2,22 +2,20 @@
 title: Python 프로젝트에 대한 사용자 지정 메뉴 명령 정의
 description: 프로젝트 및 대상 파일을 편집하여 Visual Studio의 Python 프로젝트 컨텍스트 메뉴에 사용자 지정 명령을 추가하여 실행 가능 프로그램, 스크립트, 모듈, 인라인 코드 조각 및 pip를 호출할 수 있습니다.
 ms.date: 11/12/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: be8befcc549b76c8ac2b6435146c636b592b5494
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ec53a67980866ed6422fae5764bbf6a9313ef91e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957710"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Python 프로젝트에 대한 사용자 지정 명령 정의
 
@@ -46,7 +44,7 @@ Visual Studio의 특정 Python 프로젝트 템플릿은 해당 *.targets* 파�
 
 사용자 지정 명령을 익히기 위해 이 섹션에서는 *python.exe*를 사용하여 프로젝트의 시작 파일을 실행하는 간단한 에제를 연습합니다. (그러한 명령은 **디버그** > **디버깅하지 않고 시작**을 사용하는 것과 같은 효과입니다.)
 
-1. **Python 응용 프로그램** 템플릿을 사용하여 "Python-CustomCommands"라는 새 프로젝트를 만듭니다. ([빠른 시작: 프로세스를 아직 익히지 못한 경우 지침은 템플릿에서 Python 프로젝트 만들기](quickstart-02-python-in-visual-studio-project-from-template.md)를 참조하세요.)
+1. **Python 애플리케이션** 템플릿을 사용하여 "Python-CustomCommands"라는 새 프로젝트를 만듭니다. ([빠른 시작: 프로세스를 아직 익히지 못한 경우 지침은 템플릿에서 Python 프로젝트 만들기](quickstart-02-python-in-visual-studio-project-from-template.md)를 참조하세요.)
 
 1. *Python_CustomCommands.py*에서 `print("Hello custom commands")` 코드를 추가합니다.
 
@@ -146,7 +144,7 @@ Visual Studio의 특정 Python 프로젝트 템플릿은 해당 *.targets* 파�
 | 특성 | 필수 | 설명 |
 | --- | --- | --- |
 | TargetType | 예 | 포함된 대상 특성 및 해당 특성이 Arguments 특성과 함께 사용되는 방법을 지정합니다.<ul><li>**실행 파일**: 대상에 이름이 지정된 실행 파일을 실행하여 인수의 값을 마치 명령줄에서 직접 입력한 것처럼 추가합니다. 값은 인수 없이 프로그램 이름만 포함해야 합니다.</li><li>**스크립트**: 대상에 파일 이름이 포함된 *python.exe*를 실행하면 인수의 값이 이어집니다.</li><li>**모듈**: `python -m` 뒤에 대상의 모듈 이름 및 그 뒤에 인수의 값을 실행합니다.</li><li>**코드**: 대상에 포함된 인라인 코드를 실행합니다. Arguments 값은 무시됩니다.</li><li>**pip**: 대상의 명령 및 그 뒤에 인수를 사용하여 `pip`를 실행합니다. ExecuteIn은 "output"으로 설정되지만 pip는 `install` 명령을 가정하고 대상을 패키지 이름으로 사용합니다.</li></ul> |
-| 대상 | 예 | TargetType에 따라 사용할 파일 이름, 모듈 이름, 코드 또는 pip 명령입니다. |
+| Target | 예 | TargetType에 따라 사용할 파일 이름, 모듈 이름, 코드 또는 pip 명령입니다. |
 | 인수 | Optional | 대상에 부여할 인수(있는 경우)의 문자열을 지정합니다. TargetType이 `script`이면 *python.exe*가 아닌 Python 프로그램에 인수가 지정됩니다. `code` TargetType에 대해서는 무시됩니다. |
 | ExecuteIn | 예 | 명령을 실행할 환경을 지정합니다.<ul><li>**콘솔**: (기본값) 대상 및 인수를 마치 명령줄에서 직접 입력한 것처럼 실행합니다. Target이 실행되는 동안 명령 창이 표시되었다가 자동으로 닫힙니다.</li><li>**consolepause**: 콘솔과 같지만 키 누르기를 기다렸다가 창을 닫습니다.</li><li>**출력**: 대상을 실행하고 그 결과를 Visual Studio의 **출력** 창에 표시합니다. TargetType이 "pip"인 경우 Visual Studio는 Target을 패키지 이름으로 사용하고 Arguments를 추가합니다.</li><li>**repl**: [Python 대화형](python-interactive-repl-in-visual-studio.md) 창에서 대상을 실행합니다. 창의 제목에 선택적 표시 이름이 사용됩니다.</li><li>**none**: console과 같이 동작합니다.</li></ul>|
 | 시작 위치 | Optional | 명령을 실행할 폴더입니다. |

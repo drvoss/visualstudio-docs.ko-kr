@@ -1,8 +1,7 @@
 ---
-title: IDebugDocumentHelper::GetDebugApplicationNode | Microsoft Docs
+title: 'Idebugdocumenthelper:: Getdebugapplicationnode | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 27d1fb09698cffa4826ab35b36e3ae315a12ba74
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 10740c3489b617b1685ad222cac7c158e0196c4d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726043"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783086"
 ---
 # <a name="idebugdocumenthelpergetdebugapplicationnode"></a>IDebugDocumentHelper::GetDebugApplicationNode
-이 문서에 해당 디버그 응용 프로그램 노드를 반환 합니다.  
+이 문서에 해당 하는 디버그 응용 프로그램 노드를 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetDebugApplicationNode(  
    IDebugApplicationNode**  ppdan  
 );  
@@ -48,7 +47,7 @@ HRESULT GetDebugApplicationNode(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 문서에 해당 디버그 응용 프로그램 노드를 반환 합니다.  
+ 이 문서에 해당 하는 디버그 응용 프로그램 노드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugDocumentHelper 인터페이스](../../winscript/reference/idebugdocumenthelper-interface.md)

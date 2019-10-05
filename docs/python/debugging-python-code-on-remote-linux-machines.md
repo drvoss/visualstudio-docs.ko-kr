@@ -2,26 +2,24 @@
 title: 원격 Linux 컴퓨터에서 Python 코드 디버그
 description: 필요한 구성 단계, 보안 및 문제 해결을 포함해서 Visual Studio를 사용하여 원격 Linux 컴퓨터에서 실행 중인 Python 코드를 디버그합니다.
 ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4c14fb14a8941895fab473952908e6aefa2e2f14
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e718a5610d9539e3e2a89af0a9de502ebfd168a7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62962547"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Linux에서 Python 코드 원격 디버그
 
-Visual Studio는 Windows 컴퓨터에서 Python 응용 프로그램을 로컬 및 원격으로 시작하고 디버그할 수 있습니다([Remote Debugging](../debugger/remote-debugging.md)(원격 디버깅) 참조). 또한 [ptvsd 라이브러리](https://pypi.python.org/pypi/ptvsd)를 사용하여 CPython 이외의 다른 운영 체제, 디바이스 또는 Python 구현에서 원격으로 디버그할 수도 있습니다.
+Visual Studio는 Windows 컴퓨터에서 Python 애플리케이션을 로컬 및 원격으로 시작하고 디버그할 수 있습니다([Remote Debugging](../debugger/remote-debugging.md)(원격 디버깅) 참조). 또한 [ptvsd 라이브러리](https://pypi.python.org/pypi/ptvsd)를 사용하여 CPython 이외의 다른 운영 체제, 디바이스 또는 Python 구현에서 원격으로 디버그할 수도 있습니다.
 
 ptvsd를 사용하는 경우 디버그되는 Python 코드는 Visual Studio에서 연결할 수 있는 디버그 서버를 호스팅합니다. 이 호스팅을 사용하려면 서버를 가져오고 사용할 수 있도록 코드를 약간 수정해야 하며, TCP 연결을 허용하기 위해 원격 컴퓨터에 네트워크 또는 방화벽 구성이 필요할 수 있습니다.
 
@@ -67,7 +65,7 @@ Azure VM에 대한 방화벽 규칙을 만드는 방법에 대한 자세한 내�
         print('Nope. The number I was thinking of was {0}'.format(number))
     ```
 
-1. `pip3 install ptvsd`를 사용하여 사용자 환경에 `ptvsd` 패키지를 설치합니다. 
+1. `pip3 install ptvsd`를 사용하여 사용자 환경에 `ptvsd` 패키지를 설치합니다.
    >[!NOTE]
    >문제 해결에 필요한 경우를 대비하여 ptvsd 버전을 기록해 두는 것이 좋습니다. [ptvsd 목록](https://pypi.python.org/pypi/ptvsd)은 사용 가능한 버전도 보여줍니다.
 

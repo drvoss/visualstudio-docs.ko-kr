@@ -1,14 +1,9 @@
 ---
 title: 코어 뷰 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.cores
 helpviewer_keywords:
@@ -17,18 +12,18 @@ ms.assetid: e47af672-9785-4899-bd45-4d9dda3c396f
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6c609745e0df5ece6d3de9be718851b45110d4fb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 869980fe7bbb773d566dffd38088b003e3a97a3d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145645"
 ---
 # <a name="cores-view"></a>코어 뷰
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-코어 뷰에는 스레드 실행이 논리적 프로세서 코어에 매핑된 방법을 보여줍니다. 서버 응용 프로그램을 작성할 때 이 뷰를 통해 스레드 선호도 또는 스레드 풀 관리를 사용하여 캐시 성능을 최적화할 수 있습니다. 또한 스레드 선호도를 사용해서 코어 간 마이그레이션 문제가 더 심각해질 수 있는 경우를 조사할 수 있습니다. 코어 뷰에는 그래프와 범례의 두 부분이 포함됩니다.  
+코어 뷰에는 스레드 실행이 논리적 프로세서 코어에 매핑된 방법을 보여줍니다. 서버 애플리케이션을 작성할 때 이 뷰를 통해 스레드 선호도 또는 스레드 풀 관리를 사용하여 캐시 성능을 최적화할 수 있습니다. 또한 스레드 선호도를 사용해서 코어 간 마이그레이션 문제가 더 심각해질 수 있는 경우를 조사할 수 있습니다. 코어 뷰에는 그래프와 범례의 두 부분이 포함됩니다.  
   
  그래프에서 Y축에는 논리 코어가 표시되고 X축에는 시간이 표시됩니다. 그래프의 모든 스레드에는 시간 경과에 따라 코어 간 이동을 추적할 수 있도록 고유 색상이 포함됩니다. 범례 영역에서 스레드를 선택하면 이 그래프에서 스레드를 필터링할 수 있습니다.  
   
@@ -38,6 +33,3 @@ ms.locfileid: "51746308"
  [동시성 시각화 도우미](../profiling/concurrency-visualizer.md)   
  [사용률 뷰](../profiling/utilization-view.md)   
  [스레드 뷰](../profiling/threads-view-parallel-performance.md)
-
-
-

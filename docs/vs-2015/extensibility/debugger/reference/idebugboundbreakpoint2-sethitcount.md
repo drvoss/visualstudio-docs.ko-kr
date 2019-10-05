@@ -1,14 +1,9 @@
 ---
 title: IDebugBoundBreakpoint2::SetHitCount | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugBoundBreakpoint2::SetHitCount
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 8145d875-26b1-4049-a2a2-e7d3d7f4735f
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ced00e9dcb05d75267d64a316732dec8f0f59ffd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 292e36878594841f200f744f2809256b05e84d94
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758792"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156195"
 ---
 # <a name="idebugboundbreakpoint2sethitcount"></a>IDebugBoundBreakpoint2::SetHitCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -56,7 +51,6 @@ int SetHitCount( 
   
  이 메서드는 일반적으로이 중단점에서 현재 적중된 횟수를 업데이트 하려면 디버그 엔진에 의해 호출 됩니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
  [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)
-

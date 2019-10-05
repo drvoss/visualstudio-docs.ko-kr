@@ -1,27 +1,22 @@
 ---
 title: 그래픽 이벤트 목록 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.eventlist
 ms.assetid: a1252e19-b27d-4dc7-a16b-fdac894c1f0e
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 497ee3fe1c588c84195a544179d0d2955b1932b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 137f3f91922a16b0e3f2a7e459a72c4381162f2e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766221"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704630"
 ---
 # <a name="graphics-event-list"></a>그래픽 이벤트 목록
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Visual Studio Graphics Analyzer의 그래픽 이벤트 목록을 사용하여 �
 |Direct3D 12 큐|색|  
 |-----------------------|-----------|  
 |렌더링 큐|녹색|  
-|계산 큐|노랑|  
+|컴퓨팅 큐|노랑|  
 |복사 큐|주황|  
   
  Direct3D 11은 여러 큐를 표시하지 않으므로 Direct3D 11 앱의 캡처 작업을 수행할 대 이벤트 목록의 이벤트가 색으로 구분되지 않습니다.  
@@ -59,7 +54,7 @@ Visual Studio Graphics Analyzer의 그래픽 이벤트 목록을 사용하여 �
   
 ##### <a name="to-change-the-event-list-view-mode"></a>이벤트 목록 보기 모드를 변경하려면  
   
--   **그래픽 이벤트 목록** 창의 이벤트 목록 위에 **보기** 드롭다운이 있어서 **타임라인** 보기 또는 **그리기 호출** 보기 중에서 선택할 수 있습니다.  
+- **그래픽 이벤트 목록** 창의 이벤트 목록 위에 **보기** 드롭다운이 있어서 **타임라인** 보기 또는 **그리기 호출** 보기 중에서 선택할 수 있습니다.  
   
 ### <a name="filtering-events"></a>이벤트 필터링  
  **그래픽 이벤트 목록** 창의 오른쪽 맨 위 모퉁이에 있는 검색 상자를 사용하여 이름에 특정 키워드가 포함된 이벤트만 포함하도록 이벤트 목록을 필터링할 수 있습니다. 이전 그림에서처럼 `Vertex`와 같은 키워드 하나를 지정하거나 `Draw;Primitive`와 같이 세미콜론으로 구분된 목록을 사용하여 여러 키워드를 지정할 수 있습니다. 그러면 이름에 `Draw` 또는 `Primitive` 가 포함된 이벤트를 찾게 됩니다. 검색어는 공백을 구분합니다. 예를 들어 `VSSet` 와 `VS Set` 는 다른 검색어입니다. 따라서 검색어는 주의 깊게 입력해야 합니다.  
@@ -88,17 +83,17 @@ Visual Studio Graphics Analyzer의 그래픽 이벤트 목록을 사용하여 �
 ### <a name="user-defined-events-in-direct3d-12"></a>Direct3D 12의 사용자 정의 이벤트  
  Direct3D 12에서 그룹 및 표식을 만들려면 이 섹션에 설명된 API를 사용합니다. 아래 표에서는 명령 큐나 명령 목록에서 이벤트를 표시할지에 따라 사용할 수 있는 API를 간략히 설명합니다.  
   
-|API 설명|[ID3D12CommandQueue](https://msdn.microsoft.com/library/dn788627.aspx)|[ID3D12GraphicsCommandList](https://msdn.microsoft.com/library/dn903537.aspx)|  
+|API 설명|[ID3D12CommandQueue](/windows/desktop/api/d3d12/nn-d3d12-id3d12commandqueue)|[ID3D12GraphicsCommandList](/windows/desktop/api/d3d12/nn-d3d12-id3d12graphicscommandlist)|  
 |---------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------|  
-|사용자 정의 이벤트 가용성 확인|[PIXGetStatus](http://msdn.microsoft.com/en-us/f7ebd985-fb5d-46d7-abec-099df4b9be0e)|[PIXGetStatus](http://msdn.microsoft.com/en-us/1046ac43-a0a3-42bf-bae8-14aa72fa7567)|  
-|이벤트 그룹 시작|[PIXBeginEvent](http://msdn.microsoft.com/en-us/5f51fff7-f313-4558-965b-2a443653cd7b)|[PIXBeginEvent](http://msdn.microsoft.com/en-us/4ddb3311-b9b5-449a-bbfb-7634e0d56e87)|  
-|이벤트 그룹 종료|[PIXEndEvent](http://msdn.microsoft.com/en-us/fb526bf2-c17d-4a2a-8665-3b577a0f7fba)|[PIXEndEvent](http://msdn.microsoft.com/en-us/a3cd34a9-9dd9-40e1-ae86-0214b25ff185)|  
-|이벤트 표식 만들기|[PIXSetMarker](http://msdn.microsoft.com/en-us/0caf49ed-c99d-405e-89f4-0c887b8474ad)|[PIXSetMarker](http://msdn.microsoft.com/en-us/6610e5b9-a0c5-4236-b551-b6eb9fac64c1)|  
+|사용자 정의 이벤트 가용성 확인|[PIXGetStatus](https://msdn.microsoft.com/f7ebd985-fb5d-46d7-abec-099df4b9be0e)|[PIXGetStatus](https://msdn.microsoft.com/1046ac43-a0a3-42bf-bae8-14aa72fa7567)|  
+|이벤트 그룹 시작|[PIXBeginEvent](https://msdn.microsoft.com/5f51fff7-f313-4558-965b-2a443653cd7b)|[PIXBeginEvent](https://msdn.microsoft.com/4ddb3311-b9b5-449a-bbfb-7634e0d56e87)|  
+|이벤트 그룹 종료|[PIXEndEvent](https://msdn.microsoft.com/fb526bf2-c17d-4a2a-8665-3b577a0f7fba)|[PIXEndEvent](https://msdn.microsoft.com/a3cd34a9-9dd9-40e1-ae86-0214b25ff185)|  
+|이벤트 표식 만들기|[PIXSetMarker](https://msdn.microsoft.com/0caf49ed-c99d-405e-89f4-0c887b8474ad)|[PIXSetMarker](https://msdn.microsoft.com/6610e5b9-a0c5-4236-b551-b6eb9fac64c1)|  
   
 ### <a name="user-defined-events-in-direct3d-11-and-earlier"></a>Direct3D 11 이하의 사용자 정의 이벤트  
  Direct3D 11 이하에서 그룹 및 표식을 만들려면 이 섹션에 설명된 API를 사용합니다. 아래 표에서는 Direct3D 11의 여러 버전 및 Direct3D 이전 버전에서 사용할 수 있는 API를 간략히 설명합니다.  
   
-|API 설명|[ID3D11DeviceContext2](http://msdn.microsoft.com/library/windows/desktop/dn280498.aspx) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](http://go.microsoft.com/fwlink/p/?LinkID=250967) (Direct3D 11.1)|D3DPerf_ API 패밀리(Direct3D 11.0 및 이전)|  
+|API 설명|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](http://go.microsoft.com/fwlink/p/?LinkID=250967) (Direct3D 11.1)|D3DPerf_ API 패밀리(Direct3D 11.0 및 이전)|  
 |---------------------|---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|--------------------------------------------------------|  
 |이벤트 그룹 시작|`BeginEventInt`|`BeginEvent`|`D3DPerf_BeginEvent`|  
 |이벤트 그룹 종료|`EndEventInt`|`EndEvent`|`D3DPerf_EndEvent`|  
@@ -107,7 +102,4 @@ Visual Studio Graphics Analyzer의 그래픽 이벤트 목록을 사용하여 �
  사용 중인 Direct3D 버전에서 지원하는 API 중 하나를 사용할 수 있습니다. 예를 들어 Direct3D 11.1 API를 대상으로 하는 경우 `SetMarker` 또는 `D3DPerf_SetMarker` 를 사용하여 이벤트 표식을 만들 수 있지만 `SetMarkerInt` 는 Direct3D 11.2에서만 사용할 수 있으므로 사용하지 마세요. 그리고 다른 버전의 Direct3D를 지원하는 API를 동일한 앱에서 함께 사용할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [연습: 장치 상태로 인해 누락된 개체](../debugger/walkthrough-missing-objects-due-to-device-state.md)
-
-
-
+ [연습: 디바이스 상태로 인해 누락된 개체](../debugger/walkthrough-missing-objects-due-to-device-state.md)

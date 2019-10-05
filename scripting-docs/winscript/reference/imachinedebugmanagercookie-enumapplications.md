@@ -2,7 +2,6 @@
 title: IMachineDebugManagerCookie::EnumApplications | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 927457fca1972148798b543dceefa19e107f45d6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 76d8e53d586a812f4a8416a1515d7011dd5a1720
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977619"
 ---
 # <a name="imachinedebugmanagercookieenumapplications"></a>IMachineDebugManagerCookie::EnumApplications
-실행 중인 응용 프로그램의 현재 목록의 열거자를 반환 합니다.  
+현재 실행 중인 응용 프로그램 목록의 열거자를 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT EnumApplications(  
    IEnumRemoteDebugApplications**  ppeda  
 );  
@@ -48,7 +47,7 @@ HRESULT EnumApplications(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 현재 실행 중인 응용 프로그램 목록이의 열거자를 반환 합니다. IDE 디버거는이 메서드를 사용 하 여 표시 하 고 디버깅 목적으로 응용 프로그램을 연결 합니다.  
+ 이 메서드는 현재 실행 중인 응용 프로그램 목록의 열거자를 반환 합니다. 디버거 IDE이이 메서드를 사용 하 여 표시 하 고 디버깅을 위해 응용 프로그램을 연결 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IMachineDebugManagerCookie 인터페이스](../../winscript/reference/imachinedebugmanagercookie-interface.md)

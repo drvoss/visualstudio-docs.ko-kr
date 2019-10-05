@@ -1,26 +1,21 @@
 ---
 title: 이벤트 설명 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], events
 ms.assetid: 09f61652-7e16-4bb0-8055-f61a84bf384e
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c9ed1f59624c8fa334c99be7ec44672746902a3e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5aff88047d6b1f79544af927751d7a053eeda218
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769917"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152827"
 ---
 # <a name="event-descriptions"></a>이벤트 설명
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +24,7 @@ ms.locfileid: "51769917"
   
 ## <a name="events-and-the-reasons-for-their-use"></a>이벤트 및 용도 대 한 이유  
   
-|이벤트(event)|설명|  
+|이벤트|설명|  
 |-----------|-----------------|  
 |문서 이벤트를 활성화 합니다.|디버그 엔진 (DE)가 IDE를 열거나 전경으로 문서를 가져올 때 발생 합니다.|  
 |바인딩된 중단점이 나 중단점 오류 이벤트|전송 중단점이 바인딩된 또는 때 중단점을 바인딩할 수 없으면 오류가 반환 됩니다.|  
@@ -51,6 +46,5 @@ ms.locfileid: "51769917"
 |스레드 이름 변경 이벤트|사용자 스레드 이름을 변경할 때 보냅니다.|  
 |프로그램 이름 변경 이벤트|사용자가 프로그램의 이름을 변경할 때 보냅니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [이벤트 보내기](../../extensibility/debugger/sending-events.md)
-

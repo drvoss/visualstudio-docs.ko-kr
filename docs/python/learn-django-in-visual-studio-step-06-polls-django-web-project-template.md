@@ -3,22 +3,20 @@ title: Visual Studio 6단계, 설문 조사 프로젝트 템플릿에서 Django 
 titleSuffix: ''
 description: Visual Studio 프로젝트 컨텍스트에서 Django 기본 사항을 검토하는 연습 과정으로, 관리 사용자 지정과 같은 설문 조사 Django 웹 프로젝트 템플릿의 기능을 구체적으로 설명합니다.
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ecc0637495b484ae06cb0f18e45ba329c7fa3407
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5e9220df4f9abdb806495e6108fb6039b28e0b7b
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062498"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254376"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>6단계: 설문 조사 Django 웹 프로젝트 템플릿 사용
 
@@ -114,9 +112,9 @@ class Choice(models.Model):
         return self.text
 ```
 
-여기서 볼 수 있듯이 Poll은 `text` 필드에서 설명을 유지 관리하고 `pub_date`에서 게시 날짜를 유지 관리합니다. 이러한 필드는 Poll과 관련하여 데이터베이스에 있는 유일한 필드이며, `total_votes` 필드는 런타임에 계산됩니다.
+여기서 볼 수 있듯이 Poll은 `text` 필드에서 설명을 유지 관리하고 `pub_date`에서 게시 날짜를 유지 관리합니다. 이러한 필드만 Poll과 관련해서 데이터베이스에 있고 `total_votes` 필드는 런타임에 계산됩니다.
 
-Choice는 `poll` 필드를 통해 Poll과 관련되며, `text`에 설명을 포함하고, `votes`에서 해당 선택 사항의 개수를 유지 관리합니다. `votes_percentage` 필드는 런타임에 계산되며 데이터베이스에 없습니다.
+Choice는 `poll` 필드를 통해 Poll과 관련되며, `text`에 설명을 포함하고, `votes`에서 해당 선택 사항의 개수를 유지 관리합니다. `votes_percentage` 필드는 런타임에 계산되며 데이터베이스에는 없습니다.
 
 전체 필드 형식 목록은 `CharField`(제한된 텍스트) `TextField`(무제한 텍스트), `EmailField`, `URLField`, `DateTimeField`, `IntegerField`, `DecimalField`, `BooleanField`, `ForeignKey` 및 `ManyToMany`입니다. 각 필드는 `max_length`와 같은 몇 가지 특성을 사용합니다. `blank=True` 특성은 필드가 선택 사항임을 의미하고, `null=true`는 값이 선택 사항임을 의미합니다. 값을 데이터 값/표시 값 튜플 배열의 값으로 제한하는 `choices` 특성도 있습니다. Django 설명서의 [Model field reference](https://docs.djangoproject.com/en/2.0/ref/models/fields/)(모델 필드 참조)를 참조하세요.
 
@@ -196,7 +194,7 @@ Django는 지정된 데이터베이스에 적용된 마이그레이션을 추적
 
 대답: 모델이 데이터베이스의 내용과 일치하지 않을 경우 Django가 런타임에 실패하고 관련 예외가 발생합니다. 예를 들어 이전 섹션에 표시된 모델 변경 내용을 마이그레이션하지 않을 경우 **no such column: app_poll.author** 오류가 표시됩니다.
 
-![모델 변경 내용이 마이그레이션되지 않은 경우 표시되는 오류](media/django/step06-exception-when-forgetting-to-migrate.png).
+![모델 변경 내용이 마이그레이션되지 않은 경우 표시되는 오류](media/django/step06-exception-when-forgetting-to-migrate.png)을 선택합니다.
 
 ### <a name="question-why-doesnt-solution-explorer-show-newly-generated-scripts-after-running-django-make-migrations"></a>질문: Django Make Migrations(Django 마이그레이션 만들기)를 실행한 후 솔루션 탐색기에 새로 생성된 스크립트가 표시되지 않는 이유는 무엇인가요?
 
@@ -376,6 +374,6 @@ admin.site.register(Poll, PollAdmin)
 
 - *tests.py*에 단위 테스트를 작성합니다. Visual Studio 프로젝트 템플릿은 이러한 테스트에 대한 시작점을 제공하며, 자세한 내용은 Django 설명서의 [첫 번째 Django 앱 작성, 5부 - 테스트](https://docs.djangoproject.com/en/2.0/intro/tutorial05/) 및 [Django의 테스트](https://docs.djangoproject.com/en/2.0/topics/testing/)에서 확인할 수 있습니다.
 
-- 앱을 SQLite에서 PostgreSQL, MySQL 및 SQL Server와 같은 프로덕션 수준 데이터 저장소(모두 Azure에서 호스트할 수 있음)로 변경합니다. [When to use SQLite](https://www.sqlite.org/whentouse.html)(SQLite를 사용하는 경우)(sqlite.org)에 설명된 대로 SQLite는 일별 방문 횟수가 100K보다 적은, 트래픽이 낮거나 중간 정도인 사이트에서 제대로 작동하지만 더 큰 볼륨에는 권장되지 않습니다. 또한 단일 컴퓨터로 제한되므로 부하 분산 및 지역에서 복제와 같은 모든 다중 서버 시나리오에서는 사용할 수 없습니다. Django의 다른 데이터베이스 지원에 대한 자세한 내용은 [데이터베이스 설치](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup)를 참조하세요. 또한 [Python용 Azure SDK](azure-sdk-for-python.md)를 사용하여 테이블 및 Blob과 같은 Azure Storage 서비스 작업을 수행할 수도 있습니다.
+- 앱을 SQLite에서 PostgreSQL, MySQL 및 SQL Server와 같은 프로덕션 수준 데이터 저장소(모두 Azure에서 호스트할 수 있음)로 변경합니다. [When to use SQLite](https://www.sqlite.org/whentouse.html)(SQLite를 사용하는 경우)(sqlite.org)에 설명된 대로 SQLite는 일별 방문 횟수가 100K보다 적은, 트래픽이 낮거나 중간 정도인 사이트에서 제대로 작동하지만 더 큰 볼륨에는 권장되지 않습니다. 또한 단일 컴퓨터로 제한되므로 부하 분산 및 지역에서 복제와 같은 모든 다중 서버 시나리오에서는 사용할 수 없습니다. Django의 다른 데이터베이스 지원에 대한 자세한 내용은 [데이터베이스 설치](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup)를 참조하세요. 또한 [Python용 Azure SDK](/azure/python/)를 사용하여 테이블 및 Blob과 같은 Azure 스토리지 서비스 작업을 수행할 수도 있습니다.
 
 - Azure DevOps와 같은 서비스에서 지속적인 통합/지속적인 배포 파이프라인을 설정합니다. Azure Repos, GitHub 등을 통한 소스 제어 작업 외에도 Azure DevOps Project를 구성하여 릴리스의 사전 필수 구성 요소로 단위 테스트를 자동으로 실행하고, 프로덕션 환경에 배포하기 전에 추가 테스트를 위해 준비 서버에 배포하도록 파이프라인을 구성할 수 있습니다. 또한 Azure DevOps는 App Insights와 같은 모니터링 솔루션과 통합되며 agile 계획 도구를 사용하여 전체 주기를 닫습니다. 자세한 내용은 [Azure DevOps 프로젝트로 Python용 CI/CD 파이프라인 만들기](/azure/devops-project/azure-devops-project-python?view=vsts) 및 일반적인 [Azure DevOps 설명서](/azure/devops/?view=vsts)도 참조하세요.

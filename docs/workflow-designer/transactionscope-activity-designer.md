@@ -2,21 +2,20 @@
 title: TransactionScope 활동 디자이너-워크플로 디자이너
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.TransactionScope.UI
 ms.assetid: 8d7ebfc6-7478-4888-b3b0-b14f296096af
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e823ea0fa716545dcc2cfba3df3ba93118e65f6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e84312518c19ef2a041091c5e2439dd7fb312c69
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433970"
 ---
 # <a name="transactionscope-activity-designer"></a>TransactionScope 활동 디자이너
 
@@ -34,7 +33,7 @@ ms.locfileid: "53873715"
 
 다음 표에서는 <xref:System.Activities.Statements.TransactionScope> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. 합니다 <xref:System.Activities.Activity.DisplayName%2A> 고 <xref:System.Activities.Statements.TransactionScope.Body%2A> 속성을 워크플로 디자이너 화면에서 편집할 수 있습니다. 그러나 다른 속성은 속성 표에서 편집해야 합니다.
 
-|속성 이름|필수|용도|
+|속성 이름|필수|사용|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.TransactionScope> 활동의 선택적 이름입니다. 기본값은 TransactionScope입니다. <xref:System.Activities.Activity.DisplayName%2A> 값은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
 |<xref:System.Activities.Statements.TransactionScope.Body%2A>|True|단일 트랜잭션에서 실행할 활동을 지정합니다. 추가할를 <xref:System.Activities.Statements.TransactionScope.Body%2A> 활동에서 활동을 **도구 상자** 에 **본문** 상자에 **TransactionScope** 활동 디자이너를 "드롭 작업 힌트 텍스트가 있는 여기에 "입니다.|

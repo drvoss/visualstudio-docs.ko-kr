@@ -1,14 +1,9 @@
 ---
 title: 디버거 보안 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: d4fc3c43-e844-419c-8dbb-551cc2a9b09e
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7f8166c7aea86b0decad84631f8c98054ee69253
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c1c56b3081f9e74ff9ab864639772c18bd758df6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765363"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686790"
 ---
 # <a name="debugger-security"></a>디버거 보안
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ ms.locfileid: "51765363"
 ### <a name="managed-debugging-security"></a>관리되는 디버깅 보안  
  다음은 모든 관리되는 디버깅에 적용되는 몇 가지 일반적인 권장 사항입니다.  
   
-- 신뢰할 수 없는 사용자의 프로세스에 연결하는 경우에는 주의해야 합니다. 이러한 프로세스에 연결하면 해당 프로세스를 신뢰하는 것으로 간주됩니다. 신뢰할 수 없는 사용자의 프로세스에 연결하려고 하면 이 프로세스에 연결할지 여부를 묻는 보안 경고 확인 대화 상자가 나타납니다. "신뢰할 수 있는 사용자"에는 **aspnet**, **localsystem**, **networkservice**및 **localservice**와 같이 .NET Framework가 설치된 컴퓨터에 일반적으로 정의되는 표준 사용자 집합과 현재 사용자가 포함됩니다. 자세한 내용은 참조 하세요. [보안 경고: 신뢰할 수 없는 사용자가 소유한 프로세스에 연결 하면 위험할 수 있습니다. 다음 정보가 의심 스 럽 또는 확실 하지 않은 경우이 프로세스에 연결 하지 않는](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)합니다.  
+- 신뢰할 수 없는 사용자의 프로세스에 연결하는 경우에는 주의해야 합니다. 이러한 프로세스에 연결하면 해당 프로세스를 신뢰하는 것으로 간주됩니다. 신뢰할 수 없는 사용자의 프로세스에 연결하려고 하면 이 프로세스에 연결할지 여부를 묻는 보안 경고 확인 대화 상자가 나타납니다. "신뢰할 수 있는 사용자"에는 **aspnet**, **localsystem**, **networkservice**및 **localservice**와 같이 .NET Framework가 설치된 컴퓨터에 일반적으로 정의되는 표준 사용자 집합과 현재 사용자가 포함됩니다. 자세한 내용은 참조 하세요. [보안 경고: 신뢰할 수 없는 사용자가 소유한 프로세스에 연결하면 위험할 수 있습니다. 다음 정보가 의심 스 럽 또는 확실 하지 않은 경우이 프로세스에 연결 하지 않는](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015)합니다.  
   
 - 인터넷에서 프로젝트를 다운로드하여 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에 로드하는 경우 주의해야 합니다. 이는 디버깅을 하지 않는 경우라 해도 매우 위험한 작업입니다. 이러한 작업은 프로젝트와 여기에 포함된 코드를 신뢰할 수 있는 경우에만 수행해야 합니다.  
   
@@ -65,13 +60,13 @@ ms.locfileid: "51765363"
  자세한 내용은 [원격 디버깅](../debugger/remote-debugging.md)합니다.  
   
 ### <a name="web-services-debugging-security"></a>웹 서비스 디버깅 보안  
- 디버깅은 로컬로 수행하는 것이 더 안전하지만 웹 서버에 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]가 설치되어 있지 않은 경우에는 로컬 디버깅을 수행할 수 없습니다. 일반적으로 웹 서비스는 개발 과정을 제외하고는 원격으로 디버깅되므로 원격 디버깅 보안에 적용되는 권장 사항이 웹 서비스 디버깅에도 적용됩니다. 다음은 추가로 적용되는 몇 가지 최선의 구현 방법입니다. 자세한 내용은 [Debugging XML Web Services](http://msdn.microsoft.com/en-us/c900b137-9fbd-4f59-91b5-9c2c6ce06f00)을 참조하세요.  
+ 디버깅은 로컬로 수행하는 것이 더 안전하지만 웹 서버에 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 가 설치되어 있지 않은 경우에는 로컬 디버깅을 수행할 수 없습니다. 일반적으로 웹 서비스는 개발 과정을 제외하고는 원격으로 디버깅되므로 원격 디버깅 보안에 적용되는 권장 사항이 웹 서비스 디버깅에도 적용됩니다. 다음은 추가로 적용되는 몇 가지 최선의 구현 방법입니다. 자세한 내용은 [Debugging XML Web Services](https://msdn.microsoft.com/c900b137-9fbd-4f59-91b5-9c2c6ce06f00)을 참조하세요.  
   
--   손상된 웹 서버에서는 디버깅을 활성화하지 말아야 합니다.  
+- 손상된 웹 서버에서는 디버깅을 활성화하지 말아야 합니다.  
   
--   웹 서버를 디버깅하기 전에 이 서버가 안전한지 확인해야 합니다. 웹 서버가 안전한지 확인할 수 없으면 해당 서버를 디버깅하지 말아야 합니다.  
+- 웹 서버를 디버깅하기 전에 이 서버가 안전한지 확인해야 합니다. 웹 서버가 안전한지 확인할 수 없으면 해당 서버를 디버깅하지 말아야 합니다.  
   
--   인터넷에 노출되어 있는 웹 서비스를 디버깅할 때는 특히 주의해야 합니다.  
+- 인터넷에 노출되어 있는 웹 서비스를 디버깅할 때는 특히 주의해야 합니다.  
   
 ### <a name="external-components"></a>외부 구성 요소  
  특히 자신이 직접 코드를 작성하지 않은 경우 프로그램에서 상호 작용하는 외부 구성 요소의 신뢰 상태를 확인해야 합니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 또는 디버거에서 사용할 수 있는 구성 요소에 대해서도 이를 확인해야 합니다.  
@@ -79,19 +74,14 @@ ms.locfileid: "51765363"
 ### <a name="symbols-and-source-code"></a>기호 및 소스 코드  
  특히 보안과 관련하여 주의해야 할 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 도구에는 다음과 같은 두 가지가 있습니다.  
   
-- 소스 코드 리포지토리에서 소스 코드의 버전을 제공하는 소스 서버. 이는 현재 버전의 프로그램 소스 코드가 없는 경우에 유용합니다. [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md).  
+- 소스 코드 리포지토리에서 소스 코드의 버전을 제공하는 소스 서버. 이는 현재 버전의 프로그램 소스 코드가 없는 경우에 유용합니다. [보안 경고: 디버거가 신뢰할 수 없는 명령을 실행해야 합니다](../debugger/security-warning-debugger-must-execute-untrusted-command.md).  
   
 - 시스템 호출 과정에서 충돌을 디버깅하는 데 필요한 기호를 제공하기 위해 사용되는 기호 서버.  
   
-  참조 [기호 (.pdb)을 지정 하 고 소스 파일](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+  [기호 파일(.pdb) 및 원본 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)을 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
  [디버거 설정 및 준비](../debugger/debugger-settings-and-preparation.md)   
  [Debugger Basics](../debugger/debugger-basics.md) (디버거 기본 사항)  
- [보안 경고: 신뢰할 수 없는 사용자가 소유한 프로세스에 연결하면 위험할 수 있습니다. 다음 정보가 의심 스 럽 또는 확실 하지 않은 경우이 프로세스에 연결 하지 않습니다](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)   
- [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
-
-
-
-
-
+ [보안 경고: 신뢰할 수 없는 사용자가 소유한 프로세스에 연결하면 위험할 수 있습니다. 아래의 정보가 의심스럽거나 잘 모르겠으면 이 프로세스에 연결하지 않습니다](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015)   
+ [보안 경고: 디버거가 신뢰할 수 없는 명령을 실행해야 합니다.](../debugger/security-warning-debugger-must-execute-untrusted-command.md)

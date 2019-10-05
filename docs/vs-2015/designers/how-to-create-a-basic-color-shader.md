@@ -1,25 +1,20 @@
 ---
-title: '방법: 기본 색 셰이더 만들기 | Microsoft 문서'
-ms.custom: ''
+title: '방법: 기본 색 셰이더 만들기 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: c301328a-079a-49e8-b688-4749c01657c0
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3bcbbb8ede9f30ed1c0340098ffb358cf5715487
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 59259d8186803d966e79f27012e6be6c22b47dd8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813217"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414714"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>방법: 기본 색 셰이더 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,13 +23,13 @@ ms.locfileid: "49813217"
   
  이 문서는 다음 활동을 보여 줍니다.  
   
--   그래프에서 노드 제거  
+- 그래프에서 노드 제거  
   
--   그래프에 노드 추가  
+- 그래프에 노드 추가  
   
--   노드 속성 설정  
+- 노드 속성 설정  
   
--   노드 연결  
+- 노드 연결  
   
 ## <a name="creating-a-flat-color-shader"></a>단색 셰이더 만들기  
  최종 출력 색에 대한 RGB 색 상수의 색 값을 작성하여 최종 색 셰이더를 구현할 수 있습니다.  
@@ -56,17 +51,14 @@ ms.locfileid: "49813217"
    다음 그림은 정육면체에 적용된 셰이더의 완료된 셰이더 그래프 및 미리 보기를 보여 줍니다.  
   
 > [!NOTE]
->  그림에서 주황색은 셰이더 효과를 더 잘 보여 주기 위해 지정되었습니다.  
+> 그림에서 주황색은 셰이더 효과를 더 잘 보여 주기 위해 지정되었습니다.  
   
  ![셰이더 그래프 및 3D 모델에 대한 결과](../designers/media/digit-flat-color-effect.png "Digit-Flat-Color-Effect")  
   
  일부 셰이더의 경우 특정 도형을 사용하면 미리 보기가 더 잘 표시될 수 있습니다. 셰이더 디자이너에서 셰이더를 미리 보는 방법에 대한 자세한 내용은 [셰이더 디자이너](../designers/shader-designer.md)를 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
- [방법: 3D 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+ [방법: 3 차원 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [방법: 셰이더 내보내기](../designers/how-to-export-a-shader.md)   
  [셰이더 디자이너](../designers/shader-designer.md)   
  [셰이더 디자이너 노드](../designers/shader-designer-nodes.md)
-
-
-

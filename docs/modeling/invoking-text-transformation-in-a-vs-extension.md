@@ -1,24 +1,24 @@
 ---
-title: VS 확장에서 텍스트 변환 호출
+title: VS 확장명에서 텍스트 변형 호출
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: ca540b8ada32eac3afb6fcc4cb8d8da7204052b4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7bf32a1722ec8029840566b7602ba78f84adb7ec
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915428"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870514"
 ---
-# <a name="invoking-text-transformation-in-a-vs-extension"></a>VS 확장에서 텍스트 변환 호출
-메뉴 명령 등 Visual Studio 확장을 작성 하는 경우 또는 [도메인별 언어](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), 텍스트 템플릿 변환에 텍스트 템플릿 서비스를 사용할 수 있습니다. <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> 서비스를 가져와서 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>으로 캐스팅합니다.
+# <a name="invoke-text-transformation-in-a-visual-studio-extension"></a>Visual Studio 확장에서 텍스트 변환 호출
 
-## <a name="getting-the-text-templating-service"></a>텍스트 템플릿 서비스 가져오기
+메뉴 명령 또는 [도메인별 언어](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)와 같은 Visual Studio 확장을 작성 하는 경우 텍스트 템플릿 서비스를 사용 하 여 텍스트 템플릿을 변환할 수 있습니다. [Stexttemplating](/previous-versions/visualstudio/visual-studio-2012/bb932394(v=vs.110)) 를 가져와서 [itexttemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110))로 캐스팅 합니다.
+
+## <a name="get-the-text-templating-service"></a>텍스트 템플릿 서비스 가져오기
 
 ```csharp
 using Microsoft.VisualStudio.TextTemplating;
@@ -34,16 +34,17 @@ ITextTemplating t4 = serviceProvider.GetService(typeof(STextTemplating)) as ITex
 string result = t4.ProcessTemplate(filePath, System.IO.File.ReadAllText(filePath));
 ```
 
-## <a name="passing-parameters-to-the-template"></a>템플릿에 매개 변수 전달
+## <a name="pass-parameters-to-the-template"></a>템플릿에 매개 변수 전달
+
  템플릿에 매개 변수를 전달할 수 있습니다. 템플릿 내에서 `<#@parameter#>` 지시문을 사용하여 매개 변수 값을 가져올 수 있습니다.
 
- 매개 변수 형식으로는 serialize 가능하거나 마샬링할 수 있는 형식을 사용해야 합니다. 즉, 매개 변수 형식은 <xref:System.SerializableAttribute>를 사용하여 선언되거나 <xref:System.MarshalByRefObject>에서 파생되어야 합니다. 텍스트 템플릿은 별도의 AppDomain에서 실행되므로 이러한 제한 사항이 필요합니다. 와 같은 모든 기본 제공 형식 **System.String** 하 고 **System.Int32** 직렬화 됩니다.
+ 매개 변수 형식으로는 serialize 가능하거나 마샬링할 수 있는 형식을 사용해야 합니다. 즉, 매개 변수 형식은 <xref:System.SerializableAttribute>를 사용하여 선언되거나 <xref:System.MarshalByRefObject>에서 파생되어야 합니다. 텍스트 템플릿은 별도의 AppDomain에서 실행되므로 이러한 제한 사항이 필요합니다. **System.string** 및 **system.object** 와 같은 모든 기본 제공 형식은 serialize 할 수 있습니다.
 
  매개 변수 값을 전달하기 위해 호출 코드에서 값을 `Session` 사전이나 <xref:System.Runtime.Remoting.Messaging.CallContext>에 둘 수 있습니다.
 
- 다음 예제에서는 두 가지 방법을 사용하여 짧은 테스트 템플릿을 변환합니다.
+ 다음 예제에서는 두 가지 방법을 사용하여 짧은 테스트 템플릿을 변형합니다.
 
-```
+```csharp
 using Microsoft.VisualStudio.TextTemplating;
 using Microsoft.VisualStudio.TextTemplating.VSHost;
 ...
@@ -75,9 +76,10 @@ string result = t4.ProcessTemplate("",
 ```
 
 ## <a name="error-reporting-and-the-output-directive"></a>오류 보고 및 output 지시문
- 처리 하는 동안 발생 하는 모든 오류는 Visual Studio 오류 창에 표시 됩니다. 또한 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplatingCallback>을 구현하는 콜백을 지정하여 오류 알림을 받을 수 있습니다.
 
- 결과 문자열을 파일에 기록하려는 경우 템플릿의 `<#@output#>` 지시문에 지정된 파일 확장명과 인코딩을 알아야 할 수 있습니다. 이 정보도 역시 콜백에 전달됩니다. 자세한 내용은 [T4 Output 지시문](../modeling/t4-output-directive.md)합니다.
+처리 하는 동안 발생 하는 모든 오류는 Visual Studio 오류 창에 표시 됩니다. 또한 [Itexttemplatingcallback](/previous-versions/visualstudio/visual-studio-2012/bb932397(v=vs.110))을 구현 하는 콜백을 지정 하 여 오류에 대 한 알림이 표시 될 수 있습니다.
+
+결과 문자열을 파일에 기록하려는 경우 템플릿의 `<#@output#>` 지시문에 지정된 파일 확장명과 인코딩을 알아야 할 수 있습니다. 이 정보도 역시 콜백에 전달됩니다. 자세한 내용은 [T4 Output 지시어](../modeling/t4-output-directive.md)를 참조 하세요.
 
 ```csharp
 void ProcessMyTemplate(string MyTemplateFile)
@@ -119,7 +121,7 @@ class T4Callback : ITextTemplatingCallback
 }
 ```
 
- 다음과 비슷한 템플릿 파일을 사용하여 코드를 테스트할 수 있습니다.
+다음과 비슷한 템플릿 파일을 사용하여 코드를 테스트할 수 있습니다.
 
 ```
 <#@output extension=".htm" encoding="ASCII"#>
@@ -128,14 +130,16 @@ class T4Callback : ITextTemplatingCallback
 Sample text.
 ```
 
- Visual Studio 오류 창에서 컴파일러 경고가 나타납니다 및 생성에 대 한 호출도 `ErrorCallback`합니다.
+컴파일러 경고는 Visual Studio 오류 창에 표시 되 고에 대 `ErrorCallback`한 호출도 생성 됩니다.
 
 ## <a name="reference-parameters"></a>참조 매개 변수
- <xref:System.MarshalByRefObject>에서 파생되는 매개 변수 클래스를 사용하여 텍스트 템플릿의 값을 전달할 수 있습니다.
 
-## <a name="related-topics"></a>관련 항목
- 전처리된 텍스트 템플릿에서 텍스트를 생성하려면 생성된 클래스의 `TransformText()` 메서드를 호출합니다. 자세한 내용은 [T4 텍스트 템플릿을 사용 하 여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)합니다.
+<xref:System.MarshalByRefObject>에서 파생되는 매개 변수 클래스를 사용하여 텍스트 템플릿의 값을 전달할 수 있습니다.
 
- Visual Studio 확장을 벗어나는 텍스트를 생성 합니다. 사용자 지정 호스트를 정의합니다. 자세한 내용은 [사용자 지정 호스트를 사용 하 여 텍스트 템플릿 처리](../modeling/processing-text-templates-by-using-a-custom-host.md)합니다.
+## <a name="related-articles"></a>관련 문서
 
- 나중에 컴파일하고 실행할 수 있는 소스 코드를 생성하려면 `t4.PreprocessTemplate()`의 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating> 메서드를 호출합니다.
+전처리된 텍스트 템플릿에서 텍스트를 생성하려면 생성된 클래스의 `TransformText()` 메서드를 호출합니다. 자세한 내용은 [T4 텍스트 템플릿을 사용 하 여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)을 참조 하세요.
+
+Visual Studio 확장 외부에서 텍스트를 생성 하려면: 사용자 지정 호스트를 정의합니다. 자세한 내용은 [사용자 지정 호스트를 사용 하 여 텍스트 템플릿 처리](../modeling/processing-text-templates-by-using-a-custom-host.md)합니다.
+
+나중에 컴파일하고 실행할 수 있는 소스 코드를 생성하려면 [Itexttemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110))의 [PreprocessTemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) 메서드를 호출 합니다.

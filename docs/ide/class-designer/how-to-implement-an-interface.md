@@ -1,8 +1,6 @@
 ---
 title: '방법: 인터페이스 구현(클래스 디자이너)'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - interfaces [Visual Studio], implementing
@@ -10,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 81d2cf46-7f60-448c-83e3-1d16bb88ca36
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8905fe471d022ff7772ded2e5e3e571b1b74968
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: e76aeea4c6779e97d882705e8680cd7a3b00d129
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33958619"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975179"
 ---
 # <a name="how-to-implement-an-interface-in-class-designer"></a>방법: 클래스 디자이너에서 인터페이스 구현
 
@@ -29,24 +27,24 @@ ms.locfileid: "33958619"
 
 ## <a name="to-implement-an-interface-by-drawing-an-inheritance-line"></a>상속 선을 그려서 인터페이스를 구현하려면
 
-1.  클래스 다이어그램에서 인터페이스 및 인터페이스를 구현하는 클래스를 표시합니다.
+1. 클래스 다이어그램에서 인터페이스 및 인터페이스를 구현하는 클래스를 표시합니다.
 
-2.  클래스 및 인터페이스에서 상속 선을 그립니다.
+2. 클래스 및 인터페이스에서 상속 선을 그립니다.
 
      롤리팝이 클래스에 연결되도록 표시되고 인터페이스 이름을 가진 레이블은 상속 관계를 식별합니다. Visual Studio는 모든 인터페이스 멤버에 대한 스텁을 생성합니다.
 
-자세한 내용은 [방법: 형식 간의 상속 만들기](how-to-create-inheritance-between-types.md)를 참조하세요.
+자세한 내용은 [방법: 형식 간에 상속 만들기](how-to-create-inheritance-between-types.md)를 참조하세요.
 
 ## <a name="to-implement-an-interface-from-the-class-view-window"></a>클래스 뷰 창에서 인터페이스를 구현하려면
 
-1.  클래스 다이어그램에서 인터페이스를 구현하려는 클래스를 표시합니다.
+1. 클래스 다이어그램에서 인터페이스를 구현하려는 클래스를 표시합니다.
 
-2.  **클래스 뷰**를 열고 인터페이스를 찾습니다.
+2. **클래스 뷰**를 열고 인터페이스를 찾습니다.
 
     > [!TIP]
     > **클래스 뷰**가 열려 있지 않으면 **보기** 메뉴에서 **클래스 뷰**를 열거나 **Ctrl**+**Shift**+**C** 키를 누릅니다.
 
-3.  다이어그램에서 클래스 도형으로 인터페이스 노드를 끌어옵니다.
+3. 다이어그램에서 클래스 도형으로 인터페이스 노드를 끌어옵니다.
 
      롤리팝이 클래스에 연결되도록 표시되고 인터페이스 이름을 가진 레이블은 상속 관계를 식별합니다. Visual Studio는 모든 인터페이스 멤버에 대한 스텁을 생성합니다. 이 시점에서 인터페이스를 구현합니다.
 

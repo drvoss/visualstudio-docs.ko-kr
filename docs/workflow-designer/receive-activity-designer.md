@@ -2,25 +2,24 @@
 title: 워크플로 디자이너-Receive 활동 디자이너
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.ServiceModel.Activities.Receive.UI
 ms.assetid: f58d3c70-944d-4bb4-90a7-e68c103caddc
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86c2d67d3922679096a3b3980a928a234515b78e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bcab59a631b1dbf9c85c7bff2454a42e97accff8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858998"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969334"
 ---
 # <a name="receive-activity-designer"></a>Receive 활동 디자이너
 
-합니다 **수신** 활동 디자이너는 만들기 및 구성 하는 데 사용 되는 <xref:System.ServiceModel.Activities.Receive> 활동입니다. <xref:System.ServiceModel.Activities.Receive> 활동은 기본 제공 형식(예:  <xref:System.ServiceModel.Channels.Message>, <xref:System.IO.Stream> 또는 <xref:System.Xml.Linq.XElement>)이거나 serialize될 수 있는 응용 프로그램 정의 데이터 계약, 메시지 계약 또는 XML 클래스 중 하나인 메시지를 수신하는 활동입니다.
+합니다 **수신** 활동 디자이너는 만들기 및 구성 하는 데 사용 되는 <xref:System.ServiceModel.Activities.Receive> 활동입니다. <xref:System.ServiceModel.Activities.Receive> 활동은 기본 제공 형식(예:  <xref:System.ServiceModel.Channels.Message>, <xref:System.IO.Stream> 또는 <xref:System.Xml.Linq.XElement>)이거나 serialize될 수 있는 애플리케이션 정의 데이터 계약, 메시지 계약 또는 XML 클래스 중 하나인 메시지를 수신하는 활동입니다.
 
 ## <a name="the-receive-activity"></a>Receive 활동
 
@@ -38,8 +37,7 @@ ms.locfileid: "53858998"
 
 다음 표에서는 <xref:System.ServiceModel.Activities.Receive> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. 속성 표에서 또는 워크플로 디자이너 화면에서 이러한 속성을 편집할 수 있습니다. 필수 속성은 <xref:System.ServiceModel.Activities.Receive.OperationName%2A> 속성뿐입니다.
 
-
-| 속성 이름 | 필수 | 용도 |
+| 속성 이름 | 필수 | 사용 |
 |-|----------|-|
 | <xref:System.Activities.Activity.DisplayName%2A> | False | <xref:System.ServiceModel.Activities.Receive> 활동의 이름을 지정합니다. 기본값은 Receive입니다.<br /><br /> <xref:System.Activities.Activity.DisplayName%2A>에 꼭 기본값 이외의 값을 사용할 필요는 없지만 그런 값을 사용하는 것이 좋습니다. |
 | <xref:System.ServiceModel.Activities.Receive.OperationName%2A> | True | 이 <xref:System.ServiceModel.Activities.Receive> 활동에 의해 구현되는 서비스 작업의 이름을 지정합니다. 이 속성의 기본값 생성을 사용 하는 **작업** 속성 경우 합니다 **작업** 속성이 명시적으로 설정 되어 있지. |
@@ -52,9 +50,9 @@ ms.locfileid: "53858998"
 | <xref:System.ServiceModel.Activities.Receive.KnownTypes%2A> | False | 이 <xref:System.ServiceModel.Activities.Receive> 활동에 의해 구현되는 서비스 작업의 알려진 형식 컬렉션을 지정합니다. 이 속성은 <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A>로 설정된 <xref:System.Runtime.Serialization.DataContractSerializer> 속성과 함께 사용해야 합니다. <xref:System.Xml.Serialization.XmlSerializer>를 사용하는 경우 무시됩니다.<br /><br /> 옆에 있는 줄임표 단추를 선택 합니다 **KnownTypes** 표시할 속성 표의 필드를 **형식 컬렉션 편집기** 대화 상자를 사용 하 여 관련 형식을 추가할 수 있습니다. 이 상자를 사용 하는 방법에 대 한 자세한 내용은 참조는 [형식 컬렉션 편집기 대화 상자](../workflow-designer/type-collection-editor-dialog-box.md) 항목입니다. |
 | <xref:System.ServiceModel.Activities.Receive.ProtectionLevel%2A> | False | 메시지의 <xref:System.Net.Security.ProtectionLevel>을 지정합니다.<br /><br /> 1. <xref:System.Net.Security.ProtectionLevel> 인증만 의미 합니다.<br />2. <xref:System.Net.Security.ProtectionLevel> 수단으로 전송 되는 데이터의 무결성을 보장 하는 데 데이터를 서명 합니다.<br />3. <xref:System.Net.Security.ProtectionLevel> 암호화 및 전송 되는 데이터의 무결성 및 기밀성을 보장 하기 위해 데이터에 서명 합니다. |
 | <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> | False | <xref:System.ServiceModel.Activities.Receive> 활동에 의해 구현되는 서비스 작업에 사용할 serializer의 형식을 지정합니다. 기본값은 <xref:System.Runtime.Serialization.DataContractSerializer>이며, 제공된 데이터 계약을 사용하는 XML 스트림 또는 문서에 형식 인스턴스를 serialize 및 deserialize합니다. XML에 대한 제어를 강화해야 하는 경우에도 <xref:System.Xml.Serialization.XmlSerializer>를 사용할 수 있습니다. |
-| <xref:System.ServiceModel.Activities.Receive.Action%2A> | False | 메시지의 동작 헤더를 지정합니다. 명시적으로 설정 하지 않으면 기본값인: https://tempuri.org/{service 계약 네임 스페이스} / {서비스 계약 이름} /} /{operation name}. |
+| <xref:System.ServiceModel.Activities.Receive.Action%2A> | False | 메시지의 동작 헤더를 지정합니다. 명시적으로 설정 하지 않으면 기본값인: `https://tempuri.org/{service contract namespace}/{service contract name}/{operation name}`합니다. |
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)

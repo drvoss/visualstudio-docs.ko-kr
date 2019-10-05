@@ -1,20 +1,18 @@
 ---
 title: MSBuild API | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3595d4b15c719d8d5600346fa1da428b908b6c31
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 256dba169357f24af147f6efd244de842563bc43
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817288"
 ---
 # <a name="use-the-msbuild-api"></a>MSBuild API 사용
 

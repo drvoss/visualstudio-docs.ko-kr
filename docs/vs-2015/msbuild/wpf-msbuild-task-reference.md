@@ -1,14 +1,9 @@
 ---
 title: WPF MSBuild 작업 참조 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -23,23 +18,22 @@ ms.assetid: 96df0370-e50f-4ffc-9771-b12fb8721143
 caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5266b5b6274eb9a39f6603598b90cd551f25caef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: eb21495954801d55c1db0bb9156a813ab73db683
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185473"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687087"
 ---
 # <a name="wpf-msbuild-task-reference"></a>WPF MSBuild 작업 참조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 WPF(Windows Presentation Foundation) 빌드 프로세스는 태그를 컴파일하고 리소스를 처리하는 작업 등을 포함한 추가적인 빌드 작업 집합을 사용하여 Microsoft Build Engine(MSBuild)을 확장합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [FileClassifier](../msbuild/fileclassifier-task.md)  
- 소스 리소스 집합을 어셈블리에 포함될 항목으로 분류합니다. 리소스를 지역화할 수 없는 경우 주 응용 프로그램 어셈블리에 포함되고, 그렇지 않으면 위성 어셈블리에 포함합니다.  
+ 소스 리소스 집합을 어셈블리에 포함될 항목으로 분류합니다. 리소스를 지역화할 수 없는 경우 주 애플리케이션 어셈블리에 포함되고, 그렇지 않으면 위성 어셈블리에 포함합니다.  
   
  [GenerateTemporaryTargetAssembly](../msbuild/generatetemporarytargetassembly-task.md)  
  프로젝트에서 하나 이상의 [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] 페이지가 해당 프로젝트에서 로컬로 선언된 형식을 참조할 경우 어셈블리를 생성합니다. 생성된 어셈블리는 빌드 프로세스가 완료된 후 또는 빌드 프로세스가 실패하는 경우에 제거됩니다.  
@@ -63,10 +57,7 @@ WPF(Windows Presentation Foundation) 빌드 프로세스는 태그를 컴파일�
  소스 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 파일에 포함된 모든 [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] 요소를 지역화하기 위해 UID(고유 식별자)를 확인, 업데이트 또는 제거합니다.  
   
  [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)  
- [!INCLUDE[TLA#tla_xbap](../includes/tlasharptla-xbap-md.md)] 프로젝트를 빌드할 때 응용 프로그램 매니페스트(*projectname*.exe.manifest)에 **\<hostInBrowser />** 요소를 추가하기 위해 실행합니다.  
+ [!INCLUDE[TLA#tla_xbap](../includes/tlasharptla-xbap-md.md)] 프로젝트를 빌드할 때 애플리케이션 매니페스트(*projectname*.exe.manifest)에 **\<hostInBrowser /&gt;** 요소를 추가하기 위해 실행합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [MSBuild](http://msdn.microsoft.com/en-us/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)
-
-
-
+ [MSBuild](https://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)

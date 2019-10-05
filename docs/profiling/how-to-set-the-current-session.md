@@ -1,8 +1,6 @@
 ---
-title: '방법: 현재 세션 설정 | Microsoft 문서'
-ms.custom: ''
+title: '방법: 현재 세션 설정 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - current performance sessions
@@ -14,15 +12,15 @@ helpviewer_keywords:
 - sessions, setting multiple
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f06a45dbdf88fad071afcbb96373930501c6ccb
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: ad917a67ab03a4cb6c1e265ec2dafcbe6e2ee421
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823571"
 ---
 # <a name="how-to-set-the-current-session"></a>방법: 현재 세션 설정
 
@@ -38,7 +36,7 @@ ms.locfileid: "34844601"
 
 ## <a name="see-also"></a>참고 항목
 
-[성능 세션 구성](../profiling/configuring-performance-sessions.md)  
-[성능 탐색기 창](../profiling/performance-explorer-window.md)  
-[성능 세션 속성](../profiling/performance-session-properties.md)  
+[성능 세션 구성](../profiling/configuring-performance-sessions.md)
+[성능 탐색기 창](../profiling/performance-explorer-window.md)
+[성능 세션 속성](../profiling/performance-session-properties.md)
 [성능 세션 개요](../profiling/performance-session-overview.md)

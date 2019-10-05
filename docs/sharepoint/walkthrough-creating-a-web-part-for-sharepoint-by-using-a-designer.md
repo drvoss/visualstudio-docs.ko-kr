@@ -1,5 +1,5 @@
 ---
-title: '연습: 디자이너를 사용 하 여 SharePoint 용 웹 파트 만들기 | Microsoft Docs'
+title: 디자이너를 사용 하 여 SharePoint에 대 한 웹 파트 만들기
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], designer
 - Web Parts [SharePoint development in Visual Studio], creating
 - Web Parts [SharePoint development in Visual Studio], designing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 146a1722f240895e0f508b0474df72f6f5f84ece
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9963c2f7e829e9d295ca254aa651e37e3ad08efd
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870916"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401139"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>연습: 디자이너를 사용 하 여 SharePoint 용 웹 파트 만들기
 
@@ -185,8 +185,8 @@ SharePoint 사이트에 대 한 웹 파트를 만드는 경우 사용자가 직�
 
 지정한 모든 달력의 이벤트가 월별 달력 보기에 나타납니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[SharePoint 용 웹 파트 만들기](../sharepoint/creating-web-parts-for-sharepoint.md)  
-[방법: SharePoint 웹 파트 만들기](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
+[SharePoint 용 웹 파트를 만들](../sharepoint/creating-web-parts-for-sharepoint.md)
+[방법: SharePoint 웹 파트를 만듭니다](../sharepoint/how-to-create-a-sharepoint-web-part.md)
 [연습: SharePoint 용 웹 파트 만들기](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)

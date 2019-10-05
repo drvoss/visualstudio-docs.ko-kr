@@ -1,8 +1,6 @@
 ---
 title: 글꼴 및 색 변경
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, color themes
@@ -10,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 60d91ba1-244b-4c43-847f-60b744f1352a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb7e762c15b99492bda03d5300af398552cfd01
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f06007294f0743ebdbbcc0c750ffd09307e17ad1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824206"
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>방법: Visual Studio에서 글꼴 및 색 변경
 
@@ -46,7 +44,7 @@ Visual Studio의 IDE 프레임과 도구 창의 색을 여러 가지 방식으�
 **왼쪽 Alt**+**왼쪽 Shift**+**PrtScn** 키를 선택합니다.
 
 > [!WARNING]
-> 이 옵션은 모든 응용 프로그램 및 현재 컴퓨터의 UI를 고대비로 설정합니다.
+> 이 옵션은 모든 애플리케이션 및 현재 컴퓨터의 UI를 고대비로 설정합니다.
 
 ## <a name="change-ide-fonts"></a>IDE 글꼴 변경
 

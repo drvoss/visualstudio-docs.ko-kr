@@ -2,21 +2,20 @@
 title: 워크플로 디자이너-ParallelForEach&lt;T&gt; 활동 디자이너
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.ParallelForEach`1.UI
 ms.assetid: e93a4843-aef2-4d3e-9a0a-a2d3d1411aa7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e411f5e72566753d66ded4e445868e5ab245bf9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: be522112dd4cfa16744d0c9e54601ba7a0492704
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004233"
 ---
 # <a name="parallelforeach-activity-designer"></a>ParallelForEach 활동 디자이너
 
@@ -42,7 +41,7 @@ ms.locfileid: "53873910"
 
 다음 표에서는 가장 유용한 <xref:System.Activities.Statements.ParallelForEach%601> 활동 속성을 보여 주고 디자이너에서 이러한 속성을 사용하는 방법을 설명합니다.
 
-|속성 이름|필수|용도|
+|속성 이름|필수|사용|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|머리글에 활동 디자이너의 표시 이름을 지정합니다. 기본값은 **ParallelForEach\<Int32 >** 합니다. 값을 선택적으로 편집할 수 있습니다 합니다 **속성** 표에서 또는 활동 디자이너 머리글에서 직접.|
 |<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|False|컬렉션의 각 항목에 대해 실행할 활동입니다. 추가할를 <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> 활동을 도구 상자에서 활동을 **본문** 상자에 **ParallelForEach\<T >** 여기에 작업 놓기 "힌트 텍스트가 있는 활동 디자이너.|
@@ -52,7 +51,7 @@ ms.locfileid: "53873910"
 
 루프 반복기는 기본적으로 이름이 지정된 항목입니다. 반복기 변수의 이름을 변경할 수 있습니다 합니다 **ForEach** 상자에 **ParallelForEach\<T >** 활동 디자이너입니다. 루프 반복기는 <xref:System.Activities.Statements.ParallelForEach%601> 활동의 자식에 포함된 식에서 사용할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [Sequence](../workflow-designer/sequence-activity-designer.md)
 - [Parallel](../workflow-designer/parallel-activity-designer.md)

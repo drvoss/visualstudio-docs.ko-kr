@@ -11,17 +11,15 @@ helpviewer_keywords:
 ms.assetid: 08630d69-0d6c-4e8f-b42d-2922f45f8415
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b720072d5ccd695ff1e7006bda5221ae00db06ef
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
+ms.openlocfilehash: 026b670deb5beff42c927894ee9851ddb3ccc3ad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567539"
 ---
 # <a name="create-and-configure-tableadapters"></a>TableAdapter 만들기 및 구성
 
@@ -58,7 +56,7 @@ Tableadapter 소개를 참조 하세요 [Tableadapter를 사용 하 여 데이�
 > [!NOTE]
 > SELECT 명령에 할당 되는 저장된 프로시저는 마법사의 다음 단계에서 이름을 지정 하는 TableAdapter의 메서드를 호출 하 여 실행 됩니다. 기본 방법은 `Fill`이므로 SELECT 프로시저를 실행 하려면 일반적으로 사용 되는 코드는 `TableAdapter.Fill(tableName)`합니다. 기본 이름을 변경 하면 `Fill`를 대체할 `Fill` 이름의 할당 하 고이 "TableAdapter" TableAdapter의 실제 이름으로 바꿉니다 (예를 들어 `CustomersTableAdapter`).
 
-- 선택 하는 **업데이트를 데이터베이스로 직접 보내는 메서드 만들기** 옵션은 설정에 해당 하는 `GenerateDBDirectMethods` 속성을 true로 합니다. 옵션을 사용할 수 없는 경우 원래 SQL 문에서 충분 한 정보를 제공 하지 않습니다 때나 쿼리가 업데이트할 수 있는 쿼리를 하지 않습니다. 이에 해당할 수 있습니다, 예를 들어 **조인** 쿼리 및 단일 (스칼라) 값을 반환 하는 쿼리.
+- 선택 하는 **업데이트를 데이터베이스로 직접 보내는 메서드 만들기** 옵션은 설정에 해당 하는 `GenerateDBDirectMethods` 속성을 true로 합니다. 원래 SQL 문에서 충분한 정보를 제공하지 않거나 쿼리가 업데이트할 수 없는 쿼리인 경우에는 이 옵션을 사용할 수 없습니다. 이에 해당할 수 있습니다, 예를 들어 **조인** 쿼리 및 단일 (스칼라) 값을 반환 하는 쿼리.
 
 합니다 **고급 옵션** 마법사를 사용 하면 수:
 
@@ -82,16 +80,16 @@ TableAdapter에 수행한 모든 변경 내용을 주 `Fill` 메서드는 연결
 
 ### <a name="to-start-the-tableadapter-query-configuration-wizard-with-a-new-query"></a>새 쿼리를 사용 하 여 TableAdapter 쿼리 구성 마법사를 시작 하려면
 
-1.  데이터 집합을 엽니다는 **데이터 집합 디자이너**합니다.
+1. **데이터 세트 디자이너**에서 데이터 세트를 엽니다.
 
-2.  끌어 새 쿼리를 만드는 경우는 **쿼리** 에서 개체를 **데이터 집합** 탭을 **도구 상자** 에 <xref:System.Data.DataTable>를 선택 또는 **추가 쿼리**TableAdapter의 바로 가기 메뉴에서. 끌 수도 있습니다는 **쿼리** 개체의 빈 영역에는 **데이터 집합 디자이너**, 없이 연결 된 TableAdapter를 만듭니다 <xref:System.Data.DataTable>합니다. 이러한 쿼리를 실행된 하는 UPDATE, INSERT 또는 단일 (스칼라) 값을 반환 하거나 DELETE 명령을 데이터베이스에 대해만 수 있습니다.
+2. 끌어 새 쿼리를 만드는 경우는 **쿼리** 에서 개체를 **데이터 집합** 탭을 **도구 상자** 에 <xref:System.Data.DataTable>를 선택 또는 **추가 쿼리**TableAdapter의 바로 가기 메뉴에서. 끌 수도 있습니다는 **쿼리** 개체의 빈 영역에는 **데이터 집합 디자이너**, 없이 연결 된 TableAdapter를 만듭니다 <xref:System.Data.DataTable>합니다. 이러한 쿼리를 실행된 하는 UPDATE, INSERT 또는 단일 (스칼라) 값을 반환 하거나 DELETE 명령을 데이터베이스에 대해만 수 있습니다.
 
-3.  에 **데이터 연결 선택** 화면을 선택 하거나 쿼리를 사용 하는 연결을 만듭니다.
+3. 에 **데이터 연결 선택** 화면을 선택 하거나 쿼리를 사용 하는 연결을 만듭니다.
 
     > [!NOTE]
     > 이 화면 디자이너를 사용 하려면 적절 한 연결을 확인할 수 없는 경우 또는 연결이 없는 경우에 표시 됩니다.
 
-4.  에 **명령 유형을 선택** 화면에서의 데이터베이스에서 데이터를 가져오는 다음 방법 중에서 선택 합니다.
+4. 에 **명령 유형을 선택** 화면에서의 데이터베이스에서 데이터를 가져오는 다음 방법 중에서 선택 합니다.
 
     - **SQL 문을 사용 하 여** 데이터베이스에서 데이터를 선택 하는 SQL 문을 입력할 수 있습니다.
 

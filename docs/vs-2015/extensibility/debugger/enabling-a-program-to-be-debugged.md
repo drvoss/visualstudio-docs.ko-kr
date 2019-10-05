@@ -1,26 +1,21 @@
 ---
 title: 디버그할 프로그램을 사용 하도록 설정 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], enabling for programs
 ms.assetid: 61d24820-0cd9-48b6-8674-6813f7493237
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 33256a27230273b9d0af249ed4ecd4e7767a7e05
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b0f0331430a1cc625dee2a7029742fd62d67fb56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789345"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155371"
 ---
 # <a name="enabling-a-program-to-be-debugged"></a>디버그할 프로그램을 사용하도록 설정
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,4 +41,3 @@ ms.locfileid: "51789345"
 ## <a name="related-sections"></a>관련 단원  
  [사용자 지정 디버그 엔진 만들기](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
  디버그 엔진 (DE)를 정의 하 고 어떻게 서로 다른 운영 모드를 전환 하도록 디버거를 초래할 수 있습니다 및 DE 인터페이스를 통해 구현 된 서비스에 설명 합니다.
-

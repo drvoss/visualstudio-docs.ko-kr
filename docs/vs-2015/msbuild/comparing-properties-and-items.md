@@ -1,37 +1,31 @@
 ---
 title: 속성 및 항목 비교 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, msbuild properties
 ms.assetid: b9da45ae-d6a6-4399-8628-397deed31486
 caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9d42cc8fb4e5ba0783ad24aedc0edf7a323db4d9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 66fc8065e81b8b93e73ec034a166e3d5645d4b6b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184095"
 ---
 # <a name="comparing-properties-and-items"></a>속성 및 항목 비교
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 MSBuild 속성 및 항목은 둘 다 작업에 정보를 전달하고, 조건을 확인한 다음 프로젝트 파일 전체에서 참조할 수 있는 값을 저장하는 데 사용됩니다.  
   
--   속성은 이름-값 쌍입니다. 자세한 내용은 [MSBuild 속성](msbuild-properties1.md)을 참조하세요.  
+- 속성은 이름-값 쌍입니다. 자세한 내용은 [MSBuild 속성](msbuild-properties1.md)을 참조하세요.  
   
--   항목은 일반적으로 파일을 나타내는 개체입니다. 항목 개체에는 연결된 메타데이터 컬렉션이 있을 수 있습니다. 메타데이터는 이름-값 쌍입니다. 자세한 내용은 [항목](../msbuild/msbuild-items.md)을 참조하세요.  
+- 항목은 일반적으로 파일을 나타내는 개체입니다. 항목 개체에는 연결된 메타데이터 컬렉션이 있을 수 있습니다. 메타데이터는 이름-값 쌍입니다. 자세한 내용은 [항목](../msbuild/msbuild-items.md)을 참조하세요.  
   
 ## <a name="scalars-and-vectors"></a>스칼라 및 벡터  
  MSBuild 속성은 문자열 값이 하나만 있는 이름-값 쌍이므로 보통 *스칼라*로 설명됩니다. MSBuild 항목 종류는 항목의 목록이므로 보통 *벡터*로 설명됩니다. 그러나 실제로 속성이 여러 값을 나타낼 수 있으며 항목 종류에는 0개 또는 1개의 항목이 있을 수 있습니다.  
@@ -49,7 +43,7 @@ MSBuild 속성 및 항목은 둘 다 작업에 정보를 전달하고, 조건을
 </PropertyGroup>  
 ```  
   
- `BuildDependsOn` 속성은 일반적으로 대상 `DependsOnTargets` 특성의 인수로 사용되며, 해당 특성을 효과적으로 항목 목록으로 변환합니다. 대상을 추가하거나 대상 실행 순서를 변경하기 위해 이 속성을 재정의할 수 있습니다. 예를 들어 개체에 적용된  
+ `BuildDependsOn` 속성은 일반적으로 대상 `DependsOnTargets` 특성의 인수로 사용되며, 해당 특성을 효과적으로 항목 목록으로 변환합니다. 대상을 추가하거나 대상 실행 순서를 변경하기 위해 이 속성을 재정의할 수 있습니다. 예를 들면 다음과 같습니다.  
   
 ```  
 <PropertyGroup>  
@@ -102,15 +96,15 @@ MSBuild 속성 및 항목은 둘 다 작업에 정보를 전달하고, 조건을
   
 - 빌드의 평가 단계 중:  
   
-  -   속성이 표시되는 순서대로 정의되고 수정됩니다. 속성 함수가 실행됩니다. $(PropertyName) 양식의 속성 값이 식 내에서 확장됩니다. 속성 값이 확장된 식으로 설정됩니다.  
+  - 속성이 표시되는 순서대로 정의되고 수정됩니다. 속성 함수가 실행됩니다. $(PropertyName) 양식의 속성 값이 식 내에서 확장됩니다. 속성 값이 확장된 식으로 설정됩니다.  
   
-  -   항목 정의가 표시되는 순서대로 정의되고 수정됩니다. 속성 함수는 식 내에서 이미 확장되었습니다. 메타데이터 값은 확장된 식으로 설정됩니다.  
+  - 항목 정의가 표시되는 순서대로 정의되고 수정됩니다. 속성 함수는 식 내에서 이미 확장되었습니다. 메타데이터 값은 확장된 식으로 설정됩니다.  
   
-  -   항목 종류가 표시되는 순서대로 정의되고 수정됩니다. @(ItemType) 양식의 항목 값이 확장됩니다. 항목 변환도 확장됩니다. 속성 함수 및 값은 식 내에서 이미 확장되었습니다. 항목 목록 및 메타데이터 값은 확장된 식으로 설정됩니다.  
+  - 항목 종류가 표시되는 순서대로 정의되고 수정됩니다. @(ItemType) 양식의 항목 값이 확장됩니다. 항목 변환도 확장됩니다. 속성 함수 및 값은 식 내에서 이미 확장되었습니다. 항목 목록 및 메타데이터 값은 확장된 식으로 설정됩니다.  
   
 - 빌드의 실행 단계 중:  
   
-  -   대상 내에 정의된 속성 및 항목이 표시되는 순서대로 함께 평가됩니다. 속성 함수가 실행되며, 속성 값이 식 내에서 확장됩니다. 항목 값 및 항목 변환도 확장됩니다. 속성 값, 항목 종류 값 및 메타데이터 값은 확장된 식으로 설정됩니다.  
+  - 대상 내에 정의된 속성 및 항목이 표시되는 순서대로 함께 평가됩니다. 속성 함수가 실행되며, 속성 값이 식 내에서 확장됩니다. 항목 값 및 항목 변환도 확장됩니다. 속성 값, 항목 종류 값 및 메타데이터 값은 확장된 식으로 설정됩니다.  
   
 ### <a name="subtle-effects-of-the-evaluation-order"></a>평가 순서의 미묘한 효과  
  빌드의 평가 단계에서 속성 확인이 항목 확인 앞에 옵니다. 그럼에도 불구하고 속성은 항목 값에 따라 다르게 표시되는 값을 가질 수 있습니다. 다음 스크립트를 살펴보세요.  
@@ -189,6 +183,3 @@ KeyFileVersion: 1.0.0.3
   
 ## <a name="see-also"></a>참고 항목  
  [고급 개념](../msbuild/msbuild-advanced-concepts.md)
-
-
-

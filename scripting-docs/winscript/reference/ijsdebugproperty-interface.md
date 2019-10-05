@@ -2,7 +2,6 @@
 title: IJsDebugProperty 인터페이스 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,19 +11,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 459a26f78e2dd5c2d1d85d829fd622d9d2697409
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e17bff10e2b876e4db2b9f3b55df29c2e87989ee
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977792"
 ---
 # <a name="ijsdebugproperty-interface"></a>IJsDebugProperty 인터페이스
 속성 브라우저를 나타냅니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 IJsDebugProperty : public IUnknown;  
 ```  
   

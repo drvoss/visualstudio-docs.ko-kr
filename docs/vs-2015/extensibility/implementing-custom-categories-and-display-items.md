@@ -1,27 +1,22 @@
 ---
 title: 사용자 지정 범주 및 표시 항목 구현 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
 - custom categories
 ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 394f8f99539ab49c1201fa61ce612aee22ff2064
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 474d5c66507b56bea609568b6acfe9f5eff75e9c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414600"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>사용자 지정 범주 및 표시 항목 구현
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +56,7 @@ VSPackage를 해당 텍스트의 색 및 글꼴의 제어를 제공할 수는 [!
   |이름|형식|데이터|설명|  
   |----------|----------|----------|-----------------|  
   |범주|REG_SZ|GUID|만든 범주를 식별 하는 GUID입니다.|  
-  |패키지|REG_SZ|GUID|범주를 지 원하는 VSPackage 서비스의 GUID입니다.|  
+  |Package|REG_SZ|GUID|범주를 지 원하는 VSPackage 서비스의 GUID입니다.|  
   
   레지스트리에 지정 된 서비스의 구현을 제공 해야 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> 해당 범주에 대 한 합니다.  
   
@@ -76,7 +71,7 @@ VSPackage를 해당 텍스트의 색 및 글꼴의 제어를 제공할 수는 [!
   |이름|형식|데이터|설명|  
   |----------|----------|----------|-----------------|  
   |범주|REG_SZ|GUID|만든 그룹을 식별 하는 GUID입니다.|  
-  |패키지|REG_SZ|GUID|범주를 지 원하는 서비스의 GUID입니다.|  
+  |Package|REG_SZ|GUID|범주를 지 원하는 서비스의 GUID입니다.|  
   
   레지스트리에 지정 된 서비스의 구현을 제공 해야 `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup` 해당 그룹에 대 한 합니다.  
   
@@ -88,24 +83,24 @@ VSPackage를 해당 텍스트의 색 및 글꼴의 제어를 제공할 수는 [!
   
 - 메서드를 통해 구현 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> 사용 하 여 IDE를 제공 해야 합니다.  
   
-  -   목록 **표시 항목** 에 **범주입니다.**  
+  - 목록 **표시 항목** 에 **범주입니다.**  
   
-  -   에 대 한 지역화할 수 있는 이름을 **표시 항목**합니다.  
+  - 에 대 한 지역화할 수 있는 이름을 **표시 항목**합니다.  
   
-  -   각 멤버에 대 한 정보를 표시할 **범주**합니다.  
+  - 각 멤버에 대 한 정보를 표시할 **범주**합니다.  
   
   > [!NOTE]
-  >  모든 **범주** 하나 이상 있어야 **표시 항목**합니다.  
+  > 모든 **범주** 하나 이상 있어야 **표시 항목**합니다.  
   
 - IDE를 사용 하는 `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup` 여러 범주의 합집합을 정의 하는 인터페이스입니다.  
   
    구현을 사용 하 여 IDE를 제공합니다.  
   
-  -   목록을 합니다 **범주** 지정된 된 그룹을 구성 하는 합니다.  
+  - 목록을 합니다 **범주** 지정된 된 그룹을 구성 하는 합니다.  
   
-  -   인스턴스에 액세스 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> 각를 지 원하는 **범주** 그룹 내에서.  
+  - 인스턴스에 액세스 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> 각를 지 원하는 **범주** 그룹 내에서.  
   
-  -   지역화할 수 있는 그룹 이름입니다.  
+  - 지역화할 수 있는 그룹 이름입니다.  
   
 - IDE를 업데이트 합니다.  
   
@@ -116,18 +111,18 @@ VSPackage를 해당 텍스트의 색 및 글꼴의 제어를 제공할 수는 [!
 ## <a name="to-handle-font-and-color-changes"></a>핸들 글꼴 및 색 변경  
  VSPackage를 표시 하는 텍스트의 색 지정을 올바르게 지원 하려면 VSPackage를 지 원하는 색 지정 서비스를 통해 사용자가 시작한 변경에 응답 해야 합니다 **글꼴 및 색** 속성 페이지. VSPackage이 작업을 수행 합니다.  
   
--   구현 하 여 IDE에서 생성 된 이벤트를 처리 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> 인터페이스입니다.  
+- 구현 하 여 IDE에서 생성 된 이벤트를 처리 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> 인터페이스입니다.  
   
      IDE 사용자 수정 다음 적절 한 메서드를 호출 합니다 **글꼴 및 색** 페이지입니다. 예를 들어 호출을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A> 새 글꼴을 선택 하는 경우 메서드.  
   
      또는  
   
--   변경 내용에 대 한 IDE를 폴링합니다.  
+- 변경 내용에 대 한 IDE를 폴링합니다.  
   
      시스템이 구현 통해 수행할 수 있습니다이 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> 인터페이스입니다. 하지만 주로 지원용 지 속성을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> 메서드는에 대 한 글꼴 및 색 정보를 가져오는 데 사용할 수 있습니다 **항목을 표시**합니다. 자세한 내용은 [에 액세스 하는 저장 된 글꼴 및 색 설정](../extensibility/accessing-stored-font-and-color-settings.md)합니다.  
   
     > [!NOTE]
-    >  폴링을 통해 얻은 결과가 올바른 데 유용할 수 있습니다 되도록 하려면 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> 캐시 플러시 및 업데이트의 검색 메서드를 호출 하는 데 필요한 경우를 결정 하는 인터페이스를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> 인터페이스입니다.  
+    > 폴링을 통해 얻은 결과가 올바른 데 유용할 수 있습니다 되도록 하려면 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> 캐시 플러시 및 업데이트의 검색 메서드를 호출 하는 데 필요한 경우를 결정 하는 인터페이스를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> 인터페이스입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>   
@@ -140,4 +135,3 @@ VSPackage를 해당 텍스트의 색 및 글꼴의 제어를 제공할 수는 [!
  [저장 된 글꼴 및 색 설정에 액세스](../extensibility/accessing-stored-font-and-color-settings.md)   
  [방법: 기본 제공 글꼴 및 색 구성표에 액세스](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)   
  [글꼴 및 색 개요](../extensibility/font-and-color-overview.md)
-

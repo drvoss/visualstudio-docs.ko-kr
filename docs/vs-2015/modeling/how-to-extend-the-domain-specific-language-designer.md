@@ -1,25 +1,22 @@
 ---
-title: '방법: 도메인별 언어 디자이너 확장 | Microsoft Docs'
-ms.custom: ''
+title: '방법: 도메인 특정 언어 디자이너 확장 | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: fa807f1b-2780-491e-925b-abbfd31b2bfa
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 434b9c5a575ab19530ca3c5c3e0d6536235b9f88
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8c02dbf550ca1621a17d2b674a522e1e4f4bcc1c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546943"
 ---
-# <a name="how-to-extend-the-domain-specific-language-designer"></a>방법: 도메인별 언어 디자이너 확장
+# <a name="how-to-extend-the-domain-specific-language-designer"></a>방법: 도메인 특정 언어 디자이너 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 DSL 정의 편집 하는 데 사용 하는 디자이너에 확장을 만들 수 있습니다. 가능 메뉴 명령을 추가 끌어서 제스처 및 특정 형식의 값 또는 관계 변경 될 때 트리거되는 규칙을 두 번 클릭에 대 한 처리기를 추가 하는 확장의 형식입니다. 확장으로 Visual Studio 통합 확장 (VSIX)를 패키지 하 고 다른 사용자에 게 배포할 수 있습니다.  
@@ -31,25 +28,25 @@ DSL 정의 편집 하는 데 사용 하는 디자이너에 확장을 만들 수 
   
 #### <a name="to-create-a-dsl-designer-extension-solution"></a>DSL 디자이너 확장 솔루션을 만들려면  
   
-1.  클래스 라이브러리 프로젝트 템플릿을 사용 하 여 새 프로젝트를 만듭니다. 에 **새 프로젝트** 대화 상자, 클릭 **Visual C#** 하 고 클릭 한 다음 가운데 창에서 **클래스 라이브러리**합니다.  
+1. 클래스 라이브러리 프로젝트 템플릿을 사용 하 여 새 프로젝트를 만듭니다. 에 **새 프로젝트** 대화 상자, 클릭 **Visual C#** 하 고 클릭 한 다음 가운데 창에서 **클래스 라이브러리**합니다.  
   
      이 프로젝트에는 확장 코드가 포함 됩니다.  
   
-2.  VSIX 프로젝트 템플릿을 사용 하 여 새 프로젝트를 만듭니다. 에 **새 프로젝트** 대화 상자에서 **Visual C#**, 클릭 **확장성**를 선택한 다음 가운데 창의 선택 **VSIX 프로젝트**합니다.  
+2. VSIX 프로젝트 템플릿을 사용 하 여 새 프로젝트를 만듭니다. 에 **새 프로젝트** 대화 상자에서 **Visual C#**, 클릭 **확장성**를 선택한 다음 가운데 창의 선택 **VSIX 프로젝트**합니다.  
   
      선택 **솔루션을 추가할**합니다.  
   
      Source.extension.vsixmanifest은 VSIX 매니페스트 편집기에서 열립니다.  
   
-3.  콘텐츠 필드 위에 클릭 **콘텐츠 추가**합니다.  
+3. 콘텐츠 필드 위에 클릭 **콘텐츠 추가**합니다.  
   
-4.  에 **콘텐츠 추가** 대화 상자에서 **콘텐츠 형식 선택** 하 **MEF 구성 요소**, 설정 및 **프로젝트** 클래스 라이브러리 프로젝트에.  
+4. 에 **콘텐츠 추가** 대화 상자에서 **콘텐츠 형식 선택** 하 **MEF 구성 요소**, 설정 및 **프로젝트** 클래스 라이브러리 프로젝트에.  
   
-5.  클릭 **버전 선택** 했는지 **Visual Studio Enterprise** 확인란이 선택 되어 있습니다.  
+5. 클릭 **버전 선택** 했는지 **Visual Studio Enterprise** 확인란이 선택 되어 있습니다.  
   
-6.  VSIX 프로젝트를 솔루션의 시작 프로젝트 인지 확인 합니다.  
+6. VSIX 프로젝트를 솔루션의 시작 프로젝트 인지 확인 합니다.  
   
-7.  클래스 라이브러리 프로젝트에서 다음 어셈블리에 대 한 참조를 추가 합니다.  
+7. 클래스 라이브러리 프로젝트에서 다음 어셈블리에 대 한 참조를 추가 합니다.  
   
      Microsoft.VisualStudio.CoreUtility  
   
@@ -317,4 +314,3 @@ namespace Fabrikam.SimpleDslDesignerExtension
     }  
 }  
 ```
-

@@ -1,14 +1,9 @@
 ---
 title: ClickOnce 관리 되지 않는 API 참조 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: ec002138-4054-456d-bcc1-79ac2f4a4fd7
 caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 6175ae0b51e017d9f06c1e185ba1da7295d69657
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 714d7b18995bf1ad51b07e02227e440879f73c9e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192314"
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>ClickOnce 관리되지 않는 API 참조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,17 +73,14 @@ ms.locfileid: "49237557"
   
 ### <a name="parameters"></a>매개 변수  
   
-|매개 변수|설명|형식|  
+|매개 변수|Description|형식|  
 |---------------|-----------------|----------|  
 |`deploymentUrl`|배포 매니페스트의 URL이 포함 된 NULL로 끝나는 문자열에 대 한 포인터입니다.|LPCWSTR|  
-|`data`|나중에 사용하기 위해 예약되어 있습니다. NULL 이어야 합니다.|LPVOID|  
-|`flags`|나중에 사용하기 위해 예약되어 있습니다. 0 이어야 합니다.|DWORD|  
+|`data`|나중에 사용하도록 예약되어 있습니다. Null이어야 합니다.|LPVOID|  
+|`flags`|나중에 사용하도록 예약되어 있습니다. 0이어야 합니다.|DWORD|  
   
 ### <a name="return-value"></a>반환 값  
  성공 하면 S_OK를 반환 합니다. 그렇지 않으면 실패를 나타내는 HRESULT를 반환 합니다. 관리 되는 예외를 발생 하는 경우 0x80020009 (DISP_E_EXCEPTION)를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:System.Deployment.Application.DeploymentServiceCom.CleanOnlineAppCache%2A>
-
-
-

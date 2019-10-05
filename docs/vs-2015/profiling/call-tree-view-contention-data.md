@@ -1,39 +1,34 @@
 ---
 title: 호출 트리 뷰 - 경합 데이터 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
 ms.assetid: 9bd4bde2-2ca3-446c-9ccc-7421522e03ae
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 003e25121b3761a6e9440dcd4f0885975e0d98c1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5d12f1a2343018f05f0e741222b844c562b50f5e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51816463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189360"
 ---
 # <a name="call-tree-view---contention-data"></a>호출 트리 뷰 - 경합 데이터
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-호출 트리 뷰에는 프로파일링 된 응용 프로그램에서 이동한 함수 실행 경로가 표시됩니다. 트리의 루트는 응용 프로그램 또는 구성 요소에 대한 진입점입니다. 각 함수 노드는 호출한 모든 함수, 다른 스레드 또는 프로세스와 리소스에 대해 경합하기 때문에 함수가 차단된 횟수 및 함수가 차단된 시간을 나열합니다.  
+호출 트리 뷰에는 프로파일링 된 애플리케이션에서 이동한 함수 실행 경로가 표시됩니다. 트리의 루트는 애플리케이션 또는 구성 요소에 대한 진입점입니다. 각 함수 노드는 호출한 모든 함수, 다른 스레드 또는 프로세스와 리소스에 대해 경합하기 때문에 함수가 차단된 횟수 및 함수가 차단된 시간을 나열합니다.  
   
  호출 트리 뷰의 값은 호출 트리의 부모 함수가 호출한 함수 인스턴스에 대한 값입니다. 비율 값은 프로파일링 실행 시 총 경합 수와 함수 인스턴스 값을 비교하여 계산됩니다.  
   
 ## <a name="highlighting-the-execution-hot-path"></a>실행 부하 과다 경로 강조 표시  
  호출 트리 뷰에서는 가장 많은 경합을 만든 프로세스 또는 함수의 실행 경로를 확장하고 강조 표시할 수 있습니다.  
   
--   최대 활성 경로를 표시하려면 프로세스 또는 함수를 마우스 오른쪽 단추로 클릭한 후 **실행 부하 과다 경로 확장**을 클릭합니다.  
+- 최대 활성 경로를 표시하려면 프로세스 또는 함수를 마우스 오른쪽 단추로 클릭한 후 **실행 부하 과다 경로 확장**을 클릭합니다.  
   
 ## <a name="setting-the-call-tree-root-node"></a>호출 트리 루트 노드 설정  
  프로파일링 실행 시 각 프로세스는 루트 노드로 표시됩니다. 호출 트리 뷰의 시작 노드를 설정하려면 시작 노드로 설정하려는 노드를 마우스 오른쪽 단추로 클릭하고 **루트 설정**을 클릭합니다.  
@@ -67,6 +62,3 @@ ms.locfileid: "51816463"
  [호출 트리 뷰 - 샘플링](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
  [호출 트리 뷰](../profiling/call-tree-view-instrumentation-data.md)   
  [호출 트리 뷰](../profiling/call-tree-view-sampling-data.md)
-
-
-

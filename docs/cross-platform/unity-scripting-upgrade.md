@@ -8,23 +8,23 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 294f3efe5e541a316a8bb90da07d75e9319e7983
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 0fb4560a196404687c60ce67f39b9c0754a24769
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027376"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253134"
 ---
 # <a name="using-net-4x-in-unity"></a>Unity에서 .NET 4.x 사용
 
 Unity 스크립팅을 기반으로 하는 기술인 C# 및 .NET는 Microsoft가 2002년에 처음 출시한 이래 계속 업데이트를 받아왔습니다. 하지만 Unity 개발자는 C# 언어 및 .NET Framework에 추가된 새로운 기능의 일관된 흐름을 인식하지 못할 수 있습니다. Unity 2017.1 이전에는 Unity가 .NET 3.5 해당 스크립팅 런타임을 사용하여 수년간 업데이트를 받지 못했기 때문입니다.
 
-Unity 2017.1의 릴리스부터 Unity는 NET 4.6 C# 6 호환 버전으로 업그레이드된 실험적 버전을 도입했습니다. Unity 2018.1에서는 .NET 4.x 해당 런타임이 더 이상 실험적인 것으로 간주되지 않지만, 이전 .NET 3.5 해당 런타임은 이제 레거시 버전으로 간주됩니다. 또한 Unity 2018.3의 릴리스부터 Unity는 업그레이드된 스크립팅 런타임을 기본 선택으로 설정하고 C# 7로 업데이트할 계획입니다. 이 로드맵에 대한 자세한 정보와 최신 업데이트는 Unity의 [블로그 게시물](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/)을 읽거나 [실험적 스크립팅 미리 보기 포럼](https://forum.unity.com/forums/experimental-scripting-previews.107/)을 방문하세요. 그 동안 .NET 4.x 스크립팅 런타임에서 현재 사용할 수 있는 새 기능에 대해 자세히 알아보려면 아래 섹션을 확인하세요.
+Unity 2017.1의 릴리스부터 Unity는 스크립팅 런타임이 NET 4.6 C# 6 호환 버전으로 업그레이드된 실험적 버전을 도입했습니다. Unity 2018.1에서는 .NET 4.x 해당 런타임이 더 이상 실험적인 것으로 간주되지 않지만, 이전 .NET 3.5 해당 런타임은 이제 레거시 버전으로 간주됩니다. 또한 Unity 2018.3의 릴리스부터 Unity는 업그레이드된 스크립팅 런타임을 기본 선택으로 설정하고 C# 7로 업데이트할 계획입니다. 이 로드맵에 대한 자세한 정보와 최신 업데이트는 Unity의 [블로그 게시물](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/)을 읽거나 [실험적 스크립팅 미리 보기 포럼](https://forum.unity.com/forums/experimental-scripting-previews.107/)을 방문하세요. 그 동안 .NET 4.x 스크립팅 런타임에서 현재 사용할 수 있는 새 기능에 대해 자세히 알아보려면 아래 섹션을 확인하세요.
 
 ## <a name="prerequisites"></a>전제 조건
 
 * [Unity 2017.1 이상](https://unity3d.com/)(2018.2 권장)
-* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/)
+* [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 
 ## <a name="enabling-the-net-4x-scripting-runtime-in-unity"></a>Unity에서.NET 4.x 스크립팅 런타임 사용
 
@@ -82,7 +82,7 @@ Visual Studio는 Unity 프로젝트가 열릴 때마다 .csproj 및.sln 파일�
 
 1. zip 파일 내에서 **lib/netstandard2.0** 디렉터리로 이동하여 **Newtonsoft.Json.dll** 파일을 복사합니다.
 
-1. Unity 프로젝트의 루트 **자산** 폴더에서 **플러그 인**이라는 새 폴더를 만듭니다. 플러그 인은 Unity의 특수 폴더 이름입니다. 자세한 내용은 [Unity 설명서](https://docs.unity3d.com/Manual/Plugins.html)를 참조하세요.
+1. Unity 프로젝트의 루트 **Assets** 폴더에서 **Plugins**라는 새 폴더를 만듭니다. 플러그 인은 Unity의 특수 폴더 이름입니다. 자세한 내용은 [Unity 설명서](https://docs.unity3d.com/Manual/Plugins.html)를 참조하세요.
 
 1. **Newtonsoft.Json.dll** 파일을 Unity 프로젝트의 **플러그 인** 디렉터리에 붙여 넣습니다.
 
@@ -181,9 +181,9 @@ public string PlayerHealthUiText => $"Player health: {Health}";
 
 ### <a name="task-based-asynchronous-pattern-tap"></a>TAP(작업 기반 비동기 패턴)
 
-[비동기 프로그래밍](https://docs.microsoft.com/dotnet/csharp/async)을 사용하면 응용 프로그램이 응답하지 않는 시간이 오래 걸리는 작업을 수행할 수 있습니다. 또한 이 기능을 사용하면 시간이 많이 소요되는 작업이 완료될 때까지 코드를 기다렸다가 이러한 작업의 결과에 따라 코드를 계속 사용할 수 있습니다. 예를 들어 파일이 로드되거나 네트워크 작업이 완료될 때까지 기다릴 수 있습니다.
+[비동기 프로그래밍](https://docs.microsoft.com/dotnet/csharp/async)을 사용하면 애플리케이션이 미응답 상태로 변하지 않고, 시간이 오래 걸리는 작업을 수행할 수 있습니다 또한 이 기능을 사용하면 시간이 많이 소요되는 작업이 완료될 때까지 코드를 기다렸다가 이러한 작업의 결과에 따라 코드를 계속 사용할 수 있습니다. 예를 들어 파일이 로드되거나 네트워크 작업이 완료될 때까지 기다릴 수 있습니다.
 
-Unity에서 비동기 프로그래밍은 일반적으로 [코루틴](https://docs.unity3d.com/Manual/Coroutines.html)을 사용하여 수행됩니다. 그러나 C# 5 이후부터 .NET 개발에서 비동기 프로그래밍의 기본 방법은 [ System.Threading.Task](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task)와 함께 `async` 및 `await` 키워드를 사용하는 [TAP(작업 기반 비동기 패턴)](https://docs.microsoft.com/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap)입니다. 요약하면 `async` 함수에서 나머지 응용 프로그램의 업데이트를 차단하지 않고 `await` 작업의 완료가 가능합니다.
+Unity에서 비동기 프로그래밍은 일반적으로 [코루틴](https://docs.unity3d.com/Manual/Coroutines.html)을 사용하여 수행됩니다. 그러나 C# 5 이후부터 .NET 개발에서 비동기 프로그래밍의 기본 방법은 [ System.Threading.Task](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task)와 함께 `async` 및 `await` 키워드를 사용하는 [TAP(작업 기반 비동기 패턴)](https://docs.microsoft.com/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap)입니다. 요약하면 `async` 함수에서 나머지 애플리케이션의 업데이트를 차단하지 않고 `await` 작업의 완료가 가능합니다.
 
 ```csharp
 // Unity coroutine
@@ -231,7 +231,7 @@ TAP는 Unity별 뉘앙스를 고려해야 하는 복잡한 주제입니다. 결�
 
 * 대기할 비동기 함수는 반환 형식이 [`Task`](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task) 또는 [`Task<TResult>`](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1)이어야 합니다.
 * 작업을 반환하는 비동기 함수에는 **"Async"** 접미사가 해당 이름에 추가되어야 합니다. "Async" 접미사는 함수가 항상 대기해야 함을 나타냅니다.
-* 기존 동기식 코드에서 비동기 함수를 실행하는 함수에 대해서만 `async void` 반환 형식을 사용합니다. 이러한 함수는 자체적으로 대기할 수 없으며 이름에 "Async" 접미사가 없어야 합니다.
+* 기존 동기식 코드에서 비동기 함수를 실행하는 함수에 대해서 `async void` 반환 형식만을 사용합니다. 이러한 함수는 자체적으로 대기할 수 없으며 이름에 "Async" 접미사가 없어야 합니다.
 * Unity는 UnitySynchronizationContext를 사용하여 기본적으로 주 스레드에서 비동기 함수가 실행되도록 합니다. Unity API는 주 스레드의 외부에서 액세스할 수 없습니다.
 * [`Task.Run`](https://msdn.microsoft.com/library/hh195051.aspx) 및 [`Task.ConfigureAwait(false)`](https://msdn.microsoft.com/library/system.threading.tasks.task.configureawait.aspx)와 같은 메서드를 사용하여 백그라운드 스레드에서 작업을 실행할 수 있습니다. 이 기술은 성능 향상을 위해 주 스레드에서 비용이 많이 드는 작업을 오프로딩하는 데 유용합니다. 그러나 백그라운드 스레드를 사용하면 [경합 조건](https://wikipedia.org/wiki/Race_condition)과 같이 디버그하기 어려운 문제가 발생할 수 있습니다.
 * Unity API는 주 스레드 외부에서 액세스할 수 없습니다.
@@ -247,7 +247,7 @@ TAP는 Unity별 뉘앙스를 고려해야 하는 복잡한 주제입니다. 결�
 * 이 시점에서 Unity는 TAP를 코루틴의 도매 대체품으로 권장하지 않습니다. 프로파일링은 지정된 프로젝트에 대해 한 방식과 다른 방식의 특정 결과를 알 수 있는 유일한 방법입니다.
 
 > [!NOTE]
-> Unity 2018.2부터 중단점이 있는 디버깅 비동기 메서드가 충분히 지원되지 않지만 [이 기능은 Unity 2018.3에 필요합니다](https://twitter.com/jbevain/status/900043560665235456).
+> Unity 2018.2부터 중단점이 있는 디버깅 비동기 메서드가 충분히 지원되지 않지만 [이 기능은 Unity 2018.3에 있을것으로 예상됩니다](https://twitter.com/jbevain/status/900043560665235456).
 
 ### <a name="nameof-operator"></a>nameof 연산자
 
@@ -333,15 +333,15 @@ public class UsingStaticExample: MonoBehaviour
 
 ## <a name="il2cpp-considerations"></a>IL2CPP 고려 사항
 
-iOS와 같은 플랫폼에 게임을 내보낼 때 Unity는 IL2CPP 엔진을 사용하여 IL을 C++ 코드로 "트랜스 파일"한 다음, 대상 플랫폼의 네이티브 컴파일러를 사용하여 컴파일합니다. 이 시나리오에서는 리플렉션 부분과 같이 지원되지 않는 몇 가지 .NET 기능 및 `dynamic` 키워드 사용법이 있습니다. 사용자 코드에서 이러한 기능을 사용하여 제어할 수 있지만, Unity 및 IL2CPP로 작성되지 않은 타사 DLL 및 SDK를 사용하면 문제가 발생할 수 있습니다. 이 항목에 대한 자세한 내용은 Unity 사이트의 [스크립팅 제한](https://docs.unity3d.com/Manual/ScriptingRestrictions.html) 문서를 참조하세요.
+iOS와 같은 플랫폼에 게임을 내보낼 때 Unity는 IL2CPP 엔진을 사용하여 IL을 C++ 코드로 "트랜스 파일"한 다음, 대상 플랫폼의 네이티브 컴파일러를 사용하여 컴파일합니다. 이 시나리오에서는 리플렉션 부분 및 `dynamic` 키워드 사용법과 같이 지원되지 않는 몇 가지 .NET 기능이 있습니다. 사용자 코드에서 이러한 기능을 사용하여 제어할 수 있지만, Unity 및 IL2CPP로 작성되지 않은 타사 DLL 및 SDK를 사용하면 문제가 발생할 수 있습니다. 이 항목에 대한 자세한 내용은 Unity 사이트의 [스크립팅 제한](https://docs.unity3d.com/Manual/ScriptingRestrictions.html) 문서를 참조하세요.
 
-또한 위의 Json.NET 예제에서 설명된 바와 같이 Unity는 IL2CPP 내보내기 프로세스 중에 사용되지 않는 코드를 제거하려고 시도합니다.  이는 일반적으로 문제가 되지 않지만 리플렉션을 사용하는 라이브러리에서 내보내기 시점을 확인할 수 없는 런타임 시 호출되는 속성이나 메서드를 실수로 제거할 수 있습니다.  이러한 문제를 해결하려면 제거 프로세스를 실행하지 않는 어셈블리 및 네임스페이스 목록이 포함된 **link.xml** 파일을 프로젝트에 추가합니다.  자세한 세부 정보는 [바이트코드 제거에 대한 Unity의 문서](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html)를 참조하세요.
+또한 위의 Json.NET 예제에서 설명된 바와 같이 Unity는 IL2CPP 내보내기 프로세스 중에 사용되지 않는 코드를 제거하려고 시도합니다.  이 동작은 일반적으로 문제가 되지 않지만 리플렉션을 사용하는 라이브러리에서 내보내기 시 확인할 수 없는, 런타임에 호출되는 속성이나 메서드를 실수로 제거할 수 있습니다.  이러한 문제를 해결하려면 제거 프로세스를 실행하지 않는 어셈블리 및 네임스페이스 목록이 포함된 **link.xml** 파일을 프로젝트에 추가합니다.  자세한 세부 정보는 [바이트코드 제거에 대한 Unity의 문서](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html)를 참조하세요.
 
 ## <a name="net-4x-sample-unity-project"></a>.NET 4.x 샘플 Unity 프로젝트
 
 샘플에는 여러 .NET 4.x 기능의 예가 포함되어 있습니다. [GitHub](https://github.com/Microsoft/unity-scripting-upgrade)에서 프로젝트를 다운로드하거나 소스 코드를 볼 수 있습니다.
 
-## <a name="additional-resources"></a>추가 자료
+## <a name="additional-resources"></a>추가 리소스
 
 * [Unity 블로그 - Unity 2018.2에서 스크립팅 런타임 개선](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/)
 * [C#의 기록](https://docs.microsoft.com/dotnet/csharp/whats-new/csharp-version-history)

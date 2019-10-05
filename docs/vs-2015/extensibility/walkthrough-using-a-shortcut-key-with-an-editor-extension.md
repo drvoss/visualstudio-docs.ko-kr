@@ -1,26 +1,21 @@
 ---
-title: '연습: 편집기 확장을 사용 하 여 바로 가기 키 사용 | Microsoft Docs'
-ms.custom: ''
+title: '연습: 편집기 확장에서 바로 가기 키 사용 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 caps.latest.revision: 33
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1e68cf9d3e33ad07ab092de680078972dfaf2d70
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 5c9cb20bafa552c47a2f599d12e6b66fdb2bde59
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797457"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201951"
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>연습: 편집기 확장에서 바로 가기 키 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,9 +50,9 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 ## <a name="defining-the-command-filter"></a>명령 필터를 정의합니다.  
  명령 필터는의 구현 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, 장식 인스턴스화하여 명령을 처리 합니다.  
   
-1.  클래스 파일을 추가하고 이름을 `KeyBindingCommandFilter`로 지정합니다.  
+1. 클래스 파일을 추가하고 이름을 `KeyBindingCommandFilter`로 지정합니다.  
   
-2.  다음 using 문을 추가합니다.  
+2. 다음 using 문을 추가합니다.  
   
     ```csharp  
     using System;  
@@ -68,13 +63,13 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-3.  KeyBindingCommandFilter 이라는 클래스에서 상속 해야 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>합니다.  
+3. KeyBindingCommandFilter 이라는 클래스에서 상속 해야 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>합니다.  
   
     ```csharp  
     internal class KeyBindingCommandFilter : IOleCommandTarget  
     ```  
   
-4.  텍스트 보기에 대 한 전용 필드, 다음 명령을 명령 체인 및 명령 필터가 이미 추가 되어 있는지 여부를 나타내는 플래그를 추가 합니다.  
+4. 텍스트 보기에 대 한 전용 필드, 다음 명령을 명령 체인 및 명령 필터가 이미 추가 되어 있는지 여부를 나타내는 플래그를 추가 합니다.  
   
     ```csharp  
     private IWpfTextView m_textView;  
@@ -83,7 +78,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     internal bool m_adorned;  
     ```  
   
-5.  텍스트 뷰를 설정 하는 생성자를 추가 합니다.  
+5. 텍스트 뷰를 설정 하는 생성자를 추가 합니다.  
   
     ```csharp  
     public KeyBindingCommandFilter(IWpfTextView textView)  
@@ -93,7 +88,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-6.  구현 된 `QueryStatus()` 같이 메서드.  
+6. 구현 된 `QueryStatus()` 같이 메서드.  
   
     ```vb  
     int IOleCommandTarget.QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)  
@@ -102,7 +97,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-7.  구현 된 `Exec()` 한다는 자주색 상자를 뷰에 추가 하는 경우 메서드는 문자가 입력 된 +.  
+7. 구현 된 `Exec()` 한다는 자주색 상자를 뷰에 추가 하는 경우 메서드는 문자가 입력 된 +.  
   
     ```csharp  
     int IOleCommandTarget.Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)  
@@ -129,7 +124,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 ## <a name="adding-the-command-filter"></a>명령 필터를 추가합니다.  
  Adornment 공급자 명령 필터 텍스트 보기에 추가 해야 합니다. 이 예제에서는 공급자 구현 <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> 텍스트 뷰 생성 이벤트를 수신 대기 하도록 합니다. 또한이 adornment 공급자 장식의 Z 순서를 정의 하는 장식 계층을 내보냅니다.  
   
-1.  KeyBindingTestTextViewCreationListener 파일에 다음 추가 문을 사용 하 여:  
+1. KeyBindingTestTextViewCreationListener 파일에 다음 추가 문을 사용 하 여:  
   
     ```csharp  
     using System;  
@@ -144,7 +139,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-2.  Adornment 계층 정의에서 AdornmentLayer의 이름을 변경할 **KeyBindingTest** 하 **PurpleCornerBox**합니다.  
+2. Adornment 계층 정의에서 AdornmentLayer의 이름을 변경할 **KeyBindingTest** 하 **PurpleCornerBox**합니다.  
   
     ```csharp  
     [Export(typeof(AdornmentLayerDefinition))]  
@@ -153,7 +148,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     public AdornmentLayerDefinition editorAdornmentLayer;  
     ```  
   
-3.  텍스트 뷰 어댑터를 가져오려면 가져와야는 <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>합니다.  
+3. 텍스트 뷰 어댑터를 가져오려면 가져와야는 <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>합니다.  
   
     ```csharp  
     [Import(typeof(IVsEditorAdaptersFactoryService))]  
@@ -161,7 +156,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-4.  변경 된 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> 메서드를 추가 하도록는 `KeyBindingCommandFilter`합니다.  
+4. 변경 된 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> 메서드를 추가 하도록는 `KeyBindingCommandFilter`합니다.  
   
     ```csharp  
     public void TextViewCreated(IWpfTextView textView)  
@@ -170,7 +165,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-5.  `AddCommandFilter` 처리기가 텍스트 뷰 어댑터를 가져와 명령 필터를 추가 합니다.  
+5. `AddCommandFilter` 처리기가 텍스트 뷰 어댑터를 가져와 명령 필터를 추가 합니다.  
   
     ```csharp  
     void AddCommandFilter(IWpfTextView textView, KeyBindingCommandFilter commandFilter)  
@@ -243,9 +238,8 @@ private void CreateVisuals(ITextViewLine line)
   
 ## <a name="building-and-testing-the-code"></a>코드 빌드 및 테스트  
   
-1.  KeyBindingTest 솔루션을 빌드하고 실험적 인스턴스에서 실행 합니다.  
+1. KeyBindingTest 솔루션을 빌드하고 실험적 인스턴스에서 실행 합니다.  
   
-2.  텍스트 파일을 열거나 만듭니다. 입력 문자를 포함 하는 몇 가지 단어 'a', 입력 및 + 텍스트 보기에서 아무 곳 이나 합니다.  
+2. 텍스트 파일을 열거나 만듭니다. 입력 문자를 포함 하는 몇 가지 단어 'a', 입력 및 + 텍스트 보기에서 아무 곳 이나 합니다.  
   
      자주색 사각형 파일에서 'a' 모든 문자에 표시 됩니다.
-

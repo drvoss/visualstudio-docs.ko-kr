@@ -1,22 +1,20 @@
 ---
 title: 단위 테스트 기본 사항
-ms.date: 2016-01-07
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
+ms.date: 08/07/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b56608a0d81be17fbd68ad7ccd0d5626a818376
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 5060b2a3b532de26d78eca4ce16661768748bbd7
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740353"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891350"
 ---
 # <a name="unit-test-basics"></a>단위 테스트 기본 사항
 
@@ -26,7 +24,7 @@ ms.locfileid: "53740353"
 
 코드에서 테스트 프로젝트 및 테스트 메서드를 빠르게 생성하거나, 필요에 따라 테스트를 수동으로 만들 수 있습니다. IntelliTest를 사용하여 .NET 코드를 탐색하는 경우 테스트 데이터 및 단위 테스트 도구 모음을 생성할 수 있습니다. 코드의 모든 문에 대해 해당 문을 실행할 테스트 입력이 생성됩니다. [코드에 대한 단위 테스트를 생성](generate-unit-tests-for-your-code-with-intellitest.md)하는 방법을 알아봅니다.
 
-테스트 탐색기에서는 또한 테스트 탐색기 추가 기능 인터페이스가 구현된 타사 및 오픈 소스 방식의 단위 테스트 프레임워크도 실행할 수 있습니다. 이러한 여러 프레임워크는 Visual Studio 확장 관리자 및 Visual Studio 갤러리를 통해 추가할 수 있습니다. [타사 단위 테스트 프레임워크 설치](../test/install-third-party-unit-test-frameworks.md)를 참조하세요.
+테스트 탐색기에서는 또한 테스트 탐색기 추가 기능 인터페이스가 구현된 타사 및 오픈 소스 방식의 단위 테스트 프레임워크도 실행할 수 있습니다. 이러한 여러 프레임워크는 Visual Studio 확장 관리자 및 Visual Studio 갤러리를 통해 추가할 수 있습니다. 자세한 내용은 [타사 단위 테스트 프레임워크 설치](../test/install-third-party-unit-test-frameworks.md)를 참조하세요.
 
 ## <a name="get-started"></a>시작
 
@@ -40,9 +38,14 @@ ms.locfileid: "53740353"
 
 ## <a name="the-mybank-solution-example"></a>MyBank 솔루션 예제
 
-이 항목에서는 `MyBank` 라는 가상의 애플리케이션 개발이 예제로 사용됩니다. 이 항목의 설명을 이해하는 데에는 실제 코드가 필요하지 않습니다. 테스트 메서드는 C#으로 작성되었으며, 관리 코드에 대한 Microsoft 유닛 테스트 프레임워크를 사용하여 표시됩니다. 그러나 개념은 다른 언어와 프레임워크로 쉽게 전송됩니다.
+이 문서에서는 `MyBank`라는 가상의 애플리케이션 개발이 예제로 사용됩니다. 이 항목의 설명을 이해하는 데에는 실제 코드가 필요하지 않습니다. 테스트 메서드는 C#으로 작성되었으며, 관리 코드에 대한 Microsoft 유닛 테스트 프레임워크를 사용하여 표시됩니다. 그러나 개념은 다른 언어와 프레임워크로 쉽게 전송됩니다.
 
+::: moniker range="vs-2017"
 ![MyBank 솔루션](../test/media/ute_mybanksolution.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![MyBank Solution 2019](../test/media/vs-2019/basics-mybank-solution.png)
+::: moniker-end
 
 `MyBank` 애플리케이션을 설계할 때의 첫 번째 작업에는 개별 계좌 및 은행과의 트랜잭션을 나타내는 계좌 구성 요소와 개별 계좌를 집계하고 관리하는 기능을 나타내는 데이터베이스 구성 요소가 포함됩니다.
 
@@ -71,7 +74,7 @@ public void Withdraw(double amount)
     }
     else
     {
-        throw new ArgumentException(amount, "Withdrawal exceeds balance!")
+        throw new ArgumentException(nameof(amount), "Withdrawal exceeds balance!");
     }
 }
 ```
@@ -80,21 +83,34 @@ public void Withdraw(double amount)
 
 ## <a name="create-unit-test-projects-and-test-methods"></a>단위 테스트 프로젝트 및 테스트 메서드 만들기
 
-코드에서 단위 테스트 프로젝트와 단위 테스트 스텁을 생성하는 것이 더 빠를 수 있습니다. 또는 요구 사항에 따라 단위 테스트 프로젝트 및 테스트를 수동으로 만들도록 선택할 수 있습니다.
+코드에서 단위 테스트 프로젝트와 단위 테스트 스텁을 생성하는 것이 더 빠를 수 있습니다. 또는 요구 사항에 따라 단위 테스트 프로젝트 및 테스트를 수동으로 만들도록 선택할 수 있습니다. 타사 프레임워크로 단위 테스트를 만들려면 다음 확장 기능 중 하나가 설치되어 있어야 합니다. [NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) 또는 [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator).
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>단위 테스트 프로젝트 및 단위 테스트 스텁 생성
 
-1. 코드 편집기 창에서 마우스 오른쪽 단추를 클릭하고 상황에 맞는 메뉴에서 **단위 테스트 만들기** 를 선택합니다.
+1. 코드 편집기 창에서 마우스 오른쪽 단추를 클릭하고 오른쪽 클릭 메뉴에서 [**단위 테스트 만들기**](create-unit-tests-menu.md)를 선택합니다.
 
-    ![편집기 창에서 상황에 맞는 메뉴 표시](../test/media/createunittestsrightclick.png)
+   ::: moniker range="vs-2017"
+   ![편집기 창에서 상황에 맞는 메뉴 표시](../test/media/createunittestsrightclick.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![편집기 창에서 상황에 맞는 메뉴 표시](../test/media/vs-2019/basics-create-unit-tests.png)
+   ::: moniker-end
+
+   > [!NOTE]
+   > **단위 테스트 만들기** 메뉴 명령은 .NET Framework(하지만.NET Core 아님)를 대상으로 하는 관리 코드에서만 사용할 수 있습니다.
 
 2. **확인**을 클릭하여 단위 테스트를 만드는 기본값을 그대로 사용하거나, 단위 테스트 프로젝트와 단위 테스트를 만들고 이름을 지정하는 데 사용되는 값을 변경합니다. 단위 테스트 메서드에 기본적으로 추가되는 코드를 선택할 수 있습니다.
 
-    ![편집기에서 마우스 오른쪽 단추를 클릭하고 단위 테스트 만들기를 선택](../test/media/createunittestsdialog.png)
+   ![Visual Studio에서 단위 테스트 만들기 대화 상자](../test/media/create-unit-tests.png)
 
 3. 단위 테스트 스텁은 클래스의 모든 메서드에 대한 새 단위 테스트 프로젝트에서 만들어집니다.
 
-    ![단위 테스트가 생성됨](../test/media/createunittestsstubs.png)
+   ::: moniker range="vs-2017"
+   ![단위 테스트가 생성됨](../test/media/createunittestsstubs.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![단위 테스트가 생성됨](../test/media/vs-2019/basics-test-stub.png)
+   ::: moniker-end
 
 4. 이제 [단위 테스트 메서드에 코드를 추가](#write-your-tests) 하여 단위 테스트에 의미를 부여하는 방법과 코드를 철저히 테스트하기 위해 추가할 수 있는 추가 단위 테스트에 대해 알아보겠습니다.
 
@@ -104,30 +120,42 @@ public void Withdraw(double amount)
 
 **솔루션에 단위 테스트 프로젝트를 추가하려면**
 
-1. **파일** 메뉴에서 **새로 만들기**를 선택한 다음, **프로젝트**를 선택합니다(키보드 **Ctrl**+**Shift**+**N**).
+1. **솔루션 탐색기**에서 솔루션을 마우스 오른쪽 단추로 클릭하고 **추가** > **새로 만들기** **프로젝트**를 차례로 선택합니다.
 
-2. **새 프로젝트** 대화 상자에서 **설치됨** 노드를 확장하고 테스트 프로젝트에 사용하려는 언어를 선택한 다음, **테스트**를 선택합니다.
+::: moniker range="vs-2017"
+
+2. **새 프로젝트** 대화 상자에서 **설치됨** 노드를 확장하고 테스트 프로젝트에 사용하려는 언어를 선택한 후 **테스트**를 선택합니다.
 
 3. Microsoft 단위 테스트 프레임워크 중 하나를 사용하려면 프로젝트 템플릿 목록에서 **단위 테스트 프로젝트** 를 선택합니다. 그렇지 않으면 사용하려는 단위 테스트 프레임워크의 프로젝트 템플릿을 선택합니다. 예제에 사용된 `Accounts` 프로젝트를 테스트하려면 프로젝트 이름을 `AccountsTests`로 지정해야 합니다.
 
-   > [!WARNING]
+   > [!NOTE]
    > 모든 타사 및 오픈 소스 단위 테스트 프레임워크에서 Visual Studio 프로젝트 템플릿이 제공되지는 않습니다. 프로젝트 만들기에 대한 정보는 해당 프레임워크 설명서를 참조하세요.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. 프로젝트 템플릿 검색 상자를 통해 사용할 테스트 프레임워크에 대한 단위 테스트 프로젝트 템플릿을 찾습니다.
+
+3. 다음 페이지에서 프로젝트의 이름을 지정합니다. 예제에 사용된 `Accounts` 프로젝트를 테스트하기 위해 프로젝트 이름을 `AccountsTests`로 지정할 수 있습니다.
+
+::: moniker-end
 
 4. 단위 테스트 프로젝트에서 이 예제에서 테스트하려는 코드 프로젝트에 대한 참조를 Accounts 프로젝트에 추가합니다.
 
    코드 프로젝트에 대한 참조를 만들려면:
 
-   1.  **솔루션 탐색기**에서 프로젝트를 선택합니다.
+   1. **솔루션 탐색기**에서 프로젝트를 선택합니다.
 
-   2.  **프로젝트** 메뉴에서 **참조 추가**를 선택합니다.
+   2. **프로젝트** 메뉴에서 **참조 추가**를 선택합니다.
 
-   3.  **참조 관리자** 대화 상자에서 **솔루션** 노드를 열고 **프로젝트**를 선택합니다. 코드 프로젝트 이름을 선택하고 대화 상자를 닫습니다.
+   3. **참조 관리자** 대화 상자에서 **솔루션** 노드를 열고 **프로젝트**를 선택합니다. 코드 프로젝트 이름을 선택하고 대화 상자를 닫습니다.
 
 각 단위 테스트 프로젝트에는 코드 프로젝트에 있는 클래스 이름과 동일한 클래스가 포함됩니다. 이 예제의 경우 `AccountsTests` 프로젝트에는 다음과 같은 클래스가 포함됩니다.
 
--   `AccountInfoTests` 클래스에는 `AccountInfo` 프로젝트의 `Accounts` 클래스에 대한 단위 테스트 메서드가 포함됩니다.
+- `AccountInfoTests` 클래스에는 `AccountInfo` 프로젝트의 `Accounts` 클래스에 대한 단위 테스트 메서드가 포함됩니다.
 
--   `CheckingAccountTests` 클래스는 `CheckingAccount` 클래스에 대한 단위 테스트 메서드가 포함됩니다.
+- `CheckingAccountTests` 클래스는 `CheckingAccount` 클래스에 대한 단위 테스트 메서드가 포함됩니다.
 
 ## <a name="write-your-tests"></a>테스트 작성
 
@@ -152,38 +180,36 @@ public void Withdraw_ValidAmount_ChangesBalance()
     double withdrawal = 1.0;
     double expected = 9.0;
     var account = new CheckingAccount("JohnDoe", currentBalance);
+
     // act
     account.Withdraw(withdrawal);
-    double actual = account.Balance;
+
     // assert
-    Assert.AreEqual(expected, actual);
+    Assert.AreEqual(expected, account.Balance);
 }
 
 [TestMethod]
-[ExpectedException(typeof(ArgumentException))]
 public void Withdraw_AmountMoreThanBalance_Throws()
 {
     // arrange
     var account = new CheckingAccount("John Doe", 10.0);
-    // act
-    account.Withdraw(20.0);
-    // assert is handled by the ExpectedException
+
+    // act and assert
+    Assert.ThrowsException<System.ArgumentException>(() => account.Withdraw(20.0));
 }
 ```
 
-`Withdraw_ValidAmount_ChangesBalance` 는 명시적인 `Assert` 문을 사용해서 테스트 메서드가 통과되거나 실패하는지 확인하지만 `Withdraw_AmountMoreThanBalance_Throws` 는 `ExpectedException` 특성을 사용해서 테스트 메서드의 성공을 확인합니다. 내부적으로 단위 테스트 프레임워크는 try/catch 문으로 테스트 메서드를 래핑합니다. 대부분의 경우, 예외가 catch되면 테스트 메서드가 실패하고 예외가 무시됩니다. `ExpectedException` 특성은 지정된 예외가 throw될 경우 테스트 메서드가 통과되도록 만듭니다.
-
 Microsoft 유닛 테스트 프레임워크에 대한 자세한 내용은 다음 항목 중 하나를 참조하세요.
 
--   [코드 단위 테스트](unit-test-your-code.md)
+- [코드 단위 테스트](unit-test-your-code.md)
 
--   [C/C++에 대한 단위 테스트 작성](writing-unit-tests-for-c-cpp.md)
+- [C/C++에 대한 단위 테스트 작성](writing-unit-tests-for-c-cpp.md)
 
--   [단위 테스트에서 MSTest 프레임워크 사용](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+- [단위 테스트에서 MSTest 프레임워크 사용](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
 
 ## <a name="set-timeouts-for-unit-tests"></a>단위 테스트에 대한 시간 제한 설정
 
-개별 테스트 메서드에 대해 제한 시간을 설정하려면
+MSTest 프레임워크를 사용하는 경우 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAttribute>를 사용하여 개별 테스트 메서드에서 시간 제한을 설정할 수 있습니다.
 
 ```csharp
 [TestMethod]
@@ -207,9 +233,14 @@ public void My_Test ()
 
 테스트 프로젝트를 빌드하면 테스트가 **테스트 탐색기**에 나타납니다. **테스트 탐색기**가 표시되지 않는 경우 Visual Studio 메뉴에서 **테스트**를 선택하고 **Windows**를 선택한 다음, **테스트 탐색기**를 선택합니다.
 
+::: moniker range="vs-2017"
 ![단위 테스트 탐색기](../test/media/ute_failedpassednotrunsummary.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![단위 테스트 탐색기](../test/media/vs-2019/basics-test-explorer.png)
+::: moniker-end
 
-테스트를 실행, 작성 및 다시 실행할 때 **테스트 탐색기**의 기본 보기에는 **실패한 테스트**, **통과한 테스트**, **건너뛴 테스트** 및 **실행하지 않은 테스트**그룹으로 결과를 표시합니다. 그룹 제목을 선택하면 해당 그룹의 모든 테스트를 표시하는 보기를 열 수 있습니다.
+테스트를 실행하고 작성하고 다시 실행하면 **테스트 탐색기**는 **실패한 테스트**, **통과한 테스트**, **건너뛴 테스트** 및 **실행하지 않은 테스트**의 그룹에 결과를 표시합니다. 툴바에서 다른 그룹화 방법 옵션을 선택할 수 있습니다.
 
 또한 어떤 보기에서든 전역 수준에서 검색 상자에 텍스트를 입력하거나 미리 정의된 필터 중 하나를 선택하여 테스트를 필터링할 수 있습니다. 언제든지 원하는 테스트를 선택해서 실행할 수 있습니다. 테스트 실행 결과는 탐색기 창 맨 위에 있는 통과/실패 표시줄에 즉시 표시됩니다. 테스트를 선택하면 테스트 메서드 결과에 대한 세부 정보가 표시됩니다.
 
@@ -217,26 +248,56 @@ public void My_Test ()
 
 **테스트 탐색기** 도구 모음을 사용하면 원하는 테스트를 검색, 구성 및 실행할 수 있습니다.
 
+::: moniker range="vs-2017"
 ![테스트 탐색기 도구 모음에서 테스트 실행](../test/media/ute_toolbar.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![테스트 탐색기 도구 모음에서 테스트 실행](../test/media/vs-2019/test-explorer-toolbar-diagram-16-2.png)
+::: moniker-end
 
-사용자는 **모두 실행** 을 선택해서 모든 테스트를 실행하거나 **실행** 을 선택해서 실행할 테스트 하위 집합을 선택할 수 있습니다. 일련의 테스트들을 실행한 다음에는 **테스트 탐색기** 창의 맨 아래에 테스트 실행의 요약이 나타납니다. 테스트를 선택하면 아래쪽 창에 해당 테스트의 세부 정보가 표시됩니다. **테스트 열기**를 상황에 맞는 메뉴에서(키보드: **F12**) 선택하여 선택한 테스트에 대한 소스 코드를 표시합니다.
+사용자는 **모두 실행** 을 선택해서 모든 테스트를 실행하거나 **실행** 을 선택해서 실행할 테스트 하위 집합을 선택할 수 있습니다. 테스트를 선택하면 테스트 세부 정보 창에 해당 테스트의 세부 정보가 표시됩니다. 오른쪽 클릭 메뉴에서 **테스트 열기**를(키보드: **F12**) 선택하여 선택한 테스트에 대한 소스 코드를 표시합니다.
+
+::: moniker range="vs-2017"
 
 개별 테스트에 종속성이 없어 임의 순서로 실행할 수 있는 경우 도구 모음의 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 토글 단추를 사용하여 병렬 테스트 실행을 켭니다. 이렇게 하면 모든 테스트를 실행하는 데 걸리는 시간을 훨씬 줄일 수 있습니다.
 
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+개별 테스트에 종속성이 없어 임의 순서로 실행할 수 있는 경우 도구 모음의 설정 메뉴에서 병렬 테스트 실행을 켭니다. 이렇게 하면 모든 테스트를 실행하는 데 걸리는 시간을 훨씬 줄일 수 있습니다.
+
+::: moniker-end
+
 ### <a name="run-tests-after-every-build"></a>각 빌드 후 테스트 실행
 
-> [!WARNING]
-> 각 빌드 후 단위 테스트 실행은 Visual Studio Enterprise에서만 지원됩니다.
+::: moniker range="vs-2017"
 
 |단추|설명|
 |-|-|
-|![빌드 후 실행](../test/media/ute_runafterbuild_btn.png)|각 로컬 빌드 후 단위 테스트를 실행하려면 표준 메뉴에서 **테스트**를 선택하고 **테스트 탐색기** 도구 모음에서 **빌드 후 테스트 실행** 을 선택합니다.|
+|![빌드 후 실행](../test/media/ute_runafterbuild_btn.png)|각 로컬 빌드 후에 단위 테스트를 실행하려면 표준 메뉴에서 **테스트**를 선택한 다음, **테스트 탐색기** 도구 모음에서 **빌드 후 테스트 실행**을 선택합니다.|
+
+> [!NOTE]
+> 각 빌드 후에 단위 테스트를 실행하려면 Visual Studio 2017 Enterprise Edition 또는 Visual Studio 2019가 필요합니다. Visual Studio 2019에서는 Enterprise Edition뿐만 아니라 Community 및 Professional Edition에서도 이 기능을 사용할 수 있습니다.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+각 로컬 빌드 후 단위 테스트를 실행하려면 테스트 탐색기 도구 모음에서 설정 아이콘을 열고 **빌드 후 테스트 실행**을 선택합니다.
+
+::: moniker-end
 
 ### <a name="filter-and-group-the-test-list"></a>테스트 목록 필터링 및 그룹화
 
-테스트가 많이 있는 경우 **테스트 탐색기** 검색 상자에 입력하여 지정된 문자열로 목록을 필터링할 수 있습니다. 필터 목록에서 선택하여 필터 이벤트를 더 제한할 수 있습니다.
+테스트 수가 많은 경우 **테스트 탐색기** 검색 상자에 입력하여 지정된 스트링으로 목록을 필터링할 수 있습니다. 필터 목록에서 선택하여 필터 이벤트를 더 제한할 수 있습니다.
 
+::: moniker range="vs-2017"
 ![검색 필터 범주](../test/media/ute_searchfilter.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![검색 필터 범주](../test/media/vs-2019/test-explorer-search-filter-16-2.png)
+::: moniker-end
 
 |단추|설명|
 |-|-|
@@ -250,20 +311,25 @@ public void My_Test ()
 
 **A:** **테스트 탐색기**를 사용하여 테스트에 대한 디버깅 세션을 시작할 수 있습니다. Visual Studio 디버거에서 코드를 단계별로 실행하면 단위 테스트 및 테스트 중인 프로젝트 간을 앞뒤로 매끄럽게 이동할 수 있습니다. 디버깅을 시작하려면
 
-1.  Visual Studio 편집기에서 디버그하려는 하나 이상의 테스트 메서드에서 중단점을 설정합니다.
+1. Visual Studio 편집기에서 디버그하려는 하나 이상의 테스트 메서드에서 중단점을 설정합니다.
 
     > [!NOTE]
     > 테스트 메서드는 순서에 관계 없이 실행할 수 있기 때문에 디버그하려는 모든 테스트 메서드에 중단점을 설정합니다.
 
-2.  **테스트 탐색기**에서 테스트 메서드를 선택한 다음, 바로 가기 메뉴에서 **선택한 테스트 디버그**를 선택합니다.
+2. **테스트 탐색기**에서 테스트 메서드를 선택한 다음, 바로 가기 메뉴에서 **선택한 테스트 디버그**를 선택합니다.
 
 자세한 내용은 [단위 테스트 디버그](../debugger/debugger-feature-tour.md)를 참조하세요.
 
 **Q: TDD를 사용 중인 경우 테스트에서 코드를 생성하려면 어떻게 해야 하나요?**
 
-**A:** IntelliSense를 사용해서 프로젝트 코드에서 클래스 및 메서드를 생성합니다. 테스트 메서드에서 생성하려는 클래스 또는 메서드를 호출하는 문을 작성한 후 해당 호출에서 IntelliSense 메뉴를 엽니다. 새 클래스의 생성자에 대한 호출인 경우에는 메뉴에서 **새 형식 생성** 을 선택하고 마법사에 따라 코드 프로젝트에 클래스를 삽입합니다. 메서드에 대한 호출인 경우에는 IntelliSense 메뉴에서 **새 메서드 생성** 을 선택합니다.
+**A:** 빠른 작업을 사용하여 프로젝트 코드에서 클래스 및 메서드를 생성합니다. 테스트 메서드에서 생성하려는 클래스 또는 메서드를 호출하는 문을 작성한 후 해당 오류 아래에 표시되는 호출에서 전구를 엽니다. 새 클래스의 생성자에 대한 호출인 경우에는 메뉴에서 **형식 생성**을 선택하고 마법사를 따라 코드 프로젝트에 클래스를 삽입합니다. 메서드에 대한 호출인 경우에는 IntelliSense 메뉴에서 **생성 메서드**를 선택합니다.
 
-![메서드 스텁 IntelliSense 메뉴 생성](../test/media/ute_generatemethodstubintellisense.png)
+::: moniker range="vs-2017"
+![메서드 스텁 생성 빠른 작업 메뉴](../test/media/ute_generatemethodstubintellisense.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![메서드 스텁 생성 빠른 작업 메뉴](../test/media/vs-2019/basics-generate-method-tdd.png)
+::: moniker-end
 
 **Q: 테스트를 실행하기 위한 입력으로 여러 데이터 세트를 사용하는 단위 테스트를 만들 수 있나요?**
 
@@ -299,7 +365,7 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
 **Q: 내 단위 테스트에서 테스트되는 코드의 양을 확인할 수 있나요?**
 
-**A:** 예. Visual Studio 코드 검사 도구를 사용하여 실제로 단위 테스트를 통해 테스트되는 코드의 양을 결정할 수 있습니다. 네이티브 및 관리 언어 그리고 단위 테스트 프레임워크에서 실행할 수 있는 모든 단위 테스트 프레임워크가 지원됩니다.
+**A:** 예. Visual Studio Enterprise에서 Visual Studio 코드 검사 도구를 사용하여 실제로 단위 테스트를 통해 테스트되는 코드의 양을 결정할 수 있습니다. 네이티브 및 관리 언어 그리고 단위 테스트 프레임워크에서 실행할 수 있는 모든 단위 테스트 프레임워크가 지원됩니다.
 
 솔루션의 선택된 테스트 또는 모든 테스트에 대해 코드 검사를 실행할 수 있습니다. **코드 검사 결과** 창에는 실행된 제품 코드 블록의 백분율이 줄, 함수, 클래스, 네임스페이스 및 모듈별로 표시됩니다.
 
@@ -317,9 +383,9 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
 Microsoft Fakes는 외부 종속성에 대한 대체 클래스를 만들기 위해 두 가지 방법을 사용합니다.
 
-1.  *스텁* 은 대상 종속성 클래스의 부모 인터페이스로부터 파생된 대체 클래스를 생성합니다. 스텁 메서드는 대상 클래스의 공용 가상 메서드 대신 사용될 수 있습니다.
+1. *스텁* 은 대상 종속성 클래스의 부모 인터페이스로부터 파생된 대체 클래스를 생성합니다. 스텁 메서드는 대상 클래스의 공용 가상 메서드 대신 사용될 수 있습니다.
 
-2.  *Shim* 은 런타임 계측을 사용하여 대상 메서드에 대한 호출을 비가상 메서드에 대한 대체 shim 메서드로 전환합니다.
+2. *Shim* 은 런타임 계측을 사용하여 대상 메서드에 대한 호출을 비가상 메서드에 대한 대체 shim 메서드로 전환합니다.
 
 두 방법 모두, 테스트 메서드에서 원하는 동작을 지정하기 위해 종속 메서드에 대한 호출의 생성된 대리자를 사용합니다.
 

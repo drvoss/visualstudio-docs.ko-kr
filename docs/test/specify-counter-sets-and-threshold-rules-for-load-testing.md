@@ -12,26 +12,24 @@ helpviewer_keywords:
 ms.assetid: 9e14d955-f3a4-4717-bbfe-7f08cdda5678
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 3cbdd30022b521803662f18b8d3438c6b1ddb37c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 79140e61844ce450db86ba3bd0b0d6577dec3531
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431337"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>부하 테스트에서 컴퓨터에 대한 카운터 집합 및 임계값 규칙 지정
 
-부하 테스트에서는 명명된 카운터 집합을 제공하며 이러한 카운터 집합은 성능 카운터 데이터를 분석할 때 유용합니다. 카운터 집합은 응용 프로그램, ASP.NET, .NET 응용 프로그램, IIS, SQL 등과 같은 기술별로 구성됩니다. **부하 테스트 새로 만들기 마법사**를 사용하여 부하 테스트를 만들 때 초기 카운터 집합을 추가합니다. 이러한 초기 카운터 집합에서 부하 테스트를 위해 일련의 미리 정의된 중요한 카운터 집합이 제공됩니다. **부하 테스트 편집기**에서 카운터를 관리합니다.
+부하 테스트에서는 명명된 카운터 집합을 제공하며 이러한 카운터 집합은 성능 카운터 데이터를 분석할 때 유용합니다. 카운터 집합은 애플리케이션, ASP.NET, .NET 애플리케이션, IIS, SQL 등과 같은 기술별로 구성됩니다. **부하 테스트 새로 만들기 마법사**를 사용하여 부하 테스트를 만들 때 초기 카운터 집합을 추가합니다. 이러한 초기 카운터 집합에서 부하 테스트를 위해 일련의 미리 정의된 중요한 카운터 집합이 제공됩니다. **부하 테스트 편집기**에서 카운터를 관리합니다.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > 부하 테스트가 원격 컴퓨터에 분산된 경우 컨트롤러 및 에이전트 카운터가 컨트롤러 및 에이전트 카운터 집합에 매핑됩니다. 부하 테스트에서 원격 컴퓨터를 사용하는 방법에 대한 자세한 내용은 [테스트 컨트롤러 및 테스트 에이전트](configure-test-agents-and-controllers-for-load-tests.md)를 참조하세요.
 
-카운터 집합은 사용자가 지정하는 컴퓨터에서 수집됩니다. 부하 테스트 동안 사용되는 카운터 집합과 컴퓨터 간의 연결은 *카운터 집합 맵*입니다. 예를 들어, 테스트 중인 웹 서버에 ASP.NET, IIS 및 .NET 응용 프로그램 카운터 집합 매핑이 있을 수 있습니다.
+카운터 집합은 사용자가 지정하는 컴퓨터에서 수집됩니다. 부하 테스트 동안 사용되는 카운터 집합과 컴퓨터 간의 연결은 *카운터 집합 맵*입니다. 예를 들어, 테스트 중인 웹 서버에 ASP.NET, IIS 및 .NET 애플리케이션 카운터 집합 매핑이 있을 수 있습니다.
 
 기본적으로 성능 카운터는 컨트롤러와 에이전트에서 수집됩니다. 자세한 내용은 [테스트 컨트롤러 및 테스트 에이전트](configure-test-agents-and-controllers-for-load-tests.md)를 참조하세요.
 
@@ -60,7 +58,7 @@ ms.locfileid: "53057420"
 
 또한 웹 서버에서 성능 데이터를 쉽게 수집할 수 있도록 Visual Studio Enterprise에서는 부하 테스트에 사용되는 기술을 기반으로 미리 정의된 명명된 카운터 집합을 제공합니다. 이러한 집합은 IIS, ASP.NET 또는 SQL Server를 실행하는 서버를 분석할 때 유용합니다. 기본 카운터 집합에서 제공하지 않는 카운터는 부하 테스트 편집기를 사용하여 추가할 수 있습니다. 테스트 중인 컴퓨터 또는 서버를 부하 테스트에 추가하여 이러한 컴퓨터의 리소스 사용을 모니터링하는 것이 중요합니다. 자세한 내용은 [방법: 카운터 집합 관리](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)를 참조하세요.
 
-부하 실행 결과를 분석할 때 수집할 데이터, 임계값 규칙 설정 위치, 측정값이 응용 프로그램에서 특정 문제를 일으킬 때 이를 알리는 방법 등을 확인하기 위해 특정 영역의 도메인별 정보가 필요한 경우가 자주 있습니다. 자세한 내용은 [임계값 규칙 정보](#about-threshold-rules)를 참조하세요.
+부하 실행 결과를 분석할 때 수집할 데이터, 임계값 규칙 설정 위치, 측정값이 애플리케이션에서 특정 문제를 일으킬 때 이를 알리는 방법 등을 확인하기 위해 특정 영역의 도메인별 정보가 필요한 경우가 자주 있습니다. 자세한 내용은 [임계값 규칙 정보](#about-threshold-rules)를 참조하세요.
 
 ### <a name="performance-counter-sampling-interval-considerations"></a>성능 카운터 샘플링 간격 고려 사항
 

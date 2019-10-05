@@ -1,52 +1,47 @@
 ---
 title: Blend를 사용하여 UI 만들기
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - Blend.Start.Dev12
 ms.assetid: efd12263-cc2d-4081-a2bb-9a2cc17c442c
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f77fba9ed184d5def85aa7ca260b7c552dddbfd1
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 7cd7f14158b7dee83767ee9295c8917cadd30fa5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054543"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695929"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Blend for Visual Studio를 사용하여 UI 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Blend for Visual Studio를 사용하면 XAML 기반 Windows 데스크톱, 웹, [Windows Phone](http://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx) 및 [Windows 스토어](http://msdn.microsoft.com/library/windows/apps/jj129478.aspx) 앱을 디자인할 수 있습니다. Visual Studio와 같은 기본 XAML 디자인 환경을 제공하고, 애니메이션 및 동작과 같은 고급 작업에 대한 비주얼 디자이너를 추가합니다.
+Blend for Visual Studio를 사용하면 XAML 기반 Windows 데스크톱, 웹, [Windows Phone](https://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx) 및 [Windows 스토어](https://msdn.microsoft.com/library/windows/apps/jj129478.aspx) 앱을 디자인할 수 있습니다. Visual Studio와 같은 기본 XAML 디자인 환경을 제공하고, 애니메이션 및 동작과 같은 고급 작업에 대한 비주얼 디자이너를 추가합니다.
 
  Blend for Visual Studio는 Visual Studio의 일부로 포함되어 있으므로 다운로드할 필요가 없습니다. 그러나 시스템에 설치하려면 Visual Studio 설치 관리자에서 직접 선택해야 합니다.
 
  Blend for Visual Studio를 처음 접하는 경우 시간을 두고 작업 영역의 고유 기능을 익히세요. 이 항목에 이러한 작업 영역이 간단히 설명되어 있습니다.
 
 > [!NOTE]
->  아트보드, 문서 개요 창 및 디바이스 창과 같은 공유 디자인 기능을 둘러보려면 [XAML 디자이너를 사용하여 UI 만들기](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)를 참조하세요.
+> 아트보드, 문서 개요 창 및 디바이스 창과 같은 공유 디자인 기능을 둘러보려면 [XAML 디자이너를 사용하여 UI 만들기](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)를 참조하세요.
 
  **항목 내용**:
 
--   [도구 패널 둘러보기](#Tools)
+- [도구 패널 둘러보기](#Tools)
 
--   [자산 패널 둘러보기](#Assets)
+- [자산 패널 둘러보기](#Assets)
 
--   [개체 및 타임라인 패널 둘러보기](#Objects)
+- [개체 및 타임라인 패널 둘러보기](#Objects)
 
--   [속성 패널 둘러보기](#Properties)
+- [속성 패널 둘러보기](#Properties)
 
-##  <a name="Tools"></a> 도구 패널 둘러보기
- Blend for Visual Studio에서 **도구** 패널을 사용하여 응용 프로그램의 개체를 만들고 수정할 수 있습니다. 도구를 선택한 다음 마우스로 아트보드에 그려 개체를 만들 수 있습니다.
+## <a name="Tools"></a> 도구 패널 둘러보기
+ Blend for Visual Studio에서 **도구** 패널을 사용하여 애플리케이션의 개체를 만들고 수정할 수 있습니다. 도구를 선택한 다음 마우스로 아트보드에 그려 개체를 만들 수 있습니다.
 
  ![도구 패널](../designers/media/blend5toolspanel.png "Blend5Toolspanel")
 
@@ -59,9 +54,9 @@ Blend for Visual Studio를 사용하면 XAML 기반 Windows 데스크톱, 웹, [
 |![](../designers/media/b1-5.png "B1_5")|**자산 도구** **자산** 패널에 액세스하고 라이브러리에서 가장 최근에 사용된 자산을 표시하는 데 사용합니다.|![설명선 E](../designers/media/b5-label-e.png "b5_label_E")|**텍스트 컨트롤**|
 |||![설명선 F](../designers/media/b5-label-f.png "b5_label_F")|**공용 컨트롤**|
 
- 짧은 비디오 보기 ![설치 된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [도구 모음](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4)합니다.
+ **짧은 비디오 시청:** ![설치 된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [도구 모음](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4)합니다.
 
-##  <a name="Assets"></a> 자산 패널 둘러보기
+## <a name="Assets"></a> 자산 패널 둘러보기
  Visual Studio의 **도구 상자**와 비슷한 **자산** 패널에서 모든 컨트롤을 찾을 수 있습니다. 컨트롤 외에도, 스타일, 미디어, 동작, 효과 등 무엇이든 **자산** 패널의 아트보드에 추가할 수 있습니다.
 
  ![자산 패널](../designers/media/blend5-assets-panel.png "Blend5_Assets_panel")
@@ -74,7 +69,7 @@ Blend for Visual Studio를 사용하면 XAML 기반 Windows 데스크톱, 웹, [
 |![](../designers/media/b1-4.png "B1_4")|**스타일** 리소스 사전에 포함된 모든 스타일을 표시합니다.|
 |![](../designers/media/b1-5.png "B1_5")|**설명** 선택한 자산 범주 또는 하위 범주에 대한 설명을 표시합니다.|
 
-##  <a name="Objects"></a> 개체 및 타임라인 패널 둘러보기
+## <a name="Objects"></a> 개체 및 타임라인 패널 둘러보기
  이 패널에서는 아트보드에서 개체를 구성하고 원하는 경우 개체에 애니메이션 효과를 적용할 수 있습니다.
 
  ![애니메이션 모드의 개체 및 타임라인 패널](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
@@ -88,7 +83,7 @@ Blend for Visual Studio를 사용하면 XAML 기반 Windows 데스크톱, 웹, [
 |![](../designers/media/b1-5.png "B1_5")|**스토리보드 옵션** 스토리보드의 만들기, 복제, 반전, 삭제, 이름 바꾸기 또는 닫기 작업을 수행합니다.|
 |![](../designers/media/b1-6.png "B1_6")|**재생 컨트롤** 타임라인을 탐색합니다. 플레이헤드를 끌어 타임라인 전체로 이동(*스크럽*)할 수도 있습니다.|
 |![](../designers/media/b1-7.png "B1_7")|**범위 되돌리기** 이전 루트 개체 또는 이전 범위로 개체 뷰를 되돌립니다. 이 작업은 스타일이나 템플릿을 수정할 때만 가능합니다.|
-|![](../designers/media/b1-8.png "B1_8")|**키 프레임 기록** 현재 시점에서 선택한 개체의 속성에 대한 스냅숏을 기록합니다.|
+|![](../designers/media/b1-8.png "B1_8")|**키 프레임 기록** 현재 시점에서 선택한 개체의 속성에 대한 스냅샷을 기록합니다.|
 |![](../designers/media/b1-9.png "B1_9")|**맞추기 옵션** 타임라인 맞추기 및 맞춤 해상도를 설정하고 타임라인 맞추기를 해제합니다.|
 |![](../designers/media/97fa60b9-0caf-4387-9225-b57510d32209.png "97fa60b9-0caf-4387-9225-b57510d32209")|**표시/숨기기**, **잠금/잠금 해제** 개체 뷰의 표시 유형 및 잠금 옵션을 표시하거나 숨깁니다.|
 |![](../designers/media/b1-11.png "B1_11")|**타임라인의 플레이헤드 위치** 현재 시간을 밀리초 단위로 표시합니다. 이 필드에 직접 시간 값을 입력하여 특정 시점으로 이동할 수도 있습니다. **맞추기 옵션**에서 설정한 맞춤 해상도에 따라 정밀도가 달라집니다.|
@@ -98,13 +93,12 @@ Blend for Visual Studio를 사용하면 XAML 기반 Windows 데스크톱, 웹, [
 |![](../designers/media/b1-15.png "B1_15")|**타임라인 확대/축소** 타임라인의 확대/축소 해상도를 설정합니다. 확대하면 애니메이션을 좀 더 자세하게 편집할 수 있고 축소하면 더 긴 시간 동안 발생하는 동작이 좀 더 간략하게 표시됩니다. 확대했지만 원하는 시점에 키 프레임을 설정할 수 없다면 맞춤 해상도가 충분히 높게 설정되어 있는지 확인하십시오.|
 |![설명선 16](../designers/media/b5-label-16.png "b5_label_16")|**타임라인 합성 영역** 타임라인이 표시됩니다. 키 프레임을 직접 끌거나 바로 가기 메뉴를 사용하여 이동할 수 있습니다.|
 
-##  <a name="Properties"></a> 속성 패널 둘러보기
+## <a name="Properties"></a> 속성 패널 둘러보기
  이 패널에서는 개체의 속성을 보고 수정할 수 있으며, 아트보드에서 직접 수정하도록 설정할 수도 있습니다. 이렇게 하면 속성 변경 내용이 **속성** 패널에 반영됩니다.
 
  ![속성 패널](../designers/media/blend5-properties-panel.png "Blend5_properties_panel")
 
  **범주** 속성의 범주를 확장하고 축소합니다. 범주 세부 정보를 표시하거나 숨기려면 **확장** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") 및 **축소** ![축소](../designers/media/b5-collapse-button.png "b5_collapse_button")를 클릭합니다.
-
 
 |                                                                                                         |                                                                                                                                                                                                                                  |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -126,7 +120,7 @@ Blend for Visual Studio를 사용하면 XAML 기반 Windows 데스크톱, 웹, [
 |                     ![설명선 16](../designers/media/b5-label-16.png "b5_label_16")                     |                                                                                **그라데이션 슬라이더** 그라데이션 브러시를 선택한 경우에만 나타납니다.                                                                                 |
 | ![](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png "d50027a1-6824-4ad8-8b4e-558b0756dcf8") |                                                                     **고급 속성 표시** 자주 사용되지 않는 속성의 범주를 표시합니다.                                                                      |
 
- 짧은 비디오 보기 ![설치 된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [속성 패널](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7)합니다.
+ **짧은 비디오 시청:** ![설치 된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [속성 패널](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7)합니다.
 
 ## <a name="see-also"></a>참고 항목
  [컨트롤을 삽입 하 고 해당 동작을 수정](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md) [개체에 애니메이션 효과 주기](../designers/animate-objects-in-xaml-designer.md) [도형 및 패스 그리기](../designers/draw-shapes-and-paths.md) [Visual Studio 및 Blend for Visual Studio에서 XAML 디자인](../designers/designing-xaml-in-visual-studio.md)

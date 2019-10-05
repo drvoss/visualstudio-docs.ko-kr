@@ -7,17 +7,14 @@ ms.author: liwong
 manager: routlaw
 ms.date: 11/13/2017
 ms.topic: conceptual
-ms.devlang: multiple
-ms.service: multiple
-ms.technology: vs-ai-tools
 ms.workload:
 - azure
-ms.openlocfilehash: 6cf5c2529d54637e1e6ad4a111c3d3c456e6fae1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f69d978f7257398e1518828cd0bbe7ed1ff0e66c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563885"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Azure Batch AI에서 AI 모델 학습
 
@@ -35,7 +32,7 @@ Visual Studio Tools for AI에 통합되므로 Azure에서 동적으로 학습 �
 
 3. **보기 > 팀 탐색기...** 를 선택하여 GitHub 또는 Azure DevOps에 연결하거나 리포지토리를 복제할 수 있는 **팀 탐색기** 창을 엽니다.
 
-    ![Azure DevOps, GitHub를 표시하고 리포지토리를 복제하는 팀 탐색기 창](media/train-model/team-explorer.png)
+    ![Azure DevOps, GitHub를 표시하고 리포지토리를 복제하는 팀 탐색기 창](media/train-model/team-explorer-devops.png)
 
 4. **로컬 Git 리포지토리** 아래의 URL 필드에 `https://github.com/Microsoft/samples-for-ai`를 입력하고, 복제된 파일에 대한 폴더를 입력하고, **복제**를 선택합니다.
 
@@ -54,7 +51,7 @@ Visual Studio Tools for AI에 통합되므로 Azure에서 동적으로 학습 �
 
     ![샘플 갤러리](media/train-model/mnist-startup.png)
 
-8. <strong>**MNIST 프로젝트를 마우스 오른쪽 단추로 클릭하고 **작업 제출</strong>
+8. <strong>**MNIST 프로젝트**를 마우스 오른쪽 단추로 클릭하고 **작업 제출**</strong>
 
     ![샘플 갤러리](media/train-model/submit-job.png)
 9. **Azure Batch AI** 클러스터를 선택한 다음 **가져오기**를 클릭합니다. `AzureBatchAI_TF_MNIST.json` 파일을 선택하여 사용할 Docker Image 같은 일부 기본 값을 신속하게 입력합니다. 그런 다음 **제출**을 클릭합니다.

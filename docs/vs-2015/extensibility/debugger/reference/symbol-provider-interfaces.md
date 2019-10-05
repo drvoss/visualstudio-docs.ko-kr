@@ -1,14 +1,9 @@
 ---
 title: 기호 공급자 인터페이스 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - interfaces, symbol handler
 - symbol handler, interfaces
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 4201f10e-c9f7-4b38-bb45-40fe0082d5bf
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a37e27f6d7d1a9435f9519d3cecf359eb65fe204
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c409175fb39207bc0e83a521577ad6d641731691
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204863"
 ---
 # <a name="symbol-provider-interfaces"></a>기호 공급자 인터페이스
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51790775"
 ## <a name="discussion"></a>토론  
  이러한 인터페이스는 중단 모드에 있는 동안 호출 스택의 변수에 평가에 사용 됩니다. 공용 언어 런타임 기호 공급자 (SP)에 대해서만 구현 됩니다.  
   
-|인터페이스|에 의해 구현|설명|  
+|인터페이스|에 의해 구현|Description|  
 |---------------|--------------------|-----------------|  
 |[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)|SP|항목의 주소를 나타냅니다.|  
 |[IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)|SP|프로세스 id와 같습니다. 액세스를 제공 하는 항목의 주소를 나타냅니다.|  
@@ -67,4 +62,3 @@ ms.locfileid: "51790775"
   
 ## <a name="see-also"></a>참고 항목  
  [API 참조](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
-

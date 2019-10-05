@@ -1,14 +1,9 @@
 ---
 title: '&lt;loc&gt; (JavaScript) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - <loc> JavaScript XML tag
 - loc JavaScript XML tag
@@ -16,13 +11,13 @@ ms.assetid: 0d3349b6-4bdd-418f-bc11-73665305baae
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9314453b5e75e31f98d6989efa274278706bc5a4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8029dc6282e7b5a4ff9075257bcb1b6213a4a6b4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244012"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186108"
 ---
 # <a name="ltlocgt-javascript"></a>&lt;loc&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ ms.locfileid: "49244012"
   
  메시지 번들 형식을 사용 하는 경우 사용 합니다 `locid` XML 문서 주석에 지정 하는 특성을 `name` 특성 값.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  다음 예제에서는 사용 하는 방법을 보여 줍니다는 `<loc>` messagebundle 형식 요소입니다. MessageFilename.xml 라는 파일에 다음 XML을 추가 하 고 설명에 지정 된 대로 올바른 문화권별 폴더에 파일을 배치 합니다 `filename` 매개 변수입니다.  
   
 ```  
@@ -110,6 +105,3 @@ function illuminate(a)
   
 ## <a name="see-also"></a>참고 항목  
  [XML 문서 주석](../ide/xml-documentation-comments-javascript.md)
-
-
-

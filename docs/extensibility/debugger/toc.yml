@@ -5,13 +5,15 @@
 - name: Visual Studio 디버깅 샘플
   href: visual-studio-debugging-samples.md
 - name: 사용자 지정 디버그 엔진 만들기
-  href: creating-a-custom-debug-engine.md
   items:
+    - name: 사용자 지정 디버그 엔진 만들기
+      href: creating-a-custom-debug-engine.md
     - name: 사용자 지정 디버그 엔진 등록
       href: registering-a-custom-debug-engine.md
     - name: 디버그할 프로그램을 사용하도록 설정
-      href: enabling-a-program-to-be-debugged.md
       items:
+        - name: 디버그할 프로그램을 사용하도록 설정
+          href: enabling-a-program-to-be-debugged.md
         - name: 포트 가져오기
           href: getting-a-port.md
         - name: 프로그램 등록
@@ -23,8 +25,9 @@
         - name: 필요한 이벤트 보내기
           href: sending-the-required-events.md
     - name: 실행 제어 및 상태 평가
-      href: execution-control-and-state-evaluation.md
       items:
+        - name: 실행 제어 및 상태 평가
+          href: execution-control-and-state-evaluation.md
         - name: 프로그램 제어
           href: program-control.md
         - name: 중단점 관련 메서드
@@ -36,8 +39,9 @@
         - name: 컨트롤 이벤트
           href: control-events.md
     - name: 이벤트 보내기
-      href: sending-events.md
       items:
+        - name: 이벤트 보내기
+          href: sending-events.md
         - name: 이벤트 소스(Visual Studio SDK)
           href: event-sources-visual-studio-sdk.md
         - name: 지원되는 이벤트 형식
@@ -47,8 +51,9 @@
     - name: 종료 및 분리
       href: termination-and-detaching.md
     - name: 디버거 이벤트 호출
-      href: calling-debugger-events.md
       items:
+        - name: 디버거 이벤트 호출
+          href: calling-debugger-events.md
         - name: 프로그램 연결 및 분리
           href: attaching-and-detaching-to-a-program.md
         - name: 디버거 시작
@@ -76,13 +81,15 @@
     - name: '방법: 사용자 지정 디버그 엔진 디버그'
       href: how-to-debug-a-custom-debug-engine.md
 - name: 디버거 확장성 시작
-  href: getting-started-with-debugger-extensibility.md
   items:
+    - name: 디버거 확장성 시작
+      href: getting-started-with-debugger-extensibility.md
     - name: 디버거 확장 로드맵
       href: roadmap-for-extending-the-debugger.md
     - name: 디버거 구성 요소
-      href: debugger-components.md
       items:
+        - name: 디버거 구성 요소
+          href: debugger-components.md
         - name: 패키지 디버그
           href: debug-package.md
         - name: 프로세스 디버그 관리자
@@ -100,8 +107,9 @@
         - name: 형식 시각화 도우미 및 사용자 지정 뷰어
           href: type-visualizer-and-custom-viewer.md
     - name: 디버거 개념
-      href: debugger-concepts.md
       items:
+        - name: 디버거 개념
+          href: debugger-concepts.md
         - name: 디버그 세션
           href: debug-session.md
         - name: 서버(Visual Studio SDK)
@@ -125,8 +133,9 @@
         - name: 중단점(Visual Studio SDK)
           href: breakpoints-visual-studio-sdk.md
     - name: 디버거 컨텍스트
-      href: debugger-contexts.md
       items:
+        - name: 디버거 컨텍스트
+          href: debugger-contexts.md
         - name: 코드 컨텍스트
           href: code-context.md
         - name: 문서 위치
@@ -136,13 +145,15 @@
         - name: 식 계산 컨텍스트
           href: expression-evaluation-context.md
     - name: 디버깅 작업
-      href: debugging-tasks.md
       items:
+        - name: 디버깅 작업
+          href: debugging-tasks.md
         - name: 보안 문제
           href: security-issues.md
         - name: 프로그램 시작
-          href: launching-a-program.md
           items:
+            - name: 프로그램 시작
+              href: launching-a-program.md
             - name: 포트에 알림
               href: notifying-the-port.md
             - name: 시작 후 연결
@@ -160,13 +171,15 @@
         - name: 데이터 시각화 및 보기
           href: visualizing-and-viewing-data.md
 - name: 공용 언어 런타임 식 계산기 작성
-  href: writing-a-common-language-runtime-expression-evaluator.md
   items:
+    - name: 공용 언어 런타임 식 계산기 작성
+      href: writing-a-common-language-runtime-expression-evaluator.md
     - name: 공용 언어 런타임 및 식 계산
       href: common-language-runtime-and-expression-evaluation.md
     - name: 식 계산기 아키텍처
-      href: expression-evaluator-architecture.md
       items:
+        - name: 식 계산기 아키텍처
+          href: expression-evaluator-architecture.md
         - name: 평가 컨텍스트
           href: evaluation-context.md
         - name: Key 식 계산기 인터페이스
@@ -174,16 +187,19 @@
     - name: 식 계산기 등록
       href: registering-an-expression-evaluator.md
     - name: 식 계산기 구현
-      href: implementing-an-expression-evaluator.md
       items:
+        - name: 식 계산기 구현
+          href: implementing-an-expression-evaluator.md
         - name: 식 계산기 구현 전략
           href: expression-evaluator-implementation-strategy.md
     - name: 로컬 항목 표시
-      href: displaying-locals.md
       items:
+        - name: 로컬 항목 표시
+          href: displaying-locals.md
         - name: 로컬 항목의 샘플 구현
-          href: sample-implementation-of-locals.md
           items:
+            - name: 로컬 항목의 샘플 구현
+              href: sample-implementation-of-locals.md
             - name: GetMethodProperty 구현
               href: implementing-getmethodproperty.md
             - name: 로컬 항목 열거
@@ -195,32 +211,37 @@
             - name: 로컬 항목 계산
               href: evaluating-locals.md
     - name: 조사식 창 식 계산
-      href: evaluating-a-watch-window-expression.md
       items:
+        - name: 조사식 창 식 계산
+          href: evaluating-a-watch-window-expression.md
         - name: 식 계산의 샘플 구현
           href: sample-implementation-of-expression-evaluation.md
         - name: 조사식 창 계산
           href: evaluating-a-watch-expression.md
     - name: 로컬 항목 값 변경
-      href: changing-the-value-of-a-local.md
       items:
+        - name: 로컬 항목 값 변경
+          href: changing-the-value-of-a-local.md
         - name: 값 변경 샘플 구현
           href: sample-implementation-of-changing-values.md
     - name: 형식 시각화 도우미 및 사용자 지정 뷰어 구현
       href: implementing-type-visualizers-and-custom-viewers.md
 - name: 포트 공급자 구현
-  href: implementing-a-port-supplier.md
   items:
+    - name: 포트 공급자 구현
+      href: implementing-a-port-supplier.md
     - name: 포트 공급자 구현 및 등록
       href: implementing-and-registering-a-port-supplier.md
     - name: 필요한 포트 공급자 인터페이스
       href: required-port-supplier-interfaces.md
 - name: .NET Framework에 대한 병렬 확장 기능 내부
-  href: parallel-extension-internals-for-the-dotnet-framework.md
   items:
+    - name: .NET Framework에 대한 병렬 확장 기능 내부
+      href: parallel-extension-internals-for-the-dotnet-framework.md
     - name: Task 클래스 - 내부 멤버
-      href: task-class-internal-members.md
       items:
+        - name: Task 클래스 - 내부 멤버
+          href: task-class-internal-members.md
         - name: m_action 필드
           href: m-action-field.md
         - name: m_contingentProperties 필드
@@ -250,34 +271,39 @@
         - name: NotifyDebuggerOfWaitCompletion 메서드
           href: notifydebuggerofwaitcompletion-method.md
     - name: TaskScheduler 클래스 - 내부 멤버
-      href: taskscheduler-class-internal-members.md
       items:
+        - name: TaskScheduler 클래스 - 내부 멤버
+          href: taskscheduler-class-internal-members.md
         - name: GetScheduledTasksForDebugger 메서드
           href: getscheduledtasksfordebugger-method.md
         - name: GetTaskSchedulersForDebugger 메서드
           href: gettaskschedulersfordebugger-method.md
     - name: ContingentProperties 클래스 - 내부 멤버
-      href: contingentproperties-class-internal-members.md
       items:
+        - name: ContingentProperties 클래스 - 내부 멤버
+          href: contingentproperties-class-internal-members.md
         - name: m_children 필드
           href: m-children-field.md
     - name: AsyncTaskMethodBuilder 구조 - 내부 멤버
-      href: asynctaskmethodbuilder-structure-internal-members.md
       items:
+        - name: AsyncTaskMethodBuilder 구조 - 내부 멤버
+          href: asynctaskmethodbuilder-structure-internal-members.md
         - name: AsyncTaskMethodBuilder.ObjectIdForDebugger 속성
           href: asynctaskmethodbuilder-objectidfordebugger-property.md
         - name: AsyncTaskMethodBuilder.m_builder 필드
           href: asynctaskmethodbuilder-m-builder-field.md
     - name: AsyncTaskMethodBuilder<TResult> 구조 - 내부 멤버
-      href: asynctaskmethodbuilder-tresult-structure-internal-members.md
       items:
+        - name: AsyncTaskMethodBuilder<TResult> 구조 - 내부 멤버
+          href: asynctaskmethodbuilder-tresult-structure-internal-members.md
         - name: AsyncTaskMethodBuilder<TResult>.ObjectIdForDebugger 속성
           href: asynctaskmethodbuilder-tresult-objectidfordebugger-property.md
         - name: AsyncTaskMethodBuilder<TResult>.m_task 필드
           href: asynctaskmethodbuilder-tresult-m-task-field.md
     - name: AsyncVoidMethodBuilder 구조 - 내부 멤버
-      href: asyncvoidmethodbuilder-structure-internal-members.md
       items:
+        - name: AsyncVoidMethodBuilder 구조 - 내부 멤버
+          href: asyncvoidmethodbuilder-structure-internal-members.md
         - name: AsyncVoidMethodBuilder.ObjectIdForDebugger 속성
           href: asyncvoidmethodbuilder-objectidfordebugger-property.md
         - name: AsyncVoidMethodBuilder.m_objectIdForDebugger 필드

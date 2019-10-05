@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Visual Studio templates, schema
 - .vstemplate files
 ms.assetid: 6f74a2d5-3811-43d6-8b10-eb5823ad8995
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 25c8af779c8c943e7145c44d8e64f814977f88aa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: af0a11e2e75b8a9be44dacb58eeac2505613e86d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966942"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323032"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Visual Studio 템플릿 스키마 참조
 이 섹션의 XML 요소에 대 한 정보가 *.vstemplate* 프로젝트 템플릿과 항목 템플릿은 시작 키트에 대 한 메타 데이터를 저장 하는 파일에 있는 파일을 합니다.

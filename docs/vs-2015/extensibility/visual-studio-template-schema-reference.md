@@ -1,14 +1,9 @@
 ---
 title: Visual Studio 템플릿 스키마 참조 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - VSTEMPLATE files
 - Visual Studio templates, schema
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 6f74a2d5-3811-43d6-8b10-eb5823ad8995
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3b49b15047d11e8d09690c90dd3011700481fcef
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a15a08dc674940897bf465946efd2ec350cc7c42
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817427"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62422125"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Visual Studio 템플릿 스키마 참조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,18 +38,18 @@ ms.locfileid: "51817427"
 |[CustomParameter](../extensibility/customparameter-element-visual-studio-templates.md)|--|이름<br /><br /> 값|  
 |[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|CustomParameter|--|  
 |[DefaultName](../extensibility/defaultname-element-visual-studio-templates.md)|--|--|  
-|[설명](../extensibility/description-element-visual-studio-templates.md)|--|패키지<br /><br /> ID|  
+|[설명](../extensibility/description-element-visual-studio-templates.md)|--|Package<br /><br /> ID|  
 |[EnableEditOfLocationField](../extensibility/enableeditoflocationfield-element-visual-studio-templates.md)|--|--|  
 |[EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md)|--|--|  
 |[폴더](../extensibility/folder-element-visual-studio-project-templates.md)|ProjectItem<br /><br /> 폴더|이름|  
 ||[사용되지 않음]|--|  
 |[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|--|--|  
-|[숨겨진](../extensibility/hidden-element-visual-studio-templates.md)|--|--|  
-|[아이콘](../extensibility/icon-element-visual-studio-templates.md)|--|패키지<br /><br /> ID|  
+|[숨김](../extensibility/hidden-element-visual-studio-templates.md)|--|--|  
+|[아이콘](../extensibility/icon-element-visual-studio-templates.md)|--|Package<br /><br /> ID|  
 |[LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md)|--|--|  
 |[LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md)|--|--|  
 |[MaxFrameworkVersion](../extensibility/maxframeworkversion-element-visual-studio-templates.md)|--|--|  
-|[이름](../extensibility/name-element-visual-studio-templates.md)|--|패키지<br /><br /> ID|  
+|[이름](../extensibility/name-element-visual-studio-templates.md)|--|Package<br /><br /> ID|  
 |[NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)|--|--|  
 |[PreviewImage](../extensibility/previewimage-element-visual-studio-templates.md)|--|--|  
 |[프로젝트](../extensibility/project-element-visual-studio-templates.md)|폴더<br /><br /> ProjectItem|파일<br /><br /> TargetFileName<br /><br /> ReplaceParameters|  
@@ -70,7 +65,7 @@ ms.locfileid: "51817427"
 |[참조](../extensibility/references-element-visual-studio-templates.md)|참조|--|  
 |[RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md)|--|--|  
 |[RequiredPlatformVersion](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|--|버전|  
-|[SDKReference](../extensibility/sdkreference-element-visual-studio-templates.md)|--|패키지|  
+|[SDKReference](../extensibility/sdkreference-element-visual-studio-templates.md)|--|Package|  
 |[ShowByDefault](../extensibility/showbydefault-visual-studio-templates.md)|--|--|  
 |[SolutionFolder](../extensibility/solutionfolder-element-visual-studio-templates.md)|ProjectTemplateLink<br /><br /> SolutionFolder|이름|  
 |[SortOrder](../extensibility/sortorder-element-visual-studio-templates.md)|--|--|  

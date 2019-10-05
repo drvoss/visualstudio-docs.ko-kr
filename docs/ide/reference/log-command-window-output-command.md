@@ -1,8 +1,6 @@
 ---
 title: 명령 창 출력 로그 명령
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - tools.logcommandwindowoutput
@@ -12,17 +10,18 @@ helpviewer_keywords:
 ms.assetid: d4ecec35-5af4-4954-8d60-2cd24583fbb4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2de9b21f55765706a56110aee84959b2003e994e
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 6ab2dfea4c51ee33407088c208aea351732b8a4a
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704683"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043525"
 ---
 # <a name="log-command-window-output-command"></a>명령 창 출력 로그 명령
+
 **명령** 창의 모든 입력 및 출력을 파일로 복사합니다.
 
 ## <a name="syntax"></a>구문
@@ -32,44 +31,43 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 ```
 
 ## <a name="arguments"></a>인수
- `filename`
 
- 선택 사항입니다. 로그 파일의 이름입니다. 기본적으로 파일은 사용자의 프로필 폴더에 만들어집니다. 파일 이름이 이미 존재하는 경우 로그는 기존 파일의 끝에 추가됩니다. 파일이 지정되지 않은 경우 지정된 마지막 파일이 사용됩니다. 이전 파일이 없는 경우 cmdline.log라는 기본 로그 파일이 만들어집니다.
+`filename`\
+선택 사항입니다. 로그 파일의 이름입니다. 기본적으로 파일은 사용자의 프로필 폴더에 만들어집니다. 파일 이름이 이미 존재하는 경우 로그는 기존 파일의 끝에 추가됩니다. 파일이 지정되지 않은 경우 지정된 마지막 파일이 사용됩니다. 이전 파일이 없는 경우 cmdline.log라는 기본 로그 파일이 만들어집니다.
 
 > [!TIP]
 > 로그 파일이 저장되는 위치를 변경하려면 경로에 공백이 있는 경우 따옴표로 묶인 파일의 전체 경로를 입력합니다.
 
-
 ## <a name="switches"></a>스위치
- /on
 
- 선택 사항입니다. 지정된 파일에서 **명령** 창에 대한 로그를 시작하고 새 정보를 포함한 파일을 추가합니다.
+/on\
+선택 사항입니다. 지정된 파일에서 **명령** 창에 대한 로그를 시작하고 새 정보를 포함한 파일을 추가합니다.
 
- /off
+/off\
+선택 사항입니다. **명령** 창에 대한 로그를 중지합니다.
 
- 선택 사항입니다. **명령** 창에 대한 로그를 중지합니다.
-
- /overwrite
-
- 선택 사항입니다. `filename` 인수에서 지정된 파일이 기존 파일과 일치하는 경우 파일을 덮어씁니다.
+/overwrite\
+선택 사항입니다. `filename` 인수에서 지정된 파일이 기존 파일과 일치하는 경우 파일을 덮어씁니다.
 
 ## <a name="remarks"></a>설명
- 파일이 지정되지 않은 경우 기본적으로 cmdline.log 파일이 만들어집니다. 기본적으로 이 명령에 대한 별칭은 Log입니다.
+
+파일이 지정되지 않은 경우 기본적으로 cmdline.log 파일이 만들어집니다. 기본적으로 이 명령에 대한 별칭은 Log입니다.
 
 ## <a name="examples"></a>예제
- 이 예제에서는 cmdlog라는 새 로그 파일을 만들고 명령 로그를 시작합니다.
+
+이 예제에서는 cmdlog라는 새 로그 파일을 만들고 명령 로그를 시작합니다.
 
 ```cmd
 >Tools.LogCommandWindowOutput cmdlog
 ```
 
- 이 예제에서는 로깅 명령을 중지합니다.
+이 예제에서는 로깅 명령을 중지합니다.
 
 ```cmd
 >Tools.LogCommandWindowOutput /off
 ```
 
- 이 예제에서는 이전에 사용된 로그 파일에서 명령의 로깅을 다시 시작합니다.
+이 예제에서는 이전에 사용된 로그 파일에서 명령의 로깅을 다시 시작합니다.
 
 ```cmd
 >Tools.LogCommandWindowOutput /on

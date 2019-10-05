@@ -1,31 +1,29 @@
 ---
 title: Visual Studio 구독
-Author: evanwindom
-Ms.author: tglee
-Manager: lank
+author: evanwindom
+ms.author: lank
+manager: lank
 layout: LandingPage
-Ms.date: 06/25/2018
-Ms.topic: landing-page
-Description: Welcome to Visual Studio Subscriptions
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 083522aae47abdfdec37d5add756457f18590953
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.date: 06/25/2018
+ms.topic: landing-page
+description: Visual Studio 구독에 오신 것을 환영합니다.
+ms.openlocfilehash: 9c2981ddf109a253f55e4c72dd4e88ceb2c820ff
+ms.sourcegitcommit: 9f11537a721e69879a612979a1aca98f40bb4d4d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856836"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70383708"
 ---
 # <a name="visual-studio-subscriptions"></a>Visual Studio 구독
 
-Visual Studio 구독은 Windows, iOS, Android, Linux 등을 비롯한 기본 플랫폼 및 디바이스에서 유용한 응용 프로그램을 만들고 배포하고 관리하는 데 필요한 포괄적인 리소스 집합입니다.  구독 혜택으로는 개발자 도구, 클라우드 서비스 및 소프트웨어, 교육에 대한 액세스와 개발 및 테스트 요구 사항에 대한 지원이 있습니다.
+Visual Studio 구독은 Windows, iOS, Android, Linux 등을 비롯한 기본 플랫폼 및 디바이스에서 유용한 애플리케이션을 만들고 배포하고 관리하는 데 필요한 포괄적인 리소스 집합입니다.  구독 혜택으로는 개발자 도구, 클라우드 서비스 및 소프트웨어, 교육에 대한 액세스와 개발 및 테스트 요구 사항에 대한 지원이 있습니다.
 
 ## <a name="get-started"></a>시작
 
 관리자는 [https://manage.visualstudio.com](https://manage.visualstudio.com)에 로그인하여 팀에게 구독을 할당합니다.<br>
 구독자는 [https://my.visualstudio.com](https://my.visualstudio.com)에 로그인하여 구독 혜택에 액세스합니다.
 
+<!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/azure/">
@@ -110,7 +108,7 @@ Visual Studio 구독은 Windows, iOS, Android, Linux 등을 비롯한 기본 플
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Visual Studio for Mac</h3>
+                        <h3>Mac용 Visual Studio</h3>
                     </div>
                 </div>
             </div>
@@ -156,8 +154,8 @@ Microsoft에서는 사용자가 구독을 훨씬 더 유용하게 사용할 수 
                         <p>최신 버전의 Visual Studio에 액세스하세요. PC 또는 Mac에서 Android, iOS, Windows, macOS, 웹 및 클라우드 앱 개발을 위한 완벽한 기능을 갖춘 IDE와 기타 플랫폼 간 도구에 액세스할 수 있습니다.</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-ide-benefit">Visual Studio</a></li>
-                            <li>Visual Studio for Mac</li>
-                            <li>Team Foundation Server 및 TFS CAL</li>
+                            <li>Mac용 Visual Studio</li>
+                            <li>Azure DevOps Server 및 CAL</li>
                         </ul>
                     </div>
                 </div>
@@ -170,7 +168,7 @@ Microsoft에서는 사용자가 구독을 훨씬 더 유용하게 사용할 수 
                 <div class="card">
                     <div class="cardText">
                         <h3>Cloud Services</h3>
-                        <p>Visual Studio 구독이 있으면 월간 Azure 크레딧을 받고 Azure 서비스에 무료로 액세스할 뿐만 아니라 개발 및 테스트 요금 할인 혜택을 누리고 미리 구성된 가상 머신으로 구독자 전용 이미지 갤러리에 단독으로 액세스할 수 있습니다. 구독에 따라 클라우드 서비스에는 다음이 포함될 수 있습니다.</p>
+                        <p>Visual Studio 구독을 통해 Azure 서비스에 액세스할 수 있는 월간 Azure 크레딧을 받고, 개발 및 테스트 요금 할인 혜택을 누리고, 미리 구성된 가상 머신으로 구독자 전용 이미지 갤러리에 단독으로 액세스할 수 있습니다. 구독에 따라 클라우드 서비스에는 다음이 포함될 수 있습니다.</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Visual Studio App Center</a></li>
@@ -195,8 +193,6 @@ Microsoft에서는 사용자가 구독을 훨씬 더 유용하게 사용할 수 
                             <li><a href="/visualstudio/subscriptions/vs-linkedin-learning">LinkedIn Premium</a>(비즈니스, 기술 및 크리에이티브)</li>
                             <li><a href="/visualstudio/subscriptions/vs-pluralsight">Pluralsight</a>(클라우드, 디자인, 모바일 및 데이터)</li>
                             <li><a href="/visualstudio/subscriptions/vs-datacamp">Data Camp</a>(데이터 과학 및 AI)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-xamarin">Xamarin University</a>(모바일 개발)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-opsgility">Opsgility 교육</a>(클라우드 중심)</li>
                             <li><a href="/visualstudio/subscriptions/vs-tech-support">Microsoft 전문가 기술 지원 인시던트</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-advisory-chat">Azure Advisory Chat</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-community">Azure 커뮤니티</a></li>

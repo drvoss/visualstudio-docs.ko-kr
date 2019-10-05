@@ -1,25 +1,22 @@
 ---
 title: 도메인 특정 언어에 대 한 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language
 ms.assetid: 29e5b6f2-ece4-4f3b-ab08-5f957418702f
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6cddf51705758d046ab66319d6ac6295f3a4b057
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 0ddfc51c54c04ad0d79d7ef180a027cbd253ac09
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68165432"
 ---
 # <a name="about-domain-specific-languages"></a>도메인별 언어 정보
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,15 +62,15 @@ C# 등 UML 범용 언어에서 달리 도메인 특정 언어 (DSL)는 문 특�
 ## <a name="aspects-of-graphical-domain-specific-development"></a>그래픽 도메인별 개발 측면  
  그래픽 도메인 특정 언어는 다음과 같은 기능을 포함 해야 합니다.  
   
--   Notation  
+- Notation  
   
--   도메인 모델  
+- 도메인 모델  
   
--   아티팩트 생성  
+- 아티팩트 생성  
   
--   Serialization  
+- Serialization  
   
--   Visual Studio와의 통합  
+- Visual Studio와의 통합  
   
 ### <a name="notation"></a>Notation  
  도메인 특정 언어를 적당히 작게 쉽게 정의 하 고 나타내는 도메인별 구문을 확장 하는 요소 집합이 있어야 합니다. 표기법 요소를 나타내는 모양 및 연결선 그래픽 다이어그램 화면에서 요소 간의 관계를 나타내는 구성 됩니다. [!INCLUDE[dsl](../includes/dsl-md.md)], 셰이프를 확장 하 고 도메인 특정 언어의 요소를 나타내기 위해 구체화 수 있습니다.  
@@ -95,30 +92,27 @@ C# 등 UML 범용 언어에서 달리 도메인 특정 언어 (DSL)는 문 특�
 ## <a name="benefits-of-domain-specific-development"></a>도메인 특정 개발의 이점  
  도메인 특정 언어에는 다음과 같은 이점을 제공할 수 있습니다.  
   
--   문제 공간을 정확 하 게 맞는 구문이 포함 되어 있습니다.  
+- 문제 공간을 정확 하 게 맞는 구문이 포함 되어 있습니다.  
   
      범용 언어와 달리 도메인 특정 언어 요소 및 관계 문제 영역의 논리를 직접 나타내는으로 구성 됩니다. 예를 들어, 보험 정책 응용 프로그램 정책 및 클레임에 대 한 요소를 포함 해야 합니다. 도메인 특정 언어를 쉽게 디자인 응용 프로그램 및 찾기 및 논리 오류를 수정 합니다.  
   
--   비 개발자 및 전반적인 디자인을 이해 하는 도메인 모르는 사람들이 있습니다.  
+- 비 개발자 및 전반적인 디자인을 이해 하는 도메인 모르는 사람들이 있습니다.  
   
      그래픽-도메인별 언어를 사용 하 여 개발자가 아닌 응용 프로그램의 디자인을 쉽게 이해할 수 있도록 도메인의 시각적 표현을 만들 수 있습니다.  
   
--   최종 응용 프로그램의 프로토타입을 만드는 쉽게 수 있습니다.  
+- 최종 응용 프로그램의 프로토타입을 만드는 쉽게 수 있습니다.  
   
      개발자는 자신의 모델 수를 클라이언트에 표시 되는 프로토타입 응용 프로그램을 만드는 생성 하는 코드를 사용할 수 있습니다.  
   
 ## <a name="the-process-of-domain-specific-development"></a>도메인 특정 개발 프로세스  
  도메인 특정 언어를 사용 하는 대부분의 소프트웨어 개발 팀을 만들고 해당 모델을 사용 하려면 다음이 단계를 수행 합니다.  
   
--   팀에서 변경 되지 않는 도메인의 변수 부분을 구분 합니다.  
+- 팀에서 변경 되지 않는 도메인의 변수 부분을 구분 합니다.  
   
--   개발자가 고정 된 부분에 대 한 코드를 작성 하 고 변수 부분에 대 한 확장 지점을 유지 합니다.  
+- 개발자가 고정 된 부분에 대 한 코드를 작성 하 고 변수 부분에 대 한 확장 지점을 유지 합니다.  
   
--   수석 소프트웨어 개발자 또는 설계자 변수 부분에 대 한 확장 지점과 도메인 고정 부분의 디자인 패턴을 통합 하는 도메인 특정 언어를 만듭니다.  
+- 수석 소프트웨어 개발자 또는 설계자 변수 부분에 대 한 확장 지점과 도메인 고정 부분의 디자인 패턴을 통합 하는 도메인 특정 언어를 만듭니다.  
   
--   수석 소프트웨어 개발자 또는 설계자 도메인 특정 언어 팀을 생성 하는 다양 한 응용 프로그램 개발자에 게 배포 합니다.  
+- 수석 소프트웨어 개발자 또는 설계자 도메인 특정 언어 팀을 생성 하는 다양 한 응용 프로그램 개발자에 게 배포 합니다.  
   
--   모든 개발자는 특정 응용 프로그램에 적용 되는 모델을 만듭니다.
-
-
-
+- 모든 개발자는 특정 응용 프로그램에 적용 되는 모델을 만듭니다.

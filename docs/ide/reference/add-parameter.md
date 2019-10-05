@@ -1,20 +1,18 @@
 ---
 title: 메서드 빠른 작업에 매개 변수 추가
 ms.date: 09/28/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0337f9869764f544f5248d4da717af849457b8e8
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: 3e1461afe5c4d6026f8532896ba837e971fed652
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62792271"
 ---
 # <a name="add-a-parameter-to-a-method-using-a-quick-action"></a>빠른 작업을 사용하여 메서드에 매개 변수 추가
 
@@ -24,7 +22,7 @@ ms.locfileid: "47443787"
 
 - Visual Basic
 
-**대상:** 사용법을 기준으로 메서드에 매개 변수를 자동으로 추가할 수 있습니다.
+**내용:** 사용법을 기준으로 메서드에 매개 변수를 자동으로 추가할 수 있습니다.
 
 **시기:** 메서드에 매개 변수를 추가해야 하며, 자동으로 메서드를 제대로 선언하려고 합니다.
 

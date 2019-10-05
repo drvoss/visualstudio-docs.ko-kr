@@ -2,7 +2,6 @@
 title: IDebugDocumentText::GetSize | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3152150c46793a71ec7a46b6ab2097efa06f6fc8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 95f8df44a503fa72f57a9cee17eb5e832e4eb670
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008594"
 ---
 # <a name="idebugdocumenttextgetsize"></a>IDebugDocumentText::GetSize
-문서에서 줄 수 및 문자 수를 반환합니다.  
+문서의 줄 번호 및 문자 수를 반환합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetSize(  
    ULONG*  pcNumLines,  
    ULONG*  pcNumChars  
@@ -39,7 +38,7 @@ HRESULT GetSize(
   
 #### <a name="parameters"></a>매개 변수  
  `pcNumLines`  
- [out] 문서에는 줄 수입니다. 이 매개 변수가 NULL 인 경우 메서드는 값을 반환 하지 않습니다.  
+ [out] 문서의 줄 수입니다. 이 매개 변수가 NULL 인 경우 메서드는 값을 반환 하지 않습니다.  
   
  `pcNumChars`  
  [out] 문서의 문자 수입니다. 이 매개 변수가 NULL 인 경우 메서드는 값을 반환 하지 않습니다.  
@@ -52,7 +51,7 @@ HRESULT GetSize(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 문서에서 줄의 수 및 문자 수를 반환합니다.  
+ 이 메서드는 문서의 줄 번호 및 문자 수를 반환합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugDocumentText 인터페이스](../../winscript/reference/idebugdocumenttext-interface.md)

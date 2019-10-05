@@ -1,12 +1,10 @@
 ---
 title: 클래스 및 형식 생성
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 f1_keywords:
 - vsl.GenerateFromUsage
 dev_langs:
@@ -14,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4f7d722669ddf51715b21ddaf1f253fb0668dfaa
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a1258e0448fe7be9dd7fa0180f52604d877b051d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62795025"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Visual Studio에서 클래스 또는 형식 생성
 
@@ -53,8 +51,8 @@ ms.locfileid: "53065476"
       - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
    - **마우스**
       - 마우스 오른쪽 단추로 클릭하고 **빠른 작업 및 리팩터링** 메뉴를 선택합니다.
-      - 빨간색 구부러진 곡선 위로 마우스를 이동하고 표시되는 ![전구](media/bulb-cs.png) 아이콘을 클릭합니다.
-      - 텍스트 커서가 이미 구부러진 빨간 곡선이 있는 줄 위에 있으면 왼쪽 여백에 나타나는 ![전구](media/bulb-cs.png) 아이콘을 클릭합니다.
+      - 빨간색 구부러진 곡선 위로 마우스를 이동하고 표시되는 ![오류 전구](media/error-bulb.png) 아이콘을 클릭합니다.
+      - 텍스트 커서가 이미 구부러진 빨간 곡선이 있는 줄 위에 있으면 왼쪽 여백에 나타나는 ![오류 전구](media/error-bulb.png) 아이콘을 클릭합니다.
 
       ![클래스 생성 미리 보기](media/class-preview-cs.png)
 
@@ -75,7 +73,7 @@ ms.locfileid: "53065476"
    선택 | 설명
    --- | ---
    액세스 | *기본*, *내부* 또는 *공용* 액세스 권한을 가지도록 형식을 설정합니다.
-   Kind | *클래스* 또는 *구조체*로 설정할 수 있습니다.
+   종류 | *클래스* 또는 *구조체*로 설정할 수 있습니다.
    name | 이를 변경할 수 없으며 이미 입력한 이름이 사용됩니다.
    프로젝트 | 솔루션에 여러 프로젝트가 있는 경우 클래스/구조체를 활성화할 위치를 선택할 수 있습니다.
    파일 이름 | 새 파일을 만들거나 기존 파일에 형식을 추가할 수 있습니다.

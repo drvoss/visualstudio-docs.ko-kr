@@ -1,14 +1,9 @@
 ---
 title: Visual Basic 관련 IntelliSense | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense [Visual Basic]
 - IntelliSense [Visual Studio], Visual Basic
@@ -16,22 +11,22 @@ ms.assetid: 4dec8753-05e5-4f74-b304-5f8c4ed8723b
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7fbeae534915863ec8a49e529bef4f6eb0c0fcb0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f471ed62a3bb53c4779c0b2d80315f10bfc85993
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852494"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696475"
 ---
 # <a name="visual-basic-specific-intellisense"></a>Visual Basic 관련 IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Basic 소스 코드 편집기는 다음과 같은 IntelliSense 기능을 제공합니다.  
   
--   구문 팁  
+- 구문 팁  
   
-     구문 팁은 입력하는 문의 구문을 표시합니다. [선언](http://msdn.microsoft.com/library/d3f21fb0-b804-4c99-97ed-583b23894cf1)과 같은 문에 유용합니다.  
+     구문 팁은 입력하는 문의 구문을 표시합니다. [선언](https://msdn.microsoft.com/library/d3f21fb0-b804-4c99-97ed-583b23894cf1)과 같은 문에 유용합니다.  
   
 ## <a name="automatic-completion"></a>자동 완성  
   
@@ -48,16 +43,13 @@ Visual Basic 소스 코드 편집기는 다음과 같은 IntelliSense 기능을 
   멤버 목록, 단어 자동 완성 또는 ALT+오른쪽 화살표를 호출하여 완료를 수동으로 실행할 수 있습니다. 자세한 내용은 [IntelliSense 사용](../ide/using-intellisense.md)을 참조하세요.  
   
 ## <a name="intellisense-in-zone"></a>영역 내 IntelliSense  
- 영역 내 IntelliSense는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]를 통해 응용 프로그램을 배포해야 하는 Visual Basic 개발자에게 도움을 주며 부분 신뢰 설정으로 제한됩니다. 이 기능:  
+ 영역 내 IntelliSense는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]를 통해 애플리케이션을 배포해야 하는 Visual Basic 개발자에게 도움을 주며 부분 신뢰 설정으로 제한됩니다. 이 기능:  
   
-- 응용 프로그램을 실행할 사용 권한을 선택할 수 있습니다.  
+- 애플리케이션을 실행할 사용 권한을 선택할 수 있습니다.  
   
 - 선택한 영역의 API를 멤버 목록에서 사용할 수 있는 상태로 표시하고, 추가 사용 권한이 필요한 API를 사용할 수 없는 상태로 표시합니다.  
   
-  자세한 내용은 [ClickOnce 응용 프로그램의 코드 액세스 보안](../deployment/code-access-security-for-clickonce-applications.md)을 참조하세요.  
+  자세한 내용은 [ClickOnce 애플리케이션의 코드 액세스 보안](../deployment/code-access-security-for-clickonce-applications.md)을 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
  [IntelliSense 사용](../ide/using-intellisense.md)
-
-
-

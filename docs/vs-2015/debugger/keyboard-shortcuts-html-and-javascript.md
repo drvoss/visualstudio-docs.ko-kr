@@ -1,14 +1,9 @@
 ---
 title: 바로 가기 키 (HTML 및 JavaScript) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 8d44425a-6584-477d-932e-4e10d5e79511
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7313869648a22a2c455f06b73981d788b9f678cc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dedfc8e5be9b3410c978722518f50162bcd2b40b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199676"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>바로 가기 키(HTML 및 JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,15 +53,12 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
 |작업|바로 가기|  
 |------------|--------------|  
 |요소 선택|Ctrl+B|  
-|표시 및 사용 하는 경우 웹 페이지 강조 표시 상자 숨기기 사이 전환 **요소 선택**|Ctrl+Shift+I|  
-|사용 하 여 변경 내용 커밋 **HTML로 편집**|Ctrl+Enter|  
-|사용 하 여 변경 내용을 취소 **HTML로 편집**|Esc|  
+|**요소 선택**을 사용할 때 웹 페이지 강조 표시 상자의 표시/숨기기 기능 전환|Ctrl+Shift+I|  
+|**HTML로 편집**을 사용하여 변경 내용 커밋|Ctrl+Enter|  
+|**HTML로 편집**을 사용하여 변경 내용 삭제|Esc|  
 |선택한 CSS 값 1씩 증가|위쪽 화살표|  
 |선택한 CSS 값 1씩 감소|아래쪽 화살표|  
   
 ## <a name="see-also"></a>참고 항목  
  [빠른 시작: HTML 및 CSS 디버그](../debugger/quickstart-debug-html-and-css.md)   
  [빠른 시작: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md)
-
-
-

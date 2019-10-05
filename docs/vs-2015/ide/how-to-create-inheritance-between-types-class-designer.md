@@ -1,14 +1,9 @@
 ---
-title: '방법: 형식 간의 상속 만들기(클래스 디자이너) | Microsoft Docs'
-ms.custom: ''
+title: '방법: (클래스 디자이너) 형식 간의 상속 만들기 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.inheritanceline
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 3786a21c-8022-4bf5-9d13-740fd354e93c
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5bcc052589f090eaad8aace8c491f74d3bbfefe9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9994733405932ed9f7b15cc8ce46c31215afaebc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257779"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680352"
 ---
 # <a name="how-to-create-inheritance-between-types-class-designer"></a>방법: 형식 간의 상속 만들기(클래스 디자이너) 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,32 +28,29 @@ ms.locfileid: "49257779"
   
 ### <a name="to-create-an-inheritance-between-types"></a>형식 간에 상속을 만들려면  
   
-1.  솔루션 탐색기의 프로젝트에서 클래스 다이어그램 파일(.cd)을 엽니다.  
+1. 솔루션 탐색기의 프로젝트에서 클래스 다이어그램 파일(.cd)을 엽니다.  
   
-     클래스 다이어그램이 없으면 새로 만듭니다. [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)을 참조하세요.  
+     클래스 다이어그램이 없으면 새로 만듭니다. [방법: (클래스 디자이너) 프로젝트에 클래스 다이어그램 추가](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)합니다.  
   
-2.  **도구 상자**의 **클래스 디자이너**에서 **상속**을 클릭합니다.  
+2. **도구 상자**의 **클래스 디자이너**에서 **상속**을 클릭합니다.  
   
-3.  클래스 다이어그램에서 다음 항목부터 시작하여 원하는 형식 간에 상속 선을 그립니다.  
+3. 클래스 다이어그램에서 다음 항목부터 시작하여 원하는 형식 간에 상속 선을 그립니다.  
   
-    -   파생 클래스에서 기본 클래스로  
+    - 파생 클래스에서 기본 클래스로  
   
-    -   구현할 클래스에서 구현된 인터페이스로  
+    - 구현할 클래스에서 구현된 인터페이스로  
   
-    -   확장할 인터페이스에서 확장된 인터페이스로  
+    - 확장할 인터페이스에서 확장된 인터페이스로  
   
-4.  원하는 경우 제네릭 형식에서 파생된 형식이 있으면 상속 선을 클릭하고 **속성** 창에서 제네릭 형식에 대해 원하는 형식과 일치하도록 **형식 인수** 속성을 설정합니다.  
+4. 원하는 경우 제네릭 형식에서 파생된 형식이 있으면 상속 선을 클릭하고 **속성** 창에서 제네릭 형식에 대해 원하는 형식과 일치하도록 **형식 인수** 속성을 설정합니다.  
   
     > [!NOTE]
-    >  부모 추상 클래스에 추상 멤버가 하나 이상 포함되어 있으면 모든 추상 멤버가 비추상 상속 클래스로 구현됩니다.   
+    > 부모 추상 클래스에 추상 멤버가 하나 이상 포함되어 있으면 모든 추상 멤버가 비추상 상속 클래스로 구현됩니다.   
     >   
     >  기존 제네릭 형식을 시각화할 수는 있지만 새 제네릭 형식을 만들 수는 없습니다. 또한 기존 제네릭 형식의 형식 매개 변수를 변경할 수도 없습니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [상속](http://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea)   
- [상속 기본 사항](http://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5)   
- [방법: 형식 간의 상속 보기(클래스 디자이너)](../ide/how-to-view-inheritance-between-types-class-designer.md)   
+ [상속](https://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea)   
+ [상속 기본 사항](https://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5)   
+ [방법: (클래스 디자이너) 형식 간의 상속 보기](../ide/how-to-view-inheritance-between-types-class-designer.md)   
  [클래스 디자이너의 Visual C++ 클래스](../ide/visual-cpp-classes-in-class-designer.md)
-
-
-

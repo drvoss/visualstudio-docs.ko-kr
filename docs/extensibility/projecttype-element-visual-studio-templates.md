@@ -8,95 +8,93 @@ f1_keywords:
 helpviewer_keywords:
 - ProjectType element [Visual Studio project templates]
 ms.assetid: ccf9d83f-c7f3-49c7-a31f-e1f22bec004c
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21826a432dbbebb6ae38db4ed5b1ca33d95cf9f6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 494f8d3ab204a599e8d3708d07a56c87658b97d4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941520"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311906"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType 요소 (Visual Studio 템플릿)
-지정 된 그룹에 나타나도록 프로젝트 템플릿을 분류 합니다 **새 프로젝트** 하거나 **새 항목 추가** 대화 상자.  
-  
+지정 된 그룹에 나타나도록 프로젝트 템플릿을 분류 합니다 **새 프로젝트** 하거나 **새 항목 추가** 대화 상자.
+
 > [!WARNING]
->  Visual Studio 2012에서 시작 하는 c + + 프로젝트 템플릿이 지원 됩니다. Visual Studio 2010 및 이전 버전의 c + +에 대 한 지원 되지 않습니다.  
-  
- \<VSTemplate>  
- \<TemplateData>  
- \<ProjectType >  
-  
-## <a name="syntax"></a>구문  
-  
-```xml  
-<ProjectType> CSharp/VisualBasic/VC/Web </ProjectType>  
-```  
-  
-## <a name="attributes-and-elements"></a>특성 및 요소  
- 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.  
-  
-### <a name="attributes"></a>특성  
- 없음  
-  
-### <a name="child-elements"></a>자식 요소  
- 없음  
-  
-### <a name="parent-elements"></a>부모 요소  
-  
-|요소|설명|  
-|-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.|  
-  
-## <a name="text-value"></a>텍스트 값  
- 텍스트 값은 필수입니다.  
-  
- 이 값에는 프로젝트 템플릿 만들고, 유형과 다음 값 중 하나를 포함 해야 합니다 지정 합니다.  
-  
-- `CSharp`: 서식 파일을 만들도록 지정을 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 프로젝트 또는 항목입니다.  
-  
-- `VisualBasic`: 서식 파일을 만들도록 지정을 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 프로젝트 또는 항목입니다.  
-  
-- `Web`: 템플릿이 웹 프로젝트 또는 항목을 만들도록 지정 합니다. 경우는 `ProjectType` 이 값을 포함 하는 요소, 프로젝트 또는 항목의 언어에 정의 된 합니다 [ProjectSubType 요소 (Visual Studio 템플릿)](../extensibility/projectsubtype-element-visual-studio-templates.md)합니다.  
-  
-## <a name="remarks"></a>설명  
- `ProjectType`은 `TemplateData`의 필수 자식 요소입니다.  
-  
- 값을 `ProjectType` 요소 서식 파일의 위치를 지정 합니다 **새 프로젝트** 또는 **새 항목 추가** 대화 상자. 사용 하 여 템플릿 예를 들어를 `ProjectType` 값 `CSharp` 아래에 표시 됩니다는 **Visual C#** 에 노드를 **새 프로젝트** 대화 상자.  
-  
- Template 하위 유형의 경우를 사용 하 여 지정할 수 있습니다 합니다 [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) 요소입니다.  
-  
-## <a name="example"></a>예제  
- 다음 예제에서는 프로젝트 템플릿에 대 한 메타 데이터는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 응용 프로그램입니다.  
-  
-```  
-<VSTemplate Type="Project" Version="3.0.0"  
-    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    <TemplateData>  
-        <Name>My template</Name>  
-        <Description>A basic starter kit</Description>  
-        <Icon>TemplateIcon.ico</Icon>  
-        <ProjectType>CSharp</ProjectType>  
-    </TemplateData>  
-    <TemplateContent>  
-        <Project File="MyStarterKit.csproj">  
-            <ProjectItem>Form1.cs<ProjectItem>  
-            <ProjectItem>Form1.Designer.cs</ProjectItem>  
-            <ProjectItem>Program.cs</ProjectItem>  
-            <ProjectItem>Properties\AssemblyInfo.cs</ProjectItem>  
-            <ProjectItem>Properties\Resources.resx</ProjectItem>  
-            <ProjectItem>Properties\Resources.Designer.cs</ProjectItem>  
-            <ProjectItem>Properties\Settings.settings</ProjectItem>  
-            <ProjectItem>Properties\Settings.Designer.cs</ProjectItem>  
-        </Project>  
-    </TemplateContent>  
-</VSTemplate>  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)   
- [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)   
- [ProjectSubType 요소 (Visual Studio 템플릿)](../extensibility/projectsubtype-element-visual-studio-templates.md)
+> 에 대 한 프로젝트 템플릿은 지원 되지만 C++ Visual Studio 2012에서 시작 합니다. 에 대 한 지원 되지 않습니다 C++ Visual Studio 2010 및 이전 버전입니다.
+
+ \<VSTemplate> \<TemplateData> \<ProjectType>
+
+## <a name="syntax"></a>구문
+
+```xml
+<ProjectType> CSharp/VisualBasic/VC/Web </ProjectType>
+```
+
+## <a name="attributes-and-elements"></a>특성 및 요소
+ 다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
+
+### <a name="attributes"></a>특성
+ 없음
+
+### <a name="child-elements"></a>자식 요소
+ 없음
+
+### <a name="parent-elements"></a>부모 요소
+
+|요소|설명|
+|-------------|-----------------|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|템플릿을 분류하고 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 템플릿이 표시되는 방식을 정의합니다.|
+
+## <a name="text-value"></a>텍스트 값
+ 텍스트 값은 필수입니다.
+
+ 이 값에는 프로젝트 템플릿 만들고, 유형과 다음 값 중 하나를 포함 해야 합니다 지정 합니다.
+
+- `CSharp`: 서식 파일을 만들도록 지정을 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 프로젝트 또는 항목입니다.
+
+- `VisualBasic`: 서식 파일을 만들도록 지정을 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 프로젝트 또는 항목입니다.
+
+- `Web`: 템플릿이 웹 프로젝트 또는 항목을 만들도록 지정 합니다. 경우는 `ProjectType` 이 값을 포함 하는 요소, 프로젝트 또는 항목의 언어에 정의 된 합니다 [ProjectSubType 요소 (Visual Studio 템플릿)](../extensibility/projectsubtype-element-visual-studio-templates.md)합니다.
+
+## <a name="remarks"></a>설명
+ `ProjectType`은 `TemplateData`의 필수 자식 요소입니다.
+
+ 값을 `ProjectType` 요소 서식 파일의 위치를 지정 합니다 **새 프로젝트** 또는 **새 항목 추가** 대화 상자. 사용 하 여 템플릿 예를 들어를 `ProjectType` 값 `CSharp` 아래에 표시 됩니다는 **Visual C#** 에 노드를 **새 프로젝트** 대화 상자.
+
+ Template 하위 유형의 경우를 사용 하 여 지정할 수 있습니다 합니다 [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) 요소입니다.
+
+## <a name="example"></a>예제
+ 다음 예제에서는 프로젝트 템플릿에 대 한 메타 데이터는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 응용 프로그램입니다.
+
+```
+<VSTemplate Type="Project" Version="3.0.0"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>My template</Name>
+        <Description>A basic starter kit</Description>
+        <Icon>TemplateIcon.ico</Icon>
+        <ProjectType>CSharp</ProjectType>
+    </TemplateData>
+    <TemplateContent>
+        <Project File="MyStarterKit.csproj">
+            <ProjectItem>Form1.cs<ProjectItem>
+            <ProjectItem>Form1.Designer.cs</ProjectItem>
+            <ProjectItem>Program.cs</ProjectItem>
+            <ProjectItem>Properties\AssemblyInfo.cs</ProjectItem>
+            <ProjectItem>Properties\Resources.resx</ProjectItem>
+            <ProjectItem>Properties\Resources.Designer.cs</ProjectItem>
+            <ProjectItem>Properties\Settings.settings</ProjectItem>
+            <ProjectItem>Properties\Settings.Designer.cs</ProjectItem>
+        </Project>
+    </TemplateContent>
+</VSTemplate>
+```
+
+## <a name="see-also"></a>참고자료
+- [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
+- [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
+- [ProjectSubType 요소 (Visual Studio 템플릿)](../extensibility/projectsubtype-element-visual-studio-templates.md)

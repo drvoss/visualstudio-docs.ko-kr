@@ -1,14 +1,9 @@
 ---
 title: 메뉴 및 도구 모음 명령 최적화 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - commands [Visual Studio], menus
 - commands [Visual Studio], toolbars
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 8385f1a6-1e98-4dca-83d2-fcbed7177242
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 47a95f4152e1c0779fc3def057f49b9ec9130259
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 25a721c77269837ad8d158db186274586ad638df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150820"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>메뉴 및 도구 모음 명령 최적화
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,4 +36,3 @@ Vspackage 및 해당 해당 명령을 추가 [!INCLUDE[vsprvs](../../includes/vs
 ## <a name="related-sections"></a>관련 단원  
  [명령, 메뉴 및 도구 모음](../../extensibility/internals/commands-menus-and-toolbars.md)  
  메뉴, 도구 모음 및 명령 콤보 상자를 포함하는 UI를 만드는 방법을 설명합니다.
-

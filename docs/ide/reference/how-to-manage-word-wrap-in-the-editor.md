@@ -1,8 +1,6 @@
 ---
 title: 단어 줄 바꿈
 ms.date: 11/07/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - word wrap
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 442f33ef-9f52-4515-b55f-fb816d664645
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fc38d1ee5a8e5543675700c35cc0cb298aefad9
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: bdf19530461d52523bc581835e14fcaabe0e9a76
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349116"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605435"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>방법: 편집기에서 자동 줄 바꿈 관리
 
@@ -30,19 +28,19 @@ ms.locfileid: "51349116"
 
 ## <a name="to-set-word-wrap-preferences"></a>자동 줄 바꿈 기본 설정을 설정하려면
 
-1.  **도구** 메뉴에서 **옵션**을 선택합니다.
+1. **도구** 메뉴에서 **옵션**을 선택합니다.
 
-2.  **텍스트 편집기** 폴더의 **모든 언어** 하위 폴더에서 **일반** 옵션을 선택하여 이 옵션을 전역으로 설정합니다.
+2. **텍스트 편집기** 폴더의 **모든 언어** 하위 폴더에서 **일반** 옵션을 선택하여 이 옵션을 전역으로 설정합니다.
 
      — 또는 —
 
      프로그래밍 중인 언어에 대한 하위 폴더에서 **일반** 옵션을 선택합니다.
 
-3.  **설정**에서 **자동 줄 바꿈 옵션**을 선택 또는 선택 취소합니다.
+3. **설정**에서 **자동 줄 바꿈 옵션**을 선택 또는 선택 취소합니다.
 
      **자동 줄 바꿈** 옵션을 선택하면 **자동 줄 바꿈 시각 문자 표시** 옵션을 사용할 수 있습니다.
 
-4.  긴 줄이 두 번째 줄로 줄 바꿈되는 위치에 줄 바꿈 화살표 표시기를 표시하려면 **자동 줄 바꿈 시각 문자 표시** 옵션을 선택합니다. 표시기 화살표를 표시하지 않으려면 이 옵션의 선택을 취소합니다.
+4. 긴 줄이 두 번째 줄로 줄 바꿈되는 위치에 줄 바꿈 화살표 표시기를 표시하려면 **자동 줄 바꿈 시각 문자 표시** 옵션을 선택합니다. 표시기 화살표를 표시하지 않으려면 이 옵션의 선택을 취소합니다.
 
     > [!NOTE]
     > 이러한 미리 알림 화살표는 코드에 추가되지 않고 표시용으로만 사용됩니다.
@@ -57,6 +55,4 @@ Notepad++, Sublime Text 또는 Visual Studio Code에서 자동 줄 바꿈에 익
 
 ## <a name="see-also"></a>참고 항목
 
-- [편집기 사용자 지정](../../ide/customizing-the-editor.md)
-- [옵션 대화 상자, 텍스트 편집기](../../ide/reference/text-editor-options-dialog-box.md)
 - [코드 편집기의 기능](../../ide/writing-code-in-the-code-and-text-editor.md)

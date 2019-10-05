@@ -4,24 +4,24 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: a741a506338066dddbee2cdbfd701ad3bfb4c922
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d1783ecf3b30207838d93fdb9cda93e3ed7e232c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929700"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62422929"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>색, 선 스타일 및 기타 모양 속성 제어
-일부 셰이프 속성 같은 색 노출 될 수 있지만' '-즉, 연결 모양의 도메인 속성. 다른 사용자가 직접 제어 해야 합니다.
+
+색와 같은 일부 셰이프 속성 노출 될 수 있습니다 ''. 즉, 셰이프 도메인 속성에 속성을 연결할 수 있습니다. 다른 사용자가 직접 제어 해야 합니다.
 
 ## <a name="exposing-a-property"></a>속성을 노출합니다.
  도메인 속성의 값으로 색와 같은 일부 셰이프 속성을 연결할 수 있습니다.
 
- DSL 정의에서 모양, 연결선 또는 다이어그램 클래스를 선택 합니다. 해당 상황에 맞는 메뉴에서 선택 **Add Exposed**를 채우기 색 등의 원하는 속성을 선택 합니다.
+ DSL 정의에서 모양, 연결선 또는 다이어그램 클래스를 선택 합니다. 오른쪽 클릭 메뉴에서 선택 **Add Exposed**를 채우기 색 등의 원하는 속성을 선택 합니다.
 
  셰이프는 이제 프로그램 코드 또는 사용자로 설정할 수 있는 도메인 속성이 있습니다.
 

@@ -1,22 +1,21 @@
 ---
 title: Visual Studio에 로그인
-ms.custom: ''
-ms.date: 11/16/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
+titleSuffix: ''
+ms.custom: seodec18
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7568583ac9239e168760000f0712ca7dcc4c33f
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: c7568f27d9be2ff38c2d5c87cf8a950e06846db5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960790"
 ---
 # <a name="sign-in-to-visual-studio"></a>Visual Studio에 로그인
 
@@ -27,13 +26,13 @@ IDE에 로그인하여 개인 설정 계정을 설정하면 Visual Studio의 개
 
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Visual Studio에 로그인해야 하는 이유는 무엇인가요?
 
-로그인하면 Visual Studio 환경이 향상됩니다. 몇 가지 예를 들자면, 로그인한 후에는 여러 디바이스에서 설정을 동기화하고 평가판을 연장하고 Azure 서비스에 자동으로 연결할 수 있습니다.
+로그인하면 Visual Studio 환경이 향상됩니다. 몇 가지 예를 들자면, 로그인한 후에는 여러 디바이스에서 [설정을 동기화](synchronized-settings-in-visual-studio.md)하고 평가판을 연장하고 Azure 서비스에 자동으로 연결할 수 있습니다.
 
 다음은 로그인 후 예상할 수 있고 수행할 수 있는 작업의 전체 목록입니다.
 
-- **Visual Studio Dev Essentials 프로그램에 액세스** - 이 프로그램은 무료 소프트웨어 제품, 교육, 지원 등을 포함합니다. 자세한 내용은 [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) 를 참조하세요.
+- **Visual Studio Dev Essentials 프로그램에 액세스** - 이 프로그램은 무료 소프트웨어 제품, 교육, 지원 등을 포함합니다. 자세한 내용은 [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) 를 참조하세요.
 
-- **Visual Studio 설정 동기화** – 아무 장치에서나 Visual Studio에 로그인하면 키 바인딩, 창 레이아웃 및 색 테마 등의 사용자 지정 설정이 즉시 적용됩니다. [Visual Studio의 동기화된 설정](../ide/synchronized-settings-in-visual-studio.md)을 참조하세요.
+- **Visual Studio 설정 동기화** – 아무 디바이스에서나 Visual Studio에 로그인하면 키 바인딩, 창 레이아웃 및 색 테마 등의 사용자 지정 설정이 즉시 적용됩니다. [Visual Studio의 동기화된 설정](../ide/synchronized-settings-in-visual-studio.md)을 참조하세요.
 
 - **Visual Studio Community 버전 잠금 해제** - Community Edition 설치에서 라이선스를 입력하라는 메시지가 표시되는 경우 IDE에 로그인하여 직접 잠금을 해제합니다.
 
@@ -45,7 +44,7 @@ IDE에 로그인하여 개인 설정 계정을 설정하면 Visual Studio의 개
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Visual Studio에 로그인하는 방법
 
-Visual Studio를 처음 시작할 때 로그인할지 묻는 메시지가 나타나고 기본적인 등록 정보를 제공합니다. 자신을 가장 잘 나타내는 Microsoft 계정이나 회사 또는 학교 계정을 선택해야 합니다. 이러한 계정이 없으면 무료로 Microsoft 계정을 만들 수 있습니다. [Microsoft 계정을 등록하려면 어떻게 하나요?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)를 참조하세요.
+Visual Studio를 처음 열 때 로그인하고 기본적인 등록 정보를 입력하라는 메시지가 나타납니다. 자신을 가장 잘 나타내는 Microsoft 계정이나 회사 또는 학교 계정을 선택해야 합니다. 이러한 계정이 없으면 무료로 Microsoft 계정을 만들 수 있습니다. [Microsoft 계정을 등록하려면 어떻게 하나요?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)를 참조하세요.
 
 그런 다음 Visual Studio에서 사용할 UI 설정과 색 테마를 선택합니다. Visual Studio가 이러한 설정을 기억하고 로그인한 모든 Visual Studio 환경에서 이 설정을 동기화합니다. 동기화된 설정 목록은 [동기화된 설정](../ide/synchronized-settings-in-visual-studio.md)을 참조하세요. 나중에 Visual Studio에서 **도구** > **옵션** 메뉴를 열어 설정을 변경할 수 있습니다.
 

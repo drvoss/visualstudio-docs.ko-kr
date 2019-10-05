@@ -1,27 +1,22 @@
 ---
 title: 함수 뷰 - .NET 메모리 계측 데이터 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Functions view
 ms.assetid: cd45b379-394b-4b71-828c-92cd89e46ae0
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8bacc61ec9c254ce662854a08fe6a508977a72e2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 340a12bfb8dc9a26c4200682851bb0acc684dddf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730184"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62419912"
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>함수 뷰 - .NET 메모리 계측 데이터
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,33 +77,30 @@ ms.locfileid: "51730184"
 |**최대 경과된 전용 시간**|이 함수 호출의 최대 경과된 전용 시간입니다.|  
 |**경과된 최소 전용 시간**|이 함수 호출의 최소 경과된 전용 시간입니다.|  
   
-## <a name="application-inclusive-values"></a>응용 프로그램 포괄 시간값  
- 응용 프로그램 포괄 값은 함수가 호출 스택에 있던 시간을 나타냅니다. 시간에는 컨텍스트 전환 및 입/출력 작업처럼 운영 체제에 대한 호출에 소요된 시간이 포함되지 않습니다. 그러나 자식 함수에서 소요된 시간은 포함됩니다.  
+## <a name="application-inclusive-values"></a>애플리케이션 포괄 값  
+ 애플리케이션 포괄 값은 함수가 호출 스택에 있던 시간을 나타냅니다. 시간에는 컨텍스트 전환 및 입/출력 작업처럼 운영 체제에 대한 호출에 소요된 시간이 포함되지 않습니다. 그러나 자식 함수에서 소요된 시간은 포함됩니다.  
   
 |열|설명|  
 |------------|-----------------|  
-|**응용 프로그램 포괄 시간**|이 함수에 대한 모든 호출의 총 응용 프로그램 포괄 시간입니다.|  
-|**응용 프로그램 포괄 시간 비율(%)**|이 함수의 총 응용 프로그램 포괄 시간에서 소요된 프로파일링 실행의 총 경과된 포괄 시간 비율입니다.|  
-|**평균 응용 프로그램 포괄 시간**|이 함수에 대한 호출의 평균 응용 프로그램 포괄 시간입니다.|  
-|**최대 응용 프로그램 포괄 시간**|이 함수에 대한 호출의 최대 응용 프로그램 포괄 시간입니다.|  
-|**최소 응용 프로그램 포괄 시간**|이 함수에 대한 호출의 최소 응용 프로그램 포괄 시간입니다.|  
+|**애플리케이션 포괄 시간**|이 함수에 대한 모든 호출의 총 애플리케이션 포괄 시간입니다.|  
+|**애플리케이션 포괄 시간 비율(%)**|이 함수의 총 애플리케이션 포괄 시간에서 소요된 프로파일링 실행의 총 경과된 포괄 시간 비율입니다.|  
+|**평균 애플리케이션 포괄 시간**|이 함수에 대한 호출의 평균 애플리케이션 포괄 시간입니다.|  
+|**최대 애플리케이션 포괄 시간**|이 함수에 대한 호출의 최대 애플리케이션 포괄 시간입니다.|  
+|**최소 애플리케이션 포괄 시간**|이 함수에 대한 호출의 최소 애플리케이션 포괄 시간입니다.|  
   
-## <a name="application-exclusive-values"></a>응용 프로그램 전용 시간값  
- 응용 프로그램 전용 값은 함수가 호출 스택의 맨 위에서 직접 실행 중이던 시간을 나타냅니다. 시간에는 컨텍스트 전환 및 입/출력 작업처럼 운영 체제에 대한 호출에 소요된 시간이 포함되지 않으며 자식 함수에서 소요된 시간도 포함되지 않습니다.  
+## <a name="application-exclusive-values"></a>애플리케이션 전용 값  
+ 애플리케이션 전용 값은 함수가 호출 스택의 맨 위에서 직접 실행 중이던 시간을 나타냅니다. 시간에는 컨텍스트 전환 및 입/출력 작업처럼 운영 체제에 대한 호출에 소요된 시간이 포함되지 않으며 자식 함수에서 소요된 시간도 포함되지 않습니다.  
   
 |열|설명|  
 |------------|-----------------|  
-|**응용 프로그램 전용 시간**|이 함수에 대한 모든 호출의 총 응용 프로그램 전용 시간입니다.|  
-|**응용 프로그램 전용 시간 비율(%)**|이 함수의 총 응용 프로그램 전용 시간에서 소요된 프로파일링 실행의 총 경과된 전용 시간 비율입니다.|  
-|**평균 응용 프로그램 전용 시간**|이 함수에 대한 호출의 평균 응용 프로그램 전용 시간입니다.|  
-|**최대 응용 프로그램 전용 시간**|이 함수에 대한 호출의 최대 응용 프로그램 전용 시간입니다.|  
-|**최소 응용 프로그램 전용 시간**|이 함수에 대한 호출의 최소 응용 프로그램 전용 시간입니다.|  
+|**애플리케이션 전용 시간**|이 함수에 대한 모든 호출의 총 애플리케이션 전용 시간입니다.|  
+|**애플리케이션 전용 시간 비율(%)**|이 함수의 총 애플리케이션 전용 시간에서 소요된 프로파일링 실행의 총 경과된 전용 시간 비율입니다.|  
+|**평균 애플리케이션 전용 시간**|이 함수에 대한 호출의 평균 애플리케이션 전용 시간입니다.|  
+|**최대 애플리케이션 전용 시간**|이 함수에 대한 호출의 최대 애플리케이션 전용 시간입니다.|  
+|**최소 애플리케이션 전용 시간**|이 함수에 대한 호출의 최소 애플리케이션 전용 시간입니다.|  
   
 ## <a name="see-also"></a>참고 항목  
  [방법: 보고서 뷰 열 사용자 지정](../profiling/how-to-customize-report-view-columns.md)   
  [함수 뷰 - 샘플링](../profiling/functions-view-dotnet-memory-sampling-data.md)   
  [함수 뷰](../profiling/functions-view-instrumentation-data.md)   
  [함수 뷰](../profiling/functions-view-sampling-data.md)
-
-
-

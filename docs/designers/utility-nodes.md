@@ -1,21 +1,19 @@
 ---
 title: 유틸리티 노드
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: reference
 ms.assetid: ff732221-b731-424c-ad5b-82ef5f21dff5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4d3371001c3df3b5233562ce7b30e711ed12d4c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f136327716d07ea76771b49d95e6d79f8ac3d1a8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844152"
 ---
 # <a name="utility-nodes"></a>유틸리티 노드
 
@@ -23,7 +21,7 @@ ms.locfileid: "31918207"
 
 ## <a name="utility-node-reference"></a>유틸리티 노드 참조
 
-|노드|설명|속성|
+|노드|세부 정보|속성|
 |----------|-------------|----------------|
 |**추가 벡터**|지정된 입력을 함께 추가하여 벡터를 만듭니다.<br /><br /> **입력:**<br /><br /> `Vector`: `float`, `float2` 또는 `float3`<br /> 입력을 추가할 값입니다.<br /><br /> `Value to Append`: `float`<br /> 추가할 값입니다.<br /><br /> **출력:**<br /><br /> `Output`: 입력 `Vector`의 유형에 따라 `float2`, `float3` 또는 `float4`<br /> 새 벡터입니다.|없음|
 |**프레스넬**|지정한 표면 법선을 기준으로 하여 프레스넬 대칭을 계산합니다.<br /><br /> 프레스넬 대칭 값은 현재 픽셀의 표면 법선이 보기 벡터와 얼마나 근접하게 일치하는지를 표현합니다. 벡터가 정렬되어 있으면 함수 결과는 0이고, 벡터의 유사성이 낮아질수록 결과 값이 커지며, 벡터가 직교 상태가 되면 결과는 최대값이 됩니다. 현재 픽셀과 카메라의 방향 간 관계에 따라 특정 효과를 보다 뚜렷하게 또는 흐리게 표시하는 데 사용할 수 있습니다.<br /><br /> **입력:**<br /><br /> `Surface Normal`: `float3`<br /> 현재 픽셀의 접선 공간에서 정의된 현재 픽셀의 표면 법선입니다. 일반 매핑에서와 같이 명확한 표면 법선을 변경하는 데 사용할 수 있습니다.<br /><br /> **출력:**<br /><br /> `Output`: `float`<br /> 현재 픽셀의 반사입니다.|**지수**<br /> 프레스넬 대칭을 계산하는 데 사용되는 지수입니다.|

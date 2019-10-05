@@ -1,14 +1,9 @@
 ---
 title: '방법: 특정 로캘이 지정 된 프로젝트를 게시 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -25,31 +20,31 @@ ms.assetid: 7c4cd83a-f985-4c85-9022-fadb5dbd2b39
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: a08c7cc22129a783e692c437724114b3f44888a3
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 42fc6e45e0e32e9b165251c7ec61d3d67b924e1c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607785"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697613"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>방법: 특정 로캘이 지정된 프로젝트 게시
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-응용 프로그램에 포함된 구성 요소가 서로 다른 로캘을 사용하는 경우를 흔히 볼 수 있습니다. 이러한 시나리오에서는 여러 프로젝트가 포함된 솔루션을 만든 다음 각 로캘에 대해 프로젝트를 별도로 게시합니다. 아래 절차에서는 매크로를 통해 'en' 로캘을 사용하는 솔루션의 첫 번째 프로젝트를 게시하는 방법을 보여줍니다. 'en' 이외의 로캘에 대해 이 절차를 수행하려면 매크로의 `localeString`을 'de' 또는 'de-DE'와 같이 사용 중인 로캘과 일치하도록 설정합니다.  
+애플리케이션에 포함된 구성 요소가 서로 다른 로캘을 사용하는 경우를 흔히 볼 수 있습니다. 이러한 시나리오에서는 여러 프로젝트가 포함된 솔루션을 만든 다음 각 로캘에 대해 프로젝트를 별도로 게시합니다. 아래 절차에서는 매크로를 통해 'en' 로캘을 사용하는 솔루션의 첫 번째 프로젝트를 게시하는 방법을 보여줍니다. 'en' 이외의 로캘에 대해 이 절차를 수행하려면 매크로의 `localeString`을 'de' 또는 'de-DE'와 같이 사용 중인 로캘과 일치하도록 설정합니다.  
   
 > [!NOTE]
->  이 매크로를 사용할 때 게시 위치는 올바른 URL 또는 UNC(범용 명명 규칙) 공유여야 합니다. 또한 IIS(인터넷 정보 서비스)가 컴퓨터에 설치되어 있어야 합니다. IIS를 설치 합니다 **시작** 메뉴에서 클릭 **제어판**합니다. 두 번 클릭 **프로그램 추가 / 제거**합니다. **프로그램 추가 / 제거**, 클릭 **Windows 구성 요소 추가/제거**합니다. 에 **Windows 구성 요소 마법사**를 선택 합니다 **인터넷 정보 서비스 (IIS)** 확인란을 **구성 요소** 목록. 누른 **완료** 마법사를 닫습니다.  
+> 이 매크로를 사용할 때 게시 위치는 올바른 URL 또는 UNC(범용 명명 규칙) 공유여야 합니다. 또한 IIS(인터넷 정보 서비스)가 컴퓨터에 설치되어 있어야 합니다. IIS를 설치하려면 **시작** 메뉴에서 **제어판**을 클릭합니다. **프로그램 추가 또는 제거**를 두 번 클릭합니다. **프로그램 추가 또는 제거**에서 **Windows 구성 요소 추가 또는 제거**를 클릭합니다. **Windows 구성 요소 마법사**에서 **구성 요소** 목록의 **IIS(인터넷 정보 서비스)** 확인란을 선택합니다. 그런 다음, **마침**을 클릭하여 마법사를 닫습니다.  
   
 ### <a name="to-create-the-publishing-macro"></a>게시 매크로를 만들려면  
   
-1.  매크로 탐색기에서 열려는 합니다 **도구** 메뉴에서 **매크로**를 클릭 하 고 **매크로 탐색기**합니다.  
+1. 매크로 탐색기를 열려면 **도구** 메뉴에서 **매크로**를 가리킨 다음, **매크로 탐색기**를 클릭합니다.  
   
-2.  새 매크로 모듈을 만듭니다. 매크로 탐색기에서 선택 **MyMacros**합니다. 에 **도구** 메뉴에서 **매크로**를 클릭 하 고 **새 매크로 모듈**합니다. 모듈의 이름을 **publishspecificculture로 지정**합니다.  
+2. 새 매크로 모듈을 만듭니다. 매크로 탐색기에서 **MyMacros**를 선택합니다. **도구** 메뉴에서 **매크로**를 가리킨 다음, **새 매크로 모듈**을 클릭합니다. 모듈 이름을 **PublishSpecificCulture**로 지정합니다.  
   
-3.  매크로 탐색기에서 확장을 **MyMacros** 노드를 연 다음 합니다 **PublishAllProjects** 두 번 클릭 하 여 모듈 (또는에서 **도구** 메뉴에서 **매크로**를 클릭 하 고 **매크로 IDE**).  
+3. 매크로 탐색기에서 **MyMacros** 노드를 확장하고 **PublishAllProjects** 모듈을 두 번 클릭하여 열거나 **도구** 메뉴에서 **매크로**를 가리키고 **Macros IDE**를 클릭합니다.  
   
-4.  매크로 IDE에서 모듈의 `Import` 문 뒤에 다음 코드를 추가합니다.  
+4. 매크로 IDE에서 모듈의 `Import` 문 뒤에 다음 코드를 추가합니다.  
   
     ```vb  
     Module PublishSpecificCulture  
@@ -143,37 +138,34 @@ ms.locfileid: "51607785"
     End Module  
     ```  
   
-5.  매크로 IDE를 닫습니다. 포커스가 다시 Visual Studio로 돌아옵니다.  
+5. 매크로 IDE를 닫습니다. 포커스가 다시 Visual Studio로 돌아옵니다.  
   
 ### <a name="to-publish-a-project-for-a-specific-locale"></a>특정 로캘에 대한 프로젝트를 게시하려면  
   
-1.  Visual Basic Windows 응용 프로그램 프로젝트를 만들려면 합니다 **파일** 메뉴에서 **새로 만들기**를 클릭 하 고 **프로젝트**합니다.  
+1. Visual Basic Windows 애플리케이션 프로젝트를 만들려면 **파일** 메뉴에서 **새로 만들기**를 가리킨 다음, **프로젝트**를 클릭합니다.  
   
-2.  에 **새 프로젝트** 대화 상자에서 **Windows 응용 프로그램** 에서 합니다 **Visual Basic** 노드. 프로젝트 이름을 **PublishLocales**합니다.  
+2. **새 프로젝트** 대화 상자의 **Visual Basic** 노드에서 **Windows 애플리케이션**을 선택합니다. 프로젝트 이름을 **PublishLocales**로 지정합니다.  
   
-3.  Form1을 클릭합니다. 에 **속성** 창 아래에 있는 **디자인**, 변경 합니다 **언어** 속성을 **(기본값)** 를 **영어**. 변경 된 **텍스트** 폼의 속성 **MyForm**합니다.  
+3. Form1을 클릭합니다. **속성** 창의 **디자인**에서 **언어** 속성을 **(기본값)** 에서 **영어**로 변경합니다. 양식의 **텍스트** 속성을 **MyForm**으로 변경합니다.  
   
      지역화된 리소스 DLL은 필요할 때까지 만들어지지 않습니다. 예를 들어 새 로캘을 지정한 후 폼의 텍스트 또는 해당 컨트롤 중 하나를 변경하면 이러한 DLL이 만들어집니다.  
   
-4.  Visual Studio IDE를 사용하여 PublishLocales를 게시합니다.  
+4. Visual Studio IDE를 사용하여 PublishLocales를 게시합니다.  
   
-     **솔루션 탐색기**, PublishLocales를 선택 합니다. 에 **프로젝트** 메뉴에서 **속성**합니다. 프로젝트 디자이너에서에 **게시** 페이지에서 게시 위치를 지정 **http://localhost/PublishLocales**를 클릭 하 고 **지금 게시**합니다.  
+     **솔루션 탐색기**, PublishLocales를 선택 합니다. **프로젝트** 메뉴에서 **속성**을 선택합니다. 프로젝트 디자이너에서에 **게시** 페이지에서 게시 위치를 지정 **http://localhost/PublishLocales** 를 클릭 하 고 **지금 게시**합니다.  
   
      게시 웹 페이지가 표시되면 닫습니다. 이 단계에서는 프로젝트를 게시만 하면 되며 설치할 필요는 없습니다.  
   
-5.  Visual Studio 명령 프롬프트 창에서 매크로를 호출하여 PublishLocales를 다시 게시합니다. 명령 프롬프트 창에서 보려는 합니다 **보기** 메뉴에서 **다른 Windows** 클릭 하 고 **명령 창**, 하거나 CTRL + ALT + A를 누릅니다. 명령 프롬프트 창에서 입력 `macros`자동 완성; 사용 가능한 매크로의 목록을 제공 합니다. 다음 매크로를 선택하고 Enter 키를 누릅니다.  
+5. Visual Studio 명령 프롬프트 창에서 매크로를 호출하여 PublishLocales를 다시 게시합니다. 명령 프롬프트 창에서 보려는 합니다 **보기** 메뉴에서 **다른 Windows** 클릭 하 고 **명령 창**, 하거나 CTRL + ALT + A를 누릅니다. 명령 프롬프트 창에서 입력 `macros`자동 완성; 사용 가능한 매크로의 목록을 제공 합니다. 다음 매크로를 선택하고 Enter 키를 누릅니다.  
   
      `Macros.MyMacros.PublishSpecificCulture.PublishProjectFirstProjectWithEnLocale`  
   
-6.  게시 프로세스가 정상적으로 완료되면 "PublishLocales\PublishLocales.vbproj를 게시했습니다. 게시 언어는 'en'입니다."라는 메시지가 표시됩니다. 클릭 **확인** 메시지 상자에 있습니다. 게시 웹 페이지가 표시 되 면 클릭 **설치**합니다.  
+6. 게시 프로세스가 정상적으로 완료되면 "PublishLocales\PublishLocales.vbproj를 게시했습니다. 게시 언어는 'en'입니다."라는 메시지가 표시됩니다. 메시지 상자에서 **확인**을 클릭합니다. 게시 웹 페이지가 표시되면 **설치**를 클릭합니다.  
   
-7.  C:\Inetpub\wwwroot\PublishLocales\en을 확인합니다. 지역화된 리소스 DLL 외에 매니페스트, setup.exe, 게시 웹 페이지 파일 등의 설치된 파일이 표시되어야 합니다. ClickOnce는 기본적으로 EXE 및 DLL에 대해 .deploy 확장명을 추가합니다. 배포 후에 이 확장명을 제거할 수 있습니다.  
+7. C:\Inetpub\wwwroot\PublishLocales\en을 확인합니다. 지역화된 리소스 DLL 외에 매니페스트, setup.exe, 게시 웹 페이지 파일 등의 설치된 파일이 표시되어야 합니다. ClickOnce는 기본적으로 EXE 및 DLL에 대해 .deploy 확장명을 추가합니다. 배포 후에 이 확장명을 제거할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [ClickOnce 응용 프로그램 게시](../deployment/publishing-clickonce-applications.md)   
- [매크로 개발 환경](http://msdn.microsoft.com/en-us/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
- [매크로 탐색기 창](http://msdn.microsoft.com/en-us/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
- [방법: 편집 및 매크로 프로그래밍 방식으로 만들기](http://msdn.microsoft.com/en-us/6716f820-1feb-48ad-a718-27eb6b473c5a)
-
-
-
+ [매크로 개발 환경](https://msdn.microsoft.com/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
+ [매크로 탐색기 창](https://msdn.microsoft.com/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
+ [방법: 편집 및 매크로 프로그래밍 방식으로 만들기](https://msdn.microsoft.com/6716f820-1feb-48ad-a718-27eb6b473c5a)

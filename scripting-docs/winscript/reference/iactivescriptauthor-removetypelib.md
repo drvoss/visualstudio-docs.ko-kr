@@ -2,7 +2,6 @@
 title: IActiveScriptAuthor::RemoveTypeLib | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 91d44d2f910a1523d0c45871e01d0258dcdd4138
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: f8dd75bfa5474eb93a51af790f7efd6431a9aaa0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/10/2018
-ms.locfileid: "24645533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955136"
 ---
 # <a name="iactivescriptauthorremovetypelib"></a>IActiveScriptAuthor::RemoveTypeLib
-엔진 네임 스페이스를 제작 하는 스크립트에서 형식 라이브러리를 제거 합니다.  
+엔진 네임 스페이스를 작성 하는 스크립트에서 형식 라이브러리를 제거 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT RemoveTypeLib(  
    REFGUID   rguidTypeLib,  
    DWORD     dwMajor,  
@@ -40,7 +39,7 @@ HRESULT RemoveTypeLib(
   
 #### <a name="parameters"></a>매개 변수  
  `rguidTypeLib`  
- [in] CLSID (클래스 식별자)의 형식 라이브러리를 제거 하려면.  
+ [in] CLSID (클래스 식별자) 형식 라이브러리의을 제거 합니다.  
   
  `dwMajor`  
  [in] 주 버전 번호입니다.  

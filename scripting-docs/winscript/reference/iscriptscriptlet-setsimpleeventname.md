@@ -2,7 +2,6 @@
 title: IScriptScriptlet::SetSimpleEventName | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 958478d8c8ead6500711a7866a784235adb869b8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 63e6d05066d59e14a7036fb8f371c9c20b886df7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786630"
 ---
 # <a name="iscriptscriptletsetsimpleeventname"></a>IScriptScriptlet::SetSimpleEventName
-스크립틀릿 연관 된 단순 이벤트 이름을 설정 합니다. 공백을 포함 하지 않는 단일 단어 이름입니다.  
+Scriptlet과 연관 된 단순 이벤트 이름을 설정 합니다. 공백을 포함 하지 않는 단일 단어 이름입니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT SetSimpleEventName(  
    LPCOLESTR          psz  
 );  
@@ -38,7 +37,7 @@ HRESULT SetSimpleEventName(
   
 #### <a name="parameters"></a>매개 변수  
  `psz`  
- [in] 연관 된 단순 이벤트 이름을 포함 하는 버퍼의 `IScriptScriptlet` 개체입니다.  
+ [in] 연관 된 단순 이벤트 이름을 포함 하는 버퍼를 `IScriptScriptlet` 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
  `HRESULT`입니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  

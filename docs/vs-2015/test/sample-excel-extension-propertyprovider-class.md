@@ -1,24 +1,19 @@
 ---
-title: '샘플 Excel 확장: PropertyProvider 클래스 | Microsoft 문서'
-ms.custom: ''
+title: '샘플 Excel 확장: PropertyProvider 클래스 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 075d9b8d-8658-4fca-8711-08304dbac1c5
 caps.latest.revision: 11
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 513d54fd9779bb4148e00d0839ef75b1a4637545
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d38b430dd88eb1a732c4e4ca335a0a5bb057b1f4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189444"
 ---
 # <a name="sample-excel-extension-propertyprovider-class"></a>샘플 Excel 확장: PropertyProvider 클래스
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,6 +39,3 @@ ms.locfileid: "49203660"
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>   
  <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard>   
  [Microsoft Excel을 지원하도록 코딩된 UI 테스트 및 작업 기록 확장](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
-
-
-

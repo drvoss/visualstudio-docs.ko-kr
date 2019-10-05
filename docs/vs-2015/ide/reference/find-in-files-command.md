@@ -1,14 +1,9 @@
 ---
 title: 파일에서 찾기 명령 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - edit.findinfiles
 helpviewer_keywords:
@@ -18,18 +13,17 @@ ms.assetid: 2fc78bfe-b339-4599-97f9-4cafd8a194d9
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5a278bb50af4488e9e627e884b20332717d6d0f8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7fc580a6dc1dd8a1b0c0ad8964ade6dd6145ada2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199272"
 ---
 # <a name="find-in-files-command"></a>파일에서 찾기 명령
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **찾기 및 바꾸기** 창의 **파일에서 바꾸기** 탭에서 사용할 수 있는 옵션의 하위 집합을 사용하여 파일을 검색합니다.  
   
 ## <a name="syntax"></a>구문  
@@ -42,7 +36,7 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
   
 ## <a name="arguments"></a>인수  
  `findwhat`  
- 필수. 일치하는 텍스트입니다.  
+ 필수 요소. 일치하는 텍스트입니다.  
   
 ## <a name="switches"></a>스위치  
  /case 또는 /c  
@@ -85,7 +79,7 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
  /word 또는 /w  
  선택 사항입니다. 전체 단어만을 검색합니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  이 예제에서는 "내 Visual Studio 프로젝트" 폴더에 있는 모든 .cls 파일에서 btnCancel을 검색하고 찾기 결과 2 창에서 일치 항목 정보를 표시합니다.  
   
 ```  
@@ -98,6 +92,3 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
  [찾기/명령 상자](../../ide/find-command-box.md)   
  [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

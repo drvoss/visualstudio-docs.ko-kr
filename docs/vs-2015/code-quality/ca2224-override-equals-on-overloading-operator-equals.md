@@ -1,14 +1,9 @@
 ---
-title: 'CA2224: 같음 연산자를 오버 로드에 equals를 재정의 | Microsoft Docs'
-ms.custom: ''
+title: 'CA2224: 같음 연산자를 오버 로드할 때 equals 재정의 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2224
 - OverrideEqualsOnOverloadingOperatorEquals
@@ -21,14 +16,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 66f4b4bcc7c2c1d359f5d8fa91227fb51a27adc4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b4c16ed5858f18456af59c4cc26f2e0d56e6006a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142474"
 ---
-# <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: 같음 연산자를 오버로드할 때 Equals를 재정의하십시오.
+# <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: 같음 연산자를 오버로드할 때 Equals를 재정의하세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -67,8 +62,8 @@ ms.locfileid: "49815236"
 
  이 예제의 결과는 다음과 같습니다.
 
- **a = ([0] 1, 1) 및 b ([1] 2, 2) = 같은지? 아니오**
-**는 b = =? 아니오**
+ **a = ([0] 1, 1) 및 b ([1] 2, 2) = 같은지? No**
+**a == b ? 아니오**
 **되며 a1 같은? 예**
 **a1 = =는? 예**
 **b와 복사? 아니오**
@@ -85,15 +80,15 @@ ms.locfileid: "49815236"
 
  이 예제의 결과는 다음과 같습니다.
 
- **a = (1, 1) 및 b (2, 2) = 같은지? 아니오**
-**는 b = =? 아니오**
+ **a = (1, 1) 및 b (2, 2) = 같은지? No**
+**a == b ? 아니오**
 **되며 a1 같은? 예**
 **a1 = =는? 예**
 **b와 복사? 예**
 **b 복사 = =? 예**
 ## <a name="class-example"></a>클래스 예제
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
  다음 예제에서는이 규칙을 위반 하는 클래스 (참조 형식)를 보여 줍니다.
 
 ### <a name="code"></a>코드
@@ -106,7 +101,7 @@ ms.locfileid: "49815236"
 
 ## <a name="structure-example"></a>구조 예제
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
  다음 예제에서는이 규칙을 위반 하는 구조체 (값 형식)를 보여 줍니다.
 
 ### <a name="code"></a>코드
@@ -118,15 +113,12 @@ ms.locfileid: "49815236"
  [!code-csharp[FxCop.Usage.OverrideEqualsStructFixed#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OverrideEqualsStructFixed/cs/FxCop.Usage.OverrideEqualsStructFixed.cs#1)]
 
 ## <a name="related-rules"></a>관련된 규칙
- [CA1046: 참조 형식에 같음 연산자를 오버로드하지 마십시오.](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+ [CA1046: 참조 형식에 같음 연산자 오버 로드 하지 마십시오.](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2225: 연산자 오버로드에는 명명된 대체 항목이 있습니다.](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
+ [CA2225: 연산자 오버 로드는 명명 된 대체](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
 
- [CA2226: 연산자에는 대칭 오버로드가 있어야 합니다.](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+ [CA2226: 연산자에는 대칭 오버 로드가 있어야 합니다.](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2218: Equals를 재정의할 때 GetHashCode를 재정의하십시오.](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+ [CA2218: Equals GetHashCode를 재정의 합니다.](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
  [CA2231: ValueType.Equals를 재정의할 때 같음 연산자를 오버로드하십시오.](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
-
-
-

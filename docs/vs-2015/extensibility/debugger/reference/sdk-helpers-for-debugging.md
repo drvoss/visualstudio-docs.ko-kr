@@ -1,14 +1,9 @@
 ---
 title: 디버깅을 위한 SDK 도우미 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - dbgmetric.lib
 - registry, Debugging SDK
@@ -18,21 +13,21 @@ helpviewer_keywords:
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 904ac14433bf6b7b839a4fe634175a7f583e27ab
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3296613ffbe3148caa04989dfc9d609334b4c200
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435985"
 ---
 # <a name="sdk-helpers-for-debugging"></a>디버깅을 위한 SDK 도우미
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-이러한 함수와 선언은 c + +에서 디버그 엔진, 식 계산기 및 기호 공급자를 구현 하는 것에 대 한 전역 도우미 함수입니다.  
+이러한 함수 및 선언 기호 공급자, 식 계산기 및 디버그 엔진 구현에 대 한 전역 도우미 함수는 C++입니다.  
   
 > [!NOTE]
->  지금은이 기능 및 선언에 관리 되는 버전이 있습니다.  
+> 지금은이 기능 및 선언에 관리 되는 버전이 있습니다.  
   
 ## <a name="overview"></a>개요  
  Visual Studio에서 사용할 디버그 엔진, 식 계산기 및 기호 공급자에 대 한 순서에는 등록 되어야 합니다. 이 레지스트리 하위 키 및 "설정 메트릭" 라고도 하는 항목을 설정 하 여 작업 수행 다음 전역 함수는 이러한 메트릭을 업데이트 하는 프로세스가 용이 하도록 설계 되었습니다. 이러한 함수에 의해 업데이트 되는 각 레지스트리 하위 키의 레이아웃을 확인 하려면 레지스트리 위치에 섹션을 참조 하세요.  
@@ -128,7 +123,7 @@ HRESULT EnumMetricSections(
   
 ## <a name="expression-evaluator-functions"></a>식 계산기 함수  
   
-|기능|설명|  
+|함수|설명|  
 |--------------|-----------------|  
 |GetEEMetric|레지스트리에서 메트릭 값을 검색합니다.|  
 |SetEEMetric|레지스트리에 지정된 된 메트릭 값을 설정합니다.|  
@@ -137,7 +132,7 @@ HRESULT EnumMetricSections(
   
 ## <a name="exception-functions"></a>예외 함수  
   
-|기능|설명|  
+|함수|설명|  
 |--------------|-----------------|  
 |GetExceptionMetric|레지스트리에서 메트릭 값을 검색합니다.|  
 |SetExceptionMetric|레지스트리에 지정된 된 메트릭 값을 설정합니다.|  
@@ -146,7 +141,7 @@ HRESULT EnumMetricSections(
   
 ## <a name="symbol-provider-functions"></a>기호 공급자 함수  
   
-|기능|설명|  
+|함수|설명|  
 |--------------|-----------------|  
 |GetSPMetric|레지스트리에서 메트릭 값을 검색합니다.|  
 |SetSPMetric|레지스트리에 지정된 된 메트릭 값을 설정합니다.|  
@@ -154,7 +149,7 @@ HRESULT EnumMetricSections(
   
 ## <a name="enumeration-functions"></a>열거형 함수  
   
-|기능|설명|  
+|함수|설명|  
 |--------------|-----------------|  
 |EnumMetricSections|지정된 된 메트릭 형식에 대 한 모든 메트릭을 열거합니다.|  
 |EnumDebugEngine|등록 된 디버그 엔진을 열거합니다.|  
@@ -164,7 +159,7 @@ HRESULT EnumMetricSections(
 ## <a name="metric-definitions"></a>메트릭 정의  
  미리 정의 된 메트릭 이름에 대 한 이러한 정의 사용할 수 있습니다. 와이드 문자 문자열로 정의 된 모든 다양 한 레지스트리 키 및 값 이름에 해당 하는 이름을: 예를 들어 `extern LPCWSTR metrictypeEngine`합니다.  
   
-|미리 정의 된 메트릭 종류|설명:에 대 한 기본 키...|  
+|미리 정의 된 메트릭 종류|설명: 에 대 한 기본 키를 하는 중...|  
 |-----------------------------|---------------------------------------|  
 |metrictypeEngine|모든 디버그 엔진 메트릭.|  
 |metrictypePortSupplier|모든 포트 공급자 메트릭입니다.|  
@@ -183,7 +178,7 @@ HRESULT EnumMetricSections(
 |metricDataBP|로의 데이터에서 변경 중단점 설정에 대 한 지원을 나타내는 데 0이 아닌 값입니다.|  
 |metricDisassembly|디스어셈블리 목록에 대 한 지원을 나타내는 데 0이 아닌 값으로 설정 합니다.|  
 |metricDumpWriting|로 설정 (의 덤프를 출력 장치로 메모리)를 작성 하는 덤프에 대 한 지원을 나타내는 데 0이 아닌 값입니다.|  
-|metricENC|편집 하며 계속 하기 지원을 나타내는 데 0이 아닌 값으로 설정 합니다. **참고:** 사용자 지정 디버그 엔진을이 설정 안 또는 0을 항상 설정 해야 합니다.|  
+|metricENC|편집 하며 계속 하기 지원을 나타내는 데 0이 아닌 값으로 설정 합니다. **참고:**  사용자 지정 디버그 엔진을이 설정 안 또는 0을 항상 설정 해야 합니다.|  
 |metricExceptions|로 예외에 대 한 지원을 나타내는 데 0이 아닌 값입니다.|  
 |metricFunctionBP|로 명명 된 중단점 (특정 함수 이름의 호출 될 때 중단 되는 중단점)에 대 한 지원을 나타내는 데 0이 아닌 값입니다.|  
 |metricHitCountBP|로 설정 "지점 hit" 중단점 (특정 횟수 만큼 적중 된 후에 트리거되는 중단점)의 설정에 대 한 지원을 나타내는 데 0이 아닌 값입니다.|  
@@ -198,7 +193,7 @@ HRESULT EnumMetricSections(
 |metricAlwaysLoadProgramProviderLocal|이 해야 함을 나타내려면 프로그램 공급자 항상 로드 로컬로에 0이 아닌 값으로 설정 합니다.|  
 |metricEngineCanWatchProcess|이 설정 디버그 엔진 프로그램 공급자 대신 이벤트 처리에 대 한 감시를 나타내려면 0이 아닌 합니다.|  
 |metricRemoteDebugging|이 설정 원격 디버깅에 대 한 지원을 나타내는 데 0이 아닌 합니다.|  
-|metricEncUseNativeBuilder|편집 하며 계속 하기에 대 한 빌드를 편집 및 계속 관리자에는 디버그 엔진의 encbuild.dll 사용 해야 함을 나타내려면 0이 아닌 값으로 설정 합니다. **참고:** 사용자 지정 디버그 엔진을이 설정 안 또는 0을 항상 설정 해야 합니다.|  
+|metricEncUseNativeBuilder|편집 하며 계속 하기에 대 한 빌드를 편집 및 계속 관리자에는 디버그 엔진의 encbuild.dll 사용 해야 함을 나타내려면 0이 아닌 값으로 설정 합니다. **참고:**  사용자 지정 디버그 엔진을이 설정 안 또는 0을 항상 설정 해야 합니다.|  
 |metricLoadUnderWOW64|64 비트 프로세스를 디버깅 하는 경우 wow 디버기 프로세스에 디버그 엔진을 로드 해야는 나타내려면 0이 아닌 값으로 설정 그렇지 않으면 디버그 엔진 (WOW64에서 실행 되 고)는 Visual Studio 프로세스에서 로드 됩니다.|  
 |metricLoadProgramProviderUnderWOW64|이 값을 설정 해야 함을 나타내려면 프로그램 공급자는 디버기 프로세스에 로드 된 wow; 64 비트 프로세스를 디버깅 하는 경우에 0이 아닌 값 그렇지 않은 경우 Visual Studio 프로세스에서 로드 됩니다.|  
 |metricStopOnExceptionCrossingManagedBoundary|이 설정 관리/비관리 코드 간에 예외가 throw 되 면 프로세스를 중지 해야 함을 나타내려면 0이 아닌 합니다.|  
@@ -237,14 +232,14 @@ HRESULT EnumMetricSections(
 |metricShowNonUserCode|이 설정 nonuser 코드를 표시 하려면 0이 아닌 합니다.|  
 |metricJustMyCodeStepping|이 설정 단계별 사용자 코드에만 발생할 수 있다는 것을 나타내려면 0이 아닌 합니다.|  
 |metricCLSID|특정 메트릭 형식의 개체에 대 한 CLSID입니다.|  
-|MetricName|특정 메트릭 형식의 개체에 대 한 친숙 한 이름입니다.|  
+|metricName|특정 메트릭 형식의 개체에 대 한 친숙 한 이름입니다.|  
 |metricLanguage|언어 이름입니다.|  
   
 ## <a name="registry-locations"></a>레지스트리 위치  
  메트릭을 읽고 특히 레지스트리에 기록 된 `VisualStudio` 하위 키입니다.  
   
 > [!NOTE]
->  대부분의 경우 HKEY_LOCAL_MACHINE 키에 메트릭이 기록 됩니다. 그러나 때로는 HKEY_CURRENT_USER 됩니다 대상 키입니다. Dbgmetric.lib 두 키를 처리합니다. HKEY_CURRENT_USER 검색 메트릭의 가져올 때 가장 먼저 다음 HKEY_LOCAL_MACHINE입니다. 메트릭, 설정 되 면 매개 변수를 사용 하는 최상위 키를 지정 합니다.  
+> 대부분의 경우 HKEY_LOCAL_MACHINE 키에 메트릭이 기록 됩니다. 그러나 때로는 HKEY_CURRENT_USER 됩니다 대상 키입니다. Dbgmetric.lib 두 키를 처리합니다. HKEY_CURRENT_USER 검색 메트릭의 가져올 때 가장 먼저 다음 HKEY_LOCAL_MACHINE입니다. 메트릭, 설정 되 면 매개 변수를 사용 하는 최상위 키를 지정 합니다.  
   
  *[레지스트리 키]*\  
   
@@ -254,44 +249,44 @@ HRESULT EnumMetricSections(
   
  `VisualStudio`\  
   
- *[버전 root]*\  
+ *[version root]*\  
   
- *[메트릭 root]*\  
+ *[metric root]*\  
   
  *[메트릭 유형]*\  
   
- *[메트릭] = [메트릭 값]*  
+ *[metric] = [metric value]*  
   
- *[메트릭] = [메트릭 값]*  
+ *[metric] = [metric value]*  
   
- *[메트릭] = [메트릭 값]*  
+ *[metric] = [metric value]*  
   
 |자리 표시자|설명|  
 |-----------------|-----------------|  
 |*[레지스트리 키]*|`HKEY_CURRENT_USER` 또는 `HKEY_LOCAL_MACHINE`|  
-|*[버전 root]*|Visual Studio 버전 (예를 들어 `7.0`, `7.1`, 또는 `8.0`). 그러나이 루트 수정할 수도 있습니다를 사용 하는 **/rootsuffix** 전환할 **devenv.exe**합니다. VSIP,이 한정자는 일반적으로 **Exp**이므로 버전 루트 것, 예를 들어 8.0Exp 합니다.|  
-|*[메트릭 root]*|이 값은 `AD7Metrics` 또는 `AD7Metrics(Debug)`dbgmetric.lib의 디버그 버전 사용 여부에 따라 합니다. **참고:** 디버그와 릴리스 간에 차이가 있을 경우이 명명 규칙을 따라야 dbgmetric.lib 사용 여부 버전 레지스트리에서 반영 되어야 합니다.|  
+|*[version root]*|Visual Studio 버전 (예를 들어 `7.0`, `7.1`, 또는 `8.0`). 그러나이 루트 수정할 수도 있습니다를 사용 하는 **/rootsuffix** 전환할 **devenv.exe**합니다. VSIP,이 한정자는 일반적으로 **Exp**이므로 버전 루트 것, 예를 들어 8.0Exp 합니다.|  
+|*[metric root]*|이 값은 `AD7Metrics` 또는 `AD7Metrics(Debug)`dbgmetric.lib의 디버그 버전 사용 여부에 따라 합니다. **참고:**  디버그와 릴리스 간에 차이가 있을 경우이 명명 규칙을 따라야 dbgmetric.lib 사용 여부 버전 레지스트리에서 반영 되어야 합니다.|  
 |*[메트릭 유형]*|쓸 메트릭 형식: `Engine`하십시오 `ExpressionEvaluator`, `SymbolProvider`등. 이러한 모든과 같이 정의 되어으로 dbgmetric.h `metricTypeXXXX`여기서 `XXXX` 특정 형식 이름입니다.|  
-|*[메트릭]*|메트릭을 설정 하기 위해 값을 할당할 수는 항목의 이름입니다. 메트릭의 실제 조직의 메트릭 유형에 따라 달라 집니다.|  
+|*[metric]*|메트릭을 설정 하기 위해 값을 할당할 수는 항목의 이름입니다. 메트릭의 실제 조직의 메트릭 유형에 따라 달라 집니다.|  
 |*[메트릭 값]*|메트릭을 할당할 값입니다. 값 (문자열, 숫자 등) 있어야 합니다. 형식 메트릭에 따라 달라 집니다.|  
   
 > [!NOTE]
->  형식의 저장 된 모든 Guid `{GUID}`합니다. 예를 들어, `{123D150B-FA18-461C-B218-45B3E4589F9B}`을 입력합니다.  
+> 형식의 저장 된 모든 Guid `{GUID}`합니다. 예를 들어, `{123D150B-FA18-461C-B218-45B3E4589F9B}`을 입력합니다.  
   
 ### <a name="debug-engines"></a>디버그 엔진  
  다음은 레지스트리에 디버그 엔진 메트릭의 조직입니다. `Engine` 디버그 엔진에 대 한 메트릭 유형 이름이 며 해당 *[메트릭 유형]* 위의 레지스트리 하위 트리.  
   
  `Engine`\  
   
- *[엔진 guid]*\  
+ *[engine guid]*\  
   
  `CLSID` = *[클래스 guid]*  
   
- *[메트릭] = [메트릭 값]*  
+ *[metric] = [metric value]*  
   
- *[메트릭] = [메트릭 값]*  
+ *[metric] = [metric value]*  
   
- *[메트릭] = [메트릭 값]*  
+ *[metric] = [metric value]*  
   
  `PortSupplier`\  
   
@@ -301,7 +296,7 @@ HRESULT EnumMetricSections(
   
 |자리 표시자|설명|  
 |-----------------|-----------------|  
-|*[엔진 guid]*|디버그 엔진의 GUID입니다.|  
+|*[engine guid]*|디버그 엔진의 GUID입니다.|  
 |*[클래스 guid]*|이 디버그 엔진을 구현 하는 클래스의 GUID입니다.|  
 |*[포트 공급자 guid]*|있는 경우 포트 공급자의 GUID입니다. 많은 디버그 엔진 기본 포트 공급자를 사용 하 여 및 따라서 자체 공급자를 지정 하지 마세요. 이 경우 하위 키 `PortSupplier` 없어야 합니다.|  
   
@@ -314,9 +309,9 @@ HRESULT EnumMetricSections(
   
  `CLSID` = *[클래스 guid]*  
   
- *[메트릭] = [메트릭 값]*  
+ *[metric] = [metric value]*  
   
- *[메트릭] = [메트릭 값]*  
+ *[metric] = [metric value]*  
   
 |자리 표시자|설명|  
 |-----------------|-----------------|  
@@ -334,17 +329,17 @@ HRESULT EnumMetricSections(
   
  `CLSID` = *[클래스 guid]*  
   
- *[메트릭] = [메트릭 값]*  
+ *[metric] = [metric value]*  
   
- *[메트릭] = [메트릭 값]*  
+ *[metric] = [metric value]*  
   
  `metadata`\  
   
  `CLSID` = *[클래스 guid]*  
   
- *[메트릭] = [메트릭 값]*  
+ *[metric] = [metric value]*  
   
- *[메트릭] = [메트릭 값]*  
+ *[metric] = [metric value]*  
   
 |자리 표시자|설명|  
 |-----------------|-----------------|  
@@ -355,19 +350,19 @@ HRESULT EnumMetricSections(
  다음은 레지스트리에 식 계산기 메트릭의 조직입니다. `ExpressionEvaluator` 식 계산기에 대 한 메트릭 유형 이름이 며 해당 *[메트릭 유형]* 합니다.  
   
 > [!NOTE]
->  에 대 한 메트릭 유형에 `ExpressionEvaluator` 식 계산기에 대 한 모든 메트릭 변경 사항 적절 한 식 계산기 메트릭 기능을 통해 진행 될를 가정 하는 대로 dbgmetric.h에에서 정의 되지 않은 (의 레이아웃을 `ExpressionEvaluator` 하위 키를 어느 정도 복잡 한 세부 정보 내 dbgmetric.lib 숨겨져 있으므로).  
+> 에 대 한 메트릭 유형에 `ExpressionEvaluator` 식 계산기에 대 한 모든 메트릭 변경 사항 적절 한 식 계산기 메트릭 기능을 통해 진행 될를 가정 하는 대로 dbgmetric.h에에서 정의 되지 않은 (의 레이아웃을 `ExpressionEvaluator` 하위 키를 어느 정도 복잡 한 세부 정보 내 dbgmetric.lib 숨겨져 있으므로).  
   
  `ExpressionEvaluator`\  
   
  *[언어 guid]*\  
   
- *[공급 업체 guid]*\  
+ *[vendor guid]*\  
   
  `CLSID` = *[클래스 guid]*  
   
- *[메트릭] = [메트릭 값]*  
+ *[metric] = [metric value]*  
   
- *[메트릭] = [메트릭 값]*  
+ *[metric] = [metric value]*  
   
  `Engine`\  
   
@@ -378,7 +373,7 @@ HRESULT EnumMetricSections(
 |자리 표시자|설명|  
 |-----------------|-----------------|  
 |*[언어 guid]*|언어의 GUID|  
-|*[공급 업체 guid]*|공급 업체의 GUID|  
+|*[vendor guid]*|공급 업체의 GUID|  
 |*[클래스 guid]*|이 식 계산기를 구현 하는 클래스의 GUID|  
 |*[디버그 엔진 guid]*|이 식 계산기를 사용 하는 디버그 엔진을의 GUID|  
   
@@ -387,15 +382,15 @@ HRESULT EnumMetricSections(
   
  `EEExtensions`\  
   
- *[확장 guid]*\  
+ *[extension guid]*\  
   
- *[메트릭] = [메트릭 값]*  
+ *[metric] = [metric value]*  
   
- *[메트릭] = [메트릭 값]*  
+ *[metric] = [metric value]*  
   
 |자리 표시자|설명|  
 |-----------------|-----------------|  
-|*[확장 guid]*|식 계산기 확장의 GUID|  
+|*[extension guid]*|식 계산기 확장의 GUID|  
   
 ### <a name="exceptions"></a>예외  
  다음은 레지스트리에 예외 메트릭의 조직입니다. `Exception` 예외에 대 한 메트릭 유형 이름이 며 해당 *[메트릭 유형]* 합니다.  
@@ -406,31 +401,30 @@ HRESULT EnumMetricSections(
   
  *[예외 유형]*\  
   
- *[예외]*\  
+ *[exception]*\  
   
- *[메트릭] = [메트릭 값]*  
+ *[metric] = [metric value]*  
   
- *[메트릭] = [메트릭 값]*  
+ *[metric] = [metric value]*  
   
- *[예외]*\  
+ *[exception]*\  
   
- *[메트릭] = [메트릭 값]*  
+ *[metric] = [metric value]*  
   
- *[메트릭] = [메트릭 값]*  
+ *[metric] = [metric value]*  
   
 |자리 표시자|설명|  
 |-----------------|-----------------|  
 |*[디버그 엔진 guid]*|예외를 지 원하는 디버그 엔진을의 GUID입니다.|  
-|*[예외 유형]*|처리할 수 있는 예외 클래스를 식별 하는 하위 키에 대 한 일반 제목입니다. 일반적인 이름은 **c + + 예외**, **Win32 예외**합니다 **Common Language Runtime Exceptions**, 및 **네이티브 런타임 검사**합니다. 이러한 이름은 특정 사용자에 게 예외 클래스를 식별 하도 사용 됩니다.|  
-|*[예외]*|예외에 대 한 이름을: 예를 들어 **_com_error** 하거나 **컨트롤 나누기**합니다. 이러한 이름은 사용자에 게 특정 예외를 식별 하도 사용 됩니다.|  
+|*[exception types]*|처리할 수 있는 예외 클래스를 식별 하는 하위 키에 대 한 일반 제목입니다. 일반적인 이름은  **C++ 예외**합니다 **Win32 예외**를 **Common Language Runtime Exceptions**, 및 **네이티브 런타임 검사**. 이러한 이름은 특정 사용자에 게 예외 클래스를 식별 하도 사용 됩니다.|  
+|*[exception]*|예외에 대 한 이름을: 예를 들어 **_com_error** 하거나 **컨트롤 나누기**합니다. 이러한 이름은 사용자에 게 특정 예외를 식별 하도 사용 됩니다.|  
   
 ## <a name="requirements"></a>요구 사항  
  이러한 파일은 [!INCLUDE[vs_dev10_ext](../../../includes/vs-dev10-ext-md.md)] SDK 설치 디렉터리 (기본적으로 *[드라이브]* \Program Files\Microsoft Visual Studio 2010 SDK\\).  
   
  헤더: includes\dbgmetric.h  
   
- 라이브러리: libs\ad2de.lib, libs\dbgmetric.lib  
+ Library: libs\ad2de.lib, libs\dbgmetric.lib  
   
 ## <a name="see-also"></a>참고 항목  
  [API 참조](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
-

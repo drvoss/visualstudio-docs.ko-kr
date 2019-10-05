@@ -1,14 +1,9 @@
 ---
 title: 메시지 뷰 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.messagesview
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 14c2a786-c23a-4b2d-acad-8c32a856c70d
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3f896650d7979365346d493c5aac06340007cbb7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3765b9804224549c98b57cd1b0a44f0330d278b5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784379"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157476"
 ---
 # <a name="messages-view"></a>메시지 뷰
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,21 +34,21 @@ Spy++ 메시지 뷰
   
 #### <a name="to-open-a-messages-view-for-a-window-process-or-thread"></a>창, 프로세스 또는 스레드 메시지 보기를 열려면  
   
-1.  포커스를 이동 하는 [Windows 뷰](../debugger/windows-view.md), [프로세스 뷰에](../debugger/processes-view.md), 또는 [스레드 뷰](../debugger/threads-view.md) 창입니다.  
+1. 포커스를 이동 하는 [Windows 뷰](../debugger/windows-view.md), [프로세스 뷰에](../debugger/processes-view.md), 또는 [스레드 뷰](../debugger/threads-view.md) 창입니다.  
   
-2.  항목을 검사 하려는 해당 메시지에 대 한 노드를 찾아 선택 합니다.  
+2. 항목을 검사 하려는 해당 메시지에 대 한 노드를 찾아 선택 합니다.  
   
-3.  **Spy** 메뉴 선택 **로그 메시지**합니다.  
+3. **Spy** 메뉴 선택 **로그 메시지**합니다.  
   
      합니다 [메시지 옵션 대화 상자](../debugger/message-options-dialog-box.md) 열립니다.  
   
-4.  표시할 메시지에 대 한 옵션을 선택 합니다.  
+4. 표시할 메시지에 대 한 옵션을 선택 합니다.  
   
-5.  키를 눌러 **확인** 메시지 로깅을 시작 합니다.  
+5. 키를 눌러 **확인** 메시지 로깅을 시작 합니다.  
   
      및 메시지 보기 창이 열리고 **메시지** 메뉴가 Spy + + 도구 모음에 추가 됩니다. 선택한 옵션에 따라 활성 메시지 보기 창으로 스트리밍되 기 시작 합니다.  
   
-6.  충분 한 메시지에 있는 경우 선택할 **로깅 중지** 에서 합니다 **메시지** 메뉴.  
+6. 충분 한 메시지에 있는 경우 선택할 **로깅 중지** 에서 합니다 **메시지** 메뉴.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [메시지 뷰 제어](../debugger/how-to-control-messages-view.md)  
@@ -89,6 +84,3 @@ Spy++ 메시지 뷰
   
  [Spy++ 참조](../debugger/spy-increment-reference.md)  
  각 Spy + + 메뉴 및 대화 상자를 설명 하는 섹션을 포함 합니다.
-
-
-

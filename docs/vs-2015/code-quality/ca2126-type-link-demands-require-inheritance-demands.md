@@ -1,14 +1,9 @@
 ---
-title: 'CA2126: 형식 링크 요청 상속 요청이 필요 | Microsoft Docs'
-ms.custom: ''
+title: 'CA2126: 형식 링크 요청 상속 요청이 필요 합니다. | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2126
 - TypeLinkDemandsRequireInheritanceDemands
@@ -20,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 940e6f95d029b7f18e335dea239f0d9ed637c37b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8aee10059e9c50e7f572c6fb784da7b97f323905
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854639"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687233"
 ---
 # <a name="ca2126-type-link-demands-require-inheritance-demands"></a>CA2126: 형식 링크 요청에는 상속 요청이 필요합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,16 +52,13 @@ ms.locfileid: "49854639"
  [!code-vb[FxCop.Security.TypesWithLinkDemands#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Security.TypesWithLinkDemands/vb/FxCop.Security.TypesWithLinkDemands.vb#1)]
 
 ## <a name="related-rules"></a>관련된 규칙
- [CA2108: 값 형식에서 선언적 보안을 검토하십시오.](../code-quality/ca2108-review-declarative-security-on-value-types.md)
+ [CA2108: 값 형식에서 선언적 보안을 검토 합니다.](../code-quality/ca2108-review-declarative-security-on-value-types.md)
 
- [CA2112: 보안 형식은 필드를 노출하면 안 됩니다.](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
+ [CA2112: 보안된 형식은 필드를 노출 해야](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
- [CA2122: 링크 요청이 있는 메서드를 간접적으로 노출하지 마십시오.](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)
+ [CA2122: 링크 요청이 있는 메서드를 간접적으로 노출 하지 마십시오](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)
 
- [CA2123: 재정의 링크 요청은 기본 형식의 링크 요청과 같아야 합니다.](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)
+ [CA2123: 재정의 링크 요청 기본 동일 해야 합니다.](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)
 
 ## <a name="see-also"></a>참고 항목
- [보안 코딩 지침](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [상속 요청이](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9) [링크 요청](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [요구](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48)
-
-
-
+ [보안 코딩 지침](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [상속 요청이](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) [링크 요청](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [요구](https://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48)

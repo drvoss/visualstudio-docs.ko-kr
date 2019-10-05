@@ -2,7 +2,6 @@
 title: Web Form 디버그 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,18 +20,18 @@ helpviewer_keywords:
 ms.assetid: e2b4fa14-8f5b-444d-a903-54070b784bd4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d28ebc797715614aefaf7206f170157d4f4485f2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MTE95
+ms.openlocfilehash: f884206ecafebbe26bfdadfaa7e95f3dbd0f389f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901635"
 ---
-# <a name="walkthrough-debugging-a-web-form"></a>연습: Web Form 디버깅
-이 연습 과정에서는 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 응용 프로그램(Web Form)의 디버깅 방법을 보여 줍니다. 또한 실행을 시작하고 중지하며, 중단점을 설정하고, **조사식** 창에서 변수를 검사하는 방법을 보여 줍니다.
+# <a name="walkthrough-debugging-a-web-form"></a>연습: Web Form 디버그
+이 연습 과정에서는 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 애플리케이션(Web Form)의 디버깅 방법을 보여 줍니다. 또한 실행을 시작하고 중지하며, 중단점을 설정하고, **조사식** 창에서 변수를 검사하는 방법을 보여 줍니다.
 
 > [!NOTE]
 > 이 연습을 수행하려면 서버 컴퓨터에 대한 관리자 권한이 있어야 합니다. 기본적으로 aspnet_wp.exe나 w3wp.exe 같은 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 프로세스는 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 프로세스로 실행됩니다. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]을 디버깅하려면 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]이 실행되는 컴퓨터에서 관리자 권한이 있어야 합니다. 자세한 내용은 [System Requirements](../debugger/aspnet-debugging-system-requirements.md)항목을 참조하세요.
@@ -49,7 +48,7 @@ ms.locfileid: "53055156"
 
 3. **템플릿** 창에서 **ASP.NET 웹 사이트**를 클릭합니다.
 
-4. 에 **위치** 줄, 클릭 **HTTP** 목록에서 및 텍스트 상자에 입력 **http://localhost/WebSite**합니다.
+4. 에 **위치** 줄, 클릭 **HTTP** 목록에서 및 텍스트 상자에 입력 **http://localhost/WebSite** 합니다.
 
 5. **언어** 목록에서 **Visual C#** 또는 **Visual Basic**을 클릭합니다.
 
@@ -99,7 +98,7 @@ ms.locfileid: "53055156"
    textBox1.Text = "Button was clicked!";
    ```
 
-    빨간 점이 나타나며 해당 줄의 텍스트가 빨간색으로 강조 표시됩니다. 빨간 점은 중단점을 나타냅니다. 디버거에서 응용 프로그램을 실행하면 코드가 적중되는 위치에서 디버거가 실행을 중단합니다. 그런 다음 응용 프로그램의 상태를 보고 디버깅할 수 있습니다. 자세한 내용은 [중단점](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)을 참조하세요.
+    빨간 점이 나타나며 해당 줄의 텍스트가 빨간색으로 강조 표시됩니다. 빨간 점은 중단점을 나타냅니다. 디버거에서 애플리케이션을 실행하면 코드가 적중되는 위치에서 디버거가 실행을 중단합니다. 그런 다음 애플리케이션의 상태를 보고 디버깅할 수 있습니다. 자세한 내용은 [중단점](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)을 참조하세요.
 
 2. **디버그** 메뉴에서 **디버깅 시작**을 클릭합니다.
 
@@ -109,7 +108,7 @@ ms.locfileid: "53055156"
 
 4. Internet Explorer에서 단추를 클릭합니다.
 
-    [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]의 경우 이 작업을 수행하면 코드 페이지(Default.aspx.cs 또는 Default.aspx.vb)에서 중단점을 설정한 줄로 이동합니다. 이 줄은 노란색으로 강조 표시되어 있어야 합니다. 이제 응용 프로그램의 변수를 보고 해당 응용 프로그램의 실행을 제어할 수 있습니다. 응용 프로그램 실행이 중지되고 사용자가 명령을 입력할 때까지 대기합니다.
+    [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]의 경우 이 작업을 수행하면 코드 페이지(Default.aspx.cs 또는 Default.aspx.vb)에서 중단점을 설정한 줄로 이동합니다. 이 줄은 노란색으로 강조 표시되어 있어야 합니다. 이제 애플리케이션의 변수를 보고 해당 애플리케이션의 실행을 제어할 수 있습니다. 애플리케이션 실행이 중지되고 사용자가 명령을 입력할 때까지 대기합니다.
 
 5. **디버그** 메뉴에서 **창**을 클릭한 다음, **조사식**, **조사식1**을 차례로 클릭합니다.
 
@@ -163,6 +162,6 @@ ms.locfileid: "53055156"
 
 6. 디버깅이 완료되면 **디버그** 메뉴에서 **디버깅 중지**를 클릭합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [ASP.NET 애플리케이션 디버그](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

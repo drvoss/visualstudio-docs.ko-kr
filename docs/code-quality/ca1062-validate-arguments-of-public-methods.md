@@ -1,7 +1,6 @@
 ---
 title: 'CA1062: public 메서드의 인수에 대한 유효성을 검사하세요.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1062
@@ -12,18 +11,18 @@ helpviewer_keywords:
 - ValidateArgumentsOfPublicMethods
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b3b9461c72b21fcb2b77590786f47b90f5a98f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8106a4c0244cbd79e88a2bdc50e04ea74627dab4
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860756"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235332"
 ---
 # <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062: public 메서드의 인수에 대한 유효성을 검사하세요.
 
@@ -32,32 +31,32 @@ ms.locfileid: "53860756"
 |TypeName|ValidateArgumentsOfPublicMethods|
 |CheckId|CA1062|
 |범주|Microsoft.Design|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 
-외부에 표시 되는 메서드는 해당 참조 인수 중 하나를 해당 인수 인지 여부를 확인 하지 않고 역참조 `null` (`Nothing` Visual basic에서).
+외부에서 볼 수 `null` 있는 메서드는 해당 인수가 (`Nothing` Visual Basic) 인지 여부를 확인 하지 않고 해당 참조 인수 중 하나를 역참조 합니다.
 
 ## <a name="rule-description"></a>규칙 설명
 
-외부에서 볼 수 있는 메서드에 전달 되는 모든 참조 인수를 검사 해야 `null`합니다. 해당 하는 경우 throw 한 <xref:System.ArgumentNullException> 인수의 경우 `null`합니다.
+외부에서 볼 수 있는 메서드에 전달 되는 모든 참조 인수를 확인 `null`해야 합니다. 적절 한 경우 인수가 인 <xref:System.ArgumentNullException> `null`경우을 throw 합니다.
 
-메서드를 호출할 수 알 수 없는 어셈블리에서 public 또는 protected로 선언 된 메서드의 모든 매개 변수 유효성을 검사 해야 합니다. 내부 메서드를 확인 하 고 적용 해야 메서드 알려진된 어셈블리에 의해서만 호출 수를 디자인 된 경우는 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 메서드를 포함 하는 어셈블리에 특성입니다.
+Public 또는 protected로 선언 되기 때문에 알 수 없는 어셈블리에서 메서드를 호출할 수 있는 경우 메서드의 모든 매개 변수 유효성을 검사 해야 합니다. 알려진 어셈블리만 호출 하도록 메서드를 디자인 한 경우 메서드를 internal로 설정 하 고 메서드를 포함 하는 어셈블리 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 에 특성을 적용 해야 합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 
-이 규칙 위반 문제를 해결 하려면에 대 한 각 참조 인수를 유효성을 검사 `null`합니다.
+이 규칙 위반 문제를 해결 하려면에 대해 `null`각 참조 인수의 유효성을 검사 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 
-역참조 매개 변수는 함수에서 다른 메서드 호출에서 검증 된 경우이 규칙에서 경고를 무시할 수 있습니다.
+역참조 된 매개 변수가 함수의 다른 메서드 호출에서 유효성을 검사 한 것으로 확인 되는 경우이 규칙에서 경고를 표시 하지 않을 수 있습니다.
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 규칙을 위반 하는 메서드 및 규칙을 충족 하는 메서드를 보여 줍니다.
+다음 예제에서는 규칙을 위반 하는 메서드와 규칙을 충족 하는 메서드를 보여 줍니다.
 
- ```csharp
- using System;
+```csharp
+using System;
 
 namespace DesignLibrary
 {
@@ -124,9 +123,9 @@ End Namespace
 
 ## <a name="example"></a>예제
 
-개체를 참조 하는 필드 또는 속성을 채우는 복사 생성자는 CA1062 규칙을 위반할 수 있습니다. 복사 생성자에 전달 되는 복사 된 개체가 될 수 있으므로 위반이 발생 `null` (`Nothing` Visual basic에서). 위반을 해결 하려면 정적 (Visual Basic에서는 Shared) 메서드를 사용 하 여 복사한 개체 null 인지 확인 합니다.
+참조 개체인 필드 또는 속성을 채우는 복사 생성자도 CA1062 규칙을 위반할 수 있습니다. 복사 생성자에 전달 된 복사 된 개체가 ( `null` `Nothing` Visual Basic) 일 수 있기 때문에 위반이 발생 합니다. 위반 문제를 해결 하려면 정적 (Visual Basic에서 공유) 메서드를 사용 하 여 복사한 개체가 null이 아닌 지 확인 합니다.
 
-다음에서 `Person` 클래스 예제는 `other` 에 전달 되는 개체를 `Person` 복사 생성자 않을 `null`.
+다음 `Person` 클래스 예제에서 `Person` 복사 생성자에 `other` 전달 되는 개체는 일 `null`수 있습니다.
 
 ```csharp
 public class Person
@@ -151,7 +150,7 @@ public class Person
 
 ## <a name="example"></a>예제
 
-다음 수정 된 `Person` 예제에서는 합니다 `other` 에서 null에 대 한 복사 생성자에 전달 되는 개체를 먼저 검사는 `PassThroughNonNull` 메서드.
+다음 수정 `Person` 된 예제 `other` 에서는 복사 생성자에 전달 된 개체가 먼저 `PassThroughNonNull` 메서드에서 null 인지 확인 합니다.
 
 ```csharp
 public class Person

@@ -8,16 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, port shape
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: d53e6c512b6f026772339c79c46eeb6854fb0095
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 97de488672ac201a418326e39535b7e7c9bd643b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823930"
 ---
 # <a name="properties-of-port-shapes"></a>포트 모양의 속성
 생성된 된 디자이너에서 도메인 클래스를 나타냅니다 port 셰이프를 사용할 수 있습니다.

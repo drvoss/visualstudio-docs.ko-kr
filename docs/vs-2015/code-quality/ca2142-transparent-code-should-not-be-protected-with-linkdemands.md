@@ -1,14 +1,9 @@
 ---
-title: 'CA2142: 투명 코드는 보호 해서는 안 LinkDemands를 사용 하 여 | Microsoft Docs'
-ms.custom: ''
+title: 'CA2142: 투명 코드는 LinkDemands를 사용 하 여 보호 해서는 안 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2142
 ms.assetid: 6dc59053-5dd9-4583-bf10-5f339107e59f
@@ -16,14 +11,14 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2c694709841f880355d5fee3b84a4dd4051a8449
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 11bd1668e4ab599461d3619c63cd3c9732a05b4f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142686"
 ---
-# <a name="ca2142-transparent-code-should-not-be-protected-with-linkdemands"></a>CA2142: 투명한 코드는 LinkDemands를 사용하여 보호해서는 안 됩니다.
+# <a name="ca2142-transparent-code-should-not-be-protected-with-linkdemands"></a>CA2142: 투명 코드는 LinkDemands로 보호될 수 없습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -51,6 +46,3 @@ ms.locfileid: "49899892"
  [!code-csharp[FxCop.Security.CA2142.TransparentMethodsShouldNotBeProtectedWithLinkDemands#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2142.transparentmethodsshouldnotbeprotectedwithlinkdemands/cs/ca2142 -transparentmethodsshouldnotbeprotectedwithlinkdemands.cs#1)]
 
  이 규칙에서는 경고를 표시해야 합니다.
-
-
-

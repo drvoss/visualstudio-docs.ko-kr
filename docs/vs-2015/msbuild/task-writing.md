@@ -1,14 +1,9 @@
 ---
 title: 작업 작성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, writing tasks
 - tasks, creating for MSBuild
@@ -17,18 +12,17 @@ ms.assetid: 3ebc5f87-8f00-46fc-82a1-228f35a6823b
 caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d8cc7968664f201482647861a031a27c850611c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: eaf927b1049709a04d8a883615d1997e9316599e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914712"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445393"
 ---
 # <a name="task-writing"></a>작업 작성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 작업은 빌드 프로세스 동안 실행되는 코드를 제공합니다. 작업은 대상에 포함되어 있습니다. 일반적인 작업의 라이브러리는 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에 포함되어 있으며 사용자 고유의 작업을 만들 수도 있습니다. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]에 포함된 작업의 라이브러리에 대한 자세한 내용은 [작업 참조](../msbuild/msbuild-task-reference.md)를 참조하세요.  
   
 ## <a name="tasks"></a>작업  
@@ -111,7 +105,7 @@ namespace MyTasks
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 파일 Microsoft.Common.Tasks는 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]와(과) 함께 제공된 모든 작업을 등록하는 `UsingTask` 요소의 목록을 포함하는 프로젝트 파일입니다. 이 파일은 모든 프로젝트를 빌드할 때 자동으로 포함됩니다. Microsoft.Common.Tasks에 등록된 작업이 현재 프로젝트 파일에도 등록된 경우 현재 프로젝트 파일이 우선 순위를 가집니다. 즉, 동일한 이름을 가진 고유 작업으로 기본 작업을 재정의할 수 있습니다.  
   
 > [!TIP]
->  Microsoft.Common.Tasks의 내용을 확인하여 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]와(과) 함께 제공되는 작업의 목록을 볼 수 있습니다.  
+> Microsoft.Common.Tasks의 내용을 확인하여 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]와(과) 함께 제공되는 작업의 목록을 볼 수 있습니다.  
   
 ## <a name="raising-events-from-a-task"></a>작업에서 이벤트 발생시키기  
  작업이 <xref:Microsoft.Build.Utilities.Task> 도우미 클래스에서 파생되는 경우 <xref:Microsoft.Build.Utilities.Task> 클래스의 다음 도우미 클래스 중 하나를 사용하여 모든 등록된 로커로 발견되고 등록되는 이벤트를 발생시킬 수 있습니다.  
@@ -277,6 +271,3 @@ namespace SimpleTask2
 ## <a name="see-also"></a>참고 항목  
  [작업 참조](../msbuild/msbuild-task-reference.md)   
  [작업 참조](../msbuild/msbuild-task-reference.md)
-
-
-

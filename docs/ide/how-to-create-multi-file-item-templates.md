@@ -1,8 +1,6 @@
 ---
 title: 다중 파일 항목 템플릿 만들기
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
@@ -10,13 +8,13 @@ helpviewer_keywords:
 - item templates, creating multi-file item templates
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: dd2cbe6d7a0ff586c0e673a6eb0e3d42aa4dec4e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 745f371fa0461c2dc0dcedac0e06d160bbf7e209
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065411"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428991"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>방법: 다중 파일 항목 템플릿 만들기
 
@@ -30,11 +28,11 @@ ms.locfileid: "53065411"
 
 다중 파일 항목 템플릿에는 항목을 만들 때 올바른 파일 확장명을 사용하도록 매개 변수가 필요합니다. **템플릿 내보내기 마법사**를 사용하여 다중 파일 항목 템플릿을 만드는 경우 이러한 매개 변수가 자동으로 생성되므로 더 이상 편집할 필요가 없습니다.
 
-## <a name="to-create-a-multi-file-item-template-by-using-the-export-template-wizard"></a>템플릿 내보내기 마법사를 사용하여 다중 파일 항목 템플릿을 만들려면
+## <a name="use-the-export-template-wizard"></a>템플릿 내보내기 마법사 사용
 
 단일 파일 항목 템플릿과 동일한 방식으로 다중 파일 항목 템플릿을 만들 수 있습니다. [방법: 항목 템플릿 만들기](../ide/how-to-create-item-templates.md)를 참조하세요. 마법사의 **내보낼 항목 선택** 페이지에서 종속 파일(예: Windows Forms 양식 파일)을 가진 파일을 선택합니다. 마법사에서 디자이너 및 리소스 파일과 같은 종속 파일을 템플릿에 자동으로 포함합니다.
 
-## <a name="to-manually-create-a-multi-file-item-template"></a>다중 파일 항목 템플릿을 수동으로 만들려면
+## <a name="manually-create-a-multi-file-item-template"></a>수동으로 다중 파일 항목 템플릿 만들기
 
 1. 단일 파일 항목 템플릿을 수동으로 만들 때처럼 항목 템플릿을 만들되, 다중 파일 항목을 구성 하는 각 파일을 포함합니다.
 

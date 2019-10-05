@@ -1,14 +1,9 @@
 ---
 title: GenerateResource 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateResource
 dev_langs:
@@ -23,19 +18,18 @@ ms.assetid: c0aff32f-f2cc-46f6-9c3e-a5c9f8f912b1
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6686e34ade66a3d4f2ec8ef23c9649bb5d7a1c47
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 712d0de957ff7f780567c927fb1b18b100f8f6ca
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212500"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703526"
 ---
 # <a name="generateresource-task"></a>GenerateResource 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
-.txt 및 .rest(XML 기반 리소스 형식) 파일과 런타임 이진 실행 파일에 포함되거나 위성 어셈블리로 컴파일할 수 있는 공용 언어 런타임 이진 .resources 파일 간을 변환합니다. 이 작업은 일반적으로 .txt 또는 .resx 파일을 .resource 파일로 변환하는 데 사용됩니다. `GenerateResource` 작업은 [resgen.exe](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)와 기능적으로 비슷합니다.  
+.txt 및 .rest(XML 기반 리소스 형식) 파일과 런타임 이진 실행 파일에 포함되거나 위성 어셈블리로 컴파일할 수 있는 공용 언어 런타임 이진 .resources 파일 간을 변환합니다. 이 작업은 일반적으로 .txt 또는 .resx 파일을 .resource 파일로 변환하는 데 사용됩니다. `GenerateResource` 작업은 [resgen.exe](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)와 기능적으로 비슷합니다.  
   
 ## <a name="parameters"></a>매개 변수  
  다음 표에서는 `GenerateResource` 작업의 매개 변수에 대해 설명합니다.  
@@ -53,7 +47,7 @@ ms.locfileid: "49212500"
 |`PublicClass`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`이면 강력한 형식의 리소스 클래스를 공용 클래스로 만듭니다.|  
 |`References`|선택적 `String[]` 매개 변수입니다.<br /><br /> .resx 파일에서 형식을 로드할 참조입니다. Resx 파일 데이터 요소는 .NET 형식일 수 있습니다. .resx 파일이 읽힐 때 이 항목이 확인되어야 합니다. 일반적으로 표준 형식 로드 규칙을 사용하여 확인됩니다. `References`에 어셈블리를 제공하는 경우 우선적으로 적용됩니다.<br /><br /> 강력한 형식의 리소스에는 이 매개 변수가 필요하지 않습니다.|  
 |`SdkToolsPath`|선택적 `String` 매개 변수입니다.<br /><br /> resgen.exe와 같은 SDK 도구에 대한 경로를 지정합니다.|  
-|`Sources`|필수 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 변환할 항목을 지정합니다. 이 매개 변수에 전달된 항목은 다음 파일 확장명 중 하나를 사용해야 합니다.<br /><br /> -   `.txt`: 변환할 텍스트 파일의 확장명을 지정합니다. 텍스트 파일에는 문자열 리소스만 포함될 수 있습니다.<br />-   `.resx`: 변환할 XML 기반 리소스 파일의 확장명을 지정합니다.<br />-   `.restext`: .txt와 같은 형식을 지정합니다. 빌드 프로세스의 다른 소스 파일과 리소스를 포함하는 소스 파일 간을 명확히 구분하려는 경우에 이러한 다른 확장명이 도움이 됩니다.<br />-   `.resources`: 변환할 리소스 파일의 확장명을 지정합니다.|  
+|`Sources`|필수 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 변환할 항목을 지정합니다. 이 매개 변수에 전달된 항목은 다음 파일 확장명 중 하나를 사용해야 합니다.<br /><br /> -   `.txt`: 변환할 텍스트 파일의 확장명을 지정합니다. 텍스트 파일에는 문자열 리소스만 포함될 수 있습니다.<br />-   `.resx`: 변환할 XML 기반 리소스 파일의 확장명을 지정합니다.<br />-   `.restext`: .Txt와 같은 형식을 지정 합니다. 빌드 프로세스의 다른 소스 파일과 리소스를 포함하는 소스 파일 간을 명확히 구분하려는 경우에 이러한 다른 확장명이 도움이 됩니다.<br />-   `.resources`: 변환할 리소스 파일의 확장명을 지정합니다.|  
 |`StateFile`|선택적 <xref:Microsoft.Build.Framework.ITaskItem> 매개 변수입니다.<br /><br /> .resx 입력 파일의 종속성 검사 속도를 향상시키는 데 사용할 선택적 캐시 파일의 경로를 지정합니다.|  
 |`StronglyTypedClassName`|선택적 `String` 매개 변수입니다.<br /><br /> 강력한 형식의 리소스 클래스에 대한 클래스 이름을 지정합니다. 이 매개 변수를 지정하지 않으면 리소스 파일의 기본 이름이 사용됩니다.|  
 |`StronglyTypedFilename`|선택적 <xref:Microsoft.Build.Framework.ITaskItem> 매개 변수입니다.<br /><br /> 소스 파일의 파일 이름을 지정합니다. 이 매개 변수를 지정하지 않으면 클래스의 이름이 언어별 확장명을 포함하는 기본 파일 이름으로 사용됩니다. 예: `MyClass.cs`|  
@@ -62,11 +56,11 @@ ms.locfileid: "49212500"
 |`StronglyTypedNamespace`|선택적 `String` 매개 변수입니다.<br /><br /> 강력한 형식의 리소스에 대해 생성된 클래스 소스에 사용할 네임스페이스를 지정합니다. 이 매개 변수를 지정하지 않으면 모든 강력한 형식의 리소스는 전역 네임스페이스에 있습니다.|  
 |`TLogReadFiles`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 읽기 전용 매개 변수입니다.<br /><br /> 읽기 추적 로그를 나타내는 항목의 배열을 가져옵니다.|  
 |`TLogWriteFiles`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 읽기 전용 매개 변수입니다.<br /><br /> 쓰기 추적 로그를 나타내는 항목의 배열을 가져옵니다.|  
-|`ToolArchitecture`|선택 사항 [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) 매개 변수입니다.<br /><br /> Tracker.exe를 ResGen.exe를 생성하는 데 사용해야 하는지 여부를 결정하는 데 사용됩니다.<br /><br /> <xref:Microsoft.Build.Utilities.ExecutableType> 열거형의 멤버로 구문 분석할 수 있어야 합니다. `String.Empty`이면 추론을 사용하여 기본 아키텍처를 결정합니다. Microsoft.Build.Utilities.ExecutableType 열거형의 멤버로 구문 분석할 수 있어야 합니다.|  
-|`TrackerFrameworkPath`|선택적 <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 매개 변수입니다.<br /><br /> FileTracker.dll을 포함하는 적절한 .NET Framework 위치의 경로를 지정합니다.<br /><br /> 설정되면 사용자가 전달하는 FileTracker.dll의 비트가 사용하려는 ResGen.exe의 비트와 일치하는지 확인해야 합니다. 설정되지 않으면 작업이 현재 .NET Framework 버전에 따라 적절한 위치를 결정합니다.|  
-|`TrackerLogDirectory`|선택적 <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 매개 변수입니다.<br /><br /> 이 작업 실행 시 발생하는 추적 로그를 추가할 중간 디렉터리를 지정합니다.|  
-|`TrackerSdkPath`|선택적 <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 매개 변수입니다.<br /><br /> Tracker.exe를 포함하는 적절한 Windows SDK의 경로를 지정합니다.<br /><br /> 설정되면 사용자가 전달하는 Tracker.exe의 비트가 사용하려는 ResGen.exe의 비트와 일치하는지 확인해야 합니다. 설정되지 않으면 작업이 현재 Windows SDK에 따라 적절한 위치를 결정합니다.|  
-|`TrackFileAccess`|선택 사항 [부울] (<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) 매개 변수입니다.<br /><br /> true이면 입력 파일의 디렉터리가 상대 파일 경로를 확인하는 데 사용됩니다.|  
+|`ToolArchitecture`|선택적 [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) 매개 변수입니다.<br /><br /> Tracker.exe를 ResGen.exe를 생성하는 데 사용해야 하는지 여부를 결정하는 데 사용됩니다.<br /><br /> <xref:Microsoft.Build.Utilities.ExecutableType> 열거형의 멤버로 구문 분석할 수 있어야 합니다. `String.Empty`이면 추론을 사용하여 기본 아키텍처를 결정합니다. Microsoft.Build.Utilities.ExecutableType 열거형의 멤버로 구문 분석할 수 있어야 합니다.|  
+|`TrackerFrameworkPath`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 매개 변수입니다.<br /><br /> FileTracker.dll을 포함하는 적절한 .NET Framework 위치의 경로를 지정합니다.<br /><br /> 설정되면 사용자가 전달하는 FileTracker.dll의 비트가 사용하려는 ResGen.exe의 비트와 일치하는지 확인해야 합니다. 설정되지 않으면 작업이 현재 .NET Framework 버전에 따라 적절한 위치를 결정합니다.|  
+|`TrackerLogDirectory`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 매개 변수입니다.<br /><br /> 이 작업 실행 시 발생하는 추적 로그를 추가할 중간 디렉터리를 지정합니다.|  
+|`TrackerSdkPath`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 매개 변수입니다.<br /><br /> Tracker.exe를 포함하는 적절한 Windows SDK의 경로를 지정합니다.<br /><br /> 설정되면 사용자가 전달하는 Tracker.exe의 비트가 사용하려는 ResGen.exe의 비트와 일치하는지 확인해야 합니다. 설정되지 않으면 작업이 현재 Windows SDK에 따라 적절한 위치를 결정합니다.|  
+|`TrackFileAccess`|선택적 [부울](<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) 매개 변수입니다.<br /><br /> true이면 입력 파일의 디렉터리가 상대 파일 경로를 확인하는 데 사용됩니다.|  
 |`UseSourcePath`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`이면 입력 파일의 디렉터리가 상대 파일 경로를 확인하는 데 사용되도록 지정합니다.|  
   
 ## <a name="remarks"></a>설명  
@@ -94,7 +88,7 @@ ms.locfileid: "49212500"
  어셈블리 이름이 myAssembly라고 가정할 경우 다음 코드는 someQualifier.someResource.resources라는 포함된 리소스를 생성합니다.  
   
 ```  
-<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
+<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
 ```  
   
  \<LogicalName> 메타데이터가 없으면 리소스 이름은 myAssembly.myResource.resources로 지정됩니다.  이 예제는 Visual Basic 및 Visual C# 빌드 프로세스에만 적용됩니다.  
@@ -102,6 +96,3 @@ ms.locfileid: "49212500"
 ## <a name="see-also"></a>참고 항목  
  [작업](../msbuild/msbuild-tasks.md)   
  [작업 참조](../msbuild/msbuild-task-reference.md)
-
-
-

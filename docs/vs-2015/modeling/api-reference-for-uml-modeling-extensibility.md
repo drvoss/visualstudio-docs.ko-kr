@@ -1,12 +1,9 @@
 ---
 title: UML 모델링 확장성에 대 한 API 참조 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 helpviewer_keywords:
 - UML - extending
 - UML API
@@ -15,13 +12,13 @@ ms.assetid: 2b2ffe93-c358-4d28-a5e5-3d0474629b58
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: dff485db59f418fe05cd586335b6f9ceae153428
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 12eadb9844df5da78b11367708fed715f1c13672
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785042"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159679"
 ---
 # <a name="api-reference-for-uml-modeling-extensibility"></a>UML 모델링 확장성을 위한 API 참조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,6 +35,3 @@ ms.locfileid: "51785042"
 ## <a name="see-also"></a>참고 항목  
  [UML 모델 및 다이어그램 확장](../modeling/extend-uml-models-and-diagrams.md)   
  [Visual Studio용 모델링 SDK에 대한 API 참조](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)
-
-
-

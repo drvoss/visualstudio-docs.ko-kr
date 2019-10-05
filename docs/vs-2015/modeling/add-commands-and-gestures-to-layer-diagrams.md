@@ -1,12 +1,9 @@
 ---
 title: 레이어 다이어그램에 명령 및 제스처 추가 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, adding custom commands
 - layer diagrams, adding custom gestures
@@ -14,13 +11,13 @@ ms.assetid: ac9c417b-0b40-4a90-86f5-ee3cbdce030b
 caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ae57d950b20fc6e342056b8c89738fa895c48c28
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a4d158e3c624a63863e5a8305dd0b9b4b5ef10ea
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733383"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444224"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>레이어 다이어그램에 명령 및 제스처 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +27,7 @@ Visual Studio에서 레이어 다이어그램의 상황에 맞는 메뉴 명령 
  필요한 경우 동일한 Visual Studio 프로젝트에서 여러 개의 명령 및 제스처 처리기를 정의할 수 있습니다. 이러한 여러 프로젝트를 하나의 VSIX에 결합할 수도 있습니다. 예를 들어 레이어 명령, 도메인 특정 언어 및 UML 다이어그램 명령을 포함하는 단일 VSIX를 정의할 수 있습니다.  
   
 > [!NOTE]
->  사용자의 소스 코드를 레이어 다이어그램과 비교하는 아키텍처 유효성 검사를 사용자 지정할 수도 있습니다. 별도의 Visual Studio 프로젝트에서 아키텍처 유효성 검사를 정의해야 합니다. 동일한 VSIX에 다른 확장으로 추가할 수 있습니다. 자세한 내용은 [레이어 다이어그램에 사용자 지정 아키텍처 유효성 검사 추가](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)합니다.  
+> 사용자의 소스 코드를 레이어 다이어그램과 비교하는 아키텍처 유효성 검사를 사용자 지정할 수도 있습니다. 별도의 Visual Studio 프로젝트에서 아키텍처 유효성 검사를 정의해야 합니다. 동일한 VSIX에 다른 확장으로 추가할 수 있습니다. 자세한 내용은 [레이어 다이어그램에 사용자 지정 아키텍처 유효성 검사 추가](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)합니다.  
   
 ## <a name="requirements"></a>요구 사항  
  참조 [요구 사항](../modeling/extend-layer-diagrams.md#prereqs)합니다.  
@@ -58,37 +55,37 @@ Visual Studio에서 레이어 다이어그램의 상황에 맞는 메뉴 명령 
   
     [제스처 처리기 정의](#gesture)  
   
-6. 기본 인스턴스에서 확장을 설치 하려면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], 또는 다른 컴퓨터에서 찾을 합니다 **.vsix** 파일 *bin\\*합니다. 설치할 컴퓨터로 파일을 복사하고 파일을 두 번 클릭합니다. 파일을 제거하려면 **도구** 메뉴에서 **확장 및 업데이트** 를 사용합니다.  
+6. 기본 인스턴스에서 확장을 설치 하려면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], 또는 다른 컴퓨터에서 찾을 합니다 **.vsix** 파일 *bin\\* 합니다. 설치할 컴퓨터로 파일을 복사하고 파일을 두 번 클릭합니다. 파일을 제거하려면 **도구** 메뉴에서 **확장 및 업데이트** 를 사용합니다.  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>별도 VSIX에 명령 또는 제스처 추가  
  명령, 레이어 유효성 검사기 및 기타 확장이 포함된 하나의 VSIX를 만들려면 VSIX를 정의하는 프로젝트 하나와 처리기에 대한 개별 프로젝트를 만드는 것이 좋습니다. 모델링 확장의 다른 형식에 대 한 정보를 참조 하세요 [확장: UML 모델 및 다이어그램](../modeling/extend-uml-models-and-diagrams.md)합니다.  
   
 #### <a name="to-add-layer-extensions-to-a-separate-vsix"></a>별도 VSIX에 레이어 확장을 추가하려면  
   
-1.  새 Visual Studio 솔루션이나 기존 솔루션에서 클래스 라이브러리 프로젝트를 만듭니다. **새 프로젝트** 대화 상자에서 **Visual C#** , **클래스 라이브러리**를 차례로 클릭합니다. 이 프로젝트는 명령 또는 제스처 처리기 클래스를 포함합니다.  
+1. 새 Visual Studio 솔루션이나 기존 솔루션에서 클래스 라이브러리 프로젝트를 만듭니다. **새 프로젝트** 대화 상자에서 **Visual C#** , **클래스 라이브러리**를 차례로 클릭합니다. 이 프로젝트는 명령 또는 제스처 처리기 클래스를 포함합니다.  
   
     > [!NOTE]
-    >  한 클래스 라이브러리에서 두 개 이상의 명령 또는 제스처 처리기 클래스를 정의할 수 있지만, 별도 클래스 라이브러리에서 레이어 유효성 검사 클래스를 정의해야 합니다.  
+    > 한 클래스 라이브러리에서 두 개 이상의 명령 또는 제스처 처리기 클래스를 정의할 수 있지만, 별도 클래스 라이브러리에서 레이어 유효성 검사 클래스를 정의해야 합니다.  
   
-2.  솔루션에서 VSIX 프로젝트를 식별하거나 만듭니다. VSIX 프로젝트에는 이름이 **source.extension.vsixmanifest**인 파일이 포함됩니다. VSIX 프로젝트를 추가하려면  
+2. 솔루션에서 VSIX 프로젝트를 식별하거나 만듭니다. VSIX 프로젝트에는 이름이 **source.extension.vsixmanifest**인 파일이 포함됩니다. VSIX 프로젝트를 추가하려면  
   
-    1.  **새 프로젝트** 대화 상자에서 **Visual C#** 을 확장하고 **확장성**을 클릭한 다음 **VSIX 프로젝트**를 클릭합니다.  
+    1. **새 프로젝트** 대화 상자에서 **Visual C#** 을 확장하고 **확장성**을 클릭한 다음 **VSIX 프로젝트**를 클릭합니다.  
   
-    2.  솔루션 탐색기에서 VSIX 프로젝트를 마우스 오른쪽 단추로 클릭한 다음 **시작 프로젝트로 설정**을 클릭합니다.  
+    2. 솔루션 탐색기에서 VSIX 프로젝트를 마우스 오른쪽 단추로 클릭한 다음 **시작 프로젝트로 설정**을 클릭합니다.  
   
-    3.  **버전 선택** 을 클릭하고 **Visual Studio** 가 선택되었는지 확인합니다.  
+    3. **버전 선택** 을 클릭하고 **Visual Studio** 가 선택되었는지 확인합니다.  
   
-3.  **source.extension.vsixmanifest**의 **자산**에서 명령 또는 제스처 처리기 프로젝트를 MEF 구성 요소로 추가합니다.  
+3. **source.extension.vsixmanifest**의 **자산**에서 명령 또는 제스처 처리기 프로젝트를 MEF 구성 요소로 추가합니다.  
   
-    1.  **자산**탭에서 **새로 만들기**를 선택합니다.  
+    1. **자산**탭에서 **새로 만들기**를 선택합니다.  
   
-    2.  **형식**에서 **Microsoft.VisualStudio.MefComponent**를 선택합니다.  
+    2. **형식**에서 **Microsoft.VisualStudio.MefComponent**를 선택합니다.  
   
-    3.  **소스**에서 **현재 솔루션의 프로젝트** 를 선택한 다음 명령 또는 제스처 처리기 프로젝트의 이름을 선택합니다.  
+    3. **소스**에서 **현재 솔루션의 프로젝트** 를 선택한 다음 명령 또는 제스처 처리기 프로젝트의 이름을 선택합니다.  
   
-    4.  파일을 저장합니다.  
+    4. 파일을 저장합니다.  
   
-4.  명령 또는 제스처 처리기 프로젝트로 돌아가서 다음 프로젝트 참조를 추가합니다.  
+4. 명령 또는 제스처 처리기 프로젝트로 돌아가서 다음 프로젝트 참조를 추가합니다.  
   
 |**참조**|**수행할 수 있는 기능**|  
 |-------------------|------------------------------------|  
@@ -99,7 +96,7 @@ Visual Studio에서 레이어 다이어그램의 상황에 맞는 메뉴 명령 
 |Microsoft.VisualStudio.Modeling.Sdk.[version]|모델링 확장 정의|  
 |Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]|모양 및 다이어그램 업데이트|  
   
-1.  확장에 대한 코드가 포함되도록 C# 클래스 라이브러리 프로젝트의 클래스 파일을 편집합니다. 자세한 내용은 다음 섹션 중 하나를 참조하세요.  
+1. 확장에 대한 코드가 포함되도록 C# 클래스 라이브러리 프로젝트의 클래스 파일을 편집합니다. 자세한 내용은 다음 섹션 중 하나를 참조하세요.  
   
      [메뉴 명령 정의](#command)  
   
@@ -107,13 +104,13 @@ Visual Studio에서 레이어 다이어그램의 상황에 맞는 메뉴 명령 
   
      참고 항목 [탐색 및 업데이트 프로그램 코드에서 모델 계층](../modeling/navigate-and-update-layer-models-in-program-code.md)합니다.  
   
-2.  기능을 테스트하려면 Ctrl+F5 또는 F5 키를 누릅니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 실험적 인스턴스가 열립니다. 이 인스턴스에서 레이어 다이어그램을 만들거나 엽니다.  
+2. 기능을 테스트하려면 Ctrl+F5 또는 F5 키를 누릅니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 의 실험적 인스턴스가 열립니다. 이 인스턴스에서 레이어 다이어그램을 만들거나 엽니다.  
   
-3.   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 주 인스턴스 또는 다른 컴퓨터에 확장을 설치하려면 **.vsix\*** 디렉터리에서 **.vsix** 파일을 찾습니다. VSIX를 설치할 컴퓨터에 파일을 복사합니다. Windows 탐색기(Windows 8에서는 파일 탐색기)에서 VSIX 파일을 두 번 클릭합니다.  
+3. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 주 인스턴스 또는 다른 컴퓨터에 확장을 설치하려면 **.vsix\*** 디렉터리에서 **.vsix** 파일을 찾습니다. VSIX를 설치할 컴퓨터에 파일을 복사합니다. Windows 탐색기(Windows 8에서는 파일 탐색기)에서 VSIX 파일을 두 번 클릭합니다.  
   
      파일을 제거하려면 **도구** 메뉴에서 **확장 및 업데이트** 를 사용합니다.  
   
-##  <a name="command"></a> 메뉴 명령 정의  
+## <a name="command"></a> 메뉴 명령 정의  
  기존 제스처 또는 명령 프로젝트에 메뉴 명령 정의를 더 추가할 수 있습니다. 각 명령은 다음과 같은 특징이 있는 클래스에 의해 정의됩니다.  
   
 - 클래스는 다음과 같이 선언됩니다.  
@@ -128,11 +125,11 @@ Visual Studio에서 레이어 다이어그램의 상황에 맞는 메뉴 명령 
   
 - `ICommandExtension` 을 구현하는 메서드는 다음과 같습니다.  
   
-  -   `string Text {get;}` - 메뉴에 표시되는 레이블입니다.  
+  - `string Text {get;}` - 메뉴에 표시되는 레이블입니다.  
   
-  -   `void QueryStatus(IMenuCommand command)` - 사용자가 다이어그램을 마우스 오른쪽 단추로 클릭할 때 호출되며 사용자의 현재 선택 항목에 대해 명령이 표시되고 사용할 수 있어야 하는지 여부를 확인합니다.  
+  - `void QueryStatus(IMenuCommand command)` - 사용자가 다이어그램을 마우스 오른쪽 단추로 클릭할 때 호출되며 사용자의 현재 선택 항목에 대해 명령이 표시되고 사용할 수 있어야 하는지 여부를 확인합니다.  
   
-  -   `void Execute(IMenuCommand command)` - 사용자가 명령을 선택할 때 호출됩니다.  
+  - `void Execute(IMenuCommand command)` - 사용자가 명령을 선택할 때 호출됩니다.  
   
 - 현재 선택 항목을 확인하기 위해 `IDiagramContext`를 가져올 수 있습니다.  
   
@@ -218,7 +215,7 @@ namespace MyLayerExtension // Change to your preference.
 }  
 ```  
   
-##  <a name="gesture"></a> 제스처 처리기 정의  
+## <a name="gesture"></a> 제스처 처리기 정의  
  제스처 처리기는 사용자가 레이어 다이어그램으로 항목을 끌어올 때 및 다이어그램을 두 번 클릭할 때 응답합니다.  
   
  기존 명령 또는 제스처 처리기 VSIX 프로젝트에 제스처 처리기를 정의하는 코드 파일을 추가할 수 있습니다.  
@@ -250,7 +247,7 @@ namespace MyLayerExtensions // change to your preference
   
    **OnDragDrop** - 사용자가 다이어그램에 항목을 놓을 때 호출됩니다.  
   
-- 각 메서드의 첫 번째 인수는 `IShape`로, 여기서 레이어 요소를 가져올 수 있습니다. 예:  
+- 각 메서드의 첫 번째 인수는 `IShape`로, 여기서 레이어 요소를 가져올 수 있습니다. 예를 들어:  
   
   ```  
   public void OnDragDrop(IShape target, IDataObject data)  
@@ -271,6 +268,3 @@ namespace MyLayerExtensions // change to your preference
  [프로그램 코드에서 레이어 모델 탐색 및 업데이트](../modeling/navigate-and-update-layer-models-in-program-code.md)   
  [레이어 다이어그램에 사용자 지정 아키텍처 유효성 검사 추가](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   
  [모델링 확장 정의 및 설치](../modeling/define-and-install-a-modeling-extension.md)
-
-
-

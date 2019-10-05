@@ -2,28 +2,26 @@
 title: R 시작 자습서
 description: 프로젝트 만들기, 대화형 창, 코드 편집 및 디버깅을 포함하여 Visual Studio에서 R을 사용하는 연습입니다.
 ms.date: 06/29/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 88387485b952bf201a222741a6b3d02861df186c
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: df46a2731f9923d85a16082f96c44947099db592
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000573"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Visual Studio용 R 도구 시작
 
-RTVS(Visual Studio용 R 도구)를 설치한 후([설치](installing-r-tools-for-visual-studio.md) 참조) 해당 도구가 제공하는 환경을 빠르게 경험할 수 있습니다. 
+RTVS(Visual Studio용 R 도구)를 설치한 후([설치](installing-r-tools-for-visual-studio.md) 참조) 해당 도구가 제공하는 환경을 빠르게 경험할 수 있습니다.
 
 ## <a name="create-an-r-project"></a>R 프로젝트 만들기
 
-1. Visual Studio를 시작합니다.
+1. Visual Studio를 엽니다.
 1. **파일** > **새로 만들기** > **프로젝트**(**Ctrl**+**Shift**+**N**) 선택
 1. **템플릿** > **R** 아래에서 “R 프로젝트”를 선택하고, 프로젝트의 이름과 위치를 입력한 후 **확인**을 선택합니다.
 
@@ -72,7 +70,7 @@ RTVS(Visual Studio용 R 도구)를 설치한 후([설치](installing-r-tools-for
 
 대화형 창에서 잠시 작업하면 코드 편집기에서도 작동하는 IntelliSense 등의 기본 편집 기능을 확인할 수 있습니다. 이전과 같은 코드를 입력하면 동일한 자동 완성 및 IntelliSense 프롬프트가 표시되지만 출력은 표시되지 않습니다.
 
-*.R* 파일에 코드를 작성하면 모든 코드를 한 번에 확인할 수 있고, 사소한 변경을 수행한 다음, 대화형 창에서 코드를 실행하여 결과를 빠르게 확인하기가 더 쉽습니다. 프로젝트에 원하는 개수만큼 파일을 포함할 수도 있습니다. 코드가 파일에 있으면 디버거에서 코드를 단계별로 실행할 수도 있습니다(이 문서의 뒷부분에서 설명). 이러한 기능은 계산 알고리즘을 개발하고 코드를 작성하여 하나 이상의 데이터 집합을 조작할 경우, 특히 모든 중간 결과를 조사하려는 경우에 유용합니다.
+*.R* 파일에 코드를 작성하면 모든 코드를 한 번에 확인할 수 있고, 사소한 변경을 수행한 다음, 대화형 창에서 코드를 실행하여 결과를 빠르게 확인하기가 더 쉽습니다. 프로젝트에 원하는 개수만큼 파일을 포함할 수도 있습니다. 코드가 파일에 있으면 디버거에서 코드를 단계별로 실행할 수도 있습니다(이 문서의 뒷부분에서 설명). 이러한 기능은 계산 알고리즘을 개발하고 코드를 작성하여 하나 이상의 데이터 세트를 조작할 경우, 특히 모든 중간 결과를 조사하려는 경우에 유용합니다.
 
 예제와 같이 다음 단계에서는 간단한 코드를 만들어 [중심 극한 정리](https://en.wikipedia.org/wiki/Central_limit_theorem)(Wikipedia)를 살펴봅니다. 이 예제는 Paul Teetor에 의해 *R Cookbook*에서 변형되었습니다.
 
@@ -94,7 +92,7 @@ RTVS(Visual Studio용 R 도구)를 설치한 후([설치](installing-r-tools-for
 
 > [!Tip]
 > 편집하고 **Ctrl**+**Enter**를 눌러(또는 **Ctrl**+**A**로 모든 내용을 선택한 다음, **Ctrl**+**Enter**를 누름) 코드를 빠르게 실행하는 패턴을 알아봅니다. 이 방법은 같은 작업에 마우스를 사용하는 것보다 훨씬 더 효율적입니다.
-> 
+>
 > 또한 Visual Studio 프레임에서 플롯 창을 끌어서 놓고 디스플레이에서 필요할 때마다 다른 곳에 배치할 수 있습니다. 그런 다음 플롯 창을 원하는 크기로 조정하고 이미지 또는 PDF 파일에 저장할 수 있습니다.
 
 1. 몇 줄의 코드를 더 추가하여 두 번째 플롯을 포함합니다.

@@ -1,114 +1,118 @@
 ---
 title: ASP.NET Core 시작
 description: 이 문서에서는 설치 및 새 프로젝트 만들기를 포함하여 Mac용 Visual Studio에서 ASP.NET을 시작하는 방법을 설명합니다.
-author: conceptdev
-ms.author: crdun
-ms.date: 07/13/2017
+author: sayedihashimi
+ms.author: sayedha
+ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
-ms.openlocfilehash: 9576048cb6a62f7a4e8c93456154997af359a711
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.custom: video
+ms.openlocfilehash: d07849a362779f3fad8f7544899dc23b9d4538d6
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296478"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913327"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core 시작
 
- Mac용 Visual Studio를 사용하면 최신 ASP.NET Core 웹 개발 플랫폼 지원을 통해 앱 서비스를 쉽게 개발할 수 있습니다. ASP.NET Core는 .NET Framework와 런타임의 최신 형태인 .NET Core에서 실행됩니다. 빠른 성능을 위해 조정되고, 작은 설치 크기에 맞게 팩터링되고, Windows뿐 아니라 Linux 및 macOS에서도 실행되도록 다시 빌드되었습니다.
+ Mac용 Visual Studio를 사용하면 최신 ASP.NET Core 웹 개발 플랫폼 지원을 통해 앱 서비스를 쉽게 개발할 수 있습니다. ASP.NET Core는 .NET Framework와 런타임의 최신 형태인 .NET Core에서 실행됩니다. 빠른 성능을 위해 조정되고, 작은 설치 크기에 맞게 팩터링되고, Windows뿐 아니라 Linux 및 macOS에서도 실행되도록 다시 설계되었습니다.
 
 ## <a name="installing-net-core"></a>.NET Core 설치
 
-.NET Core 1.1은 Mac용 Visual Studio를 설치할 때 자동으로 설치됩니다.
+.NET Core 2.1은 Mac용 Visual Studio를 설치할 때 자동으로 설치됩니다.
 
 ## <a name="creating-an-aspnet-core-app-in-visual-studio-for-mac"></a>Mac용 Visual Studio에서 ASP.NET Core 앱 만들기
 
-Mac용 Visual Studio를 엽니다. 시작 페이지에서 **새 프로젝트...** 를 선택합니다.
+Mac용 Visual Studio를 엽니다. 시작 화면에서 **새 프로젝트...** 를 선택합니다.
 
-![새 프로젝트 대화 상자](media/asp-net-core-image1.png)
+![새 프로젝트 대화 상자](media/asp-net-core-2019-new-asp-core.png)
 
-그러면 응용 프로그램을 만들 템플릿을 선택할 수 있는 새 프로젝트 대화 상자가 표시됩니다.
+그러면 애플리케이션을 만들 템플릿을 선택할 수 있는 새 프로젝트 대화 상자가 표시됩니다.
 
-ASP.NET Core 응용 프로그램 빌드를 시작하기 위해 미리 작성된 템플릿을 제공하는 많은 프로젝트가 있습니다. 이러한 항목은 다음과 같습니다.
+ASP.NET Core 애플리케이션 빌드를 시작하기 위해 미리 작성된 템플릿을 제공하는 많은 프로젝트가 있습니다. 이러한 항목은 다음과 같습니다.
 
-- **.NET Core > ASP.NET Core 빈 웹 응용 프로그램**
-- **.NET Core > ASP.NET Core 웹앱**
-- **.NET Core > ASP.NET Core Web API**
-- **다중 플랫폼 > 앱 > 연결된 앱**
+- **.NET Core > 비어 있음**
+- **.NET Core > API**
+- **.NET Core > 웹 애플리케이션**
+- **.NET Core > 웹 애플리케이션(Model-View-Controller)**
 
-![ASP.NET 프로젝트 옵션](media/asp-net-core-image11.png)
+![ASP.NET 프로젝트 옵션](media/asp-net-core-2019-new-asp-core.png)
 
-**ASP.NET Core 빈 웹 응용 프로그램**을 선택하고 **다음**을 누릅니다. 프로젝트에 이름을 지정하고 **만들기**를 누릅니다. 그러면 아래 이미지와 비슷하게 표시되는 새로운 ASP.NET Core 앱이 생성됩니다.
+**ASP.NET Core 빈 웹 애플리케이션**을 선택하고 **다음**을 누릅니다. 프로젝트에 이름을 지정하고 **만들기**를 누릅니다. 그러면 새 ASP.NET Core 앱이 만들어집니다. 솔루션 패드의 왼쪽 창에서 두 번째 화살표를 확장한 다음 **Startup.cs**를 선택합니다. 아래 이미지와 비슷하게 표시됩니다.
 
-![새로운 ASP.NET Core 빈 프로젝트 보기](media/asp-net-core-image4.png)
+![새로운 ASP.NET Core 빈 프로젝트 보기](media/asp-net-core-2019-empty-project.png)
 
-ASP.NET Core 빈 웹 응용 프로그램은 두 개의 기본 파일 **Program.cs** 및 **Startup.cs**가 포함된 웹 응용 프로그램을 만듭니다. 두 파일은 아래에서 설명합니다. 또한 ASP.NET Core, .NET Core 프레임워크, 프로젝트를 빌드하는 MSBuild 대상 등 프로젝트의 NuGet 패키지 종속성을 포함하는 종속성 폴더를 만듭니다.
+ASP.NET Core 빈 템플릿은 두 개의 기본 파일 **Program.cs** 및 **Startup.cs**가 포함된 웹 애플리케이션을 만듭니다. 또한 ASP.NET Core, .NET Core 프레임워크, 프로젝트를 빌드하는 MSBuild 대상 등 프로젝트의 NuGet 패키지 종속성을 포함하는 종속성 폴더를 만듭니다.
 
-![종속성을 표시하는 Solution Pad](media/asp-net-core-image12.png)
+![종속성을 표시하는 Solution Pad](media/asp-net-core-2019-solution-dependencies.png)
 
 ### <a name="programcs"></a>Program.cs
 
-프로젝트에서 **Program.cs** 파일을 열고 검사합니다. 앱의 진입점인 `Main` 메서드에서 다음 두 가지 작업이 수행됨을 확인합니다.
+프로젝트에서 **Program.cs** 파일을 열고 검사합니다. 앱의 진입점인 `Main` 메서드에서 다음 몇 가지 작업이 수행됨을 확인합니다.
 
 ```csharp
-public static void Main(string[] args)
-{
-    var host = new WebHostBuilder()
-        .UseKestrel()
-        .UseContentRoot(Directory.GetCurrentDirectory())
-        .UseIISIntegration()
-        .UseStartup<Startup>()
-        .Build();
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            CreateWebHostBuilder(args).Build().Run();
+        }
 
-    host.Run();
-}
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+            WebHost.CreateDefaultBuilder(args)
+                .UseStartup<Startup>();
+    }
 ```
+
 ASP.NET Core 앱이 [`WebHostBuilder`](/aspnet/core/fundamentals/hosting) 인스턴스를 통해 호스트를 구성 및 시작하여 main 메서드에서 웹 서버를 만듭니다. 이 작성기는 호스트를 구성할 수 있는 메서드를 제공합니다. 템플릿 앱에서는 다음과 같은 구성이 사용됩니다.
+
+* `.UseStartup<Startup>()`: 시작 클래스를 지정합니다.
+
+그러나 다음과 같은 추가 구성을 추가할 수도 있습니다.
 
 * `UseKestrel`: 앱에서 Kestrel 서버를 사용하도록 지정합니다.
 * `UseContentRoot(Directory.GetCurrentDirectory())`: 이 폴더에서 앱을 시작할 때 웹 프로젝트의 루트 폴더를 앱의 콘텐츠 루트로 사용합니다.
 * `.UseIISIntegration()`: 앱이 IIS에서 작동하도록 지정합니다. ASP.NET Core와 함께 IIS를 사용하려면 `UseKestrel` 및 `UseIISIntegration`을 지정해야 합니다.
-* `.UseStartup<Startup>()`: 시작 클래스를 지정합니다.
-
-  빌드 및 실행 메서드는 앱을 호스트할 IWebHost를 빌드하고 시작하여 들어오는 HTTP 요청을 수신 대기합니다.
 
 ### <a name="startupcs"></a>Startup.cs
 
-앱의 시작 클래스는 `WebHostBuilder`의 `UseStartup()` 메서드에서 지정됩니다. 이 클래스에서 요청 처리 파이프라인을 지정하고 모든 서비스를 구성합니다.
+앱의 시작 클래스는 `CreateWebHostBuilder`의 `UseStartup()` 메서드에서 지정됩니다. 이 클래스에서 요청 처리 파이프라인을 지정하고 모든 서비스를 구성합니다.
 
 프로젝트에서 **Startup.cs** 파일을 열고 검사합니다.
 
 ```csharp
-public class Startup
-{
-    public void ConfigureServices(IServiceCollection services)
+    public class Startup
     {
-    }
-
-    public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
-    {
-        loggerFactory.AddConsole();
-
-        if (env.IsDevelopment())
+        // This method gets called by the runtime. Use this method to add services to the container.
+        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+        public void ConfigureServices(IServiceCollection services)
         {
-            app.UseDeveloperExceptionPage();
         }
 
-        app.Run(async (context) =>
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            await context.Response.WriteAsync("Hello World!");
-        });
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
+            app.Run(async (context) =>
+            {
+                await context.Response.WriteAsync("Hello World!");
+            });
+        }
     }
-}
 ```
 
 시작 클래스는 항상 다음 규칙을 따라야 합니다.
 
- - 항상 public이어야 합니다.
- - 두 개의 public 메서드 `ConfigureServices` 및 `Configure`가 포함되어야 합니다.
+- 항상 public이어야 합니다.
+- 두 개의 public 메서드 `ConfigureServices` 및 `Configure`가 포함되어야 합니다.
 
 `ConfigureServices` 메서드는 앱에서 사용될 서비스를 정의합니다.
 
-`Configure`를 사용하면 [미들웨어](/aspnet/core/fundamentals/middleware)를 통해 요청 파이프라인을 구성할 수 있습니다. ASP.NET 응용 프로그램 파이프라인 내에서 요청과 응답을 처리하는 데 사용되는 구성 요소입니다. HTTP 파이프라인은 순서대로 호출되는 많은 요청 대리자로 구성됩니다. 각 대리자는 요청을 직접 처리하거나 다음 대리자에 전달하도록 선택할 수 있습니다.
+`Configure`를 사용하면 [미들웨어](/aspnet/core/fundamentals/middleware)를 통해 요청 파이프라인을 구성할 수 있습니다. ASP.NET 애플리케이션 파이프라인 내에서 요청과 응답을 처리하는 데 사용되는 구성 요소입니다. HTTP 파이프라인은 순서대로 호출되는 많은 요청 대리자로 구성됩니다. 각 대리자는 요청을 직접 처리하거나 다음 대리자에 전달하도록 선택할 수 있습니다.
 
 `IApplicationBuilder`의 `Run`, `Map`, `Use` 메서드를 사용하여 대리자를 구성할 수 있지만, `Run` 메서드는 다음 대리자를 호출하지 않으며 항상 파이프라인의 끝에 사용해야 합니다.
 
@@ -116,13 +120,13 @@ public class Startup
 
 이제 추가 코드 없이 이 간단한 Hello, World 프로젝트를 실행할 수 있습니다. 앱을 실행하고 브라우저에서 보려면 도구 모음에서 재생(삼각형) 단추를 누릅니다.
 
-![앱 실행](media/asp-net-core-image5.png)
+![앱 실행](media/asp-net-core-2019-run-debug.png)
 
-Mac용 Visual Studio는 임의 포트를 사용하여 웹 프로젝트를 시작합니다. 해당 포트를 확인하려면 **보기 > 패드** 아래에 나열된 응용 프로그램 출력을 엽니다. 아래에 표시된 것과 비슷한 출력이 나타납니다.
+Mac용 Visual Studio는 임의 포트를 사용하여 웹 프로젝트를 시작합니다. 해당 포트를 확인하려면 **보기 &gt; 패드** 아래에 나열된 애플리케이션 출력을 엽니다. 아래에 표시된 것과 비슷한 출력이 나타납니다.
 
-![수신 대기 포트를 표시하는 응용 프로그램 출력](media/asp-net-core-image6.png)
+![수신 대기 포트를 표시하는 애플리케이션 출력](media/asp-net-core-image6.png)
 
-선택한 브라우저를 열고 `http://localhost:5000/`을 입력합니다. 여기서 `5000`을 Visual Studio 응용 프로그램 출력에 출력된 포트로 바꿉니다. `Hello World!` 텍스트가 표시됩니다.
+프로젝트가 실행되면 기본 웹 브라우저를 시작하고 애플리케이션 출력에 나열된 URL에 연결합니다. 또한 선택한 브라우저를 열고 `http://localhost:5000/`을 입력하여 `5000`을 애플리케이션 출력에서 Visual Studio가 출력하는 포트로 바꿉니다. `Hello World!` 텍스트가 표시됩니다.
 
 ![텍스트를 표시하는 브라우저](media/asp-net-core-image7.png)
 
@@ -131,7 +135,7 @@ Mac용 Visual Studio는 임의 포트를 사용하여 웹 프로젝트를 시작
 ASP.NET Core 앱은 MVC(모델-뷰-컨트롤러) 디자인 패턴을 사용하여 앱의 각 부분에 대한 책임을 논리적으로 구분합니다. MVC는 다음과 같이 구성됩니다.
 
 - **모델**: 앱의 데이터를 나타내는 클래스입니다.
-- **뷰**: 앱의 사용자 인터페이스(대개 모델 데이터임)를 표시합니다.
+- **보기**: 앱의 사용자 인터페이스(대개 모델 데이터임)를 표시합니다.
 - **컨트롤러**: 브라우저 요청을 처리하고 사용자 입력 및 상호 작용에 응답하는 클래스입니다.
 
 MVC 사용 방법에 대한 자세한 내용은 [ASP.NET Core MVC 개요](/aspnet/core/mvc/overview) 가이드를 참조하세요.
@@ -218,21 +222,24 @@ MVC 사용 방법에 대한 자세한 내용은 [ASP.NET Core MVC 개요](/aspne
 
     ![인수를 사용하여 브라우저에서 앱 실행](media/asp-net-core-image10.png)
 
-
 ## <a name="troubleshooting"></a>문제 해결
 
-Mac OS 10.11(El Capitan) 이상에 .NET Core를 수동으로 설치해야 하는 경우 다음을 수행합니다.
+Mac OS 10.12(Sierra) 이상에 .NET Core를 수동으로 설치해야 하는 경우 다음을 수행합니다.
 
-1. .NET Core 설치를 시작하기 전에 모든 OS 업데이트를 안정적인 최신 버전으로 업데이트했는지 확인합니다. 앱 스토어 응용 프로그램으로 이동한 다음 업데이트 탭을 선택하면 확인할 수 있습니다.
+1. .NET Core 설치를 시작하기 전에 모든 OS 업데이트를 안정적인 최신 버전으로 업데이트했는지 확인합니다. 앱 스토어 애플리케이션으로 이동한 다음 업데이트 탭을 선택하면 확인할 수 있습니다.
 
 2. [.NET Core 사이트](https://www.microsoft.com/net/core#macos)에 나열된 단계를 따르세요.
 
-.NET Core가 성공적으로 설치되도록 네 단계를 모두 완료해야 합니다.
+.NET Core가 성공적으로 설치되었는지 확인하려면 모든 단계를 완료해야 합니다.
 
 ## <a name="summary"></a>요약
 
 이 가이드에서는 ASP.NET Core를 소개했습니다. ASP.NET Core란 무엇이고 언제 사용해야 하는지를 설명하고, Mac용 Visual Studio에서 사용하는 방법에 대한 정보를 제공했습니다.
 이후 단계에 대한 자세한 내용은 다음 가이드를 참조하세요.
-- [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc) 문서
-- [네이티브 모바일 응용 프로그램용 백 엔드 서비스 만들기](/aspnet/core/mobile/native-mobile-backend) - Xamarin.Forms 앱용 ASP.NET Core를 사용하여 REST 서비스를 빌드하는 방법을 보여 줍니다.
+- [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-apis-and-web-ui-using-aspnet-core-mvc) 문서
+- [네이티브 모바일 애플리케이션용 백 엔드 서비스 만들기](/aspnet/core/mobile/native-mobile-backend) - Xamarin.Forms 앱용 ASP.NET Core를 사용하여 REST 서비스를 빌드하는 방법을 보여 줍니다.
 - [ASP.NET Core 실습 교육](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started)
+
+## <a name="related-video"></a>관련 동영상
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Build-Your-First-App/player]

@@ -1,23 +1,20 @@
 ---
 title: 다이어그램에 배경 이미지 설정 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: e334a24c-8521-4072-b50f-e59158dde145
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fd9d5ca21dbe1b0444c650a127fc0184dfb640f1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 28e2358b92080bd56cfda9d395f87e5c188da221
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189398"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>다이어그램에 배경 이미지 설정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,21 +25,21 @@ ms.locfileid: "49240554"
   
 #### <a name="to-set-a-background-image-for-a-generated-designer"></a>생성된 디자이너의 배경 이미지를 설정하려면  
   
-1.  다이어그램 배경으로 사용할 이미지 파일을 현재 프로젝트의 Dsl\Resources 디렉터리에 복사합니다.  
+1. 다이어그램 배경으로 사용할 이미지 파일을 현재 프로젝트의 Dsl\Resources 디렉터리에 복사합니다.  
   
-2.  **솔루션 탐색기**Dsl\Resources 폴더를 마우스 오른쪽 단추로 클릭, 가리킨 **추가**를 클릭 하 고 **기존 항목**합니다.  
+2. **솔루션 탐색기**Dsl\Resources 폴더를 마우스 오른쪽 단추로 클릭, 가리킨 **추가**를 클릭 하 고 **기존 항목**합니다.  
   
-3.  에 **기존 항목 추가** 대화 상자에서 Dsl\Resources 폴더를 찾습니다.  
+3. 에 **기존 항목 추가** 대화 상자에서 Dsl\Resources 폴더를 찾습니다.  
   
-4.  에 **파일 형식** 목록에서 클릭 **이미지 파일**합니다.  
+4. 에 **파일 형식** 목록에서 클릭 **이미지 파일**합니다.  
   
-5.  디렉터리에 복사한 이미지 파일을 클릭 한 다음 클릭 **추가**합니다.  
+5. 디렉터리에 복사한 이미지 파일을 클릭 한 다음 클릭 **추가**합니다.  
   
-6.  Dsl을 마우스 오른쪽 단추로 클릭 하 고 클릭 **속성** Dsl 프로젝트의 속성을 엽니다.  
+6. Dsl을 마우스 오른쪽 단추로 클릭 하 고 클릭 **속성** Dsl 프로젝트의 속성을 엽니다.  
   
-7.  에 **리소스** 탭을 클릭 **이 프로젝트에 기본 리소스 파일이 없습니다. 기본 리소스 파일을 만들려면 여기를 클릭하십시오.** 를 클릭합니다.  
+7. 에 **리소스** 탭을 클릭 **이 프로젝트에 기본 리소스 파일이 없습니다. 기본 리소스 파일을 만들려면 여기를 클릭하십시오.** 를 클릭합니다.  
   
-8.  이미지 파일에서 그림을 드래그 하 여 리소스 파일에 추가할 **솔루션 탐색기** 리소스 창으로 합니다.  
+8. 이미지 파일에서 그림을 드래그 하 여 리소스 파일에 추가할 **솔루션 탐색기** 리소스 창으로 합니다.  
   
 9. 파일 메뉴를 열고 프로젝트 속성을 저장할 옵션을 클릭합니다.  
   
@@ -112,6 +109,3 @@ ms.locfileid: "49240554"
  [텍스트 및 이미지 필드 사용자 지정](../modeling/customizing-text-and-image-fields.md)   
  [탐색 및 프로그램 코드에서 모델 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [도메인별 언어를 사용자 지정하는 코드 작성](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
-
-

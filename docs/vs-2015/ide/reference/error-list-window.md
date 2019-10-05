@@ -1,14 +1,9 @@
 ---
 title: 오류 목록 창 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ErrorList
 helpviewer_keywords:
@@ -20,20 +15,19 @@ ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0ecec77428d32512ec1b5fcf3822933c1c619b7f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1d481bbc71019639588c793fee64acd34d5739e8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873705"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680144"
 ---
 # <a name="error-list-window"></a>오류 목록 창
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 참고]
->  오류 목록에는 특정 오류 메시지에 대한 정보가 표시됩니다. 출력 창에서 오류 번호 또는 오류 문자열 텍스트를 복사할 수 있습니다. 출력 창을 표시하려면 Ctrl+Alt+O 키를 누릅니다. [출력 창](../../ide/reference/output-window.md)을 참조하세요.  
+> 오류 목록에는 특정 오류 메시지에 대한 정보가 표시됩니다. 출력 창에서 오류 번호 또는 오류 문자열 텍스트를 복사할 수 있습니다. 출력 창을 표시하려면 Ctrl+Alt+O 키를 누릅니다. [출력 창](../../ide/reference/output-window.md)을 참조하세요.  
   
  **오류 목록** 창을 사용하여 앱을 더 빠르게 개발할 수 있습니다. 예를 들어, 아래와 같은 작업을 수행할 수 있습니다.  
   
@@ -56,7 +50,7 @@ ms.locfileid: "49873705"
   목록을 정렬하려면 열 머리글을 클릭합니다. 추가 열을 기준으로 다시 정렬하려면 Shift 키를 누른 상태에서 다른 열 머리글을 클릭합니다. 표시할 열과 숨길 열을 선택하려면 바로 가기 메뉴에서 **열 표시**를 선택합니다. 열이 표시되는 순서를 변경하려면 열 머리글을 왼쪽이나 오른쪽으로 끕니다.  
   
 > [!NOTE]
->  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 여기서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구/설정 가져오기 및 내보내기**를 클릭합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
+> 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 여기서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구/설정 가져오기 및 내보내기**를 클릭합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
   
 ## <a name="error-list-filters"></a>오류 목록 필터  
  드롭다운 상자에는 두 가지 형식의 필터가 있습니다. 하나는 도구 모음 오른쪽에 있고 다른 하나는 도구 모음 왼쪽에 있습니다. 도구 모음의 왼쪽에 있는 드롭다운 목록은 사용할 코드 파일의 집합을 지정합니다(**전체 솔루션**, **열린 문서**, **현재 프로젝트**, **현재 문서**).  
@@ -68,7 +62,7 @@ ms.locfileid: "49873705"
 2. **현재 프로젝트**: **편집기**에서 현재 선택한 문서의 프로젝트 또는 **솔루션 탐색기**에서 선택한 프로젝트에 대한 오류, 경고 및 메시지를 표시합니다.  
   
    > [!NOTE]
-   >  현재 선택한 문서의 프로젝트가 **솔루션 탐색기**에서 선택한 프로젝트와 다른 경우 필터링된 오류, 경고 및 메시지 목록이 변경됩니다.  
+   > 현재 선택한 문서의 프로젝트가 **솔루션 탐색기**에서 선택한 프로젝트와 다른 경우 필터링된 오류, 경고 및 메시지 목록이 변경됩니다.  
   
 3. **현재 문서**: **편집기** 또는 **솔루션 탐색기**에서 현재 선택한 문서에 대한 오류, 경고 및 메시지를 표시합니다.  
   
@@ -100,6 +94,3 @@ ms.locfileid: "49873705"
   
  줄  
  문제가 발생한 줄을 표시합니다.
-
-
-

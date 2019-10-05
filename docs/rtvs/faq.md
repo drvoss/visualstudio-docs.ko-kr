@@ -2,20 +2,18 @@
 title: Visual Studio용 R 도구 FAQ
 description: Visual Studio의 R에 대한 질문과 대답
 ms.date: 12/04/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: reference
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 832d581a4147b8b050da16b1a1f72d8a3909fc35
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: b67a82a286e3772d87c4cc1ad06a6b8099205c73
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62550533"
 ---
 # <a name="frequently-asked-questions"></a>질문과 대답
 
@@ -81,7 +79,7 @@ Q **Microsoft R Server가 무엇인가요?**
 
 **질문: RTVS 프로젝트에 대해 권장되는 *.gitignore* 설정은 무엇인가요?**
 
-대답: Github에서는 권장되는 *.gitignore* 파일의 마스터 리포지토리를 유지 관리합니다. 이 항목은 [R.gitignore](https://github.com/github/gitignore/blob/master/R.gitignore)에서 볼 수 있습니다.
+대답: GitHub에서는 권장되는 *.gitignore* 파일의 마스터 리포지토리를 유지 관리합니다. 이 항목은 다음에서 볼 수 있습니다. [R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore)
 
 ## <a name="remote-services"></a>원격 서비스
 

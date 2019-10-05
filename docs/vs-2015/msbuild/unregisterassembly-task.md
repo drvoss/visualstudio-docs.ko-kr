@@ -1,14 +1,9 @@
 ---
 title: UnregisterAssembly 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#UnregisterAssembly
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: 04f549dd-3591-4dda-9c3a-cf6ede9df2c3
 caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dcfddcf1603a16ee4d436766e4f34fa2c41491bb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2ef7ef7f4ec930b8aa338a8be33c4009b3009b20
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193229"
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 COM interop 용도로 지정된 어셈블리의 등록을 취소합니다. [RegisterAssembly 작업](../msbuild/registerassembly-task.md)의 역작업을 수행합니다.  
   
 ## <a name="parameters"></a>매개 변수  
@@ -49,9 +43,9 @@ COM interop 용도로 지정된 어셈블리의 등록을 취소합니다. [Regi
 ## <a name="remarks"></a>설명  
  이 작업이 성공하기 위해 이 어셈블리가 있어야 할 필요는 없습니다. 존재하지 않는 어셈블리의 등록을 취소하려고 하면 작업은 성공하지만 경고가 발생합니다. 이 작업의 해당 작업이 레지스트리에서 어셈블리 등록을 제거하는 것이기 때문입니다. 어셈블리가 없으면 레지스트리에 없으므로 작업은 성공합니다.  
   
- 이 작업은 위에 나와 있는 매개 변수 외에 <xref:System.MarshalByRefObject> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.AppDomainIsolatedTaskExtension> 클래스의 매개 변수도 상속합니다. `MarshalByRefObject` 클래스는 <xref:Microsoft.Build.Utilities.Task> 클래스와 동일한 기능을 제공하지만 해당 응용 프로그램 도메인에서 인스턴스화될 수 있습니다.  
+ 이 작업은 위에 나와 있는 매개 변수 외에 <xref:System.MarshalByRefObject> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.AppDomainIsolatedTaskExtension> 클래스의 매개 변수도 상속합니다. `MarshalByRefObject` 클래스는 <xref:Microsoft.Build.Utilities.Task> 클래스와 동일한 기능을 제공하지만 해당 애플리케이션 도메인에서 인스턴스화될 수 있습니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  다음 예제에서는 `UnregisterAssembly` 작업을 사용하여 `OutputPath` 및 `FileName` 속성으로 지정된 경로에서 어셈블리(있는 경우)의 등록을 취소합니다.  
   
 ```  
@@ -73,6 +67,3 @@ COM interop 용도로 지정된 어셈블리의 등록을 취소합니다. [Regi
  [RegisterAssembly 작업](../msbuild/registerassembly-task.md)   
  [작업](../msbuild/msbuild-tasks.md)   
  [작업 참조](../msbuild/msbuild-task-reference.md)
-
-
-

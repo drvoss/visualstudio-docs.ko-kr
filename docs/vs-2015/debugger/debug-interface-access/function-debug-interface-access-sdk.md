@@ -1,14 +1,9 @@
 ---
 title: 함수 (디버그 인터페이스 액세스 SDK) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 458dc91c-b78b-4427-84f4-615d89e26760
 caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 21b618a01cd439c1176cea65d14dcc0c270f37d7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6fb1355dfebaad4230c349c0c7b30ae400ecdaa1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741563"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692178"
 ---
 # <a name="function-debug-interface-access-sdk"></a>함수(디버그 인터페이스 액세스 SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,17 +39,17 @@ ms.locfileid: "51741563"
 |[IDiaSymbol::get_customCallingConvention](../../debugger/debug-interface-access/idiasymbol-get-customcallingconvention.md)|`BOOL`|`TRUE` 함수에서 사용자 지정 호출 규칙 (DIA SDK V8.0 이상 에서만)을 사용 하면|  
 |[IDiaSymbol::get_farReturn](../../debugger/debug-interface-access/idiasymbol-get-farreturn.md)|`BOOL`|`TRUE` 함수 수행 (DIA SDK V8.0 이상 에서만)까지 반환 합니다.|  
 |[IDiaSymbol::get_hasAlloca](../../debugger/debug-interface-access/idiasymbol-get-hasalloca.md)|`BOOL`|`TRUE` 함수는 할당 된 메모리 함수를 사용 하는 경우 (uinnder DIA SDK V8.0 이상).|  
-|[IDiaSymbol::get_hasEH](../../debugger/debug-interface-access/idiasymbol-get-haseh.md)|`BOOL`|`TRUE` 함수가 포함 된 경우 c + + 스타일 예외 처리 (DIA SDK V8.0 이상 에서만).|  
+|[IDiaSymbol::get_hasEH](../../debugger/debug-interface-access/idiasymbol-get-haseh.md)|`BOOL`|`TRUE` 함수를 포함 하는 경우 C++-(DIA SDK V8.0 이상 에서만) 스타일 예외를 처리 합니다.|  
 |[IDiaSymbol::get_hasEHa](../../debugger/debug-interface-access/idiasymbol-get-haseha.md)|`BOOL`|`TRUE` 함수가 포함 된 경우 비동기 예외 처리 (DIA SDK V8.0 이상 에서만).|  
 |[IDiaSymbol::get_hasInlAsm](../../debugger/debug-interface-access/idiasymbol-get-hasinlasm.md)|`BOOL`|`TRUE` 함수가 포함 되어 있으면 인라인 어셈블리 (DIA SDK V8.0 이상 에서만).|  
-|[IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)|`BOOL`|`TRUE` 함수를 포함 하는 경우는 [longjmp](http://msdn.microsoft.com/library/0e13670a-5130-45c1-ad69-6862505b7a2f) (DIA SDK V8.0 이상 에서만)를 호출 합니다.|  
+|[IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)|`BOOL`|`TRUE` 함수를 포함 하는 경우는 [longjmp](https://msdn.microsoft.com/library/0e13670a-5130-45c1-ad69-6862505b7a2f) (DIA SDK V8.0 이상 에서만)를 호출 합니다.|  
 |[IDiaSymbol::get_hasSecurityChecks](../../debugger/debug-interface-access/idiasymbol-get-hassecuritychecks.md)|`BOOL`|`TRUE` 함수가 포함 되어 있으면 보안 검사 (DIA SDK V8.0 이상 에서만).|  
 |[IDiaSymbol::get_hasSEH](../../debugger/debug-interface-access/idiasymbol-get-hasseh.md)|`BOOL`|`TRUE` 함수가 포함 되어 있으면 Win32 스타일 구조적 예외 처리 (DIA SDK V8.0 이상 에서만).|  
-|[IDiaSymbol::get_hasSetJump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)|`BOOL`|`TRUE` 함수를 포함 하는 경우는 [setjmp](http://msdn.microsoft.com/library/684a8b27-e8eb-455b-b4a8-733ca1cbd7d2) (DIA SDK V8.0 이상 에서만)를 호출 합니다.|  
+|[IDiaSymbol::get_hasSetJump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)|`BOOL`|`TRUE` 함수를 포함 하는 경우는 [setjmp](https://msdn.microsoft.com/library/684a8b27-e8eb-455b-b4a8-733ca1cbd7d2) (DIA SDK V8.0 이상 에서만)를 호출 합니다.|  
 |[IDiaSymbol::get_interruptReturn](../../debugger/debug-interface-access/idiasymbol-get-interruptreturn.md)|`BOOL`|`TRUE` 함수에 인터럽트 (DIA SDK V8.0 이상 에서만)에서 반환 하는 경우|  
 |[IDiaSymbol::get_intro](../../debugger/debug-interface-access/idiasymbol-get-intro.md)|`BOOL`|`TRUE` 함수를 소개 가상 인 경우|  
 |[IDiaSymbol::get_InlSpec](../../debugger/debug-interface-access/idiasymbol-get-inlspec.md)|`BOOL`|`TRUE` 함수 중 하나를 사용 하 여 표시 된 경우는 [인라인, __inline \__forceinline](../../misc/inline-inline-forceinline.md) 특성입니다.|  
-|[IDiaSymbol::get_isNaked](../../debugger/debug-interface-access/idiasymbol-get-isnaked.md)|`BOOL`|`TRUE` 함수를 사용 하 여 표시 되 면 합니다 [naked](http://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d) 특성 (DIA SDK V8.0 이상 에서만).|  
+|[IDiaSymbol::get_isNaked](../../debugger/debug-interface-access/idiasymbol-get-isnaked.md)|`BOOL`|`TRUE` 함수를 사용 하 여 표시 되 면 합니다 [naked](https://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d) 특성 (DIA SDK V8.0 이상 에서만).|  
 |[IDiaSymbol::get_isStatic](../../debugger/debug-interface-access/idiasymbol-get-isstatic.md)|`BOOL`|`TRUE` 함수가 경우 정적 (DIA SDK V8.0 이상 에서만).|  
 |[IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)|`ULONGLONG`|위치에서 시작 되는 함수 코드의 바이트 수입니다.|  
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|바깥쪽 compiland의 기호입니다.|  
@@ -86,6 +81,3 @@ ms.locfileid: "51741563"
  [기호 형식의 어휘 계층 구조](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
  [LocationType 열거형](../../debugger/debug-interface-access/locationtype.md)   
  [기호 위치](../../debugger/debug-interface-access/symbol-locations.md)
-
-
-

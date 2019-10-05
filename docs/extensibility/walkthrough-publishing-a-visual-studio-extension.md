@@ -6,17 +6,17 @@ helpviewer_keywords:
 - publishing web controls
 - web controls, publishing
 ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0eef45253ff8d6aa0060c122c5003f8f239e73c5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 86ed2455b19a3f7e56c92a37a9402b7d65bf70a3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852455"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337920"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>연습: Visual Studio 확장 게시
 
@@ -73,34 +73,34 @@ ms.locfileid: "53852455"
 8. **2: 확장 세부 정보를 제공**, 일부 필드는에서 자동으로 채워집니다 합니다 *source.extension.vsixmanifest* 확장 프로그램에서 파일입니다. 아래 각에 대 한 자세한 세부 정보를 찾습니다.
 
     * **내부 이름** 확장의 세부 정보 페이지의 URL에 사용 됩니다. 예를 들어 게시자 이름 "myname"에서 확장을 게시 하 고 "my 확장" 하 고 내부 이름을 지정 결과의 URL에 "marketplace.visualstudio\.com/items?itemName=myname.myextension" 확장의 세부 정보 페이지입니다.
-    
+
     * **표시 이름** 확장 합니다. 이 이름은에서 자동으로 채워진 합니다 *source.extension.vsixmanifest* 파일입니다.
-   
+
     * **버전** 업로드 하는 확장의 번호입니다. 이 버전에서 자동으로 채워진은 *source.extension.vsixmanifest* 파일입니다.
-    
+
     * **VSIX ID** 확장 프로그램에 대해 Visual Studio를 사용 하는 고유 식별자입니다. 에 확장명이 자동으로 업데이트 하려는 경우이 식별자가 필요 합니다. 이 식별자는에서 자동으로 채워진 합니다 *source.extension.vsixmanifest* 파일입니다.
-    
-   * **로고** 확장 프로그램에 사용 되는 합니다. 이 로고는에서 자동으로 채워진 합니다 *source.extension.vsixmanifest* 파일 제공 된 경우.
-    
-     * **간단한 설명** 확장을 수행 합니다. 이 설명에서 자동으로 채워진은 *source.extension.vsixmanifest* 파일입니다.
-    
-     * **개요** 스크린샷 및 확장 프로그램의 용도 대 한 자세한 정보를 포함 하는 것이 좋습니다.
-    
-     * **지원 되는 Visual Studio 버전** 어떤 버전의 Visual Studio 확장에 작동을 선택할 수 있습니다. 확장 프로그램은 해당 버전에만 설치 됩니다.
-    
-     * * * 지원 되는 Visual Studio 버전의 확장 프로그램에서 작동 하는 Visual Studio 버전을 선택할 수 있습니다. 확장 프로그램은 해당 버전에만 설치 됩니다.
-    
-     * **형식**. 확장의 가장 일반적인 유형이 **도구**합니다.
-    
-     * **범주**합니다. 적합 한 확장 된 최대 3 개를 선택 합니다.
-    
-     * **태그** 도움이 되는 키워드에 확장을 찾이 됩니다. 태그는 Marketplace의 확장 검색 관련성을 높일 수 있습니다.
-    
-     * **가격 책정 범주** 비용 확장 프로그램입니다.
-    
-     * **소스 코드 리포지토리에** 커뮤니티를 사용 하 여 소스 코드에 대 한 링크를 공유할 수 있습니다.
-    
-     * **확장 프로그램에 대 한 q&a 허용** 확장 항목 페이지에서 질문을 유지 하는 사용자가 수 있습니다.
+
+    * **로고** 확장 프로그램에 사용 되는 합니다. 이 로고는에서 자동으로 채워진 합니다 *source.extension.vsixmanifest* 파일 제공 된 경우.
+
+    * **간단한 설명** 확장을 수행 합니다. 이 설명에서 자동으로 채워진은 *source.extension.vsixmanifest* 파일입니다.
+
+    * **개요** 스크린샷 및 확장 프로그램의 용도 대 한 자세한 정보를 포함 하는 것이 좋습니다.
+
+    * **지원 되는 Visual Studio 버전** 어떤 버전의 Visual Studio 확장에 작동을 선택할 수 있습니다. 확장 프로그램은 해당 버전에만 설치 됩니다.
+
+    * * * 지원 되는 Visual Studio 버전의 확장 프로그램에서 작동 하는 Visual Studio 버전을 선택할 수 있습니다. 확장 프로그램은 해당 버전에만 설치 됩니다.
+
+    * **형식**. 확장의 가장 일반적인 유형이 **도구**합니다.
+
+    * **범주**합니다. 적합 한 확장 된 최대 3 개를 선택 합니다.
+
+    * **태그** 도움이 되는 키워드에 확장을 찾이 됩니다. 태그는 Marketplace의 확장 검색 관련성을 높일 수 있습니다.
+
+    * **가격 책정 범주** 비용 확장 프로그램입니다.
+
+    * **소스 코드 리포지토리에** 커뮤니티를 사용 하 여 소스 코드에 대 한 링크를 공유할 수 있습니다.
+
+    * **확장 프로그램에 대 한 q&a 허용** 확장 항목 페이지에서 질문을 유지 하는 사용자가 수 있습니다.
 
 9. 클릭 **저장 및 업로드**합니다. 게시자에 다시이 옵션은 페이지를 관리 합니다. 확장 프로그램에 아직 등록 되지 않았습니다. 확장 프로그램을 게시 하려면 마우스 오른쪽 단추로 클릭 선택한 서버 확장 **공개**합니다. 확장 프로그램 모양을 같은 Marketplace에서 선택 하 여 볼 수 있습니다 **확장 보기**합니다. 취득 숫자, 클릭 **보고서**합니다. 확장 프로그램을 변경 하려면 클릭 **편집**합니다.
 
@@ -121,13 +121,13 @@ Marketplace는 게시자 계정을 관리 하 고 액세스할 추가 사용자 
 3. 추가 하 고 적절 한 수준의 액세스를 부여 하려는 사용자의 이메일 주소를 지정할 수 있습니다 **역할 선택**합니다.  다음 옵션 중에서 선택할 수 있습니다.
 
    * **작성자**: 사용자 확장을 게시할 수 있지만 볼 하거나 다른 사용자가 게시 된 확장을 관리 수 없습니다.
-  
+
    * **판독기**: 사용자 확장을 볼 수 있지만 게시 하거나 확장을 관리할 수 없습니다.
-  
+
    * **참가자**: 사용자 게시 및 확장을 관리 하지만 수 없습니다. 게시자 설정을 편집 하거나 관리할 수 액세스 합니다.
-  
+
    * **소유자**: 사용자 수 게시 및 확장 관리, 게시자 설정을 편집 하 고 액세스 관리.
-  
+
 ## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Visual Studio Marketplace에서 확장을 설치 합니다.
 
 확장을 게시 했으므로 Visual Studio에서 설치 하 고 테스트 합니다.

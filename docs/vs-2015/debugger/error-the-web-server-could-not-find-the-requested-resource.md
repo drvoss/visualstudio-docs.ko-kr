@@ -1,14 +1,9 @@
 ---
-title: '오류: 웹 서버를 찾을 수 없습니다 요청된 된 리소스 | Microsoft Docs'
-ms.custom: ''
+title: '오류: 웹 서버에서 요청된 된 리소스를 찾을 수 없습니다 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - FSharp
 - VB
@@ -20,15 +15,15 @@ ms.assetid: 1ceeaf30-918c-42bb-ace1-96944530fef3
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f490006d21f51f48cd8b2d97da262015ab170f39
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b3904a9fcb2e15190018dbc4caabe925690e023f
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51808299"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263703"
 ---
-# <a name="error-the-web-server-could-not-find-the-requested-resource"></a>오류: 요청한 리소스를 웹 서버에서 찾지 못했습니다.
+# <a name="error-the-web-server-could-not-find-the-requested-resource"></a>오류: 웹 서버에서 요청한 리소스를 찾을 수 없습니다
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 보안 고려 사항 때문에 IIS에서 일반 오류를 반환했습니다.  
@@ -37,11 +32,8 @@ ms.locfileid: "51808299"
   
  이 오류의 가능한 원인은 매우 다양합니다. 가장 일반적인 원인 중 몇 가지는 IIS 설치 또는 구성 문제, 웹 사이트 구성 문제 또는 파일 시스템의 사용 권한 문제입니다. 브라우저를 사용하여 리소스에 액세스할 수 있습니다. IIS가 구성된 방식에 따라 자세한 오류 메시지를 얻으려면 서버에서 로컬 브라우저를 사용하거나 IIS 오류 로그를 검사해야 할 수 있습니다.  
   
- IIS 문제 해결에 대 한 자세한 내용은 참조 하세요. [IIS Management and Administration](http://go.microsoft.com/fwlink/?LinkId=255872)합니다.  
+ IIS 문제 해결에 대한 자세한 내용은 [IIS 관리](http://go.microsoft.com/fwlink/?LinkId=255872)를 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
- [UrlScan 보안 도구](http://www.microsoft.com/technet/security/tools/urlscan.mspx)   
+ [UrlScan 보안 도구](/iis/extensions/working-with-urlscan/urlscan-3-reference)   
  [오류: 웹 서버가 잠겨 있기 때문에 디버깅을 사용하기 위해 필요한 DEBUG 동사를 사용할 수 없습니다.](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
-
-
-

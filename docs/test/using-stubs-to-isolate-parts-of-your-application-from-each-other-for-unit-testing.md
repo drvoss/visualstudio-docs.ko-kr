@@ -1,25 +1,23 @@
 ---
-title: 스텁을 사용하여 단위 테스트를 위한 애플리케이션 부분 격리
+title: 스텁을 사용하여 테스트를 위한 앱 부분 격리
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 2bf3441deef786a210b970fe9daaa7b30388d46e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b88905df0c99eb66c64e529610d6713801fceece
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065534"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401720"
 ---
-# <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>스텁을 사용하여 단위 테스트를 위한 응용 프로그램의 여러 부분을 서로 격리
+# <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>스텁을 사용하여 단위 테스트를 위한 애플리케이션의 여러 부분을 서로 격리
 
 *스텁 유형*은 테스트하는 구성 요소를 이러한 구성 요소가 호출하는 다른 구성 요소에서 쉽게 격리할 수 있도록 Microsoft Fakes 프레임워크에서 제공하는 두 가지 기술 중 하나입니다. 스텁은 테스트 중 다른 구성 요소의 자리를 차지하는 작은 코드입니다. 스텁을 사용하는 이점은 일관적 결과를 반환하기 때문에 테스트를 더 쉽게 작성할 수 있다는 점입니다. 또한 아직 다른 구성 요소가 작동하지 않을 경우에도 테스트를 실행할 수 있습니다.
 
@@ -31,13 +29,13 @@ Fakes의 개요 및 빠른 시작 가이드를 보려면 [Microsoft Fakes를 사
 
 ![Real 및 Stub 클래스는 하나의 인터페이스를 따릅니다.](../test/media/fakesinterfaces.png)
 
-스텁은 사용자가 이러한 방식으로 코드를 구성할 수 있어야 사용 가능하므로 일반적으로 응용 프로그램의 다른 부분에서 한 부분을 격리하는 데 사용합니다. *System.dll*과 같이 사용자가 제어하지 않는 다른 어셈블리에서 일부를 격리하려면 일반적으로 shim을 사용합니다. [shim을 사용하여 단위 테스트를 위한 다른 어셈블리에서 응용 프로그램 격리](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)를 참조하세요.
+스텁은 사용자가 이러한 방식으로 코드를 구성할 수 있어야 사용 가능하므로 일반적으로 애플리케이션의 다른 부분에서 한 부분을 격리하는 데 사용합니다. *System.dll*과 같이 사용자가 제어하지 않는 다른 어셈블리에서 일부를 격리하려면 일반적으로 shim을 사용합니다. [shim을 사용하여 단위 테스트를 위한 다른 어셈블리에서 애플리케이션 격리](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)를 참조하세요.
 
 ## <a name="how-to-use-stubs"></a>스텁 사용 방법
 
 ### <a name="design-for-dependency-injection"></a>종속성 주입을 위한 디자인
 
-스텁을 사용하려면 다른 구성 요소가 서로 종속되지 않도록 하고 인터페이스 정의에만 종속되도록 응용 프로그램을 설계해야 합니다. 구성 요소는 컴파일 타임에 결합되지 않고, 런타임에 연결됩니다. 이러한 패턴에서는 변경 내용이 구성 요소 경계를 넘어 전파되지 않으므로 견고하고 업데이트가 간편한 소프트웨어를 만들 수 있습니다. 스텁을 사용하지 않는 경우에도 다음을 권장합니다. 새 코드를 작성하는 경우 [종속성 삽입](http://en.wikipedia.org/wiki/Dependency_injection) 패턴을 따르는 것이 쉽습니다. 기존 소프트웨어에 대한 테스트를 작성하는 경우 리팩터링해야 할 수 있습니다. 실무적으로 어려운 경우에는 대신 shim을 사용해 보세요.
+스텁을 사용하려면 다른 구성 요소가 서로 종속되지 않도록 하고 인터페이스 정의에만 종속되도록 애플리케이션을 설계해야 합니다. 구성 요소는 컴파일 타임에 결합되지 않고, 런타임에 연결됩니다. 이러한 패턴에서는 변경 내용이 구성 요소 경계를 넘어 전파되지 않으므로 견고하고 업데이트가 간편한 소프트웨어를 만들 수 있습니다. 스텁을 사용하지 않는 경우에도 다음을 권장합니다. 새 코드를 작성하는 경우 [종속성 삽입](http://en.wikipedia.org/wiki/Dependency_injection) 패턴을 따르는 것이 쉽습니다. 기존 소프트웨어에 대한 테스트를 작성하는 경우 리팩터링해야 할 수 있습니다. 실무적으로 어려운 경우에는 대신 shim을 사용해 보세요.
 
 다이어그램의 흥미로운 예제로 이 토론을 시작하겠습니다. StockAnalyzer 클래스는 주식 가격을 읽고 몇 가지 흥미로운 결과를 생성합니다. 여기에는 우리가 테스트하려는 몇 가지 공용 메서드가 있습니다. 간단히 특정 주식의 현재 가격만 보고하는 간단한 메서드만 살펴보겠습니다. 이 메서드의 단위 테스트를 작성하려고 합니다. 다음은 테스트의 첫 번째 초안입니다.
 
@@ -86,7 +84,7 @@ End Function
 
 이 상태에서는 StockFeed 클래스에 대한 작업이 아직 완료되지 않았기 때문에 이 메서드가 컴파일되지 않거나 예외를 throw할 수 있습니다. 인터페이스 삽입은 이러한 문제를 모두 해결합니다. 인터페이스 삽입은 다음과 같은 규칙을 적용합니다.
 
-응용 프로그램의 구성 요소 코드는 선언 또는 `new` 문에서 다른 구성 요소의 클래스를 명시적으로 참조하면 안 됩니다. 대신, 변수 및 매개 변수는 인터페이스를 사용하여 선언해야 합니다. 구성 요소 인스턴스는 구성 요소 컨테이너로만 만들 수 있습니다.
+애플리케이션의 구성 요소 코드는 선언 또는 `new` 문에서 다른 구성 요소의 클래스를 명시적으로 참조하면 안 됩니다. 대신, 변수 및 매개 변수는 인터페이스를 사용하여 선언해야 합니다. 구성 요소 인스턴스는 구성 요소 컨테이너로만 만들 수 있습니다.
 
 - “구성 요소”란 함께 개발하고 업데이트하는 클래스 또는 클래스의 그룹을 의미합니다. 일반적으로 구성 요소는 Visual Studio 프로젝트의 코드입니다. 한 구성 요소 안에 있는 클래스는 동시에 업데이트되므로 결합을 해제하는 것은 그보다 중요하지 않습니다.
 
@@ -131,7 +129,7 @@ Public Class StockAnalyzer
 End Class
 ```
 
-이 예제에서 StockAnalyzer는 생성될 때 IStockFeed의 구현으로 전달됩니다. 완성된 응용 프로그램에서 초기화 코드는 연결을 수행합니다.
+이 예제에서 StockAnalyzer는 생성될 때 IStockFeed의 구현으로 전달됩니다. 완성된 애플리케이션에서 초기화 코드는 연결을 수행합니다.
 
 ```csharp
 analyzer = new StockAnalyzer(new StockFeed());
@@ -141,7 +139,7 @@ analyzer = new StockAnalyzer(new StockFeed());
 
 ### <a name="generate-stubs"></a>스텁 생성
 
-테스트하려는 클래스를 이 클래스가 사용하는 다른 구성 요소에서 분리했습니다. 분리하면 응용 프로그램을 더 견고하고 유연하게 만들 수 있을 뿐만 아니라, 테스트 중인 구성 요소를 테스트 목적용 인터페이스의 스텁 구현에 연결할 수 있습니다.
+테스트하려는 클래스를 이 클래스가 사용하는 다른 구성 요소에서 분리했습니다. 분리하면 애플리케이션을 더 견고하고 유연하게 만들 수 있을 뿐만 아니라, 테스트 중인 구성 요소를 테스트 목적용 인터페이스의 스텁 구현에 연결할 수 있습니다.
 
 스텁을 일반적인 방법으로 클래스로 간단하게 작성할 수 있습니다. 하지만 Microsoft Fakes는 모든 테스트에 가장 적절한 스텁을 만들 수 있는 더욱 동적인 방법을 제공합니다.
 
@@ -230,9 +228,9 @@ class TestMyComponent
     public void TestVariableContosoPrice()
     {
         // Arrange:
-        int priceToReturn;
-        string companyCodeUsed;
-        var componentUnderTest = new StockAnalyzer(new StubIStockFeed()
+        int priceToReturn = 345;
+        string companyCodeUsed = "";
+        var componentUnderTest = new StockAnalyzer(new StockAnalysis.Fakes.StubIStockFeed()
             {
                GetSharePriceString = (company) =>
                   {
@@ -242,8 +240,6 @@ class TestMyComponent
                      return priceToReturn;
                   };
             };
-        // Set the value that will be returned by the stub:
-        priceToReturn = 345;
 
         // Act:
         int actualResult = componentUnderTest.GetContosoPrice();
@@ -265,7 +261,7 @@ Class TestMyComponent
     <TestMethod()> _
     Public Sub TestVariableContosoPrice()
         ' Arrange:
-        Dim priceToReturn As Integer
+        Dim priceToReturn As Integer = 345
         Dim companyCodeUsed As String = ""
         Dim stockFeed As New StockAnalysis.Fakes.StubIStockFeed()
         With stockFeed
@@ -280,8 +276,6 @@ Class TestMyComponent
         End With
         ' Create an object to test:
         Dim componentUnderTest As New StockAnalyzer(stockFeed)
-        ' Set the value that will be returned by the stub:
-        priceToReturn = 345
 
         ' Act:
         Dim actualResult As Integer = componentUnderTest.GetContosoPrice()
@@ -410,7 +404,7 @@ public void TestGetValue()
     }
 ```
 
-이 클래스에서 생성한 스텁에서, DoAbstract() 및 DoVirtual()에 대한 대리자를 설정할 수 있지만 DoConcrete()에 대한 대리자는 설정할 수 없습니다.
+이 클래스에서 생성한 스텁에서 `DoAbstract()` 및 `DoVirtual()`에 대한 대리자 메서드를 설정할 수 있지만 `DoConcrete()`에 대한 대리자 메서드는 설정할 수 없습니다.
 
 ```csharp
 // unit test
@@ -439,9 +433,9 @@ Assert.AreEqual(43,stub.DoVirtual(1));
 
 ## <a name="stub-limitations"></a>스텁 제한
 
-1. 포인터가 포함된 메서드 시그니처는 지원되지 않습니다.
+- 포인터가 포함된 메서드 시그니처는 지원되지 않습니다.
 
-2. 스텁 형식은 가상 메서드 디스패치에 의존하므로 봉인 클래스 또는 정적 메서드는 스텁할 수 없습니다. 이러한 경우 [shim을 사용하여 유닛 테스트를 위한 다른 어셈블리에서 응용 프로그램 격리](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)에서 설명한 대로 shim 형식을 사용합니다.
+- 스텁 형식은 가상 메서드 디스패치에 의존하므로 봉인 클래스 또는 정적 메서드는 스텁할 수 없습니다. 이러한 경우 [shim을 사용하여 유닛 테스트를 위한 다른 어셈블리에서 애플리케이션 격리](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)에서 설명한 대로 shim 형식을 사용합니다.
 
 ## <a name="change-the-default-behavior-of-stubs"></a>스텁의 기본 동작 변경
 

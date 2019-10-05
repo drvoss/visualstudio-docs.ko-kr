@@ -1,14 +1,9 @@
 ---
 title: 클래스 다이어그램 및 클래스 세부 내용 창의 키보드 및 마우스 바로 가기(클래스 디자이너) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdetails.window
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: c12d8dac-9902-4fde-b721-2a8116da53b7
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f607046609208804f349eb06e927ab8e72e28992
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 861ce1cf40dd5c56c043399387ef51fa3b4efee2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412253"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>클래스 다이어그램 및 클래스 세부 내용 창의 키보드 및 마우스 바로 가기(클래스 디자이너)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,15 +28,15 @@ ms.locfileid: "49247912"
   
  **항목 내용**  
   
--   [클래스 디자이너에서 마우스 사용](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDesigner)  
+- [클래스 디자이너에서 마우스 사용](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDesigner)  
   
--   [클래스 세부 내용 창에서 마우스 사용](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)  
+- [클래스 세부 내용 창에서 마우스 사용](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)  
   
--   [클래스 디자이너에서 키보드 사용](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDesigner)  
+- [클래스 디자이너에서 키보드 사용](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDesigner)  
   
--   [클래스 세부 내용 창에서 키보드 사용](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)  
+- [클래스 세부 내용 창에서 키보드 사용](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)  
   
-##  <a name="MouseClassDesigner"></a> 클래스 디자이너에서 마우스 사용  
+## <a name="MouseClassDesigner"></a> 클래스 디자이너에서 마우스 사용  
  클래스 다이어그램에서는 다음과 같은 마우스 동작이 지원됩니다.  
   
 |마우스 조합|컨텍스트|설명|  
@@ -54,23 +49,23 @@ ms.locfileid: "49247912"
 |Ctrl+마우스 휠|클래스 다이어그램|확대/축소합니다.|  
 |Ctrl+Shift+클릭|클래스 다이어그램|확대/축소합니다.|  
   
-##  <a name="MouseClassDetails"></a> 클래스 세부 내용 창에서 마우스 사용  
+## <a name="MouseClassDetails"></a> 클래스 세부 내용 창에서 마우스 사용  
  마우스를 사용하여 클래스 세부 내용 창 및 창에 표시되는 데이터의 모양을 다음과 같은 방법으로 변경할 수 있습니다.  
   
--   편집 가능한 셀을 클릭하면 해당 셀의 내용을 편집할 수 있습니다. 속성 창과 소스 코드를 포함하여 데이터가 저장되어 있거나 표시되는 모든 위치에서 변경 내용이 반영됩니다.  
+- 편집 가능한 셀을 클릭하면 해당 셀의 내용을 편집할 수 있습니다. 속성 창과 소스 코드를 포함하여 데이터가 저장되어 있거나 표시되는 모든 위치에서 변경 내용이 반영됩니다.  
   
--   행의 셀을 클릭하면 해당 행이 나타내는 요소의 속성이 속성 창에 표시됩니다.  
+- 행의 셀을 클릭하면 해당 행이 나타내는 요소의 속성이 속성 창에 표시됩니다.  
   
--   열 너비를 변경하려면 열이 원하는 너비가 될 때까지 열 머리글의 오른쪽 경계선을 끕니다.  
+- 열 너비를 변경하려면 열이 원하는 너비가 될 때까지 열 머리글의 오른쪽 경계선을 끕니다.  
   
--   행 왼쪽에 있는 화살표 기호를 클릭하여 구획 또는 속성 노드를 확장하거나 축소할 수 있습니다.  
+- 행 왼쪽에 있는 화살표 기호를 클릭하여 구획 또는 속성 노드를 확장하거나 축소할 수 있습니다.  
   
--   클래스 세부 내용 창에서는 현재 클래스에 새 멤버를 만들고 클래스 세부 내용 창 그리드에서 멤버 구획을 탐색하기 위한 여러 단추를 제공합니다. 자세한 내용은 클래스 세부 내용 창 단추를 참조하세요.  
+- 클래스 세부 내용 창에서는 현재 클래스에 새 멤버를 만들고 클래스 세부 내용 창 그리드에서 멤버 구획을 탐색하기 위한 여러 단추를 제공합니다. 자세한 내용은 클래스 세부 내용 창 단추를 참조하세요.  
   
-##  <a name="KeyboardClassDesigner"></a> 클래스 디자이너에서 키보드 사용  
+## <a name="KeyboardClassDesigner"></a> 클래스 디자이너에서 키보드 사용  
  클래스 다이어그램에서는 다음과 같은 키보드 동작이 지원됩니다.  
   
-|Key|컨텍스트|설명|  
+|키|컨텍스트|설명|  
 |---------|-------------|-----------------|  
 |화살표 키|내부 형식 모양|모양 내용에 대한 트리 스타일 탐색(모양을 둘러싼 래핑이 지원됨) 왼쪽 및 오른쪽 키는 확장 가능한 경우 현재 항목을 확장/축소하고, 그렇지 않은 경우 부모로 이동합니다(자세한 동작은 트리 뷰 탐색 참조).|  
 ||최상위 모양|다이어그램에서 모양 이동|  
@@ -94,10 +89,10 @@ ms.locfileid: "49247912"
 |Shift+Tab|모든 컨텍스트|동일한 부모 내의 이전 자식으로 이동합니다(래핑 지원).|  
 |스페이스바|모든 컨텍스트|현재 요소에 대한 선택을 설정/해제합니다.|  
   
-##  <a name="KeyboardClassDetails"></a> 클래스 세부 내용 창에서 키보드 사용  
+## <a name="KeyboardClassDetails"></a> 클래스 세부 내용 창에서 키보드 사용  
   
 > [!NOTE]
->  다음 키 바인딩은 코드 입력 환경을 모방하기 위해 특별히 선택되었습니다.  
+> 다음 키 바인딩은 코드 입력 환경을 모방하기 위해 특별히 선택되었습니다.  
   
  다음 키를 사용하여 클래스 세부 내용 창을 탐색합니다.  
   
@@ -116,6 +111,3 @@ ms.locfileid: "49247912"
   
 ## <a name="see-also"></a>참고 항목  
  [형식 멤버 만들기 및 구성(클래스 디자이너)](../ide/creating-and-configuring-type-members-class-designer.md)
-
-
-

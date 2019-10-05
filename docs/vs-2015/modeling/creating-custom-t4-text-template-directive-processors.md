@@ -1,25 +1,22 @@
 ---
 title: 사용자 지정 T4 텍스트 템플릿 지시문 프로세서 만들기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 ms.assetid: 422b47af-5441-4b02-b5ad-1b8b328457e3
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0defae5127b3443eb30f02558fd1acf545651e3e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ccf7c3565925eb3fe55fe500a127c666515fb41a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159050"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>사용자 지정 T4 텍스트 템플릿 지시문 프로세서 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +42,9 @@ ms.locfileid: "49852747"
   
  사용자 지정 지시문 프로세서의 몇 가지 예는 다음과 같습니다.  
   
--   사용자 이름 및 암호를 매개 변수로 허용 하는 데이터베이스에서 데이터를 반환 하는 지시문 프로세서.  
+- 사용자 이름 및 암호를 매개 변수로 허용 하는 데이터베이스에서 데이터를 반환 하는 지시문 프로세서.  
   
--   매개 변수로 파일 이름을 허용 하는 파일을 열고 지시문 프로세서입니다.  
+- 매개 변수로 파일 이름을 허용 하는 파일을 열고 지시문 프로세서입니다.  
   
 ### <a name="principal-parts-of-a-custom-directive-processor"></a>사용자 지정 지시문 프로세서의 주요 부분  
  클래스에서 상속 되는 지시문 프로세서를 개발 하려면 만들어야 <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> 또는 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>합니다.  
@@ -74,6 +71,3 @@ ms.locfileid: "49852747"
   
  [연습: 사용자 지정 지시문 프로세서 만들기](../modeling/walkthrough-creating-a-custom-directive-processor.md)  
  사용자 지정 지시문 프로세서를 만드는 방법, 등록 하 고 지시문 프로세서를 테스트 하는 방법 및 HTML로 출력 파일의 형식을 지정 하는 방법을 설명 합니다.
-
-
-

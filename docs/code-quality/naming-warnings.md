@@ -1,7 +1,6 @@
 ---
 title: 이름 지정 경고
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.namingrules
@@ -12,18 +11,19 @@ helpviewer_keywords:
 ms.assetid: f97223ce-1d39-4134-81c9-fff2c75d979b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dac680369c8dc7025de26c83e2e680b2c5057f7d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 90bdc70a2de900d43831994aff72e25031241cc3
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845339"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715310"
 ---
 # <a name="naming-warnings"></a>이름 지정 경고
-이름 지정 경고에는.NET Framework 디자인 지침의 명명 규칙 준수를 지원합니다.
+
+이름 지정 경고.NET 디자인 지침의 명명 규칙 준수를 지원합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 
@@ -43,7 +43,7 @@ ms.locfileid: "53845339"
 |[CA1719: 매개 변수 이름은 멤버 이름과 일치 하지는](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)|매개 변수 이름 매개 변수의 의미를 나타내고 멤버 이름에는 멤버의 의미를 나타내야 합니다. 매개 변수와 멤버의 의미가 같게 디자인되는 경우는 드뭅니다. 매개 변수의 이름을 멤버 이름과 동일하게 지정하는 것은 비직관적이고 라이브러리 사용을 어렵게 만듭니다.|
 |[CA1701: 리소스 문자열 복합 단어에는 올바르게 표기를 사용 해야](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)|리소스 문자열의 각 단어는 대/소문자를 기반으로 하는 토큰으로 분할 됩니다. Microsoft 맞춤법 검사 라이브러리에서는 연속된 각 두 토큰의 조합을 검사합니다. 규칙 위반이 인식되면 단어에서 규칙 위반을 작성합니다.|
 |[CA1703: 리소스 문자열에는 정확한 철자를 사용 해야](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)|리소스 문자열에 Microsoft 맞춤법 검사 라이브러리에서 인식하지 못하는 단어가 하나 이상 있습니다.|
-|[CA1724: 형식 이름은 네임 스페이스 달라 야 합니다.](../code-quality/ca1724-type-names-should-not-match-namespaces.md)|형식 이름,.NET Framework 클래스 라이브러리에 정의 된 네임 스페이스의 이름을 일치 하지 해야 합니다. 이 규칙 위반 라이브러리의 사용 가능성을 줄일 수 있습니다.|
+|[CA1724: 형식 이름은 네임 스페이스 달라 야 합니다.](../code-quality/ca1724-type-names-should-not-match-namespaces.md)|형식 이름.NET 네임 스페이스의 이름과 일치 하지 해야 합니다. 이 규칙 위반 라이브러리의 사용 가능성을 줄일 수 있습니다.|
 |[CA1707: 식별자에는 밑줄 없어야 합니다.](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)|규칙에 따라 식별자 이름에는 밑줄 문자(_)가 포함될 수 없습니다. 이 규칙에서는 네임스페이스, 형식, 멤버 및 매개 변수를 검사합니다.|
 |[CA1721: 속성 이름은 get 메서드와 달라 야 합니다.](../code-quality/ca1721-property-names-should-not-match-get-methods.md)|public 또는 protected 멤버의 이름이 "Get"으로 시작하며 이름의 나머지 부분이 public 또는 protected 속성의 이름과 같습니다. "Get" 메서드와 속성은 서로가 분명히 구분되는 이름을 사용해야 합니다.|
 |[CA1716: 식별자는 키워드와 일치](../code-quality/ca1716-identifiers-should-not-match-keywords.md)|네임스페이스 이름 또는 형식 이름이 프로그래밍 언어의 예약된 키워드와 일치합니다. 네임스페이스 및 형식에 대한 식별자는 공용 언어 런타임을 대상으로 하는 언어에서 정의된 키워드와 일치하면 안 됩니다.|

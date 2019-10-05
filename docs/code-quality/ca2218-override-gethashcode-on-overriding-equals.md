@@ -1,7 +1,6 @@
 ---
 title: 'CA2218: Equals를 재정할 때 GetHashCode를 재정의하세요.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2218
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 69b020cd-29e8-45a6-952e-32cf3ce2e21d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c57ebb8f808ba98acb673ad3fbbc3ba78bcdc3ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8699e3434dc9c4cf9d3eccc37916c20ff7f34015
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860873"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231194"
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: Equals를 재정할 때 GetHashCode를 재정의하세요.
 
@@ -29,13 +28,13 @@ ms.locfileid: "53860873"
 |TypeName|OverrideGetHashCodeOnOverridingEquals|
 |CheckId|CA2218|
 |범주|Microsoft.Usage|
-|변경 수준|주요 변경 아님|
+|주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
- Public 형식이 재정의 <xref:System.Object.Equals%2A?displayProperty=fullName> 를 재정의 하지 않습니다 하지만 <xref:System.Object.GetHashCode%2A?displayProperty=fullName>합니다.
+Public 형식은를 재정의 <xref:System.Object.Equals%2A?displayProperty=fullName> 하지만는 재정의 <xref:System.Object.GetHashCode%2A?displayProperty=fullName>하지 않습니다.
 
 ## <a name="rule-description"></a>규칙 설명
- <xref:System.Object.GetHashCode%2A> 해시 알고리즘 및 해시 테이블과 같은 데이터 구조에 적합 하는 현재 인스턴스를 기반으로 값을 반환 합니다. 두 개체가 동일한 형식이 고 같은지 여부를 지정 하는 다음 형식의 인스턴스가 올바르게 작동 하도록 동일한 해시 코드를 반환 해야 합니다.
+ <xref:System.Object.GetHashCode%2A>해시 알고리즘 및 해시 테이블과 같은 데이터 구조에 적합 한 현재 인스턴스를 기반으로 값을 반환 합니다. 동일한 형식이 고 동일한 두 개체가 동일한 해시 코드를 반환 하 여 다음 형식의 인스턴스가 제대로 작동 하는지 확인 해야 합니다.
 
 - <xref:System.Collections.Hashtable?displayProperty=fullName>
 
@@ -53,52 +52,52 @@ ms.locfileid: "53860873"
 
 - <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>
 
-- 구현 하는 형식 <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
+- 을 구현 하는 형식<xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하는 구현을 제공할 <xref:System.Object.GetHashCode%2A>합니다. 같은 형식의 개체 쌍을 확인 해야 합니다는 구현 하는 경우 같은 값을 반환 하는 구현의 <xref:System.Object.Equals%2A> 반환 `true` 쌍을 찾습니다.
+이 규칙 위반 문제를 해결 하려면의 <xref:System.Object.GetHashCode%2A>구현을 제공 합니다. 형식이 같은 개체 쌍의 경우 구현에서 쌍에 대해를 <xref:System.Object.Equals%2A> 반환 `true` 하는 경우 구현이 같은 값을 반환 하는지 확인 해야 합니다.
 
-## <a name="when-to-suppress-warnings"></a>경고를 표시 하는 경우
- 이 규칙에서는 경고를 표시해야 합니다.
+## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
+이 규칙에서는 경고를 표시해야 합니다.
 
 ## <a name="class-example"></a>클래스 예제
 
 ### <a name="description"></a>설명
- 다음 예제에서는이 규칙을 위반 하는 클래스 (참조 형식)를 보여 줍니다.
+다음 예제에서는이 규칙을 위반 하는 클래스 (참조 형식)를 보여 줍니다.
 
 ### <a name="code"></a>코드
- [!code-csharp[FxCop.Usage.GetHashCodeErrorClass#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_1.cs)]
+[!code-csharp[FxCop.Usage.GetHashCodeErrorClass#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_1.cs)]
 
-### <a name="comments"></a>설명
- 다음 예제에서는 재정의 하 여 위반 수정 <xref:System.Object.GetHashCode>합니다.
+### <a name="comments"></a>주석
+다음 예에서는를 재정의 <xref:System.Object.GetHashCode>하 여 위반을 수정 합니다.
 
 ### <a name="code"></a>코드
- [!code-csharp[FxCop.Usage.GetHashCodeFixedClass#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_2.cs)]
+[!code-csharp[FxCop.Usage.GetHashCodeFixedClass#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_2.cs)]
 
 ## <a name="structure-example"></a>구조 예제
 
 ### <a name="description"></a>설명
- 다음 예제에서는이 규칙을 위반 하는 구조체 (값 형식)를 보여 줍니다.
+다음 예제에서는이 규칙을 위반 하는 구조체 (값 형식)를 보여 줍니다.
 
 ### <a name="code"></a>코드
- [!code-csharp[FxCop.Usage.GetHashCodeErrorStruct#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_3.cs)]
+[!code-csharp[FxCop.Usage.GetHashCodeErrorStruct#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_3.cs)]
 
-### <a name="comments"></a>설명
- 다음 예제에서는 재정의 하 여 위반 수정 <xref:System.Object.GetHashCode>합니다.
+### <a name="comments"></a>주석
+다음 예에서는를 재정의 <xref:System.Object.GetHashCode>하 여 위반을 수정 합니다.
 
 ### <a name="code"></a>코드
- [!code-csharp[FxCop.Usage.GetHashCodeFixedStruct#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_4.cs)]
+[!code-csharp[FxCop.Usage.GetHashCodeFixedStruct#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_4.cs)]
 
-## <a name="related-rules"></a>관련된 규칙
- [CA1046: 참조 형식에 같음 연산자 오버 로드 하지 마십시오.](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+## <a name="related-rules"></a>관련 규칙
+[CA1046: 참조 형식에 같음 연산자를 오버 로드 하지 마십시오.](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2225: 연산자 오버 로드는 명명 된 대체](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
+[CA2225: 연산자 오버 로드에는 대체 이름이 있습니다.](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
 
- [CA2226: 연산자에는 대칭 오버 로드가 있어야 합니다.](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+[CA2226: 연산자에는 대칭 오버 로드가 있어야 합니다.](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2224: 같음 연산자를 오버 로드할 때 equals 재정의](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+[CA2224: 오버 로드 연산자 equals에 대 한 Override equals](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
- [CA2231: ValueType.Equals를 재정의할 때 같음 연산자를 오버로드하십시오.](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
+[CA2231: ValueType.Equals를 재정의할 때 같음 연산자를 오버로드하십시오.](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
 
 ## <a name="see-also"></a>참고 항목
 

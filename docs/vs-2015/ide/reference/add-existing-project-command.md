@@ -1,14 +1,9 @@
 ---
 title: 기존 프로젝트 추가 명령 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - file.addexistingproject
 helpviewer_keywords:
@@ -18,18 +13,17 @@ ms.assetid: 71cf3e31-c76b-405b-ad6a-1b1bc654bd40
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c881f32594ee6327dfba9792fa83bd2d092efcf9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4778efc4a50ceb63e72d4283644537345510e833
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194956"
 ---
 # <a name="add-existing-project-command"></a>기존 프로젝트 추가 명령
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 현재 솔루션에 기존 프로젝트를 추가합니다.  
   
 ## <a name="syntax"></a>구문  
@@ -49,7 +43,7 @@ File.AddExistingProject filename
 ## <a name="remarks"></a>설명  
  입력 시 자동 완성에서 올바른 경로와 파일 이름을 찾으려고 합니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  이 예제에서는 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 프로젝트인 TestProject1을 현재 솔루션에 추가합니다.  
   
 ```  
@@ -61,6 +55,3 @@ File.AddExistingProject filename
  [명령 창](../../ide/reference/command-window.md)   
  [찾기/명령 상자](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

@@ -1,25 +1,20 @@
 ---
 title: CodeLens에서 코드 변경 내용 및 기타 기록 찾기 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: f697d7b4-704e-4cac-b13a-bc57d2ff8318
 caps.latest.revision: 134
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: df4b435f791b066afda90ac9f5492a946d7e215c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 100cd424b60ce09db8c62c049b38f4c301ebe26f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825675"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704831"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens에서 코드 변경 내용 및 기타 기록 찾기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +22,7 @@ ms.locfileid: "49825675"
 코드에 대한 정보를 찾는 동안 편집기에서 나가지 않고 계속 작업에 집중할 수 있습니다. 코드 참조, 코드 변경 내용, 링크된 버그, 작업 항목, 코드 검토 및 단위 테스트를 확인할 수 있습니다.  
   
 > [!NOTE]
->  CodeLens는 Visual Studio Enterprise 및 Visual Studio Professional 버전에서만 사용할 수 있습니다. Visual Studio Community 버전에서는 사용할 수 없습니다.  
+> CodeLens는 Visual Studio Enterprise 및 Visual Studio Professional 버전에서만 사용할 수 있습니다. Visual Studio Community 버전에서는 사용할 수 없습니다.  
   
  솔루션에서 코드의 개별 부분을 사용하는 위치 및 방법 확인:  
   
@@ -39,7 +34,7 @@ ms.locfileid: "49825675"
   
  확인하려는 지표를 선택하거나 CodeLens를 설정 또는 해제하려면 **도구**, **옵션**, **텍스트 편집기**, **모든 언어**, **CodeLens**로 이동합니다.  
   
-##  <a name="FindReferences"></a> 코드에 대한 참조 찾기  
+## <a name="FindReferences"></a> 코드에 대한 참조 찾기  
  필요한 사항:  
   
 - Visual Studio Enterprise 또는 Visual Studio Professional  
@@ -60,7 +55,7 @@ ms.locfileid: "49825675"
   
   ![CodeLens &#45; 코드 맵의 참조](../ide/media/codelensmappedreferences.png "CodeLensMappedReferences")  
   
-##  <a name="FindCodeHistory"></a> 코드 기록 및 링크된 항목 찾기  
+## <a name="FindCodeHistory"></a> 코드 기록 및 링크된 항목 찾기  
  코드 기록을 검토하여 코드에 수행된 작업을 확인합니다. 또는 다른 분기의 변경 내용이 코드에 어떤 영향을 미칠 수 있는지 잘 파악할 수 있도록 변경 내용을 코드에 병합하기 전에 검토합니다.  
   
  필요한 사항:  
@@ -69,7 +64,7 @@ ms.locfileid: "49825675"
   
 - Team Foundation Server 2013 이상, Visual Studio Team Services 또는 Git  
   
-- 코드 편집기에서 팀에 연락하려는 경우[Lync 2010 이상 또는 비즈니스용 Skype](http://technet.microsoft.com/lync)  
+- 코드 편집기에서 팀에 연락하려는 경우[Lync 2010 이상 또는 비즈니스용 Skype](https://technet.microsoft.com/lync)  
   
   TFVC(Team Foundation 버전 제어) 또는 Git로 저장된 Visual C# .NET 또는 Visual Basic .NET 코드의 경우 클래스 및 메서드 수준에서 CodeLens 세부 정보를 가져옵니다(*code-element-level* 지표). Git 리포지토리가 TfGit에서 호스트되는 경우 TFS 작업 항목에 대한 링크도 가져올 수 있습니다.  
   
@@ -86,9 +81,9 @@ ms.locfileid: "49825675"
 ### <a name="find-changes-in-your-code"></a>코드에서 변경 내용 찾기  
  코드-요소-수준 지표에서 C# 또는 Visual Basic 코드를 변경한 사람 및 변경 내용을 찾습니다. Team Foundation Server 또는 Visual Studio Team Services에서 TFVC(Team Foundation 버전 제어)를 사용하는 경우에 표시됩니다.  
   
- ![CodeLens: TFVC에서 코드에 대한 변경 기록 가져오기](../ide/media/codelenscodechanges.png "CodeLensCodeChanges")  
+ ![CodeLens: TFVC에서 코드에 대 한 기록 변경 하는 가져오기](../ide/media/codelenscodechanges.png "CodeLensCodeChanges")  
   
- 기본 기간은 지난 12 개월입니다. 코드가 Team Foundation Server에 저장되는 경우 [TFSConfig 명령](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62) 을 [CodeIndex 명령](../ide/codeindex-command.md) 및 **/indexHistoryPeriod** 플래그와 함께 실행하여 변경할 수 있습니다.  
+ 기본 기간은 지난 12 개월입니다. 코드가 Team Foundation Server에 저장되는 경우 [TFSConfig 명령](https://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62) 을 [CodeIndex 명령](../ide/codeindex-command.md) 및 **/indexHistoryPeriod** 플래그와 함께 실행하여 변경할 수 있습니다.  
   
  1년 이상 전의 변경 내용을 포함하여 모든 변경 내용에 대한 자세한 기록을 보려면 **모든 파일 변경 내용 표시**를 선택합니다.  
   
@@ -100,7 +95,7 @@ ms.locfileid: "49825675"
   
  파일이 Git 리포지토리에 있고 코드-요소-수준 변경 지표를 선택하는 경우에 표시됩니다.  
   
- ![CodeLens: GIT에서 코드에 대한 변경 기록 가져오기](../ide/media/codelenscodechangesgit.png "CodeLensCodeChangesGit")  
+ ![CodeLens: Git에서 코드에 대 한 기록 변경 하는 가져오기](../ide/media/codelenscodechangesgit.png "CodeLensCodeChangesGit")  
   
  창 맨 아래의 파일-수준 지표에서 전체 파일(C# 및 Visual Basic 파일 제외)에 대한 변경 내용을 찾습니다.  
   
@@ -110,32 +105,32 @@ ms.locfileid: "49825675"
   
  시간별로 코드를 변경한 사용자를 확인할 수도 있습니다. 이는 팀의 변경 내용에서 패턴을 찾고 해당 영향을 평가하는 데 도움이 될 수 있습니다.  
   
- ![CodeLens: 코드 변경 내용 기록을 그래프로 보기](../ide/media/codelens.png "CodeLens")  
+ ![CodeLens: 코드 변경 내용 기록을 그래프로 참조](../ide/media/codelens.png "CodeLens")  
   
 #### <a name="find-changes-in-your-current-branch"></a>현재 분기에서 변경 내용 찾기  
  안정적인 코드를 깰 위험을 줄이기 위해 팀에 여러 분기(Main 분기 및 자식 개발 분기)가 있다고 가정합니다.  
   
- ![CodeLens: 코드가 분기된 시기 찾기](../ide/media/codelensfirstbranchconceptual.png "CodeLensFirstBranchConceptual")  
+ ![CodeLens: 코드가 분기 된 시기 찾기](../ide/media/codelensfirstbranchconceptual.png "CodeLensFirstBranchConceptual")  
   
  다음과 같이 Main 분기에서 코드를 변경한 사용자의 수 및 변경된 내용의 수를 찾습니다(**Alt+6**).  
   
- ![CodeLens: 자신의 분기에서의 변경 내용 수 찾기](../ide/media/codelensbranchchanges.png "CodeLensBranchChanges")  
+ ![CodeLens: 분기에서 변경 사항의 찾을](../ide/media/codelensbranchchanges.png "CodeLensBranchChanges")  
   
 #### <a name="find-when-your-code-was-branched"></a>코드가 분기된 시점 찾기  
  여기 예에서의 Dev 분기와 같은 자식 분기의 코드로 이동합니다. 다음과 같이 변경 지표(**Alt + 6**)를 선택합니다.  
   
- ![CodeLens: 코드가 분기된 시기 찾기](../ide/media/codelensfirstbranchscreenshot.png "CodeLensFirstBranchScreenshot")  
+ ![CodeLens: 코드가 분기 된 시기 찾기](../ide/media/codelensfirstbranchscreenshot.png "CodeLensFirstBranchScreenshot")  
   
 #### <a name="find-incoming-changes-from-other-branches"></a>다른 분기에서 들어오는 변경 내용 찾기  
- ![CodeLens: 다른 분기에서의 코드 변경 내용 찾기](../ide/media/codelensbranchchangecheckinconceptual.png "CodeLensBranchChangeCheckinConceptual")  
+ ![CodeLens: 다른 분기에서 코드 변경 내용 찾기](../ide/media/codelensbranchchangecheckinconceptual.png "CodeLensBranchChangeCheckinConceptual")  
   
  …다음 Dev 분기의 버그 수정과 같이 변경된 내용을 찾습니다.  
   
- ![CodeLens: 다른 분기로 체크 인된 변경 내용](../ide/media/codelensbranchchangedevscreenshot.png "CodeLensBranchChangeDevScreenshot")  
+ ![CodeLens: 다른 분기로 체크인 된 변경 내용](../ide/media/codelensbranchchangedevscreenshot.png "CodeLensBranchChangeDevScreenshot")  
   
  다음과 같이 현재 분기(Main)를 벗어나지 않고 변경 내용을 검토할 수 있습니다.  
   
- ![CodeLens: 다른 분기에서 들어온 변경 내용 확인인](../ide/media/codelensbranchchangemainscreenshot.png "CodeLensBranchChangeMainScreenshot")  
+ ![CodeLens: 다른 분기에서 들어온 변경 내용 확인](../ide/media/codelensbranchchangemainscreenshot.png "CodeLensBranchChangeMainScreenshot")  
   
 #### <a name="find-when-changes-got-merged"></a>변경 내용이 병합된 경우 찾기  
  따라서 분기에 포함된 변경 내용을 확인할 수 있습니다.  
@@ -155,14 +150,14 @@ ms.locfileid: "49825675"
   
 |**아이콘**|**변경 내용이 발생한 위치**|  
 |--------------|-----------------------------------------|  
-|![CodeLens: 현재 분기에서 변경 아이콘](../ide/media/codelensbranchcurrenticon.png "CodeLensBranchCurrentIcon")|현재 분기|  
+|![CodeLens: 현재 분기 아이콘에서 변경](../ide/media/codelensbranchcurrenticon.png "CodeLensBranchCurrentIcon")|현재 분기|  
 |![CodeLens &#45; 부모 분기에서 변경 아이콘](../ide/media/codelensbranchparenticon.png "CodeLensBranchParentIcon")|부모 분기|  
-|![CodeLens: 하위 분기에서 변경 아이콘](../ide/media/codelensbranchchildicon.png "CodeLensBranchChildIcon")|자식 분기|  
+|![CodeLens: 자식 분기 아이콘에서 변경](../ide/media/codelensbranchchildicon.png "CodeLensBranchChildIcon")|자식 분기|  
 |![CodeLens &#45; 피어 분기에서 변경 아이콘](../ide/media/codelensbranchpeericon.png "CodeLensBranchPeerIcon")|피어 분기|  
 |![CodeLens &#45; 더 먼 분기에서 변경 아이콘](../ide/media/codelensbranchfurtherawayicon.png "CodeLensBranchFurtherAwayIcon")|부모, 자식 또는 피어보다 더 먼 분기|  
-|![CodeLens: 상위에서 병합 아이콘](../ide/media/codelensbranchmergefromparenticon.png "CodeLensBranchMergeFromParentIcon")|부모 분기에서 자식 분기로 병합|  
-|![CodeLens: 하위 분기에서 병합 아이콘](../ide/media/codelensbranchmergefromchildicon.png "CodeLensBranchMergeFromChildIcon")|자식 분기에서 부모 분기로 병합|  
-|![CodeLens: 관련 없는 분기에서 병합 아이콘](../ide/media/codelensbranchmergefromunrelatedicon.png "CodeLensBranchMergeFromUnrelatedIcon")|관련 없는 분기에서 병합(기본 파일이 없는 병합)|  
+|![CodeLens: 상위에서에서 병합 아이콘](../ide/media/codelensbranchmergefromparenticon.png "CodeLensBranchMergeFromParentIcon")|부모 분기에서 자식 분기로 병합|  
+|![CodeLens: 자식 분기 아이콘에서 병합](../ide/media/codelensbranchmergefromchildicon.png "CodeLensBranchMergeFromChildIcon")|자식 분기에서 부모 분기로 병합|  
+|![CodeLens: 관련 없는 분기에서에서 병합 아이콘](../ide/media/codelensbranchmergefromunrelatedicon.png "CodeLensBranchMergeFromUnrelatedIcon")|관련 없는 분기에서 병합(기본 파일이 없는 병합)|  
   
 ### <a name="find-linked-work-items"></a>링크된 작업 항목 찾기  
  ![CodeLens &#45; 특정 코드에 대한 작업 항목 찾기](../ide/media/codelensworkitems.png "CodeLensWorkItems")  
@@ -180,39 +175,39 @@ ms.locfileid: "49825675"
   
  ![항목에 대한 연락처 옵션](../ide/media/codelensitemcontactmenu.png "CodeLensItemContactMenu")  
   
-##  <a name="FindRunUnitTests"></a> 코드에 대한 단위 테스트 찾기  
+## <a name="FindRunUnitTests"></a> 코드에 대한 단위 테스트 찾기  
  테스트 탐색기를 열지 않고 코드에 대한 단위 테스트 관련 추가 정보를 확인할 수 있습니다. 필요한 사항:  
   
--   Visual Studio Enterprise 또는 Visual Studio Professional  
+- Visual Studio Enterprise 또는 Visual Studio Professional  
   
--   Visual C# .NET 또는 Visual Basic .NET 코드  
+- Visual C# .NET 또는 Visual Basic .NET 코드  
   
--   응용 프로그램 코드에 대한 단위 테스트가 있는 [단위 테스트 프로젝트](../test/unit-test-your-code.md)  
+- 애플리케이션 코드에 대한 단위 테스트가 있는 [단위 테스트 프로젝트](../test/unit-test-your-code.md)  
   
-1.  단위 테스트가 있는 응용 프로그램 코드로 이동합니다.  
+1. 단위 테스트가 있는 애플리케이션 코드로 이동합니다.  
   
-2.  해당 코드에 대한 테스트를 검토합니다(**Alt+3**).  
+2. 해당 코드에 대한 테스트를 검토합니다(**Alt+3**).  
   
      ![CodeLens &#45; 코드 편집기에서 테스트 상태 선택](../ide/media/codelenschoosetestindicator.png "CodeLensChooseTestIndicator")  
   
-3.  ![CodeLens &#45; 아직 실행하지 않은 단위 테스트 경고](../ide/media/codelenstestwarningicon.png "CodeLensTestWarningIcon") 경고 아이콘이 표시되는 경우 테스트를 실행합니다.  
+3. ![CodeLens &#45; 아직 실행하지 않은 단위 테스트 경고](../ide/media/codelenstestwarningicon.png "CodeLensTestWarningIcon") 경고 아이콘이 표시되는 경우 테스트를 실행합니다.  
   
      ![CodeLens &#45; 아직 실행하지 않은 단위 테스트 보기](../ide/media/codelenstestsnotyetrun.png "CodeLensTestsNotYetRun")  
   
-4.  테스트의 정의를 검토하려면 CodeLens 표시기 창에서 테스트 항목을 두 번 클릭하여 편집기에서 코드 파일을 엽니다.  
+4. 테스트의 정의를 검토하려면 CodeLens 표시기 창에서 테스트 항목을 두 번 클릭하여 편집기에서 코드 파일을 엽니다.  
   
      ![CodeLens &#45; 단위 테스트 정의로 이동](../ide/media/codelensunittestdefinition.png "CodeLensUnitTestDefinition")  
   
-5.  테스트 결과를 검토합니다. 테스트 상태 지표(![CodeLens &#45; 단위 테스트 실패 아이콘](../ide/media/codelenstestfailedicon.png "CodeLensTestFailedIcon") 또는 ![CodeLens &#45; 단위 테스트 성공 아이콘](../ide/media/codelenstestpassedicon.png "CodeLensTestPassedIcon"))를 선택하거나 **Alt+1**을 누릅니다.  
+5. 테스트 결과를 검토합니다. 테스트 상태 지표(![CodeLens &#45; 단위 테스트 실패 아이콘](../ide/media/codelenstestfailedicon.png "CodeLensTestFailedIcon") 또는 ![CodeLens &#45; 단위 테스트 성공 아이콘](../ide/media/codelenstestpassedicon.png "CodeLensTestPassedIcon"))를 선택하거나 **Alt+1**을 누릅니다.  
   
      ![CodeLens &#45; 단위 테스트 결과 확인](../ide/media/codelensunittestresult.png "CodeLensUnitTestResult")  
   
-6.  이 테스트를 변경한 사용자와 그 수 또는 이 테스트에 대해 수행된 변경 작업 수를 확인하려면 [코드 기록 및 링크된 항목을 찾아보세요](#FindCodeHistory).  
+6. 이 테스트를 변경한 사용자와 그 수 또는 이 테스트에 대해 수행된 변경 작업 수를 확인하려면 [코드 기록 및 링크된 항목을 찾아보세요](#FindCodeHistory).  
   
-##  <a name="QA"></a> Q & A  
+## <a name="QA"></a> Q & A  
   
-###  <a name="ChangeOrTurnOff"></a> Q: CodeLens를 설정하거나 해제하려면 어떻게 하나요? 또는 확인할 지표는 어떻게 선택하나요?  
- **A:**  참조 지표를 제외하고, 지표를 설정하거나 해제할 수 있습니다. 그렇게 하려면 **도구**, **옵션**, **텍스트 편집기**, **모든 언어**, **CodeLens**로 이동합니다.  
+### <a name="ChangeOrTurnOff"></a> Q: 어떻게 켜는 CodeLens 설정 또는 해제? 또는 확인할 지표는 어떻게 선택하나요?  
+ **A:**  참조 지표를 제외하고 지표를 설정하거나 해제할 수 있습니다. 그렇게 하려면 **도구**, **옵션**, **텍스트 편집기**, **모든 언어**, **CodeLens**로 이동합니다.  
   
  지표가 설정되어 있으면 해당 지표에서 CodeLens 옵션을 열 수도 있습니다.  
   
@@ -222,22 +217,22 @@ ms.locfileid: "49825675"
   
  ![파일 수준 지표 설정 및 해제](../ide/media/codelensfilelevelonandoff.png "CodeLensFileLevelOnAndOff")  
   
-###  <a name="NoIndicators"></a> Q: CodeLens는 어디에 있나요?  
- **A:** CodeLens는 메서드, 클래스, 인덱서 및 속성 수준에서 Visual C# .NET 및 Visual Basic .NET 코드에 표시됩니다. CodeLens는 기타 모든 형식의 파일에 대해 파일 수준에서 표시됩니다.  
+### <a name="NoIndicators"></a> Q: CodeLens는 어디에 있나요?  
+ **A:** CodeLens 시각적 개체에 표시 됩니다 C# 메서드, 클래스, 인덱서 및 속성 수준에서.NET 및 Visual Basic.NET 코드입니다. CodeLens는 기타 모든 형식의 파일에 대해 파일 수준에서 표시됩니다.  
   
--   CodeLens가 설정되어 있는지 확인합니다. 그렇게 하려면 **도구**, **옵션**, **텍스트 편집기**, **모든 언어**, **CodeLens**로 이동합니다.  
+- CodeLens가 설정되어 있는지 확인합니다. 그렇게 하려면 **도구**, **옵션**, **텍스트 편집기**, **모든 언어**, **CodeLens**로 이동합니다.  
   
--   코드가 TFS에 저장되는 경우 [CodeIndex 명령](../ide/codeindex-command.md) 과 [TFS 구성 명령](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62)을 함께 사용하여 코드 인덱싱이 설정되어 있는지 확인합니다.  
+- 코드가 TFS에 저장되는 경우 [CodeIndex 명령](../ide/codeindex-command.md) 과 [TFS 구성 명령](https://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62)을 함께 사용하여 코드 인덱싱이 설정되어 있는지 확인합니다.  
   
--   TFS 관련 지표는 작업 항목이 코드와 링크되어 있는 경우 및 링크된 작업 항목을 열 권한이 있는 경우에만 나타납니다. [팀 멤버 권한이 있는지 확인합니다.](http://msdn.microsoft.com/en-us/f58805de-ba61-4d09-8f2d-d3ab9662ecfd)  
+- TFS 관련 지표는 작업 항목이 코드와 링크되어 있는 경우 및 링크된 작업 항목을 열 권한이 있는 경우에만 나타납니다. [팀 멤버 권한이 있는지 확인합니다.](/azure/devops/organizations/security/view-permissions)  
   
--   단위 테스트 지표는 응용 프로그램 코드에서 단위 테스트를 하지 않은 경우 나타나지 않습니다. 테스트 상태 지표는 테스트 프로젝트에 자동으로 나타납니다. 응용 프로그램 코드에 단위 테스트가 있지만 테스트 지표가 나타나지 않는 경우 솔루션 빌드를 시도하십시오(**Ctrl + Shift + B**).  
+- 단위 테스트 지표는 애플리케이션 코드에서 단위 테스트를 하지 않은 경우 나타나지 않습니다. 테스트 상태 지표는 테스트 프로젝트에 자동으로 나타납니다. 애플리케이션 코드에 단위 테스트가 있지만 테스트 지표가 나타나지 않는 경우 솔루션 빌드를 시도하십시오(**Ctrl + Shift + B**).  
   
 ### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>Q: 커밋에 대한 작업 항목 정보가 나타나지 않습니다.  
  **A:** CodeLens가 TFS의 작업 항목을 찾을 수 없기 때문에 이러한 현상이 발생할 수 있습니다. 작업 항목이 포함된 팀 프로젝트에 연결되어 있으며 해당 작업 항목을 볼 수 있는 권한이 있는지 확인하세요. 커밋 설명에 TFS의 작업 항목 ID에 대한 잘못된 정보가 포함된 경우에도 이러한 현상이 발생할 수 있습니다.  
   
-###  <a name="NoLync"></a> Q: Lync 또는 Skype 지표가 표시되지 않은 이유는 무엇인가요?  
- **A:** Lync 또는 비즈니스용 Skype에 로그인하지 않았거나, 이들 중 하나를 설치하지 않았거나, 지원되는 구성이 없을 경우 지표가 표시되지 않습니다. 하지만 메일을 보낼 수 있습니다.  
+### <a name="NoLync"></a> Q: Lync 또는 Skype 지표가 보이지 이유  
+ **A:** Lync 또는 비즈니스용 Skype에 로그인 하지 않은, 이들이 설치 되어 중 하나 또는 지원 되는 구성이 없는 경우 나타나지 않습니다. 하지만 메일을 보낼 수 있습니다.  
   
  ![CodeLens &#45; 변경 집합 소유자에게 메일로 문의](../ide/media/codelenscodesendmailchangesetnolync1.png "CodeLensCodeSendMailChangesetNoLync1")  
   
@@ -250,22 +245,22 @@ ms.locfileid: "49825675"
   CodeLens는 다른 버전의 Lync 또는 Skype가 설치되는 것을 지원하지 않습니다. 다른 버전의 Lync 또는 Skype는 Visual Studio의 모든 지역화된 버전에 지역화되지 않을 수 있습니다.  
   
 ### <a name="q-how-do-i-change-the-font-and-color-for-codelens"></a>Q: CodeLens의 글꼴과 색을 변경하려면 어떻게 해야 하나요?  
- **A:** **도구**, **옵션**, **환경**, **글꼴 및 색**으로 이동합니다.  
+ **A:** 로 이동 **도구**, **옵션**합니다 **환경**를 **글꼴 및 색**합니다.  
   
  ![CodeLens &#45; 글꼴 및 색 설정 변경](../ide/media/codelensoptionsfontscolorssettings.png "CodeLensOptionsFontsColorsSettings")  
   
  키보드를 사용하려면  
   
-1.  **Alt + T + O** 를 눌러 **옵션** 상자를 엽니다.  
+1. **Alt + T + O** 를 눌러 **옵션** 상자를 엽니다.  
   
-2.  **위쪽 화살표** 또는 **아래쪽 화살표** 를 눌러 **환경** 노드로 이동한 다음 **왼쪽 화살표** 를 눌러 노드를 확장합니다.  
+2. **위쪽 화살표** 또는 **아래쪽 화살표** 를 눌러 **환경** 노드로 이동한 다음 **왼쪽 화살표** 를 눌러 노드를 확장합니다.  
   
-3.  **아래쪽 화살표** 를 눌러 **글꼴 및 색**으로 이동합니다.  
+3. **아래쪽 화살표** 를 눌러 **글꼴 및 색**으로 이동합니다.  
   
-4.  **Tab** 을 눌러 **설정 표시** 목록으로 이동한 다음 **아래쪽 화살표** 를 눌러 **CodeLens**를 선택합니다.  
+4. **Tab** 을 눌러 **설정 표시** 목록으로 이동한 다음 **아래쪽 화살표** 를 눌러 **CodeLens**를 선택합니다.  
   
 ### <a name="q-can-i-move-the-codelens-heads-up-display"></a>Q: CodeLens 헤드업 표시를 이동할 수 있습니까?  
- **A:** 예, ![CodeLens &#45; 창으로 도킹](../ide/media/codelensdockwindow.png "CodeLensDockWindow")을 선택하여 CodeLens를 창으로 도킹합니다.  
+ **A:** 예, 선택 ![CodeLens &#45; 창으로 도킹](../ide/media/codelensdockwindow.png "CodeLensDockWindow") CodeLens를 창으로 도킹 합니다.  
   
  ![CodeLens 지표 창 도킹](../ide/media/codelensselectdockwindow.png "CodeLensSelectDockWindow")  
   
@@ -274,22 +269,18 @@ ms.locfileid: "49825675"
 ### <a name="q-how-do-i-refresh-the-indicators"></a>Q: 지표를 새로 고치려면 어떻게 합니까?  
  **A:** 지표에 따라 다릅니다.  
   
--   **참조**: 이 지표는 코드가 변경될 때 자동으로 업데이트됩니다. 이 지표를 별도 창으로 도킹한 경우 이 지표를 여기에서 수동으로 새로 고칩니다.  
+- **참조**: 이 지표는 코드가 변경될 때 자동으로 업데이트됩니다. 이 지표를 별도 창으로 도킹한 경우 이 지표를 여기에서 수동으로 새로 고칩니다.  
   
      ![CodeLens &#45; 창으로 도킹](../ide/media/codelensviewreferencesdocked.png "CodeLensViewReferencesDocked")  
   
--   **팀**: 이 지표를 여기에서 수동으로 새로 고칩니다.  
+- **팀**: 이러한 지표를 수동으로 새로 고칩니다 여기서:  
   
      ![CodeLens &#45; 지표 새로 고침](../ide/media/codelensrefreshindicatorsfromcode.png "CodeLensRefreshIndicatorsFromCode")  
   
--   **테스트**: [코드에 대한 단위 테스트를 찾아](#FindRunUnitTests) 이 지표를 새로 고칩니다.  
+- **테스트**: [코드에 대 한 단위 테스트 찾기](#FindRunUnitTests) 이 지표를 새로 고쳐야 합니다.  
   
-###  <a name="LocalVersion"></a> Q: "로컬 버전"이란 무엇인가요?  
- **A:** **로컬 버전** 화살표는 이 파일의 로컬 버전에 있는 최신 변경 집합을 가리킵니다. 서버에 최신 변경 집합이 있는 경우, 변경 집합을 정렬하는 순서에 따라 **로컬 버전** 화살표의 위 또는 아래에 나타납니다.  
+### <a name="LocalVersion"></a> Q: "로컬 버전"이란 무엇인가요?  
+ **A:** 합니다 **로컬 버전** 화살표는이 파일의 로컬 버전에서 최신 변경 집합을 가리킵니다. 서버에 최신 변경 집합이 있는 경우, 변경 집합을 정렬하는 순서에 따라 **로컬 버전** 화살표의 위 또는 아래에 나타납니다.  
   
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>Q: CodeLens가 코드를 처리하여 기록 및 연결된 항목을 표시하는 방법을 관리할 수 있나요?  
- **A:** 예, 코드가 TFS에 있는 경우 [CodeIndex 명령](../ide/codeindex-command.md) 과 [TFS 구성 명령](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62)을 함께 사용합니다.
-
-
-
-
+ **A:** 예, 코드가 TFS에 사용 합니다 [CodeIndex 명령](../ide/codeindex-command.md) 사용 하 여 합니다 [TFS 구성 명령](https://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62)입니다.

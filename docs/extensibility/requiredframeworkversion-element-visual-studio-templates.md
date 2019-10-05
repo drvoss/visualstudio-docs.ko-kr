@@ -7,17 +7,17 @@ helpviewer_keywords:
 - <RequiredFrameworkVersion> (Visual Studio Templates)
 - RequiredFrameworkVersion (Visual Studio Templates)
 ms.assetid: 08a4f609-51a5-4723-b89f-99277fb18871
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64faab530e8470ac1efd5ade39f77552371048ef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0550fc1d286c04c61a1c0b2503326a002fde729e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872030"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744751"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion 요소 (Visual Studio 템플릿)
 
@@ -86,4 +86,4 @@ ms.locfileid: "53872030"
 
 - [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
-- [특정.NET Framework 버전 대상](../ide/visual-studio-multi-targeting-overview.md)
+- [개요를 대상으로 하는 프레임 워크](../ide/visual-studio-multi-targeting-overview.md)

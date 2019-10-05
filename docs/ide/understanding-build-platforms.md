@@ -1,7 +1,6 @@
 ---
 title: 빌드 플랫폼 이해
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 f1_keywords:
@@ -13,17 +12,17 @@ f1_keywords:
 helpviewer_keywords:
 - build platforms [Visual Studio]
 ms.assetid: c1e5da1b-cda1-4545-b46c-0440fba27485
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: ghogen
+ms.author: ghogen
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f813f9181d54ab3363c5643710b5434457d1959
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: dbe00e53942827c96831889339f82d2f5e4dff7a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425363"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925824"
 ---
 # <a name="understand-build-platforms"></a>빌드 플랫폼 이해
 
@@ -31,12 +30,14 @@ ms.locfileid: "32425363"
 
 ## <a name="in-this-section"></a>단원 내용
 
- [방법: 플랫폼을 대상으로 한 프로젝트 구성](../ide/how-to-configure-projects-to-target-platforms.md) 특정 플랫폼을 대상으로 한 프로젝트를 구성하는 방법을 설명합니다.
+[방법: 플랫폼을 대상으로 한 프로젝트 구성](../ide/how-to-configure-projects-to-target-platforms.md)\
+특정 플랫폼을 대상으로 한 프로젝트를 구성하는 방법을 설명합니다.
 
- [방법: 여러 플랫폼을 대상으로 한 프로젝트 구성](../ide/how-to-configure-projects-to-target-multiple-platforms.md) 여러 플랫폼을 대상으로 한 프로젝트를 구성하는 방법을 설명합니다.
+[방법: 여러 플랫폼을 대상으로 한 프로젝트 구성](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
+여러 플랫폼을 대상으로 한 프로젝트를 구성하는 방법을 설명합니다.
 
 ## <a name="see-also"></a>참고 항목
 
-- [연습: 응용 프로그램 빌드](../ide/walkthrough-building-an-application.md)
+- [연습: 애플리케이션 빌드](../ide/walkthrough-building-an-application.md)
 - [Visual Studio에서 프로젝트 및 솔루션 빌드 및 정리](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [컴파일 및 빌드](../ide/compiling-and-building-in-visual-studio.md)

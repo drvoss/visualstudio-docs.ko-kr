@@ -255,6 +255,6 @@
 ## [VSPackage용 설치 디렉터리 선택](choosing-the-installation-directory-for-a-vspackage.md)
 ## [VSPackage 등록](vspackage-registration.md)
 ## [프로젝트 형식 배포](deploying-project-types.md)
-## [방법: 설치 관리자에 대한 레지스트리 정보 생성](how-to-generate-registry-information-for-an-installer.md)
+## [방법: 설치 관리자의 레지스트리 정보 생성](how-to-generate-registry-information-for-an-installer.md)
 ## [설치 후 실행해야 하는 명령](commands-that-must-be-run-after-installation.md)
 ## [Windows Installer를 사용하여 VSPackage 제거](uninstalling-a-vspackage-with-windows-installer.md)

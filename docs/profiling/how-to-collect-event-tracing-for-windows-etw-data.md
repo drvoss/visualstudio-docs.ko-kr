@@ -1,8 +1,6 @@
 ---
-title: '방법: ETW(Windows용 이벤트 추적) 데이터 수집 | Microsoft 문서'
-ms.custom: ''
+title: '방법: ETW(Windows용 이벤트 추적) 데이터 수집 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.events
@@ -12,22 +10,22 @@ helpviewer_keywords:
 - performance tools, enabling event trace providers
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd8016b14d91157942ed8d5e4a987df0009f6af3
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: d9734c75f078380649009d10da13ed8c926e5e16
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973866"
 ---
 # <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>방법: ETW(Windows용 이벤트 추적) 데이터 수집
 
-ETW(Windows용 이벤트 추적)는 프로파일러 로그 커널 이벤트나 응용 프로그램에서 거부된 이벤트를 사용하도록 설정하는 효율적인 커널 수준 추적 기능입니다. 이벤트 공급자에서 수집된 데이터를 보려면 [VSPerfReport](../profiling/vsperfreport.md) 명령줄 도구의 /**Summary:ETW** 옵션을 사용해야 합니다. 이 보고서를 사용하여 응용 프로그램에서 성능 문제가 발생하는 위치를 확인합니다.
+ETW(Windows용 이벤트 추적)는 프로파일러 로그 커널 이벤트나 애플리케이션에서 거부된 이벤트를 사용하도록 설정하는 효율적인 커널 수준 추적 기능입니다. 이벤트 공급자에서 수집된 데이터를 보려면 [VSPerfReport](../profiling/vsperfreport.md) 명령줄 도구의 /**Summary:ETW** 옵션을 사용해야 합니다. 이 보고서를 사용하여 애플리케이션에서 성능 문제가 발생하는 위치를 확인합니다.
 
 > [!NOTE]
-> Windows 8 및 Windows Server 2012의 강화된 보안 기능을 위해 Visual Studio 프로파일러가 이러한 플랫폼에서 데이터를 수집하는 방법을 상당히 변경해야 했습니다. 또한 UWP 앱에는 새로운 수집 기술도 필요합니다. [Windows 8 및 Windows Server 2012 응용 프로그램의 성능 도구](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)를 참조하세요.
+> Windows 8 및 Windows Server 2012의 강화된 보안 기능을 위해 Visual Studio 프로파일러가 이러한 플랫폼에서 데이터를 수집하는 방법을 상당히 변경해야 했습니다. 또한 UWP 앱에는 새로운 수집 기술도 필요합니다. [Windows 8 및 Windows Server 2012 애플리케이션의 성능 도구](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)를 참조하세요.
 
 ## <a name="to-enable-event-trace-providers"></a>이벤트 추적 공급자를 사용하도록 설정하려면
 
@@ -35,7 +33,7 @@ ETW(Windows용 이벤트 추적)는 프로파일러 로그 커널 이벤트나 �
 
 2. **속성 페이지**에서 **Windows 이벤트** 속성을 클릭합니다.
 
-3. **데이터를 수집할 이벤트 추적 공급자 선택** 목록에서 응용 프로그램을 프로파일링하는 데 사용할 이벤트 공급자를 선택합니다.
+3. **데이터를 수집할 이벤트 추적 공급자 선택** 목록에서 애플리케이션을 프로파일링하는 데 사용할 이벤트 공급자를 선택합니다.
 
 ## <a name="see-also"></a>참고 항목
 

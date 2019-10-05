@@ -1,11 +1,8 @@
 ---
 title: 활동에 바인딩하려면&#39;s 속성 대화 상자 (레거시) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Workflow.ComponentModel.Design.ActivityBindForm.UI
@@ -15,13 +12,13 @@ ms.assetid: 19ebb207-e0a9-4642-8f5f-a5e31395c683
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: bbc9c36bec7c01e7a7e771e7f7145da40b84b177
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 82582936f2d9165a0aebea9e6000af24baf59941
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977424"
 ---
 # <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>활동에 바인딩하려면&#39;s 속성 대화 상자 (레거시)
 에 대해 설명 하는 방법을 사용 하 여는 **활동의 속성에 바인딩할** 레거시 대화 상자 [!INCLUDE[wfd1](../includes/wfd1-md.md)]. 레거시 [!INCLUDE[wfd2](../includes/wfd2-md.md)]는 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 또는 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]를 대상으로 해야 하는 경우에 사용합니다.  

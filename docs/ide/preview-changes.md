@@ -1,22 +1,20 @@
 ---
 title: 코드 변경 내용 미리 보기
 ms.date: 12/16/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 f1_keywords:
 - vs.codefix.previewchanges
 ms.workload:
 - multiple
-ms.openlocfilehash: 16f681d8498242eb8ddc9c1a81fe8d17186f2fff
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 07d722848725753b0b2abf25c8497327cdb53835
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812236"
 ---
 # <a name="preview-changes-window"></a>변경 내용 미리 보기 창
 

@@ -1,14 +1,9 @@
 ---
 title: 추가 MSBuild 리소스 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - MSBuild.UnregisterAssembly.UnregisterTlbFileNotRegistered
 - MSBuild.DollarSignInTaskOutputPropertyName
@@ -603,18 +598,17 @@ ms.assetid: 29dd85ee-1530-43c1-b085-bb2330ac5a48
 caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 935d73f8dd1a5c1dedb3fb4d1e7a727d19e5d10b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5bf30e3267939385a3cca3459390c4c7591909a6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222744"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187098"
 ---
 # <a name="additional-msbuild-resources"></a>추가 MSBuild 리소스
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 문제를 해결하려고 하는데 설명서에서 필요한 정보를 찾을 수 없으면 기술 자료 문서, 개발자 커뮤니티 또는 제품 지원과 같은 다른 리소스를 참조할 수 있습니다.  
   
 ## <a name="knowledge-base-articles"></a>기술 자료 문서  
@@ -630,6 +624,3 @@ ms.locfileid: "49222744"
   
 ## <a name="see-also"></a>참고 항목  
  [.NET Framework 타기팅 오류 문제 해결](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)
-
-
-

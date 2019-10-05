@@ -2,7 +2,6 @@
 title: IRemoteDebugApplicationThreadEx 인터페이스 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,15 +13,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d4d9998a412aa3ecc9316a2595ac9daf707fd873
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b7496b79569d25a747527965f97d61544c8a7c3d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62787894"
 ---
 # <a name="iremotedebugapplicationthreadex-interface"></a>IRemoteDebugApplicationThreadEx 인터페이스
-특정 응용 프로그램 내의 실행 스레드를 나타냅니다.  
+특정 애플리케이션 내의 실행 스레드를 나타냅니다.  
   
  상속 된 메서드 외에도 `IUnknown`, `IRemoteDebugApplicationThreadEx` 인터페이스는 다음 메서드를 노출 합니다.  
   

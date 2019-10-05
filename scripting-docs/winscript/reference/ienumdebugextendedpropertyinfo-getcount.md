@@ -2,7 +2,6 @@
 title: IEnumDebugExtendedPropertyInfo::GetCount | Microsoft 문서
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d454fd82317d1e021b27da3366138bdf1a8091fa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e56f1def9d797cc67d0a71813a4dd4b35589d7e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583622"
 ---
 # <a name="ienumdebugextendedpropertyinfogetcount"></a>IEnumDebugExtendedPropertyInfo::GetCount
 개수를 가져옵니다 `ExtendedDebugPropertyInfo` 열거자 구조입니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetCount (  
    ULONG* pcelt  
 );  

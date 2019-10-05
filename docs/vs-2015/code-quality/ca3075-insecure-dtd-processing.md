@@ -1,26 +1,21 @@
 ---
 title: 'CA3075: 안전 하지 않은 DTD 처리 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: 65798d66-7a30-4359-b064-61a8660c1eed
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8284f065a829ac7ecc29330fb8a9dad74e92690e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 694b72327d8e059fe12a227afdab79219081ef92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850184"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693405"
 ---
-# <a name="ca3075-insecure-dtd-processing"></a>CA3075: 안전하지 않은 DTD 처리
+# <a name="ca3075-insecure-dtd-processing"></a>CA3075: DTD 처리가 안전하지 않습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -34,7 +29,7 @@ ms.locfileid: "49850184"
  안전하지 않은 <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> 인스턴스를 사용하거나 외부 엔터티 소스를 참조하면 파서는 신뢰할 수 없는 입력을 허용하고 공격자에게 중요 한 정보를 공개할 수 있습니다.
 
 ## <a name="rule-description"></a>규칙 설명
- [DTD(문서 종류 정의)](https://msdn.microsoft.com/library/aa468547.aspx) 는 XML 파서가  [W3C(World Wide Web Consortium) XML(Extensible Markup Language) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)에 정의된 대로 문서의 유효성을 확인할 수 있는 두 가지 방법 중 하나입니다. 이 규칙은 신뢰할 수 없는 데이터가 허용되는 속성 및 인스턴스를 찾아 [DoS(서비스 거부)](http://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) 공격을 야기할 수 있는 잠재적인 [Information Disclosure](http://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) 위협을 개발자에게 경고합니다. 다음 경우에 이 규칙이 트리거됩니다.
+ [DTD(문서 종류 정의)](https://msdn.microsoft.com/library/aa468547.aspx) 는 XML 파서가  [W3C(World Wide Web Consortium) XML(Extensible Markup Language) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)에 정의된 대로 문서의 유효성을 확인할 수 있는 두 가지 방법 중 하나입니다. 이 규칙은 신뢰할 수 없는 데이터가 허용되는 속성 및 인스턴스를 찾아 [DoS(서비스 거부)](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) 공격을 야기할 수 있는 잠재적인 [Information Disclosure](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) 위협을 개발자에게 경고합니다. 다음 경우에 이 규칙이 트리거됩니다.
 
 - <xref:System.Xml.XmlReader> 를 사용하여 외부 XML 엔터티를 확인하는 <xref:System.Xml.XmlUrlResolver>인스턴스에서 DtdProcessing이 사용되도록 설정된 경우
 
@@ -64,7 +59,7 @@ ms.locfileid: "49850184"
 
 - 신뢰할 수 없는 소스를 설정 하 여 처리 하는 경우 DTD 처리를 사용 하지 않도록 설정 합니다 <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> 속성을 **true** 합니다.
 
-- XmlTextReader 클래스에는 완전 신뢰 상속 요청이 있습니다. 참조 [상속 요청](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9) 자세한 내용은 합니다.
+- XmlTextReader 클래스에는 완전 신뢰 상속 요청이 있습니다. 참조 [상속 요청](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) 자세한 내용은 합니다.
 
   .NET 4 이상
 
@@ -73,7 +68,7 @@ ms.locfileid: "49850184"
 - Load() 메서드가 모든 InnerXml 경우에서 XmlReader 인스턴스를 사용하는지 확인합니다.
 
 > [!NOTE]
->  이 규칙은 일부 유효한 XmlSecureResolver 인스턴스에 대해 가양성(false positive)을 보고할 수 있습니다. 2016년 중반까지 이 문제를 해결하기 위해 작업하고 있습니다.
+> 이 규칙은 일부 유효한 XmlSecureResolver 인스턴스에 대해 가양성(false positive)을 보고할 수 있습니다. 2016년 중반까지 이 문제를 해결하기 위해 작업하고 있습니다.
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  입력 출처를 신뢰할 수 있는지 확신할 수 없으면 이 경고의 규칙이 표시되지 않도록 설정하지 않도록 합니다.
@@ -387,6 +382,3 @@ namespace TestNamespace
     }
 }
 ```
-
-
-

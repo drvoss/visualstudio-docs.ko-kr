@@ -6,22 +6,21 @@ helpviewer_keywords:
 - Domain-Specific Language, domain properties
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 4359c71e054b8284e16eaed88b0ee140f7954494
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: 23bac93b6e5892e8a4d4680e6829240fed9a03d8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869455"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443129"
 ---
 # <a name="properties-of-domain-properties"></a>도메인 속성의 속성
 A *도메인 속성* 값을 보유할 수 있는 모델 요소의 기능입니다. 예를 들어 `Person` 도메인 클래스는 `Name` 및 `BirthDate` 속성을 포함할 수 있습니다. DSL 정의에서 도메인 속성은 다이어그램의 도메인 클래스 상자와 DSL 탐색기의 도메인 클래스 아래에 나열됩니다. 자세한 내용은 [도메인별 언어 정의 방법](../modeling/how-to-define-a-domain-specific-language.md)합니다.
 
 > [!NOTE]
->  "속성"이라는 단어는 두 가지 용도로 사용됩니다. A *도메인 속성* 도메인 클래스에서 정의 하는 기능입니다. DSL의 요소 수 있는 반면 *속성*에 나열 되는 **속성** DSL 정의에서 창입니다. 예를 들어 모든 도메인 속성에는 이 항목에서 설명하는 속성 집합이 포함됩니다.
+> "속성"이라는 단어는 두 가지 용도로 사용됩니다. A *도메인 속성* 도메인 클래스에서 정의 하는 기능입니다. DSL의 요소 수 있는 반면 *속성*에 나열 되는 **속성** DSL 정의에서 창입니다. 예를 들어 모든 도메인 속성에는 이 항목에서 설명하는 속성 집합이 포함됩니다.
 
  런타임에 사용자가 도메인 클래스 인스턴스를 만들면 도메인 속성의 값을 속성 창에서 확인할 수 있으며 모양에 표시할 수 있습니다.
 

@@ -1,14 +1,9 @@
 ---
 title: MSBuild 조건부 구문 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -27,18 +22,17 @@ ms.assetid: dd54258e-f4fb-448f-9da4-d1817e0cbaf2
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dc84f8ec612ff602a615f27489bce617b5b7009a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b7b22f63d5d3d6e0b1f7789561029bbfbfb4cdf4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143752"
 ---
 # <a name="msbuild-conditional-constructs"></a>MSBuild 조건부 구문
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]는 [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/when-element-msbuild.md) 및 [Otherwise](../msbuild/otherwise-element-msbuild.md) 요소를 포함하는 / 또는 처리에 메커니즘을 제공합니다.  
   
 ## <a name="using-the-choose-element"></a>Choose 요소 사용  
@@ -46,7 +40,7 @@ ms.locfileid: "49264149"
   
  `Choose` 요소를 `Project`, `When` 및 `Otherwise` 요소의 자식 요소로 사용할 수 있습니다. `When` 및 `Otherwise` 요소에는 `ItemGroup`, `PropertyGroup` 또는 `Choose` 자식 요소가 포함됩니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  다음 예제에서는 / 또는 처리 중 하나에 `Choose` 및 `When` 요소를 사용합니다. 프로젝트의 속성 및 항목은 `Configuration` 속성의 값에 따라 설정됩니다.  
   
 ```  
@@ -90,6 +84,3 @@ ms.locfileid: "49264149"
  [When 요소(MSBuild)](../msbuild/when-element-msbuild.md)   
  [Otherwise 요소(MSBuild)](../msbuild/otherwise-element-msbuild.md)   
  [MSBuild 참조](../msbuild/msbuild-reference.md)
-
-
-

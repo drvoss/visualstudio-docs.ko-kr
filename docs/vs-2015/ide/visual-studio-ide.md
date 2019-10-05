@@ -3,27 +3,24 @@ title: Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 772b6cf4-cee5-42d0-bc18-b4eb07e22ff0
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c6bd4e34e25add01de6e6e54c2439c2ca80ccf33
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 90a7611e0b8895b0ed3540cae861ebafec9ae4bd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062485"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698554"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 Microsoft Visual Studio 2015는 계획 단계에서 UI 디자인, 코딩, 테스트, 디버그, 코드 품질 및 성능 분석, 고객에게 배포 및 사용량에 대한 원격 분석 수집에 이르기까지 소프트웨어를 만들기 위한 도구 제품군입니다. 이러한 도구는 가능한 한 매끄럽게 작동하도록 설계되었으며, 모두 Visual Studio IDE(통합 개발 환경)를 통해 노출됩니다.
 
-Visual Studio를 사용하여 모바일 클라이언트용 단순한 스토어 앱과 게임에서 엔터프라이즈 및 데이터 센터를 지원하는 대규모의 복잡한 시스템에 이르기까지 많은 종류의 응용 프로그램을 만들 수 있습니다. 다음과 같은 항목을 만들 수 있습니다.
+Visual Studio를 사용하여 모바일 클라이언트용 단순한 스토어 앱과 게임에서 엔터프라이즈 및 데이터 센터를 지원하는 대규모의 복잡한 시스템에 이르기까지 많은 종류의 애플리케이션을 만들 수 있습니다. 다음과 같은 항목을 만들 수 있습니다.
 
 - Windows뿐 아니라 Android 및 iOS에서도 실행되는 앱과 게임
 
@@ -33,11 +30,11 @@ Visual Studio를 사용하여 모바일 클라이언트용 단순한 스토어 �
 
 - DirectX를 사용하는 다양한 Windows 디바이스(Xbox 포함)용 게임 및 그래픽 집약적 애플리케이션
 
-Visual Studio는 기본적으로 C#, C 및 C++, JavaScript, F# 및 Visual Basic을 지원합니다. Visual Studio는 [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) 확장을 통해서는 Unity와 같은 타사 응용 프로그램과, [Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)를 통해서는 Apache Cordova와 잘 작동하고 통합됩니다. 특수 작업을 수행하는 사용자 지정 도구를 만들어 Visual Studio를 직접 확장할 수 있습니다.
+Visual Studio는 기본적으로 C#, C 및 C++, JavaScript, F# 및 Visual Basic을 지원합니다. Visual Studio는 [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) 확장을 통해서는 Unity와 같은 타사 애플리케이션과, [Visual Studio Tools for Apache Cordova](https://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)를 통해서는 Apache Cordova와 잘 작동하고 통합됩니다. 특수 작업을 수행하는 사용자 지정 도구를 만들어 Visual Studio를 직접 확장할 수 있습니다.
 
 전에 Visual Studio를 사용해 보지 않았다면 [Get Started Developing with Visual Studio](../ide/get-started-developing-with-visual-studio.md) 자습서 및 연습에서 기본 사항에 대해 알아보세요.
 
-Visual Studio 2015의 새로운 기능에 자세히 알아보려면 원한다 면 참조 [Visual Studio 2015의 새로운](../what-s-new-in-visual-studio-2015.md)합니다.
+Visual Studio 2015의 새로운 기능에 대한 자세한 내용은 [Visual Studio 2015의 새로운 기능](../what-s-new-in-visual-studio-2015.md)을 참조하세요.
 
 ## <a name="visual-studio-setup"></a>Visual Studio 설치
  [Visual Studio 버전](http://www.visualstudio.com/products/visual-studio-with-msdn-overview-vs)에서 적합한 Visual Studio 버전을 확인할 수 있습니다.
@@ -75,18 +72,18 @@ Visual Studio 2015의 새로운 기능에 자세히 알아보려면 원한다 �
  거의 모든 항목에 대한 바로 가기 키가 있으며 사용자 지정할 수도 있습니다. 새 바로 가기를 만들려면 빠른 실행에서 "키보드"를 입력하여 키보드 대화 상자를 엽니다. 여기서 옵션에 대한 자세한 정보가 필요한 경우 F1 키를 눌러 MSDN 도움말 페이지로 이동할 수 있습니다. 자세한 내용은 [Visual Studio의 기본 바로 가기 키](../ide/default-keyboard-shortcuts-in-visual-studio.md)를 참조하세요.
 
 ## <a name="connecting-to-visual-studio-team-services-and-team-foundation-server"></a>Visual Studio Team Services 및 Team Foundation Server에 연결
- VSTS(Visual Studio Team Services)는 소프트웨어 프로젝트를 호스트하고 팀 공동 작업을 사용할 수 있도록 하는 클라우드 기반 서비스입니다. VSTS는 Git 및 Team Foundation 소스 제어 시스템과 Scrum, CMMI 및 Agile 개발 방법론을 지원합니다. TFVC(Team Foundation 버전 제어)는 하나의 중앙 집중식 서버 리포지토리를 사용하여 파일을 추적하고 버전을 관리합니다. 다른 개발자가 최신 변경 내용을 가져올 수 있는 중앙 서버에 로컬 변경 내용이 항상 체크 인됩니다. Team Foundation Server(TFS) 2015는 Visual Studio용 응용 프로그램 수명 주기 관리 허브입니다. 개발 프로세스와 관련된 모든 사람이 단일 솔루션을 사용하여 참여할 수 있도록 해줍니다. TFS는 성격이 다른 팀과 프로젝트들을 관리하는 데 유용합니다.
+ VSTS(Visual Studio Team Services)는 소프트웨어 프로젝트를 호스트하고 팀 협업을 사용할 수 있도록 하는 클라우드 기반 서비스입니다. VSTS는 Git 및 Team Foundation 소스 제어 시스템과 Scrum, CMMI 및 Agile 개발 방법론을 지원합니다. TFVC(Team Foundation 버전 제어)는 하나의 중앙 집중식 서버 리포지토리를 사용하여 파일을 추적하고 버전을 관리합니다. 다른 개발자가 최신 변경 내용을 가져올 수 있는 중앙 서버에 로컬 변경 내용이 항상 체크 인됩니다. Team Foundation Server(TFS) 2015는 Visual Studio용 애플리케이션 수명 주기 관리 허브입니다. 개발 프로세스와 관련된 모든 사람이 단일 솔루션을 사용하여 참여할 수 있도록 해줍니다. TFS는 성격이 다른 팀과 프로젝트들을 관리하는 데 유용합니다.
 
- 네트워크에 Visual Studio Team Services 계정 또는 Team Foundation Server가 있는 경우 팀 탐색기 창을 통해 연결합니다. 이 창에서 코드를 소스 제어에 체크 인 또는 체크 아웃하고, 작업 항목을 관리하고, 빌드를 시작하고, 단체 방 및 작업 영역에 액세스할 수 있습니다. 팀 탐색기를 열 수 있습니다 **빠른 실행** 또는 주 메뉴에서 **보기 &#124; 팀 탐색기** 주고 **팀 &#124; 연결 관리**.  Visual Studio Team Services에 대한 자세한 내용은 [www.visualstudio.com](https://www.visualstudio.com/)을 참조하세요. Team Foundation Server에 대한 자세한 내용은 [Team Foundation Server](https://www.visualstudio.com/products/tfs-overview-vs)를 참조하세요.
+ 네트워크에 Visual Studio Team Services 계정 또는 Team Foundation Server가 있는 경우 팀 탐색기 창을 통해 연결합니다. 이 창에서 코드를 소스 제어에 체크 인 또는 체크 아웃하고, 작업 항목을 관리하고, 빌드를 시작하고, 단체 방 및 작업 영역에 액세스할 수 있습니다. **빠른 실행**이나 **보기 &#124; 팀 탐색기** 또는 **팀 &#124; 연결 관리**의 주 메뉴에서 팀 탐색기를 열 수 있습니다.  Visual Studio Team Services에 대한 자세한 내용은 [www.visualstudio.com](https://www.visualstudio.com/)을 참조하세요. Team Foundation Server에 대한 자세한 내용은 [Team Foundation Server](https://www.visualstudio.com/products/tfs-overview-vs)를 참조하세요.
 
  다음 이미지는 VSTS에서 호스트되는 솔루션용 팀 탐색기 창을 보여 줍니다.
 
  ![Visual Studio 팀 탐색기](../ide/media/vs2015-teamexplorer.png "VS2015_TeamExplorer")
 
 ## <a name="creating-solutions-and-projects"></a>솔루션 및 프로젝트 만들기
- Visual Studio를 사용하여 개별 코드 파일을 찾을 수 있지만 *프로젝트*로 작업하는 것이 더 일반적입니다. Visual Studio 프로젝트는 응용 프로그램의 경우 단일 이진 실행 파일(예: .exe, DLL 또는 appx)로 컴파일되는 파일 및 리소스의 컬렉션입니다. 비 ASP.NET 웹 사이트의 경우 실행 파일이 생성되지 않으며 프로젝트에는 HTML, JavaScript 파일 및 이미지만 포함됩니다. 경우에 따라 긴밀히 관련된 여러 이진 파일이나 웹 사이트를 만들어야 할 수 있으므로 Visual Studio에는 여러 프로젝트나 웹 사이트를 포함할 수 있는 솔루션 개념이 있습니다. 프로젝트를 만드는 경우 실제로는 한 솔루션에 하나의 프로젝트를 만드는 것이며 필요에 따라 나중에 더 많은 프로젝트를 솔루션에 추가할 수 있습니다. 예를 들어 DLL 프로젝트가 있는 경우 DLL을 로드 및 사용하는 솔루션에 .exe 프로젝트를 추가할 수 있습니다.
+ Visual Studio를 사용하여 개별 코드 파일을 찾을 수 있지만 *프로젝트*로 작업하는 것이 더 일반적입니다. Visual Studio 프로젝트는 애플리케이션의 경우 단일 이진 실행 파일(예: .exe, DLL 또는 appx)로 컴파일되는 파일 및 리소스의 컬렉션입니다. 비 ASP.NET 웹 사이트의 경우 실행 파일이 생성되지 않으며 프로젝트에는 HTML, JavaScript 파일 및 이미지만 포함됩니다. 경우에 따라 긴밀히 관련된 여러 이진 파일이나 웹 사이트를 만들어야 할 수 있으므로 Visual Studio에는 여러 프로젝트나 웹 사이트를 포함할 수 있는 솔루션 개념이 있습니다. 프로젝트를 만드는 경우 실제로는 한 솔루션에 하나의 프로젝트를 만드는 것이며 필요에 따라 나중에 더 많은 프로젝트를 솔루션에 추가할 수 있습니다. 예를 들어 DLL 프로젝트가 있는 경우 DLL을 로드 및 사용하는 솔루션에 .exe 프로젝트를 추가할 수 있습니다.
 
- *프로젝트 템플릿* 은 특정 종류의 응용 프로그램을 신속하게 설정할 수 있게 해주는 미리 채워진 코드 파일 및 구성 설정의 컬렉션입니다. Visual Studio에는 선택할 수 있는 많은 프로젝트 템플릿이 있으며, 적합한 기본 템플릿이 없는 경우 고유한 템플릿을 만들 수 있습니다. 템플릿을 사용하여 프로젝트를 만든 후 제공된 파일이나 직접 추가한 새 파일에서 고유한 코드를 작성할 수 있습니다. 자세한 내용은 [솔루션 및 프로젝트](../ide/solutions-and-projects-in-visual-studio.md)를 참조하세요. 다음 그림에서는 ASP.NET 응용 프로그램에서 사용할 수 있는 프로젝트 템플릿이 포함된 새 프로젝트 대화 상자를 보여 줍니다.
+ *프로젝트 템플릿* 은 특정 종류의 애플리케이션을 신속하게 설정할 수 있게 해주는 미리 채워진 코드 파일 및 구성 설정의 컬렉션입니다. Visual Studio에는 선택할 수 있는 많은 프로젝트 템플릿이 있으며, 적합한 기본 템플릿이 없는 경우 고유한 템플릿을 만들 수 있습니다. 템플릿을 사용하여 프로젝트를 만든 후 제공된 파일이나 직접 추가한 새 파일에서 고유한 코드를 작성할 수 있습니다. 자세한 내용은 [솔루션 및 프로젝트](../ide/solutions-and-projects-in-visual-studio.md)를 참조하세요. 다음 그림에서는 ASP.NET 애플리케이션에서 사용할 수 있는 프로젝트 템플릿이 포함된 새 프로젝트 대화 상자를 보여 줍니다.
 
  ![Visual Studio 새 프로젝트 대화 상자](../ide/media/vs2015-newprojectdialog.png "VS2015_NewProjectDialog")
 
@@ -95,7 +92,7 @@ Visual Studio 2015의 새로운 기능에 자세히 알아보려면 원한다 �
 
  프로젝트에 XAML 기반 사용자 인터페이스가 있는 경우 기본 디자이너는 Visual Studio와 매끄럽게 작동하는 정교한 그래픽 도구인 Blend for Visual Studio입니다.
 
- ![아트 보드](../ide/media/b5-artboard.png "b5_artboard")
+ ![아트보드](../ide/media/b5-artboard.png "b5_artboard")
 
 |||
 |-|-|
@@ -105,16 +102,16 @@ Visual Studio 2015의 새로운 기능에 자세히 알아보려면 원한다 �
 |![](../designers/media/b1-4.png "B1_4")|**디자인 화면 컨트롤** 이 컨트롤(**맞춤 모눈 표시**, **모눈선에 맞추기** 및 **맞춤선에 맞추기 설정 또는 해제**)을 사용하여 맞추기 옵션을 설정할 수 있습니다. 맞추기는 여러 개체 간에 서로 정렬하거나 디자인 화면에서 간격이 동일한 줄로 정렬하는 데 유용합니다.|
 |![](../designers/media/b1-5.png "B1_5")|**코드 편집기** 코드 편집기에서 XAML, C#, C++ 또는 Visual Basic 코드를 수동으로 편집할 수 있습니다.|
 
- 자세한 내용은 [Visual Studio 및 Blend for Visual Studio에서 XAML 디자인](../designers/designing-xaml-in-visual-studio.md)합니다.
+ 자세한 내용은 [Visual Studio 및 Blend for Visual Studio에서 XAML 디자인](../designers/designing-xaml-in-visual-studio.md)을 참조하세요.
 
 ## <a name="writing-navigating-and-understanding-code"></a>코드 작성, 탐색 및 이해
  개발자인 경우 편집기 창에서 대부분의 시간을 보낼 것입니다. Visual Studio에는 C#, C++, Visual Basic, JavaScript, XML, HTML, CSS 및 F#용 편집기가 포함되어 있으며, 타사에서도 다른 여러 언어에 대한 플러그 인 편집기(및 컴파일러)를 제공합니다.
 
- 클릭 하 여 텍스트 편집기에서 개별 파일을 편집할 수 있습니다 **파일 &#124; 열기 &#124; 파일입니다.** 을 클릭하여 텍스트 편집기에서 개별 파일을 편집할 수 있습니다. 열린 프로젝트에서 파일을 편집하려면 솔루션 탐색기에서 파일 이름을 클릭합니다. 코드에는 색이 지정되며 빠른 실행에서 "색"을 입력하여 색 구성표를 개인 설정할 수 있습니다. 한 번에 많은 텍스트 편집기 탭 창을 열어 둘 수 있습니다. 각 창을 독립적으로 분할할 수 있습니다. 텍스트 편집기를 전체 화면 모드로 실행할 수도 있습니다.
+ **파일 &#124; 열기 &#124; 파일**을 클릭하여 텍스트 편집기에서 개별 파일을 편집할 수 있습니다. 을 클릭하여 텍스트 편집기에서 개별 파일을 편집할 수 있습니다. 열린 프로젝트에서 파일을 편집하려면 솔루션 탐색기에서 파일 이름을 클릭합니다. 코드에는 색이 지정되며 빠른 실행에서 "색"을 입력하여 색 구성표를 개인 설정할 수 있습니다. 한 번에 많은 텍스트 편집기 탭 창을 열어 둘 수 있습니다. 각 창을 독립적으로 분할할 수 있습니다. 텍스트 편집기를 전체 화면 모드로 실행할 수도 있습니다.
 
- ![코드 편집기의 GreetingsConsoleApp.cpp](../ide/media/c-ide-editorlinenumberswordwrapon.png "C + + IDE_EditorLineNumbersWordWrapOn")
+ ![코드 편집기의 GreetingsConsoleApp.cpp](../ide/media/c-ide-editorlinenumberswordwrapon.png "C++IDE_EditorLineNumbersWordWrapOn")
 
- 텍스트 편집기는 보다 효율적인 코드를 더 빠르게 작성할 수 있도록 도와주는 많은 생산성 기능이 포함된 대화형(원할 경우)입니다. 기능 언어에 따라 다르며 (빠른 실행에서 "편집기"을 입력 하는 경우) 중 하나를 사용 하 여 기능을 켜거나 끌 필요가 없습니다. 몇 가지 일반적인 생산성 기능은 다음과 같습니다.
+ 텍스트 편집기는 보다 효율적인 코드를 더 빠르게 작성할 수 있도록 도와주는 많은 생산성 기능이 포함된 대화형(원할 경우)입니다. 기능은 언어에 따라 달라지며, 기능을 설정하거나 해제하기 위해 언어를 사용할 필요가 없습니다(빠른 실행에서 "편집기" 입력). 몇 가지 일반적인 생산성 기능은 다음과 같습니다.
 
 1. [Refactoring](../ide/refactoring-in-visual-studio.md) 에는 변수의 지능형 이름 바꾸기, 선택한 코드 줄을 별도 함수로 이동, 코드를 다른 위치로 이동, 함수 매개 변수 다시 정렬 등의 작업이 포함됩니다.
 
@@ -124,7 +121,7 @@ Visual Studio 2015의 새로운 기능에 자세히 알아보려면 원한다 �
 
 3. **오류 표시선** 은 입력하는 동안 코드의 오류 또는 잠재적 문제를 실시간으로 경고하여 컴파일 또는 런타임 중에 오류가 검색될 때까지 기다리지 않고 즉시 수정할 수 있게 해줍니다. 오류 표시선 위로 마우스를 가져가면 오류에 대한 추가 정보가 표시됩니다. 오류를 수정하는 방법에 대한 제안 사항과 함께 전구가 왼쪽 여백에 나타날 수도 있습니다. 자세한 내용은 [Perform quick actions with light bulbs](../ide/perform-quick-actions-with-light-bulbs.md)을 참조하세요.
 
-    ![마우스로 전구](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
+    ![마우스로 가리킨 전구](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
 
 4. [책갈피](../ide/setting-bookmarks-in-code.md)를 사용하면 작업 중인 파일의 특정 줄로 빠르게 이동할 수 있습니다.
 
@@ -136,7 +133,7 @@ Visual Studio 2015의 새로운 기능에 자세히 알아보려면 원한다 �
 
 8. **정의로 이동** 상황에 맞는 메뉴 옵션은 함수 또는 개체가 정의된 위치로 바로 이동합니다. 편집기에서 마우스 오른쪽 단추를 클릭하면 다른 탐색 명령도 사용할 수 있습니다.
 
-9. 관련 도구인 [개체 브라우저](http://msdn.microsoft.com/en-us/f89acfc5-1152-413d-9f56-3dc16e3f0470)를 통해 시스템에서 .NET 또는 Windows 런타임 어셈블리를 검사하여 포함된 형식과 해당 형식이 포함하는 메서드 및 속성을 확인할 수 있습니다.
+9. 관련 도구인 [개체 브라우저](https://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470)를 통해 시스템에서 .NET 또는 Windows 런타임 어셈블리를 검사하여 포함된 형식과 해당 형식이 포함하는 메서드 및 속성을 확인할 수 있습니다.
 
      ![System.Timer를 보여 주는 개체 브라우저](../ide/media/objectbrowser.png "ObjectBrowser")
 
@@ -146,10 +143,10 @@ Visual Studio 2015의 새로운 기능에 자세히 알아보려면 원한다 �
 
 프로젝트를 빌드하려면 소스 코드를 컴파일하고 실행 파일을 생성하는 데 필요한 단계를 수행해야 합니다. 언어마다 다른 빌드 작업이 있으며 일반적인 웹 사이트는 빌드되지 않습니다. 프로젝트 형식에 관계없이 빌드 메뉴가 이러한 명령의 표준 위치입니다. 단일 키 입력으로 코드를 컴파일하고 실행하려면 F5 키를 누릅니다. 모든 컴파일러는 IDE를 통해 완전히 구성할 수 있습니다. 빌드 도구 모음을 사용하면 디버거에서 중단점 및 한 단계씩 실행을 지원하기 위해 기호 및 추가 오류 검사를 사용할 수 있는 프로그램의 디버그 버전을 빌드할지, 아니면 궁극적으로 고객에게 제공할 릴리스 버전을 빌드할지를 지정할 수 있습니다. 프로젝트 속성 페이지에서 자세한 빌드 설정과 기타 많은 설정을 구성할 수 있습니다. 솔루션 탐색기에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 속성을 선택합니다. 명령줄에서 빌드를 실행할 수도 있습니다.
 
-오류 또는 성공 메시지를 포함하는 빌드 출력이 **출력** 창에 나타납니다. 합니다 **오류 목록** 빌드 오류에 대 한 자세한 정보를 표시 합니다.
+오류 또는 성공 메시지를 포함하는 빌드 출력이 **출력** 창에 나타납니다. **오류 목록**에서는 빌드 오류에 대한 자세한 정보가 표시됩니다.
 
 ## <a name="debugging-your-code"></a>코드 디버그
- Visual Studio의 최신 디버거를 사용하면 로컬 프로젝트나 원격 디바이스 또는 Android 또는 Windows Phone용 에뮬레이터와 같은 에뮬레이터에서 실행 중인 코드를 디버그할 수 있습니다. 한 번에 문 하나씩 코드를 단계별로 실행하고 진행에 따라 변수를 검사하고, 다중 스레드 응용 프로그램을 단계별로 실행하고, 지정된 조건이 true일 때만 적중되는 중단점을 설정할 수 있습니다. 코드의 컨텍스트에서 나갈 필요가 없도록 이러한 모든 작업을 코드 편집기 자체에서 구성할 수 있습니다.
+ Visual Studio의 최신 디버거를 사용하면 로컬 프로젝트나 원격 디바이스 또는 Android 또는 Windows Phone용 에뮬레이터와 같은 에뮬레이터에서 실행 중인 코드를 디버그할 수 있습니다. 한 번에 문 하나씩 코드를 단계별로 실행하고 진행에 따라 변수를 검사하고, 다중 스레드 애플리케이션을 단계별로 실행하고, 지정된 조건이 true일 때만 적중되는 중단점을 설정할 수 있습니다. 코드의 컨텍스트에서 나갈 필요가 없도록 이러한 모든 작업을 코드 편집기 자체에서 구성할 수 있습니다.
 
  ![중단점 설정 미리 보기 창](../ide/media/dbg-breakpoints-peekwindow.png "DBG_Breakpoints_PeekWindow")
 
@@ -157,7 +154,7 @@ Visual Studio 2015의 새로운 기능에 자세히 알아보려면 원한다 �
 
  [Immediate Window](../ide/reference/immediate-window.md) 에서는 식을 입력하고 결과를 즉시 확인할 수 있습니다.
 
- [IntelliTrace](http://msdn.microsoft.com/en-us/629e9660-c59a-446b-8c30-290059158f61) 창은 실행 중인 .NET 프로그램의 각 메서드 호출 및 기타 이벤트를 기록하며, 문제가 발생한 위치를 빠르게 찾을 수 있도록 도와줍니다.
+ [IntelliTrace](https://msdn.microsoft.com/629e9660-c59a-446b-8c30-290059158f61) 창은 실행 중인 .NET 프로그램의 각 메서드 호출 및 기타 이벤트를 기록하며, 문제가 발생한 위치를 빠르게 찾을 수 있도록 도와줍니다.
 
  자세한 내용은 [Visual Studio의 디버깅](../debugger/debugging-in-visual-studio.md)을 참조하세요.
 
@@ -167,10 +164,10 @@ Visual Studio 2015의 새로운 기능에 자세히 알아보려면 원한다 �
  ![단위 테스트 탐색기](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
 
 ## <a name="analyzing-code-quality-and-performance"></a>코드 품질 및 성능 분석
- Visual Studio에는 정적 및 런타임 분석을 위한 강력한 도구가 포함되어 있습니다. 정적 분석 도구는 디자인, 세계화, 상호 운용성, 성능, 보안 및 기타 범주의 잠재적 오류를 식별하는 데 도움이 됩니다. 성능 테스트 또는 프로파일링에는 프로그램이 실행되는 방식을 측정하는 작업이 포함됩니다. 이러한 도구는 **분석** 메뉴에서 액세스합니다. 자세한 내용은 [Visual Studio 진단 도구로 품질 개선](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)을 참조하세요.
+ Visual Studio에는 정적 및 런타임 분석을 위한 강력한 도구가 포함되어 있습니다. 정적 분석 도구는 디자인, 세계화, 상호 운용성, 성능, 보안 및 기타 범주의 잠재적 오류를 식별하는 데 도움이 됩니다. 성능 테스트 또는 프로파일링에는 프로그램이 실행되는 방식을 측정하는 작업이 포함됩니다. 이러한 도구는 **분석** 메뉴에서 액세스합니다. 자세한 내용은 [Visual Studio 진단 도구로 품질 개선](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)을 참조하세요.
 
 ## <a name="connecting-to-cloud-services-and-databases"></a>클라우드 서비스 및 데이터베이스에 연결
- Visual Studio의 [서버 탐색기](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) 창은 SQL Server 인스턴스, Azure, Salesforce.com, Office 365 및 웹 사이트를 포함하여 개인 설정 계정(로그인할 때 사용된 계정)으로 관리되는 모든 계정의 리소스를 보여 줍니다.
+ Visual Studio의 [서버 탐색기](https://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) 창은 SQL Server 인스턴스, Azure, Salesforce.com, Office 365 및 웹 사이트를 포함하여 개인 설정 계정(로그인할 때 사용된 계정)으로 관리되는 모든 계정의 리소스를 보여 줍니다.
 
  ![서버 탐색기](../ide/media/vs2015-serverexplorer3.png "vs2015_ServerExplorer3")
 
@@ -180,14 +177,14 @@ Visual Studio 2015의 새로운 기능에 자세히 알아보려면 원한다 �
 
  ![SQL Server 개체 탐색기](../ide/media/vs2015-sqlobjectexplorer.png "vs2015_SQLObjectExplorer")
 
-## <a name="deploying-your-finished-application"></a>완성된 응용 프로그램 배포
- 응용 프로그램을 고객에게 배포할 준비가 되면 Visual Studio에서는 Windows 스토어 또는 Sharepoint 사이트에 배포하는지, 아니면 Installshield 또는 Windows Installer 기술을 통해 배포하는지에 관계없이 배포 작업을 수행하는 도구를 제공합니다. 모든 도구는 IDE를 통해 액세스할 수 있습니다. 자세한 내용은 [응용 프로그램, 서비스 및 구성 요소 배포](../deployment/deploying-applications-services-and-components.md)를 참조하세요.
+## <a name="deploying-your-finished-application"></a>완성된 애플리케이션 배포
+ 애플리케이션을 고객에게 배포할 준비가 되면 Visual Studio에서는 Windows 스토어 또는 Sharepoint 사이트에 배포하는지, 아니면 Installshield 또는 Windows Installer 기술을 통해 배포하는지에 관계없이 배포 작업을 수행하는 도구를 제공합니다. 모든 도구는 IDE를 통해 액세스할 수 있습니다. 자세한 내용은 [애플리케이션, 서비스 및 구성 요소 배포](../deployment/deploying-applications-services-and-components.md)를 참조하세요.
 
 ## <a name="architecture-and-modeling-tools-enterprise-only"></a>아키텍처 및 모델링 도구(Enterprise만 해당)
- Visual Studio 아키텍처 및 모델링 도구를 사용하여 앱을 디자인하고 모델링할 수 있습니다. 이러한 도구는 코드의 구조, 동작 및 관계를 시각화하는 데 도움이 됩니다. 개발 프로세스의 일부로 응용 프로그램 수명 주기 전체에 걸쳐 다양한 상세 수준으로 모델을 만들 수 있습니다. 모델 요소를 Team Foundation Server 작업 항목 및 개발 계획에 연결하여 요구 사항, 작업, 테스트 사례, 버그 및 모델과 연결된 기타 작업을 추적할 수 있습니다. 자세한 내용은 [앱 디자인 및 모델링](../modeling/analyze-and-model-your-architecture.md)을 참조하세요.
+ Visual Studio 아키텍처 및 모델링 도구를 사용하여 앱을 디자인하고 모델링할 수 있습니다. 이러한 도구는 코드의 구조, 동작 및 관계를 시각화하는 데 도움이 됩니다. 개발 프로세스의 일부로 애플리케이션 수명 주기 전체에 걸쳐 다양한 상세 수준으로 모델을 만들 수 있습니다. 모델 요소를 Team Foundation Server 작업 항목 및 개발 계획에 연결하여 요구 사항, 작업, 테스트 사례, 버그 및 모델과 연결된 기타 작업을 추적할 수 있습니다. 자세한 내용은 [앱 디자인 및 모델링](../modeling/analyze-and-model-your-architecture.md)을 참조하세요.
 
 ## <a name="extending-visual-studio-through-the-visual-studio-sdk"></a>Visual Studio SDK를 통해 Visual Studio 확장
- Visual Studio는 확장 가능한 플랫폼입니다. Visual Studio 확장은 IDE와 통합되는 사용자 지정 도구입니다. 타사 확장을 추가하거나 고유한 확장을 만들 수 있습니다. 자세한 내용은 [Visual Studio 확장 개발](http://msdn.microsoft.com/library/5b1b5db3-6005-44cf-83b0-e608d7764d14)을 참조하세요.
+ Visual Studio는 확장 가능한 플랫폼입니다. Visual Studio 확장은 IDE와 통합되는 사용자 지정 도구입니다. 타사 확장을 추가하거나 고유한 확장을 만들 수 있습니다. 자세한 내용은 [Visual Studio 확장 개발](https://msdn.microsoft.com/library/5b1b5db3-6005-44cf-83b0-e608d7764d14)을 참조하세요.
 
  [Visual Studio User Experience Guidelines](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md) 은 Visual Studio용 확장을 작성하는 모든 사용자가 반드시 참조해야 하는 내용입니다. 이 플랫폼별 지침에는 대화 상자 디자인, 글꼴, 색, 아이콘, 공용 컨트롤뿐만 아니라, 새로운 기능이 Visual Studio와 완벽하게 통합되도록 만들어 줄 기타 정보까지 포함되어 있습니다.
 
@@ -199,12 +196,12 @@ Visual Studio 2015의 새로운 기능에 자세히 알아보려면 원한다 �
 |[방법: IDE에서 이동](../ide/how-to-move-around-in-the-visual-studio-ide.md)|[Visual Studio에서 개발 시작](../ide/get-started-developing-with-visual-studio.md)|
 |[Visual Studio 확장 찾기 및 사용](../ide/finding-and-using-visual-studio-extensions.md)|[솔루션 및 프로젝트](../ide/solutions-and-projects-in-visual-studio.md)|
 |[코드 작성](../ide/writing-code-in-the-code-and-text-editor.md)|[Visual Studio의 디버깅](../debugger/debugging-in-visual-studio.md)|
-|[프로파일링 도구](../profiling/profiling-tools.md)|[코드 품질 향상](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|
+|[프로파일링 도구](../profiling/profiling-tools.md)|[코드 품질 향상](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|
 |[사용자 인터페이스 디자인](../designers/designing-user-interfaces.md)|[아키텍처 분석 및 모델링](../modeling/analyze-and-model-your-architecture.md)|
-|[컴파일 및 빌드](../ide/compiling-and-building-in-visual-studio.md)|[응용 프로그램, 서비스 및 구성 요소 배포](../deployment/deploying-applications-services-and-components.md)|
+|[컴파일 및 빌드](../ide/compiling-and-building-in-visual-studio.md)|[애플리케이션, 서비스 및 구성 요소 배포](../deployment/deploying-applications-services-and-components.md)|
 |[Visual Studio IDE 64비트 지원](../ide/visual-studio-ide-64-bit-support.md)|[보안](../ide/security-in-visual-studio.md)|
 |[Visual Studio 샘플](../ide/visual-studio-samples.md)|[Microsoft 도움말 뷰어](../ide/microsoft-help-viewer.md)|
-|[응용 프로그램 전역화 및 지역화](../ide/globalizing-and-localizing-applications.md)|[UI 참조](../ide/reference/general-user-interface-elements-visual-studio.md)|
+|[애플리케이션 전역화 및 지역화](../ide/globalizing-and-localizing-applications.md)|[UI 참조](../ide/reference/general-user-interface-elements-visual-studio.md)|
 
 ## <a name="see-also"></a>참고 항목
 

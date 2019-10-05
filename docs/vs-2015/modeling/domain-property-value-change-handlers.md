@@ -1,25 +1,22 @@
 ---
 title: 도메인 속성 값 변경 처리기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, overriding event handlers
 ms.assetid: 96d8f392-045e-4bc5-b165-fbaa470a3e16
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7b79220a82ce2afc3cbafebedfbfea0c9caa649f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c8dac5a999b4f11fb066edfc1b1d4c057a999bae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232728"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442981"
 ---
 # <a name="domain-property-value-change-handlers"></a>도메인 속성 값 변경 처리기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,15 +55,15 @@ public partial class Comment
   
  속성 처리기와 관련하여 유의할 사항은 다음과 같습니다.  
   
--   속성 처리기 메서드는 사용자가 도메인 속성을 변경할 때와 프로그램 코드가 속성에 다른 값을 할당할 때 모두 호출됩니다.  
+- 속성 처리기 메서드는 사용자가 도메인 속성을 변경할 때와 프로그램 코드가 속성에 다른 값을 할당할 때 모두 호출됩니다.  
   
--   메서드는 값이 실제로 변경될 때만 호출됩니다. 프로그램 코드가 현재 값과 같은 값을 할당하는 경우에는 처리기가 호출되지 않습니다.  
+- 메서드는 값이 실제로 변경될 때만 호출됩니다. 프로그램 코드가 현재 값과 같은 값을 할당하는 경우에는 처리기가 호출되지 않습니다.  
   
--   계산된 속성 및 사용자 지정 저장소 도메인 속성에는 OnValueChanged 및 OnValueChanging 메서드가 없습니다.  
+- 계산된 속성 및 사용자 지정 스토리지 도메인 속성에는 OnValueChanged 및 OnValueChanging 메서드가 없습니다.  
   
--   변경 처리기를 사용하여 새 값을 수정할 수는 없습니다. 값을 특정 범위로 제한하는 등의 작업을 수행하려면 `ChangeRule`을 정의합니다.  
+- 변경 처리기를 사용하여 새 값을 수정할 수는 없습니다. 값을 특정 범위로 제한하는 등의 작업을 수행하려면 `ChangeRule`을 정의합니다.  
   
--   관계의 역할을 나타내는 속성에는 변경 처리기를 추가할 수 없습니다. 대신 관계 클래스에 대해 `AddRule` 및 `DeleteRule`을 정의합니다. 이러한 규칙은 링크를 만들거나 변경할 때 트리거됩니다. 자세한 내용은 [규칙이 전파 변경 내용을 내에서 모델](../modeling/rules-propagate-changes-within-the-model.md)합니다.  
+- 관계의 역할을 나타내는 속성에는 변경 처리기를 추가할 수 없습니다. 대신 관계 클래스에 대해 `AddRule` 및 `DeleteRule`을 정의합니다. 이러한 규칙은 링크를 만들거나 변경할 때 트리거됩니다. 자세한 내용은 [규칙이 전파 변경 내용을 내에서 모델](../modeling/rules-propagate-changes-within-the-model.md)합니다.  
   
 ### <a name="changes-in-and-out-of-the-store"></a>Store 내부 및 외부의 변경 사항  
  속성 처리기 메서드는 변경을 시작한 트랜잭션 내에서 호출됩니다. 그러므로 새 트랜잭션을 열지 않고 Store에서 추가로 변경할 수 있습니다. 변경하면 처리기가 추가로 호출될 수 있습니다.  
@@ -97,10 +94,10 @@ if (newValue > 10)
   
 ```  
   
-### <a name="alternative-technique-calculated-properties"></a>대체 기술: 계산된 속성  
+### <a name="alternative-technique-calculated-properties"></a>대체 기술: 계산 된 속성  
  위의 예에서는 OnValueChanged()를 사용하여 도메인 속성 간에 값을 전파하는 방법을 보여줍니다. 이 속성에는 자체 저장 값이 있습니다.  
   
- 대신 파생 속성을 계산된 속성으로 정의할 수 있습니다. 이 경우 속성은 자체 저장소를 포함하지 않으며 속성의 값이 필요할 때마다 정의 기능을 평가합니다. 자세한 내용은 [사용자 지정 저장소 속성 및 계산](../modeling/calculated-and-custom-storage-properties.md)합니다.  
+ 대신 파생 속성을 계산된 속성으로 정의할 수 있습니다. 이 경우 속성은 자체 스토리지를 포함하지 않으며 속성의 값이 필요할 때마다 정의 기능을 평가합니다. 자세한 내용은 [사용자 지정 저장소 속성 및 계산](../modeling/calculated-and-custom-storage-properties.md)합니다.  
   
  앞의 예에서 대신 설정할 수 있습니다 합니다 **종류** 필드에 `TextLengthCount` 되도록 **계산** DSL 정의에서 합니다. 제공 하는 사용자 고유의 **가져올** 이 도메인 속성에 대 한 메서드. 합니다 **가져오기** 메서드는의 현재 길이 반환 합니다 `Text` 문자열입니다.  
   
@@ -114,7 +111,7 @@ if (newValue > 10)
  ChangeRule을 사용하여 속성의 새 값이 특정 범위 내에 유지되도록 조정할 수도 있습니다.  
   
 > [!WARNING]
->  규칙이 Store 콘텐츠를 변경하면 다른 규칙과 속성 처리기가 트리거될 수 있습니다. 규칙을 트리거한 속성이 규칙에 의해 변경되면 해당 규칙이 다시 호출됩니다. 규칙 정의로 인해 무한 트리거가 발생하지 않는지 확인해야 합니다.  
+> 규칙이 Store 콘텐츠를 변경하면 다른 규칙과 속성 처리기가 트리거될 수 있습니다. 규칙을 트리거한 속성이 규칙에 의해 변경되면 해당 규칙이 다시 호출됩니다. 규칙 정의로 인해 무한 트리거가 발생하지 않는지 확인해야 합니다.  
   
 ```  
 using Microsoft.VisualStudio.Modeling;   
@@ -177,6 +174,3 @@ namespace msft.FieldChangeSample
   }  
 }  
 ```  
-  
-
-

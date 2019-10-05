@@ -1,14 +1,9 @@
 ---
 title: 일반적인 MSBuild 프로젝트 속성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,18 +18,17 @@ ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
 caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 30371d20e240e5679664a687c5ca098519cac9c0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1eb56d1334eb18dd5872457d032e5780a3f75eb3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300055"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698716"
 ---
 # <a name="common-msbuild-project-properties"></a>일반적인 MSBuild 프로젝트 속성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 다음 표에서는 Visual Studio 프로젝트 파일에 정의되거나 MSBuild가 제공하는 .targets 파일에 포함된 자주 사용하는 속성을 보여 줍니다.  
   
  Visual Studio의 프로젝트 파일(.csproj, .vbproj, vcxproj 등)은 IDE를 사용하여 프로젝트를 빌드할 때 실행하는 MSBuild XML 코드를 포함합니다. 일반적으로 프로젝트에서는 하나 이상의 .targets 파일을 가져와서 빌드 프로세스를 정의합니다. 자세한 내용은 [.Targets 파일](../msbuild/msbuild-dot-targets-files.md)을 참조하세요.  
@@ -47,7 +41,7 @@ ms.locfileid: "49300055"
 |AddModules|컴파일러에서 지정된 파일의 모든 형식 정보를 컴파일하고 있는 프로젝트에 사용할 수 있도록 합니다. 이 속성은 `/addModules` 컴파일러 스위치와 동일합니다.|  
 |ALToolPath|AL.exe를 찾을 수 있는 경로입니다. 이 속성은 다른 버전의 AL.exe를 사용으로 설정하기 위해 현재 버전을 재정의합니다.|  
 |ApplicationIcon|Win32 아이콘으로 포함하기 위해 컴파일러에 전달할 .ico 아이콘 파일입니다. 이 속성은 `/win32icon` 컴파일러 스위치와 동일합니다.|  
-|ApplicationManifest|외부 UAC(사용자 계정 컨트롤) 매니페스트 정보를 생성하는 데 사용되는 파일의 경로를 지정합니다. [!INCLUDE[windowsver](../includes/windowsver-md.md)]를 대상으로 하는 Visual Studio 프로젝트에만 적용됩니다.<br /><br /> 대부분의 경우 매니페스트는 포함되어 있지만 등록이 필요 없는 COM 또는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 배포를 사용할 경우 매니페스트가 응용 프로그램 어셈블리와 함께 설치되는 외부 파일일 수 있습니다. 자세한 내용은 이 항목에서 NoWin32Manifest 속성을 참조하십시오.|  
+|ApplicationManifest|외부 UAC(사용자 계정 컨트롤) 매니페스트 정보를 생성하는 데 사용되는 파일의 경로를 지정합니다. [!INCLUDE[windowsver](../includes/windowsver-md.md)]를 대상으로 하는 Visual Studio 프로젝트에만 적용됩니다.<br /><br /> 대부분의 경우 매니페스트는 포함되어 있지만 등록이 필요 없는 COM 또는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 배포를 사용할 경우 매니페스트가 애플리케이션 어셈블리와 함께 설치되는 외부 파일일 수 있습니다. 자세한 내용은 이 항목에서 NoWin32Manifest 속성을 참조하십시오.|  
 |AssemblyOriginatorKeyFile|어셈블리를 서명하는 데 사용되는 파일(.snk 또는 .pfx) 및 [ResolveKeySource 작업](../msbuild/resolvekeysource-task.md)으로 전달되어 어셈블리를 서명하는 데 사용되는 실제 키를 생성하는 파일을 지정합니다.|  
 |AssemblySearchPaths|빌드 시간 참조 어셈블리 확인 동안 검색할 위치의 목록입니다. 앞에 있는 경로가 뒤에 있는 항목보다 우선하므로 이 목록에 경로가 표시되는 순서는 중요합니다.|  
 |AssemblyName|프로젝트가 빌드된 후의 마지막 출력 어셈블리 이름입니다.|  
@@ -79,19 +73,19 @@ ms.locfileid: "49300055"
 |IntermediateOutputPath|경로가 지정되지 않은 경우 `BaseIntermediateOutputPath`에서 파생된 것과 같은 전체 중간 출력 경로입니다. 예를 들어 \obj\debug\\입니다. 이 속성이 재정의되면 `BaseIntermediateOutputPath`를 설정해도 아무런 효과가 없습니다.|  
 |KeyContainerName|강력한 이름 키 컨테이너의 이름입니다.|  
 |KeyOriginatorFile|강력한 이름 키 파일의 이름입니다.|  
-|NoWin32Manifest|컴파일러에서 출력 어셈블리에 기본 Win32 매니페스트를 생성하는지 여부를 결정합니다. 기본값인 `false`를 설정하면 기본 Win32 매니페스트가 모든 응용 프로그램에 대해 생성됩니다. 이 속성은 vbc.exe의 `/nowin32manifest` 컴파일러 스위치와 동일합니다.|  
+|NoWin32Manifest|컴파일러에서 출력 어셈블리에 기본 Win32 매니페스트를 생성하는지 여부를 결정합니다. 기본값인 `false`를 설정하면 기본 Win32 매니페스트가 모든 애플리케이션에 대해 생성됩니다. 이 속성은 vbc.exe의 `/nowin32manifest` 컴파일러 스위치와 동일합니다.|  
 |ModuleAssemblyName|컴파일된 모듈이 통합되어야 하는 어셈블리의 이름입니다. 이 속성은 `/moduleassemblyname` 컴파일러 스위치와 동일합니다.|  
 |NoLogo|컴파일러 로고를 해제할지 여부를 나타내는 부울 값입니다. 이 속성은 `/nologo` 컴파일러 스위치와 동일합니다.|  
 |NoStdLib|표준 라이브러리(mscorlib.dll)를 참조하지 않을지 여부를 나타내는 부울 값입니다. 기본값은 `false`입니다.|  
 |NoVBRuntimeReference|[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 런타임(Microsoft.VisualBasic.dll)이 프로젝트에 참조로 포함되어야 하는지 여부를 나타내는 부울 값입니다.|  
-|NoWin32Manifest|응용 프로그램의 실행 파일에 UAC(사용자 계정 컨트롤) 매니페스트 정보를 포함할지 여부를 나타내는 부울 값입니다. [!INCLUDE[windowsver](../includes/windowsver-md.md)]를 대상으로 하는 Visual Studio 프로젝트에만 적용됩니다. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 및 등록이 필요 없는 COM을 사용하여 배포된 프로젝트에서는 이 요소가 무시됩니다. `False`(기본값)는 응용 프로그램의 실행 파일에 UAC(사용자 계정 컨트롤) 매니페스트 정보를 포함할지 여부를 지정합니다. `True`는 UAC 매니페스트 정보가 포함되지 않음을 지정합니다.<br /><br /> 이 속성은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 대상으로 하는 [!INCLUDE[windowsver](../includes/windowsver-md.md)] 프로젝트에만 적용됩니다. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 및 등록이 필요 없는 COM을 사용하여 배포된 프로젝트에서는 이 속성이 무시됩니다.<br /><br /> [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 응용 프로그램의 실행 파일에 매니페스트 정보를 포함하지 않으려는 경우에만 NoWin32Manifest를 추가해야 합니다. 이 프로세스를 *가상화*라고 합니다. 가상화를 사용하려면 다음과 같이 `<ApplicationManifest>`와 `<NoWin32Manifest>`를 함께 설정합니다.<br /><br /> -   [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 프로젝트의 경우 `<ApplicationManifest>` 노드를 제거합니다. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 프로젝트에서는 `<ApplicationManifest>` 노드가 있으면 `<NoWin32Manifest>`가 무시됩니다.<br />-   [!INCLUDE[csprcs](../includes/csprcs-md.md)] 프로젝트의 경우 `<ApplicationManifest>`를 `False`로, `<NoWin32Manifest>`를 `True`로 설정합니다. [!INCLUDE[csprcs](../includes/csprcs-md.md)] 프로젝트에서는 `<ApplicationManifest>`가 `<NoWin32Manifest>`를 재정의합니다.|  
+|NoWin32Manifest|애플리케이션의 실행 파일에 UAC(사용자 계정 컨트롤) 매니페스트 정보를 포함할지 여부를 나타내는 부울 값입니다. [!INCLUDE[windowsver](../includes/windowsver-md.md)]를 대상으로 하는 Visual Studio 프로젝트에만 적용됩니다. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 및 등록이 필요 없는 COM을 사용하여 배포된 프로젝트에서는 이 요소가 무시됩니다. `False`(기본값)는 애플리케이션의 실행 파일에 UAC(사용자 계정 컨트롤) 매니페스트 정보를 포함할지 여부를 지정합니다. `True`는 UAC 매니페스트 정보가 포함되지 않음을 지정합니다.<br /><br /> 이 속성은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 대상으로 하는 [!INCLUDE[windowsver](../includes/windowsver-md.md)] 프로젝트에만 적용됩니다. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 및 등록이 필요 없는 COM을 사용하여 배포된 프로젝트에서는 이 속성이 무시됩니다.<br /><br /> [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 애플리케이션의 실행 파일에 매니페스트 정보를 포함하지 않으려는 경우에만 NoWin32Manifest를 추가해야 합니다. 이 프로세스를 *가상화*라고 합니다. 가상화를 사용하려면 다음과 같이 `<ApplicationManifest>`와 `<NoWin32Manifest>`를 함께 설정합니다.<br /><br /> -   [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 프로젝트의 경우 `<ApplicationManifest>` 노드를 제거합니다. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 프로젝트에서는 `<ApplicationManifest>` 노드가 있으면 `<NoWin32Manifest>`가 무시됩니다.<br />-   [!INCLUDE[csprcs](../includes/csprcs-md.md)] 프로젝트의 경우 `<ApplicationManifest>`를 `False`로, `<NoWin32Manifest>`를 `True`로 설정합니다. [!INCLUDE[csprcs](../includes/csprcs-md.md)] 프로젝트에서는 `<ApplicationManifest>`가 `<NoWin32Manifest>`를 재정의합니다.|  
 |Optimize|`true`로 설정하면 컴파일러 최적화를 사용으로 설정하는 부울 값입니다. 이 속성은 `/optimize` 컴파일러 스위치와 동일합니다.|  
 |OptionCompare|문자열 비교 방법을 지정합니다. 유효한 값은 "binary" 또는 "text"입니다. 이 속성은 vbc.exe의 `/optioncompare` 컴파일러 스위치와 동일합니다.|  
 |OptionExplicit|`true`로 설정하면 소스 코드에서 변수를 명시적으로 선언해야 하는 부울 값입니다. 이 속성은 `/optionexplicit` 컴파일러 스위치와 동일합니다.|  
 |OptionInfer|`true`로 설정하면 변수의 형식 유추를 사용으로 설정하는 부울 값입니다. 이 속성은 `/optioninfer` 컴파일러 스위치와 동일합니다.|  
 |OptionStrict|`true`로 설정하면 빌드 작업에서 엄격한 형식 의미를 적용하여 암시적 형식 변환을 제한하게 하는 부울 값입니다. 이 속성은 vbc.exe 컴파일러의 `/optionstrict` 스위치와 동일합니다.|  
 |OutputPath|프로젝트 디렉터리에 상대적인 출력 디렉터리 경로(예: "bin\Debug")를 지정합니다.|  
-|OutputType|출력 파일의 파일 형식을 지정합니다. 이 매개 변수는 다음 값 중 하나를 가질 수 있습니다.<br /><br /> -   Library. 코드 라이브러리를 만듭니다. 기본값입니다.<br />-   Exe. 콘솔 응용 프로그램을 만듭니다.<br />-   Module. 모듈을 만듭니다.<br />-   Winexe. Windows 기반 프로그램을 만듭니다.<br /><br /> 이 속성은 vbc.exe 컴파일러의 `/target` 스위치와 동일합니다.|  
+|OutputType|출력 파일의 파일 형식을 지정합니다. 이 매개 변수는 다음 값 중 하나를 가질 수 있습니다.<br /><br /> -   Library. 코드 라이브러리를 만듭니다. 기본값입니다.<br />-   Exe. 콘솔 애플리케이션을 만듭니다.<br />-   Module. 모듈을 만듭니다.<br />-   Winexe. Windows 기반 프로그램을 만듭니다.<br /><br /> 이 속성은 vbc.exe 컴파일러의 `/target` 스위치와 동일합니다.|  
 |OverwriteReadOnlyFiles|빌드에서 읽기 전용 파일을 덮어쓸지 아니면 오류를 트리거할지 여부를 나타내는 부울 값입니다.|  
 |PdbFile|내보낼 .pdb 파일의 파일 이름입니다. 이 속성은 csc.exe 컴파일러의 `/pdb` 스위치와 동일합니다.|  
 |플랫폼|빌드하고 있는 운영 체제입니다. 유효한 값은 "Any CPU", "x86" 및 "x64"입니다.|  
@@ -120,9 +114,9 @@ ms.locfileid: "49300055"
 |Satellite_Version|위성 어셈블리의 버전 정보를 지정합니다.|  
 |Satellite_Win32Icon|위성 어셈블리에 .ico 아이콘 파일을 삽입합니다.|  
 |Satellite_Win32Resource|위성 어셈블리에 Win32 리소스(.res 파일)를 삽입합니다.|  
-|SubsystemVersion|생성된 실행 파일이 사용할 수 있는 하위 시스템의 최소 버전을 지정합니다. 이 속성은 `/subsystemversion` 컴파일러 스위치와 동일합니다. 이 속성의 기본값에 대한 자세한 내용은 [/subsystemversion(Visual Basic)](http://msdn.microsoft.com/library/08be22b2-f447-4cd3-8203-120b1b920b54) 또는 [/subsystemversion(C# 컴파일러 옵션)](http://msdn.microsoft.com/library/a99fce81-9d92-4813-9874-bee777041445)을 참조하세요.|  
-|TargetCompactFramework|빌드하고 있는 응용 프로그램을 실행하는 데 필요한 .NET Compact Framework의 버전입니다. 이를 지정하면 다른 경우에는 참조할 수 없는 특정 프레임워크 어셈블리를 참조할 수 있습니다.|  
-|TargetFrameworkVersion|빌드하고 있는 응용 프로그램을 실행하는 데 필요한 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]의 버전입니다. 이를 지정하면 다른 경우에는 참조할 수 없는 특정 프레임워크 어셈블리를 참조할 수 있습니다.|  
+|SubsystemVersion|생성된 실행 파일이 사용할 수 있는 하위 시스템의 최소 버전을 지정합니다. 이 속성은 `/subsystemversion` 컴파일러 스위치와 동일합니다. 이 속성의 기본값에 대한 자세한 내용은 [/subsystemversion(Visual Basic)](https://msdn.microsoft.com/library/08be22b2-f447-4cd3-8203-120b1b920b54) 또는 [/subsystemversion(C# 컴파일러 옵션)](https://msdn.microsoft.com/library/a99fce81-9d92-4813-9874-bee777041445)을 참조하세요.|  
+|TargetCompactFramework|빌드하고 있는 애플리케이션을 실행하는 데 필요한 .NET Compact Framework의 버전입니다. 이를 지정하면 다른 경우에는 참조할 수 없는 특정 프레임워크 어셈블리를 참조할 수 있습니다.|  
+|TargetFrameworkVersion|빌드하고 있는 애플리케이션을 실행하는 데 필요한 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]의 버전입니다. 이를 지정하면 다른 경우에는 참조할 수 없는 특정 프레임워크 어셈블리를 참조할 수 있습니다.|  
 |TreatWarningsAsErrors|`true`이면 모든 경고가 오류로 처리되도록 하는 부울 매개 변수입니다. 이 매개 변수는 `/nowarn` 컴파일러 스위치와 동일합니다.|  
 |UseHostCompilerIfAvailable|`true`이면 빌드 작업에서 가능한 경우 in-process 컴파일러 개체를 사용하도록 하는 부울 매개 변수입니다. 이 매개 변수는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서만 사용됩니다.|  
 |Utf8Output|`true`이면 UTF-8 인코딩을 사용하여 컴파일러 출력을 기록하는 부울 매개 변수입니다. 이 매개 변수는 `/utf8Output` 컴파일러 스위치와 동일합니다.|  
@@ -136,6 +130,3 @@ ms.locfileid: "49300055"
   
 ## <a name="see-also"></a>참고 항목  
  [일반적인 MSBuild 프로젝트 항목](../msbuild/common-msbuild-project-items.md)
-
-
-

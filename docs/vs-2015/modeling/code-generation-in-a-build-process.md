@@ -1,12 +1,9 @@
 ---
 title: 코드를 빌드 프로세스에서 생성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
@@ -14,13 +11,13 @@ ms.assetid: 4da43429-2a11-4d7e-b2e0-9e4af7033b5a
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e7cadbf9d4d99fa9deaf4d71545f43d2bf49a3f3
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+manager: jillfra
+ms.openlocfilehash: f5ecf6f09efb64e521740b74151fc160112fe7a3
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281812"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826050"
 ---
 # <a name="code-generation-in-a-build-process"></a>빌드 프로세스의 코드 생성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,41 +27,41 @@ ms.locfileid: "52281812"
 
 즉, MSBuild에서 텍스트 템플릿을 빌드하는 경우와 같은 방법으로 프로젝트 파일 이름과 같은 항목에 액세스할 수 없습니다. 그러나 수 있습니다 [빌드 매개 변수를 사용 하 여 텍스트 템플릿 지시문 프로세서에 환경 정보를 전달할](#parameters)합니다.
 
-##  <a name="buildserver"></a> 컴퓨터 구성
+## <a name="buildserver"></a> 컴퓨터 구성
 
-개발 컴퓨터에서 빌드 작업을 사용 하려면 설치 [Modeling SDK for Visual Studio](http://www.microsoft.com/download/details.aspx?id=40754)합니다.
+개발 컴퓨터에서 빌드 작업을 사용 하려면 설치 [Modeling SDK for Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148)합니다.
 
-하는 경우 [빌드 서버](http://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) 는 Visual Studio 설치 되지 않은 컴퓨터에서 실행 개발 컴퓨터에서 빌드 컴퓨터로 다음 파일을 복사 합니다. 여기서 '*'는 가장 최신 버전 번호로 대체합니다.
+하는 경우 [빌드 서버](https://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) 는 Visual Studio 설치 되지 않은 컴퓨터에서 실행 개발 컴퓨터에서 빌드 컴퓨터로 다음 파일을 복사 합니다. 여기서 '*'는 가장 최신 버전 번호로 대체합니다.
 
--   $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
+- $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 
-    -   Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
+  - Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
 
-    -   Microsoft.TextTemplating.Build.Tasks.dll
+  - Microsoft.TextTemplating.Build.Tasks.dll
 
-    -   Microsoft.TextTemplating.targets
+  - Microsoft.TextTemplating.targets
 
--   $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
+- $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
-    -   Microsoft.VisualStudio.TextTemplating.*.0.dll
+  - Microsoft.VisualStudio.TextTemplating.*.0.dll
 
-    -   Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll(여러 파일)
+  - Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll(여러 파일)
 
-    -   Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
+  - Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
 
--   $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
+- $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
 
-    -   Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
+  - Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
 
 ## <a name="to-edit-the-project-file"></a>프로젝트 파일을 편집하려면
 
-MSBuild에서 일부 기능을 구성하기 위해 프로젝트 파일을 편집해야 합니다.
+MSBuild에서 일부 특성을 구성하기 위해 프로젝트 파일을 편집해야 합니다.
 
 솔루션 탐색기에서 선택 **언로드** 프로젝트의 상황에 맞는 메뉴에서입니다. 이렇게 하면 XML 편집기에서 .csproj 또는 .vbproj 파일을 편집할 수 있습니다.
 
 편집을 마쳤으면 선택할 **다시 로드**합니다.
 
-## <a name="import-the-text-transformation-targets"></a>텍스트 변형 대상 가져오기
+## <a name="import-the-text-transformation-targets"></a>텍스트 변환 대상 가져오기
 
 .vbproj 또는 .csproj 파일에서 다음과 같은 줄을 찾습니다.
 
@@ -89,11 +86,11 @@ MSBuild에서 일부 기능을 구성하기 위해 프로젝트 파일을 편집
   <Import Project="$(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets" />
 ```
 
-## <a name="transforming-templates-in-a-build"></a>빌드에서 템플릿 변환
+## <a name="transforming-templates-in-a-build"></a>빌드에서 템플릿 변형
 
-변환 작업을 제어하기 위해 프로젝트 파일에 삽입할 수 있는 몇 가지 속성이 있습니다.
+변형 작업을 제어하기 위해 프로젝트 파일에 삽입할 수 있는 몇 가지 속성이 있습니다.
 
--   모든 빌드를 시작할 때 변환 작업을 실행합니다.
+- 모든 빌드를 시작할 때 변환 작업을 실행합니다.
 
     ```xml
     <PropertyGroup>
@@ -101,7 +98,7 @@ MSBuild에서 일부 기능을 구성하기 위해 프로젝트 파일을 편집
     </PropertyGroup>
     ```
 
--   예를 들어, 읽기 전용 파일은 체크 아웃되지 않기 때문에 파일을 덮어씁니다.
+- 예를 들어, 읽기 전용 파일은 체크 아웃되지 않기 때문에 파일을 덮어씁니다.
 
     ```xml
     <PropertyGroup>
@@ -109,7 +106,7 @@ MSBuild에서 일부 기능을 구성하기 위해 프로젝트 파일을 편집
     </PropertyGroup>
     ```
 
--   항상 모든 템플릿 변환:
+- 항상 모든 템플릿 변형:
 
     ```xml
     <PropertyGroup>
@@ -117,17 +114,17 @@ MSBuild에서 일부 기능을 구성하기 위해 프로젝트 파일을 편집
     </PropertyGroup>
     ```
 
-     기본적으로 T4 MSBuild 작업은 출력 파일이 명령 프로세서나 템플릿에 의해 이전에 읽혀진 파일이나 포함된 모든 파일 또는 해당 템플릿 파일보다 오래되었을 경우 출력 파일을 재생성합니다. 이는 템플릿과 출력 파일의 날짜만 비교하는 Visual Studio의 모든 템플릿 변환 명령을 사용하는 것보다 훨씬 더 강력한 종속성 테스트입니다.
+     기본적으로 T4 MSBuild 작업은 출력 파일이 명령 프로세서나 템플릿에 의해 이전에 읽혀진 파일이나 포함된 모든 파일 또는 해당 템플릿 파일보다 오래되었을 경우 출력 파일을 재생성합니다. 이는 템플릿과 출력 파일의 날짜만 비교하는 Visual Studio의 모든 템플릿 변형 명령을 사용하는 것보다 훨씬 더 강력한 종속성 테스트입니다.
 
-프로젝트에서 텍스트 변환만 수행하려면 TransformAll 작업을 호출합니다.
+프로젝트에서 텍스트 변형만 수행하려면 TransformAll 작업을 호출합니다.
 
 `msbuild myProject.csproj /t:TransformAll`
 
-특정한 텍스트 템플릿을 변환하려면 다음을 수행합니다.
+특정한 텍스트 템플릿을 변형하려면 다음을 수행합니다.
 
 `msbuild myProject.csproj /t:Transform /p:TransformFile="Template1.tt"`
 
-변환 파일에서 와일드카드를 사용할 수 있습니다.
+변형 파일에서 와일드카드를 사용할 수 있습니다.
 
 `msbuild dsl.csproj /t:Transform /p:TransformFile="GeneratedCode\**\*.tt"`
 
@@ -216,7 +213,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-##  <a name="parameters"></a> 템플릿으로 빌드 컨텍스트 데이터 전달
+## <a name="parameters"></a> 템플릿으로 빌드 컨텍스트 데이터 전달
 
 프로젝트 파일에서 매개 변수 값을 설정할 수 있습니다. 예를 들어, 빌드 속성을 전달할 수 있습니다 하 고 [환경 변수](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -237,7 +234,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 The project folder is: <#= ProjectFolder #>
 ```
 
-##  <a name="msbuild"></a> 어셈블리의 프로젝트 속성을 사용 하 여 및 include 지시문
+## <a name="msbuild"></a> 어셈블리의 프로젝트 속성을 사용 하 여 및 include 지시문
 
 $(SolutionDir)과 같은 Visual Studio 매크로는 MSBuild에서 작동하지 않습니다. 대신 적절한 프로젝트 속성을 사용할 수 있습니다.
 
@@ -270,17 +267,17 @@ $(SolutionDir)과 같은 Visual Studio 매크로는 MSBuild에서 작동하지 �
 
 **빌드 서버에서 템플릿을 변형 해야 하는 이유 필자는 이미 내 코드를 체크 인하기 전에 Visual Studio에서 템플릿을 변환 합니다.**
 
-포함 파일을 업데이트하거나 템플릿에서 다른 파일을 읽은 경우 Visual Studio가 파일을 자동으로 변형하지 않습니다. 빌드 중에 템플릿이 변형되면 모두 최신 상태임을 나타냅니다.
+포함 파일을 업데이트하거나 템플릿에서 다른 파일을 읽은 경우 Visual Studio가 파일을 자동으로 변환하지 않습니다. 빌드 중에 템플릿이 변형되면 모두 최신 상태임을 나타냅니다.
 
 **다른 옵션은 무엇이 있습니다 텍스트 템플릿 변환에 대 한?**
 
--   합니다 [TextTransform 유틸리티](../modeling/generating-files-with-the-texttransform-utility.md) 명령 스크립트에서 사용할 수 있습니다. 대부분의 경우 MSBuild를 사용하는 것이 더 쉽습니다.
+- 합니다 [TextTransform 유틸리티](../modeling/generating-files-with-the-texttransform-utility.md) 명령 스크립트에서 사용할 수 있습니다. 대부분의 경우 MSBuild를 사용하는 것이 더 쉽습니다.
 
--   [VS 확장에서 텍스트 변환 호출](../modeling/invoking-text-transformation-in-a-vs-extension.md)
+- [VS 확장에서 텍스트 변환 호출](../modeling/invoking-text-transformation-in-a-vs-extension.md)
 
--   [디자인 타임 텍스트 템플릿](../modeling/design-time-code-generation-by-using-t4-text-templates.md) Visual Studio에서 변환 됩니다.
+- [디자인 타임 텍스트 템플릿](../modeling/design-time-code-generation-by-using-t4-text-templates.md) Visual Studio에서 변환 됩니다.
 
--   [런타임 텍스트 템플릿](../modeling/run-time-text-generation-with-t4-text-templates.md) 응용 프로그램에서 런타임에 변형 됩니다.
+- [런타임 텍스트 템플릿](../modeling/run-time-text-generation-with-t4-text-templates.md) 응용 프로그램에서 런타임에 변형 됩니다.
 
 ## <a name="read-more"></a>자세히 보기
 
@@ -288,4 +285,4 @@ T4 MSbuild 템플릿, $(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.tar
 
 - [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)
 - [Visual Studio Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)
-- [Oleg 동기화: T4:MSBuild 통합 이해](http://www.olegsych.com/2010/04/understanding-t4-msbuild-integration/)
+- [Oleg 동기화: T4:MSBuild 통합 이해](https://github.com/olegsych/T4Toolbox)

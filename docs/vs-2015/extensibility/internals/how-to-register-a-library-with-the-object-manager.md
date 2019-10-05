@@ -1,14 +1,9 @@
 ---
 title: '방법: 개체 관리자에 라이브러리 등록 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - libraries, registering with object manager
 - IVsLibrary2 interface, registering library with object manager
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: f124dd05-cb0f-44ad-bb2a-7c0b34ef4038
 caps.latest.revision: 27
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ed547d82ccacec44383fed29a0c04bb363b10084
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c40c695a912e97269263ba14747b72382847324d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732953"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162035"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>방법: 개체 관리자에 라이브러리 등록
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ ms.locfileid: "51732953"
   
 #### <a name="to-register-a-library-with-the-object-manager"></a>개체 관리자를 사용 하 여 라이브러리를 등록 하려면  
   
-1.  라이브러리를 만듭니다.  
+1. 라이브러리를 만듭니다.  
   
     ```vb  
     Private m_CallBrowserLibrary As CallBrowser.Library = Nothing  
@@ -62,7 +57,7 @@ ms.locfileid: "51732953"
   
     ```  
   
-2.  개체에 대 한 참조를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> 입력 하 고 호출을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> 메서드.  
+2. 개체에 대 한 참조를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> 입력 하 고 호출을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> 메서드.  
   
     ```vb  
     Private Sub RegisterLibrary()  
@@ -118,7 +113,7 @@ ms.locfileid: "51732953"
   
 #### <a name="to-unregister-a-library-with-the-object-manager"></a>라이브러리 개체 관리자를 등록 취소  
   
-1.  개체에 대 한 참조를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> 입력 하 고 호출을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> 메서드.  
+1. 개체에 대 한 참조를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> 입력 하 고 호출을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> 메서드.  
   
     ```vb  
     Private Sub UnregisterLibrary()  
@@ -171,8 +166,7 @@ ms.locfileid: "51732953"
   
     ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [레거시 언어 서비스 확장성](../../extensibility/internals/legacy-language-service-extensibility.md)   
  [기호 검색 도구를 지원합니다.](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [방법: 라이브러리에서 제공하는 기호 목록을 개체 관리자에 노출](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
-

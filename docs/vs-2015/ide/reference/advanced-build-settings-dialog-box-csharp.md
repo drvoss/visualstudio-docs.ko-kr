@@ -1,14 +1,9 @@
 ---
 title: 고급 빌드 설정 대화 상자(C#) | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - cs.AdvancedBuildSettings
 helpviewer_keywords:
@@ -17,18 +12,17 @@ ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9f3d62f6cd393dfccdaeb9047bac4780546f0087
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 57fa315be38b867365c4a922b8ad8b98d784c3f4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811979"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699987"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>고급 빌드 설정 대화 상자(C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **프로젝트 디자이너**의 **고급 빌드 설정** 대화 상자를 사용하여 프로젝트의 고급 빌드 구성 속성을 지정합니다. 이 대화 상자는 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 프로젝트에만 적용됩니다.  
   
 ## <a name="general"></a>일반  
@@ -45,22 +39,22 @@ ms.locfileid: "49811979"
   
    현재 버전을 대상으로 지정합니다.  
   
-  자세한 내용은 [/langversion(C# 컴파일러 옵션)](http://msdn.microsoft.com/library/3fb00b05-a0ff-4782-b313-13a4c0f62d94)을 참조하세요.  
+  자세한 내용은 [/langversion(C# 컴파일러 옵션)](https://msdn.microsoft.com/library/3fb00b05-a0ff-4782-b313-13a4c0f62d94)을 참조하세요.  
   
   **내부 컴파일러 오류 보고**  
-  Microsoft에 컴파일러 오류를 보고할지 여부를 지정합니다. **prompt**(기본값)로 설정되면 내부 컴파일러 오류가 발생할 경우 오류 보고서를 전자 방식으로 Microsoft에 보내는 옵션을 제공하는 프롬프트가 표시됩니다. **send**로 설정되면 오류 보고서가 자동으로 전송됩니다. **queue**로 설정되면 오류 보고서가 대기합니다. **none**으로 설정되면 오류가 컴파일러의 텍스트 출력으로만 보고됩니다. 자세한 내용은 [/errorreport(C# 컴파일러 옵션)](http://msdn.microsoft.com/library/bd0e7493-b79d-4369-9c3f-ba26ebdfbedf)를 참조하세요.  
+  Microsoft에 컴파일러 오류를 보고할지 여부를 지정합니다. **prompt**(기본값)로 설정되면 내부 컴파일러 오류가 발생할 경우 오류 보고서를 전자 방식으로 Microsoft에 보내는 옵션을 제공하는 프롬프트가 표시됩니다. **send**로 설정되면 오류 보고서가 자동으로 전송됩니다. **queue**로 설정되면 오류 보고서가 대기합니다. **none**으로 설정되면 오류가 컴파일러의 텍스트 출력으로만 보고됩니다. 자세한 내용은 [/errorreport(C# 컴파일러 옵션)](https://msdn.microsoft.com/library/bd0e7493-b79d-4369-9c3f-ba26ebdfbedf)를 참조하세요.  
   
   **산술 연산 오버플로/언더플로 확인**  
-  정수 산술 문이 [checked](http://msdn.microsoft.com/library/718a1194-988d-48a3-b089-d6ee8bd1608d) 또는 [unchecked](http://msdn.microsoft.com/library/0c021f7c-923f-4b3d-a58f-55336f5ac27e) 키워드의 범위에 포함되지 않고 데이터 형식 범위를 벗어난 값을 생성할 경우 런타임 예외를 발생시킬지 여부를 지정합니다. 자세한 내용은 [/checked(C# 컴파일러 옵션)](http://msdn.microsoft.com/library/fb7475d3-e6a6-4e6d-b86c-69e7a74c854b)를 참조하세요.  
+  정수 산술 문이 [checked](https://msdn.microsoft.com/library/718a1194-988d-48a3-b089-d6ee8bd1608d) 또는 [unchecked](https://msdn.microsoft.com/library/0c021f7c-923f-4b3d-a58f-55336f5ac27e) 키워드의 범위에 포함되지 않고 데이터 형식 범위를 벗어난 값을 생성할 경우 런타임 예외를 발생시킬지 여부를 지정합니다. 자세한 내용은 [/checked(C# 컴파일러 옵션)](https://msdn.microsoft.com/library/fb7475d3-e6a6-4e6d-b86c-69e7a74c854b)를 참조하세요.  
   
   **mscorlib.dll을 참조하지 않음**  
-  Mscorlib.dll 전체 정의 프로그램으로 가져올 여부를 지정 <xref:System> 네임 스페이스입니다. 고유한 <xref:System> 네임스페이스 및 개체를 정의하거나 만들려면 이 상자를 선택합니다. 자세한 내용은 [/nostdlib(C# 컴파일러 옵션)](http://msdn.microsoft.com/library/ec197989-fa49-4725-a455-e06b551eb65f)를 참조하세요.  
+  mscorlib.dll을 프로그램으로 가져와 전체 <xref:System> 네임스페이스를 정의할지 여부를 지정합니다. 고유한 <xref:System> 네임스페이스 및 개체를 정의하거나 만들려면 이 상자를 선택합니다. 자세한 내용은 [/nostdlib(C# 컴파일러 옵션)](https://msdn.microsoft.com/library/ec197989-fa49-4725-a455-e06b551eb65f)를 참조하세요.  
   
-## <a name="output"></a>출력  
+## <a name="output"></a>Output  
  다음 옵션을 사용하여 고급 출력 옵션을 지정할 수 있습니다.  
   
  **디버그 정보**  
- 컴파일러에서 생성되는 디버깅 정보 형식을 지정합니다. 응용 프로그램의 디버그 성능을 구성하는 방법에 대한 자세한 내용은 [쉽게 디버깅할 수 있도록 이미지 만들기](http://msdn.microsoft.com/library/7d90ea7a-150f-4f97-98a7-f9c26541b9a3)를 참조하세요. 이 설정에는 다음과 같은 옵션이 있습니다.  
+ 컴파일러에서 생성되는 디버깅 정보 형식을 지정합니다. 애플리케이션의 디버그 성능을 구성하는 방법에 대한 자세한 내용은 [쉽게 디버깅할 수 있도록 이미지 만들기](https://msdn.microsoft.com/library/7d90ea7a-150f-4f97-98a7-f9c26541b9a3)를 참조하세요. 이 설정에는 다음과 같은 옵션이 있습니다.  
   
 - **none**  
   
@@ -74,17 +68,14 @@ ms.locfileid: "49811979"
   
    디버거에서 프로그램이 시작되는 경우 소스 코드 디버깅이 가능하지만, 실행 중인 프로그램이 디버거에 연결되는 경우 어셈블러만 표시됩니다.  
   
-  자세한 내용은 [/debug(C# 컴파일러 옵션)](http://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969)를 참조하세요.  
+  자세한 내용은 [/debug(C# 컴파일러 옵션)](https://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969)를 참조하세요.  
   
   **파일 맞춤**  
-  출력 파일에 있는 섹션의 크기를 지정합니다. 유효한 값은 **512**, **1024**, **2048**, **4096** 및 **8192**입니다. 이러한 값은 바이트 단위로 측정됩니다. 각 섹션은 이 값의 배수인 경계에 맞춰지고 출력 파일 크기에 영향을 미칩니다. 자세한 내용은 [/filealign(C# 컴파일러 옵션)](http://msdn.microsoft.com/library/15cf1c98-3798-4ced-9f08-60619308a073)을 참조하세요.  
+  출력 파일에 있는 섹션의 크기를 지정합니다. 유효한 값은 **512**, **1024**, **2048**, **4096** 및 **8192**입니다. 이러한 값은 바이트 단위로 측정됩니다. 각 섹션은 이 값의 배수인 경계에 맞춰지고 출력 파일 크기에 영향을 미칩니다. 자세한 내용은 [/filealign(C# 컴파일러 옵션)](https://msdn.microsoft.com/library/15cf1c98-3798-4ced-9f08-60619308a073)을 참조하세요.  
   
   **DLL 기준 주소**  
-  DLL을 로드할 기본 설정 기준 주소를 지정합니다. DLL에 대한 기본 기준 주소는 [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] 공용 언어 런타임에 의해 설정됩니다. 자세한 내용은 [/baseaddress(C# 컴파일러 옵션)](http://msdn.microsoft.com/library/ce13c965-dfe4-4433-94f5-63b476e3a608)를 참조하세요.  
+  DLL을 로드할 기본 설정 기준 주소를 지정합니다. DLL에 대한 기본 기준 주소는 [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] 공용 언어 런타임에 의해 설정됩니다. 자세한 내용은 [/baseaddress(C# 컴파일러 옵션)](https://msdn.microsoft.com/library/ce13c965-dfe4-4433-94f5-63b476e3a608)를 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
- [C# 컴파일러 옵션](http://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44)   
+ [C# 컴파일러 옵션](https://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44)   
  [프로젝트 디자이너, 빌드 페이지(C#)](../../ide/reference/build-page-project-designer-csharp.md)
-
-
-

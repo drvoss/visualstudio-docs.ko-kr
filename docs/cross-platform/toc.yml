@@ -1,4 +1,3 @@
-items:
 - name: Visual Studio에서 플랫폼 간 모바일 개발
   href: cross-platform-mobile-development-in-visual-studio.md
 - name: Visual Studio Tools for Xamarin
@@ -7,76 +6,76 @@ items:
 - name: Apache Cordova용 Visual Studio Tools
   href: /visualstudio/cross-platform/tools-for-cordova/
 - name: Visual Studio Tools for Unity
-  href: visual-studio-tools-for-unity.md
   items:
-  - name: Visual Studio Tools for Unity 시작
-    href: getting-started-with-visual-studio-tools-for-unity.md
-  - name: Visual Studio Tools for Unity 사용
-    href: using-visual-studio-tools-for-unity.md
-  - name: Unity에서 .NET 4.x 사용
-    href: unity-scripting-upgrade.md
-  - name: Visual Studio Tools for Unity 프로그램
-    href: programming-visual-studio-tools-for-unity.md
-    items:
-    - name: VSTU에서 만든 프로젝트 파일 사용자 지정
-      href: customize-project-files-created-by-vstu.md
-    - name: Unity 로그 콜백을 VSTU와 공유
-      href: share-the-unity-log-callback-with-vstu.md
-  - name: Unity 및 Azure로 프로그램
-    href: visual-studio-tools-for-unity-azure.md
-  - name: 문제 해결 및 알려진 문제(Visual Studio Tools for Unity)
-    href: troubleshooting-and-known-issues-visual-studio-tools-for-unity.md
-  - name: 변경 로그(Visual Studio Tools for Unity, Windows)
-    href: change-log-visual-studio-tools-for-unity.md
-  - name: 변경 로그(Visual Studio Tools for Unity, Mac)
-    href: change-log-visual-studio-tools-for-unity-mac.md
-  - name: Unity 앱을 사용한 DevOps
-    href: application-lifecycle-management-alm-with-unity-apps.md
+    - name: Visual Studio Tools for Unity
+      href: visual-studio-tools-for-unity.md
+    - name: Visual Studio Tools for Unity 시작
+      href: getting-started-with-visual-studio-tools-for-unity.md
+    - name: Visual Studio Tools for Unity 사용
+      href: using-visual-studio-tools-for-unity.md
+    - name: Unity에서 .NET 4.x 사용
+      href: unity-scripting-upgrade.md
+    - name: Visual Studio Tools for Unity 프로그램
+      items:
+        - name: Visual Studio Tools for Unity 프로그램
+          href: programming-visual-studio-tools-for-unity.md
+        - name: VSTU에서 만든 프로젝트 파일 사용자 지정
+          href: customize-project-files-created-by-vstu.md
+        - name: Unity 로그 콜백을 VSTU와 공유
+          href: share-the-unity-log-callback-with-vstu.md
+    - name: Unity 및 Azure로 프로그램
+      href: visual-studio-tools-for-unity-azure.md
+    - name: 문제 해결 및 알려진 문제(Visual Studio Tools for Unity)
+      href: troubleshooting-and-known-issues-visual-studio-tools-for-unity.md
+    - name: '변경 로그(Visual Studio Tools for Unity, Windows)'
+      href: change-log-visual-studio-tools-for-unity.md
+    - name: '변경 로그(Visual Studio Tools for Unity, Mac)'
+      href: change-log-visual-studio-tools-for-unity-mac.md
+    - name: Unity 앱을 사용한 DevOps
+      href: application-lifecycle-management-alm-with-unity-apps.md
 - name: 플랫폼 간 모바일 개발용 Visual C++
-  href: visual-cpp-for-cross-platform-mobile-development.md
   items:
-  - name: 플랫폼 간 모바일 개발용 Visual C++ 설치
-    href: install-visual-cpp-for-cross-platform-mobile-development.md
-    items:
-    - name: Install and Configure Tools to Build using iOS
-      href: install-and-configure-tools-to-build-using-ios.md
-  - name: Android Native Activity 앱 만들기
-    href: create-an-android-native-activity-app.md
-  - name: Android 및 iOS에서 OpenGL ES 응용 프로그램 빌드
-    href: build-an-opengl-es-application-on-android-and-ios.md
-  - name: XCode 프로젝트 가져오기
-    href: import-an-xcode-project.md
-  - name: XCode와 Visual Studio 간에 변경 내용 동기화
-    href: sync-changes-between-xcode-and-visual-studio.md
-  - name: 플랫폼 간 모바일 개발 예제
-    href: cross-platform-mobile-development-examples.md
-  - name: C++ 크로스 플랫폼 프로젝트 속성
-    href: cross-platform-prop-pages.md
-    items:
-    - name: 일반 프로젝트 속성(Android C++)
-      href: general-android-prop-page.md
-    - name: Android 디버거 속성
-      href: android-debugger-prop-page.md
-    - name: Clang 프로젝트 속성(Android C++)
-      href: clang-android-prop-page.md
-    - name: 일반 프로젝트 속성(Android C++ 메이크파일)
-      href: general-makefile-android-prop-page.md
-    - name: Clang 링커 속성(Android C++)
-      href: clanglink-prop-page.md
-    - name: NMake 속성(Android C++)
-      href: nmake-android-prop-page.md
+    - name: 플랫폼 간 모바일 개발용 Visual C++
+      href: visual-cpp-for-cross-platform-mobile-development.md
+    - name: 플랫폼 간 모바일 개발용 Visual C++ 설치
+      items:
+        - name: 플랫폼 간 모바일 개발용 Visual C++ 설치
+          href: install-visual-cpp-for-cross-platform-mobile-development.md
+        - name: Install and Configure Tools to Build using iOS
+          href: install-and-configure-tools-to-build-using-ios.md
+    - name: Android Native Activity 앱 만들기
+      href: create-an-android-native-activity-app.md
+    - name: Android 및 iOS에서 OpenGL ES 애플리케이션 빌드
+      href: build-an-opengl-es-application-on-android-and-ios.md
+    - name: XCode 프로젝트 가져오기
+      href: import-an-xcode-project.md
+    - name: XCode와 Visual Studio 간에 변경 내용 동기화
+      href: sync-changes-between-xcode-and-visual-studio.md
+    - name: 플랫폼 간 모바일 개발 예제
+      href: cross-platform-mobile-development-examples.md
+    - name: C++ 크로스 플랫폼 프로젝트 속성
+      items:
+        - name: C++ 크로스 플랫폼 프로젝트 속성
+          href: cross-platform-prop-pages.md
+        - name: 일반 프로젝트 속성(Android C++)
+          href: general-android-prop-page.md
+        - name: Android 디버거 속성
+          href: android-debugger-prop-page.md
+        - name: Clang 프로젝트 속성(Android C++)
+          href: clang-android-prop-page.md
+        - name: 일반 프로젝트 속성(Android C++ 메이크파일)
+          href: general-makefile-android-prop-page.md
+        - name: Clang 링커 속성(Android C++)
+          href: clanglink-prop-page.md
+        - name: NMake 속성(Android C++)
+          href: nmake-android-prop-page.md
 - name: UWP(유니버설 Windows 플랫폼)용 앱 개발
   href: develop-apps-for-the-universal-windows-platform-uwp.md
 - name: Android용 Visual Studio 에뮬레이터
-  href: visual-studio-emulator-for-android.md
   items:
-  - name: System requirements for the Visual Studio Emulator for Android
-    href: system-requirements-for-the-visual-studio-emulator-for-android.md
-  - name: Android용 Visual Studio 에뮬레이터 문제 해결
-    href: troubleshooting-the-visual-studio-emulator-for-android.md
-ms.openlocfilehash: 0126179459596c389703c065e85e2f5da41e070c
-ms.sourcegitcommit: 97204b85caadbcf14baeb6738710e287a196673e
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49991525"
+    - name: Android용 Visual Studio 에뮬레이터
+      href: visual-studio-emulator-for-android.md
+    - name: System requirements for the Visual Studio Emulator for Android
+      href: system-requirements-for-the-visual-studio-emulator-for-android.md
+    - name: Android용 Visual Studio 에뮬레이터 문제 해결
+      href: troubleshooting-the-visual-studio-emulator-for-android.md

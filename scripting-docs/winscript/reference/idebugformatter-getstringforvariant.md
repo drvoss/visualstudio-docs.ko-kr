@@ -2,7 +2,6 @@
 title: IDebugFormatter::GetStringForVariant | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bfc31b0fdbf6d1f4a29b1322dc3a3c4015f9c8ff
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 901bf9648d4d16faf7386b528cc3fd877070a5b6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996850"
 ---
 # <a name="idebugformattergetstringforvariant"></a>IDebugFormatter::GetStringForVariant
-지정된 된 VARIANT 값을 나타내는 문자열을 반환 합니다.  
+지정된 된 변형 값을 나타내는 문자열을 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetStringForVariant(  
    VARIANT*  pvar,  
    ULONG     nRadix,  
@@ -40,7 +39,7 @@ HRESULT GetStringForVariant(
   
 #### <a name="parameters"></a>매개 변수  
  `pvar`  
- [in] VARIANT를 나타내는 문자열입니다.  
+ [in] 변형을 문자열로 나타냅니다.  
   
  `nRadix`  
  [in] 숫자 값에 사용할 기 수입니다.  
@@ -56,7 +55,7 @@ HRESULT GetStringForVariant(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 이 메서드는 지정된 변형 값을 나타내는 문자열을 반환 합니다.  
+ 이 메서드는 지정된 된 변형 값을 나타내는 문자열을 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugFormatter 인터페이스](../../winscript/reference/idebugformatter-interface.md)

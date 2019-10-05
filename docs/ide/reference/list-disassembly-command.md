@@ -1,8 +1,6 @@
 ---
 title: 디스어셈블리 목록 표시 명령
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.listdisassembly
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: eb363e35-e86a-4121-966f-991210c27e2a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64951810020d99239a47b9c6bdba751b2c0a3dfd
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 6dc4bddefe0240a8e53babeec1fdce4f83ce5ef1
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704735"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926218"
 ---
 # <a name="list-disassembly-command"></a>디스어셈블리 목록 표시 명령
 디버그 프로세스를 시작하고 오류 처리 방식을 지정할 수 있습니다.
@@ -34,31 +32,31 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 ```
 
 ## <a name="switches"></a>스위치
- 각 스위치는 전체 양식 및 약식을 사용하여 호출될 수 있습니다.
+각 스위치는 전체 양식 및 약식을 사용하여 호출될 수 있습니다.
 
- /count: `number` [또는] /c: `number` [또는] /length: `number` [또는] /l: `number`
+/count: `number` [또는] /c: `number` [또는] /length: `number` [또는] /l: `number`
 
- 선택 사항입니다. 표시할 지침의 수입니다. 기본값은 8입니다.
+선택 사항입니다. 표시할 지침의 수입니다. 기본값은 8입니다.
 
- /endaddress: `expression` [또는] /e: `expression`
+/endaddress: `expression` [또는] /e: `expression`
 
- 선택 사항입니다. 디스어셈블리를 중지할 주소입니다.
+선택 사항입니다. 디스어셈블리를 중지할 주소입니다.
 
- /codebytes:`yes`&#124;`no` [또는] /bytes:`yes`&#124;`no` [또는] /b:`yes`&#124;`no`
+/codebytes:`yes`&#124;`no` [또는] /bytes:`yes`&#124;`no` [또는] /b:`yes`&#124;`no`
 
- 선택 사항입니다. 코드 바이트를 표시할지를 나타냅니다. 기본값은 `no`여야 합니다.
+선택 사항입니다. 코드 바이트를 표시할지를 나타냅니다. 기본값은 `no`여야 합니다.
 
- /source:`yes`&#124;`no` [또는] /s:`yes`&#124;`no`
+/source:`yes`&#124;`no` [또는] /s:`yes`&#124;`no`
 
- 선택 사항입니다. 소스 코드를 표시할지를 나타냅니다. 기본값은 `no`여야 합니다.
+선택 사항입니다. 소스 코드를 표시할지를 나타냅니다. 기본값은 `no`여야 합니다.
 
- /symbolnames:`yes`&#124;`no` [또는] /names:`yes`&#124;`no` [또는] /n:`yes`&#124;`no`
+/symbolnames:`yes`&#124;`no` [또는] /names:`yes`&#124;`no` [또는] /n:`yes`&#124;`no`
 
- 선택 사항입니다. 기호 이름을 표시할지를 나타냅니다. 기본값은 `yes`여야 합니다.
+선택 사항입니다. 기호 이름을 표시할지를 나타냅니다. 기본값은 `yes`여야 합니다.
 
  [/linenumbers:`yes`&#124;`no`]
 
- 선택 사항입니다. 소스 코드와 연결된 줄 번호를 볼 수 있도록 합니다. /source 스위치는 /linenumbers 스위치를 사용하는 `yes`의 값이 있어야 합니다.
+선택 사항입니다. 소스 코드와 연결된 줄 번호를 볼 수 있도록 합니다. /source 스위치는 /linenumbers 스위치를 사용하는 `yes`의 값이 있어야 합니다.
 
 ## <a name="example"></a>예
 
@@ -73,4 +71,4 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 - [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)
 - [명령 창](../../ide/reference/command-window.md)
 - [찾기/명령 상자](../../ide/find-command-box.md)
-- [Visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

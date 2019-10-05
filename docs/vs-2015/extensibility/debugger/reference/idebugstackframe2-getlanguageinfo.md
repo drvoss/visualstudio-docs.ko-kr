@@ -1,14 +1,9 @@
 ---
 title: IDebugStackFrame2::GetLanguageInfo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugStackFrame2::GetLanguageInfo
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 0e12fd92-f155-46a7-8272-cda279388cfb
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ab205d5e68475ae5a23ee021921683019f45a78c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d370670ed86ee3484243fe5dc7cfdd8ea64be084
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782364"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153133"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -52,21 +47,20 @@ int GetLanguageInfo ( 
  `pguidLanguage`  
  [out] 반환 된 `GUID` 언어입니다. 에 대 한는 [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] 언어, 예를 들어, 다음 돌아오게 됩니다.  
   
--   `guidVBScriptLang`  
+- `guidVBScriptLang`  
   
--   `guidJScriptLang`  
+- `guidJScriptLang`  
   
--   `guidCPPLang`  
+- `guidCPPLang`  
   
--   `guidVBLang`  
+- `guidVBLang`  
   
--   `guidSQLLang`  
+- `guidSQLLang`  
   
--   `guidScriptLang`  
+- `guidScriptLang`  
   
 ## <a name="return-value"></a>반환 값  
  성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
-

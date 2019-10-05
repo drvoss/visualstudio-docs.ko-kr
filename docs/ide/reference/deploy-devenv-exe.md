@@ -1,65 +1,71 @@
 ---
 title: -Deploy(devenv.exe)
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
-- Devenv, /deploy switch
-- deploy Devenv switch
+- Devenv, /Deploy switch
+- Deploy Devenv switch
 - deploying applications [Visual Studio], after build
-- /deploy Devenv switch
+- /Deploy Devenv switch
 ms.assetid: e47c8723-df08-4645-aa2d-0c956e7ccca2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0297058fea98568551f54d8960e62f80bb35ccd7
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 835891689d376d06bda31b050394ae4e61315a8f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970398"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
+
 빌드 또는 다시 빌드 후 솔루션을 배포합니다. 관리 코드 프로젝트에만 적용됩니다.
 
 ## <a name="syntax"></a>구문
 
-```
-devenv SolutionName /deploy SolnConfigName [/project ProjName] [/projectconfig ProjConfigName] [/out LogFileName]
+```shell
+devenv SolutionName /Deploy [SolnConfigName [/Project ProjName [/ProjectConfig ProjConfigName]] [/Out OutputFilename]]
 ```
 
 ## <a name="arguments"></a>인수
- `SolnConfigName`
 
- 필수. `SolutionName`으로 명명된 솔루션을 빌드하는 데 사용할 솔루션 구성의 이름입니다.
+- *SolutionName*
 
- `SolutionName`
+  필수 요소. 솔루션 파일의 전체 경로 및 이름입니다.
 
- 필수. 솔루션 파일의 전체 경로 및 이름입니다.
+- *SolnConfigName*
 
- /project `ProjName`
+  선택 사항입니다. *SolutionName*에서 명명된 솔루션을 빌드하는 데 사용할 솔루션 구성의 이름입니다(예: `Debug` 또는 `Release`). 둘 이상의 솔루션 플랫폼을 사용할 수 있는 경우 플랫폼(예: `Debug|Win32`)도 지정해야 합니다. 이 인수가 지정되지 않거나 빈 문자열(`""`)인 경우에는 솔루션의 활성 구성이 사용됩니다.
 
- 선택 사항입니다. 솔루션 내에 있는 프로젝트 파일의 경로와 이름입니다. `SolutionName` 폴더에서 프로젝트 파일, 프로젝트의 표시 이름 또는 프로젝트 파일의 전체 경로와 이름까지의 상대 경로를 입력할 수 있습니다.
+- `/Project` *ProjName*
 
- /projectconfig `ProjConfigName`
+  선택 사항입니다. 솔루션 내에 있는 프로젝트 파일의 경로와 이름입니다. 프로젝트의 표시 이름 또는 *SolutionName* 폴더에서 프로젝트 파일까지 상대 경로를 입력할 수 있습니다. 프로젝트 파일의 전체 경로와 이름을 입력할 수도 있습니다.
 
- 선택 사항입니다. `/project` 빌드 시 사용할 프로젝트 빌드 구성 이름입니다.
+- `/ProjectConfig` *ProjConfigName*
 
-## <a name="remarks"></a>설명
- 지정된 프로젝트는 배포 프로젝트여야 합니다. 지정된 프로젝트가 배포 프로젝트가 아닌 경우, 빌드된 프로젝트가 배포되도록 전달되면 오류로 인해 실패합니다.
+  선택 사항입니다. 명명된 `/Project`를 빌드할 때 사용할 프로젝트 빌드 구성 이름입니다(예: `Debug` 또는 `Release`). 둘 이상의 솔루션 플랫폼을 사용할 수 있는 경우 플랫폼(예: `Debug|Win32`)도 지정해야 합니다. 이 스위치가 지정되면 *SolnConfigName* 인수를 재정의합니다.
 
- 공백을 포함하는 문자열은 큰따옴표로 묶습니다.
+- `/Out` *OutputFilename*
 
- 오류를 포함한 빌드에 대한 요약 정보는 **명령** 창 또는 `/out` 스위치로 지정된 로그 파일에 표시할 수 있습니다.
+  선택 사항입니다. 도구의 출력을 보낼 파일의 이름입니다. 파일이 이미 있는 경우 출력은 파일의 끝에 추가됩니다.
 
-## <a name="example"></a>예
- 이 예제에서는 `MySolution`의 `Release` 솔루션 구성 내에 있는 `Release` 프로젝트 빌드 구성을 사용하여 `CSharpConsoleApp` 프로젝트를 배포합니다.
+## <a name="remarks"></a>주의
 
-```
-devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /deploy Release /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Release
+지정된 프로젝트는 배포 프로젝트여야 합니다. 지정된 프로젝트가 배포 프로젝트가 아니면, 빌드된 프로젝트가 배포되도록 전달될 때 오류로 인해 실패합니다.
+
+공백을 포함하는 문자열은 큰따옴표로 묶습니다.
+
+오류를 포함한 빌드에 대한 요약 정보는 **명령** 창 또는 [/Out](out-devenv-exe.md) 스위치로 지정된 로그 파일에 표시할 수 있습니다.
+
+## <a name="example"></a>예제
+
+이 예제에서는 `MySolution` 내에 있는 `Release` 프로젝트 빌드 구성을 사용하여 `CSharpWinApp` 프로젝트를 배포합니다.
+
+```shell
+devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /deploy Release /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Release
 ```
 
 ## <a name="see-also"></a>참고 항목

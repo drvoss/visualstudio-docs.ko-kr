@@ -9,16 +9,15 @@ helpviewer_keywords:
 - Domain-Specific Language, image shape
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 506792f6a6be550377a4cd711ffc7f04e1b9091f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8e58467d9a1600b96069bcd5dd271980faaf9ee7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823996"
 ---
 # <a name="properties-of-image-shapes"></a>이미지 모양의 속성
 

@@ -1,23 +1,25 @@
 ---
 layout: LandingPage
 title: Visual Studio에서 JavaScript 앱 만들기 | Microsoft Docs
-description: Visual Studio 2017을 사용하여 응용 프로그램을 만드는 방법에 대해 알아봅니다.
+description: Visual Studio 2017을 사용하여 애플리케이션을 만드는 방법에 대해 알아봅니다.
 ms.topic: landing-page
-ms.prod: visual-studio-dev15
+ms.prod: visual-studio-windows
 ms.technology: vs-ide-nodejs
 ms.author: mikejo
 author: mikejo5000
-manager: douge
-ms.openlocfilehash: bc71a896022ea57a3867143ceb0a0d9e96b83149
-ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
+manager: jillfra
+ms.openlocfilehash: baf650ba27d20424669bbdf47fffdac575f542b4
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48243932"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225646"
 ---
 # <a name="javascript-in-visual-studio"></a>Visual Studio의 JavaScript
 
 Visual Studio에서는 JavaScript 또는 TypeScript를 사용하여 앱을 만들 수 있도록 다양한 도구를 제공합니다.
+
+<!-- markdownlint-disable MD033 -->
 
 <h2>5분 빠른 시작을 사용하여 Visual Studio에서 JavaScript를 사용하는 방법을 알아봅니다</h2>
 
@@ -225,5 +227,3 @@ Visual Studio에서는 JavaScript 또는 TypeScript를 사용하여 앱을 만�
         </a>
     </li>
 </ul><p>
-
----

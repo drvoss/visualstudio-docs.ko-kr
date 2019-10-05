@@ -1,25 +1,20 @@
 ---
 title: 절반 / 분기 텍스처 크기 변형 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 282e9bbb-51aa-4cd0-8e5c-0901268c29e5
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6ef44ff579fbd96026fcd7c285b173ad19317275
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 03485a3b9df9c06b1ef4755a5758cf2c8c997d1e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161160"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>절반/분기 텍스처 크기 변형
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,16 +39,13 @@ ms.locfileid: "51805985"
   
 - D3D11_FORMAT_SUPPORT_RENDER_TARGET(질감 크기를 줄이는 데 필요)에 따라 결정된 대로 질감 형식이 렌더링 대상으로 지원되는 경우 렌더링 대상으로 지원되지는 않지만 BC1, BC2 및 BC3 형식도 지원됩니다.  
   
-  응용 프로그램에서 초기 데이터를 제공하는 경우 이 변형은 질감 데이터를 질감을 만들기 전에 해당하는 크기로 조절합니다. BC1, BC2 또는 BC3와 같은 블록 압축 형식으로 초기 데이터가 제공되는 경우 초기 데이터는 더 작은 질감을 만드는 데 사용되기 전에 디코딩 및 비율 크기 조정 후 다시 인코딩됩니다. 블록 기반 압축의 특성은 추가 디코딩-비율 크기 조정-인코딩 프로세스는 이전에 인코딩되지 않은 질감의 비율 크기 조정된 버전에서 블록 압축 질감이 생성되는 경우보다 거의 항상 이미지 품질이 낮습니다.  
+  애플리케이션에서 초기 데이터를 제공하는 경우 이 변형은 질감 데이터를 질감을 만들기 전에 해당하는 크기로 조절합니다. BC1, BC2 또는 BC3와 같은 블록 압축 형식으로 초기 데이터가 제공되는 경우 초기 데이터는 더 작은 질감을 만드는 데 사용되기 전에 디코딩 및 비율 크기 조정 후 다시 인코딩됩니다. 블록 기반 압축의 특성은 추가 디코딩-비율 크기 조정-인코딩 프로세스는 이전에 인코딩되지 않은 질감의 비율 크기 조정된 버전에서 블록 압축 질감이 생성되는 경우보다 거의 항상 이미지 품질이 낮습니다.  
   
   질감에 Mip 맵을 사용하는 경우 변형은 Mip 수준의 수를 적절하게 줄입니다. 절반 크기로 조정하는 경우 한 수준 낮게, 4분의 1 크기로 조정하는 경우에는 두 수준 낮게 줄입니다.  
   
 ## <a name="example"></a>예제  
  이러한 변형은 `CreateTexture2D` 호출 전 런타임에 질감의 크기를 조정합니다. 전체 크기 질감은 더 많은 디스크 공간을 사용하고 인코딩에 상당한 계산 리소스가 필요한 압축된 질감의 경우, 특히 추가 단계에서 앱에서의 로드 시간이 길어질 수 있기 때문에 프로덕션 코드에는 이러한 접근 방식을 사용하는 것이 좋습니다. 대신 빌드 파이프라인의 일부인 이미지 편집기 또는 이미지 프로세서를 사용하여 질감의 크기를 오프라인으로 조정하는 것이 좋습니다. 이러한 접근 방식은 디스크 공간 요구 사항을 줄이고 앱에서 런타임 오버헤드를 없애며 더 긴 처리 시간을 허용하므로 최상의 이미지 품질을 유지하면서 동시에 질감을 축소 또는 압축할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Mip 맵 생성 변형](../debugger/mip-map-generation-variant.md)   
+## <a name="see-also"></a>관련 항목  
+ [MIP 맵 생성 변형](../debugger/mip-map-generation-variant.md)   
  [BC 텍스처 압축 변형](../debugger/bc-texture-compression-variant.md)
-
-
-

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 1a53d6fed4b2900aa730f4a5c2e04d528b42d1b9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62419845"
+---
 # <a name="contribute-to-visual-studio-documentation"></a>Visual Studio 설명서에 기여
 
 시간을 내어 Visual Studio 문서에 기여해 주셔서 감사합니다.
@@ -25,3 +33,7 @@
 ### <a name="larger-edits"></a>대규모 편집
 
 기여자 지침에서 [끌어오기 요청](https://docs.microsoft.com/contribute/how-to-write-workflows-major#pull-request-processing)에 대한 지침을 검토합니다.
+
+**참고**
+
+Visual Studio 2015(이전 버전의 제품)용이므로 `docs/vs-2015` 폴더에 있는 파일에 대해서는 적극적으로 작업하고 있지 않습니다. 이러한 파일에 변경에 대한 사소한 끌어오기 요청을 허용하지 않습니다.

@@ -1,30 +1,24 @@
 ---
 title: '방법: XML 스키마에서 XML 조각 생성 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6eb03fba400e20227155a2528b8aaf0b28f7761a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b0e1ea270511a92df96fdb4cc38367074f224060
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431008"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>방법: XML 스키마에서 XML 조각 생성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML 편집기에는 XSD(XML 스키마 정의 언어) 스키마에서 XML 조각을 생성할 수 있는 기능이 있습니다. 예를 들어, XML 파일을 만들 때 요소 이름 옆에서 Tab 키를 눌러 해당 요소의 스키마 정보에서 생성된 XML 데이터로 요소를 채울 수 있습니다.  
   
  이 기능은 요소에서만 사용할 수 있으며 다음 규칙이 적용됩니다.  
@@ -33,11 +27,11 @@ XML 편집기에는 XSD(XML 스키마 정의 언어) 스키마에서 XML 조각�
   
 - 편집기에서 현재 요소는 특성 없이 비어 있어야 합니다. 예를 들어, 다음은 모두 유효합니다.  
   
-  -   `<Account`  
+  - `<Account`  
   
-  -   `<Account>`  
+  - `<Account>`  
   
-  -   `<Account></Account>`  
+  - `<Account></Account>`  
   
 - 요소 이름의 바로 오른쪽에 커서가 있어야 합니다.  
   
@@ -53,35 +47,35 @@ XML 편집기에는 XSD(XML 스키마 정의 언어) 스키마에서 XML 조각�
  이 단원의 단계에서는 XML 편집기의 스키마에 의해 생성된 XML 조각 기능을 사용하는 방법을 보여 줍니다.  
   
 > [!NOTE]
->  이 프로시저를 시작하기 전에 스키마 파일을 로컬 컴퓨터에 저장합니다.  
+> 이 프로시저를 시작하기 전에 스키마 파일을 로컬 컴퓨터에 저장합니다.  
   
 #### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>새 XML 파일을 만들어 XML 스키마와 연결하려면  
   
-1.  에 **파일** 메뉴에서 **새로 만들기**를 클릭 하 고 **파일**합니다.  
+1. 에 **파일** 메뉴에서 **새로 만들기**를 클릭 하 고 **파일**합니다.  
   
-2.  선택 **XML 파일** 에 **템플릿** 창과 클릭 **열기**합니다.  
+2. 선택 **XML 파일** 에 **템플릿** 창과 클릭 **열기**합니다.  
   
      편집기에서 새 파일이 열립니다. 파일에는 기본 XML 선언, `<?xml version="1.0" encoding="utf-8">`이 포함됩니다.  
   
-3.  문서 속성 창에서 찾아보기 단추를 클릭 합니다. (**...** )에 **스키마** 필드입니다.  
+3. 문서 속성 창에서 찾아보기 단추를 클릭 합니다. (**...** )에 **스키마** 필드입니다.  
   
      합니다 **XSD 스키마** 대화 상자가 표시 됩니다.  
   
-4.  **추가**를 클릭합니다.  
+4. **추가**를 클릭합니다.  
   
      합니다 **XSD 스키마 열기** 대화 상자가 표시 됩니다.  
   
-5.  스키마 파일을 선택 하 고 클릭 **열려**합니다.  
+5. 스키마 파일을 선택 하 고 클릭 **열려**합니다.  
   
-6.  **확인**을 클릭합니다.  
+6. **확인**을 클릭합니다.  
   
      이제 XML 스키마가 XML 문서와 연결되었습니다.  
   
 #### <a name="to-generate-an-xml-snippet"></a>XML 조각을 생성하려면  
   
-1.  편집기 창에 `<`를 입력합니다.  
+1. 편집기 창에 `<`를 입력합니다.  
   
-2.  멤버 목록에 가능한 항목이 표시됩니다.  
+2. 멤버 목록에 가능한 항목이 표시됩니다.  
   
      **!-** 주석을 추가 합니다.  
   
@@ -91,11 +85,11 @@ XML 편집기에는 XSD(XML 스키마 정의 언어) 스키마에서 XML 조각�
   
      **연락처** 루트 요소를 추가 합니다.  
   
-3.  선택 **연락처** 멤버 목록에서 ENTER 키를 누릅니다.  
+3. 선택 **연락처** 멤버 목록에서 ENTER 키를 누릅니다.  
   
      시작 태그 `<Contact`가 추가되고 요소 이름 뒤에 커서가 놓입니다.  
   
-4.  Tab 키를 눌러 스키마 정보를 기반으로 `Contact` 요소에 대한 XML 데이터를 생성합니다.  
+4. Tab 키를 눌러 스키마 정보를 기반으로 `Contact` 요소에 대한 XML 데이터를 생성합니다.  
   
 ### <a name="input"></a>입력  
  다음 스키마 파일은 연습에 사용됩니다.  
@@ -162,6 +156,3 @@ XML 편집기에는 XSD(XML 스키마 정의 언어) 스키마에서 XML 조각�
 ## <a name="see-also"></a>참고 항목  
  [XML 조각](../xml-tools/xml-snippets.md)   
  [방법: XML 조각 사용](../xml-tools/how-to-use-xml-snippets.md)
-
-
-

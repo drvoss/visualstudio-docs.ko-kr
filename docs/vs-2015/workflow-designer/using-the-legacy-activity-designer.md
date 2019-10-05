@@ -1,11 +1,8 @@
 ---
 title: 레거시 활동 디자이너를 사용 하 여 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - activities, configuring
@@ -18,13 +15,13 @@ ms.assetid: 2fea8a05-6e58-423d-94bf-a822b15ffb80
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: a6c8aafe9eac26080bfbf57d06c7d512d1e1e62d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 5755c6a3b4ece5b40c7799d83bdf33966d5c2b3e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62855779"
 ---
 # <a name="using-the-legacy-activity-designer"></a>레거시 활동 디자이너 사용
 이 항목에서는 레거시 [!INCLUDE[wfd1](../includes/wfd1-md.md)]에서 활동 디자이너를 사용하는 방법에 대해 설명합니다. 레거시 디자이너는 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 또는 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]를 대상으로 하는 경우에 사용합니다.  
@@ -38,9 +35,9 @@ ms.locfileid: "49843433"
   
 2. 선택 된 **활동** 또는 **활동 (코드 분리)** 템플릿.  
   
-   1.  사용 된 **활동** 활동 정의와 사용자 코드가 같은 코드 파일에 사용 하 여 작업을 만들기 위한 템플릿.  
+   1. 사용 된 **활동** 활동 정의와 사용자 코드가 같은 코드 파일에 사용 하 여 작업을 만들기 위한 템플릿.  
   
-   2.  사용 된 **활동 (코드 분리)** 별도 코드 파일에 사용자 코드가 있는 워크플로 마크업으로 표현 된 활동 정의 사용 하 여 작업을 만들기 위한 템플릿.  
+   2. 사용 된 **활동 (코드 분리)** 별도 코드 파일에 사용자 코드가 있는 워크플로 마크업으로 표현 된 활동 정의 사용 하 여 작업을 만들기 위한 템플릿.  
   
 3. 활동 이름을 입력 하거나 기본 이름을 유지 하 고, 클릭 **추가**합니다.  
   

@@ -13,17 +13,15 @@ helpviewer_keywords:
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0ac463161d42e0d9ddf6b845b752916675ba4fe
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 7ae0b2f606b4fe04ad390712f48ac1e06ff9bb86
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062097"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805323"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>다른 언어에 대한 Visual Studio 편집기 지원 추가
 
@@ -35,7 +33,7 @@ Visual Studio 편집기에서 다양한 컴퓨터 언어 읽기 및 탐색을 �
 
 ![Perl 스크립트의 구문 색 지정](../ide/media/vside_perledit.png)
 
-Visual Studio는 현재 [TextMate 문법](https://manual.macromates.com/en/language_grammars)을 사용하여 다음 언어에 대해 구문 색 지정 및 기본 문 완성을 지원합니다. 자주 사용하는 언어가 표에 없는 경우 걱정하지 마세요. 직접 추가할 수 있습니다.
+Visual Studio는 현재 [TextMate 문법](https://manual.macromates.com/en/language_grammars)을 사용하여 다음 언어에 대해 구문 색 지정 및 기본 문 완성을 지원합니다. 자주 사용하는 언어가 표에 없는 경우 걱정하지 마세요.&mdash;직접 추가할 수 있습니다.
 
 |||||||
 |-|-|-|-|-|-|
@@ -48,27 +46,27 @@ Visual Studio는 현재 [TextMate 문법](https://manual.macromates.com/en/langu
 
 구문 색 지정 및 기본 문 완성 기능 외에도 Visual Studio에는 [탐색](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/) 기능이 있습니다. 이 기능을 사용하면 코드 파일, 파일 경로 및 코드 기호를 빠르게 검색할 수 있습니다. Visual Studio는 다음 언어에 대해 탐색 기능을 지원합니다.
 
--   이동
+- C#
 
--   Java
+- C++
 
--   JavaScript
+- TypeScript
 
--   PHP
+- JavaScript
 
--   TypeScript
+- Visual Basic
 
--   Visual Basic
+- 이동
 
--   Visual C++
+- Java
 
--   C#
+- PHP
 
 지정된 언어에 대한 지원이 아직 설치되지 않은 경우에도 이러한 모든 파일 형식에는 앞에서 설명한 기능이 있습니다. 일부 언어에 대한 특수 지원을 설치하면 IntelliSense 등의 추가 언어 지원이나 전구와 같은 기타 고급 언어 기능이 제공됩니다.
 
 ## <a name="add-support-for-non-supported-languages"></a>지원되지 않는 언어에 대한 지원 추가
 
-Visual Studio 2015 업데이트 1 이상 버전에서는 [TextMate 문법](https://manual.macromates.com/en/language_grammars)을 사용하여 편집기의 언어 지원을 제공합니다. 자주 사용하는 프로그래밍 언어가 현재 Visual Studio 편집기에서 지원되지 않는 경우 먼저 웹을 검색하세요. 해당 언어에 대한 TextMate 번들이 있을 수도 있습니다. 해당 번들이 없는 경우 Visual Studio 2015 업데이트 1 이상에서는 언어 문법과 코드 조각에 대한 TextMate 번들 모델을 만들어 직접 지원을 추가할 수 있습니다.
+Visual Studio에서는 [TextMate 문법](https://manual.macromates.com/en/language_grammars)을 사용하여 편집기의 언어 지원을 제공합니다. 자주 사용하는 프로그래밍 언어가 현재 Visual Studio 편집기에서 지원되지 않는 경우 먼저 웹을 검색하세요. 해당 언어에 대한 TextMate 번들이 이미 있을 수도 있습니다. 해당 번들이 없는 경우 언어 문법과 코드 조각에 대한 TextMate 번들 모델을 만들어 직접 지원을 추가할 수 있습니다.
 
 Visual Studio에 대한 새 TextMate 문법을 다음 폴더에 추가합니다.
 
@@ -78,15 +76,19 @@ Visual Studio에 대한 새 TextMate 문법을 다음 폴더에 추가합니다.
 
 |폴더 이름|설명|
 |-----------------|-----------------|
-|\\*\<언어 이름>*|언어 폴더입니다. *\<언어 이름>* 을 해당 언어의 이름으로 바꿉니다. 예를 들어 *\Matlab*으로 바꿉니다.|
+|\\ *\<언어 이름>*|언어 폴더입니다. *\<언어 이름>* 을 해당 언어의 이름으로 바꿉니다. 예를 들어 *\Matlab*으로 바꿉니다.|
 |*\Syntaxes*|문법 폴더입니다. 언어의 문법 *.json* 파일(예: *Matlab.json*)이 들어 있습니다.|
 |*\Snippets*|코드 조각 폴더입니다. 언어의 코드 조각이 들어 있습니다.|
 
-Windows에서 *%userprofile%* 은 *c:\Users\\\<user name>* 경로로 확인됩니다. 시스템에 extensions 폴더가 없는 경우 새로 만들어야 합니다. 폴더가 이미 있는 경우 숨겨집니다.
+Windows에서 *%userprofile%* 은 *c:\Users\\\<user name>* 경로로 확인됩니다. 시스템에 *Extensions* 폴더가 없는 경우 새로 만들어야 합니다. 폴더가 이미 있는 경우 숨겨집니다.
 
-TextMate 문법을 만드는 방법에 대한 자세한 내용은 [TextMate - 언어 문법 소개: HTML에 포함된 소스 코드 구문 강조 표시를 추가하는 방법](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) 및 [Textmate 번들에 대한 언어 문법 및 사용자 지정 테마를 만드는 방법에 대한 참고 사항](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)을 참조하세요.
+> [!TIP]
+> 편집기에 파일이 열려 있는 경우 TextMate 문법을 추가한 후 구문 강조 표시를 확인하려면 해당 파일을 닫고 다시 열어야 합니다.
+
+TextMate 문법을 만드는 방법에 대한 자세한 내용은 [TextMate – Introduction to Language Grammars](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/)(TextMate – 언어 문법 소개) 및 [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)(Textmate 번들의 언어 문법 및 사용자 지정 테마를 만드는 방법에 대한 참고 사항)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
+- [언어 서버 프로토콜 확장 추가](../extensibility/adding-an-lsp-extension.md)
 - [연습: 코드 조각 만들기](../ide/walkthrough-creating-a-code-snippet.md)
 - [연습: 명령문 완성 표시](../extensibility/walkthrough-displaying-statement-completion.md)

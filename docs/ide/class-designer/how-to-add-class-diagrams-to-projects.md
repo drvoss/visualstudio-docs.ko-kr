@@ -1,8 +1,6 @@
 ---
 title: '방법: 프로젝트에 클래스 다이어그램 추가(클래스 디자이너)'
 ms.date: 05/08/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, creating
@@ -10,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 0eac1b54-2711-4e4b-9654-a0c429c08c8f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 133f15f6c160e9ec48b1db4ab8713023e492cbae
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 06432ac0e882df506e4379a2f2cbffcf52c79f42
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901300"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332759"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>방법: 프로젝트에 클래스 다이어그램 추가
 
@@ -28,7 +26,7 @@ ms.locfileid: "42901300"
 
 ## <a name="install-the-class-designer-component"></a>클래스 디자이너 구성 요소 설치
 
-Visual Studio 2017을 실행 중이고 **클래스 디자이너** 구성 요소를 설치하지 않은 경우 다음 단계에 따라 설치합니다.
+**클래스 디자이너** 구성 요소를 설치하지 않은 경우 다음 단계에 따라 설치합니다.
 
 1. Windows 시작 메뉴에서 **Visual Studio 설치 관리자**를 열거나 Visual Studio의 메뉴 막대에서 **도구** > **도구 및 기능 가져 오기**를 선택합니다.
 
@@ -74,10 +72,11 @@ Visual Studio 2017을 실행 중이고 **클래스 디자이너** 구성 요소�
 
 자동으로 채워진 클래스 다이어그램이 만들어집니다.
 
+> [!NOTE]
+> .NET Core 프로젝트에서는 아직 클래스 디자이너를 사용할 수 없습니다.
+
 ## <a name="see-also"></a>참고 항목
 
 - [방법: 클래스 디자이너를 사용하여 형식 만들기](how-to-create-types.md)
 - [방법: 기존 형식 보기](how-to-view-existing-types.md)
 - [클래스와 형식 디자인 및 보기](designing-and-viewing-classes-and-types.md)
-- [형식 및 관계 보기](viewing-types-and-relationships.md)
-- [클래스 다이어그램 작업](working-with-class-diagrams.md)

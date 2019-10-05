@@ -1,14 +1,9 @@
 ---
 title: 리팩터링 (C#) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.csharp.refactoring.preview
 - vs.csharp.refactoring.issues
@@ -22,13 +17,13 @@ ms.assetid: a39e656a-f81f-4c87-b484-a23168ff1dfc
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: b4f74017a067d4681eb14ba4eb826df504497430
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fa8fbfd8837fb35617b79089fffd11ea3b8d2e93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49262316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444538"
 ---
 # <a name="refactoring-c"></a>리팩터링(C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,17 +32,17 @@ ms.locfileid: "49262316"
   
  Visual C#의 리팩터링 명령을 제공 합니다 **Refactoring** 메뉴:  
   
--   [메서드 추출 리팩터링(C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
+- [메서드 추출 리팩터링(C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
   
--   [이름 바꾸기 리팩터링(C#)](../csharp-ide/rename-refactoring-csharp.md)  
+- [이름 바꾸기 리팩터링(C#)](../csharp-ide/rename-refactoring-csharp.md)  
   
--   [필드 캡슐화 리팩터링(C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
+- [필드 캡슐화 리팩터링(C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
   
--   [인터페이스 추출 리팩터링(C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
+- [인터페이스 추출 리팩터링(C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
   
--   [매개 변수 제거 리팩터링(C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
+- [매개 변수 제거 리팩터링(C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
   
--   [매개 변수 다시 정렬 리팩터링(C#)](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
+- [매개 변수 다시 정렬 리팩터링(C#)](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
   
 ## <a name="multi-project-refactoring"></a>다중 프로젝트 리팩터링  
  Visual Studio 프로젝트에서 동일한 솔루션에 대 한 다중 프로젝트 리팩터링 지원 합니다. 모든 파일에 대 한 참조를 수정 하는 리팩터링 작업은 동일한 언어의 모든 프로젝트에서 해당 참조를 수정 합니다. 이 대 한 프로젝트 간 참조는 작동합니다. 예를 들어, 클래스 라이브러리 형식의 이름을 바꾸면 클래스 라이브러리를 참조 하는 콘솔 응용 프로그램을 사용 하는 경우 (사용 하는 `Rename` 리팩터링 작업), 콘솔 응용 프로그램에 있는 클래스 라이브러리 형식에 대 한 참조도 업데이트 됩니다.  
@@ -59,7 +54,7 @@ ms.locfileid: "49262316"
  컴파일러에서 프로그램을 완벽 하 게 이해 되지 않은 경우 리팩터링 엔진에서는 적절 한 모든 참조를 업데이트 하지 않을 수 있습니다 수 경고 대화 상자가 표시 됩니다. 또한이 경고 대화 상자에서 코드를 미리 볼 수 있는 기회를 제공 합니다 **변경 내용 미리 보기** 변경 내용을 커밋하기 전에 대화 상자.  
   
 > [!NOTE]
->  메서드는 구문 오류 (빨간색 물결선 밑줄이 있는 IDE을 나타냄)를 포함 한 다음 리팩터링 엔진은 해당 메서드 내에서 요소에 대 한 참조를 업데이트 되지 않습니다. 아래 예제에서는이 동작을 보여 줍니다.  
+> 메서드는 구문 오류 (빨간색 물결선 밑줄이 있는 IDE을 나타냄)를 포함 한 다음 리팩터링 엔진은 해당 메서드 내에서 요소에 대 한 참조를 업데이트 되지 않습니다. 아래 예제에서는이 동작을 보여 줍니다.  
   
  기본적으로 실행 하는 경우 참조를 미리 보지 않고 리팩터링 작업을 변경 프로그램에 컴파일 오류가 검색 되 고 개발 환경에이 경고 대화 상자가 표시 됩니다.  
   
@@ -79,7 +74,7 @@ ms.locfileid: "49262316"
  합니다 **확인 결과** 대화 상자에서는 두 종류의 문제를 다시 바인딩 간의 차이 구별 합니다.  
   
 ### <a name="references-whose-definition-will-no-longer-be-the-renamed-symbol"></a>정의 해당 이름이 바뀐된 기호를 더 이상 참조  
- 이러한 종류의 다시 바인딩 문제는 이름이 바뀐된 기호에 대 한 참조를 더 이상 참조 하는 경우에 발생 합니다. 예를 들어, 다음 코드를 고려하십시오.  
+ 이러한 종류의 다시 바인딩 문제는 이름이 바뀐된 기호에 대 한 참조를 더 이상 참조 하는 경우에 발생 합니다. 예를 들어, 다음 코드를 고려하세요.  
   
 ```csharp  
 class Example  

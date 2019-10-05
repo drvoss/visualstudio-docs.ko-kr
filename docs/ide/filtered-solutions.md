@@ -1,27 +1,25 @@
 ---
 title: 프로젝트 하위 집합 로드
-ms.date: 12/04/2018
-ms.topic: conceptual
+ms.date: 04/22/2019
 ms.prod: visual-studio-dev16
-ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - filtered solution
 - solution filtering
 author: gewarren
 ms.author: stsu
-manager: douge
-ms.openlocfilehash: 655644e936bdfb1382e70d746f589b8fcfabf488
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+manager: jillfra
+monikerRange: '>= vs-2019'
+ms.openlocfilehash: 2612770b760bec70ec9ee6c679c47804d4e69f42
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52897222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439833"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Visual Studio의 필터링된 솔루션
 
-**Visual Studio 2019 Preview 1의 새로운 기능**
-
-대규모 개발팀은 종종 여러 프로젝트가 포함된 하나의 대형 솔루션을 사용하여 공동 작업을 진행합니다. 그러나 개별 개발자는 일반적으로 이러한 프로젝트의 소규모 하위 집합에서 작업합니다. 대형 솔루션을 열 때 성능을 향상하기 위해 Visual Studio 2019 Preview 1에서는 *솔루션 필터링*이 도입되었습니다. 솔루션 필터링을 사용하면 선택한 프로젝트만 로드된 솔루션을 열 수 있습니다. 솔루션에서 프로젝트의 하위 집합을 로드하면 솔루션 로드, 빌드 및 테스트 실행 시간이 단축되고 검토에 집중할 수 있습니다.
+대규모 개발팀은 종종 여러 프로젝트가 포함된 하나의 대형 솔루션을 사용하여 공동 작업을 진행합니다. 그러나 개별 개발자는 일반적으로 이러한 프로젝트의 소규모 하위 집합에서 작업합니다. 대형 솔루션을 열 때 성능을 향상하기 위해 Visual Studio 2019에서는 ‘솔루션 필터링’이 도입되었습니다. 솔루션 필터링을 사용하면 선택한 프로젝트만 로드된 솔루션을 열 수 있습니다. 솔루션에서 프로젝트의 하위 집합을 로드하면 솔루션 로드, 빌드 및 테스트 실행 시간이 단축되고 검토에 집중할 수 있습니다.
 
 다음과 같은 기능이 제공됩니다.
 
@@ -33,11 +31,15 @@ ms.locfileid: "52897222"
 
 ## <a name="open-a-filtered-solution"></a>필터링된 솔루션 열기
 
-일부 프로젝트만 로드된 솔루션을 열려면 다음 단계를 따릅니다.
+**프로젝트 열기** 대화 상자나 [명령줄](#command-line)을 통해 프로젝트를 직접 로드하지 않고 솔루션을 열 수 있습니다.
+
+### <a name="open-project-dialog"></a>프로젝트 열기 대화 상자
+
+**프로젝트 열기** 대화 상자를 사용하여 프로젝트를 로드하지 않고 솔루션을 열려면 다음과 같이 하세요.
 
 1. 메뉴 모음에서 **파일** > **열기** > **프로젝트/솔루션**을 선택합니다.
 
-2. **새 프로젝트** 대화 상자에서 솔루션을 선택한 다음, **프로젝트를 로드하지 않음**을 선택합니다.
+2. **프로젝트 열기** 대화 상자에서 솔루션을 선택하고 **프로젝트를 로드하지 않음**을 선택합니다.
 
    ![[프로젝트를 로드하지 않음]이 선택된 Visual Studio 프로젝트 열기 대화 상자](media/filtered-solutions/do-not-load-projects.png)
 
@@ -51,15 +53,31 @@ ms.locfileid: "52897222"
 
    Visual Studio는 다음에 로컬로 솔루션을 열 때 이전에 로드된 프로젝트를 기억합니다.
 
+### <a name="command-line"></a>명령줄
+
+(Visual Studio 2019 버전 16.1의 새로운 기능)
+
+명령줄에서 프로젝트를 로드하지 않고 솔루션을 열려면 다음 예제에 표시된 대로 [`/donotloadprojects`](../ide/reference/donotloadprojects-devenv-exe.md) 스위치를 사용하세요.
+
+```cmd
+devenv /donotloadprojects MySln.sln
+```
+
 ## <a name="toggle-unloaded-project-visibility"></a>언로드된 프로젝트 표시 설정/해제
 
 **솔루션 탐색기**에서 다음 방법 중 하나를 사용하여 솔루션의 모든 프로젝트를 표시하도록 선택할 수도 있고 로드된 프로젝트만 표시하도록 선택할 수도 있습니다.
 
 - 솔루션을 마우스 오른쪽 단추로 클릭하고 **언로드된 프로젝트 표시** 또는 **언로드된 프로젝트 숨기기**를 선택합니다.
 
-- **모든 파일 표시** 단추를 선택하여 언로드된 프로젝트의 표시 유형을 전환합니다.
+- 솔루션 노드를 선택하여 **모든 파일 표시** 단추를 사용하도록 설정한 다음, 이 단추를 클릭하여 언로드된 프로젝트의 표시 유형을 전환합니다.
 
    ![Visual Studio 솔루션 탐색기의 [모든 파일 표시] 단추](media/filtered-solutions/show-all-files.PNG)
+
+## <a name="load-project-dependencies"></a>프로젝트 종속성 로드
+
+선택한 프로젝트만 로드되는 솔루션에서 프로젝트의 프로젝트 종속성 중 일부가 로드되지 않을 수 있습니다. **프로젝트 종속성 로드** 메뉴 옵션을 사용하여 프로젝트가 종속된 프로젝트도 모두 로드되도록 합니다. **솔루션 탐색기**에서 하나 이상의 로드된 프로젝트를 마우스 오른쪽 단추로 클릭하고 **프로젝트 종속성 로드**를 선택합니다.
+
+![Visual Studio 2019에서 프로젝트 종속성 로드](media/filtered-solutions/load-project-dependencies.png)
 
 ## <a name="solution-filter-files"></a>솔루션 필터 파일
 

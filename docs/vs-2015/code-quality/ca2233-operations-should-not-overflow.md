@@ -1,14 +1,9 @@
 ---
 title: 'CA2233: 연산은 오버플로되지 않아야 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - OperationsShouldNotOverflow
 - CA2233
@@ -20,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5f6690f6577d936757ae3bbe8b725b4434b6bee1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0531a739ec00c3e6224ef5caa7b1c0bf71f0e4e4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836660"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697944"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: 연산은 오버플로되지 않아야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,14 +107,11 @@ End Sub
 
  **설정 하려면 C#에서 산술 연산 오버플로/언더플로 확인**
 
-1.  **솔루션 탐색기**프로젝트를 마우스 오른쪽 단추로 클릭 하 고 선택 **속성**합니다.
+1. **솔루션 탐색기**프로젝트를 마우스 오른쪽 단추로 클릭 하 고 선택 **속성**합니다.
 
-2.  **빌드** 탭을 선택하고 **고급**을 클릭합니다.
+2. **빌드** 탭을 선택하고 **고급**을 클릭합니다.
 
-3.  선택 **산술 연산 오버플로/언더플로 확인** 누릅니다 **확인**합니다.
+3. 선택 **산술 연산 오버플로/언더플로 확인** 누릅니다 **확인**합니다.
 
 ## <a name="see-also"></a>참고 항목
- <xref:System.OverflowException?displayProperty=fullName> [C# 연산자](http://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [Checked 및 Unchecked](http://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)
-
-
-
+ <xref:System.OverflowException?displayProperty=fullName> [C# 연산자](https://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [Checked 및 Unchecked](https://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)

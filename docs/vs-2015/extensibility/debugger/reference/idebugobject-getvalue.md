@@ -1,14 +1,9 @@
 ---
 title: IDebugObject::GetValue | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugObject::GetValue
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: eec6051e-8ecb-49fa-bdd4-dd786f211692
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7c43487960fdca21e4c716514a3533db90c6ae76
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: de6e6888cfce338ebcee90e722f07e900ce25d0b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770272"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180527"
 ---
 # <a name="idebugobjectgetvalue"></a>IDebugObject::GetValue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -58,6 +53,5 @@ int GetValue(
 ## <a name="remarks"></a>설명  
  호출 하 여 가져올 수 있는 값 바이트의 총 수를 [GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md) 메서드.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
-

@@ -1,27 +1,22 @@
 ---
 title: 디버거 시작 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], launching the debugger
 - debugger [Debugging SDK], launching
 ms.assetid: f24da1a1-f923-48b4-989f-18a22b581d1b
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bcb73a46f6055d1c8637fe1d5375ba9be0fc8652
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e9c57079246dd52bd7fb44371999d0c3747dad40
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149121"
 ---
 # <a name="launching-the-debugger"></a>디버거 시작
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,11 +25,11 @@ ms.locfileid: "51774876"
   
 ## <a name="sequences-of-methods-and-events"></a>메서드 및 이벤트의 시퀀스  
   
-1.  세션 디버그 관리자 SDM ()를 선택 하 여 라고 합니다 **디버그** 메뉴를 선택한 후 **시작**합니다. 참조 [프로그램을 실행할](../../extensibility/debugger/launching-a-program.md) 자세한 내용은 합니다.  
+1. 세션 디버그 관리자 SDM ()를 선택 하 여 라고 합니다 **디버그** 메뉴를 선택한 후 **시작**합니다. 참조 [프로그램을 실행할](../../extensibility/debugger/launching-a-program.md) 자세한 내용은 합니다.  
   
-2.  SDM 호출 [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) 메서드.  
+2. SDM 호출 [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) 메서드.  
   
-3.  디버그 엔진 (DE) 프로세스 모델을 기반으로 합니다 `IDebugProgramNodeAttach2::OnAttach` 메서드 이후에 결정 하는 다음 방법 중 하나를 반환 합니다.  
+3. 디버그 엔진 (DE) 프로세스 모델을 기반으로 합니다 `IDebugProgramNodeAttach2::OnAttach` 메서드 이후에 결정 하는 다음 방법 중 하나를 반환 합니다.  
   
      경우 `S_FALSE` 디버그 엔진 (DE)은 가상 컴퓨터 중 로드할 반환 됩니다.  
   
@@ -42,23 +37,22 @@ ms.locfileid: "51774876"
   
      경우 `S_OK` 이 반환 되는 DE이 로드 되는 SDM의 프로세스. SDM는 다음 태스크를 수행합니다.  
   
-    1.  호출 [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) 는 DE의 엔진 정보를 가져옵니다.  
+    1. 호출 [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) 는 DE의 엔진 정보를 가져옵니다.  
   
-    2.  배치는 DE를 만듭니다.  
+    2. 배치는 DE를 만듭니다.  
   
-    3.  호출 [연결](../../extensibility/debugger/reference/idebugengine2-attach.md)합니다.  
+    3. 호출 [연결](../../extensibility/debugger/reference/idebugengine2-attach.md)합니다.  
   
-4.  DE 보냅니다는 [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) 를 사용 하 여 SDM을 `EVENT_SYNC` 특성입니다.  
+4. DE 보냅니다는 [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) 를 사용 하 여 SDM을 `EVENT_SYNC` 특성입니다.  
   
-5.  DE 보냅니다는 [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) 를 사용 하 여 SDM을 `EVENT_SYNC` 특성입니다.  
+5. DE 보냅니다는 [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) 를 사용 하 여 SDM을 `EVENT_SYNC` 특성입니다.  
   
-6.  DE 보냅니다는 [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) 를 사용 하 여 SDM을 `EVENT_SYNC` 특성입니다.  
+6. DE 보냅니다는 [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) 를 사용 하 여 SDM을 `EVENT_SYNC` 특성입니다.  
   
-7.  DE 보냅니다는 [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) 를 사용 하 여 SDM을 `EVENT_SYNC` 특성입니다.  
+7. DE 보냅니다는 [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) 를 사용 하 여 SDM을 `EVENT_SYNC` 특성입니다.  
   
-8.  DE 보냅니다는 [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) 를 사용 하 여 SDM을 `EVENT_SYNC` 특성입니다.  
+8. DE 보냅니다는 [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) 를 사용 하 여 SDM을 `EVENT_SYNC` 특성입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [디버거 이벤트 호출](../../extensibility/debugger/calling-debugger-events.md)   
  [프로그램 시작](../../extensibility/debugger/launching-a-program.md)
-

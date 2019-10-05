@@ -1,14 +1,9 @@
 ---
 title: IDebugSymbolProvider | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugSymbolProvider
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: df5f095f-1dee-46f9-84cf-92417c71d5fb
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fb2535cdbb75a2012134b9d439fd522617e3231b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b760b106992b200576258ab6becb1ae3849b8f3a
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775097"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "62420929"
 ---
 # <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ IDebugSymbolProvider : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
  다음 표에서의 메서드를 보여 줍니다. `IDebugSymbolProvider`합니다.  
   
-|메서드|설명|  
+|메서드|Description|  
 |------------|-----------------|  
 |`Initialize`|더 이상 사용되지 않습니다. 사용하지 마십시오.|  
 |`Uninitialize`|더 이상 사용되지 않습니다. 사용하지 마십시오.|  
@@ -67,9 +62,9 @@ IDebugSymbolProvider : IUnknown
 ## <a name="requirements"></a>요구 사항  
  헤더: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="example"></a>예제  
  이 예제에서는 (디버그 엔진을이 값을 알고 있어야) 해당 GUID를 지정 된 기호 공급자를 인스턴스화하는 방법을 보여 줍니다.  
@@ -112,4 +107,3 @@ IDebugSymbolProvider *GetSymbolProvider(GUID *pSymbolProviderGuid)
   
 ## <a name="see-also"></a>참고 항목  
  [기호 공급자 인터페이스](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
-

@@ -1,27 +1,22 @@
 ---
 title: 고급 설정 대화 상자(동시성 시각화 도우미) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.settings
 ms.assetid: bb3d90aa-5f08-4953-9be0-be6cea11633d
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5ad91917034dd868aad6c5d78945e4c078fcecee
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8710ed0a35b483601a166c4644112b1ba7e4feaf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749542"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705756"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>고급 설정 대화 상자(동시성 시각화 도우미)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ ms.locfileid: "51749542"
  기본적으로 CLR 이벤트는 네이티브 프로세스에 대해 일반적으로 필요하지 않기 때문에 관리되는 프로세스가 프로파일링되었을 때만 수집됩니다.  네이티브 프로세스가 CLR을 호스팅하는 일부 경우에는 네이티브 프로세스에 대해 CLR 이벤트를 수집해야 할 수 있습니다.  이 경우 **네이티브 프로세스 수집** 확인란을 선택합니다.  
   
 ### <a name="disable-rundown-events"></a>런다운 이벤트 사용 안 함  
- CLR은 런타임 및 런다운의 두 공급자로부터 이벤트를 생성합니다.  CLR 런타임 이벤트를 수집하지만 런다운 이벤트는 수집하지 않으려면 **런다운 이벤트 사용 안 함** 확인란을 선택합니다.  그러면 컬렉션으로 생성되는 추적 파일 크기가 줄어들지만 일부 스택이 분석되지 않을 수 있습니다. 자세한 내용은 [CLR ETW 공급자](http://msdn.microsoft.com/library/0beafad4-b2c8-47f4-b342-83411d57a51f)를 참조하세요.  
+ CLR은 런타임 및 런다운의 두 공급자로부터 이벤트를 생성합니다.  CLR 런타임 이벤트를 수집하지만 런다운 이벤트는 수집하지 않으려면 **런다운 이벤트 사용 안 함** 확인란을 선택합니다.  그러면 컬렉션으로 생성되는 추적 파일 크기가 줄어들지만 일부 스택이 분석되지 않을 수 있습니다. 자세한 내용은 [CLR ETW 공급자](https://msdn.microsoft.com/library/0beafad4-b2c8-47f4-b342-83411d57a51f)를 참조하세요.  
   
 ### <a name="sample-events"></a>샘플 이벤트  
  샘플 이벤트를 사용해서 스레드 실행과 연관된 호출 스택을 추적할 수 있습니다. 이러한 이벤트는 현재 프로세스에서 실행 중인 스레드에 대해 대략적으로 밀리초당 한 번씩 수집됩니다. 샘플 이벤트의 수집을 비활성화하면 수집되는 추적 크기가 줄어들지만 스레드 실행과 연관된 호출 스택을 볼 수 없습니다.  
@@ -94,6 +89,3 @@ ms.locfileid: "51749542"
 ## <a name="see-also"></a>참고 항목  
  [내 코드만](../profiling/just-my-code-threads-view.md)   
  [동시성 시각화 도우미 표식](../profiling/concurrency-visualizer-markers.md)
-
-
-

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Member Completion, supporting in language services [managed package framework]
 - language services [managed package framework], IntelliSense Member Completion
 ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 173ec03743e9dc1eaf78ae0cca0b3396f0600295
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2c969b0f857e45279488d9ba667b431064375da6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955596"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349306"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>레거시 언어 서비스의 멤버 완성
 
@@ -38,7 +38,7 @@ IntelliSense 멤버 완성이 클래스, 구조체, 열거형 또는 네임 스�
 
 - <xref:Microsoft.VisualStudio.Package.IScanner> 멤버 완성 문자를 검색 하 고 토큰 트리거를 설정 하는 스캐너 [TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) 해당 문자에 대 한 합니다.
 
-멤버 완료 문자 따라야 하는 클래스, 구조체 또는 열거형의 멤버 임을 나타냅니다. 예를 들어 C# 또는 Visual Basic 멤버 완성 문자는는 `.`인 반면 c + +에서 문자는를 `.` 또는 `->`합니다. 트리거 값에는 멤버 선택 문자를 검색할 때 설정 됩니다.
+멤버 완료 문자 따라야 하는 클래스, 구조체 또는 열거형의 멤버 임을 나타냅니다. 예를 들어, C# 또는 Visual Basic 멤버 완성 문자가 `.`에서 C++ 문자는를 `.` 또는 `->`. 트리거 값에는 멤버 선택 문자를 검색할 때 설정 됩니다.
 
 ### <a name="the-intellisense-member-list-command"></a>IntelliSense 멤버 목록 표시 명령
 

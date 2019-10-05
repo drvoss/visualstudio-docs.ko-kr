@@ -1,27 +1,22 @@
 ---
 title: 중첩 된 프로젝트에 대 한 항목 추가 대화 상자를 필터링 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - filtering, nested projects
 - nested projects, AddItem dialog box filtering
 ms.assetid: 5b3e352e-7f18-4f66-be16-b0ad55637ce5
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 363ba8e38ae2de445bd18bb9378d48aa4d824298
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7bb98eac2bc481aa5e3652144dfbcadf70430d04
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62538098"
 ---
 # <a name="filtering-the-additem-dialog-box-for-nested-projects"></a>중첩된 프로젝트에 대한 AddItem 필터링 대화 상자
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,4 +36,3 @@ ms.locfileid: "51769765"
  [항목에 추가 된 새 항목 추가 대화 상자](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
  [프로젝트 및 항목 템플릿 등록](../../extensibility/internals/registering-project-and-item-templates.md)   
  [프로젝트 중첩](../../extensibility/internals/nesting-projects.md)
-

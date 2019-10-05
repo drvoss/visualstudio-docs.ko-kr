@@ -1,0 +1,127 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: Mac용 Visual Studio 2019 설명서
+metadata:
+  description: 이 문서에서는 Mac용 Visual Studio의 기능을 소개합니다.
+  author: asb3993
+  ms.author: amburns
+  ms.date: 08/08/2019
+  ms.topic: landing-page
+  ms.prod: visual-studio-mac
+  ms.technology: vs-ide-general
+sections:
+  - title: Mac용 Visual Studio 시작
+    items:
+      - type: paragraph
+        text: Mac용 Visual Studio IDE(통합 개발 환경)를 설치하고 사용 방법을 알아봅니다.
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: ~/installation.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
+            title: Mac용 Visual Studio 설치
+          - href: ~/ide-tour.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_vs-mac.svg'
+            title: Mac용 Visual Studio 둘러보기
+          - href: 'https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes'
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
+            title: Mac용 Visual Studio 릴리스 정보
+  - title: 어떤 앱을 빌드할 수 있나요?
+    items:
+      - type: paragraph
+        text: 'Mac용 Visual Studio에서 .NET Core를 사용하는 ASP.NET Core 및 앱, Unity를 사용한 게임 및 Xamarin을 사용하는 Android 및 iOS용 모바일 앱을 사용하여 웹 사이트를 빌드할 수 있습니다. 모든 앱에 Azure를 통합할 수 있습니다.'
+      - type: list
+        style: icon48
+        items:
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_NETcore.svg'
+            text: ASP.NET Core
+            href: ~/asp-net-core.md
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_azure.svg'
+            text: Azure
+            href: ~/azure-workload.md
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_unity.svg'
+            text: Unity
+            href: ~/unity-tools.md
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_xamarin.svg'
+            text: Xamarin
+            href: /xamarin/
+  - title: 어떤 언어를 사용할 수 있나요?
+    items:
+      - type: paragraph
+        text: 'Mac용 Visual Studio에서 C#, F#, Razor, HTML5, CSS, Javascript 및 Typescript, XAML 및 XML로 작성할 수 있습니다.'
+      - type: list
+        style: icon48
+        items:
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_Csharp.svg'
+            text: 'C#'
+            href: /dotnet/csharp/
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_Fsharp.svg'
+            text: 'F#'
+            href: /dotnet/fsharp/
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_js.svg'
+            text: JavaScript
+            href: ~/javascript.md
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_TS.svg'
+            text: TypeScript
+            href: ~/javascript.md
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_html5.svg'
+            text: HTML/Razor
+            href: ~/razor.md
+  - title: Mac용 Visual Studio로 코드 작성
+    items:
+      - type: paragraph
+        text: 'Visual Studio를 사용하여 코드를 작성, 컴파일, 디버그 및 저장하는 방법을 자세히 알아봅니다.'
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: ~/source-editor.md
+            html: '<p>Intellisense, 리팩터링 및 선호하는 언어에 대한 구문 강조.</p>'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_code-edit.svg'
+            title: 코드 작성
+          - href: ~/compiling-and-building.md
+            html: <p>컴파일러를 구성하고 앱을 빌드하세요.</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_build.svg'
+            title: 컴파일 및 빌드
+          - href: ~/debugging.md
+            html: <p>문제를 조사하려면 디버거에서 앱을 실행하세요.</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_debug.svg'
+            title: 디버그
+          - href: ~/version-control.md
+            html: '<p>Azure DevOps, Git 또는 Subversion 소스 리포지토리에 액세스합니다.</p>'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_pull-request.svg'
+            title: 버전 제어
+  - title: 추가 도움 필요
+    items:
+      - type: paragraph
+        text: 다른 유용한 콘텐츠에 대한 링크
+      - type: list
+        style: unordered
+        items:
+          - html: '<a href="https://visualstudio.microsoft.com/vs/support/mac/">Mac용 Visual Studio 지원 – FAQ</a>'
+          - html: '<a href="https://visualstudio.microsoft.com/vs/pricing/">가격 책정 및 구독</a>'
+          - html: '<a href="https://visualstudio.microsoft.com/vs/compare/">버전 비교</a>'
+          - html: '<a href="https://my.visualstudio.com/Downloads?q=Visual%20Studio%20for%20Mac">구독자 액세스(이전 다운로드 포함)</a>'
+          - html: '<a href="https://code.visualstudio.com">Visual Studio Code</a>'

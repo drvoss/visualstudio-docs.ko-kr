@@ -1,14 +1,9 @@
 ---
-title: '방법: 형식 간의 연결 만들기(클래스 디자이너) | Microsoft Docs'
-ms.custom: ''
+title: '방법: 형식 (클래스 디자이너) 간의 연결 만들기 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.associationline
 helpviewer_keywords:
@@ -21,13 +16,13 @@ ms.assetid: adccb9c8-2f8a-4086-9fa9-f70f99fb6e00
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 33b1a45d1c5dc3275ebbde8124986705bcac51ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2d152ce38c445955988ec76a2e328691eac152ca
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416948"
 ---
 # <a name="how-to-create-associations-between-types-class-designer"></a>방법: 형식 간의 연결 만들기(클래스 디자이너)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +32,13 @@ ms.locfileid: "49856797"
  모든 필드와 속성을 연결로 표시할 수 있지만 다이어그램에서 강조할 내용에 따라 중요한 멤버만 연결로 표시하는 것이 좋습니다. 그 밖의 멤버는 일반 멤버로 표시하거나 완전히 숨길 수도 있습니다.  
   
 > [!NOTE]
->  클래스 디자이너에서는 단방향 연결만 지원됩니다.  
+> 클래스 디자이너에서는 단방향 연결만 지원됩니다.  
   
 ### <a name="to-define-an-association-line-in-the-class-diagram"></a>클래스 다이어그램에서 연결 선을 정의하려면  
   
-1.  도구 상자의 클래스 디자이너에서 **연결**을 선택합니다.  
+1. 도구 상자의 클래스 디자이너에서 **연결**을 선택합니다.  
   
-2.  서로 연결할 두 모양 간에 연결 선을 그립니다.  
+2. 서로 연결할 두 모양 간에 연결 선을 그립니다.  
   
      첫 번째 클래스에 새 속성이 만들어집니다. 이 속성은 모양 구획 내에 만들어지지 않고 기본 이름으로 된 연결 선으로 표시됩니다. 해당 형식은 연결 선이 가리키는 모양입니다.  
   
@@ -53,16 +48,13 @@ ms.locfileid: "49856797"
   
   \- 또는 -  
   
-1.  연결로 표시된 속성이 있는 모양을 클릭합니다.  
+1. 연결로 표시된 속성이 있는 모양을 클릭합니다.  
   
      모양에 포커스가 지정되고 해당 멤버가 클래스 세부 내용 창과 속성 창에 표시됩니다.  
   
-2.  클래스 세부 내용 창이나 속성 창에서 해당 속성의 이름 필드를 편집하고 Enter 키를 누릅니다.  
+2. 클래스 세부 내용 창이나 속성 창에서 해당 속성의 이름 필드를 편집하고 Enter 키를 누릅니다.  
   
      **클래스 세부 내용** 창, 형식 연결 선, 속성 창 및 코드에서 이름이 업데이트됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [방법: 멤버 표시와 연결 표시 간 변경(클래스 디자이너)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)
-
-
-

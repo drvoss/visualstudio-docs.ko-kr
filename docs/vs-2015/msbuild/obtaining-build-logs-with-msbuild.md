@@ -1,14 +1,9 @@
 ---
 title: MSBuild를 사용하여 빌드 로그 가져오기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, logging
 - logging [MSBuild]
@@ -16,22 +11,21 @@ ms.assetid: 6ba9a754-9cc0-4fed-9fc8-4dcd3926a031
 caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6eb4a1822d0be86d19f25bfaa46e296abc7a73a0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c88288a7bed453ca14e9c14fd43706b97be04044
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430840"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>MSBuild를 사용하여 빌드 로그 가져오기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 MSBuild에서 스위치를 사용하면 검토할 빌드 데이터의 양과 하나 이상의 파일에 빌드 데이터를 저장할지를 지정할 수 있습니다. 빌드 데이터를 수집하는 사용자 지정 로거를 지정할 수도 있습니다. 이 항목에서 다루지 않는 MSBuild 명령줄 스위치에 대한 자세한 내용은 [명령줄 참조](../msbuild/msbuild-command-line-reference.md)를 참조하세요.  
   
 > [!NOTE]
->  Visual Studio IDE를 사용하여 프로젝트를 빌드하는 경우 빌드 로그를 검토하여 해당 빌드의 문제를 해결할 수 있습니다. 자세한 내용은 [방법: 빌드 로그 파일 보기, 저장 및 구성](../ide/how-to-view-save-and-configure-build-log-files.md)을 참조하세요.  
+> Visual Studio IDE를 사용하여 프로젝트를 빌드하는 경우 빌드 로그를 검토하여 해당 빌드의 문제를 해결할 수 있습니다. 자세한 내용은 [방법: 보기, 저장 및 빌드 로그 파일 구성](../ide/how-to-view-save-and-configure-build-log-files.md)합니다.  
   
 ## <a name="setting-the-level-of-detail"></a>세부 수준 설정  
  정보 수준을 지정하지 않고 MSBuild를 사용하여 프로젝트를 빌드할 때는 출력 로그에 다음 정보가 표시됩니다.  
@@ -88,6 +82,3 @@ msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorso
  [다중 프로세서 환경에서의 로그인](../msbuild/logging-in-a-multi-processor-environment.md)   
  [전달 로거 만들기](../msbuild/creating-forwarding-loggers.md)   
  [MSBuild 개념](../msbuild/msbuild-concepts.md)
-
-
-

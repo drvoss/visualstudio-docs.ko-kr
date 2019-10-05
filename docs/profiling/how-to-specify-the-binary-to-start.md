@@ -1,8 +1,6 @@
 ---
-title: '방법: 시작할 이진 파일 지정 | Microsoft 문서'
-ms.custom: ''
+title: '방법: 시작할 이진 파일 지정 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.itemlaunch
@@ -12,19 +10,19 @@ helpviewer_keywords:
 - performance sessions, launching
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87fc4102b3cbd3420f1e5c3b7ea4a067e0d95a0d
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: a03bf203e5078bdbdf6327ec7bda186613a25c03
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844861"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996138"
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>방법: 시작할 이진 파일 지정
 
-DLL 같은 이진 파일을 프로파일링하려면 **\<Target> 속성 페이지** 대화 상자에 정보를 입력해야 합니다. 이 정보는 DLL 프로젝트가 호출 응용 프로그램을 찾을 수 있는 위치를 나타냅니다.
+DLL 같은 이진 파일을 프로파일링하려면 **\<Target> 속성 페이지** 대화 상자에 정보를 입력해야 합니다. 이 정보는 DLL 프로젝트가 호출 애플리케이션을 찾을 수 있는 위치를 나타냅니다.
 
 1. **성능 탐색기**에서 대상 이진 파일을 마우스 오른쪽 단추로 클릭한 다음 **속성**을 클릭합니다.
 
@@ -34,7 +32,7 @@ DLL 같은 이진 파일을 프로파일링하려면 **\<Target> 속성 페이�
 
 4. **시작할 실행 파일** 텍스트 상자에 파일 위치를 지정합니다.
 
-5. **인수** 텍스트 상자에 응용 프로그램 시작에 필요한 인수를 지정합니다.
+5. **인수** 텍스트 상자에 애플리케이션 시작에 필요한 인수를 지정합니다.
 
 6. **작업 디렉터리** 텍스트 상자에 디렉터리 위치를 지정합니다.
 

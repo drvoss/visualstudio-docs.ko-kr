@@ -10,19 +10,19 @@ ms.assetid: 53348dff-35a6-4303-b263-90c10af06bf3
 caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 71136a1b3cb136cbc0a97cf39f59f1f4e950048b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9a52abcfa4defb49526f944469c95a2247f5d85c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992524"
 ---
 # <a name="iactivescriptsitedebug32getdocumentcontextfromposition"></a>IActiveScriptSiteDebug32::GetDocumentContextFromPosition
-위임 하는 언어 엔진에서 사용 하는 `IDebugCodeContext::GetSourceContext`합니다.  
+언어 엔진에서 사용 하 여 위임할 `IDebugCodeContext::GetSourceContext`합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetDocumentContextFromPosition(  
    DWORD_PTR                dwSourceContext,  
    ULONG                    uCharacterOffset,  
@@ -33,10 +33,10 @@ HRESULT GetDocumentContextFromPosition(
   
 #### <a name="parameters"></a>매개 변수  
  `dwSourceContext`  
- [in] 에 제공 되는 원본 콘텐츠 `ParseScriptText` 또는 `AddScriptlet`합니다.  
+ [in] 에 제공 되는 원본 콘텐츠의 `ParseScriptText` 또는 `AddScriptlet`합니다.  
   
  `uCharacterOffset`  
- [in] 문자 스크립틀릿 또는 스크립트 블록의 시작에 상대적으로 오프셋입니다.  
+ [in] 문자 scriptlet 스크립트 블록의 시작에 상대적으로 오프셋입니다.  
   
  `uNumChars`  
  [in] 이 컨텍스트에서 문자 수입니다.  

@@ -1,25 +1,20 @@
 ---
 title: WPF 커뮤니티 리소스 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 89604bcf-da25-4180-a1d2-c5f22ab67bb6
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d1b918e4c0114ad1f4ed0d04b92c24a0ecae31b6
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 63a4e207172d4f726091691985e7d1f84bb2e708
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187451"
 ---
 # <a name="wpf-community-resources"></a>WPF 커뮤니티 리소스
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,4 +34,4 @@ Microsoft는 WPF 팀 멤버 및 커뮤니티 리더가 생성한 블로그, 포�
 
 ## <a name="see-also"></a>참고 항목
 
-- [Windows Presentation Foundation으로 최신 데스크톱 응용 프로그램 만들기](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
+- [Windows Presentation Foundation으로 최신 데스크톱 애플리케이션 만들기](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

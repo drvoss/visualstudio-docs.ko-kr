@@ -1,25 +1,20 @@
 ---
-title: '방법: 기본 질감 만들기 | Microsoft 문서'
-ms.custom: ''
+title: '방법: 기본 질감 만들기 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 0222e8bf-d29f-421b-9b1f-123d500fa179
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 2312b82fbcb6f4cd4ed00b288cb87283538cb372
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bd1a9a2a269c173ef9dcb47b39921073802fe1ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855835"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438405"
 ---
 # <a name="how-to-create-a-basic-texture"></a>방법: 기본 질감 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +23,15 @@ ms.locfileid: "49855835"
   
  이 문서는 다음 활동을 보여 줍니다.  
   
--   질감 크기 설정  
+- 질감 크기 설정  
   
--   전경색 및 배경색 설정  
+- 전경색 및 배경색 설정  
   
--   알파 채널(투명도) 사용  
+- 알파 채널(투명도) 사용  
   
--   **채우기** 및 **타원** 도구 사용  
+- **채우기** 및 **타원** 도구 사용  
   
--   도구 속성 설정  
+- 도구 속성 설정  
   
 ## <a name="creating-a-basic-texture"></a>기본 질감 만들기  
  [이미지 편집기]를 사용하여 게임 또는 앱에 대한 이미지와 질감을 만들고 수정할 수 있습니다.  
@@ -60,7 +55,7 @@ ms.locfileid: "49855835"
 5. [이미지 편집기] 도구 모음에서 **채우기** 도구를 선택하고 Shift 키를 누른 채 이미지에서 임의 점을 선택합니다. Shift 키를 사용하면 채우기 색의 알파 값이 이미지의 색을 대체합니다. 그렇지 않으면 알파 값이 채우기 색을 이미지의 색과 혼합하는 데 사용됩니다.  
   
    > [!IMPORTANT]
-   >  이전 단계의 색 선택과 함께 이 단계에서는 그리려는 "bullseye" 대상 질감에 사용할 기본 이미지가 준비되어 있는지 확인합니다. 이미지가 투명 검은색으로 채워진 경우에는 대상의 테두리가 검은색이므로 대상 주변에 앨리어싱 아티팩트가 없게 됩니다.  
+   > 이전 단계의 색 선택과 함께 이 단계에서는 그리려는 "bullseye" 대상 질감에 사용할 기본 이미지가 준비되어 있는지 확인합니다. 이미지가 투명 검은색으로 채워진 경우에는 대상의 테두리가 검은색이므로 대상 주변에 앨리어싱 아티팩트가 없게 됩니다.  
   
 6. [이미지 편집기] 도구 모음에서 **타원** 도구를 선택합니다.  
   
@@ -75,7 +70,7 @@ ms.locfileid: "49855835"
 11. **타원** 도구를 사용하여 픽셀 좌표 `(3, 3)`에서 픽셀 좌표 `(508, 508)`까지 원을 그립니다. 원을 더 쉽게 그리려면 그릴 때 Shift 키를 누르고 있습니다.  
   
     > [!NOTE]
-    >  현재 포인터 위치의 픽셀 좌표가 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 상태 표시줄에 표시됩니다.  
+    > 현재 포인터 위치의 픽셀 좌표가 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 상태 표시줄에 표시됩니다.  
   
 12. 배경색을 변경합니다. **R**를 `44`로, **G**를 `165`로, **B**를 `211`로, **A**를 `255`로 설정합니다.  
   
@@ -93,10 +88,7 @@ ms.locfileid: "49855835"
   
     ![전체 "bullseye" 대상 질감](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")  
   
-    다음 단계로 이 질감에 대한 MIP 수준을 생성할 수 있습니다. 자세한 내용은 [방법: MIP 수준 만들기 및 수정](../designers/how-to-create-and-modify-mip-levels.md)을 참조하세요.  
+    다음 단계로 이 질감에 대한 MIP 수준을 생성할 수 있습니다. 자세한 내용은 [방법: MIP 수준 만들기 및 수정](../designers/how-to-create-and-modify-mip-levels.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Image Editor](../designers/image-editor.md)
-
-
-

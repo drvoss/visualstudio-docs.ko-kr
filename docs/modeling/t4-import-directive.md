@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 6df6b3f4677e53fd2105d616a4be42156848504b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f49ab8d3462877a28cf40aed519b71615b23f8d4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856360"
 ---
 # <a name="t4-import-directive"></a>T4 Import 지시문
 
@@ -44,7 +43,7 @@ The file contains: <#=  fileContent #>
 
   또한 사용자 지정 지시문을 사용하는 경우 지시문 프로세서에서 일부 네임스페이스를 자동으로 가져올 수 있습니다.
 
-  예를 들어 DSL(Domain-Specific Language)을 위한 템플릿을 작성하는 경우 다음 네임스페이스에 대한 import 지시문을 작성할 필요가 없습니다.
+  예를 들어 DSL(도메인별 언어)을 위한 템플릿을 작성하는 경우 다음 네임스페이스에 대한 import 지시문을 작성할 필요가 없습니다.
 
 - `Microsoft.VisualStudio.Modeling`
 

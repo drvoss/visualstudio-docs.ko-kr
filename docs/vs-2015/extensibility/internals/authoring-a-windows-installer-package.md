@@ -1,27 +1,22 @@
 ---
 title: Windows Installer 패키지를 authoring | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - .msi files, VSPackages
 - msi files, VSPackages
 ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c51696cd41083e81fb1561eb8707c4f4844b32d5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5e92e965f0efe531f1618be509d0a7c9655c573d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742650"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682546"
 ---
 # <a name="authoring-a-windows-installer-package"></a>Windows Installer 패키지 작성
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ ms.locfileid: "51742650"
   
 - VSPackage를 통합 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 호출한 **devenv.exe /setup** (CustomAction 테이블 사용).  
   
-  자세한 내용은 [Windows Installer](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)합니다.  
+  자세한 내용은 [Windows Installer](https://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)합니다.  
   
 ## <a name="setup-tools"></a>도구 설정  
  다양 한 타사 설치 도구는 Windows Installer 패키지에 대 한 개발 환경을 제공 합니다. 두 가지 무료 도구는 다음과 같습니다.  
@@ -54,8 +49,7 @@ ms.locfileid: "51742650"
   
    도구 집합 XML 소스 파일에서 Windows Installer 패키지를 빌드합니다. 도구 집합 Microsoft 오픈 소스 프로젝트입니다. 소스 코드 및 실행 파일을 다운로드할 수 있습니다 [ http://sourceforge.net/projects/wix ](http://sourceforge.net/projects/wix)합니다.  
   
-  에 통합 하는 상용 제품에 대 한 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 를 사용 하 여는 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]를 참조 하십시오 [ http://visualstudiogallery.com ](http://visualstudiogallery.com/)합니다.  
+  에 통합 하는 상용 제품에 대 한 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 를 사용 하 여는 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]를 참조 하십시오 [ https://marketplace.visualstudio.com/ ](https://marketplace.visualstudio.com/)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Windows Installer를 사용하여 VSPackage 설치](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
-

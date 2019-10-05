@@ -1,14 +1,9 @@
 ---
 title: '방법: 여러 플랫폼을 대상으로 한 프로젝트 구성 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], targeting platforms
 - platforms, changing target platforms
@@ -16,13 +11,13 @@ ms.assetid: affa2392-7aed-45ac-9ffa-1d8e0496d590
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9a3010e6304124ee306c5ecad3593df98d555523
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 7457b5be3a6c1cbf2c2b6a1c6f66f9fb89e8d225
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921836"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584319"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>방법: 여러 플랫폼을 대상으로 한 프로젝트 구성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,31 +29,31 @@ ms.locfileid: "49921836"
   
 #### <a name="to-set-your-configuration-to-target-a-different-platform"></a>다른 플랫폼을 대상으로 하는 구성을 설정하려면  
   
-1.  **빌드** 메뉴에서 **Configuration Manager**를 클릭합니다.  
+1. **빌드** 메뉴에서 **Configuration Manager**를 클릭합니다.  
   
-2.  **활성 솔루션 플랫폼 상자**에서 솔루션의 대상이 될 플랫폼을 선택하거나 **\<새로 만들기>** 를 선택하여 새 플랫폼을 만듭니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]은(는) **Configuration Manager** 대화 상자에서 활성 플랫폼으로 설정된 플랫폼을 대상으로 응용 프로그램을 컴파일합니다.  
+2. **활성 솔루션 플랫폼 상자**에서 솔루션의 대상이 될 플랫폼을 선택하거나 **\<새로 만들기>** 를 선택하여 새 플랫폼을 만듭니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]은(는) **Configuration Manager** 대화 상자에서 활성 플랫폼으로 설정된 플랫폼을 대상으로 애플리케이션을 컴파일합니다.  
   
 ## <a name="removing-a-platform"></a>플랫폼 제거  
  플랫폼에 대한 요구가 없다고 생각되면 Configuration Manager 대화 상자를 사용하여 제거할 수 있습니다. 그러면 구성 및 대상 조합에 대해 구성한 모든 솔루션 및 프로젝트 설정이 제거됩니다.  
   
 #### <a name="to-remove-a-platform"></a>플랫폼을 제거하려면  
   
-1.  **빌드** 메뉴에서 **Configuration Manager**를 클릭합니다.  
+1. **빌드** 메뉴에서 **Configuration Manager**를 클릭합니다.  
   
-2.  **활성 솔루션 플랫폼 상자**에서 **\<편집>** 을 선택합니다. **솔루션 플랫폼 편집** 대화 상자가 열립니다.  
+2. **활성 솔루션 플랫폼 상자**에서 **\<편집>** 을 선택합니다. **솔루션 플랫폼 편집** 대화 상자가 열립니다.  
   
-3.  제거하려는 플랫폼을 클릭하고 **제거**를 클릭합니다.  
+3. 제거하려는 플랫폼을 클릭하고 **제거**를 클릭합니다.  
   
 ## <a name="targeting-multiple-platforms-with-one-solution"></a>한 솔루션으로 여러 플랫폼을 대상으로 지정  
  구성 및 플랫폼 설정 조합을 기반으로 설정을 변경할 수 있기 때문에 둘 이상의 플랫폼을 대상으로 지정할 수 있는 솔루션을 설정할 수 있습니다.  
   
 #### <a name="to-target-multiple-platforms"></a>여러 플랫폼을 대상으로 지정하려면  
   
-1.  **Configuration Manager**를 사용하여 솔루션에 대해 두 개 이상의 대상 플랫폼을 추가합니다.  
+1. **Configuration Manager**를 사용하여 솔루션에 대해 두 개 이상의 대상 플랫폼을 추가합니다.  
   
-2.  **활성 솔루션 플랫폼** 목록에서 대상으로 지정할 플랫폼을 선택합니다.  
+2. **활성 솔루션 플랫폼** 목록에서 대상으로 지정할 플랫폼을 선택합니다.  
   
-3.  솔루션을 빌드합니다.  
+3. 솔루션을 빌드합니다.  
   
 #### <a name="to-build-multiple-solution-configurations-at-once"></a>한 번에 여러 솔루션 구성을 빌드하려면  
   
@@ -72,6 +67,3 @@ ms.locfileid: "49921836"
  [방법: 구성 만들기 및 편집](../ide/how-to-create-and-edit-configurations.md)   
  [빌드 구성 이해](../ide/understanding-build-configurations.md)   
  [Visual Studio에서 프로젝트 및 솔루션 빌드 및 정리](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
-
-
-

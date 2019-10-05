@@ -1,14 +1,9 @@
 ---
 title: IDebugExceptionEvent2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugExceptionEvent2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 53d32e59-a84b-4710-833e-c5ab08100516
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6ac2e9a85d66ad93b8b0ae1c80ee82e915fa9d86
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f364b6aa622bf9c7481d61e7646e955cebe00933
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743357"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695395"
 ---
 # <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ IDebugExceptionEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>구현자 참고 사항  
- DE 디버깅 중인 프로그램에서 예외가 발생에 보고서에이 인터페이스를 구현 합니다. 합니다 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) 이 인터페이스와 동일한 개체에서 인터페이스를 구현 해야 합니다. SDM 사용 [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) 액세스는 `IDebugEvent2` 인터페이스입니다.  
+ DE 디버깅 중인 프로그램에서 예외가 발생에 보고서에이 인터페이스를 구현 합니다. 합니다 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) 이 인터페이스와 동일한 개체에서 인터페이스를 구현 해야 합니다. SDM 사용 [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) 액세스는 `IDebugEvent2` 인터페이스입니다.  
   
 ## <a name="notes-for-callers"></a>호출자에 대 한 정보  
  DE가 만들고 예외를 보고 하려면이 이벤트 개체를 보냅니다. 이벤트를 사용 하 여 보내집니다 합니다 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 디버깅 중인 프로그램에 연결할 때 SDM에서 제공 하는 콜백 함수입니다.  
@@ -54,9 +49,9 @@ IDebugExceptionEvent2 : IUnknown
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="remarks"></a>설명  
  이벤트를 보내기 전에 DE 확인 하는 경우이 예외 이벤트가 지정 된 첫째 또는 둘째 예외에 대 한 이전 호출 [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)합니다. 첫째 예외를 지정 된 경우는 `IDebugExceptionEvent2` SDM에 이벤트가 전송 됩니다. 그렇지 않은 경우는 DE 예외를 처리 하는 응용 프로그램에 제공 합니다. 없음 예외 처리기가 제공 하 고 예외를 두 번째 예외를으로 지정 된 경우는 `IDebugExceptionEvent2` SDM에 이벤트가 전송 됩니다. 그렇지 않으면는 DE 프로그램의 실행을 다시 시작 하 고 운영 체제 또는 런타임 예외를 처리 합니다.  
@@ -66,4 +61,3 @@ IDebugExceptionEvent2 : IUnknown
  [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
-

@@ -1,32 +1,26 @@
 ---
 title: IDE에서 빌드 시작 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - build
 ms.assetid: 936317aa-63b7-4eb0-b9db-b260a0306196
 caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c741b8dfd0607de41ca7b53bdd88244ae3957a9a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 94685a2b06b14c232d9e1f79a1d7440e1ceb765b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161337"
 ---
 # <a name="starting-a-build-from-within-the-ide"></a>IDE에서 빌드 시작
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 사용자 지정 프로젝트 시스템은 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor>를 사용하여 빌드를 시작해야 합니다. 이 항목에서는 이에 대한 이유를 설명하고 프로시저를 간략하게 설명합니다.  
   
 ## <a name="parallel-builds-and-threads"></a>병렬 빌드 및 스레드  
@@ -127,6 +121,3 @@ public bool Build(Project project, bool isDesignTimeBuild)
 }  
   
 ```
-
-
-

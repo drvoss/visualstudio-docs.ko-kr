@@ -1,24 +1,22 @@
 ---
 title: Visual C# 코드 유닛 테스트
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 76c20fb987bb1380cb4d3f00e078aac81f26e89f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 359f2f8b078c197f12a6db09858ca7c9da5a621a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809637"
 ---
-# <a name="unit-testing-visual-c-code"></a>Visual C# 코드 유닛 테스트
+# <a name="unit-test-c-code"></a>C# 코드 단위 테스트
 
-이 아티클에서는 UWP 앱에서 Visual C# 클래스에 대한 단위 테스트를 만드는 한 가지 방법에 대해 설명합니다. Rooter 클래스는 지정된 숫자의 제곱근 예상 값을 계산하는 함수를 구현하여 미적분법의 극한 이론을 보여 줍니다. Maths 응용 프로그램은 이 함수를 사용하여 수학으로 할 수 있는 재미있는 작업을 사용자에게 보여 줄 수 있습니다.
+이 문서에서는 UWP 앱에서 C# 클래스에 대한 단위 테스트를 만드는 한 가지 방법에 대해 설명합니다. Rooter 클래스는 지정된 숫자의 제곱근 예상 값을 계산하는 함수를 구현하여 미적분법의 극한 이론을 보여 줍니다. Maths 응용 프로그램은 이 함수를 사용하여 수학으로 할 수 있는 재미있는 작업을 사용자에게 보여 줄 수 있습니다.
 
 이 아티클에서는 개발의 첫 단계로 단위 테스트를 사용하는 방법을 보여줍니다. 이 방법에서는 먼저 테스트하고 있는 시스템에서 특정 동작을 확인하는 테스트 메서드를 작성한 다음 테스트를 통과하는 코드를 작성합니다. 다음 절차의 순서를 변경함으로써 이 전략을 반대로 적용하여 먼저 테스트할 코드를 작성한 다음 단위 테스트를 작성할 수 있습니다.
 
@@ -28,13 +26,13 @@ ms.locfileid: "53064856"
 
 1. **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 차례로 선택합니다.
 
-2. **새 프로젝트** 대화 상자에서 **설치됨** > **Visual C#** 을 확장하고 **Windows 유니버설**을 선택합니다. 그런 다음 프로젝트 템플릿 목록에서 **새 응용 프로그램**을 선택합니다.
+2. **빈 앱(유니버설 Windows)** 프로젝트 템플릿을 검색하여 선택합니다.
 
-3. 프로젝트의 이름을 `Maths`로 지정하고 **솔루션용 디렉터리 만들기**가 선택되어 있는지 확인합니다.
+3. 프로젝트 이름을 `Maths`로 지정합니다.
 
 4. **솔루션 탐색기**에서 솔루션 이름을 선택하고 바로 가기 메뉴에서 **추가**를 선택한 다음, **새 프로젝트**를 선택합니다.
 
-5. **새 프로젝트** 대화 상자에서 **설치됨** 및 **Visual C#** 을 확장하고 **Windows Universal**을 선택합니다. 그런 다음 프로젝트 템플릿 목록에서 **유닛 테스트 앱(유니버설 Windows)** 을 선택합니다.
+5. **단위 테스트 앱(유니버설 Windows)** 프로젝트 템플릿을 검색하여 선택합니다.
 
 6. Visual Studio 편집기에서 *UnitTest1.cs*를 엽니다.
 

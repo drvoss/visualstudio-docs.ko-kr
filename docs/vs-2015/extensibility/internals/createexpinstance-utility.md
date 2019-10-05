@@ -1,14 +1,9 @@
 ---
 title: CreateExpInstance 유틸리티 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - experimental builds
 - experimental hive
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 03779774-9401-49ae-997c-0c3ab25ed0d5
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 73a6761e844cee41c1a6f0df79f0d6529f4a8215
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 7d778f0f31a7651412915a898bff9e4bdfe6c55f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768250"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196985"
 ---
 # <a name="createexpinstance-utility"></a>CreateExpInstance 유틸리티
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
  / VSInstance  
  복사할 기본 Visual Studio 인스턴스를 포함 하는 디렉터리의 이름입니다.  
   
- / RootSuffix  
+ /RootSuffix  
  실험적 인스턴스 디렉터리의 이름에 추가할 접미사입니다.  
   
 ## <a name="remarks"></a>설명  
@@ -64,8 +59,7 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
   
  다음 예제에서는 Visual Studio의 기본 실험적 인스턴스 다시 설정합니다.  
   
- **CreateExpInstance.exe /Reset /VSInstance 14.0 = /RootSuffix Exp =**  
+ **CreateExpInstance.exe /Reset /VSInstance=14.0 /RootSuffix=Exp**  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [제품 릴리스](../../misc/releasing-a-visual-studio-integration-product.md)
-

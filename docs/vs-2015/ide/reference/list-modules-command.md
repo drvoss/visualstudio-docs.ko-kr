@@ -1,14 +1,9 @@
 ---
 title: 모듈 목록 표시 명령 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.listmodules
 helpviewer_keywords:
@@ -19,18 +14,17 @@ ms.assetid: 3cb73774-6ac0-43b2-b781-75ed47175bfd
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 97a269fd5ed0e30e648e2dade210ab0238c8d759
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7d24b081c20b5874d6daa57832136023ac678c0f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199143"
 ---
 # <a name="list-modules-command"></a>모듈 목록 표시 명령
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 현재 프로세스에 대한 모듈을 나열합니다.  
   
 ## <a name="syntax"></a>구문  
@@ -71,7 +65,7 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
   
 ## <a name="remarks"></a>설명  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  이 예제에서는 현재 프로세스의 모듈 이름, 주소 및 타임스탬프를 나열합니다.  
   
 ```  
@@ -82,6 +76,3 @@ Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolF
  [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)   
  [명령 창](../../ide/reference/command-window.md)   
  [방법: 모듈 창 사용](../../debugger/how-to-use-the-modules-window.md)
-
-
-

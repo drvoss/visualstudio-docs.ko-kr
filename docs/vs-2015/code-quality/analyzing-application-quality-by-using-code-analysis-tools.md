@@ -1,14 +1,9 @@
 ---
 title: 코드 분석 도구를 사용 하 여 응용 프로그램 품질 분석 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.analysisresults
 helpviewer_keywords:
@@ -20,14 +15,14 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e2dd66668efcba5264cc3a3646b627ec9be99e63
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 83fbe8b372d021e0cec4faccfd0b22fcaa8af30d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157097"
 ---
-# <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>코드 분석 도구를 사용하여 응용 프로그램 품질 분석
+# <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>코드 분석 도구를 사용하여 애플리케이션 품질 분석
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 섹션 내용  
@@ -40,7 +35,7 @@ ms.locfileid: "49216698"
  [규칙 집합을 사용하여 코드 분석 규칙 그룹화](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)  
  선택 및 작성할 *규칙 집합* 프로젝트에 적용 합니다.  
   
- [코드 분석 응용 프로그램 오류](../code-quality/code-analysis-application-errors.md)  
+ [코드 분석 애플리케이션 오류](../code-quality/code-analysis-application-errors.md)  
  코드 분석 기능에서 오류를 수정합니다.  
   
  [팀 프로젝트 체크 인 정책을 사용하여 코드 품질 향상](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)  
@@ -49,10 +44,10 @@ ms.locfileid: "49216698"
 ### <a name="code-analysis-for-drivers"></a>드라이버에 대한 코드 분석  
  코드 분석 도구는 드라이버 소스 코드를 체계적으로 분석하여 안정성과 드라이버의 신뢰성을 향상시킬 수 있습니다.  
   
- [코드 분석 도구를 사용 하 여 드라이버 품질 분석](http://go.microsoft.com/fwlink/?LinkId=227618)  
- 드라이버에 대한 코드 분석은 기본적인 C 및 C++ 프로그램의 오류 코드를 감지하고 (주로) 커널 모드 드라이버 코드에서 오류를 검색하도록 설계된 특수한 모듈을 포함하는 컴파일 시간 정적 확인 도구입니다. SDV(정적 드라이버 확인 프로그램)는 Windows 커널 모드 드라이버의 소스 코드를 체계적으로 분석하는 정적 검증 도구입니다. SDV는 드라이버가 Windows 운영 체제 커널과 제대로 상호 작용하는지 여부를 결정합니다.  
+ [코드 분석 도구를 사용 하 여 드라이버 품질 분석](/windows-hardware/drivers/devtest/tools-for-verifying-drivers)  
+ 드라이버용 코드 분석은 C에서 기본 코딩 오류를 감지 하는 컴파일 시간 정적 확인 도구 및 C++ 프로그램 및 (주로) 커널 모드 드라이버 코드에서 오류를 감지 하도록 설계 된 특수 한 모듈을 포함 합니다. SDV(정적 드라이버 확인 프로그램)는 Windows 커널 모드 드라이버의 소스 코드를 체계적으로 분석하는 정적 검증 도구입니다. SDV는 드라이버가 Windows 운영 체제 커널과 제대로 상호 작용하는지 여부를 결정합니다.  
   
- [드라이버 경고에 대 한 코드 분석](http://go.microsoft.com/fwlink/?LinkId=225920)  
+ [드라이버 경고에 대한 코드 분석](http://go.microsoft.com/fwlink/?LinkId=225920)  
  드라이버에 대한 코드 분석이 드라이버 코드에서 가능한 오류를 검색할 때 보고하는 경고에 대해 설명합니다.  
   
 ## <a name="related-tasks"></a>관련 작업  
@@ -61,6 +56,3 @@ ms.locfileid: "49216698"
   
  [코드 단위 테스트](../test/unit-test-your-code.md)  
  여기에 설명을 삽입합니다.
-
-
-

@@ -1,8 +1,6 @@
 ---
 title: 도구 상자, 구성 요소 탭
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.CHOOSEITEMS.FrameworkComponents
@@ -12,19 +10,19 @@ helpviewer_keywords:
 - Toolbox, Components tab
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a6365ebc9c44d5d453e04a3579d1b87d766413f
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 17f040b9bb64c2192bc6b376f5d0397ee5438071
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924319"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747747"
 ---
 # <a name="toolbox-components-tab"></a>도구 상자, 구성 요소 탭
 
-Windows Forms용 Visual Basic 및 C# 디자이너에 추가할 수 있는 구성 요소를 표시합니다. <xref:System.Messaging.MessageQueue> 및 <xref:System.Diagnostics.EventLog> 구성 요소와 같이 Visual Studio에 함께 제공되는 .NET Framework 구성 요소 이외에 사용자 지정 또는 타사 구성 요소를 이 탭에 추가할 수 있습니다.
+Windows Forms용 Visual Basic 및 C# 디자이너에 추가할 수 있는 구성 요소를 표시합니다. <xref:System.Messaging.MessageQueue> 및 <xref:System.Diagnostics.EventLog> 구성 요소와 같이 Visual Studio에 함께 제공되는 .NET 구성 요소 이외에 사용자 지정 또는 타사 구성 요소를 이 탭에 추가할 수 있습니다.
 
 이 탭을 표시하려면 Windows Forms 디자이너를 엽니다. **보기** > **도구 상자**를 선택합니다. **도구 상자**에서 **구성 요소** 탭을 선택합니다.
 
@@ -84,10 +82,10 @@ Active Directory에 대해 쿼리를 실행하는 데 사용할 수 있는 <xref
 
 **Timer**
 
-Windows 기반 응용 프로그램에 시간 기반 기능을 추가하는 데 사용할 수 있는 <xref:System.Windows.Forms.Timer> 구성 요소 인스턴스를 만듭니다. 자세한 내용은 [Timer 구성 요소](/dotnet/framework/winforms/controls/timer-component-windows-forms)를 참조하세요.
+Windows 기반 애플리케이션에 시간 기반 기능을 추가하는 데 사용할 수 있는 <xref:System.Windows.Forms.Timer> 구성 요소 인스턴스를 만듭니다. 자세한 내용은 [Timer 구성 요소](/dotnet/framework/winforms/controls/timer-component-windows-forms)를 참조하세요.
 
 > [!NOTE]
-> **도구 상자**에 추가할 수 있는 시스템 기반 <xref:System.Timers.Timer>도 있습니다. 이 <xref:System.Timers.Timer>는 서버 응용 프로그램에 최적화되어 있고 Windows Forms <xref:System.Windows.Forms.Timer>는 Windows Forms에 가장 적합합니다.
+> **도구 상자**에 추가할 수 있는 시스템 기반 <xref:System.Timers.Timer>도 있습니다. 이 <xref:System.Timers.Timer>는 서버 애플리케이션에 최적화되어 있고 Windows Forms <xref:System.Windows.Forms.Timer>는 Windows Forms에 가장 적합합니다.
 
 ## <a name="see-also"></a>참고 항목
 

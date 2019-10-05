@@ -3,26 +3,25 @@ title: Node.js 및 React 앱 만들기
 description: 이 자습서에서는 Visual Studio용 Node.js 도구를 사용하여 앱을 만듭니다.
 ms.custom: mvc
 ms.date: 11/01/2018
-ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 9203b07767d38443dbad8cc619a40971ca09f2c6
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: 048e0409a5af77c512f0ee768d95d61259426fb9
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750788"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533365"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>자습서: Visual Studio에서 Node.js 및 React 앱 만들기
 
-Visual Studio를 사용하면 쉽게 Node.js 프로젝트를 만들고 IntelliSense 및 Node.js를 지원하는 다른 기본 제공 기능을 경험할 수 있습니다. Visual Studio용 이 자습서에서는 Visual Studio 템플릿에서 Node.js 웹 응용 프로그램 프로젝트를 만듭니다. 그런 다음, React를 사용하여 간단한 앱을 만듭니다.
+Visual Studio를 사용하면 쉽게 Node.js 프로젝트를 만들고 IntelliSense 및 Node.js를 지원하는 다른 기본 제공 기능을 경험할 수 있습니다. Visual Studio용 이 자습서에서는 Visual Studio 템플릿에서 Node.js 웹 애플리케이션 프로젝트를 만듭니다. 그런 다음, React를 사용하여 간단한 앱을 만듭니다.
 
 이 자습서에서는 다음과 같은 작업을 수행하는 방법을 살펴봅니다.
 > [!div class="checklist"]
@@ -42,7 +41,7 @@ Node.js는 JavaScript 서버 쪽을 실행하는 서버 쪽 JavaScript 런타임
 
 ### <a name="what-is-npm"></a>npm이란?
 
-npm는 Node.js에 대한 기본 패키지 관리자입니다. 패키지 관리자는 프로그래머가 Node.js 라이브러리의 소스 코드를 쉽게 게시 및 공유하게 하며, 라이브러리의 설치, 업데이트 및 제거를 간소화하도록 설계되었습니다.
+npm는 Node.js를 위한 기본 패키지 관리자입니다. 패키지 관리자는 프로그래머가 Node.js 라이브러리의 소스 코드를 쉽게 게시 및 공유하게 하며, 라이브러리의 설치, 업데이트 및 제거를 간소화하도록 설계되었습니다.
 
 ### <a name="what-is-react"></a>React란?
 
@@ -58,29 +57,40 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
 
 ## <a name="prerequisites"></a>전제 조건
 
-* Node.js 개발 워크로드와 Visual Studio 2017이 설치되어 있어야 합니다.
+* Node.js 개발 워크로드와 Visual Studio가 설치되어 있어야 합니다.
 
-    아직 Visual Studio를 설치하지 않은 경우  [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  페이지로 이동하여 체험용으로 설치합니다.
+    ::: moniker range=">=vs-2019"
+    아직 Visual Studio 2019를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/) 페이지로 이동하여 체험용으로 설치합니다.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    아직 Visual Studio 2017을 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/) 페이지로 이동하여 체험용으로 설치합니다.
+    ::: moniker-end
 
-    워크로드를 설치해야 하지만 이미 Visual Studio가 있는 경우 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Studio 설치 관리자 열기** 링크를 선택합니다. Visual Studio 설치 관리자가 시작됩니다. **Node.js 개발** 워크로드를 선택한 다음 **수정**을 선택합니다.
+    워크로드는 설치해야 하지만 Visual Studio는 이미 있는 경우 **도구** > **도구 및 기능 가져오기...** 로 이동하면 Visual Studio 설치 관리자가 열립니다. **Node.js 개발** 워크로드를 선택한 다음 **수정**을 선택합니다.
+
+    ![VS 설치 관리자에서 Node.js 워크로드](../ide/media/quickstart-nodejs-workload.png)
 
 * Node.js 런타임을 설치해야 합니다.
 
-    이 자습서는 버전 8.11.2를 사용하여 테스트했습니다.
+    이 자습서는 버전 10.16.0을 사용하여 테스트했습니다.
 
     아직 설치되지 않은 경우 [Node.js](https://nodejs.org/en/download/) 웹 사이트에서 LTS 버전을 설치합니다. 일반적으로, 설치된 Node.js 런타임은 Visual Studio에서 자동으로 검색됩니다. 설치된 런타임이 검색되지 않으면 속성 페이지에서 설치된 런타임을 참조하도록 프로젝트를 구성할 수 있습니다(프로젝트를 만든 후 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다).
 
 ## <a name="create-a-project"></a>프로젝트 만들기
 
-먼저 Node.js 웹 응용 프로그램 프로젝트를 만듭니다.
+먼저 Node.js 웹 애플리케이션 프로젝트를 만듭니다.
 
-1. Visual Studio 2017을 엽니다.
+1. Visual Studio를 엽니다.
 
-1. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례로 선택합니다.
+1. 새 프로젝트를 만듭니다.
 
-1. **새 프로젝트** 대화 상자의 왼쪽 창에서 **JavaScript**를 확장한 후 **Node.js**를 선택합니다. 가운데 창에서 **빈 Node.js 웹 응용 프로그램**을 선택하고 **NodejsWebAppBlank**의 이름을 입력한 다음, **확인**을 선택합니다.
-
-     **빈 Node.js 웹 응용 프로그램** 프로젝트 템플릿이 표시되지 않으면 먼저 Node.js 개발 워크로드를 설치해야 합니다.
+    ::: moniker range=">=vs-2019"
+    **Esc** 키를 눌러 시작 창을 닫습니다. **Ctrl + Q** 입력하여 검색 상자를 열고 **Node.js**를 입력한 다음, **빈 Node.js 웹 애플리케이션**(JavaScript)을 선택합니다. 표시되는 대화 상자에서 **만들기**를 선택합니다.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **JavaScript**를 확장한 다음, **Node.js**를 선택합니다. 가운데 창에서 **빈 Node.js 웹 애플리케이션**을 선택하고, 이름을 **NodejsWebAppBlank**로 입력하고, **확인**을 선택합니다.
+    ::: moniker-end
+    **빈 Node.js 웹 애플리케이션** 프로젝트 템플릿이 표시되지 않으면 **Node.js 개발** 워크로드를 추가해야 합니다. 자세한 지침은 [필수 조건](#prerequisites)을 참조하세요.
 
     Visual Studio가 새 솔루션을 만들고 프로젝트를 엽니다.
 
@@ -192,7 +202,7 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
     });
     ```
 
-   이전 코드는 Express를 사용하여 웹 응용 프로그램 서버로 Node.js를 시작합니다. 위의 코드는 프로젝트 속성에서 구성된 포트 번호에 포트를 설정합니다(기본적으로 포트는 구성 속성에서 1337로 구성됩니다). 프로젝트 속성을 열려면 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.
+   이전 코드는 Express를 사용하여 웹 애플리케이션 서버로 Node.js를 시작합니다. 위의 코드는 프로젝트 속성에서 구성된 포트 번호에 포트를 설정합니다(기본적으로 포트는 구성 속성에서 1337로 구성됩니다). 프로젝트 속성을 열려면 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다.
 
 1. *app.tsx*를 열고 다음 코드를 추가합니다.
 
@@ -258,7 +268,7 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
     }
     ```
 
-    Webpack 구성 코드는 Webpack에게 TypeScript 로더를 사용해 JSX를 트랜스파일하도록 지시합니다.
+    webpack 구성 코드는 webpack에게 TypeScript 로더를 사용해 JSX를 트랜스파일하도록 지시합니다.
 
 1. *tsconfig.json*을 열고 다음 코드로 기본 코드를 대체하여 TypeScript 컴파일러 옵션을 지정합니다.
 
@@ -308,15 +318,32 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
 
     ![수정한 파일 로드](../javascript/media/tutorial-nodejs-react-reload-files.png)
 
-*app.tsx*를 변경할 때마다 webpack 명령을 다시 실행해야 합니다.
+*app.tsx*를 변경할 때마다 webpack 명령을 다시 실행해야 합니다. 이 단계를 자동화 하려면 빌드 스크립트를 추가하여 JSX를 트랜스파일합니다.
+
+## <a name="add-a-build-script-to-transpile-the-jsx"></a>빌드 스크립트를 추가하여 JSX를 트랜스파일
+
+Visual Studio 2019부터 빌드 스크립트가 필요합니다. 앞의 섹션에서 표시된 것처럼, 명령줄에서 JSX를 변환 컴파일하기보다 Visual Studio에서 빌드할 때 JSX를 변환 컴파일할 수 있습니다.
+
+* *package.json*을 열고 `dependencies` 섹션 뒤에 다음 섹션을 추가합니다.
+
+   ```json
+   "scripts": {
+    "build": "webpack-cli app.tsx --config webpack-config.js"
+   }
+   ```
 
 ## <a name="run-the-app"></a>앱 실행
 
 1. 현재 디버그 대상으로 Chrome을 선택합니다.
 
+    ::: moniker range=">=vs-2019"
+    ![디버그 대상으로 크롬 선택](../javascript/media/vs-2019/tutorial-nodejs-react-debug-target.png)
+    ::: moniker-end
+    ::: moniker range="vs-2017"
     ![디버그 대상으로 크롬 선택](../javascript/media/tutorial-nodejs-react-debug-target.png)
+    ::: moniker-end
 
-    머신에서 Chrome을 사용할 수 있지만 옵션으로 표시되지 않는 경우 디버그 대상 드롭다운 목록에서 **브라우저 선택**을 선택하고 기본 브라우저 대상으로 Chrome을 선택합니다(**기본값으로 설정** 선택).
+    머신에서 Chrome을 사용할 수 있지만 옵션으로 표시되지 않는 경우 디버그 대상 드롭다운 목록에서 **웹 브라우저(browsername)**  > **Google Chrome**을 선택하고 기본 브라우저 대상으로 Chrome을 선택합니다.
 
 1. 앱을 실행하려면 **F5**(**디버그** > **디버깅 시작**) 키 또는 녹색 화살표 단추를 누릅니다.
 
@@ -360,6 +387,13 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
 
     디버깅 사용이 설정된 상태로 크롬을 시작합니다.
 
+    ::: moniker range=">=vs-2019"
+
+    > [!NOTE]
+    > **디버그** 도구 모음에서 **브라우저 선택...** >를 선택하고, **추가**를 선택한 다음, **인수** 필드에서 플래그를 설정하여 브라우저 시작 시 `--remote-debugging-port` 플래그를 설정할 수도 있습니다. **디버깅 포함 Chrome**과 같은 친숙한 다른 브라우저 이름을 사용하세요. 자세한 내용은 [릴리스 정보](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview)를 참조하세요.
+
+    ::: moniker-end
+
 3. 다음 그림에 표시된 것처럼 Visual Studio로 전환하고 `render()` 기능의 *app-bundle.js* 코드에서 중단점을 설정합니다.
 
     ![중단점 설정](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
@@ -378,7 +412,7 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
 
     ![프로세스에 연결](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
-    DOM 탐색기와 JavaScript 콘솔이 Visual Studio에서 열릴 때 디버거가 올바르게 연결됐는지 알 수 있습니다. 이러한 디버깅 도구는 크롬 개발자 도구 및 F12 Tools for Edge와 유사합니다.
+    DOM 탐색기와 JavaScript 콘솔이 Visual Studio에서 열릴 때 디버거가 올바르게 연결됐는지 알 수 있습니다. 이러한 디버깅 도구는 크롬 개발자 도구 및 F12 Tools for Microsoft Edge와 유사합니다.
 
     > [!NOTE]
     > 디버거가 연결되지 않고 “프로세스에 연결할 수 없습니다. 작업이 현재 상태에서 잘못되었으므로 디버깅 모드로 Chrome을 시작하기 전에 작업 관리자를 사용하여 Chrome의 모든 인스턴스를 닫습니다. 크롬 확장 프로그램을 실행하여 전체 디버그 모드를 방지할 수 있습니다.

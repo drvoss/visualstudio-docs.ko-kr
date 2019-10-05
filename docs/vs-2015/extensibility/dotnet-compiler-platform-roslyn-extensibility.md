@@ -1,24 +1,19 @@
 ---
 title: .NET 컴파일러 플랫폼 (&quot;Roslyn&quot;) 확장성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 564201b3-1e18-4b88-b615-42c2f57f3fe8
 caps.latest.revision: 5
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: de01ec4f857042c6eaaaa70632b28cfc830886cb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fba277731444a294f276f43cc67b098039f4a64f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817089"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204725"
 ---
 # <a name="net-compiler-platform-quotroslynquot-extensibility"></a>.NET 컴파일러 플랫폼(&quot;Roslyn&quot;) 확장성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,6 +22,5 @@ ms.locfileid: "51817089"
   
  가장은 Roslyn 컴파일러, 해당 Api, 샘플 및 연습 및 이러한 Api를 기반으로 구축 된 실제 도구에서 완벽 하 게 오픈 소스로 [github.com/dotnet/roslyn](https://github.com/dotnet/Roslyn)합니다. 자세히 알아보고 Roslyn 시작 OSS 사이트로 이동 하세요. Roslyn Api를 활용 하 여 도구 작성기를 시작 하는 링크 뿐만 아니라 최신 C# 및 VB 기능을 최종 사용자로 사용할 수 있는 가져오기에 대 한 링크를 찾을 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [Roslyn 분석기 시작](../extensibility/getting-started-with-roslyn-analyzers.md)
-

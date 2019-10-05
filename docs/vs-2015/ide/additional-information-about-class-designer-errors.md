@@ -1,14 +1,9 @@
 ---
 title: 클래스 디자이너 오류에 대한 추가 정보 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.CPlusPlusViewInDiagramNoTypeFound
 - vs.classdesigner.CPlusPlusNoTypeFound
@@ -33,13 +28,13 @@ ms.assetid: 79d70e70-704c-4255-ab68-c10d6949470e
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1a957630de193d805b1a516d45c72bd1483f0278
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 66a895b48051ed8797644b36d6f6663e1e35a8e6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145665"
 ---
 # <a name="additional-information-about-class-designer-errors"></a>클래스 디자이너 오류에 대한 추가 정보
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,6 +51,3 @@ ms.locfileid: "49188528"
   
 ## <a name="see-also"></a>참고 항목  
  [클래스와 형식 디자인 및 보기](../ide/designing-and-viewing-classes-and-types.md)
-
-
-

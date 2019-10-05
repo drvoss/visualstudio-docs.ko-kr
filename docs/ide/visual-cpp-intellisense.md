@@ -1,20 +1,18 @@
 ---
 title: C++ IntelliSense
 ms.date: 10/08/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ab520f7cdf512ebbfd07770d63d2ed50caee7a55
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 7a0acaea4cf01d9c0158dfbf6d9feab37238f88f
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879852"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461700"
 ---
 # <a name="visual-c-intellisense-features"></a>Visual C++ IntelliSense 기능
 
@@ -24,7 +22,7 @@ IntelliSense는 코딩을 보다 편리하게 하는 기능 집합에 지정된 
 
 ## <a name="intellisense-features-in-c"></a>C++의 IntelliSense 기능
 
-IntelliSense는 코딩을 보다 편리하게 하는 기능 집합에 지정된 이름입니다. 사람마다 편리성에 대한 생각이 다르기 때문에 거의 모든 IntelliSense 기능은 **텍스트 편집기** > **C/C++** > **고급** 아래에 있는 **옵션** 대화 상자에서 사용하거나 사용하지 않도록 설정할 수 있습니다. **옵션** 대화 상자는 메뉴 모음의 **도구** 메뉴에서 사용할 수 있습니다.
+IntelliSense는 코딩을 보다 편리하게 하는 기능 집합에 지정된 이름입니다. 사람마다 편리성에 대한 생각이 다르기 때문에 거의 모든 IntelliSense 기능은 **텍스트 편집기** > **C/C++**  > **고급** 아래에 있는 **옵션** 대화 상자에서 사용하거나 사용하지 않도록 설정할 수 있습니다. **옵션** 대화 상자는 메뉴 모음의 **도구** 메뉴에서 사용할 수 있습니다.
 
 ![도구 옵션 대화 상자](../ide/media/sintellisensecpptoolsoptions.PNG)
 
@@ -40,19 +38,19 @@ IntelliSense는 코딩을 보다 편리하게 하는 기능 집합에 지정된 
 
 ![Visual C++ 단어 자동 완성 창](../ide/media/vs2015_cpp_complete_word.png)
 
-멤버 목록을 처음 호출하는 경우 현재 컨텍스트에서 액세스할 수 있는 멤버만 표시됩니다. 그 후에 **Ctrl**+**J**를 사용하면 접근성과 관계없이 모든 멤버가 표시됩니다. 세 번째로 호출하면 보다 광범위한 프로그램 요소 목록이 표시됩니다. **텍스트 편집기** > **C/C++** > **일반** > **자동 목록 멤버** 아래에 있는 **옵션** 대화 상자에서 멤버 목록을 끌 수 있습니다.
+멤버 목록을 처음 호출하는 경우 현재 컨텍스트에서 액세스할 수 있는 멤버만 표시됩니다. 그 후에 **Ctrl**+**J**를 사용하면 접근성과 관계없이 모든 멤버가 표시됩니다. 세 번째로 호출하면 보다 광범위한 프로그램 요소 목록이 표시됩니다. **텍스트 편집기** > **C/C++**  > **일반** > **자동 목록 멤버** 아래에 있는 **옵션** 대화 상자에서 멤버 목록을 끌 수 있습니다.
 
 ![Visual C++ 멤버 목록](../ide/media/vs2015_cpp_list_members.png)
 
 ## <a name="parameter-help"></a>매개 변수 도움말
 
-클래스 템플릿 변수 선언에서 함수 호출을 여는 중괄호 또는 꺾쇠 괄호를 입력하면 편집기에서 함수 또는 생성자의 각 오버로드에 대한 매개 변수 형식이 포함된 작은 창을 표시합니다. &mdash;커서 위치에 따라&mdash; “현재” 매개 변수가 굵게 표시됩니다. **텍스트 편집기** > **C/C++** > **일반** > **매개 변수 정보** 아래에 있는 **옵션** 대화 상자에서 매개 변수 정보를 끌 수 있습니다.
+클래스 템플릿 변수 선언에서 함수 호출을 여는 중괄호 또는 꺾쇠 괄호를 입력하면 편집기에서 함수 또는 생성자의 각 오버로드에 대한 매개 변수 형식이 포함된 작은 창을 표시합니다. &mdash;커서 위치에 따라&mdash; “현재” 매개 변수가 굵게 표시됩니다. **텍스트 편집기** > **C/C++**  > **일반** > **매개 변수 정보** 아래에 있는 **옵션** 대화 상자에서 매개 변수 정보를 끌 수 있습니다.
 
 ![Visual C++ 매개 변수 도움말](../ide/media/vs_2015_cpp_param_help.png)
 
 ## <a name="quick-info"></a>요약 정보
 
-변수 위에 마우스 커서를 놓으면 형식 정보 및 형식이 정의된 헤더를 표시하는 작은 창이 인라인으로 나타납니다. 함수 호출을 마우스로 가리키면 함수의 서명이 표시됩니다. **텍스트 편집기** > **C/C++** > **고급** > **자동 빠른 정보** 아래에 있는 **옵션** 대화 상자에서 빠른 정보를 끌 수 있습니다.
+변수 위에 마우스 커서를 놓으면 형식 정보 및 형식이 정의된 헤더를 표시하는 작은 창이 인라인으로 나타납니다. 함수 호출을 마우스로 가리키면 함수의 서명이 표시됩니다. **텍스트 편집기** > **C/C++**  > **고급** > **자동 빠른 정보** 아래에 있는 **옵션** 대화 상자에서 빠른 정보를 끌 수 있습니다.
 
 ![Visual C&#43;&#43; QuickInfo](../ide/media/vs2015_cpp_quickinfo.png)
 
@@ -70,7 +68,7 @@ IntelliSense는 코딩을 보다 편리하게 하는 기능 집합에 지정된 
 
 공유 코드 프로젝트에서 표시선과 같은 일부 IntelliSense 기능은 Android 컨텍스트에서 작업하는 경우에도 사용할 수 있습니다. 비활성 프로젝트에서 오류가 발생하는 일부 코드를 작성하는 경우에도 IntelliSense에서 표시선을 표시하지만 현재 컨텍스트의 오류 표시선과 다른 색으로 표시됩니다.
 
-Android 및 iOS를 위해 빌드하도록 구성된 OpenGLES 응용 프로그램을 생각해 봅니다. 다음 그림은 편집 중인 공유 코드를 보여 줍니다. 이 이미지에서 현재 프로젝트는 **iOS.StaticLibrary**입니다.
+Android 및 iOS를 위해 빌드하도록 구성된 OpenGLES 애플리케이션을 생각해 봅니다. 다음 그림은 편집 중인 공유 코드를 보여 줍니다. 이 이미지에서 현재 프로젝트는 **iOS.StaticLibrary**입니다.
 
 ![iOS가 활성 프로젝트로 선택됩니다.](../ide/media/intellisensecppcrossplatform2.png)
 
@@ -92,7 +90,7 @@ Android로 활성 프로젝트를 변경한 경우 물결 기호가 변경됩니
 
 ## <a name="intellisense-for-stand-alone-files"></a>독립 실행형 파일의 IntelliSense
 
-프로젝트 외부의 단일 파일을 여는 경우에도 IntelliSense가 작동합니다. **텍스트 편집기** > **C/C++** > **고급** 아래에 있는 **옵션** 대화 상자에서 특정 IntelliSense 기능을 사용하거나 사용하지 않도록 설정할 수 있습니다. 프로젝트의 일부가 아닌 단일 파일에 대해 IntelliSense를 구성하려면 **프로젝트가 아닌 파일에 대한 IntelliSense 및 검색**을 찾습니다.
+프로젝트 외부의 단일 파일을 여는 경우에도 IntelliSense가 작동합니다. **텍스트 편집기** > **C/C++**  > **고급** 아래에 있는 **옵션** 대화 상자에서 특정 IntelliSense 기능을 사용하거나 사용하지 않도록 설정할 수 있습니다. 프로젝트의 일부가 아닌 단일 파일에 대해 IntelliSense를 구성하려면 **프로젝트가 아닌 파일에 대한 IntelliSense 및 검색**을 찾습니다.
 
 ![Visual C++ 단일 파일 intellisense](../ide/media/vs2015_cpp_single_file_intellisense.png)
 
@@ -102,7 +100,7 @@ Android로 활성 프로젝트를 변경한 경우 물결 기호가 변경됩니
 
 ## <a name="enable-or-disable-features"></a>검색 사용 또는 사용 안 함
 
-사람마다 편리성에 대한 생각이 다르기 때문에 거의 모든 IntelliSense 기능은 **텍스트 편집기** > **C/C++** > **고급** 아래에 있는 **옵션** 대화 상자에서 사용하거나 사용하지 않도록 설정할 수 있습니다. **옵션** 대화 상자는 메뉴 모음의 **도구** 메뉴에서 사용할 수 있습니다.
+사람마다 편리성에 대한 생각이 다르기 때문에 거의 모든 IntelliSense 기능은 **텍스트 편집기** > **C/C++**  > **고급** 아래에 있는 **옵션** 대화 상자에서 사용하거나 사용하지 않도록 설정할 수 있습니다. **옵션** 대화 상자는 메뉴 모음의 **도구** 메뉴에서 사용할 수 있습니다.
 
 ![도구 옵션 대화 상자](../ide/media/sintellisensecpptoolsoptions.PNG)
 

@@ -13,18 +13,18 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: d89dbc0b752c2b8c538ec53769c166b6edbd802f
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: 2e5782c49f26925d9eda81f04653b1a20666c6b1
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50915215"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68149201"
 ---
 1. 원격 컴퓨터의 찾기 및 시작 합니다 **원격 디버거** 에서 합니다 **시작** 메뉴. 
    
    원격 컴퓨터에서 관리 권한이 없으면 마우스 오른쪽 단추로 클릭 합니다 **원격 디버거** 앱을 선택 **관리자 권한으로 실행**합니다. 이 고, 그렇지만 정상적으로 시작 합니다.
 
-   서로 다른 버전의 있을 수 있습니다 *msvsmon.exe* 에 *x64*를 *x32*, 또는 기타 폴더입니다. 앱 디버그에 필요한 버전을 시작 해야 합니다. 
+   연결 하려는 경우 (예: IIS) 계정에 관리자 권한으로 실행 중인지 또는 다른 사용자 권한으로 실행 되는 프로세스를 마우스 오른쪽 단추로 클릭 합니다 **원격 디버거** 선택한 앱 **관리자권한으로실행**. 자세한 내용은 [관리자 권한으로 원격 디버거 실행](../remote-debugging-errors-and-troubleshooting.md#run-the-remote-debugger-as-an-administrator)합니다.
    
 1. 처음으로 원격 디버거를 시작, 구성 하기 전에 합니다 **원격 디버깅 구성** 대화 상자가 나타납니다.  
   

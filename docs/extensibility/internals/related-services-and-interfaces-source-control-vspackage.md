@@ -6,36 +6,36 @@ helpviewer_keywords:
 - source control packages, interfaces
 - interfaces, source control packages
 ms.assetid: 3e96e838-5675-46bb-99cf-40d420086038
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c312b6d89812a76f5fc8135eb18f02f0afedc5ec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a9aa9dd59a568ae766a7cd0939c41a4bcd97f640
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940627"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337295"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>관련 서비스 및 인터페이스(소스 제어 VSPackage)
-이 섹션에서는 소스 제어 VSPackage 관련 인터페이스의 모든를 나열 합니다 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]합니다. 소스 제어 VSPackage 이러한 인터페이스의 일부를 구현 하 고 소스 제어 작업을 위해 다른 사용자를 사용 합니다.  
-  
-## <a name="interfaces-implemented-by-and-for-source-control-vspackages"></a>소스 제어 Vspackage에 대 한 구현 된 인터페이스  
- 다음 인터페이스에 설명 된를 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], 소스 제어 VSPackage는 원하는 기능 집합에 따라 하위 집합을 구현 합니다. 일부 인터페이스 표시 된 필요한과 모든 소스 제어 VSPackage에 의해 구현 되어야 합니다.  
-  
- 패키지를 구현 하지 않는 해당 인터페이스에 대 한 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 기본 구현을 제공 합니다. 기본 구현은 없습니다 VSPackage 등록 된 경우 및 프로젝트가으로 디자인 되었다는 참고 제어 됩니다. 올바르게 작성 된 소스 제어 VSPackage는 해당 인터페이스의 기본 구현을 유지 하는 것이 아니라 모든 필요한 인터페이스를 구현 합니다.  
-  
- 소스 제어 VSPackage는 다음과 같은 인터페이스의 일부 또는 전부를 캡슐화 하는 개인 서비스를 구현 해야 합니다.  
-  
- 인터페이스는:  
-  
--   필수: 적절 한 엔터티 (소스 제어 VSPackage를 원본 제어 스텁 프로젝트) 인터페이스를 구현 해야 합니다.  
-  
--   권장: 엔터티는이 인터페이스를 구현 해야 합니다. 그렇지 않으면 소스 제어 기능 제한 될 수 있습니다.  
-  
--   선택 사항: 엔터티가이 인터페이스를 다양 한 기능 집합을 구현할 수 있습니다.  
-  
+이 섹션에서는 소스 제어 VSPackage 관련 인터페이스의 모든를 나열 합니다 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]합니다. 소스 제어 VSPackage 이러한 인터페이스의 일부를 구현 하 고 소스 제어 작업을 위해 다른 사용자를 사용 합니다.
+
+## <a name="interfaces-implemented-by-and-for-source-control-vspackages"></a>소스 제어 Vspackage에 대 한 구현 된 인터페이스
+ 다음 인터페이스에 설명 된를 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], 소스 제어 VSPackage는 원하는 기능 집합에 따라 하위 집합을 구현 합니다. 일부 인터페이스 표시 된 필요한과 모든 소스 제어 VSPackage에 의해 구현 되어야 합니다.
+
+ 패키지를 구현 하지 않는 해당 인터페이스에 대 한 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 기본 구현을 제공 합니다. 기본 구현은 없습니다 VSPackage 등록 된 경우 및 프로젝트가으로 디자인 되었다는 참고 제어 됩니다. 올바르게 작성 된 소스 제어 VSPackage는 해당 인터페이스의 기본 구현을 유지 하는 것이 아니라 모든 필요한 인터페이스를 구현 합니다.
+
+ 소스 제어 VSPackage는 다음과 같은 인터페이스의 일부 또는 전부를 캡슐화 하는 개인 서비스를 구현 해야 합니다.
+
+ 인터페이스는:
+
+- 필수: 적절 한 엔터티 (소스 제어 VSPackage를 원본 제어 스텁 프로젝트) 인터페이스를 구현 해야 합니다.
+
+- 권장: 엔터티는이 인터페이스를 구현 해야 합니다. 그렇지 않으면 소스 제어 기능 제한 될 수 있습니다.
+
+- 선택 사항: 엔터티가이 인터페이스를 다양 한 기능 집합을 구현할 수 있습니다.
+
 | 인터페이스 | 용도 | 에 의해 구현 | 구현? |
 | - | - |--------------------------|-------------|
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> | 편집기는 수정 하거나 파일을 저장 하기 전에이 인터페이스를 호출 합니다. 소스 제어 VSPackage 파일을 체크 아웃 하거나 거부할 수 작업을 체크 아웃 하지 못하면 합니다. | 소스 제어 VSPackage | 권장 |
@@ -60,6 +60,6 @@ ms.locfileid: "53940627"
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> | 이 인터페이스는 소스 제어 설정을 솔루션 (.sln) 파일에 저장 됩니다. 소스 제어 위치 및 소스 제어 상태 플래그의 설정에 포함 됩니다. | 소스 제어 VSPackage | 권장 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> | 솔루션 옵션 (.suo) 파일에 소스 제어 설정을 저장 하려면이 인터페이스 사용 됩니다. 이 현재 사용자의 인 리스트 먼 트 위치와 같은 사용자 고유의 소스 제어 설정을 포함할 수 있습니다. | 소스 제어 VSPackage | 권장 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> | 이 인터페이스는 이벤트를 모니터링 하려면 솔루션을 닫기 또는 프로젝트를 열 때 소스 제어에서 새 파일을 시작 하기 전에 프로젝트 파일을 체크 인하고 등의 작업을 수행 하기 위해 사용 됩니다. | 소스 제어 VSPackage | 권장 |
-  
-## <a name="see-also"></a>참고 항목  
- [디자인 요소](../../extensibility/internals/source-control-vspackage-design-elements.md)
+
+## <a name="see-also"></a>참고 항목
+- [디자인 요소](../../extensibility/internals/source-control-vspackage-design-elements.md)

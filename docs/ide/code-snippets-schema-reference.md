@@ -1,8 +1,6 @@
 ---
 title: 코드 조각 스키마 참조
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+ms.date: 02/25/2019
 ms.topic: reference
 helpviewer_keywords:
 - schema reference [Visual Studio]
@@ -12,19 +10,19 @@ helpviewer_keywords:
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a39040bb76181a7a36e9d8f7b19aa0b4390c400
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8db5921b7f4ce4722389ca10765f079db10bf04a
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932444"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222696"
 ---
 # <a name="code-snippets-schema-reference"></a>코드 조각 스키마 참조
 
-IntelliSense 코드 조각은 Visual Studio에서 응용 프로그램에 삽입되도록 미리 작성된 코드 부분입니다. 코드 조각을 제공함으로써 반복 코드를 입력하거나 샘플 검색에 드는 시간을 줄여 생산성을 높일 수 있습니다. IntelliSense 코드 조각 XML 스키마를 사용하여 사용자 지정 코드 조각을 만들어 Visual Studio에 이미 포함되어 있는 코드 조각에 추가할 수 있습니다.
+IntelliSense 코드 조각은 Visual Studio에서 애플리케이션에 삽입되도록 미리 작성된 코드 부분입니다. 코드 조각을 제공함으로써 반복 코드를 입력하거나 샘플 검색에 드는 시간을 줄여 생산성을 높일 수 있습니다. IntelliSense 코드 조각 XML 스키마를 사용하여 사용자 지정 코드 조각을 만들어 Visual Studio에 이미 포함되어 있는 코드 조각에 추가할 수 있습니다.
 
 ## <a name="assembly-element"></a>Assembly 요소
 
@@ -42,7 +40,7 @@ IntelliSense 코드 조각은 Visual Studio에서 응용 프로그램에 삽입�
 | - |-----------------|
 |[Reference 요소](../ide/code-snippets-schema-reference.md#reference-element)|코드 조각에서 필요로 하는 어셈블리 참조에 대한 정보가 포함되어 있습니다.|
 
- 텍스트 값은 필수입니다. 이 텍스트는 코드 조각이 참조하는 어셈블리를 지정합니다.
+텍스트 값은 필수입니다. 이 텍스트는 코드 조각이 참조하는 어셈블리를 지정합니다.
 
 ## <a name="author-element"></a>Author 요소
 
@@ -58,13 +56,13 @@ IntelliSense 코드 조각은 Visual Studio에서 응용 프로그램에 삽입�
 | - |-----------------|
 |[Header 요소](../ide/code-snippets-schema-reference.md#header-element)|코드 조각에 대한 일반 정보가 포함되어 있습니다.|
 
- 텍스트 값은 필수입니다. 이 텍스트는 코드 조각의 작성자를 지정합니다.
+텍스트 값은 필수입니다. 이 텍스트는 코드 조각의 작성자를 지정합니다.
 
 ## <a name="code-element"></a>Code 요소
 
 짧은 코드 블록에 대한 컨테이너를 제공합니다.
 
-### <a name="keywords"></a>키워드
+### <a name="keywords"></a>키워드가
 
 `Code` 요소의 텍스트에는 `$end$` 및 `$selected$`의 두 예약어를 사용할 수 있습니다. `$end$`는 코드 조각을 삽입하고 나서 커서를 놓을 위치를 표시합니다. `$selected$`는 코드 조각을 호출하면 조각으로 삽입되는 문서에서 선택한 텍스트를 나타냅니다. 다음을 포함하는 코드 조각의 예를 들어 보겠습니다.
 
@@ -119,10 +117,11 @@ $selected$ is a great color. I love $selected$.
    |`CPP`|C++ 코드 조각을 식별합니다.|
    |`XML`|XML 코드 조각을 식별합니다.|
    |`JavaScript`|JavaScript 코드 조각을 식별합니다.|
+   |`TypeScript`|TypeScript 코드 조각을 식별합니다.|
    |`SQL`|SQL 코드 조각을 식별합니다.|
    |`HTML`|HTML 코드 조각을 식별합니다.|
 
-- 코드 조각에 포함되는 코드 종류를 지정하고 코드 조각 컴파일을 위해 해당 코드 조각을 삽입해야 하는 위치를 지정하는 **종류** - _선택 사항_ 특성입니다. 값은 다음 중 하나일 수 있습니다.
+- 조각에 포함된 코드 종류를 지정하는 **Kind** -  _(선택 사항)_ 특성입니다. 값은 다음 중 하나일 수 있습니다.
 
    |값|설명|
    |-----|-----------|
@@ -213,7 +212,7 @@ IntelliSense 코드 조각의 리터럴 또는 개체에 대한 기본값을 지
 |[Literal 요소](../ide/code-snippets-schema-reference.md#literal-element)|편집할 수 있는 코드 조각의 리터럴 필드를 정의합니다.|
 |[Object 요소](../ide/code-snippets-schema-reference.md#object-element)|편집할 수 있는 코드 조각의 개체 필드를 정의합니다.|
 
- 텍스트 값은 필수입니다. 이 텍스트는 편집할 수 있는 코드 조각의 필드를 채우는 리터럴 또는 개체의 기본값을 지정합니다.
+텍스트 값은 필수입니다. 이 텍스트는 편집할 수 있는 코드 조각의 필드를 채우는 리터럴 또는 개체의 기본값을 지정합니다.
 
 ## <a name="description-element"></a>Description 요소
 
@@ -229,7 +228,7 @@ IntelliSense 코드 조각의 콘텐츠에 대한 설명 정보를 지정합니�
 | - |-----------------|
 |[Header 요소](../ide/code-snippets-schema-reference.md#header-element)|코드 조각에 대한 일반 정보가 포함되어 있습니다.|
 
- 텍스트 값은 필수입니다. 이 텍스트는 코드 조각을 설명합니다.
+텍스트 값은 필수입니다. 이 텍스트는 코드 조각을 설명합니다.
 
 ## <a name="function-element"></a>Function 요소
 
@@ -249,7 +248,7 @@ Visual Studio에서 리터럴 또는 개체가 포커스를 받을 때 실행할
 |[Literal 요소](../ide/code-snippets-schema-reference.md#literal-element)|편집할 수 있는 코드 조각의 리터럴 필드를 정의합니다.|
 |[Object 요소](../ide/code-snippets-schema-reference.md#object-element)|편집할 수 있는 코드 조각의 개체 필드를 정의합니다.|
 
- 텍스트 값은 필수입니다. 이 텍스트는 Visual Studio에서 리터럴 또는 개체 필드가 포커스를 받을 때 실행할 함수를 지정합니다.
+텍스트 값은 필수입니다. 이 텍스트는 Visual Studio에서 리터럴 또는 개체 필드가 포커스를 받을 때 실행할 함수를 지정합니다.
 
 ## <a name="header-element"></a>Header 요소
 
@@ -271,7 +270,7 @@ IntelliSense 코드 조각에 대한 일반 정보를 지정합니다.
 |-------------------|-----------------|
 |[Author 요소](../ide/code-snippets-schema-reference.md#author-element)|선택적 요소입니다. 코드 조각을 작성한 사람 또는 회사의 이름입니다. `Author` 요소에는 `Header` 요소가 0개 또는 그 이상 있을 수 있습니다.|
 |[Description 요소](../ide/code-snippets-schema-reference.md#description-element)|선택적 요소입니다. 코드 조각에 대한 설명입니다. `Description` 요소에는 `Header` 요소가 0개 또는 그 이상 있을 수 있습니다.|
-|[HelpUrl 요소](../ide/code-snippets-schema-reference.md#helpurl-element)|선택적 요소입니다. 코드 조각에 대한 추가 정보가 들어 있는 URL입니다. Header 요소에는 `HelpURL` 요소가 0개 또는 그 이상 있을 수 있습니다. **참고:** Visual Studio에서는 `HelpUrl` 요소를 사용하지 않습니다. 이 요소는 IntelliSense 코드 조각 XML 스키마의 일부이며 이 요소를 포함하는 모든 코드 조각의 유효성이 검사되지만 요소의 값은 사용되지 않습니다.|
+|[HelpUrl 요소](../ide/code-snippets-schema-reference.md#helpurl-element)|선택적 요소입니다. 코드 조각에 대한 추가 정보가 들어 있는 URL입니다. Header 요소에는 `HelpURL` 요소가 0개 또는 그 이상 있을 수 있습니다. **참고:**  Visual Studio에서는 `HelpUrl` 요소를 사용하지 않습니다. 이 요소는 IntelliSense 코드 조각 XML 스키마의 일부이며 이 요소를 포함하는 모든 코드 조각의 유효성이 검사되지만 요소의 값은 사용되지 않습니다.|
 |[Keywords 요소](../ide/code-snippets-schema-reference.md#keywords-element)|선택적 요소입니다. `Keyword` 요소를 그룹화합니다. `Keywords` 요소에는 `Header` 요소가 0개 또는 그 이상 있을 수 있습니다.|
 |[Shortcut 요소](../ide/code-snippets-schema-reference.md#shortcut-element)|선택적 요소입니다. 코드 조각을 삽입하는 데 사용할 수 있는 바로 가기 텍스트를 지정합니다. `Shortcut` 요소에는 `Header` 요소가 0개 또는 그 이상 있을 수 있습니다.|
 |[SnippetTypes 요소](../ide/code-snippets-schema-reference.md#snippettypes-element)|선택적 요소입니다. `SnippetType` 요소를 그룹화합니다. `SnippetTypes` 요소에는 `Header` 요소가 0개 또는 그 이상 있을 수 있습니다. `SnippetTypes` 요소가 없으면 코드 조각은 항상 유효합니다.|
@@ -321,9 +320,6 @@ IntelliSense 코드 조각에 대한 일반 정보를 지정합니다.
 
 IntelliSense 코드 조각에서 사용되는 가져온 네임스페이스를 지정합니다.
 
-> [!NOTE]
-> `Import` 요소는 Visual Basic 프로젝트에서만 지원됩니다.
-
 ```xml
 <Import>
     <Namespace>... </Namespace>
@@ -341,9 +337,6 @@ IntelliSense 코드 조각에서 사용되는 가져온 네임스페이스를 �
 ## <a name="imports-element"></a>Imports 요소
 
 개별 `Import` 요소를 그룹화합니다.
-
-> [!NOTE]
-> `Imports` 요소는 Visual Basic 프로젝트에서만 지원됩니다.
 
 ```xml
 <Imports>
@@ -426,10 +419,7 @@ IntelliSense 코드 조각에서 사용되는 가져온 네임스페이스를 �
 
 ## <a name="namespace-element"></a>Namespace 요소
 
-코드 조각이 컴파일 및 실행될 수 있도록 가져와야 하는 네임스페이스를 지정합니다. `Namespace` 요소에 지정된 네임스페이스가 아직 없는 경우 코드의 시작 부분에 있는 `Imports` 문에 자동으로 추가됩니다.
-
-> [!NOTE]
-> `Namespace` 요소는 Visual Basic 프로젝트에서만 지원됩니다.
+코드 조각이 컴파일 및 실행될 수 있도록 가져와야 하는 네임스페이스를 지정합니다. `Namespace` 요소에 지정된 네임스페이스가 아직 없는 경우 코드의 시작 부분에 있는 `using` 지시문 또는 `Imports` 문에 자동으로 추가됩니다.
 
 ```xml
 <Namespace>
@@ -528,7 +518,7 @@ IntelliSense 코드 조각에서 사용되는 가져온 네임스페이스를 �
 | - |-----------------|
 |[Header 요소](../ide/code-snippets-schema-reference.md#header-element)|코드 조각에 대한 일반 정보가 포함되어 있습니다.|
 
- 텍스트 값은 선택적입니다. 이 텍스트는 코드 조각을 삽입하기 위한 바로 가기로 사용됩니다.
+텍스트 값은 선택적입니다. 이 텍스트는 코드 조각을 삽입하기 위한 바로 가기로 사용됩니다.
 
 ## <a name="snippet-element"></a>Snippet 요소
 
@@ -548,7 +538,7 @@ IntelliSense 코드 조각에서 사용되는 가져온 네임스페이스를 �
 |[Code 요소](../ide/code-snippets-schema-reference.md#code-element)|필수적 요소입니다. 설명서 파일에 삽입할 코드를 지정합니다. 하나의 `Code` 요소에는 `Snippet` 요소가 단 하나만 있어야 합니다.|
 |[Declarations 요소](../ide/code-snippets-schema-reference.md#declarations-element)|선택적 요소입니다. 코드 조각에서 편집할 수 있는 부분을 구성하는 리터럴과 개체를 지정합니다. `Declarations` 요소에는 `Snippet` 요소가 0개 또는 그 이상 있을 수 있습니다.|
 |[Imports 요소](../ide/code-snippets-schema-reference.md#imports-element)|선택적 요소입니다. 개별 `Import` 요소를 그룹화합니다. `Imports` 요소에는 `Snippet` 요소가 0개 또는 그 이상 있을 수 있습니다.|
-||선택적 요소입니다. 개별 `Reference` 요소를 그룹화합니다. `References` 요소에는 `Snippet` 요소가 0개 또는 그 이상 있을 수 있습니다.|
+|[References 요소](../ide/code-snippets-schema-reference.md#references-element)|선택적 요소입니다. 개별 `Reference` 요소를 그룹화합니다. `References` 요소에는 `Snippet` 요소가 0개 또는 그 이상 있을 수 있습니다.|
 
 |부모 요소|설명|
 | - |-----------------|
@@ -570,11 +560,11 @@ Visual Studio에서 코드 조각을 삽입하는 방법을 지정합니다.
 
 텍스트 값은 다음 값 중 하나여야 합니다.
 
--   `SurroundsWith`: 코드 조각을 선택된 코드 부분 주위에 배치할 수 있습니다.
+- `SurroundsWith`: 코드 조각을 선택된 코드 부분 주위에 배치할 수 있습니다.
 
--   `Expansion`: 코드 조각을 커서 위치에 삽입할 수 있습니다.
+- `Expansion`: 코드 조각을 커서 위치에 삽입할 수 있습니다.
 
--   `Refactoring`: C# 리팩터링 동안 코드 조각이 사용되도록 지정합니다. 사용자 지정 코드 조각에서는 `Refactoring`을 사용할 수 없습니다.
+- `Refactoring`: C# 리팩터링 동안 코드 조각이 사용되도록 지정합니다. 사용자 지정 코드 조각에서는 `Refactoring`을 사용할 수 없습니다.
 
 ## <a name="snippettypes-element"></a>SnippetTypes 요소
 
@@ -609,7 +599,7 @@ Visual Studio에서 코드 조각을 삽입하는 방법을 지정합니다.
 | - |-----------------|
 |[Header 요소](../ide/code-snippets-schema-reference.md#header-element)|코드 조각에 대한 일반 정보를 지정합니다.|
 
- 텍스트 값은 필수입니다. 이 텍스트는 코드 조각의 제목을 지정합니다.
+텍스트 값은 필수입니다. 이 텍스트는 코드 조각의 제목을 지정합니다.
 
 ## <a name="tooltip-element"></a>ToolTip 요소
 
@@ -626,7 +616,7 @@ Visual Studio에서 코드 조각을 삽입하는 방법을 지정합니다.
 |[Literal 요소](../ide/code-snippets-schema-reference.md#literal-element)|편집할 수 있는 코드 조각의 리터럴 필드를 정의합니다.|
 |[Object 요소](../ide/code-snippets-schema-reference.md#object-element)|편집할 수 있는 코드 조각의 개체 필드를 정의합니다.|
 
- 텍스트 값은 필수입니다. 이 텍스트는 코드 조각에 있는 개체나 리터럴과 관련된 도구 설명을 지정합니다.
+텍스트 값은 필수입니다. 이 텍스트는 코드 조각에 있는 개체나 리터럴과 관련된 도구 설명을 지정합니다.
 
 ## <a name="type-element"></a>Type 요소
 
@@ -642,7 +632,11 @@ Visual Studio에서 코드 조각을 삽입하는 방법을 지정합니다.
 | - |-----------------|
 |[Object 요소](../ide/code-snippets-schema-reference.md#object-element)|편집할 수 있는 코드 조각의 개체 필드를 정의합니다.|
 
- 텍스트 값은 필수입니다. 이 텍스트는 개체의 형식을 지정합니다.
+텍스트 값은 필수입니다. 이 텍스트는 개체의 형식을 지정합니다. 예:
+
+```xml
+<Type>System.Data.SqlClient.SqlConnection</Type>
+```
 
 ## <a name="url-element"></a>Url 요소
 

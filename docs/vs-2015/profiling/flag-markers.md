@@ -1,32 +1,27 @@
 ---
 title: 플래그 표식 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.markers.flag
 ms.assetid: f3ec919e-63e5-484b-adbf-8f0e79342e75
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c4d1e5c119c5402501efaafcdccd9c3d0885ce75
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e531d2d2a41cc9ceaa3b6ba39c6d77a166cfae83
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193703"
 ---
 # <a name="flag-markers"></a>플래그 표식
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-플래그 마커는 응용 프로그램에서 특정 시점에 발생한 항목을 나타냅니다. 플래그는 여러 종류의 응용 프로그램 이벤트를 나타낼 수 있습니다. 예를 들어 특정 작업 항목이 예약되었거나 예외가 throw될 때 플래그가 표시될 수 있습니다. 작업 병렬 라이브러리와 같은 런타임도 플래그를 생성할 수 있습니다.  
+플래그 마커는 응용 프로그램에서 특정 시점에 발생한 항목을 나타냅니다. 플래그는 여러 종류의 애플리케이션 이벤트를 나타낼 수 있습니다. 예를 들어 특정 작업 항목이 예약되었거나 예외가 throw될 때 플래그가 표시될 수 있습니다. 작업 병렬 라이브러리와 같은 런타임도 플래그를 생성할 수 있습니다.  
   
 ## <a name="flag-importance"></a>플래그 중요도  
  플래그는 중요도에 따라 여러 크기로 표시됩니다. 모든 마커처럼 중요도는 낮음, 보통, 높음 또는 중요일 수 있습니다.  이 그림은 중요도 수준별로 마커의 모양을 보여줍니다.  
@@ -41,7 +36,7 @@ ms.locfileid: "51803203"
 범주를 보여주는 마커  
   
 ## <a name="alerts"></a>경고  
- 경고는 중요 응용 프로그램 이벤트(예: 예외)를 나타내는 빨간색 플래그입니다.  경고는 다음과 같습니다.  
+ 경고는 중요 애플리케이션 이벤트(예: 예외)를 나타내는 빨간색 플래그입니다.  경고는 다음과 같습니다.  
   
  ![동시성 시각화 경고 표식](../profiling/media/cvmarkeralert.png "CVMarkerAlert")  
 경고 마커  
@@ -57,6 +52,3 @@ ms.locfileid: "51803203"
 ## <a name="see-also"></a>참고 항목  
  [동시성 시각화 도우미 표식](../profiling/concurrency-visualizer-markers.md)   
  [동시성 시각화 도우미 SDK](../profiling/concurrency-visualizer-sdk.md)
-
-
-

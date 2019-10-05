@@ -1,8 +1,6 @@
 ---
 title: 편집 하며 계속 하기 대화 상자 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.ENC.welcome
@@ -16,22 +14,21 @@ helpviewer_keywords:
 ms.assetid: 4390c09c-fc73-4cc3-ab8e-6f07a7d70be2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1556897fe3efb2e8b1a4060ff8de20ca159a68d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: fdf515e5ca4aeb20cd9fce0b2a2ea829ad3d2e10
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851325"
 ---
 # <a name="edit-and-continue-dialog-box"></a>편집하며 계속하기 대화 상자
-(네이티브 전용) 디버깅 하는 동안 코드를 편집 해야 하는 경우이 대화 상자 표시 하 고 **편집 하며 계속 하기** 코드 변경 내용을 적용할 수 있다고 인식 합니다. 자세한 내용은 [편집 하며 계속 하기](../debugger/edit-and-continue.md)합니다.  
-  
- **다시 표시 안 함 me이 대화 상자**  
- 이 확인란을 선택 하는 경우 **편집 하며 계속 하기** 앞으로 권한을 요청 하지 않고 코드 변경 내용을 적용 합니다. 다시 설정할 수 있습니다이 경고로 이동 하 여는 **옵션** 대화 상자를 열기를 **디버깅** 폴더를 클릭 하는 **편집 하며 계속 하기** 페이지 및 선택 **디버그 명령으로 호출** 하 고 **먼저 확인**합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [디버거 보안](../debugger/debugger-security.md)   
- [옵션 대화 상자, 디버깅, 편집하며 계속하기](https://msdn.microsoft.com/library/bcew296c.aspx)
+(네이티브만 해당) 이 대화 상자는 디버깅 중에 코드를 편집했고 **편집하며 계속하기**에서 코드 변경 내용을 적용할 수 있다고 인식한 경우에 나타납니다. 자세한 내용은 [편집하며 계속하기](../debugger/edit-and-continue.md)를 참조하세요.
+
+ **표시 안 함이 대화 상자 다시** 이 확인란을 선택 하는 경우 **편집 하며 계속 하기** 앞으로 권한을 요청 하지 않고 코드 변경 내용을 적용 합니다. **옵션** 대화 상자로 이동하여 **디버깅** 폴더를 열고 **편집하며 계속하기** 페이지를 클릭한 다음, **디버그 명령으로 호출** 및 **먼저 확인**을 선택하면 다시 이 경고를 설정할 수 있습니다.
+
+## <a name="see-also"></a>참고 항목
+- [디버거 보안](../debugger/debugger-security.md)
+- [옵션 대화 상자, 디버깅, 편집하며 계속하기](https://msdn.microsoft.com/library/bcew296c.aspx)

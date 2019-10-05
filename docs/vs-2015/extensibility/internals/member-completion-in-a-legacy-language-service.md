@@ -1,14 +1,9 @@
 ---
 title: 레거시 언어 서비스의 멤버 완성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense, Member Completion tool tip
 - Member Completion, supporting in language services [managed package framework]
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b8b5940e473c639600c30e66e7dc0c732359322d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 93182d61b6ecf5bf22ea7117bf8ccfd17e2acd1a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437919"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>레거시 언어 서비스의 멤버 완성
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ IntelliSense 멤버 완성이 클래스, 구조체, 열거형 또는 네임 스�
  레거시 언어 서비스는 VSPackage의 일부로 구현 됩니다 있지만 MEF 확장을 사용 하는 언어 서비스 기능을 구현 하는 최신 방법입니다. 자세한 내용을 참조 하세요 [편집기 및 언어 서비스 확장](../../extensibility/extending-the-editor-and-language-services.md)합니다.  
   
 > [!NOTE]
->  편집기를 사용 하 여 새 API 최대한 빨리 시작 하는 것이 좋습니다. 언어 서비스의 성능이 향상 되 고 새 편집기 기능을 활용할 수 있습니다.  
+> 편집기를 사용 하 여 새 API 최대한 빨리 시작 하는 것이 좋습니다. 언어 서비스의 성능이 향상 되 고 새 편집기 기능을 활용할 수 있습니다.  
   
 ## <a name="how-it-works"></a>작동 방법  
  다음은 두 가지 방법으로는 멤버 목록이 MPF 클래스를 사용 하 여 표시 됩니다.  
@@ -43,7 +38,7 @@ IntelliSense 멤버 완성이 클래스, 구조체, 열거형 또는 네임 스�
   
 - 합니다 <xref:Microsoft.VisualStudio.Package.IScanner> 스캐너 멤버 완성 문자를 검색 하 고 토큰 트리거 설정 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 해당 문자에 대 한 합니다.  
   
-  멤버 완료 문자 따라야 하는 클래스, 구조체 또는 열거형의 멤버 임을 나타냅니다. 예를 들어 C# 또는 Visual Basic 멤버 완성 문자는는 `.`인 반면 c + +에서 문자는를 `.` 또는 `->`합니다. 트리거 값에는 멤버 선택 문자를 검색할 때 설정 됩니다.  
+  멤버 완료 문자 따라야 하는 클래스, 구조체 또는 열거형의 멤버 임을 나타냅니다. 예를 들어, C# 또는 Visual Basic 멤버 완성 문자가 `.`에서 C++ 문자는를 `.` 또는 `->`. 트리거 값에는 멤버 선택 문자를 검색할 때 설정 됩니다.  
   
 ### <a name="the-intellisense-member-list-command"></a>IntelliSense 멤버 목록 표시 명령  
  <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> 명령에 대 한 호출을 시작 합니다 <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> 메서드를를 <xref:Microsoft.VisualStudio.Package.Source> 클래스 및 <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> 메서드를 호출 하는 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 메서드 파서를 구문 분석 <xref:Microsoft.VisualStudio.Package.ParseReason>합니다.  
@@ -262,4 +257,3 @@ namespace TestLanguagePackage
     }  
 }  
 ```
-

@@ -1,27 +1,22 @@
 ---
 title: 시각화 도우미 및 사용자 지정 뷰어를 입력 합니다. | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], custom viewer
 - debugging [Debugging SDK], type visualizer
 ms.assetid: fd3691e6-9c78-4767-846f-43f85ada4375
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5319721d57212f4fc853ca99c1544a51d4af878c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a85be2978abe35e91096b55fba5ec5281be25fbe
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732125"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185320"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>형식 시각화 도우미 및 사용자 지정 뷰어
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,11 +31,10 @@ ms.locfileid: "51732125"
 ## <a name="support-for-custom-viewers-in-an-expression-evaluator"></a>사용자 지정 뷰어에 식 계산기에 대 한 지원  
  EE 자체는 EE 보기 데이터 형식에 대 한 코드를 제공 하는 사용자 지정 뷰어를 기능도 사용할 수 있습니다. 사용자 지정 뷰어를 구현 합니다 [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md) 인터페이스의 모든 형식으로 데이터를 보여 주는 모든 업무를 처리 하는 필요한; 뷰어에 표시를 완전히 제어할와 데이터를 수정할 수 있습니다. EE 제품 제공 되는 경우는 EE에서 제공 하는 모든 사용자 지정 뷰어가 제공 됩니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [디버거 구성 요소](../../extensibility/debugger/debugger-components.md)   
  [식 계산기](../../extensibility/debugger/expression-evaluator.md)   
  [디버그 엔진](../../extensibility/debugger/debug-engine.md)   
  [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md)   
  [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md)   
  [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md)
-

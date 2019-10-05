@@ -1,28 +1,23 @@
 ---
 title: Windows 레지스트리에서 도구 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, registering
 ms.assetid: c4bb8add-7148-49e4-a377-01d059fd5524
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f24c51b3cf1a4930fa0cc496e12ffd31170389b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8cedb95ccd98c3d5bd5e05086cfd1b53b0f97cd9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781909"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186378"
 ---
-# <a name="tool-windows-in-the-registry"></a>레지스트리에서 Windows 도구
+# <a name="tool-windows-in-the-registry"></a>레지스트리의 도구 창
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 도구 창을 제공 하는 Vspackage를 등록 해야 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 으로 도구 창 공급자입니다. Visual Studio 패키지 템플릿을 사용 하 여 만든 도구 windows는 기본적으로이 작업을 수행 합니다. 도구 창 공급자는 기본 도구 창 크기 및 위치에 도구 창 및 도킹 스타일으로 사용 하는 창의 GUID 등의 표시 유형 특성을 지정 하는 시스템 레지스트리 키를 있습니다.  
@@ -49,4 +44,3 @@ ms.locfileid: "51781909"
   
 ## <a name="see-also"></a>참고 항목  
  [VSPackage Essentials](../misc/vspackage-essentials.md)
-

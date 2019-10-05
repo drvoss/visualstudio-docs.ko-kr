@@ -1,5 +1,5 @@
 ---
-title: SharePoint 프로젝트 시스템 형식과 기타 Visual Studio 프로젝트 형식 간의 변환 | Microsoft Docs
+title: 변환 합니다. 다른 형식에서 SharePoint 프로젝트 시스템 형식
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint project service
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 145f080812356a4387401ef47adbd48fe783e60b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 40ea60a8df5bc0bcd033c60a83d742ed3249cc53
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920620"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835993"
 ---
 # <a name="convert-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>SharePoint 프로젝트 시스템 형식과 기타 Visual Studio 프로젝트 형식 간의 변환
   일부 경우에는 개체 SharePoint 프로젝트 시스템에 있을 수 있습니다 및 Visual Studio 자동화 개체 모델 또는 통합 개체 모델에서 해당 개체의 기능을 사용 하려는 또는 그 반대의 경우도 마찬가지입니다. 이러한 경우에 사용할 수는 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> 다른 개체 모델에 개체를 변환 하 여 SharePoint 프로젝트 서비스의 메서드.
@@ -42,11 +42,11 @@ ms.locfileid: "53920620"
 
  이 예제에는 다음 사항이 필요합니다.
 
--   에 대 한 참조가 있는 SharePoint 프로젝트 시스템의 확장을 *EnvDTE.dll* 어셈블리입니다. 자세한 내용은 [SharePoint 프로젝트 시스템 확장](../sharepoint/extending-the-sharepoint-project-system.md)합니다.
+- 에 대 한 참조가 있는 SharePoint 프로젝트 시스템의 확장을 *EnvDTE.dll* 어셈블리입니다. 자세한 내용은 [SharePoint 프로젝트 시스템 확장](../sharepoint/extending-the-sharepoint-project-system.md)합니다.
 
--   등록 하는 코드를 `projectService_ProjectAdded` 처리 하는 메서드를 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> 의 이벤트는 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> 개체입니다. 예를 들어 참조 [방법: SharePoint 프로젝트 확장명 만들기](../sharepoint/how-to-create-a-sharepoint-project-extension.md)합니다.
+- 등록 하는 코드를 `projectService_ProjectAdded` 처리 하는 메서드를 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> 의 이벤트는 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> 개체입니다. 예는 [방법: SharePoint 프로젝트 확장명 만들기](../sharepoint/how-to-create-a-sharepoint-project-extension.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [SharePoint 프로젝트 서비스 사용](../sharepoint/using-the-sharepoint-project-service.md)
 - [방법: SharePoint 프로젝트 서비스 검색](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)

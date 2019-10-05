@@ -1,8 +1,6 @@
 ---
 title: '오류: 사용자 수 있습니다 하지 실행할 저장 프로시저 sp_enable_sql_debug | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 dev_langs:
 - CSharp
@@ -11,15 +9,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b121b863237a3b12b5131be348581ea3fd043d2
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
-ms.translationtype: HT
+ms.openlocfilehash: e051cd594ee26a57fdbb7dcdc5bdad81f06cf771
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850088"
 ---
 # <a name="error-user-could-not-execute-stored-procedure-spenablesqldebug"></a>오류: 사용자는 sp_enable_sql_debug 저장 프로시저를 실행할 수 없습니다.
 

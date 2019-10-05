@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
 author: BertanAygun
 ms.author: bertaygu
-manager: douge
+manager: jillfra
 ms.workload:
 - bertaygu
-ms.openlocfilehash: fd51728f5e57af1017cb4b280f9ffc9d1c50df98
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3d8fb5de23cbc4664ea322a9149653598956aed7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62863337"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>시작에서 확장 영향 측정
 
@@ -74,11 +74,11 @@ Visual Studio 2015에서 시작 하는 많은 기능을 추가 했습니다. 이
 
 패키지 초기화에서 일반적인 패턴 중 하나에서 사용 하거나 패키지에 해당 패키지에서 제공 서비스를 초기화 하는 것 `constructor` 또는 `initialize` 메서드. 이렇게 하면 서비스를 사용 하도록 준비를 하는 동안 해당 서비스 즉시 사용 되지 않는 경우 로드 패키지에 불필요 한 비용을 추가할 수도 있습니다. 대신 패키지 초기화에서 수행 된 작업을 최소화 하기 위해 필요에 따라 이러한 서비스를 초기화 합니다.
 
-패키지에서 제공 하는 글로벌 서비스를 사용할 수 있습니다 `AddService` 지연 구성 요소에 의해 요청 될 경우에 서비스를 초기화 하는 함수를 사용 하는 방법입니다. 패키지 내에서 사용 되는 서비스에 대 한 지연을 사용할 수 있습니다<T> 또는 AsyncLazy<T> 서비스는 처음 사용할 때 초기화/쿼리 되도록 합니다.
+패키지에서 제공 하는 글로벌 서비스를 사용할 수 있습니다 `AddService` 지연 구성 요소에 의해 요청 될 경우에 서비스를 초기화 하는 함수를 사용 하는 방법입니다. 패키지 내에서 사용 되는 서비스에 대 한 지연을 사용할 수 있습니다\<T > 또는 AsyncLazy\<T > 서비스는 처음 사용할 때 초기화/쿼리 되도록 합니다.
 
 ## <a name="measuring-impact-of-auto-loaded-extensions-using-activity-log"></a>활동 로그를 사용 하 여 확장을 로드 자동의 영향을 측정 합니다.
 
-Visual Studio 2017 업데이트 3부터 Visual Studio 활동 로그는 시작 및 솔루션 로드 하는 동안 패키지의 성능 영향에 대 한 항목을 이제 포함 됩니다. /Log 스위치를 사용 하 여 Visual Studio를 시작 하 고 엽니다 해야 이러한 측정값을 보려면 *ActivityLog.xml* 파일입니다.
+Visual Studio 2017 업데이트 3부터 Visual Studio 활동 로그는 시작 및 솔루션 로드 하는 동안 패키지의 성능 영향에 대 한 항목을 이제 포함 됩니다. /Log 스위치를 사용 하 여 Visual Studio를 열고 엽니다 해야 이러한 측정값을 보려면 *ActivityLog.xml* 파일입니다.
 
 활동 로그에 항목 아래에 "Visual Studio 성능 관리" 원본 및 다음과 같이 표시 됩니다.
 
@@ -141,9 +141,9 @@ private void DoMoreWork()
 
 ![perfview 수집 메뉴](media/perfview-collect-menu.png)
 
-기본 옵션은 CPU 사용량에 대 한 호출 스택을 제공 되지만 차단 시간에 관심이 있으므로 활성화 해야 **스레드 시간** 스택. 설정 준비 되 면 클릭할 수 있습니다 **수집 시작** 녹음/녹화 시작 되 면 Visual Studio를 시작 합니다.
+기본 옵션은 CPU 사용량에 대 한 호출 스택을 제공 되지만 차단 시간에 관심이 있으므로 활성화 해야 **스레드 시간** 스택. 설정 준비 되 면 클릭할 수 있습니다 **수집 시작** 한 다음 시작을 기록한 후 Visual Studio를 엽니다.
 
-컬렉션을 중지 하기 전에 Visual Studio는 완전히 초기화, 주 창 완전히 표시 되 고 확장 프로그램에 자동으로 표시 하는 UI 부분이 있으면 해당도 표시 되도록 하려고 합니다. Visual Studio는 완전히 로드 된 후 확장 프로그램 인스턴스화될 기록 분석 추적을 중지할 수 있습니다.
+컬렉션을 중지 하기 전에 Visual Studio는 완전히 초기화, 주 창 완전히 표시 되 고 확장 프로그램에 자동으로 표시 하는 UI 부분이 있으면 해당도 표시 되도록 하려고 합니다. Visual Studio는 완전히 로드 되 고 확장 프로그램은 초기화 하는 경우 기록 분석 추적을 중지할 수 있습니다.
 
 **PerfView 사용 하 여 추적을 분석 합니다.**
 

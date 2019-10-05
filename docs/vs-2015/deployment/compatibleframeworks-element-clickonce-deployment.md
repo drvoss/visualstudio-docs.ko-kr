@@ -1,14 +1,9 @@
 ---
 title: '&lt;compatibleFrameworks&gt; 요소 (ClickOnce 배포) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,32 +14,32 @@ ms.assetid: f6c3ee55-9e65-403d-8664-3ebde872c7d4
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 051fd3eea0ffab2a7c5f088538d7208c8286d1d6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ef54062bd74c9395e187503dd12db1c0cd70d822
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176595"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675423"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks&gt; 요소 (ClickOnce 배포)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 응용 프로그램이 설치 및 실행할 수 있는 .NET Framework의 버전을 식별합니다.  
+이 애플리케이션이 설치 및 실행할 수 있는 .NET Framework의 버전을 식별합니다.  
   
 > [!NOTE]
->  [MageUI.exe](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14) 지원 하지 않습니다 합니다 `compatibleFrameworks` 요소는 응용 프로그램 매니페스트를 저장할 때 사용 하 여 인증서로 서명 된 이미 [MageUI.exe](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)합니다. 대신, [Mage.exe](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)를 사용해야 합니다.  
+> [MageUI.exe](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14) 지원 하지 않습니다 합니다 `compatibleFrameworks` 요소는 응용 프로그램 매니페스트를 저장할 때 사용 하 여 인증서로 서명 된 이미 [MageUI.exe](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)합니다. 대신, [Mage.exe](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)를 사용해야 합니다.  
   
 ## <a name="syntax"></a>구문  
   
 ```  
 <compatibleFrameworks  
-      SupportUrl>   
+      SupportUrl>   
    <framework  
       targetVersion  
       profile  
       supportedRuntime  
-   />   
+   />   
 </ compatibleFrameworks>  
 ```  
   
@@ -58,13 +53,13 @@ ms.locfileid: "49176595"
 |`S` `upportUrl`|선택 사항입니다. 호환 되는 기본.NET Framework 버전을 다운로드할 수 있는 URL을 지정 합니다.|  
   
 ## <a name="framework"></a>프레임워크  
- 필수. 다음 표에서 특성을 나열 하는 `framework` 요소를 지원 합니다.  
+ 필수 요소. 다음 표에서 특성을 나열 하는 `framework` 요소를 지원 합니다.  
   
 |특성|설명|  
 |---------------|-----------------|  
-|`targetVersion`|필수. 대상.NET Framework의 버전 번호를 지정합니다.|  
-|`profile`|필수. 대상.NET Framework의 프로필을 지정합니다.|  
-|`supportedRuntime`|필수. 대상.NET Framework와 관련 된 런타임 버전 번호를 지정 합니다.|  
+|`targetVersion`|필수 요소. 대상.NET Framework의 버전 번호를 지정합니다.|  
+|`profile`|필수 요소. 대상.NET Framework의 프로필을 지정합니다.|  
+|`supportedRuntime`|필수 요소. 대상.NET Framework와 관련 된 런타임 버전 번호를 지정 합니다.|  
   
 ## <a name="remarks"></a>설명  
   
@@ -82,6 +77,3 @@ ms.locfileid: "49176595"
   
 ## <a name="see-also"></a>참고 항목  
  [ClickOnce 배포 매니페스트](../deployment/clickonce-deployment-manifest.md)
-
-
-

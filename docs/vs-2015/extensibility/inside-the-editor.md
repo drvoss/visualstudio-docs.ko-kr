@@ -1,26 +1,21 @@
 ---
 title: 편집기 내부에서 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - architecture
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 caps.latest.revision: 32
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ddca5ab4b0d7dc6aa43f3db8c641ad5fc9e583b2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8dfc751b040bd775c3f55ff7db804c2a16d45d5f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414625"
 ---
 # <a name="inside-the-editor"></a>편집기 기본 사항
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ ms.locfileid: "51735181"
   
 - [IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
   
-##  <a name="overview"></a> 하위 시스템 개요  
+## <a name="overview"></a> 하위 시스템 개요  
   
 ### <a name="text-model-subsystem"></a>텍스트 모델 하위 시스템  
  텍스트 모델 하위 시스템은 텍스트를 나타내고 해당 조작을 사용 하도록 설정 하는 일을 담당 합니다. 텍스트 모델 하위 시스템 포함을 <xref:Microsoft.VisualStudio.Text.ITextBuffer> 편집기에서 표시 되는 문자 시퀀스를 설명 하는 인터페이스입니다. 이 텍스트 수정, 추적 및 여러 가지 방법으로 조작할 수 있습니다. 텍스트 모델 다음 측면에 대 한 형식을 제공합니다.  
@@ -81,7 +76,7 @@ ms.locfileid: "51735181"
   
 ## <a name="a-closer-look-at-the-text-model-and-the-text-view"></a>자세히 보기 텍스트 모델 및 텍스트 보기  
   
-###  <a name="textmodel"></a> 텍스트 모델  
+### <a name="textmodel"></a> 텍스트 모델  
  텍스트 모델 하위 시스템 텍스트 형식의 다른 그룹으로 구성 됩니다. 이러한 텍스트 버퍼, 텍스트 스냅숏 및 텍스트 범위를 포함 합니다.  
   
 #### <a name="text-buffers-and-text-snapshots"></a>텍스트 버퍼 및 텍스트 스냅숏  
@@ -97,7 +92,7 @@ ms.locfileid: "51735181"
  문자 시퀀스 또는 줄의 시퀀스로 텍스트 스냅숏의 콘텐츠를 볼 수 있습니다. 문자와 줄 모두 인덱스 0부터 시작 됩니다. 빈 텍스트 스냅숏을 0 개의 문자 및 빈 줄을 포함합니다. 유효한 유니코드 줄 바꿈 문자 시퀀스를 하거나 시작 또는 버퍼의 끝 줄 구분 됩니다. 줄 바꿈 문자를 텍스트 스냅숏의 명시적으로 표시 됩니다 및 텍스트 스냅숏의 줄 바꿈은 일부만 필요가 동일 합니다.  
   
 > [!NOTE]
->  Visual Studio 편집기에서 줄 바꿈 문자에 대 한 자세한 내용은 참조 하세요. [인코딩 및 줄 바꿈](../ide/encodings-and-line-breaks.md)합니다.  
+> Visual Studio 편집기에서 줄 바꿈 문자에 대 한 자세한 내용은 참조 하세요. [인코딩 및 줄 바꿈](../ide/encodings-and-line-breaks.md)합니다.  
   
  텍스트 줄으로 표시 됩니다는 <xref:Microsoft.VisualStudio.Text.ITextSnapshotLine> 개체를 특정 문자 위치 또는 특정 줄 번호에 대 한 텍스트 스냅숏에서 얻을 수 있습니다.  
   
@@ -154,7 +149,7 @@ abXefYj
   
  개발자가 자신의 콘텐츠 형식을 정의 업데이트 하 고 사용 하 여 등록할 수는 <xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>합니다. 사용 하 여 특정 콘텐츠 형식에 대해 다양 한 편집기 기능을 정의할 수 있습니다는 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>합니다. 예를 들어, 편집기 여백, 프로그램 및 마우스 처리기 정의할 수 있습니다 특정 콘텐츠 형식을 표시 하는 편집기에만 적용 되도록 합니다.  
   
-###  <a name="textview"></a> 텍스트 보기  
+### <a name="textview"></a> 텍스트 보기  
  모델 보기 컨트롤러 (MVC) 패턴의 뷰 부분 뷰, 스크롤 막대 캐럿 등 그래픽 요소 서식을 텍스트 뷰를 정의 합니다. Visual Studio 편집기의 모든 프레젠테이션 요소는 WPF를 기반으로 합니다.  
   
 #### <a name="text-views"></a>텍스트 뷰  
@@ -189,21 +184,21 @@ abXefYj
 ## <a name="editor-features"></a>편집기 기능  
  기능 정의 해당 구현에서 별도 편집기의 기능 설계 됩니다. 편집기에는 이러한 기능이 포함 됩니다.  
   
--   태그 및 분류자  
+- 태그 및 분류자  
   
--   선의 도구 영역  
+- 선의 도구 영역  
   
--   프로젝션  
+- 프로젝션  
   
--   개요  
+- 개요  
   
--   마우스 및 키 바인딩  
+- 마우스 및 키 바인딩  
   
--   작업 및 기본 형식  
+- 작업 및 기본 형식  
   
--   IntelliSense  
+- IntelliSense  
   
-###  <a name="tagsandclassifiers"></a> 태그 및 분류자  
+### <a name="tagsandclassifiers"></a> 태그 및 분류자  
  태그는 텍스트 범위와 연관 된 표식입니다. 표현할 수 있습니다 다른 방법으로 예를 들어 텍스트 색, 밑줄, 그래픽 또는 팝업을 사용 하 여 합니다. 분류자는 태그의 한 종류입니다.  
   
  다른 종류의 태그는 <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> 텍스트를 강조 표시 <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> 개요에 및 <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag> 컴파일 오류에 대 한 합니다.  
@@ -235,14 +230,14 @@ abXefYj
   
  <xref:Microsoft.VisualStudio.Text.Classification.IClassificationFormatMap> 은 텍스트 서식 속성 집합에 분류 유형에서 맵입니다. 편집기에서 서식 맵에 구현의 분류 형식의 모든 내보내기를 처리합니다.  
   
-###  <a name="adornments"></a> 선의 도구 영역  
+### <a name="adornments"></a> 선의 도구 영역  
  장식을 글꼴 및 텍스트 보기에 있는 문자의 색을 직접 관련 되지 않은 그래픽 효과입니다. 예를 들어, 다양 한 프로그래밍 언어로 비 컴파일 코드를 표시 하는 데 사용 되는 빨간색 물결선 밑줄이 포함된 adornment, 이며 도구 설명 팝업 장식 됩니다. 선의 도구 영역에서 파생 됩니다 <xref:System.Windows.UIElement> 구현 및 <xref:Microsoft.VisualStudio.Text.Tagging.ITag>합니다. 두 가지 특수 한 유형의 장식 태그는 합니다 <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>, 뷰의 텍스트와 동일한 공간을 차지 하는 선의 도구 영역에 대 한 및 <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>, 물결선 밑줄에 대 한 합니다.  
   
  포함 된 장식을 서식 있는 텍스트 보기의 일부를 형성 하는 그래픽입니다. 이러한 여러 Z-순서 계층으로 구성 됩니다. 다음과 같이 세 가지 기본 제공 계층을 가지 있습니다: 텍스트, 캐럿, 및를 선택 합니다. 그러나 개발자는 더 많은 레이어를 정의 하 고 각각에 대해 순서 대로 배치 수 있습니다. 장식 포함 된 세 가지는 상대 텍스트 장식 (하는 텍스트를 움직이면 이동 되며 텍스트 삭제 되 면 삭제 됨), (해야 하는 텍스트가 아닌 부분 뷰를 사용 하 여 수행)의 보기 관련 장식 및 소유자 제어 선의 도구 영역 ( 개발자 관리 해야 배치).  
   
  팝업 장식을 위의 예를 들어 도구 설명 텍스트 뷰를 다른 작은 창에 표시 되는 그래픽입니다.  
   
-###  <a name="projection"></a> 프로젝션  
+### <a name="projection"></a> Projection  
  프로젝션은 서로 다른 종류의 텍스트를 실제로 저장 되지 않습니다 하지만 대신 다른 텍스트 버퍼에서 텍스트를 결합 하는 텍스트 버퍼를 생성 하기 위한 기술입니다. 예를 들어 다른 두 버퍼에서 텍스트를 연결 하 고 하나의 버퍼에 있는 것 처럼 결과 표시 또는 숨기기 하나의 버퍼에서 텍스트의 부분에 프로젝션 버퍼를 사용할 수 있습니다. 프로젝션 버퍼는 다른 프로젝션 버퍼로 소스 버퍼로 작동할 수 있습니다. 다양 한 방법으로 텍스트를 다시 정렬 하려면 프로젝션을 통해 연관 된 버퍼 집합을 생성할 수 있습니다. (이러한 집합은 라고도 *버퍼 그래프*.) Visual Studio 텍스트 개요 기능을 축소 된 텍스트를 숨기려면 프로젝션 버퍼를 사용 하 여 구현 됩니다 하 고 ASP.NET 페이지에 대 한 Visual Studio 편집기 프로젝션을 사용 하 여 Visual Basic 및 C#과 같은 포함 된 언어를 지원 합니다.  
   
  <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer> 사용 하 여 만들어지는 <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService>합니다. 프로젝션 버퍼는 정렬된 된 시퀀스를 나타내는 <xref:Microsoft.VisualStudio.Text.ITrackingSpan> 이라고 하는 개체 *소스 범위*합니다. 이러한 범위 콘텐츠의 문자 시퀀스로 표시 됩니다. 소스 범위 그려지는 텍스트 버퍼 라고 *버퍼를 원본*합니다. 일반 텍스트 버퍼에서 다른는 알아야 할 클라이언트 프로젝션 버퍼에 없습니다.  
@@ -276,18 +271,18 @@ P: ABCDEvwxyz
 ##### <a name="events-and-projection-buffers"></a>이벤트 및 프로젝션 버퍼  
  프로젝션 버퍼 수정 되 면 수정 작업에 종속 된 버퍼에 프로젝션 버퍼에서 전송 됩니다. 모든 버퍼가 수정 되 면 버퍼 변경 이벤트가 발생 하는 가장 안쪽 버퍼를 사용 하 여 시작 합니다.  
   
-###  <a name="outlining"></a> 개요  
+### <a name="outlining"></a> 개요  
  개요를 확장 하거나 다양 한 텍스트 뷰에서 텍스트 블록을 축소할 수 있습니다. 종류로 란 개요의 <xref:Microsoft.VisualStudio.Text.Tagging.ITag>, 장식을 정의 된 방식으로 동일한 합니다. <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> 확장 하거나 축소할 수 있는 텍스트 영역을 정의 하는 태그입니다. 개요를 사용 하려면 가져와야는 <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManagerService> 가져오려는 <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManager>합니다. 개요 관리자 열거를 축소 하 고 다른 블록으로 표시 되는 확장 <xref:Microsoft.VisualStudio.Text.Outlining.ICollapsible> 개체 및 그에 따라 이벤트를 발생 시킵니다.  
   
-###  <a name="mousebindings"></a> 마우스 바인딩  
+### <a name="mousebindings"></a> 마우스 바인딩  
  마우스 바인딩을 다른 명령 마우스 움직임을 연결합니다. 마우스 바인딩을 사용 하 여 정의 되는 <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessorProvider>, 키 바인딩을 사용 하 여 정의 됩니다는 <xref:Microsoft.VisualStudio.Text.Editor.IKeyProcessorProvider>합니다. <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> 자동으로 모든 바인딩은 인스턴스화하고 뷰에서 마우스 이벤트에 연결 합니다.  
   
  <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessor> 여러 마우스 이벤트에 대 한 전처리 및 후 처리 이벤트 처리기를 포함 하는 인터페이스입니다. 이벤트 중 하나가 핸들을의 메서드 중 일부를 재정의할 수 있습니다 <xref:Microsoft.VisualStudio.Text.Editor.MouseProcessorBase>합니다.  
   
-###  <a name="editoroperations"></a> 편집기 작업  
+### <a name="editoroperations"></a> 편집기 작업  
  편집기 작업 스크립팅 편집기 또는 기타 목적을 위해 상호 작용을 자동화 하 사용할 수 있습니다. 가져올 수 있습니다 합니다 <xref:Microsoft.VisualStudio.Text.Operations.IEditorOperationsFactoryService> 액세스 작업에 지정 된 <xref:Microsoft.VisualStudio.Text.Editor.ITextView>합니다. 그런 다음 선택 항목을 수정, 보기를 스크롤하거나, 보기의 다른 부분에 캐럿을 이동 하려면 이러한 개체를 사용할 수 있습니다.  
   
-###  <a name="intellisense"></a> IntelliSense  
+### <a name="intellisense"></a> IntelliSense  
  IntelliSense 문 완성, 시그니처 도움말 (매개 변수 정보 라고도 함), 요약 정보 및 전구를 지원합니다.  
   
  문 완성 팝업 메서드 이름, XML 요소 및 다른 코드 또는 태그 요소에 대 한 잠재적인 완성 목록을 제공합니다. 일반적으로 사용자 제스처는 완료 세션을 호출합니다. 세션 잠재적인 완성 목록을 표시 하 고 사용자 수 하나를 선택 하거나 목록 해제 합니다. 합니다 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> 만들고 트리거하는 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession>합니다. 합니다 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> 계산 된 <xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet> 세션에 대 한 완성 항목의 합니다.  
@@ -295,4 +290,3 @@ P: ABCDEvwxyz
 ## <a name="see-also"></a>참고 항목  
  [언어 서비스 및 편집기 확장 지점](../extensibility/language-service-and-editor-extension-points.md)   
  [편집기 가져오기](../extensibility/editor-imports.md)
-

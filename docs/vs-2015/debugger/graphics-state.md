@@ -1,27 +1,22 @@
 ---
 title: 그래픽 상태 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.statewindow
 ms.assetid: 97e7757e-c372-4626-8149-99a81367a0e1
 caps.latest.revision: 5
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c5100f32a7a706f0d61e3b0ac006c8168e1ee553
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 87972fe12cb8be78b89261d0aaaa272d9e2d5a14
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750367"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825572"
 ---
 # <a name="graphics-state"></a>그래픽 상태
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ Visual Studio 그래픽 진단의 상태 창은 그리기 호출과 같은 현�
 ### <a name="state-views"></a>상태 보기  
  다양한 방법으로 상태 테이블을 볼 수 있습니다.  
   
-|보기|설명|  
+|보기|Description|  
 |----------|-----------------|  
 |API 입력 상태 보기|이 보기는 상태를 구성하는 Direct3D 개체에 유사한 레이아웃으로 상태를 표시합니다.|  
 |논리 입력 상태 보기|이 보기는 상태를 구성하는 Direct3D 개체의 레이아웃을 미러링하지 않는 논리 뷰로 상태를 표시합니다.|  
@@ -42,23 +37,23 @@ Visual Studio 그래픽 진단의 상태 창은 그리기 호출과 같은 현�
   
 ##### <a name="to-change-the-state-view"></a>상태 보기를 변경하려면  
   
--   상태 창 왼쪽 위, 제목 표시줄 바로 아래에서 사용하려는 상태 보기 스타일에 해당하는 단추를 선택합니다.  
-  
-    -   **API 입력된 상태 보기 표시**  
-  
-    -   **논리 상태 보기 표시**  
-  
-    -   **고정 된 상태 보기 표시**  
+- 상태 창 왼쪽 위, 제목 표시줄 바로 아래에서 사용하려는 상태 보기 스타일에 해당하는 단추를 선택합니다.  
+
+  - **API 입력 상태 보기 표시**  
+
+  - **논리 상태 보기 표시**  
+
+  - **고정된 상태 보기 표시**  
   
 > [!IMPORTANT]
->  상태를 고정 해야 합니다 **표시 API 입력 상태** 또는 **논리 상태 표시** 에 표시 하려면을 **표시 고정 된 상태 보기**.  
+> **고정된 상태 보기 표시**에 상태를 표시하려면 **API 입력 상태 표시** 또는 **논리 상태 표시** 보기에서 상태를 고정해야 합니다.  
   
 ### <a name="state-table-format"></a>상태 테이블 형식  
  상태 창에는 여러 정보 열이 표시됩니다.  
   
-|열|설명|  
+|Column|Description|  
 |------------|-----------------|  
-|이름|상태 항목의 이름입니다. 이 항목이 상태 번들을 나타내는 경우 항목을 확장하여 표시할 수 있습니다.<br /><br /> 에 **API 입력 상태 보기** 하 고 **논리 상태 보기** 상태, 상태 간의 계층 관계를 표시할 이름이 들여쓰기 됩니다.<br /><br /> 에 **고정 된 상태 보기** 상태, 정규화 된 이름이 플랫 목록에 표시 됩니다.|  
+|이름|상태 항목의 이름입니다. 이 항목이 상태 번들을 나타내는 경우 항목을 확장하여 표시할 수 있습니다.<br /><br /> **API 입력 상태 보기** 및 **논리 상태 보기** 상태에서는 상태 간의 계층 관계를 표시하기 위해 이름이 들여쓰기됩니다.<br /><br /> **고정된 상태 보기** 상태에서는 정규화된 이름이 플랫 목록에 표시됩니다.|  
 |값|상태 항목의 값입니다.|  
 |형식|상태 항목의 형식입니다.|  
   
@@ -72,11 +67,8 @@ Visual Studio 그래픽 진단의 상태 창은 그리기 호출과 같은 현�
   
 ##### <a name="to-pin-state-in-place"></a>상태를 제자리에 고정하려면  
   
-1.  상태 창에서 관심 있는 상태를 찾습니다. 관심 있는 세부 정보를 찾기 위해 상위 수준 상태를 확장해야 할 수도 있습니다.  
+1. 상태 창에서 관심 있는 상태를 찾습니다. 관심 있는 세부 정보를 찾기 위해 상위 수준 상태를 확장해야 할 수도 있습니다.  
   
-2.  관심 있는 상태 위에 커서를 놓습니다. 상태 항목의 왼쪽에 고정 아이콘이 나타납니다.  
+2. 관심 있는 상태 위에 커서를 놓습니다. 상태 항목의 왼쪽에 고정 아이콘이 나타납니다.  
   
-3.  고정 아이콘을 선택하여 상태 항목을 제자리에 고정합니다.
-
-
-
+3. 고정 아이콘을 선택하여 상태 항목을 제자리에 고정합니다.

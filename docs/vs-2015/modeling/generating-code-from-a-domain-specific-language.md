@@ -1,23 +1,20 @@
 ---
 title: 도메인 특정 언어에서 코드 생성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: e3706cc9-2afd-456a-a879-68425a248ebc
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5edc6e267957f08837399ae5c2e56bce3cc26cce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 63e1b48a7582294c200b1e30147d85a9b26165d4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182800"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>도메인별 언어에서 코드 생성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +42,7 @@ Microsoft [!INCLUDE[dsl](../includes/dsl-md.md)] 모델에 표현 된 데이터�
   
  텍스트 템플릿에서 도메인 특정 언어를 참조 하는 방법에 대 한 기본 정보를 제공 합니다.  
   
- [연습: 모델에 액세스하는 텍스트 템플릿 디버그](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)  
+ [연습: 모델에 액세스하는 텍스트 템플릿 디버깅](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)  
   
  문제 해결 및 도메인 특정 언어를 가리키는 텍스트 템플릿 디버깅을 수행 하는 방법을 설명 합니다.  
   
@@ -70,6 +67,3 @@ Microsoft [!INCLUDE[dsl](../includes/dsl-md.md)] 모델에 표현 된 데이터�
  [빌드 프로세스의 코드 생성](../modeling/code-generation-in-a-build-process.md)  
   
  빌드 서버에서 DSL에서 파일을 생성 하는 경우이 항목을 읽습니다.
-
-
-

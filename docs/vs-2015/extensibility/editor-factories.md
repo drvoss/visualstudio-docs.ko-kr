@@ -1,26 +1,21 @@
 ---
 title: 편집기 팩터리 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - editor factories
 ms.assetid: cf4e8164-3546-441d-b465-e8a836ae7216
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 74ea8d296db643e74654f9016c1f5bff4f34c6d8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2de1fc8440bd33a526da62dbb4c7937800484aaa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197757"
 ---
 # <a name="editor-factories"></a>편집기 팩터리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,15 +45,14 @@ ms.locfileid: "51809456"
 ## <a name="the-editor-factory-registration-process"></a>편집기 팩터리 등록 프로세스  
  다음 프로세스에는 Visual Studio 편집기 팩터리를 사용 하 여 편집기를 로드할 때 발생 합니다.  
   
-1.  합니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트 시스템 호출 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>합니다.  
+1. 합니다 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트 시스템 호출 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>합니다.  
   
-2.  이 메서드는 편집기 팩터리를 반환합니다. 그러나 Visual Studio 지연 프로젝트 시스템 편집기에 실제로 필요한 때까지 편집기의 패키지를 로드 합니다.  
+2. 이 메서드는 편집기 팩터리를 반환합니다. 그러나 Visual Studio 지연 프로젝트 시스템 편집기에 실제로 필요한 때까지 편집기의 패키지를 로드 합니다.  
   
-3.  Visual Studio를 호출 하는 프로젝트 시스템에서 편집기를 필요한 경우 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>, 문서 보기 및 문서 데이터 개체를 반환 하는 특수 메서드입니다.  
+3. Visual Studio를 호출 하는 프로젝트 시스템에서 편집기를 필요한 경우 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>, 문서 보기 및 문서 데이터 개체를 반환 하는 특수 메서드입니다.  
   
-4.  경우에 편집기 팩터리를 사용 하 여 Visual Studio에서 호출 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> 문서 데이터 개체 및 문서 뷰 개체를 반환 하 고 Visual Studio 다음 문서 창을 만듭니다, 문서 보기 개체에서 배치은 실행 중인 문서에 항목을 만듭니다 문서 데이터 개체에 대 한 테이블 (RDT).  
+4. 경우에 편집기 팩터리를 사용 하 여 Visual Studio에서 호출 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> 문서 데이터 개체 및 문서 뷰 개체를 반환 하 고 Visual Studio 다음 문서 창을 만듭니다, 문서 보기 개체에서 배치은 실행 중인 문서에 항목을 만듭니다 문서 데이터 개체에 대 한 테이블 (RDT).  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>   
  [문서 테이블 실행](../extensibility/internals/running-document-table.md)
-

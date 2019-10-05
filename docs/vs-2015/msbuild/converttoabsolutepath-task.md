@@ -1,14 +1,9 @@
 ---
 title: ConvertToAbsolutePath 작업 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ConvertToAbsolutePath
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: f1af2cb8-b4ef-4a72-be80-22fa526c4491
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2588d05158773ad50650813e9728bb3ccb772a25
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 399ffeae65ba935e3682b54eff5ee1b0b687aa9d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184074"
 ---
 # <a name="converttoabsolutepath-task"></a>ConvertToAbsolutePath 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 절대 경로 또는 참조를 상대 경로로 변환합니다.  
   
 ## <a name="task-parameters"></a>작업 매개 변수  
@@ -51,6 +45,3 @@ ms.locfileid: "49285183"
 ## <a name="see-also"></a>참고 항목  
  [작업](../msbuild/msbuild-tasks.md)   
  [작업 참조](../msbuild/msbuild-task-reference.md)
-
-
-

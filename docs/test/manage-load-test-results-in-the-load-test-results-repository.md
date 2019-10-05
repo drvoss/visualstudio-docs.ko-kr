@@ -10,15 +10,13 @@ helpviewer_keywords:
 ms.assetid: 1cd63c4b-4f74-4133-b675-5e8fbeab25f3
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 0b2d030f375f67608fc6cf34ae108fed2ba54f5d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 37dfd7b0aa8aed1ce94f3d4364c5b61a0957a223
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067118"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926619"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>부하 테스트 결과 리포지토리에서 부하 테스트 결과 관리
 
@@ -35,13 +33,13 @@ Visual Studio Enterprise에서는 기술을 기반으로 일반적인 성능 카
 
 ## <a name="sql-server-versions"></a>SQL Server 버전
 
- 부하 테스트를 사용하려면 Visual Studio와 함께 설치되는 SQL Server Express LocalDB를 사용할 수 있습니다. 부하 테스트(Microsoft Excel 통합 포함)에 대한 기본 데이터베이스 서버입니다. SQL Server Express LocalDB는 프로그램 개발자를 대상으로 하는 SQL Server Express의 실행 모드입니다. SQL Server Express LocalDB 설치는 SQL Server 데이터베이스 엔진을 시작하는 데 필요한 최소한의 파일 집합을 복사합니다.
+부하 테스트를 사용하려면 Visual Studio와 함께 설치되는 SQL Server Express LocalDB를 사용할 수 있습니다. 부하 테스트(Microsoft Excel 통합 포함)에 대한 기본 데이터베이스 서버입니다. SQL Server Express LocalDB는 프로그램 개발자를 대상으로 하는 SQL Server Express의 실행 모드입니다. SQL Server Express LocalDB 설치는 SQL Server 데이터베이스 엔진을 시작하는 데 필요한 최소한의 파일 집합을 복사합니다.
 
- 팀이 많은 데이터베이스 요구를 예상하거나 프로젝트가 SQL Server Express LocalDB보다 커지는 경우 추가 확장 가능성을 제공하기 위해 SQL Express 또는 전체 SQL Server로 업그레이드하는 것을 고려해야 합니다. SQL Server로 업그레이드하는 경우 SQL Server Express LocalDB의 MDF 및 LDF는 사용자 프로필 폴더에 저장됩니다. 부하 테스트 데이터베이스를 SQL Server Express 또는 SQL Server로 가져오는 데 이 파일을 사용할 수 있습니다.
+팀이 많은 데이터베이스 요구를 예상하거나 프로젝트가 SQL Server Express LocalDB보다 커지는 경우 추가 확장 가능성을 제공하기 위해 SQL Express 또는 전체 SQL Server로 업그레이드하는 것을 고려해야 합니다. SQL Server로 업그레이드하는 경우 SQL Server Express LocalDB의 MDF 및 LDF는 사용자 프로필 폴더에 저장됩니다. 부하 테스트 데이터베이스를 SQL Server Express 또는 SQL Server로 가져오는 데 이 파일을 사용할 수 있습니다.
 
 ## <a name="load-test-results-store-considerations"></a>부하 테스트 결과 저장소 고려 사항
 
- Visual Studio Enterprise가 설치된 경우 부하 테스트 결과 저장소는 컴퓨터에 설치된 SQL Express의 인스턴스를 사용하도록 설정됩니다. SQL Express는 최대 4GB의 디스크 공간을 사용하도록 제한됩니다. 장기간에 걸쳐 여러 부하 테스트를 실행할 경우에는 가능하면 전체 SQL Server 제품의 인스턴스를 사용하도록 부하 테스트 결과 저장소를 구성해야 합니다.
+Visual Studio Enterprise가 설치된 경우 부하 테스트 결과 저장소는 컴퓨터에 설치된 SQL Express의 인스턴스를 사용하도록 설정됩니다. SQL Express는 최대 4GB의 디스크 공간을 사용하도록 제한됩니다. 장기간에 걸쳐 여러 부하 테스트를 실행할 경우에는 가능하면 전체 SQL Server 제품의 인스턴스를 사용하도록 부하 테스트 결과 저장소를 구성해야 합니다.
 
 ## <a name="load-test-analyzer-tasks"></a>부하 테스트 분석기 작업
 
@@ -54,9 +52,9 @@ Visual Studio Enterprise에서는 기술을 기반으로 일반적인 성능 카
 
 ## <a name="related-tasks"></a>관련 작업
 
- [부하 테스트 결과 분석](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+[부하 테스트 결과 분석](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
- **부하 테스트 분석기**를 사용하여 실행 중인 부하 테스트와 완료된 부하 테스트 모두의 결과를 볼 수 있습니다.
+**부하 테스트 분석기**를 사용하여 실행 중인 부하 테스트와 완료된 부하 테스트 모두의 결과를 볼 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 

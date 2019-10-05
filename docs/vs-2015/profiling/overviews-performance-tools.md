@@ -1,30 +1,25 @@
 ---
 title: 개요(성능 도구) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: b877802d-c736-4047-821a-bd7733fff6de
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d055f4a68a7fbc866300ab5fe842d43a75ce7008
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6429f9d9a94d74be48bd1a6305f1bb109a173b5a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741315"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189354"
 ---
 # <a name="overviews-performance-tools"></a>개요(성능 도구)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 섹션에서는 개발 중인 응용 프로그램의 성능 특성을 측정하는 데 사용할 수 있는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로파일링 도구의 개념과 용어를 간략하게 설명합니다.  
+이 섹션에서는 개발 중인 애플리케이션의 성능 특성을 측정하는 데 사용할 수 있는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로파일링 도구의 개념과 용어를 간략하게 설명합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [성능 세션 개요](../profiling/performance-session-overview.md)  
@@ -52,11 +47,8 @@ ms.locfileid: "51741315"
  성능 세션에서 추가 성능 데이터를 제공할 수 있는 CPU 및 Windows 성능 카운터에 대해 알아봅니다.  
   
  [프로파일링 및 Windows Vista 보안](../profiling/profiling-and-windows-vista-security.md)  
- [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)]에서 샘플링 데이터를 수집하고 상호 세션 응용 프로그램을 프로파일링하기 위해 수행해야 하는 단계와 관련 문제에 대해 알아봅니다.  
+ [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)]에서 샘플링 데이터를 수집하고 상호 세션 애플리케이션을 프로파일링하기 위해 수행해야 하는 단계와 관련 문제에 대해 알아봅니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [시작](../profiling/getting-started-with-performance-tools.md)   
  [성능 탐색기](../profiling/performance-explorer.md)
-
-
-

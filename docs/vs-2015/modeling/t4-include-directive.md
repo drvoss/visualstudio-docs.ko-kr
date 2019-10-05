@@ -1,23 +1,20 @@
 ---
 title: T4 Include 지시문 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 8c3de9f3-755a-47c5-a30a-65717dcaaac2
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e8de721b7f26152cd4e7f5df1ee7eb4d04770511
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 6b475b8e5c2138c909133aee0440f0dcaea99e13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68163638"
 ---
 # <a name="t4-include-directive"></a>T4 Include 지시문
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,7 +112,7 @@ Output message 5 (from top template).
   
 ```  
   
-##  <a name="msbuild"></a> MSBuild 및 Visual Studio에서 프로젝트 속성 사용  
+## <a name="msbuild"></a> MSBuild 및 Visual Studio에서 프로젝트 속성 사용  
  include 지시문에 $(SolutionDir)와 같은 Visual Studio 매크로를 사용할 수 있지만 MSBuild에서는 작동하지 않습니다. 빌드 컴퓨터에서 템플릿을 변형하려는 경우 대신 프로젝트 속성을 사용해야 합니다.  
   
  프로젝트 속성을 정의하기 위해 .csproj 또는 .vbproj 파일을 편집합니다. 이 예제에서는 `myIncludeFolder`라는 속성을 정의합니다.  
@@ -140,6 +137,3 @@ Output message 5 (from top template).
 ```  
 <#@ include file="$(myIncludeFolder)\defs.tt" #>  
 ```
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: '방법: 정렬 및 도킹 Windows | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 f1_keywords:
 - VisualStudio.TreeGrid.AddRemoveColumnsDialogBox
 - VisualStudio.TreeGrid.SortColumnDialogBox
@@ -36,13 +31,13 @@ ms.assetid: 6a68f761-4589-4634-b39d-311fc46309aa
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7b3442fe14ab0a34db54a8bec0dc217f1fd02b1c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5decd1dc8ece151acbbd1a91b34526ca3f085aef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822564"
 ---
-# <a name="how-to-arrange-and-dock-windows"></a>방법: 창 정렬 및 도킹
+# <a name="how-to-arrange-and-dock-windows"></a>방법: 정렬 및 도킹 Windows
 이 콘텐츠를 움직인 [창 레이아웃 사용자 지정](../ide/customizing-window-layouts-in-visual-studio.md)

@@ -1,7 +1,6 @@
 ---
 title: 이동성 경고
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.MobilityRules
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9808054c-593b-4fc3-92cc-1fc45f41569c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2125f8fc674c91d5bbb301c13a3a898b79e174a8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 170caf52999fb687c040c2e9212d1a1ed2e154a0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820676"
 ---
 # <a name="mobility-warnings"></a>이동성 경고
 이동성 경고 효율적인 전원 사용을 지원 합니다.

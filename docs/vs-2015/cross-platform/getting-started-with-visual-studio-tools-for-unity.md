@@ -1,67 +1,61 @@
 ---
 title: Visual Studio Tools for Unity 시작 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
+ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 66b5b4eb-13b5-4071-98d2-87fafa4598a8
 caps.latest.revision: 12
 author: conceptdev
 ms.author: crdun
-manager: ghogen
-ms.openlocfilehash: 9ed6cb4127ba57c6b9b84a32996968dbf9fac4fe
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4532b7e566bbd315d9acbdef43198e0f91f5f195
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762717"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263548"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 시작
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 이 섹션에서는 Visual Studio Tools for Unity를 설치하고 Visual Studio와 함께 작동하도록 Unity 프로젝트를 구성하는 방법을 설명합니다.  
   
 > [!IMPORTANT]
->  Unity 5.2에서는 프로젝트 설정을 간소화하는 Visual Studio Tools for Unity 2.1에 대한 기본 제공 지원이 추가되었습니다. 이 지원을 이용하려면 Windows에서 Unity 버전 5.2.0 이상과 Visual Studio Tools for Unity 버전 2.1 이상이 필요합니다.  
+> Unity 5.2에서는 프로젝트 설정을 간소화하는 Visual Studio Tools for Unity 2.1에 대한 기본 제공 지원이 추가되었습니다. 이 지원을 이용하려면 Windows에서 Unity 버전 5.2.0 이상과 Visual Studio Tools for Unity 버전 2.1 이상이 필요합니다.  
   
 ## <a name="prerequisites"></a>전제 조건  
  Visual Studio Tools for Unity를 사용하려면 다음이 필요합니다.  
   
--   Visual Studio Community, Professional, Premium 또는 Enterprise와 같은 확장을 지원하는 **Visual Studio** 버전. Visual Studio Community를 무료로 다운로드할 수 있습니다.  
+- Visual Studio Community, Professional, Premium 또는 Enterprise와 같은 확장을 지원하는 **Visual Studio** 버전. Visual Studio Community를 무료로 다운로드할 수 있습니다.  
   
      [Visual Studio Community 다운로드](http://www.visualstudio.com/downloads/download-visual-studio-vs)  
   
--   **Unity** 버전 4.0.0 이상. Visual Studio Tools for Unity 2.1 이상에 대한 기본 제공 지원을 활용하려면 **Unity** 버전 5.2.0 이상  
+- **Unity** 버전 4.0.0 이상. Visual Studio Tools for Unity 2.1 이상에 대한 기본 제공 지원을 활용하려면 **Unity** 버전 5.2.0 이상  
   
      [Unity 다운로드](https://unity3d.com/get-unity/download)  
   
 ## <a name="install-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 설치  
  Visual Studio 갤러리에서 Visual Studio Tools for Unity를 다운로드하고 설치합니다. 사용 중인 Visual Studio 버전에 맞는 패키지를 설치해야 합니다. Unity 5.2 이상에서 VSTU에 대한 기본 제공 지원을 활용하려면 Visual Studio Tools for Unity 버전 2.1 이상을 설치해야 합니다.  
   
--   Visual Studio 2015 Community, Visual Studio 2015 Professional 또는 Visual Studio 2015 Enterprise의 경우:  
+- Visual Studio 2015 Community, Visual Studio 2015 Professional 또는 Visual Studio 2015 Enterprise의 경우:  
   
      [Visual Studio 2015 Tools for Unity 다운로드](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)  
   
--   Visual Studio 2013 Community, Visual Studio 2013 Professional 또는 Visual Studio 2013 Premium의 경우:  
+- Visual Studio 2013 Community, Visual Studio 2013 Professional 또는 Visual Studio 2013 Premium의 경우:  
   
      [Visual Studio 2013 Tools for Unity 다운로드](https://visualstudiogallery.msdn.microsoft.com/20b80b8c-659b-45ef-96c1-437828fe7cf2)  
   
--   Visual Studio 2012 Professional 또는 Visual Studio 2012 Premium의 경우:  
+- Visual Studio 2012 Professional 또는 Visual Studio 2012 Premium의 경우:  
   
      [Visual Studio 2012 Tools for Unity 다운로드](https://visualstudiogallery.msdn.microsoft.com/7ab11d2a-f413-4ed6-b3de-ff1d05157714)  
   
--   Visual Studio 2010 Professional 또는 Visual Studio 2010 Premium의 경우:  
+- Visual Studio 2010 Professional 또는 Visual Studio 2010 Premium의 경우:  
   
      [Visual Studio 2010 Tools for Unity 다운로드](https://visualstudiogallery.msdn.microsoft.com/6e536faa-ce73-494a-a746-6a14753015f1)  
   
 > [!NOTE]
->  Visual Studio의 Express 버전은 Visual Studio Tools for Unity 등의 확장을 지원하지 않습니다. Visual Studio Community는 Visual Studio Tools for Unity 및 기타 확장 프로그램을 지원하는 Visual Studio의 무료 버전입니다. 대부분의 사용자에게 Visual Studio Community가 Express보다 더 적합합니다.  
+> Visual Studio의 Express 버전은 Visual Studio Tools for Unity 등의 확장을 지원하지 않습니다. Visual Studio Community는 Visual Studio Tools for Unity 및 기타 확장 프로그램을 지원하는 Visual Studio의 무료 버전입니다. 대부분의 사용자에게 Visual Studio Community가 Express보다 더 적합합니다.  
   
 ## <a name="your-first-unity-project-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity를 사용한 첫 번째 Unity 프로젝트  
  이제 필요한 준비를 갖췄으며 Visual Studio를 사용한 첫 번째 Unity 프로젝트를 시작할 준비가 되었습니다. Unity 프로젝트 설정은 설치된 Unity 및 Visual Studio Tools for Unity 버전에 따라 달라집니다. 설치한 Unity 및 Visual Studio Tools for Unity 버전에 대한 아래 단계를 수행합니다.  
@@ -74,7 +68,7 @@ ms.locfileid: "51762717"
   
  또는 Unity를 처음 접하는 경우 기본 자습서를 사용하여 작은 항목부터 시작합니다. Unity 학습 페이지를 방문하여 시작에 사용할 수 있는 예제 프로젝트에 대한 자습서와 학습할 수 있는 단원을 찾아 Unity로 게임을 빌드합니다. Unity 학습 페이지에는 여러 다른 게임에 대한 따라하기 쉬운 자습서가 있습니다.  
   
- [자습서-Unity 학습 페이지](http://unity3d.com/learn/tutorials/modules)  
+ [Tutorials – Unity Learn page](https://learn.unity.com/tutorials)(자습서-Unity 학습 페이지)  
   
 #### <a name="2---configure-unity-editor-to-use-visual-studio-tools-for-unity"></a>2 - Visual Studio Tools for Unity를 사용하여 Unity 편집기 구성  
  프로젝트에서 Visual Studio Tools for Unity를 사용할 수 있게 하려면 Visual Studio를 외부 스크립트 편집기로 설정하면 됩니다. Unity 편집기의 주 메뉴에서 **편집, 기본 설정**을 선택한 다음 **Unity 기본 설정** 대화 상자에서 **외부 도구**를 선택합니다. **외부 스크립트 편집기** 속성을 사용하려는 Visual Studio 버전으로 설정하고(이 Visual Studio 버전에 대한 Visual Studio Tools for Unity를 설치해야 함) **편집기 연결** 속성이 설정되어 있는지 확인합니다.  
@@ -96,7 +90,7 @@ ms.locfileid: "51762717"
   
  또는 Unity를 처음 접하는 경우 기본 자습서를 사용하여 작은 항목부터 시작합니다. Unity 학습 페이지를 방문하여 시작에 사용할 수 있는 예제 프로젝트에 대한 자습서와 학습할 수 있는 단원을 찾아 Unity로 게임을 빌드합니다. Unity 학습 페이지에는 여러 다른 게임에 대한 따라하기 쉬운 자습서가 있습니다.  
   
- [자습서-Unity 학습 페이지](http://unity3d.com/learn/tutorials/modules)  
+ [Tutorials – Unity Learn page](https://learn.unity.com/tutorials)(자습서-Unity 학습 페이지)  
   
 #### <a name="2---configure-unity-editor-to-use-visual-studio-tools-for-unity"></a>2 - Visual Studio Tools for Unity를 사용하여 Unity 편집기 구성  
  기존 Unity 프로젝트에서 시작하거나 프로젝트를 만들 때 Visual Studio Tools unitypackage를 가져오지 않은 경우 지금 unitypackage를 가져와야 합니다. Unity 편집기의 주 메뉴에서 **자산, 패키지 가져오기, Visual Studio 2015 Tools** 를 선택합니다(사용 중인 Visual Studio의 버전에 대한 옵션을 참조해야 합니다).  
@@ -119,4 +113,3 @@ ms.locfileid: "51762717"
   
 ## <a name="see-also"></a>참고 항목  
  [Unity Homepage](http://unity3d.com)(Unity 홈페이지)
-

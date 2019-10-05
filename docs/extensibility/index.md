@@ -2,22 +2,24 @@
 layout: LandingPage
 title: Visual Studio 확장성
 description: Visual Studio 확장성에 대해 자세히 알아보세요.
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 ms.date: 10/31/2018
 ms.topic: landing-page
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: 089173cc363bfa006d23fc784c1a437aeebcbf3d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c9f524889da41662cec28f82100c36cec90e608b
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824092"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160142"
 ---
 # <a name="visual-studio-extensibility-documentation"></a>Visual Studio 확장성 설명서
 
 Visual Studio에서는 다양한 확장성 옵션이 제공됩니다. Visual Studio 자체를 확장하거나 “Roslyn” 컴파일러용 소스 코드 분석기를 추가할 수 있을 뿐만 아니라, 고유한 SDK를 만들 수도 있습니다.
+
+<!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -27,7 +29,7 @@ Visual Studio에서는 다양한 확장성 옵션이 제공됩니다. Visual Stu
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/logos/logo_VS.svg" alt="" />
+                            <img src="/media/logos/logo_VS.svg" alt="Visual Studio logo" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -45,7 +47,7 @@ Visual Studio에서는 다양한 확장성 옵션이 제공됩니다. Visual Stu
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_extensions.svg" alt="" />
+                            <img src="/media/common/i_extensions.svg" alt="Extensions icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -63,7 +65,7 @@ Visual Studio에서는 다양한 확장성 옵션이 제공됩니다. Visual Stu
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_tools.svg" alt="" />
+                            <img src="/media/common/i_tools.svg" alt="Tools icon" />
                         </div>
                     </div>
                     <div class="cardText">

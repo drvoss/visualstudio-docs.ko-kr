@@ -1,14 +1,9 @@
 ---
 title: 통합 개발 환경 오류를 해결하기 위한 리소스 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.Message.0x00005A89
 - VS.Message.0x00005A8E
@@ -98,18 +93,17 @@ ms.assetid: 8f866eb5-a206-4c16-807e-96a0f2c0e645
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 269806ea71794f1b328fd94e147dbf055b78ca1f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 97edc5419cb552f853a75817564a69dd175ec54b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203683"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>통합 개발 환경 오류를 해결하기 위한 리소스
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 일부 오류 메시지에만 특정 관련된 도움말 항목이 포함됩니다. 오류 메시지의 정보가 문제를 해결하는 데 도움이 되지 않는 경우 기술 자료 문서, 개발자 커뮤니티 또는 제품 지원과 같은 다른 리소스를 참조할 수 있습니다.  
   
 ## <a name="knowledge-base-articles"></a>기술 자료 문서  
@@ -118,10 +112,7 @@ ms.locfileid: "49232663"
 ## <a name="the-developer-community"></a>개발자 커뮤니티  
  포럼을 통해 다른 개발자 및 Microsoft 직원과 상호 작용할 수 있습니다. 해결 방법을 찾을 수 없는 오류가 발생한 경우에는 문제에 대한 질문을 포럼에 게시할 수 있습니다. 뉴스 그룹을 검색하여 다른 사용자가 같은 문제를 게시했는지 알아볼 수 있습니다.  
   
- [Microsoft 기술 커뮤니티](http://go.microsoft.com/fwlink/?LinkID=144922) 웹 사이트에서 포럼, 블로그, 채팅 및 기타 리소스에 액세스할 수 있습니다.  
+ [Microsoft 기술 커뮤니티](https://techcommunity.microsoft.com/) 웹 사이트에서 포럼, 블로그, 채팅 및 기타 리소스에 액세스할 수 있습니다.  
   
 ## <a name="product-support"></a>기술 지원  
  다른 리소스를 확인한 후에도 질문 사항이 있는 경우 [Microsoft 지원](http://go.microsoft.com/fwlink/?linkid=1782) 웹 사이트를 방문하여 Microsoft 지원 서비스에 문의할 수 있습니다. 해당 지역에서 사용 가능한 제품 지원에 대한 자세한 내용은 [의견 보내기](../../ide/talk-to-us.md)를 참조하세요.
-
-
-

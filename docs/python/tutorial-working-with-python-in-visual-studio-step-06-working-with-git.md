@@ -2,23 +2,21 @@
 title: Visual Studio 자습서 6단계에서 Python, Git 작업
 titleSuffix: ''
 description: Visual Studio의 Python에 대한 핵심 연습의 6단계로, Visual Studio의 Git 관련 기능을 설명합니다.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 01/28/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6c23a1d9835b7b065f24536c89a8f0befb03717c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8d71f9e145d78d1d1bf7f6e9bb132e9fc084afd0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810500"
 ---
 # <a name="step-6-work-with-git"></a>6단계: Git 작업
 

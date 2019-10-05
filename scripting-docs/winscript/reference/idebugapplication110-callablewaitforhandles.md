@@ -2,7 +2,6 @@
 title: IDebugApplication110::CallableWaitForHandles | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b259f5296f8e0b32def793a81e4c2e1069643306
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
-ms.translationtype: MT
+ms.openlocfilehash: f74e3faa57e9ee4a38f77110334383bc2c72fe2f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446387"
 ---
 # <a name="idebugapplication110callablewaitforhandles"></a>IDebugApplication110::CallableWaitForHandles
-신호를 받을 수 있도록 하는 동안 지정 된 핸들에 대 한 대기 크로스 스레드 호출 본에 게시 합니다. 디버거 스레드에서이 메서드를 호출 해야 합니다.  
+신호를 받을 수 있도록 하는 동안 지정 된 핸들에 대 한 대기 크로스 스레드 호출이이 스레드를 게시 합니다. 디버거 스레드에서이 메서드를 호출 해야 합니다.  
   
 > [!IMPORTANT]
->  [IDebugApplication110 인터페이스](../../winscript/reference/idebugapplication110-interface.md) 구현 PDM v11.0 이상에 됩니다. activdbg100.h에서 찾을 수 있습니다.  
+> [IDebugApplication110 인터페이스](../../winscript/reference/idebugapplication110-interface.md) 는 PDM v11.0에 의해 구현 된 이상. activdbg100.h에서 찾을 수 있습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,7 +40,7 @@ HRESULT CallableWaitForHandles([in] DWORD handleCount, [in, size_is(handleCount)
  집합에 대 한 대기에 대 한 핸들입니다.  
   
  `pIndex`  
- HRESULT 값이 s_ok이 고에 대 한 인덱스 `pHandles` 신호를 받은 핸들에 대 한 합니다.  
+ HRESULT 값이 인덱스 S_OK `pHandles` 신호를 받은 핸들에 대 한 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugApplication110 인터페이스](../../winscript/reference/idebugapplication110-interface.md)

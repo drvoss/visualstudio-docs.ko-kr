@@ -1,29 +1,27 @@
 ---
 title: 성능 데이터 파일을 사용하여 기호 정보 저장 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - packsymbols, in profiling tools reports
 - profiling tools, packsymbols
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5a485baaa1fdeab4a0d4c61b82f5381a931ac85
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0bf78c94f8982af78d0f393c9cb5b878bef27d87
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897188"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939530"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>성능 데이터 파일을 사용하여 기호 정보 저장
 
 Visual Studio IDE를 사용하여 파일을 분석하는 경우 VSP 파일을 다른 컴퓨터로 이동하려면 보고서 파일에서 기호를 저장 또는 ‘직렬화’하기 위한 성능 프로젝트 설정을 지정해야 합니다. 이렇게 하면 보고서 파일의 크기가 증가합니다. 기호를 serialize해야 하는 이유는 다음의 두 가지입니다.
 
-- 대상 어셈블리가 임시 저장소의 해당 위치에서 손실되기 전에 성능 보고서에 코드 기호를 포함하기 위해
+- 대상 어셈블리가 임시 스토리지의 해당 위치에서 손실되기 전에 성능 보고서에 코드 기호를 포함합니다.
 
 - 기호를 유지하여 성능 보고서를 프로파일링된 컴퓨터에서 이식할 수 있도록 하고, 다른 기호를 사용할 수 있는 다른 컴퓨터에서 분석을 위해 보고서를 여는 경우 같은 정보가 출력되도록 하기 위해
 
@@ -63,6 +61,6 @@ VsPerfReport -packsymbols -summary:all filename.vsp
 
 ## <a name="see-also"></a>참고 항목
 
-[성능 도구 데이터 저장 및 내보내기](../profiling/saving-and-exporting-performance-tools-data.md)  
-[방법: Windows 기호 정보 참조](../profiling/how-to-reference-windows-symbol-information.md)  
+[성능 도구 데이터 저장 및 내보내기](../profiling/saving-and-exporting-performance-tools-data.md)
+[방법: Windows 기호 정보 참조](../profiling/how-to-reference-windows-symbol-information.md)
 [VSPerfReport](../profiling/vsperfreport.md)

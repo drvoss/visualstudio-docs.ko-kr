@@ -1,8 +1,6 @@
 ---
-title: '방법: CPU 카운터 데이터 수집 | Microsoft 문서'
-ms.custom: ''
+title: '방법: CPU 카운터 데이터 수집 | Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.cpucounters
@@ -11,15 +9,15 @@ helpviewer_keywords:
 - performance tools, portable CPU counters
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d5bb2d554ee67a4a2c83decba017e9a1f0fe1e9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c607263c6b6f6472258aaeab1c3187efaf30a120
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973983"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>방법: CPU 카운터 데이터 수집
 
@@ -62,7 +60,7 @@ CPU 이벤트 카운터는 하드웨어 관련 성능 데이터를 수집하는 
 
 ## <a name="see-also"></a>참고 항목
 
-[성능 세션 구성](../profiling/configuring-performance-sessions.md)  
-[성능 세션 속성](../profiling/performance-session-properties.md)  
-[CPU 및 Windows 카운터](../profiling/cpu-and-windows-counters.md)  
+[성능 세션 구성](../profiling/configuring-performance-sessions.md)
+[성능 세션 속성](../profiling/performance-session-properties.md)
+[CPU 및 Windows 카운터](../profiling/cpu-and-windows-counters.md)
 [방법: 샘플링 이벤트 선택](../profiling/how-to-choose-sampling-events.md)

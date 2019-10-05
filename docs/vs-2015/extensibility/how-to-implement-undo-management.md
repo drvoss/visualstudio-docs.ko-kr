@@ -1,26 +1,21 @@
 ---
 title: '방법: 실행 취소 관리 구현 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - undo management
 ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f7eb3e3a1bbda905b2f5c5819835b10513d444fb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0f3d56ae02718f5dfdf373eeeb6aff774d11931e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435950"
 ---
 # <a name="how-to-implement-undo-management"></a>방법: 실행 취소 관리 구현
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +29,9 @@ ms.locfileid: "51806102"
   
 #### <a name="to-support-undo-management-for-a-single-view-editor"></a>단일 뷰 편집기에 대 한 실행 취소 관리를 지원 하려면  
   
-1.  호출 `QueryInterface` 에 `IServiceProvider` 인터페이스에 대 한 창 프레임 `IOleUndoManager`, 실행 취소 관리자에 액세스 하려면 문서 보기 개체에서 (`IID_IOLEUndoManager`).  
+1. 호출 `QueryInterface` 에 `IServiceProvider` 인터페이스에 대 한 창 프레임 `IOleUndoManager`, 실행 취소 관리자에 액세스 하려면 문서 보기 개체에서 (`IID_IOLEUndoManager`).  
   
-2.  뷰는 창 프레임에 배치 됩니다, 경우 호출 하는 데 사용할 수 있는 사이트 포인터를 가져옵니다 `QueryInterface` 에 대 한 `IServiceProvider`합니다.  
+2. 뷰는 창 프레임에 배치 됩니다, 경우 호출 하는 데 사용할 수 있는 사이트 포인터를 가져옵니다 `QueryInterface` 에 대 한 `IServiceProvider`합니다.  
   
 ## <a name="cases-where-an-editor-supports-multiple-views"></a>여기서 편집기에서는 여러 보기를 사용할 경우  
  문서 및 뷰 분리에 있는 경우 다음 일반적으로 하나의 실행 취소 관리자가 문서 자체와 연결 된입니다. 모든 실행 취소 단위 문서 데이터 개체와 연결 된 하나의 실행 취소 관리자에 배치 됩니다.  
@@ -53,17 +48,17 @@ ms.locfileid: "51806102"
   
 3. 릴레이 하 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 하 고 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 에 저장 된 호출 `IOleCommandTarget` 다음 StandardCommandSet97 명령에 대 한 인터페이스:  
   
-   -   cmdidUndo  
+   - cmdidUndo  
   
-   -   cmdidMultiLevelUndo  
+   - cmdidMultiLevelUndo  
   
-   -   cmdidRedo  
+   - cmdidRedo  
   
-   -   cmdidMultiLevelRedo  
+   - cmdidMultiLevelRedo  
   
-   -   cmdidMultiLevelUndoList  
+   - cmdidMultiLevelUndoList  
   
-   -   cmdidMultiLevelRedoList  
+   - cmdidMultiLevelRedoList  
   
 4. 호출 `QueryInterface` 대 `IOleUndoManager` 에 대 한 `IID_IVsChangeTrackingUndoManager`합니다. 에 대 한 포인터를 저장 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>합니다.  
   
@@ -82,10 +77,9 @@ ms.locfileid: "51806102"
    `OleUndoManager` 클래스 하나의 실행 취소 스택 인스턴스를 나타냅니다. 따라서 취소 또는 다시 실행에 대 한 추적 되는 데이터 엔터티 당 하나의 실행 취소 관리자 개체가 됩니다.  
   
 > [!NOTE]
->  실행 취소 관리자 개체는 텍스트 편집기에서 광범위 하 게 사용 하는 동안 구성 요소인 일반 있는 텍스트 편집기에 대 한 특정 지원 되지 않습니다. 여러 번 실행 취소 또는 다시 실행을 지원 하려는 경우에 이렇게 하려면이 개체를 사용할 수 있습니다.  
+> 실행 취소 관리자 개체는 텍스트 편집기에서 광범위 하 게 사용 하는 동안 구성 요소인 일반 있는 텍스트 편집기에 대 한 특정 지원 되지 않습니다. 여러 번 실행 취소 또는 다시 실행을 지원 하려는 경우에 이렇게 하려면이 개체를 사용할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject>   
- [방법: 실행 취소 스택 정리](../extensibility/how-to-clear-the-undo-stack.md)
-
+ [방법: 실행 취소 스택 지우기](../extensibility/how-to-clear-the-undo-stack.md)

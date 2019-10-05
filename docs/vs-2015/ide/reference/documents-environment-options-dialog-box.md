@@ -1,14 +1,9 @@
 ---
 title: 옵션 대화 상자, 환경, 문서 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.Environment.Documents
 - VS.ToolsOptionsPages.Environment.Documents
@@ -37,22 +32,21 @@ ms.assetid: 4e3ccf1b-cd68-4db6-9470-710c911b47fc
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ad1e397b67d04b8e8233a568b675eaf24a29bf59
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a6616593f01218b4a7e15809f841ee3cb4e7edb0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246209"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700792"
 ---
 # <a name="documents-environment-options-dialog-box"></a>옵션 대화 상자, 환경, 문서
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **옵션** 대화 상자의 이 페이지를 사용하여 IDE(통합 개발 환경)에서 문서 표시를 제어하고 문서 및 파일에 대한 외부 변경 내용을 관리합니다. 이 대화 상자에 액세스하려면 **도구** 메뉴에서 **옵션**을 클릭하고 **환경** 노드에서 **문서**를 선택합니다. **문서**가 목록에 나타나지 않으면 **옵션** 대화 상자에서 **모든 설정 표시**를 선택합니다.  
   
 > [!NOTE]
->  대화 상자에서 사용할 수 있는 옵션과 메뉴 명령의 이름 및 위치는 실제 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
+> 대화 상자에서 사용할 수 있는 옵션과 메뉴 명령의 이름 및 위치는 실제 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
   
  **저장되면 현재 문서 창 다시 사용**  
  이 옵션을 선택하면 저장된 현재 문서가 닫히고 새 문서가 같은 창에서 열립니다. 현재 문서가 저장되지 않은 경우에는 문서가 열려 있고 새 문서가 별도의 창에서 열립니다. 이 옵션을 선택 취소하면 새 문서가 항상 별도의 창에서 열립니다.  
@@ -60,7 +54,7 @@ ms.locfileid: "49246209"
  다중 문서 잘라내기 및 붙여넣기 작업을 자주 수행하지 않는 경우 작업 공간에서 열린 문서 및 창 수를 최소화하려면 이 옵션을 시도하세요.  
   
  **파일이 환경 외부에서 변경되면 검색**  
- 이 옵션을 선택하면 IDE 외부에서 편집기를 통해 적용된 열린 파일의 변경 내용에 대한 메시지가 제공됩니다. 메시지를 통해 저장소에서 파일을 다시 로드할 수 있습니다.  
+ 이 옵션을 선택하면 IDE 외부에서 편집기를 통해 적용된 열린 파일의 변경 내용에 대한 메시지가 제공됩니다. 메시지를 통해 스토리지에서 파일을 다시 로드할 수 있습니다.  
   
  **저장되면 변경 내용 자동 로드**  
  **파일이 환경 외부에서 변경되면 검색**이 선택되고 IDE의 열린 파일이 IDE 외부에서 변경된 경우 기본적으로 경고 메시지가 생성됩니다. 이 옵션을 사용하도록 설정하면 경고가 나타나지 않고 외부 변경 내용을 선택하도록 문서가 IDE에 다시 로드됩니다.  
@@ -81,7 +75,7 @@ ms.locfileid: "49246209"
  **솔루션 탐색기**에서 **기타 파일** 노드를 표시하려면 이 옵션을 선택합니다. 기타 파일은 프로젝트나 솔루션과 연결되지 않은 파일이지만, 편의를 위해 **솔루션 탐색기**에 표시될 수 있습니다.  
   
 > [!NOTE]
->  활성 웹 응용 프로그램에 포함되지 않은 웹 문서의 경우 **파일** 메뉴에서 **브라우저에서 보기** 명령을 사용하도록 설정하려면 이 옵션을 선택합니다.  
+> 활성 웹 애플리케이션에 포함되지 않은 웹 문서의 경우 **파일** 메뉴에서 **브라우저에서 보기** 명령을 사용하도록 설정하려면 이 옵션을 선택합니다.  
   
  **\<** *n* **>기타 파일 프로젝트에 저장된 항목**  
  **솔루션 탐색기**의 **기타 파일** 폴더에서 유지할 파일 수를 지정합니다. 이러한 파일은 편집기에서 더 이상 열려 있지 않은 경우에도 나열됩니다. 0~256의 정수를 지정할 수 있습니다. 기본 개수는 0개입니다.  
@@ -95,6 +89,3 @@ ms.locfileid: "49246209"
  [옵션 대화 상자, 환경](../../ide/reference/environment-options-dialog-box.md)   
  [기타 파일](../../ide/reference/miscellaneous-files.md)   
  [텍스트 찾기 및 바꾸기](../../ide/finding-and-replacing-text.md)
-
-
-

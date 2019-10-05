@@ -2,7 +2,6 @@
 title: SCRIPT_E_PROPAGATE 오류 코드 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,15 +11,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d6fdb86f6b4cd6d3175d33d8adcee619ab4bf682
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e6b1feac19be5f6506227b60515df70d9a737a2a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840287"
 ---
 # <a name="scriptepropagate-error-code"></a>SCRIPT_E_PROPAGATE 오류 코드
-다른 스레드에서 될 수 있는 호출자에 게 스크립트 오류를 전파 하는 중입니다. 호스트는 오류 코드는 호출자에 게 전달 해야 합니다.  
+스크립트 오류를 다른 스레드에서 될 수 있는 호출자에 게 전파 됩니다. 호스트는 호출자에 게 오류 코드를 전달 해야 합니다.  
   
 ## <a name="syntax"></a>구문  
   

@@ -1,21 +1,19 @@
 ---
 title: '방법: 3D 모델에 셰이더 적용'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: a3877bd6-abd8-4a9d-842c-6848b6c2f335
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12fc18532888dbf688c3fcc0e5695edfaf47d953
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 896cc39ae3e9f53d96a30f6485c40afc8259e270
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62845050"
 ---
 # <a name="how-to-apply-a-shader-to-a-3d-model"></a>방법: 3D 모델에 셰이더 적용
 

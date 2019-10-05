@@ -2,7 +2,6 @@
 title: 'Ijsdebugproperty:: Getpropertyinfo 메서드 | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,19 +15,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a98f0ec3c4b0cdde1432402fce16c7383947e309
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0769bf137845655c3fe0bf87bf0a57c6c6cbc09e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728563"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977773"
 ---
 # <a name="ijsdebugpropertygetpropertyinfo-method"></a>IJsDebugProperty::GetPropertyInfo 메서드
 이 개체에 대 한 정보를 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetPropertyInfo(  
    UINT nRadix,  
    JsDebugPropertyInfo *pPropertyInfo  
@@ -40,7 +39,7 @@ HRESULT GetPropertyInfo(
  [in] 사용할 기 수입니다.  
   
  `pPropertyInfo`  
- [out] 개체에 대 한 정보입니다.  
+ [out] 개체에 대 한 정보를 제공 합니다.  
   
 ## <a name="return-value"></a>반환 값  
   

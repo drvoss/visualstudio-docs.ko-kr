@@ -1,14 +1,9 @@
 ---
 title: 'CA1300: MessageBoxOptions를 지정 합니다. | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - SpecifyMessageBoxOptions
 - CA1300
@@ -20,14 +15,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5d1b5e94ab05a5aca551cf0979aa475824a2e8fe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a7d24298821895a8bbbe9d3743556007abe17c72
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825480"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686869"
 ---
-# <a name="ca1300-specify-messageboxoptions"></a>CA1300: MessageBoxOptions를 지정하십시오.
+# <a name="ca1300-specify-messageboxoptions"></a>CA1300: MessageBoxOptions를 지정하세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -56,7 +51,4 @@ ms.locfileid: "49825480"
  [!code-vb[FxCop.Globalization.SpecifyMBOptions#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Globalization.SpecifyMBOptions/vb/FxCop.Globalization.SpecifyMBOptions.vb#1)]
 
 ## <a name="see-also"></a>참고 항목
- <xref:System.Resources.ResourceManager?displayProperty=fullName> [데스크톱 앱의 리소스](http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)
-
-
-
+ <xref:System.Resources.ResourceManager?displayProperty=fullName> [데스크톱 앱의 리소스](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)

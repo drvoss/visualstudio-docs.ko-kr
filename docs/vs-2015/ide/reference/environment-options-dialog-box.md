@@ -1,14 +1,9 @@
 ---
 title: 옵션 대화 상자, 환경 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.OptionsDialog.Environment
 - VS.ToolsOptionsPages.Environment
@@ -16,27 +11,26 @@ ms.assetid: 3f463cf0-734b-4fdc-b4ff-b47f9bb99069
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f235e79b7173ec37e5ecfdf2dd3f0d1d2ae1ea40
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5880dbeb9f3f49f990a923fd48c27dd6167d59c8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257675"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692206"
 ---
 # <a name="environment-options-dialog-box"></a>옵션 대화 상자, 환경
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **옵션** 대화 상자의 **환경** 폴더에 있는 페이지를 사용하여 IDE(통합 개발 환경)에서 특정 요소의 표시 및 작동 방법을 설정할 수 있습니다. 메뉴 모음의 **도구**, **옵션**을 선택한 다음 **환경**을 선택하여 환경 페이지에 액세스할 수 있습니다.  
   
 > [!NOTE]
->  컴퓨터에 나타나는 대화 상자와 메뉴 명령은 활성 설정 및 사용 중인 Visual Studio 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
+> 컴퓨터에 나타나는 대화 상자와 메뉴 명령은 활성 설정 및 사용 중인 Visual Studio 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
   
-|자세한 방법|보기|  
+|자세한 방법|참조|  
 |----------------------------------|---------|  
 |IDE의 창, 메뉴 및 기타 요소의 모양과 동작을 사용자 지정합니다.|[옵션 대화 상자, 환경, 일반](../../ide/reference/general-environment-options-dialog-box.md)|  
-|추가 기능에 대한 보안을 지정합니다.|[Add-in 보안, 환경, 옵션 대화 상자](http://msdn.microsoft.com/library/f95aa7af-70a5-4323-abe5-91bd6d264f4e)|  
+|추가 기능에 대한 보안을 지정합니다.|[옵션 대화 상자, 환경, 추가 기능 보안](https://msdn.microsoft.com/library/f95aa7af-70a5-4323-abe5-91bd6d264f4e)|  
 |파일의 자동 저장 및 복원에 대한 설정을 변경합니다.|[옵션 대화 상자, 환경, 자동 복구](../../ide/reference/autorecover-environment-options-dialog-box.md)|  
 |기타 파일의 동작을 포함하여 문서 표시 및 관리 설정을 지정합니다.|[옵션 대화 상자, 환경, 문서](../../ide/reference/documents-environment-options-dialog-box.md)|  
 |업데이트가 발생하는 방법 및 확장이 관리되는 방법을 사용자 지정합니다.|[옵션 대화 상자, 환경, 확장 및 업데이트](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|  
@@ -54,6 +48,3 @@ ms.locfileid: "49257675"
   
 ## <a name="see-also"></a>참고 항목  
  [옵션 대화 상자](../../ide/reference/options-dialog-box-visual-studio.md)
-
-
-

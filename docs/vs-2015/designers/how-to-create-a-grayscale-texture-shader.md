@@ -1,25 +1,20 @@
 ---
-title: '방법: 회색조 질감 셰이더 만들기 | Microsoft 문서'
-ms.custom: ''
+title: '방법: 회색조 질감 셰이더 만들기 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 79181d81-44af-445e-9a18-03483dd70260
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 046ae16670edaebb44986dee34ea086b4129a0a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b43e7806ebf6d67300fdee7be165c7cd745c4acb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431713"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>방법: 회색조 질감 셰이더 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "49922343"
   
 #### <a name="to-create-a-grayscale-texture-shader"></a>회색조 질감 셰이더를 만들려면  
   
-1. [방법: 기본 질감 셰이더 만들기](../designers/how-to-create-a-basic-texture-shader.md)에 설명된 대로 기본 질감 셰이더를 만듭니다.  
+1. [방법: 기본 질감 셰이더 만들기](../designers/how-to-create-a-basic-texture-shader.md)합니다.  
   
 2. **최종 색**노드의 **RGB** 터미널에서 **질감 샘플** 노드의 **RGB** 터미널 연결을 끊습니다. **선택** 모드에서 **질감 샘플** 노드의 **RGB** 터미널을 선택하고 **연결 끊기**를 선택합니다. 그러면 다음 단계에서 추가되는 노드에 대한 공간이 생깁니다.  
   
@@ -42,25 +37,22 @@ ms.locfileid: "49922343"
 4. **흐리기** 노드를 사용하여 회색조 값을 계산합니다. **선택** 모드에서 **질감 샘플** 노드의 **RGB** 터미널을 **흐리기** 노드의 **RGB** 터미널로 이동합니다.  
   
    > [!NOTE]
-   >  기본적으로 **흐리기** 노드는 입력 코드의 채도를 완전히 감소시키고 회색조 변환을 위해 표준 광도 가중치를 사용합니다. **광도** 속성의 값을 변경하거나 입력 색의 채도를 부분적으로만 감소시켜서 **흐리기** 노드의 동작 방식을 변경할 수 있습니다. 입력 색의 채도를 부분적으로 감소시키려면 **흐리기** 노드의 **백분율** 터미널에 [0,1) 범위의 스칼라 값을 제공합니다.  
+   > 기본적으로 **흐리기** 노드는 입력 코드의 채도를 완전히 감소시키고 회색조 변환을 위해 표준 광도 가중치를 사용합니다. **광도** 속성의 값을 변경하거나 입력 색의 채도를 부분적으로만 감소시켜서 **흐리기** 노드의 동작 방식을 변경할 수 있습니다. 입력 색의 채도를 부분적으로 감소시키려면 **흐리기** 노드의 **백분율** 터미널에 [0,1) 범위의 스칼라 값을 제공합니다.  
   
 5. 회색조 색 값을 최종 색에 연결합니다. **흐리기** 노드의 **출력** 터미널을 **최종 색** 노드의 **RGB** 터미널로 이동합니다.  
   
    다음 그림은 정육면체에 적용된 셰이더의 완료된 셰이더 그래프 및 미리 보기를 보여 줍니다.  
   
 > [!NOTE]
->  이 그림에서 평면을 미리 보기 셰이프로 사용되고 셰이더의 효과를 더욱 효과적으로 표시하기 위해 질감이 지정되었습니다.  
+> 이 그림에서 평면을 미리 보기 셰이프로 사용되고 셰이더의 효과를 더욱 효과적으로 표시하기 위해 질감이 지정되었습니다.  
   
  ![셰이더 그래프 및 효과 미리 보기](../designers/media/digit-grayscale-effect.png "Digit-Grayscale-Effect")  
   
  일부 셰이더의 경우 특정 도형을 사용하면 미리 보기가 더 잘 표시될 수 있습니다. 셰이더 디자이너에서 셰이더를 미리 보는 방법에 대한 자세한 내용은 [셰이더 디자이너](../designers/shader-designer.md)를 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
- [방법: 3D 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+ [방법: 3 차원 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [방법: 셰이더 내보내기](../designers/how-to-export-a-shader.md)   
  [이미지 편집기](../designers/image-editor.md)   
  [셰이더 디자이너](../designers/shader-designer.md)   
  [셰이더 디자이너 노드](../designers/shader-designer-nodes.md)
-
-
-

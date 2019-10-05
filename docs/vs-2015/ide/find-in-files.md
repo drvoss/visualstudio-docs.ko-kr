@@ -1,14 +1,9 @@
 ---
 title: 파일에서 찾기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.findreplace.findinfiles
 - vs.findinfiles
@@ -25,18 +20,18 @@ ms.assetid: 989e0737-46d7-4474-8453-fad52a74669d
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4529b44014b209bdef1fc919ac413b61d77407c1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e1d9c456c22b4d3003d9435f813a4c3c1dc47881
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383381"
 ---
 # <a name="find-in-files"></a>파일에서 찾기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-파일 * *에서 찾기를 사용 하면 지정된 된 파일 집합을 검색할 수 있습니다. 찾은 일치 항목과 수행된 작업이 **결과 옵션**에서 선택된 **결과 찾기** 창에 나열됩니다.  
+파일**에서 찾기를 사용하여 지정된 파일 집합을 검색할 수 있습니다. 찾은 일치 항목과 수행된 작업이 **결과 옵션**에서 선택된 **결과 찾기** 창에 나열됩니다.  
   
  다음 방법 중 하나를 사용하여 **찾기 및 바꾸기** 창에서 **파일에서 찾기**를 표시할 수 있습니다.  
   
@@ -49,7 +44,7 @@ ms.locfileid: "49902141"
    찾기 작업을 취소하려면 Ctrl+Break를 누릅니다.  
   
 > [!NOTE]
->  찾기 및 바꾸기 도구는 `Hidden` 또는 `System` 특성이 설정된 디렉터리를 검색하지 않습니다.  
+> 찾기 및 바꾸기 도구는 `Hidden` 또는 `System` 특성이 설정된 디렉터리를 검색하지 않습니다.  
   
 ## <a name="find-what"></a>찾을 내용  
  새 텍스트 문자열이나 식을 검색하려면 상자에 지정합니다. 가장 최근에 검색한 20개 문자열 중 하나를 검색하려면 목록을 열고 검색하려는 문자열을 선택합니다. 검색 문자열에 하나 이상의 정규식을 사용하려는 경우 인접한 **식 작성기** 단추를 선택합니다. 자세한 내용은 [Visual Studio에서 정규식 사용](../ide/using-regular-expressions-in-visual-studio.md)을 참조하세요.  
@@ -58,10 +53,10 @@ ms.locfileid: "49902141"
  **찾는 위치** 드롭다운 목록에서 선택한 옵션은 **파일에서 찾기**가 현재 활성 파일에서만 검색하는지 또는 특정 폴더 내에 저장된 모든 파일에서 검색하는지를 결정합니다. 목록에서 검색 범위를 선택하거나 **찾아보기(...)** 단추를 클릭하여 **검색 폴더 선택** 대화 상자를 표시하고 고유한 디렉터리 집합을 입력합니다. **찾는 위치** 상자에 경로를 직접 입력할 수도 있습니다.  
   
 > [!WARNING]
->  **전체 솔루션** 또는 **현재 프로젝트** 옵션을 사용할 경우 프로젝트 및 솔루션 파일이 검색되지 않습니다. 프로젝트 파일을 확인하려는 경우 검색 폴더를 선택합니다.  
+> **전체 솔루션** 또는 **현재 프로젝트** 옵션을 사용할 경우 프로젝트 및 솔루션 파일이 검색되지 않습니다. 프로젝트 파일을 확인하려는 경우 검색 폴더를 선택합니다.  
   
 > [!NOTE]
->  선택한 **찾는 위치** 옵션으로 인해 소스 코드 제어에서 체크 아웃한 파일이 검색되는 경우 로컬 컴퓨터에 다운로드된 파일 버전만 검색됩니다.  
+> 선택한 **찾는 위치** 옵션으로 인해 소스 코드 제어에서 체크 아웃한 파일이 검색되는 경우 로컬 컴퓨터에 다운로드된 파일 버전만 검색됩니다.  
   
 ## <a name="include-subfolders"></a>하위 폴더 포함  
  **찾는 위치** 폴더의 하위 폴더가 검색되도록 지정합니다.  
@@ -102,6 +97,3 @@ ms.locfileid: "49902141"
  [텍스트 찾기 및 바꾸기](../ide/finding-and-replacing-text.md)   
  [파일에서 바꾸기](../ide/replace-in-files.md)   
  [Visual Studio 명령](../ide/reference/visual-studio-commands.md)
-
-
-

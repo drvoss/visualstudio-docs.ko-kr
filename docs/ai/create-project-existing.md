@@ -1,11 +1,18 @@
 ---
-ms.technology: vs-ai-tools
-ms.openlocfilehash: 7e09023659b1f44af1951e157878d78b641be3f3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+title: 기존 코드로 AI 프로젝트를 만듭니다.
+author: lisawong19
+ms.author: liwong
+manager: routlaw
+ms.date: 11/13/2017
+ms.topic: conceptual
+ms.workload:
+- multiple
+ms.openlocfilehash: 57003538072c372ce877c40db76922d6eed7397d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433807"
 ---
 # <a name="create-an-ai-project-from-existing-code"></a>기존 코드로 AI 프로젝트를 만듭니다.
 
@@ -24,7 +31,7 @@ ms.locfileid: "49915947"
 
    ![기존 코드의 새 프로젝트, 2단계](media/create-project-existing/azurebatch-newproject.png)
 
-   기존 코드가 Azure Machine Learning 프로젝트의 일부인 경우 중요한 Azure Machine Learning 구성 정보(예: 실험 계정, 작업 영역, 사용할 계산 컨텍스트 등)를 성공적으로 전환하도록 **Azure Machine Learning 폴더임**을 선택합니다.
+   기존 코드가 Azure Machine Learning 프로젝트의 일부인 경우 중요한 Azure Machine Learning 구성 정보(예: 실험 계정, 작업 영역, 사용할 컴퓨팅 컨텍스트 등)를 성공적으로 전환하도록 **Azure Machine Learning 폴더임**을 선택합니다.
 
 4. 시작 파일을 설정하려면 **솔루션 탐색기**에서 파일을 찾고 마우스 오른쪽 단추로 클릭한 다음, **시작 파일로 설정**을 선택합니다.
 

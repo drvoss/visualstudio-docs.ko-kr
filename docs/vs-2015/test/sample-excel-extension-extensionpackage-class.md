@@ -1,24 +1,19 @@
 ---
-title: '샘플 Excel 확장: ExtensionPackage 클래스 | Microsoft 문서'
-ms.custom: ''
+title: '샘플 Excel 확장: ExtensionPackage 클래스 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 6e45410a-1819-4d54-ac21-7280152f7e3a
 caps.latest.revision: 11
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 64e6d838172325bb00cdd8a28ef6adb6d1a345b5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 668913d231115e955cc50df10de045eab3d4ac92
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189471"
 ---
 # <a name="sample-excel-extension-extensionpackage-class"></a>샘플 Excel 확장: ExtensionPackage 클래스
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,6 +41,3 @@ ms.locfileid: "49286015"
 ## <a name="see-also"></a>참고 항목  
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>   
  [Microsoft Excel을 지원하도록 코딩된 UI 테스트 및 작업 기록 확장](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
-
-
-

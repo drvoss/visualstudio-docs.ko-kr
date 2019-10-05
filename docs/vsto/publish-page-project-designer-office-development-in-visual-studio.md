@@ -1,5 +1,5 @@
 ---
-title: 게시 페이지, 프로젝트 디자이너 (Visual Studio에서 Office 개발)
+title: 게시 페이지, 프로젝트 디자이너 (Office 개발)
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -11,17 +11,17 @@ helpviewer_keywords:
 - deploying applications [Office development in Visual Studio]
 - publishing, Office solutions
 - Property Pages dialog box, Publish [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 63094c3bdf8bd2787f11dd6fd6818ea265d781f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 86d575b254209b547504ea6d746d03853990bfb4
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966001"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328994"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>게시 페이지, 프로젝트 디자이너 (Visual Studio에서 Office 개발)
   **프로젝트 디자이너** 의 **게시** 페이지를 통해 배포를 위한 속성을 구성합니다.
@@ -29,14 +29,14 @@ ms.locfileid: "53966001"
  이 페이지에 액세스하려면 **솔루션 탐색기**에서 프로젝트를 선택한 다음 **프로젝트** 메뉴에서 *Projectname* **속성**을 선택합니다. **게시** 페이지가 표시되지 않으면 **게시** 탭을 선택합니다.
 
 > [!NOTE]
->  게시 위치를 **게시 마법사**에서 설정할 수도 있습니다. 자세한 내용은 [방법: ClickOnce를 사용 하 여 Office 솔루션 게시](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)합니다.
+> 게시 위치를 **게시 마법사**에서 설정할 수도 있습니다. 자세한 내용은 [방법: ClickOnce를 사용 하 여 Office 솔루션 게시](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)합니다.
 
 ## <a name="uielement-list"></a>UI 요소 목록
  **폴더 위치 게시 (웹 사이트, ftp 서버 또는 파일 경로)** 필요 합니다.
 
  게시 폴더 위치는 Visual Studio가 빌드에서 매니페스트, 어셈블리 및 기타 파일과 같은 솔루션 파일을 복사하는 디렉터리입니다. 이 디렉터리에 쓰기 권한이 있어야 합니다.
 
- 옵션에는 로컬 컴퓨터, UNC 파일 공유 또는 HTTP/HTTPS 웹 사이트가 포함됩니다. 경로 로컬 일 수 있습니다 (*c:\foldername\publishfolder*), 상대 (*게시\\*), 또는 정규화 된 위치 (*\\\servername\foldername* 또는 http://<em>servername/foldername</em>).
+ 옵션에는 로컬 컴퓨터, UNC 파일 공유 또는 HTTP/HTTPS 웹 사이트가 포함됩니다. 경로 로컬 일 수 있습니다 (*c:\foldername\publishfolder*), 상대 (*게시\\* ), 또는 정규화 된 위치 ( *\\\servername\foldername* 또는 http://<em>servername/foldername</em>).
 
  게시 위치는 기본적으로 *http://localhost/projectname/* IIS가 설치 되어 있는 경우 또는 *게시\\*  IIS가 설치 되어 있지 않은 경우 디렉터리입니다.
 
@@ -44,7 +44,7 @@ ms.locfileid: "53966001"
 
  설치 폴더 URL은 최종 사용자가 사용자 지정을 설치하는 디렉터리입니다. 또한 솔루션에서 업데이트를 확인하는 데 사용하는 경로이기도 합니다. 경로는 게시 폴더 위치와 동일할 수 있지만 이것이 요구 사항은 아닙니다.
 
- 옵션에는 로컬 컴퓨터, UNC 파일 공유 또는 HTTP/HTTPS 웹 사이트가 포함됩니다. 경로 로컬 일 수 있습니다 (*c:\foldername\publishfolder*), 상대 (*게시\\*), 또는 정규화 된 위치 (*\\\servername\foldername* 또는 http://<em>servername/foldername</em>). 모든 HTTP/HTTPS 위치는 US ASCII 문자로 만들어야 합니다. 유니코드 문자는 지원되지 않습니다.
+ 옵션에는 로컬 컴퓨터, UNC 파일 공유 또는 HTTP/HTTPS 웹 사이트가 포함됩니다. 경로 로컬 일 수 있습니다 (*c:\foldername\publishfolder*), 상대 (*게시\\* ), 또는 정규화 된 위치 ( *\\\servername\foldername* 또는 http://<em>servername/foldername</em>). 모든 HTTP/HTTPS 위치는 US ASCII 문자로 만들어야 합니다. 유니코드 문자는 지원되지 않습니다.
 
  설치 경로가 설정된 경우 사용자가 사용자 지정을 설치하려면 해당 위치에 사용자 지정 파일이 있어야 합니다. 최종 배포 위치를 알고 있는 경우에만 위치를 설정해야 합니다.
 
@@ -84,9 +84,9 @@ ms.locfileid: "53966001"
 
 - VSTO 추가 기능 로드 동작
 
-  -   시작 시 로드: Office 애플리케이션이 시작될 때 VSTO 추가 기능이 로드되도록 지정합니다.
+  - 시작 시 로드: Office 애플리케이션이 시작될 때 VSTO 추가 기능이 로드되도록 지정합니다.
 
-  -   요청 시 로드: 사용자가 VSTO 추가 기능의 기능을 사용하는 UI 요소를 클릭할 때처럼 VSTO 추가 기능이 애플리케이션에서 필요로 할 때 로드되도록 지정합니다.
+  - 요청 시 로드: 사용자가 VSTO 추가 기능의 기능을 사용하는 UI 요소를 클릭할 때처럼 VSTO 추가 기능이 애플리케이션에서 필요로 할 때 로드되도록 지정합니다.
 
   **게시 언어** 이 옵션의 Microsoft 소프트웨어 사용 조건에 언어를 설정 하 고 필수 조건 목록에서 언어 팩을 포함 합니다. 사용자 지정의 언어에는 영향을 주지 않습니다. 설치 프로그램의 언어는 Visual Studio의 설치된 언어에 의해 결정됩니다.
 

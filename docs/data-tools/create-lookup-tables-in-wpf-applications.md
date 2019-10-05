@@ -1,5 +1,5 @@
 ---
-title: WPF 응용 프로그램에서 조회 테이블 만들기
+title: WPF 애플리케이션에서 조회 테이블 만들기
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,19 +13,17 @@ helpviewer_keywords:
 ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c76f769234d8b8c14ccd44d8c2cf4c669bf48ffd
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: MTE95
+ms.openlocfilehash: 1631f1b93f79c21914f990620f7e0047c301163f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567821"
 ---
-# <a name="create-lookup-tables-in-wpf-applications"></a>WPF 응용 프로그램에서 조회 테이블 만들기
+# <a name="create-lookup-tables-in-wpf-applications"></a>WPF 애플리케이션에서 조회 테이블 만들기
 
 용어 *조회 표* (라고도 *조회 바인딩을*) 다른 테이블의 외래 키 필드의 값을 기반으로 하는 하나의 데이터 테이블의에서 정보를 표시 하는 컨트롤에 설명 합니다. 부모 테이블의 기본 노드 드래그 하 여 조회 테이블을 만들 수도 있고 개체를 **데이터 원본** 열 또는 관련된 자식 테이블의 속성에 이미 바인딩된 컨트롤을 창입니다.
 
@@ -33,49 +31,49 @@ ms.locfileid: "52305483"
 
 ## <a name="to-create-a-lookup-table"></a>조회 테이블을 만들려면
 
-1.  프로젝트에 관련 된 데이터를 사용 하 여 데이터 원본의 다음 유형 중 하나를 추가 합니다.
+1. 프로젝트에 관련 된 데이터를 사용 하 여 데이터 원본의 다음 유형 중 하나를 추가 합니다.
 
-    -   데이터 집합 또는 엔터티 데이터 모델입니다.
+    - 데이터 집합 또는 엔터티 데이터 모델입니다.
 
-    -   WCF 데이터 서비스에서 WCF 서비스 또는 웹 서비스입니다. 자세한 내용은 [방법: 데이터 서비스에 연결할](../data-tools/how-to-connect-to-data-in-a-service.md)합니다.
+    - WCF 데이터 서비스에서 WCF 서비스 또는 웹 서비스입니다. 자세한 내용은 [방법: 서비스의 데이터에 연결](../data-tools/how-to-connect-to-data-in-a-service.md)을 참조하세요.
 
-    -   개체 자세한 내용은 [Visual Studio에서 개체를 바인딩할](bind-objects-in-visual-studio.md)합니다.
+    - 개체. 자세한 내용은 [Visual Studio에서 개체를 바인딩할](bind-objects-in-visual-studio.md)합니다.
 
     > [!NOTE]
     > 조회 테이블을 만들려면 먼저 프로젝트에 대 한 데이터 원본으로 두 개의 관련된 테이블이 나 개체가 존재 해야 합니다.
 
-2.  열기는 **WPF 디자이너**, 디자이너 항목에 대 한 유효한 놓기 대상 컨테이너가 포함 되어 있는지 확인 합니다 **데이터 원본** 창입니다.
+2. 열기는 **WPF 디자이너**, 디자이너 항목에 대 한 유효한 놓기 대상 컨테이너가 포함 되어 있는지 확인 합니다 **데이터 원본** 창입니다.
 
      유효한 놓기 대상에 대 한 자세한 내용은 참조 하세요. [Visual Studio에서 데이터를 바인딩할 WPF 컨트롤](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)합니다.
 
-3.  데이터 **메뉴에서 데이터 소스 표시**를 클릭하여 데이터 소스** 창을 엽니다.
+3. **데이터** 메뉴에서 **데이터 원본 표시**를 클릭하여 **데이터 원본** 창을 엽니다.
 
-4.  노드를 확장 합니다 **데이터 원본** 창에서 부모 테이블 또는 개체와 관련 된 자식 테이블 또는 개체 표시 될 때까지 합니다.
+4. 노드를 확장 합니다 **데이터 원본** 창에서 부모 테이블 또는 개체와 관련 된 자식 테이블 또는 개체 표시 될 때까지 합니다.
 
     > [!NOTE]
     > 관련된 자식 테이블 또는 개체는 부모 테이블 또는 개체를 확장할 수 있는 자식 노드로 표시 되는 노드입니다.
 
-5.  자식 노드에 대 한 드롭다운 메뉴를 클릭 하 고 선택 **세부 정보**합니다.
+5. 자식 노드에 대 한 드롭다운 메뉴를 클릭 하 고 선택 **세부 정보**합니다.
 
-6.  자식 노드를 확장 합니다.
+6. 자식 노드를 확장 합니다.
 
-7.  자식 노드를 자식 및 부모 데이터를 연결 하는 항목에 대 한 드롭다운 메뉴를 클릭 합니다. (이 앞의 예제에는 **CustomerID** 노드.) 조회 바인딩을 지 원하는 컨트롤의 다음 형식 중 하나를 선택 합니다.
+7. 자식 노드를 자식 및 부모 데이터를 연결 하는 항목에 대 한 드롭다운 메뉴를 클릭 합니다. (이 앞의 예제에는 **CustomerID** 노드.) 조회 바인딩을 지 원하는 컨트롤의 다음 형식 중 하나를 선택 합니다.
 
-    -   **ComboBox**
+    - **ComboBox**
 
-    -   **ListBox**
+    - **ListBox**
 
-    -   **ListView**
+    - **ListView**
 
         > [!NOTE]
         > 경우는 **ListBox** 하거나 **ListView** 컨트롤이 없으면 목록에서 목록에 이러한 컨트롤을 추가할 수 있습니다. 정보를 참조 하세요 [데이터 소스 창에서 끌어올 때 만들 컨트롤 설정](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)합니다.
 
-    -   파생 되는 모든 사용자 지정 컨트롤 <xref:System.Windows.Controls.Primitives.Selector>합니다.
+    - 파생 되는 모든 사용자 지정 컨트롤 <xref:System.Windows.Controls.Primitives.Selector>합니다.
 
         > [!NOTE]
         > 사용자 지정 컨트롤의 컨트롤 목록에 추가 하는 방법에 대 한 정보 항목에 대해 선택할 수는 **데이터 원본** 창 참조 [데이터 소스 창에 사용자 지정 컨트롤을 추가할](../data-tools/add-custom-controls-to-the-data-sources-window.md)합니다.
 
-8.  자식 노드를 끌어 합니다 **데이터 원본** WPF 디자이너에서 컨테이너 창. (앞의 예제에서 자식 노드는 합니다 **주문** 노드.)
+8. 자식 노드를 끌어 합니다 **데이터 원본** WPF 디자이너에서 컨테이너 창. (앞의 예제에서 자식 노드는 합니다 **주문** 노드.)
 
      Visual Studio는 각 항목을 끌면에 대 한 새 데이터 바인딩된 컨트롤을 만드는 XAML을 생성 합니다. XAML도 새 추가 <xref:System.Windows.Data.CollectionViewSource> 자식 테이블이 나 개체를 놓기 대상의 리소스에 대 한 합니다. 일부 데이터 원본의 경우 Visual Studio 테이블 또는 개체 데이터를 로드 하는 코드를 생성 합니다. 자세한 내용은 [Visual Studio에서 데이터를 바인딩할 WPF 컨트롤](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)합니다.
 
@@ -90,8 +88,8 @@ ms.locfileid: "52305483"
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|Visual Studio 디자이너에 끌어 자식 데이터의 속성에이 속성에 바인딩합니다. 부모 데이터에 외래 키입니다.|
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A>|Visual Studio의 경로 열 또는 외래 키를 부모 데이터는 자식 데이터의 속성에이 속성을 설정 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 - [Visual Studio에서 데이터에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [WPF 응용 프로그램에서 관련 데이터 표시](../data-tools/display-related-data-in-wpf-applications.md)
-- [연습: WPF 응용 프로그램에서 관련 데이터 표시](../data-tools/display-related-data-in-wpf-applications.md)
+- [연습: WPF 애플리케이션에서 관련 데이터 표시](../data-tools/display-related-data-in-wpf-applications.md)

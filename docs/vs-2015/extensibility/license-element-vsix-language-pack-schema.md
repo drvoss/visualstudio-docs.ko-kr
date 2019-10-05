@@ -1,24 +1,19 @@
 ---
 title: 요소 (VSIX 언어 팩 스키마) 라이선스 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 ms.assetid: 57dac3b7-0cdd-405c-9af5-30ed9ca45e53
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b390c9d390a23a8a5030d06acdb0f2470a946fde
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a079dee3fc01995d70f77a9fa9791a5ab0f42561
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740319"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680587"
 ---
 # <a name="license-element-vsix-language-pack-schema"></a>License 요소 (VSIX 언어 팩 스키마)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ ms.locfileid: "51740319"
   
 |요소|설명|  
 |-------------|-----------------|  
-|[VSIX LanguagePack 요소](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|필수. VSIX 언어 팩에 대 한 루트 요소를 제공합니다.|  
+|[VSIX LanguagePack 요소](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|필수 요소. VSIX 언어 팩에 대 한 루트 요소를 제공합니다.|  
   
 ## <a name="text-value"></a>텍스트 값  
  표시할 지역화 된 라이센스 파일의 상대 경로입니다.  
@@ -70,5 +65,4 @@ ms.locfileid: "51740319"
 ## <a name="see-also"></a>참고 항목  
  [VSX 언어 팩 스키마 참조](../extensibility/vsx-language-pack-schema-reference.md)   
  [VSIX 패키지 지역화](../extensibility/localizing-vsix-packages.md)   
- [VSIX 확장 스키마 1.0 참조](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
-
+ [VSIX 확장 스키마 1.0 참조](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)

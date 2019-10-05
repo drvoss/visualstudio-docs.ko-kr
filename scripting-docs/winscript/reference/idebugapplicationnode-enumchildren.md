@@ -2,7 +2,6 @@
 title: IDebugApplicationNode::EnumChildren | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8ab13f3a284b1b36550367e68ca5fe600db3be6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: cf309df075aaea734af61fb1f6f1ddd8bb7857b7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990359"
 ---
 # <a name="idebugapplicationnodeenumchildren"></a>IDebugApplicationNode::EnumChildren
 이 응용 프로그램 노드의 자식 노드를 열거합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT EnumChildren(  
    IEnumDebugApplicationNodes**  pperddp  
 );  

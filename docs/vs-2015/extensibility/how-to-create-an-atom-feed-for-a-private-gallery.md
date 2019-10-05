@@ -1,29 +1,24 @@
 ---
 title: '방법: Atom를 만드는 개인 갤러리에 대 한 피드 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Atom feed, VSIX private galleries
 - VSIX private galleries, Atom feed
 ms.assetid: 5897f538-9c41-486f-97d9-a1976d20d9fd
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8f720c4297ab2ff31abe90365b0e25209762dba1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f6d4ba78028774e8fbf8e281afa2855781dab43a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204205"
 ---
-# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>방법: Atom를 만드는 개인 갤러리 피드
+# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>방법: 전용 갤러리에 대한 Atom 피드 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Atom (RSS) 피드를 확장을 포함 하는 피드를 추가 인트라넷 위치를 만들 수 있습니다 **확장 및 업데이트** 를 전용 갤러리로 합니다. 자세한 내용은 [Private Galleries](../extensibility/private-galleries.md)를 참조하세요.  
@@ -82,4 +77,3 @@ Atom (RSS) 피드를 확장을 포함 하는 피드를 추가 인트라넷 위�
   
 ## <a name="see-also"></a>참고 항목  
  [전용 갤러리](../extensibility/private-galleries.md)
-

@@ -1,29 +1,29 @@
 ---
 title: 관리 코드에 대한 기본 디자인 지침 규칙 규칙 집합
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 7eb384f5-f961-400b-b151-115d92addc6a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 54169ea373c87e731410492954773dcc575e20c1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d51796f7575e3dd5766655661927dfd520935c02
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844904"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585091"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>관리 코드에 대한 기본 디자인 지침 규칙 규칙 집합
-Microsoft 기본 디자인 지침 규칙 규칙 집합 코드를 더 쉽게 이해 하 고 사용 하는 데 집중할 수를 사용할 수 있습니다. 프로젝트에 라이브러리 코드가 있거나 유지 관리 하기 쉬운 코드에 대 한 모범 사례를 적용 하려는 경우이 규칙 집합을 포함 해야 합니다.
 
- 기본 디자인 지침 규칙 Microsoft 최소 권장 규칙 규칙 집합에 있는 모든 규칙을 포함 합니다. 최소 규칙의 목록을 참조 하세요 [관리 되는 코드에 대 한 관리 권장 규칙 규칙 집합](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)합니다.
+Microsoft 기본 디자인 지침 규칙 규칙 집합을 사용 하 여 코드를 더 쉽게 이해 하 고 사용할 수 있도록 집중할 수 있습니다. 프로젝트에 라이브러리 코드가 포함 되어 있거나 유지 관리가 쉬운 코드에 대 한 모범 사례를 적용 하려는 경우이 규칙 집합을 포함 해야 합니다.
 
- 다음 표에 모든 Microsoft 기본 디자인 지침 규칙 규칙 집합에 있는 규칙이 있습니다.
+기본 디자인 지침 규칙은 [관리 되는 권장 규칙](managed-recommended-rules-rule-set-for-managed-code.md) 규칙 집합의 모든 규칙을 포함 합니다.
 
-|규칙|설명|
+다음 표에서는 Microsoft 기본 디자인 지침 규칙 규칙 집합의 모든 규칙에 대해 설명 합니다.
+
+|규칙|Description|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|삭제 가능한 필드가 있는 형식은 삭제 가능해야 합니다.|
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|이벤트 처리기를 제대로 선언하십시오.|

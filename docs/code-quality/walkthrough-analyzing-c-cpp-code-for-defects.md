@@ -1,7 +1,6 @@
 ﻿---
 title: '연습: 오류에 대한 C/C++ 코드 분석'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - C/C++, code analysis
@@ -13,12 +12,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a35bc07c9fe6478107162b625a824b6344898f1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: acfa1e274b7c0744c2d9968682960b1cd50e0044
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820339"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>연습: 오류에 대한 C/C++ 코드 분석
 
@@ -68,7 +67,7 @@ ms.locfileid: "53829513"
 
      경고 C6230: 의미 체계가 다른 형식 간의 암시적 캐스트: 부울 컨텍스트에서 HRESULT를 사용 합니다.
 
-     함수에서 경고를 발생 시킨 줄을 표시 하는 코드 편집기 `bool``ProcessDomain()`합니다. 이 경고는 HRESULT를 되는 'if' 문에서 부울 결과가 필요한 경우를 나타냅니다.
+     함수에서 경고를 발생 시킨 줄을 표시 하는 코드 편집기 `bool ProcessDomain()`합니다. 이 경고는 HRESULT를 되는 'if' 문에서 부울 결과가 필요한 경우를 나타냅니다.
 
 3. SUCCEEDED 매크로 사용 하 여이 경고를 해결 합니다. 코드에는 다음 코드와 유사 해야 합니다.
 
@@ -120,7 +119,7 @@ ms.locfileid: "53829513"
 
 6. 에 **오류 목록**, 다음 경고를 두 번 클릭 합니다.
 
-     경고 C6011: NULL 포인터 'newNode'를 역참조 합니다.
+     warning C6011: NULL 포인터 'newNode'를 역참조 합니다.
 
      이 경고는 반환 값을 확인 하려면 호출자가 오류를 나타냅니다. 이 경우 호출에서 **AllocateNode** NULL 값을 반환할 수 있습니다 (AllocateNode에 대 한 함수 선언에 대 한 annotations.h 헤더 파일 참조).
 
@@ -157,7 +156,7 @@ ms.locfileid: "53829513"
 
 3. 에 **오류 목록**, 다음 경고를 두 번 클릭 합니다.
 
-     경고 C6011: 'Node' NULL 포인터를 역참조 합니다.
+     warning C6011: 'Node' NULL 포인터를 역참조 합니다.
 
      이 경고는 함수에 전달 하는 노드는 null 일 수를 나타냅니다와 경고를 발생 하는 줄 번호를 나타냅니다.
 
@@ -180,4 +179,4 @@ ms.locfileid: "53829513"
 ## <a name="see-also"></a>참고자료
 
 [연습: 코드 오류에 대 한 관리 코드 분석](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
-[C/c + + 코드 분석](../code-quality/code-analysis-for-c-cpp-overview.md)
+[C에 대 한 코드 분석 /C++](../code-quality/code-analysis-for-c-cpp-overview.md)

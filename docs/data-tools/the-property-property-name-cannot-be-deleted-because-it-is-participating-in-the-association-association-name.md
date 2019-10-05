@@ -1,39 +1,36 @@
 ---
-title: 속성은 연결에 참여 하 고 있으므로 삭제할 수 없습니다.
+title: 속성이 연결에 참여하고 있으므로 이 속성을 삭제할 수 없음
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 389873cc-92dd-48da-bfca-0f6c8e0ae3c2
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6ed6b14f64d16d1f18d4b358761169c3d424cee8
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: d277919229316768cde27efdc9b2797d0351e9fe
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174064"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458499"
 ---
-# <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>속성 &lt;속성 이름이&gt; 연결에 참여 하 고 있으므로 삭제할 수 없습니다 &lt;연결 이름&gt;
+# <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>&lt;property name&gt; 속성은 &lt;association name&gt; 연결에 참여하고 있으므로 삭제할 수 없음
 
-선택한 속성이로 설정 되어는 **연결 속성** 클래스 간의 연결에 대 한 오류 메시지에 표시 합니다. 속성이 데이터 클래스 간 연결에 참여 중인 경우에는 해당 속성을 삭제할 수 없습니다.
+선택한 속성이 오류 메시지에 표시된 클래스 간 연결의 **연결 속성**으로 설정되었습니다. 속성이 데이터 클래스 간 연결에 참여 중인 경우에는 해당 속성을 삭제할 수 없습니다.
 
-설정 된 **연결 속성** desired 속성을 삭제할 수 있도록 데이터 클래스의 다른 속성에 있습니다.
+**연결 속성**을 데이터 클래스의 다른 속성으로 설정하면 원하는 속성을 삭제할 수 있습니다.
 
 ## <a name="to-correct-this-error"></a>이 오류를 해결하려면
 
-1. 연결 선을 선택 합니다 **O/R 디자이너** 오류 메시지에 표시 된 데이터 클래스를 연결 하는 합니다.
+1. **O/R 디자이너**에서 오류 메시지에 표시된 데이터 클래스를 연결하는 연결 선을 선택합니다.
 
-2. 열려는 줄을 두 번 클릭 합니다 **연결 편집기** 대화 상자.
+2. 해당 선을 두 번 클릭하여 **연결 편집기** 대화 상자를 엽니다.
 
-3. 속성을 제거 합니다 **연결 속성**합니다.
+3. **연결 속성**에서 속성을 제거합니다.
 
 4. 속성 삭제를 다시 한 번 시도합니다.
 
 ## <a name="see-also"></a>참고자료
 
-- [O/R 디자이너 메시지](../data-tools/o-r-designer-messages.md)
-- [Visual Studio에서 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

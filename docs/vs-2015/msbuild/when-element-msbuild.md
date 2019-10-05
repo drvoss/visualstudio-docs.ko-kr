@@ -1,14 +1,9 @@
 ---
 title: When 요소(MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#When
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: eb27de6f-4e71-4e87-87e2-d93f7bf5899c
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fbbd0c6f697363ea4fab4b927ac36371b6f70fea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e23b89ab9aa48a87505eb9b53a8646da06df4931
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162301"
 ---
 # <a name="when-element-msbuild"></a>When 요소(MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 `Choose` 요소에서 선택할 수 있는 가능한 코드 블록을 지정합니다.  
   
  \<Project>  
@@ -84,7 +78,7 @@ ms.locfileid: "49277171"
   
  `Choose`, `When` 및 `Otherwise` 요소는 몇 가지 가능한 대안 중에서 실행할 코드의 한 섹션을 선택하는 방법을 제공하기 위해 함께 사용됩니다. 자세한 내용은 [조건부 구문](../msbuild/msbuild-conditional-constructs.md)을 참조하세요.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  다음 프로젝트에서는 `Choose` 요소를 사용하여 설정할 `When` 요소의 속성 값 집합을 선택합니다. 두 `When` 요소의 `Condition` 특성이 모두 `false`로 평가되면 `Otherwise` 요소의 속성 값이 설정됩니다.  
   
 ```  
@@ -135,6 +129,3 @@ ms.locfileid: "49277171"
 ## <a name="see-also"></a>참고 항목  
  [조건부 구문](../msbuild/msbuild-conditional-constructs.md)   
  [프로젝트 파일 스키마 참조](../msbuild/msbuild-project-file-schema-reference.md)
-
-
-

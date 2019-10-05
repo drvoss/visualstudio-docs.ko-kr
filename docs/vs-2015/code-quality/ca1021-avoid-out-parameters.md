@@ -1,14 +1,9 @@
 ---
-title: ': Ca1021 out 매개 변수 | Microsoft Docs'
-ms.custom: ''
+title: 'CA1021: Out 매개 변수 방지 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1021
 - AvoidOutParameters
@@ -20,14 +15,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3f90b4487824695fe0045c06638679607e4464b3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b52d5a97fc3c2e3a6bf5b4bb938bad9da50d3a7d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144821"
 ---
-# <a name="ca1021-avoid-out-parameters"></a>CA1021: out 매개 변수를 사용하지 마십시오.
+# <a name="ca1021-avoid-out-parameters"></a>CA1021: out 매개 변수를 사용하지 마세요.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -79,24 +74,21 @@ ms.locfileid: "49917673"
 
  이 예제의 결과는 다음과 같습니다.
 
- **변경에 대 한 포인터-값으로 전달 합니다.**
+ **변경에 대 한 포인터-값으로 전달 합니다.** 
 **12345**
 **12345**
 **Changing 포인터-참조로 전달:** 
- ** 12345**
+**12345**
 **12345 ABCDE**
-**반환 값으로 전달:**
+**반환 값으로 전달:** 
 **12345 ABCDE**
 ## <a name="try-pattern-methods"></a>패턴 메서드를 시도 하세요.
 
-### <a name="description"></a>설명
+### <a name="description"></a>Description
  구현 하는 메서드를 **시도\<항목 >** 같은 패턴 <xref:System.Int32.TryParse%2A?displayProperty=fullName>,이 위반이 발생 하지 않습니다. 다음 예제에서는 구현 하는 구조체 (값 형식)는 <xref:System.Int32.TryParse%2A?displayProperty=fullName> 메서드.
 
 ### <a name="code"></a>코드
  [!code-csharp[FxCop.Design.TryPattern#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TryPattern/cs/FxCop.Design.TryPattern.cs#1)]
 
 ## <a name="related-rules"></a>관련된 규칙
- [CA1045: 참조로 참조 형식을 전달하지 않습니다.](../code-quality/ca1045-do-not-pass-types-by-reference.md)
-
-
-
+ [CA1045: 참조로 형식을 전달 하지 않습니다](../code-quality/ca1045-do-not-pass-types-by-reference.md)

@@ -2,7 +2,6 @@
 title: IActiveScriptProfilerCallback::OnFunctionExit | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,19 +15,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57a3343c7e3747c48a4c43a1c1ac17fe6502aee3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9c84b64a12b1a6b61399f70b7209c86dd8d2a9a4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993334"
 ---
 # <a name="iactivescriptprofilercallbackonfunctionexit"></a>IActiveScriptProfilerCallback::OnFunctionExit
-개체는 호출 하는 함수를 실행 하는 완료 된 스크립팅 엔진 아닌지 문서 개체 모델 (DOM)에 대 한 호출 프로파일러에 알립니다.  
+개체는 호출 하는 함수를 실행 하는 완성 된 스크립팅 엔진 아님을 문서 개체 모델 (DOM)에 대 한 호출 프로파일러에 알립니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT OnFunctionExit(  
     [in] PROFILER_TOKEN scriptId,   
     [in] PROFILER_TOKEN functionId);  
@@ -45,7 +44,7 @@ HRESULT OnFunctionExit(
  이 메서드의 반환 값은 스크립팅 엔진에서 무시 됩니다.  
   
 ## <a name="remarks"></a>설명  
- DOM 호출에 대 한 스크립팅 엔진 호출 [IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md) 대신 `IActiveScriptProfilerCallback::OnFunctionExit`합니다. Dom의 고유한 메서드 및 속성 수가 많기 때문에 이것이  
+ 스크립팅 엔진 호출 DOM 호출용 [IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md) 대신 `IActiveScriptProfilerCallback::OnFunctionExit`합니다. Dom의 고유한 메서드 및 속성 수가 많기 때문입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IActiveScriptProfilerCallback::OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)   

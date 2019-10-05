@@ -6,17 +6,17 @@ helpviewer_keywords:
 - nested projects, implementing
 - projects [Visual Studio SDK], nesting
 ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d22d67d81776f83683e11d1ca613a9138137e75c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f7219824bf7cc13f8fe00ebc9be0320e557f0fcf
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945811"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328681"
 ---
 # <a name="how-to-implement-nested-projects"></a>방법: 중첩 된 프로젝트를 구현 합니다.
 
@@ -24,18 +24,18 @@ ms.locfileid: "53945811"
 
 ## <a name="create-nested-projects"></a>중첩 된 프로젝트 만들기
 
-1.  호출 하 여 부모 프로젝트의 프로젝트 파일 및 시작 정보를 로드 하는 통합된 개발 환경 (IDE)는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> 인터페이스입니다. 부모 프로젝트 생성 되어 솔루션에 추가 합니다.
+1. 호출 하 여 부모 프로젝트의 프로젝트 파일 및 시작 정보를 로드 하는 통합된 개발 환경 (IDE)는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> 인터페이스입니다. 부모 프로젝트 생성 되어 솔루션에 추가 합니다.
 
     > [!NOTE]
     > 이 시점에서 것 하위 프로젝트를 만들기 전에 부모 프로젝트를 만들어야 하기 때문에 중첩 된 프로젝트를 만들 부모 프로젝트의 프로세스에서 너무 이릅니다. 이 시퀀스 다음 상위 프로젝트 하위 프로젝트에 설정을 적용할 수 있습니다 및 필요한 경우 하위 프로젝트에서 부모 프로젝트에서 정보를 얻을 수 있습니다. 이 순서는 필요한 경우에 소스 코드 제어 (SCC)와 같은 클라이언트가 및 **솔루션 탐색기**합니다.
 
      부모 프로젝트까지 기다려야 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> 프로젝트 또는 프로젝트에 중첩 된 (자식)을 만들 수는 IDE에서 호출 될 메서드입니다.
 
-2.  IDE 호출 `QueryInterface` 에 대 한 부모 프로젝트 <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject>합니다. 하는 경우이 호출이 성공 하면 IDE 호출을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> 부모 프로젝트에 대 한 중첩 된 프로젝트의 모든 열을 부모 메서드.
+2. IDE 호출 `QueryInterface` 에 대 한 부모 프로젝트 <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject>합니다. 하는 경우이 호출이 성공 하면 IDE 호출을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> 부모 프로젝트에 대 한 중첩 된 프로젝트의 모든 열을 부모 메서드.
 
-3.  부모 프로젝트 호출을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnBeforeOpeningChildren%2A> 프로젝트를 중첩 하는 수신기에 알리기 위해 메서드를 만들 수 있습니다. 예를 들어, 소스 코드 제어, 솔루션 및 프로젝트 만들기 프로세스의 단계를 순서 대로 발생 하는 경우 알아야 해당 이벤트를 수신 됩니다. 단계 순서가 발생 하는 경우 솔루션 등록 되지 소스 코드 제어를 사용 하 여 올바르게 합니다.
+3. 부모 프로젝트 호출을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnBeforeOpeningChildren%2A> 프로젝트를 중첩 하는 수신기에 알리기 위해 메서드를 만들 수 있습니다. 예를 들어, 소스 코드 제어, 솔루션 및 프로젝트 만들기 프로세스의 단계를 순서 대로 발생 하는 경우 알아야 해당 이벤트를 수신 됩니다. 단계 순서가 발생 하는 경우 솔루션 등록 되지 소스 코드 제어를 사용 하 여 올바르게 합니다.
 
-4.  부모 프로젝트 호출 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProject%2A> 메서드 또는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProjectEx%2A> 메서드를 각 자식 프로젝트에 해당 합니다.
+4. 부모 프로젝트 호출 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProject%2A> 메서드 또는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProjectEx%2A> 메서드를 각 자식 프로젝트에 해당 합니다.
 
      전달 <xref:Microsoft.VisualStudio.Shell.Interop.__VSADDVPFLAGS> 에 `AddVirtualProject` 가상 (중첩 된) 프로젝트의 빌드에서 제외 되는 프로젝트 창에 추가 해야 함을 표시 하는 방법 등에 소스 코드 제어에 추가 합니다. `VSADDVPFLAGS` 중첩 된 프로젝트의 표시 유형을 제어 하 고 연결 된 기능 임을 수 있습니다.
 
@@ -43,15 +43,15 @@ ms.locfileid: "53945811"
 
      GUID 사용 가능한 경우,이 솔루션은 시간에 프로젝트에 대해 하나 생성 새 중첩된 프로젝트에 추가 하면 같은 부모에 추가 됩니다. 해당 프로젝트는 프로젝트 파일의 GUID를 유지 하기 위해 부모 프로젝트의 담당 합니다. 중첩 된 프로젝트를 삭제 하면 해당 프로젝트에 대 한 GUID도 삭제할 수 있습니다.
 
-5.  IDE 호출을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren> 부모 프로젝트의 각 자식 프로젝트에는 메서드.
+5. IDE 호출을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren> 부모 프로젝트의 각 자식 프로젝트에는 메서드.
 
      부모 프로젝트를 구현 해야 `IVsParentProject` 프로젝트 중첩 하려는 경우. 하지만 부모 프로젝트 호출 되지 않습니다 `QueryInterface` 에 대 한 `IVsParentProject` 부모 프로젝트 아래에 있는 경우에 합니다. 솔루션에 대 한 호출을 처리 `IVsParentProject` 호출을 구현 하는 경우 및 `OpenChildren` 중첩 된 프로젝트를 만듭니다. `AddVirtualProjectEX` 항상 라고 `OpenChildren`합니다. 되지 순서로 생성 이벤트 계층 구조를 유지 하려면 부모 프로젝트에서 호출 해야 합니다.
 
-6.  IDE 호출을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> 자식 프로젝트는 메서드.
+6. IDE 호출을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> 자식 프로젝트는 메서드.
 
-7.  부모 프로젝트 호출을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpeningChildren%2A> 메서드를 부모 자식 프로젝트가 만들어졌는지 수신기에 알립니다.
+7. 부모 프로젝트 호출을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpeningChildren%2A> 메서드를 부모 자식 프로젝트가 만들어졌는지 수신기에 알립니다.
 
-8.  호출 하 여 IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpenProject%2A> 모든 자식 프로젝트가 열린 후 부모 프로젝트 메서드.
+8. 호출 하 여 IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpenProject%2A> 모든 자식 프로젝트가 열린 후 부모 프로젝트 메서드.
 
      부모 프로젝트를 호출 하 여 중첩 된 각 프로젝트에 대 한 GUID를 만들고 아직 존재 하지 않는 경우 `CoCreateGuid`합니다.
 
@@ -65,7 +65,7 @@ ms.locfileid: "53945811"
      부모 및 자식 프로젝트는 프로그래밍 방식으로 인스턴스화 때문에 시점에서 중첩 된 프로젝트에 대 한 속성을 설정할 수 있습니다.
 
     > [!NOTE]
-    > 중첩 된 프로젝트에서 컨텍스트 정보를을 받고 뿐 아니라 부모 프로젝트로 있는지 확인 하 여 모든 컨텍스트에 해당 항목에 대해 질문할 수도 있습니다 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>합니다. 이런 방식으로 개별 중첩된 프로젝트에 추가 동적 도움말 특성과 관련 된 메뉴 옵션을 추가할 수 있습니다.
+    > 중첩 된 프로젝트에서 컨텍스트 정보를을 받고 뿐 아니라 부모 프로젝트로 있는지 확인 하 여 모든 컨텍스트에 해당 항목에 대해 질문할 수도 있습니다 [__VSHPROPID 합니다. VSHPROPID_UserContext](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_UserContext>)합니다. 이런 방식으로 개별 중첩된 프로젝트에 추가 동적 도움말 특성과 관련 된 메뉴 옵션을 추가할 수 있습니다.
 
 10. 계층에 표시 하기 위해 빌드됩니다 **솔루션 탐색기** 에 대 한 호출을 사용 하 여는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> 메서드.
 

@@ -1,14 +1,9 @@
 ---
 title: SccGetProjPath 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccGetProjPath
 helpviewer_keywords:
@@ -16,24 +11,24 @@ helpviewer_keywords:
 ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 978316cd9c953217a3e59a7ecd1b047cab12734b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 585402efbda165844f449e2477d5ca69722613a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446869"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 함수는 프로젝트 경로 소스 제어 플러그 인에 의미 있는 문자열에 대 한 라는 메시지입니다. 사용자가 있는 경우 라고 합니다.  
   
--   새 프로젝트 만들기  
+- 새 프로젝트 만들기  
   
--   버전 제어에 기존 프로젝트 추가  
+- 버전 제어에 기존 프로젝트 추가  
   
--   기존 버전 제어 프로젝트를 찾으려고 시도  
+- 기존 버전 제어 프로젝트를 찾으려고 시도  
   
 ## <a name="syntax"></a>구문  
   
@@ -75,15 +70,15 @@ SCCRTN SccGetProjPath (
  pbNew  
  [out에서] 들어오는 값 새 프로젝트를 만들지 여부를 나타냅니다. 반환 된 값에는 프로젝트를 만들기의 성공을 나타냅니다.  
   
-|들어오|해석|  
+|들어오는|해석|  
 |--------------|--------------------|  
-|true|사용자는 새 프로젝트를 만들 수 있습니다.|  
-|false|사용자는 새 프로젝트를 만들 수 없습니다.|  
+|TRUE|사용자는 새 프로젝트를 만들 수 있습니다.|  
+|FALSE|사용자는 새 프로젝트를 만들 수 없습니다.|  
   
 |나가는 포트|해석|  
 |--------------|--------------------|  
-|true|새 프로젝트를 만들었습니다.|  
-|false|기존 프로젝트를 선택 했습니다.|  
+|TRUE|새 프로젝트를 만들었습니다.|  
+|FALSE|기존 프로젝트를 선택 했습니다.|  
   
 ## <a name="return-value"></a>반환 값  
  원본 제어 플러그 인이 함수의 구현은 다음 값 중 하나를 반환 하:  
@@ -104,7 +99,7 @@ SCCRTN SccGetProjPath (
  에 대 한 `lpUser`, IDE 사용자 이름에 전달할 수 있습니다 또는 빈 문자열에 대 한 포인터에서 단순히 통과할 수 있습니다. 없는 경우 사용자 이름, 소스 제어 플러그 인을 기본값으로 사용 해야 합니다. 그러나 이름이 전달 되지 않은 경우, 지정 된 이름의 로그인에 실패 하는 경우 플러그 인 메시지를 표시할 로그인 하 고 이름을 다시 전달 `lpUser` 유효한 로그인을 받을 때입니다. IDE는 크기의 버퍼를 할당 항상 플러그 인이 문자열 변경 될 수, 있으므로 (`SCC_USER_LEN`+ 1).  
   
 > [!NOTE]
->  IDE에서 수행 하는 첫 번째 작업 중 하나에 대 한 호출 수를 `SccOpenProject` 함수 또는 `SccGetProjPath` 함수입니다. 따라서 둘 다가 동일한 `lpUser` 소스 제어 플러그 인을 두 번에 사용자를 로그인을 사용 하도록 설정 하는 매개 변수입니다. 함수에서 반환 된 값을 실패를 나타내는 경우에 플러그 인 채워야 유효한 로그인 이름의이 문자열입니다.  
+> IDE에서 수행 하는 첫 번째 작업 중 하나에 대 한 호출 수를 `SccOpenProject` 함수 또는 `SccGetProjPath` 함수입니다. 따라서 둘 다가 동일한 `lpUser` 소스 제어 플러그 인을 두 번에 사용자를 로그인을 사용 하도록 설정 하는 매개 변수입니다. 함수에서 반환 된 값을 실패를 나타내는 경우에 플러그 인 채워야 유효한 로그인 이름의이 문자열입니다.  
   
  `lpLocalPath` 여기서 사용자가 프로젝트 디렉터리가입니다. 빈 문자열일 수 있습니다. 디렉터리가 없습니다 (의 경우와 같이 소스 제어 시스템에서 프로젝트를 다운로드 하는 동안 사용자) 현재 정의 된 경우 `bAllowChangePath` 는 `TRUE`, 소스 제어 플러그 인 입력에 대 한 사용자 수 또는 일부 다른 메서드를 사용 하 여 배치 해당 문자열을 소유 `lpLocalPath`합니다. 하는 경우 `bAllowChangePath` 는 `FALSE`, 플러그 인은 문자열 때문에 변경할 사용자가 이미 지정된 된 디렉터리에서 작업 합니다.  
   
@@ -115,4 +110,3 @@ SCCRTN SccGetProjPath (
 ## <a name="see-also"></a>참고 항목  
  [원본 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)
-

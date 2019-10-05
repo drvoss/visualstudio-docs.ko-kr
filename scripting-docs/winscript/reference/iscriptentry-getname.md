@@ -2,7 +2,6 @@
 title: IScriptEntry::GetName | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc518e87414d051e9b1393b60b5874a0204b78b2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d23843aa72ce5cf79f6442048b6493d17eb6ef64
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62787772"
 ---
 # <a name="iscriptentrygetname"></a>IScriptEntry::GetName
 단일 개체 (예: 함수)를 나타내는 항목에 대 한 개체의 이름을 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetName(  
    BSTR               *pbstr  
 );  
@@ -38,7 +37,7 @@ HRESULT GetName(
   
 #### <a name="parameters"></a>매개 변수  
  `pbstr`  
- [out] 가 나타내는 개체의 이름에서 `IScriptEntry` 스크립트 블록입니다. 항목에서 단일 개체를 나타낼 경우에 NULL이 반환 됩니다.  
+ [out] 가 나타내는 개체의 이름을 합니다 `IScriptEntry` 스크립트 블록입니다. 진입점이 단일 개체를 나타내지 않는 경우 NULL이 반환 됩니다.  
   
  자식 항목에는 단일 함수 개체를 나타냅니다.  
   

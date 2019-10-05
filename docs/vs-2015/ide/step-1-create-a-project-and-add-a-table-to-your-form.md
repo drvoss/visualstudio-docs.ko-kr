@@ -1,25 +1,20 @@
 ---
-title: '1단계: 프로젝트 만들기 및 폼에 테이블 추가 | Microsoft Docs'
-ms.custom: ''
+title: '1단계: 프로젝트를 만들고 폼에 테이블 추가 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c49a3e9ac7c4a37c1c030d631667d90b274143cf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 807d2b7de34acda52dd05ff8263ae3303dca61c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441916"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>1단계: 프로젝트 만들기 및 폼에 테이블 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +27,13 @@ ms.locfileid: "49934693"
   
 2. Visual Studio Express를 사용하고 있지 않으면 먼저 프로그래밍 언어를 선택해야 합니다. **설치된 템플릿** 목록에서 **Visual C#** 또는 **Visual Basic**을 선택합니다.  
   
-3. 프로젝트 템플릿 목록에서 **Windows Forms 응용 프로그램**을 선택하고 프로젝트 이름으로 **MatchingGame**을 지정한 다음 **확인** 단추를 선택합니다.  
+3. 프로젝트 템플릿 목록에서 **Windows Forms 애플리케이션**을 선택하고 프로젝트 이름으로 **MatchingGame**을 지정한 다음 **확인** 단추를 선택합니다.  
   
 4. **속성** 창에서 다음 폼 속성을 설정합니다.  
   
-   1.  폼의 **Text** 속성을 **Form1**에서 **일치 게임**으로 변경합니다. 이 텍스트는 게임 창 위쪽에 표시됩니다.  
+   1. 폼의 **Text** 속성을 **Form1**에서 **일치 게임**으로 변경합니다. 이 텍스트는 게임 창 위쪽에 표시됩니다.  
   
-   2.  이 폼의 크기를 550*400픽셀로 설정합니다. 이렇게 하려면 **Size** 속성을 **550, 550**으로 설정하거나, IDE(통합 개발 환경)의 오른쪽 아래 모퉁이에 표시되는 크기가 원하는 크기가 될 때까지 폼의 모퉁이를 끌면 됩니다.  
+   2. 이 폼의 크기를 550*400픽셀로 설정합니다. 이렇게 하려면 **Size** 속성을 **550, 550**으로 설정하거나, IDE(통합 개발 환경)의 오른쪽 아래 모퉁이에 표시되는 크기가 원하는 크기가 될 때까지 폼의 모퉁이를 끌면 됩니다.  
   
 5. IDE의 왼쪽에 있는 **도구 상자** 탭을 선택하여 도구 상자를 표시합니다.  
   
@@ -47,7 +42,7 @@ ms.locfileid: "49934693"
    1. **BackColor** 속성을 **CornflowerBlue**로 설정합니다. 이렇게 하려면 **속성** 창의 **BackColor** 속성 옆에 있는 드롭다운 화살표를 선택하여 **BackColor** 대화 상자를 엽니다.  그런 다음 **BackColor** 대화 상자의 **웹** 탭을 선택하여 사용할 수 있는 색이름 목록을 봅니다.  
   
       > [!NOTE]
-      >  색은 알파벳 순서가 아니며 CornflowerBlue는 목록 맨 아래 가까이에 있습니다.  
+      > 색은 알파벳 순서가 아니며 CornflowerBlue는 목록 맨 아래 가까이에 있습니다.  
   
    2. 속성 옆에 있는 드롭다운 단추를 선택한 다음, 가운데 있는 큰 단추를 선택하여 **Dock** 속성을 **Fill**로 설정합니다. 이렇게 하면 전체 폼을 덮도록 테이블이 확장됩니다.  
   
@@ -65,29 +60,29 @@ ms.locfileid: "49934693"
   
     TableLayoutPanel이 선택된 상태에서 도구 상자를 열고 **공용 컨트롤** 범주에 있는 **레이블** 컨트롤을 TableLayoutPanel의 왼쪽 위 셀에 추가합니다. 이제 IDE에서 `Label` 컨트롤이 선택되어 있어야 합니다. 여기에 다음 속성을 설정합니다.  
   
-   1.  레이블의 **BackColor** 속성이 **CornflowerBlue**로 설정되어 있는지 확인합니다.  
+   1. 레이블의 **BackColor** 속성이 **CornflowerBlue**로 설정되어 있는지 확인합니다.  
   
-   2.  **AutoSize** 속성을 **False**로 설정합니다.  
+   2. **AutoSize** 속성을 **False**로 설정합니다.  
   
-   3.  **Dock** 속성을 **Fill**로 설정합니다.  
+   3. **Dock** 속성을 **Fill**로 설정합니다.  
   
-   4.  속성 옆에 있는 드롭다운 단추를 선택한 다음, 가운데 단추를 선택하여 **TextAlign** 속성을 **MiddleCenter**로 설정합니다. 이렇게 하면 셀의 중앙에 아이콘이 나타납니다.  
+   4. 속성 옆에 있는 드롭다운 단추를 선택한 다음, 가운데 단추를 선택하여 **TextAlign** 속성을 **MiddleCenter**로 설정합니다. 이렇게 하면 셀의 중앙에 아이콘이 나타납니다.  
   
-   5.  **Font** 속성을 선택합니다. 그러면 줄임표(...) 단추가 나타납니다.  
+   5. **Font** 속성을 선택합니다. 그러면 줄임표(...) 단추가 나타납니다.  
   
-   6.  줄임표 단추를 선택하고 **글꼴** 값을 **Webdings**로, **글꼴 스타일**에 **굵게**, **크기**에 **72**를 각각 설정합니다.  
+   6. 줄임표 단추를 선택하고 **글꼴** 값을 **Webdings**로, **글꼴 스타일**에 **굵게**, **크기**에 **72**를 각각 설정합니다.  
   
-   7.  레이블의 **Text** 속성을 문자 **c**로 설정합니다.  
+   7. 레이블의 **Text** 속성을 문자 **c**로 설정합니다.  
   
         이제 TableLayoutPanel의 왼쪽 위 셀에는 파란색 배경의 가운데에 검은색 상자가 포함됩니다.  
   
        > [!NOTE]
-       >  Webdings 글꼴은 Windows 운영 체제에 포함된 아이콘 글꼴입니다. 일치 게임에서 플레이어는 일치하는 아이콘 쌍을 찾아야 하므로 이 글꼴을 사용하여 일치시킬 아이콘을 표시합니다. **Text** 속성을 **c**로 설정하는 대신 다른 문자를 입력하여 아이콘이 어떻게 표시되는지 확인해 보세요. 느낌표는 거미, 대문자 N은 눈 모양, 쉼표는 고추를 각각 나타냅니다.  
+       > Webdings 글꼴은 Windows 운영 체제에 포함된 아이콘 글꼴입니다. 일치 게임에서 플레이어는 일치하는 아이콘 쌍을 찾아야 하므로 이 글꼴을 사용하여 일치시킬 아이콘을 표시합니다. **Text** 속성을 **c**로 설정하는 대신 다른 문자를 입력하여 아이콘이 어떻게 표시되는지 확인해 보세요. 느낌표는 거미, 대문자 N은 눈 모양, 쉼표는 고추를 각각 나타냅니다.  
   
 8. 레이블 컨트롤을 선택하고 TableLayoutPanel의 다음 셀에 이를 복사합니다. Ctrl+C 키를 선택하거나 메뉴 모음에서 **편집**, **복사**를 선택합니다. 그런 다음 이 컨트롤을 붙여넣습니다. Ctrl+V 키를 선택하거나 메뉴 모음에서 **편집**, **붙여넣기**를 선택합니다. TableLayoutPanel의 두 번째 셀에 첫 번째 레이블의 복사본이 나타납니다. 이 레이블을 다시 붙여넣으면 세 번째 셀에 다른 레이블이 나타납니다. 모든 셀이 채워질 때까지 `Label` 컨트롤 붙여넣기를 계속합니다.  
   
    > [!NOTE]
-   >  붙여넣기를 너무 많이 하면 TableLayoutPanel에 새 행이 추가되어 새 Label 컨트롤을 추가할 수 있는 위치가 생깁니다. 이를 실행 취소할 수 있습니다. 새 셀을 제거하려면 Ctrl+Z 키를 선택하거나 메뉴 모음에서 **편집**, **실행 취소**를 선택합니다.  
+   > 붙여넣기를 너무 많이 하면 TableLayoutPanel에 새 행이 추가되어 새 Label 컨트롤을 추가할 수 있는 위치가 생깁니다. 이를 실행 취소할 수 있습니다. 새 셀을 제거하려면 Ctrl+Z 키를 선택하거나 메뉴 모음에서 **편집**, **실행 취소**를 선택합니다.  
   
     이제 폼이 배치됩니다. 이 폼은 다음 그림과 같습니다.  
   
@@ -96,9 +91,6 @@ ms.locfileid: "49934693"
   
 ### <a name="to-continue-or-review"></a>계속하거나 검토하려면  
   
--   다음 자습서 단계로 이동하려면 [2단계: 임의의 개체 및 아이콘 목록 추가](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)를 참조하세요.  
+- 다음 자습서 단계로 이동하려면 [2단계: 임의의 개체 및 아이콘 목록 추가](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)합니다.  
   
--   개요 항목으로 돌아가려면 [자습서 3: 일치 게임 만들기](../ide/tutorial-3-create-a-matching-game.md)를 참조하세요.
-
-
-
+- 개요 항목으로 돌아가려면 [자습서 3: 일치 게임 만들기](../ide/tutorial-3-create-a-matching-game.md)합니다.

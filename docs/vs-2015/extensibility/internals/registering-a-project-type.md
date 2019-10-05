@@ -1,14 +1,9 @@
 ---
 title: 프로젝트 형식 등록 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], new project registry entries
 - registry, new project types
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 38848e54f95cc3d78cf3bae2f32bd9827e98c5ac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 63e0140b752adda02aba6126580ec08ee1f7536a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785328"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436627"
 ---
 # <a name="registering-a-project-type"></a>프로젝트 형식 등록
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51785328"
  아래 예제에서 레지스트리에서 문을 기본 경로 제공 하 고 데이터 해당 하는 경우 뒤에 각 문에 대 한 레지스트리 스크립트에서 항목을 포함 하는 테이블입니다. 테이블은 스크립트 항목 및 문에 대 한 추가 정보를 제공합니다.  
   
 > [!NOTE]
->  다음 레지스트리 정보를 형식의 예제 및 프로젝트 형식 등록을 작성 하 게 됩니다 레지스트리 스크립트에 있는 항목의 목적을 할 것입니다. 실제 항목 및 해당 용도 프로젝트 형식의 특정 요구 사항에 따라 달라질 수 있습니다. 프로젝트를 개발 하는 형식에 매우 유사 하나를 찾을 수는 샘플을 검토 하 고 해당 샘플에 대 한 레지스트리 스크립트를 검토 해야 합니다.  
+> 다음 레지스트리 정보를 형식의 예제 및 프로젝트 형식 등록을 작성 하 게 됩니다 레지스트리 스크립트에 있는 항목의 목적을 할 것입니다. 실제 항목 및 해당 용도 프로젝트 형식의 특정 요구 사항에 따라 달라질 수 있습니다. 프로젝트를 개발 하는 형식에 매우 유사 하나를 찾을 수는 샘플을 검토 하 고 해당 샘플에 대 한 레지스트리 스크립트를 검토 해야 합니다.  
   
  다음 예제는 HKEY_CLASSES_ROOT에서입니다.  
   
@@ -229,7 +224,7 @@ ms.locfileid: "51785328"
   
 |이름|형식|데이터|설명|  
 |----------|----------|----------|-----------------|  
-|% CLSID_Package|REG_SZ|`,1000,1`|메뉴 정보를 검색할 리소스입니다.|  
+|%CLSID_Package%|REG_SZ|`,1000,1`|메뉴 정보를 검색할 리소스입니다.|  
   
  다음 예제에서는 모든 레지스트리 키 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\NewProjectTemplates] 아래에 있습니다.  
   
@@ -267,7 +262,7 @@ ms.locfileid: "51785328"
   
  예를 들어, 엔터프라이즈 프레임 워크 프로젝트 템플릿은 다음 레지스트리 항목을 추가합니다.  
   
- HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\7.0Exp\Setup\EF\ProductDir C:\Program Files\Microsoft Visual Studio\EnterpriseFrameworks\ =  
+ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\7.0Exp\Setup\EF\ProductDir = C:\Program Files\Microsoft Visual Studio\EnterpriseFrameworks\  
   
  즉, 한 PROJECT_TYPE를 포함 하는 경우 = 이전에 지정한 ProductDir 디렉터리에 사용자.vsz 파일 환경 찾습니다.vsz 파일에서 EF 항목입니다.  
   
@@ -275,4 +270,3 @@ ms.locfileid: "51785328"
  [검사 목록: 새 프로젝트 형식 만들기](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [프로젝트 모델의 요소](../../extensibility/internals/elements-of-a-project-model.md)   
  [프로젝트 팩터리를 사용하여 프로젝트 인스턴스 만들기](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
-

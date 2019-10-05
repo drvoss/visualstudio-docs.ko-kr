@@ -1,27 +1,22 @@
 ---
 title: 함수 뷰 - 경합 데이터 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Functions view
 ms.assetid: 208773b0-1a54-4b7a-ad37-2b6fd4f731d4
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4ada92736312501d05504cf7b69ad07b549f31df
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1aaab824f40c0cd6ba0a240a6f3035d7ebcccd00
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68141903"
 ---
 # <a name="functions-view---contention-data"></a>함수 뷰 - 경합 데이터
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,6 +51,3 @@ ms.locfileid: "51765265"
  [함수 뷰 - 샘플링](../profiling/functions-view-dotnet-memory-sampling-data.md)   
  [함수 뷰](../profiling/functions-view-instrumentation-data.md)   
  [함수 뷰](../profiling/functions-view-sampling-data.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: 옵션, 텍스트 편집기, C#, IntelliSense | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Intellisense
 - VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Intellisense
@@ -23,22 +18,21 @@ ms.assetid: 3466dedb-e5f4-424c-8dd8-e4941b2f4fc2
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 31c9909e5ea9364e806fdd2d7a39903bf1468abb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: dc4d918f3eae9088e2b36b7bebbb69ce130e26d9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49262173"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674147"
 ---
 # <a name="options-text-editor-c-intellisense"></a>옵션, 텍스트 편집기, C#, IntelliSense
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **IntelliSense** 속성 페이지를 사용하여 Visual C#용 IntelliSense의 동작에 영향을 주는 설정을 수정합니다. **도구** 메뉴에서 **옵션**을 클릭하고, **텍스트 편집기** 폴더에서 **C#** 을 클릭하고 나서, **IntelliSense**를 클릭하여 **IntelliSense** 속성 페이지에 액세스할 수 있습니다.  
   
 > [!NOTE]
->  표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
+> 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.  
   
  **IntelliSense** 속성 페이지에는 다음 속성이 포함되어 있습니다.  
   
@@ -47,10 +41,10 @@ ms.locfileid: "49262173"
  이 옵션을 선택하면 입력하기 시작할 때 IntelliSense에서 자동으로 완성 목록을 표시합니다. 이 옵션을 선택하지 않으면 IntelliSense 완성은 **IntelliSense** 메뉴를 선택하거나 CTRL+SPACE를 눌러 사용할 수 있습니다.  
   
  **완성 목록에 키워드 배치**  
- 이 옵션을 선택하면 IntelliSense에서는 C# 키워드(예: [class](http://msdn.microsoft.com/library/b95d8815-de18-4c3f-a8cc-a0a53bdf8690))를 완성 목록에 추가합니다.  
+ 이 옵션을 선택하면 IntelliSense에서는 C# 키워드(예: [class](https://msdn.microsoft.com/library/b95d8815-de18-4c3f-a8cc-a0a53bdf8690))를 완성 목록에 추가합니다.  
   
  **완성 목록에 코드 조각 배치**  
- 이 옵션을 선택하면 IntelliSense에서는 C# 코드 조각의 별칭을 완성 목록에 추가합니다. 코드 조각 별칭이 키워드(예: [class](http://msdn.microsoft.com/library/b95d8815-de18-4c3f-a8cc-a0a53bdf8690))와 같은 경우 키워드는 바로 가기로 대체됩니다. 자세한 내용은 [Visual C# 코드 조각](../../ide/visual-csharp-code-snippets.md)을 참조하세요.  
+ 이 옵션을 선택하면 IntelliSense에서는 C# 코드 조각의 별칭을 완성 목록에 추가합니다. 코드 조각 별칭이 키워드(예: [class](https://msdn.microsoft.com/library/b95d8815-de18-4c3f-a8cc-a0a53bdf8690))와 같은 경우 키워드는 바로 가기로 대체됩니다. 자세한 내용은 [Visual C# 코드 조각](../../ide/visual-csharp-code-snippets.md)을 참조하세요.  
   
 ## <a name="selection-in-completion-lists"></a>완성 목록의 선택  
  **다음 문자를 입력하면 커밋됨:**  
@@ -78,8 +72,5 @@ ms.locfileid: "49262173"
   
 ## <a name="see-also"></a>참고 항목  
  [옵션 대화 상자, 환경, 일반](../../ide/reference/general-environment-options-dialog-box.md)   
- [XML 문서 주석](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)   
+ [XML 문서 주석](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)   
  [IntelliSense 사용](../../ide/using-intellisense.md)
-
-
-

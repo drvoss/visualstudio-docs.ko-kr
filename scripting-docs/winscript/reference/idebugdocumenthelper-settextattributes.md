@@ -2,7 +2,6 @@
 title: IDebugDocumentHelper::SetTextAttributes | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce837eda3a0d83a830e5d5e281b2d24cb932063a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5d6ef4130cd9383cf4f59c2e3f5407bdb7780a0e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949021"
 ---
 # <a name="idebugdocumenthelpersettextattributes"></a>IDebugDocumentHelper::SetTextAttributes
-범위의 텍스트를 재정의 그 텍스트에 다른 특성에 특성을 설정 합니다.  
+해당 텍스트의 다른 특성을 재정의 하는 텍스트의 범위에 특성을 설정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT SetTextAttributes(  
    ULONG              ulCharOffset,  
    ULONG              cChars,  
@@ -46,7 +45,7 @@ HRESULT SetTextAttributes(
  [in] 범위에 있는 문자의 수입니다.  
   
  `pstaTextAttr`  
- [in] 텍스트의 범위에 대 한 소스 텍스트 특성입니다.  
+ [in] 텍스트 범위에 대 한 원본 텍스트 특성입니다.  
   
 ## <a name="return-value"></a>반환 값  
  이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
@@ -56,7 +55,7 @@ HRESULT SetTextAttributes(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 호출 하면 오류가 발생 `SetTextAttributes` 문서에 해당 텍스트를 추가 하기 전에 텍스트 범위에 있습니다. 호출 된 `AddDBCSText`, `AddUnicodeText`, 또는 `AddDeferredText` 문서에 텍스트를 추가 하는 방법입니다.  
+ 호출 하면 오류가 발생 `SetTextAttributes` 텍스트 범위의 텍스트 문서에 추가 됩니다. 호출 된 `AddDBCSText`, `AddUnicodeText`, 또는 `AddDeferredText` 문서에 텍스트를 추가 하는 방법입니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugDocumentHelper 인터페이스](../../winscript/reference/idebugdocumenthelper-interface.md)   

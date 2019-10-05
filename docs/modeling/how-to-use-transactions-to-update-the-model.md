@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: f42c7a384b4f46864e4c79d386cd82ca39949a61
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9a7514e3ff0c876a669f514a7e17bb02b73c19c2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62936851"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>방법: 트랜잭션을 사용하여 모델 업데이트
 트랜잭션에 저장소에 대 한 변경 내용을 그룹으로 처리할지 있는지 확인 합니다. 그룹화 된 변경 내용은 커밋 또는 단일 단위로 롤백될 수 있습니다.
@@ -58,9 +57,9 @@ catch (Exception ex)
 ## <a name="rolling-back-a-transaction"></a>트랜잭션 롤백
  저장소를 유지 하거나 트랜잭션이 이전 상태로 되돌아갑니다 않도록, 다음이 전략 중 하나를 사용할 수 있습니다.
 
-1.  트랜잭션의 범위 내에서 잡히지 않는 예외가 발생 합니다.
+1. 트랜잭션의 범위 내에서 잡히지 않는 예외가 발생 합니다.
 
-2.  명시적 트랜잭션을 롤백하십시오.
+2. 명시적 트랜잭션을 롤백하십시오.
 
     ```csharp
     this.Store.TransactionManager.CurrentTransaction.Rollback();

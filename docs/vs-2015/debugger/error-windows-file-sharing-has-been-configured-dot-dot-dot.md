@@ -1,14 +1,9 @@
 ---
 title: '오류: Windows 파일 공유가 구성 되었습니다... | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.remote_credentials_prohibited
 dev_langs:
@@ -20,15 +15,15 @@ ms.assetid: c45a1b74-61ec-4c64-9e2c-13051a4f50a5
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 30a2fd01828d92fadeb901305f56ad8c65b863d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 96d65ae615522bcee43ddf5e8181e96eecc0d958
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157509"
 ---
-# <a name="error-windows-file-sharing-has-been-configured"></a>오류: ...Windows 파일 공유가 구성되었습니다.
+# <a name="error-windows-file-sharing-has-been-configured"></a>오류: Windows 파일 공유가 구성되었음...
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 원격 컴퓨터에 다른 사용자 이름을 사용하여 연결하도록 Windows 파일 공유가 구성되었습니다. 이러한 구성은 원격 디버깅과 호환되지 않습니다.  
@@ -41,19 +36,16 @@ ms.locfileid: "51803918"
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
-1.  다른 계정 이름을 사용하여 로컬 컴퓨터 즉, 디버깅하고 있는 컴퓨터에 로그온합니다.  
+1. 다른 계정 이름을 사용하여 로컬 컴퓨터 즉, 디버깅하고 있는 컴퓨터에 로그온합니다.  
   
-     또는  
+     —또는—  
   
-     . 원격 컴퓨터와의 연결을 끊고 사용자의 계정 이름을 사용하여 다른 컴퓨터에 연결하도록 파일 공유를 다시 구성합니다.  
+     을 선택합니다. 원격 컴퓨터와의 연결을 끊고 사용자의 계정 이름을 사용하여 다른 컴퓨터에 연결하도록 파일 공유를 다시 구성합니다.  
   
-    1.  에 **시작** 메뉴에서 **Accessories**를 클릭 하 고 **명령 프롬프트**합니다.  
+    1. **시작** 메뉴에서 **보조 프로그램**을 가리킨 다음, **명령 프롬프트**를 클릭합니다.  
   
-    2.  Windows 명령 프롬프트에 다음과 같이 입력합니다.  
+    2. Windows 명령 프롬프트에 다음과 같이 입력합니다.  
   
          `net use /delete computer_name`  
   
-    3.  Windows 도움말에 문서화된 방법을 사용하여 파일 공유 설정을 변경합니다.
-
-
-
+    3. Windows 도움말에 문서화된 방법을 사용하여 파일 공유 설정을 변경합니다.

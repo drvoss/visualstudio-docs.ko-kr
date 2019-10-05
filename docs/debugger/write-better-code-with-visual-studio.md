@@ -1,50 +1,176 @@
 ---
-title: 더 나은 C# 코드를 작성하여 버그 수정
-description: 작은 버그를 사용 하 여 더 나은 코드를 작성 하는 방법 이해
+title: 디버깅 기술 및 도구
+description: 예외 문제를 수정 하 고 오류를 수정 하 여 코드 개선에 Visual Studio를 사용 하 여 버그가 줄어들었습니다를 사용 하 여 더 나은 코드를 작성 합니다.
 ms.custom:
-- debug-experiments
+- debug-experiment
 - seodec18
-ms.date: 11/20/2018
-ms.technology: vs-ide-debug
+ms.date: 01/24/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2e3aaebd02754556f028f53a190160f502ef9ca
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MTE95
+ms.openlocfilehash: 8b34e23b1bc7972563d6d8d014ba0728dc637b34
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051677"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262138"
 ---
-# <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>잘 작성 하 여 버그 수정 C# Visual Studio를 사용 하는 코드
+# <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>디버깅 기술 및 더 나은 코드를 작성할 수 있도록 도구
 
-코드를 디버깅 걸리는-수 있으며 때로는 이유도 바로-작업. 효과적으로 디버깅 하는 방법을 배울 시간이 걸리지만 Visual Studio와 같은 강력한 IDE를 훨씬 더 쉽게 작업을 수행할 수 있습니다. IDE는 코드를 보다 신속 하 게 디버깅할 수 뿐 아니라 하 고, 하지만 더 적은 버그를 사용 하 여 더 나은 코드를 작성할 수 있습니다 수 있습니다. 이 문서의 목적은 코드 분석기를 사용 하는 경우 이해 하 게 되므로, 디버거를 사용 하 고 다른 도구를 사용 하는 경우에 디버깅 프로세스의 전체적인 보기를 제공 하는 것입니다.  
+코드에서 버그 및 오류를 수정 하는 걸리는-수 고 때로는 이유도 바로-작업. 효과적으로 디버깅 하는 방법을 배울 시간이 걸리지만 Visual Studio와 같은 강력한 IDE를 훨씬 더 쉽게 작업을 수행할 수 있습니다. IDE 오류를 수정 하 고 코드를 보다 신속 하 게 디버그 뿐 아니라 하 고, 하지만 버그가 줄어 드를 사용 하 여 더 나은 코드를 작성 하는 도움말 수도 수 있습니다. 이 문서의 목적은 코드 분석기를 사용 하는 경우 이해 하 게 되므로 "버그 수정" 프로세스의 전체적인 보기를 제공 하는 디버거를 사용 하는 경우 예외를 해결 하는 방법 및 의도 대 한 코딩 하는 방법입니다. 알고 있는 경우 디버거를 사용 해야 [디버거 소개](../debugger/debugger-feature-tour.md)합니다.
 
-이 문서에서는 생산성 디버깅 세션을 확인 하기 위해 IDE를 활용 하는 방법에 대 한 이야기입니다. 에서는 터치 여러 작업을 같은:
+이 문서에서는 생산성 코딩 세션을 확인 하기 위해 IDE를 활용 하는 방법에 대 한 이야기입니다. 에서는 터치 여러 작업을 같은:
 
 * IDE의 코드 분석기를 활용 하 여 디버깅 하는 코드를 준비
 
 * 예외 (런타임 오류) 문제를 수정 하는 방법
 
-* 의도 대 한 코딩 하 여 버그를 최소화 하는 방법
+* 의도 (assert 사용)에 대 한 코딩 하 여 버그를 최소화 하는 방법
 
 * 디버거를 사용 하는 경우
 
-이러한 작업을 보여 주기 위해 오류 및 앱을 디버깅 하려고 할 때 발생 하는 버그의 가장 일반적인 종류 중 일부를 살펴보겠습니다. 샘플 코드는 있지만 C#개념 정보는 일반적으로 c + +, Visual Basic의 경우 JavaScript에 적용 되 고 (언급 한 위치 제외) Visual Studio에서 다른 언어를 지원 합니다. 스크린샷은 C#에 있습니다.
+이러한 작업을 보여 주기 위해 오류 및 앱을 디버깅 하려고 할 때 발생 하는 버그의 가장 일반적인 종류 중 일부를 살펴보겠습니다. 샘플 코드는 있지만 C#, 개념 정보는 일반적으로 적용할 C++, Visual Basic, JavaScript 및 Visual Studio (언급 한 위치 제외) 지 원하는 다른 언어입니다. 스크린샷은 C#에 있습니다.
 
-## <a name="follow-along-using-the-sample-app"></a>샘플 앱을 사용 하 여 따라
+## <a name="create-a-sample-app-with-some-bugs-and-errors-in-it"></a>일부 버그와 오류에 샘플 앱 만들기
 
-원하는 경우 정확한 버그를 포함 하는.NET Framework 또는.NET Core 콘솔 앱 및 여기에서 설명 하 고 과정을 따르려면 하 고 픽스를 직접 변경할 수 있습니다 하는 오류를 만들 수 있습니다.
+다음 코드에 몇 가지 버그를 Visual Studio IDE를 사용 하 여 해결할 수 있습니다. 여기에 앱은 가져오는 JSON 데이터로 작업을 데이터 개체를 역직렬화 하 고 새 데이터를 사용 하 여 간단한 목록을 업데이트를 시뮬레이션 하는 간단한 앱.
 
-앱을 만들려면 Visual Studio를 열고 선택 **파일 > 새 프로젝트**합니다. 아래 **Visual C#** , 선택 **Windows Desktop** 또는 **.NET Core**를 선택한 다음 가운데 창에서을 **콘솔 앱**. 같은 이름을 입력 **Console_Parse_JSON** 누릅니다 **확인**합니다. Visual Studio가 프로젝트를 만듭니다. 붙여넣기 합니다 [샘플 코드](#sample-code) 프로젝트의 *Program.cs* 파일입니다.
+앱을 만들려면:
 
-> [!NOTE]
-> **콘솔 애플리케이션** 프로젝트 템플릿이 표시되지 않으면 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Studio 설치 관리자 열기** 링크를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. .**NET 데스크톱 개발** 또는 **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음, **수정**을 선택합니다.
+1. Visual Studio를 열고 **파일** > **새로 만들기** > **프로젝트**합니다. 아래 **Visual C#** , 선택 **Windows Desktop** 또는 **.NET Core**를 선택한 다음 가운데 창에서을 **콘솔 앱**.
+
+    > [!NOTE]
+    > **콘솔 애플리케이션** 프로젝트 템플릿이 표시되지 않으면 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Studio 설치 관리자 열기** 링크를 클릭합니다. Visual Studio 설치 관리자가 시작됩니다. .**NET 데스크톱 개발** 또는 **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음, **수정**을 선택합니다.
+
+2. 에 **이름을** 필드에 입력 **Console_Parse_JSON** 클릭 **확인**합니다. Visual Studio가 프로젝트를 만듭니다.
+
+3. 프로젝트의 기본 코드 바꿉니다 *Program.cs* 아래 샘플 코드를 사용 하 여 파일입니다.
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization.Json;
+using System.Runtime.Serialization;
+using System.IO;
+
+namespace Console_Parse_JSON
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var localDB = LoadRecords();
+            string data = GetJsonData();
+
+            User[] users = ReadToObject(data);
+
+            UpdateRecords(localDB, users);
+
+            for (int i = 0; i < users.Length; i++)
+            {
+                List<User> result = localDB.FindAll(delegate (User u) {
+                    return u.lastname == users[i].lastname;
+                    });
+                foreach (var item in result)
+                {
+                    Console.WriteLine($"Matching Record, got name={item.firstname}, lastname={item.lastname}, age={item.totalpoints}");
+                }
+            }
+
+            Console.ReadKey();
+        }
+
+        // Deserialize a JSON stream to a User object.
+        public static User[] ReadToObject(string json)
+        {
+            User deserializedUser = new User();
+            User[] users = { };
+            MemoryStream ms = new MemoryStream(Encoding.UTF8.GetBytes(json));
+            DataContractJsonSerializer ser = new DataContractJsonSerializer(users.GetType());
+
+            users = ser.ReadObject(ms) as User[];
+
+            ms.Close();
+            return users;
+        }
+
+        // Simulated operation that returns JSON data.
+        public static string GetJsonData()
+        {
+            string str = "[{ \"points\":4o,\"firstname\":\"Fred\",\"lastname\":\"Smith\"},{\"lastName\":\"Jackson\"}]";
+            return str;
+        }
+
+        public static List<User> LoadRecords()
+        {
+            var db = new List<User> { };
+            User user1 = new User();
+            user1.firstname = "Joe";
+            user1.lastname = "Smith";
+            user1.totalpoints = 41;
+
+            db.Add(user1);
+
+            User user2 = new User();
+            user2.firstname = "Pete";
+            user2.lastname = "Peterson";
+            user2.totalpoints = 30;
+
+            db.Add(user2);
+
+            return db;
+        }
+        public static void UpdateRecords(List<User> db, User[] users)
+        {
+            bool existingUser = false;
+
+            for (int i = 0; i < users.Length; i++)
+            {
+                foreach (var item in db)
+                {
+                    if (item.lastname == users[i].lastname && item.firstname == users[i].firstname)
+                    {
+                        existingUser = true;
+                        item.totalpoints += users[i].points;
+
+                    }
+                }
+                if (existingUser == false)
+                {
+                    User user = new User();
+                    user.firstname = users[i].firstname;
+                    user.lastname = users[i].lastname;
+                    user.totalpoints = users[i].points;
+
+                    db.Add(user);
+                }
+            }
+        }
+    }
+
+    [DataContract]
+    internal class User
+    {
+        [DataMember]
+        internal string firstname;
+
+        [DataMember]
+        internal string lastname;
+
+        [DataMember]
+        // internal double points;
+        internal string points;
+
+        [DataMember]
+        internal int totalpoints;
+    }
+}
+```
 
 ## <a name="find-the-red-and-green-squiggles"></a>빨간색 및 녹색 오류 표시선을 찾습니다.
 
@@ -66,9 +192,9 @@ ms.locfileid: "53051677"
 
 이 항목을 클릭 하면 Visual Studio 추가 합니다 `using System.Text` 맨 위에 있는 문을 합니다 *Program.cs* 파일과 빨간색 구부러진 곡선은 사라집니다. (제안 된 수정 사항을 어떻게 되는지 확실 하지 않은 경우 선택 합니다 **변경 내용 미리 보기** 수정을 적용 하기 전에 오른쪽의 링크입니다.)
 
-이전 오류는 일반적으로 새로 추가 하 여 수정 하는 일반적인 단일 `using` 문을 코드에 있습니다. 여러 가지 일반적인 마찬가지로 오류가 있습니다이 같은 ```The type or namespace `Name` cannot be found.``` 이러한 종류의 오류는 누락 된 어셈블리 참조를 나타낼 수 있습니다 (선택, 프로젝트를 마우스 오른쪽 단추로 클릭 **추가** > **참조**)에 철자가 잘못 된 이름 또는 NuGet을 사용 하 여 추가 해야 하는 누락 된 라이브러리 (선택한 프로젝트를 마우스 오른쪽 단추로 클릭 **NuGet 패키지 관리**).
+이전 오류는 일반적으로 새로 추가 하 여 수정 하는 일반적인 단일 `using` 문을 코드에 있습니다. 여러 가지 일반적인 마찬가지로 오류가 있습니다이 같은 ```The type or namespace `Name` cannot be found.``` 이러한 종류의 오류는 누락 된 어셈블리 참조를 나타낼 수 있습니다 (선택, 프로젝트를 마우스 오른쪽 단추로 클릭 **추가** > **참조**)에 철자가 잘못 된 이름 또는 추가 해야 하는 누락 된 라이브러리 (에 대 한 C#프로젝트를 마우스 오른쪽 단추로 클릭 하 고 선택 **NuGet 패키지 관리**).
 
-## <a name="fix-the-errors-and-warnings"></a>오류 및 경고 해결
+## <a name="fix-the-remaining-errors-and-warnings"></a>나머지 오류 및 경고 해결
 
 이 코드에서 살펴볼 자세한 오류 표시선 몇 가지가 있습니다. 여기서 일반적인 유형 변환 오류가 표시 됩니다. 오류 표시선 위로 마우스를 가져가면 string을 int로 변환할 변환을 수행 하는 명시적 코드를 추가 하지 않는 경우 지원 되지 않는 코드를 시도 하는 것이 표시 됩니다.
 
@@ -129,7 +255,7 @@ item.totalpoints += users[i].points;
 
 * 사용자에 게 발생할 수 있는 것이 예외는?
 
-이전의 경우 버그를 수정 합니다. (샘플 앱에서 즉, 잘못 된 데이터를 수정 합니다.) 사용 하 여 코드에서 예외를 처리 해야 두 번째 경우는 `try/catch` 블록 (살펴봅니다 다음 섹션의 다른 가능한 수정). 샘플 앱에서 다음 코드를 바꿉니다.
+이전의 경우 버그를 수정 합니다. (샘플 앱에서 즉, 잘못 된 데이터를 수정 합니다.) 사용 하 여 코드에서 예외를 처리 해야 두 번째 경우는 `try/catch` 블록 (살펴봅니다 다음 섹션의 다른 가능한 전략). 샘플 앱에서 다음 코드를 바꿉니다.
 
 ```csharp
 users = ser.ReadObject(ms) as User[];
@@ -168,7 +294,7 @@ catch (SerializationException)
     }
     ```
 
-* 알 수 없는 포함할 수 있는 함수 앱에서는 특별히 해당 외부 데이터 (예: 웹 요청)와 상호 작용, 예외에 대해 함수는 throw 가능성이 확인 하려면 설명서를 참조 합니다. 이 응용 프로그램을 디버깅 및 적절 한 오류 처리에 대 한 중요 한 정보를 수 있습니다.
+* 알 수 없는 포함할 수 있는 함수 앱에서 특히 외부 데이터 (예: 웹 요청)와 상호 작용, 예외에 대해 함수는 throw 가능성이 확인 하려면 설명서를 참조 합니다. 이 응용 프로그램을 디버깅 및 적절 한 오류 처리에 대 한 중요 한 정보를 수 있습니다.
 
 샘플 앱에 대 한 해결 합니다 `SerializationException` 에 `GetJsonData` 메서드를 변경 하 여 `4o` 에 `40`.
 
@@ -278,131 +404,6 @@ Debug.Assert(users[0].points > 0);
 ## <a name="fix-performance-issues"></a>성능 문제 해결
 
 다른 종류의 버그 이면 앱이 느리게 실행 또는 너무 많은 메모리를 사용 하는 비효율적인 코드를 포함 합니다. 일반적으로 성능 최적화 응용 프로그램 개발의 뒷부분에 나오는 할 것입니다. 그러나 실행할 수 있습니다 성능 문제를 초기 (예를 들어 표시 앱의 일부 느리게 실행 되 고 있는지), 초기에 프로 파일링 도구를 사용 하 여 앱을 테스트 해야 할 수 있습니다. CPU 사용량 도구 및 메모리 분석기와 같은 도구를 프로 파일링 하는 방법에 대 한 자세한 내용은 참조 하세요. [프로 파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)합니다.
-
-## <a name="sample-code"></a> 샘플 코드
-
-다음 코드에 몇 가지 버그를 Visual Studio IDE를 사용 하 여 해결할 수 있습니다. 여기에 앱은 가져오는 JSON 데이터로 작업을 데이터 개체를 역직렬화 하 고 새 데이터를 사용 하 여 간단한 목록을 업데이트를 시뮬레이션 하는 간단한 앱.
-
-```csharp
-using System;
-using System.Collections.Generic;
-using System.Runtime.Serialization.Json;
-using System.Runtime.Serialization;
-using System.IO;
-
-namespace Console_Parse_JSON_DotNetCore
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            var localDB = LoadRecords();
-            string data = GetJsonData();
-
-            User[] users = ReadToObject(data);
-
-            UpdateRecords(localDB, users);
-
-            for (int i = 0; i < users.Length; i++)
-            {
-                List<User> result = localDB.FindAll(delegate (User u) { 
-                    return u.lastname == users[i].lastname;
-                    });
-                foreach (var item in result)
-                {
-                    Console.WriteLine($"Matching Record, got name={item.firstname}, lastname={item.lastname}, age={item.totalpoints}");
-                }
-            }
-
-            Console.ReadKey();
-        }
-
-        // Deserialize a JSON stream to a User object.  
-        public static User[] ReadToObject(string json)
-        {
-            User deserializedUser = new User();
-            User[] users = { };
-            MemoryStream ms = new MemoryStream(Encoding.UTF8.GetBytes(json));
-            DataContractJsonSerializer ser = new DataContractJsonSerializer(users.GetType());
-
-            users = ser.ReadObject(ms) as User[];
-
-            ms.Close();
-            return users;
-        }
-
-        // Simulated operation that returns JSON data.
-        public static string GetJsonData()
-        {
-            string str = "[{ \"points\":4o,\"firstname\":\"Fred\",\"lastname\":\"Smith\"},{\"lastName\":\"Jackson\"}]";
-            return str;
-        }
-
-        public static List<User> LoadRecords()
-        {
-            var db = new List<User> { };
-            User user1 = new User();
-            user1.firstname = "Joe";
-            user1.lastname = "Smith";
-            user1.totalpoints = 41;
-
-            db.Add(user1);
-
-            User user2 = new User();
-            user2.firstname = "Pete";
-            user2.lastname = "Peterson";
-            user2.totalpoints = 30;
-
-            db.Add(user2);
-
-            return db;
-        }
-        public static void UpdateRecords(List<User> db, User[] users)
-        {
-            bool existingUser = false;
-
-            for (int i = 0; i < users.Length; i++)
-            {
-                foreach (var item in db)
-                {
-                    if (item.lastname == users[i].lastname && item.firstname == users[i].firstname)
-                    {
-                        existingUser = true;
-                        item.totalpoints += users[i].points;
-
-                    }
-                }
-                if (existingUser == false)
-                {
-                    User user = new User();
-                    user.firstname = users[i].firstname;
-                    user.lastname = users[i].lastname;
-                    user.totalpoints = users[i].points;
-
-                    db.Add(user);
-                }
-            }
-        }
-    }
-
-    [DataContract]
-    internal class User
-    {
-        [DataMember]
-        internal string firstname;
-
-        [DataMember]
-        internal string lastname;
-
-        [DataMember]
-        // internal double points;
-        internal string points;
-
-        [DataMember]
-        internal int totalpoints;
-    }
-}
-```
 
 ## <a name="next-steps"></a>다음 단계
 

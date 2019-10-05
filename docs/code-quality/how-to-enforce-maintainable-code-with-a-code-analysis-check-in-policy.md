@@ -1,22 +1,21 @@
 ---
-title: '방법: 코드 분석 체크 인 정책을 통해 유지 관리할 수 있는 코드 적용'
+title: 코드 분석 체크 인 정책을 사용 하 여
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, check-in policies
 ms.assetid: d1b3b04f-4dd9-40e6-b2d4-b414d33fb647
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d31e52ab2f158b73a0076414b6d18e0b7421b04
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0924d3c7b6f39e4ec026a77ee8e0418361e311ba
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825719"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260917"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>방법: 코드 분석 체크 인 정책 사용 하 여 유지 관리 가능한 코드 적용
 
@@ -50,7 +49,7 @@ Team foundation 버전 제어의 관리자는 체크 인 정책 요구 사항에
 
    - 복잡성: **CA1502 AvoidExcessiveComplexity** -임계값: 경고에서 25 개가 넘는
 
-   - 유지 관리 인덱스: **CA1505 AvoidUnmaintainableCode** -임계값: 20 개 미만의에서 경고 발생
+   - 유지 관리 인덱스: **CA1505 AvoidUnmaintainableCode** - Threshold: 20 개 미만의에서 경고 발생
 
    - 클래스 결합 합니다. **CA1506 AvoidExcessiveClassCoupling** -임계값: 클래스에 대해 80 개 및 30 개 이상의 메서드에 대 한 경고
 

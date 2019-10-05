@@ -1,14 +1,9 @@
 ---
 title: MSBuild .Targets 파일 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -21,18 +16,17 @@ ms.assetid: f6d98eb4-d2fa-49b7-8e3c-bae1ca3cf596
 caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bec05a2947bad76b0be4e7cf339bbef98a27644e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bab229a3246ac91eaa652be67e98a68aab40e820
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439379"
 ---
 # <a name="msbuild-targets-files"></a>MSBuild .Targets 파일
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]는 일반 시나리오용 항목, 속성, 대상 및 작업이 들어 있는 여러 .targets 파일을 포함합니다. 이러한 파일은 대부분의 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트 파일로 자동 가져오기되므로 쉽게 유지 관리하고 읽을 수 있습니다.  
   
  일반적으로 프로젝트에서는 하나 이상의 .targets 파일을 가져와서 빌드 프로세스를 정의합니다. 예를 들어 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]로 만든 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 프로젝트에서 가져오는 Microsoft.CSharp.targets는 Microsoft.Common.targets를 가져옵니다. [!INCLUDE[csprcs](../includes/csprcs-md.md)] 프로젝트 자체에서 해당 프로젝트와 관련된 항목과 속성을 정의하지만, [!INCLUDE[csprcs](../includes/csprcs-md.md)] 프로젝트에 대한 표준 빌드 규칙은 가져오는 .targets 파일에 정의되어 있습니다.  
@@ -40,7 +34,7 @@ ms.locfileid: "49274237"
  `$(MSBuildToolsPath)` 값은 일반 .targets 파일의 경로를 지정합니다. `ToolsVersion`이 4.0인 경우 파일의 위치는 `WindowsInstallationPath\Microsoft.NET\Framework\v4.0.30319\`입니다.  
   
 > [!NOTE]
->  대상을 직접 만드는 방법에 대한 자세한 내용은 [대상](../msbuild/msbuild-targets.md)을 참조하세요. `Import` 요소를 사용하여 프로젝트 파일을 다른 프로젝트 파일에 삽입하는 방법에 대한 자세한 내용은 [Import 요소(MSBuild)](../msbuild/import-element-msbuild.md) 및 [방법: 여러 프로젝트 파일에서 동일한 대상 사용](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)을 참조하세요.  
+> 대상을 직접 만드는 방법에 대한 자세한 내용은 [대상](../msbuild/msbuild-targets.md)을 참조하세요. 사용 하는 방법에 대 한 자세한 합니다 `Import` 프로젝트 파일을 다른 프로젝트 파일에 삽입할 요소를 참조 하세요 [Import 요소 (MSBuild)](../msbuild/import-element-msbuild.md) 및 [방법: 여러 프로젝트 파일에서 동일한 대상 사용](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)합니다.  
   
 ## <a name="common-targets-files"></a>일반 .Targets 파일  
   
@@ -54,5 +48,3 @@ ms.locfileid: "49274237"
  [Import 요소(MSBuild)](../msbuild/import-element-msbuild.md)   
  [MSBuild 참조](../msbuild/msbuild-reference.md)  
  [MSBuild](msbuild.md)
-
-

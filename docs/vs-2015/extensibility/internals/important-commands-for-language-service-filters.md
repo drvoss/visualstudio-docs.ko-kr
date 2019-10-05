@@ -1,27 +1,22 @@
 ---
 title: 언어에 대 한 중요 명령 필터 서비스 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, filters
 - language services, commands to support
 ms.assetid: 4948c494-3d4d-4f50-b3f9-959e73f90e4d
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2c99fdefdd8a215be04bb16b88f56be56b7fff67
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 03bb20abf32f7c320ed56f4a649a9f43453e7694
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447266"
 ---
 # <a name="important-commands-for-language-service-filters"></a>언어 서비스 필터에 대한 중요 명령
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51787102"
 ## <a name="commands-to-handle"></a>핸들에는 명령  
   
 > [!NOTE]
->  다음 테이블의 모든 명령에 대 한 필터링 하는 필수적이 지 않습니다.  
+> 다음 테이블의 모든 명령에 대 한 필터링 하는 필수적이 지 않습니다.  
   
 |명령|설명|  
 |-------------|-----------------|  
@@ -47,4 +42,3 @@ ms.locfileid: "51787102"
   
 ## <a name="see-also"></a>참고 항목  
  [레거시 언어 서비스 개발](../../extensibility/internals/developing-a-legacy-language-service.md)
-

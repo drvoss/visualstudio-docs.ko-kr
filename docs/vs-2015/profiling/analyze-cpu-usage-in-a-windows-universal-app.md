@@ -1,14 +1,9 @@
 ---
 title: Windows 유니버설 앱에서 CPU 사용량 분석 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,48 +13,48 @@ ms.assetid: c122b08e-e3bf-43e6-bd6c-e776e178fd9a
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 11e8587176ecc452f8f97132d296cff93b09b5ac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MTE95
+ms.openlocfilehash: 105efab7a28f0a21bd7567262ff8ec214715b8ae
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741291"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704572"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Windows 유니버설 앱에서 CPU 사용량 분석
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- 앱 성능 문제를 검토해야 하는 경우 앱에서 CPU를 사용하는 방식을 파악하는 것부터 시작하는 것이 좋습니다. **CPU 사용량** 도구는 CPU가 코드 실행 시간을 어디에 소모하는지를 보여 줍니다. 특정 시나리오에 초점을 CPU 사용량을 실행할 수 있습니다 합니다 [XAML UI 응답성](http://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480) 도구인 합니다 [에너지 소비](../profiling/analyze-energy-use-in-store-apps.md) 도구 또는 둘 다 단일 진단 세션에서.  
+ 앱 성능 문제를 검토해야 하는 경우 앱에서 CPU를 사용하는 방식을 파악하는 것부터 시작하는 것이 좋습니다. **CPU 사용량** 도구는 CPU가 코드 실행 시간을 어디에 소모하는지를 보여 줍니다. 특정 시나리오에 초점을 맞추려면 단일 진단 세션에서 [XAML UI 응답성](https://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480) 도구, [에너지 소비](../profiling/analyze-energy-use-in-store-apps.md) 도구 또는 둘 다를 이용하여 CPU 사용량을 실행할 수 있습니다.  
   
 > [!NOTE]
->  **CPU 사용량** 도구는 Windows Phone Silverlight 8.1 앱과 함께 사용할 수 없습니다.  
+> **CPU 사용량** 도구는 Windows Phone Silverlight 8.1 앱과 함께 사용할 수 없습니다.  
   
  이 연습에서는 간단한 Windows 유니버설 XAML 앱의 CPU 사용량을 수집 및 분석하는 방법을 설명합니다.  
   
-##  <a name="BKMK_Create_the_CpuUseDemo_project"></a> CpuUseDemo 프로젝트 만들기  
+## <a name="BKMK_Create_the_CpuUseDemo_project"></a> CpuUseDemo 프로젝트 만들기  
  **CpuUseDemo**는 CPU 사용량 데이터를 수집 및 분석하는 방법을 보여 주기 위해 만든 앱입니다. 단추는 함수에 대한 여러 호출에서 최대값을 선택하는 메서드를 호출하여 숫자를 생성합니다. 호출된 함수는 임의의 값을 굉장히 많이 만든 다음 마지막 값을 반환합니다. 데이터는 텍스트 상자에 표시됩니다.  
   
-1.  **BlankApp** 템플릿을 사용하여 **CpuUseDemo**라는 새로운 C# Windows 유니버설 앱을 만듭니다.  
+1. **BlankApp** 템플릿을 사용하여 **CpuUseDemo**라는 새로운 C# Windows 유니버설 앱을 만듭니다.  
   
      ![CpuUseDemoProject 만들기](../profiling/media/cpu-use-newproject.png "CPU_USE_NewProject")  
   
-2.  MainPage.xaml을 [이 코드](#BKMK_MainPage_xaml)로 바꿉니다.  
+2. MainPage.xaml을 [이 코드](#BKMK_MainPage_xaml)로 바꿉니다.  
   
-3.  MainPage.xaml.cs를 [이 코드](#BKMK_MainPage_xaml_cs)로 바꿉니다.  
+3. MainPage.xaml.cs를 [이 코드](#BKMK_MainPage_xaml_cs)로 바꿉니다.  
   
-4.  앱을 빌드한 다음 사용해 보세요. 이 앱은 CPU 사용량 데이터 분석의 몇 가지 공통된 사례를 보여 줄 수 있을 정도로 간단합니다.  
+4. 앱을 빌드한 다음 사용해 보세요. 이 앱은 CPU 사용량 데이터 분석의 몇 가지 공통된 사례를 보여 줄 수 있을 정도로 간단합니다.  
   
-##  <a name="BKMK_Collect_CPU_usage_data"></a> CPU 사용량 데이터 수집  
+## <a name="BKMK_Collect_CPU_usage_data"></a> CPU 사용량 데이터 수집  
  ![시뮬레이터에서 앱의 릴리스 빌드 실행](../profiling/media/cpu-use-wt-setsimulatorandretail.png "CPU_USE_WT_SetSimulatorAndRetail")  
   
 1. Visual Studio에서 배포 대상을 **시뮬레이터**로, 솔루션 구성을 **릴리스**로 설정합니다.  
   
-   -   시뮬레이터에서 앱을 실행하면 앱과 Visual Studio IDE를 서로 쉽게 전환할 수 있습니다.  
+   - 시뮬레이터에서 앱을 실행하면 앱과 Visual Studio IDE를 서로 쉽게 전환할 수 있습니다.  
   
-   -   **릴리스** 모드에서 이 앱을 실행하면 앱의 실제 성능을 더 잘 파악할 수 있습니다.  
+   - **릴리스** 모드에서 이 앱을 실행하면 앱의 실제 성능을 더 잘 파악할 수 있습니다.  
   
 2. **디버그** 메뉴에서 **성능 프로파일러...** 를 선택합니다.  
   
@@ -77,14 +72,14 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
   
    ![CpuUsage 보고서](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
   
-##  <a name="BKMK_Analyze_the_CPU_Usage_report"></a> CPU 사용량 보고서 분석  
+## <a name="BKMK_Analyze_the_CPU_Usage_report"></a> CPU 사용량 보고서 분석  
   
-###  <a name="BKMK_CPU_utilization_timeline_graph"></a> CPU 사용률 타임라인 그래프  
+### <a name="BKMK_CPU_utilization_timeline_graph"></a> CPU 사용률 타임라인 그래프  
  ![CpuUtilization&#40;%&#41; 타임라인 그래프](../profiling/media/cpu-use-wt-timelinegraph.png "CPU_USE_WT_TimelineGraph")  
   
  CPU 사용률 그래프는 디바이스의 모든 프로세서 코어에서의 전체 CPU 시간 백분율로 앱의 CPU 활동을 보여 줍니다. 이 보고서의 데이터는 듀얼 코어 컴퓨터에서 수집되었습니다. 대용량 스파이크 두 개는 단추를 두 번 클릭할 경우의 CPU 활동을 보여 줍니다. `GetMaxNumberButton_Click`은 단일 코어에서 동기적으로 수행되므로 메서드 그래프의 높이가 50%를 초과하지 않습니다. `GetMaxNumberAsycButton_Click`은 두 코어에서 비동기적으로 실행되므로 다시 해당 스파이크가 두 코어에서 거의 모든 CPU 리소스를 활용하는 것처럼 보입니다.  
   
-####  <a name="BKMK_Select_timeline_segments_to_view_details"></a> 세부 정보를 볼 타임라인 세그먼트 선택  
+#### <a name="BKMK_Select_timeline_segments_to_view_details"></a> 세부 정보를 볼 타임라인 세그먼트 선택  
  **진단 세션** 타임라인에서 선택 막대를 사용하여 GetMaxNumberButton_Click 데이터에 초점을 맞춥니다.  
   
  ![GetMaxNumberButton&#95;Click 선택됨](../profiling/media/cpu-use-wt-getmaxnumberreport.png "CPU_USE_WT_GetMaxNumberReport")  
@@ -97,10 +92,10 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
   
  이 메서드는 `GetMaxNumberButton_Click`보다 약 1초 더 빨리 완료되었지만 호출 트리 항목의 의미는 덜 명확합니다.  
   
-###  <a name="BKMK_The_CPU_Usage_call_tree"></a> CPU 사용량 호출 트리  
+### <a name="BKMK_The_CPU_Usage_call_tree"></a> CPU 사용량 호출 트리  
  호출 트리 정보 파악을 시작하려면 `GetMaxNumberButton_Click` 세그먼트를 다시 선택하고 호출 트리 세부 정보를 확인합니다.  
   
-####  <a name="BKMK_Call_tree_structure"></a> 호출 트리 구조  
+#### <a name="BKMK_Call_tree_structure"></a> 호출 트리 구조  
  ![GetMaxNumberButton&#95;Click 호출 트리](../profiling/media/cpu-use-wt-getmaxnumbercalltree-annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
   
 |||  
@@ -110,7 +105,7 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
 |![3단계](../profiling/media/procguid-3.png "ProcGuid_3")|두 번째 수준 노드의 자식은 두 번째 수준 시스템과 프레임워크 코드가 호출하거나 만드는 사용자 코드 메서드 및 비동기 루틴입니다.|  
 |![4단계](../profiling/media/procguid-4.png "ProcGuid_4")|메서드의 자식 노드에는 부모 메서드 호출에 대한 데이터만 포함되어 있습니다. **외부 코드 표시** 가 사용하지 않도록 설정되어 있으면 앱 메서드에 **[External Code]** 노드를 포함할 수 있습니다.|  
   
-####  <a name="BKMK_External_Code"></a> 외부 코드  
+#### <a name="BKMK_External_Code"></a> 외부 코드  
  외부 코드는 사용자가 작성한 코드에서 실행된 시스템 및 프레임워크 구성 요소의 함수로 구성됩니다. 외부 코드에는 앱을 시작 및 중지하고, UI를 그리며, 스레딩을 제어하고, 앱에 다른 낮은 수준 서비스를 제공하는 함수가 포함되어 있습니다. 대부분의 경우 외부 코드에 관심이 없으므로 CPU 사용량 호출 트리에서 사용자 메서드의 외부 함수를 하나의 **[External Code]** 노드로 수집합니다.  
   
  외부 코드의 호출 경로를 보려면 **필터 뷰** 목록에서 **외부 코드 보기** 를 선택한 다음 **적용**을 선택합니다.  
@@ -125,7 +120,7 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
   
  ![중첩된 외부 코드 검색](../profiling/media/cpu-use-wt-showexternalcodetoowide-found.png "CPU_USE_WT_ShowExternalCodeTooWide_Found")  
   
-###  <a name="BKMK_Call_tree_data_columns"></a> 호출 트리 데이터 열  
+### <a name="BKMK_Call_tree_data_columns"></a> 호출 트리 데이터 열  
   
 |||  
 |-|-|  
@@ -135,7 +130,7 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
 |**셀프 CPU(밀리초)**|선택한 시간 범위에서의 함수 호출과 함수가 호출한 함수에 소요된 시간(밀리초)입니다.|  
 |**모듈**|함수가 포함된 모듈의 이름 또는 [External Code] 노드에 함수가 포함된 모듈의 수입니다.|  
   
-###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> CPU 사용량 호출 트리의 비동기 함수  
+### <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> CPU 사용량 호출 트리의 비동기 함수  
  컴파일러에서 비동기 메서드가 발생하면 메서드 실행을 제어하는 숨겨진 클래스를 만듭니다. 개념적으로 클래스는 원래 메서드의 연산을 비동기적으로 호출하고, 이러한 연산에 필요한 콜백, 스케줄러 및 반복기를 올바르게 호출하는 컴파일러 생성 함수 목록을 포함하는 상태 시스템입니다. 부모 메서드가 원래 메서드를 호출하면 런타임에서 부모의 실행 컨텍스트에서 메서드를 제거하고, 앱의 실행을 제어하는 시스템과 프레임워크 코드의 컨텍스트에서 숨겨진 클래스의 메서드를 실행합니다. 비동기 메서드는 일반적으로 하나 이상의 서로 다른 스레드에서 실행되지만 항상 그렇지는 않습니다. 이 코드는 트리의 상단 노드 바로 아래의 **[External Code]** 노드의 자식으로 CPU 사용량 호출 트리에 표시됩니다.  
   
  이 예제에서 이 코드를 보려면 타임라인에서 `GetMaxNumberAsyncButton_Click` 세그먼트를 다시 선택합니다.  
@@ -146,22 +141,22 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
   
  ![확장된 GetMaxNumberAsyncButton&#95;Click 호출 트리](../profiling/media/cpu-use-wt-getmaxnumberasync-expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
   
--   `MainPage::GetMaxNumberAsyncButton_Click`는 아주 작은 기능만을 수행합니다. 이 메서드는 작업 값 목록을 관리하고, 결과의 최대값을 계산하고, 출력을 표시합니다.  
+- `MainPage::GetMaxNumberAsyncButton_Click`는 아주 작은 기능만을 수행합니다. 이 메서드는 작업 값 목록을 관리하고, 결과의 최대값을 계산하고, 출력을 표시합니다.  
   
--   `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` 는 `GetNumberAsync`에 대한 호출을 래핑하는 48개 작업을 예약 및 시작하는 데 필요한 활동을 보여 줍니다.  
+- `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` 는 `GetNumberAsync`에 대한 호출을 래핑하는 48개 작업을 예약 및 시작하는 데 필요한 활동을 보여 줍니다.  
   
--   `MainPage::<GetNumberAsync>b__b`는 `GetNumber`를 호출하는 작업의 활동을 보여 줍니다.  
+- `MainPage::<GetNumberAsync>b__b`는 `GetNumber`를 호출하는 작업의 활동을 보여 줍니다.  
   
-##  <a name="BKMK_Next_steps"></a> 다음 단계  
+## <a name="BKMK_Next_steps"></a> 다음 단계  
  CpuUseDemo 앱이 가장 뛰어나지는 않지만, 성능 및 진단 허브에서 비동기 작업 및 기타 도구로 실험하는 데 사용하여 이 앱의 활용성을 확장할 수 있습니다.  
   
--   `MainPage::<GetNumberAsync>b__b`는 GetNumber 메서드를 실행하는 것보다 [External Code]에서 더 많은 시간을 소모합니다. 이러한 시간의 상당 부분은 비동기 작업의 오버헤드가 차지합니다. 작업 수를 늘리고(MainPage.xaml.cs의 `NUM_TASKS` 상수에서 설정) `GetNumber`의 반복 횟수를 줄여 보세요(`MIN_ITERATIONS` 값 변경). 수집 시나리오를 실행하고 `MainPage::<GetNumberAsync>b__b`의 CPU 활동을 원래 CPU 사용량 진단 세션의 CPU 활동과 비교합니다. 작업 수를 줄이고 반복 횟수를 늘려 보세요.  
+- `MainPage::<GetNumberAsync>b__b`는 GetNumber 메서드를 실행하는 것보다 [External Code]에서 더 많은 시간을 소모합니다. 이러한 시간의 상당 부분은 비동기 작업의 오버헤드가 차지합니다. 작업 수를 늘리고(MainPage.xaml.cs의 `NUM_TASKS` 상수에서 설정) `GetNumber`의 반복 횟수를 줄여 보세요(`MIN_ITERATIONS` 값 변경). 수집 시나리오를 실행하고 `MainPage::<GetNumberAsync>b__b`의 CPU 활동을 원래 CPU 사용량 진단 세션의 CPU 활동과 비교합니다. 작업 수를 줄이고 반복 횟수를 늘려 보세요.  
   
--   사용자는 앱의 실제 성능에는 크게 관심이 없고 앱의 인지 성능과 응답성에 관심 있는 경우가 많습니다. XAML UI 응답성 도구는 인지되는 응답성에 영향을 주는 UI 스레드의 활동 세부 정보를 보여 줍니다.  
+- 사용자는 앱의 실제 성능에는 크게 관심이 없고 앱의 인지 성능과 응답성에 관심 있는 경우가 많습니다. XAML UI 응답성 도구는 인지되는 응답성에 영향을 주는 UI 스레드의 활동 세부 정보를 보여 줍니다.  
   
      진단 및 성능 허브에서 새 세션을 만들고, XAML UI 응답성 도구와 CPU 사용량 도구를 모두 추가합니다. 컬렉션 시나리오를 실행합니다. 여기까지 읽었다면 보고서 내용을 대부분 파악했겠지만, 두 메서드에 대한 **UI 스레드 사용률** 타임라인 그래프의 차이는 현저합니다. 복잡한 실제 앱에서 두 도구를 함께 사용하면 매우 유용할 수 있습니다.  
   
-##  <a name="BKMK_MainPage_xaml"></a> MainPage.xaml  
+## <a name="BKMK_MainPage_xaml"></a> MainPage.xaml  
   
 ```csharp  
 <Page  
@@ -196,7 +191,7 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
   
 ```  
   
-##  <a name="BKMK_MainPage_xaml_cs"></a> MainPage.xaml.cs  
+## <a name="BKMK_MainPage_xaml_cs"></a> MainPage.xaml.cs  
   
 ```csharp  
 using System;  
@@ -321,6 +316,3 @@ namespace CpuUseDemo
 }  
   
 ```
-
-
-

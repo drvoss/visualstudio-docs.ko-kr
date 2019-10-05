@@ -1,14 +1,9 @@
 ---
 title: 바로 가기 키(도움말 뷰어) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: conceptual
 helpviewer_keywords:
 - shortcut keys [Help Viewer 2.0]
 - Help Viewer 2.0, shortcut keys
@@ -16,13 +11,13 @@ ms.assetid: ec14c85d-7efb-441c-a46b-bee34a227e39
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bbeac2d261e24fe8ed7df406045ce7d3d6d0fe3b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d69bbe2145648c1bdb993cb6a4e45b26ae602b2a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203495"
 ---
 # <a name="shortcut-keys-help-viewer"></a>바로 가기 키(도움말 뷰어)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +26,9 @@ ms.locfileid: "49195639"
   
 |영역|키 입력|작업|  
 |----------|---------------|------------|  
-|일반 응용 프로그램|공백|편집 필드 이외의 아무 곳에서나 Enter 키 대신 사용합니다.|  
-|일반 응용 프로그램|F1|현재 UI 요소에 대한 도움말을 엽니다.|  
-|일반 응용 프로그램|F11|전체 화면 보기와 일반 보기 간에 전환합니다.|  
+|일반 애플리케이션|공백|편집 필드 이외의 아무 곳에서나 Enter 키 대신 사용합니다.|  
+|일반 애플리케이션|F1|현재 UI 요소에 대한 도움말을 엽니다.|  
+|일반 애플리케이션|F11|전체 화면 보기와 일반 보기 간에 전환합니다.|  
 |Toolbar|백스페이스<br /><br /> -또는-<br /><br /> Alt+왼쪽 화살표|이전 페이지를 표시합니다.|  
 |Toolbar|Alt+오른쪽 화살표|다음 페이지를 표시합니다.|  
 |Toolbar|Alt+Home|도움말 검토자 홈페이지를 표시합니다.|  
@@ -121,6 +116,3 @@ ms.locfileid: "49195639"
 |위쪽 화살표 및 아래쪽 화살표|**보류 중인 변경 내용** 목록을 스크롤합니다.|  
 |공백|**보류 중인 변경 내용** 목록에서 항목을 제거합니다.|  
 |Alt+T|모든 보류 중인 변경 내용을 적용합니다.|
-
-
-

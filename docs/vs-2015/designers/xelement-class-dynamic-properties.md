@@ -1,30 +1,25 @@
 ---
 title: XElement 클래스 동적 속성 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: a9795dba-2afc-45f7-9b53-c6c67a23c40b
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 15e3ad45f9588c7e43a58e40e6f75419ad505e04
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1b6d4c2d7b83ede687e7335627770a5576003463
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205446"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148058"
 ---
 # <a name="xelement-class-dynamic-properties"></a>XElement 클래스 동적 속성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 섹션의 동적 속성을 설명 합니다 <xref:System.Xml.Linq.XElement?displayProperty=fullName>[t] (<!-- TODO: review code entity reference <xref:assetId:///t?qualifyHint=False&amp;autoUpgrade=True>  -->) 클래스입니다.  
+이 섹션에서는 <xref:System.Xml.Linq.XElement?displayProperty=fullName>[t] 클래스의 동적 속성에 대해 설명합니다.<!-- TODO: review code entity reference <xref:assetId:///t?qualifyHint=False&amp;autoUpgrade=True>  -->클래스.  
   
 ## <a name="in-this-section"></a>섹션 내용  
   
@@ -41,6 +36,3 @@ ms.locfileid: "49205446"
  <xref:System.Xml.Linq.XElement?displayProperty=fullName>   
  [LINQ to XML 동적 속성](../designers/linq-to-xml-dynamic-properties.md)   
  [XAttribute 클래스 동적 속성](../designers/xattribute-class-dynamic-properties.md)
-
-
-

@@ -2,7 +2,6 @@
 title: IScriptEntry::GetBody | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9daa04009cf7088cbd21a2d3dfa185f581c157a3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7f8f1ad24660401d575af2724b788387fd546af8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62787881"
 ---
 # <a name="iscriptentrygetbody"></a>IScriptEntry::GetBody
-본문에 해당 하는 텍스트를 반환 합니다.는 `IScriptEntry` 스크립트 블록, 함수 블록 또는 스크립틀릿 합니다.  
+본문에 해당 하는 텍스트를 반환 합니다.는 `IScriptEntry` 스크립트 블록, 함수 블록 또는 scriptlet 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetBody(  
    BSTR               *pbstr  
 );  
@@ -38,13 +37,13 @@ HRESULT GetBody(
   
 #### <a name="parameters"></a>매개 변수  
  `pbstr`  
- [out] 다음 중 하나의 본문에 있는 텍스트:  
+ [out] 텍스트 본문에 다음 중 하나에서입니다.  
   
--   `IScriptEntry` 스크립트 블록  
+- `IScriptEntry` 스크립트 블록  
   
--   `IScriptEntry` 함수 블록의 함수  
+- `IScriptEntry` 함수 블록의 함수  
   
--   `IScriptEntry` 스크립틀릿 이벤트 처리기  
+- `IScriptEntry` scriptlet 이벤트 처리기  
   
 ## <a name="return-value"></a>반환 값  
  `HRESULT`입니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  

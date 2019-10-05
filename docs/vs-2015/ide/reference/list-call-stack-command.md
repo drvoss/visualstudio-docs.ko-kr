@@ -1,14 +1,9 @@
 ---
 title: 호출 스택 목록 표시 명령 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.listcallstack
 helpviewer_keywords:
@@ -18,18 +13,17 @@ ms.assetid: a8b20bf2-81d2-4069-aea8-23e6b15b4347
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 69c3708960f5b1ddaf0ff6620b8d90eb64cd86d8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 932dbc9e3971598748e462de92280ac7112f8c62
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194378"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199204"
 ---
 # <a name="list-call-stack-command"></a>호출 스택 목록 표시 명령
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 현재 호출 스택을 표시합니다.  
   
 ## <a name="syntax"></a>구문  
@@ -99,7 +93,7 @@ kb 2
   
  현재 스택 프레임을 두 번째 프레임으로 설정할 수 있습니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
 ```  
 >Debug.CallStack /Count:4 /ShowTypes:yes  
@@ -112,6 +106,3 @@ kb 2
  [명령 창](../../ide/reference/command-window.md)   
  [찾기/명령 상자](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

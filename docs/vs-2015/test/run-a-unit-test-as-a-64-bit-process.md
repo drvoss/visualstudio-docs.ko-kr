@@ -1,27 +1,22 @@
 ---
 title: 단위 테스트를 64비트 프로세스로 실행 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, creating
 - unit tests, running
 ms.assetid: d23a9ee7-58e3-4e8b-a38c-b2207ea73fea
 caps.latest.revision: 27
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 32f85c68756368f2b2ee2d5b9a1d842497102f41
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 40e22ae7cc14d230f4111760268452ec1372af32
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259034"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686680"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>단위 테스트를 64비트 프로세스로 실행
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,12 +27,12 @@ ms.locfileid: "49259034"
   
 #### <a name="to-run-a-unit-test-as-a-64-bit-process"></a>단위 테스트를 64비트 프로세스로 실행하려면  
   
-1.  코드 또는 테스트를 32비트/x86으로 컴파일했지만 64비트 프로세스로 실행하려면 **모든 CPU** 또는 원한다면 **64비트**로 다시 컴파일합니다.  
+1. 코드 또는 테스트를 32비트/x86으로 컴파일했지만 64비트 프로세스로 실행하려면 **모든 CPU** 또는 원한다면 **64비트**로 다시 컴파일합니다.  
   
     > [!TIP]
-    >  유연성을 극대화하려면 **Any CPU** 구성으로 테스트 프로젝트를 컴파일해야 합니다. 그러면 32 비트 및 64비트 에이전트에서 모두 실행할 수 있습니다. **64비트** 구성으로 테스트 프로젝트를 컴파일하는 것은 아무 이점이 없습니다.  
+    > 유연성을 극대화하려면 **Any CPU** 구성으로 테스트 프로젝트를 컴파일해야 합니다. 그러면 32 비트 및 64비트 에이전트에서 모두 실행할 수 있습니다. **64비트** 구성으로 테스트 프로젝트를 컴파일하는 것은 아무 이점이 없습니다.  
   
-2.  Visual Studio 메뉴에서 **테스트**, **설정**, **프로세서 아키텍처**를 차례로 선택합니다. **x64**를 선택해서 테스트를 64비트 프로세스로 실행합니다.  
+2. Visual Studio 메뉴에서 **테스트**, **설정**, **프로세서 아키텍처**를 차례로 선택합니다. **x64**를 선택해서 테스트를 64비트 프로세스로 실행합니다.  
   
      \- 또는 -  
   
@@ -46,7 +41,4 @@ ms.locfileid: "49259034"
 ## <a name="see-also"></a>참고 항목  
  [테스트 탐색기를 사용하여 단위 테스트 실행](../test/run-unit-tests-with-test-explorer.md)   
  [코드 단위 테스트](../test/unit-test-your-code.md)   
- [Visual Studio 테스트에 대한 테스트 설정 지정](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)
-
-
-
+ [Visual Studio 테스트에 대한 테스트 설정 지정](https://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)

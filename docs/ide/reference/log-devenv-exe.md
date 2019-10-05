@@ -1,8 +1,6 @@
 ---
 title: -Log(devenv.exe)
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+ms.date: 12/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - Devenv, /Log switch
@@ -11,33 +9,49 @@ helpviewer_keywords:
 ms.assetid: ae23c4ae-2376-4fe3-b8d2-81d34e61c8ba
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb33eedf322009cfd5602c481bce36beb4126a9b
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 4b2e11cb36176aec94528019cdd19bb5fa86c92b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946806"
 ---
 # <a name="log-devenvexe"></a>/Log(devenv.exe)
-문제 해결을 위해 모든 작업을 로그 파일에 기록합니다. 이 파일은 `devenv /log`를 한 번 이상 호출한 후 나타납니다. 기본적으로 로그 파일의 위치는 다음과 같습니다.
 
- *%APPDATA%* \Microsoft\VisualStudio\\*Version*\ActivityLog.xml
+문제 해결을 위해 모든 작업을 로그 파일에 기록합니다. 이 파일은 `devenv /log`를 한 번 이상 호출한 후 나타납니다. 기본적으로 로그 파일은 다음 위치에 있습니다.
 
- 여기서 *Version*은 Visual Studio 버전입니다. 그러나 다른 경로 및 파일 이름을 지정할 수 있습니다.
+**%APPDATA%\\Microsoft\\VisualStudio\\**\<버전\>**\\ActivityLog.xml**
+
+여기서 \<Version\>은 Visual Studio 버전입니다. 그러나 다른 경로 및 파일 이름을 지정할 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
-```cmd
-Devenv /log Path\NameOfLogFile
+```shell
+devenv /Log NameOfLogFile
 ```
 
-## <a name="remarks"></a>설명
- 이 스위치는 다른 모든 스위치 뒤에서 명령 줄 끝에 나타나야 합니다.
+## <a name="arguments"></a>인수
 
- /log 스위치로 호출한 Visual Studio의 모든 인스턴스에 대해 로그가 작성됩니다. 스위치 없이 호출한 Visual Studio의 인스턴스에 대해서는 로그가 작성되지 않습니다.
+- *NameOfLogFile*
+
+  필수 요소. 저장할 로그 파일의 전체 경로 및 이름입니다.
+
+## <a name="remarks"></a>주의
+
+이 스위치는 다른 모든 스위치 뒤에서 명령 줄 끝에 나타나야 합니다.
+
+`/Log` 스위치를 사용하여 연 Visual Studio의 모든 인스턴스에 대한 로그만 작성됩니다.
+
+## <a name="example"></a>예제
+
+이 예제는 사용자 홈 디렉터리에 있는 `MyVSLog.xml` 파일에 로깅을 전달합니다.
+
+```shell
+devenv /log "%USERPROFILE%\MyVSLog.xml"
+```
 
 ## <a name="see-also"></a>참고 항목
 

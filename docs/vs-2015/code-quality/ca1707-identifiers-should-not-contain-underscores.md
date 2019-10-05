@@ -1,14 +1,9 @@
 ---
-title: 'CA1707: 식별자가 밑줄을 포함 하지 않아야 | Microsoft Docs'
-ms.custom: ''
+title: 'CA1707: 식별자에는 밑줄 없어야 합니다. | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - IdentifiersShouldNotContainUnderscores
 - CA1707
@@ -20,17 +15,17 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0aeea5c113ebebe33d4c371fed1a5c46da4e735e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7973646aab545484287f5628eb0fa3cf3629db84
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189201"
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707: 식별자에는 밑줄을 사용할 수 없습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017에서 최신 설명서를 참조 하세요 [CA1707: 식별자에는 밑줄 없어야 합니다.](https://docs.microsoft.com/visualstudio/code-quality/ca1707-identifiers-should-not-contain-underscores) docs.microsoft.com에서 제공 합니다.  
+Visual Studio에서 최신 설명서를 참조 하세요. [CA1707: 식별자는 밑줄을 포함 하지 않아야](https://docs.microsoft.com/visualstudio/code-quality/ca1707-identifiers-should-not-contain-underscores)합니다.  
   
 |||  
 |-|-|  
@@ -54,7 +49,6 @@ Visual Studio 2017에서 최신 설명서를 참조 하세요 [CA1707: 식별자
  이 규칙에서는 경고를 표시해야 합니다.  
   
 ## <a name="related-rules"></a>관련된 규칙  
- [CA1709: 식별자는 정확한 대/소문자를 사용해야 합니다.](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
+ [CA1709: 식별자에는 올바르게 표기를 사용 해야](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
- [CA1708: 식별자에는 대/소문자만 다른 이름을 사용할 수 없습니다.](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
-
+ [CA1708: 식별자 대/소문자만 달라 야 합니다.](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

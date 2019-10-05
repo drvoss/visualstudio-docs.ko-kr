@@ -1,14 +1,9 @@
 ---
 title: 템플릿 매개 변수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, parameters
 - template parameters [Visual Studio]
@@ -18,13 +13,13 @@ ms.assetid: 1b567143-08c6-4d7a-b484-49f0671754fe
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ef4e1a6e3c56df744ce5375a1cb3a1dbd53a6fad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ed7dd478f63cf4d5dba38f6d721d4b728e1856b4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238903"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419628"
 ---
 # <a name="template-parameters"></a>템플릿 매개 변수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,21 +27,21 @@ ms.locfileid: "49238903"
 템플릿에 매개 변수를 사용하여 템플릿이 인스턴스화될 때 클래스 이름 및 네임스페이스 등 템플릿의 주요 부분 값을 바꿀 수 있습니다. 사용자가 **새 프로젝트** 또는 **새 항목 추가** 대화 상자에서 **확인**을 클릭하는 경우 이러한 매개 변수는 백그라운드에서 실행되는 템플릿 마법사로 바뀝니다.  
   
 ## <a name="declaring-and-enabling-template-parameters"></a>템플릿 매개 변수 선언 및 사용  
- 템플릿 매개 변수는 $*매개 변수*$ 형식으로 선언됩니다. 예를 들어:  
+ 템플릿 매개 변수는 $*매개 변수*$ 형식으로 선언됩니다. 예:  
   
--   $safeprojectname$  
+- $safeprojectname$  
   
--   $guid1$  
+- $guid1$  
   
--   $guid5$  
+- $guid5$  
   
 #### <a name="to-enable-parameter-substitution-in-templates"></a>템플릿에서 매개 변수 대체를 사용하려면  
   
-1.  템플릿의 .vstemplate 파일에서 매개 변수 대체를 활성화하려는 항목에 해당하는 `ProjectItem` 요소를 찾습니다.  
+1. 템플릿의 .vstemplate 파일에서 매개 변수 대체를 활성화하려는 항목에 해당하는 `ProjectItem` 요소를 찾습니다.  
   
-2.  `ReplaceParameters` 요소의 `ProjectItem` 특성을 `true`로 설정합니다.  
+2. `ReplaceParameters` 요소의 `ProjectItem` 특성을 `true`로 설정합니다.  
   
-3.  프로젝트 항목에 대한 코드 파일에서 적절한 경우 매개 변수를 포함합니다. 예를 들어 다음 매개 변수는 안전한 프로젝트 이름을 파일에서 네임스페이스에 사용할 수 있다고 지정합니다.  
+3. 프로젝트 항목에 대한 코드 파일에서 적절한 경우 매개 변수를 포함합니다. 예를 들어 다음 매개 변수는 안전한 프로젝트 이름을 파일에서 네임스페이스에 사용할 수 있다고 지정합니다.  
   
     ```  
     namespace $safeprojectname$  
@@ -56,7 +51,7 @@ ms.locfileid: "49238903"
  다음 표에서는 템플릿에서 사용할 수 있는 예약된 템플릿 매개 변수를 나열합니다.  
   
 > [!NOTE]
->  템플릿 매개 변수는 대/소문자를 구분합니다.  
+> 템플릿 매개 변수는 대/소문자를 구분합니다.  
   
 |매개 변수|설명|  
 |---------------|-----------------|  
@@ -130,6 +125,3 @@ namespace $safeprojectname$
   
 ## <a name="see-also"></a>참고 항목  
  [템플릿 사용자 지정](../ide/customizing-project-and-item-templates.md)
-
-
-

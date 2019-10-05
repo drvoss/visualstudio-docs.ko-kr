@@ -1,22 +1,20 @@
 ---
 title: 특성 용어집 | Microsoft IntelliTest 개발자 테스트 도구
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Attribute glossary
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0a83a7bd2fc40862411bbfd85f72b804318983c5
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: aada3c1053ed30521d8c7116c887061650a083dc
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294216"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825323"
 ---
 # <a name="attribute-glossary"></a>특성 용어집
 
@@ -27,17 +25,17 @@ ms.locfileid: "51294216"
   * [PexClass](#pexclass)
   * [PexGenericArguments](#pexgenericarguments)
   * [PexMethod](#pexmethod)
-     - [PexExplorationAttributeBase](#pexexplorationattributebase)<p />
+    * [PexExplorationAttributeBase](#pexexplorationattributebase)
 
 * **Microsoft.Pex.Framework.Settings**
-  * [PexAssemblySettings](#pexassemblysettings)<p />
+  * [PexAssemblySettings](#pexassemblysettings)
 
 * **Microsoft.Pex.Framework.Instrumentation**
   * [PexAssemblyUnderTest](#pexassemblyundertest)
-  * [PexInstrumentAssembly](#pexinstrumentassemblyattribute)<p />
+  * [PexInstrumentAssembly](#pexinstrumentassemblyattribute)
 
 * **Microsoft.Pex.Framework.Using**
-  * [PexUseType](#pexusetype)<p />
+  * [PexUseType](#pexusetype)
 
 * **Microsoft.Pex.Framework.Validation**
   * [PexAllowedException](#pexallowedexception)
@@ -154,13 +152,13 @@ public partial class MyTests {
 ```csharp
 using Microsoft.Pex.Framework;
 // overriding the test framework selection
-[assembly: PexAssemblySettings(TestFramework = "Naked")]
+[assembly: PexAssemblySettings(TestFramework = "MSTestv2")]
 ```
 
 <a name="pexassemblyundertest"></a>
 ## <a name="pexassemblyundertest"></a>PexAssemblyUnderTest
 
-이 특성은 현재 테스트 프로젝트에서 테스트 중인 어셈블리를 지정합니다. 
+이 특성은 현재 테스트 프로젝트에서 테스트 중인 어셈블리를 지정합니다.
 
 ```csharp
 [assembly: PexAssemblyUnderTest("MyAssembly")]

@@ -1,8 +1,6 @@
 ---
 title: 빌드 사용자 지정 | Microsoft Docs
-ms.custom: ''
-ms.date: 06/14/2017
-ms.technology: msbuild
+ms.date: 06/13/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, transforms
@@ -10,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d0bceb3b-14fb-455c-805a-63acefa4b3ed
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31856366712da0a2287f73906c6e3a5f81f63a00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8e644fd6fc521318512bbc5dd25838a379af78a9
+ms.sourcegitcommit: dd3c8cbf56c7d7f82f6d8818211d45847ab3fcfc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857590"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67141163"
 ---
 # <a name="customize-your-build"></a>빌드 사용자 지정
 
@@ -53,6 +51,7 @@ MSBuild 15 이전 버전에서는 솔루션의 프로젝트에 대한 새로운 
     </PropertyGroup>
    </Project>
    ```
+
 3. MSBuild를 실행합니다. 프로젝트의 기존 *Microsoft.Common.props* 및 *Microsoft.Common.targets* 가져오기는 파일을 찾아서 가져옵니다.
 
 ### <a name="search-scope"></a>검색 범위
@@ -109,6 +108,36 @@ MSBuild의 일반적인 방법의 요약 정보는 다음과 같습니다.
 
 간단히 말하면 아무것도 가져오지 않는 첫 번째 *Directory.Build.props*에서 MSBuild가 중지됩니다.
 
+### <a name="choose-between-adding-properties-to-a-props-or-targets-file"></a>.props 또는 .targets 파일에 속성 추가 중에서 선택
+
+MSBuild는 가져오기 순서에 종속되며, 속성(`UsingTask` 또는 대상)의 마지막 정의가 사용됩니다.
+
+명시적 가져오기를 사용하는 경우, 언제든지 *.props* 또는 *.targets* 파일에서 가져올 수 있습니다. 일반적으로 사용되는 규칙은 다음과 같습니다.
+
+- *.props* 파일은 가져오기 순서의 초기에 가져옵니다.
+
+- *.targets* 파일은 빌드 순서의 이후에 가져옵니다.
+
+이 규칙은 `<Project Sdk="SdkName">` 가져오기에 의해 적용됩니다. 즉, *Sdk.props* 가져오기가 파일의 모든 내용 앞에 오고, *Sdk.targets*가 파일의 모든 내용 뒤에 마지막으로 옵니다.
+
+속성을 배치할 위치를 결정하는 경우 다음 일반 지침을 따르세요.
+
+- 대부분의 속성은 덮어쓰지 않고 실행 시간에 읽기만 하므로 정의된 위치가 중요하지 않습니다.
+
+- 개별 프로젝트에서 사용자 지정할 수 있는 동작의 경우 *.props* 파일에서 기본값을 설정합니다.
+
+- MSBuild에서 사용자 프로젝트를 읽어야 사용자 지정이 발생하므로, 가능한 사용자 지정 속성 값을 읽어 *.props* 파일에서 종속 속성을 설정하지 마세요.
+
+- *.targets* 파일에서 종속 속성을 설정합니다. 그러면 속성이 개별 프로젝트에서 사용자 지정을 선택합니다.
+
+- 속성을 재정의해야 하는 경우 모든 사용자 프로젝트 사용자 지정이 적용된 후에 *.targets* 파일에 재정의합니다. 파생 속성을 사용할 때는 주의합니다. 파생 속성도 재정의해야 할 수 있습니다.
+
+- *.props* 파일에 항목을 포함합니다(속성에 따라 조건부). 모든 속성이 항목보다 먼저 고려되므로, 사용자 프로젝트 속성 사용자 지정이 선택되어 사용자 프로젝트에서 가져오기를 통해 가져오는 항목을 `Remove` 또는 `Update`할 기회를 제공합니다.
+
+- *.targets* 파일에서 대상을 정의합니다. 그러나 SDK를 통해 *.targets* 파일을 가져오는 경우, 이 시나리오를 사용하면 대상 재정의가 더 어려워집니다. 사용자 프로젝트에서는 기본적으로 대상을 재정의할 수 없기 때문입니다.
+
+- 가능한 경우, 대상 내의 속성을 변경하는 대신 평가 시간에 속성을 사용자 지정하는 것이 좋습니다. 이 지침을 따르면 보다 간편하게 프로젝트를 로드하고 프로젝트에서 수행하는 작업을 파악할 수 있습니다.
+
 ## <a name="msbuildprojectextensionspath"></a>MSBuildProjectExtensionsPath
 
 기본적으로 *Microsoft.Common.props*가 `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.props`를 가져오고 *Microsoft.Common.targets*가 `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.targets`를 가져옵니다. `MSBuildProjectExtensionsPath`의 기본값은 `$(BaseIntermediateOutputPath)`, `obj/`입니다. NuGet에서 패키지와 함께 제공되는 빌드 논리를 참조하는 데 이 메커니즘을 사용합니다. 즉, 복원 시 패키지 콘텐츠를 참조하는 `{project}.nuget.g.props` 파일을 만듭니다.
@@ -139,7 +168,7 @@ $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportBefore\*.
 $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportAfter\*.targets
 ```
 
-이루어집니다. 이렇게 하면 설치된 SDK는 공용 프로젝트 형식의 빌드 논리를 확장할 수 있습니다.
+이루어집니다. 이 규칙을 사용하면 설치된 SDK에서 공용 프로젝트 형식의 빌드 논리를 확장할 수 있습니다.
 
 동일한 디렉터리 구조는 사용자당 폴더 *%LOCALAPPDATA%\Microsoft\MSBuild*인 `$(MSBuildUserExtensionsPath)`에서 검색됩니다. 해당 폴더에 있는 파일을 해당 사용자의 자격 증명으로 실행되는 해당 프로젝트 형식의 모든 빌드에 가져옵니다. 사용자 확장은 패턴 `ImportUserLocationsByWildcardBefore{ImportingFileNameWithNoDots}`에서 가져오는 파일에 따라 명명된 속성을 설정하여 비활성화할 수 있습니다. 예를 들어 `ImportUserLocationsByWildcardBeforeMicrosoftCommonProps`를 `false`로 설정하면 `$(MSBuildUserExtensionsPath)\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\*` 가져오기를 방지합니다.
 
@@ -162,6 +191,6 @@ MSBuild에서 솔루션 파일을 빌드할 때 먼저 프로젝트 파일로 �
 
 ## <a name="see-also"></a>참고 항목
 
-[MSBuild 개념](../msbuild/msbuild-concepts.md)
+- [MSBuild 개념](../msbuild/msbuild-concepts.md)
 
-[MSBuild 참조](../msbuild/msbuild-reference.md)
+- [MSBuild 참조](../msbuild/msbuild-reference.md)

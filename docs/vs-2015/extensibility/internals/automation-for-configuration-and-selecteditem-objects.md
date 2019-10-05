@@ -1,27 +1,22 @@
 ---
 title: 구성 및 SelectedItem 개체 자동화 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], SelectedItem object
 - automation [Visual Studio SDK], builds
 ms.assetid: 120377f1-51aa-4445-b2f7-06ab7fc2b47f
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 612916da7922900a1054d785dad86ed448aa1f12
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 42faf8127c1ab70d3470aa497a0cdab6058060f8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157252"
 ---
 # <a name="automation-for-configuration-and-selecteditem-objects"></a>구성 SelectedItem 개체 자동화
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,4 +35,3 @@ ms.locfileid: "51733466"
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>   
  [자동화 모델에 영향을 주는](../../extensibility/internals/contributing-to-the-automation-model.md)   
  [빌드 구성 이해](../../ide/understanding-build-configurations.md)
-

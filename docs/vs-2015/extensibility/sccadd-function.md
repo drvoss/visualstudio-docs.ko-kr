@@ -1,14 +1,9 @@
 ---
 title: SccAdd 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccAdd
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 29703be15369649df2208c1521a6636e5ccbefb9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: daac15bbb7829d510db17ba02057a2dc86c55990
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432503"
 ---
 # <a name="sccadd-function"></a>SccAdd 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +80,7 @@ SCCRTN SccAdd(
  일반적인 `fOptions` 바뀝니다 여기 배열이 `pfOptions`에 하나를 사용 하 여 `LONG` 파일당 사양 옵션입니다. 즉, 파일 형식 파일에서 다를 수 있습니다.  
   
 > [!NOTE]
->  둘 다 지정 올바르지 `SCC_FILETYPE_TEXT` 및 `SCC_FILETYPE_BINARY` 하지만 동일한 파일에 대 한 옵션은 둘 다 지정할 수 있습니다. 모두 설정은 설정과 동일 `SCC_FILETYPE_AUTO`,이 경우 소스 제어 플러그 인이 파일 형식입니다.  
+> 둘 다 지정 올바르지 `SCC_FILETYPE_TEXT` 및 `SCC_FILETYPE_BINARY` 하지만 동일한 파일에 대 한 옵션은 둘 다 지정할 수 있습니다. 모두 설정은 설정과 동일 `SCC_FILETYPE_AUTO`,이 경우 소스 제어 플러그 인이 파일 형식입니다.  
   
  다음에 사용 된 플래그의 목록은 합니다 `pfOptions` 배열:  
   
@@ -102,4 +97,3 @@ SCCRTN SccAdd(
   
 ## <a name="see-also"></a>참고 항목  
  [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
-

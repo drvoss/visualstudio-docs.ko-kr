@@ -2,7 +2,6 @@
 title: IApplicationDebugger::onDebugOutput | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c660222ebc136c57605dd0fda2c7f5fa88c368c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ffe4d56357a96dac8d5155ac2f8bd5182adef47e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62991066"
 ---
 # <a name="iapplicationdebuggerondebugoutput"></a>IApplicationDebugger::onDebugOutput
 디버그 출력 이벤트를 처리합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT onDebugOutput(  
    LPCOLESTR  pstr  
 );  
@@ -48,7 +47,7 @@ HRESULT onDebugOutput(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>설명  
- 디버거는 일반적으로 표시 `pstr` 출력 창에 있습니다.  
+ 디버거는 일반적으로 표시 `pstr` 출력 창에서.  
   
  이 메서드를 호출한 경우 `IDebugApplication::DebugOutput` 라고 합니다.  
   

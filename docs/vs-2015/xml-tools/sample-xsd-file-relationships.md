@@ -1,30 +1,24 @@
 ---
 title: '샘플 XSD 파일: 관계 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 60126510-b7dd-4cb4-92d3-9883590b92f2
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 42dbe702c1b6841dd834af28e02737c00aed6595
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3c5a461b2aad51fa4fa2d4ac5cc682ae413b6eb1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145156"
 ---
 # <a name="sample-xsd-file-relationships"></a>샘플 XSD 파일: 관계
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 다음 XSD 파일은 XSD 스키마 디자이너 설명서의 다양한 예제에서 사용됩니다. 이 파일은 주석 및 설명서 요소가 포함된 구매 주문 스키마입니다.  
   
 ```xml  
@@ -71,6 +65,3 @@ ms.locfileid: "49295713"
   
 </xs:schema>  
 ```
-
-
-

@@ -1,8 +1,6 @@
 ---
 title: 디버깅 오류 및 경고 대화 상자 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - VS.WebClient.AccessRequiredDialog
@@ -20,53 +18,55 @@ helpviewer_keywords:
 ms.assetid: 73baaf39-3026-48c9-be48-8b9ba0063cde
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb7ed7b66483bcda01df00e92907801d994553e9
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e13d6d323264136c6cab4c753ba53d40acd5a628
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279055"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852219"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>디버깅 오류 및 경고 대화 상자
-다음은 응용 프로그램을 디버깅할 때 발생할 수 있는 오류 및 경고 대화 상자입니다.  
-  
-## <a name="in-this-section"></a>섹션 내용  
- [어설션 오류 대화 상자](../debugger/assertion-failed-dialog-box.md)  
-  
- [값을 변경할 수 없음 대화 상자](../debugger/cannot-change-value-dialog-box.md)  
-  
- [디버거가 현재 위치에 대한 소스 코드나 디스어셈블리를 표시할 수 없습니다.](../debugger/debugger-cannot-display-source-code-or-disassembly.md)  
-  
- [디버깅 세션에 사용할 실행 파일 대화 상자](../debugger/executable-for-debugging-session-dialog-box.md)  
-  
- [코드 변경 대화 상자를 적용 하지 못했습니다.](../debugger/edit-and-continue-dialog-box-cpp.md)  
-  
- [Microsoft Visual Studio Debugger(예외 throw) 대화 상자](../debugger/microsoft-visual-studio-debugger-exception-thrown-dialog-box.md)  
-  
- [현재 위치 대화 상자에 대 한 소스 코드가 없습니다](../debugger/no-source-available.md)  
-  
- [없음 기호화 된 정보 대화 상자](https://msdn.microsoft.com/library/18de4888-9cca-4059-a165-48b135fee4c9)  
-  
- [모호성 해결 대화 상자](../debugger/resolve-ambiguity-dialog-box.md)  
-  
- [부실 코드 경고 대화 상자](../debugger/stale-code-warning-dialog-box.md)  
-  
- [컴퓨터에 연결할 수 없습니다.](../debugger/error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)  
-  
- [오류: 시스템에 커널 디버거가 사용 중이므로 디버깅을 할 수 없습니다.](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
-  
-## <a name="related-sections"></a>관련 단원  
- [스크립트와 웹 디버깅: 오류 및 문제 해결](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
-  
- [원격 디버깅 오류](../debugger/remote-debugging-errors-and-troubleshooting.md)  
-  
- [연결 오류](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/8dbb3we5(v=vs.100))  
-  
- [SQL 디버깅 설치 문제 해결](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))  
-  
- [디버깅 Visual c + + Faq](../debugger/debugging-native-code-faqs.md)  
-  
+다음은 애플리케이션을 디버깅할 때 발생할 수 있는 오류 및 경고 대화 상자입니다.
+
+## <a name="in-this-section"></a>섹션 내용
+ [어설션 오류 대화 상자](../debugger/assertion-failed-dialog-box.md)
+
+ [값을 변경할 수 없음 대화 상자](../debugger/cannot-change-value-dialog-box.md)
+
+ [디버거가 현재 위치에 대한 소스 코드나 디스어셈블리를 표시할 수 없습니다.](../debugger/debugger-cannot-display-source-code-or-disassembly.md)
+ 
+ [메모리에서 실행 되는 서비스 디버거](../debugger/error-debugger-services-no-memory.md)
+
+ [디버깅 세션에 사용할 실행 파일 대화 상자](../debugger/executable-for-debugging-session-dialog-box.md)
+
+ [코드 변경 내용 적용 실패 대화 상자](../debugger/edit-and-continue-dialog-box-cpp.md)
+
+ [Microsoft Visual Studio Debugger(예외 throw) 대화 상자](../debugger/microsoft-visual-studio-debugger-exception-thrown-dialog-box.md)
+
+ [현재 위치에 사용할 수 있는 소스 코드가 없음 대화 상자](../debugger/no-source-available.md)
+
+ [기호화된 정보 없음 대화 상자](https://msdn.microsoft.com/library/18de4888-9cca-4059-a165-48b135fee4c9)
+
+ [모호성 해결 대화 상자](../debugger/resolve-ambiguity-dialog-box.md)
+
+ [부실 코드 경고 대화 상자](../debugger/stale-code-warning-dialog-box.md)
+
+ [머신에 연결할 수 없음](../debugger/error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)
+
+ [오류: 시스템에 커널 디버거가 사용 중이므로 디버깅을 할 수 없습니다.](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)
+
+## <a name="related-sections"></a>관련 단원
+ [스크립트 및 웹 디버깅: 오류 및 문제 해결](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+
+ [원격 디버깅 오류](../debugger/remote-debugging-errors-and-troubleshooting.md)
+
+ [연결 오류](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/8dbb3we5(v=vs.100))
+
+ [SQL 디버깅 설치 문제 해결](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))
+
+ [Visual C++ 디버깅에 대한 질문과 대답](../debugger/debugging-native-code-faqs.md)
+
  [디버거 보안](../debugger/debugger-security.md)

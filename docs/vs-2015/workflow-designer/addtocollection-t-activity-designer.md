@@ -1,11 +1,8 @@
 ---
 title: AddToCollection&lt;T&gt; 활동 디자이너 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.AddToCollection`1.UI
@@ -13,13 +10,13 @@ ms.assetid: f7fc0702-164e-4370-8946-bb2f9f9384b7
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 009f9f90c5cd22e5cf0da4240d008ce3dc1bb4ca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4e63486ca7e057fdd1bfe0de73e44dc4951462e2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977214"
 ---
 # <a name="addtocollectionlttgt-activity-designer"></a>AddToCollection&lt;T&gt; 활동 디자이너
 합니다 **AddToCollection\<T >** 활동 디자이너는 만들기 및 구성 하는 데 사용 되는 <xref:System.Activities.Statements.AddToCollection%601> 활동입니다.  
@@ -35,7 +32,7 @@ ms.locfileid: "49304429"
 ### <a name="the-addtocollectiont-properties"></a>AddToCollection\<T > 속성  
  다음 표에서는 <xref:System.Activities.Statements.AddToCollection%601> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다.  
   
-|속성 이름|필수|용도|  
+|속성 이름|필수|사용|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.AddToCollection%601> 활동의 이름입니다. 기본값은 AddToCollection\<Int32 >. <xref:System.Activities.Activity.DisplayName%2A> 값은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|  
 |<xref:System.Activities.Statements.AddToCollection%601.Item%2A>|True|컬렉션에 추가할 항목\<T >입니다. 이 항목은 형식의 *T*, 형식인 *TypeArgument*합니다. 이 항목을 지정하려면 속성 표에 Visual Basic 식을 입력합니다.|  
@@ -45,6 +42,6 @@ ms.locfileid: "49304429"
 ## <a name="see-also"></a>참고 항목  
  [컬렉션](../workflow-designer/collection-activity-designers.md)   
  [AddToCollection\<T > 활동 디자이너](../workflow-designer/addtocollection-t-activity-designer.md)   
- [ClearCollection\<T >](../workflow-designer/clearcollection-t-activity-designer.md)   
- [ExistsInCollection\<T >](../workflow-designer/existsincollection-t-activity-designer.md)   
+ [ClearCollection\<T>](../workflow-designer/clearcollection-t-activity-designer.md)   
+ [ExistsInCollection\<T>](../workflow-designer/existsincollection-t-activity-designer.md)   
  [RemoveFromCollection\<T>](../workflow-designer/removefromcollection-t-activity-designer.md)

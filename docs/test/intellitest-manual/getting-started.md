@@ -1,22 +1,20 @@
 ---
 title: IntelliTest 소개
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Get started
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3e33bab90c32ca1b7cd92714218e5694daa22aed
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 92a5b5f6ffac7285dd1a22d7193ada74e3a90967
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000741"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906849"
 ---
 # <a name="get-started-with-microsoft-intellitest"></a>Microsoft IntelliTest 시작
 

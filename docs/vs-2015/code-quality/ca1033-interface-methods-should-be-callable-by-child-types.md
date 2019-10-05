@@ -1,14 +1,9 @@
 ---
-title: 'CA1033: 인터페이스 메서드는 자식 형식에서 호출할 수 해야 | Microsoft Docs'
-ms.custom: ''
+title: 'CA1033: 인터페이스 메서드는 자식 형식에서 호출할 수 있어야 합니다. | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - InterfaceMethodsShouldBeCallableByChildTypes
 - CA1033
@@ -20,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 13c96e7aa1aa218b8ded07f146f8f8b352101c12
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bd801e7afc1fa0a4edf043aba560bc4afcdae9de
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922824"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682838"
 ---
 # <a name="ca1033-interface-methods-should-be-callable-by-child-types"></a>CA1033: 인터페이스 메서드는 자식 형식에서 호출할 수 있어야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +52,4 @@ ms.locfileid: "49922824"
  [!code-csharp[FxCop.Design.ExplicitMethodImplementations#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ExplicitMethodImplementations/cs/FxCop.Design.ExplicitMethodImplementations.cs#1)]
 
 ## <a name="see-also"></a>참고 항목
- [인터페이스](http://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37)
-
-
-
+ [인터페이스](https://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37)

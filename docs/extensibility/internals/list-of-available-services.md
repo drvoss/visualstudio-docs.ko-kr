@@ -6,29 +6,30 @@ helpviewer_keywords:
 - services, Visual Studio
 - Visual Studio, services
 ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cd076e19a1732309a07feccca899669741b6482
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6bd7aea3adbb3a732b83736e5824d775824cccdb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964639"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344848"
 ---
 # <a name="list-of-available-services"></a>사용 가능한 서비스 목록
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 및 Visual Studio SDK는 다음 서비스를 지원 합니다. 일부 패키지는 여기에 나열 되지 자신의 서비스를 제공 합니다.-예를 들어 언어 서비스는 단일 서비스가 없는 GUID입니다. 레지스트리에서 언어 서비스의 GUID를 찾으려면 언어의 이름을 사용 해야 합니다.  
-  
- 여기에 나열 된 또는 일부 다른 소스 (예: 언어 서비스)에서 가져온 서비스 Guid를 사용 하 여 각 서비스를 사용 하 여 표시 된 인터페이스나 기본 인터페이스를 가져옵니다.  
-  
-## <a name="the-services"></a>서비스  
-  
+
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 및 Visual Studio SDK는 다음 서비스를 지원 합니다. 일부 패키지는 여기에 나열 되지 자신의 서비스를 제공 합니다.-예를 들어 언어 서비스는 단일 서비스가 없는 GUID입니다. 레지스트리에서 언어 서비스의 GUID를 찾으려면 언어의 이름을 사용 해야 합니다.
+
+여기에 나열 된 또는 일부 다른 소스 (예: 언어 서비스)에서 가져온 서비스 Guid를 사용 하 여 각 서비스를 사용 하 여 표시 된 인터페이스나 기본 인터페이스를 가져옵니다.
+
+## <a name="the-services"></a>서비스
+
 | 서비스 | 인터페이스 | Visual Studio | Visual Studio 2005 | 설명 |
 | - | - |---------------|--------------------| - |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SBindHost> | <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> | 예 | 예 | 가져오는 데 사용 하 여 Vspackage를 <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> 비동기 데이터 전송을 용이 하 게 ActiveX 컨트롤의 인터페이스입니다. |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | 아니요 | 예 | 자동화에 사용 되는 확장성 DTE (디자인 타임) 개체를 가져옵니다.<br /><br /> C/C + + ID: SID_SDTE |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | 아니요 | 예 | 자동화에 사용 되는 확장성 DTE (디자인 타임) 개체를 가져옵니다.<br /><br /> C /C++ ID: SID_SDTE |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SCodeNavigate> | <xref:Microsoft.VisualStudio.Shell.Interop.ICodeNavigate> | 예 | 예 | Forms 디자이너 컨트롤에 대 한 기본 이벤트 처리기를 표시 하 여 구현 합니다. |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SContainerDispatch> | IDispatch | 예 | 예 | 다른 VSPackage 또는 컨트롤의 자동화 인터페이스에 액세스 하기 위해 VSPackage를 사용 하도록 설정 합니다. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SExtendedTypeLib> | <xref:Microsoft.VisualStudio.Shell.Interop.IExtendedTypeLib> | 예 | 예 | 확장 된 형식 라이브러리를 만들거나 추가 하려면 VSPackage를 사용 하도록 설정 합니다. |
@@ -128,7 +129,7 @@ ms.locfileid: "53964639"
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionObject> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution> | 예 | 예 | 사용 된 <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution> 대신 서비스입니다. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionPersistence> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> | 예 | 예 | VSPackage를 저장 하 고 현재 솔루션의.sln 파일에서 정보를 검색할 수 있습니다. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSQLCLRReferences> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSQLCLRReferences> | 아니요 | 예 | 기능도 추가 하 고 관리 코드 어셈블리의 참조를 업데이트 합니다. |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStartPageDownload> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStartPageDownload> | 아니요 | 예 | 시작 페이지의 다운로드 서비스 시작 및 백그라운드 스레드에서 다운로드 서비스 중지에 대 한 액세스를 제공 합니다. |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStartPageDownload> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStartPageDownload> | 아니요 | 예 | Visual Studio 2017 시작 페이지의 다운로드 서비스 시작 및 백그라운드 스레드에서 다운로드 서비스 중지에 대 한 액세스를 제공 합니다. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> | 예 | 예 | IDE의 상태 표시줄에 대 한 액세스를 제공합니다. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsStrongNameKeys> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStrongNameKeys> | 아니요 | 예 | 관리 코드 어셈블리를 서명에서 사용 되는 암호를 사용 하 여 강력한 키 이름 및 키 파일을 만드는 방법에 대 한 액세스를 제공 합니다. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsStructuredFileIO> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStructuredFileIO> | 예 | 예 | 여러 형식에 데이터를 저장 하기 위한 지원을 제공 하기 위해 VSPackage를 사용 하도록 설정 합니다. |
@@ -156,7 +157,7 @@ ms.locfileid: "53964639"
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWebURLMRU> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWebURLMRU> | 예 | 예 | VSPackage를 Url mru (가장 최근에 사용 됨) 목록에 URL을 추가 하 고 MRU 목록의 모든 Url 목록을 가져올 수 있습니다. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWindowFrame> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> | 예 | 예 | VSPackage는 패키지 또는 패키지의 파트 수 수 있는 창 프레임을 가져올 수 있습니다. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService> | 예 | 예 | 특정 메타 데이터 파일을 사용 하 여 연결 하는 XML 형식 문서 파일에 대 한 액세스를 제공 합니다. |
-  
-## <a name="see-also"></a>참고 항목  
- [COM 및 관리 서비스](http://msdn.microsoft.com/en-us/6c5808b4-ad87-48d7-ae06-33a81e7052af)   
- [서비스 사용 및 제공](../../extensibility/using-and-providing-services.md)
+
+## <a name="see-also"></a>참고자료
+
+- [서비스 사용 및 제공](../../extensibility/using-and-providing-services.md)

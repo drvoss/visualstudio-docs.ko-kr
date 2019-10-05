@@ -1,14 +1,9 @@
 ---
 title: 도움말 뷰어 문제 해결 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: troubleshooting
 helpviewer_keywords:
 - troubleshooting [Help Viewer 2.0]
 - Help Viewer 2.0, troubleshooting
@@ -16,13 +11,13 @@ ms.assetid: 461a4553-064a-4142-a2d2-058658b9ba12
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a3497d46ed4c9c5a04d8f40cc3056ea282593884
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 77529ad9957694b1ea1853b3e8b1b1cc29c45e2b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429732"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>도움말 뷰어 문제 해결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +32,15 @@ ms.locfileid: "49934238"
   
 #### <a name="to-activate-windows-search-service"></a>Windows 검색 서비스를 활성화하려면  
   
-1.  서버 관리자를 클릭합니다.  
+1. 서버 관리자를 클릭합니다.  
   
-2.  왼쪽된 탐색 창에서 선택 **역할**을 선택합니다.  
+2. 왼쪽된 탐색 창에서 선택 **역할**을 선택합니다.  
   
-3.  역할 요약 창에서 선택 **역할 추가**를 선택합니다.  
+3. 역할 요약 창에서 선택 **역할 추가**를 선택합니다.  
   
-4.  파일 서비스 역할을 선택하고 **다음** 단추를 선택합니다.  
+4. 파일 서비스 역할을 선택하고 **다음** 단추를 선택합니다.  
   
-5.  Windows 검색 역할 서비스를 선택합니다.  
+5. Windows 검색 역할 서비스를 선택합니다.  
   
 ## <a name="additional-resources"></a>추가 리소스  
  다음 리소스를 사용하여 도움말 뷰어에 대한 추가 정보를 얻고 피드백을 제공할 수 있습니다.  
@@ -56,6 +51,3 @@ ms.locfileid: "49934238"
   
 ## <a name="see-also"></a>참고 항목  
  [도움말 뷰어 2.1 관리자 가이드](http://go.microsoft.com/fwlink/?LinkId=243985)
-
-
-

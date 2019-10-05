@@ -1,7 +1,6 @@
 ---
 title: 상호 운용성 경고
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.Interoperabilityrules
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 95de6eb3-40c4-4063-9f59-25cb70e3b2b3
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b96131b2847b59632212c26bf5fa77fbe6b88960
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7a4e8f7bc60704842a8a0e940b336b4bb79093b2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956600"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66745139"
 ---
 # <a name="interoperability-warnings"></a>상호 운용성 경고
 
@@ -33,7 +32,7 @@ ms.locfileid: "53956600"
 | [CA1400: P/Invoke 진입점 있어야 합니다.](../code-quality/ca1400-p-invoke-entry-points-should-exist.md) | public 또는 protected 메서드는 System.Runtime.InteropServices.DllImportAttribute 특성으로 표시됩니다. 관리되지 않는 라이브러리를 찾을 수 없거나 해당 메서드와 라이브러리의 함수가 일치하지 않습니다. |
 | [CA1401: P/Invoke을 표시 해야 합니다.](../code-quality/ca1401-p-invokes-should-not-be-visible.md) | 공용 형식에서 public 또는 protected 메서드는 System.Runtime.InteropServices.DllImportAttribute 특성 (Visual Basic에서 Declare 키워드로 구현)에 있습니다. 이러한 메서드는 노출되지 않아야 합니다. |
 | [CA1402: COM 노출 인터페이스에서 오버 로드 방지](../code-quality/ca1402-avoid-overloads-in-com-visible-interfaces.md) | 오버로드된 메서드가 COM 클라이언트에 노출되면 첫 번째 메서드 오버로드만 이름이 유지됩니다. 이후의 오버로드는 이름에 밑줄 문자(_)와 오버로드 선언 순서에 해당하는 정수가 추가되어 고유한 이름이 지정됩니다. |
-| [CA1403: 자동 레이아웃 형식은 com 노출 이면 안](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md) | COM 노출 값 형식이 LayoutKind.Auto로 설정된 System.Runtime.InteropServices.StructLayoutAttribute 특성을 사용하여 표시되어 있습니다. 이러한 형식의 레이아웃은 특정 레이아웃이 필요한 COM 클라이언트는.NET Framework의 버전 간에 변경 수 있습니다. |
+| [CA1403: 자동 레이아웃 형식은 com 노출 이면 안](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md) | COM 노출 값 형식이 LayoutKind.Auto로 설정된 System.Runtime.InteropServices.StructLayoutAttribute 특성을 사용하여 표시되어 있습니다. 이러한 형식의 레이아웃 특정 레이아웃이 필요한 COM 클라이언트는.NET 버전에서는 달라질 수 있습니다. |
 | [CA1404: P/Invoke 다음에 바로 GetLastError를 호출 합니다.](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md) | Marshal.GetLastWin32Error 메서드 또는 해당 호출 [!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)] 즉시 이전 호출 하 고 GetLastError 함수를 플랫폼으로 아닌 메서드를 호출 합니다. |
 | [CA1405: COM 노출 형식의 기본 형식은 COM 노출 해야 합니다.](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md) | COM 노출 형식이 COM에 노출되지 않는 형식에서 파생됩니다. |
 | [CA1406: Visual Basic 6 클라이언트에서 Int64 인수를 방지 합니다.](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md) | Visual Basic 6 COM 클라이언트는 64 비트 정수를 액세스할 수 없습니다. |

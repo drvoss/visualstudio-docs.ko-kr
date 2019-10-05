@@ -1,27 +1,22 @@
 ---
 title: VisibilityItem 요소 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - VisibilityItem element (VSCT XML schema)
 - VSCT XML schema elements, VisibilityItem
 ms.assetid: 0932f551-972d-4194-84bb-426e3e4375e4
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ab4d1fef60ce8b11a23a9d3afd30bcf6b89715d9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f6f71e145282d1d6e340060b9798ca54c9af9f4e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584839"
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem 요소
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,9 +45,9 @@ ms.locfileid: "51779257"
   
 |특성|설명|  
 |---------------|-----------------|  
-|guid|필수. GUID/i D 명령 식별자의 GUID입니다.|  
-|ID|필수. ID의 GUID/i D 명령 식별자입니다.|  
-|컨텍스트(context)|필수. 이 명령은 표시 되는 UI 컨텍스트.|  
+|guid|필수 요소. GUID/i D 명령 식별자의 GUID입니다.|  
+|ID|필수 요소. ID의 GUID/i D 명령 식별자입니다.|  
+|컨텍스트(context)|필수 요소. 이 명령은 표시 되는 UI 컨텍스트.|  
 |조건|선택 사항입니다. 참조 [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)합니다.|  
   
 ### <a name="child-elements"></a>자식 요소  
@@ -84,4 +79,3 @@ ms.locfileid: "51779257"
  <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>   
  [VisibilityConstraints 요소](../extensibility/visibilityconstraints-element.md)   
  [Visual Studio 명령 테이블(.Vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

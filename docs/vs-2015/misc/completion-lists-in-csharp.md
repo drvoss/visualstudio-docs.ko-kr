@@ -1,14 +1,9 @@
 ---
 title: C#의 완성 목록 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - completion lists [C#]
 - IntelliSense [C#], completion lists
@@ -16,16 +11,17 @@ ms.assetid: fd070dc3-6f43-4f73-a2ef-32ab3da9f474
 caps.latest.revision: 16
 author: BillWagner
 ms.author: wiwagn
-manager: douge
-ms.openlocfilehash: 6369fa7c5265511d434156c3830738cc6ca9d5d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a9806a5f092ab4924533f67c22d0adf78b99fb8b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946780"
 ---
-# <a name="completion-lists-in-c"></a>C#의 완성 목록 #
-이 콘텐츠를 움직인 [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)  
-  
-## <a name="see-also"></a>참고 항목  
- [Visual C# 코드 조각](../ide/visual-csharp-code-snippets.md)
+# <a name="completion-lists-in-c"></a>C의 완성 목록\#
+
+이 콘텐츠를 움직인 [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)
+
+## <a name="see-also"></a>참고 항목
+- [Visual C# 코드 조각](../ide/visual-csharp-code-snippets.md)

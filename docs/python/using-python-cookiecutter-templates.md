@@ -1,27 +1,25 @@
 ---
 title: Python과 함께 CookieCutter 템플릿 사용
 description: Visual Studio는 Python 코드용 템플릿을 검색하고 해당 템플릿으로 프로젝트를 만들기 위한 그래픽 Cookiecutter 확장을 지원합니다.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 01/28/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ca47c1410fd11c32cbce95b9adc5a62c6c26dcf
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: eeea19b1d2ff4a4d24f27280a48b9ae673406908
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057193"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832195"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Cookiecutter 확장 사용
 
-[Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/)는 템플릿을 검색하고, 템플릿 옵션을 입력하며, 프로젝트와 파일을 만들 수 있는 그래픽 사용자 인터페이스를 제공합니다. Visual Studio 2017에 포함되어 있으며, 이전 버전의 Visual Studio에서는 개별적으로 설치할 수 있습니다.
+[Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/)는 템플릿을 검색하고, 템플릿 옵션을 입력하며, 프로젝트와 파일을 만들 수 있는 그래픽 사용자 인터페이스를 제공합니다. Visual Studio 2017 이상에 포함되어 있으며, 이전 버전의 Visual Studio에서는 개별적으로 설치할 수 있습니다.
 
 Cookiecutter에는 Python 3.3 이상(32비트 또는 64비트) 또는 Anaconda 3 4.2 이상(32비트 또는 64비트)이 필요합니다. 적합한 Python 인터프리터를 사용할 수 없는 경우 Visual Studio에서 경고가 표시됩니다. Visual Studio를 실행하는 중에 Python 인터프리터를 설치하는 경우 Cookiecutter 도구 모음에서 **홈** 단추를 클릭하여 새로 설치된 인터프리터를 검색합니다. (일반적으로 환경에 대한 자세한 내용은 [Python 환경](managing-python-environments-in-visual-studio.md)을 참조하세요.)
 
@@ -61,7 +59,7 @@ Cookiecutter 홈페이지에는 선택하여 다음과 같은 그룹으로 구�
 
 ![Cookiecutter 옵션 페이지](media/cookiecutter-template-options.png)
 
-각 Cookiecutter 템플릿마다 고유한 옵션 집합을 정의하고 각 옵션에 대해 기본값(각 입력 필드에 제안된 텍스트로 표시됨)을 지정합니다. 기본값은 종종 다른 옵션을 사용하는 동적 값인 경우 코드 조각일 수 있습니다. 
+각 Cookiecutter 템플릿마다 고유한 옵션 집합을 정의하고 각 옵션에 대해 기본값(각 입력 필드에 제안된 텍스트로 표시됨)을 지정합니다. 기본값은 종종 다른 옵션을 사용하는 동적 값인 경우 코드 조각일 수 있습니다.
 
 사용자 구성 파일을 사용하여 특정 옵션에 대한 기본값을 사용자 지정할 수 있습니다. Cookiecutter 확장에서 사용자 구성 파일을 감지하면 템플릿의 기본값을 사용자 구성 파일의 기본값으로 덮어씁니다. 이 동작에 대해서는 Cookiecutter 설명서의 [User Config](https://cookiecutter.readthedocs.io/en/latest/advanced/user_config.html)(사용자 구성) 섹션에서 설명합니다.
 
@@ -203,7 +201,7 @@ Cookiecutter에는 *생성 후 후크*라는 기능이 있으므로 파일을 �
 
 ### <a name="hook-script-not-supported-on-windows"></a>Windows에서 지원하지 않는 후크 스크립트
 
-게시 스크립트가 *.sh*인 경우 Windows 컴퓨터의 응용 프로그램과 연결되지 않을 수 있습니다. Windows 스토어에서 호환되는 응용 프로그램을 찾도록 요청하는 Windows 대화 상자가 나타날 수 있습니다.
+게시 스크립트가 *.sh*인 경우 Windows 컴퓨터의 애플리케이션과 연결되지 않을 수 있습니다. Windows 스토어에서 호환되는 애플리케이션을 찾도록 요청하는 Windows 대화 상자가 나타날 수 있습니다.
 
 ### <a name="templates-with-known-issues"></a>알려진 문제점이 있는 템플릿
 

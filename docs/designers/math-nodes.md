@@ -1,21 +1,19 @@
 ---
 title: 수학 노드
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: reference
 ms.assetid: adc225cc-1cf5-4f7c-9b00-e7ac8450b6b9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 793f8ed4538568d588b4980226606d6cd1a6545a
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 43809923b730800cfa71185b136743f3098239e1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978205"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844244"
 ---
 # <a name="math-nodes"></a>수학 노드
 
@@ -26,7 +24,7 @@ ms.locfileid: "38978205"
 
 ## <a name="math-node-reference"></a>수학 노드 참조
 
-|노드|설명|속성|
+|노드|세부 정보|속성|
 |----------|-------------|----------------|
 |**Abs**|구성 요소별로 지정된 입력의 절대값을 계산합니다.<br /><br /> 입력 `X`의 각 구성 요소에 대해 음수 값을 양수로 바꿔 결과의 모든 구성 요소가 양수 값을 갖도록 합니다.<br /><br /> **입력:**<br /><br /> `X`: `float`, `float2`, `float3` 또는 `float4`<br /> 절대 값을 확인할 값입니다.<br /><br /> `Output:`<br /><br /> `Output`: 입력 `X`과 동일<br /> 구성 요소별 절대 값입니다.|없음|
 |**추가**|구성 요소별로 지정된 입력의 구성 요소 단위 합계를 계산합니다.<br /><br /> 결과의 각 구성 요소에 대해 입력 `X` 및 입력 `Y`의 해당 구성 요소를 더합니다.<br /><br /> **입력:**<br /><br /> `X`: `float`, `float2`, `float3` 또는 `float4`<br /> 더할 값 중 하나입니다.<br /><br /> `Y`: 입력 `X`과 동일<br /> 더할 값 중 하나입니다.<br /><br /> **출력:**<br /><br /> `Output`: 입력 `X`과 동일<br /> 구성 요소별 합계입니다.|없음|

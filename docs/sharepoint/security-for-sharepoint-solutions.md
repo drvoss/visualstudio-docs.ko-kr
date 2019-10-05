@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - security [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, security
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ae284cd05e173f271bff3b0a3ef7d9cba3fadfc6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 31bcd41dc1a6fd7f314c7d701f52c3728dd2ee8c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009805"
 ---
 # <a name="security-for-sharepoint-solutions"></a>SharePoint 솔루션 보안
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 응용 프로그램의 보안을 강화 하는 데 도움이 되는 다음과 같은 기능이 통합 되어 있습니다.
@@ -46,42 +46,42 @@ ms.locfileid: "53904905"
 ## <a name="sharepoint-permissions-considerations"></a>SharePoint 사용 권한 고려 사항
  SharePoint 솔루션을 개발 하려면 실행 하 고 SharePoint 솔루션을 디버깅할 충분 한 권한이 있어야 합니다. SharePoint 솔루션을 테스트할 수 있습니다, 전에 필요한 권한이 있는지 확인 하려면 다음 단계를 수행 합니다.
 
-1.  시스템에서 관리자 권한으로 사용자 계정을 추가 합니다.
+1. 시스템에서 관리자 권한으로 사용자 계정을 추가 합니다.
 
-2.  팜 관리자는 SharePoint 서버에 대 한 사용자 계정에 추가 합니다.
+2. 팜 관리자는 SharePoint 서버에 대 한 사용자 계정에 추가 합니다.
 
-    1.  SharePoint 2010 중앙 관리에서 선택 합니다 **팜 관리자 그룹 관리** 링크 합니다.
+    1. SharePoint 2010 중앙 관리에서 선택 합니다 **팜 관리자 그룹 관리** 링크 합니다.
 
-    2.  에 **Farm Administrators** 페이지를 선택 합니다 **새로 만들기** 메뉴 옵션
+    2. 에 **Farm Administrators** 페이지를 선택 합니다 **새로 만들기** 메뉴 옵션
 
-3.  사용자 계정에 추가 된 권한을 WSS_ADMIN_WPG 그룹에 있습니다.
+3. 사용자 계정에 추가 된 권한을 WSS_ADMIN_WPG 그룹에 있습니다.
 
 ## <a name="additional-security-resources"></a>추가 보안 리소스
  보안 문제에 대 한 자세한 내용은 다음을 참조 합니다.
 
 ### <a name="visual-studio-security"></a>Visual Studio 보안
 
--   [보안 및 사용자 권한](http://go.microsoft.com/fwlink/?LinkId=177503)
+- [보안 및 사용자 권한](http://go.microsoft.com/fwlink/?LinkId=177503)
 
--   [네이티브 및.NET Framework 코드의 보안](http://go.microsoft.com/fwlink/?LinkId=177504)
+- [네이티브 및.NET Framework 코드의 보안](http://go.microsoft.com/fwlink/?LinkId=177504)
 
--   [.NET Framework의 보안](http://go.microsoft.com/fwlink/?LinkId=177502)
+- [.NET Framework의 보안](http://go.microsoft.com/fwlink/?LinkId=177502)
 
 ### <a name="sharepoint-security"></a>SharePoint 보안
 
--   [SharePoint Foundation 관리 및 보안](http://go.microsoft.com/fwlink/?LinkId=177501)
+- [SharePoint Foundation 관리 및 보안](http://go.microsoft.com/fwlink/?LinkId=177501)
 
--   [SharePoint 보안 리소스 센터](http://go.microsoft.com/fwlink/?LinkId=177498)
+- [SharePoint 보안 리소스 센터](http://go.microsoft.com/fwlink/?LinkId=177498)
 
--   [SharePoint Foundation에서 웹 파트 보안](http://go.microsoft.com/fwlink/?LinkId=177511)
+- [SharePoint Foundation에서 웹 파트 보안](http://go.microsoft.com/fwlink/?LinkId=177511)
 
--   [웹 응용 프로그램 보안 개선: 위협 및 대책](http://go.microsoft.com/fwlink/?LinkID=140080)
+- [웹 응용 프로그램 보안 개선: 위협 및 대책](http://go.microsoft.com/fwlink/?LinkID=140080)
 
 ### <a name="general-security"></a>일반적인 보안
 
--   [MSDN 보안 개발 수명 주기](http://go.microsoft.com/fwlink/?LinkID=147149)
+- [MSDN 보안 개발 수명 주기](http://go.microsoft.com/fwlink/?LinkID=147149)
 
--   [보안 된 ASP.NET 응용 프로그램 빌드: 인증, 권한 부여 및 보안 통신](http://go.microsoft.com/fwlink/?LinkId=177494)
+- [보안 된 ASP.NET 응용 프로그램 빌드: 인증, 권한 부여 및 보안 통신](http://go.microsoft.com/fwlink/?LinkId=177494)
 
 ## <a name="see-also"></a>참고자료
 

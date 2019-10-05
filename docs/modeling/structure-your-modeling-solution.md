@@ -4,20 +4,19 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: fba020f27db73c5a96225c777f68e21db449b331
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b602afa2b6611f5201515f492f7b3c7bb7afa08
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003360"
 ---
 # <a name="structure-your-modeling-solution"></a>모델링 솔루션 구성
 
-개발 프로젝트에서 모델을 효과적으로 사용하려면 팀 멤버가 프로젝트의 다른 파트 모델에서 동시에 작업할 수 있어야 합니다. 이 항목에서는 전체 레이어 다이어그램의 레이어에 해당하는 여러 파트로 응용 프로그램을 나누는 체계를 제안합니다.
+개발 프로젝트에서 모델을 효과적으로 사용하려면 팀 멤버가 프로젝트의 다른 파트 모델에서 동시에 작업할 수 있어야 합니다. 이 항목에서는 전체 레이어 다이어그램의 레이어에 해당하는 여러 파트로 애플리케이션을 나누는 체계를 제안합니다.
 
 프로젝트 또는 하위 프로젝트에서 신속하게 시작하려면 선택한 프로젝트 구조를 따르는 프로젝트 템플릿을 사용하는 것이 유용합니다. 이 항목에서는 이러한 템플릿을 만들고 사용하는 방법을 설명합니다.
 
@@ -27,11 +26,11 @@ ms.locfileid: "53831539"
 
 ## <a name="solution-structure"></a>솔루션 구조
 
-중간 규모 또는 대규모 프로젝트에서 팀의 구조는 응용 프로그램 구조를 기반으로 합니다. 각 팀이 Visual Studio 솔루션을 사용합니다.
+중간 규모 또는 대규모 프로젝트에서 팀의 구조는 애플리케이션 구조를 기반으로 합니다. 각 팀이 Visual Studio 솔루션을 사용합니다.
 
-### <a name="to-divide-an-application-into-layers"></a>응용 프로그램을 레이어로 나누려면
+### <a name="to-divide-an-application-into-layers"></a>애플리케이션을 레이어로 나누려면
 
-1. 웹 응용 프로그램, 서비스 응용 프로그램 또는 데스크톱 응용 프로그램과 같은 응용 프로그램 구조에 따라 솔루션 구조를 지정합니다. 다양 한 일반적인 아키텍처에서 설명한 [Microsoft 응용 프로그램 아키텍처 가이드의 응용 프로그램 Archetype](http://go.microsoft.com/fwlink/?LinkId=196681)합니다.
+1. 웹 애플리케이션, 서비스 애플리케이션 또는 데스크톱 애플리케이션과 같은 애플리케이션 구조에 따라 솔루션 구조를 지정합니다. 다양 한 일반적인 아키텍처에서 설명한 [Microsoft 응용 프로그램 아키텍처 가이드의 응용 프로그램 Archetype](http://go.microsoft.com/fwlink/?LinkId=196681)합니다.
 
 2. 아키텍처 솔루션 이라고 하는 Visual Studio 솔루션을 만듭니다. 이 솔루션은 시스템의 전반적인 디자인을 만드는 데 사용됩니다. 모델을 포함하지만 코드는 포함하지 않습니다.
 
@@ -51,7 +50,7 @@ ms.locfileid: "53831539"
 
    이 모델에는 요구 사항과 해당 계층의 디자인을 설명 하는 다이어그램이 포함 됩니다. 중첩 된 계층을 보여 주는 종속성 다이어그램을 포함할 수도 있습니다.
 
-   이제 각 레이어에 대한 모델과 응용 프로그램 아키텍처에 대한 모델이 만들어졌습니다. 각 모델은 자체 솔루션에 포함됩니다. 이렇게 하면 팀 멤버가 레이어에서 동시에 작업할 수 있습니다.
+   이제 각 레이어에 대한 모델과 애플리케이션 아키텍처에 대한 모델이 만들어졌습니다. 각 모델은 자체 솔루션에 포함됩니다. 이렇게 하면 팀 멤버가 레이어에서 동시에 작업할 수 있습니다.
 
 2. 아키텍처 솔루션을 사용하려면 각 레이어 솔루션의 모델링 프로젝트를 추가합니다. 이 작업을 수행하려면 아키텍처 솔루션을 엽니다. **솔루션 탐색기**및 추가 가리킨 다음 클릭 솔루션 노드를 마우스 오른쪽 단추로 클릭 **기존 프로젝트**합니다. 한 레이어 솔루션의 모델링 프로젝트(.modelproj)로 이동합니다.
 

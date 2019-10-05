@@ -1,14 +1,9 @@
 ---
 title: 시각화 도우미 보안 고려 사항 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,20 +16,20 @@ ms.assetid: cdd86bd5-b729-409b-a7c6-374efa091eb1
 caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b25c9a183a843130861818f8a80948a68a8b1ed5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 51c79c34520c36e51599d4d6135784f493673b62
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51800629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146458"
 ---
 # <a name="visualizer-security-considerations"></a>시각화 도우미 보안 고려 사항
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 시각화 도우미를 작성할 때는 보안 문제를 고려해야 합니다. 당장은 이러한 잠재적 위협에 대한 취약점이 발견되지 않더라도 개발자는 이러한 문제의 가능성을 인식하고 여기서 설명하는 적절한 보안 예방책에 따라 향후 발생할 수 있는 위험에 대비해야 합니다.  
   
- 디버거 시각화 도우미에는 부분 신뢰 응용 프로그램에 허용되는 것보다 많은 권한이 필요합니다. 부분 신뢰 코드에서 중지하면 시각화 도우미가 로드되지 않습니다. 시각화 도우미를 사용하여 디버깅하려면 완전 신뢰 코드를 실행해야 합니다.  
+ 디버거 시각화 도우미에는 부분 신뢰 애플리케이션에 허용되는 것보다 많은 권한이 필요합니다. 부분 신뢰 코드에서 중지하면 시각화 도우미가 로드되지 않습니다. 시각화 도우미를 사용하여 디버깅하려면 완전 신뢰 코드를 실행해야 합니다.  
   
 ## <a name="possible-malicious-debuggee-component"></a>악의적으로 사용될 수 있는 디버기(debuggee) 구성 요소  
  시각화 도우미는 디버거 쪽과 디버기 쪽에 하나씩 적어도 두 개 이상의 클래스로 구성됩니다. 시각화 도우미는 대개 특별한 디렉터리에 배치된 별도의 어셈블리로 배포되지만 디버기에서 로드할 수도 있습니다. 이 경우 디버거는 디버기에서 코드를 가져와 디버거 내에서 완전 신뢰 수준으로 이를 실행합니다.  
@@ -50,6 +45,3 @@ ms.locfileid: "51800629"
  [방법: 시각화 도우미 작성](../debugger/how-to-write-a-visualizer.md)   
  [사용자 지정 시각화 도우미 만들기](../debugger/create-custom-visualizers-of-data.md)   
  [디버거에서 데이터 보기](../debugger/viewing-data-in-the-debugger.md)
-
-
-

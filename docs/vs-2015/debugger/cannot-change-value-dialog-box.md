@@ -1,14 +1,9 @@
 ---
 title: 값 대화 상자를 변경할 수 없습니다 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.variables.failededit
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 19e930c2-5fbf-4c83-aae8-a1dc3f8fcae8
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 19ef7640939ba1ad9a22dcf519636c64df011394
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bfe275411346e499312ba51c50a3a2ac3f4ed7d5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782403"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161643"
 ---
 # <a name="cannot-change-value-dialog-box"></a>값을 변경할 수 없음 대화 상자
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,6 +39,3 @@ Error
   
 ## <a name="see-also"></a>참고 항목  
  [디버거의 식](../debugger/expressions-in-the-debugger.md)
-
-
-

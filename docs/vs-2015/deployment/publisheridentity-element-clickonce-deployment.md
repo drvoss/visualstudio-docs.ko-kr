@@ -1,14 +1,9 @@
 ---
 title: '&lt;publisherIdentity&gt; 요소 (ClickOnce 배포) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: 34c579db-d2f2-4b66-b9c8-47207f33d950
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 1d25b9ff6c4d8a3eb43d18d5c9849ba7199ffe79
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 486e0bc5059e041f02e8dac4836c5ff59b27f63e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226943"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157636"
 ---
 # <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt; 요소 (ClickOnce 배포)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,8 +43,8 @@ ms.locfileid: "49226943"
   
 |특성|설명|  
 |---------------|-----------------|  
-|`name`|필수. 이 응용 프로그램을 게시 하는 파티의 id를 설명 합니다.|  
-|`issuerKeyHash`|필수. 인증서 발급자의 공개 키의 sha-1 해시를 포함합니다.|  
+|`name`|필수 요소. 이 응용 프로그램을 게시 하는 파티의 id를 설명 합니다.|  
+|`issuerKeyHash`|필수 요소. 인증서 발급자의 공개 키의 sha-1 해시를 포함합니다.|  
   
 #### <a name="parameters"></a>매개 변수  
   
@@ -62,6 +57,3 @@ ms.locfileid: "49226943"
 ## <a name="requirements"></a>요구 사항  
   
 ## <a name="subhead"></a>부제목
-
-
-

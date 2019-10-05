@@ -1,11 +1,8 @@
 ---
 title: 순서도 활동 디자이너 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Flowchart.UI
@@ -15,13 +12,13 @@ ms.assetid: d5af2276-5215-4138-880a-cf2b90bbf3a0
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 67bebeec9c2d88ba1912bc50b27e38f8278e7e3f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3e89caded1b7388b79ea3232dc0a2809dc7b8222
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943466"
 ---
 # <a name="flowchart-activity-designer"></a>순서도 활동 디자이너
 <xref:System.Activities.Statements.Flowchart> 활동은 복잡한 흐름 제어를 정의하고 관리하는 워크플로를 만드는 데 사용됩니다. 코드 또는 <xref:System.Activities.Statements.Flowchart>를 사용하여 [!INCLUDE[wfd2](../includes/wfd2-md.md)]를 작성할 수 있습니다. 이 항목에서는 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 환경에 대해 설명합니다. 개발자는 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 워크플로 활동 디자이너를 사용하여 워크플로를 자연스럽게 작성할 수 있습니다.  
@@ -39,7 +36,7 @@ ms.locfileid: "49226241"
 ### <a name="flowchart-activity-properties"></a>Flowchart 활동 속성  
  다음 표에서는 <xref:System.Activities.Statements.Flowchart> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. 이러한 속성은 속성 표 또는 디자이너 화면에서 편집할 수 있습니다.  
   
-|속성 이름|필수|용도|  
+|속성 이름|필수|사용|  
 |-------------------|--------------|-----------|  
 |<xref:System.Activities.Activity.DisplayName%2A>|False|머리글에 활동 디자이너의 표시 이름을 지정합니다. 기본값은 Flowchart입니다. 값을 편집할 수 있습니다 합니다 **속성** 창 또는 활동 디자이너 머리글에서 직접.<br /><br /> <xref:System.Activities.Activity.DisplayName%2A>은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|  
 |<xref:System.Activities.Statements.Flowchart.Variables%2A>|False|자식 활동 간에 상태를 공유하기 위해 이 <xref:System.Activities.Statements.Flowchart> 내로 범위가 지정된 변수 컬렉션입니다.|  
@@ -47,6 +44,6 @@ ms.locfileid: "49226241"
 |<xref:System.Activities.Statements.Flowchart.Nodes%2A>|False|<xref:System.Activities.Statements.FlowNode>에 있는 <xref:System.Activities.Statements.Flowchart> 개체 컬렉션을 포함합니다.|  
   
 ## <a name="see-also"></a>참고 항목  
- [순서도](../workflow-designer/flowchart-activity-designers.md)   
+ [Flowchart](../workflow-designer/flowchart-activity-designers.md)   
  [FlowDecision](../workflow-designer/flowdecision-activity-designer.md)   
  [FlowSwitch\<T>](../workflow-designer/flowswitch-t-activity-designer.md)

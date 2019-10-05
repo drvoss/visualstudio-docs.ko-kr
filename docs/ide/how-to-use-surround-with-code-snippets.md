@@ -1,27 +1,25 @@
 ---
 title: 코드 감싸기 코드 조각 사용 방법 | Microsoft Docs
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - surround-with snippets
 - snippets [C#], surround with
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2c5211291fbfe3bb7c8ab3fe1eaa371a2dd8e2c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0bf279502c52c47a68ea7eb5fb5c193e7d31e4d6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943191"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428211"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>방법: 코드 감싸기 코드 조각 사용
 
-다음 프로시저에서는 코드 감싸기 코드 조각을 사용하는 방법을 설명합니다. 코드 감싸기 코드 조각은 세 가지 방법 즉, 바로 가기 키, **편집** 메뉴 및 바로 가기 메뉴를 통해 사용할 수 있습니다.
+다음 프로시저에서는 코드 감싸기 코드 조각을 사용하는 방법을 설명합니다. 코드 감싸기 코드 조각은 세 가지 방법 즉, 바로 가기 키, **편집** 메뉴 및 오른쪽 클릭(상황에 맞는) 메뉴를 통해 사용할 수 있습니다.
 
 ## <a name="to-use-surround-with-code-snippets-through-keyboard-shortcut"></a>바로 가기 키를 통해 코드 감싸기 코드 조각을 사용하려면
 

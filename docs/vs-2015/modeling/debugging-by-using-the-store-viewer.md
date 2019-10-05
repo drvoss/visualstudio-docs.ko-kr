@@ -1,12 +1,9 @@
 ---
 title: 저장소 뷰어를 사용 하 여 디버깅 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, store viewer
 - Domain-Specific Language, store
@@ -14,13 +11,13 @@ ms.assetid: 0178db2e-ae99-4ed3-9b87-8620fa9fa8e4
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 78a7cad2db2efa8057f2b95d117f93c59cc328cb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1a76cd9b726e534271937cb67a8d3f946d4eb477
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433192"
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>저장소 뷰어를 사용하여 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +32,13 @@ Microsoft.VisualStudio.Modeling.Diagnostics.StoreViewer.Show(mystore);
 ```  
   
 > [!NOTE]
->  바꿔야 `mystore` 저장소 인스턴스의 이름입니다. 또한 코드에 네임 스페이스를 추가 하는 경우 정규화 된 네임 스페이스가 없는 저장소 뷰어를 표시 하는 것에 대 한 명령을 입력할 수 있습니다.  
+> 바꿔야 `mystore` 저장소 인스턴스의 이름입니다. 또한 코드에 네임 스페이스를 추가 하는 경우 정규화 된 네임 스페이스가 없는 저장소 뷰어를 표시 하는 것에 대 한 명령을 입력할 수 있습니다.  
 >   
->  `using Microsoft.VisualStudio.Modeling.Diagnostics;`  
+> `using Microsoft.VisualStudio.Modeling.Diagnostics;`  
 >   
->  `…`  
+> `…`  
 >   
->  `StoreViewer.Show(mystore);`  
+> `StoreViewer.Show(mystore);`  
   
  `Show` 메서드에 몇 가지 오버 로드가 있습니다. 매개 변수로 파티션 또는 저장소의 인스턴스를 지정할 수 있습니다.  
   
@@ -57,6 +54,3 @@ Microsoft.VisualStudio.Modeling.Diagnostics.StoreViewer.Show(mystore);
   
 ## <a name="see-also"></a>참고 항목  
  [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)
-
-
-

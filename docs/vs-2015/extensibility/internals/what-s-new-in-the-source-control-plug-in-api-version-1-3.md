@@ -1,27 +1,22 @@
 ---
 title: 새로운&#39;의 원본 제어 플러그 인 API 버전 1.3 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, what's new in API v1.3
 - what's new [Visual Studio SDK], source control plug-ins
 ms.assetid: 7dfb2227-6e1d-4028-bce9-f8967456a993
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 58756bde7f3eb9fbc0f42bf494d82e8cc508796e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4d5333a5b44e9c990843e66da357578e4a90d210
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793922"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200923"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>새로운&#39;의 원본 제어 플러그 인 API 버전 1.3
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51793922"
 ## <a name="changes"></a>변경 내용  
  다음 함수는 새 원본 제어 플러그 인 api 버전 1.3:  
   
-|기능|개요|  
+|함수|개요|  
 |--------------|--------------|  
 |[SccGetExtendedCapabilities](../../extensibility/sccgetextendedcapabilities-function.md)|추가 기능 비트를를 보고 될 수 있습니다.|  
 |[SccEnumChangedFiles](../../extensibility/sccenumchangedfiles-function.md)|최신 버전을 로컬 디스크에 보다 버전 제어 데이터베이스에 있는 파일을 검사할 수 있습니다.|  
@@ -44,4 +39,3 @@ ms.locfileid: "51793922"
 ## <a name="see-also"></a>참고 항목  
  [시작](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)   
  [소스 제어 플러그 인 API 버전 1.2의 새로운 기능](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
-

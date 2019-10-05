@@ -1,30 +1,25 @@
 ---
 title: L2DBForm.xaml 소스 코드 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 624e96d4-6d27-4195-8ac2-2f3835f6c57e
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 291f7ece2c53d168125da32a11e50ca42e19f3fb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f08045a83849bdbd5bf6fb51287a66806d3bf4d6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207690"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403493"
 ---
 # <a name="l2dbformxaml-source-code"></a>L2DBForm.xaml 원본 코드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목에서는 [WPF Data Binding Using LINQ to XML Example](../designers/wpf-data-binding-using-linq-to-xml-example.md)에 대한 XAML 소스 파일인 L2DBForm.xaml을 제공하며 이 파일에 대해 설명합니다.  
+이 항목에서는 [LINQ to XML 예제를 사용한 WPF 데이터 바인딩](../designers/wpf-data-binding-using-linq-to-xml-example.md)에 대한 XAML 소스 파일인 L2DBForm.xaml을 제공하며 이 파일에 대해 설명합니다.  
   
 ## <a name="overall-ui-structure"></a>전체적인 UI 구조  
  WPF 프로젝트에 일반적이듯이 이 파일에는 부모 요소가 하나 포함되어 있습니다. 이 부모 요소는 <xref:System.Windows.Window> 네임스페이스의 파생된 클래스 `L2XDBFrom` 과 연결된 `LinqToXmlDataBinding` XML 요소입니다.  
@@ -92,7 +87,7 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 ### <a name="description"></a>설명  
   
 > [!NOTE]
->  줄 번호를 추적하기 쉽도록 아래의 코드를 Visual Studio의 C# 소스 코드 편집기와 같은 코드 편집기에 복사하는 것이 좋습니다.  
+> 줄 번호를 추적하기 쉽도록 아래의 코드를 Visual Studio의 C# 소스 코드 편집기와 같은 코드 편집기에 복사하는 것이 좋습니다.  
   
 ### <a name="code"></a>코드  
   
@@ -249,6 +244,3 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 ## <a name="see-also"></a>참고 항목  
  [연습: LinqToXmlDataBinding 예제](../designers/walkthrough-linqtoxmldatabinding-example.md)   
  [L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md)
-
-
-

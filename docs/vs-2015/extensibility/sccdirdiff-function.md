@@ -1,14 +1,9 @@
 ---
 title: SccDirDiff 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccDirDiff
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 26c9ba92-e3b9-4dd2-bd5e-76b17745e308
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7d2c45773a9d45c69cfed4f773bc5cdfcfa1c305
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 81279e0fdb0df6600686adc57bb1c5489e8e7aab
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791191"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432452"
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,8 +80,7 @@ SCCRTN SccDirDiff(
 |SCC_DIFF_QD_TIME|플러그 인에서 지 원하는, 자동으로 해당 타임 스탬프를 통해 디렉터리를 비교 하거나, 지원 되지 않는 경우 SCC_DIFF_QD_CHECKSUM 또는 SCC_DIFF_QD_CONTENTS 대체 합니다.|  
   
 > [!NOTE]
->  이 함수는 동일한 명령 플래그를 사용 합니다 [SccDiff](../extensibility/sccdiff-function.md)합니다. 그러나 원본 제어 플러그 인을 디렉터리에 대 한 "빠른 diff" 작업을 지원 하지 않도록 수도 있습니다.  
+> 이 함수는 동일한 명령 플래그를 사용 합니다 [SccDiff](../extensibility/sccdiff-function.md)합니다. 그러나 원본 제어 플러그 인을 디렉터리에 대 한 "빠른 diff" 작업을 지원 하지 않도록 수도 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
-

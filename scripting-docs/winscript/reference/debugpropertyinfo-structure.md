@@ -2,7 +2,6 @@
 title: DebugPropertyInfo 구조체 | Microsoft 문서
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0dca3dac5c2e55e512bd4f798ca4a9bce82f7e00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 99208626b41f2463178bccecf73c21a1d15fa765
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874191"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955265"
 ---
 # <a name="debugpropertyinfo-structure"></a>DebugPropertyInfo 구조체
 개체의 이름, 형식 및 값이 있는 계층적 특성을 설명 합니다. 지역 변수, 매개 변수, 조사식 변수 및 식의 디버그 속성을 설명 하는 데 사용 되 고 등록 합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 typedef struct DebugPropertyInfo{  
    DBGPROP_INFO_FLAGS  dwValidFields;  
    BSTR  bstrName;  

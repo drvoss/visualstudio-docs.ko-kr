@@ -1,65 +1,77 @@
 ---
 title: -Clean(devenv.exe)
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
 - builds [Team System], cleaning files
-- clean Devenv switch
-- /clean Devenv switch
-- Devenv, /clean switch
+- Clean Devenv switch
+- /Clean Devenv switch
+- Devenv, /Clean switch
 ms.assetid: 79929dfd-22c9-4cec-a0d0-a16f15b8f7e4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7827f11a93e517f81eb03cfe2e33305859b4d78
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 810f05b0838f27004bee983dc0acf7a3009e22a0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948857"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62573094"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
+
 모든 중간 파일 및 출력 디렉터리를 정리합니다.
 
 ## <a name="syntax"></a>구문
 
-```
-devenv FileName /Clean [ /project projectnameorfile [/projectconfig name ] ]
+```shell
+devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfigName]] [/Out OutputFilename]]
 ```
 
 ## <a name="arguments"></a>인수
- `FileName`
 
- 필수. 솔루션 파일 또는 프로젝트 파일의 전체 경로 및 이름입니다.
+- *SolutionName*
 
- /project `ProjName`
+  필수 요소. 솔루션 파일의 전체 경로 및 이름입니다.
 
- 선택 사항입니다. 솔루션 내에 있는 프로젝트 파일의 경로와 이름입니다. `SolutionName` 폴더에서 프로젝트 파일, 프로젝트의 표시 이름 또는 프로젝트 파일의 전체 경로와 이름까지의 상대 경로를 입력할 수 있습니다.
+- *Config*
 
- /projectconfig `ProjConfigName`
+  선택 사항입니다. *SolutionName*에서 명명된 솔루션의 매개자 파일을 정리하는 구성입니다(예: `Debug` 또는 `Release`). 둘 이상의 솔루션 플랫폼을 사용할 수 있는 경우 플랫폼(예: `Debug|Win32`)도 지정해야 합니다. 이 인수가 지정되지 않거나 빈 문자열(`""`)인 경우에는 솔루션의 활성 구성이 사용됩니다.
 
- 선택 사항입니다. `/project` 정리 시 사용할 프로젝트 빌드 구성 이름입니다.
+- `/Project` *ProjName*
 
-## <a name="remarks"></a>설명
- 이 스위치는 IDE(통합 개발 환경)내에서 **솔루션 정리** 메뉴 명령과 동일한 기능을 수행합니다.
+  선택 사항입니다. 솔루션 내에 있는 프로젝트 파일의 경로와 이름입니다. 프로젝트의 표시 이름 또는 *SolutionName* 폴더에서 프로젝트 파일까지 상대 경로를 입력할 수 있습니다. 프로젝트 파일의 전체 경로와 이름을 입력할 수도 있습니다.
 
- 공백을 포함하는 문자열은 큰따옴표로 묶습니다.
+- `/ProjectConfig` *ProjConfigName*
 
- 오류를 포함한 정리 및 빌드에 대한 요약 정보는 **명령** 창 또는 `/out` 스위치로 지정된 로그 파일에 표시할 수 있습니다.
+  선택 사항입니다. 명명된 `/Project`를 정리할 때 사용할 프로젝트의 빌드 구성 이름입니다(예: `Debug` 또는 `Release`). 둘 이상의 솔루션 플랫폼을 사용할 수 있는 경우 플랫폼(예: `Debug|Win32`)도 지정해야 합니다. 이 스위치가 지정되면 *Config* 인수를 재정의합니다.
 
-## <a name="example"></a>예
- 첫 번째 예제는 솔루션 파일에 지정된 기본 구성을 사용하여 `MySolution` 솔루션을 정리합니다.
+- `/Out` *OutputFilename*
 
- 두 번째 예제에서는 `MySolution`의 `Debug` 솔루션 구성 내에 있는 `Debug` 프로젝트 빌드 구성을 사용하여 `CSharpConsoleApp` 프로젝트를 정리합니다.
+  선택 사항입니다. 도구의 출력을 보낼 파일의 이름입니다. 파일이 이미 있는 경우 출력은 파일의 끝에 추가됩니다.
 
-```
-Devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /Clean
+## <a name="remarks"></a>주의
 
-devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /Clean /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig "Debug"
+이 스위치는 IDE 내에서 **솔루션 정리** 메뉴 명령과 동일한 기능을 수행합니다.
+
+공백을 포함하는 문자열은 큰따옴표로 묶습니다.
+
+정리 및 빌드 시 오류를 포함한 요약 정보는 **명령** 창 또는 [/Out](out-devenv-exe.md) 스위치로 지정된 로그 파일에 표시될 수 있습니다.
+
+`/Project` 스위치가 지정되지 않으면 *FileName*이 프로젝트 파일로 지정된 경우에도 솔루션의 모든 프로젝트에서 정리 작업이 수행됩니다.
+
+## <a name="example"></a>예제
+
+첫 번째 예제는 솔루션 파일에 지정된 기본 구성을 사용하여 `MySolution` 솔루션을 정리합니다.
+
+두 번째 예제에서는 `MySolution` 내에 있는 `Debug` 프로젝트 빌드 구성을 사용하여 `CSharpWinApp` 프로젝트를 정리합니다.
+
+```shell
+devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /Clean
+
+devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /Clean "Debug" /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig "Debug"
 ```
 
 ## <a name="see-also"></a>참고 항목

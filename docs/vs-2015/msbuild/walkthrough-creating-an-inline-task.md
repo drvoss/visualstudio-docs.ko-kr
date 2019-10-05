@@ -1,14 +1,9 @@
 ---
 title: '연습: 인라인 작업 만들기 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - MSBuild, tutorial
 - MSBuild, tasks
@@ -16,18 +11,17 @@ ms.assetid: 438194cb-668c-41a9-a7e2-c118d14c1ea7
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a399e8285b7b041488a4cecdf2007f8fd1647b2d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ad081a4d6954d402aa295a94edae3f5bdf50ef4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840719"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445625"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>연습: 인라인 작업 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터페이스를 구현하는 클래스를 컴파일하여 생성됩니다. .NET Framework 버전 4부터 프로젝트 파일에서 인라인으로 작업을 만들 수 있습니다. 작업을 호스트할 별도의 어셈블리를 만들 필요가 없습니다. 자세한 내용은 [인라인 작업](../msbuild/msbuild-inline-tasks.md)을 참조하세요.  
   
  이 연습에서는 이러한 인라인 작업을 만들고 실행하는 방법을 보여 줍니다.  
@@ -53,15 +47,15 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
   
 #### <a name="to-create-and-modify-a-project-file"></a>프로젝트 파일을 만들고 수정하려면  
   
-1.  Visual Studio의 **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 클릭합니다.  
+1. Visual Studio의 **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 클릭합니다.  
   
-2.  **새 프로젝트** 대화 상자에서 Visual C# 프로젝트 형식을 선택하고 **Windows Forms 응용 프로그램** 템플릿을 선택합니다. **이름** 상자에 `InlineTasks`을 입력합니다. 솔루션의 **위치**를 `D:\`와 같이 입력합니다. **솔루션용 디렉터리 만들기**가 선택되어 있고, **소스 제어에 추가**가 선택 취소되어 있고, **솔루션 이름**이 `InlineTasks`인지 확인합니다.  
+2. **새 프로젝트** 대화 상자에서 Visual C# 프로젝트 형식을 선택하고 **Windows Forms 애플리케이션** 템플릿을 선택합니다. **이름** 상자에 `InlineTasks`을 입력합니다. 솔루션의 **위치**를 `D:\`와 같이 입력합니다. **솔루션용 디렉터리 만들기**가 선택되어 있고, **소스 제어에 추가**가 선택 취소되어 있고, **솔루션 이름**이 `InlineTasks`인지 확인합니다.  
   
      **확인**을 클릭하여 프로젝트 파일을 만듭니다.  
   
-3.  **솔루션 탐색기**에서 InlineTasks 프로젝트 노드를 마우스 오른쪽 단추로 클릭한 다음 **프로젝트 언로드**를 클릭합니다.  
+3. **솔루션 탐색기**에서 InlineTasks 프로젝트 노드를 마우스 오른쪽 단추로 클릭한 다음 **프로젝트 언로드**를 클릭합니다.  
   
-4.  프로젝트 노드를 다시 마우스 오른쪽 단추로 클릭하고 **InlineTasks.csproj 편집**을 클릭합니다.  
+4. 프로젝트 노드를 다시 마우스 오른쪽 단추로 클릭하고 **InlineTasks.csproj 편집**을 클릭합니다.  
   
      프로젝트 파일이 코드 편집기에 나타납니다.  
   
@@ -110,7 +104,7 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
     `Hello, world!`  
   
    > [!NOTE]
-   >  hello 메시지가 표시되지 않으면 프로젝트 파일을 다시 저장해 보고 Hello 작업을 실행하세요.  
+   > hello 메시지가 표시되지 않으면 프로젝트 파일을 다시 저장해 보고 Hello 작업을 실행하세요.  
   
    코드 편집기와 **명령 프롬프트 창**을 오가면서 프로젝트 파일을 변경하고 결과를 빠르게 확인할 수 있습니다.  
   
@@ -263,6 +257,3 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
  [인라인 작업](../msbuild/msbuild-inline-tasks.md)   
  [작업](../msbuild/msbuild-tasks.md)   
  [대상](../msbuild/msbuild-targets.md)
-
-
-

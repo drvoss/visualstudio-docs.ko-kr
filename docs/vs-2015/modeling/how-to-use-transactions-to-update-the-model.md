@@ -1,23 +1,20 @@
 ---
 title: '방법: 트랜잭션을 사용 모델을 업데이트 하 여 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: e24436a5-7f97-401b-bc83-20d188d10d5b
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 50f9d491ed52098edb8a8ccd1a7b2f9c8834447e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: bbc09543d0ee0297678d3f205becc55a6b6d7714
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181512"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>방법: 트랜잭션을 사용하여 모델 업데이트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,9 +61,9 @@ catch (Exception ex)
 ## <a name="rolling-back-a-transaction"></a>트랜잭션 롤백  
  저장소를 유지 하거나 트랜잭션이 이전 상태로 되돌아갑니다 않도록, 다음이 전략 중 하나를 사용할 수 있습니다.  
   
-1.  트랜잭션의 범위 내에서 잡히지 않는 예외가 발생 합니다.  
+1. 트랜잭션의 범위 내에서 잡히지 않는 예외가 발생 합니다.  
   
-2.  명시적 트랜잭션을 롤백하십시오.  
+2. 명시적 트랜잭션을 롤백하십시오.  
   
     ```  
     this.Store.TransactionManager.CurrentTransaction.Rollback();  
@@ -108,6 +105,3 @@ if (!this.Store.InUndoRedoOrRollback) {...}
 if (!this.Store.InSerializationTransaction) {...}  
   
 ```
-
-
-

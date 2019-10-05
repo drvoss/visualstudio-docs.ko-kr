@@ -1,14 +1,9 @@
 ---
 title: 프로세스 뷰 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.processesview
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: e144e70e-eef2-45a7-a562-a177f177d9a1
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5fe042a3511dbf6118922e54f8953bde599481c2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d8b9c04d1cabd44418c70725ef331c9c4b5ec67e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810457"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580509"
 ---
 # <a name="processes-view"></a>프로세스 뷰
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,6 +62,3 @@ ms.locfileid: "51810457"
   
  [Spy++ 참조](../debugger/spy-increment-reference.md)  
  각 Spy + + 메뉴 및 대화 상자를 설명 하는 섹션을 포함 합니다.
-
-
-

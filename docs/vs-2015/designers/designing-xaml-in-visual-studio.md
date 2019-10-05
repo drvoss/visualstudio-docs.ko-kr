@@ -1,30 +1,25 @@
 ---
 title: XAML 디자인
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3ef644984b7c7fd364d389fb437b04f02d96b566
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 437c6cc7af2b0337b362e14db19deb9584a3d412
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056323"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695521"
 ---
 # <a name="designing-xaml-in-visual-studio"></a>Visual Studio에서 XAML 디자인
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 및 Blend for Visual Studio는 XAML 기반 Windows 데스크톱, 웹, [Windows Phone](http://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx)및 [Windows 스토어](http://msdn.microsoft.com/library/windows/apps/jj129478.aspx) 앱을 위한 정교한 사용자 인터페이스 및 풍부한 미디어 환경을 빌드할 수 있게 해주는 시각적 도구를 제공합니다. 둘 다 디자인 및 도구 창의 공통 집합과 XAML 편집기를 공유하지만 Blend for Visual Studio에서는 애니메이션 및 동작과 같은 고급 작업을 위한 추가 디자인 도구를 제공합니다.
+Visual Studio 및 Blend for Visual Studio는 XAML 기반 Windows 데스크톱, 웹, [Windows Phone](https://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx)및 [Windows 스토어](https://msdn.microsoft.com/library/windows/apps/jj129478.aspx) 앱을 위한 정교한 사용자 인터페이스 및 풍부한 미디어 환경을 빌드할 수 있게 해주는 시각적 도구를 제공합니다. 둘 다 디자인 및 도구 창의 공통 집합과 XAML 편집기를 공유하지만 Blend for Visual Studio에서는 애니메이션 및 동작과 같은 고급 작업을 위한 추가 디자인 도구를 제공합니다.
 
 ## <a name="choosing-the-right-tool"></a>적합한 도구 선택
  선택하는 디자인 도구는 대체로 사용자 역량에 따라 달라집니다. 코드를 지향하는 경우 Visual Studio에서 XAML 코드를 작성하여 고급 디자인 작업을 수행할 수 있습니다. 디자인을 지향하는 경우 Blend for Visual Studio를 사용하여 코드를 작성하지 않고 고급 작업을 수행할 수 있습니다.
@@ -34,25 +29,25 @@ Visual Studio 및 Blend for Visual Studio는 XAML 기반 Windows 데스크톱, �
 ### <a name="shared-capabilities"></a>공유 기능
  기본적인 작업의 경우 대부분 Visual Studio 및 Blend for Visual Studio용 IDE에서 약간의 차이점은 있지만 동일한 창과 기능 집합을 공유합니다. 중요 사항은 다음과 같습니다.
 
--   **일관 된 사용자 인터페이스:** Ide 간 전환을 더 즐겁고 생산적인 경험 그러면 Visual Studio 사용자 인터페이스의 친숙 한 컨텍스트 내에서 응용 프로그램을 디자인할 수 있습니다. Blend for Visual Studio는 콘텐츠와 사용자 인터페이스 간의 대비를 향상시켜 디자인하는 콘텐츠에 집중할 수 있게 해주는 Visual Studio 어두운 테마를 사용합니다. [XAML 디자이너를 사용하여 UI 만들기](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)를 참조하세요.
+- **일관된 사용자 인터페이스:** 익숙한 Visual Studio 사용자 인터페이스 컨텍스트 내에서 애플리케이션을 디자인하여 IDE 간 전환을 더 즐겁고 생산적인 경험으로 만들 수 있습니다. Blend for Visual Studio는 콘텐츠와 사용자 인터페이스 간의 대비를 향상시켜 디자인하는 콘텐츠에 집중할 수 있게 해주는 Visual Studio 어두운 테마를 사용합니다. [XAML 디자이너를 사용하여 UI 만들기](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)를 참조하세요.
 
      ![Blend for Visual Studio IDE](../designers/media/blendide.png "BlendIDE")
 
--   XAML IntelliSense 두 Ide는 문 완성, 주석 달기 및 코드 및 리소스, 바인딩 및 코드 탐색을 서식 지정과 같은 일반적인 편집기 작업에 대 한 지원을 포함 하 여 IntelliSense에서 기대 하는 일반적인 기능 중 일부를 지원 합니다.
+- **XAML IntelliSense:** 두 IDE는 모두 명령문 완성, 코드 주석 처리 및 형식 지정과 같은 일반적인 편집기 작업 지원, 리소스, 바인딩 및 코드 탐색을 포함하여 IntelliSense에서 기대하는 모든 일반적인 기능을 지원합니다.
 
--   기본 디버깅 기능 이제 실행 중인 앱을 디버그 하기 위해 코드에 중단점 설정을 포함 하 여 Blend에서 디버깅할 수 있습니다. Visual Studio와 일관된 디버깅 환경을 유지하기 위해 Blend for Visual Studio에는 Visual Studio의 디버깅 창과 도구 모음이 대부분 포함되어 있습니다. 진단 및 코드 분석과 같은 고급 디버깅 기능은 Visual Studio에서만 사용할 수 있습니다. [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md)을 참조하세요.
+- **기본 디버깅 기능:** 이제 코드에서 중단점을 설정하여 실행 중인 앱 디버그를 포함하여 Blend에서 디버그할 수 있습니다. Visual Studio와 일관된 디버깅 환경을 유지하기 위해 Blend for Visual Studio에는 Visual Studio의 디버깅 창과 도구 모음이 대부분 포함되어 있습니다. 진단 및 코드 분석과 같은 고급 디버깅 기능은 Visual Studio에서만 사용할 수 있습니다. [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md)을 참조하세요.
 
--   파일 재로드 경험 두 Blend for Visual Studio 또는 Visual Studio에서 XAML 파일을 편집할 수 있으며으로 다시 로드 되도록 자동으로 전환할 때 편집된 된 파일에 있을 수 있습니다. 워크플로 중단을 최소화하기 위해 이제 파일 다시 로드 대화 상자에서 파일 다시 로드 기본 설정을 지정할 수 있습니다.
+- **파일 재로드 환경:** Blend for Visual Studio 또는 Visual Studio 중 하나에서 XAML 파일을 편집한 후 다른 프로그램으로 전환할 때 편집된 파일이 자동으로 다시 로드되도록 할 수 있습니다. 워크플로 중단을 최소화하기 위해 이제 파일 다시 로드 대화 상자에서 파일 다시 로드 기본 설정을 지정할 수 있습니다.
 
      ![파일 재로드 경험](../designers/media/blendfilereload.png "BlendFileReload")
 
--   **동기화 된 레이아웃 및 설정:** 사용자 지정 레이아웃을 사용 하 여 저장 하 고 도구 창 레이아웃 사용자 지정을 적용할 수 있습니다. 동일한 Microsoft 계정으로 로그인하면 Visual Studio에서 Visual Studio 및 Blend for Visual Studio 둘 다에 대한 이러한 사용자 지정과 기본 설정을 컴퓨터 간에 동기화합니다. [Visual Studio에서 개발 설정 사용자 지정](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.
+- **동기화된 레이아웃 및 설정:** 사용자 지정 레이아웃을 통해 도구 창 레이아웃 사용자 지정을 저장하고 적용할 수 있습니다. 동일한 Microsoft 계정으로 로그인하면 Visual Studio에서 Visual Studio 및 Blend for Visual Studio 둘 다에 대한 이러한 사용자 지정과 기본 설정을 컴퓨터 간에 동기화합니다. [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.
 
--   **공통 솔루션 탐색기:** 솔루션 탐색기의 프로젝트 및 해당 파일을 상호 연결 된 명령에 액세스할 수 구조화 된 보기를 사용 하 여 제공 합니다. 솔루션 탐색기를 사용하면 대규모 엔터프라이즈 프로젝트 작업이 훨씬 용이해집니다. [솔루션 및 프로젝트](../ide/solutions-and-projects-in-visual-studio.md)를 참조하세요.
+- **공통 솔루션 탐색기:** 솔루션 탐색기를 통해 프로젝트 및 해당 파일을 구조적으로 보고 이와 연결된 명령에 쉽게 액세스할 수 있습니다. 솔루션 탐색기를 사용하면 대규모 엔터프라이즈 프로젝트 작업이 훨씬 용이해집니다. [솔루션 및 프로젝트](../ide/solutions-and-projects-in-visual-studio.md)를 참조하세요.
 
--   **팀 탐색기:** 팀 탐색기를 사용 하 여 팀 공동 작업을 용이 하 게 하려면 GIT 또는 TFS 리포지토리로 프로젝트를 관리할 수 있습니다. [팀 탐색기에서 작업](http://msdn.microsoft.com/library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02)을 참조하세요.
+- **팀 탐색기:** 팀 탐색기를 통해 GIT 또는 TFS 리포지토리로 프로젝트를 관리하면 팀 협업에 도움이 됩니다. [팀 탐색기에서 작업](https://msdn.microsoft.com/library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02)을 참조하세요.
 
--   **NuGet:** Visual Studio와 Blend for Visual Studio에서 NuGet 패키지를 관리할 수 있습니다. NuGet은 솔루션에서 패키지 설치 및 제거를 간소화하는 .NET Framework 패키지 관리자입니다.
+- **NuGet:** Visual Studio 및 Blend for Visual Studio 둘 다에서 NuGet 패키지를 관리할 수 있습니다. NuGet은 솔루션에서 패키지 설치 및 제거를 간소화하는 .NET Framework 패키지 관리자입니다.
 
 ## <a name="advanced-capabilities-in-blend-for-visual-studio"></a>Blend for Visual Studio의 고급 기능
  생산성을 향상시키려면 다음과 같은 작업에 Blend for Visual Studio를 사용하는 것이 좋습니다. 이러한 영역에 대해 Blend for Visual Studio는 Visual Studio 디자이너나 코드를 단독으로 사용할 때보다 빠른 속도와 더 많은 기능을 제공합니다.

@@ -1,14 +1,9 @@
 ---
-title: 'CA1009: 이벤트 처리기를 제대로 선언 | Microsoft Docs'
-ms.custom: ''
+title: 'CA1009: 이벤트 처리기를 제대로 선언 하십시오. | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1009
 - DeclareEventHandlersCorrectly
@@ -20,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7a405ebbf4cd11a695c6e93231d260d8ceae2483
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 51b04b4c081bd7961ef26657dd3cb526652df568
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918508"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704245"
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: 이벤트 처리기를 제대로 선언하십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,11 +54,8 @@ ms.locfileid: "49918508"
  [!code-vb[FxCop.Design.EventsTwoParams#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.EventsTwoParams/vb/FxCop.Design.EventsTwoParams.vb#1)]
 
 ## <a name="related-rules"></a>관련된 규칙
- [CA2109: 표시되는 이벤트 처리기를 검토하십시오.](../code-quality/ca2109-review-visible-event-handlers.md)
+ [CA2109: 표시 되는 이벤트 처리기를 검토 합니다.](../code-quality/ca2109-review-visible-event-handlers.md)
 
 ## <a name="see-also"></a>참고 항목
  <xref:System.EventArgs?displayProperty=fullName> <xref:System.Object?displayProperty=fullName>
- [NIB: 이벤트 및 대리자](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115)
-
-
-
+ [NIB: 이벤트 및 대리자](https://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)

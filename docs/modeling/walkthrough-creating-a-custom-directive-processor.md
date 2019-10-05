@@ -7,19 +7,18 @@ helpviewer_keywords:
 - walkthroughs [text templates], directive processor
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 44eb71a4bbb209453ee7deef6adf3b10c561e8af
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 661d8670f857240fdd4ed7714ca389c851d83601
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935362"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>연습: 사용자 지정 지시문 프로세서 만들기
 
@@ -43,7 +42,7 @@ ms.locfileid: "53951828"
 
 `<#@ CoolDirective Processor="CustomDirectiveProcessor" FileName="<Your Path>DocFile.xml" #>`
 
-사용자 지정 지시문 프로세서는 생성된 변형 클래스에 변수와 속성을 추가합니다. 작성하는 지시문은 <xref:System.CodeDom> 클래스를 사용하여 엔진이 생성된 변형 클래스에 추가하는 코드를 만듭니다. 합니다 <xref:System.CodeDom> 클래스에 지정 된 언어에 따라 Visual C# 또는 Visual Basic에서 코드를 만들기는 `language` 의 매개 변수는 `template` 지시문입니다. 지시문 프로세서의 언어와 지시문 프로세서에 액세스하는 텍스트 템플릿의 언어는 일치하지 않아도 됩니다.
+사용자 지정 지시문 프로세서는 생성된 변환 클래스에 변수와 속성을 추가합니다. 작성하는 지시문은 <xref:System.CodeDom> 클래스를 사용하여 엔진이 생성된 변환 클래스에 추가하는 코드를 만듭니다. 합니다 <xref:System.CodeDom> 클래스에 지정 된 언어에 따라 Visual C# 또는 Visual Basic에서 코드를 만들기는 `language` 의 매개 변수는 `template` 지시문입니다. 지시문 프로세서의 언어와 지시문 프로세서에 액세스하는 텍스트 템플릿의 언어는 일치하지 않아도 됩니다.
 
 지시문이 만드는 코드는 다음과 같습니다.
 
@@ -332,7 +331,7 @@ End Property
             {
                 XmlDocument d = new XmlDocument();
 
-                using (XmlTextReader reader = new XmlTextReader(fileName))
+                using (XmlReader reader = XmlReader.Create(fileName))
                 {
                     try
                     {
@@ -582,7 +581,7 @@ End Property
 
                 Dim d As XmlDocument = New XmlDocument()
 
-                Using reader As XmlTextReader = New XmlTextReader(fileName)
+                Using reader As XmlReader = XmlReader.Create(fileName)
 
                     Try
                         d.Load(reader)
@@ -655,7 +654,6 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
      레지스트리 키의 값은 다음과 같습니다.
 
-
    | 이름 | 형식 | 데이터 |
    |-|-|-|
    | (기본값) | REG_SZ | (값 설정 안 됨) |
@@ -664,13 +662,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
      GAC에 어셈블리를 배치한 경우 값은 다음과 같습니다.
 
-
    | 이름 | 형식 | 데이터 |
    |-|-|-|
    | (기본값) | REG_SZ | (값 설정 안 됨) |
    | 클래스 | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | Assembly | REG_SZ | CustomDP.dll |
-
 
 6. Visual Studio를 다시 시작합니다.
 

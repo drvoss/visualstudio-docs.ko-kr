@@ -1,14 +1,9 @@
 ---
 title: 메뉴 항목에 바로 가기 키 바인딩 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - keyboard command
 - keyboards
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5fd5ab9b09956c41620947ad1bcf529550db4aca
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fb85bc64164acc09aef6464b69e72b7c6cf46d77
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405634"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>메뉴 항목에 바로 가기 키 바인딩
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ ms.locfileid: "51752902"
 4. 매핑되지 않은 것을 찾을 때까지 다양 한 키 조합을 시도 합니다.  
   
    > [!NOTE]
-   >  Alt 키를 사용 하는 키보드 바로 가기 메뉴를 열고 하 고 직접 명령을 실행할 수 있습니다. 따라서 합니다 **에서 현재 사용 하는 바로 가기** alt 키를 포함 하는 바로 가기를 입력 상자를 비워 둘 수 있습니다. 바로 가기 열리지 메뉴 닫아 확인할 수 있습니다 합니다 **옵션** 대화 상자 및 키를 눌러 합니다.  
+   > Alt 키를 사용 하는 키보드 바로 가기 메뉴를 열고 하 고 직접 명령을 실행할 수 있습니다. 따라서 합니다 **에서 현재 사용 하는 바로 가기** alt 키를 포함 하는 바로 가기를 입력 상자를 비워 둘 수 있습니다. 바로 가기 열리지 메뉴 닫아 확인할 수 있습니다 합니다 **옵션** 대화 상자 및 키를 눌러 합니다.  
   
    다음 절차는 메뉴 명령 사용 하 여 기존 VSPackage를 있다고 가정 합니다. 그렇게 도움이 필요한 경우 잠시 살펴 [메뉴 명령을 사용 하 여 확장을 만드는](../extensibility/creating-an-extension-with-a-menu-command.md)합니다.  
   
@@ -60,7 +55,7 @@ ms.locfileid: "51752902"
 2. 빈 `<KeyBindings>` 섹션을 `<Commands>` 아직 제공 되지 경우.  
   
    > [!WARNING]
-   >  키 바인딩에 대 한 자세한 내용은 참조 하세요. [Keybinding](../extensibility/keybinding-element.md)합니다.  
+   > 키 바인딩에 대 한 자세한 내용은 참조 하세요. [Keybinding](../extensibility/keybinding-element.md)합니다.  
   
     에 `<KeyBindings>` 섹션에서 만들기를 `<KeyBinding>` 항목입니다.  
   
@@ -114,4 +109,3 @@ ms.locfileid: "51752902"
   
 ## <a name="see-also"></a>참고 항목  
  [메뉴 및 명령 확장](../extensibility/extending-menus-and-commands.md)
-

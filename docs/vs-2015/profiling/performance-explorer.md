@@ -1,14 +1,9 @@
 ---
 title: 성능 탐색기 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance
 - vs.performance.wizard.website
@@ -18,20 +13,20 @@ ms.assetid: df52b717-a55d-4b1d-8c2e-d5a6a38042f4
 caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ad140fcb81215a27381a75f051f07ca231f3deae
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 251b805367922d032eb90a70a9ba8ae9d8bd01f2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155499"
 ---
 # <a name="performance-explorer"></a>성능 탐색기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 개발자는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로파일링 도구를 사용하여 코드의 성능 관련 문제를 측정, 평가 및 조정할 수 있습니다. 이러한 도구는 IDE에 완벽하게 통합되어 원활하고 편리한 사용자 환경을 제공합니다.  
   
- 응용 프로그램을 프로파일링하는 것은 간단합니다. 먼저 새 성능 세션을 만듭니다. Visual Studio Team System Development Edition에서는 성능 세션 마법사를 사용해서 새 성능 세션을 만들 수 있습니다. 성능 세션이 끝난 후 프로파일링하는 동안 수집된 데이터가 .vsp 파일에 저장됩니다. IDE 안에서 .vsp 파일을 볼 수 있습니다. 수집된 데이터에서 성능 문제를 시각화하고 감지하기 위해 여러 보고서 뷰를 사용할 수 있습니다.  
+ 애플리케이션을 프로파일링하는 것은 간단합니다. 먼저 새 성능 세션을 만듭니다. Visual Studio Team System Development Edition에서는 성능 세션 마법사를 사용해서 새 성능 세션을 만들 수 있습니다. 성능 세션이 끝난 후 프로파일링하는 동안 수집된 데이터가 .vsp 파일에 저장됩니다. IDE 안에서 .vsp 파일을 볼 수 있습니다. 수집된 데이터에서 성능 문제를 시각화하고 감지하기 위해 여러 보고서 뷰를 사용할 수 있습니다.  
   
  명령줄에서 프로파일링 도구도 사용할 수 있습니다. 이를 통해 유연하게 명령줄에서 이러한 도구를 실행할 수도 있고 이러한 도구로 스크립트를 사용하는 작업을 자동화할 수도 있습니다.  
   
@@ -41,7 +36,7 @@ ms.locfileid: "51786108"
   
 |작업|관련 내용|  
 |----------|---------------------|  
-|**Windows 8에 대한 새로운 기술**|[Windows 8 및 Windows Server 2012 응용 프로그램의 성능 도구](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)|  
+|**Windows 8에 대한 새로운 기술**|[Windows 8 및 Windows Server 2012 애플리케이션의 성능 도구](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)|  
 |**프로파일링 개념 이해:** 프로파일링 도구를 사용하여 코드 성능을 수집하고, 보고, 분석하는 데 사용하는 개념 및 용어에 대해 알아봅니다.|[개요](../profiling/overviews-performance-tools.md)|  
 |**시작 및 작업:** 프로파일링 도구를 사용하여 코드 성능을 수집하고, 보고, 분석할 때 사용하는 기본적인 절차에 대해 알아봅니다. 실전 연습을 수행해 보세요.|[시작](../profiling/getting-started-with-performance-tools.md)|  
 |**프로파일링 세션 구성:** 프로파일링할 프로젝트 또는 이진 파일을 지정하고, 프로파일링 방법을 선택하고, 수집할 성능 데이터를 선택하고, 기타 프로파일링 세션 옵션을 설정하는 고급 방법을 알아봅니다.|[성능 세션 구성](../profiling/configuring-performance-sessions.md)|  
@@ -55,6 +50,3 @@ ms.locfileid: "51786108"
   
 ## <a name="see-also"></a>참고 항목  
  [프로파일링 도구](../profiling/profiling-tools.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: IDebugDisassemblyStream2::Seek | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugDisassemblyStream2::Seek
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: afec3008-b1e0-4803-ad24-195dbfb6497e
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bf5387d7ee5620d97e2ba20a155c277460158530
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d774cc0bf6bca1278423249960bbc5233aa6ad37
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51808331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203019"
 ---
 # <a name="idebugdisassemblystream2seek"></a>IDebugDisassemblyStream2::Seek
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -63,7 +58,7 @@ int Seek( 
  [in] 에 지정 된 위치를 기준으로 이동 하는 명령 수가 `dwSeekStart`합니다. 이 값은 뒤로 이동 하려면 음수일 수 있습니다.  
   
 ## <a name="return-value"></a>반환 값  
- 성공 하면 반환 `S_OK`합니다. 반환 `S_FALSE` 검색 위치입니다. 사용 가능한 명령의 시점 이후로 목록 되었으면 합니다. 그러지 않으면 오류 코드가 반환됩니다.  
+ 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 검색 위치입니다. 사용 가능한 명령의 시점 이후로 목록 되었으면 합니다. 그러지 않으면 오류 코드가 반환됩니다.  
   
 ## <a name="remarks"></a>설명  
  목록의 시작 부분 앞에 seek 되었으면 읽기 위치 목록에서 첫 번째 명령으로 설정 됩니다. 참조를 위치로 목록 끝 이후에 읽기 위치 설정 됩니다 마지막 명령 목록에서.  
@@ -73,4 +68,3 @@ int Seek( 
  [SEEK_START](../../../extensibility/debugger/reference/seek-start.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
  [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)
-

@@ -1,24 +1,22 @@
 ---
 title: 환경 설정
 ms.date: 11/21/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 269a5a4e9cd1b2598ca41ad7b4f4ceb0535d3515
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: c799d903c29d745d97a407c4c25f1285a5f35151
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389989"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978218"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Visual Studio에 대한 환경 설정
 
-Visual Studio를 처음 시작할 때 설정 컬렉션을 선택하여 가장 많이 수행하는 개발 유형에 맞게 개발 환경을 최적화할 수 있습니다. 각 컬렉션은 바로 가기 키, 창 레이아웃, 프로젝트 및 항목 템플릿 및 명령 표시 등의 요소를 최적화합니다.
+Visual Studio를 처음 열 때 설정 컬렉션을 선택하여 가장 많이 수행하는 개발 유형에 맞게 개발 환경을 최적화할 수 있습니다. 각 컬렉션은 바로 가기 키, 창 레이아웃, 프로젝트 및 항목 템플릿 및 명령 표시 등의 요소를 최적화합니다.
 
 다음 설정 컬렉션을 사용할 수 있습니다.
 
@@ -32,7 +30,7 @@ Visual Studio를 처음 시작할 때 설정 컬렉션을 선택하여 가장 �
 
 ## <a name="reset-settings"></a>설정 다시 설정
 
-Visual Studio를 처음 시작한 후 개발 설정을 변경하려면 다음 단계를 따릅니다.
+Visual Studio를 처음 연 후 개발 설정을 변경하려면 다음 단계를 수행합니다.
 
 1. 메뉴 모음에서 **도구** > **설정 가져오기 및 내보내기**를 선택하여 **설정 가져오기 및 내보내기 마법사**를 엽니다.
 

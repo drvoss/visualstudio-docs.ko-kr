@@ -1,14 +1,9 @@
 ---
-title: ': 열거자는 수 ca1038 | Microsoft Docs'
-ms.custom: ''
+title: 'CA1038: 열거자는 강력한 형식 이어야 합니다 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - EnumeratorsShouldBeStronglyTyped
 - CA1038
@@ -20,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: aafd89a068a57ef1eb89584441195e1ece8b8f52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 84b6ae6ef0c63870ad9dc593fd0cf2e166e65397
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62559842"
 ---
 # <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038: 열거자는 강력한 형식이어야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +35,11 @@ ms.locfileid: "49899073"
 ## <a name="cause"></a>원인
  Public 또는 protected 형식이 구현 <xref:System.Collections.IEnumerator?displayProperty=fullName> 하지만의 강력한 형식된 버전을 제공 하지 않습니다는 <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> 속성입니다. 다음 유형에 서 파생 된 형식은 다음과 같습니다.이 규칙에서 제외
 
--   <xref:System.Collections.CollectionBase?displayProperty=fullName>
+- <xref:System.Collections.CollectionBase?displayProperty=fullName>
 
--   <xref:System.Collections.DictionaryBase?displayProperty=fullName>
+- <xref:System.Collections.DictionaryBase?displayProperty=fullName>
 
--   <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
+- <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
 
 ## <a name="rule-description"></a>규칙 설명
  이 규칙에서는 요구 <xref:System.Collections.IEnumerator> 구현도의 강력한 형식된 버전을 제공할는 <xref:System.Collections.IEnumerator.Current%2A> 속성 사용자 인터페이스에 의해 제공 되는 기능을 사용할 때 반환 값을 강력한 형식으로 캐스팅 하지 않아도 됩니다 있도록 합니다. 이 규칙에서는 구현 하는 형식이 가정 <xref:System.Collections.IEnumerator> 보다 강력한 형식의 인스턴스 컬렉션을 포함 <xref:System.Object>합니다.
@@ -61,14 +56,11 @@ ms.locfileid: "49899073"
  [!code-csharp[FxCop.Design.IEnumeratorStrongTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.IEnumeratorStrongTypes/cs/FxCop.Design.IEnumeratorStrongTypes.cs#1)]
 
 ## <a name="related-rules"></a>관련된 규칙
- [CA1035: ICollection 구현에 강력한 형식의 멤버가 있습니다.](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
+ [CA1035: ICollection 구현에 강력한 형식의 멤버가](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
 
- [CA1039: 목록은 강력한 형식이어야 합니다.](../code-quality/ca1039-lists-are-strongly-typed.md)
+ [CA1039: 목록은 강력한 형식](../code-quality/ca1039-lists-are-strongly-typed.md)
 
 ## <a name="see-also"></a>참고 항목
  <xref:System.Collections.IEnumerator?displayProperty=fullName> <xref:System.Collections.CollectionBase?displayProperty=fullName>
  <xref:System.Collections.DictionaryBase?displayProperty=fullName>
  <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
-
-
-

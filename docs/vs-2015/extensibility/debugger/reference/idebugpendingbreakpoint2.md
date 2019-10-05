@@ -1,14 +1,9 @@
 ---
 title: IDebugPendingBreakpoint2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugPendingBreakpoint2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: d416b095-917e-475e-b796-ec0a03ffb8da
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ba1c2da0bd43d6c5a0d7ad78bb974e9c987e1432
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1238fcbce22db3f3bc3e32019aac886c79d0c114
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201033"
 ---
 # <a name="idebugpendingbreakpoint2"></a>IDebugPendingBreakpoint2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -56,23 +51,22 @@ IDebugPendingBreakpoint2 : IUnknown
 |[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md)|설정 하거나 중단점 보류 중인와 연결 된 통과 수를 변경 합니다.|  
 |[EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)|이 보류 중인 중단점에서 바인딩된 모든 중단점을 열거 합니다.|  
 |[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|이 보류 중인 중단점에서 발생 하는 모든 오류 중단점을 열거 합니다.|  
-|[삭제](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|이 보류 중인 중단점 및에서 바인딩된 모든 중단점을 삭제 합니다.|  
+|[Delete](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|이 보류 중인 중단점 및에서 바인딩된 모든 중단점을 삭제 합니다.|  
   
 ## <a name="remarks"></a>설명  
  `IDebugPendingBreakpoint2` 하나 또는 여러 프로그램에 적용할 수 있는 코드에 중단점을 바인딩할 때 필요한 모든 필요한 정보의 공급자로 생각할 수 있습니다.  
   
- 보류 중인 중단점 둘 이상의 바인딩된 중단점을 생성할 될 수 있습니다. 예를 들어, c + + 스타일 템플릿 중단점은 템플릿의 고유한 각 인스턴스에 대 한 바인딩된 중단점을 발생할 수 있습니다.  
+ 보류 중인 중단점 둘 이상의 바인딩된 중단점을 생성할 될 수 있습니다. 예를 들어, 중단점을 C++-스타일 템플릿을 해당 템플릿에 고유한 각 인스턴스에 대 한 바인딩된 중단점 발생할 수 있습니다.  
   
 ## <a name="requirements"></a>요구 사항  
  헤더: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 네임스페이스: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>참고 항목  
  [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)   
  [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)   
  [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)   
  [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md)
-

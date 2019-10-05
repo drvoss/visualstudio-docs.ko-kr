@@ -2,21 +2,20 @@
 title: '워크플로 디자이너-방법: 변수 디자이너 사용'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Presentation.View.DesignTimeVariable.UI
 ms.assetid: 0318dfb0-bf8f-4f92-9b86-ae4c1b2161ad
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b7df8f03444a0205c5628bbd36f249d68b43ad7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f90cbb58406df2410361bf9409c843b5c35b4331
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949049"
 ---
 # <a name="how-to-use-the-variable-designer"></a>방법: 변수 디자이너 사용
 
@@ -26,13 +25,13 @@ ms.locfileid: "53824343"
 
 ## <a name="to-create-a-new-variable"></a>새 변수를 만들려면
 
-1.  Visual Studio에서 워크플로 또는 활동 솔루션을 엽니다.
+1. Visual Studio에서 워크플로 또는 활동 솔루션을 엽니다.
 
-2.  디자인 캔버스의 워크플로에서 활동을 선택합니다.
+2. 디자인 캔버스의 워크플로에서 활동을 선택합니다.
 
-3.  클릭 하 여 변수 디자이너를 엽니다는 **변수** 디자인 캔버스의 왼쪽 아래 모서리에 있는 단추입니다. 변수 디자이너가 나타납니다.
+3. 클릭 하 여 변수 디자이너를 엽니다는 **변수** 디자인 캔버스의 왼쪽 아래 모서리에 있는 단추입니다. 변수 디자이너가 나타납니다.
 
-4.  라는 빈 행을 클릭 **변수 만들기**합니다. 이 기본값을 사용 하 여 새 변수를 사용 하 여 새 행이 추가 됩니다:에 대 한 variablex 합니다 **이름** 여기서 x는 고유한 변수 이름을 만들기 위해 자동으로 증가 하는 1의 초기 값을 사용 하는 정수  **문자열** 에 대 한 합니다 **변수 형식**, 및 **시퀀스** 에 대 한 합니다 **범위**합니다. 값에 대 한 항목이 **기본**입니다. 워크플로 디자인 프로세스 중 언제라도 이러한 값을 변경할 수 있습니다.
+4. 라는 빈 행을 클릭 **변수 만들기**합니다. 이 기본값을 사용 하 여 새 변수를 사용 하 여 새 행이 추가 됩니다:에 대 한 variablex 합니다 **이름** 여기서 x는 고유한 변수 이름을 만들기 위해 자동으로 증가 하는 1의 초기 값을 사용 하는 정수  **문자열** 에 대 한 합니다 **변수 형식**, 및 **시퀀스** 에 대 한 합니다 **범위**합니다. 값에 대 한 항목이 **기본**입니다. 워크플로 디자인 프로세스 중 언제라도 이러한 값을 변경할 수 있습니다.
 
     > [!NOTE]
     > 변수를 삭제 하려면 클릭 하 여 변수를 선택 하 고 다음 키를 누릅니다 합니다 **삭제** 키입니다.

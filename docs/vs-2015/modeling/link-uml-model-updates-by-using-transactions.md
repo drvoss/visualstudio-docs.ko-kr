@@ -1,25 +1,22 @@
 ---
 title: 트랜잭션을 사용 하 여 UML 모델 업데이트 연결 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API, transactions
 ms.assetid: a1df6c38-a3d1-4a3f-82bc-c8f363ab916e
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fb8bb5dfd5238871324b786f120d618d70f14b43
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f938e08d2bc9363be5e3f9e1ac247dea36f25a80
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51800408"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191713"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>트랜잭션을 사용하여 UML 모델 업데이트 연결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ Visual Studio에서 UML 디자이너 확장을 정의할 때 몇 가지 변경 �
 ## <a name="to-group-changes-into-a-single-transaction"></a>변경 내용을 단일 트랜잭션으로 그룹화하려면  
  프로젝트 참조에 이 .NET 어셈블리가 포함되어 있는지 확인합니다.  
   
- **Microsoft.VisualStudio.Modeling.Sdk 합니다. [version].dll**  
+ **Microsoft.VisualStudio.Modeling.Sdk.[version].dll**  
   
  클래스 내에서 <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ILinkedUndoContext> 형식의 가져온 속성을 선언합니다.  
   
@@ -65,15 +62,15 @@ Visual Studio에서 UML 디자이너 확장을 정의할 때 몇 가지 변경 �
   
  다음 사항을 참고하십시오.  
   
--   트랜잭션의 끝에 항상 `Commit()`을 포함해야 합니다. 트랜잭션을 커밋하지 않고 삭제하면 트랜잭션이 롤백됩니다. 즉, 모델이 트랜잭션을 시작할 때의 상태로 복원됩니다.  
+- 트랜잭션의 끝에 항상 `Commit()`을 포함해야 합니다. 트랜잭션을 커밋하지 않고 삭제하면 트랜잭션이 롤백됩니다. 즉, 모델이 트랜잭션을 시작할 때의 상태로 복원됩니다.  
   
--   트랜잭션 내에 catch되지 않는 예외가 발생하면 트랜잭션이 롤백됩니다. 트랜잭션의 `using` 블록을 `try…catch` 블록 안에 묶는 것이 자주 사용되는 패턴입니다.  
+- 트랜잭션 내에 catch되지 않는 예외가 발생하면 트랜잭션이 롤백됩니다. 트랜잭션의 `using` 블록을 `try…catch` 블록 안에 묶는 것이 자주 사용되는 패턴입니다.  
   
--   트랜잭션을 중첩할 수 있습니다.  
+- 트랜잭션을 중첩할 수 있습니다.  
   
--   `BeginTransaction()`에 공백이 아닌 임의 이름을 지정할 수 있습니다.  
+- `BeginTransaction()`에 공백이 아닌 임의 이름을 지정할 수 있습니다.  
   
--   UML 모델 저장소만 이러한 트랜잭션의 영향을 받습니다. 모델링 트랜잭션은 변수, 파일 및 데이터베이스와 같은 외부 저장소, 레이어 다이어그램 및 모델 코드에 영향을 주지 않습니다.  
+- UML 모델 저장소만 이러한 트랜잭션의 영향을 받습니다. 모델링 트랜잭션은 변수, 파일 및 데이터베이스와 같은 외부 저장소, 레이어 다이어그램 및 모델 코드에 영향을 주지 않습니다.  
   
 ## <a name="example"></a>예제  
   
@@ -115,6 +112,3 @@ Visual Studio에서 UML 디자이너 확장을 정의할 때 몇 가지 변경 �
  [UML API를 사용한 프로그래밍](../modeling/programming-with-the-uml-api.md)   
  [모델링 다이어그램의 메뉴 명령 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [UML 모델 및 다이어그램 확장](../modeling/extend-uml-models-and-diagrams.md)
-
-
-

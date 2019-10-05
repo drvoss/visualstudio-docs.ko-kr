@@ -1,25 +1,20 @@
 ---
 title: 추가 성능 데이터 수집 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 8c0ea5c6-74a4-4a23-89ca-8d589364079f
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4079942f9be683ac50be8dbf73fef127852a6c68
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ef6e65c9d180119d9270c292e30e619d94836175
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154071"
 ---
 # <a name="collecting-additional-performance-data"></a>추가 성능 데이터 수집
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +25,6 @@ ms.locfileid: "51782949"
   
 |작업|관련 콘텐츠|  
 |----------|---------------------|  
-|**응용 프로그램에서 ADO.NET 호출에 대한 성능 데이터를 수집합니다.** 응용 프로그램이 데이터베이스에 대해 만드는 동기 호출에 대한 데이터를 추가합니다.|-   [계층 상호 작용 데이터 수집](../profiling/collecting-tier-interaction-data.md)|  
+|**응용 프로그램에서 ADO.NET 호출에 대한 성능 데이터를 수집합니다.** 애플리케이션이 데이터베이스에 대해 만드는 동기 호출에 대한 데이터를 추가합니다.|-   [계층 상호 작용 데이터 수집](../profiling/collecting-tier-interaction-data.md)|  
 |**Windows 성능 카운터 데이터를 수집합니다.** 프로파일링 데이터에 대한 프로파일링 표시로 시스템 성능 카운터를 추가합니다. 보고서 필터링에 표시를 사용할 수 있습니다.|-   [방법: Windows 카운터 데이터 수집](../profiling/how-to-collect-windows-counter-data.md)|  
-|**Windows용 이벤트 추적 데이터를 수집합니다.** 프로파일링 데이터 외에도 ETW(Windows용 이벤트 추적) 데이터를 수집하여 응용 프로그램 및 시스템 이벤트를 기록합니다.|-   [방법: ETW(Windows용 이벤트 추적) 데이터 수집](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|
-
-
-
+|**Windows용 이벤트 추적 데이터를 수집합니다.** 프로파일링 데이터 외에도 ETW(Windows용 이벤트 추적) 데이터를 수집하여 애플리케이션 및 시스템 이벤트를 기록합니다.|-   [방법: ETW(Windows용 이벤트 추적) 데이터 수집](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|

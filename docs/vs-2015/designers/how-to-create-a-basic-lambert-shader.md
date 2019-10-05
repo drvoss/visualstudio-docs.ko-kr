@@ -1,25 +1,20 @@
 ---
-title: '방법: 기본 램버트 셰이더 만들기 | Microsoft 문서'
-ms.custom: ''
+title: '방법: 기본 램버트 셰이더 만들기 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1f4fbf209e970367ded8e019087287d429bad8fc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 227c9c84022e3c3340b4821df9dbd2dbe9465a03
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414682"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>방법: 기본 램버트 셰이더 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,11 +23,11 @@ ms.locfileid: "49929727"
   
  이 문서는 다음 활동을 보여 줍니다.  
   
--   셰이더 그래프에 노드 추가  
+- 셰이더 그래프에 노드 추가  
   
--   노드 연결 해제  
+- 노드 연결 해제  
   
--   노드 연결  
+- 노드 연결  
   
 ## <a name="the-lambert-lighting-model"></a>램버트 조명 모델  
  램버트 조명 모델은 주변 및 방향성 조명을 3D 장면의 음영 개체에 통합합니다. 주변 구성 요소는 3D 장면에서 기본 수준의 조명을 제공합니다. 방향성 구성 요소는 방향성(멀리) 광원에서 추가 조명을 제공합니다. 주변 조명은 방향에 관계없이 장면의 모든 표면에 똑같이 영향을 미칩니다. 특정 표면의 경우 표면의 주변 색과 장면에 있는 주변 조명의 색 및 강도를 기반으로 결과가 생성됩니다. 방향성 조명은 광원 방향을 기준으로 표면 방향에 따라 장면의 모든 표면에 서로 다른 영향을 미칩니다. 표면의 확산 색 및 방향과 광원의 색, 강도 및 방향을 기반으로 결과가 생성됩니다. 직접 광원을 향하는 표면은 최대 기여도를 받고 광원의 정반대 방향을 향하는 표면은 기여도를 받지 않습니다. 램버트 조명 모델에서 주변 구성 요소와 하나 이상의 방향성 구성 요소는 결합되어 개체의 각 점에 대한 총 확산 색 기여도를 결정합니다.  
@@ -54,7 +49,7 @@ ms.locfileid: "49929727"
    다음 그림은 주전자 모델에 적용된 셰이더의 완료된 셰이더 그래프 및 미리 보기를 보여 줍니다.  
   
 > [!NOTE]
->  이 그림에서 셰이더의 효과를 더 잘 보여 주기 위해 셰이더의 **MaterialDiffuse** 매개 변수를 사용하여 주황색이 지정되었습니다. 게임 또는 앱에서는 이 매개 변수를 사용하여 각 개체의 고유한 색 값을 제공합니다. 재질 매개 변수에 대한 자세한 내용은 [셰이더 디자이너](../designers/shader-designer.md)의 셰이더 미리 보기 섹션을 참조하세요.  
+> 이 그림에서 셰이더의 효과를 더 잘 보여 주기 위해 셰이더의 **MaterialDiffuse** 매개 변수를 사용하여 주황색이 지정되었습니다. 게임 또는 앱에서는 이 매개 변수를 사용하여 각 개체의 고유한 색 값을 제공합니다. 재질 매개 변수에 대한 자세한 내용은 [셰이더 디자이너](../designers/shader-designer.md)의 셰이더 미리 보기 섹션을 참조하세요.  
   
  ![셰이더 그래프 및 효과 미리 보기.](../designers/media/digit-lambert-effect-graph.png "Digit-Lambert-Effect-Graph")  
   
@@ -64,14 +59,11 @@ ms.locfileid: "49929727"
   
  ![모델에 적용된 램버트 조명.](../designers/media/digit-lambert-effect-result.png "Digit-Lambert-Effect-Result")  
   
- 3D 모델에 셰이더를 적용하는 방법에 대한 자세한 내용은 [방법: 3D 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md)을 참조하세요.  
+ 3 차원 모델에 셰이더 적용 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 3 차원 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md)합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [방법: 3D 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+ [방법: 3 차원 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [방법: 셰이더 내보내기](../designers/how-to-export-a-shader.md)   
  [방법: 기본 퐁 셰이더 만들기](../designers/how-to-create-a-basic-phong-shader.md)   
  [셰이더 디자이너](../designers/shader-designer.md)   
  [셰이더 디자이너 노드](../designers/shader-designer-nodes.md)
-
-
-

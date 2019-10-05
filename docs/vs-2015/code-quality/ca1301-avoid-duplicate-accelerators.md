@@ -1,14 +1,9 @@
 ---
-title: ': Ca1301 중복 액셀러레이터 | Microsoft Docs'
-ms.custom: ''
+title: 'CA1301: 중복 액셀러레이터 방지 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1301
 - AvoidDuplicateAccelerators
@@ -20,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 92c5baefff76626a42553d6ba5380fd07448b109
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a2e992cfb648b9b7f84032abab2f96d3f7cb410d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886653"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686864"
 ---
 # <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301: 중복 액셀러레이터 키를 사용하지 마십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +52,4 @@ ms.locfileid: "49886653"
  [!code-csharp[FxCop.Globalization.AvoidDuplicateAccels#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.AvoidDuplicateAccels/cs/FxCop.Globalization.AvoidDuplicateAccels.cs#1)]
 
 ## <a name="see-also"></a>참고 항목
- <xref:System.Resources.ResourceManager?displayProperty=fullName> [데스크톱 앱의 리소스](http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)
-
-
-
+ <xref:System.Resources.ResourceManager?displayProperty=fullName> [데스크톱 앱의 리소스](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)

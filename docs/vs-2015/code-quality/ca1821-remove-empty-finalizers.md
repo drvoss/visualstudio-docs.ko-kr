@@ -1,14 +1,9 @@
 ---
-title: 'CA1821: 빈 종료자를 제거 합니다. | Microsoft Docs'
-ms.custom: ''
+title: 'CA1821: 빈 종료자를 제거 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - RemoveEmptyFinalizers
 - CA1821
@@ -19,12 +14,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0ea2ca64009071538848c71f5bf9a825250cb82e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5a6175871e74bf3cb99610dce0926f0982f331d4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201660"
 ---
 # <a name="ca1821-remove-empty-finalizers"></a>CA1821: 빈 종료자를 제거하십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,6 +47,3 @@ ms.locfileid: "49900087"
  다음 예제에서는 제거 되어야 하는 빈 종료자를 묶어야 하는 종료자 `#if DEBUG / #endif` 지시문 및 사용 하는 종료자를 `#if DEBUG / #endif` 지시문 올바르게 합니다.
 
  [!code-csharp[FxCop.Performance.RemoveEmptyFinalizers#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.RemoveEmptyFinalizers/cs/FxCop.Performance.RemoveEmptyFinalizers.cs#1)]
-
-
-

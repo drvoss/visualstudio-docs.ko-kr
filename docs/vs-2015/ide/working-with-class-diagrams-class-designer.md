@@ -1,14 +1,9 @@
 ---
 title: 클래스 다이어그램 사용(클래스 디자이너) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams
 - documentation, using class diagrams
@@ -20,13 +15,13 @@ ms.assetid: 37908cb7-f77b-4698-a4f9-3c21e5440fee
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8bf855566c24e91137d7aaeadeb2c65843eca9e1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c3243f43176f2d62edbc33f66ce2da85f32c26c7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306711"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698110"
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>클래스 다이어그램 사용(클래스 디자이너)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,12 +30,12 @@ ms.locfileid: "49306711"
   
  프로젝트 정보를 제공하는 첫 단계에서는 보여 주려는 정보를 표시하는 클래스 다이어그램을 만듭니다. 자세한 내용은 [형식 및 관계 보기(클래스 디자이너)](../ide/viewing-types-and-relationships-class-designer.md)를 참조하세요. 개별 프로젝트 보기, 선택한 프로젝트 형식 하위 집합 또는 선택한 형식의 멤버 하위 집합을 표시하는 데 사용할 수 있는 여러 클래스 다이어그램을 프로젝트에 대해 만들 수 있습니다.  
   
- 각 클래스 다이어그램에 표시되는 내용을 정의할 수 있을 뿐 아니라 정보가 표시되는 방식도 변경할 수 있습니다. 자세한 내용은 [방법: 클래스 다이어그램 사용자 지정(클래스 디자이너)](../ide/how-to-customize-class-diagrams-class-designer.md)을 참조하세요.  
+ 각 클래스 다이어그램에 표시되는 내용을 정의할 수 있을 뿐 아니라 정보가 표시되는 방식도 변경할 수 있습니다. 자세한 내용은 [방법: 클래스 다이어그램 (클래스 디자이너) 사용자 지정](../ide/how-to-customize-class-diagrams-class-designer.md)합니다.  
   
- 하나 이상의 클래스 다이어그램을 미세 조정한 후 Microsoft Office 문서에 복사하고 인쇄하거나 이미지 파일로 내보낼 수 있습니다. 자세한 내용은 [방법: 클래스 다이어그램 요소를 Microsoft Office 문서에 복사(클래스 디자이너)](../ide/how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer.md), [방법: 클래스 다이어그램 인쇄(클래스 디자이너)](../ide/how-to-print-class-diagrams-class-designer.md) 및 [방법: 클래스 다이어그램을 이미지로 내보내기(클래스 디자이너)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)를 참조하세요.  
+ 하나 이상의 클래스 다이어그램을 미세 조정한 후 Microsoft Office 문서에 복사하고 인쇄하거나 이미지 파일로 내보낼 수 있습니다. 자세한 내용은 [방법: Microsoft Office 문서 (클래스 디자이너)를 클래스 다이어그램 요소를 복사](../ide/how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer.md), [방법: 클래스 다이어그램 인쇄 (클래스 디자이너)](../ide/how-to-print-class-diagrams-class-designer.md) 고 [방법: 클래스 다이어그램 이미지로 내보내기 (클래스 디자이너)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)합니다.  
   
 > [!NOTE]
->  클래스 디자이너는 소스 파일 위치를 추적하지 않으므로 프로젝트 구조를 변경하거나 프로젝트에서 소스 파일을 이동하면 클래스 디자이너가 해당 형식을 찾지 못할 수 있습니다(특히 소스 형식이 typedef, 기본 클래스 또는 연결 형식인 경우). **클래스 디자이너에서 이 형식을 표시할 수 없습니다.** 와 같은 오류가 발생할 수 있습니다. 이러한 오류가 발생하면 수정되거나 위치가 변경된 소스 코드를 클래스 다이어그램으로 끌어서 다시 표시합니다.  
+> 클래스 디자이너는 소스 파일 위치를 추적하지 않으므로 프로젝트 구조를 변경하거나 프로젝트에서 소스 파일을 이동하면 클래스 디자이너가 해당 형식을 찾지 못할 수 있습니다(특히 소스 형식이 typedef, 기본 클래스 또는 연결 형식인 경우). **클래스 디자이너에서 이 형식을 표시할 수 없습니다.** 와 같은 오류가 발생할 수 있습니다. 이러한 오류가 발생하면 수정되거나 위치가 변경된 소스 코드를 클래스 다이어그램으로 끌어서 다시 표시합니다.  
   
 ## <a name="in-this-section"></a>섹션 내용  
  [방법: 프로젝트에 클래스 다이어그램 추가(클래스 디자이너)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
@@ -73,8 +68,5 @@ ms.locfileid: "49306711"
   
 ## <a name="see-also"></a>참고 항목  
  [형식 및 관계 보기(클래스 디자이너)](../ide/viewing-types-and-relationships-class-designer.md)   
- [방법: 클래스 다이어그램 사용자 지정(클래스 디자이너)](../ide/how-to-customize-class-diagrams-class-designer.md)   
- [방법: 클래스 다이어그램에서 형식 도형 제거(클래스 디자이너)](http://msdn.microsoft.com/en-us/ae41897d-d066-4b8c-bb9b-05436e12ff39)
-
-
-
+ [방법: 클래스 다이어그램 (클래스 디자이너) 사용자 지정](../ide/how-to-customize-class-diagrams-class-designer.md)   
+ [방법: 클래스 다이어그램 (클래스 디자이너)에서 형식 모양 제거](https://msdn.microsoft.com/ae41897d-d066-4b8c-bb9b-05436e12ff39)

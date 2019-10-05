@@ -7,17 +7,17 @@ helpviewer_keywords:
 - localize extension
 - localized deployment
 ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d554819c8c615dc9f8fcd41bb4b460482e21fde
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3e0ef2cc0c2404a2148f471d12f313b158f3bd64
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956935"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344568"
 ---
 # <a name="localizing-vsix-packages"></a>VSIX 패키지 지역화
 
@@ -27,7 +27,7 @@ VSIX 패키지 콘텐츠를 추가 하는 VSPackage를 포함 하는 경우 메�
 
 ## <a name="directory-structure"></a>디렉터리 구조
 
- 사용자가 확장을 설치 하면 **확장 및 업데이트** VSIX 패키지 이름이 대상 컴퓨터의 Visual Studio 로캘과 일치 하는 폴더에 대 한 최상위 수준 확인 합니다. 하는 경우 **확장 및 업데이트** 찾습니다는 *.vsixlangpack* 파일 폴더에서 해당 파일의 해당 값의 지역화 된 값 대체를 *.vsixmanifest*파일입니다. 이러한 값은 확장을 설치 하는 경우에 표시 됩니다. 다음 예제에서는 스페인어 (ES-ES) 및 프랑스어 (FR)로 지역화 된 VSIX 패키지에 대 한 디렉터리 구조를 보여 줍니다.  
+ 사용자가 확장을 설치 하면 **확장 및 업데이트** VSIX 패키지 이름이 대상 컴퓨터의 Visual Studio 로캘과 일치 하는 폴더에 대 한 최상위 수준 확인 합니다. 하는 경우 **확장 및 업데이트** 찾습니다는 *.vsixlangpack* 파일 폴더에서 해당 파일의 해당 값의 지역화 된 값 대체를 *.vsixmanifest*파일입니다. 이러한 값은 확장을 설치 하는 경우에 표시 됩니다. 다음 예제에서는 스페인어 (ES-ES) 및 프랑스어 (FR)로 지역화 된 VSIX 패키지에 대 한 디렉터리 구조를 보여 줍니다.
 
 ```text
 .
@@ -53,7 +53,7 @@ Vsixlangpack 파일을 만들 때 설정 해야 합니다 `Include in Vsix` 속�
 
 1. **솔루션 탐색기**Extension.vsixlangpack 파일을 마우스 오른쪽 단추로 클릭 한 다음 클릭 **속성**합니다.
 
-2.  에 **속성 표에서**, 클릭 **Vsix에 포함**, 해당 값을 설정 하 고 `true`입니다.
+2. 에 **속성 표에서**, 클릭 **Vsix에 포함**, 해당 값을 설정 하 고 `true`입니다.
 
 ## <a name="example"></a>예제
 
@@ -63,7 +63,7 @@ Vsixlangpack 파일을 만들 때 설정 해야 합니다 `Include in Vsix` 속�
 
 ### <a name="code"></a>코드
 
- [*Extension.vsixmanifest*]
+- [*Extension.vsixmanifest*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -83,7 +83,7 @@ Vsixlangpack 파일을 만들 때 설정 해야 합니다 `Include in Vsix` 속�
 </PackageManifest>
 ```
 
- [*Extension.vsixlangpack*]
+- [*Extension.vsixlangpack*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -99,7 +99,7 @@ Vsixlangpack 파일을 만들 때 설정 해야 합니다 `Include in Vsix` 속�
 </PackageLanguagePackManifest>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 |제목|설명|
 |-----------|-----------------|

@@ -1,25 +1,20 @@
 ---
 title: 서비스 등록 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - services, registering
 ms.assetid: c4ebac40-0374-4dda-948e-06fdda0e9c81
 caps.latest.revision: 8
-manager: douge
-ms.openlocfilehash: e5d8aa9e6652aa41e59d160c5cf25aacd3390572
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 64f2afa6e853978e919e466f91475bed1e8d698c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971292"
 ---
 # <a name="registering-services"></a>서비스 등록
 요청 시 로드를 지원하려면 서비스 공급자가 글로벌 서비스를 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에 등록해야 합니다.  
@@ -34,7 +29,7 @@ ms.locfileid: "49219689"
 "Name"="SVsTextManager"  
 ```  
   
- 위 예제에서 버전 번호는 7.1 또는 8.0과 같은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 버전이고, {F5E7E71D-1401-11d1-883B-0000F87579D2} 키는 SVsTextManager 서비스의 SID(서비스 ID)이고, 기본값 {F5E7E720-1401-11d1-883B-0000F87579D2}는 서비스를 제공하는 텍스트 관리자 VSPackage의 패키지 GUID입니다.  
+ 위 예제에서 버전 번호는 7.1 또는 8.0과 같은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]버전이고, {F5E7E71D-1401-11d1-883B-0000F87579D2} 키는 SVsTextManager 서비스의 SID(서비스 ID)이고, 기본값 {F5E7E720-1401-11d1-883B-0000F87579D2}는 서비스를 제공하는 텍스트 관리자 VSPackage의 패키지 GUID입니다.  
   
 ## <a name="remote-services-and-background-threads"></a>원격 서비스 및 백그라운드 스레드  
  제공하는 서비스는 원격으로 또는 백그라운드 스레드에서 자동으로 사용할 수 없습니다. 사용할 수 있게 하려면 형식 라이브러리를 빌드하고 등록해야 합니다.  

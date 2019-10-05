@@ -1,26 +1,21 @@
 ---
 title: 원본 제어 플러그 인 API 함수 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - source control plug-ins, functions
 ms.assetid: 4b0536dd-4f92-4ef2-9031-4548281f37aa
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5dcb07c3c49b132cdf12c1a4973af3ebf04dfa74
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 02e2c7ee92ab138de7bee0d58835898f3bd0a58b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160611"
 ---
 # <a name="source-control-plug-in-api-functions"></a>소스 제어 플러그 인 API 함수
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +24,7 @@ ms.locfileid: "51796781"
   
 ## <a name="initialization-and-housekeeping-functions"></a>초기화 및 정리 작업 기능  
   
-|기능|설명|  
+|함수|Description|  
 |--------------|-----------------|  
 |[SccCloseProject](../extensibility/scccloseproject-function.md)|프로젝트를 닫습니다.|  
 |[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)|지정 된 명령에 대 한 고급 옵션에 대 한 사용자를 묻습니다.|  
@@ -41,7 +36,7 @@ ms.locfileid: "51796781"
   
 ## <a name="core-source-control-functions"></a>코어 원본 제어 함수  
   
-|기능|설명|  
+|함수|설명|  
 |--------------|-----------------|  
 |[SccAdd](../extensibility/sccadd-function.md)|소스 제어 시스템의 정규화 된 경로 이름으로 지정 된 파일의 배열을 추가 합니다.|  
 |[SccAddFromScc](../extensibility/sccaddfromscc-function.md)|소스 제어 시스템에 이미 있는 파일을 찾아볼 수 있도록 하 고 현재 프로젝트의 일부인 이러한 파일을 확인 합니다.|  
@@ -63,7 +58,7 @@ ms.locfileid: "51796781"
 ## <a name="functions-that-support-additional-capability-version-12-of-the-source-control-plug-in-api"></a>추가 기능 (소스 제어 플러그 인 API 버전 1.2)를 지 원하는 함수  
  이 그룹의 함수는 원본 제어 플러그 인 API 버전 1.2에에서 포함 된 추가 기능을 정의 합니다. 고급 소스 제어 기능 및 기능에 대 한 액세스를 제공 합니다.  
   
-|기능|설명|  
+|함수|Description|  
 |--------------|-----------------|  
 |[SccBeginBatch](../extensibility/sccbeginbatch-function.md)|일괄 처리 작업을 시작합니다.|  
 |[SccCreateSubProject](../extensibility/scccreatesubproject-function.md)|기존 부모 프로젝트에서 지정 된 이름의 하위 프로젝트를 만듭니다.|  
@@ -77,7 +72,7 @@ ms.locfileid: "51796781"
 ## <a name="functions-that-support-advanced-capability-version-13-of-the-source-control-plug-in-api"></a>고급 기능 (소스 제어 플러그 인 API 버전 1.3)을 지 원하는 함수  
  이 그룹의 함수는 원본 제어 플러그 인 API 버전 1.3에서에서 포함 된 추가 기능을 정의 합니다. 고급 소스 제어 기능 및 기능에 대 한 액세스를 제공 합니다.  
   
-|기능|설명|  
+|함수|Description|  
 |--------------|-----------------|  
 |[SccAddFilesFromSCC](../extensibility/sccaddfilesfromscc-function.md)|현재 프로젝트에 소스 제어에서 파일 목록을 추가합니다.|  
 |[SccBackgroundGet](../extensibility/sccbackgroundget-function.md)|사용자 인터페이스 없이 소스 제어에서 파일의 목록을 검색합니다.|  
@@ -95,4 +90,3 @@ ms.locfileid: "51796781"
 ## <a name="see-also"></a>참고 항목  
  [원본 제어 플러그 인](../extensibility/source-control-plug-ins.md)   
  [소스 제어 플러그 인 만들기](../extensibility/internals/creating-a-source-control-plug-in.md)
-

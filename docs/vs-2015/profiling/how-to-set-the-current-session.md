@@ -1,14 +1,9 @@
 ---
-title: '방법: 현재 세션 설정 | Microsoft 문서'
-ms.custom: ''
+title: '방법: 현재 세션 설정 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - current performance sessions
 - Performance Explorer, selecting sessions
@@ -21,13 +16,13 @@ ms.assetid: a593e551-18ec-46fd-bfd5-8a045165a334
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7bb3913ce8fe7903f6da19b76bbc1a808372c86d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d6d7362392aeda9bcff61d811933eb4286d6c4cd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726412"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205707"
 ---
 # <a name="how-to-set-the-current-session"></a>방법: 현재 세션 설정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ ms.locfileid: "51726412"
   
 ### <a name="to-set-current-performance-session"></a>현재 성능 세션을 설정하려면  
   
--   **성능 탐색기**에서 성능 세션을 마우스 오른쪽 단추로 클릭한 다음 **현재 세션으로 설정**을 클릭합니다.  
+- **성능 탐색기**에서 성능 세션을 마우스 오른쪽 단추로 클릭한 다음 **현재 세션으로 설정**을 클릭합니다.  
   
      세션 이름이 굵게 표시됩니다.  
   
@@ -51,6 +46,3 @@ ms.locfileid: "51726412"
  [성능 탐색기 창](../profiling/performance-explorer-window.md)   
  [성능 세션 속성](../profiling/performance-session-properties.md)   
  [성능 세션 개요](../profiling/performance-session-overview.md)
-
-
-

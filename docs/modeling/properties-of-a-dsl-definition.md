@@ -6,16 +6,15 @@ helpviewer_keywords:
 - Domain-Specific Language, definition file
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 9ee2f0e2353023f1864c892ecc377050ea87923d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e63a5ab794261a395fb091016f177ffca9d35692
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62964302"
 ---
 # <a name="properties-of-a-dsl-definition"></a>DSL 정의의 속성
 DslDefinition 속성 정의 *도메인별 언어* 버전 번호와 같은 정의 속성입니다. DslDefinition 속성에 표시 합니다 **속성** 창에서 다이어그램의 빈 영역을 클릭할 때 합니다 *도메인별 언어 디자이너*.
@@ -41,7 +40,7 @@ DslDefinition 속성 정의 *도메인별 언어* 버전 번호와 같은 정의
 |빌드|이 도메인별 언어 정의 대 한 증분 빌드 번호입니다.|0|
 |주 버전|이 도메인별 언어 정의 증분 주 빌드 번호입니다.|1|
 |부 버전|이 도메인별 언어 정의 대 한 증분 부 빌드 번호입니다.|0|
-|수정 버전|증분 수정 빌드이 도메인별 언어 정의 대 한 번호입니다.|0|
+|Revision|증분 수정 빌드이 도메인별 언어 정의 대 한 번호입니다.|0|
 
 ## <a name="see-also"></a>참고 항목
 

@@ -1,14 +1,9 @@
 ---
 title: 속성 창 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - properties [Visual Studio], Properties Window
 - handler functions, Properties window
@@ -25,18 +20,17 @@ ms.assetid: e6e0fa4f-75c4-4a52-af15-281cd61876ca
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a3faa4b9e0bf7d0ad59a33ed93f895a83e6ff8dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 582905042938d79a1885279bd19c18f48b49bb84
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438026"
 ---
 # <a name="properties-window"></a>속성 창
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 이 창을 사용하여 편집기 및 디자이너에 있는 디자인 타임 속성 및 선택된 개체의 이벤트를 변경할 수 있습니다. **속성** 창을 사용하여 파일, 프로젝트 및 솔루션 속성을 편집하고 볼 수도 있습니다. **보기** 메뉴에서 **속성 창**을 찾을 수 있습니다. F4 키를 누르거나 **빠른 실행** 창에서 **속성**을 입력하여 열 수도 있습니다.  
   
  **속성** 창은 특정 속성의 필요에 따라 다양한 형식의 편집 필드를 표시합니다. 이러한 편집 필드에는 편집 상자, 드롭다운 목록 및 사용자 지정 편집기 대화 상자에 대한 링크가 포함됩니다. 회색으로 표시된 속성은 읽기 전용입니다.  
@@ -64,25 +58,25 @@ ms.locfileid: "49282375"
  개체에 대한 이벤트를 표시합니다.  
   
 > [!NOTE]
->  이 **속성** 창 도구 모음 컨트롤은 폼 또는 컨트롤 디자이너가 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 프로젝트의 컨텍스트에서 활성 상태인 경우에만 사용 가능합니다. XAML 파일을 편집할 때 이벤트는 속성 창의 별도 탭에 표시됩니다.  
+> 이 **속성** 창 도구 모음 컨트롤은 폼 또는 컨트롤 디자이너가 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 프로젝트의 컨텍스트에서 활성 상태인 경우에만 사용 가능합니다. XAML 파일을 편집할 때 이벤트는 속성 창의 별도 탭에 표시됩니다.  
   
  메시지  
  모든 Windows 메시지를 나열합니다. 선택한 클래스에 제공되는 메시지에 지정된 처리기 함수를 추가하거나 삭제할 수 있습니다.  
   
 > [!NOTE]
->  이 **속성** 창 도구 모음 컨트롤은 **클래스 뷰**가 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 프로젝트의 컨텍스트에서 활성 창인 경우에만 사용 가능합니다.  
+> 이 **속성** 창 도구 모음 컨트롤은 **클래스 뷰**가 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 프로젝트의 컨텍스트에서 활성 창인 경우에만 사용 가능합니다.  
   
  Overrides  
  선택한 클래스에 대한 모든 가상 함수를 나열하고 재정의 함수를 추가하거나 삭제할 수 있습니다.  
   
 > [!NOTE]
->  이 **속성** 창 도구 모음 컨트롤은 **클래스 뷰**가 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 프로젝트의 컨텍스트에서 활성 창인 경우에만 사용 가능합니다.  
+> 이 **속성** 창 도구 모음 컨트롤은 **클래스 뷰**가 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 프로젝트의 컨텍스트에서 활성 창인 경우에만 사용 가능합니다.  
   
  설명 창  
  속성 형식과 속성에 대한 간단한 설명을 표시합니다. 바로 가기 메뉴에서 설명 명령을 사용하여 속성에 대한 설명을 켜고 끌 수 있습니다.  
   
 > [!NOTE]
->  이 **속성** 창 도구 모음 컨트롤은 디자이너에서 XAML 파일을 편집할 경우에 사용할 수 없습니다.  
+> 이 **속성** 창 도구 모음 컨트롤은 디자이너에서 XAML 파일을 편집할 경우에 사용할 수 없습니다.  
   
  썸네일 보기  
  디자이너에서 XAML 파일을 편집할 때 시각적으로 현재 선택한 요소를 보여줍니다.  
@@ -93,6 +87,3 @@ ms.locfileid: "49282375"
 ## <a name="see-also"></a>참고 항목  
  [프로젝트 속성 참조](../../ide/reference/project-properties-reference.md)   
  [창 레이아웃 사용자 지정](../../ide/customizing-window-layouts-in-visual-studio.md)
-
-
-

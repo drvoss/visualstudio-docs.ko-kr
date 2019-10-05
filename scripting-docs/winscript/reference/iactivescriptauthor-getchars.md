@@ -2,7 +2,6 @@
 title: IActiveScriptAuthor::GetChars | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abc9c819c2dd4a75d6223af86b4fe89baebc186b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 69cdeb16fa0791b3ff8c0cce4a4e67fe110eefc2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935375"
 ---
 # <a name="iactivescriptauthorgetchars"></a>IActiveScriptAuthor::GetChars
 요청된 완료 컨텍스트에 대 한 완료 문자 집합을 반환합니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT GetChars(  
    DWORD            fRequestedList,  
    BSTR             *pbstrChars  
@@ -39,7 +38,7 @@ HRESULT GetChars(
   
 #### <a name="parameters"></a>매개 변수  
  `fRequestedList`  
- [in] 요청 된 완료 컨텍스트입니다.  
+ [in] 요청된 완료 컨텍스트입니다.  
   
 |상수|값|설명|  
 |--------------|-----------|-----------------|  
@@ -49,9 +48,9 @@ HRESULT GetChars(
 |SCRIPT_CMPL_COMMIT|0x0004|매개 변수 목록의 요청 완료 합니다.|  
   
  `pbstrChars`  
- [out] 요청 된 완료 컨텍스트에 해당 하는 문자입니다.  
+ [out] 요청된 완료 컨텍스트에 해당 하는 문자입니다.  
   
-|`fRequestedList`매개 변수|반환 된 문자|  
+|`fRequestedList` 매개 변수|반환 된 문자|  
 |--------------------------------|-------------------------|  
 |SCRIPT_CMPL_ENUM_TRIGGER|"."|  
 |SCRIPT_CMPL_MEMBER_TRIGGER|"="|  

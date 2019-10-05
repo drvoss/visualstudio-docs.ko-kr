@@ -1,14 +1,9 @@
 ---
 title: CPU 및 Windows 카운터 | Microsoft 문서
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.counters
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: d2c45c6a-f975-45ab-b8a5-4768ddd518fb
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f79eeae8539657f6556b87d917f991113c5de807
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: eceadf1b1bf82876a20027a9d29c8336e381d18d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801695"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434297"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU 및 Windows 카운터
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +28,13 @@ Visual Studio 프로파일러를 사용하면 운영 체제(Windows 카운터)�
   
  **요구 사항**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
->  Windows 8 및 Windows Server 2012의 강화된 보안 기능을 위해 Visual Studio 프로파일러가 이러한 플랫폼에서 데이터를 수집하는 방법을 상당히 변경해야 했습니다. Windows 스토어 앱에는 새로운 수집 기술도 필요합니다. [Windows 8 및 Windows Server 2012 응용 프로그램의 성능 도구](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)를 참조하세요.  
+> Windows 8 및 Windows Server 2012의 강화된 보안 기능을 위해 Visual Studio 프로파일러가 이러한 플랫폼에서 데이터를 수집하는 방법을 상당히 변경해야 했습니다. Windows 스토어 앱에는 새로운 수집 기술도 필요합니다. [Windows 8 및 Windows Server 2012 응용 프로그램의 성능 도구](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)를 참조하세요.  
   
 ## <a name="windows-counters"></a>Windows 카운터  
- Windows 카운터는 운영 체제, 응용 프로그램, 서비스 또는 드라이버의 성능에 대한 정보를 제공하는 Windows 진단 인프라의 일부입니다. Windows 카운터는 현재 컴퓨터의 구성에 따라 다르며 다른 컴퓨터에서 사용하지 못할 수 있습니다. Windows 성능 카운터는 프로파일링 데이터 파일에 프로파일링 표시로 수집되므로 보기 및 보고서를 필터링하는 데 사용할 수 있습니다.  
+ Windows 카운터는 운영 체제, 애플리케이션, 서비스 또는 드라이버의 성능에 대한 정보를 제공하는 Windows 진단 인프라의 일부입니다. Windows 카운터는 현재 컴퓨터의 구성에 따라 다르며 다른 컴퓨터에서 사용하지 못할 수 있습니다. Windows 성능 카운터는 프로파일링 데이터 파일에 프로파일링 표시로 수집되므로 보기 및 보고서를 필터링하는 데 사용할 수 있습니다.  
   
 ## <a name="cpu-counters"></a>CPU 카운터  
  CPU 카운터는 하드웨어 관련 이벤트의 수를 저장하는 컴퓨터의 CPU 기능입니다.  계측 프로파일링 방법을 사용하여 CPU 카운터 데이터를 수집하는 경우 데이터는 함수 및 모듈에 대한 데이터에 추가됩니다. 계측 방법을 사용하면 여러 CPU 카운터를 수집할 수 있습니다. 샘플링 방법을 사용하는 경우 하나의 카운터를 선택하여 샘플링할 이벤트로 사용합니다.  
@@ -109,13 +104,13 @@ Visual Studio 프로파일러를 사용하면 운영 체제(Windows 카운터)�
   
 ##### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>현재 플랫폼에서 지원되는 Windows 카운터의 목록을 보려면  
   
-1.  성능 탐색기에서 성능 세션을 마우스 오른쪽 단추로 클릭한 후 **속성**을 클릭합니다.  
+1. 성능 탐색기에서 성능 세션을 마우스 오른쪽 단추로 클릭한 후 **속성**을 클릭합니다.  
   
-2.  **Windows 카운터**를 클릭합니다.  
+2. **Windows 카운터**를 클릭합니다.  
   
-3.  **Windows 카운터 수집**을 선택합니다.  
+3. **Windows 카운터 수집**을 선택합니다.  
   
-4.  **카운터 범주** 목록에서 카운터 그룹을 선택합니다. 그룹의 Windows 카운터가 목록 상자에 표시됩니다.  
+4. **카운터 범주** 목록에서 카운터 그룹을 선택합니다. 그룹의 Windows 카운터가 목록 상자에 표시됩니다.  
   
      **참고:** 이전 카운터 수집 구성으로 돌아가려면 **취소**를 클릭합니다.  
   
@@ -124,9 +119,9 @@ Visual Studio 프로파일러를 사용하면 운영 체제(Windows 카운터)�
   
 ##### <a name="to-list-of-cpu-counters-that-are-supported-on-the-current-platform"></a>현재 플랫폼에서 지원되는 CPU 카운터의 목록을 표시하려면  
   
-1.  명령 프롬프트 창을 엽니다.  
+1. 명령 프롬프트 창을 엽니다.  
   
-2.  형식  
+2. 형식  
   
      **\<Visual Studio 성능 도구 디렉터리>\VSPerfCmd /querycounters**  
   
@@ -139,6 +134,3 @@ Visual Studio 프로파일러를 사용하면 운영 체제(Windows 카운터)�
  [방법: 샘플링 이벤트 선택](../profiling/how-to-choose-sampling-events.md)   
  [방법: CPU 카운터 데이터 수집](../profiling/how-to-collect-cpu-counter-data.md)   
  [방법: Windows 카운터 데이터 수집](../profiling/how-to-collect-windows-counter-data.md)
-
-
-

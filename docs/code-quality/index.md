@@ -1,23 +1,24 @@
 ---
 layout: LandingPage
 title: 코드 분석
-description: Visual Studio 2017을 사용하여 코드 품질을 분석하는 방법에 대해 알아봅니다.
+description: Visual Studio를 사용하여 코드 품질을 분석하는 방법에 대해 알아봅니다.
 ms.date: 12/03/2018
-ms.prod: visual-studio-dev15
 ms.topic: landing-page
 ms.author: gewarren
 author: gewarren
-manager: douge
-ms.openlocfilehash: c5a4d238c897b60258d87ed231d6d4cced26e476
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 9cc40bdd7b0e120e3a8e3e5be28f4d399afb9210
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820735"
 ---
 # <a name="code-analysis-in-visual-studio"></a>Visual Studio의 코드 분석
 
 Visual Studio는 코드 품질을 분석하고 개선할 수 있는 다양한 도구를 제공합니다.
+
+<!-- markdownlint-disable MD033 -->
 
 <br />
 

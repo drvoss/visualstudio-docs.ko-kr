@@ -1,27 +1,22 @@
 ---
 title: Spy + + 소개 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Spy++
 ms.assetid: 733b514b-63a9-402d-89aa-4f0416766655
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b5e6aecff83d745c724fa0009b33a798ae94118d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 35e9fa2d75528549f8c55f5b52dbd4c4aa2271a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431451"
 ---
 # <a name="introducing-spy"></a>Spy++ 소개
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,25 +40,21 @@ Spy++에서는 다음 작업을 수행할 수 있습니다.
   다양한 Spy++ 창에서 마우스 오른쪽 단추를 클릭하면 자주 사용되는 명령의 바로 가기 메뉴를 표시할 수 있습니다. 표시되는 명령은 포인터가 있는 위치에 따라 달라집니다. 예를 들어 창 보기에서 항목을 마우스 오른쪽 단추로 클릭하여 선택한 창이 보이는 경우에 바로 가기 메뉴의 **강조** 를 클릭하면 더 쉽게 찾을 수 있도록 선택한 창의 테두리가 깜빡입니다.  
   
 > [!NOTE]
->  그 밖에 유사한 두 가지 유틸리티가 있습니다. Spy++: PView는 프로세스 및 스레드에 대한 상세 정보를 표시하고, DDESPY.EXE는 DDE(동적 데이터 교환) 메시지 모니터링에 사용할 수 있습니다.  
+> Spy + +는 두 가지 유틸리티가 있습니다. PView 프로세스 및 스레드 및 DDESPY 하는 방법에 대 한 세부 정보를 표시 합니다. EXE, 데이터 교환 DDE (동적) 메시지를 모니터링할 수 있습니다.  
   
 ## <a name="64-bit-operating-systems"></a>64비트 운영 체제  
  Spy++의 두 가지 버전이 있습니다. Spy++(spyxx.exe)라는 첫 번째 버전은 32비트 프로세스에서 실행되는 창으로 전송된 메시지를 표시하도록 설계되었습니다. 예를 들어 Visual Studio는 32비트 프로세스로 실행됩니다. 따라서 **솔루션 탐색기**로 전송된 메시지를 표시하는 데 Spy++를 사용할 수 있습니다. Visual Studio에서 대부분의 빌드에 대한 기본 구성은 32비트 프로세스로 실행되므로, Spy++의 첫 번째 버전은 Visual Studio의 **도구** 메뉴에서 사용할 수 있습니다.  
   
  Spy++(64비트)(spyxx_amd64.exe)라는 두 번째 버전은 64비트 프로세스에서 실행되는 창으로 전송된 메시지를 표시하도록 설계되었습니다. 예를 들어 64비트 운영 체제에서는 메모장이 64비트 프로세스로 실행됩니다. 따라서 메모장으로 전송된 메시지를 표시하기 위해 Spy++(64 비트)를 사용할 수 있습니다. Spy++(64 비트)는 일반적으로 다음 위치에 있습니다.  
   
- .. \\ *Visual Studio 설치 폴더*\Common7\Tools\spyxx_amd64.exe 합니다.  
+ ..\\*Visual Studio 설치 폴더*\Common7\Tools\spyxx_amd64.exe.  
   
  명령줄에서 직접 Spy++의 버전 중 하나를 실행할 수 있습니다.  
   
 > [!NOTE]
->  Spy++(64비트) 파일 이름은 "amd"를 포함하지만 x64 Windows 운영 체제에서 실행됩니다.  
+> Spy++(64비트) 파일 이름은 "amd"를 포함하지만 x64 Windows 운영 체제에서 실행됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [Spy + + 사용](../debugger/using-spy-increment.md)   
- [Spy + + 뷰](../debugger/spy-increment-views.md)   
+ [Spy++ 사용](../debugger/using-spy-increment.md)   
+ [Spy++ 뷰](../debugger/spy-increment-views.md)   
  [Spy++ 참조](../debugger/spy-increment-reference.md)
-
-
-
-

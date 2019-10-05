@@ -2,7 +2,6 @@
 title: IDispatchEx 인터페이스 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -15,12 +14,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 22ccc54dee335fd8c81343557d2f32c48eb30560
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: df3fd7d46fdcb1f3e86bddd53700d7bce6e21381
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837921"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000843"
 ---
 # <a name="idispatchex-interface"></a>IDispatchEx 인터페이스
 `IDispatchEx`의 확장을 `IDispatch` 인터페이스 스크립팅 언어와 같은 동적 언어에 적합 한 기능을 지원 합니다. 이 섹션에서는 설명의 `IDispatchEx` 간의 차이점을 자체 인터페이스 `IDispatch` 및 `IDispatchEx`, 및 확장에 대 한 합니다. 판독기에 익숙한 것으로 예상 `IDispatch` 에 액세스할 수는 `IDispatch` 설명서.  
@@ -71,7 +70,7 @@ ms.locfileid: "49837921"
   
   전체 HTML 코드는 다음과 같습니다.  
   
-```  
+```html
 <html>  
 <body>  
 <script type="text/javascript">  
@@ -102,7 +101,7 @@ test();
   
  이 같은 웹 페이지에 배치 되는 컨트롤은 브라우저에서 스크립트 엔진에 디스패치 포인터를 얻을 수 있습니다. 그런 다음 컨트롤 함수 test ()를 구현 수 있습니다.:  
   
-```  
+```html
 <html>  
 <body>  
 <script type="text/javascript">  
@@ -138,7 +137,7 @@ function cat()
   
   테스트 컨트롤에 대 한 코드:  
   
-```  
+```cpp
    BOOL test(IDispatchEx *pdexScript)  
    {  
       HRESULT hr;  

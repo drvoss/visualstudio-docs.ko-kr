@@ -6,16 +6,15 @@ helpviewer_keywords:
 - Domain-Specific Language, domain class
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 799b5d2feafbf4a0e7b6ff54673983a585b0d2fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fb66a0d497c86091f689f119e57a5230f125e8de
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999191"
 ---
 # <a name="properties-of-domain-classes"></a>도메인 클래스의 속성
 도메인 클래스는 다음 표의 속성을 가집니다. 도메인 클래스에 대 한 자세한 내용은 [모델, 클래스 및 관계 이해](../modeling/understanding-models-classes-and-relationships.md)합니다. 이러한 속성을 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [사용자 지정 및 도메인 특정 언어 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)합니다.

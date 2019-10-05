@@ -1,20 +1,18 @@
 ---
 title: 코드 생성 기능
 ms.date: 01/11/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 79e3f2d47aee0bc2de43ab9db657cfa96bc1c2ac
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 11e82560b5dc049643df013d840b709da5446b56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063142"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974997"
 ---
 # <a name="code-generation-features-in-visual-studio"></a>Visual Studio의 코드 생성 기능
 

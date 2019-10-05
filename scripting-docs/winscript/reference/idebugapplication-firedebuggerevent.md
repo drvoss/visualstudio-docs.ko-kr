@@ -2,7 +2,6 @@
 title: IDebugApplication::FireDebuggerEvent | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c4cb02390602b6b93b8c233f245ede395833d67e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ad865f05cc70f462d65d6fbead4143b82a9fa489
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725453"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990909"
 ---
 # <a name="idebugapplicationfiredebuggerevent"></a>IDebugApplication::FireDebuggerEvent
 디버거의 일반 이벤트가 발생 `IApplicationDebugger` 인터페이스입니다.  
   
 ## <a name="syntax"></a>구문  
   
-```  
+```cpp
 HRESULT FireDebuggerEvent(  
    REFGUID    riid,  
    IUnknown*  punk  
@@ -39,7 +38,7 @@ HRESULT FireDebuggerEvent(
   
 #### <a name="parameters"></a>매개 변수  
  `riid`  
- [in] 개체에 대 한 GUID입니다.  
+ [in] GUID 개체입니다.  
   
  `punk`  
  [in] 디버거를 전달 하는 이벤트 개체입니다.  
@@ -50,14 +49,14 @@ HRESULT FireDebuggerEvent(
 |값|설명|  
 |-----------|-----------------|  
 |`S_OK`|메서드가 성공했으며|  
-|`E_NOTIMPL`|메서드가 현재 구현 되지 않습니다.|  
+|`E_NOTIMPL`|메서드가 현재 구현 되지 않았습니다.|  
   
 ## <a name="remarks"></a>설명  
- GUID의 의미 체계와 `IUnknown` 은 전적으로 응용 프로그램/디버거 정의 합니다.  
+ GUID의 의미 체계 및 `IUnknown` 는 전적으로 응용 프로그램/디버거 정의 합니다.  
   
- 즉, 디버거 모델의 사용자 지정 확장 프로그램에 대 한이 방법을 사용 하면 이 현재 구현 되지 않습니다.  
+ 이 메서드를 사용 하면 디버거 모델의 사용자 지정 확장 프로그램 이 현재 구현 되지 않습니다.  
   
- 이 메서드를 사용 하면 `IApplicationDebugger::onDebuggerEvent` 를 호출할 수 있습니다.  
+ 이 메서드를 사용 하면 `IApplicationDebugger::onDebuggerEvent` 호출할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [IDebugApplication 인터페이스](../../winscript/reference/idebugapplication-interface.md)   

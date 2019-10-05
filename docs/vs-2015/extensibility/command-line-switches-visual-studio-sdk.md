@@ -1,14 +1,9 @@
 ---
 title: 명령줄 스위치 (Visual Studio SDK) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, command-line switches
 - command-line switches
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 0a22516f-f60e-4476-ac5b-f41e5ffaaf8b
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1cfe08769f6b7734ba6fdd87cd010726cbcc3d9a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ea37c105114e915e812a470474ccd8f52609056f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764739"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184344"
 ---
 # <a name="command-line-switches-visual-studio-sdk"></a>명령줄 스위치(Visual Studio SDK)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,4 +34,3 @@ Devenv.exe를 시작 하는 실행 파일을 [!INCLUDE[vsprvs](../includes/vsprv
 ## <a name="related-sections"></a>관련 단원  
  [Devenv 명령줄 스위치](../ide/reference/devenv-command-line-switches.md)  
  IDE 및 컴파일하는 방법에 대 한 다양 한 옵션을 설정한 Devenv 있습니다 빌드 및 명령줄에서 프로젝트를 디버그 하는 방법을 설명 합니다. 또한 Devenv 스위치의 구문 및 스위치의 테이블에 대 한 정보는.
-

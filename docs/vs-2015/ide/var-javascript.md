@@ -1,14 +1,9 @@
 ---
-title: '&lt;var&gt; (JavaScript) | Microsoft Docs'
-ms.custom: ''
+title: '&lt;var&gt;(JavaScript) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - <var> JavaScript XML tag
 - var JavaScript XML tag
@@ -16,18 +11,18 @@ ms.assetid: 34ff9023-c81c-46d1-85b6-0022f0962e66
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 04f592bab7679ed3e8fe8791872ce2280d05359a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 98bf86f807874fefe066ed2d1008e31451fbbba0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62558413"
 ---
-# <a name="ltvargt-javascript"></a>&lt;var&gt; (JavaScript)
+# <a name="ltvargt-javascript"></a>&lt;var&gt;(JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-변수에 대 한 문서 정보를 지정합니다.  
+변수에 대한 문서 정보를 지정합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -42,46 +37,46 @@ ms.locfileid: "49881978"
   
 #### <a name="parameters"></a>매개 변수  
  `type`  
- 선택 사항입니다. 변수의 데이터 형식입니다. 형식에는 다음 중 하나일 수 있습니다.  
+ 선택 사항입니다. 변수의 데이터 형식입니다. 형식은 다음 중 하나일 수 있습니다.  
   
-- ECMAScript 5 사양에는 하는 ECMAScript 언어 형식 `Number` 고 `Object`입니다.  
+- ECMAScript 5 사양(예: `Number` 및 `Object`)에 있는 ECMAScript 언어 형식입니다.  
   
-- DOM 개체로 `HTMLElement`, `Window`, 및 `Document`합니다.  
+- `HTMLElement`, `Window` 및 `Document`와 같은 DOM 개체입니다.  
   
 - JavaScript 생성자 함수입니다.  
   
   `integer`  
-  선택 사항입니다. 하는 경우 `type` 는 `Number`, 변수는 정수 인지 여부를 지정 합니다. 로 `true` 변수의 정수; 임을 나타내려면이 고, 그렇지로 `false`합니다. IntelliSense 정보를 제공 하도록 Visual Studio에서이 특성을 사용 되지 않습니다.  
+  선택 사항입니다. `type`이 `Number`인 경우 변수가 정수인지 여부를 지정합니다. 변수가 정수임을 나타내려면 `true`로 설정하고, 그렇지 않으면 `false`로 설정합니다. 이 특성은 Visual Studio에서 IntelliSense 정보를 제공하는 데 사용되지 않습니다.  
   
   `domElement`  
-  선택 사항입니다. 이 특성은 사용 되지 않습니다. `type` 특성이이 특성 보다 우선 합니다. 이 특성에 문서화 된 변수는 DOM 요소 인지 여부를 지정 합니다. 로 `true` 변수는 DOM 요소를 지정 하려면이 고, 그렇지로 `false`합니다. 경우는 `type` 특성이 설정 되지 않은 및 `domElement` 로 설정 된 `true`, IntelliSense를 문서화 된 변수를 처리는 `HTMLElement` 문 완성 기능을 수행 하는 경우.  
+  선택 사항입니다. 이 특성은 더 이상 사용되지 않으며, `type` 특성이 이 특성보다 우선합니다. 이 특성은 문서화된 변수가 DOM 요소인지 여부를 지정합니다. 변수가 DOM 요소임을 지정하려면 `true`로 설정하고, 그렇지 않으면 `false`로 설정합니다. `type` 특성이 설정되지 않고 `domElement`가 `true`로 설정된 경우 IntelliSense는 명령문 완성을 수행할 때 문서화된 변수를 `HTMLElement`로 처리합니다.  
   
   `mayBeNull`  
-  선택 사항입니다. 문서화 된 변수를 설정할 수 있는지 여부를 지정 하려면 null입니다. 로 `true` 설정에 null이 고 그렇지 않으면 변수를 설정할 수 있도록 나타내려면 `false`합니다. 기본값은 `false`입니다. IntelliSense 정보를 제공 하도록 Visual Studio에서이 특성을 사용 되지 않습니다.  
+  선택 사항입니다. 문서화된 변수를 null로 설정할 수 있는지 여부를 지정합니다. 변수를 null로 설정할 수 있음을 나타내려면 `true`로 설정하고, 그렇지 않으면 `false`로 설정합니다. 기본값은 `false`입니다. 이 특성은 Visual Studio에서 IntelliSense 정보를 제공하는 데 사용되지 않습니다.  
   
   `elementType`  
-  선택 사항입니다. 하는 경우 `type` 는 `Array`,이 특성 배열의 요소 형식을 지정 합니다.  
+  선택 사항입니다. `type`이 `Array`인 경우 이 특성은 배열의 요소 유형을 지정합니다.  
   
   `elementInteger`  
-  선택 사항입니다. 경우 `type` 는 `Array` 하 고 `elementType` 는 `Number`,이 특성은 요소 배열에서 정수 되는지 여부를 지정 합니다. 로 `true` 나타내려면 배열의 요소는가 정수인;로 고, 그렇지는 `false`합니다. IntelliSense 정보를 제공 하도록 Visual Studio에서이 특성을 사용 되지 않습니다.  
+  선택 사항입니다. `type`이 `Array`이고 `elementType`이 `Number`인 경우 이 특성은 배열의 요소가 정수인지 여부를 지정합니다. 배열의 요소가 정수임을 나타내려면 `true`로 설정하고, 그렇지 않으면 `false`로 설정합니다. 이 특성은 Visual Studio에서 IntelliSense 정보를 제공하는 데 사용되지 않습니다.  
   
   `elementDomElement`  
-  선택 사항입니다. 이 특성은 사용 되지 않습니다. `elementType` 특성이이 특성 보다 우선 합니다. 하는 경우 `type` 는 `Array`,이 특성은 배열에 요소가 DOM 요소가 있는지 여부를 지정 합니다. 로 `true` 지정 하는 요소는 DOM 요소가 고, 그렇지로 `false`합니다. 경우는 `elementType` 특성이 설정 되지 않은 및 `elementDomElement` 로 설정 된 `true`, IntelliSense와 배열의 각 요소를 처리는 `HTMLElement` 문 완성 기능을 수행 하는 경우.  
+  선택 사항입니다. 이 특성은 더 이상 사용되지 않으며, `elementType` 특성이 이 특성보다 우선합니다. `type`이 `Array`인 경우 이 특성은 배열의 요소가 DOM 요소인지 여부를 지정합니다. 요소가 DOM 요소임을 지정하려면 `true`로 설정하고, 그렇지 않으면 `false`로 설정합니다. `elementType` 특성이 설정되지 않고 `elementDomElement`가 `true`로 설정된 경우 IntelliSense는 명령문 완성을 수행할 때 배열의 각 요소를 `HTMLElement`로 처리합니다.  
   
   `elementMayBeNull`  
-  선택 사항입니다. 하는 경우 `type` 는 `Array`, 배열의 요소를 설정할 수 있는지 여부를 지정 합니다. null로 합니다. 로 `true` 설정에 null이 고 그렇지 않으면 배열의 요소를 설정할 수 있도록 나타내려면 `false`합니다. 기본값은 `false`입니다. IntelliSense 정보를 제공 하도록 Visual Studio에서이 특성을 사용 되지 않습니다.  
+  선택 사항입니다. `type`이 `Array`인 경우 배열의 요소를 null로 설정할 수 있는지 여부를 지정합니다. 배열의 요소를 null로 설정할 수 있음을 나타내려면 `true`로 설정하고, 그렇지 않으면 `false`로 설정합니다. 기본값은 `false`입니다. 이 특성은 Visual Studio에서 IntelliSense 정보를 제공하는 데 사용되지 않습니다.  
   
   `helpKeyword`  
-  선택 사항입니다. F1 도움말 키워드입니다.  
+  선택 사항입니다. F1 도움말의 키워드입니다.  
   
   `locid`  
-  선택 사항입니다. 변수에 대 한 지역화 정보에 대 한 식별자입니다. 식별자는 멤버에 해당 하는 ID 또는를 `name` 특성 OpenAjax 메타 데이터에 의해 정의 된 메시지 묶음의 값입니다. 식별자 형식에 지정 된 형식에 따라 달라 집니다 합니다 [ \<loc >](../ide/loc-javascript.md) 태그입니다.  
+  선택 사항입니다. 변수에 대한 지역화 정보의 식별자입니다. 식별자는 멤버 ID이거나 OpenAjax 메타데이터에 의해 정의된 메시지 번들의 `name` 속성 값에 해당합니다. 식별자 유형은 [\<loc>](../ide/loc-javascript.md) 태그에 지정된 형식에 따라 달라집니다.  
   
   `description`  
-  선택 사항입니다. 변수 설명입니다.  
+  선택 사항입니다. 변수에 대한 설명입니다.  
   
 ## <a name="example"></a>예제  
- 다음 코드 예제를 사용 하는 방법을 보여 줍니다는 `<var>` 요소입니다.  
+ 다음 코드 예제에서는 `<var>` 요소를 사용하는 방법을 보여줍니다.  
   
 ```javascript  
 /// <var>A rectangle that has a width of 5.</var>  
@@ -99,6 +94,3 @@ var Rectangle = {
   
 ## <a name="see-also"></a>참고 항목  
  [XML 문서 주석](../ide/xml-documentation-comments-javascript.md)
-
-
-

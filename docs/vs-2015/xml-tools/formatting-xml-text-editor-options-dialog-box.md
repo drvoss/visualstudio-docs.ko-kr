@@ -1,41 +1,35 @@
 ---
 title: 서식 지정, XML, 텍스트 편집기, 옵션 대화 상자 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: bb539b3a-027c-4b2f-906e-403e0e22ba8d
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5c8379393dd5327359789f8621cf67ed55e89209
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 588bf415a801a9244cd9a046e0c503c0b238db58
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256674"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417410"
 ---
 # <a name="formatting-xml-text-editor-options-dialog-box"></a>서식 지정, XML, 텍스트 편집기, 옵션 대화 상자
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 이 대화 상자에서는 XML 편집기에 대한 서식 설정을 지정할 수 있습니다. 액세스할 수 있습니다 합니다 **옵션** 대화 상자를 **도구** 메뉴.  
   
 > [!NOTE]
->  선택 하면 이러한 설정을 사용할 수 있습니다는 **텍스트 편집기** 폴더를 **XML** 폴더를 차례로 **서식** 에서 옵션을 **옵션** 대화 상자.  
+> 선택 하면 이러한 설정을 사용할 수 있습니다는 **텍스트 편집기** 폴더를 **XML** 폴더를 차례로 **서식** 에서 옵션을 **옵션** 대화 상자.  
   
 ## <a name="attributes"></a>특성  
- **특성 수동 서식 유지**  
+ **수동으로 지정한 특성 서식 유지**  
  특성의 서식은 다시 지정되지 않습니다. 이 값이 기본값입니다.  
   
 > [!NOTE]
->  특성이 여러 줄에 있을 경우 편집기는 부모 요소의 들여쓰기와 일치하도록 각 특성 줄을 들여씁니다.  
+> 특성이 여러 줄에 있을 경우 편집기는 부모 요소의 들여쓰기와 일치하도록 각 특성 줄을 들여씁니다.  
   
  **자체 줄에 특성 맞춤**  
  첫 번째 특성의 들여쓰기와 일치하도록 두 번째 특성 및 그 이후 특성이 세로로 정렬됩니다. 다음 XML 텍스트는 특성 정렬 방식의 예제입니다.  
@@ -70,6 +64,3 @@ ms.locfileid: "49256674"
 ## <a name="see-also"></a>참고 항목  
  [XML 문서 속성, 속성 창](../xml-tools/xml-document-properties-properties-window.md)   
  [XML 편집기 구성 요소](../xml-tools/xml-editor-components.md)
-
-
-

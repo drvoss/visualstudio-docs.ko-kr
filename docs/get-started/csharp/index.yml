@@ -14,12 +14,12 @@ metadata:
   ms.technology: vs-acquisition
   dev_langs:
   - CSharp
-  ms.openlocfilehash: b4db5aef6d4a91d684a588971ec23fa673aa98da
-  ms.sourcegitcommit: d3e423a9a4ed773a54d14b247e1b5bfc95de8816
+  ms.openlocfilehash: 0e61a2b9d54fc4e40a84e7107ab653a2e90f52de
+  ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 10/01/2019
-  ms.locfileid: "71693041"
+  ms.lasthandoff: 10/04/2019
+  ms.locfileid: "71962858"
 landingContent:
 - title: 시작
   linkLists:
@@ -56,7 +56,7 @@ landingContent:
   - linkListType: tutorial
     links:
     - text: 리포지토리에서 코드 열기
-      url: ../tutorial-open-project-from-repo.md?
+      url: ../tutorial-open-project-from-repo.md
     - text: 코드 작성 및 편집
       url: tutorial-editor.md
     - text: 컴파일 및 빌드

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c36fbacfde97eb42b1feab3e9097a731437cce4e
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 411a9b1150961307a2a8ed3cdfae9842fb56701c
+ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870757"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71681626"
 ---
 # <a name="assembly-information-dialog-box"></a>어셈블리 정보 대화 상자
 
@@ -61,6 +61,9 @@ Win32 파일 버전 리소스에 대해 특정 버전을 사용하도록 컴파�
 
 **어셈블리를 COM에 노출**\
 어셈블리 내의 형식을 COM에서 사용할 수 있는지 여부를 지정합니다. <xref:System.Runtime.InteropServices.ComVisibleAttribute>에 해당합니다.
+
+> [!NOTE]
+> .NET Framework 클래스 라이브러리에서 NuGet 패키지를 생성할 때 이러한 속성을 설정하는 방법에 대한 자세한 내용은 [패키지의 프로젝트 속성 구성](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

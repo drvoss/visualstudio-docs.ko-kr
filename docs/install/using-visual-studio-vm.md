@@ -2,7 +2,7 @@
 title: Azure Virtual Machine에서 Visual Studio 사용
 titleSuffix: ''
 description: Azure 가상 머신에서 Visual Studio를 사용하는 방법에 대한 자세한 정보
-ms.date: 06/24/2019
+ms.date: 09/24/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bc73c2d280f22c82f0efe76d9e5b1d343e386409
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: 32446e40fa388e72fd12e32dad3a466c0b5823d5
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365274"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273381"
 ---
 # <a id="top"> </a> Azure의 Visual Studio 이미지
 
@@ -36,10 +36,10 @@ Azure를 처음 사용하는 경우 [체험 Azure 계정을 만드세요](https:
 
 | 릴리스 버전                                                                                                                                          | 버전              |    제품 버전    |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------:|:-----------------------:|
-| [Visual Studio 2019: 최신(버전 16.1)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise, Community | 버전 16.1.3    |
-| [Visual Studio 2019: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Enterprise, Community | 버전 16.0.5    |
-| [Visual Studio 2017: 최신(버전 15.9)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise, Community | 버전 15.9.13   |
-| [Visual Studio 2017: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise, Community | 버전 15.0.24   |
+| [Visual Studio 2019: 최신(버전 16.3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise, Community | 버전 16.3.0    |
+| [Visual Studio 2019: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Enterprise            | 버전 16.0.8    |
+| [Visual Studio 2017: 최신(버전 15.9)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise, Community | 버전 15.9.16   |
+| [Visual Studio 2017: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise, Community | 버전 15.0.27   |
 | [Visual Studio 2015: 최신(업데이트 3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)               | Enterprise, Community | 버전 14.0.25431.01 |
 
 > [!NOTE]
@@ -101,7 +101,7 @@ Visual Studio는 Azure의 “사용자 라이선스 필요” 모델을 따릅�
 
 개발 환경의 스펙트럼은 매우 크며, 더 복잡한 환경을 빌드할 경우 연관된 실제 비용이 있습니다. 환경의 구성과 관계없이 나중에 사용하거나 팀의 다른 구성원이 사용할 수 있도록 구성된 VM을 “기본 이미지”로 저장하거나 캡처할 수 있습니다. 그런 다음, 새 VM을 부팅할 때 Azure Marketplace 이미지 대신 기본 이미지에서 프로비전합니다.
 
-빠른 요약: 시스템 준비 도구(Sysprep)를 사용하고 실행 중인 VM을 종료한 다음, Azure Portal의 UI를 통해 VM을 이미지로 캡처 *(그림 1)* 합니다. Azure에서는 선택한 스토리지 계정의 이미지를 포함하는 `.vhd` 파일을 저장합니다. 그러면 새 이미지가 구독의 리소스 목록에 이미지 리소스로 표시됩니다.
+빠른 요약: 시스템 준비 도구(Sysprep)를 사용하고 실행 중인 VM을 종료한 다음, Azure Portal의 UI를 통해 VM을 이미지로 캡처 *(그림 1)* 합니다. Azure는 이미지가 포함된 `.vhd` 파일을 선택한 스토리지 계정에 저장합니다. 그러면 새 이미지가 구독의 리소스 목록에 이미지 리소스로 표시됩니다.
 
 ![Azure Portal의 UI를 통해 이미지 캡처](media/capture-vm.png)
 
@@ -113,7 +113,7 @@ Visual Studio는 Azure의 “사용자 라이선스 필요” 모델을 따릅�
 > 반드시 Sysprep을 사용하여 VM을 준비하세요. 이 단계를 수행하지 않으면 Azure가 이미지에서 VM을 프로비전할 수 없습니다.
 
 > [!NOTE]
-> 이미지를 스토리지하는 데 약간의 비용이 발생하지만 이러한 추가 비용은 VM이 필요한 각 팀 멤버들이 VM을 처음부터 다시 구축하는 데 드는 오버헤드 비용에 비하면 미미할 수 있습니다. 예를 들어, 전체 팀이 다시 사용할 수 있는 127GB 이미지를 만들고 저장하는 데 필요한 비용은 매달 몇 달러입니다. 이 비용은 각 직원이 개별적으로 사용하기 위해 제대로 구성된 개발 시스템을 빌드 및 유효성 검사하는 데 소요되는 시간에 비해 중요하지 않습니다.
+> 이미지 스토리지에 대한 비용이 여전히 발생하지만 증분 비용은 필요한 각 팀 구성원에 대해 VM을 처음부터 다시 빌드하기 위한 오버헤드 비용과 비교하여 중요하지 않을 수 있습니다. 예를 들어, 전체 팀이 다시 사용할 수 있는 127GB 이미지를 만들고 저장하는 데 필요한 비용은 매달 몇 달러입니다. 이 비용은 각 직원이 개별적으로 사용하기 위해 제대로 구성된 개발 시스템을 빌드 및 유효성 검사하는 데 소요되는 시간에 비해 중요하지 않습니다.
 
 또한 개발 작업 또는 기술은 다양한 개발 구성 및 여러 컴퓨터 구성과 같은 추가 확장성이 필요할 수 있습니다. Azure DevTest Labs를 사용하여 “골든 이미지”의 구성을 자동화하는 ‘레시피’를 만들 수 있습니다.  DevTest Labs를 사용하여 팀이 실행 중인 VM에 대한 정책을 관리할 수도 있습니다. [개발자용 Azure DevTest Labs 사용](/azure/devtest-lab/devtest-lab-developer-lab)에서 DevTest Labs에 대한 자세한 정보를 확인할 수 있습니다.
 

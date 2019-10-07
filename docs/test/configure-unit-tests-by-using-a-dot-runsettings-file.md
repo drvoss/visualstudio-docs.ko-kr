@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 25d0f49939a42d9a9b8cc56f03ed37ab83aa98f2
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: bdf67f78d1a4cc7e2d17336a7272b919fcc6fba9
+ms.sourcegitcommit: d3e423a9a4ed773a54d14b247e1b5bfc95de8816
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251823"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71693021"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings* 파일을 사용하여 단위 테스트 구성
 
@@ -38,11 +38,11 @@ IDE에서 실행 설정 파일을 지정하려면 **테스트** > **테스트 �
 
 ::: moniker range=">=vs-2019"
 
-IDE에서 실행 설정 파일을 지정하려면 **테스트 탐색기**의 **설정** 단추에서 화살표를 선택하고 **설정 파일 선택**을 선택합니다. *.runsettings* 파일을 찾아 선택합니다.
+IDE에서 실행 설정 파일을 지정하려면 **테스트** > **테스트 설정 파일 선택**을 선택합니다. *.runsettings* 파일을 찾아 선택합니다.
 
-![Visual Studio 2019에서 테스트 설정 파일 메뉴 선택](media/vs-2019/select-test-settings-file.png)
+![Visual Studio 2019에서 테스트 설정 파일 메뉴 선택](media/vs-2019/select-settings-file.png)
 
-이 파일은 테스트 탐색기의 설정 메뉴에 표시되며 선택하거나 선택 취소할 수 있습니다. 파일이 선택된 상태에서 **코드 검사 분석**을 사용할 때마다 실행 설정 파일이 적용됩니다.
+테스트 메뉴에 파일이 나타나고 해당 파일을 선택 또는 선택 취소할 수 있습니다. 파일이 선택된 상태에서 **코드 검사 분석**을 사용할 때마다 실행 설정 파일이 적용됩니다.
 
 ::: moniker-end
 
@@ -97,7 +97,7 @@ IDE에서 실행 설정 파일을 지정하려면 **테스트 탐색기**의 **�
 
 ::: moniker range=">=vs-2019"
 
-3. 실행 설정 파일을 선택하려면 **테스트 탐색기**의 **설정** 단추에서 화살표를 선택하고 **설정 파일 선택**을 선택합니다. 만든 *.runsettings* 파일을 찾은 다음, **확인**을 선택합니다.
+3. 실행 설정 파일을 선택하려면 **테스트** > **설정 파일 선택**을 선택합니다. 만든 *.runsettings* 파일을 찾은 다음, **확인**을 선택합니다.
 
 ::: moniker-end
 
@@ -118,7 +118,7 @@ IDE에서 실행 설정 파일을 지정하려면 **테스트 탐색기**의 **�
     <ResultsDirectory>.\TestResults</ResultsDirectory>
 
     <!-- x86 or x64 -->
-    <!-- You can also change it from the test settings menu; choose "Processor Architecture for AnyCPU Projects" -->
+    <!-- You can also change it from the Test menu; choose "Processor Architecture for AnyCPU Projects" -->
     <TargetPlatform>x86</TargetPlatform>
 
     <!-- Framework35 | [Framework40] | Framework45 -->
@@ -149,7 +149,7 @@ IDE에서 실행 설정 파일을 지정하려면 **테스트 탐색기**의 **�
             <AllowLowIntegrityProcesses>True</AllowLowIntegrityProcesses>
             <CollectFromChildProcesses>True</CollectFromChildProcesses>
             <CollectAspDotNet>False</CollectAspDotNet>
-
+            
           </CodeCoverage>
         </Configuration>
       </DataCollector>
@@ -157,11 +157,12 @@ IDE에서 실행 설정 파일을 지정하려면 **테스트 탐색기**의 **�
       <DataCollector uri="datacollector://microsoft/VideoRecorder/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder.VideoRecorderDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Screen and Voice Recorder">
         <!--Video data collector was introduced in Visual Studio 2017 version 15.5 -->
         <Configuration>
-           <!-- Change to "false" to only add video attachments to failed tests -->
-          <MediaRecorder sendRecordedMediaForPassedTestCase="true" xmlns="" />
+          <!-- Set "sendRecordedMediaForPassedTestCase" to "false" to add video attachments to failed tests only -->
+          <MediaRecorder sendRecordedMediaForPassedTestCase="true"  xmlns="">           
+            <ScreenCaptureVideo bitRate="512" frameRate="2" quality="20" />
+          </MediaRecorder>
         </Configuration>
       </DataCollector>
-
     </DataCollectors>
   </DataCollectionRunSettings>
 

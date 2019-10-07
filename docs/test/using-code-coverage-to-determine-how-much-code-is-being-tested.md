@@ -11,12 +11,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 24bc4c54e455f43aa5fd5fee0ce0d5a44042e497
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 1962a977cb282613405342f225d63140f1854453
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913203"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342424"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>코드 검사를 사용하여 테스트할 코드 범위 결정
 
@@ -46,11 +46,11 @@ ms.locfileid: "70913203"
 
 ::: moniker range=">=vs-2019"
 
-1. **테스트 탐색기**의 **실행** 메뉴에서 **모든 테스트에 대한 코드 검사 분석**을 선택합니다.
+1. **테스트** 메뉴에서 **모든 테스트에 대한 코드 검사 분석**을 선택합니다.
 
    ![VS 2019의 코드 검사 분석 메뉴](../test/media/vs-2019/analyze-code-coverage.png)
 
-   **테스트 탐색기**가 열려 있지 않으면 **테스트** > **창** > **테스트 탐색기**를 선택하여 열거나 **Ctrl**+**E**,**T**를 누릅니다.
+   또한 테스트 탐색기 도구 창에서 코드 검사를 실행할 수 있습니다.
 
 ::: moniker-end
 

@@ -49,11 +49,11 @@ React는 UI를 만드는 데 사용되는 프런트 엔드 프레임워크입니
 
 ### <a name="what-is-jsx"></a>JSX란?
 
-JSX는 일반적으로 UI 요소를 설명하기 위해 React와 함께 사용되는 JavaScript 구문 확장입니다. JSX 코드는 일반 JavaScript로 트랜스파일되어야 브라우저에서 실행할 수 있습니다.
+JSX는 일반적으로 UI 요소를 설명하기 위해 React와 함께 사용되는 JavaScript 구문 확장입니다. JSX 코드는 일반 JavaScript로 트랜스파일 되어야 브라우저에서 실행할 수 있습니다.
 
 ### <a name="what-is-webpack"></a>webpack이란?
 
-webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번들로 제공합니다. 다른 리소스와 자산으로 변환하거나 패키지화할 수도 있습니다. 종종 JSX 또는 TypeScript 코드를 일반 JavaScript로 트랜스파일하도록 Babel 또는 TypeScript 등의 컴파일러를 지정하는 데 사용됩니다.
+webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번들로 제공합니다. 다른 리소스와 자산으로 변환하거나 패키지화할 수도 있습니다. 종종 JSX 또는 TypeScript 코드를 일반 JavaScript로 트랜스파일 하도록 Babel 또는 TypeScript 등의 컴파일러를 지정하는 데 사용됩니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -131,7 +131,7 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
 
     프로젝트의 *package.json* 파일은 패키지 버전을 포함하여 새 패키지 정보로 업데이트됩니다.
 
-1. UI를 사용하여 나머지 패키지를 한 번에 하나씩 검색하고 추가하는 대신 *package.json*에 다음 코드를 붙여넣습니다. 이렇게 하려면 다음 코드와 함께 `dependencies` 섹션을 추가합니다.
+1. UI를 사용하여 나머지 패키지를 한 번에 하나씩 검색하고 추가하는 대신 *package.json*에 다음 코드를 붙여 넣습니다. 이렇게 하려면 다음 코드와 함께 `dependencies` 섹션을 추가합니다.
 
     ```json
     "dependencies": {
@@ -235,11 +235,11 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
     </body>
     ```
 
-    이 HTML 페이지는 일반 JavaScript로 트랜스파일된 JSX 및 React 코드를 포함하는 *app-bundle.js*를 로드합니다. 현재 *app-bundle.js*는 빈 파일입니다. 다음 섹션에서 코드를 트랜스파일하는 옵션을 구성합니다.
+    이 HTML 페이지는 일반 JavaScript로 트랜스파일 된 JSX 및 React 코드를 포함하는 *app-bundle.js*를 로드합니다. 현재 *app-bundle.js*는 빈 파일입니다. 다음 섹션에서 코드를 트랜스파일하는 옵션을 구성합니다.
 
 ## <a name="configure-webpack-and-typescript-compiler-options"></a>Webpack 및 TypeScript 컴파일러 옵션 구성
 
-위의 단계에서 *webpack-config.js*를 프로젝트에 추가했습니다. 다음으로, webpack 구성 코드를 추가 합니다. JSX를 일반 JavaScript로 번들 및 트랜스파일하려면 입력 파일(*app.tsx*) 및 출력 파일(*app-bundle.js*)을 지정하는 간단한 webpack 구성을 추가합니다. 트랜스파일하려면 일부 TypeScript 컴파일러 옵션을 구성합니다. 이 코드는 webpack 및 TypeScript 컴파일러를 도입하려는 기본 구성입니다.
+위의 단계에서 *webpack-config.js*를 프로젝트에 추가했습니다. 다음으로, webpack 구성 코드를 추가합니다. JSX를 일반 JavaScript로 번들 및 트랜스파일 하려면 입력 파일(*app.tsx*) 및 출력 파일(*app-bundle.js*)을 지정하는 간단한 webpack 구성을 추가합니다. 트랜스파일 하려면 일부 TypeScript 컴파일러 옵션을 구성합니다. 이 코드는 webpack 및 TypeScript 컴파일러를 도입하려는 기본 구성입니다.
 
 1. 솔루션 탐색기에서 *webpack-config.js*를 열고 다음 코드를 추가합니다.
 
@@ -306,23 +306,23 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
 
     ![webpack 실행](../javascript/media/tutorial-nodejs-react-run-webpack.png)
 
-    위의 출력 대신 오류를 참조하면 앱이 작동하기 전에 해당 오류를 해결해야 합니다. npm 패키지 버전이이 자습서에 표시된 버전과 다른 경우 오류의 원인이 될수 있습니다. 오류를 수정하는 한 방법은 이전 단계에서 표시된 정확한 버전을 사용하는 것입니다. 또한 이러한 패키지 버전 중 하나 이상이 사용되지 않아 오류를 일으킬 경우 오류를 수정하려면 최신 버전을 설치해야 합니다. *package.json*을 사용하여 npm 패키지 버전을 제어하는 방법에 대한 자세한 내용은 [package.json configuration](../javascript/configure-packages-with-package-json.md)을 참조하세요.
+    위의 출력 대신 오류를 참조하면 앱이 작동하기 전에 해당 오류를 해결해야 합니다. npm 패키지 버전이 이 자습서에 표시된 버전과 다른 경우 오류의 원인이 될 수 있습니다. 오류를 수정하는 한 방법은 이전 단계에서 표시된 정확한 버전을 사용하는 것입니다. 또한 이러한 패키지 버전 중 하나 이상이 사용되지 않아 오류를 일으킬 경우 오류를 수정하려면 최신 버전을 설치해야 합니다. *package.json*을 사용하여 npm 패키지 버전을 제어하는 방법에 대한 자세한 내용은 [package.json configuration](../javascript/configure-packages-with-package-json.md)을 참조하세요.
 
 1. 솔루션 탐색기에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **기존 폴더**를 선택한 다음, *dist* 폴더를 선택하고 **폴더 선택**을 선택합니다.
 
     Visual Studio는 *app-bundle.js* 및 *app-bundle.js.map*을 포함하는 프로젝트에 *dist* 폴더를 추가합니다.
 
-1. *app-bundle.js*를 열고 트랜스파일된 JavaScript 코드를 봅니다.
+1. *app-bundle.js*를 열고 트랜스파일 된 JavaScript 코드를 봅니다.
 
 1. 외부에서 수정된 파일을 다시 로드하라는 메시지가 나타나면 **모두 예**를 선택합니다.
 
     ![수정한 파일 로드](../javascript/media/tutorial-nodejs-react-reload-files.png)
 
-*app.tsx*를 변경할 때마다 webpack 명령을 다시 실행해야 합니다. 이 단계를 자동화 하려면 빌드 스크립트를 추가하여 JSX를 트랜스파일합니다.
+*app.tsx*를 변경할 때마다 webpack 명령을 다시 실행해야 합니다. 이 단계를 자동화하려면 빌드 스크립트를 추가하여 JSX를 트랜스파일 합니다.
 
 ## <a name="add-a-build-script-to-transpile-the-jsx"></a>빌드 스크립트를 추가하여 JSX를 트랜스파일
 
-Visual Studio 2019부터 빌드 스크립트가 필요합니다. 앞의 섹션에서 표시된 것처럼, 명령줄에서 JSX를 변환 컴파일하기보다 Visual Studio에서 빌드할 때 JSX를 변환 컴파일할 수 있습니다.
+Visual Studio 2019부터 빌드 스크립트가 필요합니다. 앞의 섹션에서 표시된 것처럼, 명령줄에서 JSX를 변환 컴파일하기보다 Visual Studio에서 빌드 할 때 JSX를 변환 컴파일할 수 있습니다.
 
 * *package.json*을 열고 `dependencies` 섹션 뒤에 다음 섹션을 추가합니다.
 
@@ -419,7 +419,7 @@ Visual Studio 2019부터 빌드 스크립트가 필요합니다. 앞의 섹션�
 
 8. 중단점이 있는 코드가 이미 실행됐기 때문에 중단점을 적중하려면 브라우저 페이지를 새로 고치기 합니다.
 
-    디버거에서 일시 중지된 동안 변수를 가리키고 디버거 창을 사용하여 앱 상태를 검사할 수 있습니다. 단계별 코드 실행(**F5**, **F10** 및 **F11**)으로 디버거로 이동할 수 있습니다 .
+    디버거에서 일시 중지된 동안 변수를 가리키고 디버거 창을 사용하여 앱 상태를 검사할 수 있습니다. 단계별 코드 실행(**F5**, **F10** 및 **F11**)으로 디버거로 이동할 수 있습니다.
 
     환경 및 브라우저 상태에 따라 *app.tsx*에서 매핑된 위치 또는 *app-bundle.js*에서 중단점을 적중할 수 있습니다. 어느 경우든 단계별 코드를 실행하고 변수를 검사할 수 있습니다.
 

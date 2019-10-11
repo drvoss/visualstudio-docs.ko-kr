@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 59c5dfa3d7e1e47fbcd2b0d11a0671b2594125c9
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 61a1f74d964c2d6f43608f23b9898054048bb86b
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923802"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018254"
 ---
 # <a name="understanding-sal"></a>SAL 이해
 
@@ -27,7 +27,7 @@ Microsoft SAL (소스 코드 주석 언어)은 함수에서 매개 변수를 사
 
 ### <a name="sal-makes-code-more-valuable"></a>코드의 품질을 높이는 SAL
 
-SAL을 사용 하면 사용자와 코드 분석 도구 모두에 대해 코드 디자인을 이해 하기 쉽게 만들 수 있습니다. C 런타임 함수 `memcpy`를 보여 주는 다음 예제를 참조 하세요.
+SAL을 사용 하면 사용자와 코드 분석 도구 모두에 대해 코드 디자인을 이해 하기 쉽게 만들 수 있습니다. C 런타임 함수 `memcpy`을 보여 주는 다음 예제를 살펴보십시오.
 
 ```cpp
 
@@ -38,18 +38,18 @@ void * memcpy(
 );
 ```
 
-이 함수에서 수행 하는 작업을 알 수 있나요? 함수를 구현 하거나 호출 하는 경우 프로그램의 정확성을 보장 하기 위해 특정 속성을 유지 해야 합니다. 예에 나와 있는 것과 같은 선언을 살펴보면 해당 선언이 무엇 인지 알 수 없습니다. SAL 주석이 없는 경우 문서 또는 코드 주석을 사용 해야 합니다. 에 대 한 `memcpy` MSDN 설명서는 다음과 같습니다.
+이 함수에서 수행 하는 작업을 알 수 있나요? 함수를 구현 하거나 호출 하는 경우 프로그램의 정확성을 보장 하기 위해 특정 속성을 유지 해야 합니다. 예에 나와 있는 것과 같은 선언을 살펴보면 해당 선언이 무엇 인지 알 수 없습니다. SAL 주석이 없는 경우 문서 또는 코드 주석을 사용 해야 합니다. @No__t-0에 대 한 MSDN 설명서는 다음과 같습니다.
 
 > "Src의 바이트 수를 dest로 복사 합니다. 원본과 대상이 겹치면 memcpy의 동작이 정의 되지 않습니다. Memmove를 사용 하 여 겹치는 영역을 처리할 수 있습니다.
 > **보안 정보:** 대상 버퍼의 크기가 소스 버퍼의 크기보다 크거나 같아야 합니다. 자세한 내용은 버퍼 오버런 방지를 참조 하세요.
 
 설명서에는 프로그램의 정확성을 보장 하기 위해 코드에서 특정 속성을 유지 해야 하는 것을 제안 하는 두 가지 정보가 포함 되어 있습니다.
 
-- `memcpy``count` 원본 버퍼의 바이트를 대상 버퍼에 복사 합니다.
+- `memcpy`은 원본 버퍼에서 대상 버퍼로 바이트의 @no__t를 복사 합니다.
 
 - 대상 버퍼는 최소한 원본 버퍼 만큼 커야 합니다.
 
-그러나 컴파일러는 설명서 나 비공식 주석을 읽을 수 없습니다. 이는 두 버퍼와 `count`간의 관계가 있는지 인식 하지 않으며 관계를 효과적으로 추측할 수 없습니다. SAL은 다음과 같이 함수의 속성 및 구현에 대해 더 명확 하 게 제공할 수 있습니다.
+그러나 컴파일러는 설명서 나 비공식 주석을 읽을 수 없습니다. 이는 두 버퍼와 `count` 간에 관계가 있는지 인식 하지 않으며 관계를 효과적으로 추측할 수 없습니다. SAL은 다음과 같이 함수의 속성 및 구현에 대해 더 명확 하 게 제공할 수 있습니다.
 
 ```cpp
 
@@ -60,7 +60,7 @@ void * memcpy(
 );
 ```
 
-이러한 주석은 MSDN 설명서의 정보와 유사 하지만 더 간결 하 고 의미 체계 패턴을 따릅니다. 이 코드를 읽으면이 함수의 속성과 버퍼 오버런 보안 문제를 방지 하는 방법을 신속 하 게 이해할 수 있습니다. SAL이 제공 하는 의미 체계 패턴은 잠재적 버그를 조기에 검색할 때 자동화 된 코드 분석 도구의 효율성과 효율성을 향상 시킬 수 있습니다. 누군가가 `wmemcpy`다음과 같은 버그가 있는 구현을 작성 한다고 가정 합니다.
+이러한 주석은 MSDN 설명서의 정보와 유사 하지만 더 간결 하 고 의미 체계 패턴을 따릅니다. 이 코드를 읽으면이 함수의 속성과 버퍼 오버런 보안 문제를 방지 하는 방법을 신속 하 게 이해할 수 있습니다. SAL이 제공 하는 의미 체계 패턴은 잠재적 버그를 조기에 검색할 때 자동화 된 코드 분석 도구의 효율성과 효율성을 향상 시킬 수 있습니다. 사용자가 `wmemcpy`의이 버그가 있는 구현을 작성 한다고 가정 합니다.
 
 ```cpp
 
@@ -82,7 +82,7 @@ wchar_t * wmemcpy(
 ### <a name="sal-basics"></a>SAL 기본
 SAL은 사용 패턴으로 분류 되는 네 가지 기본 종류의 매개 변수를 정의 합니다.
 
-|범주|매개 변수 주석|Description|
+|Category|매개 변수 주석|설명|
 |--------------|--------------------------|-----------------|
 |**호출 되는 함수에 대 한 입력**|`_In_`|데이터는 호출 된 함수에 전달 되 고 읽기 전용으로 처리 됩니다.|
 |**호출 되는 함수에 대 한 입력 및 호출자에 게 출력**|`_Inout_`|사용 가능한 데이터는 함수로 전달 되 고 잠재적으로 수정 됩니다.|
@@ -114,13 +114,13 @@ SAL은 사용 패턴으로 분류 되는 네 가지 기본 종류의 매개 변�
 
 2. 메뉴 모음에서 **빌드**, **솔루션에서 코드 분석 실행**을 선택 합니다.
 
-     이 섹션의 예제를 참조 하세요.\_ \_ 코드 분석을 실행 하는 경우 다음과 같은 경고가 표시 됩니다.
+     이 섹션의 @ no__t-1 예제에서 \_을 고려 하십시오. 코드 분석을 실행 하는 경우 다음과 같은 경고가 표시 됩니다.
 
     > **C6387 매개 변수 값이 잘못 되었습니다** . ' 고정 '는 ' 0 ' 일 수 있습니다 .이는 ' InCallee ' 함수에 대 한 사양을 따르지 않습니다.
 
-### <a name="example-the-_in_-annotation"></a>예제: \_In주석\_
+### <a name="example-the-_in_-annotation"></a>예: @ No__t-1 주석의 \_
 
-`_In_` 주석은 다음을 나타냅니다.
+@No__t-0 주석은 다음을 나타냅니다.
 
 - 매개 변수는 유효 해야 하며 수정 되지 않습니다.
 
@@ -128,9 +128,9 @@ SAL은 사용 패턴으로 분류 되는 네 가지 기본 종류의 매개 변�
 
 - 호출자는 버퍼를 제공 하 고 초기화 해야 합니다.
 
-- `_In_`"읽기 전용"을 지정 합니다. 일반적인 실수는 대신 `_In_` `_Inout_` 주석을 포함 해야 하는 매개 변수에 적용 하는 것입니다.
+- `_In_`은 "읽기 전용"을 지정 합니다. 일반적인 실수는 `_Inout_` 주석을 포함 해야 하는 매개 변수에 `_In_`을 적용 하는 것입니다.
 
-- `_In_`는 허용 되지만 포인터가 아닌 스칼라의 분석기에서 무시 됩니다.
+- `_In_`은 허용 되지만 포인터가 아닌 스칼라의 분석기에서 무시 됩니다.
 
 ```cpp
 void InCallee(_In_ int *pInt)
@@ -154,11 +154,11 @@ void BadInCaller()
 }
 ```
 
-이 예제에서 Visual Studio Code 분석을 사용 하는 경우 호출자가 Null이 아닌 포인터를의 `pInt`초기화 된 버퍼에 전달 하는지 확인 합니다. 이 경우 포인터는 `pInt` NULL 일 수 없습니다.
+이 예제에서 Visual Studio Code 분석을 사용 하는 경우 호출자가 Null이 아닌 포인터를 `pInt`에 대해 초기화 된 버퍼로 전달 하는지 확인 합니다. 이 경우 `pInt` 포인터는 NULL 일 수 없습니다.
 
-### <a name="example-the-_in_opt_-annotation"></a>예제: \_In\_opt주석\_
+### <a name="example-the-_in_opt_-annotation"></a>예: @ No__t-1opt @ no__t-2 주석의 \_
 
-`_In_opt_`는와 `_In_`동일 합니다. 단, 입력 매개 변수는 NULL이 될 수 있으므로 함수는이를 확인 해야 합니다.
+@no__t는 입력 매개 변수가 NULL이 될 수 있다는 점을 제외 하 고는 `_In_`과 동일 합니다. 따라서 함수는이를 확인 해야 합니다.
 
 ```cpp
 
@@ -184,9 +184,9 @@ void InOptCaller()
 
 Visual Studio Code 분석은 함수에서 버퍼에 액세스 하기 전에 NULL을 확인 하는지 확인 합니다.
 
-### <a name="example-the-_out_-annotation"></a>예제: \_Out주석\_
+### <a name="example-the-_out_-annotation"></a>예: @No__t-0Out @ no__t 주석
 
-`_Out_`요소 버퍼를 가리키는 NULL이 아닌 포인터가 전달 되 고 함수가 요소를 초기화 하는 일반적인 시나리오를 지원 합니다. 호출자는를 호출 하기 전에 버퍼를 초기화할 필요가 없습니다. 호출 된 함수는를 반환 하기 전에이를 초기화 합니다.
+`_Out_`은 요소 버퍼를 가리키는 NULL이 아닌 포인터가 전달 되 고 함수가 요소를 초기화 하는 일반적인 시나리오를 지원 합니다. 호출자는를 호출 하기 전에 버퍼를 초기화할 필요가 없습니다. 호출 된 함수는를 반환 하기 전에이를 초기화 합니다.
 
 ```cpp
 void GoodOutCallee(_Out_ int *pInt)
@@ -208,11 +208,11 @@ void OutCaller()
 }
 ```
 
-Visual Studio Code 분석 도구는 호출자가 NULL이 아닌 포인터를의 `pInt` 버퍼로 전달 하 고 버퍼를 반환 하기 전에 함수에 의해 초기화 되는지 유효성을 검사 합니다.
+Visual Studio Code 분석 도구는 호출자가 NULL이 아닌 포인터를 `pInt`에 대 한 버퍼에 전달 하 고 버퍼를 반환 하기 전에 함수에 의해 초기화 되는지 확인 합니다.
 
-### <a name="example-the-_out_opt_-annotation"></a>예제: \_Out\_opt주석\_
+### <a name="example-the-_out_opt_-annotation"></a>예: @No__t-0Out @ no__t-1opt @ no__t-2 주석
 
-`_Out_opt_`는와 `_Out_`동일 합니다. 단, 매개 변수는 NULL이 될 수 있으므로 함수는이를 확인 해야 합니다.
+`_Out_opt_`은 매개 변수가 NULL 일 수 있는 경우를 제외 하 고는 `_Out_`과 동일 합니다. 따라서 함수는이를 확인 해야 합니다.
 
 ```cpp
 void GoodOutOptCallee(_Out_opt_ int *pInt)
@@ -235,14 +235,14 @@ void OutOptCaller()
 }
 ```
 
-Visual Studio Code 분석에서는가 역참조 되기 전에 `pInt` 이 함수가 null을 확인 하는지 확인 하 고,가 null이 아닌 경우 `pInt` 버퍼는 함수에 의해 초기화 되어 반환 됩니다.
+Visual Studio Code 분석은 `pInt`이 역참조 되기 전에이 함수가 NULL을 확인 하는지 확인 하 고, `pInt`이 NULL이 아닌 경우에는 버퍼를 반환 하기 전에 함수에 의해 초기화 됩니다.
 
-### <a name="example-the-_inout_-annotation"></a>예제: \_Inout주석\_
+### <a name="example-the-_inout_-annotation"></a>예: @No__t 0Inout @ no__t 주석
 
-`_Inout_`는 함수에 의해 변경 될 수 있는 포인터 매개 변수에 주석을 추가 하는 데 사용 됩니다. 포인터는 호출 전에 유효한 초기화 된 데이터를 가리켜야 하며, 변경 되더라도 여전히 유효한 값을 반환 해야 합니다. 주석은 함수가 단일 요소 버퍼에서 자유롭게 읽고 쓸 수 있도록 지정 합니다. 호출자는 버퍼를 제공 하 고 초기화 해야 합니다.
+`_Inout_`은 함수에 의해 변경 될 수 있는 포인터 매개 변수에 주석을 추가 하는 데 사용 됩니다. 포인터는 호출 전에 유효한 초기화 된 데이터를 가리켜야 하며, 변경 되더라도 여전히 유효한 값을 반환 해야 합니다. 주석은 함수가 단일 요소 버퍼에서 자유롭게 읽고 쓸 수 있도록 지정 합니다. 호출자는 버퍼를 제공 하 고 초기화 해야 합니다.
 
 > [!NOTE]
-> 와 마찬가지로 `_Out_`은 수정 가능한 값에 적용 해야합니다.`_Inout_`
+> @No__t-0과 같이 수정 가능한 값에 `_Inout_`을 적용 해야 합니다.
 
 ```cpp
 void InOutCallee(_Inout_ int *pInt)
@@ -266,11 +266,11 @@ void BadInOutCaller()
 }
 ```
 
-Visual Studio Code 분석은 호출자가 null `pInt` `pInt` 이 아닌 포인터를의 초기화 된 버퍼로 전달 하는지 확인 하 고 반환 하기 전에는 null이 아니고 버퍼가 초기화 됨을 확인 합니다.
+Visual Studio Code 분석은 호출자가 NULL이 아닌 포인터를 `pInt`에 대해 초기화 된 버퍼에 전달 하는지 확인 하 고, @no__t 반환 하기 전에-1은 여전히 NULL이 아니고 버퍼를 초기화 합니다.
 
-### <a name="example-the-_inout_opt_-annotation"></a>예제: \_Inout\_opt주석\_
+### <a name="example-the-_inout_opt_-annotation"></a>예: @No__t-0Inout @ no__t-1opt @ no__t-2 주석
 
-`_Inout_opt_`는와 `_Inout_`동일 합니다. 단, 입력 매개 변수는 NULL이 될 수 있으므로 함수는이를 확인 해야 합니다.
+@no__t는 입력 매개 변수가 NULL이 될 수 있다는 점을 제외 하 고는 `_Inout_`과 동일 합니다. 따라서 함수는이를 확인 해야 합니다.
 
 ```cpp
 void GoodInOutOptCallee(_Inout_opt_ int *pInt)
@@ -295,11 +295,11 @@ void InOutOptCaller()
 }
 ```
 
-Visual Studio Code 분석은이 함수가 버퍼에 액세스 하기 전에 null을 확인 하는지 확인 하 고 `pInt` ,가 null이 아닌 경우 버퍼가 반환 되기 전에 함수에 의해 초기화 됩니다.
+Visual Studio Code 분석은이 함수가 버퍼에 액세스 하기 전에 NULL을 확인 하는지 확인 하 고 `pInt`이 NULL이 아닌 경우에는 버퍼를 반환 하기 전에 함수에 의해 초기화 됩니다.
 
-### <a name="example-the-_outptr_-annotation"></a>예제: Outptr\_ 주석 \_
+### <a name="example-the-_outptr_-annotation"></a>예: @No__t-0Outptr @ no__t-1 주석
 
-`_Outptr_`는 포인터를 반환 하기 위한 매개 변수에 주석을 추가 하는 데 사용 됩니다.  매개 변수 자체는 NULL이 아니어야 하며, 호출 된 함수는 null이 아닌 포인터를 반환 하 고 해당 포인터는 초기화 된 데이터를 가리킵니다.
+`_Outptr_`은 포인터를 반환 하기 위한 매개 변수에 주석을 추가 하는 데 사용 됩니다.  매개 변수 자체는 NULL이 아니어야 하며, 호출 된 함수는 null이 아닌 포인터를 반환 하 고 해당 포인터는 초기화 된 데이터를 가리킵니다.
 
 ```cpp
 void GoodOutPtrCallee(_Outptr_ int **pInt)
@@ -325,11 +325,11 @@ void OutPtrCaller()
 }
 ```
 
-Visual Studio Code 분석은 호출자가에 대해 `*pInt`NULL이 아닌 포인터를 전달 하 고 버퍼를 반환 하기 전에 함수에 의해 초기화 되는지 확인 합니다.
+Visual Studio Code 분석은 호출자가 `*pInt`에 대해 NULL이 아닌 포인터를 전달 하 고 버퍼를 반환 하기 전에 함수에 의해 초기화 되는지 확인 합니다.
 
-### <a name="example-the-_outptr_opt_-annotation"></a>예제: Outptr\_opt\_ 주석 \_
+### <a name="example-the-_outptr_opt_-annotation"></a>예: @No__t-0Outptr @ no__t-1opt @ no__t-2 주석
 
-`_Outptr_opt_`는 매개 변수가 선택적 `_Outptr_`이라는 점을 제외 하 고는와 동일 합니다. 호출자는 매개 변수에 대 한 NULL 포인터를 전달할 수 있습니다.
+`_Outptr_opt_`은 매개 변수가 선택적 이라는 점을 제외 하 고는 `_Outptr_`과 동일 합니다. 호출자는 매개 변수에 대해 NULL 포인터를 전달할 수 있습니다.
 
 ```cpp
 void GoodOutPtrOptCallee(_Outptr_opt_ int **pInt)
@@ -357,11 +357,11 @@ void OutPtrOptCaller()
 }
 ```
 
-Visual Studio Code 분석에서는가 역참조 되기 전에 `*pInt` 이 함수가 NULL을 확인 하 고 버퍼를 반환 하기 전에 함수에 의해 초기화 되는지 유효성을 검사 합니다.
+Visual Studio Code 분석은 `*pInt`이 역참조 되 고 버퍼가 반환 되기 전에 함수에 의해 초기화 되기 전에이 함수가 NULL을 확인 하는지 확인 합니다.
 
-### <a name="example-the-_success_-annotation-in-combination-with-_out_"></a>예제: Out과\_ 함께 \_ 성공\_주석\_
+### <a name="example-the-_success_-annotation-in-combination-with-_out_"></a>예: @No__t-2Out @ no__t-3과 함께 \_Success @ no__t 주석
 
-대부분의 개체에 주석을 적용할 수 있습니다.  특히 전체 함수에 주석을 추가할 수 있습니다.  함수의 가장 명백한 특징 중 하나는 성공 또는 실패할 수 있다는 것입니다. 그러나 버퍼와 크기 간의 연결과 마찬가지로 C/C++ 는 함수 성공 또는 실패를 표현할 수 없습니다. `_Success_` 주석을 사용 하면 함수의 성공 여부를 말할 수 있습니다.  `_Success_` 주석에 대 한 매개 변수는 true 이면 함수가 성공 했음을 나타내는 식입니다. 식에는 주석 파서가 처리할 수 있는 모든 항목이 있을 수 있습니다. 함수가 반환 된 후의 주석 효과는 함수가 성공 하는 경우에만 적용 됩니다. 이 예제에서는가 `_Success_` 와 `_Out_` 상호 작용 하 여 적절 한 작업을 수행 하는 방법을 보여 줍니다. 키워드 `return` 를 사용 하 여 반환 값을 나타낼 수 있습니다.
+대부분의 개체에 주석을 적용할 수 있습니다.  특히 전체 함수에 주석을 추가할 수 있습니다.  함수의 가장 명백한 특징 중 하나는 성공 또는 실패할 수 있다는 것입니다. 그러나 버퍼와 크기 간의 연결과 마찬가지로 C/C++ 는 함수 성공 또는 실패를 표현할 수 없습니다. @No__t-0 주석을 사용 하 여 함수의 성공 여부를 말할 수 있습니다.  @No__t-0 주석에 대 한 매개 변수는 함수가 성공 했음을 나타내는 식인 경우에만 적용 됩니다. 식에는 주석 파서가 처리할 수 있는 모든 항목이 있을 수 있습니다. 함수가 반환 된 후의 주석 효과는 함수가 성공 하는 경우에만 적용 됩니다. 이 예에서는 `_Success_`이 `_Out_`과 상호 작용 하 여 적절 한 작업을 수행 하는 방법을 보여 줍니다. -0 @no__t 키워드를 사용 하 여 반환 값을 나타낼 수 있습니다.
 
 ```cpp
 _Success_(return != false) // Can also be stated as _Success_(return)
@@ -376,7 +376,7 @@ bool GetValue(_Out_ int *pInt, bool flag)
 }
 ```
 
-주석은 Visual Studio Code 분석을 통해 호출자가 NULL이 아닌 포인터를에 대 한 `pInt`버퍼에 전달 하는지, 버퍼가 반환 되기 전에 함수에 의해 초기화 되는지 유효성을 검사 합니다. `_Out_`
+@No__t-0 주석은 Visual Studio Code 분석을 통해 호출자가 NULL이 아닌 포인터를 `pInt`의 버퍼로 전달 하는지, 그리고 버퍼가 반환 되기 전에 함수에 의해 초기화 되는지 유효성을 검사 합니다.
 
 ## <a name="sal-best-practice"></a>SAL 유용한 정보
 

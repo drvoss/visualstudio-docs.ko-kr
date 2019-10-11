@@ -29,15 +29,15 @@ f1_keywords:
 ms.assetid: 07769c25-9b97-4ab7-b175-d1c450308d7a
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 68e57a10b9bd36b07a2d4993626604f2a00558ca
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 976a66901ae60bd6edc053d5acbb516aa87c1a7c
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919577"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72015998"
 ---
 # <a name="annotating-locking-behavior"></a>잠금 동작에 주석 지정
 다중 스레드 프로그램에서 동시성 버그를 방지하려면 항상 적절한 잠금 규칙을 따르고 SAL 주석을 사용합니다.
@@ -64,7 +64,7 @@ SAL은 임계 영역, 뮤텍스, 스핀 잠금 및 기타 리소스 개체와 �
 ## <a name="locking-annotations"></a>주석 잠금
 다음 표에서는 잠금 주석을 보여 줍니다.
 
-|Annotation|Description|
+|주석|설명|
 |----------------|-----------------|
 |`_Acquires_exclusive_lock_(expr)`|함수에 주석을 달고 사후 상태에서 함수가 `expr`로 명명된 잠금 개체의 단독 잠금 수를 하나 증가시킴을 나타냅니다.|
 |`_Acquires_lock_(expr)`|함수에 주석을 달고 사후 상태에서 함수가 `expr`로 명명된 잠금 개체의 잠금 수를 하나 증가시킴을 나타냅니다.|
@@ -88,7 +88,7 @@ SAL은 임계 영역, 뮤텍스, 스핀 잠금 및 기타 리소스 개체와 �
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>노출되지 않은 잠금 개체에 대한 SAL 내장 함수
 특정 잠금 개체는 연결된 잠금 함수의 구현에 의해 노출되지 않습니다.  다음 표에서는 이러한 노출되지 않는 잠금 개체에서 작동하는 함수에 주석을 사용하도록 설정하는 SAL 내장 변수를 보여 줍니다.
 
-|Annotation|Description|
+|주석|설명|
 |----------------|-----------------|
 |`_Global_cancel_spin_lock_`|취소 스핀 잠금을 설명합니다.|
 |`_Global_critical_region_`|임계 영역을 설명합니다.|
@@ -98,7 +98,7 @@ SAL은 임계 영역, 뮤텍스, 스핀 잠금 및 기타 리소스 개체와 �
 ## <a name="shared-data-access-annotations"></a>공유 데이터 액세스 주석
 다음 표에서는 공유 데이터 액세스에 대한 주석을 보여 줍니다.
 
-|Annotation|설명|
+|주석|설명|
 |----------------|-----------------|
 |`_Guarded_by_(expr)`|변수에 주석을 추가하고 변수가 엑세스될 때마다 `expr`로 명명된 잠금 개체의 잠금 수가 1개 이상임을 나타냅니다.|
 |`_Interlocked_`|변수에 주석을 추가하며 `_Guarded_by_(_Global_interlock_)`와 동일합니다.|
@@ -108,16 +108,16 @@ SAL은 임계 영역, 뮤텍스, 스핀 잠금 및 기타 리소스 개체와 �
 ## <a name="smart-lock-and-raii-annotations"></a>Smart Lock 및 RAII 주석
 스마트 잠금은 일반적으로 기본 잠금을 래핑하고 수명 주기를 관리 합니다. 다음 표에서는 `move` 의미 체계를 지 원하는 스마트 잠금과 RAII 코딩 패턴에서 사용할 수 있는 주석을 보여 줍니다.
 
-|Annotation|Description|
+|주석|설명|
 |----------------|-----------------|
 |`_Analysis_assume_smart_lock_acquired_`|분석기에 스마트 잠금을 획득 했다고 가정 합니다. 이 주석에는 참조 잠금 형식이 매개 변수로 필요 합니다.|
 |`_Analysis_assume_smart_lock_released_`|스마트 잠금이 해제 된 것으로 가정 하 여 분석기에 지시 합니다. 이 주석에는 참조 잠금 형식이 매개 변수로 필요 합니다.|
-|`_Moves_lock_(target, source)`|개체에서로 잠금 상태를 `move constructor` `target`전송 하는 작업을 설명 합니다. `source` 는 `target` 새로 생성 된 개체로 간주 되기 때문에 이전에 있던 모든 상태를 손실 하 고 `source` 상태로 바꿉니다. 또한 `source` 는 잠금 수 또는 별칭 대상이 없는 clean 상태로 다시 설정 되지만이를 가리키는 별칭은 변경 되지 않습니다.|
-|`_Replaces_lock_(target, source)`|원본 `move assignment operator` 에서 상태를 전송 하기 전에 대상 잠금이 해제 되는 의미 체계에 대해 설명 합니다. 이를 앞에 오는 `_Moves_lock_(target, source)` `_Releases_lock_(target)`의 조합으로 간주할 수 있습니다.|
-|`_Swaps_locks_(left, right)`|해당 개체 `swap` `left` 를 가정 하 고 `right` 해당 상태를 교환 하는 표준 동작에 대해 설명 합니다. 교환 되는 상태에는 잠금 수와 앨리어싱 대상 (있는 경우)이 포함 됩니다. `left` 및`right` 개체를 가리키는 별칭은 변경 되지 않고 그대로 유지 됩니다.|
-|`_Detaches_lock_(detached, lock)`|잠금 래퍼 형식이 포함 된 리소스를 사용 하 여 연결 끊기가을 허용 하는 시나리오를 설명 합니다. 이는 내부 포인터를 `std::unique_ptr` 사용 하는 방법과 유사 합니다. 프로그래머는이를 통해 포인터를 추출 하 고 스마트 포인터 컨테이너를 깨끗 한 상태로 유지할 수 있습니다. 유사한 논리는에서 `std::unique_lock` 지원 되며 사용자 지정 잠금 래퍼로 구현할 수 있습니다. 분리 된 잠금에는 상태 (잠금 수 및 별칭 지정 대상 (있는 경우))가 유지 되는 반면, 래퍼는 잠금 횟수를 포함 하지 않고 별칭을 포함 하도록 다시 설정 됩니다. 잠금 수에 대 한 작업은 없습니다 (릴리스 및 획득). 이 주석은 분리 된 인수가 `_Moves_lock_` `return` 가 아니라 `this`는 것을 제외 하 고는와 정확히 동일 하 게 동작 합니다.|
+|`_Moves_lock_(target, source)`|@No__t-1 개체에서 `target`로 잠금 상태를 전송 하는 `move constructor` 연산을 설명 합니다. @No__t-0은 새로 생성 된 개체로 간주 되므로 이전에 있던 모든 상태는 손실 되어 `source` 상태로 바뀝니다. @No__t-0은 잠금 수 또는 별칭 대상이 없는 clean 상태로 다시 설정 되지만이를 가리키는 별칭은 변경 되지 않은 상태로 유지 됩니다.|
+|`_Replaces_lock_(target, source)`|원본에서 상태를 전송 하기 전에 대상 잠금이 해제 되는 `move assignment operator` 의미 체계에 대해 설명 합니다. 이는 `_Moves_lock_(target, source)`의 조합으로 간주할 수 있습니다 (`_Releases_lock_(target)` 앞에 옴).|
+|`_Swaps_locks_(left, right)`|개체 `left`과 `right`가 해당 상태를 교환할 것으로 가정 하는 표준 `swap` 동작에 대해 설명 합니다. 교환 되는 상태에는 잠금 수와 앨리어싱 대상 (있는 경우)이 포함 됩니다. @No__t-0 및 `right` 개체를 가리키는 별칭은 변경 되지 않은 상태로 유지 됩니다.|
+|`_Detaches_lock_(detached, lock)`|잠금 래퍼 형식이 포함 된 리소스를 사용 하 여 연결 끊기가을 허용 하는 시나리오를 설명 합니다. 이는 `std::unique_ptr`이 내부 포인터와 함께 작동 하는 방법과 비슷합니다. 프로그래머는이를 통해 포인터를 추출 하 고 스마트 포인터 컨테이너를 깨끗 한 상태로 둘 수 있습니다. 유사한 논리는 `std::unique_lock`에서 지원 되며 사용자 지정 잠금 래퍼로 구현할 수 있습니다. 분리 된 잠금에는 상태 (잠금 수 및 별칭 지정 대상 (있는 경우))가 유지 되는 반면, 래퍼는 잠금 횟수를 포함 하지 않고 별칭을 포함 하도록 다시 설정 됩니다. 잠금 수에 대 한 작업은 없습니다 (릴리스 및 획득). 이 주석은 분리 된 인수가 `this`가 아닌 @no__t 1 이어야 한다는 점을 제외 하 고는 @no__t와 정확히 동일 하 게 동작 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
 
 - [C/C++ 코드 오류를 줄이기 위한 SAL 주석 사용](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [SAL 이해](../code-quality/understanding-sal.md)

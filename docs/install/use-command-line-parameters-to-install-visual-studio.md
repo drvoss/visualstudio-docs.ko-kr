@@ -2,7 +2,7 @@
 title: 명령줄 매개 변수를 사용하여 Visual Studio 설치
 titleSuffix: ''
 description: 명령줄 매개 변수를 사용하여 Visual Studio 설치를 제어하거나 사용자 지정하는 방법을 알아봅니다.
-ms.date: 09/11/2019
+ms.date: 10/07/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1f9e5d1dadd9caf95b8e6cb8e5fec70daf984ac9
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 306928b7a28465923ae0a5e2cc7773094458594e
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913240"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018797"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>명령줄 매개 변수를 사용하여 Visual Studio 설치
 
@@ -32,23 +32,30 @@ ms.locfileid: "70913240"
 - 설치 프로세스를 자동화합니다.
 - 나중에 사용할 설치 파일의 캐시(레이아웃)를 만듭니다.
 
-명령줄 옵션은 다운로드 프로세스를 시작하는 작은(1MB) 파일인 설치 부트스트래퍼와 함께 사용됩니다. 부트스트래퍼는 Visual Studio 사이트에서 다운로드할 때 첫 번째로 실행되는 실행 파일입니다. 다음 링크를 사용하여 설치 중인 제품 버전에 대한 최신 릴리스 부트스트래퍼에 직접 연결된 링크를 가져옵니다.
+명령줄 옵션은 다운로드 프로세스를 시작하는 작은(1MB) 파일인 설치 부트스트래퍼와 함께 사용됩니다. 부트스트래퍼는 Visual Studio 사이트에서 다운로드할 때 첫 번째로 실행되는 실행 파일입니다.
 
 ::: moniker range="vs-2017"
 
-- [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+Visual Studio 2017에 대한 부트스트래퍼를 가져오려면 [**Visual Studio 이전 버전**](https://visualstudio.microsoft.com/vs/older-downloads/) 다운로드 페이지에서 방법에 관한 세부 정보를 참조하세요.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
+
+다음 링크를 사용하여 설치 중인 제품 버전에 대한 최신 릴리스 부트스트래퍼에 직접 연결된 링크를 가져옵니다.
 
 - [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
 - [Visual Studio 2019 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
 - [Visual Studio 2019 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
 
 ::: moniker-end
+
+
+부트스트래퍼 파일은 다음 중 하나와 일치하거나 유사해야 합니다.
+
+* vs_enterprise.exe
+* vs_professional.exe
+* vs_community.exe
 
 ## <a name="command-line-parameters"></a>명령줄 매개 변수
 
@@ -61,7 +68,7 @@ ms.locfileid: "70913240"
 >[!TIP]
 > 명령줄을 사용하여 Visual Studio를 설치하는 방법에 대한 자세한 예제는 [명령줄 매개 변수 예제](command-line-parameter-examples.md) 페이지를 참조하세요.
 
-| **명령** | **설명** |
+| **Command** | **설명** |
 | ----------------------- | --------------- |
 | (비어 있음) | 제품을 설치합니다. |
 | `modify` | 설치된 제품을 수정합니다. |

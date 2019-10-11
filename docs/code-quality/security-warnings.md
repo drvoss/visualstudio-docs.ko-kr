@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52ddee2e876576508573fbadedcc407f81703e18
-ms.sourcegitcommit: 9f6f63a2d76c6e579b4b67a96ec86faba99ad1df
+ms.openlocfilehash: bf1f318d8138bb455e965d7df44ae45e192904e3
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71933124"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018759"
 ---
 # <a name="security-warnings"></a>보안 경고
 
@@ -48,7 +48,7 @@ ms.locfileid: "71933124"
 |[CA2118: Review SuppressUnmanagedCodeSecurityAttribute usage @ no__t-0|SuppressUnmanagedCodeSecurityAttribute는 COM interop 또는 플랫폼 호출을 사용하는 비관리 코드를 실행하는 멤버에 대해 기본 보안 시스템 동작을 변경합니다. 이 특성은 기본적으로 성능 향상을 위해 사용되지만 성능이 향상되는 대신 중대한 보안 위험이 발생합니다.|
 |[CA2119: 전용 인터페이스를 충족 하는 봉인 메서드 @ no__t-0|상속할 수 있는 public 형식에서는 internal(Visual Basic의 경우 Friend) 인터페이스의 재정의 가능한 메서드 구현을 제공합니다. 이 규칙 위반 문제를 해결하려면 어셈블리 외부에서 메서드가 재정의되지 않도록 합니다.|
 |[CA2120: 보안 serialization 생성자 @ no__t-0|이 형식에는 System.Runtime.Serialization.SerializationInfo 개체와 System.Runtime.Serialization.StreamingContext 개체(serialization 생성자 서명)를 사용하는 생성자가 있습니다. 이 생성자는 보안 검사를 통해 보안되지 않지만 형식에 있는 하나 이상의 정규 생성자가 보안됩니다.|
-|[CA2121: 정적 생성자는 private이어야 합니다.](../code-quality/ca2121-static-constructors-should-be-private.md)|시스템에서는 형식의 첫 번째 인스턴스가 만들어지거나 static 멤버가 참조되기 전에 static 생성자를 호출합니다. static 생성자가 private이 아니면 시스템 이외의 코드에서 이를 호출할 수 있습니다. 이렇게 되면 생성자에서 수행하는 작업에 따라 예기치 않은 동작이 발생할 수 있습니다.|
+|[CA2121: 정적 생성자는 private이어야 합니다.](../code-quality/ca2121.md)|시스템에서는 형식의 첫 번째 인스턴스가 만들어지거나 static 멤버가 참조되기 전에 static 생성자를 호출합니다. static 생성자가 private이 아니면 시스템 이외의 코드에서 이를 호출할 수 있습니다. 이렇게 되면 생성자에서 수행하는 작업에 따라 예기치 않은 동작이 발생할 수 있습니다.|
 |[CA2122: 링크 요청이 있는 메서드를 간접적으로 노출 하지 마십시오. @ no__t-0|public 또는 protected 멤버에 링크 요청이 있으며 해당 멤버가 보안 검사를 수행하지 않는 멤버에 의해 호출됩니다. 링크 요청은 직접 실행 호출자의 권한만 검사합니다.|
 |[CA2123: 재정의 링크 요청은 base @ no__t-0과 동일 해야 합니다.|이 규칙에서는 메서드를 다른 형식의 인터페이스이거나 가상 메서드인 기본 메서드에 일치시킨 다음 각각에 대해 링크 요청을 비교합니다. 이 규칙이 위반되면 악의적인 호출자가 보안되지 않은 메서드를 호출함으로써 링크 요청을 우회할 수 있습니다.|
 |[CA2124: 취약 한 finally 절을 outer try @ no__t-0에 래핑합니다.|public 또는 protected 메서드에 try/finally 블록이 들어 있습니다. finally 블록이 보안 상태를 다시 설정하는 것으로 나타나며 finally 블록에 포함되어 있지 않습니다.|
@@ -64,7 +64,7 @@ ms.locfileid: "71933124"
 |[CA2138: 투명 메서드는 SuppressUnmanagedCodeSecurity 특성 @ no__t를 사용 하 여 메서드를 호출 하면 안 됩니다.|보안 투명 메서드는 SuppressUnmanagedCodeSecurityAttribute 특성으로 표시된 메서드를 호출합니다.|
 |[CA2139: 투명 메서드는 HandleProcessCorruptingExceptions 특성 @ no__t을 사용할 수 없습니다.|이 규칙은 투명 하 고 HandleProcessCorruptedStateExceptionsAttribute 특성을 사용 하 여 프로세스 손상 예외를 처리 하려고 시도 하는 모든 메서드에서 발생 합니다. 프로세스 손상 예외는 <xref:System.AccessViolationException>과 같은 예외의 CLR 버전 4.0 예외 분류입니다. HandleProcessCorruptedStateExceptionsAttribute 특성은 보안에 중요한 메서드에서만 사용할 수 있으며 투명 메서드에 적용되는 경우 무시됩니다.|
 |[CA2140: 투명 코드는 보안에 중요 한 항목을 참조 해서는 안 됩니다 @ no__t-0|SecurityTransparentAttribute로 표시된 메서드가 SecurityCritical로 표시된 public이 아닌 멤버를 호출합니다. 이 규칙은 투명 하 고 중요 한 어셈블리의 모든 메서드와 형식을 분석 하 고 투명 코드의 모든 호출을 Securitytreatassafe로로 표시 되지 않은 public이 아닌 중요 코드로 플래그를 표시 합니다.|
-|[CA2141: 투명한 메서드는 LinkDemands를 충족해서는 안 됩니다.](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|보안 투명 메서드가 APTCA(AllowPartiallyTrustedCallersAttribute) 특성으로 표시되지 않은 어셈블리의 메서드를 호출하거나, 보안 투명 메서드가 형식 또는 메서드에 대한 LinkDemand를 충족합니다.|
+|[CA2141: 투명한 메서드는 LinkDemands를 충족해서는 안 됩니다.](../code-quality/ca2141.md)|보안 투명 메서드가 APTCA(AllowPartiallyTrustedCallersAttribute) 특성으로 표시되지 않은 어셈블리의 메서드를 호출하거나, 보안 투명 메서드가 형식 또는 메서드에 대한 LinkDemand를 충족합니다.|
 |[CA2142: 투명 코드는 LinkDemands @ no__t로 보호 하면 안 됩니다.-0|이 규칙은 액세스하는 데 LinkDemands가 필요한 투명한 메서드에 적용됩니다. 보안 투명 코드는 작업 보안을 확인할 책임이 없으므로 권한을 요구해서는 안 됩니다.|
 |[CA2143: 투명 메서드는 보안 요청을 사용 하지 않아야 합니다. @ no__t-0|보안 투명 코드는 작업 보안을 확인할 책임이 없으므로 권한을 요구해서는 안 됩니다. 보안 투명 코드는 보안에 중요한 결정을 내리는 데 전체 요청을 사용해야 하며 안전에 중요한 코드는 전체 요청을 위해 투명 코드를 사용해서는 안 됩니다.|
 |[CA2144: 투명 코드는 바이트 배열에서 어셈블리를 로드할 수 없습니다. @ no__t-0|투명 코드는 보안에 중요한 동작을 수행할 수 없기 때문에 투명 코드의 보안 검토는 중요 코드에 대한 보안 검토만큼 완벽하지 않습니다. 바이트 배열에서 로드된 어셈블리는 투명 코드에서 발견되지 않을 수 있으며 해당 바이트 배열은 감사할 필요가 없는 중요하거나 특히 안전에 중요한 코드를 포함할 수 있습니다.|
@@ -73,12 +73,39 @@ ms.locfileid: "71933124"
 |[CA2147: 투명 메서드는 보안 어설션을 사용할 수 없습니다. @ no__t-0|이 규칙은 100% 투명 어셈블리나 투명/중요 혼합 어셈블리의 모든 메서드와 형식을 분석하고 선언적이거나 명령적인 어설션 사용에 플래그를 지정합니다.|
 |[CA2149: 투명 메서드는 네이티브 코드를 호출 해서는 안 됩니다. @ no__t-0|이 규칙은 P/Invoke를 통해 네이티브 코드를 직접 호출 하는 모든 투명 메서드에 대해 발생 합니다. 이 규칙이 위반되면 수준 2 투명성 모델에서 MethodAccessException이 발생하고 수준 1 투명성 모델에서 UnmanagedCode에 대한 완전 요청이 발생합니다.|
 |[CA2151: 중요 한 형식이 포함 된 필드는 보안에 중요 @ no__t-0 이어야 합니다.|보안 중요 형식을 사용하려면 이 형식을 참조하는 코드가 보안 중요 또는 보안 안전 중요여야 합니다. 참조가 간접적인 경우에도 마찬가지입니다. 따라서 투명 코드는 필드에 액세스할 수 없으므로 보안 투명 또는 보안 안전 중요 필드가 있을 경우 잘못 해석됩니다.|
-|[CA5122: P/Invoke 선언은 안전에 중요한 선언이 아니어야 합니다.](../code-quality/ca5122-p-invoke-declarations-should-not-be-safe-critical.md)|메서드는 보안에 중요한 작업을 수행할 때 SecuritySafeCritical로 표시되지만, 투명 코드에서도 안전하게 사용할 수 있습니다. 투명 코드는 P/Invoke를 통해 절대 네이티브 코드를 직접 호출할 수 없습니다. 따라서 P/Invoke를 SecuritySafeCritical로 표시할 경우 투명 코드가 P/Invoke를 호출할 수 없으며, 보안 분석에서 잘못 해석하는 원인이 됩니다.|
 |[CA2153: 손상 된 상태 예외를 처리 하지 않습니다. @ no__t-0|[CSE(손상된 상태 예외)](https://msdn.microsoft.com/magazine/dd419661.aspx) 는 프로세스에 메모리 손상이 있음을 나타냅니다. 프로세스 충돌을 허용하는 대신 catch하면 공격자가 손상된 메모리 영역에 익스플로잇을 배치할 수 있는 경우 보안 취약점이 발생할 수 있습니다.|
+|[CA2300: 안전 하지 않은 역직렬 변환기 BinaryFormatter @ no__t-0 사용 안 함|안전 하지 않은 데이터는 deserialize 할 때 취약 합니다. 공격자는 예기치 않은 형식을 포함 하도록 serialize 된 데이터를 수정 하 여 악의적인 부작용으로 개체를 주입할 수 있습니다.|
+|[CA2301: BinaryFormatter를 호출 하지 마세요. 먼저 BinaryFormatter를 설정 하지 않고 Deserialize 합니다. Binder @ no__t-0|안전 하지 않은 데이터는 deserialize 할 때 취약 합니다. 공격자는 예기치 않은 형식을 포함 하도록 serialize 된 데이터를 수정 하 여 악의적인 부작용으로 개체를 주입할 수 있습니다.|
+|[CA2302: BinaryFormatter를 확인 하십시오. BinaryFormatter를 호출 하기 전에 바인더가 설정 되었는지 확인 하십시오. @ no__t를 Deserialize 합니다.|안전 하지 않은 데이터는 deserialize 할 때 취약 합니다. 공격자는 예기치 않은 형식을 포함 하도록 serialize 된 데이터를 수정 하 여 악의적인 부작용으로 개체를 주입할 수 있습니다.|
+|[CA2305: 안전 하지 않은 역직렬 변환기 LosFormatter @ no__t 사용 안 함-0|안전 하지 않은 데이터는 deserialize 할 때 취약 합니다. 공격자는 예기치 않은 형식을 포함 하도록 serialize 된 데이터를 수정 하 여 악의적인 부작용으로 개체를 주입할 수 있습니다.|
+|[CA2310: 안전 하지 않은 역직렬 변환기 NetDataContractSerializer @ no__t 사용 안 함-0|안전 하지 않은 데이터는 deserialize 할 때 취약 합니다. 공격자는 예기치 않은 형식을 포함 하도록 serialize 된 데이터를 수정 하 여 악의적인 부작용으로 개체를 주입할 수 있습니다.|
+|[CA2311: 먼저 NetDataContractSerializer @ no__t를 설정 하지 않고 deserialize 합니다.|안전 하지 않은 데이터는 deserialize 할 때 취약 합니다. 공격자는 예기치 않은 형식을 포함 하도록 serialize 된 데이터를 수정 하 여 악의적인 부작용으로 개체를 주입할 수 있습니다.|
+|[CA2312: @ No__t를 deserialize 하기 전에 NetDataContractSerializer이 설정 되어 있는지 확인 하십시오.|안전 하지 않은 데이터는 deserialize 할 때 취약 합니다. 공격자는 예기치 않은 형식을 포함 하도록 serialize 된 데이터를 수정 하 여 악의적인 부작용으로 개체를 주입할 수 있습니다.|
+|[CA2315: 안전 하지 않은 역직렬 변환기 ObjectStateFormatter @ no__t 사용 안 함-0|안전 하지 않은 데이터는 deserialize 할 때 취약 합니다. 공격자는 예기치 않은 형식을 포함 하도록 serialize 된 데이터를 수정 하 여 악의적인 부작용으로 개체를 주입할 수 있습니다.|
+|[CA2321: SimpleTypeResolver @ no__t를 사용 하 여 JavaScriptSerializer로 deserialize 안 함-0|안전 하지 않은 데이터는 deserialize 할 때 취약 합니다. 공격자는 예기치 않은 형식을 포함 하도록 serialize 된 데이터를 수정 하 여 악의적인 부작용으로 개체를 주입할 수 있습니다.|
+|[CA2322: @ No__t를 deserialize 하기 전에 JavaScriptSerializer가 SimpleTypeResolver로 초기화 되지 않았는지 확인 합니다.|안전 하지 않은 데이터는 deserialize 할 때 취약 합니다. 공격자는 예기치 않은 형식을 포함 하도록 serialize 된 데이터를 수정 하 여 악의적인 부작용으로 개체를 주입할 수 있습니다.|
+|[CA2326: None @ no__t가 아닌 TypeNameHandling 값을 사용 하지 마십시오.|안전 하지 않은 데이터는 deserialize 할 때 취약 합니다. 공격자는 예기치 않은 형식을 포함 하도록 serialize 된 데이터를 수정 하 여 악의적인 부작용으로 개체를 주입할 수 있습니다.|
+|[CA2327: 안전 하지 않은 JsonSerializerSettings @ no__t 사용 안 함-0|안전 하지 않은 데이터는 deserialize 할 때 취약 합니다. 공격자는 예기치 않은 형식을 포함 하도록 serialize 된 데이터를 수정 하 여 악의적인 부작용으로 개체를 주입할 수 있습니다.|
+|[CA2328: JsonSerializerSettings이 secure @ no__t-0 인지 확인 합니다.|안전 하지 않은 데이터는 deserialize 할 때 취약 합니다. 공격자는 예기치 않은 형식을 포함 하도록 serialize 된 데이터를 수정 하 여 악의적인 부작용으로 개체를 주입할 수 있습니다.|
+|[CA2329: 안전 하지 않은 구성을 사용 하 여 JsonSerializer로 deserialize 안 함 @ no__t-0|안전 하지 않은 데이터는 deserialize 할 때 취약 합니다. 공격자는 예기치 않은 형식을 포함 하도록 serialize 된 데이터를 수정 하 여 악의적인 부작용으로 개체를 주입할 수 있습니다.|
+|[CA2330: @ No__t를 deserialize 할 때 JsonSerializer에 보안 구성이 있는지 확인 합니다.|안전 하지 않은 데이터는 deserialize 할 때 취약 합니다. 공격자는 예기치 않은 형식을 포함 하도록 serialize 된 데이터를 수정 하 여 악의적인 부작용으로 개체를 주입할 수 있습니다.|
+|[CA3001: SQL 삽입 취약성에 대 한 코드 검토 @ no__t-0|신뢰할 수 없는 입력 및 SQL 명령으로 작업 하는 경우 SQL 삽입 공격에 유의 해야 합니다. SQL 삽입 공격은 악의적인 SQL 명령을 실행 하 여 응용 프로그램의 보안 및 무결성을 손상 시킬 수 있습니다.|
+|[CA3002: XSS 취약점에 대 한 코드 검토 @ no__t-0|웹 요청에서 신뢰할 수 없는 입력으로 작업할 때는 XSS (사이트 간 스크립팅) 공격에 주의 해야 합니다. XSS 공격은 신뢰할 수 없는 입력을 원시 HTML 출력에 삽입 하 여 공격자가 악의적인 스크립트를 실행 하거나 웹 페이지의 콘텐츠를 악의적으로 수정할 수 있도록 합니다.|
+|[CA3003: 파일 경로 삽입 취약성에 대 한 코드 검토 @ no__t-0|웹 요청에서 신뢰할 수 없는 입력으로 작업 하는 경우 파일에 대 한 경로를 지정 하는 경우 사용자가 제어 하는 입력을 사용할 수 있습니다.|
+|[CA3004: 정보 공개 취약성에 대 한 코드 검토 @ no__t-0|예외 정보를 공개 하면 공격자가 응용 프로그램의 내부 정보를 파악할 수 있으므로 공격자가 다른 취약점을 악용할 수 있습니다.|
+|[CA3006: 프로세스 명령 삽입 취약성에 대 한 코드 검토 @ no__t-0|신뢰할 수 없는 입력으로 작업 하는 경우 명령 삽입 공격에 유의 해야 합니다. 명령 삽입 공격은 서버와의 보안 및 무결성을 손상 시키는 기본 운영 체제에서 악성 명령을 실행할 수 있습니다.|
+|[CA3007: Open redirect 취약성에 대 한 코드 검토 @ no__t-0|신뢰할 수 없는 입력으로 작업 하는 경우 개방형 리디렉션 취약성에 유의 해야 합니다. 공격자는 오픈 리디렉션 취약성을 악용 하 여 합법적인 URL의 모양을 제공 하는 데 웹 사이트를 사용할 수 있지만, 의심 되는 방문자를 피싱 또는 기타 악성 웹 페이지로 리디렉션할 수 있습니다.|
+|[CA3008: XPath 삽입 취약점에 대 한 코드 검토 @ no__t-0|신뢰할 수 없는 입력으로 작업할 때는 XPath 삽입 공격에 유의 해야 합니다. 신뢰할 수 없는 입력을 사용 하 여 XPath 쿼리를 생성 하면 공격자가 쿼리를 악의적으로 조작 하 여 의도 하지 않은 결과를 반환 하 고 쿼리 된 XML의 콘텐츠를 공개할 수 있습니다.|
+|[CA3009: XML 삽입 취약점에 대 한 코드 검토 @ no__t-0|신뢰할 수 없는 입력으로 작업 하는 경우 XML 삽입 공격에 유의 해야 합니다.|
+|[CA3010: XAML 삽입 취약점에 대 한 코드 검토 @ no__t-0|신뢰할 수 없는 입력으로 작업 하는 경우 XAML 삽입 공격에 유의 해야 합니다. XAML은 개체 인스턴스화 및 실행을 직접적으로 나타내는 태그 언어입니다. 즉, XAML로 생성 된 요소는 시스템 리소스 (예: 네트워크 액세스 및 파일 시스템 IO)와 상호 작용할 수 있습니다.|
+|[CA3011: DLL 삽입 취약점에 대 한 코드 검토 @ no__t-0|신뢰할 수 없는 입력으로 작업할 때는 신뢰할 수 없는 코드를 로드 하는 것에 유의 해야 합니다. 웹 응용 프로그램이 신뢰할 수 없는 코드를 로드 하는 경우 공격자가 프로세스에 악성 Dll을 삽입 하 고 악성 코드를 실행할 수 있습니다.|
+|[CA3012: Regex 삽입 취약성에 대 한 코드 검토 @ no__t-0|신뢰할 수 없는 입력으로 작업할 때는 regex 삽입 공격에 유의 해야 합니다. 공격자는 regex 주입을 사용 하 여 정규식을 악의적으로 수정 하거나 regex가 의도 하지 않은 결과와 일치 하도록 하거나 regex가 과도 한 CPU를 사용 하 여 서비스 거부 공격을 내릴 수 있습니다.|
+|[CA3061: URL @ no__t에서 스키마를 추가 하지 않습니다.-0|위험한 외부 참조를 유발할 수 있으므로 Add 메서드의 unsafe 오버 로드를 사용 하지 마세요.|
 |[CA3075: 안전 하지 않은 DTD 처리 @ no__t-0|안전하지 않은 DTDProcessing 인스턴스를 사용하거나 외부 엔터티 소스를 참조하면 파서는 신뢰할 수 없는 입력을 허용하고 공격자에게 중요 한 정보를 공개할 수 있습니다.|
 |[CA3076: 안전 하지 않은 XSLT 스크립트 실행 @ no__t-0|.NET 애플리케이션에서 비보안 방식으로 XSLT(Extensible Stylesheets Language Transformations)를 실행하는 경우 프로세서는 공격자에게 중요한 정보를 노출하여 서비스 거부 및 사이트 간 공격을 유발할 수 있는 신뢰할 수 없는 URI 참조를 확인할 수 있습니다.|
 |[CA3077: API 디자인, XML 문서 및 XML 텍스트 판독기의 안전 하지 않은 처리 @ no__t-0|XMLDocument 및 XMLTextReader에서 파생된 API를 디자인할 경우 DtdProcessing에 주의해야 합니다. 외부 엔터티 소스를 참조하거나 확인할 때 안전하지 않은 DTDProcessing 인스턴스를 사용하거나 XML에서 안전하지 않은 값을 설정하면 정보가 공개될 수 있습니다.|
 |[CA3147: 동사 처리기를 ValidateAntiForgeryToken @ no__t로 표시-0|ASP.NET MVC 컨트롤러를 설계할 때 사이트 간 요청 위조 공격을 염두에 둘 수 있습니다. 교차 사이트 요청 위조 공격은 인증 된 사용자의 악성 요청을 ASP.NET MVC 컨트롤러로 보낼 수 있습니다.|
+|[CA5122: P/Invoke 선언은 안전에 중요한 선언이 아니어야 합니다.](../code-quality/ca5122.md)|메서드는 보안에 중요한 작업을 수행할 때 SecuritySafeCritical로 표시되지만, 투명 코드에서도 안전하게 사용할 수 있습니다. 투명 코드는 P/Invoke를 통해 절대 네이티브 코드를 직접 호출할 수 없습니다. 따라서 P/Invoke를 SecuritySafeCritical로 표시할 경우 투명 코드가 P/Invoke를 호출할 수 없으며, 보안 분석에서 잘못 해석하는 원인이 됩니다.|
 |[CA5361: 강력한 crypto @ no__t의 SChannel 사용을 사용 하지 않도록 설정 하지 않음-0|@No__t-0을 `true`로 설정 하면 보내는 TLS (전송 계층 보안) 연결에 사용 되는 암호화가 weakens. 약한 암호화는 응용 프로그램과 서버 간 통신의 기밀성을 손상 시켜 공격자가 중요 한 데이터를 보다 쉽게 도청 수 있도록 합니다.|
 |[CA5363: 요청 유효성 검사를 사용 하지 않도록 설정 합니다. @ no__t-0|요청 유효성 검사는 HTTP 요청을 검사 하 고 사이트 간 스크립팅을 포함 하 여 삽입 공격으로 이어질 수 있는 잠재적으로 위험한 콘텐츠가 포함 되어 있는지 여부를 확인 하는 ASP.NET의 기능입니다.|
 |[CA5364: 사용 되지 않는 보안 프로토콜을 사용 하지 않음 @ no__t-0|TLS (전송 계층 보안)는 일반적으로 http (하이퍼텍스트 전송 프로토콜 보안)를 사용 하는 컴퓨터 간의 통신을 보호 합니다. 이전 프로토콜 버전의 TLS는 TLS 1.2 및 TLS 1.3 보다 안전 하지 않으며 새로운 취약성이 있을 가능성이 높습니다. 위험을 최소화 하기 위해 이전 프로토콜 버전을 사용 하지 않습니다.|

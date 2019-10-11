@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f8d971792fb55789fb6dcd7e0d90829ac723ba6
-ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
+ms.openlocfilehash: 21ce539296f02599a1f8afa0344413fb556eea45
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71817511"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018770"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Visual Studio에서 디버깅 작업 찾기
 
@@ -34,7 +34,10 @@ ms.locfileid: "71817511"
 
 ### <a name="pause-code-only-when-a-specific-objects-property-or-value-changes"></a>특정 개체의 속성이 나 값이 변경 되는 경우에만 코드를 일시 중지 합니다.
 
-의 C++경우 [데이터 중단점](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus)을 설정 합니다. .NET Core 3을 사용 하는 앱의 경우 [데이터 중단점](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed)도 설정할 수 있습니다.
+의 C++경우 [데이터 중단점](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus)을 설정 합니다. 
+::: moniker range=">= vs-2019"
+.NET Core 3을 사용 하는 앱의 경우 [데이터 중단점](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed)도 설정할 수 있습니다.
+::: moniker-end
 
 그렇지 않은 경우 C# 에 F# 만 [조건부 중단점을 사용 하 여 개체 ID를 추적할](using-breakpoints.md#using-object-ids-in-breakpoint-conditions-c-and-f)수 있습니다.
 

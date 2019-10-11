@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c9670182432b1c6bc1e763e014b04b193c399330
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 1d3a86d9ef5823b5935ad99facd6a82bf3af9789
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461216"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018931"
 ---
 # <a name="how-to-generate-unit-tests-by-using-intellitest"></a>방법: IntelliTest를 사용하여 단위 테스트 생성
 
@@ -142,10 +142,7 @@ IntelliTest를 실행하면 오류가 발생하는 테스트를 쉽게 확인하
 ### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>Q: IntelliTest와 함께 다른 단위 테스트 프레임워크를 사용할 수 있나요?
 
 **A:** 예, 다음 단계에 따라 [다른 프레임워크를 찾아서 설치](../test/install-third-party-unit-test-frameworks.md)합니다.
-테스트 프레임워크 확장은 Visual Studio Marketplace에서도 사용할 수 있습니다.
-
-* [테스트 생성기에 대한 NUnit 확장](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371)
-* [테스트 생성기에 대한 xUnit.net 확장](https://marketplace.visualstudio.com/items?itemName=BradWilson.xUnitnetTestExtensions)
+테스트 프레임워크 확장은 Visual Studio Marketplace에서도 사용할 수 있습니다(예: [NUnit Test Generator](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371)).
 
 Visual Studio를 다시 시작하고 솔루션을 다시 연 후 클래스 또는 메서드를 마우스 오른쪽 단추로 클릭하고 **IntelliTest 만들기**를 선택합니다. 여기서 설치된 프레임워크를 선택합니다.
 

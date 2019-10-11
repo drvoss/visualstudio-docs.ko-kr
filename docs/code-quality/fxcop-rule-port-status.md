@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 07a5130edd534008b4343ab439bf20bf63bc3cde
-ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
+ms.openlocfilehash: 04a4738181c579617711150da4eb99e08aeb039c
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71062408"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018428"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 규칙 포트 상태
 
@@ -67,10 +67,10 @@ Roslyn-분석기 리포지토리의 자동 [생성 된 설명서 페이지](http
 [CA1063](ca1063-implement-idisposable-correctly.md) | IDisposable을 올바르게 구현 하십시오.
 [CA1064](ca1064-exceptions-should-be-public.md) | 예외는 public이어야 합니다.
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | 예기치 않은 위치에서 예외를 발생시키지 마십시오.
-CA1066 | 형식은 {0} Equals를 재정의\<하기 때문에 IEquatable T >를 구현 해야 합니다.
-CA1067 | IEquatable\<T를 구현할 때 개체 Equals (개체)를 재정의 >
-[CA1068](ca1068.md) | CancellationToken 매개 변수는 마지막에와 야 합니다.
-CA1200 | 접두사를 사용 하 여 cref 태그 사용 방지
+CA1066 | @No__t-0은 Equals를 재정의 하기 때문에 IEquatable @ no__t-1T >를 구현 해야 합니다.
+CA1067 | IEquatable @ no__t-0T t를 구현할 때 개체 Equals (개체)를 재정의 합니다.
+[CA1068](ca1068.md) | CancellationToken 매개 변수는 마지막에 위치해야 합니다.
+CA1200 | 접두사를 사용하여 cref 태그 사용 방지
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | 리터럴을 지역화된 매개 변수로 전달하지 마세요.
 [CA1304](ca1304-specify-cultureinfo.md) | CultureInfo를 지정하세요.
 [CA1305](ca1305-specify-iformatprovider.md) | IFormatProvider를 지정하세요.
@@ -149,28 +149,28 @@ CA2010 | 항상 PreserveSigAttribute로 표시 된 메서드에서 반환 된 �
 [CA2242](ca2242-test-for-nan-correctly.md) | NaN에 대해 정확하게 테스트하십시오.
 [CA2243](ca2243-attribute-string-literals-should-parse-correctly.md) | 특성 문자열 리터럴이 올바르게 구문 분석되어야 합니다.
 CA2244 | 인덱싱된 요소 초기화를 복제 하지 마십시오.
-[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md) | 안전하지 않은 역직렬 변환기 BinaryFormatter를 사용하지 마세요.
-[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md) | 먼저 BinaryFormatter.Binder를 설정하지 않고 BinaryFormatter.Deserialize를 호출하지 마세요.
-[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md) | BinaryFormatter.Deserialize를 호출하기 전에 BinaryFormatter.Binder가 설정되었는지 확인합니다.
-[CA2305](ca2305-do-not-use-insecure-deserializer-losformatter.md) | 안전하지 않은 역직렬 변환기 LosFormatter를 사용하지 마세요.
-[CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md) | 안전하지 않은 역직렬 변환기 NetDataContractSerializer를 사용하지 마세요.
-[CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md) | 먼저 NetDataContractSerializer.Binder를 설정하지 않고 deserialize하지 마세요.
-[CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md) | deserialize하기 전에 NetDataContractSerializer.Binder를 설정해야 합니다.
-[CA2315](ca2315-do-not-use-insecure-deserializer-objectstateformatter.md) | 안전하지 않은 역직렬 변환기 ObjectStateFormatter를 사용하지 마세요.
+[CA2300](ca2300.md) | 안전하지 않은 역직렬 변환기 BinaryFormatter를 사용하지 마세요.
+[CA2301](ca2301.md) | 먼저 BinaryFormatter.Binder를 설정하지 않고 BinaryFormatter.Deserialize를 호출하지 마세요.
+[CA2302](ca2302.md) | BinaryFormatter.Deserialize를 호출하기 전에 BinaryFormatter.Binder가 설정되었는지 확인합니다.
+[CA2305](ca2305.md) | 안전하지 않은 역직렬 변환기 LosFormatter를 사용하지 마세요.
+[CA2310](ca2310.md) | 안전하지 않은 역직렬 변환기 NetDataContractSerializer를 사용하지 마세요.
+[CA2311](ca2311.md) | 먼저 NetDataContractSerializer.Binder를 설정하지 않고 deserialize하지 마세요.
+[CA2312](ca2312.md) | deserialize하기 전에 NetDataContractSerializer.Binder를 설정해야 합니다.
+[CA2315](ca2315.md) | 안전하지 않은 역직렬 변환기 ObjectStateFormatter를 사용하지 마세요.
 [CA2321](ca2321.md) | SimpleTypeResolver를 사용하여 JavaScriptSerializer를 통해 deserialize하지 마세요.
 [CA2322](ca2322.md) | JavaScriptSerializer가 deserialize하기 전에 SimpleTypeResolver로 초기화되지 않는지 확인하세요.
-[CA3001](ca3001-review-code-for-sql-injection-vulnerabilities.md) | 코드에서 SQL 주입 취약점에 대해 검토합니다.
-[CA3002](ca3002-review-code-for-xss-vulnerabilities.md) | 코드에서 XSS 취약점에 대해 검토합니다.
-[CA3003](ca3003-review-code-for-file-path-injection-vulnerabilities.md) | 코드에서 파일 경로 삽입 취약성에 대해 검토합니다.
-[CA3004](ca3004-review-code-for-information-disclosure-vulnerabilities.md) | 코드에서 정보 공개 취약성에 대해 검토합니다.
-[CA3005](ca3005-review-code-for-ldap-injection-vulnerabilities.md) | 코드에서 LDAP 주입 취약점에 대해 검토합니다.
-[CA3006](ca3006-review-code-for-process-command-injection-vulnerabilities.md) | 코드에서 프로세스 명령 주입 취약점에 대해 검토합니다.
-[CA3007](ca3007-review-code-for-open-redirect-vulnerabilities.md) | 코드에서 오픈 리디렉션 취약점에 대해 검토합니다.
-[CA3008](ca3008-review-code-for-xpath-injection-vulnerabilities.md) | 코드에서 XPath 삽입 취약성에 대해 검토합니다.
-[CA3009](ca3009-review-code-for-xml-injection-vulnerabilities.md) | 코드에서 XML 삽입 취약성에 대해 검토합니다.
-[CA3010](ca3010-review-code-for-xaml-injection-vulnerabilities.md) | 코드에서 XAML 삽입 취약성에 대해 검토합니다.
-[CA3011](ca3011-review-code-for-dll-injection-vulnerabilities.md) | 코드에서 DLL 삽입 취약성에 대해 검토합니다.
-[CA3012](ca3012-review-code-for-regex-injection-vulnerabilities.md) | 코드에서 regex 삽입 취약성에 대해 검토합니다.
+[CA3001](ca3001.md) | 코드에서 SQL 주입 취약점에 대해 검토합니다.
+[CA3002](ca3002.md) | 코드에서 XSS 취약점에 대해 검토합니다.
+[CA3003](ca3003.md) | 코드에서 파일 경로 삽입 취약성에 대해 검토합니다.
+[CA3004](ca3004.md) | 코드에서 정보 공개 취약성에 대해 검토합니다.
+[CA3005](ca3005.md) | 코드에서 LDAP 주입 취약점에 대해 검토합니다.
+[CA3006](ca3006.md) | 코드에서 프로세스 명령 주입 취약점에 대해 검토합니다.
+[CA3007](ca3007.md) | 코드에서 오픈 리디렉션 취약점에 대해 검토합니다.
+[CA3008](ca3008.md) | 코드에서 XPath 삽입 취약성에 대해 검토합니다.
+[CA3009](ca3009.md) | 코드에서 XML 삽입 취약성에 대해 검토합니다.
+[CA3010](ca3010.md) | 코드에서 XAML 삽입 취약성에 대해 검토합니다.
+[CA3011](ca3011.md) | 코드에서 DLL 삽입 취약성에 대해 검토합니다.
+[CA3012](ca3012.md) | 코드에서 regex 삽입 취약성에 대해 검토합니다.
 CA3061 | URL로 스키마를 추가 하지 않습니다.
 [CA3075](ca3075-insecure-dtd-processing.md) | XML의 안전하지 않은 DTD 처리
 [CA3076](ca3076-insecure-xslt-script-execution.md) | 안전 하지 않은 XSLT 스크립트 처리
@@ -344,6 +344,6 @@ CA9999 | 분석기 버전이 일치 하지 않습니다.
 - [CA2233](ca2233-operations-should-not-overflow.md)
 - [CA5122](ca5122-p-invoke-declarations-should-not-be-safe-critical.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [FxCopAnalyzers 규칙](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)

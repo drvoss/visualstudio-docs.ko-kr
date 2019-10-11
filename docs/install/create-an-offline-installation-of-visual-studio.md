@@ -1,7 +1,7 @@
 ---
 title: 오프라인 설치 만들기
 description: 불안정한 인터넷 연결 또는 낮은 대역폭이 있는 경우 Visual Studio를 오프라인으로 설치하는 방법에 알아봅니다.
-ms.date: 07/24/2019
+ms.date: 10/07/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,18 +16,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1c210498b88ab1a4fd149870fc3528ddc869ecd6
-ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
+ms.openlocfilehash: 28351407e80c723c0b60640b7e56177c85c2a476
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71322564"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018838"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Visual Studio의 오프라인 설치 만들기
 
 ::: moniker range="vs-2017"
 
-Visual Studio 2017은 다양한 네트워크 및 컴퓨터 구성에서 제대로 작동하도록 설계되었습니다. 가능한 한 [Visual Studio 웹 설치 관리자](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)를 사용하는 것이 좋습니다. &mdash;이 파일은 작은 파일이며 최신 수정 사항 및 기능을 최신 상태로 유지할 수 있습니다&mdash;.
+Visual Studio 2017은 다양한 네트워크 및 컴퓨터 구성에서 제대로 작동하도록 설계되었습니다. 가능한 한 [Visual Studio 웹 설치 관리자](https://visualstudio.microsoft.com/vs/older-downloads)를 사용하는 것이 좋습니다. &mdash;이 파일은 작은 파일이며 최신 수정 사항 및 기능을 최신 상태로 유지할 수 있습니다&mdash;.
 
 ::: moniker-end
 
@@ -75,20 +75,24 @@ Visual Studio를 다운로드한 컴퓨터에 단일 설치로 다운로드할 �
 
 이 단계를 완료하려면 인터넷 연결이 있어야 합니다.
 
-먼저 선택한 Visual Studio 버전에 대한 Visual Studio 부트스트래퍼를 다운로드합니다. 설치 파일&mdash;또는 부트스트래퍼&mdash;는 다음 중 하나와 일치하거나 비슷합니다.
-
 ::: moniker range="vs-2017"
 
-| 버전                    | 파일                                                                    |
-|----------------------------|-------------------------------------------------------------------------|
-| Visual Studio 커뮤니티    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)       |
-| Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017) |
-| Visual Studio Enterprise   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)     |
-| Visual Studio Build Tools   | [vs_buildtools.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)     |
+Visual Studio 2017에 대한 부트스트래퍼를 가져오려면 [Visual Studio 이전 버전](https://visualstudio.microsoft.com/vs/older-downloads/) 다운로드 페이지에서 방법에 관한 세부 정보를 참조하세요.
+
+설치 실행 파일&mdash;(또는 더 구체적으로 부트스트래퍼 파일)&mdash;은 다음 중 하나와 일치합니다.
+
+| 버전 | 파일 이름 |
+|-------------|-----------------------|
+|Visual Studio 커뮤니티 | vs_community.exe |
+|Visual Studio Professional | vs_professional.exe |
+|Visual Studio Enterprise | vs_enterprise.exe |
+|Visual Studio Build Tools   | vs_buildtools.exe |
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
+
+먼저 선택한 Visual Studio 버전에 대한 Visual Studio 부트스트래퍼를 다운로드합니다. 설치 파일&mdash;또는 부트스트래퍼&mdash;는 다음 중 하나와 일치하거나 비슷합니다.
 
 | 버전                    | 파일                                                                    |
 |----------------------------|-------------------------------------------------------------------------|

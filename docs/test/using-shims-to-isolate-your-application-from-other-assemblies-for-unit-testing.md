@@ -4,23 +4,24 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- multiple
 author: gewarren
-ms.openlocfilehash: f0274ecbbe89d35c1bc12651dd234632c973e1a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CSharp
+- VB
+ms.openlocfilehash: 90a9a0abb43f8185219cb9ca8e4b41d2ed113838
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808121"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018921"
 ---
-# <a name="use-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>shim을 사용하여 단위 테스트를 위한 다른 어셈블리에서 애플리케이션 격리
+# <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>shim을 사용하여 유닛 테스트를 위한 앱 격리
 
-**shim 형식**은 Microsoft Fakes 프레임워크가 환경에서 테스트 대상 구성 요소를 쉽게 격리시킬 수 있도록 하기 위해 사용하는 두 기술 중 하나입니다. shim은 특정 메서드 호출을 테스트의 일부로 작성하는 코드로 우회합니다. 대부분의 메서드는 외부 조건에 따라 다른 결과를 반환하지만 shim은 테스트에 의해 제어되며 모든 호출에서 일관된 결과를 반환할 수 있습니다. 이렇게 하면 테스트를 훨씬 쉽게 작성할 수 있습니다.
+**shim 형식**은 Microsoft Fakes 프레임워크가 환경에서 테스트 대상 구성 요소를 격리할 수 있도록 하기 위해 사용하는 두 기술 중 하나입니다. shim은 특정 메서드 호출을 테스트의 일부로 작성하는 코드로 우회합니다. 대부분의 메서드는 외부 조건에 따라 다른 결과를 반환하지만 shim은 테스트에 의해 제어되며 모든 호출에서 일관된 결과를 반환할 수 있습니다. 이렇게 하면 테스트를 더 쉽게 작성할 수 있습니다.
 
-shim을 사용하여 솔루션의 일부가 아닌 코드를 어셈블리에서 격리할 수 있습니다. 솔루션의 구성 요소를 서로 격리하려면 스텁을 사용하는 것이 좋습니다.
+*shim*을 사용하여 솔루션의 일부가 아닌 코드를 어셈블리에서 격리할 수 있습니다. 솔루션의 구성 요소를 서로 격리하려면 *스텁*을 사용하세요.
 
-개요 및 빠른 시작 가이드를 보려면 [Microsoft Fakes를 사용하여 테스트 대상 코드 격리](../test/isolating-code-under-test-with-microsoft-fakes.md)를 참조하세요.
+개요 및 “빠른 시작” 가이드를 보려면 [Microsoft Fakes를 사용하여 테스트 대상 코드 격리](../test/isolating-code-under-test-with-microsoft-fakes.md)를 참조하세요.
 
 **요구 사항**
 
@@ -30,9 +31,9 @@ shim을 사용하여 솔루션의 일부가 아닌 코드를 어셈블리에서 
 > [!NOTE]
 > .NET Standard 프로젝트는 지원되지 않습니다.
 
-## <a name="example-the-y2k-bug"></a>예제: Y2K 버그
+## <a name="example-the-y2k-bug"></a>예: Y2K 버그
 
-2000년 1월 1일에 예외를 throw하는 메서드를 살펴보겠습니다.
+2000년 1월 1일에 예외를 throw하는 메서드를 살펴봅니다.
 
 ```csharp
 // code under test
@@ -63,19 +64,19 @@ using (ShimsContext.Create()) {
 
 ## <a name="how-to-use-shims"></a>shim 사용 방법
 
-### <a name="AddFakes"></a> Fakes 어셈블리 추가
+첫 번째로 Fakes 어셈블리를 추가합니다.
 
-1. **솔루션 탐색기**에서 단위 테스트 프로젝트의 **참조**를 확장합니다.
+1. **솔루션 탐색기**에서 단위 테스트 프로젝트의 **참조** 노드를 확장합니다.
 
-    - Visual Basic에서 작업하는 경우 **참조** 노드를 보기 위해 **솔루션 탐색기** 도구 모음에서 **모든 파일 표시**를 선택합니다.
+   - Visual Basic에서 작업하는 경우 **참조** 노드를 보기 위해 **솔루션 탐색기** 도구 모음에서 **모든 파일 표시**를 선택합니다.
 
 2. shim을 만들 클래스 정의가 포함된 어셈블리를 선택합니다. 예를 들어 **날짜/시간**을 shim하려면 **System.dll**을 선택합니다.
 
 3. 바로 가기 메뉴에서 **Fakes 어셈블리 추가**를 선택합니다.
 
-### <a name="ShimsContext"></a> ShimsContext 사용
+### <a name="use-shimscontext"></a>ShimsContext 사용
 
-단위 테스트 프레임워크에서 shim 형식을 사용하는 경우 테스트 코드를 `ShimsContext`에 래핑하여 shim의 수명을 제어해야 합니다. 이렇게 하지 않으면 AppDomain이 종료될 때까지 shim이 지속됩니다. `ShimsContext`를 만드는 가장 쉬운 방법은 다음 코드와 같이 정적 `Create()` 메서드를 사용하는 것입니다.
+단위 테스트 프레임워크에서 shim 형식을 사용하는 경우 테스트 코드를 `ShimsContext`에 래핑하여 shim의 수명을 제어합니다. 그렇게 하지 않으면 AppDomain이 종료될 때까지 shim이 지속됩니다. `ShimsContext`를 만드는 가장 쉬운 방법은 다음 코드와 같이 정적 `Create()` 메서드를 사용하는 것입니다.
 
 ```csharp
 //unit test code
@@ -87,9 +88,9 @@ public void Y2kCheckerTest() {
 }
 ```
 
-각 shim 컨텍스트를 올바르게 삭제하는 것이 중요합니다. 경험상, 항상 `using` 문 내에서 `ShimsContext.Create`를 호출하여 등록된 shim이 제대로 지워지도록 합니다. 예를 들어 항상 2000년 1월 1일을 반환하는 대리자로 `DateTime.Now` 메서드를 대체하는 테스트 메서드에 대해 shim을 등록할 수 있습니다. 테스트 메서드에서 등록된 shim을 지우지 않으면 테스트 실행의 나머지 부분에서 항상 2000년 1월 1일을 DateTime.Now 값으로 반환합니다. 이 결과는 놀라움과 혼동을 줄 수 있습니다.
+각 shim 컨텍스트를 올바르게 삭제하는 것이 중요합니다. 경험상, `using` 문 내에서 `ShimsContext.Create`를 호출하여 등록된 shim이 제대로 지워지도록 합니다. 예를 들어 항상 2000년 1월 1일을 반환하는 대리자로 `DateTime.Now` 메서드를 대체하는 테스트 메서드에 대해 shim을 등록할 수 있습니다. 테스트 메서드에서 등록된 shim을 지우지 않으면 테스트 실행의 나머지 부분에서 항상 2000년 1월 1일을 `DateTime.Now` 값으로 반환합니다. 이 결과는 놀라움과 혼동을 줄 수 있습니다.
 
-### <a name="WriteShims"></a> shim을 사용하여 테스트 작성
+### <a name="write-a-test-with-shims"></a>shim을 사용하여 테스트 작성
 
 테스트 코드에서 모조할 메서드에 대해 *우회*를 삽입합니다. 예:
 
@@ -158,11 +159,11 @@ shim은 테스트 대상 애플리케이션의 코드에 *우회*를 삽입하�
 
 Fakes 네임스페이스가 없다는 빌드 오류가 표시될 수도 있습니다. 다른 컴파일 오류가 있을 때 이 오류가 나타나는 경우도 있습니다. 다른 오류를 수정하면 오류가 사라집니다.
 
-## <a name="BKMK_Shim_basics"></a> 다양한 메서드에 대한 shim
+## <a name="shims-for-different-kinds-of-methods"></a>다양한 메서드에 대한 shim
 
 shim 형식을 사용하여 정적 메서드 또는 비가상 메서드를 포함하는 .NET 메서드를 사용자 고유의 대리자로 대체할 수 있습니다.
 
-### <a name="BKMK_Static_methods"></a> 정적 메서드
+### <a name="static-methods"></a>정적 메서드
 
 정적 메서드에 shim을 연결하는 속성은 shim 형식에 배치됩니다. 각 속성에는 대상 메서드에 대리자를 연결하는 데 사용할 수 있는 setter만 있습니다. 예를 들어 정적 메서드 `MyMethod`를 포함하는 `MyClass` 클래스가 있다고 가정합니다.
 
@@ -179,10 +180,10 @@ public static class MyClass {
 
 ```csharp
 // unit test code
-ShimMyClass.MyMethod = () =>5;
+ShimMyClass.MyMethod = () => 5;
 ```
 
-### <a name="BKMK_Instance_methods__for_all_instances_"></a> 모든 인스턴스에 대한 인스턴스 메서드
+### <a name="instance-methods-for-all-instances"></a>모든 인스턴스에 대한 인스턴스 메서드
 
 정적 메서드와 마찬가지로, 모든 인스턴스에 대해 인스턴스 메서드를 shim할 수 있습니다. 이러한 shim을 연결할 속성은 혼동을 피하기 위해 AllInstances라는 중첩된 형식에 배치됩니다. 예를 들어 인스턴스 메서드 `MyMethod`를 포함하는 `MyClass` 클래스가 있다고 가정합니다.
 
@@ -219,7 +220,7 @@ public class ShimMyClass : ShimBase<MyClass> {
 
 이 경우 Fakes는 런타임 인스턴스를 대리자의 첫 번째 인수로 전달합니다.
 
-### <a name="BKMK_Instance_methods__for_one_instance_"></a> 단일 런타임 인스턴스에 대한 인스턴스 메서드
+### <a name="instance-methods-for-one-runtime-instance"></a>단일 런타임 인스턴스에 대한 인스턴스 메서드
 
 호출 수신자에 따라 다른 대리자가 인스턴스 메서드를 shim할 수도 있습니다. 이렇게 하면 동일한 인스턴스 메서드가 형식 인스턴스별로 다른 동작을 수행할 수 있습니다. 이러한 shim을 설정하는 속성은 shim 형식 자체의 인스턴스 메서드입니다. 인스턴스화된 각 shim 형식은 shim된 형식의 원시 인스턴스에도 연결됩니다.
 
@@ -276,11 +277,10 @@ shim 형식에는 shim된 형식으로의 암시적 변환도 있으므로 일�
 ```csharp
 // unit test code
 var shim = new ShimMyClass();
-MyClass instance = shim; // implicit cast retrieves the runtime
-                         // instance
+MyClass instance = shim; // implicit cast retrieves the runtime instance
 ```
 
-### <a name="BKMK_Constructors"></a> 생성자
+### <a name="constructors"></a>생성자
 
 이후 개체에 shim 형식을 연결하기 위해 생성자를 shim할 수도 있습니다. 각 생성자는 shim 형식에서 정적 메서드 Constructor로 노출됩니다. 예를 들어 정수를 사용하는 생성자를 포함하는 `MyClass` 클래스가 있다고 가정합니다.
 
@@ -331,7 +331,7 @@ public class ShimMyClass : ShimBase<MyClass>
 }
 ```
 
-### <a name="BKMK_Base_members"></a> 기본 멤버
+### <a name="base-members"></a>기본 멤버
 
 기본 형식에 대한 shim을 만들고 기본 shim 클래스의 생성자에 자식 인스턴스를 매개 변수로 전달하여 기본 멤버의 shim 속성에 액세스할 수 있습니다.
 
@@ -374,19 +374,19 @@ public class ShimMyBase : ShimBase<MyBase> {
 }
 ```
 
-### <a name="BKMK_Static_constructors"></a> 정적 생성자
+### <a name="static-constructors"></a>정적 생성자
 
 shim 형식은 형식의 정적 생성자를 shim하는 정적 메서드 `StaticConstructor`를 노출합니다. 정적 생성자는 한 번만 실행되므로 형식의 멤버에 액세스하기 전에 shim이 구성되는지 확인해야 합니다.
 
-### <a name="BKMK_Finalizers"></a> 종료자
+### <a name="finalizers"></a>종료자
 
 종료자는 Fakes에서 지원되지 않습니다.
 
-### <a name="BKMK_Private_methods"></a> 전용 메서드
+### <a name="private-methods"></a>프라이빗 메서드
 
 Fakes 코드 생성기는 서명에 표시되는 형식, 즉 표시되는 매개 변수 형식 및 반환 형식만 있는 전용 메서드에 대해 shim 속성을 만듭니다.
 
-### <a name="BKMK_Binding_interfaces"></a> 바인딩 인터페이스
+### <a name="binding-interfaces"></a>바인딩 인터페이스
 
 shim된 형식이 인터페이스를 구현하는 경우 코드 생성기에서 해당 인터페이스의 모든 멤버를 한 번에 바인딩할 수 있는 메서드를 내보냅니다.
 
@@ -426,7 +426,7 @@ public class ShimMyClass : ShimBase<MyClass> {
 
 동작이 명시적으로 설정되지 않은 경우 정적 `ShimsBehaviors.Current` 속성에서 반환한 인스턴스를 사용합니다. 기본적으로 이 속성은 `NotImplementedException` 예외를 throw하는 동작을 반환합니다.
 
-이 동작은 shim 인스턴스의 `InstanceBehavior` 속성을 설정하여 언제든지 변경할 수 있습니다. 예를 들어 다음 코드 조각은 아무 작업을 하지 않거나 반환 형식의 기본값, 즉 default(T)를 반환하는 동작으로 shim을 변경합니다.
+이 동작은 shim 인스턴스의 `InstanceBehavior` 속성을 설정하여 언제든지 변경할 수 있습니다. 예를 들어 다음 코드 조각은 아무 작업을 하지 않거나 반환 형식의 기본값, 즉 `default(T)`를 반환하는 동작으로 shim을 변경합니다.
 
 ```csharp
 // unit test code
@@ -441,8 +441,7 @@ shim.InstanceBehavior = ShimsBehaviors.DefaultValue;
 // unit test code
 // change default shim for all shim instances
 // where the behavior has not been set
-ShimsBehaviors.Current =
-    ShimsBehaviors.DefaultValue;
+ShimsBehaviors.Current = ShimsBehaviors.DefaultValue;
 ```
 
 ## <a name="detect-environment-accesses"></a>환경 액세스 검색
@@ -457,13 +456,13 @@ ShimMyClass.Behavior = ShimsBehaviors.NotImplemented;
 ShimMyClass.BehaveAsNotImplemented();
 ```
 
-## <a name="BKMK_Concurrency"></a> 동시성
+## <a name="concurrency"></a>동시성
 
-shim 형식은 AppDomain의 모든 스레드에 적용되며 스레드 선호도가 없습니다. 이는 동시성을 지원하는 Test Runner를 사용하려는 경우에 중요한 팩트입니다. shim 형식과 관련된 테스트는 동시에 실행할 수 없습니다. 이 속성은 Fakes 런타임에 의해 적용되지 않습니다.
+shim 형식은 AppDomain의 모든 스레드에 적용되며 스레드 선호도가 없습니다. 동시 실행을 지원하는 테스트 실행을 사용하려는 경우 중요한 사실입니다. shim 형식과 관련된 테스트는 동시에 실행할 수 없습니다. 이 속성은 Fakes 런타임에 의해 적용되지 않습니다.
 
 ## <a name="call-the-original-method-from-the-shim-method"></a>shim 메서드에서 원래 메서드 호출
 
-메서드에 전달된 파일 이름의 유효성을 검사한 후 실제로 파일 시스템에 텍스트를 작성하려 한다고 가정합니다. 이 경우 shim 메서드 중에 원래 메서드를 호출해야 합니다.
+메서드에 전달된 파일 이름의 유효성을 검사한 후 파일 시스템에 텍스트를 작성하려 한다고 가정합니다. 이 경우 shim 메서드 중에 원래 메서드를 호출합니다.
 
 이 문제를 해결하는 첫 번째 방법은 다음 코드와 같이 대리자 및 `ShimsContext.ExecuteWithoutShims()`를 사용하여 원래 메서드 호출을 래핑하는 것입니다.
 
@@ -502,7 +501,23 @@ shim = (fileName, content) => {
 ShimFile.WriteAllTextStringString = shim;
 ```
 
-## <a name="BKMK_Limitations"></a> 제한 사항
+## <a name="systemenvironment"></a>System.Environment
+
+<xref:System.Environment?displayProperty=fullName>를 shim하려면 **Assembly** 요소 뒤에 있는 mscorlib.fakes 파일에 다음 콘텐츠를 추가합니다.
+
+```xml
+<ShimGeneration>
+    <Add FullName="System.Environment"/>
+</ShimGeneration>
+```
+
+솔루션을 다시 빌드한 후 <xref:System.Environment?displayProperty=fullName> 클래스의 메서드 및 속성의 shim이 가능한데, 예를 들면 다음과 같습니다.
+
+```csharp
+System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
+```
+
+## <a name="limitations"></a>제한 사항
 
 .NET 기본 클래스 라이브러리 **mscorlib** 및 **System**의 일부 형식에서는 shim을 사용할 수 없습니다.
 

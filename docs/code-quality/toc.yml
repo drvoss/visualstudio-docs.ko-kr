@@ -532,11 +532,11 @@
                   displayName: portability warnings
                   href: portability-warnings.md
                 - name: 'CA1900: 값 형식 필드는 이식 가능해야 합니다.'
-                  href: ca1900-value-type-fields-should-be-portable.md
+                  href: ca1900.md
                 - name: 'CA1901: P/Invoke 선언은 이식 가능해야 합니다.'
-                  href: ca1901-p-invoke-declarations-should-be-portable.md
+                  href: ca1901.md
                 - name: 'CA1903: 대상 프레임워크의 API만 사용하세요.'
-                  href: ca1903-use-only-api-from-targeted-framework.md
+                  href: ca1903.md
             - name: 안정성 경고
               items:
                 - name: 개요
@@ -847,7 +847,7 @@
       href: quick-start-code-analysis-for-c-cpp.md
     - name: 오류에 대한 C/C++ 코드 분석
       href: walkthrough-analyzing-c-cpp-code-for-defects.md
-    - name: 데모 샘플
+    - name: 샘플 프로젝트
       href: demo-sample.md
     - name: C++ Core Guidelines 검사기 사용
       href: using-the-cpp-core-guidelines-checkers.md
@@ -855,6 +855,8 @@
       href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
     - name: C++ 코드에 대한 규칙 집합
       href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
+    - name: Clang-정리 사용
+      href: clang-tidy.md
     - name: 코드 오류를 줄이기 위한 SAL 주석 사용
       items:
         - name: 개요

@@ -13,14 +13,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b3d61a5bcd530afb951f98f84f1f4e38e36f96d6
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
+ms.openlocfilehash: 4d26c0b464341bee7bce0b46bfdbcc89e0248a81
+ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533303"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163126"
 ---
-# <a name="code-generation-in-a-build-process"></a>빌드 프로세스의 코드 생성
+# <a name="invoke-text-transformation-in-the-build-process"></a>빌드 프로세스에서 텍스트 변환 호출
 
 [텍스트 변환은](../modeling/code-generation-and-t4-text-templates.md) Visual Studio 솔루션의 [빌드 프로세스](/azure/devops/pipelines/index) 의 일부로 호출 될 수 있습니다. 이는 텍스트 변형에 대해 특수화된 빌드 작업입니다. T4 빌드 작업은 디자인 타임 텍스트 템플릿을 실행하고 전처리된 런타임 텍스트 템플릿을 컴파일합니다.
 
@@ -32,30 +32,26 @@ ms.locfileid: "68533303"
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-Visual Studio가 설치 되어 있지 않은 컴퓨터에서 [빌드 서버](/azure/devops/pipelines/agents/agents) 를 실행 하는 경우 개발 컴퓨터에서 빌드 컴퓨터로 다음 파일을 복사 합니다. ' * '의 최신 버전 번호를 대체 합니다.
+Visual Studio가 설치 되지 않은 컴퓨터에서 [빌드 서버](/azure/devops/pipelines/agents/agents) 를 실행 하는 경우 개발 컴퓨터에서 빌드 컴퓨터로 다음 파일을 복사 합니다.
 
-- $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
+- % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VisualStudio\v16.0\TextTemplating
 
-  - Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
-
+  - VisualStudio. 15.0. m d.
   - Microsoft.TextTemplating.Build.Tasks.dll
-
   - Microsoft.TextTemplating.targets
 
-- $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
+- % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
-  - Microsoft.VisualStudio.TextTemplating.*.0.dll
+  - VisualStudio. 15.0 .dll
+  - VisualStudio. 15.0 .dll.
+  - VisualStudio. Vshost.exe. 15.0
 
-  - Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll(여러 파일)
+- % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\Common7\IDE\PublicAssemblies
 
-  - Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
-
-- $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
-
-  - Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
+  - VisualStudio. 15.0 .dll.
   
 > [!TIP]
-> 빌드 서버에서 texttemplating 빌드 대상을 실행 하는 경우 Roslyn 어셈블리가 빌드 실행 파일과 동일한 디렉터리에 있는 Roslyn 디렉터리에 있는지 확인 합니다. 예를 들어 다음과 같습니다.  `MissingMethodException` *msbuild.exe*)를 실행 합니다.
+> 빌드 서버에서 TextTemplating 빌드 대상을 실행할 때 Roslyn 어셈블리가 *Roslyn* 라는 디렉터리에 있는 @no__t 경우 해당 어셈블리는 빌드 실행 파일과 동일한 디렉터리에 있는 디렉터리에 있어야 합니다 (예: *). msbuild.exe*)를 실행 합니다.
 
 ## <a name="edit-the-project-file"></a>프로젝트 파일 편집
 
@@ -75,18 +71,21 @@ Visual Studio가 설치 되어 있지 않은 컴퓨터에서 [빌드 서버](/az
 
 이 코드 뒤에 텍스트 템플릿 가져오기를 삽입합니다.
 
-```xml
-<!-- Optionally make the import portable across VS versions -->
-  <PropertyGroup>
-    <!-- Get the Visual Studio version: -->
-    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">16.0</VisualStudioVersion>
-    <!-- Keep the next element all on one line: -->
-    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-  </PropertyGroup>
+::: moniker range=">=vs-2019"
 
-<!-- This is the important line: -->
-  <Import Project="$(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets" />
+```xml
+<Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets" />
 ```
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+```xml
+<Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />
+```
+
+::: moniker-end
 
 ## <a name="transform-templates-in-a-build"></a>빌드에서 템플릿 변환
 
@@ -165,7 +164,7 @@ Visual Studio가 설치 되어 있지 않은 컴퓨터에서 [빌드 서버](/az
 
 `AfterTransform`에서 파일 목록을 참조할 수 있습니다.
 
-- GeneratedFiles - 프로세스에서 쓴 파일의 목록입니다. 기존 읽기 전용 파일을 덮어쓴 파일의 경우 `%(GeneratedFiles.ReadOnlyFileOverwritten)` 는 true입니다. 이러한 파일은 소스 제어에서 체크 아웃할 수 있습니다.
+- GeneratedFiles - 프로세스에서 쓴 파일의 목록입니다. 기존 읽기 전용 파일을 덮어쓴 파일의 경우 `%(GeneratedFiles.ReadOnlyFileOverwritten)`이 true가 됩니다. 이러한 파일은 소스 제어에서 체크 아웃할 수 있습니다.
 
 - NonGeneratedFiles - 덮어쓰지 않은 읽기 전용 파일의 목록입니다.
 
@@ -185,7 +184,7 @@ MSBuild에서만 이러한 속성을 사용합니다. Visual Studio의 코드 �
 </ItemGroup>
 ```
 
-로 리디렉션할 유용한 폴더는 `$(IntermediateOutputPath)`입니다.
+로 리디렉션하는 데 유용한 폴더는-0 @no__t입니다.
 
 출력 파일 이름을 지정 하는 경우 템플릿의 output 지시어에 지정 된 확장 보다 우선 적용 됩니다.
 
@@ -286,7 +285,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 
 ## <a name="q--a"></a>Q&A
 
-**빌드 서버에서 템플릿을 변환 하려면 어떻게 해야 하나요? 코드를 체크 인하기 전에 이미 Visual Studio에서 템플릿을 변환 했습니다.**
+@no__t-빌드 서버에서 템플릿을 변환 하려면 어떻게 해야 하나요? 코드를 체크 인하기 전에 이미 Visual Studio에서 템플릿을 변환 했습니다. **
 
 포함 된 파일 또는 템플릿에서 읽은 다른 파일을 업데이트 하는 경우 Visual Studio는 파일을 자동으로 변환 하지 않습니다. 빌드의 일부로 템플릿을 변환 하면 모든 것이 최신 상태 인지 확인할 수 있습니다.
 
@@ -298,19 +297,19 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 
 - [디자인 타임 텍스트 템플릿은](../modeling/design-time-code-generation-by-using-t4-text-templates.md) Visual Studio에 의해 변환 됩니다.
 
-- 런타임에 응용 프로그램에서 런타임에 [텍스트 템플릿이](../modeling/run-time-text-generation-with-t4-text-templates.md) 변환 됩니다.
+- 런타임 [텍스트 템플릿은](../modeling/run-time-text-generation-with-t4-text-templates.md) 응용 프로그램에서 런타임에 변환 됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 ::: moniker range="vs-2017"
 
-- T4 MSbuild 템플릿에 대 한 자세한 지침은 *% ProgramFiles (x86)% \ Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets* 에 있습니다.
+- @No__t에서 T4 MSbuild 템플릿에 대 한 유용한 지침이 있습니다.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- T4 MSbuild 템플릿에 대 한 자세한 지침은 *% ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets* 에 있습니다.
+- @No__t에서 T4 MSbuild 템플릿에 대 한 유용한 지침이 있습니다.
 
 ::: moniker-end
 

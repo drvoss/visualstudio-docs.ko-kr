@@ -21,45 +21,45 @@ f1_keywords:
 ms.assetid: b8278a4a-c86e-4845-aa2a-70da21a1dd52
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 35be465064c9524eb0e1339794b6a19b7a595da1
-ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.openlocfilehash: 1cff36760a84821a33dcdb1ee4cc6842cd40aee0
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493630"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72015973"
 ---
 # <a name="annotating-structs-and-classes"></a>구조체 및 클래스에 주석 지정
 
-고정 처럼 작동 하는 주석을 사용 하 여 구조체와 클래스 멤버에 주석을 달 수 있습니다-함수 진입/종료 바깥쪽 구조를 매개 변수나 결과 값을 포함 하는 또는 함수 호출에서 true가 될 것으로 가정 됩니다.
+고정 처럼 동작 하는 주석을 사용 하 여 구조체 및 클래스 멤버에 주석을 추가할 수 있습니다 .이는 바깥쪽 구조체를 매개 변수 또는 결과 값으로 포함 하는 함수 호출 또는 함수 시작/종료에서 true로 간주 됩니다.
 
 ## <a name="struct-and-class-annotations"></a>구조체 및 클래스 주석
 
 - `_Field_range_(low, high)`
 
-     (포함)에서 범위에 필드가 있는지 `low` 에 `high`입니다.  같음 `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` 적절 한 사전 또는 사후 조건을 사용 하 여 주석이 추가 된 개체에 적용 합니다.
+     필드의 범위 (포함)는 `low`에서 `high` 까지입니다.  적절 한 사전 또는 사후 조건을 사용 하 여 주석이 달린 개체에 적용 되는 @no__t와 동일 합니다.
 
 - `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`
 
-     요소 (바이트)으로 지정 된 쓰기 가능한 크기를 지정 된 필드 `size`합니다.
+     @No__t-0으로 지정 된 요소 (또는 바이트)에 쓰기 가능한 크기가 있는 필드입니다.
 
 - `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
 
-     요소 (바이트)으로 지정 된 쓰기 가능한 크기를 지정 된 필드 `size`, 및 `count` 읽을 수 있는 해당 요소 (바이트)입니다.
+     @No__t-0으로 지정 된 요소 (또는 바이트)에 쓰기 가능한 크기가 있는 필드 및 읽을 수 있는 해당 요소 (바이트)의 @no__t입니다.
 
 - `_Field_size_full_(size)`, `_Field_size_full_opt_(size)`, `_Field_size_bytes_full_(size)`, `_Field_size_bytes_full_opt_(size)`
 
-     요소 (바이트)으로 지정 된 읽기 및 쓰기 가능한 크기 지정 된 필드 `size`합니다.
+     @No__t-0으로 지정 된 요소 (또는 바이트)에서 읽고 쓸 수 있는 크기를 모두 포함 하는 필드입니다.
 
 - `_Field_z_`
 
-     필드에는 null로 끝나는 문자열입니다.
+     Null로 끝나는 문자열을 포함 하는 필드입니다.
 
 - `_Struct_size_bytes_(size)`
 
-     구조체 또는 클래스 선언에 적용 됩니다.  가 지정한 바이트 수를 사용 하 여 해당 형식의 유효한 개체를 선언된 된 형식 보다 클 수 있습니다 나타냅니다 `size`합니다.  예를 들어:
+     구조체 또는 클래스 선언에 적용 됩니다.  @No__t-0으로 지정 된 바이트 수를 사용 하 여 해당 형식의 유효한 개체가 선언 된 형식 보다 클 수 있음을 나타냅니다.  예를 들어 다음과 같은 가치를 제공해야 합니다.
 
     ```cpp
 
@@ -71,7 +71,7 @@ ms.locfileid: "67493630"
 
     ```
 
-     버퍼 크기 매개 변수는 바이트 `pM` 형식의 `MyStruct *` 되도록 이동 됩니다.
+     매개 변수의 버퍼 크기 (바이트)는 `MyStruct *` 형식의 `pM`입니다.
 
     ```cpp
     min(pM->nSize, sizeof(MyStruct))
@@ -104,13 +104,13 @@ struct MyBuffer
 };
 ```
 
-이 예제에 대 한 참고 사항:
+이 예에 대 한 참고 사항:
 
-- `_Field_z_`는 `_Null_terminated_`와 같습니다.  `_Field_z_` 이름에 대 한 필드 이름 필드는 null로 끝나는 문자열 임을 지정 합니다.
-- `_Field_range_` 에 대 한 `bufferSize` 지정 변수의 `bufferSize` 1 내에 있어야 하 고 `MaxBufferSize` (모두 포함).
-- 최종 결과 `_Struct_size_bytes_` 고 `_Field_size_` 주석은 해당 합니다. 와 비슷한 레이아웃이 있는 클래스나 구조체에 대 한 `_Field_size_` 참조 및 계산에 해당 하는 보다 적은 수 있기 때문에 보다 쉽게 읽고 유지 관리는 `_Struct_size_bytes_` 주석입니다. `_Field_size_` 변환할 바이트 크기를 필요 하지 않습니다. 바이트 크기가 옵션을 예를 들어, void 포인터 필드에 대해 `_Field_size_bytes_` 사용할 수 있습니다. 둘 다 `_Struct_size_bytes_` 고 `_Field_size_` 존재, 모두 도구에 제공 됩니다. 것은 도구 두 주석은 동의 하는 경우 수행할 작업입니다.
+- `_Field_z_`는 `_Null_terminated_`와 같습니다.  이름 필드에 `_Field_z_`은 이름 필드가 null로 끝나는 문자열 임을 지정 합니다.
+- @no__t에 대 한 `bufferSize`은 `bufferSize`의 값이 1에서 `MaxBufferSize` (둘 다 포함) 임을 지정 합니다.
+- @No__t-0 및 `_Field_size_` 주석의 최종 결과는 동일 합니다. 레이아웃이 비슷한 구조 나 클래스의 경우 `_Field_size_`은 해당 하는 `_Struct_size_bytes_` 주석 보다 더 많은 참조와 계산을 포함 하기 때문에 더 쉽게 읽고 유지 관리할 수 있습니다. `_Field_size_`은 바이트 크기로 변환할 필요가 없습니다. 예를 들어 void 포인터 필드의 경우에는 바이트 크기만 옵션을 사용할 수 있습니다. 예를 들어 `_Field_size_bytes_`을 사용할 수 있습니다. @No__t-0과 `_Field_size_`이 모두 있는 경우 도구에서 둘 다 사용할 수 있습니다. 두 주석이 동의 하지 않는 경우에는이 도구를 통해 수행할 작업을 결정 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
 
 - [C/C++ 코드 오류를 줄이기 위한 SAL 주석 사용](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [SAL 이해](../code-quality/understanding-sal.md)

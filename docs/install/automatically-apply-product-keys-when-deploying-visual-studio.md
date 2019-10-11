@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 85fe84878dabc1270c60be24b6d6f644b284c045
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 4c3e8313e1357095a9732c9304a695dd3b13b465
+ms.sourcegitcommit: 0554b59a2a251661e56824fb9cd6e9b1f326cef1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253831"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71831839"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Visual Studio를 배포할 때 제품 키를 자동으로 적용
 
@@ -89,7 +89,7 @@ Visual Studio의 배포를 자동화하는 데 사용되는 스크립트의 일�
 
 `StorePID.exe`는 제품 키를 성공적으로 적용한 경우 0의 `%ERRORLEVEL%`을 반환합니다. 오류가 발생하는 경우 오류 조건에 따라 다음 코드 중 하나를 반환합니다.
 
-| 오류                     | 코드 |
+| Error                     | 코드 |
 |---------------------------|------|
 | `PID_ACTION_SUCCESS`      | 0    |
 | `PID_ACTION_NOTINSTALLED` | 1    |
@@ -100,7 +100,7 @@ Visual Studio의 배포를 자동화하는 데 사용되는 스크립트의 일�
 | `PID_ACTION_NOUPGRADE`    | 6    |
 
 > [!NOTE]
-> Visual Studio의 가상 인스턴스를 실행하는 경우, 로컬 AppData 폴더와 레지스트리도 가상화해야 합니다. 가상 인스턴스 문제를 해결하려면 *C:\Program Files (x86)\Microsoft Visual Studio\ <version\> \Common7\IDE\DDConfigCA.exe*를 실행합니다.  
+> Visual Studio의 가상 인스턴스를 실행하는 경우, 로컬 AppData 폴더와 레지스트리도 가상화해야 합니다. 가상 인스턴스 문제를 해결하려면 `C:\Program Files (x86)\Microsoft Visual Studio\<version>\Common7\IDE\DDConfigCA.exe`를 실행합니다.  
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

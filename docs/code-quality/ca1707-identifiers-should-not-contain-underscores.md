@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: adfa0ccd63d0433d367b0e7278693608bb83d685
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 5ba9e8dda927edca08565b088cbde90d63443908
+ms.sourcegitcommit: 3e94d9fb6dc56fa8b23fbacd5d11cf8d6e7e18f1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234264"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72252576"
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707: 식별자에는 밑줄을 사용할 수 없습니다.
 
@@ -32,7 +32,7 @@ ms.locfileid: "71234264"
 
 ## <a name="cause"></a>원인
 
-식별자 이름에 밑줄 (\_) 문자가 포함 되어 있습니다.
+식별자 이름에는 밑줄 (\_) 문자가 포함 됩니다.
 
 ## <a name="rule-description"></a>규칙 설명
 
@@ -46,9 +46,9 @@ ms.locfileid: "71234264"
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 
-이 규칙에서는 경고를 표시해야 합니다.
+프로덕션 코드에 대 한 경고를 표시 하지 않습니다. 그러나 테스트 코드에 대해이 경고를 표시 하지 않는 것이 안전 합니다. [심각도](use-roslyn-analyzers.md#rule-severity) 를 **none**으로 설정 하 여이 규칙에서 경고를 표시 하지 않을 수 있습니다. 
 
 ## <a name="related-rules"></a>관련 규칙
 
-- [CA1709: 식별자의 대/소문자를 올바르게 지정 해야 합니다.](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708: 식별자는 대/소문자가 달라 야 합니다.](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1709: 식별자의 대/소문자를 올바르게 지정 해야 합니다. @ no__t-0
+- [CA1708: 식별자는 case @ no__t-0과 달라 야 합니다.

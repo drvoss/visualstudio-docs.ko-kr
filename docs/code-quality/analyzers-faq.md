@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26e48664c40db018df60f2b6d600fab0767a7b72
-ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
-ms.translationtype: MT
+ms.openlocfilehash: 5aec8c26a827a39abdfeacfc0e3d6dea4a62db43
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71062171"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999982"
 ---
 # <a name="code-analysis-faq"></a>코드 분석 FAQ
 
@@ -55,9 +55,34 @@ ms.locfileid: "71062171"
 
 **Q**: 레거시 분석과 .NET Compiler Platform 기반 코드 분석의 차이점은 무엇 인가요?
 
-**A**: .NET Compiler Platform 기반 코드 분석은 컴파일 중에 소스 코드를 실시간으로 분석 하는 반면 레거시 분석은 빌드가 완료 된 후 이진 파일을 분석 합니다. 자세한 내용은 [.NET Compiler Platform 기반 분석 및 레거시 분석](roslyn-analyzers-overview.md#net-compiler-platform-based-analysis-versus-legacy-analysis) 및 [FxCop 분석기 FAQ](fxcop-analyzers-faq.md)를 참조 하세요.
+**A**: .NET Compiler Platform 기반 코드 분석은 컴파일 중에 소스 코드를 실시간으로 분석 하는 반면 레거시 분석은 빌드가 완료 된 후 이진 파일을 분석 합니다. 자세한 내용은 [.NET Compiler Platform 기반 분석 및 레거시 분석](roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis) 및 [FxCop 분석기 FAQ](fxcop-analyzers-faq.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="treat-warnings-as-errors"></a>경고를 오류로 처리
+
+**Q**: 내 프로젝트는 빌드 옵션을 사용 하 여 경고를 오류로 처리 합니다. 레거시 분석에서 원본 코드 분석으로 마이그레이션한 후 모든 코드 분석 경고가 이제 오류로 표시 됩니다. 이를 방지 하려면 어떻게 해야 하나요?
+
+**A**: 코드 분석 경고가 오류로 처리 되지 않도록 하려면 다음 단계를 수행 합니다.
+
+  1. 다음 콘텐츠를 사용 하 여 props 파일을 만듭니다.
+
+     ```xml
+     <Project>
+        <PropertyGroup>
+           <CodeAnalysisTreatWarningsAsErrors>false</CodeAnalysisTreatWarningsAsErrors>
+        </PropertyGroup>
+     </Project>
+     ```
+
+  2. .Csproj 또는 .vbproj 프로젝트 파일에 줄을 추가 하 여 이전 단계에서 만든 props 파일을 가져옵니다. 이 줄은 FxCop 분석기. props 파일을 가져오는 모든 줄 앞에 배치 해야 합니다. 예를 들어, props 파일 이름이 codeanalysis. props 인 경우:
+
+     ```xml
+     ...
+     <Import Project="..\..\codeanalysis.props" Condition="Exists('..\..\codeanalysis.props')" />
+     <Import Project="..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.5\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props" Condition="Exists('..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.5\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props')" />
+     ...
+     ```
+
+## <a name="see-also"></a>참조
 
 - [분석기 개요](roslyn-analyzers-overview.md)
 - [EditorConfig에 대한 .NET 코딩 규칙 설정](../ide/editorconfig-code-style-settings-reference.md)

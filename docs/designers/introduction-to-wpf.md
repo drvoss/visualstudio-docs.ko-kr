@@ -11,12 +11,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: f26558a8e8d7e8446e3a992b7555116b5712c364
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: bb88c5b718c0f949825a2542b5a084d4e8ca15b9
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924452"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962956"
 ---
 # <a name="wpf-overview"></a>WPF 개요
 
@@ -428,7 +428,7 @@ WPF 애니메이션 지원을 사용하면 컨트롤이 커지거나, 흔들리�
 
 ### <a name="triggers"></a>트리거
 
-XAML 태그의 주요 용도는 애플리케이션의 모양을 구현하는 것이지만 XAML을 사용하여 애플리케이션 동작의 일부 측면을 구현할 수도 있습니다. 한 가지 예는 트리거를 사용하여 사용자 조작에 따라 애플리케이션의 모양을 변경하는 것입니다. 자세한 내용은 [스타일 지정 및 템플릿](/dotnet/framework/wpf/controls/styling-and-templating)을 참조하세요.
+XAML 태그의 주요 용도는 애플리케이션의 모양을 구현하는 것이지만 XAML을 사용하여 애플리케이션 동작의 일부 측면을 구현할 수도 있습니다. 한 가지 예는 트리거를 사용하여 사용자 조작에 따라 애플리케이션의 모양을 변경하는 것입니다. 자세한 내용은 [스타일 및 템플릿](/dotnet/desktop-wpf/fundamentals/styles-templates-overview)을 참조하세요.
 
 ### <a name="control-templates"></a>컨트롤 템플릿
 
@@ -545,9 +545,9 @@ WPF 컨트롤의 기본 사용자 인터페이스는 일반적으로 다른 컨�
 
 ![두 개의 주황색 단추](../designers/media/wpfintrofigure20.png)
 
-자세한 내용은 [스타일 지정 및 템플릿](/dotnet/framework/wpf/controls/styling-and-templating)을 참조하세요.
+자세한 내용은 [스타일 및 템플릿](/dotnet/desktop-wpf/fundamentals/styles-templates-overview)을 참조하세요.
 
-### <a name="resources"></a>자료
+### <a name="resources"></a>리소스
 
 애플리케이션의 컨트롤은 글꼴 및 배경색부터 컨트롤 템플릿, 데이터 템플릿 및 스타일까지 모든 항목을 포함할 수 있는 동일한 모양을 공유해야 합니다. 사용자 인터페이스 리소스에 대한 WPF 지원을 사용하여 재사용을 위해 이러한 리소스를 단일 위치에 캡슐화할 수 있습니다.
 

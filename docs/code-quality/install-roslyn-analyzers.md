@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 284f33d9d7af885958ed13101e1449edc5c8f2be
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: a09c44962b2737407a3ce7274ccb9c9664908dcf
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551093"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71974945"
 ---
 # <a name="install-net-compiler-platform-code-analyzers"></a>.NET Compiler Platform 코드 분석기 설치
 
@@ -26,14 +26,14 @@ Visual Studio에는 핵심*Roslyn*(.NET Compiler Platform) 분석기가 포함 �
 
 1. [www.nuget.org](www.nuget.org) 설치 하려는 분석기 패키지를 찾습니다.
 
-   예를 들어 [Microsoft FxCop 분석기를 설치](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) 하 여 코드에서 보안 및 성능 문제를 확인 하는 것이 좋습니다. 또는 [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/) 를 설치 하 여 코드 베이스에서 스타일 문제를 찾습니다.
+   예를 들어 [Microsoft FxCop 분석기를 설치](install-fxcop-analyzers.md#nuget-package) 하 여 코드에서 보안 및 성능 문제를 확인 하는 것이 좋습니다. 또는 [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/) 를 설치 하 여 코드 베이스에서 스타일 문제를 찾습니다.
 
 2. 패키지 [관리자 콘솔](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) 또는 [패키지 관리자 UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)를 사용 하 여 Visual Studio에서 패키지를 설치 합니다.
 
    > [!NOTE]
    > 각 분석기 패키지의 www.nuget.org 페이지에는 **패키지 관리자 콘솔**에 붙여 넣을 수 있는 명령이 표시 됩니다. 텍스트를 클립보드에 복사 하는 편리한 단추도 있습니다.
 
-   분석기 어셈블리는 설치 되 고 **참조** > **분석기**아래 **솔루션 탐색기** 에 표시 됩니다.
+   분석기 어셈블리는 설치 되 고 **참조** > **분석기**의 **솔루션 탐색기** 에 표시 됩니다.
 
 ## <a name="to-install-vsix-analyzers"></a>VSIX 분석기를 설치 하려면
 
@@ -61,7 +61,7 @@ Visual Studio에는 핵심*Roslyn*(.NET Compiler Platform) 분석기가 포함 �
 
 2. 왼쪽 창에서 **온라인** 을 확장 한 다음 **Visual Studio Marketplace**를 선택 합니다.
 
-3. 검색 상자에 설치 하려는 분석기 확장의 이름을 입력 합니다. 예를 들어 [Microsoft FxCop 분석기를 설치](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-vsix) 하 여 코드에서 보안 및 성능 문제를 확인 하는 것이 좋습니다.
+3. 검색 상자에 설치 하려는 분석기 확장의 이름을 입력 합니다. 예를 들어 [Microsoft FxCop 분석기를 설치](install-fxcop-analyzers.md#vsix) 하 여 코드에서 보안 및 성능 문제를 확인 하는 것이 좋습니다.
 
 4. **다운로드**를 선택 합니다.
 
@@ -81,13 +81,13 @@ Visual Studio에는 핵심*Roslyn*(.NET Compiler Platform) 분석기가 포함 �
 
 ::: moniker range="vs-2017"
 
-확장이 설치 되어 있는지 여부를 확인 하려면 **도구** > **확장 및 업데이트**를 선택 합니다. **확장 및 업데이트** 대화 상자에서 왼쪽에 있는 **설치** 된 범주를 선택 하 고 이름으로 확장을 검색 합니다.
+확장이 설치 되어 있는지 확인 하려면 **도구** > **확장 및 업데이트**를 선택 합니다. **확장 및 업데이트** 대화 상자에서 왼쪽에 있는 **설치** 된 범주를 선택 하 고 이름으로 확장을 검색 합니다.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-확장이 설치 되어 있는지 여부를 확인 하려면 확장 확장**관리**를 > 선택 합니다. **확장 관리** 대화 상자에서 왼쪽에 있는 **설치** 된 범주를 선택 하 고 이름으로 확장을 검색 합니다.
+확장이 설치 되어 있는지 확인 하려면 **확장  >  확장** **관리**를 선택 합니다. **확장 관리** 대화 상자에서 왼쪽에 있는 **설치** 된 범주를 선택 하 고 이름으로 확장을 검색 합니다.
 
 ::: moniker-end
 
@@ -96,7 +96,7 @@ Visual Studio에는 핵심*Roslyn*(.NET Compiler Platform) 분석기가 포함 �
 > [!div class="nextstepaction"]
 > [Visual Studio에서 코드 분석기 사용](../code-quality/use-roslyn-analyzers.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 코드 분석기 개요](../code-quality/roslyn-analyzers-overview.md)
 - [FxCop 분석기 설치](../code-quality/install-fxcop-analyzers.md)

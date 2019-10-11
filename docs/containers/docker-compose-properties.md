@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 06a1c5b637ca2ed9306162ee1960c60d103e5843
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 2178881c6ea0e597aef5e25074e3648162d3f6e9
+ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71185975"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71950646"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose 빌드 속성
 
@@ -35,10 +35,10 @@ ms.locfileid: "71185975"
 
 | 속성 이름 | 위치 | 설명 | 기본값  |
 |---------------|----------|-------------|----------------|
-|DockerComposeBuildArguments|dcproj|`docker-compose build` 명령에 전달할 추가 매개 변수를 지정합니다. 예를 들어 `--parallel --pull` |
-|DockerComposeDownArguments|dcproj|`docker-compose down` 명령에 전달할 추가 매개 변수를 지정합니다. 예를 들어 `--timeout 500`|-|  
+|DockerComposeBuildArguments|dcproj|`docker-compose build` 명령에 전달할 추가 매개 변수를 지정합니다. 예를 들면 `--parallel --pull`과 같습니다. |
+|DockerComposeDownArguments|dcproj|`docker-compose down` 명령에 전달할 추가 매개 변수를 지정합니다. 예를 들면 `--timeout 500`과 같습니다.|-|  
 |DockerComposeProjectPath|csproj 또는 vbproj|docker-compose 프로젝트(dcproj) 파일의 상대 경로입니다. 서비스 프로젝트를 게시할 때 이 속성을 설정하여 docker-compose.yml 파일에 저장된 관련 이미지 빌드 설정을 찾습니다.|-|
-|DockerComposeUpArguments|dcproj|`docker-compose up` 명령에 전달할 추가 매개 변수를 지정합니다. 예를 들어 `--timeout 500`|-|
+|DockerComposeUpArguments|dcproj|`docker-compose up` 명령에 전달할 추가 매개 변수를 지정합니다. 예를 들면 `--timeout 500`과 같습니다.|-|
 |DockerLaunchAction| dcproj | F5 키나 Ctrl+F5를 누를 때 수행할 시작 작업을 지정합니다.  허용되는 값은 None, LaunchBrowser, LaunchWCFTestClient입니다.|없음|
 |DockerLaunchBrowser| dcproj | 브라우저를 시작할지 여부를 나타냅니다. DockerLaunchAction을 지정한 경우에는 무시됩니다. | False |
 |DockerServiceName| dcproj|DockerLaunchAction 또는 DockerLaunchBrowser를 지정한 경우, DockerServiceName은 시작할 서비스의 이름입니다.  이 속성을 사용하여 docker-compose 파일에서 참조할 수 있는 많은 프로젝트 중 시작할 프로젝트를 확인합니다.|-|
@@ -46,7 +46,7 @@ ms.locfileid: "71185975"
 |DockerTargetOS| dcproj | Docker 이미지를 빌드할 때 사용되는 대상 OS입니다.|-|
 
 > [!NOTE]
-> DockerComposeBuildArguments, DockerComposeDownArguments 및 DockerComposeUpArguments는 Visual Studio 2019 버전 16.3 미리 보기 3에서 새로 추가되었습니다.
+> DockerComposeBuildArguments, DockerComposeDownArguments 및 DockerComposeUpArguments는 Visual Studio 2019 버전 16.3에 새로 추가되었습니다.
 
 ## <a name="docker-compose-file-labels"></a>Docker Compose 파일 레이블
 

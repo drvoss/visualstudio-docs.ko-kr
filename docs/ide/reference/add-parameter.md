@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3e1461afe5c4d6026f8532896ba837e971fed652
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4dbed81809cb3b69814fbf10dde7129b45396eaa
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792271"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000202"
 ---
 # <a name="add-a-parameter-to-a-method-using-a-quick-action"></a>빠른 작업을 사용하여 메서드에 매개 변수 추가
 
@@ -32,14 +32,14 @@ ms.locfileid: "62792271"
 
 1. 메서드 호출에 여분의 인수를 추가합니다.
 
-   빨간색의 “구불구불한 선”이 호출하는 메서드의 이름 아래에 나타납니다.
+   빨간색의 오류 표시선이 호출하는 메서드의 이름 아래에 나타납니다.
 
-2. 빠른 작업 메뉴가 나타날 때까지 빨간색 “구불구불한 선”을 포인터로 가리킵니다. 빠른 작업 메뉴에서 **아래쪽 화살표**를 선택하고 **[메서드]에 매개 변수 추가**를 선택합니다.
+2. 빠른 작업 메뉴가 나타날 때까지 빨간색 오류 표시선을 포인터로 가리킵니다. 빠른 작업 메뉴에서 **아래쪽 화살표**를 선택하고 **[메서드]에 매개 변수 추가**를 선택합니다.
 
    ![Visual Studio의 메서드에 매개 변수 추가 빠른 작업](media/add-parameter-to-method.png)
 
    > [!TIP]
-   > 메서드 호출 줄에 커서를 놓은 다음, **Ctrl**+**.** 을 누르거나, 파일 여백에 있는 전구 아이콘을 선택하여 빠른 작업 메뉴에 액세스할 수도 있습니다.
+   > 메서드 호출 줄에 커서를 놓은 다음, **Ctrl**+ **.** 을 누르거나, (마침표) 파일 여백에 있는 전구 아이콘을 선택하여 빠른 작업 메뉴에 액세스할 수도 있습니다.
 
    Visual Studio에서 메서드 선언에 새 매개 변수를 추가합니다.
 

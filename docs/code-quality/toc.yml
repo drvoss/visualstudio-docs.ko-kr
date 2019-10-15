@@ -12,7 +12,7 @@
           href: roslyn-analyzers-overview.md
         - name: 설치
           href: install-roslyn-analyzers.md
-        - name: 구성
+        - name: Configuration
           href: use-roslyn-analyzers.md
         - name: 코드 분석 사용 안 함
           href: disable-code-analysis.md
@@ -27,7 +27,7 @@
               href: fxcop-analyzers.yml
             - name: 설치
               href: install-fxcop-analyzers.md
-            - name: 구성
+            - name: Configuration
               items:
                 - name: 개요
                   href: configure-fxcop-analyzers.md
@@ -54,7 +54,7 @@
           href: fxcop-analyzers.yml
         - name: 수동으로 레거시 분석 실행
           href: how-to-run-code-analysis-manually-for-managed-code.md
-        - name: 구성
+        - name: Configuration
           items:
             - name: 레거시 분석 구성
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
@@ -493,37 +493,43 @@
                   displayName: performance warnings
                   href: performance-warnings.md
                 - name: 'CA1800: 불필요하게 캐스트하지 마세요.'
-                  href: ca1800-do-not-cast-unnecessarily.md
+                  href: ca1800.md
+                - name: 'CA1801: 사용되지 않은 매개 변수를 검토하세요.'
+                  href: ca1801.md
                 - name: 'CA1802: 가능하면 리터럴을 사용하세요.'
-                  href: ca1802-use-literals-where-appropriate.md
+                  href: ca1802.md
                 - name: 'CA1804: 사용되지 않는 로컬 항목을 제거하세요.'
-                  href: ca1804-remove-unused-locals.md
+                  href: ca1804.md
+                - name: 'CA1806: 메서드 결과를 무시하지 마세요.'
+                  href: ca1806.md
                 - name: 'CA1809: 불필요한 로컬 항목을 사용하지 마세요.'
-                  href: ca1809-avoid-excessive-locals.md
+                  href: ca1809.md
                 - name: 'CA1810: 참조 형식 정적 필드를 인라인으로 초기화하세요.'
-                  href: ca1810-initialize-reference-type-static-fields-inline.md
+                  href: ca1810.md
                 - name: 'CA1811: 호출되지 않는 전용 코드를 사용하지 마세요.'
-                  href: ca1811-avoid-uncalled-private-code.md
+                  href: ca1811.md
                 - name: 'CA1812: 인스턴스화되지 않은 내부 클래스를 사용하지 마세요.'
-                  href: ca1812-avoid-uninstantiated-internal-classes.md
+                  href: ca1812.md
                 - name: 'CA1813: 봉인되지 않은 특성을 사용하지 마세요.'
-                  href: ca1813-avoid-unsealed-attributes.md
+                  href: ca1813.md
                 - name: 'CA1814: 다차원 배열보다 가변 배열을 사용하세요.'
-                  href: ca1814-prefer-jagged-arrays-over-multidimensional.md
+                  href: ca1814.md
                 - name: 'CA1815: 값 형식에서 Equals 또는 같음 연산자를 재정의하세요.'
-                  href: ca1815-override-equals-and-operator-equals-on-value-types.md
+                  href: ca1815.md
+                - name: 'CA1816: GC.SuppressFinalize를 올바르게 호출하세요.'
+                  href: ca1816.md
                 - name: 'CA1819: 속성은 배열을 반환해서는 안 됩니다.'
-                  href: ca1819-properties-should-not-return-arrays.md
+                  href: ca1819.md
                 - name: 'CA1820: 문자열 길이를 사용하여 빈 문자열을 테스트하세요.'
-                  href: ca1820-test-for-empty-strings-using-string-length.md
+                  href: ca1820.md
                 - name: 'CA1821: 빈 종료자를 제거하십시오.'
-                  href: ca1821-remove-empty-finalizers.md
+                  href: ca1821.md
                 - name: 'CA1822: 멤버를 static으로 표시하세요.'
-                  href: ca1822-mark-members-as-static.md
+                  href: ca1822.md
                 - name: 'CA1823: 사용되지 않는 전용 필드를 사용하지 마세요.'
-                  href: ca1823-avoid-unused-private-fields.md
+                  href: ca1823.md
                 - name: 'CA1824: NeutralResourcesLanguageAttribute로 어셈블리를 표시하세요.'
-                  href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
+                  href: ca1824.md
                 - name: 'CA1825: 길이가 0인 배열 할당 방지'
                   href: ca1825.md
             - name: 이식성 경고
@@ -751,11 +757,11 @@
                   displayName: usage warnings
                   href: usage-warnings.md
                 - name: 'CA1801: 사용되지 않은 매개 변수를 검토하세요.'
-                  href: ca1801-review-unused-parameters.md
+                  href: ca1801.md
                 - name: 'CA1806: 메서드 결과를 무시하지 마세요.'
-                  href: ca1806-do-not-ignore-method-results.md
+                  href: ca1806.md
                 - name: 'CA1816: GC.SuppressFinalize를 올바르게 호출하세요.'
-                  href: ca1816-call-gc-suppressfinalize-correctly.md
+                  href: ca1816.md
                 - name: 'CA2200: 스택 정보를 유지하도록 다시 throw하십시오.'
                   href: ca2200-rethrow-to-preserve-stack-details.md
                 - name: 'CA2201: 예약된 예외 형식을 발생시키지 마세요.'

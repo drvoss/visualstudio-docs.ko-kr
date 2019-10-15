@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a76d1c5d2268c0119fc6822167537b500371cdb5
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: 6f895506d27c98daf9d69be1a2ea4db5fbe158b7
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585003"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305467"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>관리 코드에 대한 기본 수정 규칙 규칙 집합
 
@@ -21,7 +21,7 @@ ms.locfileid: "69585003"
 
 다음 표에서는 Microsoft 기본 수정 규칙 규칙 집합의 모든 규칙에 대해 설명 합니다.
 
-|규칙|Description|
+|규칙|설명|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|삭제 가능한 필드가 있는 형식은 삭제 가능해야 합니다.|
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|이벤트 처리기를 제대로 선언하십시오.|
@@ -40,7 +40,7 @@ ms.locfileid: "69585003"
 |[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|COM 노출 형식의 기본 형식은 COM 노출이어야 합니다.|
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|COM 등록 메서드는 일치해야 합니다.|
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|P/Invoke를 올바르게 선언하십시오.|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|빈 종료자를 제거하십시오.|
+|[CA1821](../code-quality/ca1821.md)|빈 종료자를 제거하십시오.|
 |[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|값 형식 필드는 이식 가능해야 합니다.|
 |[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|P/Invoke 선언은 이식 가능해야 합니다.|
 |[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|약한 ID를 가진 개체를 잠그지 마십시오.|
@@ -89,10 +89,10 @@ ms.locfileid: "69585003"
 |[CA1013](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|더하기 및 빼기를 오버로드할 때 같음 연산자를 오버로드하세요.|
 |[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|리터럴을 지역화된 매개 변수로 전달하지 마세요.|
 |[CA1308](../code-quality/ca1308-normalize-strings-to-uppercase.md)|대문자로 문자열을 정규화하세요.|
-|[CA1806](../code-quality/ca1806-do-not-ignore-method-results.md)|메서드 결과를 무시하지 마세요.|
-|[CA1816](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)|GC.SuppressFinalize를 올바르게 호출하세요.|
-|[CA1819](../code-quality/ca1819-properties-should-not-return-arrays.md)|속성은 배열을 반환해서는 안 됩니다.|
-|[CA1820](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|문자열 길이를 사용하여 빈 문자열을 테스트하세요.|
+|[CA1806](../code-quality/ca1806.md)|메서드 결과를 무시하지 마세요.|
+|[CA1816](../code-quality/ca1816.md)|GC.SuppressFinalize를 올바르게 호출하세요.|
+|[CA1819](../code-quality/ca1819.md)|속성은 배열을 반환해서는 안 됩니다.|
+|[CA1820](../code-quality/ca1820.md)|문자열 길이를 사용하여 빈 문자열을 테스트하세요.|
 |[CA1903](../code-quality/ca1903-use-only-api-from-targeted-framework.md)|대상 프레임워크의 API만 사용하세요.|
 |[CA2004](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|GC.KeepAlive에 대한 호출을 제거하세요.|
 |[CA2006](../code-quality/ca2006-use-safehandle-to-encapsulate-native-resources.md)|SafeHandle을 사용하여 네이티브 리소스를 캡슐화하세요.|

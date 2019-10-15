@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46f579b6776ffab6d0ed3b2e216e29d36d2065ee
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 695f15c73120f766157fabb09193d32115dda588
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71231702"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305937"
 ---
 # <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207: 값 형식 정적 필드 인라인을 초기화하십시오.
 
@@ -34,9 +34,9 @@ ms.locfileid: "71231702"
 값 형식은 명시적 정적 생성자를 선언 합니다.
 
 ## <a name="rule-description"></a>규칙 설명
-값 형식이 선언 되 면 모든 값 형식 필드를 0으로 설정 하 고 모든 참조 형식 필드를 ( `null` `Nothing` Visual Basic)로 설정 하는 기본 초기화를 수행 합니다. 명시적 정적 생성자는 형식의 인스턴스 생성자 또는 정적 멤버를 호출 하기 전에만 실행 되도록 보장 됩니다. 따라서 인스턴스 생성자를 호출 하지 않고 형식을 만들면 정적 생성자가 실행 되지 않을 수 있습니다.
+값 형식이 선언 되 면 모든 값 형식 필드를 0으로 설정 하 고 모든 참조 형식 필드를 `null` @no__t (Visual Basic)으로 설정 하는 기본 초기화를 수행 합니다. 명시적 정적 생성자는 형식의 인스턴스 생성자 또는 정적 멤버를 호출 하기 전에만 실행 되도록 보장 됩니다. 따라서 인스턴스 생성자를 호출 하지 않고 형식을 만들면 정적 생성자가 실행 되지 않을 수 있습니다.
 
-모든 정적 데이터를 인라인으로 초기화 하 고 명시적 정적 생성자를 선언 하지 않은 경우 C# 및 Visual Basic 컴파일러는 MSIL `beforefieldinit` 클래스 정의에 플래그를 추가 합니다. 또한 컴파일러는 정적 초기화 코드를 포함 하는 전용 정적 생성자를 추가 합니다. 이 전용 정적 생성자는 형식의 정적 필드에 액세스 하기 전에 실행 되도록 보장 됩니다.
+모든 정적 데이터를 인라인으로 초기화 하 고 명시적 정적 생성자를 선언 하지 않은 경우 C# 및 Visual Basic 컴파일러는 MSIL 클래스 정의에 `beforefieldinit` 플래그를 추가 합니다. 또한 컴파일러는 정적 초기화 코드를 포함 하는 전용 정적 생성자를 추가 합니다. 이 전용 정적 생성자는 형식의 정적 필드에 액세스 하기 전에 실행 되도록 보장 됩니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 이 규칙 위반 문제를 해결 하려면 선언 될 때 모든 정적 데이터를 초기화 하 고 정적 생성자를 제거 합니다.
@@ -45,4 +45,4 @@ ms.locfileid: "71231702"
 이 규칙에서는 경고를 표시해야 합니다.
 
 ## <a name="related-rules"></a>관련 규칙
-[CA1810: 참조 형식 정적 필드를 인라인으로 초기화 하십시오.](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)
+[CA1810: 참조 형식 정적 필드를 초기화 합니다. 인라인 @ no__t-0

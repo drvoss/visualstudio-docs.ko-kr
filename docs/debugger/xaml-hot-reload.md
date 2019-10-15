@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff5e70d4ec2831df18ce1b100e70730e2978201e
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 5e49049d05a285889c54906534200acadaf2397e
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186563"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306212"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Visual Studio에서 XAML 핫 다시 로드를 사용 하 여 실행 중인 XAML 코드 작성 및 디버그
 
@@ -49,11 +49,12 @@ XAML 핫 다시 로드는 다음과 같은 시나리오에서 특히 유용 합�
 
 |제한|WPF|UWP|참고|
 |-|-|-|-|
-|앱이 실행 되는 동안 컨트롤에 이벤트 연결|지원되지 않음|지원 안 함|자세한 내용은 오류: *이벤트가 실패 했는지 확인*합니다. WPF에서는 기존 이벤트 처리기를 참조할 수 있습니다. UWP 앱에서 기존 이벤트 처리기를 참조 하는 것은 지원 되지 않습니다.|
-|리소스 사전에 앱의 페이지/창 또는 *app.xaml* 과 같은 리소스 개체 만들기|Visual Studio 2019 업데이트 2부터 지원 됨|지원함|예제:를 `StaticResource`으로 `SolidColorBrush` 사용할 리소스 사전에 추가 합니다.</br>참고: 정적 리소스, 스타일 변환기 및 리소스 사전에 작성 된 기타 요소는 XAML 핫 다시 로드를 사용 하는 동안 적용/사용할 수 있습니다. 리소스 만들기만 지원 되지 않습니다.</br> 리소스 사전 `Source` 속성을 변경 합니다.|
+|앱이 실행 되는 동안 컨트롤에 이벤트 연결|지원되지 않음|지원되지 않음|자세한 내용은 오류: *이벤트가 실패 했는지 확인*합니다. WPF에서는 기존 이벤트 처리기를 참조할 수 있습니다. UWP 앱에서 기존 이벤트 처리기를 참조 하는 것은 지원 되지 않습니다.|
+|리소스 사전에 앱의 페이지/창 또는 *app.xaml* 과 같은 리소스 개체 만들기|Visual Studio 2019 업데이트 2부터 지원 됨|지원됨|예: `SolidColorBrush`을 `StaticResource`로 사용할 리소스 사전에 추가 합니다.</br>참고: 정적 리소스, 스타일 변환기 및 리소스 사전에 작성 된 기타 요소는 XAML 핫 다시 로드를 사용 하는 동안 적용/사용할 수 있습니다. 리소스 만들기만 지원 되지 않습니다.</br> 리소스 사전 `Source` 속성을 변경 합니다.|
 |앱이 실행 되는 동안 프로젝트에 새 컨트롤, 클래스, 창 또는 기타 파일 추가|지원되지 않음|지원되지 않음|없음|
 |NuGet 패키지 관리 (패키지 추가/제거/업데이트)|지원되지 않음|지원되지 않음|없음|
 |{X:Bind} 태그 확장을 사용 하는 데이터 바인딩 변경|해당 사항 없음|Visual Studio 2019부터 지원 됨|이 경우 Windows 10 버전 1809 (build 10.0.17763)이 필요 합니다. Visual Studio 2017 또는 이전 버전에서는 지원 되지 않습니다.|
+|X:Uid 지시문 변경은 지원 되지 않습니다.|해당 사항 없음|지원되지 않음|없음|
 
 ## <a name="error-messages"></a>오류 메시지
 
@@ -64,7 +65,7 @@ XAML 핫 다시 로드를 사용 하는 동안 다음 오류가 발생할 수 �
 |이벤트 실패 확인|오류는 응용 프로그램이 실행 되는 동안 지원 되지 않는 컨트롤 중 하나에 이벤트를 연결 하려고 시도 하 고 있음을 나타냅니다.|
 |이 변경은 XAML 핫 다시 로드에서 지원 되지 않으며 디버깅 세션 중에는 적용 되지 않습니다.|오류는 XAML 핫 다시 로드에서 시도 중인 변경을 지원 하지 않음을 나타냅니다. 디버깅 세션을 중지 하 고, 변경 하 고 나 서, 디버깅 세션을 다시 시작 합니다. 지원 되지 않는 시나리오를 발견 한 경우 [Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com/spaces/8/index.html)에서 새로운 "기능 제안" 옵션을 사용 하세요. |
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [XAML 핫 다시 로드 문제 해결](xaml-hot-reload-troubleshooting.md)
 * [Xamarin에 대 한 XAML 핫 다시 로드](/xamarin/xamarin-forms/xaml/hot-reload)

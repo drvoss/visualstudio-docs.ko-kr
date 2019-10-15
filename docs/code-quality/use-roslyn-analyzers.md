@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a4c7d0aa4da7e672db06675c65e008d1f71f8bc7
-ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
+ms.openlocfilehash: 81c1c200ba9ab0a50381192b34bad5e9b221fb29
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172810"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305676"
 ---
 # <a name="use-code-analyzers"></a>코드 분석기 사용
 
@@ -62,8 +62,8 @@ ms.locfileid: "72172810"
 
 | 심각도 (솔루션 탐색기) | 심각도 (EditorConfig 파일) | 빌드 타임 동작 | 편집기 동작 |
 |-|-|-|
-| 오류 | `error` | 위반은 오류 목록 및 명령줄 빌드 출력에 *오류로* 표시 되 고 빌드가 실패 합니다.| 잘못 된 코드는 빨간색 물결선으로 밑줄이 표시 되 고 스크롤 막대에 작은 빨간색 상자로 표시 됩니다. |
-| Warning | `warning` | 위반은 오류 목록 및 명령줄 빌드 출력에 *경고* 로 표시 되지만 빌드가 실패 하지는 않습니다. | 잘못 된 코드는 녹색 물결선으로 밑줄이 표시 되 고 스크롤 막대에 작은 녹색 상자로 표시 됩니다. |
+| Error | `error` | 위반은 오류 목록 및 명령줄 빌드 출력에 *오류로* 표시 되 고 빌드가 실패 합니다.| 잘못 된 코드는 빨간색 물결선으로 밑줄이 표시 되 고 스크롤 막대에 작은 빨간색 상자로 표시 됩니다. |
+| 경고 | `warning` | 위반은 오류 목록 및 명령줄 빌드 출력에 *경고* 로 표시 되지만 빌드가 실패 하지는 않습니다. | 잘못 된 코드는 녹색 물결선으로 밑줄이 표시 되 고 스크롤 막대에 작은 녹색 상자로 표시 됩니다. |
 | Info | `suggestion` | 위반은 명령줄 빌드 출력이 아닌 오류 목록의 *메시지로* 표시 됩니다. | 잘못 된 코드는 회색 물결선으로 밑줄이 표시 되 고 스크롤 막대에 작은 회색 상자로 표시 됩니다. |
 | 숨김 | `silent` | 사용자에 게 표시 되지 않습니다. | 사용자에 게 표시 되지 않습니다. 그러나 진단이 IDE 진단 엔진에 보고 됩니다. |
 | 없음 | `none` | 완전히 표시 되지 않습니다. | 완전히 표시 되지 않습니다. |
@@ -93,7 +93,7 @@ EditorConfig 파일에서 규칙의 심각도를 설정 하는 것은 규칙 집
 
 1. 프로젝트에 대 한 EditorConfig 파일이 아직 없는 경우 [하나를 추가](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project)합니다.
 
-2. 구성 하려는 각 규칙에 해당 하는 파일 확장명으로 항목을 추가 합니다. 예를 들어 파일의 C# [CA1822](ca1822-mark-members-as-static.md) 에 대 한 심각도를 `error`로 설정 하려면 항목은 다음과 같습니다.
+2. 구성 하려는 각 규칙에 해당 하는 파일 확장명으로 항목을 추가 합니다. 예를 들어 파일의 C# [CA1822](ca1822.md) 에 대 한 심각도를 `error`로 설정 하려면 항목은 다음과 같습니다.
 
    ```ini
    [*.cs]
@@ -229,7 +229,7 @@ Msbuild를 사용 하 여 프로젝트를 빌드할 때 명령줄에서 분석�
 msbuild myproject.csproj /target:rebuild /verbosity:minimal
 ```
 
-다음 이미지는 분석기 규칙 위반을 포함 하는 프로젝트를 빌드할 때의 명령줄 빌드 출력을 보여 줍니다.
+다음 이미지에서는 분석기 규칙 위반을 포함하는 프로젝트 빌드의 명령줄 빌드 출력을 보여줍니다.
 
 ![규칙 위반을 사용하여 MSBuild 출력](media/command-line-build-analyzers.png)
 

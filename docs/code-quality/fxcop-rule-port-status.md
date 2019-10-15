@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 04a4738181c579617711150da4eb99e08aeb039c
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: e784627f0c9c6aa865d53db49d6ea43c4e49d0eb
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018428"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305783"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 규칙 포트 상태
 
@@ -98,21 +98,21 @@ CA1509 | 코드 메트릭 규칙 사양 파일에 잘못 된 항목이 있습니
 [CA1721](ca1721-property-names-should-not-match-get-methods.md) | 속성 이름은 Get 메서드와 달라야 합니다.
 [CA1724](ca1724-type-names-should-not-match-namespaces.md) | 형식 이름은 네임 스페이스와 일치 하면 안 됩니다.
 [CA1725](ca1725-parameter-names-should-match-base-declaration.md) | 매개 변수 이름은 기본 선언과 일치해야 합니다.
-[CA1801](ca1801-review-unused-parameters.md) | 사용되지 않은 매개 변수를 검토하세요.
-[CA1802](ca1802-use-literals-where-appropriate.md) | 적절 한 경우 리터럴 사용
-[CA1806](ca1806-do-not-ignore-method-results.md) | 메서드 결과를 무시하지 마세요.
-[CA1810](ca1810-initialize-reference-type-static-fields-inline.md) | 참조 형식 정적 필드를 인라인으로 초기화하세요.
-[CA1812](ca1812-avoid-uninstantiated-internal-classes.md) | 인스턴스화되지 않은 내부 클래스를 사용하지 마세요.
-[CA1813](ca1813-avoid-unsealed-attributes.md) | 봉인되지 않은 특성을 사용하지 마세요.
-[CA1814](ca1814-prefer-jagged-arrays-over-multidimensional.md) | 다차원 배열보다 가변 배열을 사용하세요.
-[CA1815](ca1815-override-equals-and-operator-equals-on-value-types.md) | 값 형식에서 Equals 또는 같음 연산자를 재정의하세요.
-[CA1816](ca1816-call-gc-suppressfinalize-correctly.md) | Dispose 메서드는 Gc.suppressfinalize을 호출 해야 합니다.
-[CA1819](ca1819-properties-should-not-return-arrays.md) | 속성은 배열을 반환해서는 안 됩니다.
-[CA1820](ca1820-test-for-empty-strings-using-string-length.md) | 문자열 길이를 사용하여 빈 문자열을 테스트하세요.
-[CA1821](ca1821-remove-empty-finalizers.md) | 빈 종료자 제거
-[CA1822](ca1822-mark-members-as-static.md) | 멤버를 static으로 표시하세요.
-[CA1823](ca1823-avoid-unused-private-fields.md) | 사용되지 않는 전용 필드를 사용하지 마세요.
-[CA1824](ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md) | NeutralResourcesLanguageAttribute로 어셈블리를 표시하세요.
+[CA1801](ca1801.md) | 사용되지 않은 매개 변수를 검토하세요.
+[CA1802](ca1802.md) | 적절 한 경우 리터럴 사용
+[CA1806](ca1806.md) | 메서드 결과를 무시하지 마세요.
+[CA1810](ca1810.md) | 참조 형식 정적 필드를 인라인으로 초기화하세요.
+[CA1812](ca1812.md) | 인스턴스화되지 않은 내부 클래스를 사용하지 마세요.
+[CA1813](ca1813.md) | 봉인되지 않은 특성을 사용하지 마세요.
+[CA1814](ca1814.md) | 다차원 배열보다 가변 배열을 사용하세요.
+[CA1815](ca1815.md) | 값 형식에서 Equals 또는 같음 연산자를 재정의하세요.
+[CA1816](ca1816.md) | Dispose 메서드는 Gc.suppressfinalize을 호출 해야 합니다.
+[CA1819](ca1819.md) | 속성은 배열을 반환해서는 안 됩니다.
+[CA1820](ca1820.md) | 문자열 길이를 사용하여 빈 문자열을 테스트하세요.
+[CA1821](ca1821.md) | 빈 종료자 제거
+[CA1822](ca1822.md) | 멤버를 static으로 표시하세요.
+[CA1823](ca1823.md) | 사용되지 않는 전용 필드를 사용하지 마세요.
+[CA1824](ca1824.md) | NeutralResourcesLanguageAttribute로 어셈블리를 표시하세요.
 CA1825 | 길이가 0 인 배열 할당을 방지 합니다.
 CA1826 | 인덱싱할 수 있는 컬렉션에 대해 열거 가능한 메서드를 사용 하지 마세요. 대신 컬렉션을 직접 사용 합니다.
 [CA2000](ca2000-dispose-objects-before-losing-scope.md) | 범위를 벗어나기 전에 개체를 삭제하세요.
@@ -252,8 +252,8 @@ CA9999 | 분석기 버전이 일치 하지 않습니다.
 [CA1719](ca1719-parameter-names-should-not-match-member-names.md) | [https://github.com/dotnet/roslyn-analyzers/issues/453](https://github.com/dotnet/roslyn-analyzers/issues/453)
 [CA1722](ca1722-identifiers-should-not-have-incorrect-prefix.md) | [https://github.com/dotnet/roslyn-analyzers/issues/455](https://github.com/dotnet/roslyn-analyzers/issues/455)
 [CA1726](ca1726-use-preferred-terms.md) | [https://github.com/dotnet/roslyn-analyzers/issues/458](https://github.com/dotnet/roslyn-analyzers/issues/458)
-[CA1804](ca1804-remove-unused-locals.md) | [https://github.com/dotnet/roslyn-analyzers/issues/461](https://github.com/dotnet/roslyn-analyzers/issues/461)
-[CA1811](ca1811-avoid-uncalled-private-code.md) | [https://github.com/dotnet/roslyn-analyzers/issues/464](https://github.com/dotnet/roslyn-analyzers/issues/464)
+[CA1804](ca1804.md) | [https://github.com/dotnet/roslyn-analyzers/issues/461](https://github.com/dotnet/roslyn-analyzers/issues/461)
+[CA1811](ca1811.md) | [https://github.com/dotnet/roslyn-analyzers/issues/464](https://github.com/dotnet/roslyn-analyzers/issues/464)
 [CA1900](ca1900-value-type-fields-should-be-portable.md) | [https://github.com/dotnet/roslyn-analyzers/issues/474](https://github.com/dotnet/roslyn-analyzers/issues/474)
 [CA2001](ca2001-avoid-calling-problematic-methods.md) | [https://github.com/dotnet/roslyn-analyzers/issues/477](https://github.com/dotnet/roslyn-analyzers/issues/477)
 [CA2004](ca2004-remove-calls-to-gc-keepalive.md) | [https://github.com/dotnet/roslyn-analyzers/issues/479](https://github.com/dotnet/roslyn-analyzers/issues/479)
@@ -288,8 +288,8 @@ CA9999 | 분석기 버전이 일치 하지 않습니다.
 - [CA1701](ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 - [CA1702](ca1702-compound-words-should-be-cased-correctly.md)
 - [CA1703](ca1703-resource-strings-should-be-spelled-correctly.md)
-- [CA1800](ca1800-do-not-cast-unnecessarily.md)
-- [CA1809](ca1809-avoid-excessive-locals.md)
+- [CA1800](ca1800.md)
+- [CA1809](ca1809.md)
 - [CA1901](ca1901-p-invoke-declarations-should-be-portable.md)
 - [CA1903](ca1903-use-only-api-from-targeted-framework.md)
 - [CA2003](ca2003-do-not-treat-fibers-as-threads.md)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1616e889b3892aa656692a3e5b0895d4b131b7f1
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 3ac52bdb17aeb7d04e434d2b02ff9a905eab49a2
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71231249"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305920"
 ---
 # <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216: 삭제 가능한 형식은 종료자를 선언해야 합니다.
 
@@ -32,7 +32,7 @@ ms.locfileid: "71231249"
 
 ## <a name="cause"></a>원인
 
-을 구현 <xref:System.IDisposable?displayProperty=fullName>하 고 관리 되지 않는 리소스의 사용을 제안 하는 필드를 포함 하는 형식에서는에 <xref:System.Object.Finalize%2A?displayProperty=fullName>설명 된 대로 종료자를 구현 하지 않습니다.
+@No__t를 구현 하 고 관리 되지 않는 리소스의 사용을 제안 하는 필드를 포함 하는 형식인 <xref:System.Object.Finalize%2A?displayProperty=fullName>에 설명 된 대로 종료자를 구현 하지 않습니다.
 
 ## <a name="rule-description"></a>규칙 설명
 
@@ -50,7 +50,7 @@ ms.locfileid: "71231249"
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 
-형식이 관리 되지 않는 리소스를 해제 하기 위해를 구현 <xref:System.IDisposable> 하지 않는 경우에는이 규칙에서 경고를 표시 하지 않는 것이 안전 합니다.
+형식이 관리 되지 않는 리소스를 해제 하기 위해 <xref:System.IDisposable>을 구현 하지 않는 경우에는이 규칙에서 경고를 표시 하지 않는 것이 안전 합니다.
 
 ## <a name="example"></a>예제
 
@@ -60,13 +60,13 @@ ms.locfileid: "71231249"
 
 ## <a name="related-rules"></a>관련 규칙
 
-[CA2115: GC를 호출 합니다. 네이티브 리소스를 사용 하는 경우 KeepAlive](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
+[CA2115: GC를 호출 합니다. 네이티브 리소스를 사용 하는 경우 KeepAlive @ no__t-0
 
-[CA1816: GC를 호출 합니다. Gc.suppressfinalize 올바르게](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
+[CA1816: GC를 호출 합니다. Gc.suppressfinalize 올바르게 @ no__t-0
 
-[CA1049: 네이티브 리소스를 소유 하는 형식은 삭제 가능 해야 합니다.](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
+[CA1049: 네이티브 리소스가 있는 형식은 삭제 가능 해야 합니다. @ no__t-0
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - <xref:System.IDisposable?displayProperty=fullName>
 - <xref:System.IntPtr?displayProperty=fullName>

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d51796f7575e3dd5766655661927dfd520935c02
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: 90464052d0ba4f02b6b971adbacda8a29f3b0b2c
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585091"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305453"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>관리 코드에 대한 기본 디자인 지침 규칙 규칙 집합
 
@@ -23,7 +23,7 @@ Microsoft 기본 디자인 지침 규칙 규칙 집합을 사용 하 여 코드�
 
 다음 표에서는 Microsoft 기본 디자인 지침 규칙 규칙 집합의 모든 규칙에 대해 설명 합니다.
 
-|규칙|Description|
+|규칙|설명|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|삭제 가능한 필드가 있는 형식은 삭제 가능해야 합니다.|
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|이벤트 처리기를 제대로 선언하십시오.|
@@ -42,7 +42,7 @@ Microsoft 기본 디자인 지침 규칙 규칙 집합을 사용 하 여 코드�
 |[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|COM 노출 형식의 기본 형식은 COM 노출이어야 합니다.|
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|COM 등록 메서드는 일치해야 합니다.|
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|P/Invoke를 올바르게 선언하십시오.|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|빈 종료자를 제거하십시오.|
+|[CA1821](../code-quality/ca1821.md)|빈 종료자를 제거하십시오.|
 |[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|값 형식 필드는 이식 가능해야 합니다.|
 |[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|P/Invoke 선언은 이식 가능해야 합니다.|
 |[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|약한 ID를 가진 개체를 잠그지 마십시오.|
@@ -138,19 +138,19 @@ Microsoft 기본 디자인 지침 규칙 규칙 집합을 사용 하 여 코드�
 |[CA1502](../code-quality/ca1502-avoid-excessive-complexity.md)|지나치게 복잡하게 만들지 마세요.|
 |[CA1708](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)|식별자에는 대/소문자만 다른 이름을 사용할 수 없습니다.|
 |[CA1716](../code-quality/ca1716-identifiers-should-not-match-keywords.md)|식별자는 키워드와 달라야 합니다.|
-|[CA1801](../code-quality/ca1801-review-unused-parameters.md)|사용되지 않은 매개 변수를 검토하세요.|
-|[CA1804](../code-quality/ca1804-remove-unused-locals.md)|사용되지 않는 로컬 항목을 제거하세요.|
-|[CA1809](../code-quality/ca1809-avoid-excessive-locals.md)|불필요한 로컬 항목을 사용하지 마세요.|
-|[CA1810](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)|참조 형식 정적 필드를 인라인으로 초기화하세요.|
-|[CA1811](../code-quality/ca1811-avoid-uncalled-private-code.md)|호출되지 않는 전용 코드를 사용하지 마세요.|
-|[CA1812](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)|인스턴스화되지 않은 내부 클래스를 사용하지 마세요.|
-|[CA1813](../code-quality/ca1813-avoid-unsealed-attributes.md)|봉인되지 않은 특성을 사용하지 마세요.|
-|[CA1814](../code-quality/ca1814-prefer-jagged-arrays-over-multidimensional.md)|다차원 배열보다 가변 배열을 사용하세요.|
-|[CA1815](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)|값 형식에서 Equals 또는 같음 연산자를 재정의하세요.|
-|[CA1819](../code-quality/ca1819-properties-should-not-return-arrays.md)|속성은 배열을 반환해서는 안 됩니다.|
-|[CA1820](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|문자열 길이를 사용하여 빈 문자열을 테스트하세요.|
-|[CA1822](../code-quality/ca1822-mark-members-as-static.md)|멤버를 static으로 표시하세요.|
-|[CA1823](../code-quality/ca1823-avoid-unused-private-fields.md)|사용되지 않는 전용 필드를 사용하지 마세요.|
+|[CA1801](../code-quality/ca1801.md)|사용되지 않은 매개 변수를 검토하세요.|
+|[CA1804](../code-quality/ca1804.md)|사용되지 않는 로컬 항목을 제거하세요.|
+|[CA1809](../code-quality/ca1809.md)|불필요한 로컬 항목을 사용하지 마세요.|
+|[CA1810](../code-quality/ca1810.md)|참조 형식 정적 필드를 인라인으로 초기화하세요.|
+|[CA1811](../code-quality/ca1811.md)|호출되지 않는 전용 코드를 사용하지 마세요.|
+|[CA1812](../code-quality/ca1812.md)|인스턴스화되지 않은 내부 클래스를 사용하지 마세요.|
+|[CA1813](../code-quality/ca1813.md)|봉인되지 않은 특성을 사용하지 마세요.|
+|[CA1814](../code-quality/ca1814.md)|다차원 배열보다 가변 배열을 사용하세요.|
+|[CA1815](../code-quality/ca1815.md)|값 형식에서 Equals 또는 같음 연산자를 재정의하세요.|
+|[CA1819](../code-quality/ca1819.md)|속성은 배열을 반환해서는 안 됩니다.|
+|[CA1820](../code-quality/ca1820.md)|문자열 길이를 사용하여 빈 문자열을 테스트하세요.|
+|[CA1822](../code-quality/ca1822.md)|멤버를 static으로 표시하세요.|
+|[CA1823](../code-quality/ca1823.md)|사용되지 않는 전용 필드를 사용하지 마세요.|
 |[CA2201](../code-quality/ca2201-do-not-raise-reserved-exception-types.md)|예약된 예외 형식을 발생시키지 마세요.|
 |[CA2205](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)|Win32 API의 동일한 관리형 기능을 사용하세요.|
 |[CA2208](../code-quality/ca2208-instantiate-argument-exceptions-correctly.md)|인수 예외를 올바르게 인스턴스화하세요.|

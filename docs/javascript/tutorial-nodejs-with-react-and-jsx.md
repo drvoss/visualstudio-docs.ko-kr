@@ -49,11 +49,11 @@ React는 UI를 만드는 데 사용되는 프런트 엔드 프레임워크입니
 
 ### <a name="what-is-jsx"></a>JSX란?
 
-JSX는 일반적으로 UI 요소를 설명하기 위해 React와 함께 사용되는 JavaScript 구문 확장입니다. JSX 코드는 일반 JavaScript로 트랜스파일 되어야 브라우저에서 실행할 수 있습니다.
+JSX는 일반적으로 UI 요소를 설명하기 위해 React와 함께 사용되는 JavaScript 구문 확장입니다. JSX 코드는 일반 JavaScript로 트랜스파일되어야 브라우저에서 실행할 수 있습니다.
 
 ### <a name="what-is-webpack"></a>webpack이란?
 
-webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번들로 제공합니다. 다른 리소스와 자산으로 변환하거나 패키지화할 수도 있습니다. 종종 JSX 또는 TypeScript 코드를 일반 JavaScript로 트랜스파일 하도록 Babel 또는 TypeScript 등의 컴파일러를 지정하는 데 사용됩니다.
+webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번들로 제공합니다. 다른 리소스와 자산으로 변환하거나 패키지화할 수도 있습니다. 종종 JSX 또는 TypeScript 코드를 일반 JavaScript로 트랜스파일하도록 Babel 또는 TypeScript 등의 컴파일러를 지정하는 데 사용됩니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -131,7 +131,7 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
 
     프로젝트의 *package.json* 파일은 패키지 버전을 포함하여 새 패키지 정보로 업데이트됩니다.
 
-1. UI를 사용하여 나머지 패키지를 한 번에 하나씩 검색하고 추가하는 대신 *package.json*에 다음 코드를 붙여 넣습니다. 이렇게 하려면 다음 코드와 함께 `dependencies` 섹션을 추가합니다.
+1. UI를 사용하여 나머지 패키지를 한 번에 하나씩 검색하고 추가하는 대신 *package.json*에 다음 코드를 붙여넣습니다. 이렇게 하려면 다음 코드와 함께 `dependencies` 섹션을 추가합니다.
 
     ```json
     "dependencies": {
@@ -235,11 +235,11 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
     </body>
     ```
 
-    이 HTML 페이지는 일반 JavaScript로 트랜스파일 된 JSX 및 React 코드를 포함하는 *app-bundle.js*를 로드합니다. 현재 *app-bundle.js*는 빈 파일입니다. 다음 섹션에서 코드를 트랜스파일하는 옵션을 구성합니다.
+    이 HTML 페이지는 일반 JavaScript로 트랜스파일된 JSX 및 React 코드를 포함하는 *app-bundle.js*를 로드합니다. 현재 *app-bundle.js*는 빈 파일입니다. 다음 섹션에서 코드를 트랜스파일하는 옵션을 구성합니다.
 
 ## <a name="configure-webpack-and-typescript-compiler-options"></a>Webpack 및 TypeScript 컴파일러 옵션 구성
 
-위의 단계에서 *webpack-config.js*를 프로젝트에 추가했습니다. 다음으로, webpack 구성 코드를 추가합니다. JSX를 일반 JavaScript로 번들 및 트랜스파일 하려면 입력 파일(*app.tsx*) 및 출력 파일(*app-bundle.js*)을 지정하는 간단한 webpack 구성을 추가합니다. 트랜스파일 하려면 일부 TypeScript 컴파일러 옵션을 구성합니다. 이 코드는 webpack 및 TypeScript 컴파일러를 도입하려는 기본 구성입니다.
+위의 단계에서 *webpack-config.js*를 프로젝트에 추가했습니다. 다음으로, webpack 구성 코드를 추가합니다. JSX를 일반 JavaScript로 번들 및 트랜스파일하려면 입력 파일(*app.tsx*) 및 출력 파일(*app-bundle.js*)을 지정하는 간단한 webpack 구성을 추가합니다. 트랜스파일하려면 일부 TypeScript 컴파일러 옵션을 구성합니다. 이 코드는 webpack 및 TypeScript 컴파일러를 도입하려는 기본 구성입니다.
 
 1. 솔루션 탐색기에서 *webpack-config.js*를 열고 다음 코드를 추가합니다.
 
@@ -312,17 +312,17 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
 
     Visual Studio는 *app-bundle.js* 및 *app-bundle.js.map*을 포함하는 프로젝트에 *dist* 폴더를 추가합니다.
 
-1. *app-bundle.js*를 열고 트랜스파일 된 JavaScript 코드를 봅니다.
+1. *app-bundle.js*를 열고 트랜스파일된 JavaScript 코드를 봅니다.
 
 1. 외부에서 수정된 파일을 다시 로드하라는 메시지가 나타나면 **모두 예**를 선택합니다.
 
     ![수정한 파일 로드](../javascript/media/tutorial-nodejs-react-reload-files.png)
 
-*app.tsx*를 변경할 때마다 webpack 명령을 다시 실행해야 합니다. 이 단계를 자동화하려면 빌드 스크립트를 추가하여 JSX를 트랜스파일 합니다.
+*app.tsx*를 변경할 때마다 webpack 명령을 다시 실행해야 합니다. 이 단계를 자동화하려면 빌드 스크립트를 추가하여 JSX를 트랜스파일합니다.
 
 ## <a name="add-a-build-script-to-transpile-the-jsx"></a>빌드 스크립트를 추가하여 JSX를 트랜스파일
 
-Visual Studio 2019부터 빌드 스크립트가 필요합니다. 앞의 섹션에서 표시된 것처럼, 명령줄에서 JSX를 변환 컴파일하기보다 Visual Studio에서 빌드 할 때 JSX를 변환 컴파일할 수 있습니다.
+Visual Studio 2019부터 빌드 스크립트가 필요합니다. 앞의 섹션에서 표시된 것처럼, 명령줄에서 JSX를 변환 컴파일하기보다 Visual Studio에서 빌드할 때 JSX를 변환 컴파일할 수 있습니다.
 
 * *package.json*을 열고 `dependencies` 섹션 뒤에 다음 섹션을 추가합니다.
 

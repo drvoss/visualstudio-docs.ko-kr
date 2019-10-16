@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa04ca237134c1947b5c58b921f87f32a1ecfb16
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: f2e42e68f008c625c8d6b5150d0348d14e29d3dc
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234301"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72348944"
 ---
 # <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: 식별자에는 정확한 철자를 사용해야 합니다.
 
@@ -27,7 +27,7 @@ ms.locfileid: "71234301"
 |-|-|
 |TypeName|IdentifiersShouldBeSpelledCorrectly|
 |CheckId|CA1704|
-|범주|Microsoft.Naming|
+|범주|Microsoft. 이름 지정|
 |주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
@@ -52,7 +52,7 @@ ms.locfileid: "71234301"
 
 맞춤법 검사기는 현재 영어 기반 문화권 사전에 대해서만 확인 합니다. **CodeAnalysisCulture** 요소를 추가 하 여 프로젝트 파일에서 프로젝트의 문화권을 변경할 수 있습니다.
 
-예:
+예를 들면,
 
 ```xml
 <Project ...>
@@ -69,13 +69,13 @@ ms.locfileid: "71234301"
 
 ### <a name="to-add-words-to-a-custom-dictionary"></a>사용자 지정 사전에 단어를 추가 하려면
 
-사용자 지정 사전 XML 파일 *Customdictionary*를 이름으로 지정 합니다. 도구, 프로젝트 디렉터리 또는 사용자의 프로필 아래에 있는 도구와 연결 된 디렉터리 ( *\\%USERPROFILE%\Application Data ...* )의 설치 디렉터리에 사전을 추가 합니다. Visual Studio에서 프로젝트에 사용자 지정 사전을 추가 하는 방법에 대 한 자세한 [내용은 방법: 코드 분석 사전을](../code-quality/how-to-customize-the-code-analysis-dictionary.md)사용자 지정 합니다.
+사용자 지정 사전 XML 파일 *Customdictionary*를 이름으로 지정 합니다. 도구, 프로젝트 디렉터리 또는 사용자의 프로필 아래에 있는 도구와 연결 된 디렉터리 ( *%USERPROFILE%\Application Data @ no__t-1 ...* )의 설치 디렉터리에 사전을 추가 합니다. Visual Studio에서 프로젝트에 사용자 지정 사전을 추가 하는 방법에 대 한 자세한 내용은 [방법: 코드 분석 사전 사용자 지정](../code-quality/how-to-customize-the-code-analysis-dictionary.md)을 참조 하세요.
 
 - 사전/단어/인식 된 경로에서 위반을 발생 시 키 지 않아야 하는 단어를 추가 합니다.
 
 - 사전/단어/인식할 수 없는 경로에서 위반을 발생 시켜야 하는 단어를 추가 합니다.
 
-- 사전/단어/사용 되지 않는 경로에서 사용 되지 않는 것으로 플래그가 지정 되어야 하는 단어를 추가 합니다. 관련 규칙 항목 [CA1726을 참조 하세요. 자세한 내용은 선호](../code-quality/ca1726-use-preferred-terms.md) 하는 용어를 사용 합니다.
+- 사전/단어/사용 되지 않는 경로에서 사용 되지 않는 것으로 플래그가 지정 되어야 하는 단어를 추가 합니다. 자세한 내용은 관련 규칙 항목 [CA1726: 선호 하는 용어 사용](../code-quality/ca1726-use-preferred-terms.md) 을 참조 하세요.
 
 - 머리글자어 대/소문자 구분 규칙에 대 한 예외를 Dictionary/머리글자어/CasingExceptions 경로에 추가 합니다.
 
@@ -110,13 +110,13 @@ ms.locfileid: "71234301"
 
 ## <a name="related-rules"></a>관련 규칙
 
-- [CA2204: 리터럴의 철자가 정확 해야 합니다.](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
-- [CA1703: 리소스 문자열의 철자가 정확한 지 확인 해야 합니다.](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
-- [CA1709: 식별자의 대/소문자를 올바르게 지정 해야 합니다.](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708: 식별자는 대/소문자가 달라 야 합니다.](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA2204: 리터럴의 철자가 맞아야 합니다.](../code-quality/ca2204.md)
+- [CA1703: 리소스 문자열에는 정확한 철자를 사용해야 합니다.](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1709: 식별자는 정확한 대/소문자를 사용해야 합니다.](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708: 식별자에는 대/소문자만 다른 이름을 사용할 수 없습니다.](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 - [CA1707: 식별자에는 밑줄을 사용할 수 없습니다.](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
-- [CA1726: 기본 사용 약관 사용](../code-quality/ca1726-use-preferred-terms.md)
+- [CA1726: 기본 설정 용어를 사용하십시오.](../code-quality/ca1726-use-preferred-terms.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방법: 코드 분석 사전 사용자 지정](../code-quality/how-to-customize-the-code-analysis-dictionary.md)

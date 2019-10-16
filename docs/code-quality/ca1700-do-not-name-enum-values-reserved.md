@@ -1,5 +1,5 @@
 ---
-title: 'CA1700: 예약 된 열거형 값 &#39;의 이름을 예약 하지 않음&#39;'
+title: 'CA1700: 예약 된 열거형 값 &#39;의 이름을 예약 하지 않습니다.&#39;'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5171123827481c99bbc35c10b04aaf942a15fabb
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: f0097725b8f84a641df9061d693f1f5c4bdf1851
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234383"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72348967"
 ---
-# <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700: 예약 된 열거형 값 &#39;의 이름을 예약 하지 않음&#39;
+# <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700: 예약 된 열거형 값 &#39;의 이름을 예약 하지 않습니다.&#39;
 
 |||
 |-|-|
 |TypeName|DoNotNameEnumValuesReserved|
 |CheckId|CA1700|
-|범주|Microsoft.Naming|
+|범주|Microsoft. 이름 지정|
 |주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
@@ -40,11 +40,11 @@ ms.locfileid: "71234383"
 
 예약 된 멤버를 사용 하는 대신 이후 버전의 열거에 새 멤버를 추가 합니다. 대부분의 경우 새 멤버를 추가 하는 것은 원래 멤버의 값이 변경 되지 않는 한 새로운 변경 내용이 아닙니다.
 
-제한 된 수의 사례에서 원래 멤버가 원래 값을 유지 하는 경우에도 멤버를 추가 하는 것은 주요 변경 사항입니다. 주로 전체 멤버 목록을 포함 하 고에서 예외를 throw 하는 반환 값에 대해 `switch` (`Select` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 문을 사용 하는 호출자를 중단 하지 않고 기존 코드 경로에서 새 멤버를 반환할 수 없습니다. 기본 사례입니다. 두 번째 문제는 클라이언트 코드가와 <xref:System.Enum.IsDefined%2A?displayProperty=fullName>같은 리플렉션 메서드에서의 동작 변경을 처리 하지 않을 수 있다는 것입니다. 따라서 새 멤버가 기존 메서드에서 반환 되어야 하는 경우 또는 알려진 응용 프로그램 비 호환성이 잘못 된 리플렉션 사용으로 인해 발생 하는 경우 유일한 해결책은 다음과 같습니다.
+제한 된 수의 사례에서 원래 멤버가 원래 값을 유지 하는 경우에도 멤버를 추가 하는 것은 주요 변경 사항입니다. 주로 전체 멤버 목록을 포함 하 고 기본 사례에서 예외를 throw 하는 반환 값에 대 한 `switch` ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]의 `Select`) 문을 사용 하는 호출자를 분리 하지 않고 기존 코드 경로에서 새 멤버를 반환할 수 없습니다. 두 번째 문제는 클라이언트 코드가 <xref:System.Enum.IsDefined%2A?displayProperty=fullName>과 같은 리플렉션 메서드의 동작 변경을 처리 하지 않을 수 있다는 것입니다. 따라서 새 멤버가 기존 메서드에서 반환 되어야 하는 경우 또는 알려진 응용 프로그램 비 호환성이 잘못 된 리플렉션 사용으로 인해 발생 하는 경우 유일한 해결책은 다음과 같습니다.
 
 1. 원래 및 새 멤버를 포함 하는 새 열거형을 추가 합니다.
 
-2. 원래 열거를 <xref:System.ObsoleteAttribute?displayProperty=fullName> 특성으로 표시 합니다.
+2. 원래 열거형을 <xref:System.ObsoleteAttribute?displayProperty=fullName> 특성으로 표시 합니다.
 
    원래 열거를 표시 하는 외부에 표시 되는 형식 또는 멤버에 대해 동일한 절차를 수행 합니다.
 
@@ -58,12 +58,12 @@ ms.locfileid: "71234383"
 
 ## <a name="related-rules"></a>관련 규칙
 
-[CA2217: 열거형을 FlagsAttribute로 표시 하지 않습니다.](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+[CA2217: 열거형을 FlagsAttribute로 표시하지 마십시오.](../code-quality/ca2217.md)
 
-[CA1712: 열거형 값에 형식 이름을 접두사로 사용 하지 마십시오.](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+[CA1712: 열거형 값에 형식 이름을 접두사로 사용하지 마십시오.](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
-[CA1028: Enum 저장소는 Int32 여야 합니다.](../code-quality/ca1028-enum-storage-should-be-int32.md)
+[CA1028: 열거형 스토리지는 Int32여야 합니다.](../code-quality/ca1028-enum-storage-should-be-int32.md)
 
 [CA1008: 열거형에는 0 값이 있어야 합니다.](../code-quality/ca1008-enums-should-have-zero-value.md)
 
-[CA1027: 열거형을 FlagsAttribute로 표시](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+[CA1027: 열거형을 FlagsAttribute로 표시하십시오.](../code-quality/ca1027-mark-enums-with-flagsattribute.md)

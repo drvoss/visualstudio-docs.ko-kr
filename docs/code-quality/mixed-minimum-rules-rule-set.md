@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed996aa19f9fda1310dccc117f8abfb6efa29e1f
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: 898a11be40d29c2e6181886c2c90af9315af6e3e
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72305536"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349562"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>혼합 최소 규칙 규칙 집합
 
@@ -71,7 +71,7 @@ Microsoft Mixed Minimum 규칙은 잠재적 보안 허점 및 응용 프로그�
 |[C6518](../code-quality/c6518.md)|쓰기 불가능 버퍼에 대한 쓰기 가능 크기|
 |[C6522](../code-quality/c6522.md)|잘못된 크기 문자열 유형|
 |[C6525](../code-quality/c6525.md)|잘못된 크기 문자열 접근할 수 없는 위치|
-|[C6527](../code-quality/c6527.md)|주석이 잘못 되었습니다. ' NeedsRelease ' 속성은 void 형식의 값에 사용할 수 없습니다.|
+|[C6527](../code-quality/c6527.md)|주석이 잘못되었습니다. 'NeedsRelease' 속성은 void 형식 값에 사용할 수 없습니다.|
 |[C6530](../code-quality/c6530.md)|인식할 수 없는 형식 문자열 스타일|
 |[C6540](../code-quality/c6540.md)|이 함수에 특성 주석을 사용하면 기존의 모든 __declspec 주석이 무효화됩니다.|
 |[C6551](../code-quality/c6551.md)|크기 사양이 잘못되었습니다. 식을 구문 분석할 수 없습니다.|
@@ -142,7 +142,7 @@ Microsoft Mixed Minimum 규칙은 잠재적 보안 허점 및 응용 프로그�
 |[C28286](../code-quality/c28286.md)|함수의 경우 끝 부분 근처에 구문 오류가 있습니다.|
 |[C28287](../code-quality/c28287.md)|함수의 경우 \_At\_() 주석에 구문 오류(인식할 수 없는 매개 변수 이름)|
 |[C28288](../code-quality/c28288.md)|함수의 경우 \_At\_() 주석에 구문 오류(잘못된 매개 변수 이름)|
-|[C28289](../code-quality/c28289.md)|For 함수: ReadableTo 또는 WritableTo에 매개 변수로 제한 사양이 없습니다.|
+|[C28289](../code-quality/c28289.md)|함수의 경우 ReadableTo 또는 WritableTo에 limit-spec가 매개 변수로 포함되지 않았습니다.|
 |[C28290](../code-quality/c28290.md)|함수의 주석에 실제 매개 변수 개수보다 많은 외부 참조가 있습니다.|
 |[C28291](../code-quality/c28291.md)|함수의 경우 역참조 수준 0에서 post null/notnull이 의미가 없습니다.|
 |[C28300](../code-quality/c28300.md)|연산자에 호환되지 않는 형식의 식 피연산자입니다.|
@@ -155,5 +155,5 @@ Microsoft Mixed Minimum 규칙은 잠재적 보안 허점 및 응용 프로그�
 |[C28351](../code-quality/c28351.md)|주석이 동적 값(변수)을 조건에 사용할 수 없는 경우를 설명합니다.|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|삭제 가능한 필드가 있는 형식은 삭제 가능해야 합니다.|
 |[CA1821](../code-quality/ca1821.md)|빈 종료자를 제거하십시오.|
-|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|삭제 가능한 필드는 삭제해야 합니다.|
-|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|ValueType.Equals를 재정의할 때 같음 연산자를 오버로드하십시오.|
+|[CA2213](../code-quality/ca2213.md)|삭제 가능한 필드는 삭제해야 합니다.|
+|[CA2231](../code-quality/ca2231.md)|ValueType.Equals를 재정의할 때 같음 연산자를 오버로드하십시오.|

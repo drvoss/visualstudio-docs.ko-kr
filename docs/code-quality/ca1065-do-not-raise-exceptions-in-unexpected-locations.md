@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 257100be0eb2766ef413854795c934b230e29370
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: b45e98fde35e8be3296ce1c6916f61ef7b76a306
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235240"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349023"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: 예기치 않은 위치에서 예외를 발생시키지 마십시오.
 
@@ -27,7 +27,7 @@ ms.locfileid: "71235240"
 |-|-|
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
 |CheckId|CA1065|
-|범주|Microsoft.Design|
+|범주|Microsoft 디자인|
 |주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
@@ -66,13 +66,13 @@ ms.locfileid: "71235240"
 
 다음 예외는 속성 get 메서드에서 throw 될 수 있습니다.
 
-- <xref:System.InvalidOperationException?displayProperty=fullName>및 모든 파생 (포함 <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> 및 모든 파생 (<xref:System.ObjectDisposedException?displayProperty=fullName> 포함)
 
-- <xref:System.NotSupportedException?displayProperty=fullName>및 all 파생
+- <xref:System.NotSupportedException?displayProperty=fullName> 및 모든 파생
 
-- <xref:System.ArgumentException?displayProperty=fullName>(인덱싱된 get 에서만)
+- <xref:System.ArgumentException?displayProperty=fullName> (인덱싱된 get 에서만)
 
-- <xref:System.Collections.Generic.KeyNotFoundException>(인덱싱된 get 에서만)
+- <xref:System.Collections.Generic.KeyNotFoundException> (인덱싱된 get 에서만)
 
 ### <a name="event-accessor-methods"></a>이벤트 접근자 메서드
 
@@ -80,11 +80,11 @@ ms.locfileid: "71235240"
 
 다음 예외는 이벤트 접근자에서 throw 될 수 있습니다.
 
-- <xref:System.InvalidOperationException?displayProperty=fullName>및 모든 파생 (포함 <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> 및 모든 파생 (<xref:System.ObjectDisposedException?displayProperty=fullName> 포함)
 
-- <xref:System.NotSupportedException?displayProperty=fullName>및 all 파생
+- <xref:System.NotSupportedException?displayProperty=fullName> 및 모든 파생
 
-- <xref:System.ArgumentException>및 파생물
+- <xref:System.ArgumentException> 및 파생
 
 ### <a name="equals-methods"></a>Equals 메서드
 
@@ -94,7 +94,7 @@ ms.locfileid: "71235240"
 
 - <xref:System.IEquatable%601.Equals%2A>
 
-**Equals** 메서드는 예외를 `true` throw `false` 하는 대신 또는를 반환 해야 합니다. 예를 들어 Equals가 두 개의 일치 하지 않는 형식을 전달 하는 `false` 경우를 <xref:System.ArgumentException>throw 하는 대신를 반환 해야 합니다.
+**Equals** 메서드는 예외를 throw 하는 대신-1 또는 `false` @no__t 반환 해야 합니다. 예를 들어 Equals가 두 개의 일치 하지 않는 형식으로 전달 되는 경우-1 @no__t을 throw 하지 않고 `false`만 반환 해야 합니다.
 
 ### <a name="gethashcode-methods"></a>GetHashCode 메서드
 
@@ -106,11 +106,11 @@ ms.locfileid: "71235240"
 
 **GetHashCode** 는 항상 값을 반환 해야 합니다. 그렇지 않으면 해시 테이블의 항목이 손실 될 수 있습니다.
 
-인수를 사용 하는 **GetHashCode** 버전은을 <xref:System.ArgumentException>throw 할 수 있습니다. 그러나 **개체 GetHashCode** 는 예외를 throw 해서는 안 됩니다.
+인수를 사용 하는 **GetHashCode** 버전은-1 @no__t을 throw 할 수 있습니다. 그러나 **개체 GetHashCode** 는 예외를 throw 해서는 안 됩니다.
 
 ### <a name="tostring-methods"></a>ToString 메서드
 
-디버거에서는를 <xref:System.Object.ToString%2A?displayProperty=fullName> 사용 하 여 개체에 대 한 정보를 문자열 형식으로 표시 합니다. 따라서 **ToString** 은 개체의 상태를 변경 하면 안 되며 예외를 throw 해서는 안 됩니다.
+디버거에서는 @no__t를 사용 하 여 개체에 대 한 정보를 문자열 형식으로 표시 합니다. 따라서 **ToString** 은 개체의 상태를 변경 하면 안 되며 예외를 throw 해서는 안 됩니다.
 
 ### <a name="static-constructors"></a>정적 생성자
 
@@ -122,13 +122,13 @@ ms.locfileid: "71235240"
 
 ### <a name="dispose-methods"></a>Dispose 메서드
 
-메서드 <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> 는 예외를 throw 해서는 안 됩니다. Dispose는 종종 `finally` 절에서 정리 논리의 일부로 호출 됩니다. 따라서 Dispose에서 명시적으로 예외를 throw 하면 사용자가 `finally` 절 내에서 예외 처리를 추가 하 게 됩니다.
+@No__t-0 메서드는 예외를 throw 해서는 안 됩니다. Dispose는 `finally` 절에서 정리 논리의 일부로 호출 되는 경우가 많습니다. 따라서 Dispose에서 명시적으로 예외를 throw 하면 사용자가 `finally` 절 내에 예외 처리를 추가 하 게 됩니다.
 
 Dispose **(false)** 코드 경로는 dispose가 종료자에서 거의 항상 호출 되기 때문에 예외를 throw 해서는 안 됩니다.
 
 ### <a name="equality-operators--"></a>같음 연산자 (= =,! =)
 
-Equals 메서드와 마찬가지로 같음 연산자는 `true` 또는 `false`를 반환 해야 하며 예외를 throw 해서는 안 됩니다.
+Equals 메서드와 마찬가지로 같음 연산자는 `true` 또는 `false`을 반환 하 고 예외를 throw 해서는 안 됩니다.
 
 ### <a name="implicit-cast-operators"></a>암시적 캐스트 연산자
 
@@ -146,8 +146,8 @@ Equals 메서드와 마찬가지로 같음 연산자는 `true` 또는 `false`를
 
 ## <a name="related-rules"></a>관련 규칙
 
-- [CA2219: Exception 절에서 예외를 발생 시 키 지 마십시오.](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
+- [CA2219: exception 절에서 예외를 발생시키지 마십시오.](../code-quality/ca2219.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [디자인 경고](../code-quality/design-warnings.md)

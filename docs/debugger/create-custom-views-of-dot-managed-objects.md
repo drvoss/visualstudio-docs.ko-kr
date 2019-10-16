@@ -1,5 +1,5 @@
 ---
-title: 개체의 사용자 지정 뷰 만들기 | Microsoft Docs
+title: 관리 되는 개체의 사용자 지정 뷰 만들기 | Microsoft Docs
 ms.date: 01/08/2019
 ms.topic: conceptual
 f1_keywords:
@@ -23,14 +23,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 36e875bc8101bc8a1b0eb1bec6671c76e3b0c9b2
-ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
+ms.openlocfilehash: 4649ac11daa062089d2916a5d5d0a331e4d74272
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71814293"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349452"
 ---
-# <a name="create-custom-views-of-objects-c-visual-basic-f-ccli"></a>개체의 사용자 지정 뷰 만들기C#(, Visual Basic F#, C++,/cli)
+# <a name="create-custom-views-of-managed-objects-c-visual-basic-f-ccli"></a>관리 되는 개체의 사용자 지정C#뷰 만들기 ( F#, C++Visual Basic,,/cli)
 Visual Studio에서 디버거 변수 창에 데이터 형식이 표시되는 방식을 사용자 지정할 수 있습니다.
 
 ## <a name="attributes"></a>특성
@@ -41,12 +41,12 @@ Visual Studio에서 디버거 변수 창에 데이터 형식이 표시되는 방
 
 ## <a name="visualizers"></a>시각화 도우미
 
-시각화 도우미를 작성하여 관리되는 데이터 형식을 표시할 수 있습니다. 자세한 내용은 [방법: 시각화 도우미 작성](/visualstudio/debugger/create-custom-visualizers-of-data)을 참조하세요.
+시각화 도우미를 작성하여 관리되는 데이터 형식을 표시할 수 있습니다. 자세한 내용은 [방법: 시각화 도우미 작성](/visualstudio/debugger/create-custom-visualizers-of-data)을 참조 하세요.
 
 > [!NOTE]
 > 코드의 경우 [디버거에서 개체의 C++ 사용자 지정 뷰 만들기](/visualstudio/debugger/create-custom-views-of-native-objects)에 설명 된 대로 Natvis 프레임 워크를 사용 하 여 사용자 지정 데이터 형식 확장을 추가할 수 있습니다. C++
 
-## <a name="see-also"></a>관련 항목
+## <a name="see-also"></a>관련 항목:
 
 - [DebuggerDisplay 특성을 사용 하 여 표시할 내용을 디버거에 알립니다.](../debugger/using-the-debuggerdisplay-attribute.md)
 - [DebuggerTypeProxy 특성을 사용 하 여 표시할 형식을 디버거에 알립니다.](../debugger/using-debuggertypeproxy-attribute.md)

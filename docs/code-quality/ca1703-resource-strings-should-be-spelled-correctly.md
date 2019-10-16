@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edd3945953a07b10aee5c2690a25aafe446e2c10
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: c37e07d6259c4229999ff7d4068400c788369e86
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234318"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72348964"
 ---
 # <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703: 리소스 문자열에는 정확한 철자를 사용해야 합니다.
 
@@ -27,7 +27,7 @@ ms.locfileid: "71234318"
 |-|-|
 |TypeName|ResourceStringsShouldBeSpelledCorrectly|
 |CheckId|CA1703|
-|범주|Microsoft.Naming|
+|범주|Microsoft. 이름 지정|
 |주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
@@ -36,18 +36,18 @@ ms.locfileid: "71234318"
 
 ## <a name="rule-description"></a>규칙 설명
 
-이 규칙은 리소스 문자열을 단어 (토큰화 복합 단어)로 구문 분석 하 고 각 단어/토큰의 맞춤법을 검사 합니다. 구문 분석 알고리즘에 대 한 자세한 내용은 [CA1704를 참조 하세요. 식별자의 철자가 정확한](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)지 확인 해야 합니다.
+이 규칙은 리소스 문자열을 단어 (토큰화 복합 단어)로 구문 분석 하 고 각 단어/토큰의 맞춤법을 검사 합니다. 구문 분석 알고리즘에 대 한 자세한 내용은 [CA1704: identifier의 철자가 정확한](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)지 확인 하세요.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 
-이 규칙 위반 문제를 해결 하려면 올바른 철자의 단어 전체를 사용 하거나 사용자 지정 사전에 단어를 추가 합니다. 사용자 지정 사전을 사용 하는 방법에 대 한 [자세한 내용은 CA1704를 참조 하세요. 식별자의 철자가 정확한](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)지 확인 해야 합니다.
+이 규칙 위반 문제를 해결 하려면 올바른 철자의 단어 전체를 사용 하거나 사용자 지정 사전에 단어를 추가 합니다. 사용자 지정 사전을 사용 하는 방법에 대 한 자세한 내용은 [CA1704: identifier의 철자가](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)정확한 지 확인 하세요.
 
 ## <a name="change-the-dictionary-language"></a>사전 언어 변경
 
 기본적으로 영어 (en) 버전의 맞춤법 검사기가 사용 됩니다. 맞춤법 검사기의 언어를 변경 하려는 경우 *AssemblyInfo.cs* 또는 *AssemblyInfo* 파일에 다음 특성 중 하나를 추가 하 여이 작업을 수행할 수 있습니다.
 
-- 리소스가 <xref:System.Reflection.AssemblyCultureAttribute> 위성 어셈블리에 있는 경우를 사용 하 여 문화권을 지정 합니다.
-- 리소스가 <xref:System.Resources.NeutralResourcesLanguageAttribute> 코드와 동일한 어셈블리에 있는 경우를 사용 하 여 어셈블리의 *중립 문화권* 을 지정 합니다.
+- 리소스가 위성 어셈블리에 있는 경우에는 <xref:System.Reflection.AssemblyCultureAttribute>을 사용 하 여 문화권을 지정 합니다.
+- 리소스가 코드와 동일한 어셈블리에 있는 경우 <xref:System.Resources.NeutralResourcesLanguageAttribute>을 사용 하 여 어셈블리의 *중립 문화권* 을 지정 합니다.
 
 > [!IMPORTANT]
 > 문화권을 영어 기반 문화권 이외의 값으로 설정 하면이 코드 분석 규칙이 자동으로 사용 되지 않습니다.
@@ -58,6 +58,6 @@ ms.locfileid: "71234318"
 
 ## <a name="related-rules"></a>관련 규칙
 
-- [CA1701: 리소스 문자열 복합 단어는 대/소문자를 올바르게 지정 해야 합니다.](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
-- [CA1704: 식별자의 철자가 정확한 지 확인 해야 합니다.](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
-- [CA2204: 리터럴의 철자가 정확 해야 합니다.](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+- [CA1701: 리소스 문자열 복합 단어는 정확한 대/소문자를 사용해야 합니다.](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1704: 식별자에는 정확한 철자를 사용해야 합니다.](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+- [CA2204: 리터럴의 철자가 맞아야 합니다.](../code-quality/ca2204.md)

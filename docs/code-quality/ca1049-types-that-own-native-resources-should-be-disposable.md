@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03b8d222fc2349022ef324c9905279677fc86849
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: a39d1e03da062f3030571820e98898d5122d495f
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306122"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349096"
 ---
 # <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: 네이티브 리소스가 있는 형식은 삭제 가능해야 합니다.
 
@@ -30,7 +30,7 @@ ms.locfileid: "72306122"
 |-|-|
 |TypeName|TypesThatOwnNativeResourcesShouldBeDisposable|
 |CheckId|CA1049|
-|범주|Microsoft.Design|
+|범주|Microsoft 디자인|
 |주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
@@ -56,11 +56,11 @@ ms.locfileid: "72306122"
 [!code-vb[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/VisualBasic/ca1049-types-that-own-native-resources-should-be-disposable_1.vb)]
 
 ## <a name="related-rules"></a>관련 규칙
-[CA2115: GC를 호출 합니다. 네이티브 리소스를 사용 하는 경우 KeepAlive @ no__t-0
+[CA2115: 네이티브 리소스를 사용하는 경우에는 GC.KeepAlive를 호출하십시오.](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
 
-[CA1816: GC를 호출 합니다. Gc.suppressfinalize 올바르게 @ no__t-0
+[CA1816: GC.SuppressFinalize를 올바르게 호출하십시오.](../code-quality/ca1816.md)
 
-[CA2216: 삭제 가능한 형식은 종료자 @ no__t를 선언 해야 합니다.
+[CA2216: 삭제 가능한 형식은 종료자를 선언해야 합니다.](../code-quality/ca2216.md)
 
 [CA1001: 삭제 가능한 필드가 있는 형식은 삭제 가능해야 합니다.](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
 

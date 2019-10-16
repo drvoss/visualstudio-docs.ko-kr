@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c7c88e565de4f4b3e3b25b6523ff04f1831a70d
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: b4a6c94f5784d57a90dd31f21f8829b3141140d0
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314150"
+ms.locfileid: "72349585"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>방법: 코드 분석 사전 사용자 지정
 
@@ -72,13 +72,13 @@ ms.locfileid: "72314150"
 
 - [Dictionary/Words/DiscreteExceptions/Term](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
 
-- [Dictionary/Acronyms/CasingExceptions/Acronym](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
+- [사전/머리글자어/CasingExceptions/머리글자어](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
 
 ### <a name="BKMK_DictionaryWordsRecognizedWord"></a>사전/단어/인식/단어
 
 코드 분석이 올바른 철자를 식별 하는 용어 목록에 용어를 포함 하려면 용어를 사전/단어/인식/단어 요소의 내부 텍스트로 추가 합니다. Dictionary/Words/인식할 수 있는/Word 요소의 용어는 대/소문자를 구분 하지 않습니다.
 
-**예제**
+**예**
 
 ```xml
 <Dictionary>
@@ -95,25 +95,25 @@ ms.locfileid: "72314150"
 
 사전/단어/인식할 수 있는 노드의 용어는 다음 코드 분석 규칙에 적용 됩니다.
 
-- [CA1701: 리소스 문자열 복합 단어는 대/소문자를 올바르게 지정 해야 합니다. @ no__t-0
+- [CA1701: 리소스 문자열 복합 단어는 정확한 대/소문자를 사용해야 합니다.](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
-- [CA1702: 복합 단어는 대/소문자를 올바르게 지정 해야 합니다. @ no__t-0
+- [CA1702: 복합 단어는 정확한 대/소문자를 사용해야 합니다.](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
-- [CA1703: 리소스 문자열의 철자가 정확한 지 확인 합니다. @ no__t-0
+- [CA1703: 리소스 문자열에는 정확한 철자를 사용해야 합니다.](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
-- [CA1704: 식별자의 철자가 정확한 지 확인 합니다. @ no__t-0
+- [CA1704: 식별자에는 정확한 철자를 사용해야 합니다.](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
-- [CA1709: 식별자의 대/소문자를 올바르게 지정 해야 합니다. @ no__t-0
+- [CA1709: 식별자는 정확한 대/소문자를 사용해야 합니다.](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
-- [CA1726: 선호 하는 용어 사용 @ no__t-0
+- [CA1726: 기본 설정 용어를 사용하십시오.](../code-quality/ca1726-use-preferred-terms.md)
 
-- [CA2204: 리터럴의 철자가 정확한 지 확인 합니다. @ no__t-0
+- [CA2204: 리터럴의 철자가 맞아야 합니다.](../code-quality/ca2204.md)
 
 ### <a name="BKMK_DictionaryWordsUnrecognizedWord"></a>사전/단어/인식할 수 없음/단어
 
 코드 분석이 올바른 철자를 식별 하는 용어 목록에서 용어를 제외 하려면 a s o/Words/인식할 수 없는/Word 요소의 내부 텍스트로 제외할 용어를 추가 합니다. 사전/단어/인식할 수 없는/Word 요소의 용어는 대/소문자를 구분 하지 않습니다.
 
-**예제**
+**예**
 
 ```xml
 <Dictionary>
@@ -130,19 +130,19 @@ ms.locfileid: "72314150"
 
 사전/단어/인식할 수 없는 노드의 용어는 다음 코드 분석 규칙에 적용 됩니다.
 
-- [CA1701: 리소스 문자열 복합 단어는 대/소문자를 올바르게 지정 해야 합니다. @ no__t-0
+- [CA1701: 리소스 문자열 복합 단어는 정확한 대/소문자를 사용해야 합니다.](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
-- [CA1702: 복합 단어는 대/소문자를 올바르게 지정 해야 합니다. @ no__t-0
+- [CA1702: 복합 단어는 정확한 대/소문자를 사용해야 합니다.](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
-- [CA1703: 리소스 문자열의 철자가 정확한 지 확인 합니다. @ no__t-0
+- [CA1703: 리소스 문자열에는 정확한 철자를 사용해야 합니다.](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
-- [CA1704: 식별자의 철자가 정확한 지 확인 합니다. @ no__t-0
+- [CA1704: 식별자에는 정확한 철자를 사용해야 합니다.](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
-- [CA1709: 식별자의 대/소문자를 올바르게 지정 해야 합니다. @ no__t-0
+- [CA1709: 식별자는 정확한 대/소문자를 사용해야 합니다.](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
-- [CA1726: 선호 하는 용어 사용 @ no__t-0
+- [CA1726: 기본 설정 용어를 사용하십시오.](../code-quality/ca1726-use-preferred-terms.md)
 
-- [CA2204: 리터럴의 철자가 정확한 지 확인 합니다. @ no__t-0
+- [CA2204: 리터럴의 철자가 맞아야 합니다.](../code-quality/ca2204.md)
 
 ### <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a>사전/단어/사용 되지 않음/조건 [@PreferredAlternate]
 
@@ -154,7 +154,7 @@ ms.locfileid: "72314150"
 
 - PreferredAlternate 특성 값은 대/소문자를 구분 합니다. 복합 대체 (파스칼식)의 경우를 사용 합니다.
 
-**예제**
+**예**
 
 ```xml
 <Dictionary>
@@ -171,15 +171,15 @@ ms.locfileid: "72314150"
 
 사전/단어/사용 되지 않는 노드의 용어는 다음 코드 분석 규칙에 적용 됩니다.
 
-- [CA1701: 리소스 문자열 복합 단어는 대/소문자를 올바르게 지정 해야 합니다. @ no__t-0
+- [CA1701: 리소스 문자열 복합 단어는 정확한 대/소문자를 사용해야 합니다.](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
-- [CA1702: 복합 단어는 대/소문자를 올바르게 지정 해야 합니다. @ no__t-0
+- [CA1702: 복합 단어는 정확한 대/소문자를 사용해야 합니다.](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
-- [CA1703: 리소스 문자열의 철자가 정확한 지 확인 합니다. @ no__t-0
+- [CA1703: 리소스 문자열에는 정확한 철자를 사용해야 합니다.](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
-- [CA1704: 식별자의 철자가 정확한 지 확인 합니다. @ no__t-0
+- [CA1704: 식별자에는 정확한 철자를 사용해야 합니다.](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
-- [CA1726: 선호 하는 용어 사용 @ no__t-0
+- [CA1726: 기본 설정 용어를 사용하십시오.](../code-quality/ca1726-use-preferred-terms.md)
 
 ### <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a>사전/단어/복합/용어 [@CompoundAlternate]
 
@@ -189,7 +189,7 @@ ms.locfileid: "72314150"
 
 - CompoundAlternate 특성 값은 대/소문자를 구분 합니다. 복합 대체 (파스칼식)의 경우를 사용 합니다.
 
-**예제**
+**예**
 
 ```xml
 <Dictionary>
@@ -206,19 +206,19 @@ ms.locfileid: "72314150"
 
 사전/단어/복합 노드의 용어는 다음 코드 분석 규칙에 적용 됩니다.
 
-- [CA1701: 리소스 문자열 복합 단어는 대/소문자를 올바르게 지정 해야 합니다. @ no__t-0
+- [CA1701: 리소스 문자열 복합 단어는 정확한 대/소문자를 사용해야 합니다.](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
-- [CA1702: 복합 단어는 대/소문자를 올바르게 지정 해야 합니다. @ no__t-0
+- [CA1702: 복합 단어는 정확한 대/소문자를 사용해야 합니다.](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
-- [CA1703: 리소스 문자열의 철자가 정확한 지 확인 합니다. @ no__t-0
+- [CA1703: 리소스 문자열에는 정확한 철자를 사용해야 합니다.](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
-- [CA1704: 식별자의 철자가 정확한 지 확인 합니다. @ no__t-0
+- [CA1704: 식별자에는 정확한 철자를 사용해야 합니다.](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
 ### <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a>Dictionary/Words/DiscreteExceptions/Term
 
 복합 단어에 대 한 대/소문자 규칙에 따라 용어를 확인할 때 코드 분석이 단일의 불연속 단어로 식별 하는 용어 목록에서 용어를 제외 하려면 용어를 Dictionary/Words/DiscreteExceptions/Term 요소의 내부 텍스트로 추가 합니다. Dictionary/Words/DiscreteExceptions/Term 요소의 용어는 대/소문자를 구분 하지 않습니다.
 
-**예제**
+**예**
 
 ```xml
 <Dictionary>
@@ -235,15 +235,15 @@ ms.locfileid: "72314150"
 
 Dictionary/Words/DiscreteExceptions 노드의 용어는 다음 코드 분석 규칙에 적용 됩니다.
 
-- [CA1701: 리소스 문자열 복합 단어는 대/소문자를 올바르게 지정 해야 합니다. @ no__t-0
+- [CA1701: 리소스 문자열 복합 단어는 정확한 대/소문자를 사용해야 합니다.](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
-- [CA1702: 복합 단어는 대/소문자를 올바르게 지정 해야 합니다. @ no__t-0
+- [CA1702: 복합 단어는 정확한 대/소문자를 사용해야 합니다.](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
 ### <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>사전/머리글자어/CasingExceptions/머리글자어
 
 코드 분석이 올바른 철자를 확인 하는 용어 목록에 머리글자어를 포함 하 고 복합 단어에 대 한 대/소문자 규칙에 따라 용어를 선택 하는 방법을 표시 하려면 용어를 사전/머리글자어/CasingExceptions의 내부 텍스트로 추가 합니다. 머리글자어 요소입니다. Dictionary/머리글자어/CasingExceptions/머리글자어 요소의 머리글자어는 대/소문자를 구분 합니다.
 
-**예제**
+**예**
 
 ```xml
 <Dictionary>
@@ -260,7 +260,7 @@ Dictionary/Words/DiscreteExceptions 노드의 용어는 다음 코드 분석 규
 
 Dictionary/머리글자어/CasingExceptions 노드의 용어는 다음 코드 분석 규칙에 적용 됩니다.
 
-- [CA1709: 식별자의 대/소문자를 올바르게 지정 해야 합니다. @ no__t-0
+- [CA1709: 식별자는 정확한 대/소문자를 사용해야 합니다.](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
 ## <a name="BKMK_ToApplyACustomDictionaryToAProject"></a>프로젝트에 사용자 지정 사전을 적용 하려면
 

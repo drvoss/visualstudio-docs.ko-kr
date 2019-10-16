@@ -1,5 +1,5 @@
 ---
-title: 'CA1031: 일반적인 예외 형식을 catch하지 마세요.'
+title: 'CA1031: 일반적인 예외 형식을 catch하지 마십시오.'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,24 +18,24 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c1dc1e5ed18ddcd42d42c96f3f853808c58ade48
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: e157feb9b054cd6082f77c4f86277c35ddb02c34
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236060"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349127"
 ---
-# <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031: 일반적인 예외 형식을 catch하지 마세요.
+# <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031: 일반적인 예외 형식을 catch하지 마십시오.
 
 |||
 |-|-|
 |TypeName|DoNotCatchGeneralExceptionTypes|
 |CheckId|CA1031|
-|범주|Microsoft.Design|
+|범주|Microsoft 디자인|
 |주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
-또는 <xref:System.Exception?displayProperty=fullName> `catch` `catch()` 와 같은 일반 예외는 문에 catch 되거나와 같은 일반 catch 절이 사용 됩니다. <xref:System.SystemException?displayProperty=fullName>
+@No__t-0 또는 <xref:System.SystemException?displayProperty=fullName>과 같은 일반 예외가 `catch` 문에서 catch 되거나 `catch()`과 같은 일반 catch 절이 사용 됩니다.
 
 ## <a name="rule-description"></a>규칙 설명
 일반 예외는 catch하면 안 됩니다.
@@ -47,7 +47,7 @@ ms.locfileid: "71236060"
 이 규칙에서는 경고를 표시해야 합니다. 일반적인 예외 형식을 catch 하면 라이브러리 사용자의 런타임 문제를 숨기고 디버깅을 더 어렵게 만들 수 있습니다.
 
 > [!NOTE]
-> .NET Framework 4부터 CLR (공용 언어 런타임)은 관리 코드에서 처리 하기 위해의 [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)]액세스 위반과 같은 운영 체제 및 관리 코드에서 발생 하는 손상 된 상태 예외를 더 이상 제공 하지 않습니다. .NET Framework 4 이상 버전에서 응용 프로그램을 컴파일하고 손상 된 상태 예외 처리를 유지 하려는 경우 손상 된 상태 예외를 처리 하는 <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> 메서드에 특성을 적용할 수 있습니다.
+> .NET Framework 4부터 CLR (공용 언어 런타임)은 관리 코드에서 처리 될 [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)]의 액세스 위반과 같은 운영 체제 및 관리 코드에서 발생 하는 손상 된 상태 예외를 더 이상 제공 하지 않습니다. .NET Framework 4 이상 버전에서 응용 프로그램을 컴파일하고 손상 된 상태 예외 처리를 유지 하려면 손상 된 상태 예외를 처리 하는 메서드에 <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> 특성을 적용할 수 있습니다.
 
 ## <a name="example"></a>예제
 다음 예제에서는이 규칙을 위반 하는 형식과 `catch` 블록을 올바르게 구현 하는 형식을 보여 줍니다.
@@ -57,4 +57,4 @@ ms.locfileid: "71236060"
 [!code-csharp[FxCop.Design.ExceptionAndSystemException#1](../code-quality/codesnippet/CSharp/ca1031-do-not-catch-general-exception-types_1.cs)]
 
 ## <a name="related-rules"></a>관련 규칙
-[CA2200: 스택 정보를 유지 하도록 다시 throw](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)
+[CA2200: 스택 정보를 유지하도록 다시 throw하십시오.](../code-quality/ca2200.md)

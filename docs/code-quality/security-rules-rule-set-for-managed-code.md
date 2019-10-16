@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 85bf4e140b3a379221c3b7e5a05428b29e3a985b
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 3449cf131aad8413cf192bb758e27746cc80d051
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018387"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349497"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>관리 코드에 대한 보안 규칙 규칙 집합
 
@@ -63,7 +63,7 @@ ms.locfileid: "72018387"
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|형식은 기본 형식 및 인터페이스 이상으로 중요해야 합니다.|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|투명 메서드는 보안 어설션을 사용할 수 없습니다.|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|투명 메서드는 네이티브 코드를 호출해서는 안 됩니다.|
-|[CA2210](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)|어셈블리에는 올바른 강력한 이름을 사용해야 합니다.|
+|[CA2210](../code-quality/ca2210.md)|어셈블리에는 올바른 강력한 이름을 사용해야 합니다.|
 |[CA2300](ca2300.md)|안전하지 않은 역직렬 변환기 BinaryFormatter를 사용하지 마세요.|
 |[CA2301](ca2301.md)|먼저 BinaryFormatter.Binder를 설정하지 않고 BinaryFormatter.Deserialize를 호출하지 마세요.|
 |[CA2302](ca2302.md)|BinaryFormatter.Deserialize를 호출하기 전에 BinaryFormatter.Binder가 설정되었는지 확인합니다.|

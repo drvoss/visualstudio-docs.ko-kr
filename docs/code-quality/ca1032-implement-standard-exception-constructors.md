@@ -1,5 +1,5 @@
 ---
-title: 'CA1032: 표준 예외 생성자를 구현하세요.'
+title: 'CA1032: 표준 예외 생성자를 구현하십시오.'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,31 +14,31 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06fdc566abd9bd16758f224f8a9fe805cddb2c61
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: c39ca1d1a1edd9ac2182a3d6d55896c41c189030
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236054"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349105"
 ---
-# <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: 표준 예외 생성자를 구현하세요.
+# <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: 표준 예외 생성자를 구현하십시오.
 
 |||
 |-|-|
 |TypeName|ImplementStandardExceptionConstructors|
 |CheckId|CA1032|
-|범주|Microsoft.Design|
+|범주|Microsoft 디자인|
 |주요 변경 내용|최신이 아님|
 
 ## <a name="cause"></a>원인
 
-형식은를 확장 <xref:System.Exception?displayProperty=fullName> 하지만 모든 필수 생성자를 선언 하지는 않습니다.
+형식은 @no__t를 확장 하지만 필요한 모든 생성자를 선언 하지는 않습니다.
 
 ## <a name="rule-description"></a>규칙 설명
 
 예외 형식은 다음 세 가지 생성자를 구현 해야 합니다.
 
-- public NewException()
+- public NewException ()
 
 - public NewException (string)
 
@@ -48,9 +48,9 @@ ms.locfileid: "71236054"
 
 - protected 또는 private NewException (SerializationInfo, StreamingContext)
 
-이들 생성자 집합을 전부 제공하지 못하면 예외를 제대로 처리하기 어려울 수 있습니다. 예를 들어, 시그니처가 `NewException(string, Exception)` 있는 생성자를 사용 하 여 다른 예외에 의해 발생 하는 예외를 만듭니다. 이 생성자를 사용 하지 않는 경우 이러한 상황에서 관리 코드를 수행 해야 하는 내부 (중첩 된) 예외가 포함 된 사용자 지정 예외의 인스턴스를 만들고 throw 할 수 없습니다.
+이들 생성자 집합을 전부 제공하지 못하면 예외를 제대로 처리하기 어려울 수 있습니다. 예를 들어, 시그니처가 `NewException(string, Exception)` 인 생성자는 다른 예외에 의해 발생 한 예외를 만드는 데 사용 됩니다. 이 생성자를 사용 하지 않는 경우 이러한 상황에서 관리 코드를 수행 해야 하는 내부 (중첩 된) 예외가 포함 된 사용자 지정 예외의 인스턴스를 만들고 throw 할 수 없습니다.
 
-처음 세 개의 예외 생성자는 규칙에 따라 public입니다. 네 번째 생성자는 봉인 되지 않은 클래스에서 보호 되 고 sealed 클래스에서는 private입니다. 자세한 내용은 CA2229를 참조 [하세요. Serialization 생성자](../code-quality/ca2229-implement-serialization-constructors.md)를 구현 합니다.
+처음 세 개의 예외 생성자는 규칙에 따라 public입니다. 네 번째 생성자는 봉인 되지 않은 클래스에서 보호 되 고 sealed 클래스에서는 private입니다. 자세한 내용은 [CA2229: serialization 생성자 구현](../code-quality/ca2229.md)을 참조 하세요.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 
@@ -58,7 +58,7 @@ ms.locfileid: "71236054"
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 
-Public 생성자에 대해 다른 액세스 수준을 사용 하 여 위반이 발생 하는 경우이 규칙에서 경고를 표시 하지 않는 것이 안전 합니다. 또한 PCL (이식 가능한 클래스 라이브러리)을 빌드하는 `NewException(SerializationInfo, StreamingContext)` 경우에는 생성자에 대 한 경고를 표시 하지 않아도 됩니다.
+Public 생성자에 대해 다른 액세스 수준을 사용 하 여 위반이 발생 하는 경우이 규칙에서 경고를 표시 하지 않는 것이 안전 합니다. 또한 PCL (이식 가능한 클래스 라이브러리)을 빌드하는 경우 `NewException(SerializationInfo, StreamingContext)` 생성자에 대 한 경고를 표시 하지 않아도 됩니다.
 
 ## <a name="example"></a>예제
 
@@ -66,6 +66,6 @@ Public 생성자에 대해 다른 액세스 수준을 사용 하 여 위반이 �
 
 [!code-csharp[FxCop.Design.ExceptionMultipleCtors#1](../code-quality/codesnippet/CSharp/ca1032-implement-standard-exception-constructors_1.cs)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-[CA2229: serialization 생성자를 구현하십시오.](../code-quality/ca2229-implement-serialization-constructors.md)
+[CA2229: serialization 생성자를 구현하십시오.](../code-quality/ca2229.md)

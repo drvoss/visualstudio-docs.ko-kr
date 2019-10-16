@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 49788b900eb8aed9fac6e4da4844377bae67efbf
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 5f4efbec200b90614a5d78a4b04b2ebd32588cb5
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235552"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349079"
 ---
 # <a name="ca1054-uri-parameters-should-not-be-strings"></a>CA1054: URI 매개 변수는 문자열이면 안 됩니다.
 
@@ -31,22 +31,22 @@ ms.locfileid: "71235552"
 |-|-|
 |TypeName|UriParametersShouldNotBeStrings|
 |CheckId|CA1054|
-|범주|Microsoft.Design|
+|범주|Microsoft 디자인|
 |주요 변경 내용|주요 변경|
 
 ## <a name="cause"></a>원인
 
-형식이 "uri", "uri", "urn", "urn", "url" 또는 "url"을 포함 하는 문자열 매개 변수를 포함 하는 메서드를 선언 합니다 .이 형식은 매개 변수를 <xref:System.Uri?displayProperty=fullName> 사용 하는 해당 오버 로드를 선언 하지 않습니다.
+형식은 이름에 "uri", "Uri", "urn", "Urn", "url" 또는 "Url"이 포함 된 문자열 매개 변수를 사용 하 여 메서드를 선언 하며,이 형식은 <xref:System.Uri?displayProperty=fullName> 매개 변수를 사용 하는 해당 오버 로드를 선언 하지 않습니다.
 
 기본적으로이 규칙은 외부에서 볼 수 있는 형식만 볼 수 있지만이를 [구성할](#configurability)수 있습니다.
 
 ## <a name="rule-description"></a>규칙 설명
 
-이 규칙은 카멜식 대/소문자 규칙을 기반으로 매개 변수 이름을 토큰으로 분할 하 고 각 토큰이 "uri", "Uri", "urn", "Urn", "url" 또는 "Url"과 일치 하는지 확인 합니다. 일치 하는 항목이 있는 경우 규칙은 매개 변수가 URI (uniform resource identifier)를 나타내는 것으로 가정 합니다. URI의 문자열 표현은 구문 분석 및 인코딩 오류를 발생시키기 쉬우며 보안 문제를 일으킬 수 있습니다. 메서드가 URI의 문자열 표현을 사용 하는 경우 <xref:System.Uri> 클래스의 인스턴스를 사용 하는 해당 오버 로드를 제공 해야 합니다 .이 클래스는 안전 하 고 안전한 방식으로 이러한 서비스를 제공 합니다.
+이 규칙은 카멜식 대/소문자 규칙을 기반으로 매개 변수 이름을 토큰으로 분할 하 고 각 토큰이 "uri", "Uri", "urn", "Urn", "url" 또는 "Url"과 일치 하는지 확인 합니다. 일치 하는 항목이 있는 경우 규칙은 매개 변수가 URI (uniform resource identifier)를 나타내는 것으로 가정 합니다. URI의 문자열 표현은 구문 분석 및 인코딩 오류를 발생시키기 쉬우며 보안 문제를 일으킬 수 있습니다. 메서드가 URI의 문자열 표현을 사용 하는 경우 이러한 서비스를 안전 하 고 안전한 방식으로 제공 하는 <xref:System.Uri> 클래스의 인스턴스를 사용 하는 해당 오버 로드를 제공 해야 합니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 
-이 규칙 위반 문제를 해결 하려면 매개 변수를 <xref:System.Uri> 형식으로 변경 합니다 .이는 주요 변경 내용입니다. 또는 매개 변수를 <xref:System.Uri> 사용 하는 메서드의 오버 로드를 제공 합니다 .이는 주요 변경 내용입니다.
+이 규칙 위반 문제를 해결 하려면 매개 변수를 <xref:System.Uri> 유형으로 변경 합니다. 이는 주요 변경 내용입니다. 또는 <xref:System.Uri> 매개 변수를 사용 하는 메서드의 오버 로드를 제공 합니다. 이는 주요 변경 내용입니다.
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시 하지 않는 경우
 
@@ -64,7 +64,7 @@ dotnet_code_quality.ca1054.api_surface = private, internal
 
 ## <a name="example"></a>예제
 
-다음 예제에서는이 규칙을 위반 `ErrorProne`하는 형식 및 규칙을 충족 하는 `SaferWay`형식을 보여 줍니다.
+다음 예제에서는이 규칙을 위반 하는 `ErrorProne` 형식 및 규칙을 충족 하는 `SaferWay` 형식을 보여 줍니다.
 
 [!code-csharp[FxCop.Design.UriNotString#1](../code-quality/codesnippet/CSharp/ca1054-uri-parameters-should-not-be-strings_1.cs)]
 [!code-vb[FxCop.Design.UriNotString#1](../code-quality/codesnippet/VisualBasic/ca1054-uri-parameters-should-not-be-strings_1.vb)]
@@ -72,7 +72,7 @@ dotnet_code_quality.ca1054.api_surface = private, internal
 
 ## <a name="related-rules"></a>관련 규칙
 
-- [CA1056: URI 속성은 문자열이 면 안 됩니다.](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
-- [CA1055: URI 반환 값은 문자열이 면 안 됩니다.](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
-- [CA2234: 문자열 대신 System.uri 개체를 전달 합니다.](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
-- [CA1057: 문자열 URI 오버 로드는 System.uri 오버 로드를 호출 합니다.](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
+- [CA1056: URI 속성은 문자열이면 안 됩니다.](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
+- [CA1055: URI 반환 값은 문자열이면 안 됩니다.](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
+- [CA2234: 문자열 대신 System.Uri 개체를 전달하십시오.](../code-quality/ca2234.md)
+- [CA1057: 문자열 URI 오버로드는 System.Uri 오버로드를 호출합니다.](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)

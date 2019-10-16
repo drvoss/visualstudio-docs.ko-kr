@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e784627f0c9c6aa865d53db49d6ea43c4e49d0eb
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: b83a766a1829c55bd5a5847a938cd9d3c1206765
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72305783"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349604"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 규칙 포트 상태
 
@@ -125,29 +125,29 @@ CA2010 | 항상 PreserveSigAttribute로 표시 된 메서드에서 반환 된 �
 [CA2101](ca2101-specify-marshaling-for-p-invoke-string-arguments.md) | P/Invoke 문자열 인수에 대해 마샬링을 지정하십시오.
 [CA2119](ca2119-seal-methods-that-satisfy-private-interfaces.md) | private 인터페이스를 만족하는 메서드를 봉인하세요.
 [CA2153](ca2153-avoid-handling-corrupted-state-exceptions.md) | 손상 된 상태 예외를 Catch 하지 않음
-[CA2200](ca2200-rethrow-to-preserve-stack-details.md) | 스택 정보를 유지 하도록 다시 throw 합니다.
-[CA2201](ca2201-do-not-raise-reserved-exception-types.md) | 예약된 예외 형식을 발생시키지 마세요.
-[CA2207](ca2207-initialize-value-type-static-fields-inline.md) | 값 형식 정적 필드 인라인을 초기화하십시오.
-[CA2208](ca2208-instantiate-argument-exceptions-correctly.md) | 인수 예외를 올바르게 인스턴스화하세요.
-[CA2211](ca2211-non-constant-fields-should-not-be-visible.md) | 비상수 필드는 노출되면 안 됩니다.
-[CA2213](ca2213-disposable-fields-should-be-disposed.md) | 삭제 가능한 필드는 삭제해야 합니다.
-[CA2214](ca2214-do-not-call-overridable-methods-in-constructors.md) | 재정의 가능한 메서드를 생성자에서 호출하지 마십시오.
-[CA2216](ca2216-disposable-types-should-declare-finalizer.md) | 삭제 가능한 형식은 종료자를 선언해야 합니다.
-[CA2217](ca2217-do-not-mark-enums-with-flagsattribute.md) | 열거형을 FlagsAttribute로 표시하지 마세요.
-[CA2218](ca2218-override-gethashcode-on-overriding-equals.md) | Equals를 재정할 때 GetHashCode를 재정의하세요.
-[CA2219](ca2219-do-not-raise-exceptions-in-exception-clauses.md) | Finally 절에서 예외를 발생 시 키 지 마십시오.
-[CA2224](ca2224-override-equals-on-overloading-operator-equals.md) | 오버 로드 연산자 equals에 대 한 Override Equals
-[CA2225](ca2225-operator-overloads-have-named-alternates.md) | 연산자 오버로드에는 명명된 대체 항목이 있습니다.
-[CA2226](ca2226-operators-should-have-symmetrical-overloads.md) | 연산자에는 대칭 오버로드가 있어야 합니다.
-[CA2227](ca2227-collection-properties-should-be-read-only.md) | 컬렉션 속성은 읽기 전용이어야 합니다.
-[CA2229](ca2229-implement-serialization-constructors.md) | serialization 생성자를 구현하십시오.
-[CA2231](ca2231-overload-operator-equals-on-overriding-valuetype-equals.md) | 오버 로드 연산자 equals 재정의 값 형식 같음
-[CA2234](ca2234-pass-system-uri-objects-instead-of-strings.md) | 문자열 대신 시스템 uri 개체를 전달 합니다.
-[CA2235](ca2235-mark-all-non-serializable-fields.md) | 모두 serialize할 수 없는 필드로 표시하십시오.
-[CA2237](ca2237-mark-iserializable-types-with-serializableattribute.md) | ISerializable 형식을 serializable로 표시하세요.
-[CA2241](ca2241-provide-correct-arguments-to-formatting-methods.md) | 서식 지정 메서드에 올바른 인수를 제공하십시오.
-[CA2242](ca2242-test-for-nan-correctly.md) | NaN에 대해 정확하게 테스트하십시오.
-[CA2243](ca2243-attribute-string-literals-should-parse-correctly.md) | 특성 문자열 리터럴이 올바르게 구문 분석되어야 합니다.
+[CA2200](ca2200.md) | 스택 정보를 유지 하도록 다시 throw 합니다.
+[CA2201](ca2201.md) | 예약된 예외 형식을 발생시키지 마세요.
+[CA2207](ca2207.md) | 값 형식 정적 필드 인라인을 초기화하십시오.
+[CA2208](ca2208.md) | 인수 예외를 올바르게 인스턴스화하세요.
+[CA2211](ca2211.md) | 비상수 필드는 노출되면 안 됩니다.
+[CA2213](ca2213.md) | 삭제 가능한 필드는 삭제해야 합니다.
+[CA2214](ca2214.md) | 재정의 가능한 메서드를 생성자에서 호출하지 마십시오.
+[CA2216](ca2216.md) | 삭제 가능한 형식은 종료자를 선언해야 합니다.
+[CA2217](ca2217.md) | 열거형을 FlagsAttribute로 표시하지 마세요.
+[CA2218](ca2218.md) | Equals를 재정할 때 GetHashCode를 재정의하세요.
+[CA2219](ca2219.md) | Finally 절에서 예외를 발생 시 키 지 마십시오.
+[CA2224](ca2224.md) | 오버 로드 연산자 equals에 대 한 Override Equals
+[CA2225](ca2225.md) | 연산자 오버로드에는 명명된 대체 항목이 있습니다.
+[CA2226](ca2226.md) | 연산자에는 대칭 오버로드가 있어야 합니다.
+[CA2227](ca2227.md) | 컬렉션 속성은 읽기 전용이어야 합니다.
+[CA2229](ca2229.md) | serialization 생성자를 구현하십시오.
+[CA2231](ca2231.md) | 오버 로드 연산자 equals 재정의 값 형식 같음
+[CA2234](ca2234.md) | 문자열 대신 시스템 uri 개체를 전달 합니다.
+[CA2235](ca2235.md) | 모두 serialize할 수 없는 필드로 표시하십시오.
+[CA2237](ca2237.md) | ISerializable 형식을 serializable로 표시하세요.
+[CA2241](ca2241.md) | 서식 지정 메서드에 올바른 인수를 제공하십시오.
+[CA2242](ca2242.md) | NaN에 대해 정확하게 테스트하십시오.
+[CA2243](ca2243.md) | 특성 문자열 리터럴이 올바르게 구문 분석되어야 합니다.
 CA2244 | 인덱싱된 요소 초기화를 복제 하지 마십시오.
 [CA2300](ca2300.md) | 안전하지 않은 역직렬 변환기 BinaryFormatter를 사용하지 마세요.
 [CA2301](ca2301.md) | 먼저 BinaryFormatter.Binder를 설정하지 않고 BinaryFormatter.Deserialize를 호출하지 마세요.
@@ -259,15 +259,15 @@ CA9999 | 분석기 버전이 일치 하지 않습니다.
 [CA2004](ca2004-remove-calls-to-gc-keepalive.md) | [https://github.com/dotnet/roslyn-analyzers/issues/479](https://github.com/dotnet/roslyn-analyzers/issues/479)
 [CA2006](ca2006-use-safehandle-to-encapsulate-native-resources.md) | [https://github.com/dotnet/roslyn-analyzers/issues/480](https://github.com/dotnet/roslyn-analyzers/issues/480)
 [CA2109](ca2109-review-visible-event-handlers.md) | [https://github.com/dotnet/roslyn-analyzers/issues/488](https://github.com/dotnet/roslyn-analyzers/issues/488)
-[CA2204](ca2204-literals-should-be-spelled-correctly.md) | [https://github.com/dotnet/roslyn-analyzers/issues/529](https://github.com/dotnet/roslyn-analyzers/issues/529)
-[CA2205](ca2205-use-managed-equivalents-of-win32-api.md) | [https://github.com/dotnet/roslyn-analyzers/issues/530](https://github.com/dotnet/roslyn-analyzers/issues/530)
-[CA2212](ca2212-do-not-mark-serviced-components-with-webmethod.md) | [https://github.com/dotnet/roslyn-analyzers/issues/534](https://github.com/dotnet/roslyn-analyzers/issues/534)
-[CA2215](ca2215-dispose-methods-should-call-base-class-dispose.md) | [https://github.com/dotnet/roslyn-analyzers/issues/535](https://github.com/dotnet/roslyn-analyzers/issues/535)
-[CA2232](ca2232-mark-windows-forms-entry-points-with-stathread.md) | [https://github.com/dotnet/roslyn-analyzers/issues/545](https://github.com/dotnet/roslyn-analyzers/issues/545)
-[CA2236](ca2236-call-base-class-methods-on-iserializable-types.md) | [https://github.com/dotnet/roslyn-analyzers/issues/548](https://github.com/dotnet/roslyn-analyzers/issues/548)
-[CA2238](ca2238-implement-serialization-methods-correctly.md) | [https://github.com/dotnet/roslyn-analyzers/issues/549](https://github.com/dotnet/roslyn-analyzers/issues/549)
-[CA2239](ca2239-provide-deserialization-methods-for-optional-fields.md) | [https://github.com/dotnet/roslyn-analyzers/issues/550](https://github.com/dotnet/roslyn-analyzers/issues/550)
-[CA2240](ca2240-implement-iserializable-correctly.md) | [https://github.com/dotnet/roslyn-analyzers/issues/551](https://github.com/dotnet/roslyn-analyzers/issues/551)
+[CA2204](ca2204.md) | [https://github.com/dotnet/roslyn-analyzers/issues/529](https://github.com/dotnet/roslyn-analyzers/issues/529)
+[CA2205](ca2205.md) | [https://github.com/dotnet/roslyn-analyzers/issues/530](https://github.com/dotnet/roslyn-analyzers/issues/530)
+[CA2212](ca2212.md) | [https://github.com/dotnet/roslyn-analyzers/issues/534](https://github.com/dotnet/roslyn-analyzers/issues/534)
+[CA2215](ca2215.md) | [https://github.com/dotnet/roslyn-analyzers/issues/535](https://github.com/dotnet/roslyn-analyzers/issues/535)
+[CA2232](ca2232.md) | [https://github.com/dotnet/roslyn-analyzers/issues/545](https://github.com/dotnet/roslyn-analyzers/issues/545)
+[CA2236](ca2236.md) | [https://github.com/dotnet/roslyn-analyzers/issues/548](https://github.com/dotnet/roslyn-analyzers/issues/548)
+[CA2238](ca2238.md) | [https://github.com/dotnet/roslyn-analyzers/issues/549](https://github.com/dotnet/roslyn-analyzers/issues/549)
+[CA2239](ca2239.md) | [https://github.com/dotnet/roslyn-analyzers/issues/550](https://github.com/dotnet/roslyn-analyzers/issues/550)
+[CA2240](ca2240.md) | [https://github.com/dotnet/roslyn-analyzers/issues/551](https://github.com/dotnet/roslyn-analyzers/issues/551)
 
 ### <a name="deprecated-rules"></a>사용 되지 않는 규칙
 
@@ -333,15 +333,15 @@ CA9999 | 분석기 버전이 일치 하지 않습니다.
 - [CA2147](ca2147-transparent-methods-may-not-use-security-asserts.md)
 - [CA2149](ca2149-transparent-methods-must-not-call-into-native-code.md)
 - [CA2151](ca2151-fields-with-critical-types-should-be-security-critical.md)
-- [CA2202](ca2202-do-not-dispose-objects-multiple-times.md)
-- [CA2210](ca2210-assemblies-should-have-valid-strong-names.md)
-- [CA2220](ca2220-finalizers-should-call-base-class-finalizer.md)
-- [CA2221](ca2221-finalizers-should-be-protected.md)
-- [CA2222](ca2222-do-not-decrease-inherited-member-visibility.md) ([양쪽 맞춤](https://github.com/dotnet/roslyn-analyzers/issues/1378))
-- [CA2223](ca2223-members-should-differ-by-more-than-return-type.md)
-- [CA2228](ca2228-do-not-ship-unreleased-resource-formats.md)
-- [CA2230](ca2230-use-params-for-variable-arguments.md)
-- [CA2233](ca2233-operations-should-not-overflow.md)
+- [CA2202](ca2202.md)
+- [CA2210](ca2210.md)
+- [CA2220](ca2220.md)
+- [CA2221](ca2221.md)
+- [CA2222](ca2222.md) ([양쪽 맞춤](https://github.com/dotnet/roslyn-analyzers/issues/1378))
+- [CA2223](ca2223.md)
+- [CA2228](ca2228.md)
+- [CA2230](ca2230.md)
+- [CA2233](ca2233.md)
 - [CA5122](ca5122-p-invoke-declarations-should-not-be-safe-critical.md)
 
 ## <a name="see-also"></a>참조

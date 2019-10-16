@@ -170,8 +170,8 @@
   items:
     - name: 개발
       items:
-        - name: '인덱스: IDE를 사용하여 코드 작성'
-          href: ide/index-writing-code.md
+        - name: 시작
+          href: ide/index-writing-code.yml
         - name: IDE에서 이동
           href: ide/how-to-move-around-in-the-visual-studio-ide.md
         - name: 솔루션 및 프로젝트

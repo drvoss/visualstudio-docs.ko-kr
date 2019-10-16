@@ -336,7 +336,7 @@
                 - name: 'CA1068: CancellationToken 매개 변수는 마지막에 위치해야 합니다.'
                   href: ca1068.md
                 - name: 'CA2210: 어셈블리에는 올바른 강력한 이름을 사용해야 합니다.'
-                  href: ca2210-assemblies-should-have-valid-strong-names.md
+                  href: ca2210.md
             - name: 설명서 경고
               items:
                 - name: 개요
@@ -763,85 +763,85 @@
                 - name: 'CA1816: GC.SuppressFinalize를 올바르게 호출하세요.'
                   href: ca1816.md
                 - name: 'CA2200: 스택 정보를 유지하도록 다시 throw하십시오.'
-                  href: ca2200-rethrow-to-preserve-stack-details.md
+                  href: ca2200.md
                 - name: 'CA2201: 예약된 예외 형식을 발생시키지 마세요.'
-                  href: ca2201-do-not-raise-reserved-exception-types.md
+                  href: ca2201.md
                 - name: 'CA2202: 개체를 여러 번 삭제하지 마십시오.'
-                  href: ca2202-do-not-dispose-objects-multiple-times.md
+                  href: ca2202.md
                 - name: 'CA2204: 리터럴의 맞춤법이 정확해야 합니다.'
-                  href: ca2204-literals-should-be-spelled-correctly.md
+                  href: ca2204.md
                 - name: 'CA2205: Win32 API의 동일한 관리형 기능을 사용하세요.'
-                  href: ca2205-use-managed-equivalents-of-win32-api.md
+                  href: ca2205.md
                 - name: 'CA2207: 값 형식 정적 필드 인라인을 초기화하십시오.'
-                  href: ca2207-initialize-value-type-static-fields-inline.md
+                  href: ca2207.md
                 - name: 'CA2208: 인수 예외를 올바르게 인스턴스화하세요.'
-                  href: ca2208-instantiate-argument-exceptions-correctly.md
+                  href: ca2208.md
                 - name: 'CA2211: 비상수 필드는 노출되면 안 됩니다.'
-                  href: ca2211-non-constant-fields-should-not-be-visible.md
+                  href: ca2211.md
                 - name: 'CA2212: 서비스 구성 요소를 WebMethod를 사용하여 표시하지 마십시오.'
-                  href: ca2212-do-not-mark-serviced-components-with-webmethod.md
+                  href: ca2212.md
                 - name: 'CA2213: 삭제 가능한 필드는 삭제해야 합니다.'
-                  href: ca2213-disposable-fields-should-be-disposed.md
+                  href: ca2213.md
                 - name: 'CA2214: 재정의 가능한 메서드를 생성자에서 호출하지 마십시오.'
-                  href: ca2214-do-not-call-overridable-methods-in-constructors.md
+                  href: ca2214.md
                 - name: 'CA2215: Dispose 메서드는 기본 클래스 Dispose를 호출해야 합니다.'
-                  href: ca2215-dispose-methods-should-call-base-class-dispose.md
+                  href: ca2215.md
                 - name: 'CA2216: 삭제 가능한 형식은 종료자를 선언해야 합니다.'
-                  href: ca2216-disposable-types-should-declare-finalizer.md
+                  href: ca2216.md
                 - name: 'CA2217: 열거형을 FlagsAttribute로 표시하지 마세요.'
-                  href: ca2217-do-not-mark-enums-with-flagsattribute.md
+                  href: ca2217.md
                 - name: 'CA2218: Equals를 재정할 때 GetHashCode를 재정의하세요.'
-                  href: ca2218-override-gethashcode-on-overriding-equals.md
+                  href: ca2218.md
                 - name: 'CA2219: exception 절에서 예외를 발생시키지 마세요.'
-                  href: ca2219-do-not-raise-exceptions-in-exception-clauses.md
+                  href: ca2219.md
                 - name: 'CA2220: 종료자는 기본 클래스 종료자를 호출해야 합니다.'
-                  href: ca2220-finalizers-should-call-base-class-finalizer.md
+                  href: ca2220.md
                 - name: 'CA2221: 종료자는 protected여야 합니다.'
-                  href: ca2221-finalizers-should-be-protected.md
+                  href: ca2221.md
                 - name: 'CA2222: 상속된 멤버 노출 수준을 낮추지 마세요.'
-                  href: ca2222-do-not-decrease-inherited-member-visibility.md
+                  href: ca2222.md
                 - name: 'CA2223: 멤버는 반환 형식 이외의 것도 달라야 합니다.'
-                  href: ca2223-members-should-differ-by-more-than-return-type.md
+                  href: ca2223.md
                 - name: 'CA2224: 같음 연산자를 오버로드할 때 Equals를 재정의하세요.'
-                  href: ca2224-override-equals-on-overloading-operator-equals.md
+                  href: ca2224.md
                 - name: 'CA2225: 연산자 오버로드에는 명명된 대체 항목이 있습니다.'
-                  href: ca2225-operator-overloads-have-named-alternates.md
+                  href: ca2225.md
                 - name: 'CA2226: 연산자에는 대칭 오버로드가 있어야 합니다.'
-                  href: ca2226-operators-should-have-symmetrical-overloads.md
+                  href: ca2226.md
                 - name: 'CA2227: 컬렉션 속성은 읽기 전용이어야 합니다.'
-                  href: ca2227-collection-properties-should-be-read-only.md
+                  href: ca2227.md
                 - name: 'CA2228: 릴리스되지 않은 리소스 형식을 제공하지 마세요.'
-                  href: ca2228-do-not-ship-unreleased-resource-formats.md
+                  href: ca2228.md
                 - name: 'CA2229: serialization 생성자를 구현하십시오.'
-                  href: ca2229-implement-serialization-constructors.md
+                  href: ca2229.md
                 - name: 'CA2230: 가변 인수로 params를 사용하세요.'
-                  href: ca2230-use-params-for-variable-arguments.md
+                  href: ca2230.md
                 - name: 'CA2231: ValueType.Equals를 재정의할 때 같음 연산자를 오버로드하십시오.'
-                  href: ca2231-overload-operator-equals-on-overriding-valuetype-equals.md
+                  href: ca2231.md
                 - name: 'CA2232: Windows Forms 진입점을 STAThread를 사용하여 표시하십시오.'
-                  href: ca2232-mark-windows-forms-entry-points-with-stathread.md
+                  href: ca2232.md
                 - name: 'CA2233: 연산은 오버플로되지 않아야 합니다.'
-                  href: ca2233-operations-should-not-overflow.md
+                  href: ca2233.md
                 - name: 'CA2234: 문자열 대신 System.Uri 개체를 전달하세요.'
-                  href: ca2234-pass-system-uri-objects-instead-of-strings.md
+                  href: ca2234.md
                 - name: 'CA2235: 모두 serialize할 수 없는 필드로 표시하십시오.'
-                  href: ca2235-mark-all-non-serializable-fields.md
+                  href: ca2235.md
                 - name: 'CA2236: ISerializable 형식에서 기본 클래스 메서드를 호출하십시오.'
-                  href: ca2236-call-base-class-methods-on-iserializable-types.md
+                  href: ca2236.md
                 - name: 'CA2237: SerializableAttribute로 ISerializable 형식 표시'
-                  href: ca2237-mark-iserializable-types-with-serializableattribute.md
+                  href: ca2237.md
                 - name: 'CA2238: serialization 메서드를 올바르게 구현하십시오.'
-                  href: ca2238-implement-serialization-methods-correctly.md
+                  href: ca2238.md
                 - name: 'CA2239: 선택적 필드에 deserialization 메서드를 제공하세요.'
-                  href: ca2239-provide-deserialization-methods-for-optional-fields.md
+                  href: ca2239.md
                 - name: 'CA2240: ISerializable을 올바르게 구현하십시오.'
-                  href: ca2240-implement-iserializable-correctly.md
+                  href: ca2240.md
                 - name: 'CA2241: 서식 지정 메서드에 올바른 인수를 제공하십시오.'
-                  href: ca2241-provide-correct-arguments-to-formatting-methods.md
+                  href: ca2241.md
                 - name: 'CA2242: NaN에 대해 정확하게 테스트하십시오.'
-                  href: ca2242-test-for-nan-correctly.md
+                  href: ca2242.md
                 - name: 'CA2243: 특성 문자열 리터럴이 올바르게 구문 분석되어야 합니다.'
-                  href: ca2243-attribute-string-literals-should-parse-correctly.md
+                  href: ca2243.md
             - name: 자동 기능 일시 중단
               href: automatic-feature-suspension.md
 - name: C/C++ 코드 분석

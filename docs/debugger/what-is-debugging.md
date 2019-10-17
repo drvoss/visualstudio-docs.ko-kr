@@ -31,6 +31,7 @@ Visual Studio 디버거는 강력한 도구입니다. 사용방법을 설명하�
 ## <a name="debug-mode-vs-running-your-app"></a>Debug mode vs Running your app
 
 처음으로 Visual Studio에서 앱을 실행 하는 경우 녹색 화살표 단추를 눌러 시작할 수 있습니다 ![디버깅 시작](../debugger/media/dbg-tour-start-debugging.png "디버깅 시작") 도구 모음에서 (또는 **F5**). 기본적으로 **디버그** 값 왼쪽 드롭다운 목록에 표시 됩니다.만일 Visual Studio 를 처음 접하는 경우 앱 디버깅이 앱 실행과 관련이 있다는 느낌을 받을 수 있습니다. 그러나 기본적으로 두 가지는 매우 다른 작업입니다.
+
 ![디버그 빌드를 선택 합니다.](../debugger/media/what-is-debugging-debug-build.png)
 **디버그** 값은 디버그 구성을 나타냅니다. 앱을 시작 하는 경우 (녹색 화살표를 눌러 또는 **F5**) 디버그 구성에서 *디버그 모드*를 시작할 수 있습니다. 즉, 디버거가 연결된 상태에서 앱을 실행 한다는 의미 입니다. 이렇게 하면 앱에서 버그를 찾는 데 사용할 수 있는 디버깅 기능 집합들이 활성화가 됩니다.
 

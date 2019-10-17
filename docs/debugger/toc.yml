@@ -44,8 +44,6 @@
       items:
         - name: 중단점 사용
           href: using-breakpoints.md
-        - name: 추적점 사용
-          href: using-tracepoints.md
         - name: 중단점 문제 해결
           href: troubleshooting-breakpoints.md
     - name: 데이터 검사
@@ -138,6 +136,8 @@
               href: xaml-hot-reload-troubleshooting.md
         - name: 'F#에 편집하며 계속하기가 지원되지 않음'
           href: edit-and-continue-not-supported-for-f-hash.md
+    - name: 출력 창에 기록
+      href: using-tracepoints.md
     - name: 디버거 데이터 보기
       items:
         - name: 모듈
@@ -238,7 +238,7 @@
                   href: visual-cpp-custom-visualizer-compatibility.md
             - name: 사용자 지정 뷰(관리형)
               items:
-                - name: 개체의 사용자 지정 뷰 만들기
+                - name: 관리 개체의 사용자 지정 뷰 만들기
                   href: create-custom-views-of-dot-managed-objects.md
                 - name: 디버거에 표시할 내용 지시
                   href: using-the-debuggerdisplay-attribute.md

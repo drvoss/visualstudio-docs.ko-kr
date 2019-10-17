@@ -1,5 +1,5 @@
 - name: 코드 분석 설명서
-  href: index.md
+  href: index.yml
 - name: 관리 코드 분석
   items:
     - name: 개요
@@ -203,9 +203,9 @@
                   displayName: cryptography warnings
                   href: cryptography-warnings.md
                 - name: 'CA5350: 취약한 암호화 알고리즘을 사용하지 마세요.'
-                  href: ca5350-do-not-use-weak-cryptographic-algorithms.md
+                  href: ca5350.md
                 - name: CA5351 끊어진 암호화 알고리즘 사용 안 함
-                  href: ca5351-do-not-use-broken-cryptographic-algorithms.md
+                  href: ca5351.md
             - name: 디자인 경고
               items:
                 - name: 개요
@@ -370,7 +370,7 @@
                 - name: 'CA1309: 서수 StringComparison을 사용하세요.'
                   href: ca1309-use-ordinal-stringcomparison.md
                 - name: 'CA2101: P/Invoke 문자열 인수에 대해 마샬링을 지정하세요.'
-                  href: ca2101-specify-marshaling-for-p-invoke-string-arguments.md
+                  href: ca2101.md
             - name: 상호 운용성 경고
               items:
                 - name: 개요

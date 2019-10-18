@@ -239,7 +239,7 @@
             - name: 사용자 지정 뷰(관리형)
               items:
                 - name: 관리 개체의 사용자 지정 뷰 만들기
-                  href: create-custom-views-of-dot-managed-objects.md
+                  href: create-custom-views-of-managed-objects.md
                 - name: 디버거에 표시할 내용 지시
                   href: using-the-debuggerdisplay-attribute.md
                 - name: 디버거에 표시할 유형 지시

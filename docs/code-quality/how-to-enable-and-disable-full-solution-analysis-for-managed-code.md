@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0b192b29190d530d22943e8ba2a396ae1fe9ad87
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 26cd267f80f8c7c220771a5c2220d22b66929051
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975121"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448931"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>방법: 관리 코드에 대 한 전체 솔루션 분석 사용 및 사용 안 함
 
@@ -32,9 +32,9 @@ ms.locfileid: "71975121"
 
 ## <a name="toggle-full-solution-analysis"></a>전체 솔루션 분석 설정/해제
 
-1. **옵션** 대화 상자를 열려면 Visual Studio의 메뉴 모음에서 **도구** > **옵션**을 선택 합니다.
+1. **옵션** 대화 상자를 열려면 Visual Studio의 메뉴 모음에서 **도구**  > **옵션**을 선택 합니다.
 
-1. **옵션** 대화 상자에서 **텍스트 편집기** > **C#** 또는 **기본** > **고급**을 선택 합니다.
+1. **옵션** 대화 상자에서 **텍스트 편집기**  > **C#** 또는 **기본**  > **고급**을 선택 합니다.
 
 1. 전체 솔루션 분석 **사용** 확인란을 선택 하 여 전체 솔루션 분석을 사용 하도록 설정 하거나 확인란의 선택을 취소 하 여 사용 하지 않도록 설정 합니다. 완료 되 면 **확인을** 선택 합니다.
 
@@ -44,4 +44,4 @@ ms.locfileid: "71975121"
 
 Visual Studio에서 200 MB 이하의 시스템 메모리를 사용할 수 있음을 감지 하면 사용 하도록 설정 된 경우 전체 솔루션 분석 (및 기타 일부 기능)을 자동으로 비활성화 합니다. 이 문제가 발생 하는 경우 Visual Studio에서 일부 기능을 사용 하지 않도록 설정 했다는 알림이 표시 됩니다. 원하는 경우 단추를 사용 하 여 전체 솔루션 분석을 다시 활성화할 수 있습니다.
 
-![전체 솔루션 분석을 일시 중단 하는 경고 텍스트](../code-quality/media/fsa_alert.png)
+![경고 텍스트 전체 솔루션 분석 일시 중단](../code-quality/media/fsa_alert.png)

@@ -24,12 +24,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cff36760a84821a33dcdb1ee4cc6842cd40aee0
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: ac3d6225bc765ec404784589d2faa06f155265ab
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72015973"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446289"
 ---
 # <a name="annotating-structs-and-classes"></a>구조체 및 클래스에 주석 지정
 
@@ -39,19 +39,19 @@ ms.locfileid: "72015973"
 
 - `_Field_range_(low, high)`
 
-     필드의 범위 (포함)는 `low`에서 `high` 까지입니다.  적절 한 사전 또는 사후 조건을 사용 하 여 주석이 달린 개체에 적용 되는 @no__t와 동일 합니다.
+     필드는 `low`에서 `high` 까지의 범위 (포함)에 있습니다.  적절 한 사전 또는 사후 조건을 사용 하 여 주석이 달린 개체에 적용 `_Satisfies_(_Curr_ >= low && _Curr_ <= high)`와 동일 합니다.
 
 - `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`
 
-     @No__t-0으로 지정 된 요소 (또는 바이트)에 쓰기 가능한 크기가 있는 필드입니다.
+     @No__t_0에 지정 된 대로 (또는 바이트) 요소에 쓰기 가능한 크기가 있는 필드입니다.
 
-- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
+- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`, `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
 
-     @No__t-0으로 지정 된 요소 (또는 바이트)에 쓰기 가능한 크기가 있는 필드 및 읽을 수 있는 해당 요소 (바이트)의 @no__t입니다.
+     @No__t_0에 의해 지정 된 요소 (또는 바이트)에 쓰기 가능한 크기가 있는 필드 및 읽을 수 있는 요소 (바이트)의 `count`입니다.
 
 - `_Field_size_full_(size)`, `_Field_size_full_opt_(size)`, `_Field_size_bytes_full_(size)`, `_Field_size_bytes_full_opt_(size)`
 
-     @No__t-0으로 지정 된 요소 (또는 바이트)에서 읽고 쓸 수 있는 크기를 모두 포함 하는 필드입니다.
+     @No__t_0에 지정 된 대로 읽을 수 있는 크기와 쓰기 가능한 크기의 요소 (또는 바이트)가 모두 있는 필드입니다.
 
 - `_Field_z_`
 
@@ -59,7 +59,7 @@ ms.locfileid: "72015973"
 
 - `_Struct_size_bytes_(size)`
 
-     구조체 또는 클래스 선언에 적용 됩니다.  @No__t-0으로 지정 된 바이트 수를 사용 하 여 해당 형식의 유효한 개체가 선언 된 형식 보다 클 수 있음을 나타냅니다.  예를 들어 다음과 같은 가치를 제공해야 합니다.
+     구조체 또는 클래스 선언에 적용 됩니다.  @No__t_0에 지정 된 바이트 수를 사용 하 여 해당 형식의 유효한 개체가 선언 된 형식 보다 클 수 있음을 나타냅니다.  예를 들면,
 
     ```cpp
 
@@ -71,7 +71,7 @@ ms.locfileid: "72015973"
 
     ```
 
-     매개 변수의 버퍼 크기 (바이트)는 `MyStruct *` 형식의 `pM`입니다.
+     @No__t_1 형식의 매개 변수 `pM` 버퍼 크기 (바이트)는 다음과 같습니다.
 
     ```cpp
     min(pM->nSize, sizeof(MyStruct))
@@ -106,11 +106,11 @@ struct MyBuffer
 
 이 예에 대 한 참고 사항:
 
-- `_Field_z_`는 `_Null_terminated_`와 같습니다.  이름 필드에 `_Field_z_`은 이름 필드가 null로 끝나는 문자열 임을 지정 합니다.
-- @no__t에 대 한 `bufferSize`은 `bufferSize`의 값이 1에서 `MaxBufferSize` (둘 다 포함) 임을 지정 합니다.
-- @No__t-0 및 `_Field_size_` 주석의 최종 결과는 동일 합니다. 레이아웃이 비슷한 구조 나 클래스의 경우 `_Field_size_`은 해당 하는 `_Struct_size_bytes_` 주석 보다 더 많은 참조와 계산을 포함 하기 때문에 더 쉽게 읽고 유지 관리할 수 있습니다. `_Field_size_`은 바이트 크기로 변환할 필요가 없습니다. 예를 들어 void 포인터 필드의 경우에는 바이트 크기만 옵션을 사용할 수 있습니다. 예를 들어 `_Field_size_bytes_`을 사용할 수 있습니다. @No__t-0과 `_Field_size_`이 모두 있는 경우 도구에서 둘 다 사용할 수 있습니다. 두 주석이 동의 하지 않는 경우에는이 도구를 통해 수행할 작업을 결정 해야 합니다.
+- `_Field_z_`는 `_Null_terminated_`와 같습니다.  이름 필드에 대 한 `_Field_z_` 이름 필드가 null로 끝나는 문자열 임을 지정 합니다.
+- `bufferSize`에 대 한 `_Field_range_` `bufferSize` 값이 1과 `MaxBufferSize` 사이에 있어야 함을 지정 합니다 (모두 포함).
+- @No__t_0 및 `_Field_size_` 주석의 최종 결과는 동일 합니다. 비슷한 레이아웃을 가진 구조 또는 클래스의 경우 `_Field_size_`는 동일한 `_Struct_size_bytes_` 주석 보다 더 많은 참조와 계산을 포함 하기 때문에 더 쉽게 읽고 유지 관리할 수 있습니다. `_Field_size_` 바이트 크기로 변환할 필요가 없습니다. 예를 들어 void 포인터 필드의 경우에는 바이트 크기만 유일한 옵션 `_Field_size_bytes_` 사용할 수 있습니다. @No__t_0와 `_Field_size_` 모두 있는 경우 도구에서 둘 다 사용할 수 있습니다. 두 주석이 동의 하지 않는 경우에는이 도구를 통해 수행할 작업을 결정 해야 합니다.
 
-## <a name="see-also"></a>관련 항목
+## <a name="see-also"></a>관련 항목:
 
 - [C/C++ 코드 오류를 줄이기 위한 SAL 주석 사용](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [SAL 이해](../code-quality/understanding-sal.md)

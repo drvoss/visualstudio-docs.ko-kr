@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 994f8151b209d58617a23edbb4bba38836570710
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
-ms.translationtype: MT
+ms.openlocfilehash: 2ce642ee57112561ba687b7ebe962150ce4e268e
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349531"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446541"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>혼합 권장 규칙 규칙 집합
 
@@ -151,7 +151,7 @@ Microsoft Mixed 권장 규칙은 잠재적 보안 허점, 응용 프로그램 �
 |[C28020](../code-quality/c28020.md)|이 식은이 호출에서 true가 아닙니다.|
 |[C28021](../code-quality/c28021.md)|주석이 달린 매개 변수는 포인터여야 합니다.|
 |[C28022](../code-quality/c28022.md)|이 함수의 함수 클래스는 해당 클래스를 정의 하는 데 사용 된 typedef의 함수 클래스와 일치 하지 않습니다.|
-|[C28023](../code-quality/c28023.md)|할당 되거나 전달 되는 함수에는 클래스 중 하나 이상에 대 한 \_Function @ no__t-1class @ no__t-2 주석이 있어야 합니다.|
+|[C28023](../code-quality/c28023.md)|할당 되거나 전달 되는 함수에는 클래스 중 하나 이상에 대 한 \_Function \_class \_ 주석이 있어야 합니다.|
 |[C28024](../code-quality/c28024.md)|할당 되는 함수 포인터는 함수 클래스 (es) 목록에 포함 되지 않은 함수 클래스를 사용 하 여 주석 처리 됩니다.|
 |[C28039](../code-quality/c28039.md)|실제 매개 변수의 형식은 형식과 정확히 일치 해야 합니다.|
 |[C28112](../code-quality/c28112.md)|연동 함수를 통해 액세스 되는 변수는 항상 연동 함수를 통해 액세스 해야 합니다.|
@@ -169,14 +169,14 @@ Microsoft Mixed 권장 규칙은 잠재적 보안 허점, 응용 프로그램 �
 |[C28196](../code-quality/c28196.md)|요구 사항이 충족 되지 않았습니다. 식이 true로 계산 되지 않습니다.|
 |[C28202](../code-quality/c28202.md)|비정적 멤버에 대한 잘못된 참조입니다.|
 |[C28203](../code-quality/c28203.md)|클래스 멤버에 대한 모호한 참조입니다.|
-|[C28205](../code-quality/c28205.md)|\_ 성공 @ no__t-1 또는 \_On @ no__t-3failure @ no__t-4가 잘못 된 컨텍스트에서 사용 됨|
+|[C28205](../code-quality/c28205.md)|잘못 된 컨텍스트에서 사용 되는 \_Success \_ 또는 \_On \_failure \_|
 |[C28206](../code-quality/c28206.md)|왼쪽 피연산자가 구조체를 가리킵니다. '->'를 사용하세요.|
 |[C28207](../code-quality/c28207.md)|왼쪽 피연산자가 구조체입니다. '.'를 사용하세요.|
 |[C28209](../code-quality/c28209.md)|기호의 선언에 충돌 하는 선언이 있습니다.|
 |[C28210](../code-quality/c28210.md)|__on_failure 컨텍스트에 대한 주석이 명시적 사전 컨텍스트에 없어야 합니다.|
 |[C28211](../code-quality/c28211.md)|SAL_context에 대해 정적 컨텍스트 이름이 필요합니다.|
 |[C28212](../code-quality/c28212.md)|주석에 대한 포인터 식이 있어야 합니다.|
-|[C28213](../code-quality/c28213.md)|@No__t-0 Use @ no__t-1decl @ no__t-2annotations @ no__t annotation을 사용 하 여 이전 선언을 수정 하지 않고 참조 해야 합니다.|
+|[C28213](../code-quality/c28213.md)|이전 선언을 수정 하지 않고 참조 하려면 \_Use \_decl \_annotations \_ 주석을 사용 해야 합니다.|
 |[C28214](../code-quality/c28214.md)|특성 매개 변수 이름은 p1...p9여야 합니다.|
 |[C28215](../code-quality/c28215.md)|typefix는 이미 typefix가 있는 매개 변수에 적용할 수 없습니다.|
 |[C28216](../code-quality/c28216.md)|checkReturn 주석은 특정 함수 매개 변수에 대한 사전 조건에만 적용됩니다.|
@@ -219,7 +219,7 @@ Microsoft Mixed 권장 규칙은 잠재적 보안 허점, 응용 프로그램 �
 |[C28267](../code-quality/c28267.md)|함수 주석에서 주석 구문 오류가 발견되었습니다.|
 |[C28272](../code-quality/c28272.md)|함수, 매개 변수에 대한 주석이 검사 시 함수 선언과 일치하지 않습니다.|
 |[C28273](../code-quality/c28273.md)|함수의 경우 단서가 함수 선언과 일치하지 않습니다.|
-|[C28275](../code-quality/c28275.md)|@No__t-0 매크로 @ no__t-1value @ no__t-2에 대 한 매개 변수가 null입니다.|
+|[C28275](../code-quality/c28275.md)|@No__t_1value \_ \_Macro 매개 변수가 null입니다.|
 |[C28279](../code-quality/c28279.md)|기호의 경우 일치하는 'end'가 없는 'begin'이 있습니다.|
 |[C28280](../code-quality/c28280.md)|기호의 경우 일치하는 'begin'이 없는 'end'가 있습니다.|
 |[C28282](../code-quality/c28282.md)|형식 문자열이 사전 조건에 있어야 합니다.|
@@ -258,32 +258,32 @@ Microsoft Mixed 권장 규칙은 잠재적 보안 허점, 응용 프로그램 �
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|COM 등록 메서드는 일치해야 합니다.|
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|P/Invoke를 올바르게 선언하십시오.|
 |[CA1821](../code-quality/ca1821.md)|빈 종료자를 제거하십시오.|
-|[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|값 형식 필드는 이식 가능해야 합니다.|
-|[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|P/Invoke 선언은 이식 가능해야 합니다.|
-|[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|약한 ID를 가진 개체를 잠그지 마십시오.|
-|[CA2100](../code-quality/ca2100-review-sql-queries-for-security-vulnerabilities.md)|보안상 취약한 부분이 있는지 SQL 쿼리를 검토하십시오.|
-|[CA2101](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)|P/Invoke 문자열 인수에 대해 마샬링을 지정하십시오.|
-|[CA2108](../code-quality/ca2108-review-declarative-security-on-value-types.md)|값 형식에서 선언적 보안을 검토하십시오.|
-|[CA2111](../code-quality/ca2111-pointers-should-not-be-visible.md)|포인터는 노출되면 안 됩니다.|
-|[CA2112](../code-quality/ca2112-secured-types-should-not-expose-fields.md)|보안 형식은 필드를 노출하면 안 됩니다.|
-|[CA2114](../code-quality/ca2114-method-security-should-be-a-superset-of-type.md)|메서드 보안은 형식의 상위 집합이어야 합니다.|
-|[CA2116](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)|APTCA 메서드는 APTCA 메서드만 호출해야 합니다.|
-|[CA2117](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)|APTCA 형식은 APTCA 기본 형식만 확장해야 합니다.|
-|[CA2122](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)|링크 요청이 있는 메서드를 간접적으로 노출하지 마십시오.|
-|[CA2123](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)|재정의 링크 요청은 기본 링크 요청과 같아야 합니다.|
-|[CA2124](../code-quality/ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md)|취약한 finally 절을 외부 try에 래핑하십시오.|
-|[CA2126](../code-quality/ca2126-type-link-demands-require-inheritance-demands.md)|형식 링크 요청에는 상속 요청이 필요합니다.|
-|[CA2131](../code-quality/ca2131-security-critical-types-may-not-participate-in-type-equivalence.md)|보안에 중요한 형식은 형식 동등에 참여할 수 없습니다.|
-|[CA2132](../code-quality/ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md)|기본 생성자는 기본 형식의 기본 생성자 이상으로 중요해야 합니다.|
-|[CA2133](../code-quality/ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md)|대리자는 투명도가 일관된 메서드에 바인딩되어야 합니다.|
-|[CA2134](../code-quality/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md)|메서드는 기본 메서드를 재정의할 때 일관된 투명도를 유지해야 합니다.|
-|[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|투명 메서드에는 확인할 수 있는 IL만 포함되어야 합니다.|
-|[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|투명 메서드는 SuppressUnmanagedCodeSecurity 특성을 사용하여 메서드를 호출해서는 안 됩니다.|
-|[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|투명 코드는 보안에 중요한 항목을 참조해서는 안 됩니다.|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|투명 메서드는 LinkDemands를 충족해서는 안 됩니다|
-|[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|형식은 기본 형식 및 인터페이스 이상으로 중요해야 합니다.|
-|[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|투명 메서드는 보안 어설션을 사용할 수 없습니다.|
-|[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|투명 메서드는 네이티브 코드를 호출해서는 안 됩니다.|
+|[CA1900](../code-quality/ca1900.md)|값 형식 필드는 이식 가능해야 합니다.|
+|[CA1901](../code-quality/ca1901.md)|P/Invoke 선언은 이식 가능해야 합니다.|
+|[CA2002](../code-quality/ca2002.md)|약한 ID를 가진 개체를 잠그지 마십시오.|
+|[CA2100](../code-quality/ca2100.md)|보안상 취약한 부분이 있는지 SQL 쿼리를 검토하십시오.|
+|[CA2101](../code-quality/ca2101.md)|P/Invoke 문자열 인수에 대해 마샬링을 지정하십시오.|
+|[CA2108](../code-quality/ca2108.md)|값 형식에서 선언적 보안을 검토하십시오.|
+|[CA2111](../code-quality/ca2111.md)|포인터는 노출되면 안 됩니다.|
+|[CA2112](../code-quality/ca2112.md)|보안 형식은 필드를 노출하면 안 됩니다.|
+|[CA2114](../code-quality/ca2114.md)|메서드 보안은 형식의 상위 집합이어야 합니다.|
+|[CA2116](../code-quality/ca2116.md)|APTCA 메서드는 APTCA 메서드만 호출해야 합니다.|
+|[CA2117](../code-quality/ca2117.md)|APTCA 형식은 APTCA 기본 형식만 확장해야 합니다.|
+|[CA2122](../code-quality/ca2122.md)|링크 요청이 있는 메서드를 간접적으로 노출하지 마십시오.|
+|[CA2123](../code-quality/ca2123.md)|재정의 링크 요청은 기본 링크 요청과 같아야 합니다.|
+|[CA2124](../code-quality/ca2124.md)|취약한 finally 절을 외부 try에 래핑하십시오.|
+|[CA2126](../code-quality/ca2126.md)|형식 링크 요청에는 상속 요청이 필요합니다.|
+|[CA2131](../code-quality/ca2131.md)|보안에 중요한 형식은 형식 동등에 참여할 수 없습니다.|
+|[CA2132](../code-quality/ca2132.md)|기본 생성자는 기본 형식의 기본 생성자 이상으로 중요해야 합니다.|
+|[CA2133](../code-quality/ca2133.md)|대리자는 투명도가 일관된 메서드에 바인딩되어야 합니다.|
+|[CA2134](../code-quality/ca2134.md)|메서드는 기본 메서드를 재정의할 때 일관된 투명도를 유지해야 합니다.|
+|[CA2137](../code-quality/ca2137.md)|투명 메서드에는 확인할 수 있는 IL만 포함되어야 합니다.|
+|[CA2138](../code-quality/ca2138.md)|투명 메서드는 SuppressUnmanagedCodeSecurity 특성을 사용하여 메서드를 호출해서는 안 됩니다.|
+|[CA2140](../code-quality/ca2140.md)|투명 코드는 보안에 중요한 항목을 참조해서는 안 됩니다.|
+|[CA2141](../code-quality/ca2141.md)|투명 메서드는 LinkDemands를 충족해서는 안 됩니다|
+|[CA2146](../code-quality/ca2146.md)|형식은 기본 형식 및 인터페이스 이상으로 중요해야 합니다.|
+|[CA2147](../code-quality/ca2147.md)|투명 메서드는 보안 어설션을 사용할 수 없습니다.|
+|[CA2149](../code-quality/ca2149.md)|투명 메서드는 네이티브 코드를 호출해서는 안 됩니다.|
 |[CA2200](../code-quality/ca2200.md)|스택 정보를 유지하도록 다시 throw하십시오.|
 |[CA2202](../code-quality/ca2202.md)|개체를 여러 번 삭제하지 마십시오.|
 |[CA2207](../code-quality/ca2207.md)|값 형식 정적 필드 인라인을 초기화하십시오.|

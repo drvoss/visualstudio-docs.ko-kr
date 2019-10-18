@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7d9ca8c8bd46b4f8455c7aa750170d38f03321f6
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: de4fdbbdf54976ba3ee12c3621f7038cd4704a76
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349673"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449071"
 ---
 # <a name="rule-scope-options-for-fxcop-analyzers"></a>FxCop 분석기에 대 한 규칙 범위 옵션
 
@@ -21,9 +21,9 @@ ms.locfileid: "72349673"
 이러한 구성 옵션은 [FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) NuGet 패키지의 버전 2.6.3부터 사용할 수 있습니다.
 
 > [!TIP]
-> 지정 된 버전의 FxCopAnalyzers 패키지에 사용할 수 있는 옵션의 전체 목록을 보려면 패키지의 *문서* 폴더에서 *Analyzer Configuration.md* 파일을 확인 합니다. 파일은 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers @ no__t @ no__t @ no__t-4\documentation\Analyzer Configuration.md*에 있습니다. 이 구성 문서 파일은 버전 2.6.5에서 시작 하 여 패키지의 각 버전에 포함 되어 있습니다. 다음은 *Analyzer Configuration.md* 파일에 옵션을 설명 하는 방법의 예입니다.
+> 지정 된 버전의 FxCopAnalyzers 패키지에 사용할 수 있는 옵션의 전체 목록을 보려면 패키지의 *문서* 폴더에서 *Analyzer Configuration.md* 파일을 확인 합니다. 파일은 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> \documentation\Analyzer Configuration.md*에 있습니다. 이 구성 문서 파일은 버전 2.6.5에서 시작 하 여 패키지의 각 버전에 포함 되어 있습니다. 다음은 *Analyzer Configuration.md* 파일에 옵션을 설명 하는 방법의 예입니다.
 >
-> 옵션 이름: `sufficient_IterationCount_for_weak_KDF_algorithm` @ no__t-1
+> 옵션 이름: `sufficient_IterationCount_for_weak_KDF_algorithm` \
 > 옵션 값: 정수 값 \
 > 기본값: 각 구성 가능한 규칙 (대부분의 규칙에 대해 기본적으로 ' 10만 ')에 한정 됩니다.
 > 예: `dotnet_code_quality.CA5387.sufficient_IterationCount_for_weak_KDF_algorithm = 100000`

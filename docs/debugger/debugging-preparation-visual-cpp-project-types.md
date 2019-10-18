@@ -10,7 +10,7 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - project templates, debugging
-- Visual C++ projects, debugging
+- C++ projects, debugging
 - debug builds, project settings
 - debugging [C++]
 ms.assetid: 912b4ba2-7719-43d5-b087-db33e3f9329a
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: abc3a8339fffab762c2b6d7a649d3bae8efa76c8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9cf22bceedd026a641709640a6e29d1970000e3b
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925497"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72431416"
 ---
-# <a name="debugging-preparation-visual-c-project-types"></a>디버깅 준비 중: Visual C++ 프로젝트 형식
+# <a name="debugging-preparation-c-project-types"></a>디버깅 준비: C++ 프로젝트 형식
 이 단원에서는 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 프로젝트 템플릿으로 만든 기본 프로젝트 형식을 디버깅하는 방법에 대해 설명합니다.
 
  Dll을 출력으로 만드는 이러한 프로젝트 형식은 공유 하는 일반적인 기능으로 인해 [Dll 프로젝트로](../debugger/debugging-dll-projects.md) 그룹화 되었습니다.
@@ -97,7 +97,7 @@ ms.locfileid: "68925497"
    [항목 내용](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
 ## <a name="BKMK_Windows_Forms_Applications___NET_"></a> Windows Forms 애플리케이션(.NET)
- **Windows Forms 애플리케이션(.NET)** 템플릿은 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] Windows Forms 애플리케이션을 만드는 데 사용됩니다. 자세한 내용은 [방법: Windows 애플리케이션 프로젝트 만들기](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))를 참조하세요.
+ **Windows Forms 애플리케이션(.NET)** 템플릿은 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] Windows Forms 애플리케이션을 만드는 데 사용됩니다. 자세한 내용은 [How to: Create a Windows Application Project](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))을 참조하세요.
 
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 이 형식의 애플리케이션을 디버깅하는 방법은 관리되는 Windows Forms 애플리케이션의 경우와 비슷합니다.
 
@@ -109,7 +109,7 @@ ms.locfileid: "68925497"
 
  [항목 내용](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
-## <a name="see-also"></a>관련 항목
+## <a name="see-also"></a>관련 항목:
 - [디버거 소개](../debugger/debugger-feature-tour.md)
 - [C++ 디버그 구성에 대한 프로젝트 설정](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [실행 중인 프로그램 또는 여러 프로그램에 연결](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

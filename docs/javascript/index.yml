@@ -1,90 +1,58 @@
-### YamlMime:YamlDocument
-documentType: LandingData
-title: Visual Studio | JavaScript 및 TypeScript
+### YamlMime:Landing
+title: Visual Studio 자습서 | JavaScript 및 TypeScript
+summary: Visual Studio를 사용하여 JavaScript 및 TypeScript 앱 만들기
 metadata:
-  title: Visual Studio를 사용한 JavaScript 및 TypeScript 개발 | Microsoft Docs
-  meta.description: Tutorials and conceptual articles about developing JavaScript and TypeScript apps with Visual Studio.
-  author: mikejo5000
-  manager: jillfra
-  ms.prod: visual-studio-windows
-  ms.technology: vs-javascript
+  title: Visual Studio의 JavaScript 및 TypeScript
+  description: Visual Studio를 사용하여 JavaScript 및 TypeScript 앱을 만드는 방법을 알아봅니다.
   ms.topic: landing-page
-  ms.date: 01/15/2019
+  author: mikejo5000
   ms.author: mikejo
-  dev_langs:
-    - JavaScript
-    - TypeScript
-sections:
-  - title: Visual Studio 시작
-    items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: ../install/install-visual-studio.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
-            title: Visual Studio 설치
-          - href: ../javascript/quickstart-ide-orientation-js.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_visual-studio.svg'
-            title: Visual Studio IDE 둘러보기
-  - title: 자습서
-    items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: tutorial-nodejs.md
-            html: <p>Node.js 및 Express를 사용하여 웹앱 만들기</p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_nodejs.svg'
-          - href: tutorial-nodejs-with-react-and-jsx.md
-            html: <p>Node.js 및 React를 사용하여 웹앱 만들기</p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_React.svg'
-          - href: quickstart-vuejs-with-nodejs.md
-            html: <p>Node.js 및 Vue.js를 사용하여 웹앱 만들기</p>
-            image:
-              src: ../javascript/media/logo-vuejs.png
-          - href: publish-nodejs-app-azure.md
-            html: <p>Linux App Service에 Node.js 앱 게시</p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_linux-color.svg'
-  - title: 애플리케이션 개발
-    items:
-      - type: paragraph
-        text: 개발 작업에 Visual Studio를 사용하는 방법을 알아봅니다.
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: write-and-edit-code.md
-            html: <p>코드 작성 및 편집</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_code-edit.svg'
-          - href: nodejs-interactive-repl.md
-            html: <p>Node.js 대화형 REPL 사용</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
-          - href: npm-package-management.md
-            html: <p>npm 패키지 관리</p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_npm.svg'
-          - href: debug-nodejs.md
-            html: <p>코드 디버그</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_debug.svg'
-          - href: develop-javascript-code-without-solutions-projects.md
-            html: <p>프로젝트 또는 솔루션 없이 코드 개발</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_code-edit.svg'
-          - href: unit-testing-javascript-with-visual-studio.md
-            html: <p>단위 테스트 작성 및 실행</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_unit-testing.svg'
+  manager: jillfra
+  ms.date: 10/15/2019
+  ms.openlocfilehash: 1bdf2530d8e6513f57b515680410b9111cec87c6
+  ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+  ms.translationtype: HT
+  ms.contentlocale: ko-KR
+  ms.lasthandoff: 10/17/2019
+  ms.locfileid: "72517108"
+landingContent:
+- title: 시작
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Visual Studio의 JavaScript 및 TypeScript
+      url: javascript-in-vs-2019.md
+  - linkListType: how-to-guide
+    links:
+    - text: Visual Studio 설치
+      url: ../install/install-visual-studio.md
+  - linkListType: get-started
+    links:
+    - text: 둘러보기 시작
+      url: quickstart-ide-orientation-js.md
+- title: JavaScript 및 TypeScript 앱 만들기
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Node.js 및 Express를 사용하여 웹앱 만들기
+      url: tutorial-nodejs.md
+    - text: Node.js 및 React를 사용하여 웹앱 만들기
+      url: tutorial-nodejs-with-react-and-jsx.md
+    - text: Node.js 및 Vue.js를 사용하여 웹앱 만들기
+      url: quickstart-vuejs-with-nodejs.md
+- title: Visual Studio 학습
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 코드 작성 및 편집
+      url: write-and-edit-code.md
+    - text: npm 패키지 관리
+      url: npm-package-management.md
+    - text: Node.js 대화형 REPL 사용
+      url: nodejs-interactive-repl.md
+    - text: 코드 디버그
+      url: debug-nodejs.md
+    - text: 프로젝트 또는 솔루션 없이 코드 개발
+      url: develop-javascript-code-without-solutions-projects.md
+    - text: 단위 테스트 작성 및 실행
+      url: unit-testing-javascript-with-visual-studio.md

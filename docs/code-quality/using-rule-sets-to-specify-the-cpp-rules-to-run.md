@@ -9,20 +9,20 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64421350f74a2fadcb8a4d4845d8aa00a5f5813b
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 8e25e28c2ff20a628058d5dfa71de0368fbe9249
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163096"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445618"
 ---
-# <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>규칙 집합을 사용 하 여 실행할 C++ 규칙 지정
+# <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>규칙 집합을 사용 하 여 C++ 실행할 규칙 지정
 
 Visual Studio에서 코드 분석과 관련 된 특정 프로젝트 요구 사항을 충족 하도록 사용자 지정 *규칙 집합* 을 만들고 수정할 수 있습니다. 기본 규칙 집합은 `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`에 저장 됩니다.
 
 **Visual Studio 2017 버전 15.7 이상:** 모든 텍스트 편집기를 사용 하 여 사용자 지정 규칙 집합을 만들고 사용 하는 빌드 시스템에 관계 없이 명령줄 빌드에서 적용할 수 있습니다. 자세한 내용은 [/analyze: 규칙 집합](/cpp/build/reference/analyze-code-analysis)을 참조 하세요.
 
-C/C++ 프로젝트를 Visual Studio에서 설정 하는 사용자 지정 C++ 규칙을 만들려면 Visual Studio IDE에서 열려 있어야 합니다. 그런 다음 규칙 집합 편집기에서 표준 규칙 집합을 열고, 특정 규칙을 추가 또는 제거하고, 필요에 따라 코드 분석으로 규칙이 위반된 것으로 확인될 때 발생하는 작업을 변경합니다.
+Visual Studio에서 사용자 C++ 지정 규칙 집합을 만들려면 VISUAL studio IDE에서C++ C/프로젝트가 열려 있어야 합니다. 그런 다음 규칙 집합 편집기에서 표준 규칙 집합을 열고, 특정 규칙을 추가 또는 제거하고, 필요에 따라 코드 분석으로 규칙이 위반된 것으로 확인될 때 발생하는 작업을 변경합니다.
 
 새 사용자 지정 규칙 집합을 만들려면 새 파일 이름을 사용 하 여 저장 합니다. 사용자 지정 규칙 집합이 프로젝트에 자동으로 할당 됩니다.
 
@@ -38,7 +38,7 @@ C/C++ 프로젝트를 Visual Studio에서 설정 하는 사용자 지정 C++ 규
 
      \- 또는 -
 
-   - @No__t-1 찾아보기 ...를 선택 합니다.  **>** 하 여 목록에 없는 기존 규칙 집합을 지정 합니다.
+   - @No__t_1Browse 선택 ...  **>** 하 여 목록에 없는 기존 규칙 집합을 지정 합니다.
 
 4. **열기** 를 선택 하 여 규칙 집합 편집기에서 규칙을 표시 합니다.
 
@@ -66,7 +66,7 @@ C/C++ 프로젝트를 Visual Studio에서 설정 하는 사용자 지정 C++ 규
 
 - 모든 그룹의 규칙을 축소 하려면 **모두 축소**를 선택 합니다.
 
-- 규칙을 그룹화 하는 필드를 변경 하려면 **그룹화** 방법 목록에서 필드를 선택 합니다. 규칙을 그룹화 하지 않고 표시 하려면 **\<None >** 을 선택 합니다.
+- 규칙을 그룹화 하는 필드를 변경 하려면 **그룹화** 방법 목록에서 필드를 선택 합니다. 규칙을 그룹화 하지 않고 표시 하려면 **\<None >** 를 선택 합니다.
 
 - 규칙 열에서 필드를 추가 하거나 제거 하려면 **열 옵션**을 선택 합니다.
 

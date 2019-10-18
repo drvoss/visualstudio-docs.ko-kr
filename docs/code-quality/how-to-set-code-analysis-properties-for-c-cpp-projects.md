@@ -18,12 +18,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c27300244998765d13d485d617c17c5032bad7b
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 27f3d68d28b8d1799c52fcf83c6a00dc5f81f48a
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163041"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448908"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>방법: C/C++ 프로젝트의 코드 분석 속성 설정
 
@@ -45,7 +45,7 @@ ms.locfileid: "72163041"
 
 ## <a name="cmake-configuration"></a>CMake 구성
 
-CMake 프로젝트에서 `CMakeSettings.json` 내의 `enableMicrosoftCodeAnalysis` 및 `enableClangTidyCodeAnalysis` 키 값을 변경 하 여 코드 분석을 활성화 하거나 비활성화 합니다. 자세한 내용은 [Visual Studio에서 Clang 사용](../code-quality/clang-tidy.md) 을 참조 하세요.
+CMake 프로젝트에서 `enableMicrosoftCodeAnalysis` 값을 변경 하 고 `CMakeSettings.json` 내에서 키를 `enableClangTidyCodeAnalysis` 하 여 코드 분석을 활성화 하거나 비활성화 합니다. 자세한 내용은 [Visual Studio에서 Clang 사용](../code-quality/clang-tidy.md) 을 참조 하세요.
 
 ## <a name="see-also"></a>참조
 

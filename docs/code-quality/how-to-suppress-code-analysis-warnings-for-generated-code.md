@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ee4e3df94e46b4d3cc996a23fc1e40401195e21
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 54b33eb92cec82a5a0327bac92f2a8909519784d
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551128"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448905"
 ---
-# <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>방법: 생성된 코드에 대한 코드 분석 경고 표시 안 함
+# <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>방법: 생성 된 코드에 대 한 코드 분석 경고 표시 안 함
 
 생성 된 코드에는 관리 코드 컴파일러 또는 타사 도구를 통해 프로젝트에 추가 되는 코드가 포함 됩니다. 코드 분석이 생성 된 코드에서 검색 하는 규칙 위반을 확인 하는 것이 좋습니다. 그러나 위반을 포함 하는 코드를 보고 유지 관리할 수 없으므로 해당 코드를 표시 하지 않으려고 할 수 있습니다.
 

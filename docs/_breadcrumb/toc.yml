@@ -28,9 +28,6 @@
         - name: 배포
           tocHref: /visualstudio/deployment/
           topicHref: /visualstudio/deployment/deploying-applications-services-and-components
-        - name: 디자이너
-          tocHref: /visualstudio/designers/
-          topicHref: /visualstudio/designers/designing-user-interfaces
         - name: 확장성
           tocHref: /visualstudio/extensibility/
           topicHref: /visualstudio/extensibility/index
@@ -85,6 +82,9 @@
         - name: Workflow Designer
           tocHref: /visualstudio/workflow-designer/
           topicHref: /visualstudio/workflow-designer/developing-applications-with-the-workflow-designer
+        - name: XAML 도구
+          tocHref: /visualstudio/xaml-tools/
+          topicHref: /visualstudio/xaml-tools/
         - name: XML 도구
           tocHref: /visualstudio/xml-tools/
           topicHref: /visualstudio/xml-tools/xml-tools-in-visual-studio

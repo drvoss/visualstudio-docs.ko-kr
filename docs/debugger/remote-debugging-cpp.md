@@ -1,5 +1,5 @@
 ---
-title: 시각적 C++ 프로젝트 원격 디버그 | Microsoft Docs
+title: C++ 프로젝트 원격 디버그 | Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 08/14/2018
 ms.topic: conceptual
@@ -17,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 81a5ebba2d14a0e091b3b0bcd78a066ef50ed759
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 2b9cd6f120d5699464c9e7311721898a727bf47e
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211116"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72450431"
 ---
-# <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Visual Studio에서 Visual C++ 프로젝트 원격 디버깅
+# <a name="remote-debugging-a-c-project-in-visual-studio"></a>Visual Studio에서 C++ 프로젝트 원격 디버깅
 다른 컴퓨터에서 Visual Studio 응용 프로그램을 디버깅 하려면 앱을 배포할 컴퓨터에 원격 도구를 설치 하 고 실행 하 고 Visual Studio에서 원격 컴퓨터에 연결 하도록 프로젝트를 구성한 다음 앱을 배포 하 고 실행 합니다.
 
-![원격 디버거 구성 요소] (../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
+![원격 디버거 구성 요소](../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
 
 UWP (유니버설 Windows 앱) 원격 디버깅에 대 한 자세한 내용은 [설치 된 앱 패키지 디버그](debug-installed-app-package.md)를 참조 하세요.
 
@@ -52,7 +52,7 @@ UWP (유니버설 Windows 앱) 원격 디버깅에 대 한 자세한 내용은 [
 > [!NOTE]
 > 추가 사용자에 대 한 사용 권한을 추가 하거나 원격 디버거의 인증 모드 또는 포트 번호를 변경 해야 하는 경우 [원격 디버거 구성](../debugger/remote-debugging.md#configure_msvsmon)을 참조 하세요.
 
-## <a name="remote_cplusplus"></a> Visual C++ 프로젝트 원격 디버그
+## <a name="remote_cplusplus"></a>C++ 프로젝트 원격 디버그
  다음 절차에서는 프로젝트의 이름과 경로가 C:\remotetemp\MyMfc이 고 원격 컴퓨터의 이름이 **Mjo-DL**입니다.
 
 1. **mymfc**라는 MFC 애플리케이션을 만듭니다.
@@ -91,7 +91,7 @@ UWP (유니버설 Windows 앱) 원격 디버깅에 대 한 자세한 내용은 [
 
 10. 메시지가 표시 되 면 네트워크 자격 증명을 입력 하 여 원격 컴퓨터에 연결 합니다.
 
-     필요한 자격 증명은 네트워크의 보안 구성에 따라 다릅니다. 예를 들어 도메인 컴퓨터에서 보안 인증서를 선택 하거나 도메인 이름 및 암호를 입력할 수 있습니다. 도메인이 아닌 컴퓨터에서 컴퓨터 이름 및 유효한 사용자 계정 이름 <strong>MJO-DL\name@something.com</strong>(예:)을 올바른 암호와 함께 입력할 수 있습니다.
+     필요한 자격 증명은 네트워크의 보안 구성에 따라 다릅니다. 예를 들어 도메인 컴퓨터에서 보안 인증서를 선택 하거나 도메인 이름 및 암호를 입력할 수 있습니다. 도메인이 아닌 컴퓨터에서 컴퓨터 이름 및 올바른 사용자 계정 이름 (예: <strong>MJO-DL\name@something.com</strong>)을 올바른 암호와 함께 입력할 수 있습니다.
 
 11. Visual Studio 컴퓨터에서 실행이 중단점에서 중지된 것이 표시됩니다.
 
@@ -106,7 +106,7 @@ UWP (유니버설 Windows 앱) 원격 디버깅에 대 한 자세한 내용은 [
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
-## <a name="see-also"></a>관련 항목
+## <a name="see-also"></a>관련 항목:
 - [Visual Studio의 디버깅](../debugger/index.yml)
 - [디버거 소개](../debugger/debugger-feature-tour.md)
 - [원격 디버깅을 위해 Windows 방화벽 구성](../debugger/configure-the-windows-firewall-for-remote-debugging.md)

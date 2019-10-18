@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5195d42783efc6e9aeb0230b29e801acaeef094a
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: bc18859e84262e9b2a40efde7ed9733fce701a6c
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585232"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448825"
 ---
 # <a name="native-recommended-rules-rule-set"></a>네이티브 권장 규칙 규칙 집합
 
@@ -127,7 +127,7 @@ ms.locfileid: "69585232"
 |[C6518](../code-quality/c6518.md)|쓰기 불가능 버퍼에 대한 쓰기 가능 크기|
 |[C6522](../code-quality/c6522.md)|잘못된 크기 문자열 유형|
 |[C6525](../code-quality/c6525.md)|잘못된 크기 문자열 접근할 수 없는 위치|
-|[C6527](../code-quality/c6527.md)|주석이 잘못 되었습니다. ' NeedsRelease ' 속성은 void 형식의 값에 사용할 수 없습니다.|
+|[C6527](../code-quality/c6527.md)|주석이 잘못되었습니다. 'NeedsRelease' 속성은 void 형식 값에 사용할 수 없습니다.|
 |[C6530](../code-quality/c6530.md)|인식할 수 없는 형식 문자열 스타일|
 |[C6540](../code-quality/c6540.md)|이 함수에 특성 주석을 사용하면 기존의 모든 __declspec 주석이 무효화됩니다.|
 |[C6551](../code-quality/c6551.md)|크기 사양이 잘못되었습니다. 식을 구문 분석할 수 없습니다.|
@@ -139,7 +139,7 @@ ms.locfileid: "69585232"
 |[C6705](../code-quality/c6705.md)|필요한 주석 인수 개수가 실제 주석 인수 개수와 일치하지 않습니다.|
 |[C6706](../code-quality/c6706.md)|예기치 않은 주석 오류가 발생했습니다.|
 |[C6995](../code-quality/c6995.md)|XML 로그 파일을 저장 하지 못했습니다.|
-|[C26100](../code-quality/c26100.md)|경합 조건|
+|[C26100](../code-quality/c26100.md)|경합 상태|
 |[C26101](../code-quality/c26101.md)|연동 작업을 제대로 사용 하지 못함|
 |[C26110](../code-quality/c26110.md)|호출자가 잠금 유지에 실패 했습니다.|
 |[C26111](../code-quality/c26111.md)|호출자가 잠금 해제에 실패 했습니다.|
@@ -154,7 +154,7 @@ ms.locfileid: "69585232"
 |[C28020](../code-quality/c28020.md)|이 식은이 호출에서 true가 아닙니다.|
 |[C28021](../code-quality/c28021.md)|주석이 달린 매개 변수는 포인터여야 합니다.|
 |[C28022](../code-quality/c28022.md)|이 함수의 함수 클래스는 해당 클래스를 정의 하는 데 사용 된 typedef의 함수 클래스와 일치 하지 않습니다.|
-|[C28023](../code-quality/c28023.md)|할당 되거나 전달 되는 함수에는 클래스 \_중\_하나\_ 이상에 대 한 함수 클래스 주석이 있어야 합니다.|
+|[C28023](../code-quality/c28023.md)|할당 되거나 전달 되는 함수에는 클래스 중 하나 이상에 대 한 \_Function \_class \_ 주석이 있어야 합니다.|
 |[C28024](../code-quality/c28024.md)|할당 되는 함수 포인터는 함수 클래스 (es) 목록에 포함 되지 않은 함수 클래스를 사용 하 여 주석 처리 됩니다.|
 |[C28039](../code-quality/c28039.md)|실제 매개 변수의 형식은 형식과 정확히 일치 해야 합니다.|
 |[C28112](../code-quality/c28112.md)|연동 함수를 통해 액세스 되는 변수는 항상 연동 함수를 통해 액세스 해야 합니다.|
@@ -172,14 +172,14 @@ ms.locfileid: "69585232"
 |[C28196](../code-quality/c28196.md)|요구 사항이 충족 되지 않았습니다. 식이 true로 계산 되지 않습니다.|
 |[C28202](../code-quality/c28202.md)|비정적 멤버에 대한 잘못된 참조입니다.|
 |[C28203](../code-quality/c28203.md)|클래스 멤버에 대한 모호한 참조입니다.|
-|[C28205](../code-quality/c28205.md)|\_잘못\_ 된 컨텍스트에서\_사용\_ 되는 성공 또는 \_실패 시|
+|[C28205](../code-quality/c28205.md)|잘못 된 컨텍스트에서 사용 되는 \_Success \_ 또는 \_On \_failure \_|
 |[C28206](../code-quality/c28206.md)|왼쪽 피연산자가 구조체를 가리킵니다. '->'를 사용하세요.|
 |[C28207](../code-quality/c28207.md)|왼쪽 피연산자가 구조체입니다. '.'를 사용하세요.|
 |[C28209](../code-quality/c28209.md)|기호의 선언에 충돌 하는 선언이 있습니다.|
 |[C28210](../code-quality/c28210.md)|__on_failure 컨텍스트에 대한 주석이 명시적 사전 컨텍스트에 없어야 합니다.|
 |[C28211](../code-quality/c28211.md)|SAL_context에 대해 정적 컨텍스트 이름이 필요합니다.|
 |[C28212](../code-quality/c28212.md)|주석에 대한 포인터 식이 있어야 합니다.|
-|[C28213](../code-quality/c28213.md)|이전 선언을 수정\_하지\_ 않고 참조 하려면 decl 주석\_ 사용주석을사용해야합니다.\_|
+|[C28213](../code-quality/c28213.md)|이전 선언을 수정 하지 않고 참조 하려면 \_Use \_decl \_annotations \_ 주석을 사용 해야 합니다.|
 |[C28214](../code-quality/c28214.md)|특성 매개 변수 이름은 p1...p9여야 합니다.|
 |[C28215](../code-quality/c28215.md)|typefix는 이미 typefix가 있는 매개 변수에 적용할 수 없습니다.|
 |[C28216](../code-quality/c28216.md)|checkReturn 주석은 특정 함수 매개 변수에 대한 사전 조건에만 적용됩니다.|
@@ -222,7 +222,7 @@ ms.locfileid: "69585232"
 |[C28267](../code-quality/c28267.md)|함수 주석에서 주석 구문 오류가 발견되었습니다.|
 |[C28272](../code-quality/c28272.md)|함수, 매개 변수에 대한 주석이 검사 시 함수 선언과 일치하지 않습니다.|
 |[C28273](../code-quality/c28273.md)|함수의 경우 단서가 함수 선언과 일치하지 않습니다.|
-|[C28275](../code-quality/c28275.md)|매크로 \_\_값에대한매개변수가null입니다.\_|
+|[C28275](../code-quality/c28275.md)|@No__t_1value \_ \_Macro 매개 변수가 null입니다.|
 |[C28279](../code-quality/c28279.md)|기호의 경우 일치하는 'end'가 없는 'begin'이 있습니다.|
 |[C28280](../code-quality/c28280.md)|기호의 경우 일치하는 'begin'이 없는 'end'가 있습니다.|
 |[C28282](../code-quality/c28282.md)|형식 문자열이 사전 조건에 있어야 합니다.|
@@ -230,7 +230,7 @@ ms.locfileid: "69585232"
 |[C28286](../code-quality/c28286.md)|함수의 경우 끝 부분 근처에 구문 오류가 있습니다.|
 |[C28287](../code-quality/c28287.md)|함수의 경우 \_At\_() 주석에 구문 오류(인식할 수 없는 매개 변수 이름)|
 |[C28288](../code-quality/c28288.md)|함수의 경우 \_At\_() 주석에 구문 오류(잘못된 매개 변수 이름)|
-|[C28289](../code-quality/c28289.md)|For 함수: ReadableTo 또는 WritableTo에 매개 변수로 제한 사양이 없습니다.|
+|[C28289](../code-quality/c28289.md)|함수의 경우 ReadableTo 또는 WritableTo에 limit-spec가 매개 변수로 포함되지 않았습니다.|
 |[C28290](../code-quality/c28290.md)|함수의 주석에 실제 매개 변수 개수보다 많은 외부 참조가 있습니다.|
 |[C28291](../code-quality/c28291.md)|함수의 경우 역참조 수준 0에서 post null/notnull이 의미가 없습니다.|
 |[C28300](../code-quality/c28300.md)|연산자에 호환되지 않는 형식의 식 피연산자입니다.|

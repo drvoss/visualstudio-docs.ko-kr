@@ -91,7 +91,7 @@
         - name: 변수에 대한 메모리 보기
           href: memory-windows.md
         - name: 디버그하는 동안 XAML 속성 검사
-          href: inspect-xaml-properties-while-debugging.md
+          href: ../xaml-tools/inspect-xaml-properties-while-debugging.md?toc=/visualstudio/debugger/toc.json
     - name: 호출 스택
       items:
         - name: 호출 스택 보기
@@ -108,9 +108,9 @@
           href: how-to-enable-and-disable-edit-and-continue.md
         - name: 코드 변경 중지
           href: how-to-stop-code-changes.md
-        - name: Edit and Continue (Visual C++)
+        - name: 편집하며 계속하기(C++)
           items:
-            - name: Visual C++의 편집하며 계속하기
+            - name: C++의 편집하며 계속하기
               href: edit-and-continue-visual-cpp.md
             - name: 지원되는 코드 변경(C++)
               href: supported-code-changes-cpp.md
@@ -131,9 +131,9 @@
         - name: XAML 핫 다시 로드
           items:
             - name: XAML 코드 작성 및 실행 중인 XAML 코드 디버그
-              href: xaml-hot-reload.md
+              href: ../xaml-tools/xaml-hot-reload.md?toc=/visualstudio/debugger/toc.json
             - name: XAML 핫 다시 로드 문제 해결
-              href: xaml-hot-reload-troubleshooting.md
+              href: ../xaml-tools/xaml-hot-reload-troubleshooting.md?toc=/visualstudio/debugger/toc.json
         - name: 'F#에 편집하며 계속하기가 지원되지 않음'
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: 출력 창에 기록
@@ -202,7 +202,7 @@
                   items:
                     - name: C++ 디버그 구성에 대한 프로젝트 설정
                       href: project-settings-for-a-cpp-debug-configuration.md
-                    - name: Visual C++에서 디버그 기능 사용(-D_DEBUG)
+                    - name: C++에서 디버그 기능 사용(-D_DEBUG)
                       href: enabling-debug-features-in-visual-cpp-d-debug.md
                 - name: 웹 프로젝트에 대한 속성 페이지 설정
                   href: property-pages-settings-for-web-projects.md
@@ -234,7 +234,7 @@
               items:
                 - name: C++ 개체의 사용자 지정 뷰 만들기
                   href: create-custom-views-of-native-objects.md
-                - name: Visual C++ 사용자 지정 시각화 도우미 호환성
+                - name: C++ 사용자 지정 시각화 도우미 호환성
                   href: visual-cpp-custom-visualizer-compatibility.md
             - name: 사용자 지정 뷰(관리형)
               items:
@@ -435,7 +435,7 @@
             - name: 설치된 앱 패키지 디버그
               href: debug-installed-app-package.md
             - name: Blend에서 XAML 디버그
-              href: debug-xaml-in-blend.md
+              href: ../xaml-tools/debug-xaml-in-blend.md?toc=/visualstudio/debugger/toc.json
             - name: HTML 및 CSS
               items:
                 - name: HTML 및 CSS 디버그
@@ -500,7 +500,7 @@
           items:
             - name: 네이티브 코드 디버그
               href: debugging-native-code.md
-            - name: '디버깅 준비 중: Visual C++ 프로젝트 형식'
+            - name: '디버깅 준비 중: C++ 프로젝트 형식'
               href: debugging-preparation-visual-cpp-project-types.md
             - name: 최적화된 코드 디버그
               href: how-to-debug-optimized-code.md

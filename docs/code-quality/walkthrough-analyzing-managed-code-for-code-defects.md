@@ -10,12 +10,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6ced3448863d7236dc309dad3bb101cdead4837e
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
-ms.translationtype: MT
+ms.openlocfilehash: 79855f6915bbb0ed15bfd09f99fab0403290f09e
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349474"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448723"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>연습: 정적 코드 분석을 사용 하 여 코드 오류 찾기
 
@@ -93,7 +93,7 @@ ms.locfileid: "72349474"
 
 1. 다음 팁을 사용 하 여 경고를 수정 하십시오.
 
-   [CA1014: CLSCompliantAttribute를 사용 하 여 어셈블리 표시](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): AssemblyInfo.cs 파일의 끝에 코드 `[assembly: CLSCompliant(true)]`을 추가 합니다.
+   [CA1014: CLSCompliantAttribute를 사용 하 여 어셈블리 표시](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): AssemblyInfo.cs 파일의 끝에 코드 `[assembly: CLSCompliant(true)]`를 추가 합니다.
 
    [CA1032: 표준 예외 생성자 구현](../code-quality/ca1032-implement-standard-exception-constructors.md): 생성자 `public demo (String s) : base(s) { }`을 클래스 `demo`에 추가 합니다.
 

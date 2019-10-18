@@ -18,16 +18,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be22786a78c16dc9ffa05aba38075e4762485d2d
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
+ms.openlocfilehash: ddfc17d4f9bcb1f4f2585aa91319f06be6936e6f
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533313"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72431463"
 ---
-# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>디버깅 준비 중: 콘솔 프로젝트 (C#, C++, Visual Basic, F#)
+# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>디버깅 준비: 콘솔 프로젝트 (C#, C++, Visual Basic, F#)
 
-콘솔 프로젝트 디버깅을 준비 하는 것은 Windows 프로젝트 디버깅을 준비 하는 것과 유사 합니다. 명령줄 인수 설정 및 디버깅을 위해 응용 프로그램을 일시 중지 하는 방법 등의 몇 가지 추가 고려 사항이 있습니다. 자세한 내용은 [Windows Forms 응용 프로그램](../debugger/debugging-preparation-windows-forms-applications.md)및 [디버깅 준비를 참조 하세요. 응용 프로그램 (.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100))을 Windows Forms 합니다. 콘솔 애플리케이션은 모두 비슷하므로 이 항목에서는 다음과 같은 프로젝트 형식을 다룹니다.
+콘솔 프로젝트 디버깅을 준비 하는 것은 Windows 프로젝트 디버깅을 준비 하는 것과 유사 합니다. 명령줄 인수 설정 및 디버깅을 위해 응용 프로그램을 일시 중지 하는 방법 등의 몇 가지 추가 고려 사항이 있습니다. 자세한 내용은 [Windows Forms 응용 프로그램](../debugger/debugging-preparation-windows-forms-applications.md), 및 [디버깅 준비:  Windows Forms 애플리케이션(.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)). 콘솔 애플리케이션은 모두 비슷하므로 이 항목에서는 다음과 같은 프로젝트 형식을 다룹니다.
 
 - C#, Visual Basic 및 F# 콘솔 응용 프로그램
 
@@ -49,7 +49,7 @@ ms.locfileid: "68533313"
 
 - 코드에 중단점을 설정 하 고 응용 프로그램을 시작 합니다.
 
-- **F10** 키를 사용 하 여 응용 프로그램을 시작한 다음 (**디버그** > **단계**실행), **F11** 키 (**디버그** > **단계**)를 사용 하 여 코드를 탐색 하 고 **클릭 하 여 클릭**합니다.
+- **F10** 키를 사용 하 여 응용 프로그램을 시작 하 고 (**디버그**  > **프로시저 단위**실행) **F11** 키 (**디버그** ** >  한 단계씩 코드**실행)를 사용 하 여 코드를 탐색 하 고 **클릭 하 여 클릭**합니다.
 
 - 코드 편집기에서 줄을 마우스 오른쪽 단추로 클릭 하 고 **커서까지 실행**을 선택 합니다.
 
@@ -57,10 +57,10 @@ ms.locfileid: "68533313"
 
   Visual Studio에서 콘솔 애플리케이션을 시작하면 **콘솔** 창이 Visual Studio 창 뒤에 나타날 수도 있습니다. Visual Studio에서 콘솔 애플리케이션을 시작했는데 콘솔 창이 보이지 않으면 Visual Studio 창을 이동해 보십시오.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목:
 - [네이티브 코드 디버그](../debugger/debugging-native-code.md)
 - [관리 코드 디버그](../debugger/debugging-managed-code.md)
-- [Visual C++ 프로젝트 형식](../debugger/debugging-preparation-visual-cpp-project-types.md)
+- [프로젝트 디버그 C++ 준비](../debugger/debugging-preparation-visual-cpp-project-types.md)
 - [C#, F#, and Visual Basic Project Types](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)(C#, F# 및 Visual Basic 프로젝트 형식)
 - [C++ 디버그 구성에 대한 프로젝트 설정](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [디버거 보안](../debugger/debugger-security.md)

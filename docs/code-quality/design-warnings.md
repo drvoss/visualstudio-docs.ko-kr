@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 975b4440a922c1971f02937f6da007da6aa96864
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
-ms.translationtype: MT
+ms.openlocfilehash: 5229084f34a8c2a674d327ad86f7f3d2bbb1aae5
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349649"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449176"
 ---
 # <a name="design-warnings"></a>디자인 경고
 
@@ -84,7 +84,7 @@ ms.locfileid: "72349649"
 | [CA1057: 문자열 URI 오버로드는 System.Uri 오버로드를 호출합니다.](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md) | 형식에서 문자열 매개 변수가 System.Uri 매개 변수로 바뀐 점만 다른 메서드 오버로드를 선언합니다. 문자열 매개 변수를 사용하는 오버로드는 URI 매개 변수를 사용하는 오버로드를 호출하지 않습니다. |
 | [CA1058: 형식은 특정 기본 형식을 확장하면 안 됩니다.](../code-quality/ca1058-types-should-not-extend-certain-base-types.md) | 외부에서 볼 수 있는 형식이 특정 기본 형식을 확장합니다. 다음 방법 중 하나를 사용합니다. |
 | [CA1059: 멤버는 구체적인 특정 형식을 노출하면 안 됩니다.](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md) | 구체적인 형식은 완전히 구현되었기 때문에 인스턴스화할 수 있는 형식을 말합니다. 멤버를 광범위하게 사용할 수 있도록 하려면 구체적인 형식을 제안된 인터페이스로 바꾸십시오. |
-| [CA1060: P/Invoke를 NativeMethods 클래스로 이동](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md) | @No__t-1의 Declare 키워드를 사용 하 여 정의 된 <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> 또는 메서드로 표시 된 것과 같은 플랫폼 호출 메서드는 비관리 코드에 액세스 합니다. 이러한 메서드는 NativeMethods, SafeNativeMethods 또는 UnsafeNativeMethods 클래스에 속해야 합니다. |
+| [CA1060: P/Invoke를 NativeMethods 클래스로 이동](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md) | @No__t_1에서 Declare 키워드를 사용 하 여 정의 된 <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> 또는 메서드로 표시 된 것과 같은 플랫폼 호출 메서드는 비관리 코드에 액세스 합니다. 이러한 메서드는 NativeMethods, SafeNativeMethods 또는 UnsafeNativeMethods 클래스에 속해야 합니다. |
 | [CA1061: 기본 클래스 메서드를 숨기지 마십시오.](../code-quality/ca1061-do-not-hide-base-class-methods.md) | 파생된 메서드의 매개 변수 시그니처가 기본 메서드의 매개 변수 시그니처에 있는 해당 형식보다 더 약하게 파생된 형식이라는 점만 다른 경우 기본 형식의 메서드는 파생된 형식에 있는 동일한 이름의 메서드에 의해 숨겨집니다. |
 | [CA1062: public 메서드의 인수의 유효성을 검사하십시오.](../code-quality/ca1062-validate-arguments-of-public-methods.md) | 외부에서 볼 수 있는 메서드에 전달되는 모든 참조 인수는 null인지 여부를 검사해야 합니다. |
 | [CA1063: IDisposable을 올바르게 구현하십시오.](../code-quality/ca1063-implement-idisposable-correctly.md) | 모든 IDisposable 형식은 Dispose 패턴을 올바르게 구현해야 합니다. |

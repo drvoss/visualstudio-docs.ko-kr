@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 7680b305fad6f8ea1d7961ec5a70ddafd578c77d
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 263657213f1720eaca7a0462bb31585adaacf9bb
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71095263"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516399"
 ---
 # <a name="use-tracepoints-in-the-visual-studio-debugger"></a>Visual Studio 디버거에서 추적점 사용
 
@@ -22,7 +22,7 @@ ms.locfileid: "71095263"
 
 ## <a name="let39s-take-an-example"></a>&#39;예제를 사용 합니다.
 
-다음 예제 프로그램은 루프에서 다른 `for` 반복을 실행할 때마다 1 씩 늘리는 카운터 변수를 사용 하는 간단한 루프입니다.
+다음 예제 프로그램은 루프에서 다른 반복을 실행할 때마다 1 씩 늘리는 카운터 변수를 사용 하는 간단한 `for` 루프입니다.
 
 ![카운터 예제](../debugger/media/counterexample.png "카운터 예제")
 
@@ -47,19 +47,19 @@ ms.locfileid: "71095263"
 
 5. 출력 창 텍스트 상자 **에** 로그인 할 메시지를 입력 합니다. 자세한 내용은이 문서의 뒷부분에 나오는 섹션을 참조 하십시오.
 
-   이제 추적점이 설정 됩니다. 모든 정보를&quot; 출력 창에 기록 하려면 닫기단추를누릅니다.&quot;
+   이제 추적점이 설정 됩니다. @No__t_0Close &quot; 단추를 누르면 출력 창에 일부 정보가 기록 됩니다.
 
 6. 메시지가 표시 되는지 여부를 결정 하는 조건을 추가 하려면 **조건** 확인란을 선택 합니다.
 
    ![선택 된 조건 상자](../debugger/media/checkedconditionsbox.png "선택 된 조건 상자")
 
-   조건에 대 한 세 가지 선택 사항이 있습니다. **조건식**, **필터**및 **적중 횟수를 계산**합니다.
+   조건에 대 한 세 가지 선택 사항이 있습니다. 조건 **식**, **필터**및 **적중 횟수**입니다.
 
 ## <a name="actions-menu"></a>작업 메뉴
 
 이 메뉴를 사용 하 여 출력 창에 메시지를 기록할 수 있습니다. 메시지 상자에 출력 하려는 문자열을 입력 합니다 (따옴표 필요 없음). 변수의 값을 표시 하려면 중괄호 안에 포함 해야 합니다.
 
-예를 들어 출력 콘솔에 `counter` 변수 값을 표시 하려면 메시지 텍스트 상자에 {counter}를 입력 합니다.
+예를 들어 출력 콘솔에서 `counter` 변수의 값을 표시 하려면 메시지 텍스트 상자에 {counter}를 입력 합니다.
 
 ![카운터 출력 메시지](../debugger/media/counteroutputmessage.png "카운터 출력 메시지")
 
@@ -88,11 +88,11 @@ ms.locfileid: "71095263"
 ### <a name="conditional-expression"></a>조건식
 조건 식의 경우 출력 메시지는 특정 조건이 충족 될 때만 표시 됩니다.
 
-조건 식의 경우 특정 조건이 true 이거나 변경 된 경우에 메시지를 출력 하도록 추적점을 설정할 수 있습니다. 예를 들어 `for` 루프를 계속 반복 하는 동안 counter 값만 표시 하려면 **true** 옵션을 선택한 다음 메시지 텍스트 상자에을 입력 `i%2 == 0` 합니다.
+조건 식의 경우 특정 조건이 true 이거나 변경 된 경우에 메시지를 출력 하도록 추적점을 설정할 수 있습니다. 예를 들어 `for` 루프의 짝수 반복을 수행 하는 동안 counter 값만 표시 하려면 **true** 옵션을 선택한 다음 메시지 텍스트 상자에 `i%2 == 0`을 입력 합니다.
 
 ![조건식이 True 임](../debugger/media/conditionalexpressionistrue.png "조건식이 True 임")
 
-`for` 루프 반복이 변경 될 때 counter 값을 인쇄 하려면 **변경 된 경우** 옵션을 선택 하 고 메시지 텍스트 상자에을 `i` 입력 합니다.
+@No__t_0 루프의 반복이 변경 될 때 counter 값을 인쇄 하려면 **변경 된 경우** 옵션을 선택 하 고 메시지 텍스트 상자에 `i`을 입력 합니다.
 
 ![변경 된 조건 식](../debugger/media/conditionalexpressionwhenchanged.png "변경 된 조건 식")
 
@@ -101,7 +101,7 @@ ms.locfileid: "71095263"
 - 네이티브 코드의 경우 디버거는 조건의 첫 번째 계산을 변경으로 간주 하지 않으므로 첫 번째 계산에서 추적점을 적중 하지 않습니다.
 - 관리 코드의 경우 **변경 된 경우** 디버거는 첫 번째 평가에서 추적점을 적중 합니다.
 
-조건을 설정 하는 동안 사용할 수 있는 유효한 식에 대 한 자세한 내용은 [디버거의 식](expressions-in-the-debugger.md) 을 참조 하세요.
+조건을 설정 하는 동안 사용할 수 있는 유효한 식에 대 한 자세한 내용은 [디버거의 식](expressions-in-the-debugger.md)을 참조 하세요.
 
 ### <a name="hit-count"></a>적중 횟수
 적중 횟수 조건을 통해 추적점이 설정 된 코드 줄이 지정 된 횟수 만큼 실행 된 후에만 출력을 보낼 수 있습니다.
@@ -123,7 +123,7 @@ ms.locfileid: "71095263"
 - ThreadId = 값
 - ThreadName = "이름"
 
-문자열 (예: 이름)을 큰따옴표로 묶습니다. 따옴표 없이 값을 입력할 수 있습니다. `&` (),`OR`()`NOT`, ()및괄호를사용하여절을조합할수있습니다.`!` `||` `AND`
+문자열 (예: 이름)을 큰따옴표로 묶습니다. 따옴표 없이 값을 입력할 수 있습니다. @No__t_0 (`AND`), `||` (`OR`), `!` (`NOT`) 및 괄호를 사용 하 여 절을 조합할 수 있습니다.
 
 ## <a name="considerations"></a>고려 사항
 
@@ -131,12 +131,15 @@ ms.locfileid: "71095263"
 
 경우에 따라 개체의 속성이 나 특성을 검사 하면 해당 값이 변경 될 수 있습니다. 이는 추적점 기능 자체에 의해 발생 하는 버그가 아니지만 추적점을 사용 하 여 개체를 검사 해도 이러한 실수로 인 한 수정이 발생 하지 않도록 하는 것이 좋습니다.
 
-**작업** 메시지 상자에서 식이 계산 되는 방식은 현재 개발에 사용 하 고 있는 언어와 다를 수 있습니다. 예를 들어 문자열을 출력 하기 위해 일반적으로 또는 `Debug.WriteLine()` `console.log()`를 사용 하는 경우에도 메시지를 따옴표로 둘러쌀 필요가 없습니다. 또한 식 출력에 대 한 중괄호`{ }`구문 ()은 개발 언어에서 값을 출력 하는 규칙과 다를 수 있습니다. 그러나 중괄호 (`{ }`) 안에 있는 콘텐츠는 여전히 개발 언어의 구문을 사용 하 여 작성 해야 합니다.
+**작업** 메시지 상자에서 식이 계산 되는 방식은 현재 개발에 사용 하 고 있는 언어와 다를 수 있습니다. 예를 들어 문자열을 출력 하기 위해 일반적으로 `Debug.WriteLine()` 또는 `console.log()`를 사용 하는 경우에도 따옴표로 메시지를 래핑할 필요가 없습니다. 또한 식 출력에 대 한 중괄호 구문 (`{ }`)은 개발 언어에서 값을 출력 하는 규칙과 다를 수 있습니다. 그러나 중괄호 (`{ }`) 내의 콘텐츠는 개발 언어의 구문을 사용 하 여 계속 작성 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+라이브 응용 프로그램을 디버깅 하 고 유사한 기능을 찾으려면 스냅숏 디버거의 logpoint 기능을 확인 하세요. 스냅숏 디버거는 프로덕션 응용 프로그램의 문제를 조사 하는 데 사용 되는 도구입니다. Logpoints를 사용 하면 소스 코드를 수정 하지 않고도 출력 창에 메시지를 보낼 수 있으며 실행 중인 응용 프로그램에 영향을 주지 않습니다. 자세한 내용은 [라이브 Azure 응용 프로그램 디버그](../debugger/debug-live-azure-applications.md)를 참조 하세요.
+
+## <a name="see-also"></a>참조
 
 - [디버깅이란?](../debugger/what-is-debugging.md)
 - [Visual Studio C# 를 사용 하 여 더 나은 코드 작성](../debugger/write-better-code-with-visual-studio.md)
 - [먼저 디버깅 살펴보기](../debugger/debugger-feature-tour.md)
 - [디버거의 식](expressions-in-the-debugger.md)
 - [중단점 사용](../debugger/using-breakpoints.md)
+- [라이브 Azure 응용 프로그램 디버그](../debugger/debug-live-azure-applications.md)

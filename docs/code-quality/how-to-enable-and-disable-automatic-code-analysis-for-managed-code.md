@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c00a66a856dccb0ccb488937b935d9150ffc0266
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 656b36e6d0a90bb44eaa5745312f1a57e1ea3474
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975071"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448941"
 ---
 # <a name="how-to-enable-and-disable-binary-code-analysis-for-managed-code"></a>방법: 관리 코드에 대 한 이진 코드 분석 사용 및 사용 안 함
 

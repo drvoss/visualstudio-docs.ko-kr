@@ -9,25 +9,25 @@ helpviewer_keywords:
 - coded UI tests, for large applications
 ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
 caps.latest.revision: 24
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 016417ec05149da52af78e2b41e0fff4af6c3e5b
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 2f6936811ea753d66d212facdda627930fb1ab10
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871574"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672132"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>여러 UI 맵이 포함된 대형 애플리케이션 테스트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 항목에서는 여러 UI 맵을 사용하여 대규모 애플리케이션을 테스트하는 경우 코딩된 UI 테스트를 사용하는 방법에 대해 설명합니다.
 
- **요구 사항**
+ **Requirements**
 
 - Visual Studio Enterprise
 
-  새 코딩 된 UI 테스트를 만들 때 테스트 프레임 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 워크는 기본적으로 [UIMap](/previous-versions/dd580454(v=vs.140)) 클래스에서 테스트에 대 한 코드를 생성 합니다. 코딩된 UI 테스트를 기록하는 방법에 대한 자세한 내용은 [코딩된 UI 테스트 만들기](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) 및 [코딩된 UI 테스트 분석](../test/anatomy-of-a-coded-ui-test.md)을 참조하세요.
+  새 코딩 된 UI 테스트를 만들 때 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 테스트 프레임 워크는 기본적으로 [UIMap](/previous-versions/dd580454(v=vs.140)) 클래스에서 테스트에 대 한 코드를 생성 합니다. 코딩된 UI 테스트를 기록하는 방법에 대한 자세한 내용은 [코딩된 UI 테스트 만들기](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) 및 [코딩된 UI 테스트 분석](../test/anatomy-of-a-coded-ui-test.md)을 참조하세요.
 
   UI 맵에 대해 생성된 코드에는 테스트가 상호 작용하는 각 개체에 대한 클래스가 들어 있습니다. 특히 각각 생성된 메서드의 경우 메서드 매개 변수의 도우미 클래스가 특별히 해당 메서드를 위해 생성됩니다. 애플리케이션에 개체, 페이지, 폼 및 컨트롤이 매우 많으면 UI 맵이 매우 커질 수 있습니다. 또한 테스트 작업을 하는 사람이 여러 명인 경우 하나의 큰 UI 맵 파일로 애플리케이션을 통제하기 힘들어집니다.
 
@@ -138,7 +138,7 @@ namespace ContosoProject
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>

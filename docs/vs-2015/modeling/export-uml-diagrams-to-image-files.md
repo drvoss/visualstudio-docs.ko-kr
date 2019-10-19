@@ -6,20 +6,20 @@ ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: b29ce2a5-0ee3-4ab7-9aa3-13ca9c6b37a2
 caps.latest.revision: 10
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 782d5da27898de7a332824e6fb07842710ab0656
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: c095291cd02d591d9e493601b598a63c1ccb6f5b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871834"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669663"
 ---
 # <a name="export-uml-diagrams-to-image-files"></a>UML 다이어그램을 이미지 파일로 내보내기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-에서 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로그램 제어 아래에 있는 이미지로 UML 문서를 내보낼 수 있습니다. 예를 들어 자동 문서 생성의 일부로 이 작업을 수행할 수 있습니다.
+@No__t_0에서 프로그램 제어 아래에 있는 이미지로 UML 문서를 내보낼 수 있습니다. 예를 들어 자동 문서 생성의 일부로 이 작업을 수행할 수 있습니다.
 
  수동으로 문서를 이미지로 내보내려는 경우 다이어그램에서 모양을 복사하고 Word 등의 다른 프로그램에 붙여넣을 수 있습니다. 문서를 XPS 형식으로 인쇄할 수도 있습니다. 자세한 내용은 [다이어그램을 이미지로 내보내기](../modeling/export-diagrams-as-images.md)를 참조 하세요.
 
@@ -29,7 +29,7 @@ ms.locfileid: "68871834"
 > [!NOTE]
 > 이 코드를 메뉴 명령으로 실행하려면 MEF 구성 요소에 통합해야 합니다. 자세한 내용은 [모델링 다이어그램에서 메뉴 명령 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md)를 참조 하세요.
 
- 이 코드는 먼저 [ishape. GetObject](/previous-versions/ee789371(v=vs.140)) 를 사용 하 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> 여 기본 구현의을 가져옵니다. 이 형식에는 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.CreateBitmap%2A> 메서드가 있습니다.
+ 이 코드는 먼저 [Ishape. GetObject](/previous-versions/ee789371(v=vs.140)) 를 사용 하 여 기본 구현의 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>를 가져옵니다. 이 형식에는 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.CreateBitmap%2A> 메서드가 있습니다.
 
 ```
 namespace SaveToImage
@@ -141,5 +141,5 @@ namespace SaveToImage
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목:
  [다이어그램을 이미지로 내보내기](../modeling/export-diagrams-as-images.md) [모델링 다이어그램의 메뉴 명령 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md)

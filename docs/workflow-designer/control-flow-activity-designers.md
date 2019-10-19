@@ -3,23 +3,23 @@ title: 워크플로 디자이너-제어 흐름 활동 디자이너
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: ba74af23-5398-4e62-bd90-c50612e3bfef
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a3bcbf5ee70b90a0606c7e4cb3d691d28298c2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f1e7d7548eef3fd6ca6a21bb8c2fe5cb23e27df1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949872"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650612"
 ---
 # <a name="control-flow-activity-designers"></a>제어 흐름 활동 디자이너
 
-워크플로 디자이너는 여러를 가지 워크플로 생성할 때 사용할 수 있는 시스템 제공 활동이 포함 되어 있습니다. 이 단원에서는 워크플로 내의 흐름 제어에 사용되는 시스템 제공 활동에 대해 다룹니다. 다음 항목을 통해 이러한 활동에 대해 설명하고 사용 방법에 대한 지침을 제공합니다.
+워크플로 디자이너에는 워크플로를 생성할 때 사용할 수 있는 여러 가지 시스템 제공 활동이 포함 되어 있습니다. 이 단원에서는 워크플로 내의 흐름 제어에 사용되는 시스템 제공 활동에 대해 다룹니다. 다음 항목을 통해 이러한 활동에 대해 설명하고 사용 방법에 대한 지침을 제공합니다.
 
-## <a name="reference"></a>참조
+## <a name="reference"></a>참고
 
  <xref:System.Activities.Activity>
 
@@ -45,7 +45,7 @@ ms.locfileid: "62949872"
 
 ## <a name="related-sections"></a>관련 단원
 
-다른 형식의 활동 디자이너의 다음 항목을 참조 하세요.
+다른 형식의 활동 디자이너에 대해서는 다음 항목을 참조 하십시오.
 
  [활동 디자이너 사용](../workflow-designer/using-the-activity-designers.md)
 
@@ -59,7 +59,7 @@ ms.locfileid: "62949872"
 
  [트랜잭션](../workflow-designer/transaction-activity-designers.md)
 
- [컬렉션](../workflow-designer/collection-activity-designers.md)
+ [수집](../workflow-designer/collection-activity-designers.md)
 
  [오류 처리](../workflow-designer/error-handling-activity-designers.md)
 

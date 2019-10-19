@@ -1,22 +1,22 @@
 ---
-title: 'CA2151: 중요 한 형식을 사용 하 여 필드에는 보안에 중요 한를 사용 해야 합니다. | Microsoft Docs'
+title: 'CA2151: 중요 한 형식이 포함 된 필드는 보안에 중요 해야 합니다. | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 09db9d25-7d58-4725-a252-4a07baadf046
 caps.latest.revision: 6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 6c707efcc4c945e80ea0206cc5f30a647e83d231
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e5dee78ef3c487541363e9e290e54a8f3d68cf3b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142584"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667424"
 ---
-# <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151: 중요한 형식이 포함된 필드는 보안에 중요한 필드여야 합니다.
+# <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151: 중요한 형식이 포함된 필드는 보안에 중요한 필드여야 함
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -27,7 +27,7 @@ ms.locfileid: "68142584"
 |변경 수준|주요 변경|
 
 ## <a name="cause"></a>원인
- 보안 투명 필드 또는 안전 중요 필드가 선언되었습니다. 해당 형식은 보안에 중요한 것으로 지정되었습니다. 예:
+ 보안 투명 필드 또는 안전 중요 필드가 선언되었습니다. 해당 형식은 보안에 중요한 것으로 지정되었습니다. 예를 들면,
 
 ```csharp
 [assembly: AllowPartiallyTrustedCallers]
@@ -80,4 +80,4 @@ ms.locfileid: "68142584"
 ### <a name="code"></a>코드
  [!code-csharp[FxCop.Security.CA2145.TransparentMethodsShouldNotUseSuppressUnmanagedCodeSecurity#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2145.transparentmethodsshouldnotusesuppressunmanagedcodesecurity/cs/ca2145.cs#1)]
 
-### <a name="comments"></a>설명
+### <a name="comments"></a>주석

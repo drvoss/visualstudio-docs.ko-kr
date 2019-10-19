@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, running
 ms.assetid: 5086d228-f92e-4515-9708-c5b89b9e9a03
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6d755f1ce9edc2c699592e4c0c1396be719c4fc9
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: a9825164bcea0a68c4c7591d90158bdc5482c7f7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448948"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649367"
 ---
 # <a name="how-to-run-code-analysis-manually-for-managed-code"></a>방법: 관리 코드에 대해 수동으로 코드 분석 실행
 코드 분석 도구는 소스 코드에서 가능한 오류에 대 한 정보를 제공 합니다. 코드 프로젝트의 각 빌드에서 자동으로 코드 분석을 실행할 수 있으며 코드 분석을 수동으로 실행할 수도 있습니다. 코드 분석이 실행 될 때 확인 되는 규칙은 프로젝트 속성 페이지의 코드 분석 페이지에서 지정 합니다. 자세한 내용은 [방법: 관리 코드 프로젝트에 대 한 코드 분석 구성](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)을 참조 하세요.

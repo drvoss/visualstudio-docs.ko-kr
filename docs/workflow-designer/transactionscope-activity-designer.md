@@ -1,25 +1,25 @@
 ---
-title: TransactionScope 활동 디자이너-워크플로 디자이너
+title: 워크플로 디자이너-TransactionScope 활동 디자이너
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.TransactionScope.UI
 ms.assetid: 8d7ebfc6-7478-4888-b3b0-b14f296096af
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e84312518c19ef2a041091c5e2439dd7fb312c69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b5d557fb91c52c33022a161bada169d4332bac6b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433970"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649828"
 ---
 # <a name="transactionscope-activity-designer"></a>TransactionScope 활동 디자이너
 
-합니다 **TransactionScope** 활동 디자이너는 만들기 및 구성 하는 데 사용 되는 <xref:System.Activities.Statements.TransactionScope> 활동입니다.
+**TransactionScope** 활동 디자이너는 <xref:System.Activities.Statements.TransactionScope> 활동을 만들고 구성 하는 데 사용 됩니다.
 
 ## <a name="the-transactionscope-activity"></a>TransactionScope 활동
 
@@ -27,21 +27,21 @@ ms.locfileid: "62433970"
 
 ### <a name="using-the-transactionscope-activity-designer"></a>TransactionScope 활동 디자이너 사용
 
-액세스는 **TransactionScope** 활동 디자이너를 **트랜잭션** 범주의 합니다 **도구 상자**. **TransactionScope** 활동 디자이너에서 끌 수 있습니다 합니다 **도구 상자** 작업은 일반적으로, 등 배치 위치는 워크플로 디자이너 화면에 끌어 놓 및를 <xref:System.Activities.Statements.Sequence>합니다. 그러면 기본 <xref:System.Activities.Statements.TransactionScope>인 TransactionScope라는 이름의 <xref:System.Activities.Activity.DisplayName%2A> 활동이 만들어집니다. <xref:System.Activities.Activity.DisplayName%2A> 헤더의 값을 편집할 수 있습니다 합니다 **TransactionScope** 활동 디자이너 또는 합니다 **DisplayName** 속성 그리드의 상자.
+**도구 상자**의 **트랜잭션** 범주에서 **TransactionScope** 활동 디자이너에 액세스 합니다. **TransactionScope** 활동 디자이너를 **도구 상자** 에서 끌어와 같이 일반적으로 활동을 <xref:System.Activities.Statements.Sequence> 배치 하는 아무 곳에 나 워크플로 디자이너 화면에 놓을 수 있습니다. 그러면 기본 <xref:System.Activities.Statements.TransactionScope>인 TransactionScope라는 이름의 <xref:System.Activities.Activity.DisplayName%2A> 활동이 만들어집니다. @No__t_0 값은 **TransactionScope** 활동 디자이너의 머리글 또는 속성 표의 **DisplayName** 상자에서 편집할 수 있습니다.
 
 ### <a name="the-transactionscope-properties"></a>TransactionScope 속성
 
-다음 표에서는 <xref:System.Activities.Statements.TransactionScope> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. 합니다 <xref:System.Activities.Activity.DisplayName%2A> 고 <xref:System.Activities.Statements.TransactionScope.Body%2A> 속성을 워크플로 디자이너 화면에서 편집할 수 있습니다. 그러나 다른 속성은 속성 표에서 편집해야 합니다.
+다음 표에서는 <xref:System.Activities.Statements.TransactionScope> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. @No__t_0 및 <xref:System.Activities.Statements.TransactionScope.Body%2A> 속성은 워크플로 디자이너 화면에서 편집할 수 있습니다. 그러나 다른 속성은 속성 표에서 편집해야 합니다.
 
-|속성 이름|필수|사용|
+|속성 이름|필요한 공간|사용 현황|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.TransactionScope> 활동의 선택적 이름입니다. 기본값은 TransactionScope입니다. <xref:System.Activities.Activity.DisplayName%2A> 값은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
-|<xref:System.Activities.Statements.TransactionScope.Body%2A>|True|단일 트랜잭션에서 실행할 활동을 지정합니다. 추가할를 <xref:System.Activities.Statements.TransactionScope.Body%2A> 활동에서 활동을 **도구 상자** 에 **본문** 상자에 **TransactionScope** 활동 디자이너를 "드롭 작업 힌트 텍스트가 있는 여기에 "입니다.|
+|<xref:System.Activities.Statements.TransactionScope.Body%2A>|True|단일 트랜잭션에서 실행할 활동을 지정합니다. @No__t_0 활동을 추가 하려면 **도구 상자** 의 활동을 "여기에 작업 놓기" 힌트 텍스트가 있는 **TransactionScope** 활동 디자이너의 **본문** 상자로 끌어 놓습니다.|
 |<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|True|이 <xref:System.Transactions.IsolationLevel>의 <xref:System.Activities.Statements.TransactionScope>을 지정합니다.|
 |<xref:System.Activities.Statements.TransactionScope.Timeout%2A>|False|트랜잭션을 완료해야 하는 시간 간격(시:분:초를 의미하는 00:00:00 형식)을 지정합니다. 기본값은 1분입니다(00:01:00).|
-|[System.Activities.Statements.TransactionScope.AbortInstanceOnTransactionFailure](https://msdn.microsoft.com/library/system.activities.statements.transactionscope.abortinstanceontransactionfailure.aspx)|True|트랜잭션이 중단되면 워크플로를 중단할지 여부를 나타내는 값을 지정합니다.|
+|[AbortInstanceOnTransactionFailure입니다.](https://msdn.microsoft.com/library/system.activities.statements.transactionscope.abortinstanceontransactionfailure.aspx)|True|트랜잭션이 중단되면 워크플로를 중단할지 여부를 나타내는 값을 지정합니다.|
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [트랜잭션](../workflow-designer/transaction-activity-designers.md)
 - [TerminateWorkflow](../workflow-designer/terminateworkflow-activity-designer.md)

@@ -6,20 +6,20 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 157309d49fd46c4ecdd92236188a6739a3e9c2ad
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 7ab33c2e77de183b5c916fbcfe60843c47c4f83f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925396"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648052"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>연습: 단일 테이블 상속을 사용 하 여 LINQ to SQL 클래스 만들기 (O/R 디자이너)
-[Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md) 는 일반적으로 관계형 시스템에서 구현 되는 단일 테이블 상속을 지원 합니다. 이 연습은 다음 [방법:에서 제공 하는 일반 단계를 확장 합니다. O/R 디자이너](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) 항목을 사용 하 여 상속을 구성 하 고의 상속 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]사용을 보여 주는 몇 가지 실제 데이터를 제공 합니다.
+[Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md) 는 일반적으로 관계형 시스템에서 구현 되는 단일 테이블 상속을 지원 합니다. 이 연습은 [방법: O/R 디자이너를 사용 하 여 상속 구성](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) 항목에서 제공 하는 일반 단계를 확장 하 고 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]의 상속 사용을 보여 주는 몇 가지 실제 데이터를 제공 합니다.
 
 이 연습에서는 다음 작업을 수행 합니다.
 
@@ -38,7 +38,7 @@ ms.locfileid: "68925396"
 - Windows Form에 데이터를 표시합니다.
 
 ## <a name="create-a-table-to-inherit-from"></a>상속에 사용될 테이블 만들기
-상속이 어떻게 작동 하는지 확인 하려면 작은 `Person` 테이블을 만들고 기본 클래스로 사용한 다음이를 상속 하는 `Employee` 개체를 만듭니다.
+상속이 어떻게 작동 하는지 확인 하려면 작은 `Person` 테이블을 만들고이를 기본 클래스로 사용한 다음이를 상속 하는 `Employee` 개체를 만듭니다.
 
 ### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>상속을 보여 주기 위한 기본 테이블을 만들려면
 
@@ -91,7 +91,7 @@ ms.locfileid: "68925396"
 
 ### <a name="to-create-the-new-windows-forms-application"></a>새 Windows Forms 응용 프로그램을 만들려면
 
-1. Visual Studio의 **파일** 메뉴에서 **새** > **프로젝트**를 선택 합니다.
+1. Visual Studio의 **파일** 메뉴에서 **새로 만들기**  > **프로젝트**를 선택 합니다.
 
 2. 왼쪽 창 **에서 C# 시각적 개체** 또는 **Visual Basic** 을 확장 한 다음 **Windows 데스크톱**을 선택 합니다.
 
@@ -185,10 +185,10 @@ ms.locfileid: "68925396"
 
 3. 폼을 닫아 디버깅을 (**디버그** 메뉴에서 **디버깅 중지**를 클릭합니다.)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [연습: LINQ to SQL 클래스 만들기(O-R 디자이너)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [방법: 저장 프로시저를 할당하여 업데이트, 삽입 및 삭제 수행(O/R 디자이너)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
-- [방법: Visual Basic 또는에서 개체 모델을 생성 합니다.C#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)
+- [방법: Visual Basic 또는 C#에서 개체 모델 생성](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

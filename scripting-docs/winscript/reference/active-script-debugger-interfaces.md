@@ -1,5 +1,5 @@
 ---
-title: 액티브 스크립트 디버거 인터페이스 | Microsoft 문서
+title: 액티브 스크립트 디버거 인터페이스 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ed8ff0361396deaaffd46f14ca1fc38869988593
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 477374d93e4d8d5139197dcd49fef0e930e5ff32
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422456"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572707"
 ---
 # <a name="active-script-debugger-interfaces"></a>액티브 스크립트 디버거 인터페이스
 activdbg.h 및 activdbg100.h 헤더 파일은 이 섹션에 나열된 인터페이스, 열거형 및 구조를 제공합니다. 이 헤더 파일은 스크립트를 디버깅하기 위한 것입니다.  
@@ -27,7 +27,7 @@ activdbg.h 및 activdbg100.h 헤더 파일은 이 섹션에 나열된 인터페�
 > [!NOTE]
 > `IJSDebug*` 인터페이스 및 `IEnumJsStackFrames` 인터페이스는 스크립트를 사용하여 네이티브 코드를 디버깅하기 위해 먼저 Internet Explorer 11에서 릴리스되었습니다. 이러한 인터페이스에 대한 헤더 파일은 jscript9diag.h입니다.  
   
-## <a name="in-this-section"></a>섹션 내용  
+## <a name="in-this-section"></a>단원 내용  
  다음 인터페이스는 언어 중립적이고 호스트 중립적인 디버깅을 허용합니다.  
   
 - [액티브 스크립트 디버거 상수, 열거형 및 구조체](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)  
@@ -182,5 +182,5 @@ activdbg.h 및 activdbg100.h 헤더 파일은 이 섹션에 나열된 인터페�
   
 - [액티브 스크립트 디버거 상수, 열거형 및 구조체](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [액티브 스크립트 디버깅 개요](../../winscript/active-script-debugging-overview.md)

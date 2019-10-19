@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 777d20ecb51b09b282f88dc08464727b9ff2a945
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2ce6f7fe29fca2cd17c3dfcce76dac40e422aba4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432970"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572724"
 ---
 # <a name="active-script-profiling-overview"></a>액티브 스크립트 프로파일링 개요
 [액티브 스크립트 프로파일러 인터페이스](../winscript/reference/active-script-profiler-interfaces.md)는 스크립팅 엔진의 프로파일링을 사용하도록 설정합니다. 액티브 스크립트 프로파일링은 다음 부분으로 구성됩니다.  
@@ -43,5 +43,5 @@ ms.locfileid: "63432970"
 ## <a name="profiler"></a>프로파일러  
  프로파일러는 다양한 이벤트가 발생할 때 언어 엔진에서 호출을 받습니다. 프로파일러는 COM 개체로 등록되어야 하며 [IActiveScriptProfilerCallback 인터페이스](../winscript/reference/iactivescriptprofilercallback-interface.md)를 구현해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [액티브 스크립트 프로파일러 인터페이스](../winscript/reference/active-script-profiler-interfaces.md)

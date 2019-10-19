@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetName | Microsoft Docs
+title: 'IScriptEntry:: SetName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f6476869a54921cfdac34e9f1ed202adef909ddf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d9dfa27c6c8c58c0ee1599e17e1da5b5f424e416
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787603"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575349"
 ---
 # <a name="iscriptentrysetname"></a>IScriptEntry::SetName
-단일 개체 (예: 함수)를 나타내는 항목에 대 한 개체의 이름을 설정 합니다.  
+단일 개체 (예: 함수)를 나타내는 항목의 경우 개체의 이름을 설정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -37,7 +37,7 @@ HRESULT SetName(
   
 #### <a name="parameters"></a>매개 변수  
  `psz`  
- [in] 새 이름을 `IScriptEntry` 개체입니다.  
+ 진행 @No__t_0 개체의 새 이름입니다.  
   
 ## <a name="return-value"></a>반환 값  
  `HRESULT`입니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
@@ -46,8 +46,8 @@ HRESULT SetName(
 |-----------|-----------------|  
 |`S_OK`|메서드가 성공했으며|  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
   
-## <a name="see-also"></a>참고 항목  
- [IScriptEntry 인터페이스](../../winscript/reference/iscriptentry-interface.md)   
+## <a name="see-also"></a>참조  
+ [Iscriptentry 인터페이스](../../winscript/reference/iscriptentry-interface.md)    
  [IScriptEntry::GetName](../../winscript/reference/iscriptentry-getname.md)

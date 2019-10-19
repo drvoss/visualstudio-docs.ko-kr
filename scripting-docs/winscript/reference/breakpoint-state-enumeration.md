@@ -17,14 +17,14 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: faca5ef7bc89bc16d646f66fb897f1dc44eb831a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8c56a8b135a0aa9a4f8ddf91e146d4d64367bb2b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955362"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572640"
 ---
-# <a name="breakpointstate-enumeration"></a>BREAKPOINT_STATE 열거형
+# <a name="breakpoint_state-enumeration"></a>BREAKPOINT_STATE 열거형
 중단점의 상태를 나타냅니다.  
   
 ## <a name="syntax"></a>구문  
@@ -41,9 +41,9 @@ typedef enum tagBREAKPOINT_STATE {
   
 |멤버|설명|  
 |------------|-----------------|  
-|BREAKPOINT_DELETED|중단점 더 이상 존재 하지만 참조가 계속 됩니다.|  
-|BREAKPOINT_DISABLED|중단점이 존재 하지만 사용 하지 않도록 설정 됩니다.|  
-|BREAKPOINT_ENABLED|중단점이 존재 하 고 활성화 됩니다.|  
+|BREAKPOINT_DELETED|중단점은 더 이상 존재 하지 않지만 여전히 참조가 있습니다.|  
+|BREAKPOINT_DISABLED|중단점이 있지만 사용할 수 없습니다.|  
+|BREAKPOINT_ENABLED|중단점이 있고 사용 하도록 설정 되어 있습니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [액티브 스크립트 디버거 상수, 열거형 및 구조체](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

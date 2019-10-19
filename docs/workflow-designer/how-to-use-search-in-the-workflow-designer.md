@@ -1,23 +1,23 @@
 ---
-title: '방법: 워크플로 디자이너에서 검색 사용'
+title: '방법: Workflow Designer에서 검색 사용'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f42d3115-2ed2-4941-8f1e-92dac41c30fa
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 0a80bfecaa288eabc0161d0262535a7912411f78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+author: jillre
+ms.openlocfilehash: 12bda4af085b8ab41d3e11841f24cd5dfd389738
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949576"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650303"
 ---
-# <a name="how-to-use-search-in-the-workflow-designer"></a>방법: 워크플로 디자이너에서 검색 사용
+# <a name="how-to-use-search-in-the-workflow-designer"></a>방법: Workflow Designer에서 검색 사용
 
-큰 규모의 더 복잡 한 워크플로 만들기를 용이 하 게 키워드로 항목을 찾으려면 워크플로 디자이너 내에서 검색할 수 있습니다. 디자이너는 바꾸기를 지원하지 않습니다.
+더 크고 더 복잡 한 워크플로를 쉽게 만들 수 있도록 워크플로 디자이너 내에서 검색 하 여 키워드별로 항목을 찾을 수 있습니다. 디자이너는 바꾸기를 지원하지 않습니다.
 
 ## <a name="quick-find"></a>빠른 찾기
 
@@ -29,15 +29,15 @@ ms.locfileid: "62949576"
 
 - 인수
 
-- 식
+- 표현식
 
 ### <a name="use-quick-find"></a>빠른 찾기 사용
 
-1. 워크플로 디자이너를 연을 누릅니다 **Ctrl + F**를 선택 하거나 **편집** > **찾기 및 바꾸기** > **빠른 찾기**.
+1. Workflow designer를 연 상태에서 **ctrl + F**를 누르거나  >  **편집** 을 선택**하  > ** **빠른 찾기**를 선택 합니다.
 
-2. 에 검색어를 입력 합니다 **찾을 내용** 텍스트 상자 클릭 **다음 찾기**합니다.
+2. **찾을 내용** 텍스트 상자에 검색 용어를 입력 하 고 **다음 찾기**를 클릭 합니다.
 
-3. 검색어는 현재 워크플로에 있습니다. 다음 이미지에는 디자이너에 있는 중인 활동 표시 이름을 보여 줍니다.
+3. 검색 용어는 현재 워크플로에 있습니다. 다음 그림은 디자이너에 있는 활동 표시 이름을 보여 줍니다.
 
    ![워크플로 디자이너의 검색 결과](../workflow-designer/media/designersearch.png)
 
@@ -47,8 +47,8 @@ ms.locfileid: "62949576"
 
 ### <a name="use-find-in-files"></a>파일에서 찾기 사용
 
-1. Visual Studio에서 눌러 **Ctrl**+**Shift**+**F**를 선택 하거나 **편집**  >   **찾기 및 바꾸기** > **파일에서 찾기**합니다.
+1. Visual Studio에서 **ctrl** +**shift** +**F**를 누르거나 **편집**  > **찾기 및 바꾸기** 를 선택 하  > **파일에서 찾기**를 선택 합니다.
 
-2. 에 검색 조건을 입력 합니다 **찾을 내용** 텍스트 상자 클릭 **모두 찾기**합니다.
+2. **찾을 내용** 텍스트 상자에 검색 항목을 입력 하 고 **모두 찾기**를 클릭 합니다.
 
-3. 찾기 결과가 표시 되는 **찾기 결과** 보기. 워크플로 디자이너의 일치 항목이 포함 된 활동을 탐색 결과 항목을 두 번 클릭 합니다.
+3. **찾기 결과 보기에** 찾기 결과가 표시 됩니다. 결과 항목을 두 번 클릭 하면 workflow designer의 일치 항목이 포함 된 활동으로 이동 합니다.

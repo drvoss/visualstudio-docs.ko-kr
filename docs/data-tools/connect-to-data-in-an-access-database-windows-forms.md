@@ -7,23 +7,23 @@ helpviewer_keywords:
 - connecting to data, Access databases
 - Access databases, connecting
 ms.assetid: 4159e815-d430-4ad0-a234-e4125fcbef18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2a068414fb157ab71733d6c726b6ec71532629d4
-ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
+ms.openlocfilehash: d24fc2fa1ee34567e0c32859eeccf6af62813a20
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68345419"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648715"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Access 데이터베이스의 데이터에 연결
 
 Visual Studio를 사용 하 여 Access 데이터베이스 ( *.mdb* 파일 또는 *.accdb* 파일)에 연결할 수 있습니다. 연결을 정의한 후 **데이터 원본** 창에 데이터가 나타납니다. 여기에서 테이블 또는 뷰를 디자인 화면으로 끌 수 있습니다.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>Prerequisites
 
 이러한 절차를 사용 하려면 Windows Forms 또는 WPF 프로젝트와 Access 데이터베이스 ( *.accdb* 파일) 또는 access 2000-2003 데이터베이스 ( *.mdb* 파일)가 필요 합니다. 파일 형식에 해당하는 절차를 따릅니다.
 
@@ -33,7 +33,7 @@ Visual Studio를 사용 하 여 Access 데이터베이스 ( *.mdb* 파일 또는
 
 1. Visual Studio에서 Windows Forms 또는 WPF 응용 프로그램 프로젝트를 엽니다.
 
-2. **데이터 소스** 창을 열려면 **보기** 메뉴에서 **다른 Windows** > **데이터 소스**를 선택 합니다.
+2. **데이터 소스** 창을 열려면 **보기** 메뉴에서 **다른 창**  > **데이터 소스**를 선택 합니다.
 
    ![다른 창 데이터 소스 보기](../data-tools/media/viewdatasources.png)
 
@@ -75,7 +75,7 @@ Visual Studio를 사용 하 여 Access 데이터베이스 ( *.mdb* 파일 또는
 
 1. Visual Studio에서 Windows Forms 또는 WPF 응용 프로그램 프로젝트를 엽니다.
 
-2. **보기** 메뉴에서 **기타 Windows** > **데이터 원본**을 선택 합니다.
+2. **보기** 메뉴에서 **다른 Windows**  > **데이터 원본**을 선택 합니다.
 
    ![다른 창 데이터 소스 보기](../data-tools/media/viewdatasources.png)
 
@@ -113,9 +113,9 @@ Visual Studio를 사용 하 여 Access 데이터베이스 ( *.mdb* 파일 또는
 
 - **데이터 세트 디자이너**에서 데이터 원본을 열어 데이터 세트를 구성하는 개체를 추가하거나 편집합니다.
 
-- 데이터 집합에 있는 데이터 <xref:System.Data.DataTable.ColumnChanging> 테이블 <xref:System.Data.DataTable.RowChanging> 의 또는 이벤트에 유효성 검사 논리를 추가 합니다 (데이터 [집합의 데이터 유효성 검사](../data-tools/validate-data-in-datasets.md)참조).
+- 데이터 집합의 데이터 테이블에 대 한 <xref:System.Data.DataTable.ColumnChanging> 또는 <xref:System.Data.DataTable.RowChanging> 이벤트에 유효성 검사 논리를 추가 합니다 (데이터 [집합의 데이터 유효성 검사](../data-tools/validate-data-in-datasets.md)참조).
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [연결 추가](../data-tools/add-new-connections.md)
 - [WPF 데이터 바인딩 개요](/dotnet/framework/wpf/data/data-binding-overview)

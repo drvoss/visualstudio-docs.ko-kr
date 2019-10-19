@@ -11,15 +11,15 @@ helpviewer_keywords:
 - permissions
 ms.assetid: 70485ed7-6342-41bf-8250-7a6826e21b98
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8bc4920c32d781d31a6aed88699efccf8be6b774
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: b7ffc3a6b3fe5ad5952ecfde6091cbe7e656f305
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703985"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672671"
 ---
 # <a name="user-permissions-and-visual-studio"></a>사용자 권한 및 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "65703985"
 ## <a name="running-visual-studio-as-an-administrator"></a>관리자로 Visual Studio 실행
  IDE를 시작할 때마다 관리자 권한으로 Visual Studio를 실행하거나 애플리케이션 바로 가기를 수정하여 항상 관리자 권한으로 실행할 수 있습니다. 자세한 내용은 Windows 도움말을 참조하십시오.
 
-#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin8includeswin8-mdmd-includewin81includeswin81-mdmd-includewinserver8includeswinserver8-mdmd-or-includewinblueserver2includeswinblue-server-2-mdmd"></a>[!INCLUDE[win8](../includes/win8-md.md)], [!INCLUDE[win81](../includes/win81-md.md)], [!INCLUDE[winserver8](../includes/winserver8-md.md)] 또는 [!INCLUDE[winblue_server_2](../includes/winblue-server-2-md.md)]에서 관리자 권한으로 Visual Studio를 실행하려면
+#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin8includeswin8-mdmd-includewin81includeswin81-mdmd-includewinserver8includeswinserver8-mdmd-or-includewinblue_server_2includeswinblue-server-2-mdmd"></a>[!INCLUDE[win8](../includes/win8-md.md)], [!INCLUDE[win81](../includes/win81-md.md)], [!INCLUDE[winserver8](../includes/winserver8-md.md)] 또는 [!INCLUDE[winblue_server_2](../includes/winblue-server-2-md.md)]에서 관리자 권한으로 Visual Studio를 실행하려면
 
 1. **시작** 화면에서 **Visual Studio**를 입력합니다. 설치된 Visual Studio의 버전이 표시되어야 합니다.
 
@@ -62,7 +62,7 @@ ms.locfileid: "65703985"
 
      Visual Studio가 시작되면 제목 표시줄의 제품 이름 뒤에 **(관리자)** 가 나타납니다.
 
-#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin7includeswin7-mdmd-or-includewinsvr08r2includeswinsvr08-r2-mdmd"></a>[!INCLUDE[win7](../includes/win7-md.md)] 또는 [!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)]에서 관리자 권한으로 Visual Studio를 실행하려면
+#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin7includeswin7-mdmd-or-includewinsvr08_r2includeswinsvr08-r2-mdmd"></a>[!INCLUDE[win7](../includes/win7-md.md)] 또는 [!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)]에서 관리자 권한으로 Visual Studio를 실행하려면
 
 1. **시작** 메뉴에서 **모든 프로그램**을 선택합니다.
 

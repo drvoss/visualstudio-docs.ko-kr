@@ -8,14 +8,14 @@ helpviewer_keywords:
 - coded UI tests, best practices
 ms.assetid: d5aef766-a24c-4f1f-ac9b-e5462b6627d4
 caps.latest.revision: 41
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1a631823ce39e5655bba611f90c2869e8dff1d8f
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 2dffebeaa0349c149e319d20794f8b065baa5647
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871665"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660682"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>최선의 코딩된 UI 테스트 방법
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "68871665"
 
 - UI(사용자 인터페이스)가 변경되면 테스트 메서드 또는 어설션 메서드를 다시 기록하거나 기존 테스트 메서드의 영향을 받는 섹션을 다시 기록합니다.
 
-- 테스트 중인 응용 프로그램의 각 모듈에 대해 별도의 [UIMap](/previous-versions/dd580454(v=vs.140)) 파일을 만듭니다. 자세한 내용은 [여러 UI 맵이 포함된 대형 애플리케이션 테스트](../test/testing-a-large-application-with-multiple-ui-maps.md)를 참조하세요.
+- 테스트 대상 애플리케이션의 각 모듈에 대해 별도 [UIMap](/previous-versions/dd580454(v=vs.140)) 파일을 만듭니다. 자세한 내용은 [여러 UI 맵이 포함된 대형 애플리케이션 테스트](../test/testing-a-large-application-with-multiple-ui-maps.md)를 참조하세요.
 
 - 테스트 대상 애플리케이션에서 UI 컨트롤을 만들 때 의미 있는 이름을 사용합니다. 이렇게 하면 자동으로 생성된 컨트롤 이름에 더 많은 의미와 유용성이 제공됩니다.
 

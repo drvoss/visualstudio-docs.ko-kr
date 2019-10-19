@@ -3,23 +3,23 @@ title: 워크플로 디자이너-메시징 활동 디자이너
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 897e63cf-a42f-4edd-876f-c4ccfffaf6d6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9868b5eb52edde8e12d6a3b4f5edab1a4a9e499
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 0ba6aaaf0f6e77714af14e690d4944eac031e1d7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747094"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650139"
 ---
 # <a name="messaging-activity-designers"></a>메시징 활동 디자이너
 
-메시징 활동 디자이너 만들기 및 구성 Windows WF (Workflow Foundation) 응용 프로그램 내에서 Windows Communication Foundation (WCF) 메시지 보내기 및 받기는 메시징 활동에 사용 됩니다. .NET Framework 4의 다섯 가지 메시징 활동이 도입 되었습니다. 워크플로 디자이너는 워크플로 내의 메시징을 관리할 수 있도록 하는 두 템플릿 디자이너를 제공 합니다.
+메시징 활동 디자이너는 WF (Windows Workflow Foundation) 응용 프로그램 내에서 WCF (Windows Communication Foundation) 메시지를 보내고 받는 메시징 활동을 만들고 구성 하는 데 사용 됩니다. 5 개의 메시징 활동이 .NET Framework 4에서 도입 되었습니다. 워크플로 디자이너에서는 워크플로 내에서 메시징을 관리할 수 있는 두 개의 템플릿 디자이너를 제공 합니다.
 
-이 섹션에 포함 하 고 다음 표에 나열 된 항목에는 워크플로 디자이너 활동 및 템플릿 디자이너를 사용 하는 방법에 지침을 제공 합니다.
+이 섹션에 포함 된 항목 및 다음 표에 나열 된 항목에서는 워크플로 디자이너 활동 및 템플릿 디자이너를 사용 하는 방법에 대 한 지침을 제공 합니다.
 
 - <xref:System.Activities.Activity>
 
@@ -37,7 +37,7 @@ ms.locfileid: "66747094"
 
 ## <a name="related-sections"></a>관련 단원
 
-다른 형식의 활동 디자이너의 다음 항목을 참조 하세요.
+다른 형식의 활동 디자이너에 대해서는 다음 항목을 참조 하십시오.
 
 - [제어 흐름](../workflow-designer/control-flow-activity-designers.md)
 
@@ -51,7 +51,7 @@ ms.locfileid: "66747094"
 
 - [트랜잭션](../workflow-designer/transaction-activity-designers.md)
 
-- [컬렉션](../workflow-designer/collection-activity-designers.md)
+- [수집](../workflow-designer/collection-activity-designers.md)
 
 - [오류 처리](../workflow-designer/error-handling-activity-designers.md)
 

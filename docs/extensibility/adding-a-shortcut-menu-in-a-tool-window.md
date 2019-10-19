@@ -1,5 +1,5 @@
 ---
-title: 도구 창의 바로 가기 메뉴를 추가 합니다. | Microsoft Docs
+title: 도구 창에서 바로 가기 메뉴 추가 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,33 +13,33 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36df685197acbac4372daa8f8c813acf22357678
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ef3ba3e9a59ac1289803260b5894b05927205a20
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309932"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72633427"
 ---
-# <a name="add-a-shortcut-menu-in-a-tool-window"></a>도구 창의 바로 가기 메뉴 추가
-이 연습에서는 도구 창의 바로 가기 메뉴를 배치합니다. 바로 가기 메뉴에 단추, 텍스트 상자 또는 창 배경 단추로 클릭할 때 표시 되는 메뉴가입니다. 바로 가기 메뉴에서 명령을 다른 메뉴 또는 도구 모음에서 명령과 동일 하 게 동작 합니다. 바로 가기 메뉴를 지원 하려면 지정 된 *.vsct* 파일을 마우스 오른쪽 단추 클릭에 대 한 응답에 표시 합니다.
+# <a name="add-a-shortcut-menu-in-a-tool-window"></a>도구 창에서 바로 가기 메뉴 추가
+이 연습에서는 도구 창에 바로 가기 메뉴를 배치 합니다. 바로 가기 메뉴는 사용자가 단추, 텍스트 상자 또는 창 배경을 마우스 오른쪽 단추로 클릭할 때 나타나는 메뉴입니다. 바로 가기 메뉴의 명령은 다른 메뉴 또는 도구 모음의 명령과 동일 하 게 동작 합니다. 바로 가기 메뉴를 지원 하려면 *. vsct* 파일에서 지정 하 고 마우스 오른쪽 단추 클릭에 대 한 응답으로 표시 합니다.
 
-사용자 지정 도구 창 클래스에서 상속 되는 WPF 사용자 컨트롤의 도구 창으로 구성 됩니다 <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>합니다.
+도구 창은 <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>에서 상속 되는 사용자 지정 도구 창 클래스의 WPF 사용자 정의 컨트롤로 구성 됩니다.
 
-이 연습에 메뉴 항목을 선언 하 여 Visual Studio 메뉴와 바로 가기 메뉴를 만드는 방법을 보여 줍니다 합니다 *.vsct* 파일을 선택한 다음 관리 되는 패키지 프레임 워크를 사용 하 여 도구 창을 정의 하는 클래스에서이 구현 합니다. 이 방법은 Visual Studio 명령, UI 요소 및 자동화 개체 모델에 대 한 액세스를 지원합니다.
+이 연습에서는 *vsct* 파일에서 메뉴 항목을 선언 하 고 관리 되는 패키지 프레임 워크를 사용 하 여 도구 창을 정의 하는 클래스에서 구현 하는 방법으로 Visual Studio 메뉴로 바로 가기 메뉴를 만드는 방법을 보여 줍니다. 이 방법을 사용 하면 Visual Studio 명령, UI 요소 및 자동화 개체 모델에 쉽게 액세스할 수 있습니다.
 
-또는 바로 가기 메뉴는 Visual Studio 기능에 액세스 하지 하는 경우 사용할 수는 <xref:System.Windows.FrameworkElement.ContextMenu%2A> 사용자 정의 컨트롤에 있는 XAML 요소의 속성입니다. 자세한 내용은 [ContextMenu](/dotnet/framework/wpf/controls/contextmenu)합니다.
+또는 바로 가기 메뉴에서 Visual Studio 기능에 액세스 하지 않는 경우 사용자 정의 컨트롤에서 XAML 요소의 <xref:System.Windows.FrameworkElement.ContextMenu%2A> 속성을 사용할 수 있습니다. 자세한 내용은 [ContextMenu](/dotnet/framework/wpf/controls/contextmenu)를 참조 하세요.
 
-## <a name="prerequisites"></a>전제 조건
-Visual Studio 2015부터 수행 설치 하면 Visual Studio SDK 다운로드 센터에서. Visual Studio 설치에서 선택적 기능으로 포함 됩니다. 또한 VS SDK를 나중에 설치할 수 있습니다. 자세한 내용은 [Visual Studio SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)합니다.
+## <a name="prerequisites"></a>Prerequisites
+Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-the-tool-window-shortcut-menu-package"></a>도구 창 바로 가기 메뉴 패키지 만들기
 
-1. 라는 VSIX 프로젝트를 만듭니다 `TWShortcutMenu` 라는 도구 창 서식 파일을 추가한 **ShortcutMenu** 되도록 합니다. 도구 창을 만드는 방법에 대 한 자세한 내용은 참조 하세요. [도구 창으로 확장 프로그램을 만들려면](../extensibility/creating-an-extension-with-a-tool-window.md)합니다.
+1. @No__t_0 이라는 VSIX 프로젝트를 만들고이 프로젝트에 **ShortcutMenu** 라는 도구 창 템플릿을 추가 합니다. 도구 창을 만드는 방법에 대 한 자세한 내용은 [도구 창을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-tool-window.md)를 참조 하세요.
 
-## <a name="specifying-the-shortcut-menu"></a>바로 가기 메뉴를 지정합니다.
-이 연습에 나와 있는 사용자 수와 같은 바로 가기 메뉴에서 도구 창의 배경을 채우는 데 사용 되는 색 목록을 선택 합니다.
+## <a name="specifying-the-shortcut-menu"></a>바로 가기 메뉴 지정
+이 연습에 표시 된 것과 같은 바로 가기 메뉴를 사용 하면 사용자가 도구 창의 배경을 채우는 데 사용 되는 색 목록에서 선택할 수 있습니다.
 
-1. *ShortcutMenuPackage.vsct*, guidShortcutMenuPackageCmdSet, GuidSymbol 요소에서 찾 및 바로 가기 메뉴, 바로 가기 메뉴 그룹 및 메뉴 옵션을 선언 합니다. GuidSymbol 요소 이제 다음과 같이 표시 됩니다.
+1. *ShortcutMenuPackage*에서 GuidShortcutMenuPackageCmdSet 라는 GuidSymbol 요소를 찾고 바로 가기 메뉴, 바로 가기 메뉴 그룹 및 메뉴 옵션을 선언 합니다. 이제 GuidSymbol 요소가 다음과 같이 표시 됩니다.
 
     ```xml
     <GuidSymbol name="guidShortcutMenuPackageCmdSet" value="{00000000-0000-0000-0000-0000}"> // your GUID here
@@ -52,7 +52,7 @@ Visual Studio 2015부터 수행 설치 하면 Visual Studio SDK 다운로드 센
     </GuidSymbol>
     ```
 
-2. Buttons 요소 직전 메뉴 요소를 만들고에 바로 가기 메뉴를 정의 합니다.
+2. Buttons 요소 바로 앞에 메뉴 요소를 만든 다음 바로 가기 메뉴를 정의 합니다.
 
     ```vb
     <Menus>
@@ -65,9 +65,9 @@ Visual Studio 2015부터 수행 설치 하면 Visual Studio SDK 다운로드 센
     </Menus>
     ```
 
-    바로 가기 메뉴는 메뉴 또는 도구 모음의 일부 이기 때문에 부모가 없는지 않습니다.
+    바로 가기 메뉴는 메뉴 또는 도구 모음의 일부가 아니므로 부모를 포함 하지 않습니다.
 
-3. 바로 가기 메뉴 항목을 포함 하는 그룹 요소를 사용 하 여 그룹 요소를 만들고 바로 가기 메뉴를 사용 하 여 그룹을 연결 합니다.
+3. 바로 가기 메뉴 항목이 포함 된 Group 요소를 사용 하 여 Groups 요소를 만들고 해당 그룹을 바로 가기 메뉴에 연결 합니다.
 
     ```xml
     <Groups>
@@ -77,7 +77,7 @@ Visual Studio 2015부터 수행 설치 하면 Visual Studio SDK 다운로드 센
     </Groups>
     ```
 
-4. 단추 요소에서 바로 가기 메뉴에서 표시 되는 개별 명령을 정의 합니다. Buttons 요소는 다음과 같습니다.
+4. Buttons 요소에서 바로 가기 메뉴에 표시 될 개별 명령을 정의 합니다. Buttons 요소는 다음과 같습니다.
 
     ```xml
     <Buttons>
@@ -112,7 +112,7 @@ Visual Studio 2015부터 수행 설치 하면 Visual Studio SDK 다운로드 센
     </Buttons>
     ```
 
-5. *ShortcutMenuCommand.cs*, GUID, 바로 가기 메뉴 및 메뉴 항목 명령 집합에 대 한 정의 추가 합니다.
+5. *ShortcutMenuCommand.cs*에서 명령 집합 GUID, 바로 가기 메뉴 및 메뉴 항목에 대 한 정의를 추가 합니다.
 
     ```csharp
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ
@@ -122,21 +122,21 @@ Visual Studio 2015부터 수행 설치 하면 Visual Studio SDK 다운로드 센
     public const int cmdidBlue = 0x104;
     ```
 
-    다음은의 Symbols 섹션에 정의 된 동일한 명령 Id를 *ShortcutMenuPackage.vsct* 파일입니다. 상황에 맞는 그룹 포함 되지 않습니다 여기에 필요 합니다 *.vsct* 파일입니다.
+    이러한 파일은 *ShortcutMenuPackage* 파일의 기호 섹션에 정의 된 것과 동일한 명령 id입니다. 컨텍스트 그룹은 *. vsct* 파일에만 필요 하기 때문에 여기에 포함 되지 않습니다.
 
-## <a name="implementing-the-shortcut-menu"></a>바로 가기 메뉴를 구현합니다.
- 이 섹션에서는 바로 가기 메뉴 및 명령을 구현합니다.
+## <a name="implementing-the-shortcut-menu"></a>바로 가기 메뉴 구현
+ 이 섹션에서는 바로 가기 메뉴와 해당 명령을 구현 합니다.
 
-1. *ShortcutMenu.cs*, 도구 창 메뉴 명령 서비스를 가져올 수는 있지만 포함 된 컨트롤 수 없습니다. 다음 단계에는 사용자 컨트롤에서 사용 가능한 메뉴 명령 서비스를 만드는 방법을 보여 줍니다.
+1. *ShortcutMenu.cs*에서는 도구 창에서 메뉴 명령 서비스를 가져올 수 있지만 포함 하는 컨트롤은 사용할 수 없습니다. 다음 단계에서는 사용자 정의 컨트롤에서 메뉴 명령 서비스를 사용 하도록 설정 하는 방법을 보여 줍니다.
 
-2. *ShortcutMenu.cs*, 다음 추가 문을 사용 하 여:
+2. *ShortcutMenu.cs*에서 다음 using 지시문을 추가 합니다.
 
     ```csharp
     using Microsoft.VisualStudio.Shell;
     using System.ComponentModel.Design;
     ```
 
-3. 메뉴 명령 서비스 메뉴 명령 서비스 생성자에 전달 하는 컨트롤을 추가 하는 도구 창의 initialize () 메서드를 재정의 합니다.
+3. 도구 창의 Initialize () 메서드를 재정의 하 여 메뉴 명령 서비스를 가져오고 컨트롤을 추가 하 여 메뉴 명령 서비스를 생성자에 전달 합니다.
 
     ```csharp
     protected override void Initialize()
@@ -146,7 +146,7 @@ Visual Studio 2015부터 수행 설치 하면 Visual Studio SDK 다운로드 센
     }
     ```
 
-4. ShortcutMenu 도구 창의 생성자에서 컨트롤을 추가 하는 줄을 제거 합니다. 생성자는 이제 다음과 같이 표시 됩니다.
+4. ShortcutMenu tool window 생성자에서 컨트롤을 추가 하는 줄을 제거 합니다. 이제 생성자는 다음과 같습니다.
 
     ```csharp
     public ShortcutMenu() : base(null)
@@ -157,7 +157,7 @@ Visual Studio 2015부터 수행 설치 하면 Visual Studio SDK 다운로드 센
     }
     ```
 
-5. *ShortcutMenuControl.xaml.cs*메뉴 명령 서비스에 대 한 전용 필드를 추가 하 고 메뉴 명령 서비스 되려면 컨트롤 생성자를 변경 합니다. 다음 메뉴 명령 서비스를 사용 하 여 상황에 맞는 메뉴 명령을 추가 합니다. ShortcutMenuControl 생성자는 이제 다음 코드 처럼 보여야 합니다. 명령 처리기는 나중에 정의 됩니다.
+5. *ShortcutMenuControl.xaml.cs*에서 메뉴 명령 서비스에 대 한 전용 필드를 추가 하 고 메뉴 명령 서비스를 사용 하도록 컨트롤 생성자를 변경 합니다. 그런 다음 메뉴 명령 서비스를 사용 하 여 상황에 맞는 메뉴 명령을 추가 합니다. ShortcutMenuControl 생성자는 이제 다음 코드와 같습니다. 명령 처리기는 나중에 정의 됩니다.
 
     ```csharp
     public ShortcutMenuControl(OleMenuCommandService service)
@@ -183,7 +183,7 @@ Visual Studio 2015부터 수행 설치 하면 Visual Studio SDK 다운로드 센
     }
     ```
 
-6. *ShortcutMenuControl.xaml*에 추가 <xref:System.Windows.UIElement.MouseRightButtonDown> 최상위 이벤트 <xref:System.Windows.Controls.UserControl> 요소입니다. 이제 XAML 파일을 다음과 같이 표시 됩니다.
+6. *ShortcutMenuControl*에서 최상위 <xref:System.Windows.Controls.UserControl> 요소에 <xref:System.Windows.UIElement.MouseRightButtonDown> 이벤트를 추가 합니다. 이제 XAML 파일이 다음과 같이 표시 됩니다.
 
     ```vb
     <UserControl x:Class="TWShortcutMenu.ShortcutMenuControl"
@@ -205,7 +205,7 @@ Visual Studio 2015부터 수행 설치 하면 Visual Studio SDK 다운로드 센
     </UserControl>
     ```
 
-7. *ShortcutMenuControl.xaml.cs*, 이벤트 처리기에 대 한 스텁을 추가 합니다.
+7. *ShortcutMenuControl.xaml.cs*에서 이벤트 처리기에 대 한 스텁을 추가 합니다.
 
     ```csharp
     private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
@@ -214,7 +214,7 @@ Visual Studio 2015부터 수행 설치 하면 Visual Studio SDK 다운로드 센
     }
     ```
 
-8. 다음 추가 문을 사용 하 여 동일한 파일에:
+8. 동일한 파일에 다음 using 지시문을 추가 합니다.
 
     ```csharp
     using Microsoft.VisualStudio.Shell;
@@ -224,7 +224,7 @@ Visual Studio 2015부터 수행 설치 하면 Visual Studio SDK 다운로드 센
     using System.Windows.Media;
     ```
 
-9. 구현 된 `MyToolWindowMouseRightButtonDown` 다음과 같은 이벤트입니다.
+9. 다음과 같이 `MyToolWindowMouseRightButtonDown` 이벤트를 구현 합니다.
 
     ```csharp
     private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
@@ -240,7 +240,7 @@ Visual Studio 2015부터 수행 설치 하면 Visual Studio SDK 다운로드 센
     }
     ```
 
-    이렇게를 <xref:System.ComponentModel.Design.CommandID> 바로 가기 메뉴에 대 한 개체의 마우스 클릭의 위치를 식별 하 고 사용 하 여 해당 위치에 바로 가기 메뉴를 열고는 <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService.ShowContextMenu%2A> 메서드.
+    이렇게 하면 바로 가기 메뉴에 대 한 <xref:System.ComponentModel.Design.CommandID> 개체가 만들어지고 마우스 클릭 위치를 식별 하며, <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService.ShowContextMenu%2A> 메서드를 사용 하 여 해당 위치에서 바로 가기 메뉴를 엽니다.
 
 10. 명령 처리기를 구현 합니다.
 
@@ -264,18 +264,18 @@ Visual Studio 2015부터 수행 설치 하면 Visual Studio SDK 다운로드 센
     }
     ```
 
-    단 하나의 메서드를 식별 하 여 모든 메뉴 항목에 대 한 이벤트를 처리 하는 경우는 <xref:System.ComponentModel.Design.CommandID> 및 배경색을 적절 하 게 설정 합니다. 메뉴 항목을 했습니다 관련 되지 않은 명령을 포함 하는 경우 각 명령에 대 한 별도 이벤트 처리기를 만들었습니다 됩니다.
+    이 경우 <xref:System.ComponentModel.Design.CommandID>를 식별 하 고 배경색을 적절 하 게 설정 하 여 한 가지 방법으로 모든 메뉴 항목에 대 한 이벤트를 처리 합니다. 메뉴 항목에 관련 없는 명령이 포함 된 경우 각 명령에 대 한 별도의 이벤트 처리기를 만들었습니다.
 
 ## <a name="test-the-tool-window-features"></a>도구 창 기능 테스트
 
-1. 프로젝트를 빌드하고 디버깅을 시작합니다. 실험적 인스턴스가 표시 됩니다.
+1. 프로젝트를 빌드하고 디버깅을 시작합니다. 실험적 인스턴스가 나타납니다.
 
-2. 실험적 인스턴스를 클릭 **보기 / 기타 Windows**를 클릭 하 고 **ShortcutMenu**합니다. 이렇게 하면 도구 창을 표시 됩니다.
+2. 실험적 인스턴스에서 **보기/기타 창**을 클릭 한 다음 **ShortcutMenu**를 클릭 합니다. 이렇게 하면 도구 창이 표시 됩니다.
 
-3. 도구 창의 본문을 마우스 오른쪽 단추로 클릭 합니다. 색 목록이 있는 바로 가기 메뉴가 표시 됩니다.
+3. 도구 창의 본문을 마우스 오른쪽 단추로 클릭 합니다. 색 목록을 포함 하는 바로 가기 메뉴가 표시 되어야 합니다.
 
-4. 바로 가기 메뉴의 색을 클릭 합니다. 도구 창 배경 색상은 선택한 색으로 변경 되어야 합니다.
+4. 바로 가기 메뉴에서 색을 클릭 합니다. 도구 창의 배경색을 선택한 색으로 변경 해야 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)
-- [사용 하 고 서비스를 제공 합니다.](../extensibility/using-and-providing-services.md)
+- [서비스 사용 및 제공](../extensibility/using-and-providing-services.md)

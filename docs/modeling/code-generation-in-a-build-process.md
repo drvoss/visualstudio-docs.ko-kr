@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d26c0b464341bee7bce0b46bfdbcc89e0248a81
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 9c9cc0d8a40970e2ec36030ab3121d6fc02748e2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163126"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654192"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>빌드 프로세스에서 텍스트 변환 호출
 
@@ -49,9 +49,9 @@ Visual Studio가 설치 되지 않은 컴퓨터에서 [빌드 서버](/azure/dev
 - % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\Common7\IDE\PublicAssemblies
 
   - VisualStudio. 15.0 .dll.
-  
+
 > [!TIP]
-> 빌드 서버에서 TextTemplating 빌드 대상을 실행할 때 Roslyn 어셈블리가 *Roslyn* 라는 디렉터리에 있는 @no__t 경우 해당 어셈블리는 빌드 실행 파일과 동일한 디렉터리에 있는 디렉터리에 있어야 합니다 (예: *). msbuild.exe*)를 실행 합니다.
+> 빌드 서버에서 TextTemplating 빌드 대상을 실행 하는 경우 Roslyn 어셈블리가 *Roslyn* 라는 디렉터리에 있는지 확인 합니다 (예: *빌드 실행 파일과 동일한 디렉터리에 있는 디렉터리에 있습니다. `MissingMethodException` msbuild.exe*)를 실행 합니다.
 
 ## <a name="edit-the-project-file"></a>프로젝트 파일 편집
 
@@ -116,11 +116,11 @@ Visual Studio가 설치 되지 않은 컴퓨터에서 [빌드 서버](/azure/dev
     ```
 
      기본적으로 T4 MSBuild 태스크는 다음 보다 오래 된 경우 출력 파일을 다시 생성 합니다.
-     
+
      - 해당 템플릿 파일
      - 포함 된 모든 파일
      - 이전에 템플릿 또는 사용 하는 지시문 프로세서에서 읽은 모든 파일
-     
+
      이는 템플릿과 출력 파일의 날짜만 비교 하는 Visual Studio의 **모든 템플릿 변환** 명령에 사용 되는 것 보다 더 강력한 종속성 테스트입니다.
 
 프로젝트에서 텍스트 변형만 수행하려면 TransformAll 작업을 호출합니다.
@@ -184,7 +184,7 @@ MSBuild에서만 이러한 속성을 사용합니다. Visual Studio의 코드 �
 </ItemGroup>
 ```
 
-로 리디렉션하는 데 유용한 폴더는-0 @no__t입니다.
+로 리디렉션하는 데 유용한 폴더를 `$(IntermediateOutputPath)` 합니다.
 
 출력 파일 이름을 지정 하는 경우 템플릿의 output 지시어에 지정 된 확장 보다 우선 적용 됩니다.
 
@@ -285,7 +285,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 
 ## <a name="q--a"></a>Q&A
 
-@no__t-빌드 서버에서 템플릿을 변환 하려면 어떻게 해야 하나요? 코드를 체크 인하기 전에 이미 Visual Studio에서 템플릿을 변환 했습니다. **
+**빌드 서버에서 템플릿을 변환 하려면 어떻게 해야 하나요? 코드를 체크 인하기 전에 이미 Visual Studio에서 템플릿을 변환 했습니다.**
 
 포함 된 파일 또는 템플릿에서 읽은 다른 파일을 업데이트 하는 경우 Visual Studio는 파일을 자동으로 변환 하지 않습니다. 빌드의 일부로 템플릿을 변환 하면 모든 것이 최신 상태 인지 확인할 수 있습니다.
 
@@ -303,13 +303,13 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 
 ::: moniker range="vs-2017"
 
-- @No__t에서 T4 MSbuild 템플릿에 대 한 유용한 지침이 있습니다.
+- T4 MSbuild 템플릿에 대 한 유용한 지침은 `%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- @No__t에서 T4 MSbuild 템플릿에 대 한 유용한 지침이 있습니다.
+- T4 MSbuild 템플릿에 대 한 유용한 지침은 `%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 

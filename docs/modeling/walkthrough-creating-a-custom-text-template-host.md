@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], custom host
 - text templates, custom host walkthrough
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: b9d2447d07d9faabb5fc7eabddafc328756056ca
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 999e8f27a9c60d776d65dc87eb2b42adeec2226c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870654"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666969"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>연습: 사용자 지정 텍스트 템플릿 호스트 만들기
 
@@ -35,7 +35,7 @@ Visual Studio 외부에서 *텍스트 템플릿 변환* 기능을 사용 하거�
 
 - 사용자 지정 호스트 테스트
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>Prerequisites
 
 이 연습을 완료하려면 다음이 필요합니다.
 
@@ -51,7 +51,7 @@ Visual Studio 외부에서 *텍스트 템플릿 변환* 기능을 사용 하거�
 
 2. 다음 어셈블리에 대한 참조를 추가합니다.
 
-   - **Microsoft.VisualStudio.TextTemplating.\*.0**
+   - **VisualStudio \*.0**
 
    - **VisualStudio-10.0 및 이후 버전**
 
@@ -714,7 +714,7 @@ Visual Studio 외부에서 *텍스트 템플릿 변환* 기능을 사용 하거�
    End Namespace
    ```
 
-4. 의 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 경우에만 **프로젝트** 메뉴를 열고 **customhost 속성**을 클릭 합니다. **시작 개체** 목록에서 **Customhost. Program**을 클릭 합니다.
+4. @No__t_0의 경우 **프로젝트** 메뉴를 열고 **customhost 속성**을 클릭 합니다. **시작 개체** 목록에서 **Customhost. Program**을 클릭 합니다.
 
 5. **파일** 메뉴에서 **모두 저장**을 클릭합니다.
 
@@ -819,8 +819,8 @@ Visual Studio 외부에서 *텍스트 템플릿 변환* 기능을 사용 하거�
 
 ## <a name="next-steps"></a>다음 단계
 
-이 연습에서는 기본 변형 기능을 지원하는 텍스트 템플릿 변형 호스트를 만들었습니다. 사용자 지정 또는 생성된 지시문 프로세서를 호출하는 텍스트 템플릿을 지원하도록 호스트를 확장할 수 있습니다. 자세한 내용은 [연습: 생성 된 지시문 프로세서](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)에 호스트 연결
+이 연습에서는 기본 변형 기능을 지원하는 텍스트 템플릿 변형 호스트를 만들었습니다. 사용자 지정 또는 생성된 지시문 프로세서를 호출하는 텍스트 템플릿을 지원하도록 호스트를 확장할 수 있습니다. 자세한 내용은 [연습: 생성 된 지시문 프로세서에 호스트 연결](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))

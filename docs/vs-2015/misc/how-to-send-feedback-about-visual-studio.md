@@ -12,15 +12,15 @@ helpviewer_keywords:
 - sending feedback [Visual Studio]
 ms.assetid: c9f1dd8f-bcb6-40ac-b896-1e9eca0bb209
 caps.latest.revision: 41
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ced6ee7cea72b0e07d10768e75409ef23c1bb869
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e20e384a0ecda48446aae598476a709d226e167a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938005"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72609739"
 ---
-# <a name="how-to-send-feedback-about-visual-studio"></a>방법: Visual Studio에 대 한 사용자 의견 보내기
-이 콘텐츠는 제거되었습니다. 정보를 참조 하세요 [의견을 보내](../ide/talk-to-us.md)합니다.
+# <a name="how-to-send-feedback-about-visual-studio"></a>방법: Visual Studio에 대한 사용자 의견 보내기
+이 콘텐츠는 제거되었습니다. 자세한 내용은 [의견 보내기](../ide/talk-to-us.md)를 참조 하세요.

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - code metrics data
 - code metrics results
 - code metrics [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbe82fc213937b7e494afd27bfd964347c17e2b8
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 3c4cc5b43880df06752cbce79d58ec71921817a4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70179985"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649404"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>방법: 코드 메트릭 데이터 생성
 
@@ -24,7 +24,7 @@ ms.locfileid: "70179985"
 
 - [FxCop 분석기](#fxcop-analyzers-code-metrics-rules) 를 설치 하 고 여기에 포함 된 4 개의 코드 메트릭 (유지 관리) 규칙을 사용 하도록 설정 합니다.
 
-- Visual Studio 내에서 [ **분석** > **코드 메트릭 계산** ](#calculate-code-metrics-menu-command) 메뉴 명령을 선택 합니다.
+- Visual Studio 내에서 [ **분석**  > **코드 메트릭 계산** ](#calculate-code-metrics-menu-command) 메뉴 명령을 선택 합니다.
 
 - C# 및 Visual Basic 프로젝트에 대한 [명령줄](#command-line-code-metrics)에서
 
@@ -62,7 +62,7 @@ FxCop 분석기 패키지의 코드 메트릭 규칙에서 발생 하는 임계�
 
    이 예제에서 rule [CA1502](ca1502-avoid-excessive-complexity.md) 는 메서드의 순환 복잡성이 10 보다 클 때 발생 하도록 구성 됩니다.
 
-3. Visual Studio의 **속성** 창 또는 프로젝트 파일에서 구성 파일의 빌드 작업을 [**additionalfiles**](../ide/build-actions.md#build-action-values)로 표시 합니다. 예를 들어:
+3. Visual Studio의 **속성** 창 또는 프로젝트 파일에서 구성 파일의 빌드 작업을 [**additionalfiles**](../ide/build-actions.md#build-action-values)로 표시 합니다. 예를 들면,
 
    ```xml
    <ItemGroup>
@@ -72,13 +72,13 @@ FxCop 분석기 패키지의 코드 메트릭 규칙에서 발생 하는 임계�
 
 ## <a name="calculate-code-metrics-menu-command"></a>코드 메트릭 계산 메뉴 명령
 
-**분석** > **코드 메트릭 계산** 메뉴를 사용 하 여 IDE에서 열려 있는 하나 이상의 프로젝트에 대 한 코드 메트릭을 생성 합니다.
+**분석**  > **코드 메트릭 계산** 메뉴를 사용 하 여 IDE에서 열려 있는 프로젝트 중 하나 또는 모두에 대해 코드 메트릭을 생성 합니다.
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>전체 솔루션에 대 한 코드 메트릭 결과 생성
 
 다음 방법 중 하나를 통해 전체 솔루션에 대 한 코드 메트릭 결과를 생성할 수 있습니다.
 
-- 메뉴 모음에서 **분석** > 을 선택 하 여**솔루션에 대 한** **코드 메트릭** > 계산을 선택 합니다.
+- 메뉴 모음에서 **분석  >  분석** 을 선택 하  > **솔루션에 대해** **코드 메트릭을 계산** 합니다.
 
 - **솔루션 탐색기**에서 솔루션을 마우스 오른쪽 단추로 클릭 한 다음 **코드 메트릭 계산**을 선택 합니다.
 
@@ -90,7 +90,7 @@ FxCop 분석기 패키지의 코드 메트릭 규칙에서 발생 하는 임계�
 
 1. **솔루션 탐색기**에서 하나 이상의 프로젝트를 선택 합니다.
 
-1. 메뉴 모음에서 **분석** > **선택한 프로젝트에 대 한** **코드 메트릭** > 계산을 선택 합니다.
+1. 메뉴 모음에서 **분석**  >   > **선택한 프로젝트에 대해** **코드 메트릭 계산** 을 선택 합니다.
 
 결과가 생성 되 고 **코드 메트릭 결과** 창이 표시 됩니다. 결과 세부 정보를 보려면 **계층 구조**에서 트리를 확장 합니다.
 
@@ -111,7 +111,7 @@ FxCop 분석기 패키지의 코드 메트릭 규칙에서 발생 하는 임계�
 
 ### <a name="microsoftcodeanalysismetrics-nuget-package"></a>Microsoft CodeAnalysis. 메트릭 NuGet 패키지
 
-명령줄에서 코드 메트릭 데이터를 생성 하는 가장 쉬운 방법은 [Microsoft CodeAnalysis. 메트릭](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) NuGet 패키지를 설치 하는 것입니다. 패키지를 설치한 후에는 프로젝트 파일이 `msbuild /t:Metrics` 포함 된 디렉터리에서를 실행 합니다. 예를 들어:
+명령줄에서 코드 메트릭 데이터를 생성 하는 가장 쉬운 방법은 [Microsoft CodeAnalysis. 메트릭](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) NuGet 패키지를 설치 하는 것입니다. 패키지를 설치한 후 프로젝트 파일이 포함 된 디렉터리에서 `msbuild /t:Metrics`를 실행 합니다. 예를 들면,
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics
@@ -134,7 +134,7 @@ Build succeeded.
     0 Error(s)
 ```
 
-을 지정 `/p:MetricsOutputFile=<filename>`하 여 출력 파일 이름을 재정의할 수 있습니다. 을 지정 `/p:LEGACY_CODE_METRICS_MODE=true`하 여 [레거시 스타일](#previous-versions) 코드 메트릭 데이터를 가져올 수도 있습니다. 예를 들어:
+@No__t_0를 지정 하 여 출력 파일 이름을 재정의할 수 있습니다. @No__t_1를 지정 하 여 [레거시 스타일](#previous-versions) 코드 메트릭 데이터를 가져올 수도 있습니다. 예를 들면,
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics /p:LEGACY_CODE_METRICS_MODE=true /p:MetricsOutputFile="Legacy.xml"
@@ -219,7 +219,7 @@ NuGet 패키지를 설치 하지 않으려면 직접 *메트릭과* 실행 파�
 
 1. [Dotnet/roslyn](https://github.com/dotnet/roslyn-analyzers) 리포지토리를 복제 합니다.
 2. 관리자 권한으로 Visual Studio에 대 한 개발자 명령 프롬프트를 엽니다.
-3. **Roslyn-분석기** 리포지토리의 루트에서 다음 명령을 실행 합니다.`Restore.cmd`
+3. **Roslyn-분석기** 리포지토리의 루트에서 다음 명령을 실행 합니다. `Restore.cmd`
 4. 디렉터리를 *src\Tools*로 변경 합니다.
 5. 다음 명령을 실행 하 여 **메트릭의 .csproj** 프로젝트를 빌드합니다.
 
@@ -231,7 +231,7 @@ NuGet 패키지를 설치 하지 않으려면 직접 *메트릭과* 실행 파�
 
 #### <a name="metricsexe-usage"></a>메트릭 .exe 사용
 
-*Sc.exe*를 실행 하려면 프로젝트 또는 솔루션과 출력 XML 파일을 인수로 제공 합니다. 예를 들어:
+*Sc.exe*를 실행 하려면 프로젝트 또는 솔루션과 출력 XML 파일을 인수로 제공 합니다. 예를 들면,
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
@@ -259,11 +259,11 @@ Visual Studio 2015에는 *wsdl.exe*라고도 하는 명령줄 코드 메트릭 �
 
 #### <a name="metric-value-differences"></a>메트릭 값 차이
 
-`LinesOfCode` 메트릭은 새 명령줄 코드 메트릭 도구에서 더 정확 하 고 안정적입니다. Codegen 차이가 없으며 도구 집합 또는 런타임이 변경 될 때 변경 되지 않습니다. 새 도구는 빈 줄 및 주석을 포함 하 여 실제 코드 줄 수를 계산 합니다.
+@No__t_0 메트릭은 새로운 명령줄 코드 메트릭 도구에서 더 정확 하 고 안정적입니다. Codegen 차이가 없으며 도구 집합 또는 런타임이 변경 될 때 변경 되지 않습니다. 새 도구는 빈 줄 및 주석을 포함 하 여 실제 코드 줄 수를 계산 합니다.
 
-`CyclomaticComplexity` `IOperations` 및 와`MaintainabilityIndex` 같은 기타 메트릭은 이전 버전의 *메트릭과*동일한 수식을 사용 하지만 새 도구는 IL (중간 언어) 명령 대신 (논리적 원본 명령)의 수를 계산 합니다. 숫자는 Visual Studio IDE 및 이전 버전의 *메트릭에*의해 생성 된 것과 약간 다릅니다.
+@No__t_0 및 `MaintainabilityIndex`와 같은 다른 메트릭은 이전 버전의 *메트릭과*동일한 수식을 사용 하지만, 새 도구는 IL (중간 언어) 명령 대신 `IOperations` (논리적 원본 명령)의 수를 계산 합니다. 숫자는 Visual Studio IDE 및 이전 버전의 *메트릭에*의해 생성 된 것과 약간 다릅니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [코드 메트릭 결과 창 사용](../code-quality/working-with-code-metrics-data.md)
 - [코드 메트릭 값](../code-quality/code-metrics-values.md)

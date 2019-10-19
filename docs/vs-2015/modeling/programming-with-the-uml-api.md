@@ -9,15 +9,15 @@ helpviewer_keywords:
 - UML model, extending
 ms.assetid: c5937139-49d0-4439-8a9f-89f5e0474618
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d0cd086221b1c0ee6a4e2111cda543a3f8f4ec0e
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: b264987818e244cf016e9b54794109cafc548439
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871758"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652105"
 ---
 # <a name="programming-with-the-uml-api"></a>Programming with the UML API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Visual Studio의 UML API를 사용 하 여 UML 모델 및 다이어그램을 만
 
 |항목|설명된 예제 형식 및 메서드|설명된 기능|
 |-----------|-----------------------------------------|------------------------|
-|[UML API를 사용하여 관계 탐색](../modeling/navigate-relationships-with-the-uml-api.md)|UML 요소와 해당 속성 및 연결. 예를 들어 다음을 비롯 한 IElement 및 해당 하위 항목입니다. IClass, IActivity, IUseCase, IComponent, Iactivity, IModel, IPackage|Visual Studio에서 UML 모델은 uml 사양 버전 2.1.2을 따르며 uml [리소스 페이지](http://go.microsoft.com/fwlink/?LinkId=160796)에서 가져올 수 있습니다. 각 형식은 UML 형식과 같은 이름을 사용하고 접두사 "I"이 추가된 인터페이스입니다.|
+|[UML API를 사용하여 관계 탐색](../modeling/navigate-relationships-with-the-uml-api.md)|UML 요소와 해당 속성 및 연결. 예: IElement 및 해당 하위 항목(IClass, IActivity, IUseCase, IComponent, IInteraction, IModel, IPackage 포함)|Visual Studio에서 UML 모델은 uml 사양 버전 2.1.2을 따르며 uml [리소스 페이지](http://go.microsoft.com/fwlink/?LinkId=160796)에서 가져올 수 있습니다. 각 형식은 UML 형식과 같은 이름을 사용하고 접두사 "I"이 추가된 인터페이스입니다.|
 |[UML 모델에서 요소 및 관계 만들기](../modeling/create-elements-and-relationships-in-uml-models.md)|IPackage.CreateClass()<br /><br /> IClass.CreateOperation()|각 요소 형식에는 자식을 만들기 위한 메서드가 있습니다.|
 |[다이어그램에 UML 모델 표시](../modeling/display-a-uml-model-on-diagrams.md)|IShape, IDiagram<br /><br /> IShape.Move()|모델의 각 요소는 다이어그램의 모양으로 표현할 수 있습니다. 경우에 따라 각 개체에 대한 새 모양을 만들 수 있습니다. 이들 모양을 이동, 크기 조정, 색 지정하고 축소 또는 확장할 수 있습니다.|
 |[UML 모델 탐색](../modeling/navigate-the-uml-model.md)|IModelStore<br /><br /> IDiagramContext|모델 저장소에는 모델이 저장됩니다.<br /><br /> 다이어그램 컨텍스트는 현재 다이어그램 및 저장소에 대한 액세스를 제공합니다.|
@@ -51,7 +51,7 @@ Visual Studio의 UML API를 사용 하 여 UML 모델 및 다이어그램을 만
 ## <a name="the-api-assemblies"></a>API 어셈블리
  다음 표에서는 UML 도구에 대한 확장성을 제공하는 어셈블리 및 사용하는 것이 좋은 네임스페이스에 대해 간략하게 설명합니다.
 
-|어셈블리|네임스페이스|다음에 대한 액세스를 제공합니다.|
+|Assembly|네임스페이스|다음에 대한 액세스를 제공합니다.|
 |--------------|----------------|-------------------------|
 |Microsoft.VisualStudio.Uml.Interfaces|(모두)|UML 형식.|
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility|VisualStudio. Microsoft.visualstudio.architecturetools.layer.validator|[생성 방법](../modeling/create-elements-and-relationships-in-uml-models.md)|
@@ -68,5 +68,5 @@ Visual Studio의 UML API를 사용 하 여 UML 모델 및 다이어그램을 만
 |System.ComponentModel.Composition|<xref:System.ComponentModel.Composition>|[MEF 구성 요소에 대 한 내보내기 및 가져오기](../modeling/define-and-install-a-modeling-extension.md)|
 |System.Linq|<xref:System.Linq>|[특히 관계를 처리할 때 컬렉션을 쉽게 조작할](../modeling/navigate-relationships-with-the-uml-api.md)수 있습니다.|
 
-## <a name="see-also"></a>관련 항목
- [UML 모델 및 다이어그램 확장](../modeling/extend-uml-models-and-diagrams.md) [UML 모델링 확장성에 대 한 API 참조](../modeling/api-reference-for-uml-modeling-extensibility.md)
+## <a name="see-also"></a>관련 항목:
+ Uml [모델링 확장성에 대 한](../modeling/api-reference-for-uml-modeling-extensibility.md) [uml 모델 및 다이어그램 확장](../modeling/extend-uml-models-and-diagrams.md) API 참조

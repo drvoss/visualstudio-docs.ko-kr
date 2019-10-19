@@ -2,25 +2,25 @@
 title: 텍스트 및 이미지 필드 사용자 지정
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 607809b05688931b139b27fec1803719b928dfea
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 04cd8d1eb94ba488b621fb30f9ac598ce9c71722
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445823"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653985"
 ---
 # <a name="customizing-text-and-image-fields"></a>텍스트 및 이미지 필드 사용자 지정
-셰이프의 텍스트 decorator를 정의한 경우에 텍스트 필드에서 표시 됩니다. TextFields와 다른 ShapeFields 초기화의 예제를 DSL 솔루션에서 Dsl\GeneratedCode\Shapes.cs를 검사 합니다.
+도형에서 텍스트 데코레이터를 정의할 때 텍스트 데코레이터는 TextField로 표시 됩니다. TextFields 및 기타 ShapeFields를 초기화 하는 예는 DSL 솔루션에서 Dsl\GeneratedCode\Shapes.cs를 검사 합니다.
 
- 텍스트 필드는 레이블에 할당 된 공간 등의 셰이프 내에서 영역을 관리 하는 개체입니다. TextField 인스턴스는 동일한 클래스의 여러 도형 간에 공유 됩니다. TextField 인스턴스는 각 인스턴스에 대해 개별적으로 레이블의 텍스트를 저장 하지 않습니다: 대신는 `GetDisplayText(ShapeElement)` 메서드 매개 변수로 셰이프를 사용 하 고 해당 모델 요소에 현재 상태에 따라 텍스트를 조회할 수 있습니다.
+ TextField는 레이블에 할당 된 공백과 같이 셰이프 내의 영역을 관리 하는 개체입니다. 하나의 TextField 인스턴스는 동일한 클래스의 여러 셰이프 간에 공유 됩니다. TextField 인스턴스는 각 인스턴스에 대해 레이블 텍스트를 개별적으로 저장 하지 않습니다. 대신, `GetDisplayText(ShapeElement)` 메서드는 셰이프를 매개 변수로 사용 하 고 모양과 모델 요소의 현재 상태에 따라 텍스트를 조회할 수 있습니다.
 
-## <a name="how-the-appearance-of-a-text-field-is-determined"></a>텍스트 필드의 모양이 결정 하는
- `DoPaint()` 메서드가 호출 되어 표시 필드를 화면에 있습니다. 기본값을 재정의 하거나 수 `DoPaint(),` 호출 하는 방법 중 일부를 재정의할 수 있습니다. 기본 메서드의 다음 단순화 된 버전은 기본 동작을 재정의 하는 방법을 이해할 수 있습니다.
+## <a name="how-the-appearance-of-a-text-field-is-determined"></a>텍스트 필드의 모양을 결정 하는 방법
+ @No__t_0 메서드를 호출 하 여 화면에 필드를 표시 합니다. 기본 `DoPaint(),`를 재정의 하거나 호출 하는 메서드 중 일부를 재정의할 수 있습니다. 기본 메서드의 다음 단순화 된 버전은 기본 동작을 재정의 하는 방법을 이해 하는 데 도움이 될 수 있습니다.
 
 ```csharp
 // Simplified version:
@@ -80,17 +80,17 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
 { return DefaultFontId; }
 ```
 
- 다른 쌍의 여러 가지 `Get` 메서드 및 `Default` 속성을 같은 `DefaultMultipleLine/GetMultipleLine()`합니다. 셰이프 필드의 모든 인스턴스에 대 한 값을 변경 하려면 기본 속성 값을 할당할 수 있습니다. 에 다른 셰이프 또는 모델 요소의 상태에 따라 다를 모양 인스턴스에서 값을 설정, 재정의 `Get` 메서드.
+ 여러 가지 `Get` 메서드와 `Default` 속성 (예: `DefaultMultipleLine/GetMultipleLine()`)이 있습니다. 기본 속성에 값을 할당 하 여 셰이프 필드의 모든 인스턴스에 대 한 값을 변경할 수 있습니다. 셰이프 인스턴스 간에 값이 다르게 하거나 모양이 나 해당 모델 요소의 상태에 따라 달라 지도록 하려면 `Get` 메서드를 재정의 합니다.
 
 ## <a name="static-customizations"></a>정적 사용자 지정
- 이 셰이프 필드의 모든 인스턴스를 변경 하려는 경우 먼저 확인 여부 DSL 정의에서 속성을 설정할 수 있습니다. 예를 들어, 속성 창에서 글꼴 크기 및 스타일을 설정할 수 있습니다.
+ 이 셰이프 필드의 모든 인스턴스를 변경 하려면 먼저 DSL 정의에서 속성을 설정할 수 있는지 여부를 확인 합니다. 예를 들어 속성 창에서 글꼴 크기와 스타일을 설정할 수 있습니다.
 
- 그렇지 않은 경우 다음 재정의 하는 `InitializeShapeFields` 할당을 적절 한 값을 확인 하 고 모양 클래스의 메서드 `Default...` 텍스트 필드의 속성입니다.
+ 그렇지 않으면 shape 클래스의 `InitializeShapeFields` 메서드를 재정의 하 고 텍스트 필드의 해당 `Default...` 속성에 값을 할당 합니다.
 
 > [!WARNING]
-> 재정의할 `InitializeShapeFields()`를 설정 해야 합니다는 **Generates Double Derived** 모양 클래스의 속성 `true` DSL 정의에서 합니다.
+> @No__t_0를 재정의 하려면 DSL 정의에서 `true` 하도록 shape 클래스의 **Double 파생 클래스 생성** 속성을 설정 해야 합니다.
 
- 이 예제에서는 도형에는 사용자 의견에 대 한 사용 될 텍스트 필드입니다. 표준 주석 글꼴을 사용 하려고 합니다. 스타일 집합에서 표준 글꼴 이기 때문에 기본 글꼴 id를 설정할 수 있습니다.
+ 이 예에서는 셰이프에 사용자 주석에 사용 되는 텍스트 필드가 있습니다. 표준 주석 글꼴을 사용 하려고 합니다. 스타일 집합의 표준 글꼴 이기 때문에 기본 글꼴 id를 설정할 수 있습니다.
 
 ```csharp
 
@@ -106,13 +106,13 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
 ```
 
 ## <a name="dynamic-customizations"></a>동적 사용자 지정
- 셰이프나 모델 요소의 상태에 따라 달라 집니다 모양의 하려면의 고유한 하위 클래스를 파생 `TextField` 하나 이상의 재정의 및 `Get...` 메서드. 또한 프로그램 도형의 InitializeShapeFields 메서드를 재정의 하 고 사용자 지정 클래스의 인스턴스를 사용 하 여 텍스트 필드의 인스턴스를 대체 해야 합니다.
+ 모양이 셰이프나 모델 요소의 상태에 따라 달라 지도록 하려면 `TextField`의 고유한 서브 클래스를 파생 하 고 하나 이상의 `Get...` 메서드를 재정의 합니다. 또한 셰이프의 InitializeShapeFields 메서드를 재정의 하 고 TextField의 인스턴스를 고유한 클래스의 인스턴스로 바꾸어야 합니다.
 
- 다음 예제에서는 도형의 모델 요소의 부울 도메인 속성의 상태에 따라 텍스트 필드의 글꼴을 만듭니다.
+ 다음 예에서는 텍스트 필드의 글꼴을 셰이프의 모델 요소에 대 한 부울 도메인 속성의 상태에 따라 결정 합니다.
 
- 이 예제 코드를 실행 하려면 최소 언어 템플릿을 사용 하 여 새 DSL 솔루션을 만듭니다. 부울 도메인 속성 추가 `AlternateState` ExampleElement 도메인 클래스에 있습니다. ExampleShape 클래스에 아이콘 decorator를 추가 하 고 비트맵 파일에 해당 이미지를 설정 합니다. 클릭 **모든 템플릿 변환**합니다. DSL 프로젝트에서 새 코드 파일을 추가 하 고 다음 코드를 삽입 합니다.
+ 이 예제 코드를 실행 하려면 최소 언어 템플릿을 사용 하 여 새 DSL 솔루션을 만듭니다. ExampleElement 도메인 클래스에 `AlternateState` 부울 도메인 속성을 추가 합니다. ExampleShape 클래스에 아이콘 데코레이터를 추가 하 고 해당 이미지를 비트맵 파일로 설정 합니다. **모든 템플릿 변환**을 클릭 합니다. DSL 프로젝트에 새 코드 파일을 추가 하 고 다음 코드를 삽입 합니다.
 
- 코드를 테스트 하려면 F5 키를 눌러 하 고 디버깅 솔루션에서 샘플 다이어그램을 엽니다. 아이콘의 기본 상태로 표시 됩니다. 셰이프를 선택 하 고 속성 창에서 값을 변경 합니다 **AlternateState** 속성입니다. 요소 이름의 글꼴을 변경 해야 합니다.
+ 코드를 테스트 하려면 F5 키를 누르고 디버깅 솔루션에서 샘플 다이어그램을 엽니다. 아이콘의 기본 상태가 표시 되어야 합니다. 셰이프를 선택 하 고 속성 창 **AlternateState** 속성의 값을 변경 합니다. 요소 이름의 글꼴이 변경 되어야 합니다.
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -167,39 +167,39 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   }
 ```
 
-## <a name="style-sets"></a>스타일 설정
- 앞의 예제를 사용할 수 있는 글꼴 텍스트 필드를 변경 하는 방법을 보여 줍니다. 그러나 것이 좋습니다 메서드는 응용 프로그램 또는 셰이프를 사용 하 여 연결 된 스타일 집합 중 하나를 변경 하려면. 이 위해 재정의 <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField.GetFontId%2A> 또는 GetTextBrushId() 합니다.
+## <a name="style-sets"></a>스타일 집합
+ 앞의 예제에서는 텍스트 필드를 사용할 수 있는 글꼴로 변경 하는 방법을 보여 줍니다. 그러나이 방법은 셰이프 또는 응용 프로그램과 연결 된 스타일 집합 중 하나로 변경 하는 것이 좋습니다. 이렇게 하려면 <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField.GetFontId%2A> 또는 GetTextBrushId ()를 재정의 합니다.
 
- 또는 스타일 집합을 변경 하면 셰이프를 재정의 하 여는 것이 좋습니다 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.InitializeResources%2A>합니다. 이 글꼴 및 셰이프 필드의 모든 브러시를 변경 하는 효과가 있습니다.
+ 또는 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.InitializeResources%2A>를 재정의 하 여 모양의 스타일 집합을 변경 하는 것이 좋습니다. 이 경우 모든 셰이프 필드의 글꼴과 브러시를 변경 하는 효과가 있습니다.
 
 ## <a name="customizing-image-fields"></a>이미지 필드 사용자 지정
- 도형에 이미지 데코레이터를 정의 하는 경우 및 이미지 모양을 정의 하는 경우 영역 셰이프를 표시 하는 이미지 필드에서 관리 됩니다. ImageFields와 다른 ShapeFields 초기화의 예제를 DSL 솔루션에서 Dsl\GeneratedCode\Shapes.cs를 검사 합니다.
+ 모양에서 이미지 데코레이터를 정의 하 고 이미지 셰이프를 정의 하는 경우 모양이 표시 되는 영역이 ImageField에서 관리 됩니다. ImageFields 및 기타 ShapeFields를 초기화 하는 예는 DSL 솔루션에서 Dsl\GeneratedCode\Shapes.cs를 검사 합니다.
 
- 이미지 필드는 데코레이터에 할당 된 공간 등의 셰이프 내에서 영역을 관리 하는 개체입니다. 이미지 필드 인스턴스는 동일한 모양 클래스의 여러 도형 간에 공유 됩니다. 이미지 필드 인스턴스 각 셰이프에 대 한 별도 이미지를 저장 하지 않습니다: 대신는 `GetDisplayImage(ShapeElement)` 메서드 매개 변수로 셰이프를 사용 하 고 해당 모델 요소에 현재 상태에 따라 이미지를 조회할 수 있습니다.
+ ImageField는 데코레이터에 할당 된 공간과 같이 셰이프 내의 영역을 관리 하는 개체입니다. 하나의 ImageField 인스턴스는 동일한 shape 클래스의 여러 셰이프 간에 공유 됩니다. ImageField 인스턴스는 각 셰이프에 대해 별도의 이미지를 저장 하지 않습니다. 대신, `GetDisplayImage(ShapeElement)` 메서드는 셰이프를 매개 변수로 사용 하 고 모양의 현재 상태와 해당 모델 요소에 따라 이미지를 조회할 수 있습니다.
 
- 변수 이미지와 같은 특수 한 동작이 하려는 경우에 이미지 필드에서 파생 된 고유한 클래스를 만들 수 있습니다.
+ 변수 이미지와 같은 특수 한 동작을 원하는 경우 ImageField에서 파생 된 고유한 클래스를 만들 수 있습니다.
 
-#### <a name="to-create-a-subclass-of-imagefield"></a>이미지 필드의 하위 클래스를 만들려면
+#### <a name="to-create-a-subclass-of-imagefield"></a>ImageField의 하위 클래스를 만들려면
 
-1. 설정 된 **Generates Double Derived** DSL 정의에서 부모 모양 클래스의 속성입니다.
+1. DSL 정의에서 부모 shape 클래스의 **생성 된 이중 파생** 속성을 설정 합니다.
 
-2. 재정의 `InitializeShapeFields` 모양 클래스의 메서드.
+2. Shape 클래스의 `InitializeShapeFields` 메서드를 재정의 합니다.
 
-    - DSL 프로젝트에서 새 코드 파일을 만들고 모양 클래스에 대 한 partial 클래스 정의 작성 합니다. 있습니다 메서드 정의 재정의 합니다.
+    - DSL 프로젝트에서 새 코드 파일을 만들고 shape 클래스에 대 한 partial 클래스 정의를 작성 합니다. 여기에서 메서드 정의를 재정의 합니다.
 
-3. 코드 검사 `InitializeShapeFields` DSL\GeneratedCode\Shapes.cs에서.
+3. Dsl\generatedcode\orcss에서 `InitializeShapeFields`의 코드를 검사 합니다.
 
-     재정의 메서드에서 기본 메서드를 호출 하 고 사용자 고유의 이미지 필드 클래스의 인스턴스를 만듭니다. 일반 이미지 필드를 대체 하는 데 사용 된 `shapeFields` 목록입니다.
+     재정의 메서드에서 기본 메서드를 호출한 다음 고유한 이미지 필드 클래스의 인스턴스를 만듭니다. 이를 사용 하 여 `shapeFields` 목록의 일반 이미지 필드를 바꿉니다.
 
 ## <a name="dynamic-icons"></a>동적 아이콘
- 이 예제에서는 변경 아이콘 도형의 모델 요소의 상태에 따라 달라 집니다.
+ 이 예제에서는 셰이프의 모델 요소 상태에 따라 아이콘 변경을 수행 합니다.
 
 > [!WARNING]
-> 이 예제에서는 동적 이미지 데코레이터를 확인 하는 방법에 설명 합니다. 이지만 모델 변수의 상태에 따라 하나 또는 두 개의 이미지를 전환 하려는 경우 간단 하 게 여러 이미지 데코레이터를 만들고 셰이프를에서 같은 위치에 배치할 표시 유형 필터는 모델의 특정 값에 따라 달라 지도록 설정 변수입니다. 이 필터를 설정 하려면 DSL 정의에서 도형 맵에서 선택 하 고 DSL 세부 정보 창 열고 데코레이터 탭을 클릭 합니다.
+> 이 예제에서는 동적 이미지 데코레이터를 만드는 방법을 보여 줍니다. 그러나 모델 변수의 상태에 따라 하나 또는 두 개의 이미지만 전환 하려는 경우에는 여러 이미지 데코레이터을 만들고 모양의 동일한 위치에서 찾은 다음 표시 유형 필터를 모델의 특정 값에 따라 다르게 설정 하는 것이 더 간단 합니다. 변수. 이 필터를 설정 하려면 DSL 정의에서 도형 맵을 선택 하 고 DSL 정보 창을 열고 데코레이터 탭을 클릭 합니다.
 
- 이 예제 코드를 실행 하려면 최소 언어 템플릿을 사용 하 여 새 DSL 솔루션을 만듭니다. 부울 도메인 속성 추가 `AlternateState` ExampleElement 도메인 클래스에 있습니다. ExampleShape 클래스에 아이콘 decorator를 추가 하 고 비트맵 파일에 해당 이미지를 설정 합니다. 클릭 **모든 템플릿 변환**합니다. DSL 프로젝트에서 새 코드 파일을 추가 하 고 다음 코드를 삽입 합니다.
+ 이 예제 코드를 실행 하려면 최소 언어 템플릿을 사용 하 여 새 DSL 솔루션을 만듭니다. ExampleElement 도메인 클래스에 `AlternateState` 부울 도메인 속성을 추가 합니다. ExampleShape 클래스에 아이콘 데코레이터를 추가 하 고 해당 이미지를 비트맵 파일로 설정 합니다. **모든 템플릿 변환**을 클릭 합니다. DSL 프로젝트에 새 코드 파일을 추가 하 고 다음 코드를 삽입 합니다.
 
- 코드를 테스트 하려면 F5 키를 눌러 하 고 디버깅 솔루션에서 샘플 다이어그램을 엽니다. 아이콘의 기본 상태로 표시 됩니다. 셰이프를 선택 하 고 속성 창에서 값을 변경 합니다 **AlternateState** 속성입니다. 다음 아이콘을 통해 해당 셰이프에 90도 회전 표시 됩니다.
+ 코드를 테스트 하려면 F5 키를 누르고 디버깅 솔루션에서 샘플 다이어그램을 엽니다. 아이콘의 기본 상태가 표시 되어야 합니다. 셰이프를 선택 하 고 속성 창 **AlternateState** 속성의 값을 변경 합니다. 그러면 아이콘이 해당 모양에서 90도 회전 하 여 표시 됩니다.
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -261,7 +261,7 @@ partial class ExampleShape
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목:
 
 - [모양 및 연결선 정의](../modeling/defining-shapes-and-connectors.md)
 - [다이어그램에 배경 이미지 설정](../modeling/setting-a-background-image-on-a-diagram.md)

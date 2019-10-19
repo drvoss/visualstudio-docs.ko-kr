@@ -4,26 +4,26 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, adding custom validation
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 743337777677b61661da53446f9717cad14ff9ed
-ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.openlocfilehash: 34898bff2b437c84a29cec31091205044367abec
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65476667"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652320"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>종속성 다이어그램에 사용자 지정 아키텍처 유효성 검사 추가
 
-Visual Studio에서 사용자가 유효성을 검사할 수는 레이어 모델에 대 한 프로젝트의 소스 코드를 소스 코드 종속성 다이어그램의 종속성을 따르는지 확인할 수 있습니다. 표준 유효성 검사 알고리즘이 있지만 고유한 유효성 검사 확장을 정의할 수 있습니다.
+Visual Studio에서 사용자는 소스 코드가 종속성 다이어그램의 종속성을 따르는지 확인할 수 있도록 레이어 모델에 대해 프로젝트의 소스 코드에 대 한 유효성을 검사할 수 있습니다. 표준 유효성 검사 알고리즘이 있지만 고유한 유효성 검사 확장을 정의할 수 있습니다.
 
-사용자가 선택 하는 경우는 **아키텍처 유효성 검사** 표준 유효성 검사 메서드가 호출 되 면 뒤에 설치 된 유효성 검사 확장이 종속성 다이어그램에 명령 합니다.
+사용자가 종속성 다이어그램에서 **아키텍처 유효성** 검사 명령을 선택 하면 표준 유효성 검사 메서드가 호출 되 고 그 다음에 설치 된 유효성 검사 확장이 발생 합니다.
 
 > [!NOTE]
-> 종속성 다이어그램에서 유효성 검사의 주요 목적은 솔루션의 다른 부분에서 프로그램 코드를 사용 하 여 다이어그램을 비교 하는 것입니다.
+> 종속성 다이어그램에서 유효성 검사의 주요 목적은 다이어그램을 솔루션의 다른 파트에 있는 프로그램 코드와 비교 하는 것입니다.
 
 다른 Visual Studio 사용자에게 배포할 수 있는 VSIX(Visual Studio Integration Extension)로 레이어 유효성 검사 확장을 패키지할 수 있습니다. 한 VSIX에 단독으로 유효성 검사기를 배치하거나 다른 확장과 같은 VSIX에서 유효성 검사기를 결합할 수 있습니다. 다른 확장과 같은 프로젝트가 아니라 고유한 Visual Studio 프로젝트에서 유효성 검사기 코드를 작성해야 합니다.
 
@@ -32,7 +32,7 @@ Visual Studio에서 사용자가 유효성을 검사할 수는 레이어 모델�
 
 ## <a name="requirements"></a>요구 사항
 
-참조 [요구 사항](../modeling/extend-layer-diagrams.md#requirements)합니다.
+[요구 사항](../modeling/extend-layer-diagrams.md#requirements)을 참조 하세요.
 
 ## <a name="defining-a-layer-validator-in-a-new-vsix"></a>새 VSIX에서 레이어 유효성 검사기 정의
 
@@ -40,7 +40,7 @@ Visual Studio에서 사용자가 유효성을 검사할 수는 레이어 모델�
 
 ### <a name="to-define-an-extension-by-using-a-project-template"></a>프로젝트 템플릿을 사용하여 확장을 정의하려면
 
-1. 새 **레이어 디자이너 유효성 검사 확장** 프로젝트입니다.
+1. 새 **레이어 디자이너 유효성 검사 확장** 프로젝트를 만듭니다.
 
     템플릿에서 작은 예제가 포함된 프로젝트를 만듭니다.
 
@@ -48,7 +48,7 @@ Visual Studio에서 사용자가 유효성을 검사할 수는 레이어 모델�
    > 템플릿이 제대로 작동하도록 설정하려면
    >
    > - `LogValidationError` 에 대한 호출을 편집하여 선택적 인수 `errorSourceNodes` 및 `errorTargetNodes`를 제거합니다.
-   > - 사용자 지정 속성을 사용 하는 경우에 언급 된 업데이트를 적용 [종속성 다이어그램에 사용자 지정 속성 추가](../modeling/add-custom-properties-to-layer-diagrams.md)합니다.
+   > - 사용자 지정 속성을 사용 하는 경우 [종속성 다이어그램에 사용자 지정 속성 추가](../modeling/add-custom-properties-to-layer-diagrams.md)에 설명 된 업데이트를 적용 합니다.
 
 2. 코드를 편집하여 유효성 검사를 정의합니다. 자세한 내용은 [프로그래밍 유효성 검사](#programming)를 참조하세요.
 
@@ -59,13 +59,13 @@ Visual Studio에서 사용자가 유효성을 검사할 수는 레이어 모델�
 
 ::: moniker range="vs-2017"
 
-4. Visual Studio 또는 다른 컴퓨터의 기본 인스턴스에서 확장을 설치 하려면 합니다 *.vsix* 파일을 *bin* 디렉터리. 설치할 컴퓨터로 파일을 복사하고 파일을 두 번 클릭합니다. 파일을 제거 하려면 선택 **확장 및 업데이트** 에 **도구** 메뉴.
+4. Visual Studio의 주 인스턴스 또는 다른 컴퓨터에 확장을 설치 하려면 *bin* 디렉터리에서 *.vsix* 파일을 찾습니다. 설치할 컴퓨터로 파일을 복사하고 파일을 두 번 클릭합니다. 제거 하려면 **도구** 메뉴에서 **확장 및 업데이트** 를 선택 합니다.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. Visual Studio 또는 다른 컴퓨터의 기본 인스턴스에서 확장을 설치 하려면 합니다 *.vsix* 파일을 *bin* 디렉터리. 설치할 컴퓨터로 파일을 복사하고 파일을 두 번 클릭합니다. 파일을 제거 하려면 선택 **Manage Extensions** 에 **확장** 메뉴.
+4. Visual Studio의 주 인스턴스 또는 다른 컴퓨터에 확장을 설치 하려면 *bin* 디렉터리에서 *.vsix* 파일을 찾습니다. 설치할 컴퓨터로 파일을 복사하고 파일을 두 번 클릭합니다. 제거 하려면 **확장** 메뉴에서 **확장 관리** 를 선택 합니다.
 
 ::: moniker-end
 
@@ -77,9 +77,9 @@ Visual Studio에서 사용자가 유효성을 검사할 수는 레이어 모델�
 
 1. 새 **클래스 라이브러리** 프로젝트를 만듭니다. 이 프로젝트에는 레이어 유효성 검사 클래스가 포함됩니다.
 
-2. 찾거나 만들지를 **VSIX 프로젝트** 솔루션에. VSIX 프로젝트에는 이름이 **source.extension.vsixmanifest**인 파일이 포함됩니다.
+2. 솔루션에서 **VSIX 프로젝트** 를 찾거나 만듭니다. VSIX 프로젝트에는 이름이 **source.extension.vsixmanifest**인 파일이 포함됩니다.
 
-3. **솔루션 탐색기**의 VSIX 프로젝트를 마우스 오른쪽 단추 클릭 메뉴에서 **시작 프로젝트로 설정**합니다.
+3. **솔루션 탐색기**의 VSIX 프로젝트 오른쪽 클릭 메뉴에서 **시작 프로젝트로 설정**을 선택 합니다.
 
 4. **source.extension.vsixmanifest**의 **자산**에서 레이어 유효성 검사 프로젝트를 MEF 구성 요소로 추가합니다.
 
@@ -123,7 +123,7 @@ Visual Studio에서 사용자가 유효성을 검사할 수는 레이어 모델�
     > [!NOTE]
     > 메서드는 특정 상황에서만 호출되고 중단점은 자동으로 작동하지 않습니다. 자세한 내용은 [레이어 유효성 검사 디버그](#debugging)를 참조하세요.
 
-9. VSIX의 Visual Studio 또는 다른 컴퓨터에 주 인스턴스를 설치 하려면 합니다 **.vsix** 파일을 **bin** 의 VSIX 프로젝트 디렉터리. VSIX를 설치할 컴퓨터에 파일을 복사합니다. Windows 탐색기에서 VSIX 파일을 두 번 클릭합니다.
+9. Visual Studio의 주 인스턴스 또는 다른 컴퓨터에 VSIX를 설치 하려면 VSIX 프로젝트의 **bin** 디렉터리에서 **.vsix** 파일을 찾습니다. VSIX를 설치할 컴퓨터에 파일을 복사합니다. Windows 탐색기에서 VSIX 파일을 두 번 클릭합니다.
 
 ## <a name="programming"></a> 프로그래밍 유효성 검사
 
@@ -155,7 +155,7 @@ Visual Studio에서 사용자가 유효성을 검사할 수는 레이어 모델�
 
 사용자가 **아키텍처 유효성 검사** 메뉴 명령을 호출하면 레이어 런타임 시스템에서는 레이어 및 해당 아티팩트를 분석하여 그래프를 생성합니다. 그래프는 다음 네 파트로 구성됩니다.
 
-- 그래프에서 노드 및 링크로로 표현 되는 Visual Studio 솔루션의 레이어 모델.
+- 그래프에서 노드 및 링크로 표시 되는 Visual Studio 솔루션의 레이어 모델입니다.
 
 - 솔루션에 정의되고 노드로 표시되는 코드, 프로젝트 항목 및 기타 아티팩트와 분석 프로세스에서 검색되는 종속성을 나타내는 링크.
 
@@ -166,7 +166,7 @@ Visual Studio에서 사용자가 유효성을 검사할 수는 레이어 모델�
 그래프가 생성되면 표준 유효성 검사 메서드가 호출됩니다. 호출이 완료되면 모든 설치된 확장 유효성 검사 메서드가 지정되지 않은 순서로 호출됩니다. 그래프는 그래프를 검사하고 발견한 오류를 보고할 수 있는 각 `ValidateArchitecture` 메서드에 전달됩니다.
 
 > [!NOTE]
-> 이것이 도메인 특정 언어에서 사용할 수 있는 유효성 검사 프로세스와 동일 합니다.
+> 도메인 특정 언어에서 사용할 수 있는 유효성 검사 프로세스와는 다릅니다.
 
 유효성 검사 메서드가 유효성 검사 중인 레이어 모델 또는 코드를 변경하면 안 됩니다.
 
@@ -206,19 +206,19 @@ Visual Studio에서 사용자가 유효성을 검사할 수는 레이어 모델�
 
 - 모델에 코드 요소와 연결된 레이어가 있습니다.
 
-유효성 검사 확장 프로그램을 테스트 하려면 Visual Studio의 실험적 인스턴스를 시작 하면 처음으로 열거나 이러한 특징이 있는 솔루션을 만듭니다.
+Visual Studio의 실험적 인스턴스를 처음으로 시작 하 여 유효성 검사 확장을 테스트 하는 경우 이러한 특성이 포함 된 솔루션을 열거나 만듭니다.
 
 ### <a name="run-clean-solution-before-validate-architecture"></a>아키텍처 유효성 검사 전에 솔루션 정리 실행
 
-유효성 검사 코드를 업데이트할 때마다 유효성 검사 명령을 테스트하기 전에 실험적 솔루션에서 **빌드** 메뉴의 **솔루션 정리** 를 사용합니다. 유효성 검사의 결과가 캐시되므로 이 작업이 필요합니다. 테스트 종속성 다이어그램 또는 해당 코드를 업데이트 하지 않으면 유효성 검사 메서드가 실행 되지 않습니다.
+유효성 검사 코드를 업데이트할 때마다 유효성 검사 명령을 테스트하기 전에 실험적 솔루션에서 **빌드** 메뉴의 **솔루션 정리** 를 사용합니다. 유효성 검사의 결과가 캐시되므로 이 작업이 필요합니다. 테스트 종속성 다이어그램이 나 해당 코드를 업데이트 하지 않은 경우 유효성 검사 메서드가 실행 되지 않습니다.
 
 ### <a name="launch-the-debugger-explicitly"></a>명시적으로 디버거 시작
 
 유효성 검사는 개별 프로세스로 실행됩니다. 따라서 유효성 검사 메서드의 중단점이 트리거되지 않습니다. 유효성 검사가 시작되었을 때 디버거를 프로세스에 명시적으로 연결해야 합니다.
 
-유효성 검사 프로세스에 디버거를 연결하려면 유효성 검사 메서드의 시작 부분에 `System.Diagnostics.Debugger.Launch()` 에 대한 호출을 삽입합니다. 디버깅 대화 상자가 표시 되 면 Visual Studio의 주 인스턴스를 선택 합니다.
+유효성 검사 프로세스에 디버거를 연결하려면 유효성 검사 메서드의 시작 부분에 `System.Diagnostics.Debugger.Launch()` 에 대한 호출을 삽입합니다. 디버깅 대화 상자가 나타나면 Visual Studio의 기본 인스턴스를 선택 합니다.
 
-또는 `System.Windows.Forms.MessageBox.Show()`에 대한 호출을 삽입할 수 있습니다. 메시지 상자가 표시 되 면 및 Visual Studio의 주 인스턴스로 이동 합니다 **디버그** 메뉴 **프로세스에 연결**합니다. 이름이 **Graphcmd.exe**인 프로세스를 선택합니다.
+또는 `System.Windows.Forms.MessageBox.Show()`에 대한 호출을 삽입할 수 있습니다. 메시지 상자가 나타나면 Visual Studio의 주 인스턴스로 이동 하 고 **디버그** 메뉴에서 **프로세스에 연결을**클릭 합니다. 이름이 **Graphcmd.exe**인 프로세스를 선택합니다.
 
 항상 Crtl+F5(**디버깅하지 않고 시작**)를 눌러서 실험적 인스턴스를 시작합니다.
 
@@ -287,6 +287,6 @@ namespace Validator3
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목:
 
 - [종속성 다이어그램 확장](../modeling/extend-layer-diagrams.md)

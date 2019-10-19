@@ -4,31 +4,31 @@ ms.date: 04/29/2019
 ms.topic: reference
 helpviewer_keywords:
 - roslyn package versions
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b2dd97b078923cfa3358d56e6316bfff654c4dd
-ms.sourcegitcommit: 62f42113ae4dae1ddfff1c4e02445acc09913445
+ms.openlocfilehash: 1965b0a2aa4b87dacee6f7cd1e1d2d7bc5c36819
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64878234"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647933"
 ---
 # <a name="net-compiler-platform-package-version-reference"></a>.NET 컴파일러 플랫폼 패키지 버전 참조
 
-다음 표에 나와 있는 [.NET 컴파일러 플랫폼 (Roslyn) 패키지](https://www.nuget.org/packages/Microsoft.Net.Compilers/) 다른 버전의 Visual Studio에 대 한 지원 되는 버전입니다.
+다음 표에서는 다양 한 버전의 Visual Studio에 대해 지원 되는 [.net 컴파일러 플랫폼 (Roslyn) 패키지](https://www.nuget.org/packages/Microsoft.Net.Compilers/) 버전을 보여 줍니다.
 
-예를 들어 사용자 지정 분석기에 Visual Studio 2017의 모든 버전에서 작동 하는지 확인 하려면이 대상으로 해야 Microsoft.Net.Compilers 버전 2.0입니다.
+예를 들어 사용자 지정 분석기가 모든 버전의 Visual Studio 2017에서 작동 하도록 하려면 Microsoft.Net의 버전 2.0을 대상으로 지정 해야 합니다.
 
-| Roslyn 패키지 버전 | 최소 지원 되는 Visual Studio 버전 |
+| Roslyn 패키지 버전 | 지원 되는 최소 Visual Studio 버전 |
 | - | - |
-| 3.x | Visual Studio 2019 |
+| 에서처럼 | Visual Studio 2019 |
 | 2.10.0 | Visual Studio 2017 버전 15.9 |
 | 2.9.0 | Visual Studio 2017 버전 15.8 |
 | 2.8.2 | Visual Studio 2017 버전 15.7 |
-| 2.7.0 | Visual Studio 2017 버전 15.6 |
+| 합니다 | Visual Studio 2017 버전 15.6 |
 | 2.6.1 | Visual Studio 2017 15.5 버전 |
 | 2.4.0 | Visual Studio 2017 버전 15.4 |
 | 2.3.2 | Visual Studio 2017 15.3 버전 |
@@ -41,9 +41,9 @@ ms.locfileid: "64878234"
 | 1.0.1 | Visual Studio 2015 RTM |
 
 > [!TIP]
-> Roslyn 패키지의 최소 지원 되는 Visual Studio 버전의 Visual Studio 2017 버전 인 경우 나중에 가져온 모든 버전의 Visual Studio 2019 지원도 않습니다.
+> 지원 되는 최소 Visual Studio 버전이 Visual Studio 2017 버전인 Roslyn 패키지의 경우 모든 버전의 Visual Studio 2019도 나중에 제공 되므로 지원 됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [.NET Compiler Platform SDK](/dotnet/csharp/roslyn-sdk/)
 - [Roslyn 분석기 시작](getting-started-with-roslyn-analyzers.md)

@@ -219,25 +219,25 @@ helpviewer_keywords:
 - troubleshooting data access
 - datasets [Visual Basic], troubleshooting
 ms.assetid: 357c9f0a-9d59-4db4-9b7c-b96cad839961
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9867f9b595937e0ae8586aabdba180f4b1d8d359
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c92699d9d7c77c771ea1cc4aa28b918f318eca8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818080"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648874"
 ---
 # <a name="troubleshoot-data-access-errors-on-the-forums"></a>포럼에서 데이터 액세스 오류 문제 해결
 
-MSDN(Microsoft Developer Network) 공개 포럼에서 오류 및 경고 문제 해결 관련 지원 정보를 찾을 수 있습니다. MSDN에서 사용할 수 있는 몇 가지 데이터 관련 포럼 같습니다.
+MSDN(Microsoft Developer Network) 공개 포럼에서 오류 및 경고 문제 해결 관련 지원 정보를 찾을 수 있습니다. 다음은 MSDN에서 사용할 수 있는 몇 가지 데이터 관련 포럼입니다.
 
 - [Windows Forms 데이터 컨트롤 및 데이터 바인딩](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
 
-- [ADO.NET DataSet 포럼](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataset)
+- [ADO.NET 데이터 집합 포럼](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataset)
 
 - [ADO.NET Entity Framework 및 LINQ to Entities](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetentityframework)
 
@@ -249,8 +249,8 @@ MSDN(Microsoft Developer Network) 공개 포럼에서 오류 및 경고 문제 �
 
 - [ADO.NET 데이터 공급자 포럼](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataproviders)
 
-SQL Server에 대 한 연결 문제를 해결 하는 방법에 대 한 자세한 내용은 [SQL Server 데이터베이스 엔진에 연결 하는 문제 해결](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx)합니다.
+SQL Server에 대 한 연결 문제를 해결 하는 방법에 대 한 자세한 내용은 [SQL Server 데이터베이스 엔진에 대 한 연결 문제 해결](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx)을 참조 하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [.NET용 Visual Studio 데이터 도구](../data-tools/visual-studio-data-tools-for-dotnet.md)

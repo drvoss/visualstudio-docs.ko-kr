@@ -8,17 +8,17 @@ helpviewer_keywords:
 - code analysis, dependency graphs
 - dependency graphs, analyzing code
 - graph documents, analyzing
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fd3bb1537d0e985e91f93ea094ec546ed9a6092
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f55d4d3c4470d32d9779f7adf06934f10ac618e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994429"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657491"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>코드 맵 분석기를 사용하여 잠재적 문제 찾기
 
@@ -32,21 +32,21 @@ ms.locfileid: "62994429"
 
 ## <a name="analyze-code-maps"></a>코드 맵 분석
 
-맵 도구 모음에서 선택 **레이아웃** > **분석기**를 차례로 선택한 다음 분석기를 실행 하려는:
+맵 도구 모음에서 **레이아웃**  > **분석기**를 선택 하 고 실행 하려는 분석기를 선택 합니다.
 
 |**분석기**|**다음과 같은 노드 식별**|
 |-|-|
-|**순환 참조 분석기**|서로 순환 종속성이 있습니다. **참고:**  에 있는 순환 종속성을 **제네릭** 그룹의 그룹을 확장 하면 지도에 표시 되지 않습니다.|
-|**허브 분석기 찾기**|많이 연결된 상위 25% 노드에 속합니다.<br /><br /> **맵에서 다른 모든 노드를 숨기려면**<br /><br /> -맵에 대 한 바로 가기 메뉴를 열고 **고급**, **선택**합니다 **선택 되지 않은 숨기기**합니다.<br />     맵에서 선택되지 않은 노드가 숨겨지고 분석기가 새 노드를 허브로 식별합니다.|
-|**참조되지 않은 노드 분석기**|다른 노드의 참조가 없습니다. **주의:**  코드가 사용되지 않는다고 가정하기 전에 이러한 각 경우를 확인합니다. XAML 종속성 및 런타임 종속성과 같은 특정 종속성은 코드에서 정적으로 찾을 수 없습니다.|
+|**순환 참조 분석기**|서로 순환 종속성이 있습니다. **참고:**  **제네릭** 그룹에 있는 순환 종속성은 그룹을 확장할 때 맵에 표시 되지 않습니다.|
+|**허브 분석기 찾기**|많이 연결된 상위 25% 노드에 속합니다.<br /><br /> **맵에서 다른 모든 노드를 숨기려면**<br /><br /> -맵에 대 한 바로 가기 메뉴를 열고 **고급**, **선택**, 선택 **취소 된 숨기기**를 선택 합니다.<br />     맵에서 선택되지 않은 노드가 숨겨지고 분석기가 새 노드를 허브로 식별합니다.|
+|**참조되지 않은 노드 분석기**|다른 노드의 참조가 없습니다. **주의:**  코드를 사용 하지 않는다고 가정 하기 전에 이러한 각 경우를 확인 합니다. XAML 종속성 및 런타임 종속성과 같은 특정 종속성은 코드에서 정적으로 찾을 수 없습니다.|
 
-코드 맵 분석기는 적용한 후 계속 실행됩니다. 맵을 변경하는 경우 적용된 모든 분석기가 업데이트된 맵 자동으로 다시 처리합니다. 맵 도구 모음의 분석기 실행을 중지 하려면 선택 **레이아웃** > **분석기**합니다. 선택한 분석기를 끕니다.
+코드 맵 분석기는 적용한 후 계속 실행됩니다. 맵을 변경하는 경우 적용된 모든 분석기가 업데이트된 맵 자동으로 다시 처리합니다. 분석기 실행을 중지 하려면 맵 도구 모음에서 **레이아웃**  > **분석기**를 선택 합니다. 선택한 분석기를 끕니다.
 
 > [!TIP]
 > 매우 큰 맵이 있는 경우 분석기를 실행할 때 메모리 부족 예외가 발생할 수 있습니다. 이 경우 맵을 편집하여 해당 범위를 줄이거나 더 작은 맵을 생성한 다음 분석기를 실행합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [솔루션 전체의 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)
-- [코드 맵을 사용하여 응용 프로그램 디버그](../modeling/use-code-maps-to-debug-your-applications.md)
+- [코드 맵을 사용하여 애플리케이션 디버그](../modeling/use-code-maps-to-debug-your-applications.md)
 - [디버그하는 동안 호출 스택의 메서드 매핑](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)

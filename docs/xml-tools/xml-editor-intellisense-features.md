@@ -3,17 +3,17 @@ title: XML 편집기 IntelliSense 기능
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 312c304855a450a648b000b8306b80ade969c785
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a44af076e8663e525e33727a24aa93f9391f4b5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62807980"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603960"
 ---
 # <a name="xml-editor-intellisense-features"></a>XML 편집기 IntelliSense 기능
 
@@ -21,11 +21,11 @@ XML 편집기에서는 Visual Studio에서 제공하는 다른 언어 편집기�
 
 ## <a name="intellisense-in-an-xsd-document"></a>XSD 문서의 IntelliSense
 
-스키마 문서와 연결 되 면 얻게 예상 되는 요소의 드롭다운 목록을 입력 하면 언제 든 지 `"<"` 클릭 또는 합니다 **개체 멤버 목록 표시** XML 편집기 도구 모음 단추입니다.
+스키마가 문서와 연결 된 후에는 `"<"` 입력할 때마다 필요한 요소에 대 한 드롭다운 목록이 표시 됩니다. 또는 XML 편집기 도구 모음에서 **개체 멤버 목록 표시** 단추를 클릭 합니다.
 
-![표시 개체 멤버 목록 단추](media/display-object-member-list-xml.png)
+![개체 멤버 목록 표시 단추](media/display-object-member-list-xml.png)
 
-XML 문서를 사용 하 여 스키마를 연결 하는 방법에 대 한 정보를 참조 하세요 [XML 문서 유효성 검사](../xml-tools/xml-document-validation.md)합니다.
+스키마를 XML 문서에 연결 하는 방법에 대 한 자세한 내용은 [xml 문서 유효성 검사](../xml-tools/xml-document-validation.md)를 참조 하세요.
 
 시작 태그 안에서 SPACE를 입력할 때도 현재 요소에 추가할 수 있는 모든 특성을 표시하는 드롭다운 목록이 나타납니다.
 
@@ -49,7 +49,7 @@ XML 문서를 사용 하 여 스키마를 연결 하는 방법에 대 한 정보
 
 - 제공된 명명된 템플릿의 매개 변수 이름
 
-자세한 내용은 [연습: XSLT IntelliSense를 사용 하 여](../xml-tools/walkthrough-using-xslt-intellisense.md) 항목입니다.
+자세한 내용은 [연습: XSLT IntelliSense 사용](../xml-tools/walkthrough-using-xslt-intellisense.md) 항목을 참조 하세요.
 
 ## <a name="auto-completion"></a>자동 완성
 
@@ -57,7 +57,7 @@ XML 편집기에서는 필수 XML 구문이 자동으로 입력되므로 XML을 
 
 `<book>`
 
-끝 태그가 입력되고 커서가 시작 태그 뒤에 놓입니다. 다음은이 예제 (의 "&#124;"은 커서 위치 정보):
+끝 태그가 입력되고 커서가 시작 태그 뒤에 놓입니다. 다음은이에 대 한 예입니다. "&#124;" 커서 위치를 메모 합니다.
 
 `<book>`&#124;`</book>`
 
@@ -79,7 +79,7 @@ XML 편집기에서는 필수 XML 구문이 자동으로 입력되므로 XML을 
 
 - DTD 선언 종료: `>`
 
-XML 편집기는 네임 스페이스를 삽입할 수 있습니다 또는 네임 스페이스 정규화 된 요소를 선택 하면 IntelliSense 목록 및 해당 요소 또는 특성에 대 한 네임 스페이스의 특성은 아직 범위 내에 선언 합니다.
+또한 IntelliSense 목록에서 정규화 된 네임 스페이스 요소 또는 특성을 선택 하 고 해당 요소 또는 특성에 대 한 네임 스페이스가 아직 범위에 없는 경우 XML 편집기에서 네임 스페이스 선언을 삽입할 수 있습니다.
 
 예를 들어, 문서에서 선언하지 않은 `e:Book` 네임스페이스에 접두사가 바인딩된 IntelliSense 목록에서 `http://books` 요소를 선택한 경우 XML 편집기에서 필수 네임스페이스 선언이 자동으로 삽입됩니다. 다음은 결과 XML 텍스트입니다.
 
@@ -87,13 +87,13 @@ XML 편집기는 네임 스페이스를 삽입할 수 있습니다 또는 네임
 
 ## <a name="brace-matching"></a>중괄호 일치
 
-XML 편집기에서는 중괄호 강조 기능을 제공하므로 방금 닫은 요소에 대한 피드백을 즉시 얻을 수 있습니다. 바로 가기 키를 사용할 수도 있습니다 (**Ctrl**+**]**) 한 중괄호에서 짝을 이루는 중괄호로 이동할 수 있습니다.
+XML 편집기에서는 중괄호 강조 기능을 제공하므로 방금 닫은 요소에 대한 피드백을 즉시 얻을 수 있습니다. 바로 가기 키 (**Ctrl** + **]** )를 사용 하 여 한 중괄호에서 일치 하는 중괄호로 이동할 수도 있습니다.
 
 XML 편집기에서는 다음 항목에 대해 이 작업을 수행합니다.
 
 - 일치하는 시작 태그와 끝 태그
 
-- 쌍 "\<" 또는 ">" 꺾쇠 괄호입니다.
+- "@No__t_0" 또는 ">" 꺾쇠 괄호의 쌍입니다.
 
 - 주석의 시작과 끝
 
@@ -107,11 +107,11 @@ XML 편집기에서는 다음 항목에 대해 이 작업을 수행합니다.
 
 ## <a name="modify-the-intellisense-options"></a>IntelliSense 옵션 수정
 
-IntelliSense 및 자동 완성 기능은 기본적으로 활성화되어 있습니다. 수정 하 여이 변경할 수는 있지만 하 **도구** > **옵션** 설정 합니다.
+IntelliSense 및 자동 완성 기능은 기본적으로 활성화되어 있습니다. 그러나 **도구**  > **옵션** 설정을 수정 하 여이를 변경할 수 있습니다.
 
-합니다 **자동 삽입** 섹션을 **기타** 다음 동작을 제어 하는 페이지:
+**기타** 페이지의 **자동 삽입** 섹션에서는 다음과 같은 동작을 제어 합니다.
 
-|이름|설명|
+|name|설명|
 |-|-----------------|
 |닫기 태그|새 요소에 대해 닫기 태그를 삽입합니다.|
 |특성 따옴표|새 특성 이름을 입력할 때 특성 값 따옴표를 삽입합니다.|
@@ -121,11 +121,11 @@ IntelliSense 및 자동 완성 기능은 기본적으로 활성화되어 있습�
 
 1. **도구** 메뉴에서 **옵션**을 선택합니다.
 
-2. 확장 **텍스트 편집기**를 확장 하 고 **XML**를 선택 하 고 **기타**.
+2. **텍스트 편집기**를 확장 하 고 **XML**을 확장 한 다음 **기타**를 선택 합니다.
 
-3. 아무 것도 변경 합니다 **자동 삽입** 섹션을 클릭 **확인**합니다.
+3. **자동 삽입** 섹션을 변경 하 고 **확인**을 클릭 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [XML 편집기](../xml-tools/xml-editor.md)
 - [IntelliSense 사용](../ide/using-intellisense.md)

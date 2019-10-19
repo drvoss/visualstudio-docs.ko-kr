@@ -1,5 +1,5 @@
 ---
-title: 콘솔을 사용한 JavaScript 디버그 | Microsoft Docs
+title: 콘솔을 사용 하 여 JavaScript 디버그 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,16 +16,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 521092c26ba585381aa094f6b1b348365300bc10
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7b61147467ff27ec8b69e1a2fddfcd00138065fa
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62907161"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589050"
 ---
-# <a name="debug-javascript-using-the-console-in-visual-studio"></a>Visual Studio에서 콘솔을 사용한 JavaScript 디버그
+# <a name="debug-javascript-using-the-console-in-visual-studio"></a>Visual Studio에서 콘솔을 사용 하 여 JavaScript 디버그
 
-JavaScript 콘솔 창을 상호 작용 하 고 JavaScript를 사용 하 여 빌드된 UWP 앱 디버그에 사용할 수 있습니다. 이러한 기능은 UWP 앱 및 Apache Cordova 대 한 Visual Studio Tools를 사용 하 여 만든 앱에 대 한 지원 됩니다. 콘솔 명령 참조는 [JavaScript Console commands](../debugger/javascript-console-commands.md)을 참조하세요.
+Javascript 콘솔 창을 사용 하 여 JavaScript를 사용 하 여 빌드된 UWP 앱과 상호 작용 하 고 디버그할 수 있습니다. 이러한 기능은 Apache Cordova에 대해 Visual Studio Tools를 사용 하 여 만든 UWP 앱 및 앱에 대해 지원 됩니다. 콘솔 명령 참조는 [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017)을 참조하세요.
 
 JavaScript 콘솔 창에서는 다음 작업을 수행할 수 있습니다.
 
@@ -39,28 +39,28 @@ JavaScript 콘솔 창에서는 다음 작업을 수행할 수 있습니다.
 
 - DOM(Document Object Model) 및 Windows 런타임 오류 외에도 JavaScript 오류 및 예외를 봅니다.
 
-- 화면을 지우는 등의 다른 작업을 수행합니다. 전체 명령 목록을 보려면 [JavaScript Console commands](../debugger/javascript-console-commands.md) 을 참조하세요.
+- 화면을 지우는 등의 다른 작업을 수행합니다. 전체 명령 목록을 보려면 [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017) 을 참조하세요.
 
 > [!TIP]
 > JavaScript 콘솔 창이 닫힌 경우 **디버그**> **창** > **JavaScript 콘솔** 을 사용하여 다시 엽니다. 창은 스크립트 디버깅 세션 중에만 표시됩니다.
 
-JavaScript 콘솔 창에서는 디버거를 중지 및 다시 시작하지 않고 앱과 상호 작용할 수 있습니다. 자세한 내용은 참조 하세요. [앱 (JavaScript) 새로 고침](../debugger/refresh-an-app-javascript.md)합니다. 기타 JavaScript 디버깅 DOM 탐색기 사용 및 중단점 설정과 같은 기능에 대 한 정보를 참조 하세요. [빠른 시작: HTML 및 CSS 디버그](../debugger/quickstart-debug-html-and-css.md) 하 고 [Visual Studio에서 앱을 디버그](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)합니다.
+JavaScript 콘솔 창에서는 디버거를 중지 및 다시 시작하지 않고 앱과 상호 작용할 수 있습니다. 자세한 내용은 [앱 새로 고침 (JavaScript)](../debugger/refresh-an-app-javascript.md)을 참조 하세요. 다른 JavaScript 디버깅 기능 (예: DOM 탐색기 사용 및 중단점 설정)에 대 한 자세한 내용은 [빠른 시작: HTML 및 CSS 디버그](../debugger/quickstart-debug-html-and-css.md) 및 [Visual Studio에서 응용 프로그램 디버그](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)를 참조 하세요.
 
 ## <a name="InteractiveConsole"></a> JavaScript 콘솔 창을 사용하여 디버깅
 다음 단계를 수행하면 `FlipView` 앱이 생성되고, 대화식으로 JavaScript 코딩 오류를 디버그하는 방법이 표시됩니다.
 
 > [!NOTE]
-> 여기서 샘플 앱은 UWP 앱. 그러나 여기에 설명된 콘솔 기능은 Visual Studio Tools for Apache Cordova를 사용하여 만든 앱에도 적용됩니다.
+> 샘플 앱은 UWP 앱입니다. 그러나 여기에 설명된 콘솔 기능은 Visual Studio Tools for Apache Cordova를 사용하여 만든 앱에도 적용됩니다.
 
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>FlipView 앱에서 JavaScript 코드를 디버그하려면
 
-1. 선택 하 여 Visual Studio에서 새 솔루션을 만듭니다 **파일** > **새 프로젝트**합니다.
+1. **파일**  > **새 프로젝트**를 선택 하 여 Visual Studio에서 새 솔루션을 만듭니다.
 
-2. 선택 **JavaScript** > **Windows 범용**를 선택한 후 **WinJS 앱**합니다.
+2. **JavaScript**  > **Windows 유니버설**을 선택 하 고 **WinJS App**을 선택 합니다.
 
 3. 프로젝트의 이름(예: `FlipViewApp`)을 입력하고 **확인** 을 클릭하여 앱을 만듭니다.
 
-4. Index.html의 본문 요소에서 기존 HTML 코드를이 코드로 바꿉니다.
+4. Index. html의 BODY 요소에서 기존 HTML 코드를 다음 코드로 바꿉니다.
 
     ```html
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"
@@ -136,7 +136,7 @@ JavaScript 콘솔 창에서는 디버거를 중지 및 다시 시작하지 않�
     })();
     ```
 
-7. 디버깅 대상이 아직 선택 되지 않은, 경우 선택할 **로컬 컴퓨터** 드롭다운 목록에서 다음을 **장치** 단추를 **디버그** 도구 모음:
+7. 디버깅 대상이 아직 선택 되지 않은 경우 **디버그** 도구 모음의 **장치** 단추 옆에 있는 드롭다운 목록에서 **로컬 컴퓨터** 를 선택 합니다.
 
     ![디버그 대상 목록 선택](../debugger/media/js_select_target.png "JS_Select_Target")
 
@@ -144,11 +144,11 @@ JavaScript 콘솔 창에서는 디버거를 중지 및 다시 시작하지 않�
 
     앱이 실행되지만 이미지가 누락되었습니다. JavaScript 콘솔 창의 APPHOST 오류는 이미지가 없음을 나타냅니다.
 
-9. 사용 하 여 합니다 `FlipView` 앱을 실행 중인 형식 `Data.items` 콘솔 창 입력 프롬프트에서에서 (옆에 ">>" 기호) Enter 키를 누릅니다.
+9. @No__t_0 앱을 실행 하는 동안 콘솔 창 입력 프롬프트에 `Data.items` ("> >" 기호 옆)를 입력 하 고 Enter 키를 누릅니다.
 
     `items` 개체의 시각화 도우미가 콘솔 창에 표시됩니다. 즉, `items` 개체가 인스턴스화되어, 현재 스크립트 컨텍스트에서 사용할 수 있음을 나타냅니다. 콘솔 창에서, 개체의 노드를 클릭하여 속성 값을 볼 수 있습니다(또는 화살표 키 사용). `items._data` 개체로 클릭해 내려가면 이 그림에서와 같이 이미지 소스 참조가 예상대로 올바르지 않음을 알게 됩니다. 아직 개체에 기본 이미지(logo.png)가 있고 누락된 이미지가 예상 이미지와 섞여 있습니다.
 
-    ![JavaScript 콘솔 창을](../debugger/media/js_console_window.png "JS_Console_Window")
+    ![JavaScript 콘솔 창](../debugger/media/js_console_window.png "JS_Console_Window")
 
     또한 `items._data` 개체에는 예상보다 훨씬 더 많은 항목이 있습니다.
 
@@ -184,11 +184,11 @@ JavaScript 콘솔 창에서는 디버거를 중지 및 다시 시작하지 않�
 
 15. 프롬프트에서 `Data.items.length = 3` 를 입력하고 Enter 키를 누릅니다. 그러면 데이터에서 불필요한 요소가 제거됩니다.
 
-16. 앱을 다시 확인 하 고 올바른 이미지가 올바른에 표시 `FlipView` 페이지입니다.
+16. 앱을 다시 확인 하면 올바른 `FlipView` 페이지에 올바른 이미지가 표시 됩니다.
 
 17. DOM 탐색기에서 업데이트된 DIV 요소가 표시되고, 예상된 IMG 요소를 찾기 위해 하위 트리로 이동할 수 있습니다.
 
-18.  **디버그** > **Stop 디버그ging** 를 선택하거나 Shift+F5를 눌러 디버깅을 중지한 다음 소스 코드를 수정합니다.
+18. **디버그** > **Stop 디버그ging** 를 선택하거나 Shift+F5를 눌러 디버깅을 중지한 다음 소스 코드를 수정합니다.
 
     수정된 샘플 코드가 포함된 전체 default.html 페이지는 [HTML, CSS 및 JavaScript 샘플 코드 디버깅](../debugger/debug-html-css-and-javascript-sample-code.md)을 참조하세요.
 
@@ -201,13 +201,13 @@ JavaScript 콘솔 창과 같은 JavaScript 디버깅 도구를 사용하는 동�
 
 1. 이전에 만든 `FlipView` 앱의 default.html 파일에서, `updateImages()` 함수의 바로 가기 메뉴를 열고 **중단점** > **중단점 삽입**을 참조하세요.
 
-2. 선택 **로컬 컴퓨터** 드롭다운 목록에서 옆에 **디버깅 시작** 단추를 **디버그** 도구 모음입니다.
+2. **디버그** 도구 모음의 **디버깅 시작** 단추 옆에 있는 드롭다운 목록에서 **로컬 컴퓨터** 를 선택 합니다.
 
 3. **디버그** > **Start 디버그ging**을 선택하거나 F5를 선택합니다.
 
     실행이 `updateImages()` 함수에 도달하면 응용 프로그램이 중단 모드로 들어가며, 현재 프로그램 실행 줄은 노란색으로 강조 표시됩니다.
 
-    ![JavaScript 콘솔을 사용 하 여 중단 모드를 사용 하 여](../debugger/media/js_breakmode.png "JS_BreakMode")
+    ![JavaScript 콘솔에서 중단 모드 사용](../debugger/media/js_breakmode.png "JS_BreakMode")
 
     현재 디버깅 세션을 끝내지 않고 프로그램 상태에 바로 영향을 주도록 변수 값을 변경할 수 있습니다.
 
@@ -217,7 +217,7 @@ JavaScript 콘솔 창과 같은 JavaScript 디버깅 도구를 사용하는 동�
 
     다음 그림에서는 이 시점의 콘솔 창을 보여 줍니다.
 
-    ![시각화 도우미를 표시 하는 JavaScript 콘솔 창을](../debugger/media/js_console_function_visualizer.png "JS_Console_Function_Visualizer")
+    ![시각화 도우미를 표시 하는 JavaScript 콘솔 창](../debugger/media/js_console_function_visualizer.png "JS_Console_Function_Visualizer")
 
 6. 함수의 한 줄을 프롬프트 창에서 입력 프롬프트로 복사하고 인덱스 값을 3으로 변경합니다.
 
@@ -245,15 +245,15 @@ JavaScript 콘솔 창을 사용하면 한번에 웹 플랫폼 호스트 (WWAHost
 
 다음 그림에는 JavaScript 콘솔 창의 대상 목록이 나와 있습니다.
 
-![JavaScript 콘솔 창에서 선택한 대상](../debugger/media/js_console_target.png "JS_Console_Target")
+![JavaScript 콘솔 창의 대상 선택](../debugger/media/js_console_target.png "JS_Console_Target")
 
 또한 `cd` 명령을 사용하여 실행 컨텍스트를 전환할 수도 있지만, 다른 실행 컨텍스트의 이름을 알아야 하고 사용하는 참조가 범위 내에 있어야 합니다. **대상** 목록에서 다른 실행 컨텍스트에 액세스하기가 더 쉽습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목:
 - [Visual Studio에서 앱 디버그](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
-- [JavaScript 콘솔 명령](../debugger/javascript-console-commands.md)
+- [JavaScript 콘솔 명령](../debugger/javascript-console-commands.md?view=vs-2017)
 - [앱 새로 고침(JavaScript)](../debugger/refresh-an-app-javascript.md)
-- [바로 가기 키](../debugger/keyboard-shortcuts-html-and-javascript.md)
+- [바로 가기 키](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)
 - [HTML, CSS 및 JavaScript 샘플 코드 디버그](../debugger/debug-html-css-and-javascript-sample-code.md)
 - [빠른 시작: HTML 및 CSS 디버그](../debugger/quickstart-debug-html-and-css.md)
 - [WebView 컨트롤 디버그](../debugger/debug-a-webview-control.md)

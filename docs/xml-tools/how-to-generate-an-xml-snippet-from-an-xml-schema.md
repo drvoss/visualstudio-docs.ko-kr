@@ -3,17 +3,17 @@ title: '방법: XML 스키마에서 XML 조각 생성'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb5b10e142c1dd62625a48c39c3860d49e8942cb
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ae55428b61053fbd255446833cb20aec3da79b6e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926823"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645375"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>방법: XML 스키마에서 XML 조각 생성
 
@@ -88,7 +88,7 @@ Xml 편집기에는 XSD (XML 스키마 정의 언어) 스키마에서 XML 조각
 
      시작 태그 `<Contact`가 추가되고 요소 이름 뒤에 커서가 놓입니다.
 
-4. **Tab** 키를 눌러 해당 스키마 정보에 `Contact` 따라 요소에 대 한 XML 데이터를 생성 합니다.
+4. **Tab** 키를 눌러 스키마 정보에 따라 `Contact` 요소에 대 한 XML 데이터를 생성 합니다.
 
 ## <a name="input"></a>입력
 
@@ -139,9 +139,9 @@ Xml 편집기에는 XSD (XML 스키마 정의 언어) 스키마에서 XML 조각
 </xs:schema>
 ```
 
-### <a name="output"></a>출력
+### <a name="output"></a>Output
 
-다음은 `Contact` 요소와 연결된 스키마 정보를 기반으로 생성되는 XML 데이터입니다. 로 `bold` 표시 된 항목은 XML 조각에서 편집 가능한 필드를 지정 합니다.
+다음은 `Contact` 요소와 연결된 스키마 정보를 기반으로 생성되는 XML 데이터입니다. @No__t_0 표시 된 항목은 XML 조각에서 편집 가능한 필드를 지정 합니다.
 
 ```xml
 <Contact>
@@ -154,7 +154,7 @@ Xml 편집기에는 XSD (XML 스키마 정의 언어) 스키마에서 XML 조각
 </Contact>
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [XML 조각](../xml-tools/xml-snippets.md)
 - [방법: XML 조각 사용](../xml-tools/how-to-use-xml-snippets.md)

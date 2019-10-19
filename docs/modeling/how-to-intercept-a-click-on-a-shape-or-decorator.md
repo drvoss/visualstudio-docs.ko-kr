@@ -4,23 +4,23 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e3295476b9a9d35768963baa05829a560fc9291
-ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.openlocfilehash: f372d42869bf533b598f3e2aba9e60e34e47144d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72381492"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72605283"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>방법: 모양 또는 데코레이터 클릭 가로채기
 다음 절차에서는 셰이프 또는 아이콘 데코레이터의 클릭을 가로채는 방법을 보여 줍니다. 클릭, 두 번 클릭, 끌기 및 기타 제스처를 가로채 고 요소가 응답 하도록 만들 수 있습니다.
 
 ## <a name="to-intercept-clicks-on-shapes"></a>셰이프 클릭을 차단 하려면
- Dsl 프로젝트에서 생성 된 코드 파일과 별도의 코드 파일에서 shape 클래스에 대 한 partial 클래스 정의를 작성 합니다. @No__t-1로 시작 하는 이름이 있는 다른 메서드 중 하나 또는 @no__t을 재정의 합니다. 예를 들면,
+ Dsl 프로젝트에서 생성 된 코드 파일과 별도의 코드 파일에서 shape 클래스에 대 한 partial 클래스 정의를 작성 합니다. @No__t_1로 시작 하는 이름이 있는 다른 메서드 중 하나 또는 `OnDoubleClick()`을 재정의 합니다. 예를 들면,
 
 ```csharp
 public partial class MyShape // change
@@ -47,7 +47,7 @@ public partial class MyShape // change
 
 2. 아이콘 데코레이터가 있는 셰이프를 선택 하거나 만들고 도메인 클래스에 매핑합니다.
 
-3. @No__t-0 폴더의 파일과는 다른 코드 파일에서 ImageField의 새 하위 클래스를 만듭니다.
+3. @No__t_0 폴더의 파일과는 다른 코드 파일에서 ImageField의 새 하위 클래스를 만듭니다.
 
     ```csharp
     using Microsoft.VisualStudio.Modeling;
@@ -133,7 +133,7 @@ public partial class MyShape // change
 
 - 일련의 마우스 이벤트 처리기는 생성 될 때 각 구획 인스턴스에 연결 됩니다.
 
-- @No__t-0 이벤트는 현재 항목을 저장 합니다.
+- @No__t_0 이벤트는 현재 항목을 저장 합니다.
 
 - 마우스를 현재 항목 밖으로 이동 하면 마우스를 설정 하 고 마우스를 놓았을 때까지 커서를 설정 하는 MouseAction 인스턴스가 생성 됩니다.
 

@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 20df85952b4e76e60d6e93067c1f1e7838b692cd
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 10/18/2019
 ms.locfileid: "69551724"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Windows Installer를 사용 하 여 Office 솔루션 배포
@@ -59,7 +59,7 @@ Visual Studio를 사용하여 Windows Installer를 만들면 최종 사용자의
 
 ClickOnce를 사용 하 여 Office 솔루션을 배포 하는 방법에 대 한 자세한 내용은 [clickonce를 사용 하 여 office 솔루션 배포](../vsto/deploying-an-office-solution-by-using-clickonce.md)를 참조 하세요.
 
-를 사용 [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]하 여 Windows Installer 파일을 만드는 방법에 대 한 자세한 내용은 [Windows Installer를 사용 하 여 Visual Studio 2010 Tools for Office 솔루션 배포](http://go.microsoft.com/fwlink/?LinkId=201807)를 참조 하세요.
+@No__t_0를 사용 하 여 Windows Installer 파일을 만드는 방법에 대 한 자세한 내용은 [Windows Installer를 사용 하 여 Visual Studio 2010 Tools For Office 솔루션 배포](http://go.microsoft.com/fwlink/?LinkId=201807)를 참조 하세요.
 
 ## <a name="Download"></a>샘플 다운로드
 이 항목에서는 다음과 같은 다운로드 가능한 샘플을 사용합니다.
@@ -107,7 +107,7 @@ Visual Studio를 설치한 경우 무료인 ISLE(InstallShield Limited Edition)�
 
    이 항목과 관련된 VSTO 추가 기능 샘플에는 **ExcelAddIn**이라는 프로젝트가 들어 있습니다. 문서 수준 사용자 지정 샘플에는 **ExcelWorkbook**이라는 프로젝트가 들어 있습니다. 이 항목에서는 이러한 두 가지 이름 중 하나를 사용하여 해당 솔루션의 Office 프로젝트를 나타냅니다.
 
-2. 메뉴 모음에서 **파일** > **새 프로젝트** **추가** > 를 선택 합니다.
+2. 메뉴 모음에서 **파일**  > **추가**  > **새 프로젝트**를 선택 합니다.
 
    **새 프로젝트 추가** 대화 상자가 열립니다.
 
@@ -129,7 +129,7 @@ Office 프로젝트의 출력을 포함하도록 **OfficeAddInSetup** 프로젝�
 
    ![솔루션 탐색기의 프로젝트 도우미 파일](../vsto/media/installshield-projectassistant.png "솔루션 탐색기의 프로젝트 도우미 파일")
 
-2. 메뉴 모음에서 **보기** > **열기**를 선택 합니다.
+2. 메뉴 모음에서 **보기**  > **열기**를 선택 합니다.
 
 3. 다음 그림에 나와 있는 대로 **프로젝트 도우미** 페이지 하단에서 **애플리케이션 파일** 단추를 선택합니다.
 
@@ -167,7 +167,7 @@ Office 프로젝트의 출력을 포함하도록 **OfficeAddInSetup** 프로젝�
 
    ![솔루션 탐색기의 재배포 가능 파일](../vsto/media/installshield-redistributablesfile.png "솔루션 탐색기의 재배포 가능 파일")
 
-2. 메뉴 모음에서 **보기** > **열기**를 선택 합니다.
+2. 메뉴 모음에서 **보기**  > **열기**를 선택 합니다.
 
    **재배포 가능 패키지** 페이지가 열립니다.
 
@@ -216,7 +216,7 @@ Office 프로젝트의 출력을 포함하도록 **OfficeAddInSetup** 프로젝�
    </properties>
    ```
 
-5. 메모장의 메뉴 모음에서 **파일** > **저장**을 선택 합니다.
+5. 메모장의 메뉴 모음에서 **파일**  > **저장**을 선택 합니다.
 
 6. **다른 이름으로 저장** 대화 상자에서 **바탕 화면** 폴더를 찾습니다.
 
@@ -231,9 +231,9 @@ Office 프로젝트의 출력을 포함하도록 **OfficeAddInSetup** 프로젝�
 
 10. **바탕 화면** 폴더에서 *Visual Studio 2010 Tools for Office Runtime. prq* 파일을 컴퓨터의 다음 디렉터리 중 하나에 복사 합니다.
 
-   32 비트 운영 체제: *%ProgramFiles%\InstallShield\2013LE\SetupPrerequisites\\*
+   32 비트 운영 체제: *%ProgramFiles%\InstallShield\2013LE\SetupPrerequisites \\*
 
-   64 비트 운영 체제: *% ProgramFiles (x86)% \ 2013LE \ SetupPrerequisites 구성 요소\\*
+   64 비트 운영 체제: *% ProgramFiles (x86)% \ 2013LE \ SetupPrerequisites 조건 \\*
 
 11. InstallShield 프로젝트의 **재배포 가능** 페이지에서 **새로 고침** 단추를 선택하여 다음과 같이 재배포 가능 구성 요소 목록을 새로 고칩니다.
 
@@ -249,7 +249,7 @@ Office 프로젝트의 출력을 포함하도록 **OfficeAddInSetup** 프로젝�
 
 1. **솔루션 탐색기**에서 **OfficeAddInSetup** 노드를 확장하고 **설정 구성** 노드를 확장한 후 **일반 정보** 파일을 선택합니다.
 
-2. 메뉴 모음에서 **보기** > **열기**를 선택 합니다.
+2. 메뉴 모음에서 **보기**  > **열기**를 선택 합니다.
 
 3. 속성 목록에서 **INSTALLDIR** 속성 옆에 있는 **찾아보기** 단추를 선택합니다.
 
@@ -273,7 +273,7 @@ VSTO 추가 기능을 컴퓨터의 모든 사용자에 대해 설치할지(컴�
 
 1. **솔루션 탐색기**에서 **OfficeAddInSetup** 프로젝트 노드를 확장하고 **설정 구성** 노드를 확장한 후 **일반 정보** 파일을 선택합니다.
 
-2. 메뉴 모음에서 **보기** > **열기**를 선택 합니다.
+2. 메뉴 모음에서 **보기**  > **열기**를 선택 합니다.
 
    설치 프로젝트의 속성이 표시됩니다.
 
@@ -287,7 +287,7 @@ VSTO 추가 기능을 컴퓨터의 모든 사용자에 대해 설치할지(컴�
 
 1. **솔루션 탐색기**에서 **프로젝트 도우미** 노드를 선택합니다.
 
-   메뉴 모음에서 **보기** > **열기**를 선택 합니다.
+   메뉴 모음에서 **보기**  > **열기**를 선택 합니다.
 
 2. **프로젝트 도우미** 페이지 아래쪽에서 **애플리케이션 레지스트리** 단추를 선택하면 다음 화면이 나타납니다.
 
@@ -309,15 +309,15 @@ VSTO 추가 기능을 컴퓨터의 모든 사용자에 대해 설치할지(컴�
 
 | Office 버전<br /><br /> | InstallShield 구성 경로<br /><br /> |
 |----------------------------| - |
-| 32비트<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
-| 64비트<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 32비트<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE (32 비트) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 64비트<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE (64 비트) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    **Windows 버전에 다른 컴퓨터 단위 설치 관리자**
 
 | Windows 버전<br /><br /> | InstallShield 구성 경로<br /><br /> |
 |-----------------------------| - |
-| 32비트<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
-| 64비트<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 32비트<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE (32 비트) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 64비트<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE (32 비트) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\SOFTWARE (64 비트) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    > [!NOTE]
    > 사용자가 64 비트 Windows를 실행 하는 컴퓨터에서 32 비트 및 64 비트 버전의 Office를 실행할 수 있기 때문에 64 비트 Windows 용 설치 관리자에는 두 개의 레지스트리 경로가 필요 합니다.
@@ -337,7 +337,7 @@ VSTO 추가 기능을 컴퓨터의 모든 사용자에 대해 설치할지(컴�
 |--------------|--------|
 |문자열 값<br /><br />|**FriendlyName**<br /><br />|
 |DWORD 값<br /><br />|**LoadBehavior**<br /><br />|
-|문자열 값<br /><br />|**Manifest**<br /><br />|
+|문자열 값<br /><br />|**매니페스트**<br /><br />|
 
 8. **설명** 값에 대한 바로 가기 메뉴를 열고 **수정**을 선택합니다.
 
@@ -384,7 +384,7 @@ VSTO 추가 기능을 컴퓨터의 모든 사용자에 대해 설치할지(컴�
 
 ### <a name="to-create-a-program-that-modifies-document-properties"></a>문서 속성을 수정하는 프로그램을 만들려면
 
-1. 메뉴 모음에서 **파일** > **새 프로젝트** **추가** > 를 선택 합니다.
+1. 메뉴 모음에서 **파일**  > **추가**  > **새 프로젝트**를 선택 합니다.
 
    **새 프로젝트 추가** 대화 상자가 나타납니다.
 
@@ -404,7 +404,7 @@ VSTO 추가 기능을 컴퓨터의 모든 사용자에 대해 설치할지(컴�
 
 7. **솔루션 탐색기**에서 **Program.cs** 파일(C# 애플리케이션의 경우) 또는 **Module1.vb** 파일(Visual Basic 애플리케이션의 경우)을 선택합니다.
 
-8. 메뉴 모음에서 **보기** > **열기**를 선택 합니다.
+8. 메뉴 모음에서 **보기**  > **열기**를 선택 합니다.
 
 9. 전체 파일의 내용을 다음 코드로 바꿉니다.
 
@@ -419,7 +419,7 @@ VSTO 추가 기능을 컴퓨터의 모든 사용자에 대해 설치할지(컴�
 
    ![솔루션 탐색기의 프로젝트 도우미 파일](../vsto/media/installshield-projectassistant.png "솔루션 탐색기의 프로젝트 도우미 파일")
 
-2. 메뉴 모음에서 **보기** > **열기**를 선택 합니다.
+2. 메뉴 모음에서 **보기**  > **열기**를 선택 합니다.
 
 3. 다음 그림에 나와 있는 대로 **프로젝트 도우미** 페이지 하단에서 **애플리케이션 파일** 단추를 선택합니다.
 
@@ -433,7 +433,7 @@ VSTO 추가 기능을 컴퓨터의 모든 사용자에 대해 설치할지(컴�
 
 6. **솔루션 탐색기**의 **OfficeAddInSetup** 노드 아래에서 **설치 요구 사항 및 작업 정의** 노드를 확장한 후 **사용자 지정 작업** 폴더를 선택합니다.
 
-7. 메뉴 모음에서 **보기** > **열기**를 선택 합니다.
+7. 메뉴 모음에서 **보기**  > **열기**를 선택 합니다.
 
    화면의 옆쪽 창에 이벤트 목록이 나타납니다.
 
@@ -463,7 +463,7 @@ VSTO 추가 기능을 컴퓨터의 모든 사용자에 대해 설치할지(컴�
 
 13. 메모장에서 솔루션의 프로젝트 파일을 엽니다. Visual Basic 프로젝트의 경우 파일 이름은 해당 파일의 이름입니다 *.* 프로젝트의 경우 파일의 이름은 해당 파일의 이름 *입니다.* C#
 
-14. 프로젝트 파일에서 **&lt;솔루션 id&gt;** 요소를 검색 하 고 해당 값을 클립보드에 복사한 다음 메모장을 닫습니다.
+14. 프로젝트 파일에서 **&lt;SolutionID &gt;** 요소를 검색 하 고 해당 값을 클립보드에 복사한 다음 메모장을 닫습니다.
 
     이 값을 콘솔 응용 프로그램에 매개 변수로 전달합니다.
 
@@ -482,7 +482,7 @@ VSTO 추가 기능을 컴퓨터의 모든 사용자에 대해 설치할지(컴�
 
 1. **솔루션 탐색기**에서 **릴리스 준비** 노드를 확장한 다음 **릴리스** 파일을 선택합니다.
 
-2. 메뉴 모음에서 **보기** > **열기**를 선택 합니다.
+2. 메뉴 모음에서 **보기**  > **열기**를 선택 합니다.
 
    **빌드** 탐색기가 옆 창에 열리면 만들려는 릴리스 형식을 선택할 수 있습니다.
 
@@ -498,11 +498,11 @@ VSTO 추가 기능을 컴퓨터의 모든 사용자에 대해 설치할지(컴�
 
 8. **프로젝트 컨텍스트** 테이블에서 **OfficeAddInSetup** 프로젝트의 **구성** 열에 있는 **SingleImage**를 선택한 후 **닫기** 단추를 선택합니다.
 
-9. 메뉴 모음에서 빌드**빌드 및 addinsetup** **을 선택** > 합니다.
+9. 메뉴 모음에서 **빌드** 를 선택 하 고,  > **빌드**를 선택 합니다.
 
-   빌드를 완료 한 후에는 다음 위치에 있는 사용자의 sqlservr.exe **addinsetup** 프로젝트의 *setup.exe 파일을* 찾을 수 있습니다. <em>OfficeAddInSetupProjectRoot</em> **\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\\**
+   빌드가 완료 된 후에 <em>는 다음 위치</em>에서 \OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1 **addinsetup** 프로젝트의 *setup.exe* 파일을 찾을 수 있습니다 **\\.**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [배포를 위한 Office 솔루션 필수 조건](https://msdn.microsoft.com/library/9f672809-43a3-40a1-9057-397ce3b5126e)
 - [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)

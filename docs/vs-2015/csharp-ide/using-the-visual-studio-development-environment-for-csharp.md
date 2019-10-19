@@ -1,5 +1,5 @@
 ---
-title: 에 대 한 개발 환경을 사용 하 여 C# | Microsoft Docs
+title: '|의 C# 개발 환경 사용 Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,21 +14,21 @@ helpviewer_keywords:
 - Visual C#, development environment
 ms.assetid: e10e2cba-641f-47a3-88a3-6748965254d7
 caps.latest.revision: 29
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6e5b52e74eac3e9301ebb10d91c560929b1ef313
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0cd8d8f2be0a653189130de6b38c8586957948d9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65688024"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72673152"
 ---
-# <a name="using-the-visual-studio-development-environment-for-c"></a>C 용 Visual Studio 개발 환경 사용\#
+# <a name="using-the-visual-studio-development-environment-for-c"></a>C \# 용 Visual Studio 개발 환경 사용
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 통합된 개발 환경 (IDE)는 공통 사용자 인터페이스를 통해 노출 하는 개발 도구 모음입니다. 일부 도구는 다른 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 언어와 공유되는 반면 C# 컴파일러 같은 일부 도구는 Visual C#에만 사용됩니다. 이 항목에서는 가장 중요한 C# 도구에 대한 링크를 제공합니다.
+Visual Studio IDE (통합 개발 환경)는 공용 사용자 인터페이스를 통해 노출 되는 개발 도구의 컬렉션입니다. 일부 도구는 다른 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 언어와 공유되는 반면 C# 컴파일러 같은 일부 도구는 Visual C#에만 사용됩니다. 이 항목에서는 가장 중요한 C# 도구에 대한 링크를 제공합니다.
 
 ## <a name="related-topics"></a>관련 항목
 
@@ -49,7 +49,7 @@ Visual Studio 통합된 개발 환경 (IDE)는 공통 사용자 인터페이스�
 |[Visual Studio의 디버깅](../debugger/debugging-in-visual-studio.md)|Visual Studio 디버거를 실행하여 논리 및 의미 오류를 해결하는 방법을 설명합니다.|
 |[애플리케이션 리소스 관리(.NET)](../ide/managing-application-resources-dotnet.md)|문자열, 이미지, 아이콘, 오디오, 파일 등의 프로젝트 리소스를 추가하거나 편집하는 방법을 보여 줍니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목:
 
 - [C#](https://msdn.microsoft.com/library/7f4f8103-7068-4f1d-92c7-3c4519b6edbc)
 - [C# 시작](https://msdn.microsoft.com/library/d6ec050f-3956-4737-8030-a4fa3521d29f)

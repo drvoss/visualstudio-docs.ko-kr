@@ -1,20 +1,20 @@
 ---
-title: 모델링 솔루션 | Microsoft Docs
+title: 모델링 솔루션 구조화 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: 2ba70ba4-2cea-4e01-93c2-055903d59470
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2b82bd903fe594ca2f2b650833cd29bfb54efa85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: edf9eaee512eda7439d1beea7303cd0e74b27178
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68155634"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661033"
 ---
 # <a name="structure-your-modeling-solution"></a>모델링 솔루션 구성
 
@@ -26,7 +26,7 @@ ms.locfileid: "68155634"
 
 이 항목에서는 여러 팀 멤버는 물론 여러 팀이 필요할 만큼 큰 프로젝트에서 작업 중이라고 가정합니다. 프로젝트의 코드와 모델은 [!INCLUDE[esprtfs](../includes/esprtfs-md.md)]와 같은 소스 제어 시스템에 저장됩니다. 적어도 일부 팀 멤버는 Visual Studio를 사용하여 모델을 개발하고, 다른 팀 멤버는 다른 Visual Studio 버전을 사용하여 모델을 볼 수 있습니다.
 
-각 도구 및 모델링 기능을 지 원하는 Visual Studio의 버전을 보려면 [아키텍처 및 모델링 도구에 대 한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)합니다.
+각 도구 및 모델링 기능을 지 원하는 Visual Studio 버전을 확인 하려면 [아키텍처 및 모델링 도구에 대 한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조 하세요.
 
 ## <a name="solution-structure"></a>솔루션 구조
 
@@ -34,13 +34,13 @@ ms.locfileid: "68155634"
 
 #### <a name="to-divide-an-application-into-layers"></a>애플리케이션을 레이어로 나누려면
 
-1. 웹 애플리케이션, 서비스 애플리케이션 또는 데스크톱 애플리케이션과 같은 애플리케이션 구조에 따라 솔루션 구조를 지정합니다. 다양 한 일반적인 아키텍처에서 설명한 [Microsoft 응용 프로그램 아키텍처 가이드의 응용 프로그램 Archetype](http://go.microsoft.com/fwlink/?LinkId=196681)합니다.
+1. 웹 애플리케이션, 서비스 애플리케이션 또는 데스크톱 애플리케이션과 같은 애플리케이션 구조에 따라 솔루션 구조를 지정합니다. 다양 한 공통 아키텍처는 [Microsoft 응용 프로그램 아키텍처 가이드의 Application archetype](http://go.microsoft.com/fwlink/?LinkId=196681)에 설명 되어 있습니다.
 
 2. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 솔루션을 만들고 아키텍처 솔루션이라고 부릅니다. 이 솔루션은 시스템의 전반적인 디자인을 만드는 데 사용됩니다. 모델을 포함하지만 코드는 포함하지 않습니다.
 
-    이 솔루션에 레이어 다이어그램을 추가합니다. 레이어 다이어그램에서 애플리케이션에 대해 선택한 아키텍처를 그립니다. 예를 들어 다이어그램 이러한 계층 및 요소 간의 종속성을 표시할 수 있습니다. 프레젠테이션; 비즈니스 논리 및 데이터입니다.
+    이 솔루션에 레이어 다이어그램을 추가합니다. 레이어 다이어그램에서 애플리케이션에 대해 선택한 아키텍처를 그립니다. 예를 들어 다이어그램에 프레젠테이션; 비즈니스 논리 및 데이터 레이어와 레이어 간의 종속성이 표시될 수 있습니다.
 
-    수 레이어 다이어그램 및 새 Visual Studio 솔루션을 동시에 사용 하 여 만든 합니다 **새 UML 또는 레이어 다이어그램** 명령을 합니다 **아키텍처** 메뉴.
+    **아키텍처** 메뉴에서 **새 UML 또는 레이어 다이어그램** 명령을 사용 하 여 레이어 다이어그램 및 새 Visual Studio 솔루션을 동시에 만들 수 있습니다.
 
 3. 중요한 비즈니스 개념을 나타내는 UML 다이어그램 및 모든 레이어의 디자인에서 참조되는 사용 사례를 아키텍처 모델에 추가합니다.
 
@@ -60,7 +60,7 @@ ms.locfileid: "68155634"
 
     이제 각 레이어에 대한 모델과 애플리케이션 아키텍처에 대한 모델이 만들어졌습니다. 각 모델은 자체 솔루션에 포함됩니다. 이렇게 하면 팀 멤버가 레이어에서 동시에 작업할 수 있습니다.
 
-2. 아키텍처 솔루션을 사용하려면 각 레이어 솔루션의 모델링 프로젝트를 추가합니다. 이 작업을 수행하려면 아키텍처 솔루션을 엽니다. 솔루션 탐색기에서 솔루션 노드를 마우스 오른쪽 단추로 추가 가리킨 다음 클릭 **기존 프로젝트**합니다. 한 레이어 솔루션의 모델링 프로젝트(.modelproj)로 이동합니다.
+2. 아키텍처 솔루션을 사용하려면 각 레이어 솔루션의 모델링 프로젝트를 추가합니다. 이 작업을 수행하려면 아키텍처 솔루션을 엽니다. 솔루션 탐색기에서 솔루션 노드를 마우스 오른쪽 단추로 클릭 하 고 추가를 가리킨 다음 **기존 프로젝트**를 클릭 합니다. 한 레이어 솔루션의 모델링 프로젝트(.modelproj)로 이동합니다.
 
     이제 각 모델에 두 개의 솔루션, 즉 "홈" 솔루션과 아키텍처 솔루션이 표시됩니다.
 
@@ -80,9 +80,9 @@ ms.locfileid: "68155634"
 
 ###### <a name="to-use-a-separate-package-for-each-layer"></a>각 레이어에 대해 별도의 패키지를 사용하려면
 
-1. 각 레이어에 대한 솔루션에서 아키텍처 모델링 프로젝트를 추가합니다. 솔루션 탐색기에서 솔루션 노드를 마우스 오른쪽 **추가**를 클릭 하 고 **기존 프로젝트**합니다. 이제 모든 솔루션에서 아키텍처 프로젝트 및 각 레이어에 대한 개발 프로젝트인 단일 모델링 프로젝트에 액세스할 수 있습니다.
+1. 각 레이어에 대한 솔루션에서 아키텍처 모델링 프로젝트를 추가합니다. 솔루션 탐색기에서 솔루션 노드를 마우스 오른쪽 단추로 클릭 하 고 **추가**를 가리킨 다음 **기존 프로젝트**를 클릭 합니다. 이제 모든 솔루션에서 아키텍처 프로젝트 및 각 레이어에 대한 개발 프로젝트인 단일 모델링 프로젝트에 액세스할 수 있습니다.
 
-2. 공유 UML 모델에서 각 계층에 대 한 패키지를 만듭니다. 솔루션 탐색기에서 모델링 프로젝트를 선택 합니다. UML 모델 탐색기에서 모델 루트 노드를 마우스 오른쪽 **추가**를 클릭 하 고 **패키지**합니다.
+2. 공유 UML 모델에서 각 레이어에 대한 패키지를 만듭니다. 솔루션 탐색기에서 모델링 프로젝트를 선택합니다. UML 모델 탐색기에서 모델 루트 노드를 마우스 오른쪽 단추로 클릭 하 고 **추가**를 가리킨 다음 **패키지**를 클릭 합니다.
 
     각 패키지에는 해당 레이어의 요구 사항과 디자인을 설명하는 UML 다이어그램이 포함됩니다.
 
@@ -90,7 +90,7 @@ ms.locfileid: "68155634"
 
     이 메서드를 사용하면 각 레이어의 디자인 요소가 레이어 및 해당 레이어가 종속된 공통 아키텍처의 디자인 요소를 직접 참조할 수 있습니다.
 
-    서로 다른 패키지의 동시 작업으로 인해 일부 충돌이 발생할 수는 있지만 패키지가 별도의 파일에 저장되기 때문에 관리가 비교적 용이합니다. 중요한 문제는 종속 패키지에서 참조된 요소 삭제에 의해 발생합니다. 자세한 내용은 [버전 제어에서 모델 및 다이어그램 관리](../modeling/manage-models-and-diagrams-under-version-control.md)합니다.
+    서로 다른 패키지의 동시 작업으로 인해 일부 충돌이 발생할 수는 있지만 패키지가 별도의 파일에 저장되기 때문에 관리가 비교적 용이합니다. 중요한 문제는 종속 패키지에서 참조된 요소 삭제에 의해 발생합니다. 자세한 내용은 [버전 제어에서 모델 및 다이어그램 관리](../modeling/manage-models-and-diagrams-under-version-control.md)를 참조 하세요.
 
 ## <a name="creating-architecture-templates"></a>아키텍처 템플릿 만들기
 
@@ -100,24 +100,24 @@ ms.locfileid: "68155634"
 
 #### <a name="to-create-a-solution-template"></a>솔루션 템플릿을 만들려면
 
-1. [다운로드 하 여 템플릿 내보내기 마법사 설치](http://go.microsoft.com/fwlink/?LinkId=196686)아직 수행 하지 않은 경우.
+1. 아직 수행 하지 않은 경우 [템플릿 내보내기 마법사를 다운로드 하 여 설치](http://go.microsoft.com/fwlink/?LinkId=196686)합니다.
 
 2. 이후 프로젝트의 시작점으로 사용할 솔루션 구조를 만듭니다.
 
-3. **파일** 메뉴에서 **VSIX로 템플릿 내보내기**를 클릭합니다. 합니다 **마법사 VSIX로 템플릿 내보내기** 열립니다.
+3. **파일** 메뉴에서 **VSIX로 템플릿 내보내기**를 클릭합니다. **VSIX로 템플릿 내보내기 마법사** 가 열립니다.
 
 4. 마법사의 지침에 따라 템플릿에 포함할 프로젝트를 선택하고, 템플릿의 이름 및 설명을 제공하고, 출력 위치를 지정합니다.
 
 > [!NOTE]
-> 이 항목의 자료는 MVP(Most Valued Professional), Microsoft 서비스 및 Visual Studio 제품 팀과 작성자기 공동으로 작업한, Visual Studio ALM Rangers에서 작성된 Visual Studio 아키텍처 도구 사용 지침을 요약하고 쉽게 설명한 것입니다. [전체 지침 패키지를 다운로드 하려면 여기를 클릭 합니다.](http://go.microsoft.com/fwlink/?LinkID=191984)
+> 이 항목의 자료는 MVP(Most Valued Professional), Microsoft 서비스 및 Visual Studio 제품 팀과 작성자기 공동으로 작업한, Visual Studio ALM Rangers에서 작성된 Visual Studio 아키텍처 도구 사용 지침을 요약하고 쉽게 설명한 것입니다. [전체 지침 패키지를 다운로드 하려면 여기를 클릭 하세요.](http://go.microsoft.com/fwlink/?LinkID=191984)
 
 ## <a name="related-materials"></a>관련 자료
 
-[구성 및 모델 관리](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-9-Organizing-and-Managing-Your-Models/) -Clint edmondson 합니다.
+[모델 구성 및 관리](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-9-Organizing-and-Managing-Your-Models/) -Clint Edmondson 비디오
 
-[Visual Studio 아키텍처 도구 사용 지침](../modeling/visual-studio-architecture-tooling-guidance.md) – 팀에서 모델 관리에 대 한 지침 추가
+[Visual Studio 아키텍처 도구 지침](../modeling/visual-studio-architecture-tooling-guidance.md) -팀에서 모델을 관리 하는 방법에 대 한 추가 지침
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목:
 
-[버전 제어에서 모델 및 다이어그램 관리](../modeling/manage-models-and-diagrams-under-version-control.md)
-[개발 프로세스에서 모델 사용](../modeling/use-models-in-your-development-process.md)
+[개발 프로세스에서 모델을 사용](../modeling/use-models-in-your-development-process.md) 하 
+ [버전 제어에서 모델 및 다이어그램 관리](../modeling/manage-models-and-diagrams-under-version-control.md)

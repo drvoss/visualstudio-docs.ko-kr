@@ -1,5 +1,5 @@
 ---
-title: 모양 및 연결선-유형 리디렉션 | Microsoft Docs
+title: 모양 및 연결선 유형-리디렉션 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Domain-Specific Language, connectors
 ms.assetid: 4f6dd6a3-850c-46a2-81a1-344b0e171b28
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7f93cc4f45c7b533ba0aa9992b880a0cf678d301
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ac5549ed890c76edf6daa1360f9f622e1f1b860e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62434243"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672826"
 ---
 # <a name="types-of-shapes-and-connectors---redirect"></a>모양 및 연결선 유형 - 리디렉션
-이 항목은 다른 병합 되었습니다. 참조 하세요 [다이어그램의 프레젠테이션 사용자 지정](../modeling/customizing-presentation-on-the-diagram.md)합니다.
+이 항목은 다른 항목과 병합 되었습니다. [다이어그램에서 프레젠테이션 사용자 지정](../modeling/customizing-presentation-on-the-diagram.md)을 참조 하세요.

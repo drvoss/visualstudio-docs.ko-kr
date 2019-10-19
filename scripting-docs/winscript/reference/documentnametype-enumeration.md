@@ -17,12 +17,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5ee258602c47951f4731dc1378542cc83d57d72b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 401eb759523ed1a33d24c3a298db0b3de2b7d5a7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955218"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575870"
 ---
 # <a name="documentnametype-enumeration"></a>DOCUMENTNAMETYPE 열거형
 문서에 대한 가져올 유형을 설명합니다.  
@@ -42,11 +42,11 @@ DOCUMENTNAMETYPE_UNIQUE_TITLE,} DOCUMENTNAMETYPE;
   
 |멤버|설명|  
 |------------|-----------------|  
-|DOCUMENTNAMETYPE_APPNODE|응용 프로그램 트리에서 표시 된 대로 이름을 가져옵니다.|  
-|DOCUMENTNAMETYPE_TITLE|뷰어의 제목 표시줄에 표시 된 대로 이름을 가져옵니다.|  
+|DOCUMENTNAMETYPE_APPNODE|응용 프로그램 트리에 표시 되는 이름을 가져옵니다.|  
+|DOCUMENTNAMETYPE_TITLE|뷰어 제목 표시줄에 표시 되는 이름을 가져옵니다.|  
 |DOCUMENTNAMETYPE_FILE_TAIL|경로 없이 파일 이름을 가져옵니다.|  
 |DOCUMENTNAMETYPE_URL|문서의 URL을 가져옵니다.|  
-|DOCUMENTNAMETYPE_UNIQUE_TITLE|Id에 대 한 열거형을 사용 하 여 추가 된 제목을 가져옵니다.|  
+|DOCUMENTNAMETYPE_UNIQUE_TITLE|식별을 위해 열거와 함께 추가 된 제목을 가져옵니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [액티브 스크립트 디버거 상수, 열거형 및 구조체](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

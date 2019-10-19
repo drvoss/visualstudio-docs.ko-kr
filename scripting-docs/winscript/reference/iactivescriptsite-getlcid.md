@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::GetLCID | Microsoft Docs
+title: 'IActiveScriptSite:: GetLCID | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c6ebcfec9764aae98f7d74ac98e0c88ecec7c4da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 913ca23ac687fdd080a778afb1dcba2e4dcdd6b8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992761"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570745"
 ---
 # <a name="iactivescriptsitegetlcid"></a>IActiveScriptSite::GetLCID
-호스트의 사용자 인터페이스와 연결 된 로캘 식별자를 검색 합니다. 스크립팅 엔진의 식별자를 사용 하 여 오류 문자열 및 기타 사용자 인터페이스 요소를 엔진에 의해 생성 된 해당 언어로 표시 되도록 합니다.  
+호스트의 사용자 인터페이스와 연결 된 로캘 식별자를 검색 합니다. 스크립팅 엔진은 식별자를 사용 하 여 엔진에서 생성 된 오류 문자열과 기타 사용자 인터페이스 요소가 해당 언어로 표시 되도록 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -37,19 +37,19 @@ HRESULT GetLCID(
   
 #### <a name="parameters"></a>매개 변수  
  `plcid`  
- [out] 스크립팅 엔진에 의해 표시 되는 사용자 인터페이스 요소에 대 한 로캘 식별자를 받는 변수의 주소입니다.  
+ 제한이 스크립팅 엔진에서 표시 하는 사용자 인터페이스 요소에 대 한 로캘 식별자를 수신 하는 변수의 주소입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 다음 값 중 하나를 반환합니다.  
+ 는 다음 값 중 하나를 반환 합니다.  
   
 |반환 값|의미|  
 |------------------|-------------|  
-|`S_OK`|명령 실행 성공|  
-|`E_NOTIMPL`|이 메서드가 구현되지 않았습니다. 시스템에 정의 된 로캘을 사용 합니다.|  
+|`S_OK`|성공할.|  
+|`E_NOTIMPL`|이 메서드는 구현 되지 않습니다. 시스템 정의 로캘을 사용 합니다.|  
 |`E_POINTER`|잘못 된 포인터가 지정 되었습니다.|  
   
-## <a name="remarks"></a>설명  
- 이 메서드가 반환 하는 경우 `E_NOTIMPL`, 시스템 정의 로캘 식별자를 사용 해야 합니다.  
+## <a name="remarks"></a>주의  
+ 이 메서드가 `E_NOTIMPL` 반환 하는 경우 시스템 정의 로캘 식별자를 사용 해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

@@ -14,21 +14,21 @@ ms.assetid: e4a9d980-f3ef-4092-b192-bf4a45981d30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f924dc1745dfe17265a750d4159f52643eb5c5ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 39a1d803229dd614d0022ca14eb79b39f27f88b8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006446"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575643"
 ---
 # <a name="syntax-error-javascript"></a>구문 오류(JavaScript)
-하나 이상의의 문법 규칙을 위반 하는 문을 만든 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]합니다.  
+@No__t_0의 문법 규칙 중 하나 이상을 위반 하는 문을 만들었습니다.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
-- 표시 된 줄 번호에서 프로그램 구문의 다시 확인 합니다.  
+- 표시 된 줄 번호에서 프로그램의 구문을 두 번 확인 합니다.  
   
-- 괄호나 중괄호를 찾습니다.  
+- 잘못 연결 괄호 또는 중괄호를 찾습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [Error 개체](../../javascript/reference/error-object-javascript.md)

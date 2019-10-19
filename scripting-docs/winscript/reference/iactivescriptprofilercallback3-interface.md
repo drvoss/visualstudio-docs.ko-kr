@@ -11,15 +11,15 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be963a21cd95a2ae0b6fbe2cebb57292df846cf0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e3cf523425b11fcbe60f397f878cd9b68b08768e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993308"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571615"
 ---
 # <a name="iactivescriptprofilercallback3-interface"></a>IActiveScriptProfilerCallback3 인터페이스
-프로 파일링된 실행 웹 작업자의 컨텍스트에서 발생 하는 프로파일러에 알리기 위해 메서드를 제공 합니다.  
+프로 파일링 된 실행이 웹 작업자의 컨텍스트에서 발생 함을 프로파일러에 알리는 메서드를 제공 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -31,8 +31,8 @@ interface IActiveScriptProfilerCallback3 : IActiveScriptProfilerCallback2
   
 |메서드|설명|  
 |------------|-----------------|  
-|[IActiveScriptProfilerCallback3::SetWebWorkerId 메서드](../../winscript/reference/iactivescriptprofilercallback3-setwebworkerid-method.md)|이 프로 파일링 세션에 사용할 작업자 ID에 대 한 프로파일러를 알립니다.|  
+|[IActiveScriptProfilerCallback3::SetWebWorkerId 메서드](../../winscript/reference/iactivescriptprofilercallback3-setwebworkerid-method.md)|이 프로 파일링 세션에 사용할 작업자 ID에 대해 프로파일러에 알립니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [IActiveScriptProfilerCallback 인터페이스](../../winscript/reference/iactivescriptprofilercallback-interface.md)   
+## <a name="see-also"></a>참조  
+ [IActiveScriptProfilerCallback 인터페이스](../../winscript/reference/iactivescriptprofilercallback-interface.md)    
  [IActiveScriptProfilerCallback2 인터페이스](../../winscript/reference/iactivescriptprofilercallback2-interface.md)

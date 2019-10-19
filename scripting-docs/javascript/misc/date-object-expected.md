@@ -1,5 +1,5 @@
 ---
-title: Date 개체가 필요 합니다. | Microsoft Docs
+title: 날짜 개체가 필요 합니다. | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,15 +14,15 @@ ms.assetid: d6ab82e6-ca64-46b4-a06c-5c6b0aa057cb
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2767ffc16b637c6b1e7bdf51cb0815d71f58edac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 10af48c4804df3b5513df71578b948abe73ff8c2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946383"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572891"
 ---
 # <a name="date-object-expected"></a>Date 개체가 필요합니다.
-호출 하려고 합니다 **Date.prototype.toString** 또는 **Date.prototype.valueOf** 이외의 다른 형식의 개체의 메서드를 `Date`입니다. 이 형식의 호출 개체 유형 이어야 `Date`합니다. 예를 들어:  
+@No__t_2 이외의 형식의 개체에 대해 **date. prototype** 또는 **valueOf** 메서드를 호출 하려고 했습니다. 이 호출 형식의 개체는 `Date` 형식 이어야 합니다. 예를 들면,  
   
 ```JavaScript  
 var o = new Object;  
@@ -32,9 +32,9 @@ o.f();
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
-- 만 호출 합니다 **Date.prototype.toString** 또는 **Date.prototype.valueOf** 형식의 개체에 있는 메서드의 `Date`합니다.  
+- @No__t_2 형식의 개체에 대해서만 **valueOf** **메서드를 호출 합니다.**  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [Date 개체](../../javascript/reference/date-object-javascript.md)   
- [getDate 메서드 (Date)](../../javascript/reference/getdate-method-date-javascript.md)   
+ [GetDate 메서드 (Date)](../../javascript/reference/getdate-method-date-javascript.md)    
  [내장 개체](../../javascript/intrinsic-objects-javascript.md)

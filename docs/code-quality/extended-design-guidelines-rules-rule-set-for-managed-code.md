@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a2e3d6b626e12df626903f2c26f93d779288a921
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
-ms.translationtype: HT
+ms.openlocfilehash: d37e540df9a480f559e81e650f57ad5bb87d0ddd
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72449078"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535895"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>관리 코드에 대한 확장 디자인 지침 규칙 규칙 집합
 
@@ -25,23 +25,23 @@ Microsoft 확장 디자인 지침 규칙 규칙 집합은 기본 디자인 지�
 
 |규칙|설명|
 |----------|-----------------|
-|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|삭제 가능한 필드가 있는 형식은 삭제 가능해야 합니다.|
-|[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|이벤트 처리기를 제대로 선언하십시오.|
-|[CA1016](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md)|AssemblyVersionAttribute로 어셈블리 표시|
-|[CA1033](../code-quality/ca1033-interface-methods-should-be-callable-by-child-types.md)|인터페이스 메서드는 자식 형식에서 호출할 수 있어야 합니다.|
-|[CA1049](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)|네이티브 리소스가 있는 형식은 삭제 가능해야 합니다.|
-|[CA1060](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)|P/Invoke를 NativeMethods 클래스로 이동|
-|[CA1061](../code-quality/ca1061-do-not-hide-base-class-methods.md)|기본 클래스 메서드를 숨기지 마십시오.|
-|[CA1063](../code-quality/ca1063-implement-idisposable-correctly.md)|IDisposable을 올바르게 구현하십시오.|
-|[CA1065](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)|예기치 않은 위치에서 예외를 발생시키지 마십시오.|
-|[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|중복 액셀러레이터 키를 사용하지 마십시오.|
-|[CA1400](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)|P/Invoke 진입점이 있어야 합니다.|
-|[CA1401](../code-quality/ca1401-p-invokes-should-not-be-visible.md)|P/Invoke는 노출되지 않아야 합니다.|
-|[CA1403](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)|자동 레이아웃 형식은 COM 노출이면 안 됩니다.|
-|[CA1404](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)|P/Invoke 다음에 바로 GetLastError를 호출하십시오.|
-|[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|COM 노출 형식의 기본 형식은 COM 노출이어야 합니다.|
-|[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|COM 등록 메서드는 일치해야 합니다.|
-|[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|P/Invoke를 올바르게 선언하십시오.|
+|[CA1001](../code-quality/ca1001.md)|삭제 가능한 필드가 있는 형식은 삭제 가능해야 합니다.|
+|[CA1009](../code-quality/ca1009.md)|이벤트 처리기를 제대로 선언하십시오.|
+|[CA1016](../code-quality/ca1016.md)|AssemblyVersionAttribute로 어셈블리 표시|
+|[CA1033](../code-quality/ca1033.md)|인터페이스 메서드는 자식 형식에서 호출할 수 있어야 합니다.|
+|[CA1049](../code-quality/ca1049.md)|네이티브 리소스가 있는 형식은 삭제 가능해야 합니다.|
+|[CA1060](../code-quality/ca1060.md)|P/Invoke를 NativeMethods 클래스로 이동|
+|[CA1061](../code-quality/ca1061.md)|기본 클래스 메서드를 숨기지 마십시오.|
+|[CA1063](../code-quality/ca1063.md)|IDisposable을 올바르게 구현하십시오.|
+|[CA1065](../code-quality/ca1065.md)|예기치 않은 위치에서 예외를 발생시키지 마십시오.|
+|[CA1301](../code-quality/ca1301.md)|중복 액셀러레이터 키를 사용하지 마십시오.|
+|[CA1400](../code-quality/ca1400.md)|P/Invoke 진입점이 있어야 합니다.|
+|[CA1401](../code-quality/ca1401.md)|P/Invoke는 노출되지 않아야 합니다.|
+|[CA1403](../code-quality/ca1403.md)|자동 레이아웃 형식은 COM 노출이면 안 됩니다.|
+|[CA1404](../code-quality/ca1404.md)|P/Invoke 다음에 바로 GetLastError를 호출하십시오.|
+|[CA1405](../code-quality/ca1405.md)|COM 노출 형식의 기본 형식은 COM 노출이어야 합니다.|
+|[CA1410](../code-quality/ca1410.md)|COM 등록 메서드는 일치해야 합니다.|
+|[CA1415](../code-quality/ca1415.md)|P/Invoke를 올바르게 선언하십시오.|
 |[CA1821](../code-quality/ca1821.md)|빈 종료자를 제거하십시오.|
 |[CA1900](../code-quality/ca1900.md)|값 형식 필드는 이식 가능해야 합니다.|
 |[CA1901](../code-quality/ca1901.md)|P/Invoke 선언은 이식 가능해야 합니다.|
@@ -87,57 +87,57 @@ Microsoft 확장 디자인 지침 규칙 규칙 집합은 기본 디자인 지�
 |[CA2240](../code-quality/ca2240.md)|ISerializable을 올바르게 구현하십시오.|
 |[CA2241](../code-quality/ca2241.md)|서식 지정 메서드에 올바른 인수를 제공하십시오.|
 |[CA2242](../code-quality/ca2242.md)|NaN에 대해 정확하게 테스트하십시오.|
-|[CA1000](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)|정적 멤버를 제네릭 형식으로 선언하지 마세요.|
-|[CA1002](../code-quality/ca1002-do-not-expose-generic-lists.md)|제네릭 목록을 노출하지 마세요.|
-|[CA1003](../code-quality/ca1003-use-generic-event-handler-instances.md)|제네릭 이벤트 처리기 인스턴스를 사용하세요.|
-|[CA1004](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)|제네릭 메서드는 형식 매개 변수를 제공해야 합니다.|
-|[CA1005](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)|제네릭 형식에 매개 변수를 너무 많이 사용하지 마세요.|
-|[CA1006](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)|멤버 시그니처에 제네릭 형식을 중첩하지 마세요.|
-|[CA1007](../code-quality/ca1007-use-generics-where-appropriate.md)|적합한 제네릭을 사용하세요.|
-|[CA1008](../code-quality/ca1008-enums-should-have-zero-value.md)|열거형에는 0 값이 있어야 합니다.|
-|[CA1010](../code-quality/ca1010-collections-should-implement-generic-interface.md)|컬렉션은 제네릭 인터페이스를 구현해야 합니다.|
-|[CA1011](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)|기본 형식을 매개 변수로 전달해 보세요.|
-|[CA1012](../code-quality/ca1012-abstract-types-should-not-have-constructors.md)|추상 형식에는 생성자를 사용하면 안 됩니다.|
-|[CA1013](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|더하기 및 빼기를 오버로드할 때 같음 연산자를 오버로드하세요.|
-|[CA1014](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md)|CLSCompliantAttribute로 어셈블리를 표시하세요.|
-|[CA1017](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)|ComVisibleAttribute로 어셈블리를 표시하세요.|
-|[CA1018](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)|AttributeUsageAttribute로 특성을 표시하세요.|
-|[CA1019](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)|특성 인수의 접근자를 정의하세요.|
-|[CA1023](../code-quality/ca1023-indexers-should-not-be-multidimensional.md)|다차원 인덱서를 사용하지 마세요.|
-|[CA1024](../code-quality/ca1024-use-properties-where-appropriate.md)|적합한 속성을 사용하세요.|
-|[CA1025](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)|반복 인수를 매개 변수 배열로 바꾸세요.|
-|[CA1026](../code-quality/ca1026-default-parameters-should-not-be-used.md)|기본 매개 변수를 사용하면 안 됩니다.|
-|[CA1027](../code-quality/ca1027-mark-enums-with-flagsattribute.md)|열거형을 FlagsAttribute로 표시하세요.|
-|[CA1028](../code-quality/ca1028-enum-storage-should-be-int32.md)|열거형 스토리지는 Int32여야 합니다.|
-|[CA1030](../code-quality/ca1030-use-events-where-appropriate.md)|적절한 경우 이벤트를 사용하세요.|
-|[CA1031](../code-quality/ca1031-do-not-catch-general-exception-types.md)|일반적인 예외 형식을 catch하지 마세요.|
-|[CA1032](../code-quality/ca1032-implement-standard-exception-constructors.md)|표준 예외 생성자를 구현하세요.|
-|[CA1034](../code-quality/ca1034-nested-types-should-not-be-visible.md)|중첩 형식은 노출되면 안 됩니다.|
-|[CA1035](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)|ICollection 구현에 강력한 형식의 멤버가 있습니다.|
-|[CA1036](../code-quality/ca1036-override-methods-on-comparable-types.md)|비교 가능한 형식에 메서드를 재정의하세요.|
-|[CA1038](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)|열거자는 강력한 형식이어야 합니다.|
-|[CA1039](../code-quality/ca1039-lists-are-strongly-typed.md)|목록은 강력한 형식이어야 합니다.|
-|[CA1041](../code-quality/ca1041-provide-obsoleteattribute-message.md)|ObsoleteAttribute 메시지를 제공하세요.|
-|[CA1043](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)|인덱서에 정수 또는 문자열 인수를 사용하세요.|
-|[CA1044](../code-quality/ca1044-properties-should-not-be-write-only.md)|속성은 쓰기 전용이면 안 됩니다.|
-|[CA1046](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)|참조 형식에 같음 연산자를 오버로드하지 마세요.|
-|[CA1047](../code-quality/ca1047-do-not-declare-protected-members-in-sealed-types.md)|protected 멤버를 sealed 형식으로 선언하지 마세요.|
-|[CA1048](../code-quality/ca1048-do-not-declare-virtual-members-in-sealed-types.md)|가상 멤버를 sealed 형식으로 선언하지 마세요.|
-|[CA1050](../code-quality/ca1050-declare-types-in-namespaces.md)|네임스페이스에 형식을 선언하세요.|
-|[CA1051](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)|표시되는 인스턴스 필드를 선언하지 마세요.|
-|[CA1052](../code-quality/ca1052-static-holder-types-should-be-sealed.md)|정적 소유자 형식은 sealed여야 합니다.|
-|[CA1053](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)|정적 소유자 형식에는 생성자를 사용하면 안 됩니다.|
-|[CA1054](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)|URI 매개 변수는 문자열이면 안 됩니다.|
-|[CA1055](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)|URI 반환 값은 문자열이면 안 됩니다.|
-|[CA1056](../code-quality/ca1056-uri-properties-should-not-be-strings.md)|URI 속성은 문자열이면 안 됩니다.|
-|[CA1057](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)|문자열 URI 오버로드는 System.Uri 오버로드를 호출합니다.|
-|[CA1058](../code-quality/ca1058-types-should-not-extend-certain-base-types.md)|형식은 특정 기본 형식을 확장하면 안 됩니다.|
-|[CA1059](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)|멤버는 구체적인 특정 형식을 노출하면 안 됩니다.|
-|[CA1064](../code-quality/ca1064-exceptions-should-be-public.md)|예외는 public이어야 합니다.|
-|[CA1500](../code-quality/ca1500-variable-names-should-not-match-field-names.md)|변수 이름은 필드 이름과 달라야 합니다.|
-|[CA1502](../code-quality/ca1502-avoid-excessive-complexity.md)|지나치게 복잡하게 만들지 마세요.|
-|[CA1708](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)|식별자에는 대/소문자만 다른 이름을 사용할 수 없습니다.|
-|[CA1716](../code-quality/ca1716-identifiers-should-not-match-keywords.md)|식별자는 키워드와 달라야 합니다.|
+|[CA1000](../code-quality/ca1000.md)|정적 멤버를 제네릭 형식으로 선언하지 마세요.|
+|[CA1002](../code-quality/ca1002.md)|제네릭 목록을 노출하지 마세요.|
+|[CA1003](../code-quality/ca1003.md)|제네릭 이벤트 처리기 인스턴스를 사용하세요.|
+|[CA1004](../code-quality/ca1004.md)|제네릭 메서드는 형식 매개 변수를 제공해야 합니다.|
+|[CA1005](../code-quality/ca1005.md)|제네릭 형식에 매개 변수를 너무 많이 사용하지 마세요.|
+|[CA1006](../code-quality/ca1006.md)|멤버 시그니처에 제네릭 형식을 중첩하지 마세요.|
+|[CA1007](../code-quality/ca1007.md)|적합한 제네릭을 사용하세요.|
+|[CA1008](../code-quality/ca1008.md)|열거형에는 0 값이 있어야 합니다.|
+|[CA1010](../code-quality/ca1010.md)|컬렉션은 제네릭 인터페이스를 구현해야 합니다.|
+|[CA1011](../code-quality/ca1011.md)|기본 형식을 매개 변수로 전달해 보세요.|
+|[CA1012](../code-quality/ca1012.md)|추상 형식에는 생성자를 사용하면 안 됩니다.|
+|[CA1013](../code-quality/ca1013.md)|더하기 및 빼기를 오버로드할 때 같음 연산자를 오버로드하세요.|
+|[CA1014](../code-quality/ca1014.md)|CLSCompliantAttribute로 어셈블리를 표시하세요.|
+|[CA1017](../code-quality/ca1017.md)|ComVisibleAttribute로 어셈블리를 표시하세요.|
+|[CA1018](../code-quality/ca1018.md)|AttributeUsageAttribute로 특성을 표시하세요.|
+|[CA1019](../code-quality/ca1019.md)|특성 인수의 접근자를 정의하세요.|
+|[CA1023](../code-quality/ca1023.md)|다차원 인덱서를 사용하지 마세요.|
+|[CA1024](../code-quality/ca1024.md)|적합한 속성을 사용하세요.|
+|[CA1025](../code-quality/ca1025.md)|반복 인수를 매개 변수 배열로 바꾸세요.|
+|[CA1026](../code-quality/ca1026.md)|기본 매개 변수를 사용하면 안 됩니다.|
+|[CA1027](../code-quality/ca1027.md)|열거형을 FlagsAttribute로 표시하세요.|
+|[CA1028](../code-quality/ca1028.md)|열거형 스토리지는 Int32여야 합니다.|
+|[CA1030](../code-quality/ca1030.md)|적절한 경우 이벤트를 사용하세요.|
+|[CA1031](../code-quality/ca1031.md)|일반적인 예외 형식을 catch하지 마세요.|
+|[CA1032](../code-quality/ca1032.md)|표준 예외 생성자를 구현하세요.|
+|[CA1034](../code-quality/ca1034.md)|중첩 형식은 노출되면 안 됩니다.|
+|[CA1035](../code-quality/ca1035.md)|ICollection 구현에 강력한 형식의 멤버가 있습니다.|
+|[CA1036](../code-quality/ca1036.md)|비교 가능한 형식에 메서드를 재정의하세요.|
+|[CA1038](../code-quality/ca1038.md)|열거자는 강력한 형식이어야 합니다.|
+|[CA1039](../code-quality/ca1039.md)|목록은 강력한 형식이어야 합니다.|
+|[CA1041](../code-quality/ca1041.md)|ObsoleteAttribute 메시지를 제공하세요.|
+|[CA1043](../code-quality/ca1043.md)|인덱서에 정수 또는 문자열 인수를 사용하세요.|
+|[CA1044](../code-quality/ca1044.md)|속성은 쓰기 전용이면 안 됩니다.|
+|[CA1046](../code-quality/ca1046.md)|참조 형식에 같음 연산자를 오버로드하지 마세요.|
+|[CA1047](../code-quality/ca1047.md)|protected 멤버를 sealed 형식으로 선언하지 마세요.|
+|[CA1048](../code-quality/ca1048.md)|가상 멤버를 sealed 형식으로 선언하지 마세요.|
+|[CA1050](../code-quality/ca1050.md)|네임스페이스에 형식을 선언하세요.|
+|[CA1051](../code-quality/ca1051.md)|표시되는 인스턴스 필드를 선언하지 마세요.|
+|[CA1052](../code-quality/ca1052.md)|정적 소유자 형식은 sealed여야 합니다.|
+|[CA1053](../code-quality/ca1053.md)|정적 소유자 형식에는 생성자를 사용하면 안 됩니다.|
+|[CA1054](../code-quality/ca1054.md)|URI 매개 변수는 문자열이면 안 됩니다.|
+|[CA1055](../code-quality/ca1055.md)|URI 반환 값은 문자열이면 안 됩니다.|
+|[CA1056](../code-quality/ca1056.md)|URI 속성은 문자열이면 안 됩니다.|
+|[CA1057](../code-quality/ca1057.md)|문자열 URI 오버로드는 System.Uri 오버로드를 호출합니다.|
+|[CA1058](../code-quality/ca1058.md)|형식은 특정 기본 형식을 확장하면 안 됩니다.|
+|[CA1059](../code-quality/ca1059.md)|멤버는 구체적인 특정 형식을 노출하면 안 됩니다.|
+|[CA1064](../code-quality/ca1064.md)|예외는 public이어야 합니다.|
+|[CA1500](../code-quality/ca1500.md)|변수 이름은 필드 이름과 달라야 합니다.|
+|[CA1502](../code-quality/ca1502.md)|지나치게 복잡하게 만들지 마세요.|
+|[CA1708](../code-quality/ca1708.md)|식별자에는 대/소문자만 다른 이름을 사용할 수 없습니다.|
+|[CA1716](../code-quality/ca1716.md)|식별자는 키워드와 달라야 합니다.|
 |[CA1801](../code-quality/ca1801.md)|사용되지 않은 매개 변수를 검토하세요.|
 |[CA1804](../code-quality/ca1804.md)|사용되지 않는 로컬 항목을 제거하세요.|
 |[CA1809](../code-quality/ca1809.md)|불필요한 로컬 항목을 사용하지 마세요.|
@@ -167,34 +167,34 @@ Microsoft 확장 디자인 지침 규칙 규칙 집합은 기본 디자인 지�
 |[CA2230](../code-quality/ca2230.md)|가변 인수로 params를 사용하세요.|
 |[CA2234](../code-quality/ca2234.md)|문자열 대신 System.Uri 개체를 전달하세요.|
 |[CA2239](../code-quality/ca2239.md)|선택적 필드에 deserialization 메서드를 제공하세요.|
-|[CA1020](../code-quality/ca1020-avoid-namespaces-with-few-types.md)|형식이 부족한 네임스페이스를 사용하지 마세요.|
-|[CA1021](../code-quality/ca1021-avoid-out-parameters.md)|out 매개 변수를 사용하지 마세요.|
-|[CA1040](../code-quality/ca1040-avoid-empty-interfaces.md)|빈 인터페이스를 사용하지 마세요.|
-|[CA1045](../code-quality/ca1045-do-not-pass-types-by-reference.md)|참조로 형식을 전달하지 마세요.|
-|[CA1062](../code-quality/ca1062-validate-arguments-of-public-methods.md)|public 메서드의 인수에 대한 유효성을 검사하세요.|
-|[CA1501](../code-quality/ca1501-avoid-excessive-inheritance.md)|상속성을 너무 많이 사용하지 마세요.|
-|[CA1504](../code-quality/ca1504-review-misleading-field-names.md)|잘못된 필드 이름을 검토하세요.|
-|[CA1505](../code-quality/ca1505-avoid-unmaintainable-code.md)|유지 관리할 수 없는 코드를 사용하지 마세요.|
-|[CA1506](../code-quality/ca1506-avoid-excessive-class-coupling.md)|클래스를 지나치게 많이 결합하지 마세요.|
-|[CA1700](../code-quality/ca1700-do-not-name-enum-values-reserved.md)|열거형 값의 이름을 'Reserved'로 지정하지 마세요.|
-|[CA1701](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)|리소스 문자열 복합 단어는 정확한 대/소문자를 사용해야 합니다.|
-|[CA1702](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)|복합 단어는 정확한 대/소문자를 사용해야 합니다.|
-|[CA1703](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)|리소스 문자열에는 정확한 철자를 사용해야 합니다.|
-|[CA1704](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)|식별자에는 정확한 철자를 사용해야 합니다.|
-|[CA1707](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)|식별자에는 밑줄을 사용할 수 없습니다.|
-|[CA1709](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)|식별자는 정확한 대/소문자를 사용해야 합니다.|
-|[CA1710](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)|식별자에는 올바른 접미사를 사용해야 합니다.|
-|[CA1711](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)|식별자에는 올바른 접미사를 사용해야 합니다.|
-|[CA1712](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)|열거형 값에 형식 이름을 접두사로 사용하지 마세요.|
-|[CA1713](../code-quality/ca1713-events-should-not-have-before-or-after-prefix.md)|이벤트에 Before 또는 After 접두사를 사용하지 마세요.|
-|[CA1714](../code-quality/ca1714-flags-enums-should-have-plural-names.md)|플래그 열거형에는 복수형 이름을 사용해야 합니다.|
-|[CA1715](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)|식별자에는 올바른 접두사를 사용해야 합니다.|
-|[CA1717](../code-quality/ca1717-only-flagsattribute-enums-should-have-plural-names.md)|FlagsAttribute 열거형만 복수형 이름을 가질 수 있습니다.|
-|[CA1719](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)|매개 변수 이름은 멤버 이름과 달라야 합니다.|
-|[CA1720](../code-quality/ca1720-identifiers-should-not-contain-type-names.md)|식별자에 형식 이름을 포함하면 안 됩니다.|
-|[CA1721](../code-quality/ca1721-property-names-should-not-match-get-methods.md)|속성 이름은 Get 메서드와 달라야 합니다.|
-|[CA1722](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)|식별자에는 올바른 접두사를 사용해야 합니다.|
-|[CA1724](../code-quality/ca1724-type-names-should-not-match-namespaces.md)|형식 이름은 네임스페이스와 달라야 합니다.|
-|[CA1725](../code-quality/ca1725-parameter-names-should-match-base-declaration.md)|매개 변수 이름은 기본 선언과 일치해야 합니다.|
-|[CA1726](../code-quality/ca1726-use-preferred-terms.md)|기본 설정 용어를 사용하세요.|
+|[CA1020](../code-quality/ca1020.md)|형식이 부족한 네임스페이스를 사용하지 마세요.|
+|[CA1021](../code-quality/ca1021.md)|out 매개 변수를 사용하지 마세요.|
+|[CA1040](../code-quality/ca1040.md)|빈 인터페이스를 사용하지 마세요.|
+|[CA1045](../code-quality/ca1045.md)|참조로 형식을 전달하지 마세요.|
+|[CA1062](../code-quality/ca1062.md)|public 메서드의 인수에 대한 유효성을 검사하세요.|
+|[CA1501](../code-quality/ca1501.md)|상속성을 너무 많이 사용하지 마세요.|
+|[CA1504](../code-quality/ca1504.md)|잘못된 필드 이름을 검토하세요.|
+|[CA1505](../code-quality/ca1505.md)|유지 관리할 수 없는 코드를 사용하지 마세요.|
+|[CA1506](../code-quality/ca1506.md)|클래스를 지나치게 많이 결합하지 마세요.|
+|[CA1700](../code-quality/ca1700.md)|열거형 값의 이름을 'Reserved'로 지정하지 마세요.|
+|[CA1701](../code-quality/ca1701.md)|리소스 문자열 복합 단어는 정확한 대/소문자를 사용해야 합니다.|
+|[CA1702](../code-quality/ca1702.md)|복합 단어는 정확한 대/소문자를 사용해야 합니다.|
+|[CA1703](../code-quality/ca1703.md)|리소스 문자열에는 정확한 철자를 사용해야 합니다.|
+|[CA1704](../code-quality/ca1704.md)|식별자에는 정확한 철자를 사용해야 합니다.|
+|[CA1707](../code-quality/ca1707.md)|식별자에는 밑줄을 사용할 수 없습니다.|
+|[CA1709](../code-quality/ca1709.md)|식별자는 정확한 대/소문자를 사용해야 합니다.|
+|[CA1710](../code-quality/ca1710.md)|식별자에는 올바른 접미사를 사용해야 합니다.|
+|[CA1711](../code-quality/ca1711.md)|식별자에는 올바른 접미사를 사용해야 합니다.|
+|[CA1712](../code-quality/ca1712.md)|열거형 값에 형식 이름을 접두사로 사용하지 마세요.|
+|[CA1713](../code-quality/ca1713.md)|이벤트에 Before 또는 After 접두사를 사용하지 마세요.|
+|[CA1714](../code-quality/ca1714.md)|플래그 열거형에는 복수형 이름을 사용해야 합니다.|
+|[CA1715](../code-quality/ca1715.md)|식별자에는 올바른 접두사를 사용해야 합니다.|
+|[CA1717](../code-quality/ca1717.md)|FlagsAttribute 열거형만 복수형 이름을 가질 수 있습니다.|
+|[CA1719](../code-quality/ca1719.md)|매개 변수 이름은 멤버 이름과 달라야 합니다.|
+|[CA1720](../code-quality/ca1720.md)|식별자에 형식 이름을 포함하면 안 됩니다.|
+|[CA1721](../code-quality/ca1721.md)|속성 이름은 Get 메서드와 달라야 합니다.|
+|[CA1722](../code-quality/ca1722.md)|식별자에는 올바른 접두사를 사용해야 합니다.|
+|[CA1724](../code-quality/ca1724.md)|형식 이름은 네임스페이스와 달라야 합니다.|
+|[CA1725](../code-quality/ca1725.md)|매개 변수 이름은 기본 선언과 일치해야 합니다.|
+|[CA1726](../code-quality/ca1726.md)|기본 설정 용어를 사용하세요.|
 |[CA2204](../code-quality/ca2204.md)|리터럴의 맞춤법이 정확해야 합니다.|

@@ -13,21 +13,21 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5e684a9e41165ceb266199c64a93e2e765506fb6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f5cca448b43e239866fe13ed8ef81b5dbf4631c0
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009757"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572826"
 ---
 # <a name="iactivescriptauthorprocedure-interface"></a>IActiveScriptAuthorProcedure 인터페이스
-상속 된 메서드 외에도 `IUnknown`, `IScriptAuthorProcedure` 인터페이스는 다음 메서드를 노출 합니다.  
+@No__t_0에서 상속 된 메서드 외에도 `IScriptAuthorProcedure` 인터페이스는 다음 메서드를 노출 합니다.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
   
 |메서드|설명|  
 |------------|-----------------|  
-|[IActiveScriptAuthorProcedure::ParseProcedureText](../../winscript/reference/iactivescriptauthorprocedure-parseproceduretext.md)|코드 프로시저를 구문 분석 엔진을 작성 하는 스크립트에 코드 프로시저의 텍스트를 추가 하 고, 만듭니다는 `IScriptEntry` 코드 프로시저에 해당 하는 개체입니다.|  
+|[IActiveScriptAuthorProcedure::ParseProcedureText](../../winscript/reference/iactivescriptauthorprocedure-parseproceduretext.md)|코드 프로시저를 구문 분석 하 고, 스크립트 작성 엔진에 코드 프로시저의 텍스트를 추가 하 고, 코드 프로시저에 해당 하는 `IScriptEntry` 개체를 만듭니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [액티브 스크립트 작성 인터페이스](../../winscript/reference/active-script-authoring-interfaces.md)

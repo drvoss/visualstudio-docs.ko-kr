@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3fa7ae62c19a7af45188bab08ce9b3144032b7d
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
-ms.translationtype: HT
+ms.openlocfilehash: bbd99d260ba61d9e3ae9e877ecc1cefb1a22892e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72435713"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569073"
 ---
 # <a name="general-debugging-options"></a>일반 디버깅 옵션
 
@@ -95,11 +95,11 @@ Visual Studio 디버거 옵션을 설정 하려면 **도구**  > **옵션**을 �
 
 **모든 출력 창 텍스트를 직접 실행 창으로 리디렉션**: 일반적으로 **출력** 창에 표시 되는 모든 디버거 메시지를 **직접 실행** 창으로 보냅니다.
 
-**변수 창에서 개체의 원시 구조체 표시**: 모든 개체 구조 뷰 사용자 지정을 해제 합니다. 사용자 지정 보기에 대 한 자세한 내용은 [관리 되는 개체의 사용자 지정 뷰 만들기](../debugger/create-custom-views-of-dot-managed-objects.md)를 참조 하세요.
+**변수 창에서 개체의 원시 구조체 표시**: 모든 개체 구조 뷰 사용자 지정을 해제 합니다. 사용자 지정 보기에 대 한 자세한 내용은 [관리 되는 개체의 사용자 지정 뷰 만들기](../debugger/create-custom-views-of-managed-objects.md)를 참조 하세요.
 
 **모듈을 로드할 때 jit 최적화 사용 안 함 (관리 전용)** : 디버거가 연결 된 상태에서 모듈이 로드 되 고 jit 컴파일될 때 관리 코드의 jit 최적화를 사용 하지 않습니다. 최적화를 해제하면 성능이 저하될 수 있지만 일부 문제를 보다 쉽게 디버깅할 수 있습니다. 내 코드만 기능을 사용하는 경우 JIT 최적화를 해제하면 사용자가 작성하지 않은 코드가 사용자 코드("내 코드")로 표시될 수 있습니다. 자세한 내용은 [JIT 최적화 및 디버깅](../debugger/jit-optimization-and-debugging.md)을 참조 하세요.
 
-**ASP.NET에 대 한 JavaScript 디버깅 사용 (Chrome, Edge 및 IE)** : ASP.NET apps에 대해 스크립트 디버거를 사용 하도록 설정 합니다. Chrome에서 처음 사용 하는 경우 브라우저에 로그인 하 여 설치한 Chrome 확장을 사용 하도록 설정 해야 할 수 있습니다. 레거시 동작으로 되돌리려면이 옵션을 사용 하지 않도록 설정 합니다.
+**ASP.NET에 대 한 JavaScript 디버깅 사용 (Chrome, Microsoft Edge 및 IE)** : ASP.NET 앱에 대 한 스크립트 디버거를 사용 하도록 설정 합니다. Chrome에서 처음 사용 하는 경우 브라우저에 로그인 하 여 설치한 Chrome 확장을 사용 하도록 설정 해야 할 수 있습니다. 레거시 동작으로 되돌리려면이 옵션을 사용 하지 않도록 설정 합니다.
 
 **Uwp Javascript 앱에 대 한 Edge 개발자 도구 사용 (실험적)** : Microsoft EDGE에서 uwp javascript 앱 용 개발자 도구를 사용 하도록 설정 합니다.
 
@@ -117,7 +117,7 @@ dll의 내보내기 테이블에서 사용할 수 있는 기호를 확인하려�
 
 **관리 되는 호환성 모드 사용**:이 시나리오를 사용 하려면 기본 디버깅 엔진을 레거시 버전으로 바꿉니다.
 
-- , Visual Basic 또는 C# F# 이외의 .NET Framework 언어를 사용 하 고 있으며,이는 자체 식 계산기 (/cli 포함 C++)를 제공 합니다.
+- , Visual Basic 또는 C# F# 이외의 .net 언어를 사용 하 고 있으며,이는 자체 식 계산기 (/cli 포함 C++)를 제공 합니다.
 
 - 혼합 모드 디버깅 중에 프로젝트에 대해 C++ 편집 하며 계속 하기를 사용 하도록 설정 하려고 합니다.
 

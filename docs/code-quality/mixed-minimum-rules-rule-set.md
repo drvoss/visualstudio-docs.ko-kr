@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d941022427cbfa8d16efe98f716feceff980583
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
-ms.translationtype: HT
+ms.openlocfilehash: e3c0b45fe73624a7506fbfdb52204201d286a73e
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445666"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535762"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>혼합 최소 규칙 규칙 집합
 
@@ -153,7 +153,7 @@ Microsoft Mixed Minimum 규칙은 잠재적 보안 허점 및 응용 프로그�
 |[C28305](../code-quality/c28305.md)|토큰을 구문 분석하는 동안 오류가 발생했습니다.|
 |[C28350](../code-quality/c28350.md)|주석이 조건부로 적용할 수 없는 상황을 설명합니다.|
 |[C28351](../code-quality/c28351.md)|주석이 동적 값(변수)을 조건에 사용할 수 없는 경우를 설명합니다.|
-|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|삭제 가능한 필드가 있는 형식은 삭제 가능해야 합니다.|
+|[CA1001](../code-quality/ca1001.md)|삭제 가능한 필드가 있는 형식은 삭제 가능해야 합니다.|
 |[CA1821](../code-quality/ca1821.md)|빈 종료자를 제거하십시오.|
 |[CA2213](../code-quality/ca2213.md)|삭제 가능한 필드는 삭제해야 합니다.|
 |[CA2231](../code-quality/ca2231.md)|ValueType.Equals를 재정의할 때 같음 연산자를 오버로드하십시오.|

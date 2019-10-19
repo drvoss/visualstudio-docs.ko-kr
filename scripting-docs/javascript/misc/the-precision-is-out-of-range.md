@@ -1,5 +1,5 @@
 ---
-title: 정밀도 범위를 벗어났습니다. | Microsoft Docs
+title: 전체 자릿수가 범위를 벗어났습니다. | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,19 +14,19 @@ ms.assetid: c16760ac-fc08-49d7-8878-9bc434b3c080
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 92a6e7fc6433f120c053303421feb5e8d58bd1c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 364794472cbf17643cebbd926cd3fda6e93be1f9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006197"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577276"
 ---
 # <a name="the-precision-is-out-of-range"></a>정밀도가 범위를 벗어납니다.
-함수에 잘못 된 인수를 전달 하려고 **Number.prototype.toPrecision**합니다. 인수 **toPrecision** 1과 21 (포함) 사이 여야 합니다.  
+**ToPrecision**함수에 잘못 된 인수를 전달 하려고 했습니다. **ToPrecision** 에 대 한 인수는 1에서 21 (포함) 사이 여야 합니다.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
-- 인수 확인 `toPrecision` 이 너무 크거나 너무 작습니다.  
+- @No__t_0에 대 한 인수가 너무 크거나 크지 않은지 확인 하십시오.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [toPrecision 메서드(Number)](../../javascript/reference/toprecision-method-number-javascript.md)

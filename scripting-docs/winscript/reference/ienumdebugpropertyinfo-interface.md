@@ -13,29 +13,29 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 736bea847908e3c70d6caf2f8e41af38608f4f23
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0ce4f5a114629a473df99b583c77ae7747bcd339
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963431"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574181"
 ---
 # <a name="ienumdebugpropertyinfo-interface"></a>IEnumDebugPropertyInfo 인터페이스
-열거 `DebugPropertyInfo` 구조입니다.  
+@No__t_0 구조체를 열거 합니다.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
- 다음 표에서의 메서드를 보여 줍니다. `IEnumDebugPropertyInfo`합니다.  
+ 다음 표에서는 `IEnumDebugPropertyInfo`의 메서드를 보여 줍니다.  
   
 |메서드|설명|  
 |------------|-----------------|  
-|[IEnumDebugPropertyInfo::Next](../../winscript/reference/ienumdebugpropertyinfo-next.md)|지정된 된 수의 검색 `DebugPropertyInfo` 열거형 시퀀스에는 구조입니다.|  
-|[IEnumDebugPropertyInfo::Skip](../../winscript/reference/ienumdebugpropertyinfo-skip.md)|지정 된 개수의 건너뜁니다 `DebugPropertyInfo` 열거형 시퀀스에는 구조입니다.|  
+|[IEnumDebugPropertyInfo::Next](../../winscript/reference/ienumdebugpropertyinfo-next.md)|열거형 시퀀스에서 지정 된 수의 `DebugPropertyInfo` 구조체를 검색 합니다.|  
+|[IEnumDebugPropertyInfo::Skip](../../winscript/reference/ienumdebugpropertyinfo-skip.md)|열거형 시퀀스에서 지정 된 수의 `DebugPropertyInfo` 구조체를 건너뜁니다.|  
 |[IEnumDebugPropertyInfo::Reset](../../winscript/reference/ienumdebugpropertyinfo-reset.md)|열거형 시퀀스를 시작 부분으로 다시 설정합니다.|  
-|[IEnumDebugPropertyInfo::Clone](../../winscript/reference/ienumdebugpropertyinfo-clone.md)|현재 열거자와 열거 상태가 같은 포함 하는 열거자를 만듭니다.|  
-|[IEnumDebugPropertyInfo::GetCount](../../winscript/reference/ienumdebugpropertyinfo-getcount.md)|개수를 가져옵니다 `DebugPropertyInfo` 열거자 구조입니다.|  
+|[IEnumDebugPropertyInfo::Clone](../../winscript/reference/ienumdebugpropertyinfo-clone.md)|현재 열거자와 동일한 열거 상태를 포함 하는 열거자를 만듭니다.|  
+|[IEnumDebugPropertyInfo::GetCount](../../winscript/reference/ienumdebugpropertyinfo-getcount.md)|열거자의 `DebugPropertyInfo` 구조체 수를 가져옵니다.|  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: dbgprop.h  
+ 헤더: dbgprop  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [DebugPropertyInfo 구조체](../../winscript/reference/debugpropertyinfo-structure.md)

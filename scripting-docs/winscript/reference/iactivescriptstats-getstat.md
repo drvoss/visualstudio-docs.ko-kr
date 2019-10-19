@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStats::GetStat | Microsoft Docs
+title: 'IActiveScriptStats:: GetStat | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8befb3da4e4b6f060a5f58aedec3604afe70aefb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 096f1cf5b9bf8b5533bd5c36d33f014c747ff9aa
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992009"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574344"
 ---
 # <a name="iactivescriptstatsgetstat"></a>IActiveScriptStats::GetStat
 표준 스크립트 통계 중 하나를 반환 합니다.  
@@ -39,28 +39,28 @@ HRESULT GetStat(
   
 #### <a name="parameters"></a>매개 변수  
  `stid`  
- [in] 반환할 통계를 지정 합니다. 값을 지정 해야 합니다.  
+ 진행 반환할 통계를 지정 합니다. 값은 다음과 같아야 합니다.  
   
 |상수|값|설명|  
 |--------------|-----------|-----------------|  
-|SCRIPTSTAT_STATEMENT_COUNT|1|스크립트를 시작 하거나 통계를 다시 설정한 이후에 실행 된 문 수를 반환 합니다.|  
+|SCRIPTSTAT_STATEMENT_COUNT|1|스크립트가 시작 되거나 통계가 다시 설정 된 이후 실행 된 문의 수를 반환 합니다.|  
   
  `pluHi`  
- [out] 통계를 나타내는 64 비트 부호 없는 정수의 상위 32 비트입니다.  
+ 제한이 통계를 나타내는 64 비트 부호 없는 정수의 상위 32 비트입니다.  
   
  `pluLo`  
- [out] 통계를 나타내는 64 비트 부호 없는 정수의 하위 32 비트입니다.  
+ 제한이 통계를 나타내는 64 비트 부호 없는 정수의 하위 32 비트입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 이 메서드는 `HRESULT`를 반환합니다. 가능한 값은 포함 되지만 다음 표에 있는 값에 제한 되지 않습니다.  
+ 메서드는 `HRESULT`를 반환 합니다. 가능한 값은 다음 표에 나와 있는 값을 포함 하지만이에 제한 되지 않습니다.  
   
 |값|설명|  
 |-----------|-----------------|  
 |`S_OK`|메서드가 성공했으며|  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  이 메서드는 표준 스크립트 통계 중 하나를 반환 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [IActiveScriptStats::GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)   
+## <a name="see-also"></a>참조  
+ [IActiveScriptStats:: GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)    
  [IActiveScriptStats 인터페이스](../../winscript/reference/iactivescriptstats-interface.md)

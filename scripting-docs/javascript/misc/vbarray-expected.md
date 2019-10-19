@@ -1,5 +1,5 @@
 ---
-title: VBArray가 필요 | Microsoft 문서
+title: VBArray가 필요 합니다. | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,26 +14,26 @@ ms.assetid: f2998d7d-13a4-4bbe-b872-3ff3316551e4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5d1fabd8da6f825a266614a4a5c7fabd5c307130
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 467a6ec6ca45f2ea0411e0266163ca23a9e3d594
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63005994"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572512"
 ---
 # <a name="vbarray-expected"></a>VBArray가 필요합니다.
-필요한 Visual Basic safeArray에 없는 개체를 제공 했습니다.  
+Visual Basic safeArray가 아닌 개체를 제공 했습니다.  
   
 ```js
 new VBArray(safeArray);  
 ```  
   
- VBArrays는 읽기 전용이므로 직접 만들 수 없습니다. SafeArray 인수를 VBArray 값 및 얻어야 합니다 VBArray 값에 전달 되기 전에 `VBArray` 생성자입니다. 이 작업은 기존 ActiveX 또는 다른 개체에서 값을 검색하는 방식으로만 수행할 수 있습니다.  
+ VBArrays는 읽기 전용이므로 직접 만들 수 없습니다. SafeArray 인수는 VBArray 값 이며 `VBArray` 생성자에 전달 되기 전에 VBArray 값을 가져와야 합니다. 이 작업은 기존 ActiveX 또는 다른 개체에서 값을 검색하는 방식으로만 수행할 수 있습니다.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
-- 만 전달 해야 **VBArray** 개체를 **VBArray** 생성자입니다.  
+- **Vbarray 생성자에** **vbarray** 개체만 전달 하는지 확인 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [VBArray 개체](../../javascript/reference/vbarray-object-javascript.md)   
+## <a name="see-also"></a>참조  
+ [VBArray 개체](../../javascript/reference/vbarray-object-javascript.md)    
  [배열 사용](../../javascript/advanced/using-arrays-javascript.md)

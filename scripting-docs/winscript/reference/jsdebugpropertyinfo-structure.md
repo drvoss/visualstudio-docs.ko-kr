@@ -15,12 +15,12 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8aeb2dcfc116c8c735cda95fc9d7ab9da97cab3b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f6c6470386414158a53794d1a5c580492edc0e15
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968648"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572302"
 ---
 # <a name="jsdebugpropertyinfo-structure"></a>JsDebugPropertyInfo 구조체
 속성에 대한 정보를 나타냅니다.  
@@ -50,5 +50,5 @@ typedef struct tagJsDebugPropertyInfo{   BSTR name;   BSTR type;   BSTR value;  
 ## <a name="requirements"></a>요구 사항  
  **헤더:** jscript9diag.h  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [Windows 스크립트 인터페이스 참조](../../winscript/reference/windows-script-interfaces-reference.md)

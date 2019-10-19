@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebug::OnScriptErrorDebug | Microsoft Docs
+title: 'IActiveScriptSiteDebug:: OnScriptErrorDebug | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 50e8c7baa42d6f2f36dc71b768797dfe2a464bf3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 894767b3dae9db54e8bc438a82b27195308a4342
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992423"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572210"
 ---
 # <a name="iactivescriptsitedebugonscripterrordebug"></a>IActiveScriptSiteDebug::OnScriptErrorDebug
-스마트 호스트를 런타임 오류를 처리 하는 방법을 결정할 수 있습니다.  
+스마트 호스트에서 런타임 오류를 처리 하는 방법을 결정할 수 있습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -39,23 +39,23 @@ HRESULT OnScriptErrorDebug(
   
 #### <a name="parameters"></a>매개 변수  
  `pErrorDebug`  
- [in] 발생 한 런타임 오류  
+ 진행 발생 한 런타임 오류입니다.  
   
  `pfEnterDebugger`  
- [out] 오류 JIT 디버깅을 수행 하도록 디버거를 전달할지 여부를 나타내는 플래그입니다.  
+ 제한이 JIT 디버깅을 수행 하기 위해 디버거에 오류를 전달할지 나타내는 플래그입니다.  
   
  `pfCallOnScriptErrorWhenContinuing`  
- [out] 호출할지 여부를 나타내는 플래그 `IActiveScriptSite::OnScriptError` 디버깅 하지 않고 계속 하려면 사용자가 결정 하는 경우.  
+ 제한이 사용자가 디버깅 하지 않고 계속 하기로 결정 한 경우 `IActiveScriptSite::OnScriptError`를 호출할 것인지 나타내는 플래그입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 이 메서드는 `HRESULT`를 반환합니다. 가능한 값은 포함 되지만 다음 테이블의 값으로 제한 되지 않습니다.  
+ 메서드는 `HRESULT`를 반환 합니다. 가능한 값은 다음 표에 나와 있는 값을 포함 하지만이에 제한 되지 않습니다.  
   
 |값|설명|  
 |-----------|-----------------|  
 |`S_OK`|메서드가 성공했으며|  
   
-## <a name="remarks"></a>설명  
- 스마트 호스트 런타임 오류를 처리 하는 방법을 결정 하려면이 메서드를 사용할 수 있습니다.  
+## <a name="remarks"></a>주의  
+ 스마트 호스트는이 메서드를 사용 하 여 런타임 오류를 처리 하는 방법을 결정할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [IActiveScriptSiteDebug 인터페이스](../../winscript/reference/iactivescriptsitedebug-interface.md)

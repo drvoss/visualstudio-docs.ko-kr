@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptParse32::AddScriptlet | Microsoft Docs
+title: 'IActiveScriptParse32:: AddScriptlet | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -10,15 +10,15 @@ ms.assetid: fcf11eb2-8e71-4cca-afda-a91791c243ff
 caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: b5a680eea5f5695d3a7253b9cf722af6ebf537c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b48d89ce2c49bd971fe298d2b4773aad8b65e8c3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954892"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72561700"
 ---
 # <a name="iactivescriptparse32addscriptlet"></a>IActiveScriptParse32::AddScriptlet
-스크립트에 코드 scriptlet을 추가 합니다. 호스트 문서를 사용 하 여 스크립트의 영구 상태 밀접 호스트는 스크립트를 복원 하는 일을 담당 하는 환경에서이 메서드는 통하지 않고는 `IPersist*` 인터페이스입니다. 기본 예제는 이벤트에 연결 될 HTML 문서에 포함 된 코드의 스크립틀릿을 허용 하는 HTML 스크립팅 언어 (예를 들어 ONCLICK="button1.text='Exit'").  
+스크립트에 scriptlet 코드를 추가 합니다. 이 메서드는 스크립트의 영구 상태가 호스트 문서와 얽혀 호스트에서 `IPersist*` 인터페이스를 사용 하는 대신 스크립트를 복원 해야 하는 환경에서 사용 됩니다. 기본 예제는 HTML 문서에 포함 된 코드의 스크립틀릿를 내장 이벤트 (예를 들어 ONCLICK = "button1 = ' Exit '")에 연결할 수 있는 HTML 스크립팅 언어입니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -40,56 +40,56 @@ HRESULT AddScriptlet(
   
 #### <a name="parameters"></a>매개 변수  
  `pstrDefaultName`  
- [in] Scriptlet과 연결할 기본 이름의 주소입니다. Scriptlet (ONCLICK 위의 예와) 명명 정보가 포함 되지 않는 경우이 이름은 scriptlet을 식별 하려면 사용 됩니다. 이 매개 변수가 `NULL`, 필요한 경우 스크립팅 엔진에서 고유한 이름을 제조 합니다.  
+ 진행 Scriptlet와 연결할 기본 이름의 주소입니다. 위의 ONCLICK 예제에서와 같이 scriptlet에 명명 정보가 포함 되어 있지 않은 경우이 이름은 scriptlet를 식별 하는 데 사용 됩니다. 이 매개 변수를 `NULL` 하는 경우 스크립팅 엔진은 필요한 경우 고유한 이름을 제조 합니다.  
   
  `pstrCode`  
- [in] 추가할 scriptlet 텍스트의 주소입니다. 이 문자열의 해석이 스크립팅 언어에 따라 달라 집니다.  
+ 진행 추가할 scriptlet 텍스트의 주소입니다. 이 문자열의 해석은 스크립팅 언어에 따라 달라 집니다.  
   
  `pstrItemName`  
- [in] 이 스크립틀릿을 사용 하 여 연결 된 항목 이름을 포함 하는 버퍼의 주소입니다. 외에에서이 매개 변수를 `pstrSubItemName`, scriptlet을 이벤트 처리기 개체를 식별 합니다.  
+ 진행 이 scriptlet 연결 된 항목 이름을 포함 하는 버퍼의 주소입니다. 이 매개 변수는 `pstrSubItemName` 외에도 scriptlet가 이벤트 처리기 인 개체를 식별 합니다.  
   
  `pstrSubItemName`  
- [in] 이름을 포함 하는 버퍼의 주소는 `subobject` 의 지정된 된 항목이 있는이 scriptlet 관련이; 명명 된 항목의 형식 정보에서이 이름을 찾을 수 있어야 합니다. Scriptlet 대신 명명 된 항목과 연결 되 면이 매개 변수는 NULL을 `subitem`입니다. 외에에서이 매개 변수를 `pstrItemName`, scriptlet을 이벤트 처리기가 특정 개체를 식별 합니다.  
+ 진행 이 scriptlet 연결 된 명명 된 항목의 `subobject` 이름을 포함 하는 버퍼의 주소입니다. 이 이름은 명명 된 항목의 형식 정보에서 찾을 수 있어야 합니다. Scriptlet이 `subitem` 아닌 명명 된 항목과 연결 되는 경우이 매개 변수는 NULL입니다. 이 매개 변수는 `pstrItemName` 외에도 scriptlet가 이벤트 처리기 인 특정 개체를 식별 합니다.  
   
  `pstrEventName`  
- [in] Scriptlet을 이벤트 처리기가 이벤트의 이름을 포함 하는 버퍼의 주소입니다.  
+ 진행 Scriptlet가 이벤트 처리기 인 이벤트의 이름을 포함 하는 버퍼의 주소입니다.  
   
  `pstrDelimiter`  
- [in] 주소 scriptlet의 끝 구분 기호입니다. 경우는 `pstrCode` 매개 변수는 텍스트 스트림에서 구문 분석, 2 개의 단일 scriptlet의 끝을 검색 하려면 따옴표 (")와 같은 일반적으로 호스트 구분 기호를 사용 합니다. 이 매개 변수는 일부 조건 기본 전처리를 제공 하 여 스크립팅 엔진의 호스트가 사용한 구분 기호를 지정 합니다 (예를 들어 두 개의 작은따옴표를 구분 기호로 사용 하기 위해 사용 하 여 작은따옴표 ['] 대체). 정확 하 게 하는 방법 (및 여부)는 스크립팅 엔진은 정보의 사용 하 여 스크립팅 엔진에 따라 달라 집니다. 호스트 scriptlet의 끝을 표시 하는 구분 기호를 사용 하지 않은 경우이 매개 변수를 NULL로 설정 합니다.  
+ 진행 Scriptlet 끝 구분 기호의 주소입니다. @No__t_0 매개 변수를 텍스트 스트림에서 구문 분석할 때 호스트는 일반적으로 두 개의 작은따옴표 (' ')와 같은 구분 기호를 사용 하 여 scriptlet의 끝을 검색 합니다. 이 매개 변수는 호스트에서 사용 하는 구분 기호를 지정 하 여 스크립팅 엔진에서 일부 조건부 기본 전처리를 제공할 수 있도록 합니다. 예를 들어 작은따옴표 [']를 구분 기호로 사용 하기 위한 두 개의 작은따옴표로 바꿉니다. 스크립팅 엔진에서이 정보를 사용 하는 정확한 방법 (및)은 스크립팅 엔진에 따라 달라 집니다. 호스트에서 구분 기호를 사용 하 여 scriptlet의 끝을 표시 하지 않은 경우이 매개 변수를 NULL로 설정 합니다.  
   
  `dwSourceContextCookie`  
- [in] 디버깅 목적으로 사용 되는 응용 프로그램 정의 값입니다.  
+ 진행 디버깅 목적으로 사용 되는 응용 프로그램 정의 값입니다.  
   
  `ulStartingLineNumber`  
- [in] 시작 됩니다 구문 분석 줄을 지정 하는 0부터 시작 값입니다.  
+ 진행 구문 분석이 시작 되는 줄을 지정 하는 0부터 시작 하는 값입니다.  
   
  `dwFlags`  
- [in] Scriptlet과 연결 하는 플래그입니다. 다음 값의 조합일 수 있습니다.  
+ 진행 Scriptlet와 연결 된 플래그입니다. 은 다음 값을 조합 하 여 사용할 수 있습니다.  
   
 |반환 값|의미|  
 |------------------|-------------|  
-|SCRIPTTEXT_ISVISIBLE|스크립트 텍스트를 표시 함을 나타냅니다 (따라서 이름으로 호출이 가능) 스크립트의 네임 스페이스에서 전역 변수로 합니다.|  
-|SCRIPTTEXT_ISPERSISTENT|스크립팅 엔진이 저장 된 경우이 호출 동안 추가 코드를 저장 해야 있음을 나타냅니다 (호출을 통해 예를 들어 `IPersist*::Save`), 아니면 스크립팅 엔진이 초기화 된 상태로 다시 전환 하 여 다시 설정 됩니다. 이 상태에 대 한 자세한 내용은 스크립트 엔진 상태를 참조 하세요.|  
+|SCRIPTTEXT_ISVISIBLE|스크립트 텍스트를 스크립트의 이름 공간에서 전역 메서드로 표시 하 고, 따라서 이름으로 호출할 수 있음을 나타냅니다.|  
+|SCRIPTTEXT_ISPERSISTENT|이 호출 중에 추가 된 코드는 스크립팅 엔진이 저장 된 경우 (예: `IPersist*::Save`에 대 한 호출을 통해) 또는 스크립팅 엔진이 초기화 된 상태로 전환 되는 방식으로 다시 설정 된 경우 저장 되어야 함을 나타냅니다. 이 상태에 대 한 자세한 내용은 스크립트 엔진 상태를 참조 하세요.|  
   
  `pbstrName` ,  
- [out] Scriptlet을 식별 하는 데 사용 하는 실제 이름입니다. 이 기본 설정 순서에는: scriptlet 텍스트의 이름이 명시적으로 지정에 제공 된 기본 이름을 `pstrDefaultName`, 또는 스크립팅 엔진에서 합성 고유 이름입니다.  
+ 제한이 Scriptlet를 식별 하는 데 사용 되는 실제 이름입니다. 이는 기본적으로 scriptlet 텍스트에 명시적으로 지정 된 이름, `pstrDefaultName`에서 제공 하는 기본 이름 또는 스크립팅 엔진에서 합성 한 고유 이름으로 설정 됩니다.  
   
  `pexcepinfo` ,  
- [out] 예외 정보를 포함 하는 구조체의 주소입니다. DISP_E_EXCEPTION 반환 되 면이 구조체를 채워야 합니다.  
+ 제한이 예외 정보를 포함 하는 구조체의 주소입니다. DISP_E_EXCEPTION이 반환 되는 경우이 구조는 채워야 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 다음 값 중 하나를 반환합니다.  
+ 는 다음 값 중 하나를 반환 합니다.  
   
 |반환 값|의미|  
 |------------------|-------------|  
-|`S_OK`|명령 실행 성공|  
-|`DISP_E_EXCEPTION`|스크립트릿 구문 분석 중에 예외가 발생 했습니다. `pexcepinfo` 매개 변수는 예외에 대 한 정보를 포함 합니다.|  
+|`S_OK`|성공할.|  
+|`DISP_E_EXCEPTION`|Scriptlet을 구문 분석 하는 동안 예외가 발생 했습니다. @No__t_0 매개 변수에는 예외에 대 한 정보가 포함 되어 있습니다.|  
 |`E_INVALIDARG`|인수가 잘못 되었습니다.|  
-|`E_NOTIMPL`|이 메서드가 지원 되지 않습니다. 스크립팅 엔진 스크립틀릿 이벤트 싱크를 추가 하는 것을 지원 하지 않습니다.|  
+|`E_NOTIMPL`|이 메서드는 지원 되지 않습니다. 스크립팅 엔진은 이벤트 싱크 스크립틀릿을 추가 하는 것을 지원 하지 않습니다.|  
 |`E_POINTER`|잘못 된 포인터가 지정 되었습니다.|  
-|`E_UNEXPECTED`|호출이 필요 하지 않습니다 (예를 들어, 스크립팅 엔진에 아직 로드 되지 않았거나 초기화) 하므로 실패 합니다.|  
-|`OLESCRIPT_E_INVALIDNAME`|제공 된 기본 이름을이 스크립팅 언어로 올바르지 않습니다.|  
-|`OLESCRIPT_E_SYNTAX`|Scriptlet에 지정 되지 않은 구문 오류가 발생 했습니다.|  
+|`E_UNEXPECTED`|호출을 수행할 수 없습니다. 예를 들어 스크립팅 엔진이 아직 로드 되거나 초기화 되지 않았기 때문에 실패 했습니다.|  
+|`OLESCRIPT_E_INVALIDNAME`|제공 된 기본 이름은이 스크립트 언어에서 사용할 수 없습니다.|  
+|`OLESCRIPT_E_SYNTAX`|Scriptlet에서 지정 되지 않은 구문 오류가 발생 했습니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [IActiveScriptParse32](../../winscript/reference/iactivescriptparse32.md)

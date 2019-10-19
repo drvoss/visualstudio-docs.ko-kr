@@ -1,5 +1,5 @@
 ---
-title: 'Ienumjsstackframes:: Next 메서드 | Microsoft Docs'
+title: 'IEnumJsStackFrames:: Next 메서드 | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 94e3f478654fadec152aba0690a5474ebbfe02f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c24ef399a7b12a1bffe8313c09be47d6a6a3b6c8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963301"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575527"
 ---
 # <a name="ienumjsstackframesnext-method"></a>IEnumJsStackFrames::Next 메서드
-지정 된 프레임 수를 가져옵니다.  
+지정 된 수의 프레임을 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -37,18 +37,18 @@ HRESULT Next(
   
 #### <a name="parameters"></a>매개 변수  
  `cFrameCount`  
- [in] 가져올 프레임의 수입니다.  
+ 진행 가져올 프레임의 수입니다.  
   
  `pFrames`  
- [out] 프레임을 저장 하는 배열입니다.  
+ 제한이 프레임을 저장할 배열입니다.  
   
  `pcFetched`  
- [out] 반환 된 프레임 수입니다.  
+ 제한이 반환 되는 프레임의 수입니다.  
   
 ## <a name="return-value"></a>반환 값  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더:** jscript9diag.h  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [IEnumJsStackFrames 인터페이스](../../winscript/reference/ienumjsstackframes-interface.md)

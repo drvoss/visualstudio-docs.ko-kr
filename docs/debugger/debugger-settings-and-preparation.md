@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee8794fd94a50f51b7293fee025f2eb1abdf6db5
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: d6603ca7ffc39ecc819fb2e54024776760ccfa60
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349731"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72536058"
 ---
 # <a name="debugger-settings-and-preparation"></a>디버거 설정 및 준비
 이 단원에서는 디버거 관련 속성 설정에 대해 설명하고 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 디버거를 사용하여 프로그램을 디버깅하는 데 필요한 준비 사항에 대해 설명합니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 에서 프로젝트 템플릿을 사용하여 프로그램을 만들면 디버그 구성에서 이 설정이 올바르게 활성화됩니다.
@@ -44,7 +44,7 @@ ms.locfileid: "72349731"
 
  [64 비트 응용 프로그램 디버그](../debugger/debug-64-bit-applications.md) 64 비트 응용 프로그램을 디버그 하는 방법을 설명 합니다.
 
- [방법: 디버깅을 위한 .NET Framework 버전 지정](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md) 레지스트리 키를 설정 하 여 사용할 버전을 디버거에 알리는 방법을 설명 합니다.
+ [방법: 디버깅을 위한 이전 .NET Framework 버전 지정](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md) 레지스트리 키를 설정 하 여 사용할 버전을 디버거에 알리는 방법을 설명 합니다.
 
 ## <a name="see-also"></a>관련 항목:
 - [디버거 보안](../debugger/debugger-security.md)

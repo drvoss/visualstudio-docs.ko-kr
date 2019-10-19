@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty::GetParent | Microsoft Docs
+title: 'IDebugProperty:: GetParent | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2aeac5e23ec38aa79e5ff5057847429ac97dbb23
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5ca05935ea3565cb8e6237c36ed60b412bdcd418
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979138"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562353"
 ---
 # <a name="idebugpropertygetparent"></a>IDebugProperty::GetParent
 속성의 부모 속성을 가져옵니다.  
@@ -37,10 +37,10 @@ HRESULT GetParent (
   
 #### <a name="parameters"></a>매개 변수  
  `ppParent`  
- [out] 반환 된 `IDebugProperty` 속성의 부모를 나타내는 인터페이스입니다.  
+ 제한이 속성의 부모를 나타내는 `IDebugProperty` 인터페이스를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 유효한 반환 `HRESULT`, 일반적으로 `S_OK`.  
+ 유효한 `HRESULT` (일반적으로 `S_OK`)를 반환 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [IDebugProperty 인터페이스](../../winscript/reference/idebugproperty-interface.md)

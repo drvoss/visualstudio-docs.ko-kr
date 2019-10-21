@@ -1,7 +1,7 @@
 ---
 title: 오프라인 설치 만들기
 description: 불안정한 인터넷 연결 또는 낮은 대역폭이 있는 경우 Visual Studio를 오프라인으로 설치하는 방법에 알아봅니다.
-ms.date: 10/07/2019
+ms.date: 10/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 28351407e80c723c0b60640b7e56177c85c2a476
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 2268d71f9119cc36bdb18161a62fbe930a37b2ff
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018838"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381090"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Visual Studio의 오프라인 설치 만들기
 
@@ -79,7 +79,7 @@ Visual Studio를 다운로드한 컴퓨터에 단일 설치로 다운로드할 �
 
 Visual Studio 2017에 대한 부트스트래퍼를 가져오려면 [Visual Studio 이전 버전](https://visualstudio.microsoft.com/vs/older-downloads/) 다운로드 페이지에서 방법에 관한 세부 정보를 참조하세요.
 
-설치 실행 파일&mdash;(또는 더 구체적으로 부트스트래퍼 파일)&mdash;은 다음 중 하나와 일치합니다.
+설치 실행 파일&mdash;(또는 더 구체적으로 부트스트래퍼 파일)&mdash;은 다음 중 하나와 일치하거나 유사합니다.
 
 | 버전 | 파일 이름 |
 |-------------|-----------------------|
@@ -102,6 +102,9 @@ Visual Studio 2017에 대한 부트스트래퍼를 가져오려면 [Visual Studi
 | Visual Studio Build Tools   | [vs_buildtools.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
 
 ::: moniker-end
+
+>[!TIP]
+>이전에 부트스트래퍼 파일을 다운로드했으며 해당 버전을 확인하려는 경우에는 다음을 참조하세요. Windows에서 파일 탐색기를 열고 부트스트래퍼 파일을 마우스 오른쪽 단추로 클릭한 다음, **속성**을 선택하고 **세부 정보** 탭을 선택한 다음, **제품 버전** 번호를 확인합니다. 이 번호가 Visual Studio 릴리스와 일치하는지 확인하려면 [Visual Studio 빌드 번호 및 릴리스 날짜](visual-studio-build-numbers-and-release-dates.md) 페이지를 참조하세요.
 
 ### <a name="step-2---create-a-local-install-cache"></a>2다계 - 로컬 설치 캐시 만들기
 
@@ -160,6 +163,12 @@ Visual Studio 2017에 대한 부트스트래퍼를 가져오려면 [Visual Studi
 > [!TIP]
 > 로컬 설치 캐시에서 실행할 경우 설치 시 이러한 각 파일의 로컬 버전을 사용하게 됩니다. 하지만 설치 중에 캐시에 없는 구성 요소를 선택하면 설치 프로그램은 인터넷에서 해당 구성 요소를 다운로드하려고 시도합니다.
 
+::: moniker range="vs-2019"
+
+> 16.1 이상 버전의 설치 및 업데이트의 경우 오프라인 시스템에서 "다음 매개 변수와 일치하는 제품을 찾을 수 없습니다." 오류가 발생하면 16.3.5 이상에서 --noweb 스위치를 사용합니다.
+
+::: moniker-end
+
 이전에 다운로드한 파일만 설치하려면 레이아웃 캐시를 만드는 데 사용한 것과 동일한 명령줄 옵션을 사용하세요. 예를 들어 다음 명령으로 레이아웃 캐시를 만든 경우
 
 ```cmd
@@ -186,7 +195,7 @@ c:\vslayout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDeskto
 | fr-FR | 프랑스어 |
 | it-IT | 이탈리아어 |
 | ja-JP | 일본어 |
-| ko-KR | 한국어 |
+| en-US | 한국어 |
 | pl-PL | 폴란드어 |
 | pt-BR | 포르투갈어 - 브라질 |
 | ru-RU | 러시아어 |

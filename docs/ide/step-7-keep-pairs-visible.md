@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0216d778278f02f7fc63630f4ff6ce90c755e3c
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 025e388185651e6b2effb0f53345f2e145e101b3
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118659"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289601"
 ---
 # <a name="step-7-keep-pairs-visible"></a>7단계: 쌍 표시
 플레이어가 서로 일치하지 않는 아이콘 쌍을 선택하는 경우 게임이 제대로 실행됩니다. 그러나 일치하는 쌍을 선택할 경우에는 어떻게 되는지 고려해야 합니다. 타이머를 설정(<xref:System.Windows.Forms.Timer.Start> 메서드 사용)하여 아이콘이 사라지게 하는 대신 `firstClicked` 및 `secondClicked` 참조 변수를 사용하여 선택한 두 레이블의 색을 다시 설정하는 것이 아니라 레이블을 더 이상 추적하지 않도록 게임 자체를 다시 설정해야 합니다.
@@ -29,6 +29,9 @@ ms.locfileid: "71118659"
 
      [!code-csharp[VbExpressTutorial4Step7#9](../ide/codesnippet/CSharp/step-7-keep-pairs-visible_1.cs)]
      [!code-vb[VbExpressTutorial4Step7#9](../ide/codesnippet/VisualBasic/step-7-keep-pairs-visible_1.vb)]
+
+       > [!IMPORTANT]
+       > Use the programming language control at the top right of this page to view either the C# code snippet or the Visual Basic code snippet.<br><br>![Programming language control for Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
      방금 추가한 `if` 문의 첫 번째 줄은 플레이어가 선택하는 첫 번째 레이블의 아이콘이 두 번째 레이블의 아이콘과 같은지 여부를 검사합니다. 두 아이콘이 일치하는 경우 중괄호 사이의 세 문(C#의 경우) 또는 `if` 문 내의 세 문(Visual Basic의 경우)이 실행됩니다. 처음 두 문은 `firstClicked` 및 `secondClicked` 참조 변수를 다시 설정하여 레이블을 더 이상 추적하지 않도록 합니다. 타이머의 <xref:System.Windows.Forms.Timer.Tick> 이벤트 처리기에서 이러한 두 문을 인식할 수 있습니다. 세 번째 문은 프로그램에서 메서드의 나머지 문을 실행하지 않고 건너뛰도록 지시하는 `return` 문입니다.
 
@@ -58,7 +61,7 @@ ms.locfileid: "71118659"
 
 2. 프로그램을 저장하고 실행한 뒤 폼에서 아이콘 선택을 시작합니다. 일치하지 않는 쌍을 선택하면 타이머의 Tick 이벤트가 트리거되고 두 아이콘이 모두 사라집니다. 일치하는 쌍을 선택할 경우에는 새 `if` 문이 실행되고 return 문은 메서드가 타이머를 시작하는 코드를 건너뛰게 하므로 다음 그림과 같이 아이콘이 계속 표시됩니다.
 
-     ![이 자습서에서 만드는 게임](../ide/media/express_finishedgame.png)
+     ![이 자습서에서 만드는 게임](../ide/media/express_finishedgame.png)<br/>
 아이콘 쌍이 표시된 **일치 게임**
 
 ## <a name="to-continue-or-review"></a>계속하거나 검토하려면

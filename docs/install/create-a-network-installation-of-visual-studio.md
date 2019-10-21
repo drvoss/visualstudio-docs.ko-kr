@@ -1,7 +1,7 @@
 ---
 title: 네트워크 기반 설치 만들기
 description: 기업 내에서 Visual Studio를 배포하기 위한 네트워크 설치 지점을 만드는 방법을 알아봅니다.
-ms.date: 10/07/2019
+ms.date: 10/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b297e99c3fbaaabed178930dfad1ac13d5ab1cd8
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: da4da0a106d37b081e0a7c57fe905048f3314174
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018883"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381083"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Visual Studio의 네트워크 설치 만들기
 
@@ -39,7 +39,7 @@ ms.locfileid: "72018883"
 
 Visual Studio 2017에 대한 부트스트래퍼를 가져오려면 [Visual Studio 이전 버전](https://visualstudio.microsoft.com/vs/older-downloads/) 다운로드 페이지에서 방법에 관한 세부 정보를 참조하세요.
 
-설치 실행 파일&mdash;(또는 더 구체적으로 부트스트래퍼 파일)&mdash;은 다음 중 하나와 일치합니다.
+설치 실행 파일&mdash;(또는 더 구체적으로 부트스트래퍼 파일)&mdash;은 다음 중 하나와 일치하거나 유사합니다.
 
 | 버전 | 파일 이름 |
 |-------------|-----------------------|
@@ -53,7 +53,7 @@ Visual Studio 2017에 대한 부트스트래퍼를 가져오려면 [Visual Studi
 
 ::: moniker range="vs-2019"
 
-설치 실행 파일(또는 더 구체적으로 부트스트래퍼 파일)은 다음 중 하나와 일치합니다.
+설치 실행 파일&mdash;(또는 더 구체적으로 부트스트래퍼 파일)&mdash;은 다음 중 하나와 일치합니다.
 
 |버전 | 다운로드|
 |-------------|-----------------------|
@@ -64,6 +64,9 @@ Visual Studio 2017에 대한 부트스트래퍼를 가져오려면 [Visual Studi
 이 밖에 지원되는 부트스트래퍼에는 [vs_teamexplorer.exe](https://aka.ms/vs/16/release/vs_teamexplorer.exe), [vs_testagent.exe](https://aka.ms/vs/16/release/vs_testagent.exe), [vs_testcontroller.exe](https://aka.ms/vs/16/release/vs_testcontroller.exe)가 있습니다.
 
 ::: moniker-end
+
+>[!TIP]
+>이전에 부트스트래퍼 파일을 다운로드했으며 해당 버전을 확인하려는 경우에는 다음을 참조하세요. Windows에서 파일 탐색기를 열고 부트스트래퍼 파일을 마우스 오른쪽 단추로 클릭한 다음, **속성**을 선택하고 **세부 정보** 탭을 선택한 다음, **제품 버전** 번호를 확인합니다. 이 번호가 Visual Studio 릴리스와 일치하는지 확인하려면 [Visual Studio 빌드 번호 및 릴리스 날짜](visual-studio-build-numbers-and-release-dates.md) 페이지를 참조하세요.
 
 ## <a name="create-an-offline-installation-folder"></a>오프라인 설치 관리자 폴더 만들기
 
@@ -96,7 +99,7 @@ response.json을 수정하여 설치 프로그램이 실행될 때 사용되는 
 
 ::: moniker range="vs-2017"
 
-예:
+예제:
 
 ```cmd
 xcopy /e c:\VSLayout \\server\products\VS2017
@@ -223,6 +226,13 @@ vs_enterprise.exe --layout c:\VSLayout --all
 > 엔터프라이즈 관리자가 완료된 설치에 대한 추가 작업을 수행하려는 경우(예: [성공적인 설치에 제품 키 적용](automatically-apply-product-keys-when-deploying-visual-studio.md)) 이 방법이 유용하지만, 해당 설치에서 반환 코드를 처리하려면 설치가 완료될 때까지 기다려야 합니다.
 >
 > `--wait`를 사용하지 않으면 설치가 완료되기 전에 `vs_enterprise.exe` 프로세스가 종료되고 설치 작업 상태를 나타내지 않는 부정확한 종료 코드가 반환됩니다.
+>
+
+::: moniker range="vs-2019"
+
+> 오프라인 설치의 경우 "다음 매개 변수와 일치하는 프로젝트를 찾을 수 없습니다."라는 오류 메시지가 표시되면 버전 16.3.5 이상에서 --noweb 스위치를 사용하고 있는지 확인합니다.
+
+::: moniker-end
 
 레이아웃에서 설치하는 경우 설치되는 콘텐츠는 레이아웃에서 가져옵니다. 그러나 레이아웃에 없는 구성 요소를 선택하면 인터넷에서 해당 구성 요소를 가져옵니다.  Visual Studio 설치 프로그램이 레이아웃에 없는 콘텐츠를 다운로드하지 못하도록 하려면 `--noWeb` 옵션을 사용합니다. `--noWeb`을 사용하고 설치하도록 선택한 콘텐츠가 레이아웃에 없으면 설치가 실패합니다.
 

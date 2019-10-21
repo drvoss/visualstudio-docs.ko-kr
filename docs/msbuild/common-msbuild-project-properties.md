@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 586d28c1e04c7f1e85a077b559586098093812bb
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 38da720b63c8f5ba6d2ceb89fe8b414c6700cbcd
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745896"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381356"
 ---
 # <a name="common-msbuild-project-properties"></a>일반적인 MSBuild 프로젝트 속성
 다음 표에서는 Visual Studio 프로젝트 파일에 정의되거나 MSBuild가 제공하는 *.targets* 파일에 포함된 자주 사용하는 속성을 보여 줍니다.
@@ -67,7 +67,7 @@ ms.locfileid: "66745896"
 | ExcludeDeploymentUrl | [GenerateDeploymentManifest 작업](../msbuild/generatedeploymentmanifest-task.md)에서는 프로젝트 파일에 다음 요소가 하나라도 포함된 경우 배포 매니페스트에 deploymentProvider 태그를 추가합니다.<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> 그러나 ExcludeDeploymentUrl을 사용하면 위의 URL이 지정되더라도 deploymentProvider 태그가 배포 매니페스트에 추가되지 않습니다. 이렇게 하려면 프로젝트 파일에 다음 속성을 추가합니다.<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` <br /><br />**참고:**  ExcludeDeploymentUrl은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE에 노출되지 않으며 프로젝트 파일을 수동으로만 편집하여 설정할 수 있습니다. 이 속성을 설정해도 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 내의 게시에는 영향을 주지 않습니다. 즉, deploymentProvider 태그는 PublishUrl로 지정된 URL에 계속 추가됩니다. |
 | FileAlignment | 출력 파일의 섹션에 맞출 위치(바이트)를 지정합니다. 올바른 값은 512, 1024, 2048, 4096, 8192입니다. 이 속성은 `/filealignment` 컴파일러 스위치와 동일합니다. |
 | FrameworkPathOverride | *mscorlib.dll* 및 *microsoft.visualbasic.dll*의 위치를 지정합니다. 이 매개 변수는 *vbc.exe* 컴파일러의 `/sdkpath` 스위치와 동일합니다. |
-| GenerateDocumentation | (Visual Basic만 해당) 빌드 시 문서의 생성 여부를 나타내는 부울 매개 변수입니다. `true`이면 빌드 시 문서 정보를 생성하여 이 정보를 빌드 작업에서 만든 실행 파일이나 라이브러리의 이름과 함께 *.xml* 파일에 배치합니다. |
+| GenerateDocumentation | (C#, Visual Basic) 빌드 시 문서의 생성 여부를 나타내는 부울 매개 변수입니다. `true`이면 빌드 시 문서 정보를 생성하여 이 정보를 빌드 작업에서 만든 실행 파일이나 라이브러리의 이름과 함께 *.xml* 파일에 배치합니다. |
 | GenerateSerializationAssemblies | *SGen.exe*에서 XML 직렬화 어셈블리를 생성할지 여부를 표시하며 on, auto 또는 off로 설정할 수 있습니다. 이 속성은 .NET Framework만을 대상으로 하는 어셈블리에 사용됩니다. .NET 표준 또는 .NET Core 어셈블리에 대한 XML 직렬화 어셈블리를 생성하려면 *Microsoft.XmlSerializer.Generator* NuGet 패키지를 참조하세요. |
 | IntermediateOutputPath | 경로가 지정되지 않은 경우 `BaseIntermediateOutputPath`에서 파생된 것과 같은 전체 중간 출력 경로입니다. 예를 들어 *\obj\debug\\* 입니다. |
 | KeyContainerName | 강력한 이름 키 컨테이너의 이름입니다. |
@@ -78,7 +78,7 @@ ms.locfileid: "66745896"
 | NoStdLib | 표준 라이브러리(*mscorlib.dll*)를 참조하지 않을지 여부를 나타내는 부울 값입니다. 기본값은 `false`입니다. |
 | NoVBRuntimeReference | [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 런타임(*Microsoft.VisualBasic.dll*)이 프로젝트에 참조로 포함되어야 하는지 여부를 나타내는 부울 값입니다. |
 | NoWin32Manifest | 애플리케이션의 실행 파일에 UAC(사용자 계정 컨트롤) 매니페스트 정보를 포함할지 여부를 나타내는 부울 값입니다. [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]를 대상으로 하는 Visual Studio 프로젝트에만 적용됩니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 및 등록이 필요 없는 COM을 사용하여 배포된 프로젝트에서는 이 요소가 무시됩니다. `False`(기본값)는 애플리케이션의 실행 파일에 UAC(사용자 계정 컨트롤) 매니페스트 정보를 포함할지 여부를 지정합니다. `True`는 UAC 매니페스트 정보가 포함되지 않음을 지정합니다.<br /><br /> 이 속성은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]를 대상으로 하는 [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] 프로젝트에만 적용됩니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 및 등록이 필요 없는 COM을 사용하여 배포된 프로젝트에서는 이 속성이 무시됩니다.<br /><br /> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 애플리케이션의 실행 파일에 매니페스트 정보를 포함하지 않으려는 경우에만 NoWin32Manifest를 추가해야 합니다. 이 프로세스를 *가상화*라고 합니다. 가상화를 사용하려면 다음과 같이 `<ApplicationManifest>`와 `<NoWin32Manifest>`를 함께 설정합니다.<br /><br /> -   [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 프로젝트의 경우 `<ApplicationManifest>` 노드를 제거합니다. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 프로젝트에서는 `<ApplicationManifest>` 노드가 있으면 `<NoWin32Manifest>`가 무시됩니다.<br />-   [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 프로젝트의 경우 `<ApplicationManifest>`를 `False`로, `<NoWin32Manifest>`를 `True`로 설정합니다. [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 프로젝트에서는 `<ApplicationManifest>`가 `<NoWin32Manifest>`를 재정의합니다.<br /> 이 속성은 *vbc.exe*의 `/nowin32manifest` 컴파일러 스위치와 동일합니다. |
-| Optimize | `true`로 설정하면 컴파일러 최적화를 사용으로 설정하는 부울 값입니다. 이 속성은 `/optimize` 컴파일러 스위치와 동일합니다. |
+| 최적화 | `true`로 설정하면 컴파일러 최적화를 사용으로 설정하는 부울 값입니다. 이 속성은 `/optimize` 컴파일러 스위치와 동일합니다. |
 | OptionCompare | 문자열 비교 방법을 지정합니다. 유효한 값은 "binary" 또는 "text"입니다. 이 속성은 *vbc.exe*의 `/optioncompare` 컴파일러 스위치와 동일합니다. |
 | OptionExplicit | `true`로 설정하면 소스 코드에서 변수를 명시적으로 선언해야 하는 부울 값입니다. 이 속성은 `/optionexplicit` 컴파일러 스위치와 동일합니다. |
 | OptionInfer | `true`로 설정하면 변수의 형식 유추를 사용으로 설정하는 부울 값입니다. 이 속성은 `/optioninfer` 컴파일러 스위치와 동일합니다. |

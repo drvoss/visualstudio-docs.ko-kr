@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d2540b0c725860ea9a21f32d1d01074cf39380f
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.openlocfilehash: 7dbb14a7ea6b3271c7608f3bbb49dd30aa605b66
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095285"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72380969"
 ---
 # <a name="features-of-the-code-editor"></a>코드 편집기의 기능
 
-Visual Studio 편집기에서는 코드 및 텍스트를 더 쉽게 작성 및 관리할 수 있는 다양한 기능을 제공합니다. 개요를 사용하여 여러 코드 블록을 확장 및 축소할 수 있습니다. IntelliSense, **개체 브라우저**및 호출 계층 구조를 사용하여 코드에 대해 자세히 알아볼 수 있습니다. **이동**, **정의로 이동**, 및 **모든 참조 찾기** 등의 기능을 사용하여 코드를 찾을 수 있습니다. 코드 조각이 있는 코드 블록을 삽입할 수 있고 **사용법에서 생성**과 같은 기능을 사용하여 코드를 생성할 수 있습니다. 이전에 Visual Studio 편집기를 사용한 적이 없을 경우 빠른 개요를 보려면 [코드 편집](https://visualstudio.microsoft.com/vs/features/ide/)을 참조하세요.
+Visual Studio 편집기에서는 코드 및 텍스트를 더 쉽게 작성 및 관리할 수 있는 다양한 기능을 제공합니다. 개요를 사용하여 여러 코드 블록을 확장 및 축소할 수 있습니다. IntelliSense, **개체 브라우저**및 호출 계층 구조를 사용하여 코드에 대해 자세히 알아볼 수 있습니다. **이동**, **정의로 이동**, 및 **모든 참조 찾기** 등의 기능을 사용하여 코드를 찾을 수 있습니다. 코드 조각이 있는 코드 블록을 삽입할 수 있고 **사용법에서 생성**과 같은 기능을 사용하여 코드를 생성할 수 있습니다. 이전에 Visual Studio 편집기를 사용한 적이 없는 경우 [코드 편집기를 사용하는 방법 알아보기](../get-started/tutorial-editor.md)를 참조하세요.
 
 > [!NOTE]
 > 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [원본 편집기(Mac용 Visual Studio)](/visualstudio/mac/source-editor)를 참조하세요.

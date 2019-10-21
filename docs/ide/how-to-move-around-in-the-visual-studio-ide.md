@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5933d89e38d040b088879f10911f2f1fff049aab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8764ccc5a662a40559b6b7ab4f19cdff0e2d555e
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62547693"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381324"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>방법: Visual Studio IDE에서 이동
 
@@ -43,9 +43,9 @@ Visual Studio의 거의 모든 메뉴 명령에는 바로 가기 키가 있습�
 
 ### <a name="to-move-through-open-files-in-order-of-use"></a>사용한 순서대로 열려 있는 파일 간을 이동하려면
 
-- 가장 최근에 액세스한 순서대로 열려 있는 문서를 활성화하려면 **Ctrl**+**-** 을 누릅니다.
+- 가장 최근에 액세스한 순서대로 열려 있는 문서를 활성화하려면 **Ctrl**+ **-** (하이픈)을 누릅니다.
 
-- 역순으로 열려 있는 문서를 활성화하려면 **Ctrl**+**Shift**+**-** 를 누릅니다.
+- 역순으로 열려 있는 문서를 활성화하려면 **Ctrl**+**Shift**+ **-** (하이픈)를 누릅니다.
 
     > [!NOTE]
     > **뒤로 탐색** 및 **앞으로 탐색**은 **보기** 메뉴에서도 찾을 수 있습니다.

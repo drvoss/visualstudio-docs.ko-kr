@@ -155,7 +155,7 @@
         - name: 관리 개체의 사용자 지정 뷰 만들기
           items:
             - name: 관리 개체의 사용자 지정 뷰 만들기
-              href: create-custom-views-of-dot-managed-objects.md
+              href: create-custom-views-of-managed-objects.md
             - name: DebuggerTypeProxy 특성 사용
               href: using-debuggertypeproxy-attribute.md
             - name: DebuggerDisplay 특성 사용
@@ -606,9 +606,9 @@
           href: hlsl-shader-debugger.md
         - name: 명령줄 캡처 도구
           href: command-line-capture-tool.md
-        - name: 예제
+        - name: 예
           items:
-            - name: 예제
+            - name: 예
               href: graphics-diagnostics-examples.md
             - name: 그래픽 정보 캡처
               href: walkthrough-capturing-graphics-information.md

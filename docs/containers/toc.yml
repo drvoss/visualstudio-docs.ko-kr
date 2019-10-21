@@ -28,7 +28,7 @@
           href: deploy-app-service.md
         - name: Docker Hub에 배포
           href: deploy-docker-hub.md
-        - name: 컨테이너 보기 및 진단
+        - name: 컨테이너 및 이미지 보기 및 진단
           href: view-and-diagnose-containers.md
         - name: 컨테이너 도구 구성
           href: container-tools-configure.md

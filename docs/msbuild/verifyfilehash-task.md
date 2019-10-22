@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faf7738019680085020b9650094931d5860bc29b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3acdaabffc35122616cced4113abbc5a43beb9a1
+ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62577364"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481970"
 ---
 # <a name="verifyfilehash-task"></a>VerifyFileHash 작업
 
@@ -34,13 +34,12 @@ ms.locfileid: "62577364"
 
 |매개 변수|설명|
 |---------------|-----------------|
-|`File`|필수 <xref:Microsoft.Build.Framework.ITaskItem> 매개 변수입니다.<br /><br />해시되고 유효성이 검사된 파일입니다.|
+|`File`|필수 `String` 매개 변수입니다.<br /><br />해시되고 유효성이 검사된 파일입니다.|
 |`Hash`|필수 `String` 매개 변수입니다.<br /><br />파일의 예상 해시입니다.|
-|`Items`|<xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br />파일 해시로 설정된 추가 메타데이터가 포함된 `Files` 입력입니다.|
 |`Algorithm`|선택적 `String` 매개 변수입니다.<br /><br />알고리즘입니다. 허용되는 값: `SHA256`, `SHA384`, `SHA512`. 기본값은 `SHA256`입니다.|
 |`HashEncoding`|선택적 `String` 매개 변수입니다.<br /><br />생성된 해시에 사용할 인코딩입니다. 기본값은 `hex`입니다. 허용되는 값은 `hex`, `base64`입니다.|
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 다음 예제에서는 `VerifyFileHash` 작업을 사용하여 자체 체크섬을 확인합니다.
 

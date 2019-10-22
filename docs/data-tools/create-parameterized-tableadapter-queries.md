@@ -13,17 +13,17 @@ helpviewer_keywords:
 - TableAdapters, searching data
 - queries [Visual Studio], TableAdapters
 ms.assetid: 104d1d19-b5a9-4071-b81e-1b3af08e9c7b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 33282f65c004643ec29b4c4d3074261ff437662c
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0926558c4d6e94032e2af2c75189f287da8d4811
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925647"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72642154"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>매개 변수가 있는 TableAdapter 쿼리 만들기
 
@@ -77,7 +77,7 @@ ms.locfileid: "68925647"
 
 ### <a name="query-for-null-values"></a>Null 값 쿼리
 
-현재 값이 없는 레코드를 쿼리하려면 TableAdapter 매개 변수에 null 값을 할당할 수 있습니다. 예를 들어, `ShippedDate` `WHERE` 절에 매개 변수가 있는 다음 쿼리를 살펴보세요.
+현재 값이 없는 레코드를 쿼리하려면 TableAdapter 매개 변수에 null 값을 할당할 수 있습니다. 예를 들어 `WHERE` 절에 `ShippedDate` 매개 변수가 있는 다음 쿼리를 살펴보세요.
 
 ```sql
 SELECT CustomerID, OrderDate, ShippedDate
@@ -96,8 +96,8 @@ TableAdapter에 대 한 쿼리 인 경우 다음 코드와 함께 제공 되지 
 
 2. **속성** 창에서 **매개 변수**를 선택 하 고 줄임표 ( **...** ) 단추를 클릭 하 여 **매개 변수 컬렉션 편집기**를 엽니다.
 
-3. Null 값을 허용 하는 매개 변수를 선택 하 고 **Allowdbnull** 속성을로 `true`설정 합니다.
+3. Null 값을 허용 하는 매개 변수를 선택 하 고 **Allowdbnull** 속성을 `true`로 설정 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-- [TableAdapter를 사용하여 데이터 집합 채우기](../data-tools/fill-datasets-by-using-tableadapters.md)
+- [TableAdapter를 사용하여 데이터 세트 채우기](../data-tools/fill-datasets-by-using-tableadapters.md)

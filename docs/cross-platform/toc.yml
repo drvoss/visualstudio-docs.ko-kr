@@ -3,8 +3,6 @@
 - name: Visual Studio Tools for Xamarin
   displayName: .NET Mobile Developer Tools (Android & iOS)
   href: /xamarin/
-- name: Apache Cordova용 Visual Studio Tools
-  href: /visualstudio/cross-platform/tools-for-cordova/
 - name: Visual Studio Tools for Unity
   items:
     - name: Visual Studio Tools for Unity
@@ -33,29 +31,29 @@
       href: change-log-visual-studio-tools-for-unity-mac.md
     - name: Unity 앱을 사용한 DevOps
       href: application-lifecycle-management-alm-with-unity-apps.md
-- name: 플랫폼 간 모바일 개발용 Visual C++
+- name: C++를 사용하여 플랫폼 간 모바일 개발
   items:
-    - name: 플랫폼 간 모바일 개발용 Visual C++
+    - name: C++를 사용하여 플랫폼 간 모바일 개발
       href: visual-cpp-for-cross-platform-mobile-development.md
-    - name: 플랫폼 간 모바일 개발용 Visual C++ 설치
+    - name: C++를 사용하여 플랫폼 간 모바일 개발 설치
       items:
-        - name: 플랫폼 간 모바일 개발용 Visual C++ 설치
+        - name: C++를 사용하여 플랫폼 간 모바일 개발 설치
           href: install-visual-cpp-for-cross-platform-mobile-development.md
-        - name: Install and Configure Tools to Build using iOS
+        - name: iOS를 사용하여 빌드할 도구 설치 및 구성
           href: install-and-configure-tools-to-build-using-ios.md
-    - name: Android Native Activity 앱 만들기
+    - name: Android 기본 작업 앱 만들기
       href: create-an-android-native-activity-app.md
     - name: Android 및 iOS에서 OpenGL ES 애플리케이션 빌드
       href: build-an-opengl-es-application-on-android-and-ios.md
-    - name: XCode 프로젝트 가져오기
+    - name: Xcode 프로젝트 가져오기
       href: import-an-xcode-project.md
-    - name: XCode와 Visual Studio 간에 변경 내용 동기화
+    - name: Xcode와 Visual Studio 간에 변경 내용 동기화
       href: sync-changes-between-xcode-and-visual-studio.md
     - name: 플랫폼 간 모바일 개발 예제
       href: cross-platform-mobile-development-examples.md
-    - name: C++ 크로스 플랫폼 프로젝트 속성
+    - name: C++ 플랫폼 간 속성 페이지 참조
       items:
-        - name: C++ 크로스 플랫폼 프로젝트 속성
+        - name: C++ 플랫폼 간 속성 페이지 참조
           href: cross-platform-prop-pages.md
         - name: 일반 프로젝트 속성(Android C++)
           href: general-android-prop-page.md

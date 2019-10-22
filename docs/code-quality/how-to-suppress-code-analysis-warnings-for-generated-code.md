@@ -3,19 +3,19 @@ title: 생성 된 코드에 대 한 코드 분석 위반 표시 안 함
 ms.date: 05/13/2019
 ms.topic: conceptual
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ee4e3df94e46b4d3cc996a23fc1e40401195e21
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 39daa50254f2d1b69514d4065e582154e9ceb6b5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551128"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649400"
 ---
-# <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>방법: 생성된 코드에 대한 코드 분석 경고 표시 안 함
+# <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>방법: 생성 된 코드에 대 한 코드 분석 경고 표시 안 함
 
 생성 된 코드에는 관리 코드 컴파일러 또는 타사 도구를 통해 프로젝트에 추가 되는 코드가 포함 됩니다. 코드 분석이 생성 된 코드에서 검색 하는 규칙 위반을 확인 하는 것이 좋습니다. 그러나 위반을 포함 하는 코드를 보고 유지 관리할 수 없으므로 해당 코드를 표시 하지 않으려고 할 수 있습니다.
 

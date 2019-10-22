@@ -17,29 +17,29 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2440daf99d9dbb69713d1895ffbfaa18965480a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8ceae13f2a785a0920598fa79b237a9c8ae1da1c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963481"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72568933"
 ---
 # <a name="ienumdebugextendedpropertyinfo-interface"></a>IEnumDebugExtendedPropertyInfo 인터페이스
-열거 `ExtendedDebugPropertyInfo` 구조입니다.  
+@No__t_0 구조체를 열거 합니다.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
- 다음 표에서의 메서드를 보여 줍니다. `IEnumDebugExtendedPropertyInfo`합니다.  
+ 다음 표에서는 `IEnumDebugExtendedPropertyInfo`의 메서드를 보여 줍니다.  
   
 |메서드|설명|  
 |------------|-----------------|  
-|[IEnumDebugExtendedPropertyInfo::Clone](../../winscript/reference/ienumdebugextendedpropertyinfo-clone.md)|현재 열거자와 열거 상태가 같은 포함 하는 열거자를 만듭니다.|  
-|[IEnumDebugExtendedPropertyInfo::GetCount](../../winscript/reference/ienumdebugextendedpropertyinfo-getcount.md)|개수를 가져옵니다 `ExtendedDebugPropertyInfo` 열거자 구조입니다.|  
-|[IEnumDebugExtendedPropertyInfo::Next](../../winscript/reference/ienumdebugextendedpropertyinfo-next.md)|지정된 된 수의 검색 `ExtendedDebugPropertyInfo` 열거형 시퀀스에는 구조입니다.|  
-|[IEnumDebugExtendedPropertyInfo::Skip](../../winscript/reference/ienumdebugextendedpropertyinfo-skip.md)|지정 된 개수의 건너뜁니다 `ExtendedDebugPropertyInfo` 열거형 시퀀스에는 구조입니다.|  
+|[IEnumDebugExtendedPropertyInfo::Clone](../../winscript/reference/ienumdebugextendedpropertyinfo-clone.md)|현재 열거자와 동일한 열거 상태를 포함 하는 열거자를 만듭니다.|  
+|[IEnumDebugExtendedPropertyInfo::GetCount](../../winscript/reference/ienumdebugextendedpropertyinfo-getcount.md)|열거자의 `ExtendedDebugPropertyInfo` 구조체 수를 가져옵니다.|  
+|[IEnumDebugExtendedPropertyInfo::Next](../../winscript/reference/ienumdebugextendedpropertyinfo-next.md)|열거형 시퀀스에서 지정 된 수의 `ExtendedDebugPropertyInfo` 구조체를 검색 합니다.|  
+|[IEnumDebugExtendedPropertyInfo::Skip](../../winscript/reference/ienumdebugextendedpropertyinfo-skip.md)|열거형 시퀀스에서 지정 된 수의 `ExtendedDebugPropertyInfo` 구조체를 건너뜁니다.|  
 |[IEnumDebugExtendedPropertyInfo::Reset](../../winscript/reference/ienumdebugextendedpropertyinfo-reset.md)|열거형 시퀀스를 시작 부분으로 다시 설정합니다.|  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: dbgprop.h  
+ 헤더: dbgprop  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [ExtendedDebugPropertyInfo 구조체](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

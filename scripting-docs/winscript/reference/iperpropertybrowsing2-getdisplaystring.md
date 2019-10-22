@@ -1,5 +1,5 @@
 ---
-title: IPerPropertyBrowsing2::GetDisplayString | Microsoft 문서
+title: 'IPerPropertyBrowsing2:: GetDisplayString | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f6f63db8d9c032b8e880f05d4d21e50fd56c74e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bc702ad15d1aba04bf991c04b585728afde4fb41
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944867"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571459"
 ---
 # <a name="iperpropertybrowsing2getdisplaystring"></a>IPerPropertyBrowsing2::GetDisplayString
-가져오기 본질적으로 볼 수 없는 형식을 반환 되는 텍스트를 표시 하는 문자열 속성을 설명 하는 이름 및 호출자의 사용자 인터페이스에 표시할 수 있습니다.  
+기본적으로 볼 수 없는 형식을 표시 하는 문자열을 가져옵니다. 반환 된 텍스트는 속성을 설명 하는 이름이 며 호출자의 사용자 인터페이스에 표시 될 수 있습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -38,16 +38,16 @@ HRESULT GetDisplayString(
   
 #### <a name="parameters"></a>매개 변수  
  `dispid`  
- [in] 표시 이름이 요청 된 속성의 식별자를 디스패치하십시오.  
+ 진행 표시 이름이 요청 된 속성의 디스패치 식별자입니다.  
   
  `pBstr`  
- [out] 에 대 한 포인터를 `BSTR` 으로 식별 된 속성에 대 한 표시 이름이 포함 된 `dispID`합니다.  
+ 제한이 @No__t_1에 의해 식별 되는 속성의 표시 이름을 포함 하는 `BSTR`에 대 한 포인터입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 유효한 반환 `HRESULT`, 일반적으로 `S_OK`.  
+ 유효한 `HRESULT` (일반적으로 `S_OK`)를 반환 합니다.  
   
-## <a name="remarks"></a>설명  
- 반환된 된 문자열 속성의 올바른 값이 아닙니다. 속성의 문자열 표시는 것입니다.  
+## <a name="remarks"></a>주의  
+ 반환 된 문자열이 속성의 올바른 값이 아닙니다. 단지 속성의 문자열 표시입니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [IPerPropertyBrowsing2 인터페이스 1](../../winscript/reference/iperpropertybrowsing2-interface-1.md)

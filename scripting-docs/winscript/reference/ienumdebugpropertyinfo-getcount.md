@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPropertyInfo::GetCount | Microsoft Docs
+title: 'IEnumDebugPropertyInfo:: GetCount | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06ed69926b47d8c40c3914acbd2b0208e55f709a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fea4872761dbc67a297400dba77f660ae2e3076b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963444"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574215"
 ---
 # <a name="ienumdebugpropertyinfogetcount"></a>IEnumDebugPropertyInfo::GetCount
-개수를 가져옵니다 `DebugPropertyInfo` 열거자 구조입니다.  
+열거자의 `DebugPropertyInfo` 구조체 수를 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -37,11 +37,11 @@ HRESULT GetCount (
   
 #### <a name="parameters"></a>매개 변수  
  `pcelt`  
- [out] 개수를 반환 `DebugPropertyInfo` 열거자 구조입니다.  
+ 제한이 열거자에 `DebugPropertyInfo` 구조체의 수를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 유효한 반환 `HRESULT`, 일반적으로 `S_OK`.  
+ 유효한 `HRESULT` (일반적으로 `S_OK`)를 반환 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [IEnumDebugPropertyInfo 인터페이스](../../winscript/reference/ienumdebugpropertyinfo-interface.md)   
+## <a name="see-also"></a>참조  
+ [IEnumDebugPropertyInfo 인터페이스](../../winscript/reference/ienumdebugpropertyinfo-interface.md)    
  [DebugPropertyInfo 구조체](../../winscript/reference/debugpropertyinfo-structure.md)

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - text templates, output directive
 - text templates, directives
 - text templates, template directive
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58c949eaeaf8e780fa6a85d61dea272d21fb8be1
-ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.openlocfilehash: 6fd13f92af80e985a6942d05f66cc64b01138955
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65476548"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606087"
 ---
 # <a name="t4-text-template-directives"></a>T4 텍스트 템플릿 지시문
 
@@ -77,4 +77,4 @@ ms.locfileid: "65476548"
 <#@ CleanupBehavior processor="T4VSHost" CleanupAfterProcessingtemplate="true" #>
 ```
 
-또한 고유한 지시문을 만들 수 있습니다. 자세한 내용은 [사용자 지정 T4 텍스트 템플릿 지시문 프로세서 만들기](../modeling/creating-custom-t4-text-template-directive-processors.md)합니다. Visualization and Modeling SDK를 사용하여 DSL(Domain-Specific Language)을 만드는 경우 지시문 프로세서가 DSL의 일부로 생성됩니다.
+또한 고유한 지시문을 만들 수 있습니다. 자세한 내용은 [사용자 지정 T4 텍스트 템플릿 지시문 프로세서 만들기](../modeling/creating-custom-t4-text-template-directive-processors.md)를 참조 하세요. Visualization and Modeling SDK를 사용하여 DSL(Domain-Specific Language)을 만드는 경우 지시문 프로세서가 DSL의 일부로 생성됩니다.

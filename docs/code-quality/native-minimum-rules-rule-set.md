@@ -3,17 +3,17 @@ title: 네이티브 최소 규칙 규칙 집합
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 2d898bc4-fba5-472e-8f09-b0c6b511c5a3
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77a0878ff3e359a4cca5c52a2ea8118273bbf2a2
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: bc7888a49f5bc7896f5f3cd568b1062e9b9a0379
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585253"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649179"
 ---
 # <a name="native-minimum-rules-rule-set"></a>네이티브 최소 규칙 규칙 집합
 
@@ -21,7 +21,7 @@ Microsoft 네이티브 최소 규칙은 잠재적 보안 허점 및 응용 프�
 
 네이티브 프로젝트에 대해 만드는 모든 사용자 지정 규칙 집합에이 규칙 집합을 포함 합니다.
 
-|규칙|Description|
+|규칙|설명|
 |----------|-----------------|
 |[C6001](../code-quality/c6001.md)|초기화되지 않은 메모리 사용|
 |[C6011](../code-quality/c6011.md)|Null 포인터 역참조|
@@ -71,7 +71,7 @@ Microsoft 네이티브 최소 규칙은 잠재적 보안 허점 및 응용 프�
 |[C6518](../code-quality/c6518.md)|쓰기 불가능 버퍼에 대한 쓰기 가능 크기|
 |[C6522](../code-quality/c6522.md)|잘못된 크기 문자열 유형|
 |[C6525](../code-quality/c6525.md)|잘못된 크기 문자열 접근할 수 없는 위치|
-|[C6527](../code-quality/c6527.md)|주석이 잘못 되었습니다. ' NeedsRelease ' 속성은 void 형식의 값에 사용할 수 없습니다.|
+|[C6527](../code-quality/c6527.md)|주석이 잘못되었습니다. 'NeedsRelease' 속성은 void 형식 값에 사용할 수 없습니다.|
 |[C6530](../code-quality/c6530.md)|인식할 수 없는 형식 문자열 스타일|
 |[C6540](../code-quality/c6540.md)|이 함수에 특성 주석을 사용하면 기존의 모든 __declspec 주석이 무효화됩니다.|
 |[C6551](../code-quality/c6551.md)|크기 사양이 잘못되었습니다. 식을 구문 분석할 수 없습니다.|
@@ -92,13 +92,13 @@ Microsoft 네이티브 최소 규칙은 잠재적 보안 허점 및 응용 프�
 |[C28182](../code-quality/c28182.md)|NULL 포인터를 역참조하고 있습니다. 포인터에 다른 포인터와 동일한 NULL 값이 포함되어 있습니다.|
 |[C28202](../code-quality/c28202.md)|비정적 멤버에 대한 잘못된 참조입니다.|
 |[C28203](../code-quality/c28203.md)|클래스 멤버에 대한 모호한 참조입니다.|
-|[C28205](../code-quality/c28205.md)|\_잘못\_ 된 컨텍스트에서\_사용\_ 되는 성공 또는 \_실패 시|
+|[C28205](../code-quality/c28205.md)|잘못 된 컨텍스트에서 사용 되는 \_Success \_ 또는 \_On \_failure \_|
 |[C28206](../code-quality/c28206.md)|왼쪽 피연산자가 구조체를 가리킵니다. '->'를 사용하세요.|
 |[C28207](../code-quality/c28207.md)|왼쪽 피연산자가 구조체입니다. '.'를 사용하세요.|
 |[C28210](../code-quality/c28210.md)|__on_failure 컨텍스트에 대한 주석이 명시적 사전 컨텍스트에 없어야 합니다.|
 |[C28211](../code-quality/c28211.md)|SAL_context에 대해 정적 컨텍스트 이름이 필요합니다.|
 |[C28212](../code-quality/c28212.md)|주석에 대한 포인터 식이 있어야 합니다.|
-|[C28213](../code-quality/c28213.md)|이전 선언을 수정\_하지\_ 않고 참조 하려면 decl 주석\_ 사용주석을사용해야합니다.\_|
+|[C28213](../code-quality/c28213.md)|이전 선언을 수정 하지 않고 참조 하려면 \_Use \_decl \_annotations \_ 주석을 사용 해야 합니다.|
 |[C28214](../code-quality/c28214.md)|특성 매개 변수 이름은 p1...p9여야 합니다.|
 |[C28215](../code-quality/c28215.md)|typefix는 이미 typefix가 있는 매개 변수에 적용할 수 없습니다.|
 |[C28216](../code-quality/c28216.md)|checkReturn 주석은 특정 함수 매개 변수에 대한 사전 조건에만 적용됩니다.|
@@ -140,7 +140,7 @@ Microsoft 네이티브 최소 규칙은 잠재적 보안 허점 및 응용 프�
 |[C28267](../code-quality/c28267.md)|함수 주석에서 주석 구문 오류가 발견되었습니다.|
 |[C28272](../code-quality/c28272.md)|함수, 매개 변수에 대한 주석이 검사 시 함수 선언과 일치하지 않습니다.|
 |[C28273](../code-quality/c28273.md)|함수의 경우 단서가 함수 선언과 일치하지 않습니다.|
-|[C28275](../code-quality/c28275.md)|매크로 \_\_값에대한매개변수가null입니다.\_|
+|[C28275](../code-quality/c28275.md)|@No__t_1value \_ \_Macro 매개 변수가 null입니다.|
 |[C28279](../code-quality/c28279.md)|기호의 경우 일치하는 'end'가 없는 'begin'이 있습니다.|
 |[C28280](../code-quality/c28280.md)|기호의 경우 일치하는 'begin'이 없는 'end'가 있습니다.|
 |[C28282](../code-quality/c28282.md)|형식 문자열이 사전 조건에 있어야 합니다.|
@@ -148,7 +148,7 @@ Microsoft 네이티브 최소 규칙은 잠재적 보안 허점 및 응용 프�
 |[C28286](../code-quality/c28286.md)|함수의 경우 끝 부분 근처에 구문 오류가 있습니다.|
 |[C28287](../code-quality/c28287.md)|함수의 경우 \_At\_() 주석에 구문 오류(인식할 수 없는 매개 변수 이름)|
 |[C28288](../code-quality/c28288.md)|함수의 경우 \_At\_() 주석에 구문 오류(잘못된 매개 변수 이름)|
-|[C28289](../code-quality/c28289.md)|For 함수: ReadableTo 또는 WritableTo에 매개 변수로 제한 사양이 없습니다.|
+|[C28289](../code-quality/c28289.md)|함수의 경우 ReadableTo 또는 WritableTo에 limit-spec가 매개 변수로 포함되지 않았습니다.|
 |[C28290](../code-quality/c28290.md)|함수의 주석에 실제 매개 변수 개수보다 많은 외부 참조가 있습니다.|
 |[C28291](../code-quality/c28291.md)|함수의 경우 역참조 수준 0에서 post null/notnull이 의미가 없습니다.|
 |[C28300](../code-quality/c28300.md)|연산자에 호환되지 않는 형식의 식 피연산자입니다.|

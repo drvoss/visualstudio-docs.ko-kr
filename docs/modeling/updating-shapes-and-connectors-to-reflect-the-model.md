@@ -2,49 +2,49 @@
 title: 모양 및 연결선을 업데이트하여 모델 반영
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b4c0c88e9e096836e32ce427ff78cc94f5d1f72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84c26295461fa062faf88872dbc043048c26479a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906991"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663788"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>모양 및 연결선을 업데이트하여 모델 반영
 
-Visual Studio에서 도메인 특정 언어에서 기본 모델의 상태를 반영 하는 도형의 모양을 만들 수 있습니다.
+Visual Studio의 도메인별 언어에서 기본 모델의 상태를 반영 하는 모양의 모양을 만들 수 있습니다.
 
-이 항목의 코드 예제에 추가 해야는 `.cs` 파일에 `Dsl` 프로젝트입니다. 각 파일에 이러한 문이 필요합니다.
+이 항목의 코드 예제는 `Dsl` 프로젝트의 `.cs` 파일에 추가 해야 합니다. 각 파일에는 다음 지시문이 필요 합니다.
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Diagrams;
 ```
 
-## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>도형 맵에 데코레이터의 가시성을 제어 하는 속성 설정
+## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>데코레이터 표시 여부를 제어 하는 도형 맵 속성 설정
 
-DSL 정의에서 모양과 도메인 클래스 간의 매핑을 구성 하 여 프로그램 코드를 작성 하지 않고도 데코레이터의 가시성을 제어할 수 있습니다. 자세한 내용은 [도메인별 언어 정의 방법](../modeling/how-to-define-a-domain-specific-language.md)합니다.
+DSL 정의에서 모양과 도메인 클래스 간의 매핑을 구성 하 여 프로그램 코드를 작성 하지 않고도 데코레이터의 표시 여부를 제어할 수 있습니다. 자세한 내용은 [도메인별 언어를 정의 하는 방법](../modeling/how-to-define-a-domain-specific-language.md)을 참조 하세요.
 
-## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>색 및 스타일 셰이프를 속성으로 노출
+## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>모양의 색 및 스타일을 속성으로 노출
 
-DSL 정의에서 모양 클래스를 마우스 오른쪽 **Add Exposed**, 다음 항목 중 하나를 같은 클릭 **채우기 색**합니다.
+DSL 정의에서 shape 클래스를 마우스 오른쪽 단추로 클릭 하 고 **노출 추가**를 가리킨 다음 **채우기 색**과 같은 항목 중 하나를 클릭 합니다.
 
-셰이프는 이제 프로그램 코드 또는 사용자로 설정할 수 있는 도메인 속성이 있습니다. 예를 들어, 명령 또는 규칙의 프로그램 코드에서 설정, 작성할 수 있습니다.
+이제 셰이프에는 프로그램 코드 또는 사용자로 설정할 수 있는 도메인 속성이 있습니다. 예를 들어 명령 또는 규칙의 프로그램 코드에서이를 설정 하려면 다음을 작성 합니다.
 
 `shape.FillColor = System.Drawing.Color.Red;`
 
-프로그램 제어만 하 고 사용자가 아니라 속성 변수를 확인 하려는 경우 새 도메인 속성을 같은 선택 **채우기 색** DSL 정의 다이어그램에서. 그런 다음 속성 창에서 설정 **Is Browsable** 를 `false` 설정할지 **UI는 Readonly** 에 `true`.
+사용자가 아니라 프로그램 제어 에서만 속성 변수를 만들려는 경우 DSL 정의 다이어그램에서 **채우기 색** 과 같은 새 도메인 속성을 선택 합니다. 그런 다음 속성 창에서 `false`를 검색 가능으로 설정 하거나 **UI Readonly** 를 `true` **로 설정 합니다** .
 
-## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>색, 스타일 또는 모델 요소의 속성에 따라 위치를 확인 하는 변경 규칙 정의
- 모델의 다른 부분에 따라 달라 집니다 셰이프 모양을 업데이트 하는 규칙을 정의할 수 있습니다. 예를 들어, 모델 요소의 속성에 따라 달라 집니다 모양의 색을 업데이트 하는 모델 요소에 대해 변경 규칙을 정의할 수 있습니다. 변경 규칙에 대 한 자세한 내용은 참조 하세요. [규칙이 전파 변경 내용을 내에서 모델](../modeling/rules-propagate-changes-within-the-model.md)합니다.
+## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>색, 스타일 또는 위치가 모델 요소 속성에 따라 달라 지도록 변경 규칙 정의
+ 셰이프가 모델의 다른 부분에 종속 되는 모양을 업데이트 하는 규칙을 정의할 수 있습니다. 예를 들어 모델 요소의 속성에 따라 셰이프의 색을 업데이트 하는 모델 요소에 대 한 변경 규칙을 정의할 수 있습니다. 변경 규칙에 대 한 자세한 내용은 [규칙 변경 내용을 모델 내에서 전파](../modeling/rules-propagate-changes-within-the-model.md)를 참조 하세요.
 
- 규칙 실행 취소 명령을 수행 될 때 호출 되지 때문에 저장소에서 유지 관리 되는 속성을 업데이트에 규칙을 사용 해야 합니다. 여기에 크기와 셰이프의 표시 여부와 같은 일부 그래픽 기능은 포함 되지 않습니다. 도형의 이러한 기능을 업데이트 하려면 참조 [업데이트 되지 않은 저장소 그래픽 기능](#OnAssociatedProperty)합니다.
+ 실행 취소 명령이 수행 될 때 규칙이 호출 되지 않으므로 저장소 내에서 유지 관리 되는 속성을 업데이트 하는 데만 규칙을 사용 해야 합니다. 여기에는 도형의 크기 및 표시 유형과 같은 일부 그래픽 기능이 포함 되지 않습니다. 셰이프의 이러한 기능을 업데이트 하려면 [비-스토어 그래픽 기능 업데이트](#OnAssociatedProperty)를 참조 하세요.
 
- 다음 예제에서는 노출 했다고 가정 `FillColor` 이전 섹션에 설명 된 대로 도메인 속성으로.
+ 다음 예제에서는 이전 섹션에서 설명한 대로 `FillColor` 도메인 속성으로 노출 되었다고 가정 합니다.
 
 ```csharp
 [RuleOn(typeof(ExampleElement))]
@@ -82,9 +82,9 @@ DSL 정의에서 모양 클래스를 마우스 오른쪽 **Add Exposed**, 다음
   }
 ```
 
-## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>OnChildConfigured 모양 속성을 초기화 하는 데
+## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>OnChildConfigured 된 셰이프 속성을 사용 하 여 초기화
 
-첫 번째 경우 셰이프 속성을 설정 하려면 만들어지면 재정의 `OnChildConfigured()` 다이어그램 클래스의 부분 정의에서. 다이어그램 클래스는 DSL 정의에서 지정 되 고 생성 된 코드는 **Dsl\Generated Code\Diagram.cs**합니다. 예를 들어:
+셰이프를 처음 만들 때 셰이프 속성을 설정 하려면 다이어그램 클래스의 부분 정의에 재정의 `OnChildConfigured()` 합니다. 다이어그램 클래스는 DSL 정의에 지정 되 고 생성 된 코드는 **Dsl\generated Code\Diagram.cs**에 있습니다. 예를 들면,
 
 ```csharp
 partial class MyLanguageDiagram
@@ -106,13 +106,13 @@ partial class MyLanguageDiagram
 }
 ```
 
-이 메서드는 모두 도메인 속성 및 도형의 크기와 같은 비 저장소 기능을 사용할 수 있습니다.
+이 메서드는 도메인 속성 및 저장 하지 않는 기능 (예: 모양의 크기)에 모두 사용할 수 있습니다.
 
-## <a name="OnAssociatedProperty"></a> AssociateValueWith() 모양의 다른 기능을 업데이트 하는 데
+## <a name="OnAssociatedProperty"></a>AssociateValueWith ()를 사용 하 여 모양의 다른 기능 업데이트
 
-그림자를 또는 연결선의 화살표 스타일에 있는지 여부와 같은 모양의 일부 기능에 대 한 도메인 속성으로 기능을 노출 기본 설정 방법이 있습니다.  이러한 기능에 변경이 트랜잭션 시스템에 의해 제어 됩니다. 따라서 하기에 적합 하지 업데이트 규칙 실행 취소 명령을 수행할 때 호출 되지 때문에 규칙을 사용 하 여 합니다.
+연결선의 그림자가 있는지 여부 등 셰이프의 일부 기능에는 기능을 도메인 속성으로 노출 하는 기본 제공 방법이 없습니다.  이러한 기능에 대 한 변경 내용은 트랜잭션 시스템의 제어를 받지 않습니다. 따라서 사용자가 실행 취소 명령을 수행할 때 규칙이 호출 되지 않기 때문에 규칙을 사용 하 여 업데이트 하는 것은 적절 하지 않습니다.
 
-대신 사용 하 여 이러한 기능을 업데이트할 수 있습니다 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>합니다. 다음 예제에서는 화살표 스타일을 커넥터는 커넥터를 표시 하는 관계의 도메인 속성의 값으로 제어 됩니다.
+대신 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>를 사용 하 여 이러한 기능을 업데이트할 수 있습니다. 다음 예제에서 커넥터의 화살표 스타일은 커넥터에 표시 되는 관계의 도메인 속성 값에 의해 제어 됩니다.
 
 ```csharp
 public partial class ArrowConnector // My connector class.
@@ -153,6 +153,6 @@ public partial class ArrowConnector // My connector class.
 }
 ```
 
-`AssociateValueWith()` 등록 하려는 각 도메인 속성에 한 번씩을 호출 되어야 합니다. 지정된 된 속성에 변경 내용을 호출 호출 된 후 `OnAssociatedPropertyChanged()` 속성의 모델 요소를 제공 하는 모든 셰이프에 있습니다.
+등록할 각 도메인 속성에 대해 `AssociateValueWith()`를 한 번 호출 해야 합니다. 호출 된 후에는 지정 된 속성에 대 한 모든 변경 내용이 속성의 모델 요소를 표시 하는 모든 셰이프에서 `OnAssociatedPropertyChanged()`를 호출 합니다.
 
-호출 하는 데 필요한 아닙니다 `AssociateValueWith()` 각 인스턴스에 대 한 합니다. InitializeResources 인스턴스 메서드인 경우에 각 모양 클래스에 대 한 번만 호출 됩니다.
+각 인스턴스에 대 한 `AssociateValueWith()`를 호출할 필요는 없습니다. InitializeResources는 인스턴스 메서드 이지만 각 shape 클래스에 대해 한 번만 호출 됩니다.

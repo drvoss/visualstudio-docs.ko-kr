@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d35d807cbe849e4b5385f7bf63e15760b0e4b3a5
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 460eb832b94a1826d2d8f990b76a2afe90f992c8
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118825"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314094"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>2단계: 난수 더하기 문제 만들기
 
@@ -42,8 +42,7 @@ ms.locfileid: "71118825"
      [!code-csharp[VbExpressTutorial3Step2#1](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_1.cs)]
      [!code-vb[VbExpressTutorial3Step2#1](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_1.vb)]
 
-   > [!IMPORTANT]
-   > 이 페이지의 오른쪽 위에 있는 프로그래밍 언어 컨트롤을 사용하여 C# 코드 조각 또는 Visual Basic 코드 조각을 볼 수 있습니다.<br><br>![Docs.Microsoft.com에 대한 프로그래밍 언어 컨트롤](../ide/media/docs-programming-language-control.png)
+     [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
      Random 개체가 폼에 추가되고 이름이 **randomizer**로 지정되었습니다.
 

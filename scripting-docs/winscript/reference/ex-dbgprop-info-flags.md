@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 086a2b7544a95a302219ddc62c15c5b31dd1d9b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0094d49a7e528d312dc8206b02599651f192c6fb
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955238"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575848"
 ---
-# <a name="exdbgpropinfoflags"></a>EX_DBGPROP_INFO_FLAGS
-지정 하는 데 `ExtendedDebugPropertyInfo` 필드입니다.  
+# <a name="ex_dbgprop_info_flags"></a>EX_DBGPROP_INFO_FLAGS
+@No__t_0 필드를 지정 하는 데 사용 됩니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,20 +41,20 @@ enum {
   
 ## <a name="members"></a>멤버  
  EX_DBGPROP_INFO_ID  
- 속성에 대 한 식별자를 초기화합니다.  
+ 속성에 대 한 식별자를 초기화 합니다.  
   
  EX_DBGPROP_INFO_NTYPE  
- 초기화 속성의 형식입니다.  
+ 속성의 형식을 초기화 합니다.  
   
  EX_DBGPROP_INFO_NVALUE  
- 속성의 값을 초기화합니다.  
+ 속성의 값을 초기화 합니다.  
   
  EX_DBGPROP_INFO_LOCKBYTES  
- 초기화는 `plb` 필드입니다.  
+ @No__t_0 필드를 초기화 합니다.  
   
  EX_DBGPROP_INFO_DEBUGEXTPROP  
- 초기화 된 `pDebugExtProp` 포함 된 필드는 `IDebugExtendedProperty` 인터페이스입니다.  
+ @No__t_1 인터페이스를 포함 하는 `pDebugExtProp` 필드를 초기화 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [ExtendedDebugPropertyInfo 구조체](../../winscript/reference/extendeddebugpropertyinfo-structure.md)   
+## <a name="see-also"></a>참조  
+ [ExtendedDebugPropertyInfo 구조체](../../winscript/reference/extendeddebugpropertyinfo-structure.md)    
  [IDebugExtendedProperty 인터페이스](../../winscript/reference/idebugextendedproperty-interface.md)

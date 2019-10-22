@@ -6,15 +6,15 @@ ms.technology: vs-ide-test
 ms.topic: troubleshooting
 ms.assetid: 61c7e44d-2780-4df5-9bcb-49e40c1152fc
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b2efecdefb693653ff9916e798d1a11afe44e4a5
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 4eee70b3184496e8dbb7d784501a5cac2aac00ee
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416907"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672111"
 ---
 # <a name="troubleshooting-code-analysis-issues"></a>코드 분석 문제 해결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "68416907"
 
 3. 규칙 집합을 다시 열고, 변경을 취소한 후 다시 저장합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [애플리케이션 품질 분석](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)
 - [관리 코드 품질 분석](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)

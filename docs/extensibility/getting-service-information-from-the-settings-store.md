@@ -8,32 +8,32 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f65fe81d1b2382df3847c2cfdc0b8ffbfff5662
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 51aa0369793fe5dc4b39fe510c069a7ec93d102a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342434"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647974"
 ---
 # <a name="get-service-information-from-the-settings-store"></a>설정 저장소에서 서비스 정보 가져오기
-사용 가능한 모든 서비스 또는 특정 서비스가 설치 되어 있는지 확인 하려면 설정 저장소를 사용할 수 있습니다. 서비스 클래스의 형식을 알고 있어야 합니다.
+설정 저장소를 사용 하 여 사용 가능한 모든 서비스를 찾거나 특정 서비스가 설치 되어 있는지 여부를 확인할 수 있습니다. 서비스 클래스의 형식을 알아야 합니다.
 
 ## <a name="to-list-the-available-services"></a>사용 가능한 서비스를 나열 하려면
 
-1. 라는 VSIX 프로젝트를 만듭니다 `FindServicesExtension` 라는 사용자 지정 명령을 추가 하 고 `FindServicesCommand`입니다. 사용자 지정 명령을 만드는 방법에 대 한 자세한 내용은 참조 하세요. [메뉴 명령을 사용 하 여 확장 프로그램을 만들려면](../extensibility/creating-an-extension-with-a-menu-command.md)
+1. @No__t_0 이라는 VSIX 프로젝트를 만든 다음 `FindServicesCommand` 이라는 사용자 지정 명령을 추가 합니다. 사용자 지정 명령을 만드는 방법에 대 한 자세한 내용은 [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md) 를 참조 하세요.
 
-2. *FindServicesCommand.cs*, 다음 추가 문을 사용 하 여:
+2. *FindServicesCommand.cs*에서 다음 using 지시문을 추가 합니다.
 
-    ```vb
+    ```csharp
     using System.Collections.Generic;
     using Microsoft.VisualStudio.Settings;
     using Microsoft.VisualStudio.Shell.Settings;
     using System.Windows.Forms;
     ```
 
-3. 구성 설정 저장소를 가져올 명명 된 서비스 하위를 찾은 다음입니다. 이 컬렉션에는 사용 가능한 모든 서비스가 포함 됩니다. 에 `MenuItemCommand` 메서드에서 기존 코드를 제거 하 고 다음으로 바꿉니다.
+3. 구성 설정 저장소를 가져온 다음 하위 컬렉션 라는 서비스를 찾습니다. 이 컬렉션은 사용 가능한 모든 서비스를 포함 합니다. @No__t_0 메서드에서 기존 코드를 제거 하 고 다음으로 바꿉니다.
 
-    ```
+    ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
     {
         SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);
@@ -50,20 +50,20 @@ ms.locfileid: "66342434"
     }
     ```
 
-4. 프로젝트를 빌드하고 디버깅을 시작합니다. 실험적 인스턴스가 표시 됩니다.
+4. 프로젝트를 빌드하고 디버깅을 시작합니다. 실험적 인스턴스가 나타납니다.
 
-5. 실험적 인스턴스에서는 **도구** 메뉴에서 클릭 **FindServicesCommand 호출**합니다.
+5. 실험적 인스턴스의 **도구** 메뉴에서 **Findsign-on 명령 호출**을 클릭 합니다.
 
-     서비스를 모두 나열 하는 메시지 상자가 표시 됩니다.
+     모든 서비스를 나열 하는 메시지 상자가 표시 됩니다.
 
-     이러한 설정은 확인 하려면 레지스트리 편집기를 사용할 수 있습니다.
+     레지스트리 편집기를 사용 하 여 이러한 설정을 확인할 수 있습니다.
 
 ## <a name="find-a-specific-service"></a>특정 서비스 찾기
- 사용할 수도 있습니다는 <xref:Microsoft.VisualStudio.Settings.SettingsStore.CollectionExists%2A> 특정 서비스가 설치 되어 있는지 확인 하는 방법입니다. 서비스 클래스의 형식을 알고 있어야 합니다.
+ @No__t_0 메서드를 사용 하 여 특정 서비스가 설치 되어 있는지 여부를 확인할 수도 있습니다. 서비스 클래스의 형식을 알아야 합니다.
 
-1. 이전 절차에서 만든 프로젝트의 MenuItemCallback, 검색에 대 한 구성 설정 저장소를 `Services` 서비스의 GUID로 명명 된 하위 컬렉션 포함 된 컬렉션입니다. 이 예에서 도움말 서비스에 대해 살펴보겠습니다.
+1. 이전 절차에서 만든 프로젝트의 MenuItemCallback에서 서비스 GUID로 이름이 하위 컬렉션 인 `Services` 컬렉션에 대 한 구성 설정 저장소를 검색 합니다. 이 경우 도움말 서비스를 확인 합니다.
 
-    ```
+    ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
     {
         SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);
@@ -78,6 +78,6 @@ ms.locfileid: "66342434"
 
 2. 프로젝트를 빌드하고 디버깅을 시작합니다.
 
-3. 실험적 인스턴스에서는 **도구** 메뉴에서 클릭 **FindServicesCommand 호출**합니다.
+3. 실험적 인스턴스의 **도구** 메뉴에서 **Findsign-on 명령 호출**을 클릭 합니다.
 
-     텍스트를 사용 하 여 메시지가 표시 됩니다 **서비스를 사용할 수 하는 데 도움이 되:** 뒤 **True** 하거나 **False**합니다. 이 설정을 확인 하려면 이전 단계에서와 같이 레지스트리 편집기를 사용할 수 있습니다.
+     텍스트 **도움말 서비스를 사용할 수** 있는 메시지가 표시 되 고 그 뒤에 **True** 또는 **False**가 표시 됩니다. 이 설정을 확인 하기 위해 이전 단계에서와 같이 레지스트리 편집기를 사용할 수 있습니다.

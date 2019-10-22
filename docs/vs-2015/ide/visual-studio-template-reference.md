@@ -9,25 +9,25 @@ helpviewer_keywords:
 - reference, Visual Studio templates
 ms.assetid: 5ebdd6c4-5d3e-448c-b47d-f62ec5f44d51
 caps.latest.revision: 10
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0690d37e90f910300f75880387a3f3ec44783206
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a3e522d7c38a7f2d8b3c1614aa66bcf840e16ff
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68154933"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666565"
 ---
 # <a name="visual-studio-template-reference"></a>Visual Studio 템플릿 참조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 다음 링크는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트 및 항목 템플릿의 다양한 측면에 대한 참조 정보를 제공합니다.
 
-## <a name="in-this-section"></a>섹션 내용
- [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md) .vstemplate 파일에 사용 되는 XML 요소에 설명 합니다.
+## <a name="in-this-section"></a>단원 내용
+ [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md) .Vstemplate 파일에서 사용 되는 XML 요소에 대해 설명 합니다.
 
- [템플릿 매개 변수](../ide/template-parameters.md) 프로젝트 및 항목 템플릿을 사용할 수 있는 매개 변수를 설명 합니다.
+ [템플릿 매개 변수](../ide/template-parameters.md) 프로젝트 템플릿과 항목 템플릿에 사용할 수 있는 매개 변수를 설명 합니다.
 
  <xref:Microsoft.VisualStudio.TemplateWizard> <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 인터페이스 및 관련 형식을 설명합니다.
 

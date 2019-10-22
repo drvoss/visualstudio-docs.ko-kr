@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty::GetPropertyInfo | Microsoft 문서
+title: 'IDebugProperty:: GetPropertyInfo | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 51cf7fae597d95b0d9098d6b2dc6950c2d06bfa0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e0698e09cd9643322a237a81d971248577fd97e0
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979151"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562334"
 ---
 # <a name="idebugpropertygetpropertyinfo"></a>IDebugProperty::GetPropertyInfo
-값을 가져옵니다는 `IDebugProperty` 메서드나 인덱싱된 속성을 설명 합니다.  
+메서드나 인덱싱된 속성을 설명 하는 `IDebugProperty` 값을 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -39,18 +39,18 @@ HRESULT GetPropertyInfo (
   
 #### <a name="parameters"></a>매개 변수  
  `dwFields`  
- [in] 지정 된 `DBGPROP_INFO_FLAGS` 작성 해야 할 필드를 결정 하는 상수를 `DebugPropertyInfo` 구조입니다.  
+ 진행 @No__t_1 구조에서 입력할 필드를 결정 하는 `DBGPROP_INFO_FLAGS` 상수를 지정 합니다.  
   
  `nRadix`  
- [in] 모든 숫자 정보를 서식 지정 하는 데 사용할 기 수입니다.  
+ 진행 숫자 정보의 서식을 지정 하는 데 사용할 기 수입니다.  
   
  `pPropertyInfo`  
- [out] 반환 된 `DebugPropertyInfo` 속성을 설명 하는 구조입니다.  
+ 제한이 속성을 설명 하는 `DebugPropertyInfo` 구조체를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 유효한 반환 `HRESULT`, 일반적으로 `S_OK`.  
+ 유효한 `HRESULT` (일반적으로 `S_OK`)를 반환 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [IDebugProperty 인터페이스](../../winscript/reference/idebugproperty-interface.md)   
- [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)   
+## <a name="see-also"></a>참조  
+ [Idebugproperty 인터페이스](../../winscript/reference/idebugproperty-interface.md)    
+ [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)    
  [DebugPropertyInfo 구조체](../../winscript/reference/debugpropertyinfo-structure.md)

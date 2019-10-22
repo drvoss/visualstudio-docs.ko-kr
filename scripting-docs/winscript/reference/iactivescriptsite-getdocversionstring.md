@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::GetDocVersionString | Microsoft Docs
+title: 'IActiveScriptSite:: GetDocVersionString | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7327b71329c1f476eab9c27d5e0d5a047664abfa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8ecc592b6b7fcae5f516a3c1dd111c027e67b6dc
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992738"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571125"
 ---
 # <a name="iactivescriptsitegetdocversionstring"></a>IActiveScriptSite::GetDocVersionString
-현재 문서 버전을 고유 하 게 식별 하는 호스트 정의 문자열을 검색 합니다. 관련된 문서 (예: 메모장을 사용 하 여 편집 중인 HTML 페이지의 경우) Windows 스크립트 범위 밖에 서 변경 된 경우 스크립팅 엔진 지속 된 상태로, 다음 스크립트를 로드할 때 다시 컴파일을 적용 함께 저장 수 있습니다.  
+현재 문서 버전을 고유 하 게 식별 하는 호스트 정의 문자열을 검색 합니다. 메모장을 사용 하 여 HTML 페이지를 편집 하는 경우와 같이 관련 문서가 Windows 스크립트의 범위 외부에서 변경 된 경우 스크립팅 엔진은 다음에 스크립트가 로드 될 때 다시 컴파일을 강제로 수행 하 여 지속형 상태와 함께이를 저장할 수 있습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -37,13 +37,13 @@ HRESULT GetDocVersionString(
   
 #### <a name="parameters"></a>매개 변수  
  `pstrVersionString`  
- [out] 문서 호스트 정의 버전 문자열의 주소입니다.  
+ 제한이 호스트 정의 문서 버전 문자열의 주소입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 반환 `S_OK` 성공 하면 또는 `E_NOTIMPL` 경우이 메서드가 지원 되지 않습니다.  
+ 성공 하면 `S_OK`을 반환 하 고,이 메서드가 지원 되지 않는 경우 `E_NOTIMPL`을 반환 합니다.  
   
-## <a name="remarks"></a>설명  
- 경우 `E_NOTIMPL` 반환 되 면 스크립트 문서를 사용 하 여 동기화는 스크립팅 엔진 가정해 야 합니다.  
+## <a name="remarks"></a>주의  
+ @No__t_0 반환 되는 경우 스크립팅 엔진은 스크립트가 문서와 동기화 되어 있다고 가정 해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

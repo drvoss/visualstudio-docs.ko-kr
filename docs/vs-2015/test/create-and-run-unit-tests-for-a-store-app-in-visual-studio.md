@@ -1,5 +1,5 @@
 ---
-title: 스토어 앱 용 단위 테스트 만들기 및 실행
+title: 스토어 앱에 대 한 단위 테스트 만들기 및 실행
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: d3de7b31-0262-4373-ba84-e74eda7651e4
 caps.latest.revision: 28
 author: alexhomer1
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0fc24dc76e59a04b9485a71ba4dff44e0c7ba64d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a7efb5fe4484fdd0ce7d2fcb0a1988e9b089509e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442803"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660617"
 ---
 # <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>Visual Studio에서 스토어 앱에 대한 단위 테스트 만들기 및 실행
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Visual Studio 2012 Express for Windows 8 단위 테스트 도구는 소프트웨
 >
 >   자세한 내용은 MSDN 라이브러리의 [코드 단위 테스트](../test/unit-test-your-code.md)를 참조하세요.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>이 섹션의 내용
  [C# 코드 유닛 테스트](../test/unit-testing-visual-csharp-code-in-a-store-app.md)
 
  [C++ DLL 유닛 테스트](../test/unit-testing-a-visual-cpp-dll-for-store-apps.md)

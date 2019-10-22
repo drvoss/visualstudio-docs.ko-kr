@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9ddd9fb24aa83a6027d6d705de6a748a96b2e28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 737d1c5d4279a0a727f79326749dbf14a2fcd4c7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979112"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574312"
 ---
-# <a name="idebugpropertyenumtypeall-interface"></a>IDebugPropertyEnumType_All 인터페이스
-합니다 `IDebugPropertyEnumType` 각 해당 Iid에 필터로 전달 될 수 있도록 인터페이스를 정의 `IDebugProperty::EnumMembers` 적절 한 열거자를 요청 하는 중입니다.  
+# <a name="idebugpropertyenumtype_all-interface"></a>IDebugPropertyEnumType_All 인터페이스
+적절 한 열거자를 요청 하는 동안 각 Iid를 `IDebugProperty::EnumMembers` 필터로 전달할 수 있도록 `IDebugPropertyEnumType` 인터페이스가 정의 됩니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -39,7 +39,7 @@ IDebugPropertyEnumType_All : IUnknown
 |------------|-----------------|  
 |[IDebugPropertyEnumType_All::GetName](../../winscript/reference/idebugpropertyenumtype-all-getname.md)|이름을 설명 하는 텍스트 문자열을 반환 합니다.|  
   
- 다음 인터페이스에서 상속할 `IDebugPropertyEnumType_All`, 있고 추가 메서드가 없습니다.  
+ 다음 인터페이스는 `IDebugPropertyEnumType_All`에서 상속 되며 추가 메서드를 포함 하지 않습니다.  
   
 ```cpp
 IDebugPropertyEnumType_Arguments : IDebugPropertyEnumType_All   
@@ -48,5 +48,5 @@ IDebugPropertyEnumType_LocalsPlusArgs : IDebugPropertyEnumType_All 
 IDebugPropertyEnumType_Registers : IDebugPropertyEnumType_All  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [IDebugProperty::EnumMembers](../../winscript/reference/idebugproperty-enummembers.md)

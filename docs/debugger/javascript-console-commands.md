@@ -1,7 +1,7 @@
 ---
 title: JavaScript 콘솔 명령 | Microsoft Docs
 ms.custom: ''
-ms.date: 03/28/2019
+ms.date: 10/17/2019
 ms.topic: reference
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
@@ -10,33 +10,30 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 40e32250378d92ac63e4a057a59ee847de6af810
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fead28e60116acb7b2ae311d98e5475c5da3ec35
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905676"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72588975"
 ---
-# <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio에서 JavaScript 콘솔 명령
+# <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio의 JavaScript 콘솔 명령
 
-::: moniker range=">=vs-2019"
-명령을 사용하여 Visual Studio의 JavaScript 콘솔 창에서 메시지를 보내고 다른 작업을 수행할 수 있습니다. 이 항목의 정보를 사용 하 여 Visual Studio를 사용 하 여 생성 하는 Node.js 앱에 적용 됩니다는 **Node.js 개발** 워크 로드가 설치 되어 있습니다.
-::: moniker-end
-::: moniker range="vs-2017"
-명령을 사용하여 Visual Studio의 JavaScript 콘솔 창에서 메시지를 보내고 다른 작업을 수행할 수 있습니다. 이 창을 사용 하는 방법을 보여 주는 예제를 보려면 [빠른 시작: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)합니다. 이 항목의 정보는 Node.js 앱을 UWP에 적용 됩니다. 앱 및 Apache Cordova 대 한 Visual Studio Tools를 사용 하 여 만든 앱입니다. Cordova 앱에서 지원되는 콘솔 명령에 대한 자세한 내용은 [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)를 참조하세요.
-::: moniker-end
+명령을 사용하여 Visual Studio의 JavaScript 콘솔 창에서 메시지를 보내고 다른 작업을 수행할 수 있습니다. 이 창을 사용 하는 방법을 보여 주는 예제는 [빠른 시작: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)를 참조 하세요. 이 항목의 정보는 node.js 앱, UWP 앱 및 Apache Cordova에 대 한 Visual Studio Tools를 사용 하 여 만든 앱에 적용 됩니다.
 
-JavaScript 콘솔 창이 닫혀 있는 경우 열 수 있습니다 선택 하 여 Visual Studio에서 디버그 하는 동안 **디버깅할** > **Windows** > **JavaScript 콘솔**합니다.
+JavaScript 콘솔 창이 닫힌 경우 Visual Studio에서 디버그 하는 동안 **디버그**  > **Windows**  > **javascript 콘솔**을 선택 하 여 열 수 있습니다.
 
 > [!NOTE]
 > 디버깅 세션 중에 창을 사용할 수 없는 경우 프로젝트의 디버그 속성에서 디버거 형식이 **Script** 로 설정되었는지 확인하세요.
 
-Microsoft Edge 개발자 도구에서 콘솔을 사용 하 여에 대 한 정보를 참조 하세요 [이 항목에서는](/microsoft-edge/devtools-guide)합니다.
+Microsoft Edge 개발자 도구에서 콘솔을 사용 하는 방법에 대 한 정보는 [이 항목](/microsoft-edge/devtools-guide)을 참조 하세요.
 
 ## <a name="console-object-commands"></a>콘솔 개체 명령
+
 다음 표는 JavaScript 콘솔 창에서 사용할 수 있거나 코드에서 콘솔로 메시지를 보내는 데 사용할 수 있는 `console` 개체 명령에 대한 구문을 보여줍니다. 이 개체는 여러 폼을 제공하므로 원하는 경우 정보 메시지와 오류 메시지를 구분할 수 있습니다.
 
 로컬 개체의 명명된 콘솔과 혼동되지 않도록 해야 하는 경우 `window.console.[command]` 에서 긴 명령을 사용하면 됩니다.
@@ -58,9 +55,9 @@ Microsoft Edge 개발자 도구에서 콘솔을 사용 하 여에 대 한 정보
 |`groupEnd()`|현재 그룹을 종료합니다.<br /><br /> 요구 사항:<br /><br /> Visual Studio 2013|`group` 명령의 예를 참조하세요.|
 |`info(message)`|콘솔 창에 `message` 를 보냅니다. 메시지 앞에 정보 기호가 옵니다.|`console.info("info message");`<br /><br /> 추가 예제는 이 항목의 뒷부분에 나오는 [Formatting console.log output](#ConsoleLog) 을 참조하세요.|
 |`log(message)`|콘솔 창에 `message` 를 보냅니다.<br /><br /> 개체를 전달하는 경우 이 명령은 해당 개체를 콘솔 창으로 보내고 개체 시각화 도우미에 표시합니다. 시각화 도우미를 사용하여 콘솔 창에서 속성을 검사할 수 있습니다.|`console.log("logging message");`|
-|`msIsIndependentlyComposed(element)`|웹 앱에서 사용됩니다. JavaScript를 사용 하 여 UWP 앱에서 지원 되지 않습니다.|지원되지 않습니다.|
-|`profile(reportName)`|웹 앱에서 사용됩니다. JavaScript를 사용 하 여 UWP 앱에서 지원 되지 않습니다.|지원되지 않습니다.|
-|`profileEnd()`|웹 앱에서 사용됩니다. JavaScript를 사용 하 여 UWP 앱에서 지원 되지 않습니다.|지원되지 않습니다.|
+|`msIsIndependentlyComposed(element)`|웹 앱에서 사용됩니다. JavaScript를 사용 하는 UWP 앱에서 지원 되지 않습니다.|지원되지 않음|
+|`profile(reportName)`|웹 앱에서 사용됩니다. JavaScript를 사용 하는 UWP 앱에서 지원 되지 않습니다.|지원되지 않음|
+|`profileEnd()`|웹 앱에서 사용됩니다. JavaScript를 사용 하는 UWP 앱에서 지원 되지 않습니다.|지원되지 않음|
 |`select(element)`|`element` DOM 탐색기 [에서 지정한 HTML](../debugger/quickstart-debug-html-and-css.md)를 선택합니다.|console.select(요소);|
 |`time (name)`|선택적 `name` 매개 변수에서 식별하는 타이머를 시작합니다. `console.timeEnd`와 함께 사용할 경우 `time` 과 `timeEnd`사이에 경과된 시간을 계산하고 `name` 문자열을 접두사로 사용하여 결과(단위: ms)를 콘솔에 보냅니다. 성능을 측정하기 위한 앱 코드 계측을 활성화하는 데 사용됩니다.|`console.time("app start");  app.start();  console.timeEnd("app start");`|
 |`timeEnd(name)`|선택적 `name` 매개 변수에서 식별하는 타이머를 중지합니다. `time` 콘솔 명령을 참조하세요.|`console.time("app start"); app.start(); console.timeEnd("app start");`|
@@ -129,6 +126,6 @@ console.log("%s is %f years old!", user.first, user.age);
 // Fred is 10.01 years old!
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목:
 - [빠른 시작: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
 - [빠른 시작: HTML 및 CSS 디버그](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)

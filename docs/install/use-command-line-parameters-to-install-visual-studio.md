@@ -2,7 +2,7 @@
 title: 명령줄 매개 변수를 사용하여 Visual Studio 설치
 titleSuffix: ''
 description: 명령줄 매개 변수를 사용하여 Visual Studio 설치를 제어하거나 사용자 지정하는 방법을 알아봅니다.
-ms.date: 09/11/2019
+ms.date: 10/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1f9e5d1dadd9caf95b8e6cb8e5fec70daf984ac9
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 0b1388aa7ac993ba4b98837ec8ac46d516b567da
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913240"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381023"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>명령줄 매개 변수를 사용하여 Visual Studio 설치
 
@@ -32,23 +32,33 @@ ms.locfileid: "70913240"
 - 설치 프로세스를 자동화합니다.
 - 나중에 사용할 설치 파일의 캐시(레이아웃)를 만듭니다.
 
-명령줄 옵션은 다운로드 프로세스를 시작하는 작은(1MB) 파일인 설치 부트스트래퍼와 함께 사용됩니다. 부트스트래퍼는 Visual Studio 사이트에서 다운로드할 때 첫 번째로 실행되는 실행 파일입니다. 다음 링크를 사용하여 설치 중인 제품 버전에 대한 최신 릴리스 부트스트래퍼에 직접 연결된 링크를 가져옵니다.
+명령줄 옵션은 다운로드 프로세스를 시작하는 작은(1MB) 파일인 설치 부트스트래퍼와 함께 사용됩니다. 부트스트래퍼는 Visual Studio 사이트에서 다운로드할 때 첫 번째로 실행되는 실행 파일입니다.
 
 ::: moniker range="vs-2017"
 
-- [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+Visual Studio 2017에 대한 부트스트래퍼를 가져오려면 [**Visual Studio 이전 버전**](https://visualstudio.microsoft.com/vs/older-downloads/) 다운로드 페이지에서 방법에 관한 세부 정보를 참조하세요.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
+
+다음 링크를 사용하여 설치 중인 제품 버전에 대한 최신 릴리스 부트스트래퍼에 직접 연결된 링크를 가져옵니다.
 
 - [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
 - [Visual Studio 2019 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
 - [Visual Studio 2019 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
 
 ::: moniker-end
+
+
+부트스트래퍼 파일은 다음 중 하나와 일치하거나 유사해야 합니다.
+
+* vs_enterprise.exe
+* vs_professional.exe
+* vs_community.exe
+
+>[!TIP]
+>이전에 부트스트래퍼 파일을 다운로드했으며 해당 버전을 확인하려는 경우에는 다음을 참조하세요. Windows에서 파일 탐색기를 열고 부트스트래퍼 파일을 마우스 오른쪽 단추로 클릭한 다음, **속성**을 선택하고 **세부 정보** 탭을 선택한 다음, **제품 버전** 번호를 확인합니다. 이 번호가 Visual Studio 릴리스와 일치하는지 확인하려면 [Visual Studio 빌드 번호 및 릴리스 날짜](visual-studio-build-numbers-and-release-dates.md) 페이지를 참조하세요.
 
 ## <a name="command-line-parameters"></a>명령줄 매개 변수
 
@@ -121,10 +131,10 @@ ms.locfileid: "70913240"
 | `--cache` | **15.2의 새로운 기능, 선택 사항**: 있는 경우, 패키지가 이후 복구를 위해 설치된 후에도 유지됩니다. 이는 이후 설치, 복구 또는 수정에 사용할 전역 정책 설정을 재정의합니다. 기본 정책은 패키지를 캐시하는 것입니다. 제거 명령의 경우 무시됩니다. 자세한 내용은 [패키지 캐시를 사용하지 않도록 설정 또는 이동](disable-or-move-the-package-cache.md)하는 방법을 참조하세요. |
 | `--nocache` | **15.2의 새로운 기능, 선택 사항**: 패키지가 있는 경우 설치 또는 복구된 후에 삭제됩니다. 필요한 경우에만 다시 다운로드되고 사용한 후 다시 삭제됩니다. 이는 이후 설치, 복구 또는 수정에 사용할 전역 정책 설정을 재정의합니다. 기본 정책은 패키지를 캐시하는 것입니다. 제거 명령의 경우 무시됩니다. 자세한 내용은 [패키지 캐시를 사용하지 않도록 설정 또는 이동](disable-or-move-the-package-cache.md)하는 방법을 참조하세요. |
 | `--noUpdateInstaller` | **15.2의 새로운 기능, 선택 사항**: 있는 경우, quiet가 지정되었을 때 설치 프로그램이 자동으로 업데이트되지 않습니다. quiet와 함께 noUpdateInstaller가 지정되었는데 설치 프로그램 업데이트가 필요한 경우 설치 프로그램에서 명령을 실패로 처리하고 0이 아닌 종료 코드를 반환합니다. |
-| `--noWeb` | **15.3의 새로운 기능, 선택 사항**: 있는 경우, Visual Studio 설치 프로그램에서 레이아웃 디렉터리에 있는 파일을 사용하여 Visual Studio를 설치합니다. 사용자가 레이아웃에 없는 구성 요소를 설치하려고 시도하면 설치에 실패합니다.  자세한 내용은 [네트워크 설치에서 배포](create-a-network-installation-of-visual-studio.md)를 참조하세요. <br/><br/> **중요**: 이 스위치는 Visual Studio 설치 프로그램에서 업데이트를 확인하는 과정을 허용합니다. 자세한 내용은 [네트워크 기반 Visual Studio 배포에 대한 업데이트 제어](controlling-updates-to-visual-studio-deployments.md)를 참조하세요.|
+| `--noWeb` | **15.3의 새로운 기능, 선택 사항**: 있는 경우, Visual Studio 설치 프로그램에서 레이아웃 디렉터리에 있는 파일을 사용하여 Visual Studio를 설치합니다. 사용자가 레이아웃에 없는 구성 요소를 설치하려고 시도하면 설치에 실패합니다.  자세한 내용은 [네트워크 설치에서 배포](create-a-network-installation-of-visual-studio.md)를 참조하세요. <br/><br/> **중요**: 이 스위치는 Visual Studio 설치 프로그램에서 업데이트를 확인하는 과정을 허용합니다. 자세한 내용은 [네트워크 기반 Visual Studio 배포에 대한 업데이트 제어](controlling-updates-to-visual-studio-deployments.md)를 참조하세요. **16.3.5의 새로운 기능**: 이 스위치는 오류를 방지하고 오프 라인 설치 및 업데이트로 성능을 향상시킵니다.|
 | `--path <name>=<path>` | **15.7의 새로운 기능, 선택 사항**: 설치에 대해 사용자 지정 설치 경로를 지정하는 데 사용합니다. 지원되는 경로 이름은 공유, 캐시 및 설치입니다. |
-| `--path cache=<path>` | **15.7의 새로운 기능, 선택 사항**: 설치 파일을 다운로드하는 데 사용자가 지정한 위치를 사용합니다. 이 위치는 처음 Visual Studio를 설치할 때만 설정할 수 있습니다. 예: `--path cache="C:\VS\cache"` |
-| `--path shared=<path>` | **15.7의 새로운 기능, 선택 사항**: Visual Studio 병렬 설치를 위한 공유 파일을 포함합니다. 일부 도구 및 SDK가 이 드라이브의 위치에 설치되지만 나머지는 이 설정을 재정의하고 다른 드라이브에 설치될 수 있습니다. 예: `--path shared="C:\VS\shared"` <br><br>중요: 이는 Visual Studio를 처음으로 설치할 때 한 번만 설정하면 됩니다. |
+| `--path cache=<path>` | **15.7의 새로운 기능, 선택 사항**: 설치 파일을 다운로드하는 데 사용자가 지정한 위치를 사용합니다. 이 위치는 처음 Visual Studio를 설치할 때만 설정할 수 있습니다. 예제: `--path cache="C:\VS\cache"` |
+| `--path shared=<path>` | **15.7의 새로운 기능, 선택 사항**: Visual Studio 병렬 설치를 위한 공유 파일을 포함합니다. 일부 도구 및 SDK가 이 드라이브의 위치에 설치되지만 나머지는 이 설정을 재정의하고 다른 드라이브에 설치될 수 있습니다. 예제: `--path shared="C:\VS\shared"` <br><br>중요: 이는 Visual Studio를 처음으로 설치할 때 한 번만 설정하면 됩니다. |
 | `--path install=<path>` | **15.7의 새로운 기능, 선택 사항**: `–-installPath`와 같습니다. 특히 `--installPath "C:\VS"`와 `--path install="C:\VS"`는 같습니다. 이 중 하나만 한 번에 사용할 수 있습니다. |
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>작업 ID 및 구성 요소 ID 목록

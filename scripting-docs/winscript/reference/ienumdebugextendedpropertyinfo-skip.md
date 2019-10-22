@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugExtendedPropertyInfo::Skip | Microsoft 문서
+title: 'IEnumDebugExtendedPropertyInfo:: Skip | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 87913f15f8799be0ad3f6616eeea53a8a627e3d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e5c187f3484154a2758b67300c98d4cb9fc9023
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963457"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574234"
 ---
 # <a name="ienumdebugextendedpropertyinfoskip"></a>IEnumDebugExtendedPropertyInfo::Skip
-지정 된 개수의 건너뜁니다 `ExtendedDebugPropertyInfo` 열거형 시퀀스에는 구조입니다.  
+열거형 시퀀스에서 지정 된 수의 `ExtendedDebugPropertyInfo` 구조체를 건너뜁니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -37,11 +37,11 @@ HRESULT Skip(
   
 #### <a name="parameters"></a>매개 변수  
  `celt`  
- [in] 수가 `ExtendedDebugPropertyInfo` 건너뛸 열거형 시퀀스에서 구조입니다.  
+ 진행 건너뛸 열거형 시퀀스의 `ExtendedDebugPropertyInfo` 구조체 수입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 유효한 반환 `HRESULT`, 일반적으로 `S_OK`. 반환 `S_FALSE` 경우 열거형의 끝에 현재 요소 포인터를 설정 하 고 `celt` 열거자의 요소를 왼쪽의 숫자 보다 큰 경우.  
+ 유효한 `HRESULT` (일반적으로 `S_OK`)를 반환 합니다. @No__t_1이 열거자에 남아 있는 요소 수보다 크면 `S_FALSE`을 반환 하 고 현재 요소 포인터를 열거형의 끝으로 설정 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [IEnumDebugExtendedPropertyInfo 인터페이스](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)   
+## <a name="see-also"></a>참조  
+ [IEnumDebugExtendedPropertyInfo 인터페이스](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)    
  [ExtendedDebugPropertyInfo 구조체](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

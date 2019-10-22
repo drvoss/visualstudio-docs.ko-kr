@@ -1,18 +1,18 @@
 ---
-title: '연습: XSLT 계층 구조를 사용 하 여'
+title: '연습: XSLT 계층 구조 사용'
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3cf836ed59dadba71314aa38cd4d2907bee384a6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f3fe246189313dcc04176e2971ad448a1b2cff8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808161"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604438"
 ---
-# <a name="walkthrough-use-xslt-hierarchy"></a>연습: XSLT 계층 구조를 사용 합니다.
+# <a name="walkthrough-use-xslt-hierarchy"></a>연습: XSLT 계층 구조 사용
 
 XSLT 계층 구조 도구를 사용하면 많은 XML 개발 작업을 간단하게 수행할 수 있습니다. XSLT 스타일시트에서는 `includes` 및 `imports` 명령을 사용하는 경우가 자주 있습니다. 컴파일은 주 스타일시트에서 시작하지만 XSLT 스타일시트를 컴파일했을 때 오류가 발생하는 경우 이러한 오류는 주 스타일시트와 다른 소스에서 발생된 것일 수 있습니다. 오류를 해결하거나 스타일시트를 편집하려면 포함되거나 가져온 스타일시트에 액세스할 수 있어야 합니다. 디버거에서 스타일시트를 단계별로 실행하면 포함되거나 가져온 스타일시트가 열릴 수 있으며 하나 이상의 포함된 스타일시트의 일부 지점에 중단점을 추가할 수 있습니다.
 
@@ -22,7 +22,7 @@ XSLT 계층 구조 도구가 유용한 다른 시나리오는 기본 제공 템�
 
 ## <a name="to-debug-in-a-referenced-style-sheet"></a>참조 된 스타일 시트에서 디버깅 하려면
 
-1. Visual Studio에서 XML 문서를 엽니다. 이 예제에서는 문서:
+1. Visual Studio에서 XML 문서를 엽니다. 이 예제에서는 다음 문서를 사용 합니다.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -46,7 +46,7 @@ XSLT 계층 구조 도구가 유용한 다른 시나리오는 기본 제공 템�
     </COLLECTION>
     ```
 
-1. 다음을 추가 합니다 *xslincludefile.xsl*:
+1. 다음 xslincludefile를 추가 *합니다*.
 
     ```xml
     <?xml version='1.0'?>
@@ -69,7 +69,7 @@ XSLT 계층 구조 도구가 유용한 다른 시나리오는 기본 제공 템�
     </xsl:stylesheet>
     ```
 
-3. 다음을 추가 합니다 *xslinclude.xsl* 파일:
+3. 다음 *xslinclude* 파일을 추가 합니다.
 
     ```xml
     <?xml version='1.0'?>
@@ -103,12 +103,12 @@ XSLT 계층 구조 도구가 유용한 다른 시나리오는 기본 제공 템�
     </xsl:stylesheet>
     ```
 
-4. 명령에 중단점을 추가 `<xsl:include href="xslincludefile.xsl" />`합니다.
+4. 명령 `<xsl:include href="xslincludefile.xsl" />`에 중단점을 추가 합니다.
 
 5. 디버깅을 시작합니다.
 
-6. 명령에서 디버거가 중지 되 면 `<xsl:include href="xslincludefile.xsl" />`, 키를 눌러 합니다 **한 단계씩 코드 실행** 단추. 참조 된 스타일 시트에서 디버깅을 계속할 수 있습니다. 계층 구조가 표시되며 디자이너에서 올바른 경로를 표시합니다.
+6. 디버거가 명령 `<xsl:include href="xslincludefile.xsl" />`에서 중지 되 면 한 **단계씩 코드 실행** 단추를 누릅니다. 참조 된 스타일 시트에서 디버깅을 계속할 수 있습니다. 계층 구조가 표시되며 디자이너에서 올바른 경로를 표시합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [XSLT 프로파일러](../xml-tools/xslt-profiler.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThreadEvents110::OnResumeFromBreakPoint | Microsoft Docs
+title: 'IDebugApplicationThreadEvents110:: OnResumeFromBreakPoint | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61cb434c5d3514c63446792029b54e2f1413e006
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e710d259ae4985f6e37fc14ee70d0467578d2bd0
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440473"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573358"
 ---
 # <a name="idebugapplicationthreadevents110onresumefrombreakpoint"></a>IDebugApplicationThreadEvents110::OnResumeFromBreakPoint
-스레드가 중단점에서 다시 시작 및 다시 활성화 됩니다.  
+스레드가 중단점에서 다시 시작 되 고 다시 한 번 활성화 됩니다.  
   
 > [!IMPORTANT]
-> [IDebugApplicationThreadEvents110 인터페이스](../../winscript/reference/idebugapplicationthreadevents110-interface.md) 는 PDM v11.0에 의해 구현 된 이상. activdbg100.h에서 찾을 수 있습니다.  
+> [IDebugApplicationThreadEvents110 인터페이스](../../winscript/reference/idebugapplicationthreadevents110-interface.md) 는 PDM v 11.0 이상에 의해 구현 됩니다. activdbg100.h에서 찾을 수 있습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -33,7 +33,7 @@ HRESULT OnResumeFromBreakPoint( void );
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 이 메서드는 매개 변수가 없습니다.  
+ 이 메서드에는 매개 변수가 없습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [IDebugApplicationThreadEvents110 인터페이스](../../winscript/reference/idebugapplicationthreadevents110-interface.md)

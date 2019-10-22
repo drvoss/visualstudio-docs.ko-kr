@@ -1,28 +1,28 @@
 ---
-title: '방법: 컴파일러 경고 표시 안 함 | Microsoft Docs'
+title: '방법: 컴파일러 경고 표시 안 함 | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: 31827b17-f933-413d-b28a-b19f903b64ca
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 994b29fb4592d55a04389896ee9db8848dceda67
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: aeb404c479edec5dec89f28e80584d435f5c370a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695392"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670650"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>방법: 컴파일러 경고 표시 안 함
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-포함하지 않을 컴파일러 경고 종류를 하나 이상 지정하여 빌드 로그의 혼잡을 방지할 수 있습니다. 예를 들어 이 방법을 사용하면 빌드 로그의 자세한 정도를 보통, 자세히 또는 진단으로 설정할 경우 자동으로 생성되는 정보의 전체가 아니라 일부를 검토할 수 있습니다. 자세한 정도에 대한 자세한 내용은 [방법: 보기, 저장 및 빌드 로그 파일 구성](../ide/how-to-view-save-and-configure-build-log-files.md)합니다.
+포함하지 않을 컴파일러 경고 종류를 하나 이상 지정하여 빌드 로그의 혼잡을 방지할 수 있습니다. 예를 들어 이 방법을 사용하면 빌드 로그의 자세한 정도를 보통, 자세히 또는 진단으로 설정할 경우 자동으로 생성되는 정보의 전체가 아니라 일부를 검토할 수 있습니다. 자세한 정도에 대한 자세한 내용은 [방법: 빌드 로그 파일 보기, 저장 및 구성](../ide/how-to-view-save-and-configure-build-log-files.md)을 참조하세요.
 
-### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>시각적 개체에 대 한 특정 경고 표시 하지 않으려면 C# 또는 F\#
+### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>시각적 개체 C# 또는 F \#에 대 한 특정 경고를 표시 하지 않으려면
 
 1. **솔루션 탐색기**에서 경고를 표시하지 않으려는 프로젝트를 선택합니다.
 
@@ -58,7 +58,7 @@ ms.locfileid: "65695392"
 
 2. 메뉴 모음에서 **프로젝트**, **프로젝트 언로드**를 선택합니다.
 
-3. **솔루션 탐색기**에서 프로젝트의 바로 가기 메뉴를 열고 **편집**_ProjectName_**.vbproj**를 선택합니다.
+3. **솔루션 탐색기**에서 프로젝트의 바로 가기 메뉴를 열고 **편집**_ProjectName_ **.vbproj**를 선택합니다.
 
     프로젝트 파일이 코드 편집기에서 열립니다.
 
@@ -108,7 +108,7 @@ ms.locfileid: "65695392"
 
    자세한 내용은 [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목:
 
 - [연습: 애플리케이션 빌드](../ide/walkthrough-building-an-application.md)
 - [방법: 빌드 로그 파일 보기, 저장 및 구성](../ide/how-to-view-save-and-configure-build-log-files.md)

@@ -1,0 +1,61 @@
+### YamlMime:Landing
+title: Visual Studio의 코드 분석
+summary: Visual Studio는 코드 품질을 분석하고 개선할 수 있는 다양한 도구를 제공합니다.
+metadata:
+  title: 코드 분석기
+  description: Visual Studio를 사용하여 코드 품질을 분석하는 방법을 알아봅니다.
+  ms.prod: visual-studio-windows
+  ms.technology: vs-ide-general
+  ms.topic: landing-page
+  author: gewarren
+  ms.author: gewarren
+  ms.date: 10/15/2019
+  ms.openlocfilehash: eb7be803a8c9751550f46880cfd485dac2850527
+  ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+  ms.translationtype: HT
+  ms.contentlocale: ko-KR
+  ms.lasthandoff: 10/16/2019
+  ms.locfileid: "72450590"
+landingContent:
+- title: C 및 C++ 코드 분석
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: C 및 C++ 코드 분석
+      url: code-analysis-for-c-cpp-overview.md
+  - linkListType: reference
+    links:
+    - text: C++ 코드 분석 경고
+      url: code-analysis-for-c-cpp-warnings.md
+- title: 관리 코드 품질 분석
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 소스 분석
+      url: roslyn-analyzers-overview.md
+    - text: 레거시 분석
+      url: static-code-analysis-for-managed-code-overview.md
+  - linkListType: concept
+    links:
+    - text: FAQ
+      url: analyzers-faq.md
+  - linkListType: how-to-guide
+    links:
+    - text: FxCop 분석기 설치
+      url: install-fxcop-analyzers.md
+  - linkListType: reference
+    links:
+    - text: 관리 코드 분석 경고
+      url: code-analysis-for-managed-code-warnings.md
+- title: 관리 코드 스타일 분석
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 코드 스타일 분석
+      url: ../ide/create-portable-custom-editor-options.md
+- title: 코드 복잡성 측정
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: 코드 메트릭
+      url: code-metrics-values.md

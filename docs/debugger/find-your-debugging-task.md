@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f8d971792fb55789fb6dcd7e0d90829ac723ba6
-ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
+ms.openlocfilehash: a4667fc630d86691d95e9dc9cd205b29f7b0f525
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71817511"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349700"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Visual Studio에서 디버깅 작업 찾기
 
@@ -34,7 +34,10 @@ ms.locfileid: "71817511"
 
 ### <a name="pause-code-only-when-a-specific-objects-property-or-value-changes"></a>특정 개체의 속성이 나 값이 변경 되는 경우에만 코드를 일시 중지 합니다.
 
-의 C++경우 [데이터 중단점](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus)을 설정 합니다. .NET Core 3을 사용 하는 앱의 경우 [데이터 중단점](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed)도 설정할 수 있습니다.
+의 C++경우 [데이터 중단점](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus)을 설정 합니다. 
+::: moniker range=">= vs-2019"
+.NET Core 3을 사용 하는 앱의 경우 [데이터 중단점](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed)도 설정할 수 있습니다.
+::: moniker-end
 
 그렇지 않은 경우 C# 에 F# 만 [조건부 중단점을 사용 하 여 개체 ID를 추적할](using-breakpoints.md#using-object-ids-in-breakpoint-conditions-c-and-f)수 있습니다.
 
@@ -62,6 +65,12 @@ ms.locfileid: "71817511"
 
 [디스어셈블리 창에서 중단점을 설정](using-breakpoints.md#BKMK_Set_a_breakpoint_from_debugger_windows)하 여이 작업을 수행할 수 있습니다.
 
+## <a name="execute-code"></a>코드 실행
+
+### <a name="learn-the-commands-to-step-through-your-code-while-debugging"></a>디버깅 하는 동안 코드를 단계별로 실행 하는 명령에 대해 알아봅니다.
+
+자세한 내용은 [디버거로 코드 탐색](navigating-through-code-with-the-debugger.md)을 참조 하세요.
+
 ## <a name="inspect-data"></a>데이터 검사
 
 ### <a name="check-the-value-of-variables-while-running-your-app"></a>앱을 실행 하는 동안 변수 값 확인
@@ -76,19 +85,7 @@ ms.locfileid: "71817511"
 
 디버깅 하는 동안 기본 제공 [문자열 시각화 도우미](view-strings-visualizer.md) 를 엽니다.
 
-## <a name="additional-tasks"></a>추가 작업
-
-### <a name="learn-the-commands-to-step-through-your-code-while-debugging"></a>디버깅 하는 동안 코드를 단계별로 실행 하는 명령에 대해 알아봅니다.
-
-자세한 내용은 [디버거로 코드 탐색](navigating-through-code-with-the-debugger.md)을 참조 하세요.
-
-### <a name="edit-code-during-a-debugging-session"></a>디버깅 세션 중에 코드 편집
-
-[편집 하며 계속 하기](edit-and-continue.md)를 사용 합니다. XAML의 경우 [Xaml 핫 다시 로드](xaml-hot-reload.md)를 사용 합니다.
-
-### <a name="send-messages-to-the-output-window-without-modifying-code"></a>코드를 수정 하지 않고 출력 창에 메시지를 보냅니다.
-
-추적점을 설정 합니다. 자세한 내용은 [추적점 사용](using-tracepoints.md)을 참조 하세요.
+## <a name="configure-debugging"></a>디버깅 구성
 
 ### <a name="customize-information-shown-in-the-debugger"></a>디버거에 표시 되는 정보 사용자 지정
 
@@ -99,6 +96,16 @@ Native C++의 경우 [NatVis 프레임 워크](create-custom-views-of-native-obj
 ### <a name="configure-debugger-settings"></a>디버거 설정 구성
 
 디버거 옵션 및 디버거 프로젝트 설정을 구성 하려면 [디버거 설정 및 준비](debugger-settings-and-preparation.md)를 참조 하세요.
+
+## <a name="additional-tasks"></a>추가 작업
+
+### <a name="edit-code-during-a-debugging-session"></a>디버깅 세션 중에 코드 편집
+
+[편집 하며 계속 하기](edit-and-continue.md)를 사용 합니다. XAML의 경우 [Xaml 핫 다시 로드](xaml-hot-reload.md)를 사용 합니다.
+
+### <a name="send-messages-to-the-output-window-without-modifying-code"></a>코드를 수정 하지 않고 출력 창에 메시지를 보냅니다.
+
+추적점을 설정 합니다. 자세한 내용은 [추적점 사용](using-tracepoints.md)을 참조 하세요.
 
 ### <a name="debug-on-remote-machines"></a>원격 컴퓨터에서 디버그
 

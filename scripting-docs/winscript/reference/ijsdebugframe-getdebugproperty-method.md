@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugframe:: Getdebugproperty 메서드 | Microsoft Docs'
+title: 'IJsDebugFrame:: GetDebugProperty 메서드 | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d3ababdae51e95d6a3234c4e55f3e20ffa5fd760
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 780a1559f5ac79dddcc8065034c6f6478995b7dc
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558205"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562298"
 ---
 # <a name="ijsdebugframegetdebugproperty-method"></a>IJsDebugFrame::GetDebugProperty 메서드
-이 스택 프레임에 대 한 속성 브라우저를 반환합니다.  
+이 스택 프레임의 속성 브라우저를 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -35,12 +35,12 @@ HRESULT GetDebugProperty(
   
 #### <a name="parameters"></a>매개 변수  
  `ppDebugProperty`  
- [out] 속성 브라우저를 나타내는 개체입니다.  
+ 제한이 속성 브라우저를 나타내는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더:** jscript9diag.h  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [IJsDebugFrame 인터페이스](../../winscript/reference/ijsdebugframe-interface.md)

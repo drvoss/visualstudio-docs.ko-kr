@@ -1,5 +1,5 @@
 ---
-title: Throw 따라야 식에서 같은 소스 줄에서 | Microsoft Docs
+title: 같은 소스 줄에서 Throw 뒤에는 식이와 야 합니다. Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,15 +14,15 @@ ms.assetid: b03b7747-01a1-40c6-af80-a1dd70bc5781
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4c8ed951fb30b84f114f8f44a60e94b88f0f1d0f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8854acb3d1992283899c4ff095f5d754c05f55a1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63005943"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572755"
 ---
 # <a name="throw-must-be-followed-by-an-expression-on-the-same-source-line"></a>같은 소스 줄에서 throw 뒤에는 식이 와야 합니다.
-사용 된 `throw` 키워드를 따르지이 식을 사용 하 여 같은 소스 줄에 있지만. A `throw` 문의 두 부분으로 이루어져:는 `throw` throw 식 뒤에 키워드를 합니다. 예를 들어:  
+@No__t_0 키워드를 사용 했지만 동일한 소스 줄에서 식과 함께 사용 하지 않았습니다. @No__t_0 문은 `throw` 키워드와 throw 될 식의 두 부분으로 구성 됩니다. 예를 들면,  
   
 ```JavaScript  
 if (denominator == 0) {  
@@ -30,13 +30,13 @@ if (denominator == 0) {
 }  
 ```  
   
- 이러한 두 구성 요소 분할할 수 없습니다.  
+ 이러한 두 구성 요소는 분할할 수 없습니다.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
-- 확인을 `throw` 키워드와 throw 식 동일한 줄에 나타납니다.  
+- Throw 할 `throw` 키워드와 식이 같은 줄에 표시 되는지 확인 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Error 개체](../../javascript/reference/error-object-javascript.md)   
- [Throw 문](../../javascript/reference/throw-statement-javascript.md)   
+## <a name="see-also"></a>참조  
+ [오류 개체](../../javascript/reference/error-object-javascript.md)    
+ [Throw 문](../../javascript/reference/throw-statement-javascript.md)    
  [try...catch...finally 문](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

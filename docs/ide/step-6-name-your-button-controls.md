@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ce9f55dd54dbe85f64226c1ca7f0b4f75b1cdfc
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: ff8c43e42d63208c1119f1f545697a57173fdd7a
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118686"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72313970"
 ---
 # <a name="step-6-name-your-button-controls"></a>6단계: 단추 컨트롤 이름 지정
 
@@ -65,8 +65,7 @@ ms.locfileid: "71118686"
     End Sub
     ```
 
-   > [!IMPORTANT]
-   > 이 페이지의 오른쪽 위에 있는 프로그래밍 언어 컨트롤을 사용하여 C# 코드 조각 또는 Visual Basic 코드 조각을 볼 수 있습니다.<br><br>![Docs.Microsoft.com에 대한 프로그래밍 언어 컨트롤](../ide/media/docs-programming-language-control.png)
+   [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
    `showButton_Click()`(또는 `ShowButton_Click()`)이라는 코드를 확인하고 있습니다. IDE에서는 **showButton** 단추에 대한 코드 파일을 열면 이를 폼 코드에 추가합니다. 디자인 타임에 폼에서 컨트롤에 대한 코드 파일을 열면, 컨트롤에 대한 코드가 아직 없을 경우 이 코드가 생성됩니다. *메서드*라는 이 코드는 앱을 실행하고 컨트롤(이 경우 **사진 표시** 단추)을 선택할 때 실행됩니다.
 

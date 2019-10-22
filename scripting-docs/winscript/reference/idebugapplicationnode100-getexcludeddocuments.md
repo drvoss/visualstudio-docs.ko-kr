@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode100::GetExcludedDocuments | Microsoft Docs
+title: 'IDebugApplicationNode100:: GetExcludedDocuments | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b8b1793fc1a3aacb27cc612bb5212dc33e7ab7dc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c135aa85ca65a44f6f970e83d7975bb441ff56f5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436038"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574750"
 ---
 # <a name="idebugapplicationnode100getexcludeddocuments"></a>IDebugApplicationNode100::GetExcludedDocuments
-지정한 필터에 의해 숨겨진 텍스트 문서를 가져옵니다.  
+지정 된 필터에 의해 숨겨진 텍스트 문서를 가져옵니다.  
   
 > [!IMPORTANT]
-> [IDebugApplicationNode100 인터페이스](../../winscript/reference/idebugapplicationnode100-interface.md) 이상 v10.0 PDM에서 구현 됩니다. activdbg100.h에서 찾을 수 있습니다.  
+> [IDebugApplicationNode100 인터페이스](../../winscript/reference/idebugapplicationnode100-interface.md) 는 PDM v 10.0 이상에서 구현 됩니다. activdbg100.h에서 찾을 수 있습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -39,5 +39,5 @@ HRESULT GetExcludedDocuments(        [in] APPLICATION_NODE_EVENT_FILTER filter, 
  `pDocuments`  
  문서 집합입니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [IDebugApplicationNode100 인터페이스](../../winscript/reference/idebugapplicationnode100-interface.md)

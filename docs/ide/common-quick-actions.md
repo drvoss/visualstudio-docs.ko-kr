@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ceedf18b936c0b1e8553ceb3bb1fdbc75035dfa
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 600fb1b4abea2103c28e3a5067d640228d68b755
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551449"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000150"
 ---
 # <a name="common-quick-actions"></a>일반적인 빠른 작업
 
@@ -30,7 +30,7 @@ ms.locfileid: "69551449"
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>철자가 틀린 기호 또는 키워드 수정
 
-Visual Studio에서 실수로 형식 또는 키워드의 철자를 잘못 입력한 경우 이 빠른 작업은 자동으로 수정합니다. 이러한 항목은 전구 메뉴에 **‘철자가 잘못된 단어’를 ‘올바른 단어’로 변경**으로 표시됩니다.   예:
+Visual Studio에서 실수로 형식 또는 키워드의 철자를 잘못 입력한 경우 이 빠른 작업은 자동으로 수정합니다. 해당 항목은 전구 메뉴에 **‘\<철자가 잘못된 단어>’를 ‘\<올바른 단어>’로 변경**으로 표시됩니다. 예:
 
 ```csharp
 // Before
@@ -58,9 +58,9 @@ Function MyFunction as Integer
 End Function
 ```
 
-| 오류 ID | 해당 언어 | 지원되는 버전 |
-| ------- | -------------------- | ---------------- |
-| CS0103, BC30002 | C# 및 Visual Basic | Visual Studio 2015 업데이트 2 |
+| 오류 ID | 해당 언어 |
+| - | - |
+| CS0103, BC30002 | C# 및 Visual Basic |
 
 ### <a name="resolve-git-merge-conflict"></a>Git 병합 충돌 해결
 
@@ -90,7 +90,7 @@ private void MyMethod()
 
 | 오류 ID | 해당 언어 | 지원되는 버전 |
 | ------- | -------------------- | ---------------- |
-| CS8300, BC37284 | C# 및 Visual Basic | Visual Studio 2017 15.3 버전 |
+| CS8300, BC37284 | C# 및 Visual Basic | Visual Studio 2017 버전 15.3 이상 |
 
 ## <a name="actions-that-remove-unnecessary-code"></a>불필요한 코드를 제거하는 작업
 
@@ -99,8 +99,8 @@ private void MyMethod()
 **불필요한 using/Import 제거** 빠른 작업은 현재 파일에 대해 사용되지 않은 `using` 및 `Import` 문을 제거합니다. 이 항목을 선택하면 사용되지 않은 네임스페이스 가져오기가 제거됩니다.
 
 | 해당 언어 | 지원되는 버전 |
-| -------------------- | ---------------- |
-| C# 및 Visual Basic | Visual Studio 2015 RTW |
+| - | - |
+| C# 및 Visual Basic | Visual Studio 2015 이상 |
 
 ### <a name="remove-unnecessary-cast"></a>불필요한 캐스트 제거
 
@@ -128,7 +128,7 @@ Dim number as Integer = 3
 
 | 진단 ID | 해당 언어 | 지원되는 버전 |
 | ------- | -------------------- | ---------------- |
-| IDE0004 | C# 및 Visual Basic | Visual Studio 2015 RTW |
+| IDE0004 | C# 및 Visual Basic | Visual Studio 2015 이상 |
 
 ### <a name="remove-unused-variables"></a>사용하지 않는 변수 제거
 
@@ -155,7 +155,7 @@ public MyMethod()
 
 | 진단 ID | 해당 언어 | 지원되는 버전 |
 | ------- | -------------------- | ---------------- |
-| CS0219, BC42024 | C# 및 Visual Basic | Visual Studio 2017 15.3 버전 |
+| CS0219, BC42024 | C# 및 Visual Basic | Visual Studio 2017 버전 15.3 이상 |
 
 ### <a name="remove-type-from-default-value-expression"></a>기본값 식에서 형식 제거
 
@@ -173,7 +173,7 @@ void DoWork(CancellationToken cancellationToken = default) { ... }
 
 | 진단 ID | 해당 언어 | 지원되는 버전 |
 | ------- | -------------------- | ---------------- |
-| IDE0034 | C# 7.1+ | Visual Studio 2017 15.3 버전 |
+| IDE0034 | C# 7.1+ | Visual Studio 2017 버전 15.3 이상 |
 
 ## <a name="actions-that-add-missing-code"></a>누락된 코드를 추가하는 작업
 
@@ -210,9 +210,9 @@ Imports System.Diagnostics
 Debug.WriteLine("Hello")
 ```
 
-| 진단 ID | 해당 언어 | 지원되는 버전 |
-| ------- | -------------------- | ---------------- |
-| CS0103, BC30451 | C# 및 Visual Basic| Visual Studio 2015 업데이트 2 |
+| 진단 ID | 해당 언어 |
+| - | - |
+| CS0103, BC30451 | C# 및 Visual Basic|
 
 ### <a name="add-missing-casesdefault-caseboth"></a>누락된 사례/기본 사례/모두 추가
 
@@ -281,7 +281,7 @@ End Select
 
 | 진단 ID | 해당 언어 | 지원되는 버전 |
 | ------- | -------------------- | ---------------- |
-| IDE0010 | C# 및 Visual Basic| Visual Studio 2017 15.3 버전 |
+| IDE0010 | C# 및 Visual Basic| Visual Studio 2017 버전 15.3 이상 |
 
 ### <a name="add-null-checks-for-parameters"></a>매개 변수에 대한 null 검사 추가
 
@@ -315,7 +315,7 @@ class MyClass
 
 | 해당 언어 | 지원되는 버전 |
 | -------------------- | ---------------- |
-| C# 및 Visual Basic| Visual Studio 2017 15.3 버전 |
+| C# 및 Visual Basic| Visual Studio 2017 버전 15.3 이상 |
 
 ### <a name="add-argument-name"></a>인수 이름 추가
 
@@ -331,7 +331,7 @@ var date = new DateTime(year: 1997, month: 7, day: 8);
 
 | 해당 언어 | 지원되는 버전 |
 | -------------------- | ---------------- |
-| C# 및 Visual Basic| Visual Studio 2017 15.3 버전 |
+| C# 및 Visual Basic| Visual Studio 2017 버전 15.3 이상 |
 
 ### <a name="add-braces"></a>중괄호 추가
 
@@ -353,7 +353,7 @@ if (true)
 
 | 진단 ID | 해당 언어 | 지원되는 버전 |
 | ------- | -------------------- | ---------------- |
-| IDE0011 | C# | Visual Studio 2017 RTW |
+| IDE0011 | C# | Visual Studio 2017 이상 |
 
 ### <a name="add-and-order-modifiers"></a>한정자 추가 및 정렬
 
@@ -387,8 +387,8 @@ private static int thisFieldIsPublic;
 
 | 진단 ID | 해당 언어 | 지원되는 버전 |
 | ------- | -------------------- | ---------------- |
-| IDE0036 | C# 및 Visual Basic| Visual Studio 2017 15.5 버전 |
-| IDE0040 | C# 및 Visual Basic| Visual Studio 2017 15.5 버전 |
+| IDE0036 | C# 및 Visual Basic| Visual Studio 2017 버전 15.5 이상 |
+| IDE0040 | C# 및 Visual Basic| Visual Studio 2017 버전 15.5 이상 |
 
 ## <a name="code-transformations"></a>코드 변환
 
@@ -445,7 +445,7 @@ End Select
 
 | 해당 언어 | 지원되는 버전 |
 | -------------------- | ---------------- |
-| C# 및 Visual Basic| Visual Studio 2017 15.3 버전 |
+| C# 및 Visual Basic| Visual Studio 2017 버전 15.3 이상 |
 
 ### <a name="convert-to-interpolated-string"></a>보간된 문자열로 변환
 
@@ -477,7 +477,7 @@ Dim s As String = $"My string with {num} in the middle"
 
 | 해당 언어 | 지원되는 버전 |
 | -------------------- | ---------------- |
-| C# 6.0 이상 및 Visual Basic 14 이상 | Visual Studio 2017 RTW |
+| C# 6.0 이상 및 Visual Basic 14 이상 | Visual Studio 2017 이상 |
 
 ### <a name="use-object-initializers"></a>개체 이니셜라이저 사용
 
@@ -507,7 +507,7 @@ Dim c = New Customer() With {.Age = 21}
 
 | 진단 ID | 해당 언어 | 지원되는 버전 |
 | ------- | -------------------- | ---------------- |
-| IDE0017 | C# 및 Visual Basic | Visual Studio 2017 RTW |
+| IDE0017 | C# 및 Visual Basic | Visual Studio 2017 이상 |
 
 ### <a name="use-collection-initializers"></a>컬렉션 이니셜라이저 사용
 
@@ -541,7 +541,7 @@ Dim list = New List(Of Integer) From {1, 2, 3}
 
 | 진단 ID | 해당 언어 | 지원되는 버전 |
 | ------- | -------------------- | ---------------- |
-| IDE0028 | C# 및 Visual Basic | Visual Studio 2017 RTW |
+| IDE0028 | C# 및 Visual Basic | Visual Studio 2017 이상 |
 
 ### <a name="convert-auto-property-to-full-property"></a>자동 속성을 전체 속성으로 변환
 
@@ -582,7 +582,7 @@ End Property
 
 | 해당 언어 | 지원되는 버전 |
 | -------------------- | ---------------- |
-| C# 및 Visual Basic | Visual Studio 2017 15.5 버전 |
+| C# 및 Visual Basic | Visual Studio 2017 버전 15.5 이상 |
 
 ### <a name="convert-block-body-to-expression-bodied-member"></a>블록 본문을 식 본문 멤버로 변환
 
@@ -635,7 +635,7 @@ class MyClass4
 
 | 진단 ID | 해당 언어 | 지원되는 버전 |
 | ------- | -------------------- | ---------------- |
-| IDE0021-27 | C# 6.0+ | Visual Studio 2017 RTW |
+| IDE0021-27 | C# 6.0+ | Visual Studio 2017 이상 |
 
 ### <a name="convert-anonymous-function-to-local-function"></a>익명 함수를 로컬 함수로 변환
 
@@ -662,7 +662,7 @@ int fibonacci(int n)
 
 | 진단 ID | 해당 언어 | 지원되는 버전 |
 | ------- | -------------------- | ---------------- |
-| IDE0041 | C# 7.0+ | Visual Studio 2017 15.5 버전 |
+| IDE0041 | C# 7.0+ | Visual Studio 2017 버전 15.5 이상 |
 
 이 빠른 작업은 가능한 경우 ```ReferenceEquals``` 코딩 패턴보다는 [패턴 일치](/dotnet/csharp/pattern-matching)를 사용하도록 제안합니다.
 
@@ -686,7 +686,7 @@ if (value is null)
 
 | 진단 ID | 해당 언어 | 지원되는 버전 |
 | ------- | -------------------- | ---------------- |
-| IDE0039 | C# 7.0+ | Visual Studio 2017 15.5 버전 |
+| IDE0039 | C# 7.0+ | Visual Studio 2017 버전 15. 이상 |
 
 ### <a name="introduce-pattern-matching"></a>패턴 일치 소개
 
@@ -728,8 +728,8 @@ if (o is string s)
 
 | 진단 ID | 해당 언어 | 지원되는 버전 |
 | ------- | -------------------- | ---------------- |
-| IDE0020 | C# 7.0+ | Visual Studio 2017 RTW |
-| IDE0019 | C# 7.0+ | Visual Studio 2017 RTW |
+| IDE0020 | C# 7.0+ | Visual Studio 2017 이상 |
+| IDE0019 | C# 7.0+ | Visual Studio 2017 이상 |
 
 ### <a name="change-base-for-numeric-literals"></a>숫자 리터럴에 대한 기본 변경
 
@@ -757,7 +757,7 @@ Dim countdown As Integer = &H200000
 
 | 해당 언어 | 지원되는 버전 |
 | ------- | -------------------- | ---------------- |
-| C# 7.0+ 및 Visual Basic 14+ | Visual Studio 2017 15.3 버전 |
+| C# 7.0+ 및 Visual Basic 14+ | Visual Studio 2017 버전 15.3 이상 |
 
 ### <a name="insert-digit-separators-into-literals"></a>자릿수 구분 기호를 리터럴로 삽입
 
@@ -785,7 +785,7 @@ Dim countdown As Integer = 1_000_000
 
 | 해당 언어 | 지원되는 버전 |
 | ------- | -------------------- | ---------------- |
-| C# 7.0+ 및 Visual Basic 14+ | Visual Studio 2017 15.3 버전 |
+| C# 7.0+ 및 Visual Basic 14+ | Visual Studio 2017 버전 15.3 이상 |
 
 ### <a name="use-explicit-tuple-names"></a>명시적 튜플 이름 사용
 
@@ -817,7 +817,7 @@ Dim name = customer.name
 
 | 진단 ID | 해당 언어 | 지원되는 버전 |
 | ------- | -------------------- | ---------------- |
-| IDE0033 | C# 7.0+ 및 Visual Basic 15+ | Visual Studio 2017 RTW |
+| IDE0033 | C# 7.0+ 및 Visual Basic 15+ | Visual Studio 2017 이상 |
 
 ### <a name="use-inferred-names"></a>유추된 이름 사용
 
@@ -845,8 +845,8 @@ var tuple = (age, name);
 
 | 진단 ID | 해당 언어 | 지원되는 버전 |
 | ------- | -------------------- | ---------------- |
-| IDE0037 | C# | Visual Studio 2017 v. 15.5 |
-| IDE0037 | C# 7.1+ | Visual Studio 2017 v. 15.5 |
+| IDE0037 | C# | Visual Studio 2017 버전 15.5 이상 |
+| IDE0037 | C# 7.1+ | Visual Studio 2017 버전 15.5 이상 |
 
 ### <a name="deconstruct-tuple-declaration"></a>튜플 선언 해체
 
@@ -872,7 +872,7 @@ Console.WriteLine($"{x} {y}");
 
 | 진단 ID | 해당 언어 | 지원되는 버전 |
 | ------- | -------------------- | ---------------- |
-| IDE0042 | C# 7.0+ | Visual Studio 2017 v. 15.5 |
+| IDE0042 | C# 7.0+ | Visual Studio 2017 버전 15.5 이상 |
 
 ### <a name="make-method-synchronous"></a>메서드 동기화
 
@@ -908,9 +908,9 @@ Function MyAsyncMethod() As Integer
 End Function
 ```
 
-| 오류 ID | 해당 언어 | 지원되는 버전 |
-| ------- | -------------------- | ---------------- |
-| CS1998, BC42356 | C# 및 Visual Basic | Visual Studio 2015 업데이트 2 |
+| 오류 ID | 해당 언어 |
+| ------- | -------------------- |
+| CS1998, BC42356 | C# 및 Visual Basic |
 
 ### <a name="make-method-asynchronous"></a>메서드 비동기화
 
@@ -948,7 +948,7 @@ End Function
 
 | 오류 ID | 해당 언어 | 지원되는 버전 |
 | ------- | -------------------- | ---------------- |
-| CS4032, BC37057 | C# 및 Visual Basic | Visual Studio 2017 |
+| CS4032, BC37057 | C# 및 Visual Basic | Visual Studio 2017 이상 |
 
 ## <a name="see-also"></a>참고 항목
 

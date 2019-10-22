@@ -13,15 +13,15 @@ helpviewer_keywords:
 - UML diagrams, generating code
 ms.assetid: 2790e64d-7728-4c2e-a4dd-4131e795f730
 caps.latest.revision: 53
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 23cefa3d072c2e582237152bff77a2271046053d
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 75120b2f09c2eba3254a1b94e78875d8130c5225
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871825"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666138"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>UML 클래스 다이어그램에서 코드 생성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,11 +88,11 @@ Visual Studio의 C# UML 클래스 다이어그램에서 visual .net 코드를 �
 
 |**이 C# 형식을 만들려면**|**이 UML 형식 그리기**|**이 스테레오 타입 적용**|
 |---------------------------------|----------------------------|-------------------------------|
-|클래스|클래스|\<없음 > 또는<br /><br /> C# class|
-|인터페이스|인터페이스|\<없음 > 또는<br /><br /> C# interface|
-|열거형|열거형|\<없음 > 또는<br /><br /> C# enum|
-|대리자|클래스|C# delegate|
-|구조체|클래스|C# struct|
+|인스턴스|인스턴스|\<none > 또는<br /><br /> C# class|
+|인터페이스|인터페이스|\<none > 또는<br /><br /> C# interface|
+|열거형|열거형|\<none > 또는<br /><br /> C# enum|
+|대리자(delegate)|인스턴스|C# delegate|
+|구조체|인스턴스|C# struct|
 
 #### <a name="to-set-a-stereotype-on-a-type-or-other-element"></a>형식 또는 기타 요소에 대해 스테레오타입을 설정하려면
 
@@ -108,7 +108,7 @@ Visual Studio의 C# UML 클래스 다이어그램에서 visual .net 코드를 �
    형식, 특성, 작업 및 연결의 **설명** 속성은 생성 된 코드의 `<summary>` 주석에 기록 됩니다. 형식에 연결된 주석 요소는 `<remarks>` 주석에 기록됩니다.
 
 ## <a name="varying-the-generated-code"></a>생성된 코드 변경
- 생성된 코드는 각 형식, 특성 또는 작업의 속성에 따라 달라집니다. 예를 들어 클래스의 **Is Abstract** 속성을 true `abstract` 로 설정 하면 생성 된 클래스에 키워드가 표시 됩니다. 특성의 **복합성** 을 **\*0..** 로 설정 하면 생성 된 속성 `IEnumerable<>` 은 형식을 갖습니다.
+ 생성된 코드는 각 형식, 특성 또는 작업의 속성에 따라 달라집니다. 예를 들어 클래스의 **Is Abstract** 속성을 true로 설정 하면 `abstract` 키워드가 생성 된 클래스에 표시 됩니다. 특성의 **복합성** 을 **0. \*** 로 설정 하는 경우 생성 된 속성은 `IEnumerable<>` 형식을 갖습니다.
 
  또한 각 스테레오타입은 설정할 수 있는 몇 가지 추가 속성을 제공합니다. 이러한 값은 C# 코드에서 적절한 키워드로 변환됩니다. 예를 들어 클래스에서 `Is Static` 속성을 설정하면 C# 클래스가 `static`이 됩니다.
 
@@ -166,11 +166,11 @@ Visual Studio의 C# UML 클래스 다이어그램에서 visual .net 코드를 �
 
    |    **Property**    |                                                                                                                                                                                                                                                                                                                    **설명**                                                                                                                                                                                                                                                                                                                    |
    |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |        이름        |                                                                                                                                                                                                                                                  이 바인딩의 이름입니다. 포함하는 패키지 또는 모델에서 상속한 바인딩을 재정의하려면 재정의할 바인딩과 동일한 이름을 사용합니다.                                                                                                                                                                                                                                                  |
+   |        name        |                                                                                                                                                                                                                                                  이 바인딩의 이름입니다. 포함하는 패키지 또는 모델에서 상속한 바인딩을 재정의하려면 재정의할 바인딩과 동일한 이름을 사용합니다.                                                                                                                                                                                                                                                  |
    |     덮어쓰기      |                                                                                                                                                                                                                                                                                                      true이면 모든 기존 코드를 덮어씁니다.                                                                                                                                                                                                                                                                                                       |
-   |    대상 이름     | 생성된 파일의 이름입니다.<br /><br /> `{Name}` 또는`{Owner.Name}`와 같은이 문자열에 식을 삽입할 수 있습니다. 예를 들어를 작성할 `{Owner.Name}_{Name}`수 있습니다. 식은 모델 요소에 대해 평가됩니다. 식에서는 요소의 속성을 사용할 수 있지만 메서드의 속성은 사용할 수 없습니다. 속성을 사용할 수를 찾으려면 형식의 속성을 찾아 **Microsoft.VisualStudio.Uml.\*** . \*\*중요:\*\*  `{Name}` 하거나 `{Owner.Name}` 에서만 사용할 수는 **대상 이름** 속성입니다. 생성된 클래스의 이름을 변경하려면 템플릿을 수정해야 합니다. 자세한 내용은 [텍스트 템플릿 작성](#writing)을 참조 하세요. |
+   |    대상 이름     | 생성된 파일의 이름입니다.<br /><br /> @No__t_0 또는 `{Owner.Name}`와 같이이 문자열에 식을 삽입할 수 있습니다. 예를 들어 `{Owner.Name}_{Name}`를 작성할 수 있습니다. 식은 모델 요소에 대해 평가됩니다. 식에서는 요소의 속성을 사용할 수 있지만 메서드의 속성은 사용할 수 없습니다. 사용할 수 있는 속성을 찾으려면 **\* VisualStudio**에서 형식의 속성을 참조 하세요. \* \*Important: \* \* `{Name}` 또는 `{Owner.Name}`는 **대상 이름** 속성에만 사용할 수 있습니다. 생성된 클래스의 이름을 변경하려면 템플릿을 수정해야 합니다. 자세한 내용은 [텍스트 템플릿 작성](#writing)을 참조 하세요. |
    |    프로젝트 경로    |                                                                      변환의 출력 파일을 포함할 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 프로젝트의 경로를 지정합니다. 새 프로젝트를 만들려면 형식화된 값을 사용하고, 줄임표 단추 ( **[...]** )를 선택 하 여 기존 프로젝트를 선택 합니다.<br /><br /> 새 프로젝트가 없는 경우 만들어지며, C# 클래스 라이브러리 프로젝트가 됩니다.<br /><br /> 이렇게 하려면 프로젝트를 직접 입력해야 합니다. %ProgramFiles% 또는 %LocalAppData%와 같은 환경 변수 매크로를 포함할 수 있습니다.                                                                       |
-   |  대상 디렉터리  |                                                                                          대상 파일이 생성된 폴더입니다. 경로는 프로젝트 폴더에 상대적입니다.<br /><br /> `{PackageStructure}` 식을 사용하여, 포함하는 패키지의 이름에 해당하는 경로를 삽입할 수 있습니다. 기본값은 `\GeneratedCode\{PackageStructure}`입니다. %TEMP% 또는 %HomePath%와 같은 환경 변수도 포함할 수 있습니다. **중요:** `{PackageStructure}` **대상 디렉터리** 속성에만 사용할 수 있습니다.                                                                                          |
+   |  대상 디렉터리  |                                                                                          대상 파일이 생성된 폴더입니다. 경로는 프로젝트 폴더에 상대적입니다.<br /><br /> `{PackageStructure}` 식을 사용하여, 포함하는 패키지의 이름에 해당하는 경로를 삽입할 수 있습니다. 기본값은 `\GeneratedCode\{PackageStructure}`여야 합니다. %TEMP% 또는 %HomePath%와 같은 환경 변수도 포함할 수 있습니다. **중요:** `{PackageStructure}`는 **대상 디렉터리** 속성에만 사용할 수 있습니다.                                                                                          |
    | 템플릿 파일 경로 |                                                                                                                                                           변형을 수행할 템플릿입니다.<br /><br /> 제공된 템플릿을 사용하거나 사용자 고유의 템플릿을 만들 수 있습니다. 다음 위치에서 제공된 템플릿을 찾을 수 있습니다.<br /><br /> …\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\                                                                                                                                                           |
 
 5. 바인딩을 원하는 만큼 요소에 연결할 수 있습니다.
@@ -188,7 +188,7 @@ Visual Studio의 C# UML 클래스 다이어그램에서 visual .net 코드를 �
 
 - 프로그램 코드에서 UML 모델을 탐색하려면 UML API를 사용해야 합니다. 자세한 내용은 uml [모델 탐색](../modeling/navigate-the-uml-model.md) 및 [uml 모델링 확장성에 대 한 API 참조](../modeling/api-reference-for-uml-modeling-extensibility.md)를 참조 하세요.
 
-  **코드 생성** 명령을 사용 하 여 템플릿을 사용 하려면 모델링 지시문을 포함 해야 합니다. 예를 들어:
+  **코드 생성** 명령을 사용 하 여 템플릿을 사용 하려면 모델링 지시문을 포함 해야 합니다. 예를 들면,
 
   `<#@ Modeling ElementType="Microsoft.VisualStudio.Uml.Classes.IClass" Processor="ModelingProcessor" #>`
 
@@ -196,7 +196,7 @@ Visual Studio의 C# UML 클래스 다이어그램에서 visual .net 코드를 �
 
   템플릿에서 `this`는 다음 속성이 있는 임시 클래스에 속합니다.
 
-- `Element`= 템플릿이 적용 되는 UML [IElement](/previous-versions/dd516035(v=vs.140)) .
+- `Element` = 템플릿이 적용 되는 UML [IElement](/previous-versions/dd516035(v=vs.140)) .
 
 - `Errors`: <xref:System.CodeDom.Compiler.CompilerErrorCollection>
 
@@ -210,7 +210,7 @@ Visual Studio의 C# UML 클래스 다이어그램에서 visual .net 코드를 �
 
 - `Session`: <xref:Microsoft.VisualStudio.TextTemplating.TextTemplatingSession>입니다.
 
-- `Store`: <xref:Microsoft.VisualStudio.Modeling.Store>입니다. UML ModelStore가 구현되는 Visualization and Modeling SDK 저장소입니다. UML [Imodelstore](/previous-versions/ee789385(v=vs.140))를 가져오려면를 사용 `this.Element.GetModelStore()`합니다.
+- `Store`: <xref:Microsoft.VisualStudio.Modeling.Store>입니다. UML ModelStore가 구현되는 Visualization and Modeling SDK 저장소입니다. UML [Imodelstore](/previous-versions/ee789385(v=vs.140))를 가져오려면 `this.Element.GetModelStore()`를 사용 합니다.
 
   텍스트 템플릿을 작성하는 동안 다음 사항을 참고하면 도움이 될 수 있습니다. 이 정보는 [코드 생성 및 T4 텍스트 템플릿](../modeling/code-generation-and-t4-text-templates.md)에 자세히 설명 되어 있습니다.
 
@@ -218,11 +218,11 @@ Visual Studio의 C# UML 클래스 다이어그램에서 visual .net 코드를 �
 
 - 일부 어셈블리는 템플릿에서 자동으로 참조됩니다. 이러한 어셈블리에는 System.dll, Microsoft.VisualStudio.Uml.Interfaces.dll 등이 있습니다.
 
-   생성하는 프로그램 코드에서 다른 어셈블리를 사용하려면 `Assembly` 지시문을 사용해야 합니다. 예를 들어:
+   생성하는 프로그램 코드에서 다른 어셈블리를 사용하려면 `Assembly` 지시문을 사용해야 합니다. 예를 들면,
 
    `<#@ Assembly Name="%ProgramFiles%\Microsoft Visual Studio 12.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll" #>`
 
-- `System`과 같은 일부 네임스페이스를 프로그램 코드에 자동으로 가져올 수 있습니다. 다른 네임스페이스의 경우 `Import` 문을 사용할 때와 같은 방식으로 `using` 지시문을 사용할 수 있습니다. 예를 들어:
+- `System`과 같은 일부 네임스페이스를 프로그램 코드에 자동으로 가져올 수 있습니다. 다른 네임스페이스의 경우 `Import` 문을 사용할 때와 같은 방식으로 `using` 지시문을 사용할 수 있습니다. 예를 들면,
 
    `<#@ Import Namespace="Microsoft.VisualStudio.Uml.Classes" #>`
 
@@ -230,9 +230,9 @@ Visual Studio의 C# UML 클래스 다이어그램에서 visual .net 코드를 �
 
 - `Include` 지시문을 사용하여 다른 파일의 텍스트를 참조할 수 있습니다.
 
-- 대괄호로 `<# ... #>` 묶인 템플릿 부분은 **코드 생성** 명령에 의해 실행 됩니다. 이러한 꺾쇠 괄호 밖에 있는 템플릿의 부분은 결과 파일에 복사됩니다. 생성하는 코드와 생성된 텍스트를 구별할 수 있어야 합니다. 텍스트는 어떠한 언어로도 생성될 수 있습니다.
+- 괄호 안에 포함 된 템플릿 부분은 **코드 생성** 명령으로 실행 `<# ... #>`. 이러한 꺾쇠 괄호 밖에 있는 템플릿의 부분은 결과 파일에 복사됩니다. 생성하는 코드와 생성된 텍스트를 구별할 수 있어야 합니다. 텍스트는 어떠한 언어로도 생성될 수 있습니다.
 
 - `<#= Expressions #>`은 평가되고 문자열로 변환됩니다.
 
-## <a name="see-also"></a>참고 항목
- [UML 클래스 다이어그램: UML](../modeling/uml-class-diagrams-reference.md) 클래스 다이어그램 참조 [: ](../modeling/uml-class-diagrams-guidelines.md) [UML 모델에서 파일 생성](../modeling/generate-files-from-a-uml-model.md) 지침
+## <a name="see-also"></a>관련 항목:
+ [Uml 클래스 다이어그램: 참조](../modeling/uml-class-diagrams-reference.md) [uml 클래스 다이어그램: 지침](../modeling/uml-class-diagrams-guidelines.md) [uml 모델에서 파일 생성](../modeling/generate-files-from-a-uml-model.md)

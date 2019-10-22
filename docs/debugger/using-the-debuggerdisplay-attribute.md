@@ -12,19 +12,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fbe3ff31d00945ef462c5c20eb1c4b33c250f97
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: f16040408def290536ac5dadfec77ade9577c821
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887754"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72568914"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>DebuggerDisplay 특성을 사용 하 여 표시할 내용 (C#, Visual Basic, F#, C++/cli)을 디버거에 알립니다.
+
 <xref:System.Diagnostics.DebuggerDisplayAttribute>는 개체, 속성 또는 필드가 디버거 변수 창에 표시되는 방식을 제어합니다. 이 특성은 형식, 대리자, 속성, 필드 및 어셈블리에 적용할 수 있습니다. 기본 형식에 적용 되는 경우 특성은 하위 클래스에도 적용 됩니다.
 
 `DebuggerDisplay` 특성에는 형식 인스턴스에 대한 값 열에 표시되는 문자열인 단일 인수가 있습니다. 이 문자열에는 중괄호(`{` 및 `}`)가 포함될 수 있습니다. 중괄호 쌍 안의 텍스트는 필드, 속성 또는 메서드로 확인됩니다.
 
-클래스에 재정의된 `ToString()` 메서드가 있는 경우 디버거에서는 기본 `{<typeName>}`대신 재정의된 메서드를 사용합니다. 따라서 `ToString()` 메서드를 재정의한 경우 디버거는 기본`{<typeName>}`대신 재정의된 메서드를 사용하므로 `DebuggerDisplay`를 사용할 필요가 없습니다. 둘 다 사용하는 경우에는 `DebuggerDisplay` 특성이 재정의된 `ToString()` 메서드보다 우선합니다. 특성 `DebuggerDisplay` 은 하위 클래스의 재정의 `ToString()` 된 메서드에도 우선적으로 적용 됩니다.
+클래스에 재정의된 `ToString()` 메서드가 있는 경우 디버거에서는 기본 `{<typeName>}`대신 재정의된 메서드를 사용합니다. 따라서 `ToString()` 메서드를 재정의한 경우 디버거는 기본`{<typeName>}`대신 재정의된 메서드를 사용하므로 `DebuggerDisplay`를 사용할 필요가 없습니다. 둘 다 사용하는 경우에는 `DebuggerDisplay` 특성이 재정의된 `ToString()` 메서드보다 우선합니다. 또한 `DebuggerDisplay` 특성은 하위 클래스의 재정의 된 `ToString()` 메서드 보다 우선 적용 됩니다.
 
 디버거가 이 암시적 `ToString()` 호출을 평가할지 여부는 **도구/옵션/디버깅** 대화 상자의 사용자 설정에 따라 결정됩니다. Visual Basic에서는 이 암시적 `ToString()` 평가를  구현하지 않습니다.
 
@@ -95,7 +96,7 @@ public sealed class MyClass
 ## <a name="example"></a>예제
 다음 코드 예제에서는 `DebuggerDisplay`와 `DebuggerBrowseable` 및 `DebuggerTypeProxy`를 함께 사용하는 방법을 보여 줍니다. **조사식** 창과 같은 디버거 변수 창에 이 코드가 표시될 때는 다음과 같은 확장이 생성됩니다.
 
-|**이름**|**값**|**Type**|
+|**이름**|**Value**|**Type**|
 |--------------|---------------|--------------|
 |Key|"three"|object {string}|
 |값|3|object {int}|
@@ -178,9 +179,9 @@ class MyHashtable
 }
 ```
 
-## <a name="see-also"></a>관련 항목
+## <a name="see-also"></a>관련 항목:
 
 - [DebuggerTypeProxy 특성 사용](../debugger/using-debuggertypeproxy-attribute.md)
-- [관리 개체의 사용자 지정 뷰 만들기](../debugger/create-custom-views-of-dot-managed-objects.md)
+- [관리 개체의 사용자 지정 뷰 만들기](../debugger/create-custom-views-of-managed-objects.md)
 - [C#의 형식 지정자](../debugger/format-specifiers-in-csharp.md)
 - [디버거 표시 특성을 사용하여 디버깅 향상](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47932e8a647cb9a5ae555de09778fcd67da397e2
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 8acc67aa82bb0d7cf81cf6794bfdbb4e0c912ebe
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118731"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314235"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>6단계: 빼기 문제 추가
 이 자습서의 6단계에서는 빼기 문제를 추가하고 다음 작업을 수행하는 방법을 알아봅니다.
@@ -43,8 +43,7 @@ ms.locfileid: "71118731"
      [!code-vb[VbExpressTutorial3Step5_6#12](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#12](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_1.cs)]
 
-     > [!IMPORTANT]
-     > 이 페이지의 오른쪽 위에 있는 프로그래밍 언어 컨트롤을 사용하여 C# 코드 조각 또는 Visual Basic 코드 조각을 볼 수 있습니다.<br><br>![Docs.Microsoft.com에 대한 프로그래밍 언어 컨트롤](../ide/media/docs-programming-language-control.png)
+     [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
      새 정수 변수의 이름인 **minuend**와 **subtrahend**는 프로그래밍 용어가 아닙니다. 이러한 이름은 뺌수(subtrahend)와 빼임수(minuend)를 산술 형식으로 표현한 일반적인 이름입니다. 차는 피감수에서 감수를 뺀 값입니다. 프로그램에서 변수, 컨트롤, 구성 요소 또는 메서드에 특정 이름을 사용하도록 요구하지 않기 때문에 다른 이름을 사용할 수도 있습니다. 이름을 숫자로 시작하면 안 된다는 것과 같은 몇 가지 규칙이 있지만 일반적으로 x1, x2, x3, x4 등과 같은 이름을 사용할 수 있습니다. 그러나 이 경우 코드를 읽기 어렵고 문제를 추적하기가 거의 불가능할 수 있습니다. 변수 이름을 고유하고 알아보기 쉽게 만들기 위해 이 자습서의 뒷부분에서는 곱하기(multiplicand × multiplier = product)와 나누기(dividend ÷ divisor = quotient)에 일반적인 이름을 사용합니다.
 

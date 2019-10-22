@@ -14,18 +14,18 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 00b041b4cb2009d247572d1e47dfff40d8548927
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 22e06b9723100141a0e3679e401d1bc339dddad5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003613"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562214"
 ---
 # <a name="active-script-authoring-interfaces"></a>액티브 스크립트 작성 인터페이스
-ActivAut.h 헤더 파일에는이 섹션에 나열 된 인터페이스를 제공 합니다.  
+ActivAut 헤더 파일은이 섹션에 나열 된 인터페이스를 제공 합니다.  
   
-## <a name="in-this-section"></a>섹션 내용  
- 다음 인터페이스 웹 페이지 작성을 사용 하도록 설정 합니다.  
+## <a name="in-this-section"></a>단원 내용  
+ 다음 인터페이스를 사용 하 여 웹 페이지를 제작할 수 있습니다.  
   
 - [IActiveScriptAuthor 인터페이스](../../winscript/reference/iactivescriptauthor-interface.md)  
   
@@ -37,5 +37,5 @@ ActivAut.h 헤더 파일에는이 섹션에 나열 된 인터페이스를 제공
   
 - [IScriptScriptlet 인터페이스](../../winscript/reference/iscriptscriptlet-interface.md)  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [Windows 스크립트 인터페이스 참조](../../winscript/reference/windows-script-interfaces-reference.md)

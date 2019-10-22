@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread110::IsSuspendedForBreakPoint | Microsoft Docs
+title: 'IDebugApplicationThread110:: IsSuspendedForBreakPoint | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 82b8957ae9f2b6674af7addf2239c745115e4e3f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b0e70993b95ccffcf6041bb04f37af90667fc4fd
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440533"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574451"
 ---
 # <a name="idebugapplicationthread110issuspendedforbreakpoint"></a>IDebugApplicationThread110::IsSuspendedForBreakPoint
-확인 여부 [IDebugApplicationThreadEvents110::OnSuspendForBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onsuspendforbreakpoint.md) 이 스레드에서 호출 되었고, 아직 완료 되지 않았습니다.  
+이 스레드에서 [IDebugApplicationThreadEvents110:: OnSuspendForBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onsuspendforbreakpoint.md) 가 호출 되었으며 아직 완료 되지 않은 경우를 확인 합니다.  
   
 > [!IMPORTANT]
-> [IDebugApplicationThread110 인터페이스](../../winscript/reference/idebugapplicationthread110-interface.md) 는 PDM v11.0에 의해 구현 된 이상. activdbg100.h에서 찾을 수 있습니다.  
+> [IDebugApplicationThread110 인터페이스](../../winscript/reference/idebugapplicationthread110-interface.md) 는 PDM v 11.0 이상에 의해 구현 됩니다. activdbg100.h에서 찾을 수 있습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,7 +34,7 @@ HRESULT IsSuspendedForBreakPoint([out, annotation("_Out_")] BOOL * pfIsSuspended
   
 #### <a name="parameters"></a>매개 변수  
  `pfIsSuspended`  
- [out] `true` 스레드가 일시 중단 됩니다 중단점, 그렇지 않으면 `false`합니다.  
+ [out] 스레드가 중단점에 대해 일시 중단 되 면 `true`이 고, 그렇지 않으면 `false`입니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [IDebugApplicationThread110 인터페이스](../../winscript/reference/idebugapplicationthread110-interface.md)

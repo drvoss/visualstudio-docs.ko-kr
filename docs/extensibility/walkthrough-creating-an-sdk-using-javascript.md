@@ -16,13 +16,13 @@ ms.lasthandoff: 05/29/2019
 ms.locfileid: "66312544"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>연습: JavaScript를 사용 하 여 SDK 만들기
-이 연습에서는 JavaScript는 간단한 수학 SDK는 Visual Studio 확장 (VSIX)로 만들기를 사용 하는 방법을 설명 합니다.  이 연습에서는 이러한 부분으로 구분 됩니다.
+이 연습에서는 JavaScript를 이용해 간단한 수학 SDK를 만들어 Visual Studio 확장(VSIX)으로 사용하는 방법을 설명합니다.  이 연습은 다음과 같은 파트로 구분됩니다.
 
 - [SimpleMathVSIX 확장 SDK 프로젝트를 만들려면](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSimpleMathVSIX)
 
 - [SDK를 사용 하는 샘플 앱을 만들려면](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSampleApp)
 
-  JavaScript에 대 한 형식이 없습니다 클래스 라이브러리 프로젝트입니다. 이 연습에서는 샘플 *arithmetic.js* VSIX 프로젝트에서 직접 파일이 만들어집니다. 실제로 것이 좋습니다는 먼저 빌드 및 테스트 JavaScript 및 CSS 파일을 Windows 스토어 앱-를 사용 하 여 예를 들어 합니다 **비어 있는 앱** 템플릿-VSIX 프로젝트에 삽입 하기 전에 합니다.
+  JavaScript에는 클래스 라이브러리 프로젝트 형식이 없습니다. 이 연습에서는 샘플 *arithmetic.js* 파일이 VSIX 프로젝트에 직접 생성됩니다. 실전에서는 VSIX 프로젝트에 삽입하기 전에 JavaScript 및 CSS 파일을 먼저 Windows 스토어 앱-예를 들어, **비어 있는 앱 템플릿**을 사용하여-으로 빌드 및 테스트하는 것을 권장합니다.
 
 ## <a name="prerequisites"></a>전제 조건
  이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)합니다.
@@ -33,11 +33,11 @@ ms.locfileid: "66312544"
 
 2. 템플릿 범주 목록에서 아래 **Visual C#** 를 선택 **확장성**를 선택한 후는 **VSIX 프로젝트** 템플릿.
 
-3. 에 **이름** 텍스트 상자에서 지정 `SimpleMathVSIX` 선택 합니다 **확인** 단추.
+3. **이름** 텍스트 상자에서, `SimpleMathVSIX` 선택 후 **확인** 버튼을 선택합니다.
 
-4. 경우는 **Visual Studio 패키지 마법사** 나타납니다 선택 합니다 **다음** 단추를 **시작** 페이지에서 한 후 **7의 1 페이지**, 선택는 **완료** 단추입니다.
+4. **Visual Studio 패키지 마법사**가 나타나는 경우, **시작** 페이지에서 **다음** 버튼을 클릭한 후 **7 페이지 중 1 페이지**에서 **완료** 버튼을 선택합니다.
 
-     하지만 합니다 **매니페스트 디자이너** 열리면 보존이 연습에서는 간단한 매니페스트 파일을 직접 수정 하 여 합니다.
+     비록 **매니페스트 디자이너**가 열리지만, 이 연습에서는 간단하게 매니페스트 파일을 직접 수정하겠습니다.
 
 5. **솔루션 탐색기**에 대 한 바로 가기 메뉴를 열고 합니다 **source.extension.vsixmanifest** 파일을 선택한 후 **코드 보기**합니다. 이 코드를 사용 하 여 파일의 기존 내용을 바꿉니다.
 

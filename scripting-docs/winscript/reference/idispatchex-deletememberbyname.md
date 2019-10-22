@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::DeleteMemberByName | Microsoft Docs
+title: IDispatchEx::D eleteMemberByName | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dc7c8db4ab28e0bd0fcb48f352cb07595f72fd17
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2abb562f65885ee1d12f2ec9b2300fcddd3be37b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000895"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576614"
 ---
 # <a name="idispatchexdeletememberbyname"></a>IDispatchEx::DeleteMemberByName
-이름으로 멤버를 삭제합니다.  
+이름을 기준으로 멤버를 삭제 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,25 +41,25 @@ HRESULT DeleteMemberByName(
  삭제할 멤버의 이름입니다.  
   
  `grfdex`  
- 멤버 이름이 대/소문자 구분을 결정 합니다. 다음 값 중 하나일 수 있습니다.  
+ 멤버 이름이 대/소문자를 구분 하는지 여부를 확인 합니다. 이 값은 다음 값 중 하나일 수 있습니다.  
   
 |값|의미|  
 |-----------|-------------|  
-|fdexNameCaseSensitive|요청 이름 조회는 대/소문자 구분 방식으로 수행 합니다. 대/소문자 구분 조회를 지원 하지 않는 개체에 의해 무시 됩니다.|  
-|fdexNameCaseInsensitive|요청 이름 조회는 대/소문자 구분 방식으로 수행 합니다. 대/소문자 구분 조회를 지원 하지 않는 개체에 의해 무시 됩니다.|  
+|fdexNameCaseSensitive|대/소문자 구분 방식으로 이름 조회를 수행 하도록 요청 합니다. 대/소문자를 구분 하는 조회를 지원 하지 않는 개체에서 무시할 수 있습니다.|  
+|fdexNameCaseInsensitive|대/소문자를 구분 하지 않는 방식으로 이름 조회를 수행 하도록 요청 합니다. 대/소문자를 구분 하지 않는 조회를 지원 하지 않는 개체에서 무시할 수 있습니다.|  
   
 ## <a name="return-value"></a>반환 값  
- 다음 값 중 하나를 반환합니다.  
+ 는 다음 값 중 하나를 반환 합니다.  
   
 |||  
 |-|-|  
-|`S_OK`|명령 실행 성공|  
+|`S_OK`|성공할.|  
 |`S_FALSE`|멤버가 있지만 삭제할 수 없습니다.|  
   
-## <a name="remarks"></a>설명  
- 경우 DISPID를 유효한 상태를 유지 해야 멤버 삭제 되 면 `GetNextDispID`합니다.  
+## <a name="remarks"></a>주의  
+ 멤버가 삭제 된 경우 DISPID는 `GetNextDispID`에 대해 유효한 상태로 유지 되어야 합니다.  
   
- 지정 된 이름을 가진 멤버는를 삭제 하 고 나중에 동일한 이름 가진 멤버를 다시 만들 경우 dispid가 동일 해야 합니다. (대/소문자만 다른 멤버인 "same" 한지 종속 개체입니다.)  
+ 지정 된 이름의 멤버를 삭제 하 고 나중에 동일한 이름의 멤버를 다시 만들 경우 DISPID는 동일 해야 합니다. 대/소문자만 다른 멤버가 "동일" 인지 여부는 개체에 따라 달라 집니다.  
   
 ## <a name="example"></a>예제  
   
@@ -71,5 +71,5 @@ IDispatchEx *pdex;
 pdex->DeleteMemberByName(bstrName, fdexNameCaseSensitive);  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [IDispatchEx 인터페이스](../../winscript/reference/idispatchex-interface.md)

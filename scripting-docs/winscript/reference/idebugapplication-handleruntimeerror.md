@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::HandleRuntimeError | Microsoft Docs
+title: 'IDebugApplication:: HandleRuntimeError | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c2c9a8b15b5095ac346ba047d6668aada7647a31
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2fd4ba2b811cd6c4e38c10a0c68c5808f2c0870a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412432"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574328"
 ---
 # <a name="idebugapplicationhandleruntimeerror"></a>IDebugApplication::HandleRuntimeError
-현재 스레드를 차단 하 고 디버거 IDE 오류에 대 한 알림을 보냅니다.  
+현재 스레드가 오류에 대 한 알림을 디버거 IDE로 차단 하 고 보냅니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -41,36 +41,36 @@ HRESULT HandleRuntimeError(
   
 #### <a name="parameters"></a>매개 변수  
  `pErrorDebug`  
- [in] 발생 한 오류입니다.  
+ 진행 발생 한 오류입니다.  
   
  `pScriptSite`  
- [in] 스크립트 사이트는 스레드입니다.  
+ 진행 스레드의 스크립트 사이트입니다.  
   
  `pbra`  
- [out] 디버거에서 응용 프로그램을 다시 시작 될 때 수행할 동작입니다.  
+ 제한이 디버거가 응용 프로그램을 다시 시작할 때 수행할 동작입니다.  
   
  `perra`  
- [out] 디버거에서 오류가 발생 하는 경우 응용 프로그램을 다시 시작 될 때 수행할 동작입니다.  
+ 제한이 오류가 발생 한 경우 디버거가 응용 프로그램을 다시 시작할 때 수행할 동작입니다.  
   
  `pfCallOnScriptError`  
- [out] 플래그는 `TRUE` 엔진을 호출 해야 하는 경우는 `IActiveScriptSite::OnScriptError` 메서드.  
+ 제한이 엔진이 `IActiveScriptSite::OnScriptError` 메서드를 호출 해야 하는 경우 `TRUE` 되는 플래그입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
+ 메서드는 `HRESULT`를 반환 합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
   
 |값|설명|  
 |-----------|-----------------|  
 |`S_OK`|메서드가 성공했으며|  
   
-## <a name="remarks"></a>설명  
- 언어 엔진에서 런타임 오류를 발생 시킨 스레드의 컨텍스트에서이 메서드를 호출 합니다. 이 메서드는 현재 스레드를 차단 하 고 디버거 IDE에 보낼 오류 알림을 보냅니다. 디버거 IDE 응용 프로그램을 나올 때 수행할 동작을 사용 하 여이 메서드를 반환 합니다.  
+## <a name="remarks"></a>주의  
+ 언어 엔진은 런타임 오류를 발생 시키는 스레드의 컨텍스트에서이 메서드를 호출 합니다. 이 메서드는 현재 스레드가 차단 되 고 디버거 IDE로 보낼 오류 알림을 보냅니다. 디버거 IDE에서 응용 프로그램을 다시 시작할 때이 메서드는 수행할 작업을 반환 합니다.  
   
 > [!NOTE]
-> 런타임 오류에서 스택 프레임을 열거 하거나 식을 평가 하는 대로 이러한 작업을 수행 하는 스레드에서 언어 엔진을 호출할 수 있습니다.  
+> 런타임 오류 시 스레드는 스택 프레임 열거 또는 식 계산 등의 작업을 수행 하기 위해 언어 엔진을 호출할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [IDebugApplication 인터페이스](../../winscript/reference/idebugapplication-interface.md)   
- [IActiveScriptErrorDebug 인터페이스](../../winscript/reference/iactivescripterrordebug-interface.md)   
- [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)   
- [BREAKRESUMEACTION 열거형](../../winscript/reference/breakresumeaction-enumeration.md)   
+## <a name="see-also"></a>참조  
+ [Idebugapplication 인터페이스](../../winscript/reference/idebugapplication-interface.md)    
+ [IActiveScriptErrorDebug 인터페이스](../../winscript/reference/iactivescripterrordebug-interface.md)    
+ [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)    
+ [BREAKRESUMEACTION 열거형](../../winscript/reference/breakresumeaction-enumeration.md)    
  [ERRORRESUMEACTION 열거형](../../winscript/reference/errorresumeaction-enumeration.md)

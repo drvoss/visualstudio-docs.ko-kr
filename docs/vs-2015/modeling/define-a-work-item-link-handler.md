@@ -8,15 +8,15 @@ helpviewer_keywords:
 - UML API
 ms.assetid: d52e0bbf-0166-4bb4-a2e3-cefed6188875
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 240f143015f22435deb4f1347f74bebcc8b334c3
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 380aaa5bed1e30c549334bc004ea38e3f0bdb762
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871909"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669929"
 ---
 # <a name="define-a-work-item-link-handler"></a>작업 항목 링크 처리기 정의
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,10 +84,10 @@ ms.locfileid: "68871909"
 
  `System.Drawing`-샘플 코드에서 사용 됩니다.
 
- **참조 추가** 대화 상자의\\ **.net** 탭에서 이러한 참조 중 하나를 찾을 수 없는 경우 찾아보기 탭을 사용 하 여 Files\Microsoft Visual Studio [version] \Common7\IDE\PrivateAssemblies에서 찾을 수 있습니다.
+ **참조 추가** 대화 상자의 **.net** 탭에서 이러한 참조 중 하나를 찾을 수 없는 경우 찾아보기 탭을 사용 하 여 Files\Microsoft Visual Studio [version] \Common7\IDE\PrivateAssemblies \\에서 찾을 수 있습니다.
 
 ### <a name="import-the-work-item-namespace"></a>작업 항목 네임스페이스 가져오기
- 프로젝트 참조에서 다음 어셈블리에 대 한 참조를 추가 합니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
+ @No__t_0 프로젝트 **참조**에서 다음 어셈블리에 대 한 참조를 추가 합니다.
 
 - Microsoft.TeamFoundation.WorkItemTracking.Client.dll
 
@@ -160,7 +160,7 @@ namespace WorkItems
 
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 의 실험적 인스턴스가 시작됩니다.
 
-     **문제 해결**: 새 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 이 시작 되지 않으면 VSIX 프로젝트가 솔루션의 시작 프로젝트로 설정 되어 있는지 확인 합니다.
+     **문제 해결**: 새 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]이 시작 되지 않으면 VSIX 프로젝트가 솔루션의 시작 프로젝트로 설정 되어 있는지 확인 합니다.
 
 2. 실험적 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 모델링 프로젝트를 열거나 만들고 모델링 다이어그램을 열거나 만듭니다.
 
@@ -182,7 +182,7 @@ namespace WorkItems
 
      **문제 해결**: 처리기 메서드가 실행 되지 않은 경우 다음을 확인 합니다.
 
-    - 클래스 라이브러리 프로젝트는 VSIX 프로젝트의 **콘텐츠** 목록에서 MEF 구성 요소로 나열 됩니다 .
+    - 클래스 라이브러리 프로젝트는 VSIX 프로젝트의 **콘텐츠** 목록에서 MEF 구성 요소로 나열 됩니다 **.**
 
     - 올바른 `Export` 특성이 처리기 클래스에 연결되고 해당 클래스가 `ILinkedWorkItemExtension`을 구현합니다.
 
@@ -277,7 +277,7 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
 
  `string.Format(@"%{0}\{1}#{1}${2}", tfServer, projectCollection, RepositoryGuid, workItem.Id);`
 
- 각 항목이 나타내는 의미는 다음과 같습니다.
+ 여기서
 
 - 서버의 URI는 다음과 같습니다.
 
@@ -295,7 +295,7 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
 
   참조에 대 한 자세한 내용은 [UML 모델 요소에 참조 문자열 연결](../modeling/attach-reference-strings-to-uml-model-elements.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [TeamFoundation. WorkItemStore.](/previous-versions/visualstudio/visual-studio-2013/bb179850(v=vs.120))
 - [모델 요소 및 작업 항목 연결](../modeling/link-model-elements-and-work-items.md)

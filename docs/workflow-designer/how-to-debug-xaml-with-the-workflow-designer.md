@@ -1,21 +1,21 @@
 ---
-title: '워크플로 디자이너: XAML 디버그'
+title: '워크플로 디자이너: 디버그 XAML'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d9305dbc-af62-4bdd-b03f-c54e3fe9ecc7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: af5b7585ed5c0f34eeb44edba8c60ba0d5e14559
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 5a7b686db2f8c6818d7a76a5e5188715665b3a87
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254772"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650349"
 ---
-# <a name="how-to-debug-xaml-with-the-workflow-designer"></a>방법: 워크플로 디자이너로 XAML 디버그
+# <a name="how-to-debug-xaml-with-the-workflow-designer"></a>방법: Workflow Designer로 XAML 디버그
 
 워크플로는 XAML로 정의됩니다. 워크플로의 UI 표현은 해당 워크플로를 정의하는 XAML 트리의 맨 위에 빌드됩니다. 디버깅 환경은 워크플로 디자이너에서 워크플로를 디버깅 하는 것과 비슷합니다. 예를 들어 XAML을 디버그 하는 동안 지역, 조사식 및 스레드 창은 디버깅 워크플로 디자이너와 동일한 방식으로 작동 합니다. 또한 XAML 디버깅 중의 호출 스택 보기는 워크플로에 대한 실행 흐름의 줄 기반 계층 보기입니다.
 
@@ -26,7 +26,7 @@ ms.locfileid: "71254772"
 
 1. Visual Studio에서 워크플로 또는 활동 프로젝트를 엽니다.
 
-2. [방법:에 설명 된 대로 디버깅 하려는 작업에 중단점을 설정 합니다. 워크플로에](../workflow-designer/how-to-set-breakpoints-in-workflows.md)중단점을 설정 합니다.
+2. [방법: 워크플로에 중단점 설정](../workflow-designer/how-to-set-breakpoints-in-workflows.md)에 설명 된 대로 디버깅 하려는 작업에 중단점을 설정 합니다.
 
 3. 워크플로 정의가 포함 된 .xaml 파일을 마우스 오른쪽 단추로 클릭 하 고 **코드 보기**를 선택 합니다. 디자인 뷰에서 중단점을 설정한 활동의 XAML 요소 선언과 같은 줄에 중단점이 표시됩니다.
 
@@ -34,7 +34,7 @@ ms.locfileid: "71254772"
 
 5. 코드 실행이 중단점 중 하나에 도달하면 해당 중단점과 연결된 XAML 요소가 강조 표시됩니다. 다음 중단점으로 이동 하려면 **F10** 또는 **F11** 키를 사용 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방법: 워크플로에 중단점 설정](../workflow-designer/how-to-set-breakpoints-in-workflows.md)
 - [디버그 워크플로](debugging-workflows-with-the-workflow-designer.md)

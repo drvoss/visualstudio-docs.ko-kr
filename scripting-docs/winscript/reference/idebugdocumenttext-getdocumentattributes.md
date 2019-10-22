@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetDocumentAttributes | Microsoft Docs
+title: 'IDebugDocumentText:: GetDocumentAttributes | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c8f545d9a8208440299d0dccb16145c6ef0c8731
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f3a97c42037e5f7439692e3c3185b4194e63dc2a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008661"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572160"
 ---
 # <a name="idebugdocumenttextgetdocumentattributes"></a>IDebugDocumentText::GetDocumentAttributes
 문서의 특성을 반환 합니다.  
@@ -37,18 +37,18 @@ HRESULT GetDocumentAttributes(
   
 #### <a name="parameters"></a>매개 변수  
  `ptextdocattr`  
- [out] 문서의 텍스트 특성입니다.  
+ 제한이 문서의 텍스트 특성입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
+ 메서드는 `HRESULT`를 반환 합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
   
 |값|설명|  
 |-----------|-----------------|  
 |`S_OK`|메서드가 성공했으며|  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  이 메서드는 문서의 특성을 반환 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [IDebugDocumentText 인터페이스](../../winscript/reference/idebugdocumenttext-interface.md)   
+## <a name="see-also"></a>참조  
+ [Idebugdocumenttext 인터페이스](../../winscript/reference/idebugdocumenttext-interface.md)    
  [TEXT_DOC_ATTR 상수](../../winscript/reference/text-doc-attr-constants.md)

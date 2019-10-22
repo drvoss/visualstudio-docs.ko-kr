@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDE navigator
 ms.assetid: 6c36b6eb-c93f-496b-af08-4199f7afd8bd
 caps.latest.revision: 33
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 93200995c3afa59b0a4a27aaa9c674fa17b5ee3f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 89c4447eb6bbc4b2ae9f7667672626d5119c61d6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685593"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651792"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>방법: Visual Studio IDE에서 이동
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ IDE(통합 개발 환경)는 기본 설정이나 프로젝트 요구 사항에 �
 
   **IDE 탐색기**는 Windows 애플리케이션 전환기와 매우 유사하게 작동합니다. IDE 탐색기는 메뉴에서 사용할 수 없으며 바로 가기 키를 사용해서만 액세스할 수 있습니다. 두 명령 중 하나를 사용하여 **IDE 탐색기**(아래 참조)에 액세스하고 순환하려는 순서에 따라 파일 전체를 순환할 수 있습니다.
 
-  ![Visual Studio IDE 탐색기](../ide/media/vs2015-ide-navigator.png "VS2015_IDE_Navigator")
+  ![Visual Studio IDE 탐색기](../ide/media/vs2015-ide-navigator.png "|::ref1::|")
 
   `Window.PreviousDocumentWindowNav`는 가장 최근에 액세스한 파일을 이동할 수 있도록 하고 `Window.NextDocumentWindowNav`는 역순으로 이동할 수 있도록 합니다. 일반 개발 설정은 Ctrl+Shift+Tab을 `Window.PreviousDocumentWindowNav`에 할당하고 Ctrl+Tab을 `Window.NextDocumentWindowNav`에 할당합니다.
 

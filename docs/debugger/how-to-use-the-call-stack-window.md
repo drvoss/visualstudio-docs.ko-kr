@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0b9fb6e809f1124a10a6a2b4e35bc59806787a6
-ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
+ms.openlocfilehash: 21573f1f8bd49782739027f7dfc2034bb7501a2f
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71814337"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535982"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>호출 스택을 확인 하 고 디버거에서 호출 스택 창을 사용 합니다.
 
@@ -54,7 +54,7 @@ ms.locfileid: "71814337"
 
 - 디버깅 하는 동안 **디버그** 메뉴에서 **Windows > 호출 스택**을 선택 합니다.
 
-  ![호출 스택 창](../debugger/media/dbg_basics_callstack_window.png "callstackwindow")
+  ![호출 스택 창](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
 
 노란색 화살표는 현재 실행 포인터가 있는 스택 프레임을 나타냅니다. 기본적으로이 스택 프레임의 정보는 소스, **지역**, **자동**, **조사식**및 **디스어셈블리** 창에 표시 됩니다. 디버거 컨텍스트를 스택의 다른 프레임으로 변경 하려면 [다른 스택 프레임으로 전환](#bkmk_switch)합니다.
 
@@ -96,11 +96,11 @@ ms.locfileid: "71814337"
 
 Visual Studio Enterprise (만 해당)에서는 디버깅 하는 동안 호출 스택에 대 한 코드 맵을 볼 수 있습니다.
 
-- **호출 스택** 창에서 바로 가기 메뉴를 엽니다. **코드 맵에 호출 스택 표시** 를 선택 합니다 **(Ctrl** + **Shift** +  **`** ).
+- **호출 스택** 창에서 바로 가기 메뉴를 엽니다. **코드 맵에 호출 스택 표시** 를 선택 합니다 **(Ctrl**  + **Shift**  +  **`** ).
 
     자세한 내용은 [디버그 하는 동안 호출 스택의 맵 메서드](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)를 참조 하세요.
 
-코드 맵(../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "showcallstackoncodemap") ![에 호출 스택 표시]
+![코드 맵에 호출 스택 표시](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
 
 ## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>호출 스택에 있는 함수의 디스어셈블리 코드 보기 (C#, C++, Visual Basic,) F#
 
@@ -108,11 +108,11 @@ Visual Studio Enterprise (만 해당)에서는 디버깅 하는 동안 호출 �
 
 ## <a name="change-the-optional-information-displayed"></a>표시 되는 선택적 정보 변경
 
-- **호출 스택** 창을 마우스 오른쪽 단추로 클릭 하 고 **\<** **@no__t**_원하는 정보를_설정 하거나 선택을 취소 합니다.
+- **호출 스택** 창에서 마우스 오른쪽 단추를 클릭 하 고 **>** _원하는 정보_ **\< 표시**를 설정 하거나 선택을 취소 합니다.
 
 ## <a name="bkmk_symbols"></a>모듈에 대 한 기호 로드C#( C++,, Visual Basic F#,)
 
-**호출 스택** 창에서 현재 기호가 로드되어 있지 않은 코드에 대한 디버깅 기호를 로드할 수 있습니다. 이러한 기호는 Microsoft 공용 기호 서버에서 다운로드한 .NET Framework 또는 시스템 기호일 수도 있고 디버깅 중인 컴퓨터의 기호 경로에 있는 기호일 수도 있습니다.
+**호출 스택** 창에서 현재 기호가 로드되어 있지 않은 코드에 대한 디버깅 기호를 로드할 수 있습니다. 이러한 기호는 Microsoft 공용 기호 서버에서 다운로드 한 .NET 또는 시스템 기호 이거나 디버깅 중인 컴퓨터의 기호 경로에 있는 기호 일 수 있습니다.
 
 [기호 파일(.pdb) 및 원본 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)을 참조하세요.
 

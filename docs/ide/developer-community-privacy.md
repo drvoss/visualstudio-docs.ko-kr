@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 447a06d64691af1d77a634179631ce7822b6d43d
-ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+ms.openlocfilehash: a40cbc30850edc96b569bd8d716b14b5d2035089
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70864673"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273403"
 ---
 # <a name="developer-community-data-privacy"></a>개발자 커뮤니티 데이터 개인 정보
 
@@ -70,10 +70,6 @@ Visual Studio에서 **문제 보고**가 시작되면 다음 유형의 데이터
 
 - Windows Forms 로그(있는 경우)
 
-> [!NOTE]
-> 로그 파일이 포함된 문제 보고서를 제출하여 사용 권한을 제공하는 경우에만 로그 파일이 Microsoft로 전송됩니다. ‘문제 보고’ 창의 ‘요약’ 단계에 포함된 파일을 확인할 수 있습니다(이 메모에 포함된 스크린샷 참조). 수집된 로그는 %temp% 폴더에 저장되며 각 업로드 후 정기적으로 정리됩니다. 문제 보고서에 로그를 포함하지 않으려면 보고서를 제출하기 전에 %temp% 폴더에서 파일을 삭제합니다.  
-  > ![문제 보고 - 수집된 로그 요약](media/report-a-problem-logs-collected.png)
-
 - 스크린샷(포함하도록 선택한 경우)
   
 - 다음을 포함하는 데이터 기록(기록을 포함하도록 선택한 경우):
@@ -84,8 +80,10 @@ Visual Studio에서 **문제 보고**가 시작되면 다음 유형의 데이터
 
   - 덤프 파일
 
-  > [!NOTE]
-  > 보고서를 제출하기 전에 제출하지 않으려는 기록 데이터를 삭제할 수 있습니다.
+> [!NOTE]
+> 로그 파일, 스크린샷 및 데이터 기록이 포함된 문제 보고서를 제출하여 사용 권한을 제공하는 경우에만 로그 파일이 Microsoft로 전송됩니다. ‘문제 보고’ 창의 ‘요약’ 단계에 포함된 파일을 확인할 수 있습니다(이 메모에 포함된 스크린샷 참조). 수집된 로그 및 파일은 %temp% 폴더에 저장되며 각 업로드 후 정기적으로 정리됩니다. 문제 보고서에 로그를 포함하지 않으려면 보고서를 제출하기 전에 %temp% 폴더에서 파일을 삭제합니다.  
+  > ![문제 보고 - 수집된 로그 요약](media/report-a-problem-logs-collected.png)
+ 
 
 ## <a name="see-also"></a>참고 항목
 

@@ -9,19 +9,19 @@ f1_keywords:
 ms.assetid: c5355e43-a37c-4686-a969-18e3dfc59a9c
 caps.latest.revision: 15
 author: alexhomer1
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 799e75dff8202ef041399cc6e0fcfb791dc7e868
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c20fe8bccdf48cf307dda72a085b3c2a72f1d0cf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686529"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672719"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Visual Studio 정적 코드 분석을 사용하여 스토어 앱의 C++ 코드 품질 분석
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")
+Windows 및 Windows Phone]에 적용 됩니다. /Image/windows_and_phone_content.png "windows_and_phone_content")
 
  Visual Studio Express 버전의 코드 분석 도구는 코드에 일련의 일반적인 문제 및 바람직한 프로그래밍 관행의 위반 사항이 있는지 검사합니다. 코드 분석은 유효하지만 해당 코드를 사용하는 당사자나 다른 사용자에게 계속 문제를 일으킬 수 있는 특정 코드 패턴을 검색하므로, 코드 분석 경고는 컴파일러 오류 및 경고와 다릅니다. 코드 분석 시 테스트를 통해 검색하기 힘든 코드 오류도 찾을 수 있습니다. 개발 프로세스에서 코드 분석 도구를 정기적으로 실행하면 완성된 응용 프로그램의 품질을 향상시킬 수 있습니다.
 
@@ -46,11 +46,11 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
 ## <a name="BKMK_Analyze"></a> 코드 분석 경고 분석 및 해결
  특정 경고를 분석하려면 코드 분석 창에서 경고 제목을 선택합니다. 경고가 확장되어 문제에 대한 자세한 정보가 표시됩니다. 가능한 경우 코드 분석에 줄 번호와 경고를 초래한 분석 논리가 표시됩니다.
 
- ![확장된 코드 분석 경고](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
+ ![확장 된 코드 분석 경고](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
 
  경고를 확장하면 Visual Studio Code 편집기에서 경고를 발생시킨 코드 줄이 강조 표시됩니다.
 
- ![강조 표시된 소스 코드](../test/media/ca-cpp-sourceline.png "CA_CPP_SourceLine")
+ ![강조 표시 된 소스 코드](../test/media/ca-cpp-sourceline.png "CA_CPP_SourceLine")
 
  문제를 파악한 후 코드에서 해결할 수 있습니다. 그런 다음 코드 분석을 다시 실행하여 코드 분석 창에 더 이상 경고가 나타나지 않는지와 수정으로 인해 새로운 경고가 발생하지 않는지 확인합니다.
 
@@ -73,7 +73,7 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
 ## <a name="BKMK_Search"></a> 코드 분석 결과 검색 및 필터링
  긴 경고 메시지 목록을 검색하고 다중 프로젝트 솔루션에서 경고를 필터링할 수 있습니다.
 
- ![코드 분석 검색 및 필터 창](../test/media/ca-searchfilter.png "CA_SearchFilter")
+ ![코드 분석 창 검색 및 필터링](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
 ## <a name="Warnings"></a> C++ 코드 분석 경고
  코드 분석 시 C++ 코드에 대해 다음과 같은 경고가 발생합니다.
@@ -132,7 +132,7 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
 | [C6523](https://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         잘못된 크기 문자열 매개 변수                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   잘못된 크기 문자열 접근할 수 없는 위치                                    |
 | [C6526](https://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        잘못된 크기 문자열 버퍼 유형                                        |
-|                       [C6527](../code-quality/c6527.md)                        |              주석이 잘못 되었습니다. 'NeedsRelease ' 속성은 void 형식의 값에 사용할 수 없습니다.               |
+|                       [C6527](../code-quality/c6527.md)                        |              주석이 잘못되었습니다. 'NeedsRelease' 속성은 void 형식 값에 사용할 수 없습니다.               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       인식할 수 없는 형식 문자열 스타일                                        |
 |                       [C6540](../code-quality/c6540.md)                        | 이 함수에 특성 주석을 사용하면 기존의 모든 __declspec 주석이 무효화됩니다.  |
 |                       [C6551](../code-quality/c6551.md)                        |                              크기 사양이 잘못되었습니다. 식을 구문 분석할 수 없습니다.                              |
@@ -158,7 +158,7 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
 |                      [C28215](../code-quality/c28215.md)                       |                    typefix는 이미 typefix가 있는 매개 변수에 적용할 수 없습니다.                    |
 |                      [C28216](../code-quality/c28216.md)                       |        checkReturn 주석은 특정 함수 매개 변수에 대한 사전 조건에만 적용됩니다.         |
 |                      [C28217](../code-quality/c28217.md)                       |            함수의 경우 주석에 대한 매개 변수 개수가 파일에 있는 개수와 일치하지 않습니다.             |
-|                      [C28218](../code-quality/c28218.md)                       |             함수 매개 변수의 경우 주석의 매개 변수 일치 하지 않는 파일              |
+|                      [C28218](../code-quality/c28218.md)                       |             함수 매개 변수의 경우 주석의 매개 변수가 파일에 있는 매개 변수와 일치 하지 않습니다.              |
 |                      [C28219](../code-quality/c28219.md)                       |                 주석에 있는 매개 변수 주석에 열거의 멤버가 필요합니다.                 |
 |                      [C28220](../code-quality/c28220.md)                       |                  주석에 있는 매개 변수에 정수 식이 필요합니다.                   |
 |                      [C28221](../code-quality/c28221.md)                       |                        주석에 있는 매개 변수에 문자열 식이 필요합니다.                         |
@@ -203,7 +203,7 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
 |                      [C28286](../code-quality/c28286.md)                       |                                    함수의 경우 끝 부분 근처에 구문 오류가 있습니다.                                    |
 |                      [C28287](../code-quality/c28287.md)                       |                함수의 경우 \_At\_() 주석에 구문 오류(인식할 수 없는 매개 변수 이름)                |
 |                      [C28288](../code-quality/c28288.md)                       |                  함수의 경우 \_At\_() 주석에 구문 오류(잘못된 매개 변수 이름)                   |
-|                      [C28289](../code-quality/c28289.md)                       |                함수의 경우: ReadableTo 또는 WritableTo 없는 위한 제한 사양을 매개 변수로                |
+|                      [C28289](../code-quality/c28289.md)                       |                함수의 경우 ReadableTo 또는 WritableTo에 limit-spec가 매개 변수로 포함되지 않았습니다.                |
 |                      [C28290](../code-quality/c28290.md)                       |           함수의 주석에 실제 매개 변수 개수보다 많은 외부 참조가 있습니다.            |
 |                      [C28291](../code-quality/c28291.md)                       |                        함수의 경우 역참조 수준 0에서 post null/notnull이 의미가 없습니다.                        |
 |                      [C28300](../code-quality/c28300.md)                       |                            연산자에 호환되지 않는 형식의 식 피연산자입니다.                             |

@@ -6,14 +6,14 @@ ms.technology: vs-ide-test
 ms.topic: reference
 ms.assetid: cf4000b4-91b5-4b3f-a00d-cc8d192467c2
 caps.latest.revision: 22
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4817fdd346f8c60d061eaa18d9e8a335a5b26ea2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 95f321d3f025ffc96477e288d6657f991bd90b30
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68199738"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672103"
 ---
 # <a name="testing-store-apps-with-visual-studio"></a>Visual Studio로 스토어 앱 테스트
 
@@ -21,7 +21,7 @@ ms.locfileid: "68199738"
 
 Visual Studio에는 스토어 앱을 최상의 품질로 만들 수 있는 테스트 도구가 포함되어 있습니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>이 섹션의 내용
 
 |||
 |-|-|

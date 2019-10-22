@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::FCanJitDebug | Microsoft Docs
+title: 'IDebugApplication:: FCanJitDebug | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d5dc03d7d2511f5b50969c062104759e78fcf03
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d68240ffd86935e9936642c09d5131f70b46e9ab
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990943"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576872"
 ---
 # <a name="idebugapplicationfcanjitdebug"></a>IDebugApplication::FCanJitDebug
-(JIT)-just-in-time 디버거에 등록 되어 있는지 확인 합니다.  
+JIT (just-in-time) 디버거가 등록 되었는지 여부를 확인 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,13 +34,13 @@ BOOL FCanJitDebug();
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 이 메서드는 매개 변수 없이 합니다.  
+ 이 메서드는 매개 변수를 사용 하지 않습니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드가 반환 하는 경우 메서드가 성공 하면와 JIT 디버거 등록 `TRUE`합니다. 그 외의 경우 `FALSE`를 반환합니다.  
+ 메서드가 성공 하 고 JIT 디버거가 등록 된 경우 메서드는 `TRUE` 반환 합니다. 그 외의 경우 `FALSE`를 반환합니다.  
   
-## <a name="remarks"></a>설명  
- 이 메서드는 JIT 디버거 등록 되어 있는지 확인 합니다.  
+## <a name="remarks"></a>주의  
+ 이 메서드는 JIT 디버거가 등록 되었는지 여부를 확인 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [IDebugApplication 인터페이스](../../winscript/reference/idebugapplication-interface.md)

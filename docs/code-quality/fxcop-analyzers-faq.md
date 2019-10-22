@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 42581e632c08550fce3cd685949401a155a060f6
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 277155bdab713ec12daa380fc2721a31b5d932a2
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253167"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000123"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>FxCop 및 FxCop 분석기에 대한 질문과 대답
 
@@ -24,14 +24,14 @@ ms.locfileid: "71253167"
 
 레거시 FxCop는 컴파일된 어셈블리에서 빌드 후 분석을 실행합니다. **FxCopCmd.exe**라는 별도 실행 파일로 실행됩니다. FxCopCmd.exe는 컴파일된 어셈블리를 로드하고, 코드 분석을 실행한 다음, 결과(또는 *진단*)를 보고합니다.
 
-FxCop 분석기는 .NET Compiler Platform("Roslyn")을 기반으로 합니다. 프로젝트 또는 솔루션에서 참조되는 [NuGet 패키지로 설치](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package)합니다. 컴파일러 실행 동안 FxCop 분석기는 소스 코드 기반 분석을 실행합니다. FxCop 분석기는 **csc.exe** 또는 **vbc.exe**의 컴파일러 프로세스 내에서 호스팅되며, 프로젝트가 빌드될 때 분석을 실행합니다. 분석기 결과는 컴파일러 결과와 함께 보고됩니다.
+FxCop 분석기는 .NET Compiler Platform("Roslyn")을 기반으로 합니다. 프로젝트 또는 솔루션에서 참조되는 [NuGet 패키지로 설치](install-fxcop-analyzers.md#nuget-package)합니다. 컴파일러 실행 동안 FxCop 분석기는 소스 코드 기반 분석을 실행합니다. FxCop 분석기는 **csc.exe** 또는 **vbc.exe**의 컴파일러 프로세스 내에서 호스팅되며, 프로젝트가 빌드될 때 분석을 실행합니다. 분석기 결과는 컴파일러 결과와 함께 보고됩니다.
 
 > [!NOTE]
-> [Visual Studio 확장으로 FxCop 분석기를 설치](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-vsix)할 수도 있습니다. 이 경우 분석기는 코드 편집기에 입력한 대로 실행하지만 빌드 시 실행하지 않습니다. CI(지속적인 통합)의 일부로 FxCop 분석기를 실행하려는 경우 NuGet 패키지로 대신 설치합니다.
+> [Visual Studio 확장으로 FxCop 분석기를 설치](install-fxcop-analyzers.md#vsix)할 수도 있습니다. 이 경우 분석기는 코드 편집기에 입력한 대로 실행하지만 빌드 시 실행하지 않습니다. CI(지속적인 통합)의 일부로 FxCop 분석기를 실행하려는 경우 NuGet 패키지로 대신 설치합니다.
 
 ## <a name="does-the-run-code-analysis-command-run-fxcop-analyzers"></a>코드 분석 실행 명령은 FxCop 분석기를 실행하나요?
 
-아니요. **분석** > **실행 코드 분석**을 선택 하면 레거시 분석이 실행 됩니다. **코드 분석 실행**은 Roslyn 기반 FxCop 분석기를 포함하여 Roslyn 기반 분석기에 적용되지 않습니다.
+아니요. **분석** > **코드 분석 실행**을 선택 하면 레거시 분석이 실행 됩니다. **코드 분석 실행**은 Roslyn 기반 FxCop 분석기를 포함하여 Roslyn 기반 분석기에 적용되지 않습니다.
 
 ## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>RunCodeAnalysis msbuild 프로젝트 속성은 분석기를 실행하나요?
 
@@ -53,7 +53,11 @@ FxCop 분석기를 설치 했지만 **"" 코드 분석 실행 "이 더 이상 �
 
 [Fxcop 분석기](install-fxcop-analyzers.md)로 이식 된 레거시 분석 규칙에 대 한 자세한 내용은 [fxcop 규칙 포트 상태](fxcop-rule-port-status.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="code-analysis-warnings-are-treated-as-errors"></a>코드 분석 경고는 오류로 처리 됩니다.
+
+프로젝트에서 빌드 옵션을 사용 하 여 경고를 오류로 처리 하는 경우 FxCop 분석기 경고가 오류로 나타날 수 있습니다. 코드 분석 경고가 오류로 처리 되지 않도록 하려면 [코드 분석 FAQ](../code-quality/analyzers-faq.md#treat-warnings-as-errors)의 단계를 따르세요.
+
+## <a name="see-also"></a>참조
 
 - [.NET Compiler Platform 분석기 개요](roslyn-analyzers-overview.md)
 - [분석기 시작](fxcop-analyzers.yml)

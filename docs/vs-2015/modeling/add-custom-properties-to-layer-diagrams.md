@@ -8,15 +8,15 @@ helpviewer_keywords:
 - layer diagrams, adding custom properties
 ms.assetid: 52b3ac25-d10b-4507-a1fe-209ccb4d2777
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 75d3284c4584c67550c7dcee3c8f1737ebed5380
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: ec1c7c94c8a0e6aa233cf21f9b57e093cc430d48
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871913"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655295"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>레이어 다이어그램에 사용자 지정 속성 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -165,5 +165,5 @@ namespace MyNamespace
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목:
  [레이어 다이어그램 확장](../modeling/extend-layer-diagrams.md)

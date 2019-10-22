@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStringCompare::StrComp | Microsoft Docs
+title: 'IActiveScriptStringCompare:: StrComp | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 66cccb4281e19aebb25b3b4cde06705b500f53a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 233c427b634306527b0b0d496397e82f889560e2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991427"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577946"
 ---
 # <a name="iactivescriptstringcomparestrcomp"></a>IActiveScriptStringCompare::StrComp
-스크립팅 엔진에 대 한 문자열 비교 메서드를 정의합니다.  
+스크립팅 엔진에 대 한 문자열 비교 메서드를 정의 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -48,22 +48,22 @@ HRESULT StrComp(
  두 번째 문자열입니다.  
   
  `iRet`  
- 비교의 결과입니다. 인 경우 0 `bszStr1` 하 고 `bszStr2`동일 하면-1 `bszStr1`  <  `bszStr2`; 1 이면 `bszStr1`  >  `bszStr2`합니다.  
+ 비교 결과입니다. `bszStr1` 하 고 `bszStr2`are 같으면 0입니다. `bszStr1`  <  `bszStr2` 이면-1입니다.  >  `bszStr2` `bszStr1` 경우 1입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 다음 값 중 하나를 반환합니다.  
+ 는 다음 값 중 하나를 반환 합니다.  
   
 |반환 값|의미|  
 |------------------|-------------|  
-|`S_OK`|명령 실행 성공|  
-|`E_INVALIDARG`|인수가 잘못된 경우|  
-|`E_UNEXPECTED`|호출이 필요 하지 않습니다 (예를 들어, 스크립팅 엔진에 아직 로드 되지 않았거나 초기화).|  
+|`S_OK`|성공할.|  
+|`E_INVALIDARG`|인수가 잘못 되었습니다.|  
+|`E_UNEXPECTED`|호출이 필요 하지 않습니다. 예를 들어 스크립팅 엔진이 아직 로드 되거나 초기화 되지 않았습니다.|  
   
-## <a name="remarks"></a>설명  
- 이 메서드는 문자열 비교는 실행 될 때마다 호출 됩니다.  
+## <a name="remarks"></a>주의  
+ 이 메서드는 문자열 비교가 실행 될 때마다 호출 됩니다.  
   
 ## <a name="example"></a>예제  
- 다음 예제에서는 문자열 비교 함수의 오버 로드 하는 방법을 보여 줍니다. 사용 하는 경우 허용 되는 오버 로드 [IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) SCRIPTPROP_STRINGCOMPAREINSTANCE를 설정 합니다.  
+ 다음 예제에서는 문자열 비교 함수를 오버 로드 하는 방법을 보여 줍니다. [IActiveScriptProperty:: SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) 를 사용 하 여 SCRIPTPROP_STRINGCOMPAREINSTANCE를 설정 하는 경우 오버 로드를 사용할 수 있습니다.  
   
 ```cpp#  
 cpp_quote("// {58562769-ED52-42f7-8403-4963514E1F11}")  
@@ -100,5 +100,5 @@ interface IActiveScriptStringCompare : IUnknown
 }  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [IActiveScriptStringCompare 인터페이스](../../winscript/reference/iactivescriptstringcompare-interface.md)

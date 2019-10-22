@@ -1,5 +1,5 @@
 ---
-title: 부울이 필요 | Microsoft Docs
+title: 부울이 필요 합니다. | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,15 +14,15 @@ ms.assetid: 35d71b7f-53fd-44c4-a7c7-b1550c65cfd4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 261cf0ad93208c0eac09e42dcd68853352318e88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 91ff0ec8cbd6e5cedb5ec02a8c574ff137b1c6ad
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817902"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576053"
 ---
 # <a name="boolean-expected"></a>부울이 필요합니다.
-호출 하려고 합니다 **Boolean.prototype.toString** 또는 **Boolean.prototype.valueOf** 이외의 다른 형식의 개체의 메서드를 `Boolean`입니다. 이 형식의 호출 개체 유형 이어야 `Boolean`합니다. 예를 들어:
+@No__t_2이 아닌 형식의 개체에 대해 **valueOf** **메서드를 호출** 하려고 한 경우입니다. 이 호출 형식의 개체는 `Boolean` 형식 이어야 합니다. 예를 들면,
 
 ```JavaScript
 var o = new Object;
@@ -32,9 +32,9 @@ o.f();
 
 ## <a name="to-correct-this-error"></a>이 오류를 해결하려면
 
-- 만 호출 합니다 **Boolean.prototype.toString** 또는 **Boolean.prototype.valueOf** 형식의 개체에 있는 메서드의 **부울입니다.**
+- **부울** 형식의 개체에 대해서만 **valueOf** **메서드를 호출 합니다.**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Boolean 개체](../../javascript/reference/boolean-object-javascript.md)
 - [데이터 형식](../../javascript/data-types-javascript.md)

@@ -19,12 +19,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0324353d716430148b4b3c7b8adf9262e0dc3b7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3170e310aa3177e2ca7a1dd81ead02bcc4050114
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955278"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572601"
 ---
 # <a name="dbgprop_attrib_flags"></a>DBGPROP_ATTRIB_FLAGS
 `IDebugProperty`의 여러 특성에 대해 설명합니다. `DebugPropertyInfo` 구조체의 멤버입니다.  
@@ -106,9 +106,9 @@ DBGPROP_ATTRIB_NO_ATTRIB  =0x00000000,
  DBGPROP_ATTRIB_VALUE_IS_RETURN_VALUE  
  값이 함수의 반환 값임을 나타냅니다.  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
  개체의 자식을 필터링할 때도 이러한 플래그를 사용합니다. 비트 OR을 사용하여 값을 결합할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [IDebugProperty 인터페이스](../../winscript/reference/idebugproperty-interface.md)   
+## <a name="see-also"></a>참조  
+ [Idebugproperty 인터페이스](../../winscript/reference/idebugproperty-interface.md)    
  [DebugPropertyInfo 구조체](../../winscript/reference/debugpropertyinfo-structure.md)

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - ADO.NET Data Services, Visual Studio
 - WCF data services in Visual Studio
 ms.assetid: da66ad1b-a25d-485c-af13-2d18f0422e3d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6ed07e723b2cb423883491d7e6ca3774a12d0824
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: c17872b7fcfd0ecfa7c927880980fce79f432451
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925450"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648086"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>연습: WPF 및 Entity Framework를 사용하여 WCF 데이터 서비스 만들기
 이 연습에서는 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 애플리케이션에서 호스팅되는 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]를 만든 다음, Windows Forms 애플리케이션에서 이 서비스에 액세스하는 방법을 보여줍니다.
@@ -30,7 +30,7 @@ ms.locfileid: "68925450"
 
 - [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]를 호스팅하는 웹 애플리케이션을 만듭니다.
 
-- Northwind 데이터베이스의 테이블을 `Customers` 나타내는을 만듭니다. [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]
+- Northwind 데이터베이스의 `Customers` 테이블을 나타내는 [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]를 만듭니다.
 
 - [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]를 만듭니다.
 
@@ -40,7 +40,7 @@ ms.locfileid: "68925450"
 
 - 필요한 경우 애플리케이션에 필터링 기능을 추가합니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>Prerequisites
 이 연습에서는 SQL Server Express LocalDB 및 Northwind 샘플 데이터베이스를 사용 합니다.
 
 1. LocalDB SQL Server Express 없는 경우 [SQL Server Express 다운로드 페이지](https://www.microsoft.com/sql-server/sql-server-editions-express)에서 또는 **Visual Studio 설치 관리자**를 통해 설치 합니다. **Visual Studio 설치 관리자**에서 **데이터 저장소 및 처리** 워크 로드의 일부로 또는 개별 구성 요소로 SQL Server Express LocalDB를 설치할 수 있습니다.
@@ -74,7 +74,7 @@ ms.locfileid: "68925450"
 
 4. **새 ASP.NET 프로젝트** 대화 상자의 **템플릿 선택** 목록에서 **비어 있음**을 선택한 다음, **확인** 단추를 선택합니다.
 
-다음 단계에서는 Northwind 데이터베이스의 [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] `Customers` 테이블을 나타내는을 만듭니다.
+다음 단계에서는 Northwind 데이터베이스의 `Customers` 테이블을 나타내는 [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]를 만듭니다.
 
 ### <a name="to-create-the-entity-data-model"></a>엔터티 데이터 모델을 만들려면
 
@@ -82,7 +82,7 @@ ms.locfileid: "68925450"
 
 2. **새 항목 추가** 대화 상자에서 **데이터** 노드를 선택한 다음, **ADO.NET 엔터티 데이터 모델** 항목을 선택합니다.
 
-3. **이름** 텍스트 상자에를 입력 `NorthwindModel`한 다음 **추가** 단추를 선택 합니다.
+3. **이름** 텍스트 상자에 `NorthwindModel`를 입력 한 다음 **추가** 단추를 선택 합니다.
 
      엔터티 데이터 모델 마법사가 나타납니다.
 
@@ -118,7 +118,7 @@ ms.locfileid: "68925450"
 
 2. **새 항목 추가** 대화 상자에서 **웹** 노드를 선택한 다음, **WCF Data Service 5.6** 항목을 선택합니다.
 
-3. **이름** 텍스트 상자에를 입력 `NorthwindCustomers`한 다음 **추가** 단추를 선택 합니다.
+3. **이름** 텍스트 상자에 `NorthwindCustomers`를 입력 한 다음 **추가** 단추를 선택 합니다.
 
      **코드 편집기**에 **NorthwindCustomers.svc** 파일이 표시됩니다.
 
@@ -132,11 +132,11 @@ ms.locfileid: "68925450"
      [!code-vb[WCFDataServiceWalkthrough#2](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_2.vb)]
      [!code-csharp[WCFDataServiceWalkthrough#2](../data-tools/codesnippet/CSharp/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_2.cs)]
 
-6. 메뉴 모음에서 **디버그** > **디버깅 하지 않고 시작** 을 선택 하 여 서비스를 실행 합니다. 브라우저 창이 열리고 서비스에 대 한 XML 스키마가 표시 됩니다.
+6. 메뉴 모음에서 **디버그**  > **디버깅 하지 않고 시작** 을 선택 하 여 서비스를 실행 합니다. 브라우저 창이 열리고 서비스에 대 한 XML 스키마가 표시 됩니다.
 
-7. **주소** 표시줄에 **NorthwindCustomers**에 대 `Customers` 한 URL의 끝에를 입력 한 다음 **enter** 키를 선택 합니다.
+7. **주소** 표시줄에 **NorthwindCustomers**에 대 한 URL의 끝에 `Customers`를 입력 한 다음 **enter** 키를 선택 합니다.
 
-     `Customers` 테이블의 데이터에 대 한 XML 표현이 표시 됩니다.
+     @No__t_0 테이블의 데이터에 대 한 XML 표현이 표시 됩니다.
 
     > [!NOTE]
     > Internet Explorer가 이 데이터를 RSS 피드로 잘못 해석하는 경우도 있습니다. RSS 피드를 표시하는 옵션은 반드시 비활성화되어 있어야 합니다. 자세한 내용은 [서비스 참조 문제 해결](../data-tools/troubleshooting-service-references.md)을 참조하세요.
@@ -152,7 +152,7 @@ ms.locfileid: "68925450"
 
 ### <a name="to-create-the-client-application"></a>클라이언트 애플리케이션을 만들려면
 
-1. 메뉴 모음에서 파일,**새 프로젝트** **추가** > 를 선택 합니다.
+1. 메뉴 모음에서 파일, **추가**  > **새 프로젝트**를 선택 합니다.
 
 2. **새 프로젝트** 대화 상자에서 **Visual Basic** 또는 **시각적 C#**  노드를 확장 하 고 **Windows** 노드를 선택한 다음 **Windows Forms 응용 프로그램**을 선택 합니다.
 
@@ -162,11 +162,11 @@ ms.locfileid: "68925450"
 
 5. 메뉴 모음에서 **프로젝트**, **시작 프로젝트로 설정**을 차례로 선택합니다.
 
-다음 단계에서는 웹 프로젝트 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] 의에 서비스 참조를 추가 합니다.
+다음 단계에서는 웹 프로젝트의 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]에 대 한 서비스 참조를 추가 합니다.
 
 ### <a name="to-add-a-service-reference"></a>서비스 참조를 추가하려면
 
-1. 메뉴 모음에서 **프로젝트** > **서비스 참조 추가**를 선택 합니다.
+1. 메뉴 모음에서 **프로젝트**  > **서비스 참조 추가**를 선택 합니다.
 
 2. **서비스 참조 추가** 대화 상자에서 **검색** 단추를 선택합니다.
 
@@ -178,7 +178,7 @@ ms.locfileid: "68925450"
 
 ### <a name="to-enable-data-binding-to-the-service"></a>서비스에 대한 데이터 바인딩을 사용하려면
 
-1. 메뉴 모음에서**다른 창** > **데이터 원본** **보기** > 를 선택 합니다.
+1. 메뉴 모음에서 **보기**  > **다른 창**  > **데이터 소스**를 선택 합니다.
 
    **데이터 원본** 창이 열립니다.
 
@@ -202,7 +202,7 @@ ms.locfileid: "68925450"
 
 3. **CustomersDataGridView** 컨트롤을 선택한 다음, **속성** 창에서 **Dock** 속성을 **Fill**로 설정합니다.
 
-4. **솔루션 탐색기**에서 **Form1** 노드에 대 한 바로 가기 메뉴를 열고 **코드 보기** 를 선택 하 여 코드 편집기를 열고 파일의 맨 위에 `Imports` 다음 `Using` 또는 문을 추가 합니다.
+4. **솔루션 탐색기**에서 **Form1** 노드에 대 한 바로 가기 메뉴를 열고 **코드 보기** 를 선택 하 여 코드 편집기를 열고 파일 맨 위에 다음 `Imports` 또는 `Using` 문을 추가 합니다.
 
    ```vb
    Imports NorthwindClient.ServiceReference1
@@ -236,7 +236,7 @@ ms.locfileid: "68925450"
 
 8. 4단계에서 추가한 코드에서 `http://localhost:53161/NorthwindCustomers.svc/`를 선택하여 방금 복사한 URL로 바꿉니다.
 
-9. 메뉴 모음에서 **디버그** > **디버깅 시작** 을 선택 하 여 응용 프로그램을 실행 합니다. 고객 정보가 표시 됩니다.
+9. 메뉴 모음에서 **디버그**  > **디버깅 시작** 을 선택 하 여 응용 프로그램을 실행 합니다. 고객 정보가 표시 됩니다.
 
    이제 NorthwindCustomers 서비스의 고객 목록을 표시하는 애플리케이션이 만들어졌습니다. 이 서비스를 통해 추가 데이터를 노출하려면 Northwind 데이터베이스의 다른 테이블을 포함하도록 [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]을 수정하면 됩니다.
 
@@ -251,7 +251,7 @@ ms.locfileid: "68925450"
 
 2. <xref:System.Windows.Forms.Button>도구 상자**에서 <xref:System.Windows.Forms.TextBox> 컨트롤 및**  컨트롤을 폼에 추가합니다.
 
-3. <xref:System.Windows.Forms.Button> 컨트롤에 대 한 바로 가기 메뉴를 열고 **코드 보기**를 선택한 다음 `Button1_Click` 이벤트 처리기에서 다음 코드를 추가 합니다.
+3. @No__t_0 컨트롤에 대 한 바로 가기 메뉴를 열고 **코드 보기**를 선택한 후 `Button1_Click` 이벤트 처리기에서 다음 코드를 추가 합니다.
 
     ```vb
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -282,11 +282,11 @@ ms.locfileid: "68925450"
 
 4. 앞의 코드에서 `http://localhost:53161/NorthwindCustomers.svc`를 `Form1_Load` 이벤트 처리기의 URL로 바꿉니다.
 
-5. 메뉴 모음에서 **디버그** > **디버깅 시작** 을 선택 하 여 응용 프로그램을 실행 합니다.
+5. 메뉴 모음에서 **디버그**  > **디버깅 시작** 을 선택 하 여 응용 프로그램을 실행 합니다.
 
 6. 텍스트 상자에 **London**을 입력한 다음, 단추를 선택합니다. London의 고객만 표시됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [Windows Communication Foundation 서비스 및 Visual Studio의 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 - [방법: WCF 데이터 서비스 참조 추가, 업데이트 또는 제거](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

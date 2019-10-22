@@ -2,23 +2,23 @@
 title: T4 Import 지시문
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f49ab8d3462877a28cf40aed519b71615b23f8d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 74181ea3bb086688893749850adb697c75b6eac1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856360"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606438"
 ---
 # <a name="t4-import-directive"></a>T4 Import 지시문
 
-Visual Studio T4 텍스트 템플릿의 코드 블록을 `import` 지시문을 사용 하면 정규화 된 이름을 지정 하지 않고 다른 네임 스페이스의 요소를 참조할 수 있습니다. 이 지시문은 C#의 `using` 또는 `imports`의 [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)]에 해당합니다.
+Visual Studio T4 텍스트 템플릿의 코드 블록에서 `import` 지시문을 사용 하면 정규화 된 이름을 제공 하지 않고 다른 네임 스페이스의 요소를 참조할 수 있습니다. 이 지시문은 C#의 `using` 또는 `imports`의 [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)]에 해당합니다.
 
-T4 텍스트 템플릿 작성의 일반적인 개요를 참조 하세요 [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)합니다.
+T4 텍스트 템플릿 작성에 대 한 일반적인 개요는 [T4 텍스트 템플릿 작성](../modeling/writing-a-t4-text-template.md)을 참조 하세요.
 
 ## <a name="using-the-import-directive"></a>Import 지시문 사용
 
@@ -47,8 +47,8 @@ The file contains: <#=  fileContent #>
 
 - `Microsoft.VisualStudio.Modeling`
 
-- DSL의 네임 스페이스
+- DSL 네임 스페이스
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목:
 
 - [T4 Assembly 지시문](../modeling/t4-assembly-directive.md)

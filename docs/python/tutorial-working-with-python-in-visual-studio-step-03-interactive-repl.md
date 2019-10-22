@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3576e34b52e524b88300c089c2beda0be6ed0e28
-ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
+ms.openlocfilehash: 15e0b45fd77096ba2227391736aad5c895014d1c
+ms.sourcegitcommit: 0554b59a2a251661e56824fb9cd6e9b1f326cef1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68740029"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71831866"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>3단계: 대화형 REPL 창 사용
 
@@ -54,7 +54,7 @@ Python용 Visual Studio **대화형** 창은 일반적인 편집-빌드-디버�
         return ' ' * int(20 * cos(radians(x)) + 20) + 'o'
     ```
 
-1. *.py* 파일에서 `import` 및 `from` 문만 선택하고 마우스 오른쪽 단추로 클릭한 다음, **Interactive로 보내기**를 선택합니다(또는 **Ctrl**+**Enter** 누르기). 코드 조각이 **대화형** 창에 즉시 붙여넣어 지고 실행됩니다. 이제 `make_dot_string` 기능을 선택하고 해당 코드 조각을 다시 실행하는 동일한 명령을 반복합니다. 코드는 함수를 정의하므로 해당 함수를 여러 번 호출하여 신속하게 테스트할 수 있습니다.
+1. *.py* 파일에서 `import`, `from` 및 `make_dot_string` 함수 문을 선택하고, 마우스 오른쪽 단추를 클릭한 다음 **Interactive로 보내기**를 선택(또는 **Ctrl**+**Enter** 누르기)합니다. 코드 조각이 **대화형** 창에 즉시 붙여넣어 지고 실행됩니다. 이제 `make_dot_string` 기능을 선택하고 해당 코드 조각을 다시 실행하는 동일한 명령을 반복합니다. 코드는 함수를 정의하므로 해당 함수를 여러 번 호출하여 신속하게 테스트할 수 있습니다.
 
     ![대화형 창에 코드 보내기 및 테스트](media/vs-getting-started-python-14-interactive4.png)
 

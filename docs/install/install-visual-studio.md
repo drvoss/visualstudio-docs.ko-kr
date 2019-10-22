@@ -2,7 +2,7 @@
 title: Visual Studio 설치
 titleSuffix: ''
 description: Visual Studio를 설치하는 방법을 단계별로 알아봅니다.
-ms.date: 04/16/2019
+ms.date: 10/07/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5d83086720a94c23d0ceb3f07d9398a7d5256f68
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.openlocfilehash: 6cd91fadea397955b756461383ed8e17030b4c3b
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095368"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018859"
 ---
 # <a name="install-visual-studio"></a>Visual Studio 설치
 
@@ -82,7 +82,7 @@ Visual Studio 설치를 시작하기 전에
 
 1. 다시 부팅합니다. 다시 부팅하면 보류 중인 설치 또는 업데이트가 Visual Studio 설치를 방해하지 않습니다.
 
-1. 공간을 확보합니다. 예를 들어 디스크 정리 앱을 실행하여 %SystemDrive%에서 불필요한 파일 및 애플리케이션을 제거합니다. 
+1. 공간을 확보합니다. 예를 들어 디스크 정리 앱을 실행하여 %SystemDrive%에서 불필요한 파일 및 애플리케이션을 제거합니다.
 
 ::: moniker-end
 
@@ -100,19 +100,20 @@ Visual Studio 2019와 함께 이전 버전의 Visual Studio를 실행하는 방�
 
 ## <a name="step-2---download-visual-studio"></a>2단계 - Visual Studio 다운로드
 
-다음으로 Visual Studio 부트스트래퍼 파일을 다운로드합니다. 이렇게 하려면 다음 단추를 선택하고, 원하는 Visual Studio 버전을 선택하고, **저장**을 선택한 다음, **폴더 열기**를 선택합니다.
+다음으로 Visual Studio 부트스트래퍼 파일을 다운로드합니다.
 
 ::: moniker range="vs-2017"
 
- > [!div class="button"]
- > [Visual Studio를 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)합니다.
+Visual Studio 2017에 대한 부트스트래퍼를 가져오려면 [Visual Studio 이전 버전](https://visualstudio.microsoft.com/vs/older-downloads/) 다운로드 페이지에서 방법에 관한 세부 정보를 참조하세요.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
+이렇게 하려면 다음 단추를 선택하고, 원하는 Visual Studio 버전을 선택하고, **저장**을 선택한 다음, **폴더 열기**를 선택합니다.
+
  > [!div class="button"]
- > [Visual Studio를 다운로드](https://visualstudio.microsoft.com/downloads)합니다.
+ > [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 
@@ -144,7 +145,7 @@ Visual Studio 설치 관리자를 설치하려면 부트스트래퍼 파일을 �
 
      예를 들어 ".NET 데스크톱 개발" 작업을 선택합니다. 20개가 넘는 언어에 대한 기본 코드 편집 기능, 프로젝트 없이도 폴더에서 코드를 열어 편집할 수 있는 기능 및 통합 소스 코드 제어 기능이 포함된 기본 핵심 편집기가 제공됩니다.
 
-1. 원하는 워크로드를 선택한 후 **설치**를 선택합니다.
+1. 원하는 작업을 선택한 후 **설치**를 선택합니다.
 
     다음으로 Visual Studio 설치 진행률을 보여 주는 상태 화면이 나타납니다.
 
@@ -158,7 +159,7 @@ Visual Studio 설치 관리자를 설치하려면 부트스트래퍼 파일을 �
 
      예를 들어 "ASP.NET 및 웹 개발" 워크로드를 선택합니다. 20개가 넘는 언어에 대한 기본 코드 편집 기능, 프로젝트 없이도 폴더에서 코드를 열어 편집할 수 있는 기능 및 통합 소스 코드 제어 기능이 포함된 기본 핵심 편집기가 제공됩니다.
 
-1. 원하는 워크로드를 선택한 후 **설치**를 선택합니다.
+1. 원하는 작업을 선택한 후 **설치**를 선택합니다.
 
     다음으로 Visual Studio 설치 진행률을 보여 주는 상태 화면이 나타납니다.
 
@@ -250,7 +251,7 @@ Workloads 기능을 사용하여 Visual Studio 설치를 사용자 지정하지 
 
 1. 검색 상자에 생성할 앱 유형을 입력하여 사용 가능한 템플릿 목록을 확인합니다. 템플릿 목록은 설치 중에 선택한 워크로드에 따라 달라집니다. 다른 템플릿을 보려면 다른 워크로드를 선택합니다.
 
-   **언어** 드롭다운 목록을 사용하여 특정 프로그래밍 언어 검색을 필터링할 수도 있습니다. **플랫폼** 목록 및 **프로젝트 형식** 목록을 사용하여 필터링할 수도 있습니다. 
+   **언어** 드롭다운 목록을 사용하여 특정 프로그래밍 언어 검색을 필터링할 수도 있습니다. **플랫폼** 목록 및 **프로젝트 형식** 목록을 사용하여 필터링할 수도 있습니다.
 
 1. Visual Studio에서 새 프로젝트를 열면 코딩할 준비가 완료됩니다.
 

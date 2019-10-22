@@ -3,37 +3,37 @@ title: DTE를 사용하여 Visual Studio 시작
 titleSuffix: ''
 ms.date: 04/26/2019
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 399f98964dca29eccfd7d3c2bb691205f373a3b3
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 92085a42ec2c85eb0fb5571badaabca801c403d0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747012"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647967"
 ---
 # <a name="launch-visual-studio-using-dte"></a>DTE를 사용하여 Visual Studio 시작
 
-DTE를 사용 하 여 Visual Studio를 시작 하는 장치는 Visual Studio 2017부터 이전 버전의 Visual Studio를 시작 하려면 다릅니다. 이 변경 되므로 해야 Visual Studio 2017 및 이후 지원-나란히 설치의 주요 릴리스 (예를 들어, 있습니다 릴리스 버전과 함께 설치 되어 미리 보기).
+Visual Studio 2017부터 DTE를 사용 하 여 Visual Studio를 시작 하는 메커니즘은 이전 버전의 Visual Studio를 실행 하는 것과 다릅니다. Visual Studio 2017 이상에서 주요 릴리스를 함께 설치할 수 있으므로 이러한 변경이 필요 합니다. 예를 들어 미리 보기와 릴리스 버전을 함께 설치할 수 있습니다.
 
-이 문서의 나머지 부분에서는 Visual Studio 2019 DTE를 사용 하 여 시작 하 여 코드를 보여줍니다.
+이 문서의 나머지 부분에서는 DTE를 사용 하 여 Visual Studio 2019를 시작 하는 데 사용할 수 있는 코드를 보여 줍니다.
 
 ## <a name="set-up-the-project"></a>프로젝트 설정
 
-작업의 시작 코드를 보려면 다음이 단계를 수행 하 여 프로젝트를 만듭니다.
+실행 중인 코드를 보려면 다음 단계를 수행 하 여 프로젝트를 만듭니다.
 
-1. 새 **콘솔 앱** .NET Framework에 대 한 프로젝트입니다.
+1. .NET Framework에 대 한 새 **콘솔 앱** 프로젝트를 만듭니다.
 
-2. 설치 합니다 [Microsoft.VisualStudio.Setup.Configuration.Interop](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/) NuGet 패키지 및 어셈블리에 대 한 참조를 추가 합니다.
+2. [VisualStudio](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/) NuGet 패키지를 설치 하 고 어셈블리에 대 한 참조를 추가 합니다.
 
 3. EnvDTE에 대 한 참조를 추가 합니다.
 
-4. 붙여넣기를 [예제 코드](#example-code) 뒤에 *Program.cs* 파일입니다.
+4. 뒤에 나오는 [예제 코드](#example-code) 를 *Program.cs* 파일에 붙여 넣습니다.
 
-5. 키를 눌러 **F5** 프로그램을 실행 합니다. 프로그램 종료 전에 Visual Studio 2019에 표시 됩니다.
+5. **F5** 키를 눌러 프로그램을 실행 합니다. 프로그램이 종료 되기 전에 Visual Studio 2019가 열려 있어야 합니다.
 
 ## <a name="example-code"></a>예제 코드
 
@@ -185,7 +185,7 @@ namespace ConsoleLauncherApp
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-- [Visual Studio를 찾습니다](locating-visual-studio.md)
-- [연습: 편집기 확장에서 DTE 개체 액세스](walkthrough-accessing-the-dte-object-from-an-editor-extension.md)
+- [Visual Studio 찾기](locating-visual-studio.md)
+- [연습: 편집기 확장에서 DTE 개체에 액세스](walkthrough-accessing-the-dte-object-from-an-editor-extension.md)

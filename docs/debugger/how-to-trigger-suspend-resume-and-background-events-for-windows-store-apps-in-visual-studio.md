@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 8f5f650860c520f5fbe62ff49bbbb6190e163af8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d15a176fb378159407589af0b720d8310de8e29c
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925471"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72450410"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Visual Studio에서 UWP 앱을 디버그 하는 동안 일시 중단, 다시 시작 및 백그라운드 이벤트를 트리거하는 방법
 
@@ -31,7 +31,7 @@ ms.locfileid: "68925471"
 프로세스 수명 관리 및 백그라운드 작업에 대 한 자세한 내용은 [시작, 다시 시작 및 멀티태스킹](/windows/uwp/launch-resume/index)을 참조 하세요.
 
 ## <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> 프로세스 수명 관리 이벤트 트리거
- Windows는 사용자가 외부에서 전환 하거나 Windows가 저전력 상태를 시작할 때 앱을 일시 중단할 수 있습니다. `Suspending` 이벤트에 응답하여 관련 응용 프로그램 및 사용자 데이터를 영구 저장소에 저장하고 리소스를 해제할 수 있습니다. 응용 프로그램은 **일시 중단됨** 상태에서 다시 시작되는 경우 **실행 중** 상태가 되고 일시 중단되었을 때의 위치에서 계속됩니다. `Resuming` 이벤트에 응답하여 응용 프로그램 상태를 복원하거나 새로 고치고 리소스를 회수할 수 있습니다.
+ Windows는 사용자가 외부에서 전환 하거나 Windows가 저전력 상태를 시작할 때 앱을 일시 중단할 수 있습니다. `Suspending` 이벤트에 응답하여 관련 애플리케이션 및 사용자 데이터를 영구 스토리지에 저장하고 리소스를 해제할 수 있습니다. 응용 프로그램은 **일시 중단됨** 상태에서 다시 시작되는 경우 **실행 중** 상태가 되고 일시 중단되었을 때의 위치에서 계속됩니다. `Resuming` 이벤트에 응답하여 애플리케이션 상태를 복원하거나 새로 고치고 리소스를 회수할 수 있습니다.
 
  Windows에서 일시 중단된 응용 프로그램을 최대한 많이 메모리에 유지하려고 해도 이를 위한 충분한 리소스가 없으면 응용 프로그램이 종료될 수 있습니다. 사용자가 응용 프로그램을 명시적으로 닫을 수도 있습니다. 사용자가 응용 프로그램을 닫았음을 나타내는 특수 이벤트는 없습니다.
 
@@ -79,11 +79,11 @@ ms.locfileid: "68925471"
 
     - Visual C# 및 Visual Basic 프로젝트의 경우 **시작하지 않음(시작 시 코드 디버그)** 을 선택합니다.
 
-         ![&#35;C&#47;VB 디버그 시작 응용 프로그램 속성](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
+         ![C&#35;&#47;VB 디버그 시작 응용 프로그램 속성](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
 
-    - Visual C++ 프로젝트의 경우 **응용 프로그램 시작** 목록에서 **아니요** 를 선택 합니다.
+    - 프로젝트 C++ 의 경우 **응용 프로그램 시작** 목록에서 **아니요** 를 선택 합니다.
 
-         ![&#43;C&#43;VB&#47;응용 프로그램 시작 디버그 속성](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
+         ![&#43;&#43;C&#47;VB 응용 프로그램 시작 디버그 속성](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
 
 4. **F5** 키를 눌러 응용 프로그램을 디버그 모드에 둡니다. **디버그 위치** 도구 모음의 **프로세스** 목록에 디버그 모드에 있음을 나타내는 앱 패키지 이름이 표시됩니다.
 
@@ -105,11 +105,11 @@ ms.locfileid: "68925471"
 
 2. **작업** 창에서 **보기** 를 선택하고 **분석 및 디버그 로그 표시** 가 선택되어 있는지 확인합니다.
 
-3. **이벤트 뷰어 (로컬)** 트리에서 노드 **응용 프로그램 및 서비스 로그** > **Microsoft** > **Windows** > **BackgroundTasksInfrastructure**를 확장 합니다.
+3. **이벤트 뷰어 (로컬)** 트리에서 노드 **응용 프로그램 및 서비스 로그**  > **Microsoft**  > **Windows**  > **BackgroundTasksInfrastructure**를 확장 합니다.
 
 4. **진단** 로그를 선택합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목:
 - [Visual Studio로 UWP 앱 테스트](../test/testing-store-apps-with-visual-studio.md)
 - [Visual Studio에서 앱 디버그](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
 - [애플리케이션 수명 주기](/windows/uwp/launch-resume/app-lifecycle)

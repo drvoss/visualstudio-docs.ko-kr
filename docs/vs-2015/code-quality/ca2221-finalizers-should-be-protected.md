@@ -1,5 +1,5 @@
 ---
-title: 'CA2221: 종료자는 protected 여야 | Microsoft Docs'
+title: 'CA2221: 종료자를 보호 해야 합니다. | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA2221
 ms.assetid: bda03aee-4cce-45d3-907d-17f4ee030acc
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9e8deec8687e3ddb2b3d961aa9fc1e97a45c961d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 3e98c2ea598bcf73b919ba10ef1ea0b53c2a40f3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685127"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651966"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221: 종료자는 protected여야 합니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ ms.locfileid: "65685127"
 |-|-|
 |TypeName|FinalizersShouldBeProtected|
 |CheckId|CA2221|
-|범주|Microsoft.Usage|
+|범주|Microsoft 사용|
 |변경 수준|주요 변경 아님|
 
 ## <a name="cause"></a>원인
- 공용 형식 패밀리 (보호) 액세스를 지정 하지 않는 종료자를 구현 합니다.
+ Public 형식은 패밀리 (protected) 액세스를 지정 하지 않는 종료자를 구현 합니다.
 
 ## <a name="rule-description"></a>규칙 설명
- 종료자에서는 패밀리 액세스 한정자를 사용해야 합니다. 이 규칙으로 적용 되는 C#, Visual Basic 및 Visual C++ 컴파일러.
+ 종료자에서는 패밀리 액세스 한정자를 사용해야 합니다. 이 규칙은 C#, Visual Basic 및 Visual C++ 컴파일러에 의해 적용 됩니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- 이 규칙 위반 문제를 해결 하려면 제품군 액세스할 수 있도록 종료자를 변경 합니다.
+ 이 규칙 위반 문제를 해결 하려면 종료자를 패밀리 액세스 가능 하도록 변경 합니다.
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
  이 규칙에서는 경고를 표시해야 합니다.
 
 ## <a name="example"></a>예제
- 모든 고급.NET 언어로;이 규칙을 위반 될 수 없습니다. Microsoft Intermediate Language를 작성 하는 경우 위반 될 수 있습니다.
+ 이 규칙은 상위 수준 .NET 언어에서 위반할 수 없습니다. Microsoft 중간 언어를 작성 하는 경우 위반할 수 있습니다.
 
 ```
 // =============== CLASS MEMBERS DECLARATION ===================
@@ -80,5 +80,5 @@ ms.locfileid: "65685127"
 } // end of namespace
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목:
  [삭제 패턴](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugbreakpoint:: Getdocumentposition 메서드 | Microsoft Docs'
+title: 'IJsDebugBreakPoint:: GetDocumentPosition 메서드 | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 146eb26c887cd24d1eb7af858535fcecac62b41d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f3bc5aff0b7079e20e2bcd49189153d2ec20d9a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583147"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577688"
 ---
 # <a name="ijsdebugbreakpointgetdocumentposition-method"></a>IJsDebugBreakPoint::GetDocumentPosition 메서드
 중단점이 바인딩된 문의 위치를 반환 합니다.  
@@ -37,18 +37,18 @@ HRESULT GetDocumentPosition(
   
 #### <a name="parameters"></a>매개 변수  
  `pDocumentId`  
- [out] 원본 문서 (IDebugDocumentText에 대 한 포인터)에 대 한 고유 ID입니다.  
+ 제한이 원본 문서의 고유 ID (IDebugDocumentText에 대 한 포인터)입니다.  
   
  `pCharacterOffset`  
- [out] 스크립트의 시작 부분에서 0부터 시작 문자 오프셋입니다.  
+ 제한이 스크립트의 시작 부분에서 0부터 시작 하는 문자 오프셋입니다.  
   
  `pStatementCharCount`  
- [out] 시작 하는 현재 문의 길이 * pCharacterOffset 문자입니다.  
+ 제한이 * PCharacterOffset에서 시작 하는 현재 문의 길이 (문자)입니다.  
   
 ## <a name="return-value"></a>반환 값  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더:** jscript9diag.h  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [IJsDebugBreakPoint 인터페이스](../../winscript/reference/ijsdebugbreakpoint-interface.md)

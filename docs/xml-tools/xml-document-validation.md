@@ -3,17 +3,17 @@ title: Xml 편집기에서 XML 문서 유효성 검사
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: abb353bd-6c4a-4978-b03b-a8c245bbfb55
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13574a13aecf7edbc9627e7b8288689206f278c2
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 2c4133268f2e07753ab7ecd276bf92712484e9f5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926698"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604053"
 ---
 # <a name="xml-document-validation"></a>XML 문서 유효성 검사
 
@@ -43,6 +43,6 @@ XSLT 파일을 편집할 때 스키마 캐시에 있는 *xslt .xsd* 파일이 �
 ## <a name="xml-schema-xsd-files"></a>XSD (XML 스키마) 파일
 XML 스키마 파일을 편집할 때 스키마 캐시에 있는 *xsdschema .xsd* 파일이 유효성 검사에 사용 됩니다. 유효성 검사 오류는 파란색 물결 무늬 밑줄로 표시되고 컴파일 오류는 빨간색 물결 무늬 밑줄로 표시됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [XML 편집기](../xml-tools/xml-editor.md)

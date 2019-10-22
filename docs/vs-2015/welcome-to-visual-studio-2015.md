@@ -11,14 +11,14 @@ helpviewer_keywords:
 - Visual Studio 2015
 ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 229ce6d15d8f411a81c684d20945f4dcc9fb8957
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 90cc4849567d744c5380076bf8c1773254cda618
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695030"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657042"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Visual Studio 2015 시작
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "65695030"
 
  [코드 갤러리](https://code.msdn.microsoft.com/) 를 탐색하여 더 신속하게 앱을 작성하는 데 도움이 되는 샘플을 찾아보는 것도 잊지 마세요.
 
- [Visual Studio 다운로드](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)에서 Visual Studio 2015를 다운로드하여 설치할 수 있습니다. 설치 프로세스에 대 한 자세한 내용은 참조 하세요 [Visual Studio 2015 설치](./install/install-visual-studio-2015.md)합니다.
+ [Visual Studio 다운로드](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)에서 Visual Studio 2015를 다운로드하여 설치할 수 있습니다. 설치 프로세스에 대해 자세히 알아보려면 [Visual Studio 2015 설치](./install/install-visual-studio-2015.md)를 참조 하세요.
 
 ## <a name="extend-visual-studio"></a>Visual Studio 확장
  코드를 작성하는 동안 자주 사용하는 도구 또는 스크립트를 포함하기 위해 사용자 고유의 Visual Studio 확장을 추가합니다. 사용자 지정 메뉴 항목 및 도구 창을 만들어 사용자 고유의 도구를 Visual Studio IDE에 통합할 수 있습니다. 코드를 분석하고 수정할 수 있도록 Visual Studio 편집기를 확장하거나 새 프로젝트 형식을 추가하여 필요한 항목만 포함할 수 있습니다.
@@ -54,15 +54,15 @@ ms.locfileid: "65695030"
 
  앱 요구 사항과 사용하려는 언어에 따라 필요한 도구를 선택합니다.
 
-1. [Xamarin for Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): 공용 코드 베이스에서 C# 모든 장치에 대 한
+1. [Xamarin for Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): C#을 사용하는 모든 디바이스용 공용 코드베이스
 
-2. [Visual Studio 사용 하 여 Apache Cordova](https://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): HTML, CSS 및 JavaScript 또는 Typescript에 대 한 기본 공용 코드
+2. [Apache Cordova with Visual Studio](https://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): HTML, CSS 및 JavaScript 또는 Typescript용 공용 코드베이스
 
-3. [Visual Studio Tools for Unity](./cross-platform/visual-studio-tools-for-unity.md): 2d/3d 게임 개발C#
+3. [Visual Studio Tools for Unity](./cross-platform/visual-studio-tools-for-unity.md): C#을 사용하는 2D/3D 게임 개발
 
-4. [C++플랫폼 간 개발을 위한](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): 공유 코드 라이브러리 및 앱C++
+4. [플랫폼 간 개발용 C++](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): C++를 사용하는 공유 코드 라이브러리 및 앱
 
-5. [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md): Visual Studio Emulator for Android: 디버깅 및 IDE에 관계 없이 Android 앱 테스트
+5. [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md): Android용 Visual Studio 에뮬레이터: IDE에 관계 없이 Android 앱 디버그 및 테스트
 
 ## <a name="connect-your-apps-to-services"></a>앱을 서비스에 연결
  다음과 같은 서비스에 즉시 연결할 수 있습니다(각 서비스에 대한 계정이 있다고 가정함).
@@ -79,7 +79,7 @@ ms.locfileid: "65695030"
 ## <a name="build-test-and-manage-your-code"></a>코드 빌드, 테스트 및 관리
 
 ### <a name="check-in-your-code"></a>코드 체크 인
- 팀에서 작업하는 경우 팀의 모든 구성원이 동일한 코드베이스를 사용하도록 최신 버전의 코드도 공유해야 합니다. Visual Studio는 Visual Studio Team Services나 Team Foundation Server와 원활하게 통합되어 Git 또는 TFVC(Team Foundation 버전 제어)를 통해 버전 제어를 제공합니다. 로컬 서버를 유지 관리하지 않고 클라우드에 코드를 저장하려면 Visual Studio Team Services를 사용하고, 온-프레미스 서버를 사용하려면 Team Foundation Server를 사용합니다. 코드 프로젝트를 만들 때마다 버전 제어에 추가하는 옵션이 있습니다. 시스템은 사용자의 요구에 가장 적합 한 버전 제어에 대 한에 대해 알아봅니다. [버전 제어를 사용 하 여](https://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)입니다.
+ 팀에서 작업하는 경우 팀의 모든 구성원이 동일한 코드베이스를 사용하도록 최신 버전의 코드도 공유해야 합니다. Visual Studio는 Visual Studio Team Services나 Team Foundation Server와 원활하게 통합되어 Git 또는 TFVC(Team Foundation 버전 제어)를 통해 버전 제어를 제공합니다. 로컬 서버를 유지 관리하지 않고 클라우드에 코드를 저장하려면 Visual Studio Team Services를 사용하고, 온-프레미스 서버를 사용하려면 Team Foundation Server를 사용합니다. 코드 프로젝트를 만들 때마다 버전 제어에 추가하는 옵션이 있습니다. 요구 사항에 가장 적합한 버전 제어에 대해 알아보려면 [버전 제어 사용](https://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)을 참조하세요.
 
 ### <a name="build-your-app"></a>응용 프로그램 빌드
  [로컬로 앱을 빌드](./ide/compiling-and-building-in-visual-studio.md) 하고 올바르게 작동하는지 확인할 수 있습니다. 그런 다음 [디버깅 도구](./debugger/debugging-in-visual-studio.md) 를 사용하여 앱 관련 문제를 해결합니다. 또는 공유 빌드 서버나 클라우드에서 프로젝트를 빌드할 수 있습니다. 팀의 개발자들이 버전 제어에 체크 인한 코드를 빌드하도록 빌드 프로세스를 자동화합니다. 예를 들어 밤마다 또는 코드를 체크 인할 때마다 하나 이상의 프로젝트를 빌드할 수 있습니다.
@@ -100,7 +100,7 @@ ms.locfileid: "65695030"
 |[C++의 새로운 기능](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Visual Basic의 새로운 기능](https://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[JavaScript의 새로운 기능](javascript/javascript-in-visual-studio.md#whats-new-in-javascript)||
 |[Python](./python/getting-started-with-python.md)||||
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>이 섹션의 내용
 
 - [Visual Studio 2015의 새로운 기능](./what-s-new-in-visual-studio-2015.md)
 
@@ -128,6 +128,6 @@ ms.locfileid: "65695030"
 
 - [Visual Studio LightSwitch](https://msdn.microsoft.com/library/2021a2cf-f684-493f-8d1b-4cdf39bc6eb3)
 
-- [DevOps 및 응용 프로그램 수명 주기 관리](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
+- [DevOps 및 애플리케이션 수명 주기 관리](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
 
 - [의견 보내기](./ide/talk-to-us.md)

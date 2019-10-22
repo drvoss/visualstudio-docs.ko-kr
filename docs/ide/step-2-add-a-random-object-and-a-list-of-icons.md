@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31058afee1dc9fc0c9f24c773b9bdc3e5d1fb49a
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 9d335ba9f85688264882a0cb5fd59946c8c2df7b
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118944"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289701"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>2단계: 임의의 개체 및 아이콘 목록 추가
 이 단계에서는 게임에 사용할 일치하는 기호의 집합을 만듭니다. 각 기호는 폼의 TableLayoutPanel에 있는 임의의 두 셀에 추가됩니다. 이렇게 하려면 두 개의 `new` 문을 사용하여 두 개체를 만듭니다. 첫 번째 개체는 수학 퀴즈 게임에서 사용한 것과 비슷한 <xref:System.Random> 개체입니다. 이 개체는 TableLayoutPanel의 셀을 임의로 선택하기 위해 이 코드에 사용됩니다. 두 번째 개체는 사용자에게 새로울 수도 있는데, 임의로 선택한 기호를 저장하는 데 사용되는 <xref:System.Collections.Generic.List%601> 개체입니다.
@@ -34,7 +34,10 @@ ms.locfileid: "71118944"
      [!code-csharp[VbExpressTutorial4Step2_3_4#1](../ide/codesnippet/CSharp/step-2-add-a-random-object-and-a-list-of-icons_1.cs)]
      [!code-vb[VbExpressTutorial4Step2_3_4#1](../ide/codesnippet/VisualBasic/step-2-add-a-random-object-and-a-list-of-icons_1.vb)]
 
-     Visual C#을 사용 중인 경우 클래스 선언(`public partial class Form1 : Form`) 바로 다음에 여는 중괄호를 먼저 입력하고 코드를 추가해야 합니다. Visual Basic을 사용 중인 경우에는 클래스 선언(`Public Class Form1`) 바로 다음에 코드를 추가합니다.
+      > [!IMPORTANT]
+      > 이 페이지의 오른쪽 위에 있는 프로그래밍 언어 컨트롤을 사용하여 C# 코드 조각 또는 Visual Basic 코드 조각을 볼 수 있습니다.<br><br>![Docs.Microsoft.com에 대한 프로그래밍 언어 컨트롤](../ide/media/docs-programming-language-control.png)
+
+      C#을 사용 중인 경우 클래스 선언(`public partial class Form1 : Form`) 바로 다음에 여는 중괄호를 먼저 입력하고 코드를 추가해야 합니다. Visual Basic을 사용 중인 경우에는 클래스 선언(`Public Class Form1`) 바로 다음에 코드를 추가합니다.
 
 3. List 개체를 추가하는 경우 **IntelliSense** 창이 열리는 것을 확인할 수 있습니다. 다음은 Visual C# 예제이지만 Visual Basic에서 목록을 추가할 때에도 이와 비슷한 텍스트가 나타납니다.
 

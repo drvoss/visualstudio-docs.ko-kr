@@ -15,14 +15,14 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a0777cf42b9ed9412602cb34ed2d521deca1fb9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a0b624229a96cfc2a2d2044a926f45fa91a1c76c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968674"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571768"
 ---
-# <a name="jsnativeframe-structure"></a>JS_NATIVE_FRAME 구조체
+# <a name="js_native_frame-structure"></a>JS_NATIVE_FRAME 구조체
 스택 프레임을 나타냅니다.  
   
 ## <a name="syntax"></a>구문  
@@ -46,8 +46,8 @@ typedef struct {
  `StackOffset`  
  스택 포인터입니다.  
   
-## <a name="remarks"></a>설명  
- 합니다 `JS_NATIVE_FRAME` 구조체를 사용해 `IJsStackFrameEnumerator`합니다.  
+## <a name="remarks"></a>주의  
+ @No__t_1에서 `JS_NATIVE_FRAME` 구조체를 사용 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [액티브 스크립트 디버거 상수, 열거형 및 구조체](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

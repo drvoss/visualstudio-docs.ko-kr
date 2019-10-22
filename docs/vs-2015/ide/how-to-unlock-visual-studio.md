@@ -7,15 +7,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0e1fc8e9bcb6f70a2665303eb6cac353a3f87bd9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a71a045661c48fd36733ecd8d2266470667a5c35
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435093"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670588"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Visual Studio 잠금을 해제하는 방법
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "63435093"
 ### <a name="updating-stale-licenses"></a>부실 라이선스 업데이트
  라이선스가 Visual Studio에서 부실하게 된다는 아래 메시지가 표시됩니다.
 
- ![Visual Studio 사용자 정보 대화 상자](../ide/media/vs2013-userinfo.png "VS2013_UserInfo")
+ ![Visual Studio 사용자 정보 대화 상자](../ide/media/vs2013-userinfo.png "|::ref1::|")
 
  이 메시지는 구독이 여전히 유효할 수 있지만 Visual Studio에서 구독을 최신으로 유지하는 데 사용하는 라이선스 토큰이 새로 고쳐지지 않았으므로 다음 이유 중 하나로 인해 부실해졌음을 나타냅니다.
 

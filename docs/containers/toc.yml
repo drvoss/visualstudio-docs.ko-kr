@@ -11,6 +11,8 @@
           href: container-tools.md
         - name: 컨테이너의 React.js 단일 페이지 앱
           href: container-tools-react.md
+        - name: Azure Dev Spaces로 Kubernetes 개발 >>
+          href: /azure/dev-spaces/quickstart-netcore-visualstudio
     - name: 자습서
       expanded: true
       items:

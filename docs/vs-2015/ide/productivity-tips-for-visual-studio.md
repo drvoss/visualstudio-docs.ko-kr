@@ -6,15 +6,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: ccc5e543-7dcf-465c-97dd-e133e869800c
 caps.latest.revision: 32
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f43187faf1dd53cc9daf45da1191e1e944a43c8a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a5b2f2e2dc00eda388b2a2d075924fa72f9eff1a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696299"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670308"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Visual Studio 생산성 팁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,13 +81,13 @@ ms.locfileid: "65696299"
 
      그림 1: 오류 스마트 태그
 
-     ![오류 스마트 태그 제안](../ide/media/productivity-bluesmarttags.png "Productivity_BlueSmartTags")
+     ![오류 스마트 태그 제안](../ide/media/productivity-bluesmarttags.png "|::ref1::|")
 
      빨간 상자는 코드를 리팩터링하는 방법을 제안합니다.
 
      그림 2: 스마트 태그 리팩터링
 
-     ![리팩터링 스마트 태그 제안](../ide/media/productivity-redsmarttags.png "Productivity_RedSmartTags")
+     ![리팩터링 스마트 태그 제안](../ide/media/productivity-redsmarttags.png "|::ref2::|")
 
 - **코드 요소의 정의 표시 및 편집** 멤버, 변수 또는 로컬 같은 코드 요소가 정의된 모듈을 신속하게 표시하고 편집할 수 있습니다.
 
@@ -117,7 +117,7 @@ ms.locfileid: "65696299"
 
      그림 3: `new project`에 대한 빠른 실행 결과 목록
 
-     !['새 프로젝트'의 빠른 실행 결과](../ide/media/productivity-quicklaunch.png "Productivity_QuickLaunch")
+     ![‘새 프로젝트’의 빠른 실행 결과](../ide/media/productivity-quicklaunch.png "|::ref3::|")
 
      **빠른 실행**에는 **새 프로젝트** 대화 상자, **새 항목 추가** 대화 상자 및 **옵션** 대화 상자의 프로젝트 및 솔루션 페이지에 대한 링크가 표시됩니다. 빠른 실행 결과에 프로젝트 파일 및 도구 창이 포함될 수 있습니다.
 
@@ -126,7 +126,7 @@ ms.locfileid: "65696299"
 
 - **여러 브라우저에서 같은 페이지, 애플리케이션 또는 사이트 테스트** 코드를 디버그할 때 **브라우저 선택** 대화 상자를 열지 않고도 [페이지 검사기(Visual Studio)](https://msdn.microsoft.com/library/65880969-1ad2-47be-85b9-bb12c81bf209) 등의 설치된 웹 브라우저 간에 쉽게 전환할 수 있습니다. **디버깅 시작** 단추 옆의 **표준** 도구 모음에 있는 **디버그 대상** 목록을 사용하여 디버그하거나 페이지를 보는 데 사용하는 브라우저를 신속하게 확인할 수 있습니다.
 
-     ![웹 브라우저 디버그 옵션 선택](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
+     ![웹 브라우저 디버그 옵션 선택](../ide/media/webbrowserdropdowntoolbar.png "|::ref4::|")
 
 - **임시 중단점 설정** 코드의 현재 줄에 임시 중단점을 만들고 디버거를 동시에 시작할 수 있습니다. 해당 코드 줄에 도달하면 디버거 중단 모드가 시작됩니다. 자세한 내용은 [디버거로 코드 탐색](../debugger/navigating-through-code-with-the-debugger.md)을 참조하세요.
 

@@ -28,15 +28,15 @@ helpviewer_keywords:
 - XAML view settings, attribute spacing
 ms.assetid: ad3820b1-0d94-4807-a74c-c3467ed973a2
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8f820ac16667a9550db17bc252c547f16b81e70b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 319e09d2438b23c217f7820fe4288758a595be56
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696016"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662216"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>옵션, 텍스트 편집기, XAML, 서식
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -117,16 +117,16 @@ ms.locfileid: "65696016"
 
 |||
 |-|-|
-|**항상 전체 XAML 보기에서 열린 문서**|XAML 문서의 디자인 뷰 없이 XAML 보기에만 표시할지 여부를 지정 합니다. 큰 문서를 로드 하는 데 유용 합니다.|
+|**전체 XAML 뷰에서 항상 문서 열기**|XAML 문서를 디자인 뷰 없이 XAML 뷰에서만 표시할지 여부를 지정 합니다. 많은 문서를 로드 하는 데 유용 합니다.|
 
 ## <a name="toolbox"></a>도구 상자
-사용자 지정 컨트롤을 도구 상자에 표시 되는지 여부를 지정 하려면이 설정을 사용 합니다.
+사용자 컨트롤 및 사용자 지정 컨트롤을 도구 상자에 표시할지 여부를 지정 하려면이 설정을 사용 합니다.
 
 |||
 |-|-|
 |**도구 상자 항목 자동 채우기**|현재 솔루션의 사용자 컨트롤 및 사용자 지정 컨트롤을 도구 상자에 자동으로 표시할지 여부를 지정합니다.|
 
-## <a name="see-also"></a>참고 항목
-[WPF의 XAML](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)  
-[방법: XAML 뷰 설정 변경](https://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47)  
-[XAML 및 코드 연습](https://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)
+## <a name="see-also"></a>관련 항목:
+[WPF의 xaml](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8) 
+[방법: Xaml 뷰 설정 변경](https://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47) [xaml 및 코드 연습](https://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c) 
+

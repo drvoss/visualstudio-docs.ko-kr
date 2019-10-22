@@ -16,23 +16,23 @@ helpviewer_keywords:
 - diagrams - modeling, layer
 - software, designing
 - software, modeling
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79d116cfb7c9b6514032aa12d916b21b38ae94b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 996f0336742441e565d16b0fe491e846d0d24329
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811689"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654124"
 ---
 # <a name="create-models-for-your-app"></a>앱용 모델 만들기
 
 모델링 다이어그램을 통해 코드에 대한 아이디어 및 소프트웨어 시스템에서 지원해야 하는 사용자 요구 사항을 이해하고 분명히 설명하고 전달할 수 있습니다.
 
-각 다이어그램 형식을 지 원하는 Visual Studio의 버전을 보려면 [아키텍처 및 모델링 도구에 대 한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)합니다.
+각 종류의 다이어그램을 지 원하는 Visual Studio 버전을 확인 하려면 [아키텍처 및 모델링 도구에 대 한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조 하세요.
 
 시스템 또는 기존 코드의 아키텍처를 시각화하려면 다음 다이어그램을 만듭니다.
 
@@ -44,9 +44,9 @@ ms.locfileid: "62811689"
 
 ## <a name="related-tasks"></a>관련 작업
 
-|**항목**|**Task**|
+|**뒷부분**|**Task**|
 |-|-|
-|[코드 시각화](../modeling/visualize-code.md)|코드 맵을 만들고 종속성 다이어그램에 익숙하지 않은 코드를 이해 합니다.|
+|[코드 시각화](../modeling/visualize-code.md)|익숙하지 않은 코드를 더 잘 이해할 수 있도록 코드 맵 및 종속성 다이어그램을 만듭니다.|
 |[사용자 요구 사항 모델링](../modeling/model-user-requirements.md)|모델을 사용하여 사용자 요구 사항을 분명히 설명하고 전달합니다.|
 |[앱의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)|모델을 사용하여 시스템의 전체 구조 및 동작을 설명하고 사용자 요구 사항에 맞는지 확인합니다.|
 |[개발하는 동안 시스템 유효성 검사](../modeling/validate-your-system-during-development.md)|소프트웨어와 사용자 요구 사항 및 전체 시스템 아키텍처의 일관성이 유지되는지 확인합니다.|
@@ -55,5 +55,5 @@ ms.locfileid: "62811689"
 
 ## <a name="resources"></a>자료
 
-- [Visual Studio 시각화 및 모델링 도구 포럼](http://go.microsoft.com/fwlink/?LinkId=184720)
+- [Visual Studio 시각화 & 모델링 도구 포럼](http://go.microsoft.com/fwlink/?LinkId=184720)
 - [Visual Studio 확장성 포럼](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)

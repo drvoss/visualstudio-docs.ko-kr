@@ -25,15 +25,15 @@ helpviewer_keywords:
 - toolbars [Visual Studio], customizing in the IDE
 ms.assetid: b570ae2f-5302-45dc-9cc9-8d4d1ad50603
 caps.latest.revision: 31
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 91223021ce6f05b91d47e7b7019fb0c5c02243db
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 500debe6faa62079c6a93185bac409e7a3bf2813
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416795"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667997"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>방법: Visual Studio에서 메뉴 및 도구 모음 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "63416795"
 
     - 메뉴를 추가하려면 **새 메뉴 추가** 단추를 선택하고 **선택 사항 수정** 단추를 선택한 다음 추가할 메뉴의 이름을 지정합니다.
 
-         ![메뉴 추가 방법을 표시하는 사용자 지정 대화 상자](../ide/media/addmenu.png "AddMenu")
+         ![메뉴를 추가 하는 방법을 보여 주는 사용자 지정 대화 상자](../ide/media/addmenu.png "AddMenu")
 
     - 메뉴를 제거하려면 **컨트롤** 목록에서 선택한 다음 **삭제** 단추를 선택합니다.
 
@@ -79,7 +79,7 @@ ms.locfileid: "63416795"
 
     - 도구 모음을 추가하려면 **새로 만들기** 단추를 선택하고 추가할 도구 모음의 이름을 지정한 다음 **확인** 단추를 선택합니다.
 
-         ![도구 모음 추가 방법을 표시하는 사용자 지정 대화 상자](../ide/media/addtoolbar.png "AddToolbar")
+         ![도구 모음을 추가 하는 방법을 보여 주는 사용자 지정 대화 상자](../ide/media/addtoolbar.png "AddToolbar")
 
     - 사용자 지정 도구 모음을 제거하려면 **도구 모음** 목록에서 선택한 다음 **삭제** 단추를 선택합니다.
 
@@ -91,7 +91,7 @@ ms.locfileid: "63416795"
          도구 모음의 왼쪽 가장자리를 주 도킹 영역에서 원하는 위치로 끌어 도구 모음을 이동할 수도 있습니다.
 
         > [!NOTE]
-        > 도구 모음의 사용 가능성과 내게 필요한 옵션 기능을 향상시키는 방법에 대한 자세한 내용은 [방법: IDE 접근성 옵션 설정](../ide/reference/how-to-set-ide-accessibility-options.md)을 참조하세요.
+        > 도구 모음의 사용 가능성과 내게 필요한 옵션 기능을 향상시키는 방법에 대한 자세한 내용은 [방법: IDE 내게 필요한 옵션 설정](../ide/reference/how-to-set-ide-accessibility-options.md)을 참조하세요.
 
 ## <a name="bkmk_customize"></a> 메뉴 또는 도구 모음 사용자 지정
 

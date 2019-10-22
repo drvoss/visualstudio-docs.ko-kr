@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: abd5075d04f26b9795695bfcd4fcd387e1a15d24
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: 6416045f040e9825bab6eeb33dd4b75478166ee3
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079582"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342480"
 ---
 # <a name="troubleshoot-code-coverage"></a>코드 검사 문제 해결
 
@@ -29,6 +29,7 @@ Visual Studio의 코드 검사 분석 도구는 네이티브 및 관리되는 �
 ## <a name="possible-reasons-for-seeing-no-results-or-old-results"></a>결과가 없거나 오래된 결과가 표시되는 이유
 
 ### <a name="do-you-have-the-right-edition-of-visual-studio"></a>Visual Studio가 올바른 버전입니까?
+
 Visual Studio Enterprise가 필요합니다.
 
 ### <a name="no-tests-were-executed"></a>테스트를 실행하지 않은 경우
@@ -43,7 +44,7 @@ Visual Studio Enterprise가 필요합니다.
 
 테스트를 수정하고 다시 실행하면 이전 실행의 코드 강조를 포함한 이전 코드 검사 결과가 계속 표시될 수 있습니다.
 
-1. 코드 검사 분석을 실행합니다.
+1. **코드 검사 분석**을 실행합니다.
 
 2. **코드 분석 결과** 창에서 최근 결과 집합을 선택했는지 확인합니다.
 

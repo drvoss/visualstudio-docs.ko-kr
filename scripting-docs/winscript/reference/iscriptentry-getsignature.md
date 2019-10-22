@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetSignature | Microsoft Docs
+title: 'IScriptEntry:: GetSignature | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 70cc1939ae4eb1e3c58d31b3d42b7f1b4603ce9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e7b07ac64ce7e427a793f0af0db9a7905441d39b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787795"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575413"
 ---
 # <a name="iscriptentrygetsignature"></a>IScriptEntry::GetSignature
-반환 형식에 대 한 정보는 `IScriptEntry` 함수 개체입니다.  
+@No__t_0 함수 개체에 대 한 형식 정보를 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -38,10 +38,10 @@ HRESULT GetSignature(
   
 #### <a name="parameters"></a>매개 변수  
  `ppti`  
- [out] 이 사용 하 여 연결 정보 입력 `IScriptEntry` 함수 개체입니다.  
+ 제한이 이 `IScriptEntry` 함수 개체와 연결 된 형식 정보입니다.  
   
  `piMethod`  
- [out] 인덱스 메서드는 `ITypeInfo` 개체입니다.  
+ 제한이 @No__t_0 개체의 메서드 인덱스입니다.  
   
 ## <a name="return-value"></a>반환 값  
  `HRESULT`입니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
@@ -50,8 +50,8 @@ HRESULT GetSignature(
 |-----------|-----------------|  
 |`S_OK`|메서드가 성공했으며|  
   
-## <a name="remarks"></a>설명  
- 형식 정보를 사용 하 여 설정한 [IScriptEntry::SetSignature](../../winscript/reference/iscriptentry-setsignature.md) 하거나 [IScriptNode::CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md)합니다. 내부 함수 표현을 기반 항목으로 형식 정보를 생성할 수도 있습니다.  
+## <a name="remarks"></a>주의  
+ [Iscriptentry:: SetSignature](../../winscript/reference/iscriptentry-setsignature.md) 또는 [Iscriptentry:: CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md)를 사용 하 여 유형 정보를 설정 합니다. 내부 함수 표현에 따라 항목에 의해 형식 정보가 생성 될 수도 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [IScriptEntry 인터페이스](../../winscript/reference/iscriptentry-interface.md)

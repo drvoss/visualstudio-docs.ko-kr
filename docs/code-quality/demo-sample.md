@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 09e1b9f7-5916-4ed6-a001-5c2d7e710682
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: ad28cae5e548a35e0166e1d8ed451450264241f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 648d00cd59d056e0874c91338a39667088d93e2e
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820794"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018436"
 ---
 # <a name="sample-c-project-for-code-analysis"></a>코드 분석을 위한 샘플 C++ 프로젝트
 

@@ -14,17 +14,17 @@ helpviewer_keywords:
 - MSBuild, tasks
 - MSBuild, dependency diagrams
 - MSBuild, validating code
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9786c35b81ac0ff4fd29ffe121aab7e1aa04f2f
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 4a2b972c3c275f3e43819220532ac0a3c4a597e3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416441"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662929"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>종속성 다이어그램을 사용하여 코드 유효성 검사
 
@@ -42,7 +42,7 @@ ms.locfileid: "68416441"
 
    코드를 다른 아키텍처로 이동할 때 아직 작업이 필요한 코드 또는 종속성을 찾을 수 있습니다.
 
-**요구 사항**
+**Requirements**
 
 - Visual Studio
 
@@ -52,12 +52,12 @@ ms.locfileid: "68416441"
 
 이 기능을 지 원하는 Visual Studio 버전을 확인 하려면 [아키텍처 및 모델링 도구에 대 한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조 하세요.
 
-Visual Studio 또는 명령 프롬프트에서 열려 있는 종속성 다이어그램에서 수동으로 코드의 유효성을 검사할 수 있습니다. 로컬 빌드 또는 Azure Pipelines 빌드를 실행할 때 자동으로 코드의 유효성을 검사할 수도 있습니다. Channel [9 비디오를 참조 하세요. 종속성 다이어그램](http://go.microsoft.com/fwlink/?LinkID=252073)을 사용 하 여 아키텍처를 디자인 하 고 유효성을 검사 합니다.
+Visual Studio 또는 명령 프롬프트에서 열려 있는 종속성 다이어그램에서 수동으로 코드의 유효성을 검사할 수 있습니다. 로컬 빌드 또는 Azure Pipelines 빌드를 실행할 때 자동으로 코드의 유효성을 검사할 수도 있습니다. [Channel 9 비디오: 종속성 다이어그램을 사용 하 여 아키텍처 디자인 및 유효성 검사](http://go.microsoft.com/fwlink/?LinkID=252073)를 참조 하세요.
 
 > [!IMPORTANT]
 > TFS (Team Foundation Server)를 사용 하 여 레이어 유효성 검사를 실행 하려면 빌드 서버에 동일한 버전의 Visual Studio도 설치 해야 합니다.
 
-## <a name="live-dependency-validation"></a>실시간 종속성 유효성 검사
+## <a name="live-dependency-validation"></a>라이브 종속성 유효성 검사
 
 종속성 유효성 검사는 실시간으로 수행 되 고 오류는 **오류 목록**에 즉시 표시 됩니다.
 
@@ -99,7 +99,7 @@ Visual Studio 또는 명령 프롬프트에서 열려 있는 종속성 다이어
 1. 다이어그램 화면을 마우스 오른쪽 단추로 클릭 한 다음 **아키텍처 유효성 검사**를 클릭 합니다.
 
     > [!NOTE]
-    > 기본적으로 종속성 다이어그램 (. microsoft.visualstudio.teamarchitect.layerdesigner.diagrams.layerdiagram.show) 파일의 **빌드 작업** 속성은 유효성 검사로 설정 되어 **있으므로 다이어그램이** 유효성 검사 프로세스에 포함 됩니다.
+    > 기본적으로 종속성 다이어그램 (. microsoft.visualstudio.teamarchitect.layerdesigner.diagrams.layerdiagram.show) 파일의 **빌드 작업** 속성은 **유효성 검사로 설정 되어 있으므로 다이어그램이** 유효성 검사 프로세스에 포함 됩니다.
 
      **오류 목록** 창에서 발생 하는 모든 오류를 보고 합니다. 유효성 검사 오류에 대 한 자세한 내용은 [레이어 유효성 검사 문제 해결](#troubleshoot-layer-validation-issues)을 참조 하세요.
 
@@ -161,7 +161,7 @@ Visual Studio 또는 명령 프롬프트에서 열려 있는 종속성 다이어
 
 이러한 작업을 사용 하 여 **오류 목록** 창에서 유효성 검사 오류를 관리할 수 있습니다.
 
-|**수행할 작업**|**다음 단계 수행**|
+|**대상**|**다음 단계 수행**|
 |-|-|
 |선택한 오류를 유효성 검사 중에 표시 안 함|하나 또는 여러 개의 선택한 오류를 마우스 오른쪽 단추로 클릭 하 고 **유효성 검사 오류 관리**를 가리킨 다음 **오류 표시 안 함**을 클릭 합니다.<br /><br /> 표시되지 않는 오류는 취소선 서식을 사용하여 나타납니다. 다음에 유효성 검사를 실행하면 이러한 오류가 나타나지 않습니다.<br /><br /> 표시 되지 않는 오류는 해당 종속성 다이어그램 파일에 대 한 비 표시 오류 파일에서 추적 됩니다.|
 |선택한 오류 표시 안 함 중지|선택한 억제 된 오류 또는 오류를 마우스 오른쪽 단추로 클릭 하 고 **유효성 검사 오류 관리**를 가리킨 다음 **오류 무시 중지**를 클릭 합니다.<br /><br /> 다음에 유효성 검사를 실행하면 표시하지 않도록 선택한 오류는 나타나지 않습니다.|
@@ -200,7 +200,7 @@ Visual Studio 또는 명령 프롬프트에서 열려 있는 종속성 다이어
 
 다음 표에서는 레이어 유효성 검사 문제와 해결 방법에 대해 설명합니다. 이 문제는 코드와 디자인 간의 충돌로 인해 발생하는 오류와 다릅니다. 이러한 오류에 대 한 자세한 내용은 [레이어 유효성 검사 문제 해결](#troubleshoot-layer-validation-issues)을 참조 하세요.
 
-|**문제점**|**가능한 원인**|**해결 방법**|
+|**문제**|**가능한 원인**|**해결**|
 |-|-|-|
 |유효성 검사 오류가 예상대로 발생하지 않습니다.|솔루션 탐색기의 다른 종속성 다이어그램에서 복사 되 고 동일한 모델링 프로젝트에 있는 종속성 다이어그램에서는 유효성 검사가 작동 하지 않습니다. 이러한 방식으로 복사 되는 종속성 다이어그램은 원래 종속성 다이어그램과 동일한 참조를 포함 합니다.|모델링 프로젝트에 새 종속성 다이어그램을 추가 합니다.<br /><br /> 소스 종속성 다이어그램에서 새 다이어그램으로 요소를 복사 합니다.|
 
@@ -218,7 +218,7 @@ Visual Studio 또는 명령 프롬프트에서 열려 있는 종속성 다이어
 
 |**구문**|**설명**|
 |-|-|
-|*ArtifactN*(*ArtifactTypeN*)|*Artifactn* 은 종속성 다이어그램의 레이어와 연결 된 아티팩트입니다.<br /><br /> *Artifacttypen* 은 **클래스** 또는 **메서드와**같은 *artifactn*의 형식입니다. 예를 들면 다음과 같습니다.<br /><br /> MySolution.MyProject.MyClass.MyMethod(메서드)|
+|*Artifactn*(*artifacttypen*)|*Artifactn* 은 종속성 다이어그램의 레이어와 연결 된 아티팩트입니다.<br /><br /> *Artifacttypen* 은 **클래스** 또는 **메서드와**같은 *artifactn*의 형식입니다. 예를 들면 다음과 같습니다.<br /><br /> MySolution.MyProject.MyClass.MyMethod(메서드)|
 |*NamespaceNameN*|네임스페이스의 이름입니다.|
 |*LayerNameN*|종속성 다이어그램의 계층 이름입니다.|
 |*DependencyType*|*Artifact1* 와 *Artifact2*간의 종속성 관계 유형입니다. 예를 들어 *Artifact1* 에는 *Artifact2*와의 **호출** 관계가 있습니다.|
@@ -226,13 +226,13 @@ Visual Studio 또는 명령 프롬프트에서 열려 있는 종속성 다이어
 | **오류 구문** | **오류 설명** |
 |-|-|
 | DV0001: **잘못 된 종속성** | 이 문제는 계층에 매핑된 코드 요소 (네임 스페이스, 형식, 멤버)가 다른 레이어에 매핑된 코드 요소를 참조 하지만이 계층을 포함 하는 종속성 유효성 검사 다이어그램에서 이러한 계층 사이에 종속성 화살표가 없는 경우에 보고 됩니다. 이것은 종속성 제약 조건 위반입니다. |
-| DV1001: **네임 스페이스 이름이 잘못 되었습니다.** | 이 문제는 "허용 되는 네임 스페이스 이름" 속성에이 코드 요소가 정의 된 네임 스페이스가 포함 되지 않은 계층에 연결 된 코드 요소에서 보고 됩니다. 이것은 명명 제약 조건 위반입니다. "허용 되는 네임 스페이스 이름" 구문은 계층에 연결 된 코드 요소를 정의할 수 있는 네임 스페이스를 세미콜론으로 구분한 목록입니다. |
+| DV1001: **네임 스페이스 이름이 잘못 되었습니다** . | 이 문제는 "허용 되는 네임 스페이스 이름" 속성에이 코드 요소가 정의 된 네임 스페이스가 포함 되지 않은 계층에 연결 된 코드 요소에서 보고 됩니다. 이것은 명명 제약 조건 위반입니다. "허용 되는 네임 스페이스 이름" 구문은 계층에 연결 된 코드 요소를 정의할 수 있는 네임 스페이스를 세미콜론으로 구분한 목록입니다. |
 | DV1002: **참조할 수 없는 네임 스페이스에 대 한 종속성** | 이 문제는 계층에 연결 된 코드 요소에 대해 보고 되 고 계층의 "참조할 수 없는 Namespace" 속성에 정의 된 네임 스페이스에 정의 된 다른 코드 요소를 참조 합니다. 이것은 명명 제약 조건 위반입니다. "참조할 수 없는 네임 스페이스" 속성은이 계층과 연결 된 코드 요소에서 참조 해서는 안 되는 세미콜론으로 구분 된 네임 스페이스 목록으로 정의 됩니다. |
 | DV1003: **허용 되지 않는 네임 스페이스 이름** | 이 문제는 계층에 연결 된 코드 요소에서 보고 됩니다. "허용 되지 않는 네임 스페이스 이름" 속성에는이 코드 요소가 정의 된 네임 스페이스가 포함 됩니다. 이것은 명명 제약 조건 위반입니다. "허용 되지 않는 네임 스페이스 이름" 속성은이 레이어와 연결 된 코드 요소를 정의 하면 안 되는 세미콜론으로 구분 된 네임 스페이스 목록으로 정의 됩니다. |
 | DV3001: **누락 된 링크** | '*LayerName*' 계층은 찾을 수 없는 '*아티팩트*'에 연결 됩니다. 어셈블리 참조가 있는지 확인하세요. |
-| DV9001: **아키텍처 분석에서 내부 오류가 발생 했습니다.** | 결과가 불완전할 수 있습니다. 자세한 내용은 상세 빌드 이벤트 로그를 참조하세요. |
+| DV9001: **아키텍처 분석에서 내부 오류가 발생 했습니다** . | 결과가 불완전할 수 있습니다. 자세한 내용은 상세 빌드 이벤트 로그를 참조하세요. |
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 실시간 종속성 유효성 검사](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
 - [개발하는 동안 시스템 유효성 검사](../modeling/validate-your-system-during-development.md)

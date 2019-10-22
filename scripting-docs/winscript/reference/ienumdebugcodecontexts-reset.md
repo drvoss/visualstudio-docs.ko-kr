@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCodeContexts::Reset | Microsoft Docs
+title: 'IEnumDebugCodeContexts:: Reset | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 756ed93f774419f33bc721429ea3e3bb605577df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 503b8a0be7c423501752bb7cb2f72540d50d41f4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62807390"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577191"
 ---
 # <a name="ienumdebugcodecontextsreset"></a>IEnumDebugCodeContexts::Reset
-열거형 시퀀스를 처음으로 다시 설정합니다.  
+열거형 시퀀스를 시작 부분으로 다시 설정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -34,17 +34,17 @@ HRESULT Reset();
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 이 메서드는 매개 변수 없이 합니다.  
+ 이 메서드는 매개 변수를 사용 하지 않습니다.  
   
 ## <a name="return-value"></a>반환 값  
- 이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
+ 메서드는 `HRESULT`를 반환 합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
   
 |값|설명|  
 |-----------|-----------------|  
 |`S_OK`|메서드가 성공했으며|  
   
-## <a name="remarks"></a>설명  
- 이 메서드 시작 부분에 열거형 시퀀스를 다시 설정합니다.  
+## <a name="remarks"></a>주의  
+ 이 메서드는 열거 시퀀스를 시작 부분으로 다시 설정 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [IEnumDebugCodeContexts 인터페이스](../../winscript/reference/ienumdebugcodecontexts-interface.md)

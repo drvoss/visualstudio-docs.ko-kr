@@ -2,66 +2,66 @@
 title: DSL 라이브러리를 사용하여 DSL 간에 클래스 공유
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36c49d3447a5f1fafcf4601057c66ebedcb193ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5293473e35424ccc6ee357d63a9355cacf0d6725
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003389"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670756"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>DSL 라이브러리를 사용하여 DSL 간에 클래스 공유
-Visual Studio Visualization and Modeling SDK를에 다른 DSL에 가져올 수 있는 불완전 한 DSL 정의 만들 수 있습니다. 이렇게 하면 유사한 모델의 공통 부분을 구분할 수 있습니다.
+Visual Studio 시각화 및 모델링 SDK에서 다른 DSL으로 가져올 수 있는 불완전 한 DSL 정의를 만들 수 있습니다. 이렇게 하면 유사한 모델의 공통 요소를 지정할 수 있습니다.
 
-## <a name="creating-and-using-dsl-libraries"></a>만들기 및 DSL 라이브러리를 사용 합니다.
+## <a name="creating-and-using-dsl-libraries"></a>DSL 라이브러리 만들기 및 사용
 
 #### <a name="to-create-a-dsl-library"></a>DSL 라이브러리를 만들려면
 
 1. 새 DSL 프로젝트를 만들고 DSL 라이브러리 솔루션 템플릿을 선택 합니다.
 
-     빈 모델을 사용 하 여 단일 DSL 프로젝트 만들어질 수 있습니다.
+     빈 모델을 사용 하 여 단일 DSL 프로젝트가 생성 됩니다.
 
-2. 도메인 클래스, 관계, 셰이프 등 추가할 수 있습니다.
+2. 도메인 클래스, 관계, 셰이프 등을 추가할 수 있습니다.
 
-     라이브러리에 있는 요소는 단일 포함 트리를 형성 필요가 없습니다.
+     라이브러리의 요소는 단일 포함 트리를 구성할 필요가 없습니다.
 
-     가져오기를 사용할 수 있는 관계를 정의 하려면 두 도메인 클래스와의 관계를 만듭니다.
+     가져오기에서 사용할 수 있는 관계를 정의 하려면 두 개의 도메인 클래스를 만들고 두 개의 도메인 간에 관계를 만듭니다.
 
-     설정을 고려 합니다 **상속 한정자** 도메인 클래스의 `Abstract`합니다.
+     @No__t_1 도메인 클래스의 **상속 한정자** 를 설정 하는 것이 좋습니다.
 
-3. 연결 작성기와 같은 DSL 탐색기에서 정의 하는 요소를 추가할 수 있습니다.
+3. DSL 탐색기에서 정의 하는 요소 (예: 연결 작성기)를 추가할 수 있습니다.
 
-4. 유효성 검사 제약 조건 등의 추가 코드를 필요로 하는 사용자 지정 항목을 추가할 수 있습니다.
+4. 유효성 검사 제약 조건과 같이 추가 코드가 필요한 사용자 지정 항목을 추가할 수 있습니다.
 
-5. 클릭 **모든 템플릿 변환**합니다.
+5. **모든 템플릿 변환**을 클릭 합니다.
 
 6. 프로젝트를 빌드합니다.
 
-7. 컴파일된 어셈블리 (DLL) 및 파일을 모두 제공 해야 다른 사람들이 사용 하 여 DSL을 배포할 때 `DslDefinition.dsl`합니다. 아래에 폴더에서 컴파일된 어셈블리를 찾을 수 있습니다. `Dsl\bin\*`
+7. 다른 사용자가 사용할 수 있도록 DSL을 배포 하는 경우 컴파일된 어셈블리 (DLL) 및 파일 `DslDefinition.dsl`를 모두 제공 해야 합니다. 다음 폴더에서 컴파일된 어셈블리를 찾을 수 있습니다 `Dsl\bin\*`
 
 #### <a name="to-import-a-dsl-library"></a>DSL 라이브러리를 가져오려면
 
-1. 다른 DSL 정의에서 **DSL 탐색기**에서 DSL의 루트 클래스를 마우스 오른쪽 단추로 클릭 하 고 클릭 **새 DslLibrary 가져오기 추가**합니다.
+1. 다른 DSL 정의의 dsl **탐색기**에서 dsl의 루트 클래스를 마우스 오른쪽 단추로 클릭 한 다음 **새 Dsllibrary 가져오기 추가**를 클릭 합니다.
 
-2. 속성 창에서 설정 된 **파일 경로** 라이브러리입니다. 상대 경로 또는 절대 경로 사용할 수 있습니다.
+2. 속성 창에서 라이브러리의 **파일 경로** 를 설정 합니다. 상대 경로 또는 절대 경로 중 하나를 사용할 수 있습니다.
 
-    가져온된 라이브러리는 읽기 전용 모드에서 DSL 탐색기에 나타납니다.
+    가져온 라이브러리는 DSL 탐색기에서 읽기 전용 모드로 표시 됩니다.
 
-3. 가져온된 클래스를 기본 클래스로 사용할 수 있습니다. 가져오기 DSL에서 도메인 클래스를 만들고 속성 창의 설정 **기본 클래스** 가져온 클래스입니다.
+3. 가져온 클래스를 기본 클래스로 사용할 수 있습니다. 가져오기 DSL에서 도메인 클래스를 만들고, 속성 창에서 **기본 클래스** 를 가져온 클래스로 설정 합니다.
 
-4. 모든 템플릿 변환 하는 클릭 합니다.
+4. 모든 템플릿 변환을 클릭 합니다.
 
-5. DSL 라이브러리 프로젝트에서 빌드된 어셈블리 (DLL)에 대 한 참조를 DSL 프로젝트에 추가 합니다.
+5. Dsl 프로젝트에 DSL 라이브러리 프로젝트에 의해 빌드된 어셈블리 (DLL)에 대 한 참조를 추가 합니다.
 
 6. 솔루션을 빌드합니다.
 
-   DSL 라이브러리는 다른 라이브러리를 가져올 수 있습니다. 라이브러리를 가져올 때 해당 import도 자동으로 DSL 탐색기에 나타납니다.
+   DSL 라이브러리는 다른 라이브러리를 가져올 수 있습니다. 라이브러리를 가져올 때 해당 가져오기가 DSL 탐색기에도 자동으로 표시 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목:
 
 - [도메인별 언어 정의 방법](../modeling/how-to-define-a-domain-specific-language.md)
 

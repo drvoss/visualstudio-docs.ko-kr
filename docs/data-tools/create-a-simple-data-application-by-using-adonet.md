@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 98185eb44bc598d83eddd2690d4a321f8880f014
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: f895bd909ec9fda496d284c163bff4a5168bd057
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925699"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648724"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET을 사용하여 간단한 데이터 애플리케이션 만들기
 
@@ -27,7 +27,7 @@ ms.locfileid: "68925699"
 > [!IMPORTANT]
 > 코드를 간단히 유지하기 위해 프로덕션에 사용하는 예외 처리는 포함되어 있지 않습니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>Prerequisites
 
 애플리케이션을 만들려면 다음이 필요 합니다.
 
@@ -59,7 +59,7 @@ ms.locfileid: "68925699"
 
 7. T-sql 스크립트를 쿼리 편집기에 붙여 넣은 다음 **실행** 단추를 선택 합니다.
 
-     잠시 후 쿼리 실행이 완료 되 고 데이터베이스 개체가 만들어집니다. 데이터베이스에는 두 개의 테이블이 있습니다. 고객 및 주문. 이러한 테이블은 처음에는 데이터를 포함 하지 않지만 만들 응용 프로그램을 실행할 때 데이터를 추가할 수 있습니다. 데이터베이스에는 네 개의 간단한 저장 프로시저도 있습니다.
+     잠시 후 쿼리 실행이 완료 되 고 데이터베이스 개체가 만들어집니다. 데이터베이스에는 Customer와 Orders 라는 두 개의 테이블이 있습니다. 이러한 테이블은 처음에는 데이터를 포함 하지 않지만 만들 응용 프로그램을 실행할 때 데이터를 추가할 수 있습니다. 데이터베이스에는 네 개의 간단한 저장 프로시저도 있습니다.
 
 ## <a name="create-the-forms-and-add-controls"></a>폼 만들기 및 컨트롤 추가
 
@@ -84,7 +84,7 @@ ms.locfileid: "68925699"
 
    ![검색 대화 상자](../data-tools/media/simpleappnav.png)
 
-|Navigation 폼 컨트롤|속성|
+|Navigation 폼 컨트롤|데이터 액세스|
 | - |----------------|
 |단추|Name = btnGoToAdd|
 |단추|Name = btnGoToFillOrCancel|
@@ -94,7 +94,7 @@ ms.locfileid: "68925699"
 
 ![새 고객을 추가하고 주문하기](../data-tools/media/simpleappnewcust.png)
 
-|NewCustomer 폼 컨트롤|속성|
+|NewCustomer 폼 컨트롤|데이터 액세스|
 | - |----------------|
 |TextBox|Name = txtCustomerName|
 |TextBox|Name = txtCustomerID<br /><br /> Readonly = True|
@@ -109,7 +109,7 @@ ms.locfileid: "68925699"
 
 ![주문 입력 또는 취소](../data-tools/media/simpleappcancelfill.png)
 
-|FillOrCancel 폼 컨트롤|속성|
+|FillOrCancel 폼 컨트롤|데이터 액세스|
 | - |----------------|
 |TextBox|Name = txtOrderID|
 |단추|Name = btnFindByOrderID|
@@ -120,14 +120,14 @@ ms.locfileid: "68925699"
 |단추|Name = btnFinishUpdates|
 
 ## <a name="store-the-connection-string"></a>연결 문자열 저장
-애플리케이션이 데이터베이스에 대한 연결을 열려면 애플리케이션에는 연결 문자열에 액세스할 수 있어야 합니다. 각 폼에 문자열을 수동으로 입력 하지 않도록 하려면 프로젝트의 app.config 파일에 문자열을 저장 하 고, 응용 프로그램의 모든 폼에서 메서드가 호출 될 때 문자열을 반환 하는 메서드를 만듭니다.
+애플리케이션이 데이터베이스에 대한 연결을 열려면 애플리케이션에는 연결 문자열에 액세스할 수 있어야 합니다. 각 폼에 문자열을 수동으로 입력 하지 않도록 하려면 프로젝트의 *app.config 파일에* 문자열을 저장 하 고, 응용 프로그램의 모든 폼에서 메서드가 호출 될 때 문자열을 반환 하는 메서드를 만듭니다.
 
-**서버 탐색기** 에서 **판매** 데이터 연결을 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 하 여 연결 문자열을 찾을 수 있습니다. **ConnectionString** 속성을 찾은 다음 **ctrl**+**A**, **ctrl**+**C** 를 사용 하 여 문자열을 선택 하 고 클립보드에 복사 합니다.
+**서버 탐색기** 에서 **판매** 데이터 연결을 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 하 여 연결 문자열을 찾을 수 있습니다. **ConnectionString** 속성을 찾은 다음 **ctrl** +**A**, **ctrl** +**C** 를 사용 하 여 문자열을 선택 하 고 클립보드에 복사 합니다.
 
 1. 를 C#사용 하는 경우 **솔루션 탐색기**에서 프로젝트의 **속성** 노드를 확장 한 다음 **설정** 파일을 엽니다.
     Visual Basic를 사용 하는 경우 **솔루션 탐색기**에서 **모든 파일 표시**를 클릭 하 고 **내 프로젝트** 노드를 확장 한 다음 **설정** 파일을 엽니다.
 
-2. **이름** 열에을 입력 `connString`합니다.
+2. **이름** 열에 `connString`을 입력 합니다.
 
 3. **유형** 목록에서 **(연결 문자열)** 을 선택 합니다.
 
@@ -175,7 +175,7 @@ Visual Basic를 사용 하는 경우 **솔루션 탐색기**에서 **속성** �
 
 NewCustomer 양식 논리를 완료 하려면 다음 단계를 수행 합니다.
 
-1. 해당 멤버의 이름을 정규화 할 필요가 없도록 네임스페이스를범위로가져옵니다.`System.Data.SqlClient`
+1. 해당 멤버의 이름을 정규화 할 필요가 없도록 `System.Data.SqlClient` 네임 스페이스를 범위로 가져옵니다.
 
      ```csharp
      using System.Data.SqlClient;
@@ -233,6 +233,6 @@ FillOrCancel 폼 논리를 완료 하려면 다음 단계를 수행 합니다.
 
 각 Click 이벤트 처리기를 코딩하고 코딩을 마친 후에 **F5** 키를 선택하여 애플리케이션을 빌드하고 테스트합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [.NET용 Visual Studio 데이터 도구](../data-tools/visual-studio-data-tools-for-dotnet.md)

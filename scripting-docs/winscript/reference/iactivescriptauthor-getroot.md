@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetRoot | Microsoft Docs
+title: 'IActiveScriptAuthor:: GetRoot | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6cdb3246ccae2eabb34696162f67e82a60374550
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ca2aab154d56cd98c3c2acede61f86f725ce9c1b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955109"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576184"
 ---
 # <a name="iactivescriptauthorgetroot"></a>IActiveScriptAuthor::GetRoot
-반환 된 `IScriptNode` 작성자의 스크립트 트리의 루트입니다.  
+작성자의 스크립트 트리의 `IScriptNode` 루트를 반환 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -37,7 +37,7 @@ HRESULT GetRoot(
   
 #### <a name="parameters"></a>매개 변수  
  `ppsp`  
- [out] 에 대 한 포인터를 받는 변수의 주소는 `IScriptNode` 루트 노드의 인터페이스입니다.  
+ 제한이 루트 노드의 `IScriptNode` 인터페이스에 대 한 포인터를 받는 변수의 주소입니다.  
   
 ## <a name="return-value"></a>반환 값  
  `HRESULT`입니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
@@ -46,8 +46,8 @@ HRESULT GetRoot(
 |-----------|-----------------|  
 |`S_OK`|메서드가 성공했으며|  
   
-## <a name="remarks"></a>설명  
+## <a name="remarks"></a>주의  
   
-## <a name="see-also"></a>참고 항목  
- [IActiveScriptAuthor 인터페이스](../../winscript/reference/iactivescriptauthor-interface.md)   
+## <a name="see-also"></a>참조  
+ [IActiveScriptAuthor 인터페이스](../../winscript/reference/iactivescriptauthor-interface.md)    
  [IScriptNode 인터페이스](../../winscript/reference/iscriptnode-interface.md)

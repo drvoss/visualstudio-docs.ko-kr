@@ -4,38 +4,38 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, domain relationships
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2693994c9ead711f3bb536d0e37f485bc00047b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 26de877643e25413168d074d85a2aeab0794adc1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998915"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658184"
 ---
 # <a name="properties-of-domain-relationships"></a>도메인 관계의 속성
-다음 표에 속성은 도메인 관계와 연결 합니다. 도메인 관계에 대 한 자세한 내용은 [모델, 클래스 및 관계 이해](../modeling/understanding-models-classes-and-relationships.md)합니다. 이러한 속성을 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [사용자 지정 및 도메인 특정 언어 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)합니다.
+다음 표의 속성은 도메인 관계와 연결 되어 있습니다. 도메인 관계에 대 한 자세한 내용은 [모델, 클래스 및 관계 이해](../modeling/understanding-models-classes-and-relationships.md)를 참조 하세요. 이러한 속성을 사용 하는 방법에 대 한 자세한 내용은 [도메인별 언어 사용자 지정 및 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)을 참조 하세요.
 
 |속성|설명|기본|
 |-|-|-|
-|액세스 한정자|도메인 관계의 액세스 수준 (`public` 또는 `internal`).|`public`|
-|사용자 지정 특성|도메인 관계에서 생성 되는 소스 코드 클래스에 특성을 추가 하는 데 사용 합니다.|\<없음 >|
-|이중 생성 파생|경우 `True`, 기본 클래스와 부분 클래스 (사용자 지정 재정의 통해 지원)이 생성 됩니다. 자세한 내용은 [생성 된 클래스 재정의 및 확장](../modeling/overriding-and-extending-the-generated-classes.md)합니다.|`False`|
-|사용자 지정 생성자|경우 `True`, 소스 코드에서 사용자 지정 생성자를 제공 됨을 나타냅니다. 자세한 내용은 [생성 된 클래스 재정의 및 확장](../modeling/overriding-and-extending-the-generated-classes.md)합니다.|`False`|
-|상속 한정자|도메인 관계에서 생성 되는 소스 코드 클래스의 상속의 종류에 설명 합니다 (`none`하십시오 `abstract` 또는 `sealed`).|\<없음 >|
-|중복 허용|경우 `True`, 동일한 두 요소 간에 도메인 관계의 중복 링크를 만들 수 있습니다.|`False`|
-|기본 관계|도메인 관계 파생 되는 경우 도메인 관계의 기본 관계입니다.|\<없음 >|
-|포함은|경우 `True`, 도메인 관계는 관계를 포함 합니다. 경우 `False`, 참조 관계입니다.|\<both>|
-|이름|도메인 관계의 이름입니다.|현재 이름|
-|네임스페이스|도메인 관계와 연결 되어 있는 네임 스페이스입니다.|현재 네임 스페이스|
-|노트|도메인 관계와 연결 된 비공식 메모입니다.|\<없음 >|
-|설명|코드를 문서화 하는 데 사용 되 고 생성된 된 디자이너의 UI에 사용 되는 설명입니다.|\<없음 >|
-|표시 이름|도메인 관계에 대해 생성된 된 디자이너에 표시 되는 이름입니다.|\<없음 >|
-|Help Keyword|도메인 관계에 대 한 F1 도움말을 인덱싱하는 데는 선택적 키워드입니다.|\<없음 >|
+|액세스 한정자|도메인 관계 (`public` 또는 `internal`)의 액세스 수준입니다.|`public`|
+|사용자 지정 특성|도메인 관계에서 생성 되는 소스 코드 클래스에 특성을 추가 하는 데 사용 됩니다.|\<none >|
+|Double 파생을 생성 합니다.|@No__t_0 경우 재정의를 통한 사용자 지정을 지원 하기 위해 기본 클래스와 partial 클래스가 모두 생성 됩니다. 자세한 내용은 [생성 된 클래스 재정의 및 확장](../modeling/overriding-and-extending-the-generated-classes.md)을 참조 하세요.|`False`|
+|사용자 지정 생성자 있음|@No__t_0 경우 사용자 지정 생성자가 소스 코드에 제공 됨을 나타냅니다. 자세한 내용은 [생성 된 클래스 재정의 및 확장](../modeling/overriding-and-extending-the-generated-classes.md)을 참조 하세요.|`False`|
+|상속 한정자|도메인 관계 (`none` `abstract` 또는 `sealed`)에서 생성 되는 소스 코드 클래스의 상속 종류에 대해 설명 합니다.|\<none >|
+|중복 허용|@No__t_0 경우 동일한 두 요소 간에 도메인 관계의 중복 링크를 만들 수 있습니다.|`False`|
+|기본 관계|도메인 관계가 파생 된 경우 도메인 관계의 기본 관계입니다.|\<none >|
+|포함|@No__t_0 경우 도메인 관계는 포함 관계입니다. @No__t_0 경우 관계는 참조 관계입니다.|\<both >|
+|name|도메인 관계의 이름입니다.|현재 이름|
+|네임스페이스|도메인 관계와 관련 된 네임 스페이스입니다.|현재 네임 스페이스|
+|노트|도메인 관계와 관련 된 비공식 메모입니다.|\<none >|
+|설명|코드를 문서화 하는 데 사용 되 고 생성 된 디자이너의 UI에 사용 되는 설명입니다.|\<none >|
+|표시 이름|생성 된 디자이너에서 도메인 관계에 대해 표시 되는 이름입니다.|\<none >|
+|Help Keyword|도메인 관계에 대 한 F1 도움말을 인덱싱하는 데 사용 되는 선택적 키워드입니다.|\<none >|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목:
 
 - [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

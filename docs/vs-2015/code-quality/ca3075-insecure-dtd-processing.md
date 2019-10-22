@@ -5,17 +5,17 @@ ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 65798d66-7a30-4359-b064-61a8660c1eed
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 694b72327d8e059fe12a227afdab79219081ef92
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7cf9da2f295d94ac68c74039458f4cdbfda3ae5c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65693405"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661616"
 ---
-# <a name="ca3075-insecure-dtd-processing"></a>CA3075: DTD 처리가 안전하지 않습니다.
+# <a name="ca3075-insecure-dtd-processing"></a>CA3075: 안전하지 않은 DTD 처리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -35,31 +35,31 @@ ms.locfileid: "65693405"
 
 - XML의 <xref:System.Xml.XmlNode.InnerXml%2A> 속성이 설정된 경우
 
-- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> 속성이는 Parse로 설정 됩니다.
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> 속성이 Parse로 설정 되어 있습니다.
 
 - 신뢰할 수 없는 입력이 <xref:System.Xml.XmlResolver> 대신 <xref:System.Xml.XmlSecureResolver> 를 사용하여 처리되는 경우
 
-- XmlReader입니다.<xref:System.Xml.XmlReader.Create%2A> 메서드가 호출 됩니다는 안전 하지 않은 <xref:System.Xml.XmlReaderSettings> 인스턴스 또는 모든 인스턴스가 없습니다.
+- XmlReader입니다. <xref:System.Xml.XmlReader.Create%2A> 메서드는 안전 하지 않은 <xref:System.Xml.XmlReaderSettings> 인스턴스를 사용 하거나 인스턴스를 사용 하지 않고 호출 됩니다.
 
-- <xref:System.Xml.XmlReader> 안전 하지 않은 기본 설정이 나 값을 사용 하 여 생성 됩니다.
+- <xref:System.Xml.XmlReader>은 안전 하지 않은 기본 설정 또는 값을 사용 하 여 생성 됩니다.
 
   이러한 경우 모두 결과는 동일합니다. XML이 처리되는 컴퓨터의 파일 시스템 또는 네트워크 공유의 내용이 공격자에게 노출되어 DoS 벡터로 사용될 수 있습니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
 
-- Catch 하 고 적절 하 게 경로 정보가 공개 되지 않도록 모든 XmlTextReader 예외를 처리 합니다.
+- 모든 XmlTextReader 예외를 Catch 하 고 처리 하 여 경로 정보가 공개 되지 않도록 합니다.
 
-- 사용 하 여는 <xref:System.Xml.XmlSecureResolver> XmlTextReader에서 액세스할 수 있는 리소스를 제한 합니다.
+- @No__t_0를 사용 하 여 XmlTextReader에서 액세스할 수 있는 리소스를 제한 합니다.
 
-- 허용 하지 않습니다는 <xref:System.Xml.XmlReader> 를 설정 하 여 외부 리소스를 열려면 합니다 <xref:System.Xml.XmlResolver> 속성을 **null**합니다.
+- @No__t_1 속성을 **null**로 설정 하 여  <xref:System.Xml.XmlReader>에서 외부 리소스를 열 수 없도록 합니다.
 
 - <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> 의 <xref:System.Data.DataViewManager> 속성이 신뢰할 수 있는 소스에서 할당되었는지 확인합니다.
 
   .NET 3.5 및 이전 버전
 
-- 신뢰할 수 없는 소스를 설정 하 여 처리 하는 경우 DTD 처리를 사용 하지 않도록 설정 합니다 <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> 속성을 **true** 합니다.
+- @No__t_0 속성을 **true** 로 설정 하 여 신뢰할 수 없는 소스를 처리 하는 경우 DTD 처리를 사용 하지 않도록 설정 합니다.
 
-- XmlTextReader 클래스에는 완전 신뢰 상속 요청이 있습니다. 참조 [상속 요청](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) 자세한 내용은 합니다.
+- XmlTextReader 클래스에는 완전 신뢰 상속 요청이 있습니다. 자세한 내용은 [상속 요청](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) 을 참조 하세요.
 
   .NET 4 이상
 

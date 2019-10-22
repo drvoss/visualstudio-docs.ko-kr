@@ -15,14 +15,14 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 27aaadfd1d3ff38e9a0382ff1863b73d2bccc325
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94a72228e1ad6ab49568f3291ad9add7209ef3da
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539445"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571740"
 ---
-# <a name="jspropertyattributes-enumeration"></a>JS_PROPERTY_ATTRIBUTES 열거형
+# <a name="js_property_attributes-enumeration"></a>JS_PROPERTY_ATTRIBUTES 열거형
 속성의 특성을 나타냅니다.  
   
 ## <a name="syntax"></a>구문  
@@ -33,11 +33,11 @@ enum JS_PROPERTY_ATTRIBUTES{   JS_PROPERTY_ATTRIBUTE_NONE = 0,   JS_PROPERTY_HAS
   
 ## <a name="members"></a>멤버  
   
-|이름|설명|  
+|name|설명|  
 |----------|-----------------|  
 |`JS_PROPERTY_ATTRIBUTE_NONE`|속성에 특성이 없습니다.|  
 |`JS_PROPERTY_HAS_CHILDREN`|속성에 자식 요소가 있습니다.|  
-|`JS_PROPERTY_FAKE`|이 속성에는 "[Methods]" 같은 가짜 노드를 나타냅니다.|  
+|`JS_PROPERTY_FAKE`|속성은 "[method]"와 같은 가짜 노드를 나타냅니다.|  
 |`JS_PROPERTY_METHOD`|속성은 메서드입니다.|  
 |`JS_PROPERTY_READONLY`|속성이 읽기 전용입니다.|  
 |`JS_PROPERTY_NATIVE_WINRT_POINTER`|속성은 네이티브 WinRT 개체에 대한 포인터입니다.|  
@@ -45,5 +45,5 @@ enum JS_PROPERTY_ATTRIBUTES{   JS_PROPERTY_ATTRIBUTE_NONE = 0,   JS_PROPERTY_HAS
 ## <a name="requirements"></a>요구 사항  
  **헤더:** jscript9diag.h  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [Windows 스크립트 인터페이스 참조](../../winscript/reference/windows-script-interfaces-reference.md)

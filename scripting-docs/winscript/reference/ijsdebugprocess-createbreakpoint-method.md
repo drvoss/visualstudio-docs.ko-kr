@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugprocess:: Createbreakpoint 메서드 | Microsoft Docs'
+title: 'IJsDebugProcess:: CreateBreakPoint 메서드 | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b398b93c2e7b5ad43abd35d385407b39c0c980f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b0a4d595a11dc54829c467a0aace9601042fa08
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557974"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575099"
 ---
 # <a name="ijsdebugprocesscreatebreakpoint-method"></a>IJsDebugProcess::CreateBreakPoint 메서드
 지정한 문서 위치에서 중단점을 설정합니다.  
@@ -39,24 +39,24 @@ HRESULT CreateBreakPoint(
   
 #### <a name="parameters"></a>매개 변수  
  `documentId`  
- [in] IDebugDocumentText에 대 한 포인터입니다.  
+ 진행 IDebugDocumentText에 대 한 포인터입니다.  
   
  `characterOffset`  
- [in] 파일의 시작 부분에서 문자 오프셋입니다.  
+ 진행 파일의 시작 부분에서의 문자 오프셋입니다.  
   
  `characterCount`  
- [in] 중단점을 삽입 해야 하는 문서 텍스트의 길이입니다.  
+ 진행 중단점이 삽입 되어야 하는 문서 텍스트의 길이입니다.  
   
  `isEnabled`  
- [in] 중단점 사용 되는지 여부를 지정 합니다.  
+ 진행 중단점을 사용할 수 있는지 여부를 지정 합니다.  
   
  `ppDebugBreakPoint`  
- [out] 생성 된 중단점을 나타내는 개체입니다.  
+ 제한이 만들어진 중단점을 나타내는 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더:** jscript9diag.h  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [IJsDebugProcess 인터페이스](../../winscript/reference/ijsdebugprocess-interface.md)

@@ -3,28 +3,21 @@ title: Live Unit Testing FAQ
 ms.date: 10/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
-- Visual Studio ALM
 - Live Unit Testing FAQ
-author: rpetrusha
-ms.author: ronpet
+author: gewarren
+ms.author: gewarren
 ms.workload:
 - dotnet
-ms.openlocfilehash: 41d5248106b831accf4d71f97aeaeb72fdbc5018
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 545c8974e3d0dea196a6168db03586a37d15ed72
+ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68662017"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72262298"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing 질문과 대답
 
-## <a name="latest-features"></a>최신 기능
-
-**Live Unit Testing은 정기적으로 개선 및 향상됩니다. 최신의 새로운 기능과 향상된 기능에 대한 정보를 어떻게 찾을 수 있나요?**
-
-Live Unit Testing의 적용된 새로운 기능과 향상된 기능에 대한 자세한 내용은 [Live Unit Testing의 새로운 기능](live-unit-testing-whats-new.md)을 참조하세요.
-
-## <a name="supported-frameworks-and-versions"></a>지원되는 프레임워크 및 버전
+## <a name="supported-frameworks"></a>지원되는 프레임워크
 
 **Live Unit Testing에서 지원하는 테스트 프레임워크와 지원되는 최소 버전은 어떻게 되나요?**
 
@@ -36,21 +29,21 @@ Live Unit Testing은 다음 테이블에 나열된 세 가지 인기 있는 단�
 |NUnit |NUnit3TestAdapter 버전 3.7.0 |NUnit 버전 3.5.0 |
 |MSTest |MSTest.TestAdapter 1.1.4-미리 보기 |MSTest.TestFramework 1.0.5-미리 보기 |
 
-`Microsoft.VisualStudio.QualityTools.UnitTestFramework`를 참조하는 이전 MSTest 기반 테스트 프로젝트가 있고 최신 MSTest NuGet 패키지로 이동하지 않으려면 Visual Studio 2017 버전 15.4 이상으로 업그레이드하세요.
+`Microsoft.VisualStudio.QualityTools.UnitTestFramework`를 참조하는 이전 MSTest 기반 테스트 프로젝트가 있고 최신 MSTest NuGet 패키지로 이동하지 않으려면 Visual Studio 2019 또는 Visual Studio 2017로 업그레이드하세요.
 
-경우에 따라 Live Unit Testing이 작동하기 위해 솔루션의 프로젝트에서 참조하는 NuGet 패키지를 명시적으로 복원해야 합니다. 솔루션의 명시적 빌드를 수행하거나(최상위 Visual Studio 메뉴에서 **빌드**, **솔루션 다시 빌드**를 선택) 또는 Living Unit Testing을 활성화하기 전에 솔루션을 마우스 오른쪽 단추로 클릭하고 **NuGet 패키지 복원**을 선택해서 패키지를 복원합니다.
+경우에 따라 Live Unit Testing이 작동하기 위해 솔루션의 프로젝트에서 참조하는 NuGet 패키지를 명시적으로 복원해야 합니다. 솔루션의 명시적 빌드를 수행하거나(최상위 Visual Studio 메뉴에서 **빌드** > **솔루션 다시 빌드**를 선택) 또는 Living Unit Testing을 활성화하기 전에 솔루션을 마우스 오른쪽 단추로 클릭하고 **NuGet 패키지 복원**을 선택해서 패키지를 복원합니다.
 
 ## <a name="net-core-support"></a>.NET Core 지원
 
 **Live Unit Testing은 .NET Core와 호환되나요?**
 
-예. Live Unit Testing은 .NET Core 및 .NET Framework와 호환됩니다. Visual Studio 2017 버전 15.3에서 .NET Core 지원이 추가되었습니다. .NET Core에 대한 Live Unit Testing 지원이 필요한 경우 이 버전 이상의 Visual Studio로 업그레이드합니다.
+예. Live Unit Testing은 .NET Core 및 .NET Framework와 호환됩니다.
 
 ## <a name="configuration"></a>구성
 
 **Live Unit Testing을 설정해도 작동하지 않는 이유는 무엇인가요?**
 
-**출력 창**(Live Unit Testing 드롭다운을 선택한 경우)은 Live Unit Testing이 작동하지 않는 이유를 설명합니다. 다음과 같은 이유로 Live Unit Testing이 작동하지 않을 수 있습니다.
+출력 창(Live Unit Testing 드롭다운을 선택한 경우)은 Live Unit Testing이 작동하지 않는 이유를 설명합니다. 다음과 같은 이유로 Live Unit Testing이 작동하지 않을 수 있습니다.
 
 - 솔루션의 프로젝트에서 참조하는 NuGet 패키지가 복원되지 않은 경우 Live Unit Testing은 작동하지 않습니다. Live Unit Testing을 설정하기 전에 솔루션을 명시적으로 빌드하거나 솔루션의 NuGet 패키지를 복원하면 이 문제가 해결되어야 합니다.
 
@@ -92,7 +85,7 @@ Live Unit Testing은 다음 테이블에 나열된 세 가지 인기 있는 단�
 </Target>
 ```
 
-## <a name="error-messages-with-ltoutputpathgt-or-ltoutdirgt"></a>&lt;OutputPath&gt; 또는 &lt;OutDir&gt;을 포함한 오류 메시지
+## <a name="error-messages-with-outputpath-or-outdir"></a>\<OutputPath > 또는 \<OutDir>을 포함한 오류 메시지
 
 **Live Unit Testing이 내 솔루션을 빌드하려고 하는 경우 다음 오류가 표시되는 이유는 무엇인가요? “무조건 `<OutputPath>` 또는 `<OutDir>`으로 설정된 것으로 보입니다. Live Unit Testing은 출력 어셈블리에서 테스트를 실행하지 않습니다.”**
 
@@ -123,13 +116,13 @@ Live Unit Testing은 다음 테이블에 나열된 세 가지 인기 있는 단�
 
 `<OutDir>`를 빌드 프로세스에서 직접 재정의하지 않습니다. 특정 위치에 빌드 아티팩트를 배치하는 대신 `<OutputPath>`를 재정의합니다.
 
-## <a name="set-the-location-of-build-artifacts"></a>빌드 아티팩트의 위치 설정
+## <a name="build-artifact-location"></a>아티팩트 빌드 위치
 
 **Live Unit Testing 빌드 아티팩트를 원하는 *.vs* 폴더의 기본 위치 대신 특정 위치로 이동하려고 합니다. 어떻게 변경할 수 있나요?**
 
 `LiveUnitTesting_BuildRoot` 사용자 수준 환경 변수를 Live Unit Testing 빌드 아티팩트를 배치하려는 경로로 설정합니다. 
 
-## <a name="test-explorer-vs-live-unit-testing-test-runs"></a>테스트 탐색기 및 Live Unit Testing 테스트 실행
+## <a name="test-explorer-versus-live-unit-testing"></a>테스트 탐색기 및 Live Unit Testing
 
 **테스트 탐색기 창에서 테스트를 실행하는 것과 Live Unit Testing에서 테스트를 실행하는 것은 어떻게 다른가요?**
 
@@ -139,11 +132,11 @@ Live Unit Testing은 다음 테이블에 나열된 세 가지 인기 있는 단�
 
 - Live Unit Testing은 테스트를 실행하기 위해 새 애플리케이션 도메인을 만들지 않지만 **테스트 탐색기** 창에서 실행되는 테스트는 새 애플리케이션 도메인을 만듭니다.
 
-- Live Unit Testing은 각 테스트 어셈블리에서 순차적으로 테스트를 실행합니다. **테스트 탐색기** 창에서 여러 테스트를 병렬로 실행하도록 선택할 수 있습니다.
+- Live Unit Testing은 테스트 어셈블리 각각에서 순차적으로 테스트를 실행합니다. **테스트 탐색기**에서 여러 테스트를 병렬로 실행하도록 선택할 수 있습니다.
 
 - Live Unit Testing에서 테스트를 검색하고 실행하려면 `TestPlatform`의 버전 2를 사용하는 반면 **테스트 탐색기** 창은 버전 1을 사용합니다. 그러나 대부분의 경우에는 차이를 알 수 없습니다.
 
-- 현재 **테스트 탐색기**는 기본적으로 STA(단일 스레드 아파트)에서 실행되는 반면 Live Unit Testing은 MTA(다중 스레드 아파트)에서 테스트를 실행합니다. Live Unit Testing의 STA에서 MSTest 테스트를 실행하려면 `MSTest.STAExtensions 1.0.3-beta`에서 찾을 수 있는 `<STATestMethod>` 또는 `<STATestClass>` 특성을 사용하여 NuGet 패키지 테스트 메서드 또는 포함한 클래스를 데코레이트합니다. NUnit의 경우 테스트 메서드를 `<RequiresThread(ApartmentState.STA)>` 특성을 사용하여 데코레이트하고 xUnit의 경우 `<STAFact>` 특성을 사용하여 데코레이트합니다.
+- **테스트 탐색기**는 기본적으로 STA(단일 스레드 아파트)에서 실행되는 반면 Live Unit Testing은 MTA(다중 스레드 아파트)에서 테스트를 실행합니다. Live Unit Testing의 STA에서 MSTest 테스트를 실행하려면 `MSTest.STAExtensions 1.0.3-beta`에서 찾을 수 있는 `<STATestMethod>` 또는 `<STATestClass>` 특성을 사용하여 NuGet 패키지 테스트 메서드 또는 포함한 클래스를 데코레이트합니다. NUnit의 경우 테스트 메서드를 `<RequiresThread(ApartmentState.STA)>` 특성을 사용하여 데코레이트하고 xUnit의 경우 `<STAFact>` 특성을 사용하여 데코레이트합니다.
 
 ## <a name="exclude-tests"></a>테스트 제외
 
@@ -174,6 +167,8 @@ public class Class1
 }
 ```
 
+::: moniker range="vs-2017"
+
 ## <a name="win32-pe-headers"></a>Win32 PE 헤더
 
 **Win32 PE 헤더가 Live Unit Testing에서 빌드한 계측된 어셈블리와 다른 이유는 무엇인가요?**
@@ -190,27 +185,15 @@ public class Class1
 
 이러한 값을 사용하는 테스트를 Live Unit testing에서 실행하는 경우 실패할 수 있습니다.
 
+::: moniker-end
+
 ## <a name="continuous-builds"></a>연속 빌드
 
 **편집하지 않은 경우에도 Live Unit Testing에서 내 솔루션을 계속 빌드하는 이유는 무엇인가요?**
 
-솔루션의 빌드 프로세스가 솔루션 자체의 일부인 소스 코드를 생성하고 빌드 대상 파일에 적절한 입력 및 출력이 지정되지 않은 경우 편집하지 않더라도 솔루션을 빌드할 수 있습니다. 대상에는 입력 및 출력의 목록이 지정되었으므로 MSBuild는 적절한 최신 검사를 수행하고 새 빌드가 필요한지 여부를 확인할 수 있습니다.
+빌드 프로세스가 솔루션 자체의 일부인 소스 코드를 생성하고 빌드 대상 파일에 적절한 입력 및 출력이 지정되지 않은 경우 편집하지 않더라도 솔루션을 빌드할 수 있습니다. 대상에는 입력 및 출력의 목록이 지정되었으므로 MSBuild는 적절한 최신 검사를 수행하고 새 빌드가 필요한지 여부를 확인할 수 있습니다.
 
-Live Unit Testing은 원본 파일이 변경되었음을 감지할 때마다 빌드하기 시작합니다. 솔루션의 빌드가 원본 파일을 생성하기 때문에 Live Unit Testing은 빌드 무한 루프로 진행됩니다. 그러나 (이전 빌드에서 새로 생성된 원본 파일을 감지한 후에) Live Unit Testing에서 두 번째 빌드를 시작하는 시기를 대상의 입력 및 출력이 확인하면 입력 및 출력 검사는 모든 항목이 최신 상태라고 표시하기 때문에 빌드 루프를 중단시킵니다.  
-
-## <a name="new-process-coverage"></a>새 프로세스 검사
-
-**Live Unit Testing이 테스트에서 만든 새 프로세스의 검사를 캡처하지 않는 이유는 무엇인가요?**
-
-이는 알려진 문제이며 후속 릴리스에서 수정해야 합니다.
-
-## <a name="including-or-excluding-tests-doesnt-work"></a>테스트 포함 또는 제외가 작동하지 않음
-
-**라이브 테스트 집합에서 테스트를 포함하거나 제외한 후에 아무것도 발생하지 않은 이유는 무엇인가요?**
-
-이 문제는 해결되었으며 Visual Studio 2017 버전 15.3 이상에서는 없습니다.
-
-이것은 Visual Studio 2017의 이전 버전에서 알려진 문제입니다. 이 문제를 해결하기 위해 테스트를 포함하거나 제외한 후에 모든 파일을 편집해야 합니다.
+Live Unit Testing은 원본 파일이 변경되었음을 감지할 때마다 빌드하기 시작합니다. 솔루션의 빌드가 원본 파일을 생성하기 때문에 Live Unit Testing은 빌드 무한 루프로 진행됩니다. 그러나 (이전 빌드에서 새로 생성된 원본 파일을 감지한 후에) Live Unit Testing에서 두 번째 빌드를 시작하는 시기를 대상의 입력 및 출력이 확인하면 입력 및 출력 검사는 모든 항목이 최신 상태라고 표시하기 때문에 빌드 루프를 중단시킵니다.
 
 ## <a name="editor-icons"></a>편집기 아이콘
 

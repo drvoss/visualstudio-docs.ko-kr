@@ -7,15 +7,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 caps.latest.revision: 34
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 96676ee8021e09a5e7d0a9808cea1e615f58717a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9c732f4011c4194ce95621cf49022c2b6a9fabf3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679825"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661215"
 ---
 # <a name="signing-in-to-visual-studio"></a>Visual Studio에 로그인
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ IDE에 로그인하여 개인 설정 계정을 설정하면 Visual Studio의 개
 
  설정을 제공한 후 Visual Studio가 시작되고 로그인되면 시작할 수 있습니다. 로그인되어 있는지 여부를 확인하려면 Visual Studio 환경의 오른쪽 위 모서리에서 이름을 찾습니다.
 
- ![현재 로그인한 사용자](../ide/media/vs2015-username.png "VS2015_UserName")
+ ![사용자의 currentlly 로그인](../ide/media/vs2015-username.png "VS2015_UserName")
 
  로그아웃하지 않으면 시작할 때마다 자동으로 Visual Studio에 로그인되고 동기화된 설정의 모든 변경 내용이 자동으로 적용됩니다. 로그아웃하려면 Visual Studio 환경에서 프로필 이름 옆에 있는 아래쪽 화살표를 선택하고 **계정 설정** 명령을 선택한 후 **로그아웃** 링크를 선택합니다. 다시 로그인하려면 Visual Studio 환경의 오른쪽 위 모서리에서 **로그인** 명령을 선택합니다.
 

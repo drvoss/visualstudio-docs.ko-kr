@@ -15,15 +15,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ca90a566db422d75fefc44267ffe10504bb872ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e08583f9bb914adfbd144715646991c6070f3f32
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816787"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574580"
 ---
-# <a name="profilerscripttype-enumeration"></a>PROFILER_SCRIPT_TYPE 열거형
-스크립트의 유형을 지정합니다.  
+# <a name="profiler_script_type-enumeration"></a>PROFILER_SCRIPT_TYPE 열거형
+스크립트의 유형을 지정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -40,13 +40,13 @@ typedef enum {
   
 |멤버|설명|  
 |------------|-----------------|  
-|PROFILER_SCRIPT_TYPE_USER|사용자가 작성 한 스크립트 코드를 지정합니다.|  
-|PROFILER_SCRIPT_TYPE_DYNAMIC|실행 하는 동안 동적으로 생성 되는 스크립트 코드를 지정 합니다.|  
-|PROFILER_SCRIPT_TYPE_NATIVE|네이티브 함수 및 스크립트 엔진에 의해 정의 된 개체에 대 한 스크립트 유형을 지정 합니다.|  
-|PROFILER_SCRIPT_TYPE_DOM|호출에는 개체 모델 DOM (문서)에 대 한 호출 예를 들어, Internet Explorer의 지정 된 `document.getElementById` 메서드.|  
+|PROFILER_SCRIPT_TYPE_USER|사용자가 작성 한 스크립트 코드를 지정 합니다.|  
+|PROFILER_SCRIPT_TYPE_DYNAMIC|실행 중에 동적으로 생성 되는 스크립트 코드를 지정 합니다.|  
+|PROFILER_SCRIPT_TYPE_NATIVE|스크립팅 엔진에서 정의 하는 개체와 네이티브 함수에 대 한 스크립트 유형을 지정 합니다.|  
+|PROFILER_SCRIPT_TYPE_DOM|Internet Explorer의 문서 개체 모델 (DOM) 호출을 지정 합니다. 예를 들어 `document.getElementById` 메서드를 호출 합니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [액티브 스크립트 Profiler 상수, 열거형 및 구조체](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)   
- [IActiveScriptProfilerCallback::ScriptCompiled](../../winscript/reference/iactivescriptprofilercallback-scriptcompiled.md)   
- [IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)   
+## <a name="see-also"></a>참조  
+ [액티브 스크립트 프로파일러 상수, 열거형 및 구조체](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)    
+ [IActiveScriptProfilerCallback:: ScriptCompiled](../../winscript/reference/iactivescriptprofilercallback-scriptcompiled.md)    
+ [IActiveScriptProfilerCallback2:: OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)    
  [IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md)

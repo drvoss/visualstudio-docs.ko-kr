@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d0504f994c05ed9c924b3758a7f83838c67df44
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 31a66556e9476631fa0372b14e73eb8c6241fc63
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118718"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314192"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>9단계: 코드 검토, 주석 처리 및 테스트
 
@@ -54,8 +54,7 @@ C#에서는 두 개의 슬래시(//)를 사용하여 주석 줄을 표시하고,
 
 1. 다음 주석을 코드에 추가합니다.
 
-    > [!IMPORTANT]
-    > 이 페이지의 오른쪽 위에 있는 프로그래밍 언어 컨트롤을 사용하여 C# 코드 조각 또는 Visual Basic 코드 조각을 볼 수 있습니다.<br><br>![Docs.Microsoft.com에 대한 프로그래밍 언어 컨트롤](../ide/media/docs-programming-language-control.png)
+     [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
      [!code-csharp[VbExpressTutorial1Step9_10#1](../ide/codesnippet/CSharp/step-9-review-comment-and-test-your-code_1.cs)]
 

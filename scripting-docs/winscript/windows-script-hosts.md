@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eec1824bd3ba1a8acb7e3c540656151cd4b11d1f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8468f578ee44487acd2575e81e01d65969110437
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840046"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72568818"
 ---
 # <a name="windows-script-hosts"></a>Windows 스크립트 호스트
 Microsoft Windows 스크립트 호스트를 구현할 때, 호스트에서 다음을 수행하는 경우에 한해 스크립팅 엔진이 기본 스레드의 컨텍스트에서 [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) 인터페이스만 호출한다고 간주해도 됩니다.  
@@ -40,5 +40,5 @@ Microsoft Windows 스크립트 호스트를 구현할 때, 호스트에서 다�
 ## <a name="remarks"></a>주의  
  이러한 제한 사항은 자유 스레드 [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) 인터페이스와 자유 스레드 개체 모델을 구현하도록 선택하는 호스트에 적용되지 않습니다. 이러한 호스트에서는 제한 없이 모든 스레드의 [IActiveScript](../winscript/reference/iactivescript.md) 인터페이스를 사용할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [Windows 스크립트 인터페이스](../winscript/windows-script-interfaces.md)

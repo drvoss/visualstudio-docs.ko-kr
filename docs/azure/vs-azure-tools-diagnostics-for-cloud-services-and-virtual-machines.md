@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 0b212ee44809f925bb4d2d78efc972a4986602a5
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
-ms.translationtype: HT
+ms.openlocfilehash: 911a366aa69cf0a45cb030bb83017895500ad32f
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177331"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962971"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Azure Cloud Services 및 Virtual Machines에 대한 진단 설정
 Azure 클라우드 서비스 또는 가상 머신 문제를 해결해야 하는 경우 Visual Studio를 사용하여 Azure Diagnostics를 보다 쉽게 설정할 수 있습니다. 진단은 클라우드 서비스를 실행하는 가상 머신 및 가상 머신 인스턴스에서 시스템 데이터와 로깅 데이터를 캡처합니다. 진단 데이터는 사용자가 선택한 스토리지 계정으로 전송됩니다. Azure의 진단 로깅에 대한 자세한 내용은 [Azure App Service에서 웹앱에 대해 진단 로깅 사용](/azure/app-service/web-sites-enable-diagnostic-log)을 참조하세요.
@@ -46,7 +46,7 @@ Azure SDK 2.5에서 Azure SDK 2.6 이상으로 마이그레이션하는 경우 .
 * 진단 연결 문자열이 .cscfg 파일에 지정되지 않은 경우 Visual Studio에서는 게시할 때와 패키징 동안 공용 구성 XML 파일을 생성할 때 .wadcfgx 파일에 지정된 스토리지 계정을 대신 사용하여 진단 확장을 설정합니다.
 * .cscfg 파일의 진단 연결 문자열은 .wadcfgx 파일의 스토리지 계정보다 우선합니다. 진단 연결 문자열이.cscfg 파일에 지정된 경우, Visual Studio에서는 이 연결 문자열을 사용하고 .wadcfgx의 스토리지 계정은 무시합니다.
 
-### <a name="what-does-the-update-development-storage-connection-strings-check-box-do"></a>"개발 저장소 연결 문자열 업데이트..." 확인란의 기능은 무엇인가요?
+### <a name="what-does-the-update-development-storage-connection-strings-check-box-do"></a>&quot;개발 스토리지 연결 문자열 업데이트...&quot; 확인란의 기능은 무엇인가요?
 **Microsoft Azure에 게시할 때 Microsoft Azure Storage 계정 자격 증명을 사용하여 진단 및 캐싱을 위한 개발 스토리지 연결 문자열 업데이트** 확인란은 게시하는 동안 지정된 Azure Storage 계정으로 개발 스토리지 계정 연결 문자열을 업데이트하는 편리한 방법입니다.
 
 예를 들어 이 확인란을 선택하며 진단 연결 문자열이 `UseDevelopmentStorage=true`를 지정하면 Azure에 프로젝트를 게시할 때 Visual Studio는 게시 마법사에 지정한 스토리지 계정으로 진단 연결 문자열을 자동으로 업데이트합니다. 그러나 실제 스토리지 계정을 진단 연결 문자열로 지정한 경우 해당 계정이 대신 사용됩니다.
@@ -83,7 +83,7 @@ Visual Studio에서는 배포하기 전에 에뮬레이터에서 서비스를 �
 5. **진단 구성** 대화 상자를 표시하려면 **구성**을 선택합니다. **일반** 및 **로그 디렉터리**를 제외한 각 탭은 수집할 수 있는 진단 데이터 원본을 나타냅니다. 기본 **일반** 탭은 다음과 같은 진단 데이터 컬렉션 옵션을 제공합니다. **오류만**, **모든 정보** 및 **사용자 지정 계획**. 기본 **오류만** 옵션은 경고 또는 추적 메시지를 전송하지 않으므로 최소한의 스토리지를 사용합니다. **모든 정보** 옵션은 대부분의 정보를 전송하고, 대부분의 스토리지를 사용하므로 비용이 가장 많이 드는 옵션입니다.
 
    > [!NOTE]
-   > "디스크 할당량(MB)"에 지원되는 최소 크기는 4GB입니다. 그러나 메모리 덤프를 수집하는 경우 이 값을 10GB까지 늘릴 수 있습니다.
+   > "디스크 할당량 (MB)"에 대해 지원 되는 최소 크기는 50MB 이며 기본 크기는 4GB입니다. 그러나 메모리 덤프를 수집하는 경우 이 값을 10GB까지 늘릴 수 있습니다.
    >
 
     ![Azure Diagnostics 및 구성 사용](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758144.png)

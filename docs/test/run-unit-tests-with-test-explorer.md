@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d18f510b3b30207079b644e540d8b5db22609f97
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 27ca8a39d39fcc8b4e5ddca2cbedf72e44c6cc81
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891331"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342455"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>테스트 탐색기를 사용하여 단위 테스트 실행
 
@@ -320,6 +320,7 @@ Visual Studio Enterprise Edition에 제공되는 Visual Studio 코드 검사 도
 솔루션에서 테스트 메서드에 대한 코드 검사를 실행하려면
 
 ::: moniker range="vs-2017"
+
 1. 메뉴 모음에서 **테스트**를 선택한 다음, **코드 검사 분석**을 선택합니다.
 
 2. 하위 메뉴에서 다음 명령 중 하나를 선택합니다.
@@ -327,9 +328,13 @@ Visual Studio Enterprise Edition에 제공되는 Visual Studio 코드 검사 도
     - **선택한 테스트** 는 테스트 탐색기에서 선택한 테스트 메서드를 실행합니다.
 
     - **모든 테스트** 는 솔루션의 모든 테스트 메서드를 실행합니다.
+
 ::: moniker-end
+
 ::: moniker range=">=vs-2019"
+
 * 테스트 탐색기에서 마우스 오른쪽 단추를 클릭하고 **선택한 테스트에 대한 코드 검사 분석**을 선택합니다.
+
 ::: moniker-end
 
 **코드 검사 결과** 창에는 실행된 제품 코드 블록의 백분율이 줄, 함수, 클래스, 네임스페이스 및 모듈별로 표시됩니다.
@@ -338,7 +343,7 @@ Visual Studio Enterprise Edition에 제공되는 Visual Studio 코드 검사 도
 
 ## <a name="test-shortcuts"></a>바로 가기 테스트
 
-테스트 코드 편집기에서 마우스 오른쪽 단추로 클릭하고 **테스트 실행**을 선택하거나 또는 Visual Studio에서 기본 [테스트 탐색기 바로 가기](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)를 사용하여 **테스트 탐색기**에서 테스트를 실행할 수 있습니다. 바로 가기 중 일부는 컨텍스트를 기반으로 합니다. 이는 바로 가기가 코드 편집기에서 커서의 위치에 따라 테스트를 디버그하거나 실행하는 것을 의미합니다. 커서가 테스트 메서드 내에 있는 경우 해당 테스트 메서드가 실행됩니다. 커서가 클래스 수준에 있는 경우 해당 클래스의 모든 테스트가 실행됩니다. 이는 네임스페이스 수준에 대해서도 동일합니다.
+테스트 코드 편집기에서 마우스 오른쪽 단추로 클릭하고 **테스트 실행**을 선택하거나 또는 Visual Studio에서 기본 [테스트 탐색기 바로 가기](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)를 사용하여 테스트 탐색기에서 테스트를 실행할 수 있습니다. 바로 가기 중 일부는 컨텍스트를 기반으로 합니다. 이는 바로 가기가 코드 편집기에서 커서의 위치에 따라 테스트를 디버그하거나 실행하는 것을 의미합니다. 커서가 테스트 메서드 내에 있는 경우 해당 테스트 메서드가 실행됩니다. 커서가 클래스 수준에 있는 경우 해당 클래스의 모든 테스트가 실행됩니다. 이는 네임스페이스 수준에 대해서도 동일합니다.
 
 |자주 사용하는 명령| 바로 가기 키|
 |-|------------------------|

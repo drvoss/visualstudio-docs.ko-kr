@@ -17,15 +17,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dfbb39d10d552141a68d40a7be3f1715a80f8f57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bf1b23b191bda29b00bf29f482332301897f9f37
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840205"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575660"
 ---
 # <a name="scriptthreadid-constants"></a>SCRIPTTHREADID 상수
-스레드 유형을 지정 하는 데 사용 합니다.  
+스레드의 유형을 지정 하는 데 사용 됩니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -38,14 +38,14 @@ typedef DWORD SCRIPTTHREADID;
 |상수|값|의미|  
 |--------------|-----------|-------------|  
 |SCRIPTTHREADID_CURRENT|0xFFFFFFFD|현재 실행 중인 스레드입니다.|  
-|SCRIPTTHREADID_BASE|0xFFFFFFFE|기본 스레드입니다. 즉, 스레드는 스크립팅 엔진 인스턴스화 되었습니다.|  
-|SCRIPTTHREADID_ALL|0xFFFFFFFF|모든 스레드입니다.|  
+|SCRIPTTHREADID_BASE|0xFFFFFFFE|기본 스레드입니다. 즉, 스크립팅 엔진이 인스턴스화된 스레드입니다.|  
+|SCRIPTTHREADID_ALL|0xFFFFFFFF|모든 스레드.|  
   
-## <a name="remarks"></a>설명  
- 합니다 `SCRIPTTHREADID` 형식에서 사용 하는 `IActiveScript::GetCurrentScriptThreadID`를 `IActiveScript::GetScriptThreadID`, `IActiveScript::GetScriptThreadState`, 및 `IActiveScript::InterruptScriptThread`, 상수만 사용할 수 있지만 `IActiveScript::GetScriptThreadState` 및 `IActiveScript::InterruptScriptThread`합니다.  
+## <a name="remarks"></a>주의  
+ @No__t_0 형식은 `IActiveScript::GetCurrentScriptThreadID`, `IActiveScript::GetScriptThreadID`, `IActiveScript::GetScriptThreadState` 및 `IActiveScript::InterruptScriptThread`에서 사용 되지만 상수는 `IActiveScript::GetScriptThreadState` 및 `IActiveScript::InterruptScriptThread` 에서만 사용할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)   
- [IActiveScript::GetScriptThreadID](../../winscript/reference/iactivescript-getscriptthreadid.md)   
- [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md)   
+## <a name="see-also"></a>참조  
+ [IActiveScript:: GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)    
+ [IActiveScript:: GetScriptThreadID](../../winscript/reference/iactivescript-getscriptthreadid.md)    
+ [IActiveScript:: GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md)    
  [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)

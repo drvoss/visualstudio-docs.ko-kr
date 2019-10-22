@@ -13,22 +13,22 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 62b0d49ea4ebccfe70955c2f5315918807121447
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5b68c777652ec411addfb64643ec0c8db67c29a1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992783"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571240"
 ---
 # <a name="iactivescriptproperty"></a>IActiveScriptProperty
-`IActiveScriptProperty` 인터페이스를 사용을 가져오고 구성 속성을 설정 합니다.  
+@No__t_0 인터페이스는 구성 속성을 가져오고 설정 하는 데 사용 됩니다.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
   
 |메서드|설명|  
 |------------|-----------------|  
-|[GetProperty](../../winscript/reference/iactivescriptproperty-getproperty.md)|매개 변수에 의해 지정 된 속성을 가져옵니다.|  
-|[SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md)|매개 변수에 의해 지정 된 속성을 설정 합니다.|  
+|[GetProperty](../../winscript/reference/iactivescriptproperty-getproperty.md)|매개 변수로 지정 된 속성을 가져옵니다.|  
+|[SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md)|매개 변수로 지정 된 속성을 설정 합니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [액티브 스크립트 인터페이스](../../winscript/reference/active-script-interfaces.md)

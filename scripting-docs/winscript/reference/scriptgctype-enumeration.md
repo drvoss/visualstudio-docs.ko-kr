@@ -11,15 +11,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a5de3ea949203ad7a6dca0ea777fdbc9514ba6d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7fce16c756cf06c8cf01937114402832570a0cd3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840241"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574386"
 ---
 # <a name="scriptgctype-enumeration"></a>SCRIPTGCTYPE 열거형
-수행할 가비지 컬렉션의 형식입니다. 에 사용 된 [IActiveScriptGarbageCollector::CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md) 메서드.  
+수행할 가비지 수집의 형식입니다. [IActiveScriptGarbageCollector:: CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md) 메서드에서 사용 됩니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -31,8 +31,8 @@ typedef enum tagSCRIPTGCTYPE {    SCRIPTGCTYPE_NORMAL           = 0,    SCRIPTGC
   
 |||  
 |-|-|  
-|SCRIPTGCTYPE_NORMAL|일반 가비지 수집을 수행 합니다. 정수 값은 0입니다.|  
-|SCRIPTGCTYPE_EXHAUSTIVE|전체 가비지 수집을 수행 합니다. 정수 값은 1입니다.|  
+|SCRIPTGCTYPE_NORMAL|정상적인 가비지 수집을 수행 합니다. 정수 값은 0입니다.|  
+|SCRIPTGCTYPE_EXHAUSTIVE|과도 한 가비지 수집을 수행 합니다. 정수 값은 1입니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [액티브 스크립트 상수, 열거형 및 오류 코드](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

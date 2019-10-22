@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c908fdbf17b13b84355dff208b7f3106bfc72087
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a1757678f20a01221ae46e1535d3190cd463d724
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830464"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571705"
 ---
 # <a name="jsdebugreadmemoryflags-enumeration"></a>JsDebugReadMemoryFlags 열거형
 메모리를 읽을 때의 동작을 지정하는 플래그입니다.  
@@ -35,13 +35,13 @@ enum JsDebugReadMemoryFlags{   None = 0,   JsDebugAllowPartialRead= 0x1} JsDebug
   
 ### <a name="values"></a>값  
   
-|이름|설명|  
+|name|설명|  
 |----------|-----------------|  
-|`JsDebugAllowPartialRead`|호출자에 게는 읽기 작업이 성공 메모리의 일부를 읽을 경우 성공 하기를 원한다는 것을 나타냅니다. 이 값으로 설정 하는 경우 E_JsDEBUG_INVALID_MEMORY_ADDRESS 오류만 발생 '주소'에 유효 하지 않은 경우. 이 플래그 지우기 인 경우 요청된 된 메모리의 일부를 읽을 수 없습니다 경우 E_JsDEBUG_INVALID_MEMORY_ADDRESS 오류가 발생 합니다.|  
-|`None`|호출자가 ReadMemory에 대 한 기본 동작을 원한다는 것을 나타냅니다.|  
+|`JsDebugAllowPartialRead`|메모리의 일부만 성공한 경우 호출자가 읽기 작업을 성공적으로 수행 하려고 함을 나타냅니다. 이를 설정 하는 경우 ' Address '가 유효 하지 않은 경우에만 E_JsDEBUG_INVALID_MEMORY_ADDRESS 오류가 발생 합니다. 이 플래그를 명확 하 게 지정 하면 요청 된 메모리의 일부를 읽을 수 없는 경우 E_JsDEBUG_INVALID_MEMORY_ADDRESS 오류가 발생 합니다.|  
+|`None`|호출자가 ReadMemory의 기본 동작을 원한다는 것을 나타냅니다.|  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더:** jscript9diag.h  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [Windows 스크립트 인터페이스 참조](../../winscript/reference/windows-script-interfaces-reference.md)

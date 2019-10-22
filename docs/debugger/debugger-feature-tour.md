@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 249b8aa88b11643ed0b353df25bef3a054ef5e55
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 06665aa6a30d67e27f654e92029dcbd3d2aea2ef
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "70987786"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349745"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>먼저 Visual Studio 디버거 살펴보기
 
@@ -201,6 +201,14 @@ Visual Studio에서 지원되는 대부분의 언어에서 디버깅 세션 중�
 > 예외 도우미(Exception Helper)는 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]부터 예외 도우미(Exception Assistant)를 대체했습니다.
 
 **예외 설정** 노드를 확장하여 이 예외 형식을 처리하는 방법에 대한 더 많은 옵션을 확인합니다. 그러나 이 작업을 위해 아무 것도 변경할 필요가 없습니다!
+
+## <a name="configure-debugging"></a>디버깅 구성
+
+프로젝트를 [디버그 또는 릴리스 구성](../debugger/how-to-set-debug-and-release-configurations.md)으로 빌드하도록 구성하거나, 디버그를 위한 프로젝트 속성을 구성하거나, 디버그를 위한 [일반 설정](../debugger/how-to-specify-debugger-settings.md)을 구성할 수 있습니다. 또한 [DebuggerDisplay](using-the-debuggerdisplay-attribute.md) 특성 또는 C/C++의 경우는 [NatVis 프레임워크](create-custom-views-of-native-objects.md)와 같은 기능을 사용하여 사용자 지정 정보를 표시하도록 디버거를 구성할 수 있습니다.
+
+디버깅 속성은 프로젝트 형식마다 고유합니다. 예를 들어, 애플리케이션을 시작할 때 전달할 인수를 지정할 수 있습니다. 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택하여 프로젝트 관련 속성에 액세스할 수 있습니다. 디버깅 속성은 일반적으로 특정 프로젝트 형식에 따라 **빌드** 또는 **디버그** 탭에 나타납니다.
+
+![프로젝트 속성](../debugger/media/dbg-tour-project-properties.png "프로젝트 속성")
 
 ## <a name="debug-live-aspnet-apps-in-azure-app-service"></a>Azure App Service에서 라이브 ASP.NET 앱 디버그
 

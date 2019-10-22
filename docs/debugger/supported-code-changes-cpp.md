@@ -1,5 +1,5 @@
 ---
-title: 코드 변경 내용을 지원 (C++) | Microsoft Docs
+title: 지원 되는 코드C++변경 () | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,17 +20,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7d029d5cb3deb886faa4423d24ae8d5282f80e6a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e38123be6b780aa9f37dc2b329ec36e3f18e793
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901963"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72430574"
 ---
 # <a name="supported-code-changes-c"></a>지원되는 코드 변경(C++)
-Visual C++용 편집하며 계속하기에서는 대부분의 코드 변경 유형을 처리합니다. 그러나 일부 변경 내용은 프로그램을 실행하는 동안 적용할 수 없습니다. 이러한 변경 내용을 적용하려면 실행을 중지하고 새로운 버전의 코드를 빌드해야 합니다.
+프로젝트에 대 한 C++ 편집 하며 계속 하기에서는 대부분의 코드 변경 유형을 처리 합니다. 그러나 일부 변경 내용은 프로그램을 실행하는 동안 적용할 수 없습니다. 이러한 변경 내용을 적용하려면 실행을 중지하고 새로운 버전의 코드를 빌드해야 합니다.
 
- Visual Studio에서 C++용 편집하며 계속하기를 사용하는 방법에 대한 자세한 내용은 [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) 를 참조하세요.
+ Visual Studio C++ 에서 편집 하며 계속 하기에 대 한 작업에 대 한 자세한 내용은 [편집 하며 계속 하기 ()C++(영문)](../debugger/edit-and-continue-visual-cpp.md) 를 참조 하세요.
 
 ## <a name="BKMK_Unsupported_changes"></a> 지원되지 않는 변경 사항
  디버깅 세션 중에 적용할 수 없는 C/C++ 변경 내용은 다음과 같습니다.
@@ -66,7 +66,7 @@ Visual C++용 편집하며 계속하기에서는 대부분의 코드 변경 유�
 
 - [/Zo(최적화된 디버깅 향상)](/cpp/build/reference/zo-enhance-optimized-debugging)로 컴파일한 네이티브 앱 디버그
 
-- Visual Studio 2015 업데이트 1에서 UWP 앱 또는 구성 요소 디버깅 이전의 Visual Studio의 버전입니다. Visual Studio 2015 업데이트 1부터 사용할 수 있습니다 편집 하며 계속 하기에서 UWP C++ 앱 및 DirectX 앱 지원 하기 때문 합니다 `/ZI` 사용 하 여 컴파일러 스위치를 `/bigobj` 전환 합니다. `/FASTLINK` 컴파일러 스위치를 지원하기 때문에 Windows 스토어 C++ 앱 및 DirectX 앱에서 편집하며 계속하기를 사용할 수 있습니다.
+- Visual Studio 2015 업데이트 1 이전의 Visual Studio 버전에서 UWP 앱 또는 구성 요소를 디버깅 합니다. Visual Studio 2015 업데이트 1부터 UWP C++ 앱 및 DirectX 앱에서 편집 하며 계속 하기를 사용할 수 있습니다. 이제 `/bigobj` 스위치를 사용 하 여 `/ZI` 컴파일러 스위치를 지원 하기 때문입니다. `/FASTLINK` 컴파일러 스위치를 지원하기 때문에 Windows 스토어 C++ 앱 및 DirectX 앱에서 편집하며 계속하기를 사용할 수 있습니다.
 
 - Windows 98에서 디버깅
 
@@ -136,5 +136,5 @@ Visual C++용 편집하며 계속하기에서는 대부분의 코드 변경 유�
 ## <a name="BKMK_IDL_Attribute_Limitations"></a> IDL 특성 제한 사항
  편집하며 계속하기는 IDL(인터페이스 정의) 파일을 다시 생성하지 않습니다. 따라서 디버깅하는 동안 IDL 특성의 변경 내용이 반영되지 않습니다. IDL 특성을 변경한 결과를 확인하려면 디버깅을 중단하고 앱을 다시 빌드해야 합니다. 편집하며 계속하기는 IDL 특성이 변경되어도 오류나 경고를 생성하지 않습니다. 자세한 내용은 [IDL 특성](/cpp/windows/idl-attributes)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
-- [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)
+## <a name="see-also"></a>관련 항목:
+- [편집 하며 계속 하기C++()](../debugger/edit-and-continue-visual-cpp.md)

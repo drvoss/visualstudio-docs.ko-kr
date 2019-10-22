@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev14
 ms.topic: conceptual
 ms.assetid: 24ecb76e-b7ad-432d-88ab-d9849963465d
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d8cedd5ab26539d5ebe32aee8df272691dd0a779
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e75215d2693b5fe2bf879c4b293ae853b42905e7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68186318"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651776"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Visual Studio 2015의 문제를 보고하는 방법
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Microsoft는 사용자의 개인 정보를 소중히 여깁니다. Microsoft에�
 
 3. **기록 시작** 을 클릭하고 문제를 재현하는 단계를 수행합니다. 완료되면 부동 창에서 **기록 중지** 단추를 클릭합니다.
 
-4. Visual Studio에서 기록된 정보를 수집하여 패키징하는 동안 몇 분 정도 기다립니다. 컬렉션 프로세스가 완료되면 다음과 같은 대화 상자가 나타납니다.
+4. Visual Studio에서 기록된 정보를 수집하여 패키징하는 동안 몇 분 정도 기다립니다. 수집 프로세스가 완료되면 다음과 같은 대화 상자가 나타납니다.
 
      ![추적 파일 기록](../ide/media/record-a-trace-file.png "추적 파일 기록")
 

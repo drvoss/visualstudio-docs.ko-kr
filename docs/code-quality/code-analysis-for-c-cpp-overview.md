@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 81f0c9e8-f471-4de5-aac4-99db336a8809
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7b0e29f6a9a502054b59fc7313c3eff0565f938
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 3a20637b7c7c3afcf594d1498b6030c685e4be72
+ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919895"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163058"
 ---
 # <a name="code-analysis-for-cc-overview"></a>C/C++용 코드 분석 개요
 
@@ -46,7 +46,7 @@ C/C++ 코드 분석 도구는 C 및 C++로 작성된 소스 코드에서 발생�
 C:\>cl /analyze Sample.cpp
 ```
 
-**Visual Studio 2017 15.7 이상의 버전**이 필요하며 CMake를 포함한 모든 빌드 시스템에서 명령줄 도구를 실행할 수 있습니다.
+**Visual Studio 2017 버전 15.7 이상:** CMake를 비롯 한 모든 빌드 시스템을 사용 하 여 명령줄에서 도구를 실행할 수 있습니다.
 
 ## <a name="pragma-support"></a>지원 #pragma
 
@@ -64,7 +64,7 @@ C:\>cl /analyze Sample.cpp
 
 빌드 시스템의 통합 기능을 사용하여 [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] 빌드 절차에 코드 분석 도구 실행 단계를 추가할 수 있습니다. 자세한 내용은 [Azure 파이프라인](/azure/devops/pipelines/index?view=vsts)을 참조합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [빠른 시작: C/C++ 용 코드 분석](quick-start-code-analysis-for-c-cpp.md)
 - [연습: 오류에 대 한 C/C++ 코드 분석](walkthrough-analyzing-c-cpp-code-for-defects.md)

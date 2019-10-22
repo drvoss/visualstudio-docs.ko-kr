@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptError::GetExceptionInfo | Microsoft Docs
+title: 'IActiveScriptError:: GetExceptionInfo | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 71e8f787e6837e6fa41c7b3cd831448b5d20a95e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f776a5f1a60b1280ab1f133ead04fb275782e5c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009573"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576937"
 ---
 # <a name="iactivescripterrorgetexceptioninfo"></a>IActiveScriptError::GetExceptionInfo
-스크립팅 엔진을 스크립트를 실행 하는 동안 발생 한 오류에 대 한 정보를 검색 합니다.  
+스크립팅 엔진에서 스크립트를 실행 하는 동안 발생 한 오류에 대 한 정보를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -37,10 +37,10 @@ HRESULT GetExceptionInfo(
   
 #### <a name="parameters"></a>매개 변수  
  `pexcepinfo`  
- [out] 주소는 `EXCEPINFO` 오류 정보를 수신 하는 구조입니다.  
+ 제한이 오류 정보를 수신 하는 `EXCEPINFO` 구조체의 주소입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 반환 `S_OK` 성공 하면 또는 `E_FAIL` 오류가 발생 합니다.  
+ 성공 하면 `S_OK`을 반환 하 고, 오류가 발생 한 경우 `E_FAIL` 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [IActiveScriptError](../../winscript/reference/iactivescripterror.md)

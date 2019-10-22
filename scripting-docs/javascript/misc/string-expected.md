@@ -14,20 +14,20 @@ ms.assetid: 4c214c4b-9cd7-473b-8d90-2344c0375c25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f6853d92608859e41fd7d8001ca6e350f5830504
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 06f00cd523d2f42a8602347a77935705bbc25932
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006459"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573682"
 ---
 # <a name="string-expected"></a>문자열이 필요합니다.
-호출 하려고 합니다 **String.prototype.toString** 또는 **String.prototype.valueOf** 이외의 다른 형식의 개체의 메서드를 `String`입니다. 이 형식의 호출 개체 유형 이어야 `String`합니다.  
+@No__t_2이 아닌 형식의 개체에 대해 **valueOf** **메서드를 호출** 하려고 한 경우입니다. 이 호출 형식의 개체는 `String` 형식 이어야 합니다.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
-- 만 호출 합니다 **String.prototype.toString** 또는 **String.prototype.valueOf** 형식의 개체에 있는 메서드의 `String`합니다.  
+- @No__t_2 형식의 개체에 대해서만 **valueOf** **메서드를 호출 합니다.**  
   
-## <a name="see-also"></a>참고 항목  
- [문자열 개체](../../javascript/reference/string-object-javascript.md)   
+## <a name="see-also"></a>참조  
+ [문자열 개체](../../javascript/reference/string-object-javascript.md)    
  [toString 메서드(Object)](../../javascript/reference/tostring-method-object-javascript.md)

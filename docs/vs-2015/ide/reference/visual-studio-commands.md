@@ -10,15 +10,15 @@ helpviewer_keywords:
 - command syntax
 ms.assetid: 76ffa394-ee89-4629-aba9-1a62b72e6cc1
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 10ce4bd59567d7d055dd107dd05358d994d22c36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b6ad913e418f2f13bd196925b3c085b9d5c7efca
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68160874"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667455"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio 명령
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Visual Studio에서는 **명령** 창, **직접 실행** 창 또는 **찾기/명
 
  **키보드, 환경 옵션** 대화 상자에서 명령 및 구문의 전체 목록을 찾을 수 있습니다.
 
- Visual Studio 명령의 이스케이프 문자는 캐럿(^) 문자입니다. 이는 바로 다음 문자가 제어 문자가 아닌 문자 그대로 해석된다는 것을 의미합니다. 이스케이프 문자는 매개 변수 또는 스위치 값에 곧은 큰따옴표("), 공백, 선행 슬래시, 캐럿 등 또는 리터럴 문자를 포함하기 위해 사용할 수 있습니다(스위치 이름 제외). 예를 들면 다음과 같습니다.
+ Visual Studio 명령의 이스케이프 문자는 캐럿(^) 문자입니다. 이는 바로 다음 문자가 제어 문자가 아닌 문자 그대로 해석된다는 것을 의미합니다. 이스케이프 문자는 매개 변수 또는 스위치 값에 곧은 큰따옴표("), 공백, 선행 슬래시, 캐럿 등 또는 리터럴 문자를 포함하기 위해 사용할 수 있습니다(스위치 이름 제외). 예를 들어 개체에 적용된
 
 ```
 >Edit.Find ^^t /regex
@@ -41,7 +41,7 @@ Visual Studio에서는 **명령** 창, **직접 실행** 창 또는 **찾기/명
 
  다음 명령은 인수 및/또는 스위치를 사용합니다.
 
-|명령 이름|Description|
+|명령 이름|설명|
 |------------------|-----------------|
 |[기존 항목 추가](../../ide/reference/add-existing-item-command.md)|현재 솔루션에 기존 파일을 추가하고 엽니다.|
 |[기존 프로젝트 추가](../../ide/reference/add-existing-project-command.md)|현재 솔루션에 기존 프로젝트를 추가합니다.|
@@ -72,10 +72,10 @@ Visual Studio에서는 **명령** 창, **직접 실행** 창 또는 **찾기/명
 |[기수 설정](../../ide/reference/set-radix-command.md)|보려는 바이트 수를 결정합니다.|
 |[셸](../../ide/reference/shell-command.md)|명령 프롬프트에서 명령이 실행된 것처럼 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 내에서 프로그램을 시작합니다.|
 |[웹 브라우저 표시 명령](../../ide/reference/showwebbrowser-command.md)|IDE(통합 개발 환경) 내부 또는 외부의 웹 브라우저 창에서 지정하는 URL을 표시합니다.|
-|[시작](../../ide/reference/start-command.md)|디버그 프로세스를 시작하고 오류 처리 방식을 지정할 수 있습니다.|
-|[Path](../../ide/reference/symbol-path-command.md)|디버거에서 기호를 검색할 디렉터리 목록을 설정합니다.|
+|[Start](../../ide/reference/start-command.md)|디버그 프로세스를 시작하고 오류 처리 방식을 지정할 수 있습니다.|
+|[경로](../../ide/reference/symbol-path-command.md)|디버거에서 기호를 검색할 디렉터리 목록을 설정합니다.|
 |[중단점 설정/해제](../../ide/reference/toggle-breakpoint-command.md)|파일의 현재 위치에서 현재 상태에 따라 중단점을 켜거나 끕니다.|
 |[조사식 명령](../../ide/reference/watch-command.md)|**조사식** 창의 지정된 인스턴스를 만들고 엽니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목:
  [명령 창](../../ide/reference/command-window.md) [찾기/명령 상자](../../ide/find-command-box.md) [Visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)

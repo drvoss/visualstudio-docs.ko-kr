@@ -6,15 +6,15 @@ ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: 2341013d-a08b-49a7-b6fd-a7b6aaa797e0
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e85e8427a310a531b91363fff9019a116bc050be
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: fcaa8424e1b60375ec62bde31c5e22f3706641d0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416663"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660749"
 ---
 # <a name="analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Visual Studio 정적 코드 분석을 사용하여 스토어 앱의 코드 품질 분석
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Visual Studio의 코드 분석 도구는 코드에 일련의 일반적인 오류
 > [!NOTE]
 > JavaScript 코드에서는 코드 분석을 사용할 수 없습니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>이 섹션의 내용
 
 |||
 |-|-|

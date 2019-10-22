@@ -1,5 +1,5 @@
 ---
-title: 코드를 빌드 프로세스에서 생성 | Microsoft Docs
+title: 빌드 프로세스의 코드 생성 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,29 +9,29 @@ helpviewer_keywords:
 - text templates, transforming by using msbuild
 ms.assetid: 4da43429-2a11-4d7e-b2e0-9e4af7033b5a
 caps.latest.revision: 30
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f5ecf6f09efb64e521740b74151fc160112fe7a3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 81c4160ca6d03d55d631cd4dad8c3bce01fa9722
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826050"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667873"
 ---
 # <a name="code-generation-in-a-build-process"></a>빌드 프로세스의 코드 생성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-텍스트 변환 Visual Studio 솔루션의 빌드 프로세스의 일부로 호출할 수 있습니다. 이는 텍스트 변형에 대해 특수화된 빌드 작업입니다. T4 빌드 작업은 디자인 타임 텍스트 템플릿을 실행하고 전처리된 런타임 텍스트 템플릿을 컴파일합니다.
+텍스트 변환은 Visual Studio 솔루션의 빌드 프로세스의 일부로 호출 될 수 있습니다. 이는 텍스트 변형에 대해 특수화된 빌드 작업입니다. T4 빌드 작업은 디자인 타임 텍스트 템플릿을 실행하고 전처리된 런타임 텍스트 템플릿을 컴파일합니다.
 
-사용하는 빌드 엔진에 따라 빌드 작업에서 수행할 수 있는 몇 가지 작업이 다를 수 있습니다. 경우 텍스트 템플릿에서 Visual Studio API (EnvDTE)에 액세스할 수 있는지 Visual Studio에서 솔루션을 빌드할 때 합니다 [hostspecific = "true"](../modeling/t4-template-directive.md) 특성이 설정 되어 있습니다. 그러나 Visual Studio를 통해 서버 빌드를 시작하거나 명령줄에서 솔루션을 빌드할 때는 액세스할 수 없습니다. 이러한 경우에는 MSBuild에서 빌드가 수행되고 다른 T4 호스트가 사용됩니다.
+사용하는 빌드 엔진에 따라 빌드 작업에서 수행할 수 있는 몇 가지 작업이 다를 수 있습니다. Visual Studio에서 솔루션을 빌드하면 [hostspecific = "true"](../modeling/t4-template-directive.md) 특성이 설정 된 경우 텍스트 템플릿이 VISUAL studio API (EnvDTE)에 액세스할 수 있습니다. 그러나 Visual Studio를 통해 서버 빌드를 시작하거나 명령줄에서 솔루션을 빌드할 때는 액세스할 수 없습니다. 이러한 경우에는 MSBuild에서 빌드가 수행되고 다른 T4 호스트가 사용됩니다.
 
-즉, MSBuild에서 텍스트 템플릿을 빌드하는 경우와 같은 방법으로 프로젝트 파일 이름과 같은 항목에 액세스할 수 없습니다. 그러나 수 있습니다 [빌드 매개 변수를 사용 하 여 텍스트 템플릿 지시문 프로세서에 환경 정보를 전달할](#parameters)합니다.
+즉, MSBuild에서 텍스트 템플릿을 빌드하는 경우와 같은 방법으로 프로젝트 파일 이름과 같은 항목에 액세스할 수 없습니다. 그러나 [빌드 매개 변수를 사용 하 여 환경 정보를 텍스트 템플릿 및 지시문 프로세서에 전달할](#parameters)수 있습니다.
 
-## <a name="buildserver"></a> 컴퓨터 구성
+## <a name="buildserver"></a>컴퓨터 구성
 
-개발 컴퓨터에서 빌드 작업을 사용 하려면 설치 [Modeling SDK for Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148)합니다.
+개발 컴퓨터에서 빌드 작업을 사용 하도록 설정 하려면 [모델링 SDK For Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148)를 설치 합니다.
 
-하는 경우 [빌드 서버](https://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) 는 Visual Studio 설치 되지 않은 컴퓨터에서 실행 개발 컴퓨터에서 빌드 컴퓨터로 다음 파일을 복사 합니다. 여기서 '*'는 가장 최신 버전 번호로 대체합니다.
+Visual Studio가 설치 되어 있지 않은 컴퓨터에서 [빌드 서버](https://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) 를 실행 하는 경우 개발 컴퓨터에서 빌드 컴퓨터로 다음 파일을 복사 합니다. 여기서 '*'는 가장 최신 버전 번호로 대체합니다.
 
 - $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 
@@ -57,9 +57,9 @@ ms.locfileid: "67826050"
 
 MSBuild에서 일부 특성을 구성하기 위해 프로젝트 파일을 편집해야 합니다.
 
-솔루션 탐색기에서 선택 **언로드** 프로젝트의 상황에 맞는 메뉴에서입니다. 이렇게 하면 XML 편집기에서 .csproj 또는 .vbproj 파일을 편집할 수 있습니다.
+솔루션 탐색기에서 프로젝트의 상황에 맞는 메뉴에서 **언로드** 를 선택 합니다. 이렇게 하면 XML 편집기에서 .csproj 또는 .vbproj 파일을 편집할 수 있습니다.
 
-편집을 마쳤으면 선택할 **다시 로드**합니다.
+편집을 마친 후 **다시 로드**를 선택 합니다.
 
 ## <a name="import-the-text-transformation-targets"></a>텍스트 변환 대상 가져오기
 
@@ -213,9 +213,9 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-## <a name="parameters"></a> 템플릿으로 빌드 컨텍스트 데이터 전달
+## <a name="parameters"></a>빌드 컨텍스트 데이터를 템플릿에 전달 합니다.
 
-프로젝트 파일에서 매개 변수 값을 설정할 수 있습니다. 예를 들어, 빌드 속성을 전달할 수 있습니다 하 고 [환경 변수](../msbuild/how-to-use-environment-variables-in-a-build.md):
+프로젝트 파일에서 매개 변수 값을 설정할 수 있습니다. 예를 들어 빌드 속성 및 [환경 변수](../msbuild/how-to-use-environment-variables-in-a-build.md)를 전달할 수 있습니다.
 
 ```xml
 <ItemGroup>
@@ -226,7 +226,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </ItemGroup>
 ```
 
-텍스트 템플릿에서 `hostspecific`를 템플릿 지시문에 설정하십시오. 사용 된 [매개 변수](../modeling/t4-parameter-directive.md) 지시문 값을 가져오려면:
+텍스트 템플릿에서 `hostspecific`를 템플릿 지시문에 설정하십시오. [매개 변수](../modeling/t4-parameter-directive.md) 지시어를 사용 하 여 값을 가져옵니다.
 
 ```
 <#@template language="c#" hostspecific="true"#>
@@ -234,7 +234,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 The project folder is: <#= ProjectFolder #>
 ```
 
-## <a name="msbuild"></a> 어셈블리의 프로젝트 속성을 사용 하 여 및 include 지시문
+## <a name="msbuild"></a>어셈블리 및 include 지시문에서 프로젝트 속성 사용
 
 $(SolutionDir)과 같은 Visual Studio 매크로는 MSBuild에서 작동하지 않습니다. 대신 적절한 프로젝트 속성을 사용할 수 있습니다.
 
@@ -265,24 +265,24 @@ $(SolutionDir)과 같은 Visual Studio 매크로는 MSBuild에서 작동하지 �
 
 ## <a name="q--a"></a>Q&A
 
-**빌드 서버에서 템플릿을 변형 해야 하는 이유 필자는 이미 내 코드를 체크 인하기 전에 Visual Studio에서 템플릿을 변환 합니다.**
+**빌드 서버에서 템플릿을 변환 하려면 어떻게 해야 하나요? 코드를 체크 인하기 전에 이미 Visual Studio에서 템플릿을 변환 했습니다.**
 
 포함 파일을 업데이트하거나 템플릿에서 다른 파일을 읽은 경우 Visual Studio가 파일을 자동으로 변환하지 않습니다. 빌드 중에 템플릿이 변형되면 모두 최신 상태임을 나타냅니다.
 
-**다른 옵션은 무엇이 있습니다 텍스트 템플릿 변환에 대 한?**
+**텍스트 템플릿을 변환 하는 데 사용할 수 있는 다른 옵션은 무엇 인가요?**
 
-- 합니다 [TextTransform 유틸리티](../modeling/generating-files-with-the-texttransform-utility.md) 명령 스크립트에서 사용할 수 있습니다. 대부분의 경우 MSBuild를 사용하는 것이 더 쉽습니다.
+- 명령 스크립트에서 [Texttransform 유틸리티](../modeling/generating-files-with-the-texttransform-utility.md) 를 사용할 수 있습니다. 대부분의 경우 MSBuild를 사용하는 것이 더 쉽습니다.
 
 - [VS 확장에서 텍스트 변환 호출](../modeling/invoking-text-transformation-in-a-vs-extension.md)
 
-- [디자인 타임 텍스트 템플릿](../modeling/design-time-code-generation-by-using-t4-text-templates.md) Visual Studio에서 변환 됩니다.
+- [디자인 타임 텍스트 템플릿은](../modeling/design-time-code-generation-by-using-t4-text-templates.md) Visual Studio에 의해 변환 됩니다.
 
-- [런타임 텍스트 템플릿](../modeling/run-time-text-generation-with-t4-text-templates.md) 응용 프로그램에서 런타임에 변형 됩니다.
+- 런타임에 응용 프로그램에서 런타임에 [텍스트 템플릿이](../modeling/run-time-text-generation-with-t4-text-templates.md) 변환 됩니다.
 
 ## <a name="read-more"></a>자세히 보기
 
 T4 MSbuild 템플릿, $(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets의 유용한 안내서
 
 - [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)
-- [Visual Studio Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)
-- [Oleg 동기화: T4:MSBuild 통합 이해](https://github.com/olegsych/T4Toolbox)
+- [Visual Studio 시각화 및 모델링 SDK](http://go.microsoft.com/fwlink/?LinkID=185579)
+- [Oleg Sych: T4 이해: MSBuild 통합](https://github.com/olegsych/T4Toolbox)

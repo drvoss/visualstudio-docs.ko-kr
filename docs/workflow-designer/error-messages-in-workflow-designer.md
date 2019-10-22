@@ -7,17 +7,17 @@ f1_keywords:
 - System.Activities.Presentation.ErrorActivity.UI
 - System.Activities.Presentation.View.ErrorView.UI
 ms.assetid: 4d8bbc2e-34fc-477f-9140-4adfd70c34a0
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3f2d4d86f80bc7c2966d5156267352154b1279f
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 1406802f85c755d4dab25e000843a995be252d0a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254805"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650491"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Workflow Designer의 오류 메시지
 
@@ -35,7 +35,7 @@ ms.locfileid: "71254805"
 
 4. XAML 파일에 오류가 있어서 워크플로를 로드할 수 없습니다.
 
-잘못된 식과 충족되지 않은 유효성 검사 제약 조건으로도 워크플로가 작성됩니다. 워크플로 빌드는 성공 하지만 <xref:System.Activities.InvalidWorkflowException> 런타임 시이 throw 됩니다. XAML 파일에 오류가 있으면 빌드가 수행되지 않습니다.
+잘못된 식과 충족되지 않은 유효성 검사 제약 조건으로도 워크플로가 작성됩니다. 워크플로 빌드는 성공 하지만 런타임에 <xref:System.Activities.InvalidWorkflowException> throw 됩니다. XAML 파일에 오류가 있으면 빌드가 수행되지 않습니다.
 
 Visual Studio 내에서 워크플로를 로드 하면 해당 오류가 **오류 목록**표시 됩니다. 오류의 원본인 활동으로 이동 하려면 **오류 목록**에서 오류를 두 번 클릭 합니다.
 

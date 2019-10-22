@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev14
 ms.topic: conceptual
 ms.assetid: 772b6cf4-cee5-42d0-bc18-b4eb07e22ff0
 caps.latest.revision: 36
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 90a7611e0b8895b0ed3540cae861ebafec9ae4bd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 52e0b8f87774b11b1750700d5bef19c5423824c4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698554"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667136"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Visual Studio 2015의 새로운 기능에 대한 자세한 내용은 [Visual Stu
 ## <a name="ide-basics"></a>IDE 기본 사항
  다음 이미지는 열린 프로젝트가 있는 Visual Studio IDE, 프로젝트 파일 탐색을 위한 솔루션 탐색기 창, 소스 제어 및 작업 항목 추적 탐색을 위한 팀 탐색기 창을 보여 줍니다. 설명선 안의 제목 표시줄 기능은 아래에서 자세히 설명합니다.
 
- ![Visual Studio IDE](../ide/media/visualstudioide.png "VisualStudioIDE")
+ ![Visual Studio IDE](../ide/media/visualstudioide.png "|::ref1::|")
 
 ### <a name="signing-in"></a>로그인
  Visual Studio를 처음 시작할 때 Microsoft 계정이나 회사 또는 학교 계정으로 로그인할 수 있습니다. 로그인을 하면 창 레이아웃 등 여러 디바이스 간에 설정을 동기화하고 Azure 구독 및 Visual Studio Team Services와 같이 필요할 수 있는 서비스에 자동으로 연결할 수 있습니다. 구독 기반 라이선스가 있는 경우 라이선스 토큰을 최신 상태로 유지하기 위해 정기적으로 Visual Studio에 로그인해야 합니다. 제품 키 라이선스가 있는 경우 로그인할 필요가 없지만 로그인하면 더 편리하게 Azure, Office 365, Salesforce.com에서 Visual Studio Team Services 및 사용자 계정에 연결할 수 있습니다. 자세한 내용은 [Visual Studio에 로그인](../ide/signing-in-to-visual-studio.md)을 참조하세요.
@@ -57,7 +57,7 @@ Visual Studio 2015의 새로운 기능에 대한 자세한 내용은 [Visual Stu
 ### <a name="finding-things-and-getting-help"></a>항목 찾기 및 도움말 보기
  바로 가기 키 또는 메뉴 위치를 모르는 경우 아래에 표시된 [빠른 실행](../ide/reference/quick-launch-environment-options-dialog-box.md) 창을 통해 Visual Studio 명령, 도구, 기능 등을 빠르게 찾을 수 있습니다. 찾으려는 내용을 입력하기만 하면 빠른 실행에서 관련 링크가 제공됩니다.
 
- !['새 프로젝트'의 빠른 실행 결과](../ide/media/productivity-quicklaunch.png "Productivity_QuickLaunch")
+ ![‘새 프로젝트’의 빠른 실행 결과](../ide/media/productivity-quicklaunch.png "|::ref2::|")
 
  MSDN은 Microsoft 기술 문서 웹 사이트입니다. 지금 이 페이지도 MSDN에서 읽고 있습니다. Visual Studio에서 **F1** 키를 눌러 활성 창에 대한 MSDN 도움말 페이지로 이동할 수 있습니다. 코드 편집기에서 **F1** 키를 눌러 API 또는 현재 캐럿 위치의 키워드에 대한 MSDN 도움말 페이지로 이동할 수도 있습니다. 예를 들어 C# 파일에서 `System.String` 선언의 임의 위치나 끝에 캐럿을 배치하고 **F1** 키를 눌러 <xref:System.String>에 대한 MSDN 도움말 페이지로 이동합니다.
 
@@ -78,21 +78,21 @@ Visual Studio 2015의 새로운 기능에 대한 자세한 내용은 [Visual Stu
 
  다음 이미지는 VSTS에서 호스트되는 솔루션용 팀 탐색기 창을 보여 줍니다.
 
- ![Visual Studio 팀 탐색기](../ide/media/vs2015-teamexplorer.png "VS2015_TeamExplorer")
+ ![Visual Studio 팀 탐색기](../ide/media/vs2015-teamexplorer.png "|::ref3::|")
 
 ## <a name="creating-solutions-and-projects"></a>솔루션 및 프로젝트 만들기
  Visual Studio를 사용하여 개별 코드 파일을 찾을 수 있지만 *프로젝트*로 작업하는 것이 더 일반적입니다. Visual Studio 프로젝트는 애플리케이션의 경우 단일 이진 실행 파일(예: .exe, DLL 또는 appx)로 컴파일되는 파일 및 리소스의 컬렉션입니다. 비 ASP.NET 웹 사이트의 경우 실행 파일이 생성되지 않으며 프로젝트에는 HTML, JavaScript 파일 및 이미지만 포함됩니다. 경우에 따라 긴밀히 관련된 여러 이진 파일이나 웹 사이트를 만들어야 할 수 있으므로 Visual Studio에는 여러 프로젝트나 웹 사이트를 포함할 수 있는 솔루션 개념이 있습니다. 프로젝트를 만드는 경우 실제로는 한 솔루션에 하나의 프로젝트를 만드는 것이며 필요에 따라 나중에 더 많은 프로젝트를 솔루션에 추가할 수 있습니다. 예를 들어 DLL 프로젝트가 있는 경우 DLL을 로드 및 사용하는 솔루션에 .exe 프로젝트를 추가할 수 있습니다.
 
  *프로젝트 템플릿* 은 특정 종류의 애플리케이션을 신속하게 설정할 수 있게 해주는 미리 채워진 코드 파일 및 구성 설정의 컬렉션입니다. Visual Studio에는 선택할 수 있는 많은 프로젝트 템플릿이 있으며, 적합한 기본 템플릿이 없는 경우 고유한 템플릿을 만들 수 있습니다. 템플릿을 사용하여 프로젝트를 만든 후 제공된 파일이나 직접 추가한 새 파일에서 고유한 코드를 작성할 수 있습니다. 자세한 내용은 [솔루션 및 프로젝트](../ide/solutions-and-projects-in-visual-studio.md)를 참조하세요. 다음 그림에서는 ASP.NET 애플리케이션에서 사용할 수 있는 프로젝트 템플릿이 포함된 새 프로젝트 대화 상자를 보여 줍니다.
 
- ![Visual Studio 새 프로젝트 대화 상자](../ide/media/vs2015-newprojectdialog.png "VS2015_NewProjectDialog")
+ ![Visual Studio 새 프로젝트 대화 상자](../ide/media/vs2015-newprojectdialog.png "|::ref4::|")
 
 ## <a name="designing-the-user-interface"></a>사용자 인터페이스 디자인
  디자이너는 코드를 작성하지 않고도 사용자 인터페이스를 만들 수 있게 해주는 직관적인 도구입니다. [Toolbox](../ide/reference/toolbox.md) 창에서 창 또는 대화 상자를 나타내는 디자인 화면으로 목록 상자, 일정 및 단추와 같은 UI 컨트롤을 끌어다 놓을 수 있습니다. 코드를 작성하지 않고도 요소의 크기를 조정하고 요소를 다시 정렬할 수 있습니다. 디자이너는 사용자 인터페이스가 있는 모든 프로젝트 형식에 대해 포함됩니다.
 
  프로젝트에 XAML 기반 사용자 인터페이스가 있는 경우 기본 디자이너는 Visual Studio와 매끄럽게 작동하는 정교한 그래픽 도구인 Blend for Visual Studio입니다.
 
- ![아트보드](../ide/media/b5-artboard.png "b5_artboard")
+ ![아트보드](../ide/media/b5-artboard.png "|::ref5::|")
 
 |||
 |-|-|
@@ -109,7 +109,7 @@ Visual Studio 2015의 새로운 기능에 대한 자세한 내용은 [Visual Stu
 
  **파일 &#124; 열기 &#124; 파일**을 클릭하여 텍스트 편집기에서 개별 파일을 편집할 수 있습니다. 을 클릭하여 텍스트 편집기에서 개별 파일을 편집할 수 있습니다. 열린 프로젝트에서 파일을 편집하려면 솔루션 탐색기에서 파일 이름을 클릭합니다. 코드에는 색이 지정되며 빠른 실행에서 "색"을 입력하여 색 구성표를 개인 설정할 수 있습니다. 한 번에 많은 텍스트 편집기 탭 창을 열어 둘 수 있습니다. 각 창을 독립적으로 분할할 수 있습니다. 텍스트 편집기를 전체 화면 모드로 실행할 수도 있습니다.
 
- ![코드 편집기의 GreetingsConsoleApp.cpp](../ide/media/c-ide-editorlinenumberswordwrapon.png "C++IDE_EditorLineNumbersWordWrapOn")
+ ![코드 편집기의 GreetingsConsoleApp.cpp](../ide/media/c-ide-editorlinenumberswordwrapon.png "|::ref11::|")
 
  텍스트 편집기는 보다 효율적인 코드를 더 빠르게 작성할 수 있도록 도와주는 많은 생산성 기능이 포함된 대화형(원할 경우)입니다. 기능은 언어에 따라 달라지며, 기능을 설정하거나 해제하기 위해 언어를 사용할 필요가 없습니다(빠른 실행에서 "편집기" 입력). 몇 가지 일반적인 생산성 기능은 다음과 같습니다.
 
@@ -117,11 +117,11 @@ Visual Studio 2015의 새로운 기능에 대한 자세한 내용은 [Visual Stu
 
 2. *IntelliSense* 는 편집기에서 직접 코드에 대한 형식 정보를 표시하고 경우에 따라 약간의 코드를 자동으로 작성하는 인기 있는 기능 집합에 대한 포괄적인 용어입니다. IntelliSense는 별도의 도움말 창에서 형식 정보를 조회할 필요가 없도록 기본 설명서를 편집기에 인라인으로 포함하는 것과 같습니다. IntelliSense 기능은 언어에 따라 달라집니다. 자세한 내용은 [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ IntelliSense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md), [Visual Basic-Specific IntelliSense](../ide/visual-basic-specific-intellisense.md)를 참조하세요. 다음 그림에서는 일부 IntelliSense 기능의 작동을 보여 줍니다.
 
-    ![Visual Studio 멤버 목록](../ide/media/vs2015-intellisense.png "vs2015_Intellisense")
+    ![Visual Studio 멤버 목록](../ide/media/vs2015-intellisense.png "|::ref12::|")
 
 3. **오류 표시선** 은 입력하는 동안 코드의 오류 또는 잠재적 문제를 실시간으로 경고하여 컴파일 또는 런타임 중에 오류가 검색될 때까지 기다리지 않고 즉시 수정할 수 있게 해줍니다. 오류 표시선 위로 마우스를 가져가면 오류에 대한 추가 정보가 표시됩니다. 오류를 수정하는 방법에 대한 제안 사항과 함께 전구가 왼쪽 여백에 나타날 수도 있습니다. 자세한 내용은 [Perform quick actions with light bulbs](../ide/perform-quick-actions-with-light-bulbs.md)을 참조하세요.
 
-    ![마우스로 가리킨 전구](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
+    ![마우스로 가리킨 전구](../ide/media/vs2015-lightbulb-hover.png "|::ref13::|")
 
 4. [책갈피](../ide/setting-bookmarks-in-code.md)를 사용하면 작업 중인 파일의 특정 줄로 빠르게 이동할 수 있습니다.
 
@@ -135,7 +135,7 @@ Visual Studio 2015의 새로운 기능에 대한 자세한 내용은 [Visual Stu
 
 9. 관련 도구인 [개체 브라우저](https://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470)를 통해 시스템에서 .NET 또는 Windows 런타임 어셈블리를 검사하여 포함된 형식과 해당 형식이 포함하는 메서드 및 속성을 확인할 수 있습니다.
 
-     ![System.Timer를 보여 주는 개체 브라우저](../ide/media/objectbrowser.png "ObjectBrowser")
+     ![시스템 타이머를 보여 주는 개체 브라우저](../ide/media/objectbrowser.png "|::ref14::|")
 
    편집 메뉴 및 보기 메뉴의 항목은 대부분 어떤 방식으로든 코드 편집기와 관련이 있습니다. 편집기에 대한 자세한 내용은 [코드 작성](../ide/writing-code-in-the-code-and-text-editor.md) 및 [코드 편집](https://www.visualstudio.com/features/ide-vs)을 참조하세요.
 
@@ -148,7 +148,7 @@ Visual Studio 2015의 새로운 기능에 대한 자세한 내용은 [Visual Stu
 ## <a name="debugging-your-code"></a>코드 디버그
  Visual Studio의 최신 디버거를 사용하면 로컬 프로젝트나 원격 디바이스 또는 Android 또는 Windows Phone용 에뮬레이터와 같은 에뮬레이터에서 실행 중인 코드를 디버그할 수 있습니다. 한 번에 문 하나씩 코드를 단계별로 실행하고 진행에 따라 변수를 검사하고, 다중 스레드 애플리케이션을 단계별로 실행하고, 지정된 조건이 true일 때만 적중되는 중단점을 설정할 수 있습니다. 코드의 컨텍스트에서 나갈 필요가 없도록 이러한 모든 작업을 코드 편집기 자체에서 구성할 수 있습니다.
 
- ![중단점 설정 미리 보기 창](../ide/media/dbg-breakpoints-peekwindow.png "DBG_Breakpoints_PeekWindow")
+ ![중단점 설정 미리 보기 창](../ide/media/dbg-breakpoints-peekwindow.png "|::ref15::|")
 
  디버거 자체에 포함된 여러 개의 창을 통해 지역 변수, 호출 스택 및 런타임 환경의 기타 측면을 보고 조작할 수 있습니다. 이러한 창은 **디버그** 메뉴에서 찾을 수 있습니다.
 
@@ -161,7 +161,7 @@ Visual Studio 2015의 새로운 기능에 대한 자세한 내용은 [Visual Stu
 ## <a name="testing-your-code"></a>코드 테스트
  Visual Studio에는 관리 코드(.NET)에 대한 단위 테스트 프레임워크와 네이티브 C++에 대한 단위 테스트 프레임워크가 포함되어 있습니다. 단위 테스트를 만들려면 솔루션에 테스트 프로젝트를 추가하고 테스트를 작성한 다음 테스트 탐색기 창에서 실행하면 됩니다. 자세한 내용은 [코드 단위 테스트](../test/unit-test-your-code.md)를 참조하세요.
 
- ![단위 테스트 탐색기](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
+ ![단위 테스트 탐색기](../ide/media/ute-failedpassednotrunsummary.png "|::ref16::|")
 
 ## <a name="analyzing-code-quality-and-performance"></a>코드 품질 및 성능 분석
  Visual Studio에는 정적 및 런타임 분석을 위한 강력한 도구가 포함되어 있습니다. 정적 분석 도구는 디자인, 세계화, 상호 운용성, 성능, 보안 및 기타 범주의 잠재적 오류를 식별하는 데 도움이 됩니다. 성능 테스트 또는 프로파일링에는 프로그램이 실행되는 방식을 측정하는 작업이 포함됩니다. 이러한 도구는 **분석** 메뉴에서 액세스합니다. 자세한 내용은 [Visual Studio 진단 도구로 품질 개선](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)을 참조하세요.
@@ -169,13 +169,13 @@ Visual Studio 2015의 새로운 기능에 대한 자세한 내용은 [Visual Stu
 ## <a name="connecting-to-cloud-services-and-databases"></a>클라우드 서비스 및 데이터베이스에 연결
  Visual Studio의 [서버 탐색기](https://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) 창은 SQL Server 인스턴스, Azure, Salesforce.com, Office 365 및 웹 사이트를 포함하여 개인 설정 계정(로그인할 때 사용된 계정)으로 관리되는 모든 계정의 리소스를 보여 줍니다.
 
- ![서버 탐색기](../ide/media/vs2015-serverexplorer3.png "vs2015_ServerExplorer3")
+ ![서버 탐색기](../ide/media/vs2015-serverexplorer3.png "|::ref17::|")
 
  Visual Studio에는 데이터베이스를 빌드, 디버그, 유지 관리 및 리팩터링할 수 있게 해주는 [Microsoft SSDT(SQL Server Data Tools)](https://msdn.microsoft.com/data/tools.aspx) 가 포함되어 있습니다. 데이터베이스 프로젝트에 대해 작업하거나, 온-프레미스 또는 오프-프레미스로 연결된 데이터베이스 인스턴스에 대해 직접 작업할 수 있습니다.
 
  Visual Studio의 SQL Server 개체 탐색기는 SQL Server Management Studio와 비슷한 방식으로 데이터베이스 개체 뷰를 제공합니다. SQL Server 개체 탐색기에서는 테이블 데이터 편집, 스키마 비교 및 SQL Server 개체 탐색기에서 바로 상황에 맞는 메뉴를 통해 쿼리 실행을 포함하여 간단한 데이터베이스 관리 및 디자인 작업을 수행할 수 있습니다. SSDT에는 SQL Server 2012 Analysis Services, Reporting Services 및 Integration Services BI(Business Intelligence) 솔루션(이전의 Business Intelligence Development Studio)을 개발하기 위한 특수 프로젝트 형식 및 도구도 포함되어 있습니다.
 
- ![SQL Server 개체 탐색기](../ide/media/vs2015-sqlobjectexplorer.png "vs2015_SQLObjectExplorer")
+ ![SQL Server 개체 탐색기](../ide/media/vs2015-sqlobjectexplorer.png "|::ref18::|")
 
 ## <a name="deploying-your-finished-application"></a>완성된 애플리케이션 배포
  애플리케이션을 고객에게 배포할 준비가 되면 Visual Studio에서는 Windows 스토어 또는 Sharepoint 사이트에 배포하는지, 아니면 Installshield 또는 Windows Installer 기술을 통해 배포하는지에 관계없이 배포 작업을 수행하는 도구를 제공합니다. 모든 도구는 IDE를 통해 액세스할 수 있습니다. 자세한 내용은 [애플리케이션, 서비스 및 구성 요소 배포](../deployment/deploying-applications-services-and-components.md)를 참조하세요.

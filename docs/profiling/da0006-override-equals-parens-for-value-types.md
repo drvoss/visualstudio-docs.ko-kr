@@ -13,22 +13,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e30894ec98dd1db4de0b724082467a681a0fa696
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9cb4ac65442d9dbcb384ee3765f6fa827e3fa5d8
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970694"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306152"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006: 값 형식에 대해 Equals() 재정의
 
 |||
 |-|-|
 |규칙 ID|DA0006|
-|범주|.NET Framework 사용|
+|Category|.NET Framework 사용|
 |프로파일링 방법|샘플링|
-|메시지|값 형식에 대해 Equals 및 같음 연산자를 재정의합니다.|
-|메시지 형식|경고|
+|Message|값 형식에 대해 Equals 및 같음 연산자를 재정의합니다.|
+|메시지 형식|Warning|
 
 ## <a name="cause"></a>원인
  Equals 메서드 또는 공개 값 형식의 같음 연산자에 대한 호출이 프로파일링 데이터의 상당한 부분을 차지합니다. 더 효율적인 메서드를 구현해 보세요.
@@ -39,4 +39,4 @@ ms.locfileid: "62970694"
  Equals 및 같음 연산자를 재정의하는 방법에 대한 자세한 내용은 [Equals 및 같음 연산자(==) 구현 지침](http://go.microsoft.com/fwlink/?LinkId=177818)을 참조하세요.
 
 ## <a name="how-to-investigate-a-warning"></a>경고를 조사하는 방법
- Equals 및 같음 연산자 구현의 예는 코드 분석 규칙 [CA1815: 값 형식에서 Equals 또는 같음 연산자 재정의](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)를 참조하세요.
+ Equals 및 같음 연산자 구현의 예는 코드 분석 규칙 [CA1815: 값 형식에서 Equals 또는 같음 연산자 재정의](../code-quality/ca1815.md)를 참조하세요.

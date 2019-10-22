@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Prerequisites dialog box
 ms.assetid: 53ac863c-77a0-409b-91e5-7a4bd8b8474e
 caps.latest.revision: 79
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 672c0ea4a4ec3c2d396da7b232ca085181d90b25
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 367af4965c1e5a744a7ba6c801d74bc194a70ebb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68869858"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662177"
 ---
 # <a name="prerequisites-dialog-box"></a>필수 조건 대화 상자
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -66,4 +66,4 @@ ms.locfileid: "68869858"
 |**Windows Installer 4.5**|이 패키지는 Windows Installer 설치 프로젝트를 설치할 수 있는 Microsoft Windows Installer 재배포 가능 패키지, 버전 4.5를 설치합니다.|
 
 ## <a name="see-also"></a>참고 항목
- [프로젝트 디자이너, 게시 페이지](../../ide/reference/publish-page-project-designer.md) [응용 프로그램 배포 필수 구성 요소](../../deployment/application-deployment-prerequisites.md) [.NET Framework 재배포](https://msdn.microsoft.com/a18d0456-fd89-493e-97f4-756505bfe287) [64 비트 응용 프로그램의 필수 구성 요소 배포](../../deployment/deploying-prerequisites-for-64-bit-applications.md) [Visual Studio 다중 대상 지정 개요](../../ide/visual-studio-multi-targeting-overview.md)
+ [게시 페이지, 프로젝트 디자이너](../../ide/reference/publish-page-project-designer.md) [응용 프로그램 배포 필수 구성 요소](../../deployment/application-deployment-prerequisites.md) [.NET Framework 재배포](https://msdn.microsoft.com/a18d0456-fd89-493e-97f4-756505bfe287) [64 비트 응용 프로그램의 필수 구성 요소 배포](../../deployment/deploying-prerequisites-for-64-bit-applications.md) [Visual Studio 다중 대상 지정 개요](../../ide/visual-studio-multi-targeting-overview.md)

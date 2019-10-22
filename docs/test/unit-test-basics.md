@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5060b2a3b532de26d78eca4ce16661768748bbd7
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: aff50f5933d540297711e44487c775d93968f0fd
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891350"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342437"
 ---
 # <a name="unit-test-basics"></a>단위 테스트 기본 사항
 
@@ -369,7 +369,7 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
 솔루션의 선택된 테스트 또는 모든 테스트에 대해 코드 검사를 실행할 수 있습니다. **코드 검사 결과** 창에는 실행된 제품 코드 블록의 백분율이 줄, 함수, 클래스, 네임스페이스 및 모듈별로 표시됩니다.
 
-솔루션에서 테스트 메서드에 대한 코드 검사를 실행하려면 Visual Studio 메뉴에서 **테스트** 를 선택한 다음 **코드 검사 분석**을 선택합니다.
+솔루션에서 테스트 메서드에 대한 코드 검사를 실행하려면 **테스트** > **모든 테스트에 대한 코드 검사 분석**을 선택합니다.
 
 검사 결과는 **코드 검사 결과** 창에 나타납니다.
 

@@ -6,20 +6,20 @@ ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: 745d74ae-e48c-4fd9-a755-4354b81b9f8a
 caps.latest.revision: 9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5aeeb8bf9ec70a7288316c8b4c6baa337c232621
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 3fdedf3fd9463b25e2c825a0a2d43b069049a2cb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871719"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671228"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>UML 확장에서 단위 테스트 실행
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-변경을 연속으로 수행할 때 코드를 안정적으로 유지하려면 단위 테스트를 작성하여 정기적인 빌드 프로세스의 일부분으로 수행하는 것이 좋습니다. 자세한 내용은 [코드 단위 테스트](../test/unit-test-your-code.md)를 참조하세요. Visual Studio 모델링 확장용 테스트를 설정하려면 몇 가지 주요 정보가 필요합니다. 요약하자면 다음과 같습니다.
+변경을 연속으로 수행할 때 코드를 안정적으로 유지하려면 단위 테스트를 작성하여 정기적인 빌드 프로세스의 일부분으로 수행하는 것이 좋습니다. 자세한 내용은 [Unit Test Your Code](../test/unit-test-your-code.md)을 참조하세요. Visual Studio 모델링 확장용 테스트를 설정하려면 몇 가지 주요 정보가 필요합니다. 요약하자면 다음과 같습니다.
 
 - [VSIX 확장에 대 한 단위 테스트 설정](#Host)
 
@@ -48,7 +48,7 @@ ms.locfileid: "68871719"
 ## <a name="requirements"></a>요구 사항
  [요구 사항](../modeling/extend-uml-models-and-diagrams.md#Requirements)을 참조 하세요.
 
- 이 기능을 지원하는 Visual Studio 버전을 확인하려면 [아키텍처 및 모델링 도구에 대한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
+ 이 기능을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
 
 ## <a name="Host"></a>VSIX 확장에 대 한 단위 테스트 설정
  모델링 확장의 메서드는 보통 이미 열려 있는 다이어그램에서 작동합니다. 이 메서드는 **IDiagramContext** , **ILinkedUndoContext**등의 MEF 가져오기를 사용합니다. 테스트를 실행하기 전에 테스트 환경에서 이 컨텍스트를 설정해야 합니다.
@@ -59,7 +59,7 @@ ms.locfileid: "68871719"
 
     1. **UML 확장 프로젝트입니다.** 일반적으로는 명령 제스처 또는 유효성 검사 프로젝트 템플릿을 사용하여 이 프로젝트를 만듭니다. 예를 들어 [모델링 다이어그램에서 메뉴 명령 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md)를 참조 하세요.
 
-    2. **단위 테스트 프로젝트입니다.** 자세한 내용은 [코드 단위 테스트](../test/unit-test-your-code.md)를 참조하세요.
+    2. **단위 테스트 프로젝트입니다.** 자세한 내용은 [Unit Test Your Code](../test/unit-test-your-code.md)을 참조하세요.
 
 2. UML 모델링 프로젝트가 포함된 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 솔루션을 만듭니다. 이 솔루션을 테스트 초기 상태로 사용합니다. 이 솔루션은 UML 확장 및 해당 단위 테스트를 작성하는 솔루션과는 다른 별개의 솔루션이어야 합니다. 자세한 내용은 [UML 모델링 프로젝트 및 다이어그램 만들기](../modeling/create-uml-modeling-projects-and-diagrams.md)를 참조 하세요.
 
@@ -82,24 +82,24 @@ ms.locfileid: "68871719"
 
     - *UML 확장 프로젝트*
 
-    - **EnvDTE.dll**
+    - **EnvDTE**
 
-    - **Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll**
+    - **VisualStudio. Microsoft.visualstudio.architecturetools.layer.validator**
 
-    - **Microsoft.VisualStudio.ComponentModelHost.dll**
+    - **VisualStudio입니다.**
 
-    - **Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll**
+    - **VisualStudio. Microsoft.visualstudio.qualitytools&gt Testframework .dll**
 
-    - **Microsoft.VisualStudio.Uml.Interfaces.dll**
+    - **VisualStudio입니다.**
 
-    - **Microsoft.VSSDK.TestHostFramework.dll**
+    - **TestHostFramework입니다.**
 
 6. 초기화 메서드를 포함한 각 테스트 메서드에 `[HostType("VS IDE")]` 특성을 접두사로 지정합니다.
 
      그러면 Visual Studio의 실험적 인스턴스에서 테스트가 실행됩니다.
 
 ## <a name="DTE"></a>DTE 및 ModelStore 액세스
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 모델링 프로젝트를 여는 메서드를 작성합니다. 일반적으로는 각 테스트 실행 시 솔루션을 한 번만 엽니다. 메서드를 한 번만 실행하려면 메서드에 `[AssemblyInitialize]` 특성을 접두사로 지정합니다. 또한 각 테스트 메서드에 [HostType("VS IDE")] 특성도 추가해야 합니다.  예를 들어:
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 모델링 프로젝트를 여는 메서드를 작성합니다. 일반적으로는 각 테스트 실행 시 솔루션을 한 번만 엽니다. 메서드를 한 번만 실행하려면 메서드에 `[AssemblyInitialize]` 특성을 접두사로 지정합니다. 또한 각 테스트 메서드에 [HostType("VS IDE")] 특성도 추가해야 합니다.  예를 들면,
 
 ```csharp
 using EnvDTE;
@@ -164,7 +164,7 @@ namespace UnitTests
 
 ```
 
- 인스턴스가 <xref:EnvDTE.Project?displayProperty=fullName> 모델링 프로젝트를 나타내는 경우이를 [imodelingproject](/previous-versions/ee789474(v=vs.140))로 캐스팅할 수 있습니다.
+ @No__t_0 인스턴스가 모델링 프로젝트를 나타내는 경우이를 [Imodelingproject](/previous-versions/ee789474(v=vs.140))로 캐스팅할 수 있습니다.
 
 ## <a name="Opening"></a>모델 다이어그램 열기
  일반적으로 각 테스트 또는 테스트 클래스는 열려 있는 다이어그램에 대해 수행합니다. 다음 예에서는 이 테스트 클래스의 다른 메서드보다 먼저 이 메서드를 실행하는 `[ClassInitialize]` 특성을 사용합니다. 여기서도 각 테스트 메서드에 [HostType("VS IDE")] 특성을 추가해야 합니다.
@@ -287,7 +287,7 @@ using Microsoft.VSSDK.Tools.VsIdeTesting;
 ...}
 ```
 
- 가져온 속성을 매개 변수로 사용하는 메서드를 테스트하려는 경우에는 속성을 테스트 클래스로 가져온 다음 테스트 인스턴스에 `SatisfyImportsOnce` 를 적용하면 됩니다. 예를 들면 다음과 같습니다.
+ 가져온 속성을 매개 변수로 사용하는 메서드를 테스트하려는 경우에는 속성을 테스트 클래스로 가져온 다음 테스트 인스턴스에 `SatisfyImportsOnce` 를 적용하면 됩니다. 예를 들면,
 
 ```
 
@@ -338,7 +338,7 @@ using System.ComponentModel.Composition;
 [assembly:InternalsVisibleTo("MyUnitTests")] // Name of unit tests assembly.
 ```
 
- 테스트 인터페이스 정의 테스트할 클래스의 public 멤버와 테스트에서 사용할 수 있도록 하려는 전용 멤버에 대 한 추가 속성 및 메서드를 모두 포함 하는 인터페이스를 정의 합니다. 그리고 테스트할 프로젝트에 이 인터페이스를 추가합니다. 예를 들면 다음과 같습니다.
+ 테스트 인터페이스 정의 테스트할 클래스의 public 멤버와 테스트에서 사용할 수 있도록 하려는 전용 멤버에 대 한 추가 속성 및 메서드를 모두 포함 하는 인터페이스를 정의 합니다. 그리고 테스트할 프로젝트에 이 인터페이스를 추가합니다. 예를 들면,
 
 ```csharp
 internal interface MyClassTestInterface {
@@ -349,7 +349,7 @@ internal interface MyClassTestInterface {
  }
 ```
 
- 테스트할 클래스에 메서드를 추가하여 접근자 메서드를 명시적으로 구현합니다. 이러한 추가 메서드는 별도 파일의 partial 클래스 정의에 작성하여 주 클래스와 분리합니다. 예를 들면 다음과 같습니다.
+ 테스트할 클래스에 메서드를 추가하여 접근자 메서드를 명시적으로 구현합니다. 이러한 추가 메서드는 별도 파일의 partial 클래스 정의에 작성하여 주 클래스와 분리합니다. 예를 들면,
 
 ```csharp
 partial public class MyClass
@@ -368,7 +368,7 @@ partial public class MyClass
 [assembly:InternalsVisibleTo("MyUnitTests")] // Name of unit tests assembly.
 ```
 
- 단위 테스트 메서드에서 테스트 인터페이스를 사용합니다. 예를 들어:
+ 단위 테스트 메서드에서 테스트 인터페이스를 사용합니다. 예를 들면,
 
 ```csharp
 MyClassTestInterface testInstance = new MyClass();
@@ -378,5 +378,5 @@ Assert.AreEqual("hello", testInstance.privateField1_Accessor);
 
  리플렉션을 사용 하 여 접근자를 정의 합니다 .이는 최소 권장 방법입니다. 이전 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 버전에서는 각 private 메서드에 대해 접근자 메서드를 자동으로 만드는 유틸리티를 제공했습니다. 이 유틸리티는 편리하긴 하지만 사용하는 경우 단위 테스트가 테스트 중인 애플리케이션의 내부 구조에 밀접하게 연결되는 것으로 확인되었습니다. 그러면 요구 사항이나 아키텍처가 변경될 때 구현과 함께 테스트도 변경해야 하므로 추가 작업을 수행해야 합니다. 또한 구현 디자인의 잘못된 가정이 테스트에도 기본적으로 적용되므로 테스트가 오류를 찾지 못합니다.
 
-## <a name="see-also"></a>관련 항목
- [단위 테스트 분석](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144) [모델링 다이어그램의 메뉴 명령 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [UML – 텍스트를 사용한 빠른 입력](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)
+## <a name="see-also"></a>관련 항목:
+ [단위 테스트 분석](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144) UML [모델링 다이어그램의 메뉴 명령 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [-텍스트를 사용한 빠른 입력](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)

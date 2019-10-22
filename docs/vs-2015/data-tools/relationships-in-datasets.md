@@ -18,96 +18,96 @@ helpviewer_keywords:
 - relationships, datasets
 ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7f6aba4076f7532d5eab5d47515b734c4c312b99
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: eb13ad7db9a4f13ce9bf983ce6327045f885f4d8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692524"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652880"
 ---
-# <a name="relationships-in-datasets"></a>데이터 집합의 관계
+# <a name="relationships-in-datasets"></a>데이터 세트에서의 관계
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-관련된 데이터를 포함 하는 데이터 집합에 사용 하 여 테이블 <xref:System.Data.DataRelation> 서로 관련된 레코드를 반환 하 고 테이블 간의 부모/자식 관계를 나타내는 개체입니다. 관련된 테이블을 사용 하 여 데이터 집합에 추가 합니다 **데이터 소스 구성 마법사**, 또는 **데이터 집합 디자이너**생성 하 고 구성 합니다 <xref:System.Data.DataRelation> 개체입니다.  
-  
- <xref:System.Data.DataRelation> 개체 두 기능을 수행 합니다.  
-  
-- 수 있도록 사용 가능한 사용 하는 레코드와 관련 레코드입니다. 자식 레코드는 부모 레코드의 경우 (<xref:System.Data.DataRow.GetChildRows%2A>) 및 자식 레코드를 사용 하 여 작업 하는 경우 부모 레코드 (<xref:System.Data.DataRow.GetParentRow%2A>).  
-  
-- 부모 레코드를 삭제 하면 관련 된 자식 레코드를 삭제 하는 등의 참조 무결성 제약 조건을 적용할 수 있습니다.  
-  
-  True는 조인 및의 기능 간의 차이점을 이해 해야는 <xref:System.Data.DataRelation> 개체입니다. True 조인 레코드는 부모 및 자식 테이블에서 가져온 및 단일 기본 레코드 집합에 배치 합니다. 사용 하는 경우는 <xref:System.Data.DataRelation> 개체에 없는 새 레코드 집합이 생성 됩니다. 대신, DataRelation 테이블 간의 관계를 추적 하 고 부모 및 자식 레코드를 동기화 하는 유지 합니다.  
-  
-## <a name="datarelation-objects-and-constraints"></a>DataRelation 개체 및 제약 조건  
- <xref:System.Data.DataRelation> 개체는 또한 만들고 다음 제약 조건을 적용 하는 데 사용 됩니다.  
-  
-- 중복 행을 포함 하는 테이블의 열을 보장 하는 고유 제약 합니다.  
-  
-- 데이터 집합의 부모 및 자식 테이블 간에 참조 무결성을 유지 하기 위해 사용할 수 있는 외래 키 제약 합니다.  
-  
-  지정 하는 제약 조건은 <xref:System.Data.DataRelation> 개체가 자동으로 해당 개체를 만들거나 속성을 설정 하 여 구현 됩니다. 사용 하 여 외래 키 제약 조건을 만든를 <xref:System.Data.DataRelation> 개체, 인스턴스를 <xref:System.Data.ForeignKeyConstraint> 클래스에 추가 되는 <xref:System.Data.DataRelation> 개체의 <xref:System.Data.DataRelation.ChildKeyConstraint%2A> 속성.  
-  
-  Unique 제약 조건을 구현 됩니다 설정 하 여 하나를 <xref:System.Data.DataColumn.Unique%2A> 데이터 열의 속성 `true` 의 인스턴스를 추가 하 여를 <xref:System.Data.UniqueConstraint> 클래스를 <xref:System.Data.DataRelation> 개체의 <xref:System.Data.DataRelation.ParentKeyConstraint%2A> 속성입니다. 참조 데이터 집합의 제약을 일시 중단에 대 한 내용은 [데이터 집합을 채우는 동안 제약 조건 해제](../data-tools/turn-off-constraints-while-filling-a-dataset.md)합니다.  
-  
-### <a name="referential-integrity-rules"></a>참조 무결성 규칙  
- 외래 키 제약 조건의 일부로 세 지점에 적용 되는 참조 무결성 규칙을 지정할 수 있습니다.  
-  
-- 부모 레코드를 업데이트 하는 경우  
-  
-- 부모 레코드를 삭제 하는 경우  
-  
-- 변경 허용 되는지 또는 거부 되는 경우  
-  
-  수 있게 하는 규칙에 지정 된 된 <xref:System.Data.Rule> 열거형 되며 다음 표에 나열 된 합니다.  
-  
-|외래 키 제약 조건 규칙|작업|  
-|----------------------------------|------------|  
-|<xref:System.Data.Rule>|자식 테이블에서 관련된 레코드의 부모 레코드에 대 한 변경 (update 또는 delete)도 만들어집니다.|  
-|<xref:System.Data.Rule>|자식 레코드는 삭제 되지 않지만 자식 레코드의 외래 키로는 <xref:System.DBNull>합니다. 이 설정을 사용 하 여 자식 레코드도 유지할 수 있습니다 "고아"-즉, 부모 레코드 아무런 관계가 갖습니다. **참고:**  이 규칙을 사용 하 여 자식 테이블에 잘못 된 데이터가 될 수 있습니다.|  
-|<xref:System.Data.Rule>|관련된 자식 레코드의 외래 키가 기본값으로 설정 (열에서 설정한 <xref:System.Data.DataColumn.DefaultValue%2A> 속성).|  
-|<xref:System.Data.Rule>|관련 된 자식 레코드에 변경 되지 않습니다. 이 설정을 사용 하 여 자식 레코드는 잘못 된 부모 레코드에 대 한 참조를 포함할 수 있습니다.|  
-  
- 데이터 집합 테이블에서 업데이트에 대 한 자세한 내용은 참조 하세요. [데이터를 데이터베이스에 다시 저장](../data-tools/save-data-back-to-the-database.md)합니다.  
-  
-### <a name="constraint-only-relations"></a>제약 조건 전용 관계  
- 만들 때를 <xref:System.Data.DataRelation> 개체 관계 제약 조건을 적용 하기 위해 사용할 수 있는지를 지정 하는 옵션이 있습니다-즉,이 사용 되지 것입니다도 관련된 레코드에 액세스할 수 있습니다. 약간 더 효율적 이며 관련 레코드 기능을 사용 하 여 1 보다 더 적은 메서드를 포함 하는 데이터 집합을 생성 하려면이 옵션을 사용할 수 있습니다. 그러나 관련된 레코드에 액세스할 수 없습니다. 예를 들어, 제약 조건 전용 관계에서 자식 레코드를가지고 있는 부모 레코드를 삭제 하면 및 부모-자식 레코드에 액세스할 수 없습니다.  
-  
-## <a name="manually-creating-a-data-relation-in-the-dataset-designer"></a>데이터 집합 디자이너에서 데이터 관계를 수동으로 만들기  
- Visual Studio에서 데이터 디자인 도구를 사용 하 여 데이터 테이블을 만들 때 데이터 원본에서 정보를 수집할 수 있습니다 하는 경우 관계가 자동으로 생성 됩니다. 데이터 테이블을 수동으로 추가 하는 경우는 **데이터 집합** 탭의 **도구 상자**, 수동으로 관계를 만들어야 할 수 있습니다. 만드는 방법은 <xref:System.Data.DataRelation> 개체를 프로그래밍 방식으로 참고 [Datarelation 추가](https://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4)합니다.  
-  
- 데이터 테이블 간의 관계에서 선으로 표시 합니다 **데이터 집합 디자이너**, 관계의 다-측면을 보여 주는 키 및 무한대 문자 모양으로 합니다. 기본적으로 relationshipCommentEnd Id의 이름 = '1c8c78e19b7fa441' 디자인 화면에 표시 되지 않습니다.  
-  
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
-  
-#### <a name="to-create-a-relationship-between-two-data-tables"></a>두 데이터 테이블 간의 관계를 만들려면  
-  
-1. **데이터 세트 디자이너**에서 데이터 세트를 엽니다. 자세한 내용은 [방법: 데이터 집합 디자이너에서 데이터 집합 열기](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)합니다.  
-  
-2. 끌어서를 **관계** 에서 개체를 **데이터 집합** 관계의 자식 데이터 테이블 도구 상자입니다.  
-  
-     **관계** 대화 상자가 열리고 채우기는 **자식 테이블** 끌어 놓은 테이블이 포함 된 상자를 **관계** 개체.  
-  
-3. 부모 테이블을 선택 합니다 **부모 테이블** 상자입니다. 부모 테이블에 일 대 다 관계의 "일" 쪽에서 레코드를 포함합니다.  
-  
-4. 올바른 자식 테이블에 표시 되는지 확인 합니다 **자식 테이블** 상자입니다. 자식 테이블에 일 대 다 관계의 "다" 쪽에서 레코드를 포함합니다.  
-  
-5. 관계의 이름을 입력 합니다 **이름** 하거나 기본 이름을 선택한 테이블을 기반으로 합니다. 이 실제 이름을 <xref:System.Data.DataRelation> 코드의 개체입니다.  
-  
-6. 테이블을 조인 하는 열을 선택 합니다 **키 열** 하 고 **외래 키 열** 나열 합니다.  
-  
-7. 관계, 제약 조건 또는 둘 다를 만들지 여부를 선택 합니다. 정보를 참조 하세요 [DataRelation 개체 소개](https://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192)합니다.  
-  
-8. 선택 하거나 선택을 취소 합니다 **중첩 된 관계** 상자입니다. 이 옵션을 선택 합니다 <xref:System.Data.DataRelation.Nested%2A> 속성을 `true`, 자식 행을 해당 행은 XML 데이터로 작성 되거나와 동기화 하는 경우 부모 열 내에서 중첩 된 관계의 발생 및 <xref:System.Xml.XmlDataDocument>합니다. 자세한 내용은 [중첩 Datarelation](https://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab)합니다.  
-  
-9. 이러한 테이블에서 레코드를 변경 하는 경우 적용할 규칙을 설정 합니다. 자세한 내용은 <xref:System.Data.Rule>을 참조하세요.  
-  
-10. 클릭 **확인** 관계를 만듭니다. 관계 선을 두 테이블 간에 디자이너에 표시 됩니다.  
-  
-#### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>데이터 집합 디자이너에서 관계 이름을 표시 하려면  
-  
-1. **데이터 세트 디자이너**에서 데이터 세트를 엽니다. 자세한 내용은 [방법: 데이터 집합 디자이너에서 데이터 집합 열기](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)합니다.  
-  
-2. **데이터** 메뉴를 선택 합니다 **관계 레이블 표시** 관계 이름을 표시 하는 명령입니다. 관계 이름 숨기기에 해당 명령 선택을 취소 합니다.
+관련 데이터 테이블이 포함 된 데이터 집합은 <xref:System.Data.DataRelation> 개체를 사용 하 여 테이블 간의 부모/자식 관계를 표시 하 고 서로 관련 된 레코드를 반환 합니다. **데이터 소스 구성 마법사**또는 **데이터 세트 디자이너**를 사용 하 여 데이터 집합에 관련 테이블을 추가 하면 <xref:System.Data.DataRelation> 개체가 생성 및 구성 됩니다.
+
+ @No__t_0 개체는 다음 두 가지 기능을 수행 합니다.
+
+- 작업 중인 레코드와 관련 된 레코드를 사용할 수 있게 만들 수 있습니다. 부모 레코드 (<xref:System.Data.DataRow.GetChildRows%2A>)에 있는 경우 자식 레코드를 제공 하 고 자식 레코드 (<xref:System.Data.DataRow.GetParentRow%2A>)로 작업 하는 경우 부모 레코드를 제공 합니다.
+
+- 부모 레코드를 삭제할 때 관련 자식 레코드를 삭제 하는 등의 참조 무결성에 대 한 제약 조건을 적용할 수 있습니다.
+
+  @No__t_0 개체의 실제 조인과 함수 간의 차이점을 이해 하는 것이 중요 합니다. 진정한 조인에서 레코드는 부모 및 자식 테이블에서 가져오며 단일 플랫 레코드 집합에 배치 됩니다. @No__t_0 개체를 사용 하는 경우 새 레코드 집합을 만들 수 없습니다. 대신 DataRelation은 테이블 간의 관계를 추적 하 고 부모 및 자식 레코드를 동기화 된 상태로 유지 합니다.
+
+## <a name="datarelation-objects-and-constraints"></a>DataRelation 개체 및 제약 조건
+ @No__t_0 개체는 다음 제약 조건을 만들고 적용 하는 데도 사용 됩니다.
+
+- 테이블의 열에 중복 항목이 포함 되지 않도록 보장 하는 unique 제약 조건입니다.
+
+- 데이터 집합의 부모 및 자식 테이블 간에 참조 무결성을 유지 하는 데 사용할 수 있는 외래 키 제약 조건입니다.
+
+  @No__t_0 개체에서 지정 하는 제약 조건은 자동으로 적절 한 개체를 만들거나 속성을 설정 하 여 구현 됩니다. @No__t_0 개체를 사용 하 여 외래 키 제약 조건을 만드는 경우 <xref:System.Data.ForeignKeyConstraint> 클래스의 인스턴스가 <xref:System.Data.DataRelation> 개체의 <xref:System.Data.DataRelation.ChildKeyConstraint%2A> 속성에 추가 됩니다.
+
+  Unique 제약 조건은 데이터 열의 <xref:System.Data.DataColumn.Unique%2A> 속성을 `true`으로 설정 하거나 <xref:System.Data.DataRelation> 개체의 <xref:System.Data.DataRelation.ParentKeyConstraint%2A> 속성에 <xref:System.Data.UniqueConstraint> 클래스의 인스턴스를 추가 하 여 구현 됩니다. 데이터 집합의 제약 조건 일시 중단에 대 한 자세한 내용은 [데이터 집합을 채우는 동안 제약 조건](../data-tools/turn-off-constraints-while-filling-a-dataset.md)해제를 참조 하세요.
+
+### <a name="referential-integrity-rules"></a>참조 무결성 규칙
+ 외래 키 제약 조건의 일부로 세 지점에서 적용 되는 참조 무결성 규칙을 지정할 수 있습니다.
+
+- 부모 레코드가 업데이트 되는 경우
+
+- 부모 레코드가 삭제 되는 경우
+
+- 변경 내용이 수락 되거나 거부 되는 경우
+
+  지정할 수 있는 규칙은 <xref:System.Data.Rule> 열거에 지정 되며 다음 표에 나와 있습니다.
+
+|외래 키 제약 조건 규칙|작업|
+|----------------------------------|------------|
+|<xref:System.Data.Rule>|부모 레코드에 대 한 변경 (업데이트 또는 삭제)은 자식 테이블의 관련 레코드에도 적용 됩니다.|
+|<xref:System.Data.Rule>|자식 레코드는 삭제 되지 않지만 자식 레코드의 외래 키는 <xref:System.DBNull>로 설정 됩니다. 이 설정을 사용 하면 자식 레코드를 "고아"로 남겨둘 수 있습니다. 즉, 부모 레코드와 관계가 없습니다. **참고:**  이 규칙을 사용 하면 자식 테이블에 잘못 된 데이터가 생성 될 수 있습니다.|
+|<xref:System.Data.Rule>|관련 자식 레코드의 외래 키는 열의 <xref:System.Data.DataColumn.DefaultValue%2A> 속성으로 설정 된 대로 기본값으로 설정 됩니다.|
+|<xref:System.Data.Rule>|관련 자식 레코드는 변경 되지 않습니다. 이 설정을 사용 하면 자식 레코드에 잘못 된 부모 레코드에 대 한 참조가 포함 될 수 있습니다.|
+
+ 데이터 집합 테이블의 업데이트에 대 한 자세한 내용은 [데이터를 데이터베이스에 다시 저장](../data-tools/save-data-back-to-the-database.md)을 참조 하세요.
+
+### <a name="constraint-only-relations"></a>제약 조건 전용 관계
+ @No__t_0 개체를 만들 때는 제약 조건을 적용 하는 데만 관계를 사용 하도록 지정할 수 있습니다. 즉, 관련 레코드에 액세스 하는 데에도 사용 되지 않습니다. 이 옵션을 사용 하 여 약간 더 효율적이 고 관련 레코드 기능을 사용 하는 것 보다 더 작은 메서드를 포함 하는 데이터 집합을 생성할 수 있습니다. 그러나 관련 레코드에는 액세스할 수 없습니다. 예를 들어 제약 조건 전용 관계로 인해 자식 레코드가 아직 있는 부모 레코드를 삭제할 수 없으며, 부모를 통해 자식 레코드에 액세스할 수 없습니다.
+
+## <a name="manually-creating-a-data-relation-in-the-dataset-designer"></a>데이터 세트 디자이너에서 수동으로 데이터 관계 만들기
+ Visual Studio에서 데이터 디자인 도구를 사용 하 여 데이터 테이블을 만들 때 데이터 원본에서 정보를 수집할 수 있는 경우 자동으로 관계가 만들어집니다. **도구 상자**의 데이터 **집합** 탭에서 수동으로 데이터 테이블을 추가 하는 경우 관계를 수동으로 만들어야 할 수 있습니다. 프로그래밍 방식으로 <xref:System.Data.DataRelation> 개체를 만드는 방법에 대 한 자세한 내용은 [DataRelations 추가](https://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4)를 참조 하세요.
+
+ 데이터 테이블 간의 관계는 관계의 일 대 다 측면을 보여 주는 키와 무한대 문자를 사용 하 여 **데이터 세트 디자이너**의 선으로 나타납니다. 기본적으로 relationshipCommentEnd Id = ' 1c8c78e19b7fa441 '의 이름은 디자인 화면에 표시 되지 않습니다.
+
+ [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
+
+#### <a name="to-create-a-relationship-between-two-data-tables"></a>두 데이터 테이블 간에 관계를 만들려면
+
+1. **데이터 세트 디자이너**에서 데이터 세트를 엽니다. 자세한 내용은 [방법: 데이터 세트 디자이너에서 데이터 집합 열기](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)를 참조 하세요.
+
+2. **관계 개체를** **데이터 집합** 도구 상자에서 관계의 자식 데이터 테이블로 끌어 놓습니다.
+
+     관계 **대화 상자가** 열리고 **관계** 개체를 끌어온 테이블로 **자식 테이블** 상자를 채웁니다.
+
+3. **부모 테이블** 상자에서 부모 테이블을 선택 합니다. 부모 테이블은 일 대 다 관계의 "일" 쪽에 있는 레코드를 포함 합니다.
+
+4. **자식 테이블** 상자에 올바른 자식 테이블이 표시 되는지 확인 합니다. 자식 테이블에는 일 대 다 관계의 "다" 쪽에 있는 레코드가 포함 되어 있습니다.
+
+5. **이름** 상자에 관계 이름을 입력 하거나 선택한 테이블을 기반으로 기본 이름을 그대로 둡니다. 코드의 실제 <xref:System.Data.DataRelation> 개체 이름입니다.
+
+6. **키 열** 과 **외래 키 열** 목록에서 테이블을 조인 하는 열을 선택 합니다.
+
+7. 관계, 제약 조건 또는 둘 다를 만들지 여부를 선택 합니다. 자세한 내용은 [DataRelation 개체 소개](https://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192)를 참조 하세요.
+
+8. **중첩 관계** 상자를 선택 하거나 선택 취소 합니다. 이 옵션을 선택 하면 <xref:System.Data.DataRelation.Nested%2A> 속성이 `true`로 설정 되 고 해당 행이 XML 데이터로 작성 되거나 <xref:System.Xml.XmlDataDocument>와 동기화 될 때 관계의 자식 행이 부모 열 내에 중첩 됩니다. 자세한 내용은 [DataRelations 중첩](https://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab)을 참조 하세요.
+
+9. 이러한 테이블의 레코드를 변경 하는 경우 적용 되는 규칙을 설정 합니다. 자세한 내용은 <xref:System.Data.Rule>을 참조하십시오.
+
+10. **확인** 을 클릭 하 여 관계를 만듭니다. 두 테이블 사이에 관계 선이 디자이너에 나타납니다.
+
+#### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>데이터 세트 디자이너에 관계 이름을 표시 하려면
+
+1. **데이터 세트 디자이너**에서 데이터 세트를 엽니다. 자세한 내용은 [방법: 데이터 세트 디자이너에서 데이터 집합 열기](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)를 참조 하세요.
+
+2. **데이터** 메뉴에서 **관계 레이블 표시** 명령을 선택 하 여 관계 이름을 표시 합니다. 이 명령을 지워 관계 이름을 숨깁니다.

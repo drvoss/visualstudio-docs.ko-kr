@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c9ff51d8193ebc8c1ca264a334cdd3f1fb7401b
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 075c56a5d5bcb02ee443035ac26d7730f145a445
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118918"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314084"
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>4단계: CheckTheAnswer() 메서드 추가
 
@@ -41,8 +41,7 @@ ms.locfileid: "71118918"
      [!code-vb[VbExpressTutorial3Step4#8](../ide/codesnippet/VisualBasic/step-4-add-the-checktheanswer-parens-method_1.vb)]
      [!code-csharp[VbExpressTutorial3Step4#8](../ide/codesnippet/CSharp/step-4-add-the-checktheanswer-parens-method_1.cs)]
 
-     > [!IMPORTANT]
-     > 이 페이지의 오른쪽 위에 있는 프로그래밍 언어 컨트롤을 사용하여 C# 코드 조각 또는 Visual Basic 코드 조각을 볼 수 있습니다.<br><br>![Docs.Microsoft.com에 대한 프로그래밍 언어 컨트롤](../ide/media/docs-programming-language-control.png)
+     [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
      다음으로 새 `CheckTheAnswer()` 메서드를 호출하도록 타이머의 <xref:System.Windows.Forms.Timer.Tick> 이벤트 처리기에 대한 메서드에서 코드를 업데이트합니다.
 

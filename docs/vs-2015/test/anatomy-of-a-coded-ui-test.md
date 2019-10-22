@@ -8,14 +8,14 @@ helpviewer_keywords:
 - coded UI tests
 ms.assetid: 9c5d82fc-3fb7-4bb1-a9ac-ac1fa3a4b500
 caps.latest.revision: 25
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1af269201649f9372d9c0b2d5b273ddd358fe1e1
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 305c0b33b52c54e7d241b4e86e974d25e58d1e51
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871704"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660702"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>코딩된 UI 테스트 분석
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ public void VerifyTotal()
 public void CleanUp()
 ```
 
- [UIMap](/previous-versions/dd580454(v=vs.140)) 클래스의이 부분에는 메서드에 필요한 각 속성에 대해 생성 된 코드도 포함 됩니다.
+ [UIMap](/previous-versions/dd580454(v=vs.140)) 클래스의 이 부분에는 메서드에 필요한 각 속성에 대해 생성된 코드도 포함됩니다.
 
 ```
 public virtual LaunchCalculatorParams LaunchCalculatorParams
@@ -192,7 +192,7 @@ public class AddItemsParams
 #### <a name="uimap-class"></a>UIMap 클래스
  여기서 사용자 지정 코드를 만들어 [UIMap](/previous-versions/dd580454(v=vs.140)) 클래스의 기능을 확장할 수 있습니다. 이 파일에 만드는 코드는 테스트를 수정할 때마다 **코딩된 UI 테스트 빌더**에서 다시 생성되지 않습니다.
 
- [UIMap](/previous-versions/dd580454(v=vs.140)) 의 모든 부분은 [UIMap](/previous-versions/dd580454(v=vs.140)) 클래스의 다른 부분에 있는 메서드와 속성을 사용할 수 있습니다.
+ [UIMap](/previous-versions/dd580454(v=vs.140))의 모든 부분에서 [UIMap](/previous-versions/dd580454(v=vs.140)) 클래스의 다른 부분에 있는 메서드와 속성을 사용할 수 있습니다.
 
 ### <a name="CodedUITestCS"></a> CodedUITest1.cs
  이 파일은 **코딩된 UI 테스트 빌더**에서 생성되지만 테스트를 수정할 때마다 다시 생성되지 않으므로 이 파일의 코드를 수정할 수 있습니다. 파일 이름은 테스트를 만들 때 지정한 테스트 이름에서 생성됩니다.
@@ -205,7 +205,7 @@ public class AddItemsParams
 public class CodedUITest1
 ```
 
- [Codeduitestattribute](/previous-versions/visualstudio/visual-studio-2013/ff430233(v=vs.120)) 는 클래스에 자동으로 적용 되어 테스트 프레임 워크에서이를 테스트 확장으로 인식할 수 있게 합니다. 또한 partial 클래스가 아닙니다. 모든 클래스 코드가 이 파일에 포함됩니다.
+ [CodedUITestAttribute](/previous-versions/visualstudio/visual-studio-2013/ff430233(v=vs.120))가 클래스에 자동으로 적용되어 테스트 프레임워크에서 해당 클래스를 테스트 확장으로 인식할 수 있게 합니다. 또한 partial 클래스가 아닙니다. 모든 클래스 코드가 이 파일에 포함됩니다.
 
 ##### <a name="CodedUITestProperties"></a> CodedUITest1 속성
  클래스는 파일 맨 아래에 있는 두 개의 기본 속성을 포함합니다. 속성을 수정하면 안 됩니다.

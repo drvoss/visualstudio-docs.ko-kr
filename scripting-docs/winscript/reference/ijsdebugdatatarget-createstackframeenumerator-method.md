@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugdatatarget:: Createstackframeenumerator 메서드 | Microsoft Docs'
+title: 'IJsDebugDataTarget:: Createstack프레임 열거자 메서드 | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b8103ac689ac812aee2037f0f2e89f1d3a7448c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 59d58f0256a326d3922e280818176a43ef4aa5ae
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583082"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577625"
 ---
 # <a name="ijsdebugdatatargetcreatestackframeenumerator-method"></a>IJsDebugDataTarget::CreateStackFrameEnumerator 메서드
 스택 프레임에 대 한 열거자를 만듭니다.  
@@ -36,15 +36,15 @@ HRESULT CreateStackFrameEnumerator(
   
 #### <a name="parameters"></a>매개 변수  
  `threadId`  
- [in] 대상 프로세스에서 실행 되는 스레드입니다.  
+ 진행 대상 프로세스에서 실행 되는 스레드입니다.  
   
  `ppEnumerator`  
- [out] 스택 프레임에 대 한 열거자입니다.  
+ 제한이 스택 프레임에 대 한 열거자입니다.  
   
 ## <a name="return-value"></a>반환 값  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더:** jscript9diag.h  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [IJsDebugDataTarget 인터페이스](../../winscript/reference/ijsdebugdatatarget-interface.md)

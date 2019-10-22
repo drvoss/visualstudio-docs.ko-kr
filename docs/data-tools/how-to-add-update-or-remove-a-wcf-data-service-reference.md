@@ -9,20 +9,20 @@ helpviewer_keywords:
 - ADO.NET service references
 - ADO.NET Data Service reference
 ms.assetid: 892ebf37-3af4-472e-8744-92837677d611
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: da8555d4246d2177b3d97eeef8d24c7b4a22b31d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8f19fbfb82a74de0f0eedf784483ecaeccc9a5fc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925630"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648416"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>방법: WCF 데이터 서비스 참조 추가, 업데이트 또는 제거
-*서비스 참조* 를 사용 하면 프로젝트에서 하나 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]이상의에 액세스할 수 있습니다. **서비스 참조 추가** 대화 상자를 사용 하 여 로컬 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 영역 네트워크 또는 인터넷에서 현재 솔루션의를 검색할 수 있습니다.
+*서비스 참조* 를 사용 하면 프로젝트에서 하나 이상의 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]에 액세스할 수 있습니다. **서비스 참조 추가** 대화 상자를 사용 하 여 현재 솔루션의 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 로컬, 로컬 영역 네트워크 또는 인터넷에서 검색할 수 있습니다.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -59,7 +59,7 @@ ms.locfileid: "68925630"
 
 2. **검색**을 클릭 합니다.
 
-    현재 솔루션의 모든 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 서비스 (및 WCF 서비스)가 **서비스** 목록에 추가 됩니다.
+    현재 솔루션의 모든 서비스 ([!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 및 WCF 서비스 모두)가 **서비스** 목록에 추가 됩니다.
 
 3. **서비스** 목록에서 사용 하려는 서비스에 대 한 노드를 확장 하 고 엔터티 집합을 선택 합니다.
 
@@ -70,7 +70,7 @@ ms.locfileid: "68925630"
     서비스 클라이언트 (프록시)가를 생성 하 고, 서비스를 설명 하는 메타 데이터가 *app.config* 파일에 추가 됩니다.
 
 ## <a name="update-a-service-reference"></a>서비스 참조 업데이트
-엔터티 데이터 모델는 경우에 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 따라 변경 됩니다. 이 경우 서비스 참조를 업데이트 해야 합니다.
+@No__t_0에 대 한 엔터티 데이터 모델 변경 되는 경우도 있습니다. 이 경우 서비스 참조를 업데이트 해야 합니다.
 
 ### <a name="to-update-a-service-reference"></a>서비스 참조를 업데이트 하려면
 
@@ -90,6 +90,6 @@ ms.locfileid: "68925630"
     > [!NOTE]
     > 서비스 참조를 참조 하는 모든 코드는 수동으로 제거 해야 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [Windows Communication Foundation 서비스 및 Visual Studio의 WCF 데이터 서비스](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

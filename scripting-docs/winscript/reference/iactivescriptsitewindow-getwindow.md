@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteWindow::GetWindow | Microsoft Docs
+title: 'IActiveScriptSiteWindow:: GetWindow | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b6efa066765339375a8315695aa9c1de2f9c46b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d8263db447c7692ec7b0982127d63b4bea588a4b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992051"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574350"
 ---
 # <a name="iactivescriptsitewindowgetwindow"></a>IActiveScriptSiteWindow::GetWindow
-스크립팅 엔진을 표시 해야 하는 팝업 창의 소유자 역할을 수행할 수 있는 창에 핸들을 검색 합니다.  
+스크립팅 엔진에서 표시 해야 하는 팝업 창의 소유자 역할을 할 수 있는 창에 대 한 핸들을 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -37,13 +37,13 @@ HRESULT GetWindow(
   
 #### <a name="parameters"></a>매개 변수  
  `phwnd`  
- [out] 창 핸들을 받는 변수의 주소입니다.  
+ 제한이 창 핸들을 받는 변수의 주소입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 반환 `S_OK` 성공 하면 또는 `E_FAIL` 오류가 발생 합니다.  
+ 성공 하면 `S_OK`을 반환 하 고, 오류가 발생 한 경우 `E_FAIL` 합니다.  
   
-## <a name="remarks"></a>설명  
- 이 메서드는 비슷합니다는 `IOleWindow::GetWindow` 메서드.  
+## <a name="remarks"></a>주의  
+ 이 메서드는 `IOleWindow::GetWindow` 메서드와 비슷합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [IActiveScriptSiteWindow](../../winscript/reference/iactivescriptsitewindow.md)

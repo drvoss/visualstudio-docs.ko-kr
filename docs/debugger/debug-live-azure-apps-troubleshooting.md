@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ee8633a9ad58981297f00338cd6c375c5cf721e
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 27df4c097d829a4d28a77b9b1ad96eb389f4096c
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211241"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962936"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Visual Studio의 스냅샷 디버깅에 대한 문제 해결 및 알려진 문제
 
-이 문서에서 설명 하는 단계를 수행 해도 문제가 해결 되지 않으면 [개발자 커뮤니티](https://developercommunity.visualstudio.com/spaces/8/index.html) 에서 문제를 검색 하거나 시각적 개체에서**문제 보고** **사용자 의견** > 보내기 **를 선택** > 하 여 새 문제를 보고 합니다. Net.
+이 문서에서 설명 하는 단계를 수행 해도 문제가 해결 되지 않으면 [개발자 커뮤니티](https://developercommunity.visualstudio.com/spaces/8/index.html) 에서 문제를 검색 하거나 **Help** > **사용자 의견 보내기** > 를 선택 하 여 새 문제를 보고 합니다. Visual Studio에서**문제 보고**
 
 ## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>문제: "Attach 스냅숏 디버거"에서 HTTP 상태 코드 오류가 발생 했습니다.
 
@@ -34,7 +34,7 @@ ms.locfileid: "71211241"
 
 다음 단계를 수행하세요.
 
-* Visual Studio 개인 설정 계정에 연결할 Azure 구독 및 리소스에 대 한 권한이 있는지 확인 합니다. 이를 확인 하는 빠른 방법은 **디버그** > **연결 스냅숏 디버거 ...** 의 대화 상자에서 리소스를 사용할 수 있는지 확인 하는 것입니다. Azure 리소스**기존를 선택**하거나 클라우드 탐색기 합니다.  >  > 
+* Visual Studio 개인 설정 계정에 연결할 Azure 구독 및 리소스에 대 한 권한이 있는지 확인 합니다. 이를 확인 하는 빠른 방법은 **디버그** > **연결 스냅숏 디버거** 의 대화 상자에서 리소스를 사용할 수 있는지 확인 하는 것입니다. @no__t 3**Azure 리소스**@no__t 클라우드 탐색기에서 기존 또는를**선택**합니다.
 * 이 오류가 계속 지속 되 면이 문서의 시작 부분에 설명 된 피드백 채널 중 하나를 사용 합니다.
 
 ### <a name="403-forbidden"></a>(403) 사용할 수 없음
@@ -54,7 +54,8 @@ ms.locfileid: "71211241"
 다음 단계를 수행하세요.
 
 * 연결 하려는 App Service 리소스에서 웹 사이트를 배포 하 고 실행 하 고 있는지 확인 합니다.
-* Https://\<리소스\>에서 사이트를 사용할 수 있는지 확인 합니다. azurewebsites.net
+* Https://@no__t -0resource\>.azurewebsites.net에서 사이트를 사용할 수 있는지 확인 합니다.
+* Https://@no__t -0resource\>.azurewebsites.net에서 액세스할 때 제대로 실행 되는 사용자 지정 웹 응용 프로그램이 상태 코드 404을 반환 하지 않는지 확인 합니다.
 * 이 오류가 계속 지속 되 면이 문서의 시작 부분에 설명 된 피드백 채널 중 하나를 사용 합니다.
 
 ### <a name="406-not-acceptable"></a>(406) 허용 되지 않음
@@ -63,7 +64,7 @@ ms.locfileid: "71211241"
 
 다음 단계를 수행하세요.
 
-* Https://\<리소스\>에서 사이트를 사용할 수 있는지 확인 합니다. azurewebsites.net
+* Https://@no__t -0resource\>.azurewebsites.net에서 사이트를 사용할 수 있는지 확인 합니다.
 * 사이트가 새 인스턴스로 마이그레이션되지 않았는지 확인 합니다. 스냅숏 디버거은이 오류를 간헐적으로 생성할 수 있는 특정 인스턴스로 요청을 라우팅하는 데 ARRAffinity 이라는 개념을 사용 합니다.
 * 이 오류가 계속 지속 되 면이 문서의 시작 부분에 설명 된 피드백 채널 중 하나를 사용 합니다.
 
@@ -156,11 +157,11 @@ snappoint와 함께 일반 snappoint 아이콘이 아닌 경고 아이콘(![snap
 
 Visual Studio 2019에는 Azure App Service에 스냅숏 디버거 사이트 확장의 최신 버전이 필요 합니다.  이 버전은 Visual Studio 2017에서 사용 하는 스냅숏 디버거 사이트 확장의 이전 버전과 호환 되지 않습니다.  Visual studio 2019의 스냅숏 디버거을 Visual Studio 2017의 스냅숏 디버거에 의해 이전에 디버깅 된 Azure App Service에 연결 하려고 하면 다음과 같은 오류가 발생 합니다.
 
-![호환 되지 않는 스냅숏 디버거 사이트 확장 Visual Studio 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "호환 되지 않는 스냅숏 디버거 사이트 확장 Visual Studio 2019")
+![호환 되지 않는 스냅숏 디버거 사이트 확장 Visual studio 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "호환 되지 않는 스냅숏 디버거 사이트 확장 visual studio 2019")
 
 반대로 visual Studio 2017을 사용 하 여 Visual Studio 2019의 스냅숏 디버거에 의해 이전에 디버깅 된 Azure App Service에 스냅숏 디버거를 연결 하는 경우 다음과 같은 오류가 발생 합니다.
 
-![호환 되지 않는 스냅숏 디버거 사이트 확장 Visual Studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "호환 되지 않는 스냅숏 디버거 사이트 확장 Visual Studio 2017")
+![호환 되지 않는 스냅숏 디버거 사이트 확장 Visual studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "호환 되지 않는 스냅숏 디버거 사이트 확장 visual studio 2017")
 
 이 문제를 해결하려면 Azure Portal에서 다음 앱 설정을 삭제하고 스냅샷 디버거를 다시 연결하세요.
 
@@ -217,7 +218,7 @@ Visual Studio 2019에는 Azure App Service에 스냅숏 디버거 사이트 확�
 - 슬롯 사이트를 시작합니다. 사이트를 방문하여 다시 사이트를 준비하는 것이 좋습니다.
 - 슬롯을 프로덕션과 교환합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 디버깅](../debugger/index.yml)
 - [스냅숏 디버거를 사용 하 여 라이브 ASP.NET 앱 디버그](../debugger/debug-live-azure-applications.md)

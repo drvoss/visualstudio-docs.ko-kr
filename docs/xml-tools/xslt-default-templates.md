@@ -3,17 +3,17 @@ title: XSLT 기본 템플릿
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 773dd34e-67d3-4997-8df9-b71e7f880d88
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2910a9f81a8bf4bf1e5f25245ad9a3b02adffe1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 81a764aa45eb74ba110d8b3b5965ede1e62bdadd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62807701"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72607776"
 ---
 # <a name="xslt-default-templates"></a>XSLT 기본 템플릿
 
@@ -21,6 +21,6 @@ ms.locfileid: "62807701"
 
 이제 XSLT 디버거는 XSLT 기본 템플릿의 코드를 표시합니다. XSLT 변환을 단계별로 실행할 때 기본 템플릿이 사용되는 경우 디버거는 기본 템플릿을 창에 표시합니다. 이렇게 하면 기본 템플릿의 코드를 단계별로 실행하고 해당 명령에 따라 중단점을 설정할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [XSLT 디버그](../xml-tools/debugging-xslt.md)

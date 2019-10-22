@@ -1,5 +1,5 @@
 ---
-title: '연습: Windows Forms에서 간단한 WCF 서비스 만들기 | Microsoft Docs'
+title: '연습: Windows Forms에서 간단한 WCF 서비스 만들기 Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -11,15 +11,15 @@ helpviewer_keywords:
 - WCF services, walkthrough
 ms.assetid: 5fef1a64-27a4-4f10-aa57-29023e28a2d6
 caps.latest.revision: 29
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 46250ad394a2fde1e7cde6f30fab9dc6d7fb579c
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 366567a13ad23ab19ffd88f19997b92025abe952
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615643"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671071"
 ---
 # <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>연습: Windows Forms에서 간단한 WCF 서비스 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "65615643"
 
 3. ![IService1 파일](../data-tools/media/wcf2.png "wcf2")
 
-     **솔루션 탐색기**IService1.vb 또는 IService1.cs를 두 번 클릭 하 고 다음 줄을 찾습니다.
+     **솔루션 탐색기**에서 IService1 또는 IService1.cs를 두 번 클릭 하 고 다음 줄을 찾습니다.
 
      [!code-csharp[WCFWalkthrough#4](../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/iservice1_2.cs#4)]
      [!code-vb[WCFWalkthrough#4](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/iservice1_2.vb#4)]
@@ -57,7 +57,7 @@ ms.locfileid: "65615643"
 
 4. ![Service1 파일](../data-tools/media/wcf3.png "wcf3")
 
-     **솔루션 탐색기**Service1.vb 또는 Service1.cs를 두 번 클릭 하 고 다음 줄을 찾습니다.
+     **솔루션 탐색기**에서 Service1 또는 Service1.cs를 두 번 클릭 하 고 다음 줄을 찾습니다.
 
      [!code-csharp[WCFWalkthrough#5](../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/service1_2.cs#5)]
      [!code-vb[WCFWalkthrough#5](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/service1_2.vb#5)]
@@ -71,9 +71,9 @@ ms.locfileid: "65615643"
 
 #### <a name="to-test-a-wcf-service"></a>WCF 서비스를 테스트하려면
 
-1. **F5** 키를 눌러 서비스를 실행합니다. A **WCF 테스트 클라이언트** 폼이 표시 되 고 서비스 로드 됩니다.
+1. **F5** 키를 눌러 서비스를 실행합니다. **WCF 테스트 클라이언트** 폼이 표시 되 고 서비스가 로드 됩니다.
 
-2. **WCF 테스트 클라이언트** 폼에서 **IService1** 아래의 **GetData()** 메서드를 두 번 클릭합니다. 합니다 **GetData** 탭이 표시 됩니다.
+2. **WCF 테스트 클라이언트** 폼에서 **IService1** 아래의 **GetData()** 메서드를 두 번 클릭합니다. **GetData** 탭이 표시 됩니다.
 
      ![GetData&#40; &#41; 메서드](../data-tools/media/wcf4.png "wcf4")
 
@@ -81,7 +81,7 @@ ms.locfileid: "65615643"
 
      ![값 필드](../data-tools/media/wcf5.png "wcf5")
 
-4. **호출** 단추를 클릭합니다. 경우는 **보안 경고** 대화 상자가 표시 됩니다, 클릭 **확인**합니다. 결과에 표시 됩니다는 **응답** 상자입니다.
+4. **호출** 단추를 클릭합니다. **보안 경고** 대화 상자가 표시 되 면 **확인**을 클릭 합니다. 결과는 **응답** 상자에 표시 됩니다.
 
      ![응답 상자의 결과](../data-tools/media/wcf6.png "wcf6")
 
@@ -93,17 +93,17 @@ ms.locfileid: "65615643"
 
 1. **파일** 메뉴에서 **추가**를 가리킨 다음, **새 프로젝트**를 클릭합니다.
 
-2. 에 **새 프로젝트** 대화 상자를 확장 합니다 **Visual Basic** 또는 **Visual C#** 노드를 선택 **Windows**를 선택한 다음 **Windows Forms 응용 프로그램**합니다. **확인**을 클릭하여 프로젝트를 엽니다.
+2. **새 프로젝트** 대화 상자에서 **Visual Basic** 또는 **시각적 C#**  노드를 확장 하 고 **Windows**를 선택한 다음 **Windows Forms 응용 프로그램**을 선택 합니다. **확인**을 클릭하여 프로젝트를 엽니다.
 
      ![Windows Forms 응용 프로그램 프로젝트](../data-tools/media/wcf7.png "wcf7")
 
-3. **WindowsApplication1**을 마우스 오른쪽 단추로 클릭하고 **서비스 참조 추가**를 클릭합니다. 합니다 **서비스 참조 추가** 대화 상자가 표시 됩니다.
+3. **WindowsApplication1**을 마우스 오른쪽 단추로 클릭하고 **서비스 참조 추가**를 클릭합니다. **서비스 참조 추가** 대화 상자가 표시 됩니다.
 
 4. **서비스 참조 추가** 대화 상자에서 **검색**을 클릭합니다.
 
      ![서비스 참조 추가 대화 상자](../data-tools/media/wcf8.png "wcf8")
 
-     **Service1** 에 표시 되도록 합니다 **Services** 창.
+     **서비스** 창에 **Service1** 이 표시 됩니다.
 
 5. **확인**을 클릭하여 서비스 참조를 추가합니다.
 
@@ -124,7 +124,7 @@ ms.locfileid: "65615643"
 
 5. **F5** 키를 눌러 프로젝트를 실행합니다. 텍스트를 입력하고 단추를 클릭합니다. 레이블에 "입력한 내용:"과 입력한 텍스트가 표시됩니다.
 
-     ![결과 보여주는 라이브 웹 양식](../data-tools/media/wcf10.png "wcf10")
+     ![결과를 표시 하는 폼입니다.](../data-tools/media/wcf10.png "wcf10")
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목:
  [Windows Communication Foundation 서비스 및 Visual Studio의 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

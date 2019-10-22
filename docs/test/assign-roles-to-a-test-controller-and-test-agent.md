@@ -12,12 +12,12 @@ ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dc7936041746872fdf30ce3159506d93c378376d
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: 6a5fcb489e403ff4297b4e8520346d0cc7be8361
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490595"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342338"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>역할을 테스트 컨트롤러와 테스트 에이전트에 할당
 
@@ -97,13 +97,13 @@ ms.locfileid: "69490595"
 
 ::: moniker range="vs-2017"
 
-8. 테스트 메뉴에서 **테스트 설정 파일 선택**을 선택하고 *TestSettingDistributedTestWalkthrough.testsettings*를 선택합니다.
+8. **테스트** 메뉴에서 **테스트 설정** > **테스트 설정 파일 선택**을 선택하고 *TestSettingDistributedTestWalkthrough.testsettings* 파일을 선택합니다.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-8. **테스트 탐색기**의 **설정** 단추에서 화살표를 선택하고 **설정 파일 선택**을 선택합니다. *TestSettingDistributedTestWalkthrough.testsettings* 파일을 찾아 선택합니다.
+8. **테스트** 메뉴에서 **설정 파일 선택**을 선택합니다. *TestSettingDistributedTestWalkthrough.testsettings* 파일을 찾아 선택합니다.
 
 ::: moniker-end
 

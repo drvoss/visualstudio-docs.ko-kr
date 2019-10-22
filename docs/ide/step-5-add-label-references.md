@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a076c4475b9e65d59aec08eac1774728b42cd77c
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 0fdcecbdac0a866bd5c6a15a78d8c0ba2a33051a
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118976"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289670"
 ---
 # <a name="step-5-add-label-references"></a>5단계: 레이블 참조 추가
 프로그램에서는 플레이어가 선택하는 레이블 컨트롤을 추적해야 합니다. 지금은 프로그램에 플레이어가 선택한 모든 레이블이 표시됩니다. 이는 나중에 변경할 것입니다. 첫 번째 레이블이 선택된 후 해당 레이블의 아이콘이 표시됩니다. 두 번째 레이블이 선택된 후에는 프로그램에 두 아이콘이 모두 잠깐 표시된 후 다시 숨겨집니다. 프로그램에서는 이제 ‘참조 변수’를 사용하여 첫 번째 선택한 레이블 컨트롤과 두 번째 선택한 레이블 컨트롤을 추적합니다. 
@@ -29,6 +29,9 @@ ms.locfileid: "71118976"
 
      [!code-vb[VbExpressTutorial4Step5#5](../ide/codesnippet/VisualBasic/step-5-add-label-references_1.vb)]
      [!code-csharp[VbExpressTutorial4Step5#5](../ide/codesnippet/CSharp/step-5-add-label-references_1.cs)]
+
+     > [!IMPORTANT]
+     > 이 페이지의 오른쪽 위에 있는 프로그래밍 언어 컨트롤을 사용하여 C# 코드 조각 또는 Visual Basic 코드 조각을 볼 수 있습니다.<br><br>![Docs.Microsoft.com에 대한 프로그래밍 언어 컨트롤](../ide/media/docs-programming-language-control.png)
 
      이러한 참조 변수는 이전에 폼에 개체(예: <xref:System.Windows.Forms.Timer> 개체, <xref:System.Collections.Generic.List%601> 개체 및 <xref:System.Random> 개체)를 추가할 때 사용한 문과 비슷합니다. 그러나 두 문 중 하나에 `new` 키워드가 사용되지 않았으므로 이러한 문을 통해 두 개의 추가 레이블 컨트롤이 폼에 나타나지 않습니다. `new` 키워드가 없으면 개체가 만들어지지 않습니다. `firstClicked` 및 `secondClicked`를 참조 변수라고 하는 이유는 레이블 개체를 추적(또는 참조)하기 때문입니다.
 
@@ -43,7 +46,7 @@ ms.locfileid: "71118976"
 
 4. 다음 레이블 컨트롤을 선택하면 아무것도 실행되지 않습니다. 프로그램에서는 이미 플레이어가 선택한 첫 번째 레이블을 추적하고 있으므로 `firstClicked`는 `null`(Visual C#의 경우) 또는 `Nothing`(Visual Basic의 경우)과 같지 않습니다. `if` 문에서 `firstClicked`를 검사하여 `null` 또는 `Nothing`과 같은지 여부를 확인하는 경우 같지 않음을 알게 되고 `if` 문의 문을 실행하지 않습니다. 따라서 다음 그림과 같이 첫 번째 선택한 아이콘만 검은색으로 바뀌고 다른 아이콘은 표시되지 않습니다.
 
-     ![한 아이콘만 표시된 일치 게임](../ide/media/express_tut4step5.png)
+     ![한 아이콘만 표시된 일치 게임](../ide/media/express_tut4step5.png)<br/>
 한 아이콘만 표시된 **일치 게임**
 
      자습서의 다음 단계에서 **타이머** 컨트롤을 추가하여 이 문제를 해결합니다.

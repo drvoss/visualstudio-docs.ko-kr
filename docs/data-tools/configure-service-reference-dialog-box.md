@@ -9,17 +9,17 @@ helpviewer_keywords:
 - service references [Visual Studio], configuring behavior
 - Configure Service Reference dialog box
 ms.assetid: 25e4c36b-2db6-4e71-9010-b7068255d09d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1cf4a809c1353f2fe30383a312f65b6c623083db
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 033663c347a39c63a76bddd10625bdc86cec1f00
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925678"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72642854"
 ---
 # <a name="configure-service-reference-dialog-box"></a>서비스 참조 구성 대화 상자
 
@@ -43,7 +43,7 @@ ms.locfileid: "68925678"
 
 ## <a name="uielement-list"></a>UI 요소 목록
 
-**주소**
+**Address**
 
 서비스 참조가 서비스를 검색 하는 웹 주소를 업데이트 합니다. 예를 들어 개발 중에 서비스는 개발 서버에서 호스트 된 후 나중에 프로덕션 서버로 이동 하 여 주소를 변경할 수 있습니다.
 
@@ -83,7 +83,7 @@ WCF 클라이언트가 서비스를 추가 하거나 업데이트할 때 새 형
 
 **모든 참조된 어셈블리의 형식 재사용**
 
-이를 선택 하면 가능한 경우 **참조 된 어셈블리 목록의** 모든 형식이 다시 사용 됩니다. 이 옵션은 기본적으로 선택됩니다.
+이를 선택 하면 가능한 경우 **참조 된 어셈블리 목록의** 모든 형식이 다시 사용 됩니다. 기본적으로 이 옵션이 선택됩니다.
 
 **참조된 어셈블리 중 지정된 어셈블리의 형식 재사용**
 
@@ -103,7 +103,7 @@ WCF 클라이언트가 서비스를 추가 하거나 업데이트할 때 새 형
 > [!NOTE]
 > **웹 참조 추가** 단추는 **서비스 참조 추가 대화 상자**에서 **서비스 참조 구성** 대화 상자가 표시 되는 경우에만 사용할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
-- [방법: 웹 서비스에 대 한 참조 추가](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [방법: 웹 서비스에 참조 추가](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
 - [Windows Communication Foundation 서비스 및 WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)

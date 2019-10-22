@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e310688b8305b2d5986a1b29d34895f02bc4d7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 8341a83443855f2fd90d7f5a742251fa54fc4890
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411000"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962911"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask 요소(MSBuild)
 [Task](../msbuild/task-element-msbuild.md) 요소에서 참조하는 작업을 작업의 구현이 포함된 어셈블리에 매핑합니다.
@@ -38,6 +38,9 @@ ms.locfileid: "63411000"
     TaskFactory = "ClassName"
     Condition="'String A'=='String B'" />
 ```
+
+> [!NOTE]
+> 속성 및 항목과 달리 `TaskName`에 적용되는 *첫 번째* `UsingTask` 요소가 사용되어 기존 작업 *이전*에 재정의해야 하는 `UsingTask` 작업을 재정의합니다.
 
 ## <a name="attributes-and-elements"></a>특성 및 요소
  다음 단원에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
@@ -65,7 +68,7 @@ ms.locfileid: "63411000"
 | - | - |
 | [프로젝트](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일의 필수 루트 요소입니다. |
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
  환경 변수, 명령줄 속성, 프로젝트 수준 속성 및 프로젝트 수준 항목은 직접 또는 가져온 프로젝트 파일을 통해 프로젝트 파일에 포함된 `UsingTask` 요소에서 참조할 수 있습니다. 자세한 내용은 [작업](../msbuild/msbuild-tasks.md)을 참조하세요.
 
 > [!NOTE]
@@ -73,7 +76,7 @@ ms.locfileid: "63411000"
 
  MSBuild 4.0에서는 작업 사용을 *.overridetask* 파일에서 로드할 수 있습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 `AssemblyName` 특성에서 `UsingTask` 요소를 사용하는 방법을 보여 줍니다.
 
 ```xml
@@ -89,7 +92,7 @@ ms.locfileid: "63411000"
 </UsingTask>
 ```
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 `AssemblyFile` 특성에서 `UsingTask` 요소를 사용하는 방법을 보여 줍니다.
 
 ```xml

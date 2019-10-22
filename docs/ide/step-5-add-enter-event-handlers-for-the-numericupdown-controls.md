@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8edebff5af7affebf166ea07ca7aa813037c13c2
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 7de9fafa32922792e21eb672df0aa9128c25dbe2
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118747"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314124"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>5단계: NumericUpDown 컨트롤에 대한 Enter 이벤트 처리기 추가
 
@@ -62,8 +62,7 @@ ms.locfileid: "71118747"
      [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]
 
-     > [!IMPORTANT]
-     > 이 페이지의 오른쪽 위에 있는 프로그래밍 언어 컨트롤을 사용하여 C# 코드 조각 또는 Visual Basic 코드 조각을 볼 수 있습니다.<br><br>![Docs.Microsoft.com에 대한 프로그래밍 언어 컨트롤](../ide/media/docs-programming-language-control.png)
+     [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
      이 코드는 복잡하게 보일 수 있지만 차근차근 살펴보면 쉽게 이해할 수 있습니다. 먼저 메서드의 맨 위를 살펴보면 `object sender`(Visual C#) 또는 `sender As System.Object`(Visual Basic)가 있습니다. 이 매개 변수는 이벤트를 발생시킨 개체, 즉 이벤트 전송자를 참조합니다. 이 코드에서는 전송자 개체가 NumericUpDown 컨트롤입니다. 따라서 메서드의 첫 번째 줄에서 해당 전송자가 단순히 일반 개체가 아니라 NumericUpDown 컨트롤임을 명시적으로 지정합니다. 모든 NumericUpDown 컨트롤은 개체이지만 모든 개체가 NumericUpDown 컨트롤은 아닙니다. 이 메서드에서 NumericUpDown 컨트롤의 이름은 **answerBox**입니다. 이 이름은 sum NumericUpDown 컨트롤뿐 아니라 폼의 모든 NumericUpDown 컨트롤에 사용되기 때문입니다. 이 메서드에 answerBox 변수를 선언하기 때문에 변수 범위가 이 메서드로만 한정됩니다. 다시 말해 이 메서드 내에서만 이 변수를 사용할 수 있습니다.
 

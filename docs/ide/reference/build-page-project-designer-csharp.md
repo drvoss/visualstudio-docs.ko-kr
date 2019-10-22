@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 146d98701f144aacf0ff073c3099b2239ebd1872
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 9f121c4a95d719074e3004ee21e0d49d71e4c243
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461462"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000214"
 ---
 # <a name="build-page-project-designer-c"></a>프로젝트 디자이너, 빌드 페이지(C#)
 
@@ -104,19 +104,16 @@ ms.locfileid: "68461462"
 
 다음 설정은 오류로 처리되는 경고를 지정하는 데 사용됩니다. 빌드에서 경고가 발생할 때 오류를 반환하는 조건을 지정하려면 다음 옵션 중 하나를 선택합니다. 자세한 내용은 [/warnaserror(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option)를 참조하세요.
 
-**없음**
+**없음** - 경고를 오류로 처리하지 않습니다.
 
-경고를 오류로 처리하지 않습니다.
+**모두** - 모든 경고를 오류로 처리합니다.
 
-**특정 경고**
+**특정 경고** - 지정된 경고를 오류로 처리합니다. 여러 경고 번호를 쉼표 또는 세미콜론으로 구분합니다.
 
-지정된 경고를 오류로 처리합니다. 여러 경고 번호를 쉼표 또는 세미콜론으로 구분합니다.
+> [!TIP]
+> 코드 분석 경고를 오류로 취급하지 않으려면 [코드 분석 FAQ](../../code-quality/analyzers-faq.md#treat-warnings-as-errors)를 참조하세요.
 
-**All**
-
-모든 경고를 오류로 처리합니다.
-
-## <a name="output"></a>Output
+## <a name="output"></a>출력
 
 다음 설정은 빌드 프로세스에 대한 출력 옵션을 구성하는 데 사용됩니다.
 

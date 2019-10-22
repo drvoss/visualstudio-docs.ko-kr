@@ -1,47 +1,45 @@
 ---
-title: '방법: 복수형 설정 및 해제 (O-r 디자이너) | Microsoft Docs'
+title: '방법: 복수화 설정 및 해제 (O-R 디자이너) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
 ms.topic: conceptual
 ms.assetid: 9b693bc3-303a-40a9-97ee-9cef5ca3ae81
 caps.latest.revision: 6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c8497f63e2b4dc51caa69b1babe0d707e8370aab
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: afe8c8a4429efb83c09d80a5dd00dfe08b0d63e3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704948"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665942"
 ---
-# <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>방법: 복수 적용 설정 및 해제(O/R 디자이너)
+# <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>방법: 복수형 설정 및 해제(O/R 디자이너)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-기본적으로 이름이 s 또는 ies로 끝나는 데이터베이스 개체를 끌면 **서버 탐색기**/**데이터베이스 탐색기** 에 [LINQ to SQL 도구에서 Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)에서 생성 된 엔터티 클래스의 이름이 복수형에서 단수형 변경 됩니다. 이렇게 하면 인스턴스화된 엔터티 클래스를 데이터의 단일 레코드에 매핑하는 것을 보다 정확하게 나타낼 수 있습니다. 예를 들어 Customers 테이블을 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]에 추가하면 단일 고객에 대한 데이터만 해당 클래스에 보유되므로 Customer라는 엔터티 클래스가 만들어집니다.  
-  
+기본적으로 이름이로 끝나는 데이터베이스 개체를 **서버 탐색기** /**데이터베이스 탐색기** 에서 [Visual Studio의 LINQ to SQL 도구로](../data-tools/linq-to-sql-tools-in-visual-studio2.md)끌어 오면 생성 된 엔터티 클래스의 이름이 복수형에서로 변경 됩니다. 하나만. 이렇게 하면 인스턴스화된 엔터티 클래스를 데이터의 단일 레코드에 매핑하는 것을 보다 정확하게 나타낼 수 있습니다. 예를 들어 Customers 테이블을 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]에 추가하면 단일 고객에 대한 데이터만 해당 클래스에 보유되므로 Customer라는 엔터티 클래스가 만들어집니다.
+
 > [!NOTE]
-> 복수 적용은 기본적으로 Visual Studio 영어 버전에만 적용됩니다.  
-  
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
-  
-### <a name="to-turn-pluralization-on-and-off"></a>복수 적용을 설정 및 해제하려면  
-  
-1. **도구** 메뉴에서 **옵션**을 클릭합니다.  
-  
-2. **옵션** 대화 상자에서 **데이터베이스 도구**를 확장합니다.  
-  
+> 복수 적용은 기본적으로 Visual Studio 영어 버전에만 적용됩니다.
+
+ [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
+
+### <a name="to-turn-pluralization-on-and-off"></a>복수 적용을 설정 및 해제하려면
+
+1. **도구** 메뉴에서 **옵션**을 클릭합니다.
+
+2. **옵션** 대화 상자에서 **데이터베이스 도구**를 확장합니다.
+
 > [!NOTE]
-> **데이터베이스 도구** 노드가 표시되지 않은 경우에는 **모든 설정 표시**를 선택합니다.  
-  
-1. **O/R 디자이너**를 클릭합니다.  
-  
-2. 설정 **복수 이름 적용** 하 **사용** = **False** 설정 하는 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] 클래스 이름은 변경 되지 않습니다 있도록 합니다.  
-  
-3. 설정 **복수 이름 적용** 에 **Enabled** = **True** 하면 복수 적용 규칙이 추가 된 개체의 클래스 이름에 적용할는 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]합니다.  
-  
-## <a name="see-also"></a>참고 항목  
- [LINQ to SQL 도구 Visual Studio에서](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
- [Visual Studio에서 데이터 액세스](../data-tools/accessing-data-in-visual-studio.md)
+> **데이터베이스 도구** 노드가 표시되지 않은 경우에는 **모든 설정 표시**를 선택합니다.
+
+1. **O/R 디자이너**를 클릭합니다.
+
+2. **이름 복수화** 을 **Enabled**  = **False** 로 설정 하 여 클래스 이름을 변경 하지 않도록 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]를 설정 합니다.
+
+3. **복수화 name의 이름을** **Enabled**  = **True** 로 설정 하 여 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]에 추가 된 개체의 클래스 이름에 복수화 규칙을 적용 합니다.
+
+## <a name="see-also"></a>관련 항목:
+ Visual [studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) [visual studio에서 데이터 액세스](../data-tools/accessing-data-in-visual-studio.md)

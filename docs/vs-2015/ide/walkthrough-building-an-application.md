@@ -1,22 +1,22 @@
 ---
-title: '연습: 응용 프로그램 빌드 | Microsoft Docs'
+title: '연습: 애플리케이션 빌드 | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: 4842955d-8959-4e4e-98b8-2358360179b3
 caps.latest.revision: 10
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a7b3921d9ef11ba01cad6d25f69f3a484e27c929
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: f96909d3051e18fe3992e68b44b2948d1e23ebd6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698300"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670130"
 ---
-# <a name="walkthrough-building-an-application"></a>연습: 응용 프로그램 빌드
+# <a name="walkthrough-building-an-application"></a>연습: 애플리케이션 빌드
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
@@ -24,11 +24,11 @@ ms.locfileid: "65698300"
 
 이 항목에는 다음과 같은 단원이 포함되어 있습니다.
 
-[샘플 응용 프로그램 설치](../ide/walkthrough-building-an-application.md#BKMK_installapp)
+[샘플 애플리케이션 설치](../ide/walkthrough-building-an-application.md#BKMK_installapp)
 
 [사용자 지정 빌드 구성 만들기](../ide/walkthrough-building-an-application.md#BKMK_CreateBuildConfig)
 
-[응용 프로그램 빌드](../ide/walkthrough-building-an-application.md#BKMK_building)
+[애플리케이션 빌드](../ide/walkthrough-building-an-application.md#BKMK_building)
 
 [컴파일러 경고 숨기기](../ide/walkthrough-building-an-application.md#BKMK_hidewarning)
 
@@ -36,9 +36,9 @@ ms.locfileid: "65698300"
 
 [릴리스 빌드 만들기](../ide/walkthrough-building-an-application.md#BKMK_releasebuild)
 
-## <a name="BKMK_installapp"></a> 샘플 응용 프로그램 설치
+## <a name="BKMK_installapp"></a> 샘플 애플리케이션 설치
 
-**확장 및 업데이트** 대화 상자를 사용하여 Microsoft 웹 사이트의 샘플 갤러리에서 [Introduction to Building WPF Applications](http://code.msdn.microsoft.com/Introduction-to-Building-b8d16419?SRC=VSIDE)(WPF 응용 프로그램 빌드 소개) 샘플을 찾아서 설치합니다. 샘플 갤러리에서는 애플리케이션을 계획하고 개발할 때 다운로드 및 검토할 수 있는 다양한 예제 프로젝트 및 코드를 제공합니다.
+**확장 및 업데이트** 대화 상자를 사용하여 Microsoft 웹 사이트의 샘플 갤러리에서 [Introduction to Building WPF Applications](http://code.msdn.microsoft.com/Introduction-to-Building-b8d16419?SRC=VSIDE)(WPF 애플리케이션 빌드 소개) 샘플을 찾아서 설치합니다. 샘플 갤러리에서는 애플리케이션을 계획하고 개발할 때 다운로드 및 검토할 수 있는 다양한 예제 프로젝트 및 코드를 제공합니다.
 
 #### <a name="to-install-the-sample-application"></a>샘플 애플리케이션을 설치하려면
 
@@ -50,7 +50,7 @@ ms.locfileid: "65698300"
 
     ![확장 및 업데이트 대화 상자](../ide/media/buildwalk-extensionsdialogsampledownload.png "BuildWalk_ExtensionsDialogSampleDownload")
 
-4. 결과 목록에서 **Introduction to Building WPF Applications (Visual C#)**(WPF 애플리케이션 빌드 소개(Visual C#)) 또는 **Introduction to Building WPF Applications (Visual Basic)**(WPF 애플리케이션 빌드 소개(Visual Basic))를 선택합니다.
+4. 결과 목록에서 **Introduction to Building WPF Applications (Visual C#)** (WPF 애플리케이션 빌드 소개(Visual C#)) 또는 **Introduction to Building WPF Applications (Visual Basic)** (WPF 애플리케이션 빌드 소개(Visual Basic))를 선택합니다.
 
 5. **다운로드** 단추를 선택하고 나서 **닫기** 단추를 선택합니다.
 
@@ -60,13 +60,13 @@ ms.locfileid: "65698300"
 
 1. **새 프로젝트** 대화 상자를 엽니다.
 
-     ![메뉴 모음에서 파일, 새로 만들기, 프로젝트를 차례로 선택합니다.](../ide/media/exploreide-filenewproject.png "ExploreIDE-FileNewProject")
+     ![메뉴 모음에서 [파일], [새로 만들기], [프로젝트]를 선택합니다.](../ide/media/exploreide-filenewproject.png "Exploreide-newprojectcsharp-FileNewProject")
 
-2. **설치됨** 범주에서 **샘플** 범주를 선택하여 Introduction to Building WPF Applications(WPF 응용 프로그램 빌드 소개) 샘플을 표시합니다.
+2. **설치됨** 범주에서 **샘플** 범주를 선택하여 Introduction to Building WPF Applications(WPF 애플리케이션 빌드 소개) 샘플을 표시합니다.
 
 3. Visual C#의 경우 솔루션 이름을 `IntroWPFcsharp`로 지정합니다.
 
-     ![새 프로젝트 대화 상자, 설치된 샘플](../ide/media/buildwalk-newprojectdlgintrotowpfsample.png "BuildWalk_NewProjectdlgIntrotoWPFsample")
+     ![새 프로젝트 대화 상자, 설치 된 샘플](../ide/media/buildwalk-newprojectdlgintrotowpfsample.png "BuildWalk_NewProjectdlgIntrotoWPFsample")
 
      또는
 
@@ -86,7 +86,7 @@ ms.locfileid: "65698300"
 
 1. **구성 관리자** 대화 상자를 엽니다.
 
-    ![빌드 메뉴, 구성 관리자 명령](../ide/media/buildwalk-configurationmanagerdialogbox.png "BuildWalk_ConfigurationManagerDialogBox")
+    ![빌드 메뉴, Configuration Manager 명령](../ide/media/buildwalk-configurationmanagerdialogbox.png "BuildWalk_ConfigurationManagerDialogBox")
 
 2. **활성 솔루션 구성** 목록에서 **새로 만들기**를 선택합니다.
 
@@ -104,13 +104,13 @@ ms.locfileid: "65698300"
 
    활성 솔루션 구성이 Test로 변경되고 활성 솔루션 플랫폼이 x64로 설정되었습니다.
 
-   ![테스트 구성이 있는 구성 관리자](../ide/media/buildwalk-configmanagertestconfig.png "BuildWalk_ConfigManagerTestconfig")
+   ![테스트 구성으로 Configuration Manager](../ide/media/buildwalk-configmanagertestconfig.png "BuildWalk_ConfigManagerTestconfig")
 
    **표준** 도구 상자에서 **솔루션 구성** 목록을 사용하여 활성 솔루션 구성을 빠르게 확인하거나 변경할 수 있습니다.
 
    ![솔루션 구성 옵션 표준 도구 모음](../ide/media/buildwalk-standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")
 
-## <a name="BKMK_building"></a> 응용 프로그램 빌드
+## <a name="BKMK_building"></a> 애플리케이션 빌드
 
 다음에는 사용자 지정 빌드 구성을 사용하여 솔루션을 빌드합니다.
 
@@ -122,11 +122,11 @@ ms.locfileid: "65698300"
 
   그림 1: Visual Basic 경고
 
-  ![출력 창(Visual Basic)](../ide/media/buildwalk-vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")
+  ![출력 창 Visual Basic](../ide/media/buildwalk-vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")
 
   그림 2: Visual C# 경고
 
-  ![출력 창(Visual C&#35;)](../ide/media/buildwalk-csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")
+  ![출력 창 Visual C&#35;](../ide/media/buildwalk-csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")
 
 ## <a name="BKMK_hidewarning"></a> 컴파일러 경고 숨기기
 
@@ -172,7 +172,7 @@ ms.locfileid: "65698300"
 
    ![출력 창, Visual Basic 빌드 경고](../ide/media/buildwalk-visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")
 
-   자세한 내용은 [방법: 컴파일러 경고 표시 안 함](../ide/how-to-suppress-compiler-warnings.md)합니다.
+   자세한 내용은 [방법: 컴파일러 경고 표시 안 함](../ide/how-to-suppress-compiler-warnings.md)을 참조하세요.
 
 ## <a name="BKMK_outputdetails"></a> 출력 창에 추가 빌드 세부 정보 표시
 
@@ -185,7 +185,7 @@ ms.locfileid: "65698300"
 
 1. **옵션** 대화 상자를 엽니다.
 
-    ![도구 메뉴의 옵션 명령](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE-ToolsOptionsmenu")
+    ![도구 메뉴의 옵션 명령](../ide/media/exploreide-toolsoptionsmenu.png "Exploreide-newprojectcsharp-ToolsOptionsmenu")
 
 2. **프로젝트 및 솔루션** 범주를 선택하고 나서 **빌드 및 실행** 페이지를 선택합니다.
 
@@ -204,13 +204,13 @@ ms.locfileid: "65698300"
    > [!TIP]
    > Ctrl+F 키를 선택하여 **찾기** 대화 상자를 표시하면 **출력** 창의 내용을 검색할 수 있습니다.
 
-   자세한 내용은 [방법: 보기, 저장 및 빌드 로그 파일 구성](../ide/how-to-view-save-and-configure-build-log-files.md)합니다.
+   자세한 내용은 [방법: 빌드 로그 파일 보기, 저장 및 구성](../ide/how-to-view-save-and-configure-build-log-files.md)을 참조하세요.
 
 ## <a name="BKMK_releasebuild"></a> 릴리스 빌드 만들기
 
 전달에 최적화된 샘플 애플리케이션 버전을 빌드할 수 있습니다. 릴리스 빌드의 경우 빌드가 시작되기 전에 실행 파일이 네트워크 공유에 복사되도록 지정합니다.
 
-자세한 내용은 [방법: 빌드 출력 디렉터리 변경](../ide/how-to-change-the-build-output-directory.md) 하 고 [프로젝트와 Visual Studio에서 솔루션 빌드 및 정리](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)합니다.
+자세한 내용은 [방법: 빌드 출력 디렉터리 변경](../ide/how-to-change-the-build-output-directory.md) 및 [Visual Studio에서 프로젝트 및 솔루션 빌드 및 정리](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)를 참조하세요.
 
 #### <a name="to-specify-a-release-build-for-visual-basic"></a>Visual Basic에 대한 릴리스 빌드를 지정하려면
 
@@ -233,9 +233,9 @@ ms.locfileid: "65698300"
 
 6. 애플리케이션을 빌드합니다.
 
-     ![빌드 메뉴의 솔루션 빌드 명령](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+     ![빌드 메뉴에서 솔루션 빌드 명령](../ide/media/exploreide-buildsolution.png "Exploreide-newprojectcsharp-BuildSolution")
 
-#### <a name="to-specify-a-release-build-for-visual-c"></a>Visual C에 대 한 릴리스 빌드를 지정 하려면\#
+#### <a name="to-specify-a-release-build-for-visual-c"></a>Visual C에 대 한 릴리스 빌드를 지정 하려면 \#
 
 1. **프로젝트 디자이너**를 엽니다.
 
@@ -256,13 +256,13 @@ ms.locfileid: "65698300"
 
 6. 애플리케이션을 빌드합니다.
 
-    ![빌드 메뉴의 솔루션 빌드 명령](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+    ![빌드 메뉴에서 솔루션 빌드 명령](../ide/media/exploreide-buildsolution.png "Exploreide-newprojectcsharp-BuildSolution")
 
    실행 파일이 지정한 네트워크 경로에 복사됩니다. 해당 경로는 \\\myserver\builds\\*FileName*.exe입니다.
 
    축하합니다. 이 연습을 완료했습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목:
 
 - [연습: 프로젝트 빌드(C++)](https://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)
 - [ASP.NET 웹 애플리케이션 프로젝트 미리 컴파일 개요](https://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)

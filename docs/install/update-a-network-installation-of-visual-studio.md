@@ -1,7 +1,7 @@
 ---
 title: 네트워크 기반 설치 업데이트
 description: --layout 명령을 사용하여 네트워크 기반 Visual Studio 설치를 업데이트하는 방법 알아보기
-ms.date: 03/30/2019
+ms.date: 10/07/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fd7277c4c42856ceea5e4da0a45d54613bf66c74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2157a6142f95b6ffe34503a8ee80419fcb9ca506
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971370"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018816"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Visual Studio의 네트워크 기반 설치 업데이트
 
@@ -42,7 +42,7 @@ ms.locfileid: "62971370"
 
 ::: moniker-end
 
-레이아웃을 파일 공유에서 호스트하는 경우 개인 레이아웃 복사본(예: c:\vsoffline)을 업데이트하고 업데이트된 콘텐츠가 모두 다운로드된 다음, 해당 복사본을 파일 공유(예: \\server\products\VS)로 복사합니다. 이 작업을 하지 않으면 레이아웃이 업데이트되는 동안 설치 프로그램을 실행하는 사용자가 레이아웃에서 일부 콘텐츠를 가져오지 못할 수 있습니다. 이는 레이아웃이 완전히 업데이트되지 않았기 때문입니다.
+레이아웃을 파일 공유에서 호스트하는 경우 프라이빗 레이아웃 복사본(예: c:\VSLayout)을 업데이트하고 업데이트된 콘텐츠가 모두 다운로드된 다음, 해당 복사본을 파일 공유(예: \\server\products\VS)로 복사합니다. 이 작업을 하지 않으면 레이아웃이 업데이트되는 동안 설치 프로그램을 실행하는 사용자가 레이아웃에서 일부 콘텐츠를 가져오지 못할 수 있습니다. 이는 레이아웃이 완전히 업데이트되지 않았기 때문입니다.
 
 레이아웃을 만든 다음, 업데이트하는 방법에 대한 몇 가지 예를 살펴보겠습니다.
 
@@ -122,7 +122,7 @@ vs_enterprise.exe --layout <layoutDir> --verify
 vs_enterprise.exe는 layoutDir 내에서 호출할 수 있습니다.
 
 > [!NOTE]
-> `--verify` 옵션에 필요한 몇 가지 중요한 메타데이터 파일이 레이아웃 오프라인 캐시에 있어야 합니다. 이러한 메타데이터 파일을 사용할 수 없으면 “--verify”가 실행될 수 없고 설치 프로그램에서 오류가 발생합니다. 이 오류가 발생하는 경우 새 오프라인 레이아웃을 다른 폴더나 같은 오프라인 캐시 폴더에 다시 만듭니다. 이렇게 하려면 초기 오프라인 레이아웃을 만드는 데 사용한 동일한 레이아웃 명령을 실행합니다. 예를 들어, `vs_enterprise.exe --layout <layoutDir>`을 입력합니다.
+> `--verify` 옵션에 필요한 몇 가지 중요한 메타데이터 파일이 레이아웃 오프라인 캐시에 있어야 합니다. 이러한 메타데이터 파일을 사용할 수 없으면 “--verify”가 실행될 수 없고 설치 프로그램에서 오류가 발생합니다. 이 오류가 발생하는 경우 새 오프라인 레이아웃을 다른 폴더나 같은 오프라인 캐시 폴더에 다시 만듭니다. 이렇게 하려면 초기 오프라인 레이아웃을 만드는 데 사용한 동일한 레이아웃 명령을 실행합니다. 예: `vs_enterprise.exe --layout <layoutDir>`.
 
 Microsoft에서 Visual Studio 업데이트를 정기적으로 제공하므로, 만드는 새 레이아웃은 초기 레이아웃과 버전이 같지 않을 수 있습니다.
 

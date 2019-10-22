@@ -14,12 +14,12 @@ ms.assetid: 5d88c93d-e5b5-4b11-9bb5-bf1a5e41ccc3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 501496c4f1bb929308ffbb75c6572de3d3f5b33b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1611596d844d43ef72663154dc48791830dfe29f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006368"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573728"
 ---
 # <a name="object-expected"></a>개체가 필요합니다.
 `Object`가 아닌 다른 형식의 개체에 대해 메서드 또는 속성을 호출하려고 했거나, `Object`가 필요할 때 `Object`가 아닌 다른 형식의 인수를 전달했습니다.  
@@ -46,6 +46,6 @@ ms.locfileid: "63006368"
     }  
     ```  
   
-## <a name="see-also"></a>참고 항목  
- [Object 개체](../../javascript/reference/object-object-javascript.md)   
+## <a name="see-also"></a>참조  
+ [개체 개체](../../javascript/reference/object-object-javascript.md)    
  [개체 및 배열](../../javascript/objects-and-arrays-javascript.md)

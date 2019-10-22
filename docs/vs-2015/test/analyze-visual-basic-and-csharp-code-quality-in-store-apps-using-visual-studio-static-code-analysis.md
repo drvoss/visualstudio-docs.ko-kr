@@ -8,15 +8,15 @@ f1_keywords:
 - vs.codeanalysis.propertypages.csvb.express
 ms.assetid: cab553fc-19a9-4cbf-858e-8200258ffe50
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7510b7fac5dfc633b88bd9f53347118a02227b92
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: cfe5ed57bfc361b711ed2aceceff2aabfc44cf4e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416649"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660731"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Visual Studio 정적 코드 분석을 사용하여 스토어 앱의 Visual Basic 및 C# 코드 품질 분석
 
@@ -60,7 +60,7 @@ Windows 및 Windows Phone]에 적용 됩니다. /Image/windows_and_phone_content
 ## <a name="BKMK_Analyze"></a> 코드 분석 경고 분석 및 해결
  특정 경고를 분석하려면 코드 분석 창에서 경고 제목을 클릭합니다. 경고가 확장되어 문제에 대한 자세한 정보가 표시됩니다.
 
- ![확장된 코드 분석 경고](../test/media/ca-managed-callouts.png "CA_Managed_Callouts")
+ ![확장 된 코드 분석 경고](../test/media/ca-managed-callouts.png "CA_Managed_Callouts")
 
  경고를 확장하면 Visual Studio 코드 편집기에 경고를 발생시킨 코드 줄이 강조 표시됩니다.
 
@@ -91,7 +91,7 @@ Windows 및 Windows Phone]에 적용 됩니다. /Image/windows_and_phone_content
 ## <a name="BKMK_Search"></a> 코드 분석 결과 검색 및 필터링
  긴 경고 메시지 목록을 검색하고 다중 프로젝트 솔루션에서 경고를 필터링할 수 있습니다.
 
- ![코드 분석 검색 및 필터 창](../test/media/ca-searchfilter.png "CA_SearchFilter")
+ ![코드 분석 창 검색 및 필터링](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
  [!INCLUDE[vs_dev11_expwin_long](../includes/vs-dev11-expwin-long-md.md)]에서는 모든 코드 분석 경고마다 경고의 심각도 수준이 있습니다.
 

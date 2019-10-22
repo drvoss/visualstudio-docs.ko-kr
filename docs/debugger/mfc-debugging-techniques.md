@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f2cd5345de8dfe62e56722a8e36713c6062b3cb
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 1380cf2cfd4d1ffe729fdd4a6ce9cfb2ba7d9ab6
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693040"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72435649"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC 디버깅 기술
 다음은 MFC 프로그램을 디버깅하는 데 유용한 디버깅 기술입니다.
@@ -97,7 +97,7 @@ TRACE( "x = %d and y = %d\n", x, y );
 TRACE( "x = %d and y = %x and z = %f\n", x, y, z );
 ```
 
-TRACE 매크로 char 모두를 적절히 처리\* wchar_t 및\* 매개 변수입니다. 다음 예제에서는 TRACE 매크로와 다른 형식의 문자열 매개 변수를 함께 사용하는 방법을 보여 줍니다.
+TRACE 매크로는 char \* 및 wchar_t \* 매개 변수를 적절 하 게 처리 합니다. 다음 예제에서는 TRACE 매크로와 다른 형식의 문자열 매개 변수를 함께 사용하는 방법을 보여 줍니다.
 
 ```cpp
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);
@@ -185,7 +185,7 @@ MFC 프레임워크의 디버그 버전은 자동으로 `DEBUG_NEW` 를 사용�
     #endif
     ```
 
-    메모리를 검사 문을으로 묶어야 **#ifdef _DEBUG / #endif** 프로그램의 디버그 버전 에서만에서 컴파일되지 않도록 차단 합니다.
+    메모리 검사 문은 프로그램의 디버그 버전 에서만 컴파일되도록 **#ifdef _debug/#endif** 블록으로 대괄호로 묶입니다.
 
     이제 메모리 누수가 확인되었으므로 다른 멤버 함수인 [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure#dumpstatistics) 를 사용하여 해당 위치를 찾을 수 있습니다.
 
@@ -227,7 +227,7 @@ free 블록은 `afxMemDF` 가 `delayFreeMemDF`로 설정되면 할당 취소가 
 [항목 내용](#BKMK_In_this_topic)
 
 ### <a name="BKMK_Taking_object_dumps"></a> 개체 덤프 수행
-MFC 프로그램에서 사용할 수 있습니다 [cmemorystate:: Dumpallobjectssince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) 할당이 취소 되지 않은 힙에서 모든 개체의 설명을 덤프할 수 있습니다. `DumpAllObjectsSince` 는 마지막 [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint)를 단순히 호출할 뿐입니다. `Checkpoint` 를 호출할 수 없는 경우 `DumpAllObjectsSince` 가 현재 메모리에 있는 모든 개체와 비개체를 덤프합니다.
+MFC 프로그램에서 [Cmemorystate::D umpallobjectssince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) 를 사용 하 여 할당이 취소 되지 않은 힙의 모든 개체에 대 한 설명을 덤프할 수 있습니다. `DumpAllObjectsSince` 는 마지막 [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint)를 단순히 호출할 뿐입니다. `Checkpoint` 를 호출할 수 없는 경우 `DumpAllObjectsSince` 가 현재 메모리에 있는 모든 개체와 비개체를 덤프합니다.
 
 > [!NOTE]
 > MFC 개체를 덤프하려면 먼저 [진단 추적을 활성화](#BKMK_Enabling_memory_diagnostics)해야 합니다.
@@ -413,16 +413,16 @@ pMyPerson->Dump( afxDump );
 ## <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> MFC 디버그 빌드 크기 줄이기
 대형 MFC 애플리케이션의 디버그 정보는 디스크 공간을 많이 차지할 수 있습니다. 다음 절차 중 하나를 사용하여 크기를 줄일 수 있습니다.
 
-1. 사용 하 여 MFC 라이브러리를 다시 작성 합니다 [/z7, /Zi, /ZI (디버그 정보 형식)](/cpp/build/reference/z7-zi-zi-debug-information-format) 옵션을 대신 **/z7**합니다. 이 옵션은 전체 라이브러리의 디버그 정보가 있는 프로그램 데이터베이스(PDB) 파일 하나를 빌드하여 중복을 없애고 공간을 절약합니다.
+1. **/Z7**대신 [/z7,/zi,/Zi (디버그 정보 형식)](/cpp/build/reference/z7-zi-zi-debug-information-format) 옵션을 사용 하 여 MFC 라이브러리를 다시 빌드합니다. 이 옵션은 전체 라이브러리의 디버그 정보가 있는 프로그램 데이터베이스(PDB) 파일 하나를 빌드하여 중복을 없애고 공간을 절약합니다.
 
-2. 디버그 정보 없이 MFC 라이브러리를 다시 작성 (없습니다 [/z7, /Zi, /ZI (디버그 정보 형식)](/cpp/build/reference/z7-zi-zi-debug-information-format) 옵션). 이 경우 디버그 정보가 부족하여 MFC 라이브러리 코드의 디버거 기능을 대부분 사용할 수 없지만 MFC 라이브러리는 이미 모두 디버깅된 상태이므로 문제가 되지 않습니다.
+2. 디버그 정보 ( [/Z7,/zi,/zi (디버그 정보 형식)](/cpp/build/reference/z7-zi-zi-debug-information-format) 옵션 없음)를 사용 하지 않고 MFC 라이브러리를 다시 빌드합니다. 이 경우 디버그 정보가 부족하여 MFC 라이브러리 코드의 디버거 기능을 대부분 사용할 수 없지만 MFC 라이브러리는 이미 모두 디버깅된 상태이므로 문제가 되지 않습니다.
 
 3. 아래에 설명된 대로 선택한 모듈의 디버그 정보로 사용자 고유의 애플리케이션을 빌드합니다.
 
     [항목 내용](#BKMK_In_this_topic)
 
 ### <a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a> 선택한 모듈의 디버그 정보를 사용하여 MFC 응용 프로그램 빌드
-MFC 디버그 라이브러리를 사용하여 선택한 모듈을 빌드하면 이 모듈에서 단계별 실행 및 다른 디버그 기능을 사용할 수 있습니다. 이 프로시저는 Visual C++ 메이크파일의 디버그 모드와 릴리스 모드를 모두 사용하기 때문에 다음 단계와 같이 변경해야 하며 전체 릴리스 빌드가 필요한 경우에는 "모두 다시 빌드"해야 합니다.
+MFC 디버그 라이브러리를 사용하여 선택한 모듈을 빌드하면 이 모듈에서 단계별 실행 및 다른 디버그 기능을 사용할 수 있습니다. 이 절차에서는 프로젝트의 디버그 및 릴리스 구성을 모두 사용 하므로 다음 단계에서 설명 하는 변경 내용이 적용 됩니다. 또한 전체 릴리스 빌드가 필요한 경우에는 "모두 다시 빌드"를 수행 해야 합니다.
 
 1. 솔루션 탐색기에서 프로젝트를 선택합니다.
 
@@ -438,7 +438,7 @@ MFC 디버그 라이브러리를 사용하여 선택한 모듈을 빌드하면 �
 
    4. **다음에서 설정 복사** 목록에서 **릴리스**를 선택합니다.
 
-   5. 클릭 **확인** 닫으려면 합니다 **새 프로젝트 구성** 대화 상자.
+   5. **확인** 을 클릭 하 여 **새 프로젝트 구성** 대화 상자를 닫습니다.
 
    6. **구성 관리자** 대화 상자를 닫습니다.
 
@@ -480,5 +480,5 @@ MFC 디버그 라이브러리를 사용하여 선택한 모듈을 빌드하면 �
 
    [항목 내용](#BKMK_In_this_topic)
 
-## <a name="see-also"></a>참고 항목
-[Visual C++ 디버깅](../debugger/debugging-native-code.md)
+## <a name="see-also"></a>관련 항목:
+[네이티브 코드 디버그](../debugger/debugging-native-code.md)

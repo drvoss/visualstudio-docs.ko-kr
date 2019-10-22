@@ -1,5 +1,5 @@
 ---
-title: 주석이 종결 되지 않았습니다. | Microsoft Docs
+title: 종결 되지 않은 주석 | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,15 +14,15 @@ ms.assetid: d4286315-814b-4966-b4c4-1ee19d796eff
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5bf7c570c832fb5db5489a2a9f9bec459f26f0a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 22bda5d6baabe8874d7514c137ddbcb3e11eb23b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63005957"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572515"
 ---
 # <a name="unterminated-comment"></a>종결되지 않은 주석입니다.
-여러 줄의 주석 블록을 시작 해도 제대로 종료 되지 않았습니다. 여러 줄 주석을로 시작는 "/\*" 조합과로 끝나야 "\*/" 조합 합니다. 예를 들면 다음과 같습니다.  
+여러 줄 주석 블록을 시작 했지만 제대로 종료 되지 않았습니다. 여러 줄 주석은 "/*" 조합으로 시작 하 고 역방향 "\*/" 조합으로 끝납니다. 예를 들면 다음과 같습니다.  
   
 ```JavaScript  
 /* This is a comment  
@@ -31,7 +31,7 @@ This is another part of the same comment.*/
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
-- 여러 줄의 주석을 종결 합니다 "*/"입니다.  
+- "*/"를 사용 하 여 여러 줄로 된 주석을 종료 해야 합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [Comment 문](../../javascript/reference/comment-statements-javascript.md)

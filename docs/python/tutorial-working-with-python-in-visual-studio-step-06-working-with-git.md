@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8d71f9e145d78d1d1bf7f6e9bb132e9fc084afd0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cd8ebd706d9228d23eb5d5ce3b1429063bae55e5
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810500"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289710"
 ---
 # <a name="step-6-work-with-git"></a>6단계: Git 작업
 
@@ -56,7 +56,7 @@ Visual Studio는 GitHub 및 Azure Repos 등의 서비스에서 로컬 Git 리포
 
 원격 Git 리포지토리에서 프로젝트를 만드는 짧은 연습은 [빠른 시작: Visual Studio에서 Python 코드의 리포지토리 복제](quickstart-03-python-in-visual-studio-project-from-repository.md)를 참조하세요.
 
-병합 충돌 처리, 끌어오기 요청으로 코드 검토, 기준 주소 다시 지정, 분기 간에 변경 내용 cherry-pick 등을 포함하는 훨씬 더 포괄적인 자습서는 [Git 및 Azure Repos 시작하기](/azure/devops/repos/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json&view=vsts&tabs=visual-studio)를 참조하세요.
+병합 충돌 처리, 끌어오기 요청으로 코드 검토, 기준 주소 다시 지정, 분기 간에 변경 내용 cherry-pick 등을 포함하는 훨씬 더 포괄적인 자습서는 [Git 및 Azure Repos 시작하기](/azure/devops/repos/git/gitquickstart)를 참조하세요.
 
 ## <a name="tutorial-review"></a>자습서 검토
 

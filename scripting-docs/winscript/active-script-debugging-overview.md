@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 31fb3f5bf88b0caf179a43d02358bb6a9f1a2831
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a8c06477b7cd9d069e416cfd7d86a8cd0cb7bfd5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975782"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572273"
 ---
 # <a name="active-script-debugging-overview"></a>액티브 스크립트 디버깅 개요
 액티브 스크립트 디버깅 인터페이스는 언어 중립적, 호스트 중립적 디버깅을 허용하고 다양한 개발 환경을 지원합니다.  
@@ -291,5 +291,5 @@ ms.locfileid: "62975782"
   [ISimpleConnectionPoint 인터페이스](../winscript/reference/isimpleconnectionpoint-interface.md)  
   특정 연결 지점에서 발생한 이벤트를 설명하고 열거하는 간단한 방법을 스크립트 엔진에 제공합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [액티브 스크립트 디버거 인터페이스](../winscript/reference/active-script-debugger-interfaces.md)

@@ -21,15 +21,15 @@ helpviewer_keywords:
 - custom layouts
 ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
 caps.latest.revision: 30
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 84967c8aeb5319d748ff42d051f0f63dad1d9b12
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 509ec978815ae57e548188941a8de24c5f36d77e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65701261"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665830"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Visual Studio에서 창 레이아웃 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Visual Studio에서 창의 위치, 크기 및 동작을 사용자 지정하여 �
 ## <a name="kinds-of-windows"></a>창 종류
 
 ### <a name="tool-and-document-windows"></a>도구 및 문서 창
- IDE에는 두 가지 기본적인 창 유형인 *도구 창* 과 *문서 창*이 있습니다. 도구 창에는 솔루션 탐색기, 서버 탐색기, 출력 창, 오류 목록, 디자이너, 디버거 창 등이 포함됩니다. 문서 창에는 소스 코드 파일, 임의의 텍스트 파일, 구성 파일 등이 포함됩니다. 도구 창은 크기를 조정하고 제목 표시줄을 사용하여 끌 수 있습니다. 문서 창은 탭을 사용하여 끌 수 있습니다. 탭이나 제목 표시줄을 마우스 오른쪽 단추로 클릭하여 창에 대한 다른 옵션을 설정할 수 있습니다.
+ IDE에는 두 가지 기본적인 창 유형인 *도구 창* 과 *문서 창*이 있습니다. 도구 창에는 솔루션 탐색기, 서버 탐색기, 출력 창, 오류 목록, 디자이너, 디버거 창 등이 포함됩니다. 문서 창에는 소스 코드 파일, 임의의 텍스트 파일, 구성 파일 등이 포함됩니다. 도구 창은 크기를 조정하고 제목 표시줄을 사용하여 끌 수 있습니다. 문서 창은 탭으로 끌 수 있습니다. 탭 또는 제목 표시줄을 마우스 오른쪽 단추로 클릭 하 여 창에서 다른 옵션을 설정할 수 있습니다.
 
  **창** 메뉴에는 IDE에서 창을 도킹하고, 부동 창으로 변경하고, 숨기기 위한 옵션이 표시됩니다. 창 탭이나 제목 표시줄을 마우스 오른쪽 단추로 클릭하여 해당 특정 창에 대한 추가 옵션을 표시할 수 있습니다. 특정 도구 창의 인스턴스를 한번에 두 개 이상 표시할 수 있습니다. 예를 들어 웹 브라우저 창을 두 개 이상 표시할 수 있으며 **창** 메뉴에서 **새 창** 을 선택하여 일부 도구 창의 인스턴스를 추가로 만들 수 있습니다.
 
@@ -98,7 +98,7 @@ Visual Studio에서 창의 위치, 크기 및 동작을 사용자 지정하여 �
 
  다음 그림에서는 새로운 위치에 도킹되는 솔루션 탐색기를 보여 줍니다. 파란색 음영 영역으로 표시되어 있습니다.
 
- ![솔루션 탐색기를 새 위치에 도킹](../ide/media/vs2015-dock-diamond.png "VS2015_Dock_diamond")
+ ![새 위치에 솔루션 탐색기 도킹](../ide/media/vs2015-dock-diamond.png "VS2015_Dock_diamond")
 
 ### <a name="closing-and-auto-hiding-tool-windows"></a>도구 창 닫기 및 자동 숨기기
  제목 표시줄의 오른쪽 위에서 X를 클릭하여 도구 창을 닫을 수 있습니다. 창을 다시 열려면 바로 가기 키나 메뉴 명령을 사용합니다. 도구 창은 다른 창을 사용할 때 방해가 되지 않도록 창을 이동시키는 자동 숨기기라는 기능을 지원합니다. 창이 자동으로 숨겨지면 창의 이름이 IDE의 가장자리에 있는 탭에 나타납니다. 창을 다시 사용하려면 창이 다시 표시되도록 탭을 가리킵니다.
@@ -163,7 +163,7 @@ Visual Studio에서 창의 위치, 크기 및 동작을 사용자 지정하여 �
 
      사무실에는 다중 모니터가 설정되어 있고 집에는 단일 모니터 랩톱이 있는 경우 각 컴퓨터에 최적화된 레이아웃을 만들 수 있습니다.
 
-     참고: 단일 모니터 시스템에서 다중 모니터 레이아웃을 적용한 경우 두 번째 모니터에 배치한 부동 창은 Visual Studio 창 뒤로 숨겨집니다. Alt+Tab을 눌러 창을 전면으로 가져올 수 있습니다. 나중에 다중 모니터에서 Visual Studio를 열 경우 레이아웃을 다시 적용하여 지정된 위치로 창을 복원할 수 있습니다.
+     참고: 단일 모니터 시스템에서 다중 모니터 레이아웃을 적용한 경우 두 번째 모니터에 배치한 부동 창은 Visual Studio 창 뒤로 숨겨집니다. Alt + Tab을 눌러 창을 전면으로 가져올 수 있습니다. 나중에 여러 모니터를 사용 하 여 Visual Studio를 열 경우 레이아웃을 다시 적용 하 여 지정 된 위치로 창을 복원할 수 있습니다.
 
 ##### <a name="manage-and-roam-your-layouts"></a>레이아웃 관리 및 로밍
 
@@ -180,6 +180,6 @@ Visual Studio에서 창의 위치, 크기 및 동작을 사용자 지정하여 �
 |제목|설명|
 |-----------|-----------------|
 |[창 종류](../misc/kinds-of-windows.md)|IDE의 도구 창과 문서 창 사이의 차이점에 대해 설명합니다.|
-|[방법: 창 정렬 및 고정](../misc/how-to-arrange-and-dock-windows.md)|창을 도킹하거나, 자동으로 숨기거나, 바둑판식으로 배열하는 방법과 창 레이아웃을 다시 설정하는 방법을 설명합니다.|
+|[방법: 창 정렬 및 도킹](../misc/how-to-arrange-and-dock-windows.md)|창을 도킹하거나, 자동으로 숨기거나, 바둑판식으로 배열하는 방법과 창 레이아웃을 다시 설정하는 방법을 설명합니다.|
 |[방법: IDE에서 이동](../ide/how-to-move-around-in-the-visual-studio-ide.md)|IDE에서 열린 창 사이를 사용 순서에 따라 순환하는 방법을 설명합니다. 특정 문서로 이동하는 방법에 대해서도 설명합니다.|
 |[Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|설정 조합에 대한 정보를 제공하고 설정이 창 레이아웃, 바로 가기 키 및 IDE의 기타 요소에 어떤 영향을 주는지 설명합니다.|

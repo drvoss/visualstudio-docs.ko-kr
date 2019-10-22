@@ -3,17 +3,17 @@ title: XML 데이터 사용 시 보안 고려 사항
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fce2b708-1aef-454f-be59-52b76f359351
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe4ec69f879478566cce8d077bb66b34da86f3d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a0eb38118f7e71bd8cab0cf3faf367c01700cae0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926772"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604594"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>XML 데이터로 작업할 때의 보안 고려 사항
 
@@ -41,6 +41,6 @@ XSLT 디버거는 관리되는 Visual Studio 디버그 엔진 및 <xref:System.X
 
 - 관리되는 디버그 엔진에서 XSLT 식 계산기를 로드합니다. 관리되는 디버그 엔진은 모든 코드가 사용자의 로컬 컴퓨터에서 실행된다고 가정합니다. 따라서 <xref:System.Xml.Xsl.XslCompiledTransform> 클래스는 XSLT 파일을 사용자의 로컬 컴퓨터로 다운로드합니다. 제한된 권한으로 새 애플리케이션 도메인에서 모든 XSLT 변형을 실행하면 실행 권한을 높일 수 있는 가능성이 적어집니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [애플리케이션 도메인](/dotnet/framework/app-domains/application-domains)

@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
 - Live Unit Testing What's New
-author: rpetrusha
-ms.author: ronpet
+author: gewarren
+ms.author: gewarren
 ms.workload:
 - dotnet
 monikerRange: vs-2017
-ms.openlocfilehash: 86ed90e6a4fe211d162f12785b0f3f555802ad17
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6a96089de8f9998c12cbc2e12765d128b1d2195b
+ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823761"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72262273"
 ---
 # <a name="whats-new-in-live-unit-testing-for-visual-studio-2017"></a>Visual Studio 2017 Live Unit Testing의 새로운 기능
 
@@ -26,7 +26,7 @@ ms.locfileid: "67823761"
 
 Visual Studio 2017 버전 15.4부터 시작하는 Live Unit Testing은 다양한 영역에서 개선 사항 및 향상된 기능을 포함합니다.
 
-- **향상된 검색 기능** Live Unit Testing이 존재하는지 알지 못하는 사용자의 경우 Visual Studio IDE는 사용자가 단위 테스트를 포함하지만 Live Unit Testing이 활성화되지 솔루션을 열 때마다 Live Unit Testing을 언급하는 금색 표시줄을 표시합니다. 금색 표시줄에 표시된 정보를 통해 사용자는 Live Unit Testing에 대해 자세히 알아보고 활성화할 수 있습니다. 또한 금색 표시줄은 Live Unit Testing 필수 구성 요소가 만족되지 않는 경우 정보를 표시합니다. 여기에는 다음이 포함됩니다.
+- **향상된 검색 기능** Live Unit Testing이 존재하는지 알지 못하는 사용자의 경우 Visual Studio IDE는 사용자가 단위 테스트를 포함하지만 Live Unit Testing이 활성화되지 솔루션을 열 때마다 Live Unit Testing을 언급하는 금색 표시줄을 표시합니다. 금색 표시줄에 표시된 정보를 통해 사용자는 Live Unit Testing에 대해 자세히 알아보고 활성화할 수 있습니다. 또한 금색 표시줄은 Live Unit Testing 필수 구성 요소가 만족되지 않는 경우 정보를 표시합니다. 내용은 다음과 같습니다.
 
   - 테스트 어댑터가 누락되어 있습니다.
   - 이전 버전의 테스트 어댑터가 있습니다.

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bfe750e8dca68876ac5d894c0ca194f82a42f21
-ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
+ms.openlocfilehash: ca5a80c07cb64cfd638542da4e1deefe7e373b18
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67291038"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342403"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>“폴더 열기” 개발에 대한 빌드 및 디버그 작업 사용자 지정
 
@@ -256,6 +256,9 @@ bin:
    ![사용자 지정 시작 단추](media/customize-start-button.png)
 
    **F5** 키를 선택하면 디버거가 이미 설정한 중단점에서 시작 및 중지합니다. 모든 친숙한 디버거 창이 사용 가능하고 작동합니다.
+
+   > [!IMPORTANT]
+   > C++ 폴더 열기 프로젝트의 C++ 사용자 지정 빌드 및 디버그 작업에 대한 자세한 내용은 [Visual Studio에서 C++ 빌드 시스템에 대해 폴더 열기 지원](/cpp/build/open-folder-projects-cpp)을 참조하세요.
 
 ### <a name="specify-arguments-for-debugging"></a>디버깅을 위한 인수 지정
 

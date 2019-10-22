@@ -3,17 +3,17 @@ title: XML 스키마 탐색기-스키마 집합 검색
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ec1395e0-d03c-4130-810d-f2db656937bd
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 898b79e53773c09d60e32a3ef262346b0371d2af
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ff7684c56a22ef760655563d1d9f58e2ff01b0c9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926810"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604647"
 ---
 # <a name="search-the-schema-set"></a>스키마 집합 검색
 
@@ -43,7 +43,7 @@ ms.locfileid: "68926810"
 
 ## <a name="display-and-navigate-search-results"></a>검색 결과 표시 및 탐색
 
-검색이 완료되면 검색 결과와 함께 요약 결과 창이 도구 모음에 추가됩니다. 또한 검색 결과는 **XML 스키마 탐색기** 에서 강조 표시 되 고 세로 스크롤 막대에 틱으로 표시 됩니다. **XML 스키마 탐색기** 도구 모음의 요약 결과 창에서 **다음 검색 결과로 이동** 및 **이전 검색 결과로** 이동 단추를 사용 하 여 검색 결과를 탐색할 수 있습니다. 키보드 키를 사용 하 여 **f3** 및 **Shift**+**f3**키를 누르거나 스크롤 막대의 눈금 표시를 클릭 합니다.
+검색이 완료되면 검색 결과와 함께 요약 결과 창이 도구 모음에 추가됩니다. 또한 검색 결과는 **XML 스키마 탐색기** 에서 강조 표시 되 고 세로 스크롤 막대에 틱으로 표시 됩니다. **XML 스키마 탐색기** 도구 모음의 요약 결과 창에서 **다음 검색 결과로 이동** 및 **이전 검색 결과로** 이동 단추를 사용 하 여 검색 결과를 탐색할 수 있습니다. 키보드 키를 사용 하 여 **f3** 및 **Shift** +**f3**; 스크롤 막대의 눈금 표시를 클릭 합니다.
 
 요약 결과 창에서 **작업 영역에 선택한 노드 추가** 단추를 클릭 하 여 작업 영역에 검색 결과를 추가할 수 있습니다.
 
@@ -53,6 +53,6 @@ ms.locfileid: "68926810"
 
 검색 결과를 지우려면 **XML 스키마 탐색기** 검색 도구 모음의 요약 결과 창에서 **x** 단추를 클릭 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [XML 스키마 탐색기](../xml-tools/xml-schema-explorer.md)

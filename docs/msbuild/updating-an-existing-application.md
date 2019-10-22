@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf1c226fceff6ea17a7f83d750a93d6406a31c7d
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: cf2b8669fe9b516f3150829612d6999895cc69f8
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263725"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306242"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>MSBuild 15에 대한 기존 애플리케이션 업데이트
 
@@ -65,7 +65,7 @@ NuGet 패키지를 사용할 수 없는 경우 Visual Studio와 함께 배포되
 
 #### <a name="binding-redirects"></a>바인딩 리디렉션
 
-Microsoft.Build.Locator 패키지를 참조하면 애플리케이션에서 버전 `15.1.0.0`에 대한 모든 버전의 MSBuild 어셈블리의 필요한 바인딩 리디렉션을 자동으로 사용하도록 보장합니다.
+Microsoft.Build.Locator 패키지를 참조하면 애플리케이션에서 버전 15.1.0.0으로의 필요한 바인딩 리디렉션을 자동으로 사용하도록 보장합니다. 이 버전으로의 바인딩 리디렉션은 MSBuild 15와 MSBuild 16을 모두 지원합니다.
 
 ### <a name="ensure-output-is-clean"></a>출력 정리 확인
 

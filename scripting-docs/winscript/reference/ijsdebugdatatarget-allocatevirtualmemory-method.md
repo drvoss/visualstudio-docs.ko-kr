@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugdatatarget:: Allocatevirtualmemory 메서드 | Microsoft Docs'
+title: 'IJsDebugDataTarget:: AllocateVirtualMemory 메서드 | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c04bf21882ec39054c74f060eaa2c6f65ac0b4d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30ad8a3eb277823271fbfb4c2e10364b8602775c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583069"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577638"
 ---
 # <a name="ijsdebugdatatargetallocatevirtualmemory-method"></a>IJsDebugDataTarget::AllocateVirtualMemory 메서드
-예약 및/또는 커밋 대상 프로세스의 가상 주소 공간 내의 메모리 영역입니다.  
+대상 프로세스의 가상 주소 공간 내에서 메모리 영역을 예약 및/또는 커밋합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -39,27 +39,27 @@ HRESULT AllocateVirtualMemory(
   
 #### <a name="parameters"></a>매개 변수  
  `address`  
- [in] 메모리를 커밋하거나 예약 대상 프로세스 내의 주소입니다. 일반적으로이 값은 0 인 경우 시스템에는 주소를 선택 합니다.  
+ 진행 메모리를 커밋하거나 예약 해야 하는 대상 프로세스 내의 주소입니다. 이 값은 일반적으로 0 이며,이 경우 시스템에서 주소를 선택 합니다.  
   
  `size`  
- [in] 할당할 바이트 메모리 영역의 크기입니다. 시스템은 자동으로 다음 페이지 경계로 올림 됩니다.  
+ 진행 할당할 메모리 영역의 크기 (바이트)입니다. 시스템이 자동으로 다음 페이지 경계로 올림 됩니다.  
   
  `allocationType`  
- [in] 수행 하려는 할당 유형을 나타냅니다. 이 MEM_COMMIT 일반적으로 &#124; 예약 및 할당 한 번에 커밋하는 MEM_RESERVE (0x3000).  
+ 진행 수행할 할당 유형을 나타냅니다. 이는 일반적으로 &#124; 한 단계로 할당을 예약 하 고 커밋하는 0X3000 (MEM_COMMIT MEM_RESERVE)입니다.  
   
  `pageProtection`  
- [in] 할당할 페이지 영역에 대 한 메모리 보호 합니다. 페이지가 커밋되는 경우 메모리 보호 상수 (예: PAGE_READWRITE, PAGE_EXECUTE) 중 하나를 지정할 수 있습니다.  
+ 진행 할당할 페이지의 영역에 대 한 메모리 보호입니다. 페이지를 커밋하는 경우 메모리 보호 상수 (예: PAGE_READWRITE, PAGE_EXECUTE) 중 하나를 지정할 수 있습니다.  
   
  `pAllocatedAddress`  
- [out] 할당 된 페이지 영역의 기준 주소입니다.  
+ 제한이 할당 된 페이지 영역의 기준 주소입니다.  
   
 ## <a name="return-value"></a>반환 값  
   
-## <a name="remarks"></a>설명  
- 함수는 MEM_RESET를 사용 하지 않으면 0으로 할당 된 메모리를 초기화 합니다. 추가 정보는 VirtualAlloc Win32 API를 참조 하세요.  
+## <a name="remarks"></a>주의  
+ MEM_RESET를 사용 하지 않는 경우 함수는 할당 하는 메모리를 0으로 초기화 합니다. 자세한 내용은 VirtualAlloc Win32 API를 참조 하세요.  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더:** jscript9diag.h  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [IJsDebugDataTarget 인터페이스](../../winscript/reference/ijsdebugdatatarget-interface.md)

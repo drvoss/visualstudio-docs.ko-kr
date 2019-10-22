@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugproperty:: Getmembers 메서드 | Microsoft Docs'
+title: 'IJsDebugProperty:: GetMembers 메서드 | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3be31a0f02869ea740809fb68dbddf48843b2f3e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a3e700e51dea6723238437bf1fed741698097ae2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793671"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574058"
 ---
 # <a name="ijsdebugpropertygetmembers-method"></a>IJsDebugProperty::GetMembers 메서드
 이 개체의 멤버를 가져옵니다.  
@@ -36,15 +36,15 @@ HRESULT GetMembers(
   
 #### <a name="parameters"></a>매개 변수  
  `members`  
- [in] 멤버 정보에 포함 된 항목을 지정 하는 플래그입니다.  
+ 진행 멤버 정보에 포함 되는 항목을 지정 하는 플래그입니다.  
   
  `ppEnum`  
- [out] 개체의 멤버입니다.  
+ 제한이 개체의 멤버입니다.  
   
 ## <a name="return-value"></a>반환 값  
   
 ## <a name="requirements"></a>요구 사항  
  **헤더:** jscript9diag.h  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [IJsDebugProperty 인터페이스](../../winscript/reference/ijsdebugproperty-interface.md)

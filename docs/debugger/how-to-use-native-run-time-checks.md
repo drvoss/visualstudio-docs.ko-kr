@@ -1,5 +1,5 @@
 ---
-title: '방법: 기본 런타임 검사 사용 | Microsoft Docs'
+title: '방법: 네이티브 런타임 검사 사용 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -37,15 +37,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aeebdd8a86cb8ca6ffc1358a8558654d1e4d0b92
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 3cef755721a9c5b917b080fa10f1819055a18ed7
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211030"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72430560"
 ---
-# <a name="how-to-use-native-run-time-checks"></a>방법: 네이티브 런타임 검사 사용
-Visual C++에서는 네이티브 [runtime_checks](/cpp/preprocessor/runtime-checks) 를 사용하여 다음과 같은 일반적인 런타임 오류를 catch할 수 있습니다.
+# <a name="how-to-use-native-run-time-checks"></a>방법: 네이티브 런타임 검사 기능 사용
+Visual Studio C++ 프로젝트에서 네이티브 [runtime_checks](/cpp/preprocessor/runtime-checks) 를 사용 하 여 다음과 같은 일반적인 런타임 오류를 catch 할 수 있습니다.
 
 - 스택 포인터 손상
 
@@ -57,7 +57,7 @@ Visual C++에서는 네이티브 [runtime_checks](/cpp/preprocessor/runtime-chec
 
 - Short형 변수에 할당한 경우 발생한 데이터 손실
 
-  **/RTC** 를 최적화된 빌드(**/O**)와 함께 사용하면 컴파일러 오류가 발생합니다. 최적화된 빌드에는 `runtime_checks` pragma를 사용해도 적용되지 않습니다.
+  **/RTC** 를 최적화된 빌드( **/O**)와 함께 사용하면 컴파일러 오류가 발생합니다. 최적화된 빌드에는 `runtime_checks` pragma를 사용해도 적용되지 않습니다.
 
   런타임 검사가 활성화된 상태에서 프로그램을 디버깅하면 런타임 오류가 발생한 경우 기본적으로 프로그램을 중지하고 디버거를 중단합니다. 모든 런타임 검사의 기본 동작은 변경할 수 있습니다. 자세한 내용은 [디버거를 사용 하 여 예외 관리](../debugger/managing-exceptions-with-the-debugger.md)를 참조 하세요.
 
@@ -77,7 +77,7 @@ Visual C++에서는 네이티브 [runtime_checks](/cpp/preprocessor/runtime-chec
 
 - `runtime_checks` pragma를 사용합니다.
 
-## <a name="see-also"></a>관련 항목
+## <a name="see-also"></a>관련 항목:
 - [Visual Studio의 디버깅](../debugger/index.yml)
 - [디버거 소개](../debugger/debugger-feature-tour.md)
 - [runtime_checks](/cpp/preprocessor/runtime-checks)

@@ -10,12 +10,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: f754d62f95dee9531429f9421571982307af9966
-  ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+  ms.openlocfilehash: 16566f855e2e7504616da3d4196440facf145e6b
+  ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 09/24/2019
-  ms.locfileid: "71238134"
+  ms.lasthandoff: 10/16/2019
+  ms.locfileid: "72380960"
 highlightedContent:
   items:
   - title: 설정 및 설치
@@ -42,7 +42,7 @@ conceptualContent:
       url: get-started/tutorial-open-project-from-repo.md
       itemType: tutorial
     - text: 코드 작성 및 편집
-      url: ide/index-writing-code.md
+      url: ide/index-writing-code.yml
       itemType: tutorial
     - text: 코드 빌드
       url: ide/compiling-and-building-in-visual-studio.md
@@ -126,7 +126,7 @@ additionalContent:
     items:
     - title: 개발
       summary: 코드 편집기를 사용하여 코드를 작성하고 관리합니다.
-      url: ide/index-writing-code.md
+      url: ide/index-writing-code.yml
     - title: 빌드
       summary: 소스 코드를 컴파일하고 빌드합니다.
       url: ide/compiling-and-building-in-visual-studio.md
@@ -141,7 +141,7 @@ additionalContent:
       url: deployment/index.yml
     - title: 버전 제어
       summary: Git 및 TFVC 같은 버전 제어 기술을 사용하여 코드를 공유합니다.
-      url: version-control/index.md
+      url: /azure/devops/repos/index
     - title: DevOps
       summary: 클라우드에서 앱을 지속적으로 빌드 및 릴리스하고 Azure DevOps Services로 Agile 사례를 구현하세요.
       url: /azure/devops

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::OnScriptTerminate | Microsoft Docs
+title: 'IActiveScriptSite:: OnScriptTerminate | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 664f974b26a2cae0d1e16d37dc3bc66e95993d6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a715b39b07df4183d4ec542a1dd82b4229d1f41e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992648"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570208"
 ---
 # <a name="iactivescriptsiteonscriptterminate"></a>IActiveScriptSite::OnScriptTerminate
-스크립트 실행을 완료 했음을 호스트에 알립니다.  
+스크립트가 실행을 완료 했음을 호스트에 알립니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -38,16 +38,16 @@ HRESULT OnScriptTerminate(
   
 #### <a name="parameters"></a>매개 변수  
  `pvarResult`  
- [in] 스크립트 결과 포함 하는 변수의 주소 또는 `NULL` 스크립트 없는 결과 생성 하는 경우.  
+ 진행 스크립트 결과를 포함 하는 변수의 주소 이거나, 스크립트가 결과를 생성 하지 않은 경우 `NULL`입니다.  
   
  `pexcepinfo`  
- [in] 주소는 `EXCEPINFO` 스크립트가 종료 될 때 생성 되는 예외 정보를 포함 하는 구조 또는 `NULL` 예외가 생성 된 경우.  
+ 진행 스크립트가 종료 될 때 생성 된 예외 정보를 포함 하는 `EXCEPINFO` 구조체의 주소 이거나, 예외가 생성 되지 않은 경우 `NULL`입니다.  
   
 ## <a name="return-value"></a>반환 값  
  성공하는 경우 `S_OK`가 반환됩니다.  
   
-## <a name="remarks"></a>설명  
- 스크립팅 엔진을 호출 하기 전에이 메서드를 호출 합니다 [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) SCRIPTSTATE_INITIALIZED 플래그 집합으로 메서드가 완료 되기 합니다. 호스트에 완료 상태 및 결과 반환할이 메서드를 사용할 수 있습니다. 호스트에서 이벤트를 싱크하기에 기반 하는 여러 스크립트 언어를 호스트에 의해 정의 된 수명 범위는 note 합니다. 이 경우이 메서드를 호출 하지 않을 수 있습니다.  
+## <a name="remarks"></a>주의  
+ 스크립팅 엔진은 SCRIPTSTATE_INITIALIZED 플래그가 설정 된 상태에서 [IActiveScriptSite:: OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) 메서드에 대 한 호출이 완료 되기 전에이 메서드를 호출 합니다. 이 메서드는 완료 상태와 결과를 호스트에 반환 하는 데 사용할 수 있습니다. 호스트의 이벤트 싱크를 기반으로 하는 많은 스크립트 언어에는 호스트에서 정의 되는 수명 범위가 있습니다. 이 경우이 메서드를 호출할 수 없습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

@@ -12,17 +12,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 136ee925f1ee7505e7058eb643d7bac3a9222c06
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 7901cf19b112b1a9d87dcae5bce594f5cc431d78
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252342"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72633349"
 ---
 # <a name="dynamically-add-menu-items"></a>동적으로 메뉴 항목 추가
-Visual Studio 명령 테이블 ( *.vvsct*) 파일의 `DynamicItemStart` 자리 표시자 단추 정의에 명령 플래그를 지정 하 여 런타임에 메뉴 항목을 추가 하 고, 명령을 표시 하 고 처리할 메뉴 항목의 수를 정의할 수 있습니다. VSPackage가 로드 되 면 자리 표시 자가 동적 메뉴 항목으로 바뀝니다.
+Visual Studio 명령 테이블 ( *.vvsct*) 파일의 자리 표시자 단추 정의에 `DynamicItemStart` 명령 플래그를 지정 하 고 (코드에서) 명령을 표시 하 고 처리할 메뉴 항목 수를 정의 하 여 런타임에 메뉴 항목을 추가할 수 있습니다. VSPackage가 로드 되 면 자리 표시 자가 동적 메뉴 항목으로 바뀝니다.
 
- Visual Studio는 **가장 최근에 사용한** (MRU) 목록의 동적 목록을 사용 합니다 .이 목록에는 최근에 열었던 문서 이름이 표시 되 고 **windows** 목록에는 현재 열려 있는 창의 이름이 표시 됩니다.   명령 `DynamicItemStart` 정의의 플래그는 VSPackage가 열릴 때까지 명령이 자리 표시자 임을 지정 합니다. VSPackage를 열면 자리 표시 자가 런타임에 생성 되어 동적 목록에 추가 되는 0 개 이상의 명령으로 바뀝니다. VSPackage가 열릴 때까지 동적 목록이 표시 되는 메뉴의 위치를 볼 수 없습니다.  동적 목록을 채우기 위해 Visual Studio는 VSPackage에서 첫 번째 문자가 자리 표시자의 ID와 동일한 ID를 사용 하 여 명령을 찾도록 요청 합니다. Visual Studio는 일치 하는 명령을 찾으면 동적 목록에 명령 이름을 추가 합니다. 그런 다음 동적 명령이 더 이상 없을 때까지 ID를 증가 시키고 동적 목록에 추가할 다른 일치 하는 명령을 찾습니다.
+ Visual Studio는 **가장 최근에 사용한** (MRU) 목록의 동적 목록을 사용 합니다 .이 목록에는 최근에 열었던 문서 이름이 표시 되 고 **windows** 목록에는 현재 열려 있는 창의 이름이 표시 됩니다.   명령 정의의 `DynamicItemStart` 플래그는 VSPackage가 열릴 때까지 명령이 자리 표시자 임을 지정 합니다. VSPackage를 열면 자리 표시 자가 런타임에 생성 되어 동적 목록에 추가 되는 0 개 이상의 명령으로 바뀝니다. VSPackage가 열릴 때까지 동적 목록이 표시 되는 메뉴의 위치를 볼 수 없습니다.  동적 목록을 채우기 위해 Visual Studio는 VSPackage에서 첫 번째 문자가 자리 표시자의 ID와 동일한 ID를 사용 하 여 명령을 찾도록 요청 합니다. Visual Studio는 일치 하는 명령을 찾으면 동적 목록에 명령 이름을 추가 합니다. 그런 다음 동적 명령이 더 이상 없을 때까지 ID를 증가 시키고 동적 목록에 추가할 다른 일치 하는 명령을 찾습니다.
 
  이 연습에서는 **솔루션 탐색기** 도구 모음에서 명령을 사용 하 여 Visual Studio 솔루션에서 시작 프로젝트를 설정 하는 방법을 보여 줍니다. 활성 솔루션에 있는 프로젝트의 동적 드롭다운 목록이 있는 메뉴 컨트롤러를 사용 합니다. 솔루션이 열려 있지 않거나 열려 있는 솔루션에 프로젝트가 하나만 있는 경우이 명령이 표시 되지 않도록 하려면 솔루션에 여러 프로젝트가 있는 경우에만 VSPackage이 로드 됩니다.
 
@@ -30,7 +30,7 @@ Visual Studio 명령 테이블 ( *.vvsct*) 파일의 `DynamicItemStart` 자리 �
 
 ## <a name="create-an-extension-with-a-menu-command"></a>메뉴 명령을 사용 하 여 확장 만들기
 
-1. 이라는 `DynamicMenuItems`VSIX 프로젝트를 만듭니다.
+1. @No__t_0 라는 VSIX 프로젝트를 만듭니다.
 
 2. 프로젝트가 열리면 사용자 지정 명령 항목 템플릿을 추가 하 고 **Dynamicmenu**로 이름을 지정 합니다. 자세한 내용은 [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)를 참조 하세요.
 
@@ -39,7 +39,7 @@ Visual Studio 명령 테이블 ( *.vvsct*) 파일의 `DynamicItemStart` 자리 �
 
 - 메뉴 컨트롤러를 포함 하는 명령 그룹과 드롭다운에서 메뉴 항목이 포함 된 명령 그룹 두 개
 
-- 형식의 한 메뉴 요소`MenuController`
+- @No__t_0 형식의 한 메뉴 요소
 
 - 메뉴 항목에 대 한 자리 표시자 역할을 하는 단추 및 도구 모음에 아이콘 및 도구 설명을 제공 하는 단추 두 개.
 
@@ -140,9 +140,9 @@ Visual Studio 명령 테이블 ( *.vvsct*) 파일의 `DynamicItemStart` 자리 �
     ```
 
 ## <a name="implement-the-dynamic-menu-command"></a>동적 메뉴 명령 구현
- 에서 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>상속 되는 동적 메뉴 명령 클래스를 만듭니다. 이 구현에서 생성자는 일치 하는 명령에 사용할 조건자를 지정 합니다. 이 조건자를 사용 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> 하 여 호출할 명령을 식별 하는 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> 속성을 설정 하려면 메서드를 재정의 해야 합니다.
+ @No__t_0에서 상속 되는 동적 메뉴 명령 클래스를 만듭니다. 이 구현에서 생성자는 일치 하는 명령에 사용할 조건자를 지정 합니다. 이 조건자를 사용 하 여 호출할 명령을 식별 하는 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> 속성을 설정 하려면 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> 메서드를 재정의 해야 합니다.
 
-1. DynamicItemMenuCommand.cs 라는 새 C# 클래스 파일을만들고에서 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>상속 된 **dynamicitemmenucommand** 라는 클래스를 추가 합니다.
+1. DynamicItemMenuCommand.cs 라는 새 C# 클래스 파일을만들고 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>에서 상속 되는 **dynamicitemmenucommand** 라는 클래스를 추가 합니다.
 
     ```csharp
     class DynamicItemMenuCommand : OleMenuCommand
@@ -152,7 +152,7 @@ Visual Studio 명령 테이블 ( *.vvsct*) 파일의 `DynamicItemStart` 자리 �
 
     ```
 
-2. 다음 using 문을 추가 합니다.
+2. 다음 using 지시문을 추가 합니다.
 
     ```csharp
     using Microsoft.VisualStudio.Shell;
@@ -167,7 +167,7 @@ Visual Studio 명령 테이블 ( *.vvsct*) 파일의 `DynamicItemStart` 자리 �
 
     ```
 
-4. <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 생성자에서 상속 되 고 명령 처리기 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> 와 처리기를 지정 하는 생성자를 추가 합니다. 명령과 일치 하는 조건자를 추가 합니다.
+4. @No__t_0 생성자에서 상속 되 고 명령 처리기 및 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> 처리기를 지정 하는 생성자를 추가 합니다. 명령과 일치 하는 조건자를 추가 합니다.
 
     ```csharp
     public DynamicItemMenuCommand(CommandID rootId, Predicate<int> matches, EventHandler invokeHandler, EventHandler beforeQueryStatusHandler)
@@ -182,7 +182,7 @@ Visual Studio 명령 테이블 ( *.vvsct*) 파일의 `DynamicItemStart` 자리 �
     }
     ```
 
-5. 일치 조건자 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> 를 호출 하 고 속성을 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> 설정 하도록 메서드를 재정의 합니다.
+5. 일치 조건자를 호출 하 고 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> 속성을 설정 하도록 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> 메서드를 재정의 합니다.
 
     ```csharp
     public override bool DynamicItemMatch(int cmdId)
@@ -212,7 +212,7 @@ Visual Studio 명령 테이블 ( *.vvsct*) 파일의 `DynamicItemStart` 자리 �
     public const uint cmdidMyCommand = 0x104;
     ```
 
-2. *DynamicMenu.cs* 파일에서 다음 using 문을 추가 합니다.
+2. *DynamicMenu.cs* 파일에 다음 using 지시문을 추가 합니다.
 
     ```csharp
     using EnvDTE;
@@ -220,7 +220,7 @@ Visual Studio 명령 테이블 ( *.vvsct*) 파일의 `DynamicItemStart` 자리 �
     using System.ComponentModel.Design;
     ```
 
-3. 클래스에서 private 필드 dte2를 추가 합니다. `DynamicMenu`
+3. @No__t_0 클래스에서 private 필드 **dte2**를 추가 합니다.
 
     ```csharp
     private DTE2 dte2;
@@ -261,9 +261,9 @@ Visual Studio 명령 테이블 ( *.vvsct*) 파일의 `DynamicItemStart` 자리 �
     ```
 
 ## <a name="implement-the-handlers"></a>처리기 구현
- 메뉴 컨트롤러에서 동적 메뉴 항목을 구현 하려면 동적 항목을 클릭할 때 명령을 처리 해야 합니다. 또한 메뉴 항목의 상태를 설정 하는 논리를 구현 해야 합니다. `DynamicMenu` 클래스에 처리기를 추가 합니다.
+ 메뉴 컨트롤러에서 동적 메뉴 항목을 구현 하려면 동적 항목을 클릭할 때 명령을 처리 해야 합니다. 또한 메뉴 항목의 상태를 설정 하는 논리를 구현 해야 합니다. @No__t_0 클래스에 처리기를 추가 합니다.
 
-1. **시작 프로젝트 설정** 명령을 구현 하려면 **OnInvokedDynamicItem** 이벤트 처리기를 추가 합니다. 호출 된 명령의 텍스트와 이름이 동일한 프로젝트를 찾은 다음 <xref:EnvDTE.SolutionBuild.StartupProjects%2A> 속성의 절대 경로를 설정 하 여 시작 프로젝트로 설정 합니다.
+1. **시작 프로젝트 설정** 명령을 구현 하려면 **OnInvokedDynamicItem** 이벤트 처리기를 추가 합니다. 호출 된 명령의 텍스트와 이름이 동일한 프로젝트를 찾은 다음 <xref:EnvDTE.SolutionBuild.StartupProjects%2A> 속성에서 절대 경로를 설정 하 여 시작 프로젝트로 설정 합니다.
 
     ```csharp
     private void OnInvokedDynamicItem(object sender, EventArgs args)
@@ -286,7 +286,7 @@ Visual Studio 명령 테이블 ( *.vvsct*) 파일의 `DynamicItemStart` 자리 �
     }
     ```
 
-2. 이벤트 처리기 `OnBeforeQueryStatusDynamicItem` 를 추가 합니다. 이 처리기는 `QueryStatus` 이벤트 이전에 호출 됩니다. 메뉴 항목이 "실제" 항목 인지 여부, 즉 자리 표시자 항목이 아니라 항목이 이미 선택 되었는지 여부를 확인 합니다. 즉, 프로젝트가 이미 시작 프로젝트로 설정 되어 있는지 여부를 확인 합니다.
+2. @No__t_0 이벤트 처리기를 추가 합니다. @No__t_0 이벤트 이전에 호출 되는 처리기입니다. 메뉴 항목이 "실제" 항목 인지 여부, 즉 자리 표시자 항목이 아니라 항목이 이미 선택 되었는지 여부를 확인 합니다. 즉, 프로젝트가 이미 시작 프로젝트로 설정 되어 있는지 여부를 확인 합니다.
 
     ```csharp
     private void OnBeforeQueryStatusDynamicItem(object sender, EventArgs args)
@@ -331,7 +331,7 @@ private bool IsValidDynamicItem(int commandId)
 ```
 
 ## <a name="set-the-vspackage-to-load-only-when-a-solution-has-multiple-projects"></a>솔루션에 여러 프로젝트가 있는 경우에만 VSPackage를 load로 설정
- 활성 솔루션에 프로젝트가 두 개 이상 포함 되어 있지 않으면 **시작 프로젝트 설정** 명령이 적합 하지 않기 때문에 VSPackage이 해당 경우에만 자동 로드 되도록 설정할 수 있습니다. UI 컨텍스트와 <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids.SolutionHasMultipleProjects>함께를 사용 합니다. *DynamicMenuPackage.cs* 파일에서 DynamicMenuPackage 클래스에 다음 특성을 추가 합니다.
+ 활성 솔루션에 프로젝트가 두 개 이상 포함 되어 있지 않으면 **시작 프로젝트 설정** 명령이 적합 하지 않기 때문에 VSPackage이 해당 경우에만 자동 로드 되도록 설정할 수 있습니다. @No__t_1 UI 컨텍스트와 함께 <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>를 사용 합니다. *DynamicMenuPackage.cs* 파일에서 DynamicMenuPackage 클래스에 다음 특성을 추가 합니다.
 
 ```csharp
 [PackageRegistration(UseManagedResourcesOnly = true)]
@@ -356,6 +356,6 @@ public sealed class DynamicMenuItemsPackage : Package
 
 4. 솔루션을 닫거나 프로젝트가 하나만 있는 솔루션을 여는 경우 도구 모음 아이콘이 사라집니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)
 - [Vspackage 사용자 인터페이스 요소를 추가 하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)

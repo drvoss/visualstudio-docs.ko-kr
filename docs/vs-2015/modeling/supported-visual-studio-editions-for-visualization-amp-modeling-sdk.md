@@ -1,5 +1,5 @@
 ---
-title: 시각화 및 모델링 SDK에 대 한 지원 되는 Visual Studio 버전 | Microsoft Docs
+title: 시각화 및 모델링 SDK에 대해 지원 되는 Visual Studio 버전 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, supported Visual Studio editions
 ms.assetid: 7c313ba0-031d-45b8-8220-eead61754747
 caps.latest.revision: 29
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a8104eb9aa2d340545fb4cbfbd2e46286d953375
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 89d65aab64ba82f152e2fe888ab10b88b73a7c42
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696874"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672369"
 ---
-# <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>시각화에 대 한 지원 되는 Visual Studio 버전 &amp; 모델링 SDK
+# <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>지원 되는 Visual Studio 버전의 시각화 &amp; 모델링 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-다음은 지원 되는 Visual Studio 버전 목록을 [!INCLUDE[dsl](../includes/dsl-md.md)] 제작 및 배포 환경입니다. 이러한 버전에 대 한 자세한 내용은 Microsoft을 참조 하세요 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [개발자 센터](http://go.microsoft.com/fwlink/?LinkId=75628)합니다.
+다음은 제작 및 배포 환경에서 [!INCLUDE[dsl](../includes/dsl-md.md)] 지원 되는 Visual Studio 버전의 목록입니다. 이러한 버전에 대 한 자세한 내용은 Microsoft [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [개발자 센터](http://go.microsoft.com/fwlink/?LinkId=75628)를 참조 하세요.
 
 ## <a name="authoring-edition"></a>작성 버전
  DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
@@ -39,12 +39,12 @@ ms.locfileid: "65696874"
 
 - Visual Studio Professional
 
-- Visual Studio Shell (통합된 모드) 재배포 가능 패키지
+- Visual Studio Shell (통합 모드) 재배포 가능 패키지 패키지 재배포 가능 패키지
 
 - Visual Studio Shell(격리 모드) 재배포 가능 패키지
 
 > [!NOTE]
-> DSL Shell 제품에서 실행할 수 있도록 설정 해야 합니다 **VS 버전 지원** 확장 매니페스트에서 필드입니다. 자세한 내용은 [도메인 특정 언어 솔루션 배포](../modeling/deploying-domain-specific-language-solutions.md)를 참조하세요.
+> 셸 제품에서 DSL을 실행할 수 있도록 하려면 확장 매니페스트에서 **지원 되는 VS Edition** 필드를 설정 해야 합니다. 자세한 내용은 [도메인 특정 언어 솔루션 배포](../modeling/deploying-domain-specific-language-solutions.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목:
  [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

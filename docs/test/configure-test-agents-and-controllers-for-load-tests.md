@@ -7,19 +7,19 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c10a624d78c1dc362c9d0e5d7c0e58e24efc3cf
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: f7a912ff25e2782490b711d909a64c5d9438ed8f
+ms.sourcegitcommit: 9a3972eb85de5443ac2bc03964c5a251c39b2921
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918365"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71301698"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>부하 테스트 실행에 대한 테스트 에이전트 및 테스트 컨트롤러 개요
 
 Visual Studio 는 실제 또는 가상 머신을 사용하여 앱에 대해 시뮬레이션된 부하를 생성할 수 있습니다. 이러한 컴퓨터는 단일 테스트 컨트롤러와 하나 이상의 테스트 에이전트로 설정되어야 합니다. 테스트 컨트롤러 및 테스트 에이전트를 사용하여 단일 컴퓨터에서 생성하는 것보다 많은 부하를 생성할 수 있습니다.
 
 > [!NOTE]
-> 또한 클라우드 기반 부하 테스트를 사용하여 동시에 웹 사이트에 액세스하는 여러 사용자의 부하를 생성하는 가상 머신을 제공할 수 있습니다. [Azure Test Plans를 사용하여 부하 테스트 실행](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts)에서 클라우드 기반 부하 테스트에 대해 자세히 알아보세요.
+> 또한 클라우드 기반 부하 테스트를 사용하여 동시에 웹 사이트에 액세스하는 여러 사용자의 부하를 생성하는 가상 머신을 제공할 수 있습니다. 그러나 클라우드 호스팅 가상 머신에서 테스트 컨트롤러/테스트 에이전트 설치를 사용하는 것은 지원되지 않습니다. [Azure Test Plans를 사용하여 부하 테스트 실행](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts)에서 클라우드 기반 부하 테스트에 대해 자세히 알아보세요.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 

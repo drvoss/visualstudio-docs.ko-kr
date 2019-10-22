@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a9a5b94a25a838845acab2ce1c49295b0b28d425
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9b387999d71690deaf5bea30a07439677065d63d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976189"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574379"
 ---
 # <a name="implementing-smart-host-helper-interfaces"></a>스마트 호스트 도우미 인터페이스 구현
 [IDebugDocumentHelper 인터페이스](../winscript/reference/idebugdocumenthelper-interface.md)는 스마트 호스팅에 필요한 많은 인터페이스에 대한 구현을 제공하기 때문에 활성 디버깅을 위한 스마트 호스트를 만드는 작업을 크게 간소화합니다.  
@@ -104,5 +104,5 @@ pddh->CreateDebugDocumentContext(ulStartPos + uCharacterOffset, cChars, &pddcNew
   
 - 문서에 대한 파일 시스템에서 경로 이름을 제공합니다. 일부 디버깅 UI는 이를 사용하여 사용자가 문서의 변경 내용을 편집하고 저장할 수 있도록 합니다. 문서를 저장한 후 호스트에 알리기 위해 [IDebugDocumentHost::NotifyChanged](../winscript/reference/idebugdocumenthost-notifychanged.md)가 호출됩니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [액티브 스크립트 디버깅 개요](../winscript/active-script-debugging-overview.md)

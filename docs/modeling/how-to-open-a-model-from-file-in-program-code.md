@@ -2,62 +2,62 @@
 title: '방법: 프로그램 코드로 파일에서 모델 열기'
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f89c62863aadf4e1f8902799b502c07b9dea528d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: d39543a388c112cf13a5841e4fe825717597d5c1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821907"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661173"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>방법: 프로그램 코드로 파일에서 모델 열기
 
 모든 응용 프로그램에서 DSL 모델을 열 수 있습니다.
 
-Visual Studio 확장에서이 목적을 위해 ModelBus를 사용할 수 있습니다. ModelBus는 모델 또는 모델에서 요소를 참조 하 고이 이동 하는 경우 모델을 찾는 데 표준 메커니즘을 제공 합니다. 자세한 내용은 [Visual Studio Modelbus를 사용 하 여 모델 통합](../modeling/integrating-models-by-using-visual-studio-modelbus.md)합니다.
+Visual Studio 확장에서이 목적을 위해 ModelBus를 사용할 수 있습니다. ModelBus는 모델의 모델 또는 요소를 참조 하 고 모델을 이동한 경우 모델을 찾기 위한 표준 메커니즘을 제공 합니다. 자세한 내용은 [Visual Studio를 사용 하 여 모델 통합 Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)을 참조 하세요.
 
 ## <a name="target-framework"></a>대상 프레임워크
 
-설정 된 **대상 프레임 워크** .NET Framework 4 이상으로 응용 프로그램 프로젝트입니다.
+응용 프로그램 프로젝트의 **대상 프레임 워크** 를 .NET Framework 4 이상으로 설정 합니다.
 
-1. DSL 모델 읽기 하려는 응용 프로그램에 대 한 Visual Studio 프로젝트를 엽니다.
+1. DSL 모델을 읽을 응용 프로그램에 대 한 Visual Studio 프로젝트를 엽니다.
 
-2. **솔루션 탐색기**프로젝트를 마우스 오른쪽 단추로 클릭 하 고 클릭 **속성**합니다.
+2. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 클릭 합니다.
 
-3. 프로젝트 속성 창에서에 **응용 프로그램** 탭, 설정 된 **대상 프레임 워크** 필드를 **.NET Framework 4** (또는 이상).
+3. 프로젝트 속성 창의 **응용 프로그램** 탭에서 **대상 프레임 워크** 필드를 **.NET Framework 4** 이상으로 설정 합니다.
 
 > [!NOTE]
-> 대상 프레임 워크 안 **.NET Framework 4 Client Profile**합니다.
+> 대상 프레임 워크는 **4 개의 클라이언트 프로필 .NET Framework**되어서는 안 됩니다.
 
 ## <a name="references"></a>참조 항목
 
-Visual Studio 응용 프로그램 프로젝트에 대 한 이러한 참조를 추가 합니다.
+Visual Studio 응용 프로그램 프로젝트에 다음 참조를 추가 합니다.
 
 - `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 
-  - 아래에서 표시 되지 않으면를 **.NET** 탭에서 **참조 추가** 대화 상자에서 클릭 합니다 **찾아보기** 탭을 이동할 `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`합니다.
+  - **참조 추가** 대화 상자의 **.net** 탭에 표시 되지 않는 경우 **찾아보기** 탭을 클릭 하 고 `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`로 이동 합니다.
 
-- DSL 어셈블리를 DSL 프로젝트 bin 폴더에서 찾이 됩니다. 폼의 해당 이름은 일반적으로: *YourCompany*.*YourProject*`.Dsl.dll`.
+- Dsl 어셈블리는 DSL 프로젝트의 bin 폴더 아래에서 찾을 수 있습니다. 해당 이름은 일반적으로 *회사*의 형식입니다. *프로젝트* `.Dsl.dll`.
 
-## <a name="important-classes-in-the-dsl"></a>DSL에서 중요 한 클래스
+## <a name="important-classes-in-the-dsl"></a>DSL의 중요 한 클래스
 
-DSL을 읽는 코드를 작성할 수 있습니다, 전에 일부 DSL에서 생성 된 클래스의 이름을 알아야 합니다. DSL 솔루션을 엽니다는 **Dsl** 프로젝트를 확인 합니다 **GeneratedCode** 폴더입니다. 또는 프로젝트에서 DSL 어셈블리를 두 번 클릭 **참조가**, DSL의 네임 스페이스에 연 **개체 브라우저**합니다.
+DSL을 읽는 코드를 작성 하려면 먼저 DSL에 의해 생성 된 클래스의 이름을 알아야 합니다. DSL 솔루션에서 **dsl** 프로젝트를 열고 **generatedcode** 폴더를 확인 합니다. 또는 프로젝트 **참조**에서 dsl 어셈블리를 두 번 클릭 하 고 **개체 브라우저**에서 dsl 네임 스페이스를 엽니다.
 
 다음은 식별 해야 하는 클래스입니다.
 
-- *YourDslRootClass* -이 루트 클래스의 이름에 `DslDefinition.dsl`입니다.
+- 해당 *클래스* -`DslDefinition.dsl`의 루트 클래스 이름입니다.
 
-- *D s l 이름* `SerializationHelper` -이 클래스에 정의 된 `SerializationHelper.cs` DSL 프로젝트에서.
+- 원하는 *이름* `SerializationHelper`-이 클래스는 DSL 프로젝트의 `SerializationHelper.cs`에 정의 됩니다.
 
-- *D s l 이름* `DomainModel` -이 클래스에 정의 된 `DomainModel.cs` DSL 프로젝트에서.
+- 원하는 *이름* `DomainModel`-이 클래스는 DSL 프로젝트의 `DomainModel.cs`에 정의 됩니다.
 
 ## <a name="read-from-a-file"></a>파일에서 읽습니다.
 
-다음 예에서는 읽기는 중요 한 클래스에는 다음과 같이 DSL 하도록 설계 됩니다.
+다음 예제는 중요 한 클래스가 다음과 같은 DSL을 읽도록 설계 되었습니다.
 
 - FamilyTreeModel
 
@@ -65,7 +65,7 @@ DSL을 읽는 코드를 작성할 수 있습니다, 전에 일부 DSL에서 생�
 
 - FamilyTreeDomainModel
 
-이 DSL의 다른 도메인 클래스는 사람입니다.
+이 DSL의 다른 도메인 클래스는 Person입니다.
 
 ```csharp
 using System;
@@ -105,7 +105,7 @@ namespace StandaloneReadDslConsole
 
 ## <a name="save-to-a-file"></a>파일에 저장
 
-앞의 코드를 다음 내용을 추가 모델로 변경 작업을 수행 하 고 파일을 저장 합니다.
+이전 코드와 다음에 추가 하 여 모델을 변경한 다음 파일에 저장 합니다.
 
 ```csharp
 using (Transaction t =

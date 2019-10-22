@@ -11,15 +11,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3be6989195eacdd4d70bd13790d55e4f6cfc769d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8eb089efbf608b488465809f997ffc82fc2c2e3c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443653"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574405"
 ---
-# <a name="scripterrordebugexceptionthrownkind-enumeration"></a>SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND 열거형
-Throw된 예외의 종류를 표시합니다. 이 열거형은에서 사용 된 [IActiveScriptErrorDebug110::GetExceptionThrownKind](../../winscript/reference/iactivescripterrordebug110-getexceptionthrownkind.md) 메서드.  
+# <a name="script_error_debug_exception_thrown_kind-enumeration"></a>SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND 열거형
+Throw된 예외의 종류를 표시합니다. 이 열거형은 [IActiveScriptErrorDebug110:: GetExceptionThrownKind](../../winscript/reference/iactivescripterrordebug110-getexceptionthrownkind.md) 메서드에서 사용 됩니다.  
   
 > [!IMPORTANT]
 > 이러한 상수는 PDM 버전 11.0 이상에 의해 구현됩니다. activdbg100.h에서 찾을 수 있습니다.  
@@ -38,5 +38,5 @@ typedef SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND
 |ETK_USER_UNHANDLED|0x00000001|이 예외는 사용자 코드에서 처리되지 않습니다.|  
 |ETK_UNHANDLED|0x00000002|이 예외는 코드에서 처리되지 않습니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [IActiveScriptErrorDebug110 인터페이스](../../winscript/reference/iactivescripterrordebug110-interface.md)

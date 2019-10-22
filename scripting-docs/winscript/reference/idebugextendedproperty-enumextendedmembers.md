@@ -1,5 +1,5 @@
 ---
-title: IDebugExtendedProperty::EnumExtendedMembers | Microsoft Docs
+title: 'IDebugExtendedProperty:: EnumExtendedMembers | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c7e14d1bc8937221960d938f1bbfae8e307830f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f6fd225be9504254965eab77b912f50fb5c777e3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946147"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576400"
 ---
 # <a name="idebugextendedpropertyenumextendedmembers"></a>IDebugExtendedProperty::EnumExtendedMembers
-확장된 속성의 멤버를 열거합니다.  
+확장 속성의 멤버를 열거 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -39,18 +39,18 @@ HRESULT EnumExtendedMembers(
   
 #### <a name="parameters"></a>매개 변수  
  `dwFieldSpec`  
- [in] 채울 필드에 열거 된 확장 디버그 속성 구조를 결정 하는 EX_DBGPROP_INFO_FLAGS 상수를 지정 합니다.  
+ 진행 채울 열거 된 확장 디버그 속성 구조의 필드를 결정 하는 EX_DBGPROP_INFO_FLAGS 상수를 지정 합니다.  
   
  `nRadix`  
- [in] 모든 숫자 정보를 해석 하는 데 사용할 기 수입니다.  
+ 진행 숫자 정보를 해석 하는 데 사용할 기 수입니다.  
   
  `ppeepi`  
- [out] 반환 된 `IEnumDebugExtendedPropertyInfo` 멤버 속성을 열거 하는 인터페이스입니다.  
+ 제한이 멤버 속성을 열거 하는 `IEnumDebugExtendedPropertyInfo` 인터페이스를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 유효한 반환 `HRESULT`, 일반적으로 `S_OK`.  
+ 유효한 `HRESULT` (일반적으로 `S_OK`)를 반환 합니다.  
   
-## <a name="see-also"></a>참고 항목  
- [IDebugExtendedProperty 인터페이스](../../winscript/reference/idebugextendedproperty-interface.md)   
- [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)   
+## <a name="see-also"></a>참조  
+ [Idebugextendedproperty 인터페이스](../../winscript/reference/idebugextendedproperty-interface.md)    
+ [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)    
  [ExtendedDebugPropertyInfo 구조체](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

@@ -13,26 +13,26 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c1e042f75cf0ab0d8c4807c0c0db6ce04e8423f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24a93cb3bd230e2489b58d78f6d414ba1df006ed
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945876"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572496"
 ---
 # <a name="idebugextendedproperty-interface"></a>IDebugExtendedProperty 인터페이스
-확장 `IDebugProperty` 인터페이스입니다.  
+@No__t_0 인터페이스를 확장 합니다.  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
- 상속 된 메서드 외에도 `IDebugProperty`,이 인터페이스는 다음 메서드를 노출 합니다.  
+ @No__t_0에서 상속 된 메서드 외에도이 인터페이스는 다음 메서드를 노출 합니다.  
   
 |메서드|설명|  
 |------------|-----------------|  
-|[IDebugExtendedProperty::GetExtendedPropertyInfo](../../winscript/reference/idebugextendedproperty-getextendedpropertyinfo.md)|가져옵니다는 `ExtendedDebugPropertyInfo` 이 설명 하는 `IDebugExtendedProperty``.`|  
-|[IDebugExtendedProperty::EnumExtendedMembers](../../winscript/reference/idebugextendedproperty-enumextendedmembers.md)|확장된 속성의 멤버를 열거합니다.|  
+|[IDebugExtendedProperty::GetExtendedPropertyInfo](../../winscript/reference/idebugextendedproperty-getextendedpropertyinfo.md)|이를 설명 하는 `ExtendedDebugPropertyInfo`을 가져옵니다 `IDebugExtendedProperty``.`|  
+|[IDebugExtendedProperty::EnumExtendedMembers](../../winscript/reference/idebugextendedproperty-enumextendedmembers.md)|확장 속성의 멤버를 열거 합니다.|  
   
 ## <a name="requirements"></a>요구 사항  
- 헤더: dbgprop.h  
+ 헤더: dbgprop  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [IDebugProperty 인터페이스](../../winscript/reference/idebugproperty-interface.md)

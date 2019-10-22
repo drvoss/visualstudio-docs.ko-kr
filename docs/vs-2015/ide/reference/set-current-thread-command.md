@@ -11,39 +11,35 @@ helpviewer_keywords:
 - Debug.SetCurrentThread command
 ms.assetid: 9917ed1d-6c30-4d94-b2f0-69acce74f1b2
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 107303082202cb1dbb162ef9dfb845c2f6564df4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 67bf0d37e6f734fa4b3229488bc3eee2732c3063
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68163326"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665439"
 ---
 # <a name="set-current-thread-command"></a>현재 스레드 설정 명령
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-지정한 스레드를 현재 스레드로 설정합니다.  
-  
-## <a name="syntax"></a>구문  
-  
-```  
-Debug.SetCurrentThread index  
-```  
-  
-## <a name="arguments"></a>인수  
- `index`  
- 필수 요소. 해당 인덱스로 스레드를 선택합니다.  
-  
-## <a name="example"></a>예  
-  
-```  
->Debug.SetCurrentThread 1  
-```  
-  
-## <a name="see-also"></a>참고 항목  
- [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)   
- [명령 창](../../ide/reference/command-window.md)   
- [찾기/명령 상자](../../ide/find-command-box.md)   
- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+지정한 스레드를 현재 스레드로 설정합니다.
+
+## <a name="syntax"></a>구문
+
+```
+Debug.SetCurrentThread index
+```
+
+## <a name="arguments"></a>인수
+ `index` 필수입니다. 해당 인덱스로 스레드를 선택합니다.
+
+## <a name="example"></a>예
+
+```
+>Debug.SetCurrentThread 1
+```
+
+## <a name="see-also"></a>참고 항목
+ [Visual Studio 명령](../../ide/reference/visual-studio-commands.md) [명령 창](../../ide/reference/command-window.md) [찾기/명령 상자](../../ide/find-command-box.md) [visual Studio 명령 별칭](../../ide/reference/visual-studio-command-aliases.md)

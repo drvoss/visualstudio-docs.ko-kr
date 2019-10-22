@@ -15,14 +15,14 @@ helpviewer_keywords:
 description: Visual Studio에 포함된 Dotfuscator Community 무료 복사본을 사용하여 .NET 애플리케이션을 보호하는 방법을 알아봅니다.
 ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 53bd95875cf990afee6d356744961d3637f16842
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 18e2ee678e5cf71693d12d4ddeb6af51f55a870b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253766"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652435"
 ---
 # <a name="dotfuscator-community"></a>Dotfuscator Community
 

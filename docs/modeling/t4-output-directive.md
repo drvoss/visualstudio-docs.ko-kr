@@ -2,29 +2,29 @@
 title: T4 Output 지시문
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfbe77f5b6e2bbda6a51d392c4dd16b079100e81
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1da8ec010e878ff80a9f46748993705b87193d99
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856250"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606221"
 ---
 # <a name="t4-output-directive"></a>T4 Output 지시문
 
-Visual Studio 텍스트 템플릿에서 `output` 지시문은 변환된 된 파일의 인코딩과 파일 이름 확장명 정의에 사용 됩니다.
+Visual Studio 텍스트 템플릿에서 `output` 지시문은 변환 된 파일의 파일 이름 확장명 및 인코딩을 정의 하는 데 사용 됩니다.
 
- 예를 들어, Visual Studio 프로젝트 템플릿 파일을 포함 하는 경우 **MyTemplate.tt** 다음 지시문을 포함 하는:
+ 예를 들어 Visual Studio 프로젝트에 다음 지시문을 포함 하는 **MyTemplate.tt** 이라는 템플릿 파일이 포함 되어 있는 경우
 
  `<#@output extension=".cs"#>`
 
- Visual Studio에서 파일을 생성 한 다음 **MyTemplate.cs**
+ 그러면 Visual Studio에서 이름이 **MyTemplate.cs** 인 파일을 생성 합니다.
 
- 전처리된 런타임 텍스트 템플릿에는 `output` 지시문이 필요하지 않습니다. 대신 애플리케이션은 `TextTransform()`을 호출하여 생성된 문자열을 가져옵니다. 자세한 내용은 [T4 텍스트 템플릿을 사용 하 여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)합니다.
+ 전처리된 런타임 텍스트 템플릿에는 `output` 지시문이 필요하지 않습니다. 대신 애플리케이션은 `TextTransform()`을 호출하여 생성된 문자열을 가져옵니다. 자세한 내용은 [T4 텍스트 템플릿을 사용 하 여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)을 참조 하세요.
 
 ## <a name="using-the-output-directive"></a>output 지시문 사용
 
@@ -37,9 +37,9 @@ Visual Studio 텍스트 템플릿에서 `output` 지시문은 변환된 된 파�
 ## <a name="extension-attribute"></a>확장 특성
  생성된 텍스트 출력 파일의 파일 이름 확장명을 지정합니다.
 
- 기본값은 **.cs**
+ 기본값은 .cs입니다 **.**
 
- 예제: `<#@ output extension=".txt" #>`
+ 예: `<#@ output extension=".txt" #>`
 
  `<#@ output extension=".htm" #>`
 
@@ -47,10 +47,10 @@ Visual Studio 텍스트 템플릿에서 `output` 지시문은 변환된 된 파�
 
  `<#@ output extension=".vb" #>`
 
- 허용되는 값: 유효한 모든 파일 이름 확장명
+ 허용 되는 값: 유효한 모든 파일 이름 확장명입니다.
 
-## <a name="encoding-attribute"></a>인코딩 특성
- 출력 파일을 생성할 때 사용할 인코딩을 지정합니다. 예를 들어:
+## <a name="encoding-attribute"></a>encoding 특성
+ 출력 파일을 생성할 때 사용할 인코딩을 지정합니다. 예를 들면,
 
  `<#@ output encoding="utf-8"#>`
 

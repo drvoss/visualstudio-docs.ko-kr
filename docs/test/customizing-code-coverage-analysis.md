@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a22bdbc30fc222e26c01a10afdd7a666eebcb9f6
-ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.openlocfilehash: 517f3f5911df6c7de1f59232a4e836bcdc84c448
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71150116"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342364"
 ---
 # <a name="customize-code-coverage-analysis"></a>코드 검사 분석 사용자 지정
 
@@ -40,7 +40,7 @@ ms.locfileid: "71150116"
 
 ::: moniker range=">=vs-2019"
 
-3. 실행 설정 파일을 선택하려면 **테스트 탐색기**의 **설정** 단추에서 화살표를 선택하고 **설정 파일 선택**을 선택합니다. 명령줄에서 테스트를 실행하기 위한 실행 설정 파일을 지정하려면 [단위 테스트 구성](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line)을 참조하세요.
+3. 실행 설정 파일을 선택하려면 **테스트** 메뉴에서 **설정 파일 선택**을 선택합니다. 명령줄에서 테스트를 실행하기 위한 실행 설정 파일을 지정하려면 [단위 테스트 구성](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line)을 참조하세요.
 
 ::: moniker-end
 
@@ -59,7 +59,7 @@ ms.locfileid: "71150116"
 
 ::: moniker range=">=vs-2019"
 
-사용자 지정 설정을 해제했다 다시 사용하도록 설정하려면 **테스트 탐색기**의 **설정** 메뉴에서 파일을 선택 취소 또는 선택합니다.
+사용자 지정 설정을 켜고 끄려면 **테스트** 메뉴에서 파일을 선택 취소 또는 선택합니다.
 
 ::: moniker-end
 
@@ -112,7 +112,7 @@ ms.locfileid: "71150116"
 | PublicKeyToken | 퍼블릭 키 토큰으로 서명된 어셈블리를 찾습니다. |
 | 원본 | 요소가 정의된 소스 파일의 경로 이름으로 요소를 찾습니다. |
 | 특성 | 지정된 특성이 있는 요소를 찾습니다. 특성의 전체 이름을 지정합니다(예: `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`).<br/><br/><xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> 특성을 제외하면 `async`, `await`, `yield return` 및 자동 구현 속성과 같은 언어 기능을 사용하는 코드가 코드 검사 분석에서 제외됩니다. 실제로 생성된 코드를 제외하려면 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 특성만 제외합니다. |
-| 함수 | 매개 변수 목록을 포함하여 정규화된 이름으로 프로시저, 함수 또는 메서드를 찾습니다. [정규식](#regular-expressions)을 사용하여 이름의 일부를 찾을 수도 있습니다.<br/><br/>예제:<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)`(C++) |
+| 함수 | 매개 변수 목록을 포함하여 정규화된 이름으로 프로시저, 함수 또는 메서드를 찾습니다. [정규식](#regular-expressions)을 사용하여 이름의 일부를 찾을 수도 있습니다.<br/><br/>예:<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);`(C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)`(C++) |
 
 ### <a name="regular-expressions"></a>정규식
 
@@ -270,7 +270,7 @@ Included items must then not match any entries in the exclude list to remain inc
             </PublicKeyTokens>
 
             <!-- We recommend you do not change the following values: -->
-            
+
             <!-- Set this to True to collect coverage information for functions marked with the "SecuritySafeCritical" attribute. Instead of writing directly into a memory location from such functions, code coverage inserts a probe that redirects to another function, which in turns writes into memory. -->
             <UseVerifiableInstrumentation>True</UseVerifiableInstrumentation>
             <!-- When set to True, collects coverage information from child processes that are launched with low-level ACLs, for example, UWP apps. -->

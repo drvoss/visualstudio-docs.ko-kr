@@ -1,21 +1,21 @@
 ---
-title: '연습: 텍스트 템플릿을 사용 하 여 코드를 생성 합니다.'
+title: '연습: 텍스트 템플릿을 사용하여 코드 생성'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], generating application code
 - walkthroughs [text templates]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 042d6b6c59489abcfbdcdd4dd10055ea4dedfff5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6650edfc3c953d54578b800e213ee27092045e56
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934336"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666928"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>연습: 텍스트 템플릿을 사용하여 코드 생성
 
@@ -28,7 +28,7 @@ System.Xml 네임스페이스는 XML 문서를 로드하고 메모리에서 자�
 이 예제 프로젝트에서는 템플릿이 샘플 XML 파일을 읽고, 각 노드 형식에 해당하는 클래스를 생성합니다. 직접 작성한 코드에서 이러한 클래스를 사용하여 XML 파일을 탐색할 수 있습니다. 동일한 노드 형식을 사용하는 다른 파일에서 애플리케이션을 실행할 수도 있습니다. 샘플 XML 파일의 목적은 애플리케이션에서 처리하고자 하는 모든 노드 형식의 예를 제공하는 것입니다.
 
 > [!NOTE]
-> 응용 프로그램 [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), Visual Studio에 포함 되어 있는 XML 파일에서 강력한 형식의 클래스를 생성할 수 있습니다. 여기에 표시된 템플릿은 예로서 제공됩니다.
+> Visual Studio에 포함 된 응용 프로그램 [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765)는 XML 파일에서 강력한 형식의 클래스를 생성할 수 있습니다. 여기에 표시된 템플릿은 예로서 제공됩니다.
 
 샘플 파일은 다음과 같습니다.
 
@@ -73,7 +73,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 }
 ```
 
-강력한 형식의 버전에서는 XML 스키마 변경 결과 변경에서 클래스입니다. 컴파일러 변경 해야 하는 응용 프로그램 코드의 일부를 강조 표시 합니다. 제네릭 XML 코드를 사용하는 형식화되지 않은 버전에서는 이러한 기능이 지원되지 않습니다.
+강력한 형식의 버전에서 XML 스키마를 변경 하면 클래스가 변경 됩니다. 컴파일러는 변경 해야 하는 응용 프로그램 코드의 일부를 강조 표시 합니다. 제네릭 XML 코드를 사용하는 형식화되지 않은 버전에서는 이러한 기능이 지원되지 않습니다.
 
 이 프로젝트에서는 형식이 지정된 버전을 가능하게 하는 클래스를 생성하기 위해 단일 템플릿 파일이 사용됩니다.
 
@@ -85,7 +85,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 1. **파일** 메뉴에서 **새로 만들기** 를 클릭한 다음 **프로젝트**를 클릭합니다.
 
-2. **Visual C#** 노드를 클릭한 다음, **템플릿** 창에서 **콘솔 응용 프로그램**을 클릭합니다.
+2. **Visual C#** 노드를 클릭한 다음, **템플릿** 창에서 **콘솔 애플리케이션**을 클릭합니다.
 
 ### <a name="add-a-prototype-xml-file-to-the-project"></a>프로토타입 XML 파일을 프로젝트에 추가
 
@@ -103,7 +103,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 ### <a name="add-a-test-code-file"></a>테스트 코드 파일 추가
 
-C# 파일을 프로젝트에 추가하고, 여기에 원하는 코드의 샘플을 작성합니다. 예를 들어:
+C# 파일을 프로젝트에 추가하고, 여기에 원하는 코드의 샘플을 작성합니다. 예를 들면,
 
 ```csharp
 using System;
@@ -129,7 +129,7 @@ namespace MyProject
 
 ### <a name="add-a-text-template-file"></a>텍스트 템플릿 파일 추가
 
-텍스트 템플릿 파일을 추가 하 고 출력 확장명으로 *.cs*합니다.
+텍스트 템플릿 파일을 추가 하 고 출력 확장을 *.cs*로 설정 합니다.
 
 1. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가**를 클릭한 다음 **새 항목**을 클릭합니다.
 
@@ -140,7 +140,7 @@ namespace MyProject
 
 3. 파일의 템플릿 지시문에서 `hostspecific` 특성을 `true`로 변경합니다.
 
-     이 변경 하면 Visual Studio 서비스에 대 한 액세스 권한을 얻으려고 템플릿 코드입니다.
+     이렇게 변경 하면 템플릿 코드가 Visual Studio 서비스에 액세스할 수 있습니다.
 
 4. 템플릿이 C# 파일을 생성할 수 있도록 출력 지시문에서 확장 특성을 ".cs"로 변경합니다. Visual Basic 프로젝트에서는 이를 ".vb"로 변경할 수 있습니다.
 
@@ -258,7 +258,7 @@ XML 파일을 읽고 클래스 선언을 생성하려면 템플릿 내용을 다
 #>
 ```
 
-이 단계에서 생성 된 *.cs* 파일에 다음 선언을 포함 합니다.
+이 단계에서 생성 된 *.cs* 파일에는 다음 선언이 포함 됩니다.
 
 ```csharp
 public partial class Catalog {}
@@ -270,7 +270,7 @@ public partial class Song {}
 
 ### <a name="access-the-visual-studio-api"></a>Visual Studio API에 액세스
 
-설정 합니다 `hostspecific` 특성을 `<#@template#>` 지시문을 사용 하면 Visual Studio API에 대 한 액세스를 가져오려면 서식 파일. 템플릿에서는 이 특성을 사용하여 프로젝트 파일의 위치를 가져올 수 있는데, 이렇게 하면 템플릿 코드에서 절대 파일 경로를 사용하지 않아도 됩니다.
+@No__t_1 지시문의 `hostspecific` 특성을 설정 하면 템플릿이 Visual Studio API에 대 한 액세스 권한을 얻을 수 있습니다. 템플릿에서는 이 특성을 사용하여 프로젝트 파일의 위치를 가져올 수 있는데, 이렇게 하면 템플릿 코드에서 절대 파일 경로를 사용하지 않아도 됩니다.
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -400,19 +400,19 @@ namespace MyProject
 }
 ```
 
-### <a name="write-and-update-the-application"></a>작성 하 고 응용 프로그램 업데이트
+### <a name="write-and-update-the-application"></a>응용 프로그램 작성 및 업데이트
 
 이제 제네릭 XML 코드를 사용하는 대신 생성된 클래스를 사용하여 강력한 형식의 스타일로 애플리케이션을 작성할 수 있습니다.
 
 XML 스키마가 변경되면 새 클래스를 쉽게 생성할 수 있습니다. 컴파일러는 애플리케이션 코드를 어디에서 업데이트해야 하는지를 개발자에게 알려 줍니다.
 
-클래스를 예제 XML 파일이 변경 되 면 다시 생성 하려면 클릭 **모든 템플릿 변형** 에 **솔루션 탐색기** 도구 모음입니다.
+예제 XML 파일이 변경 될 때 클래스를 다시 생성 하려면 **솔루션 탐색기** 도구 모음에서 **모든 템플릿 변환** 을 클릭 합니다.
 
 ## <a name="conclusion"></a>결론
 
 이 연습에서는 코드 생성의 몇 가지 방법과 이점에 대해 설명합니다.
 
-- *코드 생성* 이란 *모델*에서 응용 프로그램 소스 코드의 일부를 생성하는 것입니다. 모델은 애플리케이션 도메인에 적합한 형식으로 정보를 포함하고 있으며, 애플리케이션의 수명 동안 변경될 수 있습니다.
+- *코드 생성* 이란 *모델*에서 애플리케이션 소스 코드의 일부를 생성하는 것입니다. 모델은 애플리케이션 도메인에 적합한 형식으로 정보를 포함하고 있으며, 애플리케이션의 수명 동안 변경될 수 있습니다.
 
 - 강력한 형식 지정은 코드 생성의 이점 중 하나입니다. 모델은 사용자에게 좀 더 적합한 형식으로 정보를 표현하며, 생성된 코드는 애플리케이션의 다른 부분에서 형식 집합을 사용하여 정보를 처리하도록 허용합니다.
 
@@ -428,7 +428,7 @@ XML 스키마가 변경되면 새 클래스를 쉽게 생성할 수 있습니다
 
 **오류 목록**에 템플릿 변환 또는 컴파일 오류가 표시된 경우 또는 출력 파일이 정확히 생성되지 않은 경우 [TextTransform 유틸리티 사용하여 파일 생성](../modeling/generating-files-with-the-texttransform-utility.md)에 설명된 방법으로 텍스트 템플릿의 문제를 해결할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [T4 텍스트 템플릿을 사용하여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 - [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)

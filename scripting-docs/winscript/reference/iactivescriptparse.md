@@ -13,23 +13,23 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a987b4be3430f2ed8b0562f41b51a94797f96dc4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 81f64352c15dce233058d49b70e35da7e2238688
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009340"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72561646"
 ---
 # <a name="iactivescriptparse"></a>IActiveScriptParse
-Windows 스크립트 엔진을 스크립트에 추가 될 원시 텍스트 코드 스크립틀릿을 사용 하면 정보나 실행된 시간에 계산할 식 텍스트를 구현 하는지는 `IActiveScriptParse` 인터페이스입니다. VBScript와 같은 독립 없습니다 제작 환경에 있는 해석 된 스크립팅 언어에 대 한 대체 메커니즘을 제공 (이외의 `IPersist*`) 스크립팅 엔진에 스크립트 코드를 가져오려면 및 스크립트 조각 다양 한 개체에 연결 하려면 이벤트입니다.  
+Windows 스크립트 엔진에서 원시 텍스트 코드 스크립틀릿를 스크립트에 추가 하거나 런타임에 식 텍스트를 평가할 수 있도록 허용 하면 `IActiveScriptParse` 인터페이스를 구현 합니다. VBScript와 같이 독립적인 제작 환경이 없는 해석 된 스크립팅 언어의 경우 스크립트 코드를 스크립팅 엔진으로 가져오고 스크립트 조각을 다양 한 개체 이벤트에 연결 하는 대체 메커니즘 (`IPersist*` 이외)을 제공 합니다. .  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드  
   
 |메서드|설명|  
 |------------|-----------------|  
-|[IActiveScriptParse::InitNew](../../winscript/reference/iactivescriptparse-initnew.md)|스크립팅 엔진을 초기화합니다.|  
-|[IActiveScriptParse::AddScriptlet](../../winscript/reference/iactivescriptparse-addscriptlet.md)|스크립트에 코드 scriptlet을 추가 합니다.|  
-|[IActiveScriptParse::ParseScriptText](../../winscript/reference/iactivescriptparse-parsescripttext.md)|네임 스페이스에 선언을 추가 하 고 적절 하 게 코드를 평가 주어진된 코드 스크립트릿 구문 분석 합니다.|  
+|[IActiveScriptParse::InitNew](../../winscript/reference/iactivescriptparse-initnew.md)|스크립팅 엔진을 초기화 합니다.|  
+|[IActiveScriptParse::AddScriptlet](../../winscript/reference/iactivescriptparse-addscriptlet.md)|스크립트에 scriptlet 코드를 추가 합니다.|  
+|[IActiveScriptParse::ParseScriptText](../../winscript/reference/iactivescriptparse-parsescripttext.md)|지정 된 코드 scriptlet를 구문 분석 하 여, 이름 공간에 선언을 추가 하 고 코드를 적절 하 게 평가 합니다.|  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [액티브 스크립트 인터페이스](../../winscript/reference/active-script-interfaces.md)

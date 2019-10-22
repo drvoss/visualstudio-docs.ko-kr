@@ -1,4 +1,4 @@
----
+﻿---
 title: '연습: JavaScript를 사용 하 여 SDK 만들기 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,7 +16,7 @@ ms.lasthandoff: 05/29/2019
 ms.locfileid: "66312544"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>연습: JavaScript를 사용 하 여 SDK 만들기
-이 연습에서는 JavaScript를 이용해 간단한 수학 SDK를 만들어 Visual Studio 확장(VSIX)으로 사용하는 방법을 설명합니다. 이 연습은 다음과 같은 파트로 구분됩니다.
+이 연습에서는 JavaScript를 이용해 간단한 수학 SDK를 만들어 Visual Studio 확장(VSIX)으로 사용하는 방법을 설명합니다.  이 연습은 다음과 같은 파트로 구분됩니다.
 
 - [SimpleMathVSIX 확장 SDK 프로젝트를 만들려면](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSimpleMathVSIX)
 
@@ -33,9 +33,9 @@ ms.locfileid: "66312544"
 
 2. 템플릿 범주 목록에서, **Visual C#** 아래에서 **확장성**을 선택한 후 **VSIX 프로젝트** 템플릿을 선택합니다.
 
-3. **이름** 텍스트 상자에서, `SimpleMathVSIX` 선택 후 **확인** 버튼을 선택합니다.	
+3. **이름** 텍스트 상자에서, `SimpleMathVSIX` 선택 후 **확인** 버튼을 선택합니다.
 
-4. **Visual Studio 패키지 마법사**가 나타나는 경우, **시작** 페이지에서 **다음** 버튼을 클릭한 후 **7 페이지 중 1 페이지**에서 **완료** 버튼을 선택합니다. 
+4. **Visual Studio 패키지 마법사**가 나타나는 경우, **시작** 페이지에서 **다음** 버튼을 클릭한 후 **7 페이지 중 1 페이지**에서 **완료** 버튼을 선택합니다.
 
      비록 **매니페스트 디자이너**가 열리지만, 이 연습에서는 간단하게 매니페스트 파일을 직접 수정하겠습니다.
 

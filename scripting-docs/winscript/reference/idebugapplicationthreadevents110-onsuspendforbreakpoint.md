@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThreadEvents110::OnSuspendForBreakPoint | Microsoft Docs
+title: 'IDebugApplicationThreadEvents110:: OnSuspendForBreakPoint | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a9e39af9784b139e935c271fca6db565136352cf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b5d73d7769dd48889a75da63da64be1d2977a088
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440429"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573340"
 ---
 # <a name="idebugapplicationthreadevents110onsuspendforbreakpoint"></a>IDebugApplicationThreadEvents110::OnSuspendForBreakPoint
-스레드 완벽 하 게 일시 중단 된 중단점에 대 한 및 일반 실행 아직 다시 시작할 수 없는 있는지 여부를 결정 합니다.  
+스레드가 중단점에 대해 완전히 일시 중단 되었으며 아직 정상적인 실행을 다시 시작 하지 않는지 여부를 확인 합니다.  
   
 > [!IMPORTANT]
-> [IDebugApplicationThreadEvents110 인터페이스](../../winscript/reference/idebugapplicationthreadevents110-interface.md) 는 PDM v11.0에 의해 구현 된 이상. activdbg100.h에서 찾을 수 있습니다.  
+> [IDebugApplicationThreadEvents110 인터페이스](../../winscript/reference/idebugapplicationthreadevents110-interface.md) 는 PDM v 11.0 이상에 의해 구현 됩니다. activdbg100.h에서 찾을 수 있습니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -33,7 +33,7 @@ HRESULT OnSuspendForBreakPoint( void );
 ```  
   
 #### <a name="parameters"></a>매개 변수  
- 이 메서드는 매개 변수가 없습니다.  
+ 이 메서드에는 매개 변수가 없습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>참조  
  [IDebugApplicationThreadEvents110 인터페이스](../../winscript/reference/idebugapplicationthreadevents110-interface.md)

@@ -6,21 +6,21 @@ ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6eb44970cc29198ad9044281e566727a64b893c8
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: a48c01203d2e951e917482de3c0d9c2bec29ae01
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871573"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660566"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Microsoft Excel을 지원하도록 코딩된 UI 테스트 및 작업 기록 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 코딩된 UI 테스트 및 작업 기록에 대한 테스트 프레임워크는 가능한 사용자 인터페이스를 일부 지원하지 않습니다. 테스트하려는 특정 UI를 지원하지 않을 수 있습니다. 예를 들어 [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] 스프레드시트에 대한 작업 기록 또는 코딩된 UI 테스트는 바로 만들 수 없습니다. 그러나 코딩된 UI 테스트 프레임워크의 확장성을 이용하여 특정 UI를 지원할 코딩된 UI 테스트 프레임워크에 대한 고유한 확장을 만들 수 있습니다. 다음 항목에서는 프레임워크를 확장하여 [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]에 대한 작업 기록 및 코딩된 UI 테스트 생성을 지원하는 방법을 제공합니다. 지원되는 플랫폼에 대한 자세한 내용은 [코딩된 UI 테스트 및 작업 기록에 지원되는 구성 및 플랫폼](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)을 참조하세요.
 
- **요구 사항**
+ **Requirements**
 
 - Visual Studio Enterprise
 
@@ -50,12 +50,12 @@ ms.locfileid: "68871573"
 ### <a name="microsoft-excel-add-in-excelcodeduiaddinhelper"></a>Microsoft Excel 추가 기능: ExcelCodedUIAddinHelper
  이 프로젝트에는 Excel 프로세스에서 실행되는 추가 기능이 포함됩니다. 추가 기능 프로젝트에 대한 간략한 개요는 [코딩된 UI 테스트에 대한 샘플 Excel 추가 기능](../test/sample-excel-add-in-for-coded-ui-testing.md)을 참조하세요.
 
- 자세한 내용은 [연습: Excel](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)용 첫 VSTO 추가 기능 만들기
+ 자세한 내용은 [연습: Excel용 첫 VSTO 추가 기능 만들기](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)를 참조하세요.
 
 ### <a name="excel-ui-communication-exceluicommunicationhelper"></a>Excel UI 통신: ExcelUIcommunicationHelper
  이 프로젝트에는 코딩된 UI 테스트 프레임워크와 Excel 간 데이터를 전달하기 위해 사용되는 `IExcelUICommunication` 인터페이스 및 정보 클래스가 포함되어 있습니다. 자세한 내용은 [샘플 Excel Communicator 인터페이스](../test/sample-excel-communicator-interface.md)를 참조하세요.
 
-### <a name="coded-ui-test-extension-codeduiexentsibilitysample"></a>코딩 된 UI 테스트 확장: CodedUIExentsibilitySample
+### <a name="coded-ui-test-extension-codeduiexentsibilitysample"></a>코딩된 UI 테스트 확장: CodedUIExentsibilitySample
  이 프로젝트에는 Excel 워크시트 테스트에 사용되는 사용자 지정 클래스가 포함됩니다. 이 클래스의 각 코드는 별도의 설명 없이도 바로 이해할 수 있습니다. 그러나 각 사용자 지정 클래스에 대해 간단한 설명을 제공합니다. 자세한 내용은 [Excel용 샘플 코딩된 UI 테스트 확장명](../test/sample-coded-ui-test-extension-for-excel.md)을 참조하세요.
 
 ### <a name="deploying-your-add-in-and-extension"></a>추가 기능 및 확장명 프로그램 배포
@@ -70,11 +70,11 @@ ms.locfileid: "68871573"
 ### <a name="testing-excel-with-the-sampletestproject"></a>SampleTestProject를 사용하여 Excel 테스트
  가지고 있거나 가지고 있지 않은 특정 버전의 Excel을 사용하는 제공된 테스트 프로젝트에서 테스트를 실행하거나 고유한 테스트 프로젝트를 만들어 자신만의 테스트를 기록할 수 있습니다. 자세한 내용은 [코딩된 UI 테스트 만들기](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)를 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>
-- [Microsoft.visualstudio.testtools.uitest.common.uitestactionfilter>](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110))
+- [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110))
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>
 - [UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)
 - [최선의 코딩된 UI 테스트 방법](../test/best-practices-for-coded-ui-tests.md)

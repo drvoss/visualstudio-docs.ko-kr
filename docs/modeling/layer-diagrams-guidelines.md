@@ -7,21 +7,21 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6241a92d8f40a75ba98f09b7e1e0f113e45d4be8
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 39da24dd0d8b7372c63609124ee0b9427fccb03d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766506"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661498"
 ---
 # <a name="dependency-diagrams-guidelines"></a>종속성 다이어그램: 지침
 
-Visual Studio에서 *종속성 다이어그램* 을 만들어 상위 수준에서 앱의 아키텍처를 설명 합니다. 종속성 다이어그램으로 코드의 유효성을 검사 하 여 코드를이 디자인과 일관 되 게 유지 해야 합니다. 빌드 프로세스에 레이어 유효성 검사를 포함할 수도 있습니다. Channel [9 비디오를 참조 하세요. 종속성 다이어그램](http://go.microsoft.com/fwlink/?LinkID=252073)을 사용 하 여 아키텍처를 디자인 하 고 유효성을 검사 합니다.
+Visual Studio에서 *종속성 다이어그램* 을 만들어 상위 수준에서 앱의 아키텍처를 설명 합니다. 종속성 다이어그램으로 코드의 유효성을 검사 하 여 코드를이 디자인과 일관 되 게 유지 해야 합니다. 빌드 프로세스에 레이어 유효성 검사를 포함할 수도 있습니다. [Channel 9 비디오: 종속성 다이어그램을 사용 하 여 아키텍처 디자인 및 유효성 검사](http://go.microsoft.com/fwlink/?LinkID=252073)를 참조 하세요.
 
 이 기능을 지 원하는 Visual Studio 버전을 확인 하려면 [아키텍처 및 모델링 도구에 대 한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조 하세요.
 
@@ -30,7 +30,7 @@ Visual Studio에서 *종속성 다이어그램* 을 만들어 상위 수준에�
 
 ## <a name="what-is-a-dependency-diagram"></a>종속성 다이어그램 이란?
 
-기존 아키텍처 다이어그램과 마찬가지로 종속성 다이어그램은 디자인의 주요 구성 요소 또는 기능 단위와 해당 상호 종속성을 식별 합니다. *계층*이라고 하는 다이어그램의 각 노드는 네임 스페이스, 프로젝트 또는 기타 아티팩트의 논리적 그룹을 나타냅니다. 디자인에 존재해야 하는 종속성을 그릴 수 있습니다. 전형적인 아키텍처 다이어그램과 달리 소스 코드의 실제 종속성이 사용자가 지정한 의도한 종속성에 부합되는지 확인할 수 있습니다. 유효성 검사를 [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]에 대한 정기 빌드의 일부로 포함하여 프로그램 코드가 향후 변경되더라도 시스템의 아키텍처와 계속 일치하도록 할 수 있습니다. 종속성 [다이어그램을 참조 하세요. 참조](../modeling/layer-diagrams-reference.md)를 참조하세요.
+기존 아키텍처 다이어그램과 마찬가지로 종속성 다이어그램은 디자인의 주요 구성 요소 또는 기능 단위와 해당 상호 종속성을 식별 합니다. *계층*이라고 하는 다이어그램의 각 노드는 네임 스페이스, 프로젝트 또는 기타 아티팩트의 논리적 그룹을 나타냅니다. 디자인에 존재해야 하는 종속성을 그릴 수 있습니다. 전형적인 아키텍처 다이어그램과 달리 소스 코드의 실제 종속성이 사용자가 지정한 의도한 종속성에 부합되는지 확인할 수 있습니다. 유효성 검사를 [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]에 대한 정기 빌드의 일부로 포함하여 프로그램 코드가 향후 변경되더라도 시스템의 아키텍처와 계속 일치하도록 할 수 있습니다. [종속성 다이어그램: 참조](../modeling/layer-diagrams-reference.md)를 참조 하세요.
 
 ## <a name="how-to-design-or-update-your-app-with-dependency-diagrams"></a>종속성 다이어그램을 사용 하 여 앱을 디자인 하거나 업데이트 하는 방법
 
@@ -70,7 +70,7 @@ Visual Studio에서 *종속성 다이어그램* 을 만들어 상위 수준에�
 
 레이어는 프로젝트, 코드 파일, 네임 스페이스, 클래스, 메서드 등 *아티팩트의*논리 그룹을 나타냅니다. 시각적 개체 C# 및 Visual Basic 프로젝트의 아티팩트에서 레이어를 만들거나 Word 파일 또는 PowerPoint 프레젠테이션과 같은 문서를 연결 하 여 사양 또는 계획을 레이어에 연결할 수 있습니다. 각 레이어는 다이어그램에서 직사각형으로 나타나고 그에 연결된 아티팩트의 수를 보여줍니다. 레이어에는 보다 구체적인 작업을 설명하는 중첩된 레이어가 포함될 수 있습니다.
 
-일반적인 지침대로 해당 기능에 따라 레이어의 이름을 지정합니다(예: "프레젠테이션" 또는 "서비스"). 아티팩트가 밀접하게 상호 종속되는 경우 동일한 레이어에 배치합니다. 아티팩트를 개별적으로 업데이트하거나 별도 애플리케이션에서 사용할 수 있는 경우 다른 레이어에 배치합니다. 계층화 패턴에 대 한 자세한 내용은의 패턴 & 사례 사이트 [http://go.microsoft.com/fwlink/?LinkId=145794](http://go.microsoft.com/fwlink/?LinkId=145794)를 참조 하십시오.
+일반적인 지침대로 해당 기능에 따라 레이어의 이름을 지정합니다(예: "프레젠테이션" 또는 "서비스"). 아티팩트가 밀접하게 상호 종속되는 경우 동일한 레이어에 배치합니다. 아티팩트를 개별적으로 업데이트하거나 별도 애플리케이션에서 사용할 수 있는 경우 다른 레이어에 배치합니다. 계층화 패턴에 대 한 자세한 내용은 [http://go.microsoft.com/fwlink/?LinkId=145794](http://go.microsoft.com/fwlink/?LinkId=145794)의 패턴 & 사례 사이트를 참조 하세요.
 
 > [!TIP]
 > 계층에 연결할 수 있지만 종속성 다이어그램에 대 한 유효성 검사를 지원 하지 않는 특정 형식의 아티팩트가 있습니다. 아티팩트가 유효성 검사를 지원 하는지 여부를 확인 하려면 **레이어 탐색기** 를 열어 아티팩트 링크의 **유효성 검사 지원** 속성을 검사 합니다. [레이어 간의 기존 종속성 검색](#Generate)을 참조 하세요.
@@ -81,7 +81,7 @@ Visual Studio에서 *종속성 다이어그램* 을 만들어 상위 수준에�
 
 - [코드에서 종속성 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)
 
-- [코드 맵을 사용하여 응용 프로그램 디버그](../modeling/use-code-maps-to-debug-your-applications.md)
+- [코드 맵을 사용하여 애플리케이션 디버그](../modeling/use-code-maps-to-debug-your-applications.md)
 
 - [솔루션 전체의 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)
 
@@ -102,7 +102,7 @@ Visual Studio에서 *종속성 다이어그램* 을 만들어 상위 수준에�
 
 시스템이 나 계획 된 아키텍처에 대 한 변경 내용을 설명 하려면 다음 단계를 사용 하 여 종속성 다이어그램을 편집 합니다. 또한 확장하기 전에 리팩터링을 약간 변경하여 코드의 구조를 향상시키는 것도 고려할 수 있습니다. [코드 구조 개선](#Improving)을 참조 하십시오.
 
-|**수행할 작업**|**다음 단계 수행**|
+|**대상**|**다음 단계 수행**|
 |-|-|
 |있지 말아야 할 종속성 삭제|종속성을 클릭 한 다음 **delete**키를 누릅니다.|
 |종속성 방향 변경 또는 제한|**Direction** 속성을 설정 합니다.|
@@ -123,7 +123,7 @@ Visual Studio에서 *종속성 다이어그램* 을 만들어 상위 수준에�
 
 새 프로젝트의 개발을 시작하거나 새 프로젝트에서 새 영역을 개발하게 될 경우 코드 개발을 시작하기 전에 레이어 및 종속성을 그리면 주요 구성 요소를 식별하는 데 도움이 될 수 있습니다.
 
-- 가능 하면 종속성 다이어그램에 식별할 수 있는 **아키텍처 패턴을 표시** 합니다. 예를 들어 데스크톱 응용 프로그램을 설명 하는 종속성 다이어그램에는 프레젠테이션, 도메인 논리 및 데이터 저장소와 같은 레이어가 포함 될 수 있습니다. 응용 프로그램 내의 단일 기능을 다루는 종속성 다이어그램에는 모델, 뷰 및 컨트롤러와 같은 레이어가 있을 수 있습니다. 이러한 패턴에 대 한 자세한 내용은 패턴 [& 사례를 참조 하세요. 응용 프로그램](http://go.microsoft.com/fwlink/?LinkId=145794)아키텍처.
+- 가능 하면 종속성 다이어그램에 식별할 수 있는 **아키텍처 패턴을 표시** 합니다. 예를 들어 데스크톱 응용 프로그램을 설명 하는 종속성 다이어그램에는 프레젠테이션, 도메인 논리 및 데이터 저장소와 같은 레이어가 포함 될 수 있습니다. 응용 프로그램 내의 단일 기능을 다루는 종속성 다이어그램에는 모델, 뷰 및 컨트롤러와 같은 레이어가 있을 수 있습니다. 이러한 패턴에 대 한 자세한 내용은 [패턴 & 사례: 응용 프로그램 아키텍처](http://go.microsoft.com/fwlink/?LinkId=145794)를 참조 하세요.
 
 - 네임 스페이스, 클래스 또는 구성 요소와 같은 **각 계층에 대 한 코드 아티팩트를 만듭니다** . 이렇게 하면 보다 쉽게 코드를 따라가고 코드 아티팩트를 레이어에 연결할 수 있습니다. 각 아티팩트를 만드는 즉시 해당 레이어에 연결합니다.
 
@@ -172,7 +172,7 @@ Visual Studio에서 *종속성 다이어그램* 을 만들어 상위 수준에�
 
 코드의 이후 변경 내용이 종속성 다이어그램을 따르는지 확인 하려면 솔루션의 표준 빌드 프로세스에 레이어 유효성 검사를 포함 합니다. 다른 팀 멤버가 솔루션을 빌드할 때마다 코드의 종속성과 종속성 다이어그램 간의 차이점이 빌드 오류로 보고 됩니다. 빌드 프로세스에 레이어 유효성 검사를 포함 하는 방법에 대 한 자세한 내용은 [종속성 다이어그램을 사용 하 여 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [종속성 다이어그램: 참조](../modeling/layer-diagrams-reference.md)
 - [코드에서 종속성 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)

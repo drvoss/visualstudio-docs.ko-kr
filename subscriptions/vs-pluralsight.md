@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: 선택한 Visual Studio 구독에 포함된 Pluralsight 교육 구독에 대해 알아봅니다.
-ms.openlocfilehash: 897790684420c35d173f1d8144f735815ca4034f
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 25a699f0e97f88fefaaf5b62f752ef579c0cd736
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787651"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342393"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Pluralsight 교육 혜택
 
@@ -47,16 +47,14 @@ ms.locfileid: "68787651"
    
 
 6. 계정이 생성되면 사용자 이름이 들어 있고 암호 생성을 요청하는 전자 메일을 받게 됩니다.  암호를 입력하고 다시 입력하여 확인한 다음 **Log in to Pluralsight**(Pluralsight에 로그인)를 클릭합니다.
-   > [!div class="mx-imgBorder"]
-   > ![Pluralsight 혜택 환영 이메일](_img/vs-pluralsight/vs-pluralsight-welcome-email.png)
 
 7. 환영 전자 메일에 제공된 사용자 이름을 입력하고 방금 만든 암호를 입력한 다음 **로그인**을 클릭합니다.
 
-8. 이것으로 끝입니다.  이제 수천 개의 Pluralsight 과정으로 학습을 시작할 준비가 되었습니다.
+8. 정말 간단하죠.  이제 수천 개의 Pluralsight 과정으로 학습을 시작할 준비가 되었습니다.
 
 ## <a name="eligibility"></a>자격
 
-|                          구독 수준                          |     채널      |    혜택    |   갱신 가능?   |
+|                          구독 수준                          |     채널      |    이점    |   갱신 가능?   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
 |          Visual Studio Enterprise(Standard)           | VL, Azure, 일반 정품 |   6개월    | 예<sup>2</sup> |
 |         Visual Studio Professional(표준)          | VL, Azure, 일반 정품 |   3개월    | 예<sup>2</sup> |

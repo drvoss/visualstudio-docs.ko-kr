@@ -8,18 +8,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1e4f59b672049ee8148c94dbbf51e560e22c31e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b6c785b755b64f0dd7e367a01d9c05c1981ea558
+ms.sourcegitcommit: d3e423a9a4ed773a54d14b247e1b5bfc95de8816
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582014"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71693008"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio 사용자 환경 개선 프로그램
 
 VSCEIP(Visual Studio 사용자 환경 개선 프로그램)는 Microsoft가 시간이 지남에 따라 Visual Studio를 개선하는 데 도움이 되도록 설계되었습니다. 이 프로그램은 컴퓨터에서 사용자의 작업을 방해하지 않고 [오류](../ide/diagnostic-data-collection.md), 컴퓨터 하드웨어 및 사용자가 Visual Studio를 사용하는 방법에 대한 정보를 수집합니다. 수집되는 정보는 Microsoft가 개선할 기능을 식별하는 데 도움이 됩니다. 이 문서에서는 VSCEIP를 옵트인하거나 옵트아웃하는 방법에 대해 설명합니다.
 
 [!INCLUDE [gdpr-hybrid-note](../misc/includes/gdpr-hybrid-note.md)]
+> [!NOTE]
+> VSCEIP 원격 분석 옵트인 또는 출력 설정은 Visual Studio의 '문제 보고'에 적용되지 않습니다. 문제 로그를 보고할 때 '제출'을 클릭하여 사용 권한을 제공하는 경우에만 Microsoft로 전송됩니다. '문제 보고'에 제출하기 전에 로그를 관리하려면 [피드백 데이터 프라이버시](./developer-community-privacy.md)를 참조하세요.
 
 ## <a name="opt-in-or-out"></a>옵트인 또는 옵트아웃
 
@@ -70,7 +72,7 @@ VSCEIP를 통해 수집, 처리 또는 전송되는 정보에 대한 자세한 �
 ## <a name="see-also"></a>참고 항목
 
 * [Visual Studio에서 수집한 진단 정보](diagnostic-data-collection.md)
-* [의견 보내기](../ide/talk-to-us.md)
+* [Visual Studio 피드백 옵션](../ide/feedback-options.md)
 * [Visual Studio의 문제를 보고하는 방법](../ide/how-to-report-a-problem-with-visual-studio.md)
 * [Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com/)
 * [Microsoft 개인정보처리방침](https://privacy.microsoft.com/privacystatement)

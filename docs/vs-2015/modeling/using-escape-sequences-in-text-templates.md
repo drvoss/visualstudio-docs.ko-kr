@@ -1,5 +1,5 @@
 ---
-title: 텍스트 템플릿에서 이스케이프 시퀀스를 사용 하 여 | Microsoft Docs
+title: 텍스트 템플릿에서 이스케이프 시퀀스 사용 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -8,36 +8,36 @@ helpviewer_keywords:
 - text templates, escape sequences
 ms.assetid: 36fff542-2f42-460f-a2d5-03fc76817f3b
 caps.latest.revision: 31
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1f564200d0bdac56e975c2f2ab27439652247605
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a45aa36ddce57141a7e1e851f7f0766b77015ee
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68183897"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659429"
 ---
 # <a name="using-escape-sequences-in-text-templates"></a>텍스트 템플릿에서 이스케이프 시퀀스 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-텍스트 템플릿에서 텍스트 템플릿 태그를 생성 하 고 (C# 코드에만 해당)에서 이스케이프 시퀀스를 사용할 수 있습니다 이스케이프 제어 문자를 인용 합니다.  
-  
- 출력 파일에 표준 코드 블록에 대 한 열기 및 닫기 태그를 인쇄 하려면 태그를 다음과 같이 이스케이프 합니다.  
-  
-```  
-\<# ... \#>  
-```  
-  
- 다른 텍스트 템플릿 지시문 및 코드 블록 태그를 사용 하 여 동일 하 게 수행할 수 있습니다.  
-  
- 텍스트 블록을 텍스트 템플릿 태그를 이스케이프 하는 데 사용 하는 문자열에 포함 된 경우 다음과 같은 이스케이프 시퀀스를 사용할 수 있습니다.  
-  
-- 텍스트 템플릿 태그를 이스케이프 수가 짝수인 경우 앞 (\\) 템플릿을 문자 파서 되며 이스케이프 문자가의 절반을 포함 텍스트 템플릿 태그 시퀀스를 포함 합니다. 예를 들어, 텍스트 템플릿에서 이스케이프 문자가 4 개 있는 경우 있습니다 됩니다 두 "\\" 생성된 된 파일에는 문자입니다.  
-  
-- 텍스트 템플릿 태그 홀수 이스케이프 오는 경우 (\\) 문자 템플릿 파서가 포함 됩니다의 절반을 "\\" 태그 자체 문자 (\<# 또는 #>). 텍스트 템플릿 태그에 태그를 간주 되지 않습니다.  
-  
-- 경우 이스케이프 (\\)에서 제어 문자 또는 (C#에 해당)의 따옴표를 이스케이프 위치 이외의 순서와 관계 없이 다른 곳에 표시 되는 문자의 문자는 직접 출력 합니다.  
-  
-## <a name="see-also"></a>관련 항목  
+텍스트 템플릿에서 이스케이프 시퀀스를 사용 하 여 텍스트 템플릿 태그를 생성 하 고 ( C# 코드만) 제어 문자 및 따옴표를 이스케이프할 수 있습니다.
+
+ 표준 코드 블록의 여는 태그와 닫는 태그를 출력 파일에 인쇄 하려면 다음과 같이 태그를 이스케이프 합니다.
+
+```
+\<# ... \#>
+```
+
+ 다른 텍스트 템플릿 지시문 및 코드 블록 태그를 사용 하 여 동일한 작업을 수행할 수 있습니다.
+
+ 텍스트 블록에 텍스트 템플릿 태그를 이스케이프 하는 데 사용 되는 문자열이 포함 된 경우 다음 이스케이프 시퀀스를 사용할 수 있습니다.
+
+- 텍스트 템플릿 태그 앞에 짝수 개의 이스케이프 문자 (\\)가 오면 템플릿 파서는 이스케이프 문자의 절반을 포함 하 고 시퀀스를 텍스트 템플릿 태그로 포함 합니다. 예를 들어 텍스트 템플릿에 이스케이프 문자가 4 개 있는 경우 생성 된 파일에는 두 개의 "\\" 문자가 있습니다.
+
+- 텍스트 템플릿 태그 앞에 홀수 개의 이스케이프 문자 (\\)가 오면 템플릿 파서는 "\\" 문자와 태그 자체 (\< # 또는 # >)의 절반을 포함 합니다. 태그는 텍스트 템플릿 태그로 간주 되지 않습니다.
+
+- 이스케이프 (\\) 문자가 제어 문자나 따옴표를 이스케이프 하는 위치 이외의 다른 위치에 있는 경우 (의 경우에 C# 만) 문자는 직접 출력 됩니다.
+
+## <a name="see-also"></a>관련 항목:
  [방법: 이스케이프 시퀀스를 사용하여 템플릿에서 템플릿 생성](../modeling/how-to-generate-templates-from-templates-by-using-escape-sequences.md)

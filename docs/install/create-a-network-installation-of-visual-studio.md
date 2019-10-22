@@ -1,7 +1,7 @@
 ---
 title: 네트워크 기반 설치 만들기
 description: 기업 내에서 Visual Studio를 배포하기 위한 네트워크 설치 지점을 만드는 방법을 알아봅니다.
-ms.date: 08/06/2019
+ms.date: 10/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1d18d3a3de423cc63569911bbe49477b5e6f5f26
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: da4da0a106d37b081e0a7c57fe905048f3314174
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180299"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381083"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Visual Studio의 네트워크 설치 만들기
 
@@ -33,31 +33,40 @@ ms.locfileid: "70180299"
 
 ## <a name="download-the-visual-studio-bootstrapper"></a>Visual Studio 부트스트래퍼 다운로드
 
-원하는 Visual Studio 버전을 다운로드합니다. **저장**을 클릭한 다음 **폴더 열기**를 클릭합니다.
-
-설치 실행 파일(또는 더 구체적으로 부트스트래퍼 파일)은 다음 중 하나와 일치합니다.
+원하는 Visual Studio 버전에 해당하는 부트스트래퍼 파일을 다운로드합니다. **저장**을 선택한 다음 **폴더 열기**를 선택합니다.
 
 ::: moniker range="vs-2017"
 
-|버전 | 다운로드|
-|-------------|-----------------------|
-|Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
-|Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
+Visual Studio 2017에 대한 부트스트래퍼를 가져오려면 [Visual Studio 이전 버전](https://visualstudio.microsoft.com/vs/older-downloads/) 다운로드 페이지에서 방법에 관한 세부 정보를 참조하세요.
 
-이 밖에 지원되는 부트스트래퍼에는 [vs_buildtools.exe](https://aka.ms/vs/15/release/vs_buildtools.exe), [vs_feedbackclient.exe](https://aka.ms/vs/15/release/vs_feedbackclient.exe), [vs_teamexplorer.exe](https://aka.ms/vs/15/release/vs_teamexplorer.exe), [vs_testagent.exe](https://aka.ms/vs/15/release/vs_testagent.exe), [vs_testcontroller.exe](https://aka.ms/vs/15/release/vs_testcontroller.exe) 및 [vs_testprofessional.exe](https://aka.ms/vs/15/release/vs_testprofessional.exe)가 있습니다.
+설치 실행 파일&mdash;(또는 더 구체적으로 부트스트래퍼 파일)&mdash;은 다음 중 하나와 일치하거나 유사합니다.
+
+| 버전 | 파일 이름 |
+|-------------|-----------------------|
+|Visual Studio Enterprise | **vs_enterprise.exe** |
+|Visual Studio Professional | **vs_professional.exe** |
+|Visual Studio Build Tools   | **vs_buildtools.exe** |
+
+이 밖에 지원되는 부트스트래퍼에는 **vs_feedbackclient.exe**, **vs_teamexplorer.exe**, **vs_testagent.exe**, **vs_testcontroller.exe**, **vs_testprofessional.exe**가 있습니다.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
+설치 실행 파일&mdash;(또는 더 구체적으로 부트스트래퍼 파일)&mdash;은 다음 중 하나와 일치합니다.
+
 |버전 | 다운로드|
 |-------------|-----------------------|
 |Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
 |Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
+| Visual Studio Build Tools   | [**vs_buildtools.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
 
-이 밖에 지원되는 부트스트래퍼에는 [vs_buildtools.exe](https://aka.ms/vs/16/release/vs_buildtools.exe), [vs_teamexplorer.exe](https://aka.ms/vs/16/release/vs_teamexplorer.exe), [vs_testagent.exe](https://aka.ms/vs/16/release/vs_testagent.exe) 및 [vs_testcontroller.exe](https://aka.ms/vs/16/release/vs_testcontroller.exe)가 있습니다.
+이 밖에 지원되는 부트스트래퍼에는 [vs_teamexplorer.exe](https://aka.ms/vs/16/release/vs_teamexplorer.exe), [vs_testagent.exe](https://aka.ms/vs/16/release/vs_testagent.exe), [vs_testcontroller.exe](https://aka.ms/vs/16/release/vs_testcontroller.exe)가 있습니다.
 
 ::: moniker-end
+
+>[!TIP]
+>이전에 부트스트래퍼 파일을 다운로드했으며 해당 버전을 확인하려는 경우에는 다음을 참조하세요. Windows에서 파일 탐색기를 열고 부트스트래퍼 파일을 마우스 오른쪽 단추로 클릭한 다음, **속성**을 선택하고 **세부 정보** 탭을 선택한 다음, **제품 버전** 번호를 확인합니다. 이 번호가 Visual Studio 릴리스와 일치하는지 확인하려면 [Visual Studio 빌드 번호 및 릴리스 날짜](visual-studio-build-numbers-and-release-dates.md) 페이지를 참조하세요.
 
 ## <a name="create-an-offline-installation-folder"></a>오프라인 설치 관리자 폴더 만들기
 
@@ -71,11 +80,11 @@ ms.locfileid: "70180299"
 
 - Visual Studio Enterprise의 경우 다음을 실행합니다.
 
-  ```vs_enterprise.exe --layout c:\vsoffline```
+  ```vs_enterprise.exe --layout c:\VSLayout```
 
 - Visual Studio Professional의 경우 다음을 실행합니다.
 
-  ```vs_professional.exe --layout c:\vsoffline```
+  ```vs_professional.exe --layout c:\VSLayout```
 
 ## <a name="modify-the-responsejson-file"></a>response.json 파일 수정
 
@@ -93,7 +102,7 @@ response.json을 수정하여 설치 프로그램이 실행될 때 사용되는 
 예제:
 
 ```cmd
-xcopy /e c:\vsoffline \\server\products\VS2017
+xcopy /e c:\VSLayout \\server\products\VS2017
 ```
 
 ::: moniker-end
@@ -101,7 +110,7 @@ xcopy /e c:\vsoffline \\server\products\VS2017
 ::: moniker range="vs-2019"
 
 ```cmd
-xcopy /e c:\vsoffline \\server\products\VS2019
+xcopy /e c:\VSLayout \\server\products\VS2019
 ```
 
 ::: moniker-end
@@ -123,37 +132,37 @@ xcopy /e c:\vsoffline \\server\products\VS2019
 * 한 언어의 작업과 구성 요소를 모두 다운로드하려면 다음을 실행합니다.
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --lang en-US
+    vs_enterprise.exe --layout C:\VSLayout --lang en-US
     ```
 
 * 여러 언어의 작업과 구성 요소를 모두 다운로드하려면 다음을 실행합니다.
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --lang en-US de-DE ja-JP
+    vs_enterprise.exe --layout C:\VSLayout --lang en-US de-DE ja-JP
     ```
 
 * 모든 언어의 작업 하나만 다운로드하려면 다음을 실행합니다.
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --includeRecommended
+    vs_enterprise.exe --layout C:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --includeRecommended
     ```
 
 * 세 가지 언어의 작업 두 개와 선택적 구성 요소 하나를 다운로드하려면 다음을 실행합니다.
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended --lang en-US de-DE ja-JP
+    vs_enterprise.exe --layout C:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended --lang en-US de-DE ja-JP
     ```
 
 * 두 가지 워크로드 및 모든 권장 구성 요소를 다운로드하려면:
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended
+    vs_enterprise.exe --layout C:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended
     ```
 
 * 두 가지 워크로드 및 모든 권장/선택적 구성 요소를 다운로드하려면 다음을 실행합니다.
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional
+    vs_enterprise.exe --layout C:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional
     ```
 
 ::: moniker range="vs-2017"
@@ -205,7 +214,7 @@ vs_enterprise.exe --layout c:\VSLayout --all
 * 관리자는 다음 명령을 실행하여 무인 모드로 설치할 수 있습니다.
 
     ```cmd
-    \server\products\VS\vs_enterprise.exe --quiet --wait --norestart
+    \\server\products\VS\vs_enterprise.exe --quiet --wait --norestart
     ```
 
 > [!IMPORTANT]
@@ -217,6 +226,13 @@ vs_enterprise.exe --layout c:\VSLayout --all
 > 엔터프라이즈 관리자가 완료된 설치에 대한 추가 작업을 수행하려는 경우(예: [성공적인 설치에 제품 키 적용](automatically-apply-product-keys-when-deploying-visual-studio.md)) 이 방법이 유용하지만, 해당 설치에서 반환 코드를 처리하려면 설치가 완료될 때까지 기다려야 합니다.
 >
 > `--wait`를 사용하지 않으면 설치가 완료되기 전에 `vs_enterprise.exe` 프로세스가 종료되고 설치 작업 상태를 나타내지 않는 부정확한 종료 코드가 반환됩니다.
+>
+
+::: moniker range="vs-2019"
+
+> 오프라인 설치의 경우 "다음 매개 변수와 일치하는 프로젝트를 찾을 수 없습니다."라는 오류 메시지가 표시되면 버전 16.3.5 이상에서 --noweb 스위치를 사용하고 있는지 확인합니다.
+
+::: moniker-end
 
 레이아웃에서 설치하는 경우 설치되는 콘텐츠는 레이아웃에서 가져옵니다. 그러나 레이아웃에 없는 구성 요소를 선택하면 인터넷에서 해당 구성 요소를 가져옵니다.  Visual Studio 설치 프로그램이 레이아웃에 없는 콘텐츠를 다운로드하지 못하도록 하려면 `--noWeb` 옵션을 사용합니다. `--noWeb`을 사용하고 설치하도록 선택한 콘텐츠가 레이아웃에 없으면 설치가 실패합니다.
 

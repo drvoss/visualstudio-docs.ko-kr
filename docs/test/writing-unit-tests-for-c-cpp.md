@@ -1,19 +1,19 @@
 ---
 title: C/C++에 대한 단위 테스트 작성
 description: CTest, Boost.Test 및 Google Test를 비롯한 다양한 테스트 프레임워크를 사용하여 Visual Studio에서 C++ 단위 테스트를 작성합니다.
-ms.date: 05/06/2019
+ms.date: 09/27/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 6c236a8454c9710bedbf080f4d7a09cfff6a7fac
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: 75244cc728b238a04569875ac01f1c2a3f27d336
+ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160173"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481911"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Visual Studio에서 C/C++에 대한 단위 테스트 작성
 
@@ -86,6 +86,8 @@ Google Test 어댑터와 Boost.Test 어댑터 확장은 Visual Studio Marketplac
 다음으로, 단위 테스트 *.cpp* 파일에서 테스트할 형식과 함수를 선언하는 모든 헤더 파일에 대해 `#include` 지시문을 추가합니다. `#include "`를 입력한 다음, IntelliSense가 선택할 수 있게 활성화됩니다. 다른 헤더에 대해 반복합니다.
 
 ![include 지시문 추가](media/cpp-add-includes-test-project.png)
+
+원본 파일의 각 include 문에 전체 경로를 입력할 필요가 없도록 하려면 **프로젝트** > **속성** > **C/C++**  > **일반** > **추가 포함 디렉터리**에 필요한 폴더를 추가할 수 있습니다.
 
 ### <a name="write-test-methods"></a>테스트 메서드 작성
 

@@ -47,8 +47,8 @@ Razor 웹앱은 다음 구성 요소를 포함합니다.
 ### <a name="pages-folder"></a>페이지 폴더
 
 이 폴더에는 프로젝트의 웹 페이지와 각 웹 페이지의 코드 숨김이 포함되어 있습니다.
-   - *HTML 표시 및 Razor 구문의 경우 *\*.cshtml* 파일.
-   - *페이지 이벤트 처리를 위한 C# 코드 숨김의 경우 *\*.cshtml.cs* 파일.
+   - HTML 표시 및 Razor 구문의 경우 *\*.cshtml* 파일.
+   - 페이지 이벤트 처리를 위한 C# 코드 숨김의 경우 *\*.cshtml.cs* 파일.
 
 지원 파일에는 밑줄로 시작하는 이름이 있습니다. 예를 들어 _Layout.cshtml 파일은 모든 페이지에 공통되는 UI 요소를 구성합니다. 이 파일은 페이지 맨 위에 있는 탐색 메뉴와 맨 아래에 있는 저작권 표시를 설정합니다. 자세한 내용은 [ASP.NET Core의 레이아웃](https://docs.microsoft.com/aspnet/core/mvc/views/layout)을 참조하세요.
 

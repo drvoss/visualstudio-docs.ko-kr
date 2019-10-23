@@ -5,21 +5,21 @@ ms.topic: conceptual
 helpviewer_keywords:
 - requirements
 - stories
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d75bfd7634e068224b12168390193773c198957a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 68aa46b3dc07813b73921b8acb5970289c30aecc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814574"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658406"
 ---
 # <a name="model-user-requirements"></a>사용자 요구 사항 모델링
 
-Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수행하는 작업에 대한 다이어그램을 그려 사용자 요구 사항을 이해, 논의 및 전달할 수 있도록 도와줍니다. 요구 사항 모델은 각각 사용자 요구의 다른 측면에 중점을 두는 다이어그램 집합입니다. 비디오 데모를 참조 하세요. [비즈니스 도메인 모델링](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)합니다.
+Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수행하는 작업에 대한 다이어그램을 그려 사용자 요구 사항을 이해, 논의 및 전달할 수 있도록 도와줍니다. 요구 사항 모델은 각각 사용자 요구의 다른 측면에 중점을 두는 다이어그램 집합입니다. 비디오 데모를 보려면 다음을 참조 하세요. [비즈니스 도메인 모델링](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)
 
 각 모델 형식을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)를 참조하세요.
 
@@ -39,7 +39,7 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
 
 - 시스템 테스트의 기초로 모델을 사용하여 테스트 및 요구 사항 간의 관계를 명확하게 합니다. 요구 사항이 변경될 때 이 관계는 테스트를 올바르게 업데이트하는 데 도움이 됩니다. 이렇게 하면 시스템이 새 요구 사항을 충족합니다.
 
-요구 사항 모델은 사용자 또는 해당 담당자와 논의에 집중하는 데 사용하고 반복을 시작할 때마다 다시 살펴보는 경우에 가장 큰 혜택을 제공합니다. 코드를 작성하기 전에 자세히 완료할 필요는 없습니다. 일반적으로 훨씬 간소화된 경우에도 부분적으로 작동하는 애플리케이션이 사용자와 요구 사항을 논의하는 데 가장 효율적인 기초가 됩니다. 모델은 이러한 논의의 결과를 요약하는 효과적인 방법입니다. 자세한 내용은 [모델을 사용 하 여 개발 프로세스에서](../modeling/use-models-in-your-development-process.md)합니다.
+요구 사항 모델은 사용자 또는 해당 담당자와 논의에 집중하는 데 사용하고 반복을 시작할 때마다 다시 살펴보는 경우에 가장 큰 혜택을 제공합니다. 코드를 작성하기 전에 자세히 완료할 필요는 없습니다. 일반적으로 훨씬 간소화된 경우에도 부분적으로 작동하는 애플리케이션이 사용자와 요구 사항을 논의하는 데 가장 효율적인 기초가 됩니다. 모델은 이러한 논의의 결과를 요약하는 효과적인 방법입니다. 자세한 내용은 [개발 프로세스에서 모델 사용](../modeling/use-models-in-your-development-process.md)을 참조 하세요.
 
 > [!NOTE]
 > 이러한 항목 전체에서 "시스템"은 개발 중인 시스템 또는 애플리케이션을 의미합니다. 다양한 소프트웨어 및 하드웨어 구성 요소의 큰 컬렉션이거나, 단일 애플리케이션이거나, 큰 시스템 내의 소프트웨어 구성 요소일 수 있습니다. 어떤 경우에든, 요구 사항 모델은 사용자 인터페이스 또는 API를 통해 시스템 외부에서 표시되는 동작을 설명합니다.
@@ -54,13 +54,13 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
 |추가 문서 또는 작업 항목|성능, 보안, 유용성 및 안정성 기준입니다.|[서비스 품질 요구 사항 설명](#QoSRequirements)|
 |추가 문서 또는 작업 항목|특정 사용 사례와 관련이 없는 제약 조건 및 규칙|[비즈니스 규칙 표시](#BusinessRules)|
 
-대부분의 다이어그램 형식은 다른 용도로 사용할 수 있습니다. 다이어그램 유형에 대 한 개요를 참조 하세요 [앱에 대 한 모델을 만들](../modeling/create-models-for-your-app.md)합니다.
+대부분의 다이어그램 형식은 다른 용도로 사용할 수 있습니다. 다이어그램 형식에 대 한 개요는 [앱에 대 한 모델 만들기](../modeling/create-models-for-your-app.md)를 참조 하세요.
 
 ## <a name="BusinessRules"></a> Showing Business Rules
 
 비즈니스 규칙은 특정 사용 사례와 연결되지 않은 요구 사항이며 시스템 전체에서 관찰되어야 합니다.
 
-대부분의 비즈니스 규칙은 개념적 클래스 간의 관계에 대한 제약 조건입니다. 이 작성할 수 있습니다 *정적 비즈니스 규칙* 개념적 클래스 다이어그램의 관련 클래스를 사용 하 여 연결 된 주석으로 합니다. 예를 들어:
+대부분의 비즈니스 규칙은 개념적 클래스 간의 관계에 대한 제약 조건입니다. 이러한 *정적 비즈니스 규칙* 을 개념적 클래스 다이어그램의 관련 클래스와 연결 된 주석으로 작성할 수 있습니다. 예:
 
 ![Order 클래스에 연결된 주석의 규칙](../modeling/media/uml_reqmcd2.png)
 
@@ -72,7 +72,7 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
 
 자세한 내용은 다음 항목을 참조하세요.
 
-|자세한 정보|읽기|
+|자세한 정보|Read|
 |-|-|
 |비즈니스 규칙을 준수하는 코드를 개발하는 방법|[앱의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)|
 
@@ -94,9 +94,9 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
 
 고객이 음식을 주문하는 동안 식당이 메뉴 항목을 삭제하는 경우 해당 메뉴 항목을 참조하는 주문 항목은 모두 빨간색으로 표시됩니다.
 
-참조 [앱의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md) 서비스 품질 요구 사항 따르는 코드를 개발 하는 방법입니다.
+서비스 품질 요구 사항을 준수 하는 코드를 개발 하는 방법을 알아보려면 [앱 아키텍처 모델링](../modeling/model-your-app-s-architecture.md) 을 참조 하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [개발 프로세스에서 모델 사용](../modeling/use-models-in-your-development-process.md)
 - [앱의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)

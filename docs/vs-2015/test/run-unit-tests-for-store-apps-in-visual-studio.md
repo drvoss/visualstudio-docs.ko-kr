@@ -1,5 +1,5 @@
 ---
-title: 스토어 앱 용 단위 테스트를 실행 합니다.
+title: 스토어 앱에 대 한 단위 테스트 실행
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -7,14 +7,14 @@ ms.topic: conceptual
 ms.assetid: 5a6f5b32-bfce-4a63-81e9-02d54c592539
 caps.latest.revision: 14
 author: alexhomer1
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bfcdb3906f405b9f7ba4650be13f4522ab559ee8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5bdcd9a5d3565bf4b7a92d658a5a270bbff6483c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446211"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672243"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>Visual Studio에서 스토어 앱에 대한 단위 테스트 실행
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

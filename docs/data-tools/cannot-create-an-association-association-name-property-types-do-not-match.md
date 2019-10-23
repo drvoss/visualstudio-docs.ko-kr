@@ -3,17 +3,17 @@ title: 연결을 만들 수 없습니다. - 속성 형식이 일치하지 않는
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 97ec5a04-6e23-45a2-9226-d77ead854392
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8d649f6fc74236127e357a88c0ef2f2f4941862e
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: d7b2e0d777f0d499ca6fbf76b52aa028c940b2df
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458428"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648700"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>&lt;association name&gt; 연결을 만들 수 없습니다. - 속성 형식이 일치하지 않는 경우
 
@@ -33,7 +33,7 @@ ms.locfileid: "65458428"
 
 4. **확인**을 클릭합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [방법: LINQ to SQL 클래스 (O/R 디자이너) 간 연결 만들기](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)
+- [방법: LINQ to SQL 클래스 (O/R 디자이너) 간에 연결을 만듭니다 ](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

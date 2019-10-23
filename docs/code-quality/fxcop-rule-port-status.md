@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - fxcop rules
 - fxcop analyzers, ported rules
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7dec16291758b330614d8a522aaf3825ae461047
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 2ad427c058265694205444c3ade04e317e407072
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72449051"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649572"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 규칙 포트 상태
 
@@ -67,8 +67,8 @@ Roslyn-분석기 리포지토리의 자동 [생성 된 설명서 페이지](http
 [CA1063](ca1063-implement-idisposable-correctly.md) | IDisposable을 올바르게 구현 하십시오.
 [CA1064](ca1064-exceptions-should-be-public.md) | 예외는 public이어야 합니다.
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | 예기치 않은 위치에서 예외를 발생시키지 마십시오.
-CA1066 | @No__t-0은 Equals를 재정의 하기 때문에 IEquatable @ no__t-1T >를 구현 해야 합니다.
-CA1067 | IEquatable @ no__t-0T t를 구현할 때 개체 Equals (개체)를 재정의 합니다.
+CA1066 | Equals를 재정의 하기 때문에 {0} 형식에서 IEquatable \<T >를 구현 해야 합니다.
+CA1067 | IEquatable \<T > 구현 하는 경우 개체 Equals (개체)를 재정의 하십시오.
 [CA1068](ca1068.md) | CancellationToken 매개 변수는 마지막에 위치해야 합니다.
 CA1200 | 접두사를 사용하여 cref 태그 사용 방지
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | 리터럴을 지역화된 매개 변수로 전달하지 마세요.
@@ -344,6 +344,6 @@ CA9999 | 분석기 버전이 일치 하지 않습니다.
 - [CA2233](ca2233.md)
 - [CA5122](ca5122.md)
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [FxCopAnalyzers 규칙](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)

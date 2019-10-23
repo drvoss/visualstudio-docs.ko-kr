@@ -6,14 +6,14 @@ ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4ab38f4fc7e0269c1073e71fae9975b240da33f2
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 1db5e653889f75931916c44de22e545415b53a41
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695096"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657257"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Visual Studio 2010에서 코딩된 UI 테스트 업그레이드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "65695096"
 > [!CAUTION]
 > 솔루션 탐색기에 나타나지 않는 코딩된 UI 테스트 프로젝트의 참조와 관련된 알려진 문제가 있습니다. 자세한 내용은 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 설치 미디어에 포함된 추가 정보 파일을 참조하세요.
 
-|코딩된 UI 기능|문제|솔루션|
+|코딩된 UI 기능|문제점|솔루션|
 |----------------------------|-----------|--------------|
 |[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]에서는 Silverlight UI 테스트가 지원되지 않습니다.|**빌드가 실패합니다.**<br /><br /> [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 기능 팩 2가 있고 Silverlight 애플리케이션에 대한 코딩된 UI 테스트 프로젝트를 만든 경우 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]에서 이러한 프로젝트를 열 수 없습니다.|이러한 프로젝트는 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 기능 팩 2에서만 관리하는 것이 좋습니다.|
 |[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]에서는 Firefox UI 테스트가 지원되지 않습니다.|**빌드는 성공하지만 테스트 실행이 실패합니다.**<br /><br /> [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 기능 팩 2가 있고 Firefox에서 웹 애플리케이션에 대한 코딩된 UI 테스트 프로젝트를 만든 경우 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]에서 이러한 프로젝트를 열 수 없습니다.|이러한 프로젝트는 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 기능 팩 2에서만 관리하는 것이 좋습니다.|
@@ -57,11 +57,11 @@ ms.locfileid: "65695096"
 
   업데이트에는 다음과 같은 문제에 대한 수정 사항도 포함되어 있습니다.
 
-- **코드 검사:** Visual Studio 2012에서 만든 코드 검사 파일 (.coverage) 열 수 없습니다 [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1.
+- **코드 검사:** @No__t_0 s p 1에서 Visual Studio 2012에 의해 생성 된 코드 검사 파일 (.coverage)을 열 수 없습니다.
 
-- **방치 테스트 아티팩트:** 팀에 Team Foundation Server (TFS) 2010에서 잘못 된 사용자에 할당 된 테스트 아티팩트가 있습니다. 예를 들어 사용자가 퇴사했지만 이 사용자에게 할당된 테스트 사례가 계속 있습니다. TFS 2010을 TFS 2012로 업그레이드합니다. [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010을 사용하여 업그레이드된 TFS 서버에 연결합니다. [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010을 사용하여 TFS 사용자에게 테스트 아티팩트를 할당할 수 없습니다.
+- **남겨진 테스트 아티팩트:** Team Foundation Server (TFS) 2010에서 잘못 된 사용자에 게 할당 된 테스트 아티팩트가 팀에 있습니다. 예를 들어 사용자가 퇴사했지만 이 사용자에게 할당된 테스트 사례가 계속 있습니다. TFS 2010을 TFS 2012로 업그레이드합니다. [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010을 사용하여 업그레이드된 TFS 서버에 연결합니다. [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010을 사용하여 TFS 사용자에게 테스트 아티팩트를 할당할 수 없습니다.
 
-- **부하 테스트:** 네트워크 에뮬레이터 드라이버로 컴퓨터에서 로컬 영역 네트워크 (LAN) 프로필이 아닌 다른 네트워크 형식과 함께 부하 테스트를 실행 하면이 Windows 8을 실행 하면 운영 체제가 충돌 합니다. 자세한 내용은 [기술 자료 문서 2736182](http://support.microsoft.com/kb/2736182)를 참조하세요.
+- **부하 테스트:** Windows 8을 실행 하는 컴퓨터에서 LAN (local area network) 프로필이 아닌 다른 네트워크 유형과 함께 부하 테스트를 실행 하는 경우 네트워크 에뮬레이터 드라이버로 인해 운영 체제가 충돌 합니다. 자세한 내용은 [기술 자료 문서 2736182](http://support.microsoft.com/kb/2736182)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
- [포팅, 마이그레이션 및 Visual Studio 프로젝트를 업그레이드](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [이전 버전의 Visual Studio에서 테스트 업그레이드](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [UI 자동화를 사용 하 여 코드를 테스트 하려면](../test/use-ui-automation-to-test-your-code.md) [생성을 코딩 된 UI 테스트에서 기존 작업 기록](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [코딩 된 UI 테스트 및 작업 기록에 대 한 구성 및 플랫폼 지원](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+## <a name="see-also"></a>관련 항목:
+ [Visual Studio 프로젝트 포팅, 마이그레이션 및 업그레이드](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [이전 버전의 Visual studio에서 테스트 업그레이드](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [기존 작업 기록](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) 에서 코딩 된 Ui 테스트를 생성 [하는 코드를 테스트 하기 위해 UI 자동화 사용](../test/use-ui-automation-to-test-your-code.md) [ 코딩 된 UI 테스트 및 작업 기록에 지원 되는 구성 및 플랫폼](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, template code
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a3396caf4f1ade860f4727095d3305d86e837c3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 128be69d356b371cc34f5e089df25546428bc83f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434169"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606083"
 ---
 # <a name="text-template-control-blocks"></a>텍스트 템플릿 제어 블록
 제어 블록을 사용하면 다양한 출력을 생성하기 위해 텍스트 템플릿에 코드를 작성할 수 있습니다. 다음과 같은 세 가지 종류의 제어 블록이 있으며 각각 여는 대괄호로 구분됩니다.
@@ -62,7 +62,7 @@ Found another one!
 ```
 
 > [!WARNING]
-> 항상 {...}를 사용 하 여 포함 된 중첩 문은 일반 텍스트를 포함 합니다. 다음 예제는 제대로 작동하지 않을 수 있습니다.
+> 항상 {...} 사용 포함 된 일반 텍스트가 포함 된 중첩 문을 구분 합니다. 다음 예제는 제대로 작동하지 않을 수 있습니다.
 >
 > `<# if (ShouldPrint) #> Some text. -- WRONG`
 >
@@ -117,7 +117,7 @@ Some text.
 > [!NOTE]
 > 같은 템플릿 파일에서 클래스 기능 제어 블록 뒤에 표준 제어 블록을 두지 않아야 합니다. 그러나 `<#@include#>` 지시문을 사용한 결과에는 이러한 제한 사항이 적용되지 않습니다. 각각의 포함된 파일에서는 표준 블록 뒤에 클래스 기능 블록이 올 수 있습니다.
 
- 텍스트 및 식 블록을 클래스 기능 제어 블록 안에 포함하여 출력을 생성하는 함수를 만들 수 있습니다. 예를 들어:
+ 텍스트 및 식 블록을 클래스 기능 제어 블록 안에 포함하여 출력을 생성하는 함수를 만들 수 있습니다. 예:
 
 ```
 <#+
@@ -141,11 +141,11 @@ Some text.
 ```
 
 ## <a name="how-to-use-control-blocks"></a>제어 블록을 사용하는 방법
- 단일 템플릿의 모든 표준 및 식 제어 블록에 있는 모든 코드(포함된 템플릿의 모든 코드 포함)가 결합되어 생성된 코드의 `TransformText()` 메서드를 형성합니다. (사용 하 여 다른 텍스트 템플릿을 포함 하는 방법에 대 한 자세한 내용은 합니다 `include` 지시문을 참조 하십시오 [T4 텍스트 템플릿 지시문](../modeling/t4-text-template-directives.md).)
+ 단일 템플릿의 모든 표준 및 식 제어 블록에 있는 모든 코드(포함된 템플릿의 모든 코드 포함)가 결합되어 생성된 코드의 `TransformText()` 메서드를 형성합니다. @No__t_0 지시어를 사용 하 여 다른 텍스트 템플릿을 포함 하는 방법에 대 한 자세한 내용은 [T4 텍스트 템플릿 지시문](../modeling/t4-text-template-directives.md)을 참조 하세요.
 
  제어 블록을 사용할 때는 다음 사항을 고려해야 합니다.
 
-- **언어입니다.** 텍스트 템플릿에서 C# 또는 Visual Basic 코드를 사용할 수 있습니다. 기본 언어는 C#이지만 `template` 지시문의 `language` 매개 변수를 사용하여 Visual Basic을 지정할 수 있습니다. (에 대 한 자세한 내용은 합니다 `template` 지시문을 참조 하십시오 [T4 텍스트 템플릿 지시문](../modeling/t4-text-template-directives.md).)
+- **언어도.** 텍스트 템플릿에서 C# 또는 Visual Basic 코드를 사용할 수 있습니다. 기본 언어는 C#이지만 `template` 지시문의 `language` 매개 변수를 사용하여 Visual Basic을 지정할 수 있습니다. @No__t_0 지시문에 대 한 자세한 내용은 [T4 텍스트 템플릿 지시문](../modeling/t4-text-template-directives.md)을 참조 하세요.
 
      제어 블록에서 사용하는 언어는 텍스트 템플릿에서 생성하는 텍스트의 언어 또는 형식과 관련이 없습니다. Visual Basic 코드를 사용하여 C#을 생성할 수 있으며 그 반대로도 생성할 수 있습니다.
 
@@ -155,7 +155,7 @@ Some text.
 
      특히 여러 텍스트 템플릿을 포함하는 경우 로컬 변수를 선언할 때 적절한 값으로 초기화하는 것도 좋은 방법입니다.
 
-- **제어 블록의 중첩.** 제어 블록은 다른 제어 블록 안에 중첩될 수 없습니다. 다른 제어 블록을 열기 전에 주어진 제어 블록을 항상 종료해야 합니다. 예를 들어, 다음은 표준 제어 블록의 일부로 식 블록의 텍스트를 인쇄하는 방법을 보여 줍니다.
+- **제어 블록 중첩.** 제어 블록은 다른 제어 블록 안에 중첩될 수 없습니다. 다른 제어 블록을 열기 전에 주어진 제어 블록을 항상 종료해야 합니다. 예를 들어, 다음은 표준 제어 블록의 일부로 식 블록의 텍스트를 인쇄하는 방법을 보여 줍니다.
 
     ```
     <#
@@ -167,4 +167,4 @@ Some text.
     <# } #>
     ```
 
-- **리팩터링 합니다.** 텍스트 템플릿을 간단하고 이해하기 쉽게 유지하려면 다시 사용할 수 있는 코드를 클래스 기능 블록에서 도우미 함수로 구분하거나 Microsoft.VisualStudio.TextTemplating.TextTransformation 클래스에서 상속하는 텍스트 템플릿 클래스를 만들어 반복되는 코드를 방지하는 것이 좋습니다.
+- **리팩터링이.** 텍스트 템플릿을 간단하고 이해하기 쉽게 유지하려면 다시 사용할 수 있는 코드를 클래스 기능 블록에서 도우미 함수로 구분하거나 Microsoft.VisualStudio.TextTemplating.TextTransformation 클래스에서 상속하는 텍스트 템플릿 클래스를 만들어 반복되는 코드를 방지하는 것이 좋습니다.

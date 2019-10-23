@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - FxCopCmd errors
 ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
-ms.author: gewarren
-author: gewarren
+ms.author: jillfra
+author: jillre
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1892fa9f47e0b3b315531adc51cf538ff7fe4dee
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 315f74348ffc7983088e7601f51a667ce8598b2e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72449025"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649554"
 ---
 # <a name="fxcopcmd-tool-errors"></a>FxCopCmd 도구 오류
 
@@ -23,7 +23,7 @@ FxCopCmd는 모든 오류가 치명적이 지는 것을 고려 하지 않습니�
 
 다음 표에서는 FxCopCmd에서 반환 하는 오류 코드에 대해 설명 합니다.
 
-|Error|숫자 값|
+|오류|숫자 값|
 |-----------|-------------------|
 |오류 없음|0|
 |분석 오류|0x1|
@@ -52,6 +52,6 @@ FxCopCmd는 모든 오류가 치명적이 지는 것을 고려 하지 않습니�
 > [!NOTE]
 > FxCopCmd 반환 코드 어셈블리는 오류를 제외 하 고 오류를 제외 하 고 오류 0x200를 **참조** 합니다. 이 반환 코드는 누락 된 간접 참조가 있음을 나타내지만 해당 FxCopCmd는이를 처리할 수 있었습니다. 경고는 일부 분석 결과가 손상 되었을 가능성이 있음을 의미 합니다. 다른 반환 코드와 결합 될 때 **어셈블리 참조 오류** 를 오류로 처리 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [코드 분석 애플리케이션 오류](../code-quality/code-analysis-application-errors.md)

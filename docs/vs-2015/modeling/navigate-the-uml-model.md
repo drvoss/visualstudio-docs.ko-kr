@@ -8,15 +8,15 @@ helpviewer_keywords:
 - UML API
 ms.assetid: 6d789b6d-2aa9-4ceb-92c4-84a300065a76
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c98aefb5e3dc0090338233ca5b05b4ebc6460719
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 7b90d8b532b004a7cbdaeed762300a0daf9ab45c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871770"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668539"
 ---
 # <a name="navigate-the-uml-model"></a>UML 모델 탐색
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "68871770"
 
  모델에서 요소를 삭제하면 참여하는 관계도 자동으로 삭제되고 반대쪽 속성이 업데이트됩니다.
 
- UML 사양에서 속성에 복합성 0..1을 할당하는 경우 `null` 값을 가질 수 있습니다. 복합성이 1 보다 크면 .NET 속성의 형식은 다음과 같습니다. `IEnumerable<`*을 입력*`>`합니다.
+ UML 사양에서 속성에 복합성 0..1을 할당하는 경우 `null` 값을 가질 수 있습니다. 복합성이 1 보다 크면 .NET 속성의 형식은 다음과 같습니다. `IEnumerable<`*형식* `>`입니다.
 
  관계 트래버스에 대 한 자세한 내용은 [UML API를 사용 하 여 관계 탐색](../modeling/navigate-relationships-with-the-uml-api.md)을 참조 하세요.
 
@@ -54,7 +54,7 @@ ms.locfileid: "68871770"
 
  대부분의 경우 `Owner` 및 `OwnedElements` 속성의 대상은 보다 구체적인 이름을 가진 다른 속성에서도 참조됩니다. 예를 들어 모든 UML 작업은 UML 클래스가 소유합니다. 따라서 [IOperation](/previous-versions/dd481186(v=vs.140))에는 [Ioperation. 클래스](/previous-versions/dd473473%28v%3dvs.140%29) 및 모든 [ioperation](/previous-versions/dd481186(v=vs.140)), `Class == Owner` 개체의 속성이 있습니다.
 
- 소유자가 없는 트리의 최상위 요소는 `AuxiliaryConstructs.IModel`입니다. IModel는에 포함 `IModelStore`되어 있습니다. 여기서는 [imodelstore. Root](/previous-versions/ee789368(v=vs.140))입니다.
+ 소유자가 없는 트리의 최상위 요소는 `AuxiliaryConstructs.IModel`입니다. IModel은 `IModelStore` 내에 포함 되며,이는 [Imodelstore입니다.](/previous-versions/ee789368(v=vs.140))
 
  모든 모델 요소는 소유자를 사용하여 생성됩니다. 자세한 내용은 [UML 모델에서 요소 및 관계 만들기](../modeling/create-elements-and-relationships-in-uml-models.md)를 참조 하세요.
 

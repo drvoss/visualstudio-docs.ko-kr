@@ -2,17 +2,17 @@
 title: FxCop 분석기 구성 옵션
 ms.date: 09/23/2019
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: de4fdbbdf54976ba3ee12c3621f7038cd4704a76
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 78967c93a990aaef0d5863446433c286bdcf46b7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72449071"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649604"
 ---
 # <a name="rule-scope-options-for-fxcop-analyzers"></a>FxCop 분석기에 대 한 규칙 범위 옵션
 
@@ -25,7 +25,7 @@ ms.locfileid: "72449071"
 >
 > 옵션 이름: `sufficient_IterationCount_for_weak_KDF_algorithm` \
 > 옵션 값: 정수 값 \
-> 기본값: 각 구성 가능한 규칙 (대부분의 규칙에 대해 기본적으로 ' 10만 ')에 한정 됩니다.
+> 기본값: 구성 가능한 각 규칙 (대부분의 규칙에 대해 기본적으로 ' 10만 ')에 적용 됩니다.
 > 예: `dotnet_code_quality.CA5387.sufficient_IterationCount_for_weak_KDF_algorithm = 100000`
 
 ## <a name="api_surface"></a>api_surface
@@ -56,4 +56,4 @@ ms.locfileid: "72449071"
 
 | 설명 | 허용 가능한 값 | 기본값 | 구성 가능한 규칙 |
 | - | - | - | - |
-| 이 어셈블리 유형을 생성 하는 프로젝트의 코드를 분석 해야 함을 지정 합니다. | @No__t-0 열거형의 하나 이상의 필드<br/><br/>여러 값을 쉼표 (,)로 구분 합니다. | 모든 출력 종류 | [CA2007](ca2007-do-not-directly-await-task.md) |
+| 이 어셈블리 유형을 생성 하는 프로젝트의 코드를 분석 해야 함을 지정 합니다. | @No__t_0 열거형의 하나 이상의 필드<br/><br/>여러 값을 쉼표 (,)로 구분 합니다. | 모든 출력 종류 | [CA2007](ca2007-do-not-directly-await-task.md) |

@@ -2,17 +2,17 @@
 title: 인터페이스 구현
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 58c714dec8b8a4679d34168cdaf901dc2fb94ea6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 45265c10677b8d3eadc27eb3b6e22c69bb5299be
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974827"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658912"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>Visual Studio에서 인터페이스 구현
 
@@ -32,7 +32,7 @@ ms.locfileid: "62974827"
 
 1. 인터페이스를 참조했지만 일부 필요한 멤버를 구현하지 않았음을 나타내는 빨간색 구부러진 곡선이 있는 줄에 커서를 놓습니다.
 
-   - C#: 
+   - C#:
 
        ![강조 표시된 코드 C#](media/interface-highlight-cs.png)
 
@@ -43,7 +43,7 @@ ms.locfileid: "62974827"
 2. 다음 작업 중 하나를 수행합니다.
 
    - **키보드**
-      - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
+      - 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
    - **마우스**
       - 마우스 오른쪽 단추로 클릭하고 **빠른 작업 및 리팩터링** 메뉴를 선택합니다.
       - 빨간색 구부러진 곡선 위로 마우스를 이동하고 표시되는 ![오류 전구](media/error-bulb.png) 아이콘을 클릭합니다.
@@ -59,7 +59,7 @@ ms.locfileid: "62974827"
 
    인터페이스의 메서드 시그니처가 만들어지고 구현할 준비가 됩니다.
 
-   - C#: 
+   - C#:
 
        ![인터페이스 구현 결과 C#](media/interface-result-cs.png)
 

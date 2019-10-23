@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 978313276865c15672a129db601543a0ca307d5b
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 47f709ae086a32c0680fca060744898251a76afd
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263047"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589139"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Visual Studio에서 JavaScript 또는 TypeScript 앱 디버그
 
@@ -90,14 +90,16 @@ Visual Studio에서 디버거를 연결하고 클라이언트 쪽 코드에서 �
 
     ![프로세스에 연결](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
+    ::: moniker range="vs-2017"
     DOM 탐색기와 JavaScript 콘솔이 Visual Studio에서 열릴 때 디버거가 올바르게 연결됐는지 알 수 있습니다. 이러한 디버깅 도구는 크롬 개발자 도구 및 F12 Tools for Microsoft Edge와 유사합니다.
+    ::: moniker-end
 
     > [!NOTE]
     > 디버거가 연결되지 않고 “프로세스에 연결할 수 없습니다. 작업이 현재 상태에서 잘못되었으므로 디버깅 모드로 Chrome을 시작하기 전에 작업 관리자를 사용하여 Chrome의 모든 인스턴스를 닫습니다. 크롬 확장 프로그램을 실행하여 전체 디버그 모드를 방지할 수 있습니다.
 
 8. 중단점이 있는 코드가 이미 실행된 경우 중단점을 적중하려면 브라우저 페이지를 새로 고치기 합니다.
 
-    디버거에서 일시 중지된 동안 변수를 가리키고 디버거 창을 사용하여 앱 상태를 검사할 수 있습니다. 단계별 코드 실행(**F5**, **F10** 및 **F11**)으로 디버거로 이동할 수 있습니다 .
+    디버거에서 일시 중지된 동안 변수를 가리키고 디버거 창을 사용하여 앱 상태를 검사할 수 있습니다. 단계별 코드 실행(**F5**, **F10** 및 **F11**)으로 디버거로 이동할 수 있습니다.
 
     축소 또는 트랜스파일된 JavaScript의 경우 환경 및 브라우저 상태에 따라(소스 맵 사용) TypeScript 파일에서 트랜스파일된 JavaScript 또는 매핑된 위치의 중단점에 적중할 수 있습니다. 어느 경우든 단계별 코드를 실행하고 변수를 검사할 수 있습니다.
 
@@ -147,7 +149,7 @@ Visual Studio에는 JavaScript 소스 파일에 소스 맵을 사용하고 생�
 
 * **inlineSourceMap**: 각 소스 파일에 대해 별도의 소스 맵을 만드는 대신 소스 맵이 있는 단일 파일을 내보냅니다.
 * **inlineSources**: 단일 파일 내에서 소스 맵과 함께 소스를 내보냅니다. *inlineSourceMap* 또는 *sourceMap*을 설정해야 합니다.
-* **mapRoot**: 디버거에서 기본 위치 대신 소스 맵(*.map*) 파일을 찾아야 하는 위치를 지정합니다. 런타임 *.map* 파일이 *.js* 파일과 다른 위치에 있어야 하는 경우 이 플래그를 사용합니다. 지정된 위치가 소스 맵에 포함되어 디버거를 *.map* 파일의 위치로 안내합니다.
+* **mapRoot**: 디버거에서 기본 위치 대신 소스 맵( *.map*) 파일을 찾아야 하는 위치를 지정합니다. 런타임 *.map* 파일이 *.js* 파일과 다른 위치에 있어야 하는 경우 이 플래그를 사용합니다. 지정된 위치가 소스 맵에 포함되어 디버거를 *.map* 파일의 위치로 안내합니다.
 * **sourceMap**: 해당하는 *.map* 파일을 생성합니다.
 * **sourceRoot**: 소스 위치 대신 디버거에서 TypeScript 파일을 찾아야 하는 위치를 지정합니다. 런타임 소스가 디자인 시 위치와 다른 위치에 있어야 하는 경우 이 플래그를 사용합니다. 지정된 위치가 소스 맵에 포함되어 소스 파일이 있는 위치로 디버거를 안내합니다.
 

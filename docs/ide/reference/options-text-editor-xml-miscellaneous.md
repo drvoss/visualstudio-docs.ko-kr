@@ -5,15 +5,15 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XML.Miscellaneous
 ms.assetid: b6538cbe-badd-4313-a1fb-39e906736bbe
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d3421580251a6a871adba311fd609e881e088ebd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 58de904e1697a820a2f4bc6f88fbff5237cabc30
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969217"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666585"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>옵션, 텍스트 편집기, XML, 기타
 
@@ -27,7 +27,7 @@ ms.locfileid: "62969217"
 
 **특성 따옴표**
 
-XML 특성을 만들 때 편집기는 `="` 및 `"` 문자를 삽입하고, 큰따옴표 안에 캐럿(**^**)을 배치합니다. 이 확인란은 기본적으로 선택되어 있습니다.
+XML 특성을 만들 때 편집기는 `="` 및 `"` 문자를 삽입하고, 큰따옴표 안에 캐럿( **^** )을 배치합니다. 이 확인란은 기본적으로 선택되어 있습니다.
 
 **네임스페이스 선언**
 

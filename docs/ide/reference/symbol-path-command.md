@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Debug.SymbolPath command
 - SymbolPath command
 ms.assetid: b697ef2d-3f5d-40df-b113-7068a5bec0d4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3792f3d6f86faf0b58e8cf8f1b76984ba3bd5d80
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d7a2e4c789f4bd2637cd4da79d66071cc94d697f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926003"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748604"
 ---
 # <a name="symbol-path-command"></a>기호 경로 명령
 디버거에서 기호를 검색할 디렉터리 목록을 설정합니다.

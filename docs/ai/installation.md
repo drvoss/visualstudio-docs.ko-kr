@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: a81c1869bf7587aa30dbc02f0e9aec4c97776e5f
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: fb296346d54b0774bdd9a738581ee28fe99b1de0
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918039"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777476"
 ---
 # <a name="installation"></a>설치
 
@@ -44,7 +44,7 @@ Visual Studio Tools for AI는 64비트 운영 체제에 설치할 수 있습니�
 
 ### <a name="nvidia-gpu-driver"></a>NVIDIA GPU 드라이버
 
-심층 학습 프레임워크는 NVIDIA GPU를 활용하여 컴퓨터가 신속 정확하게 학습하고 진정한 인공 지능을 향해 확장해 나갈 수 있게 합니다. 컴퓨터에 NVIDIA GPU 카드가 있으면 [NVIDIA 드라이버 다운로드](http://www.nvidia.com/Download/index.aspx)를 참조하거나 운영 체제 업데이트를 시도하여 최신 드라이버를 설치합니다.
+심층 학습 프레임워크는 NVIDIA GPU를 활용하여 컴퓨터가 신속 정확하게 학습하고 진정한 인공 지능을 향해 확장해 나갈 수 있게 합니다. 컴퓨터에 NVIDIA GPU 카드가 있으면 [NVIDIA 드라이버 다운로드](https://www.nvidia.com/Download/index.aspx)를 참조하거나 운영 체제 업데이트를 시도하여 최신 드라이버를 설치합니다.
 
 ### <a name="cuda"></a>CUDA
 
@@ -194,7 +194,7 @@ pip3.5 install Theano==0.9.0
 
 ### <a name="pytorch"></a>PyTorch
 
-[PyTorch](http://pytorch.org/)는 두 고급 기능을 제공하는 Python 패키지입니다.
+[PyTorch](https://pytorch.org/)는 두 고급 기능을 제공하는 Python 패키지입니다.
 
 - 강력한 GPU 가속화를 통해 numpy처럼 텐서 계산
 - 테이프 기반 오토그래드 시스템을 바탕으로 구축된 심층 신경망

@@ -2,15 +2,15 @@
 title: 팀 탐색기의 프로젝트에 연결
 ms.date: 12/04/2018
 ms.topic: conceptual
-ms.author: gewarren
-author: gewarren
+ms.author: jillfra
+author: jillre
 ms.manager: jillfra
-ms.openlocfilehash: d65ea17ad642ea882820bc04f5d217e6290a8a6d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f3e4b2b5df96f397104afb3ab6268e1fa294116e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976669"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652642"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>팀 탐색기의 프로젝트에 연결
 

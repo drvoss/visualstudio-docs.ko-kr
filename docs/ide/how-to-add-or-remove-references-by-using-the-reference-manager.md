@@ -16,17 +16,17 @@ helpviewer_keywords:
 - referencing components, removing references
 - references [Visual Studio], removing
 - referencing components, assemblies not listed
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 584c807670e5e5ba0bc4fa1b381dca30474212e7
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: e302b5c4df73f8fcdadf766a1fe1d8dc0731c261
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787883"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654818"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>방법: 참조 관리자를 사용하여 참조 추가 또는 제거
 
@@ -176,7 +176,7 @@ SDK는 Visual Studio에서 단일 구성 요소로 처리하는 파일의 컬렉
 
 프로젝트 형식이 COM을 지원하지 않으면 참조 관리자 대화 상자에 이 탭이 나타나지 않습니다.
 
-## <a name="browse"></a>찾아보기
+## <a name="browse"></a>Browse
 
 **찾아보기** 단추를 사용하여 파일 시스템의 구성 요소를 찾아볼 수 있습니다.
 
@@ -201,7 +201,7 @@ WinMD에 대한 파일 참조를 수행하는 경우, 예상되는 레이아웃�
     > [!NOTE]
     > 이 속성을 추가하면 빌드 실행이 느려질 수 있습니다.
 
-## <a name="recent"></a>최근
+## <a name="recent"></a>최근 항목
 
 **어셈블리**, **COM**, **Windows** 및 **찾아보기** 탭 각각은 최근에 프로젝트에 추가된 구성 요소의 목록을 열거하는 **최근 항목** 탭을 지원합니다.
 

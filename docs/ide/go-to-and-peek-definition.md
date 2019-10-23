@@ -8,17 +8,17 @@ helpviewer_keywords:
 - peek definition
 - type definition [Visual Studio]
 - member definition [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c5235bc19c1b06ec2cae26e3fcffb6a7d061c9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d78614966a33421aac707f370f2b18e62e4b3d9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62549810"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603540"
 ---
 # <a name="view-type-and-member-definitions"></a>형식 및 멤버 정의 보기
 
@@ -69,7 +69,7 @@ ms.locfileid: "62549810"
 
 ### <a name="view-decompiled-source-definitions-instead-of-metadata-c"></a>메타데이터 대신 디컴파일된 소스 정의 보기(C#)
 
-소스 코드를 사용할 수 없는 C# 형식 또는 멤버의 정의를 볼 때 디컴파일된 소스 코드를 볼 수 있는 옵션을 설정할 수 있습니다. 이 기능을 켜려면 메뉴 모음에서 **도구** > **옵션**을 선택합니다. 그런 다음 **텍스트 편집기** > **C#** > **고급**을 확장하고 **디컴파일된 소스에 대한 탐색 사용**을 선택합니다.
+소스 코드를 사용할 수 없는 C# 형식 또는 멤버의 정의를 볼 때 디컴파일된 소스 코드를 볼 수 있는 옵션을 설정할 수 있습니다. 이 기능을 켜려면 메뉴 모음에서 **도구** > **옵션**을 선택합니다. 그런 다음 **텍스트 편집기** > **C#**  > **고급**을 확장하고 **디컴파일된 소스에 대한 탐색 사용**을 선택합니다.
 
 ![디컴파일된 정의 보기](media/go-to-definition-decompiled-sources.png)
 

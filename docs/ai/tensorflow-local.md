@@ -1,6 +1,6 @@
 ---
 title: 로컬로 tensorflow 모델 학습
-description: 'AI Tools for Visual Studio에서 로컬로 tensorflow 모드 실행 '
+description: AI Tools for Visual Studio에서 로컬로 tensorflow 모드 실행
 keywords: ai, visual studio, tensorflow, 로컬
 author: lisawong19
 ms.author: liwong
@@ -10,12 +10,12 @@ ms.topic: quickstart
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: 26668247bf993da3eb3f2803abaf9288e566ffee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 43ce126baeb96efcaab3c40bac912274ee1cd8c7
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555471"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777439"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>로컬로 tensorflow 모델 학습
 

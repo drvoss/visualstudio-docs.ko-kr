@@ -14,23 +14,23 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- RC task (MSBuild (Visual C++))
-- MSBuild (Visual C++), RC task
+- RC task (MSBuild (C++))
+- MSBuild (C++), RC task
 ms.assetid: 2fd26c75-a056-4dda-9f7e-2f90d3748d88
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a69649a7babacb0fe08b483380214f17f2e582f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6d217ba46f7b50851c8fe19f420195dcf9ee698a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974659"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748047"
 ---
 # <a name="rc-task"></a>RC 작업
-Microsoft Windows 리소스 컴파일러 도구, *rc.exe*를 래핑합니다. **RC** 작업은 커서, 아이콘, 비트맵, 대화 상자 및 글꼴과 같은 리소스를 리소스(*.res*) 파일로 컴파일합니다. 자세한 내용은 [리소스 컴파일러](https://docs.microsoft.com/windows/desktop/menurc/resource-compiler)를 참조하세요.
+Microsoft Windows 리소스 컴파일러 도구, *rc.exe*를 래핑합니다. **RC** 작업은 커서, 아이콘, 비트맵, 대화 상자 및 글꼴과 같은 리소스를 리소스( *.res*) 파일로 컴파일합니다. 자세한 내용은 [리소스 컴파일러](https://docs.microsoft.com/windows/desktop/menurc/resource-compiler)를 참조하세요.
 
 ## <a name="parameters"></a>매개 변수
  다음 표에서는 RC 작업의 매개 변수에 대해 설명합니다. 대부분의 작업 매개 변수 및 몇 가지 매개 변수 집합은 명령줄 옵션에 해당합니다.

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - open folder [Visual Studio]
 - anycode [Visual Studio]
 - projects and solutions, develop code without
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7554d3f89547701e1a7cad0280a1655450520586
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a88bfb5f12ae707c98eedd1f57a4be14665aa83c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962470"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652513"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>프로젝트 또는 솔루션 없이 Visual Studio에서 코드 개발
 
@@ -74,7 +74,7 @@ Visual Studio에서 다음과 같은 방법으로 코드를 열 수 있습니다
 
 ## <a name="run-and-debug-your-code"></a>코드 실행 및 디버그
 
-Visual Studio에서 프로젝트 또는 솔루션 없이 코드를 디버그할 수 있습니다. 일부 언어를 디버그하려면 스크립트, 실행 파일 또는 프로젝트와 같은 유효한 ‘시작 파일’을 코드베이스에서 지정해야 할 수 있습니다. 도구 모음의 **시작** 단추 옆에 있는 드롭다운 목록 상자에서는 Visual Studio에서 검색한 모든 시작 항목과 특별히 지정한 항목을 나열합니다. 코드를 디버그할 때는 먼저 이 코드를 Visual Studio에서 실행합니다.
+Visual Studio에서 프로젝트 또는 솔루션 없이 코드를 디버그할 수 있습니다. 일부 언어를 디버그하려면 스크립트, 실행 파일 또는 프로젝트와 같은 유효한 ‘시작 파일’을 코드베이스에서 지정해야 할 수 있습니다.  도구 모음의 **시작** 단추 옆에 있는 드롭다운 목록 상자에서는 Visual Studio에서 검색한 모든 시작 항목과 특별히 지정한 항목을 나열합니다. 코드를 디버그할 때는 먼저 이 코드를 Visual Studio에서 실행합니다.
 
 Visual Studio에서 실행되도록 코드를 구성하는 것은 해당 코드의 종류 및 빌드 도구에 따라 달라집니다.
 
@@ -87,7 +87,7 @@ MSBuild 기반 코드베이스에는 **시작** 단추의 드롭다운 목록에
 
 ### <a name="codebases-that-use-custom-build-tools"></a>사용자 지정 빌드 도구를 사용하는 코드베이스
 
-코드베이스에서 사용자 지정 빌드 도구를 사용하는 경우 *.json* 파일에 정의된 ‘빌드 작업’을 사용하여 코드 빌드 방법을 Visual Studio에 알려야 합니다. 자세한 내용은 [빌드 및 디버그 작업 사용자 지정](../ide/customize-build-and-debug-tasks-in-visual-studio.md)을 참조하세요.
+코드베이스에서 사용자 지정 빌드 도구를 사용하는 경우 *.json* 파일에 정의된 ‘빌드 작업’을 사용하여 코드 빌드 방법을 Visual Studio에 알려야 합니다.  자세한 내용은 [빌드 및 디버그 작업 사용자 지정](../ide/customize-build-and-debug-tasks-in-visual-studio.md)을 참조하세요.
 
 ### <a name="codebases-that-contain-python-or-javascript-code"></a>Python 또는 JavaScript 코드를 포함하는 코드베이스
 

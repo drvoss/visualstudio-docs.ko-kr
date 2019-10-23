@@ -5,21 +5,21 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Validation
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d06674d476dd671f715d2f4c88bdd23852f78687
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6baaf22b0a57cf669fbe0ffc4fe75cf1c72baa3b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778481"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666115"
 ---
 # <a name="options-text-editor-html-web-forms-validation"></a>옵션, 텍스트 편집기, HTML(Web Forms), 유효성 검사
 
-**유효성 검사** 옵션 페이지를 사용하여 HTML 편집기에서 문서의 HTML 태그 구문이 올바른지 검사하는 방법에 대한 기본 설정을 지정합니다. 이 페이지에 액세스하려면 메뉴 모음에서 **도구** > **옵션**을 선택한 다음, **텍스트 편집기** > **HTML(Web Forms)** > **유효성 검사**를 확장합니다.
+**유효성 검사** 옵션 페이지를 사용하여 HTML 편집기에서 문서의 HTML 태그 구문이 올바른지 검사하는 방법에 대한 기본 설정을 지정합니다. 이 페이지에 액세스하려면 메뉴 모음에서 **도구** > **옵션**을 선택한 다음, **텍스트 편집기** > **HTML(Web Forms)**  > **유효성 검사**를 확장합니다.
 
 ## <a name="validation"></a>유효성 검사
 

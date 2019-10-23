@@ -2,16 +2,16 @@
 title: Visual Studio에서 DPI 인식 사용 안 함
 description: HDPI 모니터에 대한 Windows Forms 디자이너의 제한 사항 및 Visual Studio를 DPI를 인식하지 않는 프로세스로 실행하는 방법에 대해 설명합니다.
 ms.date: 04/05/2019
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.topic: conceptual
-ms.openlocfilehash: fdcf255b8ad7c613a83284759a1f4859041acfc4
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: a368108f1b8f9682151ed8c7b0a6d8b83b1b8a1f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69619975"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72637401"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>Visual Studio에서 DPI 인식 사용 안 함
 

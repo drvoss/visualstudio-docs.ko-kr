@@ -6,21 +6,21 @@ helpviewer_keywords:
 - class diagrams, copying elements to Office documents
 - Office documents [Visual Studio]
 ms.assetid: c43061ad-d258-46b1-be66-f97a312e86d5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19fbcc3db88cd020e1a4541f6cfb7f5f3acd18b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 82228d924b2f475d9a9f7e607ccf902f2b4eaa0e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975494"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631853"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>방법: 클래스 다이어그램 요소를 Microsoft Office 문서에 복사
 
-.NET 클래스 다이어그램(*.cd* 파일)에서 다른 문서로 도형을 복사할 수 있습니다. 붙여 넣는 문서 종류에 따라 도형 복사본 또는 해당 기본 코드를 얻게 됩니다. 모델링 프로젝트에서 UML 클래스 다이어그램의 도형을 복사하려면 [다이어그램을 이미지로 내보내기](../../modeling/export-diagrams-as-images.md)를 참조하세요.
+.NET 클래스 다이어그램( *.cd* 파일)에서 다른 문서로 도형을 복사할 수 있습니다. 붙여 넣는 문서 종류에 따라 도형 복사본 또는 해당 기본 코드를 얻게 됩니다. 모델링 프로젝트에서 UML 클래스 다이어그램의 도형을 복사하려면 [다이어그램을 이미지로 내보내기](../../modeling/export-diagrams-as-images.md)를 참조하세요.
 
 ## <a name="copy-a-single-element"></a>단일 요소 복사
 

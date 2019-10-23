@@ -7,17 +7,17 @@ helpviewer_keywords:
 - /Command Devenv switch
 - Command Devenv switch
 ms.assetid: 13c20cd6-f09d-400a-8b7b-ecc266a32cef
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6daa21f9db7eef9a651577ad829d884dccf353dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2ca9a6550fd5fd141a5f8051d1948ccd626e970b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968625"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654603"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 
@@ -35,7 +35,7 @@ devenv /Command CommandName
 
 필수 요소. Visual Studio 명령 또는 해당 별칭의 전체 이름으로, 큰따옴표로 묶습니다. 명령 및 별칭 구문에 대한 자세한 내용은 [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)을 참조하세요.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 시작이 완료된 후 IDE는 명명된 명령을 실행합니다.
 
@@ -47,7 +47,7 @@ devenv /Command CommandName
 
 추가 기능이 명령을 표시할 경우에는 이 스위치를 사용하여 명령줄에서 추가 기능을 시작할 수 있습니다. 자세한 내용은 [방법: 추가 기능 관리자를 사용하여 추가 기능 제어](/previous-versions/xwdatdwh(v=vs.140))를 참조하세요.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 첫 번째 예제에서는 Visual Studio를 시작하고 Open Favorite Files(즐겨찾기 파일 열기) 매크로를 자동으로 실행합니다.
 

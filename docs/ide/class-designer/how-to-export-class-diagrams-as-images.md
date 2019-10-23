@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - class diagrams, exporting as images
 ms.assetid: c57055c5-1340-449f-b9d3-ca6f87e2f69a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fb8f735478da16989830a1a68c239b9a2a98496
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0bceb724784f70e3b1c527507eb7d837558c7d0f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975205"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631736"
 ---
 # <a name="how-to-export-class-diagrams-as-images"></a>방법: 클래스 다이어그램을 이미지로 내보내기
 
@@ -25,7 +25,7 @@ ms.locfileid: "62975205"
 
 ## <a name="export-a-diagram"></a>다이어그램 내보내기
 
-1. 클래스 다이어그램(*.cd*) 파일을 엽니다.
+1. 클래스 다이어그램( *.cd*) 파일을 엽니다.
 
 2. **클래스 다이어그램** 메뉴 또는 다이어그램 화면 바로 가기 메뉴에서 **다이어그램을 이미지로 내보내기**를 선택합니다.
 

@@ -6,23 +6,23 @@ f1_keywords:
 - vs.findcommandbox
 helpviewer_keywords:
 - Find/Command box
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 221c5fbbd3f0f82ac97d0c2a0fcc82657e0296c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 024491180528dd4b8335c88623e7d261c0a2bbe2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977797"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653724"
 ---
 # <a name="findcommand-box"></a>찾기/명령 상자
 
 텍스트를 검색하고 **찾기/명령** 상자에서 Visual Studio 명령을 실행할 수 있습니다. **찾기/명령** 상자를 도구 모음 컨트롤로 사용할 수 있지만 이 상자는 더 이상 기본적으로 표시되지 않습니다. **찾기/명령** 상자를 표시하려면 **표준** 도구 모음에서 **단추 추가/제거**를 선택하고 나서 **찾기**를 선택합니다.
 
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 명령을 실행하려면 앞에 보다 큼(**>**) 기호를 붙입니다.
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 명령을 실행하려면 앞에 보다 큼( **>** ) 기호를 붙입니다.
 
 **찾기/명령** 상자는 입력된 마지막 20개 항목을 유지하고 드롭다운 목록에 표시합니다. **화살표 키**를 선택하여 목록을 이동할 수 있습니다.
 
@@ -34,7 +34,7 @@ ms.locfileid: "62977797"
 
 ## <a name="entering-commands"></a>명령 입력
 
-**찾기/명령** 상자를 사용하여 텍스트 검색이 아닌 단일 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 명령이나 별칭을 실행하려면 해당 명령 앞에 보다 큼(**>**) 기호를 배치합니다. 예:
+**찾기/명령** 상자를 사용하여 텍스트 검색이 아닌 단일 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 명령이나 별칭을 실행하려면 해당 명령 앞에 보다 큼( **>** ) 기호를 배치합니다. 예:
 
 ```
 >File.NewFile c:\temp\MyFile /t:"General\Text File"
@@ -44,7 +44,7 @@ ms.locfileid: "62977797"
 
 ## <a name="escape-characters"></a>이스케이프 문자
 
-명령의 캐럿(**^**) 문자는 캐럿 바로 뒤의 문자가 제어 문자가 아닌 문자 그대로 해석된다는 것을 의미합니다. 이스케이프 문자는 매개 변수 또는 스위치 값에 곧은 큰따옴표(**"**), 공백, 선행 슬래시, 캐럿 등 또는 리터럴 문자를 포함하기 위해 사용할 수 있습니다(스위치 이름 제외). 예:
+명령의 캐럿( **^** ) 문자는 캐럿 바로 뒤의 문자가 제어 문자가 아닌 문자 그대로 해석된다는 것을 의미합니다. 이스케이프 문자는 매개 변수 또는 스위치 값에 곧은 큰따옴표( **"** ), 공백, 선행 슬래시, 캐럿 등 또는 리터럴 문자를 포함하기 위해 사용할 수 있습니다(스위치 이름 제외). 예:
 
 ```
 >Edit.Find ^^t /regex

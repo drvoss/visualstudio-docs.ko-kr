@@ -20,17 +20,17 @@ helpviewer_keywords:
 - Visual Studio, call hierarchy window
 - class view
 - object browser
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 616f62110dbaa18d53b4ecc3cade7737f551e5f9
-ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.openlocfilehash: 0fc7ade360ac586f09eb838057251172be5d0e81
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71150121"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647301"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>다른 도구 창을 사용하여 코드 구조 보기
 
@@ -86,7 +86,7 @@ Visual Studio Enterprise Edition이 있는 경우 ‘코드 맵’을 사용하�
 |**정의 찾아보기**|**개체 브라우저**에 선택한 항목을 표시합니다.|
 |**모든 참조 찾기**|현재 선택한 개체 항목을 찾아 **찾기 결과** 창에 결과를 표시합니다.|
 |**형식에 대한 필터**(관리 코드에만 해당)|선택한 형식 또는 네임스페이스만 표시합니다. **찾기** 상자 옆의 **찾기 지우기**(**X**) 단추를 선택하여 필터를 제거할 수 있습니다.|
-|**Copy**|항목의 정규화된 이름을 복사합니다.|
+|**복사**|항목의 정규화된 이름을 복사합니다.|
 |**사전순 정렬**|이름을 기준으로 사전순으로 형식 및 멤버를 나열합니다.|
 |**멤버 유형별 정렬**|유형을 기준으로 순서대로 형식 및 멤버를 나열합니다(예: 클래스가 인터페이스보다 선행하고, 인터페이스가 대리자보다 선행하고, 메서드가 속성보다 선행).|
 |**멤버 액세스별 정렬**|공용 또는 전용과 같이 액세스 유형을 기준으로 순서대로 형식 및 멤버를 나열합니다.|
@@ -118,7 +118,7 @@ Visual Studio Enterprise Edition이 있는 경우 ‘코드 맵’을 사용하�
 |**루트 제거**|트리 뷰 창에서 선택한 루트 노드를 제거합니다.|
 |**정의로 이동**|메서드의 원래 정의로 이동합니다.|
 |**모든 참조 찾기**|선택한 메서드에 대한 모든 참조를 프로젝트에서 찾습니다.|
-|**Copy**|선택한 노드(해당 하위 노드 제외)를 복사합니다.|
+|**복사**|선택한 노드(해당 하위 노드 제외)를 복사합니다.|
 |**새로 고침**|정보를 새로 고칩니다.|
 
 ## <a name="BKMK_ObjectBrowser"></a> 개체 브라우저
@@ -173,7 +173,7 @@ Visual Studio Enterprise Edition이 있는 경우 ‘코드 맵’을 사용하�
 |**정의 찾아보기**|선택한 항목의 주 노드를 보여 줍니다.|
 |**모든 참조 찾기**|현재 선택한 개체 항목을 찾아 **찾기 결과** 창에 결과를 표시합니다.|
 |**형식에 대한 필터**|선택한 형식 또는 네임스페이스만 표시합니다. **검색 지우기** 단추를 선택하여 필터를 제거할 수 있습니다.|
-|**Copy**|항목의 정규화된 이름을 복사합니다.|
+|**복사**|항목의 정규화된 이름을 복사합니다.|
 |**제거**|범위가 사용자 지정 구성 요소 집합인 경우 범위에서 선택한 구성 요소를 제거합니다.|
 |**사전순 정렬**|이름을 기준으로 사전순으로 형식 및 멤버를 나열합니다.|
 |**개체 형식별 정렬**|유형을 기준으로 순서대로 형식 및 멤버를 나열합니다(예: 클래스가 인터페이스보다 선행하고, 인터페이스가 대리자보다 선행하고, 메서드가 속성보다 선행).|

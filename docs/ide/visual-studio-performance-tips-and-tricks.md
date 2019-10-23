@@ -2,17 +2,17 @@
 title: 성능을 향상시키기 위한 팁
 ms.date: 08/14/2018
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fccae7d42d9e8f99c78fd55f74466e2f83e5dfa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ccf785cec859290cac0ebcf5c9685861bd2887e4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581786"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647143"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 성능 팁과 요령
 
@@ -57,7 +57,7 @@ Visual Studio는 자동 문서 복원이 솔루션을 현저히 느리게 로드
 
 - **로드할 기호 지정**
 
-    네이티브 디버깅의 경우 기호 파일(*.pdb*)을 로드하면 메모리 리소스가 많이 소비됩니다. 디버거 기호 설정을 구성하면 메모리를 절약할 수 있습니다. 일반적으로는 내 프로젝트의 모듈만 로드하도록 솔루션을 구성합니다.
+    네이티브 디버깅의 경우 기호 파일( *.pdb*)을 로드하면 메모리 리소스가 많이 소비됩니다. 디버거 기호 설정을 구성하면 메모리를 절약할 수 있습니다. 일반적으로는 내 프로젝트의 모듈만 로드하도록 솔루션을 구성합니다.
 
     기호 로딩을 지정하려면 **도구** > **옵션** > **디버깅** > **기호**를 선택합니다.
 

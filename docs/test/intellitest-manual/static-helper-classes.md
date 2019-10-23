@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Static helper classes
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: f7d1fe7213bff39f83f315b472f29cb06eda06ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+author: jillre
+ms.openlocfilehash: dd57ecafa0b4da56366faa83d52c39ca556e421a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939071"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653140"
 ---
 # <a name="static-helper-classes"></a>정적 도우미 클래스
 
@@ -95,7 +95,7 @@ public void TestSomething(int i) {
 
 * 특정 테스트 사례에 대해 생성된 코드에서는 특정 방법으로 선택 항목 공급자를 설정하므로, 해당 테스트 사례를 다시 실행하면 특정 선택 항목이 특정 실행 경로를 트리거합니다.
 
-**사용법**
+**사용 현황**
 
 * **PexChoose.Value**를 호출해서 새 값을 생성하면 됩니다.
 
@@ -141,7 +141,7 @@ public partial class MathExTests {
 
 매개 변수에 대한 제약 조건을 무시하고 값과 연결된 기호 정보를 인쇄하는 데 사용되는 정적 클래스입니다.
 
-**사용법**
+**사용 현황**
 
 일반적으로 IntelliTest는 실행 중에 코드의 모든 실행 경로를 검사하려고 시도합니다. 그러나 특히 가정 및 어설션 조건을 계산할 경우에는 일부 가능한 사례를 탐색하면 안 됩니다.
 

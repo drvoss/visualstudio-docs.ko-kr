@@ -2,17 +2,17 @@
 title: 메서드 생성
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d815b638033e16796c90a362207b820bfe7cc57d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c85e3f849d7d74f326c1cf330b0e2c338d78fc6a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62794852"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668341"
 ---
 # <a name="generate-a-method-in-visual-studio"></a>Visual Studio에서 메서드 생성
 
@@ -32,7 +32,7 @@ ms.locfileid: "62794852"
 
 1. 빨간색 구부러진 곡선이 있는 줄에 커서를 놓습니다. 빨간색 구부러진 곡선은 아직 존재하지 않는 메서드를 나타냅니다.
 
-   - C#: 
+   - C#:
 
        ![강조 표시된 코드 C#](media/method-highlight-cs.png)
 
@@ -43,7 +43,7 @@ ms.locfileid: "62794852"
 2. 다음 작업 중 하나를 수행합니다.
 
    - **키보드**
-      - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
+      - 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
    - **마우스**
       - 마우스 오른쪽 단추로 클릭하고 **빠른 작업 및 리팩터링** 메뉴를 선택합니다.
       - 빨간색 구부러진 곡선 위로 마우스를 이동하고 표시되는 ![오류 전구](media/error-bulb.png) 아이콘을 클릭합니다.
@@ -58,7 +58,7 @@ ms.locfileid: "62794852"
 
    메서드는 해당 사용에서 추론된 매개 변수를 사용하여 만들어집니다.
 
-   - C#: 
+   - C#:
 
        ![메서드 생성 결과 C#](media/method-result-cs.png)
 

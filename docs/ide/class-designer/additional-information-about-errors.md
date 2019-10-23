@@ -23,23 +23,23 @@ helpviewer_keywords:
 - Class Designer [Visual Studio], errors
 - class diagrams, errors
 ms.assetid: 79d70e70-704c-4255-ab68-c10d6949470e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aadc0cfb66226f463ff8a2049d4dbf81e7bcf62b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d2fe684f4b10e3570e96a88c34d1e1c08c7388da
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975554"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631906"
 ---
 # <a name="class-designer-errors"></a>클래스 디자이너 오류
 
 **클래스 디자이너**는 소스 파일 위치를 추적하지 않으므로 프로젝트 구조를 수정하거나 프로젝트에서 소스 파일을 이동하면 **클래스 디자이너**가 유형을 추적하지 못할 수 있습니다. 예를 들어, typedef, 기본 클래스 및 연결 형식 등의 소스 유형을 수정하는 것이 일반적입니다. **클래스 디자이너에서 이 형식을 표시할 수 없습니다.** 와 같은 오류가 발생할 수 있습니다. 이러한 오류를 해결하려면 수정되거나 위치가 변경된 소스 코드를 클래스 다이어그램으로 끌어서 다시 표시합니다.
 
-## <a name="resources"></a>자료
+## <a name="resources"></a>리소스
 
 다음 리소스에서 다른 오류 및 경고에 대한 도움말을 찾을 수 있습니다.
 

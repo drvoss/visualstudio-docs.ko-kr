@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38da720b63c8f5ba6d2ceb89fe8b414c6700cbcd
-ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.openlocfilehash: 5fa726aa9f2055f7803f066607ee931550bdcafb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72381356"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747361"
 ---
 # <a name="common-msbuild-project-properties"></a>일반적인 MSBuild 프로젝트 속성
 다음 표에서는 Visual Studio 프로젝트 파일에 정의되거나 MSBuild가 제공하는 *.targets* 파일에 포함된 자주 사용하는 속성을 보여 줍니다.
@@ -50,7 +50,7 @@ ms.locfileid: "72381356"
 | CleanFile | "정리 캐시"로 사용할 파일의 이름입니다. 정리 캐시는 생성 파일 중 정리 작업 시 삭제할 파일의 목록입니다. 이 파일은 빌드 프로세스에 의해 중간 출력 경로에 저장됩니다.<br /><br /> 이 속성은 경로 정보가 없는 파일 이름만 지정합니다. |
 | CodePage | 컴파일할 때 모든 소스 코드 파일에 사용할 코드 페이지를 지정합니다. 이 속성은 `/codepage` 컴파일러 스위치와 동일합니다. |
 | CompilerResponseFile | 컴파일러 작업에 전달할 수 있는 선택적 지시 파일입니다. |
-| 구성 | 빌드하고 있는 구성으로, "디버그" 또는 "릴리스"입니다. |
+| Configuration | 빌드하고 있는 구성으로, "디버그" 또는 "릴리스"입니다. |
 | CscToolPath | [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 컴파일러인 *csc.exe*의 경로입니다. |
 | CustomBeforeMicrosoftCommonTargets | 공통 대상을 가져오기 전에 자동으로 가져올 프로젝트 파일 또는 대상 파일의 이름입니다. |
 | DebugSymbols | 빌드 시 기호의 생성 여부를 나타내는 부울 값입니다.<br /><br /> 명령줄에서 **-p:DebugSymbols=false**를 설정하면 프로그램 데이터베이스( *.pdb*) 기호 파일이 생성되지 않습니다. |
@@ -78,7 +78,7 @@ ms.locfileid: "72381356"
 | NoStdLib | 표준 라이브러리(*mscorlib.dll*)를 참조하지 않을지 여부를 나타내는 부울 값입니다. 기본값은 `false`입니다. |
 | NoVBRuntimeReference | [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 런타임(*Microsoft.VisualBasic.dll*)이 프로젝트에 참조로 포함되어야 하는지 여부를 나타내는 부울 값입니다. |
 | NoWin32Manifest | 애플리케이션의 실행 파일에 UAC(사용자 계정 컨트롤) 매니페스트 정보를 포함할지 여부를 나타내는 부울 값입니다. [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]를 대상으로 하는 Visual Studio 프로젝트에만 적용됩니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 및 등록이 필요 없는 COM을 사용하여 배포된 프로젝트에서는 이 요소가 무시됩니다. `False`(기본값)는 애플리케이션의 실행 파일에 UAC(사용자 계정 컨트롤) 매니페스트 정보를 포함할지 여부를 지정합니다. `True`는 UAC 매니페스트 정보가 포함되지 않음을 지정합니다.<br /><br /> 이 속성은 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]를 대상으로 하는 [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] 프로젝트에만 적용됩니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 및 등록이 필요 없는 COM을 사용하여 배포된 프로젝트에서는 이 속성이 무시됩니다.<br /><br /> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 애플리케이션의 실행 파일에 매니페스트 정보를 포함하지 않으려는 경우에만 NoWin32Manifest를 추가해야 합니다. 이 프로세스를 *가상화*라고 합니다. 가상화를 사용하려면 다음과 같이 `<ApplicationManifest>`와 `<NoWin32Manifest>`를 함께 설정합니다.<br /><br /> -   [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 프로젝트의 경우 `<ApplicationManifest>` 노드를 제거합니다. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 프로젝트에서는 `<ApplicationManifest>` 노드가 있으면 `<NoWin32Manifest>`가 무시됩니다.<br />-   [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 프로젝트의 경우 `<ApplicationManifest>`를 `False`로, `<NoWin32Manifest>`를 `True`로 설정합니다. [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 프로젝트에서는 `<ApplicationManifest>`가 `<NoWin32Manifest>`를 재정의합니다.<br /> 이 속성은 *vbc.exe*의 `/nowin32manifest` 컴파일러 스위치와 동일합니다. |
-| 최적화 | `true`로 설정하면 컴파일러 최적화를 사용으로 설정하는 부울 값입니다. 이 속성은 `/optimize` 컴파일러 스위치와 동일합니다. |
+| Optimize | `true`로 설정하면 컴파일러 최적화를 사용으로 설정하는 부울 값입니다. 이 속성은 `/optimize` 컴파일러 스위치와 동일합니다. |
 | OptionCompare | 문자열 비교 방법을 지정합니다. 유효한 값은 "binary" 또는 "text"입니다. 이 속성은 *vbc.exe*의 `/optioncompare` 컴파일러 스위치와 동일합니다. |
 | OptionExplicit | `true`로 설정하면 소스 코드에서 변수를 명시적으로 선언해야 하는 부울 값입니다. 이 속성은 `/optionexplicit` 컴파일러 스위치와 동일합니다. |
 | OptionInfer | `true`로 설정하면 변수의 형식 유추를 사용으로 설정하는 부울 값입니다. 이 속성은 `/optioninfer` 컴파일러 스위치와 동일합니다. |
@@ -89,7 +89,7 @@ ms.locfileid: "72381356"
 | PathMap | 실제 경로를 컴파일러에서 출력되는 소스 경로 이름에 매핑하는 방법을 지정합니다. 이 속성은 *csc.exe* 컴파일러의 `/pathmap` 스위치와 동일합니다. |
 | PdbFile | 내보낼 *.pdb* 파일의 파일 이름입니다. 이 속성은 *csc.exe* 컴파일러의 `/pdb` 스위치와 동일합니다. |
 | 플랫폼 | 빌드하고 있는 운영 체제입니다. 유효한 값은 "Any CPU", "x86" 및 "x64"입니다. |
-| ProduceReferenceAssembly | 부울 값으로, `true`로 설정하면 현재 어셈블리에 대한 [참조 어셈블리](https://github.com/dotnet/roslyn/blob/master/docs/features/refout.md)를 생성합니다. 이 기능을 사용할 경우 `Deterministic`이 `true`여야 합니다. 이 속성은 *vbc.exe* 및 *csc.exe* 컴파일러의 `/refout` 스위치에 해당합니다. |
+| ProduceReferenceAssembly | 부울 값으로, `true`로 설정하면 현재 어셈블리에 대한 [참조 어셈블리](/dotnet/standard/assembly/reference-assemblies)를 생성합니다. 이 기능을 사용할 경우 `Deterministic`이 `true`여야 합니다. 이 속성은 *vbc.exe* 및 *csc.exe* 컴파일러의 `/refout` 스위치에 해당합니다. |
 | ProduceOnlyReferenceAssembly | 컴파일러에 컴파일된 코드가 아닌 참조 어셈블리만 내보내도록 지시하는 부울 값입니다. `ProduceReferenceAssembly`와 함께 사용할 수 없습니다.  이 속성은 *vbc.exe* 및 *csc.exe* 컴파일러의 `/refonly` 스위치에 해당합니다. |
 | RemoveIntegerChecks | 정수 오버플로 오류 검사를 비활성화할지 여부를 나타내는 부울 값입니다. 기본값은 `false`입니다. 이 속성은 *vbc.exe* 컴파일러의 `/removeintchecks` 스위치와 동일합니다. |
 | SGenUseProxyTypes | *SGen.exe*에서 프록시 형식을 생성해야 하는지 여부를 나타내는 부울 값입니다. *GenerateSerializationAssemblies*를 on으로 설정했으며 .NET Framework만 대상으로 할 경우에만 적용됩니다.<br /><br /> SGen 대상은 이 속성을 사용하여 UseProxyTypes 플래그를 설정합니다. 이 속성은 기본적으로 true로 설정되어 있으며 이를 변경할 UI가 없습니다. 웹 서비스가 아닌 형식에 대해 serialization 어셈블리를 생성하려면 이 속성을 프로젝트 파일에 추가하고 *Microsoft.Common.Targets* 또는 *C#/VB.targets*를 가져오기 전에 false로 설정합니다. |

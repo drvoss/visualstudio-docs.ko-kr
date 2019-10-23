@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Devenv, /DoNotLoadProjects switch
 - /DoNotLoadProjects Devenv switch
 - DoNotLoadProjects Devenv switch
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a414fde4dee401016e997fa5d6890da2ae8d9d53
-ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.openlocfilehash: 34fe7dfed2774eace7d32b1c9041355b566d4e76
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65083926"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654500"
 ---
 # <a name="donotloadprojects-devenvexe"></a>/DoNotLoadProjects(devenv.exe)
 
@@ -36,7 +36,7 @@ devenv /DoNotLoadProjects SolutionName
 
 필수 요소. 열려는 솔루션의 전체 경로 및 이름입니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 예제에서는 프로젝트를 로드하지 않고 MySln.sln 솔루션을 엽니다.
 

@@ -6,19 +6,19 @@ helpviewer_keywords:
 - request-level plug-in, creating
 - Web performance tests, requests
 ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fc1d609bab25b6a8e0dd573807aa02fefbe87a71
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce0a8030253e69b35deda379cffcf7475dc8bb62
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950178"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653631"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>방법: 요청 수준 플러그 인 만들기
 
-‘요청’은 웹 성능 테스트를 구성하는 선언문입니다. 웹 성능 테스트 플러그 인을 사용하면 웹 성능 테스트의 주 선언문 외부에서 코드를 분리하여 다시 사용할 수 있습니다. 플러그 인을 만들어 개별 요청과 요청을 포함하는 웹 성능 테스트에 추가할 수 있습니다. 사용자 지정 ‘요청 플러그 인’을 사용하면 웹 성능 테스트에서 특정 요청을 실행하는 코드를 호출할 수 있습니다.
+‘요청’은 웹 성능 테스트를 구성하는 선언문입니다.  웹 성능 테스트 플러그 인을 사용하면 웹 성능 테스트의 주 선언문 외부에서 코드를 분리하여 다시 사용할 수 있습니다. 플러그 인을 만들어 개별 요청과 요청을 포함하는 웹 성능 테스트에 추가할 수 있습니다. 사용자 지정 ‘요청 플러그 인’을 사용하면 웹 성능 테스트에서 특정 요청을 실행하는 코드를 호출할 수 있습니다. 
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -81,7 +81,7 @@ ms.locfileid: "62950178"
     > 1. 웹 성능 및 부하 테스트 프로젝트에서는 참조에 경고가 표시됩니다. 참조를 제거했다가 플러그 인 DLL에 다시 추가합니다.
     > 2. 테스트 또는 적절한 위치에서 플러그 인을 제거했다가 다시 추가합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 다음 코드를 사용하여 두 대화 상자를 표시하는 사용자 지정 웹 성능 테스트 플러그 인을 만들 수 있습니다. 첫 번째 대화 상자에는 요청 추가 기능을 연결할 요청과 연결된 URL이 표시됩니다. 두 번째 대화 상자에 에이전트의 컴퓨터 이름이 표시됩니다.
 

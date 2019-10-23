@@ -7,18 +7,18 @@ dev_langs:
 - VB
 helpviewer_keywords:
 - language code style rules [EditorConfig]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e4f49df2c775bc3bb95888d76da133898ab9c76e
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 38d625b774bc828741e2e4f227a45a293c029235
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186505"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652801"
 ---
 # <a name="language-conventions"></a>언어 규칙
 
@@ -50,7 +50,7 @@ Visual Studio 내의 EditorConfig 언어 규칙은 2개 범주, 즉 Visual Basic
 
 언어 규칙 심각도는 해당 스타일을 적용할 수준을 지정합니다. 다음 표에서는 가능한 심각도 값 및 해당 효과를 나열합니다.
 
-심각도 | 결과
+심각도 | 효과
 :------- | ------
 `error` | 이 스타일 규칙을 위반하는 경우 컴파일러 오류가 표시됩니다.
 `warning` | 이 스타일 규칙을 위반하는 경우 컴파일러 경고가 표시됩니다.

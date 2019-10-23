@@ -23,17 +23,17 @@ helpviewer_keywords:
 - WPF Designer, XAML formatting
 - XAML view settings, attribute spacing
 ms.assetid: 2a420e58-a408-4e8d-9220-44eeb4f67801
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9b124b86b98f86c775165d8fe33164a352d8e20a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 242daf82d405af4b3a1e529633fb82651aa6bdc9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969243"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666630"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>옵션, 텍스트 편집기, XAML, 기타
 
@@ -47,7 +47,7 @@ ms.locfileid: "62969243"
 |-|-|
 |**닫는 태그**|보다 큼 문자(>)로 여는 태그를 닫을 때 요소의 닫는 태그를 자동으로 생성할지 지정합니다.|
 |**특성 따옴표**|문 완성 드롭다운 목록에서 특성 값을 선택할 때 묶는 따옴표를 생성할지 지정합니다.|
-|**MarkupExtensions의 닫는 중괄호**|여는 중괄호 문자(**{**)를 입력할 때 태그 확장의 닫는 중괄호(**}**)를 자동으로 생성할지 지정합니다.|
+|**MarkupExtensions의 닫는 중괄호**|여는 중괄호 문자( **{** )를 입력할 때 태그 확장의 닫는 중괄호( **}** )를 자동으로 생성할지 지정합니다.|
 |**MarkupExtension 매개 변수를 구분하는 쉼표**|태그 확장에 둘 이상의 매개 변수를 입력할 때 쉼표를 생성할지 지정합니다.|
 
 ## <a name="errors-and-warnings"></a>오류 및 경고

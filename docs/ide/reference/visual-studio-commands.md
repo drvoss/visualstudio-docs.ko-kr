@@ -7,17 +7,17 @@ helpviewer_keywords:
 - commands, Visual Studio
 - command syntax
 ms.assetid: 76ffa394-ee89-4629-aba9-1a62b72e6cc1
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 294ca45123faf1625b6f09a638ddc089a31d85cc
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 3af3685288c00e27bb63cd45c682ab8b6354f4e5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043587"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72622108"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio 명령
 
@@ -73,7 +73,7 @@ Visual Studio 명령의 이스케이프 문자는 캐럿(^)입니다. 이스케�
 | [기수 설정](../../ide/reference/set-radix-command.md) | 보려는 바이트 수를 결정합니다. |
 | [셸](../../ide/reference/shell-command.md) | 명령 프롬프트에서 명령이 실행된 것처럼 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 내에서 프로그램을 시작합니다. |
 | [웹 브라우저 표시 명령](../../ide/reference/showwebbrowser-command.md) | IDE(통합 개발 환경) 내부 또는 외부의 웹 브라우저 창에서 지정하는 URL을 표시합니다. |
-| [시작](../../ide/reference/start-command.md) | 디버그 프로세스를 시작하고 오류 처리 방식을 지정할 수 있습니다. |
+| [Start](../../ide/reference/start-command.md) | 디버그 프로세스를 시작하고 오류 처리 방식을 지정할 수 있습니다. |
 | [Path](../../ide/reference/symbol-path-command.md) | 디버거에서 기호를 검색할 디렉터리 목록을 설정합니다. |
 | [중단점 설정/해제](../../ide/reference/toggle-breakpoint-command.md) | 파일의 현재 위치에서 현재 상태에 따라 중단점을 켜거나 끕니다. |
 | [조사식 명령](../../ide/reference/watch-command.md) | **조사식** 창의 지정된 인스턴스를 만들고 엽니다. |

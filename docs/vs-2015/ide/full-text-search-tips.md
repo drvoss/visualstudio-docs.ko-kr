@@ -61,4 +61,4 @@ ms.locfileid: "72645648"
  자주 사용되는 단어 또는 숫자(중지 단어라고도 함)는 전체 텍스트 검색 시 자동으로 무시됩니다. 예를 들어 "pass through" 문구를 검색하는 경우 검색 결과에 "pass" 단어를 포함하는 항목이 표시되지만 "through" 단어를 포함하는 항목은 표시되지 않습니다.
 
 ## <a name="see-also"></a>참고 항목
- [](../ide/locate-information.md) [검색 식에서 정보 논리 연산자](../ide/logical-operators-in-search-expressions.md) 찾기
+ [검색 식에서](../ide/locate-information.md) [Logical 연산자 정보 찾기](../ide/logical-operators-in-search-expressions.md)

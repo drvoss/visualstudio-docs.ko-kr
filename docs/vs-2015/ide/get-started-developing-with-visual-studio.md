@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Visual Studio, getting started
 ms.assetid: 041ef726-f117-4a91-9c18-fef043bf2529
 caps.latest.revision: 67
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 069df2aa2c2bdafbe8c9a396b75dc2385b88163a
-ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+ms.openlocfilehash: e0dbc2c4a4402cc60febaaf158a7a4578bc78115
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70864853"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655886"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Get Started Developing with Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

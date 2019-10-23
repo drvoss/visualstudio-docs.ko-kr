@@ -3,17 +3,17 @@ title: '방법: XML 파일 편집'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bcc560c1e0cabd222da68e98de18d7b8bef6ec6
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: fd8671bf45230ec24a37d5006a2d32e5aabe8f28
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483402"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645919"
 ---
 # <a name="how-to-edit-xml-files"></a>방법: XML 파일 편집
 
@@ -56,7 +56,7 @@ XML 파일을 편집 하려면 편집 하려는 파일을 두 번 클릭 합니�
 
 ::: moniker range="vs-2017"
 
-1. **파일** 메뉴에서 **새** > **프로젝트**를 선택 합니다.
+1. **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 선택합니다.
 
    **새 프로젝트** 대화 상자가 나타납니다.
 
@@ -68,7 +68,7 @@ XML 파일을 편집 하려면 편집 하려는 파일을 두 번 클릭 합니�
 
 ::: moniker range=">=vs-2019"
 
-1. **파일** 메뉴에서 **새** > **프로젝트**를 선택 합니다.
+1. **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 선택합니다.
 
 2. 템플릿 검색 상자에 **빈 프로젝트** 를 입력 하 고 **빈 프로젝트 (.NET Framework)** 템플릿을 선택한 후 **다음**을 클릭 합니다.
 
@@ -80,8 +80,8 @@ XML 파일을 편집 하려면 편집 하려는 파일을 두 번 클릭 합니�
 
    XML 편집기는이 프로젝트에 추가 하는 스키마를 찾고이 프로젝트가 열려 있는 동안 편집 하는 모든 XML, 스키마 또는 XSLT 파일의 유효성 검사 및 IntelliSense에이 스키마를 사용 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [XML 편집기](../xml-tools/xml-editor.md)
 - [XML 문서 속성, 속성 창](../xml-tools/xml-document-properties-properties-window.md)
-- [방법: XML 문서에서 XML 스키마 만들기](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)
+- [방법: XML 문서에서 XML 스키마를 만듭니다 ](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)

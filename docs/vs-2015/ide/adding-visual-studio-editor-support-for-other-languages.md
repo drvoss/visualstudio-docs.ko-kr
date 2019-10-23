@@ -12,15 +12,15 @@ helpviewer_keywords:
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 366ec5de66c3070e30d7d4f98662732a7892437b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7138784201a1ac036047e1c8df362727fa393b51
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68148242"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72620780"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>다른 언어에 대한 Visual Studio 편집기 지원 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Visual Studio 편집기에서 다양한 컴퓨터 언어 읽기 및 탐색을 �
 |||||||
 |-|-|-|-|-|-|
 |Bat|F#|Java|Markdown|Rust|Visual Basic|
-|Clojure|Go|JavaDoc|Objective-C|ShaderLab|Visual C#|
+|Clojure|이동|JavaDoc|Objective-C|ShaderLab|Visual C#|
 |CMake|Groovy|JSON|Perl|ShellScript|Visual C++|
 |CoffeeScript|HTML|LESS|Python|SQL|VBNet|
 |CSS|INI|LUA|R|Swift|XML|
@@ -72,7 +72,7 @@ Visual Studio 편집기에서 다양한 컴퓨터 언어 읽기 및 탐색을 �
 
  상황에 적용되는 경우 다음 폴더를 이 기본 경로 아래에 추가합니다.
 
-|폴더 이름|Description|
+|폴더 이름|설명|
 |-----------------|-----------------|
 |\\ *\<언어 이름>*|언어 폴더입니다. *\<언어 이름>* 을 해당 언어의 이름으로 바꿉니다. 예를 들어 **\Matlab**으로 바꿉니다.|
 |\Syntaxes|문법 폴더입니다. 언어의 문법 .json 파일(예: **Matlab.json**)이 들어 있습니다.|
@@ -80,7 +80,7 @@ Visual Studio 편집기에서 다양한 컴퓨터 언어 읽기 및 탐색을 �
 
  Windows에서 %userprofile%은 c:\Users\\ *\<사용자 이름>* 으로 확인됩니다. 시스템에 extensions 폴더가 없는 경우 새로 만들어야 합니다. 폴더가 이미 있는 경우 숨겨집니다.
 
- TextMate 문법을 만드는 방법에 대 한 자세한 내용은 참조 하세요. [TextMate – 언어 문법 소개: HTML에 포함된 소스 코드 구문 강조 표시를 추가하는 방법](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) 및 [Textmate 번들에 대한 언어 문법 및 사용자 지정 테마를 만드는 방법에 대한 참고 사항](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)을 참조하세요.
+ TextMate 문법을 만드는 방법에 대 한 자세한 내용은 [TextMate – 언어 문법 소개: HTML에 포함된 소스 코드 구문 강조 표시를 추가하는 방법](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) 및 [Textmate 번들에 대한 언어 문법 및 사용자 지정 테마를 만드는 방법에 대한 참고 사항](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
- [Visual Studio 2013 탐색 향상](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [연습: 코드 조각 만들기](../ide/walkthrough-creating-a-code-snippet.md) [연습: 명령문 완성 표시](../extensibility/walkthrough-displaying-statement-completion.md)
+## <a name="see-also"></a>관련 항목:
+ [Visual Studio 2013 향상 된 [Walkthrough로 이동 합니다](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) . @No__t_1Walkthrough ](../ide/walkthrough-creating-a-code-snippet.md) 코드 조각 만들기: 명령문 완성 표시](../extensibility/walkthrough-displaying-statement-completion.md)

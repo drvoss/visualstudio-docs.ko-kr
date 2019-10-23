@@ -9,22 +9,22 @@ helpviewer_keywords:
 - text templates, custom host walkthrough
 ms.assetid: d00bc366-65ed-4229-885a-196ef9625f05
 caps.latest.revision: 53
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b02b3ce1dcfd91c906ed050eed770dab7a8dc0e1
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 23a2f7f59ed3565a23d878858c55da4c4a7e4d85
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871691"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659279"
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>연습: 사용자 지정 텍스트 템플릿 호스트 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 *텍스트 템플릿*<em>호스트</em> 는 *텍스트 템플릿 변환 엔진* 을 실행할 수 있는 환경을 제공 합니다. 호스트는 파일 시스템과 엔진의 상호 작용을 관리합니다. 파일이 나 어셈블리가 필요한 엔진 또는 *지시문 프로세서* 는 호스트에서 리소스를 요청할 수 있습니다. 그러면 호스트는 디렉터리와 전역 어셈블리 캐시를 검색하여 요청된 리소스를 찾을 수 있습니다. 자세한 내용은 [텍스트 템플릿 변환 프로세스](../modeling/the-text-template-transformation-process.md)를 참조 하세요.
 
- 외부[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에서 *텍스트 템플릿 변환* 기능을 사용 하거나 해당 기능을 사용자 지정 도구에 통합 하려는 경우 사용자 지정 호스트를 작성할 수 있습니다. 사용자 지정 호스트를 만들려면 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))에서 상속 되는 클래스를 만들어야 합니다. 개별 메서드에 대 한 설명서는 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))를 참조 하세요.
+ @No__t_1 외부에서 *텍스트 템플릿 변환* 기능을 사용 하거나 해당 기능을 사용자 지정 도구에 통합 하려는 경우 사용자 지정 호스트를 작성할 수 있습니다. 사용자 지정 호스트를 만들려면 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))에서 상속 되는 클래스를 만들어야 합니다. 개별 메서드에 대 한 설명서는 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))를 참조 하세요.
 
 > [!WARNING]
 > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension 또는 패키지를 작성하는 경우 고유 호스트를 만드는 대신 텍스트 템플릿 서비스를 사용하십시오. 자세한 내용은 [VS 확장에서 텍스트 변환 호출](../modeling/invoking-text-transformation-in-a-vs-extension.md)을 참조 하세요.
@@ -51,7 +51,7 @@ ms.locfileid: "68871691"
 
 2. 다음 어셈블리에 대한 참조를 추가합니다.
 
-    - **Microsoft.VisualStudio.TextTemplating.\*.0**
+    - **VisualStudio \*.0**
 
     - **VisualStudio-10.0 및 이후 버전**
 
@@ -714,7 +714,7 @@ ms.locfileid: "68871691"
     End Namespace
     ```
 
-4. 의 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 경우에만 **프로젝트** 메뉴를 열고 **customhost 속성**을 클릭 합니다. **시작 개체** 목록에서 **Customhost. Program**을 클릭 합니다.
+4. @No__t_0의 경우 **프로젝트** 메뉴를 열고 **customhost 속성**을 클릭 합니다. **시작 개체** 목록에서 **Customhost. Program**을 클릭 합니다.
 
 5. **파일** 메뉴에서 **모두 저장**을 클릭합니다.
 
@@ -817,8 +817,8 @@ ms.locfileid: "68871691"
     ```
 
 ## <a name="next-steps"></a>다음 단계
- 이 연습에서는 기본 변형 기능을 지원하는 텍스트 템플릿 변형 호스트를 만들었습니다. 사용자 지정 또는 생성된 지시문 프로세서를 호출하는 텍스트 템플릿을 지원하도록 호스트를 확장할 수 있습니다. 자세한 내용은 [연습: 생성 된 지시문 프로세서](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)에 호스트 연결
+ 이 연습에서는 기본 변형 기능을 지원하는 텍스트 템플릿 변형 호스트를 만들었습니다. 사용자 지정 또는 생성된 지시문 프로세서를 호출하는 텍스트 템플릿을 지원하도록 호스트를 확장할 수 있습니다. 자세한 내용은 [연습: @No__t_0 생성 된 지시문 프로세서에 호스트를 연결 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))

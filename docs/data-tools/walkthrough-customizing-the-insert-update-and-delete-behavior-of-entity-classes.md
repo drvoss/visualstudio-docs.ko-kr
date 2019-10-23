@@ -6,23 +6,23 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 03ff1146-706e-4780-91cb-56a83df63eea
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cb6bbde145317d737afdbf819dba8ee53f805f72
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 14b44a16f6652fe8d94669f99107ebe59b790a0e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252973"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72639165"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>연습: 엔터티 클래스의 삽입, 업데이트 및 삭제 동작 사용자 지정
 
 [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md) 는 데이터베이스의 개체를 기반으로 하는 LINQ to SQL 클래스 (엔터티 클래스)를 만들고 편집 하는 시각적 디자인 화면을 제공 합니다. [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)를 사용 하 여 LINQ 기술을 사용 하 여 SQL database에 액세스할 수 있습니다. 자세한 내용은 [LINQ(Language-Integrated Query)](/dotnet/csharp/linq/)를 참조하세요.
 
-기본적으로 업데이트를 수행 하는 논리는 LINQ to SQL 런타임에서 제공 됩니다. 런타임은 테이블의 스키마 `Insert`( `Update`열 정의 및 기본 키 정보)를 기반으로 기본, 및 `Delete` 문을 만듭니다. 기본 동작을 사용하지 않으려면 업데이트 동작을 구성하고 데이터베이스의 데이터 작업에 필요한 삽입, 업데이트 및 삭제를 수행하기 위한 특정 저장 프로시저를 지정할 수 있습니다. 엔터티 클래스가 뷰에 매핑되는 때와 같이 기본 동작이 생성되지 않은 경우에도 이렇게 할 수 있습니다. 또한 저장 프로시저를 통해 데이터베이스의 테이블에 액세스해야 하는 경우에 기본 업데이트 동작을 재정의할 수 있습니다. 자세한 내용은 [저장 프로시저를 사용 하 여 작업 사용자 지정](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures)을 참조 하세요.
+기본적으로 업데이트를 수행 하는 논리는 LINQ to SQL 런타임에서 제공 됩니다. 런타임은 테이블의 스키마 (열 정의 및 기본 키 정보)를 기반으로 기본 `Insert`, `Update` 및 `Delete` 문을 만듭니다. 기본 동작을 사용하지 않으려면 업데이트 동작을 구성하고 데이터베이스의 데이터 작업에 필요한 삽입, 업데이트 및 삭제를 수행하기 위한 특정 저장 프로시저를 지정할 수 있습니다. 엔터티 클래스가 뷰에 매핑되는 때와 같이 기본 동작이 생성되지 않은 경우에도 이렇게 할 수 있습니다. 또한 저장 프로시저를 통해 데이터베이스의 테이블에 액세스해야 하는 경우에 기본 업데이트 동작을 재정의할 수 있습니다. 자세한 내용은 [저장 프로시저를 사용 하 여 작업 사용자 지정](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures)을 참조 하세요.
 
 > [!NOTE]
 > 이 연습을 수행하려면 Northwind 데이터베이스의 **InsertCustomer**, **UpdateCustomer** 및 **DeleteCustomer** 저장 프로시저를 사용할 수 있어야 합니다.
@@ -37,13 +37,13 @@ ms.locfileid: "71252973"
 
 - LINQ to SQL `Customer` 클래스를 참조 하는 개체 데이터 소스를 만듭니다.
 
-- 클래스에 바인딩되는를 <xref:System.Windows.Forms.DataGridView> 포함 하는 Windows Form을 만듭니다. `Customer`
+- @No__t_1 클래스에 바인딩되는 <xref:System.Windows.Forms.DataGridView>을 포함 하는 Windows Form을 만듭니다.
 
 - 폼의 저장 기능을 구현합니다.
 
-- <xref:System.Data.Linq.DataContext> **O/R 디자이너**에 저장 프로시저를 추가 하 여 메서드를 만듭니다.
+- **O/R 디자이너**에 저장 프로시저를 추가 하 여 <xref:System.Data.Linq.DataContext> 메서드를 만듭니다.
 
-- 저장 프로시저를 사용 하 여 삽입, 업데이트 및 삭제를 수행 하도록 클래스를구성합니다.`Customer`
+- 저장 프로시저를 사용 하 여 삽입, 업데이트 및 삭제를 수행 하도록 `Customer` 클래스를 구성 합니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -71,7 +71,7 @@ LINQ to SQL 클래스로 작업 하 고 Windows Form에 데이터를 표시 하�
 
 ### <a name="to-create-a-new-windows-forms-application-project-that-contains-linq-to-sql-classes"></a>LINQ to SQL 클래스를 포함 하는 새 Windows Forms 응용 프로그램 프로젝트를 만들려면
 
-1. Visual Studio의 **파일** 메뉴에서 **새** > **프로젝트**를 선택 합니다.
+1. Visual Studio의 **파일** 메뉴에서 **새로 만들기**  > **프로젝트**를 선택 합니다.
 
 2. 왼쪽 창 **에서 C# 시각적 개체** 또는 **Visual Basic** 을 확장 한 다음 **Windows 데스크톱**을 선택 합니다.
 
@@ -133,7 +133,7 @@ LINQ to SQL 클래스로 작업 하 고 Windows Form에 데이터를 표시 하�
 
 3. 코드 편집기에서 **Form1**을 엽니다.
 
-4. 폼에 다음 코드를 폼에 추가 하 고, 특정 메서드 외부의 `Form1` 클래스 내에 추가 합니다.
+4. 폼에 다음 코드를 폼에 추가 하 고, 특정 메서드 외부에서 `Form1` 클래스 내에 추가 합니다.
 
     ```vb
     Private NorthwindDataContext1 As New NorthwindDataContext
@@ -232,7 +232,7 @@ LINQ to SQL 클래스로 작업 하 고 Windows Form에 데이터를 표시 하�
 19. **확인**을 클릭합니다.
 
 > [!NOTE]
-> 이 특정 연습에서는 문제가 되지 않지만 삽입 중에 id (자동 증분), rowguidcol (데이터베이스에서 생성 된 GUID) 및 timestamp 열에 대해 데이터베이스에서 생성 된 값을 자동으로 처리 하는 것이 LINQ to SQL. update. 데이터베이스에서 생성된 값이 다른 형식의 열에 있으면 null 값이라는 예기치 않은 결과가 발생합니다. 데이터베이스에서 생성 된 값을 반환 하려면 수동으로를 <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> `true` 로 설정 하 고 <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> 다음 중 하나로 설정 해야 합니다. [AutoSync](<xref:System.Data.Linq.Mapping.AutoSync.Always>), AutoSync, [OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)또는 [AutoSync](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>)입니다.
+> 이 특정 연습에서는 문제가 되지 않지만 삽입 중에 id (자동 증분), rowguidcol (데이터베이스에서 생성 된 GUID) 및 timestamp 열에 대해 데이터베이스에서 생성 된 값을 자동으로 처리 하는 것이 LINQ to SQL. update. 데이터베이스에서 생성된 값이 다른 형식의 열에 있으면 null 값이라는 예기치 않은 결과가 발생합니다. 데이터베이스에서 생성 된 값을 반환 하려면 <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A>를 `true`으로 수동으로 설정 하 고 다음 중 하나로 <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> 해야 합니다. [AutoSync](<xref:System.Data.Linq.Mapping.AutoSync.Always>), AutoSync, [OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)또는 [AutoSync](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>)입니다.
 
 ## <a name="test-the-application"></a>애플리케이션 테스트
 

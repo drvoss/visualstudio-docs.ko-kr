@@ -11,15 +11,15 @@ f1_keywords:
 - VS.DocumentOutline
 ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 caps.latest.revision: 31
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 039e6d5ae21059692aecc05de51bc2b311436334
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 1c5d0770115fffd8c81078fd0e3d187ec5d3c5ae
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695637"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657942"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Visual Studio에서 XAML 디자이너를 사용하여 UI 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Visual Studio의 XAML 디자이너는 XAML 기반 Windows 스토어, Windows Pho
 
  디자인 뷰에서 *아트 보드* 포함하는 창이 활성 창이고 이를 기본 작업 화면으로 사용할 수 있습니다. 이 창에서 요소를 추가하거나 그린 다음 수정하여 앱에서 페이지를 시각적으로 디자인할 수 있습니다. 자세한 내용은 [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md)을 참조하세요. 이 그림은 디자인 뷰에서 아트보드를 보여 줍니다.
 
- ![XAML 디자이너의 디자인 뷰](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
+ ![XAML 디자이너 디자인 뷰](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
 
  이러한 기능은 아트보드에서 사용할 수 있습니다.
 
@@ -81,15 +81,15 @@ Visual Studio의 XAML 디자이너는 XAML 기반 Windows 스토어, Windows Pho
 ## <a name="device-window"></a>디바이스 창
  XAML 디자이너의 디바이스 창에서 다양한 디자인 타임 뷰와 디스플레이, Windows 스토어 또는 Windows Phone 프로젝트에 대한 표시 옵션으로 시뮬레이트할 수 있습니다. 디바이스 창은  XAML 디자이너에서 작업할 때 **디자인** 메뉴에서 사용할 수 있습니다. 다음과 같이 나타납니다.
 
- ![디바이스 창](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
+ ![장치 창](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
 
  다음은 디바이스 창에서 사용할 수 있는 옵션입니다.
 
  **디스플레이** 앱의 다른 디스플레이 크기 및 해상도를 미리 봅니다.
 
- **방향** 앱에 대해 다른 방향을 지정 합니다. **가로** 또는 **세로**
+ **방향** 앱에 대 한 다른 방향을 지정 합니다. 가로 또는 **세로**
 
- **Edge** 앱의 다른 가장자리 맞춤을 지정 합니다. **모두**, **왼쪽**, **오른쪽** 또는 **없음**
+ **Edge** 앱에 대 한 다른 가장자리 맞춤을 지정 합니다. 모두, **왼쪽**, **오른쪽** 또는 **없음**
 
  **고대비** 선택한 대비 설정에 따라 응용 프로그램을 미리 봅니다. 이 설정은 **기본값**이외의 값으로 설정된 경우 App.xaml에 설정된 `RequestedTheme` 속성을 재정의합니다.
 
@@ -137,5 +137,5 @@ Visual Studio의 XAML 디자이너는 XAML 기반 Windows 스토어, Windows Pho
 
  각 속성 값의 오른쪽에 상자 기호로 나타나는 *속성 표식* 이 있습니다. 속성 표식의 모양은 속성에 적용되는 리소스 또는 데이터 바인딩이 있는지 여부를 나타냅니다. 예를 들어 흰색 상자 기호는 기본값을 나타내고, 검은색 상자 기호는 일반적으로 로컬 리소스가 적용되었음을 나타내고, 주황색 상자는 일반적으로 데이터 바인딩이 적용되었음을 나타냅니다. 속성 표식을 클릭하면 스타일의 정의로 이동하거나, 데이터 바인딩 작성기를 열거나, 리소스 선택기를 엽니다.
 
-## <a name="see-also"></a>참고 항목
- [XAML 디자이너에서 요소를 작업할](../designers/working-with-elements-in-xaml-designer.md) [만들고 리소스를 적용 하는 방법](../designers/how-to-create-and-apply-a-resource.md) [연습: XAML 디자이너에서 데이터에 바인딩](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+## <a name="see-also"></a>관련 항목:
+ [에서 요소 작업 XAML 디자이너](../designers/working-with-elements-in-xaml-designer.md) [리소스 [Walkthrough 만들고 적용 하는 방법을 설명 합니다](../designers/how-to-create-and-apply-a-resource.md) . XAML 디자이너에서 데이터에 바인딩](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

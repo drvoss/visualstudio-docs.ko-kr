@@ -1,5 +1,5 @@
 ---
-title: 확장명 찾기 및 사용 | Microsoft Docs
+title: 확장 찾기 및 사용 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - managing extensions visual studio
 ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
 caps.latest.revision: 47
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f4878827ae65a8f42e8225c7daab207a27a0614a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: df6219a66b0f6c85e197b209741706abc7ce3d06
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426383"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655871"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Visual Studio 확장명 찾기 및 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Visual Studio 확장은 Visual Studio 내에서 실행되고 새로운 기능 �
 > Visual Studio 2015부터 Visual Studio 갤러리에서 호스트된 확장이 자동으로 업데이트됩니다.  **확장 및 업데이트** 대화 상자를 통해 이 설정을 변경할 수 있습니다.  자세한 내용은 아래에서 **자동 확장 업데이트** 에 대한 단원을 참조하세요.
 
 ## <a name="finding-visual-studio-extensions"></a>Visual Studio 확장 찾기
- 확장을 설치 합니다 [Visual Studio Marketplace](https://marketplace.visualstudio.com/) 또는 [샘플 갤러리](https://code.msdn.microsoft.com/vstudio) Microsoft 웹 사이트입니다. 확장은 Visual Studio에 기능을 추가하는 제어, 샘플, 템플릿 또는 기타 구성 요소일 수 있습니다. Visual Studio는 VSIX 패키지 형식에서 프로젝트 템플릿, 항목 템플릿, **도구 상자** 항목, MEF(Managed Extension Framework) 구성 요소 및 VSPackage 등의 확장을 지원합니다. MSI 기반 확장도 다운로드하고 설치할 수 있지만 **확장 및 업데이트** 대화 상자에서 해당 확장을 사용하거나 사용하지 않도록 설정할 수 없습니다. Visual Studio 갤러리에는 VSIX 및 MSI 확장이 모두 포함되어 있습니다.
+ Microsoft 웹 사이트의 [Visual Studio Marketplace](https://marketplace.visualstudio.com/) 또는 [샘플 갤러리](https://code.msdn.microsoft.com/vstudio) 에서 확장을 설치할 수 있습니다. 확장은 Visual Studio에 기능을 추가하는 제어, 샘플, 템플릿 또는 기타 구성 요소일 수 있습니다. Visual Studio는 VSIX 패키지 형식에서 프로젝트 템플릿, 항목 템플릿, **도구 상자** 항목, MEF(Managed Extension Framework) 구성 요소 및 VSPackage 등의 확장을 지원합니다. MSI 기반 확장도 다운로드하고 설치할 수 있지만 **확장 및 업데이트** 대화 상자에서 해당 확장을 사용하거나 사용하지 않도록 설정할 수 없습니다. Visual Studio 갤러리에는 VSIX 및 MSI 확장이 모두 포함되어 있습니다.
 
 ## <a name="installing-or-uninstalling-visual-studio-extensions"></a>Visual Studio 확장 설치 또는 제거
  **확장 및 업데이트**에서 설치하려는 확장을 찾습니다. 확장의 이름이나 이름 일부를 알고 있는 경우 **Visual Studio 갤러리 검색** 창에서 검색할 수 있습니다. **다운로드**를 클릭한 다음 **설치**를 클릭합니다. 확장을 로드하려면 Visual Studio를 다시 시작해야 합니다.

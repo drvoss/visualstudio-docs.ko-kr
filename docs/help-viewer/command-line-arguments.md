@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09b63b3d01329a5fe243d100eeea921299061433
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: d9bead01c6440d5232a91a5e8fe2007b3e30340c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825080"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631971"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>도움말 콘텐츠 관리자에 대한 명령줄 인수
 
@@ -39,6 +39,9 @@ HlpCtntmgr.exe /operation Value /catalogname CatalogName /locale Locale /sourceu
 hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us /sourceuri d:\productDocumentation\HelpContentSetup.msha
 ```
 
+>[!NOTE]
+> 카탈로그 이름은 Visual Studio 2017 및 Visual Studio 2019 모두에 대해 VisualStudio15입니다. 이는 예기치 않은 일 수 있지만 Visual Studio 버전에 동일한 도움말 뷰어를 모두 사용 하기 때문입니다.
+
 ## <a name="switches-and-arguments"></a>스위치 및 인수
 
 다음 표에는 도움말 콘텐츠 관리자용 명령줄 도구에 사용할 수 있는 스위치와 인수가 정의되어 있습니다.
@@ -46,7 +49,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us /sou
 |전환|필수 여부|인수|
 |------------|---------------|---------------|
 |/operation|예|-   **Install**--지정된 설치 소스의 책을 로컬 콘텐츠 저장소에 추가합니다.<br />     이 스위치에는 /booklist 인수 또는 /sourceURI 인수가 필요하거나 두 인수가 모두 필요합니다. /sourceURI 인수를 지정하지 않는 경우 기본 Visual Studio URI가 설치 소스로 사용됩니다. /booklist 인수를 지정하지 않는 경우 /sourceUri의 모든 책이 설치됩니다.<br />-   **Uninstall**--지정하는 책을 로컬 콘텐츠 저장소에서 제거합니다.<br />     이 스위치에는 /booklist 인수 또는 /sourceURI 인수가 필요합니다.  /sourceURI 인수를 지정하는 경우 모든 책이 제거되고 /booklist 인수가 무시됩니다.<br />-   **Move**--지정하는 경로로 로컬 저장소를 이동합니다. 기본 로컬 저장소 경로는 *%ProgramData%* 아래에 디렉터리로 설정<br />     이 스위치에는 /locationPath 및 /catalogName 인수가 필요합니다. 잘못된 경로를 지정하거나 드라이브에 콘텐츠를 저장할 충분한 여유 공간이 없는 경우 오류 메시지가 이벤트 로그에 기록됩니다.<br />-   **Refresh**--설치된 이후 변경되었거나 최근에 업데이트된 항목을 업데이트합니다.<br />     이 스위치에는 /sourceURI 인수가 필요합니다.|
-|/catalogName|예|콘텐츠 카탈로그의 이름을 지정합니다.|
+|/catalogName|예|콘텐츠 카탈로그의 이름을 지정합니다. Visual Studio 2017 및 Visual Studio 2019의 경우 VisualStudio15입니다.|
 |/locale|아니요|도움말 뷰어의 현재 인스턴스에 대한 콘텐츠를 보고 관리하는 데 사용되는 제품 로캘을 지정합니다. 예를 들어 영어-미국의 경우 `EN-US`를 지정합니다.<br /><br /> 로캘을 지정하지 않는 경우 운영 체제의 로캘이 사용됩니다. 로캘을 확인할 수 없는 경우에는 `EN-US`가 사용됩니다.<br /><br /> 잘못된 로캘을 지정하면 오류 메시지가 이벤트 로그에 기록됩니다.|
 |/e|아니요|현재 사용자에게 관리자 자격 증명이 있는 경우 도움말 콘텐츠 관리자를 관리자 권한으로 승격합니다.|
 |/sourceURI|아니요|콘텐츠가 설치되는 URL(서비스 API) 또는 콘텐츠 설치 파일( *.msha*)의 경로를 지정합니다. URL은 Visual Studio 2010 스타일 엔드포인트에서 제품 그룹(최상위 노드) 또는 제품 책(리프 수준 노드)을 가리킬 수 있습니다. URL 끝에 슬래시(/)를 포함할 필요가 없습니다. 끝에 슬래시를 포함하는 경우 적절하게 처리됩니다.<br /><br /> 찾을 수 없거나, 잘못되거나, 액세스할 수 없는 파일을 지정하는 경우나 콘텐츠를 관리하는 동안 인터넷 연결을 사용할 수 없거나 중단된 경우 오류 메시지가 이벤트 로그에 기록됩니다.|

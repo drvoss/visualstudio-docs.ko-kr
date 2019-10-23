@@ -8,15 +8,15 @@ f1_keywords:
 - Blend.Start.Dev12
 ms.assetid: efd12263-cc2d-4081-a2bb-9a2cc17c442c
 caps.latest.revision: 33
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7cd7f14158b7dee83767ee9295c8917cadd30fa5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 36a0772730718047f2b9d6fc6bc36c30a211a2af
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695929"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657999"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Blend for Visual Studio를 사용하여 UI 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Blend for Visual Studio를 사용하면 XAML 기반 Windows 데스크톱, 웹, [
 |![](../designers/media/b1-5.png "B1_5")|**자산 도구** **자산** 패널에 액세스하고 라이브러리에서 가장 최근에 사용된 자산을 표시하는 데 사용합니다.|![설명선 E](../designers/media/b5-label-e.png "b5_label_E")|**텍스트 컨트롤**|
 |||![설명선 F](../designers/media/b5-label-f.png "b5_label_F")|**공용 컨트롤**|
 
- **짧은 비디오 시청:** ![설치 된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [도구 모음](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4)합니다.
+ **짧은 비디오 시청:** ![설치 된 기능](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [을 도구 모음에](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4)구성 합니다.
 
 ## <a name="Assets"></a> 자산 패널 둘러보기
  Visual Studio의 **도구 상자**와 비슷한 **자산** 패널에서 모든 컨트롤을 찾을 수 있습니다. 컨트롤 외에도, 스타일, 미디어, 동작, 효과 등 무엇이든 **자산** 패널의 아트보드에 추가할 수 있습니다.
@@ -72,7 +72,7 @@ Blend for Visual Studio를 사용하면 XAML 기반 Windows 데스크톱, 웹, [
 ## <a name="Objects"></a> 개체 및 타임라인 패널 둘러보기
  이 패널에서는 아트보드에서 개체를 구성하고 원하는 경우 개체에 애니메이션 효과를 적용할 수 있습니다.
 
- ![애니메이션 모드의 개체 및 타임라인 패널](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
+ ![애니메이션 모드의 개체 및 타임 라인 패널](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
 
 |||
 |-|-|
@@ -98,7 +98,7 @@ Blend for Visual Studio를 사용하면 XAML 기반 Windows 데스크톱, 웹, [
 
  ![속성 패널](../designers/media/blend5-properties-panel.png "Blend5_properties_panel")
 
- **범주** 속성의 범주를 확장하고 축소합니다. 범주 세부 정보를 표시하거나 숨기려면 **확장** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") 및 **축소** ![축소](../designers/media/b5-collapse-button.png "b5_collapse_button")를 클릭합니다.
+ **범주** 속성의 범주를 확장하고 축소합니다. 범주 세부 정보를 표시 하거나 숨기려면 **확장** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") 및 **축소** ![축소](../designers/media/b5-collapse-button.png "b5_collapse_button") 를 클릭 합니다.
 
 |                                                                                                         |                                                                                                                                                                                                                                  |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -120,7 +120,7 @@ Blend for Visual Studio를 사용하면 XAML 기반 Windows 데스크톱, 웹, [
 |                     ![설명선 16](../designers/media/b5-label-16.png "b5_label_16")                     |                                                                                **그라데이션 슬라이더** 그라데이션 브러시를 선택한 경우에만 나타납니다.                                                                                 |
 | ![](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png "d50027a1-6824-4ad8-8b4e-558b0756dcf8") |                                                                     **고급 속성 표시** 자주 사용되지 않는 속성의 범주를 표시합니다.                                                                      |
 
- **짧은 비디오 시청:** ![설치 된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [속성 패널](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7)합니다.
+ **짧은 비디오 시청:** ![설치 된 기능](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [속성 패널](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7)을 구성 합니다.
 
-## <a name="see-also"></a>참고 항목
- [컨트롤을 삽입 하 고 해당 동작을 수정](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md) [개체에 애니메이션 효과 주기](../designers/animate-objects-in-xaml-designer.md) [도형 및 패스 그리기](../designers/draw-shapes-and-paths.md) [Visual Studio 및 Blend for Visual Studio에서 XAML 디자인](../designers/designing-xaml-in-visual-studio.md)
+## <a name="see-also"></a>관련 항목:
+ [컨트롤을 삽입 하 고 해당 동작을 수정](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md) 합니다. [개체](../designers/animate-objects-in-xaml-designer.md) [그리기 도형 및 패스 그리기](../designers/draw-shapes-and-paths.md) [Visual Studio에서 XAML 디자인 및 Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md)

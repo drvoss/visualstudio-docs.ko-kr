@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - analyzer packages, rule sets
 - rule sets for analyzers
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8602483554ebd311ab6eebb13ff8d2de00d7e09
-ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
+ms.openlocfilehash: d40e88f123f397cfc77fe44757c2f72305390302
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172775"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606541"
 ---
 # <a name="enable-a-category-of-rules"></a>규칙 범주 사용
 
@@ -53,13 +53,13 @@ FxCop analyzer NuGet 패키지에는 다음 규칙 범주에 대 한 미리 정�
 
 ## <a name="predefined-editorconfig-files"></a>미리 정의 된 EditorConfig 파일
 
-FxCopAnalyzers analyzer 패키지에 대해 미리 정의 된 EditorConfig 파일은 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers @ no__t @ no__t-3version @ no__t-4\editorconfig에 있습니다.* 디렉터리. 예를 들어 모든 보안 규칙을 사용 하도록 설정 하는 EditorConfig 파일은 *% USERPROFILE% \\에 있습니다. nuget\packages\microsoft.codeanalysis.fxcopanalyzers @ no__t @ no__t @-3version @ no__t-4\editorconfig\SecurityRulesEnabled @ no__ t-5. editorconfig*
+FxCopAnalyzers analyzer 패키지에 대해 미리 정의 된 EditorConfig 파일은 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> \editorconfig에 있습니다.* 디렉터리. 예를 들어 모든 보안 규칙을 사용 하도록 설정 하는 editorconfig 파일은 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> \editorconfig\\\ securitystststststststststststststststst editorconfig*.
 
 선택한 editorconfig 파일을 프로젝트의 루트 디렉터리에 복사 합니다.
 
 ## <a name="predefined-rule-sets"></a>미리 정의된 규칙 집합
 
-FxCopAnalyzers analyzer 패키지에 대해 미리 정의 된 규칙 집합 파일은 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers @ no__t @ no__t-3version @ no__t-4\rulesets* 에 있습니다. 디렉터리나. 예를 들어 모든 보안 규칙을 사용 하도록 설정 하는 규칙 집합 파일은 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers @ no__t-2 @ no__t-3version @ no__t-4\rulesets\SecurityRulesEnabled.ruleset*에 있습니다.
+FxCopAnalyzers analyzer 패키지에 대 한 미리 정의 된 규칙 집합 파일은 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \> \<version \\* 에 있습니다. 디렉터리나. 예를 들어 모든 보안 규칙을 사용 하도록 설정 하는 규칙 집합 파일은 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> \rulesets\securityrulesenabled.ruleset*에 있습니다.
 
 하나 이상의 규칙 집합을 복사 하 고 Visual Studio 프로젝트를 포함 하는 디렉터리 또는 **솔루션 탐색기**에 직접 붙여 넣습니다.
 
@@ -102,7 +102,7 @@ FxCopAnalyzers analyzer 패키지에 대해 미리 정의 된 규칙 집합 파�
 
    이제 선택한 규칙 집합에서 사용 하도록 설정 된 규칙에 대 한 규칙 위반만 표시 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [분석기 FAQ](analyzers-faq.md)
 - [.NET Compiler Platform 분석기 개요](roslyn-analyzers-overview.md)

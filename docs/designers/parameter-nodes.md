@@ -3,17 +3,17 @@ title: 매개 변수 노드
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: da54db0b-3a3d-48dc-858c-7ac43aa04b13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c99986b65e1b396a92e667ceb4eeff2b92a58dc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a2f749d4ed6338919132e1c48d6da0572e3efe88
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892925"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635010"
 ---
 # <a name="parameter-nodes"></a>매개 변수 노드
 

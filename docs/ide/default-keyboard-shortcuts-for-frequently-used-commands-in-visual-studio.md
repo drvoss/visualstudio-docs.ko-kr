@@ -2,17 +2,17 @@
 title: 자주 사용되는 명령의 기본 바로 가기 키
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72e010d76188be1ebe07eb9400b7cde60c2bf0a6
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: eda902db03d7211a4025663088cf8bf3718e4a2f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043342"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652526"
 ---
 # <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Visual Studio에서 자주 사용되는 바로 가기 키
 
@@ -32,7 +32,7 @@ ms.locfileid: "67043342"
 |빌드.컴파일|**Ctrl+F7**[전역]|
 |Build.RunCodeAnalysisonSolution|**Alt+F11**[전역]|
 
-## <a name="debug"></a>디버그
+## <a name="debug"></a>Debug
 
 |명령|바로 가기 키[컨텍스트]|
 |--------------| - |

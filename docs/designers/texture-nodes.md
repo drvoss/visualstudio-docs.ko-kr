@@ -3,17 +3,17 @@ title: 질감 노드
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: b7df5ef3-dd4f-4964-9d96-34e0e180515e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73f5bfe71866422cd3717c2a29f1eeb48d15cc76
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6d180c3c42049a097ca6d8df1931bd5fc29d06ce
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844218"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635130"
 ---
 # <a name="texture-nodes"></a>질감 노드
 

@@ -6,17 +6,17 @@ f1_keywords:
 - VS.CallHierarchy
 helpviewer_keywords:
 - Call Hierarchy
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad95d1c48992b8ecac6715db41aa9d85791999bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a03a286d8b097fbd208a828411728aaa7a54690
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791366"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668202"
 ---
 # <a name="view-call-hierarchy"></a>호출 계층 구조 보기
 
@@ -28,7 +28,7 @@ Visual Studio에서 디자인 타임에 호출 계층 구조를 볼 수 있습�
 
 **호출 계층 구조** 창을 표시하려면 코드 편집기에서 메서드, 속성 또는 생성자 호출의 이름을 마우스 오른쪽 단추로 클릭한 다음, **호출 계층 구조 보기**를 선택합니다.
 
-트리 뷰 창의 **호출 계층 구조** 창에 멤버 이름이 나타납니다. 멤버 노드를 확장하는 경우 **호출 대상** ‘멤버 이름’ 및 C++의 경우 **호출 시작** ‘멤버 이름’ 하위 노드가 나타납니다.
+트리 뷰 창의 **호출 계층 구조** 창에 멤버 이름이 나타납니다. 멤버 노드를 확장하는 경우 **호출 대상** ‘멤버 이름’ 및 C++의 경우 **호출 시작** ‘멤버 이름’ 하위 노드가 나타납니다.  
 
 C++ 코드의 경우 다음과 같이 멤버 대상 호출과 멤버 시작 호출을 모두 볼 수 있습니다.
 

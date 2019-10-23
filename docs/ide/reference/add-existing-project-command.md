@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Add Existing Project command
 - File.AddExistingProject
 ms.assetid: 71cf3e31-c76b-405b-ad6a-1b1bc654bd40
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5a511e19394b397096a5a5ba2e339166454138e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 05d57024c52e0a35d7e387f5ba3cccf0697fe44a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926291"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748844"
 ---
 # <a name="add-existing-project-command"></a>기존 프로젝트 추가 명령
 현재 솔루션에 기존 프로젝트를 추가합니다.

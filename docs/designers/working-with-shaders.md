@@ -3,17 +3,17 @@ title: 셰이더 작업
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 6b2ea1ed-b995-4e75-af19-c68fd37a3bc5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1f07b293447a10a7d39e24ef42b1faedc27c7d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4b3d2c6c745f17bbada918128fed852249e3024d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892405"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72633777"
 ---
 # <a name="work-with-shaders"></a>셰이더 작업
 
@@ -39,4 +39,4 @@ DGSL은 DGML과 호환되므로 DGML 문서를 분석하여 DGSL 셰이더를 �
 |-----------|-----------------|
 |[셰이더 디자이너](../designers/shader-designer.md)|Visual Studio 셰이더 디자이너를 사용하여 셰이더 작업을 수행하는 방법을 설명합니다.|
 |[셰이더 디자이너 노드](../designers/shader-designer-nodes.md)|그래픽 효과를 얻기 위해 사용할 수 있는 셰이더 디자이너 노드의 종류를 설명합니다.|
-|[셰이더 디자이너 예제](../designers/shader-designer-examples.md)|셰이더 디자이너를 사용하여 공통 그래픽 효과를 얻는 방법을 보여 주는 항목에 대한 링크를 제공합니다.|
+|[셰이더 디자이너 예제](../designers/how-to-create-a-basic-color-shader.md)|셰이더 디자이너를 사용하여 공통 그래픽 효과를 얻는 방법을 보여 주는 항목에 대한 링크를 제공합니다.|

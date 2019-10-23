@@ -7,17 +7,17 @@ helpviewer_keywords:
 - run-time errors, warnings
 - warnings, configuring
 ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ba037dd93c64fc15d8d540880d075ea7005685b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 2c71c352040898874cd90a397db6b8c7321ff39d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924108"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652081"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Visual Basic에서 경고 구성
 
@@ -47,7 +47,7 @@ ms.locfileid: "68924108"
 
 경고 목록에는 오류로 처리되어야 하는 경고의 오류 ID 번호가 포함되고 이 오류 ID 번호는 명령줄 옵션과 함께 특정 경고를 켜거나 끄는 데 사용될 수 있습니다. 경고 목록에 잘못된 번호가 있으면 오류가 보고됩니다.
 
-## <a name="examples"></a>예제
+## <a name="examples"></a>예
 이 명령줄 인수 예제에 대한 표에서는 각 인수가 수행하는 작업을 설명합니다.
 
 |인수|설명|

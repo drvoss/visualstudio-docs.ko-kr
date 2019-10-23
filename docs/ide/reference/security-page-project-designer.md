@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f11b14dd116ea95bda2cc7fad7ac8df634435c9
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 29723f5e253a2ff6d4f6c35e8ad8d3e09e2393f1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926104"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748648"
 ---
 # <a name="security-page-project-designer"></a>프로젝트 디자이너, 보안 페이지
 

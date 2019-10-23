@@ -5,21 +5,21 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Format
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69a8d3f1b84bd59cec9e13bf50eb8eaa46795cdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3d1e5f07a2b68d86051452a16ac0f42fc9b9acf0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779021"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666203"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>옵션, 텍스트 편집기, HTML(Web Forms), 서식 지정
 
-**서식** 옵션 페이지를 사용하여 코드 편집기의 코드를 서식 지정하기 위한 HTML 프로젝트 옵션을 설정합니다. 이 페이지에 액세스하려면 메뉴 모음에서 **도구** > **옵션**을 선택한 다음, **텍스트 편집기** > **HTML(Web Forms)** > **서식**을 확장합니다.
+**서식** 옵션 페이지를 사용하여 코드 편집기의 코드를 서식 지정하기 위한 HTML 프로젝트 옵션을 설정합니다. 이 페이지에 액세스하려면 메뉴 모음에서 **도구** > **옵션**을 선택한 다음, **텍스트 편집기** > **HTML(Web Forms)**  > **서식**을 확장합니다.
 
 ## <a name="capitalization"></a>대문자 표시
 
@@ -76,7 +76,7 @@ ms.locfileid: "62779021"
 
 - **닫는 태그 자동 삽입**
 
-   이 옵션을 선택한 경우 여는 태그를 닫으면 편집기에서 닫는 태그(예: **\</b>**)를 자동으로 만듭니다.
+   이 옵션을 선택한 경우 여는 태그를 닫으면 편집기에서 닫는 태그(예: **\</b>** )를 자동으로 만듭니다.
 
 ## <a name="tag-wrapping"></a>태그 줄 바꿈
 

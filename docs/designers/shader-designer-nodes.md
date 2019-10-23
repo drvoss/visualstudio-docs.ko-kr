@@ -3,17 +3,17 @@ title: 셰이더 디자이너 노드
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f5192fbd-c78f-40a8-a4d4-443209610268
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 775d447b3e513e15eeafb1bfd90c54e3ffa70770
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 23877f9b94b498d87a89ae8e657aa2fe52984953
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925749"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72634920"
 ---
 # <a name="shader-designer-nodes"></a>셰이더 디자이너 노드
 설명서의 이 섹션에 있는 문서에는 그래픽 효과를 만드는 데 사용할 수 있는 다양한 셰이더 디자이너 노드에 대한 정보가 포함되어 있습니다.

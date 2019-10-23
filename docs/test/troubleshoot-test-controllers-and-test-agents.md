@@ -8,15 +8,15 @@ helpviewer_keywords:
 - load tests, test agents
 - troubleshooting, test controllers and agents in load tests
 ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3ca2a69fc0f5777c34857f6f3da0c7faabcd81ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 716bc28626e6b408fd618a8ed6c623c5118d7782
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990543"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659919"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>부하 테스트에서 테스트 컨트롤러 및 테스트 에이전트 문제를 해결하기 위한 전략
 

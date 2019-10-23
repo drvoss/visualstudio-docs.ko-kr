@@ -8,15 +8,15 @@ helpviewer_keywords:
 - virtual user activity chart
 - load test, virtual user activity chart
 ms.assetid: 63f4bd42-3cfb-4eee-af68-e8334976539e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a03096e92f2a5da98da2d1850f505c65eb5b6e27
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: bba807eae2a7767b9b4271d0df48e962a2113285
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918616"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665364"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>부하 테스트 분석기의 세부 정보 뷰에서 부하 테스트 가상 사용자 동작 분석
 

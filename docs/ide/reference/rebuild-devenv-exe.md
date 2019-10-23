@@ -9,17 +9,17 @@ helpviewer_keywords:
 - /Rebuild Devenv switch
 - applications [Visual Studio], rebuilding
 ms.assetid: c5a8a4bf-0e2b-46eb-a44a-8aeb29b92c32
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44e8675b0a913873ce9b89d9d9c4ceb431dffa0d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5da73d37542bbdd7babd956a64ed78c714be7101
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945544"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655634"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 
@@ -53,7 +53,7 @@ devenv SolutionName /Rebuild [SolnConfigName [/Project ProjName [/ProjectConfig 
 
   선택 사항입니다. 도구의 출력을 보낼 파일의 이름입니다. 파일이 이미 있는 경우 출력은 파일의 끝에 추가됩니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 - 이 스위치는 IDE 내에서 **솔루션 다시 빌드** 메뉴 명령과 동일한 기능을 수행합니다.
 
@@ -61,7 +61,7 @@ devenv SolutionName /Rebuild [SolnConfigName [/Project ProjName [/ProjectConfig 
 
 - 정리 및 빌드에 대한 오류를 포함한 요약 정보는 **명령** 창 또는 [/Out](out-devenv-exe.md) 스위치로 지정된 로그 파일에 표시될 수 있습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 이 예제에서는 `MySolution` 내에 있는 `Debug` 프로젝트 빌드 구성을 사용하여 `CSharpWinApp` 프로젝트를 정리 침 다시 빌드합니다.
 

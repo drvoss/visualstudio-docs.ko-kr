@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - test settings, recording desktop video
 ms.assetid: 2cefe8c2-430a-4cb4-bbe0-f3edb2e5bc03
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 663f89c65604c42b356830b3a0c6d61bdcb265e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 572b3132056ebed1d26c983fdc4024d2ddc51a82
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950107"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653517"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>방법: 테스트 설정을 사용하여 테스트를 수행하는 중에 화면 및 음성의 녹화/녹음 포함
 

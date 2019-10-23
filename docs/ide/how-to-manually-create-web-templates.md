@@ -7,15 +7,15 @@ helpviewer_keywords:
 - templates [Visual Studio], Web
 - Web templates [Visual Studio]
 - project templates [Visual Studio], Web
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9af528cf92d4909bbe5c7d4ac114aa830e96162c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7d121d9b970d8012aaf177c0a232cd21f6fe85d9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946897"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645823"
 ---
 # <a name="how-to-manually-create-web-templates"></a>방법: 수동으로 웹 템플릿 만들기
 
@@ -56,7 +56,7 @@ ms.locfileid: "62946897"
 
 8. *.zip* 템플릿 파일을 Visual Studio 프로젝트 템플릿 디렉터리에 배치합니다. 기본적으로 이 디렉터리는 *%USERPROFILE%\Documents\Visual Studio \<버전\>\ProjectTemplates*입니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 다음 예제에서는 웹 프로젝트 템플릿에 대한 기본 *vstemplate* 파일을 보여줍니다.
 

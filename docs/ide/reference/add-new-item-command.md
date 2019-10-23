@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Add New Item command
 - File.AddNewItem command
 ms.assetid: 63b7df32-db83-463b-bbe7-7ff011fe5298
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a73bd7008e0058fe984fcb708c92c2bd983d427
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 683a65ab0c25a5daeb002a4eb3106006655a1b00
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919363"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748818"
 ---
 # <a name="add-new-item-command"></a>새 항목 추가 명령
 현재 솔루션에 .htm, .css, .txt 또는 프레임셋 같은 새 솔루션 항목을 추가하고 엽니다.

@@ -2,17 +2,17 @@
 title: 메서드 재정의 생성
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: afb32a7ddb9a53ac6585cc690a3ba8fd1098b080
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 075c7dc49ffba1d67bbb5b62d313f50b5d09e956
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790504"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668440"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>Visual Studio에서 재정의 생성
 
@@ -32,7 +32,7 @@ ms.locfileid: "62790504"
 
 1. C#에서 `override` 또는 Visual Basic에서 `Overrides` 및 다음에 공백을 입력합니다. 이는 재정의 메서드를 삽입하는 것과 같습니다.
 
-   - C#: 
+   - C#:
 
       ![IntelliSense 재정의 C#](media/override-intellisense-cs.png)
 
@@ -48,7 +48,7 @@ ms.locfileid: "62790504"
 
    선택한 메서드 또는 속성이 구현할 수 있는 재정의로 클래스에 추가됩니다.
 
-   - C#: 
+   - C#:
 
        ![재정의 결과 C#](media/override-result-cs.png)
 

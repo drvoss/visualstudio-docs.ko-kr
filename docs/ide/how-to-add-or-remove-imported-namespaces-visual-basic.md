@@ -9,17 +9,17 @@ helpviewer_keywords:
 - imported namespaces [Visual Studio]
 - references [Visual Studio], imported namespaces
 ms.assetid: 44cebec3-0ea0-47c2-8406-4edeab6a997e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c443f966265f70a729e2fd433353c4856a1f8c6
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8ff6ad1a07440b27b679fa3f749c24a6d3157dbd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924048"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654649"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>방법: 가져온 네임스페이스 추가 또는 제거(Visual Basic)
 

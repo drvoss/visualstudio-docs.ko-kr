@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, command line
 - load tests, run settings, selecting
 ms.assetid: 175d1d58-f09a-4449-b132-a29a394a7c8e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 466ea9a7e0b877af55219be497eefde963e80853
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 09aa92b36058ff714784aff12851e1b82c78a99a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949905"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653452"
 ---
 # <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>방법: 명령줄에서 사용할 부하 테스트 실행 설정 선택
 

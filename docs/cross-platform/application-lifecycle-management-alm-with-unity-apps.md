@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d52e02947a9148463396260afd3e389fa1d248ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d6cbdee57d2f1edf7d696ad9a4053ddcb08bce3
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824707"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777730"
 ---
 # <a name="devops-with-unity-apps"></a>Unity 앱을 사용한 DevOps
 
@@ -67,11 +67,11 @@ Visual Studio는 Azure DevOps Services 및 Team Foundation Server와 함께 다�
 
 Unity로 버전 제어를 수행하기 위한 특별 고려 사항:
 
-1. Unity는 기본적으로 숨겨져 있는 불투명 단일 라이브러리에서 게임 자산 메타데이터를 추적합니다. 파일 및 메타데이터를 동기화된 상태로 유지하려면 메타데이터를 표시하고 더 관리하기 쉬운 청크로 저장해야 합니다. 자세한 내용은 [Unity와 함께 외부 버전 제어 시스템 사용](http://docs.unity3d.com/Manual/ExternalVersionControlSystemSupport.html)(Unity 설명서)을 참조하세요.
+1. Unity는 기본적으로 숨겨져 있는 불투명 단일 라이브러리에서 게임 자산 메타데이터를 추적합니다. 파일 및 메타데이터를 동기화된 상태로 유지하려면 메타데이터를 표시하고 더 관리하기 쉬운 청크로 저장해야 합니다. 자세한 내용은 [Unity와 함께 외부 버전 제어 시스템 사용](https://docs.unity3d.com/Manual/ExternalVersionControlSystemSupport.html)(Unity 설명서)을 참조하세요.
 
-2. Unity 프로젝트의 일부 파일 및 폴더는 위의 링크에 설명된 것처럼 소스 제어에 적합하지 않습니다. Assets 및 ProjectSettings 폴더는 추가해야 하고 Library 및 Temp 폴더는 추가하면 안 됩니다. 소스 제어로 이동하지 않는 생성된 파일의 추가 목록에 대해서는 StackOverflow의 [Unity3D 소스 제어에 Git을 사용하는 방법](http://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control)을 참조하세요. 독립적으로 이 주제에 대한 블로그 게시물을 올린 개발자도 많습니다.
+2. Unity 프로젝트의 일부 파일 및 폴더는 위의 링크에 설명된 것처럼 소스 제어에 적합하지 않습니다. Assets 및 ProjectSettings 폴더는 추가해야 하고 Library 및 Temp 폴더는 추가하면 안 됩니다. 소스 제어로 이동하지 않는 생성된 파일의 추가 목록에 대해서는 StackOverflow의 [Unity3D 소스 제어에 Git을 사용하는 방법](https://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control)을 참조하세요. 독립적으로 이 주제에 대한 블로그 게시물을 올린 개발자도 많습니다.
 
-3. 질감 또는 오디오 파일과 같은 Unity 프로젝트의 이진 자산은 많은 스토리지 공간을 차지할 수 있습니다. Git와 같은 다양한 소스 제어 시스템은 변경 내용이 파일의 일부에만 영향을 주는 경우에도 변경될 때마다 파일의 고유 복사본을 저장합니다. 이로 인해 Git 리포지토리가 너무 커질 수 있습니다. 이 문제를 해결하기 위해 대개 Unity 개발자는 최종 자산만 리포지토리에 추가하고 OneDrive, DropBox, git-annex 등의 다른 방법으로 자산의 작업 기록을 유지합니다. 일반적으로 이러한 자산은 소스 코드 변경에 따라 버전을 관리할 필요가 없으므로 이 접근 방식은 유용합니다. 또한 개발자는 일반적으로 프로젝트 편집기의 Asset Serialization Mode를 Force Text로 설정하여 이진 형식이 아니라 텍스트에 장면 파일을 저장하므로 소스 제어에서 병합할 수 있습니다. 자세한 내용은 [편집기 설정](http://docs.unity3d.com/Manual/class-EditorManager.html)(Unity 설명서)을 참조하세요.
+3. 질감 또는 오디오 파일과 같은 Unity 프로젝트의 이진 자산은 많은 스토리지 공간을 차지할 수 있습니다. Git와 같은 다양한 소스 제어 시스템은 변경 내용이 파일의 일부에만 영향을 주는 경우에도 변경될 때마다 파일의 고유 복사본을 저장합니다. 이로 인해 Git 리포지토리가 너무 커질 수 있습니다. 이 문제를 해결하기 위해 대개 Unity 개발자는 최종 자산만 리포지토리에 추가하고 OneDrive, DropBox, git-annex 등의 다른 방법으로 자산의 작업 기록을 유지합니다. 일반적으로 이러한 자산은 소스 코드 변경에 따라 버전을 관리할 필요가 없으므로 이 접근 방식은 유용합니다. 또한 개발자는 일반적으로 프로젝트 편집기의 Asset Serialization Mode를 Force Text로 설정하여 이진 형식이 아니라 텍스트에 장면 파일을 저장하므로 소스 제어에서 병합할 수 있습니다. 자세한 내용은 [편집기 설정](https://docs.unity3d.com/Manual/class-EditorManager.html)(Unity 설명서)을 참조하세요.
 
 ## <a name="build"></a>빌드
 
@@ -79,7 +79,7 @@ Unity로 버전 제어를 수행하기 위한 특별 고려 사항:
 
 |기능|Unity에서 지원 여부|추가 설명|
 |-------------|--------------------------|-------------------------|
-|온-프레미스 TFS(Team Foundation Server)|가능|Unity 프로젝트는 Visual Studio 빌드 시스템이 아니라 Unity 환경을 통해 빌드됩니다(Visual Studio Tools for Unity 내에서 빌드하면 스크립트가 컴파일되지만 실행 파일은 생성되지 않음). [명령줄에서 Unity 프로젝트를 빌드](http://docs.unity3d.com/Manual/CommandLineArguments.html)(Unity 설명서)할 수 있으므로 Unity 자체가 해당 컴퓨터에 설치되어 있는 경우 적절한 Unity 명령을 실행하도록 TFS 서버의 MSBuild 프로세스를 구성할 수 있습니다.<br /><br /> 또한 Unity는 Git 또는 SVN 리포지토리를 모니터링하고 정기적 빌드를 실행하는 [Unity 클라우드 빌드](https://build.cloud.unity3d.com/landing/)를 제공합니다. 현재는 TFVC 또는 Azure DevOps Services에서 작동하지 않습니다.|
+|온-프레미스 TFS(Team Foundation Server)|가능|Unity 프로젝트는 Visual Studio 빌드 시스템이 아니라 Unity 환경을 통해 빌드됩니다(Visual Studio Tools for Unity 내에서 빌드하면 스크립트가 컴파일되지만 실행 파일은 생성되지 않음). [명령줄에서 Unity 프로젝트를 빌드](https://docs.unity3d.com/Manual/CommandLineArguments.html)(Unity 설명서)할 수 있으므로 Unity 자체가 해당 컴퓨터에 설치되어 있는 경우 적절한 Unity 명령을 실행하도록 TFS 서버의 MSBuild 프로세스를 구성할 수 있습니다.<br /><br /> 또한 Unity는 Git 또는 SVN 리포지토리를 모니터링하고 정기적 빌드를 실행하는 [Unity 클라우드 빌드](https://build.cloud.unity3d.com/landing/)를 제공합니다. 현재는 TFVC 또는 Azure DevOps Services에서 작동하지 않습니다.|
 |Azure DevOps Services에 연결된 온-프레미스 빌드 서버|가능|위와 동일한 조건에서 Azure DevOps Services를 통해 트리거된 빌드가 온-프레미스 TFS 컴퓨터를 사용하도록 추가로 지정할 수 있습니다. 지침은 [에이전트 빌드 및 릴리스](/azure/devops/pipelines/agents/agents?view=vsts)를 참조하세요.|
 |Azure DevOps Services의 호스트된 컨트롤러 서비스|아니요|Unity 빌드는 현재 지원되지 않습니다.|
 |사전 및 사후 스크립트로 정의 작성|예|사전 및 사후 빌드 스크립트에 대해 Unity 명령줄을 사용하여 빌드를 실행하는 사용자 지정 빌드 정의를 구성할 수도 있습니다.|
@@ -105,7 +105,7 @@ Unity로 버전 제어를 수행하기 위한 특별 고려 사항:
 |[관리 코드 품질 분석](../code-quality/code-analysis-for-managed-code-overview.md)|예|Visual Studio 내에서 C# 스크립트 코드를 분석할 수 있습니다.|
 |[코드 복제본 검색을 사용하여 중복 코드 찾기](https://msdn.microsoft.com/library/hh205279.aspx)|예|Visual Studio 내에서 C# 스크립트 코드를 분석할 수 있습니다.|
 |[관리 코드의 복잡성 및 유지 관리 용이성 측정](../code-quality/code-metrics-values.md)|예|Visual Studio 내에서 C# 스크립트 코드를 분석할 수 있습니다.|
-|[성능 탐색기](../profiling/performance-explorer.md)|아니요|[Unity 프로파일러](http://docs.unity3d.com/Manual/Profiler.html)(Unity 웹 사이트)를 사용합니다.|
+|[성능 탐색기](../profiling/performance-explorer.md)|아니요|[Unity 프로파일러](https://docs.unity3d.com/Manual/Profiler.html)(Unity 웹 사이트)를 사용합니다.|
 |[.NET Framework 메모리 문제 분석](https://msdn.microsoft.com/library/dn342825.aspx)|아니요|Visual Studio 도구에는 프로파일링을 위한 모노 프레임워크(Unity에서 사용)에 대한 후크가 없습니다. [Unity 프로파일러](http://docs.unity3d.com/Manual/Profiler.html)(Unity 설명서)를 사용합니다.|
 
 ## <a name="release-management"></a>릴리스 관리

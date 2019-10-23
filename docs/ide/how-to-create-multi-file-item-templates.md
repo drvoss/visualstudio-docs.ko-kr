@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
 - item templates, creating multi-file item templates
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 745f371fa0461c2dc0dcedac0e06d160bbf7e209
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 82047b4a49db4edbea4ce965d1987f87a799a9f7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428991"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655936"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>방법: 다중 파일 항목 템플릿 만들기
 
@@ -65,7 +65,7 @@ ms.locfileid: "62428991"
 
    **새 항목 추가** 대화 상자에 다중 파일 항목 템플릿이 나타납니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 다음 예제에서는 Windows Forms 템플릿을 보여 줍니다. 이 템플릿을 기반으로 항목이 생성되면 생성된 3개 파일의 이름은 **새 항목 추가** 대화 상자에 입력된 이름과 일치합니다.
 

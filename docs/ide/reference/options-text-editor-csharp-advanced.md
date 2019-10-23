@@ -5,21 +5,21 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 010f2a2e6dc163f24a29e8e352b21d8ef8d72b48
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1d540f3a49eda22973b25a6b9a91691907efe93
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811834"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666285"
 ---
 # <a name="options-text-editor-c-advanced"></a>옵션, 텍스트 편집기, C#, 고급
 
-**고급** 옵션을 사용하여 C#의 편집기 서식, 코드 리팩터링 및 XML 문서 주석에 대한 설정을 수정합니다. 이 옵션 페이지에 액세스하려면 **도구** > **옵션**을 선택한 다음, **텍스트 편집기** > **C#** > **고급**을 선택합니다.
+**고급** 옵션을 사용하여 C#의 편집기 서식, 코드 리팩터링 및 XML 문서 주석에 대한 설정을 수정합니다. 이 옵션 페이지에 액세스하려면 **도구** > **옵션**을 선택한 다음, **텍스트 편집기** > **C#**  > **고급**을 선택합니다.
 
 > [!NOTE]
 > 모든 옵션이 여기에 나열되지는 않습니다.
@@ -118,7 +118,7 @@ ms.locfileid: "62811834"
 
 ## <a name="block-structure-guides"></a>블록 구조 가이드
 
-코드에서 중괄호(**{}**) 사이에 세로 점선을 표시하려면 이 확인란을 선택합니다. 그러면 선언 수준 및 코드 수준 구문의 개별 코드 블록을 쉽게 확인할 수 있습니다.
+코드에서 중괄호( **{}** ) 사이에 세로 점선을 표시하려면 이 확인란을 선택합니다. 그러면 선언 수준 및 코드 수준 구문의 개별 코드 블록을 쉽게 확인할 수 있습니다.
 
 ## <a name="editor-help"></a>편집기 도움말
 

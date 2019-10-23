@@ -8,15 +8,15 @@ helpviewer_keywords:
 - debugging [Visual Studio ALM], difficult issues using IntelliTrace
 - Test Runner, InteliTrace
 ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ce5b03c7973a2b6dd9766f200528ae71cf6e4cfa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3c6670f9ff83a16eb793f7e7bd6fb5913a96093c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979317"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664816"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>방법: 어려운 문제 디버그에 도움이 되는 IntelliTrace 데이터 수집
 

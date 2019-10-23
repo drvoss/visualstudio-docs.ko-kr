@@ -2,17 +2,17 @@
 title: 코딩된 UI 테스트 만들기
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 54ebc36f9dd18010e07403c3b9692b62b2380d99
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+author: jillre
+ms.openlocfilehash: 268d170926e3a60ba0aa5131795f22bb31cd2ba9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976312"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659641"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>연습: 코딩된 UI 테스트 만들기, 편집 및 유지 관리
 

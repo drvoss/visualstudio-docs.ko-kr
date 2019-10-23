@@ -27,17 +27,17 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.ScrollBars
 - VS.ToolsOptionsPages.Text_Editor.XAML.ScrollBars
 - VS.ToolsOptionsPages.Text_Editor.XML.ScrollBars
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd7be5aea136c901241ca66af485e76a39cd0ee5
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: da66270d29778e48d89d713e36c6c717e5f86d89
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681321"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666378"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>옵션, 텍스트 편집기, 모든 언어, 스크롤 막대
 이 대화 상자에서는 코드 편집기 스크롤 막대의 기본 동작을 변경할 수 있습니다. 이러한 옵션을 표시하려면 **도구** 메뉴에서 **옵션**을 선택합니다. **텍스트 편집기** 폴더 내에서 **모든 언어** 하위 폴더를 확장한 다음, **스크롤 막대**를 선택합니다.
@@ -61,7 +61,7 @@ ms.locfileid: "68681321"
 
 - 변경 내용
 - 표시
-- errors
+- 오류
 - 캐럿 위치
 
 > [!TIP]

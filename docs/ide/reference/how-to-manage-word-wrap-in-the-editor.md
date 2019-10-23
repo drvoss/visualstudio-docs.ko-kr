@@ -7,17 +7,17 @@ helpviewer_keywords:
 - editors, text viewing
 - Code Editor, word wrap
 ms.assetid: 442f33ef-9f52-4515-b55f-fb816d664645
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bdf19530461d52523bc581835e14fcaabe0e9a76
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 30bfe549100a06df6b9a8163cad1e3d519c3a91b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605435"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663115"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>방법: 편집기에서 자동 줄 바꿈 관리
 

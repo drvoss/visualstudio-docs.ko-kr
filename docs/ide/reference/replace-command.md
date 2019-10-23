@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Edit.Replace command
 - Replace command
 ms.assetid: a15767f1-5a3d-44f5-8c77-7b0f1157f340
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edcff51428451b50dc149b7b55cee11cb9ede853
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: b13dee4ec87a0a4c2735d9523bff093046c5b38c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919041"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747779"
 ---
 # <a name="replace-command"></a>바꾸기 명령
 **찾기 및 바꾸기** 창의 **파일에서 바꾸기**에서 사용할 수 있는 옵션의 하위 집합을 사용하여 파일의 텍스트를 바꿉니다.

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - /DebugExe [devenv.exe]
 - debugging executables
 ms.assetid: cd700006-1648-418f-924b-4b1e5c1412ab
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05266a6f1b5ee0be22e2edc8df1c03b720844f4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bb4eb1eb49cd6b29740fb6d365a98a51cc28387e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968082"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661671"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe(devenv.exe)
 
@@ -36,11 +36,11 @@ devenv /DebugExe ExecutableFile
 
   필수 요소. `.exe` 파일의 경로 및 파일 이름. `.exe` 파일을 찾을 수 없거나 파일이 존재하지 않는 경우 경고 또는 오류가 표시되지 않고 Visual Studio가 정상적으로 시작됩니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 *ExecutableFile* 매개 변수 다음에 나오는 모든 문자열은 해당 파일에 인수로 전달됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 다음 예제는 디버깅을 위해 `MyApplication.exe` 파일을 엽니다.
 

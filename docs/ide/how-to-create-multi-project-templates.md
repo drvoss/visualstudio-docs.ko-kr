@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Visual Studio templates, creating multi-project
 - project templates, multi-project
 - multi-project templates
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f24a7c0d07c804ca45bb31058061cda714ef6a51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8ad04a557ee4b0a359efebfbe7a70d8a85db4551
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430499"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655830"
 ---
 # <a name="how-to-create-multi-project-templates"></a>방법: 다중 프로젝트 템플릿 만들기
 
@@ -88,7 +88,7 @@ ms.locfileid: "62430499"
 2. 서식 파일에 내보낼 준비가 될 때까지 프로젝트를 사용자 지정합니다.
 
    > [!TIP]
-   > [템플릿 매개 변수](template-parameters.md)를 사용하고 부모 템플릿에서 변수를 참조하려면 매개 변수 이름 접두사를 `ext_`로 지정합니다. 예를 들어, `$ext_safeprojectname$`을 입력합니다. 또한 **ProjectTemplateLink** 요소의 **CopyParameters** 특성을 **true**로 설정합니다.
+   > [템플릿 매개 변수](template-parameters.md)를 사용하고 부모 템플릿에서 변수를 참조하려면 매개 변수 이름 접두사를 `ext_`로 지정합니다. 예: `$ext_safeprojectname$`. 또한 **ProjectTemplateLink** 요소의 **CopyParameters** 특성을 **true**로 설정합니다.
    >
    > ```xml
    > <ProjectTemplateLink ProjectName="MyProject" CopyParameters="true">...</ProjectTemplateLink>

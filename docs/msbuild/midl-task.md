@@ -18,20 +18,20 @@ dev_langs:
 - C++
 - jsharp
 helpviewer_keywords:
-- MSBuild (Visual C++), MIDL task
-- MIDL task (MSBuild (Visual C++))
+- MSBuild (C++), MIDL task
+- MIDL task (MSBuild (C++))
 ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 301ca4ee88368b9134bbbcd2dc41435590becaed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b2c5f7e425a7a8c1220ee4b9b09831831c8f0a9a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817573"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747245"
 ---
 # <a name="midl-task"></a>MIDL 작업
 MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 *midl.exe*를 래핑합니다. 자세한 내용은 [MIDL 명령줄 참조](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)를 참조하세요.
@@ -141,7 +141,7 @@ MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 *midl.exe*�
 
      `true`인 경우 열거형 값이 허용되는 범위에 있는지 확인합니다.
 
-     자세한 내용은 *midl.exe*에 대한 명령줄 도움말(**/?**)에서 **/error enum** 옵션을 참조하세요.
+     자세한 내용은 *midl.exe*에 대한 명령줄 도움말( **/?** )에서 **/error enum** 옵션을 참조하세요.
 
 - **ErrorCheckRefPointers**
 
@@ -201,7 +201,7 @@ MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 *midl.exe*�
 
      선택적 **Boolean** 매개 변수입니다.
 
-     `true`인 경우 형식 라이브러리 파일(*.tlb*)이 생성되지 않습니다.
+     `true`인 경우 형식 라이브러리 파일( *.tlb*)이 생성되지 않습니다.
 
      자세한 내용은 [MIDL 명령줄 참조](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)에서 **/notlb** 옵션을 참조하세요.
 

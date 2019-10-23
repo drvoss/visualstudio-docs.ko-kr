@@ -11,17 +11,17 @@ helpviewer_keywords:
 - command aliases
 - alias command
 ms.assetid: bdf857df-b5d5-450f-8c10-a6fd4dccc130
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 396db6e08da211a801361328416d97622ee3eac8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8fdcc816510642c7800b6fbeacfa3fcdeff5e0b3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926333"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748792"
 ---
 # <a name="alias-command"></a>별칭 명령
 전체 명령에 대한 새 별칭, 전체 명령 및 인수에 대한 새 별칭, 또 다른 별칭을 만듭니다.
@@ -56,7 +56,7 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 
 `/reset` 스위치는 별칭을 복원하기 전에 확인을 요청합니다. `/reset`의 약식은 없습니다.
 
-## <a name="examples"></a>예제
+## <a name="examples"></a>예
 이 예제에서는 Edit.MakeUpperCase 전체 명령에 대해 `upper`라는 새 별칭을 만듭니다.
 
 ```cmd

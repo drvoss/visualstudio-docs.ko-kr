@@ -2,17 +2,17 @@
 title: 코딩된 UI 테스트 로그를 사용하여 코딩된 UI 테스트 분석
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 76aac39d50dc724916bca3d863c71bacf53407d9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+author: jillre
+ms.openlocfilehash: 73916d309fa0e070bf4b05ba0d5a8fc02bef29f8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824491"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665330"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>코딩된 UI 테스트 로그를 사용하여 코딩된 UI 테스트 분석
 
@@ -27,11 +27,11 @@ ms.locfileid: "67824491"
 - 테스트 프로젝트에 *App.config* 파일이 없는 경우:
 
    1. 테스트를 실행할 때 어떤 *QTAgent\*.exe* 프로세스를 시작할지 결정합니다. 이것을 결정하는 한 가지 방법은 Windows **작업 관리자**에서 **세부 정보** 탭을 확인하는 것입니다.
-   
+
    2. *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE* 폴더에서 해당 *.config* 파일을 엽니다. 예를 들어 *QTAgent_40.exe* 프로세스를 실행하는 경우에는 *QTAgent_40.exe.config*를 엽니다.
 
    2. **EqtTraceLevel**의 값을 원하는 로그 수준으로 수정합니다.
-   
+
       ```xml
       <!-- You must use integral values for "value".
            Use 0 for off, 1 for error, 2 for warn, 3 for info, and 4 for verbose. -->

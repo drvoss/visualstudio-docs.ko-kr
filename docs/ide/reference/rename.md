@@ -2,8 +2,8 @@
 title: 리팩터링 이름 바꾸기
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.rename
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d1b4ff448f04ff6f683fac06cbc0b31797edf587
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 2991227b3c8d742da360465e6c506e7123259e2c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186586"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655614"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>코드 기호 이름 바꾸기 래픽터링
 
@@ -73,7 +73,7 @@ ms.locfileid: "71186586"
 - Visual Studio 2019 버전 16.3부터, 형식이 포함된 파일의 이름과 일치하도록 형식의 이름을 바꿀 때 파일 이름을 동시에 바꿀 수 있는 확인란이 표시됩니다. 이 옵션은 클래스, 인터페이스 또는 열거형의 이름을 바꾸는 경우에도 표시됩니다. 여러 정의가 포함된 부분 형식에서는 이 옵션이 지원되지 않습니다.
 
    ![파일을 사용하여 애니메이션 이름 바꾸기 - C#](media/rename-with-file-animated-cs.gif)
-   
+
 - 충돌을 일으키는 기존 이름을 사용할 경우 **이름 바꾸기** 상자에 경고가 표시됩니다.
 
    ![이름 바꾸기 충돌](media/rename-conflict-cs.png)

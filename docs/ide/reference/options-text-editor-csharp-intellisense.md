@@ -11,21 +11,21 @@ helpviewer_keywords:
 - wavy underlines
 - Text Editor Options dialog box, IntelliSense
 ms.assetid: 3466dedb-e5f4-424c-8dd8-e4941b2f4fc2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d7e7e76e025c2c426a83f00c1cf2af830eb1c26a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d1e330788b72ff0b4395d1e5d531d1d233f59e7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778686"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666236"
 ---
 # <a name="options-text-editor-c-intellisense"></a>옵션, 텍스트 편집기, C#, IntelliSense
 
-**IntelliSense** 옵션 페이지를 사용하여 C#용 IntelliSense의 동작에 영향을 주는 설정을 수정합니다. 이 옵션 페이지에 액세스하려면 **도구** > **옵션**을 선택한 다음, **텍스트 편집기** > **C#** > **IntelliSense**를 선택합니다.
+**IntelliSense** 옵션 페이지를 사용하여 C#용 IntelliSense의 동작에 영향을 주는 설정을 수정합니다. 이 옵션 페이지에 액세스하려면 **도구** > **옵션**을 선택한 다음, **텍스트 편집기** > **C#**  > **IntelliSense**를 선택합니다.
 
 **IntelliSense** 옵션 페이지에는 다음과 같은 옵션이 포함되어 있습니다.
 
@@ -53,7 +53,7 @@ ms.locfileid: "62778686"
 
 - 식별자 뒤에 ?-Tab을 입력하면 코드 조각 포함
 
-   이 옵션을 선택하면 IntelliSense에서는 식별자 뒤에 **?**+**Tab**을 누르면 C# 코드 조각의 별칭을 완성 목록에 추가합니다.
+   이 옵션을 선택하면 IntelliSense에서는 식별자 뒤에 **?** +**Tab**을 누르면 C# 코드 조각의 별칭을 완성 목록에 추가합니다.
 
 ## <a name="enter-key-behavior"></a>키 입력 동작
 

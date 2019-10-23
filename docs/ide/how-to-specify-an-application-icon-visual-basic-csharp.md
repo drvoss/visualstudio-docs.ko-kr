@@ -6,17 +6,17 @@ helpviewer_keywords:
 - icons [Visual Studio], application
 - application properties [Visual Studio], icons
 - application icons [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f2903821c0e0843de43f68d67cc64c344ab95e02
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e137eda77f1807b80409872d9fe0c2966df2a41
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62547782"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656598"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>방법: 애플리케이션 아이콘 지정(Visual Basic, C#)
 

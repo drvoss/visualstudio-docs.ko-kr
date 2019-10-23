@@ -3,17 +3,17 @@ title: '방법: 셰이더 내보내기'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d0a962fe941f676369c4c3575647610df809d58
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c05e40b76d60a5602cee1cb67b5c3094fb94d249
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844399"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635543"
 ---
 # <a name="how-to-export-a-shader"></a>방법: 셰이더 내보내기
 

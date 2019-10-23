@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Debug.ListRegisters command
 - ListRegisters command
 ms.assetid: 19a9d789-f6c9-46b3-b1f6-4934fc33e055
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95edb5098d73e8fccb47f9f059473394afe5f542
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a0e52f42e495c2bac5e80195d360096947210980
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919104"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748687"
 ---
 # <a name="list-registers-command"></a>레지스터 목록 표시 명령
 선택된 레지스터의 값을 등록하고 표시할 레지스터의 목록을 수정합니다.

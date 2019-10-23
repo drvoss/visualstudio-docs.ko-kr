@@ -2,17 +2,17 @@
 title: 추상 클래스 구현
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1e5e1d05e0142a0185909ff590ff507fb53c7dc0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f8d61e6e2632d62d7244ec0918e56816c3a028e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823189"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662474"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>Visual Studio에서 추상 클래스 구현
 
@@ -32,7 +32,7 @@ ms.locfileid: "62823189"
 
 1. 추상 클래스에서 상속되었지만 일부 필요한 멤버를 구현하지 않았음을 나타내는 빨간색 구부러진 곡선이 있는 줄에 커서를 놓습니다.
 
-   - C#: 
+   - C#:
 
        ![강조 표시된 코드 C#](media/abstract-highlight-cs.png)
 
@@ -43,7 +43,7 @@ ms.locfileid: "62823189"
 2. 다음 작업 중 하나를 수행합니다.
 
    - **키보드**
-      - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
+      - 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
    - **마우스**
       - 마우스 오른쪽 단추로 클릭하고 **빠른 작업 및 리팩터링** 메뉴를 선택합니다.
       - 빨간색 구부러진 곡선 위로 마우스를 이동하고 표시되는 ![오류 전구](media/error-bulb.png) 아이콘을 클릭합니다.
@@ -59,7 +59,7 @@ ms.locfileid: "62823189"
 
    추상 메서드 시그니처가 만들어지고 구현할 준비가 됩니다.
 
-   - C#: 
+   - C#:
 
        ![클래스 구현 결과 C#](media/abstract-result-cs.png)
 

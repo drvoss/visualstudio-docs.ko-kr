@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, run settings, context parameters
 - load tests, context parameters
 ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b979da03c0ea5378684ff12bc86d4fb59eef9180
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e630bfccb1741e3b194b6be4c6f8cdb065d8b942
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979457"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664855"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>방법: 부하 테스트 실행 설정에 컨텍스트 매개 변수 추가
 

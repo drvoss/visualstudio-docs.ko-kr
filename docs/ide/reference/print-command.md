@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Print method
 - Print command
 ms.assetid: 0412d381-590a-483f-bab4-6e1cca095645
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df609011250cebc097d3d356242302dbe41f8007
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ae87afb11be71af8f0582a0b2899d67ba970186e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969087"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747818"
 ---
 # <a name="print-command"></a>인쇄 명령
 
@@ -37,7 +37,7 @@ ms.locfileid: "62969087"
 
 필수 요소. 계산할 식 또는 표시할 텍스트입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 이 명령에 대한 별칭으로 물음표(?)를 사용할 수 있습니다. 따라서 예를 들면
 
@@ -53,7 +53,7 @@ ms.locfileid: "62969087"
 
 이 명령의 두 버전은 모두 `expA` 식의 현재 값을 반환합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 ```cmd
 >Debug.Print DateTime.Now.Day

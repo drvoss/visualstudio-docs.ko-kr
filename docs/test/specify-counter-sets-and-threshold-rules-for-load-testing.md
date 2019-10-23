@@ -10,15 +10,15 @@ helpviewer_keywords:
 - load tests, counter sets
 - load tests, threshold rules
 ms.assetid: 9e14d955-f3a4-4717-bbfe-7f08cdda5678
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 79140e61844ce450db86ba3bd0b0d6577dec3531
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 493295bdbcd1b4906aedf6dca54e264e8ae5e8c6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62431337"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659963"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>부하 테스트에서 컴퓨터에 대한 카운터 집합 및 임계값 규칙 지정
 

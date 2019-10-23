@@ -7,17 +7,17 @@ helpviewer_keywords:
 - /Diff Devenv switch
 - Diff Devenv switch
 ms.assetid: 5377fedb-632a-4e86-a947-7c11c86451e7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2e69435a319a9730af846a912cb3f90a12d4ac8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 26d438e9cea35cbf178658d8def78e264804240c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945785"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654506"
 ---
 # <a name="diff-devenvexe"></a>/Diff(devenv.exe)
 
@@ -47,11 +47,11 @@ devenv /Diff SourceFile TargetFile [SourceDisplayName [TargetDisplayName]]
 
   선택 사항입니다. 두 번째 파일의 표시 이름입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 IDE의 인스턴스가 이미 열려 있는 경우 현재 IDE의 탭에 파일 비교가 나타납니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 첫 번째 예제에서는 표시 이름을 변경하지 않고 두 파일을 비교합니다. 두 번째 예제에서는 표시 이름을 둘 다 변경하면서 파일을 비교합니다. 세 번째 및 네 번째 예제에서는 두 파일을 비교하지만 첫 번째 파일 또는 두 번째 파일에만 별칭을 적용합니다.
 

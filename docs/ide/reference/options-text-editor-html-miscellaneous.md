@@ -5,21 +5,21 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Miscellaneous
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43ab664968ca75f8af6da89db84725924caa3584
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3b100defd8f50b4a487e46eef4183457e724a015
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778432"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666189"
 ---
 # <a name="options-text-editor-html-web-forms-miscellaneous"></a>옵션, 텍스트 편집기, HTML(Web Forms), 기타
 
-**기타** 옵션 페이지를 사용하여 HTML 편집기가 페이지에 붙여넣은 요소를 처리하는 방법의 기본 설정을 지정합니다. 이 페이지에 액세스하려면 메뉴 모음에서 **도구** > **옵션**을 선택한 다음, **텍스트 편집기** > **HTML(Web Forms)** > **기타**를 확장합니다.
+**기타** 옵션 페이지를 사용하여 HTML 편집기가 페이지에 붙여넣은 요소를 처리하는 방법의 기본 설정을 지정합니다. 이 페이지에 액세스하려면 메뉴 모음에서 **도구** > **옵션**을 선택한 다음, **텍스트 편집기** > **HTML(Web Forms)**  > **기타**를 확장합니다.
 
 ## <a name="miscellaneous-html-options"></a>기타 HTML 옵션
 

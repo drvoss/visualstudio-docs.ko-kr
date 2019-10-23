@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Devenv, /RunExit switch
 - /RunExit Devenv switch
 ms.assetid: bfc94875-5fc0-4110-b961-d59c0b403790
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fa010e72267dadfb1974f7ce8be3b6b9a3e1cff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 295d4999437248cc9221631378c2beffd80094d8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935049"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655529"
 ---
 # <a name="runexit-devenvexe"></a>/RunExit(devenv.exe)
 
@@ -43,7 +43,7 @@ devenv /RunExit {SolutionName|ProjectName} [/Out OutputFilename]
 
   선택 사항입니다. 도구의 출력을 보낼 파일의 이름입니다. 파일이 이미 있는 경우 출력은 파일의 끝에 추가됩니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 활성 솔루션 구성에 대해 지정된 설정에 따라 지정된 프로젝트 또는 솔루션을 컴파일하고 실행합니다. 이 스위치는 프로젝트 또는 솔루션을 실행하는 동안 IDE를 최소화합니다. 또한 프로젝트 또는 솔루션 실행을 완료한 후에 IDE를 닫습니다.
 
@@ -51,7 +51,7 @@ devenv /RunExit {SolutionName|ProjectName} [/Out OutputFilename]
 
 - 오류를 포함한 요약 정보는 **명령** 창 또는 `/Out` 스위치로 지정된 로그 파일에 표시할 수 있습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 이 예제에서는 활성 배포 구성을 사용하여 최소화된 IDE에서 `MySolution` 솔루션을 실행한 다음 IDE를 닫습니다.
 

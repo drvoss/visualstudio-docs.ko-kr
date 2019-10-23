@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/30/2019
 ms.topic: conceptual
 description: MSDN Magazine이 사용 중지될 예정임
-ms.openlocfilehash: 8addfcf6c32b8c7d01223ff1ae6bb4cc4b32562c
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: de9d81369d1a616b2511ec553d41a077b2edb359
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891252"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516841"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions-has-been-discontinued"></a>Visual Studio 구독의 MSDN Magazine 혜택이 중단됨
 
@@ -38,6 +38,7 @@ A: 환불금은 구독에 등록된 주소로 우편 발송됩니다. 환불에 
 
 ## <a name="next-steps"></a>다음 단계
 구독에서 더 전문적인 개발 기회를 확인하세요.
+- [CODE Magazine](vs-code-magazine.md)
 - [Pluralsight](vs-pluralsight.md)
-- [LinkedIn Learning](vs-linkedin-learning.md)
+- [LinkedIn 학습](vs-linkedin-learning.md)
 - [DataCamp](vs-datacamp.md)

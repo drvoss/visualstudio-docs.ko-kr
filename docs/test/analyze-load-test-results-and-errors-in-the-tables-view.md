@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Load Test Viewer, tables
 - load tests, results tables
 ms.assetid: 0a84bda3-6051-45eb-9c7f-d57419e1f97d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5ab2fe1f01aceb7b86d52f26d904a99f762f4329
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: f6410129d32e521adeda4b31e4b3a0f6aca903fd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926478"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665393"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>부하 테스트 분석기의 테이블 뷰에서 부하 테스트 결과 및 오류 분석
 
@@ -58,7 +58,7 @@ ms.locfileid: "68926478"
 |SQL 추적|SQL 추적 결과를 표시합니다. 이 테이블은 부하 테스트가 완료된 후에만 사용할 수 있으며 테스트 도중 SQL 추적이 사용된 경우에만 사용할 수 있습니다. 자세한 내용은 이 토픽의 [SQL 추적 데이터 테이블](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table)을 참조하세요.|
 |테스트|부하 테스트 도중 개별 테스트에 대한 세부 정보를 표시합니다. 자세한 내용은 이 토픽의 [테스트 테이블](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-tests-table)을 참조하세요.|
 |임계값|부하 테스트 실행 도중 발생한 임계값 규칙 위반 목록을 표시합니다. 자세한 내용은 [임계값 규칙 위반 분석](../test/analyze-threshold-rule-violations-in-load-tests.md)을 참조하세요.|
-|트랜잭션|부하 테스트 실행 도중 발생한 트랜잭션 목록을 표시합니다. 자세한 내용은 이 토픽의 [트랜잭션 테이블](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-transactions-table)을 참조하세요.|
+|의|부하 테스트 실행 도중 발생한 트랜잭션 목록을 표시합니다. 자세한 내용은 이 토픽의 [트랜잭션 테이블](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-transactions-table)을 참조하세요.|
 |에이전트|부하 테스트에 테스트 컨트롤러와 테스트 에이전트를 사용하고 있는 경우에만 표시됩니다. 부하 테스트 실행 중 사용된 에이전트의 목록을 표시합니다. 에이전트 테이블에는 에이전트가 테스트한 요청 수와 그 중 실패한 요청 수가 포함됩니다. 또한 에이전트 테이블에는 에이전트가 테스트한 부하 테스트의 테스트 조합에 포함된 테스트 수와 그 중 실패한 테스트 수도 포함됩니다.|
 |테스트 정보|부하 테스트의 테스트 조합에 포함된 테스트에 대한 정보를 표시합니다. 이 정보에는 테스트 이름, 테스트가 실행된 시나리오, 테스트 시작 시간, 테스트를 실행하는 데 걸린 시간, 테스트 성공 여부를 나타내는 테스트 결과 등이 포함됩니다. 테스트가 실패하면 링크는 **세부 정보** 열에 있습니다. 이 링크를 선택하면 실패한 요청이 강조 표시된 상태로 웹 성능 테스트 편집기가 표시됩니다.|
 
@@ -72,7 +72,7 @@ ms.locfileid: "68926478"
 
 다음 테이블에는 **요청** 테이블의 열이 나와 있습니다.
 
-|열|설명|기본적으로 표시되는지 여부|
+|Column|설명|기본적으로 표시되는지 여부|
 |-|-|-|
 |**요청**|요청의 URL입니다. 예를 들어 *home.html* 또는 *orange-arrow.gif*입니다.|예|
 |**시나리오**|시나리오 이름입니다.|예|
@@ -94,7 +94,7 @@ ms.locfileid: "68926478"
 
 다음 테이블에는 **테스트** 테이블의 열이 나와 있습니다.
 
-|열|설명|기본적으로 표시되는지 여부|
+|Column|설명|기본적으로 표시되는지 여부|
 |-|-|-|
 |**테스트**|테스트의 이름입니다.|예|
 |**시나리오**|시나리오 이름입니다.|예|
@@ -118,7 +118,7 @@ ms.locfileid: "68926478"
 > [!NOTE]
 > 모든 열을 보려면 활성 실행 설정과 연결된 타이밍 정보 스토리지 속성을 사용하도록 설정해야 합니다. 자세한 내용은 [방법: 타이밍 정보 스토리지 속성 지정](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)을 참조하세요.
 
-|열|설명|타이밍 정보 없이 표시|
+|Column|설명|타이밍 정보 없이 표시|
 |-|-|-|
 |**트랜잭션**|트랜잭션 이름입니다.|예|
 |**시나리오**|시나리오 이름입니다.|예|
@@ -144,7 +144,7 @@ ms.locfileid: "68926478"
 
 오류 테이블에는 다음과 같은 열이 있습니다.
 
-|열|설명|기본적으로 표시되는지 여부|
+|Column|설명|기본적으로 표시되는지 여부|
 |-|-|-|
 |형식|오류의 유형입니다. 예를 들어 HttpError가 표시됩니다.|예|
 |하위 형식|오류의 하위 형식입니다. 예를 들어 LoadTestException이 표시됩니다.|예|
@@ -162,7 +162,7 @@ ms.locfileid: "68926478"
 
 **부하 테스트 오류** 테이블에는 다음 열이 있습니다.
 
-|열|설명|
+|Column|설명|
 |-|-|
 |**시간**|부하 테스트 도중 오류가 발생한 시간입니다.|
 |**에이전트**|오류가 발생한 에이전트 컴퓨터 이름입니다. 테스트 컨트롤러 및 테스트 에이전트를 사용하여 부하 테스트를 실행하는 경우 이 정보가 중요합니다. 자세한 내용은 [테스트 에이전트 설치 및 구성](../test/lab-management/install-configure-test-agents.md)을 참조하세요.|

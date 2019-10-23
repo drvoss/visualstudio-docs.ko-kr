@@ -8,17 +8,17 @@ helpviewer_keywords:
 - deploying applications [Visual Studio], after build
 - /Deploy Devenv switch
 ms.assetid: e47c8723-df08-4645-aa2d-0c956e7ccca2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 835891689d376d06bda31b050394ae4e61315a8f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4ff5f79b2482c2e025957872892a585e08bbfa8d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970398"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661656"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
 
@@ -52,7 +52,7 @@ devenv SolutionName /Deploy [SolnConfigName [/Project ProjName [/ProjectConfig P
 
   선택 사항입니다. 도구의 출력을 보낼 파일의 이름입니다. 파일이 이미 있는 경우 출력은 파일의 끝에 추가됩니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 지정된 프로젝트는 배포 프로젝트여야 합니다. 지정된 프로젝트가 배포 프로젝트가 아니면, 빌드된 프로젝트가 배포되도록 전달될 때 오류로 인해 실패합니다.
 
@@ -60,7 +60,7 @@ devenv SolutionName /Deploy [SolnConfigName [/Project ProjName [/ProjectConfig P
 
 오류를 포함한 빌드에 대한 요약 정보는 **명령** 창 또는 [/Out](out-devenv-exe.md) 스위치로 지정된 로그 파일에 표시할 수 있습니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 이 예제에서는 `MySolution` 내에 있는 `Release` 프로젝트 빌드 구성을 사용하여 `CSharpWinApp` 프로젝트를 배포합니다.
 

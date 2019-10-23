@@ -8,17 +8,17 @@ helpviewer_keywords:
 - command line [Visual Studio], switches
 - Devenv
 ms.assetid: e12bc6ed-74fd-4bea-8d7c-89b99c20bad8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db9aaeb48095b058abb0deefa342598eefeed1b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf7ebda1e661801995c17a81e658b4f638c2f8a1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970229"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661646"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv 명령줄 스위치
 
@@ -52,7 +52,7 @@ VSPackage 개발과 관련된 스위치에 대한 자세한 내용은 [VSPackage
   > [!NOTE]
   > 이 프로젝트를 참조하는 솔루션 파일 하나만 해당 부모 폴더에 있어야 합니다. 부모 폴더에 이 프로젝트를 참조하는 솔루션 파일이 없거나 두 개 이상 있는 경우 임시 솔루션 파일이 생성됩니다.
 
-- 파일 경로 및 파일 이름에 공백이 포함된 경우 큰따옴표("")로 묶어야 합니다. 예를 들어, `"c:\project a\"`을 입력합니다.
+- 파일 경로 및 파일 이름에 공백이 포함된 경우 큰따옴표("")로 묶어야 합니다. 예: `"c:\project a\"`.
 
 - 동일한 줄에 있는 스위치와 인수 사이에 공백 문자를 하나 삽입합니다. 예를 들어 `devenv /log output.txt` 명령은 IDE를 열고 해당 세션에 대한 모든 로그 정보를 output.txt에 출력합니다.
 

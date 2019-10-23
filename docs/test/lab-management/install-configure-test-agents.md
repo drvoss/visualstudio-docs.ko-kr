@@ -4,17 +4,17 @@ ms.date: 04/17/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - configure test agents, test lab
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6597c47fd272beec2c82f7d4c2644291b168b5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: edb10246437bff9bef0a6f76ffde95bc12855944
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965417"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653075"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>테스트 에이전트 및 테스트 컨트롤러 설치
 
@@ -34,7 +34,7 @@ Lab Management 대신 [Build 또는 Release Management](use-build-or-rm-instead-
 
 ## <a name="install-the-test-controller-and-test-agents"></a>테스트 컨트롤러 및 테스트 에이전트 설치
 
-[visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents)에서Visual Studio용 에이전트를 다운로드할 수 있습니다. *Agents for Visual Studio 2019*를 찾고, ‘에이전트’ 또는 ‘컨트롤러’를 선택한 다음, ‘다운로드’를 선택합니다. 다운로드한 실행 파일을 실행하여 컨트롤러 또는 테스트 에이전트를 설치합니다.
+[visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents)에서Visual Studio용 에이전트를 다운로드할 수 있습니다. *Agents for Visual Studio 2019*를 찾고, ‘에이전트’ 또는 ‘컨트롤러’를 선택한 다음, ‘다운로드’를 선택합니다.    다운로드한 실행 파일을 실행하여 컨트롤러 또는 테스트 에이전트를 설치합니다.
 
 [이전 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/) 페이지에서 Visual Studio 2017, Visual Studio 2015 및 Visual Studio 2013용 에이전트를 다운로드할 수 있습니다.
 

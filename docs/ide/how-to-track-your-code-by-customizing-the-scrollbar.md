@@ -2,17 +2,17 @@
 title: 스크롤 막대 지도 모드 및 막대 모드
 ms.date: 09/25/2018
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77f7db396b814eb9163c055b8fadb8793432acee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 997f44fede7b31fe44b1e2ea28186ad52d39f443
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548323"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656573"
 ---
 # <a name="how-to-customize-the-scroll-bar"></a>방법: 스크롤 막대 사용자 지정
 
@@ -50,11 +50,11 @@ ms.locfileid: "62548323"
 
 ### <a name="bar-mode"></a>막대 모드
 
-‘막대 모드’에서는 스크롤 막대에 주석 표시기가 표시됩니다. 스크롤 막대를 클릭하면 페이지가 위아래로 스크롤되지만 파일의 해당 위치로 점프하지는 않습니다.
+‘막대 모드’에서는 스크롤 막대에 주석 표시기가 표시됩니다.  스크롤 막대를 클릭하면 페이지가 위아래로 스크롤되지만 파일의 해당 위치로 점프하지는 않습니다.
 
 ### <a name="map-mode"></a>지도 모드
 
-‘지도 모드’에서는 스크롤 막대의 한 위치를 클릭하면 커서가 페이지 위나 아래로 스크롤하는 대신 파일의 해당 위치로 이동합니다. 코드 줄이 축소되어 스크롤 막대에 표시됩니다. **소스 개요**에서 값을 선택하여 지도 열의 너비를 선택할 수 있습니다. 지도에 포인터를 놓을 때 코드 미리 보기를 더 크게 표시하려면 **미리 보기 도구 설명 표시** 옵션을 선택합니다. 축소된 영역은 다르게 회색으로 표시되며, 두 번 클릭하면 확장됩니다.
+‘지도 모드’에서는 스크롤 막대의 한 위치를 클릭하면 커서가 페이지 위나 아래로 스크롤하는 대신 파일의 해당 위치로 이동합니다.  코드 줄이 축소되어 스크롤 막대에 표시됩니다. **소스 개요**에서 값을 선택하여 지도 열의 너비를 선택할 수 있습니다. 지도에 포인터를 놓을 때 코드 미리 보기를 더 크게 표시하려면 **미리 보기 도구 설명 표시** 옵션을 선택합니다. 축소된 영역은 다르게 회색으로 표시되며, 두 번 클릭하면 확장됩니다.
 
 > [!TIP]
 > **소스 개요**를 **끔**으로 설정하여 지도 모드에서 축소 코드 보기를 끌 수 있습니다. **미리 보기 도구 설명 표시**를 선택한 경우에도 스크롤 막대를 포인터로 가리키면 해당 위치의 코드 미리 보기가 표시되며, 클릭하면 커서가 파일의 해당 위치로 이동합니다.

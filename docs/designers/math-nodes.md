@@ -3,17 +3,17 @@ title: 수학 노드
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: adc225cc-1cf5-4f7c-9b00-e7ac8450b6b9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43809923b730800cfa71185b136743f3098239e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 594adb7f726c29c9344dbd437479e74ef484118c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844244"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635073"
 ---
 # <a name="math-nodes"></a>수학 노드
 

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - C#, IntelliSense
 - IntelliSense [C#]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0a875ea2690a2932a10ff3a16364dd9d362a7642
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 13a3c16adca29128be275495fe8921895aa84250
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328839"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647219"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -80,7 +80,7 @@ IntelliSense는 필터를 사용하여 완성 목록에서 불필요한 멤버�
 
 IntelliSense는 자동 개체 이름 완성을 위해 팝업 [멤버 목록](../ide/using-intellisense.md) 상자에서 최근에 선택한 멤버를 기억합니다. 다음에 **멤버 목록**을 사용할 때는 최근에 사용한 멤버가 맨 위에 표시됩니다. 최근에 사용한 멤버 기록은 각 Visual Studio 세션을 종료하면 지워집니다.
 
-### <a name="override"></a>override
+### <a name="override"></a>재정의
 
 [override](/dotnet/csharp/language-reference/keywords/override)를 입력하고 **스페이스**를 누르면 IntelliSense가 팝업 목록 상자에서 재정의할 수 있는 모든 유효한 기본 클래스 멤버를 표시합니다. `override` 뒤에 메서드의 반환 형식을 입력하면 IntelliSense가 같은 형식을 반환하는 메서드만 표시합니다. IntelliSense가 일치 항목을 찾을 수 없으면 기본 클래스 멤버가 모두 표시됩니다.
 

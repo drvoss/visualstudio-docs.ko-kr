@@ -3,17 +3,17 @@ title: '방법: 밉 맵을 포함하는 질감 내보내기'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3d1ad14b-44fb-4cf0-a995-5e2f60026524
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5226903112d06d5efa362c61db938124eed8e68
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d3aa73f24a8fc7c3a5fceb9094acec2f9c6b80f9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897320"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635500"
 ---
 # <a name="how-to-export-a-texture-that-contains-mipmaps"></a>방법: 밉 맵을 포함하는 질감 내보내기
 

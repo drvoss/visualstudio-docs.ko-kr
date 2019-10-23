@@ -13,17 +13,17 @@ helpviewer_keywords:
 - builds [Visual Studio], errors
 - output files, build errors
 ms.assetid: 9002d8c2-36d4-451c-b489-8f01932f31f7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 039456c10993199ec2265042aabc0ed5c475ccd9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a073b4815a01696c546dc2a9dd1132e3605281e6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969295"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655782"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 
@@ -41,13 +41,13 @@ devenv /Out FileName
 
   필수 요소. 실행 파일을 빌드할 때 출력을 수신할 파일의 경로 및 이름입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 존재하지 않는 파일 이름이 지정되면 파일이 자동으로 만들어집니다. 이외의 경우에는 파일이 이미 있고 결과는 파일의 기존 내용에 추가됩니다.
 
 명령줄 빌드 오류는 **명령** 창 및 **출력** 창의 솔루션 작성기 보기에 표시됩니다. 이 스위치는 무인 빌드의 결과를 보는 데 유용합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 이 예제에서는 `MySolution`을 실행하고 `MyErrorLog.txt` 파일에 오류를 기록합니다.
 

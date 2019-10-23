@@ -2,19 +2,19 @@
 title: for 루프를 foreach 문으로 변환하는 코드 리팩터링
 ms.date: 05/10/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: d61e79055b2158115b459e643a36170304b7f655
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: 3d35897bd928166410ffd950534277cfac2c06b7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67261719"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654548"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>for 루프와 foreach 문 사이를 변환하는 리팩터링
 

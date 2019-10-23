@@ -7,15 +7,15 @@ helpviewer_keywords:
 - Web services [Visual Studio ALM], creating
 - service tests, Web
 ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3fd640a79a81e2306c8abd1c3c5279b1fc8f335f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4bbc7423c3f08665109c17d25d43ae6d9d652100
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950139"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653605"
 ---
 # <a name="how-to-create-a-web-service-test"></a>방법: 웹 서비스 테스트 만들기
 
@@ -35,7 +35,7 @@ Visual Studio Enterprise
 
 2. **웹 성능 테스트 편집기**에서 웹 성능 테스트를 마우스 오른쪽 단추로 클릭한 다음, **웹 서비스 요청 추가**를 선택합니다.
 
-3. 새 요청의 **Url** 속성에 **http://localhost/storecsvs/InstantOrder.asmx**와 같은 웹 서비스 이름을 입력합니다.
+3. 새 요청의 **Url** 속성에 **http://localhost/storecsvs/InstantOrder.asmx** 와 같은 웹 서비스 이름을 입력합니다.
 
 4. 별도의 브라우저 세션을 열고 **주소** 도구 모음에 *.asmx* 페이지의 URL을 입력합니다. 테스트할 방법을 선택하고 SOAP 메시지를 검사합니다. SOAP 메시지에 `SOAPAction`이 있습니다.
 

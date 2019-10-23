@@ -3,17 +3,17 @@ title: 질감 및 이미지 작업
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5642a2e84766758b5fdf50bc652fd32b585427bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d59b7c2c52cc0fe230a6e9c5c7c89db56d065aff
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843978"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72633698"
 ---
 # <a name="work-with-textures-and-images"></a>질감 및 이미지 작업
 
@@ -53,4 +53,4 @@ Visual Studio에서 이미지 편집기를 사용하여 질감 및 이미지를 
 |제목|설명|
 |-----------|-----------------|
 |[Image Editor](../designers/image-editor.md)|이미지 편집기를 사용하여 질감과 이미지 작업을 수행하는 방법을 설명합니다.|
-|[이미지 편집기 예제](../designers/image-editor-examples.md)|일반적인 이미지 처리 작업을 수행하기 위해 이미지 편집기 사용 방법을 보여주는 항목에 대한 링크를 제공합니다.|
+|[이미지 편집기 예제](../designers/how-to-create-a-basic-texture.md)|일반적인 이미지 처리 작업을 수행하기 위해 이미지 편집기 사용 방법을 보여주는 항목에 대한 링크를 제공합니다.|

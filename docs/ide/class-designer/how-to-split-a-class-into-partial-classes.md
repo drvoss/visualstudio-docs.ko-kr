@@ -6,20 +6,20 @@ helpviewer_keywords:
 - Class Designer, partial classes
 - partial classes, Class Designer
 ms.assetid: 6f6b0b30-3996-4569-9200-20482b3adf90
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e1426b1ad9799984f7b14604a1d8b685e9ce8813
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 42d2cf5c0fa5c08c51ebfbc94d9a03221df46788
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615406"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647699"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>방법: 클래스 디자이너에서 클래스를 부분 클래스로 분할
 
@@ -40,7 +40,7 @@ partial 메서드는 두 가지 종류가 있습니다. C#에서는 선언(decla
 
 Visual Basic의 부분 형식(Partial Type)에 대한 자세한 내용은 [Partial](/dotnet/visual-basic/language-reference/modifiers/partial)을 참조하세요.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 클래스 정의를 분할하려면 다음 예제와 같이 `partial` 키워드(Visual Basic의 `Partial`)를 사용합니다.
 

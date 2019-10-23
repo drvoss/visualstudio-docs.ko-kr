@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Devenv, /upgrade switch
 - upgrade Devenv switch
 ms.assetid: 3468045c-5cc9-4157-9a9d-622452145d27
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fa2e2eaa583f7da0437907fdaa3e7af2fe4a0e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c9894056babdd8615e4ae052eb73e91e9b108acc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789305"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72622415"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 
@@ -43,7 +43,7 @@ devenv {SolutionFile|ProjectFile} /Upgrade [/Out OutputFilename]
 
   선택 사항입니다. 도구의 출력을 보낼 파일의 이름입니다. 파일이 이미 있는 경우 출력은 파일의 끝에 추가됩니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 백업은 자동으로 만들어지고 현재 디렉터리에 생성된 Backup 디렉터리로 복사됩니다.
 
@@ -51,7 +51,7 @@ devenv {SolutionFile|ProjectFile} /Upgrade [/Out OutputFilename]
 
 `/Upgrade` 스위치를 사용하면 Visual Studio가 열리지 않습니다. 솔루션 또는 프로젝트의 개발 언어에 대한 업그레이드 보고서에서 업그레이드 결과를 확인할 수 없습니다. 오류 또는 사용 정보가 반환되지 않습니다. Visual Studio에서 프로젝트를 업그레이드하는 방법에 대한 자세한 내용은 [Visual Studio 프로젝트 포팅, 마이그레이션, 업그레이드](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)를 참조하세요.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 이 예제에서는 “MyProject.sln”이라는 솔루션 파일을 업그레이드합니다.
 

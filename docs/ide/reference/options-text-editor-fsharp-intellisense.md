@@ -4,21 +4,21 @@ ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.FSharp.IntelliSense
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7227fa83e829fff7bac28fa7bb2b50969768e934
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d293d2c649329f5de8444ea75fd05ddc34738ab4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778458"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666223"
 ---
 # <a name="options-text-editor-f-intellisense"></a>옵션, 텍스트 편집기, F#, IntelliSense
 
-**IntelliSense** 옵션 페이지를 사용하여 F#의 일부 텍스트 편집기 설정을 수정합니다. 이 옵션 페이지에 액세스하려면 **도구** > **옵션**을 선택한 다음, **텍스트 편집기** > **F#** > **IntelliSense**를 선택합니다.
+**IntelliSense** 옵션 페이지를 사용하여 F#의 일부 텍스트 편집기 설정을 수정합니다. 이 옵션 페이지에 액세스하려면 **도구** > **옵션**을 선택한 다음, **텍스트 편집기** > **F#**  > **IntelliSense**를 선택합니다.
 
 ## <a name="completion-lists"></a>완성 목록
 

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - list call stack command
 - Debug.ListCallStack command
 ms.assetid: a8b20bf2-81d2-4069-aea8-23e6b15b4347
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a122b9fbc97816b114ba2ff6274756f9e2093eef
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 7f62852550c161566832a7ab78d4058d1d14028f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919158"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748715"
 ---
 # <a name="list-call-stack-command"></a>호출 스택 목록 표시 명령
 현재 호출 스택을 표시합니다.

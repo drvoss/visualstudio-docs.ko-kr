@@ -2,17 +2,17 @@
 title: IDE 사용자 지정
 ms.date: 11/20/2017
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2961730594abd268ae130cf2c3d2b93df5322c14
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: e6bf00573febda06aba4d12184a416341879bac7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68606087"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666813"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Visual Studio IDE 개인 설정
 

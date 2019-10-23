@@ -105,6 +105,10 @@
 ### [키보드 탐색 사용](accessibility-keyboard.md)
 ### [VoiceOver 사용](accessibility-voiceover.md)
 
+# 비디오 자습서
+## [Mac용 Visual Studio에서 ASP.NET Core 시작](tutorial-aspnet-core-vsmac-getting-started.md)
+## [기존 ASP.NET Core 웹 애플리케이션 확장](tutorial-aspnet-core-vsmac-extending.md)
+
 # [Windows 사용자를 위한 Mac용 Visual Studio](vsmac-for-windows-users.md)
 
 # 문제 해결

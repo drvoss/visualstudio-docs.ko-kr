@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19776c8d4ef72149c575d6835e9265e9cdb33727
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e0710ec5cdfcfcb59407d18b43b885603f017fdb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62855121"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738626"
 ---
 # <a name="memorytypeenum"></a>MemoryTypeEnum
-메모리 액세스의 형식을 지정 합니다.
+액세스할 메모리의 유형을 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -34,20 +34,20 @@ enum MemoryTypeEnum {
 ```
 
 #### <a name="parameters"></a>매개 변수
-`MemTypeCode` 액세스는 메모리 에서만 코드입니다.
+`MemTypeCode`는 코드 메모리에만 액세스 합니다.
 
-`MemTypeData` 데이터 또는 스택 메모리 액세스 합니다.
+`MemTypeData` 데이터 또는 스택 메모리에 액세스 합니다.
 
-`MemTypeStack` 만 스택 메모리를 액세스 합니다.
+`MemTypeStack` 스택 메모리에만 액세스 합니다.
 
-`MemTypeAny` 모든 종류의 메모리에 액세스합니다.
+`MemTypeAny`는 모든 종류의 메모리에 액세스 합니다.
 
-## <a name="remarks"></a>설명
-이 열거형의 값에 전달 되는 [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) 다양 한 유형의 메모리에 대 한 액세스를 제한 하는 방법이 있습니다.
+## <a name="remarks"></a>주의
+이 열거형의 값은 여러 메모리 형식에 대 한 액세스를 제한 하기 위해 [IDiaStackWalkHelper:: readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) 메서드에 전달 됩니다.
 
 ## <a name="requirements"></a>요구 사항
-헤더: cvconst.h
+헤더: cvconst
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [열거형 및 구조체](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)

@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5293473e35424ccc6ee357d63a9355cacf0d6725
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a09622a2cc7ae6d2a2451ac1de6b628020cff19f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670756"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747402"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>DSL 라이브러리를 사용하여 DSL 간에 클래스 공유
 Visual Studio 시각화 및 모델링 SDK에서 다른 DSL으로 가져올 수 있는 불완전 한 DSL 정의를 만들 수 있습니다. 이렇게 하면 유사한 모델의 공통 요소를 지정할 수 있습니다.
@@ -61,7 +61,7 @@ Visual Studio 시각화 및 모델링 SDK에서 다른 DSL으로 가져올 수 �
 
    DSL 라이브러리는 다른 라이브러리를 가져올 수 있습니다. 라이브러리를 가져올 때 해당 가져오기가 DSL 탐색기에도 자동으로 표시 됩니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [도메인별 언어 정의 방법](../modeling/how-to-define-a-domain-specific-language.md)
 

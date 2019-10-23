@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7f772b74a42b9704f1fd77c731022ddb44774c68
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 19d341cba47e0a3d2259cc57d239c63420095347
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72430673"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737951"
 ---
 # <a name="enabling-debug-features-in-c-projects-d_debug"></a>프로젝트에서 C++ 디버그 기능 사용 (/D_DEBUG)
 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]에서 **_DEBUG** 기호를 정의하고 프로그램을 컴파일하면 어설션과 같은 디버깅 기능을 사용할 수 있습니다. **_DEBUG**는 다음 두 가지 방법 중 하나를 통해 정의할 수 있습니다.
@@ -42,6 +42,6 @@ ms.locfileid: "72430673"
 
   MFC 프로그램의 디버그 구성은 MFC 라이브러리의 디버그 버전과 링크해야 합니다. **_DEBUG** 및 **_UNICODE**와 같이 정의한 기호에 따라 MFC 헤더 파일에서 링크할 MFC 라이브러리 버전이 결정됩니다. 자세한 내용은 [MFC 라이브러리 버전](/cpp/mfc/mfc-library-versions)을 참조하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 - [네이티브 코드 디버그](../debugger/debugging-native-code.md)
 - [C++ 디버그 구성에 대한 프로젝트 설정](../debugger/project-settings-for-a-cpp-debug-configuration.md)

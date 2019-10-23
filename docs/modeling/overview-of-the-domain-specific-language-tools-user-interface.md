@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9a99eef692eb776908c6b8c4a32eb361092855a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8aacaa43dc9a95faee886440623fb4238abf9be5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658301"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748349"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>도메인별 언어 도구 사용자 인터페이스 개요
 Visual Studio에서 도메인 특정 언어 도구 (DSL 도구) 솔루션을 처음으로 열면 사용자 인터페이스가 다음 그림과 같이 표시 됩니다.
@@ -46,7 +46,7 @@ Visual Studio에서 도메인 특정 언어 도구 (DSL 도구) 솔루션을 처
 |모양 및 연결선|도형은 DSL 다이어그램에 모델 요소가 표시되는 방식을 지정하고, 커넥터는 관계를 표시하는 데 사용될 수 있는 DSL 다이어그램의 선을 지정합니다.<br /><br /> 도형이나 커넥터를 만들려면 다이어그램의 **다이어그램 요소** 측면으로 도구를 끕니다.|
 |모양 맵|도형 맵은 도메인 모델 다이어그램에 선으로 표시되며, 도형을 관련 도메인 클래스에 연결하거나 커넥터를 관련 도메인 관계에 연결합니다.|
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [도메인별 언어 도구 개요](../modeling/overview-of-domain-specific-language-tools.md)
 - [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

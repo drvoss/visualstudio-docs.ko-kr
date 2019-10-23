@@ -19,17 +19,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3490cab7c902dcdf1a7d0095eb69dd44de47a727
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 5f147acae956ad380c6e85984de29d5316394c0a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211119"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730251"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Visual Studio에서 C# 또는 Visual Basic 프로젝트 원격 디버깅
 다른 컴퓨터에 배포 된 Visual Studio 응용 프로그램을 디버깅 하려면 앱을 배포한 컴퓨터에 원격 도구를 설치 하 고 실행 하 고 Visual Studio에서 원격 컴퓨터에 연결 하도록 프로젝트를 구성한 후 앱을 실행 합니다.
 
-![원격 디버거 구성 요소] (../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
+![원격 디버거 구성 요소](../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
 
 UWP (유니버설 Windows 앱) 원격 디버깅에 대 한 자세한 내용은 [설치 된 앱 패키지 디버그](debug-installed-app-package.md)를 참조 하세요.
 
@@ -85,7 +85,7 @@ UWP (유니버설 Windows 앱) 원격 디버깅에 대 한 자세한 내용은 [
 
 8. 프로젝트를 빌드합니다.
 
-9. Visual Studio 컴퓨터의 **Debug** 폴더와 동일한 경로인 폴더를 원격 컴퓨터에 만듭니다(**\<source path>\MyWPF\MyWPF\bin\Debug**).
+9. Visual Studio 컴퓨터의 **Debug** 폴더와 동일한 경로인 폴더를 원격 컴퓨터에 만듭니다( **\<source path>\MyWPF\MyWPF\bin\Debug**).
 
 10. Visual Studio 컴퓨터에서 방금 빌드한 실행 파일을 원격 컴퓨터에서 새로 만든 폴더에 복사합니다.
 
@@ -102,7 +102,7 @@ UWP (유니버설 Windows 앱) 원격 디버깅에 대 한 자세한 내용은 [
 
 13. 메시지가 표시 되 면 네트워크 자격 증명을 입력 하 여 원격 컴퓨터에 연결 합니다.
 
-     필요한 자격 증명은 네트워크의 보안 구성에 따라 달라 집니다. 예를 들어 도메인 컴퓨터에서 도메인 이름 및 암호를 입력할 수 있습니다. 도메인이 아닌 컴퓨터에서 컴퓨터 이름 및 유효한 사용자 계정 이름 <strong>MJO-DL\name@something.com</strong>(예:)을 올바른 암호와 함께 입력할 수 있습니다.
+     필요한 자격 증명은 네트워크의 보안 구성에 따라 달라 집니다. 예를 들어 도메인 컴퓨터에서 도메인 이름 및 암호를 입력할 수 있습니다. 도메인이 아닌 컴퓨터에서 컴퓨터 이름 및 올바른 사용자 계정 이름 (예: <strong>MJO-DL\name@something.com</strong>)을 올바른 암호와 함께 입력할 수 있습니다.
 
      WPF 애플리케이션의 주 창이 원격 컴퓨터에서 열려 있다고 표시됩니다.
 
@@ -116,7 +116,7 @@ UWP (유니버설 Windows 앱) 원격 디버깅에 대 한 자세한 내용은 [
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
-## <a name="see-also"></a>관련 항목
+## <a name="see-also"></a>참조
 - [Visual Studio의 디버깅](../debugger/index.yml)
 - [디버거 소개](../debugger/debugger-feature-tour.md)
 - [원격 디버깅을 위해 Windows 방화벽 구성](../debugger/configure-the-windows-firewall-for-remote-debugging.md)

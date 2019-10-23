@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13f019fcb42d908d81d4e356f664772029141993
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 76db7caa14050c924706763214e92a6ee3d68975
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654143"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748496"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>아이콘 또는 데코레이터의 가시성 제어
 *데코레이터* 는 DSL (도메인별 언어)의 셰이프에 나타나는 아이콘이 나 텍스트 줄입니다. 모델의 속성 상태에 따라 데코레이터를 표시 하 고 사라지게 할 수 있습니다. 예를 들어 사람을 나타내는 도형에서 사용자의 성별, 자녀 수 등에 따라 다른 아이콘이 표시 될 수 있습니다.
@@ -103,7 +103,7 @@ ms.locfileid: "72654143"
 
 8. 솔루션을 다시 빌드하고 실행 합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [모양 및 연결선 정의](../modeling/defining-shapes-and-connectors.md)
 - [다이어그램에 배경 이미지 설정](../modeling/setting-a-background-image-on-a-diagram.md)

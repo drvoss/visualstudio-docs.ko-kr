@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_offsetinudt | Microsoft Docs'
+title: 'IDiaSymbol:: get_offsetInUdt | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14832698e186e23b33862ccb1c9f22f3792a6300
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f0eeffba743d7fae1d473c45eb350fbfc8bcd0b9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64793774"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739564"
 ---
-# <a name="idiasymbolgetoffsetinudt"></a>IDiaSymbol::get_offsetInUdt
-UDT에서 멤버의 사용자 정의 형식 (UDT)의 시작 부분 까지의 오프셋을 검색합니다.
+# <a name="idiasymbolget_offsetinudt"></a>IDiaSymbol::get_offsetInUdt
+UDT에서 멤버의 UDT (사용자 정의 형식) 시작 부분에 대 한 오프셋을 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,23 +33,23 @@ HRESULT get_offsetInUdt( 
 #### <a name="parameters"></a>매개 변수
  `pRetVal`
 
-[out] 기호 위치의 바이트 오프셋을 반환합니다.
+제한이 기호 위치의 오프셋 (바이트)을 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 `S_FALSE` 또는 오류 코드를 반환 합니다.
 
 > [!NOTE]
-> 반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.
+> @No__t_0의 반환 값은 해당 기호에 대해 속성을 사용할 수 없음을 의미 합니다.
 
-## <a name="remarks"></a>설명
- 이 함수는 최적화 된 빌드에 로컬 레코드에만 사용 됩니다.
+## <a name="remarks"></a>주의
+ 이 함수는 최적화 된 빌드의 로컬 레코드 에서만 사용 됩니다.
 
 ## <a name="requirements"></a>요구 사항
- 헤더: Dia2.h
+ 헤더: Dia2
 
- 라이브러리: diaguids.lib
+ 라이브러리: diaguids
 
- DLL: msdia100.dll
+ DLL: msdia100
 
-## <a name="see-also"></a>관련 항목
+## <a name="see-also"></a>참조
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

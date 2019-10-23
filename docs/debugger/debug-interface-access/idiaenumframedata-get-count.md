@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16b5be9ee787a2d4397d7384116cc9d7ac751d53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ec182918cccb42cf4d1c3cfdb3ae816aeef97a73
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838235"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744635"
 ---
-# <a name="idiaenumframedatagetcount"></a>IDiaEnumFrameData::get_Count
-프레임 데이터 요소의 수를 검색합니다.
+# <a name="idiaenumframedataget_count"></a>IDiaEnumFrameData::get_Count
+프레임 데이터 요소의 수를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,11 +33,11 @@ HRESULT get_Count ( 
 #### <a name="parameters"></a>매개 변수
  pRetVal
 
-[out] 프레임 데이터 요소의 수를 반환합니다.
+제한이 프레임 데이터 요소의 수를 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
 - [IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55b818940a8e2a779c7bbc0e17dec5cd891a2d88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 82c3f193c32b4e6a67bb0fe5540aa9d0020e77ea
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848113"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733463"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>방법: WPF 추적 정보 표시
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]에서는 WPF 애플리케이션에서 디버그 추적 정보를 받아서 **출력** 창에 표시할 수 있습니다. 디버그 추적 정보를 표시하려면 WPF 추적을 사용하도록 설정해야 합니다.
@@ -46,7 +46,7 @@ ms.locfileid: "62848113"
 
      드롭다운 목록 컨트롤이 **데이터 바인딩** 또는 클릭한 범주 옆의 설정 열에 나타납니다.
 
-8. 드롭다운 목록을 클릭 하 고 표시할 추적 정보의 유형 선택: **모든**, **중요 한**, **오류**를 **경고**, **정보**를 **Verbose**, 또는 **ActivityTracing**합니다.
+8. 드롭다운 목록을 클릭하고 표시할 추적 정보의 형식(**All**, **Critical**, **Error**, **Warning**, **Information**, **Verbose** 또는 **ActivityTracing**)을 선택합니다.
 
      **Critical**은 중요 이벤트만 추적하도록 설정합니다.
 
@@ -84,5 +84,5 @@ ms.locfileid: "62848113"
 
 8. **확인**을 클릭합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [WPF 디버그](../debugger/debugging-wpf.md)

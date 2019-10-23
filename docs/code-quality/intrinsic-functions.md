@@ -15,12 +15,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: b9236a5135d1339f46aeb6f2dd1a11658adf01c2
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 4824cba4de67ad199974f5844c7f220a6fd6accc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445710"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745905"
 ---
 # <a name="intrinsic-functions"></a>내장 함수
 SAL의 식은 파생 작업이 없는 식 인 경우C++ C/식일 수 있습니다. 예를 들어, + +,--, 및 함수 호출은 모두이 컨텍스트에서 부작용이 발생 합니다.  그러나 SAL은 SAL 식에서 사용할 수 있는 일부 함수 형식 개체 및 일부 예약 된 기호를 제공 합니다. 이러한 *함수를 내장 함수*라고 합니다.
@@ -46,7 +46,7 @@ SAL의 식은 파생 작업이 없는 식 인 경우C++ C/식일 수 있습니�
 |`strlen(param)`|`param`는 문자열에서 null 종결자를 포함 하지 않는 요소의 수입니다. 이 주석은 문자 배열에 사용 하도록 예약 되어 있으며 C 런타임 함수 [strlen ()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l)과 유사 합니다.|
 |`wcslen(param)`|`param`은 null 종결자까지 최대 (제외) 문자열에 있는 요소 수입니다. 이 주석은 와이드 문자 배열에 사용 하도록 예약 되어 있으며 C 런타임 함수 [wcslen ()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l)과 유사 합니다.|
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [C/C++ 코드 오류를 줄이기 위한 SAL 주석 사용](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [SAL 이해](../code-quality/understanding-sal.md)

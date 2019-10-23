@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23437983950efb8e86aaadd391e96b0e7d0c0a6c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 58b86452d9bfa00c9b107aa0b2748117c64a0384
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658220"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747477"
 ---
 # <a name="properties-of-domain-classes"></a>도메인 클래스의 속성
 도메인 클래스의 속성은 다음 표에 나와 있습니다. 도메인 클래스에 대 한 자세한 내용은 [모델, 클래스 및 관계 이해](../modeling/understanding-models-classes-and-relationships.md)를 참조 하세요. 이러한 속성을 사용 하는 방법에 대 한 자세한 내용은 [도메인별 언어 사용자 지정 및 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)을 참조 하세요.
@@ -34,6 +34,6 @@ ms.locfileid: "72658220"
 |표시 이름|이 도메인 클래스에 대해 생성 된 디자이너에 표시 되는 이름입니다.|\<none >|
 |Help Keyword|이 도메인 클래스에 대 한 F1 도움말을 인덱싱하는 데 사용 되는 선택적 키워드입니다.|\<none >|
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

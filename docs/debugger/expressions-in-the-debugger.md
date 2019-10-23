@@ -19,17 +19,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1134ac538487487834b754407a3cc1a90175c56b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6040988961e918c66ed08e7620607d100b2e07fe
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62849941"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736210"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio 디버거의 식
 Visual Studio 디버거에는 **간략한 조사식** 대화 상자, **조사식** 창 또는 **직접 실행** 창에 식을 입력할 때 사용되는 식 계산기가 포함되어 있습니다. 식 계산기는 **중단점** 창과 디버거의 여러 가지 다른 부분에서도 사용됩니다.
 
-다음 섹션에서는 Visual Studio에서 지 원하는 언어에 대 한 식 계산의 제한 사항을 설명 합니다.
+다음 섹션에서는 Visual Studio에서 지원 되는 언어에 대 한 식 계산의 제한 사항을 설명 합니다.
 
 ## <a name="f-expressions-are-not-supported"></a>F# 식은 지원되지 않습니다.
 F# 식은 인식할 수 없습니다. F# 코드를 디버그하는 경우 디버거 창 또는 대화 상자에 식을 입력하기 전에 식을 C# 구문으로 변환해야 합니다. F#에서 C#으로 식을 변환하는 경우 C#은 `==` 연산자를 사용하여 같은지 테스트하는 반면 F#은 단일 `=`를 사용한다는 것에 유의하세요.
@@ -121,7 +121,7 @@ int main()
 ## <a name="c---unsupported-expressions"></a>C# - 지원되지 않는 식
 
 ### <a name="dynamic-objects"></a>동적 개체
-디버거 식에서 정적으로 형식화된 변수를 동적으로 사용할 수 있습니다. 구현 하는 경우 개체가 <xref:System.Dynamic.IDynamicMetaObjectProvider> 동적 뷰 노드가 추가 됩니다는 조사식 창에서 계산 됩니다. 동적 뷰 노드에서는 개체 멤버가 표시되지만 멤버의 값을 편집할 수는 없습니다.
+디버거 식에서 정적으로 형식화된 변수를 동적으로 사용할 수 있습니다. @No__t_0를 구현 하는 개체가 조사식 창에서 계산 되 면 동적 뷰 노드가 추가 됩니다. 동적 뷰 노드에서는 개체 멤버가 표시되지만 멤버의 값을 편집할 수는 없습니다.
 
 동적 개체의 다음 기능은 지원되지 않습니다.
 
@@ -204,7 +204,7 @@ Import 별칭은 지원되지 않습니다.
 
 - `End Sub` 또는 `Module`과 같은 네임스페이스 또는 모듈 수준 키워드
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [C++의 형식 지정자](../debugger/format-specifiers-in-cpp.md)
 - [컨텍스트 연산자(C++)](../debugger/context-operator-cpp.md)
 - [C#의 형식 지정자](../debugger/format-specifiers-in-csharp.md)

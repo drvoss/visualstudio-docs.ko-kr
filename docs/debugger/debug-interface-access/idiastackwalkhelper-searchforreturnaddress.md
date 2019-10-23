@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::searchForReturnAddress | Microsoft Docs
+title: 'IDiaStackWalkHelper:: searchForReturnAddress | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87518257d9cab91976f69dd03c9026b0800a0680
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 548475f45c9f7b0ec90e305e146b9c5f7b4fb20d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62837903"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741353"
 ---
 # <a name="idiastackwalkhelpersearchforreturnaddress"></a>IDiaStackWalkHelper::searchForReturnAddress
-가장 가까운 함수 반환 주소를 지정한 스택 프레임을 검색합니다.
+지정 된 스택 프레임에서 가장 가까운 함수 반환 주소를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -34,15 +34,15 @@ HRESULT searchForReturnAddress( 
 #### <a name="parameters"></a>매개 변수
  `frame`
 
-[in] [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) 현재 스택 프레임을 나타내는 개체입니다.
+진행 현재 스택 프레임을 나타내는 [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) 개체입니다.
 
  `returnAddress`
 
-[out] 가장 가까운 함수 반환 주소를 반환합니다.
+제한이 가장 가까운 함수 반환 주소를 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

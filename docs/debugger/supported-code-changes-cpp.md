@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e38123be6b780aa9f37dc2b329ec36e3f18e793
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: b93c9cfa6767aea83d941cbc8684b27517c8f911
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72430574"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72729556"
 ---
 # <a name="supported-code-changes-c"></a>지원되는 코드 변경(C++)
 프로젝트에 대 한 C++ 편집 하며 계속 하기에서는 대부분의 코드 변경 유형을 처리 합니다. 그러나 일부 변경 내용은 프로그램을 실행하는 동안 적용할 수 없습니다. 이러한 변경 내용을 적용하려면 실행을 중지하고 새로운 버전의 코드를 빌드해야 합니다.
@@ -136,5 +136,5 @@ ms.locfileid: "72430574"
 ## <a name="BKMK_IDL_Attribute_Limitations"></a> IDL 특성 제한 사항
  편집하며 계속하기는 IDL(인터페이스 정의) 파일을 다시 생성하지 않습니다. 따라서 디버깅하는 동안 IDL 특성의 변경 내용이 반영되지 않습니다. IDL 특성을 변경한 결과를 확인하려면 디버깅을 중단하고 앱을 다시 빌드해야 합니다. 편집하며 계속하기는 IDL 특성이 변경되어도 오류나 경고를 생성하지 않습니다. 자세한 내용은 [IDL 특성](/cpp/windows/idl-attributes)을 참조하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 - [편집 하며 계속 하기C++()](../debugger/edit-and-continue-visual-cpp.md)

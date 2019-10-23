@@ -1,5 +1,5 @@
 ---
-title: SolutionFolder 요소 (Visual Studio 템플릿) | Microsoft Docs
+title: 솔루션 폴더 요소 (Visual Studio 템플릿) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,17 +14,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fd2ce948a3e18633f4c9875fa3ec0b064a91b35
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 09ef2e0ff20f8c9f7146e3fa71cbce07b169077f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331991"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72719992"
 ---
 # <a name="solutionfolder-element-visual-studio-templates"></a>SolutionFolder 요소(Visual Studio 템플릿)
 다중 프로젝트 템플릿의 프로젝트를 그룹화합니다.
 
- \<VSTemplate> \<TemplateContent> \<ProjectCollection> \<SolutionFolder>
+ \<VSTemplate > \<TemplateContent > \<ProjectCollection > \<SolutionFolder >
 
 ## <a name="syntax"></a>구문
 
@@ -57,8 +57,8 @@ ms.locfileid: "66331991"
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|다중 프로젝트 템플릿의 구성과 내용을 지정합니다.|
 |`SolutionFolder`|다중 프로젝트 템플릿의 프로젝트를 그룹화합니다.|
 
-## <a name="remarks"></a>설명
- 다중 프로젝트 템플릿은 두 개 이상의 프로젝트에 대한 컨테이너로 사용됩니다. `SolutionFolder` 요소는 템플릿의 프로젝트를 그룹으로 구성하는 데 사용됩니다. `SolutionFolder` 요소로 지정된 폴더는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]의 프로젝트에 솔루션 폴더로 만들어집니다. 다중 프로젝트 템플릿에 대 한 자세한 내용은 참조 하세요. [방법: 다중 프로젝트 템플릿 만들기](../ide/how-to-create-multi-project-templates.md)합니다.
+## <a name="remarks"></a>주의
+ 다중 프로젝트 템플릿은 두 개 이상의 프로젝트에 대한 컨테이너로 사용됩니다. `SolutionFolder` 요소는 템플릿의 프로젝트를 그룹으로 구성하는 데 사용됩니다. `SolutionFolder` 요소로 지정된 폴더는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]의 프로젝트에 솔루션 폴더로 만들어집니다. 다중 프로젝트 템플릿에 대 한 자세한 내용은 [방법: 다중 프로젝트 템플릿 만들기](../ide/how-to-create-multi-project-templates.md)를 참조 하세요.
 
 ## <a name="example"></a>예제
  이 예제에서는 `SolutionFolder` 요소를 사용하여 다중 프로젝트 템플릿을 `Math Classes` 및 `Graphics Classes`의 두 그룹으로 나눕니다. 이 템플릿에는 각 솔루션 폴더에 2개가 포함되는 4개의 프로젝트가 포함되어 있습니다.
@@ -95,7 +95,7 @@ ms.locfileid: "66331991"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
 - [방법: 다중 프로젝트 템플릿 만들기](../ide/how-to-create-multi-project-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumlinenumbers:: Item | Microsoft Docs'
+title: 'IDiaEnumLineNumbers:: Item | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b25825d4a0c7e3253e1461a163c8211c3e3bdcda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bba71efce68864b8737011ab7dda5cb8da3267c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829747"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744407"
 ---
 # <a name="idiaenumlinenumbersitem"></a>IDiaEnumLineNumbers::Item
-인덱스를 사용 하 여 줄 번호를 검색합니다.
+인덱스를 통해 줄 번호를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -34,15 +34,15 @@ HRESULT Item ( 
 #### <a name="parameters"></a>매개 변수
  인덱스입니다.
 
-[in] 인덱스를 [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) 검색 된 개체입니다. 인덱스는 0에서 범위 `count`-1로, 여기서 `count` 반환한를 [idiaenumlinenumbers:: Get_count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md) 메서드.
+진행 검색할 [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) 개체의 인덱스입니다. 인덱스의 범위는 0 ~ `count`-1입니다. 여기서 `count`는 [IDiaEnumLineNumbers:: get_Count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md) 메서드에서 반환 됩니다.
 
  lineNumber
 
-[out] 반환 된 [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) 원하는 줄 번호를 나타내는 개체입니다.
+제한이 원하는 줄 번호를 나타내는 [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) 개체를 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

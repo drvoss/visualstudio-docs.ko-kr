@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc7d4ef8e281cd56b7a585d516cd5d48028a00f8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: def432c5c2861716b4b3fb6e2f93f20a93a54a28
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653699"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748534"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>계산된 스토리지 속성 및 사용자 지정 스토리지 속성
 DSL (도메인별 언어)의 모든 도메인 속성은 다이어그램과 언어 탐색기에서 사용자에 게 표시 될 수 있으며 프로그램 코드에서 액세스할 수 있습니다. 그러나 속성은 값이 저장 되는 방식에 따라 달라 집니다.
@@ -107,7 +107,7 @@ void SetAgeValue(int value)
 
  트랜잭션에 대 한 자세한 내용은 [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)를 참조 하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [도메인 속성의 속성](../modeling/properties-of-domain-properties.md)

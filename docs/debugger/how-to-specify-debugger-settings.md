@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4616bd95c0461e2318a4b0811f2f12c360a9aeae
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 66e9d0fb5b7d63402c9add3ddf06b3997bc0d7d9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714969"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732719"
 ---
 # <a name="how-to-specify-debugger-settings"></a>방법: 디버거 설정 지정
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서는 변수 표시 방법, 특정 경고 표시 여부, 중단점 설정 방법, 프로그램 중단이 실행 프로그램에 미치는 영향 등을 포함하여 디버거 작동에 대한 여러 가지 설정을 지정할 수 있습니다. 디버거 설정은 **옵션** 대화 상자에서 지정합니다.
@@ -41,7 +41,7 @@ ms.locfileid: "66714969"
 
 4. 원하는 옵션을 선택하거나 해제합니다. 옵션에 대한 도움말을 보려면 F1 키를 누르십시오.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [옵션 대화 상자, 디버깅, 일반](../debugger/general-debugging-options-dialog-box.md)
 - [옵션 대화 상자, 디버깅, 편집하며 계속하기](https://msdn.microsoft.com/library/bcew296c.aspx)
 - [디버거 설정 및 준비](../debugger/debugger-settings-and-preparation.md)

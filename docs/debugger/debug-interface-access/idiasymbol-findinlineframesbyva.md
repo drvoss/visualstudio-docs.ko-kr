@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc91ad3a2e4e89a154295bf41baa31e59c4d65e4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f2ec0280f7eab6d5dd44c4577cfde2cd3846e5fd
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62831670"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741133"
 ---
 # <a name="idiasymbolfindinlineframesbyva"></a>IDiaSymbol::findInlineFramesByVA
-클라이언트가 지정된 된 가상 주소 (VA)에 있는 인라인 프레임의 모든 반복 하는 데 사용 하는 열거형을 검색 합니다.
+클라이언트에서 지정 된 VA (가상 주소)의 모든 인라인 프레임을 반복할 수 있도록 하는 열거형을 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -32,16 +32,16 @@ HRESULT findInlineFramesByVA ( 
 #### <a name="parameters"></a>매개 변수
  `va`
 
-[in] VA.로 주소를 지정합니다.
+진행 주소를 VA로 지정 합니다.
 
  `ppResult`
 
-[out] 보유 한 `IDiaEnumSymbols` 검색 되는 프레임의 목록을 포함 하는 개체입니다.
+제한이 검색 되는 프레임 목록을 포함 하는 `IDiaEnumSymbols` 개체를 보유 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md)

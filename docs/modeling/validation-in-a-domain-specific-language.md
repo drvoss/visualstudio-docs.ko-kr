@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9737c9f02f9231aae5d20bd22321024fcfd7fd69
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fb059a9175c61c238abf0881cd96e4179fcf6f65
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663726"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748176"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>도메인별 언어에서 유효성 검사
 DSL(Domain-Specific Language) 작성자는 사용자가 만든 모델이 적절한지를 확인하는 유효성 검사 제약 조건을 정의할 수 있습니다. 예를 들어 DSL에서 여러 세대를 포함하는 가족 구성도 그리기를 허용하는 경우 자녀의 생년월일을 부모의 생년월일 이후로 지정하도록 하는 제약 조건을 작성할 수 있습니다.
@@ -334,7 +334,7 @@ validationController.ValidateCustom
 > [!WARNING]
 > 변경 내용이 조정되었거나 롤백되었음을 사용자에게 알려야 합니다. 예를 들어 `System.Windows.Forms.MessageBox.Show("message").`를 사용합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [이벤트 처리기로 모델 외부의 변경 내용 전파](../modeling/event-handlers-propagate-changes-outside-the-model.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_targetoffset | Microsoft Docs'
+title: 'IDiaSymbol:: get_targetOffset | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a356eafb2afbd63613c0fe6be6b794822e5f91e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3e7cb1ccc2a3b0208bf34ef06a12324f38913c45
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64796532"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739213"
 ---
-# <a name="idiasymbolgettargetoffset"></a>IDiaSymbol::get_targetOffset
-썽크 대상 오프셋된 부분을 검색합니다.
+# <a name="idiasymbolget_targetoffset"></a>IDiaSymbol::get_targetOffset
+썽크 대상의 오프셋 섹션을 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,13 +33,13 @@ HRESULT get_targetOffset ( 
 #### <a name="parameters"></a>매개 변수
  `pRetVal`
 
-[out] 썽크 대상 주소의 오프셋된 부분을 반환합니다.
+제한이 썽크 대상 주소의 오프셋 부분을 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 `S_FALSE` 또는 오류 코드를 반환 합니다.
 
 > [!NOTE]
-> 반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.
+> @No__t_0의 반환 값은 해당 기호에 대해 속성을 사용할 수 없음을 의미 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

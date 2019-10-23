@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_countLiveRanges | Microsoft Docs
+title: 'IDiaSymbol:: get_countLiveRanges | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8cd86edee72f3d25763fd3d19dd9c789e152ed6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 990673afdb01b1471ad75d65036610c486e735c4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837465"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740750"
 ---
-# <a name="idiasymbolgetcountliveranges"></a>IDiaSymbol::get_countLiveRanges
-로컬 기호를 사용 하 여 연결 하는 유효한 주소 범위 수를 검색 합니다.
+# <a name="idiasymbolget_countliveranges"></a>IDiaSymbol::get_countLiveRanges
+로컬 기호와 연결 된 유효한 주소 범위 수를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,17 +33,17 @@ HRESULT get_countLiveRanges ( 
 #### <a name="parameters"></a>매개 변수
  `count`
 
-[out] 주소 범위 수를 반환합니다.
+제한이 주소 범위 수를 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
- 헤더: Dia2.h
+ 헤더: Dia2
 
- 라이브러리: diaguids.lib
+ 라이브러리: diaguids
 
- DLL: msdia100.dll
+ DLL: msdia100
 
-## <a name="see-also"></a>관련 항목
+## <a name="see-also"></a>참조
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54e573cde9b2317be39f18e3953ebeaedf2717e3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: c51a946ed6b78220846e779f9849d3b8ae9fd20d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808996"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739183"
 ---
-# <a name="idiasymbolgettargetrelativevirtualaddress"></a>IDiaSymbol::get_targetRelativeVirtualAddress
-썽크 대상의 상대 가상 주소 RVA ()를 검색합니다.
+# <a name="idiasymbolget_targetrelativevirtualaddress"></a>IDiaSymbol::get_targetRelativeVirtualAddress
+썽크 대상의 RVA (상대 가상 주소)를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,19 +33,19 @@ HRESULT get_targetRelativeVirtualAddress ( 
 #### <a name="parameters"></a>매개 변수
  `pRetVal`
 
-[out] 썽크 대상의 RVA를 반환합니다.
+제한이 썽크 대상의 RVA를 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 `S_FALSE` 또는 오류 코드를 반환 합니다.
 
 > [!NOTE]
-> 반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.
+> @No__t_0의 반환 값은 해당 기호에 대해 속성을 사용할 수 없음을 의미 합니다.
 
-## <a name="remarks"></a>설명
- 이 속성은 유효한 경우에만 기호는 [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md) 의 값 `SymTagThunk`합니다.
+## <a name="remarks"></a>주의
+ 이 속성은 기호가 `SymTagThunk`의 [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md) 값인 경우에만 유효 합니다.
 
- "썽크"은 (플랫 주소 공간이 라고도 함)는 32 비트 메모리 주소 공간 및 16 비트 주소 공간 (분할 된 주소 공간 이라고 함) 간에 변환 되는 코드입니다.
+ "썽크"는 32 비트 메모리 주소 공간 (플랫 주소 공간이 라고도 함)과 16 비트 주소 공간 (분할 된 주소 공간 이라고 함) 간에 변환 되는 코드 조각입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md)

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14d4ac95aae860e0750af66aec6adb2969434f11
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 92cf53ed499318d60c8da5147685e3f0f340e404
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211053"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736233"
 ---
 # <a name="executable-for-debugging-session-dialog-box"></a>디버깅 세션에 사용할 실행 파일 대화 상자
 
@@ -37,7 +37,7 @@ ms.locfileid: "71211053"
 
  입력 한 후에는 이러한 설정이 프로젝트 속성 페이지에 저장 되므로 후속 디버깅 세션에 대해 다시 입력할 필요가 없습니다. 설정을 변경해야 하는 경우에는 속성 페이지를 열고 값을 변경할 수 있습니다. 디버깅 세션의 실행 파일 지정에 대한 자세한 내용은 [DLL 디버깅](../debugger/how-to-debug-from-a-dll-project.md)을 참조하세요.
 
-## <a name="see-also"></a>관련 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 디버깅](../debugger/index.yml)
 - [디버거 소개](../debugger/debugger-feature-tour.md)

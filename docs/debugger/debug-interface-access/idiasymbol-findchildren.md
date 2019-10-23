@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Findchildren | Microsoft Docs'
+title: 'IDiaSymbol:: findChildren | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5199be7307fdaa607f5aa6a5f554d9fcc82f452d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f3c62271f6324e50a68de393cfa668c69ba4a935
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837825"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741296"
 ---
 # <a name="idiasymbolfindchildren"></a>IDiaSymbol::findChildren
-기호의 자식을 검색합니다.
+기호의 자식을 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -36,27 +36,27 @@ HRESULT findChildren ( 
 #### <a name="parameters"></a>매개 변수
  `symtag`
 
-[in] 에 정의 된 대로 검색 되는 자식의 기호 태그를 지정 합니다 [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md)합니다. 로 `SymTagNull` 검색할 모든 자식에 대 한 합니다.
+진행 [SymTagEnum 열거](../../debugger/debug-interface-access/symtagenum.md)에 정의 된 대로 검색할 자식의 기호 태그를 지정 합니다. 모든 자식 항목을 검색 하려면 `SymTagNull`로 설정 합니다.
 
  `name`
 
-[in] 검색할 자식 컨트롤의 이름을 지정 합니다. 로 `NULL` 검색할 모든 자식에 대 한 합니다.
+진행 검색할 자식의 이름을 지정 합니다. 모든 자식 항목을 검색 하려면 `NULL`로 설정 합니다.
 
  `compareFlags`
 
-[in] 이름 일치에 적용할 비교 옵션을 지정 합니다. 값을 [NameSearchOptions 열거형](../../debugger/debug-interface-access/namesearchoptions.md) 열거형 따로 또는 함께 사용할 수 있습니다.
+진행 이름 일치에 적용 되는 비교 옵션을 지정 합니다. [Namesearchoptions 열거형](../../debugger/debug-interface-access/namesearchoptions.md) 열거형의 값은 단독으로 사용 하거나 함께 사용할 수 있습니다.
 
  `ppResult`
 
-[out] 반환 된 [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) 자식 기호 목록을 포함 하는 개체 검색 합니다.
+제한이 검색 된 자식 기호의 목록을 포함 하는 [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) 개체를 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 반환 `S_OK` 기호의 자식이 하나 이상 찾을 하거나 반환 하는 경우 `S_FALSE` 자식이 없는 경우; 그렇지 않으면 오류 코드를 반환 합니다.
+ 기호의 자식이 하나 이상 발견 되 면 `S_OK`을 반환 하 고, 자식 항목이 없으면 `S_FALSE`을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
-## <a name="remarks"></a>설명
- 이 메서드는 호출 하 여 [idiasession:: Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md) 첫 번째 매개 변수로이 기호를 사용 하 여 메서드.
+## <a name="remarks"></a>주의
+ 이 메서드는이 기호를 첫 번째 매개 변수로 사용 하 여 [IDiaSession:: findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md) 메서드를 호출 하는 것과 동일 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

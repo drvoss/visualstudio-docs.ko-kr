@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsymbols:: Item | Microsoft Docs'
+title: 'IDiaEnumSymbols:: Item | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91c230f641612c099495c54db67da9c7e755cbdc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 12766fe52f7f515b7ca411b17d58117e4e56cc9f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829445"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743942"
 ---
 # <a name="idiaenumsymbolsitem"></a>IDiaEnumSymbols::Item
-인덱스를 사용 하 여 기호를 검색합니다.
+인덱스를 사용 하 여 기호를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -34,15 +34,15 @@ HRESULT Item ( 
 #### <a name="parameters"></a>매개 변수
  인덱스입니다.
 
-[in] 인덱스를 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 검색 된 개체입니다. 인덱스는 0에서 범위 `count`-1로, 여기서 `count` 반환한를 [idiaenumsymbols:: Get_count](../../debugger/debug-interface-access/idiaenumsymbols-get-count.md) 메서드.
+진행 검색할 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 개체의 인덱스입니다. 인덱스의 범위는 0 ~ `count`-1입니다. 여기서 `count`는 [IDiaEnumSymbols:: get_Count](../../debugger/debug-interface-access/idiaenumsymbols-get-count.md) 메서드에서 반환 됩니다.
 
  기호
 
-[out] 반환 된 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 원하는 기호를 나타내는 개체입니다.
+제한이 원하는 기호를 나타내는 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 개체를 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

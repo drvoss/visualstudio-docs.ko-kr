@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3d75193368188efc660391d1e80c562ed881324b
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 196ba13b95245b8c42e6d946572665792f71346d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72578016"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745633"
 ---
 # <a name="create-custom-views-of-managed-objects-c-visual-basic-f-ccli"></a>관리 되는 개체의 사용자 지정C#뷰 만들기 ( F#, C++Visual Basic,,/cli)
 Visual Studio에서 디버거 변수 창에 데이터 형식이 표시되는 방식을 사용자 지정할 수 있습니다.
@@ -46,7 +46,7 @@ Visual Studio에서 디버거 변수 창에 데이터 형식이 표시되는 방
 > [!NOTE]
 > 코드의 경우 [디버거에서 개체의 C++ 사용자 지정 뷰 만들기](/visualstudio/debugger/create-custom-views-of-native-objects)에 설명 된 대로 Natvis 프레임 워크를 사용 하 여 사용자 지정 데이터 형식 확장을 추가할 수 있습니다. C++
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [DebuggerDisplay 특성을 사용 하 여 표시할 내용을 디버거에 알립니다.](../debugger/using-the-debuggerdisplay-attribute.md)
 - [DebuggerTypeProxy 특성을 사용 하 여 표시할 형식을 디버거에 알립니다.](../debugger/using-debuggertypeproxy-attribute.md)

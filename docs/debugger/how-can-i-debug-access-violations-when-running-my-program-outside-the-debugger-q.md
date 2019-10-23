@@ -1,5 +1,5 @@
 ---
-title: 디버거 외부에서 앱을 실행 하는 경우 액세스 위반 디버깅
+title: 디버거 외부에서 앱을 실행할 때 액세스 위반 디버그
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d42dd206117885a23a6c1c15c712be4dc4cd8fe2
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: f5009bae2d7679081e29ae8f46d72455beac7e11
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177668"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734577"
 ---
 # <a name="how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger"></a>디버거 외부에서 프로그램을 실행하는 경우 액세스 위반을 어떻게 디버깅할 수 있습니까?
 
@@ -34,6 +34,6 @@ ms.locfileid: "66177668"
 ## <a name="solution"></a>솔루션
  [Just-In-Time 디버깅](../debugger/just-in-time-debugging-in-visual-studio.md) 옵션을 설정하고 액세스 위반이 발생할 때까지 프로그램을 독립 실행형으로 실행합니다. 그런 다음, **액세스 위반** 대화 상자에서 **취소**를 클릭하여 디버거를 시작할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [네이티브 코드 디버그 FAQ](../debugger/debugging-native-code-faqs.md)
 - [네이티브 코드 디버그](../debugger/debugging-native-code.md)

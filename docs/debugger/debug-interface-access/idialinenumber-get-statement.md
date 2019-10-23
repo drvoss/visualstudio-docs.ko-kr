@@ -1,5 +1,5 @@
 ---
-title: 'Idialinenumber:: Get_statement | Microsoft Docs'
+title: 'IDiaLineNumber:: get_statement | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 397873a65176024327f371e9727b15984cd7d03f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0a37052944f74e36b488541074a0033f5b8aca9e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828395"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743126"
 ---
-# <a name="idialinenumbergetstatement"></a>IDiaLineNumber::get_statement
-이 줄 정보 프로그램 소스에 식 대신 문을 시작 부분을 설명 하는지 나타내는 플래그를 검색 합니다.
+# <a name="idialinenumberget_statement"></a>IDiaLineNumber::get_statement
+프로그램 소스에서이 줄 정보가 식이 아니라 문의 시작을 설명 함을 나타내는 플래그를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,13 +33,13 @@ HRESULT get_statement ( 
 #### <a name="parameters"></a>매개 변수
  `pRetVal`
 
-[out] 반환 `TRUE` 이 줄 정보 프로그램 원본에서 문의 시작 부분에 대해 설명 하는 경우.
+제한이 이 줄 정보가 프로그램 소스에 있는 문의 시작 부분을 설명 하는 경우 `TRUE`를 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.
+ 성공하면 `S_OK`를 반환합니다. 이 속성이 지원 되지 않는 경우 `S_FALSE`를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.
 
-## <a name="remarks"></a>설명
- 문을 여러 줄으로 나누어 입력할 수 있습니다. 이 메서드는 연결 된 줄 번호를 이러한 여러 줄 문의 시작을 표시 하는 경우를 나타냅니다.
+## <a name="remarks"></a>주의
+ 문은 여러 줄에 걸쳐 있을 수 있습니다. 이 메서드는 연결 된 줄 번호가 이러한 여러 줄 문의 시작을 표시 하는지 여부를 나타냅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

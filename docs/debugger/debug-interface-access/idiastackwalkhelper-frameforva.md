@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::frameForVA | Microsoft Docs
+title: 'IDiaStackWalkHelper:: frameForVA | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03607cec9b314f4f6e329a3150d097f8a2186705
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 28d9a7762cac1a63b40fa34118d4076403120763
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838030"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741422"
 ---
 # <a name="idiastackwalkhelperframeforva"></a>IDiaStackWalkHelper::frameForVA
-지정된 된 가상 주소를 포함 하는 스택 프레임을 검색 합니다.
+지정 된 가상 주소를 포함 하는 스택 프레임을 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -34,15 +34,15 @@ HRESULT frameForVA( 
 #### <a name="parameters"></a>매개 변수
  `va`
 
-[in] 프레임 데이터에 대 한 가상 주소입니다.
+진행 프레임 데이터의 가상 주소입니다.
 
  `ppFrame`
 
-[out] [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) 지정된 된 주소에서 스택 프레임을 나타내는 개체입니다.
+제한이 지정 된 주소의 스택 프레임을 나타내는 [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) 개체입니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b6856517a680809ccc802c02dc880b6349eadc5
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: e328e85f58e69ef1d579fd979f629c59b90caf3e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535952"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730512"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Visual Studio 디버거의 의사 변수
 의사 변수는 변수 창이나 **간략한 조사식** 대화 상자에서 특정 정보를 표시하는 데 사용되는 용어입니다. 일반적인 변수와 같은 방식으로 의사 변수를 입력할 수 있습니다. 하지만 의사 변수는 변수가 아니며 프로그램에서 변수 이름에 해당되지 않습니다.
@@ -67,6 +67,6 @@ ms.locfileid: "72535952"
 |`$` *N* `#`|개체 ID가 *N*인 개체를 표시합니다.|
 |`$dynamic`|`IDynamicMetaObjectProvider`. 인터페이스를 구현한 개체에 대해 특별한 **동적 뷰** 노드를 표시합니다. 구문은 `$dynamic,` *개체*입니다. 이 기능은 .NET Framework 버전 4 이상을 사용 하는 코드에만 적용 됩니다.|
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 - [조사식 및 간략한 조사식 창](../debugger/watch-and-quickwatch-windows.md)
 - [변수 창](../debugger/debugger-windows.md)

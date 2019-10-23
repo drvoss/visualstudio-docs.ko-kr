@@ -14,17 +14,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c211f45423ce0f2166bbf8aa189d35ab386a7fee
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2405e46a7f1ed8d2e4ae33b1b58ec44e06aa7d3b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331976"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720097"
 ---
 # <a name="showbydefault-element-visual-studio-templates"></a>ShowByDefault 요소 (Visual Studio 템플릿)
-하는 경우 `false`, 템플릿을 표시 됨을 지정 합니다. 지정 된 [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)합니다.
+@No__t_0 경우 템플릿이 지정 된 템플릿 [groupid](../extensibility/templategroupid-element-visual-studio-templates.md)에만 표시 되도록 지정 합니다.
 
- \<VSTemplate> \<TemplateData> \<ShowByDefault>
+ \<VSTemplate > \<TemplateData > \<ShowByDefault >
 
 ## <a name="syntax"></a>구문
 
@@ -36,10 +36,10 @@ ms.locfileid: "66331976"
  다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
 
 ### <a name="attributes"></a>특성
- 없음
+ 없음.
 
 ### <a name="child-elements"></a>자식 요소
- 없음
+ 없음.
 
 ### <a name="parent-elements"></a>부모 요소
 
@@ -52,8 +52,8 @@ ms.locfileid: "66331976"
 
  텍스트는 `true` 또는 `false`여야 합니다. true인 경우 템플릿이 모든 프로젝트 형식에 대해 표시되도록 지정합니다. false인 경우 템플릿이 지정된 `TemplateGroupID`에만 표시되도록 지정합니다.
 
-## <a name="remarks"></a>설명
- `ShowByDefault`는 선택적 요소입니다. 기본값은 `true`입니다.
+## <a name="remarks"></a>주의
+ `ShowByDefault`는 선택적 요소입니다. 기본값은 `true`여야 합니다.
 
 ## <a name="example"></a>예제
  다음 예제에서는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 템플릿의 메타데이터를 보여 줍니다.
@@ -83,7 +83,7 @@ ms.locfileid: "66331976"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
 - [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [TemplateGroupID 요소(Visual Studio 템플릿)](../extensibility/templategroupid-element-visual-studio-templates.md)

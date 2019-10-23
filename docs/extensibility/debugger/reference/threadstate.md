@@ -15,15 +15,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 50f487b3d44fc1b871b00348ec28693b36c49685
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d86baeeab046a7e605979d3af2d6329998f796ba
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316137"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72727505"
 ---
 # <a name="threadstate"></a>THREADSTATE
-스레드의 상태를 지정합니다.
+스레드의 상태를 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -53,27 +53,27 @@ public enum enum_THREADSTATE { 
  스레드가 실행 중임을 나타냅니다.
 
  `THREADSTATE_STOPPED`\
- 스레드가 중단점으로 인해 중지 되었음을 나타냅니다.
+ 중단점 때문에 스레드가 중지 되었음을 나타냅니다.
 
  `THREADSTATE_FRESH`\
- 스레드를 만든 했지만 코드가 아직 실행 되지 않음을 나타냅니다.
+ 스레드가 만들어졌지만 아직 코드를 실행 하 고 있지 않음을 나타냅니다.
 
  `THREADSTATE_DEAD`\
- 스레드 소멸 임을 나타냅니다.
+ 스레드가 비활성 상태임을 나타냅니다.
 
  `THREADSTATE_FROZEN`\
- 스레드를 고정 나타냅니다 (없습니다 실행을 수행할 수 있습니다.).
+ 스레드가 고정 됨을 나타냅니다 (실행을 수행할 수 없음).
 
-## <a name="remarks"></a>설명
- 에 사용 되는 합니다 `dwThreadState` 필드를 [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) 구조입니다.
+## <a name="remarks"></a>주의
+ [Threadproperties](../../../extensibility/debugger/reference/threadproperties.md) 구조의 `dwThreadState` 필드에 사용 됩니다.
 
 ## <a name="requirements"></a>요구 사항
- 헤더: msdbg.h
+ 헤더: msdbg .h
 
- 네임스페이스: Microsoft.VisualStudio.Debugger.Interop
+ 네임 스페이스: VisualStudio
 
- 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
+ 어셈블리: VisualStudio입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [열거형](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)

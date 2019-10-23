@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f16040408def290536ac5dadfec77ade9577c821
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: dc2abb054a0e09d0715e708cc4d1d6fcbed476e0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72568914"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728668"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>DebuggerDisplay 특성을 사용 하 여 표시할 내용 (C#, Visual Basic, F#, C++/cli)을 디버거에 알립니다.
 
@@ -179,7 +179,7 @@ class MyHashtable
 }
 ```
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [DebuggerTypeProxy 특성 사용](../debugger/using-debuggertypeproxy-attribute.md)
 - [관리 개체의 사용자 지정 뷰 만들기](../debugger/create-custom-views-of-managed-objects.md)

@@ -1,5 +1,5 @@
 ---
-title: 함수를 여러 번 호출 하는 경우 어떤 호출이 실패 찾기 | Microsoft Docs
+title: 함수를 여러 번 호출할 때 실패 한 호출 찾기 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa6fb9613df5f5bffb50c9a161eaa0a0254f26dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4d054c60c45980b3d08b09987229febb99593090
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901003"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728042"
 ---
 # <a name="when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed"></a>함수를 수백 번 호출하는 경우 어떤 호출이 실패했는지 어떻게 알 수 있습니까?
 ## <a name="problem-description"></a>문제 설명
@@ -48,7 +48,7 @@ CnvtV(int) (no condition) when hit count is equal to 1000 (currently 101)
 
  이제 함수가 101번째 호출에서 실패한다는 것을 알 수 있습니다. 중단점에서 적중 횟수를 101로 설정하고 다시 프로그램을 실행하면 실패 원인이 된 `CnvtV` 함수가 호출될 때 프로그램이 중지됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [네이티브 코드 디버그 FAQ](../debugger/debugging-native-code-faqs.md)
 - [중단점 설정](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)
 - [네이티브 코드 디버그](../debugger/debugging-native-code.md)

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5326ef7aa66de124f3be5db96cf156b57cb339d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 849862f98fb90cdd742e1794ecb57c35a9aaca73
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563652"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745591"
 ---
 # <a name="debug-64-bit-applications"></a>64비트 애플리케이션 디버그
 로컬 컴퓨터나 원격 컴퓨터에서 실행되는 64비트 애플리케이션을 디버깅할 수 있습니다.
@@ -37,14 +37,14 @@ ms.locfileid: "62563652"
 
 1. Visual Studio 솔루션(예: C# 콘솔 애플리케이션)을 만듭니다.
 
-2. Configuration Manager를 사용하여 구성을 64비트로 설정합니다. 자세한 내용은 [방법: 플랫폼을 대상으로 한 프로젝트 구성](../ide/how-to-configure-projects-to-target-platforms.md)을 참조하세요.
+2. Configuration Manager를 사용하여 구성을 64비트로 설정합니다. 자세한 내용은 [How to: Configure Projects to Target Platforms](../ide/how-to-configure-projects-to-target-platforms.md)을 참조하세요.
 
 3. 이때 64비트 버전의 원격 디버거(msvsmon.exe)가 시작됩니다. 64비트 구성을 사용하는 솔루션이 열려 있으면 디버거가 실행됩니다.
 
 4. 디버깅을 시작합니다. 사용자 환경은 32비트 구성과 동일합니다. 오류가 발생할 경우 아래의 문제 해결 섹션을 참조하세요.
 
 ## <a name="troubleshooting-64-bit-debugging"></a>64비트 디버깅 문제 해결
- 오류가 표시 될 수 있습니다. "64 비트 디버깅 작업이 예상 보다 오래 걸립니다." 이 경우 Visual Studio에서 64비트 버전의 msvsmon.exe로 요청을 보냈으며, 해당 요청의 결과가 반환되는 데 오랜 시간이 걸렸습니다.
+ "64비트 디버깅 작업이 예상보다 오래 걸리고 있습니다."라는 오류가 표시될 수 있습니다. 이 경우 Visual Studio에서 64비트 버전의 msvsmon.exe로 요청을 보냈으며, 해당 요청의 결과가 반환되는 데 오랜 시간이 걸렸습니다.
 
  이 오류의 주요 원인으로는 다음 두 가지가 있습니다.
 
@@ -52,7 +52,7 @@ ms.locfileid: "62563652"
 
 - Visual Studio에서 중단 또는 성능 문제가 발생합니다. 문제가 주기적으로 발생하는 경우 Visual Studio(devenv.exe) 및 작업자 프로세스(msvsmon.exe)의 덤프를 수집하여 Microsoft로 보낼 수 있습니다. 문제를 신고하는 방법에 대한 자세한 내용은 [How to Report a Problem with Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md)항목을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [64비트 애플리케이션](https://docs.microsoft.com/dotnet/framework/64-bit-apps)
 - [64비트용 프로그램 구성](/cpp/build/configuring-programs-for-64-bit-visual-cpp)

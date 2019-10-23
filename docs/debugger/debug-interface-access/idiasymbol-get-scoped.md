@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_scoped | Microsoft Docs'
+title: 'IDiaSymbol:: get_scoped | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c9c4864f09c4e66bada76f9d9b058c7d3660c96
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 862fa147b5f157760a93631d0e2c8addbd3bd1f2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64790279"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739367"
 ---
-# <a name="idiasymbolgetscoped"></a>IDiaSymbol::get_scoped
-비전역 어휘 범위에서 사용자 정의 데이터 형식에 표시 되는지 여부를 지정 하는 플래그를 검색 합니다.
+# <a name="idiasymbolget_scoped"></a>IDiaSymbol::get_scoped
+사용자 정의 데이터 형식이 전역이 아닌 어휘 범위에 표시 되는지 여부를 지정 하는 플래그를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,13 +33,13 @@ HRESULT get_scoped ( 
 #### <a name="parameters"></a>매개 변수
  `pRetVal`
 
-[out] 반환 `TRUE` 사용자 정의 데이터 형식에는 비 글로벌 어휘 범위에 있으면 반환이 고, 그렇지 `FALSE`합니다.
+제한이 사용자 정의 데이터 형식이 전역이 아닌 어휘 범위에 표시 되는 경우 `TRUE`를 반환 합니다. 그렇지 않으면 `FALSE`을 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 `S_FALSE` 또는 오류 코드를 반환 합니다.
 
 > [!NOTE]
-> 반환 값이 `S_FALSE` 속성 기호에 사용할 수 없다는 것을 의미 합니다.
+> @No__t_0의 반환 값은 해당 속성을 기호에 사용할 수 없음을 의미 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

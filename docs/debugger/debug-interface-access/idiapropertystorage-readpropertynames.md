@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::ReadPropertyNames | Microsoft Docs
+title: 'IDiaPropertyStorage:: ReadPropertyNames | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7492e0eee0523fd102ecd057d075f2672bf3b25b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f554485ae56a9d5f190c749879545165d299531c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839578"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742863"
 ---
 # <a name="idiapropertystoragereadpropertynames"></a>IDiaPropertyStorage::ReadPropertyNames
-문자열 이름에 해당 하는 검색 속성 식별자를 지정 합니다.
+지정 된 속성 식별자에 해당 하는 문자열 이름을 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -35,21 +35,21 @@ HRESULT ReadPropertyNames (
 #### <a name="parameters"></a>매개 변수
  `cpropid`
 
-[in] 속성 id 수가 `rgpropid`합니다.
+진행 @No__t_0의 속성 id 수입니다.
 
  `rgpropid`
 
-[in] 이름을 가져올 속성 id의 배열 (`PROPID` 으로 WTypes.h에 정의 된 한 `ULONG`).
+진행 이름을 가져올 속성 id의 배열입니다 (`PROPID`은 WTypes. h에서 `ULONG`로 정의 됨).
 
  `rglpwstrName`
 
-[out에서] 지정 된 속성 id에 대 한 속성 이름의 배열입니다. 배열 속성 이름의 요청된 수를 보유 하는 미리 할당 해야 하며 이상을 보유할 수 있어야 `cpropid``BSTR` 문자열입니다.
+[in, out] 지정 된 속성 id의 속성 이름 배열입니다. 요청 된 수의 속성 이름을 보유 하기 위해 배열을 미리 할당 해야 하며 적어도 `cpropid``BSTR` 문자열을 보유할 수 있어야 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`; 그렇지 않으면 오류 코드를 반환 합니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
-## <a name="remarks"></a>설명
- 반환 된 속성 이름을 해제 해야 합니다 (호출 하 여는 `SysFreeString` 함수) 더 이상 필요한 경우.
+## <a name="remarks"></a>주의
+ 반환 된 속성 이름은 더 이상 필요 하지 않은 경우 `SysFreeString` 함수를 호출 하 여 해제 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

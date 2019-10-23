@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9cf22bceedd026a641709640a6e29d1970000e3b
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 9c7d223b9ea542177176045c9abd103958e5ae33
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72431416"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738106"
 ---
 # <a name="debugging-preparation-c-project-types"></a>디버깅 준비: C++ 프로젝트 형식
 이 단원에서는 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 프로젝트 템플릿으로 만든 기본 프로젝트 형식을 디버깅하는 방법에 대해 설명합니다.
@@ -109,7 +109,7 @@ ms.locfileid: "72431416"
 
  [항목 내용](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 - [디버거 소개](../debugger/debugger-feature-tour.md)
 - [C++ 디버그 구성에 대한 프로젝트 설정](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [실행 중인 프로그램 또는 여러 프로그램에 연결](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

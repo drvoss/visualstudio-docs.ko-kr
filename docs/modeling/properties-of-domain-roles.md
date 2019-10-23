@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a992cc06a177d329701ca98278ad14632bda8df1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 97df4ceca2c511265a51f89c2f39a6595d200abf
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658161"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748306"
 ---
 # <a name="properties-of-domain-roles"></a>도메인 역할의 속성
 다음 표의 속성은 도메인 역할과 연결 되어 있습니다. 도메인 역할에 대 한 자세한 내용은 [모델, 클래스 및 관계 이해](../modeling/understanding-models-classes-and-relationships.md)를 참조 하세요. 이러한 속성을 사용 하는 방법에 대 한 자세한 내용은 [도메인별 언어 사용자 지정 및 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)을 참조 하세요.
@@ -41,6 +41,6 @@ ms.locfileid: "72658161"
 > [!NOTE]
 > 표시 이름의 기본값은 소문자 문자가 뒤에 오는 각 대문자 앞에 공백을 삽입 하 여 연결 된 속성 값을 기반으로 하며 그 뒤에 다른 대문자 문자가 오지 않습니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [도메인 관계의 속성](../modeling/properties-of-domain-relationships.md)

@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 701a0096e89123fc9c5445805bb43777735c0924
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: f6dc69a18aa09536e5735431aa451bc2dd3933ee
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72435922"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745687"
 ---
 # <a name="com-and-activex-debugging"></a>COM 및 ActiveX 디버깅
 이 단원에서는 COM 애플리케이션과 ActiveX 컨트롤의 디버깅에 대한 팁을 제공합니다.
@@ -41,7 +41,7 @@ ms.locfileid: "72435922"
 ## <a name="related-sections"></a>관련 단원
  [디버거를 먼저 확인 합니다](../debugger/debugger-feature-tour.md) . 디버깅 설명서의 더 큰 섹션에 대 한 링크를 제공 합니다. 이러한 정보에는 디버거의 새로운 기능, 설정 및 준비, 중단점, 예외 처리, 편집 하며 계속 하기, 관리 코드 디버깅, 프로젝트 디버깅 C++ , COM 및 ActiveX 디버깅, dll 디버깅, SQL 디버깅, 사용자 등이 포함 됩니다. 인터페이스 참조
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [디버거 보안](../debugger/debugger-security.md)
 - [COM 소개](/cpp/atl/introduction-to-com)

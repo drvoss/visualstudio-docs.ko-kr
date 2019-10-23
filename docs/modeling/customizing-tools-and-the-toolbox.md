@@ -13,12 +13,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75e3a791fc53f7a1e9ff093cc46e3d73003417cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8099773dbbfdd06e4ce806401400bf3d2443b57f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653948"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747599"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>도구 및 도구 상자 사용자 지정
 
@@ -232,7 +232,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  사용자 지정 코드를 사용 하 여 ' hard ' 제약 조건을 적용할 수 있지만 사용자가 일시적으로 잘못 된 연결을 만들 수 있어야 하는지 여부를 고려해 야 합니다. 사용자가 일시적으로 잘못된 연결을 설정할 수 있어야 하는 경우에는 사용자가 변경 내용을 저장할 때까지 연결 유효성을 검사하지 않도록 제약 조건을 수정할 수 있습니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [요소 만들기 및 이동 사용자 지정](../modeling/customizing-element-creation-and-movement.md)
 - [복사 동작 사용자 지정](../modeling/customizing-copy-behavior.md)

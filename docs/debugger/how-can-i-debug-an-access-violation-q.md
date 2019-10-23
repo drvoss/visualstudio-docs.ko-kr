@@ -1,5 +1,5 @@
 ---
-title: 디버그는 C++ 액세스 위반 | Microsoft Docs
+title: C++ 액세스 위반 디버깅 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 02/05/2019
 ms.topic: conceptual
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2be6c13e2a3c83d31540399dd3387addb08e8686
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eebbdfd7774018ecf49801c6b01b5867b7bd3408
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62895132"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734553"
 ---
-# <a name="how-can-i-debug-a-c-access-violation"></a>어떻게 디버깅할 수는 C++ 액세스 위반?
+# <a name="how-can-i-debug-a-c-access-violation"></a>액세스 위반을 C++ 어떻게 디버깅할 수 있나요?
 
 ## <a name="problem-description"></a>문제 설명
 
@@ -79,5 +79,5 @@ Visual Studio 2015 업데이트 1에서 이 코드를 실행하는 경우 다음
 
 포인터가 액세스 위반을 유발한 이유를 확인할 수 없는 경우 전체 코드를 추적하여 문제를 유발한 포인터가 올바르게 할당되었는지 확인합니다.  포인터가 매개 변수로 전달된 경우 제대로 전달되었는지, 실수로 [단순 복사](http://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy)를 만들지 않았는지 확인합니다. 그런 다음, 프로그램의 다른 곳에서 수정되지 않도록 문제가 되는 포인터에 대한 데이터 중단점을 만들어 프로그램의 어딘가에서 값이 실수로 변경되지 않는지 확인합니다. 데이터 중단점에 대한 자세한 내용은 [Using Breakpoints](../debugger/using-breakpoints.md)에서 데이터 중단점 섹션을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [네이티브 코드 디버그 FAQ](../debugger/debugging-native-code-faqs.md)

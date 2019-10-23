@@ -1,5 +1,5 @@
 ---
-title: '오류: 통합된 Windows 인증을 사용 하지 않기 때문에 실패 한 디버깅 | Microsoft Docs'
+title: '오류: Windows 통합 인증을 사용할 수 없기 때문에 디버깅 하지 못했습니다. | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2969e5c6e8e3a5fd5612fa843309e36f0dbc4c9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ca4b4ee5bb254f952fb6eb02e255320a337f657c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850843"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737808"
 ---
-# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>오류: Windows 통합 인증을 사용할 수 없기 때문에 디버깅 실패
+# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>오류: Windows 통합 인증을 사용할 수 없기 때문에 디버깅을 하지 못했습니다.
 인증 오류로 인해 디버깅을 요청한 사용자를 인증할 수 없습니다. 웹 애플리케이션 또는 XML Web services를 한 단계씩 실행하려고 할 때 이 오류가 발생할 수 있습니다. 이 오류는 Windows 통합 인증이 사용할 수 없도록 설정되어 있기 때문에 발생할 수 있습니다. 이 인증을 사용하려면 "통합 Windows 인증을 사용하려면"의 단계를 따릅니다.
 
  Windows 통합 인증을 사용하도록 설정했는데도 이 오류가 계속 발생하면 **Windows 도메인 서버의 다이제스트 인증**을 사용하도록 설정했기 때문일 수 있습니다. 이 경우에는 네트워크 관리자에게 문의하십시오.
@@ -67,7 +67,7 @@ ms.locfileid: "62850843"
 
 2. Windows 인증 및 II6 관리 호환성을 설정하지 않은 경우 다음 단계에 따라 이를 설정합니다.
 
-    1. 클릭 **시작**, 클릭 **제어판** 을 클릭 한 다음 **프로그램**합니다.
+    1. **시작**, **제어판** 을 차례로 클릭 한 다음 **프로그램**을 클릭 합니다.
 
     2. **프로그램 및 기능**에서 **Windows 기능 사용/사용 안 함**을 클릭합니다.
 
@@ -113,7 +113,7 @@ ms.locfileid: "62850843"
 
 10. **IIS(인터넷 정보 서비스) 관리자** 창을 닫습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [웹 애플리케이션 디버그: 오류 및 문제 해결](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 - [Microsoft Digest 인증](http://go.microsoft.com/fwlink/?LinkId=77938)
-- [IIS 7.0 사용 하 여 Windows Vista에서 웹 응용 프로그램 및 Visual Studio를 실행합니다.](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)
+- [IIS 7.0 및 Visual Studio를 사용 하 여 Windows Vista에서 웹 응용 프로그램 실행](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_container | Microsoft Docs'
+title: 'IDiaSymbol:: get_container | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23b8d43931b880ff61ec9871f9f5984b98833c28
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 0533eb2cdea1dd3e1bea3d64e2b94ce29a09353d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64787885"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740770"
 ---
-# <a name="idiasymbolgetcontainer"></a>IDiaSymbol::get_container
+# <a name="idiasymbolget_container"></a>IDiaSymbol::get_container
 이 함수는이 기호의 부모/컨테이너를 나타내는 기호에 대 한 포인터를 검색 합니다.
 
 ## <a name="syntax"></a>구문
@@ -33,20 +33,20 @@ HRESULT get_container(
 #### <a name="parameters"></a>매개 변수
  `pRetVal`
 
-[out] 에 대 한 포인터를 반환 합니다.는 `IDiaSymbol` 이 기호의 컨테이너에 대 한 정보를 포함 합니다.
+제한이 이 기호의 컨테이너에 대 한 정보를 포함 하는 `IDiaSymbol`에 대 한 포인터를 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 S_FALSE 또는 오류 코드를 반환합니다.
+ 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 S_FALSE 또는 오류 코드를 반환 합니다.
 
 > [!NOTE]
-> S_FALSE 반환 값 속성 기호에 사용할 수 없다는 것을 의미 합니다.
+> 반환 값 S_FALSE는 기호에 대해 속성을 사용할 수 없음을 의미 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|요구 사항|Description|
+|요구 사항|설명|
 |-----------------|-----------------|
 |헤더:|dia2.h|
 |버전:|DIA SDK v8.0|
 
-## <a name="see-also"></a>관련 항목
+## <a name="see-also"></a>참조
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

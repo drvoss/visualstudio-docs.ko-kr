@@ -1,5 +1,5 @@
 ---
-title: '방법: 코드 변경을 중지 | Microsoft Docs'
+title: '방법: 코드 변경 중지 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33bc24aaea0f24d592a897bcc70f553cfaab9667
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 545599aa68da79aa7be41f0a2517049146cebc89
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388353"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732459"
 ---
 # <a name="how-to-stop-code-changes"></a>방법: 코드 변경 중지
 편집하며 계속하기에서 코드 변경 내용을 적용하는 동안 작업을 중지할 수 있습니다.
@@ -38,6 +38,6 @@ ms.locfileid: "63388353"
 
   이 옵션을 선택하면 코드 변경 내용이 커밋되지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [편집하며 계속하기](../debugger/edit-and-continue.md)
 - [옵션 대화 상자, 디버깅, 편집하며 계속하기](https://msdn.microsoft.com/library/bcew296c.aspx)

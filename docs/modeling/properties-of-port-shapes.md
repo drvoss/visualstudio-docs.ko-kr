@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a5fbe5dc38eaf029f0061c90c1ca37b1d9210b8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 60498c57e80b474bae8d5c320183442bbc4fcfd4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658134"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747438"
 ---
 # <a name="properties-of-port-shapes"></a>포트 모양의 속성
 포트 셰이프를 사용 하 여 생성 된 디자이너에서 도메인 클래스를 나타낼 수 있습니다.
@@ -53,6 +53,6 @@ ms.locfileid: "72658134"
 |고정 도구 설명 텍스트|고정 도구 설명에 사용 되는 텍스트입니다.|\<none >|
 |Help Keyword|이 모양에 대 한 F1 도움말을 인덱싱하는 데 사용 되는 키워드입니다.|\<none >|
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

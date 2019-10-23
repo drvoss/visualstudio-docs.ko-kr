@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsourcefiles:: Skip | Microsoft Docs'
+title: 'IDiaEnumSourceFiles:: Skip | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b80a2a0f270ccd76d052d4c7863170448648e138
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d7aef3ea724bbb50f0342032a62e0044a1f0eb30
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833365"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744047"
 ---
 # <a name="idiaenumsourcefilesskip"></a>IDiaEnumSourceFiles::Skip
-열거형 시퀀스를 소스 파일의 지정 된 수를 건너뜁니다.
+열거형 시퀀스에서 지정 된 수의 소스 파일을 건너뜁니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,10 +33,10 @@ HRESULT Skip ( 
 #### <a name="parameters"></a>매개 변수
  celt
 
-[in] 건너뛸 열거형 시퀀스에서 원본 파일의 수입니다.
+진행 건너뛸 열거 시퀀스의 소스 파일 수입니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 건너뛸 자세한 원본 파일이 없는 경우.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 건너뛸 소스 파일이 더 이상 없는 경우 `S_FALSE`을 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)

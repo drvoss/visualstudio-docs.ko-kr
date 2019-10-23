@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a79abb14c6c5eaa47dfacc42f0b1d50b0dadd1c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7d53df0bc83e2068488c8a7c919f8b76258ad827
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929447"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728377"
 ---
 # <a name="visualizer-security-considerations"></a>시각화 도우미 보안 고려 사항
 시각화 도우미를 작성할 때는 보안 문제를 고려해야 합니다. 당장은 이러한 잠재적 위협에 대한 취약점이 발견되지 않더라도 개발자는 이러한 문제의 가능성을 인식하고 여기서 설명하는 적절한 보안 예방책에 따라 향후 발생할 수 있는 위험에 대비해야 합니다.
@@ -37,7 +37,7 @@ ms.locfileid: "62929447"
 
  이러한 취약점을 줄이려면 시각화 도우미에서 노출되는 인터페이스에 주의를 기울여야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [시각화 도우미 아키텍처](../debugger/visualizer-architecture.md)
 - [방법: 시각화 도우미 작성](/visualstudio/debugger/create-custom-visualizers-of-data)
 - [Create Custom Visualizers of Data](../debugger/create-custom-visualizers-of-data.md)(데이터의 사용자 지정 시각화 도우미 만들기)

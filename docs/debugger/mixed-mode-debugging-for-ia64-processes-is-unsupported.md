@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0130ba9e893d5a4036df9ee1bc2ab22c8e18008
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c85c31cff5920ba3dc4b9356a1865d0db2323b2d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929874"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731099"
 ---
 # <a name="mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>IA64 프로세스에 대해서는 혼합 모드 디버깅을 수행할 수 없습니다.
 Visual Studio에서는 IA64 프로세스에서 관리 코드와 네이티브 코드의 혼합 모드 디버깅을 지원하지 않습니다. 따라서 디버깅하는 동안 네이티브 코드에서 관리 코드로 또는 그 반대로 실행할 수 없습니다.
@@ -49,5 +49,5 @@ Visual Studio에서는 IA64 프로세스에서 관리 코드와 네이티브 코
 
 2. 속성 페이지에서 **플랫폼**을 클릭하고 플랫폼 목록에서 Win32를 선택합니다.
 
-## <a name="see-also"></a>참고 항목
-- [64비트 응용 프로그램 디버그](../debugger/debug-64-bit-applications.md)
+## <a name="see-also"></a>참조
+- [64비트 애플리케이션 디버그](../debugger/debug-64-bit-applications.md)

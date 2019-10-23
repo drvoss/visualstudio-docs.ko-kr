@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_framepointerpresent | Microsoft Docs'
+title: 'IDiaSymbol:: get_framePointerPresent | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7914845bccb43ce302665428c824bbf3ebb2c819
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 1fce085f134b844d7e53e19d9e2ec057aa8a89ca
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64825343"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740674"
 ---
-# <a name="idiasymbolgetframepointerpresent"></a>IDiaSymbol::get_framePointerPresent
-프레임 포인터가 있는지 여부를 지정 하는 플래그를 검색 합니다. 사용 시기를 [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md) 로 설정 된 `SymTagFunction`합니다.
+# <a name="idiasymbolget_framepointerpresent"></a>IDiaSymbol::get_framePointerPresent
+프레임 포인터가 있는지 여부를 지정 하는 플래그를 검색 합니다. [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md) 이 `SymTagFunction`로 설정 된 경우를 사용 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,22 +33,22 @@ HRESULT get_framePointerPresent( 
 #### <a name="parameters"></a>매개 변수
  `pRetVal`
 
-[out]] 반환 `TRUE` 존재 하지 않으면 프레임 포인터 이면 반환 `FALSE`합니다.
+[out]] 프레임 포인터가 있는 경우 `TRUE`을 반환 합니다. 그렇지 않으면 `FALSE`을 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 `S_FALSE` 또는 오류 코드를 반환 합니다.
 
 > [!NOTE]
-> 반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.
+> @No__t_0의 반환 값은 해당 기호에 대해 속성을 사용할 수 없음을 의미 합니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 ## <a name="requirements"></a>요구 사항
- 헤더: Dia2.h
+ 헤더: Dia2
 
- 라이브러리: diaguids.lib
+ 라이브러리: diaguids
 
- DLL: msdia100.dll
+ DLL: msdia100
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

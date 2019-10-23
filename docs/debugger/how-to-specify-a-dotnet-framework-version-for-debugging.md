@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d612c3f0a542fe30e9241b43c1df5d82a09832fd
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 1f6107d6396c6228be1d511e81003fbe7faf06c9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535966"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732631"
 ---
 # <a name="specify-an-older-net-framework-version-for-debugging-c-visual-basic-f"></a>디버깅에 사용할 이전 .NET Framework 버전을 지정C#합니다 (, F#Visual Basic,).
 
@@ -64,5 +64,5 @@ The debugger has made an incorrect assumption about the .NET Framework version y
 
      디버깅을 시작할 때 여전히 오류 메시지가 표시되면 레지스트리에 버전 번호를 올바르게 입력했는지 확인합니다. 또한 Visual Studio에서 지 원하는 .NET Framework 버전을 사용 중인지 확인 합니다. 현재 디버거는 .NET Framework 버전 및 이전 버전과 호환되지만 이후 버전과는 호환되지 않을 수 있습니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 - [디버거 설정 및 준비](../debugger/debugger-settings-and-preparation.md)

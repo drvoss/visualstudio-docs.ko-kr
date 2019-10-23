@@ -1,5 +1,5 @@
 ---
-title: IDiaStackFrame::get_systemExceptionHandling | Microsoft Docs
+title: 'IDiaStackFrame:: get_systemExceptionHandling | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 519602b09ea1adcf00ed534ecb22b4a082018464
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c2d0be30e7aa07326bd2a1b955cac3d6be78f6aa
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838043"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741576"
 ---
-# <a name="idiastackframegetsystemexceptionhandling"></a>IDiaStackFrame::get_systemExceptionHandling
-시스템 예외 처리에 적용 되는지 여부를 나타내는 플래그를 검색 합니다.
+# <a name="idiastackframeget_systemexceptionhandling"></a>IDiaStackFrame::get_systemExceptionHandling
+시스템 예외 처리가 적용 되는지 여부를 나타내는 플래그를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,16 +33,16 @@ HRESULT get_systemExceptionHandling ( 
 #### <a name="parameters"></a>매개 변수
  `pRetVal`
 
-[out] 반환 `TRUE` 이 프레임에 적용 되는 시스템 예외 처리 하는 경우는 그렇지 않으면 반환 `FALSE`합니다.
+제한이 이 프레임에 대해 시스템 예외 처리가 적용 되는 경우 `TRUE`를 반환 합니다. 그렇지 않으면 `FALSE`을 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 속성이 지원 되지 않는 경우. 그러지 않으면 오류 코드가 반환됩니다.
+ 성공하면 `S_OK`를 반환합니다. 속성이 지원 되지 않는 경우 `S_FALSE`를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.
 
-## <a name="remarks"></a>설명
- 시스템 예외 처리는 구조적된 예외 처리 라고도 합니다. 이와 동일한 작업을 C++ 예외 처리 합니다.
+## <a name="remarks"></a>주의
+ 시스템 예외 처리는 구조화 된 예외 처리 라고도 합니다. 이는 예외 처리와 C++ 동일 하지 않습니다.
 
- 확인 하려면 C++ 호출, 예외 처리가 적용 되는 [idiastackframe:: Get_cplusplusexceptionhandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md) 메서드.
+ C++ 예외 처리가 적용 되는지 확인 하려면 [IDiaStackFrame:: get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md) 메서드를 호출 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
 - [IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)

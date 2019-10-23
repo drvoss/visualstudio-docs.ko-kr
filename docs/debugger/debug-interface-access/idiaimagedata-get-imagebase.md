@@ -1,5 +1,5 @@
 ---
-title: 'Idiaimagedata:: Get_imagebase | Microsoft Docs'
+title: 'IDiaImageData:: get_imageBase | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de8c333391530cd86c6fc66a8e6c36ce8cfecd5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7887fea30b04f4ebb6605169c58551122eccf73d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829066"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743446"
 ---
-# <a name="idiaimagedatagetimagebase"></a>IDiaImageData::get_imageBase
-여기서 이미지를 기반으로 하는 메모리 위치를 검색 합니다.
+# <a name="idiaimagedataget_imagebase"></a>IDiaImageData::get_imageBase
+이미지를 기반으로 하는 메모리 위치를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,13 +33,13 @@ HRESULT get_imageBase ( 
 #### <a name="parameters"></a>매개 변수
  `pRetVal`
 
-[out] 이미지 제안 된 기본 값을 반환합니다.
+제한이 제안 된 이미지 기준 값을 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
-## <a name="remarks"></a>설명
- 이미지 기본 충돌로 인해 이미지 수 기준 주소를 지정할 자동으로 사용 되지 않는 메모리 위치에 로드 되는 경우. 이 메서드는 컴파일 시 모듈에 저장 된 기본 힌트 (제안 된 메모리 위치)를 반환 합니다.
+## <a name="remarks"></a>주의
+ 이미지 기본 충돌로 인해 이미지는 로드 될 때 사용 하지 않는 메모리 위치로 자동으로 주소가 다시 지정할 수 있습니다. 이 메서드는 컴파일 시간에 모듈에 저장 된 기본 힌트 (제안 된 메모리 위치)를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

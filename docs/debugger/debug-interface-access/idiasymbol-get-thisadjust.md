@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_thisadjust | Microsoft Docs'
+title: 'IDiaSymbol:: get_thisAdjust | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dfdfb07f0ea20cf13a56eed7f380e3ec195fe52
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e92a18ce7b9b7206121d1ad514217f79d2f8628a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64800791"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739155"
 ---
-# <a name="idiasymbolgetthisadjust"></a>IDiaSymbol::get_thisAdjust
-논리 검색 `this` 조정기 메서드에 대 한 합니다.
+# <a name="idiasymbolget_thisadjust"></a>IDiaSymbol::get_thisAdjust
+메서드에 대 한 논리적 `this` adjustor를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,16 +33,16 @@ HRESULT get_thisAdjust ( 
 #### <a name="parameters"></a>매개 변수
  `pRetVal`
 
-[out] 논리적 반환 `this` 조정기 메서드에 대 한 합니다.
+제한이 메서드에 대 한 논리적 `this` adjustor를 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 `S_FALSE` 또는 오류 코드를 반환 합니다.
 
 > [!NOTE]
-> 반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.
+> @No__t_0의 반환 값은 해당 기호에 대해 속성을 사용할 수 없음을 의미 합니다.
 
-## <a name="remarks"></a>설명
- 메서드 자체 해야 진정한을 계산 하는 데 여러 상속 경우도 `this` 값에 대 한 오프셋을 추가 하 여 `this`입니다.
+## <a name="remarks"></a>주의
+ 일부 여러 상속 사례에서 메서드 자체는 `this`에 오프셋을 추가 하 여 true `this` 값을 계산 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Idialoadcallback:: Notifyopenpdb | Microsoft Docs'
+title: 'IDiaLoadCallback:: NotifyOpenPDB | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5945ba54f1c09f4f13d2a982e90a3bb58cfb5f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cbcf8aff8dc18776cbcb09a5fa3f13edca4cd7a7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839760"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743059"
 ---
 # <a name="idialoadcallbacknotifyopenpdb"></a>IDiaLoadCallback::NotifyOpenPDB
-후보.pdb 파일을 열 때 호출 됩니다.
+후보 .pdb 파일이 열릴 때 호출 됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -34,14 +34,14 @@ HRESULT NotifyOpenPDB ( 
 #### <a name="parameters"></a>매개 변수
  `pdbPath`
 
-[in] .Pdb 파일의 전체 경로입니다.
+진행 .Pdb 파일의 전체 경로입니다.
 
  `resultCode`
 
-[in] 성공 여부를 나타내는 코드입니다 (`S_OK`) 또는이 파일에 적용 될 때 로드 실패 합니다.
+진행 이 파일에 적용 되는 로드의 성공 (`S_OK`) 또는 실패를 나타내는 코드입니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다. 반환 코드는 일반적으로 무시 됩니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다. 반환 코드는 일반적으로 무시 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

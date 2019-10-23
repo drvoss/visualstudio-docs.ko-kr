@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 3289fd82f8a3b99bf49ee796e49a285ffb93793c
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 9f8391d355b2f540db4e38486b8992d940336464
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72536015"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733795"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>방법: ASP.NET 예외 디버깅
 예외 디버깅은 강력한 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 애플리케이션을 개발하는 데 중요한 요소입니다. 예외를 디버깅 하는 방법에 대 한 일반적인 정보는 [디버거에서 예외를 관리](../debugger/managing-exceptions-with-the-debugger.md)하는 것입니다.
@@ -47,5 +47,5 @@ ms.locfileid: "72536015"
 
 - 예측 가능하며 처리 방법을 알고 있는 예외를 throw할 수 있는 코드의 바깥쪽에 `try ... catch` 블록을 배치합니다. 예를 들어 애플리케이션에서 XML Web services를 호출하거나 SQL Server를 직접 호출할 경우에는 다양한 예외가 발생할 수 있으므로 해당 코드는 **try ... catch** 블록에 있어야 합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 - [ASP.NET 애플리케이션 디버그](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e1b958b9226a0a8ded0f886af81efc3b1b5aaf9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f8d097f76bcdb419be56d7fd1501fb93e872b1b9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670739"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748232"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>모델 공유 및 다이어그램 내보내기
 Visual Studio에서 여러 가지 방법으로 모델 및 다이어그램을 동료와 공유할 수 있습니다.
@@ -49,6 +49,6 @@ Visual Studio에서 여러 가지 방법으로 모델 및 다이어그램을 동
 |[다이어그램을 이미지로 내보내기](../modeling/export-diagrams-as-images.md)|다이어그램의 일부를 PowerPoint 또는 Word와 같은 애플리케이션으로 복사하거나 다이어그램을 XPS 파일로 인쇄할 수 있습니다.|
 |[아키텍처 분석 및 모델링](../modeling/analyze-and-model-your-architecture.md)|모델 및 다이어그램의 개요입니다.|
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [개발 프로세스에서 모델 사용](../modeling/use-models-in-your-development-process.md)

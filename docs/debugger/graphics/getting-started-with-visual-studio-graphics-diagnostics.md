@@ -1,5 +1,5 @@
 ---
-title: 그래픽 진단을 사용 하 여 시작 | Microsoft Docs
+title: 그래픽 진단 시작 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 05/26/2017
 ms.topic: conceptual
@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fc7dd207a525eaed12db1b2e45e7720d96ee8b6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: eb651d9b35dd4531f4d14e169ab6f04376d4dfff
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388686"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72735704"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio 그래픽 진단 시작
 이 섹션에서는 처음으로 그래픽 진단 사용을 준비한 다음 Direct3D 앱에서 프레임을 캡처하고 Graphics Analyzer에서 검사합니다.
 
 ## <a name="requirements"></a>요구 사항
- Visual Studio에서 그래픽 진단을 사용 하려면 Visual Studio Enterprise, Visual Studio Professional 또는 Visual Studio Community를 사용 해야 합니다.  다른 버전의 경우 Visual Studio Code를 포함 하 여이 기능을 포함 하지 않습니다.
+ Visual Studio에서 그래픽 진단를 사용 하려면 Visual Studio Enterprise, Visual Studio Professional 또는 Visual Studio Community를 사용 해야 합니다.  Visual Studio Code를 비롯 한 다른 버전은이 기능을 포함 하지 않습니다.
 
  [!INCLUDE[downloadvs](../includes/downloadvs_md.md)]
 
@@ -33,9 +33,9 @@ ms.locfileid: "63388686"
 
 #### <a name="to-install-graphics-tools-for-windows-10"></a>Windows 10용 그래픽 도구를 설치하려면
 
-1. 검색에서 입력 **앱 및 기능** 연 다음 합니다 **앱 및 기능** 설정 합니다.
+1. 검색에서 **앱 및 기능** 을 입력 한 다음 **앱 & 기능** 설정을 엽니다.
 
-2. 오른쪽에는 **앱 및 기능** 대화 상자에서 선택 **선택적 기능 관리** (아래 **앱 및 기능**).
+2. **앱 & 기능** 대화 상자의 오른쪽에서 **선택적 기능 관리** ( **앱 & 기능**아래)를 선택 합니다.
 
    **선택적 기능 관리** 대화 상자가 나타납니다.
 
@@ -52,15 +52,15 @@ ms.locfileid: "63388686"
  이제 필요한 모든 항목이 준비되었으므로 그래픽 진단을 사용할 수 있습니다. 아래 단계를 따르기만 하면 됩니다.
 
 ### <a name="1---create-a-direct3d-app"></a>1 - Direct3D 앱 만들기
- 잘 그래픽 진단을 탐색 하기 위해 자신의 Direct3D 앱이 이미 있는 경우 그렇지 않으면 다음 중 하나를 사용 합니다.
+ 그래픽 진단를 탐색 하는 데 고유한 Direct3D 앱이 이미 있는 경우 좋은 방법입니다! 그렇지 않으면 다음 중 하나를 사용 합니다.
 
-- 합니다 **DirectX 11 앱 (유니버설 Windows)** 하거나 **DirectX 12 앱 (유니버설 Windows)** Windows 10 용 프로젝트 템플릿.
-- [Direct3D 12 UAP 샘플](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f) Windows 10에 대 한 합니다.
+- Windows 10 용 **directx 11 앱 (유니버설 windows)** 또는 **directx 12 앱 (유니버설 windows)** 프로젝트 템플릿
+- Windows 10 용 [Direct3D 12 UAP 샘플](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f)
 
   계속 진행하기 전에 앱을 빌드할 수 있는지 확인합니다.
 
 ### <a name="2---start-a-graphics-diagnostics-session"></a>2 - 그래픽 진단 세션 시작
- 이제 첫 번째 그래픽 진단 세션을 시작할 준비가 되었습니다. Visual Studio 주 메뉴에서 선택 **디버그, 그래픽, 그래픽 디버깅 시작**, 또는 누르기만 **alt+f5**합니다. 그러면 그래픽 진단 모드로 앱이 시작되고 Visual Studio에 진단 세션 창이 표시됩니다.
+ 이제 첫 번째 그래픽 진단 세션을 시작할 준비가 되었습니다. Visual Studio의 주 메뉴에서 **디버그, 그래픽, 그래픽 디버깅 시작**을 선택 하거나 **alt + F5**를 누릅니다. 그러면 그래픽 진단 모드로 앱이 시작되고 Visual Studio에 진단 세션 창이 표시됩니다.
 
 > [!IMPORTANT]
 > Windows 10에서 앱을 실행 중인 경우 선택적 그래픽 도구 기능을 아직 설치하지 않았으면 지금 설치하라는 메시지가 표시됩니다. Windows 10에서 그래픽 진단을 사용하려면 먼저 설치해야 합니다.
@@ -70,7 +70,7 @@ ms.locfileid: "63388686"
 
 #### <a name="to-capture-single-frames"></a>단일 프레임을 캡처하려면
 
-- Visual Studio의 그래픽 도구 모음 또는 진단 세션 창에서 **프레임 캡처** 단추를 선택합니다. 또는 앱에 포커스가 있으면 누르기만 합니다 **Print Screen** 키보드의 키입니다.
+- Visual Studio의 그래픽 도구 모음 또는 진단 세션 창에서 **프레임 캡처** 단추를 선택합니다. 또는 앱에 포커스가 있는 경우 키보드에서 **Print Screen** 키를 누르기만 하면 됩니다.
 
 #### <a name="to-capture-a-sequence-of-frames"></a>프레임 시퀀스를 캡처하려면
 
@@ -85,7 +85,7 @@ ms.locfileid: "63388686"
 
  진단 세션 창에서 잘못된 프레임을 선택했거나 다른 프레임을 검사하려는 경우 Graphics Analyzer에서 새 프레임을 선택할 수 있습니다. 그래픽 로그 창의 **렌더링 대상** 탭에 있는 렌더링 대상 이미지에서 **프레임 목록**을 확장한 다음, 검사할 다른 프레임을 선택합니다.
 
- Graphics Analyzer 도구를 함께 사용 하는 방법에 대 한 자세한 내용은 참조는 [예제](graphics-diagnostics-examples.md)합니다.
+ Graphics Analyzer 도구를 함께 사용 하는 방법에 대 한 자세한 내용은 [예제](graphics-diagnostics-examples.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Direct3D 12 그래픽](/windows/desktop/direct3d12/direct3d-12-graphics)

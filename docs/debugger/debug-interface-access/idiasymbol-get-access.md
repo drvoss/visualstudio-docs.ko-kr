@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_access | Microsoft Docs'
+title: 'IDiaSymbol:: get_access | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcf510cd9c74e22e0d028552b26c85b1f3d59bd4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: c8f476a95215eda69a3655540891017eac2c88e4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64813908"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741096"
 ---
-# <a name="idiasymbolgetaccess"></a>IDiaSymbol::get_access
-클래스 멤버의 액세스 한정자를 검색합니다.
+# <a name="idiasymbolget_access"></a>IDiaSymbol::get_access
+클래스 멤버의 액세스 한정자를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,21 +33,21 @@ HRESULT get_access ( 
 #### <a name="parameters"></a>매개 변수
  `pRetVal`
 
-[out] 값을 반환 합니다 [CV_access_e 열거형](../../debugger/debug-interface-access/cv-access-e.md) 클래스 멤버의 액세스 한정자를 지정 하는 열거형입니다.
+제한이 클래스 멤버의 액세스 한정자를 지정 하는 [CV_access_e 열거형](../../debugger/debug-interface-access/cv-access-e.md) 열거형의 값을 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 `S_FALSE` 또는 오류 코드를 반환 합니다.
 
 > [!NOTE]
-> 반환 값이 `S_FALSE` 속성 기호에 사용할 수 없다는 것을 의미 합니다.
+> @No__t_0의 반환 값은 해당 속성을 기호에 사용할 수 없음을 의미 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|요구 사항|Description|
+|요구 사항|설명|
 |-----------------|-----------------|
 |헤더:|dia2.h|
 |버전:|DIA SDK v7.0|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [CV_access_e 열거형](../../debugger/debug-interface-access/cv-access-e.md)

@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34ec62310c2c9b9677f682983fc6d87827057151
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 017c28af68efa98507286e8acdc2b4d694353aa1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663805"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747389"
 ---
 # <a name="understanding-the-dsl-code"></a>DSL 코드 이해
 
@@ -344,7 +344,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 
  이 파일은 DSL을 VSIX(Visual Studio Integration Extension)로 패키징하는 방식을 제어합니다. 자세한 내용은 [도메인 특정 언어 솔루션 배포](msi-and-vsix-deployment-of-a-dsl.md)를 참조하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [도메인별 언어 정의 방법](../modeling/how-to-define-a-domain-specific-language.md)
 - [모델, 클래스 및 관계 이해](../modeling/understanding-models-classes-and-relationships.md)

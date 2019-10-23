@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c42cdfc5c3f3c0267fdcbdfca8ddc4bb30663384
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 872f7c594344af2c59ebe7f8d1fbd1a640dd2190
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924534"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728822"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 이 메시지는 원격 컴퓨터에 원격 디버깅 모니터가 올바르게 설치 되지 않았거나 네트워크 문제나 방화벽으로 인해 원격 컴퓨터에 액세스할 수 없는 경우에 발생할 수 있습니다.
@@ -30,7 +30,7 @@ ms.locfileid: "68924534"
 
 ## <a name="specificerrors"></a>자세한 오류 메시지는 무엇입니까?
 
-일반 `Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor` 메시지입니다. 일반적으로 보다 구체적인 메시지는 오류 문자열에 포함 되며 문제의 원인을 파악 하는 데 도움이 될 수 있으며 보다 정확한 수정 사항을 검색 하는 데 도움이 될 수 있습니다. 다음은 기본 오류 메시지에 추가 되는 몇 가지 일반적인 오류 메시지입니다.
+@No__t_0 메시지는 일반 메시지입니다. 일반적으로 보다 구체적인 메시지는 오류 문자열에 포함 되며 문제의 원인을 파악 하는 데 도움이 될 수 있으며 보다 정확한 수정 사항을 검색 하는 데 도움이 될 수 있습니다. 다음은 기본 오류 메시지에 추가 되는 몇 가지 일반적인 오류 메시지입니다.
 
 - [디버거가 원격 컴퓨터에 연결할 수 없습니다. 디버거가 지정 된 컴퓨터 이름을 확인할 수 없습니다.](#cannot_connect)
 - [원격 디버거가 연결 요청을 거부 했습니다.](#rejected)
@@ -111,7 +111,7 @@ Visual Studio에서 원격 디버거에 연결할 수 없습니다. 이 메시�
 
 ### <a name="dns"></a> 원격 머신에 연결할 수 없음
 
-원격 컴퓨터 이름을 사용 하 여 연결할 수 없는 경우 IP 주소를 대신 사용해 보세요. 원격 컴퓨터의 `ipconfig` 명령줄에서를 사용 하 여 IPv4 주소를 가져올 수 있습니다. HOSTS 파일을 사용 하는 경우 올바르게 구성 되어 있는지 확인 합니다.
+원격 컴퓨터 이름을 사용 하 여 연결할 수 없는 경우 IP 주소를 대신 사용해 보세요. 원격 컴퓨터의 명령줄에서 `ipconfig`를 사용 하 여 IPv4 주소를 가져올 수 있습니다. HOSTS 파일을 사용 하는 경우 올바르게 구성 되어 있는지 확인 합니다.
 
 이 작업이 실패 하면 네트워크에서 원격 컴퓨터에 액세스할 수 있는지 확인 합니다 (원격 컴퓨터[ping](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee624059(v=ws.10)) ). 일부 Microsoft Azure 시나리오의 경우를 제외 하 고는 인터넷을 통한 원격 디버깅이 지원 되지 않습니다.
 
@@ -164,5 +164,5 @@ Visual Studio에서 프로젝트 속성을 확인 하 고 서버 이름이 올�
 ## <a name="more-help"></a>자세한 도움말
  원격 디버거 도움말을 더 얻으려면 원격 디버거의 도움말 페이지를 엽니다 (원격 디버거의**도움말 > 사용** ).
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Remote Debugging](../debugger/remote-debugging.md)

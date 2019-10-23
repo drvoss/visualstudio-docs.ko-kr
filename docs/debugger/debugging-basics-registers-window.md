@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df01776b5a7f2437c704c2b389c7d0929be5901c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4deaf03013b6e28ea02e6ec7412bd23a05f1b87e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852272"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738256"
 ---
-# <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Visual Studio에서 레지스터 창 정보 (C#, C++, Visual Basic의 경우 F#)
+# <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Visual Studio의 레지스터 창 정보 (C#, C++, Visual Basic,) F#
 
 **레지스터** 창은 **옵션** 대화 상자의 **디버깅** 노드에서 주소 수준 디버깅을 활성화한 경우에만 사용할 수 있습니다.
 
@@ -40,31 +40,31 @@ ms.locfileid: "62852272"
 
  **레지스터** 창 표시에 대한 자세한 내용은 [레지스터 창 사용](../debugger/how-to-use-the-registers-window.md)을 참조하세요.
 
- 살펴볼 때 합니다 **등록** 창에서 같은 항목을 볼 수 있습니다 `EAX = 003110D8`합니다.
+ **레지스터** 창을 보면 `EAX = 003110D8`와 같은 항목이 표시 됩니다.
 
- 왼쪽의 기호는 `=` 기호는 레지스터 이름 `EAX`,이 경우. `=` 부호 오른쪽의 숫자는 레지스터의 내용을 나타냅니다.
+ @No__t_0 sign의 왼쪽에 있는 기호는 레지스터 이름 `EAX`입니다 (이 경우). `=` 부호 오른쪽의 숫자는 레지스터의 내용을 나타냅니다.
 
  **레지스터** 창을 사용하면 단순히 레지스터의 내용을 보는 것 이상을 수행할 수 있습니다. 네이티브 코드의 중단 모드에 있으면 레지스터의 내용을 클릭하여 값을 편집할 수 있습니다. 이것은 임의로 수행하는 작업이 아닙니다. 편집하는 레지스터와 그 안에 들어 있는 데이터에 대해 모르면 부주의한 편집으로 인해 프로그램이 손상되거나 기타 원치 않는 결과가 발생할 수 있습니다. 그러나 여기서는 범위를 벗어나는 내용이므로 다양한 Intel 및 Intel 호환 프로세서의 레지스터 세트에 대해서는 설명하지 않습니다.
 
-## <a name="register-groups"></a>레지스터 그룹
+## <a name="register-groups"></a>그룹 등록
 
 **레지스터** 창에서는 레지스터를 그룹으로 구성하여 간단하게 표시합니다. **레지스터** 창을 마우스 오른쪽 단추로 클릭하면 그룹 목록이 들어 있는 바로 가기 메뉴가 나타나며, 이 메뉴는 필요에 따라 표시하거나 숨길 수 있습니다.
 
-## <a name="register-flags"></a>플래그를 등록 합니다.
+## <a name="register-flags"></a>플래그 등록
 
-Intel x86 프로세서의 경우에 다음 플래그를 표시 될 수 있습니다 합니다 **등록** 창입니다. 디버깅 세션 중에 이러한 플래그를 편집할 수 있습니다.
+Intel x86 프로세서의 경우 **레지스터** 창에 다음 플래그가 표시 될 수 있습니다. 디버깅 세션 중에 이러한 플래그를 편집할 수도 있습니다.
 
 |플래그|값 설정|
 |-|-|
-|오버플로|OV = 1|
+|오버플로|OV-ES = 1|
 |방향|UP = 1|
 |인터럽트|EI = 1|
 |Sign|PL = 1|
 |0|ZR = 1|
-|보조 전달|AC = 1|
-|패리티|PE = 1|
-|전달|CY = 1|
+|보조 운반|AC = 1|
+|대응|PE = 1|
+|수행|CY = 1|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [방법: 레지스터 창 사용](../debugger/how-to-use-the-registers-window.md)
 - [디버거 소개](../debugger/debugger-feature-tour.md)

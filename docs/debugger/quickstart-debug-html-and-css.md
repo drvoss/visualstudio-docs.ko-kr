@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 36b17adfd3968031983965ca47574804a9f1738e
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 52235ab4770f5267de8507ff67fcda0aa1370392
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589090"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730562"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Visual Studio에서 UWP 앱의 HTML 및 CSS 디버그
 
@@ -254,7 +254,7 @@ DOM 탐색기를 사용하면 다음 작업을 수행할 수 있습니다.
 > [!NOTE]
 > 요소를 마우스로 가리키면 강조 표시되는 기능은 Windows Phone 에뮬레이터에서만 일부 지원됩니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 - [Visual Studio에서 앱 디버그](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
 - [앱 새로 고침(JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [WebView 컨트롤 디버그](../debugger/debug-a-webview-control.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findSymbolsByRVAForAcceleratorPointerTag | Microsoft Docs
+title: 'IDiaSession:: findSymbolsByRVAForAcceleratorPointerTag | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bcf399dcf80cb574b6018dde5ffa44e72a4c988
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb1b24d24de35de30b24937a6cfbf59d12f69482
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839214"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741999"
 ---
 # <a name="idiasessionfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSession::findSymbolsByRVAForAcceleratorPointerTag
-이 메서드 해당 태그 값을 지정 합니다 지정된 된 상대 가상 주소에서 지정 된 부모 가속기 스텁 함수에 포함 된 기호의 열거형을 반환 합니다.
+해당 태그 값이 지정 된 경우이 메서드는 지정 된 상대 가상 주소에서 지정 된 부모 액셀러레이터 키 함수에 포함 된 기호의 열거형을 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -34,27 +34,27 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag ( 
 #### <a name="parameters"></a>매개 변수
  `parent`
 
-[in] `IDiaSymbol` 검색할 Accelerator 스텁 함수에 해당 하는 합니다.
+진행 검색할 액셀러레이터 스텁 함수에 해당 하는 `IDiaSymbol`입니다.
 
  `tagValue`
 
-[in] 포인터 태그 값입니다.
+진행 포인터 태그 값입니다.
 
  `rva`
 
-[in] 상대 가상 주소입니다.
+진행 상대 가상 주소입니다.
 
  `ppResult`
 
-[out] 에 대 한 포인터는 `IDiaEnumSymbols` 결과 사용 하 여 초기화 된 인터페이스 포인터입니다.
+제한이 결과를 사용 하 여 초기화 되는 `IDiaEnumSymbols` 인터페이스 포인터에 대 한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
-## <a name="remarks"></a>설명
- 경우에이 메서드를 호출는 `IDiaSymbol` Accelerator 스텁 함수에 해당 하는 인터페이스입니다.
+## <a name="remarks"></a>주의
+ 액셀러레이터 키 함수에 해당 하는 `IDiaSymbol` 인터페이스에 대해서만이 메서드를 호출 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

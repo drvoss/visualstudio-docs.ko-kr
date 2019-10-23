@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c5f54a2b50447125b0abffd8cc62ba9c2a1d2b37
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 44881035da14483c3ddf1f4c48cb3957a1ce8b50
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887780"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72729084"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>지원 되는 코드C# 변경 (및 Visual Basic)
 편집하며 계속하기에서는 메서드 본문 내의 코드 변경 유형을 대부분 처리합니다. 그러나 메서드 본문 외부의 변경 내용 대부분과 메서드 본문 내의 몇 가지 변경 내용은 디버깅 중에 적용할 수 없습니다. 이러한 지원되지 않는 변경 내용을 적용하려면 디버깅을 중지하고 새로운 버전의 코드로 다시 시작해야 합니다.
@@ -33,7 +33,7 @@ ms.locfileid: "70887780"
 |언어 요소/기능|지원 되는 편집 작업|제한 사항|
 |-|-|-|
 |유형|메서드, 필드, 생성자, et al 추가|[예](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
-|반복기|추가 또는 수정|아니요|
+|Iterators|추가 또는 수정|아니요|
 |async/wait 식|추가 또는 수정|[예](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 |동적 개체|추가 또는 수정|아니요|
 |람다 식|추가 또는 수정|[예](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
@@ -76,10 +76,10 @@ ms.locfileid: "70887780"
 |try-catch-finally 블록|활성 문이 포함 된 경우 수정|
 |using 문|추가|
 |비동기 메서드/람다|.NET Framework 4를 대상으로 하는 프로젝트에서 비동기 메서드/람다를 수정 합니다 ( [세부 정보](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)참조).|
-|반복기|.NET Framework 4를 대상으로 하는 프로젝트에서 반복기 수정 ( [세부 정보](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)참조)|
+|Iterators|.NET Framework 4를 대상으로 하는 프로젝트에서 반복기 수정 ( [세부 정보](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)참조)|
 
 ## <a name="unsafe-code"></a>안전하지 않은 코드
- 안전하지 않은 코드에 대한 변경에는 안전한 코드에 대한 변경과 동일한 제한 사항이 적용되고 한 가지 제한 사항이 추가로 적용됩니다. 편집 하며 계속 하기에서는 `stackalloc` 연산자가 포함 된 메서드 내에서 종료 되는 안전 하지 않은 코드의 변경을 지원 하지 않습니다.
+ 안전하지 않은 코드에 대한 변경에는 안전한 코드에 대한 변경과 동일한 제한 사항이 적용되고 한 가지 제한 사항이 추가로 적용됩니다. `stackalloc` 연산자가 포함된 메서드 안에 있는 안전하지 않은 코드에 대한 변경은 편집하며 계속하기에서 지원하지 않습니다.
 
 ## <a name="unsupported-app-scenarios"></a>지원 되지 않는 응용 프로그램 시나리오
 
@@ -95,7 +95,7 @@ ms.locfileid: "70887780"
 
 - SQL 디버깅
 
-- Dr. Watson 덤프 디버깅
+- Dr. Watson 덤프를 디버깅 합니다.
 
 - 포함된 런타임 애플리케이션 디버깅
 
@@ -105,6 +105,6 @@ ms.locfileid: "70887780"
 
 - 빌드 오류가 발생하여 새 버전을 빌드하는 데 실패한 후 이전 버전의 코드 디버깅
 
-## <a name="see-also"></a>관련 항목
+## <a name="see-also"></a>참조
 - [편집하며 계속하기(Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
 - [방법: 편집하며 계속하기 사용(C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

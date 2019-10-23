@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_isdataaligned | Microsoft Docs'
+title: 'IDiaSymbol:: get_isDataAligned | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8a46b84ff8af4163d6341f1cabbbe339379c0de
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 27a03dbc66cd3ba46fc080d856c559eabc7e289e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808838"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740255"
 ---
-# <a name="idiasymbolgetisdataaligned"></a>IDiaSymbol::get_isDataAligned
-사용자 정의 형식 (UDT) 일부 특정 메모리 경계에 정렬 된에 있는지 여부를 지정 하는 플래그를 검색 합니다.
+# <a name="idiasymbolget_isdataaligned"></a>IDiaSymbol::get_isDataAligned
+UDT (사용자 정의 형식)가 특정 메모리 경계에 정렬 되었는지 여부를 지정 하는 플래그를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,23 +33,23 @@ HRESULT get_isDataAligned(
 #### <a name="parameters"></a>매개 변수
  `pFlag`
 
-[out] 반환 `TRUE` UDT는 일부 메모리 경계;에 맞추면 되었습니다가 반환이 고, 그렇지 `FALSE`합니다.
+제한이 UDT가 일부 메모리 경계에 정렬 된 경우 `TRUE`를 반환 합니다. 그렇지 않으면 `FALSE`을 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 `S_FALSE` 또는 오류 코드를 반환 합니다.
 
 > [!NOTE]
-> 반환 값이 `S_FALSE` 속성 기호에 사용할 수 없다는 것을 의미 합니다.
+> @No__t_0의 반환 값은 해당 속성을 기호에 사용할 수 없음을 의미 합니다.
 
-## <a name="remarks"></a>설명
- 이 속성은 실행 파일이 기본이 아닌 데이터 정렬을 사용 하 여 컴파일될 때 일반적으로 설정 됩니다. 예를 들어 Microsoft C++ 컴파일러 명령줄 옵션을 사용 하 여 데이터 정렬을 변경할 수 /Zp<em>#</em>여기서 *#* 바이트 값입니다.
+## <a name="remarks"></a>주의
+ 이 속성은 일반적으로 실행 파일이 기본이 아닌 데이터 정렬을 사용 하 여 컴파일되는 경우에 설정 됩니다. 예를 들어 Microsoft C++ 컴파일러는 명령줄 옵션/zp <em>#</em>를 사용 하 여 데이터 맞춤을 변경할 수 있습니다. 여기서 *#* 는 바이트 값입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|요구 사항|Description|
+|요구 사항|설명|
 |-----------------|-----------------|
 |헤더:|dia2.h|
 |버전:|DIA SDK v8.0|
 
-## <a name="see-also"></a>관련 항목
+## <a name="see-also"></a>참조
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

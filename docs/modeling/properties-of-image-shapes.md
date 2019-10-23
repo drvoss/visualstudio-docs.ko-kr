@@ -12,12 +12,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a89d7e5710f7a80c4e1f134ce2dfe2bd35ed5337
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: beb401b4056edd8f1edac5e61d02237c60504cd9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658151"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748286"
 ---
 # <a name="properties-of-image-shapes"></a>이미지 모양의 속성
 
@@ -71,6 +71,6 @@ ms.locfileid: "72658151"
 |Help Keyword|이 요소에 대 한 F1 도움말을 인덱싱하는 데 사용 되는 키워드입니다.|\<none >|
 |이미지|이 도형에 사용 되는 이미지 파일의 경로입니다.|\<none >|
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumstackframes:: Reset | Microsoft Docs'
+title: 'IDiaEnumStackFrames:: Reset | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bdf24fb9926c66b389430208d16f943af41cc11
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d219c7b3310db05e9292e34325c2e904ef899688
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829432"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743995"
 ---
 # <a name="idiaenumstackframesreset"></a>IDiaEnumStackFrames::Reset
 열거형 시퀀스를 시작 부분으로 다시 설정합니다.
@@ -29,7 +29,7 @@ HRESULT Reset();
 ```
 
 ## <a name="return-value"></a>반환 값
- `S_OK`를 반환합니다.
+ `S_OK`을 반환합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)

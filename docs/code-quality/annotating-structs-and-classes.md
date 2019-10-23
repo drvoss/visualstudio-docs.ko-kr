@@ -24,12 +24,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: ac3d6225bc765ec404784589d2faa06f155265ab
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 93c6826f2903f30fbbdcb9c40ec5f695df32ac05
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72446289"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747058"
 ---
 # <a name="annotating-structs-and-classes"></a>구조체 및 클래스에 주석 지정
 
@@ -110,7 +110,7 @@ struct MyBuffer
 - `bufferSize`에 대 한 `_Field_range_` `bufferSize` 값이 1과 `MaxBufferSize` 사이에 있어야 함을 지정 합니다 (모두 포함).
 - @No__t_0 및 `_Field_size_` 주석의 최종 결과는 동일 합니다. 비슷한 레이아웃을 가진 구조 또는 클래스의 경우 `_Field_size_`는 동일한 `_Struct_size_bytes_` 주석 보다 더 많은 참조와 계산을 포함 하기 때문에 더 쉽게 읽고 유지 관리할 수 있습니다. `_Field_size_` 바이트 크기로 변환할 필요가 없습니다. 예를 들어 void 포인터 필드의 경우에는 바이트 크기만 유일한 옵션 `_Field_size_bytes_` 사용할 수 있습니다. @No__t_0와 `_Field_size_` 모두 있는 경우 도구에서 둘 다 사용할 수 있습니다. 두 주석이 동의 하지 않는 경우에는이 도구를 통해 수행할 작업을 결정 해야 합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [C/C++ 코드 오류를 줄이기 위한 SAL 주석 사용](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [SAL 이해](../code-quality/understanding-sal.md)

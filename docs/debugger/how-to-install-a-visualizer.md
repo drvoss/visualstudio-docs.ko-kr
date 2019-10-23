@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9b09bc837cae4eaad2c0dbcb2bb82a7daa248eb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3c9c2fa8a8fb300c3b7eb702ae3efd216e17141a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63389316"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733101"
 ---
 # <a name="how-to-install-a-visualizer"></a>방법: 시각화 도우미 설치
 시각화 도우미를 만든 후에는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 사용할 수 있도록 이 시각화 도우미를 설치해야 합니다. 시각화 도우미를 설치하는 과정은 간단합니다.
 
 > [!NOTE]
-> UWP 앱에만 표준 텍스트, HTML, XML 및 JSON 시각화 도우미 지원 됩니다. 사용자가 만든 사용자 지정 시각화 도우미는 지원되지 않습니다.
+> UWP 앱에서는 표준 텍스트, HTML, XML 및 JSON 시각화 도우미만 지원 됩니다. 사용자가 만든 사용자 지정 시각화 도우미는 지원되지 않습니다.
 
 ### <a name="to-install-a-visualizer"></a>시각화 도우미를 설치하려면
 
@@ -44,6 +44,6 @@ ms.locfileid: "63389316"
 
 4. 디버깅 세션을 다시 시작합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Create Custom Visualizers of Data](../debugger/create-custom-visualizers-of-data.md)(데이터의 사용자 지정 시각화 도우미 만들기)
 - [방법: 시각화 도우미 작성](/visualstudio/debugger/create-custom-visualizers-of-data)

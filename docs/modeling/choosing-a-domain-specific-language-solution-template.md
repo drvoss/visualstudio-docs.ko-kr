@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d5eac08833c534e9da3a998687992cca6bc47c2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 110d357bd113913ab73990b8e3cfa12e4dd1cdae
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653675"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748518"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>도메인별 언어 솔루션 템플릿 선택
 도메인별 언어 솔루션을 만들려면 도메인 특정 언어 디자이너 마법사에서 사용할 수 있는 솔루션 템플릿 중 하나를 선택 합니다. 만들려는 언어와 가장 비슷한 템플릿을 선택 하면 시작 솔루션에 대 한 수정 사항을 최소화할 수 있습니다.
@@ -31,6 +31,6 @@ ms.locfileid: "72653675"
 |최소 WPF 디자이너|-작은 모델<br />-모델을 표시 하는 Windows Presentation Foundation 사용자 인터페이스|DSL이 그래픽 디자이너가 아닌 WPF 사용자 인터페이스에 바인딩되는 응용 프로그램을 빌드 하려는 경우이 템플릿을 사용 합니다.<br /><br /> 사용자 인터페이스의 디자이너는 Dsl\UI. 폴더에 있습니다.<br /><br /> UI 디자이너를 열려면 먼저 프로젝트를 빌드해야 합니다.<br /><br /> 자세한 내용은 [WPF 기반 도메인별 언어 만들기](../modeling/creating-a-wpf-based-domain-specific-language.md)를 참조 하세요.|
 |DSL 라이브러리|-최소 라이브러리|다른 DSL 정의로 가져올 수 있는 부분 DSL 정의를 작성 하려는 경우이 템플릿을 사용 합니다.|
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [도메인별 언어 도구 개요](../modeling/overview-of-domain-specific-language-tools.md)

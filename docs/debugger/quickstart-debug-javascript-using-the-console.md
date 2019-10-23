@@ -16,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b61147467ff27ec8b69e1a2fddfcd00138065fa
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 2a92daf09f033da020fe54369a20483686c72f81
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589050"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730427"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Visual Studio에서 콘솔을 사용 하 여 JavaScript 디버그
 
@@ -249,7 +249,7 @@ JavaScript 콘솔 창을 사용하면 한번에 웹 플랫폼 호스트 (WWAHost
 
 또한 `cd` 명령을 사용하여 실행 컨텍스트를 전환할 수도 있지만, 다른 실행 컨텍스트의 이름을 알아야 하고 사용하는 참조가 범위 내에 있어야 합니다. **대상** 목록에서 다른 실행 컨텍스트에 액세스하기가 더 쉽습니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 - [Visual Studio에서 앱 디버그](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
 - [JavaScript 콘솔 명령](../debugger/javascript-console-commands.md?view=vs-2017)
 - [앱 새로 고침(JavaScript)](../debugger/refresh-an-app-javascript.md)

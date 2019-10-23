@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_acceleratorPointerTags | Microsoft Docs
+title: 'IDiaSymbol:: get_acceleratorPointerTags | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1724ee3e81ac00ed048f323105842361ec22bc7
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f36b4bf9fdd362f4941e33745d59d481a473c607
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62827296"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741110"
 ---
-# <a name="idiasymbolgetacceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
-에 해당 하는 모든 가속기 포인터 태그 값을 반환 된 C++ AMP 액셀러레이터 스텁 함수입니다.
+# <a name="idiasymbolget_acceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
+C++ AMP accelerator 스텁 함수에 해당 하는 액셀러레이터 포인터 태그 값을 모두 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -32,21 +32,21 @@ HRESULT get_acceleratorPointerTags(
 #### <a name="parameters"></a>매개 변수
  `cnt`
 
-[in] 출력 배열의 크기 `pPointerTags`합니다.
+진행 출력 배열의 크기 `pPointerTags`입니다.
 
  `pcnt`
 
-[out] Accelerator 포인터 태그의 수는 C++ AMP 액셀러레이터 스텁 함수입니다.
+제한이 C++ AMP accelerator 스텁 함수의 액셀러레이터 포인터 태그 수입니다.
 
  `pPointerTags`
 
-[out] A `DWORD` accelerator 포인터 태그 값으로 채워진 배열 포인터를 C++ AMP 액셀러레이터 스텁 함수입니다.
+제한이 C++ AMP accelerator 스텁 함수의 액셀러레이터 포인터 태그 값으로 채워지는 `DWORD` 배열 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 `S_FALSE` 또는 오류 코드를 반환 합니다.
 
-## <a name="remarks"></a>설명
- 이 메서드가 호출 되는 `IDiaSymbol` 에 해당 하는 인터페이스를 C++ AMP 액셀러레이터 스텁 함수입니다.
+## <a name="remarks"></a>주의
+ 이 메서드는 C++ AMP 액셀러레이터 스텁 함수에 해당 하는 `IDiaSymbol` 인터페이스에서 호출 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

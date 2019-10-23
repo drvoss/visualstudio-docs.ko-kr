@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb1088dafea1c43e624d029de6b890c9b597b061
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c00fdf25b29c8a122347cf5261dfcbcb07d9415d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658170"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747463"
 ---
 # <a name="properties-of-geometry-shapes"></a>기하 도형의 속성
 Geometry 셰이프를 사용 하 여 도메인 클래스 인스턴스를 도메인 특정 언어로 표시 하는 방법을 지정할 수 있습니다. 자세한 내용은 [도메인별 언어를 정의 하는 방법](../modeling/how-to-define-a-domain-specific-language.md)을 참조 하세요. 이러한 속성을 사용 하는 방법에 대 한 자세한 내용은 [도메인별 언어 사용자 지정 및 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)을 참조 하세요.
@@ -51,6 +51,6 @@ Geometry 셰이프를 사용 하 여 도메인 클래스 인스턴스를 도메�
 |고정 도구 설명 텍스트|고정 도구 설명에 사용 되는 텍스트입니다.|\<none >|
 |Help Keyword|이 모양에 대 한 F1 도움말을 인덱싱하는 데 사용 되는 키워드입니다.|\<none >|
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

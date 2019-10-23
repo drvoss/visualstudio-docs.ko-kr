@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::Enum | Microsoft Docs
+title: 'IDiaPropertyStorage:: Enum | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e39693f63ea706ecdfa30a9ce0202444f51d4f57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 00bd1ea5e20d30fa1d2c32101b56f55d169f1ce2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839682"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742950"
 ---
 # <a name="idiapropertystorageenum"></a>IDiaPropertyStorage::Enum
-이 집합 내에서 속성에 대 한 열거자를 가져옵니다.
+이 집합의 속성에 대 한 열거자를 가져옵니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,10 +33,10 @@ HRESULT Enum ( 
 #### <a name="parameters"></a>매개 변수
  `ppenum`
 
-[out] 반환 된 `IEnumSTATPROPSTG` 개체 (Microsoft.VisualStudio.OLE.Interop 네임 스페이스) 속성의 열거형을 나타내는입니다.
+제한이 속성의 열거형을 나타내는 `IEnumSTATPROPSTG` 개체 (VisualStudio 네임 스페이스)를 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`; 그렇지 않으면 오류 코드를 반환 합니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

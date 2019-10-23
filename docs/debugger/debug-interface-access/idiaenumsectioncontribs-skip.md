@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsectioncontribs:: Skip | Microsoft Docs'
+title: 'IDiaEnumSectionContribs:: Skip | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c90c2148fc5a563fef8946bd39acf4603d7d09f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cb371d841c10b64895400f66bf73159f27d68ec1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833235"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744259"
 ---
 # <a name="idiaenumsectioncontribsskip"></a>IDiaEnumSectionContribs::Skip
-열거형 시퀀스에서 섹션 작성 글의 지정된 된 수를 건너뜁니다.
+열거형 시퀀스에서 지정 된 개수의 섹션 기여를 건너뜁니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,10 +33,10 @@ HRESULT Skip( 
 #### <a name="parameters"></a>매개 변수
  `celt`
 
-[in] 건너뛸 열거형 시퀀스에서 섹션 작성 글의 수입니다.
+진행 건너뛸 열거 시퀀스의 섹션 기여 수입니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 없습니다 자세한 섹션 작성 글을 건너뛸 경우.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 건너뛸 섹션 기여도가 더 이상 없는 경우 `S_FALSE`을 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

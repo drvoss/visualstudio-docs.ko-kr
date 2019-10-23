@@ -15,19 +15,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 821e3bc4abc379f0ed7fc1343867f88fefe54b17
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7696122cc9f0d431f310b8d6efb10819af995823
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906081"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731857"
 ---
 # <a name="how-to-view-script-documents-javascript"></a>방법: 스크립트 문서 보기 (JavaScript)
 
-서버 쪽 스크립트 파일이 솔루션 탐색기에 표시 합니다. 클라이언트 쪽 스크립트 파일은 디버그 모드나 중단 모드에서만 표시되며 클라이언트 쪽 스크립트 파일에 표시 된 **스크립트 문서** 노드.
+서버 쪽 스크립트 파일은 솔루션 탐색기에서 볼 수 있습니다. 클라이언트 쪽 스크립트 파일은 디버그 모드나 중단 모드에서만 표시되며 클라이언트 쪽 스크립트 파일은 **스크립트 문서** 노드에 표시 됩니다.
 
 > [!NOTE]
-> 이전의 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], 서버 쪽 스크립트에서 생성 된 클라이언트 쪽 스크립트 파일이 스크립트 탐색기 창에 나타납니다.
+> @No__t_0 이전에서는 서버 쪽 스크립트에서 생성 된 클라이언트 쪽 스크립트 파일이 스크립트 탐색기 창에 나타났습니다.
 
 ### <a name="to-view-a-server-side-script-document"></a>서버 쪽 스크립트 문서를 보려면
 
@@ -45,5 +45,5 @@ ms.locfileid: "62906081"
 
      클라이언트 쪽 스크립트 파일이 소스 창에서 열립니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [디버거에서 데이터 보기](../debugger/viewing-data-in-the-debugger.md)

@@ -1,5 +1,5 @@
 ---
-title: 관리 코드에 어설션 | Microsoft Docs
+title: 관리 코드의 어설션 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,14 +22,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a2637e801ba0d317e4c0abec8bd12197656dc844
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 529c19753d09d6335e5c9fc5e839cdb7cd0c118c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564140"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745783"
 ---
-# <a name="assertions-in-managed-code"></a>관리 코드에 어설션 사용
+# <a name="assertions-in-managed-code"></a>관리 코드의 어설션
 어설션 또는 `Assert` 문은 `Assert` 문에 대한 인수로 지정하는 조건을 테스트합니다. 조건이 true로 평가되면 동작이 발생하지 않고, 조건이 false로 평가되면 어설션이 실패합니다. 디버그 빌드로 실행 중인 경우 프로그램 중단 모드가 시작됩니다.
 
 ## <a name="BKMK_In_this_topic"></a> 항목 내용
@@ -210,14 +210,14 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
  [항목 내용](#BKMK_In_this_topic)
 
 ## <a name="BKMK_Setting_assertions_in_configuration_files"></a> 구성 파일에서 어설션 설정
- 코드뿐만 아니라 프로그램 구성 파일에서도 어설션을 설정할 수 있습니다. 자세한 내용은 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 또는 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>를 참조하세요.
+ 코드뿐만 아니라 프로그램 구성 파일에서도 어설션을 설정할 수 있습니다. 자세한 내용은 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 또는 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>
 - <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>
 - [디버거 보안](../debugger/debugger-security.md)
-- [응용 프로그램 추적 및 조율](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)
+- [애플리케이션 추적 및 조율](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)
 - [방법: 추적 및 디버그를 사용한 조건부 컴파일](/dotnet/framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug)
 - [C#, F#, and Visual Basic Project Types](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)(C#, F# 및 Visual Basic 프로젝트 형식)
 - [관리 코드 디버그](../debugger/debugging-managed-code.md)

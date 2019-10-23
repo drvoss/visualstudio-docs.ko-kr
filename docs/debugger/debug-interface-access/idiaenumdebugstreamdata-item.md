@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumdebugstreamdata:: Item | Microsoft Docs'
+title: 'IDiaEnumDebugStreamData:: Item | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f4a3e3f668789f98600cd649716413a57b13130
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e221516198d186dd08c353123ce4236f0be1383c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838508"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744815"
 ---
 # <a name="idiaenumdebugstreamdataitem"></a>IDiaEnumDebugStreamData::Item
-지정된 된 레코드를 검색합니다.
+지정 된 레코드를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -36,24 +36,24 @@ HRESULT Item ( 
 #### <a name="parameters"></a>매개 변수
  인덱스입니다.
 
-[in] 검색할 레코드의 인덱스입니다. 인덱스는 0에서 범위 `count`-1로, 여기서 `count` 반환한 [idiaenumdebugstreamdata:: Get_count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)합니다.
+진행 검색할 레코드의 인덱스입니다. 인덱스의 범위는 0 ~ `count`-1입니다. 여기서 `count`는 [IDiaEnumDebugStreamData:: get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)에 의해 반환 됩니다.
 
  cbData
 
-[in] 바이트의 데이터 버퍼의 크기입니다.
+진행 데이터 버퍼의 크기 (바이트)입니다.
 
  pcbData
 
-[out] 반환 된 바이트 수를 반환 합니다. 하는 경우 `data` 됩니다 `NULL`, 다음 `pcbData` 지정된 된 레코드에서 사용 가능한 데이터의 바이트의 총 수를 포함 합니다.
+제한이 반환 된 바이트 수를 반환 합니다. @No__t_0 `pcbData` `NULL` 되는 경우 지정 된 레코드에서 사용할 수 있는 총 데이터 바이트 수를 포함 합니다.
 
  데이터[]
 
-[out] 디버그 스트림 레코드 데이터를 사용 하 여 입력 되는 버퍼입니다.
+제한이 디버그 스트림 레코드 데이터로 채워진 버퍼입니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다. 반환 `E_INVALIDARG` 잘못 된 매개 변수에 대 한 경우에 `index` 매개 변수 범위를 벗어났습니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다. 는 잘못 된 매개 변수에 대 한 `E_INVALIDARG`를 반환 하 고 `index` 매개 변수가 범위를 벗어나면를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
 - [IDiaEnumDebugStreamData::Next](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)
 - [IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)

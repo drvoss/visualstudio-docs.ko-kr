@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e026b837205a8bf62f5d33dc2f5449d40cc485e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f0041ef4d83003d1b42e0c95b1412262d08458c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828628"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743154"
 ---
-# <a name="idialinenumbergetsourcefile"></a>IDiaLineNumber::get_sourceFile
-소스 파일에 대 한 참조를 검색합니다.
+# <a name="idialinenumberget_sourcefile"></a>IDiaLineNumber::get_sourceFile
+소스 파일에 대 한 참조를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,11 +33,11 @@ HRESULT get_sourceFile ( 
 #### <a name="parameters"></a>매개 변수
  `pRetVal`
 
-[out] 반환 된 [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) 소스 파일을 나타내는 개체입니다.
+제한이 소스 파일을 나타내는 [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) 개체를 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.
+ 성공하면 `S_OK`를 반환합니다. 이 속성이 지원 되지 않는 경우 `S_FALSE`를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

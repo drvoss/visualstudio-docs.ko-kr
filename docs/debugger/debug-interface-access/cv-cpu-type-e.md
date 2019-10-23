@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d3d1df772dc6fa4b1ad6e38a319532bea111e97
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: ccc83062427ac2ecd3f340d6e1dbbe4d988ab0af
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431733"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745329"
 ---
-# <a name="cvcputypee"></a>CV_CPU_TYPE_e
-대상 프로세서를 지정합니다.
+# <a name="cv_cpu_type_e"></a>CV_CPU_TYPE_e
+대상 프로세서를 지정 합니다.
 
 > [!NOTE]
-> 프로세서를 앞의 열거형 요소에서 식별 된 `CV_CFL_*` 접두사입니다.
+> 처리기는 `CV_CFL_*` 접두사 뒤의 열거형 요소에서 식별 됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -95,12 +95,12 @@ typedef enum CV_CPU_TYPE_e {
 } CV_CPU_TYPE_e;
 ```
 
-## <a name="remarks"></a>설명
-이 열거형의 값에는 호출에서 반환 되는 [idiasymbol:: Get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md) 메서드.
+## <a name="remarks"></a>주의
+이 열거형의 값은 [IDiaSymbol:: get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md) 메서드를 호출 하 여 반환 됩니다.
 
 ## <a name="requirements"></a>요구 사항
-헤더: cvconst.h
+헤더: cvconst
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [열거형 및 구조체](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md)

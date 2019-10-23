@@ -10,24 +10,24 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcc7fa218d5ee4ba92af5ad8316f95ceb268bdf6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8dfec9cc8b57dfb12b3977cc04e2e62ecc0dea96
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344898"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72726857"
 ---
 # <a name="legacy-language-service-overview"></a>레거시 언어 서비스 개요
-언어 서비스 제공 하는 특정 구현 하면 편집기 지 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 기능입니다. 자주 사용 하는 기능 및 기타 기능에 대 한 부분 지원에 대 한 전체 지원을 제공 하는 관리 패키지 프레임 워크 (MPF) 언어 서비스 클래스.
+언어 서비스는 특정 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 기능을 구현 하는 데 사용할 수 있는 편집기를 지원 합니다. MPF (관리 패키지 프레임 워크) 언어 서비스 클래스는 자주 사용 되는 기능 및 기타 기능에 대 한 부분 지원을 완벽 하 게 지원 합니다.
 
 ## <a name="fully-supported-features-in-the-mpf"></a>MPF에서 완전히 지원 되는 기능
- MPF 언어 서비스 클래스에는 다음 기능을 지원 합니다.
+ MPF 언어 서비스 클래스는 다음과 같은 기능을 지원 합니다.
 
 - 구문 강조
 
 - 개요
 
-- 코드 블록을 주석 처리
+- 코드 블록 주석 처리
 
 - 중괄호 일치
 
@@ -44,18 +44,18 @@ ms.locfileid: "66344898"
 - IntelliSense 단어 완성
 
 ## <a name="partially-supported-features-in-the-mpf"></a>MPF에서 부분적으로 지원 되는 기능
- MPF는 다음 기능에 대 한만 부분 지원 합니다. 이 MPF를 호출한 메서드를 구현 해야 한다는 것을 의미 합니다.
+ MPF는 다음 기능에 대 한 부분 지원만 제공 합니다. 즉, MPF에서 호출 하는 메서드를 구현 해야 합니다.
 
-- 코드 서식 다시 지정 합니다. 다시 구현 하는 코드를 제공 합니다.
+- 코드를 다시 포맷 합니다. 다시 포맷을 구현 하는 코드를 제공 합니다.
 
-- 유효한 코드 범위를 식별 하 여 중단점 유효성 검사 합니다. 코드 범위를 식별 하는 코드를 제공 합니다.
+- 유효한 코드 범위를 식별 하 여 중단점의 유효성을 검사 합니다. 코드 범위를 식별 하는 코드를 제공 합니다.
 
-- 디버거가 지 원하는 **자동** 창 변수를 표시 합니다. 창에 표시를 결정 하는 코드를 제공 합니다.
+- 변수를 표시 하기 위한 디버거 **자동** 창 지원 창에 표시할 항목을 결정 하는 코드를 제공 합니다.
 
-- 지원 합니다 **탐색 모음** 형식 및 멤버 간의 빠른 탐색에 대 한 합니다. 구현 하 고 목록에서 채우는 도우미 클래스를 반환 합니다 **탐색 모음** 콤보 상자입니다.
+- 형식 및 멤버 간의 빠른 탐색을 위한 **탐색 모음** 지원. **탐색 모음** 콤보 상자의 목록을 채우는 도우미 클래스를 구현 하 고 반환 합니다.
 
 ## <a name="implementation"></a>구현
- 언어 서비스 자체 및 언어에 대 한 지원 하려는 언어 서비스 기능을 구현 하려면 몇 가지 단계를 완료 해야 합니다. 이러한 단계는 다음 항목에 설명 합니다.
+ 언어 서비스 자체와 언어에 지원 하려는 언어 서비스 기능을 구현 하려면 몇 가지 단계를 완료 해야 합니다. 이러한 단계는 다음 항목에서 설명 합니다.
 
 - [레거시 언어 서비스 구현](../../extensibility/internals/implementing-a-legacy-language-service2.md)
 
@@ -89,6 +89,6 @@ ms.locfileid: "66344898"
 
 - [레거시 언어 서비스의 중단점 유효성 검사](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [레거시 언어 서비스 구현](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [레거시 언어 서비스 확장성](../../extensibility/internals/legacy-language-service-extensibility.md)

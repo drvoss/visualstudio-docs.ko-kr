@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumstackframes:: Next | Microsoft Docs'
+title: 'IDiaEnumStackFrames:: Next | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9cf220c65cf11836e64a7e1f4c0142c89669f4b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ffde40e221823d9656c4b6414b14067ac9d0537a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833309"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744035"
 ---
 # <a name="idiaenumstackframesnext"></a>IDiaEnumStackFrames::Next
-열거형 시퀀스에서 지정 된 개수의 스택 프레임 요소를 검색합니다.
+열거형 시퀀스에서 지정 된 수의 스택 프레임 요소를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -35,19 +35,19 @@ HRESULT Next( 
 #### <a name="parameters"></a>매개 변수
  celt
 
-[in] 검색할 열거자의 stackframe 요소의 수입니다.
+진행 검색할 열거자의 stackframe 요소 수입니다.
 
  rgelt
 
-[out] 배열을 채울 요청한 [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) 개체입니다.
+제한이 요청 된 [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) 개체로 채워질 배열입니다.
 
  pceltFetched
 
-[out] 인출된 열거자의 수가 스택 프레임 요소를 반환합니다.
+제한이 인출 된 열거자의 스택 프레임 요소 수를 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 자세한 스택 프레임이 없는 경우. 그러지 않으면 오류 코드가 반환됩니다.
+ 성공하면 `S_OK`를 반환합니다. 스택 프레임이 더 이상 없는 경우 `S_FALSE`를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findInlineeLinesByAddr | Microsoft Docs
+title: 'IDiaSymbol:: findInlineeLinesByAddr | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ede156a5416ca065a5271ae87abfcfd621f02b26
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 1709120dfa8e115f4b14a4ee4e2d1c7ffb293329
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837994"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741216"
 ---
 # <a name="idiasymbolfindinlineelinesbyaddr"></a>IDiaSymbol::findInlineeLinesByAddr
-클라이언트가 없는 인라인을 직접 또는 간접적으로이 기호를 지정 된 주소 범위 내에서 모든 함수의 줄 번호 정보를 반복 하는 데 사용 하는 열거형을 검색 합니다.
+클라이언트에서 지정 된 주소 범위 내에서이 기호에 직접 또는 간접적으로 인라인 된 모든 함수의 줄 번호 정보를 반복할 수 있도록 하는 열거형을 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -34,24 +34,24 @@ HRESULT findInlineeLinesByAddr ( 
 #### <a name="parameters"></a>매개 변수
  `isect`
 
-[in] 주소 섹션 구성 요소를 지정합니다.
+진행 주소의 섹션 구성 요소를 지정 합니다.
 
  `offset`
 
-[in] 주소의 오프셋된 구성 요소를 지정합니다.
+진행 주소의 오프셋 구성 요소를 지정 합니다.
 
  `length`
 
-[in] 이 쿼리를 처리 하기 위해 바이트 수의 주소 범위를 지정 합니다.
+진행 이 쿼리를 포함 하는 주소 범위 (바이트 수)를 지정 합니다.
 
  `ppResult`
 
-[out] 보유 한 `IDiaEnumLineNumbers` 검색 되는 줄 번호의 목록을 포함 하는 개체입니다.
+제한이 검색 되는 줄 번호 목록이 포함 된 `IDiaEnumLineNumbers` 개체를 보유 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md)

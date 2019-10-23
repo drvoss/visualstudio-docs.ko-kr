@@ -1,5 +1,5 @@
 ---
-title: 'Idialinenumber:: Get_relativevirtualaddress | Microsoft Docs'
+title: 'IDiaLineNumber:: get_relativeVirtualAddress | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 087bd1cb40be2129853807f3f43ea0e87615c36a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 52afbcdf07c41cfa39476aa055d62f02267356a2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839789"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743174"
 ---
-# <a name="idialinenumbergetrelativevirtualaddress"></a>IDiaLineNumber::get_relativeVirtualAddress
-블록의 상대 가상 주소 RVA ()를 검색합니다.
+# <a name="idialinenumberget_relativevirtualaddress"></a>IDiaLineNumber::get_relativeVirtualAddress
+블록의 RVA (상대 가상 주소)를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,10 +33,10 @@ HRESULT get_relativeVirtualAddress ( 
 #### <a name="parameters"></a>매개 변수
  `pRetVal`
 
-[out] 블록의 이미지 상대 가상 주소를 반환합니다.
+제한이 블록의 이미지 상대 가상 주소를 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.
+ 성공하면 `S_OK`를 반환합니다. 이 속성이 지원 되지 않는 경우 `S_FALSE`를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

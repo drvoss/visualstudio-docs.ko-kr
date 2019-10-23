@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 154abe3d73fa71ac897f0442697196cd859f32bd
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 9e2e6d69e4c621d6be81a00a61482b71199bc0fc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72435899"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745751"
 ---
 # <a name="cc-assertions"></a>C/C++ 어설션
 어설션 문은 프로그램의 특정 지점에서 true로 간주 되는 조건을 지정 합니다. 해당 조건이 true가 아니면 어설션이 실패 하 고, 프로그램 실행이 중단 되 고, [어설션 실패 대화 상자가](../debugger/assertion-failed-dialog-box.md) 나타납니다.
@@ -337,7 +337,7 @@ _ASSERT(!myErr); // Don't do this, either!
 
 [항목 내용](#BKMK_In_this_topic)
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [디버거 보안](../debugger/debugger-security.md)
 - [네이티브 코드 디버그](../debugger/debugging-native-code.md)

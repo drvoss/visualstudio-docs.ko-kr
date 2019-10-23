@@ -1,5 +1,5 @@
 ---
-title: 'Idiaframedata:: Get_lengthlocals | Microsoft Docs'
+title: 'IDiaFrameData:: get_lengthLocals | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6688844b5e5353d0d80ef2fb5fa2466a53f5f34a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ff67d3b7e9466451c7e7f79bf4137ec21f629e04
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840072"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743591"
 ---
-# <a name="idiaframedatagetlengthlocals"></a>IDiaFrameData::get_lengthLocals
-스택에 있는 지역 변수의 바이트 수를 검색 합니다.
+# <a name="idiaframedataget_lengthlocals"></a>IDiaFrameData::get_lengthLocals
+스택에 푸시되는 지역 변수의 바이트 수를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,14 +33,14 @@ HRESULT get_lengthLocals ( 
 #### <a name="parameters"></a>매개 변수
  `pRetVal`
 
-[out] 지역 변수의 바이트 수를 반환합니다.
+제한이 지역 변수의 바이트 수를 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.
+ 성공하면 `S_OK`를 반환합니다. 이 속성이 지원 되지 않는 경우 `S_FALSE`를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.
 
-## <a name="remarks"></a>설명
- 이 메서드에서 반환 되는 값은 프로그램 문자열의 해석에 일반적으로 사용 됩니다 (참조를 [idiaframedata:: Get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) 프로그램 문자열로의 정의 대 한 메서드).
+## <a name="remarks"></a>주의
+ 이 메서드에서 반환 되는 값은 일반적으로 프로그램 문자열을 해석 하는 데 사용 됩니다. 프로그램 문자열 정의는 [IDiaFrameData:: get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) 메서드를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
 - [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)

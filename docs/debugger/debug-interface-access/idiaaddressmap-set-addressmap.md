@@ -1,5 +1,5 @@
 ---
-title: 'Idiaaddressmap:: Set_addressmap | Microsoft Docs'
+title: 'IDiaAddressMap:: set_addressMap | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 963ee64b639780bae60a4c2655db8b666d87c702
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8414788af44d78943088b78b2d3e42a5a8d8c50b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554250"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745023"
 ---
-# <a name="idiaaddressmapsetaddressmap"></a>IDiaAddressMap::set_addressMap
-이미지 레이아웃 번역을 지원 하기 위해 주소 맵을 제공 합니다.
+# <a name="idiaaddressmapset_addressmap"></a>IDiaAddressMap::set_addressMap
+이미지 레이아웃 번역을 지 원하는 주소 맵을 제공 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -35,23 +35,23 @@ HRESULT set_addressMap ( 
 #### <a name="parameters"></a>매개 변수
  `cbData`
 
-[in] 요소 수를 `data` 매개 변수입니다.
+진행 @No__t_0 매개 변수에 있는 요소의 수입니다.
 
  `data[]`
 
-[in] 배열을 [DiaAddressMapEntry 구조체](../../debugger/debug-interface-access/diaaddressmapentry.md) 변환 맵을 정의 하는 구조입니다.
+진행 번역 맵을 정의 하는 [Diaaddressmapentry 구조](../../debugger/debug-interface-access/diaaddressmapentry.md) 구조체의 배열입니다.
 
  `imagetoSymbols`
 
-[in] `TRUE` 경우는 `data` 매개 변수 정의에서 새 이미지 레이아웃을 원래 레이아웃으로 지도 (디버그 기호에서 설명). `FALSE` 경우 `data` 은 원래 레이아웃에서 가져온 새 이미지 레이아웃을 맵입니다.
+[in] `data` 매개 변수가 새 이미지 레이아웃에서 원래 레이아웃 (디버그 기호에서 설명)으로 맵을 정의 하는 경우에 `TRUE` 합니다. `data` 원래 레이아웃에서 가져온 새 이미지 레이아웃에 대 한 맵입니다 `FALSE` 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
-## <a name="remarks"></a>설명
- 일반적으로 DIA 프로그램 데이터베이스 (.pdb) 파일에서 주소 변환 지도 검색합니다. 이러한 값을 사용할 수 없는 경우는 [idiaaddressmap:: Set_imageheaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) 메서드는 두 번 사용 하 여 한 번를 `imagetoSymbols` 매개 변수 설정 `TRUE` 및 한 번를 `imagetoSymbols` 매개 변수 설정 `FALSE`. 사용 하 여 주소 맵 번역을 사용할 수 없습니다는 [idiaaddressmap:: Put_addressmapenabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) 메서드 모두 번역 maps는 제공 되지 않는 경우.
+## <a name="remarks"></a>주의
+ 일반적으로 DIA는 프로그램 데이터베이스 (.pdb) 파일에서 주소 변환 맵을 검색 합니다. 이러한 값이 없는 경우 [IDiaAddressMap:: set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) 메서드는 `imagetoSymbols` 매개 변수를 `TRUE`로 설정 하 고 `imagetoSymbols` 매개 변수를 `FALSE`로 설정 하 여 한 번 호출 됩니다. [IDiaAddressMap::P ut_addressmapenabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) 메서드를 사용 하 여 두 변환 맵을 모두 제공 하지 않으면 주소 맵 번역을 사용 하도록 설정할 수 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [DiaAddressMapEntry 구조체](../../debugger/debug-interface-access/diaaddressmapentry.md)
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)
 - [IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)

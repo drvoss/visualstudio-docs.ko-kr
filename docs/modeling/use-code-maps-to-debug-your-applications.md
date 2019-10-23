@@ -16,12 +16,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a88a72e043f1a4bdbc3bb520161e2f6be92e394
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d0b3c65c0a7e5cb08869a6d756ce0c443fa3bf2e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663776"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748282"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>코드 맵을 사용하여 애플리케이션 디버그
 
@@ -140,7 +140,7 @@ ms.locfileid: "72663776"
 
  이제 조사를 완료 했습니다. 코드를 매핑하여 문제를 성공적으로 발견하고 해결했습니다. 코드 주위를 탐색하고 배운 내용을 기억하는 데 도움이 되며 문제를 해결하는 단계를 보여 주는 맵도 있습니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [디버그하는 동안 호출 스택의 메서드 매핑](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [코드 시각화](../modeling/visualize-code.md)

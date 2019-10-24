@@ -11,45 +11,45 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9460a30e63a7d2c282bf537517016dfa5f790a1e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e3321b70b51d194c67f1deee8ed33e240762b16b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328431"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72725834"
 ---
 # <a name="project-configuration-object"></a>프로젝트 구성 개체
-프로젝트 구성 개체를 관리 UI에 구성 정보를 표시 합니다.
+프로젝트 구성 개체는 UI에 대 한 구성 정보 표시를 관리 합니다.
 
  ![Visual Studio 프로젝트 구성](../../extensibility/internals/media/vsprojectcfg.gif "vsProjectCfg") 프로젝트 구성 속성 페이지
 
- 프로젝트 구성 공급자 프로젝트 구성을 관리합니다. 환경 및 다른 패키지에 액세스 하려면 프로젝트의 구성에 대 한 정보를 검색 및 프로젝트 구성 공급자 개체에 연결 된 인터페이스를 호출 합니다.
+ 프로젝트 구성 공급자는 프로젝트 구성을 관리 합니다. 환경 및 기타 패키지를 사용 하 여 프로젝트 구성에 대 한 정보에 액세스 하 고이에 대 한 정보를 검색 하려면 프로젝트 구성 공급자 개체에 연결 된 인터페이스를 호출 합니다.
 
 > [!NOTE]
-> 만들기 또는 프로그래밍 방식으로 솔루션 구성 파일을 편집할 수 없습니다. 사용 해야 `DTE.SolutionBuilder`합니다. 참조 [솔루션 구성](../../extensibility/internals/solution-configuration.md) 자세한 내용은 합니다.
+> 프로그래밍 방식으로 솔루션 구성 파일을 만들거나 편집할 수 없습니다. @No__t_0를 사용 해야 합니다. 자세한 내용은 [솔루션 구성](../../extensibility/internals/solution-configuration.md) 을 참조 하세요.
 
- 구성 UI에서에서 사용할 표시 이름에 게시 하려면 프로젝트를 구현 해야 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_DisplayName%2A>합니다. 환경 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A>의 목록을 반환 하는 `IVsCfg` 환경 UI에 나열할 구성 및 플랫폼 정보에 대 한 표시 이름을 가져오는 데 사용할 수 있는 포인터입니다. 현재 구성 및 플랫폼 활성 솔루션 구성에 저장 하는 프로젝트의 구성에 의해 결정 됩니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager.FindActiveProjectCfg%2A> 메서드를 사용 하 여 활성 프로젝트 구성을 검색할 수 있습니다.
+ 구성 UI에서 사용할 표시 이름을 게시 하려면 프로젝트가 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_DisplayName%2A>를 구현 해야 합니다. 환경에서는 환경 UI에 나열 될 구성 및 플랫폼 정보에 대 한 표시 이름을 가져오는 데 사용할 수 있는 `IVsCfg` 포인터 목록을 반환 하는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A>를 호출 합니다. 활성 구성 및 플랫폼은 활성 솔루션 구성에 저장 된 프로젝트의 구성에 따라 결정 됩니다. @No__t_0 메서드를 사용 하 여 활성 프로젝트 구성을 검색할 수 있습니다.
 
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> 개체에 선택적으로 구현할 수 있습니다 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2> 개체를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProviderEventsHelper> 검색할 수 있도록 개체는 `IVsProjectCfg2` 정식 프로젝트 구성 이름에 따라 개체.
+ @No__t_0 개체는 필요에 따라 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProviderEventsHelper> 개체를 사용 하 여 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2> 개체에 구현 하 여 정식 프로젝트 구성 이름을 기반으로 `IVsProjectCfg2` 개체를 검색할 수 있습니다.
 
- 프로젝트 구성에 대 한 액세스를 사용 하 여 환경 및 다른 프로젝트를 제공 하는 또 다른 방법은의 구현을 제공 하는 프로젝트에 대 한 것은 `IVsCfgProvider2::GetCfgs` 하나 이상의 구성 개체를 반환 하는 방법입니다. 프로젝트 구현할 수도 있습니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>에서 상속 하는 `IVsProjectCfg` 있으므로 `IVsCfg`, 구성 관련 정보를 제공 합니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2> 추가, 삭제 및 프로젝트 구성 이름 바꾸기에 대 한 플랫폼 및 기능을 지원 합니다.
+ 프로젝트 구성에 대 한 액세스 권한이 있는 환경 및 기타 프로젝트를 제공 하는 또 다른 방법은 프로젝트에서 하나 이상의 구성 개체를 반환 하는 `IVsCfgProvider2::GetCfgs` 메서드의 구현을 제공 하는 것입니다. 프로젝트는 `IVsProjectCfg`에서 상속 하 고 `IVsCfg`에서 상속 하 여 구성 관련 정보를 제공 하는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>를 구현할 수도 있습니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>는 플랫폼 및 프로젝트 구성을 추가, 삭제 및 이름 변경 하는 기능을 지원 합니다.
 
 > [!NOTE]
-> Visual Studio는 두 가지 구성 유형을 제한 이상, 구성을 처리 하는 코드 작성 해서는 안 가정을 사용 하 여 구성의 숫자에 대 한 또는 가정 하 고 쓸 수 해야 하므로 하나만 지정 된 프로젝트 구성 일반 정품 또는 디버그 반드시 합니다. 이렇게 하면 사용 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsReleaseOnly%2A> 고 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsDebugOnly%2A> 사용 되지 않습니다.
+> Visual Studio는 더 이상 두 개의 구성 형식으로 제한 되지 않으므로 구성을 처리 하는 코드는 구성의 수에 대 한 가정을 사용 하 여 작성 하면 안 되며, 프로젝트가 하나만 있는 것으로 가정 하 여 작성 되어서는 안 됩니다. 구성은 반드시 디버그 또는 일반 정품 이어야 합니다. 이렇게 하면 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsReleaseOnly%2A>를 사용 하 고 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsDebugOnly%2A> 사용 되지 않습니다.
 
- 호출 `QueryInterface` 에서 반환 되는 개체에`IVsGetCfgProvider::GetCfgProvider` 검색 `IVsCfgProvider2`합니다. 하는 경우 `IVsGetCfgProvider` 를 호출 하 여 찾을 수 없습니다 `QueryInterface` 에 `IVsProject3` 프로젝트 개체를 호출 하 여 구성 공급자 개체를 액세스할 수 있습니다 `QueryInterface` 계층 루트 브라우저 개체에 대 한 반환 된 개체에 대 한 `IVsHierarchy::GetProperty(VSITEM_ROOT, VSHPROPID_BrowseObject)`, 또는 에 대해 반환 되는 구성 공급자에 대 한 포인터 `IVsHierarchy::GetProperty(VSITEM_ROOT, VSHPROPID_ConfigurationProvider)`합니다.
+ @No__t_1에서 반환 된 개체에 대 한 `QueryInterface`를 호출 하면 `IVsCfgProvider2` 검색 됩니다. @No__t_2 프로젝트 개체에서 `QueryInterface`를 호출 하 여 `IVsGetCfgProvider`를 찾을 수 없는 경우 `IVsHierarchy::GetProperty(VSITEM_ROOT, VSHPROPID_BrowseObject)`에 대해 반환 된 개체의 계층 루트 브라우저 개체 또는 구성에 대 한 포인터를 통해 `QueryInterface`를 호출 하 여 구성 공급자 개체에 액세스할 수 있습니다. `IVsHierarchy::GetProperty(VSITEM_ROOT, VSHPROPID_ConfigurationProvider)`에 대해 공급자가 반환 되었습니다.
 
- `IVsProjectCfg2` 기본적으로 빌드, 디버그에 대 한 액세스 및 배포 관리 개체를 제공 하 고 그룹 출력 자유롭게 프로젝트를 허용 합니다. 메서드 `IVsProjectCfg` 및 `IVsProjectCfg2` 구현에 사용할 수 있습니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> 빌드 프로세스를 관리 하 고 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup> 구성의 출력 그룹에 대 한 포인터입니다.
+ `IVsProjectCfg2`는 주로 빌드, 디버그 및 배포 관리 개체에 대 한 액세스를 제공 하며 프로젝트에서 출력을 그룹화 할 수 있도록 합니다. @No__t_0 및 `IVsProjectCfg2`의 메서드를 사용 하 여 빌드 프로세스를 관리 하는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>를 구현 하 고 구성의 출력 그룹에 대 한 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup> 포인터를 사용할 수 있습니다.
 
- 프로젝트는 동일한 그룹 내에 포함 된 출력 수가 구성에서 구성 달라질 경우에 지원 되는 각 구성에 대 한 그룹 수를 반환 해야 합니다. 그룹도 있어야 합니다 (정식 이름, 표시 이름 및 그룹 정보) 동일한 식별자 정보 구성에서 구성 프로젝트 내에서. 자세한 내용은 [출력에 대 한 프로젝트 구성을](../../extensibility/internals/project-configuration-for-output.md)합니다.
+ 그룹에 포함 된 출력 수가 구성에 따라 다를 수 있지만 프로젝트에서 지 원하는 각 구성에 대해 동일한 수의 그룹을 반환 해야 합니다. 또한 그룹은 구성에서 프로젝트 내의 구성으로의 식별자 정보 (정식 이름, 표시 이름 및 그룹 정보)가 동일 해야 합니다. 자세한 내용은 [출력에 대 한 프로젝트 구성](../../extensibility/internals/project-configuration-for-output.md)을 참조 하세요.
 
- 디버깅을 사용 하 여 구성을 구현 해야 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg>합니다. `IVsDebuggableProjectCfg` 구성을 시작 하려면 디버거를 허용 하는 프로젝트에서 구현 되는 선택적 인터페이스 이며 있는 구성 개체에서 구현 됩니다 `IVsCfg` 고 `IVsProjectCfg`입니다. 환경은 사용자가 f5 키를 눌러 디버거를 시작할 때 호출 합니다.
+ 디버깅을 사용 하도록 설정 하려면 구성이 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg>을 구현 해야 합니다. `IVsDebuggableProjectCfg`는 디버거가 구성을 시작할 수 있도록 프로젝트에서 구현 하는 선택적 인터페이스 이며 `IVsCfg` 및 `IVsProjectCfg`를 사용 하 여 구성 개체에서 구현 됩니다. 사용자가 F5 키를 눌러 디버거를 시작 하는 경우 환경에서 호출 합니다.
 
- `ISpecifyPropertyPages` 및 `IDispatch` 속성 페이지와 함께에서 검색 하 고 사용자에 게 구성에 종속 된 정보를 표시 하는 데 사용 됩니다. 자세한 내용은 [속성 페이지](../../extensibility/internals/property-pages.md)합니다.
+ `ISpecifyPropertyPages` 및 `IDispatch`는 속성 페이지와 함께 사용 되어 구성에 종속 된 정보를 검색 하 고 사용자에 게 표시 합니다. 자세한 내용은 [속성 페이지](../../extensibility/internals/property-pages.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [구성 옵션 관리](../../extensibility/internals/managing-configuration-options.md)
 - [빌드를 위한 프로젝트 구성](../../extensibility/internals/project-configuration-for-building.md)
 - [출력에 대한 프로젝트 구성](../../extensibility/internals/project-configuration-for-output.md)
-- [속성 페이지(Visual C++)](../../extensibility/internals/property-pages.md)
+- [속성 페이지](../../extensibility/internals/property-pages.md)
 - [솔루션 구성](../../extensibility/internals/solution-configuration.md)

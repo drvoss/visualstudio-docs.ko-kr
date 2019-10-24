@@ -16,15 +16,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c07557fa64f86349a3baf8956d99b937ceab9f5a
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 695c4c9e84ce9eb851a551dc9821bff00123a35c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043435"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737403"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>오류: 대상 컴퓨터의 Visual Studio 원격 디버거 서비스가 이 컴퓨터에 다시 연결할 수 없습니다.
-이 오류는 원격 디버거 서비스를 디버깅 하는 컴퓨터에 연결 하려고 할 때 인증할 수 없는 사용자 계정으로 실행 되 고 있는지를 의미 합니다. 원격 레거시 디버깅 엔진을 사용 하 여 디버깅 하는 경우이 오류가 발생할 수 있습니다 하 고 원격 디버거가 서비스로 실행 됩니다.
+이 오류는 원격 디버거 서비스가 디버깅 중인 컴퓨터에 연결 하려고 할 때 인증할 수 없는 사용자 계정으로 실행 되 고 있음을 의미 합니다. 이 오류는 레거시 디버깅 엔진을 사용 하 여 원격으로 디버깅할 때 원격 디버거가 서비스로 실행 되 고 있는 경우에 발생할 수 있습니다.
 
  다음 표에는 컴퓨터에 액세스할 수 있는 계정이 나와 있습니다.
 
@@ -46,7 +46,7 @@ ms.locfileid: "67043435"
 
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면
 
-1. 원격 컴퓨터에서 Visual Studio 원격 디버거 서비스가 올바르게 설정되어 있는지 확인합니다. 자세한 내용은 [원격 디버깅](../debugger/remote-debugging.md)합니다.
+1. 원격 컴퓨터에서 Visual Studio 원격 디버거 서비스가 올바르게 설정되어 있는지 확인합니다. 자세한 내용은 [원격 디버깅](../debugger/remote-debugging.md)을 참조 하세요.
 
 2. 위 표에 나와 있듯이 디버거 호스트 컴퓨터에 액세스할 수 있는 계정으로 원격 디버거 서비스를 실행합니다.
 
@@ -74,6 +74,6 @@ ms.locfileid: "67043435"
 
 - 원격 디버깅 모니터를 서비스가 아닌 애플리케이션으로 실행합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [원격 디버깅 오류 및 문제 해결](../debugger/remote-debugging-errors-and-troubleshooting.md)
 - [Remote Debugging](../debugger/remote-debugging.md)

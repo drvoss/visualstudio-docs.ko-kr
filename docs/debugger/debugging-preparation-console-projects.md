@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ddfc17d4f9bcb1f4f2585aa91319f06be6936e6f
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: e92e27b123102cb45069c47ebf9de3971039801d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72431463"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738141"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>디버깅 준비: 콘솔 프로젝트 (C#, C++, Visual Basic, F#)
 
@@ -57,7 +57,7 @@ ms.locfileid: "72431463"
 
   Visual Studio에서 콘솔 애플리케이션을 시작하면 **콘솔** 창이 Visual Studio 창 뒤에 나타날 수도 있습니다. Visual Studio에서 콘솔 애플리케이션을 시작했는데 콘솔 창이 보이지 않으면 Visual Studio 창을 이동해 보십시오.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 - [네이티브 코드 디버그](../debugger/debugging-native-code.md)
 - [관리 코드 디버그](../debugger/debugging-managed-code.md)
 - [프로젝트 디버그 C++ 준비](../debugger/debugging-preparation-visual-cpp-project-types.md)

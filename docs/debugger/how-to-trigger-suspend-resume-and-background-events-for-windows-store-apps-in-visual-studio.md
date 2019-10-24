@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d15a176fb378159407589af0b720d8310de8e29c
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: d12c9848409f57b16c733b587edff193311bcfdd
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450410"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732269"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Visual Studio에서 UWP 앱을 디버그 하는 동안 일시 중단, 다시 시작 및 백그라운드 이벤트를 트리거하는 방법
 
@@ -109,7 +109,7 @@ ms.locfileid: "72450410"
 
 4. **진단** 로그를 선택합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 - [Visual Studio로 UWP 앱 테스트](../test/testing-store-apps-with-visual-studio.md)
 - [Visual Studio에서 앱 디버그](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
 - [애플리케이션 수명 주기](/windows/uwp/launch-resume/app-lifecycle)

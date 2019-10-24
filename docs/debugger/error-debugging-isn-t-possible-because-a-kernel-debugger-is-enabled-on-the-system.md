@@ -1,5 +1,5 @@
 ---
-title: '오류: 디버깅 되었습니다&#39;수는 커널 디버거가 사용 중 이므로 시스템에서 t | Microsoft Docs'
+title: '오류: 시스템에서&#39;커널 디버거를 사용 하도록 설정 했으므로 디버깅이 가능 하지 않습니다. | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63666302bcbf9f8f44c6121b583f0cf7b259f3ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2a966869ff1d200a51c6019a6ae937bea7c447bd
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850943"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737741"
 ---
-# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>오류: 디버깅 되었습니다&#39;t 수 있으므로 시스템에 커널 디버거가 사용 가능
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>오류: 시스템에서&#39;커널 디버거를 사용할 수 있으므로 디버깅을 수행할 수 없습니다.
 관리 코드를 디버깅할 때 다음 오류 메시지가 나타날 수 있습니다.
 
 ```cmd
@@ -70,7 +70,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
     bcdedit /debug off
     ```
 
-2. 컴퓨터를 다시 시작합니다.
+2. 컴퓨터를 다시 시작하십시오.
 
 #### <a name="to-disable-kernel-debugging-for-all-sessions-other-windows-operating-systems"></a>모든 세션에 대해 커널 디버깅을 비활성화하려면(기타 Windows 운영 체제)
 
@@ -88,7 +88,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
     /baudrate
     ```
 
-3. 컴퓨터를 다시 시작합니다.
+3. 컴퓨터를 다시 시작하십시오.
 
 #### <a name="to-debug-with-the-kernel-debugger"></a>커널 디버거를 사용하여 디버깅하려면
 
@@ -98,6 +98,6 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
      `gn`
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [디버거 보안](../debugger/debugger-security.md)
 - [관리 코드 디버그](../debugger/debugging-managed-code.md)

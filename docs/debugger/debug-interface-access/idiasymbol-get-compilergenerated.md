@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_compilergenerated | Microsoft Docs'
+title: 'IDiaSymbol:: get_compilerGenerated | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8cc1d59accb63ea7ef8b939e9e0912ee03dc4e8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: c67a3ae78db3f91f25f69c1045856c5d167c2d34
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808684"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740832"
 ---
-# <a name="idiasymbolgetcompilergenerated"></a>IDiaSymbol::get_compilerGenerated
-기호는 컴파일러에서 생성 되었는지 여부를 나타내는 플래그를 검색 합니다.
+# <a name="idiasymbolget_compilergenerated"></a>IDiaSymbol::get_compilerGenerated
+컴파일러가 기호가 생성 되었는지 여부를 나타내는 플래그를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,13 +33,13 @@ HRESULT get_compilerGenerated ( 
 #### <a name="parameters"></a>매개 변수
  `pRetVal`
 
-[out] 반환 `TRUE` 컴파일러에서 기호를 생성 하는 경우이 고, 그렇지 반환 `FALSE` 기호는 사용자가 작성 하는 원본에서 생성 된 경우.
+제한이 컴파일러가 기호를 생성 한 경우 `TRUE`을 반환 합니다. 그렇지 않으면 사용자가 작성 한 소스에서 기호가 생성 된 경우 `FALSE`를 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 `S_FALSE` 또는 오류 코드를 반환 합니다.
 
 > [!NOTE]
-> 반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.
+> @No__t_0의 반환 값은 해당 기호에 대해 속성을 사용할 수 없음을 의미 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -48,5 +48,5 @@ HRESULT get_compilerGenerated ( 
 |헤더:|dia2.h|
 |버전:|DIA SDK v7.0|
 
-## <a name="see-also"></a>관련 항목
+## <a name="see-also"></a>참조
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

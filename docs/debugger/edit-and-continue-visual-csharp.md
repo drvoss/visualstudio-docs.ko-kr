@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 665e778fc0881ac05e165c85700d15285622c762
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: a4d11875a7ab2ca3f21f364308580a732b7516e6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186363"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737924"
 ---
 # <a name="edit-and-continue-visual-c"></a>편집하며 계속하기(Visual C#)
  C#에서 편집하며 계속하기를 사용하면 디버깅하는 동안 중단 모드에서 코드를 변경할 수 있습니다. 디버깅 세션을 중지하고 다시 시작하지 않고도 변경 내용을 적용할 수 있습니다. 실행 모드에서 소스 편집기는 읽기 전용입니다.
@@ -36,9 +36,9 @@ ms.locfileid: "71186363"
 
  편집하며 계속하기가 활성화된 경우 **계속**, **설정**, **다음 명령문 설정** 등의 디버거 실행 명령을 사용하거나 디버거 창에서 함수를 실행하면 지원되는 변경 내용이 자동으로 적용됩니다.
 
- 자세한 내용은 [방법: 편집하며 계속하기를 사용합니다(C#)](../debugger/how-to-use-edit-and-continue-csharp.md).
+ 자세한 내용은 [방법: 편집 하며 계속 하기 사용 (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)을 참조 하세요.
 
-## <a name="see-also"></a>관련 항목
+## <a name="see-also"></a>참조
 - [방법: 편집하며 계속하기 사용(C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
 - [지원 되는 코드C# 변경 (및 Visual Basic)](../debugger/supported-code-changes-csharp.md)
 - [Visual Studio에서 XAML 핫 다시 로드를 사용 하 여 실행 중인 XAML 코드 작성 및 디버그](../debugger/xaml-hot-reload.md)

@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04cd8d1eb94ba488b621fb30f9ac598ce9c71722
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9d3a3e1995dbc36b02d90da6343e8cc9a6d48eba
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653985"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748444"
 ---
 # <a name="customizing-text-and-image-fields"></a>텍스트 및 이미지 필드 사용자 지정
 도형에서 텍스트 데코레이터를 정의할 때 텍스트 데코레이터는 TextField로 표시 됩니다. TextFields 및 기타 ShapeFields를 초기화 하는 예는 DSL 솔루션에서 Dsl\GeneratedCode\Shapes.cs를 검사 합니다.
@@ -261,7 +261,7 @@ partial class ExampleShape
 }
 ```
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [모양 및 연결선 정의](../modeling/defining-shapes-and-connectors.md)
 - [다이어그램에 배경 이미지 설정](../modeling/setting-a-background-image-on-a-diagram.md)

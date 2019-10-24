@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Findlines | Microsoft Docs'
+title: 'IDiaSession:: findLines | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b127cbc5c9ddc5a2aa2d293d1371bab18d191fdb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6082bfe8a3eee00d425441ff44a6eadd1c36e27
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839292"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742132"
 ---
 # <a name="idiasessionfindlines"></a>IDiaSession::findLines
-지정 된 컴파일 대상 및 원본 파일 식별자 내의 줄 번호를 검색합니다.
+지정 된 compiland 및 소스 파일 식별자 내의 줄 번호를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -35,20 +35,20 @@ HRESULT findLines ( 
 #### <a name="parameters"></a>매개 변수
  `compiland`
 
-[in] [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 컴파일 대상을 나타내는 개체입니다. 줄 번호를 검색 하는 컨텍스트로이 인터페이스를 사용 합니다.
+진행 Compiland를 나타내는 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 개체입니다. 이 인터페이스는 줄 번호를 검색할 컨텍스트로 사용 합니다.
 
  `file`
 
-[in] [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) 줄 번호를 검색 하는 원본 파일을 나타내는 개체입니다.
+진행 줄 번호를 검색할 소스 파일을 나타내는 [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) 개체입니다.
 
  `ppResult`
 
-[out] 반환 된 [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) 줄 번호의 목록을 포함 하는 개체 검색 합니다.
+제한이 검색 된 줄 번호의 목록을 포함 하는 [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) 개체를 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5180581b0a0934c049d9c4ea199fa3396a1d1237
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2a21473f983c56181e3a5d2fc7f9e97cd1c2d6e7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658129"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748264"
 ---
 # <a name="properties-of-swimlanes"></a>스윔 레인의 속성
 스윔 레인을 다이어그램에 추가할 수 있습니다. 스윔 레인 다이어그램을 세로 또는 가로 영역으로 나눕니다. 스윔 레인 내에 표시 될 다른 셰이프를 정의할 수 있습니다. 자세한 내용은 [도메인별 언어를 정의 하는 방법](../modeling/how-to-define-a-domain-specific-language.md)을 참조 하세요. 이러한 속성을 사용 하는 방법에 대 한 자세한 내용은 [도메인별 언어 사용자 지정 및 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)을 참조 하세요.
@@ -50,6 +50,6 @@ ms.locfileid: "72658129"
 |고정 도구 설명 텍스트|고정 도구 설명에 사용 되는 텍스트입니다.|\<none >|
 |Help Keyword|이 스윔 레인에 대 한 F1 도움말을 인덱싱하는 데 사용 되는 키워드입니다.|\<none >|
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

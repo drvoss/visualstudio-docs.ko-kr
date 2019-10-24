@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81d1a256b4300510ed31c163d92cea89df884aac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2de57f0d3bd44e4d46f19ee74484380bf0e6f2ae
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832745"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742836"
 ---
 # <a name="idiapropertystorage"></a>IDiaPropertyStorage
-DIA 속성 집합의 영구 속성을 읽을 수 있습니다.
+DIA 속성 집합의 영구적 속성을 읽을 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -29,24 +29,24 @@ IDiaPropertyStorage : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
-다음 표에서의 메서드를 보여 줍니다. `IDiaPropertyStorage`합니다.
+다음 표에서는 `IDiaPropertyStorage`의 메서드를 보여 줍니다.
 
 |메서드|설명|
 |------------|-----------------|
-|[IDiaPropertyStorage::Enum](../../debugger/debug-interface-access/idiapropertystorage-enum.md)|이 집합 내에서 속성에 대 한 열거자에 대 한 포인터를 가져옵니다.|
-|[IDiaPropertyStorage::ReadBOOL](../../debugger/debug-interface-access/idiapropertystorage-readbool.md)|읽고 `BOOL` 속성 집합의 값입니다.|
-|[IDiaPropertyStorage::ReadBSTR](../../debugger/debug-interface-access/idiapropertystorage-readbstr.md)|읽고 `BSTR` 속성 집합의 값입니다.|
-|[IDiaPropertyStorage::ReadDWORD](../../debugger/debug-interface-access/idiapropertystorage-readdword.md)|읽고 `DWORD` 속성 집합의 값입니다.|
-|[IDiaPropertyStorage::ReadLONG](../../debugger/debug-interface-access/idiapropertystorage-readlong.md)|읽고 `LONG` 속성 집합의 값입니다.|
+|[IDiaPropertyStorage::Enum](../../debugger/debug-interface-access/idiapropertystorage-enum.md)|이 집합 내에 있는 속성의 열거자에 대 한 포인터를 가져옵니다.|
+|[IDiaPropertyStorage::ReadBOOL](../../debugger/debug-interface-access/idiapropertystorage-readbool.md)|속성 집합에서 `BOOL` 값을 읽습니다.|
+|[IDiaPropertyStorage::ReadBSTR](../../debugger/debug-interface-access/idiapropertystorage-readbstr.md)|속성 집합에서 `BSTR` 값을 읽습니다.|
+|[IDiaPropertyStorage::ReadDWORD](../../debugger/debug-interface-access/idiapropertystorage-readdword.md)|속성 집합에서 `DWORD` 값을 읽습니다.|
+|[IDiaPropertyStorage::ReadLONG](../../debugger/debug-interface-access/idiapropertystorage-readlong.md)|속성 집합에서 `LONG` 값을 읽습니다.|
 |[IDiaPropertyStorage::ReadMultiple](../../debugger/debug-interface-access/idiapropertystorage-readmultiple.md)|속성 집합의 속성 값을 읽습니다.|
-|[IDiaPropertyStorage::ReadPropertyNames](../../debugger/debug-interface-access/idiapropertystorage-readpropertynames.md)|문자열 이름에 해당 하는 가져옵니다 속성 식별자를 지정 합니다.|
-|[IDiaPropertyStorage::ReadULONGLONG](../../debugger/debug-interface-access/idiapropertystorage-readulonglong.md)|읽고 `ULONGLONG` 속성 집합의 값입니다.|
+|[IDiaPropertyStorage::ReadPropertyNames](../../debugger/debug-interface-access/idiapropertystorage-readpropertynames.md)|지정 된 속성 식별자에 해당 하는 문자열 이름을 가져옵니다.|
+|[IDiaPropertyStorage::ReadULONGLONG](../../debugger/debug-interface-access/idiapropertystorage-readulonglong.md)|속성 집합에서 `ULONGLONG` 값을 읽습니다.|
 
-## <a name="remarks"></a>설명
-속성 집합 내에서 각 속성은 4 바이트 속성 식별자 (ID)으로 식별 `ULONG` 해당 집합에 고유한 값입니다. 통해 노출 되는 속성을 `IDiaPropertyStorage` 부모 인터페이스에서 사용할 수 있는 속성에 해당 하는 인터페이스입니다. 예를 들어, 속성을 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 인터페이스를 통해 이름으로 액세스할 수 있습니다는 `IDiaPropertyStorage` 인터페이스 (단는 속성에 액세스할 수, 하는 경우에 의미가 속성에 대 한 유효를 특정 `IDiaSymbol` 개체).
+## <a name="remarks"></a>주의
+속성 집합 내의 각 속성은 해당 집합에 고유한 4 바이트 `ULONG` 값인 속성 식별자 (ID)로 식별 됩니다. @No__t_0 인터페이스를 통해 노출 되는 속성은 부모 인터페이스에서 사용할 수 있는 속성에 해당 합니다. 예를 들어 `IDiaPropertyStorage` 인터페이스를 통해 이름으로 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 인터페이스의 속성에 액세스할 수 있습니다. 그러나 속성에 액세스할 수 있는 경우에도 속성이 특정 `IDiaSymbol` 개체에 대해 유효한 지는 것을 의미 하지는 않습니다.
 
-## <a name="notes-for-callers"></a>호출자에 대 한 정보
-이 인터페이스를 호출 하 여 가져올는 `QueryInterface` 다른 인터페이스에서 메서드. 다음 인터페이스를 쿼리할 수는 `IDiaPropertyStorage` 인터페이스:
+## <a name="notes-for-callers"></a>호출자 참고 사항
+다른 인터페이스에서 `QueryInterface` 메서드를 호출 하 여이 인터페이스를 가져옵니다. @No__t_0 인터페이스에 대해 쿼리할 수 있는 인터페이스는 다음과 같습니다.
 
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
 
@@ -63,7 +63,7 @@ IDiaPropertyStorage : IUnknown
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
 
 ## <a name="example"></a>예제
-노출 하는 모든 속성을 표시 하는 함수를 보여 주는이 예제는 `IDiaPropertyStorage` 개체입니다. 참조를 [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) 방법의 예는 인터페이스 `IDiaPropertyStorage` 인터페이스에서 가져온 합니다 [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) 인터페이스입니다.
+이 예제에서는 `IDiaPropertyStorage` 개체에서 노출 하는 모든 속성을 표시 하는 함수를 보여 줍니다. [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) 인터페이스에서 `IDiaPropertyStorage` 인터페이스를 가져오는 방법에 대 한 예제는 [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) 인터페이스를 참조 하세요.
 
 ```C++
 void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)
@@ -120,13 +120,13 @@ void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)
 ```
 
 ## <a name="requirements"></a>요구 사항
-헤더: Dia2.h
+헤더: Dia2
 
-라이브러리: diaguids.lib
+라이브러리: diaguids
 
-DLL: msdia80.dll
+DLL: msdia80
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [인터페이스(디버그 인터페이스 액세스 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

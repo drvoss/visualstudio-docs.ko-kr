@@ -1,5 +1,5 @@
 ---
-title: 상수 (디버그 인터페이스 액세스 SDK) | Microsoft Docs
+title: 상수 (Debug Interface Access SDK) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed505499efcabd7173fea9d668cd9afa5ed6d925
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b10ab87f056bc153ec41c125b0e01ddefa139b80
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555080"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745407"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>상수(디버그 인터페이스 액세스 SDK)
-DIA SDK를 통해 프로그램 디버그 데이터베이스 (PDB) 파일의 다양 한 섹션을 확인 하려면 이러한 문자열 상수를 사용할 수 있습니다.
+이러한 문자열 상수를 사용 하 여 DIA SDK를 통해 PDB (프로그램 디버그 데이터베이스) 파일의 다양 한 섹션을 식별할 수 있습니다.
 
 ## <a name="constants"></a>상수
-다음은 C로 선언 된 /C++ 매크로입니다.
+다음은 C/C++ 매크로로 선언 됩니다.
 
 |매크로|값|
 |-----------|-----------|
@@ -38,7 +38,7 @@ DIA SDK를 통해 프로그램 디버그 데이터베이스 (PDB) 파일의 다�
 |`DiaTable_FrameData`|L "FrameData"|
 
 ## <a name="example"></a>예제
-이러한 기호 중 하나를 사용 하는 예제는 다음과 같습니다.
+다음은 이러한 기호 중 하나를 사용 하는 예제입니다.
 
 ```C++
 HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
@@ -53,9 +53,9 @@ HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
 ```
 
 ## <a name="requirements"></a>요구 사항
-헤더: dia2.h
+헤더: dia2
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [참조](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
 - [열거형 및 구조체](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [인터페이스(디버그 인터페이스 액세스 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

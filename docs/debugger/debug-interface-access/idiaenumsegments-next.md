@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsegments:: Next | Microsoft Docs'
+title: 'IDiaEnumSegments:: Next | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9b0f0d06ae5303277c296fd56e36e60b9a6f022
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 34062b654cbaccec053c5ac50bfb041d37a0f4e6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829643"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744198"
 ---
 # <a name="idiaenumsegmentsnext"></a>IDiaEnumSegments::Next
-열거형 시퀀스에서 세그먼트의 지정된 된 수를 검색 합니다.
+열거형 시퀀스에서 지정 된 수의 세그먼트를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -35,19 +35,19 @@ HRESULT Next ( 
 #### <a name="parameters"></a>매개 변수
  celt
 
-[in] 검색할 열거자의 세그먼트 개수입니다.
+진행 검색할 열거자의 세그먼트 수입니다.
 
  rgelt
 
-[out] 배열을 채울 원하는 [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) 세그먼트를 나타내는 개체입니다.
+제한이 세그먼트를 나타내는 원하는 [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) 개체로 채워질 배열입니다.
 
  pceltFetched
 
-[out] 페치된 열거자의 세그먼트 수를 반환합니다.
+제한이 인출 된 열거자의 세그먼트 수를 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 자세한 세그먼트가 없을 경우. 그러지 않으면 오류 코드가 반환됩니다.
+ 성공하면 `S_OK`를 반환합니다. 세그먼트가 더 이상 없는 경우 `S_FALSE`를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)
 - [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

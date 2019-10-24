@@ -1,5 +1,5 @@
 ---
-title: 'Idiastackframe:: Get_maxstack | Microsoft Docs'
+title: 'IDiaStackFrame:: get_maxStack | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32e0d8c37b4016412f6dca8772d22baf65799429
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9640fa8f82c7bb87990c97ef7916e7323943ece
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832801"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741644"
 ---
-# <a name="idiastackframegetmaxstack"></a>IDiaStackFrame::get_maxStack
-프레임의 스택에 바이트의 최대 수를 검색 합니다.
+# <a name="idiastackframeget_maxstack"></a>IDiaStackFrame::get_maxStack
+프레임의 스택에 푸시되는 최대 바이트 수를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,10 +33,10 @@ HRESULT get_maxStack ( 
 #### <a name="parameters"></a>매개 변수
  `pRetVal`
 
-[out] 스택에 푸시된 바이트의 최대 수를 반환 합니다.
+제한이 스택에 푸시되는 최대 바이트 수를 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 속성이 지원 되지 않는 경우. 그러지 않으면 오류 코드가 반환됩니다.
+ 성공하면 `S_OK`를 반환합니다. 속성이 지원 되지 않는 경우 `S_FALSE`를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

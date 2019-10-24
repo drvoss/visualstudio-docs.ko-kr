@@ -1,5 +1,5 @@
 ---
-title: Mip 맵 생성 변형 | Microsoft Docs
+title: 밉 맵 생성 변형 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3b4b3583-0b01-4f5d-aacb-3f96d19111d9
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06017a3feb3faa667b469c0075e561b2104785b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 422a68f4e33733aa2874c639f0dcc799cd3ec795
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62895601"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734897"
 ---
 # <a name="mip-map-generation-variant"></a>MIP 맵 생성 변형
 렌더링 대상이 아닌 질감에 대해 Mip 맵을 사용합니다.
@@ -25,8 +25,8 @@ Mip 맵은 더 작은 버전의 질감을 미리 계산하여 최소화한 질�
 
 이러한 변형이 성능을 상당히 개선하면 Mip 맵을 사용하지 않음을 나타내므로 질감 캐시를 최대한 활용하지 않는 것입니다.
 
-## <a name="remarks"></a>설명
-원본 질감을 생성하는 `ID3D11Device::CreateTexture2D`를 호출할 때마다 Mip 맵이 강제로 생성됩니다. Mip 맵 생성에서 D3D11_TEXTURE2D_DESC 개체가 전달 하는 경우 강제 특히 `pDesc` 는 변하지 않는 셰이더 리소스를 설명 합니다.
+## <a name="remarks"></a>주의
+원본 질감을 생성하는 `ID3D11Device::CreateTexture2D`를 호출할 때마다 Mip 맵이 강제로 생성됩니다. 특히 `pDesc` 전달 된 D3D11_TEXTURE2D_DESC 개체가 변경 되지 않은 셰이더 리소스를 설명 하는 경우에는 밉 맵 생성이 강제로 적용 됩니다. 말하자면:
 
 - BindFlags 멤버에 D3D11_BIND_SHADER_RESOURCE 플래그 집합만 있는 경우
 
@@ -62,12 +62,12 @@ for (auto&& mip_level : initial_data)
 d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
 ```
 
-전체 Mip 체인이 있는 질감을 생성하려면 `D3D11_TEXTURE2D_DESC::MipLevels`를 0으로 설정합니다. 전체 mip 체인에 mip 수준의 수는 floor(log2(n) + 1), 여기서 n은 질감의 최대 크기입니다.
+전체 Mip 체인이 있는 질감을 생성하려면 `D3D11_TEXTURE2D_DESC::MipLevels`를 0으로 설정합니다. 전체 밉 체인의 밉 수준 수는 floor (log2 (n) + 1) 이며 여기서 n은 질감의 가장 큰 차원입니다.
 
 `CreateTexture2D`에 초기 데이터를 제공하는 경우 각 Mip 수준에 대한 D3D11_SUBRESOURCE_DATA 개체를 제공해야 합니다.
 
 > [!NOTE]
 > Mip 수준 콘텐츠를 자동으로 생성하는 대신 자체 Mip 수준 콘텐츠를 제공하려는 경우 Mip 맵 질감을 지원하는 이미지 편집기를 사용하여 질감을 생성한 다음 파일을 로드하고 Mip 수준을 `CreateTexture2D`에 전달해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 [반기/분기 텍스처 차원 변형](half-quarter-texture-dimensions-variant.md)

@@ -1,5 +1,5 @@
 ---
-title: 소스 제어 패키지 모델 | Microsoft Docs
+title: 원본 제어 패키지에 대 한 모델 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,30 +10,30 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65f212496d152236579e63ba037fe351a4dd3370
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1a9ae5f2704d625da2212e92626c33fb384ebbc5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349215"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72726560"
 ---
 # <a name="model-for-source-control-packages"></a>소스 제어 패키지 모델
-다음 모델은 원본 제어 구현 예를 나타냅니다. 모델에서 구현 해야 하는 인터페이스 및 환경 서비스를 호출 해야 하는 것이 표시 됩니다. 모든 서비스와 마찬가지로 실제로 서비스를 통해 가져와야 하는 특정 인터페이스의 메서드를 호출 합니다. 클래스의 이름은 쉽게 소스 제어를 수행 하는 방법을 확인할 수 있도록 식별 됩니다.
+다음 모델은 소스 제어 구현의 예를 나타냅니다. 모델에는 구현 해야 하는 인터페이스와 사용자가 호출 해야 하는 환경 서비스가 표시 됩니다. 모든 서비스와 마찬가지로 실제로 서비스를 통해 가져오는 특정 인터페이스의 메서드를 호출 합니다. 클래스의 이름은 소스 제어의 수행 방법을 더 쉽게 확인할 수 있도록 식별 됩니다.
 
- ![SCC&#95;TUP 예제](../../extensibility/internals/media/scc_tup.gif "SCC_TUP") 예제에서는 소스 제어 프로젝트
+ ![SCC&#95;tup 예제](../../extensibility/internals/media/scc_tup.gif "SCC_TUP") 소스 제어 프로젝트 예제
 
 ## <a name="interfaces"></a>인터페이스
- 다음 표에 표시 된 인터페이스 목록을 사용 하 여 Visual Studio에서 새 프로젝트 형식에 대 한 소스 제어를 구현할 수 있습니다.
+ 다음 표에 표시 된 인터페이스의 목록을 사용 하 여 Visual Studio에서 새 프로젝트 형식에 대 한 소스 제어를 구현할 수 있습니다.
 
-|인터페이스|사용|
+|인터페이스|관리 그룹을 연결하거나 연결된 관리 그룹의 속성을 편집하려면 관리 작업 영역의|
 |---------------|---------|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|프로젝트 및 변경 (더티) 파일 하거나 저장 하기 전에 편집기에서 호출 됩니다. 이 인터페이스를 사용 하 여 액세스를 <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> 서비스입니다.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>|추가, 제거 또는 파일 또는 디렉터리의 이름을 바꿀 수 있는 권한 요청 하는 프로젝트에서 호출 됩니다. 승인 된 추가, 제거 또는 작업의 이름을 바꿀 때 환경은 완료를 알리기 위해 프로젝트에서이 인터페이스를 사용 하는 것이 라고도 합니다. 사용 하 여 액세스 하는 데는 것은 <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> 서비스입니다.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>|프로젝트 추가 하거나 이름을 바꾸거나, 파일 또는 디렉터리를 제거 하는 경우 알림을 받으려면 등록 하는 모든 엔터티에 의해 구현 됩니다. 을 이벤트 알림에 등록 하려면 호출 <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2.AdviseTrackProjectDocumentsEvents%2A>합니다.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|소스 제어 패키지를 사용 하 여 등록 하 고 소스 제어 상태에 대 한 정보를 가져오려면 프로젝트에서 호출 됩니다. 이 인터페이스를 사용 하 여 액세스를 <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager> 서비스입니다.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|소스 제어 설정을 프로젝트 파일에 필요한 가져올 프로젝트 파일에 대 한 정보에 대 한 원본 제어 요청에 응답 하 여 구현 합니다.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|파일을 저장 하거나 변경 하기 전에 프로젝트 및 편집기에서 호출 됩니다. 이 인터페이스는 <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> 서비스를 사용 하 여 액세스 됩니다.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>|파일이 나 디렉터리를 추가, 제거 또는 이름을 바꿀 권한을 요청 하기 위해 프로젝트에서 호출 됩니다. 이 인터페이스는 승인 된 추가, 제거 또는 이름 바꾸기 작업이 완료 되 면 환경에 알리기 위해 프로젝트에서 호출 됩니다. @No__t_0 서비스를 사용 하 여 액세스할 수 있습니다.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>|프로젝트에서 파일 또는 디렉터리를 추가 하거나, 이름을 바꾸거나, 제거할 때 알리도록 등록 하는 모든 엔터티에 의해 구현 됩니다. 이벤트 알림을 등록 하려면 <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2.AdviseTrackProjectDocumentsEvents%2A>를 호출 합니다.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|소스 제어 패키지에 등록 하 고 소스 제어 상태에 대 한 정보를 얻기 위해 프로젝트에서 호출 됩니다. 이 인터페이스는 <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager> 서비스를 사용 하 여 액세스 됩니다.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|파일에 대 한 정보에 대 한 소스 제어 요청에 응답 하 고 프로젝트 파일에 필요한 소스 제어 설정을 가져오는 프로젝트에 의해 구현 됩니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>

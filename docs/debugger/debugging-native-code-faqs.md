@@ -1,5 +1,5 @@
 ---
-title: 네이티브 코드 디버그 Faq | Microsoft Docs
+title: 네이티브 코드 디버깅 Faq | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 28942594abb6291a7b0103b8abf1736ca68346e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 15a94d20ade7bfe3e5aaac2c90bb3ba452ef4330
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851668"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738179"
 ---
 # <a name="debugging-native-code-faqs"></a>네이티브 코드 디버깅 FAQ
 다음 항목은 자주 문의되는 몇 가지 질문에 대한 답입니다.
@@ -48,6 +48,6 @@ ms.locfileid: "62851668"
 
 - [MFC에서 중지된 경우, 어떻게 MFC를 호출한 함수로 돌아갈 수 있습니까?](../debugger/how-to-get-back-to-the-function-that-called-mfc-if-halted.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [디버거 보안](../debugger/debugger-security.md)
 - [네이티브 코드 디버그](../debugger/debugging-native-code.md)

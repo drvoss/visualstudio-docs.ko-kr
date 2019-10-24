@@ -16,21 +16,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dcd45cb64656b926b9c59efd7b6af14d2ec4c53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b908e4fe9ed0087abaf5f1390bb8faf5cc12bdaa
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850658"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737568"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>오류: Microsoft Visual Studio 원격 디버깅 모니터(MSVSMON.EXE)가 원격 컴퓨터에서 실행 중인 것 같지 않습니다.
-이 오류 메시지는 Visual Studio가 원격 컴퓨터에서 Visual Studio 원격 디버깅 모니터의 올바른 인스턴스를 찾을 수 없음을 의미합니다. 원격으로 디버깅을 수행하려면 Visual Studio 원격 디버깅 모니터를 설치해야 합니다. 다운로드 하 고 원격 디버거를 설정 하는 방법에 대 한 내용은 [원격 디버깅](../debugger/remote-debugging.md)합니다.
+이 오류 메시지는 Visual Studio가 원격 컴퓨터에서 Visual Studio 원격 디버깅 모니터의 올바른 인스턴스를 찾을 수 없음을 의미합니다. 원격으로 디버깅을 수행하려면 Visual Studio 원격 디버깅 모니터를 설치해야 합니다. 원격 디버거를 다운로드 하 고 설정 하는 방법에 대 한 자세한 내용은 [원격 디버깅](../debugger/remote-debugging.md)을 참조 하세요.
 
 > [!IMPORTANT]
-> 제품 버그 때문에이 메시지를 받았습니다을 생각 하세요 [Visual Studio에이 문제를 보고](../ide/how-to-report-a-problem-with-visual-studio.md)합니다. 자세한 도움말이 필요한 경우 [Talk to Us](../ide/talk-to-us.md) 에서 Microsoft에 문의하는 방법을 참조하세요.
+> 제품 버그로 인해이 메시지가 수신 되었다고 생각 되는 경우 [이 문제를 Visual Studio에 보고](../ide/how-to-report-a-problem-with-visual-studio.md)하세요. 자세한 도움말이 필요한 경우 [Talk to Us](../ide/talk-to-us.md) 에서 Microsoft에 문의하는 방법을 참조하세요.
 
 ## <a name="i-got-this-message-while-i-was-debugging-in-visual-studio-2010-or-earlier"></a>Visual Studio 2010 이전 버전에서 디버그하는 동안 이 메시지가 수신됨
- Visual Studio 2010 이전 버전의 Visual Studio를 사용 중이면 파일 및 프린터 공유를 사용하도록 설정하지 않은 경우에도 이 오류가 발생할 수 있습니다. 이 문제에 대 한 자세한 내용을 알아보려면,이 설명서의 Visual Studio 2010 버전을 참조 하세요. [오류: Microsoft Visual Studio 원격 디버깅 모니터 (MSVSMON 합니다. EXE) 원격 컴퓨터에서 실행 되 고 표시 되지 않습니다. -Visual Studio 2010](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms164726(v=vs.100))
+ Visual Studio 2010 이전 버전의 Visual Studio를 사용 중이면 파일 및 프린터 공유를 사용하도록 설정하지 않은 경우에도 이 오류가 발생할 수 있습니다. 이 문제에 대해 자세히 알아보려면 이 설명서의 Visual Studio 2010 버전: [오류: Microsoft Visual Studio 원격 디버깅 모니터(MSVSMON.EXE)가 원격 컴퓨터에서 실행 중인 것 같지 않습니다. - Visual Studio 2010](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms164726(v=vs.100))을 참조하세요.
 
 ## <a name="i-got-this-message-while-i-was-debugging-locally"></a>로컬로 디버그하는 동안 이 메시지가 수신됨
  로컬로 디버그하는 동안 이 메시지가 수신된 경우 바이러스 백신 소프트웨어 또는 타사 방화벽 때문일 수 있습니다. Visual Studio는 32비트 애플리케이션이므로 64비트 버전의 원격 디버거를 사용하여 64비트 애플리케이션을 디버그합니다. 두 프로세스는 로컬 컴퓨터 내의 로컬 네트워크를 사용하여 통신합니다. 컴퓨터에서 나가는 트래픽이 없지만 타사 보안 소프트웨어가 통신을 차단할 수 있습니다.
@@ -64,15 +64,15 @@ ms.locfileid: "62850658"
  Windows 바이러스 백신 소프트웨어는 원격 디버거 연결을 허용하지만 일부 타사 바이러스 백신 소프트웨어가 차단할 수도 있습니다. 이러한 연결을 허용하는 방법을 알아보려면 해당 바이러스 백신 소프트웨어에 대한 설명서를 확인합니다.
 
 ## <a name="network-security-policy-is-blocking-communication-between-the-remote-machine-and-visual-studio"></a>네트워크 보안 정책에서 원격 컴퓨터와 Visual Studio 간의 통신을 차단함
- 네트워크 보안을 검토하여 통신을 차단하지 않는지 확인합니다. Windows 네트워크 보안 정책에 대 한 자세한 내용은 참조 하세요. [보안 정책 설정을](/windows/device-security/security-policy-settings/security-policy-settings)합니다.
+ 네트워크 보안을 검토하여 통신을 차단하지 않는지 확인합니다. Windows 네트워크 보안 정책에 대 한 자세한 내용은 [보안 정책 설정](/windows/device-security/security-policy-settings/security-policy-settings)을 참조 하세요.
 
 ## <a name="the-network-is-too-busy-to-support-remote-debugging"></a>네트워크 사용량이 너무 많아 원격 디버깅을 지원할 수 없음
  다른 시간에 원격 디버깅을 수행하거나 다른 시간에 네트워크 작업을 다시 예약해야 할 수도 있습니다.
 
 ## <a name="more-help"></a>자세한 도움말
- 명령줄 스위치를 포함 하 여 더 많은 원격 디버거 도움말을 보려면 클릭 **도움말 > 사용량** 원격 디버거 창에서. 열려 있지 않은 경우에 다음 줄을 복사 하 여 웹 페이지를 볼 수는 **파일 탐색기** 창입니다. (대체 해야 \<Visual Studio 설치 디렉터리 > Visual Studio 설치의 위치를 사용 하 여.)
+ 명령줄 스위치를 포함 하 여 원격 디버거 도움말을 더 얻으려면 원격 디버거 창에서 **도움말 > 사용** 을 클릭 합니다. 열려 있지 않은 경우 다음 줄을 **파일 탐색기** 창에 복사 하 여 웹 페이지를 볼 수 있습니다. @No__t_0Visual Studio 설치 디렉터리 >을 Visual Studio 설치 위치로 바꾸어야 합니다.
 
- res://*\<Visual Studio 설치 디렉터리>* \Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm
+ res:// *\<Visual Studio 설치 디렉터리>* \Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [원격 디버깅 오류 및 문제 해결](../debugger/remote-debugging-errors-and-troubleshooting.md)

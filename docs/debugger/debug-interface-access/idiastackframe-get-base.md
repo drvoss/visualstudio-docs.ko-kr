@@ -1,5 +1,5 @@
 ---
-title: 'Idiastackframe:: Get_base | Microsoft Docs'
+title: 'IDiaStackFrame:: get_base | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f72c39e7cbfe9589d2fdf6ed8d1b8f25dee99936
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6802737a69467fb823fb2df8df8160f459e739f1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838160"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741741"
 ---
-# <a name="idiastackframegetbase"></a>IDiaStackFrame::get_base
-프레임의 기본 주소를 검색합니다.
+# <a name="idiastackframeget_base"></a>IDiaStackFrame::get_base
+프레임의 기본 주소를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,10 +33,10 @@ HRESULT get_base ( 
 #### <a name="parameters"></a>매개 변수
  `pRetVal`
 
-[out] 기본 주소를 반환합니다.
+제한이 기본 주소를 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 속성이 지원 되지 않는 경우. 그러지 않으면 오류 코드가 반환됩니다.
+ 성공하면 `S_OK`를 반환합니다. 속성이 지원 되지 않는 경우 `S_FALSE`를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

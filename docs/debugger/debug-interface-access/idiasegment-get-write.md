@@ -1,5 +1,5 @@
 ---
-title: 'Idiasegment:: Get_write | Microsoft Docs'
+title: 'IDiaSegment:: get_write | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81e4721ea4db124f9161c69b4fced0dacca714c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 523a19b5cf9a8de7039d539edef9ddc9c90a6a9e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839422"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742351"
 ---
-# <a name="idiasegmentgetwrite"></a>IDiaSegment::get_write
+# <a name="idiasegmentget_write"></a>IDiaSegment::get_write
 세그먼트를 수정할 수 있는지 여부를 나타내는 플래그를 검색 합니다.
 
 ## <a name="syntax"></a>구문
@@ -33,10 +33,10 @@ HRESULT get_write ( 
 #### <a name="parameters"></a>매개 변수
  `pRetVal`
 
-[out] 반환 `TRUE` 세그먼트에 쓸 수 있으면이 고, 그렇지 않으면 반환 `FALSE`합니다.
+제한이 세그먼트를 쓸 수 있는 경우 `TRUE`을 반환 합니다. 그렇지 않으면 `FALSE`을 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.
+ 성공하면 `S_OK`를 반환합니다. 이 속성이 지원 되지 않는 경우 `S_FALSE`를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

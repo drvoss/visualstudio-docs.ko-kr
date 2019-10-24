@@ -1,5 +1,5 @@
 ---
-title: 'Idiadatasource:: Opensession | Microsoft Docs'
+title: 'IDiaDataSource:: openSession | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 393abb3b1e1872a416865cbfee5c142bef98ce78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7dd6ab61db3e3bafd594298aa41d32bce64d4941
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838456"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744928"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
-기호를 쿼리 하는 것에 대 한 세션을 엽니다.
+기호 쿼리를 위한 세션을 엽니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,21 +33,21 @@ HRESULT openSession ( 
 #### <a name="parameters"></a>매개 변수
 ppSession
 
-[out] 반환 된 [IDiaSession](../../debugger/debug-interface-access/idiasession.md) 세션 열기를 나타내는 개체입니다.
+제한이 열려 있는 세션을 나타내는 [IDiaSession](../../debugger/debug-interface-access/idiasession.md) 개체를 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
-성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다. 다음 표에서이 메서드에 대 한 가능한 반환 값을 보여 줍니다.
+성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다. 다음 표에서는이 메서드에 사용할 수 있는 반환 값을 보여 줍니다.
 
 |값|설명|
 |-----------|-----------------|
-|E_UNEXPECTED|합니다 [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) 개체 기호는 소스를 사용 하 여 이전에 초기화 되지 않았습니다.|
+|E_UNEXPECTED|[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) 개체가 이전에 기호 소스를 사용 하 여 초기화 되지 않았습니다.|
 |E_INVALIDARG|잘못된 `ppSession` 매개 변수입니다.|
-|E_OUTOFMEMORY|메모리가 부족 하 여 세션을 열에 없습니다.|
+|E_OUTOFMEMORY|메모리가 부족 하 여 세션을 열 수 없습니다.|
 
-## <a name="remarks"></a>설명
-이 메서드를 엽니다는 [IDiaSession](../../debugger/debug-interface-access/idiasession.md) 데이터 원본에 대 한 개체입니다.
+## <a name="remarks"></a>주의
+이 메서드는 데이터 원본에 대 한 [IDiaSession](../../debugger/debug-interface-access/idiasession.md) 개체를 엽니다.
 
-`IDiaSession` 데이터 원본에 쿼리를 구현 하는 개체입니다. 세션은 디버그 기호의 각 집합에 대 한 이상의 주소 공간을 관리합니다. 데이터 원본 기호에서 설명 하는.exe 또는.dll 파일은 활성 여러 주소에서 범위 (예를 들어 여러 프로세스가 있으므로 로드) 한 다음 각 주소 범위에 대 한 세션을 사용 해야 합니다.
+`IDiaSession` 개체는 데이터 원본에 대 한 쿼리를 구현 합니다. 세션은 각 디버그 기호 집합에 대해 하나의 주소 공간을 관리 합니다. 데이터 원본 기호에서 설명 하는 .exe 또는 .dll 파일이 여러 주소 범위에서 활성화 된 경우 (예: 여러 프로세스가 로드 되었으므로) 각 주소 범위에 대해 하나의 세션을 사용 해야 합니다.
 
 ## <a name="example"></a>예제
 
@@ -60,7 +60,7 @@ if (FAILED(hr))
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
 - [개요](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

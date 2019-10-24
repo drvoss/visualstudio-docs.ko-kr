@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: debf263fa18d2a6af8e95ee959002686540e2c06
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 44fcc45191d6c1e42256a503e98f753b54535e5f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658199"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748313"
 ---
 # <a name="properties-of-domain-properties"></a>도메인 속성의 속성
 *도메인 속성* 은 값을 보유할 수 있는 모델 요소의 기능입니다. 예를 들어 `Person` 도메인 클래스는 `Name` 및 `BirthDate` 속성을 포함할 수 있습니다. DSL 정의에서 도메인 속성은 다이어그램의 도메인 클래스 상자와 DSL 탐색기의 도메인 클래스 아래에 나열됩니다. 자세한 내용은 [도메인별 언어를 정의 하는 방법](../modeling/how-to-define-a-domain-specific-language.md)을 참조 하세요.
@@ -48,6 +48,6 @@ ms.locfileid: "72658199"
 |**Setter 액세스 한정자**|setter의 액세스 한정자입니다. 이 속성은 프로그램 코드가 속성을 설정할 수 있는 범위를 제어합니다.|`public`|
 |**Type**|속성의 형식입니다. 사용 가능한 형식 목록에 추가 하려면 DSL 탐색기에서 DSL 루트를 마우스 오른쪽 단추로 클릭 하 고 **외부 형식 추가**를 클릭 합니다.|`String`|
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

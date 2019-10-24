@@ -1,5 +1,5 @@
 ---
-title: 쿼리 합니다. Pdb 파일 | Microsoft Docs
+title: 쿼리. Pdb 파일 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,19 +13,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a67dc121790acff1f5e39a82a1711317616fc2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 68efbd59abe1b0aff717a55383f3ac330586164a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62855047"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738576"
 ---
 # <a name="querying-the-pdb-file"></a>.Pdb 파일 쿼리
-프로그램 데이터베이스 파일 (확장 확장자는.pdb) 이진 파일 형식 및 컴파일 및 연결 프로젝트 과정에서 수집 된 기호 디버깅 정보를 포함 하는 경우 C를 컴파일할 때 PDB 파일을 만들 /C++ 사용 하 여 프로그래밍 **/ZI** 또는 **/Zi** 또는 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]를 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], 또는 [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] 사용 하 여 프로그래밍 합니다 **디버그**옵션입니다. 개체 파일에는 디버깅 정보에 대 한.pdb 파일에 대 한 참조를 포함 합니다. Pdb 파일에 대 한 자세한 내용은 참조 하세요. [PDB 파일](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/yd4f8bd1(v=vs.100))합니다. DIA 응용 프로그램을 다음과 같은 일반적인 단계를 사용 하 여 다양 한 기호, 개체 및 실행 가능 이미지 내의 데이터 요소에 대 한 자세한 정보를 얻을 수 있습니다.
+프로그램 데이터베이스 파일 (확장명 .pdb)은 프로젝트를 컴파일하고 연결 하는 과정에서 수집 된 형식 및 기호화 된 디버깅 정보를 포함 하는 이진 파일입니다. PDB 파일은 **/debug** 옵션을 사용 하 여 **/zi** 또는C++ **/zi** 나 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 또는 [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] 프로그램을 사용 하 여 C/프로그램을 컴파일할 때 생성 됩니다. 개체 파일에는 디버깅 정보를 위한 .pdb 파일에 대 한 참조가 포함 되어 있습니다. Pdb 파일에 대 한 자세한 내용은 [Pdb 파일](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/yd4f8bd1(v=vs.100))을 참조 하세요. DIA 응용 프로그램은 다음과 같은 일반적인 단계를 사용 하 여 실행 가능한 이미지 내의 다양 한 기호, 개체 및 데이터 요소에 대 한 세부 정보를 가져올 수 있습니다.
 
-### <a name="to-query-the-pdb-file"></a>.Pdb 파일 쿼리
+### <a name="to-query-the-pdb-file"></a>.Pdb 파일을 쿼리하려면
 
-1. 데이터 원본을 만들어 가져올는 [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) 인터페이스입니다.
+1. [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) 인터페이스를 만들어 데이터 소스를 가져옵니다.
 
     ```C++
     CComPtr<IDiaDataSource> pSource;
@@ -41,7 +41,7 @@ ms.locfileid: "62855047"
     }
     ```
 
-2. 호출 [idiadatasource:: Loaddatafrompdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) 하거나 [idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) 디버깅 정보를 로드 합니다.
+2. [IDiaDataSource:: loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) 또는 [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) 를 호출 하 여 디버깅 정보를 로드 합니다.
 
     ```C++
     wchar_t wszFilename[ _MAX_PATH ];
@@ -55,7 +55,7 @@ ms.locfileid: "62855047"
     }
     ```
 
-3. 호출 [idiadatasource:: Opensession](../../debugger/debug-interface-access/idiadatasource-opensession.md) 여는 [IDiaSession](../../debugger/debug-interface-access/idiasession.md) 디버깅 정보에 액세스할 수 있습니다.
+3. [IDiaDataSource:: openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) 을 호출 하 여 디버깅 정보에 대 한 액세스 권한을 얻을 수 있도록 [IDiaSession](../../debugger/debug-interface-access/idiasession.md) 를 엽니다.
 
     ```C++
     CComPtr<IDiaSession> psession;
@@ -65,7 +65,7 @@ ms.locfileid: "62855047"
     }
     ```
 
-4. 메서드를 사용 하 여 `IDiaSession` 데이터 소스의 기호에 대 한 쿼리 합니다.
+4. @No__t_0의 메서드를 사용 하 여 데이터 소스에서 기호를 쿼리할 수 있습니다.
 
     ```C++
     CComPtr<IDiaSymbol> pglobal;
@@ -75,7 +75,7 @@ ms.locfileid: "62855047"
     }
     ```
 
-5. 사용 된 `IDiaEnum*` 디버그 정보를 열거 하 고 기호 또는 기타 요소를 검색할 인터페이스입니다.
+5. @No__t_0 인터페이스를 사용 하 여 디버그 정보의 기호나 기타 요소를 열거 하 고 검색 합니다.
 
     ```C++
     CComPtr<IDiaEnumTables> pTables;
@@ -90,5 +90,5 @@ ms.locfileid: "62855047"
     }
     ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)

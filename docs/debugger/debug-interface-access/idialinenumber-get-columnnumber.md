@@ -1,5 +1,5 @@
 ---
-title: 'Idialinenumber:: Get_columnnumber | Microsoft Docs'
+title: 'IDiaLineNumber:: get_columnNumber | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03d24770c90ebd225fa37dd7f60d794781e79e7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6ac6eea93daf9b0ef7d8169a4f765c249f3b9ee4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828456"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743254"
 ---
-# <a name="idialinenumbergetcolumnnumber"></a>IDiaLineNumber::get_columnNumber
+# <a name="idialinenumberget_columnnumber"></a>IDiaLineNumber::get_columnNumber
 식 또는 문이 시작 되는 열 번호를 검색 합니다.
 
 ## <a name="syntax"></a>구문
@@ -33,13 +33,13 @@ HRESULT get_columnNumber ( 
 #### <a name="parameters"></a>매개 변수
  `pRetVal`
 
-[out] 식 또는 문이 시작 되는 열 번호를 반환 합니다. 값이 0 이면 다음 열 정보가 나타나지 않습니다.
+제한이 식 또는 문이 시작 되는 열 번호를 반환 합니다. 값이 0 이면 열 정보가 없습니다.
 
 ## <a name="return-value"></a>반환 값
- 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.
+ 성공하면 `S_OK`를 반환합니다. 이 속성이 지원 되지 않는 경우 `S_FALSE`를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.
 
-## <a name="remarks"></a>설명
- 이 메서드에서 반환 된 열 값이 문의 줄에서 첫 번째 문자는 줄에 대 한 바이트 오프셋입니다.
+## <a name="remarks"></a>주의
+ 이 메서드에서 반환 하는 열 값은 줄의 줄에 있는 문의 첫 번째 문자에 대 한 바이트 오프셋입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

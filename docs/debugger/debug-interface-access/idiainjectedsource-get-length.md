@@ -1,5 +1,5 @@
 ---
-title: 'Idiainjectedsource:: Get_length | Microsoft Docs'
+title: 'IDiaInjectedSource:: get_length | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8333c7e57c3cd3f240f8a72dd865e458b23bc299
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 95c51910ee638338f588b1e81b844cf3f487a50e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828636"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743357"
 ---
-# <a name="idiainjectedsourcegetlength"></a>IDiaInjectedSource::get_length
+# <a name="idiainjectedsourceget_length"></a>IDiaInjectedSource::get_length
 코드의 바이트 수를 검색 합니다.
 
 ## <a name="syntax"></a>구문
@@ -33,14 +33,14 @@ HRESULT get_length ( 
 #### <a name="parameters"></a>매개 변수
  `pRetVal`
 
-[out] 코드의 바이트 수를 반환합니다.
+제한이 코드의 바이트 수를 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.
+ 성공하면 `S_OK`를 반환합니다. 이 속성이 지원 되지 않는 경우 `S_FALSE`를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.
 
-## <a name="remarks"></a>설명
- 이 메서드에서 반환 된 값의 소스 코드의 길이 이며에서 반환 되는 값과 동일 합니다 [idiainjectedsource:: Get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md) 메서드.
+## <a name="remarks"></a>주의
+ 이 메서드에서 반환 되는 값은 소스 코드의 길이 이며 [IDiaInjectedSource:: get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md) 메서드에서 반환 되는 값과 같습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
 - [IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)

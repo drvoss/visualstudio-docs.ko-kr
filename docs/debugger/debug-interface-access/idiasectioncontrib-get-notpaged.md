@@ -1,5 +1,5 @@
 ---
-title: 'Idiasectioncontrib:: Get_notpaged | Microsoft Docs'
+title: 'IDiaSectionContrib:: get_notPaged | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fb132b4cf36eb686424e0f756ffe0387a432eb0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cae6940ce69bf9cd39c1002cc522af993fc59b6d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827641"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742579"
 ---
-# <a name="idiasectioncontribgetnotpaged"></a>IDiaSectionContrib::get_notPaged
-메모리가 부족 섹션 호출 될 수 없습니다 여부를 나타내는 플래그를 검색 합니다.
+# <a name="idiasectioncontribget_notpaged"></a>IDiaSectionContrib::get_notPaged
+섹션에서 메모리를 페이징할 수 없는지 여부를 나타내는 플래그를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -32,10 +32,10 @@ HRESULT get_notPaged ( 
 
 #### <a name="parameters"></a>매개 변수
  `pRetVal`
-- [out, retval] 반환 `TRUE` 이 고, 그렇지 않으면 섹션을 페이징할 수 없는 경우 반환 `FALSE`합니다.
+- [out, retval] 섹션을 페이징할 수 없는 경우 `TRUE`를 반환 합니다. 그렇지 않으면 `FALSE`을 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.
+ 성공하면 `S_OK`를 반환합니다. 이 속성이 지원 되지 않는 경우 `S_FALSE`를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

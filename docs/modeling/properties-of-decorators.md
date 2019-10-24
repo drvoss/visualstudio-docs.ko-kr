@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e34268b1c360c686a61da631100cb671acd59d1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 567cba4be2d225985b5a6d690f0d8264f24190f4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658238"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747498"
 ---
 # <a name="properties-of-decorators"></a>데코레이터의 속성
 데코레이터는 다이어그램의 모양 또는 연결선에 나타날 수 있는 아이콘, 텍스트 또는 확장/축소 갈매기형 수장입니다. 다음 표에서는 세 가지 데코레이터 종류에 대 한 속성을 보여 줍니다. 일부 속성은 shape 데코레이터 또는 connector 데코레이터에만 표시 됩니다.
@@ -64,6 +64,6 @@ ms.locfileid: "72658238"
 |OffsetFromShape|기본 위치를 기준으로 하는 도형의 데코레이터 오프셋 (인치)입니다. (커넥터에만 해당)|0|
 |위치|데코레이터의 기본 위치입니다.|TargetBottom|
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

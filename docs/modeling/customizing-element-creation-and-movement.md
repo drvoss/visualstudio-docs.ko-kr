@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ea58bb790cf7c9aaac554728643f6e164e06418
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 192bde210d7188e54576453dc04654e970df27f4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654050"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747608"
 ---
 # <a name="customizing-element-creation-and-movement"></a>요소 만들기 및 이동 사용자 지정
 
@@ -316,7 +316,7 @@ EMD에 사용자 지정 코드를 추가 하 여 더 복잡 한 병합 동작을
 
      사용할 수 없는 포인터는 표시 되지 않으며 기존 **입력 포트에 새 입력 포트** 를 삭제할 수 있어야 합니다. 새 **입력 포트** 를 선택 하 고 **구성 요소의**다른 위치로 끕니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [도구 및 도구 상자 사용자 지정](../modeling/customizing-tools-and-the-toolbox.md)

@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a24d288e7c5572ca96dcc43466c2163d9ecca67
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6ad53866c1930edb01ccd163131ce5e23644929c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658262"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747506"
 ---
 # <a name="properties-of-compartment-shapes"></a>구획 모양의 속성
 구획 도형은 도메인 특정 언어로 도메인 클래스를 표시 하는 데 사용할 수 있는 도형 중 하나입니다. 구획을 확장 하거나 축소할 수 있습니다.
@@ -55,6 +55,6 @@ ms.locfileid: "72658262"
 |고정 도구 설명 텍스트|고정 도구 설명에 사용 되는 텍스트입니다.|\<none >|
 |Help Keyword|이 모양에 대 한 F1 도움말을 인덱싱하는 데 사용 되는 키워드입니다.|\<none >|
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

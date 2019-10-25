@@ -12,12 +12,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 94ce946f7c14706b57618f3d9aeb90cc207fcf04
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dd469f955a24c6d3c2fb5e438d81e6b8a2db8458
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648299"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807002"
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Visual Studio용 호환 데이터베이스 시스템
 
@@ -35,19 +35,19 @@ SQL Server는 Microsoft 주력 데이터베이스 제품입니다. SQL Server 20
 
 ## <a name="oracle"></a>Oracle
 
-Oracle [기술 네트워크](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index-092322.html) 페이지에서 oracle 데이터베이스의 유료 또는 무료 버전을 다운로드할 수 있습니다. Entity Framework 및 Tableadapter에 대 한 디자인 타임 지원을 위해 [Visual Studio 용 Oracle 개발자 도구](http://www.oracle.com/technetwork/developer-tools/visual-studio/overview/index.html)가 필요 합니다. Oracle 인스턴트 클라이언트를 비롯 한 다른 공식 Oracle 제품은 NuGet 패키지 관리자를 통해 사용할 수 있습니다. Oracle [온라인 설명서](http://docs.oracle.com/cd/E11882_01/server.112/e10831/toc.htm)의 지침에 따라 oracle 샘플 스키마를 다운로드할 수 있습니다.
+Oracle [기술 네트워크](https://www.oracle.com/database/technologies/oracle-database-software-downloads.html) 페이지에서 oracle 데이터베이스의 유료 또는 무료 버전을 다운로드할 수 있습니다. Entity Framework 및 Tableadapter에 대 한 디자인 타임 지원을 위해 [Visual Studio 용 Oracle 개발자 도구](https://www.oracle.com/database/technologies/developer-tools/visual-studio/)가 필요 합니다. Oracle 인스턴트 클라이언트를 비롯 한 다른 공식 Oracle 제품은 NuGet 패키지 관리자를 통해 사용할 수 있습니다. Oracle [온라인 설명서](https://docs.oracle.com/cd/E11882_01/server.112/e10831/toc.htm)의 지침에 따라 oracle 샘플 스키마를 다운로드할 수 있습니다.
 
 ## <a name="mysql"></a>MySQL
 
-MySQL은 기업 및 websites에서 널리 사용 되는 인기 있는 오픈 소스 데이터베이스 시스템입니다. Mysql, Visual Studio 용 MySQL 및 관련 제품에 대 한 다운로드는 [Windows의 mysql](http://www.mysql.com/why-mysql/windows/)에 있습니다. 타사는 다양 한 Visual Studio 확장 및 MySQL 용 독립 실행형 관리 응용 프로그램을 제공 합니다. Nuget 패키지 관리자 (**도구**  >  Nuget 패키지**관리자**  > **솔루션에 대 한 nuget 패키지 관리**)에서 제공 하는 기능을 찾아볼 수 있습니다.
+MySQL은 기업 및 websites에서 널리 사용 되는 인기 있는 오픈 소스 데이터베이스 시스템입니다. Mysql, Visual Studio 용 MySQL 및 관련 제품에 대 한 다운로드는 [Windows의 mysql](https://www.mysql.com/why-mysql/windows/)에 있습니다. 타사는 다양 한 Visual Studio 확장 및 MySQL 용 독립 실행형 관리 응용 프로그램을 제공 합니다. Nuget 패키지 관리자 (**도구**  >  Nuget 패키지**관리자**  > **솔루션에 대 한 nuget 패키지 관리**)에서 제공 하는 기능을 찾아볼 수 있습니다.
 
 ## <a name="postgresql"></a>PostgreSQL
 
-PostgreSQL는 무료 오픈 소스 개체 관계형 데이터베이스 시스템입니다. Windows에 설치 하려면 [PostgreSQL 다운로드 페이지](http://www.postgresql.org/download/windows/)에서 다운로드할 수 있습니다. 소스 코드에서 PostgreSQL를 빌드할 수도 있습니다. PostgreSQL core 시스템은 C 언어 인터페이스를 포함 합니다. 많은 제 3 자가 .NET 응용 프로그램에서 PostgreSQL를 사용 하기 위한 NuGet 패키지를 제공 합니다. Nuget 패키지 관리자 (**도구**  >  Nuget 패키지**관리자**  > **솔루션에 대 한 nuget 패키지 관리**)에서 제공 하는 기능을 찾아볼 수 있습니다. 아마도 [npgsql.org](http://www.npgsql.org)에서 가장 인기 있는 패키지를 제공 합니다.
+PostgreSQL는 무료 오픈 소스 개체 관계형 데이터베이스 시스템입니다. Windows에 설치 하려면 [PostgreSQL 다운로드 페이지](https://www.postgresql.org/download/windows/)에서 다운로드할 수 있습니다. 소스 코드에서 PostgreSQL를 빌드할 수도 있습니다. PostgreSQL core 시스템은 C 언어 인터페이스를 포함 합니다. 많은 제 3 자가 .NET 응용 프로그램에서 PostgreSQL를 사용 하기 위한 NuGet 패키지를 제공 합니다. Nuget 패키지 관리자 (**도구**  >  Nuget 패키지**관리자**  > **솔루션에 대 한 nuget 패키지 관리**)에서 제공 하는 기능을 찾아볼 수 있습니다. 아마도 [npgsql.org](http://www.npgsql.org)에서 가장 인기 있는 패키지를 제공 합니다.
 
 ## <a name="sqlite"></a>SQLite
 
-SQLite는 응용 프로그램 자체 프로세스에서 실행 되는 임베디드 SQL database 엔진입니다. [SQLite 다운로드 페이지](http://www.sqlite.org/download.html)에서 다운로드할 수 있습니다. SQLite 용 타사 NuGet 패키지도 사용할 수 있습니다. Nuget 패키지 관리자 (**도구**  >  Nuget 패키지**관리자**  > **솔루션에 대 한 nuget 패키지 관리**)에서 제공 하는 기능을 찾아볼 수 있습니다.
+SQLite는 응용 프로그램 자체 프로세스에서 실행 되는 임베디드 SQL database 엔진입니다. [SQLite 다운로드 페이지](https://www.sqlite.org/download.html)에서 다운로드할 수 있습니다. SQLite 용 타사 NuGet 패키지도 사용할 수 있습니다. Nuget 패키지 관리자 (**도구**  >  Nuget 패키지**관리자**  > **솔루션에 대 한 nuget 패키지 관리**)에서 제공 하는 기능을 찾아볼 수 있습니다.
 
 ## <a name="firebird"></a>Firebird
 
@@ -56,4 +56,4 @@ Firebird은 오픈 소스 SQL 데이터베이스 시스템입니다. [Firebird �
 ## <a name="see-also"></a>참조
 
 - [Visual Studio에서 데이터 액세스](../data-tools/accessing-data-in-visual-studio.md)
-- [SQL Server 및 관련 구성 요소의 버전을 확인하는 방법](http://support.microsoft.com/kb/321185)
+- [SQL Server 및 관련 구성 요소의 버전을 확인하는 방법](https://support.microsoft.com/help/321185/how-to-determine-the-version-edition-and-update-level-of-sql-server-an)

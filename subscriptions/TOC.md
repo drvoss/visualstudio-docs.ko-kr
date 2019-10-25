@@ -25,7 +25,7 @@
 ### [구독 관리자에게 문의](contact-my-admin.md)
 ### 이점
 #### 도구
-##### [Azure 크레딧](vs-azure.md)
+##### [Azure DevTest 개별 크레딧](vs-azure.md)
 ##### [Azure DevOps](vs-azure-devops.md)
 ##### [Azure Pay-As-You-Go](vs-azure-payg.md)
 ##### [CAST 하이라이트](vs-cast.md)

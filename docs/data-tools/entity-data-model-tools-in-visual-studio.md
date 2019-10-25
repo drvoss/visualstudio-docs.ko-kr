@@ -8,18 +8,18 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 53b87ce39f0eb5b1455f0a38b2aea7cc6b604342
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6efcd0ca4e8274df7667b5a5b2b75020def8c358
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648524"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807019"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Visual Studio의 Entity Framework Tools
 
 Entity Framework는 .NET 개발자가 도메인별 개체를 사용 하 여 관계형 데이터 작업을 수행할 수 있도록 하는 개체-관계형 매핑 기술입니다. 개발자들이 보통 작성해야 하는 데이터 액세스 코드가 대부분 필요하지 않게 됩니다. Entity Framework은 새로운 .NET 응용 프로그램에 권장 되는 ORM (개체 관계형 매핑) 모델링 기술입니다.
 
-Entity Framework Tools는 EF (Entity Framework) 응용 프로그램을 빌드하는 데 도움이 되도록 설계 되었습니다. Entity Framework에 대 한 전체 설명서는 다음과 같습니다. [개요-EF 6](/ef/ef6/).
+Entity Framework Tools는 EF (Entity Framework) 응용 프로그램을 빌드하는 데 도움이 되도록 설계 되었습니다. Entity Framework에 대 한 전체 설명서는 [개요-EF 6](/ef/ef6/)에서 확인할 수 있습니다.
 
   > [!NOTE]
   > 이 페이지에 설명 된 Entity Framework Tools는 EF Core에서 지원 되지 않는 .edmx 파일을 생성 하는 데 사용 됩니다 *.* 기존 데이터베이스에서 EF Core 모델을 생성 하려면 [리버스 엔지니어링-EF Core](/ef/core/managing-schemas/scaffolding)을 참조 하세요. EF 6과 EF Core 간의 차이점에 대 한 자세한 내용은 [ef 6 및 EF Core 비교](/ef/efcore-and-ef6/)를 참조 하세요.
@@ -32,7 +32,7 @@ Entity Framework 도구는 Visual Studio 설치 관리자에서 **데이터 저�
 
 - **Entity Designer**([!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] 디자이너** )를 사용 하 여 엔터티, 연결, 매핑 및 상속 관계를 시각적으로 만들고 수정할 수 있습니다. 또한 **Entity Designer** [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] 또는 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 개체 계층 코드를 생성 합니다.
 
-- **@No__t_1 마법사** 를 사용 하 여 기존 데이터베이스에서 개념적 모델을 생성 하 고 응용 프로그램에 데이터베이스 연결 정보를 추가할 수 있습니다.
+- **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] 마법사** 를 사용 하 여 기존 데이터베이스에서 개념적 모델을 생성 하 고 응용 프로그램에 데이터베이스 연결 정보를 추가할 수 있습니다.
 
 - **데이터베이스 만들기 마법사** 를 사용 하 여 먼저 개념적 모델을 만든 다음 모델을 지 원하는 데이터베이스를 만들 수 있습니다.
 
@@ -41,7 +41,7 @@ Entity Framework 도구는 Visual Studio 설치 관리자에서 **데이터 저�
   > [!NOTE]
   > Visual Studio 2010부터 Entity Framework 도구는 [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)]를 지원 하지 않습니다.
 
-도구는 *.edmx* 파일을 생성 하거나 수정 합니다. 이 *.edmx* 파일에는 개념적 모델, 저장소 모델 및 두 모델 간의 매핑을 설명 하는 정보가 포함 되어 있습니다. 자세한 내용은 [EDMX](https://docs.microsoft.com/ef/ef6/)를 참조 하세요.
+도구는 *.edmx* 파일을 생성 하거나 수정 합니다. 이 *.edmx* 파일에는 개념적 모델, 저장소 모델 및 두 모델 간의 매핑을 설명 하는 정보가 포함 되어 있습니다. 자세한 내용은 [EDMX](/ef/ef6/)를 참조 하세요.
 
 [Entity Framework Power Tools](https://marketplace.visualstudio.com/items?itemName=EntityFrameworkTeam.EntityFrameworkPowerToolsBeta4) 는 엔터티 데이터 모델를 사용 하는 응용 프로그램을 빌드하는 데 도움이 됩니다. Power tools는 개념적 모델을 생성 하 고, 기존 모델의 유효성을 검사 하 고, 개념적 모델을 기반으로 하는 개체 클래스가 포함 된 소스 코드 파일을 생성 하 고, 모델이 생성 하는 뷰를 포함 하는 소스 코드 파일을 생성할 수 있습니다. 자세한 내용은 [미리 생성 된 매핑 뷰](https://docs.microsoft.com/ef/ef6/fundamentals/performance/pre-generated-views)를 참조 하세요.
 
@@ -49,11 +49,11 @@ Entity Framework 도구는 Visual Studio 설치 관리자에서 **데이터 저�
 
 | 제목 | 설명 |
 | - | - |
-| [ADO.NET Entity Framework](/dotnet/framework/data/adonet/ef/index) | @No__t_1에서 제공 하는 [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] 도구를 사용 하 여 응용 프로그램을 만드는 방법을 설명 합니다. |
-| [엔터티 데이터 모델](/dotnet/framework/data/adonet/entity-data-model) | @No__t_0에서 빌드된 응용 프로그램에서 사용 하는 데이터 작업을 위한 링크와 정보를 제공 합니다. |
-| [Entity Framework (EF) 설명서)](https://docs.microsoft.com/ef/ef6/get-started) | Entity Framework를 최대한 활용 하는 데 도움이 되는 비디오, 자습서 및 고급 설명서의 인덱스를 제공 합니다. |
+| [ADO.NET Entity Framework](/dotnet/framework/data/adonet/ef/index) | [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)]에서 제공 하는 [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] 도구를 사용 하 여 응용 프로그램을 만드는 방법을 설명 합니다. |
+| [엔터티 데이터 모델](/dotnet/framework/data/adonet/entity-data-model) | [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)]에서 빌드된 응용 프로그램에서 사용 하는 데이터 작업을 위한 링크와 정보를 제공 합니다. |
+| [Entity Framework (EF) 설명서)](/ef/ef6/get-started) | Entity Framework를 최대한 활용 하는 데 도움이 되는 비디오, 자습서 및 고급 설명서의 인덱스를 제공 합니다. |
 | [ASP.NET 5 응용 프로그램을 새 데이터베이스로](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html) | Entity Framework 7을 사용 하 여 새 ASP.NET 5 응용 프로그램을 만드는 방법을 설명 합니다. |
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [.NET용 Visual Studio 데이터 도구](../data-tools/visual-studio-data-tools-for-dotnet.md)

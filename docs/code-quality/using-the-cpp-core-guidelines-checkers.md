@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 dev_langs:
 - CPP
-ms.openlocfilehash: fee4478f52cd107d2173919617aca8acd07234eb
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 762ba639c1443bb737087233d04c9e3753f2f455
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445649"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807078"
 ---
 # <a name="use-the-c-core-guidelines-checkers"></a>C++ Core Guidelines 검사기 사용
 
@@ -80,17 +80,17 @@ C++ 핵심 지침 검사기에 새 규칙을 추가 하면 기존 코드에 대�
 대부분의 규칙에 대 한 참조 항목은 [Visual Studio C++ Core 검사 참조](code-analysis-for-cpp-corecheck.md)에 있습니다.
 
 Visual Studio 2017 버전 15.3에서 지원 되는 규칙 집합은 다음과 같습니다.
-- **소유자 포인터 규칙** [은 C++ 핵심 지침에서 소유자 \<T > 관련 된 리소스 관리 검사를](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)적용 합니다.
+- **소유자 포인터 규칙** [은 C++ 핵심 지침에서 소유자 \<T > 관련 된 리소스 관리 검사를](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)적용 합니다.
 
-- **Const 규칙** [은 C++ 핵심 지침에서 const 관련 검사를](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)적용 합니다.
+- **Const 규칙** [은 C++ 핵심 지침에서 const 관련 검사를](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)적용 합니다.
 
-- **원시 포인터 규칙** [은 C++ 핵심 지침에서 원시 포인터 관련 리소스 관리 검사를](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)적용 합니다.
+- **원시 포인터 규칙** [은 C++ 핵심 지침에서 원시 포인터 관련 리소스 관리 검사를](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)적용 합니다.
 
-- **고유 포인터 규칙** [은 C++ 핵심 지침의 고유 포인터 의미 체계를 사용 하 여 형식과 관련 된 리소스 관리 검사를](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)적용 합니다.
+- **고유 포인터 규칙** [은 C++ 핵심 지침의 고유 포인터 의미 체계를 사용 하 여 형식과 관련 된 리소스 관리 검사를](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)적용 합니다.
 
-- **범위 규칙** 은 [ C++ 핵심 지침의 범위 프로필](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile)을 적용 합니다.
+- **범위 규칙** 은 [ C++ 핵심 지침의 범위 프로필](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile)을 적용 합니다.
 
-- **형식 규칙** 은 [ C++ 핵심 지침의 형식 프로필](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile)을 적용 합니다.
+- **형식 규칙** 은 [ C++ 핵심 지침의 형식 프로필](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile)을 적용 합니다.
 
 **Visual Studio 2017 버전 15.5**:
 
@@ -131,7 +131,7 @@ CPPCORECHECK_BOUNDS_WARNINGS
 
 ## <a name="attributes"></a>특성
 
-Microsoft Visual C++ 컴파일러는 gsl 표시 안 함 특성을 제한적으로 지원 합니다. 이를 사용 하 여 함수 내에서 식 및 블록 문에 대 한 경고를 표시 하지 않을 수 있습니다.
+Microsoft C++ 컴파일러는 gsl 표시 안 함 특성을 제한적으로 지원 합니다. 이를 사용 하 여 함수 내에서 식 및 블록 문에 대 한 경고를 표시 하지 않을 수 있습니다.
 
 ```cpp
 // Suppress only warnings from the 'r.11' rule in expression.
@@ -231,11 +231,11 @@ MSBuild를 사용 하지 않는 빌드 시스템을 사용 하는 경우 검사�
    - `/analyze:plugin EspXEngine.dll`이 옵션은 PREfast 코드 분석 확장 엔진을 로드 합니다. 이 엔진은 C++ 핵심 지침 검사기를 차례로 로드 합니다.
 
 ## <a name="use-the-guideline-support-library"></a>지침 지원 라이브러리 사용
-지침 지원 라이브러리는 핵심 지침을 따르는 데 도움이 되도록 설계 되었습니다. GSL에는 오류가 발생 하기 쉬운 구문을 보다 안전한 대체 항목으로 바꿀 수 있는 정의가 포함 되어 있습니다. 예를 들어 `T*, length` 매개 변수 쌍을 `span<T>` 형식으로 바꿀 수 있습니다. GSL은 [http://www.nuget.org/packages/Microsoft.Gsl](http://www.nuget.org/packages/Microsoft.Gsl)에서 사용할 수 있습니다. 라이브러리는 오픈 소스 이므로 소스를 보거나 의견을 올리거나 참가할 수 있습니다. 프로젝트는 [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL)에서 찾을 수 있습니다.
+지침 지원 라이브러리는 핵심 지침을 따르는 데 도움이 되도록 설계 되었습니다. GSL에는 오류가 발생 하기 쉬운 구문을 보다 안전한 대체 항목으로 바꿀 수 있는 정의가 포함 되어 있습니다. 예를 들어 `T*, length` 매개 변수 쌍을 `span<T>` 형식으로 바꿀 수 있습니다. GSL은 [http://www.nuget.org/packages/Microsoft.Gsl](https://www.nuget.org/packages/Microsoft.Gsl)에서 사용할 수 있습니다. 라이브러리는 오픈 소스 이므로 소스를 보거나 의견을 올리거나 참가할 수 있습니다. 프로젝트는 [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL)에서 찾을 수 있습니다.
 
 ## <a name="vs2015_corecheck"></a>Visual Studio C++ 2015 프로젝트의 핵심 검사 지침 사용
 
-Visual Studio 2015을 사용 하는 경우 C++ 핵심 검사 코드 분석 규칙 집합은 기본적으로 설치 되지 않습니다. Visual Studio 2015에서 핵심 검사 코드 분석 도구를 C++ 사용 하려면 몇 가지 추가 단계를 수행 해야 합니다. Microsoft에서는 Nuget 패키지를 사용 하 여 Visual Studio 2015 프로젝트에 대 한 지원을 제공 합니다. 패키지 이름은 CppCoreCheck입니다 .이 패키지는 [http://www.nuget.org/packages/Microsoft.CppCoreCheck](http://www.nuget.org/packages/Microsoft.CppCoreCheck)에서 사용할 수 있습니다. 이 패키지에는 Visual Studio 2015 이상 업데이트 1이 설치 되어 있어야 합니다.
+Visual Studio 2015을 사용 하는 경우 C++ 핵심 검사 코드 분석 규칙 집합은 기본적으로 설치 되지 않습니다. Visual Studio 2015에서 핵심 검사 코드 분석 도구를 C++ 사용 하려면 몇 가지 추가 단계를 수행 해야 합니다. Microsoft에서는 Nuget 패키지를 사용 하 여 Visual Studio 2015 프로젝트에 대 한 지원을 제공 합니다. 패키지 이름은 CppCoreCheck입니다 .이 패키지는 [http://www.nuget.org/packages/Microsoft.CppCoreCheck](https://www.nuget.org/packages/Microsoft.CppCoreCheck)에서 사용할 수 있습니다. 이 패키지에는 Visual Studio 2015 이상 업데이트 1이 설치 되어 있어야 합니다.
 
 또한 패키지는 다른 패키지를 종속성으로 설치 합니다 .이는 헤더 전용의 GSL (지침 지원 라이브러리)입니다. GSL는 [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL)의 GitHub 에서도 사용할 수 있습니다.
 
@@ -253,6 +253,6 @@ Visual Studio 2015을 사용 하는 경우 C++ 핵심 검사 코드 분석 규�
 
    NuGet 패키지는 프로젝트에 대해 코드 분석을 사용 하도록 설정할 때 호출 되는 프로젝트에 다른 Msbuild.exe *.targets* 파일을 추가 합니다. 이 *.targets* 파일은 Visual Studio C++ code 분석 도구에 대 한 추가 확장으로 핵심 검사 규칙을 추가 합니다. 패키지가 설치 될 때 속성 페이지 대화 상자를 사용 하 여 해제 된 및 실험적 규칙을 사용 하거나 사용 하지 않도록 설정할 수 있습니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [Visual Studio C++ Core 검사 참조](code-analysis-for-cpp-corecheck.md)

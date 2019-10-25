@@ -35,12 +35,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3c83e6b85e8657487254f1f4fb275a6280c786ff
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8654e42db8ec2a285c9104c6f43bc34beb22ad22
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72638951"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806960"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Windows Communication Foundation 서비스 및 Visual Studio의 WCF.NET 데이터 서비스
 
@@ -52,7 +52,7 @@ WCF (Windows Communication Foundation)는 안전 하 고 신뢰할 수 있으며
 
 ### <a name="what-are-wcf-data-services"></a>WCF Data Services 정의
 
-WCF Data Services는 OData (Open Data) 프로토콜 표준의 구현입니다.  WCF Data Services를 사용 하면 테이블 형식 데이터를 일련의 REST Api로 노출 하 여 GET, POST, PUT 또는 DELETE와 같은 표준 HTTP 동사를 사용 하 여 데이터를 반환할 수 있습니다. 서버 쪽에서는 새 OData 서비스를 만들기 위해 WCF Data Services [ASP.NET Web API](http://www.asp.net/web-api) 으로 대체 됩니다. WCF Data Services 클라이언트 라이브러리는 Visual Studio (**Project**  > **서비스 참조 추가**)의 .Net 응용 프로그램에서 OData 서비스를 사용 하는 데 적합 합니다. 자세한 내용은 [WCF Data Services 4.5](http://go.microsoft.com/fwlink/?LinkID=119952)를 참조하세요.
+WCF Data Services는 OData (Open Data) 프로토콜 표준의 구현입니다.  WCF Data Services를 사용 하면 테이블 형식 데이터를 일련의 REST Api로 노출 하 여 GET, POST, PUT 또는 DELETE와 같은 표준 HTTP 동사를 사용 하 여 데이터를 반환할 수 있습니다. 서버 쪽에서는 새 OData 서비스를 만들기 위해 WCF Data Services [ASP.NET Web API](https://dotnet.microsoft.com/apps/aspnet/apis) 으로 대체 됩니다. WCF Data Services 클라이언트 라이브러리는 Visual Studio (**Project** > **서비스 참조 추가**)의 .Net 응용 프로그램에서 OData 서비스를 사용 하는 데 적합 합니다. 자세한 내용은 [WCF Data Services 4.5](http://go.microsoft.com/fwlink/?LinkID=119952)를 참조하세요.
 
 ### <a name="wcf-programming-model"></a>WCF 프로그래밍 모델
 
@@ -91,7 +91,7 @@ WCF 클라이언트를 만든 후에는 다른 개체와 마찬가지로 코드�
 
 ## <a name="wcf-tools-in-visual-studio"></a>Visual Studio의 WCF 도구
 
-Visual Studio는 WCF 서비스와 WCF 클라이언트를 만드는 데 도움이 되는 도구를 제공 합니다. 도구를 보여 주는 연습은 [Walkthrough를 참조 하세요. Windows Forms ](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)에서 간단한 WCF 서비스를 만듭니다.
+Visual Studio는 WCF 서비스와 WCF 클라이언트를 만드는 데 도움이 되는 도구를 제공 합니다. 도구를 보여 주는 연습은 [연습: Windows Forms에서 간단한 WCF 서비스 만들기](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)를 참조 하세요.
 
 ### <a name="create-and-test-wcf-services"></a>WCF 서비스 만들기 및 테스트
 
@@ -171,7 +171,7 @@ WCF (일부 Windows Communication Foundation) 서비스는 클라이언트가 �
 
      서비스 참조에서 여러 끝점을 제공 하는 경우 두 개 이상의 `<Endpoint` 태그가 있습니다.
 
-4. @No__t_0 태그 안에 `name="`*SomeService* `"` 매개 변수 (여기서 *SomeService* 은 끝점 이름을 나타냄)를 찾을 수 있습니다. 서비스 참조에 대 한 생성자의 `endpointConfigurationName As String` 오버 로드에 전달 될 수 있는 끝점의 이름입니다.
+4. `<EndPoint>` 태그 안에 `name="`*SomeService*`"` 매개 변수 (여기서 *SomeService* 은 끝점 이름을 나타냄)를 찾을 수 있습니다. 서비스 참조에 대 한 생성자의 `endpointConfigurationName As String` 오버 로드에 전달 될 수 있는 끝점의 이름입니다.
 
 ## <a name="how-to-call-a-service-method-asynchronously"></a>방법: 비동기적으로 서비스 메서드 호출
 
@@ -192,7 +192,7 @@ WCF (Windows Communication Foundation) 서비스의 대부분의 메서드는 �
 
 3. **서비스 참조 구성** 대화 상자에서 **비동기 작업 생성** 확인란을 선택 합니다.
 
-## <a name="how-to-bind-data-returned-by-a-service"></a>방법: 서비스에서 반환 된 데이터 바인딩
+## <a name="how-to-bind-data-returned-by-a-service"></a>방법: 서비스에서 반환 되는 데이터 바인딩
 
 다른 데이터 소스를 컨트롤에 바인딩할 수 있는 것 처럼 WCF (Windows Communication Foundation) 서비스에서 반환 되는 데이터를 컨트롤에 바인딩할 수 있습니다. WCF 서비스에 대 한 참조를 추가 하는 경우 서비스에 데이터를 반환 하는 복합 형식이 포함 되어 있으면 **데이터 소스** 창에 자동으로 추가 됩니다.
 
@@ -226,7 +226,7 @@ WCF (Windows Communication Foundation) 서비스의 대부분의 메서드는 �
 
 5. 노드를 폼으로 끌어 옵니다. 컨트롤은 <xref:System.Windows.Forms.BindingSource> 구성 요소 및 <xref:System.Windows.Forms.BindingNavigator> 구성 요소와 함께 폼에 추가 됩니다.
 
-## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>방법: 기존 형식을 다시 사용 하도록 서비스 구성
+## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>방법: 서비스를 구성 하 여 기존 형식 다시 사용
 
 서비스 참조가 프로젝트에 추가 되 면 서비스에 정의 된 모든 형식이 로컬 프로젝트에 생성 됩니다. 대부분의 경우 서비스에서 공용 .NET 형식을 사용 하거나 형식이 공유 라이브러리에 정의 된 경우 중복 형식을 만듭니다.
 
@@ -263,11 +263,11 @@ WCF (Windows Communication Foundation) 서비스의 대부분의 메서드는 �
 | [연습: N 계층 데이터 애플리케이션 만들기](../data-tools/walkthrough-creating-an-n-tier-data-application.md) | 형식화된 데이터 세트을 만들고 TableAdapter 및 데이터 세트 코드를 여러 프로젝트로 분리하는 단계별 지침을 제공합니다. |
 | [서비스 참조 구성 대화 상자](../data-tools/configure-service-reference-dialog-box.md) | **서비스 참조 구성** 대화 상자의 사용자 인터페이스 요소에 대해 설명 합니다. |
 
-## <a name="reference"></a>참조
+## <a name="reference"></a>참고
 
 - <xref:System.ServiceModel>
 - <xref:System.Data.Services>
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [.NET용 Visual Studio 데이터 도구](../data-tools/visual-studio-data-tools-for-dotnet.md)

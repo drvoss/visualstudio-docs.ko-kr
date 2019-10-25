@@ -15,12 +15,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4abe5047bd7d6f17bb0dc23f4d92a1a842ee273a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 15a34fdc4486a013999a6b53e34117008396c955
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648762"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807018"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>WCF 데이터 서비스에 WPF 컨트롤 바인딩
 
@@ -46,7 +46,7 @@ ms.locfileid: "72648762"
 
 - Visual Studio
 
-- AdventureWorksLT 샘플 데이터베이스가 연결된 SQL Server 또는 SQL Server Express의 실행 중인 인스턴스 액세스 권한. [CodePlex 웹 사이트](http://go.microsoft.com/fwlink/?linkid=87843)에서 AdventureWorksLT 데이터베이스를 다운로드할 수 있습니다.
+- AdventureWorksLT 샘플 데이터베이스가 연결된 SQL Server 또는 SQL Server Express의 실행 중인 인스턴스 액세스 권한. [CodePlex 웹 사이트](https://archive.codeplex.com/?p=SqlServerSamples)에서 AdventureWorksLT 데이터베이스를 다운로드할 수 있습니다.
 
 또한 다음 개념에 대한 지식은 연습을 완료하는 데 반드시 필요하지는 않지만 사전에 파악해 두면 유용할 수 있습니다.
 

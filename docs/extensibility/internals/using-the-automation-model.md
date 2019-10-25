@@ -1,5 +1,5 @@
 ---
-title: 자동화 모델을 사용 하 여 | Microsoft Docs
+title: Automation 모델 사용 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +10,18 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be793e5cc4db30fa410e0218a7f780b6c2826838
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4f1e1479232a684758359de7527f0c2fc9990cc7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324592"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722089"
 ---
 # <a name="using-the-automation-model"></a>자동화 모델 사용
-속성 및 메서드를 호출 하 여 가져올 수 있습니다 자동화에 VSPackage를 연결한 후 합니다 <xref:EnvDTE.DTEClass.GetObject%2A> 메서드는 <xref:EnvDTE._DTE> 개체를 검색 하려는 개체를 나타내는 문자열을 전달 합니다.
+VSPackage를 automation에 연결한 후에는 <xref:EnvDTE._DTE> 개체에 대해 <xref:EnvDTE.DTEClass.GetObject%2A> 메서드를 호출 하 여 속성 및 메서드를 가져와 검색할 개체를 나타내는 문자열을 전달할 수 있습니다.
 
 ## <a name="obtaining-project-objects"></a>프로젝트 개체 가져오기
- Automation 소비자를 가져오는 프로젝트 자동화 개체를 보여 주는 두 가지 코드 예제는 다음과 같습니다. DTE 개체를 가져오는 방법에 대 한 자세한 내용은 [방법: DTE 및 DTE2 개체에 대 한 참조 가져오기](https://msdn.microsoft.com/Library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4)합니다.
+ 다음은 자동화 소비자가 프로젝트 자동화 개체를 가져오는 방법을 보여 주는 두 가지 코드 예제입니다. DTE 개체를 가져오는 방법에 대 한 자세한 내용은 [방법: dte 및 DTE2 개체에 대 한 참조 가져오기](https://msdn.microsoft.com/Library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4)를 참조 하세요.
 
 ```vb
 Sub DoAutomation()
@@ -43,9 +43,9 @@ void DoAutomation(void)
 
 ```
 
- 이 시점에서 계층 모델 아래로 이동 하려면 특정 VSPackage의 일부인 표준 프로젝트 개체를 사용할 수 있습니다.
+ 이 시점에서 특정 VSPackage의 일부인 표준 프로젝트 개체를 사용 하 여 계층 모델을 아래로 이동할 수 있습니다.
 
- 다음 코드 예제에는 사용자 지정 프로젝트 형식의 속성에는 사용자 지정 개체를 가져오는 방법을 보여 줍니다.:
+ 다음 코드 예제에서는 사용자 지정 프로젝트 형식의 속성인 사용자 지정 개체를 가져오는 방법을 보여 줍니다.
 
 ```vb
 Dim MyPrj As Project
@@ -58,7 +58,7 @@ objMyObject = MyPrj.Object 'You call .Object to get to special Project
 objMyObject.MySpecialMethodOrProperty
 ```
 
- 다음 코드는 모든 속성의 이름을 나열 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 환경 **일반** 옵션을 합니다 **도구** 메뉴:
+ 다음 코드는 **도구** 메뉴의 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 환경 **일반** 옵션에 있는 모든 속성의 이름을 나열 합니다.
 
 ```vb
 dim objDTE
@@ -71,5 +71,5 @@ Next
 
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - <xref:EnvDTE.DTEClass.GetObject%2A>

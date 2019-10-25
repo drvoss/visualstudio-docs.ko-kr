@@ -32,12 +32,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 2460ca1c76eb43bdff89c87c880f405cdce12b48
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 26c788319331d0da4024844b50b4c495ed2c3a37
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72446321"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806760"
 ---
 # <a name="annotating-locking-behavior"></a>잠금 동작에 주석 지정
 다중 스레드 프로그램에서 동시성 버그를 방지하려면 항상 적절한 잠금 규칙을 따르고 SAL 주석을 사용합니다.
@@ -112,12 +112,12 @@ SAL은 임계 영역, 뮤텍스, 스핀 잠금 및 기타 리소스 개체와 �
 |----------------|-----------------|
 |`_Analysis_assume_smart_lock_acquired_`|분석기에 스마트 잠금을 획득 했다고 가정 합니다. 이 주석에는 참조 잠금 형식이 매개 변수로 필요 합니다.|
 |`_Analysis_assume_smart_lock_released_`|스마트 잠금이 해제 된 것으로 가정 하 여 분석기에 지시 합니다. 이 주석에는 참조 잠금 형식이 매개 변수로 필요 합니다.|
-|`_Moves_lock_(target, source)`|@No__t_1 개체에서 `target`로 잠금 상태를 전송 하는 `move constructor` 작업에 대해 설명 합니다. @No__t_0은 새로 생성 된 개체로 간주 되기 때문에 이전에 있던 모든 상태를 손실 하 고 `source` 상태로 대체 합니다. 또한 잠금 수 또는 별칭 대상이 없는 clean 상태로 다시 설정 되지만,이를 가리키는 별칭은 변경 되지 않은 상태로 유지 됩니다. `source`|
-|`_Replaces_lock_(target, source)`|원본에서 상태를 전송 하기 전에 대상 잠금이 해제 되는 `move assignment operator` 의미 체계에 대해 설명 합니다. 이는 `_Moves_lock_(target, source)` `_Releases_lock_(target)` 앞에 오는 조합으로 간주할 수 있습니다.|
-|`_Swaps_locks_(left, right)`|개체가 자신의 상태를 `left` 및 `right` 하는 것으로 가정 하는 표준 `swap` 동작에 대해 설명 합니다. 교환 되는 상태에는 잠금 수와 앨리어싱 대상 (있는 경우)이 포함 됩니다. @No__t_0와 `right` 개체를 가리키는 별칭은 변경 되지 않은 상태로 유지 됩니다.|
-|`_Detaches_lock_(detached, lock)`|잠금 래퍼 형식이 포함 된 리소스를 사용 하 여 연결 끊기가을 허용 하는 시나리오를 설명 합니다. 이는 `std::unique_ptr` 내부 포인터를 사용 하 여 작동 하는 방법과 비슷합니다. 프로그래머는이를 통해 포인터를 추출 하 고 스마트 포인터 컨테이너를 깨끗 한 상태로 유지할 수 있습니다. 유사한 논리는 `std::unique_lock`에서 지원 되며 사용자 지정 잠금 래퍼로 구현할 수 있습니다. 분리 된 잠금에는 상태 (잠금 수 및 별칭 지정 대상 (있는 경우))가 유지 되는 반면, 래퍼는 잠금 횟수를 포함 하지 않고 별칭을 포함 하도록 다시 설정 됩니다. 잠금 수에 대 한 작업은 없습니다 (릴리스 및 획득). 이 주석은 분리 된 인수를 `this` 하지 않고 `return` 해야 한다는 점을 제외 하 고 `_Moves_lock_`와 동일 하 게 작동 합니다.|
+|`_Moves_lock_(target, source)`|`source` 개체에서 `target`로 잠금 상태를 전송 하는 `move constructor` 작업에 대해 설명 합니다. `target`은 새로 생성 된 개체로 간주 되기 때문에 이전에 있던 모든 상태를 손실 하 고 `source` 상태로 대체 합니다. 또한 잠금 수 또는 별칭 대상이 없는 clean 상태로 다시 설정 되지만,이를 가리키는 별칭은 변경 되지 않은 상태로 유지 됩니다. `source`|
+|`_Replaces_lock_(target, source)`|원본에서 상태를 전송 하기 전에 대상 잠금이 해제 되는 `move assignment operator` 의미 체계에 대해 설명 합니다. 이는 `_Moves_lock_(target, source)` `_Releases_lock_(target)`앞에 오는 조합으로 간주할 수 있습니다.|
+|`_Swaps_locks_(left, right)`|개체가 자신의 상태를 `left` 및 `right` 하는 것으로 가정 하는 표준 `swap` 동작에 대해 설명 합니다. 교환 되는 상태에는 잠금 수와 앨리어싱 대상 (있는 경우)이 포함 됩니다. `left`와 `right` 개체를 가리키는 별칭은 변경 되지 않은 상태로 유지 됩니다.|
+|`_Detaches_lock_(detached, lock)`|잠금 래퍼 형식이 포함 된 리소스를 사용 하 여 연결 끊기가을 허용 하는 시나리오를 설명 합니다. 이는 `std::unique_ptr` 내부 포인터를 사용 하 여 작동 하는 방법과 비슷합니다. 프로그래머는이를 통해 포인터를 추출 하 고 스마트 포인터 컨테이너를 깨끗 한 상태로 유지할 수 있습니다. 유사한 논리는 `std::unique_lock`에서 지원 되며 사용자 지정 잠금 래퍼로 구현할 수 있습니다. 분리 된 잠금에는 상태 (잠금 수 및 별칭 지정 대상 (있는 경우))가 유지 되는 반면, 래퍼는 잠금 횟수를 포함 하지 않고 별칭을 포함 하도록 다시 설정 됩니다. 잠금 수에 대 한 작업은 없습니다 (릴리스 및 획득). 이 주석은 분리 된 인수를 `this`하지 않고 `return` 해야 한다는 점을 제외 하 고 `_Moves_lock_`와 동일 하 게 작동 합니다.|
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [C/C++ 코드 오류를 줄이기 위한 SAL 주석 사용](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [SAL 이해](../code-quality/understanding-sal.md)
@@ -127,4 +127,4 @@ SAL은 임계 영역, 뮤텍스, 스핀 잠금 및 기타 리소스 개체와 �
 - [주석 적용 시기 및 위치 지정](../code-quality/specifying-when-and-where-an-annotation-applies.md)
 - [내장 함수](../code-quality/intrinsic-functions.md)
 - [모범 사례 및 예제](../code-quality/best-practices-and-examples-sal.md)
-- [코드 분석 팀 블로그](http://go.microsoft.com/fwlink/p/?LinkId=251197)
+- [코드 분석 팀 블로그](https://blogs.msdn.microsoft.com/codeanalysis/)

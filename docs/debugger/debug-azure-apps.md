@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 940097c58d6c18e3be5f6659d764007b16cd4859
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: e7c7ba163010a14102aa3e1b0160e1c3cf294db1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211270"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745558"
 ---
 # <a name="debug-azure-services-in-visual-studio"></a>Visual Studio에서 Azure 서비스 디버그
 
@@ -33,6 +33,6 @@ Visual Studio를 사용 하 여 다양 한 시나리오에서 Azure 서비스를
 
 - Azure Service Fabric의 원격 디버그 ASP.NET [원격 Service Fabric 응용 프로그램 디버그](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application) 를 참조 하세요.
 
-## <a name="see-also"></a>관련 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 디버깅](../debugger/index.yml)

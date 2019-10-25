@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.imageeditor
 - vs.graphics.imageeditor
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9783029eab9597624be459fe88b51a495328b5be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f2430dddb4fe7de0d050ce26fc94e54c13a7779
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897399"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635313"
 ---
 # <a name="image-editor"></a>이미지 편집기
 
@@ -214,7 +214,7 @@ TGA(Truevision Graphics Adapter) 이미지 형식(Targa라고도 함)으로, 최
 
 다음 표에서는 유효한 보조 키 조합에 대해 설명합니다.
 
-|Ctrl|시프트|Alt|설명|
+|Ctrl|Shift|Alt|설명|
 |----------|-----------|---------|-----------------|
 ||||선택 영역의 내용의 크기를 조정합니다.|
 ||**Shift**||선택 영역의 내용의 크기를 비례적으로 조정합니다.|

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_libraryname | Microsoft Docs'
+title: 'IDiaSymbol:: get_libraryName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 638458c1365c015b54ca955e44041b856232f8b5
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3b49c9ad6926b963345bc4c1341ab3c7db03c916
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64800445"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739938"
 ---
-# <a name="idiasymbolgetlibraryname"></a>IDiaSymbol::get_libraryName
-개체가 로드 된 라이브러리 또는 개체 파일의 파일 이름을 검색 합니다.
+# <a name="idiasymbolget_libraryname"></a>IDiaSymbol::get_libraryName
+개체가 로드 된 라이브러리나 개체 파일의 파일 이름을 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,13 +33,13 @@ HRESULT get_libraryName ( 
 #### <a name="parameters"></a>매개 변수
  `pRetVal`
 
-[out] 개체가 로드 된 라이브러리 또는 개체 파일의 파일 이름을 반환 합니다.
+제한이 개체가 로드 된 라이브러리 또는 개체 파일의 파일 이름을 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 `S_FALSE` 또는 오류 코드를 반환 합니다.
 
 > [!NOTE]
-> 반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.
+> @No__t_0의 반환 값은 해당 기호에 대해 속성을 사용할 수 없음을 의미 합니다.
 
-## <a name="see-also"></a>관련 항목
+## <a name="see-also"></a>참조
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

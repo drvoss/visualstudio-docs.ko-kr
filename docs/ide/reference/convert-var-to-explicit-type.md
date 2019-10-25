@@ -2,19 +2,19 @@
 title: var을 명시적 형식으로 바꾸도록 코드 리팩터링
 ms.date: 05/15/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2708bca578b613fac77e9b8ce77b1b2aff8f0945
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 566d064ac0ac1b9c48ee8e75697cef39b2ec4ee1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968156"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661681"
 ---
 # <a name="refactoring-to-replace-var-with-an-explicit-type"></a>var을 명시적 형식으로 바꾸도록 리팩터링
 
@@ -38,7 +38,7 @@ ms.locfileid: "62968156"
 
 1. `var` 키워드에 캐럿을 배치합니다.
 
-1. 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 또는 코드 파일의 여백에 있는 스크루드라이버 ![스크루드라이버 아이콘](../media/screwdriver-icon.png) 아이콘을 클릭합니다.
+1. 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 또는 코드 파일의 여백에 있는 스크루드라이버 ![스크루드라이버 아이콘](../media/screwdriver-icon.png) 아이콘을 클릭합니다.
 
    ![명시적 형식 빠른 작업 메뉴 사용](media/use-explicit-type.png)
 

@@ -17,20 +17,20 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBuild (Visual C++), LIB task
-- LIB task (MSBuild (Visual C++))
+- MSBuild (C++), LIB task
+- LIB task (MSBuild (C++))
 ms.assetid: e062c7f9-cc69-4a83-9361-1bb5355e5fe8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c9d80da9fea46ddcc2afe2f935fa66a892d90c1
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: aa43cef2176d9b2197e16b46a50e153da135502e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254531"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748090"
 ---
 # <a name="lib-task"></a>LIB 작업
 Microsoft 32비트 라이브러리 관리자 도구인 *lib.exe*를 래핑합니다. 라이브러리 관리자는 COFF(공용 개체 파일 형식) 개체 파일의 라이브러리를 만들고 관리합니다. 또한 라이브러리 관리자를 사용하여 내보내기 파일을 만들고 내보낸 정의를 참조하는 라이브러리를 가져올 수 있습니다. 자세한 내용은 [LIB 참조](/cpp/build/reference/lib-reference) 및 [LIB 실행](/cpp/build/reference/running-lib)을 참조하세요.

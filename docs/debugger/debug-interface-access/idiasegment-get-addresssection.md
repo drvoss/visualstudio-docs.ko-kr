@@ -1,5 +1,5 @@
 ---
-title: 'Idiasegment:: Get_addresssection | Microsoft Docs'
+title: 'IDiaSegment:: get_addressSection | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e098f1e2367395f201abf6f44554f1699400b12
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9114a1d97dc9c25aa9c2bfe84dc96b63051b92d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827803"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742433"
 ---
-# <a name="idiasegmentgetaddresssection"></a>IDiaSegment::get_addressSection
+# <a name="idiasegmentget_addresssection"></a>IDiaSegment::get_addressSection
 이 세그먼트에 매핑되는 섹션 번호를 검색 합니다.
 
 ## <a name="syntax"></a>구문
@@ -33,10 +33,10 @@ HRESULT get_addressSection ( 
 #### <a name="parameters"></a>매개 변수
  `pRetVal`
 
-[out] 이 세그먼트에 매핑되는 섹션 번호를 반환 합니다.
+제한이 이 세그먼트에 매핑되는 섹션 번호를 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.
+ 성공하면 `S_OK`를 반환합니다. 이 속성이 지원 되지 않는 경우 `S_FALSE`를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

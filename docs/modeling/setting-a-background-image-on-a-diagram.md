@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37d590fb13f7b8b04005d2877d378c556c772af5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5f8806571939cb057852ddd9cca971f9415339ca
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670819"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748247"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>다이어그램에 배경 이미지 설정
 Visual Studio 시각화 및 모델링 SDK에서 사용자 지정 코드를 사용 하 여 생성 된 디자이너의 배경 이미지를 설정할 수 있습니다.
@@ -100,7 +100,7 @@ Visual Studio 시각화 및 모델링 SDK에서 사용자 지정 코드를 사�
 
      프로그램 코드를 사용 하 여 모델을 사용자 지정 하는 방법에 대 한 자세한 내용은 [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)를 참조 하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [모양 및 연결선 정의](../modeling/defining-shapes-and-connectors.md)
 - [텍스트 및 이미지 필드 사용자 지정](../modeling/customizing-text-and-image-fields.md)

@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93cbefe716b46b3dd3fe481447612c5c7f65daa3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dd8fb5439ac68200ba1a3bbf3af665595528173e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353579"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721077"
 ---
 # <a name="sccismulticheckoutenabled-function"></a>SccIsMultiCheckoutEnabled 함수
-이 함수는 소스 제어 플러그 인 파일에서 여러 체크 아웃을 허용 하는지 여부를 확인 합니다.
+이 함수는 소스 제어 플러그 인에서 파일에 대해 여러 체크 아웃을 허용 하는지 여부를 확인 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -34,22 +34,22 @@ SCCRTN SccIsMultiCheckoutEnabled(
 #### <a name="parameters"></a>매개 변수
  pContext
 
-[in] 원본 제어 플러그 인 상황에 맞는 구조입니다.
+진행 소스 제어 플러그 인 컨텍스트 구조입니다.
 
  pbMultiCheckout
 
-[out] 이 프로젝트 (여러 체크 아웃 지원 되는 0이 아닌 의미)에 대 한 여러 체크 아웃 사용 되는지 여부를 지정 합니다.
+제한이 이 프로젝트에 대해 여러 체크 아웃을 사용할 수 있는지 여부를 지정 합니다 (0이 아닌 경우 여러 체크 아웃이 지원 됨).
 
 ## <a name="return-value"></a>반환 값
- 원본 제어 플러그 인이 함수의 구현은 다음 값 중 하나를 반환 하:
+ 이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
 |값|설명|
 |-----------|-----------------|
-|SCC_OK|검사가 성공 했습니다.|
-|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|알 수 없는 오류가 발생 했습니다.|
+|SCC_OK|확인이 완료 되었습니다.|
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|일반 오류입니다.|
 
-## <a name="remarks"></a>설명
- IDE에는 두 개의 검사를 하는 경우 파일 체크 아웃할 수 동시에 둘 이상의 사용자가 결정할 수 있습니다. 첫째, 소스 제어 시스템 다중 체크 아웃을 지원 해야 합니다. 소스 제어 플러그 인을 지정 하 여 초기화 하는 동안이 기능에 지정할 수는 `SCC_CAP_MULTICHECKOUT`합니다. 그런 다음 두 번째 확인을 IDE 현재 프로젝트에서 여러 체크 아웃 지원 여부를 결정 하는이 함수를 호출 합니다. 플러그 인은 성공 반환 코드 및 설정 하는 여러 체크 아웃은 선택한 프로젝트에 대 한 지원 `pbMultiCheckout` 에 0이 아닌 값 (`TRUE`) 또는 `FALSE`합니다.
+## <a name="remarks"></a>주의
+ IDE는 두 명 이상의 사용자가 동시에 파일을 체크 아웃할 수 있는지 여부를 확인 하는 두 가지 검사를 수행 합니다. 먼저 원본 제어 시스템에서 여러 체크 아웃을 지원 해야 합니다. 원본 제어 플러그 인은 `SCC_CAP_MULTICHECKOUT`를 지정 하 여 초기화 하는 동안이 기능을 지정할 수 있습니다. 그런 다음 두 번째 검사로, IDE는이 함수를 호출 하 여 현재 프로젝트가 여러 체크 아웃을 지원 하는지 여부를 확인 합니다. 선택한 프로젝트에 대해 여러 체크 아웃이 지원 되 면 플러그 인에서 성공 코드를 반환 하 고 `pbMultiCheckout`를 0이 아닌 (`TRUE`) 또는 `FALSE`로 설정 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)

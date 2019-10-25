@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 899fc041df3f7118de6be97309e8ce971235d178
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 82bccbd9558a5dad87e9fe13f9ed7136a5d77d8a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658315"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747520"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>도메인별 언어 도구 개요
 Visual Studio에서 호스팅되는 도메인 특정 언어 도구 (DSL 도구)를 사용 하면 도메인별 언어를 디자인 한 다음 사용자가 언어를 기반으로 하는 모델을 만드는 데 필요한 모든 항목을 생성할 수 있습니다.
@@ -74,7 +74,7 @@ Visual Studio에서 호스팅되는 도메인 특정 언어 도구 (DSL 도구)�
 
  Visual Studio에서 DSL 도구 솔루션을 빌드 및 실행 하는 경우 Visual Studio의 두 번째 인스턴스는 도메인별 언어가 언어의 사용자에 게 표시 되는 방식을 보여 줍니다. 모든 항목이 올바르게 작동하는 것을 확인한 후에는 DslPackage 프로젝트의 빌드 폴더에 있는 `.vsix` 파일을 배포할 수 있습니다. 이 파일은 다른 컴퓨터에서 Visual Studio 확장으로 DSL을 설치 하는 데 사용할 수 있습니다.  자세한 내용은 [도메인 특정 언어 솔루션 배포](msi-and-vsix-deployment-of-a-dsl.md)를 참조하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [실험적 인스턴스](../extensibility/the-experimental-instance.md)
 - [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

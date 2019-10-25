@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumframedata:: Framebyrva | Microsoft Docs'
+title: 'IDiaEnumFrameData:: frameByRVA | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbdb525034016981c1f9030e6bce1f9590c45591
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f0a6636b692a3017adb6d8b9242dca62f397bf40
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838326"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744678"
 ---
 # <a name="idiaenumframedataframebyrva"></a>IDiaEnumFrameData::frameByRVA
-가상 RVA (상대 주소) 하 여 프레임을 반환합니다.
+RVA (상대 가상 주소)를 기준으로 프레임을 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -34,15 +34,15 @@ HRESULT frameByRVA( 
 #### <a name="parameters"></a>매개 변수
  relativeVirtualAddress
 
-[in] 관심 프레임의 RVA입니다.
+진행 관심 프레임의 RVA입니다.
 
  프레임
 
-[out] 반환 된 [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) 제공 된 주소가 포함 된 프레임을 나타내는 개체입니다.
+제한이 제공 된 주소를 포함 하는 프레임을 나타내는 [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) 개체를 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 프레임 데이터가 지정 된 주소와 일치 합니다. 그러지 않으면 오류 코드가 반환됩니다.
+ 성공하면 `S_OK`를 반환합니다. 지정 된 주소와 일치 하는 프레임 데이터가 없으면 `S_FALSE`을 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

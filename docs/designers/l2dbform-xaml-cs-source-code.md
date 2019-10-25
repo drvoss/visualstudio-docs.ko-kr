@@ -3,17 +3,17 @@ title: L2DBForm.xaml.cs Source Code
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: 5a40dad3-6763-4576-b3ad-874df3f2c8d9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12c9515cf6f4841dd1f5ebfb554e00a262b8a160
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5bd8c4dfc19a1c5b1c4956ca24698d82d7c2f6e6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62893140"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635306"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs 소스 코드
 
@@ -61,7 +61,7 @@ ms.locfileid: "62893140"
 
 동적 데이터 바인딩을 통해 프로그램의 UI가 자동으로 업데이트됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 ### <a name="code"></a>코드
 
@@ -132,7 +132,7 @@ namespace LinqToXmlDataBinding {
 }
 ```
 
-### <a name="comments"></a>설명
+### <a name="comments"></a>주석
 
 이러한 처리기와 관련된 XAML 소스는 [L2DBForm.xaml 소스 코드](../designers/l2dbform-xaml-source-code.md)를 참조하세요.
 

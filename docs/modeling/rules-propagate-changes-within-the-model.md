@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 808eecab2b4f468b730b6c58cce32d08ca523d0d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 74d64b4fe0c0aa5293e11daad13f632c4a487736
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660319"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747414"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>규칙으로 모델 내부의 변경 내용 전파
 시각화 및 모델링 SDK (VMSDK)에서 한 요소에서 다른 요소로 변경 내용을 전파 하는 저장소 규칙을 만들 수 있습니다. 저장소의 요소가 변경 되 면 일반적으로 가장 바깥쪽 트랜잭션이 커밋될 때 규칙이 실행 되도록 예약 됩니다. 요소를 추가 하거나 삭제 하는 등의 다양 한 종류의 이벤트에 대해 다양 한 유형의 규칙이 있습니다. 특정 형식의 요소, 모양 또는 다이어그램에 규칙을 추가할 수 있습니다. 규칙으로 정의 된 많은 기본 제공 기능입니다. 예를 들어 규칙은 모델이 변경 될 때 다이어그램이 업데이트 되도록 합니다. 사용자 고유의 규칙을 추가 하 여 도메인별 언어를 사용자 지정할 수 있습니다.
@@ -207,6 +207,6 @@ namespace Company.TaskRuleExample
 }
 ```
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [이벤트 처리기로 모델 외부의 변경 내용 전파](../modeling/event-handlers-propagate-changes-outside-the-model.md)

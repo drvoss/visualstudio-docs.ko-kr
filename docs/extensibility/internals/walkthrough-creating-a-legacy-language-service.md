@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba09df818b95ac96f2092685ce4100873a18a05f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 694b1a53e72ca4e890e11befdc9b90f049e33dd1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647986"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721785"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>연습: 레거시 언어 서비스 만들기
 MPF (관리 패키지 프레임 워크) 언어 클래스를 사용 하 여 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]에서 언어 서비스를 구현 하는 것은 간단 합니다. 언어 서비스, 언어 서비스 자체 및 해당 언어의 파서를 호스트 하는 VSPackage 필요 합니다.
@@ -130,5 +130,5 @@ MPF (관리 패키지 프레임 워크) 언어 클래스를 사용 하 여 [!INC
 
      예를 들어 `public override`를 입력 하 여 해당 클래스에서 재정의할 수 있는 모든 메서드 목록을 표시 합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 - [레거시 언어 서비스 구현](../../extensibility/internals/implementing-a-legacy-language-service1.md)

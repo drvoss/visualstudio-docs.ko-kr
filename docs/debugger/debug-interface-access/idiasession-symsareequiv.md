@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0253104cf29e86825fadc8c8bd18133e0d3cf593
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 61cfc582f11670af8c956c3334681284ce5172a6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839077"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741872"
 ---
 # <a name="idiasessionsymsareequiv"></a>IDiaSession::symsAreEquiv
-두 기호에 해당 하는 경우를 확인 합니다.
+두 기호가 동일한 지 확인 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -34,15 +34,15 @@ HRESULT symsAreEquiv ( 
 #### <a name="parameters"></a>매개 변수
  `symbolA`
 
-[in] 첫 번째 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 비교에 사용 되는 개체입니다.
+진행 비교에 사용 되는 첫 번째 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 개체입니다.
 
  `symbolB`
 
-[in] 두 번째 `IDiaSymbol` 비교에 사용 되는 개체입니다.
+진행 비교에 사용 되는 두 번째 `IDiaSymbol` 개체입니다.
 
 ## <a name="return-value"></a>반환 값
- 기호에 해당 하는 경우 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE`, 기호 같지 않습니다. 그렇지 않으면 오류 코드를 반환 합니다.
+ 기호가 같으면 `S_OK`을 반환 하 고, 그렇지 않으면 `S_FALSE`을 반환 하 고 기호는 동일 하지 않습니다. 그렇지 않은 경우 오류 코드를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

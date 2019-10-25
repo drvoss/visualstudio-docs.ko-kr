@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f714e5637776d6a0606246d339d3f9d2ccd9f19a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e849bea3bd5480f480001c091e5988fa5e6b5444
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62835541"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739430"
 ---
-# <a name="idiasymbolgetregistertype"></a>IDiaSymbol::get_registerType
-등록 형식을 검색합니다.
+# <a name="idiasymbolget_registertype"></a>IDiaSymbol::get_registerType
+레지스터 형식을 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -30,10 +30,10 @@ HRESULT get_registerType(
 #### <a name="parameters"></a>매개 변수
  `pRetVal`
 
-[out] 에 대 한 포인터를 `DWORD` 등록 형식을 보유 하는 합니다.
+제한이 레지스터 형식을 보유 하는 `DWORD`에 대 한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 `S_FALSE` 또는 오류 코드를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

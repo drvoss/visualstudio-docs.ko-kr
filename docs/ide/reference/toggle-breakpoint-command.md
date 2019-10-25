@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Debug.ToggleBreakPoint command
 - Toggle Breakpoint command
 ms.assetid: d50dfadb-ce79-4d5e-9c09-1cfddd57876d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18473fbd8ee0f7c4b415880da61c86de0bae6fc5
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a8294c25bcf3b62f9d6480e170d4693a9be85079
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925970"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748571"
 ---
 # <a name="toggle-breakpoint-command"></a>중단점 설정/해제 명령
 파일의 현재 위치에서 현재 상태에 따라 중단점을 켜거나 끕니다.

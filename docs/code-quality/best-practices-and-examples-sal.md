@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb18a704c2e8a2c185d3751483736631b0bba68
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: eb95e793421ecede6d4583d8d7f4730eb56df1a0
+ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448635"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72789789"
 ---
 # <a name="best-practices-and-examples-sal"></a>모범 사례 및 예제(SAL)
 SAL(Source Code Annotation Language)을 최대한 활용하고 몇 가지 일반적인 문제를 방지하는 방법은 다음과 같습니다.
@@ -188,15 +188,14 @@ int Func2(_In_ MyData *p, int flag);
 반환 값이 0이 아닐 때 함수가 성공하면 `return != 0` 대신 `return == TRUE`을 성공 조건으로 사용합니다. 0이 아닌 값이라고 해서 컴파일러가 `TRUE`에 대해 제공하는 실제 값과 반드시 동일하지는 않습니다. `_Success_`에 대한 매개 변수는 식이고, `return != 0`, `return != false`, `return != FALSE` 및 매개 변수 또는 비교가 없는 `return`과 같은 식이 동일 항목으로 평가됩니다.
 
 ```cpp
-
 // Incorrect
-_Success_(return == TRUE, _Acquires_lock_(*lpCriticalSection))
+_Success_(return == TRUE) _Acquires_lock_(*lpCriticalSection)
 BOOL WINAPI TryEnterCriticalSection(
   _Inout_ LPCRITICAL_SECTION lpCriticalSection
 );
 
 // Correct
-_Success_(return != 0, _Acquires_lock_(*lpCriticalSection))
+_Success_(return != 0) _Acquires_lock_(*lpCriticalSection)
 BOOL WINAPI TryEnterCriticalSection(
   _Inout_ LPCRITICAL_SECTION lpCriticalSection
 );

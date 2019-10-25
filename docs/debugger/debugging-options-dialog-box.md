@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fc11269713770bbc1950d8f15626936ddd2174f
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 407da10e5a10ea08a75618046189a87a4ad6c5f3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211132"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738143"
 ---
 # <a name="debugging-options-dialog-box"></a>옵션 대화 상자, 디버깅
 **도구** 메뉴의 **옵션** 대화 상자에 있는 **디버깅** 폴더에는 디버거 도구 옵션을 지정할 수 있는 다음과 같은 페이지가 있습니다.
@@ -39,7 +39,7 @@ ms.locfileid: "71211132"
 
 - [옵션 대화 상자, 디버깅, 기호](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 
-## <a name="see-also"></a>관련 항목
+## <a name="see-also"></a>참조
 - [디버거 보안](../debugger/debugger-security.md)
 - [Visual Studio의 디버깅](../debugger/index.yml)
 - [디버거 소개](../debugger/debugger-feature-tour.md)

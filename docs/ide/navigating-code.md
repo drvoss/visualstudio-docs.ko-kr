@@ -13,17 +13,17 @@ helpviewer_keywords:
 - peek definition
 - go to line
 - go to
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1263b7a0ae65731eb618ffc925ff0f6310be0f4d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: f1fcfd69e2de9a174c708da1c4f5eaedd397722e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919510"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667005"
 ---
 # <a name="navigate-code"></a>코드 탐색
 
@@ -63,7 +63,7 @@ Visual Studio는 편집기에서 코드를 탐색하는 다양한 방법을 제�
 
 솔루션에서 선택한 요소에 대한 참조를 모두 찾습니다. 이 옵션을 사용하여 큰 리팩터링에서 발생할 수 있는 부작용을 검사하거나 "데드" 코드를 확인할 수 있습니다. 결과 간에 이동하려면 **F8** 키를 누릅니다. 자세한 내용은 [코드에서 참조 찾기](finding-references.md)를 참조하세요.
 
-입력 | 함수
+입력 | 기능
 ------------ | ---
 **키보드** | 형식 이름 내부에 텍스트 커서를 놓고 **Shift**+**F12** 키를 누릅니다.
 **마우스** | 오른쪽 클릭 메뉴에서 **모든 참조 찾기**를 선택합니다.
@@ -102,7 +102,7 @@ Visual Studio 2017 버전 15.8 이상에서는 다음과 같은 **이동** 탐�
 
 정의로 이동은 선택한 요소의 정의로 이동합니다. 자세한 내용은 [정의로 이동 및 정의 피킹(Peeking)](../ide/go-to-and-peek-definition.md)을 참조하세요.
 
-입력 | 함수
+입력 | 기능
 ------------ | ---
 **키보드** | 형식 이름 내부에 텍스트 커서를 놓고 **F12** 키를 누릅니다.
 **마우스** | 형식 이름을 마우스 오른쪽 단추로 클릭하고, **정의로 이동**을 선택하거나 **Ctrl** 키를 누르고, 형식 이름을 클릭합니다.
@@ -111,7 +111,7 @@ Visual Studio 2017 버전 15.8 이상에서는 다음과 같은 **이동** 탐�
 
 정의 피킹은 코드 편집기에서 현재 위치를 벗어나지 않고 창에서 선택한 요소의 정의를 표시합니다. 자세한 내용은 [방법: 정의 피킹(Peeking)을 사용하여 코드 보기 및 편집](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) 및 [정의로 이동 및 정의 피킹(Peeking)](../ide/go-to-and-peek-definition.md)을 참조하세요.
 
-입력 | 함수
+입력 | 기능
 ------------ | ---
 **키보드** | 형식 이름 내부에 텍스트 커서를 놓고 **Alt**+**F12** 키를 누릅니다.
 **마우스** | 형식 이름을 마우스 오른쪽 단추로 클릭하고, **정의 피킹**을 선택하거나 **Ctrl** 키를 누르고, 형식 이름을 클릭합니다(**피크 보기에서 정의 열기** 옵션을 선택한 경우).
@@ -120,7 +120,7 @@ Visual Studio 2017 버전 15.8 이상에서는 다음과 같은 **이동** 탐�
 
 구현으로 이동을 사용하여 기본 클래스 또는 형식에서 해당 구현으로 이동할 수 있습니다. 여러 구현이 있는 경우 **기호 찾기 결과** 창에 표시됩니다.
 
-입력 | 함수
+입력 | 기능
 ------------ | ---
 **키보드** | 형식 이름 내부에 텍스트 커서를 놓고 **Ctrl**+**F12** 키를 누릅니다.
 **마우스** | 형식 이름을 마우스 오른쪽 단추로 클릭하고 **구현으로 이동**을 선택합니다.
@@ -129,7 +129,7 @@ Visual Studio 2017 버전 15.8 이상에서는 다음과 같은 **이동** 탐�
 
 [호출 계층 구조 창](../ide/reference/call-hierarchy.md)에서 메서드에 대한 호출을 볼 수 있습니다.
 
-입력 | 함수
+입력 | 기능
 ------------ | ---
 **키보드** | 형식 이름 내부에 텍스트 커서를 놓고 **Ctrl**+**K**, **Ctrl**+**T** 키를 누릅니다.
 **마우스** | 멤버 이름을 마우스 오른쪽 단추로 클릭하고 **호출 계층 구조 보기**를 선택합니다.

@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a6508b8cfde2f08eb40201973fec899ee11956b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f13c674e6374e826dc45343e5cd1f7edcc1f8100
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353546"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720889"
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList 함수
-이 함수는 파일과 디렉터리 (선택 사항)를 검사 하는 디렉터리 목록을 지정 된 소스 제어에 저장 됩니다 결정 합니다.
+이 함수는 검사할 디렉터리 목록이 지정 된 경우 소스 제어에 저장 되는 디렉터리 및 파일 (옵션)을 결정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -38,40 +38,40 @@ SCCRTN SccPopulateDirList(
 #### <a name="parameters"></a>매개 변수
  pContext
 
-[in] 원본 제어 플러그 인 컨텍스트 포인터입니다.
+진행 소스 제어 플러그 인 컨텍스트 포인터입니다.
 
  nDirs
 
-[in] 디렉터리 경로 수는 `lpDirPaths` 배열입니다.
+진행 @No__t_0 배열의 디렉터리 경로 수입니다.
 
  lpDirPaths
 
-[in] 검사할 디렉터리 경로의 배열입니다.
+진행 검사할 디렉터리 경로 배열입니다.
 
  pfnPopulate
 
-[in] 각 디렉터리 경로 및 (선택 사항)의 파일 이름에 대 한 호출에 대 한 콜백 함수 `lpDirPaths` (참조 [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) 세부 정보에 대 한).
+진행 @No__t_0의 각 디렉터리 경로 및 파일 이름 (옵션)에 대해 호출할 콜백 함수입니다 (자세한 내용은 [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) 참조).
 
  pvCallerData
 
-[in] 콜백 함수에 전달할 값을 변경 되지 않습니다.
+진행 변경 되지 않은 상태로 콜백 함수로 전달 되는 값입니다.
 
  fOptions
 
-[in] 디렉터리를 처리 하는 방법을 제어 하는 값의 조합 ("PopulateDirList 플래그" 섹션을 참조 하세요 [비트는 특정 명령에 사용](../extensibility/bitflags-used-by-specific-commands.md) 가능한 값에 대 한).
+진행 디렉터리 처리 방법을 제어 하는 값의 조합입니다. 가능한 값에 대 한 [특정 명령에서 사용 하는 bitflags](../extensibility/bitflags-used-by-specific-commands.md) 의 "PopulateDirList flags" 섹션을 참조 하세요.
 
 ## <a name="return-value"></a>반환 값
- 원본 제어 플러그 인이 함수의 구현은 다음 값 중 하나를 반환 하:
+ 이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
 |값|설명|
 |-----------|-----------------|
 |SCC_OK|작업을 완료 했습니다.|
 |SCC_E_UNKNOWNERROR|오류가 발생했습니다.|
 
-## <a name="remarks"></a>설명
- 만 해당 (선택 사항) 파일 이름 및 디렉터리 실제로 소스 제어 저장소에 있는 콜백 함수에 전달 됩니다.
+## <a name="remarks"></a>주의
+ 소스 제어 리포지토리에 실제로 있는 디렉터리 및 파일 이름 (선택 사항)만 콜백 함수에 전달 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
 - [특정 명령에 사용되는 Bitflag](../extensibility/bitflags-used-by-specific-commands.md)
 - [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)

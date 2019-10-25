@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c581668668a208a9bcf35a1b39d1b3d384a4f8a3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b1ff294e45404d312d445c4b76f05cc3e0d7dd95
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62841616"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739296"
 ---
-# <a name="idiasymbolgetstride"></a>IDiaSymbol::get_stride
-행렬 또는 strided 배열의 stride를 검색합니다.
+# <a name="idiasymbolget_stride"></a>IDiaSymbol::get_stride
+행렬 또는 strided 배열의 스트라이드를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -30,10 +30,10 @@ HRESULT get_stride(
 #### <a name="parameters"></a>매개 변수
  `pRetVal`
 
-[out] 에 대 한 포인터를 `DWORD` stride를 보유 하는 합니다.
+제한이 Stride를 보유 하는 `DWORD`에 대 한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 `S_FALSE` 또는 오류 코드를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

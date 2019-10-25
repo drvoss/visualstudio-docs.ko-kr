@@ -1,5 +1,5 @@
 ---
-title: 'Idiatable:: Get_name | Microsoft Docs'
+title: 'IDiaTable:: get_name | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc5ac9b3892ad9447f413df58d43791b1be1720a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e3874ad63026208d096a2b7866377d09ac79cbe9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840482"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738755"
 ---
-# <a name="idiatablegetname"></a>IDiaTable::get_name
-테이블의 이름을 검색합니다.
+# <a name="idiatableget_name"></a>IDiaTable::get_name
+테이블의 이름을 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,10 +33,10 @@ HRESULT get_name ( 
 #### <a name="parameters"></a>매개 변수
  `pRetVal`
 
-[out] 테이블의 이름을 반환합니다.
+제한이 테이블의 이름을 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

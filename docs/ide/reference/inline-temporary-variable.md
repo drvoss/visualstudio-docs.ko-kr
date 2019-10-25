@@ -2,20 +2,20 @@
 title: 임시 변수를 해당 값으로 바꾸기
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a7c691efcc507212aa0649b6c4b4179fb8288f06
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8b758407dc5500630157050c10f881a6515e1216
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62423199"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661007"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>임시 변수 인라인 리팩터링
 
@@ -35,7 +35,7 @@ ms.locfileid: "62423199"
 
 1. 인라인할 임시 변수를 강조 표시하거나 임시 변수 내부에 텍스트 커서를 놓습니다.
 
-   - C#: 
+   - C#:
 
        ![강조 표시된 코드 - C#](media/inline-highlight-cs.png)
 
@@ -46,7 +46,7 @@ ms.locfileid: "62423199"
 2. 다음 작업 중 하나를 수행합니다.
 
    - **키보드**
-      - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
+      - 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거합니다.
    - **마우스**
       - 코드를 마우스 오른쪽 단추로 클릭하고 **빠른 작업 및 리팩터링** 메뉴를 선택합니다.
 
@@ -54,7 +54,7 @@ ms.locfileid: "62423199"
 
    변수가 제거되고 해당 사용이 변수 값으로 대체됩니다.
 
-   - C#: 
+   - C#:
 
       ![인라인 결과 - C#](media/inline-result-cs.png)
 

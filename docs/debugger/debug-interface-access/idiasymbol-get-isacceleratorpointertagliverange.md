@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8bf20f43fcc8da48a6e1ec1dfd0f65b14f8ad86
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: bd5a24a136bb9c04366449a91d825ddbecff2957
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836904"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740318"
 ---
-# <a name="idiasymbolgetisacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
-기호에 해당 하는지 여부를 나타내는 플래그를 검색 합니다 *정의 범위 기호* 에 대해 컴파일된 코드에서 변수 대 한 포인터의 태그 구성 요소를 C++ AMP 액셀러레이터입니다. 정의 범위 기호는 주소 범위에 대 한 변수의 위치입니다.
+# <a name="idiasymbolget_isacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
+AMP 액셀러레이터에 대해 컴파일된 코드에서 포인터 변수의 tag 구성 요소에 대 한 *정의 범위 기호와* 해당 기호가 일치 하는지 여부를 나타내는 플래그를 검색 합니다. C++ 정의 범위 기호는 주소 범위에 대 한 변수의 위치입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -30,10 +30,10 @@ HRESULT get_isAcceleratorPointerTagLiveRange(
 #### <a name="parameters"></a>매개 변수
  `pFlag`
 
-[out] 에 대 한 포인터를 `BOOL` 기호 정의 범위 기호에 해당 하는지 여부를 나타내는입니다.
+제한이 기호가 정의 범위 기호에 해당 하는지 여부를 나타내는 `BOOL`에 대 한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 `S_FALSE` 또는 오류 코드를 반환 합니다.
 
-## <a name="see-also"></a>관련 항목
+## <a name="see-also"></a>참조
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

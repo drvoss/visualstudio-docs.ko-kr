@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - policy errors, code analysis
 ms.assetid: d1f221cd-68c0-4277-9397-b76ad0dbae77
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 661f029b617c430f7205552080a94affc5bd543b
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 9e6ff6000f0eab60e17642bf2bd8257154e54a9d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445880"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745948"
 ---
 # <a name="code-analysis-policy-errors"></a>코드 분석 정책 오류
 
@@ -73,6 +73,6 @@ ms.locfileid: "72445880"
 
 이 오류는 관리 되지 않는 프로젝트에 적용 됩니다. 코드 분석 정책에는 C/C++에 대 한 코드 분석이 필요 하지만 클라이언트의 현재 프로젝트에서는 사용할 수 없습니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [코드 분석 애플리케이션 오류](../code-quality/code-analysis-application-errors.md)

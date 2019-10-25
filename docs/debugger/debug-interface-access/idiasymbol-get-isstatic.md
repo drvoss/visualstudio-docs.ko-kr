@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_isstatic | Microsoft Docs'
+title: 'IDiaSymbol:: get_isStatic | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50c19104d0597c9aa178569d0d103bb3e57f18ed
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 498786935ceb71c9d271487630317057e2adbb9f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64813377"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740032"
 ---
-# <a name="idiasymbolgetisstatic"></a>IDiaSymbol::get_isStatic
-함수 또는 썽크 계층에 표시 되었는지 여부를 정적으로 지정 하는 플래그를 검색 합니다.
+# <a name="idiasymbolget_isstatic"></a>IDiaSymbol::get_isStatic
+함수 또는 썽크 계층이 정적으로 표시 되었는지 여부를 지정 하는 플래그를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,20 +33,20 @@ HRESULT get_isStatic(
 #### <a name="parameters"></a>매개 변수
  `pFlag`
 
-[out] 반환 `TRUE` 함수 또는 썽크 계층으로 정적이 고 그렇지 않으면 표시 되었으면, 반환 `FALSE`합니다.
+제한이 함수 또는 썽크 계층이 정적으로 표시 되 면 `TRUE`을 반환 합니다. 그렇지 않으면 `FALSE`을 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 `S_FALSE` 또는 오류 코드를 반환 합니다.
 
 > [!NOTE]
-> 반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.
+> @No__t_0의 반환 값은 해당 기호에 대해 속성을 사용할 수 없음을 의미 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|요구 사항|Description|
+|요구 사항|설명|
 |-----------------|-----------------|
 |헤더:|dia2.h|
 |버전:|DIA SDK v8.0|
 
-## <a name="see-also"></a>관련 항목
+## <a name="see-also"></a>참조
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

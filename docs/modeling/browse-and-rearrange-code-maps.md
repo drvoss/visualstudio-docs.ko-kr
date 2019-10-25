@@ -22,12 +22,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 443d272216eaf88bcbd4dcb75c034779403f1ef7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f4a52250806d4ff3ee51f61117831f51cc4a9d7e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666609"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747677"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>코드 맵 찾아보기 및 다시 정렬
 
@@ -326,7 +326,7 @@ ms.locfileid: "72666609"
 
 또는 이러한 어셈블리 또는 이진 파일을 해당 폴더에서 동일한 맵으로 끌어올 수 있습니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [솔루션 전체의 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)
 - [코드 맵을 사용하여 애플리케이션 디버그](../modeling/use-code-maps-to-debug-your-applications.md)

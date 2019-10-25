@@ -3,8 +3,8 @@ title: 메서드 추출
 description: 코드를 선택하고 Ctrl+R, Ctrl+M을 입력하여 코드 조각을 자체 메서드로 전환합니다.
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.extractmethod
@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a764fd0d95696866e914ec76a560a49d641acb47
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: a1ec6ca273f873c82a1bb2c730a9288b5e2ae4ed
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483666"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654390"
 ---
 # <a name="extract-a-method-refactoring"></a>메서드 추출 리팩터링
 

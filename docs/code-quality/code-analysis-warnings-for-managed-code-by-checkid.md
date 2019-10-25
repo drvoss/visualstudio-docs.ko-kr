@@ -258,17 +258,17 @@ f1_keywords:
 - CA2243
 - CA5122
 ms.assetid: 5cb221f6-dc59-4abf-9bfa-adbd6f907f96
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 93cee06ac4e4d8138dc2fd0c76ee32ed7af6791f
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: d8700d058c694afbea551e5b117a0e4a0461f2e8
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535941"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806171"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>관리 코드 CheckId 별 코드 분석 경고
 
@@ -339,7 +339,7 @@ ms.locfileid: "72535941"
 | CA1064 | [CA1064: 예외는 public이어야 합니다.](../code-quality/ca1064.md) | 내부 예외는 내부 범위 내에만 표시됩니다. 예외가 내부 범위 밖에 놓이게 되면 예외를 catch하는 데 기본 예외만 사용할 수 있습니다. 내부 예외에서 상속 되 면 <xref:System.Exception>, <xref:System.SystemException>, 또는 <xref:System.ApplicationException>, 외부 코드에 예외를 사용 하 여 수행할 작업을 알고에 충분 한 정보가 없습니다. |
 | CA1065 | [CA1065: 예기치 않은 위치에서 예외를 발생시키지 마십시오.](../code-quality/ca1065.md) | 예외를 throw하지 않아야 하는 메서드가 예외를 throw했습니다. |
 | CA1068 | [CA1068: CancellationToken 매개 변수는 마지막에와 야 합니다.](../code-quality/ca1068.md) | 메서드에 마지막 매개 변수가 아닌 CancellationToken 매개 변수가 있습니다. |
-| CA1200 | [CA1200: cref 태그를 접두사로 사용 하지 마십시오.](../code-quality/ca1200.md) | XML 문서 태그의 [cref](https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/cref-attribute) 특성은 "코드 참조"를 의미 합니다. 태그의 내부 텍스트를 형식, 메서드, 속성 등의 코드 요소로 지정합니다. 컴파일러가 참조를 확인 하는 것을 방지 하므로 접두사에 `cref` 태그를 사용 하지 마십시오. 또한 Visual Studio IDE (통합 개발 환경)에서 리팩터링 중에 이러한 기호 참조를 찾아 업데이트할 수 없습니다. |
+| CA1200 | [CA1200: cref 태그를 접두사로 사용 하지 마십시오.](../code-quality/ca1200.md) | XML 문서 태그의 [cref](/dotnet/csharp/programming-guide/xmldoc/cref-attribute) 특성은 "코드 참조"를 의미 합니다. 태그의 내부 텍스트를 형식, 메서드, 속성 등의 코드 요소로 지정합니다. 컴파일러가 참조를 확인 하는 것을 방지 하므로 접두사에 `cref` 태그를 사용 하지 마십시오. 또한 Visual Studio IDE (통합 개발 환경)에서 리팩터링 중에 이러한 기호 참조를 찾아 업데이트할 수 없습니다. |
 | CA1300 | [CA1300: MessageBoxOptions를 지정하십시오.](../code-quality/ca1300.md) | 오른쪽에서 왼쪽으로 읽기 순서를 사용하는 문화권에 대해 메시지 상자를 올바로 표시하려면 MessageBoxOptions 열거형의 RightAlign 및 RtlReading 멤버를 Show 메서드로 전달해야 합니다. |
 | CA1301 | [CA1301: 중복 액셀러레이터 키를 사용하지 마십시오.](../code-quality/ca1301.md) | 액셀러레이터 키라고도 하는 선택키를 사용하면 Alt 키를 사용하여 키보드로 컨트롤에 액세스할 수 있습니다. 여러 컨트롤에 중복 된 액세스 키가 있는 경우에는 액세스 키의 동작이 제대로 정의 되지 않습니다. |
 | CA1302 | [CA1302: 로캘별 문자열을 하드 코딩하지 마십시오.](../code-quality/ca1302.md) | System.Environment.SpecialFolder 열거형에는 특수 시스템 폴더를 참조하는 멤버가 포함되어 있습니다. 이러한 폴더의 위치는 운영 체제에 따라 값이 다를 수 있으며, 사용자가 위치 일부를 변경할 수 있고, 위치는 지역화됩니다. Environment.GetFolderPath 메서드는 Environment.SpecialFolder 열거형과 연관된 위치를 반환하며 이 위치는 지역화되므로 현재 실행되고 있는 컴퓨터에 적합합니다. |

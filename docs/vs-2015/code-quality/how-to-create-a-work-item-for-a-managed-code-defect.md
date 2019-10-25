@@ -9,33 +9,33 @@ helpviewer_keywords:
 - code analysis, creating work items
 ms.assetid: 46ddfd57-af4a-4c1d-bd00-8e6328f321f0
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ab8744e84e035501ba9bb8d531d982f4c17e206e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a3e9277ca29a20d817b04bf06cde120c0f073d8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201375"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655128"
 ---
 # <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>방법: 관리 코드 오류에 대한 작업 항목 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-작업 항목 추적 내에서 작업 항목을 기록할 기능을 사용할 수 있습니다 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]합니다. 이 기능을 사용 하려면 프로젝트에서 팀 프로젝트의 일부 여야 합니다 [!INCLUDE[esprfound](../includes/esprfound-md.md)]합니다.  
-  
-### <a name="to-create-a-work-item-for-managed-code-defect"></a>관리 코드 오류에 대 한 작업 항목을 만들려면  
-  
-1. 에 **코드 분석** 창에서 경고를 선택 합니다.  
-  
-2. 선택 **동작**, 선택한 **작업 항목 만들기** 만들려는 작업 항목의 유형을 선택 합니다.  
-  
-     오류 정보를 지정할 수 있습니다 새 작업 항목이 생성 됩니다.  
-  
-### <a name="to-create-a-work-item-for-multiple-managed-code-defects"></a>여러 관리 코드 오류에 대 한 작업 항목을 만들려면  
-  
-1. 에 **오류 목록**, 여러 경고를 선택 하 고 경고를 마우스 오른쪽 단추로 클릭 합니다.  
-  
-2. 가리킨 **작업 항목 만들기** 만들려는 작업 항목의 유형을 클릭 합니다.  
-  
-     버그 정보를 지정할 수 있도록 선택한 모든 경고에 대 한 단일 작업 항목 생성 됩니다.
+작업 항목 추적 기능을 사용 하 여 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] 내에서 작업 항목을 기록할 수 있습니다. 이 기능을 사용 하려면 프로젝트가 [!INCLUDE[esprfound](../includes/esprfound-md.md)]의 팀 프로젝트에 포함 되어 있어야 합니다.
+
+### <a name="to-create-a-work-item-for-managed-code-defect"></a>관리 코드 오류에 대 한 작업 항목을 만들려면
+
+1. **코드 분석** 창에서 경고를 선택 합니다.
+
+2. 작업 **을 선택한**다음 **작업 항목 만들기** 를 선택 하 고 만들려는 작업 항목의 형식을 선택 합니다.
+
+     오류 정보를 지정할 수 있는 새 작업 항목이 생성 됩니다.
+
+### <a name="to-create-a-work-item-for-multiple-managed-code-defects"></a>여러 관리 코드 오류에 대 한 작업 항목을 만들려면
+
+1. **오류 목록**에서 여러 경고를 선택 하 고 경고를 마우스 오른쪽 단추로 클릭 합니다.
+
+2. **작업 항목 만들기** 를 가리키고 만들려는 작업 항목의 형식을 클릭 합니다.
+
+     버그 정보를 지정 하기 위해 선택한 모든 경고에 대해 단일 작업 항목이 생성 됩니다.

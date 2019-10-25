@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 706a20a00792e7c67b39535322fbd2530f2a2ad3
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: c976f14a4250741d166c189c53a1b8cae8ea891a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72588987"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736700"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>오류: 웹 서버에서 디버깅을 시작할 수 없습니다.
 
@@ -161,5 +161,5 @@ IIS 구성으로 인해 문제가 발생 하지 않는 경우 다음 단계를 �
 
     앱을 사용 하 여 디버거를 사용할 수 없는 경우에는 서버에서 로컬로 기본 ASP.NET 응용 프로그램을 만들고 기본 앱을 디버깅 해 보세요. (기본 ASP.NET MVC 템플릿을 사용 하는 것이 좋습니다.) 기본 앱을 디버그할 수 있는 경우 두 구성 간의 차이점을 식별 하는 데 도움이 될 수 있습니다. URL 재작성 규칙과 같은 web.config 파일의 설정에서 차이점을 찾습니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 - [웹 애플리케이션 디버그: 오류 및 문제 해결](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

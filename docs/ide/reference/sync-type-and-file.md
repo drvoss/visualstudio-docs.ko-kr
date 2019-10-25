@@ -2,20 +2,20 @@
 title: 형식과 일치하도록 파일 이름 바꾸기
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 90783dcd609094659517d994c3a4d4e0610b7735
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 640df80d1763a2e942b4e38b34e72e5bd4a2a7fb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945179"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645213"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>형식을 파일 이름에 동기화 또는 파일 이름을 형식 리팩터링에 동기화
 

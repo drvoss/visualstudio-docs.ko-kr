@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2b9cd6f120d5699464c9e7311721898a727bf47e
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 0173ed557afa47129e0cc92d9ef9b2d94a7b198f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450431"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730318"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>Visual Studio에서 C++ 프로젝트 원격 디버깅
 다른 컴퓨터에서 Visual Studio 응용 프로그램을 디버깅 하려면 앱을 배포할 컴퓨터에 원격 도구를 설치 하 고 실행 하 고 Visual Studio에서 원격 컴퓨터에 연결 하도록 프로젝트를 구성한 다음 앱을 배포 하 고 실행 합니다.
@@ -106,7 +106,7 @@ UWP (유니버설 Windows 앱) 원격 디버깅에 대 한 자세한 내용은 [
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 - [Visual Studio의 디버깅](../debugger/index.yml)
 - [디버거 소개](../debugger/debugger-feature-tour.md)
 - [원격 디버깅을 위해 Windows 방화벽 구성](../debugger/configure-the-windows-firewall-for-remote-debugging.md)

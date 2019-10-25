@@ -7,19 +7,19 @@ helpviewer_keywords:
 - response times in load tests
 - load test results, response times
 ms.assetid: e61c49f3-3161-45b1-9220-08b5459065a2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ed1bd922b390d5b6e90c68b08683e1b9bdb46f32
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5fbaa3f8f322bc6633e4f5081ba4cae38b581b95
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821250"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653287"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>방법: 부하 테스트 분석기를 사용하여 부하 테스트의 웹 페이지 응답 시간 보기
 
-각 웹 페이지가 로드되는 시간을 ‘응답 시간’이라고 합니다. 웹 성능 테스트를 만들 때 웹 성능 테스트의 각 웹 페이지 요청에 대한 응답 시간 목표를 설정할 수 있습니다.
+각 웹 페이지가 로드되는 시간을 ‘응답 시간’이라고 합니다.  웹 성능 테스트를 만들 때 웹 성능 테스트의 각 웹 페이지 요청에 대한 응답 시간 목표를 설정할 수 있습니다.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 

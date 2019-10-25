@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Findinjectedsource | Microsoft Docs'
+title: 'IDiaSession:: findInjectedSource | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bef903304e3892284fc38d9e2b2367ebfe650f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5e2145c90c25c448880e51b9b394c7085e0d49b7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839344"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742254"
 ---
 # <a name="idiasessionfindinjectedsource"></a>IDiaSession::findInjectedSource
-컴파일 프로세스의 다른 구성 요소 또는 특성 공급자에 의해 기호 저장소에 배치 된 원본 목록을 검색 합니다.
+특성 공급자 또는 컴파일 프로세스의 다른 구성 요소에 의해 기호 저장소에 배치 된 소스 목록을 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -34,15 +34,15 @@ HRESULT findInjectedSource ( 
 #### <a name="parameters"></a>매개 변수
  srcFile
 
-[in] 검색할 소스 파일의 이름입니다.
+진행 검색할 원본 파일의 이름입니다.
 
  ppResult
 
-[out] 반환 된 [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) 삽입 된 원본의 모든 목록을 포함 하는 개체.
+제한이 모든 삽입 된 소스 목록을 포함 하는 [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) 개체를 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

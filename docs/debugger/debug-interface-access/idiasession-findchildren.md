@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5759d810bf9180522508a6be54e5c94ffcfadb3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cca6778e5697c5f8821322c19d706d733d7f2b9f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839383"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742294"
 ---
 # <a name="idiasessionfindchildren"></a>IDiaSession::findChildren
-지정한 부모 식별자의 이름 및 기호 형식과 일치 하는 모든 자식을 검색 합니다.
+이름 및 기호 형식과 일치 하는 지정 된 부모 식별자의 모든 자식을 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -37,36 +37,36 @@ HRESULT findChildren ( 
 #### <a name="parameters"></a>매개 변수
  `parent`
 
-[in] [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 부모를 나타내는 개체입니다. 이 부모 기호는 함수, 모듈 또는 블록 경우 어휘 자식을 반환 됩니다 `ppResult`합니다. 부모 기호 형식이 면 클래스 자식은 반환 됩니다. 이 매개 변수가 `NULL`, 한 다음 `symtag` 로 설정 해야 `SymTagExe` 또는 `SymTagNull`, 전역 범위 (.exe 파일)를 반환 하는 합니다.
+진행 부모를 나타내는 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 개체입니다. 이 부모 기호가 함수, 모듈 또는 블록인 경우 해당 어휘 자식은 `ppResult` 반환 됩니다. 부모 기호가 형식이 면 해당 클래스의 자식이 반환 됩니다. 이 매개 변수를 `NULL` 하는 경우 `symtag`는 전역 범위 (.exe 파일)를 반환 하는 `SymTagExe` 또는 `SymTagNull`로 설정 되어야 합니다.
 
  `symtag`
 
-[in] 검색할 자식 기호 태그를 지정 합니다. 값에서 수행 되는 [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md) 열거형입니다. 로 `SymTagNull` 모든 자식을 검색할 수 있습니다.
+진행 검색할 자식의 기호 태그를 지정 합니다. 값은 [SymTagEnum 열거형](../../debugger/debug-interface-access/symtagenum.md) 열거에서 가져옵니다. 모든 자식을 검색 하려면 `SymTagNull`로 설정 합니다.
 
  `name`
 
-[in] 검색할 자식 컨트롤의 이름을 지정 합니다. 로 `NULL` 검색할 모든 자식에 대 한 합니다.
+진행 검색할 자식의 이름을 지정 합니다. 모든 자식 항목을 검색 하려면 `NULL`로 설정 합니다.
 
  `compareFlags`
 
-[in] 이름 일치에 적용할 비교 옵션을 지정 합니다. 값을 [NameSearchOptions 열거형](../../debugger/debug-interface-access/namesearchoptions.md) 열거형 따로 또는 함께 사용할 수 있습니다.
+진행 이름 일치에 적용 되는 비교 옵션을 지정 합니다. [Namesearchoptions 열거형](../../debugger/debug-interface-access/namesearchoptions.md) 열거형의 값은 단독으로 사용 하거나 함께 사용할 수 있습니다.
 
  `ppResult`
 
-[out] 반환 된 [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) 자식 기호 목록을 포함 하는 개체 검색 합니다.
+제한이 검색 된 자식 기호의 목록을 포함 하는 [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) 개체를 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
 ## <a name="example"></a>예제
- 다음 예제에는 함수의 로컬 변수를 찾는 방법을 보여 줍니다 `pFunc` 는 일치 하는 이름 `szVarName`합니다.
+ 다음 예에서는 이름 `szVarName`와 일치 하 `pFunc` 함수의 지역 변수를 찾는 방법을 보여 줍니다.
 
 ```C++
 IDiaEnumSymbols* pEnum;
 pSession->findChildren( pFunc, SymTagData, szVarName, nsCaseSensitive, &pEnum );
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [개요](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

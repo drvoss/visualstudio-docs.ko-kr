@@ -7,15 +7,15 @@ helpviewer_keywords:
 - templates [Visual Studio], item
 - item templates [Visual Studio]
 - project templates [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 83ac401b67444d4fdd467d5aefeb46bccb5e7e84
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 1590317bf2749cc1aeef8a4c3bfbf2937c8404c7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037004"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652604"
 ---
 # <a name="project-and-item-templates"></a>프로젝트 및 항목 템플릿
 

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - File.OpenFile command
 - of command
 ms.assetid: a51a83fc-e3c6-4fa2-8882-8b7b6c0a6406
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b76db52534f4c264e065152548d49f9773863a29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 811667e89f01728c5a7516f5e7f7a12d448c6311
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62995236"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666426"
 ---
 # <a name="open-file-command"></a>파일 열기 명령
 
@@ -51,11 +51,11 @@ File.OpenFile filename [/e:editorname]
 /e:"Source Code (text) Editor"
 ```
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 경로를 입력하여 자동 완성에서 올바른 경로와 파일 이름을 찾으려고 합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 이 예제에서는 소스 코드 편집기에서 스타일 파일을 "Test1.css"를 엽니다.
 

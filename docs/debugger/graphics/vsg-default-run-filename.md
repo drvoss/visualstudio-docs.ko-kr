@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb56f7ef08241aed2e109e6845af8fb596cb42e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 835e2cec19e36418091e094abd2ec76bd6403398
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62895392"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734835"
 ---
-# <a name="vsgdefaultrunfilename"></a>VSG_DEFAULT_RUN_FILENAME
+# <a name="vsg_default_run_filename"></a>VSG_DEFAULT_RUN_FILENAME
 그래픽 로그 파일의 기본 파일 이름을 정의합니다.
 
 ## <a name="syntax"></a>구문
@@ -34,10 +34,10 @@ ms.locfileid: "62895392"
 #define VSG_DEFAULT_FILENAME L"default.vsglog"
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
  전처리기 기호 `DONT_SAVE_VSGLOG_TO_TEMP`가 정의된 경우 파일 이름이 캡처된 앱의 현재 디렉터리에 상대적이거나 절대 경로입니다. 그렇지 않으면 사용자의 임시 파일 디렉터리에 상대적이고 절대 경로일 수 없습니다.
 
- 정의 된 파일 이름을 변경 하려면 다시 정의한 것 포함 하기 전에 `vsgcapture.h` 프로그램에서 합니다.
+ 정의 된 파일 이름을 변경 하려면 프로그램에 `vsgcapture.h`을 포함 하기 전에이를 다시 정의 해야 합니다.
 
 ## <a name="example"></a>예제
  이 예제에서는 캡처 파일의 기본 파일 이름을 변경하는 방법을 보여줍니다.
@@ -49,5 +49,5 @@ ms.locfileid: "62895392"
 #include <vsgcapture.h>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [DONT_SAVE_VSGLOG_TO_TEMP](dont-save-vsglog-to-temp.md)

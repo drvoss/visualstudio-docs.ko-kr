@@ -11,17 +11,17 @@ helpviewer_keywords:
 - icons [Visual Studio], Image Library
 - bitmaps [Visual Studio], Image Library
 ms.assetid: f7a2e7c8-3b9f-4f8e-a6a8-000d72e3811d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aee70ea2c0463b56f7f82093087ec5a629aba53e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fd6cb64c3dad56c291b229dfee6cc2816e574b69
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892894"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72634835"
 ---
 # <a name="the-visual-studio-image-library"></a>Visual Studio 이미지 라이브러리
 

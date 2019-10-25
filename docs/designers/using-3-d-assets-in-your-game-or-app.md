@@ -10,17 +10,17 @@ f1_keywords:
 - VC.Project.ShaderGraphContentTask.ContentOutput
 - VC.Project.ImageContentTask.GenerateMips
 ms.assetid: ea587909-e434-46a8-abf8-9b3e95a58b4f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c595f4c8f344cfb9e8678d8f9c425a564baa9e4b
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 400e69ddaf9ebd3596edf3b926484b623225d672
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459106"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72634528"
 ---
 # <a name="how-to-use-3d-assets-in-your-game-or-app"></a>방법: 게임 또는 앱에서 3D 자산 사용
 
@@ -71,9 +71,9 @@ Visual Studio에서 도구를 사용하여 3D 자산을 만들면 그 다음 단
 
 |항목 종류|원본 파일 형식|출력 파일 형식|
 |---------------| - | - |
-|**이미지 콘텐츠 파이프라인**|이동식 네트워크 그래픽(*.png*)<br /><br /> JPEG(*.jpg*, *.jpeg*, *.jpe*, *.jfif*)<br /><br /> Direct Draw Surface(*.dds*)<br /><br /> Graphics Interchange Format(*.gif*)<br /><br /> Bitmap(*.bmp*, *.dib*)<br /><br /> Tagged Image File Format(*.tif*, *.tiff*)<br /><br /> Targa(*.tga*)|DirectDraw Surface(*.dds*)|
-|**메시 콘텐츠 파이프라인**|AutoDesk FBX 교환 파일(*.fbx*)<br /><br /> Collada DAE 파일(*.dae*)<br /><br /> Wavefront OBJ 파일(*.obj*)|3D 메시 파일(*.cmo*)|
-|**셰이더 콘텐츠 파이프라인**|시각적 셰이더 그래프(*.dgsl*)|컴파일된 셰이더 출력(*.cso*)|
+|**이미지 콘텐츠 파이프라인**|이동식 네트워크 그래픽( *.png*)<br /><br /> JPEG( *.jpg*, *.jpeg*, *.jpe*, *.jfif*)<br /><br /> Direct Draw Surface( *.dds*)<br /><br /> Graphics Interchange Format( *.gif*)<br /><br /> Bitmap( *.bmp*, *.dib*)<br /><br /> Tagged Image File Format( *.tif*, *.tiff*)<br /><br /> Targa( *.tga*)|DirectDraw Surface( *.dds*)|
+|**메시 콘텐츠 파이프라인**|AutoDesk FBX 교환 파일( *.fbx*)<br /><br /> Collada DAE 파일( *.dae*)<br /><br /> Wavefront OBJ 파일( *.obj*)|3D 메시 파일( *.cmo*)|
+|**셰이더 콘텐츠 파이프라인**|시각적 셰이더 그래프( *.dgsl*)|컴파일된 셰이더 출력( *.cso*)|
 
 ## <a name="configure-asset-content-pipeline-properties"></a>자산 콘텐츠 파이프라인 속성 구성
 

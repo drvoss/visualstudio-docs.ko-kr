@@ -18,21 +18,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59229b1ca2b055fc8242bf6446541a395eceaa56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 972b21c4535df37dd81da6aceaa062b39176469c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846865"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732094"
 ---
 # <a name="how-to-use-the-gpu-threads-window-c"></a>방법: GPU 스레드 창 사용 (C++)
-GPU 스레드 창에서 디버깅 중인 애플리케이션의 GPU에서 실행되는 스레드를 검사하고 관련 작업을 수행할 수 있습니다. GPU에서 실행 되는 응용 프로그램에 대 한 자세한 내용은 참조 하세요. [ C++ AMP 개요](/cpp/parallel/amp/cpp-amp-overview)합니다.
+GPU 스레드 창에서 디버깅 중인 애플리케이션의 GPU에서 실행되는 스레드를 검사하고 관련 작업을 수행할 수 있습니다. GPU에서 실행 되는 응용 프로그램에 대 한 자세한 내용은 [ C++ AMP 개요](/cpp/parallel/amp/cpp-amp-overview)를 참조 하세요.
 
  GPU 스레드 창에는 각 행이 모든 열에서 값이 동일한 GPU 스레드의 집합을 나타내는 테이블이 포함되어 있습니다. 열에 있는 항목의 정렬, 순서 변경, 제거 및 그룹화를 수행할 수 있습니다. GPU 스레드 창에서 스레드에 플래그를 지정하거나 해제할 수 있으며 스레드를 중지(일시 중단)하거나 재개(다시 시작)할 수 있습니다. 다음과 같은 열이 GPU 스레드 창에 표시됩니다.
 
 - 특히 주의할 스레드를 표시할 수 있는 플래그 열
 
-- 현재 스레드에는 노란색 화살표는 현재 스레드를 나타냅니다 열.
+- 현재 스레드 열-노란색 화살표는 현재 스레드를 나타냅니다.
 
 - **스레드 수** 열 - 스레드 수를 동일한 위치에 표시합니다.
 
@@ -66,9 +66,9 @@ GPU 스레드 창에서 디버깅 중인 애플리케이션의 GPU에서 실행�
 
 7. 메뉴 모음에서 **디버그**, **Windows**, **GPU 스레드**를 선택합니다.
 
-### <a name="to-switch-to-a-different-thread"></a>다른 스레드로 전환
+### <a name="to-switch-to-a-different-thread"></a>다른 스레드로 전환 하려면
 
-- 열을 두 번 클릭합니다. (키보드: 행을 선택 하 고 enter 키를 선택 합니다.)
+- 열을 두 번 클릭합니다. 키보드에서는 행을 선택하고 Enter 키를 선택합니다.
 
 ### <a name="to-display-a-particular-tile-and-thread"></a>특정 타일 및 스레드를 표시하려면
 
@@ -102,7 +102,7 @@ GPU 스레드 창에서 디버깅 중인 애플리케이션의 GPU에서 실행�
 
 - GPU 스레드 창에서 플래그 단추를 선택합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [다중 스레드 애플리케이션 디버그](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [방법: 병렬 조사식 창 사용](../debugger/how-to-use-the-parallel-watch-window.md)
 - [연습: C++ AMP 애플리케이션 디버깅](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

@@ -1,5 +1,5 @@
 ---
-title: '오류: ASP.NET이 설치 되어 있지 | Microsoft Docs'
+title: '오류: ASP.NET이 설치 되어 있지 않습니다. | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 98db3475c7d83427eb516f696731a738e34bd7a1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7d754cc2bb7931cdcbdb42abeddd554390ba320c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399303"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737914"
 ---
-# <a name="error-aspnet-not-installed"></a>오류: ASP.NET이 설치되어 있지 않음
+# <a name="error-aspnet-not-installed"></a>오류: ASP.NET이 설치되어 있지 않습니다.
 이 오류는 디버깅하려는 컴퓨터에 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]이 제대로 설치되어 있지 않을 때 발생합니다. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]이 설치되지 않았거나 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]을 먼저 설치하고 나중에 IIS를 설치했을 수 있습니다.
 
 ### <a name="to-reinstall-aspnet"></a>ASP.NET을 다시 설치하려면
@@ -37,10 +37,10 @@ ms.locfileid: "63399303"
    \WINDOWS\Microsoft.NET\Framework\version\aspnet_regiis -i
    ```
 
-    여기서 *버전* v1.0.370) 컴퓨터에 설치 된.NET Framework의 버전 번호를 나타냅니다. 프레임 워크 버전을 확인 하 여 확인할 수 있습니다는 `\WINDOWS\Microsoft.NET\Framework` 디렉터리입니다.
+    여기서 *version* 은 컴퓨터에 설치 된 .NET Framework의 버전 번호 (예: v 1.0.370)를 나타냅니다. @No__t_0 디렉터리를 살펴보면 프레임 워크 버전을 확인할 수 있습니다.
 
    > [!NOTE]
    > Windows Server 2003에서는 제어판의 **프로그램 추가 또는 제어**를 사용하여 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]을 설치할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [웹 애플리케이션 디버그: 오류 및 문제 해결](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

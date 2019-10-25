@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1d02cb4d581a7234ad2dd950fa51f46a5d128b2
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 75abf76516d3827a748e1b896d4c2e8c93bb34da
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211088"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733875"
 ---
-# <a name="how-to-debug-an-activex-control"></a>방법: ActiveX 컨트롤 디버그
+# <a name="how-to-debug-an-activex-control"></a>방법: ActiveX 컨트롤 디버깅
 
 > [!NOTE]
 > 표시되는 대화 상자와 메뉴 명령은 활성 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 설정을 변경하려면 도구 메뉴에서 설정 가져오기 및 내보내기를 선택합니다. 자세한 내용은 [재설정 설정](../ide/environment-settings.md#reset-settings)을 참조하세요.
@@ -56,7 +56,7 @@ ActiveX 컨트롤을 디버깅하려면 컨트롤을 실행할 컨테이너(실�
 
      **프로젝트 속성 페이지** 대화 상자에서 컨테이너를 지정하지 않은 경우에는 디버깅을 시작할 때 컨테이너를 지정할 수 있습니다. 디버깅을 시작하는 실행 명령을 선택하면 [디버깅 세션에 사용할 실행 파일 대화 상자](../debugger/executable-for-debugging-session-dialog-box.md)가 나타납니다. 대화 상자에서 컨테이너의 경로 이름을 지정합니다.
 
-## <a name="see-also"></a>관련 항목
+## <a name="see-also"></a>참조
 
 - [ActiveX 컨트롤](/cpp/mfc/activex-controls)
 - [테스트 컨테이너로 속성 및 이벤트 테스트](/cpp/mfc/testing-properties-and-events-with-test-container)

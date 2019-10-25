@@ -7,15 +7,15 @@ helpviewer_keywords:
 - template parameters [Visual Studio]
 - project templates, parameters
 - item templates, parameters
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2fbc9d95a6e334c3dcd788c4b686a222c417b0df
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 445a4fa7847ea5c9a5cb64da09cf54c763e86d16
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766108"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647394"
 ---
 # <a name="template-parameters"></a>템플릿 매개 변수
 
@@ -60,7 +60,7 @@ ms.locfileid: "70766108"
 |safeitemname|`itemname`과 동일하지만, 모든 안전하지 않은 문자와 공백이 밑줄 문자로 대체됩니다.|
 |safeitemrootname|`safeitemname`와 동일합니다.|
 |safeprojectname|프로젝트를 만들 때 사용자가 제공했지만 안전하지 않은 문자 및 공백을 모두 제거한 이름입니다.|
-|시간|DD/MM/YYYY 00:00:00 형식인 현재 시간입니다.|
+|Time|DD/MM/YYYY 00:00:00 형식인 현재 시간입니다.|
 |specifiedSolutionName|솔루션의 기본 이름. "솔루션 디렉터리 만들기"를 선택한 경우 `specifiedSolutionName`에는 솔루션 이름이 있습니다. "솔루션 디렉터리 만들기"를 선택하지 않은 경우 `specifiedSolutionName`은 비어 있습니다.|
 |userdomain|현재 사용자 도메인입니다.|
 |사용자 이름|현재 사용자 이름입니다.|
@@ -74,7 +74,7 @@ ms.locfileid: "70766108"
 
 매개 변수를 대체하는 동안 사용되는 예약된 기본 템플릿 매개 변수 외에 템플릿 매개 변수와 값을 직접 지정할 수 있습니다. 자세한 내용은 [CustomParameters 요소(Visual Studio 템플릿)](../extensibility/customparameters-element-visual-studio-templates.md)를 참조하세요.
 
-## <a name="example-use-the-project-name-for-a-file-name"></a>예제: 파일 이름에 프로젝트 이름 사용
+## <a name="example-use-the-project-name-for-a-file-name"></a>예: 파일 이름에 프로젝트 이름 사용
 
 `TargetFileName` 특성에 매개 변수를 사용하여 프로젝트 항목에 대한 변수 파일 이름을 지정할 수 있습니다.
 
@@ -91,7 +91,7 @@ ms.locfileid: "70766108"
 </TemplateContent>
 ```
 
-## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>예제: 네임스페이스 이름에 안전한 프로젝트 이름 사용
+## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>예: 네임스페이스 이름에 안전한 프로젝트 이름 사용
 
 C# 클래스 파일에서 네임스페이스에 프로젝트 이름을 사용하려면 다음 구문을 사용합니다.
 

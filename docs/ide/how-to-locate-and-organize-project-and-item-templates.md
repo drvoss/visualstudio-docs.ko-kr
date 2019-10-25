@@ -6,15 +6,15 @@ helpviewer_keywords:
 - project templates [Visual Studio], locations
 - item templates [Visual Studio], locations
 - template locations [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: db74d23cf42e371f00bf25c7edcd8c480f7649d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9035e63fd172727f3bfae44e18a0727599d4edc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430278"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645886"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>방법: 프로젝트 템플릿과 항목 템플릿 찾기 및 구성
 
@@ -60,7 +60,7 @@ ms.locfileid: "62430278"
 
 ### <a name="user-templates"></a>사용자 템플릿
 
-*.vstemplate* 파일을 포함하는 압축된(*.zip*) 파일을 사용자 템플릿 디렉터리에 추가하는 경우 템플릿이 새 프로젝트 및 새 항목 대화 상자에 나타납니다. 기본적으로 사용자 템플릿은 다음 위치에 있습니다.
+*.vstemplate* 파일을 포함하는 압축된( *.zip*) 파일을 사용자 템플릿 디렉터리에 추가하는 경우 템플릿이 새 프로젝트 및 새 항목 대화 상자에 나타납니다. 기본적으로 사용자 템플릿은 다음 위치에 있습니다.
 
 ::: moniker range="vs-2017"
 

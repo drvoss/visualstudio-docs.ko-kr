@@ -15,12 +15,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12dfad3c0a1197161925ca1f59b865975a42b4d4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b8d3684ac79ce0dde8641e11a455238d927f2adb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666568"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748514"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>코드 생성 및 T4 텍스트 템플릿
 
@@ -94,6 +94,6 @@ namespace Fabrikam.FirstJob
 
 텍스트 템플릿 변환 기능을 *T4*라고 합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)

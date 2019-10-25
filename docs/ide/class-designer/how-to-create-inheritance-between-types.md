@@ -8,17 +8,17 @@ helpviewer_keywords:
 - inheritance, relationship defining
 - relationships, defining inheritance
 ms.assetid: 3786a21c-8022-4bf5-9d13-740fd354e93c
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c1a4f8db08ec80714fe2cd74e4d1300d68a56e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e8a7d7f3facf1408f87ef23dfa8ed8462195c172
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975374"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647723"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>방법: 클래스 디자이너에서 형식 간의 상속 만들기
 

@@ -15,17 +15,17 @@ f1_keywords:
 helpviewer_keywords:
 - solutions [Visual Studio]
 - projects [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c63bc4b52e47c52096d0aa2d339b3c6dc96d7fe9
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 7ca611d7ae1faa86ae7878b2f824ce27b9872713
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251894"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72621582"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio의 솔루션 및 프로젝트
 
@@ -36,7 +36,7 @@ ms.locfileid: "71251894"
 
 ## <a name="projects"></a>프로젝트
 
-Visual Studio에서 앱이나 웹 사이트를 만드는 경우 ‘프로젝트’에서 시작합니다.  논리적인 측면에서 프로젝트에는 실행 파일, 라이브러리 또는 웹 사이트로 컴파일되는 모든 파일이 포함되어야 합니다. 이러한 파일에는 소스 코드, 아이콘, 이미지, 데이터 파일 등이 포함될 수 있습니다. 프로젝트에도 프로그램이 통신하는 여러 서비스 또는 구성 요소에 필요할 수 있는 컴파일러 설정 및 기타 구성 파일이 포함되어 있습니다.
+Visual Studio에서 앱이나 웹 사이트를 만드는 경우 ‘프로젝트’에서 시작합니다.  논리적인 측면에서 프로젝트에는 실행 파일, 라이브러리 또는 웹 사이트로 컴파일되는 모든 파일이 포함됩니다. 이러한 파일에는 소스 코드, 아이콘, 이미지, 데이터 파일 등이 포함될 수 있습니다. 프로젝트에도 프로그램이 통신하는 여러 서비스 또는 구성 요소에 필요할 수 있는 컴파일러 설정 및 기타 구성 파일이 포함되어 있습니다.
 
 ### <a name="project-file"></a>프로젝트 파일
 

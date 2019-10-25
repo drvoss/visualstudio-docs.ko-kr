@@ -1,5 +1,5 @@
 ---
-title: 'Idiainjectedsource:: Get_filename | Microsoft Docs'
+title: 'IDiaInjectedSource:: get_filename | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26c68e4f58706fe9d65738e2e58b6ba011999e6a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3aa2929ac592d475896eff0c1969115f971a8572
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828676"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743369"
 ---
-# <a name="idiainjectedsourcegetfilename"></a>IDiaInjectedSource::get_filename
-원본에 대 한 파일 이름을 검색합니다.
+# <a name="idiainjectedsourceget_filename"></a>IDiaInjectedSource::get_filename
+소스에 대 한 파일 이름을 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,10 +33,10 @@ HRESULT get_filename ( 
 #### <a name="parameters"></a>매개 변수
  pRetVal
 
-[out] 원본에 대 한 파일 이름을 반환합니다.
+제한이 원본에 대 한 파일 이름을 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.
+ 성공하면 `S_OK`를 반환합니다. 이 속성이 지원 되지 않는 경우 `S_FALSE`를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

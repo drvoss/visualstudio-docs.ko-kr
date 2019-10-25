@@ -1,5 +1,5 @@
 ---
-title: 'Idiaframedata:: Get_addresssection | Microsoft Docs'
+title: 'IDiaFrameData:: get_addressSection | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93e3c6b02477097bd9dfe3fa0cf4292c3a8723f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 524d6b36cc163c0bbce1a3eb27497d4c63edd50b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832816"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743665"
 ---
-# <a name="idiaframedatagetaddresssection"></a>IDiaFrameData::get_addressSection
-프레임에 대 한 코드 주소 섹션 부분을 검색합니다.
+# <a name="idiaframedataget_addresssection"></a>IDiaFrameData::get_addressSection
+프레임에 대 한 코드 주소의 섹션 부분을 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,10 +33,10 @@ HRESULT get_addressSection ( 
 #### <a name="parameters"></a>매개 변수
  `pRetVal`
 
-[out] 프레임에 대 한 코드 주소 섹션 부분을 반환합니다.
+제한이 프레임에 대 한 코드 주소의 섹션 부분을 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.
+ 성공하면 `S_OK`를 반환합니다. 이 속성이 지원 되지 않는 경우 `S_FALSE`를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

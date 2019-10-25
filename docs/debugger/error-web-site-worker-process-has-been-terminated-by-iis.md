@@ -1,5 +1,5 @@
 ---
-title: '오류: IIS에서 웹 사이트 작업자 프로세스를 종료 했습니다 | Microsoft Docs'
+title: '오류: IIS에서 웹 사이트 작업자 프로세스를 종료 했습니다. | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d89eabec0c199b1b8df7eeb78d0e629d4a70b2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3231c8ba2835fb535d538e29ef7df7ea3d1c4a8a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62849994"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736349"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>오류: IIS에서 웹 사이트 작업자 프로세스를 종료했습니다.
 디버거가 웹 사이트에서 코드 실행을 중지했습니다. 이로 인해 IIS(인터넷 정보 서비스)에서는 작업자 프로세스가 응답을 중지한 것으로 가정하여 작업자 프로세스를 종료했습니다.
@@ -56,5 +56,5 @@ ms.locfileid: "62849994"
 
 8. IIS 관리자 및 **관리 도구** 창을 닫습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [원격 디버깅 오류 및 문제 해결](../debugger/remote-debugging-errors-and-troubleshooting.md)

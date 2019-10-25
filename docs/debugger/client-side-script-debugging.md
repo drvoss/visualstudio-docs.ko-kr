@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1501cd0243d6dc17cc627715eda85e755aec4502
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9f66d757f5f46530619be1424eb0810ce546ff5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564088"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745706"
 ---
 # <a name="client-side-script-debugging"></a>클라이언트 쪽 스크립트 디버깅
 Visual Studio 디버거는 ASP.NET 페이지의 클라이언트 쪽 스크립트에서 오류를 찾아 수정하기 위한 포괄적인 디버깅 환경을 제공합니다.
 
 ## <a name="opening-script-documents"></a>스크립트 문서 열기
-**솔루션 탐색기** 에서 서버 쪽 및 클라이언트 쪽 스크립트 문서 목록을 볼 수 있습니다. **솔루션 탐색기**에서는 원하는 모든 스크립트 문서를 열 수 있습니다. 자세한 내용은 [방법: 스크립트 문서 보기](../debugger/how-to-view-script-documents.md)를 참조하세요.
+**솔루션 탐색기** 에서 서버 쪽 및 클라이언트 쪽 스크립트 문서 목록을 볼 수 있습니다. **솔루션 탐색기**에서는 원하는 모든 스크립트 문서를 열 수 있습니다. 자세한 내용은 [How to: View Script Documents](../debugger/how-to-view-script-documents.md)을 참조하십시오.
 
 ## <a name="breakpoint-mapping"></a>중단점 매핑
  Visual Studio에서는 서버 쪽 코드를 직접 디버깅할 수 없지만 서버 쪽 파일에서 중단점을 설정할 수 있습니다. Visual Studio는 클라이언트 쪽 파일에서 해당하는 위치에 중단점을 자동으로 매핑하고 클라이언트 쪽 코드에서 매핑된 중단점을 만듭니다.
@@ -35,7 +35,7 @@ Visual Studio 디버거는 ASP.NET 페이지의 클라이언트 쪽 스크립트
 ## <a name="manually-or-automatically-attaching-to-script"></a>스크립트에 자동 또는 수동으로 연결
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 스크립트를 디버깅하려면 디버거를 디버깅할 스크립트에 연결해야 합니다. 이 작업은 수동 또는 자동으로 수행할 수 있습니다.
 
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 디버거 인터페이스를 통해 연결할 실행 스크립트 프로세스를 선택하면 디버거를 수동으로 연결할 수 있습니다. 자세한 내용은 [방법: 스크립트에 연결](../debugger/how-to-attach-to-script.md)을 참조하세요.
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 디버거 인터페이스를 통해 연결할 실행 스크립트 프로세스를 선택하면 디버거를 수동으로 연결할 수 있습니다. 자세한 내용은 [How to: Attach to Script](../debugger/how-to-attach-to-script.md)을 참조하세요.
 
  다음 중 한 가지가 발생하면 디버거가 스크립트에 자동으로 연결됩니다.
 
@@ -59,9 +59,9 @@ Visual Studio 디버거는 ASP.NET 페이지의 클라이언트 쪽 스크립트
 
  [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)에서는 원하는 모든 스크립트 문서를 열 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-- [ASP.NET 및 AJAX 응용 프로그램 디버그](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)
+- [ASP.NET 및 AJAX 애플리케이션 디버그](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)
 - [스크립트 디버깅의 제한 사항](../debugger/limitations-on-script-debugging.md)
 - [변수 창](../debugger/debugger-windows.md)
 - [직접 실행 창](../ide/reference/immediate-window.md)

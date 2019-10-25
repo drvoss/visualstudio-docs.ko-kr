@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - Project Designer, Application page
 - Application page in Project Designer
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 04a130528edbe8ab3aae0a24d69315b934b19d54
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: cc28c4b6585c52bca084234b8d21f211b4209b87
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551436"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651981"
 ---
 # <a name="application-page-project-designer-c"></a>프로젝트 디자이너, 애플리케이션 페이지(C#)
 
@@ -91,7 +91,7 @@ ms.locfileid: "69551436"
 
 이 단추를 클릭하면 [어셈블리 정보](../../ide/reference/assembly-information-dialog-box.md) 대화 상자가 열립니다.
 
-## <a name="resources"></a>자료
+## <a name="resources"></a>리소스
 
 **리소스** 옵션을 통해 앱에 대한 리소스 설정을 구성할 수 있습니다.
 

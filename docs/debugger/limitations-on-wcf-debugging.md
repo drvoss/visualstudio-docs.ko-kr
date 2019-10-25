@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34b69ac69c580fbd40278b5b7a0c9be26d672fa3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c70195cdc0a6a03395744c63f556ce8c2970aa30
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905970"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731500"
 ---
 # <a name="limitations-on-wcf-debugging"></a>WCF 디버깅의 제한 사항
 다음 세 가지 방법으로 WCF 서비스의 디버깅을 시작할 수 있습니다.
@@ -74,11 +74,11 @@ ms.locfileid: "62905970"
   ```
 
 ## <a name="self-hosting"></a>자체 호스팅
- *자체 호스팅 서비스*는 IIS, WCF 서비스 호스트 또는 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Development Server 내에서 실행되지 않는 WCF 서비스입니다. 자체 호스팅된 서비스를 디버깅 하는 방법에 대 한 정보를 참조 하세요. [방법: 자체 호스팅된 WCF 서비스 디버그](../debugger/how-to-debug-a-self-hosted-wcf-service.md)합니다.
+ *자체 호스팅 서비스*는 IIS, WCF 서비스 호스트 또는 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Development Server 내에서 실행되지 않는 WCF 서비스입니다. 자체 호스팅 서비스를 디버깅 하는 방법에 대 한 자세한 내용은 [방법: 자체 호스팅 WCF 서비스 디버그](../debugger/how-to-debug-a-self-hosted-wcf-service.md)를 참조 하세요.
 
 ## <a name="self-hosting"></a>자체 호스팅
- [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 또는 3.5 애플리케이션을 디버깅할 수 있으려면 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]를 설치하기 전에 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 또는 3.5를 설치해야 합니다. [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]가 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 또는 3.5 이전에 설치된 경우 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 또는 3.5 애플리케이션을 디버깅하려고 하면 오류가 발생합니다. 오류 메시지는 "서버에 대해 자동으로 한 단계씩 코드를 실행할 수 없습니다."입니다. 이 문제를 해결 하려면 Windows를 사용 하 여 **Control Panel** > **프로그램 및 기능** 복구에 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 설치 합니다.
+ [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 또는 3.5 애플리케이션을 디버깅할 수 있으려면 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]를 설치하기 전에 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 또는 3.5를 설치해야 합니다. [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]가 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 또는 3.5 이전에 설치된 경우 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 또는 3.5 애플리케이션을 디버깅하려고 하면 오류가 발생합니다. 오류 메시지는 "서버에 대해 자동으로 한 단계씩 코드를 실행할 수 없습니다."입니다. 이 문제를 해결 하려면 Windows **제어판**  > **프로그램 및 기능** 을 사용 하 여 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 설치를 복구 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [WCF 서비스 디버그](../debugger/debugging-wcf-services.md)
 - [방법: 자체 호스팅 WCF 서비스 디버그](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

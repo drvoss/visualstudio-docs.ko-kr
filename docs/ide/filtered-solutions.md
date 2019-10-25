@@ -6,20 +6,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - filtered solution
 - solution filtering
-author: gewarren
+author: jillre
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 2612770b760bec70ec9ee6c679c47804d4e69f42
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4c44d267ef5686d04e9549601e05866aabbfb62d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439833"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650845"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Visual Studio의 필터링된 솔루션
 
-대규모 개발팀은 종종 여러 프로젝트가 포함된 하나의 대형 솔루션을 사용하여 공동 작업을 진행합니다. 그러나 개별 개발자는 일반적으로 이러한 프로젝트의 소규모 하위 집합에서 작업합니다. 대형 솔루션을 열 때 성능을 향상하기 위해 Visual Studio 2019에서는 ‘솔루션 필터링’이 도입되었습니다. 솔루션 필터링을 사용하면 선택한 프로젝트만 로드된 솔루션을 열 수 있습니다. 솔루션에서 프로젝트의 하위 집합을 로드하면 솔루션 로드, 빌드 및 테스트 실행 시간이 단축되고 검토에 집중할 수 있습니다.
+대규모 개발팀은 종종 여러 프로젝트가 포함된 하나의 대형 솔루션을 사용하여 공동 작업을 진행합니다. 그러나 개별 개발자는 일반적으로 이러한 프로젝트의 소규모 하위 집합에서 작업합니다. 대형 솔루션을 열 때 성능을 향상하기 위해 Visual Studio 2019에서는 ‘솔루션 필터링’이 도입되었습니다.  솔루션 필터링을 사용하면 선택한 프로젝트만 로드된 솔루션을 열 수 있습니다. 솔루션에서 프로젝트의 하위 집합을 로드하면 솔루션 로드, 빌드 및 테스트 실행 시간이 단축되고 검토에 집중할 수 있습니다.
 
 다음과 같은 기능이 제공됩니다.
 
@@ -81,7 +81,7 @@ devenv /donotloadprojects MySln.sln
 
 ## <a name="solution-filter-files"></a>솔루션 필터 파일
 
-프로젝트 로드 구성을 공유하거나 소스 제어에 커밋하려면 솔루션 필터 파일을 만들면 됩니다(*.slnf* 확장이 있음). 솔루션 필터 파일을 열면 지정된 프로젝트만 로드되고 언로드된 프로젝트는 모두 숨겨진 솔루션이 Visual Studio에서 열립니다. 언로드된 프로젝트를 표시하도록 [전환](#toggle-unloaded-project-visibility)할 수 있습니다.
+프로젝트 로드 구성을 공유하거나 소스 제어에 커밋하려면 솔루션 필터 파일을 만들면 됩니다( *.slnf* 확장이 있음). 솔루션 필터 파일을 열면 지정된 프로젝트만 로드되고 언로드된 프로젝트는 모두 숨겨진 솔루션이 Visual Studio에서 열립니다. 언로드된 프로젝트를 표시하도록 [전환](#toggle-unloaded-project-visibility)할 수 있습니다.
 
 솔루션 필터 파일은 **솔루션 탐색기**에서 솔루션 옆의 아이콘에 추가 깔때기형 문자 모양이 있기 때문에 일반 솔루션 파일과 시각적으로 구분됩니다. 필터 이름과 로드된 프로젝트 수도 솔루션 이름 옆에 표시됩니다.
 

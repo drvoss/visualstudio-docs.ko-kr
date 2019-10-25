@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 8ba9b0eb17a492bf1912281038ffc35732ece96d
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 2ce889f83c4d21a8b2464cab108fa165e1144791
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589067"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745570"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>UWP 앱에서 웹 보기 컨트롤 디버그
 
@@ -83,6 +83,6 @@ ms.locfileid: "72589067"
 
 6. [퀵 스타트: Javascript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md) 및 [javascript 콘솔 명령](../debugger/javascript-console-commands.md?view=vs-2017)에 설명 된 대로 앱에서 변수를 보고 수정 하거나 콘솔 명령을 사용 합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [빠른 시작: HTML 및 CSS 디버그](../debugger/quickstart-debug-html-and-css.md)

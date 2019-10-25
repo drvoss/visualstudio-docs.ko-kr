@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: b2fa0bd62b88602ee5a4d5091821e2c2a18f6374
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: d902403b111e92f302ff907a29eaaa99ee181058
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72430767"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737995"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Visual Studio에서 UWP 앱 배포
 
@@ -114,7 +114,7 @@ Windows 10 원격 장치에서 [개발자 모드](/windows/uwp/get-started/enabl
 
 - 디버그 속성 페이지에서 **응용 프로그램 시작** 값을 예로 설정 합니다. C++
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [고급 원격 배포 옵션](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)
 - [설치된 앱 패키지 디버그](../debugger/debug-installed-app-package.md)

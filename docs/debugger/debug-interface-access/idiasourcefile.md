@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37b887e21da73acffde6f5ae21adf766e64e55fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 08334c59ea061cee1618c76aa61ec6aa6fb8d7d4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838134"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741770"
 ---
 # <a name="idiasourcefile"></a>IDiaSourceFile
-원본 파일을 나타냅니다.
+소스 파일을 나타냅니다.
 
 ## <a name="syntax"></a>구문
 
@@ -29,23 +29,23 @@ IDiaSourceFile : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
-다음 표에서의 메서드를 보여 줍니다. `IDiaSourceFile`합니다.
+다음 표에서는 `IDiaSourceFile`의 메서드를 보여 줍니다.
 
 |메서드|설명|
 |------------|-----------------|
-|[IDiaSourceFile::get_uniqueId](../../debugger/debug-interface-access/idiasourcefile-get-uniqueid.md)|이 이미지에 대 한 고유한 단순 정수 키 값을 검색 합니다.|
-|[IDiaSourceFile::get_fileName](../../debugger/debug-interface-access/idiasourcefile-get-filename.md)|소스 파일 이름을 검색합니다.|
-|[IDiaSourceFile::get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)|체크섬 유형을 검색합니다.|
-|[IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)|이 파일을 참조 하는 줄 번호를 사용 하 여는 컴파일 대상의 열거자를 검색 합니다.|
-|[IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)|체크섬 바이트 수를 검색 합니다.|
+|[IDiaSourceFile::get_uniqueId](../../debugger/debug-interface-access/idiasourcefile-get-uniqueid.md)|이 이미지에 대해 고유한 간단한 정수 키 값을 검색 합니다.|
+|[IDiaSourceFile::get_fileName](../../debugger/debug-interface-access/idiasourcefile-get-filename.md)|소스 파일 이름을 검색 합니다.|
+|[IDiaSourceFile::get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)|체크섬 형식을 검색 합니다.|
+|[IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)|이 파일을 참조 하는 줄 번호를 사용 하 여 compilands의 열거자를 검색 합니다.|
+|[IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)|체크섬 바이트를 검색 합니다.|
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-## <a name="notes-for-callers"></a>호출자에 대 한 정보
-호출 하 여이 인터페이스를 가져올는 [idiaenumsourcefiles:: Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md) 하거나 [idiaenumsourcefiles:: Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md) 메서드. 세부 정보에 대 한 예제를 참조 하세요.
+## <a name="notes-for-callers"></a>호출자 참고 사항
+[IDiaEnumSourceFiles:: Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md) 또는 [IDiaEnumSourceFiles:: Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md) 메서드를 호출 하 여이 인터페이스를 가져옵니다. 자세한 내용은 예제를 참조 하세요.
 
 ## <a name="example"></a>예제
-이 함수는 지정된 된 테이블에 영향을 주는 모든 소스 파일의 이름을 표시 합니다.
+이 함수는 지정 된 테이블에 영향을 주는 모든 원본 파일의 이름을 표시 합니다.
 
 ```C++
 void ShowSourceFiles(IDiaTable *pTable)
@@ -73,13 +73,13 @@ void ShowSourceFiles(IDiaTable *pTable)
 ```
 
 ## <a name="requirements"></a>요구 사항
-헤더: Dia2.h
+헤더: Dia2
 
-라이브러리: diaguids.lib
+라이브러리: diaguids
 
-DLL: msdia80.dll
+DLL: msdia80
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [인터페이스(디버그 인터페이스 액세스 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)
 - [IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)

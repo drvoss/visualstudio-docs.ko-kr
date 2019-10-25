@@ -9,17 +9,17 @@ helpviewer_keywords:
 - text searches, replacing text
 - find and replace
 - replace in files
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fddd048d7c0cc1ffc32dfa81f17964d14d917ec9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a30fdbc13222ac23146595af1984b27aeed0f758
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788943"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72621840"
 ---
 # <a name="replace-in-files"></a>파일에서 바꾸기
 

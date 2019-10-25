@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c7ff2be87a91e6c01ec275bcff1d77aa6481df1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1ae26dc54c8f57348ed00196d86629e3515a1835
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658284"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748346"
 ---
 # <a name="properties-of-a-dsl-definition"></a>DSL 정의의 속성
 DslDefinition 속성은 버전 번호 매기기와 같은 *도메인별 언어* 정의 속성을 정의 합니다. *도메인 특정 언어 디자이너*에서 다이어그램의 열린 영역을 클릭 하면 **속성** 창에 dsldefinition 속성이 나타납니다.
@@ -42,6 +42,6 @@ DslDefinition 속성은 버전 번호 매기기와 같은 *도메인별 언어* 
 |부 버전|이 도메인별 언어 정의의 증분 부 빌드 번호입니다.|0|
 |Revision|이 도메인별 언어 정의에 대 한 증분 수정 버전 빌드 번호입니다.|0|
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [도메인 특정 언어 도구 용어집](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

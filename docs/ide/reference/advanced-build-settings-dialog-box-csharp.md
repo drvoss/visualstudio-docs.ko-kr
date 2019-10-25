@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c4a1c902047b76ef3b29814d10cfc112ab9c7274
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 78817f65197c2dd295a6f2202f913c48b54e1ed9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186794"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748813"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>고급 빌드 설정 대화 상자(C#)
 
@@ -64,7 +64,7 @@ mscorlib.dll을 프로그램으로 가져와 전체 <xref:System> 네임스페�
 
 컴파일러에서 생성되는 디버깅 정보 형식을 지정합니다. 애플리케이션의 디버그 성능을 구성하는 방법에 대한 자세한 내용은 [쉽게 디버깅할 수 있도록 이미지 만들기](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug)를 참조하세요. 이 설정에는 다음과 같은 옵션이 있습니다.
 
-- **없음**
+- **none**
 
    디버깅 정보가 생성되지 않도록 지정합니다.
 

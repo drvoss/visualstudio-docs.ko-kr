@@ -1,5 +1,5 @@
 ---
-title: '오류: IP 주소를 사용 하는 사이트 | Microsoft Docs'
+title: '오류: 사이트에서 IP 주소를 사용 합니다. | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 468cb2c85be088213bc865122a790408c6c992b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 96786efad0349dec7c9e8e9a02cca40af3668341
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850420"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737496"
 ---
-# <a name="error-site-uses-ip-address"></a>오류: 사이트에서 IP 주소 사용
+# <a name="error-site-uses-ip-address"></a>오류: 사이트에서 IP 주소를 사용합니다.
 이 오류는 디버거에서 IP 주소를 사용하는 웹 애플리케이션에 자동으로 연결하려고 할 때 발생합니다. IIS에서 **웹 사이트 확인**을 **특정 IP 주소 사용**으로 변경하는 경우 이 오류가 발생합니다.
 
  자동 연결이 제대로 동작하기 위해서는 컴퓨터 이름뿐 아니라 특정 IP 주소도 함께 사용하여 프로젝트를 만들어야 합니다. 그렇지 않으면 디버거에서 컴퓨터 이름을 localhost로 변경하므로 DEBUG 동사를 IIS로 보낼 수 없게 됩니다.
@@ -36,5 +36,5 @@ ms.locfileid: "62850420"
 
 2. **IIS 웹 사이트 확인** 설정을 변경합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [웹 애플리케이션 디버그: 오류 및 문제 해결](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

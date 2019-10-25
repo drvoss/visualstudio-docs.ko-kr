@@ -198,7 +198,7 @@ ms.locfileid: "72661608"
 
  자세한 내용은 [HtmlImage 서버 컨트롤 선언 구문](https://msdn.microsoft.com/528430e8-ced1-47d1-8db2-942e734a61f6), [Image 웹 서버 컨트롤 개요](https://msdn.microsoft.com/library/096a8d8d-58ee-4ee8-ab82-6594a0f3a0a9), <xref:System.Web.UI.HtmlControls.HtmlImage>, <xref:System.Web.UI.HtmlControls.HtmlInputImage> 및 <xref:System.Web.UI.WebControls.Image>를 참조하세요.
 
- **** ![HTML 페이지 도구 상자 드롭다운](../../ide/reference/media/vxdropdown.gif "|::ref14::|") 선택
+ ![HTML 페이지 도구 상자 드롭다운](../../ide/reference/media/vxdropdown.gif "|::ref14::|") **선택**
 
  `select` 요소를 삽입합니다(`size` 특성 없음). 기본적으로 `id="select1"`은 첫 번째 목록 상자로 삽입되고, `id="select2"`는 두 번째 목록 상자로 삽입되는 식으로 항목이 삽입됩니다.
 

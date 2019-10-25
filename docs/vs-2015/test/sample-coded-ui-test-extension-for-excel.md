@@ -8,21 +8,21 @@ helpviewer_keywords:
 - coded UI tests, extensions for Excel
 ms.assetid: 451e4d14-7fac-42f9-af56-2bdc8414c6c7
 caps.latest.revision: 15
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f550e65a152e06ab49ab8a0b3f213edffcf89cd3
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: e0c6075f9f95f7dc1d21db91936cf35c76f9b2e5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871620"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672236"
 ---
 # <a name="sample-coded-ui-test-extension-for-excel"></a>Excel용 샘플 코딩된 UI 테스트 확장명
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 샘플의 확장 구성 요소는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 코딩된 UI 테스트 프로세스에서 실행되며, 기본 수준에 `ExtensionPackage` 클래스가 있는 다소 계층적인 구조입니다. 다음 수준에는 `TechnologyManager`, `ActionFilter` 및 `PropertyProvider` 클래스가 있고 최상위 수준에는 컨트롤 요소가 있습니다.
 
- ![Excel 테스트 확장 아키텍처](../test/media/excel-extarch.png "Excel_ExtArch")Excel 확장 아키텍처
+ ![Excel 테스트 확장 아키텍처](../test/media/excel-extarch.png "Excel_ExtArch") Excel 확장 아키텍처
 
 ## <a name="extension-points"></a>확장점
  이러한 클래스는 [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]에 대해 코딩된 UI 테스트를 사용할 수 있도록 샘플에서 구현되는 확장점을 나타냅니다.
@@ -42,7 +42,7 @@ ms.locfileid: "68871620"
 ### <a name="propertyprovider"></a>PropertyProvider
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> 클래스에서 상속되는 이 클래스는 테스트 기록 및 재생을 위한 UI 요소의 속성을 지원하는 기본 클래스를 제공합니다. 자세한 내용은 [PropertyProvider 클래스](../test/sample-excel-extension-propertyprovider-class.md)를 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>

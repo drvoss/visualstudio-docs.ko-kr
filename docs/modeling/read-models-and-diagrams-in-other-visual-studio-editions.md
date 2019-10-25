@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33ae88358d77ac7c70a74cecb879eef3c4ca8b8c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 29c190115836972f86590233e331f172422efbd6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658107"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747430"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>다른 Visual Studio 버전에서 모델 및 다이어그램 읽기
 
@@ -55,7 +55,7 @@ ms.locfileid: "72658107"
 
 이러한 변경 내용을 저장할 수 있습니다. 다른 사용자에 게 변경 내용을 표시 하려면 적어도 업데이트 된 **. 레이아웃** 파일을 보내야 합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [종속성 다이어그램: 참조](../modeling/layer-diagrams-reference.md)
 - [앱용 모델 만들기](../modeling/create-models-for-your-app.md)

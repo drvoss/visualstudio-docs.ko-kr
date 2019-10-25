@@ -1,5 +1,5 @@
 ---
-title: 값 대화 상자를 변경할 수 없습니다 | Microsoft Docs
+title: 값을 변경할 수 없음 대화 상자 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,22 +18,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f8f9dafe8ada8914591426dea9abc867de2236f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 97f057edefefd590c37b49d709ecf8a6e029b905
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564153"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745736"
 ---
 # <a name="cannot-change-value-dialog-box"></a>값을 변경할 수 없음 대화 상자
 ## <a name="error"></a>Error
- `The value of this variable cannot be changed` &#124;`The name` *이름* `does not exist in the current context` &#124; *기타 다양 한 메시지*
+ `The value of this variable cannot be changed` &#124; `The name` *이름* `does not exist in the current context` &#124; *다른 여러 메시지*
 
  이 메시지 상자는 디버거 창(자동, 조사식 또는 지역 창)이나 간략한 조사식 대화 상자에서 변수의 내용을 잘못된 값으로 변경하려고 할 때 나타납니다. 예를 들어 정수 변수의 값을 문자열로 설정하려고 하면 이 메시지 상자가 나타납니다.
 
 ## <a name="solution"></a>솔루션
  디버거 창이나 간략한 조사식 대화 상자에 입력한 값이 설정하려는 변수에 적합한 값인지 확인하십시오.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [디버거의 식](../debugger/expressions-in-the-debugger.md)

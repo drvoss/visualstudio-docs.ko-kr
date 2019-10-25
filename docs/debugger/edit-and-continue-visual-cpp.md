@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0ebe31267ee666250fbaeda73f1678051f1d4727
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: c2d92477e37b4918e0601bf163e07f5a8492136c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72435848"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737907"
 ---
-# <a name="edit-and-continue-c"></a>편집 하며 계속 하기C++()
+# <a name="edit-and-continue-c"></a>편집하며 계속하기(C++)
 프로젝트에서 C++ 편집 하며 계속 하기를 사용할 수 있습니다. 편집 하며 계속 하기의 제한 사항에 대 한 자세한 내용은 [지원 되는 코드 변경 내용 (C++)](../debugger/supported-code-changes-cpp.md) 을 참조 하세요.
 
 Visual studio 2015 업데이트 3 개선 사항에 대 한 자세한 내용은 [ C++ visual studio 2015 업데이트 3에서 편집 하며 계속 하기](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/)를 참조 하세요.
@@ -79,5 +79,5 @@ Visual studio 2015 업데이트 3 개선 사항에 대 한 자세한 내용은 [
 
  이러한 경우 디버거는 변경 내용을 적용할 수 있을 때까지 원본 코드를 계속 실행합니다. 부실 코드는 별도의 소스 창에 `enc25.tmp`같은 제목을 사용하여 임시 소스 파일 창으로 표시됩니다. 편집된 소스는 원본 소스 창에 계속 표시됩니다. 부실 코드를 편집하려고 하면 경고 메시지가 나타납니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 - [지원되는 코드 변경(C++)](../debugger/supported-code-changes-cpp.md)

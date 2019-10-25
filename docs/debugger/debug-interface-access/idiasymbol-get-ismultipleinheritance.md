@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isMultipleInheritance | Microsoft Docs
+title: 'IDiaSymbol:: get_isMultipleInheritance | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a353f9fc3605d1f2d26248b3ce907fb76b947c68
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 4eb6e1509a46c4e584e98403439188581df97c10
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836618"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740175"
 ---
-# <a name="idiasymbolgetismultipleinheritance"></a>IDiaSymbol::get_isMultipleInheritance
-지정 여부는 `this` 다중 상속을 사용 하 여 데이터 멤버를 가리킵니다.
+# <a name="idiasymbolget_ismultipleinheritance"></a>IDiaSymbol::get_isMultipleInheritance
+@No__t_0 포인터가 여러 상속이 있는 데이터 멤버를 가리키는지 여부를 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -30,10 +30,10 @@ HRESULT get_isMultipleInheritance(
 #### <a name="parameters"></a>매개 변수
  `pRetVal`
 
-[out] 에 대 한 포인터를 `BOOL` 지정 하는 여부를 `this` 다중 상속을 사용 하 여 데이터 멤버를 가리킵니다.
+제한이 @No__t_1 포인터가 여러 상속이 있는 데이터 멤버를 가리키는지 여부를 지정 하는 `BOOL`에 대 한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 `S_FALSE` 또는 오류 코드를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

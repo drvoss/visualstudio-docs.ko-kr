@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - Settings page in Project Designer
 - Project Designer, Settings page
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7422b87d0f812de2d99d59c2932e9aa2b9e6315
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 11f6f787d3799813aa526395a7137fd68e5c573d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62989953"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645260"
 ---
 # <a name="settings-page-project-designer"></a>설정 페이지, 프로젝트 디자이너
 
@@ -57,7 +57,7 @@ Visual C# 프로젝트의 경우 액세스 한정자는 **Internal** 또는 **Pu
 
 Visual Basic 프로젝트의 경우 액세스 한정자는 **Friend** 또는 **Public**일 수 있습니다.
 
-기본적으로 설정은 C#에서는 **Internal**이고 Visual Basic에서는 **Friend**입니다. Visual Studio에서 도우미 클래스를 **Internal** 또는 **Friend**로 생성하는 경우 실행 가능한(*.exe*) 애플리케이션은 클래스 라이브러리(*.dll* 파일)에 추가한 리소스 및 설정에 액세스할 수 없습니다. 클래스 라이브러리에서 리소스 및 설정을 공유해야 하는 경우 액세스 한정자를 **Public**으로 설정합니다.
+기본적으로 설정은 C#에서는 **Internal**이고 Visual Basic에서는 **Friend**입니다. Visual Studio에서 도우미 클래스를 **Internal** 또는 **Friend**로 생성하는 경우 실행 가능한( *.exe*) 애플리케이션은 클래스 라이브러리( *.dll* 파일)에 추가한 리소스 및 설정에 액세스할 수 없습니다. 클래스 라이브러리에서 리소스 및 설정을 공유해야 하는 경우 액세스 한정자를 **Public**으로 설정합니다.
 
 설정 도우미 클래스에 대한 자세한 내용은 [애플리케이션 설정 관리](../managing-application-settings-dotnet.md)를 참조하세요.
 

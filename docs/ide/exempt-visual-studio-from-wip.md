@@ -2,21 +2,21 @@
 title: WIP(Windows Information Protection)에서 제외
 ms.date: 06/01/2018
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 714d85ea41674563922903f5bf38db04ffc2fbce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ab08ea1f3a4c66c026de781f2d39a0bc9d08af96
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978125"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650871"
 ---
 # <a name="configure-visual-studio-as-a-wip-exempt-app"></a>WIP 제외 앱으로 Visual Studio 구성
 
-[WIP(Windows Information Protection)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)는 기업의 통제 범위를 벗어나는 이메일, 소셜 미디어 및 공용 클라우드와 같은 앱을 통해 엔터프라이즈 데이터가 누출되지 않도록 보호합니다. WIP는 환경이나 다른 앱을 변경할 필요 없이 기업 소유 디바이스와 개인 디바이스에서 실수로 데이터가 누출되지 않도록 보호할 수 있도록 합니다.
+[WIP(Windows Information Protection)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)는 기업의 통제 범위를 벗어나는 이메일, 소셜 미디어 및 퍼블릭 클라우드와 같은 앱을 통해 엔터프라이즈 데이터가 누출되지 않도록 보호합니다. WIP는 환경이나 다른 앱을 변경할 필요 없이 기업 소유 디바이스와 개인 디바이스에서 실수로 데이터가 누출되지 않도록 보호할 수 있도록 합니다.
 
 WIP용으로 *확인된* 앱은 엔터프라이즈 데이터가 보호되지 않은 네트워크 위치로 이동하는 것을 방지하고 개인 데이터를 암호화하지 못하게 해야 합니다. Visual Studio는 확인된 앱이 아니므로 제외하지 않는 한 WIP 지원 환경에서 작동하지 않습니다. WIP 지원 머신에서 Visual Studio가 작동하도록 하려면 이 문서의 단계를 수행합니다.
 

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugFields::Next | Microsoft Docs
+title: 'IEnumDebugFields:: Next | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,15 +15,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ee2cc5273b5ec47f99916a308312f6d26c718033
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 216ce9d49ba9de33307ad692787d6e6d36ee15c3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350433"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72727655"
 ---
 # <a name="ienumdebugfieldsnext"></a>IEnumDebugFields::Next
-이 메서드는 열거형에서 다음 요소 집합을 반환합니다.
+이 메서드는 열거형에서 다음 요소 집합을 반환 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -45,17 +45,17 @@ int Next(
 
 ## <a name="parameters"></a>매개 변수
 `celt`\
-[in] 검색할 요소의 수입니다. 또한 최대 크기를 지정 된 `rgelt` 배열입니다.
+진행 검색할 요소의 수입니다. 또한 `rgelt` 배열의 최대 크기를 지정 합니다.
 
 `rgelt`\
-[out에서] 배열을 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 채울 요소입니다.
+[in, out] 채워질 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 요소의 배열입니다.
 
 `pceltFetched`\
-[out] 에 실제로 반환 된 요소의 수를 반환 합니다. `rgelt`합니다.
+제한이 @No__t_0에서 실제로 반환 된 요소의 수를 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 요소의 요청 된 수보다 적은; 반환 될 수 있으면이 고, 그렇지 오류 코드를 반환 합니다.
+ 성공하면 `S_OK`를 반환합니다. 요청 된 요소 수 보다 적으면 반환 되는 `S_FALSE`을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

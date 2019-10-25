@@ -2,17 +2,17 @@
 title: 코드 검사 분석 사용자 지정
 ms.date: 08/21/2019
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 517f3f5911df6c7de1f59232a4e836bcdc84c448
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+author: jillre
+ms.openlocfilehash: 7392397748d26224a0fba0d5510fccb6655d7642
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342364"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665071"
 ---
 # <a name="customize-code-coverage-analysis"></a>코드 검사 분석 사용자 지정
 
@@ -112,7 +112,7 @@ ms.locfileid: "71342364"
 | PublicKeyToken | 퍼블릭 키 토큰으로 서명된 어셈블리를 찾습니다. |
 | 원본 | 요소가 정의된 소스 파일의 경로 이름으로 요소를 찾습니다. |
 | 특성 | 지정된 특성이 있는 요소를 찾습니다. 특성의 전체 이름을 지정합니다(예: `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`).<br/><br/><xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute> 특성을 제외하면 `async`, `await`, `yield return` 및 자동 구현 속성과 같은 언어 기능을 사용하는 코드가 코드 검사 분석에서 제외됩니다. 실제로 생성된 코드를 제외하려면 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 특성만 제외합니다. |
-| 함수 | 매개 변수 목록을 포함하여 정규화된 이름으로 프로시저, 함수 또는 메서드를 찾습니다. [정규식](#regular-expressions)을 사용하여 이름의 일부를 찾을 수도 있습니다.<br/><br/>예:<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);`(C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)`(C++) |
+| 기능 | 매개 변수 목록을 포함하여 정규화된 이름으로 프로시저, 함수 또는 메서드를 찾습니다. [정규식](#regular-expressions)을 사용하여 이름의 일부를 찾을 수도 있습니다.<br/><br/>예:<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);`(C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)`(C++) |
 
 ### <a name="regular-expressions"></a>정규식
 

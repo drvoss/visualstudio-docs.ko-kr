@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_optimizedcodedebuginfo | Microsoft Docs'
+title: 'IDiaSymbol:: get_optimizedCodeDebugInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27e2edec7964e2105cd411321a6e7644e7835097
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 590603e0fd44d8ee6da84790a98cfd8ef8be0b98
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64796449"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739552"
 ---
-# <a name="idiasymbolgetoptimizedcodedebuginfo"></a>IDiaSymbol::get_optimizedCodeDebugInfo
-함수에 최적화 된 코드에 대 한 관련 된 디버그 정보 포함 되는지 여부를 나타내는 플래그를 검색 합니다.
+# <a name="idiasymbolget_optimizedcodedebuginfo"></a>IDiaSymbol::get_optimizedCodeDebugInfo
+최적화 된 코드에 관련 된 디버그 정보가 함수에 포함 되어 있는지 여부를 나타내는 플래그를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,19 +33,19 @@ HRESULT get_optimizedCodeDebugInfo(
 #### <a name="parameters"></a>매개 변수
  `pFlag`
 
-[out] 반환 `TRUE` 최적화 된 함수 또는 레이블 디버깅 정보를 포함 하는 경우는 그렇지 않으면 반환 `FALSE`합니다.
+제한이 최적화 된 함수 또는 레이블에 디버깅 정보가 포함 된 경우 `TRUE`를 반환 합니다. 그렇지 않으면 `FALSE`을 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 `S_FALSE` 또는 오류 코드를 반환 합니다.
 
 > [!NOTE]
-> 반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.
+> @No__t_0의 반환 값은 해당 기호에 대해 속성을 사용할 수 없음을 의미 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|요구 사항|Description|
+|요구 사항|설명|
 |-----------------|-----------------|
 |헤더:|dia2.h|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

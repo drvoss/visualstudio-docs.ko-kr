@@ -12,15 +12,15 @@ helpviewer_keywords:
 - load test results, analyzing threshold violations
 - thresholds in load tests
 ms.assetid: 969ed346-cf2e-4d48-82b3-edb3e075e1c0
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 011b010eaad5def8943fd18a84da9fefdb01eff5
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 7ffff5818c5d3c7085ef3bebcc29c31a363a09b9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918628"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665336"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>부하 테스트 분석기를 사용하여 부하 테스트에서 임계값 규칙 위반 분석
 
@@ -34,9 +34,9 @@ ms.locfileid: "68918628"
 
 임계값 위반 테이블에는 처음 1,000개의 위반이 표시됩니다. 이 테이블에는 다음과 같은 열이 있습니다.
 
-|열|설명|기본적으로 표시되는지 여부|
+|Column|설명|기본적으로 표시되는지 여부|
 |-|-|-|
-|시간|부하 테스트 도중 위반이 발생한 시간입니다.|예|
+|Time|부하 테스트 도중 위반이 발생한 시간입니다.|예|
 |컴퓨터|테스트 도중 위반이 발생한 컴퓨터의 이름입니다. **참고:**  Rig에서 부하 테스트를 실행하는 경우 이 정보가 중요합니다.|예|
 |범주|위반이 발생한 성능 카운터 범주입니다.|예|
 |카운터|위반이 발생한 성능 카운터 이름입니다.|예|

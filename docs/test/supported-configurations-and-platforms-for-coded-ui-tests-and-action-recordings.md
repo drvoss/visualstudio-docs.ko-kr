@@ -4,17 +4,17 @@ ms.date: 10/04/2015
 ms.topic: reference
 helpviewer_keywords:
 - coded UI tests
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: fd44fdc7e365bd07f25318740fb2dcc04fe0ea9d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+author: jillre
+ms.openlocfilehash: d619efa8e602b84f120821ce9ee718a9077809c3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926450"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659991"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>코딩된 UI 테스트 및 작업 기록에 지원되는 구성 및 플랫폼
 
@@ -31,7 +31,7 @@ ms.locfileid: "68926450"
 
 ## <a name="supported-configurations"></a>지원되는 구성
 
-| 구성 | 지원함 |
+| Configuration | 지원함 |
 |-| - |
 | 운영 체제 | [!INCLUDE[win7](../debugger/includes/win7_md.md)]<br /><br /> [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]<br /><br /> [!INCLUDE[win8](../debugger/includes/win8_md.md)]<br /><br /> Windows 10 |
 | 32비트/64비트 지원 | 32비트 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 를 실행하는 32비트 Windows에서 32비트 애플리케이션을 테스트할 수 있습니다.<br /><br /> 32비트 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 를 실행하는 64비트 Windows에서 UI 동기화 기능이 있는 32비트 WOW 애플리케이션을 테스트할 수 있습니다.<br /><br /> 32비트 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 를 실행하는 64비트 Windows에서 UI 동기화 기능이 없는 64비트 Windows Forms 및 WPF 애플리케이션을 테스트할 수 있습니다. |

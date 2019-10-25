@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28757580b7f45e3d63cba1782f17283ad01f26c6
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 318ab9263b530ac283d210f59aa8ca29733c6e8d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211064"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738062"
 ---
 # <a name="debugging-user-interface-reference"></a>사용자 인터페이스 참조 디버깅
 애플리케이션을 디버깅할 때 나타날 수 있는 대화 상자는 다음과 같습니다.
@@ -42,7 +42,7 @@ ms.locfileid: "71211064"
 
 - [디버깅 오류 및 경고 대화 상자](../debugger/debugging-errors-and-warning-dialog-boxes.md)
 
-## <a name="see-also"></a>관련 항목
+## <a name="see-also"></a>참조
 - [Visual Studio의 디버깅](../debugger/index.yml)
 - [디버거 소개](../debugger/debugger-feature-tour.md)
 - [명령 창](../ide/reference/command-window.md)

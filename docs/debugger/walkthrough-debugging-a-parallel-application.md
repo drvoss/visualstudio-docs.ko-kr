@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dcc63eef048dd1e4ae205214ac62f8aa04d8a824
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: b2213da69561e8868c158a3b2cbcaa8efc6adfaf
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252513"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728591"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>연습: Visual Studio에서 병렬 응용 프로그램 디버깅 (C#, Visual Basic, C++)
 
@@ -45,7 +45,7 @@ ms.locfileid: "71252513"
 
 - 창에서 그룹화, 확대/축소 및 기타 관련 기능을 통한 크기 조정을 처리하는 방법
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>Prerequisites
  이 연습에서는 최신 버전의 Visual Studio에서 기본적으로 사용 하도록 설정 되어 **내 코드만** 를 사용할 수 있다고 가정 합니다. **도구** 메뉴에서 **옵션**을 클릭하고, **디버깅** 노드를 확장하고, **일반**을 선택한 다음, **내 코드만 사용(관리 전용)** 을 선택합니다. 이 기능을 설정하지 않아도 연습을 사용할 수 있지만 결과가 그림과 다를 수 있습니다.
 
 ## <a name="c-sample"></a>C# 샘플
@@ -119,7 +119,7 @@ ms.locfileid: "71252513"
 
      주 스레드의 호출 스택이 한 상자에 표시되고 다른 4개의 스레드에 대한 호출 스택이 다른 상자에서 그룹화됩니다. 4개의 스레드는 해당 스택 프레임이 동일한 메서드 컨텍스트를 공유 즉, 동일한 메서드인 `A`, `B` 및 `C`에 있기 때문에 그룹화됩니다. 동일한 상자를 공유 하는 스레드의 이름과 스레드 Id를 보려면 헤더 (**4 개 스레드**)를 사용 하 여 상자를 마우스로 가리킵니다. 현재 스레드는 굵은 글꼴로 표시 됩니다.
 
-     ![스레드 id 및 이름을 표시 하는 도구 설명](../debugger/media/pdb_walkthrough_1a.png "PDB_Walkthrough_1A")
+     ![스레드 Id 및 이름을 표시 하는 도구 설명](../debugger/media/pdb_walkthrough_1a.png "PDB_Walkthrough_1A")
 
      노란색 화살표는 현재 스레드의 활성 스택 프레임을 나타냅니다.
 
@@ -199,7 +199,7 @@ ms.locfileid: "71252513"
 
      **부감 보기**도 **병렬 스택** 창에서 큰 다이어그램을 사용할 때 도움이 됩니다. 기본적으로 Bird 's **눈동자 보기** 는 on입니다. 그러나 다음 그림과 같이 창의 오른쪽 아래에 있는 스크롤 막대 사이의 단추를 클릭 하 여이를 토글할 수 있습니다.
 
-     ![병렬 스택 창의 Bird 뷰&#45;](../debugger/media/pdb_walkthrough_5.png "PDB_Walkthrough_5")
+     ![&#45;병렬 스택 창의 Bird 뷰](../debugger/media/pdb_walkthrough_5.png "PDB_Walkthrough_5")
 
      Bird 's 눈동자 보기에서 사각형을 이동 하 여 다이어그램 주위에서 빠르게 이동할 수 있습니다.
 
@@ -244,7 +244,7 @@ ms.locfileid: "71252513"
 
      ![작업 창의 대기 중인 작업 두 개](../debugger/media/pdb_walkthrough_7.png "PDB_Walkthrough_7")
 
-     작업 4는 작업 2에 할당된 스레드가 소유하는 모니터를 기다리고 있습니다. 머리글 행을 마우스 오른쪽 단추로 클릭 하 고 **열** > **스레드 할당** 을 선택 하 여 작업 2에 대 한 스레드 할당 값을 확인 합니다.
+     작업 4는 작업 2에 할당된 스레드가 소유하는 모니터를 기다리고 있습니다. 머리글 행을 마우스 오른쪽 단추로 클릭 하 고 **열**  > **스레드 할당** 을 선택 하 여 작업 2에 대 한 스레드 할당 값을 확인 합니다.
 
      ![작업 창의 대기 작업 및 도구 설명](../debugger/media/pdb_walkthrough_7a.png "PDB_Walkthrough_7A")
 
@@ -311,7 +311,7 @@ ms.locfileid: "71252513"
 ## <a name="summary"></a>요약
  이 연습에서는 **병렬 작업** 및 **병렬 스택** 디버거 창에 대해 설명했습니다. 다중 스레드 코드를 사용하는 실제 프로젝트에서 이러한 창을 사용하십시오. C++, C# 또는 Visual Basic으로 작성된 병렬 코드를 검사할 수 있습니다.
 
-## <a name="see-also"></a>관련 항목
+## <a name="see-also"></a>참조
 - [다중 스레드 응용 프로그램 디버깅](../debugger/walkthrough-debugging-a-parallel-application.md)
 - [디버거 소개](../debugger/debugger-feature-tour.md)
 - [관리 코드 디버그](../debugger/debugging-managed-code.md)

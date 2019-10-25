@@ -1,5 +1,5 @@
 ---
-title: 'Idialinenumber:: Get_compilandid | Microsoft Docs'
+title: 'IDiaLineNumber:: get_compilandId | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9874dec57c873164ec1875f31fd15c817781bb7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9ab4776029f13a68746a6b4d6ca0343450f477a9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839929"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743214"
 ---
-# <a name="idialinenumbergetcompilandid"></a>IDiaLineNumber::get_compilandId
-이 줄을 제공한 컴파일 대상에 대 한 고유 식별자를 검색 합니다.
+# <a name="idialinenumberget_compilandid"></a>IDiaLineNumber::get_compilandId
+이 줄을 제공한 compiland의 고유 식별자를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,10 +33,10 @@ HRESULT get_compilandId ( 
 #### <a name="parameters"></a>매개 변수
  `pRetVal`
 
-[out] 반환 `DWORD` 이 줄을 제공한 컴파일 대상에 대 한 고유 식별자를 포함 하는 합니다.
+제한이 이 줄을 제공한 compiland의 고유 식별자를 포함 하는 `DWORD`를 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.
+ 성공하면 `S_OK`를 반환합니다. 이 속성이 지원 되지 않는 경우 `S_FALSE`를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

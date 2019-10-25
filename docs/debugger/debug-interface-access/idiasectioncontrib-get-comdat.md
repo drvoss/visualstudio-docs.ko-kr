@@ -1,5 +1,5 @@
 ---
-title: 'Idiasectioncontrib:: Get_comdat | Microsoft Docs'
+title: 'IDiaSectionContrib:: get_comdat | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49502c0d693c7a309da9756f73c34df361b7d7bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef38d5c4afcb065f7a095501e2bf5d95ee493789
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832528"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742721"
 ---
-# <a name="idiasectioncontribgetcomdat"></a>IDiaSectionContrib::get_comdat
-섹션 COMDAT 레코드 인지 여부를 나타내는 플래그를 검색 합니다.
+# <a name="idiasectioncontribget_comdat"></a>IDiaSectionContrib::get_comdat
+섹션이 COMDAT 레코드 인지 여부를 나타내는 플래그를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,13 +33,13 @@ HRESULT get_comdat ( 
 #### <a name="parameters"></a>매개 변수
  `pRetVal`
 
-[out] 반환 `TRUE` 섹션을 COMDAT 레코드가 고, 그렇지 반환 `FALSE`합니다.
+제한이 섹션이 COMDAT 레코드인 경우 `TRUE`를 반환 합니다. 그렇지 않으면 `FALSE`을 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공하면 `S_OK`를 반환합니다. 반환 `S_FALSE` 경우이 속성이 지원 되지 않습니다. 그러지 않으면 오류 코드가 반환됩니다.
+ 성공하면 `S_OK`를 반환합니다. 이 속성이 지원 되지 않는 경우 `S_FALSE`를 반환 합니다. 그러지 않으면 오류 코드가 반환됩니다.
 
-## <a name="remarks"></a>설명
- COMDAT 레코드에는 패키지 함수 링커에 보이도록 하는 개체 파일 형식 COFF (공용) 레코드가입니다.
+## <a name="remarks"></a>주의
+ COMDAT 레코드는 패키지 된 함수가 링커에 표시 되도록 하는 COFF (Common Object File Format) 레코드입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

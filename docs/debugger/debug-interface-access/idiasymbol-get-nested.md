@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_nested | Microsoft Docs'
+title: 'IDiaSymbol:: get_nested | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 864a57b7adb8c77c342367ad5652fb2d839861de
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 16bbc876f3fcafea0c542daec02dbc8a108f203a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64796096"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739777"
 ---
-# <a name="idiasymbolgetnested"></a>IDiaSymbol::get_nested
-사용자 정의 데이터 형식에 중첩 되어 있는지 여부를 지정 하는 플래그를 검색 합니다.
+# <a name="idiasymbolget_nested"></a>IDiaSymbol::get_nested
+사용자 정의 데이터 형식이 중첩 되어 있는지 여부를 지정 하는 플래그를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,13 +33,13 @@ HRESULT get_nested ( 
 #### <a name="parameters"></a>매개 변수
  `pRetVal`
 
-[out] 반환 `TRUE` 그렇지 않으면 반환 사용자 정의 데이터 형식에 중첩 되어; 경우 `FALSE`합니다.
+제한이 사용자 정의 데이터 형식이 중첩 된 경우 `TRUE` 반환 합니다. 그렇지 않으면 `FALSE`을 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 `S_FALSE` 또는 오류 코드를 반환 합니다.
 
 > [!NOTE]
-> 반환 값이 `S_FALSE` 속성 기호에 사용할 수 없다는 것을 의미 합니다.
+> @No__t_0의 반환 값은 해당 속성을 기호에 사용할 수 없음을 의미 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

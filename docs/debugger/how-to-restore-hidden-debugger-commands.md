@@ -1,5 +1,5 @@
 ---
-title: '방법: 숨겨진된 디버거 명령 복원 | Microsoft Docs'
+title: '방법: 숨겨진 디버거 명령 복원 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7766f83eef6205ce445ed892ffaf5861a0dcabbb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a45791843abe3051bacb9655c773ac9dfc6b9045
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387523"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732907"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>방법: 숨겨진 디버거 명령 복원
 Visual Studio를 설치할 때 주 프로그래밍 언어의 기본 IDE 설정 집합을 선택하는 단계가 있습니다. 일부 언어의 기본 IDE 설정에서는 특정 디버거 명령이 표시되지 않을 수 있습니다.
@@ -72,6 +72,6 @@ Visual Studio를 설치할 때 주 프로그래밍 언어의 기본 IDE 설정 �
 
 9. **닫기**를 클릭합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [디버거 보안](../debugger/debugger-security.md)
 - [디버거 소개](../debugger/debugger-feature-tour.md)

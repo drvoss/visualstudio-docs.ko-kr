@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_virtualbasedispindex | Microsoft Docs'
+title: 'IDiaSymbol:: get_virtualBaseDispIndex | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 435957fed1d6805adb8e1c982368d9b16ca76885
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b42c735c110208d563f908baef90a3bd0699fbe8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64796503"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738871"
 ---
-# <a name="idiasymbolgetvirtualbasedispindex"></a>IDiaSymbol::get_virtualBaseDispIndex
-가상 기본 위치 변경 테이블에 있는 기호의 인덱스를 가져옵니다.
+# <a name="idiasymbolget_virtualbasedispindex"></a>IDiaSymbol::get_virtualBaseDispIndex
+가상 기본 치환 테이블에서 기호의 인덱스를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,13 +33,13 @@ HRESULT get_virtualBaseDispIndex (
 #### <a name="parameters"></a>매개 변수
  `pRetVal`
 
-[out] 가상 기본 위치 변경 테이블에 인덱스를 반환합니다.
+제한이 가상 기본 치환 테이블에 인덱스를 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 `S_FALSE` 또는 오류 코드를 반환 합니다.
 
 > [!NOTE]
-> 반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.
+> @No__t_0의 반환 값은 해당 기호에 대해 속성을 사용할 수 없음을 의미 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

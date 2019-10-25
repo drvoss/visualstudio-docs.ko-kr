@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Visual Studio, unit tests
 - unit tests, verifying code with
 - testing code, automated tests
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 5682d752ba2c1430d8ab708e3dadda754a1ba757
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+author: jillre
+ms.openlocfilehash: fd6d6dca2680dcfcaa42912333b080c428ba78d2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461392"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659857"
 ---
 # <a name="unit-test-your-code"></a>코드 단위 테스트
 

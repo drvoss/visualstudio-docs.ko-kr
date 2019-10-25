@@ -5,42 +5,42 @@ ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, adding custom commands
 - dependency diagrams, adding custom gestures
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea106d98dbd18f224e7f2a9d95734eff591dfc2b
-ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.openlocfilehash: d54936c61606b67c298992cd003723327042eb0a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65476650"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747661"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>종속성 다이어그램에 명령 및 제스처 추가
 
-마우스 오른쪽 단추 클릭 메뉴 명령을 정의 하 고 처리기 Visual Studio에서 종속성 다이어그램의 제스처 수 있습니다. 이러한 확장을 다른 Visual Studio 사용자에게 배포할 수 있는 VSIX(Visual Studio Integration Extension)로 패키지할 수 있습니다.
+Visual Studio에서 종속성 다이어그램에 대 한 마우스 오른쪽 단추 클릭 메뉴 명령 및 제스처 처리기를 정의할 수 있습니다. 이러한 확장을 다른 Visual Studio 사용자에게 배포할 수 있는 VSIX(Visual Studio Integration Extension)로 패키지할 수 있습니다.
 
-필요한 경우 동일한 Visual Studio 프로젝트에서 여러 개의 명령 및 제스처 처리기를 정의할 수 있습니다. 이러한 여러 프로젝트를 하나의 VSIX에 결합할 수도 있습니다. 예를 들어 레이어 명령 및 도메인 특정 언어를 포함 하는 단일 VSIX를 정의할 수 있습니다.
+필요한 경우 동일한 Visual Studio 프로젝트에서 여러 개의 명령 및 제스처 처리기를 정의할 수 있습니다. 이러한 여러 프로젝트를 하나의 VSIX에 결합할 수도 있습니다. 예를 들어 계층 명령과 도메인별 언어를 포함 하는 단일 VSIX를 정의할 수 있습니다.
 
 > [!NOTE]
-> 또한 아키텍처 유효성 검사에는 사용자의 소스 코드는 종속성 다이어그램을 사용 하 여 비교를 사용자 지정할 수 있습니다. 별도의 Visual Studio 프로젝트에서 아키텍처 유효성 검사를 정의해야 합니다. 동일한 VSIX에 다른 확장으로 추가할 수 있습니다. 자세한 내용은 [종속성 다이어그램에 사용자 지정 아키텍처 유효성 검사 추가](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)합니다.
+> 사용자의 소스 코드를 종속성 다이어그램과 비교 하는 아키텍처 유효성 검사를 사용자 지정할 수도 있습니다. 별도의 Visual Studio 프로젝트에서 아키텍처 유효성 검사를 정의해야 합니다. 동일한 VSIX에 다른 확장으로 추가할 수 있습니다. 자세한 내용은 [종속성 다이어그램에 사용자 지정 아키텍처 유효성 검사 추가](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)를 참조 하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-참조 [요구 사항](../modeling/extend-layer-diagrams.md#requirements)합니다.
+[요구 사항](../modeling/extend-layer-diagrams.md#requirements)을 참조 하세요.
 
 ## <a name="define-a-command-or-gesture-in-a-new-vsix"></a>새 VSIX에서 명령 또는 제스처 정의
 
 확장을 만드는 가장 빠른 방법은 프로젝트 템플릿을 사용하는 것입니다. 이 방법에서는 코드 및 VSIX 매니페스트를 동일한 프로젝트에 배치합니다.
 
-1. 새 **레이어 디자이너 명령 확장** 하거나 **레이어 디자이너 제스처 확장** 프로젝트입니다.
+1. 새 **레이어 디자이너 명령 확장** 또는 **레이어 디자이너 제스처 확장** 프로젝트를 만듭니다.
 
    템플릿에서 작은 작업 예제가 포함된 프로젝트를 만듭니다.
 
-2. 확장을 테스트 하려면 키를 누릅니다 **Ctrl**+**F5** 하거나 **F5**합니다.
+2. 확장을 테스트 하려면 **ctrl** +**f5** 또는 **f5**키를 누릅니다.
 
-    Visual Studio의 실험적 인스턴스가 시작 됩니다. 이 경우 종속성 다이어그램을 만듭니다. 이 다이어그램에서 명령 또는 제스처 확장이 작동해야 합니다.
+    Visual Studio의 실험적 인스턴스가 시작 됩니다. 이 인스턴스에서 종속성 다이어그램을 만듭니다. 이 다이어그램에서 명령 또는 제스처 확장이 작동해야 합니다.
 
 3. 실험적 인스턴스를 닫고 샘플 코드를 수정합니다.
 
@@ -52,13 +52,13 @@ ms.locfileid: "65476650"
 
 ::: moniker range="vs-2017"
 
-5. Visual Studio 또는 다른 컴퓨터의 기본 인스턴스에서 확장을 설치 하려면 합니다 *.vsix* 파일을 *bin* 디렉터리. 설치할 컴퓨터로 파일을 복사하고 파일을 두 번 클릭합니다. 파일을 제거 하려면 선택 **확장 및 업데이트** 에 **도구** 메뉴.
+5. Visual Studio의 주 인스턴스 또는 다른 컴퓨터에 확장을 설치 하려면 *bin* 디렉터리에서 *.vsix* 파일을 찾습니다. 설치할 컴퓨터로 파일을 복사하고 파일을 두 번 클릭합니다. 제거 하려면 **도구** 메뉴에서 **확장 및 업데이트** 를 선택 합니다.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-5. Visual Studio 또는 다른 컴퓨터의 기본 인스턴스에서 확장을 설치 하려면 합니다 *.vsix* 파일을 *bin* 디렉터리. 설치할 컴퓨터로 파일을 복사하고 파일을 두 번 클릭합니다. 파일을 제거 하려면 선택 **Manage Extensions** 에 **확장** 메뉴.
+5. Visual Studio의 주 인스턴스 또는 다른 컴퓨터에 확장을 설치 하려면 *bin* 디렉터리에서 *.vsix* 파일을 찾습니다. 설치할 컴퓨터로 파일을 복사하고 파일을 두 번 클릭합니다. 제거 하려면 **확장** 메뉴에서 **확장 관리** 를 선택 합니다.
 
 ::: moniker-end
 
@@ -71,9 +71,9 @@ ms.locfileid: "65476650"
    > [!NOTE]
    > 한 클래스 라이브러리에서 두 개 이상의 명령 또는 제스처 처리기 클래스를 정의할 수 있지만, 별도 클래스 라이브러리에서 레이어 유효성 검사 클래스를 정의해야 합니다.
 
-2. 추가 하거나 솔루션에서 VSIX 프로젝트를 만듭니다. 이라는 파일이 VSIX 프로젝트 **source.extension.vsixmanifest**합니다.
+2. 솔루션에서 VSIX 프로젝트를 추가 하거나 만듭니다. VSIX 프로젝트에는 이름이 **source.extension.vsixmanifest**인 파일이 포함 되어 있습니다.
 
-3. **솔루션 탐색기**VSIX 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 선택 **시작 프로젝트로 설정**합니다.
+3. **솔루션 탐색기**에서 VSIX 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **시작 프로젝트로 설정**을 선택 합니다.
 
 4. **source.extension.vsixmanifest**의 **자산**에서 명령 또는 제스처 처리기 프로젝트를 MEF 구성 요소로 추가합니다.
 
@@ -85,7 +85,7 @@ ms.locfileid: "65476650"
 
     4. 파일을 저장합니다.
 
-5. 명령 또는 제스처 처리기 프로젝트로 돌아가서 다음 프로젝트 참조 추가:
+5. 명령 또는 제스처 처리기 프로젝트로 돌아가서 다음 프로젝트 참조를 추가 합니다.
 
    |**참조**|**수행할 수 있는 기능**|
    |-|-|
@@ -102,11 +102,11 @@ ms.locfileid: "65476650"
 
      [제스처 처리기 정의](#gesture)
 
-7. 에 기능을 테스트 하려면 키를 누릅니다 **Ctrl**+**F5** 하거나 **F5**합니다.
+7. 기능을 테스트 하려면 **ctrl** +**f5** 또는 **f5**키를 누릅니다.
 
-   Visual Studio의 실험적 인스턴스가 열립니다. 이 경우 만들기 또는 종속성 다이어그램을 엽니다.
+   Visual Studio의 실험적 인스턴스가 열립니다. 이 인스턴스에서 종속성 다이어그램을 만들거나 엽니다.
 
-8. VSIX의 Visual Studio 또는 다른 컴퓨터에 주 인스턴스를 설치 하려면 합니다 **.vsix** 파일을 **bin** 의 VSIX 프로젝트 디렉터리. VSIX를 설치할 컴퓨터에 파일을 복사합니다. 파일 탐색기에서 VSIX 파일을 두 번 클릭 합니다.
+8. Visual Studio의 주 인스턴스 또는 다른 컴퓨터에 VSIX를 설치 하려면 VSIX 프로젝트의 **bin** 디렉터리에서 **.vsix** 파일을 찾습니다. VSIX를 설치할 컴퓨터에 파일을 복사합니다. 파일 탐색기에서 VSIX 파일을 두 번 클릭 합니다.
 
 ## <a name="command"></a> 메뉴 명령 정의
 
@@ -214,7 +214,7 @@ namespace MyLayerExtension // Change to your preference.
 
 ## <a name="gesture"></a> 제스처 처리기 정의
 
-제스처 처리기는 사용자가 종속성 다이어그램으로 항목을 끌면 및 사용자가 다이어그램에서 아무 곳 이나 두 번 클릭할 때 응답 합니다.
+제스처 처리기는 사용자가 항목을 종속성 다이어그램으로 끌 때 그리고 사용자가 다이어그램에서 아무 곳 이나 두 번 클릭할 때 응답 합니다.
 
 기존 명령 또는 제스처 처리기 VSIX 프로젝트에 제스처 처리기를 정의하는 코드 파일을 추가할 수 있습니다.
 
@@ -246,7 +246,7 @@ namespace MyLayerExtensions // change to your preference
 
      **OnDragDrop** - 사용자가 다이어그램에 항목을 놓을 때 호출됩니다.
 
-- 각 메서드의 첫 번째 인수는 `IShape`로, 여기서 레이어 요소를 가져올 수 있습니다. 예를 들어:
+- 각 메서드의 첫 번째 인수는 `IShape`로, 여기서 레이어 요소를 가져올 수 있습니다. 예를 들면,
 
     ```csharp
     public void OnDragDrop(IShape target, IDataObject data)
@@ -259,8 +259,8 @@ namespace MyLayerExtensions // change to your preference
     }
     ```
 
-- 일부 형식의 끌어온 항목에 대한 처리기는 이미 정의되었습니다. 예를 들어, 사용자는 종속성 다이어그램으로 솔루션 탐색기에서 항목을 끌어 옵니다. 이러한 형식의 항목에 대한 끌기 처리기는 정의할 수 없습니다. 이 경우 `DragDrop` 메서드가 호출되지 않습니다.
+- 일부 형식의 끌어온 항목에 대한 처리기는 이미 정의되었습니다. 예를 들어 사용자가 솔루션 탐색기에서 종속성 다이어그램으로 항목을 끌어올 수 있습니다. 이러한 형식의 항목에 대한 끌기 처리기는 정의할 수 없습니다. 이 경우 `DragDrop` 메서드가 호출되지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [종속성 다이어그램에 사용자 지정 아키텍처 유효성 검사 추가](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)

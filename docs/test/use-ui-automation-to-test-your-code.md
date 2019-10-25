@@ -11,17 +11,17 @@ f1_keywords:
 helpviewer_keywords:
 - automated tests, testing UI interface
 - coded UI test
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0bda0d52a50ef3f92d8cecc4156922779f2af5e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5a6491a6b9ac9312befbf0c8c6c3fb0f293885ee
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926650"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659869"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>코딩된 UI 테스트를 사용하여 코드 테스트
 
@@ -415,7 +415,7 @@ myWinCheckBox.Checked = true;
 
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A>는 적절한 데이터 형식을 반환하지만 이 반환 값은 <xref:System.Object>로 캐스팅됩니다. 그런 다음 반환 <xref:System.Object>는 적절한 형식으로 캐스팅되어야 합니다.
 
-     예제:
+     예:
 
      `int i = (int)GetProperty(myHtmlList.PropertyNames.ItemCount);`
 
@@ -425,11 +425,11 @@ myWinCheckBox.Checked = true;
 
 - 설정할 컨트롤의 속성을 지정하려면 `PropertyNames` 클래스의 적절한 속성을 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>에 대한 첫 번째 매개 변수로 사용하고 속성 값은 두 번째 매개 변수로 사용합니다
 
-     예제:
+     예:
 
      `SetProperty(myWinCheckBox.PropertyNames.Checked, true);`
 
-## <a name="debug"></a>디버그
+## <a name="debug"></a>Debug
 
 코딩된 UI 테스트 로그를 사용하여 코딩된 UI 테스트를 분석할 수 있습니다. 코딩된 UI 테스트 로그는 코딩된 UI 테스트 실행에 대한 중요한 정보를 필터링하고 기록합니다. 로그 서식을 통해 문제를 신속하게 디버깅할 수 있습니다. 자세한 내용은 [코딩된 UI 테스트 로그를 사용하여 코딩된 UI 테스트 분석](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)을 참조하세요.
 

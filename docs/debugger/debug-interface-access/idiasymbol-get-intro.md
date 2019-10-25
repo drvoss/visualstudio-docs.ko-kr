@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_intro | Microsoft Docs'
+title: 'IDiaSymbol:: get_intro | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 153daa1f43ba4945a5eb32aea82c5d58ff57c5f6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 4680af2d41ef3fa06a89784003c98982a09c2b63
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836802"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740343"
 ---
-# <a name="idiasymbolgetintro"></a>IDiaSymbol::get_intro
-함수를 소개 하는 가상 함수 인지 여부를 지정 하는 플래그를 검색 합니다.
+# <a name="idiasymbolget_intro"></a>IDiaSymbol::get_intro
+함수가 가상 함수를 소개 하는지 여부를 지정 하는 플래그를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,13 +33,13 @@ HRESULT get_intro ( 
 #### <a name="parameters"></a>매개 변수
 `pRetVal`
 
-[out] 반환 `TRUE` 함수는 가상이 소개 하는 경우이 고, 그렇지 반환 `FALSE`합니다.
+제한이 함수가 시작 가상 인 경우 `TRUE`를 반환 합니다. 그렇지 않으면 `FALSE`을 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
-성공 하면 반환 `S_OK`이 고, 그렇지 않으면 반환 `S_FALSE` 또는 오류 코드입니다.
+성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 `S_FALSE` 또는 오류 코드를 반환 합니다.
 
 > [!NOTE]
-> 반환 값이 `S_FALSE` 속성 기호를 사용할 수 없는 것을 의미 합니다.
+> @No__t_0의 반환 값은 해당 기호에 대해 속성을 사용할 수 없음을 의미 합니다.
 
 ## <a name="example"></a>예제
 
@@ -52,7 +52,7 @@ class B : public A {
 }
 ```
 
-둘 다 `A::f1` 하 고 `B::f1` 가상 함수가 있지만 `A::f1` 소개 가상이 아닙니다.
+@No__t_0와 `B::f1`는 모두 가상 함수 이지만 `A::f1` 소개 가상입니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -61,5 +61,5 @@ class B : public A {
 |헤더:|dia2.h|
 |버전:|DIA SDK v7.0|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4086c473270befcf2213f003e516128b45c4227
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e215d4a52965b4e89bc3a01b15da57fc8919437
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563548"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745596"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>데이터 세트 시각화 도우미 대화 상자
 데이터 집합 시각화 도우미를 사용하면 DataSet, DataTable, DataView 또는 DataViewManager 개체의 내용을 볼 수 있습니다. 디버거 변수 창이나 DataTip에서 이러한 개체 중 하나의 값 옆에 나타나는 돋보기 아이콘을 클릭하면 이 시각화 도우미에 액세스할 수 있습니다.
@@ -32,9 +32,9 @@ ms.locfileid: "62563548"
  이 시각화 도우미에서 개체를 변경할 수 있습니다. 변경 내용은 행을 커밋하는 즉시 저장됩니다.
 
 ## <a name="uielement-list"></a>UI 요소 목록
- 테이블 시각화 하려는 데이터 집합 내에서 테이블을 선택 하려면이 드롭다운 목록 상자를 사용 합니다.
+ 테이블이 드롭다운 목록 상자를 사용 하 여 시각화 하려는 데이터 집합 내의 테이블을 선택 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [디버거 보안](../debugger/debugger-security.md)
 - [Create Custom Visualizers of Data](../debugger/create-custom-visualizers-of-data.md)(데이터의 사용자 지정 시각화 도우미 만들기)

@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1380cf2cfd4d1ffe729fdd4a6ce9cfb2ba7d9ab6
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: dd4a481a8d4f283204b99cfef4a07106d3e479cb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72435649"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731285"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC 디버깅 기술
 다음은 MFC 프로그램을 디버깅하는 데 유용한 디버깅 기술입니다.
@@ -480,5 +480,5 @@ MFC 디버그 라이브러리를 사용하여 선택한 모듈을 빌드하면 �
 
    [항목 내용](#BKMK_In_this_topic)
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 [네이티브 코드 디버그](../debugger/debugging-native-code.md)

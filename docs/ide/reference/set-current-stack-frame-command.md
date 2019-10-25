@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Set Current Stack Frame command
 - Debug.SetCurrentStackFrame command
 ms.assetid: 3dcf52c0-6781-4598-bac2-0094dce67c20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24880f997d604d3db11ae19a6220c2789da7648f
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 088fe9871b54e69b015ffdc9dcdaf23de3d98e0e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926082"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747751"
 ---
 # <a name="set-current-stack-frame-command"></a>현재 스택 프레임 설정 명령
 특정 스택 프레임을 설정할 수 있습니다.

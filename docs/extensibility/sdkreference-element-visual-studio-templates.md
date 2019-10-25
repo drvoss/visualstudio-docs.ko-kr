@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da11d9e01802bff8162b2767444c7a1d225200a0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3cf1b3bed942894e20132ecd7b06c1884caa9a93
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338476"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720087"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference 요소(Visual Studio 템플릿)
 항목 템플릿에서 SDK 참조를 사용하도록 지정합니다.
@@ -33,10 +33,10 @@ ms.locfileid: "66338476"
  다음 섹션에서는 특성, 자식 요소 및 부모 요소에 대해 설명합니다.
 
 ### <a name="attributes"></a>특성
- 없음
+ 없음.
 
 ### <a name="child-elements"></a>자식 요소
- 없음
+ 없음.
 
 ### <a name="parent-elements"></a>부모 요소
 
@@ -47,7 +47,7 @@ ms.locfileid: "66338476"
 ## <a name="text-value"></a>텍스트 값
  텍스트 값은 필수입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
  이 텍스트는 항목 템플릿이 인스턴스화될 때 프로젝트에 추가할 SDK 참조를 지정합니다.
 
 ```xml
@@ -60,7 +60,7 @@ ms.locfileid: "66338476"
 ...
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [References 요소(Visual Studio 템플릿)](../extensibility/references-element-visual-studio-templates.md)
 - [Reference 요소(Visual Studio 템플릿)](../extensibility/reference-element-visual-studio-templates.md)
 - [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

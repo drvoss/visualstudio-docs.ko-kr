@@ -14,12 +14,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f2a33a0090be980c221ebfbe7f3116cdfef7b23b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 07c7c9db37a951b689e28e87a02c7f41a667685b
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648980"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807051"
 ---
 # <a name="access-data-in-visual-studio"></a>Visual Studio에서 데이터 액세스
 
@@ -94,7 +94,7 @@ Azure 서비스에 연결 하는 경우 최신 [AZURE SDK 도구](https://azure.
 
 ### <a name="data-providers"></a>데이터 공급자
 
-ADO.NET에서 데이터베이스를 사용할 수 있도록 하려면 사용자 지정 *ADO.NET 데이터 공급자* 가 있어야 합니다. 그렇지 않으면 ODBC 또는 OLE DB 인터페이스를 노출 해야 합니다. Microsoft는 SQL Server 제품 뿐만 아니라 ODBC 및 OLE DB 공급자에 대 한 [ADO.NET 데이터 공급자의 목록을](https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) 제공 합니다.
+ADO.NET에서 데이터베이스를 사용할 수 있도록 하려면 사용자 지정 *ADO.NET 데이터 공급자* 가 있어야 합니다. 그렇지 않으면 ODBC 또는 OLE DB 인터페이스를 노출 해야 합니다. Microsoft는 SQL Server 제품 뿐만 아니라 ODBC 및 OLE DB 공급자에 대 한 [ADO.NET 데이터 공급자의 목록을](/dotnet/framework/data/adonet/ado-net-overview) 제공 합니다.
 
 ### <a name="data-modeling"></a>데이터 모델링
 
@@ -144,9 +144,9 @@ Python 응용 프로그램을 만들기 위해 [Visual Studio에서 python 지�
 
 [ADO.NET](/dotnet/framework/data/adonet/index) &mdash;Describes ADO.NET 아키텍처와 ADO.NET 클래스를 사용 하 여 응용 프로그램 데이터를 관리 하 고 데이터 원본 및 XML과 상호 작용 하는 방법을 보여 줍니다.
 
-[ADO.NET Entity Framework](https://docs.microsoft.com/ef/ef6/) 는 개발자가 관계형 데이터베이스에 대해 직접 프로그래밍 하는 대신 개념적 모델에 대해 프로그래밍할 수 있도록 하는 데이터 응용 프로그램을 만드는 방법을 &mdash;Describes 합니다.
+[ADO.NET Entity Framework](/ef/ef6/) 는 개발자가 관계형 데이터베이스에 대해 직접 프로그래밍 하는 대신 개념적 모델에 대해 프로그래밍할 수 있도록 하는 데이터 응용 프로그램을 만드는 방법을 &mdash;Describes 합니다.
 
-[WCF Data Services 4.5](/dotnet/framework/data/wcf/index) &mdash;Describes [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]를 사용 하 여 웹 또는 [OData (Open Data Protocol](https://www.odata.org/)을 구현 하는 인트라넷에 데이터 서비스를 배포 하는 방법을 설명 합니다.
+[WCF Data Services 4.5](/dotnet/framework/data/wcf/index)&mdash;[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]를 사용 하 여 웹 또는 [OData (Open Data Protocol)](https://www.odata.org/)를 구현 하는 인트라넷에 데이터 서비스를 배포 하는 방법을 설명 합니다.
 
 [Office 솔루션의 데이터](../vsto/data-in-office-solutions.md) &mdash;Contains office 솔루션에서 데이터가 작동 하는 방식을 설명 하는 항목에 대 한 링크를 제공 합니다. 여기에는 스키마 지향 프로그래밍, 데이터 캐싱 및 서버 쪽 데이터 액세스에 대 한 정보가 포함 됩니다.
 

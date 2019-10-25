@@ -22,20 +22,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 406647ae086285df8dfdfc00daf4b62be66e74a2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f684c6c66448fdab2ee7607a81ff7ed769a5e607
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402687"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745815"
 ---
 # <a name="allocation-hook-functions"></a>할당 후크 함수
-할당 후크 함수를 사용 하 여 설치할 [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook), 메모리 할당을 다시 할당 하거나 해제할 때마다 호출 됩니다. 이러한 후크 형식은 여러 다양 한 용도로 사용할 수 있습니다. 처리 하는 방법을 응용 프로그램 메모리 부족 상황 같은 할당 패턴을 검사할 테스트를 사용 하거나 이후 분석을 위해 할당 정보를 기록 합니다.
+[_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook)를 사용 하 여 설치 된 할당 후크 함수는 메모리를 할당, 다시 할당 또는 해제할 때마다 호출 됩니다. 이 유형의 후크는 다양 한 용도로 사용할 수 있습니다. 이를 사용 하 여 응용 프로그램에서 할당 패턴을 검사 하거나 나중에 분석할 수 있도록 로그 할당 정보를 처리 하는 등의 메모리 부족 상황을 처리 하는 방법을 테스트 합니다.
 
 > [!NOTE]
 > [할당 후크 및 C 런타임 메모리 할당](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)을 참조하여 할당 후크 함수에서 C 런타임 라이브러리 함수를 사용하는 방법에 대한 제한 사항에 대해 잘 알아두세요.
 
- 할당 후크 함수에는 다음과 같이 프로토타입이 있어야 합니다.
+ 할당 후크 함수에는 다음 예제와 같은 프로토타입이 있어야 합니다.
 
 ```cpp
 int YourAllocHook(int nAllocType, void *pvData,
@@ -50,9 +50,9 @@ typedef int (__cdecl * _CRT_ALLOC_HOOK)
     (int, void *, size_t, int, long, const unsigned char *, int);
 ```
 
- 런타임 라이브러리가 후크를 호출 하는 경우는 *nAllocType* 인수 나타냅니다 할당 작업 제작 됩니다 (**_HOOK_ALLOC**, **_HOOK_REALLOC**, 또는 **_HOOK_FREE**). 무료 또는 다시 `pvData` 는 해제할 블록의 사용자 문서에 대 한 포인터입니다. 그러나는 할당에 대 한 할당 되지 않은 발생 했기 때문에이 포인터가 null입니다. 나머지 인수는 할당의 크기, 블록 형식 및 파일 이름에 대 한 포인터와 관련 된 다음 요청 번호를 포함 합니다. 사용 가능한 경우 인수 할당이 이루어진 줄 번호를 포함 합니다. 후크 함수는 지정된 모든 분석과 작업을 수행한 다음, 할당 작업을 계속할 수 있음을 나타내는 **TRUE** 또는 작업을 중지해야 함을 나타내는 **FALSE**를 반환해야 합니다. 이 간단한 형식의 후크가 이제까지 할당된 메모리 양을 확인하고, 그 양이 한계를 약간이라도 초과하는 경우에는 **FALSE**를 반환할 수 있습니다. 그러면 사용할 수 있는 메모리가 부족한 경우에만 주로 발생하는 할당 오류가 응용 프로그램에 발생합니다. 좀 더 복잡한 후크는 할당 패턴을 추적하거나 메모리 사용을 분석하거나 특정 상황이 발생하는 때를 보고할 수 있습니다.
+ 런타임 라이브러리가 후크를 호출할 때 *Nalloctype* 인수는 수행할 할당 작업 ( **_HOOK_ALLOC**, **_HOOK_REALLOC**또는 **_HOOK_FREE**)을 나타냅니다. 무료 또는 재할당에서 `pvData`에는 해제할 블록의 사용자 문서에 대 한 포인터가 있습니다. 그러나 할당의 경우에는 할당이 발생 하지 않았기 때문에이 포인터는 null입니다. 나머지 인수에는 해당 할당의 크기, 해당 블록 형식, 관련 된 순차적인 요청 번호 및 파일 이름에 대 한 포인터가 포함 됩니다. 사용 가능한 경우 인수에는 할당이 수행 된 줄 번호도 포함 됩니다. 후크 함수는 지정된 모든 분석과 작업을 수행한 다음, 할당 작업을 계속할 수 있음을 나타내는 **TRUE** 또는 작업을 중지해야 함을 나타내는 **FALSE**를 반환해야 합니다. 이 간단한 형식의 후크가 이제까지 할당된 메모리 양을 확인하고, 그 양이 한계를 약간이라도 초과하는 경우에는 **FALSE**를 반환할 수 있습니다. 그러면 사용할 수 있는 메모리가 부족한 경우에만 주로 발생하는 할당 오류가 애플리케이션에 발생합니다. 좀 더 복잡한 후크는 할당 패턴을 추적하거나 메모리 사용을 분석하거나 특정 상황이 발생하는 때를 보고할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [할당 후크 및 C 런타임 메모리 할당](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)
 - [디버그 후크 함수 작성](../debugger/debug-hook-function-writing.md)

@@ -21,22 +21,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50547507bf37eb22346bcbf3f48585c9cb0b26b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fdec8c8d1b53f87e14700f5c14099cf0d2e6e392
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564784"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745726"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>중단점 선택 대화 상자
-합니다 **중단점 선택** 모호한 입력에서 중단점을 설정 하려고 할 때 대화 상자가 열립니다 합니다 **새 중단점** 대화 상자. 모호한 입력의 일반적인 예로 오버 로드 된 함수 이름.
+중단점 **선택** 대화 상자는 **새 중단점** 대화 상자에서 모호한 입력의 중단점을 설정 하려고 할 때 열립니다. 모호한 입력의 일반적인 예는 오버 로드 된 함수 이름입니다.
 
- **중단점** 설정할 수 있는 기반 모호한 입력에 중단점을 나열 합니다. 하나 이상의 중단점을 선택할 수 있습니다.
+ **중단점** 모호한 입력에 따라 설정할 수 있는 가능한 중단점을 나열 합니다. 하나 이상의 중단점을 선택 하 여 설정할 수 있습니다.
 
- **모든** 에 나열 된 모든 중단점을 선택 합니다 **중단점** 상자입니다.
+ **모두** **중단점** 상자에 나열 된 모든 중단점을 선택 합니다.
 
- **None** 에 나열 된 모든 중단점을 지웁니다 합니다 **중단점** 상자입니다.
+ **없음** **중단점** 상자에 나열 된 모든 중단점을 지웁니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [중단점 사용](../debugger/using-breakpoints.md)

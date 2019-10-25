@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3064f387c0a6233b1cd38c4ed81680ef7991abd4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c92723a1b6abb371b44f1793f9ea5b1f8ad3bca
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901155"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728468"
 ---
 # <a name="visualizer-architecture"></a>시각화 도우미 아키텍처
 디버거 시각화 도우미의 아키텍처는 두 부분으로 구성되어 있습니다.
@@ -67,7 +67,7 @@ ms.locfileid: "62901155"
 
  개체 공급자는 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A> 또는 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A>를 사용할 수 있습니다. 두 가지 API 모두 개체 소스를 대상으로 <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.GetData%2A>를 호출하게 됩니다. <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.GetData%2A?displayProperty=fullName>를 호출하면 시각화 대상 개체의 serialize된 형식을 나타내는 <xref:System.IO.Stream?displayProperty=fullName>이 채워집니다.
 
- <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A?displayProperty=fullName>는 데이터를 다시 개체 양식으로 deserialize합니다. 그런 다음, <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>를 사용하여 만든 UI에 이 개체 양식을 표시할 수 있습니다. <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName>는 사용자가 직접 deserialize해야 하는 원시 `Stream`으로 데이터를 채웁니다. <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A?displayProperty=fullName>는 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName>를 호출하여 serialize된 `Stream`을 가져온 다음, 데이터를 deserialize하는 방식으로 작동합니다. .NET을 통해 개체를 serialize할 수 없고 사용자가 직접 serialize해야 하는 경우에는 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName>를 사용합니다. 이러한 경우 <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.Serialize%2A?displayProperty=fullName> 메서드도 재정의해야 합니다.
+ <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A?displayProperty=fullName>는 데이터를 다시 개체 폼으로 deserialize합니다. 그런 다음 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>를 사용하여 만든 UI에 이 개체 폼을 표시할 수 있습니다. <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName>는 사용자가 직접 deserialize해야 하는 원시 `Stream`으로 데이터를 채웁니다. <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A?displayProperty=fullName>는 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName>를 호출하여 serialize된 `Stream`을 가져온 다음 데이터를 deserialize하는 방식으로 작동합니다. .NET을 통해 개체를 serialize할 수 없고 사용자가 직접 serialize해야 하는 경우에는 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A?displayProperty=fullName>를 사용합니다. 이러한 경우 <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.Serialize%2A?displayProperty=fullName> 메서드도 재정의해야 합니다.
 
  읽기 전용 시각화 도우미를 만드는 경우에는 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetData%2A> 또는 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.GetObject%2A>를 사용한 단방향 통신으로도 충분합니다. 데이터 개체 편집을 지원하는 시각화 도우미를 만드는 경우에는 더 많은 단계를 거쳐야 합니다. 이러한 경우 개체 공급자에서 개체 소스로 데이터 개체를 다시 전달할 수도 있어야 합니다. 다음 표에서는 이러한 용도로 사용되는 개체 공급자 및 개체 소스 API를 보여 줍니다.
 
@@ -85,7 +85,7 @@ ms.locfileid: "62901155"
 |---------------------|-------------------|
 |<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferData%2A><br /><br /> 또는<br /><br /> <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferObject%2A>|<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.TransferData%2A>|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [방법: 시각화 도우미 작성](/visualstudio/debugger/create-custom-visualizers-of-data)
 - [연습: C#에서 시각화 도우미 작성](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
 - [연습: Visual Basic에서 시각화 도우미 작성](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)

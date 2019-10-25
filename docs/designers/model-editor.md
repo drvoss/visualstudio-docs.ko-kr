@@ -6,17 +6,17 @@ f1_keywords:
 - vs.graphics.designer.3dscene
 - vs.graphics.modelviewer
 ms.assetid: 5edf1a30-9307-43c3-9b8b-831217be0104
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13e19cb22740ff5b8dbd42b5cc5f769a211f6f04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13ca91c431f574190a5cddbe17f1b042685056bb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62895588"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635023"
 ---
 # <a name="model-editor"></a>모델 편집기
 
@@ -299,8 +299,8 @@ Visual Studio는 3D 축의 모든 방향을 지원하고 이를 지원하는 모
 |모두 선택|**Ctrl**+**A**|
 |현재 선택 영역을 삭제합니다.|**삭제**|
 |현재 선택을 취소합니다.|**이스케이프**(**Esc**)|
-|확대|**마우스 휠 앞으로**<br /><br /> **Ctrl**+**마우스 휠 앞으로**<br /><br /> **Shift**+**마우스 휠 앞으로**<br /><br /> **Ctrl**+**PageUp**<br /><br /> 더하기 기호(**+**)|
-|축소|**마우스 휠 뒤로**<br /><br /> **Ctrl**+**마우스 휠 뒤로**<br /><br /> **Shift**+**마우스 휠 뒤로**<br /><br /> **Ctrl**+**PageDown**<br /><br /> 빼기 기호(**-**)|
+|확대|**마우스 휠 앞으로**<br /><br /> **Ctrl**+**마우스 휠 앞으로**<br /><br /> **Shift**+**마우스 휠 앞으로**<br /><br /> **Ctrl**+**PageUp**<br /><br /> 더하기 기호( **+** )|
+|축소|**마우스 휠 뒤로**<br /><br /> **Ctrl**+**마우스 휠 뒤로**<br /><br /> **Shift**+**마우스 휠 뒤로**<br /><br /> **Ctrl**+**PageDown**<br /><br /> 빼기 기호( **-** )|
 |카메라를 위로 이동|**PageDown**|
 |카메라를 아래로 이동|**PageUp**|
 |카메라를 왼쪽으로 이동|**마우스 휠 왼쪽**<br /><br /> **Ctrl**+**PageDown**|

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Devenv, /Edit switch
 - /Edit Devenv switch
 ms.assetid: 02b3d6e7-a2b1-4d83-a747-aa8c2fb758b7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f0eb7cab3b1bc764f663cd647811928510281e8
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 37d49dd7d191ad470639debc50fbed23d5066233
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432008"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654480"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
 
@@ -39,7 +39,7 @@ devenv /Edit [File1[ FileN]...]
 
   선택 사항입니다. Visual Studio의 기존 인스턴스에서 열 1개 이상의 추가 파일입니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 파일이 지정되지 않으면 기존 Visual Studio 인스턴스가 포커스를 받습니다. 파일이 지정되지 않고 Visual Studio 인스턴스가 없으면 간소화된 창 레이아웃으로 인스턴스가 만들어집니다.
 
@@ -47,7 +47,7 @@ devenv /Edit [File1[ FileN]...]
 
 Visual Studio의 인스턴스를 둘 이상 연 경우 가장 최근에 열린 인스턴스에서 파일이 열립니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 첫 번째 예제에서는 기존 Visual Studio 인스턴스에서 `MyFile.cs` 파일을 엽니다. Visual Studio 인스턴스가 없으면 파일이 새 인스턴스에서 열립니다. 두 번째 예제는 단 하나의 파일이 아니라 3개 파일을 여는 것을 제외하고는 유사합니다.
 

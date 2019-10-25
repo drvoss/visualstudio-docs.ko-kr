@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3d7303c1212a8042cb51abcfa363d59e41e67cc
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 91df84c92761ae75ce9f26bddefad57c6dc8bc2c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72431755"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738304"
 ---
 # <a name="inspect-data-using-debugger-windows-in-visual-studio"></a>Visual Studio에서 디버거 창을 사용 하 여 데이터 검사
 
@@ -47,6 +47,6 @@ ms.locfileid: "72431755"
 |디스어셈블리|Ctrl+Alt+D|[방법: 디스어셈블리 창 사용](../debugger/how-to-use-the-disassembly-window.md)|
 |레지스터|Ctrl+Alt+G|[방법: 레지스터 창 사용](../debugger/how-to-use-the-registers-window.md)|
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 [디버거 소개](../debugger/debugger-feature-tour.md)

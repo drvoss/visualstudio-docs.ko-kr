@@ -1,5 +1,5 @@
 ---
-title: C 런타임 라이브러리 없이 런타임을 사용 하 여 확인 | Microsoft Docs
+title: C 런타임 라이브러리 없이 런타임 검사 사용 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,15 +23,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2d9d97b9ba8a93864ec9af6ff02df7b20bbb35e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 029aafa634ba0e6837cdc7d4304d0419420dd912
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929646"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728659"
 ---
 # <a name="using-run-time-checks-without-the-c-run-time-library"></a>C 런타임 라이브러리 없이 런타임 검사 사용
-C 런타임 라이브러리 없이 프로그램을 연결 하면 사용 하 여 **/NODEFAULTLIB**, 및 런타임 검사 기능을 사용 하려면 runtmchk.lib에 연결 해야 합니다.
+C 런타임 라이브러리 없이 **/nodefaultlib**를 사용 하 여 프로그램을 연결 하 고 런타임 검사를 사용 하려면 RunTmChk .lib와 연결 해야 합니다.
 
 `_RTC_Initialize`는 런타임 검사를 할 수 있도록 프로그램을 초기화합니다. C 런타임 라이브러리에 링크하지 않은 경우에는 다음과 같이 `_RTC_Initialize`를 호출하기 전에 런타임 오류 검사를 활성화한 상태에서 프로그램이 컴파일되었는지 확인해야 합니다.
 
@@ -63,5 +63,5 @@ extern "C" _RTC_error_fnW __cdecl _CRT_RTC_INITW(
 
 기본 오류 보고 함수를 설정한 후 `_RTC_SetErrorFuncW`를 사용하여 추가 오류 보고 함수를 설정할 수 있습니다. 자세한 내용은 [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
-[방법: 네이티브 런타임 검사 사용](../debugger/how-to-use-native-run-time-checks.md)
+## <a name="see-also"></a>참조
+[방법: 네이티브 런타임 검사 기능 사용](../debugger/how-to-use-native-run-time-checks.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalker::getEnumFrames2 | Microsoft Docs
+title: 'IDiaStackWalker:: getEnumFrames2 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35886ea0456426c30c44d5fd8e90399d4a2143ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f6de78b5553719def2fd7ef9c6adb55e823aac34
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62837942"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741523"
 ---
 # <a name="idiastackwalkergetenumframes2"></a>IDiaStackWalker::getEnumFrames2
-특정 플랫폼 형식에 대 한 스택 프레임 열거자를 검색합니다.
+특정 플랫폼 형식에 대 한 스택 프레임 열거자를 검색 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -36,23 +36,23 @@ ms.locfileid: "62837942"
 #### <a name="parameters"></a>매개 변수
  `cpuid`
 
-[in] 값을 [CV_CPU_TYPE_e 열거형](../../debugger/debug-interface-access/cv-cpu-type-e.md) 플랫폼 유형을 지정 하는 열거형입니다.
+진행 플랫폼 유형을 지정 하는 [CV_CPU_TYPE_e 열거형](../../debugger/debug-interface-access/cv-cpu-type-e.md) 열거형의 값입니다.
 
  `pHelper`
 
-[in] 도우미 [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) 개체입니다.
+진행 도우미 [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) 개체입니다.
 
  `ppEnum`
 
-[out] 반환 된 [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) 목록이 포함 된 개체 [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) 개체입니다.
+제한이 [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) 개체의 목록을 포함 하는 [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) 개체를 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
-## <a name="remarks"></a>설명
- X86만 스택 프레임 목록을 가져오려면 플랫폼을 호출 합니다 [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) 메서드.
+## <a name="remarks"></a>주의
+ X86 플랫폼에 대 한 스택 프레임 목록만 얻으려면 [IDiaStackWalker:: getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) 메서드를 호출 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaStackWalker](../../debugger/debug-interface-access/idiastackwalker.md)
 - [CV_CPU_TYPE_e 열거형](../../debugger/debug-interface-access/cv-cpu-type-e.md)
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

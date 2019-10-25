@@ -8,17 +8,17 @@ helpviewer_keywords:
 - File.NewFile command
 - New File command
 ms.assetid: 767868d6-a525-425b-a43b-2198f636ab6b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7a71a6d313ce12a40cd5c30470f53b1e2a1b69e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 02f6872ef2acaef65bf6ef1b7631bb06c89518ab
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919121"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747870"
 ---
 # <a name="new-file-command"></a>새 파일 명령
 새 파일을 만들고 엽니다. 파일은 기타 파일 폴더 아래에 나타납니다.

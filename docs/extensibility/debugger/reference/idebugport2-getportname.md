@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::GetPortName | Microsoft Docs
+title: 'IDebugPort2:: GetPortName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a2b058466608597656641a013a4dea0c1bc5716f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0a382a77693fc8839721c0cdd139af2dd5208c69
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343758"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72727716"
 ---
 # <a name="idebugport2getportname"></a>IDebugPort2::GetPortName
 포트 이름을 가져옵니다.
@@ -41,10 +41,10 @@ int GetPortName( 
 
 ## <a name="parameters"></a>매개 변수
 `pbstrName`\
-[out] 포트의 이름을 반환합니다.
+제한이 포트의 이름을 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`고, 그렇지 않으면 오류 코드를 반환 합니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

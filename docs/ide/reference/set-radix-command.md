@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Set Radix command
 - Debug.SetRadix command
 ms.assetid: 6ffd1554-7530-4da4-b5f5-e276a5034f3b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13341d8cb6a708f4e10f211bd47b79a75e1b6e2a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: f920311301b722c11bea4a9f4eb90e9aa7663d80
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926037"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747727"
 ---
 # <a name="set-radix-command"></a>기수 설정 명령
 정수 값을 표시하는 데 사용할 숫자 기준을 설정하거나 반환합니다.

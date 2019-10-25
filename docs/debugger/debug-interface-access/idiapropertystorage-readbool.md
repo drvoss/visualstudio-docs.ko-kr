@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::ReadBOOL | Microsoft Docs
+title: 'IDiaPropertyStorage:: ReadBOOL | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5cc189283d6e9910b0b01d3d3e1ca28165bf500
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d776e37bab189e61d0264f4cbda24f89cb4501ce
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839695"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742933"
 ---
 # <a name="idiapropertystoragereadbool"></a>IDiaPropertyStorage::ReadBOOL
-읽고 `BOOL` 속성 집합의 값입니다.
+속성 집합에서 `BOOL` 값을 읽습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -34,17 +34,17 @@ HRESULT ReadBOOL ( 
 #### <a name="parameters"></a>매개 변수
  `id`
 
-[in] 읽을 속성의 식별자 (`PROPID` 으로 WTypes.h에 정의 된 `ULONG`).
+진행 읽을 속성의 식별자입니다 (`PROPID`은 WTypes. h에서 `ULONG`로 정의 됨).
 
  `pValue`
 
-[out] 속성 값을 반환 합니다.
+제한이 속성 값을 반환 합니다.
 
 ## <a name="return-value"></a>반환 값
- 성공 하면 반환 `S_OK`; 그렇지 않으면 오류 코드를 반환 합니다. 반환 `E_INVALIDARG` 형식의 속성이 없는 경우 `BOOL`합니다.
+ 성공 하면 `S_OK`을 반환 합니다. 그렇지 않으면 오류 코드를 반환 합니다. 속성이 `BOOL` 형식이 아니면 `E_INVALIDARG`을 반환 합니다.
 
-## <a name="remarks"></a>설명
- 일관 된 결과 대 한 해석 된 `BOOL` 값 0이 아닌 값은 `TRUE` 0 이며 `FALSE`합니다.
+## <a name="remarks"></a>주의
+ 일관 된 결과를 위해 `BOOL` 값을 해석 하 여 0이 아닌 값이 `TRUE` 되 고 0이 `FALSE` 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

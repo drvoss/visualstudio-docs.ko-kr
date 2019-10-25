@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51173fcf2e8f6785b61bfd348178a59b5fb933dc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 27d8672ea94cf2a1547904f313ac36509f111462
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654013"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748454"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>파일 스토리지 및 XML Serialization 사용자 지정
 
@@ -306,7 +306,7 @@ Xml 속성 노드는 클래스 노드 아래에 있습니다.
 |역할 요소 이름|원본 역할에서 파생 된 XML 요소의 이름을 지정 합니다. 기본값은 role 속성 이름입니다.|
 |전체 양식 사용|True 이면 각 대상 요소 또는 모니커가 관계를 나타내는 XML 노드에 포함 됩니다. 관계에 고유한 도메인 속성이 있는 경우이 속성을 true로 설정 해야 합니다.|
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)

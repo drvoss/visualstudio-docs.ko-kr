@@ -5,17 +5,17 @@ ms.date: 09/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 87242c99fe2692b799ff6a5d965249ad5d944cf9
-ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
+ms.openlocfilehash: a3bcc86f8d423422eafeb3101bf8512e7341d3b7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72262307"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653024"
 ---
 # <a name="live-unit-testing-overview"></a>Live Unit Testing 개요
 
@@ -40,7 +40,7 @@ Live Unit Testing에 대해 자세히 알아보려면 다음을 수행합니다.
 
    > [!VIDEO https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105/player]
 
-## <a name="related-resources"></a>관련 리소스
+## <a name="related-resources"></a>관련 참고 자료
 
 - [코드 테스트 도구](https://visualstudio.microsoft.com/vs/testing-tools/)
 - [코드 단위 테스트](unit-test-your-code.md)

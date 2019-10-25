@@ -12,21 +12,21 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3abcfebb7bbcc0eaa6a05760de4531f020b41ddb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 07e1e19f802203b9770764330ea894b7d0eb98b8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318724"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72724163"
 ---
 # <a name="resources-in-vspackages"></a>VSPackage의 리소스
-자체 관리 되는 VSPackage 또는 네이티브 위성 UI Dll을 관리 되는 위성 Dll에서에서 지역화 된 리소스를 포함할 수 있습니다.
+지역화 된 리소스를 네이티브 위성 UI Dll, 관리 되는 위성 Dll 또는 관리 되는 VSPackage 자체에 포함할 수 있습니다.
 
- Vspackage의 일부의 리소스를 포함할 수 없습니다. 관리 되는 유형은 포함할 수 있습니다.
+ 일부 리소스는 Vspackage에 포함할 수 없습니다. 다음 관리 되는 형식을 포함할 수 있습니다.
 
 - 문자열
 
-- 패키지 로드 키 (또한 문자열)
+- 패키지 로드 키 (문자열 이기도)
 
 - 도구 창 아이콘
 
@@ -36,19 +36,19 @@ ms.locfileid: "66318724"
 
 - 명령줄 도움말
 
-- 대화 상자 데이터에 대 한
+- 대화 상자 데이터 정보
 
-  리소스 관리 되는 패키지의 리소스 id 선택 예외는 CTO 파일이 며, CTMENU 이름을 지정 해야 합니다. CTO 파일 리소스 테이블에 표시 해야 합니다는 `byte[]`합니다. 다른 모든 리소스 항목 유형으로 식별 됩니다.
+  관리 되는 패키지의 리소스는 리소스 ID로 선택 됩니다. 단, CTO 파일은 CTMENU로 이름을 지정 해야 합니다. CTO 파일은 리소스 테이블에 `byte[]` 표시 되어야 합니다. 다른 모든 리소스 항목은 유형으로 식별 됩니다.
 
-  사용할 수는 <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> 특성에 알리기 위해 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 관리 되는 리소스는 사용할 수 있습니다.
+  @No__t_0 특성을 사용 하 여 관리 되는 리소스를 사용할 수 있음을 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 지정할 수 있습니다.
 
   [!code-csharp[VSSDKResources#1](../../extensibility/internals/codesnippet/CSharp/resources-in-vspackages_1.cs)]
   [!code-vb[VSSDKResources#1](../../extensibility/internals/codesnippet/VisualBasic/resources-in-vspackages_1.vb)]
 
-  설정 <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> 나타냅니다 이렇게에서 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 검색할 때 리소스에 대 한 예를 들어, 사용 하 여 관리 되지 않는 위성 Dll을 무시할지 <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>합니다. 경우 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 동일한 리소스 id는 두 개 이상의 리소스를 발견 하면 찾은 첫 번째 리소스를 사용 합니다.
+  이와 같은 방식으로 <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>를 설정 하면 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]에서 <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>을 사용 하는 등의 방법으로 리소스를 검색할 때 관리 되지 않는 위성 Dll을 무시 해야 합니다. @No__t_0 리소스 ID가 같은 리소스가 두 개 이상 발견 되 면 검색 된 첫 번째 리소스를 사용 합니다.
 
 ## <a name="example"></a>예제
- 다음 예제는 관리 되는 도구 창 아이콘을 표시 합니다.
+ 다음 예제는 도구 창 아이콘의 관리 되는 표현입니다.
 
 ```
 <data name="1001"
@@ -64,7 +64,7 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 </data>
 ```
 
- 다음 예제에서는 CTMENU 이름이 cto 인 바이트 배열에 포함 하는 방법을 보여 줍니다.
+ 다음 예제에서는 CTMENU로 명명 되어야 하는 CTO 바이트 배열을 포함 하는 방법을 보여 줍니다.
 
 ```
 <data name="CTMENU"
@@ -81,10 +81,10 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 ```
 
 ## <a name="implementation-notes"></a>구현 참고 사항
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 가능 하면 Vspackage의 지연 로드 합니다. VSPackage에서 CTO 파일 포함의 결과 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 를 설치 하는 경우 병합된 명령 테이블을 작성 하는 동안 메모리에서 이러한 모든 Vspackage를 로드 해야 합니다. VSPackage에서 코드를 실행 하지 않고 메타 데이터를 검사 하 여 VSPackage의 리소스를 추출할 수 있습니다. VSPackage의 성능 손실은 최소 이므로 지금은 초기화 되지 않았습니다.
+ 가능 하면 Vspackage의 로드를 지연 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 합니다. @No__t_0 VSPackage에 CTO 파일을 포함 하면 설치 하는 동안 모든 Vspackage을 메모리에 로드 해야 합니다 .이는 병합 된 명령 테이블을 작성할 때입니다. VSPackage에서 코드를 실행 하지 않고 메타 데이터를 검사 하 여 VSPackage에서 리소스를 추출할 수 있습니다. VSPackage이 지금은 초기화 되지 않으므로 성능 손실이 최소화 됩니다.
 
- 때 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 설치가 VSPackage의 리소스 요청을 해당 패키지 이므로 이미 로드 되 고 초기화 하는 일을 할 성능 저하는 미미 합니다.
+ 설치 후 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]에서 리소스를 요청 하는 경우 해당 패키지가 이미 로드 되 고 초기화 될 수 있으므로 성능 손실은 최소화 VSPackage.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [VSPackage 관리](../../extensibility/managing-vspackages.md)
 - [MFC 애플리케이션의 지역화된 리소스: 위성 DLL](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)

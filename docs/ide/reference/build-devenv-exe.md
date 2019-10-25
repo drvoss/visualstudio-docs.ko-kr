@@ -9,17 +9,17 @@ helpviewer_keywords:
 - build Devenv switch
 - command-line builds
 ms.assetid: ced21627-7653-455b-8821-3e31c6a448cf
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67aba8d93514618fc09abe933cfd28023136a4d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9aef4dcdc9069c1bbfe71a90bbaba214ebcd18ed
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790917"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667877"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 
@@ -53,7 +53,7 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
   선택 사항입니다. 도구의 출력을 보낼 파일의 이름입니다. 파일이 이미 있는 경우 출력은 파일의 끝에 추가됩니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 - `/Build` 스위치는 IDE(통합 개발 환경) 내에서 **솔루션 빌드** 메뉴 명령과 동일한 기능을 수행합니다.
 
@@ -65,7 +65,7 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
 - **잘못된 프로젝트 구성**이라는 오류 메시지가 표시되면 솔루션 플랫폼 또는 프로젝트 플랫폼(예: `Debug|Win32`)을 지정했는지 확인합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 다음 명령은 `MySolution` 내에 있는 `Debug` 프로젝트 빌드 구성을 사용하여 `CSharpWinApp` 프로젝트를 빌드합니다.
 

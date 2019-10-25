@@ -8,17 +8,17 @@ helpviewer_keywords:
 - /Clean Devenv switch
 - Devenv, /Clean switch
 ms.assetid: 79929dfd-22c9-4cec-a0d0-a16f15b8f7e4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 810f05b0838f27004bee983dc0acf7a3009e22a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f46a17371f0c83d3bdb3873c0138eca87c6b3d5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62573094"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663815"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 
@@ -52,7 +52,7 @@ devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfig
 
   선택 사항입니다. 도구의 출력을 보낼 파일의 이름입니다. 파일이 이미 있는 경우 출력은 파일의 끝에 추가됩니다.
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 이 스위치는 IDE 내에서 **솔루션 정리** 메뉴 명령과 동일한 기능을 수행합니다.
 
@@ -62,7 +62,7 @@ devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfig
 
 `/Project` 스위치가 지정되지 않으면 *FileName*이 프로젝트 파일로 지정된 경우에도 솔루션의 모든 프로젝트에서 정리 작업이 수행됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 첫 번째 예제는 솔루션 파일에 지정된 기본 구성을 사용하여 `MySolution` 솔루션을 정리합니다.
 

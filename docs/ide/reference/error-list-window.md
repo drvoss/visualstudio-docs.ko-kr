@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Error List window
 - errors [Visual Studio], Error List window
 ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 603faab80e185e7d22cba1ee544502d790afcdc0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d0921d89caa6428c45dc2522e78f58bde50f84be
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790865"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654440"
 ---
 # <a name="error-list-window"></a>오류 목록 창
 
@@ -41,7 +41,7 @@ ms.locfileid: "62790865"
 
 - 특정 용어를 검색하고 검색 범위를 현재 프로젝트 또는 문서로 지정합니다.
 
-**오류 목록**을 표시하려면 **보기** > **오류 목록**을 선택하거나 **Ctrl**+**\\**+**E**를 누릅니다.
+**오류 목록**을 표시하려면 **보기** > **오류 목록**을 선택하거나 **Ctrl**+ **\\** +**E**를 누릅니다.
 
 **오류**, **경고** 및 **메시지** 탭을 선택하면 다른 수준의 정보를 볼 수 있습니다.
 
@@ -78,7 +78,7 @@ ms.locfileid: "62790865"
 
 심각도
 
-여러 종류의 **오류 목록** 항목을 표시합니다(**오류**, **메시지**, **경고**, **경고(활성)**, **경고(비활성)**).
+여러 종류의 **오류 목록** 항목을 표시합니다(**오류**, **메시지**, **경고**, **경고(활성)** , **경고(비활성)** ).
 
 코드
 

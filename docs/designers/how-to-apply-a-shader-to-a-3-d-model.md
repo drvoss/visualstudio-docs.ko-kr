@@ -3,17 +3,17 @@ title: '방법: 3D 모델에 셰이더 적용'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a3877bd6-abd8-4a9d-842c-6848b6c2f335
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 896cc39ae3e9f53d96a30f6485c40afc8259e270
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 445829c3171eeae3b483055688dcf5f77be67330
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62845050"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72637177"
 ---
 # <a name="how-to-apply-a-shader-to-a-3d-model"></a>방법: 3D 모델에 셰이더 적용
 
@@ -33,7 +33,7 @@ ms.locfileid: "62845050"
 
 ![기본 색 효과를 보여 주는 3D 장면](../designers/media/digit-3d-model-effect.png)
 
-모델에 셰이더를 적용한 후 모델을 선택하고 **속성** 창에 있는 **효과** 속성 그룹의 **(고급)** 속성에서 말줄임표(**...**) 단추를 선택하여 셰이더 디자이너에서 모델을 열 수 있습니다.
+모델에 셰이더를 적용한 후 모델을 선택하고 **속성** 창에 있는 **효과** 속성 그룹의 **(고급)** 속성에서 말줄임표( **...** ) 단추를 선택하여 셰이더 디자이너에서 모델을 열 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 

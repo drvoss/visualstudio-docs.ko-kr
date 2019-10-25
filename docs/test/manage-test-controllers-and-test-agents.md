@@ -2,17 +2,17 @@
 title: 테스트 컨트롤러 및 테스트 에이전트 관리
 ms.date: 09/18/2018
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41e15982734731defabd79416c73eef4538f0c04
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 530a3d7ac205988639ed1346f823d889f56adffb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824236"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652922"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>테스트 컨트롤러 및 테스트 에이전트 관리
 
@@ -114,7 +114,7 @@ Microsoft Test Manager를 사용하여 랩 환경에서 테스트를 실행하�
 
 테스트 에이전트의 상태는 다음 값 중 하나가 될 수 있습니다.
 
-|상태|설명|
+|Status|설명|
 |-|-----------------|
 |테스트를 실행하는 중|테스트 실행|
 |준비|테스트를 실행하거나 데이터 및 진단 정보를 수집하는 데 사용할 수 있습니다.|

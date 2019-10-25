@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db06efe400106260556d8eab5fd644bbfc27f0c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e20fa21d739c79dad94a8445f6d0fe811337fd40
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833621"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744558"
 ---
 # <a name="idiaenumframedata"></a>IDiaEnumFrameData
 데이터 원본에 포함 된 다양 한 프레임 데이터 요소를 열거 합니다.
@@ -29,27 +29,27 @@ IDiaEnumFrameData : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
-다음 표에서의 메서드를 보여 줍니다. `IDiaEnumFrameData`합니다.
+다음 표에서는 `IDiaEnumFrameData`의 메서드를 보여 줍니다.
 
 |메서드|설명|
 |------------|-----------------|
-|[IDiaEnumFrameData::get__NewEnum](../../debugger/debug-interface-access/idiaenumframedata-get-newenum.md)|검색 된 `IEnumVARIANT Interface` 이 열거자의 버전입니다.|
-|[IDiaEnumFrameData::get_Count](../../debugger/debug-interface-access/idiaenumframedata-get-count.md)|프레임 데이터 요소의 수를 검색합니다.|
+|[IDiaEnumFrameData::get__NewEnum](../../debugger/debug-interface-access/idiaenumframedata-get-newenum.md)|이 열거자의 `IEnumVARIANT Interface` 버전을 검색 합니다.|
+|[IDiaEnumFrameData::get_Count](../../debugger/debug-interface-access/idiaenumframedata-get-count.md)|프레임 데이터 요소의 수를 검색 합니다.|
 |[IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)|인덱스를 사용 하 여 프레임 데이터 요소를 검색 합니다.|
-|[IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)|열거형 시퀀스에서 프레임 데이터 요소의 지정된 된 수를 검색 합니다.|
-|[IDiaEnumFrameData::Skip](../../debugger/debug-interface-access/idiaenumframedata-skip.md)|열거형 시퀀스에 포함 된 프레임 데이터 요소의 지정 된 수를 건너뜁니다.|
-|[IDiaEnumFrameData::Reset](../../debugger/debug-interface-access/idiaenumframedata-reset.md)|열거형 시퀀스를 처음으로 다시 설정합니다.|
-|[IDiaEnumFrameData::Clone](../../debugger/debug-interface-access/idiaenumframedata-clone.md)|현재 열거자와 열거 상태가 같은 포함 하는 열거자를 만듭니다.|
-|[IDiaEnumFrameData::frameByRVA](../../debugger/debug-interface-access/idiaenumframedata-framebyrva.md)|가상 RVA (상대 주소) 하 여 프레임을 반환합니다.|
-|[IDiaEnumFrameData::frameByVA](../../debugger/debug-interface-access/idiaenumframedata-framebyva.md)|가상 주소 (VA) 하 여 프레임을 반환합니다.|
+|[IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)|열거형 시퀀스에서 지정 된 수의 프레임 데이터 요소를 검색 합니다.|
+|[IDiaEnumFrameData::Skip](../../debugger/debug-interface-access/idiaenumframedata-skip.md)|열거형 시퀀스에서 지정 된 수의 프레임 데이터 요소를 건너뜁니다.|
+|[IDiaEnumFrameData::Reset](../../debugger/debug-interface-access/idiaenumframedata-reset.md)|열거형 시퀀스를 시작 부분으로 다시 설정 합니다.|
+|[IDiaEnumFrameData::Clone](../../debugger/debug-interface-access/idiaenumframedata-clone.md)|현재 열거자와 동일한 열거 상태를 포함 하는 열거자를 만듭니다.|
+|[IDiaEnumFrameData::frameByRVA](../../debugger/debug-interface-access/idiaenumframedata-framebyrva.md)|RVA (상대 가상 주소)를 기준으로 프레임을 반환 합니다.|
+|[IDiaEnumFrameData::frameByVA](../../debugger/debug-interface-access/idiaenumframedata-framebyva.md)|VA (가상 주소)를 기준으로 프레임을 반환 합니다.|
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
-## <a name="notes-for-callers"></a>호출자에 대 한 정보
-이 인터페이스를 가져올는 [idiasession:: Getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md) 메서드. 세부 정보에 대 한 예제를 참조 하세요.
+## <a name="notes-for-callers"></a>호출자 참고 사항
+[IDiaSession:: getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) 메서드에서이 인터페이스를 가져옵니다. 자세한 내용은 예제를 참조 하세요.
 
 ## <a name="example"></a>예제
-이 예제에서는 가져오는 방법을 보여 줍니다 (를 `GetEnumFrameData` 함수) 사용 하 여 (합니다 `ShowFrameData` 함수)는 `IDiaEnumFrameData` 인터페이스. 참조 된 [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) 인터페이스의 예는 `PrintFrameData` 함수입니다.
+이 예제에서는 (`GetEnumFrameData` 함수)를 가져오고 `IDiaEnumFrameData` 인터페이스를 사용 하 여 `ShowFrameData` 함수를 사용 하는 방법을 보여 줍니다. @No__t_1 함수에 대 한 예제는 [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) 인터페이스를 참조 하세요.
 
 ```C++
 
@@ -101,13 +101,13 @@ void ShowFrameData(IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>요구 사항
-**헤더:** Dia2.h
+**헤더:** Dia2
 
-**라이브러리:** diaguids.lib
+**라이브러리:** diaguids
 
-**DLL:** msdia80.dll
+**Dll:** msdia80
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [인터페이스(디버그 인터페이스 액세스 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

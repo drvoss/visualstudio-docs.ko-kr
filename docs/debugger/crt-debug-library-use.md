@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7e58f65f174c549f6992e9218d7ad692634e20d
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 20aeee220bec600c2232286d18600b04201ad03b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72435880"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745614"
 ---
 # <a name="crt-debug-library-use"></a>CRT 디버그 라이브러리 사용
 C 런타임 라이브러리는 디버깅을 폭넓게 지원합니다. CRT 디버그 라이브러리 중 하나를 사용 하려면 [/debug](/cpp/build/reference/debug-generate-debug-info) 와 연결 하 고 **/mdd**, **/MTd**또는 **/ldd**로 컴파일해야 합니다.
@@ -45,7 +45,7 @@ C 런타임 라이브러리는 디버깅을 폭넓게 지원합니다. CRT 디�
 
  사용할 수 있는 런타임 라이브러리에 대한 자세한 내용은 [C 런타임 라이브러리](/cpp/c-runtime-library/crt-library-features)를 참조하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참조
 
 - [CRT 디버깅 기술](../debugger/crt-debugging-techniques.md)
 - [/MD, /MT, /LD(런타임 라이브러리 사용)](/cpp/build/reference/md-mt-ld-use-run-time-library)

@@ -1,5 +1,5 @@
 ---
-title: Windows API 함수를 디버그 | Microsoft Docs
+title: Windows API 함수 디버그 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cac0524c0d4421c034ebfd6dfa6f61a0e9b589fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e7b5f3842160f4ffc6cecd41e65dd05ab7566dd0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894927"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734357"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Windows API 함수를 어떻게 디버깅할 수 있습니까?
 NT 기호가 로드된 Windows API 함수를 디버깅하려면 다음 작업을 수행해야 합니다.
@@ -40,8 +40,8 @@ NT 기호가 로드된 Windows API 함수를 디버깅하려면 다음 작업을
     {,,USER32.DLL}_MessageBeep@4
     ```
 
-     데코레이팅된 이름을 가져오려면를 참조 하세요 [데코레이팅된 이름 보기](https://msdn.microsoft.com/library/f79e2717-a4db-4d12-a689-69830cce2be0)합니다.
+     데코레이팅된 이름을 가져오려면 [데코레이팅된 이름 보기](https://msdn.microsoft.com/library/f79e2717-a4db-4d12-a689-69830cce2be0)를 참조 하십시오.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [네이티브 코드 디버그 FAQ](../debugger/debugging-native-code-faqs.md)
 - [네이티브 코드 디버그](../debugger/debugging-native-code.md)

@@ -2,8 +2,8 @@
 title: 인터페이스 추출 리팩터링
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.extractinterface
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8890bac11a37d64c2ace4ea23b92a6ad20a6cbb0
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 15da8bdf1a3df60a7ad4816ce578ec5672c85ecf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531698"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654424"
 ---
 # <a name="extract-an-interface-refactoring"></a>인터페이스 추출 리팩터링
 
@@ -37,7 +37,7 @@ ms.locfileid: "65531698"
 
 1. 커서를 클래스 이름에 놓습니다.
 
-   - C#: 
+   - C#:
 
        ![강조 표시된 코드 - C#](media/extractinterface-highlight-cs.png)
 
@@ -49,7 +49,7 @@ ms.locfileid: "65531698"
 
    - **키보드**
       - **Ctrl+R**을 누른 다음 **Ctrl+I**를 누릅니다. (바로 가기 키는 선택한 프로필에 따라 다를 수 있습니다.)
-      - 줄의 임의 위치에서 **Ctrl**+**.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거하고 [미리 보기] 창 팝업에서 **인터페이스 추출**을 선택합니다.
+      - 줄의 임의 위치에서 **Ctrl**+ **.** 를 눌러 **빠른 작업 및 리팩터링** 메뉴를 트리거하고 [미리 보기] 창 팝업에서 **인터페이스 추출**을 선택합니다.
    - **마우스**
       - **편집 > 리팩터링 > 인터페이스 추출**을 선택합니다.
       - 클래스 이름을 마우스 오른쪽 단추로 클릭하고, **빠른 작업 및 리팩터링** 메뉴를 선택하고, [미리 보기] 창 팝업에서 **인터페이스 추출**을 선택합니다.
@@ -68,7 +68,7 @@ ms.locfileid: "65531698"
 
    지정된 이름의 파일에 인터페이스가 만들어집니다. 또한 선택한 클래스가 해당 인터페이스를 구현합니다.
 
-   - C#: 
+   - C#:
 
       ![결과 클래스 - C#](media/extractinterface-class-cs.png)
 

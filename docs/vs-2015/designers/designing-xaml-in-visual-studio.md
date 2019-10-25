@@ -6,15 +6,15 @@ ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
 caps.latest.revision: 6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 437c6cc7af2b0337b362e14db19deb9584a3d412
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 6c48e44e0488d61e3061d680962bf22e42935090
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695521"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664720"
 ---
 # <a name="designing-xaml-in-visual-studio"></a>Visual Studio에서 XAML 디자인
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Visual Studio 및 Blend for Visual Studio는 XAML 기반 Windows 데스크톱, �
 
 - **파일 재로드 환경:** Blend for Visual Studio 또는 Visual Studio 중 하나에서 XAML 파일을 편집한 후 다른 프로그램으로 전환할 때 편집된 파일이 자동으로 다시 로드되도록 할 수 있습니다. 워크플로 중단을 최소화하기 위해 이제 파일 다시 로드 대화 상자에서 파일 다시 로드 기본 설정을 지정할 수 있습니다.
 
-     ![파일 재로드 경험](../designers/media/blendfilereload.png "BlendFileReload")
+     ![파일 다시 로드 환경](../designers/media/blendfilereload.png "BlendFileReload")
 
 - **동기화된 레이아웃 및 설정:** 사용자 지정 레이아웃을 통해 도구 창 레이아웃 사용자 지정을 저장하고 적용할 수 있습니다. 동일한 Microsoft 계정으로 로그인하면 Visual Studio에서 Visual Studio 및 Blend for Visual Studio 둘 다에 대한 이러한 사용자 지정과 기본 설정을 컴퓨터 간에 동기화합니다. [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.
 
@@ -52,7 +52,7 @@ Visual Studio 및 Blend for Visual Studio는 XAML 기반 Windows 데스크톱, �
 ## <a name="advanced-capabilities-in-blend-for-visual-studio"></a>Blend for Visual Studio의 고급 기능
  생산성을 향상시키려면 다음과 같은 작업에 Blend for Visual Studio를 사용하는 것이 좋습니다. 이러한 영역에 대해 Blend for Visual Studio는 Visual Studio 디자이너나 코드를 단독으로 사용할 때보다 빠른 속도와 더 많은 기능을 제공합니다.
 
-|대상|Visual Studio|Blend for Visual Studio|추가 정보|
+|대상|Visual Studio|Visual Studio용 Blend|자세한 정보|
 |--------|-------------------|-----------------------------|----------------------|
 |**애니메이션 만들기**|애니메이션을 만들 수 있는 디자인 도구가 없습니다. 프로그래밍 방식으로 애니메이션을 만들어야 합니다. 따라서 WPF의 애니메이션, 타이밍 시스템 및 광범위한 코딩 전문 기술을 이해하고 있어야 합니다.|애니메이션을 시각적으로 만들고 Blend for Visual Studio에서 미리 볼 수 있습니다. 코드로 애니메이션을 빌드하는 것보다 더 빠르고 정확합니다. 사용자 상호 작용을 처리하는 트리거를 추가하고 이벤트 처리기 및 기타 기능을 추가하는 코드로 전환할 수 있습니다.|[개체에 애니메이션 적용](../designers/animate-objects-in-xaml-designer.md)|
 |**보다 쉽게 조작할 수 있도록 도형 및 텍스트를 패스로 변환**|지원되지 않습니다.|도형을 패스(더 우수한 편집 컨트롤 제공)로 변환하여 도형(예: 사각형 및 타원)에 대해 미세하거나 큰 변경을 수행할 수 있습니다.  패스 모양을 변경하거나 패스를 결합하고 여러 도형에서 복합형 패스를 만들 수 있습니다.<br /><br /> 또한 텍스트 블록을 패스로 변환하여 벡터 이미지로 조작할 수 있습니다.|[도형 및 패스 그리기](../designers/draw-shapes-and-paths.md)|

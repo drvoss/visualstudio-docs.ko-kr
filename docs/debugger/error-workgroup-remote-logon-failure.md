@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d9142e92367dd10653bb8fdaaf86c34f3f17b84
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9d1ee0cfbd021eb7d6a03a791713d187d3c8877c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399224"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736266"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>오류: 작업 그룹 원격 로그온 실패
 이 오류의 의미는 다음과 같습니다.
@@ -55,7 +55,7 @@ ms.locfileid: "63399224"
 
 4. **정책** 열에서 **프로그램 디버그**를 두 번 클릭하여 **로컬 보안 설정** 대화 상자에서 현재 로컬 그룹 정책 할당 내용을 확인합니다.
 
-     ![로컬 보안 정책 권한이](../debugger/media/dbg_err_localsecuritypolicy_userrightsdebugprograms.png "DBG_ERR_LocalSecurityPolicy_UserRightsDebugPrograms")
+     ![로컬 보안 정책 사용자 권한](../debugger/media/dbg_err_localsecuritypolicy_userrightsdebugprograms.png "DBG_ERR_LocalSecurityPolicy_UserRightsDebugPrograms")
 
 5. 새 사용자를 추가하려면 **사용자 또는 그룹 추가** 단추를 클릭합니다.
 
@@ -67,12 +67,12 @@ ms.locfileid: "63399224"
 
 3. **보안 옵션**을 클릭합니다.
 
-4. 에 **정책** 열을 두 번 클릭 **네트워크 액세스: 로컬 계정에 대 한 공유 및 보안 모델**합니다.
+4. **정책** 열에서 **네트워크 액세스: 로컬 계정에 대한 공유 및 보안**을 두 번 클릭합니다.
 
-5. 에 **네트워크 액세스: 로컬 계정에 대 한 공유 및 보안 모델** 대화 상자에서 값을 변경 **클래식-로컬 사용자를 그대로 인증** 을 클릭 합니다 **적용** 단추입니다.
+5. **네트워크 액세스: 로컬 계정에 대한 공유 및 보안** 대화 상자의 값을 **클래식 - 로컬 사용자를 그대로 인증**으로 변경하고 **적용** 단추를 클릭합니다.
 
      ![로컬 보안 정책 보안 옵션](../debugger/media/dbg_err_localsecuritypolicy_securityoptions_networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [원격 디버깅 오류 및 문제 해결](../debugger/remote-debugging-errors-and-troubleshooting.md)
 - [Remote Debugging](../debugger/remote-debugging.md)

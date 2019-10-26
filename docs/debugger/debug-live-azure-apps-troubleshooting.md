@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27df4c097d829a4d28a77b9b1ad96eb389f4096c
-ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.openlocfilehash: dc0d5ce27c3241b89a1baaf540cab4f1f56d24b5
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71962936"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911592"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Visual Studio의 스냅샷 디버깅에 대한 문제 해결 및 알려진 문제
 
-이 문서에서 설명 하는 단계를 수행 해도 문제가 해결 되지 않으면 [개발자 커뮤니티](https://developercommunity.visualstudio.com/spaces/8/index.html) 에서 문제를 검색 하거나 **Help** > **사용자 의견 보내기** > 를 선택 하 여 새 문제를 보고 합니다. Visual Studio에서**문제 보고**
+이 문서에서 설명 하는 단계를 수행 해도 문제가 해결 되지 않으면 [개발자 커뮤니티](https://developercommunity.visualstudio.com/spaces/8/index.html) 에서 문제를 검색 하거나, **사용자 의견 보내기** > Visual Studio에서 **문제 보고** **를 선택 하** 여 새 문제를 보고 > 합니다.
 
 ## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>문제: "Attach 스냅숏 디버거"에서 HTTP 상태 코드 오류가 발생 했습니다.
 
@@ -34,7 +34,7 @@ ms.locfileid: "71962936"
 
 다음 단계를 수행하세요.
 
-* Visual Studio 개인 설정 계정에 연결할 Azure 구독 및 리소스에 대 한 권한이 있는지 확인 합니다. 이를 확인 하는 빠른 방법은 **디버그** > **연결 스냅숏 디버거** 의 대화 상자에서 리소스를 사용할 수 있는지 확인 하는 것입니다. @no__t 3**Azure 리소스**@no__t 클라우드 탐색기에서 기존 또는를**선택**합니다.
+* Visual Studio 개인 설정 계정에 연결할 Azure 구독 및 리소스에 대 한 권한이 있는지 확인 합니다. 이를 확인 하는 빠른 방법은 대화 상자에서 **디버그** > **연결 스냅숏 디버거 ...**  > **Azure 리소스** > **기존을 선택**하거나 클라우드 탐색기에서 리소스를 사용할 수 있는지 확인 하는 것입니다.
 * 이 오류가 계속 지속 되 면이 문서의 시작 부분에 설명 된 피드백 채널 중 하나를 사용 합니다.
 
 ### <a name="403-forbidden"></a>(403) 사용할 수 없음
@@ -43,7 +43,7 @@ ms.locfileid: "71962936"
 
 다음 단계를 수행하세요.
 
-* Visual Studio 계정에 리소스에 대 한 필요한 RBAC (역할 기반 Access Control) 권한이 있는 유효한 Azure 구독이 있는지 확인 합니다. AppService의 경우 앱을 호스트 하는 App Service 계획을 [쿼리할](https://docs.microsoft.com/rest/api/appservice/appserviceplans/get) 수 있는 권한이 있는지 확인 합니다.
+* Visual Studio 계정에 리소스에 대 한 필요한 RBAC (역할 기반 Access Control) 권한이 있는 유효한 Azure 구독이 있는지 확인 합니다. AppService의 경우 앱을 호스트 하는 App Service 계획을 [쿼리할](/rest/api/appservice/appserviceplans/get) 수 있는 권한이 있는지 확인 합니다.
 * 클라이언트 컴퓨터의 타임 스탬프가 올바르고 최신 상태 인지 확인 합니다. 요청 타임 스탬프의 15 분 이상 타임 스탬프가 있는 서버는 일반적으로이 오류를 생성 합니다.
 * 이 오류가 계속 지속 되 면이 문서의 시작 부분에 설명 된 피드백 채널 중 하나를 사용 합니다.
 
@@ -54,8 +54,8 @@ ms.locfileid: "71962936"
 다음 단계를 수행하세요.
 
 * 연결 하려는 App Service 리소스에서 웹 사이트를 배포 하 고 실행 하 고 있는지 확인 합니다.
-* Https://@no__t -0resource\>.azurewebsites.net에서 사이트를 사용할 수 있는지 확인 합니다.
-* Https://@no__t -0resource\>.azurewebsites.net에서 액세스할 때 제대로 실행 되는 사용자 지정 웹 응용 프로그램이 상태 코드 404을 반환 하지 않는지 확인 합니다.
+* Https://\<리소스\>에서 사이트를 사용할 수 있는지 확인 합니다. azurewebsites.net
+* Https://\<리소스\>에서 액세스할 때 적절 하 게 실행 되는 사용자 지정 웹 응용 프로그램이 상태 코드 404을 반환 하지 않는지 확인 합니다. azurewebsites.net
 * 이 오류가 계속 지속 되 면이 문서의 시작 부분에 설명 된 피드백 채널 중 하나를 사용 합니다.
 
 ### <a name="406-not-acceptable"></a>(406) 허용 되지 않음
@@ -64,7 +64,7 @@ ms.locfileid: "71962936"
 
 다음 단계를 수행하세요.
 
-* Https://@no__t -0resource\>.azurewebsites.net에서 사이트를 사용할 수 있는지 확인 합니다.
+* Https://\<리소스\>에서 사이트를 사용할 수 있는지 확인 합니다. azurewebsites.net
 * 사이트가 새 인스턴스로 마이그레이션되지 않았는지 확인 합니다. 스냅숏 디버거은이 오류를 간헐적으로 생성할 수 있는 특정 인스턴스로 요청을 라우팅하는 데 ARRAffinity 이라는 개념을 사용 합니다.
 * 이 오류가 계속 지속 되 면이 문서의 시작 부분에 설명 된 피드백 채널 중 하나를 사용 합니다.
 
@@ -88,7 +88,7 @@ Visual Studio 2019에서이 문제가 해결 되었습니다.
 
 ### <a name="500-internal-server-error"></a>(500) 내부 서버 오류
 
-이 오류는 사이트가 완전히 다운 되었거나 서버에서 요청을 처리할 수 없음을 나타냅니다. 스냅숏 디버거는 응용 프로그램을 실행 하는 경우에만 작동 합니다. [Application Insights 스냅숏 디버거](https://docs.microsoft.com/azure/azure-monitor/app/snapshot-debugger) 는 예외에 대 한 스냅숏을 제공 하 고 요구 사항에 가장 적합 한 도구 일 수 있습니다.
+이 오류는 사이트가 완전히 다운 되었거나 서버에서 요청을 처리할 수 없음을 나타냅니다. 스냅숏 디버거는 응용 프로그램을 실행 하는 경우에만 작동 합니다. [Application Insights 스냅숏 디버거](/azure/azure-monitor/app/snapshot-debugger) 는 예외에 대 한 스냅숏을 제공 하 고 요구 사항에 가장 적합 한 도구 일 수 있습니다.
 
 ### <a name="502-bad-gateway"></a>(502) 잘못 된 게이트웨이
 
@@ -99,21 +99,21 @@ Visual Studio 2019에서이 문제가 해결 되었습니다.
 * 스냅숏 디버거를 다시 연결 하기 전에 몇 분 정도 기다렸다가 다시 시도 하세요.
 * 이 오류가 계속 지속 되 면이 문서의 시작 부분에 설명 된 피드백 채널 중 하나를 사용 합니다.
 
-## <a name="issue-snappoint-does-not-turn-on"></a>문제: Snappoint가 설정 되지 않음
+## <a name="issue-snappoint-does-not-turn-on"></a>문제: snappoint가 켜지지 않음
 
-snappoint와 함께 일반 snappoint 아이콘이 아닌 경고 아이콘(![snappoint 경고 아이콘](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "snappoint 경고 아이콘"))이 표시되면 snappoint가 켜지지 않은 것입니다.
+일반 Snappoint 아이콘이 아니라 Snappoint가 포함 된 경고 아이콘 ![Snappoint 경고 아이콘이](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "Snappoint 경고 아이콘") 표시 되는 경우 Snappoint가 설정 되지 않습니다.
 
-![snappoint가 켜지지 않음](../debugger/media/snapshot-troubleshooting-dont-turn-on.png "snappoint가 켜지지 않음")
+![Snappoint가 설정 되지 않음](../debugger/media/snapshot-troubleshooting-dont-turn-on.png "Snappoint가 설정 되지 않음")
 
 다음 단계를 수행하세요.
 
 1. 앱을 빌드하고 배포 하는 데 사용 된 것과 동일한 버전의 소스 코드가 있는지 확인 합니다. 사용자의 배포에 맞게 올바른 기호를 로드하는지 확인합니다. 이렇게 하려면 스냅샷 디버그 중에 **모듈** 창을 보고 디버그하는 모듈에 대해 로드된 .pdb 파일이 기호 파일 열에 표시되는지 확인합니다. 스냅샷 디버거는 자동으로 사용자의 배포에 맞게 기호를 다운로드하여 사용하려고 합니다.
 
-## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>문제: 스냅숏을 열 때 기호가 로드 되지 않습니다.
+## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>문제: 스냅샷을 열 때 기호가 로드되지 않음
 
 다음 창이 표시되면 기호가 로드되지 않은 것입니다.
 
-![기호가 로드되지 않음](../debugger/media/snapshot-troubleshooting-symbols-wont-load.png "기호가 로드되지 않음")
+![기호가 로드 되지 않습니다.](../debugger/media/snapshot-troubleshooting-symbols-wont-load.png "기호가 로드 되지 않습니다.")
 
 다음 단계를 수행하세요.
 
@@ -125,7 +125,7 @@ snappoint와 함께 일반 snappoint 아이콘이 아닌 경고 아이콘(![snap
 
 - 조직이 기호 서버를 사용하거나 다른 경로에 기호를 드롭하는 경우 기호 설정을 사용하여 배포에 맞게 올바른 기호를 로드하세요.
 
-## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>문제: 클라우드 탐색기에서 "스냅숏 디버거 연결" 옵션을 볼 수 없습니다.
+## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>문제: 클라우드 탐색기에 “스냅샷 디버거 연결” 옵션이 표시되지 않음
 
 다음 단계를 수행하세요.
 
@@ -144,24 +144,24 @@ snappoint와 함께 일반 snappoint 아이콘이 아닌 경고 아이콘(![snap
   - Azure Kubernetes Service - Ubuntu 18.04의 .NET Core 2.2 이상에서 실행되는 ASP.NET Core 애플리케이션
 ::: moniker-end
 
-## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>문제: 제한 된 스냅숏은 진단 도구에만 표시 됩니다.
+## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>문제: 진단 도구에 제한된 스냅샷만 표시됨
 
-![제한된 snappoint](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "제한된 snappoint")
+![제한 된 snappoint](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "제한 된 snappoint")
 
 다음 단계를 수행하세요.
 
 - 스냅샷은 메모리를 거의 차지하지 않지만 할당된 메모리를 차지합니다. 스냅샷 디버거는 서버의 메모리가 과도하게 사용되는 것을 감지하면 스냅샷을 생성하지 않습니다. 스냅샷 디버거 세션을 중지하고 다시 시도하여 이미 캡처된 스냅샷을 삭제할 수 있습니다.
 
 ::: moniker range=">= vs-2019"
-## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>문제: 여러 버전의 Visual Studio를 사용 하 여 스냅숏 디버깅을 통해 오류가 발생 함
+## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>문제: 여러 버전의 Visual Studio를 사용한 스냅샷 디버깅에서 오류가 발생함
 
 Visual Studio 2019에는 Azure App Service에 스냅숏 디버거 사이트 확장의 최신 버전이 필요 합니다.  이 버전은 Visual Studio 2017에서 사용 하는 스냅숏 디버거 사이트 확장의 이전 버전과 호환 되지 않습니다.  Visual studio 2019의 스냅숏 디버거을 Visual Studio 2017의 스냅숏 디버거에 의해 이전에 디버깅 된 Azure App Service에 연결 하려고 하면 다음과 같은 오류가 발생 합니다.
 
-![호환 되지 않는 스냅숏 디버거 사이트 확장 Visual studio 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "호환 되지 않는 스냅숏 디버거 사이트 확장 visual studio 2019")
+![호환 되지 않는 스냅숏 디버거 사이트 확장 Visual Studio 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "호환 되지 않는 스냅숏 디버거 사이트 확장 Visual Studio 2019")
 
 반대로 visual Studio 2017을 사용 하 여 Visual Studio 2019의 스냅숏 디버거에 의해 이전에 디버깅 된 Azure App Service에 스냅숏 디버거를 연결 하는 경우 다음과 같은 오류가 발생 합니다.
 
-![호환 되지 않는 스냅숏 디버거 사이트 확장 Visual studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "호환 되지 않는 스냅숏 디버거 사이트 확장 visual studio 2017")
+![호환 되지 않는 스냅숏 디버거 사이트 확장 Visual Studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "호환 되지 않는 스냅숏 디버거 사이트 확장 Visual Studio 2017")
 
 이 문제를 해결하려면 Azure Portal에서 다음 앱 설정을 삭제하고 스냅샷 디버거를 다시 연결하세요.
 
@@ -169,7 +169,7 @@ Visual Studio 2019에는 Azure App Service에 스냅숏 디버거 사이트 확�
 - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 ::: moniker-end
 
-## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>문제: 스냅숏 디버깅에 문제가 발생 하 여 추가 로깅을 사용 해야 합니다.
+## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>문제: 스냅샷 디버깅에 문제가 있으며 더 많은 로깅을 사용하도록 설정해야 함
 
 ### <a name="enable-agent-logs"></a>에이전트 로그 사용
 
@@ -179,9 +179,9 @@ Visual Studio 2019에는 Azure App Service에 스냅숏 디버거 사이트 확�
 
 - App Services:
   - App Service의 Kudu 사이트(yourappservice.**scm**.azurewebsites.net)로 이동한 후 디버그 콘솔로 이동합니다.
-  - 에이전트 로그는 다음 디렉터리에 저장 됩니다.  D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
+  - 에이전트 로그는 D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\ 디렉터리에 저장되어 있습니다.
 - VM/VMSS:
-  - VM에 로그인 하 고 에이전트 로그는 다음과 같이 저장 됩니다.  C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Version>\SnapshotDebuggerAgent_*.txt
+  - VM에 로그인합니다. 에이전트 로그는 C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Version>\SnapshotDebuggerAgent_*.txt로 저장되어 있습니다.
 - AKS
   - /tmp/diag/AgentLogs/* 디렉터리로 이동합니다.
 
@@ -193,13 +193,13 @@ Visual Studio 2019에는 Azure App Service에 스냅숏 디버거 사이트 확�
   - 오류 로깅은 자동으로 D:\Home\LogFiles\eventlog.xml에 전송 되 고 이벤트는 `<Provider Name="Instrumentation Engine" />` 또는 "프로덕션 중단점"으로 표시 됩니다.
 - VM/VMSS:
   - VM에 로그인하고 이벤트 뷰어를 엽니다.
-  - 다음 뷰를 엽니다. *Windows 로그 > 응용 프로그램*입니다.
+  - ‘Windows 로그>애플리케이션’ 보기를 엽니다.
   - ‘프로덕션 중단점’ 또는 ‘계측 엔진’을 사용하여 ‘이벤트 원본’별로 ‘현재 로그를 필터링’합니다.
 - AKS
   - 계측 엔진 로깅은 /tmp/diag/log.txt(DockerFile의 MicrosoftInstrumentationEngine_FileLogPath 설정)에서 수행됩니다.
   - 프로덕션 중단점 로그는 /tmp/diag/shLog.txt에 있습니다.
 
-## <a name="known-issues"></a>알려진 문제
+## <a name="known-issues"></a>알려진 문제점
 
 - 동일한 App Service에 대해 여러 Visual Studio 클라이언트를 사용하는 스냅샷 디버깅은 현재 지원되지 않습니다.
 - ASP.NET Core 프로젝트에서는 Roslyn IL 최적화가 일부만 지원됩니다. 일부 ASP.NET Core 프로젝트의 경우 일부 변수를 볼 수 없거나 조건문에 사용할 수 없습니다.

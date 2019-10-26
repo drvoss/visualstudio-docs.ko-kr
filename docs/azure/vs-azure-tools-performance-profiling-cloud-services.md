@@ -8,19 +8,19 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
-ms.openlocfilehash: fd436a6b7e38c8f76de5d113c326e194e4011155
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 04e3ee89498447f7743fc1b5119e129f046b4fcc
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427411"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911773"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>클라우드 서비스의 성능 테스트
 ## <a name="overview"></a>개요
 다음과 같은 방법으로 클라우드 서비스의 성능을 테스트할 수 있습니다.
 
-* 요청과 연결에 대한 정보를 수집하고 서비스를 고객 관점에서 수행하는 방법을 보여주는 사이트 통계를 검토하려면 Azure Diagnostics를 사용합니다. 시작하려면 [Azure Cloud Services 및 Virtual Machines에서 진단 구성](http://go.microsoft.com/fwlink/p/?LinkId=623009)을 참조하십시오.
-* Visual Studio 프로파일러를 사용하여 서비스 실행 방식의 계산 측면에 대한 심층 분석을 가져옵니다. 이 항목에서 알 수 있듯이 Azure에서 서비스가 실행될 때 성능을 측정하기 위해 프로파일러를 사용할 수 있습니다. 컴퓨팅 에뮬레이터에서 서비스가 로컬로 실행될 때 성능을 측정하는 프로파일러를 사용하는 방법에 대한 정보는 [Visual Studio 프로파일러를 사용하여 Compute 에뮬레이터에서 로컬로 Azure Cloud Services의 성능 테스트](http://go.microsoft.com/fwlink/p/?LinkId=262845)를 참조하십시오.
+* 요청과 연결에 대한 정보를 수집하고 서비스를 고객 관점에서 수행하는 방법을 보여주는 사이트 통계를 검토하려면 Azure Diagnostics를 사용합니다. 시작하려면 [Azure Cloud Services 및 Virtual Machines에서 진단 구성](vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md)을 참조하십시오.
+* Visual Studio 프로파일러를 사용하여 서비스 실행 방식의 계산 측면에 대한 심층 분석을 가져옵니다. 이 항목에서 알 수 있듯이 Azure에서 서비스가 실행될 때 성능을 측정하기 위해 프로파일러를 사용할 수 있습니다. 컴퓨팅 에뮬레이터에서 서비스가 로컬로 실행될 때 성능을 측정하는 프로파일러를 사용하는 방법에 대한 정보는 [Visual Studio 프로파일러를 사용하여 Compute 에뮬레이터에서 로컬로 Azure Cloud Services의 성능 테스트](/azure/cloud-services/cloud-services-performance-testing-visual-studio-profiler)를 참조하십시오.
 
 ## <a name="choosing-a-performance-testing-method"></a>성능 테스트 방법 선택
 ### <a name="use-azure-diagnostics-to-collect"></a>수집할 Azure Diagnostics 사용:
@@ -65,9 +65,9 @@ Visual Studio에서 성능을 프로파일링하는 방법을 알아보려면 [�
 프로파일링을 위해 성능 문제에 따라 여러 수집 방법을 사용할 수 있습니다.
 
 * **CPU 샘플링** - 이 방법은 CPU 이용률 문제의 초기 분석에 유용한 애플리케이션 통계를 수집합니다. CPU 샘플링은 대부분의 성능 조사를 시작하기 위한 권장 방법입니다. CPU 샘플링 데이터를 수집할 때 프로파일링하는 애플리케이션에 많은 영향을 미치지 않습니다.
-* **계측** - 이 방법은 집중된 분석 및 입/출력 성능 문제 분석에 유용한 자세한 타이밍 데이터를 수집합니다. 계측 방법은 프로파일링 실행 중 모듈의 각 항목, 종료 및 함수 호출 함수를 기록합니다. 이 방법은 코드의 섹션에 대한 자세한 타이밍 정보를 수집하고 입력 및 출력 작업이 애플리케이션 성능에 미치는 영향을 이해하는데 유용합니다. 이 방법은 32비트 운영 체제를 실행하는 컴퓨터에 사용되지 않습니다. 이 옵션은 컴퓨팅 에뮬레이터에서 로컬이 아닌 Azure에서 클라우드 서비스를 실행하는 경우에만 사용할 수 있습니다.
+* **계측** - 이 방법은 집중된 분석 및 입/출력 성능 문제 분석에 유용한 자세한 타이밍 데이터를 수집합니다. 계측 방법은 프로파일링 실행 중 모듈의 각 항목, 종료 및 함수 호출 함수를 기록합니다. 이 방법은 코드의 한 섹션에 대한 자세한 타이밍 정보를 수집하고 입력 및 출력 작업이 애플리케이션 성능에 미치는 영향을 이해하는 데 유용합니다. 이 방법은 32비트 운영 체제를 실행하는 컴퓨터에 사용되지 않습니다. 이 옵션은 컴퓨팅 에뮬레이터에서 로컬이 아닌 Azure에서 클라우드 서비스를 실행하는 경우에만 사용할 수 있습니다.
 * **.NET 메모리 할당** - 이 방법은 샘플링 프로파일링 방법을 사용하여 .NET Framework 메모리 할당 데이터를 수집합니다. 수집된 데이터에 할당된 개체의 수와 크기가 포함됩니다.
-* **동시성** - 이 방법은 리소스 경합 데이터와 프로세스 및 멀티스레드와 멀티 프로세스 애플리케이션 분석에 유용한 스레드 실행 데이터를 수집합니다. 동시성 방법은 스레드가 해제될 애플리케이션 리소스에 잠긴 액세스를 기다리는 등 코드 실행을 차단하는 각 이벤트에 대한 데이터를 수집합니다. 이 방법은 멀티스레드 애플리케이션을 분석하는데 유용합니다.
+* **동시성** - 이 방법은 리소스 경합 데이터와 프로세스 및 멀티스레드와 멀티 프로세스 애플리케이션 분석에 유용한 스레드 실행 데이터를 수집합니다. 동시성 방법은 스레드가 해제될 애플리케이션 리소스에 대한 잠긴 액세스에 대해 대기하는 경우와 같은 코드의 실행을 차단하는 각 이벤트에 대한 데이터를 수집합니다. 이 메서드는 다중 스레드 애플리케이션을 분석하는 데 유용합니다.
 * 하나 이상의 데이터베이스와 통신하는 다중 계층 애플리케이션의 함수에서 동기 ADO.NET 호출의 실행 시간에 관한 추가 정보를 제공하는 **계층 상호작용 프로파일링**을 사용할 수도 있습니다. 프로파일링 방법을 사용하여 계층 상호작용 데이터를 수집할 수 있습니다. 계층 상호작용 프로파일링에 대한 자세한 내용은 [계층 상호작용 보기](https://msdn.microsoft.com/library/azure/dd557764.aspx)를 참조하십시오.
 
 ## <a name="configuring-profiling-settings"></a>프로파일링 설정 구성
@@ -81,7 +81,7 @@ Visual Studio에서 성능을 프로파일링하는 방법을 알아보려면 [�
 >
 
 ### <a name="to-configure-profiling-settings"></a>프로파일링 설정 구성
-1. 솔루션 탐색기에서 Azure 프로젝트에 대한 바로 가기 메뉴를 열고 **게시**를 선택합니다. 클라우드 서비스를 게시하는 방법에 대한 자세한 단계는 [Azure 도구를 사용하여 클라우드 서비스 게시](http://go.microsoft.com/fwlink/p?LinkId=623012)를 참조하세요.
+1. 솔루션 탐색기에서 Azure 프로젝트에 대한 바로 가기 메뉴를 열고 **게시**를 선택합니다. 클라우드 서비스를 게시하는 방법에 대한 자세한 단계는 [Azure 도구를 사용하여 클라우드 서비스 게시](vs-azure-tools-publishing-a-cloud-service.md)를 참조하세요.
 2. **Azure 애플리케이션 게시** 대화 상자에서 **고급 설정** 탭을 선택합니다.
 3. 프로파일링을 사용하려면 **프로파일링 사용** 확인란을 선택합니다.
 4. 프로파일링 설정을 구성하려면 **설정** 하이퍼링크를 선택합니다. 프로파일링 설정 대화 상자가 나타납니다.

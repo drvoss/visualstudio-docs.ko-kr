@@ -9,14 +9,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 22c266516a2810191f05bb3de1d7215ea65dd040
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
-ms.translationtype: HT
+ms.openlocfilehash: ad7d2ca7738d4ba0e05e3a75a2a4b6b155e46dbd
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624099"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911709"
 ---
-# <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>서버 탐색기로 스토리지 리소스 찾아보기 및 관리
+# <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>서버 탐색기를 사용하여 스토리지 리소스 찾아보기 및 관리
 
 [!INCLUDE [storage-try-azure-tools](./includes/storage-try-azure-tools.md)]
 
@@ -120,7 +120,7 @@ Blob 데이터는 로컬로 캐시되고 Azure Blob Storage에서 Blob의 마지
 
 BLOB을 업로드하려면 BLOB 컨테이너 보기에서 볼 수 있도록 컨테이너가 열려 있는 동안 **BLOB 업로드** 단추를 선택합니다.
 
-하나 이상의 파일을 선택해 업로드할 수 있으며 모든 형식의 파일을 업로드할 수 있습니다. **Azure 활동 로그** 창에 업로드 진행률이 표시됩니다. Blob 데이터 작업 방법에 대한 자세한 내용은 [.NET에서 Azure Blob Storage를 사용하는 방법](http://go.microsoft.com/fwlink/p/?LinkId=267911)을 참조하세요.
+하나 이상의 파일을 선택해 업로드할 수 있으며 모든 형식의 파일을 업로드할 수 있습니다. **Azure 활동 로그** 창에 업로드 진행률이 표시됩니다. Blob 데이터 작업 방법에 대한 자세한 내용은 [.NET에서 Azure Blob Storage를 사용하는 방법](/azure/storage/blobs/storage-quickstart-blobs-dotnet)을 참조하세요.
 
 ### <a name="to-view-logs-transferred-to-blobs"></a>Blob에 전송된 로그를 보려면
 
@@ -155,10 +155,10 @@ Blob을 선택한 다음 **Blob 열기** 단추를 선택합니다.
 
 ![큐 보기](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC651470.png)
 
-스토리지 서비스 큐에 대한 자세한 내용은 [.NET을 사용하여 Azure Queue Storage 시작](http://go.microsoft.com/fwlink/?LinkID=264702)을 참조하세요. 스토리지 서비스 큐의 웹 서비스에 대한 자세한 내용은 [큐 서비스 개념](http://go.microsoft.com/fwlink/?LinkId=264788)을 참조하세요. Visual Studio를 사용하여 Storage 서비스 큐에 메시지를 보내는 방법에 대한 자세한 내용은 [Storage 서비스 큐에 메시지 보내기](https://docs.microsoft.com/azure/visual-studio/vs-storage-cloud-services-getting-started-queues)를 참조하세요.
+스토리지 서비스 큐에 대한 자세한 내용은 [.NET을 사용하여 Azure Queue Storage 시작](/azure/storage/queues/storage-dotnet-how-to-use-queues)을 참조하세요. 스토리지 서비스 큐의 웹 서비스에 대한 자세한 내용은 [큐 서비스 개념](/rest/api/storageservices/Queue-Service-Concepts)을 참조하세요. Visual Studio를 사용하여 Storage 서비스 큐에 메시지를 보내는 방법에 대한 자세한 내용은 [Storage 서비스 큐에 메시지 보내기](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues)를 참조하세요.
 
 > [!NOTE]
-> 스토리지 서비스 큐는 Azure Service Bus 큐와 구별됩니다. Service Bus 큐에 대한 자세한 내용은 [Service Bus 큐, 항목 및 구독](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)을 참조하세요.
+> 스토리지 서비스 큐는 Azure Service Bus 큐와 구별됩니다. Service Bus 큐에 대한 자세한 내용은 [Service Bus 큐, 항목 및 구독](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)을 참조하세요.
 
 ## <a name="work-with-table-resources"></a>테이블 리소스로 작업
 
@@ -225,7 +225,7 @@ Azure Table Storage는 많은 양의 구조화된 데이터를 저장합니다. 
 
 ## <a name="refresh-storage-data"></a>스토리지 데이터 새로 고침
 
-서버 탐색기에서 연결하거나 스토리지 계정에서 데이터를 가져올 때 작업을 완료하기까지 최대 1분이 소요될 수 있습니다. 서버 탐색기를 연결할 수 없는 경우 작업 시간이 초과될 수 있습니다. 데이터를 검색하는 동안에 Visual Studio의 다른 부분에서 작업을 계속할 수 있습니다. 시간이 너무 오래 걸려서 작업을 취소하려면 서버 탐색기 도구 모음에서 **새로 고침 중지** 단추를 선택합니다.
+서버 탐색기에서 연결하거나 스토리지 계정에서 데이터를 가져올 때 작업을 완료하기까지 최대 1분이 소요될 수 있습니다. 서버 탐색기 연결할 수 없는 경우 작업 시간이 초과 될 수 있습니다. 데이터를 검색 하는 동안 Visual Studio의 다른 부분에서 작업을 계속할 수 있습니다. 시간이 너무 오래 걸려서 작업을 취소하려면 서버 탐색기 도구 모음에서 **새로 고침 중지** 단추를 선택합니다.
 
 ### <a name="to-refresh-blob-container-data"></a>Blob 컨테이너 데이터를 새로 고치려면
 

@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 319f9327cb83f3d05d26512f448b029b57d23b0c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 57841baaf147c2aae02ac89a8401c46d3bd64ca3
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62572199"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911675"
 ---
 # <a name="set-up-named-authentication-credentials"></a>명명된 인증 자격 증명 설정
 
@@ -37,7 +37,7 @@ Azure에 애플리케이션을 게시하거나 기존 클라우드 서비스를 
 
 ## <a name="next-steps"></a>다음 단계
 
-- [웹앱의 일반적인 개요](https://docs.microsoft.com/azure/app-service/)
-- [Azure App Service에 앱 배포](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git)
-- [Visual Studio를 사용하여 WebJob 배포](https://docs.microsoft.com/azure/app-service/websites-dotnet-deploy-webjobs)
-- [클라우드 서비스 만들기 및 배포](https://docs.microsoft.com/azure/cloud-services/cloud-services-how-to-create-deploy-portal)
+- [웹앱의 일반적인 개요](/azure/app-service/)
+- [Azure App Service에 앱 배포](/azure/app-service/app-service-deploy-local-git)
+- [Visual Studio를 사용하여 WebJob 배포](/azure/app-service/websites-dotnet-deploy-webjobs)
+- [클라우드 서비스 만들기 및 배포](/azure/cloud-services/cloud-services-how-to-create-deploy-portal)

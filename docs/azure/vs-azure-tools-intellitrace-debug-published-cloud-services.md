@@ -9,26 +9,26 @@ ms.custom: seodec18
 ms.workload: azure-vs
 ms.date: 03/21/2017
 ms.author: mikejo
-ms.openlocfilehash: e5304011b27717f8967d2fc77c66c0cf0e6bc908
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 35e790f9651e0f358fe60dd7ebdc131496259102
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555445"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911820"
 ---
-# <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Visual Studio 및 IntelliTrace를 사용하여 게시된 Azure 클라우드 서비스 디버깅
+# <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Visual Studio 및 IntelliTrace를 사용하여 게시된 Azure 클라우드 서비스 디버그
 IntelliTrace를 사용하여 Azure에서 실행할 때 역할 인스턴스에 대한 광범위한 정보를 기록할 수 있습니다. 문제의 원인을 찾아야 하는 경우 Azure에서 실행 중인 것처럼 Visual Studio에서 코드를 단계별로 거쳐 IntelliTrace 로그를 사용할 수 있습니다. 실제로 Azure에서 Azure 애플리케이션을 클라우드 서비스로 실행 중일 때 IntelliTrace는 키 코드 실행 및 환경 데이터를 기록하여 Visual Studio에서 기록된 데이터를 재생할 수 있습니다.
 
 Visual Studio Enterprise가 설치되어 있으며 Azure 애플리케이션 대상 .NET Framework 4 이상 버전이 있는 경우 IntelliTrace를 사용할 수 있습니다. IntelliTrace는 Azure 역할에 대한 정보를 수집합니다. 이러한 역할에 대한 가상 머신은 항상 64비트 운영 체제를 실행합니다.
 
-대체 방법으로 [원격 디버깅](http://go.microsoft.com/fwlink/p/?LinkId=623041)을 사용하여 Azure에서 실행 중인 클라우드 서비스로 직접 연결할 수 있습니다.
+대체 방법으로 [원격 디버깅](vs-azure-tools-debugging-cloud-services-overview.md)을 사용하여 Azure에서 실행 중인 클라우드 서비스로 직접 연결할 수 있습니다.
 
 > [!IMPORTANT]
 > IntelliTrace는 디버그 시나리오 전용이며 프로덕션 배포용으로 사용할 수 없습니다.
 >
 
 ## <a name="configure-an-azure-application-for-intellitrace"></a>IntelliTrace에 대한 Azure 애플리케이션 구성
-Azure 애플리케이션에 IntelliTrace를 사용하려면 Visual Studio Azure 프로젝트에서 애플리케이션을 만들고 게시해야 합니다. Azure에 게시하기 전에 Azure 애플리케이션에 대한 IntelliTrace를 구성해야 합니다. IntelliTrace를 구성하지 않고 애플리케이션을 게시하는 경우 프로젝트를 다시 게시해야 합니다. 자세한 내용은 [Visual Studio를 사용하여 Azure Cloud Services 게시](http://go.microsoft.com/fwlink/p/?LinkId=623012)를 참조하세요.
+Azure 애플리케이션에 IntelliTrace를 사용하려면 Visual Studio Azure 프로젝트에서 애플리케이션을 만들고 게시해야 합니다. Azure에 게시하기 전에 Azure 애플리케이션에 대한 IntelliTrace를 구성해야 합니다. IntelliTrace를 구성하지 않고 애플리케이션을 게시하는 경우 프로젝트를 다시 게시해야 합니다. 자세한 내용은 [Visual Studio를 사용하여 Azure Cloud Services 게시](vs-azure-tools-publishing-a-cloud-service.md)를 참조하세요.
 
 1. Azure 애플리케이션을 배포할 준비가 되면 프로젝트의 빌드 대상이 **디버그**로 설정되어 있는지 확인합니다.
 
@@ -44,7 +44,7 @@ Azure 애플리케이션에 IntelliTrace를 사용하려면 Visual Studio Azure 
 
     ![IntelliTrace 설정 링크](./media/vs-azure-tools-intellitrace-debug-published-cloud-services/intellitrace-settings-link.png)
 
-1. **IntelliTrace 설정** 대화 상자에서 기록할 이벤트, 호출 정보를 수집할지 여부, 로그를 수집할 모듈 및 프로세스, 기록에 할당할 공간의 크기를 지정할 수 있습니다. IntelliTrace에 대한 자세한 내용은 [IntelliTrace로 디버깅](http://go.microsoft.com/fwlink/?LinkId=214468)을 참조하세요.
+1. **IntelliTrace 설정** 대화 상자에서 기록할 이벤트, 호출 정보를 수집할지 여부, 로그를 수집할 모듈 및 프로세스, 기록에 할당할 공간의 크기를 지정할 수 있습니다. IntelliTrace에 대한 자세한 내용은 [IntelliTrace로 디버깅](../debugger/intellitrace.md)을 참조하세요.
 
     ![IntelliTrace 설정](./media/vs-azure-tools-intellitrace-debug-published-cloud-services/IC519063.png)
 

@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9e2e6d69e4c621d6be81a00a61482b71199bc0fc
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f7ac27b46252582b3982082a2a9a90a09223574f
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745751"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911616"
 ---
 # <a name="cc-assertions"></a>C/C++ 어설션
 어설션 문은 프로그램의 특정 지점에서 true로 간주 되는 조건을 지정 합니다. 해당 조건이 true가 아니면 어설션이 실패 하 고, 프로그램 실행이 중단 되 고, [어설션 실패 대화 상자가](../debugger/assertion-failed-dialog-box.md) 나타납니다.
@@ -81,7 +81,7 @@ MFC 또는 C 런타임 라이브러리 어설션으로 인해 디버거가 중�
 [항목 내용](#BKMK_In_this_topic)
 
 ## <a name="BKMK_Assertions_in_Debug_and_Release_builds"></a>디버그 및 릴리스 빌드의 어설션
-@No__t_0 정의 된 경우에만 어설션 문이 컴파일됩니다. 그렇지 않으면 컴파일러는 어설션을 null 문으로 처리 합니다. 따라서 어설션 문은 최종 릴리스 프로그램에서 오버 헤드 나 성능 비용을 부과 하지 않으며 `#ifdef` 지시문 사용을 피할 수 있습니다.
+`_DEBUG` 정의 된 경우에만 어설션 문이 컴파일됩니다. 그렇지 않으면 컴파일러는 어설션을 null 문으로 처리 합니다. 따라서 어설션 문은 최종 릴리스 프로그램에서 오버 헤드 나 성능 비용을 부과 하지 않으며 `#ifdef` 지시문 사용을 피할 수 있습니다.
 
 ## <a name="BKMK_Side_effects_of_using_assertions"></a>어설션을 사용할 경우의 부작용
 코드에 어설션을 추가 하는 경우 어설션에 부작용이 없는지 확인 합니다. 예를 들어 `nM` 값을 수정 하는 다음 어설션을 고려 하십시오.
@@ -90,7 +90,7 @@ MFC 또는 C 런타임 라이브러리 어설션으로 인해 디버거가 중�
 ASSERT(nM++ > 0); // Don't do this!
 ```
 
-@No__t_0 식은 프로그램의 릴리스 버전에서 계산 되지 않기 때문에 디버그 및 릴리스 버전에는 `nM` 값이 다릅니다. MFC에서이 문제를 방지 하기 위해 `ASSERT` 대신 [VERIFY](/cpp/mfc/reference/diagnostic-services#verify) 매크로를 사용할 수 있습니다. `VERIFY`는 모든 버전의 식을 계산 하지만 릴리스 버전의 결과를 확인 하지는 않습니다.
+`ASSERT` 식은 프로그램의 릴리스 버전에서 계산 되지 않기 때문에 디버그 및 릴리스 버전에는 `nM` 값이 다릅니다. MFC에서이 문제를 방지 하기 위해 `ASSERT` 대신 [VERIFY](/cpp/mfc/reference/diagnostic-services#verify) 매크로를 사용할 수 있습니다. `VERIFY`는 모든 버전의 식을 계산 하지만 릴리스 버전의 결과를 확인 하지는 않습니다.
 
 함수를 계산할 때 예기치 않은 부작용이 발생할 수 있으므로 어설션 문에서 함수 호출을 사용 하는 데 특히 주의 해야 합니다.
 
@@ -108,12 +108,12 @@ CRTDBG.H입니다. H 헤더 파일은 어설션 검사를 위한 [_ASSERT 및 _A
 
 | 매크로 | 결과 |
 |------------| - |
-| `_ASSERT` | 지정 된 식이 FALSE 이면 `_ASSERT` 파일 이름과 줄 번호를 반환 합니다. |
-| `_ASSERTE` | @No__t_0와 같으며 어설션된 식의 문자열 표현을 포함 합니다. |
+| `_ASSERT` | 지정 된 식이 FALSE 이면 `_ASSERT`파일 이름과 줄 번호를 반환 합니다. |
+| `_ASSERTE` | `_ASSERT`와 같으며 어설션된 식의 문자열 표현을 포함 합니다. |
 
 `_ASSERTE` FALSE로 설정 된 어설션된 식을 보고 하므로 더 강력 합니다. 이는 소스 코드를 참조 하지 않고 문제를 식별 하는 데 충분할 수 있습니다. 그러나 응용 프로그램의 디버그 버전에는 `_ASSERTE`를 사용 하 여 어설션된 각 식에 대 한 문자열 상수가 포함 됩니다. 많은 `_ASSERTE` 매크로를 사용 하는 경우 이러한 문자열 식은 많은 양의 메모리를 차지 합니다. 이로 인해 문제가 발생 하는 경우 `_ASSERT`를 사용 하 여 메모리를 절약 합니다.
 
-@No__t_0 정의 된 경우 `_ASSERTE` 매크로는 다음과 같이 정의 됩니다.
+`_DEBUG` 정의 된 경우 `_ASSERTE` 매크로는 다음과 같이 정의 됩니다.
 
 ```cpp
 #define _ASSERTE(expr) \
@@ -156,7 +156,7 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
 [항목 내용](#BKMK_In_this_topic)
 
 ## <a name="BKMK_MFC_assertions"></a>MFC 어설션
-MFC는 어설션 검사를 위한 [ASSERT](https://msdn.microsoft.com/Library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) 매크로를 정의 합니다. 또한 `CObject` 파생 개체의 내부 상태를 확인 하는 `MFC ASSERT_VALID` 및 `CObject::AssertValid` 메서드를 정의 합니다.
+MFC는 어설션 검사를 위한 [ASSERT](https://msdn.microsoft.com/Library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) 매크로를 정의 합니다. 또한 `CObject`파생 개체의 내부 상태를 확인 하는 `MFC ASSERT_VALID` 및 `CObject::AssertValid` 메서드를 정의 합니다.
 
 MFC `ASSERT` 매크로의 인수가 0 또는 false로 평가 되는 경우 매크로는 프로그램 실행을 중단 하 고 사용자에 게 경고 합니다. 그렇지 않으면 실행이 계속 됩니다.
 
@@ -169,16 +169,16 @@ int x = SomeFunc(y);
 ASSERT(x >= 0);   //  Assertion fails if x is negative
 ```
 
-[IsKindOf](https://docs.microsoft.com/cpp/mfc/reference/cobject-class#iskindof) 함수와 함께 ASSERT를 사용 하 여 함수 인수에 대 한 형식 검사를 제공할 수 있습니다.
+[IsKindOf](/cpp/mfc/reference/cobject-class#iskindof) 함수와 함께 ASSERT를 사용 하 여 함수 인수에 대 한 형식 검사를 제공할 수 있습니다.
 
 ```cpp
 ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );
 ```
 
-@No__t_0 매크로는 릴리스 버전에서 코드를 생성 하지 않습니다. 릴리스 버전에서 식을 평가 해야 하는 경우 ASSERT 대신 [VERIFY](https://msdn.microsoft.com/library/s8c29sw2.aspx#verify) 매크로를 사용 합니다.
+`ASSERT` 매크로는 릴리스 버전에서 코드를 생성 하지 않습니다. 릴리스 버전에서 식을 평가 해야 하는 경우 ASSERT 대신 [VERIFY](https://msdn.microsoft.com/library/s8c29sw2.aspx#verify) 매크로를 사용 합니다.
 
 ### <a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a>MFC ASSERT_VALID 및 CObject:: AssertValid
-[CObject:: AssertValid](https://docs.microsoft.com/cpp/mfc/reference/cobject-class#assertvalid) 메서드는 개체의 내부 상태에 대 한 런타임 검사를 제공 합니다. @No__t_1에서 클래스를 파생 시킬 때 `AssertValid`를 재정의할 필요는 없지만,이를 통해 클래스를 더욱 안정적으로 만들 수 있습니다. `AssertValid`는 모든 개체의 멤버 변수에 대해 어설션을 수행 하 여 유효한 값이 포함 되어 있는지 확인 해야 합니다. 예를 들어 포인터 멤버 변수가 NULL이 아닌 것을 확인 해야 합니다.
+[CObject:: AssertValid](/cpp/mfc/reference/cobject-class#assertvalid) 메서드는 개체의 내부 상태에 대 한 런타임 검사를 제공 합니다. `CObject`에서 클래스를 파생 시킬 때 `AssertValid`를 재정의할 필요는 없지만,이를 통해 클래스를 더욱 안정적으로 만들 수 있습니다. `AssertValid`는 모든 개체의 멤버 변수에 대해 어설션을 수행 하 여 유효한 값이 포함 되어 있는지 확인 해야 합니다. 예를 들어 포인터 멤버 변수가 NULL이 아닌 것을 확인 해야 합니다.
 
 다음 예제에서는 `AssertValid` 함수를 선언 하는 방법을 보여 줍니다.
 
@@ -197,7 +197,7 @@ public:
 };
 ```
 
-@No__t_0를 재정의 하는 경우 고유한 검사를 수행 하기 전에 `AssertValid`의 기본 클래스 버전을 호출 합니다. 그런 다음 ASSERT 매크로를 사용 하 여 다음과 같이 파생 클래스에 고유한 멤버를 확인 합니다.
+`AssertValid`를 재정의 하는 경우 고유한 검사를 수행 하기 전에 `AssertValid`의 기본 클래스 버전을 호출 합니다. 그런 다음 ASSERT 매크로를 사용 하 여 다음과 같이 파생 클래스에 고유한 멤버를 확인 합니다.
 
 ```cpp
 #ifdef _DEBUG
@@ -217,7 +217,7 @@ void CPerson::AssertValid() const
 
 멤버 변수에 개체를 저장 하는 경우 `ASSERT_VALID` 매크로를 사용 하 여 해당 클래스가 `AssertValid`를 재정의 하는 경우 내부 유효성을 테스트할 수 있습니다.
 
-예를 들어 [CObList](/cpp/mfc/reference/coblist-class) 를 해당 멤버 변수 중 하나에 저장 하는 클래스 `CMyData`를 생각해 보겠습니다. @No__t_0 변수 `m_DataList`는 `CPerson` 개체의 컬렉션을 저장 합니다. @No__t_0의 약식 선언은 다음과 같습니다.
+예를 들어 [CObList](/cpp/mfc/reference/coblist-class) 를 해당 멤버 변수 중 하나에 저장 하는 클래스 `CMyData`를 생각해 보겠습니다. `CObList` 변수 `m_DataList`는 `CPerson` 개체의 컬렉션을 저장 합니다. `CMyData`의 약식 선언은 다음과 같습니다.
 
 ```cpp
 class CMyData : public CObject
@@ -235,7 +235,7 @@ class CMyData : public CObject
 };
 ```
 
-@No__t_1에서 `AssertValid` 재정의는 다음과 같습니다.
+`CMyData`에서 `AssertValid` 재정의는 다음과 같습니다.
 
 ```cpp
 #ifdef _DEBUG
@@ -250,11 +250,11 @@ void CMyData::AssertValid( ) const
 #endif
 ```
 
-`CMyData`는 `AssertValid` 메커니즘을 사용 하 여 데이터 멤버에 저장 된 개체의 유효성을 테스트 합니다. @No__t_1의 재정의 `AssertValid`는 자체 m_pDataList 멤버 변수에 대해 `ASSERT_VALID` 매크로를 호출 합니다.
+`CMyData`는 `AssertValid` 메커니즘을 사용 하 여 데이터 멤버에 저장 된 개체의 유효성을 테스트 합니다. `CMyData`의 재정의 `AssertValid`는 자체 m_pDataList 멤버 변수에 대해 `ASSERT_VALID` 매크로를 호출 합니다.
 
 클래스 `CObList`도 `AssertValid`를 재정의 하므로 유효성 테스트는이 수준에서 중지 되지 않습니다. 이 재정의는 목록의 내부 상태에서 추가 유효성 테스트를 수행 합니다. 따라서 `CMyData` 개체에 대 한 유효성 테스트는 저장 된 `CObList` 목록 개체의 내부 상태에 대 한 추가 유효성 테스트를 발생 시킵니다.
 
-몇 가지 추가 작업을 통해 목록에 저장 된 `CPerson` 개체에 대 한 유효성 테스트를 추가할 수도 있습니다. @No__t_1에서 `CPersonList` 클래스를 파생 시키고 `AssertValid`를 재정의할 수 있습니다. 재정의에서 `CObject::AssertValid`를 호출한 다음 목록 전체를 반복 하 여 목록에 저장 된 각 `CPerson` 개체의 `AssertValid`를 호출 합니다. 이 항목의 시작 부분에 표시 된 `CPerson` 클래스는 이미 `AssertValid`를 재정의 합니다.
+몇 가지 추가 작업을 통해 목록에 저장 된 `CPerson` 개체에 대 한 유효성 테스트를 추가할 수도 있습니다. `CObList`에서 `CPersonList` 클래스를 파생 시키고 `AssertValid`를 재정의할 수 있습니다. 재정의에서 `CObject::AssertValid`를 호출한 다음 목록 전체를 반복 하 여 목록에 저장 된 각 `CPerson` 개체의 `AssertValid`를 호출 합니다. 이 항목의 시작 부분에 표시 된 `CPerson` 클래스는 이미 `AssertValid`를 재정의 합니다.
 
 이는 디버깅을 위해 빌드할 때 강력한 메커니즘입니다. 이후에 릴리스를 빌드할 때 메커니즘이 자동으로 꺼집니다.
 
@@ -303,7 +303,7 @@ ASSERT(iMols<=numMols); // MFC version
 _ASSERT(iMols<=numMols); // CRT version
 ```
 
-@No__t_0에서 계산 되는 molecules의 수는 항상 `numMols` 총 molecules 수보다 작거나 같아야 합니다. 루프를 시각적으로 검사 하는 경우에는 반드시 필요한 것으로 표시 되지 않으므로 루프에서 해당 조건을 테스트할 때 어설션 문이 사용 됩니다.
+`iMols`에서 계산 되는 molecules의 수는 항상 `numMols`총 molecules 수보다 작거나 같아야 합니다. 루프를 시각적으로 검사 하는 경우에는 반드시 필요한 것으로 표시 되지 않으므로 루프에서 해당 조건을 테스트할 때 어설션 문이 사용 됩니다.
 
 [항목 내용](#BKMK_In_this_topic)
 
@@ -320,7 +320,7 @@ ASSERT(!myErr); -- MFC version
 _ASSERT(!myErr); -- CRT version
 ```
 
-오류 처리 코드가 제대로 작동 하는 경우 오류를 처리 하 고 어설션이 도달 하기 전에 0으로 다시 설정 `myErr` 합니다. @No__t_0에 다른 값이 있으면 어설션이 실패 하 고 프로그램이 중단 되며 [어설션 실패 대화 상자가](../debugger/assertion-failed-dialog-box.md) 나타납니다.
+오류 처리 코드가 제대로 작동 하는 경우 오류를 처리 하 고 어설션이 도달 하기 전에 0으로 다시 설정 `myErr` 합니다. `myErr`에 다른 값이 있으면 어설션이 실패 하 고 프로그램이 중단 되며 [어설션 실패 대화 상자가](../debugger/assertion-failed-dialog-box.md) 나타납니다.
 
 그러나 어설션 문은 오류 처리 코드를 대체 하지 않습니다. 다음 예에서는 최종 릴리스 코드의 문제를 일으킬 수 있는 어설션 문을 보여 줍니다.
 

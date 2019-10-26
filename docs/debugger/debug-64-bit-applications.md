@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 849862f98fb90cdd742e1794ecb57c35a9aaca73
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3a805942e85540b776ceacd972a09a71bb80cbb4
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745591"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911581"
 ---
 # <a name="debug-64-bit-applications"></a>64비트 애플리케이션 디버그
 로컬 컴퓨터나 원격 컴퓨터에서 실행되는 64비트 애플리케이션을 디버깅할 수 있습니다.
@@ -54,7 +54,7 @@ ms.locfileid: "72745591"
 
 ## <a name="see-also"></a>참조
 
-- [64비트 애플리케이션](https://docs.microsoft.com/dotnet/framework/64-bit-apps)
+- [64비트 애플리케이션](/dotnet/framework/64-bit-apps)
 - [64비트용 프로그램 구성](/cpp/build/configuring-programs-for-64-bit-visual-cpp)
 - [Visual Studio IDE 64비트 지원](../ide/visual-studio-ide-64-bit-support.md)
 - [덤프 파일 사용](../debugger/using-dump-files.md)

@@ -16,28 +16,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f9df52bee88722006c21c28e88a2e32113942e4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1e719563c831c50cc325d70d0de431f4be1bf514
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732752"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911424"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>방법: 네이티브 코드에 스레드 이름 설정
 스레드 명명 기능은 Visual Studio의 모든 버전에서 사용할 수 있습니다. 스레드 이름 지정은 실행 중인 프로세스를 디버그할 때 **스레드** 창에서 관심 있는 스레드를 식별 하는 데 유용 합니다. Recognizably로 명명 된 스레드는 충돌 덤프 검사를 통해 사후 사후 디버깅을 수행 하 고 다양 한 도구를 사용 하 여 성능 캡처를 분석할 때 유용할 수 있습니다.
 
 ## <a name="ways-to-set-a-thread-name"></a>스레드 이름을 설정 하는 방법
 
-스레드 이름을 설정 하는 방법에는 두 가지가 있습니다. 첫 번째는 [Setthreaddescription](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreaddescription) 함수를 통해입니다. 두 번째는 Visual Studio 디버거가 프로세스에 연결 되어 있는 동안 특정 예외를 throw 하는 것입니다. 각 접근 방식에는 이점 및 주의 사항이 있습니다. @No__t_0 사용은 Windows 10, 버전 1607 또는 Windows Server 2016부터 지원 됩니다.
+스레드 이름을 설정 하는 방법에는 두 가지가 있습니다. 첫 번째는 [Setthreaddescription](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreaddescription) 함수를 통해입니다. 두 번째는 Visual Studio 디버거가 프로세스에 연결 되어 있는 동안 특정 예외를 throw 하는 것입니다. 각 접근 방식에는 이점 및 주의 사항이 있습니다. `SetThreadDescription` 사용은 Windows 10, 버전 1607 또는 Windows Server 2016부터 지원 됩니다.
 
 원하는 경우 _두_ 방법을 함께 사용할 수 있습니다. 이러한 방식은 서로 독립적 이기 때문입니다.
 
-### <a name="set-a-thread-name-by-using-setthreaddescription"></a>@No__t_0를 사용 하 여 스레드 이름 설정
+### <a name="set-a-thread-name-by-using-setthreaddescription"></a>`SetThreadDescription`를 사용 하 여 스레드 이름 설정
 
 혜택:
 * 디버거는 SetThreadDescription이 호출 될 때 프로세스가 프로세스에 연결 되었는지 여부에 관계 없이 Visual Studio에서 디버그할 때 표시 됩니다.
 * Visual Studio에서 크래시 덤프를 로드 하 여 사후 사후 디버깅을 수행할 때 스레드 이름이 표시 됩니다.
-* [WinDbg](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools) 디버거와 [Windows performance analyzer](https://docs.microsoft.com/windows-hardware/test/wpt/windows-performance-analyzer) performance analyzer와 같은 다른 도구를 사용 하는 경우에도 스레드 이름이 표시 됩니다.
+* [WinDbg](/windows-hardware/drivers/debugger/debugger-download-tools) 디버거와 [Windows performance analyzer](/windows-hardware/test/wpt/windows-performance-analyzer) performance analyzer와 같은 다른 도구를 사용 하는 경우에도 스레드 이름이 표시 됩니다.
 
 주의 사항:
 * 스레드 이름은 Visual Studio 2017 버전 15.6 이상 버전 에서만 볼 수 있습니다.
@@ -74,7 +74,7 @@ int main()
 
 *예제:*
 
-아래에 표시 된 `SetThreadName` 함수는이 예외 기반 접근 방법을 보여 줍니다. @No__t_1 호출이 완료 된 후 `threadName` 매개 변수에 대 한 메모리가 해제 될 수 있도록 스레드 이름이 스레드에 자동으로 복사 됩니다.
+아래에 표시 된 `SetThreadName` 함수는이 예외 기반 접근 방법을 보여 줍니다. `SetThreadName` 호출이 완료 된 후 `threadName` 매개 변수에 대 한 메모리가 해제 될 수 있도록 스레드 이름이 스레드에 자동으로 복사 됩니다.
 
 ```C++
 //

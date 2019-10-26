@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/26/2017
 ms.author: ghogen
-ms.openlocfilehash: 649f99911726e562f9602fe6697591ec6cfb96eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ca65086ce7ce09a1ca288c2f5cd04c31e00f8e95
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62561015"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911892"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Visual Studio 연결 서비스를 사용하여 Azure Storage 추가
 
@@ -67,14 +67,14 @@ Visual Studio를 사용하면 **연결된 서비스 추가** 대화 상자에서
 
 대화 상자를 완료하면 Visual Studio는 참조를 추가하고 특정 구성 파일을 수정합니다. 특정 변경 내용은 프로젝트 형식에 따라 달라집니다.
 
-- ASP.NET 프로젝트 - [변경된 내용 – ASP.NET 프로젝트](http://go.microsoft.com/fwlink/p/?LinkId=513126)
-- ASP.NET Core 프로젝트 - [변경된 내용 – ASP.NET 5 프로젝트](http://go.microsoft.com/fwlink/p/?LinkId=513124)
-- 클라우드 서비스 프로젝트(웹 역할 및 작업자 역할) - [변경된 내용 – 클라우드 서비스 프로젝트](http://go.microsoft.com/fwlink/p/?LinkId=516965)
+- ASP.NET 프로젝트 - [변경된 내용 – ASP.NET 프로젝트](/azure/visual-studio/vs-storage-aspnet-getting-started-blobs)
+- ASP.NET Core 프로젝트 - [변경된 내용 – ASP.NET 5 프로젝트](/azure/visual-studio/vs-storage-aspnet5-getting-started-blobs)
+- 클라우드 서비스 프로젝트(웹 역할 및 작업자 역할) - [변경된 내용 – 클라우드 서비스 프로젝트](/azure/visual-studio/vs-storage-cloud-services-getting-started-blobs)
 - WebJob 프로젝트 - [변경된 내용 -WebJob 프로젝트](/azure/visual-studio/vs-storage-webjobs-what-happened)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [MSDN 포럼: Azure Storage](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
-- [Microsoft Azure Storage 팀 블로그](http://blogs.msdn.com/b/windowsazurestorage/)
-- [Azure Storage 설명서](https://docs.microsoft.com/azure/storage/)
+- [Microsoft Azure Storage 팀 블로그](https://blogs.msdn.microsoft.com/windowsazurestorage/)
+- [Azure Storage 설명서](/azure/storage/)
 - [연결된 서비스(Mac용 Visual Studio)](/visualstudio/mac/connected-services)

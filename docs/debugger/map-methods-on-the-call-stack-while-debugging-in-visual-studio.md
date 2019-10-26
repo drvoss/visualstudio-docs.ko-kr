@@ -29,18 +29,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62fb77590a20b0e31648cab10f310851fd65820e
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 135c7c66c9c6602f8c2e32bbdc1ba6e2fd28f548
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180000"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911513"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>디버깅 하는 동안 호출 스택의 시각적 맵 만들기 (C#, Visual Basic, C++, JavaScript)
 
 디버깅하는 동안 호출 스택을 시각적으로 추적할 코드 맵을 만듭니다. 맵을 기록해 두면 코드에서 어떤 작업을 하고 있는지 추적하여 버그를 찾는 데 집중할 수 있습니다.
 
-연습을 보려면 다음 비디오를 시청 하세요. [비디오: 코드 맵 디버거 통합으로 시각적으로 디버그 (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
+연습에서는이 비디오를 시청 하세요. [비디오: 코드 맵 디버거 통합 (채널 9)를 사용 하 여 시각적으로 디버그](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012Debug-visually-with-Code-Map-debugger-integration)
 
 코드 맵과 함께 사용할 수 있는 명령 및 작업에 대 한 자세한 내용은 [코드 맵 찾아보기 및 다시 정렬](../modeling/browse-and-rearrange-code-maps.md)을 참조 하세요.
 
@@ -53,9 +53,9 @@ ms.locfileid: "70180000"
 
 ## <a name="MapStack"></a> 호출 스택 매핑
 
-1. C#Visual Basic C++Visual Studio Enterprise, 또는 JavaScript 프로젝트에서 **디버그** > **디버깅 시작** 을 선택 하거나 **F5**키를 눌러 디버깅을 시작 합니다.
+1. C#Visual Basic C++Visual Studio Enterprise, 또는 JavaScript 프로젝트에서 **디버그** > **디버깅 시작** 또는 **F5**키를 선택 하 여 디버깅을 시작 합니다.
 
-1. 앱이 중단 모드에 들어가거나 함수를 한 단계씩 실행 하면 **디버그** > **코드 맵**을 선택 하거나 **ctrl**+**Shift**+ **`** 를 누릅니다.
+1. 앱이 중단 모드로 들어가거나 함수를 한 단계씩 실행 한 후 **디버그** > **코드 맵**을 선택 하거나 **ctrl**+**Shift**+ **`** 를 누릅니다.
 
    현재 호출 스택은 새 코드 맵에 주황색으로 표시됩니다.
 
@@ -77,7 +77,7 @@ ms.locfileid: "70180000"
 - **호출 스택** 창에서 마우스 오른쪽 단추를 클릭 하 고 **외부 코드 표시**를 선택 합니다.
 
   ![호출 스택 창을 사용 하 여 외부 코드 표시](../debugger/media/debuggermap_callstackmenu.png "DebuggerMap_CallStackMenu")
-- 또는 Visual Studio **Tools** (또는 **디버그**) > **옵션** > **디버깅**에서 **내 코드만 사용** 을 선택 취소 합니다.
+- 또는 **디버깅**을 > > **옵션** 을 사용 하 여 Visual Studio **Tools** 에서 **내 코드만 사용** (또는 **디버그**)을 선택 취소 합니다.
 
   ![옵션 대화 상자를 사용 하 여 외부 코드 표시](../debugger/media/debuggermap_debugoptions.png "DebuggerMap_DebugOptions")
 
@@ -97,9 +97,9 @@ ms.locfileid: "70180000"
 
 주석을 추가 하 여 코드에서 발생 하는 상황을 추적할 수 있습니다.
 
-주석을 추가 하려면 코드 맵을 마우스 오른쪽 단추로 클릭 하 고**새 주석** **편집** > 을 선택한 다음 주석을 입력 합니다.
+주석을 추가 하려면 코드 맵을 마우스 오른쪽 단추로 클릭 하 고 **편집** > **새 주석**을 선택한 다음 주석을 입력 합니다.
 
-주석에 새 줄을 추가 하려면 **Shift**+**enter**를 누릅니다.
+주석에 새 줄을 추가 하려면 **Shift** **+enter**키를 누릅니다.
 
  ![코드 맵의 호출 스택에 주석 추가](../debugger/media/debuggermap_addcomment.png "DebuggerMap_AddComment")
 
@@ -109,7 +109,7 @@ ms.locfileid: "70180000"
 
 ![다음 호출 스택으로 코드 맵 업데이트](../debugger/media/debuggermap_addclearcallstack.png "DebuggerMap_AddClearCallStack")
 
-새 호출 스택이 자동으로 추가 되지 않도록 하려면 코드 맵 도구 ![]모음에서 자동으로 코드 맵에(../debugger/media/debuggermap_automaticupdateicon.gif "호출 스택") 표시를 코드 맵에 자동으로 표시를 선택 합니다. 맵은 기존 호출 스택을 계속 강조 표시 합니다. 현재 호출 스택을 맵에 수동으로 추가 하려면 다음을 누릅니다 **Ctrl**+**Shift**+ **`** 합니다.
+새 호출 스택이 자동으로 추가 되지 않도록 하려면 코드 맵 도구 모음에서 ![코드 맵에 자동으로 호출 스택 표시](../debugger/media/debuggermap_automaticupdateicon.gif "코드 맵에 호출 스택 자동 표시") 를 선택 합니다. 맵은 기존 호출 스택을 계속 강조 표시 합니다. 현재 호출 스택을 맵에 수동으로 추가 하려면 **ctrl**+**shift**+ **`** 를 누릅니다.
 
 ## <a name="AddRelatedCode"></a> 맵에 관련 코드 추가
 
@@ -119,7 +119,7 @@ ms.locfileid: "70180000"
 
 ![코드 맵에서 메서드에 대 한 코드 정의로 이동](../debugger/media/debuggermap_gotocodedefinition.png "DebuggerMap_GoToCodeDefinition")
 
-추적 하려는 항목을 지도에 추가 하려면 메서드를 마우스 오른쪽 단추로 클릭 하 고 추적 하려는 항목을 선택 합니다. 가장 최근 추가된 항목은 녹색으로 표시됩니다.
+추적 하려는 항목을 지도에 추가 하려면 메서드를 마우스 오른쪽 단추로 클릭 하 고 추적 하려는 항목을 선택 합니다. 가장 최근에 추가 된 항목은 녹색으로 표시 됩니다.
 
 ![호출 스택 코드 맵의 메서드와 관련 된 필드](../debugger/media/debuggermap_showedfields.png "DebuggerMap_ShowedFields")
 
@@ -143,7 +143,7 @@ ms.locfileid: "70180000"
 
  `Repaint`를 제외하고 맵 호출 `undo`에 대한 모든 사용자 제스처를 확인할 수 있습니다. `undo`가 즉시 작동하지 않는 이유를 이해할 수 있을 것입니다.
 
- 버그를 수정 하 고 응용 프로그램을 계속 실행 한 후 맵은의 새 호출 `undo` 을에 `Repaint`추가 합니다.
+ 버그를 수정 하 고 응용 프로그램을 계속 실행 한 후 맵은 `undo`의 새 호출을 `Repaint`에 추가 합니다.
 
  ![코드 맵의 호출 스택에 새 메서드 호출 추가](../debugger/media/debuggermap_addnewcallforrepaint.png "DebuggerMap_AddNewCallForRepaint")
 
@@ -153,12 +153,12 @@ ms.locfileid: "70180000"
 
 맵을 공유 하거나 저장 하려면 코드 맵 도구 모음에서 **공유** 를 사용 합니다.
 
-![다른 사람과 호출 스택 코드 맵 공유](../debugger/media/debuggermap_sharewithothers.png "다른 사람과 호출 스택 코드 맵 공유")
+![다른 사람과 호출 스택 코드 맵 공유](../debugger/media/debuggermap_sharewithothers.png "다른 사용자와 호출 스택 코드 맵 공유")
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 [솔루션 전체의 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)
 
-[코드 맵을 사용하여 응용 프로그램 디버그](../modeling/use-code-maps-to-debug-your-applications.md)
+[코드 맵을 사용하여 애플리케이션 디버그](../modeling/use-code-maps-to-debug-your-applications.md)
 
 [코드 맵 분석기를 사용하여 잠재적 문제 찾기](../modeling/find-potential-problems-using-code-map-analyzers.md)
 

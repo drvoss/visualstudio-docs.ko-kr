@@ -9,14 +9,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 5314e92065cb29691aca75d424a331d10284a558
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 7b9df8c5609c92a6b6631d1ed9fdda8d65e9b605
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253424"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911802"
 ---
-# <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>여러 서비스 구성을 사용하여 Visual Studio에서 Azure 프로젝트 구성
+# <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>여러 서비스 구성을 사용하도록 Visual Studio에서 Azure 프로젝트 구성
 
 Visual Studio의 Azure 클라우드 서비스 프로젝트에는 `ServiceDefinition.csdef`, `ServiceConfiguration.Local.cscfg` 및 `ServiceConfiguration.Cloud.cscfg`와 같은 세 개의 구성 파일이 포함되어 있습니다.
 
@@ -55,7 +55,7 @@ HTTPS 엔드포인트를 이미 추가한 경우, HTTPS 엔드포인트 옵션�
 
 ## <a name="settings-page"></a>설정 페이지
 
-**설정** 페이지에서 설정을 구성에 이름-값 쌍으로 추가할 수 있습니다. 역할에서 실행 되는 코드는 [Azure 관리 라이브러리](http://go.microsoft.com/fwlink?LinkID=171026)에서 제공 하는 클래스 (특히 [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx) 메서드)를 사용 하 여 런타임에 구성 설정의 값을 읽을 수 있습니다.
+**설정** 페이지에서 설정을 구성에 이름-값 쌍으로 추가할 수 있습니다. 역할에서 실행 되는 코드는 [Azure 관리 라이브러리](/previous-versions/azure/dn602775(v=azure.11))에서 제공 하는 클래스 (특히 [GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100)) 메서드)를 사용 하 여 런타임에 구성 설정의 값을 읽을 수 있습니다.
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>스토리지 계정에 대한 연결 문자열 구성
 
@@ -95,7 +95,7 @@ HTTPS 엔드포인트를 이미 추가한 경우, HTTPS 엔드포인트 옵션�
 
 ## <a name="certificates-page"></a>인증서 페이지
 
-**인증서** 속성 페이지는 서비스 구성 인증서에 대한 정보를 추가합니다. 인증서는 서비스와 함께 패키징되지 않습니다. [Azure Portal](http://portal.azure.com)을 통해 Azure에 별도로 인증서를 업로드해야 합니다.
+**인증서** 속성 페이지는 서비스 구성 인증서에 대한 정보를 추가합니다. 인증서는 서비스와 함께 패키징되지 않습니다. [Azure Portal](https://portal.azure.com)을 통해 Azure에 별도로 인증서를 업로드해야 합니다.
 
 여기서는 인증서를 추가하여 서비스 구성에 대한 인증서의 정보를 추가합니다. 인증서는 서비스와 함께 패키징되지 않습니다. Azure Portal을 통해 별도로 인증서를 업로드해야 합니다.
 

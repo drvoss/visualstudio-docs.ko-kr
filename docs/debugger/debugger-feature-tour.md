@@ -1,9 +1,9 @@
 ---
 title: 디버거 소개
 description: Visual Studio 디버거를 사용하여 애플리케이션 디버깅 시작
-ms.custom: seoapril2019
+ms.custom: ''
 ms.date: 04/08/2019
-ms.topic: quickstart
+ms.topic: conceptual
 helpviewer_keywords:
 - debugger
 ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
@@ -12,16 +12,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06665aa6a30d67e27f654e92029dcbd3d2aea2ef
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
-ms.translationtype: HT
+ms.openlocfilehash: 40b7a097f0544459083b5217e6ad97f2b3f31bfa
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349745"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911632"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>먼저 Visual Studio 디버거 살펴보기
 
-이 항목에서는 Visual Studio에서 제공 하는 디버거 도구를 소개 합니다. Visual Studio 컨텍스트에서 *애플리케이션을 디버그*하는 경우는 일반적으로 디버거가 연결된 상태에서(즉 디버거 모두에서) 애플리케이션이 실행되고 있음을 의미합니다. 이렇게 하면 디버거는 실행되는 동안 코드에서 수행하는 작업을 확인할 수 있는 여러 가지 방법을 제공합니다. 코드를 단계별로 실행하고, 변수에 저장된 값을 살펴보고, 변수에 대한 조사식을 설정하여 값이 변경되는 경우를 확인하며, 코드의 실행 경로 등을 검사할 수 있습니다. 처음으로 코드를 디버그한 경우 이 항목를 계속 진행하기 전에 먼저 [완전 초보자를 위한 디버깅](../debugger/debugging-absolute-beginners.md)을 참조하는 것이 좋습니다.
+이 항목에서는 Visual Studio에서 제공 하는 디버거 도구를 소개 합니다. Visual Studio 컨텍스트에서 *애플리케이션을 디버그*하는 경우는 일반적으로 디버거가 연결된 상태에서(즉 디버거 모두에서) 애플리케이션이 실행되고 있음을 의미합니다. 이렇게 하면 디버거는 실행되는 동안 코드에서 수행하는 작업을 확인할 수 있는 여러 가지 방법을 제공합니다. 코드를 단계별로 실행 하 고 변수에 저장 된 값을 확인할 수 있습니다. 변수에 대 한 조사식을 설정 하 여 값이 변경 되 면 코드의 실행 경로를 확인할 수 있습니다. 처음으로 코드를 디버깅 하는 경우이 항목을 진행 하기 전에 [절대 초보자를 위한 디버깅](../debugger/debugging-absolute-beginners.md) 을 읽어야 할 수 있습니다.
 
 여기에 설명된 기능은 C#, C++, Visual Basic, JavaScript 및 Visual Studio에서 지원하는 다른 언어(언급한 경우 제외)에 적용할 수 있습니다.
 
@@ -33,7 +33,7 @@ ms.locfileid: "72349745"
 
 ![중단점 설정](../debugger/media/dbg-tour-set-a-breakpoint.gif "중단점 설정")
 
-**F5** 키(**디버그 > 디버깅 시작**) 또는 디버그 도구 모듬에서 **디버깅 시작** 단추 ![디버깅 시작](../debugger/media/dbg-tour-start-debugging.png "디버깅 시작")를 누르면 디버거에 발생되는 첫 번째 중단점에서 디버거가 실행됩니다. 앱이 아직 실행되고 있지 않으면 F5 키를 사용하여 디버거를 시작하고 첫 번째 중단점에서 중지합니다.
+디버그 도구 모음에서 **F5** 키 (**디버그 > 디버깅** ![시작)](../debugger/media/dbg-tour-start-debugging.png "디버깅 시작") **또는 디버깅 시작 단추를** 누르거나, 디버거가 발견 한 첫 번째 중단점까지 실행 합니다. 앱이 아직 실행되고 있지 않으면 F5 키를 사용하여 디버거를 시작하고 첫 번째 중단점에서 중지합니다.
 
 중단점은 자세히 검사하려는 코드 줄 또는 코드 섹션을 아는 경우 유용한 기능입니다.
 
@@ -43,11 +43,11 @@ ms.locfileid: "72349745"
 
 디버거가 연결된 상태로 앱을 시작하려면 **F11**(**디버그 > 한 단계씩 코드 실행**)을 누릅니다. F11 키는 **한 단계씩 코드 실행** 명령으로서 한 번에 하나의 명령문씩 앱을 실행합니다. F11 키로 앱을 시작하는 경우 디버거는 실행되는 첫 번째 명령문에서 중단됩니다.
 
-![F11 키 한 단계씩 코드 실행](../debugger/media/dbg-tour-f11.png "F11 키 한 단계씩 코드 실행")
+![F11 한 단계씩 코드 실행](../debugger/media/dbg-tour-f11.png "F11 한 단계씩 코드 실행")
 
 노란색 화살표는 디버거가 일시 중지한 명령문을 나타내며, 동일한 지점에서 앱 실행을 일시 중단하기도 합니다(이 명령문은 아직 실행되지 않음).
 
-F11 키는 실행 흐름을 가장 자세히 검사할 수 있는 좋은 방법입니다. (코드를 통해 더 빨리 이동하기 위해 몇 가지 다른 옵션도 표시합니다.) 기본적으로 디버거는 사용자 코드가 아닌 코드를 건너뜁니다(자세한 내용은 [내 코드만](../debugger/just-my-code.md)을 참조하세요).
+F11 키는 실행 흐름을 가장 자세히 검사할 수 있는 좋은 방법입니다. 코드를 통해 더 빠르게 이동 하기 위해 몇 가지 다른 옵션도 표시 됩니다. 기본적으로 디버거는 사용자가 만든이 아닌 코드를 건너뜁니다. 자세한 내용은 [내 코드만](../debugger/just-my-code.md)를 참조 하십시오.
 
 >[!NOTE]
 > 속성 및 연산자(기본 동작)를 자동으로 프로시저 단위로 실행하는 경우 알림을 받을 것인지 묻는 대화 상자가 관리 코드에 표시됩니다. 나중에 설정을 변경하려는 경우 **디버깅** 아래의 **도구 > 옵션** 메뉴에서 **속성 및 연산자를 프로시저 단위로 실행** 설정을 비활성화합니다.
@@ -64,17 +64,17 @@ F10 키는 앱 코드의 함수 또는 메서드를 한 단계씩 실행하지 �
 
 속성 또는 필드를 마우스 오른쪽 단추로 클릭하고 **한 단계씩 코드 실행**을 선택한 다음, 사용 가능한 옵션 중 하나를 선택합니다.
 
-![한 단계씩 코드 실행](../debugger/media/dbg-tour-step-into-specific.png "한 단계씩 코드 실행")
+![특정 한 단계씩 코드 실행](../debugger/media/dbg-tour-step-into-specific.png "특정 한 단계씩 코드 실행")
 
 이 예제에서 **한 단계씩 코드 실행**은 `Path.set`에 대한 코드로 안내합니다.
 
-![한 단계씩 코드 실행](../debugger/media/dbg-tour-step-into-specific-2.png "한 단계씩 코드 실행")
+![특정 한 단계씩 코드 실행](../debugger/media/dbg-tour-step-into-specific-2.png "특정 한 단계씩 코드 실행")
 
 ## <a name="run-to-a-point-in-your-code-quickly-using-the-mouse"></a>마우스를 사용하여 신속하게 코드의 지점까지 실행
 
-디버거에서 **실행하려면 클릭**(여기까지 실행) 단추![실행하려면 클릭](../debugger/media/dbg-tour-run-to-click.png "RunToClick")가 왼쪽에 표시될 때까지 코드 줄 위로 마우스를 가져갑니다.
+디버거에서 **실행할 실행** (여기까지 실행 실행 ![) 단추를 클릭 하 여](../debugger/media/dbg-tour-run-to-click.png "RunToClick") 왼쪽에 표시 될 때까지 코드 줄을 마우스로 가리킵니다.
 
-![실행하려면 클릭](../debugger/media/dbg-tour-run-to-click-2.png "실행하려면 클릭")
+![실행 하려면 클릭](../debugger/media/dbg-tour-run-to-click-2.png "실행하려면 클릭")
 
 > [!NOTE]
 > **실행하려면 클릭**(여기까지 실행) 단추는 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]부터 사용할 수 있습니다.
@@ -93,7 +93,7 @@ F10 키는 앱 코드의 함수 또는 메서드를 한 단계씩 실행하지 �
 
 ## <a name="run-to-cursor"></a>커서까지 실행
 
-**디버깅 중지** 빨간색 단추![디버깅 중지](../debugger/media/dbg-tour-stop-debugging.png "디버깅 중지") 또는 **Shift** + **F5**를 눌러 디버거를 중지합니다.
+**디버깅** 중지 빨강 단추 ![디버깅 중지](../debugger/media/dbg-tour-stop-debugging.png "디버그하는 동안 진단 도구 사용") 또는 **F5 + f5** **키를** 눌러 디버거를 중지 합니다.
 
 앱의 코드 줄을 마우스 오른쪽 단추로 클릭하고 **커서까지 실행**을 선택합니다. 이 명령은 디버깅을 시작하고 현재의 코드 줄에서 임시 중단점을 설정합니다.
 
@@ -110,17 +110,17 @@ F10 키는 앱 코드의 함수 또는 메서드를 한 단계씩 실행하지 �
 
 ## <a name="restart-your-app-quickly"></a>앱을 빠르게 다시 시작
 
-디버그 도구 모음에서 **다시 시작**![앱 다시 시작](../debugger/media/dbg-tour-restart.png "앱 다시 시작") 단추를 클릭합니다(**Ctrl + Shift +F5**).
+디버그 도구 모음에서 ![앱 다시](../debugger/media/dbg-tour-restart.png "앱 다시 시작") **시작 단추** 를 클릭 합니다 (**Ctrl + Shift + F5**).
 
 **다시 시작**을 누르면 앱을 중지하고 디버거를 다시 시작하는 것에 비해 시간이 절약됩니다. 디버거가 코드를 실행하여 적중한 첫 번째 중단점에서 일시 중지합니다.
 
-디버거를 중지하고 코드 편집기로 다시 돌아가려는 경우 **다시 시작** 대신 빨간색 중지![디버깅 중지](../debugger/media/dbg-tour-stop-debugging.png "디버깅 중지") 단추를 누를 수 있습니다.
+디버거를 중지 하 고 코드 편집기로 돌아가서 **다시 시작**하는 대신 빨간색 ![디버깅](../debugger/media/dbg-tour-stop-debugging.png "디버그하는 동안 진단 도구 사용") 중지 중지 단추를 누를 수 있습니다.
 
 ## <a name="edit-your-code-and-continue-debugging-c-vb-c-xaml"></a>코드를 편집하고 디버깅 계속하기(C#, VB, C++, XAML)
 
 Visual Studio에서 지원되는 대부분의 언어에서 디버깅 세션 중에 코드를 편집하고 디버깅을 계속할 수 있습니다. 이 기능을 사용하려면 디버거에서 일시 중지된 동안 커서를 사용하여 코드를 클릭하고 편집을 수행한 후 **F5**, **F10** 또는 **F11**을 눌러 디버깅을 계속합니다.
 
-![디버깅 편집하며 계속하기](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
+![편집 하며 계속 하기 디버깅](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
 
 기능 사용 및 기능 제한에 대한 자세한 내용은 [편집하며 계속하기](../debugger/edit-and-continue.md)를 참조하세요.
 
@@ -214,7 +214,7 @@ Visual Studio에서 지원되는 대부분의 언어에서 디버깅 세션 중�
 
 **스냅샷 디버거**는 관심이 있는 코드가 실행될 때 프로덕션 상태 앱의 스냅샷을 생성합니다. 디버거가 스냅샷을 생성하도록 명령하려면 코드에서 snappoint와 logpoint를 설정합니다. 디버거를 통해 프로덕션 애플리케이션의 트래픽에 영향을 미치지 않으면서 정확히 무엇이 잘못되었는지를 볼 수 있습니다. 스냅샷 디버거를 사용하면 프로덕션 환경에서 발생하는 문제를 해결하는 데 걸리는 시간을 상당히 줄일 수 있습니다.
 
-![스냅샷 디버거 시작](../debugger/media/snapshot-launch.png "스냅샷 디버거 시작")
+![스냅숏 디버거 시작](../debugger/media/snapshot-launch.png "스냅샷 디버거 시작")
 
 스냅샷 컬렉션은 Azure App Service에서 실행되는 ASP.NET 애플리케이션에서 사용할 수 있습니다. ASP.NET 애플리케이션은 .NET Framework 4.6.1 이상에서 실행돼야 하며, ASP.NET Core 애플리케이션은 Windows의 .NET Core 2.0 이상에서 실행돼야 합니다.
 
@@ -226,7 +226,7 @@ Visual Studio에서 지원되는 대부분의 언어에서 디버깅 세션 중�
 
 디버그 도구 모음의 **뒤로 가기**와 **앞으로 가기** 단추를 사용하여 이동하고 스냅샷을 볼 수 있습니다. 이 단추를 사용하여 **진단 도구** 창의 **이벤트** 탭에 나타나는 이벤트를 탐색할 수 있습니다.
 
-![뒤로 가기 및 앞으로 가기 단추](../debugger/media/intellitrace-step-back-icons-description.png  "뒤로 가기 및 앞으로 가기 단추")
+![뒤로 및 앞으로 가기 단추](../debugger/media/intellitrace-step-back-icons-description.png  "뒤로 및 앞으로 가기 단추")
 
 자세한 내용은 [IntelliTrace를 사용하여 이전 앱 상태 검사](../debugger/view-historical-application-state.md) 페이지를 참조하세요.
 

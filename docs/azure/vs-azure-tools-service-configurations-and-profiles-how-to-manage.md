@@ -9,14 +9,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: b91e2df31ae0e188d0d1e0e3076ab410bf8c2296
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 55fc29117b1b01bd6c9b214d1db111af72127871
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919828"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911694"
 ---
-# <a name="how-to-manage-service-configurations-and-profiles"></a>서비스 구성 및 프로필을 관리하는 방법
+# <a name="how-to-manage-service-configurations-and-profiles"></a>서비스 구성 및 프로필 관리 방법
 ## <a name="overview"></a>개요
 클라우드 서비스를 게시하면 Visual Studio는 두 종류의 구성 파일, 서비스 구성 및 프로필에 구성 정보를 저장합니다. 서비스 구성(.cscfg 파일)은 Azure 클라우드 서비스용 배포 환경에 대한 설정을 저장합니다. Azure는 클라우드 서비스를 관리하는 경우 이 구성 파일을 사용합니다. 반면에 프로필(.azurePubxml 파일)은 클라우드 서비스에 대한 설정을 저장합니다. 이 설정은 게시 마법사를 사용하고 Visual Studio에서 로컬로 사용되는 경우 선택한 항목의 레코드입니다. 이 항목에서는 구성 파일의 두 형식으로 작업하는 방법을 설명합니다.
 
@@ -56,7 +56,7 @@ ms.locfileid: "68919828"
     솔루션 탐색기의 Azure 프로젝트에서 서비스 구성 파일의 이름이 변경됩니다.
 
 ### <a name="to-change-a-service-configuration"></a>서비스 구성을 변경하려면
-* 서비스 구성을 변경하려는 경우, Azure 프로젝트에서 변경하려는 특정 역할에 대 한 바로 가기 메뉴를 연 다음 **속성**을 선택합니다. [방법: Visual Studio와 함께 Azure 클라우드 서비스에 대한 역할 구성](vs-azure-tools-configure-roles-for-cloud-service.md)에서 자세한 내용을 참조하세요.
+* 서비스 구성을 변경하려는 경우, Azure 프로젝트에서 변경하려는 특정 역할에 대 한 바로 가기 메뉴를 연 다음 **속성**을 선택합니다. 자세한 내용은 [방법: Visual Studio를 사용 하 여 Azure 클라우드 서비스에 대 한 역할 구성을](vs-azure-tools-configure-roles-for-cloud-service.md) 참조 하세요.
 
 ## <a name="make-different-setting-combinations-by-using-profiles"></a>프로필을 사용하여 여러 다른 설정 조합 만들기
 프로필을 사용하여 다양한 용도에 맞는 다른 설정 조합으로 **게시 마법사** 를 자동으로 채울 수 있습니다. 예를 들어, 디버깅용으로 하나의 프로필이 있고 릴리스 빌드용으로 다른 프로필이 있을 수 있습니다. 이 경우 **디버그** 프로필은 **IntelliTrace**를 사용하며 **디버그** 구성이 선택되며, **릴리스** 프로필은 **IntelliTrace**를 사용하지 않도록 설정하고 **릴리스** 구성이 선택됩니다. 또한 다른 프로필로 다른 스토리지 계정을 사용하여 서비스를 배포할 수도 있습니다.
@@ -78,7 +78,7 @@ ms.locfileid: "68919828"
 
     새 프로필이 대상 프로필 목록에 나타납니다.
 6. **대상 프로필** 목록에서 방금 만든 프로필을 선택합니다. 게시 마법사 설정은 선택한 프로필의 선택 항목으로 채워집니다.
-7. **이전** 및 **다음** 단추를 선택하여 게시 마법사의 각 페이지를 표시한 다음 이 프로필에 대한 설정을 사용자 지정합니다. 자세한 내용은 [Azure 애플리케이션 게시 마법사](http://go.microsoft.com/fwlink/p/?LinkID=623085)를 참조하세요.
+7. **이전** 및 **다음** 단추를 선택하여 게시 마법사의 각 페이지를 표시한 다음 이 프로필에 대한 설정을 사용자 지정합니다. 자세한 내용은 [Azure 애플리케이션 게시 마법사](vs-azure-tools-publish-azure-application-wizard.md)를 참조하세요.
 8. 설정 사용자 지정을 완료한 후 **다음** 을 선택하여 설정 페이지로 다시 이동합니다. 이 설정을 사용하여 서비스를 게시하거나 프로필 목록 옆 **저장** 을 선택하면 프로필이 저장됩니다.
 
 ### <a name="to-rename-or-delete-a-profile"></a>프로필의 이름을 변경하거나 삭제하려면
@@ -91,9 +91,9 @@ ms.locfileid: "68919828"
 ### <a name="to-change-a-profile"></a>프로필을 변경하려면
 1. Azure 프로젝트의 바로 가기 메뉴를 열고 **게시**를 클릭합니다.
 2. **대상 프로필** 목록에서 변경할 프로필을 선택합니다.
-3. **이전** 및 **다음** 단추를 선택하여 게시 마법사의 각 페이지를 표시한 다음 이 프로필에 대한 설정을 변경합니다. 자세한 내용은 [Azure 애플리케이션 게시 마법사](http://go.microsoft.com/fwlink/p/?LinkID=623085)를 참조하세요.
+3. **이전** 및 **다음** 단추를 선택하여 게시 마법사의 각 페이지를 표시한 다음 이 프로필에 대한 설정을 변경합니다. 자세한 내용은 [Azure 애플리케이션 게시 마법사](vs-azure-tools-publish-azure-application-wizard.md)를 참조하세요.
 4. 설정 변경을 완료한 후 **다음**을 선택하여 **설정** 페이지로 다시 이동합니다.
 5. (선택 사항) **게시** 를 선택하고 새 설정을 사용하여 클라우드 서비스를 게시합니다. 이번에 클라우드 서비스를 게시하지 않고 게시 마법사를 닫으려는 경우, Visual Studio는 프로필에 변경 내용을 저장할 것인지를 묻습니다.
 
 ## <a name="next-steps"></a>다음 단계
-Visual Studio에서 Azure 프로젝트의 다른 부분 구성에 대해 알아보려면 [Azure 프로젝트 구성](http://go.microsoft.com/fwlink/p/?LinkID=623075)을 참조하세요.
+Visual Studio에서 Azure 프로젝트의 다른 부분 구성에 대해 알아보려면 [Azure 프로젝트 구성](vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address.md)을 참조하세요.

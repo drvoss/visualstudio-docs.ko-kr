@@ -15,12 +15,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 15a34fdc4486a013999a6b53e34117008396c955
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: ecc08be8c865cefa9b440d9af61cf9d019865ea0
+ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807018"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72924560"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>WCF 데이터 서비스에 WPF 컨트롤 바인딩
 
@@ -56,7 +56,7 @@ ms.locfileid: "72807018"
 
 - 엔터티 데이터 모델 및 ADO.NET Entity Framework 자세한 내용은 [Entity Framework 개요](/dotnet/framework/data/adonet/ef/overview)를 참조 하세요.
 
-- WPF 데이터 바인딩. 자세한 내용은 [데이터 바인딩 개요](/dotnet/framework/wpf/data/data-binding-overview)를 참조하세요.
+- WPF 데이터 바인딩. 자세한 내용은 [데이터 바인딩 개요](/dotnet/desktop-wpf/data/data-binding-overview)를 참조하세요.
 
 ## <a name="create-the-service-project"></a>서비스 프로젝트 만들기
 
@@ -106,7 +106,7 @@ WCF 데이터 서비스를 사용 하 여 응용 프로그램에 데이터를 �
 
 작성한 엔터티 데이터 모델에 대해 작동하도록 서비스를 구성해야 합니다.
 
-1. @No__t_0 코드 파일에서 **AdventureWorksService** 클래스 선언을 다음 코드로 바꿉니다.
+1. `AdventureWorks.svc` 코드 파일에서 **AdventureWorksService** 클래스 선언을 다음 코드로 바꿉니다.
 
      [!code-csharp[Data_WPFWCF#1](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_1.cs)]
      [!code-vb[Data_WPFWCF#1](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_1.vb)]
@@ -177,7 +177,7 @@ WPF 디자이너에서 XAML을 수정하여 창에 여러 단추를 추가합니
 
 ## <a name="create-the-data-bound-controls"></a>데이터 바인딩된 컨트롤 만들기
 
-@No__t_0 노드를 **데이터 소스** 창에서 디자이너로 끌어 고객 레코드를 표시 하는 컨트롤을 만듭니다.
+`SalesOrderHeaders` 노드를 **데이터 소스** 창에서 디자이너로 끌어 고객 레코드를 표시 하는 컨트롤을 만듭니다.
 
 1. **데이터 원본** 창에서 **SalesOrderHeaders** 노드의 드롭다운 메뉴를 클릭하고 **정보**를 선택합니다.
 
@@ -301,4 +301,4 @@ WPF 디자이너에서 XAML을 수정하여 창에 여러 단추를 추가합니
 - [데이터 세트로 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-a-dataset.md)
 - [WCF 개요 (.NET Framework)](/dotnet/framework/data/wcf/wcf-data-services-overview)
 - [Entity Framework 개요 (.NET Framework)](/dotnet/framework/data/adonet/ef/overview)
-- [데이터 바인딩 개요 (.NET Framework)](/dotnet/framework/wpf/data/data-binding-overview)
+- [데이터 바인딩 개요 (.NET Framework)](/dotnet/desktop-wpf/data/data-binding-overview)

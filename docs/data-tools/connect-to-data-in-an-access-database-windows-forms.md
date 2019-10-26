@@ -12,12 +12,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d24fc2fa1ee34567e0c32859eeccf6af62813a20
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 65fa8b823a49644110dc773eb614da6022f4e8f5
+ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648715"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72924513"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Access 데이터베이스의 데이터에 연결
 
@@ -109,7 +109,7 @@ Visual Studio를 사용 하 여 Access 데이터베이스 ( *.mdb* 파일 또는
 
 방금 만든 데이터 집합은 **데이터 소스** 창에서 사용할 수 있습니다. 다음 작업 중 어떤 작업이든 수행할 수 있습니다.
 
-- **데이터 소스** 창에서 항목을 선택 하 고 폼 또는 디자인 화면으로 끌어 옵니다 ( [Visual Studio에서 데이터에 컨트롤 Windows Forms 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) 또는 [WPF 데이터 바인딩 개요](/dotnet/framework/wpf/data/data-binding-overview)참조).
+- **데이터 소스** 창에서 항목을 선택 하 고 폼 또는 디자인 화면으로 끌어 옵니다 ( [Visual Studio에서 데이터에 컨트롤 Windows Forms 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) 또는 [WPF 데이터 바인딩 개요](/dotnet/desktop-wpf/data/data-binding-overview)참조).
 
 - **데이터 세트 디자이너**에서 데이터 원본을 열어 데이터 세트를 구성하는 개체를 추가하거나 편집합니다.
 

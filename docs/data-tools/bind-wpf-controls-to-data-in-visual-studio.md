@@ -16,18 +16,18 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fc954fe372ccd571151ab6ea09e9c1e3db96206a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ee858c7c17798f327d323f632d4cb9e8a77b6712
+ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648763"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72924536"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Visual Studio에서 데이터에 WPF 컨트롤 바인딩
 
 데이터를 [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] 컨트롤에 바인딩하여 애플리케이션 사용자에게 데이터를 표시할 수 있습니다. 이러한 데이터 바인딩된 컨트롤을 만들려면 **데이터 소스** 창에서 Visual Studio의 [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)]로 항목을 끌어 옵니다. 이 항목에서는 데이터 바인딩된 [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] 애플리케이션을 만드는 데 사용할 수 있는 가장 일반적인 몇 가지 작업, 도구 및 클래스에 대해 설명합니다.
 
-Visual Studio에서 데이터 바인딩된 컨트롤을 만드는 방법에 대 한 일반적인 내용은 [Visual studio에서 데이터에 컨트롤 바인딩](../data-tools/bind-controls-to-data-in-visual-studio.md)을 참조 하세요. [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] 데이터 바인딩에 대한 자세한 내용은 [데이터 바인딩 개요](/dotnet/framework/wpf/data/data-binding-overview)를 참조하세요.
+Visual Studio에서 데이터 바인딩된 컨트롤을 만드는 방법에 대 한 일반적인 내용은 [Visual studio에서 데이터에 컨트롤 바인딩](../data-tools/bind-controls-to-data-in-visual-studio.md)을 참조 하세요. [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] 데이터 바인딩에 대한 자세한 내용은 [데이터 바인딩 개요](/dotnet/desktop-wpf/data/data-binding-overview)를 참조하세요.
 
 ## <a name="tasks-involved-in-binding-wpf-controls-to-data"></a>WPF 컨트롤을 데이터에 바인딩하는 것과 관련된 작업
 
@@ -67,7 +67,7 @@ Visual Studio에서 데이터 바인딩된 컨트롤을 만드는 방법에 대 
 
 또한 Visual Studio에서는 코드 숨김 파일에 대해 다음과 같은 변경 작업도 수행합니다.
 
-- 이 컨트롤이 들어 있는 <xref:System.Windows.FrameworkElement.Loaded> 요소에 대한 [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] 이벤트 처리기를 만듭니다. 이 이벤트 처리기는 테이블을 데이터로 채우고 컨테이너의 리소스에서 <xref:System.Windows.Data.CollectionViewSource>를 검색한 다음 첫 번째 데이터 항목을 현재 항목으로 설정합니다. @No__t_0 이벤트 처리기가 이미 있는 경우 Visual Studio는 기존 이벤트 처리기에이 코드를 추가 합니다.
+- 이 컨트롤이 들어 있는 <xref:System.Windows.FrameworkElement.Loaded> 요소에 대한 [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] 이벤트 처리기를 만듭니다. 이 이벤트 처리기는 테이블을 데이터로 채우고 컨테이너의 리소스에서 <xref:System.Windows.Data.CollectionViewSource>를 검색한 다음 첫 번째 데이터 항목을 현재 항목으로 설정합니다. <xref:System.Windows.FrameworkElement.Loaded> 이벤트 처리기가 이미 있는 경우 Visual Studio는 기존 이벤트 처리기에이 코드를 추가 합니다.
 
 ### <a name="entity-data-models"></a>엔터티 데이터 모델
 
@@ -81,7 +81,7 @@ Visual Studio에서 데이터 바인딩된 컨트롤을 만드는 방법에 대 
 
 - 디자이너로 끌어 온 엔터티(또는 디자이너로 끌어 온 속성이 들어 있는 엔터티)에 대한 쿼리를 반환하는 새 메서드를 추가합니다. 새 메서드에는 `Get<EntityName>Query` 이름이 있습니다. 여기서 `\<EntityName>`는 엔터티의 이름입니다.
 
-- 이 컨트롤이 들어 있는 <xref:System.Windows.FrameworkElement.Loaded> 요소에 대한 [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] 이벤트 처리기를 만듭니다. 이벤트 처리기는 `Get<EntityName>Query` 메서드를 호출 하 여 엔터티를 데이터로 채우고 컨테이너의 리소스에서 <xref:System.Windows.Data.CollectionViewSource>를 검색 한 다음 첫 번째 데이터 항목을 현재 항목으로 만듭니다. @No__t_0 이벤트 처리기가 이미 있는 경우 Visual Studio는 기존 이벤트 처리기에이 코드를 추가 합니다.
+- 이 컨트롤이 들어 있는 <xref:System.Windows.FrameworkElement.Loaded> 요소에 대한 [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] 이벤트 처리기를 만듭니다. 이벤트 처리기는 `Get<EntityName>Query` 메서드를 호출 하 여 엔터티를 데이터로 채우고 컨테이너의 리소스에서 <xref:System.Windows.Data.CollectionViewSource>를 검색 한 다음 첫 번째 데이터 항목을 현재 항목으로 만듭니다. <xref:System.Windows.FrameworkElement.Loaded> 이벤트 처리기가 이미 있는 경우 Visual Studio는 기존 이벤트 처리기에이 코드를 추가 합니다.
 
 ### <a name="services"></a>서비스
 

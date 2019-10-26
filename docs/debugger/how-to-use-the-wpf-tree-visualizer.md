@@ -16,17 +16,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0adcca4acd5fc72d301d707ccdd831c86ef3e48f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bbc705a20f8d878d85dc6aba14c64178c76041ac
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731918"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888396"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>방법: WPF 트리 시각화 도우미 사용
 WPF 트리 시각화 도우미를 사용하여 WPF 개체의 표시 트리를 탐색하고 트리에 포함된 개체의 WPF 종속성 속성을 볼 수 있습니다. 시각적 트리에 대 한 자세한 내용은 [WPF의 트리](/dotnet/framework/wpf/advanced/trees-in-wpf)를 참조 하세요. 종속성 속성에 대 한 자세한 내용은 [종속성 속성 개요](/dotnet/framework/wpf/advanced/dependency-properties-overview)를 참조 하세요.
 
  WPF 트리 시각화 도우미를 열면 왼쪽의 **시각적 트리와** 오른쪽의 _이름_ **:** _유형_ 창의 **속성** 이라는 두 개의 창이 표시 됩니다. **시각적 트리** 창에서 개체를 선택 하면 _이름_ **:** _유형_ 창의 **속성** 은 해당 개체의 속성을 표시 하도록 자동으로 업데이트 됩니다.
+
+ > [!NOTE]
+ > [라이브 시각적 트리 및 라이브 속성 탐색기](../xaml-tools/inspect-xaml-properties-while-debugging.md) 를 사용 하 여 WPF 개체의 시각적 트리를 검사할 수도 있습니다. WPF 트리 시각화 도우미는 레거시 기능이 며 활성 개발에 있지 않습니다.
 
 ### <a name="to-open-the-wpf-tree-visualizer"></a>WPF 트리 시각화 도우미를 열려면
 

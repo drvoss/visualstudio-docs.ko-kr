@@ -9,17 +9,17 @@ f1_keywords:
 helpviewer_keywords:
 - solutions [Visual Studio], creating
 - projects [Visual Studio], creating
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74694528f6380896d47b9665d9e617098ef28620
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: abe2cbd18e87c7045d44e597e3a5bb93a64a1c35
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746862"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747959"
 ---
 # <a name="create-solutions-and-projects"></a>솔루션 및 프로젝트 만들기
 
@@ -53,7 +53,7 @@ Visual Studio에서 앱을 개발하는 데 솔루션과 프로젝트는 필요�
 1. 마법사에서 파일의 위치로 이동한 다음 **이름** 상자에 새 프로젝트에 대한 이름을 입력합니다. 완료되면 **마침** 단추를 선택합니다.
 
 > [!NOTE]
-> 이 옵션은 상대적으로 간단한 파일 컬렉션에 적합합니다. 현재, Visual C++, Apache Cordova, Visual Basic 및 C# 프로젝트 형식만 지원됩니다.
+> 이 옵션은 상대적으로 간단한 파일 컬렉션에 적합합니다. 현재 C++, Apache Cordova, Visual Basic 및 C# 프로젝트 형식만 지원됩니다.
 
 ## <a name="add-files-to-a-solution"></a>솔루션에 파일 추가
 

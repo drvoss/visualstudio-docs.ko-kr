@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 포팅, 마이그레이션 및 업그레이드
-description: 이전 버전의 Visual Studio에서 만든 프로젝트에 대한 Visual Studio 2017의 지원에 대한 참조 및 Visual Studio에서 프로젝트 마이그레이션이 필요한 경우를 결정하는 방법입니다.
-ms.date: 04/16/2019
+description: 현재 및 이전 버전의 Visual Studio에서 만든 프로젝트 지원에 대한 참조입니다.
+ms.date: 10/17/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -19,18 +19,18 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 97eaada072a4ff0038ae7b57810b0d3318df1035
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 139eb491304e1c83c579919781a6cd24bdf6e1eb
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314171"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777822"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>프로젝트 마이그레이션 및 Visual Studio에 대한 업그레이드 참조
 
 ::: moniker range="vs-2017"
 
-새 버전의 Visual Studio에서는 일반적으로 이전 형식의 프로젝트, 파일 및 기타 자산을 대부분 지원합니다. 이러한 항목을 [이전처럼](../ide/solutions-and-projects-in-visual-studio.md) 사용할 수 있습니다. 최신 기능에 의존하지 않을 경우 Visual Studio에서는 일반적으로 Visual Studio 2015, Visual Studio 2013, Visual Studio 2012 등과 같은 이전 버전과의 호환성을 유지하려 합니다. 버전별로 특정한 기능은 [릴리스 정보](/visualstudio/releasenotes/vs2017-relnotes/)를 참조하세요.
+각 버전의 Visual Studio에서는 일반적으로 이전 형식의 프로젝트, 파일 및 기타 자산을 대부분 지원합니다. 이러한 항목을 [이전처럼](../ide/solutions-and-projects-in-visual-studio.md) 사용할 수 있습니다. 최신 기능에 의존하지 않을 경우 Visual Studio에서는 Visual Studio 2015, Visual Studio 2013, Visual Studio 2012와 같은 이전 버전과의 호환성을 유지하려 합니다. 버전별로 특정한 기능은 [릴리스 정보](/visualstudio/releasenotes/vs2017-relnotes/)를 참조하세요.
 
 일부 프로젝트 형식 변경은 이후에 지원될 수 있습니다. 최신 버전의 Visual Studio에서 특정 프로젝트를 더 이상 지원하지 않거나, 더 이상 이전 버전과 호환되지 않도록 프로젝트를 업데이트할 수 있습니다. 마이그레이션 문제의 현재 상태는 [Visual Studio 개발자 커뮤니티 사이트](https://developercommunity.visualstudio.com)를 참조하세요.
 
@@ -45,9 +45,9 @@ ms.locfileid: "72314171"
 
 여기에 나열된 프로젝트 또는 파일 형식이 표시되지 않는 경우 [이 문서의 Visual Studio 2015 버전](https://docs.microsoft.com/visualstudio/porting/porting-migrating-and-upgrading-visual-studio-projects?view=vs-2015)을 참조하고 이 페이지의 맨 아래에 **이 페이지에 대한** > **피드백 보내기** 옵션을 사용하여 프로젝트의 세부 정보를 제공해 주세요. (익명으로 “이 페이지가 도움이 되었나요?” 컨트롤을 사용하면 피드백에 응답할 수 없습니다.)
 
-| 프로젝트 형식 | 지원 |
+| 프로젝트 형식 | 고객 지원팀 |
 | --- | --- |
-| .NET Core 프로젝트(.xproj) | Visual Studio 2015로 만든 프로젝트는 xproj 프로젝트 파일을 포함하는 미리 보기 도구를 사용했습니다.<br/><br/>Visual Studio 2017: xproj 형식은 csproj 형식으로 마이그레이션해야만 지원됩니다. xproj 파일을 열면 파일을 SDK 스타일의 csproj 형식으로 마이그레이션해야 한다는 메시지가 표시됩니다. (xproj 파일의 백업이 생성됩니다.) SDK 스타일의 csproj 프로젝트는 Visual Studio 2015 및 이전 버전에서 지원되지 않습니다. <br/><br/>Visual Studio 2019: 버전 16.3 이상에서는 xproj 프로젝트를 로드하거나 마이그레이션할 수 없습니다. 자세한 내용은 [csproj 형식으로 .NET Core 프로젝트 마이그레이션](/dotnet/core/migration/#visual-studio)을 참조하세요.|
+| .NET Core 프로젝트(.xproj) | Visual Studio 2015로 만든 프로젝트는 xproj 프로젝트 파일을 포함하는 미리 보기 도구를 사용했습니다. Visual Studio 2017에서 xproj 형식은 csproj 형식으로 마이그레이션해야만 지원됩니다. xproj 파일을 열면 파일을 SDK 스타일의 csproj 형식으로 마이그레이션해야 한다는 메시지가 표시됩니다. (xproj 파일의 백업이 생성됩니다.) SDK 스타일의 csproj 프로젝트는 Visual Studio 2015 및 이전 버전에서 지원되지 않습니다. 자세한 내용은 [csproj 형식으로 .NET Core 프로젝트 마이그레이션](/dotnet/core/migration/#visual-studio)을 참조하세요.|
 | Application Insights를 사용하도록 지정한 ASP.NET 웹 애플리케이션 및 ASP.NET Core 웹 애플리케이션 | 각 Visual Studio 사용자의 리소스 정보가 사용자 인스턴스별 레지스트리에 저장됩니다. 이 정보는 사용자가 프로젝트를 열지 않고 Azure Application Insights 데이터를 검색하려는 경우에 사용됩니다. Visual Studio 2015에서는 Visual Studio 2017과 다른 레지스트리 위치를 사용하므로 충돌하지 않습니다.<br/><br/>사용자가 ASP.NET 웹 애플리케이션 또는 ASP.NET Core 웹 애플리케이션을 만들면 리소스가 .suo 파일에 저장됩니다. 사용자는 Visual Studio 2015 또는 2017에서 프로젝트를 열 수 있으며, Visual Studio에서 두 버전 간 사용 중인 프로젝트 및 솔루션이 지원될 경우 두 버전 모두에서 리소스 정보가 사용됩니다. 사용자는 각 제품에 대해 한 번 인증해야 합니다. 예를 들어 Visual Studio 2015에서 프로젝트를 만든 다음 Visual Studio 2017에서 열 경우 사용자는 Visual Studio 2017에서 인증해야 합니다. |
 | C#/Visual Basic Webform 또는 Windows Form | Visual Studio 2017 및 Visual Studio 2015에서 프로젝트를 열 수 있습니다. |
 | 데이터베이스 유닛 테스트 프로젝트(csproj, .vbproj) | 이전 데이터 유닛 테스트 프로젝트는 Visual Studio 2017에 로드되지만 GAC 종속성 버전을 사용합니다. 최신 종속성을 사용하도록 단위 테스트 프로젝트를 업그레이드하려면 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **SQL Server 단위 테스트 프로젝트로 변환...** 을 선택합니다. |
@@ -65,14 +65,14 @@ ms.locfileid: "72314171"
 | SharePoint 2016 | Office 개발자 도구 미리 보기 2에서 만든 SharePoint 추가 기능 프로젝트를 Visual Studio 2017에서 열 수 없습니다. 이 제한을 해결하려면 csproj 또는 vbproj 파일에 있는 `MinimumVisualStudioVersion`을 12.0으로, `MinimumOfficeToolsVersion`을 12.2로 업데이트합니다. |
 | Silverlight | Silverlight 프로젝트는 Visual Studio 2017에서 지원되지 않습니다. Silverlight 애플리케이션을 유지하려면 Visual Studio 2015를 계속 사용합니다. |
 | SQL Server Reporting Services 및 SQL Server Analysis Services(SSRS, SSDT, SSAS, MSAS) | 이러한 프로젝트 형식에 대한 지원은 Visual Studio 갤러리의 두 가지 확장 기능을 통해 제공됩니다.  [Microsoft Analysis Services 모델링 프로젝트](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) 및 [Microsoft Reporting Services 프로젝트](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). SSDT는 Visual Studio 2017에서 데이터 스토리지 및 처리 워크로드를 지원합니다. 자세한 내용은 [Visual Studio용 SSDT(SQL Server Data Tools) 다운로드 및 설치](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) 페이지를 참조하세요.|
-| SQL Server 통합 서비스(SSIS) | Visual Studio 2017에 대한 지원은 SSDT(SQL Server Data Tools)를 통해 제공됩니다. 자세한 내용은 [Visual Studio용 SSDT(SQL Server Data Tools) 다운로드 및 설치](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) 페이지 및 [SSIS(SQL Server Integration Services)](https://techcommunity.microsoft.com/t5/SQL-Server-Integration-Services/bg-p/SSIS) 팀 블로그를 참조하세요. |
+| SSIS(SQL Server Integration Services) | Visual Studio 2017에 대한 지원은 SSDT(SQL Server Data Tools)를 통해 제공됩니다. 자세한 내용은 [Visual Studio용 SSDT(SQL Server Data Tools) 다운로드 및 설치](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) 페이지 및 [SSIS(SQL Server Integration Services)](https://techcommunity.microsoft.com/t5/SQL-Server-Integration-Services/bg-p/SSIS) 팀 블로그를 참조하세요. |
 | Visual C++ | Visual Studio 2017을 사용하여 Visual Studio 2010까지 이전 버전의 Visual Studio에서 만든 프로젝트에서 작업할 수 있습니다. 프로젝트를 처음 열면 최신 컴파일러 및 도구 집합으로 업그레이드하거나 원래 항목을 계속 사용하는 옵션이 있습니다. 원래 항목을 계속 사용하도록 선택하면 Visual Studio 2017에서는 프로젝트 파일을 수정하지 않으며 이전 Visual Studio 설치의 도구 집합을 사용하여 프로젝트를 빌드합니다. 원래 옵션을 유지하는 것은 필요한 경우 원래 버전의 Visual Studio에서 프로젝트를 열 수 있음을 의미합니다. 자세한 내용은 [Visual Studio의 네이티브 멀티 타기팅을 사용하여 이전 프로젝트 빌드](/cpp/porting/use-native-multi-targeting)를 참조하세요. |
 | Visual Studio 확장성/VSIX | MinimumVersion 14.0 이하의 프로젝트는 업데이트를 통해 MinimumVersion 15.0으로 선언됩니다. 그러면 이전 버전의 Visual Studio에서 프로젝트를 열 수 없습니다. 이전 버전에서 프로젝트를 열 수 있도록 허용하려면 MinimumVersion을 `$(VisualStudioVersion)`(으)로 설정합니다. 참고 항목 [방법: Visual Studio 2017로 확장성 프로젝트 마이그레이션](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
 | Visual Studio Lab Management | Microsoft Test Manager 또는 Visual Studio 2010 SP1 이상을 사용하여 이러한 버전에서 만든 환경을 열 수 있습니다. 그러나 Visual Studio 2010 SP1의 경우 환경을 만들기 전에 Microsoft Test Manager 버전이 Team Foundation Server 버전과 일치해야 합니다. |
 | Apache Cordova용 Visual Studio Tools | Visual Studio 2017에서 프로젝트를 열 수는 있지만 이전 버전과 호환되지 않습니다. Visual Studio 2015에서 프로젝트를 열면 프로젝트를 수정하도록 허용할지 여부를 묻는 메시지가 표시됩니다. 이 수정은 프로젝트에서 `taco.json` 파일 대신 도구 집합을 사용하여 Cordova 라이브러리의 버전, 플랫폼 및 플러그인, 노드/npm 종속성을 관리하도록 업그레이드합니다. 자세한 내용은 [마이그레이션 가이드](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/migrate-from-visual-studio-2015)를 참조하세요. |
 | 웹 배포(wdproj) | 게시 프로필 지원이 추가되면서 Visual Studio 2012에서 웹 배포 프로젝트 지원이 제거되었습니다. Visual Studio 2017에 동등한 기능이 없으므로 이러한 프로젝트에 대한 자동 마이그레이션 경로는 없습니다. 대신, [StackOverflow](https://stackoverflow.com/a/12061065/1203388)에 설명된 대로 텍스트 편집기에서 wdproj 파일을 열고 사용자 지정을 복사하여 pubxml(게시 프로필) 파일에 붙여넣습니다. |
 | Windows Communication Foundation, Windows Workflow Foundation | Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 및 Visual Studio 2012에서 이 프로젝트를 열 수 있습니다. |
-| Windows Presentation Foundation | Visual Studio 2013, Visual Studio 2012 및 Visual Studio 2010 SP1에서 이 프로젝트를 열 수 있습니다. |
+| Windows Presentation Foundation | Visual Studio 2017, Visual Studio 2013, Visual Studio 2012 및 Visual Studio 2010 SP1에서 이 프로젝트를 열 수 있습니다. |
 | Windows 스토어/전화 앱 | Visual Studio 2017에서는 Windows 스토어 8.1 및 8.0, Windows Phone 8.1 및 8.0용 프로젝트가 지원되지 않습니다. 이러한 앱을 유지하려면 Visual Studio 2015를 계속 사용합니다. Windows Phone 7.x 프로젝트를 유지하려면 Visual Studio 2012를 사용합니다. |
 
 ## <a name="how-visual-studio-decides-when-to-migrate-a-project"></a>Visual Studio가 프로젝트를 마이그레이션하는 시기를 결정하는 방식
@@ -112,11 +112,11 @@ ms.locfileid: "72314171"
 
 ::: moniker range="vs-2019"
 
-새 버전의 Visual Studio에서는 일반적으로 이전 형식의 프로젝트, 파일 및 기타 자산을 대부분 지원합니다. 이러한 항목을 [이전처럼](../ide/solutions-and-projects-in-visual-studio.md) 사용할 수 있습니다. 최신 기능을 사용하지 않을 경우 Visual Studio에서는 일반적으로 Visual Studio 2017, Visual Studio 2015, Visual Studio 2013, Visual Studio 2012 등과 같은 이전 버전과의 호환성을 유지하려 합니다. 버전별로 특정한 기능은 [릴리스 정보](/visualstudio/releases/2019/release-notes/)를 참조하세요.
+새 버전의 Visual Studio에서는 일반적으로 이전 형식의 프로젝트, 파일 및 기타 자산을 대부분 지원합니다. 이러한 항목을 [이전처럼](../ide/solutions-and-projects-in-visual-studio.md) 사용할 수 있습니다. 최신 기능을 사용하지 않을 경우 Visual Studio에서는 Visual Studio 2017, Visual Studio 2015, Visual Studio 2013, Visual Studio 2012와 같은 이전 버전과의 호환성을 유지하려 합니다. 버전별로 특정한 기능은 [릴리스 정보](/visualstudio/releases/2019/release-notes/)를 참조하세요.
 
 일부 프로젝트 형식 변경은 이후에 지원될 수 있습니다. 최신 버전의 Visual Studio는 특정 프로젝트를 더 이상 지원하지 않거나, 더 이상 이전 버전과 호환되지 않도록 프로젝트를 업데이트해야 할 수도 있습니다. 마이그레이션 문제의 현재 상태는 [Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com)를 참조하세요.
 
-이 문서에서는 Visual Studio 2019에서 마이그레이션할 수 있는 프로젝트 형식에 대한 세부 정보를 제공합니다. Visual Studio 2019에서 사용되지 않거나 곧 사용되지 않는 프로젝트 형식에 대한 세부 정보도 제공합니다. 이 문서에서는 Visual Studio 2019에서 더 이상 지원되지 않는 프로젝트 형식을 제외하므로 마이크레이션할 수 없습니다. 이 문서에서는 마이그레이션 문제가 없는 지원되는 프로젝트 유형도 제외됩니다. 해당 목록은 [플랫폼 대상 지정 및 호환성](/visualstudio/releases/2019/compatibility)에서 확인할 수 있습니다.
+이 문서에서는 Visual Studio 2019에서 마이그레이션할 수 있는 프로젝트 형식에 대한 세부 정보를 제공합니다. Visual Studio 2019에서 사용되지 않거나 곧 사용되지 않는 프로젝트 형식에 대한 정보도 포함되어 있습니다. 이 문서에서는 Visual Studio 2019에서 더 이상 지원되지 않는 프로젝트 형식을 제외하므로 마이크레이션할 수 없습니다. 이 문서에서는 마이그레이션 문제가 없는 지원되는 프로젝트 유형도 제외됩니다. 해당 목록은 [플랫폼 대상 지정 및 호환성](/visualstudio/releases/2019/compatibility)에서 확인할 수 있습니다.
 
 > [!IMPORTANT]
 > 특정 프로젝트 형식은 Visual Studio 설치 관리자를 통해 특정 워크로드를 설치해야 합니다. 워크로드가 설치되어 있지 않으면 Visual Studio에서 알 수 없거나 호환되지 않는 프로젝트 형식을 보고합니다. 이 경우 설치 옵션을 확인하고 다시 시도하세요. Visual Studio 2019의 프로젝트 지원에 대한 자세한 내용은 [플랫폼 대상 지정 및 호환성](/visualstudio/releases/2019/compatibility) 문서를 참조하세요.
@@ -125,11 +125,11 @@ ms.locfileid: "72314171"
 
 다음 목록에서는 이전 버전에서 만든 프로젝트에 대한 Visual Studio 2019의 지원에 대해 설명합니다.
 
-여기에 나열된 프로젝트 또는 파일 형식이 표시되지 않는 경우 [이 문서의 Visual Studio 2017 버전](port-migrate-and-upgrade-visual-studio-projects.md)을 참조하고 이 페이지의 맨 아래에 **이 페이지에 대한** > **피드백 보내기** 옵션을 사용하여 프로젝트의 세부 정보를 제공해 주세요. (익명으로 “이 페이지가 도움이 되었나요?” 컨트롤을 사용하면 피드백에 응답할 수 없습니다.)
+여기에 나열된 프로젝트 또는 파일 형식이 표시되지 않는 경우 [이 문서의 Visual Studio 2017 버전](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2017)을 참조하세요. 이 페이지의 아래쪽에 있는 **다음에 대한 피드백 보내기** > **이 페이지** 단추를 사용하여 프로젝트 세부 정보를 제공할 수도 있습니다. (익명으로 “이 페이지가 도움이 되었나요?” 컨트롤을 사용하면 피드백에 응답할 수 없습니다.)
 
-| 프로젝트 형식 | 지원 |
+| 프로젝트 형식 | 고객 지원팀 |
 | --- | --- |
-| .NET Core 프로젝트(.xproj) | Visual Studio 2015로 만든 프로젝트는 xproj 프로젝트 파일을 포함하는 미리 보기 도구를 사용했습니다. Visual Studio 2019에서 xproj 파일을 열면 파일을 csproj 형식으로 마이그레이션(xproj 파일의 백업이 생성됨)하라는 메시지가 표시됩니다. .NET Core 프로젝트의 이 csproj 형식은 Visual Studio 2015 및 이전 버전에서 지원되지 않습니다.  xproj 형식은 csproj로 마이그레이션해야만 Visual Studio 2017 이상에서 지원됩니다. 자세한 내용은 [csproj 형식으로 .NET Core 프로젝트 마이그레이션](/dotnet/core/migration/#visual-studio)을 참조하세요.|
+| .NET Core 프로젝트(.xproj) | Visual Studio 2015로 만든 프로젝트는 xproj 프로젝트 파일을 포함하는 미리 보기 도구를 사용했습니다.<br/><br/>Visual Studio 2017: xproj 형식은 csproj 형식으로 마이그레이션해야만 지원됩니다. xproj 파일을 열면 파일을 SDK 스타일의 csproj 형식으로 마이그레이션해야 한다는 메시지가 표시됩니다. (xproj 파일의 백업이 생성됩니다.) SDK 스타일의 csproj 프로젝트는 Visual Studio 2015 및 이전 버전에서 지원되지 않습니다. <br/><br/>Visual Studio 2019: 버전 16.3 이상에서는 xproj 프로젝트를 로드하거나 마이그레이션할 수 없습니다. 자세한 내용은 [csproj 형식으로 .NET Core 프로젝트 마이그레이션](/dotnet/core/migration/#visual-studio)을 참조하세요.|
 | Application Insights를 사용하도록 지정한 ASP.NET 웹 애플리케이션 및 ASP.NET Core 웹 애플리케이션 | 각 Visual Studio 사용자의 리소스 정보가 사용자 인스턴스별 레지스트리에 저장됩니다. 이 정보는 사용자가 프로젝트를 열지 않고 Azure Application Insights 데이터를 검색하려는 경우에 사용됩니다. Visual Studio 2015에서는 Visual Studio 2017 및 Visual Studio 2019와 다른 레지스트리 위치를 사용하므로 충돌하지 않습니다.<br/><br/>사용자가 ASP.NET 웹 애플리케이션 또는 ASP.NET Core 웹 애플리케이션을 만들면 리소스가 .suo 파일에 저장됩니다. 사용자는 Visual Studio 2015, Visual Studio 2017 또는 Visual Studio 2019에서 프로젝트를 열 수 있으며, Visual Studio가 두 버전 모두에서 사용되는 프로젝트 및 솔루션을 지원하는 한 각각에 대해 리소스 정보가 사용됩니다. 사용자는 각 제품에 대해 한 번 인증해야 합니다. 예를 들어 Visual Studio 2017에서 프로젝트를 만들고 Visual Studio 2019에서 열 경우 사용자는 Visual Studio 2019에서 인증해야 합니다. |
 | C#/Visual Basic Webform 또는 Windows Form | Visual Studio 2019, Visual Studio 2017 및 Visual Studio 2015에서 프로젝트를 열 수 있습니다. |
 | 코딩된 UI 테스트 | Visual Studio 2019에서는 자동화된 UI 기반 기능 테스트를 위해 코딩된 UI 테스트는 사용되지 않습니다. <br/><br/>Visual Studio 2019는 코딩된 UI 테스트에 대한 마지막 릴리스가 될 것입니다. 웹앱 테스트에는 Selenium을 사용하고, 데스크톱 및 UWP 앱 테스트에는 WinAppDriver가 있는 Appium을 사용하는 것이 좋습니다. |
@@ -154,7 +154,7 @@ ms.locfileid: "72314171"
 | Silverlight | Silverlight 프로젝트는 Visual Studio 2019에서 지원되지 않습니다. Silverlight 애플리케이션을 유지하려면 Visual Studio 2015를 계속 사용합니다. |
 | SQL - Redgate | Redgate의 SQL 변경 Automation Core(이전에는 ReadyRoll Core라고 함), SQL Prompt Core 및 SQL Search는 Visual Studio 설치 관리자에서 더 이상 제공되지 않습니다.<br/><br/>이러한 기능에 대해서는 Visual Studio 2017을 계속 사용할 수 있습니다. Visual Studio 2019에서 Redgate의 SQL Toolbelt에 사용할 수 있는 유료 SQL Change Automation 및 SQL Prompt 제품으로 업그레이드할 수 있습니다.|
 | SQL Server Reporting Services 및 SQL Server Analysis Services(SSRS, SSDT, SSAS, MSAS) | 이러한 프로젝트 형식에 대한 지원은 Visual Studio 갤러리의 두 가지 확장 기능을 통해 제공됩니다.  [Microsoft Analysis Services 모델링 프로젝트](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) 및 [Microsoft Reporting Services 프로젝트](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). SSDT는 Visual Studio 2019에서 데이터 스토리지 및 처리 워크로드를 지원합니다. 자세한 내용은 [Visual Studio용 SSDT(SQL Server Data Tools) 다운로드 및 설치](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) 페이지를 참조하세요. |
-| SQL Server 통합 서비스(SSIS) | Visual Studio 2019 지원을 사용할 수 있습니다. 자세한 내용은 [Visual Studio용 SSDT(SQL Server Data Tools) 다운로드 및 설치](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) 페이지와 [SSIS(SQL Server Integration Services)](https://techcommunity.microsoft.com/t5/SQL-Server-Integration-Services/bg-p/SSIS) 팀 블로그 및 Marketplace의 [SQL Server Integration Services 프로젝트](https://marketplace.visualstudio.com/items?itemName=SSIS.SqlServerIntegrationServicesProjects&ssr=false#overview) 페이지를 참조하세요. |
+| SSIS(SQL Server Integration Services) | Visual Studio 2019 지원을 사용할 수 있습니다. 자세한 내용은 [Visual Studio용 SSDT(SQL Server Data Tools) 다운로드 및 설치](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) 페이지와 [SSIS(SQL Server Integration Services)](https://techcommunity.microsoft.com/t5/SQL-Server-Integration-Services/bg-p/SSIS) 팀 블로그 및 Marketplace의 [SQL Server Integration Services 프로젝트](https://marketplace.visualstudio.com/items?itemName=SSIS.SqlServerIntegrationServicesProjects&ssr=false#overview) 페이지를 참조하세요. |
 | 테스트 창 확장 | Visual Studio 2019에서는 이전에 공용으로 표시되었지만 공식적으로 문서화되지 않은 테스트 창 API의 일부가 제거되었습니다. 확장 유지 관리자에게 조기 경고하기 위해 광범위하게 표시되는 API가 Visual Studio 2017에서 더 이상 사용되지 않는 것으로 표시되었습니다. 아는 바로는, 이러한 API에 대한 종속성을 사용하는 확장은 거의 없습니다. 자세한 정보 및 업데이트는 [사용되지 않는 테스트 관련 API의 전체 목록](https://github.com/Microsoft/vstest/issues/1830)을 보세요. 시나리오에 영향을 주는 경우 [개발자 커뮤니티](https://developercommunity.visualstudio.com)에 알려주세요. |
 | Visual C++ | Visual Studio 2019를 사용하여 Visual Studio 2010까지 이전 버전의 Visual Studio에서 만든 프로젝트에서 작업할 수 있습니다. 프로젝트를 처음 열면 최신 컴파일러 및 도구 집합으로 업그레이드하거나 원래 항목을 계속 사용하는 옵션이 있습니다. 원래 항목을 계속 사용하도록 선택하면 Visual Studio 2019에서는 프로젝트 파일을 수정하지 않으며 이전 Visual Studio 설치의 도구 집합을 사용하여 프로젝트를 빌드합니다. 원래 옵션을 유지하는 것은 필요한 경우 원래 버전의 Visual Studio에서 프로젝트를 열 수 있음을 의미합니다. 자세한 내용은 [Visual Studio의 네이티브 멀티 타기팅을 사용하여 이전 프로젝트 빌드](/cpp/porting/use-native-multi-targeting)를 참조하세요. |
 | Visual Studio 확장성/VSIX | MinimumVersion 14.0 이하의 프로젝트는 업데이트를 통해 MinimumVersion 15.0으로 선언됩니다. 그러면 이전 버전의 Visual Studio에서 프로젝트를 열 수 없습니다. 이전 버전에서 프로젝트를 열 수 있도록 허용하려면 MinimumVersion을 `$(VisualStudioVersion)`(으)로 설정합니다. 참고 항목 [방법: Visual Studio 2017로 확장성 프로젝트 마이그레이션](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
@@ -162,7 +162,7 @@ ms.locfileid: "72314171"
 | Apache Cordova용 Visual Studio Tools | Visual Studio 2019에서 Apache Cordova에 대한 지원이 제거되었습니다. Visual Studio 2019에 동등한 기능이 없으므로 이러한 프로젝트에 대한 자동 마이그레이션 경로는 없습니다.<br/><br/>Visual Studio Code 확장용 Cordova Tools(최신 버전의 Cordova 지원)를 사용하거나 Visual Studio 2017을 계속 사용할 수 있습니다. |
 | 웹 배포(wdproj) | 게시 프로필 지원이 추가되면서 Visual Studio 2012에서 웹 배포 프로젝트 지원이 제거되었습니다. Visual Studio 2019에 동등한 기능이 없으므로 이러한 프로젝트에 대한 자동 마이그레이션 경로는 없습니다. 대신, [StackOverflow](https://stackoverflow.com/a/12061065/1203388)에 설명된 대로 텍스트 편집기에서 wdproj 파일을 열고 사용자 지정을 복사하여 pubxml(게시 프로필) 파일에 붙여넣습니다. |
 | Windows Communication Foundation, Windows Workflow Foundation | Visual Studio 2019, Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 및 Visual Studio 2012에서 이 프로젝트를 열 수 있습니다. |
-| Windows Presentation Foundation | Visual Studio 2017, Visual Studio 2013, Visual Studio 2012 및 Visual Studio 2010 SP1에서 이 프로젝트를 열 수 있습니다. |
+| Windows Presentation Foundation | Visual Studio 2019, Visual Studio 2017, Visual Studio 2013, Visual Studio 2012 및 Visual Studio 2010 SP1에서 이 프로젝트를 열 수 있습니다. |
 | Windows Phone 앱 | Windows Phone용 프로젝트는 Visual Studio 2019에서 지원되지 않습니다. <br/><br/>Windows Phone 8.x 앱을 유지하려면 Visual Studio 2015를 사용합니다. Windows Phone 7.x 프로젝트를 유지하려면 Visual Studio 2012를 사용합니다. |
 | Windows 스토어 응용 프로그램 | JavaScript 유니버설 Windows 프로젝트는 Visual Studio 2019에서 지원되지 않습니다. 이러한 프로젝트를 유지 관리하려면 Visual Studio 2017을 사용하세요. <br/><br/>Visual Studio 2019 설치 관리자에서 Windows 10 Fall Creators Update(빌드 16299) 이전 버전의 Windows 10 SDK가 제거되었습니다. 이전 SDK를 수동으로 다운로드하거나 프로젝트의 대상을 다시 지정하여 최신 SDK를 사용할 수 있습니다.<br/><br/>project.json을 사용하는 유니버설 Windows 프로젝트는 지원되지 않습니다. 패키지 참조를 사용하도록 이러한 프로젝트를 업그레이드하는 것이 좋습니다. 또는 project.json 파일에 Microsoft.NET.Test.Sdk 버전 16.0.0.0에 대한 참조를 추가합니다.<br/><br/>Windows Store 8.1 및 8.0용 프로젝트는 Visual Studio 2019에서 지원되지 않습니다. 이러한 앱을 유지하려면 Visual Studio 2015를 계속 사용합니다. |
 | Xamarin | Visual Studio 및 Visual Studio for Mac용 Xamarin Live Player 확장이 제거되었습니다. 이렇게 하면 페어링 화면과 모든 통합이 제거됩니다. 대신 빌드된 Xamarin.Forms Previewer를 사용합니다.<br/><br/>Android용 Visual Studio 에뮬레이터가 Visual Studio 설치 관리자에서 제거되었습니다. 대신 Google Android 에뮬레이터에서 새 Hyper-V 지원을 사용합니다. |

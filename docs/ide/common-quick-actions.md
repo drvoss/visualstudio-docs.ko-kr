@@ -3,20 +3,20 @@ title: 일반적인 빠른 작업
 description: C# 및 Visual Basic에 대해 가장 인기 있는 빠른 작업에는 키워드 또는 기호 철자 수정, 병합 충돌 해결, 필요한 가져오기 제거, 형식 생성, 로컬 변수 지정 등이 포함됩니다.
 ms.date: 03/28/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 600fb1b4abea2103c28e3a5067d640228d68b755
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: bad97ac5574afd65103263b2ce51a4dfba02741c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72000150"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652242"
 ---
 # <a name="common-quick-actions"></a>일반적인 빠른 작업
 
@@ -96,7 +96,7 @@ private void MyMethod()
 
 ### <a name="remove-unnecessary-usingsimports"></a>불필요한 using/Import 제거
 
-**불필요한 using/Import 제거** 빠른 작업은 현재 파일에 대해 사용되지 않은 `using` 및 `Import` 문을 제거합니다. 이 항목을 선택하면 사용되지 않은 네임스페이스 가져오기가 제거됩니다.
+**불필요한 using/Import 제거** 빠른 작업은 현재 파일에 대해 사용되지 않은 `using` 및 `Import` 지시문을 제거합니다. 이 항목을 선택하면 사용되지 않은 네임스페이스 가져오기가 제거됩니다.
 
 | 해당 언어 | 지원되는 버전 |
 | - | - |
@@ -184,7 +184,7 @@ void DoWork(CancellationToken cancellationToken = default) { ... }
 - 참조 어셈블리의 형식에 대해 using/import 제안
 - NuGet 패키지의 형식에 대해 using/import 제안
 
-사용하도록 설정한 경우 현재 가져오지 않고 참조 어셈블리 또는 NuGet 패키지에 있는 네임스페이스의 형식을 사용하면 using/import 문이 생성됩니다.
+사용하도록 설정한 경우 현재 가져오지 않고 참조 어셈블리 또는 NuGet 패키지에 있는 네임스페이스의 형식을 사용하면 using/import 지시문이 생성됩니다.
 
 ```csharp
 // Before
@@ -204,7 +204,7 @@ Debug.WriteLine("Hello")
 
 ' Imports System.Diagnostics
 
-// After
+' After
 Imports System.Diagnostics
 
 Debug.WriteLine("Hello")

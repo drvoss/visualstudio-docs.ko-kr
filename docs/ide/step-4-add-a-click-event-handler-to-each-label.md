@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b60f9bb1fffb9fb36311ad3fda504c1ff2260ce
-ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
+ms.openlocfilehash: 0699faebfd210390eea11f8ad11b48d4c4bbd980
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72289690"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72621434"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>4단계: 각 레이블에 클릭 이벤트 처리기 추가
 
@@ -38,7 +38,7 @@ ms.locfileid: "72289690"
 
 2. 첫 번째 레이블 컨트롤을 선택합니다. 그런 다음, **Ctrl** 키를 누른 상태에서 다른 레이블을 각각 선택합니다. 모든 레이블이 선택되어야 합니다.
 
-3. **속성** 창의 도구 모음에서 **이벤트** 단추를 선택하여 **속성** 창의 **이벤트** 페이지를 표시합니다. 다음 그림과 같이 **Click** 이벤트 위치까지 아래로 스크롤한 후 상자에 **label_Click**을 입력합니다.
+3. **속성** 창의 도구 모음에서 **이벤트** 단추를 선택하여 **속성** 창의 **이벤트** 페이지를 표시합니다. 다음 스크린샷과 같이 **Click** 이벤트 위치까지 아래로 스크롤한 후 상자에 **label_Click**을 입력합니다.
 
      ![Click 이벤트가 표시된 속성 창](../ide/media/express_labelclick.png)
 
@@ -64,6 +64,6 @@ ms.locfileid: "72289690"
 
 ## <a name="to-continue-or-review"></a>계속하거나 검토하려면
 
-- 다음 자습서 단계로 이동하려면 [5단계: 레이블 참조 추가](../ide/step-5-add-label-references.md)를 참조하세요.
+- 다음 자습서 단계로 이동하려면 **[5단계: 레이블 참조 추가](../ide/step-5-add-label-references.md)** 를 참조하세요.
 
 - 이전 자습서 단계로 돌아가려면 [3단계: 각 레이블에 임의 아이콘 할당](../ide/step-3-assign-a-random-icon-to-each-label.md)을 참조하세요.

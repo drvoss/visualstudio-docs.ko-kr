@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 460eb832b94a1826d2d8f990b76a2afe90f992c8
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: bb6f0600d8bdfe8c736305ffd31788edb9d817a6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314094"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576288"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>2단계: 난수 더하기 문제 만들기
 
@@ -73,7 +73,7 @@ ms.locfileid: "72314094"
      개체 뒤에 점을 입력하면 IntelliSense에 속성, 메서드, 이벤트 등 개체의 멤버 목록이 표시됩니다.
 
     > [!NOTE]
-    > `Next()`를 호출할 때처럼 `Random` 메서드를 `randomizer.Next(50)` 개체와 함께 사용하는 경우 50 미만(0에서 49 사이)의 난수가 반환됩니다. 이 예제에서는 `randomizer.Next(51)`가 호출되었습니다. 50이 아니라 51이 사용된 이유는 두 난수를 더해 0에서 100 사이의 답이 나오도록 하기 위해서입니다. `Next()` 메서드에 50을 전달하면 0에서 49 사이의 숫자가 선택되므로 가능한 가장 큰 답은 100이 아니라 98입니다. 이 메서드의 처음 두 문을 실행하고 나면 두 개의 정수 변수인 **addend1**과 **addend2**에 각각 0에서 50 사이의 난수 값이 들어갑니다. 이 스크린 샷에는 Visual C# 코드가 나와 있지만 Visual Basic에서도 IntelliSense가 동일하게 작동합니다.
+    > `Next()`를 호출할 때처럼 `Random` 메서드를 `randomizer.Next(50)` 개체와 함께 사용하는 경우 50 미만(0에서 49 사이)의 난수가 반환됩니다. 이 예제에서는 `randomizer.Next(51)`가 호출되었습니다. 50이 아니라 51이 사용된 이유는 두 난수를 더해 0에서 100 사이의 답이 나오도록 하기 위해서입니다. `Next()` 메서드에 50을 전달하면 0에서 49 사이의 숫자가 선택되므로 가능한 가장 큰 답은 100이 아니라 98입니다. 이 메서드의 처음 두 문을 실행하고 나면 두 개의 정수 변수인 **addend1**과 **addend2**에 각각 0에서 50 사이의 난수 값이 들어갑니다. 이 스크린샷에는 C# 코드가 나와 있지만 Visual Basic에서도 IntelliSense가 동일하게 작동합니다.
 
      이러한 문을 자세히 살펴봅니다.
 

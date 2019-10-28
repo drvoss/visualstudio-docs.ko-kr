@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8acc67aa82bb0d7cf81cf6794bfdbb4e0c912ebe
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 4789248a129bcd41452af1184418f9f59ede7595
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314235"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562571"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>6단계: 빼기 문제 추가
 이 자습서의 6단계에서는 빼기 문제를 추가하고 다음 작업을 수행하는 방법을 알아봅니다.
@@ -76,7 +76,7 @@ ms.locfileid: "72314235"
      [!code-vb[VbExpressTutorial3Step5_6#14](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_4.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#14](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_4.cs)]
 
-     Visual C#에서 `&&`는 `logical and` 연산자입니다. Visual Basic에서 이에 해당하는 연산자는 `AndAlso`입니다. 이러한 연산자는 "addend1과 addend2를 더한 값이 sum NumericUpDown 값과 같고 minuend에서 subtrahend를 뺀 값이 difference NumericUpDown의 값과 같은 경우"라는 것을 나타냅니다. 즉, `CheckTheAnswer()` 메서드는 더하기 문제와 빼기 문제의 답이 모두 올바른 경우에만 `true`를 반환합니다.
+     C#에서 `&&`는 `logical and` 연산자입니다. Visual Basic에서 이에 해당하는 연산자는 `AndAlso`입니다. 이러한 연산자는 "addend1과 addend2를 더한 값이 sum NumericUpDown 값과 같고 minuend에서 subtrahend를 뺀 값이 difference NumericUpDown의 값과 같은 경우"라는 것을 나타냅니다. 즉, `CheckTheAnswer()` 메서드는 더하기 문제와 빼기 문제의 답이 모두 올바른 경우에만 `true`를 반환합니다.
 
 4. 시간이 다 되면 올바른 답이 채워지도록 타이머의 Tick 이벤트 처리기 마지막 부분을 다음 코드로 바꿉니다.
 

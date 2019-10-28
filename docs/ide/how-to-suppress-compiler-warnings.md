@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 764c488b659418dd409a5d83b1efcaac502f1e5e
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: aec3dfb45471a3349e14419671ef1fb3b5e05db5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415783"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747955"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>방법: 컴파일러 경고 표시 안 함
 
@@ -33,7 +33,7 @@ ms.locfileid: "68415783"
 
 1. 솔루션을 다시 빌드합니다.
 
-## <a name="suppress-specific-warnings-for-visual-c"></a>Visual C++에 대한 특정 경고 표시 안 함
+## <a name="suppress-specific-warnings-for-c"></a>C++에 대한 특정 경고 표시 안 함
 
 **구성 속성** 속성 페이지를 사용하여 C++ 프로젝트에 대한 특정 경고를 표시하지 않습니다.
 

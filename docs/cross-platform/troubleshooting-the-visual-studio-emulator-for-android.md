@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: ebbbd2eb0cf47763868a6c23ef2637bdd4009b2e
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 56978bfee49bc3a38e900eb41004307ef40d0403
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261048"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777809"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Android용 Visual Studio 에뮬레이터 문제 해결
 이 항목에는 Android용 Visual Studio 에뮬레이터를 사용하는 동안 발생할 수 있는 문제를 해결하는 데 도움이 되는 정보가 들어 있습니다.
@@ -67,7 +67,7 @@ ms.locfileid: "66261048"
 ## <a name="NoInstall"></a> 에뮬레이터 설치 실패
  Hyper-V를 설치하지 않은 경우 에뮬레이터를 설치하려고 할 때 다음과 같은 메시지가 나타납니다. HyperV를 지원하는 컴퓨터가 있어야 하고 HyperV를 사용하도록 설정해야 합니다.
 
- ![Android&#95;Emu&#95;Install&#95;Issue](../cross-platform/media/android_emu_install_issue.png "Android_Emu_Install_Issue")
+ ![Android_Emu_Install_Issue](../cross-platform/media/android_emu_install_issue.png "Android_Emu_Install_Issue")
 
 > [!NOTE]
 > 이 메시지는 Android용 Visual Studio 에뮬레이터 및 Windows Phone 에뮬레이터 모두에 적용됩니다. Windows 8.1 및 Windows 10에서 에뮬레이터를 지원합니다.
@@ -132,9 +132,9 @@ ms.locfileid: "66261048"
 
 - Hyper-V 관리자에 가상 스위치 관리자를 열고 네트워크 스위치가 2개 있고, 첫 번째는 내부 스위치, 두 번째는 외부 스위치인지 확인합니다.
 
-     ![Android&#95;Emu&#95;V&#95;Switch&#95;Man](../cross-platform/media/android_emu_v_switch_man.png "Android_Emu_V_Switch_Man")
+     ![Android_Emu_V_Switch_Man](../cross-platform/media/android_emu_v_switch_man.png "Android_Emu_V_Switch_Man")
 
-     설치가 잘못되고 Windows 10을 사용 중인 경우 [netcfg – d 명령을 사용하여 네트워크 디바이스를 다시 설치](http://windows.microsoft.com/windows-10/fix-network-connection-issues)할 수 있습니다(섹션 6).
+     설치가 잘못되고 Windows 10을 사용 중인 경우 [netcfg – d 명령을 사용하여 네트워크 디바이스를 다시 설치](https://support.microsoft.com/help/10741/windows-fix-network-connection-issues)할 수 있습니다(섹션 6).
 
 - 이러한 단계로도 문제가 해결되지 않으면 [Emulator fails to start (first use)](#NoStart) 에서 에뮬레이터에 방해가 될 수 있는 타사 소프트웨어에 대한 정보를 확인하세요.
 
@@ -209,7 +209,7 @@ ms.locfileid: "66261048"
 
   2. vEthernet(내부 이더넷 포트 Windows Phone 에뮬레이터 내부 스위치) 어댑터에 대해 상황에 맞는 메뉴에서 **속성** 을 선택합니다.
 
-      ![Hyper&#45;V에서 사용되는 가상 어댑터](../cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")
+      ![Hyper-V에서 사용되는 가상 어댑터](../cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")
 
       어댑터 속성은 다음과 같습니다.
 
@@ -311,6 +311,6 @@ ms.locfileid: "66261048"
 ## <a name="Support"></a> 지원 리소스
  호스트 컴퓨터가 시스템 요구 사항을 충족한 상태에서 이 문제 해결 가이드에서 다루지 않은 문제가 발생하는 경우:
 
-- [Android 에뮬레이터](http://stackoverflow.com/questions/tagged/android-emulator) 및 visual-studio 태그를 사용하여 StackOverflow에 대해 질문합니다.
+- [Android 에뮬레이터](https://stackoverflow.com/questions/tagged/android-emulator) 및 visual-studio 태그를 사용하여 StackOverflow에 대해 질문합니다.
 
 - Visual Studio 또는 에뮬레이터 관리자에서 웃는 얼굴 보내기 도구를 사용하여 문제를 보고합니다.

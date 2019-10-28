@@ -11,22 +11,22 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBuild (Visual C++), ClangCompile task
-- ClangCompile task (MSBuild (Visual C++))
+- MSBuild (C++), ClangCompile task
+- ClangCompile task (MSBuild (C++))
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: 218ef07fa3b086a2240362011067bf526088d1f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1bd1d749461c423d51e0f5b736563a9f9aa757c5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569708"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747338"
 ---
 # <a name="clangcompile-task"></a>ClangCompile 작업
 
-Visual C++ 컴파일러 도구인 clang.exe를 래핑합니다.
+Microsoft C++ 컴파일러 도구 clang.exe를 래핑합니다.
 
 ## <a name="parameters"></a>매개 변수
 
@@ -51,7 +51,7 @@ Visual C++ 컴파일러 도구인 clang.exe를 래핑합니다.
 |**FunctionLevelLinking**|선택적 **bool** 매개 변수입니다.<br/><br/>컴파일러가 개별 함수를 패키지된 함수(COMDAT)의 형태로 패키지할 수 있게 합니다. 편집에 필요하며 계속 작동합니다.<br/><br/>`ffunction-sections`을 사용하십시오.|
 |**GccToolChain**|선택적 **string** 매개 변수입니다.<br/><br/>Gcc 도구 체인에 대한 폴더 경로입니다.|
 |**GNUMode**|선택적 **bool** 매개 변수입니다.<br/><br/>|
-|**MSCompatibility**|선택적 **bool** 매개 변수입니다.<br/><br/>완전한 Microsoft Visual C++ 호환성을 사용합니다.|
+|**MSCompatibility**|선택적 **bool** 매개 변수입니다.<br/><br/>완전한 Microsoft C++ 호환성을 사용합니다.|
 |**MSCompatibilityVersion**|선택적 **string** 매개 변수입니다.<br/><br/>_MSC_VER에서 보고할 Microsoft 컴파일러 버전 번호를 나타내는 점으로 구분된 값입니다(0 = 정의하지 않음(기본값)).|
 |**MSExtensions**|선택적 **bool** 매개 변수입니다.<br/><br/>Microsoft 컴파일러에서 지원하는 일부 비표준 구문을 허용합니다.|
 |**MSCompilerVersion**|선택적 **string** 매개 변수입니다.<br/><br/>_MSC_VER에서 보고할 Microsoft 컴파일러 버전 번호입니다(0 = 정의하지 않음(기본값)).|

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3add6e3e4f38b5ba73cd5154720d7b283189526e
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 8cf721e9880ce7f0b7c3191f73f16366637f0704
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461496"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748868"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>어셈블리 및 매니페스트 서명 관리
 
@@ -29,7 +29,7 @@ ms.locfileid: "68461496"
 
 Visual Basic 및 C# 프로젝트의 어셈블리 서명에 대한 자세한 내용은 [강력한 이름의 어셈블리 만들기 및 사용](/dotnet/framework/app-domains/create-and-use-strong-named-assemblies)을 참조하세요.
 
-Visual C++ 프로젝트의 어셈블리 서명에 대한 자세한 내용은 [강력한 이름 어셈블리(C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)를 참조하세요.
+C++ 프로젝트의 어셈블리 서명에 대한 자세한 내용은 [강력한 이름 어셈블리(C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)를 참조하세요.
 
 > [!NOTE]
 > 강력한 이름 서명은 어셈블리의 리버스 엔지니어링으로부터 보호하지 않습니다. 리버스 엔지니어링으로부터 보호하려면 [Dotfuscator Community](dotfuscator/index.md)를 참조하세요.

@@ -4,16 +4,16 @@ ms.date: 03/07/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 646a8680211d7d79ea24a1b5b62d78eb6955b5f7
-ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
+ms.openlocfilehash: b5974819e9dca064655cf04eec3dd371f09ee15c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72262332"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652996"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Live Unit Testing를 구성 및 사용하는 방법
 
@@ -96,7 +96,7 @@ Live Unit Testing을 사용하도록 설정하려면 최상위 Visual Studio 메
 
 ## <a name="view-coverage-visualization"></a>검사 시각화 보기
 
-Live Unit Testing을 사용하도록 설정하면 Visual Studio 편집기에서 코드 줄 각각을 업데이트하여 작성한 코드에 단위 테스트가 적용되는지 및 적용된 테스트에 통과하는지 여부를 표시합니다. 다음 이미지에서는 테스트를 통과하거나 실패한 코드 줄뿐만 아니라 테스트가 적용되지 않은 코드 줄을 보여 줍니다. 녹색 “✓” 표시가 있는 줄은 테스트를 통과한 경우에만 적용됩니다. 빨간색 “x”로 표시된 줄은 하나 이상의 테스트에 실패한 경우 적용됩니다. 파란색 “”로 표시된 줄은 테스트되지 않은 경우에 적용됩니다.
+Live Unit Testing을 사용하도록 설정하면 Visual Studio 편집기에서 코드 줄 각각을 업데이트하여 작성한 코드에 단위 테스트가 적용되는지 및 적용된 테스트에 통과하는지 여부를 표시합니다. 다음 이미지에서는 테스트를 통과하거나 실패한 코드 줄뿐만 아니라 테스트가 적용되지 않은 코드 줄을 보여 줍니다. 녹색 “✓” 표시가 있는 줄은 테스트를 통과한 경우에만 적용됩니다. 빨간색 “x”로 표시된 줄은 하나 이상의 테스트에 실패한 경우 적용됩니다. 파란색 “➖”로 표시된 줄은 테스트되지 않은 경우에 적용됩니다.
 
 ![Visual Studio의 코드 검사](./media/lut-codewindow.png)
 
@@ -120,7 +120,7 @@ Live Unit Testing을 사용하도록 설정하면 Visual Studio 편집기에서 
 
 - 통과(절반이 채워진 비커와 녹색 "✓" 표시)
 - 실패(절반이 채워진 비커와 빨간색 "🞩" 표시)
-- Live Unit Testing에는 포함되지 않음(절반이 채워진 비커와 파란색 "" 표시)
+- Live Unit Testing에는 포함되지 않음(절반이 채워진 비커와 파란색 "➖" 표시)
 
 테스트 이외의 메서드는 기호로 데코레이팅되지 않습니다. 다음 이미지에서는 네 가지 형식의 모든 메서드를 보여 줍니다.
 

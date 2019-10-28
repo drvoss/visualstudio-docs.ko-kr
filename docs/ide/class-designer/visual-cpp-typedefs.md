@@ -1,5 +1,5 @@
 ---
-title: 클래스 디자이너의 Visual C++ 형식 정의
+title: 클래스 디자이너의 C++ 형식 정의
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,19 +8,19 @@ f1_keywords:
 helpviewer_keywords:
 - Class Designer [Visual Studio], typedefs
 ms.assetid: c1984108-71fc-4d3a-b4d4-3eac2c6b4ebf
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ded9e1b6bea0a6f03dd9599b592bba5fba6f91fe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94dc4a6687a2aaede7fc901884c5d3acc6fbf56f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975132"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748002"
 ---
-# <a name="visual-c-typedefs-in-class-designer"></a>클래스 디자이너의 Visual C++ 형식 정의
+# <a name="c-typedefs-in-class-designer"></a>클래스 디자이너의 C++ 형식 정의
 
 [Typedef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs) 문은 이름과 기본 형식 간에 하나 이상의 간접 참조 레이어를 만듭니다. **클래스 디자이너**는 `typedef` 키워드로 선언된 C++ typedef 형식을 지원합니다. 예:
 
@@ -84,5 +84,5 @@ typedef class coord
 
 ## <a name="see-also"></a>참고 항목
 
-- [Visual C++ 코드 작업](working-with-visual-cpp-code.md)
+- [C++ 코드 사용](working-with-visual-cpp-code.md)
 - [Typedefs](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)

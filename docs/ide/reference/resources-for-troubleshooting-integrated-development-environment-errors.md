@@ -88,17 +88,17 @@ f1_keywords:
 - VB_E_TERRCLASSNOTREG
 - vs.webclient.help.general
 ms.assetid: 8f866eb5-a206-4c16-807e-96a0f2c0e645
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 723a9e382256650ae70982d403c2c768fb1f1e8b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2741e86bdc8e59434472242210cd6de2ffa8cee9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945557"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655549"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>통합 개발 환경 오류를 해결하기 위한 리소스
 
@@ -119,7 +119,7 @@ KB(기술 자료)에서 온라인으로 제품 문제에 대한 문서를 검색
 
 ## <a name="product-support"></a>기술 지원
 
-다른 리소스를 확인한 후에도 궁금한 점이 있는 경우 [Microsoft 지원](http://go.microsoft.com/fwlink/?linkid=1782) 웹 사이트를 방문하여 Microsoft 지원 서비스에 문의할 수 있습니다. 해당 지역에서 사용 가능한 제품 지원에 대한 자세한 내용은 [의견 보내기](../../ide/talk-to-us.md)를 참조하세요.
+다른 리소스를 확인한 후에도 궁금한 점이 있는 경우 [Microsoft 지원](http://go.microsoft.com/fwlink/?linkid=1782) 웹 사이트를 방문하여 Microsoft 지원 서비스에 문의할 수 있습니다. 해당 지역에서 사용 가능한 제품 지원에 대한 자세한 내용은 [Visual Studio 피드백 옵션](../../ide/feedback-options.md) 페이지를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

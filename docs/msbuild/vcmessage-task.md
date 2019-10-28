@@ -11,26 +11,26 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- VCMessage task (MSBuild (Visual C++))
-- MSBuild (Visual C++), VCMessage task
+- VCMessage task (MSBuild (C++))
+- MSBuild (C++), VCMessage task
 ms.assetid: 956675fd-05dc-40b4-856f-616145103498
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d025fd1f71b67acbcd532232b36b55fd35e1f530
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: be4f963a5944882f14118be54e498fd4712c2e46
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970759"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747178"
 ---
 # <a name="vcmessage-task"></a>VCMessage 작업
 빌드 중에 경고 및 오류 메시지를 로깅합니다.
 
-## <a name="remarks"></a>주의
- 이 작업은 Visual C++에 대한 MSBuild 구현을 도우며 사용자가 호출할 수 없습니다. 자세한 내용은 <xref:Microsoft.Build.Utilities.TaskLoggingHelper>을 참조하세요.
+## <a name="remarks"></a>설명
+ 이 작업은 C++ 프로젝트용 MSBuild 구현에 도움이 되며, 사용자가 호출할 수 없습니다. 자세한 내용은 <xref:Microsoft.Build.Utilities.TaskLoggingHelper>을 참조하세요.
 
 ## <a name="parameters"></a>매개 변수
  다음 표에서는 **VCMessage** 작업의 매개 변수에 대해 설명합니다.

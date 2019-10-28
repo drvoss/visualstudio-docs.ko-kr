@@ -15,14 +15,14 @@ helpviewer_keywords:
 description: Visual Studio에 포함된 Dotfuscator Community 무료 복사본의 기능을 알아봅니다.
 ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
 author: Joe-Sewell-PreEmptive
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 87d093a540e3c6fae6a80761a5b945c572bd890d
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 249c039070246f27669f3a808cf607a649db1e59
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744777"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747935"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Dotfuscator의 기능
 
@@ -37,7 +37,7 @@ Dotfuscator Community는 [UWP(유니버설 Windows 플랫폼)][uwp] 및 [Xamarin
 ## <a name="intellectual-property-protection"></a>지적 재산권 보호
 
 애플리케이션의 디자인, 동작 및 구현은 IP(지적 재산권)의 형식입니다.
-그러나 .NET용으로 만들어진 애플리케이션은 기본적으로 공개됩니다. [고급 메타데이터 및 중간 코드를 포함하므로 ][assemblies] .NET 어셈블리를 쉽게 리버스 엔지니어링할 수 있습니다.
+그러나 .NET용으로 만들어진 애플리케이션은 기본적으로 공개됩니다. [고급 메타데이터 및 중간 코드를 포함][assemblies]하므로 .NET 어셈블리를 쉽게 리버스 엔지니어링할 수 있습니다.
 
 Dotfuscator Community에는 기본 [.NET 난독 처리][obfuscation]가 [이름 바꾸기][renaming] 형식으로 포함됩니다.
 Dotfuscator를 통해 코드를 난독 처리하면 중요한 명명 정보가 더 이상 공개되지 않으므로 리버스 엔지이어링을 통해 소스 코드에 무단 액세스할 위험이 감소합니다.

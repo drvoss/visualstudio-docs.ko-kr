@@ -11,12 +11,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 648d00cd59d056e0874c91338a39667088d93e2e
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 071c16267486e1dda1e183cad3c488345974a3cc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018436"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745918"
 ---
 # <a name="sample-c-project-for-code-analysis"></a>코드 분석을 위한 샘플 C++ 프로젝트
 
@@ -34,7 +34,7 @@ ms.locfileid: "72018436"
 
 1. **파일** 메뉴를 클릭하고, **새로 만들기**를 가리킨 다음, **새 프로젝트**를 클릭합니다.
 
-2. **프로젝트 형식** 트리 목록에서 Visual C++가 VS의 기본 언어가 아닌 경우 **다른 언어**를 확장합니다.
+2. **프로젝트 형식** 트리 목록에서 C++가 VS의 기본 언어가 아닌 경우 **다른 언어**를 확장합니다.
 
 3. **Visual C++** 를 확장한 다음, **일반**을 클릭합니다.
 

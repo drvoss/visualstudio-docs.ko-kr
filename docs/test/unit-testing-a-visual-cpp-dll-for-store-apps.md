@@ -1,5 +1,5 @@
 ---
-title: UWP 앱의 Visual C++ DLL 테스트 방법
+title: UWP 앱의 C++ DLL 테스트 방법
 ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
@@ -7,14 +7,14 @@ manager: jillfra
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 6e0599445ff07227f5075a1a10a8dfdfe50e88f0
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 18d8382bcb4f3e348443050e818f0b59c2a18688
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925791"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748085"
 ---
-# <a name="how-to-test-a-visual-c-dll"></a>Visual C++ DLL 테스트 방법
+# <a name="how-to-test-a-c-dll"></a>C++ DLL 테스트 방법
 
 이 문서에서는 C++용 Microsoft 테스트 프레임워크를 사용하여 UWP(유니버설 Windows 플랫폼) 앱용 C++ DLL에 대한 단위 테스트를 만드는 한 가지 방법을 설명합니다. RooterLib DLL은 지정된 숫자의 제곱근 예상 값을 계산하는 함수를 구현하여 미적분법의 한계 이론에 대한 희미한 기억을 보여 줍니다. DLL은 UWP 앱에 포함하여 사용자에게 수학으로 할 수 있는 재밌는 것을 보여줄 수 있습니다.
 

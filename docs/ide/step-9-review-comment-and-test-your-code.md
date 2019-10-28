@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31a66556e9476631fa0372b14e73eb8c6241fc63
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 39be6feffb70dd43823af2af0fce719daafc6f78
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314192"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572475"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>9단계: 코드 검토, 주석 처리 및 테스트
 
@@ -65,7 +65,7 @@ C#에서는 두 개의 슬래시(//)를 사용하여 주석 줄을 표시하고,
     > [!TIP]
     > IDE는 사용자가 코드를 손쉽게 작성할 수 있도록 하기 위한 것으로, *코드 조각*이라는 기능을 제공합니다. 조각은 작은 코드 블록으로 확장되는 바로 가기입니다.
     >
-    >  사용 가능한 모든 코드 조각을 볼 수 있습니다. 메뉴 모음에서 **도구** > **코드 조각 관리자**를 차례로 선택합니다. C#의 경우 `if` 코드 조각이 **Visual C#** 에 있습니다. Visual Basic의 경우 `if` 코드 조각이 **조건 및 루프** > **코드 패턴**에 있습니다. 이 관리자를 사용하여 기존 조각을 찾거나 사용자 고유의 조각을 추가할 수 있습니다.
+    >  사용 가능한 모든 코드 조각을 볼 수 있습니다. 메뉴 모음에서 **도구** > **코드 조각 관리자**를 차례로 선택합니다. C#의 경우 `if` 코드 조각이 **Visual C#** 에 있습니다. Visual Basic의 경우 `if` 코드 조각이 **코드 패턴** > **조건 및 루프**에 있습니다. 이 관리자를 사용하여 기존 조각을 찾거나 사용자 고유의 조각을 추가할 수 있습니다.
     >
     >  코드를 입력할 때 코드 조각을 활성화하려면 코드를 입력하고 **Tab** 키를 선택합니다. **IntelliSense** 창에 여러 코드 조각이 표시되므로 **Tab** 키를 두 번 선택해야 하는데, 첫 번째는 **IntelliSense** 창에서 코드 조각을 선택하기 위한 것이고 두 번째는 이 코드 조각을 사용하도록 IDE에 지시하기 위한 것입니다. IntelliSense에서는 `if` 조각은 지원하지만 `ifelse` 조각은 지원하지 않습니다.
 

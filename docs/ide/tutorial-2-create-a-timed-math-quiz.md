@@ -1,6 +1,6 @@
 ---
 title: '자습서 2: 시간이 지정된 수학 퀴즈 만들기'
-ms.date: 11/04/2016
+ms.date: 10/16/2019
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
 ms.topic: tutorial
 ms.technology: vs-ide-general
@@ -9,16 +9,21 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39550eb3e2d5fe78e50257b51b52642740781600
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: e092e11474aa872903977e1b07c699b160bef8a2
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118858"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516592"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>자습서 2: 시간이 지정된 수학 퀴즈 만들기
 
-이 자습서에서는 퀴즈를 푸는 사람이 지정된 시간 내에 네 가지 난수 산술 문제에 대답해야 하는 퀴즈를 빌드합니다. 다음 방법을 알아봅니다.
+이 자습서에서는 퀴즈를 푸는 사람이 지정된 시간 내에 네 가지 난수 산술 문제에 대답해야 하는 퀴즈를 빌드합니다.
+
+> [!NOTE]
+> 이 자습서는 C#과 Visual Basic을 모두 다루고 있으므로 사용 중인 프로그래밍 언어와 관련된 정보를 참조하세요.
+
+이 자습서에서는 다음 작업을 단계별로 안내합니다.
 
 - <xref:System.Random> 클래스를 사용하여 난수를 생성합니다.
 
@@ -34,13 +39,6 @@ ms.locfileid: "71118858"
 
 ## <a name="tutorial-links"></a>자습서 링크
 
-퀴즈의 전체 버전을 다운로드하려면 [Complete math quiz tutorial sample](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)(전체 수학 퀴즈 자습서 샘플)을 참조하세요.
-
-> [!NOTE]
-> 이 자습서에서는 C#과 Visual Basic 모두에 대해 다루고 있으므로 사용 중인 프로그래밍 언어와 관련된 정보를 참조하세요.
-
-## <a name="related-topics"></a>관련된 항목
-
 |제목|설명|
 |-----------|-----------------|
 |[1단계: 프로젝트 만들기 및 양식에 레이블 추가](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|먼저 프로젝트를 만들고 속성을 변경한 다음 `Label` 컨트롤을 추가합니다.|
@@ -51,3 +49,15 @@ ms.locfileid: "71118858"
 |[6단계: 빼기 문제 추가](../ide/step-6-add-a-subtraction-problem.md)|난수를 생성하고 타이머를 사용하며 올바른 답을 확인하는 빼기 문제를 추가합니다.|
 |[7단계: 곱하기 및 나누기 문제 추가](../ide/step-7-add-multiplication-and-division-problems.md)|난수를 생성하고 타이머를 사용하며 올바른 답을 확인하는 곱하기 및 나누기 문제를 추가합니다.|
 |[8단계: 퀴즈 사용자 지정](../ide/step-8-customize-the-quiz.md)|색 변경과 힌트 추가 같은 다른 기능을 사용해 봅니다.|
+
+또한 훌륭한 비디오 학습 자료가 무료로 제공됩니다. C# 프로그래밍에 대한 자세한 내용은 [C# 기초: 완전 초보자를 위한 개발](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)을 참조하세요. Visual Basic의 프로그래밍에 대한 자세한 내용은 [Visual Basic 기초: 완전 초보자를 위한 개발](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)을 참조하세요.
+
+## <a name="next-steps"></a>다음 단계
+
+자습서를 시작하려면 **[1단계: 프로젝트 만들기 및 양식에 레이블 추가](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)** 를 참조하세요.
+
+## <a name="see-also"></a>참고 항목
+
+* [추가 C# 자습서](/visualstudio/get-started/csharp/)
+* [Visual Basic 자습서](/visualstudio/get-started/visual-basic/)
+* [C++ 자습서](/cpp/get-started/tutorial-console-cpp)

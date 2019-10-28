@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.CodeLens
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62ea3402a053ed57280ddbc946d79d27ab35f944
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da45af92a11cfe61d5027d0710304e57ad657e48
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62980890"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653845"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens에서 코드 변경 내용 및 기타 기록 찾기
 
@@ -23,7 +23,7 @@ CodeLens를 통해 코드에 대한 정보를 찾는 동안 편집기에서 나�
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> 소스 제어 CodeLens 표시기는 Visual Studio Community Edition에서 사용할 수 없습니다.
+> CodeLens는 Visual Studio Community Edition에서 사용할 수 있지만 *소스 제어*는 이 버전에서 사용할 수 없습니다.
 
 ::: moniker-end
 
@@ -275,7 +275,7 @@ Team Foundation Server 또는 Azure DevOps Services에서 TFVC(Team Foundation �
 ::: moniker range=">=vs-2019"
 
 > [!TIP]
-> 소스 제어 표시기는 Visual Studio Community Edition에서 사용할 수 없습니다.
+> CodeLens는 Visual Studio Community Edition에서 사용할 수 있지만 *소스 제어*는 이 버전에서 사용할 수 없습니다.
 
 ::: moniker-end
 

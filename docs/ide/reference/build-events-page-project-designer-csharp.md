@@ -1,6 +1,6 @@
 ---
 title: 프로젝트 디자이너, 빌드 이벤트 페이지(C#)
-ms.date: 11/04/2016
+ms.date: 10/17/2019
 ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba429c116d44a5d79d935fe3a1ad07b6d5f36f79
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: cca0ec0491d7a2c513f8bc52acaadf7c80d7fd22
+ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461848"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72789832"
 ---
 # <a name="build-events-page-project-designer-c"></a>프로젝트 디자이너, 빌드 이벤트 페이지(C#)
 
@@ -60,6 +60,33 @@ ms.locfileid: "68461848"
 |**항상**|빌드의 성공 여부에 관계 없이 빌드 후 이벤트가 실행됩니다.|
 |**빌드가 성공한 경우**|빌드에 성공하면 빌드 후 이벤트가 실행됩니다. 따라서 이벤트는 빌드가 성공하는 한 최신 프로젝트에도 실행됩니다.|
 |**빌드에서 프로젝트 출력을 업데이트한 경우**|컴파일러의 출력 파일(.exe 또는.dll)이 이전 컴파일러 출력 파일과 다른 경우에만 빌드 후 이벤트가 실행됩니다. 따라서 프로젝트가 최신 상태이면 빌드 후 이벤트가 실행되지 않습니다.|
+
+## <a name="in-the-project-file"></a>프로젝트 파일에서:
+
+이전 버전의 Visual Studio에서는 IDE의 **PreBuildEvent** 또는 **PostBuildEvent** 설정을 변경할 때 Visual Studio가 프로젝트 파일에 `PreBuildEvent` 또는 `PostBuildEvent` 속성을 추가합니다. 따라서 예를 들어 IDE의 **PreBuildEvent** 명령줄 설정이 다음과 같은 경우,
+
+```input
+"$(ProjectDir)PreBuildEvent.bat" "$(ProjectDir)..\" "$(ProjectDir)" "$(TargetDir)"
+```
+
+프로젝트 파일 설정은 다음과 같습니다.
+
+```xml
+<PropertyGroup>
+    <PreBuildEvent>"$(ProjectDir)PreBuildEvent.bat" "$(ProjectDir)..\" "$(ProjectDir)" "$(TargetDir)" />
+</PropertyGroup>
+```
+
+Visual Studio 2019 및 최신 업데이트 Visual Studio 2017은 **PreBuildEvent** 및 **PostBuildEvent** 설정에 대해 `PreBuild` 또는 `PostBuild`라는 MSBuild 대상을 추가합니다. 예를 들어 앞의 예에서 Visual Studio는 이제 다음 코드를 생성합니다.
+
+```xml
+<Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="&quot;$(ProjectDir)PreBuildEvent.bat&quot; &quot;$(ProjectDir)..\&quot; &quot;$(ProjectDir)&quot; &quot;$(TargetDir)&quot;" />
+</Target>
+```
+
+> [!NOTE]
+> SDK 스타일 프로젝트를 지원하기 위해 프로젝트 파일을 변경했습니다. 이전 형식에서 SDK 스타일 형식으로 프로젝트 파일을 수동으로 마이그레이션하는 경우, 앞의 코드에 나온 것처럼 `PreBuildEvent` 및 `PostBuildEvent` 속성을 삭제하고 `PreBuild` 및 `PostBuild` 대상으로 바꿔야 합니다. 프로젝트가 SDK 스타일 프로젝트인지 확인하는 방법을 알아보려면 [프로젝트 형식 확인](/nuget/resources/check-project-format)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

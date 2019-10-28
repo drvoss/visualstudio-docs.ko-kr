@@ -13,19 +13,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a670ec4b5b6689c68820b37b20a4e1a942dc3bd
-ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
+ms.openlocfilehash: 115220a33fda1a8c65beec9b712481604c88e483
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72289613"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72621547"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>3단계: 각 레이블에 임의 아이콘 할당
+
 모든 게임의 동일한 셀에 이 아이콘이 표시되는 경우 게임이 재미가 없습니다. 이를 방지하려면 `AssignIconsToSquares()` 메서드를 사용하여 폼의 레이블 컨트롤에 아이콘을 임의로 할당합니다.
 
 ## <a name="to-assign-a-random-icon-to-each-label"></a>각 레이블에 임의의 아이콘을 할당하려면
 
-1. 다음 코드를 추가하기 전에 메서드가 동작하는 방식을 고려해야 합니다. Visual C#에는 `foreach`, Visual Basic에는 `For Each`라는 새 키워드가 사용됩니다. 코드 줄 중 하나가 주석 처리되어 있으며 이에 대해서는 이 절차의 끝 부분에서 설명합니다.
+1. 다음 코드를 추가하기 전에 메서드가 동작하는 방식을 고려해야 합니다. C#에는 `foreach`, Visual Basic에는 `For Each`라는 새 키워드가 사용됩니다. 코드 줄 중 하나가 주석 처리되어 있으며 이에 대해서는 이 절차의 끝 부분에서 설명합니다.
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_1.cs)]
      [!code-vb[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_1.vb)]
@@ -33,9 +34,9 @@ ms.locfileid: "72289613"
       > [!IMPORTANT]
       > 이 페이지의 오른쪽 위에 있는 프로그래밍 언어 컨트롤을 사용하여 C# 코드 조각 또는 Visual Basic 코드 조각을 볼 수 있습니다.<br><br>![Docs.Microsoft.com에 대한 프로그래밍 언어 컨트롤](../ide/media/docs-programming-language-control.png)
 
-2. 이전 단계와 같이 `AssignIconsToSquares()` 메서드를 추가합니다. 이 메서드를 [2단계: 임의의 개체 및 아이콘 목록 추가](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)에서 추가한 코드 바로 다음에 둡니다.
+2. 이전 단계와 같이 `AssignIconsToSquares()` 메서드를 추가합니다. 이 메서드를 [2단계: 임의의 개체 및 아이콘 목록 추가](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)를 참조하세요.
 
-     앞서 언급했듯이, `AssignIconsToSquares()` 메서드에 `foreach` 루프(Visual C#의 경우)와 `For Each`(Visual Basic의 경우)라는 새로운 키워드가 있습니다. 같은 작업을 여러 번 수행하려는 경우 언제든지 `For Each` 루프를 사용할 수 있습니다. 이 경우에는 다음 코드에서 설명하는 것처럼 <xref:System.Windows.Forms.TableLayoutPanel>의 모든 레이블에 대해 같은 문을 실행하려고 합니다. 첫 번째 줄에서는 컨트롤에서 실행되는 루프에 문이 있을 때 각 컨트롤을 한 번에 하나씩 저장하는 `control`이라는 변수를 만듭니다.
+     앞서 언급했듯이, `AssignIconsToSquares()` 메서드에 `foreach` 루프(C#의 경우)와 `For Each`(Visual Basic의 경우)라는 새로운 키워드가 있습니다. 같은 작업을 여러 번 수행하려는 경우 언제든지 `For Each` 루프를 사용할 수 있습니다. 이 경우에는 다음 코드에서 설명하는 것처럼 <xref:System.Windows.Forms.TableLayoutPanel>의 모든 레이블에 대해 같은 문을 실행하려고 합니다. 첫 번째 줄에서는 컨트롤에서 실행되는 루프에 문이 있을 때 각 컨트롤을 한 번에 하나씩 저장하는 `control`이라는 변수를 만듭니다.
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#14](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_2.cs)]
      [!code-vb[VbExpressTutorial4Step2_3_4#14](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_2.vb)]
@@ -54,7 +55,7 @@ ms.locfileid: "72289613"
 
      코드의 일부 기능에 대해 잘 모를 경우 마우스 포인터를 코드 요소 위에 놓으면 나타나는 도구 설명을 검토할 수 있습니다. Visual Studio 디버거를 사용하여 프로그램이 실행되는 동안 코드의 각 줄을 단계별로 실행할 수 있습니다. 자세한 내용은 [어떻게 할까요?: Visual Studio에서 디버거를 사용하여 단계별 실행](https://msdn.microsoft.com/vstudio/ee672313.aspx) 또는 [디버거로 코드 탐색](../debugger/navigating-through-code-with-the-debugger.md)을 참조하세요.
 
-3. 게임 보드를 아이콘으로 채우려면 프로그램이 시작되자 마자 `AssignIconsToSquares()` 메서드를 호출해야 합니다. Visual C#을 사용하는 경우 **Form1**_생성자_에서 `InitializeComponent()` 메서드 호출 바로 아래에 문을 추가합니다. 그러면 폼이 표시되기 전에 폼을 설정하는 새로운 메서드가 호출됩니다. 생성자는 클래스 또는 구조체와 같은 새 개체를 만들 때 호출됩니다. 자세한 내용은 Visual Basic의 [생성자(C# 프로그래밍 가이드)](/dotnet/csharp/programming-guide/classes-and-structs/constructors) 또는 [생성자 및 소멸자 사용](/previous-versions/visualstudio/visual-studio-2008/2z08e49e\(v\=vs.90\))을 참조하세요.
+3. 게임 보드를 아이콘으로 채우려면 프로그램이 시작되자 마자 `AssignIconsToSquares()` 메서드를 호출해야 합니다. C#을 사용하는 경우 **Form1**_생성자_에서 `InitializeComponent()` 메서드 호출 바로 아래에 문을 추가합니다. 그러면 폼이 표시되기 전에 폼을 설정하는 새로운 메서드가 호출됩니다. 생성자는 클래스 또는 구조체와 같은 새 개체를 만들 때 호출됩니다. 자세한 내용은 Visual Basic의 [생성자(C# 프로그래밍 가이드)](/dotnet/csharp/programming-guide/classes-and-structs/constructors) 또는 [생성자 및 소멸자 사용](/previous-versions/visualstudio/visual-studio-2008/2z08e49e\(v\=vs.90\))을 참조하세요.
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#13](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_4.cs)]
 
@@ -70,7 +71,8 @@ ms.locfileid: "72289613"
 
 5. 프로그램을 닫고 다시 실행합니다. 다음 그림과 같이 각 레이블에 서로 다른 아이콘이 할당됩니다.
 
-     ![임의의 아이콘을 표시하는 일치 게임](../ide/media/express_tut4step3.png) 임의의 아이콘을 표시하는 일치 게임
+     ![임의의 아이콘을 표시하는 일치 게임](../ide/media/express_tut4step3.png)<br/>
+*임의의 아이콘을 표시하는 일치 게임*
 
      아이콘을 숨기지 않았으므로 지금은 아이콘이 보입니다. 플레이어에서 아이콘을 숨기려면 각 레이블의 **ForeColor** 속성을 해당 **BackColor** 속성과 같은 색으로 설정하면 됩니다.
 
@@ -86,6 +88,6 @@ ms.locfileid: "72289613"
 
 ## <a name="to-continue-or-review"></a>계속하거나 검토하려면
 
-- 다음 자습서 단계로 이동하려면 [4단계: 각 레이블에 클릭 이벤트 처리기 추가](../ide/step-4-add-a-click-event-handler-to-each-label.md)를 참조하세요.
+- 다음 자습서 단계로 이동하려면 **[4단계: 각 레이블에 Click 이벤트 처리기 추가](../ide/step-4-add-a-click-event-handler-to-each-label.md)** 를 참조하세요.
 
 - 이전 자습서 단계로 돌아가려면 [2단계: 임의의 개체 및 아이콘 목록 추가](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)를 참조하세요.

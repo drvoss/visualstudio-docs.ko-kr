@@ -1,17 +1,17 @@
 ---
-title: ASP.NET Core를 포함한 Visual Studio 컨테이너 도구
+title: ASP.NET Core 및 React.js를 포함한 Visual Studio 컨테이너 도구
 author: ghogen
 description: Visual Studio 컨테이너 도구 및 Windows용 Docker를 사용하는 방법 알아보기
 ms.author: ghogen
-ms.date: 06/06/2019
+ms.date: 10/16/2019
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: bcc30ec13096b37d7540c187d11c846d6c575093
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 8083d2d6446c872791501f76cb0167a92a9ef660
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70179935"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516435"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>빠른 시작: Visual Studio에서 React 단일 페이지 앱과 함께 Docker 사용
 
@@ -23,12 +23,16 @@ Visual Studio를 사용하여 React.js 단일 페이지 앱과 같은 클라이�
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * **웹 개발**, **Azure 도구** 워크로드 및/또는 **.NET Core 플랫폼 간 개발** 워크로드가 설치된 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 * Azure Container Registry에 게시하려면 Azure 구독이 있어야 합니다. [평가판에 가입](https://azure.microsoft.com/offers/ms-azr-0044p/)합니다.
+* [Node.JS](https://nodejs.org/en/download/)
+* Windows 컨테이너의 경우 이 문서에서 참조된 Docker 이미지를 사용하려면 Windows 10 버전 1903 이상이어야 합니다.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * **웹 개발**, **Azure 도구** 워크로드 및/또는 **.NET Core 플랫폼 간 개발** 워크로드가 설치된 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 * .NET Core 2.2를 사용하여 개발하기 위한 [.NET Core 2.2 개발 도구](https://dotnet.microsoft.com/download/dotnet-core/2.2)
 * Azure Container Registry에 게시하려면 Azure 구독이 있어야 합니다. [평가판에 가입](https://azure.microsoft.com/offers/ms-azr-0044p/)합니다.
+* [Node.JS](https://nodejs.org/en/download/)
+* Windows 컨테이너의 경우 이 문서에서 참조된 Docker 이미지를 사용하려면 Windows 10 버전 1903 이상이어야 합니다.
 ::: moniker-end
 
 ## <a name="installation-and-setup"></a>설치 및 설정
@@ -47,7 +51,7 @@ Docker를 설치하려면 우선 [Windows용 Docker Desktop: 설치하기 전에
 
    ![Docker 지원 추가](media/container-tools-react/vs2017/add-docker-support.png)
 
-1. Linux 컨테이너 형식을 선택하고 **확인**을 클릭합니다.
+1. 컨테이너 형식을 선택하고 **확인**을 클릭합니다.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 1. **ASP.NET Core 웹 애플리케이션** 템플릿을 사용하여 새 프로젝트를 만듭니다.
@@ -59,10 +63,12 @@ Docker를 설치하려면 우선 [Windows용 Docker Desktop: 설치하기 전에
 
    ![Docker 지원 추가](media/container-tools-react/vs2017/add-docker-support.png)
 
-1. Linux를 컨테이너 형식으로 선택합니다.
+1. 컨테이너 형식을 선택합니다.
 ::: moniker-end
 
-## <a name="dockerfile-overview"></a>Dockerfile 개요
+다음 단계는 Linux 컨테이너를 사용 중인지 Windows 컨테이너를 사용 중인지에 따라 달라집니다.
+
+## <a name="modify-the-dockerfile-linux-containers"></a>Dockerfile 수정(Linux 컨테이너)
 
 최종 Docker 이미지를 만들기 위한 레시피인 *Dockerfile*은 프로젝트에 생성됩니다. 그 안의 명령을 이해하려면 [Dockerfile 참조](https://docs.docker.com/engine/reference/builder/)를 참조하세요.
 
@@ -104,9 +110,74 @@ ENTRYPOINT ["dotnet", "WebApplication37.dll"]
 
 새 프로젝트 대화 상자의 **HTTPS에 대한 구성** 확인란이 선택되면 *Dockerfile*은 두 개의 포트를 노출합니다. 한 포트는 HTTP 트래픽에 사용되고 다른 포트는 HTTPS에 사용됩니다. 이 확인란을 선택하지 않으면 단일 포트(80)가 HTTP 트래픽에 노출됩니다.
 
-## <a name="debug"></a>디버그
+## <a name="modify-the-dockerfile-windows-containers"></a>Dockerfile 수정(Windows 컨테이너)
 
-도구 모음의 디버그 드롭다운에서 **Docker**를 선택하고 앱에서 디버깅을 시작합니다. 인증서 신뢰 요청 메시지가 표시될 수 있습니다. 계속하려면 인증서를 신뢰하도록 선택하세요.
+프로젝트 노드를 두 번 클릭하여 프로젝트 파일을 열고 다음 속성을 `<PropertyGroup>` 요소의 자식으로 추가하여 프로젝트 파일(*.csproj)을 업데이트합니다.
+
+   ```xml
+    <DockerfileFastModeStage>base</DockerfileFastModeStage>
+   ```
+
+다음 줄을 추가하여 Dockerfile을 업데이트합니다. 그러면 노드 및 npm이 컨테이너에 복사됩니다.
+
+   1. Dockerfile의 첫 번째 줄에 ``# escape=` ``를 추가합니다.
+   1. `FROM … base` 앞에 다음 줄을 추가합니다.
+
+      ```
+      FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
+      SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
+      RUN Invoke-WebRequest -OutFile nodejs.zip -UseBasicParsing "https://nodejs.org/dist/v10.16.3/node-v10.16.3-win-x64.zip"; `
+      Expand-Archive nodejs.zip -DestinationPath C:\; `
+      Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
+      ```
+
+   1. `FROM … build` 앞과 뒤에 다음 줄을 추가합니다.
+
+      ```
+      COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
+      ```
+
+   1. 이제 완전한 Dockerfile이 다음과 같이 표시됩니다.
+
+      ```
+      # escape=`
+      #Depending on the operating system of the host machines(s) that will build or run the containers, the image specified in the FROM statement may need to be changed.
+      #For more information, please see https://aka.ms/containercompat
+      FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
+      SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
+      RUN Invoke-WebRequest -OutFile nodejs.zip -UseBasicParsing "https://nodejs.org/dist/v10.16.3/node-v10.16.3-win-x64.zip"; `
+      RUN Expand-Archive nodejs.zip -DestinationPath C:\; `
+      RUN Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
+
+      FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-nanoserver-1903 AS base
+      WORKDIR /app
+      EXPOSE 80
+      EXPOSE 443
+      COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
+
+      FROM mcr.microsoft.com/dotnet/core/sdk:2.2-nanoserver-1903 AS build
+      COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
+      WORKDIR /src
+      COPY ["WebApplication7/WebApplication37.csproj", "WebApplication37/"]
+      RUN dotnet restore "WebApplication7/WebApplication7.csproj"
+      COPY . .
+      WORKDIR "/src/WebApplication37"
+      RUN dotnet build "WebApplication37.csproj" -c Release -o /app/build
+
+      FROM build AS publish
+      RUN dotnet publish "WebApplication37.csproj" -c Release -o /app/publish
+
+      FROM base AS final
+      WORKDIR /app
+      COPY --from=publish /app/publish .
+      ENTRYPOINT ["dotnet", "WebApplication37.dll"]
+      ```
+
+1. `**/bin`을 제거하여 .dockerignore 파일을 업데이트합니다.
+
+## <a name="debug"></a>Debug
+
+도구 모음의 디버그 드롭다운에서 **Docker**를 선택하고 앱에서 디버깅을 시작합니다. 인증서 신뢰 요청 메시지가 표시될 수 있습니다. 계속하려면 인증서를 신뢰하도록 선택하세요.  처음 빌드할 때는 docker가 기본 이미지를 다운로드하기 때문에 시간이 조금 더 걸릴 수 있습니다.
 
 **출력** 창의 **컨테이너 도구** 옵션에 실행 중인 작업이 표시됩니다. *npm.exe*와 연관된 설치 단계가 표시됩니다.
 

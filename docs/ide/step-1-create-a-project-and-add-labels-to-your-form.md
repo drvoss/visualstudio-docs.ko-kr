@@ -1,6 +1,6 @@
 ---
 title: '1단계: 프로젝트 만들기 및 양식에 레이블 추가'
-ms.date: 05/31/2019
+ms.date: 10/15/2019
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b52851ce3e344293faede243413fc796e9882196
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 0fdda615ceea11434a4533fa2a5071a5a999c1c4
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71119047"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516689"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>1단계: 프로젝트 만들기 및 양식에 레이블 추가
 
@@ -49,11 +49,11 @@ ms.locfileid: "71119047"
 
    !['새 프로젝트 만들기' 창 보기](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. **새 프로젝트 만들기** 창의 검색 상자에 *Windows Forms*를 입력합니다.
+1. **새 프로젝트 만들기** 창의 검색 상자에 *Windows Forms*를 입력합니다. 그런 다음 **프로젝트 형식** 목록에서 **바탕 화면**을 선택합니다.
 
-1. **Windows Forms 앱(.NET Framework)** 템플릿을 선택한 후 **다음**을 선택합니다.
+   **프로젝트 형식** 필터를 적용한 후 C# 또는 Visual Basic에 대한 **Windows Forms 앱(.NET Framework)** 템플릿을 선택하고 **다음**을 선택합니다.
 
-   ![Windows Forms 앱(.NET Framework)용 Visual Basic 템플릿 선택](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
+   ![Windows Forms 앱(.NET Framework)용 C# 또는 Visual Basic 템플릿 선택](./media/create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
    > **Windows Forms 앱(.NET Framework)** 템플릿이 표시되지 않는 경우 **새 프로젝트를 만들기** 창에서 설치할 수 있습니다. **원하는 항목을 찾을 수 없나요?** 메시지에서 **추가 도구 및 기능 설치** 링크를 선택합니다.

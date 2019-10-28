@@ -15,16 +15,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed0f396613cea4ec2b6d9869e3ef1b121cac236b
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 00af44212dd142dd94629f886a50b9646488af3b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747369"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747275"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild 작업 참조
 
-작업은 빌드 프로세스 동안 실행되는 코드를 제공합니다. 다음 목록의 작업이 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에 포함되어 있습니다. [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]가 설치되면 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 프로젝트를 빌드하는 데 사용되는 추가 작업을 사용할 수 있습니다. 자세한 내용은 [Visual C++ 작업](../msbuild/msbuild-tasks-specific-to-visual-cpp.md)을 참조하세요.
+작업은 빌드 프로세스 동안 실행되는 코드를 제공합니다. 다음 목록의 작업이 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에 포함되어 있습니다. [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]가 설치되면 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 프로젝트를 빌드하는 데 사용되는 추가 작업을 사용할 수 있습니다. 자세한 내용은 [C++ 작업](../msbuild/msbuild-tasks-specific-to-visual-cpp.md)을 참조하세요.
 
 이 섹션의 항목에 나열된 매개 변수 외에도 각 작업에는 다음과 같은 매개 변수가 있습니다.
 

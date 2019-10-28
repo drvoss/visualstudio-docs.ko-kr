@@ -4,17 +4,17 @@ ms.date: 08/31/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bb254dc2d70992c798a95e5e12efcbb72b2a2336
-ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
+ms.openlocfilehash: a5b136c91873c0af60705ea361a19e53f28e06b0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72262349"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653053"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Live Unit Testing 시작
 
@@ -158,7 +158,7 @@ Visual Studio 솔루션에서 Live Unit Testing을 사용하도록 설정하면 
 
 1. Visual Studio에서 Live Unit Test를 시작하며 이에 따라 모든 테스트가 자동으로 실행됩니다.
 
-테스트 실행이 완료되면 **테스트 탐색기**에 전반적인 결과와 개별 테스트 결과가 모두 표시됩니다. 또한 코드 창에는 테스트 코드 검사와 테스트 결과가 그래픽 방식으로 모두 표시됩니다. 다음 이미지에서 볼 수 있듯이 세 테스트가 모두 성공적으로 실행됩니다. 또한 테스트가 `StartsWithUpper` 메서드의 모든 코드 경로를 포함하고 해당 테스트가 모두 성공적으로 실행되었음을 보여 줍니다(녹색 확인 표시 "✓"로 표시됨). 마지막으로 StringLibrary의 다른 메서드 중 어느 것도 코드 검사를 포함하지 않음을 보여 줍니다(파란색 선 “”로 표시됨).
+테스트 실행이 완료되면 **테스트 탐색기**에 전반적인 결과와 개별 테스트 결과가 모두 표시됩니다. 또한 코드 창에는 테스트 코드 검사와 테스트 결과가 그래픽 방식으로 모두 표시됩니다. 다음 이미지에서 볼 수 있듯이 세 테스트가 모두 성공적으로 실행됩니다. 또한 테스트가 `StartsWithUpper` 메서드의 모든 코드 경로를 포함하고 해당 테스트가 모두 성공적으로 실행되었음을 보여 줍니다(녹색 확인 표시 "✓"로 표시됨). 마지막으로 StringLibrary의 다른 메서드 중 어느 것도 코드 검사를 포함하지 않음을 보여 줍니다(파란색 선 "➖"로 표시됨).
 
 ![Live Unit testing을 시작한 후 테스트 탐색기 및 코드 창](media/lut-start/lut-results-cs.png)
 

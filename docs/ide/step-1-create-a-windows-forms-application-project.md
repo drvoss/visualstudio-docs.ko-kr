@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be7b9bd67ed88b9f59ed279211bf15c96ae59569
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 897c4ba0bfa46e73115f8288770d088346498dee
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71119014"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516704"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>1단계: Windows Forms 앱 프로젝트 만들기
 
@@ -50,7 +50,7 @@ ms.locfileid: "71119014"
 
    **프로젝트 형식** 필터를 적용한 후 C# 또는 Visual Basic에 대한 **Windows Forms 앱(.NET Framework)** 템플릿을 선택하고 **다음**을 선택합니다.
 
-   ![Windows Forms 앱(.NET Framework)용 C# 템플릿 선택](./media/create-new-project-search-winforms-filtered.png)
+   ![Windows Forms 앱(.NET Framework)용 C# 또는 Visual Basic 템플릿 선택](./media/create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
    > **Windows Forms 앱(.NET Framework)** 템플릿이 표시되지 않는 경우 **새 프로젝트를 만들기** 창에서 설치할 수 있습니다. **원하는 항목을 찾을 수 없나요?** 메시지에서 **추가 도구 및 기능 설치** 링크를 선택합니다.

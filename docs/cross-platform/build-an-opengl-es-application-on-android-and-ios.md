@@ -1,7 +1,7 @@
 ---
-title: Android 및 iOS에서 OpenGL ES 애플리케이션 빌드 | Microsoft 문서
+title: Android 및 iOS에서 OpenGL ES 애플리케이션 빌드 | Microsoft Docs
 ms.custom: ''
-ms.date: 09/17/2019
+ms.date: 10/09/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 259092668c336a90758a669efdc4b154b2097cab
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: a15902278e9a73488b315729a2db6e8fb5d53935
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079273"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72588915"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Android 및 iOS에서 OpenGL ES 애플리케이션 빌드
 
@@ -25,13 +25,13 @@ ms.locfileid: "71079273"
 
 ## <a name="requirements"></a>요구 사항
 
-iOS 및 Android용 OpenGL ES 앱을 개발하려면 먼저 모든 시스템 요구 사항을 충족했는지 확인해야 합니다. Visual Studio 설치 관리자에서 C++를 사용한 모바일 개발 워크로드를 아직 설치하지 않았다면 설치합니다. iOS 빌드의 경우 선택적 C++ iOS 개발 도구를 포함시킵니다. Android 빌드의 경우 C++ Android 개발 도구 및 필요한 타사 도구를 설치합니다. Android NDK, Apache Ant 및 Google Android Emulator. Intel 플랫폼에서 에뮬레이터 성능을 향상시키려면 Intel HAXM(Hardware Accelerated Execution Manager)도 설치하는 것이 좋습니다. 다음으로 Intel HAXM 및 Android Emulator가 시스템에서 실행되도록 구성합니다. 자세한 내용 및 자세한 지침은 [플랫폼 간 모바일 개발용 Visual C++ 설치](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)를 참조하세요.
+iOS 및 Android용 OpenGL ES 앱을 개발하려면 먼저 모든 시스템 요구 사항을 충족했는지 확인해야 합니다. Visual Studio 설치 관리자에서 C++를 사용한 모바일 개발 워크로드를 아직 설치하지 않았다면 설치합니다. OpenGL ES 템플릿을 가져오고 iOS용 빌드인 경우 선택적 C++ iOS 개발 도구를 포함시킵니다. Android 빌드의 경우 C++ Android 개발 도구 및 필요한 타사 도구를 설치합니다. Android NDK, Apache Ant 및 Google Android Emulator. Intel 플랫폼에서 에뮬레이터 성능을 향상시키려면 Intel HAXM(Hardware Accelerated Execution Manager)도 설치하는 것이 좋습니다. 다음으로 Intel HAXM 및 Android Emulator가 시스템에서 실행되도록 구성합니다. 자세한 내용 및 자세한 지침은 [C++를 사용한 플랫폼 간 모바일 개발 설치](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)를 참조하세요.
 
 iOS 앱을 빌드 및 테스트하려면 Mac 컴퓨터가 필요하며 설치 지침에 따라 설치해야 합니다. iOS 개발을 위해 설치하는 방법에 대한 자세한 내용은 [iOS를 사용하여 빌드할 도구 설치 및 구성](../cross-platform/install-and-configure-tools-to-build-using-ios.md)을 참조하세요.
 
 ## <a name="create-a-new-opengles-application-project"></a>새 OpenGLES 애플리케이션 프로젝트 만들기
 
-이 자습서에서는 먼저 새 OpenGL ES 애플리케이션 프로젝트를 만듭니다. 그런 다음 Visual Studio Emulator for Android에서 기본 앱을 빌드하고 실행합니다. 그런 다음 iOS용 앱을 빌드하고 iOS 디바이스에서 앱을 실행합니다.
+이 자습서에서는 먼저 새 OpenGL ES 애플리케이션 프로젝트를 만듭니다. 그런 다음 Android 에뮬레이터에서 기본 앱을 빌드하고 실행합니다. 그런 다음 iOS용 앱을 빌드하고 iOS 디바이스에서 앱을 실행합니다.
 
 ::: moniker range="vs-2017"
 
@@ -75,7 +75,7 @@ iOS 앱을 빌드 및 테스트하려면 Mac 컴퓨터가 필요하며 설치 �
 
 - `MyOpenGLESApp.Android.Packaging`은 Android 디바이스 또는 에뮬레이터에서 배포하기 위한 *.apk* 파일을 만듭니다. 이 파일에는 리소스와 매니페스트 속성을 설정하는 AndroidManifest.xml 파일이 포함되어 있습니다. Ant 빌드 프로세스를 제어하는 *build.xml* 파일도 포함되어 있습니다. 이 프로젝트는 기본적으로 시작 프로젝트로 설정되므로 Visual Studio에서 직접 배포 및 실행할 수 있습니다.
 
-- **MyOpenGLESApp.iOS.Application**에는 `MyOpenGLESApp.iOS.StaticLibrary`의 C++ 정적 라이브러리 코드에 연결되는 iOS 앱을 개발하기 위한 리소스와 Objective-C 글루 코드가 포함됩니다. 이 프로젝트는 Visual Studio 및 원격 에이전트에서 Mac으로 전송되는 빌드 패키지를 만듭니다. 이 프로젝트를 빌드하면 Visual Studio가 Mac에서 앱을 빌드하고 배포하기 위한 파일과 명령을 보냅니다.
+- `MyOpenGLESApp.iOS.Application`에는 `MyOpenGLESApp.iOS.StaticLibrary`의 C++ 정적 라이브러리 코드에 연결되는 iOS 앱을 만들기 위한 리소스와 Objective-C 붙이기 코드가 포함됩니다. 이 프로젝트는 Visual Studio 및 원격 에이전트에서 Mac으로 전송되는 빌드 패키지를 만듭니다. 이 프로젝트를 빌드하면 Visual Studio가 Mac에서 앱을 빌드하고 배포하기 위한 파일과 명령을 보냅니다.
 
 ## <a name="build-and-run-the-android-app"></a>Android 앱 빌드 및 실행
 
@@ -95,7 +95,7 @@ iOS 앱을 빌드 및 테스트하려면 Mac 컴퓨터가 필요하며 설치 �
 
    출력 창에 솔루션의 Android 공유 라이브러리 및 Android 앱에 대한 빌드 프로세스 출력이 표시됩니다.
 
-   ![Android 프로젝트에 대한 출력 빌드](../cross-platform/media/cppmdd_opengles_andoutput.png "CPPMDD_OpenGLES_AndOutput")
+   ![Android 프로젝트용 출력 빌드](../cross-platform/media/cppmdd_opengles_andoutput.png "CPPMDD_OpenGLES_AndOutput")
 
 1. 배포 대상으로 에뮬레이트된 Android 디바이스 프로필 중 하나를 선택합니다.
 
@@ -103,7 +103,7 @@ iOS 앱을 빌드 및 테스트하려면 Mac 컴퓨터가 필요하며 설치 �
 
    다른 에뮬레이터를 설치했거나 Android 디바이스를 연결한 경우 배포 대상 드롭다운 목록에서 선택할 수 있습니다. 앱을 실행하려면 빌드된 솔루션 플랫폼이 대상 디바이스의 플랫폼과 일치해야 합니다.
 
-1. F5 키를 눌러 디버깅을 시작하거나 Shift+F5를 눌러 디버깅하지 않고 시작합니다.
+1. **F5** 키를 눌러 디버깅을 시작하거나 **Shift**+**F5**를 눌러 디버깅하지 않고 시작합니다.
 
    에뮬레이터가 시작됩니다. 코드를 로드하고 배포하는 데 몇 초 정도 걸릴 수 있습니다. 에뮬레이터에서 앱이 표시되는 방법은 다음과 같습니다.
 
@@ -127,7 +127,7 @@ IOS 디바이스에 iOS 앱을 배포하려면 Mac의 Xcode에서 자동 서명�
 
 ### <a name="to-set-up-automatic-signing-on-xcode"></a>Xcode에서 자동 서명을 설정하려면
 
-1. 아직 하지 않은 경우 [Xcode](https://developer.apple.com/xcode/downloads/) 버전 10.2.1 이상을 Mac에서 설치합니다.
+1. 아직 설치하지 않은 경우 [Xcode](https://developer.apple.com/xcode/)를 Mac에 설치합니다.
 
 1. Mac에서 Xcode 앱을 엽니다.
 
@@ -181,7 +181,7 @@ IOS 디바이스에 iOS 앱을 배포하려면 Mac의 Xcode에서 자동 서명�
 
    앱이 시작되면 중단점을 설정하고 Visual Studio 디버거를 사용하여 지역을 검사하고, 호출 스택을 확인하고, 값을 조사할 수 있습니다.
 
-   ![iOS 앱의 중단점에서 디버거](../cross-platform/media/cppmdd_opengles_iosdebug.png "CPPMDD_OpenGLES_iOSDebug")
+   ![iOS 앱의 중단점에 있는 디버거](../cross-platform/media/cppmdd_opengles_iosdebug.png "CPPMDD_OpenGLES_iOSDebug")
 
 1. **Shift**+**F5**를 눌러 디버깅을 중지합니다.
 

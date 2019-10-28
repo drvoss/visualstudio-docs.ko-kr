@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: da4da0a106d37b081e0a7c57fe905048f3314174
-ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.openlocfilehash: fcc4a3d3d99deab62971c40b26c9a4252367438f
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72381083"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516327"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Visual Studio의 네트워크 설치 만들기
 
@@ -99,7 +99,7 @@ response.json을 수정하여 설치 프로그램이 실행될 때 사용되는 
 
 ::: moniker range="vs-2017"
 
-예제:
+예:
 
 ```cmd
 xcopy /e c:\VSLayout \\server\products\VS2017
@@ -229,9 +229,9 @@ vs_enterprise.exe --layout c:\VSLayout --all
 >
 
 ::: moniker range="vs-2019"
-
-> 오프라인 설치의 경우 "다음 매개 변수와 일치하는 프로젝트를 찾을 수 없습니다."라는 오류 메시지가 표시되면 버전 16.3.5 이상에서 --noweb 스위치를 사용하고 있는지 확인합니다.
-
+> [!IMPORTANT]
+> 오프라인 설치의 경우 "다음 매개 변수와 일치하는 제품을 찾을 수 없습니다"라는 오류 메시지가 표시되면 버전 16.3.5 이상에서 `--noweb` 스위치를 사용하고 있는지 확인합니다.
+>
 ::: moniker-end
 
 레이아웃에서 설치하는 경우 설치되는 콘텐츠는 레이아웃에서 가져옵니다. 그러나 레이아웃에 없는 구성 요소를 선택하면 인터넷에서 해당 구성 요소를 가져옵니다.  Visual Studio 설치 프로그램이 레이아웃에 없는 콘텐츠를 다운로드하지 못하도록 하려면 `--noWeb` 옵션을 사용합니다. `--noWeb`을 사용하고 설치하도록 선택한 콘텐츠가 레이아웃에 없으면 설치가 실패합니다.

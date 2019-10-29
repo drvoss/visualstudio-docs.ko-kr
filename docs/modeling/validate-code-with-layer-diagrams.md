@@ -19,12 +19,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a2b972c3c275f3e43819220532ac0a3c4a597e3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9fc852b4d5003cf809248c72ca3ac42ad3a6bf23
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662929"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981129"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>종속성 다이어그램을 사용하여 코드 유효성 검사
 
@@ -52,7 +52,7 @@ ms.locfileid: "72662929"
 
 이 기능을 지 원하는 Visual Studio 버전을 확인 하려면 [아키텍처 및 모델링 도구에 대 한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조 하세요.
 
-Visual Studio 또는 명령 프롬프트에서 열려 있는 종속성 다이어그램에서 수동으로 코드의 유효성을 검사할 수 있습니다. 로컬 빌드 또는 Azure Pipelines 빌드를 실행할 때 자동으로 코드의 유효성을 검사할 수도 있습니다. [Channel 9 비디오: 종속성 다이어그램을 사용 하 여 아키텍처 디자인 및 유효성 검사](http://go.microsoft.com/fwlink/?LinkID=252073)를 참조 하세요.
+Visual Studio 또는 명령 프롬프트에서 열려 있는 종속성 다이어그램에서 수동으로 코드의 유효성을 검사할 수 있습니다. 로컬 빌드 또는 Azure Pipelines 빌드를 실행할 때 자동으로 코드의 유효성을 검사할 수도 있습니다. [Channel 9 비디오: 종속성 다이어그램을 사용 하 여 아키텍처 디자인 및 유효성 검사](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture)를 참조 하세요.
 
 > [!IMPORTANT]
 > TFS (Team Foundation Server)를 사용 하 여 레이어 유효성 검사를 실행 하려면 빌드 서버에 동일한 버전의 Visual Studio도 설치 해야 합니다.

@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41bffbc248d9004248a3552f335dccefaba72cca
-ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
+ms.openlocfilehash: 4803fbb0887deaf140836263ca82d772b29112f7
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68822152"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981696"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual studio SDK를 사용 하 여 visual Studio 기능을 확장 하거나 새 기능을 Visual Studio에 통합할 수 있습니다. Visual Studio Marketplace 뿐만 아니라 다른 사용자에 게 확장을 배포할 수 있습니다. 다음은 Visual Studio를 확장할 수 있는 몇 가지 방법입니다.
@@ -67,15 +67,15 @@ Visual studio SDK를 사용 하 여 visual Studio 기능을 확장 하거나 새
 
  [VSX Arcana 블로그](https://blogs.msdn.microsoft.com/vsx/) 및 Microsoft mvp가 작성 한 블로그에서 추가 정보를 찾을 수 있습니다.
 
-- [즐겨 찾는 Visual Studio 확장](http://geekswithblogs.net/sdorman/archive/2014/10/05/favorite-visual-studio-extensions.aspx)
+- [즐겨 찾는 Visual Studio 확장](https://scottdorman.blog/2014/10/05/favorite-visual-studio-extensions/)
 
 - [Visual Studio 확장성](http://www.visualstudioextensibility.com/overview/vs/)
 
-- [Visual Studio 확장](http://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
+- [Visual Studio 확장](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)
-- [방법: Visual Studio 2017로 확장성 프로젝트 마이그레이션](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
+- [방법: 확장성 프로젝트를 Visual Studio 2017로 마이그레이션](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
 - [FAQ: 추가 기능을 VSPackage 확장으로 변환](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)
 - [관리 코드에서 여러 스레드 관리](../extensibility/managing-multiple-threads-in-managed-code.md)
 - [메뉴 및 명령 확장](../extensibility/extending-menus-and-commands.md)

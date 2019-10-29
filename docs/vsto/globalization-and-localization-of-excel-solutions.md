@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b0a7293672bb0b4e74515b71d2e0c4f961440b8c
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: f37ddcbbd3145fc96cd8081d7a1df524ef7ea8ec
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255975"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986050"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Excel 솔루션 세계화 및 지역화
   이 섹션에는 영어 이외의 Windows 언어 설정이 있는 컴퓨터에서 실행되는 Microsoft Office Excel 솔루션의 특수 고려 사항에 대한 정보를 포함합니다. Microsoft Office 솔루션을 전역화하고 지역화하는 대부분의 측면은 Visual Studio를 사용하여 다른 종류의 솔루션을 만들 때와 동일하게 발생합니다. 일반 정보는 [응용 프로그램 전역화 및 지역화](../ide/globalizing-and-localizing-applications.md)를 참조 하세요.
@@ -36,7 +36,7 @@ ms.locfileid: "71255975"
 
  관리 코드에서 전달되거나 조작된 데이터에 영어(미국) 서식을 사용해도, Excel은 최종 사용자의 로캘 설정에 따라 데이터를 올바르게 해석합니다. 관리 코드는 데이터와 함께 로캘 ID 1033을 전달하기 때문에 Excel은 데이터의 서식을 올바르게 지정할 수 있으며, 이는 데이터가 영어(미국) 서식이므로 사용자의 로캘 설정과 일치하도록 다시 서식이 지정되어야 한다는 것을 나타냅니다.
 
- 예를 들어 최종 사용자에 게 지역 옵션이 독일어 (독일) 로캘로 설정 되어 있는 경우 2005 년 6 월 29 일이 다음과 같은 형식으로 지정 될 것으로 간주 됩니다. 29.06.2005. 그러나 솔루션이 날짜를 Excel로 Excel에 전달 하는 경우에는 날짜를 영어 (미국) 형식으로 지정 해야 합니다. 6/29/2005. 셀의 서식이 날짜 셀로 지정된 경우 Excel은 독일어(독일) 서식으로 날짜를 표시합니다.
+ 예를 들어 최종 사용자의 국가별 옵션이 독일어(독일) 로캘로 설정되어 있는 경우 최종 사용자는 2005년 6월 29일이 29.06.2005로 서식화될 것을 기대합니다. 그러나 솔루션이 날짜를 문자열로 Excel에 전달하는 경우 영어(미국) 서식에 따라 6/29/2005로 날짜를 서식화해야 합니다. 셀의 서식이 날짜 셀로 지정된 경우 Excel은 독일어(독일) 서식으로 날짜를 표시합니다.
 
 ### <a name="pass-other-locale-ids-to-the-excel-object-model"></a>Excel 개체 모델에 다른 로캘 Id 전달
  CLR(공용 언어 런타임)은 로캘 구분 데이터를 허용하는 Excel 개체 모델의 모든 메서드 및 속성으로 로캘 ID 1033을 자동으로 전달합니다. 모든 호출에 대해 이 동작을 자동으로 개체 모델로 변경하는 방법은 없습니다. 그러나 메서드를 호출하는 <xref:System.Type.InvokeMember%2A> 를 사용하고 로캘 ID를 메서드의 *culture* 매개 변수에 전달하여 다른 로캘 ID를 특정 메서드에 전달할 수 있습니다.
@@ -47,7 +47,7 @@ ms.locfileid: "71255975"
  문서 텍스트와 상호 작용하는 일부 코드가 텍스트의 언어와 계속 일치하는지 그리고 책갈피, 명명된 범위, 기타 표시 필드가 다른 문법 및 텍스트 길이에 맞도록 조정하는 데 필요한 Office 문서의 서식을 다시 지정하는 것을 수용하는지는 여전히 확인해야 합니다. 비교적 적은 양의 텍스트가 포함된 문서 템플릿의 경우 리소스 파일에 텍스트를 저장한 다음 런타임에 텍스트를 로드하는 것이 좋습니다.
 
 ### <a name="text-direction"></a>텍스트 방향
- Excel에서는 텍스트를 오른쪽에서 왼쪽으로 렌더링하도록 워크시트의 속성을 설정할 수 있습니다. 호스트 컨트롤 또는 `RightToLeft` 속성을 가진 모든 컨트롤은 런타임에 자동으로 이러한 설정과 일치 합니다. Word에는 양방향 텍스트에 대 한 문서 설정이 없으므로 컨트롤을이 설정에 매핑할 수 없습니다. 대신 각 컨트롤에 대한 텍스트 맞춤을 설정해야 합니다. 모든 컨트롤을 안내하는 코드를 작성하고 텍스트를 오른쪽에서 왼쪽으로 렌더링하도록 할 수 있습니다.
+ Excel에서는 텍스트를 오른쪽에서 왼쪽으로 렌더링하도록 워크시트의 속성을 설정할 수 있습니다. 호스트 컨트롤 또는 `RightToLeft` 속성이 있는 모든 컨트롤은 런타임에 자동으로 이러한 설정과 일치 합니다. Word에는 양방향 텍스트에 대 한 문서 설정이 없으므로 컨트롤을이 설정에 매핑할 수 없습니다. 대신 각 컨트롤에 대한 텍스트 맞춤을 설정해야 합니다. 모든 컨트롤을 안내하는 코드를 작성하고 텍스트를 오른쪽에서 왼쪽으로 렌더링하도록 할 수 있습니다.
 
 ### <a name="change-culture"></a>문화권 변경
  문서 수준 사용자 지정 코드는 일반적으로 Excel의 주 UI 스레드를 공유하므로 스레드 문화권을 변경하면 해당 스레드에서 실행되는 그 밖의 모든 부분에 영향을 미칩니다. 즉, 변경 내용이 사용자 지정에 제한되는 것이 아닙니다.
@@ -55,9 +55,9 @@ ms.locfileid: "71255975"
  Windows Forms 컨트롤은 애플리케이션 수준 VSTO 추가 기능을 호스트 애플리케이션에서 시작하기 전에 초기화됩니다. 이러한 상황에서 문화권은 UI 컨트롤을 설정하기 전에 변경되어야 합니다.
 
 ## <a name="install-the-language-packs"></a>언어 팩 설치
- Windows에 대해 영어가 아닌 설정이 있는 경우 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 언어 팩을 설치하여 Windows와 동일한 언어로 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 메시지를 볼 수 있습니다. 최종 사용자가 Windows에 대해 영어가 아닌 설정으로 솔루션을 실행하는 경우 Windows와 동일한 언어로 런타임 메시지를 보려면 올바른 언어 팩이 있어야 합니다. 언어 팩은 [Microsoft 다운로드 센터](http://www.microsoft.com/downloads)에서 다운로드할 수 있습니다. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]
+ Windows에 대해 영어가 아닌 설정이 있는 경우 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 언어 팩을 설치하여 Windows와 동일한 언어로 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 메시지를 볼 수 있습니다. 최종 사용자가 Windows에 대해 영어가 아닌 설정으로 솔루션을 실행하는 경우 Windows와 동일한 언어로 런타임 메시지를 보려면 올바른 언어 팩이 있어야 합니다. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 언어 팩은 [Microsoft 다운로드 센터](https://www.microsoft.com/download)에서 다운로드할 수 있습니다.
 
- 또한 ClickOnce 메시지를 위해 재배포 가능한 .NET Framework 언어 팩이 필요합니다. .NET Framework 언어 팩은 [Microsoft 다운로드 센터](http://www.microsoft.com/downloads)에서 다운로드할 수 있습니다.
+ 또한 ClickOnce 메시지를 위해 재배포 가능한 .NET Framework 언어 팩이 필요합니다. .NET Framework 언어 팩은 [Microsoft 다운로드 센터](https://www.microsoft.com/download)에서 다운로드할 수 있습니다.
 
 ## <a name="regional-settings-and-excel-com-calls"></a>국가별 설정 및 Excel COM 호출
  관리되는 클라이언트가 COM 개체에서 메서드를 호출하고 문화권별 정보를 전달할 때마다 현재 스레드 로캘과 일치하는 <xref:System.Globalization.CultureInfo.CurrentCulture%2A> (로캘)을 사용해서 수행해야 합니다. 현재 스레드 로캘은 기본적으로 사용자의 국가별 설정에서 상속됩니다. 그러나 Visual Studio에서 Office 개발 도구를 사용하여 만든 Excel 솔루션에서 Excel 개체 모델로 호출하는 경우에는 영어(미국) 데이터 서식(로캘 ID 1033)이 Excel 개체 모델에 자동으로 전달됩니다. 날짜 및 통화와 같이 로캘 구분 서식을 가진 모든 데이터는 영어(미국) 데이터 서식을 사용하여 서식을 지정한 다음에 Microsoft Office Excel로 전달하거나 프로젝트 코드에서 데이터를 읽어야 합니다.
@@ -77,7 +77,7 @@ Application.ActiveCell.Value2 = "05/12/04"
 
  Visual Studio의 Office 개발 도구를 사용하여 만든 솔루션에서 사용되고 COM interop를 통해 Excel로 전달되는 경우 날짜 서식이 en-US 스타일로 지정될 때 동일한 코드는 동일한 결과를 생성합니다.
 
- 예:
+ 예를 들면,
 
  [!code-vb[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#6)]
  [!code-csharp[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#6)]
@@ -95,7 +95,7 @@ Application.ActiveCell.Value2 = "05/12/04"
 ### <a name="applications-that-use-external-data"></a>외부 데이터를 사용 하는 응용 프로그램
  레거시 시스템에서 내보낸 쉼표로 구분된 값이 포함된 파일(CSV 파일)과 같이 외부 데이터를 사용하거나 열려 있는 모든 코드는 en-US 이외의 서식을 사용하여 이러한 파일을 내보내는 경우에도 영향을 받을 수 있습니다. 데이터베이스가 날짜를 문자열로 저장하지 않거나 이진 형식을 사용하는 작업만 수행하면 모든 값이 이진 형식이 되기 때문에 데이터베이스 액세스가 영향을 받지 않을 수 있습니다. 또한 Excel의 데이터를 사용하여 SQL 쿼리를 구성하는 경우 사용하는 함수에 따라 해당 쿼리가 en-US 형식인지 확인해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방법: Office 다국어 사용자 인터페이스 대상](../vsto/how-to-target-the-office-multilingual-user-interface.md)
 - [Office 솔루션 디자인 및 만들기](../vsto/designing-and-creating-office-solutions.md)

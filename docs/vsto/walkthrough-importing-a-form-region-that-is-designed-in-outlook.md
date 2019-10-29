@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cb4e57d1186b42ac1ed4807faf150d1af9090c69
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 23d058e7bdbbe3f12ef4521318236e939e1b22f2
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255572"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985447"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>연습: Outlook에서 디자인 한 양식 영역 가져오기
   이 연습에서는 **새 양식 영역** 마법사를 사용하여 Microsoft Office Outlook에서 양식 영역을 디자인한 다음 Outlook VSTO 추가 기능 프로젝트로 양식 영역을 가져오는 방법을 보여 줍니다. Outlook에서 양식 영역을 디자인하면 Outlook 데이터에 바인딩되는 양식 영역에 네이티브 Outlook 컨트롤을 추가할 수 있습니다. 양식 영역을 가져온 후에 각 컨트롤의 이벤트를 처리할 수 있습니다.
@@ -35,7 +35,7 @@ ms.locfileid: "71255572"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>Prerequisites
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
@@ -45,7 +45,6 @@ ms.locfileid: "71255572"
 > [!NOTE]
 > 일부 Visual Studio 사용자 인터페이스 요소의 경우 다음 지침에 설명된 것과 다른 이름 또는 위치가 시스템에 표시될 수 있습니다. 이러한 요소는 사용하는 Visual Studio 버전 및 설정에 따라 결정됩니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.
 
- ![비디오에 연결](../vsto/media/playvideo.gif "비디오에 연결") 관련 비디오 데모를 보려면 어떻게 할까요?를 [참조 하세요. Visual Studio 2008을 사용 하 여 Outlook 양식 영역 만들기 ](http://go.microsoft.com/fwlink/?LinkID=130305).
 ## <a name="design-a-form-region-by-using-the-form-region-designer-in-outlook"></a>Outlook에서 양식 영역 디자이너를 사용 하 여 양식 영역 디자인
  이 단계에서는 Outlook에서 양식 영역을 디자인합니다. 그런 다음 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]로 가져올 수 있도록 찾기 쉬운 위치에 양식 영역을 저장합니다.
 
@@ -55,7 +54,7 @@ ms.locfileid: "71255572"
 
 1. Microsoft Office Outlook을 시작합니다.
 
-2. Outlook의 **개발자** 탭에서 **양식 디자인**을 클릭합니다. 자세한 내용은 [방법: 리본](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)메뉴에 개발자 탭을 표시 합니다.
+2. Outlook의 **개발자** 탭에서 **양식 디자인**을 클릭합니다. 자세한 내용은 [방법: 리본 메뉴에 개발자 탭 표시](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)를 참조 하세요.
 
 3. **양식 디자인** 상자에서 **작업**을 클릭한 다음 **열기**를 클릭합니다.
 
@@ -124,7 +123,7 @@ ms.locfileid: "71255572"
 
 3. 기본 프로젝트 디렉터리에 프로젝트를 저장합니다.
 
-     자세한 내용은 [방법: Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)에서 Office 프로젝트를 만듭니다.
+     자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
 
 ## <a name="import-the-form-region"></a>양식 영역 가져오기
  **새 Outlook 양식 영역** 마법사를 사용하여 Outlook에서 디자인한 양식 영역을 Outlook VSTO 추가 기능 프로젝트로 가져올 수 있습니다.
@@ -187,7 +186,7 @@ ms.locfileid: "71255572"
 
    - 양식 영역의 목록 상자를 각 종속 작업의 현재 완료 상태로 새로 고칩니다.
 
-   - 숨겨진 텍스트 필드를 구문 분석하여 각 종속 작업의 제목을 얻습니다. 그런 다음 도우미 메서드 `Microsoft.Office.Interop.Outlook.TaskItem` 를 `FindTaskBySubjectName` 호출 하 고 각 작업의 주체를 전달 하 여 *작업* 폴더에서 각를 찾습니다.
+   - 숨겨진 텍스트 필드를 구문 분석하여 각 종속 작업의 제목을 얻습니다. 그런 다음 `FindTaskBySubjectName` 도우미 메서드를 호출 하 고 각 작업의 주체를 전달 하 여 *작업* 폴더에서 각 `Microsoft.Office.Interop.Outlook.TaskItem`를 찾습니다.
 
    - `Microsoft.Office.Interop.Outlook.TaskItem.Subject` 및 `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` 값을 종속 작업 목록 상자에 추가합니다.
 
@@ -245,13 +244,13 @@ ms.locfileid: "71255572"
 ## <a name="next-steps"></a>다음 단계
  다음 항목에서 Outlook 애플리케이션의 UI를 사용자 지정하는 방법에 대해 자세히 알아볼 수 있습니다.
 
-- 관리 되는 컨트롤을 비주얼 디자이너에 끌어 양식 영역의 모양을 디자인 하는 방법에 대 한 자세한 내용은 [연습: Outlook 양식 영역](../vsto/walkthrough-designing-an-outlook-form-region.md)을 디자인 합니다.
+- 관리 되는 컨트롤을 비주얼 디자이너로 끌어 양식 영역의 모양을 디자인 하는 방법에 대해 자세히 알아보려면 [연습: Outlook 양식 영역 디자인](../vsto/walkthrough-designing-an-outlook-form-region.md)을 참조 하세요.
 
 - Outlook 항목의 리본을 사용자 지정 하는 방법에 대 한 자세한 내용은 [outlook의 리본 메뉴 사용자 지정](../vsto/customizing-a-ribbon-for-outlook.md)을 참조 하세요.
 
 - Outlook에 사용자 지정 작업창을 추가 하는 방법에 대 한 자세한 내용은 [사용자 지정 작업](../vsto/custom-task-panes.md)창을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [런타임에 양식 영역 액세스](../vsto/accessing-a-form-region-at-run-time.md)
 - [Outlook 양식 영역 만들기](../vsto/creating-outlook-form-regions.md)
 - [Outlook 양식 영역 만들기 지침](../vsto/guidelines-for-creating-outlook-form-regions.md)
@@ -259,4 +258,4 @@ ms.locfileid: "71255572"
 - [방법: Outlook 추가 기능 프로젝트에 양식 영역 추가](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
 - [Outlook 메시지 클래스에 양식 영역 연결](../vsto/associating-a-form-region-with-an-outlook-message-class.md)
 - [Outlook 양식 영역의 사용자 지정 작업](../vsto/custom-actions-in-outlook-form-regions.md)
-- [방법: Outlook에서 양식 영역 표시 안 함](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)
+- [방법: Outlook에서 양식 영역 표시 하지 않기](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)

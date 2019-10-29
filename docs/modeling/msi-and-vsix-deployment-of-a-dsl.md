@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9e42b5156ced1c01995882e3250c7243c18d24d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 73c81d88f055ea7a585e3d14ab4a0086d9236938
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658370"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984449"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL의 MSI 및 VSIX 배포
 도메인 특정 언어를 사용자의 컴퓨터 또는 다른 컴퓨터에 설치할 수 있습니다. Visual Studio가 대상 컴퓨터에 이미 설치 되어 있어야 합니다.
@@ -22,7 +22,7 @@ ms.locfileid: "72658370"
 
 |메서드|이점|
 |-|-|
-|VSX (Visual Studio 확장)|매우 쉽게 배포할 수 있습니다. DslPackage 프로젝트에서 **.vsix** 파일을 복사 하 고 실행 합니다.<br /><br /> 자세한 내용은 VSX를 [사용 하 여 DSL 설치 및 제거](#Installing)를 참조 하세요.|
+|VSX (Visual Studio 확장)|매우 쉬운 배포: DslPackage 프로젝트에서 **.vsix** 파일을 복사 하 고 실행 합니다.<br /><br /> 자세한 내용은 VSX를 [사용 하 여 DSL 설치 및 제거](#Installing)를 참조 하세요.|
 |MSI (설치 관리자 파일)|-사용자가 DSL 파일을 두 번 클릭 하 여 Visual Studio를 열 수 있습니다.<br />-대상 컴퓨터에서 아이콘과 DSL 파일 형식을 연결 합니다.<br />-XSD (XML 스키마)를 DSL 파일 형식과 연결 합니다. 이렇게 하면 파일이 Visual Studio로 로드 될 때 경고를 피할 수 있습니다.<br /><br /> MSI를 만들려면 솔루션에 설치 프로젝트를 추가 해야 합니다.<br /><br /> 자세한 내용은 [MSI 파일을 사용 하 여 DSL 배포](#msi)를 참조 하세요.|
 
 ## <a name="Installing"></a>VSX를 사용 하 여 DSL 설치 및 제거
@@ -68,7 +68,7 @@ ms.locfileid: "72658370"
 
  MSI 파일 및 기타 배포 옵션에 대 한 자세한 내용은 [응용 프로그램, 서비스 및 구성 요소 배포](../deployment/deploying-applications-services-and-components.md)를 참조 하세요.
 
- MSI를 빌드하려면 설치 프로젝트를 Visual Studio 솔루션에 추가 합니다. 설치 프로젝트를 만드는 가장 쉬운 방법은 [VMSDK 사이트](http://go.microsoft.com/fwlink/?LinkID=186128)에서 다운로드할 수 있는 CreateMsiSetupProject.tt 템플릿을 사용 하는 것입니다.
+ MSI를 빌드하려면 설치 프로젝트를 Visual Studio 솔루션에 추가 합니다. 설치 프로젝트를 만드는 가장 쉬운 방법은 [VMSDK 사이트](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)에서 다운로드할 수 있는 CreateMsiSetupProject.tt 템플릿을 사용 하는 것입니다.
 
 ### <a name="to-deploy-a-dsl-in-an-msi"></a>MSI에서 DSL을 배포 하려면
 
@@ -76,7 +76,7 @@ ms.locfileid: "72658370"
 
    1. DslPackage\source.extension.tt 열기
 
-   2. @No__t_0 앞에 다음 줄을 삽입 합니다.
+   2. `<SupportedProducts>`앞에 다음 줄을 삽입 합니다.
 
        ```xml
        <InstalledByMsi>true</InstalledByMsi>
@@ -90,13 +90,13 @@ ms.locfileid: "72658370"
 
        - 설명
 
-       - 버전
+       - Version
 
    - **편집기** 노드를 클릭 하 고 속성 창에서 **아이콘**을 클릭 합니다. **Dslpackage\resources**의 아이콘 파일 (예: .ico)을 참조 하도록 값을 설정 합니다 **.**
 
    - **빌드** 메뉴에서 **Configuration Manager**를 열고 빌드 하려는 구성 (예: **릴리스** 또는 **디버그**)을 선택 합니다.
 
-4. [시각화 및 모델링 SDK 홈 페이지로](http://go.microsoft.com/fwlink/?LinkID=186128)이동 하 고 **다운로드** 탭에서 **CreateMsiSetupProject.tt**를 다운로드 합니다.
+4. [시각화 및 모델링 SDK 홈 페이지로](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)이동 하 고 **다운로드** 탭에서 **CreateMsiSetupProject.tt**를 다운로드 합니다.
 
 5. Dsl 프로젝트에 **CreateMsiSetupProject.tt** 를 추가 합니다.
 
@@ -118,7 +118,7 @@ ms.locfileid: "72658370"
 
 10. Windows 탐색기에서 설치 프로젝트의 기본 MSI 파일을 찾습니다.
 
-     DSL을 설치 하려는 컴퓨터에 MSI 파일을 복사 합니다. MSI 파일을 두 번 클릭 합니다. 설치 관리자를 실행합니다.
+     DSL을 설치 하려는 컴퓨터에 MSI 파일을 복사 합니다. MSI 파일을 두 번 클릭 합니다. 설치 관리자가 실행 됩니다.
 
 11. 대상 컴퓨터에서 DSL의 파일 확장명이 있는 새 파일을 만듭니다. 다음을 확인 합니다.
 
@@ -126,7 +126,7 @@ ms.locfileid: "72658370"
 
     - 파일을 두 번 클릭 하면 Visual Studio가 시작 되 고 dsl 편집기에서 DSL 파일이 열립니다.
 
-    원한다 면 텍스트 템플릿을 사용 하는 대신 수동으로 설치 프로젝트를 만들 수 있습니다. 이 절차를 포함 하는 연습은 [시각화 및 모델링 SDK 랩](http://go.microsoft.com/fwlink/?LinkId=208878)의 5 장을 참조 하세요.
+    원한다 면 텍스트 템플릿을 사용 하는 대신 수동으로 설치 프로젝트를 만들 수 있습니다. 이 절차를 포함 하는 연습은 [시각화 및 모델링 SDK 랩](https://code.msdn.microsoft.com/DSLToolsLab/Release/ProjectReleases.aspx?ReleaseId=4207)의 5 장을 참조 하세요.
 
 ### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>MSI에서 설치 된 DSL을 제거 하려면
 

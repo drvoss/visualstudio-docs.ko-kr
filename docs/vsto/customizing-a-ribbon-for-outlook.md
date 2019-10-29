@@ -16,17 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 646192baa6caaa33410b1dd8d17d1983f7d27e30
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 2865bd89da3b59a24208e07739e8c56254959c88
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255547"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986098"
 ---
 # <a name="customize-a-ribbon-for-outlook"></a>Outlook에 대 한 리본 사용자 지정
   Microsoft Office Outlook에서 리본을 사용자 지정할 경우 애플리케이션에서 사용자 지정 리본이 나타나는 위치를 고려해야 합니다. Outlook에서 리본은 사용자가 메일 메시지 만들기 등의 특정 작업을 수행할 때 열리는 창과 기본 애플리케이션 UI(사용자 인터페이스)에 표시됩니다. 이러한 애플리케이션 창의 이름을 검사기라고 합니다.
-
- ![비디오에 연결](../vsto/media/playvideo.gif "비디오에 연결") 관련 비디오 데모를 보려면 어떻게 할까요?를 [참조 하세요. 리본 디자이너를 사용 하 여 Outlook에서 리본을 사용자 지정 합니다. ](http://go.microsoft.com/fwlink/?LinkID=130312).
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -45,13 +43,13 @@ ms.locfileid: "71255547"
 
  <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> 메서드는 Visual Studio를 통해 리본 코드 파일에서 자동으로 생성됩니다. *RibbonID* 매개 변수는 탐색기 또는 특정 유형의 검사기를 식별 하는 문자열입니다. *RibbonID* 매개 변수의 가능한 값에 대 한 전체 목록은 기술 문서 [Outlook 2007에서 리본 사용자 지정](/previous-versions/office/developer/office-2007/bb226712(v=office.12))을 참조 하세요.
 
- 다음 코드 예제에서는 `Microsoft.Outlook.Mail.Compose` 검사기에만 사용자 지정 리본을 표시하는 방법을 보여 줍니다. 사용자가 새 메일 메시지를 만들 때 열리는 검사기입니다. 표시할 리본은 **리본** 클래스에서 생성 되 `GetResourceText()` 는 메서드에 지정 됩니다. **Ribbon** 클래스에 대 한 자세한 내용은 [리본 XML](../vsto/ribbon-xml.md)을 참조 하세요.
+ 다음 코드 예제에서는 `Microsoft.Outlook.Mail.Compose` 검사기에만 사용자 지정 리본을 표시하는 방법을 보여 줍니다. 사용자가 새 메일 메시지를 만들 때 열리는 검사기입니다. 표시할 리본은 **리본** 클래스에서 생성 되는 `GetResourceText()` 메서드에서 지정 됩니다. **Ribbon** 클래스에 대 한 자세한 내용은 [리본 XML](../vsto/ribbon-xml.md)을 참조 하세요.
 
  [!code-csharp[Trin_RibbonOutlookBasic#1](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#1)]
  [!code-vb[Trin_RibbonOutlookBasic#1](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#1)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [런타임에 리본 메뉴에 액세스](../vsto/accessing-the-ribbon-at-run-time.md)
 - [리본 개요](../vsto/ribbon-overview.md)
 - [리본 디자이너](../vsto/ribbon-designer.md)
-- [Ribbon XML](../vsto/ribbon-xml.md)
+- [리본 XML](../vsto/ribbon-xml.md)

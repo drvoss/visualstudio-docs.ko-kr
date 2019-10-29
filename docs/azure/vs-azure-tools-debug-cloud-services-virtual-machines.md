@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 18d2364794eef2177c4cfc607ecc6da38143ba54
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: a353ac12f7477bf40393f83de5fe41ede4d9aa95
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911868"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024580"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Visual Studio에서 Azure 클라우드 서비스 또는 가상 머신 디버깅
 
@@ -49,7 +49,7 @@ Azure 컴퓨팅 에뮬레이터를 사용하여 로컬 컴퓨터에서 클라우
 클라우드 서비스에 원격 디버깅을 사용하면, 성능이 저하되거나 추가 요금이 발생하지 않습니다. 서비스를 사용하는 클라이언트에 악영향을 줄 수 있으므로 원격 디버깅을 프로덕션 서비스에 사용하지 않도록 합니다.
 
 > [!NOTE]
-> Visual Studio에서 클라우드 서비스를 게시할 때 .NET Framework 4 또는 .NET Framework 4.5를 대상으로 하는 서비스의 모든 역할에 대해 **IntelliTrace** 를 사용할 수 있습니다. **IntelliTrace**를 사용하여 이전의 역할 인스턴스에서 발생한 이벤트를 검사하고 그 시점부터 컨텍스트를 재현할 수 있습니다. [IntelliTrace 및 Visual Studio를 사용하여 게시된 클라우드 서비스 디버깅](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md) 및 [IntelliTrace 사용하기](/debugger/intellitrace)를 참조하세요.
+> Visual Studio에서 클라우드 서비스를 게시할 때 .NET Framework 4 또는 .NET Framework 4.5를 대상으로 하는 서비스의 모든 역할에 대해 **IntelliTrace** 를 사용할 수 있습니다. **IntelliTrace**를 사용하여 이전의 역할 인스턴스에서 발생한 이벤트를 검사하고 그 시점부터 컨텍스트를 재현할 수 있습니다. [IntelliTrace 및 Visual Studio를 사용하여 게시된 클라우드 서비스 디버깅](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md) 및 [IntelliTrace 사용하기](../debugger/intellitrace.md)를 참조하세요.
 
 ### <a name="to-enable-remote-debugging-for-a-cloud-service"></a>클라우드 서비스의 원격 디버깅을 사용하려면
 

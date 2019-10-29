@@ -21,12 +21,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 996f0336742441e565d16b0fe491e846d0d24329
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 95df70a3458c758fb886cbe2bc5d52d3192ba7cc
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654124"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984437"
 ---
 # <a name="create-models-for-your-app"></a>앱용 모델 만들기
 
@@ -55,5 +55,5 @@ ms.locfileid: "72654124"
 
 ## <a name="resources"></a>자료
 
-- [Visual Studio 시각화 & 모델링 도구 포럼](http://go.microsoft.com/fwlink/?LinkId=184720)
+- [Visual Studio 시각화 & 모델링 도구 포럼](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)
 - [Visual Studio 확장성 포럼](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)

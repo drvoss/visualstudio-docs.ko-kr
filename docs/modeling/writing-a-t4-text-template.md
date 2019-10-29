@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 860f322724618ddb99bd9ab39eeefa488d9a71c5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: df653dbd449429b6995c987328a401866751fd5e
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666888"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981244"
 ---
 # <a name="writing-a-t4-text-template"></a>T4 텍스트 템플릿 쓰기
 텍스트 템플릿은 해당 템플릿에서 생성될 텍스트를 포함합니다. 예를 들어 웹 페이지를 만드는 템플릿에는 "\<html > ..."가 포함 됩니다. 및 HTML 페이지의 기타 모든 표준 부분입니다. 템플릿에 삽입 된 *제어 블록*은 프로그램 코드의 조각입니다. 제어 블록은 경우에 따라 다른 값을 제공하여 텍스트 부분을 조건부로/반복 적용할 수 있도록 합니다.
@@ -236,7 +236,7 @@ private void WriteSquareLine(int i)
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...
 ```
 
- **탐색 가능한 모델로 파일을 로드**합니다. 즉, 텍스트 템플릿 코드가 탐색할 수 있는 모델로 데이터를 읽는 보다 효율적인 방식을 사용할 수 있습니다. 예를 들어 XML 파일을 로드한 다음 XPath 식을 사용하여 탐색할 수 있습니다. 또한 [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765) 를 사용 하 여 XML 데이터를 읽을 수 있는 클래스 집합을 만들 수 있습니다.
+ **탐색 가능한 모델로 파일을 로드**합니다. 즉, 텍스트 템플릿 코드가 탐색할 수 있는 모델로 데이터를 읽는 보다 효율적인 방식을 사용할 수 있습니다. 예를 들어 XML 파일을 로드한 다음 XPath 식을 사용하여 탐색할 수 있습니다. 또한 [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) 를 사용 하 여 XML 데이터를 읽을 수 있는 클래스 집합을 만들 수 있습니다.
 
  **다이어그램 또는 폼에서 모델 파일을 편집 합니다.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]에서는 모델을 다이어그램 또는 Windows form으로 편집할 수 있는 도구를 제공 합니다. 그러면 생성된 애플리케이션의 사용자와 모델에 대해 보다 쉽게 논의할 수 있습니다. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]에서는 모델 구조를 반영하는 강력한 형식의 클래스 집합도 만듭니다. 자세한 내용은 [도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)을 참조 하세요.
 

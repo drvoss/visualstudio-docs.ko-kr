@@ -1,5 +1,5 @@
 ---
-title: '방법: 설치 관리자에 대 한 레지스트리 정보를 생성 합니다. | Microsoft Docs'
+title: '방법: 설치 관리자에 대 한 레지스트리 정보 생성 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,25 +12,25 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 931950c399d853fc6296bf56e9fce0619c0e7e41
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d4395732cd8d3fbc71ac902801c71270ff446470
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328832"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981977"
 ---
-# <a name="how-to-generate-registry-information-for-an-installer"></a>방법: 설치 관리자에 대 한 레지스트리 정보를 생성 합니다.
+# <a name="how-to-generate-registry-information-for-an-installer"></a>방법: 설치 관리자에 대 한 레지스트리 정보 생성
 
-합니다 *RegPkg.exe* 유틸리티에서 관리 되는 VSPackage에 대 한 등록 매니페스트를 생성 하는 데 사용 수 있습니다. 매니페스트는 Windows Installer 설치 패키지를 통합할 수 있습니다. RegPkg도 파일을 생성할 수에 따라 설치 원본 파일에 포함 될 수 있는 합니다 [Windows Installer XML 도구 집합](http://go.microsoft.com/fwlink/?LinkId=62238)합니다.
+*RegPkg* 유틸리티를 사용 하 여 관리 되는 VSPackage에 대 한 등록 매니페스트를 생성할 수 있습니다. 매니페스트를 Windows Installer 설치 패키지에 통합할 수 있습니다. 또한 RegPkg는 [WINDOWS INSTALLER XML 도구 집합](https://wixtoolset.org/)을 기반으로 설치 원본 파일에 포함 될 수 있는 파일을 생성할 수 있습니다.
 
 > [!IMPORTANT]
-> 적절 한 Windows Installer 속성을 포맷 되므로 사용 하 여 출력을 편집 해야 RegPkg를 사용할 때마다, RegPkg 개발 시스템에 관련 된 경로 이름을 생성 합니다. 예를 들어 합니다 `InprocServer32` 값 이어야 합니다  *\<SystemFolder\>mscoree.dll* 경로 사용 해야 *\<#filekey\>* 하고 *\<$componentkey\>* 합니다. 이 방식으로 출력을 조정 Windows 또는 다른 디렉터리, 지역화 된 디렉터리 이름 및 사용자가 선택할 수 있는 경로 다른 드라이브에 설치 되어 있는 컴퓨터를 지원 합니다. 자세한 내용은 [서식 있음](http://go.microsoft.com/fwlink/?LinkId=71120) Windows Installer SDK의 합니다. 개발 시스템 경로 대 한 RegPkg 규칙에 따라 경우-예를 들어 파일 형식의 Id *File_\<filename\>* -적은 변경 해야 합니다.
+> RegPkg는 개발 시스템과 관련 된 경로 이름을 생성 하므로 RegPkg를 사용할 때마다 적절 한 형식의 속성 Windows Installer 사용 하도록 출력을 편집 해야 합니다. 예를 들어 `InprocServer32` 값은 *Mscoree.dll 폴더\>\<systemfolder* 여야 하며 경로 *\<#filekey* *\>및\<$componentkey\>를* 사용 해야 합니다. 이러한 방식으로 출력을 조정 하면 다른 드라이브나 다른 디렉터리, 지역화 된 디렉터리 이름 및 사용자가 선택할 수 있는 경로에 Windows가 설치 된 컴퓨터가 지원 됩니다. 자세한 내용은 Windows Installer SDK에서 [서식 지정](https://msdn.microsoft.com/library?url=/library/msi/setup/formatted.asp) 을 참조 하세요. 개발 시스템 경로 (예: *File_\<파일 이름\>* 의 파일 id)에 대 한 RegPkg 규칙을 따르는 경우에는 변경 내용을 덜 만들어야 합니다.
 
 ## <a name="to-create-a-registration-manifest"></a>등록 매니페스트를 만들려면
 
-- RegPkg 사용 하 여 실행 합니다 **/regfile** 전환 합니다. 다른 스위치, 출력 파일의 이름 및 VSPackage의 경로 제공 합니다.
+- **/Regfile** 스위치를 사용 하 여 RegPkg를 실행 합니다. 다른 스위치, 출력 파일의 이름 및 VSPackage의 경로를 제공 합니다.
 
-     예를 들어, 명령 프롬프트에서 입력 다음과 유사 하 게 합니다.
+     예를 들어 명령 프롬프트에서 다음과 같이 입력 합니다.
 
     ```
     <Visual Studio SDK installation path>\VisualStudioIntegration\Tools\Bin\RegPkg /regfile:MyRegFile.reg MyPackage.dll
@@ -38,9 +38,9 @@ ms.locfileid: "66328832"
 
 ## <a name="to-view-a-registration-manifest"></a>등록 매니페스트를 보려면
 
-- 임의의 텍스트 편집기에서 등록 매니페스트를 엽니다.
+- 모든 텍스트 편집기에서 등록 매니페스트를 엽니다.
 
-     다음 예제는 RegPkg IronPython 언어 서비스에 대해 만든 등록 매니페스트:
+     다음 예제는 RegPkg에서 IronPython 언어 서비스용으로 만드는 등록 매니페스트입니다.
 
     ```
     REGEDIT4
@@ -97,21 +97,21 @@ ms.locfileid: "66328832"
 
     ```
 
-## <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>Windows Installer XML을 만들려면 도구 집합 포함 파일
+## <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>Windows Installer XML 도구 집합 포함 파일을 만들려면
 
-- RegPkg 사용 하 여 실행 합니다 **/wixfile** 전환 합니다. 다른 스위치, 출력 파일의 이름 및 VSPackage의 경로 제공 합니다.
+- **/Wixfile** 스위치를 사용 하 여 RegPkg를 실행 합니다. 다른 스위치, 출력 파일의 이름 및 VSPackage의 경로를 제공 합니다.
 
-     예를 들어, 명령 프롬프트에서 입력 다음과 유사 하 게 합니다.
+     예를 들어 명령 프롬프트에서 다음과 같이 입력 합니다.
 
     ```
     <Visual Studio SDK installation path>\VisualStudioIntegration\Tools\Bin\RegPkg /codebase /wixfile:IronPython.LanguageService.wxi ..\bin\Release\IronPython.LanguageService.dll
     ```
 
-## <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>Windows Installer XML을 보려면 도구 집합 포함 파일
+## <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>Windows Installer XML 도구 집합 포함 파일을 보려면
 
-- 열기 Windows Installer XML 도구 집합 파일을 포함 텍스트 편집기에서.
+- 모든 텍스트 편집기에서 Windows Installer XML 도구 집합 포함 파일을 엽니다.
 
-     다음 예제는 IronPython 언어 서비스에 대 한 RegPkg 만든 포함 파일:
+     다음 예제는 RegPkg에서 IronPython 언어 서비스용으로 만드는 포함 파일입니다.
 
     ```xml
     <Include>
@@ -181,7 +181,7 @@ ms.locfileid: "66328832"
     </Include>
     ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [Vspackage 등록](../../extensibility/registering-and-unregistering-vspackages.md)
 - [VSPackage](../../extensibility/internals/vspackages.md)

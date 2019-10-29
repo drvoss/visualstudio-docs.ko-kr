@@ -20,12 +20,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7711d0b0f369f43cc7becf92cbdcfc986cd3a6a8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 07cba8f8ae813ae223ef3da110a046f65c81b091
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661490"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984078"
 ---
 # <a name="dependency-diagrams-reference"></a>종속성 다이어그램: 참조
 
@@ -48,7 +48,7 @@ Visual Studio에서는 *종속성 다이어그램* 을 사용 하 여 시스템�
 
 - 체크 인 및 빌드 작업을 통해 유효성 검사를 포함하여 개발 및 유지 관리 중에 의도한 아키텍처를 보강합니다.
 
-이 항목에서는 종속성 다이어그램에서 사용할 수 있는 요소에 대해 설명 합니다. 종속성 다이어그램을 만들고 그리는 방법에 대 한 자세한 내용은 [Dependency 다이어그램을 참조 하세요. 지침이 ](../modeling/layer-diagrams-guidelines.md). 계층화 패턴에 대 한 자세한 내용은 [패턴 & 사례 사이트](http://go.microsoft.com/fwlink/?LinkId=145794)를 참조 하세요.
+이 항목에서는 종속성 다이어그램에서 사용할 수 있는 요소에 대해 설명 합니다. 종속성 다이어그램을 만들고 그리는 방법에 대 한 자세한 내용은 [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)을 참조 하세요. 계층화 패턴에 대 한 자세한 내용은 [패턴 & 사례 사이트](https://archive.codeplex.com/?p=apparch)를 참조 하세요.
 
 ## <a name="reading-dependency-diagrams"></a>종속성 다이어그램 읽기
 
@@ -76,7 +76,7 @@ Visual Studio에서는 *종속성 다이어그램* 을 사용 하 여 시스템�
 
 레이어 및 아티팩트 연결에 대한 자세한 내용은 다음을 참조하세요.
 
-- [Dependency 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)
+- [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)
 
 - [코드에서 종속성 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)
 
@@ -93,9 +93,9 @@ Visual Studio에서는 *종속성 다이어그램* 을 사용 하 여 시스템�
 |-|-|
 |**범주**|클래스, 네임스페이스, 소스 파일 등의 아티팩트 종류|
 |**레이어도**|아티팩트에 연결되는 레이어|
-|**유효성 검사 지원**|**True**이면 레이어 유효성 검사 프로세스에서 프로젝트가이 요소에 대 한 종속성을 따르는지 확인할 수 있습니다.<br /><br /> **False**이면 링크가 레이어 유효성 검사 프로세스에 참여 하지 않습니다.<br /><br /> 자세한 내용은 [Dependency 다이어그램을 참조 하세요. 지침이 ](../modeling/layer-diagrams-guidelines.md).|
+|**유효성 검사 지원**|**True**이면 레이어 유효성 검사 프로세스에서 프로젝트가이 요소에 대 한 종속성을 따르는지 확인할 수 있습니다.<br /><br /> **False**이면 링크가 레이어 유효성 검사 프로세스에 참여 하지 않습니다.<br /><br /> 자세한 내용은 [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)을 참조 하세요.|
 |**식별자**|연결된 아티팩트에 대한 참조|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [앱용 모델 만들기](../modeling/create-models-for-your-app.md)

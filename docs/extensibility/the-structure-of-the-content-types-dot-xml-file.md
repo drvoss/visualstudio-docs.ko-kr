@@ -13,18 +13,18 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cc42a5346498c04f759956b2ca00094ac1df119
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: aac250053f90d99e7db27a9862d2dc1b33fadbfb
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718721"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983035"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>[Content_types].xml 파일의 구조
 VSIX 패키지의 콘텐츠 종류에 대 한 정보를 포함 합니다. Visual Studio는 [Content_Types] .xml 파일을 사용 하 여 패키지를 설치 하지만 파일 자체를 설치 하지는 않습니다.
 
 > [!NOTE]
-> 이 항목은 VSIX 패키지에 사용 되는 [Content_Type] .xml 파일에만 적용 되지만 [Content_Types] .xml 파일 형식은 *OPC (Open 패키징 규칙)* 표준의 일부입니다. 자세한 내용은 OPC: MSDN 웹 사이트에서 [데이터를 패키징하는 새 표준](http://go.microsoft.com/fwlink/?LinkID=148207) 을 참조 하세요.
+> 이 항목은 VSIX 패키지에 사용 되는 [Content_Type] .xml 파일에만 적용 되지만 [Content_Types] .xml 파일 형식은 *OPC (Open 패키징 규칙)* 표준의 일부입니다. 자세한 내용은 OPC: MSDN 웹 사이트에서 [데이터를 패키징하는 새 표준](https://msdn.microsoft.com/magazine/cc163372.aspx) 을 참조 하세요.
 
 ## <a name="attributes-and-elements"></a>특성 및 요소
  다음 섹션에서는 루트 요소와 해당 특성 및 자식 요소에 대해 설명 합니다.
@@ -48,7 +48,7 @@ VSIX 패키지의 콘텐츠 종류에 대 한 정보를 포함 합니다. Visual
 | http://schemas.openformats.org/package/2006/content-types | 콘텐츠 형식 스키마의 위치입니다. |
 
 ### <a name="child-elements"></a>자식 요소
- @No__t_0 요소에는 개수에 관계 없이 `Default` 요소가 포함 될 수 있습니다.
+ `Types` 요소에는 개수에 관계 없이 `Default` 요소가 포함 될 수 있습니다.
 
 |요소|설명|
 |-------------|-----------------|
@@ -102,4 +102,4 @@ VSIX 패키지의 콘텐츠 종류에 대 한 정보를 포함 합니다. Visual
 ## <a name="see-also"></a>참조
 - [VSIX 패키지 분석](../extensibility/anatomy-of-a-vsix-package.md)
 - [VSIX 확장 스키마 1.0 참조](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
-- [OPC: 데이터를 패키징하는 새 표준](http://go.microsoft.com/fwlink/?LinkID=148207)
+- [OPC: 데이터를 패키징하는 새 표준](https://msdn.microsoft.com/magazine/cc163372.aspx)

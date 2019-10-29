@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7d873a3401e37a18b938cb5785f33eb0bc9b8fb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e476f1db1e30a04e67e6b53f593f55ee3867fae2
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666713"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985125"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>방법: 바로 가기 메뉴에 명령 추가
 
@@ -28,8 +28,6 @@ ms.locfileid: "72666713"
 2. [Package.tt에서 패키지 버전 번호를 업데이트](#version)합니다. Commands.vsct를 변경할 때마다 이 작업을 수행해야 합니다.
 
 3. [CommandSet 클래스의 메서드를 작성](#CommandSet) 하 여 명령을 표시 하 고 명령이 수행할 작업을 정의 합니다.
-
-   샘플은 [시각화 및 모델링 SDK 웹 사이트](http://go.microsoft.com/fwlink/?LinkID=185579)를 참조 하세요.
 
 > [!NOTE]
 > CommandSet.cs의 메서드를 재정의하여 잘라내기, 붙여넣기, 모두 선택, 인쇄 등의 몇 가지 기존 명령 동작도 수정할 수 있습니다. 자세한 내용은 [방법: 표준 메뉴 명령 수정](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)을 참조 하세요.
@@ -102,7 +100,7 @@ MEF(Managed Extension Framework)는 다이어그램 메뉴의 메뉴 명령을 �
     </VisibilityConstraints>
     ```
 
-4. GUID 및 ID에 사용되는 이름을 정의합니다. 이렇게 하려면 `Symbols` 요소에서 `CommandTable` 요소 뒤에 `Commands` 요소를 추가합니다.
+4. Guid 및 Id에 사용 되는 이름을 정의 합니다. 이렇게 하려면 `Symbols` 요소에서 `CommandTable` 요소 뒤에 `Commands` 요소를 추가합니다.
 
     ```xml
     <Symbols>
@@ -361,7 +359,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 ## <a name="see-also"></a>참조
 
-- [도메인별 언어를 사용자 지정하는 코드 작성](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [도메인 특정 언어를 사용자 지정 하는 코드 작성](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [방법: 표준 메뉴 명령 수정](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
 - [도메인별 언어 솔루션 배포](msi-and-vsix-deployment-of-a-dsl.md)
 - [샘플 코드: 회로 다이어그램](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 40ff277ff5102c436a6815af3b542894c8061e56
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 9e94bedf95b58d9876d37eb496ede0c5ec9a8531
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255600"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985450"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>연습: Outlook에서 전자 메일 메시지와 함께 사용자 지정 작업 창 표시
   이 연습에서는 각 전자 메일 메시지를 만들거나 열 때 사용자 지정 작업창의 고유 인스턴스를 표시 하는 방법을 보여 줍니다. 사용자는 각 메일 메시지의 리본에 있는 단추를 사용하여 사용자 지정 작업창을 표시하거나 숨길 수 있습니다.
@@ -50,21 +50,19 @@ ms.locfileid: "71255600"
 > [!NOTE]
 > 일부 Visual Studio 사용자 인터페이스 요소의 경우 다음 지침에 설명된 것과 다른 이름 또는 위치가 시스템에 표시될 수 있습니다. 이러한 요소는 사용하는 Visual Studio 버전 및 설정에 따라 결정됩니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>Prerequisites
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
 - Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] 또는 Microsoft Outlook 2010
 
-  ![비디오에 연결](../vsto/media/playvideo.gif "비디오에 연결") 관련 비디오 데모를 보려면 어떻게 할까요?를 [참조 하세요. Outlook의 작업창을 사용 하 시겠습니까? ](http://go.microsoft.com/fwlink/?LinkID=130309).
-
 ## <a name="create-the-project"></a>프로젝트를 만듭니다.
- 사용자 지정 작업창은 VSTO 추가 기능에서 구현됩니다. Outlook 용 VSTO 추가 기능 프로젝트를 만드는 것부터 시작 합니다.
+ 사용자 지정 작업창은 VSTO 추가 기능에서 구현 됩니다. Outlook에 대 한 VSTO 추가 기능 프로젝트를 만드는 것부터 시작 합니다.
 
 ### <a name="to-create-a-new-project"></a>새 프로젝트를 만들려면
 
-1. 이름이 **OutlookMailItemTaskPane** 인 **Outlook 추가 기능**프로젝트를 만듭니다. **Outlook 추가 기능** 프로젝트 템플릿을 사용합니다. 자세한 내용은 [방법: Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)에서 Office 프로젝트를 만듭니다.
+1. 이름이 **OutlookMailItemTaskPane** 인 **Outlook 추가 기능**프로젝트를 만듭니다. **Outlook 추가 기능** 프로젝트 템플릿을 사용합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 에서는 *ThisAddIn.cs* 또는 *ThisAddIn.vb* 코드 파일을 열고 **OutlookMailItemTaskPane** 프로젝트를 **솔루션 탐색기**에 추가합니다.
 
@@ -124,7 +122,7 @@ ms.locfileid: "71255600"
 
 - 사용자가 리본의 토글 단추를 클릭 하는 경우 이 경우 VSTO 추가 기능에서는 해당 작업창을 숨기거나 표시해야 합니다.
 
-  VSTO 추가 기능을 사용 하 여 열려 있는 각 메일 메시지와 연결 된 사용자 지정 작업창을 추적 하려면 <xref:Microsoft.Office.Interop.Outlook.Inspector> 및 <xref:Microsoft.Office.Tools.CustomTaskPane> 개체 쌍을 래핑하는 사용자 지정 클래스를 만듭니다. 이 클래스는 각 메일 메시지에 대해 새 사용자 지정 작업창 개체를 만들고 해당 메일 메시지가 닫히면 사용자 지정 작업창을 삭제 합니다.
+  VSTO 추가 기능을 사용 하 여 열려 있는 각 메일 메시지와 연결 된 사용자 지정 작업창을 추적 하려면 <xref:Microsoft.Office.Interop.Outlook.Inspector>와 <xref:Microsoft.Office.Tools.CustomTaskPane> 개체의 쌍을 래핑하는 사용자 지정 클래스를 만듭니다. 이 클래스는 각 메일 메시지에 대해 새 사용자 지정 작업창 개체를 만들고 해당 메일 메시지가 닫히면 사용자 지정 작업창을 삭제 합니다.
 
 ### <a name="to-create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>검사기 창 및 사용자 지정 작업창을 관리 하기 위한 클래스를 만들려면
 
@@ -150,7 +148,7 @@ ms.locfileid: "71255600"
      [!code-csharp[Trin_OutlookMailItemTaskPane#5](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#5)]
      [!code-vb[Trin_OutlookMailItemTaskPane#5](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#5)]
 
-6. 이전 단계에서 추가한 코드 뒤에 다음 메서드를 추가합니다. 이 메서드는 현재 전자 메일 메시지를 <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> 포함 하는 <xref:Microsoft.Office.Interop.Outlook.Inspector> 개체의 이벤트에 대 한 이벤트 처리기입니다. 이벤트 처리기는 전자 메일 메시지가 닫힐 때 리소스를 해제 합니다. 또한 `CustomTaskPanes` 컬렉션에서 현재 사용자 지정 작업창을 제거합니다. 이렇게 하면 다음 메일 메시지가 열릴 때 사용자 지정 작업창의 여러 인스턴스를 방지할 수 있습니다.
+6. 이전 단계에서 추가한 코드 뒤에 다음 메서드를 추가합니다. 이 메서드는 현재 전자 메일 메시지를 포함 하는 <xref:Microsoft.Office.Interop.Outlook.Inspector> 개체의 <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> 이벤트에 대 한 이벤트 처리기입니다. 이벤트 처리기는 전자 메일 메시지가 닫힐 때 리소스를 해제 합니다. 또한 `CustomTaskPanes` 컬렉션에서 현재 사용자 지정 작업창을 제거합니다. 이렇게 하면 다음 메일 메시지가 열릴 때 사용자 지정 작업창의 여러 인스턴스를 방지할 수 있습니다.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#6](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#6)]
      [!code-vb[Trin_OutlookMailItemTaskPane#6](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#6)]
@@ -186,7 +184,7 @@ ms.locfileid: "71255600"
     [!code-csharp[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#10)]
     [!code-vb[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#10)]
 
-5. <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> 클래스에 다음 `ThisAddIn` 이벤트 처리기를 추가합니다. 새 <xref:Microsoft.Office.Interop.Outlook.Inspector> 에 전자 메일 메시지가 포함 된 경우 메서드는 새 `InspectorWrapper` 개체의 인스턴스를 만들어 전자 메일 메시지와 해당 작업창 간의 관계를 관리 합니다.
+5. <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> 클래스에 다음 `ThisAddIn` 이벤트 처리기를 추가합니다. 새 <xref:Microsoft.Office.Interop.Outlook.Inspector>에 전자 메일 메시지가 포함 된 경우 메서드는 새 `InspectorWrapper` 개체의 인스턴스를 만들어 전자 메일 메시지와 해당 작업창 간의 관계를 관리 합니다.
 
     [!code-csharp[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#11)]
     [!code-vb[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#11)]
@@ -264,15 +262,15 @@ ms.locfileid: "71255600"
 
 - 다른 응용 프로그램에 대해 VSTO 추가 기능에서 사용자 지정 작업창을 만듭니다. 사용자 지정 작업창을 지 원하는 응용 프로그램에 대 한 자세한 내용은 [사용자 지정 작업 창](../vsto/custom-task-panes.md)을 참조 하세요.
 
-- 사용자 지정 작업창을 사용하여 Microsoft Office 애플리케이션을 자동화합니다. 자세한 내용은 [연습: 사용자 지정 작업창](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)에서 응용 프로그램을 자동화 합니다.
+- 사용자 지정 작업창을 사용하여 Microsoft Office 애플리케이션을 자동화합니다. 자세한 내용은 [연습: 사용자 지정 작업창에서 응용 프로그램 자동화](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)를 참조 하세요.
 
-- Excel에서 사용자 지정 작업창을 숨기거나 표시하는 데 사용할 수 있는 리본 단추를 만듭니다. 자세한 내용은 [연습: 사용자 지정 작업창을 리본 단추](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)와 동기화 합니다.
+- Excel에서 사용자 지정 작업창을 숨기거나 표시하는 데 사용할 수 있는 리본 단추를 만듭니다. 자세한 내용은 [연습: 사용자 지정 작업창과 리본 단추 동기화](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [사용자 지정 작업 창](../vsto/custom-task-panes.md)
 - [방법: 응용 프로그램에 사용자 지정 작업창 추가](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
 - [연습: 사용자 지정 작업창에서 응용 프로그램 자동화](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)
-- [연습: 리본 단추를 사용 하 여 사용자 지정 작업창 동기화](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)
+- [연습: 사용자 지정 작업창과 리본 단추 동기화](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)
 - [리본 개요](../vsto/ribbon-overview.md)
 - [Outlook 개체 모델 개요](../vsto/outlook-object-model-overview.md)
 - [런타임에 리본 메뉴에 액세스](../vsto/accessing-the-ribbon-at-run-time.md)

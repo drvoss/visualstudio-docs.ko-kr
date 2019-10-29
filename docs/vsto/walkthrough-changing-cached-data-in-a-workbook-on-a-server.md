@@ -16,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 06fb2532a128384369a9f3617166c9f340f21030
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: a88fef7afe198dd15716570b1875ea257d19be8b
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551342"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985524"
 ---
 # <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>연습: 서버의 통합 문서에서 캐시 된 데이터 변경
-  이 연습에서는 클래스를 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 사용 하 여 excel을 시작 하지 않고 Microsoft Office excel 통합 문서에 캐시 되는 데이터 집합을 수정 하는 방법을 보여 줍니다.
+  이 연습에서는 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 클래스를 사용 하 여 Excel을 시작 하지 않고 Microsoft Office Excel 통합 문서에 캐시 되는 데이터 집합을 수정 하는 방법을 보여 줍니다.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "69551342"
 
 - Excel 통합 문서 프로젝트 및 콘솔 응용 프로그램 프로젝트에서 데이터 집합의 인스턴스를 만듭니다.
 
-- 통합 문서 <xref:Microsoft.Office.Tools.Excel.ListObject> 에서 데이터 집합에 바인딩된를 만들고 통합 문서를 열 때를 <xref:Microsoft.Office.Tools.Excel.ListObject> 데이터로 채웁니다.
+- 통합 문서에서 데이터 집합에 바인딩된 <xref:Microsoft.Office.Tools.Excel.ListObject>를 만들고 통합 문서를 열 때 <xref:Microsoft.Office.Tools.Excel.ListObject> 데이터로 채웁니다.
 
 - 통합 문서의 데이터 집합을 데이터 캐시에 추가 합니다.
 
@@ -47,18 +47,18 @@ ms.locfileid: "69551342"
 > [!NOTE]
 > 일부 Visual Studio 사용자 인터페이스 요소의 경우 다음 지침에 설명된 것과 다른 이름 또는 위치가 시스템에 표시될 수 있습니다. 이러한 요소는 사용하는 Visual Studio 버전 및 설정에 따라 결정됩니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>Prerequisites
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
-- [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]
 
-- AdventureWorksLT 샘플 데이터베이스가 연결 된 Microsoft SQL Server 또는 Microsoft SQL Server Express의 실행 중인 인스턴스에 대 한 액세스. [CodePlex 웹 사이트](http://go.microsoft.com/fwlink/?linkid=87843)에서 AdventureWorksLT 데이터베이스를 다운로드할 수 있습니다. 데이터베이스 연결에 대한 자세한 내용은 다음 항목을 참조하세요.
+- AdventureWorksLT 샘플 데이터베이스가 연결 된 Microsoft SQL Server 또는 Microsoft SQL Server Express의 실행 중인 인스턴스에 대 한 액세스. [SQL Server 샘플 GitHub 리포지토리](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)에서 AdventureWorksLT 데이터베이스를 다운로드할 수 있습니다. 데이터베이스 연결에 대한 자세한 내용은 다음 항목을 참조하세요.
 
-  - SQL Server Management Studio 또는 SQL Server Management Studio Express [를 사용 하 여 데이터베이스를 연결 하려면 방법: 데이터베이스 (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database)를 연결 합니다.
+  - SQL Server Management Studio 또는 SQL Server Management Studio Express를 사용 하 여 데이터베이스를 연결 하려면 [방법: 데이터베이스 연결 (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database)을 참조 하세요.
 
-  - 명령줄을 사용 하 여 데이터베이스를 연결 하려면 [방법: SQL Server Express](/previous-versions/sql/)에 데이터베이스 파일을 연결 합니다.
+  - 명령줄을 사용 하 여 데이터베이스를 연결 하려면 [방법: SQL Server Express에 데이터베이스 파일 연결](/previous-versions/sql/)을 참조 하세요.
 
 ## <a name="create-a-class-library-project-that-defines-a-dataset"></a>데이터 집합을 정의 하는 클래스 라이브러리 프로젝트 만들기
  Excel 통합 문서 프로젝트와 콘솔 응용 프로그램에서 동일한 데이터 집합을 사용 하려면 두 프로젝트 모두에서 참조 되는 별도의 어셈블리에 데이터 집합을 정의 해야 합니다. 이 연습에서는 클래스 라이브러리 프로젝트에서 데이터 집합을 정의 합니다.
@@ -81,7 +81,7 @@ ms.locfileid: "69551342"
 
 8. **확인**을 클릭합니다.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**솔루션 탐색기** 에 **AdventureWorksDataSet** 프로젝트를 추가 하 고 **Class1.cs** 또는 **Class1** 코드 파일을 엽니다.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **AdventureWorksDataSet** 프로젝트를 **솔루션 탐색기** 에 추가 하 고 **Class1.cs** 또는 **Class1** 코드 파일을 엽니다.
 
 9. **솔루션 탐색기**에서 **Class1.cs** 또는 **Class1 .vb**를 마우스 오른쪽 단추로 클릭 한 다음 **삭제**를 클릭 합니다. 이 연습에서는이 파일이 필요 하지 않습니다.
 
@@ -94,7 +94,7 @@ ms.locfileid: "69551342"
 
 1. **솔루션 탐색기**에서 **AdventureWorksDataSet** 프로젝트를 클릭 합니다.
 
-2. **데이터 소스** 창이 표시 되지 않는 경우 메뉴 모음에서**다른 Windows** > **데이터 소스** **보기** > 를 선택 하 여 표시 합니다.
+2. **데이터 소스** 창이 표시 되지 않는 경우 메뉴 모음에서 **다른 Windows** > **데이터 원본** > **보기** 를 선택 하 여 표시 합니다.
 
 3. **새 데이터 소스 추가** 를 선택하여 **데이터 소스 구성 마법사**를 시작합니다.
 
@@ -112,9 +112,9 @@ ms.locfileid: "69551342"
 
     *Adventureworksltdataset.xsd 파일이* 파일이 **AdventureWorksDataSet** 프로젝트에 추가 됩니다. 이 파일은 다음 항목을 정의합니다.
 
-   - `AdventureWorksLTDataSet`라는 형식화된 데이터 집합 이 데이터 집합은 AdventureWorksLT 데이터베이스에 있는 Product 테이블의 내용을 나타냅니다.
+   - `AdventureWorksLTDataSet`라는 형식화된 데이터 세트. 이 데이터 집합은 AdventureWorksLT 데이터베이스에 있는 Product 테이블의 내용을 나타냅니다.
 
-   - 라는 `ProductTableAdapter`TableAdapter입니다. 이 TableAdapter를 사용 하 여에서 `AdventureWorksLTDataSet`데이터를 읽고 쓸 수 있습니다. 자세한 내용은 [TableAdapter 개요](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)를 참조 하세요.
+   - 이름이 `ProductTableAdapter`TableAdapter입니다. 이 TableAdapter를 사용 하 여 `AdventureWorksLTDataSet`에서 데이터를 읽고 쓸 수 있습니다. 자세한 내용은 [TableAdapter 개요](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)를 참조 하세요.
 
      이 연습 뒷부분에서는 이러한 두 개체를 모두 사용합니다.
 
@@ -123,7 +123,7 @@ ms.locfileid: "69551342"
      프로젝트가 오류 없이 빌드되는지 확인합니다.
 
 ## <a name="create-an-excel-workbook-project"></a>Excel 통합 문서 프로젝트 만들기
- 데이터의 인터페이스에 대 한 Excel 통합 문서 프로젝트를 만듭니다. 이 연습 뒷부분에서는 데이터를 표시 하는 <xref:Microsoft.Office.Tools.Excel.ListObject> 을 만들고 통합 문서의 데이터 캐시에 데이터 집합의 인스턴스를 추가 합니다.
+ 데이터의 인터페이스에 대 한 Excel 통합 문서 프로젝트를 만듭니다. 이 연습 뒷부분에서는 데이터를 표시 하는 <xref:Microsoft.Office.Tools.Excel.ListObject>을 만들고 통합 문서의 데이터 캐시에 데이터 집합의 인스턴스를 추가 합니다.
 
 ### <a name="to-create-the-excel-workbook-project"></a>Excel 통합 문서 프로젝트를 만들려면
 
@@ -143,7 +143,7 @@ ms.locfileid: "69551342"
 
 7. **새 문서 만들기** 가 선택 되어 있는지 확인 하 고 **확인**을 클릭 합니다.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]디자이너에서 **AdventureWorksReport** 통합 문서를 열고 **솔루션 탐색기**에 **AdventureWorksReport** 프로젝트를 추가 합니다.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 디자이너에서 **AdventureWorksReport** 통합 문서를 열고 **솔루션 탐색기**에 **AdventureWorksReport** 프로젝트를 추가 합니다.
 
 ## <a name="add-the-dataset-to-data-sources-in-the-excel-workbook-project"></a>Excel 통합 문서 프로젝트에서 데이터 원본에 데이터 집합 추가
  Excel 통합 문서에 데이터 집합을 표시 하려면 먼저 Excel 통합 문서 프로젝트에서 데이터 원본에 데이터 집합을 추가 해야 합니다.
@@ -169,7 +169,7 @@ ms.locfileid: "69551342"
      **데이터 소스** 창이 열리고 **adventureworksltdataset.xsd 파일이** 이 데이터 원본 목록에 추가 됩니다.
 
 ## <a name="create-a-listobject-that-is-bound-to-an-instance-of-the-dataset"></a>데이터 집합의 인스턴스에 바인딩된 ListObject 만들기
- 통합 문서에 데이터 집합을 표시 하려면 데이터 집합 <xref:Microsoft.Office.Tools.Excel.ListObject> 의 인스턴스에 바인딩된를 만듭니다. 컨트롤을 데이터에 바인딩하는 방법에 대 한 자세한 내용은 [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)을 참조 하세요.
+ 통합 문서에 데이터 집합을 표시 하려면 데이터 집합의 인스턴스에 바인딩되는 <xref:Microsoft.Office.Tools.Excel.ListObject>을 만듭니다. 컨트롤을 데이터에 바인딩하는 방법에 대 한 자세한 내용은 [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)을 참조 하세요.
 
 ### <a name="to-create-a-listobject-that-is-bound-to-an-instance-of-the-dataset"></a>데이터 집합의 인스턴스에 바인딩된 ListObject를 만들려면
 
@@ -181,7 +181,7 @@ ms.locfileid: "69551342"
 
 3. **Product** 테이블을 A1 셀로 끕니다.
 
-     <xref:Microsoft.Office.Tools.Excel.ListObject> 이라는`productListObject` 컨트롤은 A1 셀에서 시작 하 여 워크시트에 만들어집니다. 동시에 `adventureWorksLTDataSet`라는 데이터 세트 개체와 <xref:System.Windows.Forms.BindingSource>라는 `productBindingSource`가 프로젝트에 추가됩니다. <xref:Microsoft.Office.Tools.Excel.ListObject> 가 <xref:System.Windows.Forms.BindingSource>에 바인딩된 다음 데이터 집합 개체에 바인딩됩니다.
+     `productListObject` 이라는 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤이 A1 셀에서 시작 하 여 워크시트에 만들어집니다. 동시에 `adventureWorksLTDataSet`라는 데이터 세트 개체와 <xref:System.Windows.Forms.BindingSource>라는 `productBindingSource`가 프로젝트에 추가됩니다. <xref:Microsoft.Office.Tools.Excel.ListObject>가 <xref:System.Windows.Forms.BindingSource>에 바인딩되고 데이터 세트 개체에 바인딩됩니다.
 
 ## <a name="add-the-dataset-to-the-data-cache"></a>데이터 캐시에 데이터 집합 추가
  Excel 통합 문서 프로젝트 외부의 코드를 사용 하 여 통합 문서의 데이터 집합에 액세스 하려면 데이터 집합을 데이터 캐시에 추가 해야 합니다. 데이터 캐시에 대 한 자세한 내용은 [문서 수준 사용자 지정의 캐시 된 데이터](../vsto/cached-data-in-document-level-customizations.md) 및 [캐시 데이터](../vsto/caching-data.md)를 참조 하세요.
@@ -201,7 +201,7 @@ ms.locfileid: "69551342"
 
 1. **솔루션 탐색기**에서 **Sheet1.cs** 또는 **sheet1"** 파일을 마우스 오른쪽 단추로 클릭 하 고 **코드 보기**를 클릭 합니다.
 
-2. `Sheet1_Startup` 이벤트 처리기를 다음 코드로 바꿉니다. 이 코드는 **AdventureWorksDataSet** 프로젝트에 정의 `ProductTableAdapter` 된 클래스의 인스턴스를 사용 하 여 캐시 된 데이터 집합을 현재 비어 있는 경우 데이터로 채웁니다.
+2. `Sheet1_Startup` 이벤트 처리기를 다음 코드로 바꿉니다. 이 코드는 **AdventureWorksDataSet** 프로젝트에 정의 된 `ProductTableAdapter` 클래스의 인스턴스를 사용 하 여 캐시 된 데이터 집합을 현재 비어 있는 경우 데이터로 채웁니다.
 
      [!code-csharp[Trin_CachedDataWalkthroughs#8](../vsto/codesnippet/CSharp/AdventureWorksDataSet/AdventureWorksReport/Sheet1.cs#8)]
      [!code-vb[Trin_CachedDataWalkthroughs#8](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/AdventureWorksReport/Sheet1.vb#8)]
@@ -215,9 +215,9 @@ ms.locfileid: "69551342"
 
      프로젝트가 빌드되고 통합 문서가 Excel에서 열립니다. 다음 사항을 확인합니다.
 
-    - 는 <xref:Microsoft.Office.Tools.Excel.ListObject> 데이터로 채워집니다.
+    - <xref:Microsoft.Office.Tools.Excel.ListObject> 데이터로 채워집니다.
 
-    - 의<xref:Microsoft.Office.Tools.Excel.ListObject> 첫 번째 행에 대 한 **ListPrice** 열의 값은 1431.5입니다. 이 연습의 뒷부분에서는 콘솔 응용 프로그램을 사용 하 여 **ListPrice** 열의 값을 수정 합니다.
+    - <xref:Microsoft.Office.Tools.Excel.ListObject>의 첫 번째 행에 대 한 **ListPrice** 열의 값은 1431.5입니다. 이 연습의 뒷부분에서는 콘솔 응용 프로그램을 사용 하 여 **ListPrice** 열의 값을 수정 합니다.
 
 2. 통합 문서를 저장 합니다. 파일 이름이 나 통합 문서의 위치를 수정 하지 마세요.
 
@@ -238,10 +238,10 @@ ms.locfileid: "69551342"
 
 5. **확인**을 클릭합니다.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**솔루션 탐색기** 에 **datawriter 여부** 프로젝트를 추가 하 고 **Program.cs** 또는 코드 파일을 엽니다.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **datawriter 여부** 프로젝트를 **솔루션 탐색기** 추가 하 고 **Program.cs** 또는 module1.vb 코드 파일을 **엽니다.**
 
 ## <a name="change-data-in-the-cached-dataset-by-using-the-console-application"></a>콘솔 응용 프로그램을 사용 하 여 캐시 된 데이터 집합의 데이터 변경
- 콘솔 응용 프로그램에서 `AdventureWorksLTDataSet` 클래스를사용하여데이터를로컬개체로읽고,이데이터를수정한다음,캐시된데이터집합에다시저장합니다.<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>
+ 콘솔 응용 프로그램의 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 클래스를 사용 하 여 데이터를 로컬 `AdventureWorksLTDataSet` 개체로 읽고,이 데이터를 수정한 다음 캐시 된 데이터 집합에 다시 저장 합니다.
 
 ### <a name="to-change-data-in-the-cached-dataset"></a>캐시 된 데이터 집합의 데이터를 변경 하려면
 
@@ -255,7 +255,7 @@ ms.locfileid: "69551342"
 
 5. **프로젝트** 탭에서 **AdventureWorksDataSet**를 선택 하 고 **확인**을 클릭 합니다.
 
-6. 코드 편집기에서 *Program.cs* 또는 module1.vb 파일을 엽니다.
+6. 코드 편집기에서 *Program.cs* 또는 module1.vb 파일을 *엽니다.*
 
 7. (For C#) 또는 **Imports** (for Visual Basic) 문을 **사용 하 여** 코드 파일의 맨 위에 다음을 추가 합니다.
 
@@ -264,11 +264,11 @@ ms.locfileid: "69551342"
 
 8. `Main` 메서드에 다음 코드를 추가합니다. 이 코드는 다음 개체를 선언 합니다.
 
-   - **AdventureWorksDataSet** 프로젝트에 정의 `AdventureWorksLTDataSet` 된 형식의 인스턴스입니다.
+   - **AdventureWorksDataSet** 프로젝트에 정의 된 `AdventureWorksLTDataSet` 형식의 인스턴스입니다.
 
    - **AdventureWorksReport** 프로젝트의 build 폴더에 있는 AdventureWorksReport 통합 문서에 대 한 경로입니다.
 
-   - 통합 문서의 데이터 캐시에 액세스 하는 데 사용할 개체입니다.<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>
+   - 통합 문서의 데이터 캐시에 액세스 하는 데 사용 하는 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 개체입니다.
 
      > [!NOTE]
      > 다음 코드에서는 파일 확장명이 *.xlsx* 인 통합 문서를 사용 하 고 있다고 가정 합니다. 프로젝트의 통합 문서에 다른 파일 확장명이 있는 경우 필요에 따라 경로를 수정 합니다.
@@ -276,13 +276,13 @@ ms.locfileid: "69551342"
      [!code-csharp[Trin_CachedDataWalkthroughs#6](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#6)]
      [!code-vb[Trin_CachedDataWalkthroughs#6](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#6)]
 
-9. 이전 단계에서 추가한 코드 뒤 `Main` 에 다음 코드를 메서드에 추가 합니다. 이 코드는 다음 작업을 수행합니다.
+9. 이전 단계에서 추가한 코드 뒤에 다음 코드를 `Main` 메서드에 추가 합니다. 이 코드는 다음 작업을 수행합니다.
 
-   - 이 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 클래스는 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> 클래스의 속성을 사용 하 여 통합 문서의 캐시 된 데이터 집합에 액세스 합니다.
+   - <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 클래스의 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> 속성을 사용 하 여 통합 문서의 캐시 된 데이터 집합에 액세스 합니다.
 
    - 캐시 된 데이터 집합에서 로컬 데이터 집합으로 데이터를 읽습니다.
 
-   - 데이터 집합의 `ListPrice` product 테이블에 있는 각 제품의 값을 변경 합니다.
+   - 데이터 집합의 Product 테이블에 있는 각 제품의 `ListPrice` 값을 변경 합니다.
 
    - 통합 문서에서 캐시 된 데이터 집합에 대 한 변경 내용을 저장 합니다.
 
@@ -294,7 +294,7 @@ ms.locfileid: "69551342"
      콘솔 응용 프로그램은 캐시 된 데이터 집합을 로컬 데이터 집합으로 읽고, 로컬 데이터 집합의 제품 가격을 수정 하 고, 캐시 된 데이터 집합에 새 값을 저장 하는 동안 메시지를 표시 합니다. **Enter** 키를 눌러 응용 프로그램을 닫습니다.
 
 ## <a name="test-the-workbook"></a>통합 문서 테스트
- 통합 문서를 열면는 <xref:Microsoft.Office.Tools.Excel.ListObject> 캐시 된 데이터 집합의 데이터 `ListPrice` 열에 대 한 변경 내용을 표시 합니다.
+ 통합 문서를 열 때 <xref:Microsoft.Office.Tools.Excel.ListObject>은 이제 캐시 된 데이터 집합에 있는 데이터의 `ListPrice` 열에 대 한 변경 내용을 표시 합니다.
 
 ### <a name="to-test-the-workbook"></a>통합 문서를 테스트 하려면
 
@@ -306,10 +306,10 @@ ms.locfileid: "69551342"
 
     - *%UserProfile%\Documents\AdventureWorksReport\bin\Debug* (Windows Vista의 경우)
 
-3. 의<xref:Microsoft.Office.Tools.Excel.ListObject> 첫 번째 행에 대 한 **ListPrice** 열의 값이 이제 1574.65 인지 확인 합니다.
+3. <xref:Microsoft.Office.Tools.Excel.ListObject>의 첫 번째 행에 대 한 **ListPrice** 열의 값이 이제 1574.65 인지 확인 합니다.
 
 4. 통합 문서를 닫습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [연습: 서버의 통합 문서에 데이터 삽입](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)

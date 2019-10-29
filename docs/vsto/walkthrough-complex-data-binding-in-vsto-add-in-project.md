@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: efe99e4d12ea4ace6d6c996b816dc315c502fa47
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 99caf87000ea9df9260e8926eee4c7136bc9b848
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255560"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985490"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>연습: VSTO 추가 기능 프로젝트의 복합 데이터 바인딩
   VSTO 추가 기능 프로젝트에서 호스트 컨트롤 및 Windows Forms 컨트롤에 데이터를 바인딩할 수 있습니다. 이 연습에서는 Microsoft Office Excel 워크시트에 컨트롤을 추가하고 런타임에 컨트롤을 데이터에 바인딩하는 방법을 보여 줍니다.
@@ -34,18 +34,18 @@ ms.locfileid: "71255560"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>Prerequisites
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 또는 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]
 
-- `AdventureWorksLT` 샘플 데이터베이스가 연결된 SQL Server 2005 또는 SQL Server 2005 Express의 실행 중인 인스턴스 액세스 권한 [CodePlex 웹 사이트](http://go.microsoft.com/fwlink/?LinkId=115611)에서 `AdventureWorksLT` 데이터베이스를 다운로드할 수 있습니다. 데이터베이스 연결에 대한 자세한 내용은 다음 항목을 참조하세요.
+- `AdventureWorksLT` 샘플 데이터베이스가 연결된 SQL Server 2005 또는 SQL Server 2005 Express의 실행 중인 인스턴스 액세스 권한 `AdventureWorksLT` 데이터베이스는 [GitHub 리포지토리 SQL Server 샘플](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)에서 다운로드할 수 있습니다. 데이터베이스 연결에 대한 자세한 내용은 다음 항목을 참조하세요.
 
-  - SQL Server Management Studio 또는 SQL Server Management Studio Express [를 사용 하 여 데이터베이스를 연결 하려면 방법: 데이터베이스 (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database)를 연결 합니다.
+  - SQL Server Management Studio 또는 SQL Server Management Studio Express를 사용 하 여 데이터베이스를 연결 하려면 [방법: 데이터베이스 연결 (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database)을 참조 하세요.
 
-  - 명령줄을 사용 하 여 데이터베이스를 연결 하려면 [방법: SQL Server Express](/previous-versions/sql/)에 데이터베이스 파일을 연결 합니다.
+  - 명령줄을 사용 하 여 데이터베이스를 연결 하려면 [방법: SQL Server Express에 데이터베이스 파일 연결](/previous-versions/sql/)을 참조 하세요.
 
 ## <a name="create-a-new-project"></a>새 프로젝트 만들기
  첫 번째 단계는 Excel VSTO 추가 기능 프로젝트를 만드는 것입니다.
@@ -54,7 +54,7 @@ ms.locfileid: "71255560"
 
 1. Visual Basic 또는 C#을 사용하여 **데이터베이스에서 워크시트 채우기**라는 이름으로 Excel VSTO 추가 기능 프로젝트를 만듭니다.
 
-     자세한 내용은 [방법: Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)에서 Office 프로젝트를 만듭니다.
+     자세한 내용은 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)을 참조하세요.
 
      Visual Studio에서 `ThisAddIn.vb` 또는 `ThisAddIn.cs` 파일을 열고 **데이터베이스에서 워크시트 채우기** 프로젝트를 **솔루션 탐색기**에 추가합니다.
 
@@ -63,7 +63,7 @@ ms.locfileid: "71255560"
 
 ### <a name="to-add-a-typed-dataset-to-the-project"></a>프로젝트에 형식화된 데이터 세트를 추가하려면
 
-1. **데이터 소스** 창이 표시 되지 않는 경우 메뉴 모음에서**다른 Windows** > **데이터 소스** **보기** > 를 선택 하 여 표시 합니다.
+1. **데이터 소스** 창이 표시 되지 않는 경우 메뉴 모음에서 **다른 Windows** > **데이터 원본** > **보기** 를 선택 하 여 표시 합니다.
 
 2. **새 데이터 소스 추가** 를 선택하여 **데이터 소스 구성 마법사**를 시작합니다.
 
@@ -83,7 +83,7 @@ ms.locfileid: "71255560"
 
    - `AdventureWorksLTDataSet`라는 형식화된 데이터 세트. 이 데이터 세트는 AdventureWorksLT 데이터베이스의 **Address(SalesLT)** 테이블의 내용을 나타냅니다.
 
-   - 라는 `AddressTableAdapter`TableAdapter입니다. 이 TableAdapter를 사용 하 여에서 `AdventureWorksLTDataSet`데이터를 읽고 쓸 수 있습니다. 자세한 내용은 [TableAdapter 개요](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)를 참조 하세요.
+   - 이름이 `AddressTableAdapter`TableAdapter입니다. 이 TableAdapter를 사용 하 여 `AdventureWorksLTDataSet`에서 데이터를 읽고 쓸 수 있습니다. 자세한 내용은 [TableAdapter 개요](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)를 참조 하세요.
 
      이 연습 뒷부분에서는 이러한 두 개체를 모두 사용합니다.
 
@@ -128,7 +128,7 @@ ms.locfileid: "71255560"
 
      <xref:Microsoft.Office.Tools.Excel.ListObject> 라는 `addressListObject` 컨트롤이 워크시트에 만들어집니다. 동시에 `adventureWorksLTDataSet`라는 데이터 세트 개체와 <xref:System.Windows.Forms.BindingSource>라는 `addressBindingSource`가 프로젝트에 추가됩니다. <xref:Microsoft.Office.Tools.Excel.ListObject>가 <xref:System.Windows.Forms.BindingSource>에 바인딩되고 데이터 세트 개체에 바인딩됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Office 솔루션의 데이터](../vsto/data-in-office-solutions.md)
 - [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)
@@ -137,7 +137,7 @@ ms.locfileid: "71255560"
 - [방법: 서비스의 데이터로 문서 채우기](../vsto/how-to-populate-documents-with-data-from-services.md)
 - [방법: 개체의 데이터로 문서 채우기](../vsto/how-to-populate-documents-with-data-from-objects.md)
 - [방법: 워크시트에서 데이터베이스 레코드 스크롤](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
-- [방법: 호스트 컨트롤의 데이터로 데이터 원본 업데이트](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [방법: 호스트 컨트롤의 데이터로 데이터 소스 업데이트](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
 - [연습: 문서 수준 프로젝트의 단순 데이터 바인딩](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)
 - [연습: 문서 수준 프로젝트의 복합 데이터 바인딩](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)
 - [Office 솔루션에서 로컬 데이터베이스 파일 사용 개요](../vsto/using-local-database-files-in-office-solutions-overview.md)

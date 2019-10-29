@@ -14,19 +14,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7a8a49f2b72745dac18a46fe8567578bca090834
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 1439bef59c621523b74f0e0634cd809deea1f3ee
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551501"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986070"
 ---
 # <a name="get-started-office-development-in-visual-studio"></a>시작 (Visual Studio에서 Office 개발)
   이 섹션에는 Visual Studio에서 Microsoft Office 개발자 도구 사용을 시작하는 데 도움이 되는 항목이 포함되어 있습니다.
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>이 섹션의 내용
 - [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 
  Visual Studio에서 Office 솔루션을 개발하는 데 필요한 배경 정보를 제공합니다.
@@ -88,4 +88,4 @@ ms.locfileid: "69551501"
 
  사용자에게 Office 솔루션을 제공하는 방법에 대한 정보를 제공하고 배포 방법을 선택하고 보안을 설정할 때 고려해야 하는 중요한 문제에 대해 설명합니다.
 
-- [기술 문서 및 시각적 방법 Visual Studio Tools for Office](http://go.microsoft.com/fwlink/?LinkID=106640) Visual Studio를 사용 하 여 만든 Office 솔루션에 대 한 기술 문서 및 비디오에 대 한 링크를 포함 합니다.
+- [기술 문서 및 시각적 방법 Visual Studio Tools for Office](/previous-versions/office/developer/office-2007/bb871648(v=office.12)) Visual Studio를 사용 하 여 만든 Office 솔루션에 대 한 기술 문서 및 비디오에 대 한 링크를 포함 합니다.

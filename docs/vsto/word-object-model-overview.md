@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1b8ae7c56cf6f7cb20dd237c9106498a752e267
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 71e66d6cda802b2b1243911e1927af751e2cdbe9
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254960"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985386"
 ---
 # <a name="word-object-model-overview"></a>Word 개체 모델 개요
   Visual Studio에서 Word 솔루션을 개발하는 경우 Word 개체 모델을 조작합니다. 이 개체 모델은 Word용 주 interop 어셈블리에 제공되고 <xref:Microsoft.Office.Interop.Word> 네임스페이스에서 제공되는 클래스 및 인터페이스로 구성됩니다.
@@ -74,7 +74,7 @@ ms.locfileid: "71254960"
 
  Visual Studio의 Office 개발 도구는 <xref:Microsoft.Office.Interop.Word.Document> 형식을 제공하여 <xref:Microsoft.Office.Tools.Word.Document> 개체를 확장합니다. 이 형식은 *개체의 모든 기능에 대한 액세스를 제공하고 추가 이벤트와 관리되는 컨트롤을 추가하는 기능을 추가하는* 호스트 항목 <xref:Microsoft.Office.Interop.Word.Document> 입니다.
 
- 문서 수준 프로젝트를 만드는 경우 프로젝트에서 생성된 <xref:Microsoft.Office.Tools.Word.Document> 클래스를 사용하여 `ThisDocument` 멤버에 액세스할 수 있습니다. <xref:Microsoft.Office.Tools.Word.Document> `Globals.ThisDocument` 클래스의`ThisDocument` 코드에서 Me 또는 this 키워드를 사용 하거나 클래스 외부의 코드에서를 사용 하 여 호스트 항목의 멤버에 액세스할 수 있습니다. `ThisDocument` 자세한 내용은 [문서 수준 사용자 지정 프로그래밍](../vsto/programming-document-level-customizations.md)을 참조 하세요. 예를 들어 문서의 첫 번째 단락을 선택하려면 다음 코드를 사용합니다.
+ 문서 수준 프로젝트를 만드는 경우 프로젝트에서 생성된 <xref:Microsoft.Office.Tools.Word.Document> 클래스를 사용하여 `ThisDocument` 멤버에 액세스할 수 있습니다. `ThisDocument` 클래스의 코드에서 **Me** 또는 **this** 키워드를 사용 하거나 `ThisDocument` 클래스 외부의 코드에서 `Globals.ThisDocument`를 사용 하 여 <xref:Microsoft.Office.Tools.Word.Document> 호스트 항목의 멤버에 액세스할 수 있습니다. 자세한 내용은 [문서 수준 사용자 지정 프로그래밍](../vsto/programming-document-level-customizations.md)을 참조 하세요. 예를 들어 문서의 첫 번째 단락을 선택하려면 다음 코드를 사용합니다.
 
  [!code-vb[Trin_VstcoreWordAutomation#120](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#120)]
  [!code-csharp[Trin_VstcoreWordAutomation#120](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#120)]
@@ -111,7 +111,7 @@ ms.locfileid: "71254960"
 
 - <xref:Microsoft.Office.Interop.Word.Bookmark> 개체는 문서와 함께 저장되므로 코드 실행이 중지되거나 문서를 닫을 때 삭제되지 않습니다.
 
-- 개체의 속성을 **false** 또는 **true**로 설정 하 여 책갈피를 숨기 거 나 표시할 수 있습니다. <xref:Microsoft.Office.Interop.Word.View.ShowBookmarks%2A> <xref:Microsoft.Office.Interop.Word.View>
+- <xref:Microsoft.Office.Interop.Word.View> 개체의 <xref:Microsoft.Office.Interop.Word.View.ShowBookmarks%2A> 속성을 **false** 또는 **true**로 설정 하 여 책갈피를 숨기 거 나 표시할 수 있습니다.
 
   Visual Studio는 <xref:Microsoft.Office.Interop.Word.Bookmark> 호스트 컨트롤을 제공하여 <xref:Microsoft.Office.Tools.Word.Bookmark> 개체를 확장합니다. <xref:Microsoft.Office.Tools.Word.Bookmark> 호스트 컨트롤은 네이티브 <xref:Microsoft.Office.Interop.Word.Bookmark>처럼 동작하지만 추가 이벤트 및 데이터 바인딩 기능이 있습니다. Windows Form의 텍스트 상자 컨트롤에 데이터를 바인딩하는 것과 동일한 방식으로 문서의 책갈피 컨트롤에 데이터를 바인딩할 수 있습니다. 자세한 내용은 [책갈피 컨트롤](../vsto/bookmark-control.md)을 참조 하세요.
 
@@ -119,16 +119,16 @@ ms.locfileid: "71254960"
  Word 개체 모델에 대한 자세한 내용은 Word PIA(주 interop 어셈블리) 참조 및 VBA(Visual Basic for Applications) 개체 모델 참조를 참조할 수 있습니다.
 
 ### <a name="primary-interop-assembly-reference"></a>주 interop 어셈블리 참조
- Word PIA 참조 설명서에서는 Word에 대한 주 interop 어셈블리의 형식에 대해 설명합니다. 이 설명서는 다음 위치에서 사용할 수 있습니다. [Word 2010 주 interop 어셈블리 참조](http://go.microsoft.com/fwlink/?LinkId=189588)입니다.
+ Word PIA 참조 설명서에서는 Word에 대한 주 interop 어셈블리의 형식에 대해 설명합니다. 이 설명서는 [Word 2010 주 interop 어셈블리 참조](../vsto/office-primary-interop-assemblies.md)에서 사용할 수 있습니다.
 
- Pia의 클래스와 인터페이스 간의 차이점, pia의 이벤트 구현 방식 등 Word PIA의 디자인에 대 한 자세한 내용은 [Office 주 interop 어셈블리의 클래스 및 인터페이스 개요](http://go.microsoft.com/fwlink/?LinkId=189592)를 참조 하세요.
+ Pia의 클래스와 인터페이스 간의 차이점, pia의 이벤트 구현 방식 등 Word PIA의 디자인에 대 한 자세한 내용은 [Office 주 interop 어셈블리의 클래스 및 인터페이스 개요](/previous-versions/office/office-12/ms247299(v=office.12))를 참조 하세요.
 
 ### <a name="vba-object-model-reference"></a>VBA 개체 모델 참조
- VBA 개체 모델 참조에서는 VBA 코드로 표시되는 Word 개체 모델에 대해 설명합니다. 자세한 내용은 [Word 2010 개체 모델 참조](http://go.microsoft.com/fwlink/?LinkId=199772)를 참조 하세요.
+ VBA 개체 모델 참조에서는 VBA 코드로 표시되는 Word 개체 모델에 대해 설명합니다. 자세한 내용은 [Word 2010 개체 모델 참조](/office/vba/api/overview/Word/object-model)를 참조 하세요.
 
  VBA 개체 모델 참조의 모든 개체 및 멤버는 Word PIA의 형식 및 멤버에 해당합니다. 예를 들어 VBA 개체 모델 참조의 Document 개체는 Word PIA의 <xref:Microsoft.Office.Interop.Word.Document> 개체에 해당 합니다. VBA 개체 모델 참조에서는 대부분의 속성, 메서드 및 이벤트에 대한 코드 예제를 제공하지만 Visual Studio를 사용하여 만든 Word 프로젝트에서 사용하려면 이 참조의 VBA 코드를 Visual Basic 또는 Visual C#으로 변환해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Office 주 interop 어셈블리](../vsto/office-primary-interop-assemblies.md)
 - [확장 된 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md)
 - [문서 작업](../vsto/working-with-documents.md)

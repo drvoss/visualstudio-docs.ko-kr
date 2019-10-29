@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e6346f960efe1cd3af6ad9cbd070227d9171f01
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bd1e3c3769f30806f7430bd32ddcb82db378093d
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654028"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984278"
 ---
 # <a name="customize-and-extend-a-domain-specific-language"></a>도메인별 언어 사용자 지정 및 확장
 
@@ -37,10 +37,10 @@ Visual Studio 모델링 및 시각화 SDK (VMSDK)는 모델링 도구를 정의 
 |모델 요소의 다른 클래스는 다이어그램에서 초기 높이 및 너비, 색, 도구 설명 등의 속성을 공유 하는 것과 비슷합니다.|도형 또는 연결선 클래스 간에 상속을 사용 합니다. 파생 셰이프와 파생 된 도메인 클래스 간의 매핑은 부모의 매핑 정보를 상속 합니다.<br /><br /> 또는 서로 다른 도메인 클래스를 동일한 shape 클래스에 매핑합니다.|
 |모델 요소의 클래스는 여러 셰이프 컨텍스트에 의해 표시 됩니다.|둘 이상의 shape 클래스를 동일한 도메인 클래스에 매핑합니다. 솔루션을 빌드할 때 오류 보고서를 따르고 사용할 셰이프를 결정 하는 데 필요한 코드를 제공 합니다.|
 |모양 색 또는 글꼴과 같은 기타 기능은 현재 상태를 표시 합니다.|[모델을 반영 하도록 모양 및 연결선 업데이트를](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)참조 하세요.<br /><br /> 노출 된 속성을 업데이트 하는 규칙을 만듭니다. [규칙은 모델 내에서 변경 내용 전파](../modeling/rules-propagate-changes-within-the-model.md)를 참조 하세요.<br /><br /> 또는 OnAssociatedPropertyChanged ()를 사용 하 여 링크 화살표나 글꼴과 같은 노출 되지 않는 기능을 업데이트 합니다.|
-|상태를 나타내는 셰이프 변경에 대 한 아이콘입니다.|DSL 세부 정보 창에서 데코레이터 매핑의 표시 여부를 설정 합니다. 동일한 위치에서 여러 이미지 데코레이터를 찾습니다. [모델을 반영 하도록 모양 및 연결선 업데이트를](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)참조 하세요.<br /><br /> 또는 `ImageField.GetDisplayImage()`를 재정의 합니다. @No__t_0의 예제를 참조 하세요.|
+|상태를 나타내는 셰이프 변경에 대 한 아이콘입니다.|DSL 세부 정보 창에서 데코레이터 매핑의 표시 여부를 설정 합니다. 동일한 위치에서 여러 이미지 데코레이터를 찾습니다. [모델을 반영 하도록 모양 및 연결선 업데이트를](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)참조 하세요.<br /><br /> 또는 `ImageField.GetDisplayImage()`를 재정의 합니다. <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>의 예제를 참조 하세요.|
 |모든 셰이프에 배경 이미지 설정|InitializeInstanceResources ()를 재정의 하 여 고정 된 ImageField을 추가 합니다.|
 |모든 깊이에 도형 중첩|재귀 포함 트리를 설정 합니다. 셰이프를 포함 하는 Boundsrules로를 정의 합니다.|
-|요소 경계의 고정 지점에서 커넥터를 연결 합니다.|다이어그램에서 작은 포트로 표시 되는 포함 된 터미널 요소를 정의 합니다. Boundsrules로를 사용 하 여 현재 위치의 포트를 수정 합니다. [시각화 및 모델링 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)에서 회로 다이어그램 샘플을 참조 하세요.|
+|요소 경계의 고정 지점에서 커넥터를 연결 합니다.|다이어그램에서 작은 포트로 표시 되는 포함 된 터미널 요소를 정의 합니다. Boundsrules로를 사용 하 여 현재 위치의 포트를 수정 합니다. [시각화 및 모델링 SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)에서 회로 다이어그램 샘플을 참조 하세요.|
 |텍스트 필드 다른 값에서 파생 된 값을 표시 합니다.|텍스트 데코레이터를 계산 된 저장소 도메인 속성 또는 사용자 지정 저장소 도메인 속성에 매핑합니다. 자세한 내용은 [계산 된 저장소 속성 및 사용자 지정 저장소 속성](../modeling/calculated-and-custom-storage-properties.md)을 참조 하세요.|
 |모델 요소 간 또는 모양 사이에 변경 내용 전파|[도메인 특정 언어의 유효성 검사](../modeling/validation-in-a-domain-specific-language.md)를 참조 하세요.|
 |저장소 외부의 다른 Visual Studio 확장과 같은 리소스에 변경 내용을 전파 합니다.|[이벤트 처리기가 모델 외부에서 변경 내용을 전파 하는](../modeling/event-handlers-propagate-changes-outside-the-model.md)방법을 참조 하세요.|

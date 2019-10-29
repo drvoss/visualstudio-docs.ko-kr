@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: ff92396b1ef82d0246012251c7b2c3633cd9886b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d474de7da459e9639e8ec9f29f34e59267388b50
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663688"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984419"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>연습: 생성된 지시문 프로세서에 호스트 연결
 
@@ -31,7 +31,7 @@ ms.locfileid: "72663688"
 
 이 연습에는 다음 작업이 포함됩니다.
 
-- @No__t_0를 사용 하 여 도메인 모델을 기반으로 하는 지시문 프로세서를 생성 합니다.
+- [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]를 사용 하 여 도메인 모델을 기반으로 하는 지시문 프로세서를 생성 합니다.
 
 - 사용자 지정 텍스트 템플릿 호스트를 생성 된 지시문 프로세서에 연결 합니다.
 
@@ -43,8 +43,8 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
 | | |
 |-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
-| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index) |
 | Visual Studio Visualization and Modeling SDK | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
@@ -118,7 +118,7 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
     Imports Microsoft.Win32
     ```
 
-5. @No__t_0 속성에 대 한 코드를 찾아 다음 코드로 바꿉니다.
+5. `StandardAssemblyReferences`속성에 대 한 코드를 찾아 다음 코드로 바꿉니다.
 
     > [!NOTE]
     > 이 단계에서는 호스트에서 지원 되는 생성 된 지시문 프로세서에 필요한 어셈블리에 대 한 참조를 추가 합니다.
@@ -154,7 +154,7 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
     }
     ```
 
-6. @No__t_0 함수에 대 한 코드를 찾아 다음 코드로 바꿉니다.
+6. `ResolveDirectiveProcessor`함수에 대 한 코드를 찾아 다음 코드로 바꿉니다.
 
     > [!IMPORTANT]
     > 이 코드에는 연결 하려는 생성 된 지시문 프로세서의 이름에 대 한 하드 코딩 된 참조가 포함 되어 있습니다. 이 경우 레지스트리에 나열 된 모든 지시문 프로세서를 검색 하 고 일치 하는 항목을 찾으려고 시도 하는 것이 더 일반적입니다. 이 경우 호스트는 생성 된 모든 지시문 프로세서를 사용 합니다.

@@ -16,17 +16,17 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f117b2c50bfb3a50f794236505fe02ffd8e2395b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1823fb808985d27a02dc2cac34859ea1fbca44b6
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748431"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985152"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>도메인별 언어 정의 방법
 DSL (도메인별 언어)을 정의 하려면 템플릿에서 Visual Studio 솔루션을 만듭니다. 이 솔루션의 중요한 요소는 DslDefinition.dsl에 저장되는 DSL 정의 다이어그램입니다. DSL 정의는 DSL의 클래스와 모양을 정의합니다. 이러한 요소를 수정하고 필요한 내용을 추가한 후에 프로그램 코드를 추가하여 DSL을 보다 자세하게 사용자 지정할 수 있습니다.
 
-Dsl을 처음 접하는 경우이 사이트에서 찾을 수 있는 **DSL 도구 랩을**통해 작업 하는 것이 좋습니다. [시각화 및 모델링 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+Dsl을 처음 접하는 경우이 사이트에서 찾을 수 있는 **DSL 도구 랩을**통해 작업 하는 것이 좋습니다. [시각화 및 모델링 SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)
 
 ## <a name="templates"></a>템플릿 솔루션 선택
 
@@ -607,7 +607,7 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
  [방법: 도메인별 언어의 네임 스페이스 변경을](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)참조 하세요.
 
 ## <a name="trouble"></a>슈팅이
- 아래 테이블에는 DSL을 디자인할 때 가장 흔히 발생하는 몇 가지 문제와 제안 해결 방법이 나와 있습니다. [시각화 도구 확장성 포럼](http://go.microsoft.com/fwlink/?LinkId=186074)에서 추가 조언을 사용할 수 있습니다.
+ 아래 테이블에는 DSL을 디자인할 때 가장 흔히 발생하는 몇 가지 문제와 제안 해결 방법이 나와 있습니다. [시각화 도구 확장성 포럼](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx)에서 추가 조언을 사용할 수 있습니다.
 
 | 문제점 | 제안 해결 방법 |
 |-|-|

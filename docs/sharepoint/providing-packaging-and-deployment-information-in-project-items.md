@@ -1,5 +1,5 @@
 ---
-title: 프로젝트 항목에 패키징 및 배포 정보
+title: 프로젝트 항목의 배포 정보 & 패키징
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -24,72 +24,72 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9af945ff377b30925a51875db205bcd882f4585
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: db805c308fd245554824997b24236eb2e2d80e62
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177704"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984210"
 ---
-# <a name="provide-packaging-and-deployment-information-in-project-items"></a>프로젝트 항목에 패키징 및 배포 정보를 제공 합니다.
-  모든 SharePoint 프로젝트 항목 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 프로젝트는 SharePoint에 배포 될 때 추가 데이터를 제공 하는 데 사용할 수 있는 속성이 있습니다. 속성은 다음과 같습니다.
+# <a name="provide-packaging-and-deployment-information-in-project-items"></a>프로젝트 항목에 패키징 및 배포 정보 제공
+  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]의 모든 SharePoint 프로젝트 항목에는 프로젝트가 SharePoint에 배포 될 때 추가 데이터를 제공 하는 데 사용할 수 있는 속성이 있습니다. 속성은 다음과 같습니다.
 
 - 기능 속성
 
-- 기능 수신자
+- 기능 수신기
 
 - 프로젝트 출력 참조
 
 - 안전 컨트롤 항목
 
-  이러한 속성에 표시 된 **속성** 창입니다.
+  이러한 속성은 **속성** 창에 표시 됩니다.
 
 ## <a name="feature-properties"></a>기능 속성
- 사용 된 **기능 속성** 기능을 사용 하는 데이터를 지정 하는 속성입니다. 기능 속성 데이터는 SharePoint에 배포 될 때 기능과 함께 제공 된 값 (키/값 쌍으로 저장 됨)의 집합입니다. 기능이 배포되고 나서 코드에서 속성 값에 액세스할 수 있습니다.
+ 기능 **속성** 속성을 사용 하 여 기능에서 사용 하는 데이터를 지정 합니다. 기능 속성 데이터는 SharePoint에 배포할 때 기능과 함께 포함 되는 값 집합 (키/값 쌍으로 저장 됨)입니다. 기능이 배포되고 나서 코드에서 속성 값에 액세스할 수 있습니다.
 
- 기능 속성 값을 프로젝트 항목에 추가 하면 항목의 기능의 매니페스트 요소와 값이 추가 됩니다. 데이터 연결 (BDC (비즈니스) 모델 프로젝트에서 예를 들어 ModelFileName 기능 속성으로 나타납니다.
+ 기능 속성 값을 프로젝트 항목에 추가 하면 해당 값이 항목의 기능 매니페스트에 요소로 추가 됩니다. 예를 들어 BDC (비즈니스 데이터 연결) 모델 프로젝트에서 ModelFileName 기능 속성은 다음과 같이 표시 됩니다.
 
 ```xml
 <Property Key="ModelFileName" Value="BdcModel1\BdcModel1.bdcm" />
 ```
 
- 기능 속성 값을 설정한 후 프로젝트의 FeatureProperty 요소로 추가 됩니다 *.spdata* 파일입니다. SharePoint에서 속성에 액세스 하는 방법에 대 한 내용은 [SPFeaturePropertyCollection 클래스](http://go.microsoft.com/fwlink/?LinkId=177391)합니다.
+ 기능 속성 값을 설정 하면 프로젝트의 *.spdata* 파일에 featureproperty 요소로 추가 됩니다. SharePoint의 속성에 액세스 하는 방법에 대 한 자세한 내용은 [SPFeaturePropertyCollection 클래스](/previous-versions/office/sharepoint-server/ms461895(v=office.15))를 참조 하세요.
 
- 모든 프로젝트 항목 동일 기능 속성 값은 기능 매니페스트에서 함께 병합 됩니다. 그러나 일치 하지 않는 값을 사용 하 여 동일한 기능 속성 키를 지정 하는 두 개의 다른 프로젝트 항목, 유효성 검사 오류가 발생 합니다.
+ 모든 프로젝트 항목의 동일한 기능 속성 값은 기능 매니페스트에서 함께 병합 됩니다. 그러나 두 개의 다른 프로젝트 항목에서 일치 하지 않는 값을 가진 동일한 기능 속성 키를 지정 하는 경우 유효성 검사 오류가 발생 합니다.
 
- 기능 속성 기능 파일을 직접 추가할 수 ( *.feature*)를 호출 합니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 개체 모델 메서드 <xref:Microsoft.VisualStudio.SharePoint.Features.IPropertyCollection.Add%2A>합니다. 이 메서드를 사용 하는 경우 기능 파일에 직접 추가 하는 속성에도 기능 속성에 동일한 기능 속성 값을 추가 하는 방법에 대 한 동일한 규칙이 적용 되도록 주의 합니다.
+ 기능 파일 ( *. 기능*)에 기능 속성을 직접 추가 하려면 <xref:Microsoft.VisualStudio.SharePoint.Features.IPropertyCollection.Add%2A>[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 개체 모델 메서드를 호출 합니다. 이 방법을 사용 하는 경우 기능 속성에서 동일한 기능 속성 값을 추가 하는 것과 동일한 규칙이 기능 파일에 직접 추가 된 속성에도 적용 됩니다.
 
 ## <a name="feature-receiver"></a>기능 수신기
- 기능 수신기는 프로젝트 항목에 특정 이벤트가 발생할 때 실행 되는 코드의 기능을 포함 합니다. 예를 들어, 기능을 설치, 활성화 또는 업그레이드할 때 실행 되는 기능 수신기를 정의할 수 있습니다. 에 설명 된 대로 기능에 직접 추가 하는 기능 수신기를 추가 하는 한 가지 방법은 [연습: 기능 이벤트 수신자 추가](../sharepoint/walkthrough-add-feature-event-receivers.md)합니다. 기능 수신기 클래스 이름 및 어셈블리에서 참조 하는 두 번째 방법은 합니다 **기능 수신기** 속성입니다.
+ 기능 수신기는 프로젝트 항목의 포함 기능에 대 한 특정 이벤트가 발생할 때 실행 되는 코드입니다. 예를 들어 기능이 설치, 활성화 또는 업그레이드 될 때 실행 되는 기능 수신기를 정의할 수 있습니다. 기능 수신기를 추가 하는 한 가지 방법은 [연습: 기능 이벤트 수신자 추가](../sharepoint/walkthrough-add-feature-event-receivers.md)에 설명 된 대로 기능에 직접 추가 하는 것입니다. 또 다른 **방법은 기능 수신기 속성에서** 기능 수신기 클래스 이름 및 어셈블리를 참조 하는 것입니다.
 
 ### <a name="direct-method"></a>직접 메서드
- 아래 코드 파일에 배치 됩니다 기능에 직접 기능 수신기를 추가 합니다 **기능** 솔루션 탐색기에서 노드. SharePoint 솔루션을 빌드할 때 코드를 어셈블리로 컴파일하고 SharePoint에 배포 합니다. 기능 속성은 기본적으로 **수신기 어셈블리** 하 고 **수신기 클래스** 클래스 이름 및 어셈블리를 참조 합니다.
+ 기능에 기능 수신기를 직접 추가 하는 경우 코드 파일이 솔루션 탐색기의 **기능** 노드 아래에 배치 됩니다. SharePoint 솔루션을 빌드하면 코드가 어셈블리로 컴파일되고 SharePoint에 배포 됩니다. 기본적으로 기능 속성 **수신기 어셈블리** 와 **수신자 클래스** 는 클래스 이름 및 어셈블리를 참조 합니다.
 
 ### <a name="reference-method"></a>Reference 메서드
- 기능 수신기를 추가 하는 또 다른 방법은 사용 하는 것은 **기능 수신기** 기능 수신기 어셈블리를 참조 하려면 프로젝트 항목의 속성입니다. 기능 수신기 속성 값에는 두 가지 하위에 있습니다. **어셈블리** 하 고 **클래스 이름**합니다. 해당 정규화 된 어셈블리를 사용 해야 합니다 "강력한" 이름과 클래스 이름에는 전체 형식 이름 이어야 합니다. 자세한 내용은 [강력한 이름의 어셈블리](http://go.microsoft.com/fwlink/?LinkID=169573)를 참조하세요. SharePoint에 솔루션을 배포한 후 기능 참조 된 기능 수신기를 사용 하 여 기능 이벤트를 처리 합니다.
+ 기능 수신기를 추가 하는 또 다른 방법은 프로젝트 항목의 **기능 수신기** 속성을 사용 하 여 기능 수신기 어셈블리를 참조 하는 것입니다. 기능 수신기 속성 값에는 **어셈블리** 와 **클래스 이름**이라는 두 개의 하위 속성이 있습니다. 어셈블리는 정규화 된 "강력한" 이름을 사용 해야 하며 클래스 이름은 전체 형식 이름 이어야 합니다. 자세한 내용은 [강력한 이름의 어셈블리](/previous-versions/dotnet/netframework-4.0/wd40t7ad(v=vs.100))를 참조하세요. SharePoint에 솔루션을 배포한 후이 기능은 참조 된 기능 수신기를 사용 하 여 기능 이벤트를 처리 합니다.
 
- 솔루션 빌드 시간에 기능을 기능에 받는 사람 속성 값 및 해당 프로젝트가 SharePoint 솔루션의 기능 매니페스트에서 Feature 요소에 ReceiverAssembly와 ReceiverClass 속성을 설정 하려면 병합 ( *.wsp* ) 파일입니다. 따라서 어셈블리 이름과 클래스의 속성 값을 프로젝트 항목 및 기능을 모두 지정한 경우 프로젝트 항목 및 기능 속성 값이 일치 해야 합니다. 값이 일치 하지 않는 경우 유효성 검사 오류를 받게 됩니다. 프로젝트 항목을 하려는 경우 해당 기능은 아닌 다른 기능 수신기 어셈블리 참조를 사용 하 여, 다른 기능으로 이동 합니다.
+ 솔루션 빌드 시 기능 및 해당 프로젝트의 기능 수신기 속성 값이 함께 병합 되어 SharePoint 솔루션 ( *.wsp*) 파일의 기능 매니페스트에 있는 Feature 요소의 ReceiverAssembly 및 ReceiverClass 특성을 설정 합니다. 따라서 프로젝트 항목과 기능의 어셈블리 및 클래스 이름 속성 값이 모두 지정 된 경우 프로젝트 항목과 기능 속성 값이 일치 해야 합니다. 값이 일치 하지 않으면 유효성 검사 오류가 표시 됩니다. 프로젝트 항목이 기능에서 사용 하는 것과 다른 기능 수신기 어셈블리를 참조 하도록 하려면 다른 기능으로 이동 합니다.
 
- 패키지에 자체 어셈블리 파일 포함 해야 서버에 설치 되지 않은 기능 수신기 어셈블리를을 참조 하는 경우 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 를 추가 하지 않습니다. 어셈블리 파일 시스템의 복사할 기능을 배포할 때 [!INCLUDE[TLA#tla_gac](../sharepoint/includes/tlasharptla-gac-md.md)] 또는 SharePoint 실제 디렉터리의 Bin 폴더입니다. 자세한 내용은 방법: [방법: 추가 어셈블리 추가 및 제거](../sharepoint/how-to-add-and-remove-additional-assemblies.md)합니다.
+ 서버에 없는 기능 수신기 어셈블리를 참조 하는 경우 패키지에도 어셈블리 파일을 포함 해야 합니다. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]는 추가 하지 않습니다. 이 기능을 배포 하면 어셈블리 파일이 시스템의 [!INCLUDE[TLA#tla_gac](../sharepoint/includes/tlasharptla-gac-md.md)] 또는 SharePoint 실제 디렉터리의 Bin 폴더에 복사 됩니다. 자세한 내용은 방법: [추가 어셈블리 추가 및 제거](../sharepoint/how-to-add-and-remove-additional-assemblies.md)를 참조 하세요.
 
- 기능 수신기에 대 한 자세한 내용은 참조 하세요. [기능 이벤트 수신기](http://go.microsoft.com/fwlink/?LinkID=169574) 하 고 [기능 이벤트](http://go.microsoft.com/fwlink/?LinkID=169575)합니다.
+ 기능 수신기에 대 한 자세한 내용은 [기능 이벤트 수신기](/previous-versions/office/developer/sharepoint-2007/bb862634(v=office.12)) 및 [기능 이벤트](/previous-versions/office/developer/sharepoint-2010/ms469501(v=office.14))를 참조 하세요.
 
 ## <a name="project-output-references"></a>프로젝트 출력 참조
- 프로젝트 출력 참조 속성에는 프로젝트 항목이 실행 해야 하는 어셈블리 등의 종속성을 지정 합니다. 예를 들어, BDC 프로젝트 및 클래스 프로젝트가 솔루션에 있다고 가정 합니다. BDC 프로젝트 클래스 프로젝트에서 출력 되는 어셈블리에 종속 하는 경우에 BDC 프로젝트의 프로젝트 출력 참조 속성에서 해당 어셈블리를 참조할 수 있습니다. BDC 프로젝트 패키지 되는 경우 때 종속 어셈블리는 패키지에 포함 됩니다.
+ 프로젝트 출력 참조 속성은 프로젝트 항목을 실행 해야 하는 어셈블리와 같은 종속성을 지정 합니다. 예를 들어, 솔루션에 BDC 프로젝트와 클래스 프로젝트가 있다고 가정 합니다. BDC 프로젝트가 클래스 프로젝트에 의해 출력 되는 어셈블리에 종속 되어 있는 경우 BDC 프로젝트의 프로젝트 출력 참조 속성에서 어셈블리를 참조할 수 있습니다. BDC 프로젝트를 패키지할 때 종속 어셈블리는 패키지에 포함 됩니다.
 
- 프로젝트 출력 참조 어셈블리는 일반적으로 하지만 일부 경우 (예: Silverlight 프로젝트)에서 다른 파일 형식이 될 수 있습니다.
+ 프로젝트 출력 참조는 일반적으로 어셈블리 이지만 경우에 따라 Silverlight 프로젝트와 같은 다른 파일 형식일 수 있습니다.
 
- 자세한 내용은 [방법: 프로젝트 출력 참조 추가](../sharepoint/how-to-add-a-project-output-reference.md)합니다.
+ 자세한 내용은 [방법: 프로젝트 출력 참조 추가](../sharepoint/how-to-add-a-project-output-reference.md)를 참조 하세요.
 
 ## <a name="safe-control-entries"></a>안전 컨트롤 항목
- SharePoint에는 특정 컨트롤에 신뢰할 수 없는 사용자에 대 한 액세스를 제한 하려면 안전 컨트롤 항목 이라는 보안 메커니즘을 제공 합니다. 기본적으로 SharePoint를 사용 하면 신뢰할 수 없는 SharePoint 서버에서 ASPX 페이지를 만들고 업로드 합니다. 이러한 사용자에이 게 ASPX 페이지에 안전 하지 않은 코드를 추가 하지 않도록 하려면 SharePoint에 대 한 액세스를 제한 *안전 컨트롤*합니다. 안전 컨트롤은 ASPX 컨트롤 및 웹 파트 안전한 것으로 지정 하 고 사이트에서 사용자가 사용할 수 있는 합니다. 자세한 내용은 참조 하세요. [4 단계: 안전 컨트롤 목록에 웹 파트를 추가할](http://go.microsoft.com/fwlink/?LinkID=171014)합니다.
+ SharePoint는 신뢰할 수 없는 사용자의 액세스를 특정 컨트롤로 제한 하기 위해 안전 컨트롤 항목 이라고 하는 보안 메커니즘을 제공 합니다. 기본적으로 SharePoint를 사용 하면 신뢰할 수 없는 사용자가 SharePoint 서버에서 ASPX 페이지를 업로드 하 고 만들 수 있습니다. 이러한 사용자가 안전 하지 않은 코드를 ASPX 페이지에 추가 하지 못하도록 방지 하기 위해 SharePoint는 *안전 컨트롤*에 대 한 액세스를 제한 합니다. 안전 컨트롤은 보안으로 지정 되 고 사이트의 모든 사용자가 사용할 수 있는 ASPX 컨트롤 및 웹 파트입니다. 자세한 내용은 [4 단계: 안전한 컨트롤 목록에 웹 파트 추가](/previous-versions/office/developer/sharepoint-2007/ms581321(v=office.12))를 참조 하세요.
 
- 모든 SharePoint 프로젝트 항목에 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 라는 속성이 **안전 컨트롤 항목** 하는 두 가지 부울 하위: **안전한** 하 고 **스크립트에 대해 안전**합니다. 안전 속성은 신뢰할 수 없는 사용자가 컨트롤에 액세스할 수 있는지 여부를 지정합니다. 스크립트에 대해 안전 속성에는 신뢰할 수 없는 사용자 표시 및 컨트롤의 속성을 변경할 수 있는지 여부를 지정 합니다.
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]의 모든 SharePoint 프로젝트 항목에는 **safe** 및 **Script에 대 한 안전한**두 개의 부울 하위 속성이 있는 **안전 컨트롤 항목** 이라는 속성이 있습니다. 안전 속성은 신뢰할 수 없는 사용자가 컨트롤에 액세스할 수 있는지 여부를 지정합니다. Safe for Script 속성은 신뢰할 수 없는 사용자가 컨트롤의 속성을 보고 변경할 수 있는지 여부를 지정 합니다.
 
- 안전 컨트롤 항목 어셈블리도 참조 됩니다. 프로젝트 항목에 입력 하 여 프로젝트의 어셈블리에 안전 컨트롤 항목을 추가할 **안전 컨트롤 항목** 속성입니다. 통해 프로젝트의 어셈블리에 안전 컨트롤 항목도 추가할 수 있지만 합니다 **고급** 탭에 **패키지 디자이너** 추가 어셈블리를 패키지에 추가 되는 경우. 자세한 내용은 [방법: Mark 안전 컨트롤로](../sharepoint/how-to-mark-controls-as-safe-controls.md) 나 [웹 파트 어셈블리를 안전 컨트롤로 등록](http://go.microsoft.com/fwlink/?LinkID=171013)합니다.
+ 안전 컨트롤 항목은 어셈블리를 기준으로 참조 됩니다. 프로젝트 항목의 **안전 컨트롤** 항목 속성에 입력 하 여 안전 컨트롤 항목을 프로젝트의 어셈블리에 추가 합니다. 그러나 패키지에 어셈블리를 추가 하는 경우 **패키지 디자이너** 의 **고급** 탭을 통해 프로젝트 어셈블리에 안전 컨트롤 항목을 추가할 수도 있습니다. 자세한 내용은 [방법: 컨트롤을 안전한 컨트롤로 표시](../sharepoint/how-to-mark-controls-as-safe-controls.md) 또는 [웹 파트 어셈블리를 안전 컨트롤로 등록](/previous-versions/office/developer/sharepoint2003/dd587360(v=office.11))을 참조 하세요.
 
 ### <a name="xml-entries-for-safe-controls"></a>안전 컨트롤에 대 한 XML 항목
- 프로젝트 항목 또는 프로젝트의 어셈블리에 안전 컨트롤 항목을 추가 하면 다음 형식으로 패키지 매니페스트에 대 한 참조를 기록 됩니다.
+ 프로젝트 항목 또는 프로젝트의 어셈블리에 안전 컨트롤 항목을 추가 하는 경우 참조는 다음과 같은 형식으로 패키지 매니페스트에 기록 됩니다.
 
 ```xml
 <Assemblies>
@@ -105,7 +105,7 @@ ms.locfileid: "66177704"
 </Assemblies>
 ```
 
-## <a name="see-also"></a>참고자료
-- [패키지 및 SharePoint 솔루션 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
-- [모듈을 사용 하 여 솔루션에 파일을 포함](../sharepoint/using-modules-to-include-files-in-the-solution.md)
+## <a name="see-also"></a>참조
+- [SharePoint 솔루션 패키징 및 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+- [모듈을 사용 하 여 솔루션에 파일 포함](../sharepoint/using-modules-to-include-files-in-the-solution.md)
 - [SharePoint 패키징 및 배포 확장](../sharepoint/extending-sharepoint-packaging-and-deployment.md)

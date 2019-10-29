@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3cef71cc5f6c4e25d04e6045be7059d81c06b484
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: c2d3b9ea3257db11eed766079b169a7bc81fe28a
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254936"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985374"
 ---
 # <a name="word-solutions"></a>Word 솔루션
   Visual Studio에서는 Microsoft Office Word용 VSTO 추가 기능 및 문서 수준 사용자 지정을 만드는 데 사용할 수 있는 프로젝트 템플릿을 제공합니다. 이러한 솔루션을 사용하여 Word를 자동화하고, Word 기능을 확장한 다음 Word UI(사용자 인터페이스)를 사용자 지정할 수 있습니다. 문서 수준 사용자 지정과 VSTO 추가 기능 간의 차이점에 대 한 자세한 내용은 [Office 솔루션 개발 &#40;개요 VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)를 참조 하세요.
@@ -58,7 +58,7 @@ ms.locfileid: "71254936"
 ## <a name="doclevel"></a>Word 용 문서 수준 사용자 지정 개발
  Microsoft Office Word용 문서 수준 사용자 지정은 특정 문서와 연결된 어셈블리로 구성됩니다. 어셈블리는 일반적으로 UI를 사용자 지정하고 Word를 자동화하여 문서를 확장합니다. Word 자체와 연결된 VSTO 추가 기능과 달리 사용자 지정에 구현하는 기능은 연결된 문서가 Word에서 열려 있는 경우에만 사용할 수 있습니다.
 
- Word용 문서 수준 사용자 지정 프로젝트를 만들려면 Visual Studio의 **새 프로젝트** 대화 상자에서 Word 문서 또는 Word 서식 파일 프로젝트 템플릿을 사용합니다. 자세한 내용은 [방법: Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)에서 Office 프로젝트를 만듭니다.
+ Word용 문서 수준 사용자 지정 프로젝트를 만들려면 Visual Studio의 **새 프로젝트** 대화 상자에서 Word 문서 또는 Word 서식 파일 프로젝트 템플릿을 사용합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
 
  문서 수준 사용자 지정의 작동 방식에 대 한 자세한 내용은 [문서 수준 사용자 지정의 아키텍처](../vsto/architecture-of-document-level-customizations.md)를 사용 합니다.
 
@@ -70,14 +70,14 @@ ms.locfileid: "71254936"
 ## <a name="applevel"></a>Word 용 VSTO 추가 기능 개발
  Microsoft Office Word용 VSTO 추가 기능은 Word에서 로드되는 어셈블리로 구성됩니다. 어셈블리는 일반적으로 UI를 사용자 지정하고 Word를 자동화하여 Word를 확장합니다. 특정 문서와 연결 된 문서 수준 사용자 지정과 달리 VSTO 추가 기능에서 구현 하는 기능은 단일 문서로 제한 되지 않습니다.
 
- Word용 VSTO 추가 기능 프로젝트를 만들려면 Visual Studio의 **새 프로젝트** 대화 상자에서 Word 추가 기능 프로젝트 템플릿을 사용합니다. 자세한 내용은 [방법: Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)에서 Office 프로젝트를 만듭니다.
+ Word용 VSTO 추가 기능 프로젝트를 만들려면 Visual Studio의 **새 프로젝트** 대화 상자에서 Word 추가 기능 프로젝트 템플릿을 사용합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
 
  VSTO 추가 기능이 작동하는 방법에 대한 일반적인 내용은 [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)를 참조하세요.
 
 ### <a name="word-add-in-programming-model"></a>Word 추가 기능 프로그래밍 모델
  Word VSTO 추가 기능 프로젝트를 만드는 경우 Visual Studio는 솔루션의 기초가 되는 `ThisAddIn`이라는 클래스를 생성합니다. 이 클래스는 코드를 작성하기 위한 시작점을 제공하고 VSTO 추가 기능에 Word의 개체 모델도 노출합니다.
 
- `ThisAddIn` 클래스 및 vsto 추가 기능에서 사용할 수 있는 기타 기능에 대 한 자세한 내용은 [vsto 추가 기능 프로그래밍](../vsto/programming-vsto-add-ins.md)을 참조 하세요.
+ `ThisAddIn` 클래스 및 VSTO 추가 기능에서 사용할 수 있는 기타 기능에 대 한 자세한 내용은 [Vsto 추가 기능 프로그래밍](../vsto/programming-vsto-add-ins.md)을 참조 하세요.
 
 ## <a name="UI"></a>Word의 사용자 인터페이스 사용자 지정
  Word의 사용자 인터페이스를 사용자 지정하는 여러 가지 방법이 있습니다. 모든 프로젝트 형식에서 사용할 수 있는 옵션도 있고, VSTO 추가 기능 또는 문서 수준 사용자 지정에만 사용할 수 있는 옵션도 있습니다.
@@ -115,4 +115,4 @@ ms.locfileid: "71254936"
 |[연습: Word 용 첫 문서 수준 사용자 지정 만들기](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)|Word용 기본 문서 수준 사용자 지정을 만드는 방법을 보여 줍니다.|
 |[연습: Word 용 첫 VSTO 추가 기능 만들기](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)|Word용 기본 VSTO 추가 기능을 만드는 방법을 보여 줍니다.|
 |[연습: 런타임에 VSTO 추가 기능의 문서에 컨트롤 추가](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)|VSTO 추가 기능을 사용하여 런타임에 Windows Forms 단추 및 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 을 문서에 추가하는 방법을 설명합니다.|
-|[Office 개발의 Word 2010](http://go.microsoft.com/fwlink/?LinkId=199020)|Visual Studio를 사용한 Office 개발에 국한되지 않고 Word 솔루션을 개발하는 방법에 대한 문서와 참조 설명서에 대한 링크를 제공합니다.|
+|[Office 개발의 Word 2010](/previous-versions/office/developer/office-2010/ff601860(v=office.14))|Visual Studio를 사용한 Office 개발에 국한되지 않고 Word 솔루션을 개발하는 방법에 대한 문서와 참조 설명서에 대한 링크를 제공합니다.|

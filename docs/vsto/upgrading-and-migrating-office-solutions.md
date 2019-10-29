@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d8c2ab603d11a447e64f7524358fe97592467be
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: c00d160d67fbcb5e64b6b5bd22cd886b1f4010e6
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551348"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985530"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Office 솔루션 업그레이드 및 마이그레이션
   Microsoft Office 프로젝트를 이전 버전 Visual Studio에서 만든 경우 현재 버전의 Visual Studio에서 사용하려면 프로젝트를 업그레이드해야 합니다. Microsoft Office 프로젝트를 업그레이드하려면 Microsoft Office 개발자 도구가 포함된 Visual Studio 버전에서 프로젝트를 엽니다. Microsoft Office 개발자 도구를 포함 하는 Visual Studio 버전에 대 한 자세한 내용은 [Office 솔루션을 개발할 수 있도록 컴퓨터 구성](../vsto/configuring-a-computer-to-develop-office-solutions.md)을 참조 하세요.
@@ -65,9 +65,9 @@ ms.locfileid: "69551348"
  Visual Studio 2013의 Office 프로젝트는 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 및 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 애플리케이션을 대상으로 할 수 있습니다. Visual Studio에서 설치된 최신 버전의 Office를 대상으로 하도록 프로젝트를 수정합니다. 해당 버전의 Office가 설치되어 있지 않으면 Visual Studio에서 프로젝트를 업그레이드하지 않습니다.
 
 > [!NOTE]
-> [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 이상 버전으로 vsto 추가 기능 프로젝트를 업그레이드 하는 경우 vsto 추가 기능의 `ThisAddIn_Startup` 이벤트 처리기에 응용 프로그램의 문서에 액세스 하는 코드가 포함 되어 있지 않은지 확인 합니다. 자세한 내용은 [Office 응용 프로그램이 시작 될 때 문서 액세스](../vsto/programming-vsto-add-ins.md#AccessingDocuments)를 참조 하세요.
+> [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 이상을 대상으로 하는 VSTO 추가 기능 프로젝트를 업그레이드 하는 경우 VSTO 추가 기능의 `ThisAddIn_Startup` 이벤트 처리기에 응용 프로그램의 문서에 액세스 하는 코드가 포함 되어 있지 않은지 확인 합니다. 자세한 내용은 [Office 응용 프로그램이 시작 될 때 문서 액세스](../vsto/programming-vsto-add-ins.md#AccessingDocuments)를 참조 하세요.
 
- 문서 수준 사용자 지정의 경우 [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)] 는 프로젝트에서 확장명이 *.xls* 또는 *.doc* 인 문서와 같은 이진 형식 문서를 Office Open XML 형식으로 변환 합니다. Open XML에 대 한 자세한 내용은 [새 파일 이름 확장명 및 OPEN xml 형식 소개](https://support.office.com/en-nz/article/Introduction-to-new-file-name-extensions-eca81dcb-5626-4e5b-8362-524d13ae4ec1)를 참조 하세요.
+ 문서 수준 사용자 지정의 경우는 프로젝트에서 확장명이 .xls 또는 *.doc* 인 문서와 같은 이진 형식의 문서를 OFFICE Open XML 형식으로 변환 [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)] *.* Open XML에 대 한 자세한 내용은 [새 파일 이름 확장명 및 OPEN xml 형식 소개](https://support.office.com/en-nz/article/Introduction-to-new-file-name-extensions-eca81dcb-5626-4e5b-8362-524d13ae4ec1)를 참조 하세요.
 
 > [!NOTE]
 > 스마트 태그는 Excel 2010 및 Word 2010에서 더 이상 사용되지 않습니다. 따라서 솔루션에 스마트 태그가 사용되는 경우 Visual Studio 2013 또는 Visual Studio 2015에서 솔루션을 테스트 및 디버그하기 전에 스마트 태그를 제거해야 합니다.
@@ -76,14 +76,14 @@ ms.locfileid: "69551348"
  Microsoft Office 2003을 대상으로 하는 문서 수준 사용자 지정 및 VSTO 추가 기능을 업그레이드하려면 몇 가지 사항을 추가로 고려해야 합니다.
 
 ### <a name="document-level-projects"></a>문서 수준 프로젝트
- 프로젝트의 문서에 Windows Forms 컨트롤이 있으면 프로젝트를 업그레이드하기 전에 Visual Studio 2005 Tools for Office Second Edition Runtime도 설치해야 합니다. 프로젝트를 업그레이드하기 전에 이 런타임 버전이 개발 컴퓨터에 설치되어 있지 않으면 업그레이드된 프로젝트에 컴파일 또는 런타임 오류가 포함될 수 있습니다. 프로젝트 업그레이드를 완료한 후 다른 Office 솔루션에서 사용되고 있지 않으면 개발 컴퓨터에서 Visual Studio 2005 Tools for Office Second Edition Runtime을 제거할 수 있습니다. 이 런타임 버전은 Microsoft 다운로드 센터의 [Microsoft Visual Studio 2005 Tools for Office Second Edition Runtime(VSTO 2005 SE)(x86)](http://go.microsoft.com/fwlink/?linkid=49612)에서 재배포 가능 패키지로 다운로드할 수 있습니다.
+ 프로젝트의 문서에 Windows Forms 컨트롤이 있으면 프로젝트를 업그레이드하기 전에 Visual Studio 2005 Tools for Office Second Edition Runtime도 설치해야 합니다. 프로젝트를 업그레이드하기 전에 이 런타임 버전이 개발 컴퓨터에 설치되어 있지 않으면 업그레이드된 프로젝트에 컴파일 또는 런타임 오류가 포함될 수 있습니다. 프로젝트 업그레이드를 완료한 후 다른 Office 솔루션에서 사용되고 있지 않으면 개발 컴퓨터에서 Visual Studio 2005 Tools for Office Second Edition Runtime을 제거할 수 있습니다. 이 런타임 버전은 Microsoft 다운로드 센터의 [Microsoft Visual Studio 2005 Tools for Office Second Edition Runtime(VSTO 2005 SE)(x86)](https://www.microsoft.com/download/details.aspx?id=2392)에서 재배포 가능 패키지로 다운로드할 수 있습니다.
 
 ### <a name="vsto-add-in-projects"></a>VSTO 추가 기능 프로젝트
  원래 프로젝트에 대한 솔루션 파일에 VSTO 추가 기능을 설치하도록 구성된 설치 프로그램 또는 InstallShield Limited Edition 프로젝트가 포함된 경우 Visual Studio에서 프로젝트를 업그레이드하지만 프로젝트를 추가로 변경하지 않습니다. 계속해서 Windows Installer 파일을 사용하여 VSTO 추가 기능을 배포하려면 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], Visual Studio 2010 Tools for Office Runtime 및 선택적으로 VSTO 추가 기능에서 참조되는 주 Interop 어셈블리와 같은 새로운 필수 조건을 설치하도록 설치 프로그램 또는 InstallShield Limited Edition 프로젝트를 수정해야 합니다. 자세한 내용은 [Windows Installer를 사용 하 여 Office 솔루션 배포](../vsto/deploying-an-office-solution-by-using-windows-installer.md)를 참조 하세요.
 
  ClickOnce를 사용하여 VSTO 추가 기능을 배포하려면 설치 프로그램 또는 InstallShield Limited Edition 프로젝트를 완전히 삭제할 수 있습니다. ClickOnce를 사용 하 여 VSTO 추가 기능을 배포 하는 방법에 대 한 자세한 내용은 [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [방법: Office 솔루션 업그레이드](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)
 - [.NET Framework 4 이상으로 Office 솔루션 마이그레이션](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [옵션 대화 상자, 프로젝트 업그레이드](../vsto/project-upgrade-options-dialog-box.md)

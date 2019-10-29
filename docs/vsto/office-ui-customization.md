@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e5fd0253c6ca560c58724c8a83e343164b678923
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 15c7061030bec6aebca9cdc63d0cd0e0c79cc9aa
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254150"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985701"
 ---
 # <a name="office-ui-customization"></a>Office UI 사용자 지정
   Visual Studio에서 Office 개발자 도구를 사용하여 Microsoft Office 애플리케이션의 UI(사용자 인터페이스)를 사용자 지정할 수 있습니다. 이 항목에서는 다음 섹션에서 사용자 지정할 수 있는 UI 기능에 대해 설명합니다.
@@ -48,7 +48,7 @@ ms.locfileid: "71254150"
 |작업창|문서 수준 사용자 지정|Excel<br /><br /> 단어|
 |사용자 지정 작업창|VSTO 추가 기능|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 단어<br /><br /> Excel|
 |사용자 지정 리본 UI|문서 수준 사용자 지정<br /><br /> VSTO 추가 기능|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 프로젝트<br /><br /> 단어<br /><br /> Visio|
-|Backstage 보기|문서 수준 사용자 지정<br /><br /> VSTO 추가 기능|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)].<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 프로젝트<br /><br /> 단어<br /><br /> Visio|
+|Backstage 보기|문서 수준 사용자 지정<br /><br /> VSTO 추가 기능|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 프로젝트<br /><br /> 단어<br /><br /> Visio|
 |Outlook 양식 영역|VSTO 추가 기능|Outlook|
 |문서의 컨트롤|문서 수준 사용자 지정<br /><br /> VSTO 추가 기능|Excel<br /><br /> 단어|
 |바로 가기 메뉴|문서 수준 사용자 지정<br /><br /> VSTO 추가 기능|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 프로젝트<br /><br /> 단어<br /><br /> Visio<br /><br /> Excel|
@@ -76,7 +76,7 @@ ms.locfileid: "71254150"
 
  Visual Studio에서는 Backstage 보기를 사용자 지정하기 위한 디자이너나 API를 제공하지 않습니다. 그러나 Office 프로젝트에 **리본 (xml)** 항목을 추가 하는 경우 리본 xml 파일에 xml을 추가 하 여 Backstage 보기를 사용자 지정할 수 있습니다. **리본 (xml)** 항목에 대 한 자세한 내용은 [리본 XML](../vsto/ribbon-xml.md)을 참조 하세요.
 
- Backstage 보기를 사용자 지정 하는 방법에 대 한 자세한 내용은 [개발자를 위한 office 2010 backstage 보기 소개](http://go.microsoft.com/fwlink/?LinkId=182189) 및 [개발자를 위한 office 2010 Backstage 보기 사용자 지정](http://go.microsoft.com/fwlink/?LinkId=182188)을 참조 하세요.
+ Backstage 보기를 사용자 지정 하는 방법에 대 한 자세한 내용은 [개발자를 위한 office 2010 backstage 보기 소개](/previous-versions/office/developer/office-2010/ee691833(v=office.14)) 및 [개발자를 위한 office 2010 Backstage 보기 사용자 지정](/previous-versions/office/developer/office-2010/ee815851(v=office.14))을 참조 하세요.
 
 ## <a name="FormRegion"></a>Outlook 양식 영역
  양식 영역을 사용하여 사용자 지정 기능을 표준 Microsoft Office Outlook 양식에 추가할 수 있습니다. 추가 필드나 컨트롤을 사용하여 기존 양식을 확장하는 양식 영역을 만들 수 있습니다. Visual Studio에서 Office 개발 도구를 사용하여 새 양식 영역을 만드는 경우 양식 영역에서 Windows Forms 컨트롤만 사용할 수 있습니다. Outlook에서 설계된 양식 영역을 가져오면 네이티브 Outlook 컨트롤만 사용할 수 있습니다.
@@ -93,9 +93,9 @@ ms.locfileid: "71254150"
  자세한 내용은 [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md) 및 [Office 문서의 Windows forms 컨트롤 개요](../vsto/windows-forms-controls-on-office-documents-overview.md)를 참조 하세요.
 
 ## <a name="Shortcut"></a>바로 가기 메뉴
- 바로 가기 메뉴는 문서 또는 애플리케이션 창에서 마우스 오른쪽 단추를 클릭할 때 나타납니다. 사용자가 문서, 통합 문서 또는 호스트 컨트롤을 마우스 오른쪽 단추로 클릭할 때와 같이 이벤트가 발생한 후 나타나도록 바로 가기 메뉴를 설정할 수 있습니다. 바로 가기 메뉴에 다양한 수의 메뉴 명령 또는 컨트롤을 추가할 수 있습니다. XML을 사용하여 바로 가기 메뉴를 만들 수 있습니다. Office 프로젝트에 **리본 (xml)** 항목을 추가 하는 경우 리본 xml 파일에 xml을 추가 하 여 바로 가기 메뉴를 만들 수 있습니다. XML을 사용 하 여 바로 가기 메뉴 [를 만드는 방법에 대 한 자세한 내용은 방법: 바로 가기 메뉴](../vsto/how-to-add-commands-to-shortcut-menus.md)에 명령을 추가 합니다.
+ 바로 가기 메뉴는 문서 또는 애플리케이션 창에서 마우스 오른쪽 단추를 클릭할 때 나타납니다. 사용자가 문서, 통합 문서 또는 호스트 컨트롤을 마우스 오른쪽 단추로 클릭할 때와 같이 이벤트가 발생한 후 나타나도록 바로 가기 메뉴를 설정할 수 있습니다. 바로 가기 메뉴에 다양한 수의 메뉴 명령 또는 컨트롤을 추가할 수 있습니다. XML을 사용하여 바로 가기 메뉴를 만들 수 있습니다. Office 프로젝트에 **리본 (xml)** 항목을 추가 하는 경우 리본 xml 파일에 xml을 추가 하 여 바로 가기 메뉴를 만들 수 있습니다. XML을 사용 하 여 바로 가기 메뉴를 만드는 방법에 대 한 자세한 내용은 [방법: 바로 가기 메뉴에 명령 추가](../vsto/how-to-add-commands-to-shortcut-menus.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [리본 개요](../vsto/ribbon-overview.md)
 - [Office 문서의 Windows forms 컨트롤 개요](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [작업 창 개요](../vsto/actions-pane-overview.md)

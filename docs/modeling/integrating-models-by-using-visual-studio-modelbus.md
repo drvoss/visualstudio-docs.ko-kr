@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b27abf8470527e4e5de5c05ca3438a8471b7c80e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9b5a0ad18c7b1472e8c08ccc2902cade7714f2b9
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667773"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985273"
 ---
 # <a name="integrate-models-by-using-visual-studio-modelbus"></a>Visual Studio를 사용 하 여 모델 통합 Modelbus
 
@@ -36,15 +36,13 @@ ModelBus에서는 모델 또는 모델 내의 특정 요소에 대한 고유 참
 
 ### <a name="expose"></a>모델 버스에 DSL 정의를 노출 하려면
 
-1. Visual Studio ModelBus 확장을 이미 설치하지 않은 경우 다운로드하여 설치합니다. 자세한 내용은 [시각화 및 모델링 SDK](http://go.microsoft.com/fwlink/?LinkID=185579)를 참조 하세요.
+1. DSL 정의 파일을 엽니다. 디자인 화면을 마우스 오른쪽 단추로 클릭 한 다음 **Modelbus 사용**을 클릭 합니다.
 
-2. DSL 정의 파일을 엽니다. 디자인 화면을 마우스 오른쪽 단추로 클릭 한 다음 **Modelbus 사용**을 클릭 합니다.
+2. 대화 상자에서 **ModelBus에이 DSL을 노출**하려고 합니다 .를 선택 합니다. 이 DSL을 모델에 표시하는 동시에 다른 DSL에 대한 참조도 사용하려는 경우 두 옵션을 모두 선택하면 됩니다.
 
-3. 대화 상자에서 **ModelBus에이 DSL을 노출**하려고 합니다 .를 선택 합니다. 이 DSL을 모델에 표시하는 동시에 다른 DSL에 대한 참조도 사용하려는 경우 두 옵션을 모두 선택하면 됩니다.
+3. **확인**을 클릭합니다. "ModelBusAdapter"라는 새 프로젝트가 DSL 솔루션에 추가됩니다.
 
-4. **확인**을 클릭합니다. "ModelBusAdapter"라는 새 프로젝트가 DSL 솔루션에 추가됩니다.
-
-5. 텍스트 템플릿에서 DSL에 액세스하려면 새 프로젝트에서 AdapterManager.tt를 수정해야 합니다. 명령 및 이벤트 처리기와 같은 기타 코드에서 DSL에 액세스하려면 이 단계를 생략합니다. 자세한 내용은 [텍스트 템플릿에서 Visual Studio ModelBus 사용](../modeling/using-visual-studio-modelbus-in-a-text-template.md)을 참조 하세요.
+4. 텍스트 템플릿에서 DSL에 액세스하려면 새 프로젝트에서 AdapterManager.tt를 수정해야 합니다. 명령 및 이벤트 처리기와 같은 기타 코드에서 DSL에 액세스하려면 이 단계를 생략합니다. 자세한 내용은 [텍스트 템플릿에서 Visual Studio ModelBus 사용](../modeling/using-visual-studio-modelbus-in-a-text-template.md)을 참조 하세요.
 
    1. AdapterManagerBase의 기본 클래스를 [VsTextTemplatingModelingAdapterManager](/previous-versions/ee844317(v=vs.140))로 변경 합니다.
 
@@ -56,9 +54,9 @@ ModelBus에서는 모델 또는 모델 내의 특정 요소에 대한 고유 참
 
       텍스트 템플릿과 기타 코드에서 모두 DSL에 액세스하려면 어댑터 두 개(수정된 어댑터와 수정되지 않은 어댑터)가 필요합니다.
 
-6. **모든 템플릿 변환**을 클릭 합니다.
+5. **모든 템플릿 변환**을 클릭 합니다.
 
-7. 솔루션을 다시 빌드합니다.
+6. 솔루션을 다시 빌드합니다.
 
    이제 ModelBus에서 이 DSL의 인스턴스를 열 수 있습니다.
 
@@ -76,9 +74,9 @@ Visual Studio ModelBus 어댑터는 기본적으로 요소의 guid를 사용 하
 
 3. ModelBus 참조를 만들 각 클래스에 대해 다음 작업을 수행합니다.
 
-    클래스 노드를 클릭 하 고 속성 창에서 **Serialize Id** 가 `true`로 설정 되었는지 확인 합니다.
+    클래스 노드를 클릭 하 고 속성 창에서 **SERIALIZE ID** 가 `true`로 설정 되었는지 확인 합니다.
 
-   또는 GUID가 아닌 요소 이름을 사용하여 요소를 식별하려는 경우에는 생성된 어댑터 부분을 재정의할 수 있습니다. 어댑터 클래스에서 다음 메서드를 재정의합니다.
+   또는 요소 이름을 사용 하 여 Guid 대신 요소를 식별 하려는 경우 생성 된 어댑터의 일부를 재정의할 수 있습니다. 어댑터 클래스에서 다음 메서드를 재정의합니다.
 
 - 사용하려는 식별자를 반환하도록 `GetElementId`를 재정의합니다. 참조를 만들 때 이 메서드를 호출합니다.
 
@@ -124,7 +122,7 @@ DSL에서 다른 DSL에 대 한 참조를 사용할 수 있도록 하려면 먼�
 
 2. 모델 또는 모델 내의 요소에 대 한 적절 한 **종류의 ModelBusReference**를 선택 합니다.
 
-3. 파일 대화 상자의 필터 문자열에 `Family Tree files |*.ftree` 등의 문자열을 입력합니다. 표시된 DSL의 파일 확장명을 바꿉니다.
+3. 파일 대화 상자의 필터 문자열에 `Family Tree files |*.ftree` 등의 문자열을 입력합니다. 노출 된 DSL의 파일 확장명을 대체 합니다.
 
 4. 모델의 요소를 참조하려는 경우 Company.FamilyTree.Person과 같이 사용자가 선택할 수 있는 형식의 목록을 추가할 수 있습니다.
 

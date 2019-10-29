@@ -1,5 +1,5 @@
 ---
-title: '방법: Visual Studio Tools for Office 런타임 재배포 가능 패키지를 설치 합니다.'
+title: '방법: Visual Studio Tools for Office 런타임 재배포 가능 패키지 설치'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 08/14/2019
@@ -15,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d9bb53fbdc3d6766dab47c654f0a43ad902b2f3
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 801486e7c0abfa2cb91f7fb7237cf3a48e8bc916
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551831"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985914"
 ---
-# <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>방법: Visual Studio Tools for Office 런타임 재배포 가능 패키지를 설치 합니다.
-  에서 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Microsoft Office 개발자 도구를 사용 하 여 만든 솔루션을 실행 하는 각 컴퓨터에 Visual Studio 2010 Tools for Office runtime을 설치 해야 합니다. 런타임은 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 및 Microsoft Office를 설치할 때 자동으로 설치됩니다. 자세한 내용은 [Visual Studio Tools for Office 런타임 설치 시나리오](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)를 참조 하세요.
+# <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>방법: Visual Studio Tools for Office 런타임 재배포 가능 패키지 설치
+  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 Microsoft Office 개발자 도구를 사용 하 여 만든 솔루션을 실행 하는 각 컴퓨터에 Visual Studio 2010 Tools for Office runtime을 설치 해야 합니다. 런타임은 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 및 Microsoft Office를 설치할 때 자동으로 설치됩니다. 자세한 내용은 [Visual Studio Tools for Office 런타임 설치 시나리오](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)를 참조 하세요.
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
@@ -40,19 +40,19 @@ ms.locfileid: "69551831"
 
 1. [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 이상을 설치합니다.
 
-    - 를 다운로드 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]하려면 [Microsoft .NET Framework 4 (웹 설치 관리자)](http://go.microsoft.com/fwlink/?LinkId=178957)를 참조 하세요.
+    - [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]를 다운로드 하려면 [Microsoft .NET Framework 4 (웹 설치 관리자)](https://www.microsoft.com/download/details.aspx?id=17851)를 참조 하세요.
 
-    - 을 다운로드 [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]하려면 [Microsoft .NET Framework 4 클라이언트 프로필 (웹 설치 관리자)](http://go.microsoft.com/fwlink/?LinkId=178958)을 참조 하세요.
+    - [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]를 다운로드 하려면 [Microsoft .NET Framework 4 클라이언트 프로필 (웹 설치 관리자)](https://www.microsoft.com/download/details.aspx?id=17113)을 참조 하세요.
 
-    - 을 다운로드 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]하려면 [Microsoft .NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653)을 참조 하세요.
+    - [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]를 다운로드 하려면 [Microsoft .NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653)을 참조 하세요.
 
-2. *Vstor_redist* 를 실행 하 여를 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]설치 합니다.
+2. *Vstor_redist* 를 실행 하 여 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]를 설치 합니다.
 
-     이러한 설치 파일은 [Visual Studio 2010 Tools For Office runtime](http://go.microsoft.com/fwlink/?LinkId=140384)에서 다운로드할 수 있습니다. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]에 대한 필수 구성 요소는 .NET Framework에 대한 필수 구성 요소와 일치합니다.
+     이러한 설치 파일은 [Visual Studio 2010 Tools For Office runtime](https://www.microsoft.com/download/details.aspx?id=56961)에서 다운로드할 수 있습니다. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]에 대한 필수 구성 요소는 .NET Framework에 대한 필수 구성 요소와 일치합니다.
 
-     [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]에는 언어 팩이 포함되어 있습니다. Windows 설치가 영어 이외의 언어로 설정된 경우 Windows에 사용하는 동일한 언어로 런타임 메시지를 표시할 수 있습니다. 이와 마찬가지로 최종 사용자가 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]을 설치하고 영어 이외의 언어로 설정된 Windows 설치에서 솔루션을 실행하는 경우 런타임 메시지가 Windows와 동일한 언어로 표시됩니다. 경우에 따라 추가 언어 팩이 필요할 수 있습니다. 예를 들어 Windows 복사본이 둘 이상의 언어 설정을 사용 하거나를 이미 설치한 후 다른 언어로 전환 하는 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]경우 추가 언어 팩이 필요할 수 있습니다. [Microsoft Office 시스템 (버전 4.0 런타임) 언어 팩 Microsoft Visual Studio 2010 도구](http://go.microsoft.com/fwlink/?LinkId=140386)에서 언어 팩을 찾을 수 있습니다.
+     [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]에는 언어 팩이 포함되어 있습니다. Windows 설치가 영어 이외의 언어로 설정된 경우 Windows에 사용하는 동일한 언어로 런타임 메시지를 표시할 수 있습니다. 이와 마찬가지로 최종 사용자가 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]을 설치하고 영어 이외의 언어로 설정된 Windows 설치에서 솔루션을 실행하는 경우 런타임 메시지가 Windows와 동일한 언어로 표시됩니다. 경우에 따라 추가 언어 팩이 필요할 수 있습니다. 예를 들어 Windows 복사본이 둘 이상의 언어 설정을 사용 하거나 이미 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]를 설치한 후 다른 언어로 전환 하는 경우 추가 언어 팩이 필요할 수 있습니다. [Microsoft Office 시스템 (버전 4.0 런타임) 언어 팩 Microsoft Visual Studio 2010 도구](https://www.microsoft.com/download/details.aspx?id=54246)에서 언어 팩을 찾을 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [Visual Studio &#40;에서 Office 개발 시작 하기&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Office 솔루션을 개발할 수 있도록 컴퓨터 구성](../vsto/configuring-a-computer-to-develop-office-solutions.md)
 - [방법: Office 솔루션을 개발할 수 있도록 컴퓨터 구성](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)

@@ -28,12 +28,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c294ce3c6dcf3a880cf5f57ca825064366e08e2b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 736b203feb5b1a640d7865b92a6d3ad191397d26
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668227"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985038"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Visual Studio에서 디버깅하는 동안 호출 스택의 맵 메서드
 
@@ -59,7 +59,7 @@ ms.locfileid: "72668227"
 
   참조
 
-- [비디오: 코드 맵 디버거 통합으로 시각적으로 디버그 (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
+- [비디오: 코드 맵 디버거 통합으로 시각적으로 디버그 (Channel 9)](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012Debug-visually-with-Code-Map-debugger-integration)
 
 - [호출 스택 매핑](#MapStack)
 
@@ -178,7 +178,7 @@ ms.locfileid: "72668227"
 
 - **새 호출 스택이 자동으로 추가 되지 않도록 어떻게 할까요? 지도를 중지 하 시겠습니까?**
 
-   맵 도구 &#45; 모음에서 자동으로 ](../debugger/media/debuggermap_automaticupdateicon.gif) 코드 맵에 호출 스택 표시 ![Button 선택 합니다. 현재 호출 스택을 맵에 수동으로 추가 하려면 **ctrl**  + **shift**  +  **`** 를 누릅니다.
+   맵 도구 모음 &#45; 에서](../debugger/media/debuggermap_automaticupdateicon.gif)자동으로 코드 맵에 호출 스택 표시 ![단추를 선택 합니다. 현재 호출 스택을 맵에 수동으로 추가 하려면 **ctrl**  + **shift**  +  **`** 를 누릅니다.
 
    디버그 하는 동안 맵은 맵의 기존 호출 스택을 계속 강조 표시 합니다.
 

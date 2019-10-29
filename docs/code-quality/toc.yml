@@ -751,6 +751,8 @@
                   href: ca5397.md
                 - name: 'CA5398: SslProtocols 값을 하드 코딩하지 마세요.'
                   href: ca5398.md
+                - name: 'CA5403: 인증서 하드 코딩 안 함'
+                  href: ca5403.md
             - name: 사용법 경고
               items:
                 - name: 개요

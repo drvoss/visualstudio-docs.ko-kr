@@ -15,16 +15,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7b80db6f8f54c897a370d53db56773ad8296f6e
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 6159cd2afc5788e12a836c138ddcc1ea967a5381
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255787"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986334"
 ---
 # <a name="accessibility-in-office-projects"></a>Office 프로젝트의 내게 필요한 옵션
 
-Microsoft Visual Studio 및 Microsoft Office에는 표준 접근성 요구 사항을 충족 하는 사용자 지정 솔루션을 빌드할 수 있는 많은 내게 필요한 옵션 기능이 포함 되어 있습니다. Microsoft는 웹에서 내게 필요한 옵션에 대 한 지침을 게시 합니다. 자세한 내용은 [내게 필요한 옵션 웹 사이트](http://go.microsoft.com/fwlink/?LinkID=37113)를 참조 하세요.
+Microsoft Visual Studio 및 Microsoft Office에는 표준 접근성 요구 사항을 충족 하는 사용자 지정 솔루션을 빌드할 수 있는 많은 내게 필요한 옵션 기능이 포함 되어 있습니다. Microsoft는 웹에서 내게 필요한 옵션에 대 한 지침을 게시 합니다. 자세한 내용은 [내게 필요한 옵션 웹 사이트](https://www.microsoft.com/accessibility/)를 참조 하세요.
 
 대부분의 경우 Visual Studio의 Office 프로젝트는 접근성 표준을 충족 하거나 솔루션에 액세스할 수 있도록 설정할 수 있는 속성을 노출 합니다. 그러나 액세스 가능성이 제한 된 일부 기능이 있습니다.
 
@@ -84,7 +84,7 @@ Visual Studio에는 디스플레이 모드와 관련 된 다음과 같은 제한
 
 돋보기를 사용 하 여 이러한 제한을 극복할 수 있습니다. 돋보기는 화면의 확대 된 부분을 표시 하는 별도의 창을 만드는 창에 표시 되는 유틸리티입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Office 솔루션 개발](../vsto/developing-office-solutions.md)
 - [Office 문서의 컨트롤](../vsto/controls-on-office-documents.md)

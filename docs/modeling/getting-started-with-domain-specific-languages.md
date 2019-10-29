@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfdd1e1eb040960032cc04f8c47f3f28e929b678
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c86383ddc833a6b76affa451f21180ed4941ad14
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667293"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985046"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>도메인 특정 언어 시작
 
@@ -21,7 +21,7 @@ ms.locfileid: "72667293"
 > [!NOTE]
 > Visual Studio의 특정 기능을 설치 하면 텍스트 템플릿 변환 SDK 및 Visual Studio 모델링 SDK가 자동으로 설치 됩니다. 자세한 내용은 [이 블로그 게시물](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)을 참조 하세요.
 
-Dsl을 처음 접하는 경우이 사이트에서 찾을 수 있는 **DSL 도구 랩을**통해 작업 하는 것이 좋습니다. [시각화 및 모델링 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+Dsl을 처음 접하는 경우이 사이트에서 찾을 수 있는 **DSL 도구 랩을**통해 작업 하는 것이 좋습니다. [시각화 및 모델링 SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>도메인 특정 언어로 무엇을 할 수 있나요?
 
@@ -43,8 +43,8 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
 | | |
 |-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
-| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index) |
 | Visual Studio 용 모델링 SDK | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
@@ -153,7 +153,7 @@ Visual Studio의 디버깅 인스턴스에서 탐색기가 표시 되지 않으�
 
 DSL은 DSL 인스턴스인 모델을 읽고 업데이트 하는 데 사용할 수 있는 API를 생성 합니다. API의 한 가지 응용 프로그램은 모델에서 텍스트 파일을 생성 하는 것입니다. 자세한 내용은 [T4 텍스트 템플릿을 사용 하 여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)을 참조 하세요.
 
-디버깅 솔루션에서 확장명이 ".tt" 인 템플릿 파일을 엽니다. 이러한 샘플은 모델에서 텍스트를 생성 하는 방법을 보여 주며 DSL의 API를 테스트 하는 데 사용할 수 있습니다. 샘플 중 하나는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]의 다른 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 작성 됩니다.
+디버깅 솔루션에서 확장명이 ".tt" 인 템플릿 파일을 엽니다. 이러한 샘플은 모델에서 텍스트를 생성 하는 방법을 보여 주며 DSL의 API를 테스트 하는 데 사용할 수 있습니다. 샘플 중 하나는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]의 다른 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]작성 됩니다.
 
 각 템플릿 파일은 생성 되는 파일입니다. 솔루션 탐색기에서 템플릿 파일을 확장 하 고 생성 된 파일을 엽니다.
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f441cb5e6f8febf374a9ea024db9bec95960e11b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 6185b080967c83be827e34baddfe5b37554398ff
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444853"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024681"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: 잠금 경합의 비율이 매우 높습니다.
 
@@ -35,9 +35,9 @@ ms.locfileid: "63444853"
  프로파일링 데이터와 함께 수집되는 시스템 성능 데이터가 애플리케이션 실행 중에 발생한 잠금 경합의 비율이 지나치게 높다는 것을 나타냅니다. 동시성 프로파일링 방법을 통해 다시 프로파일링하여 경합의 원인을 찾아 보세요.
 
 ## <a name="rule-description"></a>규칙 설명
- 다중 스레드 애플리케이션에서 한 번에 스레드 하나씩 직렬로 실행되어야 하는 코드의 임계 영역을 보호하는 데 잠금을 사용합니다. Microsoft .NET CLR(공용 언어 런타임)는 동기화 및 잠금 기본 형식의 전체 집합을 제공합니다. 예를 들어 C# 언어는 잠금 문(Visual Basic의 경우 SyncLock)을 지원합니다. 관리되는 애플리케이션은 System.Threading 네임스페이스에서 Monitor.Enter 및 Monitor.Exit 메서드를 호출하여 잠금을 직접 획득 및 해제할 수 있습니다. .NET Framework는 Mutex, ReaderWriterLock 및 Semaphore를 지원하는 클래스를 비롯하여 추가적인 동기화 및 잠금 기본 형식을 지원합니다. 자세한 내용은 MSDN 웹 사이트에 있는 .NET Framework 개발자 가이드에서 [동기화 기본 형식 개요](http://go.microsoft.com/fwlink/?LinkId=177867)를 참조하세요. .NET Framework 클래스는 Windows 운영 체제에 기본 제공되는 하위 수준 동기화 서비스 위에 계층화됩니다. 이러한 클래스에는 임계 영역 개체와 많은 다양한 Wait 및 이벤트 알림 함수가 포함됩니다. 자세한 내용은 MSDN 라이브러리에서 Win32 및 COM 개발의 [Synchronization](http://go.microsoft.com/fwlink/?LinkId=177869)(동기화) 섹션을 참조하세요.
+ 다중 스레드 애플리케이션에서 한 번에 스레드 하나씩 직렬로 실행되어야 하는 코드의 임계 영역을 보호하는 데 잠금을 사용합니다. Microsoft .NET CLR(공용 언어 런타임)는 동기화 및 잠금 기본 형식의 전체 집합을 제공합니다. 예를 들어 C# 언어는 잠금 문(Visual Basic의 경우 SyncLock)을 지원합니다. 관리되는 애플리케이션은 System.Threading 네임스페이스에서 Monitor.Enter 및 Monitor.Exit 메서드를 호출하여 잠금을 직접 획득 및 해제할 수 있습니다. .NET Framework는 Mutex, ReaderWriterLock 및 Semaphore를 지원하는 클래스를 비롯하여 추가적인 동기화 및 잠금 기본 형식을 지원합니다. 자세한 내용은 MSDN 웹 사이트에 있는 .NET Framework 개발자 가이드에서 [동기화 기본 형식 개요](/dotnet/standard/threading/overview-of-synchronization-primitives)를 참조하세요. .NET Framework 클래스는 Windows 운영 체제에 기본 제공되는 하위 수준 동기화 서비스 위에 계층화됩니다. 이러한 클래스에는 임계 영역 개체와 많은 다양한 Wait 및 이벤트 알림 함수가 포함됩니다. 자세한 내용은 MSDN 라이브러리에서 Win32 및 COM 개발의 [Synchronization](/windows/win32/sync/synchronization)(동기화) 섹션을 참조하세요.
 
- 동기화와 잠금에 사용되는 기본적인 .NET Framework 클래스와 네이티브 Windows 개체는 둘 다 연동 작업을 사용하여 변경해야 하는 공유 메모리 위치입니다. 연동 작업은 공유 메모리 위치에서 작동하는 하드웨어 관련 명령을 사용하여 원자성 작업을 통해 해당 상태를 변경합니다. 원자성 작업은 컴퓨터의 모든 프로세서에서 일관성이 있어야 합니다. Lock 및 WaitHandle은 설정되거나 재설정될 때 자동으로 연동 작업을 사용하는 .NET 개체입니다. 스레드로부터 안전한 방식으로 업데이트하기 위해 연동 작업을 사용해야 하는 애플리케이션에 다른 공유 메모리 데이터 구조가 있을 수 있습니다. 자세한 내용은 MSDN 라이브러리의 .NET Framework 섹션에서 [연동 작업](http://go.microsoft.com/fwlink/?LinkId=177870)을 참조하세요.
+ 동기화와 잠금에 사용되는 기본적인 .NET Framework 클래스와 네이티브 Windows 개체는 둘 다 연동 작업을 사용하여 변경해야 하는 공유 메모리 위치입니다. 연동 작업은 공유 메모리 위치에서 작동하는 하드웨어 관련 명령을 사용하여 원자성 작업을 통해 해당 상태를 변경합니다. 원자성 작업은 컴퓨터의 모든 프로세서에서 일관성이 있어야 합니다. Lock 및 WaitHandle은 설정되거나 재설정될 때 자동으로 연동 작업을 사용하는 .NET 개체입니다. 스레드로부터 안전한 방식으로 업데이트하기 위해 연동 작업을 사용해야 하는 애플리케이션에 다른 공유 메모리 데이터 구조가 있을 수 있습니다. 자세한 내용은 MSDN 라이브러리의 .NET Framework 섹션에서 [연동 작업](/dotnet/api/system.threading.interlocked)을 참조하세요.
 
  동기화와 잠금은 다중 스레드 애플리케이션이 제대로 실행되게 하는 데 사용되는 메커니즘입니다. 다중 스레드 애플리케이션의 각 스레드는 운영 체제에 의해 독립적으로 예약되는 독립 실행 단위입니다. 또 다른 스레드가 잠금을 유지하고 있기 때문에 잠금 획득을 시도하는 스레드가 지연될 때마다 잠금 경합이 발생합니다.
 

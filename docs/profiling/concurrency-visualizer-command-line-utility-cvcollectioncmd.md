@@ -10,21 +10,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09222971ea5150b280014d85f801a82a8eccc5d2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 2721798ee9f0c7e006acdedbecaecbd56068be3f
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406142"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911212"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>동시성 시각화 도우미 명령줄 유틸리티(CVCollectionCmd)
 동시성 시각화 도우미 명령줄 유틸리티(*CVCollectionCmd.exe*)를 사용하면 명령줄에서 추적을 수집하여 Visual Studio용 동시성 시각화 도우미에서 확인할 수 있습니다. 이러한 도구는 Visual Studio가 설치되어 있지 않은 컴퓨터에서도 사용할 수 있습니다.
 
 > [!NOTE]
-> Visual Studio 2013부터 동시성 시각화 도우미는 선택적 확장입니다. (이전에는 Visual Studio에 포함되었습니다.) 다운로드 센터에서 [Visual Studio 2015용 동시성 시각화 수집 도구](http://www.microsoft.com/download/details.aspx?id=49103)를 다운로드할 수 있습니다.
+> Visual Studio 2013부터 동시성 시각화 도우미는 선택적 확장입니다. (이전에는 Visual Studio에 포함되었습니다.) 다운로드 센터에서 [Visual Studio 2015용 동시성 시각화 수집 도구](https://www.microsoft.com/download/details.aspx?id=49103)를 다운로드할 수 있습니다.
 
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>동시성 시각화 도우미 명령줄 유틸리티 다운로드
- 명령줄 유틸리티를 다운로드하여 설치하려면 Microsoft 다운로드 센터 웹 사이트에서 [Visual Studio 2015용 동시성 시각화 수집 도구](http://www.microsoft.com/download/details.aspx?id=49103) 로 이동한 후 아래 지침을 따르세요. 기본적으로 *CVCollectionCmd.exe*는 %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\(%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ on x64 computers)에 설치됩니다.
+ 명령줄 유틸리티를 다운로드하여 설치하려면 Microsoft 다운로드 센터 웹 사이트에서 [Visual Studio 2015용 동시성 시각화 수집 도구](https://www.microsoft.com/download/details.aspx?id=49103) 로 이동한 후 아래 지침을 따르세요. 기본적으로 *CVCollectionCmd.exe*는 %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\(%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ on x64 computers)에 설치됩니다.
 
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>CVCollectionCmd를 사용하여 추적 수집
  CVCollectionCmd를 사용하여 앱을 시작하거나 CVCollectionCmd에 연결하여 추적을 수집할 수 있습니다. 옵션은 아래의 명령 참조를 참조하세요. 예
@@ -68,10 +68,10 @@ ms.locfileid: "63406142"
 | MinorVersion | 구성 파일의 부 버전을 지정합니다. | [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 프로젝트의 경우 0이어야 합니다. 0이 아니면 유틸리티가 작동하지 않습니다. |
 | IncludeEnvSymbolPath | 환경 기호 경로(_NT_SYMBOL_PATH)를 사용할지 여부를 결정하는 값을 설정합니다. | -   True<br />-   False |
 | DeleteEtlsAfterAnalysis | 분석이 완료되면 ETL 파일을 삭제할지 여부를 결정하는 값을 설정합니다. | -   True<br />-   False |
-| SymbolPath | 기호 서버의 경로를 지정합니다. 자세한 내용은 [Microsoft 기호 서버를 사용하여 디버그 기호 파일 얻기](http://go.microsoft.com/fwlink/?LinkID=149389)를 참조하세요. | 디렉터리 이름 또는 URL |
+| SymbolPath | 기호 서버의 경로를 지정합니다. 자세한 내용은 [Microsoft 기호 서버를 사용하여 디버그 기호 파일 얻기](/windows/win32/dxtecharts/debugging-with-symbols)를 참조하세요. | 디렉터리 이름 또는 URL |
 | Markers | 표식 공급자 목록을 포함합니다. | MarkerProvider 요소를 0개 이상 포함할 수 있습니다. |
 | MarkerProvider | 단일 표식 공급자를 지정합니다. | 다음 요소를 포함해야 합니다.<br /><br /> -   Level<br />-   GUID<br />-   Name<br /><br /> 다음 요소를 포함할 수 있습니다.<br /><br /> -   Categories<br />-   IsEnabled |
-| 수준 | MarkerProvider의 중요도 수준을 설정합니다. | -   Low<br />-   Normal<br />-   High<br />-   Critical<br />-   Everything |
+| Level | MarkerProvider의 중요도 수준을 설정합니다. | -   Low<br />-   Normal<br />-   High<br />-   Critical<br />-   Everything |
 | GUID | ETW 표식 공급자의 고유한 전역 식별자입니다. | GUID |
 | name | 표식 공급자에 대한 설명을 지정합니다. | 문자열 |
 | 범주 | 표식 공급자에 대해 수집된 범주를 지정합니다. | 쉼표로 구분된 숫자 문자열 또는 숫자 범위 |
@@ -91,7 +91,7 @@ ms.locfileid: "63406142"
 | JustMyCode | 내 코드만 디렉터리의 목록을 지정합니다. | MyCodeDirectory 요소 0개 이상으로 구성된 목록 |
 | MyCodeDirectory | 코드가 포함된 디렉터리를 지정합니다. | 절대 경로 |
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
  처음부터 구성 파일을 만드는 대신 다음 예제를 복사한 다음 요구 사항에 맞춰 수정할 수 있습니다.
 
 ```xml

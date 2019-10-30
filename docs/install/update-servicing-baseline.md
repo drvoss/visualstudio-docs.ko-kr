@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ca8aaf0af2ad7374137752783b242a40e94f706c
-ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
+ms.openlocfilehash: 4e84704d4ca37dd9e36da3838b5b1b23f068568c
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68300541"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888586"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>서비스 기준선에서 Visual Studio 업데이트
 
@@ -28,7 +28,7 @@ ms.locfileid: "68300541"
 
 엔터프라이즈 관리자는 해당 클라이언트를 서비스 기준선에 유지할 수 있습니다. 서비스 기준선은 다음 서비스 기준선의 릴리스 이후 1년 동안 서비스 업데이트와 함께 지원됩니다.
 
-서비스 기준선 옵션으로 개발자와 관리자는 새로운 기능, 버그 수정 또는 새로운 부분 업데이트에 포함된 구성 요소를 더욱 유연하게 채택할 수 있습니다. 첫 번째 서비스 기준선은 16.0.x입니다. 자세한 내용은 [Enterprise 및 Professional 고객을 위한 지원 옵션](https://docs.microsoft.com/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers)을 참조하세요.
+서비스 기준선 옵션으로 개발자와 관리자는 새로운 기능, 버그 수정 또는 새로운 부분 업데이트에 포함된 구성 요소를 더욱 유연하게 채택할 수 있습니다. 첫 번째 서비스 기준선은 16.0.x입니다. 자세한 내용은 [Enterprise 및 Professional 고객을 위한 지원 옵션](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers)을 참조하세요.
 
 ## <a name="how-to-get-onto-a-servicing-baseline"></a>서비스 기준선을 확인하는 방법
 

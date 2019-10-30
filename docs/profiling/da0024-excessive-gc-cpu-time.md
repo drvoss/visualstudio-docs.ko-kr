@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ecd968c5be30e50550fb29a5c44cb7065630a63
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 46dfce74e02faffb90cf5984651968633c27a16d
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442346"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910612"
 ---
 # <a name="da0024-excessive-gc-cpu-time"></a>DA0024: GC CPU 시간이 너무 깁니다.
 
@@ -47,4 +47,4 @@ ms.locfileid: "63442346"
 ## <a name="how-to-investigate-a-warning"></a>경고를 조사하는 방법
  [오류 목록] 창에서 메시지를 두 번 클릭하여 프로파일링 데이터의 [표시 뷰](../profiling/marks-view.md)로 이동합니다. **.NET CLR Memory\\% Time in GC** 열을 찾습니다. 다른 단계보다 관리되는 메모리 가비지 수집의 오버헤드가 더 큰 특정 프로그램 실행 단계가 있는지 확인합니다. % Time in GC 값을 **# of Gen 0 Collections**, **# of Gen 1 Collections**, **# of Gen 2 Collections** 값에서 보고된 가비지 수집 비율에 비교합니다.
 
- % Time in GC 값은 총 처리량에 비례하여 애플리케이션이 가비지 수집을 수행하는 데 걸리는 시간을 보고하려고 합니다. % Time in GC 값이 높은 값을 보고하지만 과도한 가비지 수집이 원인이 아닌 상황이 있을 수 있습니다. % Time in GC 값이 계산되는 방법에 대한 자세한 내용은 MSDN에서 **Maoni’s Weblog**(Maoni의 웹 블로그)의 [Difference Between Perf Data Reported by Different Tools – 4](http://go.microsoft.com/fwlink/?LinkId=177863)(여러 가지 도구에서 보고하는 성능 데이터 간의 차이점 – 4) 항목을 참조하세요. 가비지 수집 중에 컴퓨터에서 우선순위가 더 높은 다른 작업이 애플리케이션을 선점하거나 페이지 오류가 발생할 경우 % Time in GC 카운터가 추가적인 지연을 반영합니다.
+ % Time in GC 값은 총 처리량에 비례하여 애플리케이션이 가비지 수집을 수행하는 데 걸리는 시간을 보고하려고 합니다. % Time in GC 값이 높은 값을 보고하지만 과도한 가비지 수집이 원인이 아닌 상황이 있을 수 있습니다. % Time in GC 값이 계산되는 방법에 대한 자세한 내용은 MSDN에서 **Maoni’s Weblog**(Maoni의 웹 블로그)의 [Difference Between Perf Data Reported by Different Tools – 4](https://devblogs.microsoft.com/maoni/archive/difference-between-perf-data-reported-by-different-tools-4.aspx)(여러 가지 도구에서 보고하는 성능 데이터 간의 차이점 – 4) 항목을 참조하세요. 가비지 수집 중에 컴퓨터에서 우선순위가 더 높은 다른 작업이 애플리케이션을 선점하거나 페이지 오류가 발생할 경우 % Time in GC 카운터가 추가적인 지연을 반영합니다.

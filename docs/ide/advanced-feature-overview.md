@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c54983ee9025cf3e1c4df0161a6be55ebf9b2fa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2283da7c212102ac948ea368bb95315344d2274e
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631990"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919110"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio의 기능
 
@@ -68,7 +68,7 @@ Visual Studio의 [클라우드 탐색기](/azure/vs-azure-tools-resources-managi
 
 ## <a name="create-apps-for-the-web"></a>웹앱 만들기
 
-웹은 현대 세계를 이끌고 있고, Visual Studio에서 이를 위한 앱을 작성할 수 있습니다. ASP.NET, Node.js, Python, JavaScript 및 TypeScript를 사용하여 웹앱을 만들 수 있습니다. Visual Studio는 Angular, jQuery, Express 등과 같은 웹 프레임워크를 이해합니다. ASP.NET Core 및 .NET Core는 Windows, Mac 및 Linux 운영 체제에서 실행됩니다. [ASP.NET Core](http://www.asp.net/core/overview)는 MVC, WebAPI 및 SignalR에 대한 주요 업데이트이며 Windows, Mac 및 Linux에서 실행됩니다.  ASP.NET Core는 최신 클라우드 기반 웹앱 및 서비스를 빌드하기 위한 간결하고 구성 가능한 .NET 스택을 제공하도록 처음부터 다시 설계되었습니다.
+웹은 현대 세계를 이끌고 있고, Visual Studio에서 이를 위한 앱을 작성할 수 있습니다. ASP.NET, Node.js, Python, JavaScript 및 TypeScript를 사용하여 웹앱을 만들 수 있습니다. Visual Studio는 Angular, jQuery, Express 등과 같은 웹 프레임워크를 이해합니다. ASP.NET Core 및 .NET Core는 Windows, Mac 및 Linux 운영 체제에서 실행됩니다. [ASP.NET Core](https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core)는 MVC, WebAPI 및 SignalR에 대한 주요 업데이트이며 Windows, Mac 및 Linux에서 실행됩니다.  ASP.NET Core는 최신 클라우드 기반 웹앱 및 서비스를 빌드하기 위한 간결하고 구성 가능한 .NET 스택을 제공하도록 처음부터 다시 설계되었습니다.
 
 자세한 내용은 [최신 웹 도구](https://visualstudio.microsoft.com/vs/modern-web-tooling/)를 참조하세요.
 

@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: cf3fa0bf2c0e0ff112a176b10eb7e50e07f83d5a
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.openlocfilehash: 6755f6fd681dac87741b9de6a8d1fcd123a8ad9b
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70107879"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024697"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure Functions 소개
 
@@ -156,8 +156,8 @@ local.settings.json에서 추가한 모든 설정은 Azure의 함수 앱에도 �
 
 - **일반 웹후크** – 웹후크를 지원하는 서비스에서 요청을 수신할 때마다 실행되는 간단한 함수입니다. 자세한 내용은 [Azure Functions 문서의 일반 웹후크 부분](/azure/azure-functions/functions-create-generic-webhook-triggered-function)을 참조하세요.
 
-- **영속 함수 오케스트레이션** – 영속 함수를 사용하면 서버가 없는 환경에서 상태 저장 함수를 작성할 수 있습니다. 이 확장은 상태, 검사점, 다시 시작을 관리합니다. 자세한 내용은 Azure Functions 설명서의 [영속 함수](/azure/azure-functions/durable-functions-overview) 부분을 참조하세요.
+- **영속 함수 오케스트레이션** – 영속 함수를 사용하면 서버가 없는 환경에서 상태 저장 함수를 작성할 수 있습니다. 확장은 상태, 검사점 및 다시 시작을 관리합니다. 자세한 내용은 Azure Functions 설명서의 [영속 함수](/azure/azure-functions/durable-functions-overview) 부분을 참조하세요.
 
 - **Image Resizer** - Blob가 컨테이너에 추가될 때마다 크기 조정된 이미지를 만드는 함수입니다. 이 템플릿은 트리거, 소형 이미지 출력, 중간 이미지 출력을 위해 경로 및 연결을 사용합니다.
 
-- **SAS token** – 지정된 Azure Storage 컨테이너 및 Blob 이름에 대한 SAS 토큰을 생성하는 함수입니다. 함수 이름 외에도 이 템플릿은 경로 및 연결 속성을 사용합니다. 경로 속성은 트리거가 모니터링할 스토리지 계정 내의 경로입니다. 연결 계정은 스토리지 계정 연결 문자열을 포함하는 앱 설정의 이름입니다. **액세스 권한**도 설정해야 합니다. 권한 부여 수준은 함수에 API 키가 필요한지 여부, 사용할 키, 함수의 함수 키 사용, 관리자의 마스터 키 사용을 제어합니다. 자세한 내용은 [SAS 토큰을 생성하기 위한 C# Azure 함수](https://azure.microsoft.com/resources/samples/functions-dotnet-sas-token/) 샘플을 참조하세요.
+- **SAS token** – 지정된 Azure Storage 컨테이너 및 Blob 이름에 대한 SAS 토큰을 생성하는 함수입니다. 함수 이름 외에도 이 템플릿은 경로 및 연결 속성을 사용합니다. 경로 속성은 트리거가 모니터링할 스토리지 계정 내의 경로입니다. 연결 계정은 스토리지 계정 연결 문자열을 포함하는 앱 설정의 이름입니다. **액세스 권한**도 설정해야 합니다. 권한 부여 수준은 함수에 API 키가 필요한지 여부, 사용할 키, 함수의 함수 키 사용, 관리자의 마스터 키 사용을 제어합니다. 자세한 내용은 [SAS 토큰을 생성하기 위한 C# Azure 함수](https://github.com/Azure-Samples/functions-dotnet-sas-token/) 샘플을 참조하세요.

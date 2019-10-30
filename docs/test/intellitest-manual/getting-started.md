@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: jillre
-ms.openlocfilehash: 0d0d681c59935bbbb4591438f538d0c800cba489
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2f93b44d49b88b79068bff46df51c6c68423c16f
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653213"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984592"
 ---
 # <a name="get-started-with-microsoft-intellitest"></a>Microsoft IntelliTest 시작
 
@@ -22,7 +22,7 @@ ms.locfileid: "72653213"
   * [Channel 9 비디오](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Intellitest) 시청
   * 이 [MSDN Magazine 개요](https://msdn.microsoft.com/magazine/dn904672.aspx) 읽기
   * [설명서](../../test/generate-unit-tests-for-your-code-with-intellitest.md) 읽기
-* [Stack Overflow](http://stackoverflow.com/questions/tagged/intellitest)에 대한 질문하기
+* [Stack Overflow](https://stackoverflow.com/questions/tagged/intellitest)에 대한 질문하기
 * 이 참조 설명서의 나머지 부분 읽기
 * 빠른 참조용으로 이 페이지 인쇄
 

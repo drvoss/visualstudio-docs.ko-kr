@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5af132efde0c1a49e5404fa602363aab0554e6f
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 07c0a3e24ac089bf29501dfd4e101baef73318fb
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572471"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919130"
 ---
 # <a name="step-9-try-other-features"></a>9단계: 기타 기능 사용
 아이콘과 색을 변경하고 게임 타이머와 소리를 추가하는 등 다른 작업을 더 시도해 볼 수 있습니다. 보드를 크게 하거나 타이머를 조정해 보면 게임을 더 흥미롭게 즐길 수 있습니다.
@@ -37,7 +37,7 @@ ms.locfileid: "72572471"
 - 플레이어가 일치 항목을 찾을 때 재생되는 소리, 일치하지 않는 두 아이콘을 발견할 때 재생되는 소리, 프로그램에서 다시 아이콘을 숨길 때 재생되는 소리를 각각 다르게 추가합니다.
 
     > [!TIP]
-    > 소리를 재생하려면 <xref:System.Media> 네임스페이스를 사용할 수 있습니다. 자세한 내용은 [Play sounds in Windows Forms app (C#)](http://youtu.be/qOh4ooHg1UU)(Windows Forms 앱에서 소리 재생(C#)) 또는 [How to play audio in Visual Basic](http://youtu.be/-4oPDeQrtMs)(Visual Basic에서 오디오를 재생하는 방법)을 참조하세요.
+    > 소리를 재생하려면 <xref:System.Media> 네임스페이스를 사용할 수 있습니다. 자세한 내용은 [Play sounds in Windows Forms app (C#)](https://www.youtube.com/watch?v=qOh4ooHg1UU&feature=youtu.be)(Windows Forms 앱에서 소리 재생(C#)) 또는 [How to play audio in Visual Basic](https://www.youtube.com/watch?v=-4oPDeQrtMs&feature=youtu.be)(Visual Basic에서 오디오를 재생하는 방법)을 참조하세요.
 
 - 보드 크기를 늘려 게임 수준을 더 어렵게 만듭니다.
 

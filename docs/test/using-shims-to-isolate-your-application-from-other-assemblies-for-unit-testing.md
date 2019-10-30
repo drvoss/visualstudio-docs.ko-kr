@@ -8,12 +8,12 @@ author: jillre
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 5a6ae8bf090f1e3a06dc83cf619f691e8d51f4c0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e4a59cb4e3372e16634cddde2a163ac94ca73d24
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659744"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982807"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>shim을 사용하여 유닛 테스트를 위한 앱 격리
 
@@ -525,4 +525,4 @@ System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
 
 - [Microsoft Fakes를 사용하여 테스트 대상 코드 격리](../test/isolating-code-under-test-with-microsoft-fakes.md)
 - [Peter Provost의 블로그: Visual Studio 2012 shims](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
-- [비디오(1h16): Visual Studio 2012에서 fakes를 사용하여 테스트되지 않은 코드 테스트](http://go.microsoft.com/fwlink/?LinkId=261837)
+- [비디오(1h16): Visual Studio 2012에서 fakes를 사용하여 테스트되지 않은 코드 테스트](https://channel9.msdn.com/Events/TechEd/Europe/2012/DEV411)

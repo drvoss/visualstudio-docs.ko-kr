@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/01/2019
 ms.topic: conceptual
 description: Visual Studio 구독에 포함된 Visual Studio IDE를 다운로드하고 설치하는 방법을 알아봅니다.
-ms.openlocfilehash: 62992b2c9dc21063d78c135894368c93f07f76a8
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 5a5acda814739f907aaa36e9b3408527b5ece732
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787878"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816535"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Visual Studio 2019 혜택
 
@@ -41,7 +41,7 @@ IDE를 다운로드하려면
    > [!div class="mx-imgBorder"]
    > ![Visual Studio Enterprise 사용자 지정](_img/vs-ide-experience/vs-ide-customize-install-cropped.png)
 
-10. **Install**을 클릭합니다.
+10. **설치**를 클릭합니다.
 
 11. 설치가 완료되면 설치를 수정하거나 Visual Studio를 시작할 수 있는 옵션이 제공됩니다.  **시작**을 클릭하여 시작합니다.  여러 버전이 설치되어 있는 경우 버전이 나열됩니다.
     > [!div class="mx-imgBorder"]
@@ -59,7 +59,7 @@ IDE를 다운로드하려면
 
 ## <a name="eligibility"></a>자격
 
-| 구독 수준                                                 |     채널                                            | 혜택                                                          | 갱신 가능?    |
+| 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise(표준, 월간 클라우드)   | VL, Azure, 일반 정품, 선택한 NFR<sup>1</sup> | 사용 가능       |  예          |
 | Visual Studio Professional(표준, 월간 클라우드) | VL, Azure, 일반 정품                                       | 사용 가능                                                            |  예          |
@@ -76,11 +76,11 @@ IDE를 다운로드하려면
 ## <a name="support-resources"></a>지원 리소스
 - Visual Studio IDE와 관련하여 도움이 필요하면 다음 리소스를 확인하세요.
   - 기술 지원: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
-  - [설명서](/visualstudio/)
+  - [문서](/visualstudio/)
 - Visual Studio 구독에 대한 판매, 구독, 계정 및 요금 청구에 대한 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)에 문의하세요.
 
 ## <a name="next-steps"></a>다음 단계
 Visual Studio를 설치한 이후에 다음과 같은 중요한 혜택을 활성화하시기 바랍니다.
 - [Azure DevOps](vs-azure-devops.md)
-- [Azure 크레딧](vs-azure.md)
+- [Azure DevTest 개별 크레딧](vs-azure.md)
 - [Windows 개발자 계정](vs-windows-dev.md)

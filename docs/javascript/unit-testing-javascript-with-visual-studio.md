@@ -11,19 +11,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: b1ef763295db7673896189ce000ed59d5da5becf
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 90a440ce88690c12792c17729e93f9fa287dabb6
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787984"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888638"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Visual Studio의 유닛 테스트 JavaScript 및 TypeScript
 
 Visual Studio용 Node.js 도구를 사용하면 명령 프롬프트로 전환하지 않고도 더 인기 있는 JavaScript 프레임워크를 사용하는 단위 테스트를 작성하고 실행할 수 있습니다.
 
 지원되는 프레임워크는 다음과 같습니다.
-* Mocha([mochajs.org](http://mochajs.org/))
+* Mocha([mochajs.org](https://mochajs.org/))
 * Jasmine([Jasmine.github.io](https://jasmine.github.io/))
 * Tape([github.com/substack/tape](https://github.com/substack/tape))
 * Jest([jestjs.io](https://jestjs.io/))

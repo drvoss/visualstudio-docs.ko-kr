@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2241daa50a35a9714fd66b10966298279bc37fe
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 98bf3e143a3fcb6613752362acf83f5c2441b98b
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747288"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911257"
 ---
 # <a name="link-task"></a>링크 작업
 Microsoft C++ 링커 도구 *link.exe*를 래핑합니다. 링커 도구는 COFF(Common Object File Format) 개체 파일과 라이브러리를 연결하여 실행 파일( *.exe*) 또는 DLL(동적 연결 라이브러리)을 만듭니다. 자세한 내용은 [링커 옵션](/cpp/build/reference/linker-options)을 참조하세요.
@@ -65,7 +65,7 @@ Microsoft C++ 링커 도구 *link.exe*를 래핑합니다. 링커 도구는 COFF
 
   매니페스트 파일의 `dependency` 섹션에 배치될 특성을 지정합니다.
 
-  자세한 내용은 [/MANIFESTDEPENDENCY(매니페스트 종속성 지정)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies)를 참조하세요. [게시자 구성 파일](https://docs.microsoft.com/windows/desktop/SbsCs/publisher-configuration-files)도 참조하세요.
+  자세한 내용은 [/MANIFESTDEPENDENCY(매니페스트 종속성 지정)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies)를 참조하세요. [게시자 구성 파일](/windows/desktop/SbsCs/publisher-configuration-files)도 참조하세요.
 
 - **AdditionalOptions**
 

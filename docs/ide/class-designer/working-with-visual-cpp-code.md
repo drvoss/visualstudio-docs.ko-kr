@@ -18,12 +18,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e59ee1305c0c482686505959aac7187902906086
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 75faa3e4d38f961c38b23a95765d6466e008714f
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748904"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919042"
 ---
 # <a name="work-with-c-code-in-class-designer"></a>클래스 디자이너에서 C++ 코드 사용
 
@@ -84,7 +84,7 @@ C++ 프로젝트의 경우 소스 파일의 변경 내용이 클래스 다이어
 
 ### <a name="troubleshoot-other-error-messages"></a>기타 오류 메시지 문제 해결
 
-MSDN(Microsoft Developer Network) 공개 포럼에서 오류 및 경고 문제 해결 관련 지원 정보를 찾을 수 있습니다. [Visual Studio Class Designer Forum](http://go.microsoft.com/fwlink/?linkid=160754)(Visual Studio 클래스 디자이너 포럼)을 참조하세요.
+MSDN(Microsoft Developer Network) 공개 포럼에서 오류 및 경고 문제 해결 관련 지원 정보를 찾을 수 있습니다. [Visual Studio Class Designer Forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsclassdesigner)(Visual Studio 클래스 디자이너 포럼)을 참조하세요.
 
 ## <a name="limitations-for-c-code-elements"></a>C++ 코드 요소에 대한 제한 사항
 

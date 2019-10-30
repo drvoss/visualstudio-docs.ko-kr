@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77da53856e0562d036fade431dd0deba0376fe9f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2c8a5058d52684ec08e13641953c789c244f2fa9
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798366"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910142"
 ---
 # <a name="performance-session-properties"></a>성능 세션 속성
 
@@ -85,7 +85,7 @@ ms.locfileid: "62798366"
 
 ## <a name="windows-events"></a>Windows 이벤트
 
-프로파일링 중에 이벤트 추적 공급자의 데이터를 수집할 수 있습니다. *VSPerfReport.exe* 명령줄 도구 `/calltrace` 옵션을 사용하면 데이터를 확인할 수 있습니다. ETW(Windows용 이벤트 추적)에 대한 자세한 내용은 [이벤트 추적 정보](http://go.microsoft.com/fwlink/?linkid=90752)를 참조하세요.
+프로파일링 중에 이벤트 추적 공급자의 데이터를 수집할 수 있습니다. *VSPerfReport.exe* 명령줄 도구 `/calltrace` 옵션을 사용하면 데이터를 확인할 수 있습니다. ETW(Windows용 이벤트 추적)에 대한 자세한 내용은 [이벤트 추적 정보](/windows/win32/etw/about-event-tracing)를 참조하세요.
 
 자세한 내용은 다음을 참조하세요.
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f8956626d1ae03e52b9051730c3b7767532a5e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f5bebcaf9b6e69883f8876a10a99fefb81e6105
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935941"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911929"
 ---
 # <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504: 프로파일링되고 있는 프로세스의 최대 작업 세트(바이트)
 
@@ -36,7 +36,7 @@ ms.locfileid: "62935941"
 
  보고된 값에는 프로세스가 참조한 공유 메모리 세그먼트의 상주 페이지가 포함됩니다. 프로세스가 참조하는 공유 DLL은 계산되는 공유 메모리 세그먼트에 포함됩니다. 공유 메모리 세그먼트 때문에 프로세스 작업 집합의 값은 프로세스가 할당한 가상 메모리 크기보다 클 수 있습니다.
 
- 프로세스 작업 집합의 크기는 프로세스가 적극적으로 사용하는 가상 메모리 크기를 반영합니다. 또한 애플리케이션을 실행할 수 있는 실제 메모리(또는 RAM)의 크기 및 해당 실제 메모리에 대한 실행 중인 다른 프로세스의 경합이 이 크기에 영향을 미칩니다. 프로세스 작업 집합에 대한 자세한 내용은 MSDN의 Windows 메모리 관리 설명서에 있는 [Working Set](http://go.microsoft.com/fwlink/?LinkId=177830)(작업 집합)를 참조하세요.
+ 프로세스 작업 집합의 크기는 프로세스가 적극적으로 사용하는 가상 메모리 크기를 반영합니다. 또한 애플리케이션을 실행할 수 있는 실제 메모리(또는 RAM)의 크기 및 해당 실제 메모리에 대한 실행 중인 다른 프로세스의 경합이 이 크기에 영향을 미칩니다. 프로세스 작업 집합에 대한 자세한 내용은 MSDN의 Windows 메모리 관리 설명서에 있는 [Working Set](/windows/win32/memory/working-set)(작업 집합)를 참조하세요.
 
 ## <a name="how-to-use-rule-data"></a>규칙 데이터를 사용하는 방법
  규칙은 Windows 성능 모니터링 기능에서 이 측정 데이터를 수집하고 참고용으로만 보고합니다. 규칙을 사용하여 프로그램의 여러 가지 버전이나 빌드에 대한 성능을 비교하거나 여러 가지 테스트 시나리오에서 애플리케이션의 성능을 파악합니다.

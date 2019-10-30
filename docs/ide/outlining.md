@@ -10,21 +10,21 @@ helpviewer_keywords:
 - code [Visual Studio], outlining
 - code [Visual Studio], hiding
 - outlining code
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6451e835e44af23fbd41c9c1573e0bc5daed115
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 791663c04d1c1e79eebaed39d339d8d118ffeaae
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811918"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748860"
 ---
 # <a name="outlining"></a>개요
 
-더하기 기호(**+**) 아래에 표시되도록 코드 영역을 축소하여 일부 코드를 뷰에서 숨길 수 있습니다. 더하기 기호를 클릭하면 축소된 영역이 확장됩니다. 키보드 사용자인 경우 **Ctrl**+**M**+**M**을 선택하여 축소하고 확장할 수 있습니다. 코드 바로 왼쪽에 표시되는 개요 여백의 영역에서 아무 줄이나 두 번 클릭하여 개요 영역을 축소할 수도 있습니다. 축소된 영역을 마우스로 가리키면 축소된 영역의 내용을 도구 설명으로 확인할 수 있습니다.
+더하기 기호( **+** ) 아래에 표시되도록 코드 영역을 축소하여 일부 코드를 뷰에서 숨길 수 있습니다. 더하기 기호를 클릭하면 축소된 영역이 확장됩니다. 키보드 사용자인 경우 **Ctrl**+**M**+**M**을 선택하여 축소하고 확장할 수 있습니다. 코드 바로 왼쪽에 표시되는 개요 여백의 영역에서 아무 줄이나 두 번 클릭하여 개요 영역을 축소할 수도 있습니다. 축소된 영역을 마우스로 가리키면 축소된 영역의 내용을 도구 설명으로 확인할 수 있습니다.
 
 > [!NOTE]
 > 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [원본 편집기(Mac용 Visual Studio)](/visualstudio/mac/source-editor)를 참조하세요.
@@ -48,8 +48,8 @@ ms.locfileid: "62811918"
 |개요 표시 중지|(**Ctrl**+**M**, **Ctrl**+**P**) - 문서 전체에 대한 개요 정보를 모두 제거합니다.|
 |현재 영역 숨기기 중지|(**Ctrl**+**M**, **Ctrl**+**U**) - 현재 선택한 사용자 정의 영역에 대한 개요 정보를 제거합니다. Visual Basic에서 사용할 수 없습니다.|
 |정의 부분만 보이기|(**Ctrl**+**M**, **Ctrl**+**O**) - 모든 형식의 멤버를 축소합니다.|
-|블록 축소: \<논리적 경계>|(Visual C++) 삽입 지점이 포함된 함수의 영역을 축소합니다. 예를 들어 삽입 지점이 루프 안에 있는 경우 루프가 숨겨집니다.|
-|모두 축소: \<논리적 구조>|(Visual C++) 함수 내부의 모든 구조를 축소합니다.|
+|블록 축소: \<논리적 경계>|(C++) 삽입 지점이 포함된 함수의 영역을 축소합니다. 예를 들어 삽입 지점이 루프 안에 있는 경우 루프가 숨겨집니다.|
+|모두 축소: \<논리적 구조>|(C++) 함수 내부의 모든 구조를 축소합니다.|
 
 Visual Studio SDK를 사용하여 확장 또는 축소할 텍스트 영역을 정의할 수도 있습니다. [연습: 개요](../extensibility/walkthrough-outlining.md)를 참조하세요.
 

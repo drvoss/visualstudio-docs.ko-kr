@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa4d5013aea15bec9b2d7c308836ef5e9d212a65
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bae8a8679a3295f665a15cc6b088cc93aaababd9
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747854"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919199"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>옵션 대화 상자, 프로젝트 및 솔루션, 웹 프로젝트
 
@@ -27,7 +27,7 @@ ms.locfileid: "72747854"
 
 **웹 사이트 및 프로젝트에 64비트 버전의 IIS Express 사용**
 
-Visual Studio 개발 서버 대신 IIS Express를 사용하려면 이 옵션을 선택합니다. 자세한 내용은 [Introducing IIS Express](http://go.microsoft.com/?linkid=9747914)(IIS Express 소개) 및 [IIS Express Overview](http://go.microsoft.com/?linkid=9747915)(IIS Express 개요)를 참조하세요.
+Visual Studio 개발 서버 대신 IIS Express를 사용하려면 이 옵션을 선택합니다. 자세한 내용은 [Introducing IIS Express](https://weblogs.asp.net/scottgu/introducing-iis-express)(IIS Express 소개) 및 [IIS Express Overview](/iis/extensions/introduction-to-iis-express/iis-express-overview)(IIS Express 개요)를 참조하세요.
 
 **오류 목록에 오류가 있을 때 웹 애플리케이션을 실행하기 전 경고**
 

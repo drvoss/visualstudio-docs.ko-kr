@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38cde5c1500168dcb36021c530799d1d8d1effb9
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 867350c1a786971a25256bbe8f60ac2bfca14a19
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745315"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910319"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>HPC(고성능 컴퓨팅) 클러스터에서 프로파일링
 
@@ -34,7 +34,7 @@ Visual Studio 프로파일링 도구의 샘플링 방법을 사용하여 Microso
 
 HPC 컴퓨팅 노드에서 프로파일링하려면 다음을 수행해야 합니다.
 
-- Visual Studio와 같은 컴퓨터에 Microsoft HPC 팩 2008을 설치합니다. 컴퓨터는 HPC 클러스터의 일부분이 아니어도 됩니다. HPC 팩은 [Microsoft 다운로드 센터](http://go.microsoft.com/fwlink/?LinkID=177414)에서 설치할 수 있습니다.
+- Visual Studio와 같은 컴퓨터에 Microsoft HPC 팩 2008을 설치합니다. 컴퓨터는 HPC 클러스터의 일부분이 아니어도 됩니다. HPC 팩은 [Microsoft 다운로드 센터](https://www.microsoft.com/download/details.aspx?id=4812)에서 설치할 수 있습니다.
 
 - NET Framework 4 및 독립 실행형 버전의 프로파일링 도구를 HPC 컴퓨팅 노드에 설치합니다. .NET Framework 및 독립 실행형 프로파일러의 설치 프로그램은 모두 Visual Studio 설치 미디어에 포함되어 있습니다. **참고** .NET Framework를 설치한 후 프로파일링 도구를 설치하기 전에 컴퓨팅을 다시 시작해야 합니다.
 

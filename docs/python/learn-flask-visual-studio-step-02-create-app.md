@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 188865b715c7c071222f7132c6f9bdd9b3dc596a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1786c8c57c841744ed27b03e4969fe2bd21ce2c7
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961757"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985189"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>2단계: 보기 및 페이지 템플릿을 사용하여 Flask 앱 만들기
 
@@ -220,5 +220,5 @@ ms.locfileid: "62961757"
 
 ## <a name="go-deeper"></a>자세히 알아보기
 
-- [Flask 빠른 시작 - 렌더링 템플릿](http://flask.pocoo.org/docs/1.0/quickstart/#rendering-templates)(flask.pocoo.org)
+- [Flask 빠른 시작 - 렌더링 템플릿](https://flask.palletsprojects.com/en/1.0.x/quickstart/#rendering-templates)(flask.pocoo.org)
 - GitHub의 자습서 소스 코드: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

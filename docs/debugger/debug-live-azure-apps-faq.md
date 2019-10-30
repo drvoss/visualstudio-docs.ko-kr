@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ceda2dd4e85c8db5b66ef753a748977204b8caab
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 5e0d8839daac2d470f4275257bfcfbc83fc7a62f
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211219"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911402"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Visual Studio의 스냅샷 디버깅에 대해 자주 묻는 질문
 
@@ -31,7 +31,7 @@ ms.locfileid: "71211219"
 
 #### <a name="how-does-the-snapshot-debugger-load-symbols"></a>스냅샷 디버거가 기호를 로드하는 방법은 무엇인가요?
 
-스냅샷 디버거를 사용하려면 로컬 또는 Azure App Service에 배포된 애플리케이션에 대해 일치하는 기호가 있어야 합니다. (포함 PDB는 현재 지원되지 않습니다.) 스냅샷 디버거는 자동으로 Azure App Service에서 기호를 다운로드합니다. Visual Studio 2017 버전 15.2부터 Azure App Service에 배포하는 경우 앱의 기호도 배포합니다.
+스냅샷 디버거를 사용하려면 로컬 또는 Azure App Service에 배포된 애플리케이션에 대해 일치하는 기호가 있어야 합니다. 임베디드 Pdb는 현재 지원 되지 않습니다. 스냅숏 디버거 Azure App Service에서 기호를 자동으로 다운로드 합니다. Visual Studio 2017 버전 15.2부터 Azure App Service에 배포하는 경우 앱의 기호도 배포합니다.
 
 #### <a name="does-the-snapshot-debugger-work-against-release-builds-of-my-application"></a>스냅샷 디버거가 내 애플리케이션의 릴리스 빌드에 대해 작동하나요?
 
@@ -125,7 +125,7 @@ AKS의 경우:
 
    - 서버 인증서
       - 해당 서버 인증서 지문을 Azure KeyVault에 대 한 암호로 배포 합니다. VS는 가상 머신 또는 가상 머신 확장 집합 리소스에 해당 하는 지역에서 접두사 MSVSAZ *를 사용 하 여 KeyVault를 찾거나 만들려고 시도 합니다. 따라서 해당 지역에 배포 된 모든 가상 머신 또는 가상 머신 확장 집합 리소스는 동일한 KeyVault를 공유 합니다.
-      - 서버 인증서 지문 비밀을 삭제 하려면 Azure Portal로 이동 하 여 리소스를 호스트 하는 동일한 지역에서 MSVSAZ * KeyVault를 찾습니다. 레이블을 지정 해야 하는 암호를 삭제 합니다.`remotedebugcert<<ResourceName>>`
+      - 서버 인증서 지문 비밀을 삭제 하려면 Azure Portal로 이동 하 여 리소스를 호스트 하는 동일한 지역에서 MSVSAZ * KeyVault를 찾습니다. 레이블을 지정 해야 하는 암호를 삭제 `remotedebugcert<<ResourceName>>`
       - 또한 PowerShell을 통해 리소스에서 서버 암호를 삭제 해야 합니다.
 
       가상 컴퓨터의 경우:
@@ -181,7 +181,7 @@ AKS의 경우:
 
 - Azure Portal > 가상 머신/가상 머신 확장 집합 리소스 블레이드 > 확장을 제거 > Microsoft.insights.vmdiagnosticssettings로 확장을 제거 합니다.
 
-- [Az powershell](https://docs.microsoft.com/powershell/azure/overview) 의 powershell cmdlet
+- [Az powershell](/powershell/azure/overview) 의 powershell cmdlet
 
    가상 컴퓨터:
 
@@ -196,7 +196,7 @@ AKS의 경우:
       Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name Microsoft.Insights.VMDiagnosticsSettings
    ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 디버깅](../debugger/index.yml)
 - [스냅숏 디버거를 사용 하 여 라이브 ASP.NET 앱 디버그](../debugger/debug-live-azure-applications.md)

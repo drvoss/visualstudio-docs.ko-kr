@@ -13,12 +13,12 @@ author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
 monikerRange: vs-2017
-ms.openlocfilehash: c86dd5090d2cee6c49bd97f0895bba397e10c1ae
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 653b2576b0076d02f2e18cedc6f9f9890fd98fe5
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263038"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888656"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017의 JavaScript
 
@@ -34,7 +34,7 @@ Visual Studio에서는 이제 ECMAScript 2015/2016 등의 ECMAScript 언어 업�
 ### <a name="what-is-ecmascript-2015"></a>ECMAScript 2015란?
 
 JavaScript는 여전히 프로그래밍 언어로 발전을 거듭하고 있으며 [TC39](https://www.ecma-international.org/memento/tc39-m.htm)는 업데이트를 담당하는 위원회입니다.
-ECMAScript 2015는 새롭고 유용한 구문과 기능을 제공하는 JavaScript 언어의 업데이트입니다. ES6 기능을 자세히 살펴보려면 [이](http://es6-features.org) 참조 사이트를 확인하세요.
+ECMAScript 2015는 새롭고 유용한 구문과 기능을 제공하는 JavaScript 언어의 업데이트입니다. ES6 기능을 자세히 살펴보려면 [이](http://es6-features.org/#Constants) 참조 사이트를 확인하세요.
 
 Visual Studio에서는 ECMAScript 2015 지원 외에도 ECMAScript 2016을 지원하며, ECMAScript의 이후 버전이 릴리스되면 해당 버전도 지원합니다. TC39와 ECMAScript의 최신 변경 사항을 계속 받으려면 [github](https://github.com/tc39)이 작업을 따르세요.
 
@@ -238,7 +238,7 @@ var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
 [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)]에서 완전히 새로운 언어 서비스를 제공하므로, 이전 환경에 없거나 다른 동작이 몇 가지 있습니다.
 가장 주목할 만한 변경 내용으로는 VSDoc를 JSDoc로 대체, 사용자 지정 `.intellisense.js` 확장 제거 및 특정 코드 패턴에 제한된 IntelliSense가 포함됩니다.
 
-### <a name="no-more-references-or-referencesjs"></a>더 이상 `///<references/>` 또는 `_references.js` 없음
+### <a name="no-more-references-or-_referencesjs"></a>더 이상 `///<references/>` 또는 `_references.js` 없음
 
 이전에는 언제든 IntelliSense 범위에 있는 파일을 이해하기가 매우 복잡했습니다. 어떤 경우 모든 파일을 범위에 두는 것이 바람직하고, 다른 경우에는 바람직하지 않으므로, 수동 참조 관리를 포함하는 복잡한 구성이 생성됩니다. 앞으로는 더 이상 참조 관리에 대해 고려할 필요가 없으므로 슬래시 3개로 이루어진 참조 주석이나 `_references.js` 파일이 필요하지 않습니다.
 

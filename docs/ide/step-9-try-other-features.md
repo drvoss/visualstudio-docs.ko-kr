@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aff87247afb79d62867da9e55f7a059192789d79
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 07c0a3e24ac089bf29501dfd4e101baef73318fb
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118844"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919130"
 ---
 # <a name="step-9-try-other-features"></a>9단계: 기타 기능 사용
 아이콘과 색을 변경하고 게임 타이머와 소리를 추가하는 등 다른 작업을 더 시도해 볼 수 있습니다. 보드를 크게 하거나 타이머를 조정해 보면 게임을 더 흥미롭게 즐길 수 있습니다.
@@ -37,7 +37,7 @@ ms.locfileid: "71118844"
 - 플레이어가 일치 항목을 찾을 때 재생되는 소리, 일치하지 않는 두 아이콘을 발견할 때 재생되는 소리, 프로그램에서 다시 아이콘을 숨길 때 재생되는 소리를 각각 다르게 추가합니다.
 
     > [!TIP]
-    > 소리를 재생하려면 <xref:System.Media> 네임스페이스를 사용할 수 있습니다. 자세한 내용은 [Play sounds in Windows Forms app (C#)](http://youtu.be/qOh4ooHg1UU)(Windows Forms 앱에서 소리 재생(C#)) 또는 [How to play audio in Visual Basic](http://youtu.be/-4oPDeQrtMs)(Visual Basic에서 오디오를 재생하는 방법)을 참조하세요.
+    > 소리를 재생하려면 <xref:System.Media> 네임스페이스를 사용할 수 있습니다. 자세한 내용은 [Play sounds in Windows Forms app (C#)](https://www.youtube.com/watch?v=qOh4ooHg1UU&feature=youtu.be)(Windows Forms 앱에서 소리 재생(C#)) 또는 [How to play audio in Visual Basic](https://www.youtube.com/watch?v=-4oPDeQrtMs&feature=youtu.be)(Visual Basic에서 오디오를 재생하는 방법)을 참조하세요.
 
 - 보드 크기를 늘려 게임 수준을 더 어렵게 만듭니다.
 
@@ -48,8 +48,6 @@ ms.locfileid: "71118844"
 
 ## <a name="to-continue-or-review"></a>계속하거나 검토하려면
 
-- 어려운 점이 있거나 프로그래밍 관련 질문이 있는 경우 MSDN 포럼에 질문을 게시해 보십시오. [Visual Basic 포럼](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vbgeneral) 및 [Visual C# 포럼](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=csharpgeneral)을 참조하세요.
-
-- 훌륭한 비디오 학습 자료가 무료로 제공됩니다. Visual Basic의 프로그래밍에 대한 자세한 내용은 [Visual Basic 기초: 완전 초보자를 위한 개발](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)을 참조하세요. Visual C#의 프로그래밍에 대한 자세한 내용은 [C# 기초: 완전 초보자를 위한 개발](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)을 참조하세요.
+- 훌륭한 비디오 학습 자료가 무료로 제공됩니다. Visual Basic의 프로그래밍에 대한 자세한 내용은 [Visual Basic 기초: 완전 초보자를 위한 개발](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)을 참조하세요. C# 프로그래밍에 대한 자세한 내용은 [C# 기초: 완전 초보자를 위한 개발](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)을 참조하세요.
 
 - 이전 자습서 단계로 돌아가려면 [8단계: 게임 플레이어가 이겼는지 여부를 확인하는 메서드 추가](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)를 참조하세요.

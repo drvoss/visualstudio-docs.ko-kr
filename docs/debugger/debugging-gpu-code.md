@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db053317b3678cfaa7ee0ed6061074b156359d2f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: cec341df3cfe81f339322f5e7c584151d9030490
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738225"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911570"
 ---
 # <a name="debugging-gpu-code"></a>GPU 코드 디버깅
 GPU(그래픽 처리 장치)에서 실행되는 C++ 코드를 디버깅할 수 있습니다. Visual Studio의 GPU 디버깅 지원에는 경합 상태 감지, 프로세스 시작, 프로세스에 연결 및 디버깅 창에 대한 통합이 포함됩니다.
@@ -77,9 +77,9 @@ GPU(그래픽 처리 장치)에서 실행되는 C++ 코드를 디버깅할 수 �
  이 오류는 원격 PC에서 디버깅하는 경우에 발생합니다. 디버거는 드라이버가 원격 PC에 설치되어 있는지 여부를 런타임까지 확인할 수 없습니다. 드라이버는 그래픽 카드의 제조업체에서 제공합니다.
 
 ### <a name="error-timeout-detection-and-recovery-tdr-must-be-disabled-at-the-remote-site"></a>오류: 원격 사이트에서 TDR(제한 시간 탐지 및 복구)을 사용하지 않도록 설정해야 합니다.
- C++ AMP 계산이 Windows TDR(제한 시간 탐지 및 복구)에서 설정된 기본 시간 간격을 초과할 수 있습니다. 이 경우 계산이 취소되고 데이터가 손실됩니다. 자세한 내용은 [Handling TDRs in C++ AMP](http://go.microsoft.com/fwlink/p/?LinkId=249154)를 참조하십시오.
+ C++ AMP 계산이 Windows TDR(제한 시간 탐지 및 복구)에서 설정된 기본 시간 간격을 초과할 수 있습니다. 이 경우 계산이 취소되고 데이터가 손실됩니다. 자세한 내용은 [Handling TDRs in C++ AMP](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/06/handling-tdrs-in-c-amp/)를 참조하십시오.
 
 ## <a name="see-also"></a>참조
 - [연습: C++ AMP 애플리케이션 디버깅](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
 - [C++ 디버그 구성에 대한 프로젝트 설정](../debugger/project-settings-for-a-cpp-debug-configuration.md)
-- [Visual Studio에서 GPU 디버깅 시작](http://go.microsoft.com/fwlink/p/?LinkId=255381)
+- [Visual Studio에서 GPU 디버깅 시작](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/17/start-gpu-debugging-in-visual-studio-2012/)

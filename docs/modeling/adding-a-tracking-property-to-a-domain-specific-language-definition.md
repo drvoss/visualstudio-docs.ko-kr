@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0fd1fb2bc6440b02e0aad163ee55a7a7f86807a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9843e881ddfa202778321dc2e1510c2e121095db
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652283"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984170"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>도메인 특정 언어 정의에 추적 속성 추가
 
@@ -48,9 +48,9 @@ ms.locfileid: "72652283"
 
 | | |
 |-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579) |
-| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580) |
-| [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581) |
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](https://visualstudio.microsoft.com/) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts) |
+| [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185581](https://code.msdn.microsoft.com/site/search?query=%22Modeling%20SDK%22&f%5B0%5D.Value=%22Modeling%20SDK%22&f%5B0%5D.Type=SearchText&ac=5) |
 
 ## <a name="create-the-project"></a>프로젝트를 만듭니다.
 
@@ -238,10 +238,10 @@ HelperClasses.cs 파일에 다음과 같이 `TrackingHelper` 및 `CriticalExcept
 
 ## <a name="add-custom-code-for-the-custom-type-descriptor"></a>사용자 지정 형식 설명자에 대 한 사용자 지정 코드 추가
 
-@No__t_1 도메인 클래스에 대 한 형식 설명자에 대 한 `GetCustomProperties` 메서드를 구현 합니다.
+`ExampleModel` 도메인 클래스에 대 한 형식 설명자에 대 한 `GetCustomProperties` 메서드를 구현 합니다.
 
 > [!NOTE]
-> @No__t_0 호출에 대 한 사용자 지정 형식 설명자에 대해 DSL 도구에서 생성 하는 코드는 `GetCustomProperties` 합니다. 그러나 DSL 도구는 메서드를 구현 하는 코드를 생성 하지 않습니다.
+> `ExampleModel` 호출에 대 한 사용자 지정 형식 설명자에 대해 DSL 도구에서 생성 하는 코드는 `GetCustomProperties`합니다. 그러나 DSL 도구는 메서드를 구현 하는 코드를 생성 하지 않습니다.
 
 이 메서드를 정의 하면 네임 스페이스 추적 속성에 대 한 추적 속성 설명자가 만들어집니다. 또한 추적 속성의 특성을 제공 하면 **속성 창에서 속성을** 올바르게 표시할 수 있습니다.
 
@@ -334,12 +334,12 @@ HelperClasses.cs 파일에 다음과 같이 `TrackingHelper` 및 `CriticalExcept
 
 ## <a name="add-custom-code-for-the-model"></a>모델에 대 한 사용자 지정 코드 추가
 
-@No__t_1 도메인 클래스에 대 한 `GetCustomElementsValue` 메서드를 구현 합니다.
+`ExampleModel` 도메인 클래스에 대 한 `GetCustomElementsValue` 메서드를 구현 합니다.
 
 > [!NOTE]
 > DSL 도구가 `ExampleModel`를 호출 하기 위해 생성 하는 코드는 `GetCustomElementsValue` 합니다. 그러나 DSL 도구는 메서드를 구현 하는 코드를 생성 하지 않습니다.
 
-@No__t_0 메서드를 정의 하면 `ExampleModel`의 CustomElements 계산 된 속성에 대 한 논리를 제공 합니다. 이 메서드는 사용자가 업데이트 한 값을 포함 하는 네임 스페이스 추적 속성이 있는 `ExampleElement` 도메인 클래스의 수를 계산 하 고이 개수를 모델의 전체 요소 비율로 나타내는 문자열을 반환 합니다.
+`GetCustomElementsValue` 메서드를 정의 하면 `ExampleModel`의 CustomElements 계산 된 속성에 대 한 논리를 제공 합니다. 이 메서드는 사용자가 업데이트 한 값을 포함 하는 네임 스페이스 추적 속성이 있는 `ExampleElement` 도메인 클래스의 수를 계산 하 고이 개수를 모델의 전체 요소 비율로 나타내는 문자열을 반환 합니다.
 
 또한 `ExampleModel`에 `OnDefaultNamespaceChanged` 메서드를 추가 하 고 `ExampleModel`의 `DefaultNamespacePropertyHandler` 중첩 클래스 `OnValueChanged` 메서드를 재정의 하 여 `OnDefaultNamespaceChanged`를 호출 합니다.
 
@@ -412,7 +412,7 @@ DefaultNamespace 속성은 네임 스페이스 추적 속성을 계산 하는 �
 
 ## <a name="add-custom-code-for-the-tracking-property"></a>추적 속성에 대 한 사용자 지정 코드 추가
 
-@No__t_1 도메인 클래스에 `CalculateNamespace` 메서드를 추가 합니다.
+`ExampleElement` 도메인 클래스에 `CalculateNamespace` 메서드를 추가 합니다.
 
 이 메서드를 정의 하면 `ExampleModel`의 CustomElements 계산 된 속성에 대 한 논리가 제공 됩니다. 이 메서드는 사용자 상태별로 업데이트 된 네임 스페이스 추적 속성이 있는 `ExampleElement` 도메인 클래스의 수를 계산 하 고이 수를 모델의 총 요소에 대 한 비율로 반환 합니다.
 
@@ -720,7 +720,7 @@ XML serialization에 대 한 사용자 지정 사후 로드 동작을 지 원하
 
 2. **디버그** 메뉴에서 **디버깅 시작**을 클릭합니다.
 
-    @No__t_0의 실험적 빌드는 빈 테스트 파일이 포함 된 **디버깅** 솔루션을 엽니다.
+    [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]의 실험적 빌드는 빈 테스트 파일이 포함 된 **디버깅** 솔루션을 엽니다.
 
 3. **솔루션 탐색기**에서 테스트. trackingPropertyDsl 파일을 두 번 클릭 하 여 디자이너에서 열고 디자인 화면을 클릭 합니다.
 

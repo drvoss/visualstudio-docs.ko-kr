@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 75244cc728b238a04569875ac01f1c2a3f27d336
-ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
+ms.openlocfilehash: 9d69c91af316c755b2dcf4f339d8f47d49096b6a
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2019
-ms.locfileid: "71481911"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982908"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Visual Studio에서 C/C++에 대한 단위 테스트 작성
 
@@ -79,7 +79,7 @@ Google Test 어댑터와 Boost.Test 어댑터 확장은 Visual Studio Marketplac
 
 ### <a name="link-to-object-or-library-files"></a>개체 또는 라이브러리 파일에 연결
 
-테스트 코드가 테스트할 함수를 내보내지 않는 경우 .obj 또는 .lib 출력 파일을 테스트 프로젝트의 종속성에 추가할 수 있습니다. [개체 또는 라이브러리 파일에 테스트를 연결하려면](https://docs.microsoft.com/visualstudio/test/unit-testing-existing-cpp-applications-with-test-explorer?view=vs-2015#objectRef)을 참조하세요.
+테스트 코드가 테스트할 함수를 내보내지 않는 경우 .obj 또는 .lib 출력 파일을 테스트 프로젝트의 종속성에 추가할 수 있습니다. [개체 또는 라이브러리 파일에 테스트를 연결하려면](unit-testing-existing-cpp-applications-with-test-explorer.md)을 참조하세요.
 
 ### <a name="add-include-directives-for-header-files"></a>헤더 파일에 대해 #include 지시문 추가
 
@@ -92,7 +92,7 @@ Google Test 어댑터와 Boost.Test 어댑터 확장은 Visual Studio Marketplac
 ### <a name="write-test-methods"></a>테스트 메서드 작성
 
 > [!NOTE]
-> 이 섹션에서는 C/C++용 Microsoft 단위 테스트 프레임워크에 대한 구문을 보여 줍니다. 문서화된 내용은 다음과 같습니다. [Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 참조](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Google Test 설명서는 [Google Test 입문](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)을 참조하세요. Boost.Test는 [Boost Test 라이브러리: 단위 테스트 프레임워크](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html)를 참조하세요.
+> 이 섹션에서는 C/C++용 Microsoft 단위 테스트 프레임워크에 대한 구문을 보여 줍니다. 문서화된 내용은 다음과 같습니다. [Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 참조](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Google Test 설명서는 [Google Test 입문](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)을 참조하세요. Boost.Test는 [Boost Test 라이브러리: 단위 테스트 프레임워크](https://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html)를 참조하세요.
 
 테스트 프로젝트의 *.cpp* 파일에는 테스트 코드 작성 방법의 예제로 정의된 스텁 클래스와 메서드가 있습니다. 서명은 메소드를 **테스트 탐색기** 창에서 검색 가능하게 하는 TEST_CLASS 및 TEST_METHOD 매크로를 사용합니다.
 

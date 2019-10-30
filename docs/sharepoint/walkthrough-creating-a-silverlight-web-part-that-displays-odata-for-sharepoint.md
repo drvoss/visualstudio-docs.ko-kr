@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 859944c51be0abf2e6a326a06a5e4432a69ee4ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bd2e42f48a6881b533a2f098e47ac92511b85aa3
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655933"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984834"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>연습: SharePoint 용 OData를 표시 하는 Silverlight 웹 파트 만들기
-  SharePoint 2010는 OData를 통해 목록 데이터를 노출 합니다. SharePoint에서 OData 서비스는 RESTful 서비스 ListData .svc에 의해 구현 됩니다. 이 연습에서는 Silverlight 응용 프로그램을 호스팅하는 SharePoint 웹 파트를 만드는 방법을 보여 줍니다. Silverlight 응용 프로그램은 ListData .svc를 사용 하 여 SharePoint 알림 목록 정보를 표시 합니다. 자세한 내용은 [SharePoint FOUNDATION REST 인터페이스](http://go.microsoft.com/fwlink/?LinkId=225999) 및 [Open Data Protocol](http://go.microsoft.com/fwlink/?LinkId=226000)을 참조 하세요.
+  SharePoint 2010는 OData를 통해 목록 데이터를 노출 합니다. SharePoint에서 OData 서비스는 RESTful 서비스 ListData .svc에 의해 구현 됩니다. 이 연습에서는 Silverlight 응용 프로그램을 호스팅하는 SharePoint 웹 파트를 만드는 방법을 보여 줍니다. Silverlight 응용 프로그램은 ListData .svc를 사용 하 여 SharePoint 알림 목록 정보를 표시 합니다. 자세한 내용은 [SharePoint FOUNDATION REST 인터페이스](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) 및 [Open Data Protocol](https://www.odata.org/)을 참조 하세요.
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -123,7 +123,7 @@ ms.locfileid: "72655933"
     DataServiceCollection<AnnouncementsItem> announcements = new DataServiceCollection<AnnouncementsItem>();
     ```
 
-11. @No__t_0 프로시저를 다음으로 바꿉니다.
+11. `UserControl_Loaded` 프로시저를 다음으로 바꿉니다.
 
     ```vb
     Private Sub UserControl_Loaded_1(sender As Object, e As RoutedEventArgs)
@@ -228,7 +228,7 @@ ms.locfileid: "72655933"
      이제 Silverlight 웹 파트는 SharePoint 사이트의 알림 데이터를 표시 해야 합니다. 기본적으로이 페이지는 SharePoint의 사이트 페이지 목록에 저장 됩니다.
 
     > [!NOTE]
-    > 도메인 간에 Silverlight의 데이터에 액세스 하는 경우 Silverlight는 웹 응용 프로그램을 악용 하는 데 사용할 수 있는 보안 취약성을 방지 합니다. Silverlight에서 원격 데이터에 액세스할 때 문제가 발생 하면 [도메인 경계에서 서비스를 사용할 수 있도록 설정](http://go.microsoft.com/fwlink/?LinkId=223276)을 참조 하세요.
+    > 도메인 간에 Silverlight의 데이터에 액세스 하는 경우 Silverlight는 웹 응용 프로그램을 악용 하는 데 사용할 수 있는 보안 취약성을 방지 합니다. Silverlight에서 원격 데이터에 액세스할 때 문제가 발생 하면 [도메인 경계에서 서비스를 사용할 수 있도록 설정](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc197955(v=vs.95))을 참조 하세요.
 
 ## <a name="see-also"></a>참조
 - [SharePoint 용 웹 파트 만들기](../sharepoint/creating-web-parts-for-sharepoint.md)

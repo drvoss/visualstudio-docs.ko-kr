@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aca6c91724e26059011c1044c9a2d501c7995bc5
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 93e2d5abb9c8fda9d4a1300a9bb0958ac9266499
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255841"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986167"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Office 솔루션의 컨트롤에 데이터 바인딩
   컨트롤이 자동으로 데이터를 표시할 수 있도록 Windows Forms 컨트롤 및 Microsoft Office Word 문서 또는 Microsoft Office Excel 워크시트의 *호스트 컨트롤* 을 데이터 원본에 바인딩할 수 있습니다. 애플리케이션 수준과 문서 수준 프로젝트 둘 다 데이터를 컨트롤에 바인딩할 수 있습니다.
@@ -33,8 +33,6 @@ ms.locfileid: "71255841"
  호스트 컨트롤은 Word의 콘텐츠 컨트롤 및 Excel의 명명된 범위와 같이 Word 및 Excel 개체 모델에 있는 개체를 확장합니다. 자세한 내용은 [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)를 참조 하세요.
 
  Windows Forms와 호스트 컨트롤 모두 데이터 세트 및 데이터 테이블 같은 데이터 원본에 대해 *단순 데이터 바인딩*과 *복합 데이터 바인딩*을 둘 다 지원하는 Windows Forms 데이터 바인딩 모델을 사용합니다. Windows Forms의 데이터 바인딩 모델에 대 한 자세한 내용은 [데이터 바인딩 및 Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)를 참조 하세요.
-
- ![비디오에 연결](../vsto/media/playvideo.gif "비디오에 연결") 관련 비디오 데모를 보려면 어떻게 할까요?를 [참조 하세요. Excel에서 데이터베이스 데이터 사용 ](http://go.microsoft.com/fwlink/?LinkID=130287).
 
 ## <a name="simple-data-binding"></a>단순 데이터 바인딩
  단순 데이터 바인딩은 컨트롤 속성이 데이터 테이블의 값 등 단일 데이터 요소에 바인딩될 때 존재합니다. 예를 들어 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤은 데이터 세트의 필드로 바인딩될 수 있는 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 속성을 가집니다. 데이터 세트의 필드가 변경되면 명명된 범위의 값도 변경됩니다. <xref:Microsoft.Office.Tools.Word.XMLNodes> 컨트롤을 제외한 모든 호스트 컨트롤은 단일 데이터 바인딩을 지원합니다. <xref:Microsoft.Office.Tools.Word.XMLNodes> 컨트롤은 컬렉션이므로 데이터 바인딩을 지원하지 않습니다.
@@ -46,7 +44,7 @@ ms.locfileid: "71255841"
  [!code-vb[Trin_BindableComponent#4](../vsto/codesnippet/VisualBasic/Trin_BindableComponent/Sheet1.vb#4)]
  [!code-csharp[Trin_BindableComponent#4](../vsto/codesnippet/CSharp/Trin_BindableComponent/Sheet1.cs#4)]
 
- 간단한 데이터 바인딩을 [보여 주는 연습은 연습: 문서 수준 프로젝트 및](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md) [연습에 대 한 문서 수준 프로젝트의 단순 데이터 바인딩: Vsto 추가 기능 프로젝트에 대 한 vsto 추가](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md) 기능 프로젝트의 단순 데이터 바인딩
+ 간단한 데이터 바인딩을 보여 주는 연습은 연습: 문서 수준 프로젝트에 대 한 [문서 수준 프로젝트의 단순 데이터 바인딩](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md) 및 연습: vsto 추가 기능 프로젝트에 대 한 [vsto 추가 기능 프로젝트의 단순 데이터 바인딩](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md) 을 참조 하세요.
 
 ## <a name="complex-data-binding"></a>복합 데이터 바인딩
  복합 데이터 바인딩은 컨트롤 속성이 데이터 테이블의 여러 열과 같이 둘 이상의 데이터 요소에 바인딩될 때 존재합니다. Excel용 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤은 복합 데이터 바인딩을 지원하는 유일한 호스트 컨트롤입니다. 또한 <xref:System.Windows.Forms.DataGridView> 컨트롤 같이 복합 데이터 바인딩을 지원하는 많은 Windows Forms 컨트롤이 있을 수 있습니다.
@@ -58,7 +56,7 @@ ms.locfileid: "71255841"
  [!code-csharp[Trin_ExcelListObject#18](../vsto/codesnippet/CSharp/Trin_ExcelListObject/Trin_ExcelListObject.cs#18)]
  [!code-vb[Trin_ExcelListObject#18](../vsto/codesnippet/VisualBasic/Trin_ExcelListObject/Sheet1.vb#18)]
 
- 복합 데이터 바인딩을 [보여 주는 연습은 연습: 문서 수준 프로젝트 및](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md) [연습에 대 한 문서 수준 프로젝트의 복합 데이터 바인딩: Vsto 추가 기능 프로젝트에 대 한 vsto 추가](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md) 기능 프로젝트의 복합 데이터 바인딩
+ 복합 데이터 바인딩을 보여 주는 연습은 연습: 문서 수준 프로젝트에 대 한 [문서 수준 프로젝트의 복합 데이터 바인딩](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md) 및 연습: vsto 추가 기능 프로젝트에 대 한 [vsto 추가 기능 프로젝트의 복합 데이터 바인딩](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md) 을 참조 하세요.
 
 ## <a name="display-data-in-documents-and-workbooks"></a>문서 및 통합 문서에 데이터 표시
  문서 수준 프로젝트에서 **데이터 원본** 창을 사용하여 데이터 바인딩된 컨트롤을 문서 또는 통합 문서에 쉽게 추가할 수 있으며 같은 방식으로 Windows Forms에도 사용할 수 있습니다. **데이터 소스** 창을 사용 하는 방법에 대 한 자세한 내용은 [Visual Studio에서 데이터에 컨트롤 Windows Forms 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) 및 [새 데이터 소스 추가](../data-tools/add-new-data-sources.md)를 참조 하세요.
@@ -97,9 +95,9 @@ ms.locfileid: "71255841"
 
  <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤을 사용해 복합 데이터 바인딩을 수행하는 경우는 메모리 내 데이터 원본을 명시적으로 업데이트 할 필요가 없습니다. 이 경우 추가 코드 없이 변경 내용을 자동으로 메모리 내 데이터 원본으로 보냅니다.
 
- 자세한 내용은 [방법: 호스트 컨트롤](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)의 데이터로 데이터 소스를 업데이트 합니다.
+ 자세한 내용은 [방법: 호스트 컨트롤의 데이터로 데이터 소스 업데이트](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [데이터 바인딩 및 Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)
 - [방법: Windows Form에 단순 바인딩된 컨트롤 만들기](/dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form)
 - [Visual Studio에서 데이터에 Windows Forms 컨트롤 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

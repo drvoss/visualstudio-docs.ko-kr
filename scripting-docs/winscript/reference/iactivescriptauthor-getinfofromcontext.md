@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 457b2ad1bda3226caf3604e3ccd6b976f01bca83
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: b8b9ad4677d580d495c72866be57712476d6a9c7
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576207"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985319"
 ---
 # <a name="iactivescriptauthorgetinfofromcontext"></a>IActiveScriptAuthor::GetInfoFromContext
 코드 블록의 지정 된 문자에 대 한 형식 정보 및 앵커 위치를 반환 합니다. 멤버 IntelliSense, 전역 목록 및 매개 변수 팁에 대 한 정보를 제공 합니다.  
@@ -81,14 +81,14 @@ HRESULT GetInfoFromContext(
  이는 현재 위치를 포함 하는 컨텍스트가 함수 호출이 고 `dwListTypesRequested`에 SCRIPT_CMPL_PARAMLIST 포함 된 경우에만 채워집니다. 그렇지 않으면 결과가 정의 되지 않습니다.  
   
  `pmemid`  
- 제한이 @No__t_0 out 매개 변수의 형식으로 정의 된 함수의 MEMBERID입니다.  
+ 제한이 `IProvideMultipleClassInfo``ppunk` out 매개 변수의 형식으로 정의 된 함수의 MEMBERID입니다.  
   
  이는 `dwListTypesRequested`에 SCRIPT_CMPL_PARAMLIST 포함 된 경우에만 채워집니다.  
   
  `piCurrentParameter`  
  제한이 현재 위치를 포함 하는 매개 변수의 인덱스입니다. 현재 위치가 함수 이름에 있으면-1이 반환 됩니다.  
   
- @No__t_0 값은 `dwListTypesRequested`에 SCRIPT_CMPL_PARAMLIST 포함 된 경우에만 채워집니다.  
+ `piCurrentParameter` 값은 `dwListTypesRequested`에 SCRIPT_CMPL_PARAMLIST 포함 된 경우에만 채워집니다.  
   
  `ppunk`  
  형식 정보 이며 `IProvideMultipleClassInfo` 개체의 형식으로 제공 됩니다.  
@@ -103,5 +103,5 @@ HRESULT GetInfoFromContext(
 ## <a name="remarks"></a>주의  
   
 ## <a name="see-also"></a>참조  
- [IProvideMultipleClassInfo 인터페이스](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)    
+ [IProvideMultipleClassInfo 인터페이스](/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)    
  [IActiveScriptAuthor 인터페이스](../../winscript/reference/iactivescriptauthor-interface.md)

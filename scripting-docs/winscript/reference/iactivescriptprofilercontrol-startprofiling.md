@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cfc59dd43ac3eed433f92af2cdd0aefe40392c4a
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: b37b60f50351496faceb97190ae0d173eba3a5f4
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72571577"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983264"
 ---
 # <a name="iactivescriptprofilercontrolstartprofiling"></a>IActiveScriptProfilerControl::StartProfiling
-스크립팅 엔진에서 프로 파일링을 시작 합니다. 스크립팅 엔진은 [CoCreateInstance](https://docs.microsoft.com/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance)를 호출 하 여 프로파일러 개체의 인스턴스를 만듭니다.  
+스크립팅 엔진에서 프로 파일링을 시작 합니다. 스크립팅 엔진은 [CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance)를 호출 하 여 프로파일러 개체의 인스턴스를 만듭니다.  
   
 ## <a name="syntax"></a>구문  
   

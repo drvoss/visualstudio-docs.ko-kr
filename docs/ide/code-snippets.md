@@ -8,8 +8,8 @@ f1_keywords:
 helpviewer_keywords:
 - surround with
 - code snippets
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
@@ -17,12 +17,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 89de993337ecd214c7771faf17b24f90fa5e0110
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 09f6e2e9b4b89c7e6fd1fe9a342d4fd05b12e7a9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766250"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747976"
 ---
 # <a name="code-snippets"></a>코드 조각
 
@@ -102,6 +102,6 @@ End Property
 - [코드 조각 사용에 대한 모범 사례](../ide/best-practices-for-using-code-snippets.md)
 - [코드 조각 문제 해결](../ide/troubleshooting-snippets.md)
 - [C# 코드 조각](../ide/visual-csharp-code-snippets.md)
-- [Visual C++ 코드 조각](../ide/visual-cpp-code-snippets.md)
+- [C++ 코드 조각](../ide/visual-cpp-code-snippets.md)
 - [코드 조각 스키마 참조](../ide/code-snippets-schema-reference.md)
 - [코드 조각(Mac용 Visual Studio)](/visualstudio/mac/snippets)

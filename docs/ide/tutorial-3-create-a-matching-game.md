@@ -1,6 +1,6 @@
 ---
 title: '자습서 3: 맞추기 게임 만들기'
-ms.date: 11/04/2016
+ms.date: 10/16/2019
 ms.assetid: 525815c8-2845-45e8-be96-100d1f144725
 ms.topic: tutorial
 ms.technology: vs-ide-general
@@ -9,20 +9,25 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8fafd46561b6a3628989b675b14c493b60da6fe
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 5161f81aaf3edf654a5979f6226449bc52604167
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118700"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516586"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>자습서 3: 맞추기 게임 만들기
 
-이 자습서에서는 플레이어가 숨겨진 아이콘의 쌍을 찾는 일치 게임을 빌드합니다. 다음 방법을 알아봅니다.
+이 자습서에서는 플레이어가 숨겨진 아이콘의 쌍을 찾는 일치 게임을 빌드합니다.
+
+> [!NOTE]
+> 이 자습서에서는 C#과 Visual Basic 모두에 대해 다루고 있으므로 사용 중인 프로그래밍 언어와 관련된 정보를 참조하세요.
+
+이 자습서에서는 다음 작업을 단계별로 안내합니다.
 
 - 아이콘과 같은 개체를 <xref:System.Collections.Generic.List%601> 개체에 저장합니다.
 
-- Visual C#의 `foreach` 루프 또는 Visual Basic의 `For Each` 루프를 사용하여 목록의 개체를 반복합니다.
+- C#의 `foreach` 루프 또는 Visual Basic의 `For Each` 루프를 사용하여 목록의 항목을 반복합니다.
 
 - 참조 변수를 사용하여 폼 상태를 추적합니다.
 
@@ -30,20 +35,11 @@ ms.locfileid: "71118700"
 
 - 시작된 후 카운트다운을 실시하고 단 한 번만 이벤트를 발생시키는 타이머를 만듭니다.
 
-이 자습서를 마치면 프로그램은 다음 그림과 같습니다.
+완료되면 앱은 다음 이미지와 유사하게 표시됩니다.
 
 ![이 자습서에서 만드는 게임](../ide/media/express_finishedgame.png)
 
 ## <a name="tutorial-links"></a>자습서 링크
-
-샘플의 전체 버전을 다운로드하려면 [Complete matching game tutorial sample](https://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba)(전체 일치 게임 자습서 샘플)을 참조하세요.
-
-> [!NOTE]
-> 이 자습서에는 Visual C#과 Visual Basic이 둘 다 설명되어 있으므로 사용 중인 프로그래밍 언어와 관련된 정보를 참조하십시오.
-
-어려운 점이 있거나 프로그래밍 관련 질문이 있는 경우 MSDN 포럼에 질문을 게시해 보십시오. [Visual Basic 포럼](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vbgeneral) 및 [Visual C# 포럼](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=csharpgeneral)을 참조하세요. 또한 훌륭한 비디오 학습 자료가 무료로 제공됩니다. Visual Basic의 프로그래밍에 대한 자세한 내용은 [Visual Basic 기초: 완전 초보자를 위한 개발](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)을 참조하세요. Visual C#의 프로그래밍에 대한 자세한 내용은 [C# 기초: 완전 초보자를 위한 개발](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)을 참조하세요.
-
-## <a name="related-topics"></a>관련된 항목
 
 |제목|설명|
 |-----------|-----------------|
@@ -56,3 +52,15 @@ ms.locfileid: "71118700"
 |[7단계: 쌍 표시](../ide/step-7-keep-pairs-visible.md)|일치하는 쌍이 선택되면 해당 아이콘 쌍을 표시합니다.|
 |[8단계: 게임 플레이어가 이겼는지 여부를 확인하는 메서드 추가](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)|플레이어가 게임에 이겼는지 여부를 확인하기 위해 `CheckForWinner()` 메서드를 추가합니다.|
 |[9단계: 기타 기능 사용](../ide/step-9-try-other-features.md)|아이콘과 색을 변경하고 모눈과 소리를 추가하는 등 다른 기능을 테스트해 봅니다. 보드를 크게 하거나 타이머를 조정해 볼 수 있습니다.|
+
+또한 유용한 비디오 학습 자료가 무료로 제공됩니다. C# 프로그래밍에 대한 자세한 내용은 [C# 기초: 완전 초보자를 위한 개발](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)을 참조하세요. Visual Basic의 프로그래밍에 대한 자세한 내용은 [Visual Basic 기초: 완전 초보자를 위한 개발](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)을 참조하세요.
+
+## <a name="next-steps"></a>다음 단계
+
+자습서를 시작하려면 **[1단계: 프로젝트 만들기 및 양식에 테이블 추가](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)** 를 참조하세요.
+
+## <a name="see-also"></a>참고 항목
+
+* [추가 C# 자습서](/visualstudio/get-started/csharp/)
+* [Visual Basic 자습서](/visualstudio/get-started/visual-basic/)
+* [C++ 자습서](/cpp/get-started/tutorial-console-cpp)

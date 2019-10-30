@@ -1,31 +1,31 @@
 ---
-title: Visual C++ 코드 사용(클래스 디자이너)
+title: C++ 코드 사용(클래스 디자이너)
 ms.date: 06/21/2017
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.cpplimitation
 helpviewer_keywords:
-- Visual C++, Class Designer
-- Class Designer, Visual C++ support
+- C++, Class Designer
+- Class Designer, C++ support
 - Class Designer, limitations
-- Class Designer, tasks in Visual C++
-- Visual C++, class diagrams
+- Class Designer, tasks in C++
+- C++, class diagrams
 - C++, class diagrams
 - C++, Class Designer
 ms.assetid: f5b40921-2ef7-4de0-b595-45b44c79ffa6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 16dbcbecece0e8ec38e3f38391ca5063e2e3d36c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 75faa3e4d38f961c38b23a95765d6466e008714f
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975010"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919042"
 ---
-# <a name="work-with-visual-c-code-in-class-designer"></a>클래스 디자이너에서 Visual C++ 코드 사용
+# <a name="work-with-c-code-in-class-designer"></a>클래스 디자이너에서 C++ 코드 사용
 
 **클래스 디자이너**에는 프로젝트의 코드 요소를 시각적으로 나타내 주는 *클래스 다이어그램*이라는 시각적 디자인 화면이 표시됩니다. 클래스 다이어그램을 사용하여 프로젝트의 클래스 및 기타 형식을 디자인하고 시각화할 수 있습니다.
 
@@ -56,7 +56,7 @@ ms.locfileid: "62975010"
 
 ### <a name="update-and-performance-issues"></a>업데이트 및 성능 문제
 
-Visual C++ 프로젝트의 경우 소스 파일의 변경 내용이 클래스 다이어그램에 나타나는 데는 30~60초가 소요될 수 있습니다. 이 시간 지연으로 인해 **클래스 디자이너**에서 **선택한 항목에서 형식을 찾을 수 없습니다**라는 오류를 throw할 수도 있습니다. 이와 같은 오류가 발생하면 오류 메시지에서 **취소**를 클릭하고 **클래스 뷰**에 해당 코드 요소가 나타날 때까지 기다립니다. 그런 후에 **클래스 디자이너**에서 해당 형식이 표시될 수 있습니다.
+C++ 프로젝트의 경우 소스 파일의 변경 내용이 클래스 다이어그램에 나타나는 데는 30~60초가 소요될 수 있습니다. 이 시간 지연으로 인해 **클래스 디자이너**에서 **선택한 항목에서 형식을 찾을 수 없습니다**라는 오류를 throw할 수도 있습니다. 이와 같은 오류가 발생하면 오류 메시지에서 **취소**를 클릭하고 **클래스 뷰**에 해당 코드 요소가 나타날 때까지 기다립니다. 그런 후에 **클래스 디자이너**에서 해당 형식이 표시될 수 있습니다.
 
 코드에서 변경한 내용으로 클래스 다이어그램이 업데이트되지 않으면 다이어그램을 닫았다가 다시 열어 보세요.
 
@@ -84,15 +84,15 @@ Visual C++ 프로젝트의 경우 소스 파일의 변경 내용이 클래스 �
 
 ### <a name="troubleshoot-other-error-messages"></a>기타 오류 메시지 문제 해결
 
-MSDN(Microsoft Developer Network) 공개 포럼에서 오류 및 경고 문제 해결 관련 지원 정보를 찾을 수 있습니다. [Visual Studio Class Designer Forum](http://go.microsoft.com/fwlink/?linkid=160754)(Visual Studio 클래스 디자이너 포럼)을 참조하세요.
+MSDN(Microsoft Developer Network) 공개 포럼에서 오류 및 경고 문제 해결 관련 지원 정보를 찾을 수 있습니다. [Visual Studio Class Designer Forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsclassdesigner)(Visual Studio 클래스 디자이너 포럼)을 참조하세요.
 
 ## <a name="limitations-for-c-code-elements"></a>C++ 코드 요소에 대한 제한 사항
 
-- Visual C++ 프로젝트가 로드되면 **클래스 디자이너**는 읽기 전용 방식으로 작동합니다. 즉, 클래스 다이어그램을 변경할 수 있지만 클래스 다이어그램에서 변경한 내용을 소스 코드에 저장할 수는 없습니다.
+- C++ 프로젝트가 로드되면 **클래스 디자이너**는 읽기 전용 방식으로 작동합니다. 즉, 클래스 다이어그램을 변경할 수 있지만 클래스 다이어그램에서 변경한 내용을 소스 코드에 저장할 수는 없습니다.
 
-- **클래스 디자이너**에서는 네이티브 C++ 의미 체계만 지원됩니다. 관리 코드로 컴파일된 Visual C++ 프로젝트의 경우 **클래스 디자이너**에는 네이티브 형식인 코드 요소만 시각화됩니다. 따라서 프로젝트에 클래스 다이어그램을 추가할 수는 있지만 `IsManaged` 속성이 `true`로 설정된 요소, 즉 값 형식과 참조 형식은 **클래스 디자이너**에 시각화되지 않습니다.
+- **클래스 디자이너**에서는 네이티브 C++ 의미 체계만 지원됩니다. 관리 코드로 컴파일된 C++ 프로젝트의 경우 **클래스 디자이너**에는 네이티브 형식인 코드 요소만 시각화됩니다. 따라서 프로젝트에 클래스 다이어그램을 추가할 수는 있지만 `IsManaged` 속성이 `true`로 설정된 요소, 즉 값 형식과 참조 형식은 **클래스 디자이너**에 시각화되지 않습니다.
 
-- Visual C++ 프로젝트의 경우 **클래스 디자이너**에서는 형식의 정의만 읽습니다. 예를 들어 헤더 파일(.h)에 형식을 정의하고 해당 멤버는 구현 파일(.cpp)에 정의할 경우, 구현 파일(.cpp)에서 "클래스 다이어그램 보기"를 호출하면 **클래스 디자이너**에 아무 것도 표시되지 않습니다. 또 다른 예로, `#include` 명령문을 사용하여 다른 파일을 포함하지만 실제 클래스 정의는 포함하지 않는 .cpp 파일에서 "클래스 다이어그램 보기"를 호출할 경우에도 **클래스 디자이너**에 아무 것도 표시되지 않습니다.
+- C++ 프로젝트의 경우 **클래스 디자이너**에서는 형식의 정의만 읽습니다. 예를 들어 헤더 파일(.h)에 형식을 정의하고 해당 멤버는 구현 파일(.cpp)에 정의할 경우, 구현 파일(.cpp)에서 "클래스 다이어그램 보기"를 호출하면 **클래스 디자이너**에 아무 것도 표시되지 않습니다. 또 다른 예로, `#include` 명령문을 사용하여 다른 파일을 포함하지만 실제 클래스 정의는 포함하지 않는 .cpp 파일에서 "클래스 다이어그램 보기"를 호출할 경우에도 **클래스 디자이너**에 아무 것도 표시되지 않습니다.
 
 - COM 인터페이스와 형식 라이브러리를 정의하는 IDL 파일(.idl)은 네이티브 C++ 코드로 컴파일되기 전까지는 다이어그램에 표시되지 않습니다.
 
@@ -112,7 +112,7 @@ MSDN(Microsoft Developer Network) 공개 포럼에서 오류 및 경고 문제 �
 
 - [클래스와 형식 디자인 및 보기](designing-and-viewing-classes-and-types.md)
 - [클래스 디자이너 오류에 대한 추가 정보](additional-information-about-errors.md)
-- [클래스 디자이너의 Visual C++ 클래스](visual-cpp-classes.md)
-- [클래스 디자이너의 Visual C++ 구조체](visual-cpp-structures.md)
-- [클래스 디자이너의 Visual C++ 열거형](visual-cpp-enumerations.md)
-- [클래스 디자이너의 Visual C++ 형식 정의](visual-cpp-typedefs.md)
+- [클래스 디자이너의 C++ 클래스](visual-cpp-classes.md)
+- [클래스 디자이너의 C++ 구조체](visual-cpp-structures.md)
+- [클래스 디자이너의 C++ 열거형](visual-cpp-enumerations.md)
+- [클래스 디자이너의 C++ 형식 정의](visual-cpp-typedefs.md)

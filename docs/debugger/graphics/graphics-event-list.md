@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fe890d5a2c88ea9d4d35a6bd01f6012d97e6ce0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d5c4e8f39ff77779985536e53d98ddc2785b109b
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735544"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911496"
 ---
 # <a name="graphics-event-list"></a>그래픽 이벤트 목록
 Visual Studio Graphics Analyzer의 그래픽 이벤트 목록을 사용하여 게임 또는 앱의 프레임 렌더링 중 기록된 Direct3D 이벤트를 살펴봅니다.
@@ -88,7 +88,7 @@ Visual Studio Graphics Analyzer의 그래픽 이벤트 목록을 사용하여 �
 ### <a name="user-defined-events-in-direct3d-11-and-earlier"></a>Direct3D 11 이하의 사용자 정의 이벤트
  Direct3D 11 이하에서 그룹 및 표식을 만들려면 이 섹션에 설명된 API를 사용합니다. 아래 표에서는 Direct3D 11의 여러 버전 및 Direct3D 이전 버전에서 사용할 수 있는 API를 간략히 설명합니다.
 
-|API 설명|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](http://go.microsoft.com/fwlink/p/?LinkID=250967) (Direct3D 11.1)|D3DPerf_ API 패밀리(Direct3D 11.0 및 이전)|
+|API 설명|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](/windows/win32/api/d3d11_1/nn-d3d11_1-id3duserdefinedannotation) (Direct3D 11.1)|D3DPerf_ API 패밀리(Direct3D 11.0 및 이전)|
 |---------------------| - | - | - |
 |이벤트 그룹 시작|`BeginEventInt`|`BeginEvent`|`D3DPerf_BeginEvent`|
 |이벤트 그룹 종료|`EndEventInt`|`EndEvent`|`D3DPerf_EndEvent`|
@@ -99,7 +99,7 @@ Visual Studio Graphics Analyzer의 그래픽 이벤트 목록을 사용하여 �
 <!-- VERSIONLESS -->
 <a name="resource-history"></a>
 ## <a name="resource-history"></a>리소스 기록
-Visual Studio 2017 이상에는 **리소스 기록** 창이 포함 됩니다.  **이벤트 목록** 창의 항목 옆에 있는 조사식 아이콘 ![watch ](media/gfx_watch.png) 아이콘을 선택 하면 아래에 표시 된 **리소스 기록** 창이 표시 됩니다.
+Visual Studio 2017 이상에는 **리소스 기록** 창이 포함 됩니다.  **이벤트 목록** 창의 항목 옆에 있는 조사식 아이콘 ![](media/gfx_watch.png) 조사식 아이콘을 선택 하면 아래에 표시 된 **리소스 기록** 창이 표시 됩니다.
 
 ![리소스 기록](media/gfx_diag_resource_history.png)
 
@@ -109,7 +109,7 @@ Visual Studio 2017 이상에는 **리소스 기록** 창이 포함 됩니다.  *
 |-----------| - |
 | **Type** | 항목의 형식 (일반적으로 *만들기*, *읽기* 및 *쓰기*)을 표시 합니다. |
 | **보기** | 해당 시점에 리소스의 미리 보기를 표시 합니다.  축소판 그림을 두 번 클릭 하 여 해당 시간에 리소스의 세부 정보 보기를 엽니다. |
-| **Event** | 이벤트를 생성 한 메서드 호출을 보여 줍니다.  적절 한 줄에서 ](media/gfx_watch.png) 아이콘 ![watch 아이콘을 선택 하 여 개별 항목에 대 한 추가 기록을 볼 수 있습니다.  또한 위 스크린샷에서 `m_commandList` 같이 파란색 텍스트로 그려진 모든 항목을 선택 하 여 자세한 내용을 확인할 수 있습니다. |
+| **Event** | 이벤트를 생성 한 메서드 호출을 보여 줍니다.  각 항목에 대 한 추가 기록은 적절 한 줄에서 조사식 아이콘 ![조사식 아이콘](media/gfx_watch.png)를 선택 하 여 볼 수 있습니다.  또한 위 스크린샷에서 `m_commandList` 같이 파란색 텍스트로 그려진 모든 항목을 선택 하 여 자세한 내용을 확인할 수 있습니다. |
 
 <!-- /VERSIONLESS -->
 

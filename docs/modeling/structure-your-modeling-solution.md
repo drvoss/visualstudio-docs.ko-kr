@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73a1c6458bf6afc5d6fce34208dd8c2c3ddda37f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: fecf0d146c1116e6ec6376ffd9ad929cc9179d1c
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748209"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985218"
 ---
 # <a name="structure-your-modeling-solution"></a>모델링 솔루션 구성
 
@@ -30,7 +30,7 @@ ms.locfileid: "72748209"
 
 ### <a name="to-divide-an-application-into-layers"></a>애플리케이션을 레이어로 나누려면
 
-1. 웹 애플리케이션, 서비스 애플리케이션 또는 데스크톱 애플리케이션과 같은 애플리케이션 구조에 따라 솔루션 구조를 지정합니다. 다양 한 공통 아키텍처는 [Microsoft 응용 프로그램 아키텍처 가이드의 Application archetype](http://go.microsoft.com/fwlink/?LinkId=196681)에 설명 되어 있습니다.
+1. 웹 애플리케이션, 서비스 애플리케이션 또는 데스크톱 애플리케이션과 같은 애플리케이션 구조에 따라 솔루션 구조를 지정합니다. 다양 한 공통 아키텍처는 [Microsoft 응용 프로그램 아키텍처 가이드의 Application archetype](/previous-versions/msp-n-p/ee658107(v=pandp.10))에 설명 되어 있습니다.
 
 2. 아키텍처 솔루션을 호출 하는 Visual Studio 솔루션을 만듭니다. 이 솔루션은 시스템의 전반적인 디자인을 만드는 데 사용됩니다. 모델을 포함하지만 코드는 포함하지 않습니다.
 
@@ -92,7 +92,7 @@ ms.locfileid: "72748209"
 
 ### <a name="to-create-a-solution-template"></a>솔루션 템플릿을 만들려면
 
-1. [템플릿 내보내기 마법사를 다운로드 하 여 설치](http://go.microsoft.com/fwlink/?LinkId=196686)합니다.
+1. [템플릿 내보내기 마법사를 다운로드 하 여 설치](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ExportTemplateWizard)합니다.
 
 2. 이후 프로젝트의 시작점으로 사용할 솔루션 구조를 만듭니다.
 

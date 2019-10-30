@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 20df85952b4e76e60d6e93067c1f1e7838b692cd
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: a44781c6fea0ecf75dcdb8a5ab2e2b3bed8e52e9
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "69551724"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986145"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Windows Installer를 사용 하 여 Office 솔루션 배포
 
@@ -59,15 +59,15 @@ Visual Studio를 사용하여 Windows Installer를 만들면 최종 사용자의
 
 ClickOnce를 사용 하 여 Office 솔루션을 배포 하는 방법에 대 한 자세한 내용은 [clickonce를 사용 하 여 office 솔루션 배포](../vsto/deploying-an-office-solution-by-using-clickonce.md)를 참조 하세요.
 
-@No__t_0를 사용 하 여 Windows Installer 파일을 만드는 방법에 대 한 자세한 내용은 [Windows Installer를 사용 하 여 Visual Studio 2010 Tools For Office 솔루션 배포](http://go.microsoft.com/fwlink/?LinkId=201807)를 참조 하세요.
+[!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]를 사용 하 여 Windows Installer 파일을 만드는 방법에 대 한 자세한 내용은 [Windows Installer를 사용 하 여 Visual Studio 2010 Tools For Office 솔루션 배포](/previous-versions/visualstudio/visual-studio-2010/ff937654(v=msdn.10))를 참조 하세요.
 
 ## <a name="Download"></a>샘플 다운로드
 이 항목에서는 다음과 같은 다운로드 가능한 샘플을 사용합니다.
 
 |예제<br /><br />|설명<br /><br />|
 |----------|---------------|
-|[ExcelAddIn](http://go.microsoft.com/fwlink/?LinkID=275492)<br /><br />|32비트 또는 64비트 버전의 Office를 실행하는 컴퓨터에 설치할 수 있는 Excel VSTO 추가 기능입니다.<br /><br />|
-|[ExcelWorkbook](http://go.microsoft.com/fwlink/?LinkID=275493)<br /><br />|32비트 또는 64비트 버전의 Office를 실행하는 컴퓨터에 설치할 수 있는 Excel 문서 수준 사용자 지정입니다.<br /><br />|
+|[ExcelAddIn](https://code.msdn.microsoft.com/VSTO-Deploy-an-Office-fbcc09ad)<br /><br />|32비트 또는 64비트 버전의 Office를 실행하는 컴퓨터에 설치할 수 있는 Excel VSTO 추가 기능입니다.<br /><br />|
+|[ExcelWorkbook](https://code.msdn.microsoft.com/VSTO-Deploy-a-Customization-f70fae33)<br /><br />|32비트 또는 64비트 버전의 Office를 실행하는 컴퓨터에 설치할 수 있는 Excel 문서 수준 사용자 지정입니다.<br /><br />|
 
 ## <a name="ApplySecurity"></a>솔루션에 신뢰를 부여하는 방법 결정
 사용자 컴퓨터에서 솔루션을 실행하려면 먼저 관리자가 다음 방법 중 하나로 신뢰를 부여하거나 사용자가 솔루션을 설치할 때 신뢰 프롬프트에 응답해야 합니다.
@@ -231,9 +231,9 @@ Office 프로젝트의 출력을 포함하도록 **OfficeAddInSetup** 프로젝�
 
 10. **바탕 화면** 폴더에서 *Visual Studio 2010 Tools for Office Runtime. prq* 파일을 컴퓨터의 다음 디렉터리 중 하나에 복사 합니다.
 
-   32 비트 운영 체제: *%ProgramFiles%\InstallShield\2013LE\SetupPrerequisites \\*
+   32 비트 운영 체제: *%ProgramFiles%\InstallShield\2013LE\SetupPrerequisites\\*
 
-   64 비트 운영 체제: *% ProgramFiles (x86)% \ 2013LE \ SetupPrerequisites 조건 \\*
+   64 비트 운영 체제: *% ProgramFiles (x86)% \ 2013LE \ SetupPrerequisites 조건\\*
 
 11. InstallShield 프로젝트의 **재배포 가능** 페이지에서 **새로 고침** 단추를 선택하여 다음과 같이 재배포 가능 구성 요소 목록을 새로 고칩니다.
 
@@ -510,4 +510,4 @@ VSTO 추가 기능을 컴퓨터의 모든 사용자에 대해 설치할지(컴�
 - [사용자 지정 문서 속성 개요](../vsto/custom-document-properties-overview.md)
 - [Office 솔루션에 신뢰 부여](../vsto/granting-trust-to-office-solutions.md)
 - [문서에 신뢰 부여](../vsto/granting-trust-to-documents.md)
-- [Windows Installer를 사용 하 여 Visual Studio 2010 Tools for Office 솔루션 배포](http://go.microsoft.com/fwlink/?LinkId=201807)
+- [Windows Installer를 사용 하 여 Visual Studio 2010 Tools for Office 솔루션 배포](/previous-versions/visualstudio/visual-studio-2010/ff937654(v=msdn.10))

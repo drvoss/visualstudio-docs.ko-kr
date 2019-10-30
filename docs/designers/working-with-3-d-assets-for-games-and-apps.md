@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55986a703bd53318f8c0f74b8cf661412a82b716
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4269a6f17c83e7fe6f111c4e564ace0e40cfa7e6
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72634006"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888483"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>게임 및 앱을 위한 3D 자산 작업
 
@@ -46,11 +46,11 @@ Visual Studio 모델 편집기를 사용하여 몇 가지 공통 형식으로 3D
 그래프 기반 셰이더 디자인 도구인 Visual Studio 셰이더 디자이너를 사용하여 HLSL 프로그래밍을 알 필요 없이 사용자 지정 시각적 효과를 만들 수 있습니다.
 
 > [!NOTE]
-> DirectX 프로그래밍을 시작하는 방법에 대한 자세한 내용은 [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633)를 참조하세요. DirectX 기반 앱을 디버그하는 방법에 대한 자세한 내용은 [그래픽 진단(DirectX 그래픽 디버그)](../debugger/graphics/visual-studio-graphics-diagnostics.md)을 참조하세요.
+> DirectX 프로그래밍을 시작하는 방법에 대한 자세한 내용은 [DirectX](/windows/win32/directx)를 참조하세요. DirectX 기반 앱을 디버그하는 방법에 대한 자세한 내용은 [그래픽 진단(DirectX 그래픽 디버그)](../debugger/graphics/visual-studio-graphics-diagnostics.md)을 참조하세요.
 
 ## <a name="directx-version-compatibility"></a>DirectX 버전 호환성
 
-Visual Studio는 DirectX를 사용하여 2D 및 3D 자산을 렌더링합니다. DirectX 11 렌더러 또는 WARP(Windows Advanced Rasterization Platform) 소프트웨어 렌더러를 선택할 수 있습니다. DirectX 11 렌더러는 DirectX 11 및 DirectX 10 GPU에서 고성능 하드웨어 가속 렌더링을 제공합니다. WARP 렌더러는 자산이 광범위한 컴퓨터에서 작동하는지 확인하는 데 도움이 됩니다. 여기에는 최신 그래픽 하드웨어가 없는 컴퓨터와 통합 그래픽 하드웨어가 있는 컴퓨터가 포함됩니다. WARP에 대한 자세한 내용은 [WARP(Windows Advanced Rasterization Platform) 가이드](http://go.microsoft.com/fwlink/p/?LinkId=224634)를 참조하세요.
+Visual Studio는 DirectX를 사용하여 2D 및 3D 자산을 렌더링합니다. DirectX 11 렌더러 또는 WARP(Windows Advanced Rasterization Platform) 소프트웨어 렌더러를 선택할 수 있습니다. DirectX 11 렌더러는 DirectX 11 및 DirectX 10 GPU에서 고성능 하드웨어 가속 렌더링을 제공합니다. WARP 렌더러는 자산이 광범위한 컴퓨터에서 작동하는지 확인하는 데 도움이 됩니다. 여기에는 최신 그래픽 하드웨어가 없는 컴퓨터와 통합 그래픽 하드웨어가 있는 컴퓨터가 포함됩니다. WARP에 대한 자세한 내용은 [WARP(Windows Advanced Rasterization Platform) 가이드](/windows/win32/direct3darticles/directx-warp)를 참조하세요.
 
 ## <a name="related-topics"></a>관련 항목
 

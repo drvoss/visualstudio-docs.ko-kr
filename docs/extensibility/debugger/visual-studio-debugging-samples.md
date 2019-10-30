@@ -12,16 +12,16 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e43c2b38d1da055a1a0a4533acc61cb3b8e6760
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ea408640b47b04041e99b9a4bff2605b6231a92f
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348291"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981229"
 ---
 # <a name="visual-studio-debugging-samples"></a>Visual Studio 디버깅 샘플
-두 샘플에 사용 하 여 Visual Studio 디버거를 확장 하는 방법을 보여 줍니다 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]합니다.
+두 샘플은 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]를 사용 하 여 Visual Studio 디버거를 확장 하는 방법을 보여 줍니다.
 
-- 관리 되는 언어에 대 한 디버거 식 계산기 샘플에 포함 된 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]합니다. 에 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 창에서 클릭 합니다 **샘플** 탭을 클릭 **모든** 또는 **C#** 언어 및 클릭 한 다음 목록에서 **디버거**.
+- 관리 되는 언어에 대 한 디버거 식 계산기 예제는 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]에 포함 되어 있습니다. [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 창에서 **샘플** 탭을 클릭 하 고 **전체** 또는 **C#** 언어 목록에서 **디버거**를 클릭 합니다.
 
-- Visual Studio 디버그 엔진 샘플에서는 기본 언어에 대 한이 제품은 MSDN 코드 갤러리의입니다. 자세한 내용은 [Visual Studio 디버그 엔진 샘플](http://go.microsoft.com/fwlink/?LinkId=150236) Microsoft 웹 사이트에서.
+- 네이티브 언어용 Visual Studio 디버그 엔진 샘플은 MSDN 코드 갤러리에서 사용할 수 있습니다. 자세한 내용은 Microsoft 웹 사이트에서 [Visual Studio 디버그 엔진 샘플](https://code.msdn.microsoft.com/Visual-Studio-Debug-Engine-c2e21c0e) 을 참조 하세요.

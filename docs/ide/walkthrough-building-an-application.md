@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8964fc81b8323b6720d7c6d960449c7a9134658b
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 0f94cc62cdadb2df3806f5b188278f49e4041235
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416894"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647167"
 ---
 # <a name="walkthrough-build-an-application"></a>연습: 애플리케이션 구축
 
@@ -65,7 +65,7 @@ ms.locfileid: "68416894"
 
 ### <a name="build-the-solution"></a>솔루션 빌드
 
-- 메뉴 모음에서 **빌드** > **솔루션 빌드**를 선택합니다.
+- 메뉴 모음에서 **빌드** > **솔루션 빌드**를 선택하거나 **Ctrl**+**Shift**+**B**를 누릅니다.
 
     **출력** 창에는 빌드 결과가 표시됩니다. 빌드에 성공했습니다.
 

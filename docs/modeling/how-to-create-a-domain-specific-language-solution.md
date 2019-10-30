@@ -13,12 +13,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93e51a1daee6e9635305f4d8a5d275106af7947e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f6d4a19143ccde160a455a8247d10e5cc391e78c
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609390"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985121"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>방법: 도메인별 언어 솔루션 만들기
 DSL (도메인 특정 언어)은 특수화 된 Visual Studio 솔루션을 사용 하 여 만듭니다.
@@ -114,7 +114,7 @@ DSL (도메인 특정 언어)은 특수화 된 Visual Studio 솔루션을 사용
 
  **기존 강력한 이름 키 사용** DSL을 다른 어셈블리와 통합 하려는 경우이 옵션을 사용 합니다.
 
- 강력한 이름 지정에 대 한 자세한 내용은 [강력한 이름의 어셈블리 만들기 및 사용](http://go.microsoft.com/fwlink/?LinkId=186073)을 참조 하세요.
+ 강력한 이름 지정에 대 한 자세한 내용은 [강력한 이름의 어셈블리 만들기 및 사용](/dotnet/standard/assembly/create-use-strong-named)을 참조 하세요.
 
 ## <a name="see-also"></a>참조
 

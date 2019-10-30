@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 852070c74a7e7171525a5feaa6cc7617fe83c00d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: bcdb1b2b6dc4b64d180eb03fc76b26b4ef16e9d0
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925360"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911413"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>IntelliTrace 기능 (C#, Visual Basic, C++)
 
-IntelliTrace를 사용하여 애플리케이션의 이벤트 및 메서드 호출을 기록하고 실행 중 다양한 지점에서 상태(호출 스택 및 지역 변수 값)를 검사할 수 있습니다. 평소와 같이 디버깅을 시작하면 됩니다. IntelliTrace가 기본적으로 설정되어 있으므로 **이벤트** 탭 아래의 새로운 **진단 도구** 창에서 IntelliTrace가 기록하는 정보를 확인할 수 있습니다. 이벤트를 선택하고 **기록 디버깅 활성화**를 클릭하면 호출 스택 및 이 이벤트에 대해 기록된 로컬 변수를 볼 수 있습니다.
+IntelliTrace를 사용하여 애플리케이션의 이벤트 및 메서드 호출을 기록하고 실행 중 다양한 지점에서 상태(호출 스택 및 지역 변수 값)를 검사할 수 있습니다. 일반적인 방법으로 디버깅을 시작 합니다. IntelliTrace는 기본적으로 설정 되어 있으며, IntelliTrace가 기록 하는 정보를 새 **진단 도구** 창의 **이벤트** 탭에 표시 합니다. 이벤트를 선택 하 고 **기록 디버깅 활성화를 클릭 합니다.** 이 이벤트에 대해 기록 된 호출 스택과 지역 변수를 확인 합니다.
 
-단계별 설명을 보려면 [연습: IntelliTrace](../debugger/walkthrough-using-intellitrace.md)사용.
+단계별 설명을 보려면 [연습: IntelliTrace 사용](../debugger/walkthrough-using-intellitrace.md)을 참조하세요.
 
 IntelliTrace는 Visual Studio Enterprise Edition에서 사용할 수 있으며 Visual Studio Professional 또는 Community Edition에서는 사용할 수 없습니다.
 
@@ -123,7 +123,7 @@ IntelliTrace 데이터를 파일에 저장하면 IntelliTrace가 수집한 프�
 
 ## <a name="forums"></a>포럼
 
-[Visual Studio 디버거](http://go.microsoft.com/fwlink/?LinkId=262263)
+[Visual Studio 디버거](https://social.msdn.microsoft.com/Forums/en-US/home)
 
 ## <a name="videos"></a>비디오
 

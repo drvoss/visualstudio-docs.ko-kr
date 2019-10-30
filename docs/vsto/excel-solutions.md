@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 532689afe4e07c3151be6eac923f2b591aa34f46
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 53351354a470eb5770f07b9afd527b81c4e587b6
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253629"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986076"
 ---
 # <a name="excel-solutions"></a>Excel 솔루션
   Visual Studio에서는 Microsoft Office Excel용 VSTO 추가 기능 및 문서 수준 사용자 지정을 만드는 데 사용할 수 있는 프로젝트 템플릿을 제공합니다. 이러한 솔루션을 사용하여 Excel을 자동화하고, Excel 기능을 확장한 다음 Excel UI(사용자 인터페이스)를 사용자 지정할 수 있습니다. 문서 수준 사용자 지정과 VSTO 추가 기능 간의 차이점에 대 한 자세한 내용은 [Office 솔루션 개발 &#40;개요 VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)를 참조 하세요.
@@ -58,7 +58,7 @@ ms.locfileid: "71253629"
 ## <a name="doclevel"></a>Excel 용 문서 수준 사용자 지정 개발
  Microsoft Office Excel용 문서 수준 사용자 지정은 특정 통합 문서와 연결된 어셈블리로 구성됩니다. 어셈블리는 일반적으로 UI를 사용자 지정하고 Excel을 자동화하여 통합 문서를 확장합니다. Excel 자체와 연결된 VSTO 추가 기능과 달리 사용자 지정에 구현하는 기능은 연결된 통합 문서가 Excel에서 열려 있는 경우에만 사용할 수 있습니다.
 
- Excel 용 문서 수준 사용자 지정 프로젝트를 만들려면 Visual Studio의 **새 프로젝트** 대화 상자에서 excel 통합 문서 또는 excel 서식 파일 프로젝트 템플릿을 사용 합니다. 자세한 내용은 [방법: Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)에서 Office 프로젝트를 만듭니다.
+ Excel 용 문서 수준 사용자 지정 프로젝트를 만들려면 Visual Studio의 **새 프로젝트** 대화 상자에서 excel 통합 문서 또는 excel 서식 파일 프로젝트 템플릿을 사용 합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
 
  문서 수준 사용자 지정의 작동 방식에 대 한 자세한 내용은 [문서 수준 사용자 지정의 아키텍처](../vsto/architecture-of-document-level-customizations.md)를 참조 하세요.
 
@@ -70,14 +70,14 @@ ms.locfileid: "71253629"
 ## <a name="applevel"></a>Excel 용 VSTO 추가 기능 개발
  Microsoft Office Excel용 VSTO 추가 기능은 Excel에서 로드되는 어셈블리로 구성됩니다. 어셈블리는 일반적으로 UI를 사용자 지정하고 Excel을 자동화하여 Excel을 확장합니다. 특정 통합 문서와 연결 된 문서 수준 사용자 지정과 달리 VSTO 추가 기능에서 구현 하는 기능은 단일 통합 문서로 제한 되지 않습니다.
 
- Excel 용 VSTO 추가 기능 프로젝트를 만들려면 Visual Studio의 **새 프로젝트** 대화 상자에서 excel 통합 문서 또는 excel 서식 파일 프로젝트 템플릿을 사용 합니다. 자세한 내용은 [방법: Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)에서 Office 프로젝트를 만듭니다.
+ Excel 용 VSTO 추가 기능 프로젝트를 만들려면 Visual Studio의 **새 프로젝트** 대화 상자에서 excel 통합 문서 또는 excel 서식 파일 프로젝트 템플릿을 사용 합니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
 
  VSTO 추가 기능이 작동하는 방법에 대한 일반적인 내용은 [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)를 참조하세요.
 
 ### <a name="excel-add-in-programming-model"></a>Excel 추가 기능 프로그래밍 모델
  Excel VSTO 추가 기능 프로젝트를 만드는 경우 Visual Studio는 솔루션의 기초가 되는 `ThisAddIn`이라는 클래스를 생성합니다. 이 클래스는 코드를 작성하기 위한 시작점을 제공하고 VSTO 추가 기능에 Excel의 개체 모델도 노출합니다.
 
- `ThisAddIn` 클래스 및 vsto 추가 기능에서 사용할 수 있는 기타 Visual Studio 기능에 대 한 자세한 내용은 [vsto 추가 기능 프로그래밍](../vsto/programming-vsto-add-ins.md)을 참조 하세요.
+ VSTO 추가 기능에서 사용할 수 있는 `ThisAddIn` 클래스 및 기타 Visual Studio 기능에 대 한 자세한 내용은 [Vsto 추가 기능 프로그램](../vsto/programming-vsto-add-ins.md)을 참조 하세요.
 
 ## <a name="UI"></a>Excel의 사용자 인터페이스 사용자 지정
  Excel의 사용자 인터페이스를 사용자 지정하는 여러 가지 방법이 있습니다. 모든 프로젝트 형식에서 사용할 수 있는 옵션도 있고, VSTO 추가 기능 또는 문서 수준 사용자 지정에만 사용할 수 있는 옵션도 있습니다.
@@ -117,4 +117,4 @@ ms.locfileid: "71253629"
 | [연습: Excel 용 첫 VSTO 추가 기능 만들기](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md) | Excel용 기본 VSTO 추가 기능을 만드는 방법을 보여 줍니다. |
 | [연습: 런타임에 VSTO 추가 기능 프로젝트에서 워크시트에 컨트롤 추가](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md) | VSTO 추가 기능을 사용하여 런타임에 Windows Forms 단추, <xref:Microsoft.Office.Tools.Excel.NamedRange>및 <xref:Microsoft.Office.Tools.Excel.ListObject> 를 워크시트에 추가하는 방법을 설명합니다. |
 | [공동 작성 및 추가 기능 이해](./understanding-coauthoring-and-addins.md) | 공동 작업을 수용할 수 있도록 솔루션에 적용 해야 하는 조정에 대해 설명 합니다. |
-| [Office 개발의 Excel 2010](http://go.microsoft.com/fwlink/?LinkId=199011) | Excel 솔루션 개발에 대한 문서 및 참조 설명서의 링크를 제공합니다. Visual Studio를 사용한 Office 개발과는 관련이 없습니다. |
+| [Office 개발의 Excel 2010](/previous-versions/office/developer/office-2010/ee658205(v=office.14)) | Excel 솔루션 개발에 대한 문서 및 참조 설명서의 링크를 제공합니다. Visual Studio를 사용한 Office 개발과는 관련이 없습니다. |

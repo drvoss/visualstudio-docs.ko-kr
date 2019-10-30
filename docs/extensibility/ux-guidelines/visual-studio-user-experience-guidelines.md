@@ -8,19 +8,19 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f01ddcd75aa02a9444f014898efd114ebdcd59d6
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 28cf2f0542cc76e5045dbf0780e9899983084760
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315117"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982385"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Visual Studio 사용자 환경 지침
 Visual Studio의 새 기능을 디자인 하는 경우 Visual Studio 사용자 환경 지침을 따릅니다. 이러한 지침에는 일반 사용자 모델 및 상호 작용 패턴에 대 한 정보가 포함 되어 있으므로 새로운 UI (사용자 인터페이스) 디자이너가 개발 환경 내에서 원활 하 고 일관적인 사용자 환경을 만들 수 있습니다.
 
 Microsoft 제품에 대 한 소프트웨어를 개발 하는 경우 다음 리소스를 사용 하는 방법을 알아보세요.
 
-- Windows [사용자 환경 상호 작용 지침은](https://docs.microsoft.com/windows/win32/uxguide/guidelines) windows 데스크톱 동작 및 모양에 대 한 기본 사항입니다.
+- Windows [사용자 환경 상호 작용 지침은](/windows/win32/uxguide/guidelines) windows 데스크톱 동작 및 모양에 대 한 기본 사항입니다.
 
 - 이러한 Visual Studio 지침은 환경에 적합 한 일반적인 Windows 지침을 대체 하는 플랫폼별 지침입니다.
 

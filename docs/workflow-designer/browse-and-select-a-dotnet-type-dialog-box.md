@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dfdbe972034920869908c1bac1cb349c98d96d3f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2efea8f23e42b9f4839c8a1ae0d74248738b9cf4
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650716"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985346"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>.NET 유형 선택 대화 상자
 
@@ -31,7 +31,7 @@ ms.locfileid: "72650716"
 - <xref:System.Activities.Statements.TryCatch> 활동에 catch를 추가할 때
 
 > [!NOTE]
-> 형식 브라우저는 Visual Basic 가변 배열 형식을 표시할 수 있지만 다차원 배열 형식을 표시할 수 없습니다. 자세한 내용은 [가변 배열](http://go.microsoft.com/fwlink/?LinkId=195226) 및 [다차원 배열](http://go.microsoft.com/fwlink/?LinkId=195227) 을 참조 하세요.
+> 형식 브라우저는 Visual Basic 가변 배열 형식을 표시할 수 있지만 다차원 배열 형식을 표시할 수 없습니다. 자세한 내용은 [가변 배열](/previous-versions/visualstudio/visual-studio-2008/hkhhsz9t(v=vs.90)) 및 [다차원 배열](/previous-versions/visualstudio/visual-studio-2008/d2de1t93(v=vs.90)) 을 참조 하세요.
 
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>형식 브라우저에서 값 또는 참조 형식 선택
 
@@ -67,7 +67,7 @@ ms.locfileid: "72650716"
 
 1. 입력 **작업** 은 <xref:System.OperationCanceledException> 일치 하지만 <xref:System.InvalidOperationException>는 일치 하지 않습니다. <xref:System.InvalidOperationException>을 찾으려면 System.I 또는 Invalid를 입력해야 합니다.
 
-2. **제네릭** 를 입력 <xref:System.GenericUriParser> <xref:System.Collections.Generic> 네임 스페이스의 형식은 아닙니다. @No__t_0 네임 스페이스에서 형식을 검색 하려면 네임 스페이스의 정규화 된 이름을 입력 합니다.
+2. **제네릭** 를 입력 <xref:System.GenericUriParser> <xref:System.Collections.Generic> 네임 스페이스의 형식은 아닙니다. <xref:System.Collections.Generic> 네임 스페이스에서 형식을 검색 하려면 네임 스페이스의 정규화 된 이름을 입력 합니다.
 
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>형식 브라우저 대화 상자를 사용하여 서비스 계약 선택
 

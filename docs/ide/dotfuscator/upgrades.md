@@ -22,14 +22,14 @@ helpviewer_keywords:
 description: Visual Studio에 포함된 Dotfuscator Community 무료 복사본을 업그레이드하는 방법을 알아봅니다.
 ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: Joe-Sewell-PreEmptive
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cee876a3904d5c47b43b58793087c901e8444dd3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 555b23f33ee1e3541afc6181a9ec6c4ece833b81
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557244"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748884"
 ---
 # <a name="upgrade-dotfuscator-community"></a>Dotfuscator Community 업그레이드
 
@@ -38,7 +38,7 @@ Dotfuscator Community는 Microsoft Visual Studio를 사용하는 모든 개발�
 
 ## <a name="registering-dotfuscator-community"></a>Dotfuscator Community 등록
 
-Dotfuscator Community의 등록된 사용자는 [명령줄 지원][cli]과 같은 추가 기능에 액세스할 수 있으므로, Dotfuscator Community를 자동화된 빌드 프로세스에 쉽게 통합할 수 있습니다. 등록하면 [난독 처리된 스택 추적 디코딩][decode-obfuscated]에 사용되는 기본 제공 도구에 대한 액세스 권한도 부여됩니다.
+Dotfuscator Community의 등록된 사용자는 [명령줄 지원][cli]과 같은 추가 기능에 액세스할 수 있으므로 Dotfuscator Community를 자동화된 빌드 프로세스에 쉽게 통합할 수 있습니다. 등록하면 [난독 처리된 스택 추적 디코딩][decode-obfuscated]에 사용되는 기본 제공 도구에 대한 액세스 권한도 부여됩니다.
 
 등록은 빠르고 간단하며 무료입니다.
 Dotfuscator Community를 등록하려면 [전체 Dotfuscator Community 사용자 가이드의 지침][register-ce]을 참조하세요.

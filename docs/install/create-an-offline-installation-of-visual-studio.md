@@ -1,7 +1,7 @@
 ---
 title: 오프라인 설치 만들기
 description: 불안정한 인터넷 연결 또는 낮은 대역폭이 있는 경우 Visual Studio를 오프라인으로 설치하는 방법에 알아봅니다.
-ms.date: 10/11/2019
+ms.date: 10/22/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2268d71f9119cc36bdb18161a62fbe930a37b2ff
-ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.openlocfilehash: c8b59ce38657bab157b966a25e0cd27109510215
+ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72381090"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72789994"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Visual Studio의 오프라인 설치 만들기
 
@@ -164,9 +164,9 @@ Visual Studio 2017에 대한 부트스트래퍼를 가져오려면 [Visual Studi
 > 로컬 설치 캐시에서 실행할 경우 설치 시 이러한 각 파일의 로컬 버전을 사용하게 됩니다. 하지만 설치 중에 캐시에 없는 구성 요소를 선택하면 설치 프로그램은 인터넷에서 해당 구성 요소를 다운로드하려고 시도합니다.
 
 ::: moniker range="vs-2019"
-
-> 16.1 이상 버전의 설치 및 업데이트의 경우 오프라인 시스템에서 "다음 매개 변수와 일치하는 제품을 찾을 수 없습니다." 오류가 발생하면 16.3.5 이상에서 --noweb 스위치를 사용합니다.
-
+> [!IMPORTANT]
+> 오프라인 설치의 경우 "다음 매개 변수와 일치하는 제품을 찾을 수 없습니다"라는 오류 메시지가 표시되면 버전 16.3.5 이상에서 `--noweb` 스위치를 사용하고 있는지 확인합니다.
+>
 ::: moniker-end
 
 이전에 다운로드한 파일만 설치하려면 레이아웃 캐시를 만드는 데 사용한 것과 동일한 명령줄 옵션을 사용하세요. 예를 들어 다음 명령으로 레이아웃 캐시를 만든 경우
@@ -180,6 +180,8 @@ vs_community.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.Mana
 ```cmd
 c:\vslayout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional
 ```
+
+[명령줄 매개 변수](use-command-line-parameters-to-install-visual-studio.md)를 사용하는 방법에 대한 자세한 예는 [Visual Studio 설치를 위한 명령줄 매개 변수 예](command-line-parameter-examples.md) 페이지를 참조하세요. 
 
 > [!NOTE]
 > 서명이 올바르지 않다는 오류가 발생하면 업데이트된 인증서를 설치해야 합니다. 오프라인 캐시에서 인증서 폴더를 엽니다. 각 인증서 파일을 두 번 클릭하고 인증서 관리자 마법사를 클릭합니다. 암호를 묻는 메시지가 표시되면 비워 두세요.
@@ -195,7 +197,7 @@ c:\vslayout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDeskto
 | fr-FR | 프랑스어 |
 | it-IT | 이탈리아어 |
 | ja-JP | 일본어 |
-| en-US | 한국어 |
+| ko-KR | 한국어 |
 | pl-PL | 폴란드어 |
 | pt-BR | 포르투갈어 - 브라질 |
 | ru-RU | 러시아어 |

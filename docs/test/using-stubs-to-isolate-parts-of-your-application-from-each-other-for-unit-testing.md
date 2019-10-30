@@ -10,12 +10,12 @@ author: jillre
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: cbb47e07bbe3697f905a28d9771cf55fe6fcc74c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6c980ab2d920a80e49450f6ffe4a9433f490b412
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659732"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982845"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>스텁을 사용하여 단위 테스트를 위한 애플리케이션의 여러 부분을 서로 격리
 
@@ -35,7 +35,7 @@ Fakes의 개요 및 빠른 시작 가이드를 보려면 [Microsoft Fakes를 사
 
 ### <a name="design-for-dependency-injection"></a>종속성 주입을 위한 디자인
 
-스텁을 사용하려면 다른 구성 요소가 서로 종속되지 않도록 하고 인터페이스 정의에만 종속되도록 애플리케이션을 설계해야 합니다. 구성 요소는 컴파일 타임에 결합되지 않고, 런타임에 연결됩니다. 이러한 패턴에서는 변경 내용이 구성 요소 경계를 넘어 전파되지 않으므로 견고하고 업데이트가 간편한 소프트웨어를 만들 수 있습니다. 스텁을 사용하지 않는 경우에도 다음을 권장합니다. 새 코드를 작성하는 경우 [종속성 삽입](http://en.wikipedia.org/wiki/Dependency_injection) 패턴을 따르는 것이 쉽습니다. 기존 소프트웨어에 대한 테스트를 작성하는 경우 리팩터링해야 할 수 있습니다. 실무적으로 어려운 경우에는 대신 shim을 사용해 보세요.
+스텁을 사용하려면 다른 구성 요소가 서로 종속되지 않도록 하고 인터페이스 정의에만 종속되도록 애플리케이션을 설계해야 합니다. 구성 요소는 컴파일 타임에 결합되지 않고, 런타임에 연결됩니다. 이러한 패턴에서는 변경 내용이 구성 요소 경계를 넘어 전파되지 않으므로 견고하고 업데이트가 간편한 소프트웨어를 만들 수 있습니다. 스텁을 사용하지 않는 경우에도 다음을 권장합니다. 새 코드를 작성하는 경우 [종속성 삽입](https://en.wikipedia.org/wiki/Dependency_injection) 패턴을 따르는 것이 쉽습니다. 기존 소프트웨어에 대한 테스트를 작성하는 경우 리팩터링해야 할 수 있습니다. 실무적으로 어려운 경우에는 대신 shim을 사용해 보세요.
 
 다이어그램의 흥미로운 예제로 이 토론을 시작하겠습니다. StockAnalyzer 클래스는 주식 가격을 읽고 몇 가지 흥미로운 결과를 생성합니다. 여기에는 우리가 테스트하려는 몇 가지 공용 메서드가 있습니다. 간단히 특정 주식의 현재 가격만 보고하는 간단한 메서드만 살펴보겠습니다. 이 메서드의 단위 테스트를 작성하려고 합니다. 다음은 테스트의 첫 번째 초안입니다.
 

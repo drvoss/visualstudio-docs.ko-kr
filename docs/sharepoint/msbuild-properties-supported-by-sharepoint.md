@@ -1,5 +1,5 @@
 ---
-title: SharePoint에서 지 원하는 MSBuild 속성 | Microsoft Docs
+title: SharePoint에서 지 원하는 MSBuild 속성 Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,45 +12,45 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f53083c49504146aca545da73bd38950493efcd8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5470160c6b0af1af39238a14319ad497e1541a43
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429205"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985170"
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>SharePoint에서 지 원하는 MsBuild 속성
-  모든 [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] Microsoft.VisualStudio.SharePoint.targets 파일, 프로젝트 파일 또는 프로젝트 사용자 파일에 정의 된 속성에서 사용할 수 있습니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 프로젝트입니다. 일반적인 외에도 [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] SharePoint 프로젝트에 관련 된 추가 속성을 정의 하는 프로젝트를 SharePoint에서 제공 하는 속성입니다.
+  VisualStudio 파일, 프로젝트 파일 또는 프로젝트 사용자 파일에 정의 된 모든 [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] 속성은 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 프로젝트에서 사용할 수 있습니다. SharePoint는 프로젝트에서 제공 하는 일반적인 [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] 속성 외에도 SharePoint 프로젝트와 관련 된 추가 속성을 정의 합니다.
 
- 일반적인 목록은 [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] 속성을 참조 하세요 [일반적인 MSBuild 프로젝트 속성](http://go.microsoft.com/fwlink/?LinkID=168687)합니다. 프로그래밍 언어를 지 원하는 속성의 전체 목록을 찾아봅니다 합니다 *.targets* 파일, 프로젝트 파일 (*.csproj* 하거나 *.vbproj*), 프로젝트 사용자 파일 (또는 *csproj.user* 하거나 *. vbproj.user*).
+ 일반적인 [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] 속성 목록은 [일반적인 MSBuild 프로젝트 속성](/previous-versions/dotnet/netframework-4.0/bb629394(v=vs.100))을 참조 하세요. 프로그래밍 언어로 지원 되는 속성의 전체 목록은 *.targets* 파일, 프로젝트 파일 (*.csproj* 또는 *.vbproj*) 또는 프로젝트 사용자 파일 (*.csproj. user* 또는 *.vbproj*)을 참조 하세요.
 
-## <a name="msbuild-properties-specific-to-sharepoint"></a>SharePoint에 관련 된 MsBuild 속성
- 다음 표에서 [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] 에서 SharePoint 프로젝트에만 적용 되는 속성 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]합니다. 다른 속성이 있지만 내부용입니다.
+## <a name="msbuild-properties-specific-to-sharepoint"></a>SharePoint에 특정 한 MsBuild 속성
+ 다음 표에서는 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 SharePoint 프로젝트에 특별히 적용 되는 [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] 속성을 보여 줍니다. 다른 속성은 있지만 내부적으로 사용 됩니다.
 
 |속성 이름|설명|
 |-------------------|-----------------|
-|SharePointSiteUrl|나타내는 문자열을 [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] SharePoint 사이트에 있습니다.|
-|SandboxedSolution|솔루션을 샌드박스 솔루션 인지 여부를 나타내는 부울 값입니다.|
+|SharePointSiteUrl|SharePoint 사이트에 대 한 [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]를 나타내는 문자열입니다.|
+|SandboxedSolution|솔루션이 샌드박스 솔루션 인지 여부를 나타내는 부울 값입니다.|
 |ActiveDeploymentConfiguration|활성 배포 구성입니다.|
-|IncludeAssemblyInPackage|어셈블리 패키지 파일에 포함 되는지 여부를 나타내는 부울 값입니다.|
-|PreDeploymentCommand|배포 전 명령이 단계에서 실행할 명령을 나타내는 문자열 값입니다.|
-|PostDeploymentCommand|배포 후 명령이 단계에서 실행할 명령을 나타내는 문자열 값입니다.|
-|CustomBeforeSharePointTargets|경로 나타내는 문자열을 [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] 대상 파일입니다. 대상 파일 존재 하 고 정의 된 경우 SharePoint 대상 데이터 앞 가져오기 됩니다. 이 속성을 사용 하면 제공된 된 SharePoint 대상 파일을 수정 하지 않고 미리 정의 패키징 관련 속성으로 패키지 프로세스를 사용자 지정할 수 있지만 여전히에 대상 파일 모든 SharePoint 프로젝트에 적용 됩니다.|
-|CustomAfterSharePointTargets|경로 나타내는 문자열을 [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] 대상 파일입니다. 존재 하 고 정의 된 대상 파일을 SharePoint 대상 데이터의 모든 가져올 아닙니다. 이 속성을 사용 하면 제공된 된 SharePoint 대상 파일을 수정 하지 않고도 패키징 관련 속성 및 대상을 재정의 하 여 패키지 프로세스를 사용자 지정할 수 있지만 여전히에 대상 파일 모든 SharePoint 프로젝트에 적용 됩니다.|
-|LayoutPath|패키지 파일의 각 일시적으로 위치를 추가 하기 전에 루트 디렉터리를 나타내는 문자열을 *.wsp* 파일입니다. 이 경로 추가, 제거 또는 변경 내용을 사용할 수 있으므로, 패키지 파일을 수정 하려면 BeforeLayout 및 AfterLayout 대상을 재정의 하는 경우 알고 있어야 유용 합니다 *.wsp* 파일입니다.|
-|BasePackagePath|패키지가 위치한 폴더를 나타내는 문자열입니다. 이 값와 같은 프로젝트의 출력 디렉터리를 사용합니다.|
-|PackageExtension|패키지에 추가할 파일 이름 확장명을 나타내는 문자열입니다. 기본값은 wsp 합니다.|
-|AssemblyDeploymentTarget|SharePoint 서버에 프로젝트 어셈블리를 배포할 위치를 나타내는 문자열입니다. 해당 값은 GlobalAssemblyCache (기본값) 또는 웹 응용 프로그램입니다. 또한 속성 창에서이 속성을 설정할 수 있습니다.|
-|PackageWithValidation|패키징 전에 유효성 검사를 수행할지 여부를 지정 하는 부울 값입니다. 이 속성을 통해 패키지를 빌드하는 동안 유효성 검사 오류를 무시할 수 있습니다.|
-|ValidatePackageDependsOn|추가 ValidatePackage 대상 보다 먼저 실행할 대상을 정의 하는 문자열입니다.|
-|TokenReplacementFileExensions|파일 패키징 중에 대체에 토큰을 정의 하는 문자열입니다.|
+|IncludeAssemblyInPackage|어셈블리가 패키지 파일에 포함 되어 있는지 여부를 나타내는 부울 값입니다.|
+|PreDeploymentCommand|배포 전 명령 단계에서 실행할 명령을 나타내는 문자열 값입니다.|
+|PostDeploymentCommand|배포 후 명령 단계에서 실행할 명령을 나타내는 문자열 값입니다.|
+|CustomBeforeSharePointTargets|[!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] 대상 파일의 경로를 나타내는 문자열입니다. 대상 파일이 있고 정의 된 경우에는 SharePoint가 대상으로 하는 데이터 보다 먼저 가져옵니다. 이 속성을 사용 하면 제공 된 SharePoint 대상 파일을 수정 하지 않고 패키지 관련 속성을 predefining 패키지 프로세스를 사용자 지정할 수 있지만 대상 파일은 여전히 모든 SharePoint 프로젝트에 적용 됩니다.|
+|CustomAfterSharePointTargets|[!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] 대상 파일의 경로를 나타내는 문자열입니다. 대상 파일이 있고 정의 된 경우 모든 SharePoint 대상 데이터 다음에 해당 파일이 가져옵니다. 이 속성을 사용 하면 제공 된 SharePoint 대상 파일을 수정 하지 않고도 패키지 관련 속성 및 대상을 재정의 하 여 패키지 프로세스를 사용자 지정할 수 있습니다. 그러나 대상 파일은 모든 SharePoint 프로젝트에 계속 적용 됩니다.|
+|LayoutPath|패키지할 파일이 *.wsp* 파일에 추가 되기 전에 일시적으로 배치 되는 루트 디렉터리를 나타내는 문자열입니다. 이 경로를 사용 하면 파일을 추가, 제거 또는 수정 하는 BeforeLayout 및 AfterLayout 대상을 재정의할 때이를 사용 하 여 *.wsp* 파일의 콘텐츠를 변경할 수 있으므로이 경로를 파악 하는 것이 유용할 수 있습니다.|
+|BasePackagePath|패키지가 배치 된 폴더를 나타내는 문자열입니다. 이 값은 프로젝트의 출력 디렉터리 (예: Bin\debug입니다.)를 사용 합니다.|
+|PackageExtension|패키지에 추가할 파일 이름 확장명을 나타내는 문자열입니다. 기본값은 wsp입니다.|
+|AssemblyDeploymentTarget|SharePoint 서버에서 프로젝트 어셈블리를 배포 하는 위치를 나타내는 문자열입니다. 해당 값은 GlobalAssemblyCache (기본값) 또는 WebApplication입니다. 속성 창에서이 속성을 설정할 수도 있습니다.|
+|PackageWithValidation|패키징 전에 유효성 검사를 수행할지 여부를 지정 하는 부울 값입니다. 이 속성을 사용 하면 패키지를 작성 하는 동안 유효성 검사 오류를 무시할 수 있습니다.|
+|ValidatePackageDependsOn|ValidatePackage 대상 전에 실행할 추가 대상을 정의 하는 문자열입니다.|
+|TokenReplacementFileExensions|패키징 중에 토큰을 대체 한 파일을 정의 하는 문자열입니다.|
 
-## <a name="use-msbuild-properties-in-the-properties-page"></a>속성 페이지에서 사용 하 여 MsBuild 속성
- 유연성을 하드 코딩 된 문자열을 사용 하는 대신 합니다 **배포 전 명령줄** 하 고 **배포 후 명령줄** 상자 SharePoint 속성 페이지의 SharePoint를 사용할 수 있습니다 인수로 속성입니다. 예를 들어, 특정을 지정 하는 대신 [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] 문자열 SharePoint 사이트에 대 한 대신 사용할 수 있습니다 `$(SharePointSiteUrl)`합니다.
+## <a name="use-msbuild-properties-in-the-properties-page"></a>속성 페이지에서 MsBuild 속성 사용
+ 유연성을 위해 SharePoint 속성 페이지의 **배포 전 명령줄** 및 **배포 후** 명령줄 상자에서 하드 코드 된 문자열을 사용 하는 대신 sharepoint 속성을 인수로 사용할 수 있습니다. 예를 들어 SharePoint 사이트에 대 한 특정 [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] 문자열을 지정 하는 대신 `$(SharePointSiteUrl)`를 대신 사용할 수 있습니다.
 
 > [!NOTE]
-> 하나를 사용 합니다 [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] 변수 구문의 `$(` *propertyName* `)` 또는 환경 변수 구문을 `%` *propertyName* `%` 속성을 지정 합니다.
+> *Propertyname*`)` `$(`[!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] 변수 구문 또는 *propertyname*`%` `%`환경 변수 구문을 사용 하 여 속성을 지정할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 - [MSBuild 참조](../msbuild/msbuild-reference.md)

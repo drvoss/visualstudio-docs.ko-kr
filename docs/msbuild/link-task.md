@@ -22,23 +22,23 @@ dev_langs:
 - C++
 - jsharp
 helpviewer_keywords:
-- MSBuild (Visual C++), Link task
-- Link task (MSBuild (Visual C++))
+- MSBuild (C++), Link task
+- Link task (MSBuild (C++))
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 432ef1231f551d265e06242e2ab4ddc58a0fe5ac
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 98bf3e143a3fcb6613752362acf83f5c2441b98b
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825407"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911257"
 ---
 # <a name="link-task"></a>링크 작업
-Visual C++ 링커 도구인 *link.exe*를 래핑합니다. 링커 도구는 COFF(Common Object File Format) 개체 파일과 라이브러리를 연결하여 실행 파일( *.exe*) 또는 DLL(동적 연결 라이브러리)을 만듭니다. 자세한 내용은 [링커 옵션](/cpp/build/reference/linker-options)을 참조하세요.
+Microsoft C++ 링커 도구 *link.exe*를 래핑합니다. 링커 도구는 COFF(Common Object File Format) 개체 파일과 라이브러리를 연결하여 실행 파일( *.exe*) 또는 DLL(동적 연결 라이브러리)을 만듭니다. 자세한 내용은 [링커 옵션](/cpp/build/reference/linker-options)을 참조하세요.
 
 ## <a name="parameters"></a>매개 변수
  다음에서는 **링크** 작업의 매개 변수에 대해 설명합니다. 대부분의 작업 매개 변수 및 몇 가지 매개 변수 집합은 명령줄 옵션에 해당합니다.
@@ -65,7 +65,7 @@ Visual C++ 링커 도구인 *link.exe*를 래핑합니다. 링커 도구는 COFF
 
   매니페스트 파일의 `dependency` 섹션에 배치될 특성을 지정합니다.
 
-  자세한 내용은 [/MANIFESTDEPENDENCY(매니페스트 종속성 지정)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies)를 참조하세요. [게시자 구성 파일](https://docs.microsoft.com/windows/desktop/SbsCs/publisher-configuration-files)도 참조하세요.
+  자세한 내용은 [/MANIFESTDEPENDENCY(매니페스트 종속성 지정)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies)를 참조하세요. [게시자 구성 파일](/windows/desktop/SbsCs/publisher-configuration-files)도 참조하세요.
 
 - **AdditionalOptions**
 

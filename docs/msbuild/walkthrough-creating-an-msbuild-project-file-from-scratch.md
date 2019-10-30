@@ -10,17 +10,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bce461f4b120d1d9a37c5433b590ed1f7b227131
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: e13399d80e74f41774542da31d0edd8c36a42c7e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445316"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748028"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>연습: 처음부터 MSBuild 프로젝트 파일 만들기
 .NET Framework를 대상으로 하는 프로그래밍 언어는 MSBuild 프로젝트 파일을 사용하여 애플리케이션 빌드 프로세스를 설명하고 제어합니다. Visual Studio를 사용하여 MSBuild 프로젝트 파일을 만들 때 적절한 XML이 파일에 자동으로 추가됩니다. 그러나 XML이 구성되는 방식과 이러한 방식을 변경하여 빌드를 제어할 수 있는 방법을 이해하는 것이 좋습니다.
 
- C++ 프로젝트용 프로젝트 파일을 만드는 방법에 대한 자세한 내용은 [MSBuild(Visual C++)](/cpp/build/msbuild-visual-cpp)를 참조하세요.
+ C++ 프로젝트용 프로젝트 파일을 만드는 방법에 대한 자세한 내용은 [MSBuild(C++)](/cpp/build/msbuild-visual-cpp)를 참조하세요.
 
  이 연습에서는 텍스트 편집기만을 사용하여 기본 프로젝트 파일을 증분 방식으로 만드는 방법을 보여 줍니다. 이 연습에서는 다음과 같은 단계를 따릅니다.
 
@@ -51,9 +51,9 @@ ms.locfileid: "63445316"
 
 #### <a name="to-create-the-minimal-application"></a>최소 애플리케이션을 만들려면
 
-1. 명령 프롬프트에서 애플리케이션을 만들려는 폴더로 이동합니다(예: ‘\내 문서\\’ 또는 ‘\바탕 화면\\’).
+1. 명령 프롬프트에서 애플리케이션을 만들려는 폴더로 이동합니다(예: ‘\내 문서\\’ 또는 ‘\바탕 화면\\’).  
 
-2. **md HelloWorld**를 입력하여 *\HelloWorld\\*라는 하위 폴더를 만듭니다.
+2. **md HelloWorld**를 입력하여 *\HelloWorld\\* 라는 하위 폴더를 만듭니다.
 
 3. **cd HelloWorld**를 입력하여 새 폴더로 변경합니다.
 
@@ -398,7 +398,7 @@ Build 대상의 작업은 순차적으로 실행됩니다. 이 경우 Visual C# 
 
      MSBuild는 애플리케이션이 마지막으로 빌드된 이후로 변경된 소스 파일이 없으므로 Build 대상을 건너뜁니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 ### <a name="description"></a>설명
  다음 예제에서는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 애플리케이션을 컴파일하고 출력 파일 이름이 포함된 메시지를 기록하는 프로젝트 파일을 보여 줍니다.
@@ -436,7 +436,7 @@ Build 대상의 작업은 순차적으로 실행됩니다. 이 경우 Visual C# 
 </Project>
 ```
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 ### <a name="description"></a>설명
  다음 예제에서는 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 애플리케이션을 컴파일하고 출력 파일 이름이 포함된 메시지를 기록하는 프로젝트 파일을 보여 줍니다.

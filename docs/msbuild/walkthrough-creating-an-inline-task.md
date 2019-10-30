@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 322c8d4b766619a6404a315fb83298bf5416fba4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: cbeba8418b3364d4e3762643a78465158f80e6fc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445330"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655440"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>연습: 인라인 작업 만들기
 MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터페이스를 구현하는 클래스를 컴파일하여 생성됩니다. .NET Framework 버전 4부터 프로젝트 파일에서 인라인으로 작업을 만들 수 있습니다. 작업을 호스트할 별도의 어셈블리를 만들 필요가 없습니다. 자세한 내용은 [인라인 작업](../msbuild/msbuild-inline-tasks.md)을 참조하세요.
@@ -46,7 +46,7 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
 
 1. Visual Studio의 **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 클릭합니다.
 
-2. **새 프로젝트** 대화 상자에서 **Visual C#** 프로젝트 형식을 선택하고 **Windows Forms 애플리케이션** 템플릿을 선택합니다. **이름** 상자에 `InlineTasks`을 입력합니다. 솔루션의 **위치**를 *D:\\*와 같이 입력합니다. **솔루션용 디렉터리 만들기**가 선택되어 있고, **소스 제어에 추가**가 선택 취소되어 있고, **솔루션 이름**이 **InlineTasks**인지 확인합니다.
+2. **새 프로젝트** 대화 상자에서 **Visual C#** 프로젝트 형식을 선택하고 **Windows Forms 애플리케이션** 템플릿을 선택합니다. **이름** 상자에 `InlineTasks`을 입력합니다. 솔루션의 **위치**를 *D:\\* 와 같이 입력합니다. **솔루션용 디렉터리 만들기**가 선택되어 있고, **소스 제어에 추가**가 선택 취소되어 있고, **솔루션 이름**이 **InlineTasks**인지 확인합니다.
 
 3. **확인**을 클릭하여 프로젝트 파일을 만듭니다.
 
@@ -85,7 +85,7 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
 
 3. 프로젝트 파일을 저장합니다.
 
-   이 코드는 Hello로 지칭되고 매개 변수, 참조 또는 `Using` 문이 없는 인라인 작업을 만듭니다. Hello 작업에는 기본 로깅 디바이스(일반적으로 콘솔 창)에 hello 메시지를 표시하는 코드 한 줄만 포함됩니다.
+   이 코드는 이름이 Hello이고 매개 변수, 참조 또는 `Using` 지시문이 없는 인라인 작업을 만듭니다. Hello 작업에는 기본 로깅 디바이스(일반적으로 콘솔 창)에 hello 메시지를 표시하는 코드 한 줄만 포함됩니다.
 
 ### <a name="run-the-hello-task"></a>Hello 작업 실행
  **명령 프롬프트 창**에서 MSBuild를 실행하여 Hello 작업을 생성하고 이 작업을 호출하는 TestBuild 대상을 처리합니다.
@@ -94,7 +94,7 @@ MSBuild 작업은 일반적으로 <xref:Microsoft.Build.Framework.ITask> 인터�
 
 1. **시작**을 클릭하고 **모든 프로그램**을 클릭한 후 **Visual Studio Tools** 폴더를 찾고 **Visual Studio 명령 프롬프트**를 마우스 오른쪽 단추로 클릭합니다.
 
-2. **명령 프롬프트 창**에서 프로젝트 파일이 들어 있는 폴더(이 경우 *D:\InlineTasks\InlineTasks\\*)를 찾습니다.
+2. **명령 프롬프트 창**에서 프로젝트 파일이 들어 있는 폴더(이 경우 *D:\InlineTasks\InlineTasks\\* )를 찾습니다.
 
 3. 명령 스위치 없이 **msbuild**를 입력하고 **Enter** 키를 누릅니다. 기본적으로 이렇게 하면 *InlineTasks.csproj* 파일이 빌드되고 기본 대상 TestBuild가 처리됩니다. 그 결과 Hello 작업이 호출됩니다.
 

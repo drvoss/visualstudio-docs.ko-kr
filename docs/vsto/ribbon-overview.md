@@ -18,17 +18,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5067a52fb9d6a0b6d8991b68a2fce8cdbae987c9
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 668517705caa7ba6baef0b85305bf4470bc3b26b
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255935"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985608"
 ---
 # <a name="ribbon-overview"></a>리본 개요
   리본은 쉽게 찾을 수 있도록 관련 명령을 구성 하는 방법입니다. 명령은 리본 메뉴에 컨트롤로 표시 됩니다. 컨트롤은 응용 프로그램 창의 위쪽 가장자리에 가로 스트립을 따라 *그룹* 으로 구성 됩니다. 관련 그룹은 탭에서 구성됩니다.
 
- 이전 버전의 Microsoft Office 시스템에서 메뉴와 도구 모음을 사용 하 여 액세스 한 대부분의 기능을 이제 리본 메뉴를 사용 하 여 액세스할 수 있습니다. 자세한 내용은 기술 문서 [2007 Microsoft Office 시스템의 사용자 인터페이스에 대 한 개발자 개요](http://go.microsoft.com/fwlink/?LinkID=70860)를 참조 하세요.
+ 이전 버전의 Microsoft Office 시스템에서 메뉴와 도구 모음을 사용 하 여 액세스 한 대부분의 기능을 이제 리본 메뉴를 사용 하 여 액세스할 수 있습니다. 자세한 내용은 기술 문서 [2007 Microsoft Office 시스템의 사용자 인터페이스에 대 한 개발자 개요](/previous-versions/office/developer/office-2007/aa338198(v=office.12))를 참조 하세요.
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
@@ -81,7 +81,7 @@ ms.locfileid: "71255935"
 
  또한 변경되지 않은 기본 속성 값은 결과 리본 XML 파일에 표시되지 않습니다.
 
- 리본 메뉴를 XML [로 내보내는 방법에 대 한 자세한 내용은 방법: 리본 디자이너에서 리본 XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)로 리본 메뉴를 내보냅니다.
+ 리본 메뉴를 XML로 내보내는 방법에 대 한 자세한 내용은 [방법: 리본 디자이너에서 리본 XML로 리본 메뉴 내보내기](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)를 참조 하세요.
 
 ### <a name="update-the-code"></a>코드 업데이트
  새 리본 코드 파일이 **솔루션 탐색기**에 추가 됩니다. 이 파일에는 리본 XML 클래스가 포함되어 있습니다. 단추 클릭과 같은 사용자 동작을 처리하려면 이 클래스의 `Ribbon Callbacks` 영역에 콜백 메서드를 만들어야 합니다. 이벤트 처리기의 코드를 이러한 콜백 메서드로 이동하고 리본 확장성(RibbonX) 프로그래밍 모델을 사용하도록 코드를 수정합니다. 자세한 내용은 [Ribbon XML](../vsto/ribbon-xml.md)을 참조하세요.
@@ -103,7 +103,7 @@ ms.locfileid: "71255935"
 ### <a name="select-which-ribbons-to-display-at-run-time"></a>런타임에 표시할 리본을 선택 합니다.
  프로젝트에 둘 이상의 리본이 포함 될 수 있으므로 런타임에 표시할 리본을 선택할 수 있습니다.
 
- 런타임에 표시할 리본을 `CreateRibbonExtensibilityObject` 선택 하려면 프로젝트의 `ThisAddin`, `ThisWorkbook`또는 `ThisDocument` 클래스에서 메서드를 재정의 하 고 표시 하려는 리본을 반환 합니다. 다음 예에서는 라는 `myCondition` 필드의 값을 확인 하 고 적절 한 리본을 반환 합니다.
+ 런타임에 표시할 리본을 선택 하려면 프로젝트의 `ThisAddin`, `ThisWorkbook`또는 `ThisDocument` 클래스에서 `CreateRibbonExtensibilityObject` 메서드를 재정의 하 고 표시 하려는 리본을 반환 합니다. 다음 예에서는 `myCondition` 라는 필드의 값을 확인 하 고 적절 한 리본을 반환 합니다.
 
 > [!NOTE]
 > 이 예제에 사용 된 구문은 **리본 (비주얼 디자이너)** 항목을 사용 하 여 만든 리본을 반환 합니다. **리본 (XML)** 항목을 사용 하 여 만든 리본을 반환 하는 구문은 약간 다릅니다. **리본 (xml)** 항목을 반환 하는 방법에 대 한 자세한 내용은 [리본 XML](../vsto/ribbon-xml.md)을 참조 하세요.
@@ -125,10 +125,10 @@ ms.locfileid: "71255935"
 |[Outlook에 대 한 리본 사용자 지정](../vsto/customizing-a-ribbon-for-outlook.md)|Microsoft Office Outlook에서 리본을 사용자 지정 하는 방법에 대 한 지침을 제공 합니다.|
 |[InfoPath에 대 한 리본 사용자 지정](../vsto/customizing-a-ribbon-for-infopath.md)|InfoPath Microsoft Office에서 리본을 사용자 지정 하는 방법에 대 한 지침을 제공 합니다.|
 |[런타임에 리본 메뉴에 액세스](../vsto/accessing-the-ribbon-at-run-time.md)|리본을 표시, 숨기기 및 수정 하 고 사용자가 사용자 지정 작업창, 작업 창 또는 Outlook 양식 영역의 컨트롤에서 코드를 실행할 수 있도록 하는 방법을 보여 줍니다.|
-|[방법: 리본에서 탭의 위치 변경](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|리본의 탭 순서를 변경 하는 방법을 보여 줍니다.|
+|[방법: 리본의 탭 위치 변경](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|리본의 탭 순서를 변경 하는 방법을 보여 줍니다.|
 |[방법: 기본 제공 탭 사용자 지정](../vsto/how-to-customize-a-built-in-tab.md)|기본 제공 탭에 그룹 및 컨트롤을 추가하는 방법을 보여 줍니다.|
 |[방법: Backstage 보기에 컨트롤 추가](../vsto/how-to-add-controls-to-the-backstage-view.md)|**파일**을 클릭할 때 열리는 메뉴에 컨트롤을 추가 하는 방법을 보여 줍니다.|
 |[방법: 리본 그룹에 대화 상자 표시 아이콘 추가](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|리본의 그룹에 대화 상자 시작 관리자를 추가 하는 방법을 보여 줍니다.|
 |[방법: 리본 디자이너에서 리본 XML로 리본 메뉴 내보내기](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|디자이너에서 리본 XML로 리본 메뉴를 내보내 고급 방법으로 리본을 사용자 지정 하는 방법을 보여 줍니다.|
-|[Ribbon XML](../vsto/ribbon-xml.md)|리본 XML을 사용 하 여 리본을 사용자 지정 하는 방법을 설명 합니다.|
+|[리본 XML](../vsto/ribbon-xml.md)|리본 XML을 사용 하 여 리본을 사용자 지정 하는 방법을 설명 합니다.|
 |[연습: 리본 디자이너를 사용 하 여 사용자 지정 탭 만들기](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|**리본 (XML)** 항목을 사용 하 여 사용자 지정 리본 탭을 만드는 방법을 보여 줍니다.|

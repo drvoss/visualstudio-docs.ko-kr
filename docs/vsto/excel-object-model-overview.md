@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6d7371880c739e242bcdd70fb2bb9ac0cd92677b
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 29ede9dd29952e87e7f1dd76875905973bada6a6
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551589"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986097"
 ---
 # <a name="excel-object-model-overview"></a>Excel 개체 모델 개요
   Microsoft Office Excel을 사용하는 솔루션을 개발하려면 Excel 개체 모델에서 제공하는 개체와 상호 작용할 수 있습니다. 이 항목에서는 가장 중요한 개체를 소개합니다.
@@ -47,8 +47,6 @@ ms.locfileid: "69551589"
 
   이 항목에서는 Excel 개체 모델에 대한 간략한 개요를 제공합니다. 전체 Excel 개체 모델에 대해 자세히 알아볼 수 있는 리소스는 [excel 개체 모델 설명서 사용](#ExcelOMDocumentation)을 참조 하세요.
 
-  ![비디오에 연결](../vsto/media/playvideo.gif "비디오에 연결") 관련 비디오 데모를 보려면 어떻게 할까요?를 [참조 하세요. Excel 2007 추가 기능에서 이벤트 처리기를 사용 하 시겠습니까? ](http://go.microsoft.com/fwlink/?LinkID=130291) 및[어떻게 할까요?: 셰이프를 사용 하 여 Excel에서 거품형 차트 만들기 ](http://go.microsoft.com/fwlink/?LinkID=130313).
-
 ## <a name="access-objects-in-an-excel-project"></a>Excel 프로젝트의 개체 액세스
  Excel 용 VSTO 추가 기능 프로젝트를 새로 만들면 Visual Studio에서 자동으로 *ThisAddIn* 또는 *ThisAddIn.cs* 코드 파일을 만듭니다. `Me.Application` 또는 `this.Application`을 사용하여 애플리케이션 개체에 액세스할 수 있습니다.
 
@@ -61,7 +59,7 @@ ms.locfileid: "69551589"
 |Sheet2.vb|Sheet2.cs|
 |Sheet3.vb|Sheet3.cs|
 
- 프로젝트에서 `Globals` 클래스를 사용하여 해당 클래스 외부에서 `ThisWorkbook`, `Sheet1`, `Sheet2` 또는 `Sheet3`에 액세스할 수 있습니다. 자세한 내용은 [Office 프로젝트의 개체에 대 한 전역 액세스](../vsto/global-access-to-objects-in-office-projects.md)를 참조 하세요. 다음 <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> 예제에서는 코드가 *n* 클래스 또는 `Sheet1` `ThisWorkbook` 클래스 중 하나 `Sheet`에 배치 되었는지 여부에 관계 없이의 메서드를 호출 합니다.
+ 프로젝트에서 `Globals` 클래스를 사용하여 해당 클래스 외부에서 `ThisWorkbook`, `Sheet1`, `Sheet2` 또는 `Sheet3`에 액세스할 수 있습니다. 자세한 내용은 [Office 프로젝트의 개체에 대 한 전역 액세스](../vsto/global-access-to-objects-in-office-projects.md)를 참조 하세요. 다음 예제에서는 `Sheet`*n* 클래스 또는 `ThisWorkbook` 클래스 중 하나에 코드가 배치 되었는지 여부에 관계 없이 `Sheet1`의 <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> 메서드를 호출 합니다.
 
  [!code-csharp[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#82)]
  [!code-vb[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#82)]
@@ -105,12 +103,12 @@ ms.locfileid: "69551589"
  Excel 개체 모델에 대한 자세한 내용은 Excel PIA(주 interop 어셈블리) 참조 및 VBA 개체 모델 참조를 참조할 수 있습니다.
 
 ### <a name="primary-interop-assembly-reference"></a>주 interop 어셈블리 참조
- Excel PIA 참조 설명서에서는 Excel에 대한 주 interop 어셈블리의 형식에 대해 설명합니다. 이 설명서는 다음 위치에서 사용할 수 있습니다. [Excel 2010 주 interop 어셈블리 참조](http://go.microsoft.com/fwlink/?LinkId=189585)입니다.
+ Excel PIA 참조 설명서에서는 Excel에 대한 주 interop 어셈블리의 형식에 대해 설명합니다. 이 설명서는 [Excel 2010 주 interop 어셈블리 참조](/visualstudio/vsto/office-primary-interop-assemblies&view=vs-2019)에서 사용할 수 있습니다.
 
- PIA의 클래스와 인터페이스 간의 차이점, PIA의 이벤트 구현 방식 등 Excel PIA의 디자인에 대 한 자세한 내용은 [Office 주 interop 어셈블리의 클래스 및 인터페이스 개요](http://go.microsoft.com/fwlink/?LinkId=189592)를 참조 하세요.
+ PIA의 클래스와 인터페이스 간의 차이점, PIA의 이벤트 구현 방식 등 Excel PIA의 디자인에 대 한 자세한 내용은 [Office 주 interop 어셈블리의 클래스 및 인터페이스 개요](/previous-versions/office/office-12/ms247299(v=office.12))를 참조 하세요.
 
 ### <a name="vba-object-model-reference"></a>VBA 개체 모델 참조
- VBA 개체 모델 참조에서는 VBA(Visual Basic for Applications) 코드로 표시되는 Excel 개체 모델에 대해 설명합니다. 자세한 내용은 [Excel 2010 개체 모델 참조](http://go.microsoft.com/fwlink/?LinkId=199768)를 참조 하세요.
+ VBA 개체 모델 참조에서는 VBA(Visual Basic for Applications) 코드로 표시되는 Excel 개체 모델에 대해 설명합니다. 자세한 내용은 [Excel 2010 개체 모델 참조](/office/vba/api/overview/Excel/object-model)를 참조 하세요.
 
  VBA 개체 모델 참조의 모든 개체 및 멤버는 Excel PIA의 형식 및 멤버에 해당합니다. 예를 들어 VBA 개체 모델 참조의 워크시트 개체는 Excel PIA의 <xref:Microsoft.Office.Interop.Excel.Worksheet> 개체에 해당 합니다. VBA 개체 모델 참조에서는 대부분의 속성, 메서드 및 이벤트에 대한 코드 예제를 제공하지만 Visual Studio를 사용하여 만든 Excel 프로젝트에서 사용하려면 이 참조의 VBA 코드를 Visual Basic 또는 Visual C#으로 변환해야 합니다.
 

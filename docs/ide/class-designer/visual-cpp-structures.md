@@ -1,23 +1,23 @@
 ---
-title: 클래스 디자이너의 Visual C++ 구조체
+title: 클래스 디자이너의 C++ 구조체
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Class Designer [Visual Studio], structures
 ms.assetid: bad18ab6-d956-47a6-a413-811cc26db5f5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e9b8e81ee25e081a324a8520317fa57a1314ccd0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 65fb4738b3124daf48b501c6db416d3803da32ec
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975036"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748913"
 ---
-# <a name="visual-c-structures-in-class-designer"></a>클래스 디자이너의 Visual C++ 구조체
+# <a name="c-structures-in-class-designer"></a>클래스 디자이너의 C++ 구조체
 
 **클래스 디자이너**는 `struct` 키워드로 선언된 C++ 구조체를 지원합니다. 예를 들면 다음과 같습니다.
 
@@ -40,6 +40,6 @@ struct MyStructure
 
 ## <a name="see-also"></a>참고 항목
 
-- [Visual C++ 코드 작업](working-with-visual-cpp-code.md)
+- [C++ 코드 사용](working-with-visual-cpp-code.md)
 - [클래스 및 구조체](/cpp/cpp/classes-and-structs-cpp)
 - [struct](/cpp/cpp/struct-cpp)

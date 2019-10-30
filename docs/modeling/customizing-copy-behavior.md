@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcbe7a132f7e2f6f7d72cfd2ba210e5edba21b57
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e33ab59660263a5053642c95ec62ab36663f8e7b
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654099"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984301"
 ---
 # <a name="customizing-copy-behavior"></a>복사 동작 사용자 지정
 Visual Studio 시각화 및 모델링 SDK를 사용 하 여 만든 DSL (도메인별 언어)에서는 사용자가 요소를 복사 하 여 붙여넣을 때 발생 하는 작업을 변경할 수 있습니다.
@@ -86,7 +86,7 @@ DslPackage 프로젝트에서 *Mydsl* `ClipboardCommandSet.ProcessOnMenuCopyComm
 DslPackage 프로젝트에서 *Mydsl* `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()`를 재정의 합니다.
 
  **복사 및 붙여넣기를 통해 모양 레이아웃을 유지 합니다.**
-사용자가 여러 모양을 복사할 때 모양이 붙여넣기되는 상대 위치를 보존할 수 있습니다. 이 기법은 [VMSDK: 회로 다이어그램 샘플](http://go.microsoft.com/fwlink/?LinkId=213879)의 예제에 설명 되어 있습니다.
+사용자가 여러 모양을 복사할 때 모양이 붙여넣기되는 상대 위치를 보존할 수 있습니다. 이 기법은 [VMSDK: 회로 다이어그램 샘플](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)의 예제에 설명 되어 있습니다.
 
  이 결과를 얻으려면 복사한 ElementGroupPrototype에 모양과 연결선을 추가합니다. 재정의 시 가장 편리한 메서드는 ElementOperations.CreateElementGroupPrototype()입니다. 이렇게 하려면 Dsl 프로젝트에 다음 코드를 추가합니다.
 
@@ -142,7 +142,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **선택한 위치 (예: 현재 커서 위치)에 모양을 붙여넣습니다.**
-사용자가 여러 모양을 복사할 때 모양이 붙여넣기되는 상대 위치를 보존할 수 있습니다. 이 기법은 [VMSDK: 회로 다이어그램 샘플](http://go.microsoft.com/fwlink/?LinkId=213879)의 예제에 설명 되어 있습니다.
+사용자가 여러 모양을 복사할 때 모양이 붙여넣기되는 상대 위치를 보존할 수 있습니다. 이 기법은 [VMSDK: 회로 다이어그램 샘플](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)의 예제에 설명 되어 있습니다.
 
  이 결과를 얻으려면 `ClipboardCommandSet.ProcessOnMenuPasteCommand()`의 위치별 버전을 사용하도록 `ElementOperations.Merge()`를 재정의합니다. 이렇게 하려면 DslPackage 프로젝트에 다음 코드를 추가합니다.
 
@@ -229,7 +229,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
   수행하는 변경 내용은 복사된 이미지와 요소에 모두 적용됩니다.
 
 ## <a name="programming-copy-and-paste-behavior"></a>복사 및 붙여넣기 동작 프로그래밍
- 개체의 복사, 붙여넣기, 만들기 및 삭제와 관련 하 여 DSL 동작의 많은 측면은 다이어그램에 연결 된 <xref:Microsoft.VisualStudio.Modeling.ElementOperations>의 인스턴스를 통해 관리 됩니다. @No__t_0에서 고유한 클래스를 파생 시키고 다이어그램 클래스의 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> 속성을 재정의 하 여 DSL의 동작을 수정할 수 있습니다.
+ 개체의 복사, 붙여넣기, 만들기 및 삭제와 관련 하 여 DSL 동작의 많은 측면은 다이어그램에 연결 된 <xref:Microsoft.VisualStudio.Modeling.ElementOperations>의 인스턴스를 통해 관리 됩니다. <xref:Microsoft.VisualStudio.Modeling.ElementOperations>에서 고유한 클래스를 파생 시키고 다이어그램 클래스의 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> 속성을 재정의 하 여 DSL의 동작을 수정할 수 있습니다.
 
 > [!TIP]
 > 프로그램 코드를 사용 하 여 모델을 사용자 지정 하는 방법에 대 한 자세한 내용은 [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)를 참조 하세요.
@@ -556,6 +556,6 @@ namespace Company.MyDsl
 
 - [요소 만들기 및 이동 사용자 지정](../modeling/customizing-element-creation-and-movement.md)
 - [방법: 끌어서 놓기 처리기 추가](../modeling/how-to-add-a-drag-and-drop-handler.md)
-- [샘플: VMSDK 회로 다이어그램 샘플](http://go.microsoft.com/fwlink/?LinkId=213879)
+- [샘플: VMSDK 회로 다이어그램 샘플](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

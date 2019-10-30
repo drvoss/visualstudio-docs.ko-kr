@@ -13,23 +13,23 @@ dev_langs:
 - C++
 - jsharp
 helpviewer_keywords:
-- MSBuild (Visual C++), CL task
-- CL task (MSBuild (Visual C++))
+- MSBuild (C++), CL task
+- CL task (MSBuild (C++))
 ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ec3be0adf6f262cafbebe2da714f4e74777329c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7f7704ebee49af51c5cbeff118d2eed8e08ace30
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569695"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747350"
 ---
 # <a name="cl-task"></a>CL 작업
-Visual C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실행(*.exe*) 파일, 동적 연결 라이브러리(*.dll*) 파일 또는 코드 모듈(*.netmodule*) 파일을 생성합니다. 자세한 내용은 [컴파일러 옵션](/cpp/build/reference/compiler-options)을 참조하세요.
+Microsoft C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실행( *.exe*) 파일, 동적 연결 라이브러리( *.dll*) 파일 또는 코드 모듈( *.netmodule*) 파일을 생성합니다. 자세한 내용은 [컴파일러 옵션](/cpp/build/reference/compiler-options)을 참조하세요.
 
 ## <a name="parameters"></a>매개 변수
  다음 목록에서는 **CL** 작업의 매개 변수에 대해 설명합니다. 대부분의 작업 매개 변수 및 몇 가지 매개 변수 집합은 명령줄 옵션에 해당합니다.
@@ -62,7 +62,7 @@ Visual C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실�
 
    선택적 문자열 매개 변수입니다.
 
-   명령줄에 항상 내보내지는 문자열입니다. 기본값은 "**/c**"입니다.
+   명령줄에 항상 내보내지는 문자열입니다. 기본값은 " **/c**"입니다.
 
 - **AssemblerListingLocation**
 
@@ -78,15 +78,15 @@ Visual C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실�
 
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.
 
-  - **NoListing** - *\<없음>*
+  - **NoListing** -  *\<없음>*
 
-  - **AssemblyCode** - **/FA**
+  - **AssemblyCode** -  **/FA**
 
-  - **AssemblyAndMachineCode** - **/FAc**
+  - **AssemblyAndMachineCode** -  **/FAc**
 
-  - **AssemblyAndSourceCode** - **/FAs**
+  - **AssemblyAndSourceCode** -  **/FAs**
 
-  - **All** - **/FAcs**
+  - **All** -  **/FAcs**
 
     자세한 내용은 [/FA, /Fa(목록 파일)](/cpp/build/reference/fa-fa-listing-file)의 **/FA**, **/FAc**, **/FAs** 및 **/FAcs** 옵션을 참조하세요.
 
@@ -98,13 +98,13 @@ Visual C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실�
 
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.
 
-  - **기본값** -                          *\<없음>*
+  - **기본값** -                           *\<없음>*
 
-  - **StackFrameRuntimeCheck** - **/RTCs**
+  - **StackFrameRuntimeCheck** -  **/RTCs**
 
-  - **UninitializedLocalUsageCheck** - **/RTCu**
+  - **UninitializedLocalUsageCheck** -  **/RTCu**
 
-  - **EnableFastChecks** -                          **/RTC1**
+  - **EnableFastChecks** -                           **/RTC1**
 
     자세한 내용은 [/RTC(런타임 오류 검사)](/cpp/build/reference/rtc-run-time-error-checks)를 참조하세요.
 
@@ -146,11 +146,11 @@ Visual C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실�
 
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.
 
-  - **Cdecl** - **/Gd**
+  - **Cdecl** -  **/Gd**
 
-  - **FastCall** -                          **/Gr**
+  - **FastCall** -                           **/Gr**
 
-  - **StdCall** -                          **/Gz**
+  - **StdCall** -                           **/Gz**
 
     자세한 내용은 [/Gd, /Gr, /Gv, /Gz(호출 규칙)](/cpp/build/reference/gd-gr-gv-gz-calling-convention)를 참조하세요.
 
@@ -162,11 +162,11 @@ Visual C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실�
 
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.
 
-  - **기본값** - *\<없음>*
+  - **기본값** -  *\<없음>*
 
-  - **CompileAsC** - **/TC**
+  - **CompileAsC** -  **/TC**
 
-  - **CompileAsCpp** - **/TP**
+  - **CompileAsCpp** -  **/TP**
 
     자세한 내용은 [/Tc, /Tp, /TC, /TP(소스 파일 형식 지정)](/cpp/build/reference/tc-tp-tc-tp-specify-source-file-type)를 참조하세요.
 
@@ -178,15 +178,15 @@ Visual C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실�
 
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.
 
-  - **false** - *\<없음>*
+  - **false** -  *\<없음>*
 
-  - **true** - **/clr**
+  - **true** -  **/clr**
 
-  - **Pure** - **/clr:pure**
+  - **Pure** -  **/clr:pure**
 
-  - **Safe** - **/clr:safe**
+  - **Safe** -  **/clr:safe**
 
-  - **OldSyntax** - **/clr:oldSyntax**
+  - **OldSyntax** -  **/clr:oldSyntax**
 
     자세한 내용은 [/clr(공용 언어 런타임 컴파일)](/cpp/build/reference/clr-common-language-runtime-compilation)을 참조하세요.
 
@@ -202,15 +202,15 @@ Visual C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실�
 
    선택적 문자열 매개 변수입니다.
 
-   프로그램용으로 생성되는 디버깅 정보 형식과 이 정보를 개체(*.obj*) 파일에 유지할지 아니면 프로그램 데이터베이스(PDB)에 유지할지를 선택합니다.
+   프로그램용으로 생성되는 디버깅 정보 형식과 이 정보를 개체( *.obj*) 파일에 유지할지 아니면 프로그램 데이터베이스(PDB)에 유지할지를 선택합니다.
 
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.
 
-  - **OldStyle** - **/Z7**
+  - **OldStyle** -  **/Z7**
 
-  - **ProgramDatabase** - **/Zi**
+  - **ProgramDatabase** -  **/Zi**
 
-  - **EditAndContinue** - **/ZI**
+  - **EditAndContinue** -  **/ZI**
 
     자세한 내용은 [/Z7, /Zi, /ZI(디버그 정보 형식)](/cpp/build/reference/z7-zi-zi-debug-information-format)를 참조하세요.
 
@@ -238,9 +238,9 @@ Visual C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실�
 
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.
 
-  - **StreamingSIMDExtensions** - **/arch:SSE**
+  - **StreamingSIMDExtensions** -  **/arch:SSE**
 
-  - **StreamingSIMDExtensions2** - **/arch:SSE2**
+  - **StreamingSIMDExtensions2** -  **/arch:SSE2**
 
     자세한 내용은 [/arch(x86)](/cpp/build/reference/arch-x86)를 참조하세요.
 
@@ -268,13 +268,13 @@ Visual C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실�
 
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.
 
-  - **None** - **/errorReport:none**
+  - **None** -  **/errorReport:none**
 
-  - **Prompt** - **/errorReport:prompt**
+  - **Prompt** -  **/errorReport:prompt**
 
-  - **Queue** - **/errorReport:queue**
+  - **Queue** -  **/errorReport:queue**
 
-  - **Send** - **/errorReport:send**
+  - **Send** -  **/errorReport:send**
 
     자세한 내용은 [/errorReport(내부 컴파일러 오류 보고)](/cpp/build/reference/errorreport-report-internal-compiler-errors)를 참조하세요.
 
@@ -286,13 +286,13 @@ Visual C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실�
 
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.
 
-  - **false** - *\<없음>*
+  - **false** -  *\<없음>*
 
-  - **Async** - **/EHa**
+  - **Async** -  **/EHa**
 
-  - **Sync** - **/EHsc**
+  - **Sync** -  **/EHsc**
 
-  - **SyncCThrow** - **/EHs**
+  - **SyncCThrow** -  **/EHs**
 
     자세한 내용은 [/EH(예외 처리 모델)](/cpp/build/reference/eh-exception-handling-model)를 참조하세요.
 
@@ -312,11 +312,11 @@ Visual C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실�
 
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.
 
-  - **Neither** - *\<없음>*
+  - **Neither** -  *\<없음>*
 
-  - **Size** - **/Os**
+  - **Size** -  **/Os**
 
-  - **Speed** - **/Ot**
+  - **Speed** -  **/Ot**
 
     자세한 내용은 [/Os, /Ot(코드 크기 우선, 코드 속도 우선)](/cpp/build/reference/os-ot-favor-small-code-favor-fast-code)를 참조하세요.
 
@@ -336,11 +336,11 @@ Visual C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실�
 
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.
 
-  - **Precise** - **/fp:precise**
+  - **Precise** -  **/fp:precise**
 
-  - **Strict** - **/fp:strict**
+  - **Strict** -  **/fp:strict**
 
-  - **Fast** - **/fp:fast**
+  - **Fast** -  **/fp:fast**
 
     자세한 내용은 [/fp(부동 소수점 동작 지정)](/cpp/build/reference/fp-specify-floating-point-behavior)를 참조하세요.
 
@@ -400,13 +400,13 @@ Visual C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실�
 
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.
 
-  - **기본값** - *\<없음>*
+  - **기본값** -  *\<없음>*
 
-  - **Disabled** - **/Ob0**
+  - **Disabled** -  **/Ob0**
 
-  - **OnlyExplicitInline** - **/Ob1**
+  - **OnlyExplicitInline** -  **/Ob1**
 
-  - **AnySuitable** - **/Ob2**
+  - **AnySuitable** -  **/Ob2**
 
     자세한 내용은 [/Ob(인라인 함수 확장)](/cpp/build/reference/ob-inline-function-expansion)를 참조하세요.
 
@@ -452,7 +452,7 @@ Visual C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실�
 
    선택적 `Boolean` 매개 변수입니다.
 
-   `true`인 경우 개체(*.obj*) 파일에서 기본 C 런타임 라이브러리 이름을 생략합니다. 기본적으로 컴파일러는 올바른 라이브러리로 링커를 보내기 위해 라이브러리 이름을 *.obj* 파일에 넣습니다.
+   `true`인 경우 개체( *.obj*) 파일에서 기본 C 런타임 라이브러리 이름을 생략합니다. 기본적으로 컴파일러는 올바른 라이브러리로 링커를 보내기 위해 라이브러리 이름을 *.obj* 파일에 넣습니다.
 
    자세한 내용은 [/Zl(기본 라이브러리 이름 생략)](/cpp/build/reference/zl-omit-default-library-name)를 참조하세요.
 
@@ -480,13 +480,13 @@ Visual C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실�
 
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.
 
-  - **Disabled** - **/Od**
+  - **Disabled** -  **/Od**
 
-  - **MinSpace** - **/O1**
+  - **MinSpace** -  **/O1**
 
-  - **MaxSpeed** - **/O2**
+  - **MaxSpeed** -  **/O2**
 
-  - **Full** - **/Ox**
+  - **Full** -  **/Ox**
 
     자세한 내용은 [/O 옵션(코드 최적화)](/cpp/build/reference/o-options-optimize-code)을 참조하세요.
 
@@ -494,15 +494,15 @@ Visual C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실�
 
    선택적 **문자열** 매개 변수입니다.
 
-   빌드 중 미리 컴파일된 헤더(*.pch*) 파일을 만들거나 사용합니다.
+   빌드 중 미리 컴파일된 헤더( *.pch*) 파일을 만들거나 사용합니다.
 
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.
 
-  - **NotUsing** - *\<없음>*
+  - **NotUsing** -  *\<없음>*
 
-  - **Create** - **/Yc**
+  - **Create** -  **/Yc**
 
-  - **Use** - **/Yu**
+  - **Use** -  **/Yu**
 
     자세한 내용은 [/Yc(미리 컴파일된 헤더 파일 만들기)](/cpp/build/reference/yc-create-precompiled-header-file) 및 [/Yu(미리 컴파일된 헤더 파일 사용)](/cpp/build/reference/yu-use-precompiled-header-file)를 참조하세요. 또한 이 표의 **PrecompiledHeaderFile** 및 **PrecompiledHeaderOutputFile** 매개 변수도 참조하세요.
 
@@ -590,13 +590,13 @@ Visual C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실�
 
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.
 
-  - **MultiThreaded** - **/MT**
+  - **MultiThreaded** -  **/MT**
 
-  - **MultiThreadedDebug** - **/MTd**
+  - **MultiThreadedDebug** -  **/MTd**
 
-  - **MultiThreadedDLL** - **/MD**
+  - **MultiThreadedDLL** -  **/MD**
 
-  - **MultiThreadedDebugDLL** - **/MDd**
+  - **MultiThreadedDebugDLL** -  **/MDd**
 
     자세한 내용은 [/MD, /MT, /LD(런타임 라이브러리 사용)](/cpp/build/reference/md-mt-ld-use-run-time-library)를 참조하세요.
 
@@ -646,17 +646,17 @@ Visual C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실�
 
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.
 
-  - **Default** - **/Zp1**
+  - **Default** -  **/Zp1**
 
-  - **1Byte** - **/Zp1**
+  - **1Byte** -  **/Zp1**
 
-  - **2Bytes** - **/Zp2**
+  - **2Bytes** -  **/Zp2**
 
-  - **4Bytes** - **/Zp4**
+  - **4Bytes** -  **/Zp4**
 
-  - **8Bytes** - **/Zp8**
+  - **8Bytes** -  **/Zp8**
 
-  - **16Bytes** - **/Zp16**
+  - **16Bytes** -  **/Zp16**
 
     자세한 내용은 [/Zp(구조체 멤버 맞춤)](/cpp/build/reference/zp-struct-member-alignment)를 참조하세요.
 
@@ -740,17 +740,17 @@ Visual C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실�
 
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.
 
-  - **TurnOffAllWarnings** - **/W0**
+  - **TurnOffAllWarnings** -  **/W0**
 
-  - **Level1** - **/W1**
+  - **Level1** -  **/W1**
 
-  - **Level2** - **/W2**
+  - **Level2** -  **/W2**
 
-  - **Level3** - **/W3**
+  - **Level3** -  **/W3**
 
-  - **Level4** - **/W4**
+  - **Level4** -  **/W4**
 
-  - **EnableAllWarnings** - **/Wall**
+  - **EnableAllWarnings** -  **/Wall**
 
     자세한 내용은 [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX(경고 수준)](/cpp/build/reference/compiler-option-warning-level)의 **/W**_n_ 옵션을 참조하세요.
 
@@ -782,7 +782,7 @@ Visual C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실�
 
    *읽기 파일 추적 로그*를 나타내는 항목의 배열을 지정합니다.
 
-   읽기 파일 추적 로그(*.tlog*)에는 작업에서 읽은 입력 파일의 이름이 포함되어 있으며, 프로젝트 빌드 시스템에서 증분 빌드를 지원하는 데 이 로그를 사용합니다. 자세한 내용은 이 표의 **TrackerLogDirectory** 및 **TrackFileAccess** 매개 변수를 참조하세요.
+   읽기 파일 추적 로그( *.tlog*)에는 작업에서 읽은 입력 파일의 이름이 포함되어 있으며, 프로젝트 빌드 시스템에서 증분 빌드를 지원하는 데 이 로그를 사용합니다. 자세한 내용은 이 표의 **TrackerLogDirectory** 및 **TrackFileAccess** 매개 변수를 참조하세요.
 
 - **TLogWriteFiles**
 
@@ -790,7 +790,7 @@ Visual C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실�
 
    *쓰기 파일 추적 로그*를 나타내는 항목의 배열을 지정합니다.
 
-   쓰기 파일 추적 로그(*.tlog*)에는 작업에서 작성한 출력 파일의 이름이 포함되어 있으며, 프로젝트 빌드 시스템에서 증분 빌드를 지원하는 데 이 로그를 사용합니다. 자세한 내용은 이 표의 **TrackerLogDirectory** 및 **TrackFileAccess** 매개 변수를 참조하세요.
+   쓰기 파일 추적 로그( *.tlog*)에는 작업에서 작성한 출력 파일의 이름이 포함되어 있으며, 프로젝트 빌드 시스템에서 증분 빌드를 지원하는 데 이 로그를 사용합니다. 자세한 내용은 이 표의 **TrackerLogDirectory** 및 **TrackFileAccess** 매개 변수를 참조하세요.
 
 - **TrackFileAccess**
 

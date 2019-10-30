@@ -1,5 +1,5 @@
 ---
-title: 클래스 디자이너의 Visual C++ 클래스
+title: 클래스 디자이너의 C++ 클래스
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,19 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - Class Designer [Visual Studio], classes
 ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b8312e0db76dd3ce064172116aecd82daab56e90
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84fc10a3f62ea4bef82a466b2d76c46e73eb7e6e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975049"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748920"
 ---
-# <a name="visual-c-classes-in-class-designer"></a>클래스 디자이너의 Visual C++ 클래스
+# <a name="c-classes-in-class-designer"></a>클래스 디자이너의 C++ 클래스
 
 **클래스 디자이너**는 C++ 클래스를 지원하며, C++ 클래스가 여러 상속 관계를 포함한다는 점을 제외하고 Visual Basic 및 C# 클래스 모양과 동일한 방식으로 네이티브 C++ 클래스를 시각화합니다. 클래스 모양을 확장하여 추가 필드와 메서드를 클래스에 표시하거나 축소하여 공간을 절약할 수 있습니다.
 
@@ -174,7 +174,7 @@ typedef struct
 
 ## <a name="see-also"></a>참고 항목
 
-- [Visual C++ 코드 작업](working-with-visual-cpp-code.md)
+- [C++ 코드 사용](working-with-visual-cpp-code.md)
 - [클래스 및 구조체](/cpp/cpp/classes-and-structs-cpp)
 - [익명 클래스 형식](/cpp/cpp/anonymous-class-types)
 - [다중 상속](https://msdn.microsoft.com/library/6td5yws2.aspx)

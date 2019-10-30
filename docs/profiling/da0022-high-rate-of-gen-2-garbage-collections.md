@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be0c156cc4b47bc4ebedd169b099a538941f56d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ba70e303c3164417890be51e834d86d8983526cf
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936400"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910531"
 ---
 # <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022: Gen 2 가비지 수집의 비율이 높습니다.
 
@@ -50,4 +50,4 @@ ms.locfileid: "62936400"
 
  애플리케이션의 관리되는 메모리 사용 패턴을 파악하려면 .NET 메모리 할당 프로필을 실행하여 애플리케이션을 다시 프로파일링하고 개체 수명 프로파일링 옵션을 선택합니다.
 
- 가비지 수집 성능 향상 방법에 대한 자세한 내용은 Microsoft 웹 사이트에서 [가비지 수집기 기본 및 성능 힌트](http://go.microsoft.com/fwlink/?LinkId=148226)를 참조하세요. 자동 가비지 수집의 오버헤드에 대한 자세한 내용은 [Large Object Heap Uncovered](http://go.microsoft.com/fwlink/?LinkId=177836)(대형 개체 힙 살펴보기)를 참조하세요.
+ 가비지 수집 성능 향상 방법에 대한 자세한 내용은 Microsoft 웹 사이트에서 [가비지 수집기 기본 및 성능 힌트](/previous-versions/dotnet/articles/ms973837(v=msdn.10))를 참조하세요. 자동 가비지 수집의 오버헤드에 대한 자세한 내용은 [Large Object Heap Uncovered](https://msdn.microsoft.com/magazine/cc534993.aspx)(대형 개체 힙 살펴보기)를 참조하세요.

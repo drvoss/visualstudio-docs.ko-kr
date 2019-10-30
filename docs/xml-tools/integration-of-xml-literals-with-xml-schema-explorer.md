@@ -8,16 +8,16 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c81f5db0477713ff99e9b7894bcbe86b3cf33018
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cf073145b0deb21a2ec29ac1fff16be08fb24593
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601772"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986296"
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>Xml 리터럴을 XML 스키마 탐색기와 통합
 
-Visual Basic XML 리터럴을 지원 합니다. 즉, XML 조각을 Visual Basic 코드에 직접 통합할 수 있습니다. 자세한 내용은 [XML 리터럴 개요](http://go.microsoft.com/fwlink/?LinkId=140325)를 참조 하세요.
+Visual Basic XML 리터럴을 지원 합니다. 즉, XML 조각을 Visual Basic 코드에 직접 통합할 수 있습니다. 자세한 내용은 [XML 리터럴 개요](/dotnet/visual-basic/programming-guide/language-features/xml/xml-literals-overview)를 참조 하세요.
 
 ## <a name="how-to"></a>방법
 

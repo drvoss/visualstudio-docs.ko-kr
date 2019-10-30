@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 24e27c8ca2c75e2345bea4f4393fcb00bba1a0d8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 0a16f9501b9ce1e7c69eaa8f2460a50affd6d579
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821716"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888705"
 ---
 # <a name="install-build-tools-into-a-container"></a>Build Tools를 컨테이너에 설치
 
@@ -28,11 +28,11 @@ Visual Studio Build Tools를 Windows 컨테이너에 설치하여 CI/CD(지속�
 
 Visual Studio Build Tools에 소스 코드를 빌드하는 데 필요한 것이 없는 경우 다른 Visual Studio 제품에 대해 동일한 단계를 사용할 수 있습니다. 그러나 Windows 컨테이너는 대화형 사용자 인터페이스를 지원하지 않으므로 모든 명령을 자동화해야 합니다.
 
-## <a name="before-you-begin"></a>시작하기 전에
+## <a name="before-you-begin"></a>시작하기 전 주의 사항
 
-아래에서는 [Docker](https://www.docker.com/what-docker)에 어느 정도 익숙한 것으로 간주합니다. Windows에서 Docker 실행에 대해 아직 익숙하지 않은 경우 [Windows에서 Docker 엔진 설치 및 구성](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon) 방법을 확인하세요.
+아래에서는 [Docker](https://www.docker.com/what-docker)에 어느 정도 익숙한 것으로 간주합니다. Windows에서 Docker 실행에 대해 아직 익숙하지 않은 경우 [Windows에서 Docker 엔진 설치 및 구성](/virtualization/windowscontainers/manage-docker/configure-docker-daemon) 방법을 확인하세요.
 
-아래 기본 이미지는 샘플이며 사용자 시스템에서는 작동하지 않을 수 있습니다. 사용자 환경에서 어떤 기본 이미지를 사용해야 하는지 확인하려면 [Windows 컨테이너 버전 호환성](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility)을 참조하세요.
+아래 기본 이미지는 샘플이며 사용자 시스템에서는 작동하지 않을 수 있습니다. 사용자 환경에서 어떤 기본 이미지를 사용해야 하는지 확인하려면 [Windows 컨테이너 버전 호환성](/virtualization/windowscontainers/deploy-containers/version-compatibility)을 참조하세요.
 
 ## <a name="create-and-build-the-dockerfile"></a>Dockerfile 만들기 및 빌드
 
@@ -93,7 +93,7 @@ Visual Studio Build Tools에 소스 코드를 빌드하는 데 필요한 것이 
    >
    > Visual Studio 2017 버전 15.8 또는 이전 버전(제품)이 mcr.microsoft.com/windows/servercore:1809 이상에 제대로 설치되지 않습니다. 오류가 표시되지 않습니다.
    >
-   > 어떤 호스트 OS 버전에 어떤 컨테이너 OS 버전이 지원되는지 확인하려면 [Windows 컨테이너 버전 호환성](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility)을 참조하고, 알려진 문제의 경우에는 [알려진 컨테이너 관련 문제](build-tools-container-issues.md)를 참조하세요.
+   > 어떤 호스트 OS 버전에 어떤 컨테이너 OS 버전이 지원되는지 확인하려면 [Windows 컨테이너 버전 호환성](/virtualization/windowscontainers/deploy-containers/version-compatibility)을 참조하고, 알려진 문제의 경우에는 [알려진 컨테이너 관련 문제](build-tools-container-issues.md)를 참조하세요.
 
    ::: moniker-end
 
@@ -131,7 +131,7 @@ Visual Studio Build Tools에 소스 코드를 빌드하는 데 필요한 것이 
    > [!WARNING]
    > microsoft/windowsservercore에 이미지를 직접 베이스하는 경우 .NET Framework는 제대로 설치되지 않을 수 있으며 설치 오류가 표시되지 않습니다. 관리 코드는 설치가 완료된 후 실행되지 않을 수 있습니다. 대신, [microsoft/dotnet-framework:4.8](https://hub.docker.com/r/microsoft/dotnet-framework) 이상에서 이미지를 베이스합니다. 또한 버전 4.8 이상 태그가 지정된 이미지는 `RUN` 및 `ENTRYPOINT` 지침 실패로 이어지는 기본값 `SHELL`로 PowerShell을 사용할 수 있습니다.
    >
-   > 어떤 호스트 OS 버전에 어떤 컨테이너 OS 버전이 지원되는지 확인하려면 [Windows 컨테이너 버전 호환성](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility)을 참조하고, 알려진 문제의 경우에는 [알려진 컨테이너 관련 문제](build-tools-container-issues.md)를 참조하세요.
+   > 어떤 호스트 OS 버전에 어떤 컨테이너 OS 버전이 지원되는지 확인하려면 [Windows 컨테이너 버전 호환성](/virtualization/windowscontainers/deploy-containers/version-compatibility)을 참조하고, 알려진 문제의 경우에는 [알려진 컨테이너 관련 문제](build-tools-container-issues.md)를 참조하세요.
 
    ::: moniker-end
 

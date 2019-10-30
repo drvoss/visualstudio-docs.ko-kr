@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: da10833f8340d5308321038bb0500ca8408b40bb
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 137031202075d1c646cc7415042dd8d6eab72b78
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551774"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985762"
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>관리 되는 참조 (Visual Studio에서 Office 개발)
-  이 섹션에는 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 또는 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]대상의 Office 프로젝트에서 사용되는 네임스페이스 및 형식에 대한 API 참조 설명서가 포함되어 있습니다. .NET Framework 3.5를 대상으로 하는 Office 프로젝트에서 사용 되는 네임 스페이스 및 형식에 대 한 API 참조 설명서는 Visual Studio 설명서 [http://go.microsoft.com/fwlink/?LinkId=160658](http://go.microsoft.com/fwlink/?LinkId=160658)에서 다음 참조 섹션을 참조 하세요.
+  이 섹션에는 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 또는 [!INCLUDE[net_v45](includes/net-v45-md.md)]대상의 Office 프로젝트에서 사용되는 네임스페이스 및 형식에 대한 API 참조 설명서가 포함되어 있습니다. .NET Framework 3.5를 대상으로 하는 Office 프로젝트에서 사용 되는 네임 스페이스 및 형식에 대 한 API 참조 설명서는 Visual Studio 설명서에서 [관리 되는 참조 (Visual studio에서 Office 개발)의 다음 참조 섹션을 참조 하세요. )](managed-reference-office-development-in-visual-studio.md).
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>이 섹션의 내용
  <xref:Microsoft.Office.Tools>
 
  Office 솔루션을 프로그래밍할 때 일반적으로 사용하는 클래스가 포함됩니다. 여기에는 VSTO 추가 기능용 기본 클래스, VSTO 추가 기능에서 사용자 지정 작업창을 만들기 위한 클래스, Excel 및 Word 솔루션에서 스마트 태그를 만들기 위한 클래스, 문서 수준 사용자 지정에서 작업 창을 만들기 위한 클래스가 포함됩니다.
@@ -64,14 +64,14 @@ ms.locfileid: "69551774"
 
  <xref:Microsoft.VisualStudio.Tools.Applications.Runtime>
 
- [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]에 의해 throw될 수 있는 대부분의 예외, 문서 수준 사용자 지정에 데이터를 캐시하는 데 사용할 수 있는 여러 클래스 및 Visual Studio 인프라의 일부인 기타 API가 포함됩니다.
+ [!INCLUDE[vsto_runtime](includes/vsto-runtime-md.md)]에 의해 throw될 수 있는 대부분의 예외, 문서 수준 사용자 지정에 데이터를 캐시하는 데 사용할 수 있는 여러 클래스 및 Visual Studio 인프라의 일부인 기타 API가 포함됩니다.
 
  <xref:Microsoft.VisualStudio.Tools.Office.BuildTasks>
 
  Office 프로젝트를 빌드하는 데 사용되는 MSBuild 작업 클래스가 포함됩니다.
 
-## <a name="see-also"></a>참고자료
-- [Visual Studio tools for Office 런타임 개요](../vsto/visual-studio-tools-for-office-runtime-overview.md)
-- [Visual Studio &#40;에서 Office 개발 시작 하기&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
-- [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)
-- [Office 솔루션 디자인 및 만들기](../vsto/designing-and-creating-office-solutions.md)
+## <a name="see-also"></a>참조
+- [Visual Studio tools for Office 런타임 개요](visual-studio-tools-for-office-runtime-overview.md)
+- [Visual Studio &#40;에서 Office 개발 시작 하기&#41;](getting-started-office-development-in-visual-studio.md)
+- [Office 개발 샘플 및 연습](office-development-samples-and-walkthroughs.md)
+- [Office 솔루션 디자인 및 만들기](designing-and-creating-office-solutions.md)

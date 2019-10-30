@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b908e4fe9ed0087abaf5f1390bb8faf5cc12bdaa
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 27e551132e66ef0cb380b56441d19b1436d19df2
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737568"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911530"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>오류: Microsoft Visual Studio 원격 디버깅 모니터(MSVSMON.EXE)가 원격 컴퓨터에서 실행 중인 것 같지 않습니다.
 이 오류 메시지는 Visual Studio가 원격 컴퓨터에서 Visual Studio 원격 디버깅 모니터의 올바른 인스턴스를 찾을 수 없음을 의미합니다. 원격으로 디버깅을 수행하려면 Visual Studio 원격 디버깅 모니터를 설치해야 합니다. 원격 디버거를 다운로드 하 고 설정 하는 방법에 대 한 자세한 내용은 [원격 디버깅](../debugger/remote-debugging.md)을 참조 하세요.
@@ -41,7 +41,7 @@ ms.locfileid: "72737568"
  원격 컴퓨터를 [ping](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee624059(v=ws.10)) 하려고 합니다. Ping에 응답하지 않으면 원격 도구도 연결할 수 없습니다. 원격 컴퓨터를 다시 부팅하거나 네트워크에서 올바르게 구성되었는지 확인합니다.
 
 ## <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>원격 디버거 버전이 Visual Studio 버전과 일치하지 않음
- 로컬로 실행하는 Visual Studio 버전이 원격 컴퓨터에서 실행되는 원격 디버깅 모니터 버전과 일치해야 합니다. 이 문제를 해결하려면 일치하는 버전의 원격 디버깅 모니터를 다운로드하여 설치합니다. [다운로드 센터](http://www.microsoft.com/en-us/download) 로 이동하여 올바른 버전의 원격 디버거를 찾습니다.
+ 로컬로 실행하는 Visual Studio 버전이 원격 컴퓨터에서 실행되는 원격 디버깅 모니터 버전과 일치해야 합니다. 이 문제를 해결하려면 일치하는 버전의 원격 디버깅 모니터를 다운로드하여 설치합니다. [다운로드 센터](https://www.microsoft.com/download) 로 이동하여 올바른 버전의 원격 디버거를 찾습니다.
 
 ## <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>로컬 및 원격 컴퓨터의 인증 모드가 서로 다름
  로컬 및 원격 컴퓨터에서 동일한 인증 모드를 사용해야 합니다. 이 문제를 해결하려면 두 컴퓨터에서 모두 동일한 인증 모드를 사용 중인지 확인합니다. 인증 모드에 대한 자세한 내용은 [Windows 인증 개요](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831472(v=ws.11))를 참조하세요.
@@ -70,7 +70,7 @@ ms.locfileid: "72737568"
  다른 시간에 원격 디버깅을 수행하거나 다른 시간에 네트워크 작업을 다시 예약해야 할 수도 있습니다.
 
 ## <a name="more-help"></a>자세한 도움말
- 명령줄 스위치를 포함 하 여 원격 디버거 도움말을 더 얻으려면 원격 디버거 창에서 **도움말 > 사용** 을 클릭 합니다. 열려 있지 않은 경우 다음 줄을 **파일 탐색기** 창에 복사 하 여 웹 페이지를 볼 수 있습니다. @No__t_0Visual Studio 설치 디렉터리 >을 Visual Studio 설치 위치로 바꾸어야 합니다.
+ 명령줄 스위치를 포함 하 여 원격 디버거 도움말을 더 얻으려면 원격 디버거 창에서 **도움말 > 사용** 을 클릭 합니다. 열려 있지 않은 경우 다음 줄을 **파일 탐색기** 창에 복사 하 여 웹 페이지를 볼 수 있습니다. Visual studio 설치 디렉터리 > \<Visual Studio 설치 위치로 바꾸어야 합니다.
 
  res:// *\<Visual Studio 설치 디렉터리>* \Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm
 

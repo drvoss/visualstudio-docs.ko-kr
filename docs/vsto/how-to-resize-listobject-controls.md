@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d7dac99088dc57b538f7a26ffbd0bdc0e3e05b5a
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: fdebceb7ed6357542877bf13522425f7c013da73
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252123"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985749"
 ---
 # <a name="how-to-resize-listobject-controls"></a>방법: ListObject 컨트롤 크기 조정
   <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤의 크기는 Microsoft Office Excel 통합 문서에 추가할 때 설정하지만 나중에 크기를 조정할 수 있습니다. 예를 들어 2열로 된 목록을 3열로 변경할 수 있습니다.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- 문서 수준 프로젝트에서는 디자인 타임 또는 런타임에 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤의 크기를 조정할 수 있습니다. VSTO 추가 기능 <xref:Microsoft.Office.Tools.Excel.ListObject> 프로젝트에서 런타임에 컨트롤의 크기를 조정할 수 있습니다.
+ 문서 수준 프로젝트에서는 디자인 타임 또는 런타임에 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤의 크기를 조정할 수 있습니다. 런타임에 VSTO 추가 기능 프로젝트에서 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤의 크기를 조정할 수 있습니다.
 
  이 항목에서는 다음 작업에 대해 설명합니다.
 
@@ -35,9 +35,7 @@ ms.locfileid: "71252123"
 
 - [런타임에 VSTO 추가 기능 프로젝트에서 ListObject 컨트롤 크기 조정](#runtimeaddin)
 
-  컨트롤에 대 한 <xref:Microsoft.Office.Tools.Excel.ListObject> 자세한 내용은 [ListObject 컨트롤](../vsto/listobject-control.md)을 참조 하세요.
-
-  ![비디오에 연결](../vsto/media/playvideo.gif "비디오에 연결") 관련 비디오 데모를 보려면 어떻게 할까요?를 [참조 하세요. 런타임에 데이터 바인딩된 목록 개체에 열을 추가 하 시겠습니까? ](http://go.microsoft.com/fwlink/?LinkID=130318).
+  <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤에 대 한 자세한 내용은 [ListObject 컨트롤](../vsto/listobject-control.md)을 참조 하세요.
 
 ## <a name="designtime"></a>디자인 타임에 ListObject 컨트롤 크기 조정
  목록 크기를 조정하려면 크기 조정 핸들 중 하나를 클릭하여 끌거나 **목록 크기 조정** 대화 상자에서 크기를 재정의합니다.
@@ -70,7 +68,7 @@ ms.locfileid: "71252123"
      [!code-vb[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#7)]
 
 ## <a name="runtimeaddin"></a>런타임에 VSTO 추가 기능 프로젝트에서 ListObject 크기 조정
- 런타임에 열려 있는 워크시트에서 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤의 크기를 조정할 수 있습니다. VSTO 추가 기능 [을 사용 하 여 워크시트 <xref:Microsoft.Office.Tools.Excel.ListObject> 에 컨트롤을 추가 하는 방법에 대 한 자세한 내용은 방법: 워크시트](../vsto/how-to-add-listobject-controls-to-worksheets.md)에 ListObject 컨트롤을 추가 합니다.
+ 런타임에 열려 있는 워크시트에서 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤의 크기를 조정할 수 있습니다. VSTO 추가 기능을 사용 하 여 워크시트에 <xref:Microsoft.Office.Tools.Excel.ListObject> 컨트롤을 추가 하는 방법에 대 한 자세한 내용은 [방법: 워크시트에 ListObject 컨트롤 추가](../vsto/how-to-add-listobject-controls-to-worksheets.md)를 참조 하세요.
 
 ### <a name="to-resize-a-list-object-programmatically"></a>프로그래밍 방식으로 목록 개체의 크기를 조정하려면
 
@@ -84,7 +82,7 @@ ms.locfileid: "71252123"
      [!code-csharp[Trin_Excel_Dynamic_Controls#13](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#13)]
      [!code-vb[Trin_Excel_Dynamic_Controls#13](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#13)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [런타임에 VSTO 추가 기능에서 Word 문서 및 Excel 통합 문서 확장](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Office 문서의 컨트롤](../vsto/controls-on-office-documents.md)
 - [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)

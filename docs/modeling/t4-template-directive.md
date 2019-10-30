@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4932a20fbcaee4d5aef6aac03252ee6062fbd035
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 410bc879ff4822f19436794d3cb99732be9d413e
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606212"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983699"
 ---
 # <a name="t4-template-directive"></a>T4 템플릿 지시문
 
@@ -96,7 +96,7 @@ hostspecific="true"
 
 이 속성의 형식이 호스트의 형식에 따라 달라지기 때문에 이 속성은 특정 호스트에서만 작동하는 텍스트 템플릿을 작성하는 경우에만 유용합니다. [디자인 타임 템플릿에](../modeling/design-time-code-generation-by-using-t4-text-templates.md)는 적용 되지만 [런타임 템플릿에](../modeling/run-time-text-generation-with-t4-text-templates.md)는 적용 되지 않습니다.
 
-@No__t_0 `true` 되 고 Visual Studio를 사용 하는 경우 Visual Studio 기능에 액세스 하기 위해 `this.Host`을 IServiceProvider으로 캐스팅할 수 있습니다. `Host.ResolvePath(filename)`를 사용하여 프로젝트에서 파일의 절대 경로를 가져올 수도 있습니다. 예를 들면,
+`hostspecific` `true` 되 고 Visual Studio를 사용 하는 경우 Visual Studio 기능에 액세스 하기 위해 `this.Host`을 IServiceProvider으로 캐스팅할 수 있습니다. `Host.ResolvePath(filename)`를 사용하여 프로젝트에서 파일의 절대 경로를 가져올 수도 있습니다. 예를 들면,
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -132,7 +132,7 @@ Content of myFile is:
 
 `VB`
 
-@No__t_0 특성은 문과 식 블록의 소스 코드에 사용할 언어 ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 또는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)])를 지정 합니다. 출력이 생성되는 중간 코드 파일에서 이 언어가 사용됩니다. 이 언어는 템플릿에서 생성되는 언어와 관련이 없으며 모든 종류의 텍스트일 수 있습니다.
+`language` 특성은 문과 식 블록의 소스 코드에 사용할 언어 ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 또는 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)])를 지정 합니다. 출력이 생성되는 중간 코드 파일에서 이 언어가 사용됩니다. 이 언어는 템플릿에서 생성되는 언어와 관련이 없으며 모든 종류의 텍스트일 수 있습니다.
 
 예를 들면,
 
@@ -235,7 +235,7 @@ This is the common footer.
 
 디자인 타임 텍스트 템플릿의 경우에는 <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> 클래스에서 파생되는 기본 클래스를 지정할 수 있습니다. `<#@assembly#>` 지시문을 사용하여 기본 클래스가 들어 있는 프로젝트나 어셈블리를 로드합니다.
 
-자세한 내용은 [Gareth Jones의 블로그에서 "텍스트 템플릿의 상속"](http://go.microsoft.com/fwlink/?LinkId=208373)을 참조 하세요.
+자세한 내용은 [Gareth Jones의 블로그에서 "텍스트 템플릿의 상속"](https://blogs.msdn.microsoft.com/garethj/2011/01/03/vs2010-sp1-t4-template-inheritance-part-i-sample-metadata/)을 참조 하세요.
 
 ## <a name="linepragmas-attribute"></a>linePragmas 특성
 

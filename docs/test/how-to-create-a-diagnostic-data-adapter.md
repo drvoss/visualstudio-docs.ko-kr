@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Diagnostic Data Adapter, creating
 ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 517d4e0558aeca1518316520191ae6c662b41a9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a1940cda15d1ac5515e25b1e1e997f13a32d6e53
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950739"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653691"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>방법: 진단 데이터 어댑터 만들기
 
@@ -68,7 +68,7 @@ Microsoft Test Manager 또는 Visual Studio를 사용하여 테스트 설정을 
 
    3. **확인**을 선택합니다.
 
-4. 다음 `using` 문을 클래스 파일에 추가합니다.
+4. 다음 `using` 지시문을 클래스 파일에 추가합니다.
 
    ```csharp
    using Microsoft.VisualStudio.TestTools.Common;

@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b91cc92abca856e3a23e7b1154e378c99923fcf
-ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
+ms.openlocfilehash: dbca6429c1cc1669345cda465ec9ecfe3af0ed06
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70060378"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919184"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio의 접근성 기능
 
@@ -51,7 +51,7 @@ ms.locfileid: "70060378"
 - [방법: 글꼴 및 색 변경](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 > [!IMPORTANT]
-> 이 페이지의 정보는 미국에서 Microsoft 제품의 사용을 허가하는 사용자에게만 적용될 수 있습니다. 미국 이외의 지역에서 이 제품을 구입한 경우 [Microsoft 접근성](http://go.microsoft.com/fwlink/?LinkId=8431) 웹 사이트를 방문하여 Microsoft 지원 서비스 전화 번호와 주소 목록을 볼 수 있습니다. 자회사에 연락하여 이 페이지에서 설명하는 제품 및 서비스 유형이 해당 지역에서 제공되는지 확인할 수 있습니다. 접근성에 대한 정보는 다른 언어로도 제공됩니다.
+> 이 페이지의 정보는 미국에서 Microsoft 제품의 사용을 허가하는 사용자에게만 적용될 수 있습니다. 미국 이외의 지역에서 이 제품을 구입한 경우 [Microsoft 접근성](https://www.microsoft.com/accessibility/) 웹 사이트를 방문하여 Microsoft 지원 서비스 전화 번호와 주소 목록을 볼 수 있습니다. 자회사에 연락하여 이 페이지에서 설명하는 제품 및 서비스 유형이 해당 지역에서 제공되는지 확인할 수 있습니다. 접근성에 대한 정보는 다른 언어로도 제공됩니다.
 
 ::: moniker range="vs-2017"
 

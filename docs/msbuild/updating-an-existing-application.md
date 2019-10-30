@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf2b8669fe9b516f3150829612d6999895cc69f8
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: a891f6d18657bad65a1cf087da975849642b7aec
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306242"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72912044"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>MSBuild 15에 대한 기존 애플리케이션 업데이트
 
@@ -38,7 +38,7 @@ MSBuild가 중앙 위치에서 로드되도록 하려면 애플리케이션과 �
 
 #### <a name="use-nuget-packages-preferred"></a>NuGet 패키지 사용(기본 설정됨)
 
-이러한 지침에서는 [PackageReference 스타일 NuGet 참조](https://docs.microsoft.com/nuget/consume-packages/package-references-in-project-files)를 사용한다고 가정합니다.
+이러한 지침에서는 [PackageReference 스타일 NuGet 참조](/nuget/consume-packages/package-references-in-project-files)를 사용한다고 가정합니다.
 
 해당 NuGet 패키지에서 MSBuild 어셈블리를 참조하도록 프로젝트 파일을 변경합니다. 어셈블리가 빌드 시에만 필요하고 출력 디렉터리에 복사하지 말아야 함을 NuGet에 알리도록 `ExcludeAssets=runtime`을 지정합니다.
 

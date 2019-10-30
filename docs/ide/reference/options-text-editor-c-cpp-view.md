@@ -11,12 +11,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b15952c8262ea1e8dec1e89816a5887f9bfe9bf6
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: b867d81e4f0719ebf239bc89a6200fe833bc27b1
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461281"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919029"
 ---
 # <a name="options-text-editor-cc-view"></a>옵션, 텍스트 편집기, C/C++, 보기
 
@@ -57,4 +57,4 @@ ms.locfileid: "68461281"
 ## <a name="see-also"></a>참고 항목
 
 - [언어별 편집기 옵션 설정](../../ide/reference/setting-language-specific-editor-options.md)
-- [C++에서의 리팩터링(VC 블로그)](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx)
+- [C++에서의 리팩터링(VC 블로그)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)

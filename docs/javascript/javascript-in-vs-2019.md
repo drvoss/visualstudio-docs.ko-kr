@@ -11,18 +11,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 3000510c6bb6079629a3df05909417593569c932
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3412e1d27a365a6c6302c56ada865f33a436b639
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553257"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888615"
 ---
 # <a name="javascript-and-typescript-in-visual-studio-2019"></a>Visual Studio 2019의 JavaScript 및 TypeScript
 
 ## <a name="overview"></a>개요
 
-Visual Studio 2019는 JavaScript를 직접 사용할 뿐 아니라 특히 대규모로 프로젝트를 개발하는 경우 생산성과 효율성이 더 높은 JavaScript 개별 환경을 제공하도록 개발된 [TypeScript 프로그래밍 언어](http://www.typescriptlang.org)를 사용하는 JavaScript 개발을 위한 풍부한 지원을 제공합니다. Visual Studio에서 다양한 애플리케이션 형식 및 서비스의 JavaScript 또는 TypeScript 코드를 작성할 수 있습니다.
+Visual Studio 2019는 JavaScript를 직접 사용할 뿐 아니라 특히 대규모로 프로젝트를 개발하는 경우 생산성과 효율성이 더 높은 JavaScript 개별 환경을 제공하도록 개발된 [TypeScript 프로그래밍 언어](http://www.typescriptlang.org/)를 사용하는 JavaScript 개발을 위한 풍부한 지원을 제공합니다. Visual Studio에서 다양한 애플리케이션 형식 및 서비스의 JavaScript 또는 TypeScript 코드를 작성할 수 있습니다.
 
 ## <a name="javascript-language-service"></a>JavaScript 언어 서비스
 
@@ -42,4 +42,4 @@ Visual Studio 2019에서 개발된 프로젝트의 경우 다양한 플랫폼과
 
 ## <a name="projects"></a>프로젝트
 
-UWP JavaScript 앱은 Visual Studio 2019에서 더 이상 지원되지 않습니다. JavaScript UWP 프로젝트(확장명이 *.jsproj*인 파일)는 만들거나 열 수 없습니다. Windows에서 제대로 실행되는 [PWA(프로그레시브 웹앱)를 만드는 방법](https://docs.microsoft.com/microsoft-edge/progressive-web-apps/get-started)에 대한 설명서를 사용하여 자세히 알아볼 수 있습니다.
+UWP JavaScript 앱은 Visual Studio 2019에서 더 이상 지원되지 않습니다. JavaScript UWP 프로젝트(확장명이 *.jsproj*인 파일)는 만들거나 열 수 없습니다. Windows에서 제대로 실행되는 [PWA(프로그레시브 웹앱)를 만드는 방법](/microsoft-edge/progressive-web-apps/get-started)에 대한 설명서를 사용하여 자세히 알아볼 수 있습니다.

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: da437b974eff9beb671f5fe889bec427f9f85f4c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cadf5f605b78dd82ddf205ecfb5b0beded92a59f
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62989758"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910523"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 프로세스 관리 메모리 한도로 실행 중인 32비트 애플리케이션
 
@@ -64,7 +64,7 @@ ms.locfileid: "62989758"
 
   [할당 뷰](../profiling/dotnet-memory-allocations-view.md)를 사용하여 이러한 할당이 시작된 실행 경로를 확인합니다.
 
-  가비지 수집 성능을 향상시키는 방법에 대한 자세한 내용은 MSDN 웹 사이트에서 .NET Framework 기술 문서, [가비지 수집기 기본 및 성능 힌트](http://go.microsoft.com/fwlink/?LinkId=177946)를 참조하세요.
+  가비지 수집 성능을 향상시키는 방법에 대한 자세한 내용은 MSDN 웹 사이트에서 .NET Framework 기술 문서, [가비지 수집기 기본 및 성능 힌트](/previous-versions/dotnet/articles/ms973837(v=msdn.10))를 참조하세요.
 
   프로세스 주소 공간 중 전용 부분 크기에 대한 가상 메모리 제약 조건을 구조적으로 완화하려면 64비트 컴퓨터에서 이 32비트 프로세스를 실행해 보세요.  64비트 컴퓨터에서 32비트 프로세스를 실행하면 전용 가상 메모리를 4GB까지 확보할 수 있습니다.
 

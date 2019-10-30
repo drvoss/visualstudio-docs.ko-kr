@@ -11,16 +11,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d0ad3ac3c4efa6be136fa85ee0c8abbe3632e53f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7707d993ac5fb6f73060d0f862c828e67c833872
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62958743"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985208"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>자습서: Visual Studio에서 Flask 웹 프레임워크 시작
 
-[Flask](http://flask.pocoo.org/)는 URL 라우팅 및 페이지 렌더링을 위한 기본 사항을 제공하는 웹 애플리케이션용 경량 Python 프레임워크입니다.
+[Flask](https://palletsprojects.com/p/flask/)는 URL 라우팅 및 페이지 렌더링을 위한 기본 사항을 제공하는 웹 애플리케이션용 경량 Python 프레임워크입니다.
 
 Flask는 폼 유효성 검사, 데이터베이스 추상화, 인증 등과 같은 기능을 직접 제공하지 않기 때문에 "마이크로" 프레임워크라고 합니다. 대신 이러한 기능은 Flask *확장*이라는 특별한 Python 패키지를 통해 제공됩니다. 확장은 Flask와 원활하게 통합되어 Flask의 일부인 것처럼 보입니다. 예를 들어 Flask 자체는 페이지 템플릿 엔진을 제공하지 않습니다. 템플레이팅은 이 자습서에서 설명한 대로 Jinja 및 Jade와 같은 확장에서 제공됩니다.
 
@@ -126,7 +126,7 @@ Flask 프로젝트 템플릿은 Visual Studio용 Python 도구의 모든 이전 
 
 1. **만들기**를 선택하여 기본값을 그대로 사용합니다. 원하는 경우 가상 환경의 이름을 변경할 수 있지만 하위 폴더의 이름만 변경되고 `env`는 표준 규칙입니다.
 
-1. 프롬프트가 표시되면 관리자 권한에 동의하고 Visual Studio에서 패키지를 다운로드하여 설치하는 동안 잠시 기다립니다. 이는 Flask 및 종속성에 따라 100개가 넘는 하위 폴더에서 약 1,000개의 파일을 확장한다는 것을 의미합니다. Visual Studio **출력** 창에서 진행률을 확인할 수 있습니다. 기다리는 동안 다음에 나오는 질문 섹션을 살펴보세요. [Flask 설치](http://flask.pocoo.org/docs/1.0/installation/#installation) 페이지(flask.pcocoo.org)에서 Flask의 종속성에 대한 설명을 볼 수도 있습니다.
+1. 프롬프트가 표시되면 관리자 권한에 동의하고 Visual Studio에서 패키지를 다운로드하여 설치하는 동안 잠시 기다립니다. 이는 Flask 및 종속성에 따라 100개가 넘는 하위 폴더에서 약 1,000개의 파일을 확장한다는 것을 의미합니다. Visual Studio **출력** 창에서 진행률을 확인할 수 있습니다. 기다리는 동안 다음에 나오는 질문 섹션을 살펴보세요. [Flask 설치](https://flask.palletsprojects.com/en/1.0.x/installation/#installation) 페이지(flask.pcocoo.org)에서 Flask의 종속성에 대한 설명을 볼 수도 있습니다.
 
 1. 상태 표시줄에 있는 Visual Studio Git 컨트롤에서 **팀 탐색기**의 **변경 내용** 페이지를 여는 변경 내용 표시기(**99&#42;** 로 표시됨)를 선택합니다.
 
@@ -192,7 +192,7 @@ Flask 프로젝트 템플릿은 Visual Studio용 Python 도구의 모든 이전 
 
 ### <a name="question-what-is-the-purpose-of-the-__name__-argument-to-the-flask-class"></a>질문: Flask 클래스에 대한 __name__ 인수의 용도는 무엇인가요?
 
-대답: 인수는 앱의 모듈 또는 패키지의 이름이며, 템플릿, 정적 파일 및 앱에 속한 기타 리소스를 찾을 수 있는 위치를 Flask에 알려줍니다. 단일 모듈에 포함된 앱의 경우 `__name__`이 항상 적절한 값입니다. 디버깅 정보가 필요한 확장의 경우에도 중요합니다. 자세한 정보 및 추가 인수는 [Flask 클래스 설명서](http://flask.pocoo.org/docs/1.0/api/#flask.Flask)(flask.pocoo.org)를 참조하세요.
+대답: 인수는 앱의 모듈 또는 패키지의 이름이며, 템플릿, 정적 파일 및 앱에 속한 기타 리소스를 찾을 수 있는 위치를 Flask에 알려줍니다. 단일 모듈에 포함된 앱의 경우 `__name__`이 항상 적절한 값입니다. 디버깅 정보가 필요한 확장의 경우에도 중요합니다. 자세한 정보 및 추가 인수는 [Flask 클래스 설명서](https://flask.palletsprojects.com/en/1.0.x/api/#flask.Flask)(flask.pocoo.org)를 참조하세요.
 
 ### <a name="question-can-a-function-have-more-than-one-route-decorator"></a>질문: 함수에 둘 이상의 경로 데코레이터가 있을 수 있나요?
 
@@ -218,9 +218,9 @@ def hello(name, msg):
     return "Hello " + name + "! Message is " + msg + "."
 ```
 
-형식을 변경하려면 변수 앞에 `int`, `float`, `path`(폴더 이름을 설명하는 슬래시를 허용함) 및 `uuid`를 붙입니다 자세한 내용은 Flask 설명서의 [변수 규칙](http://flask.pocoo.org/docs/1.0/quickstart/#variable-rules)을 참조하세요.
+형식을 변경하려면 변수 앞에 `int`, `float`, `path`(폴더 이름을 설명하는 슬래시를 허용함) 및 `uuid`를 붙입니다 자세한 내용은 Flask 설명서의 [변수 규칙](https://flask.palletsprojects.com/en/1.0.x/quickstart/#variable-rules)을 참조하세요.
 
-쿼리 매개 변수는 `request.args` 속성을 통해, 특히 `request.args.get` 메서드를 통해서도 사용할 수 있습니다. 자세한 내용은 Flask 설명서의 [요청 개체](http://flask.pocoo.org/docs/1.0/quickstart/#the-request-object)를 참조하세요.
+쿼리 매개 변수는 `request.args` 속성을 통해, 특히 `request.args.get` 메서드를 통해서도 사용할 수 있습니다. 자세한 내용은 Flask 설명서의 [요청 개체](https://flask.palletsprojects.com/en/1.0.x/quickstart/#the-request-object)를 참조하세요.
 
 ### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>질문: 다른 패키지를 설치한 후 Visual Studio가 가상 환경에서 requirements.txt 파일을 생성할 수 있나요?
 
@@ -253,5 +253,5 @@ def hello(name, msg):
 
 ## <a name="go-deeper"></a>자세히 알아보기
 
-- [Flask 빠른 시작](http://flask.pocoo.org/docs/1.0/quickstart/)(flask.pocoo.org)
+- [Flask 빠른 시작](https://flask.palletsprojects.com/en/1.0.x/quickstart/)(flask.pocoo.org)
 - GitHub의 자습서 소스 코드: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

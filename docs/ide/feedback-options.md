@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 79b369fdc4bed2489b997e59215264ebaca03c74
-ms.sourcegitcommit: 3fe6bed9ef8fb1478106645f655c7472009ae43a
+ms.openlocfilehash: 34fcf81b7c7314716144bc77202d7b98525a8e4f
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "64556755"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919081"
 ---
 # <a name="visual-studio-feedback-options"></a>Visual Studio 피드백 옵션
 
@@ -75,7 +75,7 @@ Visual Studio 시험판 버전에는 제품의 릴리스 버전에는 없는 **�
 설명서를 개선하는 데 도움이 되는 두 가지 방법이 있습니다.
 
 * 페이지 아래쪽의 **이 페이지가 도움이 되었나요?** 피드백 단추를 선택합니다. 이 단추는 모든 설명서 페이지에 있습니다.
-* GitHub 계정을 사용하여 [docs.microsoft.com](https://docs.microsoft.com/visualstudio/)에 있는 Visual Studio 페이지에 대한 피드백을 제공합니다. 이렇게 하려면 페이지 하단의 **피드백 정보 보내기** > **이 페이지** 단추를 선택합니다.
+* GitHub 계정을 사용하여 [docs.microsoft.com](/visualstudio/)에 있는 Visual Studio 페이지에 대한 피드백을 제공합니다. 이렇게 하려면 페이지 하단의 **피드백 정보 보내기** > **이 페이지** 단추를 선택합니다.
 
 ## <a name="contact-microsoft-support"></a>Microsoft 지원팀에 문의
 

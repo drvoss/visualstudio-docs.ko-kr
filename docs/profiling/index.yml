@@ -9,12 +9,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 09/17/2019
-  ms.openlocfilehash: fcb3e40870d6f916cf754368359a90215ce1b665
-  ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+  ms.openlocfilehash: b0fb7ff139ce91e981fa5fd5a9c43d1e335a1525
+  ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 09/19/2019
-  ms.locfileid: "71130622"
+  ms.lasthandoff: 10/30/2019
+  ms.locfileid: "73061107"
 landingContent:
 - title: 프로파일링 정보
   linkLists:
@@ -41,7 +41,7 @@ landingContent:
     - text: CPU 사용량 분석 시작
       url: beginners-guide-to-performance-profiling.md
     - text: 메모리 사용량 측정 시작
-      url: beginners-guide-to-performance-profiling.md
+      url: memory-usage.md
 - title: 추가 성능 도구
   linkLists:
   - linkListType: how-to-guide

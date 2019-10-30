@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 0263afa4eeb9094802fe6272380b6b53106da4a2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e8cd1868e61b0691be7ea639d8b5d826c608915d
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810191"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888541"
 ---
 # <a name="set-up-remote-workspaces"></a>원격 작업 영역 설정
 
@@ -178,7 +178,7 @@ R 코드를 실행하려면 다음과 같이 원격 컴퓨터에 R 인터프리�
 
 1. 방화벽 규칙: 기본적으로 `R Host Broker`는 TCP 포트 5444에서 수신 대기합니다. 따라서 인바운드 및 아웃바운드 트래픽에 둘 다 사용할 수 있는 Windows 방화벽 규칙이 있는지 확인합니다(패키지 및 비슷한 시나리오를 설치하려면 아웃바운드가 필요함).  R Services 설치 관리자에서는 기본 제공 Windows 방화벽에 대해 이러한 규칙을 자동으로 설정합니다. 그러나 타사 방화벽을 사용하는 경우 `R Host Broker`에 대해 포트 5444를 수동으로 엽니다.
 
-1. Azure 구성: 원격 컴퓨터가 Azure의 가상 머신인 경우 Windows 방화벽과 관계가 없는 Azure 네트워킹 내에서도 포트 5444를 엽니다. 자세한 내용은 Azure 설명서에서 [네트워크 보안 그룹을 사용하여 네트워크 트래픽 필터링](https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg)을 참조하세요.
+1. Azure 구성: 원격 컴퓨터가 Azure의 가상 머신인 경우 Windows 방화벽과 관계가 없는 Azure 네트워킹 내에서도 포트 5444를 엽니다. 자세한 내용은 Azure 설명서에서 [네트워크 보안 그룹을 사용하여 네트워크 트래픽 필터링](/azure/virtual-network/virtual-networks-nsg)을 참조하세요.
 
 1. R Host Broker에 로드할 SSL 인증서 알림: 인트라넷 서버에서 인증서를 설치할 경우 서버의 정규화된 도메인 이름이 NETBIOS 이름과 같을 수 있습니다. 이 경우 기본 인증서가 로드되므로 아무 작업도 수행하지 않아도 됩니다.
 

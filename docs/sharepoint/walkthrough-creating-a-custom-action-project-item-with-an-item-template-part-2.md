@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a873d00e1befc9126f4fe89b05a66a8331853ac2
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: ae9c686e46bf6a956d58ac22b823dcc36c2aacce
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984967"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189158"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>연습: 항목 템플릿을 사용 하 여 사용자 지정 작업 프로젝트 항목 만들기, 2 부
   사용자 지정 형식의 SharePoint 프로젝트 항목을 정의 하 고 Visual Studio에서 항목 템플릿과 연결한 후에는 템플릿에 대 한 마법사를 제공할 수도 있습니다. 사용자가 템플릿을 사용 하 여 프로젝트 항목의 새 인스턴스를 프로젝트에 추가 하는 경우 마법사를 사용 하 여 사용자 로부터 정보를 수집할 수 있습니다. 수집 하는 정보를 사용 하 여 프로젝트 항목을 초기화할 수 있습니다.
@@ -79,7 +79,7 @@ ms.locfileid: "72984967"
 
 2. **프로젝트 디자이너**에서 대상 프레임 워크가 .NET Framework 4.5로 설정 되어 있는지 확인 합니다.
 
-     Visual C# 프로젝트의 경우 **응용 프로그램** 탭에서이 값을 설정할 수 있습니다. Visual Basic 프로젝트의 경우 **컴파일** 탭에서이 값을 설정할 수 있습니다. 자세한 내용은 [방법: 한 버전의 .NET Framework을 대상으로 하는 방법](../ide/how-to-target-a-version-of-the-dotnet-framework.md)을 참조 하세요.
+     Visual C# 프로젝트의 경우 **응용 프로그램** 탭에서이 값을 설정할 수 있습니다. Visual Basic 프로젝트의 경우 **컴파일** 탭에서이 값을 설정할 수 있습니다. 자세한 내용은 [방법: 한 버전의 .NET Framework을 대상으로 하는 방법](../ide/visual-studio-multi-targeting-overview.md)을 참조 하세요.
 
 3. **Item템플릿 마법사** 프로젝트에서 **창 (WPF)** 항목을 프로젝트에 추가 하 고 항목의 이름을 **wizardwindow**로 지정한 다음
 
@@ -130,7 +130,7 @@ ms.locfileid: "72984967"
      [!code-xml[SPExtensibility.ProjectItem.CustomAction#9](../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml#9)]
 
     > [!NOTE]
-    > 이 XAML에서 만든 창은 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> 기본 클래스에서 파생 됩니다. Visual Studio에 사용자 지정 WPF 대화 상자를 추가 하는 경우이 클래스에서 대화 상자를 파생 하 여 Visual Studio의 다른 대화 상자와 일관 된 스타일을 유지 하 고, 모달 대화 상자에서 발생할 수 있는 문제를 방지 하는 것이 좋습니다. 자세한 내용은 [모달 대화 상자 만들기 및 관리](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes)를 참조 하세요.
+    > 이 XAML에서 만든 창은 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> 기본 클래스에서 파생 됩니다. Visual Studio에 사용자 지정 WPF 대화 상자를 추가 하는 경우이 클래스에서 대화 상자를 파생 하 여 Visual Studio의 다른 대화 상자와 일관 된 스타일을 유지 하 고, 모달 대화 상자에서 발생할 수 있는 문제를 방지 하는 것이 좋습니다. 자세한 내용은 [모달 대화 상자 만들기 및 관리](../extensibility/creating-and-managing-modal-dialog-boxes.md)를 참조 하세요.
 
 3. Visual Basic 프로젝트를 개발 하는 경우 `Window` 요소의 `x:Class` 특성에서 `WizardWindow` 클래스 이름에서 `ItemTemplateWizard` 네임 스페이스를 제거 합니다. 이 요소는 XAML의 첫 번째 줄에 있습니다. 완료 되 면 첫 번째 줄은 다음 코드와 유사 하 게 표시 됩니다.
 
@@ -206,7 +206,7 @@ ms.locfileid: "72984967"
     </WizardExtension>
     ```
 
-     `WizardExtension` 요소에 대 한 자세한 내용은 [WizardExtension 요소 &#40;Visual Studio 템플릿&#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates)을 참조 하세요.
+     `WizardExtension` 요소에 대 한 자세한 내용은 [WizardExtension 요소 &#40;Visual Studio 템플릿&#41;](../extensibility/wizardextension-element-visual-studio-templates.md)을 참조 하세요.
 
 3. 파일을 저장한 후 닫습니다.
 
@@ -345,6 +345,6 @@ ms.locfileid: "72984967"
 - [연습: 항목 템플릿을 사용 하 여 사용자 지정 작업 프로젝트 항목 만들기, 1 부](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 - [사용자 지정 SharePoint 프로젝트 항목 형식 정의](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [SharePoint 프로젝트 항목에 대 한 항목 템플릿 및 프로젝트 템플릿 만들기](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
-- [Visual Studio 템플릿 스키마 참조](/visualstudio/extensibility/visual-studio-template-schema-reference)
+- [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [방법: 프로젝트 템플릿에 마법사 사용](../extensibility/how-to-use-wizards-with-project-templates.md)
 - [기본 사용자 지정 작업 위치 및 Id](/previous-versions/office/developer/sharepoint-2010/bb802730(v=office.14))

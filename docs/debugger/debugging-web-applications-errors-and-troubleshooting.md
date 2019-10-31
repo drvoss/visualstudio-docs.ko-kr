@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb84da1c75da968f9f89417cc48deec5310bc270
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f4cb60f4d378daab829713cb4bbbb670ef8ed25a
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738051"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188340"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>웹 애플리케이션 디버깅: 오류 및 문제 해결
 웹 애플리케이션을 디버깅하려고 할 때 다음과 같은 오류가 발생할 수 있습니다.
@@ -57,4 +57,4 @@ ms.locfileid: "72738051"
 
 ## <a name="see-also"></a>참조
 - [디버거 보안](../debugger/debugger-security.md)
-- [웹 애플리케이션 및 스크립트 디버그](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)
+- [웹 애플리케이션 및 스크립트 디버그](how-to-enable-debugging-for-aspnet-applications.md)

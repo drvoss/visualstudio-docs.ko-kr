@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91df84c92761ae75ce9f26bddefad57c6dc8bc2c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3c27d2b4436fc5defedcda44c4f7840760018ade
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738304"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188548"
 ---
 # <a name="inspect-data-using-debugger-windows-in-visual-studio"></a>Visual Studio에서 디버거 창을 사용 하 여 데이터 검사
 
@@ -39,7 +39,7 @@ ms.locfileid: "72738304"
 |태스크|Ctrl+Shift+D, K|[작업 창 사용](../debugger/using-the-tasks-window.md)|
 |Python 대화형 디버그|Shift+Alt+I|[Python 대화형 REPL](../python/python-interactive-repl-in-visual-studio.md)|
 |JavaScript 콘솔|Ctrl+Alt+V, C|[빠른 시작: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md)|
-|DOM 탐색기|Ctrl+Alt+V, D|[DOM 탐색기를 사용하여 레이아웃 디버그](/visualstudio/debugger/quickstart-debug-html-and-css)|
+|DOM 탐색기|Ctrl+Alt+V, D|[DOM 탐색기를 사용하여 레이아웃 디버그](quickstart-debug-html-and-css.md)|
 |라이브 시각적 트리|-|[디버그하는 동안 XAML 속성 검사](../xaml-tools/inspect-xaml-properties-while-debugging.md)|
 |라이브 속성 탐색기|-|[디버그하는 동안 XAML 속성 검사](../xaml-tools/inspect-xaml-properties-while-debugging.md)|
 |프로세스|Ctrl+Alt+Z|[스레드 및 프로세스 디버그](../debugger/debug-threads-and-processes.md)|

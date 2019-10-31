@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f6dd305b55e1ff7dd11b46f023906a8422b5504f
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 76b841d94aee93a1bc88f6d01161239828dee166
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72536052"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188409"
 ---
 # <a name="debug-managed-code-c-visual-basic-f-ccli"></a>관리 코드 디버그 (C#, Visual Basic, F#, C++/cli)
 
@@ -76,7 +76,7 @@ C++로 작성된 코드에 <xref:System.Diagnostics.DebuggableAttribute>를 추�
 [디버깅 및 프로파일링](/dotnet/framework/debug-trace-profile/index)\
 .NET 응용 프로그램 디버깅 및 구성 요구 사항에 대해 설명 합니다.
 
-[스크립트 및 웹 애플리케이션 디버깅](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)\
+[스크립트 및 웹 애플리케이션 디버깅](how-to-enable-debugging-for-aspnet-applications.md)\
 스크립트 및 웹 애플리케이션을 디버깅할 때 발생할 수 있는 일반적인 디버깅 문제와 기술에 대해 설명합니다.
 
 ## <a name="see-also"></a>참조

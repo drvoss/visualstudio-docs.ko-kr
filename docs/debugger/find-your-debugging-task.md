@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4667fc630d86691d95e9dc9cd205b29f7b0f525
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: 8467463b5a97c5bf7de1c3864ee6a5e5fc4681d1
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349700"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188105"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Visual Studio에서 디버깅 작업 찾기
 
@@ -43,11 +43,15 @@ ms.locfileid: "72349700"
 
 ### <a name="pause-code-inside-a-loop-at-a-certain-iteration"></a>특정 반복에서 루프 내의 코드 일시 중지
 
-**적중 횟수** 를 조건으로 사용 하 여 중단점을 설정 합니다. 자세한 내용은 [적중 횟수](using-breakpoints.md#hit-count)를 참조 하세요.
+**적중 횟수** 를 조건으로 사용 하 여 중단점을 설정 합니다. 자세한 내용은 [적중 횟수](using-breakpoints.md#set-a-hit-count-condition)를 참조 하세요.
 
 ### <a name="pause-code-at-the-start-of-a-function-when-you-know-the-function-name-but-not-its-location"></a>함수 이름을 알고 있지만 위치가 아닌 경우 함수의 시작 부분에 있는 코드를 일시 중지 합니다.
 
 함수 중단점을 사용 하 여이 작업을 수행할 수 있습니다. 자세한 내용은 [함수 중단점 설정](using-breakpoints.md#BKMK_Set_a_breakpoint_in_a_source_file)을 참조 하세요.
+
+### <a name="pause-code-at-the-start-of-multiple-functions-with-the-same-name"></a>이름이 같은 여러 함수를 시작할 때 코드를 일시 중지 합니다.
+
+동일한 이름을 가진 여러 함수가 있는 경우 (오버 로드 된 함수 또는 다른 프로젝트의 함수) [함수 중단점](using-breakpoints.md#BKMK_Set_a_breakpoint_in_a_source_file)을 사용할 수 있습니다.
 
 ### <a name="manage-and-keep-track-of-your-breakpoints"></a>중단점 관리 및 추적
 
@@ -101,11 +105,15 @@ Native C++의 경우 [NatVis 프레임 워크](create-custom-views-of-native-obj
 
 ### <a name="edit-code-during-a-debugging-session"></a>디버깅 세션 중에 코드 편집
 
-[편집 하며 계속 하기](edit-and-continue.md)를 사용 합니다. XAML의 경우 [Xaml 핫 다시 로드](xaml-hot-reload.md)를 사용 합니다.
+[편집 하며 계속 하기](edit-and-continue.md)를 사용 합니다. XAML의 경우 [Xaml 핫 다시 로드](../xaml-tools/xaml-hot-reload.md)를 사용 합니다.
 
 ### <a name="send-messages-to-the-output-window-without-modifying-code"></a>코드를 수정 하지 않고 출력 창에 메시지를 보냅니다.
 
 추적점을 설정 합니다. 자세한 내용은 [추적점 사용](using-tracepoints.md)을 참조 하세요.
+
+## <a name="view-the-order-in-which-functions-are-called"></a>함수가 호출 되는 순서 보기
+
+[호출 스택을 보는 방법을](how-to-use-the-call-stack-window.md)참조 하세요.
 
 ### <a name="debug-on-remote-machines"></a>원격 컴퓨터에서 디버그
 

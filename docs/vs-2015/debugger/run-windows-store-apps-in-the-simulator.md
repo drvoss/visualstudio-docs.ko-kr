@@ -1,5 +1,5 @@
 ---
-title: Windows 스토어 앱 실행 시뮬레이터에서 | Microsoft Docs
+title: 시뮬레이터에서 Windows 스토어 앱 실행 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 77de4fea82e05f539c89a75178d93f985e5a0fb3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 96224b522b17ff9da520386d56d4fae7a04bd981
+ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823850"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73144769"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>시뮬레이터에서 Windows 스토어 앱 실행
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,18 +38,18 @@ Windows 스토어 앱에 대한 Visual Studio 시뮬레이터는 Windows 스토�
 ## <a name="BKMK_Set_the_simulator_as_the_target"></a> 시뮬레이터를 대상으로 설정  
  시뮬레이터에서 Windows 스토어 앱을 실행하려면 디버거 **표준** 도구 모음의 **디버깅 시작** 단추 옆의 드롭다운 목록에서 **시뮬레이터** 를 선택합니다.  
   
- ![시뮬레이터에서 실행 중인](../debugger/media/vsrun-f5-simulator.png "VSRUN_F5_Simulator")  
+ ![시뮬레이터에서 실행](../debugger/media/vsrun-f5-simulator.png "VSRUN_F5_Simulator")  
   
 ## <a name="BKMK_Choose_an_interaction_mode"></a> 상호 작용 모드 선택  
  다음 조작 모드를 선택할 수 있습니다.  
   
 - ![마우스 모드 단추](../debugger/media/simulator-mousemodebtn.png "SIMULATOR_MouseModeBtn") 마우스 모드: 조작 모드를 마우스 제스처로 설정 합니다. 마우스 제스처에는 클릭, 두 번 클릭 및 끌기가 포함됩니다.  
   
-- ![터치 에뮬레이션 시작 단추](../debugger/media/simulator-starttouchemulationbtn.png "SIMULATOR_StartTouchEmulationBtn") 터치 에뮬레이션 시작: 조작 모드를 한 손가락 터치 제스처로 설정 합니다. 한 손가락 이벤트에는 누르기, 끌기 및 넘기기가 포함됩니다.  
+- ![터치 에뮬레이션 시작 단추](../debugger/media/simulator-starttouchemulationbtn.png "SIMULATOR_StartTouchEmulationBtn") 터치 에뮬레이션 시작: 상호 작용 모드를 단일 손가락의 터치 제스처로 설정 합니다. 한 손가락 이벤트에는 누르기, 끌기 및 넘기기가 포함됩니다.  
   
-     ![시뮬레이터 한 손가락 대상](../debugger/media/simulator-onefinger.png "SIMULATOR_OneFinger") 단일 대상 아이콘은 시뮬레이터에 있는 이벤트의 위치를 나타냅니다. 마우스를 사용하여 포인터를 배치할 수 있습니다.  
+     ![시뮬레이터 one 핑거 대상](../debugger/media/simulator-onefinger.png "SIMULATOR_OneFinger") 단일 대상 아이콘은 시뮬레이터에 있는 이벤트의 위치를 나타냅니다. 마우스를 사용하여 포인터를 배치할 수 있습니다.  
   
-     ![한 손가락 터치 대상](../debugger/media/simulator-onefingerengaged.png "SIMULATOR_OneFingerEngaged") 는 마우스 왼쪽된 단추를 누르면 터치 모드가 활성화 됩니다. 예를 들어 단추를 클릭하여 탭을 시뮬레이션하거나 단추를 누른 상태로 끌거나 살짝 밉니다.  
+     ![하나의 손가락 터치 대상](../debugger/media/simulator-onefingerengaged.png "SIMULATOR_OneFingerEngaged") 마우스 왼쪽 단추를 누르면 터치 모드가 활성화 됩니다. 예를 들어 단추를 클릭하여 탭을 시뮬레이션하거나 단추를 누른 상태로 끌거나 살짝 밉니다.  
   
 ## <a name="pinch-and-zoom"></a>축소 및 확대  
  상호 작용 모드를 두 손가락의 축소 및 확대 제스처로 설정합니다.  
@@ -62,7 +62,7 @@ Windows 스토어 앱에 대한 Visual Studio 시뮬레이터는 Windows 스토�
 
   - 축소 또는 확대하기 전에 마우스 휠을 앞쪽이나 뒤쪽으로 돌려 두 손가락의 시뮬레이션된 거리를 변경합니다.  
 
-- ![손가락 모으기, 확대 및 회전 대상을](../debugger/media/simulator-twofingerengaged.png "SIMULATOR_TwoFingerEngaged")  
+- ![대상 확대, 확대/축소 및 회전 대상](../debugger/media/simulator-twofingerengaged.png "SIMULATOR_TwoFingerEngaged")  
 
   - 왼쪽 단추를 누르고 휠을 뒤쪽(사용자 쪽)으로 돌려 확대(축소)합니다.  
 
@@ -82,11 +82,11 @@ Windows 스토어 앱에 대한 Visual Studio 시뮬레이터는 Windows 스토�
 ## <a name="BKMK_Enable_or_disable_Always_on_top_mode"></a> 항상 위 모드 사용 또는 사용 안 함  
  시뮬레이터 창이 항상 다른 창의 위쪽에 오도록 설정할 수 있습니다. **맨 위 창 설정/해제** 단추는 시뮬레이터 창의 **항상 위** 모드를 사용하거나 사용하지 않도록 설정합니다.  
   
-## <a name="BKMK_Change_the_device_orientation"></a> 장치 방향 변경  
+## <a name="BKMK_Change_the_device_orientation"></a> 디바이스 방향 변경  
  시뮬레이터를 임의의 방향으로 90도 회전하여 디바이스 방향을 가로와 세로 간에 전환할 수 있습니다.  
   
 > [!NOTE]
-> 시뮬레이터는 프로젝트의 [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) 속성을 무시합니다. 예를 들어 프로젝트에서 방향이 `Landscape`로 설정된 상태에서 시뮬레이터를 세로 방향으로 회전하면 시뮬레이터 표시 이미지도 회전되고 크기가 조정됩니다. 실제 디바이스에서 이러한 설정을 테스트합니다.  
+> 시뮬레이터는 프로젝트의 [DisplayProperties.AutoRotationPreferences](https://go.microsoft.com/fwlink/?LinkId=249460) 속성을 무시합니다. 예를 들어 프로젝트에서 방향이 `Landscape`로 설정된 상태에서 시뮬레이터를 세로 방향으로 회전하면 시뮬레이터 표시 이미지도 회전되고 크기가 조정됩니다. 실제 디바이스에서 이러한 설정을 테스트합니다.  
   
 > [!NOTE]
 > 시뮬레이터의 한 쪽 가장자리가 시뮬레이터가 표시되는 화면보다 크도록 시뮬레이터를 회전하면 시뮬레이터 크기가 화면 안에 맞도록 자동으로 조정됩니다. 시뮬레이터를 다시 회전하는 경우 원래 크기로 조정되지 않습니다.  
@@ -112,7 +112,7 @@ Windows 스토어 앱에 대한 Visual Studio 시뮬레이터는 Windows 스토�
      ![스크린샷 설정 상황에 맞는 메뉴](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ## <a name="BKMK_Simulate_network_connection_properties"></a> 네트워크 연결 속성 시뮬레이트  
- 앱 사용자가 네트워크 연결 비용이나 데이터 계획 상태 변경을 지속적으로 인지하고, 지정된 데이터 전송 제한의 로밍 또는 초과로 인한 추가 비용이 발생하지 않도록 앱에서 이 정보를 사용하여 요금제 네트워크 연결 비용을 관리할 수 있습니다. [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) API를 통해 서명된 [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) 및 [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) 이벤트에 응답할 수 있습니다. [빠른 시작: 요금제 네트워크 비용 제약 조건의 관리](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)합니다.  
+ 앱 사용자가 네트워크 연결 비용이나 데이터 계획 상태 변경을 지속적으로 인지하고, 지정된 데이터 전송 제한의 로밍 또는 초과로 인한 추가 비용이 발생하지 않도록 앱에서 이 정보를 사용하여 요금제 네트워크 연결 비용을 관리할 수 있습니다. [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) API를 통해 서명된 [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) 및 [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) 이벤트에 응답할 수 있습니다. [빠른 시작: 데이터 통신 연결 네트워크 비용 제약 조건의 관리](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)을 참조하세요.  
   
  네트워크 비용 인식 코드를 디버그하거나 테스트하려면 시뮬레이터가 [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) 에서 반환되는 [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx)개체를 통해 노출되는 네트워크의 속성을 모방하면 됩니다.  
   
@@ -136,12 +136,12 @@ Windows 스토어 앱에 대한 Visual Studio 시뮬레이터는 Windows 스토�
   
    **네트워크 연결 관리에 대한 자세한 내용**  
   
-   [빠른 시작: 관리 데이터 통신 연결된 네트워크 비용 제약 조건](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [빠른 시작: 데이터 통신 연결 네트워크 비용 제약 조건의 관리](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
-   [네트워크 정보 샘플](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
+   [네트워크 정보 샘플](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
    [에너지 사용 분석](../profiling/analyze-energy-use-in-store-apps.md)  
-  
+    
    [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
   
    [백그라운드 작업과 함께 시스템 이벤트에 응답하는 방법](https://msdn.microsoft.com/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
@@ -153,5 +153,5 @@ Windows 스토어 앱에 대한 Visual Studio 시뮬레이터는 Windows 스토�
   
  **CTRL+ALT+F4**를 눌러 시뮬레이터를 종료할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목:  
  [Visual Studio에서 앱 실행](../debugger/run-store-apps-from-visual-studio.md)

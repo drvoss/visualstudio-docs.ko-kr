@@ -12,16 +12,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0540ac17ca64f24ead19b8b3655175d12fa42e41
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 717e24315d1f6e57eda224ef17cc4ea5b5d550c9
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253973"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189756"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Office 솔루션에서 WPF 컨트롤 사용
 
-Visual Studio에서 Office 개발 도구를 사용하여 만든 솔루션은 Windows Forms 컨트롤에서 직접 작동하도록 설계되었지만 솔루션에서 WPF 컨트롤을 사용할 수도 있습니다. WPF(Windows Presentation Foundation)는 Windows Forms 대신 사용자 인터페이스를 디자인하는 데 사용됩니다. WPF는 XAML(Extensible Application Markup Language)이라는 태그 언어를 사용하여 UI, 미디어 및 문서를 통합하기 위한 새로운 기술을 제공합니다. 자세한 내용은 [WPF 개요](../designers/introduction-to-wpf.md)를 참조 하세요.
+Visual Studio에서 Office 개발 도구를 사용하여 만든 솔루션은 Windows Forms 컨트롤에서 직접 작동하도록 설계되었지만 솔루션에서 WPF 컨트롤을 사용할 수도 있습니다. WPF(Windows Presentation Foundation)는 Windows Forms 대신 사용자 인터페이스를 디자인하는 데 사용됩니다. WPF는 XAML(Extensible Application Markup Language)이라는 태그 언어를 사용하여 UI, 미디어 및 문서를 통합하기 위한 새로운 기술을 제공합니다. 자세한 내용은 [WPF 개요](/dotnet/framework/wpf/introduction-to-wpf)를 참조 하세요.
 
 [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
@@ -53,11 +53,11 @@ Office 솔루션의 UI 요소에 직접 WPF 컨트롤을 추가할 수 없습니
 
 5. 작업 창, 양식 영역 또는 사용자 지정 작업창을 프로젝트에 추가합니다.
 
-    - 양식 영역에 대해 **Outlook 양식 영역** 항목을 프로젝트에 추가 합니다. 자세한 내용은 [방법: Outlook 추가 기능 프로젝트](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)에 양식 영역을 추가 합니다.
+    - 양식 영역에 대해 **Outlook 양식 영역** 항목을 프로젝트에 추가 합니다. 자세한 내용은 [방법: Outlook 추가 기능 프로젝트에 양식 영역 추가](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)를 참조 하세요.
 
-    - 작업 창에서 **작업 창 컨트롤** 또는 **사용자 정의 컨트롤** 항목을 프로젝트에 추가 합니다. 자세한 내용은 [방법: Word 문서 또는 Excel 통합 문서](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)에 작업 창을 추가 합니다.
+    - 작업 창에서 **작업 창 컨트롤** 또는 **사용자 정의 컨트롤** 항목을 프로젝트에 추가 합니다. 자세한 내용은 [방법: Word 문서 또는 Excel 통합 문서에 작업 창 추가](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)를 참조 하세요.
 
-    - 사용자 지정 작업 창의 경우 프로젝트에 **사용자 정의 컨트롤** 항목을 추가 합니다. 자세한 내용은 [방법: 응용 프로그램](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)에 사용자 지정 작업창을 추가 합니다.
+    - 사용자 지정 작업 창의 경우 프로젝트에 **사용자 정의 컨트롤** 항목을 추가 합니다. 자세한 내용은 [방법: 응용 프로그램에 사용자 지정 작업창 추가](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)를 참조 하세요.
 
 6. **도구 상자**의 *ProjectName* **wpf 사용자 정의 컨트롤** 탭에서 WPF 사용자 정의 컨트롤을 작업 창, 양식 영역 또는 사용자 지정 작업창에 대 한 디자이너로 끌어 옵니다.
 
@@ -116,7 +116,7 @@ Windows Forms 컨트롤 및 폼에 WPF 컨트롤을 호스트하기 위한 아�
 
 - [연습: WPF 콘텐츠 스타일](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Office UI 사용자 지정](../vsto/office-ui-customization.md)
 - [Office 문서에 대 한 Windows Forms 컨트롤 개요](../vsto/windows-forms-controls-on-office-documents-overview.md)

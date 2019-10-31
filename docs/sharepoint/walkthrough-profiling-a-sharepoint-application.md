@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d001edcd281a0c21d244704f0a068850804b8762
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 4d3afc8ff48355c74544edf123689495bfde1302
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981149"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189128"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>연습: SharePoint 응용 프로그램 프로 파일링
   이 연습에서는 Visual Studio에서 프로파일링 도구를 사용하여 SharePoint 애플리케이션의 성능을 최적화하는 방법을 보여 줍니다. 예제 애플리케이션은 기능 이벤트 수신기의 성능을 저하시키는 유휴 루프가 포함된 SharePoint 기능 이벤트 수신기입니다. Visual Studio profiler를 사용 하면 프로젝트의 가장 비용이 많이 드는 (가장 느리게 수행 되는) 부분을 찾아서 제거할 수 있습니다 (실행 *부하 과다 경로*라고도 함).
@@ -197,7 +197,7 @@ ms.locfileid: "72981149"
 
 2. **성능 마법사**의 1 페이지에서 프로 파일링 방법을 **CPU 샘플링** 으로 유지 하 고 **다음** 단추를 선택 합니다.
 
-     다른 프로파일링 방법은 고급 프로파일링 상황에서 사용할 수 있습니다. 자세한 내용은 [성능 컬렉션 메서드 이해](/visualstudio/profiling/understanding-performance-collection-methods)를 참조하세요.
+     다른 프로파일링 방법은 고급 프로파일링 상황에서 사용할 수 있습니다. 자세한 내용은 [성능 컬렉션 메서드 이해](../profiling/understanding-performance-collection-methods.md)를 참조하세요.
 
 3. **성능 마법사**의 두 페이지에서 프로필 대상을 **ProfileTest** 로 두고 **다음** 단추를 선택 합니다.
 
@@ -273,7 +273,7 @@ ms.locfileid: "72981149"
      유휴 루프 호출이 제거되었으므로 기능이 훨씬 빠르게 활성화됩니다. 샘플 프로파일링 보고서는 이를 반영합니다.
 
 ## <a name="see-also"></a>참조
-- [성능 탐색기](/visualstudio/profiling/performance-explorer)
-- [성능 세션 개요](/visualstudio/profiling/performance-session-overview)
-- [초보자를 위한 성능 프로파일링 지침](/visualstudio/profiling/beginners-guide-to-performance-profiling)
+- [성능 탐색기](../profiling/performance-explorer.md)
+- [성능 세션 개요](../profiling/performance-session-overview.md)
+- [초보자를 위한 성능 프로파일링 지침](../profiling/beginners-guide-to-performance-profiling.md)
 - [Visual Studio Profiler를 사용 하 여 응용 프로그램 병목 상태 찾기](https://msdn.microsoft.com/magazine/cc337887.aspx)

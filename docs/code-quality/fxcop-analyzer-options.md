@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 78967c93a990aaef0d5863446433c286bdcf46b7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 26435db42e3214bb19438226faba0db0e5ac0f4f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649604"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188825"
 ---
 # <a name="rule-scope-options-for-fxcop-analyzers"></a>FxCop 분석기에 대 한 규칙 범위 옵션
 
@@ -21,11 +21,11 @@ ms.locfileid: "72649604"
 이러한 구성 옵션은 [FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) NuGet 패키지의 버전 2.6.3부터 사용할 수 있습니다.
 
 > [!TIP]
-> 지정 된 버전의 FxCopAnalyzers 패키지에 사용할 수 있는 옵션의 전체 목록을 보려면 패키지의 *문서* 폴더에서 *Analyzer Configuration.md* 파일을 확인 합니다. 파일은 *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> \documentation\Analyzer Configuration.md*에 있습니다. 이 구성 문서 파일은 버전 2.6.5에서 시작 하 여 패키지의 각 버전에 포함 되어 있습니다. 다음은 *Analyzer Configuration.md* 파일에 옵션을 설명 하는 방법의 예입니다.
+> 지정 된 버전의 FxCopAnalyzers 패키지에 사용할 수 있는 옵션의 전체 목록을 보려면 패키지의 *문서* 폴더에서 *Analyzer Configuration.md* 파일을 확인 합니다. 파일은 *% USERPROFILE%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<버전\>\documentation\Analyzer Configuration.md*에 있습니다. 이 구성 문서 파일은 버전 2.6.5에서 시작 하 여 패키지의 각 버전에 포함 되어 있습니다. 다음은 *Analyzer Configuration.md* 파일에 옵션을 설명 하는 방법의 예입니다.
 >
-> 옵션 이름: `sufficient_IterationCount_for_weak_KDF_algorithm` \
+> 옵션 이름: `sufficient_IterationCount_for_weak_KDF_algorithm`\
 > 옵션 값: 정수 값 \
-> 기본값: 구성 가능한 각 규칙 (대부분의 규칙에 대해 기본적으로 ' 10만 ')에 적용 됩니다.
+> 기본값: 각 구성 가능한 규칙 (대부분의 규칙에 대해 기본적으로 ' 10만 ')에 한정 됩니다.
 > 예: `dotnet_code_quality.CA5387.sufficient_IterationCount_for_weak_KDF_algorithm = 100000`
 
 ## <a name="api_surface"></a>api_surface
@@ -38,7 +38,7 @@ ms.locfileid: "72649604"
 
 | 설명 | 허용 가능한 값 | 기본값 | 구성 가능한 규칙 |
 | - | - | - | - |
-| 값을 반환 하지 않는 비동기 메서드를 무시할지 여부 | `true`<br/>`false` | `false` | [CA2007](ca2007-do-not-directly-await-task.md) |
+| 값을 반환 하지 않는 비동기 메서드를 무시할지 여부 | `true`<br/>`false` | `false` | [CA2007](ca2007.md) |
 
 > [!NOTE]
 > 분석기 패키지의 2.6.3 이전 버전에서는이 옵션의 이름이 `skip_async_void_methods`입니다.
@@ -56,4 +56,4 @@ ms.locfileid: "72649604"
 
 | 설명 | 허용 가능한 값 | 기본값 | 구성 가능한 규칙 |
 | - | - | - | - |
-| 이 어셈블리 유형을 생성 하는 프로젝트의 코드를 분석 해야 함을 지정 합니다. | @No__t_0 열거형의 하나 이상의 필드<br/><br/>여러 값을 쉼표 (,)로 구분 합니다. | 모든 출력 종류 | [CA2007](ca2007-do-not-directly-await-task.md) |
+| 이 어셈블리 유형을 생성 하는 프로젝트의 코드를 분석 해야 함을 지정 합니다. | <xref:Microsoft.CodeAnalysis.OutputKind> 열거형의 하나 이상의 필드<br/><br/>여러 값을 쉼표 (,)로 구분 합니다. | 모든 출력 종류 | [CA2007](ca2007.md) |

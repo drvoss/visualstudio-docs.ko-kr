@@ -15,12 +15,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2b42143c2971bcbb172958b8da42a1e887e4699
-ms.sourcegitcommit: 3e94d9fb6dc56fa8b23fbacd5d11cf8d6e7e18f1
+ms.openlocfilehash: 94f71014440c55da0151d0ebd817aac9f5d2c7ed
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72252635"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73186282"
 ---
 # <a name="localize-menu-commands"></a>메뉴 명령 지역화
 
@@ -48,7 +48,7 @@ Vspackage에서 메뉴 명령 및 도구 모음 단추는 *. vsct* 파일에 정
 
       다음 예제에서는 제품군 트리 탐색기 도구 창을 여는 명령에 대 한 영어 및 스페인어 단추 텍스트를 보여 줍니다.
 
-      [*FamilyTree.en-US.vsct*]
+      [*FamilyTree*] (영문)
 
    ```xml
    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">
@@ -61,7 +61,7 @@ Vspackage에서 메뉴 명령 및 도구 모음 단추는 *. vsct* 파일에 정
    </Button>
    ```
 
-    [*FamilyTree.es-ES.vsct*]
+    [*FamilyTree.es*]
 
    ```xml
    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">
@@ -92,7 +92,7 @@ Vspackage에서 메뉴 명령 및 도구 모음 단추는 *. vsct* 파일에 정
 
 5. 각 *.resx* 파일을 열어 특정 언어 및 문화권에 맞게 문자열 값을 수정 합니다. 다음 예제에서는 도구 창의 제목 표시줄에 대 한 지역화 된 리소스 정의를 보여 줍니다.
 
-     [*Resources.en-US.resx*]
+     [*Resources. en-us. .resx*]
 
     ```xml
     <data name="ToolWindowTitle" xml:space="preserve">
@@ -100,7 +100,7 @@ Vspackage에서 메뉴 명령 및 도구 모음 단추는 *. vsct* 파일에 정
     </data>
     ```
 
-     [*Resources.es-ES.resx*]
+     [*Resources.es*]
 
     ```xml
     <data name="ToolWindowTitle" xml:space="preserve">
@@ -136,7 +136,7 @@ Vspackage에서 메뉴 명령 및 도구 모음 단추는 *. vsct* 파일에 정
 
      이는 Windows Presentation Foundation (WPF) 컨트롤에 대 한 기본 UI 문화권으로 미국 영어를 설정 합니다.
 
-6. @No__t-1 요소를 포함 하는 `ItemGroup` 요소를 찾습니다.
+6. `EmbeddedResource` 요소를 포함 하는 `ItemGroup` 요소를 찾습니다.
 
 7. *VSPackage*를 호출 하는 `EmbeddedResource` 요소에서 다음과 같이 `ManifestResourceName` 요소를 `VSPackage.en-US.Resources`로 설정 된 `LogicalName` 요소로 바꿉니다.
 
@@ -149,7 +149,7 @@ Vspackage에서 메뉴 명령 및 도구 모음 단추는 *. vsct* 파일에 정
 
 8. 지역화 된 각 언어에 대해 `VsPackage.en-US`에 대 한 `EmbeddedResource` 요소를 복사 하 고 복사본의 **Include** 특성 및 **logicalname** 요소를 대상 로캘로 설정 합니다.
 
-9. 각 지역화 된 `VSCTCompile` 요소에 대해 다음 예제와 같이 `Menus.ctmenu`를 가리키는 `ResourceName` 요소를 추가 합니다.
+9. 지역화 된 각 `VSCTCompile` 요소에 대해 다음 예제와 같이 `Menus.ctmenu`를 가리키는 `ResourceName` 요소를 추가 합니다.
 
     ```xml
     <ItemGroup>
@@ -166,6 +166,6 @@ Vspackage에서 메뉴 명령 및 도구 모음 단추는 *. vsct* 파일에 정
      그러면 주 어셈블리와 각 언어에 대 한 리소스 어셈블리가 생성 됩니다. 배포 프로세스를 지역화 하는 방법에 대 한 자세한 내용은 [VSIX 패키지 지역화](../extensibility/localizing-vsix-packages.md) 를 참조 하세요.
 
 ## <a name="see-also"></a>참조
+
 - [메뉴 및 명령 확장](../extensibility/extending-menus-and-commands.md)
-- [MenuCommands 및 OleMenuCommand](../extensibility/menucommands-vs-olemenucommands.md)
 - [응용 프로그램 전역화 및 지역화](../ide/globalizing-and-localizing-applications.md)

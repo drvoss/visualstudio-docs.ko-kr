@@ -16,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a92daf09f033da020fe54369a20483686c72f81
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ad037a0e71bc2156fe1c604d183a5e02ae914688
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730427"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187555"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Visual Studio에서 콘솔을 사용 하 여 JavaScript 디버그
 
@@ -44,7 +44,7 @@ JavaScript 콘솔 창에서는 다음 작업을 수행할 수 있습니다.
 > [!TIP]
 > JavaScript 콘솔 창이 닫힌 경우 **디버그**> **창** > **JavaScript 콘솔** 을 사용하여 다시 엽니다. 창은 스크립트 디버깅 세션 중에만 표시됩니다.
 
-JavaScript 콘솔 창에서는 디버거를 중지 및 다시 시작하지 않고 앱과 상호 작용할 수 있습니다. 자세한 내용은 [앱 새로 고침 (JavaScript)](../debugger/refresh-an-app-javascript.md)을 참조 하세요. 다른 JavaScript 디버깅 기능 (예: DOM 탐색기 사용 및 중단점 설정)에 대 한 자세한 내용은 [빠른 시작: HTML 및 CSS 디버그](../debugger/quickstart-debug-html-and-css.md) 및 [Visual Studio에서 응용 프로그램 디버그](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)를 참조 하세요.
+JavaScript 콘솔 창에서는 디버거를 중지 및 다시 시작하지 않고 앱과 상호 작용할 수 있습니다. 자세한 내용은 [앱 새로 고침 (JavaScript)](../debugger/refresh-an-app-javascript.md)을 참조 하세요. 다른 JavaScript 디버깅 기능 (예: DOM 탐색기 사용 및 중단점 설정)에 대 한 자세한 내용은 [빠른 시작: HTML 및 CSS 디버그](../debugger/quickstart-debug-html-and-css.md) 및 [Visual Studio에서 응용 프로그램 디버그](debugging-windows-store-and-windows-universal-apps.md)를 참조 하세요.
 
 ## <a name="InteractiveConsole"></a> JavaScript 콘솔 창을 사용하여 디버깅
 다음 단계를 수행하면 `FlipView` 앱이 생성되고, 대화식으로 JavaScript 코딩 오류를 디버그하는 방법이 표시됩니다.
@@ -144,7 +144,7 @@ JavaScript 콘솔 창에서는 디버거를 중지 및 다시 시작하지 않�
 
     앱이 실행되지만 이미지가 누락되었습니다. JavaScript 콘솔 창의 APPHOST 오류는 이미지가 없음을 나타냅니다.
 
-9. @No__t_0 앱을 실행 하는 동안 콘솔 창 입력 프롬프트에 `Data.items` ("> >" 기호 옆)를 입력 하 고 Enter 키를 누릅니다.
+9. `FlipView` 앱을 실행 하는 동안 콘솔 창 입력 프롬프트에 `Data.items` ("> >" 기호 옆)를 입력 하 고 Enter 키를 누릅니다.
 
     `items` 개체의 시각화 도우미가 콘솔 창에 표시됩니다. 즉, `items` 개체가 인스턴스화되어, 현재 스크립트 컨텍스트에서 사용할 수 있음을 나타냅니다. 콘솔 창에서, 개체의 노드를 클릭하여 속성 값을 볼 수 있습니다(또는 화살표 키 사용). `items._data` 개체로 클릭해 내려가면 이 그림에서와 같이 이미지 소스 참조가 예상대로 올바르지 않음을 알게 됩니다. 아직 개체에 기본 이미지(logo.png)가 있고 누락된 이미지가 예상 이미지와 섞여 있습니다.
 
@@ -250,7 +250,7 @@ JavaScript 콘솔 창을 사용하면 한번에 웹 플랫폼 호스트 (WWAHost
 또한 `cd` 명령을 사용하여 실행 컨텍스트를 전환할 수도 있지만, 다른 실행 컨텍스트의 이름을 알아야 하고 사용하는 참조가 범위 내에 있어야 합니다. **대상** 목록에서 다른 실행 컨텍스트에 액세스하기가 더 쉽습니다.
 
 ## <a name="see-also"></a>참조
-- [Visual Studio에서 앱 디버그](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Visual Studio에서 앱 디버그](debugging-windows-store-and-windows-universal-apps.md)
 - [JavaScript 콘솔 명령](../debugger/javascript-console-commands.md?view=vs-2017)
 - [앱 새로 고침(JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [바로 가기 키](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)

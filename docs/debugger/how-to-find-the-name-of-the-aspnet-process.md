@@ -16,35 +16,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 27221a4ae47b9fb06130b550ceb6d3cc1f00dce0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 54aa98dd238d7a78e4ae89af05dceae0f9911478
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906807"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187663"
 ---
 # <a name="find-the-name-of-the-aspnet-process"></a>ASP.NET 프로세스의 이름 찾기
 
-실행 하는 디버그 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 앱을 Visual Studio 디버거를 연결 해야 합니다는 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 이름으로 처리 합니다.
+실행 중인 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 앱을 디버깅 하려면 Visual Studio 디버거가 이름으로 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 프로세스에 연결 되어야 합니다.
 
-**프로세스는 ASP.NET 앱을 실행 하는 방법을 알아보려면:**
+**ASP.NET 앱을 실행 하는 프로세스를 확인 하려면 다음을 수행 합니다.**
 
-1. Visual Studio에서 실행 되는 앱 선택 **디버깅할** > **프로세스에 연결**합니다.
+1. 앱을 실행 하는 동안 Visual Studio에서 **디버그** > **프로세스에 연결**을 선택 합니다.
 
-1. 에 **프로세스에 연결** 프로세스의 첫 문자 다음 목록에서 이름 또는 검색 상자에 입력 대화 상자를 입력 합니다. ASP.NET 앱을 실행 중인 것이입니다. 응용 프로그램을 디버깅 하는 프로세스에 연결 합니다.
+1. **프로세스에 연결** 대화 상자에서 다음 목록에 있는 프로세스 이름의 첫 문자를 입력 하거나 검색 상자에 입력 합니다. 실행 되는는 ASP.NET 앱을 실행 하는 것입니다. 앱을 디버깅 하려면 해당 프로세스에 연결 합니다.
 
-    - *w3wp.exe* 는 IIS 6.0 이상.
-    - *aspnet_wp.exe* 이전 버전의 IIS 됩니다.
-    - *iisexpress.exe* IISExpress 됩니다.
-    - *dotnet.exe* ASP.NET core.
-    - *inetinfo.exe* 이전 ASP 응용 프로그램 프로세스에서 실행 됩니다.
+    - w3wp.exe *는 IIS 6.0 이상입니다.*
+    - *aspnet_wp.exe* 는 IIS의 이전 버전입니다.
+    - *iisexpress* 는 iisexpress입니다.
+    - *dotnet* 이 ASP.NET Core 됩니다.
+    - *inetinfo.exe* 는 in-process로 실행 되는 오래 된 ASP 응용 프로그램입니다.
 
 >[!NOTE]
->Visual Studio 2012 및 이전 버전 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 코드를 파일 시스템에서 테스트 서버에서 실행 *WebDev.WebServer.exe* 하거나 *WebDev.WebServer40.exe*합니다. 이 경우 로컬 디버깅을 위해 연결할 *WebDev.WebServer.exe* 또는 *WebDev.WebServer40.exe* 대신는 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 프로세스입니다.
+>Visual Studio 2012 및 이전 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 코드는 파일 시스템에 있고 테스트 서버 *웹* *WebServer40 또는 webdev*. .exe에서 실행할 수 있습니다. 이 경우 로컬 디버깅의 경우 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 프로세스 대신 WebServer40 *또는* *webdev. .exe* 에 연결 합니다.
 
 **참고 항목:**
 
 - [실행 중인 프로세스에 연결](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
-- [원격 디버깅 웹 응용 프로그램에 대 한 필수 구성 요소](/visualstudio/debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer)
+- [웹 응용 프로그램 원격 디버깅을 위한 필수 구성 요소](remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)
 - [시스템 요구 사항](../debugger/aspnet-debugging-system-requirements.md)
 - [ASP.NET 애플리케이션 디버그](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

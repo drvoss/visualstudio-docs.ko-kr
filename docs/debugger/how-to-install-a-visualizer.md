@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c9c2fa8a8fb300c3b7eb702ae3efd216e17141a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 494287c6691d27eb636f92eff324eecf49daf5fa
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72733101"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187583"
 ---
 # <a name="how-to-install-a-visualizer"></a>방법: 시각화 도우미 설치
 시각화 도우미를 만든 후에는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 사용할 수 있도록 이 시각화 도우미를 설치해야 합니다. 시각화 도우미를 설치하는 과정은 간단합니다.
@@ -46,4 +46,4 @@ ms.locfileid: "72733101"
 
 ## <a name="see-also"></a>참조
 - [Create Custom Visualizers of Data](../debugger/create-custom-visualizers-of-data.md)(데이터의 사용자 지정 시각화 도우미 만들기)
-- [방법: 시각화 도우미 작성](/visualstudio/debugger/create-custom-visualizers-of-data)
+- [방법: 시각화 도우미 작성](create-custom-visualizers-of-data.md)

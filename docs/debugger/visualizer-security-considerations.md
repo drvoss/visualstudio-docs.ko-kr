@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d53df0bc83e2068488c8a7c919f8b76258ad827
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c1c18ec84a6a62da6cd564c69ef4b83ea76bcfd6
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728377"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187153"
 ---
 # <a name="visualizer-security-considerations"></a>시각화 도우미 보안 고려 사항
 시각화 도우미를 작성할 때는 보안 문제를 고려해야 합니다. 당장은 이러한 잠재적 위협에 대한 취약점이 발견되지 않더라도 개발자는 이러한 문제의 가능성을 인식하고 여기서 설명하는 적절한 보안 예방책에 따라 향후 발생할 수 있는 위험에 대비해야 합니다.
@@ -39,6 +39,6 @@ ms.locfileid: "72728377"
 
 ## <a name="see-also"></a>참조
 - [시각화 도우미 아키텍처](../debugger/visualizer-architecture.md)
-- [방법: 시각화 도우미 작성](/visualstudio/debugger/create-custom-visualizers-of-data)
+- [방법: 시각화 도우미 작성](create-custom-visualizers-of-data.md)
 - [Create Custom Visualizers of Data](../debugger/create-custom-visualizers-of-data.md)(데이터의 사용자 지정 시각화 도우미 만들기)
 - [디버거에서 데이터 보기](../debugger/viewing-data-in-the-debugger.md)

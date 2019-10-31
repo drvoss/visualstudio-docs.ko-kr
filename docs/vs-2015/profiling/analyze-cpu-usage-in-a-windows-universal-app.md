@@ -15,19 +15,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 105efab7a28f0a21bd7567262ff8ec214715b8ae
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8d296c8803127cdbc2e6c72f86dcfba968e2b940
+ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704572"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73144794"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Windows 유니버설 앱에서 CPU 사용량 분석
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
+Windows 및 Windows Phone]에 적용 됩니다. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- 앱 성능 문제를 검토해야 하는 경우 앱에서 CPU를 사용하는 방식을 파악하는 것부터 시작하는 것이 좋습니다. **CPU 사용량** 도구는 CPU가 코드 실행 시간을 어디에 소모하는지를 보여 줍니다. 특정 시나리오에 초점을 맞추려면 단일 진단 세션에서 [XAML UI 응답성](https://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480) 도구, [에너지 소비](../profiling/analyze-energy-use-in-store-apps.md) 도구 또는 둘 다를 이용하여 CPU 사용량을 실행할 수 있습니다.  
+ 앱 성능 문제를 검토해야 하는 경우 앱에서 CPU를 사용하는 방식을 파악하는 것부터 시작하는 것이 좋습니다. **CPU 사용량** 도구는 CPU가 코드 실행 시간을 어디에 소모하는지를 보여 줍니다. 특정 시나리오에 초점을 맞추기 위해 단일 진단 세션에서 [XAML UI 응답성](https://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480) 도구, [cpu 사용량 도구](../profiling/cpu-usage.md) 도구 또는 두 도구를 사용 하 여 cpu 사용량을 실행할 수 있습니다.  
   
 > [!NOTE]
 > **CPU 사용량** 도구는 Windows Phone Silverlight 8.1 앱과 함께 사용할 수 없습니다.  
@@ -45,10 +45,10 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
   
 3. MainPage.xaml.cs를 [이 코드](#BKMK_MainPage_xaml_cs)로 바꿉니다.  
   
-4. 앱을 빌드한 다음 사용해 보세요. 이 앱은 CPU 사용량 데이터 분석의 몇 가지 공통된 사례를 보여 줄 수 있을 정도로 간단합니다.  
+4. 앱을 빌드하고 사용해 보세요. 앱은 CPU 사용 데이터 분석의 일반적인 사례를 보여 줄 수 있을 정도로 간단 합니다.  
   
 ## <a name="BKMK_Collect_CPU_usage_data"></a> CPU 사용량 데이터 수집  
- ![시뮬레이터에서 앱의 릴리스 빌드 실행](../profiling/media/cpu-use-wt-setsimulatorandretail.png "CPU_USE_WT_SetSimulatorAndRetail")  
+ ![시뮬레이터에서 앱의 릴리스 빌드를 실행 합니다.](../profiling/media/cpu-use-wt-setsimulatorandretail.png "CPU_USE_WT_SetSimulatorAndRetail")  
   
 1. Visual Studio에서 배포 대상을 **시뮬레이터**로, 솔루션 구성을 **릴리스**로 설정합니다.  
   
@@ -60,13 +60,13 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
   
 3. 성능 및 진단 허브에서 **CPU 사용량**을 선택한 다음 **시작**을 선택합니다.  
   
-    ![CpuUsage 진단 세션 시작](../profiling/media/cpu-use-wt-perfdiaghub.png "CPU_USE_WT_PerfDiagHub")  
+    ![CpuUsage 진단 세션을 시작 합니다.](../profiling/media/cpu-use-wt-perfdiaghub.png "CPU_USE_WT_PerfDiagHub")  
   
 4. 앱이 시작되면 **최대 수 가져오기**를 클릭합니다. 출력이 표시되면 약 1초간 기다린 다음 **Get Max Number Async**(비동기적으로 최대 수 가져오기)를 선택합니다. 단추를 클릭하는 시간 사이에 대기하면 진단 보고서에서 단추 클릭 루틴을 좀 더 쉽게 격리할 수 있습니다.  
   
 5. 두 번째 출력 줄이 나타나면 성능 및 진단 허브에서 **수집 중지** 를 선택합니다.  
   
-   ![CpuUsage 데이터 컬렉션 중지](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
+   ![CpuUsage 데이터 수집 중지](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
   
    CPU 사용량 도구에서 데이터를 분석하고 보고서를 표시합니다.  
   
@@ -75,20 +75,20 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
 ## <a name="BKMK_Analyze_the_CPU_Usage_report"></a> CPU 사용량 보고서 분석  
   
 ### <a name="BKMK_CPU_utilization_timeline_graph"></a> CPU 사용률 타임라인 그래프  
- ![CpuUtilization&#40;%&#41; 타임라인 그래프](../profiling/media/cpu-use-wt-timelinegraph.png "CPU_USE_WT_TimelineGraph")  
+ ![CpuUtilization &#40;%&#41; 타임 라인 그래프](../profiling/media/cpu-use-wt-timelinegraph.png "CPU_USE_WT_TimelineGraph")  
   
  CPU 사용률 그래프는 디바이스의 모든 프로세서 코어에서의 전체 CPU 시간 백분율로 앱의 CPU 활동을 보여 줍니다. 이 보고서의 데이터는 듀얼 코어 컴퓨터에서 수집되었습니다. 대용량 스파이크 두 개는 단추를 두 번 클릭할 경우의 CPU 활동을 보여 줍니다. `GetMaxNumberButton_Click`은 단일 코어에서 동기적으로 수행되므로 메서드 그래프의 높이가 50%를 초과하지 않습니다. `GetMaxNumberAsycButton_Click`은 두 코어에서 비동기적으로 실행되므로 다시 해당 스파이크가 두 코어에서 거의 모든 CPU 리소스를 활용하는 것처럼 보입니다.  
   
 #### <a name="BKMK_Select_timeline_segments_to_view_details"></a> 세부 정보를 볼 타임라인 세그먼트 선택  
  **진단 세션** 타임라인에서 선택 막대를 사용하여 GetMaxNumberButton_Click 데이터에 초점을 맞춥니다.  
   
- ![GetMaxNumberButton&#95;Click 선택됨](../profiling/media/cpu-use-wt-getmaxnumberreport.png "CPU_USE_WT_GetMaxNumberReport")  
+ ![Getmax번호 단추&#95;클릭 선택](../profiling/media/cpu-use-wt-getmaxnumberreport.png "CPU_USE_WT_GetMaxNumberReport")  
   
  이제 **진단 세션** 타임라인은 선택한 세그먼트에 소요된 시간을 표시(이 보고서에서는 2초보다 약간 김)하고 선택 세그먼트에서 실행된 해당 메서드에 대한 호출 트리를 필터링합니다.  
   
  여기에서 `GetMaxNumberAsyncButton_Click` 세그먼트를 선택합니다.  
   
- ![GetMaxNumberAsyncButton&#95;Click 보고서 선택](../profiling/media/cpu-use-wt-getmaxnumberasync-selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
+ ![Getmax번호 Asyncbutton&#95;클릭 보고서 선택](../profiling/media/cpu-use-wt-getmaxnumberasync-selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
   
  이 메서드는 `GetMaxNumberButton_Click`보다 약 1초 더 빨리 완료되었지만 호출 트리 항목의 의미는 덜 명확합니다.  
   
@@ -96,29 +96,29 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
  호출 트리 정보 파악을 시작하려면 `GetMaxNumberButton_Click` 세그먼트를 다시 선택하고 호출 트리 세부 정보를 확인합니다.  
   
 #### <a name="BKMK_Call_tree_structure"></a> 호출 트리 구조  
- ![GetMaxNumberButton&#95;Click 호출 트리](../profiling/media/cpu-use-wt-getmaxnumbercalltree-annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
+ ![Getmax번호 단추&#95;클릭 호출 트리](../profiling/media/cpu-use-wt-getmaxnumbercalltree-annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
   
 |||  
 |-|-|  
-|![1단계](../profiling/media/procguid-1.png "ProcGuid_1")|CPU 사용량 호출 트리의 최상위 노드는 의사 노드입니다.|  
-|![2단계](../profiling/media/procguid-2.png "ProcGuid_2")|대다수 앱에서 **외부 코드 포시** 옵션이 사용하지 않도록 설정되어 있는 경우 두 번째 수준 노드는 앱을 시작/중지하고, UI를 그리며, 스레드 일정을 제어하고, 앱에 다른 낮은 수준 서비스를 제공하는 시스템과 프레임워크 코드가 포함된 **[External Code]** 노드입니다.|  
-|![3단계](../profiling/media/procguid-3.png "ProcGuid_3")|두 번째 수준 노드의 자식은 두 번째 수준 시스템과 프레임워크 코드가 호출하거나 만드는 사용자 코드 메서드 및 비동기 루틴입니다.|  
-|![4단계](../profiling/media/procguid-4.png "ProcGuid_4")|메서드의 자식 노드에는 부모 메서드 호출에 대한 데이터만 포함되어 있습니다. **외부 코드 표시** 가 사용하지 않도록 설정되어 있으면 앱 메서드에 **[External Code]** 노드를 포함할 수 있습니다.|  
+|![1 단계](../profiling/media/procguid-1.png "ProcGuid_1")|CPU 사용량 호출 트리의 최상위 노드는 의사 노드입니다.|  
+|![2 단계](../profiling/media/procguid-2.png "ProcGuid_2")|대다수 앱에서 **외부 코드 포시** 옵션이 사용하지 않도록 설정되어 있는 경우 두 번째 수준 노드는 앱을 시작/중지하고, UI를 그리며, 스레드 일정을 제어하고, 앱에 다른 낮은 수준 서비스를 제공하는 시스템과 프레임워크 코드가 포함된 **[External Code]** 노드입니다.|  
+|![3 단계](../profiling/media/procguid-3.png "ProcGuid_3")|두 번째 수준 노드의 자식은 두 번째 수준 시스템과 프레임워크 코드가 호출하거나 만드는 사용자 코드 메서드 및 비동기 루틴입니다.|  
+|![4 단계](../profiling/media/procguid-4.png "ProcGuid_4")|메서드의 자식 노드에는 부모 메서드 호출에 대한 데이터만 포함되어 있습니다. **외부 코드 표시** 가 사용하지 않도록 설정되어 있으면 앱 메서드에 **[External Code]** 노드를 포함할 수 있습니다.|  
   
 #### <a name="BKMK_External_Code"></a> 외부 코드  
  외부 코드는 사용자가 작성한 코드에서 실행된 시스템 및 프레임워크 구성 요소의 함수로 구성됩니다. 외부 코드에는 앱을 시작 및 중지하고, UI를 그리며, 스레딩을 제어하고, 앱에 다른 낮은 수준 서비스를 제공하는 함수가 포함되어 있습니다. 대부분의 경우 외부 코드에 관심이 없으므로 CPU 사용량 호출 트리에서 사용자 메서드의 외부 함수를 하나의 **[External Code]** 노드로 수집합니다.  
   
  외부 코드의 호출 경로를 보려면 **필터 뷰** 목록에서 **외부 코드 보기** 를 선택한 다음 **적용**을 선택합니다.  
   
- ![필터 뷰 선택 후 외부 코드 표시](../profiling/media/cpu-use-wt-filterview.png "CPU_USE_WT_FilterView")  
+ ![필터 뷰를 선택한 다음 외부 코드 표시를 선택 합니다.](../profiling/media/cpu-use-wt-filterview.png "CPU_USE_WT_FilterView")  
   
  여러 외부 코드 호출 체인은 깊이 중첩되어 있으므로 함수 이름 열의 너비가 컴퓨터 모니터의 거의 최대 화면 너비를 초과할 수 있습니다. 이런 경우 함수 이름은 다음과 같이 **[…]** 로 표시됩니다.  
   
- ![호출 트리에 중첩된 외부 코드](../profiling/media/cpu-use-wt-showexternalcodetoowide.png "CPU_USE_WT_ShowExternalCodeTooWide")  
+ ![호출 트리에 중첩 된 외부 코드](../profiling/media/cpu-use-wt-showexternalcodetoowide.png "CPU_USE_WT_ShowExternalCodeTooWide")  
   
  검색 상자를 사용하여 검색 중인 노드를 찾은 다음, 가로 스크롤 막대를 사용하여 데이터를 뷰로 가져옵니다.  
   
- ![중첩된 외부 코드 검색](../profiling/media/cpu-use-wt-showexternalcodetoowide-found.png "CPU_USE_WT_ShowExternalCodeTooWide_Found")  
+ ![중첩 된 외부 코드 검색](../profiling/media/cpu-use-wt-showexternalcodetoowide-found.png "CPU_USE_WT_ShowExternalCodeTooWide_Found")  
   
 ### <a name="BKMK_Call_tree_data_columns"></a> 호출 트리 데이터 열  
   
@@ -135,11 +135,11 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
   
  이 예제에서 이 코드를 보려면 타임라인에서 `GetMaxNumberAsyncButton_Click` 세그먼트를 다시 선택합니다.  
   
- ![GetMaxNumberAsyncButton&#95;Click 보고서 선택](../profiling/media/cpu-use-wt-getmaxnumberasync-selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
+ ![Getmax번호 Asyncbutton&#95;클릭 보고서 선택](../profiling/media/cpu-use-wt-getmaxnumberasync-selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
   
  **[External Code]** 아래에 있는 처음 두 노드는 상태 시스템 클래스의 컴파일러 생성 메서드입니다. 세 번째 노드는 원래 메서드에 대한 호출입니다. 생성된 메서드를 확장하면 진행 상황이 표시됩니다.  
   
- ![확장된 GetMaxNumberAsyncButton&#95;Click 호출 트리](../profiling/media/cpu-use-wt-getmaxnumberasync-expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
+ ![확장 된 Getmax번호 Asyncbutton&#95;클릭 호출 트리](../profiling/media/cpu-use-wt-getmaxnumberasync-expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
   
 - `MainPage::GetMaxNumberAsyncButton_Click`는 아주 작은 기능만을 수행합니다. 이 메서드는 작업 값 목록을 관리하고, 결과의 최대값을 계산하고, 출력을 표시합니다.  
   

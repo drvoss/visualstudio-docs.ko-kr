@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 196ba13b95245b8c42e6d946572665792f71346d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f5247a56667f5715d9f155c662eb333967878d71
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745633"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188642"
 ---
 # <a name="create-custom-views-of-managed-objects-c-visual-basic-f-ccli"></a>관리 되는 개체의 사용자 지정C#뷰 만들기 ( F#, C++Visual Basic,,/cli)
 Visual Studio에서 디버거 변수 창에 데이터 형식이 표시되는 방식을 사용자 지정할 수 있습니다.
@@ -41,10 +41,10 @@ Visual Studio에서 디버거 변수 창에 데이터 형식이 표시되는 방
 
 ## <a name="visualizers"></a>시각화 도우미
 
-시각화 도우미를 작성하여 관리되는 데이터 형식을 표시할 수 있습니다. 자세한 내용은 [방법: 시각화 도우미 작성](/visualstudio/debugger/create-custom-visualizers-of-data)을 참조 하세요.
+시각화 도우미를 작성하여 관리되는 데이터 형식을 표시할 수 있습니다. 자세한 내용은 [방법: 시각화 도우미 작성](create-custom-visualizers-of-data.md)을 참조 하세요.
 
 > [!NOTE]
-> 코드의 경우 [디버거에서 개체의 C++ 사용자 지정 뷰 만들기](/visualstudio/debugger/create-custom-views-of-native-objects)에 설명 된 대로 Natvis 프레임 워크를 사용 하 여 사용자 지정 데이터 형식 확장을 추가할 수 있습니다. C++
+> 코드의 경우 [디버거에서 개체의 C++ 사용자 지정 뷰 만들기](create-custom-views-of-native-objects.md)에 설명 된 대로 Natvis 프레임 워크를 사용 하 여 사용자 지정 데이터 형식 확장을 추가할 수 있습니다. C++
 
 ## <a name="see-also"></a>참조
 

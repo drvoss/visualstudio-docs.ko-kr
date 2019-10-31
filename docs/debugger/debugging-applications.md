@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 159f641b1ae5d05233e997d8dc41513a484eae75
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: baa028029081ee1c9c88b75aac416b634632b21a
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018791"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188374"
 ---
 # <a name="debugging-applications"></a>애플리케이션 디버깅
 다음 섹션에서는 특정 유형의 애플리케이션에 대한 디버그를 설명합니다. 다른 애플리케이션 종류와 다른 언어는 다른 설정과 기술을 필요로 하며, 디버그해야 하는 다양한 문제를 발생시킵니다.
@@ -31,7 +31,7 @@ ms.locfileid: "72018791"
 |[관리 코드 디버그](../debugger/debugging-managed-code.md)|관리 코드 (Visual C#, Visual Basic, F#및 C++/cli)를 디버깅 하는 방법을 설명 합니다.|
 |[네이티브 코드 디버그](../debugger/debugging-native-code.md)|다른 종류의 기본 C++ 애플리케이션을 디버그하는 방법을 설명합니다.|
 |[GPU 코드 디버그](../debugger/debugging-gpu-code.md)|GPU(그래픽 처리 장치)에서 실행되는 C++ 코드를 디버그하는 방법을 설명합니다.|
-|[그래픽 진단(DirectX 그래픽 디버그)](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)|DirectX 그래픽을 디버그하는 방법을 설명합니다.|
+|[그래픽 진단(DirectX 그래픽 디버그)](graphics/visual-studio-graphics-diagnostics.md)|DirectX 그래픽을 디버그하는 방법을 설명합니다.|
 |[ASP.NET 애플리케이션 디버그](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|ASP.NET 응용 프로그램을 디버그 하는 방법을 설명 합니다.|
 |[Python 코드 디버그](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)|Python 코드를 디버깅 하는 방법을 설명 합니다.|
 |[JavaScript 및 TypeScript 응용 프로그램 디버그](../javascript/debug-nodejs.md)|JavaScript, TypeScript 및 node.js 응용 프로그램을 디버그 하는 방법을 설명 합니다.|

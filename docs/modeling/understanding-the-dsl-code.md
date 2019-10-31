@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 017c28af68efa98507286e8acdc2b4d694353aa1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 44f66ed25ab43db2d08db3cb93263bd61ac3a907
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747389"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189453"
 ---
 # <a name="understanding-the-dsl-code"></a>DSL 코드 이해
 
@@ -39,7 +39,7 @@ DSL (도메인 특정 언어) 솔루션은 Visual Studio에서 DSL 인스턴스�
 
  생성된 코드를 검사하여 DSL을 파악하는 것이 좋습니다. 생성된 파일을 확인하려면 솔루션 탐색기에서 *.tt 파일을 확장합니다.
 
- @No__t_0 .tt 파일은 거의 생성 하지 않는 코드를 포함 합니다. 대신 `<#include>` 지시문을 사용하여 공유 템플릿 파일을 포함합니다. 공유 파일은 **Files\Microsoft Visual Studio 10.0 \ COMMON7\IDE\EXTENSIONS\MICROSOFT\DSL SDK\DSL Designer\11.0\TextTemplates** 에서 찾을 수 있습니다.
+ \*.tt 파일은 거의 생성 하지 않는 코드를 포함 합니다. 대신 `<#include>` 지시문을 사용하여 공유 템플릿 파일을 포함합니다. 공유 파일은 **Files\Microsoft Visual Studio 10.0 \ COMMON7\IDE\EXTENSIONS\MICROSOFT\DSL SDK\DSL Designer\11.0\TextTemplates** 에서 찾을 수 있습니다.
 
  고유한 프로그램 코드를 DSL 솔루션에 추가할 때는 Generated Code 폴더 외부에 있는 별도의 파일에 추가합니다. **사용자 지정 코드** 폴더를 만들 수 있습니다. 사용자 지정 폴더에 새 코드 파일을 추가할 때는 초기 코드 골격에서 네임스페이스를 수정해야 합니다.
 
@@ -192,7 +192,7 @@ DSL (도메인 특정 언어) 솔루션은 Visual Studio에서 DSL 인스턴스�
 
  `CommandSet.cs`
 
- 다이어그램에 표시 되는 오른쪽 클릭 메뉴 명령입니다. 이 집합을 조정하거나 집합에 원하는 명령을 추가할 수 있습니다. 이 파일은 명령의 코드를 포함합니다. 메뉴에서 명령의 위치는 Commands.vsct 파일에 의해 결정됩니다. 자세한 내용은 [사용자 명령 및 작업 작성](../modeling/writing-user-commands-and-actions.md)을 참조 하세요.
+ 다이어그램에 표시 되는 오른쪽 클릭 메뉴 명령입니다. 이 집합을 조정하거나 집합에 원하는 명령을 추가할 수 있습니다. 이 파일은 명령의 코드를 포함합니다. 메뉴에서 명령의 위치는 Commands.vsct 파일에 의해 결정됩니다. 자세한 내용은 [사용자 명령 및 작업 작성](how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)을 참조 하세요.
 
  `Constants.cs`
 
@@ -282,7 +282,7 @@ namespace Company.EmbedInForm
 
  `GeneratedVSCT.vsct`
 
- 다이어그램 오른쪽 클릭 (컨텍스트) 메뉴, **편집** 메뉴 등의 메뉴에서 표준 메뉴 명령을 찾습니다. 명령의 코드는 CommandSet.cs에 있습니다. 표준 명령을 다시 배치하거나 수정할 수 있으며 원하는 명령을 추가할 수도 있습니다. 자세한 내용은 [사용자 명령 및 작업 작성](../modeling/writing-user-commands-and-actions.md)을 참조 하세요.
+ 다이어그램 오른쪽 클릭 (컨텍스트) 메뉴, **편집** 메뉴 등의 메뉴에서 표준 메뉴 명령을 찾습니다. 명령의 코드는 CommandSet.cs에 있습니다. 표준 명령을 다시 배치하거나 수정할 수 있으며 원하는 명령을 추가할 수도 있습니다. 자세한 내용은 [사용자 명령 및 작업 작성](how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)을 참조 하세요.
 
  `ModelExplorer.cs`
 

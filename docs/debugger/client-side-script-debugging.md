@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9f66d757f5f46530619be1424eb0810ce546ff5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9f0ac06712810e39432f1d19c250c3e7976f4a01
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745706"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188702"
 ---
 # <a name="client-side-script-debugging"></a>클라이언트 쪽 스크립트 디버깅
 Visual Studio 디버거는 ASP.NET 페이지의 클라이언트 쪽 스크립트에서 오류를 찾아 수정하기 위한 포괄적인 디버깅 환경을 제공합니다.
@@ -61,7 +61,7 @@ Visual Studio 디버거는 ASP.NET 페이지의 클라이언트 쪽 스크립트
 
 ## <a name="see-also"></a>참조
 
-- [ASP.NET 및 AJAX 애플리케이션 디버그](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)
+- [ASP.NET 및 AJAX 애플리케이션 디버그](how-to-enable-debugging-for-aspnet-applications.md)
 - [스크립트 디버깅의 제한 사항](../debugger/limitations-on-script-debugging.md)
 - [변수 창](../debugger/debugger-windows.md)
 - [직접 실행 창](../ide/reference/immediate-window.md)

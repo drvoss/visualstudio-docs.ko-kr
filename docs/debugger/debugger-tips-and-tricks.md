@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d1c327c168bfd2881ad014b7f9ab87f771b95d
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: bf8d6df020694bb10fe4f3f051551056549d5673
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72536069"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188625"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Visual Studio에서 디버거의 생산성 팁과 요령 배우기
 
@@ -41,7 +41,7 @@ Visual Studio에서 지원되는 대부분의 언어에서 디버깅 세션 중�
 
 ## <a name="edit-xaml-code-and-continue-debugging"></a>XAML 코드 편집 및 디버깅 계속
 
-디버깅 세션 중 XAML 코드를 수정하려면 [XAML 핫 다시 로드를 사용하여 코드 작성 및 실행 중인 XAML 코드 디버그](xaml-hot-reload.md)를 참조하세요.
+디버깅 세션 중 XAML 코드를 수정하려면 [XAML 핫 다시 로드를 사용하여 코드 작성 및 실행 중인 XAML 코드 디버그](../xaml-tools/xaml-hot-reload.md)를 참조하세요.
 
 ## <a name="debug-issues-that-are-hard-to-reproduce"></a>재현 하기 어려운 문제 디버그
 
@@ -102,7 +102,7 @@ Visual Studio에서 지원되는 대부분의 언어에서 디버깅 세션 중�
 
 ![직접 실행 창](../debugger/media/dbg-tips-immediate-window.png "ImmediateWindow")
 
-@No__t_3와 같은 **조사식** 및 **직접 실행** 창에서 [의사 변수](../debugger/pseudovariables.md) 을 사용할 수도 있습니다.
+`$ReturnValue`와 같은 **조사식** 및 **직접 실행** 창에서 [의사 변수](../debugger/pseudovariables.md) 을 사용할 수도 있습니다.
 
 ## <a name="string_visualizer"></a>시각화 도우미에서 문자열 검사
 
@@ -140,6 +140,7 @@ Visual Studio에서 지원되는 대부분의 언어에서 디버깅 세션 중�
 
     [병렬 스택 창](../debugger/get-started-debugging-multithreaded-apps.md)에서 스레드 위치를 볼 수도 있습니다.
 
+::: moniker range="vs-2017"
 ## <a name="examine-payloads-for-web-services-and-network-resources-uwp"></a>웹 서비스 및 네트워크 리소스에 대 한 페이로드 검사 (UWP)
 
 UWP 앱에서 `Windows.Web.Http` API를 사용 하 여 수행 되는 네트워크 작업을 분석할 수 있습니다. 이 도구를 사용 하면 웹 서비스 및 네트워크 리소스를 쉽게 디버그할 수 있습니다. 이 도구를 사용 하려면 **디버그 > 성능 프로파일러**를 선택 합니다. **네트워크**를 선택한 다음 **시작**을 선택 합니다. 앱에서 `Windows.Web.Http`를 사용하는 시나리오를 확인한 다음 **컬렉션 중지**를 선택하여 보고서를 생성합니다.
@@ -151,6 +152,7 @@ UWP 앱에서 `Windows.Web.Http` API를 사용 하 여 수행 되는 네트워�
 ![네트워크 사용량 도구의 자세한 정보](../profiling/media/prof-tour-network-usage-details.png "DetailedViewNetworkUsage")
 
 자세한 내용은 [네트워크 사용량](../profiling/network-usage.md)을 참조하세요.
+::: moniker-end
 
 ## <a name="modules_window"></a>디버거를 앱에 연결 하는 방법에 대 한 자세한C#정보 C++(,, F#Visual Basic,)
 

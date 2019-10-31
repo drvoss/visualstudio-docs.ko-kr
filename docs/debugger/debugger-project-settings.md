@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6a4e3fde3d98b83f8b92ffe039e3bff5c8eae4f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 77f5ca5dcc1b886ec56b7177dd0d6aa62a8ce4f0
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738336"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188637"
 ---
 # <a name="debugger-project-settings"></a>디버거 프로젝트 설정
 일부 프로젝트 설정도 디버깅에 영향을 미칩니다. 즉, 디버거가 검색할 디렉터리, 프로그램 실행에 사용할 명령과 명령 인수, 프로그램에 대해 생성되는 디버그 정보의 형식 등과 같은 사항이 이러한 설정에 따라 결정됩니다. **속성 페이지** 대화 상자에서 이 설정을 변경할 수 있습니다.
@@ -39,12 +39,12 @@ ms.locfileid: "72738336"
 
  [웹 프로젝트에 대 한 속성 페이지 설정](../debugger/property-pages-settings-for-web-projects.md) 웹 프로젝트의 **속성 페이지** 대화 상자에서 사용할 수 있는 속성을 나열 합니다.
 
- [Visual Basic 디버그 구성에 대 한 프로젝트 설정](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) @No__t_2 프로젝트에 대 한 **속성 페이지** 대화 상자에서 사용할 수 있는 속성을 나열 합니다.
+ [Visual Basic 디버그 구성에 대 한 프로젝트 설정](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 프로젝트에 대 한 **속성 페이지** 대화 상자에서 사용할 수 있는 속성을 나열 합니다.
 
 ## <a name="related-sections"></a>관련 단원
  [기호 (.pdb) 및 소스 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) 디버거에서 기호 파일 및 소스 파일을 사용 하 여 디버깅 정보를 표시 하는 방법을 설명 합니다.
 
- [Visual Studio에서 앱 디버그](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps) UWP 앱을 디버그 하는 방법을 설명 합니다. (Windows 개발자 센터)
+ [Visual Studio에서 앱 디버그](debugging-windows-store-and-windows-universal-apps.md) UWP 앱을 디버그 하는 방법을 설명 합니다. (Windows 개발자 센터)
 
  [디버거 설정 및 준비](../debugger/debugger-settings-and-preparation.md) 디버거 관련 속성 설정에 대해 설명 하 고 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 디버거를 사용 하 여 프로그램을 디버깅 하는 데 필요한 준비 사항을 설명 합니다.
 

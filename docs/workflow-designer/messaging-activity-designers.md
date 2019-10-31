@@ -8,12 +8,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ba6aaaf0f6e77714af14e690d4944eac031e1d7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b58a4c6f369f9a5338365e215805c2379db8d2ba
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650139"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189745"
 ---
 # <a name="messaging-activity-designers"></a>메시징 활동 디자이너
 
@@ -41,7 +41,7 @@ ms.locfileid: "72650139"
 
 - [제어 흐름](../workflow-designer/control-flow-activity-designers.md)
 
-- [활동 디자이너 사용](../workflow-designer/using-the-activity-designers.md)
+- [활동 디자이너 사용](control-flow-activity-designers.md)
 
 - [워크플로](../workflow-designer/flowchart-activity-designers.md)
 
@@ -57,4 +57,4 @@ ms.locfileid: "72650139"
 
 ## <a name="external-resources"></a>외부 리소스
 
-[활동 디자이너 사용](../workflow-designer/using-the-activity-designers.md)
+[활동 디자이너 사용](control-flow-activity-designers.md)

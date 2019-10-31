@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 875c2578d5f8cc1aa68cc624adc0a6e2a1713472
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: e69d88bb5764836d82232cec26606009eaf694d7
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911359"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187740"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio 그래픽 진단
 Visual Studio*그래픽 진단* 는 Direct3D 앱의 렌더링 및 성능 문제를 기록 하 고 분석 하기 위한 도구 집합입니다. Windows PC에서 로컬로 실행 중이거나 Windows 디바이스 에뮬레이터 또는 원격 PC나 디바이스에서 실행 중인 앱에서 그래픽 진단을 사용할 수 있습니다.
@@ -38,7 +38,7 @@ Visual Studio*그래픽 진단* 는 Direct3D 앱의 렌더링 및 성능 문제�
 
  [그래픽 정보 캡처](capturing-graphics-information.md) 그래픽 진단를 사용 하 여 앱에서 렌더링 문제를 검사 하려면 먼저 앱에서 DirectX를 사용 하는 방법에 대 한 정보를 기록 합니다. 기록 세션 중에는 정상적으로 앱이 실행될 때 관심 있는 프레임을 *캡처*, 즉 선택합니다. 캡처에는 프레임이 렌더링되는 방법에 대한 자세한 정보가 포함됩니다. 나중에 검사하거나 팀의 다른 멤버와 공유할 수 있도록 캡처한 정보를 그래픽 로그 문서로 저장할 수 있습니다.
 
- [GPU 사용량](gpu-usage.md) 그래픽 진단를 사용 하 여 앱을 프로 파일링 하려면 GPU 사용량 도구를 사용 합니다. GPU 사용량을 CPU 사용량 등의 기타 프로파일링 도구와 함께 사용하여 앱의 성능 문제에 영향을 줄 수 있는 CPU 및 GPU 작업을 상호 연결할 수 있습니다.
+ [GPU 사용량](../../profiling/gpu-usage.md) 그래픽 진단를 사용 하 여 앱을 프로 파일링 하려면 GPU 사용량 도구를 사용 합니다. GPU 사용량을 CPU 사용량 등의 기타 프로파일링 도구와 함께 사용하여 앱의 성능 문제에 영향을 줄 수 있는 CPU 및 GPU 작업을 상호 연결할 수 있습니다.
 
  [그래픽 로그 문서](graphics-log-document.md) 기록 된 그래픽 로그 검사를 시작 하려면 그래픽 로그 문서 창을 사용 하 여 캡처된 프레임을 선택 하거나 특정 픽셀을 선택 하 여이에 영향을 주는 *이벤트* (DirectX API 호출)를 자세히 검사할 수 있습니다.
 
@@ -66,5 +66,5 @@ Visual Studio*그래픽 진단* 는 Direct3D 앱의 렌더링 및 성능 문제�
 
 | 제목 | 설명 |
 | - | - |
-| [디버거 기능 둘러보기](/visualstudio/debugger/debugger-feature-tour) | [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]의 디버깅 기능에 대해 소개합니다. |
+| [디버거 기능 둘러보기](../debugger-feature-tour.md) | [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]의 디버깅 기능에 대해 소개합니다. |
 | [DirectX 그래픽 및 게임](/windows/win32/directx) | DirectX 그래픽 기술에 대해 설명하는 문서를 제공합니다. |

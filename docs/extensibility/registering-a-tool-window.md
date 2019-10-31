@@ -1,5 +1,5 @@
 ---
-title: 도구 창을 등록 | Microsoft Docs
+title: 도구 창 등록 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +11,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ae53481b773cfdad5d4ac70f90202fcfd9d1ad4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 34fddd6513aad612398c700b935c6d1d3ee72b59
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334319"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73186269"
 ---
 # <a name="register-a-tool-window"></a>도구 창 등록
-도구 창을 사용 하 여 등록할 수 있습니다 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> 고 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>입니다.
+<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> 및 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>를 사용 하 여 도구 창을 등록할 수 있습니다.
 
 ## <a name="example"></a>예제
 
@@ -35,4 +35,4 @@ public class PackageToolWindow : Package
 {
 ```
 
- 위의 코드에서의 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> 등록 합니다 `PersistedWindowPane` 및 `DynamicWindowPane` Visual Studio를 사용 하 여 windows 도구입니다. 지속형된 도구 창을 도킹 하 고 사용 하 여 탭은 **솔루션 탐색기**, 고 동적 창 시작 위치 및 크기는 기본 제공 됩니다. 시작 시에 생성 되지 않도록 나타냅니다 동적 창 일시적인 수행 됩니다. 기록를 `DontForceCreate` 값을 `ToolWindows` 시스템 레지스트리에 키입니다. 자세한 내용은 [도구 창 표시 구성](../extensibility/tool-window-display-configuration.md)합니다.
+ 위의 코드에서 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute>는 Visual Studio를 사용 하 여 `PersistedWindowPane` 및 `DynamicWindowPane` 도구 창을 등록 합니다. 지속형 도구 창은 고정 되어 있고 **솔루션 탐색기**탭 하 고 동적 창에는 기본 시작 위치와 크기가 지정 됩니다. 동적 창이 일시적으로 수행 되어 시작할 때 생성 되지 않았음을 나타냅니다. 그러면 시스템 레지스트리의 `ToolWindows` 키에 `DontForceCreate` 값이 기록 됩니다. 자세한 내용은 [도구 창 표시 구성](/visualstudio/extensibility/tool-window-display-configuration?view=vs-2015)을 참조 하세요.

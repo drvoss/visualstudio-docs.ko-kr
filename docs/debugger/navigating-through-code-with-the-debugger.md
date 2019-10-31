@@ -15,44 +15,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e07e2612e01453115cf4cd6120d92bfd5b0168bd
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 6dfffdf0c12ea2a8f14769f26bb40a3943579248
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "70222646"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187605"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Visual Studio 디버거를 사용 하 여 코드 탐색
 
 Visual Studio 디버거는 코드를 탐색 하 여 앱의 상태를 검사 하 고 실행 흐름을 표시 하는 데 도움이 될 수 있습니다. 바로 가기 키, 디버그 명령, 중단점 및 기타 기능을 사용 하 여 검사 하려는 코드를 신속 하 게 가져올 수 있습니다. 디버거 탐색 명령 및 바로 가기를 사용 하면 앱 문제를 보다 쉽고 빠르게 찾고 해결할 수 있습니다.  처음으로 코드를 디버깅 하는 경우이 문서를 진행 하기 전에 절대 초보자와 [디버깅 기술 및 도구](../debugger/write-better-code-with-visual-studio.md) [에 대 한 디버깅](../debugger/debugging-absolute-beginners.md) 을 읽어야 할 수 있습니다.
 
-## <a name="basic-debugging"></a>기본적인 디버깅
+## <a name="get-into-break-mode"></a>"중단 모드"로 가져오기
 
-디버거를 연결 하 여 응용 프로그램을 시작 하려면 **f5**키를 누르거나 **디버그**  > **디버깅 시작**을 선택 하거나 Visual Studio 도구 모음에서 녹색 화살표를 선택 합니다.
+*중단 모드*에서 함수, 변수 및 개체가 메모리에 유지 되는 동안에는 앱 실행이 일시 중단 됩니다. 디버거가 중단 모드에 있으면 코드를 탐색할 수 있습니다. 중단 모드로 신속 하 게 전환 하는 가장 일반적인 방법은 다음 중 하나입니다.
 
- ![DBG&#95;기본&#95;사항&#95;디버깅 시작](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")
+- **F10** 또는 **F11**키를 눌러 코드 단계별 실행을 시작 합니다. 그러면 앱의 진입점을 신속 하 게 찾을 수 있으며, 계속 해 서 단계 명령을 눌러 코드를 탐색할 수 있습니다.
 
-디버깅 하는 동안 노란색 강조 표시는 다음에 실행 되는 코드 줄을 보여 줍니다.
+- [중단점을 설정](using-breakpoints.md) 하 고 앱을 시작 하는 등의 방법으로 [특정 위치 또는 함수까지 실행](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All)합니다.
 
- ![DBG&#95;기본&#95;중단&#95;모드](../debugger/media/dbg_basics_break_mode.png "중단 모드")
+   예를 들어 Visual Studio의 코드 편집기에서 **커서까지 실행** 명령을 사용 하 여 앱을 시작 하 고 디버거를 연결 하 여 중단 모드로 전환 하 고 **F11** 키를 눌러 코드를 탐색할 수 있습니다.
 
-**모듈** 및 **조사식** 창과 같은 대부분의 디버거 창은 디버거가 실행 되는 동안에만 사용할 수 있습니다. **지역** 창에서 변수 값 보기 또는 **조사식** 창에서 식 계산과 같은 일부 디버거 기능은 디버거가 중단점에서 일시 중지 된 경우에만 사용할 수 있습니다 ( *중단 모드*라고도 함).
+   ![커서까지 실행 및 코드 한 단계씩 코드 실행](../debugger/media/navigate-code-code-stepping.gif "커서까지 실행 및 코드 한 단계씩 코드 실행")
 
-중단 모드에서 함수, 변수 및 개체가 메모리에 유지 되는 동안에는 앱 실행이 일시 중단 됩니다. 요소의 위치 및 상태를 검사 하 여 위반 또는 버그를 찾을 수 있습니다. 일부 프로젝트 형식의 경우 중단 모드에서 응용 프로그램을 조정할 수도 있습니다. 이러한 기능을 보여 주는 비디오는 [디버거 시작](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6)을 참조 하세요.
+중단 모드에서 다양 한 명령을 사용 하 여 코드를 탐색할 수 있습니다. 중단 모드에서는 변수 값을 검사 하 여 위반 또는 버그를 찾을 수 있습니다. 일부 프로젝트 형식의 경우 중단 모드에서 응용 프로그램을 조정할 수도 있습니다.
 
-소스 또는 기호 ( *.pdb*) 파일이 로드 되지 않은 코드를 중단 하는 경우 디버거는 파일을 찾아 로드 하는 데 도움이 될 수 있는 **소스 파일을 찾을** 수 없음 또는 **기호를 찾을** 수 없음 페이지를 표시 합니다. [기호 파일(.pdb) 및 원본 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)을 참조하세요. 기호 또는 소스 파일을 로드할 수 없는 경우에도 **디스어셈블리** 창에서 어셈블리 명령을 디버그할 수 있습니다.
+**모듈** 및 **조사식** 창과 같은 대부분의 디버거 창은 디버거가 앱에 연결 되어 있는 동안에만 사용할 수 있습니다. **지역** 창에서 변수 값 보기 또는 **조사식** 창에서 식 평가와 같은 일부 디버거 기능은 디버거가 일시 중지 된 경우에만 사용할 수 있습니다 (즉, 중단 모드).
 
-응용 프로그램을 처음부터 시작 하 여 항상 디버깅을 시작할 필요는 없습니다. **F11** 키를 눌러 코드를 한 단계씩 코드 실행 하거나 **, F10** 키를 눌러 [코드를 프로시저](#BKMK_Step_over_Step_out) [단위로](#BKMK_Step_into__over__or_out_of_the_code)실행 하거나, [특정 위치나 함수까지 실행할](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All)수도 있습니다.
+> [!NOTE]
+> 소스 또는 기호 ( *.pdb*) 파일이 로드 되지 않은 코드를 중단 하는 경우 디버거는 파일을 찾아 로드 하는 데 도움이 될 수 있는 **소스 파일을 찾을** 수 없음 또는 **기호를 찾을** 수 없음 페이지를 표시 합니다. [기호 파일(.pdb) 및 원본 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)을 참조하세요. 기호 또는 소스 파일을 로드할 수 없는 경우에도 **디스어셈블리** 창에서 어셈블리 명령을 디버그할 수 있습니다.
 
 ## <a name="step-through-code"></a>단계별 코드 실행
 
 디버거 단계 명령은 앱 상태를 검사 하거나 실행 흐름에 대 한 자세한 정보를 확인 하는 데 도움이 됩니다.
 
-앱에서 진입점을 찾아야 하는 경우 **F10** 또는 **F11**키를 사용 하 여 시작 합니다.
-
 ### <a name="BKMK_Step_into__over__or_out_of_the_code"></a>한 줄씩 코드 한 단계씩 코드 실행
 
-디버깅 하는 동안 코드 또는 문의 각 줄에서 중지 하려면 **디버그**  >  한**단계씩 코드 실행**을 사용 하거나 **F11**키를 누릅니다.
+디버깅 하는 동안 각 문에서 중지 하려면 **디버그** > 한 **단계씩 코드 실행**을 사용 하거나 **F11**키를 누릅니다.
 
 디버거는 실제 줄이 아닌 코드 문을 단계별로 진행 합니다. 예를 들어 한 줄에 `if` 절을 작성할 수 있습니다.
 
@@ -73,11 +72,11 @@ Visual Studio 디버거는 코드를 탐색 하 여 앱의 상태를 검사 하 
 중첩된 함수 호출인 경우 **한 단계씩 코드 실행** 명령은 가장 안쪽에 중첩된 함수를 한 단계씩 실행합니다. 예를 들어 `Func1(Func2())`와 같은 호출에 한 **단계씩 코드 실행** 을 사용 하는 경우 디버거는 `Func2` 함수를 단계별로 실행 합니다.
 
 >[!TIP]
->각 코드 줄을 실행 하면 변수 위로 마우스를 이동 하 여 값을 확인 하거나 [지역](autos-and-locals-windows.md) 및 [조사식](watch-and-quickwatch-windows.md) 창을 사용 하 여 값 변경 내용을 볼 수 있습니다. 함수를 한 단계씩 실행 하는 동안 호출 스택을 시각적으로 추적할 수도 있습니다. [디버깅 하는 동안 호출 스택의 맵 메서드](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)를 참조 하세요.
+>각 코드 줄을 실행 하면 변수 위로 마우스를 이동 하 여 값을 확인 하거나 [지역](autos-and-locals-windows.md) 및 [조사식](watch-and-quickwatch-windows.md) 창을 사용 하 여 값 변경 내용을 볼 수 있습니다. 함수를 한 단계씩 실행 하는 동안 [호출 스택을](how-to-use-the-call-stack-window.md) 시각적으로 추적할 수도 있습니다. Visual Studio Enterprise에 대해서는 [디버깅 하는 동안 호출 스택의 맵 메서드](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)를 참조 하세요.
 
 ### <a name="BKMK_Step_over_Step_out"></a>코드를 단계별로 실행 하 고 일부 함수 건너뛰기
 
-디버깅 하는 동안 함수를 고려 하지 않거나 잘 테스트 된 라이브러리 코드와 같이 작동 하는 것을 알 수 있습니다. 다음 명령을 사용 하 여 코드를 건너뛸 수 있습니다. 함수는 계속 실행 되지만 디버거는 해당 함수를 건너뜁니다.
+디버깅 하는 동안 함수를 고려 하지 않거나 잘 테스트 된 라이브러리 코드와 같이 작동 하는 것을 알 수 있습니다. 다음 명령을 사용 하 여 코드를 단계별로 실행 하는 동안 코드를 건너뛸 수 있습니다. 함수는 계속 실행 되지만 디버거는 해당 함수를 건너뜁니다.
 
 |키보드 명령|디버그 메뉴 명령|설명|
 |----------------------|------------------|-----------------|

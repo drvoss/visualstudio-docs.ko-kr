@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6444f559902841c13a56265569a0bdc13a9ed26
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 7bcd11d7860e1d191479d4a2ea5f9fac78dcdfe2
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981730"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189214"
 ---
 # <a name="localize-sharepoint-solutions"></a>SharePoint 솔루션 지역화
 
@@ -42,7 +42,7 @@ ms.locfileid: "72981730"
 |언어 중립적|특정 문화권이 아닌 특정 언어에 대해 지역화 된 문자열을 포함 하는 리소스 파일입니다. 예를 들어 프랑스어의 경우 "fr"입니다.|
 |언어별|언어와 문화권에 대해 지역화 된 문자열을 포함 하는 리소스 파일입니다. 예를 들어 프랑스어 (캐나다)의 경우 "fr-CA"입니다.|
 
- 자세한 내용은 [지역화를 위한 리소스의 계층적 구성](../ide/hierarchical-organization-of-resources-for-localization.md)을 참조 하세요.
+ 자세한 내용은 [지역화를 위한 리소스의 계층적 구성](../ide/globalizing-and-localizing-applications.md)을 참조 하세요.
 
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 개발 하는 SharePoint 프로젝트에서 기본 리소스 파일을 지정 하려면 리소스 파일을 추가할 때 **리소스 추가** 대화 상자의 문화권 목록에서 **고정 언어 (고정 국가)** 를 선택 합니다.
 

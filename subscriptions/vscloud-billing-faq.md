@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: 클라우드 구독에 대한 청구 질문입니다.
-ms.openlocfilehash: 7241a63d51ecba2dd47995f39e98f8676e949f60
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 961cd646ecf0ed9c34c734292491c5f3a8e67480
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68606044"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816386"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio 클라우드 구독 청구 FAQ
 클라우드와 표준 Visual Studio 구독 간의 비교를 사용하여 각 Visual Studio 구독의 혜택과 구독자 혜택 세부 정보 등을 이해하려면 반드시 [클라우드 구독 혜택과 가격 책정 비교](https://visualstudio.microsoft.com/vs/pricing/)를 하십시오.
@@ -76,12 +76,12 @@ A:  구독의 *각 유형 내에서* 6번째 및 이후의 모든 구독에 대�
 > Microsoft는 더 이상 Visual Studio Professional 연간 구독 및 클라우드 구독에 Visual Studio Enterprise 연간 구독을 제공하지 않습니다. 기존 고객 환경 및 해당 구독의 갱신, 증가, 감소 또는 취소 기능은 변경되지 않습니다. 새 고객은 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)으로 이동하여 Visual Studio를 구입하기 위한 다양한 옵션을 살펴보세요.
 
 ## <a name="other-questions"></a>기타 질문
-### <a name="q-can-i-use-the-monthly-azure-credits-as-a-visual-studio-subscriber-to-buy-more-visual-studio-cloud-subscriptions"></a>Q: Visual Studio 구독자로서 월간 Azure 크레딧을 사용하여 더 많은 Visual Studio 클라우드 구독을 구입할 수 있나요?
-A: 아니요, Visual Studio Marketplace 구매 비용을 지불하기 위해 [Visual Studio 구독자로서 월간 Azure 크레딧](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)을 사용할 수 없습니다. 모든 Visual Studio 클라우드 구독 구매는 신용 카드로 청구됩니다.
+### <a name="q-can-i-use-the-monthly-azure-devtest-individual-credit-as-a-visual-studio-subscriber-to-buy-more-visual-studio-cloud-subscriptions"></a>Q: Visual Studio 구독자로서 월간 Azure DevTest 개별 크레딧을 사용하여 더 많은 Visual Studio 클라우드 구독을 구입할 수 있나요?
+A: 아니요, Visual Studio Marketplace 구매 비용을 지불하기 위해 [Visual Studio 구독자로서 월간 Azure DevTest 개별 크레딧](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)을 사용할 수 없습니다. 모든 Visual Studio 클라우드 구독 구매는 신용 카드로 청구됩니다.
 구매하기 전에 [지출 한도를 제거](https://azure.microsoft.com/pricing/spending-limits/)해야 합니다.
 
 ### <a name="q-whats-the-difference-between-annual-and-monthly-cloud-subscriptions"></a>Q: 연간 및 월간 클라우드 구독 간의 차이는?
-A:  월별 클라우드 구독에는 Visual Studio 외에 Azure DevOps Services 및 TFS의 사용이 포함됩니다. 연간 클라우드 구독도 마찬가지지만 또한 개발 및 테스트를 위해 설치하고 실행할 Windows와 기타 Microsoft 소프트웨어의 사용, Azure 서비스를 사용한 실험에 대해 사용할 월간 Azure 크레딧 그리고 클라우드, 교육, 지원 등에서 개발 및 테스트 수행을 포함한 구독자 혜택이 포함됩니다.
+A:  월별 클라우드 구독에는 Visual Studio 외에 Azure DevOps Services 및 TFS의 사용이 포함됩니다. 연간 클라우드 구독도 마찬가지지만 또한 개발 및 테스트를 위해 설치하고 실행할 Windows와 기타 Microsoft 소프트웨어의 사용, Azure 서비스를 사용한 실험에 대해 사용할 월간 Azure DevTest 개별 크레딧 그리고 클라우드, 교육, 지원 등에서 개발 및 테스트 수행을 포함한 구독자 혜택이 포함됩니다.
 [클라우드 구독 혜택 및 가격 비교](https://visualstudio.microsoft.com/vs/pricing/)
 
 ### <a name="q-do-i-get-new-versions-of-visual-studio-if-i-buy-a-visual-studio-cloud-subscription"></a>Q: Visual Studio 클라우드 구독을 구매하는 경우 새 버전의 Visual Studio를 얻을 수 있나요?

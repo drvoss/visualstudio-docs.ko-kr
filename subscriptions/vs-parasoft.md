@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/31/2019
 ms.topic: conceptual
 description: Visual Studio 구독에 포함된 Parasoft Virtualize/SOA Test Professional 구독을 활성화하는 방법을 알아봅니다.
-ms.openlocfilehash: 64aa689780dc30a5a6fcadf3e31ec24d3289056a
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: a1bd6525df65ee8cc0c9f3dd9dfd60673dbb6df1
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787734"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816487"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Parasoft Virtualize/SOAtest Professional Desktop
 
@@ -70,7 +70,7 @@ ms.locfileid: "68787734"
 
 ## <a name="eligibility"></a>자격
 
-| 구독 수준                                                 |     채널                                            | 혜택                                                          | 갱신 가능?    |
+| 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise(Standard)   | VL, Azure, 일반 정품, 선택한 NFR<sup>1</sup> | 6개월       |  예       |
 | Visual Studio Professional(표준) | VL, Azure, 일반 정품                                       | 사용할 수 없음                                                           |해당 없음         |
@@ -92,4 +92,4 @@ ms.locfileid: "68787734"
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
-[Azure 크레딧](vs-azure.md)을 활성화하여 고유한 개발 샌드박스를 활용하세요. 
+[Azure DevTest 개별 크레딧](vs-azure.md)을 활성화하여 고유한 개발 샌드박스를 활용하세요. 

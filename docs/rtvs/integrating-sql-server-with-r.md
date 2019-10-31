@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: f15c785658b5c4cd5a6b158b05eb67ff9a4e4c2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 10b5dfee629b5b6e67ab544ca0bdd905ed2a120a
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814441"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888450"
 ---
 # <a name="work-with-sql-server-and-r"></a>SQL Server 및 R 사용
 
@@ -22,11 +22,11 @@ Visual Studio의 뛰어난 SQL Server 지원은 SQL 쿼리를 생성 및 실행�
 > [!Note]
 > SQL 및 R을 함께 사용하려면 SQL Server Data Tools가 설치되어 있어야 합니다.
 > - Visual Studio 2017: Visual Studio 설치 관리자를 실행하고 데이터 스토리지와 처리 워크로드를 선택합니다(SQL Server Data Tools 포함).
-> - Visual Studio 2015: [Download SQL Server Data Tools](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt)(SQL Server Data Tools 다운로드)의 지침을 따릅니다.
+> - Visual Studio 2015: [Download SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt)(SQL Server Data Tools 다운로드)의 지침을 따릅니다.
 
 |   |   |
 |---|---|
-| ![비디오에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기") | SQL Server 및 R의 개요에 대한 [동영상(youtube.com)을 시청](https://www.youtube.com/watch?v=n4AYr0QIwdQ)하세요(3분 03초). |
+| ![동영상에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기") | SQL Server 및 R의 개요에 대한 [동영상(youtube.com)을 시청](https://www.youtube.com/watch?v=n4AYr0QIwdQ)하세요(3분 03초). |
 
 ## <a name="create-and-run-sql-queries"></a>SQL 쿼리 만들기 및 실행
 
@@ -49,7 +49,7 @@ Transact-SQL 편집기에서는 쿼리에 대한 실행 계획 보기, 쿼리 �
 
 ## <a name="work-with-sql-server-stored-procedures"></a>SQL Server 저장 프로시저 작업
 
-[SQL Server R Services](https://docs.microsoft.com/sql/advanced-analytics/r/sql-server-r-services)(SQL Server 2016 이상)를 사용하여 T-SQL 저장 프로시저의 R 코드를 포함하고 실행할 수 있습니다. SQL Server 컴퓨터에서 R 코드를 실행하고, SQL 쿼리에서 반환된 데이터에 대해 작업을 수행하고, 추가 SQL에 의해 처리되거나 클라이언트로 반환될 수 있는 SQL 결과 집합을 생성할 수 있습니다.
+[SQL Server R Services](/sql/advanced-analytics/r/sql-server-r-services)(SQL Server 2016 이상)를 사용하여 T-SQL 저장 프로시저의 R 코드를 포함하고 실행할 수 있습니다. SQL Server 컴퓨터에서 R 코드를 실행하고, SQL 쿼리에서 반환된 데이터에 대해 작업을 수행하고, 추가 SQL에 의해 처리되거나 클라이언트로 반환될 수 있는 SQL 결과 집합을 생성할 수 있습니다.
 
 RTVS는 다음 섹션의 설명대로 SQL 및 R 코드를 단일 SQL 문으로 결합하는 불편하고 오류가 발생할 수 있는 프로세스를 간소화합니다.
 
@@ -59,7 +59,7 @@ RTVS는 다음 섹션의 설명대로 SQL 및 R 코드를 단일 SQL 문으로 �
 
 |   |   |
 |---|---|
-| ![비디오에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기") | R 및 SQL 저장 프로시저의 개요에 대한 [동영상(youtube.com)을 시청](https://www.youtube.com/watch?v=dFKIT2OitWQ)하세요(6분 09초). |
+| ![동영상에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기") | R 및 SQL 저장 프로시저의 개요에 대한 [동영상(youtube.com)을 시청](https://www.youtube.com/watch?v=dFKIT2OitWQ)하세요(6분 09초). |
 
 ### <a name="add-a-database-connection"></a>데이터베이스 연결 추가
 
@@ -97,7 +97,7 @@ OutputDataSet <- InputDataSet
 간단히 말하면 코드는 `InputDataSet`라는 R 데이터 프레임을 수신하고 입력을 출력으로 복사하는 템플릿 코드와 함께 `OutputDataSet`에 결과를 반환합니다.
 
 > [!Note]
-> 이러한 데이터 프레임의 이름은 `sp_execute_external_script` 시스템 저장 프로시저 호출에서 `@input_data_1_name` 및 `@output_data_1_name` 매개 변수에 의해 제어됩니다. 이 호출 규칙의 디자인에 대한 자세한 내용과 일부 사용 예제는 [sp_execute_external_script(Transact-SQL)](https://docs.microsoft.com/sql/relational-databases/system-stored-procedures/sp-execute-external-script-transact-sql)를 참조하세요.
+> 이러한 데이터 프레임의 이름은 `sp_execute_external_script` 시스템 저장 프로시저 호출에서 `@input_data_1_name` 및 `@output_data_1_name` 매개 변수에 의해 제어됩니다. 이 호출 규칙의 디자인에 대한 자세한 내용과 일부 사용 예제는 [sp_execute_external_script(Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-execute-external-script-transact-sql)를 참조하세요.
 
 주석의 다른 생성된 코드는 [RODBC 패키지](https://cran.r-project.org/web/packages/RODBC/index.html)를 사용하여 SQL 문을 SQL Server로 전송하고, 문을 실행하고, 해당 결과 집합을 R 데이터 프레임으로 검색하는 작은 테스트 스크립트를 제공합니다. 이 테스트 코드의 주석 처리를 제거하면 SQL Server에서 얻는 결과 집합을 대상으로 R 코드를 대화형으로 작성할 수 있습니다.
 

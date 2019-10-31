@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 24bbfd276b30444742b329f30c346ac1857c2cc9
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.openlocfilehash: 5f86c3b146bb74a38910b151a80c3c2d439ef023
+ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70154963"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73061161"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows의 Visual Studio에서 Python 작업
 
@@ -26,7 +26,7 @@ Visual Studio는 Windows에서 강력한 Python IDE입니다. Visual Studio는 *
 
 Python은 현재 Mac용 Visual Studio에서 지원되지 않지만 Visual Studio Code를 통해 Mac 및 Linux에서 사용할 수 있습니다([질문 및 답변](#questions-and-answers) 참조).
 
-시작하려면 다음을 수행합니다.
+시작하기:
 
 - [설치 지침](installing-python-support-in-visual-studio.md)에 따라 Python 워크로드를 설치합니다.
 - 이 문서의 섹션을 통해 Visual Studio의 Python 기능을 숙지합니다.
@@ -40,7 +40,7 @@ Python은 현재 Mac용 Visual Studio에서 지원되지 않지만 Visual Studio
 
 ::: moniker range=">=vs-2019"
 > [!Note]
-> Visual Studio는 Python 버전 2.7과 버전 3.5 이상을 지원합니다. Visual Studio를 사용하여 다른 버전의 Python에서 작성된 코드도 편집할 수 있지만, 해당 버전은 공식적으로 지원되지 않으며 IntelliSense, 디버깅 등의 기능이 작동하지 않을 수 있습니다.
+> Visual Studio는 Python 버전 2.7과 버전 3.5부터 3.7까지를 지원합니다. Visual Studio를 사용하여 다른 버전의 Python에서 작성된 코드도 편집할 수 있지만, 해당 버전은 공식적으로 지원되지 않으며 IntelliSense, 디버깅 등의 기능이 작동하지 않을 수 있습니다. Python 버전 3.8 지원은 아직 개발 중이며, 지원에 대한 구체적인 정보는 관련 [GitHub 추적 이슈](https://github.com/microsoft/PTVS/issues/5822)에서 확인할 수 있습니다.
 ::: moniker-end
 
 ## <a name="support-for-multiple-interpreters"></a>다중 인터프리터 지원.

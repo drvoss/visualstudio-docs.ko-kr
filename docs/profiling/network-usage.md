@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58f69d5188a82937c44552e8fd192ea2dba28d3e
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 9d1b81e35cdf08aef82c6e9c070d7127cb2debd5
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128147"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911905"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>UWP 앱에서 네트워크 사용 분석
 Visual Studio **네트워크** 진단 도구는 [Windows.Web.Http API](/uwp/api/windows.web.http)를 사용하여 수행된 네트워크 작업에 대한 데이터를 수집합니다. 데이터를 분석하면 액세스 및 인증 문제, 잘못된 캐시 사용 및 저하된 디스플레이와 다운로드 성능을 해결하는 데 도움이 될 수 있습니다.
@@ -74,7 +74,7 @@ Visual Studio **네트워크** 진단 도구는 [Windows.Web.Http API](/uwp/api/
 ## <a name="see-also"></a>참고 항목
 
 - [디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
-- [Visual Studio 블로그: Visual Studio의 네트워크 검사기 소개](http://go.microsoft.com/fwlink/?LinkId=535022)
+- [Visual Studio 블로그: Visual Studio의 네트워크 검사기 소개](https://devblogs.microsoft.com/visualstudio/)
 - [Channel 9 비디오: VS 진단 도구 – 새 네트워크 프로파일러](https://channel9.msdn.com/Series/ConnectOn-Demand/206)
 - [Visual Studio의 프로파일링](../profiling/index.yml)
 - [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)

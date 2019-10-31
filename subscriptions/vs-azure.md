@@ -5,16 +5,16 @@ ms.author: lank
 manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
-description: Visual Studio 구독에 포함된 Azure 혜택을 활성화하는 방법을 알아봅니다.
-ms.openlocfilehash: 923573b1079ddbfaa77837e57df1baa618db6e21
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+description: Visual Studio 구독에 포함된 Azure DevTest 개별 크레딧 혜택을 활성화하는 방법을 알아봅니다.
+ms.openlocfilehash: 7bd6313a0e6d52f9e461383fb04c9039f3b974ac
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681663"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816456"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 Microsoft Azure 사용
-Visual Studio 구독자는 추가 비용 없이 Microsoft Azure를 사용할 수 있습니다.  [월간 Azure 크레딧](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)을 사용하면 Azure는 개발/테스트를 위한 개인용 샌드박스가 됩니다.  가상 머신, 클라우드 서비스 및 기타 Azure 리소스를 프로비전할 수 있습니다.  크레딧 금액은 구독 수준에 따라 다릅니다.
+Visual Studio 구독자는 추가 비용 없이 Microsoft Azure를 사용할 수 있습니다.  [월간 Azure DevTest 개별 크레딧](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)을 사용하면 Azure는 개발/테스트를 위한 개인용 샌드박스가 됩니다.  가상 머신, 클라우드 서비스 및 기타 Azure 리소스를 프로비전할 수 있습니다.  크레딧 금액은 구독 수준에 따라 다릅니다.
 
 ## <a name="activation-steps"></a>활성화 단계
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 로그인합니다.
@@ -39,7 +39,7 @@ Visual Studio 구독자는 추가 비용 없이 Microsoft Azure를 사용할 수
 
 
 ## <a name="eligibility"></a>자격
-|                 구독 수준/프로그램                 |           혜택           |                         갱신 가능?                          |
+|                 구독 수준/프로그램                 |           이점           |                         갱신 가능?                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
 |              Visual Studio Enterprise Standard               |     150 USD 월간 크레딧     |                             예                             ||
 |               Visual Studio Enterprise 월간               |        사용할 수 없음        |                                                             |
@@ -78,9 +78,9 @@ A:  이 이메일은 Visual Studio 구독에 연결된 Azure 혜택을 사용하
 
 **권장 조치:**
 
-Visual Studio Azure 크레딧 및 할인을 계속 사용하려면 다음 단계 중 하나를 수행합니다.
+Visual Studio Azure DevTest 개별 크레딧 및 할인을 계속 사용하려면 다음 단계 중 하나를 수행합니다.
 
-팀 또는 조직에 속한 누군가가 사용자를 대신하여 구독을 구매하는 경우 사용자 조직의 Visual Studio 관리자에게 연락하여 필요한 Azure 월별 크레딧 금액을 이용할 수 있는 자격을 부여하는 Visual Studio 구독을 요청합니다.   Azure 구독 전송에 대해 걱정할 필요가 없도록 이전에 구독이 할당된 동일한 사용자 ID에 새 구독을 할당하도록 관리자에게 요청합니다.
+팀 또는 조직에 속한 누군가가 사용자를 대신하여 구독을 구매하는 경우 사용자 조직의 Visual Studio 관리자에게 연락하여 필요한 Azure DevTest 개별 크레딧 금액을 이용할 수 있는 자격을 부여하는 Visual Studio 구독을 요청합니다.   Azure 구독 전송에 대해 걱정할 필요가 없도록 이전에 구독이 할당된 동일한 사용자 ID에 새 구독을 할당하도록 관리자에게 요청합니다.
 
 직접 구독을 구입할 수 있는 경우 다음 중 하나를 수행하세요.
 1. Visual Studio Marketplace를 통해 연간 Visual Studio [Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual) 또는 [Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual) 클라우드 구독을 구매합니다.

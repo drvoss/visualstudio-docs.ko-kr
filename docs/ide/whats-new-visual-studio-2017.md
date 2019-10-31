@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 4fd3bde36b81dde254f3447d46bd05ffc41c6cde
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 354d984ef8df7bd7c493a04eb0e27b439d82b0d1
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925912"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919155"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017의 새로운 기능
 
@@ -222,7 +222,7 @@ Visual Studio에서 C++ 핵심 지침을 배포하고, C++11 및 C++ 기능에 �
 
 **디버그** 도구 모음의 **뒤로 가기**와 **앞으로 가기** 단추를 사용하여 이동하고 스냅샷을 볼 수 있습니다. 이 단추를 사용하여 **진단 도구** 창의 **이벤트** 탭에 나타나는 이벤트를 탐색할 수 있습니다. 이벤트의 앞이나 뒤로 이동하면 선택한 이벤트에 대한 기록 디버깅이 자동으로 활성화됩니다.
 
-![Visual Studio의 새 예외 도우미 대화 상자](../debugger/media/intellitrace-step-back-icons-description.png  "뒤로 가기 및 앞으로 가기 단추")
+![Visual Studio의 새 예외 도우미 대화 상자](../debugger/media/intellitrace-step-back-icons-description.png  "뒤로 이동 및 앞으로 이동 단추")
 
 자세한 내용은 [IntelliTrace 뒤로 이동을 사용하여 스냅샷 보기](../debugger/view-historical-application-state.md) 페이지를 참조하세요.
 
@@ -243,7 +243,7 @@ Visual Studio에서 C++ 핵심 지침을 배포하고, C++11 및 C++ 기능에 �
 
 미리 컴파일된 C# 클래스 라이브러리를 사용하여 Azure Functions를 개발하는 데 도움이 되는 도구를 “Azure 개발” 워크로드의 일부로 포함했습니다. 이제 로컬 개발 컴퓨터에서 빌드, 실행 및 디버그한 다음 Visual Studio에서 Azure에 직접 게시할 수 있습니다.
 
-자세한 내용은 [Visual Studio용 Azure Functions 도구](https://docs.microsoft.com/azure/azure-functions/functions-develop-vs) 페이지를 참조하세요.
+자세한 내용은 [Visual Studio용 Azure Functions 도구](/azure/azure-functions/functions-develop-vs) 페이지를 참조하세요.
 
 ### <a name="debug-live-aspnet-apps-using-snappoints-and-logpoints-in-live-azure-applications"></a>라이브 Azure 애플리케이션에서 snappoint와 logpoint를 사용하여 라이브 ASP.NET 앱 디버그
 
@@ -269,7 +269,7 @@ UWP(Universal Windows Platform)는 Windows 10용 앱 플랫폼입니다. API 집
 **15.5의 새로운 기능**: Visual Studio 2017 버전 15.5는 Windows 10 Fall Creators Update SDK(10.0.16299.0)를 가장 잘 지원합니다. Windows 10 Fall Creators Update는 UWP 개발자를 위해 많은 사항이 개선되었습니다. 다음은 큰 변화 중 일부입니다. 
 
 * **.NET Standard 2.0에 대한 지원**<br/>간소화된 앱 배포 외에, Windows 10 Fall Creators Update는 .NET Standard 2.0 지원을 제공하는 첫 번째 Windows 10 릴리스입니다. 사실상, [.NET Standard](https://devblogs.microsoft.com/dotnet/introducing-net-standard/)는 모든 .NET 플랫폼에서 구현할 수 있는 기본 클래스 라이브러리의 참조 구현입니다. .NET Standard의 목표는 .NET 개발자가 작업하는 모든 .NET 플랫폼 전반에서 코드를 최대한 쉽게 공유할 수 있도록 하는 것입니다.
-* **UWP와 Win32의 장점**<br/>Windows 10 플랫폼은 [데스크톱 브리지](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root)를 통해 개발자가 중점을 두는 것이 UWP, WPF, Windows Forms 또는 Xamarin 중 무엇이든 모든 .NET 개발자가 Windows 10을 더 잘 활용할 수 있도록 향상되었습니다. Visual Studio 2017 버전 15.5의 새로운 앱 패키징 프로젝트 형식을 사용하면 UWP 프로젝트에서 하듯이 WPF 또는 Windows Forms 프로젝트용 Windows 앱 패키지를 만들 수 있습니다. 앱을 패키지하면 Windows 10 앱 배포의 모든 이점과 Microsoft Store(소비자 앱) 또는 비즈니스 및 교육용 Microsoft Store를 통해 배포할 수 있는 옵션이 제공됩니다. 패키지된 앱은 데스크톱의 전체 UWP API 표면과 Win32 API 모두에 액세스할 수 있기 때문에 UWP API 및 Windows 10 기능을 사용하여 WPF 및 Windows Forms 애플리케이션을 점진적으로 현대화할 수 있습니다. 또한 모든 Win32 기능을 갖춘 데스크톱에서 실행되는 UWP 애플리케이션에 Win32 구성 요소를 포함할 수 있습니다.
+* **UWP와 Win32의 장점**<br/>Windows 10 플랫폼은 [데스크톱 브리지](/windows/uwp/porting/desktop-to-uwp-root)를 통해 개발자가 중점을 두는 것이 UWP, WPF, Windows Forms 또는 Xamarin 중 무엇이든 모든 .NET 개발자가 Windows 10을 더 잘 활용할 수 있도록 향상되었습니다. Visual Studio 2017 버전 15.5의 새로운 앱 패키징 프로젝트 형식을 사용하면 UWP 프로젝트에서 하듯이 WPF 또는 Windows Forms 프로젝트용 Windows 앱 패키지를 만들 수 있습니다. 앱을 패키지하면 Windows 10 앱 배포의 모든 이점과 Microsoft Store(소비자 앱) 또는 비즈니스 및 교육용 Microsoft Store를 통해 배포할 수 있는 옵션이 제공됩니다. 패키지된 앱은 데스크톱의 전체 UWP API 표면과 Win32 API 모두에 액세스할 수 있기 때문에 UWP API 및 Windows 10 기능을 사용하여 WPF 및 Windows Forms 애플리케이션을 점진적으로 현대화할 수 있습니다. 또한 모든 Win32 기능을 갖춘 데스크톱에서 실행되는 UWP 애플리케이션에 Win32 구성 요소를 포함할 수 있습니다.
 
 UWP에 대한 자세한 내용은 [UWP(유니버설 Windows 플랫폼)용 앱 개발](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md) 페이지를 참조하세요.
 
@@ -323,12 +323,12 @@ DevOps 기능을 SQL Server 데이터베이스 개발로 확장하기 위해 Vis
 
 Visual Studio 2017 Enterprise에는 다음이 포함되어 있습니다.
 
-* [Redgate ReadyRoll Core](http://www.red-gate.com/products/sql-development/readyroll/entrypage/microsoft-and-readyroll?utm_source=microsoft&utm_medium=link&utm_campaign=readyroll&utm_term=docs-newinvs)는 마이그레이션 스크립트를 개발하고, 소스 제어를 사용하여 데이터베이스 변경 내용을 관리하고, SQL Server 데이터베이스 변경 내용을 애플리케이션 변경 내용과 함께 자동으로 안전하게 배포하는 데 도움이 됩니다.
-* [Redgate SQL Prompt 코어](http://www.red-gate.com/products/sql-development/sql-prompt/entrypage/microsoft-and-sql-prompt?utm_source=microsoft&utm_medium=link&utm_campaign=sqlprompt&utm_term=docs-newinvs)는 지능형 코드 완성 기능을 통해 SQL을 더 빠르고 정확하게 작성하는 데 도움이 됩니다. SQL 프롬프트는 데이터베이스 및 시스템 개체, 키워드를 자동으로 완성하고 입력 시 열을 제안합니다. 모든 열 이름이나 별칭을 기억할 필요가 없으므로 코드가 더 깔끔해지고 오류가 줄어듭니다.
+* [Redgate ReadyRoll Core](https://www.red-gate.com/products/sql-development/sql-change-automation/?utm_source=microsoft&utm_medium=link&utm_campaign=readyroll&utm_term=docs-newinvs)는 마이그레이션 스크립트를 개발하고, 소스 제어를 사용하여 데이터베이스 변경 내용을 관리하고, SQL Server 데이터베이스 변경 내용을 애플리케이션 변경 내용과 함께 자동으로 안전하게 배포하는 데 도움이 됩니다.
+* [Redgate SQL Prompt 코어](https://www.red-gate.com/products/sql-development/sql-prompt/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlprompt&utm_term=docs-newinvs)는 지능형 코드 완성 기능을 통해 SQL을 더 빠르고 정확하게 작성하는 데 도움이 됩니다. SQL 프롬프트는 데이터베이스 및 시스템 개체, 키워드를 자동으로 완성하고 입력 시 열을 제안합니다. 모든 열 이름이나 별칭을 기억할 필요가 없으므로 코드가 더 깔끔해지고 오류가 줄어듭니다.
 
 Visual Studio 2017의 모든 버전에는 다음이 포함되어 있습니다.
 
-* [Redgate SQL 검색](http://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=docs-newinvs)은 여러 데이터베이스에서 SQL 조각 및 개체를 빠르게 찾을 수 있도록 하여 생산성을 높입니다.
+* [Redgate SQL 검색](https://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=docs-newinvs)은 여러 데이터베이스에서 SQL 조각 및 개체를 빠르게 찾을 수 있도록 하여 생산성을 높입니다.
 
 자세히 알아보려면 [Visual Studio 2017의 Redgate 데이터 도구](https://devblogs.microsoft.com/visualstudio/redgate-data-tools-in-visual-studio-2017/)(영문) 블로그 게시물을 참조하세요.
 

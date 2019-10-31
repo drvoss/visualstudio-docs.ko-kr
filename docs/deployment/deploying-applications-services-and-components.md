@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02e8beae03dc2828d81b80813325300fe31b3cea
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 006ecdffd7b109c32f7063fee5f454e43c6c4597
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128152"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806919"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>먼저 Visual Studio의 배포 살펴보기
 
@@ -50,7 +50,7 @@ ms.locfileid: "71128152"
 
 - **ASP.NET**, **ASP.NET Core**, **Python** 및 **Node.js.** : 다음 방법 중 하나를 사용하여 Azure App Service 또는 Azure App Service Linux(컨테이너 사용)에 게시합니다.
 
-  - 연속(또는 자동) 배포 앱의 경우 Azure DevOps를 [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops)과 함께 사용합니다.
+  - 연속(또는 자동) 배포 앱의 경우 Azure DevOps를 [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops)과 함께 사용합니다.
 
   - 일회성(또는 수동) 배포 앱의 경우 Visual Studio의 **게시** 도구를 사용합니다.
 
@@ -81,7 +81,7 @@ ms.locfileid: "71128152"
 
     Visual Studio에서 게시 프로필을 가져오는 방법에 대한 자세한 내용은 [게시 설정 가져오기 및 IIS에 배포](../deployment/tutorial-import-publish-settings-iis.md)를 참조하세요.
 
-    ASP.NET 애플리케이션 및 서비스는 여러 가지 다른 방법으로 배포할 수 있습니다. 자세한 내용은 [ASP.NET 웹 애플리케이션 및 서비스 배포](http://www.asp.net/aspnet/overview/deployment)를 참조하세요.
+    ASP.NET 애플리케이션 및 서비스는 여러 가지 다른 방법으로 배포할 수 있습니다. 자세한 내용은 [ASP.NET 웹 애플리케이션 및 서비스 배포](/aspnet/mvc/overview/deployment/)를 참조하세요.
 
 - **Windows 데스크톱** ClickOnce 배포를 사용하여 웹 서버 또는 네트워크 파일 공유에 Windows 데스크톱 애플리케이션을 게시할 수 있습니다. 이렇게 하면 사용자가 클릭 한 번으로 애플리케이션을 설치할 수 있습니다. 자세한 내용은 [ClickOnce를 사용하여 데스크톱 앱 배포](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)(C# 및 Visual Basic)를 참조하세요. C++/CLI의 경우 [ClickOnce를 사용하여 네이티브 앱 배포](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)를 참조하고, C/C++의 경우 [설치 프로젝트를 사용하여 네이티브 앱 배포](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)를 참조하세요.
 
@@ -118,7 +118,7 @@ Visual Studio에서 Microsoft Store에 배포하기 위한 앱 패키지를 만�
    Visual studio 2019의 경우 [WiX Toolset Visual Studio 2019 확장](https://marketplace.visualstudio.com/items?itemName=WixToolset.WixToolsetVisualStudio2019Extension)을 사용합니다.
    ::: moniker-end
 
-- Flexera Software의 [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements)를 사용하여 MSI 또는 EXE 설치 관리자 패키지를 만들 수 있습니다. InstallShield는 Visual Studio 2017 및 이후 버전에서 사용할 수 있습니다(Community Edition은 지원되지 않음). InstallShield Limited Edition은 더 이상 Visual Studio에 포함되지 않으며, Visual Studio 2017 및 이후 버전에서 지원되지 않습니다. 추후 가용성은 [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio)에 확인하세요.
+- Flexera Software의 [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements)를 사용하여 MSI 또는 EXE 설치 관리자 패키지를 만들 수 있습니다. InstallShield는 Visual Studio 2017 및 이후 버전에서 사용할 수 있습니다(Community Edition은 지원되지 않음). InstallShield Limited Edition은 더 이상 Visual Studio에 포함되지 않으며, Visual Studio 2017 및 이후 버전에서 지원되지 않습니다. 추후 가용성은 [Flexera Software](https://info.flexerasoftware.com/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio)에 확인하세요.
 
 - 설치 프로젝트(vdproj)를 사용하여 MSI 또는 EXE 설치 관리자 패키지를 만들 수 있습니다. 이 옵션을 사용하려면 [Visual Studio 설치 관리자 프로젝트 확장](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview)을 설치합니다.
 
@@ -144,7 +144,7 @@ Azure Pipelines를 사용하여 앱의 연속 배포를 사용하도록 설정�
 
 ## <a name="deployment-for-other-app-types"></a>다른 앱 형식의 배포
 
-| 앱 유형 | 배포 시나리오 | 링크 |
+| 앱 형식 | 배포 시나리오 | 링크 |
 | --- | --- | --- |
 | **Office 앱** | Visual Studio에서 Office용 추가 기능을 게시할 수 있습니다. | [Office 추가 기능 게시 및 배포](https://dev.office.com/docs/add-ins/publish/publish) |
 | **WCF 또는 OData 서비스** | 웹 서버에 배포한 WCF RIA 서비스를 다른 애플리케이션에서 사용할 수 있습니다. | [WCF Data Services 개발 및 배포](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |

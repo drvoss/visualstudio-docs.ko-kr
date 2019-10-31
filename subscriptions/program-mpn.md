@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: 제공되는 구독, 적용되는 규칙 및 MPN에서 제공되는 구독의 수에 대한 세부 정보입니다.
-ms.openlocfilehash: 063c0348af226f0cbe06256426352edac7124b11
-ms.sourcegitcommit: b761a4a457646d04adfda510c8837734ee4d8f17
+ms.openlocfilehash: e32ae547327c4e51b7d49f6dffe9130afa843c49
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70929752"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816572"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>MPN(Microsoft 파트너 네트워크)의 파트너에게 제공된 Visual Studio 구독 관리
 
@@ -57,7 +57,7 @@ Action Pack을 통해 파트너는 **3개의 Visual Studio Professional(MPN) 구
 
 또한 Visual Studio Professional(MPN) 구독자는 SQL Server Developer Edition을 포함해 개발을 위한 소프트웨어를 다운로드해 사용할 수 있습니다.
 
-Visual Studio Professional(MPN) 구독에는 Azure DevOps Services 혜택, 월간 Azure 크레딧, 기술 지원, 교육 또는 상업적으로 제공된 Visual Studio 구독으로 사용할 수 있는 다른 구독자 혜택이 포함되지 않습니다.
+Visual Studio Professional(MPN) 구독에는 Azure DevOps Services 혜택, Azure DevTest 개별 크레딧, 기술 지원, 교육 또는 상업적으로 제공된 Visual Studio 구독으로 사용할 수 있는 다른 구독자 혜택이 포함되지 않습니다.
 
 ## <a name="internal-use-only-restriction"></a>내부 사용 전용 제한
 
@@ -69,7 +69,7 @@ MPN 규칙은 프로그램 혜택으로 제공된 모든 소프트웨어는 내�
 
 MPN을 통해 제공된 Visual Studio 구독을 사용하여 라이선스 사용자는 Visual Studio 구독을 활성화하는 데 사용된 동일한 ID/로그인을 사용하여 Visual Studio에 로그인해야 합니다. 제품의 잠금을 해제하기 위한 제품 키는 제공되지 않습니다. 로그인만이 Visual Studio를 실행하기 위한 유일한 옵션입니다. Visual Studio 구독자는 Visual Studio가 작업을 중지하기 전 최대 30일 동안 오프라인으로 작업할 수 있습니다. 온라인 작업 동안 Visual Studio는 자동으로 사용자의 라이선스 상태를 주기적으로 갱신하여 구독이 계속 유효하도록 보장합니다.
 
-## <a name="resources"></a>자료
+## <a name="resources"></a>리소스
 
 - [MPN 프로그램 관리자 가이드](https://assets.microsoft.com/en-us/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) - Visual Studio 구독을 MPN 직원에게 할당하는 방법에 대한 지침을 포함 합니다.
 - [Visual Studio 구독을 MPN 직원에게 할당](manage-mpn-subscriptions.md)

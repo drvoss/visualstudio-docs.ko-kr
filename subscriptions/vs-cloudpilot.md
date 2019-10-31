@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/30/2019
 ms.topic: conceptual
 description: 선택한 Visual Studio 구독에서 제공하는 CloudPilot 혜택 알아보기
-ms.openlocfilehash: 6fec81e4f4345c77bdff7dd08bf2615d6fe45ad4
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 5f8592b15f61dff454b6fe29d4d207dd609ab461
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681653"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816497"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독의 CloudPilot 혜택
 간단한 몇 단계로 앱을 Microsoft Azure로 이동할 수 있습니다. 성공적으로 마이그레이션하기 위해 필요한 코드 변경 내용을 몇 분 내에 코드 줄까지 식별합니다. 컨테이너, VM, App Services, SQL Azure 및/또는 SQL MI. 그런 다음, ASR, DMA 및 DMS를 활용하는 마법사로 앱을 Azure로 마이그레이션합니다.
@@ -47,7 +47,7 @@ UnifyCloud의 CloudPilot은 개발자가 신속하고 간편하게 애플리케�
     > [!div class="mx-imgBorder"]
     > ![CloudPilot 제품 페이지](_img/vs-cloudpilot/vs-cloudpilot-navigate.png)
 
-0. 이것으로 끝입니다.  CloudPilot 포털이 보이고, CloudPilot 구독을 사용하여 애플리케이션을 Microsoft Azure로 이동할 준비가 완료됩니다.
+0. 정말 간단하죠.  CloudPilot 포털이 보이고, CloudPilot 구독을 사용하여 애플리케이션을 Microsoft Azure로 이동할 준비가 완료됩니다.
 
 0. 계정이 만들어지는 즉시, UnifyCloud VSS 고객 지원팀으로부터 계정이 만들어졌다는 확인 이메일을 받게 됩니다.
 
@@ -56,13 +56,13 @@ UnifyCloud의 CloudPilot은 개발자가 신속하고 간편하게 애플리케�
 
 ## <a name="eligibility"></a>자격
 
-| 구독 수준                                                 |     채널                                            | 혜택                                                          | 갱신 가능?    |
+| 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise(Standard)   | VL, Azure, 일반 정품, | 라이선스 2개, 90일, 무제한 검사       |  아니요.  새 구독자만 사용할 수 있음          |
 | Visual Studio Professional(표준) | VL, Azure, 일반 정품                                       | 라이선스 1개, 30일, 검사 일회                                                            |  아니요.  새 구독자만 사용할 수 있음           |
-| Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 사용할 수 없음                                             |  해당 없음           |
-| MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 사용할 수 없음                                              |  해당 없음          |
-| Visual Studio Enterprise(Standard)  | NFR<sup>1</sup> |사용할 수 없음  | 해당 없음 |
+| Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 사용할 수 없음                                             |  해당 사항 없음           |
+| MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 사용할 수 없음                                              |  해당 사항 없음          |
+| Visual Studio Enterprise(Standard)  | NFR<sup>1</sup> |사용할 수 없음  | 해당 사항 없음 |
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure | 사용할 수 없음 | N/A |
 
 <sup>1</sup> 포함:  ‘NFR(전매금지), FTE, MVP(Most Valuable Professional), RD(Regional Director), MPN(Microsoft 파트너 네트워크), VSIP(Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark, Imagine’
@@ -83,4 +83,4 @@ UnifyCloud의 CloudPilot은 개발자가 신속하고 간편하게 애플리케�
 
 ## <a name="next-steps"></a>다음 단계
 
-구독과 함께 제공되는 Azure 혜택을 아직 활성화하지 않은 경우 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)를 방문하여 도구 범주의 Azure 타일을 클릭하고, Azure 구독을 설정하고, Azure 크레딧을 사용합니다.
+구독과 함께 제공되는 Azure 혜택을 아직 활성화하지 않은 경우 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)를 방문하여 도구 범주의 Azure 타일을 클릭하고, Azure 구독을 설정하고, Azure DevTest 개별 크레딧을 사용합니다.

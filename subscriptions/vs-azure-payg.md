@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/30/2019
 ms.topic: conceptual
 description: Azure 종량제(Pay-As-You-Go) 계정을 설정하는 방법을 알아봅니다.
-ms.openlocfilehash: 6a2d4eab9ecc0adb6a89d87ceccb45b1472142b9
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 851ebd4a3218cada7af5ac139a7297094abde0c6
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681150"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816399"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Azure 개발/테스트 종량제 구독
 클라우드에서 팀과 공동으로 작업해 보세요.  여러 개발 및 테스트 종량제(PAYG, Pay-As-You-Go) 구독을 만들면 다른 구독자와 협업을 가능하게 하는 한편 팀과 환경 간의 격리를 제공합니다.  Azure에서 구독 소프트웨어의 개발/테스트 및 클라우드 사용권에 대한 시간당 요금이 독점적으로 할인됩니다.
@@ -21,7 +21,7 @@ ms.locfileid: "68681150"
    > [!div class="mx-imgBorder"]
    > ![Azure 종량제 타일](_img/vs-azure-payg/vs-azure-payg-tile.png)
 
-2. Azure 계정이 구독 혜택의 일부로 이미 활성화되어 있는 경우(예: Enterprise 구독이 있고 $150의 월간 Azure 크레딧이 활성화되어 있는 경우) 5단계로 건너뜁니다.
+2. Azure 계정이 구독 혜택의 일부로 이미 활성화되어 있는 경우(예: Enterprise 구독이 있고 $150의 월간 Azure DevTest 개별 크레딧이 활성화되어 있는 경우) 5단계로 건너뜁니다.
 
 3. Microsoft Azure 등록 페이지에서 종량제 개발/테스트 제안을 설정하거나 Visual Studio Enterprise 제품으로 업그레이드할 수 있습니다.  업그레이드하지 않으려면 **현재 제안 계속 사용(종량제 개발/테스트)** 을 클릭합니다.
 
@@ -44,7 +44,7 @@ A: Azure 구독을 변경하려면
 4. 이제 구독을 관리 또는 취소하거나, 이름을 바꾸거나, 디렉터리를 변경하거나, 청구 소유권을 이전할 수 있습니다.
 
 ## <a name="next-steps"></a>다음 단계
-많은 구독에 Azure DevOps, Azure 크레딧과 같은 추가 Azure 관련 혜택이 포함됩니다.  이러한 혜택에 대한 자세한 내용은 다음을 참조하세요.
+많은 구독에 Azure DevOps, Azure DevTest 개별 크레딧과 같은 추가 Azure 관련 혜택이 포함됩니다.  이러한 혜택에 대한 자세한 내용은 다음을 참조하세요.
 - [Azure DevOps](vs-azure-devops.md)
-- [Azure 크레딧](vs-azure.md)
+- [Azure DevTest 개별 크레딧](vs-azure.md)
 

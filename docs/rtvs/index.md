@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 385d58834aa96a3ad9e2002020dd1ce4fda3c87f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1132a7a0363e2d508d6eff1026192aad3407fca4
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000015"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189247"
 ---
 # <a name="work-with-r-in-visual-studio"></a>Visual Studio에서 R 작업
 
@@ -41,13 +41,13 @@ Visual Studio에서 R을 사용해 보려면
 | [대화형 창](interactive-repl-for-r-in-visual-studio.md) | R에 대한 전체 REPL 환경에 대화형 창에서 소스 파일의 코드를 쉽게 실행할 수 있는 기능을 제공합니다. | N/A |
 | [코드 시각화](visualizing-data-with-r-in-visual-studio.md) | 도표는 R 환경의 통합 부분이며, RTVS는 각각이 자체적인 기록과 창 간에 도표를 이동하는 기능을 갖춘 여러 개의 독립적인 도표 창을 지원합니다. 도표는 비트맵 및 PDF 파일에 저장되거나 비트맵 또는 메타파일로 클립보드에 복사될 수 있습니다.  | N/A |
 | [변수 탐색기](variable-explorer.md) | 정렬 가능한 표를 보고 CSV로 내보내는 기능을 사용해 전역 또는 패키지별 범위에서 변수를 검사합니다. | N/A |
-| [완전한 기능의 디버깅](debugging-r-in-visual-studio.md) | 대화형 창과의 통합을 포함합니다. | [Visual Studio의 디버깅](/visualstudio/debugger/debugger-feature-tour) |
+| [완전한 기능의 디버깅](debugging-r-in-visual-studio.md) | 대화형 창과의 통합을 포함합니다. | [Visual Studio의 디버깅](../debugger/debugger-feature-tour.md) |
 
 [질문과 대답](faq.md)을 참조하세요.
 
 |   |   |
 |---|---|
-| ![비디오에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기") | Visual Studio용 R 도구(12m 36s)의 개요에 대한 [비디오 보기(youtube.com)](https://www.youtube.com/watch?v=dll3IS1bfWQ). 또한 [더 많은 R 도구 비디오](https://www.youtube.com/results?search_query=R+Tools+for+visual+studio)를 참조합니다. |
+| ![동영상에 대한 비디오 카메라 아이콘](../install/media/video-icon.png "비디오 보기") | Visual Studio용 R 도구(12m 36s)의 개요에 대한 [비디오 보기(youtube.com)](https://www.youtube.com/watch?v=dll3IS1bfWQ). 또한 [더 많은 R 도구 비디오](https://www.youtube.com/results?search_query=R+Tools+for+visual+studio)를 참조합니다. |
 
 ## <a name="send-us-your-feedback"></a>피드백을 보내주세요.
 

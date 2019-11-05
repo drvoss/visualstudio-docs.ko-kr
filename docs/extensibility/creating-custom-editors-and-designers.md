@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08d9ee33d49985fed8e8c0180fa652aed39b25d9
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 7a6cb0d70566eaabb2ba37cb209041e03684c958
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73186812"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568876"
 ---
 # <a name="create-custom-editors-and-designers"></a>사용자 지정 편집기 및 디자이너 만들기
 
@@ -59,7 +59,7 @@ Visual Studio 핵심 편집기에 대 한 자세한 내용은 [편집기 및 언
 
 - 편집기에서 ActiveX 컨트롤을 호스트 해야 하나요?
 
-   편집기에서 ActiveX 컨트롤을 호스트 하는 경우 [내부 활성화](../extensibility/in-place-activation.md)에 설명 된 대로 내부 활성화 편집기를 구현 합니다. ActiveX 컨트롤을 호스팅하지 않는 경우 간단한 포함 편집기를 사용 하거나 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 기본 편집기를 사용자 지정 합니다.
+   편집기에서 ActiveX 컨트롤을 호스트 하는 경우 [내부 활성화](/visualstudio/misc/in-place-activation?view=vs-2015)에 설명 된 대로 내부 활성화 편집기를 구현 합니다. ActiveX 컨트롤을 호스팅하지 않는 경우 간단한 포함 편집기를 사용 하거나 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 기본 편집기를 사용자 지정 합니다.
 
 - 편집기에서 여러 뷰를 지원 하나요? 편집기의 뷰가 기본 편집기와 동시에 표시 되도록 하려면 여러 뷰를 지원 해야 합니다.
 

@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac04f7ef5d7ad445bec470b3d019418a3bec1f7b
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 4ceea00a3fa77a9c1106f24f28ac1d5890437b41
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188889"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568958"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Visual Studio의 색 및 스타일 지정
 
@@ -340,7 +340,7 @@ Windows에서는 텍스트, 배경 및 이미지의 색 대비를 높이는 여�
 
 VSPackage는 글꼴 및 색 속성 페이지에서 사용자 지정 범주와 표시 항목을 통해 글꼴 및 색을 제어할 수 있습니다. 이 메커니즘을 사용 하는 경우 Vspackage는 [Ivsfontandcolordefaultsprovider](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider) 인터페이스 및 관련 된 인터페이스를 구현 해야 합니다.
 
-원칙적으로이 메커니즘을 사용 하 여 기존의 모든 표시 항목과 해당 항목을 포함 하는 범주를 수정할 수 있습니다. 그러나 텍스트 편집기 범주 또는 표시 항목을 수정 하는 데 사용 하면 안 됩니다. 텍스트 편집기 범주에 대 한 자세한 내용은 [글꼴 및 색 개요](../font-and-color-overview.md)를 참조 하세요.
+원칙적으로이 메커니즘을 사용 하 여 기존의 모든 표시 항목과 해당 항목을 포함 하는 범주를 수정할 수 있습니다. 그러나 텍스트 편집기 범주 또는 표시 항목을 수정 하는 데 사용 하면 안 됩니다. 텍스트 편집기 범주에 대 한 자세한 내용은 [글꼴 및 색 개요](/visualstudio/extensibility/font-and-color-overview?view=vs-2015)를 참조 하세요.
 
 사용자 지정 범주 또는 표시 항목을 구현 하려면 VSPackage가 다음을 수행 해야 합니다.
 

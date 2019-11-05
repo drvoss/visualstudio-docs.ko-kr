@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5ea1c1bfa34399f4a2428aec2f51f97c9884216
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 5fa926b21171c3e09b5a0f4d74e9415da090bf2f
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189067"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73569069"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>연습: 사용자 지정 편집기에 기능 추가
 사용자 지정 편집기를 만든 후 추가 기능을 추가할 수 있습니다.
@@ -38,7 +38,7 @@ ms.locfileid: "73189067"
 
 4. 편집기에서 내부 활성화 또는 간단한 포함을 사용 하 여 문서 뷰 개체 창을 관리할 지 여부를 결정 합니다.
 
-     간단한 포함 편집기 창에서는 표준 문서 뷰를 호스팅하고, 내부 활성화 편집기 창에서는 ActiveX 컨트롤이 나 기타 활성 개체를 문서 뷰로 호스팅합니다. 자세한 내용은 [간소화 된 포함](../extensibility/simplified-embedding.md) 및 [내부 활성화](../extensibility/in-place-activation.md)를 참조 하세요.
+     간단한 포함 편집기 창에서는 표준 문서 뷰를 호스팅하고, 내부 활성화 편집기 창에서는 ActiveX 컨트롤이 나 기타 활성 개체를 문서 뷰로 호스팅합니다. 자세한 내용은 [간소화 된 포함](../extensibility/simplified-embedding.md) 및 [내부 활성화](/visualstudio/misc/in-place-activation?view=vs-2015)를 참조 하세요.
 
 5. 명령을 처리 하는 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 인터페이스를 구현 합니다.
 

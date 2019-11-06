@@ -20,15 +20,15 @@ helpviewer_keywords:
 - builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
 caps.latest.revision: 37
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d447d82815046aba6383c2467c2b44c5b7d0d0f0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 15f2817b6fd0aee312ff41af218d01ad80bc785e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685711"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72620563"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Visual Studio에서 프로젝트 및 솔루션 빌드 및 정리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,9 +75,9 @@ ms.locfileid: "65685711"
 
     이 확인란을 선택하면 다음 단계 중 하나를 수행할 때 현재 시작 프로젝트와 해당 종속성만 빌드됩니다.
 
-   - 메뉴 모음에서 선택 **디버깅할** > **디버깅 시작** (F5).
+   - 메뉴 모음에서 **디버그**  > **디버깅 시작** (F5)을 선택 합니다.
 
-   - 메뉴 모음에서 선택 **빌드합니다** > **솔루션 빌드** (CTRL + SHIFT + B).
+   - 메뉴 모음에서 **빌드**  > **솔루션 빌드** 를 선택 합니다 (CTRL + SHIFT + B).
 
      이 확인란의 선택을 취소하면 이전 명령 중 하나를 실행할 때 모든 프로젝트, 해당 종속성 및 솔루션 파일이 빌드됩니다. 이 확인란은 기본적으로 선택되어 있지 않습니다.
 
@@ -87,11 +87,11 @@ ms.locfileid: "65685711"
 
    - *ProjectName***만 빌드**
 
-   - *ProjectName***만 다시 빌드**
+   - *ProjectName* **만 다시 빌드**
 
-   - *ProjectName***만 정리**
+   - *ProjectName* **만 정리**
 
-   - *ProjectName***만 링크**
+   - *ProjectName* **만 링크**
 
      이러한 명령은 프로젝트 종속성 또는 솔루션 파일을 빌드, 다시 빌드, 정리 또는 링크하지 않고 선택한 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] 프로젝트에만 적용됩니다. 사용 중인 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 버전에 따라 **프로젝트만** 하위 메뉴에 추가 명령이 포함될 수 있습니다.
 
@@ -109,5 +109,5 @@ ms.locfileid: "65685711"
 
     - Ctrl+Break 키를 선택합니다.
 
-## <a name="see-also"></a>참고자료
- [방법: 보기, 저장 및 빌드 로그 파일을 구성](../ide/how-to-view-save-and-configure-build-log-files.md) [빌드 로그 가져오기](../msbuild/obtaining-build-logs-with-msbuild.md) [컴파일 및 빌드](../ide/compiling-and-building-in-visual-studio.md) [빌드 구성 이해](../ide/understanding-build-configurations.md) [디버그 및 릴리스 프로젝트 구성](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C /C++ 빌드 참조](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [Devenv 명령줄 스위치](../ide/reference/devenv-command-line-switches.md) [솔루션 및 프로젝트](../ide/solutions-and-projects-in-visual-studio.md)
+## <a name="see-also"></a>참고 항목
+ [방법: 빌드 로그 파일 보기, 저장 및 구성 ](../ide/how-to-view-save-and-configure-build-log-files.md) [빌드 로그 획등](../msbuild/obtaining-build-logs-with-msbuild.md) [컴파일 및 빌딩](../ide/compiling-and-building-in-visual-studio.md) [빌드 구성 이해](../ide/understanding-build-configurations.md) [디버그 및 릴리스 프로젝트 구성](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C/C++ 빌드 참조](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [Devenv 명령줄 스위치](../ide/reference/devenv-command-line-switches.md) [솔루션 및 프로젝트](../ide/solutions-and-projects-in-visual-studio.md)

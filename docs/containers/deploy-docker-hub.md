@@ -8,12 +8,12 @@ ms.devlang: dotnet
 ms.topic: article
 ms.date: 07/23/2019
 ms.author: ghogen
-ms.openlocfilehash: 267e0c1ed1ac3911aad2161f186bf4a482f069b6
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: b033825bbe8facbeae3dcdee6a5b563461921522
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "71126024"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188753"
 ---
 # <a name="deploy-to-docker-hub"></a>Docker Hub에 배포
 
@@ -45,7 +45,7 @@ Docker Hub 리포지토리가 없는 경우 [Docker Hub](https://hub.docker.com/
 
 ## <a name="next-steps"></a>다음 단계
 
-[Azure Container Registry에 배포](vs-azure-tools-docker-hosting-web-apps-in-docker.md) 단계에 따라 [Azure Container Registry](/azure/container-registry/)에 게시합니다.
+[Azure Container Registry에 배포](hosting-web-apps-in-docker.md) 단계에 따라 [Azure Container Registry](/azure/container-registry/)에 게시합니다.
 
 [Azure Pipelines](/azure/devops/pipelines/?view=azure-devops)를 사용하여 CI/CD(연속 통합 및 지속적인 업데이트)를 설정합니다.
 

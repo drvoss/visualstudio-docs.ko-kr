@@ -28,12 +28,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 242daf82d405af4b3a1e529633fb82651aa6bdc9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 693e0d206455c2c430f8d723f131868fdf21eefc
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666630"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189560"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>옵션, 텍스트 편집기, XAML, 기타
 
@@ -52,7 +52,7 @@ ms.locfileid: "72666630"
 
 ## <a name="errors-and-warnings"></a>오류 및 경고
 
-이 설정을 사용하여 오류 및 경고가 자동으로 생성되는 경우를 제어합니다. 자세한 내용은 [XAML 오류 및 경고](../../designers/xaml-errors-warnings.md)를 참조하세요.
+이 설정을 사용하여 오류 및 경고가 자동으로 생성되는 경우를 제어합니다. 자세한 내용은 [XAML 오류 및 경고](../../xaml-tools/xaml-errors-warnings.md)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

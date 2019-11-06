@@ -9,15 +9,15 @@ helpviewer_keywords:
 - text templates, custom directive hosts
 ms.assetid: affa3296-854d-47d6-9685-285f6d9ba5dc
 caps.latest.revision: 35
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1c8f306315ad236843b6fcd5551d9aed13c26a92
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 71f18fbbf9f2d5c587c2cd0961c6625467f4f298
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871792"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652460"
 ---
 # <a name="processing-text-templates-by-using-a-custom-host"></a>사용자 지정 호스트를 사용하여 텍스트 템플릿 처리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,10 +50,10 @@ string output = engine.ProcessTemplate(templateString, host);
 
  호스트는 오류를 기록하고 어셈블리 및 포함 파일에 대한 참조를 확인할 있어야 하며 템플릿이 실행될 수 있는 응용 프로그램 도메인을 제공하고 각 지시문에 적절한 프로세서를 호출할 수 있어야 합니다.
 
- <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>은 **VisualStudio\*에 정의 되어 있습니다. 0 .dll**및 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) 는 **\*VisualStudio에 정의 되어 있습니다. 0 .dll**.
+ <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>는 **Microsoft.VisualStudio.TextTemplating.\*.0.dll**에 정의되고 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))는 **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0.dll**에 정의되어 있습니다.
 
 ## <a name="in-this-section"></a>섹션 내용
- [연습: 사용자 지정 텍스트 템플릿 호스트](../modeling/walkthrough-creating-a-custom-text-template-host.md) 를 만들면 외부 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 텍스트 템플릿 기능을 사용할 수 있도록 하는 사용자 지정 텍스트 템플릿 호스트를 만드는 방법을 보여 줍니다.
+ [연습: 사용자 지정 텍스트 템플릿 호스트 ](../modeling/walkthrough-creating-a-custom-text-template-host.md) 만들기 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 외부에서 텍스트 템플릿 기능을 사용할 수 있도록 하는 사용자 지정 텍스트 템플릿 호스트를 만드는 방법을 보여 줍니다.
 
 ## <a name="reference"></a>참조
  [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))

@@ -13,12 +13,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fa62baf020751a175b24f47a93b3e7280fb76fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a755de4df0cd7402debbc964d2f3f9c54802eb85
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647657"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188973"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>클래스 다이어그램 및 클래스 세부 내용 창의 키보드 및 마우스 바로 가기
 
@@ -105,4 +105,4 @@ ms.locfileid: "72647657"
 - [형식 멤버 만들기 및 구성](creating-and-configuring-type-members.md)
 - [단독으로 키보드를 사용하는 방법](../reference/how-to-use-the-keyboard-exclusively.md)
 - [Visual Studio의 기본 바로 가기 키](../default-keyboard-shortcuts-in-visual-studio.md)
-- [Blend의 바로 가기 키](../../designers/keyboard-shortcuts-in-blend.md)
+- [Blend의 바로 가기 키](../../xaml-tools/keyboard-shortcuts-in-blend.md)

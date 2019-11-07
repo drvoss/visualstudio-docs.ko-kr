@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 854037d096ceac01969bcb0ec2e074f4cd24a2f3
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: c0b7f1b0668af8218017c5cc96712384ed5f275c
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72983858"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661883"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>연습: 프로젝트 작업 목록 정의 배포
 
@@ -172,7 +172,7 @@ Visual Studio는 IIS 응용 프로그램 풀을 재활용 하 고, 기존 버전
 
 - [방법: 이벤트 수신기 만들기](../sharepoint/how-to-create-an-event-receiver.md)
 
-- [SharePoint Server 2010 용 Windows PowerShell](/powershell/module/sharepoint-server/&view=sharepoint-ps)
+- [SharePoint Server 2010 용 Windows PowerShell](/powershell/module/sharepoint-server)
 
 ## <a name="see-also"></a>참조
 [SharePoint 솔루션 패키징 및 배포](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

@@ -24,68 +24,67 @@ ms.locfileid: "62564581"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>자동 및 지역 창에서 변수 검사
 
-**Autos**와 **Locals** windows는 당신이 디버거를 사용하는 동안 다양하게 가치있게 사용 될 수 있습니다.Windows는 디버깅 세션 도중에만 사용할 수 있습니다.**Autos** windows는 중단점이 사용된 변수가 표시 됩니다.**Locals** windows는 일반적으로 현재 function 또는 method 인 지역 범위에 정의된 변수만 표시됩니다.만일 당신이 처음으로 코드를 디버그 한다면 [초보자를 위한 디버깅](../debugger/debugging-absolute-beginners.md) 과 [기술 및 도구 디버깅](../debugger/write-better-code-with-visual-studio.md) 문서를 진행 하기 전에 읽기를 추천드립니다.
+디버깅하는 동안 **Autos**와 **Locals** 창에 변수 값이 표시됩니다. 창은 디버깅 세션 중에만 사용할 수 있습니다. **Autos** 창에는 현재 중단점 주위에 사용된 변수가 표시됩니다. **Locals** 창에는 일반적으로 현재 함수 또는 메서드인 지역 범위에 정의된 변수가 표시됩니다. 코드 디버깅을 처음 시도하는 경우 이 문서를 진행하기 전에 [초보자를 위한 디버깅](../debugger/debugging-absolute-beginners.md)과 [디버깅 기술 및 도구](../debugger/write-better-code-with-visual-studio.md)를 읽어보세요.
 
-**Autos** windows는 C #, Visual Basic, C ++ 및 Python 코드에서는 사용할 수 있지만 JavaScript 또는 F #에서는 사용할 수 없습니다.
+**Autos** 창은 C#, Visual Basic, C++ 및 Python 코드에서는 사용할 수 있지만 JavaScript 또는 F#에서는 사용할 수 없습니다.
 
 디버깅하는 동안 **Autos**을 열고 **디버그> Windows> Autos**을 선택하거나 **Ctrl + Alt + V> A**를 누르십시오.
 
-디버깅하는 동안 **Locals** 창을 열려면 **디버그> Windows> Locals**을 선택하거나 **Alt + 4**를 누르십시오.
+디버깅하는 동안 **Locals** 창을 열려면 **디버그** > **Windows** > **Locals**를 선택하거나 **Alt**+**4**를 누릅니다.
 
 > [!NOTE]
-> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac 용 Visual Studio에 대한 내용은 [Mac 용 Visual Studio에서 데이터 시각화](/visualstudio/mac/data-visualizations)참조 바랍니다.
+> 이 항목은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio에 대한 내용은 [Mac용 Visual Studio에서 데이터 시각화](/visualstudio/mac/data-visualizations)를 참조하세요.
 
 ## <a name="use-the-autos-and-locals-windows"></a>자동 및 지역 창 사용
 
-배열과 객체는 **Autos** 및 **Locals** 창에 트리 컨트롤로 표시됩니다.변수 이름 왼쪽에있는 화살표를 선택하면 필드와 속성 표시가 확장되어 보입니다.**Locals** windows에 있는 <xref:System.IO.FileStream?displayProperty=fullName> 객체의 예는 다음과 같습니다:
-![Locals-FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")
+배열과 객체는 **Autos** 및 **Locals** 창에 트리 컨트롤로 표시됩니다. 변수 이름 왼쪽에 있는 화살표를 선택하면 필드와 속성 표시가 확장되어 보입니다. **Locals** 창에 있는 <xref:System.IO.FileStream?displayProperty=fullName> 객체의 예는 다음과 같습니다.
 
 **Locals** 또는 **Autos** windows의 빨간색 값은 마지막 평가 이후 값이 변경되었음을 나타냅니다. 이전 디버깅 세션에서 변경되었거나 창에서 값을 변경했기 때문일 수 있습니다.
 
-디버거 창의 기본 숫자 형식은 10 진수입니다. 16 진수로 변경하려면 **Locals** 또는 **Autos** 창에서 마우스 오른쪽 단추를 클릭하고 **16진수 표시**를 선택하십시오. 이 변경은 모든 디버거 창에 영향을줍니다.
+**Locals** 또는 **Autos** 창의 빨간색 값은 마지막 평가 이후 값이 변경되었음을 나타냅니다. 이전 디버깅 세션에서 변경되었거나 창에서 값을 변경했기 때문일 수 있습니다.
 
-## <a name="edit-variable-values-in-the-autos-or-locals-window"></a>Autos 또는 Locals 창에서 변수 값 편집
+디버거 창의 기본 숫자 형식은 10진수입니다. 16진수로 변경하려면 **Locals** 또는 **Autos** 창에서 마우스 오른쪽 단추를 클릭하고 **16진수 표시**를 선택하세요. 이 변경은 모든 디버거 창에 영향을 줍니다.
 
-**Autos** 또는 **Locals** 창에서 대부분의 변수 값을 편집하려면 값을 두 번 클릭하고 새 값을 입력하십시오.
+**Autos** 또는 **Locals** 창에서 대부분의 변수 값을 편집하려면 값을 두 번 클릭하고 새 값을 입력하세요.
 
-값에 대한 식을 입력할 수 있습니다.(예: `a + b`). 디버거는 대부분의 유효한 언어식을 허용합니다.
+값에 대한 식을 입력할 수 있습니다(예: `a + b`). 디버거는 대부분의 유효한 언어 식을 허용합니다.
 
-네이티브 C++ 코드에서 변수 이름의 컨텍스트를 한정해야 합니다. 자세한 내용은 [컨텍스트 연산자(C++)](../debugger/context-operator-cpp.md)를 참조하세요.
+네이티브 C++ 코드에서 변수 이름의 컨텍스트를 한정해야 할 수 있습니다. 자세한 내용은 [컨텍스트 연산자(C++)](../debugger/context-operator-cpp.md)를 참조하세요.
 
 >[!CAUTION]
->값과 표현식을 변경하기 전에 결과를 이해해야합니다. 가능한 문제는 다음과 같습니다:
+>값과 표현식을 변경하기 전에 결과를 이해해야 합니다. 가능한 문제는 다음과 같습니다.
 >
->- 일부 경우에는 식을 계산하면 변수 값이 바뀌거나 프로그램 상태에 영향이 미칠 수 있습니다. 예를 들어, `var1 = ++var2`를 계산하면 `var1` 와 `var2`값 전부가 변경됩니다. 이러한 경우 [side effect](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\))라고 합니다. side effect 를 정확히 이해하지 않으면 예상치 못한 결과가 도출 될 수 있습니다.
+>- 일부 경우에는 식을 계산하면 변수 값이 바뀌거나 프로그램 상태에 영향을 미칠 수 있습니다. 예를 들어, `var1 = ++var2`를 계산하면 `var1` 와 `var2`값 전부가 변경됩니다. 이러한 경우 해당 식은 [부작용](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\))이 있다고 합니다. 부작용을 정확히 이해하지 않으면 예상치 못한 결과가 도출될 수 있습니다.
 >
->- 부동 소수점 값을 편집하면 분수 구성 요소의 10 진수를 2 진수로 변환하기 때문에 약간의 부정확성이 발생할 수 있습니다. 겉보기에 무해한 편집이라도 부동 소수점 변수의 일부 비트가 변경 될 수 있습니다.
+>- 부동 소수점 값을 편집하면 소수 부분이 10진수에서 2 진수로 변환되면서 약간의 부정확성이 발생할 수 있습니다. 겉보기에 무해한 편집이라도 부동 소수점 변수의 일부 비트가 변경될 수 있습니다.
 
 ::: moniker range=">= vs-2019" 
 ## <a name="search-in-the-autos-or-locals-window"></a>Autos 또는 Locals 창에서 검색
 
-각 창 위의 검색 막대를 사용하여 **Autos** 또는 **Locals** 창의 이름, 값 및 유형 열에서 키워드를 검색 할 수 있습니다. ENTER를 누르거나 화살표 중 하나를 선택하여 검색을 실행하십시오. 진행중인 검색을 취소하려면 검색 창에서 "x"아이콘을 선택하십시오.
+각 창 위의 검색 창을 사용하여 **Autos** 또는 **Locals** 창의 이름, 값 및 유형 열에서 키워드를 검색할 수 있습니다. ENTER를 누르거나 화살표 중 하나를 선택하여 검색을 실행하세요. 진행 중인 검색을 취소하려면 검색 창에서 "x" 아이콘을 선택하세요.
 
-찾은 일치 항목을 탐색하려면 왼쪽 및 오른쪽 화살표 (각각 Shift + F3 및 F3)를 사용하십시오.
+찾은 일치 항목을 탐색하려면 왼쪽 및 오른쪽 화살표(각각 Shift + F3 및 F3)를 사용하세요.
 
 ![지역 창에서 검색](../debugger/media/ee-search-locals.png "지역 창에서 검색")
 
-검색을 더 또는 덜 철저하게 하려면 **Autos** 또는 **Locals** 창의 맨 위에있는 더 **심층적 인 검색** 드롭 다운을 사용하여 중첩 된 오브젝트를 검색 할 레벨 수를 선택하십시오.
+검색을 더 또는 덜 철저하게 하려면 **Autos** 또는 **Locals** 창의 맨 위에 있는 더 **심층적인 검색** 드롭 다운을 사용하여 중첩된 개체를 검색할 수준을 선택하세요.
 ::: moniker-end
 
-## <a name="change-the-context-for-the-autos-or-locals-window"></a>**Autos** 또는 **Locals** windows에 대한 컨텍스트를 변경 합니다.
+## <a name="change-the-context-for-the-autos-or-locals-window"></a>**Autos** 또는 **Locals** 창에 대한 컨텍스트 변경
 
-사용할 수는 **디버그 위치** 도구 모음을 원하는 함수, 스레드 또는 프로세스에 대한 컨텍스트를 변경 하는 선택 합니다 **Autos** 및 **Locals** windows.
+**디버그 위치** 도구 모음을 사용하여 원하는 함수, 스레드 또는 프로세스를 선택하여 **Autos** 및 **Locals** 창의 컨텍스트를 변경할 수 있습니다.
 
-**디버그 위치** 도구 모음을 사용하려면 도구 모음 영역의 빈 부분을 클릭하고 드롭 다운에서 **디버그 위치**를 선택하거나 **보기> 도구 모음> 디버그 위치**를 선택하십시오.
+**디버그 위치** 도구 모음을 사용하려면 도구 모음 영역의 빈 부분을 클릭하고 드롭 다운에서 **디버그 위치**를 선택하거나 **보기> 도구 모음> 디버그 위치**를 선택합니다.
 
-중단 점을 설정하고 디버깅을 시작하십시오. 중단 점에 도달하면 실행이 일시 정지되고 **디버그 위치** 도구 모음에 위치가 표시됩니다.
+중단점을 설정하고 디버깅을 시작하세요. 중단점에 도달하면 실행이 일시 정지되고 **디버그 위치** 도구 모음에 위치가 표시됩니다.
 
 ![디버그 위치 도구 모음](../debugger/media/debuglocationtoolbar.png "디버그 위치 도구 모음")
 
 ## <a name="bkmk_whatvariables"></a> 자동 창에서 변수 (C#, C++, Visual Basic, Python)
 
-다른 코드 언어는 **Autos** windows에서 다른 변수를 표시합니다.
+다른 코드 언어는 **Autos** 창에서 다른 변수를 표시합니다.
 
-- C# 및 Visual Basic에서 **자동** 창에는 현재 또는 이전 줄에 사용된 모든 변수가 표시됩니다. 예를 들어, C# 또는 Visual Basic 코드를 다음 4 개의 변수를 선언 하십시오.
+- C# 및 Visual Basic에서 **Autos** 창에는 현재 또는 이전 줄에 사용된 모든 변수가 표시됩니다. 예를 들어, C# 또는 Visual Basic 코드에서 다음 4개의 변수를 선언하세요.
 
    ```csharp
        public static void Main()
@@ -98,13 +97,13 @@ ms.locfileid: "62564581"
        }
    ```
 
-   `c = 3;` 줄에 중단 점을 설정하고 디버거를 시작하십시오. 실행이 일시 중지되면 **Autos** 창이 표시됩니다.
+   `c = 3;` 줄에 중단점을 설정하고 디버거를 시작하세요. 실행이 일시 중지되면 **Autos** 창은 다음을 표시합니다.
 
    ![Autos-CSharp](../debugger/media/autos-csharp.png "Autos-CSharp")
 
    `c = 3` 행이 아직 실행되지 않았으므로 `c` 값은 0입니다.
 
-- C ++에서 **Autos** 창은 실행이 일시 중지 된 현재 줄 이전에 적어도 세 줄에 사용 된 변수를 표시합니다. 예를 들어, C ++ 코드에서 6 개의 변수를 선언하십시오.
+- C ++에서 **Autos** 창은 실행이 일시 중지된 현재 줄 이전에 적어도 세 줄에 사용된 변수를 표시합니다. 예를 들어, C++ 코드에서 6개의 변수를 선언하세요.
 
    ```C++
        void main() {
@@ -118,14 +117,14 @@ ms.locfileid: "62564581"
        }
    ```
 
-    `e = 5;` 줄에 중단점을 설정하십시오. 디버거를 실행 합니다. 실행이 중지 되는 경우는 **Autos** 창에 표시 됩니다.
+    `e = 5;` 줄에 중단점을 설정하고 디버거를 실행합니다. 실행이 중지되는 경우 **Autos** 창에 다음이 표시됩니다.
 
     ![Autos-C++](../debugger/media/autos-cplus.png "Autos-C++")
 
-    변수 `e = 5`가 실행 되지 않았으므로 `e`는 초기화 되지 않았습니다.
+    `e = 5` 줄이 실행되지 않았으므로 변수 `e`는 초기화되지 않았습니다.
 
 ## <a name="bkmk_returnValue"></a> View return values of method calls
-  .NET 및 C ++ 코드에서는 메소드 호출을 넘어서거나 벗어날 때 **Autos** 창에서 리턴 값을 검사 할 수 있습니다. 로컬 변수에 저장되지 않은 경우 메소드 호출 리턴 값을 보는 것이 유용할 수 있습니다. 메소드는 매개 변수 또는 다른 메소드의 리턴 값으로 사용될 수 있습니다.
+  .NET 및 C++ 코드에서는 메서드 호출을 넘어서거나 벗어날 때 **Autos** 창에서 반환 값을 검사할 수 있습니다. 로컬 변수에 저장되지 않은 경우 메서드 호출 반환 값을 보는 것이 유용할 수 있습니다. 메서드는 매개 변수 또는 다른 메서드의 반환 값으로 사용될 수 있습니다.
 
  예를 들어, 다음 C# 코드는 두 함수의 반환 값을 추가 합니다.
 
@@ -155,7 +154,7 @@ private static int subtractVars(int i, int j)
 
 1. `int x = sumVars(a, b) + subtractVars(c, d);` 줄에 중단점을 설정합니다.
 
-1. 디버깅을 시작 하 고 실행이 중단점에서 일시 중지 하는 경우 **단계씩**선택하거나 **F10**을 누릅니다. 다음 반환 값이 표시 되어야 합니다 **자동** 창:
+1. 디버깅을 시작하고 실행이 중단점에서 일시 중지하는 경우 **단계씩**을 선택하거나 **F10**을 누릅니다. **Autos** 창에 다음과 같은 반환 값이 표시됩니다.
 
   ![값을 반환 하는 자동 C# ](../debugger/media/autosreturnvaluecsharp2.png "자동 값 반환C#")
 

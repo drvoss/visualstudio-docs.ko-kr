@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 825e985820ac7a4d72bf321133491e312adb0a0e
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 762fce80ad1e97f700af0768cdb68251a3ee8017
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981944"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661868"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>SharePoint 프로젝트 및 프로젝트 항목 템플릿
   다음 섹션에서는 사용 가능한 SharePoint 프로젝트 및 프로젝트 항목 템플릿과 이러한 템플릿 사용 방법에 대해 설명 합니다.
@@ -132,7 +132,7 @@ ms.locfileid: "72981944"
  *상태 시스템 워크플로* 는 비즈니스 논리 상태, 전환 및 작업의 집합입니다. 상태 시스템 워크플로의 단계는 순서 대로 수행 되지 않습니다. 대신 작업 및 상태에 의해 트리거됩니다. 순차 워크플로와 마찬가지로 상태 시스템 워크플로는 목록 및 문서와 같은 SharePoint 항목에 연결 됩니다. 다시 한 번, 사이트 수준 (전역) 워크플로 또는 목록 수준 (로컬) 워크플로를 만들 수 있습니다. 워크플로를 자동으로 시작할지 수동으로 시작할지를 선택할 수도 있습니다. 이 프로젝트 항목은 팜 솔루션 에서만 사용할 수 있습니다. 팜 솔루션에만이 프로젝트 항목을 추가할 수 있습니다. 자세한 내용은 [sharepoint workflow Solutions 만들기](../sharepoint/creating-sharepoint-workflow-solutions.md), [sharepoint Server 2010의 워크플로](/previous-versions/office/developer/sharepoint-2010/ms549489(v=office.14))및 [새로운 기능을 참조 하세요. ](/previous-versions/office/developer/sharepoint-2010/ee537015(v=office.14))워크플로 기능이 향상 되었습니다.
 
 ### <a name="user-control-farm-solution-only"></a>사용자 정의 컨트롤 (팜 솔루션에만 해당)
- *사용자 정의 컨트롤* 은 다른 ASP.NET 컨트롤 및 SharePoint 컨트롤을 추가할 수 있는 재사용 가능한 사용자 지정 컨트롤입니다. SharePoint에서 실행 되는 응용 프로그램 페이지 및 웹 파트에 사용자 정의 컨트롤을 추가할 수 있습니다. 이 프로젝트 항목은 팜 솔루션 에서만 사용할 수 있습니다. 팜 솔루션에만이 프로젝트 항목을 추가할 수 있습니다. 자세한 내용은 [웹 파트 또는 응용 프로그램 페이지의 재사용 가능한 컨트롤 만들기](/visualstudio/sharepoint/creating-reusable-controls-for-web-parts-or-application-pages&view=vs-2019)를 참조 하세요.
+ *사용자 정의 컨트롤* 은 다른 ASP.NET 컨트롤 및 SharePoint 컨트롤을 추가할 수 있는 재사용 가능한 사용자 지정 컨트롤입니다. SharePoint에서 실행 되는 응용 프로그램 페이지 및 웹 파트에 사용자 정의 컨트롤을 추가할 수 있습니다. 이 프로젝트 항목은 팜 솔루션 에서만 사용할 수 있습니다. 팜 솔루션에만이 프로젝트 항목을 추가할 수 있습니다. 자세한 내용은 [웹 파트 또는 응용 프로그램 페이지의 재사용 가능한 컨트롤 만들기](/visualstudio/sharepoint/creating-reusable-controls-for-web-parts-or-application-pages)를 참조 하세요.
 
 ### <a name="visual-web-part"></a>비주얼 웹 파트
  *시각적 웹 파트* 프로젝트 항목에는 *.xml* 정의 파일, **웹 파트** 항목 및 **사용자 정의 컨트롤** 항목이 포함 되어 있습니다. Visual Studio 도구 상자에서 사용자 컨트롤의 화면으로 컨트롤을 끌거나 복사 하 여 비주얼 웹 파트의 모양을 디자인할 수 있습니다. 자세한 내용은 [방법: 디자이너](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md) 및 [구성 요소를 사용 하 여 SharePoint 웹 파트를 만듭니다. ](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14))를 웹 파트 합니다.

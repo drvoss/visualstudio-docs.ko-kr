@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c76fd1d18b41073bf92ed18dadeeeb3a90c9209
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 20804e6ada568828ea1850ae249d9bf0d24855e0
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433606"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189266"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>연습: 샘플링을 사용하여 명령줄 프로파일링
 
@@ -33,7 +33,7 @@ ms.locfileid: "63433606"
 
 - [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)]에 대한 중간 정도의 이해도
 - 명령줄 도구 사용법에 대한 중간 정도의 이해도
-- [PeopleTrax 샘플](/visualstudio/profiling/performance-explorer)의 복사본
+- [PeopleTrax 샘플](performance-explorer.md)의 복사본
 - 프로파일링을 통해 제공되는 정보를 사용하려면 디버깅 기호 정보를 준비해 두는 것이 가장 좋습니다.
 
 ## <a name="command-line-profiling-using-the-sampling-method"></a>샘플링 방법을 사용하여 명령줄 프로파일링

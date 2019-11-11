@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9e53cc877a4e462a458f3bfd455ed222c3b2e17b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: c3b2fc34807be6ae03fe5aacab64439c918a0f5e
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984665"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189144"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>연습: 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기, 2 부
   사용자 지정 형식의 SharePoint 프로젝트 항목을 정의 하 고 Visual Studio에서 프로젝트 템플릿에 연결한 후에는 템플릿에 대 한 마법사를 제공할 수도 있습니다. 사용자가 템플릿을 사용 하 여 프로젝트 항목을 포함 하는 새 프로젝트를 만들 때이 마법사를 사용 하 여 사용자 로부터 정보를 수집할 수 있습니다. 수집 하는 정보를 사용 하 여 프로젝트 항목을 초기화할 수 있습니다.
@@ -83,7 +83,7 @@ ms.locfileid: "72984665"
 
 3. **새 프로젝트 추가** 대화 상자의 맨 위에서 .NET Framework 버전 목록에 **.NET Framework 4.5** 이 선택 되어 있는지 확인 합니다.
 
-4. ** C# 시각적** 노드 또는 **Visual Basic** 노드를 확장 하 고 **Windows** 노드를 선택 합니다.
+4. **C# 시각적** 노드 또는 **Visual Basic** 노드를 확장 하 고 **Windows** 노드를 선택 합니다.
 
 5. 프로젝트 템플릿 목록에서 **WPF 사용자 정의 컨트롤 라이브러리**를 선택 하 고 프로젝트 이름을 **projecttemplate 마법사**로 지정한 다음 **확인** 단추를 선택 합니다.
 
@@ -97,7 +97,7 @@ ms.locfileid: "72984665"
 
 2. **새 프로젝트 추가** 대화 상자의 맨 위에 있는 .NET Framework 버전 목록에서 **.NET Framework 3.5** 를 선택 합니다.
 
-3. ** C# 시각적** 노드 또는 **Visual Basic** 노드를 확장 한 다음 **Windows** 노드를 선택 합니다.
+3. **C# 시각적** 노드 또는 **Visual Basic** 노드를 확장 한 다음 **Windows** 노드를 선택 합니다.
 
 4. **클래스 라이브러리** 프로젝트 템플릿을 선택 하 고 프로젝트 이름을 **SharePointCommands**로 지정한 다음 **확인** 단추를 선택 합니다.
 
@@ -116,7 +116,7 @@ ms.locfileid: "72984665"
 
 3. 대상 프레임 워크가 .NET Framework 4.5 클라이언트 프로필이 아닌 .NET Framework 4.5으로 설정 되어 있는지 확인 합니다.
 
-     자세한 내용은 [방법: 한 버전의 .NET Framework를 대상으로 지정](../ide/how-to-target-a-version-of-the-dotnet-framework.md)을 참조하세요.
+     자세한 내용은 [방법: 한 버전의 .NET Framework를 대상으로 지정](../ide/visual-studio-multi-targeting-overview.md)을 참조하세요.
 
 4. **Project템플릿 마법사** 프로젝트에 대 한 바로 가기 메뉴를 열고 **추가**를 선택한 다음 **새 항목**을 선택 합니다.
 
@@ -233,7 +233,7 @@ ms.locfileid: "72984665"
      [!code-xml[SPExtensibility.ProjectItem.SiteColumn#10](../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml#10)]
 
     > [!NOTE]
-    > 이 XAML에서 만든 창은 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> 기본 클래스에서 파생 됩니다. Visual Studio에 사용자 지정 WPF 대화 상자를 추가 하는 경우이 클래스에서 대화 상자를 파생 시켜 다른 Visual Studio 대화 상자와 일관 된 스타일을 유지 하 고 그렇지 않을 수 있는 모달 대화 상자 문제를 방지 하는 것이 좋습니다. 자세한 내용은 [모달 대화 상자 만들기 및 관리](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes)를 참조 하세요.
+    > 이 XAML에서 만든 창은 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> 기본 클래스에서 파생 됩니다. Visual Studio에 사용자 지정 WPF 대화 상자를 추가 하는 경우이 클래스에서 대화 상자를 파생 시켜 다른 Visual Studio 대화 상자와 일관 된 스타일을 유지 하 고 그렇지 않을 수 있는 모달 대화 상자 문제를 방지 하는 것이 좋습니다. 자세한 내용은 [모달 대화 상자 만들기 및 관리](../extensibility/creating-and-managing-modal-dialog-boxes.md)를 참조 하세요.
 
 3. Visual Basic 프로젝트를 개발 하는 경우 `Window` 요소의 `x:Class` 특성에서 `WizardWindow` 클래스 이름에서 `ProjectTemplateWizard` 네임 스페이스를 제거 합니다. 이 요소는 XAML의 첫 번째 줄에 있습니다. 완료 되 면 첫 번째 줄은 다음 예제와 같습니다.
 
@@ -368,7 +368,7 @@ ms.locfileid: "72984665"
 
 2. **서명** 탭에서 **어셈블리 서명** 확인란을 선택 합니다.
 
-3. **강력한 이름 키 파일 선택** 목록에서 **\<새로 만들기 ...를 선택 합니다. >**.
+3. **강력한 이름 키 파일 선택** 목록에서 **\<새로 만들기 ...를 선택 합니다. >** .
 
 4. **강력한 이름 키 만들기** 대화 상자에서 새 키 파일의 이름을 입력 하 고 **암호를 사용 하 여 키 파일 보호** 확인란의 선택을 취소 한 다음 **확인** 단추를 선택 합니다.
 
@@ -403,7 +403,7 @@ ms.locfileid: "72984665"
     </WizardExtension>
     ```
 
-     `WizardExtension` 요소에 대 한 자세한 내용은 [WizardExtension 요소 &#40;Visual Studio 템플릿&#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates)을 참조 하세요.
+     `WizardExtension` 요소에 대 한 자세한 내용은 [WizardExtension 요소 &#40;Visual Studio 템플릿&#41;](../extensibility/wizardextension-element-visual-studio-templates.md)을 참조 하세요.
 
 3. 파일을 저장한 후 닫습니다.
 
@@ -484,7 +484,7 @@ ms.locfileid: "72984665"
 
 1. Visual Studio의 실험적 인스턴스의 메뉴 모음에서 **파일** > **새** > **프로젝트**를 선택 합니다.
 
-2. **Visual C# ** 노드나 **Visual Basic** 노드 (프로젝트 템플릿에서 지 원하는 언어에 따라)를 확장 하 고 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
+2. **Visual C#**  노드나 **Visual Basic** 노드 (프로젝트 템플릿에서 지 원하는 언어에 따라)를 확장 하 고 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
 
 3. 프로젝트 템플릿 목록에서 **사이트 열**을 선택 하 고 프로젝트 이름을 **SiteColumnWizardTest**로 지정한 다음 **확인** 단추를 선택 합니다.
 
@@ -536,11 +536,11 @@ ms.locfileid: "72984665"
 
 4. Visual Studio의 실험적 인스턴스와 CustomActionProjectItem 솔루션이 열려 있는 인스턴스를 모두 닫습니다.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 확장을 배포 하는 방법에 대 한 자세한 내용은 [Visual Studio 확장](/visualstudio/extensibility/shipping-visual-studio-extensions)제공을 참조 하세요.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 확장을 배포 하는 방법에 대 한 자세한 내용은 [Visual Studio 확장](../extensibility/shipping-visual-studio-extensions.md)제공을 참조 하세요.
 
 ## <a name="see-also"></a>참조
 - [연습: 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기, 1 부](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)
 - [사용자 지정 SharePoint 프로젝트 항목 형식 정의](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [SharePoint 프로젝트 항목에 대한 항목 템플릿 및 프로젝트 템플릿 만들기](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
-- [Visual Studio 템플릿 스키마 참조](/visualstudio/extensibility/visual-studio-template-schema-reference)
+- [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [방법: 프로젝트 템플릿에 마법사 사용](../extensibility/how-to-use-wizards-with-project-templates.md)

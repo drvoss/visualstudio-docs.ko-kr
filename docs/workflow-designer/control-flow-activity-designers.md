@@ -8,12 +8,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1e7d7548eef3fd6ca6a21bb8c2fe5cb23e27df1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 36c2790378f91c4217dbca2cf190ae6e649a03c3
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650612"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189771"
 ---
 # <a name="control-flow-activity-designers"></a>제어 흐름 활동 디자이너
 
@@ -47,7 +47,7 @@ ms.locfileid: "72650612"
 
 다른 형식의 활동 디자이너에 대해서는 다음 항목을 참조 하십시오.
 
- [활동 디자이너 사용](../workflow-designer/using-the-activity-designers.md)
+ [활동 디자이너 사용](control-flow-activity-designers.md)
 
  [워크플로](../workflow-designer/flowchart-activity-designers.md)
 
@@ -65,4 +65,4 @@ ms.locfileid: "72650612"
 
 ## <a name="external-resources"></a>외부 리소스
 
-- [활동 디자이너 사용](../workflow-designer/using-the-activity-designers.md)
+- [활동 디자이너 사용](control-flow-activity-designers.md)

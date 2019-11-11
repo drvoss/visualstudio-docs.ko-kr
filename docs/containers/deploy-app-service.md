@@ -8,12 +8,12 @@ ms.devlang: dotnet
 ms.topic: article
 ms.date: 03/08/2019
 ms.author: ghogen
-ms.openlocfilehash: 9431046c57851e31a3711b4785f9cce45acab45f
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 5d1f160435fd8c62a44d3e5d3192870143558de4
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "71126132"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188784"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Visual Studio를 사용하여 Azure App Service에 ASP.NET Core 컨테이너 배포
 
@@ -93,4 +93,4 @@ Azure Portal에서 **리소스 그룹**을 선택한 다음, 리소스 그룹을
 
 ## <a name="see-also"></a>참고 항목
 
-[Azure Container Registry에 배포](vs-azure-tools-docker-hosting-web-apps-in-docker.md)
+[Azure Container Registry에 배포](hosting-web-apps-in-docker.md)

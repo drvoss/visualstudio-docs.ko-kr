@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c4cc5b43880df06752cbce79d58ec71921817a4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 55f9904c95be45c7f293355340c814faafb5de2b
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649404"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568850"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>방법: 코드 메트릭 데이터 생성
 
@@ -33,9 +33,9 @@ ms.locfileid: "72649404"
 [FxCopAnalyzers NuGet 패키지](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) 는 다음과 같은 몇 가지 코드 메트릭 [분석기](roslyn-analyzers-overview.md) 규칙을 포함 합니다.
 
 - [CA1501](ca1501-avoid-excessive-inheritance.md)
-- [CA1502](ca1502-avoid-excessive-complexity.md)
+- [CA1502](ca1502.md)
 - [CA1505](ca1505-avoid-unmaintainable-code.md)
-- [CA1506](ca1506-avoid-excessive-class-coupling.md)
+- [CA1506](ca1506.md)
 
 이러한 규칙은 기본적으로 사용 하지 않도록 설정 되어 있지만 [**솔루션 탐색기**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) 또는 [규칙 집합](using-rule-sets-to-group-code-analysis-rules.md) 파일에서 사용 하도록 설정할 수 있습니다. 예를 들어 규칙 CA1502을 경고로 사용 하도록 설정 하려면. 규칙 집합 파일에 다음 항목이 포함 됩니다.
 
@@ -60,7 +60,7 @@ FxCop 분석기 패키지의 코드 메트릭 규칙에서 발생 하는 임계�
    CA1502: 10
    ```
 
-   이 예제에서 rule [CA1502](ca1502-avoid-excessive-complexity.md) 는 메서드의 순환 복잡성이 10 보다 클 때 발생 하도록 구성 됩니다.
+   이 예제에서 rule [CA1502](ca1502.md) 는 메서드의 순환 복잡성이 10 보다 클 때 발생 하도록 구성 됩니다.
 
 3. Visual Studio의 **속성** 창 또는 프로젝트 파일에서 구성 파일의 빌드 작업을 [**additionalfiles**](../ide/build-actions.md#build-action-values)로 표시 합니다. 예를 들면,
 
@@ -134,7 +134,7 @@ Build succeeded.
     0 Error(s)
 ```
 
-@No__t_0를 지정 하 여 출력 파일 이름을 재정의할 수 있습니다. @No__t_1를 지정 하 여 [레거시 스타일](#previous-versions) 코드 메트릭 데이터를 가져올 수도 있습니다. 예를 들면,
+`/p:MetricsOutputFile=<filename>`를 지정 하 여 출력 파일 이름을 재정의할 수 있습니다. `/p:LEGACY_CODE_METRICS_MODE=true`를 지정 하 여 [레거시 스타일](#previous-versions) 코드 메트릭 데이터를 가져올 수도 있습니다. 예를 들면,
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics /p:LEGACY_CODE_METRICS_MODE=true /p:MetricsOutputFile="Legacy.xml"
@@ -259,9 +259,9 @@ Visual Studio 2015에는 *wsdl.exe*라고도 하는 명령줄 코드 메트릭 �
 
 #### <a name="metric-value-differences"></a>메트릭 값 차이
 
-@No__t_0 메트릭은 새로운 명령줄 코드 메트릭 도구에서 더 정확 하 고 안정적입니다. Codegen 차이가 없으며 도구 집합 또는 런타임이 변경 될 때 변경 되지 않습니다. 새 도구는 빈 줄 및 주석을 포함 하 여 실제 코드 줄 수를 계산 합니다.
+`LinesOfCode` 메트릭은 새로운 명령줄 코드 메트릭 도구에서 더 정확 하 고 안정적입니다. Codegen 차이가 없으며 도구 집합 또는 런타임이 변경 될 때 변경 되지 않습니다. 새 도구는 빈 줄 및 주석을 포함 하 여 실제 코드 줄 수를 계산 합니다.
 
-@No__t_0 및 `MaintainabilityIndex`와 같은 다른 메트릭은 이전 버전의 *메트릭과*동일한 수식을 사용 하지만, 새 도구는 IL (중간 언어) 명령 대신 `IOperations` (논리적 원본 명령)의 수를 계산 합니다. 숫자는 Visual Studio IDE 및 이전 버전의 *메트릭에*의해 생성 된 것과 약간 다릅니다.
+`CyclomaticComplexity` 및 `MaintainabilityIndex`와 같은 다른 메트릭은 이전 버전의 *메트릭과*동일한 수식을 사용 하지만, 새 도구는 IL (중간 언어) 명령 대신 `IOperations` (논리적 원본 명령)의 수를 계산 합니다. 숫자는 Visual Studio IDE 및 이전 버전의 *메트릭에*의해 생성 된 것과 약간 다릅니다.
 
 ## <a name="see-also"></a>참조
 

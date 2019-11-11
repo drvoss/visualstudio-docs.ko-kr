@@ -69,11 +69,11 @@ ms.locfileid: "72918909"
 |[CA2302](ca2302.md)|BinaryFormatter.Deserialize를 호출하기 전에 BinaryFormatter.Binder가 설정되었는지 확인합니다.|
 |[CA2305](ca2305.md)|안전하지 않은 역직렬 변환기 LosFormatter를 사용하지 마세요.|
 |[CA2310](ca2310.md)|안전하지 않은 역직렬 변환기 NetDataContractSerializer를 사용하지 마세요.|
-|[CA2311](ca2311.md)|먼저 NetDataContractSerializer.Binder를 설정하지 않고 deserialize하지 마세요.|
-|[CA2312](ca2312.md)|deserialize하기 전에 NetDataContractSerializer.Binder를 설정해야 합니다.|
+|[CA2311](ca2311.md)|먼저 NetDataContractSerializer.Binder를 설정하지 않고 역직렬화하지 마세요.|
+|[CA2312](ca2312.md)|역직렬화하기 전에 NetDataContractSerializer.Binder를 설정해야 합니다.|
 |[CA2315](ca2315.md)|안전하지 않은 역직렬 변환기 ObjectStateFormatter를 사용하지 마세요.|
-|[CA2321](ca2321.md)|SimpleTypeResolver를 사용하여 JavaScriptSerializer를 통해 deserialize하지 마세요.|
-|[CA2322](ca2322.md)|JavaScriptSerializer가 deserialize하기 전에 SimpleTypeResolver로 초기화되지 않는지 확인하세요.|
+|[CA2321](ca2321.md)|SimpleTypeResolver를 사용하여 JavaScriptSerializer를 통해 역직렬화하지 마세요.|
+|[CA2322](ca2322.md)|JavaScriptSerializer가 역직렬화하기 전에 SimpleTypeResolver로 초기화되지 않는지 확인하세요.|
 |[CA3001](../code-quality/ca3001.md)|코드에서 SQL 주입 취약점에 대해 검토합니다.|
 |[CA3002](../code-quality/ca3002.md)|코드에서 XSS 취약점에 대해 검토합니다.|
 |[CA3003](../code-quality/ca3003.md)|코드에서 파일 경로 삽입 취약성에 대해 검토합니다.|

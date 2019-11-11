@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4e8ccaaf877c04b3d58fc6d54bb658c2cef77b6f
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: fcb30056021a865d0b0e605de462ff72ced5a383
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985311"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661892"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>SharePoint 솔루션 문제 해결
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 디버거를 사용 하 여 SharePoint 솔루션을 디버그할 때 다음과 같은 문제나 경고가 발생할 수 있습니다. 자세한 내용은 [SharePoint 2007 워크플로 솔루션 디버그](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247)를 참조 하세요.
@@ -172,9 +172,9 @@ ms.locfileid: "72985311"
 ### <a name="resolution"></a>해결
  이 문제를 해결 하려면 모델을 수동으로 삭제 한 다음 솔루션을 다시 배포 하십시오.  다음 도구 중 하나를 사용 하 여 모델을 삭제할 수 있습니다.
 
-- SharePoint 2010 중앙 관리 자세한 내용은 Microsoft TechNet 웹 사이트의 [BDC 모델 관리](/previous-versions/office/sharepoint-server-2010/ee524073(v=office.14)#deleteamodel) 를 참조 하십시오.
+- SharePoint 2010 중앙 관리 자세한 내용은 Microsoft TechNet 웹 사이트의 [BDC 모델 관리](/previous-versions/office/sharepoint-server-2010/ee524073(v=office.14)#delete-a-bdc-model) 를 참조 하십시오.
 
-- Windows PowerShell. 명령 프롬프트에서 다음 명령을 입력 하 여 모델을 삭제할 수 있습니다. **SPBusinessDataCatalogModel**. 자세한 내용은 Microsoft TechNet 웹 사이트의 [일반 cmdlet (SharePoint Server 2010)](/powershell/module/sharepoint-server/&view=sharepoint-ps) 을 참조 하십시오.
+- Windows PowerShell. 명령 프롬프트에서 다음 명령을 입력 하 여 모델을 삭제할 수 있습니다. **SPBusinessDataCatalogModel**. 자세한 내용은 Microsoft TechNet 웹 사이트의 [일반 cmdlet (SharePoint Server 2010)](/powershell/module/sharepoint-server) 을 참조 하십시오.
 
 ## <a name="an-error-appears-when-you-try-to-view-a-visual-web-part-in-sharepoint"></a>SharePoint에서 비주얼 웹 파트를 보려고 하면 오류가 표시 됩니다.
  이 문제는 사용자 정의 컨트롤의 **Path** 속성이 "controltemplates\\" 문자열로 시작 하지 않는 경우에 발생 합니다.
@@ -281,4 +281,4 @@ ms.locfileid: "72985311"
 
 - [SharePoint 패키징 및 배포 문제 해결](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
 - [SharePoint 솔루션 빌드 및 디버그](../sharepoint/building-and-debugging-sharepoint-solutions.md)
-- [Visual Studio의 디버깅](../debugger/debugging-in-visual-studio.md)
+- [Visual Studio의 디버깅](../debugger/debugger-feature-tour.md)

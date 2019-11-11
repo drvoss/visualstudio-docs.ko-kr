@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32a3ebd6e9047271a21425ac5b7eaaf715955b61
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: b842fa4ce7c75e061a58d980cefe5648094c2ef7
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911387"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188675"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Visual Studio에서 Just-in-time 디버거를 사용 하 여 디버그
 
@@ -104,7 +104,7 @@ Just-in-time 디버거를 사용 하지만 앱이 충돌 하거나 오류가 발
 
 이 예에서는 Visual Studio에서 [NullReferenceException](/dotnet/api/system.nullreferenceexception)을 C# throw 하는 콘솔 앱을 만듭니다.
 
-1. C# Visual Studio에서 *ThrowsNullException*라는 콘솔 앱 ** > (** visual > console >  **Visual C#**  **콘솔 응용 프로그램** ** > )** 을 만듭니다. Visual Studio에서 프로젝트를 만드는 방법에 대 한 자세한 내용은 [연습: 간단한 응용 프로그램 만들기](/visualstudio/get-started/csharp/tutorial-wpf)를 참조 하세요.
+1. C# Visual Studio에서 *ThrowsNullException*라는 콘솔 앱 ** > (** visual > console >  **Visual C#**  **콘솔 응용 프로그램** ** > )** 을 만듭니다. Visual Studio에서 프로젝트를 만드는 방법에 대 한 자세한 내용은 [연습: 간단한 응용 프로그램 만들기](../get-started/csharp/tutorial-wpf.md)를 참조 하세요.
 
 1. Visual Studio에서 프로젝트가 열리면 *Program.cs* 파일을 엽니다. Main () 메서드를 콘솔에 줄을 출력 한 다음 NullReferenceException을 throw 하는 다음 코드로 바꿉니다.
 

@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3b01d088618c07f1a3ff24aff2386584ebfad060
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 91f80d648450447a6ba0e80f10e5c39764445cef
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72983695"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189313"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Visual Studio IDE 시작 | Python
 
@@ -26,7 +26,7 @@ Visual Studio *통합 개발 환경*은 코드를 편집, 디버그 및 테스�
 
 이 이미지는 Python 프로젝트와 사용할 만한 몇 가지 주요 도구 창이 열려 있는 Visual Studio를 보여줍니다.
 
-- [**솔루션 탐색기**](../ide/solutions-and-projects-in-visual-studio.md)(오른쪽 위) - 코드 파일을 보고, 탐색하고, 관리할 수 있습니다. **솔루션 탐색기**에서 파일을 [솔루션 및 프로젝트](/visualstudio/get-started/tutorial-projects-solutions)로 그룹화하여 코드를 구성할 수 있습니다.
+- [**솔루션 탐색기**](../ide/solutions-and-projects-in-visual-studio.md)(오른쪽 위) - 코드 파일을 보고, 탐색하고, 관리할 수 있습니다. **솔루션 탐색기**에서 파일을 [솔루션 및 프로젝트](../get-started/tutorial-projects-solutions.md)로 그룹화하여 코드를 구성할 수 있습니다.
   - **솔루션 탐색기**와 함께 [**Python 환경**](managing-python-environments-in-visual-studio.md)이며, 여기에서 컴퓨터에 설치된 다양한 Python 인터프리터를 관리합니다.
 
   ::: moniker range=">=vs-2019"

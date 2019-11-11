@@ -654,18 +654,8 @@
               href: javascript-console-commands.md
             - name: 바로 가기 키(HTML 및 JavaScript)
               href: keyboard-shortcuts-html-and-javascript.md
-            - name: 클라이언트 쪽 스크립트
-              items:
-                - name: 클라이언트 쪽 스크립트 디버깅
-                  href: client-side-script-debugging.md
-                - name: 스크립트 디버깅의 제한 사항
-                  href: limitations-on-script-debugging.md
-                - name: 연결(스크립트)
-                  items:
-                    - name: 스크립트에 연결
-                      href: how-to-attach-to-script.md
-                    - name: '경고: 스크립트 디버깅 사용 안 함'
-                      href: warning-script-debugging-disabled.md
+            - name: '경고: 스크립트 디버깅 사용 안 함'
+              href: warning-script-debugging-disabled.md
         - name: WCF 서비스
           items:
             - name: WCF 서비스 디버그

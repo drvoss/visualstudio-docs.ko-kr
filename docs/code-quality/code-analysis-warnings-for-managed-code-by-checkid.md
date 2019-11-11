@@ -263,12 +263,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d8700d058c694afbea551e5b117a0e4a0461f2e8
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 2811c905650f215272b650bff955b7264f56d4b5
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806171"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188845"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>관리 코드 CheckId 별 코드 분석 경고
 
@@ -276,7 +276,7 @@ ms.locfileid: "72806171"
 
 | CheckId | 경고 | 설명 |
 |---------| - | - |
-| CA2007 | [CA2007: 작업을 직접 기다리지 않음](ca2007-do-not-directly-await-task.md) | 비동기 메서드는 <xref:System.Threading.Tasks.Task>를 직접 [기다립니다.](/dotnet/csharp/language-reference/keywords/await) 비동기 메서드가 <xref:System.Threading.Tasks.Task>를 직접 기다립니다 작업을 만든 스레드와 동일한 스레드에서 연속 작업이 발생 합니다. 이 동작은 성능 측면에서 비용이 많이 들 수 있으며 UI 스레드에 교착 상태가 발생할 수 있습니다. 연속에 대 한 의도를 알리기 위해 <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType>를 호출 하는 것이 좋습니다. |
+| CA2007 | [CA2007: 작업을 직접 기다리지 않음](ca2007.md) | 비동기 메서드는 <xref:System.Threading.Tasks.Task>을 직접 [기다립니다](/dotnet/csharp/language-reference/keywords/await) 합니다. 비동기 메서드가 <xref:System.Threading.Tasks.Task>를 직접 기다립니다 작업을 만든 스레드와 동일한 스레드에서 연속 작업이 발생 합니다. 이 동작은 성능 측면에서 비용이 많이 들 수 있으며 UI 스레드에 교착 상태가 발생할 수 있습니다. 연속에 대 한 의도를 알리기 위해 <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType>를 호출 하는 것이 좋습니다. |
 | CA1000 | [CA1000: 정적 멤버를 제네릭 형식으로 선언하지 마십시오.](../code-quality/ca1000.md) | 제네릭 형식의 정적 멤버를 호출할 때는 형식에 형식 인수를 지정해야 합니다. 유추를 지원하지 않는 제네릭 인스턴스 멤버를 호출할 때는 멤버에 형식 인수를 지정해야 합니다. 이 두 가지 경우에 형식 인수를 지정하기 위한 구문은 서로 다르며 혼동되기 쉽습니다. |
 | CA1001 | [CA1001: 삭제 가능한 필드가 있는 형식은 삭제 가능해야 합니다.](../code-quality/ca1001.md) | 클래스가 System.IDisposable 형식인 인스턴스 필드를 선언하고 구현하지만 IDisposable은 구현하지 않습니다. IDisposable 필드를 선언하는 클래스는 관리되지 않는 리소스를 간접적으로 소유하며 IDisposable 인터페이스를 구현해야 합니다. |
 | CA1002 | [CA1002: 제네릭 목록을 노출하지 마십시오.](../code-quality/ca1002.md) | System.Collections.Generic.List < (의 \<(T >) >)는 상속이 아니라 성능을 위해 설계 된 제네릭 컬렉션입니다. 따라서 List에는 가상 멤버가 포함되지 않습니다. 상속을 위해 디자인된 제네릭 컬렉션이 대신 노출되어야 합니다. |

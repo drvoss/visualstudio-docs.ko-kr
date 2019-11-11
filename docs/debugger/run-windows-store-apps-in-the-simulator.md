@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: ae0b559f4684fd4fd8b9eabff4b46b1defb5ef1f
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: b7d68a23ffba12e9654ac047629bd64ecfae4bb6
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911335"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661900"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>시뮬레이터에서 UWP 앱 실행
 
@@ -88,7 +88,7 @@ UWP 앱에 대 한 Visual Studio 시뮬레이터는 로컬 컴퓨터의 격리 �
  시뮬레이터를 임의의 방향으로 90도 회전하여 디바이스 방향을 가로와 세로 간에 전환할 수 있습니다.
 
 > [!NOTE]
-> 시뮬레이터는 프로젝트의 [DisplayProperties.AutoRotationPreferences](/uwp/api/Windows.Graphics.Display.DisplayProperties#Windows_Graphics_Display_DisplayProperties_AutoRotationPreferences) 속성을 무시합니다. 예를 들어 프로젝트에서 방향이 `Landscape`로 설정된 상태에서 시뮬레이터를 세로 방향으로 회전하면 시뮬레이터 표시 이미지도 회전되고 크기가 조정됩니다. 실제 디바이스에서 이러한 설정을 테스트합니다.
+> 시뮬레이터는 프로젝트의 [DisplayProperties.AutoRotationPreferences](/uwp/api/windows.graphics.display.displayproperties.autorotationpreferences) 속성을 무시합니다. 예를 들어 프로젝트에서 방향이 `Landscape`로 설정된 상태에서 시뮬레이터를 세로 방향으로 회전하면 시뮬레이터 표시 이미지도 회전되고 크기가 조정됩니다. 실제 디바이스에서 이러한 설정을 테스트합니다.
 
 > [!NOTE]
 > 시뮬레이터의 한 쪽 가장자리가 시뮬레이터가 표시되는 화면보다 크도록 시뮬레이터를 회전하면 시뮬레이터 크기가 화면 안에 맞도록 자동으로 조정됩니다. 시뮬레이터를 다시 회전하는 경우 원래 크기로 조정되지 않습니다.
@@ -143,7 +143,9 @@ UWP 앱에 대 한 Visual Studio 시뮬레이터는 로컬 컴퓨터의 격리 �
 
 [네트워크 정보 샘플](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)
 
+::: moniker range="vs-2017"
 [에너지 사용 분석](../profiling/analyze-energy-use-in-store-apps.md)
+::: moniker-end
 
 [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)
 
@@ -159,4 +161,4 @@ UWP 앱에 대 한 Visual Studio 시뮬레이터는 로컬 컴퓨터의 격리 �
 
 ## <a name="see-also"></a>참조
 
-- [Visual Studio에서 앱 실행](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Visual Studio에서 앱 실행](debugging-windows-store-and-windows-universal-apps.md)

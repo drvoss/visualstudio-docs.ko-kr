@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16b46d47ec5850a79d78667671c7eb671d859f3e
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 56ecf4cb1d777362daf381646094c20f82f30f85
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128229"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910353"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>디버거 없이 메모리 사용량 분석
 
@@ -107,7 +107,7 @@ ms.locfileid: "71128229"
 
 앱의 많은 형식은 앱 개발자에게 그리 흥미롭지 않습니다. 스냅샷 보고서 필터는 **관리되는 힙** 및 **루트 경로** 트리에서 이러한 유형의 대부분을 숨길 수 있습니다.
 
-![정렬 및 필터 옵션](../profiling/media/memuse_sortandfilter.png "MEMUSE_SortAndFilter")
+![옵션 정렬 및 필터링](../profiling/media/memuse_sortandfilter.png "MEMUSE_SortAndFilter")
 
 - <a name="BKMK_Filter"></a> 형식 이름별로 트리를 필터링하려면 **필터** 상자에 이름을 입력합니다. 필터는 대/소문자를 구분하지 않고 형식 이름의 모든 부분에서 지정한 문자열을 인식합니다.
 
@@ -119,7 +119,7 @@ ms.locfileid: "71128229"
 
  스냅샷 정보 보고서는 진단 세션에서 스냅샷 하나를 설명합니다. 보고서를 열려면 스냅샷 창에서 크기 또는 개체 링크를 선택합니다.
 
- ![스냅샷 창의 스냅샷 보고서에 대한 링크](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "스냅샷 창에 스냅샷 보고서에 대한 링크")
+ ![스냅샷 창의 스냅샷 보고서 링크](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "스냅샷 창의 스냅샷 보고서 링크")
 
 두 링크 모두 동일한 보고서를 엽니다. **관리되는 힙** 트리의 시작 정렬 순서만 다릅니다. 크기 링크는 **포함 크기(바이트)** 열을 기준으로 보고서를 정렬합니다. 개체 링크는 **개수** 열을 기준으로 보고서를 정렬합니다. 보고서를 연 후 정렬 열이나 순서를 변경할 수 있습니다.
 
@@ -143,12 +143,12 @@ ms.locfileid: "71128229"
 
 **루트 경로** 트리의 유형인 경우 해당 유형에 대한 참조를 보관하는 개체 수가 **참조 개수** 열에 나타납니다.
 
-![유형에 대한 루트 경로 트리](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "유형에 대한 루트 경로 트리")
+![유형에 대한 루트 트리 경로](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "유형에 대한 루트 트리 경로")
 
 ### <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> 참조된 형식 또는 참조된 개체 트리(스냅샷 정보 보고서)
 **참조 형식** 또는 **참조 개체** 트리는 선택한 형식 또는 인스턴스가 참조하는 개체를 보여줍니다.
 
-![인스턴스에 대한 참조 개체 트리](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "인스턴스에 대한 참조 개체 트리")
+![인스턴스에 대한 참조된 개체 트리](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "인스턴스에 대한 참조된 개체 트리")
 
 스냅샷 정보 보고서의 **참조 형식** 트리에는 다음 열이 있습니다. **참조 개체** 트리에는 **참조 개수** 열이 없습니다.
 
@@ -166,7 +166,7 @@ ms.locfileid: "71128229"
 
 두 링크 모두 동일한 보고서를 엽니다. 보고서의 **관리되는 힙** 트리의 시작 정렬 순서만 다릅니다. 크기 링크는 **포함 크기 차이(바이트)** 열을 기준으로 보고서를 정렬합니다. 개체 링크는 **개수 차이** 열을 기준으로 보고서를 정렬합니다. 보고서를 연 후 정렬 열이나 순서를 변경할 수 있습니다.
 
- ![스냅샷 창의 차이 보고서에 대한 링크](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "스냅샷 창의 차이 보고서에 대한 링크")
+ ![스냅샷 창의 차이 보고서 링크](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "스냅샷 창의 차이 보고서 링크")
 
 ### <a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> 관리되는 힙 트리(스냅샷 차이 보고서)
 
@@ -193,13 +193,13 @@ ms.locfileid: "71128229"
 
 **루트 경로** 트리의 유형인 경우 해당 유형에 대한 참조를 보관하는 개체 수가 **참조 개수** 열에 나타납니다. 이전 스냅샷과의 개수 차이는 **참조 차이** 열에 있습니다.
 
- ![차이 보고서의 루트 경로 트리](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "차이 보고서의 루트 경로 트리")
+ ![차이 보고서의 루트 트리 경로](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "차이 보고서의 루트 트리 경로")
 
 ### <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> 참조 형식 또는 참조 개체 트리(스냅샷 차이 보고서)
 
 **참조 형식** 또는 **참조 개체** 트리는 선택한 형식 또는 인스턴스가 참조하는 개체를 보여줍니다.
 
-![차이 보고서의 참조 형식](../profiling/media/memuse_snapshotdiff_referencedtypes.png "차이 보고서의 참조 형식")
+![차이 보고서에서 참조 형식](../profiling/media/memuse_snapshotdiff_referencedtypes.png "차이 보고서에서 참조 형식")
 
 스냅샷 차이 보고서의 **참조 형식** 트리에는 다음 열이 있습니다. **참조 개체** 트리에는 **인스턴스**, **크기(바이트)** , **포함 크기(바이트)** 및 **모듈** 열이 있습니다.
 
@@ -219,4 +219,4 @@ ms.locfileid: "71128229"
 - [Visual Studio의 프로파일링](../profiling/index.yml)
 - [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md)
 - [C++, C# 및 Visual Basic을 사용하는 UWP 앱의 성능 모범 사례](/previous-versions/windows/apps/hh750313\(v\=win.10\))
-- [Visual Studio에서 새 메모리 사용량 도구로 메모리 문제 진단](http://go.microsoft.com/fwlink/p/?LinkId=394706)
+- [Visual Studio에서 새 메모리 사용량 도구로 메모리 문제 진단](https://devblogs.microsoft.com/devops/diagnosing-memory-issues-with-the-new-memory-usage-tool-in-visual-studio/)

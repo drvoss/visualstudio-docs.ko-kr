@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d12c9848409f57b16c733b587edff193311bcfdd
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: da634246bfa9f800779c761458028f55b9317f6f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732269"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187624"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Visual Studio에서 UWP 앱을 디버그 하는 동안 일시 중단, 다시 시작 및 백그라운드 이벤트를 트리거하는 방법
 
@@ -110,7 +110,7 @@ ms.locfileid: "72732269"
 4. **진단** 로그를 선택합니다.
 
 ## <a name="see-also"></a>참조
-- [Visual Studio로 UWP 앱 테스트](../test/testing-store-apps-with-visual-studio.md)
-- [Visual Studio에서 앱 디버그](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Visual Studio로 UWP 앱 테스트](/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio)
+- [Visual Studio에서 앱 디버그](debugging-windows-store-and-windows-universal-apps.md)
 - [애플리케이션 수명 주기](/windows/uwp/launch-resume/app-lifecycle)
 - [Launching, resuming, and multitasking](/windows/uwp/launch-resume/index)

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: b008dd22b99e0024fcba479564c02cfad148f14a
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 73b9b78be6a6325a422c945db8c51caa7a11b487
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888459"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188273"
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>Visual Studio에서 UWP (유니버설 Windows 앱) 디버그
 
@@ -33,4 +33,4 @@ Visual Studio 디버거는 UWP 앱 디버깅을 완벽 하 게 지원 합니다.
 |UWP 앱에서 ContentPrefetcher 클래스의 효과를 분석 합니다.|[UWP 앱에 대 한 콘텐츠 프리페치](../debugger/prefetch-content-for-windows-store-apps.md)|
 
 ## <a name="see-also"></a>참조
-- [정적 코드 분석을 사용하여 코드 품질 분석](/visualstudio/code-quality/code-analysis-for-managed-code-overview)
+- [정적 코드 분석을 사용하여 코드 품질 분석](../code-quality/code-analysis-for-managed-code-overview.md)

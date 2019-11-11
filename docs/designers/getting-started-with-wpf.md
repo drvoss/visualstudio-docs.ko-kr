@@ -8,12 +8,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f921ce292e34147d54af977567373634610becfd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b8cc1ea22c5cdbe85bf1d24d1641709c5fe5da7a
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72637287"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187139"
 ---
 # <a name="get-started-with-wpf"></a>WPF 시작
 
@@ -26,13 +26,14 @@ WPF(Windows Presentation Foundation)는 데스크톱 클라이언트 애플리�
 |제목|문서|
 |-|-|
 |바로 시작...|[연습: 내 첫 WPF 데스크톱 애플리케이션](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)|
-|XAML 디자인 도구 비교...|[Visual Studio 및 Blend for Visual Studio에서 XAML 디자인](../designers/designing-xaml-in-visual-studio.md)|
-|.NET을 처음 사용하세요?|[.NET 개요](/dotnet/framework/get-started/overview)<br /><br /> [애플리케이션 주요 사항](/dotnet/standard/application-essentials)<br /><br /> [Visual C# 및 Visual Basic 시작](../ide/quickstart-visual-basic-console.md)|
-|WPF에 대한 자세한 설명...|[WPF 개요](../designers/introduction-to-wpf.md)<br /><br /> [XAML 개요(WPF)](/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br /> [컨트롤](/dotnet/framework/wpf/controls/)<br /><br /> [데이터 바인딩 개요](/dotnet/framework/wpf/data/data-binding-overview)<br /><br /> [LINQ to XML로 WPF 데이터 바인딩](../designers/wpf-data-binding-with-linq-to-xml-overview.md)|
-|Windows Forms 개발자인가요?|[Windows Forms 컨트롤 및 해당 WPF 컨트롤](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)<br /><br /> [WPF 및 Windows Forms 상호 운용성에서 지원되는 시나리오](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|
+|XAML 디자인 도구 비교...|[Visual Studio 및 Blend for Visual Studio에서 XAML 디자인](../xaml-tools/designing-xaml-in-visual-studio.md)|
+|.NET을 처음 사용하세요?|[.NET 가이드](/dotnet/standard/)<br /><br />[애플리케이션 주요 사항](/dotnet/standard/application-essentials)<br /><br />[Visual C# 시작](../ide/quickstart-csharp-console.md)|
+|WPF에 대한 자세한 설명...|[WPF 개요](/dotnet/framework/wpf/introduction-to-wpf)<br /><br />[XAML 개요(WPF)](/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br />[컨트롤](/dotnet/framework/wpf/controls/)<br /><br />[데이터 바인딩 개요](/dotnet/desktop-wpf/data/data-binding-overview)<br /><br />[LINQ to XML로 WPF 데이터 바인딩](/dotnet/framework/wpf/data/wpf-data-binding-with-linq-to-xml-overview)|
+|Windows Forms 개발자인가요?|[Windows Forms 컨트롤 및 해당 WPF 컨트롤](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)<br /><br />[WPF 및 Windows Forms 상호 운용성에서 지원되는 시나리오](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|
 
 ## <a name="see-also"></a>참고 항목
 
+- [WPF용 데스크톱 가이드](/dotnet/desktop-wpf/overview/index)
 - [클래스 라이브러리(WPF)](/dotnet/framework/wpf/class-library-wpf)
 - [WPF 커뮤니티 리소스](/dotnet/framework/wpf/getting-started/community-feedback)
 - [앱 개발 지원](/dotnet/framework/wpf/app-development/index)

@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2ad427c058265694205444c3ade04e317e407072
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a33286ffb678bf37cf684bb603d81ec8091e7405
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649572"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568820"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 규칙 포트 상태
 
@@ -67,8 +67,8 @@ Roslyn-분석기 리포지토리의 자동 [생성 된 설명서 페이지](http
 [CA1063](ca1063-implement-idisposable-correctly.md) | IDisposable을 올바르게 구현 하십시오.
 [CA1064](ca1064-exceptions-should-be-public.md) | 예외는 public이어야 합니다.
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | 예기치 않은 위치에서 예외를 발생시키지 마십시오.
-CA1066 | Equals를 재정의 하기 때문에 {0} 형식에서 IEquatable \<T >를 구현 해야 합니다.
-CA1067 | IEquatable \<T > 구현 하는 경우 개체 Equals (개체)를 재정의 하십시오.
+CA1066 | Equals를 재정의 하기 때문에 {0} 형식에서 IEquatable\<T >를 구현 해야 합니다.
+CA1067 | IEquatable\<T를 구현 하는 경우 개체 Equals (개체)를 재정의 >
 [CA1068](ca1068.md) | CancellationToken 매개 변수는 마지막에 위치해야 합니다.
 CA1200 | 접두사를 사용하여 cref 태그 사용 방지
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | 리터럴을 지역화된 매개 변수로 전달하지 마세요.
@@ -154,11 +154,11 @@ CA2244 | 인덱싱된 요소 초기화를 복제 하지 마십시오.
 [CA2302](ca2302.md) | BinaryFormatter.Deserialize를 호출하기 전에 BinaryFormatter.Binder가 설정되었는지 확인합니다.
 [CA2305](ca2305.md) | 안전하지 않은 역직렬 변환기 LosFormatter를 사용하지 마세요.
 [CA2310](ca2310.md) | 안전하지 않은 역직렬 변환기 NetDataContractSerializer를 사용하지 마세요.
-[CA2311](ca2311.md) | 먼저 NetDataContractSerializer.Binder를 설정하지 않고 deserialize하지 마세요.
-[CA2312](ca2312.md) | deserialize하기 전에 NetDataContractSerializer.Binder를 설정해야 합니다.
+[CA2311](ca2311.md) | 먼저 NetDataContractSerializer.Binder를 설정하지 않고 역직렬화하지 마세요.
+[CA2312](ca2312.md) | 역직렬화하기 전에 NetDataContractSerializer.Binder를 설정해야 합니다.
 [CA2315](ca2315.md) | 안전하지 않은 역직렬 변환기 ObjectStateFormatter를 사용하지 마세요.
-[CA2321](ca2321.md) | SimpleTypeResolver를 사용하여 JavaScriptSerializer를 통해 deserialize하지 마세요.
-[CA2322](ca2322.md) | JavaScriptSerializer가 deserialize하기 전에 SimpleTypeResolver로 초기화되지 않는지 확인하세요.
+[CA2321](ca2321.md) | SimpleTypeResolver를 사용하여 JavaScriptSerializer를 통해 역직렬화하지 마세요.
+[CA2322](ca2322.md) | JavaScriptSerializer가 역직렬화하기 전에 SimpleTypeResolver로 초기화되지 않는지 확인하세요.
 [CA3001](ca3001.md) | 코드에서 SQL 주입 취약점에 대해 검토합니다.
 [CA3002](ca3002.md) | 코드에서 XSS 취약점에 대해 검토합니다.
 [CA3003](ca3003.md) | 코드에서 파일 경로 삽입 취약성에 대해 검토합니다.
@@ -286,8 +286,8 @@ CA9999 | 분석기 버전이 일치 하지 않습니다.
 - [CA1406](ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)
 - [CA1504](ca1504-review-misleading-field-names.md)
 - [CA1701](ca1701-resource-string-compound-words-should-be-cased-correctly.md)
-- [CA1702](ca1702-compound-words-should-be-cased-correctly.md)
-- [CA1703](ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1702](ca1702.md)
+- [CA1703](ca1703.md)
 - [CA1800](ca1800.md)
 - [CA1809](ca1809.md)
 - [CA1901](ca1901.md)
@@ -344,6 +344,6 @@ CA9999 | 분석기 버전이 일치 하지 않습니다.
 - [CA2233](ca2233.md)
 - [CA5122](ca5122.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [FxCopAnalyzers 규칙](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)

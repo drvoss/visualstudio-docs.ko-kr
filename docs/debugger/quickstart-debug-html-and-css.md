@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 52235ab4770f5267de8507ff67fcda0aa1370392
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 75bdfe55d516deb34872007a9461a286b4d742e0
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730562"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568912"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Visual Studio에서 UWP 앱의 HTML 및 CSS 디버그
 
@@ -30,7 +30,7 @@ JavaScript 앱의 경우 Visual Studio에서 Internet Explorer 및 Visual Studio
 
 DOM 검사 도구에서 제공된 대화형 디버깅 모델을 사용하여 렌더링된 HTML 및 CSS 코드를 보고 수정할 수 있습니다. 디버거를 중지했다 다시 시작하지 않고도 이 모든 작업을 수행할 수 있습니다.
 
-JavaScript 콘솔 창을 사용 하 여 중단점을 설정 하는 등의 다른 JavaScript 디버깅 기능에 대 한 자세한 내용은 빠른 시작: [Visual Studio에서](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps) [JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md) 및 앱 디버그를 참조 하세요.
+JavaScript 콘솔 창을 사용 하 여 중단점을 설정 하는 등의 다른 JavaScript 디버깅 기능에 대 한 자세한 내용은 빠른 시작: [Visual Studio에서](debugging-windows-store-and-windows-universal-apps.md) [JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md) 및 앱 디버그를 참조 하세요.
 
 ## <a name="InspectingDOM"></a> 라이브 DOM 검사
 DOM 탐색기는 렌더링된 페이지의 뷰를 보여 주고, DOM 탐색기를 사용하여 값을 변경하고 변경 결과를 바로 확인할 수 있습니다. 그러면 디버거를 중지했다가 다시 시작하지 않고도 변경 내용을 테스트할 수 있습니다. 이 방법을 사용하여 페이지와 상호 작용할 때 프로젝트의 소스 코드는 변경되지 않으므로 원하는 코드 수정 내용을 찾으면 소스 코드를 변경합니다.
@@ -182,7 +182,7 @@ DOM 탐색기를 사용하면 다음 작업을 수행할 수 있습니다.
 14. 주 창에서 `width: 100px;height: 100px;`을 두 번 클릭 하 고 **delete** 키를 누른 다음 **enter**키를 누릅니다. Enter 키를 누르면 디버깅 세션을 중지 하지 않았더라도 새 값이 앱에 즉시 반영 됩니다.
 
     > [!IMPORTANT]
-    > DOM 탐색기 창에서 특성을 업데이트할 수 있듯이 **스타일**, **계산됨**및 **레이아웃** 탭에 표시되는 값도 업데이트할 수 있습니다. 자세한 내용은 dom 탐색기를 [사용 하 여 CSS 스타일 디버그](../debugger/debug-css-styles-using-dom-explorer.md) 및 [dom 탐색기를 사용 하 여 레이아웃 디버그](../debugger/debug-layout-using-dom-explorer.md)를 참조 하세요.
+    > DOM 탐색기 창에서 특성을 업데이트할 수 있듯이 **스타일**, **계산됨**및 **레이아웃** 탭에 표시되는 값도 업데이트할 수 있습니다.
 
 15. 앱을 선택 하거나 Alt + Tab을 사용 하 여 앱으로 전환 합니다.
 
@@ -237,7 +237,7 @@ DOM 탐색기를 사용하면 다음 작업을 수행할 수 있습니다.
 
 - **요소 선택** 단추(Ctrl+B) 사용
 
-- @No__t_0 명령을 사용 하 여 [JavaScript 콘솔 명령](../debugger/javascript-console-commands.md?view=vs-2017)중 하나입니다.
+- `select` 명령을 사용 하 여 [JavaScript 콘솔 명령](../debugger/javascript-console-commands.md?view=vs-2017)중 하나입니다.
 
   DOM 탐색기 창을 사용하여 요소를 선택하고 요소에 마우스 포인터를 놓으면 해당 요소가 실행 중인 응용 프로그램에서 강조 표시됩니다. DOM 탐색기에서 요소를 클릭하여 선택해야 합니다. 또는 화살표 키를 사용하여 요소를 강조 표시하고 선택할 수 있습니다. **요소 선택** 단추를 사용하여 DOM 탐색기에서 요소를 선택할 수도 있습니다. 다음 그림에서는 **요소 선택** 단추를 보여 줍니다.
 
@@ -255,7 +255,8 @@ DOM 탐색기를 사용하면 다음 작업을 수행할 수 있습니다.
 > 요소를 마우스로 가리키면 강조 표시되는 기능은 Windows Phone 에뮬레이터에서만 일부 지원됩니다.
 
 ## <a name="see-also"></a>참조
-- [Visual Studio에서 앱 디버그](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+
+- [Visual Studio에서 앱 디버그](debugging-windows-store-and-windows-universal-apps.md)
 - [앱 새로 고침(JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [WebView 컨트롤 디버그](../debugger/debug-a-webview-control.md)
 - [바로 가기 키](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)

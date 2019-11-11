@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: badb06b8c3eea5158054ba4c32f72e51dae0d60d
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: b60e5df4d94c290ca8aa7bf56471b5fed6c1879a
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816363"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568902"
 ---
 # <a name="container-tools-in-visual-studio"></a>Visual Studio의 컨테이너 도구
 
@@ -148,6 +148,6 @@ Kubernetes에 대해서는 [Deploy a Docker container app to Azure Kubernetes Se
 
 서비스 구현 및 컨테이너 작업에서 Visual Studio 도구 사용에 대한 자세한 내용을 보려면 다음 문서를 참조하세요.
 
-[로컬 Docker 컨테이너에서 앱 디버그](vs-azure-tools-docker-edit-and-refresh.md)
+[로컬 Docker 컨테이너에서 앱 디버그](edit-and-refresh.md)
 
-[Visual Studio를 사용하여 컨테이너 레지스트리에 ASP.NET 컨테이너 배포](vs-azure-tools-docker-hosting-web-apps-in-docker.md)
+[Visual Studio를 사용하여 컨테이너 레지스트리에 ASP.NET 컨테이너 배포](hosting-web-apps-in-docker.md)

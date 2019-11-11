@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 2ce889f83c4d21a8b2464cab108fa165e1144791
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 15c9a2b489aeb091224536bfb87398197f6e4f62
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745570"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188664"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>UWP 앱에서 웹 보기 컨트롤 디버그
 
@@ -60,7 +60,7 @@ ms.locfileid: "72745570"
 
      Visual Studio에서 `WebView`와 연결된 DOM 탐색기가 새 탭으로 나타납니다.
 
-5. [Dom 탐색기를 사용 하 여 css 스타일 디버그](/visualstudio/debugger/quickstart-debug-html-and-css)에 설명 된 대로 라이브 DOM 요소 및 css 스타일을 보고 수정 합니다.
+5. [Dom 탐색기를 사용 하 여 css 스타일 디버그](quickstart-debug-html-and-css.md)에 설명 된 대로 라이브 DOM 요소 및 css 스타일을 보고 수정 합니다.
 
 ### <a name="use-the-javascript-console-window-to-inspect-and-debug-a-webview-control"></a>JavaScript 콘솔 창을 사용하여 WebView 컨트롤 조사 및 디버깅
 

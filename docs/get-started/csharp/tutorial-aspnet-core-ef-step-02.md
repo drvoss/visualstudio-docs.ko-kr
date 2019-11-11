@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 740d6336ab4258d3111dd6708de859108e22365e
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 21959c4a0cc2b961eca43ab9724369c7aea8444b
+ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402063"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73061123"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>2단계: 첫 번째 ASP.NET Core 웹앱 만들기
 
@@ -33,9 +33,12 @@ _이 비디오를 보고 따라서 첫 번째 ASP.NET Core 앱을 만듭니다._
 
 ## <a name="start-visual-studio-2019-and-create-a-new-project"></a>Visual Studio 2019 시작 및 새 프로젝트 만들기
 
-Visual Studio 2019를 시작하고 **새 프로젝트 만들기**를 클릭합니다. **새 ASP.NET Core 웹 애플리케이션**을 선택합니다. **웹 애플리케이션** 템플릿을 선택하고 기본 프로젝트 이름과 위치를 유지합니다. **만들기**를 클릭합니다. 자세한 지침은 [이 자습서 시리즈의 이전 비디오](tutorial-aspnet-core-ef-step-01.md)를 참조하세요.
+Visual Studio 2019를 시작하고 **새 프로젝트 만들기**를 클릭합니다. **새 ASP.NET Core 웹 애플리케이션**을 선택합니다. **웹 애플리케이션** 템플릿을 선택하고 기본 프로젝트 이름과 위치를 유지합니다. ASP.NET Core 버전을 사용하는 드롭다운에서, **ASP.NET Core 2.1** 또는 **ASP.NET Core 2.2**를 선택합니다. **만들기**를 클릭합니다. 자세한 지침은 [이 자습서 시리즈의 이전 비디오](tutorial-aspnet-core-ef-step-01.md)를 참조하세요.
 
 ![Visual Studio 2019 ASP.NET Core 프로젝트 옵션 선택](media/vs-2019/vs2019-choose-aspnetcore-project.png)
+
+> [!WARNING]
+> ASP .NET Core 2.1 또는 ASP.NET Core 2.2를 선택했는지 확인합니다. 이 자습서는 ASP.NET Core 3.x와 호환되지 않습니다.
 
 ## <a name="explore-the-new-project"></a>새 프로젝트 탐색
 

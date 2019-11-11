@@ -1,6 +1,6 @@
 ---
-title: 디버거에서 추적점 사용 | Microsoft Docs
-ms.date: 9/17/2019
+title: 추적점을 사용 하 여 로그 정보 | Microsoft Docs
+ms.date: 10/28/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - tracepoints, about tracepoints
@@ -9,16 +9,16 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 263657213f1720eaca7a0462bb31585adaacf9bb
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: fcc9f01315d3783af1a1f124785cd74fafb215bf
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72516399"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187305"
 ---
-# <a name="use-tracepoints-in-the-visual-studio-debugger"></a>Visual Studio 디버거에서 추적점 사용
+# <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>Visual Studio에서 추적점을 사용 하 여 출력 창에 정보 기록
 
-추적점을 사용 하면 코드를 수정 하거나 중지 하지 않고 구성 가능한 조건에서 출력 창에 정보를 기록할 수 있습니다. 이 기능은 관리 되는 코드와 네이티브 코드 뿐 아니라 JavaScript 및 C#와 같은 여러 언어에 대해서도 지원 됩니다.
+추적점을 사용 하면 코드를 수정 하거나 중지 하지 않고 구성 가능한 조건에서 출력 창에 정보를 기록할 수 있습니다. 이 기능은 관리 되는 언어 (C#, Visual Basic, F#) 및 네이티브 코드 뿐 아니라 JavaScript 및 Python과 같은 언어에 대해서도 지원 됩니다.
 
 ## <a name="let39s-take-an-example"></a>&#39;예제를 사용 합니다.
 
@@ -47,7 +47,7 @@ ms.locfileid: "72516399"
 
 5. 출력 창 텍스트 상자 **에** 로그인 할 메시지를 입력 합니다. 자세한 내용은이 문서의 뒷부분에 나오는 섹션을 참조 하십시오.
 
-   이제 추적점이 설정 됩니다. @No__t_0Close &quot; 단추를 누르면 출력 창에 일부 정보가 기록 됩니다.
+   이제 추적점이 설정 됩니다. &quot;닫기&quot; 단추를 누르면 출력 창에 일부 정보가 기록 됩니다.
 
 6. 메시지가 표시 되는지 여부를 결정 하는 조건을 추가 하려면 **조건** 확인란을 선택 합니다.
 
@@ -92,7 +92,7 @@ ms.locfileid: "72516399"
 
 ![조건식이 True 임](../debugger/media/conditionalexpressionistrue.png "조건식이 True 임")
 
-@No__t_0 루프의 반복이 변경 될 때 counter 값을 인쇄 하려면 **변경 된 경우** 옵션을 선택 하 고 메시지 텍스트 상자에 `i`을 입력 합니다.
+`for` 루프의 반복이 변경 될 때 counter 값을 인쇄 하려면 **변경 된 경우** 옵션을 선택 하 고 메시지 텍스트 상자에 `i`을 입력 합니다.
 
 ![변경 된 조건 식](../debugger/media/conditionalexpressionwhenchanged.png "변경 된 조건 식")
 
@@ -111,7 +111,7 @@ ms.locfileid: "72516399"
 ![조건식 적중 횟수](../debugger/media/conditionalexpressionhitcount.png "조건식 적중 횟수")
 
 ### <a name="filter"></a>필터
-필터 조건의 경우 표시 되는 장치, 프로세스 또는 스레드 출력을 지정 합니다.
+필터 조건에 대해 표시 되는 장치, 프로세스 또는 스레드 출력을 지정 합니다.
 
 ![조건식 필터](../debugger/media/conditionalexpressionfilter.png "조건식 필터")
 
@@ -123,13 +123,13 @@ ms.locfileid: "72516399"
 - ThreadId = 값
 - ThreadName = "이름"
 
-문자열 (예: 이름)을 큰따옴표로 묶습니다. 따옴표 없이 값을 입력할 수 있습니다. @No__t_0 (`AND`), `||` (`OR`), `!` (`NOT`) 및 괄호를 사용 하 여 절을 조합할 수 있습니다.
+문자열 (예: 이름)을 큰따옴표로 묶습니다. 따옴표 없이 값을 입력할 수 있습니다. `&` (`AND`), `||` (`OR`), `!` (`NOT`) 및 괄호를 사용 하 여 절을 조합할 수 있습니다.
 
 ## <a name="considerations"></a>고려 사항
 
 추적점은 더 깔끔하고 부드러운 환경을 디버깅 하기 위한 것 이지만, 사용할 때 알아야 할 몇 가지 고려 사항이 있습니다.
 
-경우에 따라 개체의 속성이 나 특성을 검사 하면 해당 값이 변경 될 수 있습니다. 이는 추적점 기능 자체에 의해 발생 하는 버그가 아니지만 추적점을 사용 하 여 개체를 검사 해도 이러한 실수로 인 한 수정이 발생 하지 않도록 하는 것이 좋습니다.
+경우에 따라 개체의 속성이 나 특성을 검사 하면 해당 값이 변경 될 수 있습니다. 검사 중에 값이 변경 되 면 추적점 기능 자체에 의해 발생 하는 버그가 아닙니다. 그러나 추적점을 사용 하 여 개체를 검사 해도 이러한 실수로 수정 되는 것은 방지 되지 않습니다.
 
 **작업** 메시지 상자에서 식이 계산 되는 방식은 현재 개발에 사용 하 고 있는 언어와 다를 수 있습니다. 예를 들어 문자열을 출력 하기 위해 일반적으로 `Debug.WriteLine()` 또는 `console.log()`를 사용 하는 경우에도 따옴표로 메시지를 래핑할 필요가 없습니다. 또한 식 출력에 대 한 중괄호 구문 (`{ }`)은 개발 언어에서 값을 출력 하는 규칙과 다를 수 있습니다. 그러나 중괄호 (`{ }`) 내의 콘텐츠는 개발 언어의 구문을 사용 하 여 계속 작성 해야 합니다.
 

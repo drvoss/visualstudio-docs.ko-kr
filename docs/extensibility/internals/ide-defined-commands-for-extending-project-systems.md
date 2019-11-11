@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e406fb5ba9f221fa22faadfecaa8f0baaefebf75
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1c8be1cff099a713413957cfa5f8b3f383ca4bae
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72727340"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73186340"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>프로젝트 시스템 확장을 위한 IDE 정의 명령
 프로젝트 시스템을 확장 하려는 경우 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE에서 제공 하는 명령 및 명령 그룹을 사용할 수 있습니다.
@@ -70,6 +70,6 @@ ms.locfileid: "72727340"
 |IDG_VS_CTXT_PROJECT_PROPERTIES|**프로젝트 속성** 대화 상자에 대 한 액세스를 제공 하는 명령입니다.|
 
 ## <a name="see-also"></a>참조
+
 - [VSPackage에서 사용자 인터페이스 요소를 추가하는 방법](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-- [MenuCommands와 OleMenuCommands 비교](../../extensibility/menucommands-vs-olemenucommands.md)
 - [다시 사용할 수 있는 단추 그룹 만들기](../../extensibility/creating-reusable-groups-of-buttons.md)

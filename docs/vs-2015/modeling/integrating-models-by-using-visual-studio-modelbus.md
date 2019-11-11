@@ -378,15 +378,15 @@ ModelBusReference elementReferenceRestored =
 
  MBR(`ModelBusReference`)은 두 부분으로 구성되는데, 그 중 하나는 ModelBus를 통해 deserialize되는 MBR 헤더이고 다른 하나는 특정 어댑터 관리자를 통해 처리되는 어댑터 관련 부분입니다. 따라서 어댑터 serialization 형식을 직접 지정할 수 있습니다. 예를 들어 파일이 아닌 데이터베이스를 참조하거나 어댑터 참조에 추가 정보를 저장할 수 있습니다. 고유한 어댑터를 사용하는 경우 `ReferenceContext`에 추가 정보가 저장될 수 있습니다.
 
- MBR을 deserialize할 때는 ReferenceContext를 제공해야 합니다. 이 ReferenceContext는 MBR 개체에 저장됩니다. MBR을 serialize할 때 어댑터는 저장된 ReferenceContext를 사용하여 문자열을 생성합니다. deserialize된 문자열에 ReferenceContext의 모든 정보가 포함되는 것은 아닙니다. 예를 들어 단순 파일 기반 어댑터에서 ReferenceContext에는 포함되는 루트 파일 경로가 serialize된 MBR 문자열에는 저장되지 않습니다.
+ MBR을 역직렬화할 때는 ReferenceContext를 제공해야 합니다. 이 ReferenceContext는 MBR 개체에 저장됩니다. MBR을 serialize할 때 어댑터는 저장된 ReferenceContext를 사용하여 문자열을 생성합니다. 역직렬화된 문자열에 ReferenceContext의 모든 정보가 포함되는 것은 아닙니다. 예를 들어 단순 파일 기반 어댑터에서 ReferenceContext에는 포함되는 루트 파일 경로가 serialize된 MBR 문자열에는 저장되지 않습니다.
 
- MBR은 두 단계로 deserialize됩니다.
+ MBR은 두 단계로 역직렬화됩니다.
 
 - `ModelBusReferencePropertySerializer`는 MBR 헤더를 처리하는 표준 serializer입니다. 이 항목은 `SerializationContext` 키를 사용하여 `ReferenceContext`에 저장되는 표준 DSL `ModelBusReferencePropertySerializer.ModelBusLoadContextKey` 속성 모음을 사용합니다. 특히 `SerializationContext`는 `ModelBus` 인스턴스를 포함해야 합니다.
 
 - ModelBus 어댑터는 MBR의 어댑터 관련 부분을 처리하며 MBR의 ReferenceContext에 저장된 추가 정보를 사용할 수 있습니다. 단순 파일 기반 어댑터는 `FilePathLoadContextKey` 및 `FilePathSaveContextKey` 키를 사용 하 여 루트 파일 경로를 유지 합니다.
 
-     모델 파일의 어댑터 참조는 사용할 때만 deserialize됩니다.
+     모델 파일의 어댑터 참조는 사용할 때만 역직렬화됩니다.
 
 ## <a name="to-create-a-model"></a>모델을 만들려면
 

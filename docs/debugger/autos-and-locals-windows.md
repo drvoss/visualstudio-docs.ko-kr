@@ -1,4 +1,4 @@
----
+﻿---
 title: 변수 검사 자동 및 지역 창 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/18/2018
@@ -24,11 +24,11 @@ ms.locfileid: "62564581"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>자동 및 지역 창에서 변수 검사
 
-디버깅하는 동안 **Autos**와 **Locals** 창에 변수 값이 표시됩니다. 창은 디버깅 세션 중에만 사용할 수 있습니다. **Autos** 창에는 현재 중단점 주위에 사용된 변수가 표시됩니다. **Locals** 창에는 일반적으로 현재 함수 또는 메서드인 지역 범위에 정의된 변수가 표시됩니다. 코드 디버깅을 처음 시도하는 경우 이 문서를 진행하기 전에  [초보자를 위한 디버깅](../debugger/debugging-absolute-beginners.md)과 [디버깅 기술 및 도구](../debugger/write-better-code-with-visual-studio.md)를 읽어보세요.
+디버깅하는 동안 **Autos**와 **Locals** 창에 변수 값이 표시됩니다. 창은 디버깅 세션 중에만 사용할 수 있습니다. **Autos** 창에는 현재 중단점 주위에 사용된 변수가 표시됩니다. **Locals** 창에는 일반적으로 현재 함수 또는 메서드인 지역 범위에 정의된 변수가 표시됩니다. 코드 디버깅을 처음 시도하는 경우 이 문서를 진행하기 전에 [초보자를 위한 디버깅](../debugger/debugging-absolute-beginners.md)과 [디버깅 기술 및 도구](../debugger/write-better-code-with-visual-studio.md)를 읽어보세요.
 
- **Autos** 창은 C#, Visual Basic, C++ 및 Python 코드에서는 사용할 수 있지만 JavaScript 또는 F#에서는 사용할 수 없습니다.
+**Autos** 창은 C#, Visual Basic, C++ 및 Python 코드에서는 사용할 수 있지만 JavaScript 또는 F#에서는 사용할 수 없습니다.
 
-열려는 합니다 **자동** 창에서 디버그 하는 동안 **디버그** > **Windows** > **자동**를 누르거나 **Ctrl**+**Alt**+**V** > **A**합니다.
+디버깅하는 동안 **Autos**을 열고 **디버그> Windows> Autos**을 선택하거나 **Ctrl + Alt + V> A**를 누르십시오.
 
 디버깅하는 동안 **Locals** 창을 열려면 **디버그** > **Windows** > **Locals**를 선택하거나 **Alt**+**4**를 누릅니다.
 
@@ -39,18 +39,17 @@ ms.locfileid: "62564581"
 
 배열과 객체는 **Autos** 및 **Locals** 창에 트리 컨트롤로 표시됩니다. 변수 이름 왼쪽에 있는 화살표를 선택하면 필드와 속성 표시가 확장되어 보입니다. **Locals** 창에 있는 <xref:System.IO.FileStream?displayProperty=fullName> 객체의 예는 다음과 같습니다.
 
-![Locals-FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")
+**Locals** 또는 **Autos** windows의 빨간색 값은 마지막 평가 이후 값이 변경되었음을 나타냅니다. 이전 디버깅 세션에서 변경되었거나 창에서 값을 변경했기 때문일 수 있습니다.
 
 **Locals** 또는 **Autos** 창의 빨간색 값은 마지막 평가 이후 값이 변경되었음을 나타냅니다. 이전 디버깅 세션에서 변경되었거나 창에서 값을 변경했기 때문일 수 있습니다.
 
 디버거 창의 기본 숫자 형식은 10진수입니다. 16진수로 변경하려면 **Locals** 또는 **Autos** 창에서 마우스 오른쪽 단추를 클릭하고 **16진수 표시**를 선택하세요. 이 변경은 모든 디버거 창에 영향을 줍니다.
 
-## <a name="edit-variable-values-in-the-autos-or-locals-window"></a>Autos 또는 Locals 창에서 변수 값 편집
+**Autos** 또는 **Locals** 창에서 대부분의 변수 값을 편집하려면 값을 두 번 클릭하고 새 값을 입력하세요.
 
 **Autos** 또는 **Locals** 창에서 대부분의 변수 값을 편집하려면 값을 두 번 클릭하고 새 값을 입력하세요.
 
 값에 대한 식을 입력할 수 있습니다(예: `a + b`). 디버거는 대부분의 유효한 언어 식을 허용합니다.
-
 네이티브 C++ 코드에서 변수 이름의 컨텍스트를 한정해야 할 수 있습니다. 자세한 내용은 [컨텍스트 연산자(C++)](../debugger/context-operator-cpp.md)를 참조하세요.
 
 >[!CAUTION]
@@ -70,10 +69,9 @@ ms.locfileid: "62564581"
 ![지역 창에서 검색](../debugger/media/ee-search-locals.png "지역 창에서 검색")
 
 검색을 더 또는 덜 철저하게 하려면 **Autos** 또는 **Locals** 창의 맨 위에 있는 더 **심층적인 검색** 드롭 다운을 사용하여 중첩된 개체를 검색할 수준을 선택하세요. 
-
 ::: moniker-end
 
-## <a name="change-the-context-for-the-autos-or-locals-window"></a>자동 또는 지역 창에 대 한 컨텍스트를 변경 합니다.
+## <a name="change-the-context-for-the-autos-or-locals-window"></a>**Autos** 또는 **Locals** 창에 대한 컨텍스트 변경
 
 **디버그 위치** 도구 모음을 사용하여 원하는 함수, 스레드 또는 프로세스를 선택하여 **Autos** 및 **Locals** 창의 컨텍스트를 변경할 수 있습니다.
 

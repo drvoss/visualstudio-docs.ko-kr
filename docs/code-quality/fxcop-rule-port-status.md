@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 571ba2a0c015d6d3a3c8757c25a0058d8e3ad8e1
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: a33286ffb678bf37cf684bb603d81ec8091e7405
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188821"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568820"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 규칙 포트 상태
 
@@ -154,11 +154,11 @@ CA2244 | 인덱싱된 요소 초기화를 복제 하지 마십시오.
 [CA2302](ca2302.md) | BinaryFormatter.Deserialize를 호출하기 전에 BinaryFormatter.Binder가 설정되었는지 확인합니다.
 [CA2305](ca2305.md) | 안전하지 않은 역직렬 변환기 LosFormatter를 사용하지 마세요.
 [CA2310](ca2310.md) | 안전하지 않은 역직렬 변환기 NetDataContractSerializer를 사용하지 마세요.
-[CA2311](ca2311.md) | 먼저 NetDataContractSerializer.Binder를 설정하지 않고 deserialize하지 마세요.
-[CA2312](ca2312.md) | deserialize하기 전에 NetDataContractSerializer.Binder를 설정해야 합니다.
+[CA2311](ca2311.md) | 먼저 NetDataContractSerializer.Binder를 설정하지 않고 역직렬화하지 마세요.
+[CA2312](ca2312.md) | 역직렬화하기 전에 NetDataContractSerializer.Binder를 설정해야 합니다.
 [CA2315](ca2315.md) | 안전하지 않은 역직렬 변환기 ObjectStateFormatter를 사용하지 마세요.
-[CA2321](ca2321.md) | SimpleTypeResolver를 사용하여 JavaScriptSerializer를 통해 deserialize하지 마세요.
-[CA2322](ca2322.md) | JavaScriptSerializer가 deserialize하기 전에 SimpleTypeResolver로 초기화되지 않는지 확인하세요.
+[CA2321](ca2321.md) | SimpleTypeResolver를 사용하여 JavaScriptSerializer를 통해 역직렬화하지 마세요.
+[CA2322](ca2322.md) | JavaScriptSerializer가 역직렬화하기 전에 SimpleTypeResolver로 초기화되지 않는지 확인하세요.
 [CA3001](ca3001.md) | 코드에서 SQL 주입 취약점에 대해 검토합니다.
 [CA3002](ca3002.md) | 코드에서 XSS 취약점에 대해 검토합니다.
 [CA3003](ca3003.md) | 코드에서 파일 경로 삽입 취약성에 대해 검토합니다.
@@ -286,7 +286,7 @@ CA9999 | 분석기 버전이 일치 하지 않습니다.
 - [CA1406](ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)
 - [CA1504](ca1504-review-misleading-field-names.md)
 - [CA1701](ca1701-resource-string-compound-words-should-be-cased-correctly.md)
-- [CA1702](ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1702](ca1702.md)
 - [CA1703](ca1703.md)
 - [CA1800](ca1800.md)
 - [CA1809](ca1809.md)

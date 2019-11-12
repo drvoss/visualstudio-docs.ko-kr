@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: f40111e59aa97180c98f0fc12d6b8eeb5d06ecec
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1b5fb79430b081986764f0ee1789f68471667498
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647863"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189071"
 ---
 # <a name="learn-to-use-the-code-editor"></a>코드 편집기를 사용하는 방법 알아보기
 
@@ -186,7 +186,7 @@ Visual Studio 편집기를 사용하면 형식, 메서드 등 정의를 쉽게 �
 ## <a name="next-steps"></a>다음 단계
 
 > [!div class="nextstepaction"]
-> [프로젝트 및 솔루션에 대한 자세한 정보](tutorial-projects-solutions.md)
+> [프로젝트 및 솔루션에 대한 자세한 정보](../tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>참고 항목
 

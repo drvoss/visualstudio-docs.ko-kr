@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 564672e01eeffbdcb53bf1af08f329d2f6bf218f
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: dd7b8f7b88040c7b80dcc6c40dc168a51890d8d2
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985779"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661834"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>VSTO 추가 기능의 성능 향상
   Office 애플리케이션용으로 만드는 VSTO 추가 기능을 최적화하여 신속하게 시작하고, 종료하고, 항목을 열고, 다른 작업을 수행할 수 있는 향상된 환경을 사용자에게 제공할 수 있습니다. VSTO 추가 기능이 Outlook용인 경우 낮은 성능 때문에 VSTO 추가 기능이 사용하지 않도록 설정될 가능성도 줄일 수 있습니다. 다음 전략을 실행하여 VSTO 추가 기능의 성능을 높일 수 있습니다.
@@ -28,7 +28,7 @@ ms.locfileid: "72985779"
 
 - [별도의 실행 스레드에서 비용이 많이 드는 작업 수행](#Perform)
 
-  Outlook VSTO 추가 기능을 최적화 하는 방법에 대 한 자세한 내용은 [Vsto 추가 기능을 사용 하도록 설정 하는 성능 기준](/previous-versions/office/jj228679(v=office.15)#ol15WhatsNew_AddinDisabling)을 참조 하세요.
+  Outlook VSTO 추가 기능을 최적화 하는 방법에 대 한 자세한 내용은 [Vsto 추가 기능을 사용 하도록 설정 하는 성능 기준](/previous-versions/office/jj228679(v=office.15)#performance-criteria-for-keeping-add-ins-enabled)을 참조 하세요.
 
 ## <a name="Load"></a> 요청 시 VSTO 추가 기능 로드
  다음과 같은 경우에만 로드되도록 VSTO 추가 기능을 구성할 수 있습니다.

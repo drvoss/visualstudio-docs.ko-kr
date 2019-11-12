@@ -11,18 +11,18 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cd898f2c4d7a84c9526ca9f56ce65a9b706f11d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 37f7a909196a3b345b39c006e9bf7cd6a52c9bde
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647775"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188988"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>방법: 프로젝트에 클래스 다이어그램 추가
 
 클래스와 기타 형식을 디자인, 편집 및 리팩터링하려면 C#, Visual Basic 또는 C++ 프로젝트에 클래스 다이어그램을 추가합니다. 프로젝트에서 각기 다른 코드 부분을 표시하려면 여러 클래스 다이어그램을 프로젝트에 추가합니다.
 
-여러 앱 간에 코드를 공유하는 프로젝트에서는 클래스 다이어그램을 만들 수 없습니다. UML 클래스 다이어그램을 만들려면 [Visual Studio에서 UML 모델링 프로젝트 및 다이어그램 만들기](../../modeling/create-uml-modeling-projects-and-diagrams.md)를 참조하세요.
+여러 앱 간에 코드를 공유하는 프로젝트에서는 클래스 다이어그램을 만들 수 없습니다. UML 클래스 다이어그램을 만들려면 [Visual Studio에서 UML 모델링 프로젝트 및 다이어그램 만들기](../../modeling/what-s-new-for-design-in-visual-studio.md)를 참조하세요.
 
 ## <a name="install-the-class-designer-component"></a>클래스 디자이너 구성 요소 설치
 

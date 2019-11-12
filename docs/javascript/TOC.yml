@@ -40,9 +40,9 @@
       href: debug-nodejs.md
     - name: JavaScript 유닛 테스트
       href: unit-testing-javascript-with-visual-studio.md
-- name: 자료
+- name: 리소스
   items:
     - name: package.json configuration
       href: configure-packages-with-package-json.md
-    - name: JavaScript 및 TypeScript용 Wiki 문서
-      href: 'https://github.com/Microsoft/nodejstools/wiki'
+    - name: JavaScript 및 TypeScript 문서 리포지토리
+      href: 'https://github.com/Microsoft/JSTSdocs'

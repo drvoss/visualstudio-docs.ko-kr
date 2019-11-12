@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 10/16/2019
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: a398adf047ebfe2e76ed91da72513eb7646c36c3
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 355a08b2ff322226d347d999f4ec8a9ebb7ba5fc
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535664"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188730"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Visual Studio에서 컨테이너와 이미지를 보고 진단하는 방법
 
@@ -32,7 +32,7 @@ ms.locfileid: "72535664"
 왼쪽에는 로컬 컴퓨터의 컨테이너 목록이 표시됩니다. 솔루션과 연결된 컨테이너는 **솔루션 컨테이너** 아래에 표시됩니다. 오른쪽에는 **환경**, **포트**, **로그** 및 **파일** 탭이 포함된 창이 표시됩니다.
 
 > [!TIP]
-> **컨테이너** 도구 창이 Visual Studio에서 도킹되는 위치를 쉽게 사용자 지정할 수 있습니다. [Visual Studio에서 창 레이아웃 사용자 지정](/visualstudio/ide/customizing-window-layouts-in-visual-studio)을 참조하세요. 기본적으로 **컨테이너** 창은 디버거가 실행 중일 때 **조사식** 창에 도킹됩니다.
+> **컨테이너** 도구 창이 Visual Studio에서 도킹되는 위치를 쉽게 사용자 지정할 수 있습니다. [Visual Studio에서 창 레이아웃 사용자 지정](../ide/customizing-window-layouts-in-visual-studio.md)을 참조하세요. 기본적으로 **컨테이너** 창은 디버거가 실행 중일 때 **조사식** 창에 도킹됩니다.
 
 ## <a name="view-environment-variables"></a>환경 변수 보기
 

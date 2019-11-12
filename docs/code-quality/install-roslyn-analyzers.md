@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b204d6824f06037341420d27083c120e6e4b2a95
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9013d7be60a8091f7ce4fc4fe92fa4acaef43720
+ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649297"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73636531"
 ---
 # <a name="install-net-compiler-platform-code-analyzers"></a>.NET Compiler Platform 코드 분석기 설치
 
@@ -26,7 +26,7 @@ Visual Studio에는 핵심*Roslyn*(.NET Compiler Platform) 분석기가 포함 �
 
 1. Www.nuget.org에 설치 하려는 분석기 패키지를 찾습니다.
 
-   예를 들어 [Microsoft FxCop 분석기를 설치](install-fxcop-analyzers.md#nuget-package) 하 여 코드에서 보안 및 성능 문제를 확인 하는 것이 좋습니다. 또는 [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/) 를 설치 하 여 코드 베이스에서 스타일 문제를 찾습니다.
+   예를 들어 [Microsoft FxCop 분석기를 설치](install-fxcop-analyzers.md#nuget-package) 하 여 코드에서 보안 및 성능 문제를 확인 하는 것이 좋습니다. 또는 [StyleCop](https://www.nuget.org/packages/stylecop.analyzers/) 를 설치 하 여 코드 베이스에서 스타일 문제를 찾습니다.
 
 2. 패키지 [관리자 콘솔](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) 또는 [패키지 관리자 UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)를 사용 하 여 Visual Studio에서 패키지를 설치 합니다.
 

@@ -14,19 +14,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b03b1350b4125262bedfd7fa5284c13d6d38a2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 259b4089e4a54dbde4cc8b30a3da2899ad37a85a
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822911"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189302"
 ---
 # <a name="vsinstr-warnings"></a>VSInstr 경고
 다음 표에는 *VSInstr.exe* 도구에서 발생되는 경고가 나와 있습니다. 경고 번호와 NOWARN 옵션을 함께 사용하여 경고가 표시되지 않도록 할 수 있습니다.
 
 |경고 번호|설명|
 |--------------------|-----------------|
-|**VSP1026**|검사는 MSCorLib를 참조하지 않는 라이브러리에서 지원되지 않습니다. 대체로 이식 가능한 라이브러리의 경우가 여기에 해당합니다.<br /><br />.NET Core에는 [/EnableCodeCoverage](/visualstudio/test/vstest-console-options) 명령줄 옵션이 필요합니다.|
+|**VSP1026**|검사는 MSCorLib를 참조하지 않는 라이브러리에서 지원되지 않습니다. 대체로 이식 가능한 라이브러리의 경우가 여기에 해당합니다.<br /><br />.NET Core에는 [/EnableCodeCoverage](../test/vstest-console-options.md) 명령줄 옵션이 필요합니다.|
 |**VSP2000**|내부 오류입니다. 이 실행 파일에 대한 모듈 파일 이름을 가져올 수 없습니다.|
 |**VSP2001**|\<assembly name>은 강력한 이름의 어셈블리입니다. 다시 서명해야 실행할 수 있습니다.<br /><br /> 이 경고는 서명된 어셈블리를 계측하는 경우에 발생합니다. *sn.exe* 도구를 사용하여 이진 파일에 다시 서명하거나 강력한 이름 요구를 일시적으로 해제할 수 있습니다. 자세한 내용은 [Sn.exe(강력한 이름 도구)](/dotnet/framework/tools/sn-exe-strong-name-tool)를 참조하세요.|
 |**VSP2002**|\<filename> 파일에서 \<funcname> 함수를 찾을 수 없습니다.<br /><br /> 이 경고는 지정한 파일에는 함수를 찾을 수 없는 경우에 발생합니다.|

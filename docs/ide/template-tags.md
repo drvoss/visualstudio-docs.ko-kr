@@ -13,12 +13,12 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 - template tagging, updating
 - template tags, updating
-ms.openlocfilehash: 417b171a731224302e6dd2efa55b45d84455ca4b
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 37fa5449847eb4c093475df11a07decb31168f1f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67891147"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189514"
 ---
 # <a name="add-tags-to-project-templates"></a>프로젝트 템플릿에 태그 추가
 
@@ -40,9 +40,9 @@ ms.locfileid: "67891147"
 
 다음 중 한 가지 작업을 수행하는 경우 프로젝트 템플릿의 *.vstemplate* XML에서 태그를 추가 또는 편집할 수 있습니다.
 
-* 템플릿 내보내기 마법사를 사용하여 [새 프로젝트 템플릿 만들기](/visualstudio/ide/how-to-create-project-templates)
-* [기존 프로젝트 템플릿 업데이트](/visualstudio/ide/how-to-update-existing-templates)
-* [새 VSIX 프로젝트 템플릿 만들기](/visualstudio/extensibility/getting-started-with-the-vsix-project-template)
+* 템플릿 내보내기 마법사를 사용하여 [새 프로젝트 템플릿 만들기](how-to-create-project-templates.md)
+* [기존 프로젝트 템플릿 업데이트](how-to-update-existing-templates.md)
+* [새 VSIX 프로젝트 템플릿 만들기](../extensibility/getting-started-with-the-vsix-project-template.md)
 
 ## <a name="syntax"></a>구문
 
@@ -147,7 +147,7 @@ Visual Studio는 기본 제공되는 태그의 목록을 제공합니다. 기본
 
 ## <a name="see-also"></a>참고 항목
 
-- [Visual Studio 템플릿 스키마 참조](/visualstudio/extensibility/visual-studio-template-schema-reference)
-- [프로젝트 및 항목 템플릿 만들기](/visualstudio/ide/creating-project-and-item-templates)
-- [프로젝트 및 항목 템플릿 사용자 지정](/visualstudio/ide/customizing-project-and-item-templates)
-- [VSIX 프로젝트 템플릿 시작](/visualstudio/extensibility/getting-started-with-the-vsix-project-template)
+- [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
+- [프로젝트 및 항목 템플릿 만들기](creating-project-and-item-templates.md)
+- [프로젝트 및 항목 템플릿 사용자 지정](customizing-project-and-item-templates.md)
+- [VSIX 프로젝트 템플릿 시작](../extensibility/getting-started-with-the-vsix-project-template.md)

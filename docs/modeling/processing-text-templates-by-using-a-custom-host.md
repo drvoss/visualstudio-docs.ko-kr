@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, in application or VS extension
 - text templates, custom directive hosts
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f054bd91f16bb7621d4beebe7631a49cb406132e
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 171eb8810d74df5c1058ba055e598d04f9164633
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870480"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658296"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>사용자 지정 호스트를 사용하여 텍스트 템플릿 처리
 
@@ -48,10 +48,10 @@ string output = engine.ProcessTemplate(templateString, host);
 
  호스트는 오류를 기록하고 어셈블리 및 포함 파일에 대한 참조를 확인할 있어야 하며 템플릿이 실행될 수 있는 응용 프로그램 도메인을 제공하고 각 지시문에 적절한 프로세서를 호출할 수 있어야 합니다.
 
- <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>은 **VisualStudio\*에 정의 되어 있습니다. 0 .dll**및 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) 는 **\*VisualStudio에 정의 되어 있습니다. 0 .dll**.
+ <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>는 **Microsoft.VisualStudio.TextTemplating.\*.0.dll**에 정의되고 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))는 **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0.dll**에 정의되어 있습니다.
 
 ## <a name="in-this-section"></a>섹션 내용
- [연습: 사용자 지정 텍스트 템플릿 호스트](../modeling/walkthrough-creating-a-custom-text-template-host.md) 를 만들면 Visual Studio 외부에서 텍스트 템플릿 기능을 사용할 수 있도록 하는 사용자 지정 텍스트 템플릿 호스트를 만드는 방법을 보여 줍니다.
+ [연습: 사용자 지정 텍스트 템플릿 호스트 ](../modeling/walkthrough-creating-a-custom-text-template-host.md) 만들면 Visual Studio 외부에서 텍스트 템플릿 기능을 사용할 수 있도록 하는 사용자 지정 텍스트 템플릿 호스트를 만드는 방법을 보여 줍니다.
 
 ## <a name="reference"></a>참조
  [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))

@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 662b64f69b278c4cc815a742c5cba26592e000bd
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 73c14c61702ec978d8ffec896b13204c238762a2
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189093"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568832"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual studio SDK를 사용 하 여 visual Studio 기능을 확장 하거나 새 기능을 Visual Studio에 통합할 수 있습니다. Visual Studio Marketplace 뿐만 아니라 다른 사용자에 게 확장을 배포할 수 있습니다. 다음은 Visual Studio를 확장할 수 있는 몇 가지 방법입니다.
@@ -77,7 +77,7 @@ Visual studio SDK를 사용 하 여 visual Studio 기능을 확장 하거나 새
 
 - [메뉴 명령을 사용 하 여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [방법: 확장성 프로젝트를 Visual Studio 2017로 마이그레이션](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
-- [FAQ: 추가 기능을 VSPackage 확장으로 변환](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)
+- [FAQ: 추가 기능을 VSPackage 확장으로 변환](/visualstudio/extensibility/faq-converting-add-ins-to-vspackage-extensions?view=vs-2015)
 - [관리 코드에서 여러 스레드 관리](../extensibility/managing-multiple-threads-in-managed-code.md)
 - [메뉴 및 명령 확장](../extensibility/extending-menus-and-commands.md)
 - [도구 모음에 명령 추가](../extensibility/adding-commands-to-toolbars.md)

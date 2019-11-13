@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 91f80d648450447a6ba0e80f10e5c39764445cef
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 8b8b656aaefe4440e811378da2b84d1b944d4fb1
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189313"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661926"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Visual Studio IDE 시작 | Python
 
@@ -94,7 +94,7 @@ Windows의 세 가지 Visual Studio 버전은 다음과 같습니다. Community,
     Visual Studio 2019부터 코드의 Visual Studio 프로젝트를 만들지 않고 IntelliSense 및 디버깅 같은 기능을 사용할 수 있도록 Python 코드가 포함된 폴더를 열 수 있습니다.
 ::: moniker-end
 
-- [Visual Studio를 사용하여 공동 작업](/visualstudio/liveshare/use/vs)
+- [Visual Studio를 사용하여 공동 작업](/visualstudio/liveshare/)
   
     Visual Studio Live Share를 사용하면 사용 중인 프로그래밍 언어나 빌드 중인 앱 유형에 관계없이 다른 사람과 공동으로 실시간 편집 및 디버깅이 가능합니다. 
 

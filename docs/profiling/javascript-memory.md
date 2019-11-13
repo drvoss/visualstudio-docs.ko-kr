@@ -20,12 +20,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d210dba035c53ba5574bb470247db8b6714a5c97
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: cfbc0dcecbf9b30afdfb268117e34c2fcfc0341e
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826093"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189389"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>UWP 앱에서 JavaScript 메모리 사용량 분석
 Visual Studio에서 제공하는 JavaScript 메모리 분석기를 사용하면 JavaScript를 사용하여 Windows용으로 작성된 UWP 앱의 메모리 사용량을 파악하고 메모리 누수를 찾을 수 있습니다. 지원되는 앱으로는 유니버설 Windows 앱을 위한 앱이 있습니다.
@@ -99,7 +99,7 @@ Visual Studio에서 제공하는 JavaScript 메모리 분석기를 사용하면 
 - [스냅샷 차이 보기](#view-a-snapshot-diff)을(를) 참조하세요. 스냅샷 간의 차이 값을 표시합니다. 이러한 뷰에서는 개체 크기 및 개체 수에서의 차이를 보여줍니다.
 
 ## <a name="isolate-a-memory-leak"></a>Isolate a memory leak
- 이러한 단계에서는 JavaScript 메모리 분석기를 보다 효율적으로 사용할 수 있도록 도와줄 수 있는 워크플로를 제공합니다. 이러한 단계는 응용 프로그램에 메모리 누수가 있다고 의심될 경우에 유용할 수 있습니다. 작업 중인 앱에서 메모리 누수를 확인하는 과정을 안내하는 자습서는 [연습: 메모리 누수 찾기(JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)를 참조하세요.
+ 이러한 단계에서는 JavaScript 메모리 분석기를 보다 효율적으로 사용할 수 있도록 도와줄 수 있는 워크플로를 제공합니다. 이러한 단계는 응용 프로그램에 메모리 누수가 있다고 의심될 경우에 유용할 수 있습니다. 작업 중인 앱에서 메모리 누수를 확인하는 과정을 안내하는 자습서는 [연습: 메모리 누수 찾기(JavaScript)](javascript-memory.md)를 참조하세요.
 
 1. Visual Studio에서 앱을 엽니다.
 
@@ -156,7 +156,7 @@ Visual Studio에서 제공하는 JavaScript 메모리 분석기를 사용하면 
 
      다음 그림에서는 스냅샷 #2에서 남은 개체의 차이 뷰를 보여줍니다.
 
-     ![형식을 보여 주는 스냅숏 차이 뷰](../profiling/media/js_mem_snapshot_diff.png "JS_Mem_Snapshot_Diff")
+     ![형식을 보여 주는 스냅샷 차이 뷰](../profiling/media/js_mem_snapshot_diff.png "JS_Mem_Snapshot_Diff")
 
      앞의 그림에는 이전 스냅샷에서 남은 개체 두 개가 표시됩니다. 특정 앱에 대해 예상된 동작인지 여부를 확인합니다. 그렇지 않으면 메모리 누수를 나타낼 수 있습니다.
 
@@ -183,7 +183,7 @@ Visual Studio에서 제공하는 JavaScript 메모리 분석기를 사용하면 
 
  다음은 스냅샷을 여러 개 만드는 경우의 스냅샷 요약 예제입니다.
 
- ![스냅숏 요약](../profiling/media/js_mem_snapshot_summary.png "JS_Mem_Snapshot_Summary")
+ ![스냅샷 요약](../profiling/media/js_mem_snapshot_summary.png "JS_Mem_Snapshot_Summary")
 
  이 스냅샷 요약에는 다음이 포함됩니다.
 
@@ -208,7 +208,7 @@ Visual Studio에서 제공하는 JavaScript 메모리 분석기를 사용하면 
 
  이 그림은 메모리 사용량 현황 데이터가 보존 크기별로 정렬되어 있는 스냅샷 정보를 담은 형식 뷰를 보여 줍니다.
 
- ![잠재적 문제를 보여 주는 스냅숏 정보 뷰](../profiling/media/js_mem_snapshot_details.png "JS_Mem_Snapshot_Details")
+ ![잠재적 문제를 보여 주는 스냅샷 정보 뷰](../profiling/media/js_mem_snapshot_details.png "JS_Mem_Snapshot_Details")
 
  스냅샷 정보 뷰의 도구 모음에서 옵션을 선택하여 형식, 루트 또는 도미네이터별로 메모리 사용량 데이터를 검토할 수 있습니다.
 
@@ -245,7 +245,7 @@ Visual Studio에서 제공하는 JavaScript 메모리 분석기를 사용하면 
 
  다음 그림은 스냅샷 차이의 형식 뷰를 보여 줍니다.
 
- ![형식을 보여 주는 스냅숏 차이 뷰](../profiling/media/js_mem_snapshot_diff.png "JS_Mem_Snapshot_Diff")
+ ![형식을 보여 주는 스냅샷 차이 뷰](../profiling/media/js_mem_snapshot_diff.png "JS_Mem_Snapshot_Diff")
 
  스냅샷 차이 창의 지배자, 형식 및 루트 뷰는 [스냅샷 정보 보기](#view-snapshot-details) 창과 동일합니다. 스냅샷 차이에는 스냅샷 정보와 동일한 정보 외에 다음 값이 추가로 표시됩니다.
 
@@ -255,14 +255,14 @@ Visual Studio에서 제공하는 JavaScript 메모리 분석기를 사용하면 
 
   스냅샷 간의 차이 정보를 필터링하려면 차이 뷰 상단에 있는 **범위** 필터 중 하나를 선택합니다.
 
-- **스냅숏 #\<number>** 에서 남은 개체. 이 필터는 기본 스냅샷 및 이전 스냅샷과 비교하여 힙에 추가된 개체와 힙에서 제거된 개체 간의 차이를 보여줍니다. 예를 들어 스냅샷 요약에서 개체 수가 +205/-195로 표시된 경우 이 필터는 제거된 것이 아닌 추가된 개체 10개를 보여줍니다.
+- **스냅샷 #\<number&gt;** 에서 남은 개체. 이 필터는 기본 스냅샷 및 이전 스냅샷과 비교하여 힙에 추가된 개체와 힙에서 제거된 개체 간의 차이를 보여줍니다. 예를 들어 스냅샷 요약에서 개체 수가 +205/-195로 표시된 경우 이 필터는 제거된 것이 아닌 추가된 개체 10개를 보여줍니다.
 
   > [!TIP]
   > 이 필터에서 가장 유용한 정보를 표시하려면 [Isolate a memory leak](#isolate-a-memory-leak)에 설명된 단계를 따르세요.
 
-- **스냅숏 #\<number> 및 #\<number>** 사이에 추가된 개체. 이 필터는 이전 스냅샷에서 힙에 추가된 모든 개체를 보여줍니다.
+- **스냅샷 #\<number&gt; 및 #\<number&gt;** 사이에 추가된 개체. 이 필터는 이전 스냅샷에서 힙에 추가된 모든 개체를 보여줍니다.
 
-- **스냅숏 #\<number>** 의 모든 개체. 이 필터 설정은 힙에서 어떤 개체도 필터링하지 않습니다.
+- **스냅샷 #\<number&gt;** 의 모든 개체. 이 필터 설정은 힙에서 어떤 개체도 필터링하지 않습니다.
 
   현재 **범위** 필터와 일치하지 않는 개체 참조를 표시하려면 창의 오른쪽 상단에 있는 설정 목록 ![메모리 분석기의 설정 드롭다운 목록](../profiling/media/js_mem_settings.png "JS_Mem_Settings")에서 **일치하지 않는 참조 표시**를 선택합니다. 이 설정을 사용하도록 설정하는 경우 일치하지 않는 참조가 회색 텍스트로 표시됩니다.
 
@@ -347,7 +347,7 @@ if (performance && performance.mark) {
 
 ## <a name="tips-to-identify-memory-issues"></a>메모리 문제 식별 팁
 
-- 메모리 누수 가능성이 있는 개체를 식별하려면 [메모리 누수 격리](#isolate-a-memory-leak)에 설명된 워크플로를 따르고 차이 뷰에서 **스냅숏 #\<number>에서 남은 개체** 필터를 사용합니다.
+- 메모리 누수 가능성이 있는 개체를 식별하려면 [메모리 누수 격리](#isolate-a-memory-leak)에 설명된 워크플로를 따르고 차이 뷰에서 **스냅샷 #\<number&gt;에서 남은 개체** 필터를 사용합니다.
 
 - [개체 트리에서 개체 찾기](#find-an-object-in-the-object-tree) 를 사용합니다. 루트 뷰는 개체의 루트 개체가 전역 개체가 되는 방식을 보여 줍니다. 이 경우 해당 개체는 가비지 수집되지 않습니다.
 
@@ -359,7 +359,7 @@ if (performance && performance.mark) {
 
   - 일부 개체는 사용할 `dispose` 메서드 및 권장 사항을 제공할 수 있습니다. 예를 들어 목록의 `dispose` 메서드를 호출한 다음 페이지에서 벗어날 경우 [WinJS.Binding.List](/previous-versions/windows/apps/hh700774\(v\=win.10\)) 에서 `createFiltered` 를 호출해야 합니다.
 
-  - 하나 이상의 이벤트 수신기를 제거해야 할 수 있습니다. 자세한 내용은 [View DOM event listeners](/visualstudio/debugger/quickstart-debug-html-and-css)을 참조하세요.
+  - 하나 이상의 이벤트 수신기를 제거해야 할 수 있습니다. 자세한 내용은 [View DOM event listeners](../debugger/quickstart-debug-html-and-css.md)을 참조하세요.
 
 - JavaScript 메모리 분석기에 대한 Build 2013 컨퍼런스에서 [이 비디오](https://channel9.msdn.com/Events/Build/2013/3-316) 의 뒷부분을 시청하세요.
 

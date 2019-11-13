@@ -6,12 +6,12 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: 493e03ecd2a10d7cd9e81467d5886f863cd7229b
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: dac6a1c53cea8982a75c7b12661c98f2feb37f83
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888591"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189664"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure Functions 소개
 
@@ -21,7 +21,7 @@ Azure Functions는 클라우드에서 명시적인 인프라 프로비전이나 
 
 Azure Function 도구는 **Mac용 Visual Studio 7.5** 이상에 포함되어 있습니다.
 
-함수를 만들어 배포하려면 [https://azure.com/free](https://azure.com/free)에서 무료로 제공하는 Azure 구독도 필요합니다.
+함수를 만들어 배포하려면 Azure 구독도 필요합니다. Azure 계정이 없는 경우 오늘 무료로 가입하여 12개월 인기 서비스 무료 혜택, $200 무료 크레딧, 25개 이상의 무료 서비스를 경험할 수 있습니다. -> [https://azure.com/free](https://azure.com/free/dotnet)
 
 ## <a name="creating-your-first-azure-functions-project"></a>Azure Functions 프로젝트 처음 만들기
 

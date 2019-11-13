@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0493e7d16a7c7ecb7a9cf7d414e3bd13cb9ad9a7
-ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.openlocfilehash: cb759ba9571e16d0030f1fd6baf6d4feb03efb2e
+ms.sourcegitcommit: 510529f2f86a9897ed5767973e60c99c0d3a77a6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73636566"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73956140"
 ---
 # <a name="common-msbuild-project-items"></a>일반적인 MSBuild 프로젝트 항목
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서 항목은 하나 이상의 파일에 대한 명명된 참조입니다. 항목에는 파일 이름, 경로 및 버전 번호와 같은 메타데이터가 포함됩니다. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]의 모든 프로젝트 형식에는 공통된 여러 항목이 있습니다. 이러한 항목은 *Microsoft.Build.CommonTypes.xsd* 파일에 정의되어 있습니다.
@@ -141,6 +141,7 @@ ms.locfileid: "73636566"
 
 > [!NOTE]
 > .NET Core SDK를 사용하는 프로젝트에만 적용됩니다.
+
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest
  빌드에 대한 기본 애플리케이션 매니페스트를 나타내며 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 배포 보안 정보를 포함합니다.
 

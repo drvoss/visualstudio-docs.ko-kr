@@ -6,12 +6,12 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
-ms.openlocfilehash: 676193bc84b680c3c78f3b5ddff546a64e4767af
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.openlocfilehash: b4c5b460670a438b1aeaeb11cd8ae540b39cf9b7
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108175"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714413"
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Mac용 Visual Studio 워크로드
 
@@ -31,7 +31,7 @@ Mac용 Visual Studio에서 Xamarin을 사용하는 방법에 대한 자세한 �
 
 ## <a name="mac-desktop-applications"></a>Mac 데스크톱 애플리케이션
 
-Cocoa 사용자 인터페이스 프레임워크를 사용하는 [Xamarin.Mac](https://docs.microsoft.com/xamarin/mac/)을 통해 Mac 앱을 빌드하고, [Mac에서 Xamarin.Forms](https://docs.microsoft.com/xamarin/xamarin-forms/platform/other/mac)를 사용하여 다른 플랫폼과 코드 및 UI를 공유하는 앱을 빌드할 수 있습니다.
+Cocoa 사용자 인터페이스 프레임워크를 사용하는 [Xamarin.Mac](/xamarin/mac/)을 통해 Mac 앱을 빌드하고, [Mac에서 Xamarin.Forms](/xamarin/xamarin-forms/platform/other/mac)를 사용하여 다른 플랫폼과 코드 및 UI를 공유하는 앱을 빌드할 수 있습니다.
 
 ## <a name="net-core-applications"></a>.NET Core 애플리케이션
 

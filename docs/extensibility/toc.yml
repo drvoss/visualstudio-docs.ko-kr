@@ -202,8 +202,6 @@
               href: how-to-open-standard-editors.md
             - name: 열린 문서에 대한 편집기 열기
               href: how-to-open-editors-for-open-documents.md
-        - name: XAML 디자이너 확장성 마이그레이션 가이드
-          href: xaml-designer-extensibility-migration.md
 - name: 프로젝트 확장
   items:
     - name: 프로젝트 확장

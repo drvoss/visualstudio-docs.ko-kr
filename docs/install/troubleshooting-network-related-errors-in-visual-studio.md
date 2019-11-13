@@ -1,7 +1,7 @@
 ---
 title: 네트워크 또는 프록시 오류 문제 해결
 description: 방화벽 또는 프록시 서버 배후에서 Visual Studio를 설치하거나 사용할 때 발생할 수 있는 네트워크 또는 프록시 관련 오류에 대한 솔루션을 찾습니다.
-ms.date: 05/22/2019
+ms.date: 10/29/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7879efca149c31fbe3114b0ddfcba2f2a347f5e6
-ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
+ms.openlocfilehash: fbdacb265d39c9aff96fed37c69c684aa3f8503b
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71062782"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189470"
 ---
 # <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Visual Studio 설치 또는 사용 시의 네트워크 관련 오류 문제 해결
 
@@ -132,6 +132,19 @@ Visual Studio는 TLS(전송 계층 보안) 1.2 프로토콜을 사용하여 네�
 
   > [!NOTE]
   > 개인이 소유한 NuGet 서버 URL은 이 목록에 포함되어 있지 않을 수 있습니다. %APPData%\Nuget\NuGet.Config에서 사용 중인 NuGet 서버를 확인할 수 있습니다.
+
+## <a name="error-failed-to-parse-id-from-parent-process"></a>오류: "부모 프로세스에서 ID를 구문 분석하지 못했습니다"
+
+네트워크 드라이브에서 Visual Studio 부트스트래퍼와 response.json 파일을 사용하는 경우 이 오류 메시지가 나타날 수 있습니다. 오류의 소스는 Windows의 UAC(사용자 계정 컨트롤)입니다.
+
+이 오류가 발생하는 이유는 다음과 같습니다. 매핑된 네트워크 드라이브 또는 [UNC](/dotnet/standard/io/file-patch-formats#unc-paths) 공유는 사용자의 액세스 토큰에 연결됩니다. UAC를 사용하면 두 개의 사용자 [액세스 토큰](/windows/win32/secauthz/access-tokens)이 생성됩니다. 관리자 액세스 권한이 *있는* 토큰과 *없는* 토큰입니다. 네트워크 드라이브 또는 공유를 만든 경우 사용자의 현재 액세스 토큰이 연결됩니다. 부트스트래퍼는 관리자 권한으로 실행해야 하기 때문에 드라이브나 공유가 관리자 액세스 권한이 있는 사용자 액세스 토큰에 연결되지 않은 경우 네트워크 드라이브 또는 공유에 액세스할 수 없습니다.
+
+### <a name="to-fix-this-error"></a>이 오류를 해결하려면
+
+`net use` 명령을 사용하거나 UAC 그룹 정책 설정을 변경할 수 있습니다. 이러한 해결 방법 및 구현 방법에 대한 자세한 내용은 다음 Microsoft 지원 문서를 참조하세요.
+
+* [Windows에서 UAC가 "자격 증명 확인"으로 구성된 경우 관리자 권한 프롬프트에서 매핑된 드라이브를 사용할 수 없습니다](https://support.microsoft.com/help/3035277/mapped-drives-are-not-available-from-an-elevated-prompt-when-uac-is-co)
+* [Windows 운영 체제에서 사용자 계정 컨트롤을 설정한 후 프로그램에서 일부 네트워크 위치에 액세스하지 못할 수 있습니다](https://support.microsoft.com/en-us/help/937624/programs-may-be-unable-to-access-some-network-locations-after-you-turn)
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

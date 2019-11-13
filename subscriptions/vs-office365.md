@@ -6,16 +6,19 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: 일부 Visual Studio 구독에 포함된 Office 365 혜택을 알아봅니다.
-ms.openlocfilehash: 65a071cbfcdc31ca2ef8a36ac5a779fc99467c17
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 58bfed3de99e3a3fa0a46e084ea566ae0451c47f
+ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816466"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73144710"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Office 365 ProPlus
 
 최상의 작업을 만들 수 있습니다. 항상 업데이트되는 앱을 사용하여 어디서든 작업할 수 있습니다. Office 365 ProPlus는 Word, Excel, PowerPoint, OneNote, Outlook, Publisher 및 Access(PC에서만 사용 가능한 Publisher 및 Access)와 같은 프리미엄 앱과 함께 제공되는 구독입니다. PC, Mac, iPad, iPhone, Android 태블릿 및 Android 휴대폰을 포함한 여러 디바이스에 앱을 설치할 수 있습니다. 구독을 사용할 경우 최신 버전의 앱을 다운로드할 수 있으며, 업데이트가 제공되면 자동으로 받을 수 있습니다.
+
+> [!NOTE]
+> Visual Studio 구독을 통해 프로덕션 목적으로 Office 365를 사용할 수 있습니다.  
 
 ## <a name="getting-started-with-office-365-proplus"></a>Office 365 ProPlus 시작
 
@@ -42,10 +45,6 @@ Office 365 ProPlus를 다운로드하고 활성화하려면 다음 단계를 따
    > ![Office 365 제품 키 입력](_img/vs-office365/vs-office365-enter-key.png)
 0. **다음**을 다시 클릭합니다.
 0. **설치**를 클릭하여 Office 애플리케이션을 설치합니다.
-
-## <a name="next-steps"></a>다음 단계
-
-Office용 애플리케이션을 개발하려는 경우 [Office 개발자 구독](vs-office-dev.md)을 활성화하는 것이 좋습니다.
 
 ## <a name="eligibility"></a>자격
 
@@ -75,4 +74,4 @@ Office용 애플리케이션을 개발하려는 경우 [Office 개발자 구독]
 Visual Studio 구독을 최대한 활용하려면 다음과 같은 유용한 혜택을 활성화해야 합니다.
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
-- [Azure DevTest 개별 크레딧](vs-azure.md)
+- [Azure DevTest 개별 크레딧](vs-azure.md) Office용 애플리케이션을 개발하려는 경우 [Office 개발자 구독](vs-office-dev.md)을 활성화하는 것이 좋습니다.

@@ -5,12 +5,12 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: 345111144e0e209d91d34e53fefcd7d1207d9a8a
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 5aa0b02c87335305f29d098b51c89310cc0a9e5d
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872898"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73717275"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Mac용 Visual Studio에서 ASP.NET Core 애플리케이션 빌드
 
@@ -27,7 +27,7 @@ ASP.NET Core는 웹앱 및 웹 서비스, IoT 앱, 모바일 백 엔드처럼 �
 
 ## <a name="prerequisites"></a>전제 조건
 
-- [Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac)
+- [Mac용 Visual Studio](https://www.visualstudio.com/vs/visual-studio-mac)
 
 ## <a name="intended-audience"></a>대상 독자
 
@@ -65,7 +65,7 @@ ASP.NET Core는 웹앱 및 웹 서비스, IoT 앱, 모바일 백 엔드처럼 �
 
     ![](media/netcore-image6.png)
 
-5. 이 CSHTML 파일은 표준 태그와 인라인 C# 조합을 기준으로 HTML을 렌더링하기 위해 Razor 구문을 사용합니다. [온라인 설명서](https://docs.microsoft.com/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c)에서 자세히 알아볼 수 있습니다.
+5. 이 CSHTML 파일은 표준 태그와 인라인 C# 조합을 기준으로 HTML을 렌더링하기 위해 Razor 구문을 사용합니다. [온라인 설명서](/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c)에서 자세히 알아볼 수 있습니다.
 
     ![](media/netcore-image7.png)
 
@@ -73,7 +73,7 @@ ASP.NET Core는 웹앱 및 웹 서비스, IoT 앱, 모바일 백 엔드처럼 �
 
     ![](media/netcore-image8.png)
 
-7. 런타임 시 프로젝트, 그 패키지 및 애플리케이션의 관리를 지원하는 다양한 구성 파일도 있습니다. 예를 들어 기본 애플리케이션 [구성](https://docs.microsoft.com/aspnet/core/fundamentals/configuration)은 **appsettings.json**에 저장됩니다. 그러나 **Development** 환경에 대해 **appsettings.Development.json** 파일을 제공하는 등의 방식으로 환경을 기준으로 이 설정의 일부/전체를 재정의할 수 있습니다.
+7. 런타임 시 프로젝트, 그 패키지 및 애플리케이션의 관리를 지원하는 다양한 구성 파일도 있습니다. 예를 들어 기본 애플리케이션 [구성](/aspnet/core/fundamentals/configuration)은 **appsettings.json**에 저장됩니다. 그러나 **Development** 환경에 대해 **appsettings.Development.json** 파일을 제공하는 등의 방식으로 환경을 기준으로 이 설정의 일부/전체를 재정의할 수 있습니다.
 
     ![](media/netcore-image9.png)
 
@@ -87,7 +87,7 @@ ASP.NET Core는 웹앱 및 웹 서비스, IoT 앱, 모바일 백 엔드처럼 �
 
     ![](media/netcore-image11.png)
 
-3. **WebHostBuilder**가 앱에 대한 서버를 부트스트랩할 호스를 만드는 것을 담당하는 동안 사용자는 **IServer**를 구현하는 서버를 제공해야 합니다. 기본적으로 **[Kestrel](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel)** 은 플랫폼 간 비동기 I/O 라이브러리인 **libuv**를 기반으로 하는 ASP.NET Core용 플랫폼 간 웹 서버입니다.
+3. **WebHostBuilder**가 앱에 대한 서버를 부트스트랩할 호스를 만드는 것을 담당하는 동안 사용자는 **IServer**를 구현하는 서버를 제공해야 합니다. 기본적으로 **[Kestrel](/aspnet/core/fundamentals/servers/kestrel)** 은 플랫폼 간 비동기 I/O 라이브러리인 **libuv**를 기반으로 하는 ASP.NET Core용 플랫폼 간 웹 서버입니다.
 
     ![](media/netcore-image12.png)
 
@@ -189,7 +189,7 @@ ASP.NET Core는 웹앱 및 웹 서비스, IoT 앱, 모바일 백 엔드처럼 �
 
     ![](media/netcore-image32.png)
 
-5. 그런 다음, 기존 설정을 덮어쓸 환경 특정 **appsettings.json** 파일을 로드하려고 합니다. 예를 들어, 해당 특정 환경에 사용하는 제공된 **appsettings.Development.json** 파일입니다. ASP.NET Core에서 구성에 대해 자세히 알아보려면 [설명서](https://docs.microsoft.com/aspnet/core/fundamentals/configuration)를 확인하세요.
+5. 그런 다음, 기존 설정을 덮어쓸 환경 특정 **appsettings.json** 파일을 로드하려고 합니다. 예를 들어, 해당 특정 환경에 사용하는 제공된 **appsettings.Development.json** 파일입니다. ASP.NET Core에서 구성에 대해 자세히 알아보려면 [설명서](/aspnet/core/fundamentals/configuration)를 확인하세요.
 
     ![](media/netcore-image34.png)
 
@@ -243,4 +243,4 @@ ASP.NET Core는 웹앱 및 웹 서비스, IoT 앱, 모바일 백 엔드처럼 �
 
 ## <a name="summary"></a>요약
 
-이 랩에서는 Mac용 Visual Studio를 사용하여 ASP.NET Core 앱 개발을 시작하는 방법을 살펴보았습니다. 보다 완벽한 동영상 데이터베이스 애플리케이션 개발에 대해 살펴보고 싶다면 [ASP.NET Core MVC 시작](https://docs.microsoft.com/aspnet/core/tutorials/first-mvc-app/start-mvc) 자습서를 참조하세요.
+이 랩에서는 Mac용 Visual Studio를 사용하여 ASP.NET Core 앱 개발을 시작하는 방법을 살펴보았습니다. 보다 완벽한 동영상 데이터베이스 애플리케이션 개발에 대해 살펴보고 싶다면 [ASP.NET Core MVC 시작](/aspnet/core/tutorials/first-mvc-app/start-mvc) 자습서를 참조하세요.

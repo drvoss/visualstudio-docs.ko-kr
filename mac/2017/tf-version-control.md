@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 06/25/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: fa269285cf11df848f842524e0d3d496a67b7469
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.openlocfilehash: e45f80ab1a5aab4969b01a2fddcfd88d9dc4eff7
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108227"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73716126"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Team Foundation 버전 제어에 연결
 
@@ -68,7 +68,7 @@ TEE-CLC를 사용하여 설정하는 두 가지 방법이 있습니다.
 
 TEE-CLC가 설치되면 `tf eula` 명령을 실행하여 클라이언트의 라이선스 계약을 보고 동의할 수 있습니다.
 
-마지막으로 TFS/Azure DevOps 환경에서 인증하려면 서버에서 개인용 액세스 토큰을 만들어야 합니다. [개인용 액세스 토큰을 사용하여 인증](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/pats?view=azure-devops)하는 방법을 자세히 알아봅니다. TFVC와 함께 사용할 개인용 액세스 토큰을 만들 경우 토큰을 구성할 때 전체 액세스를 제공해야 합니다.
+마지막으로 TFS/Azure DevOps 환경에서 인증하려면 서버에서 개인용 액세스 토큰을 만들어야 합니다. [개인용 액세스 토큰을 사용하여 인증](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops)하는 방법을 자세히 알아봅니다. TFVC와 함께 사용할 개인용 액세스 토큰을 만들 경우 토큰을 구성할 때 전체 액세스를 제공해야 합니다.
 
 ### <a name="using-the-tee-clc-to-connect-to-your-repo"></a>TEE-CLC를 사용하여 리포지토리에 연결
 

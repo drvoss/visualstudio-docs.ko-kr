@@ -1,17 +1,17 @@
 ---
 title: Mac용 Visual Studio 확장
 description: 확장 패키지라는 모듈을 사용하여 Mac용 Visual Studio의 기능을 확장할 수 있습니다. 이 가이드의 첫 번째 부분에서는 간단한 Mac용 Visual Studio 확장 패키지를 만들어 문서에 날짜와 시간을 삽입합니다. 이 가이드의 두 번째 부분에서는 확장 패키지 시스템의 기본 사항 및 Mac용 Visual Studio의 기초를 형성하는 몇 가지 핵심 API를 소개합니다.
-author: alanjclark
-ms.author: alcl
+author: conceptdev
+ms.author: crdun
 ms.date: 05/07/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: f9c14b408a7714f06ae8a96b0ecc60dfc4b8ebe7
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 02285a38214b4f13c45b4868599c84f47e67013c
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691654"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73716839"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Mac용 Visual Studio 확장
 
@@ -135,7 +135,7 @@ public enum DateInserterCommands
 
 <!--The extension package detailed in the [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) deals with the Text Editor in Visual Studio for Mac, but this is only one of many possible areas for customization. -->
 
-개발에 사용할 수 있는 영역의 범위에 대한 자세한 내용은 [확장 트리 참조](http://monodevelop.com/Developers/Articles/Extension_Tree_Reference) 및 [API 개요](http://monodevelop.com/Developers/Articles/API_Overview)를 참조하세요. 고급 확장 패키지를 빌드하는 경우 [개발자 문서](http://monodevelop.com/Developers/Articles)도 참조하세요. 다음은 사용자 지정이 가능한 영역의 부분 목록입니다.
+개발에 사용할 수 있는 영역의 범위에 대한 자세한 내용은 [확장 트리 참조](https://www.monodevelop.com/developers/articles/extension-tree-reference/) 및 [API 개요](https://www.monodevelop.com/developers/articles/api-overview/)를 참조하세요. 고급 확장 패키지를 빌드하는 경우 [개발자 문서](https://www.monodevelop.com/developers/articles/)도 참조하세요. 다음은 사용자 지정이 가능한 영역의 부분 목록입니다.
 
 * 패드
 * 키 바인딩 구성표
@@ -174,13 +174,13 @@ Visual Studio와 Mac용 Visual Studio 간에 편집기를 공유할 경우의 �
 
 Mac용 Visual Studio와 관련된 확장 정보를 살펴보기 전에 공유 편집기 자체를 자세히 파악하는 것이 도움이 됩니다. 공유 편집기를 깊이 이해하는 데 유용할 수 있는 몇 가지 리소스는 다음과 같습니다.
 
-* [Managed Extensibility Framework](https://docs.microsoft.com/dotnet/framework/mef/index)
-* [편집기의 MEF](https://docs.microsoft.com/visualstudio/extensibility/managed-extensibility-framework-in-the-editor)
-* [편집기 기본 사항](https://docs.microsoft.com/visualstudio/extensibility/inside-the-editor)
-* [언어 서비스 및 편집기 확장 지점](https://docs.microsoft.com/visualstudio/extensibility/language-service-and-editor-extension-points)
+* [Managed Extensibility Framework](/dotnet/framework/mef/index)
+* [편집기의 MEF](/visualstudio/extensibility/managed-extensibility-framework-in-the-editor)
+* [편집기 기본 사항](/visualstudio/extensibility/inside-the-editor)
+* [언어 서비스 및 편집기 확장 지점](/visualstudio/extensibility/language-service-and-editor-extension-points)
 * [편집기 아키텍처 소개 비디오](https://www.youtube.com/watch?v=PkYVztKjO9A)
 
-이러한 리소스에서 숙지해야 하는 기본 개념은 [`ITextBuffer`](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.itextbuffer) 및 [`ITextView`](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.editor.itextview)입니다.
+이러한 리소스에서 숙지해야 하는 기본 개념은 [`ITextBuffer`](/dotnet/api/microsoft.visualstudio.text.itextbuffer) 및 [`ITextView`](/dotnet/api/microsoft.visualstudio.text.editor.itextview)입니다.
 
 * `ITextBuffer`는 시간이 지남에 따라 변경될 수 있는 텍스트의 메모리 내 표현입니다. `ITextBuffer`의 `CurrentSnapshot` 속성은 현재 버퍼 내용의 ‘변경이 불가능한’ 표현인 `ITextSnapshot` 인스턴스를 반환합니다.  버퍼를 편집하면 CurrentSnapshot 속성이 최신 버전으로 업데이트됩니다. 분석기는 모든 스레드의 텍스트 스냅샷 및 해당 콘텐츠가 변경되지 않았는지 검사할 수 있습니다.
 

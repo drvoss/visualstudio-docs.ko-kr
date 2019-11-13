@@ -12,29 +12,29 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 186ea6ac58736098720d60c644c30801073b7453
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 9933a013ed4f2df0978fb66e3aff87b4cdc024f9
+ms.sourcegitcommit: c6af923c1f485959d751b23ab3f03541013fc4a7
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018723"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73925956"
 ---
-# <a name="how-to-specify-additional-code-information-by-using-_analysis_assume"></a>방법: _Analysis_assume을 사용하여 추가 코드 정보 지정
+# <a name="how-to-specify-additional-code-information-by-using-_analysis_assume"></a>방법: _Analysis_assume를 사용 하 여 추가 코드 정보 지정
 
 분석 프로세스에 도움이 되 고 경고를 줄이는 C/C++ 코드에 대 한 코드 분석 도구에 힌트를 제공할 수 있습니다. 추가 정보를 제공 하려면 다음 함수를 사용 합니다.
 
 `_Analysis_assume(`  `expr`  `)`
 
-`expr`-true로 평가 되는 식입니다.
+`expr`-true로 평가 되는 것으로 간주 되는 식입니다.
 
 코드 분석 도구는 함수가 표시 되는 지점에서 식이 나타내는 조건이 true 인 것으로 가정 합니다. 예를 들어 변수에 대 한 할당을 통해 식이 변경 될 때까지 true로 유지 됩니다.
 
 > [!NOTE]
-> `_Analysis_assume`은 코드 최적화에 영향을 주지 않습니다. 코드 분석 도구 외부에서 `_Analysis_assume`은 no op로 정의 됩니다.
+> `_Analysis_assume`는 코드 최적화에 영향을 주지 않습니다. 코드 분석 도구 외부에서 `_Analysis_assume`은 (는) 작동 하지 않는 것으로 정의 됩니다.
 
 ## <a name="example"></a>예제
 
-다음 코드에서는 `_Analysis_assume`을 사용 하 여 코드 분석 경고 [C6388](../code-quality/c6388.md)을 수정 합니다.
+다음 코드는 `_Analysis_assume`를 사용 하 여 코드 분석 경고 [C6388](../code-quality/c6388.md)를 수정 합니다.
 
 ```cpp
 #include<windows.h>
@@ -52,7 +52,7 @@ void test()
 {
     char pc = (char)malloc(5);
     FreeAndNull(&pc);
-    __analysis_assume(pc == NULL);
+    _Analysis_assume(pc == NULL);
     f(pc);
 }
 ```

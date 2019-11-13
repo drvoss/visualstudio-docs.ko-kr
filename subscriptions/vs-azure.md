@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Visual Studio 구독에 포함된 Azure DevTest 개별 크레딧 혜택을 활성화하는 방법을 알아봅니다.
-ms.openlocfilehash: 7bd6313a0e6d52f9e461383fb04c9039f3b974ac
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 25bb97675c65244258c217901a010ab2211554d0
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816456"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983761"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 Microsoft Azure 사용
 Visual Studio 구독자는 추가 비용 없이 Microsoft Azure를 사용할 수 있습니다.  [월간 Azure DevTest 개별 크레딧](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)을 사용하면 Azure는 개발/테스트를 위한 개인용 샌드박스가 됩니다.  가상 머신, 클라우드 서비스 및 기타 Azure 리소스를 프로비전할 수 있습니다.  크레딧 금액은 구독 수준에 따라 다릅니다.
@@ -41,9 +41,11 @@ Visual Studio 구독자는 추가 비용 없이 Microsoft Azure를 사용할 수
 ## <a name="eligibility"></a>자격
 |                 구독 수준/프로그램                 |           이점           |                         갱신 가능?                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
-|              Visual Studio Enterprise Standard               |     150 USD 월간 크레딧     |                             예                             ||
+|              Visual Studio Enterprise Standard               |     150 USD 월간 크레딧     |                             예                             |
+|              GitHub Enterprise가 포함된 Visual Studio Enterprise               |     150 USD 월간 크레딧     |                             예                             |
 |               Visual Studio Enterprise 월간               |        사용할 수 없음        |                                                             |
 |             Visual Studio Professional Standard              |     50 USD 월간 크레딧      |                             예
+|              GitHub Enterprise가 포함된 Visual Studio Professional              |     150 USD 월간 크레딧     |                             예                             |
 |              Visual Studio Professional 월간              |        사용할 수 없음        |                                                             |
 |                    Visual Studio Test Pro                    |     50 USD 월간 크레딧      |                             예                             |
 |                        MSDN 플랫폼                        |     100 USD 월간 크레딧     |                             예                             |

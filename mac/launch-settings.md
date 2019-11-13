@@ -5,18 +5,18 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 09/18/2019
 ms.assetid: a556f9d7-86a8-408e-aa54-392584845889
-ms.openlocfilehash: 7135dd05c687e3caed3ee64618ff71c093f4cd63
-ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
+ms.openlocfilehash: d35bfed901dca960ae21b4e2cf2fa75067c1b3ee
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71322588"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73715939"
 ---
 # <a name="launchsettingsjson"></a>launchSettings.json
 
 ASP.NET Core 프로젝트를 개발하는 경우, launchSettings.json 파일 내용을 사용자 지정하여 개발 시나리오에서 프로젝트가 시작되는 방식을 구성할 수 있습니다. Mac용 Visual Studio에서 프로젝트 옵션 UI를 사용하거나 직접 편집하여 이 파일을 업데이트할 수 있습니다. 이 파일은 Windows에서 Visual Studio를 실행할 때 또는 `dotnet`을 사용하는 명령줄에서 사용할 수 있는 것과 동일한 구성 파일입니다. 이 파일은 프로젝트의 속성 폴더 아래에 저장됩니다.
 
-자세한 내용은 [ASP.NET Core에서 여러 환경 사용](https://docs.microsoft.com/aspnet/core/fundamentals/environments)을 참조하세요. 이 문서에서는 Mac용 Visual Studio에서 이 파일을 업데이트하는 방법을 설명합니다.
+자세한 내용은 [ASP.NET Core에서 여러 환경 사용](/aspnet/core/fundamentals/environments)을 참조하세요. 이 문서에서는 Mac용 Visual Studio에서 이 파일을 업데이트하는 방법을 설명합니다.
 
 ## <a name="update-the-start-configuration-by-using-visual-studio-for-mac"></a>Mac용 Visual Studio를 사용하여 시작 구성 업데이트
 
@@ -35,7 +35,7 @@ Mac용 Visual Studio에서 launchSettings.json 파일을 직접 편집하거나,
 
 ## <a name="configure-environment-variables"></a>환경 변수 구성
 
-그리드를 사용하여 환경 변수의 값을 지정할 수 있습니다. 이러한 환경 변수는 Mac용 Visual Studio 내에서 애플리케이션을 시작할 때 설정됩니다. ASP.NET Core 애플리케이션을 개발할 때는 특별한 `ASPNETCORE_ENVIRONMENT` 환경 변수에 유의해야 합니다. 자세한 내용은 [ASP.NET Core에서 여러 환경 사용](https://docs.microsoft.com/aspnet/core/fundamentals/environments)을 참조하세요.
+그리드를 사용하여 환경 변수의 값을 지정할 수 있습니다. 이러한 환경 변수는 Mac용 Visual Studio 내에서 애플리케이션을 시작할 때 설정됩니다. ASP.NET Core 애플리케이션을 개발할 때는 특별한 `ASPNETCORE_ENVIRONMENT` 환경 변수에 유의해야 합니다. 자세한 내용은 [ASP.NET Core에서 여러 환경 사용](/aspnet/core/fundamentals/environments)을 참조하세요.
 
 
 ## <a name="configure-the-start-url"></a>시작 URL 구성

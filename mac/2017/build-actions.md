@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 16617f8de15fbef40941c4f9409497da142c9e8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 97cabcacf276c6972a717e968656430ad32e37e3
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62932783"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73715842"
 ---
 # <a name="build-actions"></a>빌드 작업
 
@@ -22,7 +22,7 @@ C# 프로젝트에 대한 몇 가지 일반적인 빌드 작업은 다음과 같
 
 * **None** - 파일이 어떤 방식으로든 빌드에 속하지 않습니다. IDE에서 쉽게 액세스하기 위해 프로젝트에 포함되었습니다.
 * **Compile** - 파일이 C# 컴파일러에 소스 파일로 전달됩니다.
-* **EmbeddedResource** - 파일이 어셈블리에 포함될 리소스로 C# 컴파일러에 전달됩니다. 그런 다음, `System.Reflection` 네임스페이스의 [Assembly.GetManifestResourceStream](https://docs.microsoft.com/dotnet/api/system.reflection.assembly.getmanifestresourcestream)을 사용하여 어셈블리에서 파일을 읽을 수 있습니다.
+* **EmbeddedResource** - 파일이 어셈블리에 포함될 리소스로 C# 컴파일러에 전달됩니다. 그런 다음, `System.Reflection` 네임스페이스의 [Assembly.GetManifestResourceStream](/dotnet/api/system.reflection.assembly.getmanifestresourcestream)을 사용하여 어셈블리에서 파일을 읽을 수 있습니다.
 * **Content** - ASP.NET 프로젝트의 경우 이러한 파일이 배포 시 사이트의 일부로 포함됩니다. Xamarin.iOS 및 Xamarin.Mac 프로젝트의 경우 앱 번들에 포함됩니다.
 
 솔루션 탐색기에서 하나를 초과하는 파일을 선택하여 한 번에 여러 파일에 빌드 작업을 설정할 수 있습니다.

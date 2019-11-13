@@ -6,16 +6,16 @@ ms.author: sayedha
 ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
-ms.openlocfilehash: d9a9df56074cde8735b54c12bbbf15a79e727497
-ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.openlocfilehash: fe9ef921ccfc42b77bd08925805aeac6f4aec777
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71962921"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73715880"
 ---
 # <a name="create-razor-web-apps"></a>Razor 웹앱 만들기
 
-이 가이드에서는 첫 번째 Razor 웹앱을 만드는 방법을 설명합니다. 자세한 지침은 [ASP.NET Core의 Razor Pages 소개](https://docs.microsoft.com/aspnet/core/razor-pages/index)를 참조하세요.
+이 가이드에서는 첫 번째 Razor 웹앱을 만드는 방법을 설명합니다. 자세한 지침은 [ASP.NET Core의 Razor Pages 소개](/aspnet/core/razor-pages/index)를 참조하세요.
 
 Mac용 Visual Studio는 IntelliSense 및 *.cshtml* 파일에서 구문 강조 표시를 비롯한 Razor 편집을 지원합니다. Mac용 Visual Studio 2019 8.3 이상에서는, Razor 파일 내에서 컨텍스트 인식 IntelliSense를 사용할 수 있으므로, 문서 내에서 현재 편집 중인 언어와 일치하는 IntelliSense가 제공됩니다.
 
@@ -36,7 +36,7 @@ Mac용 Visual Studio는 IntelliSense 및 *.cshtml* 파일에서 구문 강조 �
    Mac용 Visual Studio에서 프로젝트가 코드 레이아웃 창에 열립니다.
 1. **Command+Option+F5**를 사용하여 디버그하지 않고 프로젝트를 실행합니다.
 
-   Visual Studio에서 [Kestrel](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel)을 시작하고 브라우저에서 `https://localhost:5001`을 열어 첫 번째 Razor 웹앱을 표시합니다.
+   Visual Studio에서 [Kestrel](/aspnet/core/fundamentals/servers/kestrel)을 시작하고 브라우저에서 `https://localhost:5001`을 열어 첫 번째 Razor 웹앱을 표시합니다.
 
    ![Safari의 Razor 웹앱](media/razor-webapp.png)
 
@@ -50,7 +50,7 @@ Razor 웹앱은 다음 구성 요소를 포함합니다.
    - HTML 표시 및 Razor 구문의 경우 *\*.cshtml* 파일.
    - 페이지 이벤트 처리를 위한 C# 코드 숨김의 경우 *\*.cshtml.cs* 파일.
 
-지원 파일에는 밑줄로 시작하는 이름이 있습니다. 예를 들어 _Layout.cshtml 파일은 모든 페이지에 공통되는 UI 요소를 구성합니다. 이 파일은 페이지 맨 위에 있는 탐색 메뉴와 맨 아래에 있는 저작권 표시를 설정합니다. 자세한 내용은 [ASP.NET Core의 레이아웃](https://docs.microsoft.com/aspnet/core/mvc/views/layout)을 참조하세요.
+지원 파일에는 밑줄로 시작하는 이름이 있습니다. 예를 들어 _Layout.cshtml 파일은 모든 페이지에 공통되는 UI 요소를 구성합니다. 이 파일은 페이지 맨 위에 있는 탐색 메뉴와 맨 아래에 있는 저작권 표시를 설정합니다. 자세한 내용은 [ASP.NET Core의 레이아웃](/aspnet/core/mvc/views/layout)을 참조하세요.
 
 ### <a name="launch-settings"></a>시작 설정
 
@@ -60,20 +60,20 @@ Razor 웹앱은 다음 구성 요소를 포함합니다.
 
 *appSettings.json* 파일에는 연결 문자열과 같은 구성 데이터가 포함되어 있습니다.
 
-구성에 대한 자세한 내용은 [ASP.NET의 구성 가이드](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/index)를 참조하세요.
+구성에 대한 자세한 내용은 [ASP.NET의 구성 가이드](/aspnet/core/fundamentals/configuration/index)를 참조하세요.
 
 ### <a name="wwwroot-folder"></a>wwwroot 폴더
 
-이 폴더에는 HTML, JavaScript, CSS 파일과 같은 정적 파일이 포함되어 있습니다. 자세한 내용은 [ASP.NET Core의 정적 파일](https://docs.microsoft.com/aspnet/core/fundamentals/static-files)을 참조하세요.
+이 폴더에는 HTML, JavaScript, CSS 파일과 같은 정적 파일이 포함되어 있습니다. 자세한 내용은 [ASP.NET Core의 정적 파일](/aspnet/core/fundamentals/static-files)을 참조하세요.
 
 ### <a name="programcs"></a>Program.cs
 
-이 파일에는 프로그램 진입점이 포함되어 있습니다. 자세한 내용은 [ASP.NET Core 웹 호스트](https://docs.microsoft.com/aspnet/core/fundamentals/host/web-host)를 참조하세요.
+이 파일에는 프로그램 진입점이 포함되어 있습니다. 자세한 내용은 [ASP.NET Core 웹 호스트](/aspnet/core/fundamentals/host/web-host)를 참조하세요.
 
 ### <a name="startupcs"></a>Startup.cs
 
-이 파일에는 앱에서 쿠키에 대한 동의 필요 여부 등의 앱 동작을 구성하는 코드가 포함되어 있습니다. 자세한 내용은 [ASP.NET Core에서 앱 시작](https://docs.microsoft.com/aspnet/core/fundamentals/startup)을 참조하세요.
+이 파일에는 앱에서 쿠키에 대한 동의 필요 여부 등의 앱 동작을 구성하는 코드가 포함되어 있습니다. 자세한 내용은 [ASP.NET Core에서 앱 시작](/aspnet/core/fundamentals/startup)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
-Razor 웹앱을 만드는 방법에 대한 포괄적인 가이드는 [ASP.NET Core의 Razor Pages 소개](https://docs.microsoft.com/aspnet/core/razor-pages/index)를 참조하세요.
+Razor 웹앱을 만드는 방법에 대한 포괄적인 가이드는 [ASP.NET Core의 Razor Pages 소개](/aspnet/core/razor-pages/index)를 참조하세요.

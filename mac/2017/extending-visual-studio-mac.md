@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 26290a5e70a9f4b0f6eeb8df5727ef4f04662136
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 87a4fae1bd5430037b34297f803a6d955a052f68
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67890632"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73716942"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Mac용 Visual Studio 확장
 
@@ -135,7 +135,7 @@ public enum DateInserterCommands
 
 <!--The extension package detailed in the [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) deals with the Text Editor in Visual Studio for Mac, but this is only one of many possible areas for customization. -->
 
-개발에 사용할 수 있는 영역의 범위에 대한 자세한 내용은 [확장 트리 참조](http://monodevelop.com/Developers/Articles/Extension_Tree_Reference) 및 [API 개요](http://monodevelop.com/Developers/Articles/API_Overview)를 참조하세요. 고급 확장 패키지를 빌드하는 경우 [개발자 문서](http://monodevelop.com/Developers/Articles)도 참조하세요. 다음은 사용자 지정이 가능한 영역의 부분 목록입니다.
+개발에 사용할 수 있는 영역의 범위에 대한 자세한 내용은 [확장 트리 참조](https://www.monodevelop.com/developers/articles/extension-tree-reference/) 및 [API 개요](https://www.monodevelop.com/developers/articles/api-overview/)를 참조하세요. 고급 확장 패키지를 빌드하는 경우 [개발자 문서](https://www.monodevelop.com/developers/articles/)도 참조하세요. 다음은 사용자 지정이 가능한 영역의 부분 목록입니다.
 
 * 패드
 * 키 바인딩 구성표

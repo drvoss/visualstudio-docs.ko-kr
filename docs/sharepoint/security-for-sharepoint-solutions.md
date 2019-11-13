@@ -15,18 +15,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 16fb3e4a0e1aed14e4a3f1b3178dc753f5dc10b4
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 6dc1449a40528670274ea5b275cca3f0a8d2f277
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984179"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983783"
 ---
 # <a name="security-for-sharepoint-solutions"></a>SharePoint 솔루션에 대 한 보안
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]에는 SharePoint 응용 프로그램의 보안을 향상 시키는 데 도움이 되는 다음 기능이 포함 되어 있습니다.
 
 ## <a name="safe-control-entries"></a>안전 컨트롤 항목
- [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 만든 모든 SharePoint 프로젝트 항목에는 safe controls 컬렉션을 나타내는 **Safe 컨트롤 항목** 속성이 있습니다. **Safe** 하위 속성을 사용 하면 안전 하다 고 생각 되는 컨트롤을 지정할 수 있습니다. 자세한 내용은 [프로젝트 항목의 패키지 및 배포 정보 제공](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) 및 [Safe 웹 파트 지정](/previous-versions/office/developer/sharepoint2003/dd583154(v=office.11)#sharepoint_northwindwebparts_topic19)을 참조 하세요.
+ [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]에서 만든 모든 SharePoint 프로젝트 항목에는 safe controls 컬렉션을 나타내는 **Safe 컨트롤 항목** 속성이 있습니다. **Safe** 하위 속성을 사용 하면 안전 하다 고 생각 되는 컨트롤을 지정할 수 있습니다. 자세한 내용은 [프로젝트 항목의 패키지 및 배포 정보 제공](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) 및 [Safe 웹 파트 지정](/previous-versions/office/developer/sharepoint2003/dd583154(v=office.11)#specifying-safe-web-parts)을 참조 하세요.
 
 ## <a name="allowpartiallytrustedcallers-attribute"></a>AllowPartiallyTrustedCallers 특성
  기본적으로 런타임 CAS (코드 액세스 보안) 시스템에서 완전히 신뢰할 수 있는 응용 프로그램만 공유 된 관리 코드 어셈블리에 액세스할 수 있습니다. 완전히 신뢰할 수 있는 어셈블리를 AllowPartiallyTrustedCallers 특성으로 표시 하면 부분적으로 신뢰할 수 있는 어셈블리에 액세스할 수 있습니다.

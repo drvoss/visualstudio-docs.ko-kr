@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 677dddbde5e90117dc19acfaf54a941c304ae7f1
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 713e7319618b42e2cdc4b8c0951bd79c225ac1b6
+ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180064"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73636581"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>먼저 Visual Studio IDE 살펴보기
 
@@ -90,7 +90,7 @@ Visual Studio의 기능을 계속 탐색하기 위해 새 프로젝트를 만들
 1. 표시되는 **새 프로젝트** 대화 상자에서 기본 프로젝트 이름을 그대로 사용하고 **확인**을 선택합니다.
 ::: moniker-end
 
-   프로젝트가 만들어지고 **편집기** 창에 *server.cs*라는 파일이 열립니다. **편집기**에는 파일 내용이 표시되며, 여기서 Visual Studio에서 하는 코딩 작업 대부분을 수행합니다.
+   프로젝트가 만들어지고 **편집기** 창에 *server.js*라는 파일이 열립니다. **편집기**에는 파일 내용이 표시되며, 여기서 Visual Studio에서 하는 코딩 작업 대부분을 수행합니다.
 
    ![Visual Studio의 편집기](media/editor.png)
 

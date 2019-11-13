@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 8dac5c929289b9a891f7dc5cb1bf803e1abd5b3a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: a483d1382ea1f67c14aa4674016331bfe0f76e7d
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826108"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189380"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>유니버설 Windows 앱의 HTML UI 응답성 분석
 이 항목에서는 유니버설 Windows 앱에 사용할 수 있는 성능 도구인 UI 응답성 프로파일러를 사용하여 앱에서 성능 문제를 격리하는 방법에 대해 설명합니다.
@@ -69,7 +69,7 @@ ms.locfileid: "67826108"
 6. 응용 프로그램의 프로파일링을 중지하고 프로파일러가 수집한 데이터를 보려면 **수집 중지**를 선택합니다.
 
 ## <a name="isolate-an-issue"></a>문제 격리
- 다음 섹션에서는 성능 문제를 격리하는 데 도움이 되는 제안 사항을 제공합니다. 샘플 성능 테스트 앱을 사용하여 성능 문제를 확인 및 수정하는 방법에 대한 단계별 설명은 [연습: UI 응답성 개선(HTML)](/visualstudio/profiling/html-ui-responsiveness)을 참조하세요.
+ 다음 섹션에서는 성능 문제를 격리하는 데 도움이 되는 제안 사항을 제공합니다. 샘플 성능 테스트 앱을 사용하여 성능 문제를 확인 및 수정하는 방법에 대한 단계별 설명은 [연습: UI 응답성 개선(HTML)](html-ui-responsiveness.md)을 참조하세요.
 
 ### <a name="Workflow"></a> UI 응답성 문제 격리
  다음 단계에서는 UI 응답성 프로파일러를 보다 효과적으로 사용할 수 있는 제안 워크플로를 제공합니다.
@@ -167,7 +167,7 @@ if (performance.mark && performance.measure) {
 
  기간 단위는 타임라인 세부 정보 보기에서 **사용자 측정** 이벤트로 표시되며 선택 시 자세한 정보를 보여줍니다.
 
- ![시간 표시 막대 세부 정보 보기의 사용자 측정 이벤트](../profiling/media/js_htmlvizprofiler_user_measure.png "JS_HTMLVizProfiler_User_Measure")
+ ![타임라인 세부 정보 보기의 사용자 측정 이벤트](../profiling/media/js_htmlvizprofiler_user_measure.png "JS_HTMLVizProfiler_User_Measure")
 
 ## <a name="analyze-data"></a>데이터 분석
  다음 단원에서는 프로파일러에 표시되는 데이터를 해석하기 위한 정보를 제공합니다.
@@ -242,7 +242,7 @@ if (performance.mark && performance.measure) {
 
  다음 예제에서는 DOM 클릭 이벤트를 위한 이벤트 수신기가 선택된 경우의 시간 표시 막대 정보 그래프 모양을 보여 줍니다.
 
- ![시간 표시 막대 세부 정보 그래프](../profiling/media/js_htmlvizprof_timelinedet.png "JS_HTMLVizProf_TimelineDet")
+ ![타임라인 세부 정보 그래프](../profiling/media/js_htmlvizprof_timelinedet.png "JS_HTMLVizProf_TimelineDet")
 
  이 그림에서 **이벤트 이름** 열의 **spinAction** 이벤트 처리기는 선택 시 소스 코드의 이벤트 처리기로 연결되는 링크입니다. 오른쪽 창에서 **콜백 함수** 속성은 소스 코드에 대한 같은 링크를 제공합니다. 또한 다른 속성에는 관련 DOM 요소와 같은 이벤트에 대한 정보가 제공됩니다.
 
@@ -274,14 +274,14 @@ if (performance.mark && performance.measure) {
 ### <a name="FilterTimelineDetails"></a> 타임라인 세부 정보 필터링
  특정 이벤트의 상황에 맞는 메뉴에서 **이벤트 필터** 를 선택하여 타임 라인 세부 정보의 뷰를 특정 이벤트로 필터링할 수 있습니다. 이 옵션을 선택하면 타임라인 및 표 뷰가 선택된 이벤트로 범위가 정해집니다. CPU 사용률 그래프에서의 선택도 특정 이벤트로 범위가 정해집니다.
 
- ![이벤트에 대한 시간 표시 막대 필터링](../profiling/media/js_htmlvizprofiler_filtertoevent.png "JS_HTMLVizProfiler_FilterToEvent")
+ ![이벤트에 대한 타임라인 필터링](../profiling/media/js_htmlvizprofiler_filtertoevent.png "JS_HTMLVizProfiler_FilterToEvent")
 
 ### <a name="FilterEvents"></a> 필터 이벤트
  타임라인 세부 정보 그래프에서 일부 이벤트를 필터링해 데이터의 노이즈를 줄이거나 성능 시나리오와 관련되지 않은 데이터를 제거할 수 있습니다. 이벤트 이름 또는 이벤트 기간으로 필터링하거나 여기서 설명하는 특정 필터로 필터링할 수 있습니다.
 
  이미지 디코딩, 잘못된 다운로드 및 GC 이벤트를 필터링하려면 아래쪽 창의 필터 아이콘에서 **백그라운드 작업** 옵션의 선택을 취소합니다. 이러한 이벤트는 실행 가능성이 높지 않지만 기본적으로 숨겨집니다.
 
- ![시간 표시 막대에서 이벤트 필터링](../profiling/media/js_htmlvizprofiler_event_filter.png "JS_HTMLVizProfiler_Event_Filter")
+ ![타임라인에서 이벤트 필터링](../profiling/media/js_htmlvizprofiler_event_filter.png "JS_HTMLVizProfiler_Event_Filter")
 
  HTTP 요청 이벤트를 필터링하려면 아래쪽 창의 필터 아이콘에서 **네트워크 트래픽** 옵션의 선택을 취소합니다. 기본적으로 이러한 이벤트는 타임라인 세부 정보 그래프에 표시됩니다.
 
@@ -299,7 +299,7 @@ if (performance.mark && performance.measure) {
 
  프레임별로 이벤트를 그룹화하는 경우 타임라인 세부 정보 보기의 최상위 이벤트는 각각 프레임을 나타냅니다.
 
- ![프레임별로 그룹화된 시간 표시 막대 이벤트](../profiling/media/js_htmlvizprofiler_frame_grouping.png "JS_HTMLVizProfiler_Frame_Grouping")
+ ![프레임별로 그룹화된 타임라인 이벤트](../profiling/media/js_htmlvizprofiler_frame_grouping.png "JS_HTMLVizProfiler_Frame_Grouping")
 
 ## <a name="save-a-diagnostic-session"></a>진단 세션 저장
  Visual Studio에서 진단 세션과 연결된 탭을 닫을 때 이 세션을 저장할 수 있습니다. 저장된 세션은 나중에 다시 열 수 있습니다.
@@ -346,8 +346,8 @@ if (performance.mark && performance.measure) {
 |그리기|렌더링|DOM에서 시각적 항목이 변경되었고 페이지의 일부를 다시 렌더링하려고 했습니다.|
 |레이어 렌더링|렌더링|독립적으로 렌더링된 DOM 조각(레이어라고 함)에서 페이지의 일부분을 렌더링해야 하는 시각적 항목이 변경되었습니다.|
 |이미지 디코딩|이미지 디코딩|DOM에 이미지가 포함되어 해당 이미지를 원본 형식에서 비트맵으로 압축 해제하고 디코딩하려 했습니다.|
-|프레임|해당 없음|DOM에서 시각적 항목이 변경되어 페이지에서 영향을 받는 모든 부분이 다시 그려져야 합니다. 그룹화에 사용되는 도구 생성 이벤트입니다.|
-|사용자 측정|해당 없음|앱 관련 시나리오는 `performance.measure` 메서드를 사용하여 측정되었습니다. 코드 분석에 사용되는 도구 생성 이벤트입니다.|
+|프레임|해당 사항 없음|DOM에서 시각적 항목이 변경되어 페이지에서 영향을 받는 모든 부분이 다시 그려져야 합니다. 그룹화에 사용되는 도구 생성 이벤트입니다.|
+|사용자 측정|해당 사항 없음|앱 관련 시나리오는 `performance.measure` 메서드를 사용하여 측정되었습니다. 코드 분석에 사용되는 도구 생성 이벤트입니다.|
 
 ## <a name="additional-information"></a>추가 정보
 

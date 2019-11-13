@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ac150e20b505a5ef4446e77761790a6111fb6c10
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 12b8f29f80f80a4322dc6a4cf43061696db6f370
+ms.sourcegitcommit: 4b911e768601992ad42dd5911dc6a01e1fe48588
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293519"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73413569"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>방화벽 또는 프록시 서버 배후에서 Visual Studio와 Azure 서비스 설치 및 사용
 
@@ -51,6 +51,7 @@ Visual Studio 설치 관리자는 다양한 도메인과 다운로드 서버에�
 | download.microsoft.com | 설치 패키지 다운로드 위치 |
 | download.visualstudio.com | 설치 패키지 다운로드 위치 |
 | dl.xamarin.com | 설치 패키지 다운로드 위치 |
+| xamarin-downloads.azureedge.net | Android SDK 패키지 다운로드 목록 위치 |
 | marketplace.visualstudio.com | Visual Studio 확장 다운로드 위치 |
 | visualstudio.microsoft.com | 문서 위치 |
 | docs.microsoft.com | 문서 위치 |
@@ -102,7 +103,7 @@ Visual Studio 설치 관리자는 다양한 도메인과 다운로드 서버에�
 | GitHub 리포지토리 정보 | api.github.com | https | 443 | Bower 패키지에 대한 추가 정보를 가져오는 데 필요합니다. |
 | 웹 Linter | Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org | http | 80 | |
 | Cookiecutter<br>탐색기 템플릿<br>검색 <br><br>Cookiecutter <br>탐색기 프로젝트<br> 만들기 | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | https | 443<br> | 추천 피드 및 GitHub 리포지토리에서 온라인 템플릿을 검색하는 데 사용됩니다. <br><br>PyPI(Python 패키지 인덱스)에서 cookiecutter Python 패키지의 일회성 주문형 설치를 요구하는 cookiecutter 템플릿에서 프로젝트를 만드는 데 사용됩니다. |
-| Python 패키지 <br>검색<br><br>Python 패키지 <br>관리<br><br>새로 만들기 <br>Python <br> 프로젝트 <br>템플릿 | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https | 443 | pip 패키지를 검색하는 기능을 제공합니다.<br><br>pip가 없을 경우 자동으로 pip를 설치하는 데 사용됩니다. <br><br>다음과 같은 새 Python 프로젝트 템플릿을 cookiecutter 템플릿 URL로 확인하는 데 사용됩니다.<br> - 분류자 프로젝트<br>- 클러스터링 프로젝트 <br> - 재발 프로젝트 <br> - PyKinect를 사용하는 PyGame <br> - Pyvot 프로젝트 |
+| Python 패키지 <br>검색<br><br>Python 패키지 <br>관리<br><br>단추를 사용하여 새 <br>Python <br> 프로젝트 <br>템플릿 | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https | 443 | pip 패키지를 검색하는 기능을 제공합니다.<br><br>pip가 없을 경우 자동으로 pip를 설치하는 데 사용됩니다. <br><br>다음과 같은 새 Python 프로젝트 템플릿을 cookiecutter 템플릿 URL로 확인하는 데 사용됩니다.<br> - 분류자 프로젝트<br>- 클러스터링 프로젝트 <br> - 재발 프로젝트 <br> - PyKinect를 사용하는 PyGame <br> - Pyvot 프로젝트 |
 | Office 웹 <br>추가 기능(add-in) <br> file:/// <br>확인 <br>서비스 | verificationservice.osi.office.net | https | 443 | Office 웹 추가 기능에 대한 매니페스트의 유효성을 검사하는 데 사용됩니다. |
 | SharePoint 및 <br>Office 추가 기능 | sharepoint.com | https | 443 | SharePoint Online에 대한 SharePoint 및 Office 추가 기능을 게시 및 테스트하는 데 사용됩니다. |
 | 워크플로 관리자 <br>테스트 서비스<br> 호스트 | | http | 12292 | 워크플로를 사용하여 SharePoint 추가 기능을 테스트하기 위해 자동으로 생성되는 방화벽 규칙입니다. |

@@ -1,11 +1,10 @@
 ---
 title: '빠른 시작: 첫 번째 Vue.js 앱 만들기'
 description: 이 빠른 시작에서는 Visual Studio용 Node.js 도구를 사용하여 Visual Studio에서 Vue.js 앱을 만듭니다.
-ms.custom: seodec18
-ms.date: 09/24/2018
+ms.custom: ''
+ms.date: 10/31/2019
 ms.topic: quickstart
 ms.devlang: javascript
-ms.assetid: b0e4ebed-1a01-41ef-aad1-4d8465ce5322
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
@@ -13,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 28e86068b2255d1796363405c0231c1fb6bdd480
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 5f7b877d825a573b935a9bf0f2c907ec2ce6f808
+ms.sourcegitcommit: 2f64b3b231900018fceafb72b5a1c65140213a18
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226506"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73428768"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>빠른 시작: Visual Studio를 사용하여 첫 번째 Vue.js 앱 만들기
 
@@ -104,9 +103,13 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 5~10분 분량의 소개�
 
 1. (TypeScript 프로젝트에만 해당) Visual Studio에서 **빌드** > **솔루션 정리**를 선택합니다.
 
+    ::: moniker range=">=vs-2019"
+    Visual Studio 2019에 포함된 TypeScript 템플릿에서 이 단계를 건너뜁니다.
+    ::: moniker-end
+
 1. 그런 다음, **빌드** > **솔루션 빌드**를 선택하여 프로젝트를 빌드합니다. 빌드 결과를 보려면 **출력** 창을 확인하고 **출력 보기** 목록에서 **빌드**를 선택합니다.
 
-    Vue.js 프로젝트 템플릿은 빌드 후 이벤트를 구성하여 `build` npm 스크립트를 사용합니다. 이 설정을 수정하려면 Windows Explorer에서 프로젝트 파일(*\<projectname\>.njsproj*)을 열고 다음 코드 줄을 찾습니다.
+    JavaScript Vue.js 프로젝트 템플릿(및 이전 버전의 TypeScript 템플릿)은 빌드 후 이벤트를 구성하여 `build` npm 스크립트를 사용합니다. 이 설정을 수정하려면 Windows Explorer에서 프로젝트 파일( *\<projectname\>.njsproj*)을 열고 다음 코드 줄을 찾습니다.
 
     ```xml
     <PostBuildEvent>npm run build</PostBuildEvent>
@@ -119,6 +122,8 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 5~10분 분량의 소개�
    콘솔에 *개발 서버 시작*이라는 메시지가 표시됩니다.
 
    그런 다음, 앱이 브라우저에서 열립니다.
+   
+   실행 중인 앱이 표시되지 않으면 페이지를 새로 고칩니다.
 
    ![브라우저에서 실행 중인 Vue.js 앱](../javascript/media/vuejs-running-app.png)
 
@@ -128,6 +133,6 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 5~10분 분량의 소개�
 
 ## <a name="next-steps"></a>다음 단계
 
-- [Node.js 및 Express에 대한 자습서](../nodejs/tutorial-nodejs.md) 살펴보기
-- [Node.js 및 React에 대한 자습서](/visualstudio/javascript/tutorial-nodejs-with-react-and-jsx) 살펴보기
+- [Node.js 및 Express에 대한 자습서](tutorial-nodejs.md) 살펴보기
+- [Node.js 및 React에 대한 자습서](tutorial-nodejs-with-react-and-jsx.md) 살펴보기
 - [앱을 Linux App Service에 배포](../javascript/publish-nodejs-app-azure.md)

@@ -13,12 +13,13 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1259f92b89fc6d83bb0b7296cc07844bf25df705
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+monikerRange: vs-2017
+ms.openlocfilehash: 0fc78a84d0c2f86e8db6c4703cc7404a32508d72
+ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128328"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73144738"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>UWP 앱의 에너지 사용 분석
 
@@ -48,7 +49,7 @@ Visual Studio **에너지 소비** 프로파일러를 사용하면 자체 배터
 ## <a name="identify-scenarios-with-user-marks"></a>사용자 표시로 시나리오 식별
  프로파일링 데이터에 *사용자 표시* 를 추가하여 타임라인 눈금자의 영역을 식별할 수 있습니다.
 
- ![시간 표시 막대의 사용자 표시](../profiling/media/profilers_usermarktimeline.png "PROFILERS_UserMarkTimeline")
+ ![타임라인의 사용자 표시](../profiling/media/profilers_usermarktimeline.png "PROFILERS_UserMarkTimeline")
 
  이 표시는 메서드 실행 시 타임라인에 주황색 삼각형으로 표시됩니다. 이 표시를 마우스로 가리키면 메시지와 시간이 도구 설명으로 표시됩니다. 두 개 이상의 사용자 표시가 서로 가까이 있으면 표시가 병합되고 도구 설명 데이터가 결합됩니다. 타임라인을 확대하면 표시가 분리되어 표시됩니다.
 
@@ -139,7 +140,7 @@ if (performance && performance.mark) {
 ## <a name="optimize-energy-use"></a>에너지 사용 최적화
  네트워크 연결에서는 데이터 전송 이외에 연결 초기화, 유지, 종료의 에너지 비용이 발생합니다. 일부 네트워크는 단일 연결에서 더 많은 데이터를 전송할 수 있도록 데이터가 전송 또는 수신된 후 일정 기간 동안 연결을 유지합니다. **리소스(설정/해제)** 창을 사용하여 앱이 연결과 상호 작용하는 방법을 검사할 수 있습니다.
 
- ![리소스&#40;설정&#47;해제&#41; 창](../profiling/media/energyprof_resources.png "ENERGYPROF_Resources")
+ ![리소스 &#40;On&#47;Off&#41; 창](../profiling/media/energyprof_resources.png "ENERGYPROF_Resources")
 
  **네트워크** 및 **데이터 전송** 막대에서 일련의 작은 데이터 패킷을 가끔 전송하기 위해 오랜 시간 동안 연결이 열려 있다고 표시되는 경우, 데이터를 한번에 전송하도록 일괄 처리하여 네트워크가 열려 있는 시간을 줄이고 에너지 소비도 절약할 수 있습니다.
 

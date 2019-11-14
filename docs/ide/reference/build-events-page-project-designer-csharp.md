@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cca0ec0491d7a2c513f8bc52acaadf7c80d7fd22
-ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
+ms.openlocfilehash: 4842a5a08de96cd40a45d0765d427cc74cbf5432
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72789832"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714382"
 ---
 # <a name="build-events-page-project-designer-c"></a>프로젝트 디자이너, 빌드 이벤트 페이지(C#)
 
@@ -77,11 +77,19 @@ ms.locfileid: "72789832"
 </PropertyGroup>
 ```
 
-Visual Studio 2019 및 최신 업데이트 Visual Studio 2017은 **PreBuildEvent** 및 **PostBuildEvent** 설정에 대해 `PreBuild` 또는 `PostBuild`라는 MSBuild 대상을 추가합니다. 예를 들어 앞의 예에서 Visual Studio는 이제 다음 코드를 생성합니다.
+.NET Core 프로젝트의 경우 Visual Studio 2019 및 최신 업데이트 Visual Studio 2017은 **PreBuildEvent** 및 **PostBuildEvent** 설정에 대해 `PreBuild` 또는 `PostBuild`라는 MSBuild 대상을 추가합니다. 이러한 대상은 MSBuild에서 인식하는 **BeforeTargets** 및 **AfterTargets** 특성을 사용합니다. 예를 들어 앞의 예에서 Visual Studio는 이제 다음 코드를 생성합니다.
 
 ```xml
 <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
     <Exec Command="&quot;$(ProjectDir)PreBuildEvent.bat&quot; &quot;$(ProjectDir)..\&quot; &quot;$(ProjectDir)&quot; &quot;$(TargetDir)&quot;" />
+</Target>
+```
+
+빌드 후 이벤트의 경우 이름 `PostBuild`를 사용하고 `AfterTargets` 특성을 `PostBuildEvent`로 설정합니다.
+
+```xml
+<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+   <Exec Command="echo Output written to $(TargetDir)" />
 </Target>
 ```
 

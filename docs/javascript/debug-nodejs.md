@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 386a489faf859038cd0f529da74a0fbac07b7250
-ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.openlocfilehash: 0405488f6f456f22711498e81789881ffc5a0a8a
+ms.sourcegitcommit: 308a2bdbea81df78bffc3a01afce4ab13131fabc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73636545"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "73913003"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Visual Studio에서 JavaScript 또는 TypeScript 앱 디버그
 
@@ -105,13 +105,13 @@ ASP.NET 이외 애플리케이션의 경우 여기에 설명된 단계를 따르
 
 Visual Studio에서 디버거를 연결하고 클라이언트 쪽 코드에서 중단점을 적중하려면 디버거는 올바른 프로세스를 식별하기 위한 도움이 필요합니다. 이를 사용하는 한 방법은 다음과 같습니다.
 
-1. Visual Studio로 전환한 다음 JavaScript 파일, TypeScript 파일, *.vue* 파일 또는 JSX 파일일 수 있는 소스 코드에서 중단점을 설정합니다. (return 문 또는 var 선언과 같은 중단점을 허용하는 코드 줄에 중단점을 설정합니다.)
+1. Visual Studio로 전환한 다음 JavaScript 파일, TypeScript 파일 또는 JSX 파일일 수 있는 소스 코드에서 중단점을 설정합니다. (return 문 또는 var 선언과 같은 중단점을 허용하는 코드 줄에 중단점을 설정합니다.)
 
     ![중단점 설정](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
     트랜스파일된 파일에서 특정 코드를 찾으려면 **Ctrl**+**F**(**편집** > **찾기 및 바꾸기** > **빠른 찾기**)를 사용합니다.
 
-    클라이언트 쪽 코드의 경우 TypeScript 파일의 중단점에 도달하려면 일반적으로 *.vue* 또는 JSX 파일에 [소스 맵](#generate_source_maps)을 사용해야 합니다. Visual Studio에서 디버깅을 지원하려면 소스 맵을 올바르게 구성해야 합니다.
+    클라이언트 쪽 코드의 경우 TypeScript 파일 또는 JSX 파일의 중단점에 도달하려면 일반적으로 [소스 맵](#generate_source_maps)을 사용해야 합니다. Visual Studio에서 디버깅을 지원하려면 소스 맵을 올바르게 구성해야 합니다.
 
 2. Visual Studio에서 디버그 대상으로 대상 브라우저를 선택하여 **Ctrl**+**F5**(**디버그** > **디버깅하지 않고 시작**) 키를 눌러 브라우저에서 앱을 실행합니다.
 
@@ -157,7 +157,7 @@ Visual Studio에서 디버거를 연결하고 클라이언트 쪽 코드에서 �
 
     디버거에서 일시 중지된 동안 변수를 가리키고 디버거 창을 사용하여 앱 상태를 검사할 수 있습니다. 단계별 코드 실행(**F5**, **F10** 및 **F11**)으로 디버거로 이동할 수 있습니다. 기본 디버깅 기능에 대한 자세한 내용은 [디버거 소개](../debugger/debugger-feature-tour.md)를 참조하세요.
 
-    환경 및 브라우저 상태와 함께 이전에 수행한 단계에 따라 트랜스파일된 *.js* 파일 또는 소스 파일에서 중단점을 적중할 수 있습니다. 어느 경우든 단계별 코드를 실행하고 변수를 검사할 수 있습니다.
+    앱 유형, 이전에 수행한 단계 및 브라우저 상태와 같은 기타 요소에 따라 변환 컴파일된 *.js* 파일 또는 소스 파일에서 중단점을 적중할 수 있습니다. 어느 경우든 단계별 코드를 실행하고 변수를 검사할 수 있습니다.
 
    * TypeScript, JSX 또는 *.vue* 소스 파일에서 코드를 분석해야 하지만 이를 수행할 수 없는 경우 [문제 해결](#troubleshooting_source_maps) 섹션에 설명된 대로 환경이 올바르게 설정되어 있는지 확인합니다.
 
@@ -165,13 +165,13 @@ Visual Studio에서 디버거를 연결하고 클라이언트 쪽 코드에서 �
 
 ### <a name="troubleshooting_source_maps"></a> 중단점 및 소스 맵 문제 해결
 
-TypeScript, JSX 또는 *.vue* 소스 파일에서 코드를 중단해야 하는데 그럴 수 없는 경우 이전 단계에 설명된 대로 **프로세스에 연결**을 사용하여 디버거를 연결합니다. 환경이 올바르게 설정되었는지 확인합니다.
+TypeScript 또는 JSX 소스 파일에서 코드를 중단해야 하는데 그럴 수 없는 경우 이전 단계에 설명된 대로 **프로세스에 연결**을 사용하여 디버거를 연결합니다. 환경이 올바르게 설정되었는지 확인합니다.
 
 * 디버그 모드에서 브라우저를 실행할 수 있도록 Chrome 확장 프로그램(작업 관리자 사용)을 비롯한 모든 브라우저 인스턴스를 닫았습니다.
       
 * [디버그 모드에서 브라우저를 시작](#prepare_the_browser_for_debugging)해야 합니다.
 
-* 소스 맵 파일에 소스 파일에 대한 올바른 참조가 포함되어 있는지와 Visual Studio 디버거가 소스 파일을 찾지 못하게 하는 *webpack:///* 등의 지원되지 않는 접두사가 포함되지 않았는지 확인합니다. 예를 들어 *webpack:///.app.tsx*와 같은 참조를 *./app.tsx*로 수정할 수 있습니다. 소스 맵 파일에서 또는 사용자 지정 빌드 구성을 통해 수동으로 이 작업을 수행할 수 있습니다. 자세한 내용은 [디버깅에 대한 소스 맵 생성](#generate_source_maps)을 참조하세요.
+* 소스 맵 파일에 소스 파일에 대한 올바른 상대 경로가 포함되어 있는지와 Visual Studio 디버거가 소스 파일을 찾지 못하게 하는 *webpack:///* 등의 지원되지 않는 접두사가 포함되지 않았는지 확인합니다. 예를 들어 *webpack:///.app.tsx*와 같은 참조를 *./app.tsx*로 수정할 수 있습니다. 이러한 작업은 테스트에 유용한 소스 맵 파일 또는 사용자 지정 빌드 구성을 통해 수동으로 수행할 수 있습니다. 자세한 내용은 [디버깅에 대한 소스 맵 생성](#generate_source_maps)을 참조하세요.
 
 또는 소스 파일(예: *app.tsx*)에서 코드를 중단해야 하는데 그럴 수 없는 경우 소스 파일에서 `debugger;` 문을 사용하거나 대신 Chrome 개발자 도구(또는 Microsoft Edge의 F12 도구)에서 중단점을 설정합니다.
 
@@ -235,7 +235,7 @@ Visual Studio에서 클라이언트 쪽 코드의 디버깅을 사용하도록 �
 
 * **inlineSourceMap**: 각 소스 파일에 대해 별도의 소스 맵을 만드는 대신 소스 맵이 있는 단일 파일을 내보냅니다.
 * **inlineSources**: 단일 파일 내에서 소스 맵과 함께 소스를 내보냅니다. *inlineSourceMap* 또는 *sourceMap*을 설정해야 합니다.
-* **mapRoot**: 디버거에서 기본 위치 대신 소스 맵(*.map*) 파일을 찾아야 하는 위치를 지정합니다. 런타임 *.map* 파일이 *.js* 파일과 다른 위치에 있어야 하는 경우 이 플래그를 사용합니다. 지정된 위치가 소스 맵에 포함되어 디버거를 *.map* 파일의 위치로 안내합니다.
+* **mapRoot**: 디버거에서 기본 위치 대신 소스 맵( *.map*) 파일을 찾아야 하는 위치를 지정합니다. 런타임 *.map* 파일이 *.js* 파일과 다른 위치에 있어야 하는 경우 이 플래그를 사용합니다. 지정된 위치가 소스 맵에 포함되어 디버거를 *.map* 파일의 위치로 안내합니다.
 * **sourceMap**: 해당하는 *.map* 파일을 생성합니다.
 * **sourceRoot**: 소스 위치 대신 디버거에서 TypeScript 파일을 찾아야 하는 위치를 지정합니다. 런타임 소스가 디자인 시 위치와 다른 위치에 있어야 하는 경우 이 플래그를 사용합니다. 지정된 위치가 소스 맵에 포함되어 소스 파일이 있는 위치로 디버거를 안내합니다.
 

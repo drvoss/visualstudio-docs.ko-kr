@@ -5,19 +5,19 @@ description: 날짜별로 정렬된 Visual Studio의 릴리스 버전 및 빌드
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 11/06/2019
+ms.date: 11/12/2019
 ms.topic: reference
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e6201bde76cd33659a002154d55b84d1f5813d7c
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 338cb064e8acdc375c8c724bcd2e12dc06b3f809
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713974"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983720"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 빌드 번호 및 릴리스 날짜
 
@@ -29,6 +29,7 @@ ms.locfileid: "73713974"
 
 | **Version**| **채널** | **릴리스 날짜** | **빌드 버전** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.3.9 | Release | 2019년 11월 12일 | 16.3.29509.3 |
 | 16.4.0 | Preview 4 | 2019 년 11 월 6 일 | 16.4.29505.145 |
 | 16.3.8 | Release | 2019 년 11 월 5 일 | 16.3.29503.13 |
 | 16.4.0 | Preview 3 | 2019 년 11 월 4 일 | 16.4.29430.225 |

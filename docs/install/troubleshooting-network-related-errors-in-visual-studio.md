@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fbdacb265d39c9aff96fed37c69c684aa3f8503b
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: f1b928d04ae581b0df04ab74f3a756d359abc06f
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189470"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713955"
 ---
 # <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Visual Studio 설치 또는 사용 시의 네트워크 관련 오류 문제 해결
 
@@ -137,7 +137,7 @@ Visual Studio는 TLS(전송 계층 보안) 1.2 프로토콜을 사용하여 네�
 
 네트워크 드라이브에서 Visual Studio 부트스트래퍼와 response.json 파일을 사용하는 경우 이 오류 메시지가 나타날 수 있습니다. 오류의 소스는 Windows의 UAC(사용자 계정 컨트롤)입니다.
 
-이 오류가 발생하는 이유는 다음과 같습니다. 매핑된 네트워크 드라이브 또는 [UNC](/dotnet/standard/io/file-patch-formats#unc-paths) 공유는 사용자의 액세스 토큰에 연결됩니다. UAC를 사용하면 두 개의 사용자 [액세스 토큰](/windows/win32/secauthz/access-tokens)이 생성됩니다. 관리자 액세스 권한이 *있는* 토큰과 *없는* 토큰입니다. 네트워크 드라이브 또는 공유를 만든 경우 사용자의 현재 액세스 토큰이 연결됩니다. 부트스트래퍼는 관리자 권한으로 실행해야 하기 때문에 드라이브나 공유가 관리자 액세스 권한이 있는 사용자 액세스 토큰에 연결되지 않은 경우 네트워크 드라이브 또는 공유에 액세스할 수 없습니다.
+이 오류가 발생하는 이유는 다음과 같습니다. 매핑된 네트워크 드라이브 또는 [UNC](/dotnet/standard/io/file-path-formats#unc-paths) 공유는 사용자의 액세스 토큰에 연결됩니다. UAC를 사용하면 두 개의 사용자 [액세스 토큰](/windows/win32/secauthz/access-tokens)이 생성됩니다. 관리자 액세스 권한이 *있는* 토큰과 *없는* 토큰입니다. 네트워크 드라이브 또는 공유를 만든 경우 사용자의 현재 액세스 토큰이 연결됩니다. 부트스트래퍼는 관리자 권한으로 실행해야 하기 때문에 드라이브나 공유가 관리자 액세스 권한이 있는 사용자 액세스 토큰에 연결되지 않은 경우 네트워크 드라이브 또는 공유에 액세스할 수 없습니다.
 
 ### <a name="to-fix-this-error"></a>이 오류를 해결하려면
 

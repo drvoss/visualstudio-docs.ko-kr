@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54e65c411afe9815696112dfbcc99bcb9433c4db
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: e72b072ad2cabab643d64f149a31b1b8dbb2a054
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416871"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713950"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>방법: 빌드에서 프로젝트 제외
 
@@ -53,6 +53,19 @@ ms.locfileid: "68416871"
 6. **표준** 도구 모음에서 새 솔루션 구성이 **솔루션 구성** 상자의 활성 구성인지 확인합니다.
 
 7. 메뉴 모음에서 **빌드** > **솔루션 다시 빌드**를 선택합니다.
+
+## <a name="skipped-projects"></a>건너뛴 프로젝트
+
+프로젝트가 최신이 아니기 때문이거나 구성에서 제외되었기 때문에 빌드하는 동안 프로젝트를 건너뛸 수 있습니다. Visual Studio는 MSBuild를 사용하여 프로젝트를 빌드합니다. MSBuild는 파일 타임스탬프에 의해 결정된 대로 출력이 입력보다 오래된 경우에만 대상을 빌드합니다. 다시 빌드를 강제로 수행하려면 **빌드** > **다시 빌드 솔루션** 명령을 사용하세요.
+
+**출력** 창의 **빌드** 창에서 Visual Studio는 최신 상태였던 프로젝트 수, 성공적으로 빌드된 횟수, 실패했던 횟수 및 건너뛴 횟수를 보고합니다. 건너뛴 횟수에는 프로젝트가 최신 상태였기 때문에 빌드되지 않은 프로젝트는 포함되지 않습니다. 프로젝트가 활성 구성에서 제외된 경우 빌드하는 동안 건너뜁니다. 빌드 출력에 프로젝트를 건너뛴다는 메시지가 표시됩니다.
+
+```output
+2>------ Skipped Build: Project: ConsoleApp2, Configuration: Debug x86 ------
+2>Project not selected to build for this solution configuration
+```
+
+프로젝트를 건너뛴 이유를 확인하려면 활성 구성(이전 예시의 `Debug x86`)을 확인하고 **빌드** > **구성 관리자**를 선택합니다. 이 문서에서 설명한 대로 각 구성에 대해 건너뛰는 프로젝트를 보거나 변경할 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 

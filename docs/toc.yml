@@ -166,404 +166,418 @@
       href: python/
     - name: Node.js
       href: javascript/
-- name: 방법 가이드
+- name: 개발
   items:
-    - name: 개발
+    - name: 코드 구성 및 편집
+      href: ide/index-writing-code.yml
+    - name: IDE에서 이동
+      href: ide/how-to-move-around-in-the-visual-studio-ide.md
+    - name: 솔루션 및 프로젝트
       items:
-        - name: 시작
-          href: ide/index-writing-code.yml
-        - name: IDE에서 이동
-          href: ide/how-to-move-around-in-the-visual-studio-ide.md
-        - name: 솔루션 및 프로젝트
+        - name: 솔루션 및 프로젝트 작업
+          href: ide/solutions-and-projects-in-visual-studio.md
+        - name: 새 프로젝트 만들기
+          href: ide/create-new-project.md
+        - name: 솔루션 및 프로젝트 만들기
+          href: ide/creating-solutions-and-projects.md
+        - name: 리포지토리에서 프로젝트 열기
+          href: get-started/tutorial-open-project-from-repo.md
+        - name: '프로젝트 포팅, 마이그레이션 및 업그레이드'
+          href: porting/port-migrate-and-upgrade-visual-studio-projects.md
+        - name: 프로젝트 및 솔루션 속성 관리
+          href: ide/managing-project-and-solution-properties.md
+        - name: 프로젝트 참조
           items:
-            - name: 솔루션 및 프로젝트 작업
-              href: ide/solutions-and-projects-in-visual-studio.md
-            - name: 새 프로젝트 만들기
-              href: ide/create-new-project.md
-            - name: 솔루션 및 프로젝트 만들기
-              href: ide/creating-solutions-and-projects.md
-            - name: 리포지토리에서 프로젝트 열기
-              href: get-started/tutorial-open-project-from-repo.md
-            - name: '프로젝트 포팅, 마이그레이션 및 업그레이드'
-              href: porting/port-migrate-and-upgrade-visual-studio-projects.md
-            - name: 프로젝트 및 솔루션 속성 관리
-              href: ide/managing-project-and-solution-properties.md
-            - name: 프로젝트 참조
-              items:
-                - name: 프로젝트에서 참조 관리
-                  href: ide/managing-references-in-a-project.md
-                - name: 참조 관리자를 사용하여 참조 추가 또는 제거
-                  href: ide/how-to-add-or-remove-references-by-using-the-reference-manager.md
-                - name: 가져온 네임스페이스 추가 또는 제거(Visual Basic)
-                  href: ide/how-to-add-or-remove-imported-namespaces-visual-basic.md
-                - name: 끊어진 참조 문제 해결
-                  href: ide/troubleshooting-broken-references.md
-            - name: 애플리케이션 리소스 관리(.NET)
-              href: ide/managing-application-resources-dotnet.md
-            - name: 애플리케이션 설정(.NET)
-              items:
-                - name: 애플리케이션 설정 관리(.NET)
-                  href: ide/managing-application-settings-dotnet.md
-                - name: '앱 구성 파일을 C# 프로젝트에 추가'
-                  href: ide/how-to-add-app-config-file.md
-            - name: 매니페스트 서명
-              items:
-                - name: 어셈블리 및 매니페스트 서명 관리
-                  href: ide/managing-assembly-and-manifest-signing.md
-                - name: 애플리케이션 및 배포 매니페스트 서명
-                  href: ide/how-to-sign-application-and-deployment-manifests.md
-            - name: '애플리케이션 아이콘 지정(Visual Basic, C#)'
-              href: ide/how-to-specify-an-application-icon-visual-basic-csharp.md
-            - name: 프레임워크를 대상으로 지정
-              href: ide/visual-studio-multi-targeting-overview.md
-            - name: 템플릿 만들기
-              items:
-                - name: 프로젝트 및 항목 템플릿 만들기
-                  href: ide/creating-project-and-item-templates.md
-                - name: 템플릿에 태그 추가
-                  href: ide/template-tags.md
-                - name: 프로젝트 템플릿 만들기
-                  href: ide/how-to-create-project-templates.md
-                - name: 다중 프로젝트 템플릿 만들기
-                  href: ide/how-to-create-multi-project-templates.md
-                - name: 항목 템플릿 만들기
-                  href: ide/how-to-create-item-templates.md
-                - name: 다중 파일 항목 템플릿 만들기
-                  href: ide/how-to-create-multi-file-item-templates.md
-                - name: 웹 템플릿 만들기
-                  href: ide/how-to-manually-create-web-templates.md
-                - name: 템플릿 문제 해결
-                  href: ide/how-to-troubleshoot-templates.md
-            - name: 프로젝트 및 항목 템플릿 찾기
-              href: ide/how-to-locate-and-organize-project-and-item-templates.md
-            - name: 템플릿 사용자 지정
-              items:
-                - name: 프로젝트 및 항목 템플릿 사용자 지정
-                  href: ide/customizing-project-and-item-templates.md
-                - name: 기존 템플릿 업데이트
-                  href: ide/how-to-update-existing-templates.md
-                - name: 템플릿 매개 변수 대체
-                  href: ide/how-to-substitute-parameters-in-a-template.md
-                - name: 템플릿 매개 변수
-                  href: ide/template-parameters.md
-            - name: 64비트 지원
-              href: ide/visual-studio-ide-64-bit-support.md
-        - name: 프로젝트 또는 솔루션 없이 개발
+            - name: 프로젝트에서 참조 관리
+              href: ide/managing-references-in-a-project.md
+            - name: 참조 관리자를 사용하여 참조 추가 또는 제거
+              href: ide/how-to-add-or-remove-references-by-using-the-reference-manager.md
+            - name: 가져온 네임스페이스 추가 또는 제거(Visual Basic)
+              href: ide/how-to-add-or-remove-imported-namespaces-visual-basic.md
+            - name: 끊어진 참조 문제 해결
+              href: ide/troubleshooting-broken-references.md
+        - name: 애플리케이션 리소스 관리(.NET)
+          href: ide/managing-application-resources-dotnet.md
+        - name: 애플리케이션 설정(.NET)
           items:
-            - name: '방법: 프로젝트 없이 개발'
-              displayName: Open folder
-              href: ide/develop-code-in-visual-studio-without-projects-or-solutions.md
-            - name: 빌드 및 디버그 작업 사용자 지정
-              displayName: makefile tasks.vs.json
-              href: ide/customize-build-and-debug-tasks-in-visual-studio.md
-        - name: 프로젝트 또는 리포지토리에 연결
-          displayName: Azure DevOps VSTS GitHub
-          href: ide/connect-team-project.md
-        - name: 편집기
+            - name: 애플리케이션 설정 관리(.NET)
+              href: ide/managing-application-settings-dotnet.md
+            - name: '앱 구성 파일을 C# 프로젝트에 추가'
+              href: ide/how-to-add-app-config-file.md
+        - name: 매니페스트 서명
           items:
-            - name: 편집기 사용
-              href: ide/writing-code-in-the-code-and-text-editor.md
-            - name: 찾기 및 바꾸기
-              items:
-                - name: 텍스트 찾기 및 바꾸기
-                  href: ide/finding-and-replacing-text.md
-                - name: 정규식 사용
-                  dispayName: RegEx
-                  href: ide/using-regular-expressions-in-visual-studio.md
-                - name: 찾기-명령 상자
-                  href: ide/find-command-box.md
-                - name: 파일에서 찾기
-                  href: ide/find-in-files.md
-                - name: 파일에서 바꾸기
-                  href: ide/replace-in-files.md
-            - name: 인코딩
-              items:
-                - name: 인코딩 및 줄 바꿈
-                  href: ide/encodings-and-line-breaks.md
-                - name: 인코딩을 사용하여 파일 저장 및 열기
-                  href: ide/how-to-save-and-open-files-with-encoding.md
-            - name: 개요
-              displayName: Expand and collapse
-              href: ide/outlining.md
-            - name: 코드 생성 및 리팩터링
-              items:
-                - name: 코드 생성 및 수정
-                  href: ide/code-generation-in-visual-studio.md
-                - name: 코드 조각
-                  items:
-                    - name: 코드 조각 사용
-                      href: ide/code-snippets.md
-                    - name: 'C# 코드 조각 참조'
-                      href: ide/visual-csharp-code-snippets.md
-                    - name: C++ 코드 조각 참조
-                      href: ide/visual-cpp-code-snippets.md
-                    - name: XML 주석 삽입
-                      href: ide/reference/generate-xml-documentation-comments.md
-                    - name: 코드 감싸기 코드 조각 사용
-                      href: ide/how-to-use-surround-with-code-snippets.md
-                    - name: 최선의 구현 방법
-                      href: ide/best-practices-for-using-code-snippets.md
-                    - name: 코드 조각 만들기
-                      items:
-                        - name: '연습: 코드 조각 만들기'
-                          href: ide/walkthrough-creating-a-code-snippet.md
-                        - name: 코드 조각 배포
-                          href: ide/how-to-distribute-code-snippets.md
-                        - name: 코드 조각 함수
-                          href: ide/code-snippet-functions.md
-                        - name: 코드 조각 스키마 참조
-                          href: ide/code-snippets-schema-reference.md
-                        - name: 코드 조각 문제 해결
-                          href: ide/troubleshooting-snippets.md
-                - name: 빠른 작업
-                  href: ide/quick-actions.md
-                  displayName: light bulb screwdriver suggestions
-                  items:
-                    - name: 일반적인 빠른 작업
-                      href: ide/common-quick-actions.md
-                    - name: 클래스/형식 생성
-                      href: ide/reference/generate-class-type.md
-                    - name: 메서드 생성
-                      href: ide/reference/generate-method.md
-                    - name: 필드/속성/로컬 생성
-                      href: ide/reference/generate-field-property-local.md
-                    - name: 생성자 생성
-                      href: ide/reference/generate-constructor.md
-                    - name: 분해자 생성
-                      href: ide/reference/generate-deconstructor.md
-                    - name: 메서드에 매개 변수 추가
-                      href: ide/reference/add-parameter.md
-                    - name: 재정의 생성
-                      href: ide/reference/generate-override.md
-                    - name: Equals 및 GetHashCode 메서드 재정의 생성
-                      href: ide/reference/generate-equals-gethashcode-methods.md
-                    - name: usings 생성
-                      href: ide/reference/generate-usings.md
-                    - name: 추상 클래스 구현
-                      href: ide/reference/implement-abstract-class.md
-                    - name: 인터페이스 구현
-                      href: ide/reference/implement-interface.md
-                    - name: 로컬 변수 지정
-                      href: ide/reference/introduce-local-variable.md
-                - name: 코드 리팩터링
-                  items:
-                    - name: 개요
-                      displayName: refactoring
-                      href: ide/refactoring-in-visual-studio.md
-                    - name: 메서드 시그니처 변경
-                      href: ide/reference/change-method-signature.md
-                    - name: 무명 형식을 클래스로 변환
-                      href: ide/reference/convert-anonymous-type-to-class.md
-                    - name: 익명 형식을 튜플로 변환
-                      href: ide/reference/convert-anonymous-type-to-tuple.md
-                    - name: for 루프 및 foreach 명령문 간 변환
-                      href: ide/reference/convert-for-loop-to-foreach.md
-                    - name: Get 메서드 및 속성 간 변환
-                      href: ide/reference/convert-get-method-to-property.md
-                    - name: 로컬 함수를 메서드로 변환
-                      href: ide/reference/convert-local-function-method.md
-                    - name: foreach 루프를 LINQ로 변환
-                      href: ide/reference/convert-foreach-linq.md
-                    - name: LINQ 쿼리를 foreach 문으로 변환
-                      href: ide/reference/convert-linq-to-foreach.md
-                    - name: switch 문을 switch 식으로 변환
-                      href: ide/reference/convert-switch-statement-to-switch-expression.md
-                    - name: 필드 캡슐화
-                      href: ide/reference/encapsulate-field.md
-                    - name: 인터페이스 추출
-                      href: ide/reference/extract-interface.md
-                    - name: 메서드 추출
-                      href: ide/reference/extract-method.md
-                    - name: 매개 변수 생성
-                      href: ide/reference/generate-parameter.md
-                    - name: 인라인 임시 변수
-                      href: ide/reference/inline-temporary-variable.md
-                    - name: 가져오지 않은 형식에 대한 Intellisense 완성
-                      href: ide/reference/intellisense-completion-unimported-types.md
-                    - name: 조건식 및 논리 연산 반전
-                      href: ide/reference/invert-conditional-logical.md
-                    - name: if 문 반전
-                      href: ide/reference/invert-if-statement.md
-                    - name: 참조 근처로 선언 이동
-                      href: ide/reference/move-declaration-near-reference.md
-                    - name: 형식을 일치하는 파일로 이동
-                      href: ide/reference/move-type-to-matching-file.md
-                    - name: 형식을 네임스페이스로 이동
-                      href: ide/reference/move-type-to-namespace.md
-                    - name: 멤버 끌어오기
-                      href: ide/reference/pull-members-up.md
-                    - name: IntelliSense를 통한 Regex 완료
-                      href: ide/reference/regex-completion-through-intellisense.md
-                    - name: 접근할 수 없는 코드 제거
-                      href: ide/reference/remove-unreachable-code.md
-                    - name: 이름 바꾸기
-                      href: ide/reference/rename.md
-                    - name: using 정렬
-                      href: ide/reference/sort-usings.md
-                    - name: 분할 또는 병합 if 문
-                      href: ide/reference/split-or-merge-if-statement.md
-                    - name: 동기화 네임스페이스 및 폴더 이름
-                      href: ide/reference/sync-namespace-and-folder-name.md
-                    - name: 동기화 형식 및 파일 이름
-                      href: ide/reference/sync-type-and-file.md
-                    - name: 명시적 형식 사용
-                      href: ide/reference/convert-var-to-explicit-type.md
-                    - name: 람다 식 또는 블록 본문 사용
-                      href: ide/reference/use-block-body-lambda.md
-                    - name: '사용되지 않은 값 할당, 변수 및 매개 변수'
-                      href: ide/reference/unused-values-parameters.md
-                    - name: 호출 체인 래핑 및 정렬
-                      href: ide/reference/wrap-and-align-call-chains.md
-                    - name: '래핑, 들여쓰기 및 매개 변수 정렬'
-                      href: ide/reference/wrap-align-indent-parameters.md
-                - name: '연습: 사용법에서 코드 생성'
-                  href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
-            - name: IntelliSense
-              items:
-                - name: IntelliSense 사용
-                  href: ide/using-intellisense.md
-                - name: Visual Basic IntelliSense
-                  href: ide/visual-basic-specific-intellisense.md
-                - name: 'C# IntelliSense'
-                  href: ide/visual-csharp-intellisense.md
-                - name: JavaScript IntelliSense
-                  href: ide/javascript-intellisense.md
-                - name: Visual C++ IntelliSense
-                  href: ide/visual-cpp-intellisense.md
-                - name: IntelliSense에 대한 C++ 프로젝트 구성
-                  href: ide/visual-cpp-intellisense-configuration.md
-            - name: 코드에서 이동
-              items:
-                - name: 코드 탐색
-                  href: ide/navigating-code.md
-                - name: 코드에서 참조 찾기
-                  href: ide/finding-references.md
-                - name: 형식 및 멤버 정의 보기
-                  items:
-                    - name: 정의로 이동 및 정의 피킹(Peeking)
-                      href: ide/go-to-and-peek-definition.md
-                    - name: 정의 피킹(Peeking)을 사용하여 코드 보기 및 편집
-                      href: ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md
-                - name: 이동 명령을 사용하여 코드 찾기
-                  href: ide/go-to.md
-            - name: 편집기 사용자 지정
-              items:
-                - name: 텍스트 대/소문자 변경
-                  href: ide/how-to-change-text-case-in-the-editor.md
-                - name: 편집기 모드 관리
-                  href: ide/how-to-manage-editor-modes.md
-                - name: 편집기 창 관리
-                  href: ide/how-to-manage-editor-windows.md
-                - name: 글꼴 및 색 변경
-                  href: ide/reference/how-to-change-fonts-and-colors-in-the-editor.md
-                - name: 자동 줄 바꿈 관리
-                  href: ide/reference/how-to-manage-word-wrap-in-the-editor.md
-                - name: 줄 번호 표시
-                  href: ide/reference/how-to-display-line-numbers-in-the-editor.md
-                - name: URL을 링크로 표시
-                  href: ide/reference/how-to-display-urls-as-links-in-the-editor.md
-                - name: 언어별 편집기 옵션 설정
-                  href: ide/reference/setting-language-specific-editor-options.md
-            - name: 코드 스타일
-              items:
-                - name: 코드 스타일 기본 설정
-                  href: /visualstudio/ide/code-styles-and-code-cleanup
-                - name: 코드 스타일에 EditorConfig 파일 사용
-                  displayName: Configure code style analyzers
-                  href: ide/create-portable-custom-editor-options.md
-                - name: .NET 코딩 규칙
-                  items:
-                    - name: 개요
-                      href: ide/editorconfig-code-style-settings-reference.md
-                    - name: 언어 규칙
-                      href: ide/editorconfig-language-conventions.md
-                    - name: 서식 지정 규칙
-                      href: ide/editorconfig-formatting-conventions.md
-                    - name: 명명 규칙
-                      href: ide/editorconfig-naming-conventions.md
-            - name: 스크롤 막대 사용자 지정
-              href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
-            - name: 코드에 책갈피 설정
-              href: ide/setting-bookmarks-in-code.md
-            - name: CodeLens
-              items:
-                - name: CodeLens로 코드 기록 찾기
-                  href: ide/find-code-changes-and-other-history-with-codelens.md
-                - name: CodeIndex 명령
-                  href: ide/codeindex-command.md
-            - name: 다른 언어에 대한 편집기 지원
-              href: ide/adding-visual-studio-editor-support-for-other-languages.md
-        - name: 코드 보기
+            - name: 어셈블리 및 매니페스트 서명 관리
+              href: ide/managing-assembly-and-manifest-signing.md
+            - name: 애플리케이션 및 배포 매니페스트 서명
+              href: ide/how-to-sign-application-and-deployment-manifests.md
+        - name: '애플리케이션 아이콘 지정(Visual Basic, C#)'
+          href: ide/how-to-specify-an-application-icon-visual-basic-csharp.md
+        - name: 프레임워크를 대상으로 지정
+          href: ide/visual-studio-multi-targeting-overview.md
+        - name: 템플릿 만들기
           items:
-            - name: 코드 구조 보기
-              href: ide/viewing-the-structure-of-code.md
-            - name: 클래스 뷰 및 개체 브라우저 아이콘
-              href: ide/class-view-and-object-browser-icons.md
-        - name: 작업 목록 사용
-          href: ide/using-the-task-list.md
-        - name: 클래스 디자이너
+            - name: 프로젝트 및 항목 템플릿 만들기
+              href: ide/creating-project-and-item-templates.md
+            - name: 템플릿에 태그 추가
+              href: ide/template-tags.md
+            - name: 프로젝트 템플릿 만들기
+              href: ide/how-to-create-project-templates.md
+            - name: 다중 프로젝트 템플릿 만들기
+              href: ide/how-to-create-multi-project-templates.md
+            - name: 항목 템플릿 만들기
+              href: ide/how-to-create-item-templates.md
+            - name: 다중 파일 항목 템플릿 만들기
+              href: ide/how-to-create-multi-file-item-templates.md
+            - name: 웹 템플릿 만들기
+              href: ide/how-to-manually-create-web-templates.md
+            - name: 템플릿 문제 해결
+              href: ide/how-to-troubleshoot-templates.md
+        - name: 프로젝트 및 항목 템플릿 찾기
+          href: ide/how-to-locate-and-organize-project-and-item-templates.md
+        - name: 템플릿 사용자 지정
           items:
-            - name: 클래스 디자이너에서 클래스 디자인
-              href: ide/class-designer/designing-and-viewing-classes-and-types.md
-            - name: 프로젝트에 클래스 다이어그램 추가
-              href: ide/class-designer/how-to-add-class-diagrams-to-projects.md
-            - name: 클래스 다이어그램 사용자 지정
-              href: ide/class-designer/how-to-customize-class-diagrams.md
-            - name: 클래스 다이어그램 요소를 Microsoft Office 문서에 복사
-              href: ide/class-designer/how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md
-            - name: 클래스 다이어그램을 이미지로 내보내기
-              href: ide/class-designer/how-to-export-class-diagrams-as-images.md
-            - name: 클래스 다이어그램 인쇄
-              href: ide/class-designer/how-to-print-class-diagrams.md
-            - name: 클래스 다이어그램에 설명 추가
-              href: ide/class-designer/how-to-add-comments-to-class-diagrams.md
-            - name: 클래스 및 형식 만들기
+            - name: 프로젝트 및 항목 템플릿 사용자 지정
+              href: ide/customizing-project-and-item-templates.md
+            - name: 기존 템플릿 업데이트
+              href: ide/how-to-update-existing-templates.md
+            - name: 템플릿 매개 변수 대체
+              href: ide/how-to-substitute-parameters-in-a-template.md
+            - name: 템플릿 매개 변수
+              href: ide/template-parameters.md
+        - name: 64비트 지원
+          href: ide/visual-studio-ide-64-bit-support.md
+    - name: 프로젝트 또는 솔루션 없이 개발
+      items:
+        - name: '방법: 프로젝트 없이 개발'
+          displayName: Open folder
+          href: ide/develop-code-in-visual-studio-without-projects-or-solutions.md
+        - name: 빌드 및 디버그 작업 사용자 지정
+          displayName: makefile tasks.vs.json
+          href: ide/customize-build-and-debug-tasks-in-visual-studio.md
+    - name: 프로젝트 또는 리포지토리에 연결
+      displayName: Azure DevOps VSTS GitHub
+      href: ide/connect-team-project.md
+    - name: 편집기
+      items:
+        - name: 편집기 사용
+          href: ide/writing-code-in-the-code-and-text-editor.md
+        - name: 찾기 및 바꾸기
+          items:
+            - name: 텍스트 찾기 및 바꾸기
+              href: ide/finding-and-replacing-text.md
+            - name: 정규식 사용
+              dispayName: RegEx
+              href: ide/using-regular-expressions-in-visual-studio.md
+            - name: 찾기-명령 상자
+              href: ide/find-command-box.md
+            - name: 파일에서 찾기
+              href: ide/find-in-files.md
+            - name: 파일에서 바꾸기
+              href: ide/replace-in-files.md
+        - name: 인코딩
+          items:
+            - name: 인코딩 및 줄 바꿈
+              href: ide/encodings-and-line-breaks.md
+            - name: 인코딩을 사용하여 파일 저장 및 열기
+              href: ide/how-to-save-and-open-files-with-encoding.md
+        - name: 개요
+          displayName: Expand and collapse
+          href: ide/outlining.md
+        - name: 코드 생성 및 리팩터링
+          items:
+            - name: 코드 생성 및 수정
+              href: ide/code-generation-in-visual-studio.md
+            - name: 코드 조각
               items:
-                - name: 형식 만들기
-                  href: ide/class-designer/how-to-create-types.md
-                - name: 형식 간에 상속 만들기
-                  href: ide/class-designer/how-to-create-inheritance-between-types.md
-                - name: 형식 간에 연결 만들기
-                  href: ide/class-designer/how-to-create-associations-between-types.md
-                - name: 컬렉션 연결 시각화
-                  href: ide/class-designer/how-to-visualize-a-collection-association.md
-                - name: 형식 멤버 만들기 및 구성
-                  href: ide/class-designer/creating-and-configuring-type-members.md
-            - name: 형식 및 관계 보기
+                - name: 코드 조각 사용
+                  href: ide/code-snippets.md
+                - name: 'C# 코드 조각 참조'
+                  href: ide/visual-csharp-code-snippets.md
+                - name: C++ 코드 조각 참조
+                  href: ide/visual-cpp-code-snippets.md
+                - name: XML 주석 삽입
+                  href: ide/reference/generate-xml-documentation-comments.md
+                - name: 코드 감싸기 코드 조각 사용
+                  href: ide/how-to-use-surround-with-code-snippets.md
+                - name: 최선의 구현 방법
+                  href: ide/best-practices-for-using-code-snippets.md
+                - name: 코드 조각 만들기
+                  items:
+                    - name: '연습: 코드 조각 만들기'
+                      href: ide/walkthrough-creating-a-code-snippet.md
+                    - name: 코드 조각 배포
+                      href: ide/how-to-distribute-code-snippets.md
+                    - name: 코드 조각 함수
+                      href: ide/code-snippet-functions.md
+                    - name: 코드 조각 스키마 참조
+                      href: ide/code-snippets-schema-reference.md
+                    - name: 코드 조각 문제 해결
+                      href: ide/troubleshooting-snippets.md
+            - name: 빠른 작업
+              href: ide/quick-actions.md
+              displayName: light bulb screwdriver suggestions
               items:
-                - name: 기존 형식 보기
-                  href: ide/class-designer/how-to-view-existing-types.md
-                - name: 형식 간에 상속 보기
-                  href: ide/class-designer/how-to-view-inheritance-between-types.md
-                - name: 멤버 표기법 및 연결 표기법
-                  href: ide/class-designer/how-to-change-between-member-notation-and-association-notation.md
-            - name: 클래스 및 형식 리팩터링
-              href: ide/class-designer/refactoring-classes-and-types.md
-            - name: 인터페이스 구현
-              href: ide/class-designer/how-to-implement-an-interface.md
-            - name: 클래스를 부분 클래스로 분할
-              href: ide/class-designer/how-to-split-a-class-into-partial-classes.md
-            - name: nullable 형식 만들기
-              href: ide/class-designer/how-to-create-a-nullable-type.md
-            - name: 클래스 디자이너의 C++
+                - name: 일반적인 빠른 작업
+                  href: ide/common-quick-actions.md
+                - name: 클래스/형식 생성
+                  href: ide/reference/generate-class-type.md
+                - name: 메서드 생성
+                  href: ide/reference/generate-method.md
+                - name: 필드/속성/로컬 생성
+                  href: ide/reference/generate-field-property-local.md
+                - name: 생성자 생성
+                  href: ide/reference/generate-constructor.md
+                - name: 분해자 생성
+                  href: ide/reference/generate-deconstructor.md
+                - name: 메서드에 매개 변수 추가
+                  href: ide/reference/add-parameter.md
+                - name: 재정의 생성
+                  href: ide/reference/generate-override.md
+                - name: Equals 및 GetHashCode 메서드 재정의 생성
+                  href: ide/reference/generate-equals-gethashcode-methods.md
+                - name: usings 생성
+                  href: ide/reference/generate-usings.md
+                - name: 추상 클래스 구현
+                  href: ide/reference/implement-abstract-class.md
+                - name: 인터페이스 구현
+                  href: ide/reference/implement-interface.md
+                - name: 로컬 변수 지정
+                  href: ide/reference/introduce-local-variable.md
+            - name: 코드 리팩터링
               items:
-                - name: Visual C++ 코드 작업
-                  href: ide/class-designer/working-with-visual-cpp-code.md
-                - name: C++ 클래스
-                  href: ide/class-designer/visual-cpp-classes.md
-                - name: C++ 구조체
-                  href: ide/class-designer/visual-cpp-structures.md
-                - name: C++ 열거형
-                  href: ide/class-designer/visual-cpp-enumerations.md
-                - name: C++ 형식 정의
-                  href: ide/class-designer/visual-cpp-typedefs.md
-            - name: 키보드 및 마우스 바로 가기
-              href: ide/class-designer/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md
-            - name: 클래스 디자이너 오류
-              href: ide/class-designer/additional-information-about-errors.md
-        - name: 코드 개선
-          href: ide/find-and-fix-code-errors.md
-        - name: Windows Forms 개발
+                - name: 개요
+                  displayName: refactoring
+                  href: ide/refactoring-in-visual-studio.md
+                - name: 메서드 시그니처 변경
+                  href: ide/reference/change-method-signature.md
+                - name: 무명 형식을 클래스로 변환
+                  href: ide/reference/convert-anonymous-type-to-class.md
+                - name: 익명 형식을 튜플로 변환
+                  href: ide/reference/convert-anonymous-type-to-tuple.md
+                - name: for 루프 및 foreach 명령문 간 변환
+                  href: ide/reference/convert-for-loop-to-foreach.md
+                - name: Get 메서드 및 속성 간 변환
+                  href: ide/reference/convert-get-method-to-property.md
+                - name: 로컬 함수를 메서드로 변환
+                  href: ide/reference/convert-local-function-method.md
+                - name: foreach 루프를 LINQ로 변환
+                  href: ide/reference/convert-foreach-linq.md
+                - name: LINQ 쿼리를 foreach 문으로 변환
+                  href: ide/reference/convert-linq-to-foreach.md
+                - name: switch 문을 switch 식으로 변환
+                  href: ide/reference/convert-switch-statement-to-switch-expression.md
+                - name: 필드 캡슐화
+                  href: ide/reference/encapsulate-field.md
+                - name: 인터페이스 추출
+                  href: ide/reference/extract-interface.md
+                - name: 메서드 추출
+                  href: ide/reference/extract-method.md
+                - name: 매개 변수 생성
+                  href: ide/reference/generate-parameter.md
+                - name: 인라인 임시 변수
+                  href: ide/reference/inline-temporary-variable.md
+                - name: 가져오지 않은 형식에 대한 Intellisense 완성
+                  href: ide/reference/intellisense-completion-unimported-types.md
+                - name: 조건식 및 논리 연산 반전
+                  href: ide/reference/invert-conditional-logical.md
+                - name: if 문 반전
+                  href: ide/reference/invert-if-statement.md
+                - name: 참조 근처로 선언 이동
+                  href: ide/reference/move-declaration-near-reference.md
+                - name: 형식을 일치하는 파일로 이동
+                  href: ide/reference/move-type-to-matching-file.md
+                - name: 형식을 네임스페이스로 이동
+                  href: ide/reference/move-type-to-namespace.md
+                - name: 멤버 끌어오기
+                  href: ide/reference/pull-members-up.md
+                - name: IntelliSense를 통한 Regex 완료
+                  href: ide/reference/regex-completion-through-intellisense.md
+                - name: 접근할 수 없는 코드 제거
+                  href: ide/reference/remove-unreachable-code.md
+                - name: 이름 바꾸기
+                  href: ide/reference/rename.md
+                - name: using 정렬
+                  href: ide/reference/sort-usings.md
+                - name: 분할 또는 병합 if 문
+                  href: ide/reference/split-or-merge-if-statement.md
+                - name: 동기화 네임스페이스 및 폴더 이름
+                  href: ide/reference/sync-namespace-and-folder-name.md
+                - name: 동기화 형식 및 파일 이름
+                  href: ide/reference/sync-type-and-file.md
+                - name: 명시적 형식 사용
+                  href: ide/reference/convert-var-to-explicit-type.md
+                - name: 람다 식 또는 블록 본문 사용
+                  href: ide/reference/use-block-body-lambda.md
+                - name: '사용되지 않은 값 할당, 변수 및 매개 변수'
+                  href: ide/reference/unused-values-parameters.md
+                - name: 호출 체인 래핑 및 정렬
+                  href: ide/reference/wrap-and-align-call-chains.md
+                - name: '래핑, 들여쓰기 및 매개 변수 정렬'
+                  href: ide/reference/wrap-align-indent-parameters.md
+            - name: '연습: 사용법에서 코드 생성'
+              href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
+        - name: IntelliSense
+          items:
+            - name: IntelliSense 사용
+              href: ide/using-intellisense.md
+            - name: Visual Basic IntelliSense
+              href: ide/visual-basic-specific-intellisense.md
+            - name: 'C# IntelliSense'
+              href: ide/visual-csharp-intellisense.md
+            - name: JavaScript IntelliSense
+              href: ide/javascript-intellisense.md
+            - name: Visual C++ IntelliSense
+              href: ide/visual-cpp-intellisense.md
+            - name: IntelliSense에 대한 C++ 프로젝트 구성
+              href: ide/visual-cpp-intellisense-configuration.md
+        - name: 코드에서 이동
+          items:
+            - name: 코드 탐색
+              href: ide/navigating-code.md
+            - name: 코드에서 참조 찾기
+              href: ide/finding-references.md
+            - name: 형식 및 멤버 정의 보기
+              items:
+                - name: 정의로 이동 및 정의 피킹(Peeking)
+                  href: ide/go-to-and-peek-definition.md
+                - name: 정의 피킹(Peeking)을 사용하여 코드 보기 및 편집
+                  href: ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md
+            - name: 이동 명령을 사용하여 코드 찾기
+              href: ide/go-to.md
+        - name: 편집기 사용자 지정
+          items:
+            - name: 텍스트 대/소문자 변경
+              href: ide/how-to-change-text-case-in-the-editor.md
+            - name: 편집기 모드 관리
+              href: ide/how-to-manage-editor-modes.md
+            - name: 편집기 창 관리
+              href: ide/how-to-manage-editor-windows.md
+            - name: 글꼴 및 색 변경
+              href: ide/reference/how-to-change-fonts-and-colors-in-the-editor.md
+            - name: 자동 줄 바꿈 관리
+              href: ide/reference/how-to-manage-word-wrap-in-the-editor.md
+            - name: 줄 번호 표시
+              href: ide/reference/how-to-display-line-numbers-in-the-editor.md
+            - name: URL을 링크로 표시
+              href: ide/reference/how-to-display-urls-as-links-in-the-editor.md
+            - name: 언어별 편집기 옵션 설정
+              href: ide/reference/setting-language-specific-editor-options.md
+        - name: 코드 스타일
+          items:
+            - name: 코드 스타일 기본 설정
+              href: /visualstudio/ide/code-styles-and-code-cleanup
+            - name: 코드 스타일에 EditorConfig 파일 사용
+              displayName: Configure code style analyzers
+              href: ide/create-portable-custom-editor-options.md
+            - name: .NET 코딩 규칙
+              items:
+                - name: 개요
+                  href: ide/editorconfig-code-style-settings-reference.md
+                - name: 언어 규칙
+                  href: ide/editorconfig-language-conventions.md
+                - name: 서식 지정 규칙
+                  href: ide/editorconfig-formatting-conventions.md
+                - name: 명명 규칙
+                  href: ide/editorconfig-naming-conventions.md
+        - name: 스크롤 막대 사용자 지정
+          href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
+        - name: 코드에 책갈피 설정
+          href: ide/setting-bookmarks-in-code.md
+        - name: CodeLens
+          items:
+            - name: CodeLens로 코드 기록 찾기
+              href: ide/find-code-changes-and-other-history-with-codelens.md
+            - name: CodeIndex 명령
+              href: ide/codeindex-command.md
+        - name: 다른 언어에 대한 편집기 지원
+          href: ide/adding-visual-studio-editor-support-for-other-languages.md
+    - name: 코드 보기
+      items:
+        - name: 코드 구조 보기
+          href: ide/viewing-the-structure-of-code.md
+        - name: 클래스 뷰 및 개체 브라우저 아이콘
+          href: ide/class-view-and-object-browser-icons.md
+    - name: 작업 목록 사용
+      href: ide/using-the-task-list.md
+    - name: 클래스 디자이너
+      items:
+        - name: 클래스 디자이너에서 클래스 디자인
+          href: ide/class-designer/designing-and-viewing-classes-and-types.md
+        - name: 프로젝트에 클래스 다이어그램 추가
+          href: ide/class-designer/how-to-add-class-diagrams-to-projects.md
+        - name: 클래스 다이어그램 사용자 지정
+          href: ide/class-designer/how-to-customize-class-diagrams.md
+        - name: 클래스 다이어그램 요소를 Microsoft Office 문서에 복사
+          href: ide/class-designer/how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md
+        - name: 클래스 다이어그램을 이미지로 내보내기
+          href: ide/class-designer/how-to-export-class-diagrams-as-images.md
+        - name: 클래스 다이어그램 인쇄
+          href: ide/class-designer/how-to-print-class-diagrams.md
+        - name: 클래스 다이어그램에 설명 추가
+          href: ide/class-designer/how-to-add-comments-to-class-diagrams.md
+        - name: 클래스 및 형식 만들기
+          items:
+            - name: 형식 만들기
+              href: ide/class-designer/how-to-create-types.md
+            - name: 형식 간에 상속 만들기
+              href: ide/class-designer/how-to-create-inheritance-between-types.md
+            - name: 형식 간에 연결 만들기
+              href: ide/class-designer/how-to-create-associations-between-types.md
+            - name: 컬렉션 연결 시각화
+              href: ide/class-designer/how-to-visualize-a-collection-association.md
+            - name: 형식 멤버 만들기 및 구성
+              href: ide/class-designer/creating-and-configuring-type-members.md
+        - name: 형식 및 관계 보기
+          items:
+            - name: 기존 형식 보기
+              href: ide/class-designer/how-to-view-existing-types.md
+            - name: 형식 간에 상속 보기
+              href: ide/class-designer/how-to-view-inheritance-between-types.md
+            - name: 멤버 표기법 및 연결 표기법
+              href: ide/class-designer/how-to-change-between-member-notation-and-association-notation.md
+        - name: 클래스 및 형식 리팩터링
+          href: ide/class-designer/refactoring-classes-and-types.md
+        - name: 인터페이스 구현
+          href: ide/class-designer/how-to-implement-an-interface.md
+        - name: 클래스를 부분 클래스로 분할
+          href: ide/class-designer/how-to-split-a-class-into-partial-classes.md
+        - name: nullable 형식 만들기
+          href: ide/class-designer/how-to-create-a-nullable-type.md
+        - name: 클래스 디자이너의 C++
+          items:
+            - name: Visual C++ 코드 작업
+              href: ide/class-designer/working-with-visual-cpp-code.md
+            - name: C++ 클래스
+              href: ide/class-designer/visual-cpp-classes.md
+            - name: C++ 구조체
+              href: ide/class-designer/visual-cpp-structures.md
+            - name: C++ 열거형
+              href: ide/class-designer/visual-cpp-enumerations.md
+            - name: C++ 형식 정의
+              href: ide/class-designer/visual-cpp-typedefs.md
+        - name: 키보드 및 마우스 바로 가기
+          href: ide/class-designer/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md
+        - name: 클래스 디자이너 오류
+          href: ide/class-designer/additional-information-about-errors.md
+    - name: 코드 개선
+      href: ide/find-and-fix-code-errors.md
+    - name: 팁과 요령
+      items:
+        - name: 생산성 기능
+          href: ide/productivity-features.md
+        - name: 생산성 바로 가기
+          href: ide/productivity-shortcuts.md
+        - name: 'C# 개발자를 위한 팁'
+          displayName: ReSharper
+          href: ide/csharp-developer-productivity.md
+        - name: 바로 가기 키 사용자 지정
+          href: ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md
+        - name: 단독으로 키보드 사용
+          displayName: accessibility
+          href: ide/reference/how-to-use-the-keyboard-exclusively.md
+    - name: ...으로 작업
+      items:
+        - name: Windows Forms 앱
           items:
             - name: Windows Forms 디자이너 개요
               href: designers/windows-forms-designer-overview.md
@@ -654,249 +668,235 @@
                       href: ide/step-8-add-a-method-to-verify-whether-the-player-won.md
                     - name: '9단계: 기타 기능 사용'
                       href: ide/step-9-try-other-features.md
-        - name: 플랫폼 간 모바일 개발
-          href: cross-platform/cross-platform-mobile-development-in-visual-studio.md
-        - name: 'Visual Studio의 F#'
+        - name: 'F#'
           items:
             - name: 'F# 개발'
               href: ide/fsharp-visual-studio.md
             - name: 이전 .NET 버전 대상
               href: ide/fsharp-target-older-dotnet-versions.md
-        - name: Office 및 SharePoint 개발
-          href: vsto/office-and-sharepoint-development-in-visual-studio.md
-        - name: XML 및 XSLT 파일 작업
-          href: xml-tools/xml-tools-in-visual-studio.md
-        - name: 컨테이너를 사용하여 개발
-          href: containers/index.yml
-        - name: 포괄 앱 개발
+        - name: 3D 그래픽 자산
           items:
-            - name: 액세스 가능한 앱 디자인
-              href: ide/reference/resources-for-designing-accessible-applications.md
-            - name: 국가별 앱 디자인
-              displayName: Globalization localization world-ready
-              href: ide/globalizing-and-localizing-applications.md
-    - name: XAML 도구 사용 >>
-      href: xaml-tools/index.yml
+            - name: 게임 및 앱을 위한 3D 자산 작업
+              href: designers/working-with-3-d-assets-for-games-and-apps.md
+            - name: '방법: 게임 또는 앱에서 3D 자산 사용'
+              href: designers/using-3-d-assets-in-your-game-or-app.md
+            - name: 질감 및 이미지
+              items:
+                - name: 질감 및 이미지 작업
+                  href: designers/working-with-textures-and-images.md
+                - name: 이미지 편집기
+                  href: designers/image-editor.md
+                - name: 이미지 편집기 예제
+                  items:
+                    - name: 기본 질감 만들기
+                      href: designers/how-to-create-a-basic-texture.md
+                    - name: MIP 수준 만들기 및 수정
+                      href: designers/how-to-create-and-modify-mip-levels.md
+            - name: 3D 모델
+              items:
+                - name: 3D 모델 작업
+                  href: designers/working-with-3-d-models.md
+                - name: 모델 편집기
+                  href: designers/model-editor.md
+                - name: 모델 편집기 예제
+                  items:
+                    - name: 기본 3D 모델 만들기
+                      href: designers/how-to-create-a-basic-3-d-model.md
+                    - name: 3D 모델의 피벗 점 수정
+                      href: designers/how-to-modify-the-pivot-point-of-a-3-d-model.md
+                    - name: 3D 지형 모델 만들기
+                      href: designers/how-to-model-3-d-terrain.md
+                    - name: 3D 모델에 셰이더 적용
+                      href: designers/how-to-apply-a-shader-to-a-3-d-model.md
+            - name: 셰이더
+              items:
+                - name: 셰이더 작업
+                  href: designers/working-with-shaders.md
+                - name: 셰이더 디자이너
+                  href: designers/shader-designer.md
+                - name: 셰이더 디자이너 노드
+                  items:
+                    - name: 개요
+                      displayName: Shader designer nodes
+                      href: designers/shader-designer-nodes.md
+                    - name: 상수 노드
+                      href: designers/constant-nodes.md
+                    - name: 매개 변수 노드
+                      href: designers/parameter-nodes.md
+                    - name: 질감 노드
+                      href: designers/texture-nodes.md
+                    - name: 수학 노드
+                      href: designers/math-nodes.md
+                    - name: 유틸리티 노드
+                      href: designers/utility-nodes.md
+                    - name: 필터 노드
+                      href: designers/filter-nodes.md
+                - name: 셰이더 디자이너 예제
+                  items:
+                    - name: 기본 색 셰이더 만들기
+                      displayName: Shader designer example
+                      href: designers/how-to-create-a-basic-color-shader.md
+                    - name: 기본 램버트 셰이더 만들기
+                      href: designers/how-to-create-a-basic-lambert-shader.md
+                    - name: 기본 퐁 셰이더 만들기
+                      href: designers/how-to-create-a-basic-phong-shader.md
+                    - name: 기본 질감 셰이더 만들기
+                      href: designers/how-to-create-a-basic-texture-shader.md
+                    - name: 회색조 질감 셰이더 만들기
+                      href: designers/how-to-create-a-grayscale-texture-shader.md
+                    - name: 기하 도형 기반 그라데이션 셰이더 만들기
+                      href: designers/how-to-create-a-geometry-based-gradient-shader.md
+                    - name: '연습: 사실적인 3D 당구공 만들기'
+                      href: designers/walkthrough-creating-a-realistic-3-d-billiard-ball.md
+                    - name: 셰이더 내보내기
+                      href: designers/how-to-export-a-shader.md
+            - name: 질감 내보내기
+              items:
+                - name: 밉 맵을 포함하는 질감 내보내기
+                  href: designers/how-to-export-a-texture-that-contains-mipmaps.md
+                - name: 미리 증가된 알파를 사용하는 질감 내보내기
+                  href: designers/how-to-export-a-texture-that-has-premultiplied-alpha.md
+                - name: Direct2D 또는 JavaScript 앱과 함께 사용하기 위해 텍스처 내보내기
+                  href: designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md
+        - name: XAML 파일 >>
+          href: xaml-tools/index.yml
+        - name: XML 및 XSLT 파일 >>
+          href: xml-tools/xml-tools-in-visual-studio.md
+        - name: Docker 컨테이너 >>
+          href: containers/index.yml
+        - name: 워크플로 >>
+          href: workflow-designer/developing-applications-with-the-workflow-designer.md
+        - name: 모바일 앱
+          href: cross-platform/cross-platform-mobile-development-in-visual-studio.md
+        - name: Office 및 SharePoint 앱 >>
+          href: vsto/office-and-sharepoint-development-in-visual-studio.md
     - name: 데이터에 액세스 >>
       displayName: Data connections
       href: data-tools/accessing-data-in-visual-studio.md
-    - name: 워크플로 디자이너를 사용하여 앱 개발 >>
-      href: workflow-designer/developing-applications-with-the-workflow-designer.md
-    - name: 컴파일 및 빌드
+    - name: 포괄 앱 개발
+      items:
+        - name: 액세스 가능한 앱 디자인
+          href: ide/reference/resources-for-designing-accessible-applications.md
+        - name: 국가별 앱 디자인
+          displayName: Globalization localization world-ready
+          href: ide/globalizing-and-localizing-applications.md
+- name: 빌드
+  items:
+    - name: 개요
+      displayName: Compile build
+      href: ide/compiling-and-building-in-visual-studio.md
+    - name: '연습: 애플리케이션 구축'
+      href: ide/walkthrough-building-an-application.md
+    - name: 프로젝트 및 솔루션 빌드 및 정리
       items:
         - name: 개요
-          displayName: Compile build
-          href: ide/compiling-and-building-in-visual-studio.md
-        - name: '연습: 애플리케이션 구축'
-          href: ide/walkthrough-building-an-application.md
-        - name: 프로젝트 및 솔루션 빌드 및 정리
-          items:
-            - name: 개요
-              displayName: Build clean
-              href: ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md
-            - name: 빌드 출력 디렉터리 변경
-              href: ide/how-to-change-the-build-output-directory.md
-            - name: 공통 출력 디렉터리로 빌드
-              href: ide/how-to-build-to-a-common-output-directory.md
-            - name: 사용자 지정 빌드 이벤트 지정
-              href: ide/specifying-custom-build-events-in-visual-studio.md
-            - name: 여러 시작 프로젝트 설정
-              href: ide/how-to-set-multiple-startup-projects.md
-            - name: 프로젝트 종속성 만들기 및 제거
-              href: ide/how-to-create-and-remove-project-dependencies.md
-            - name: '빌드 로그 파일 보기, 저장 및 구성'
-              href: ide/how-to-view-save-and-configure-build-log-files.md
-            - name: 빌드에서 프로젝트 제외
-              href: ide/how-to-exclude-projects-from-a-build.md
-            - name: 컴파일러 경고 표시 안 함
-              href: ide/how-to-suppress-compiler-warnings.md
-        - name: 빌드 작업
-          href: ide/build-actions.md
-        - name: 빌드 구성
-          items:
-            - name: 빌드 구성 이해
-              href: ide/understanding-build-configurations.md
-            - name: 구성 만들기 및 편집
-              href: ide/how-to-create-and-edit-configurations.md
-            - name: Visual Basic 개발자 설정으로 빌드 구성 관리
-              href: ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md
-            - name: 여러 구성 동시 빌드
-              href: ide/how-to-build-multiple-configurations-simultaneously.md
-        - name: 플랫폼 빌드
-          items:
-            - name: 빌드 플랫폼 이해
-              href: ide/understanding-build-platforms.md
-            - name: 플랫폼을 대상으로 한 프로젝트 구성
-              href: ide/how-to-configure-projects-to-target-platforms.md
-            - name: 여러 플랫폼을 대상으로 한 프로젝트 구성
-              href: ide/how-to-configure-projects-to-target-multiple-platforms.md
-        - name: MSBuild >>
-          href: msbuild/msbuild.md
-        - name: Azure Pipelines 및 TFS >>
-          displayName: VSTS Azure DevOps CI/CD Continuous integration delivery
-          href: /azure/devops/pipelines/index?view=vsts
-        - name: 빌드 이벤트 지정(Visual Basic)
-          href: ide/how-to-specify-build-events-visual-basic.md
-        - name: '빌드 이벤트 지정(C#)'
-          href: ide/how-to-specify-build-events-csharp.md
-        - name: Visual Basic에서 경고 구성
-          href: ide/configuring-warnings-in-visual-basic.md
-        - name: '연습: 여러 컴퓨터 빌드 환경 만들기'
-          href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
-    - name: 디버그 >>
-      href: debugger/index.yml
-    - name: 테스트 >>
-      displayName: Unit testing
-      href: test/improve-code-quality.md
-    - name: 성능 측정 >>
-      displayName: Profiling
-      href: profiling/index.yml
-    - name: 코드 품질 분석 >>
-      displayName: Code analysis FxCop Analyzers
-      href: code-quality/index.yml
-    - name: 배포 >>
-      href: deployment/index.yml
-    - name: Visual Studio 확장 >>
-      displayName: Visual Studio SDK
-      href: extensibility/visual-studio-sdk.md
-    - name: 아키텍처 분석 및 모델링 >>
-      href: modeling/analyze-and-model-your-architecture.md
-    - name: 3D 자산
+          displayName: Build clean
+          href: ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md
+        - name: 빌드 출력 디렉터리 변경
+          href: ide/how-to-change-the-build-output-directory.md
+        - name: 공통 출력 디렉터리로 빌드
+          href: ide/how-to-build-to-a-common-output-directory.md
+        - name: 사용자 지정 빌드 이벤트 지정
+          href: ide/specifying-custom-build-events-in-visual-studio.md
+        - name: 여러 시작 프로젝트 설정
+          href: ide/how-to-set-multiple-startup-projects.md
+        - name: 프로젝트 종속성 만들기 및 제거
+          href: ide/how-to-create-and-remove-project-dependencies.md
+        - name: '빌드 로그 파일 보기, 저장 및 구성'
+          href: ide/how-to-view-save-and-configure-build-log-files.md
+        - name: 빌드에서 프로젝트 제외
+          href: ide/how-to-exclude-projects-from-a-build.md
+        - name: 컴파일러 경고 표시 안 함
+          href: ide/how-to-suppress-compiler-warnings.md
+    - name: 빌드 작업
+      href: ide/build-actions.md
+    - name: 빌드 구성
       items:
-        - name: 게임 및 앱을 위한 3D 자산 작업
-          href: designers/working-with-3-d-assets-for-games-and-apps.md
-        - name: '방법: 게임 또는 앱에서 3D 자산 사용'
-          href: designers/using-3-d-assets-in-your-game-or-app.md
-        - name: 질감 및 이미지
-          items:
-            - name: 질감 및 이미지 작업
-              href: designers/working-with-textures-and-images.md
-            - name: 이미지 편집기
-              href: designers/image-editor.md
-            - name: 이미지 편집기 예제
-              items:
-                - name: 기본 질감 만들기
-                  href: designers/how-to-create-a-basic-texture.md
-                - name: MIP 수준 만들기 및 수정
-                  href: designers/how-to-create-and-modify-mip-levels.md
-        - name: 3D 모델
-          items:
-            - name: 3D 모델 작업
-              href: designers/working-with-3-d-models.md
-            - name: 모델 편집기
-              href: designers/model-editor.md
-            - name: 모델 편집기 예제
-              items:
-                - name: 기본 3D 모델 만들기
-                  href: designers/how-to-create-a-basic-3-d-model.md
-                - name: 3D 모델의 피벗 점 수정
-                  href: designers/how-to-modify-the-pivot-point-of-a-3-d-model.md
-                - name: 3D 지형 모델 만들기
-                  href: designers/how-to-model-3-d-terrain.md
-                - name: 3D 모델에 셰이더 적용
-                  href: designers/how-to-apply-a-shader-to-a-3-d-model.md
-        - name: 셰이더
-          items:
-            - name: 셰이더 작업
-              href: designers/working-with-shaders.md
-            - name: 셰이더 디자이너
-              href: designers/shader-designer.md
-            - name: 셰이더 디자이너 노드
-              items:
-                - name: 개요
-                  displayName: Shader designer nodes
-                  href: designers/shader-designer-nodes.md
-                - name: 상수 노드
-                  href: designers/constant-nodes.md
-                - name: 매개 변수 노드
-                  href: designers/parameter-nodes.md
-                - name: 질감 노드
-                  href: designers/texture-nodes.md
-                - name: 수학 노드
-                  href: designers/math-nodes.md
-                - name: 유틸리티 노드
-                  href: designers/utility-nodes.md
-                - name: 필터 노드
-                  href: designers/filter-nodes.md
-            - name: 셰이더 디자이너 예제
-              items:
-                - name: 기본 색 셰이더 만들기
-                  displayName: Shader designer example
-                  href: designers/how-to-create-a-basic-color-shader.md
-                - name: 기본 램버트 셰이더 만들기
-                  href: designers/how-to-create-a-basic-lambert-shader.md
-                - name: 기본 퐁 셰이더 만들기
-                  href: designers/how-to-create-a-basic-phong-shader.md
-                - name: 기본 질감 셰이더 만들기
-                  href: designers/how-to-create-a-basic-texture-shader.md
-                - name: 회색조 질감 셰이더 만들기
-                  href: designers/how-to-create-a-grayscale-texture-shader.md
-                - name: 기하 도형 기반 그라데이션 셰이더 만들기
-                  href: designers/how-to-create-a-geometry-based-gradient-shader.md
-                - name: '연습: 사실적인 3D 당구공 만들기'
-                  href: designers/walkthrough-creating-a-realistic-3-d-billiard-ball.md
-                - name: 셰이더 내보내기
-                  href: designers/how-to-export-a-shader.md
-        - name: 질감 내보내기
-          items:
-            - name: 밉 맵을 포함하는 질감 내보내기
-              href: designers/how-to-export-a-texture-that-contains-mipmaps.md
-            - name: 미리 증가된 알파를 사용하는 질감 내보내기
-              href: designers/how-to-export-a-texture-that-has-premultiplied-alpha.md
-            - name: Direct2D 또는 JavaScript 앱과 함께 사용하기 위해 텍스처 내보내기
-              href: designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md
-    - name: 팁과 요령
+        - name: 빌드 구성 이해
+          href: ide/understanding-build-configurations.md
+        - name: 구성 만들기 및 편집
+          href: ide/how-to-create-and-edit-configurations.md
+        - name: Visual Basic 개발자 설정으로 빌드 구성 관리
+          href: ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md
+        - name: 여러 구성 동시 빌드
+          href: ide/how-to-build-multiple-configurations-simultaneously.md
+    - name: 플랫폼 빌드
       items:
-        - name: 생산성 기능
-          href: ide/productivity-features.md
-        - name: 생산성 바로 가기
-          href: ide/productivity-shortcuts.md
-        - name: 'C# 개발자를 위한 팁'
-          displayName: ReSharper
-          href: ide/csharp-developer-productivity.md
-        - name: 바로 가기 키 사용자 지정
-          href: ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md
-        - name: 단독으로 키보드 사용
-          displayName: accessibility
-          href: ide/reference/how-to-use-the-keyboard-exclusively.md
-    - name: 개인 설정
+        - name: 빌드 플랫폼 이해
+          href: ide/understanding-build-platforms.md
+        - name: 플랫폼을 대상으로 한 프로젝트 구성
+          href: ide/how-to-configure-projects-to-target-platforms.md
+        - name: 여러 플랫폼을 대상으로 한 프로젝트 구성
+          href: ide/how-to-configure-projects-to-target-multiple-platforms.md
+    - name: MSBuild >>
+      href: msbuild/msbuild.md
+    - name: Azure Pipelines 및 TFS >>
+      displayName: VSTS Azure DevOps CI/CD Continuous integration delivery
+      href: /azure/devops/pipelines/index?view=vsts
+    - name: 빌드 이벤트 지정(Visual Basic)
+      href: ide/how-to-specify-build-events-visual-basic.md
+    - name: '빌드 이벤트 지정(C#)'
+      href: ide/how-to-specify-build-events-csharp.md
+    - name: Visual Basic에서 경고 구성
+      href: ide/configuring-warnings-in-visual-basic.md
+    - name: '연습: 여러 컴퓨터 빌드 환경 만들기'
+      href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
+- name: 디버그 >>
+  href: debugger/index.yml
+- name: 테스트 >>
+  displayName: Unit testing
+  href: test/improve-code-quality.md
+- name: 성능 측정 >>
+  displayName: Profiling
+  href: profiling/index.yml
+- name: 코드 품질 분석 >>
+  displayName: Code analysis FxCop Analyzers
+  href: code-quality/index.yml
+- name: 배포 >>
+  href: deployment/index.yml
+- name: Visual Studio 확장 >>
+  displayName: Visual Studio SDK
+  href: extensibility/visual-studio-sdk.md
+- name: 아키텍처 분석 및 모델링 >>
+  href: modeling/analyze-and-model-your-architecture.md
+- name: Visual Studio 개인 설정
+  items:
+    - name: IDE 사용자 지정
+      displayName: Personalize
+      href: ide/personalizing-the-visual-studio-ide.md
+    - name: '빠른 시작: 테마 및 텍스트 색 개인 설정'
+      href: ide/quickstart-personalize-the-ide.md
+    - name: 환경 설정
+      displayName: profiles
+      href: ide/environment-settings.md
+    - name: 동기화된 설정
+      href: ide/synchronized-settings-in-visual-studio.md
+    - name: 글꼴 및 색
+      href: ide/how-to-change-fonts-and-colors-in-visual-studio.md
+    - name: 메뉴 및 도구 모음
+      href: ide/how-to-customize-menus-and-toolbars-in-visual-studio.md
+    - name: 창 레이아웃
+      href: ide/customizing-window-layouts-in-visual-studio.md
+    - name: 솔루션 탐색기에서 파일 중첩
+      href: ide/file-nesting-solution-explorer.md
+    - name: 시작 동작
+      displayName: Start page window
+      href: ide/customizing-the-start-page-for-visual-studio.md
+    - name: 확장 관리
+      href: ide/finding-and-using-visual-studio-extensions.md
+      displayName: 'marketplace, gallery, vsix'
+    - name: 외부 도구 관리
+      href: ide/managing-external-tools.md
+    - name: 개인 설정 계정
       items:
-        - name: IDE 사용자 지정
-          displayName: Personalize
-          href: ide/personalizing-the-visual-studio-ide.md
-        - name: '빠른 시작: 테마 및 텍스트 색 개인 설정'
-          href: ide/quickstart-personalize-the-ide.md
-        - name: 환경 설정
-          displayName: profiles
-          href: ide/environment-settings.md
-        - name: 동기화된 설정
-          href: ide/synchronized-settings-in-visual-studio.md
-        - name: 글꼴 및 색
-          href: ide/how-to-change-fonts-and-colors-in-visual-studio.md
-        - name: 메뉴 및 도구 모음
-          href: ide/how-to-customize-menus-and-toolbars-in-visual-studio.md
-        - name: 창 레이아웃
-          href: ide/customizing-window-layouts-in-visual-studio.md
-        - name: 솔루션 탐색기에서 파일 중첩
-          href: ide/file-nesting-solution-explorer.md
-        - name: 시작 동작
-          displayName: Start page window
-          href: ide/customizing-the-start-page-for-visual-studio.md
-        - name: 확장 관리
-          href: ide/finding-and-using-visual-studio-extensions.md
-          displayName: 'marketplace, gallery, vsix'
-        - name: 외부 도구 관리
-          href: ide/managing-external-tools.md
-        - name: 개인 설정 계정
-          items:
-            - name: Visual Studio에 로그인
-              displayName: personalization accounts
-              href: ide/signing-in-to-visual-studio.md
-            - name: Work with multiple user accounts
-              href: ide/work-with-multiple-user-accounts.md
-            - name: 평가판 버전 확장 또는 라이선스 업데이트
-              href: ide/how-to-unlock-visual-studio.md
-    - name: Visual Studio의 성능
+        - name: Visual Studio에 로그인
+          displayName: personalization accounts
+          href: ide/signing-in-to-visual-studio.md
+        - name: Work with multiple user accounts
+          href: ide/work-with-multiple-user-accounts.md
+        - name: 평가판 버전 확장 또는 라이선스 업데이트
+          href: ide/how-to-unlock-visual-studio.md
+    - name: Visual Studio의 성능 조정
       items:
         - name: 성능 최적화
           href: ide/optimize-visual-studio-performance.md
@@ -906,16 +906,16 @@
           href: ide/filtered-solutions.md
         - name: 팁과 요령
           href: ide/visual-studio-performance-tips-and-tricks.md
-    - name: 액세스 가능성
-      items:
-        - name: 내게 필요한 옵션 기능 관리
-          href: ide/reference/accessibility-features-of-visual-studio.md
-        - name: IDE 접근성 옵션 설정
-          href: ide/reference/how-to-set-ide-accessibility-options.md
-        - name: 접근성 팁과 요령
-          href: ide/reference/accessibility-tips-and-tricks.md
-        - name: Microsoft의 내게 필요한 옵션 제품 및 서비스
-          href: ide/reference/accessibility-products-and-services-from-microsoft.md
+- name: 액세스 가능성
+  items:
+    - name: 내게 필요한 옵션 기능 관리
+      href: ide/reference/accessibility-features-of-visual-studio.md
+    - name: IDE 접근성 옵션 설정
+      href: ide/reference/how-to-set-ide-accessibility-options.md
+    - name: 접근성 팁과 요령
+      href: ide/reference/accessibility-tips-and-tricks.md
+    - name: Microsoft의 내게 필요한 옵션 제품 및 서비스
+      href: ide/reference/accessibility-products-and-services-from-microsoft.md
 - name: 참조
   items:
     - name: 바로 가기 키

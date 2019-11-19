@@ -8,12 +8,12 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: 45397ddf21f1ea1d735c2753864e5954850a4d98
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 8b6aef437519a4fe92f11a3b21546b3dda9981bb
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "71126114"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188764"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Visual Studio Kubernetes 도구 시작
 
@@ -137,7 +137,7 @@ Visual Studio 시작 창에서 *Kubernetes*를 검색하고 **Kubernetes용 컨�
 
    ![게시 메뉴 항목 스크린샷](media/tutorial-kubernetes-tools/k8s-tools-publish-project.png)
 
-2. **게시** 화면에서 **Container Registry**를 게시 대상으로 선택하고 프롬프트에 따라 컨테이너 레지스트리를 선택합니다. 컨테이너 레지스트리가 아직 없는 경우, **새 Azure Container Registry 만들기**를 선택하여 Visual Studio에서 새로 만듭니다. 자세한 내용은 [Azure Container Registry에 컨테이너 게시](vs-azure-tools-docker-hosting-web-apps-in-docker.md)를 참조하세요.
+2. **게시** 화면에서 **Container Registry**를 게시 대상으로 선택하고 프롬프트에 따라 컨테이너 레지스트리를 선택합니다. 컨테이너 레지스트리가 아직 없는 경우, **새 Azure Container Registry 만들기**를 선택하여 Visual Studio에서 새로 만듭니다. 자세한 내용은 [Azure Container Registry에 컨테이너 게시](hosting-web-apps-in-docker.md)를 참조하세요.
 
    ![게시 대상 선택 화면 스크린샷](media/tutorial-kubernetes-tools/k8s-tools-publish-to-acr.png)
 
@@ -145,7 +145,7 @@ Visual Studio 시작 창에서 *Kubernetes*를 검색하고 **Kubernetes용 컨�
 
    ![Azure AKS에 게시 메뉴 항목 스크린샷](media/tutorial-kubernetes-tools/k8s-tools-publish-solution.png)
 
-4. 방금 만든 ACR 게시 프로필과 함께 해당 구독과 AKS 클러스터를 선택합니다. 그런 후 **OK**를 클릭합니다.
+4. 방금 만든 ACR 게시 프로필과 함께 해당 구독과 AKS 클러스터를 선택합니다. 그런 다음 **확인**을 클릭합니다.
 
    ![AKS에 게시 화면 스크린샷](media/tutorial-kubernetes-tools/k8s-tools-publish-to-aks.png)
 
@@ -165,7 +165,7 @@ Visual Studio 시작 창에서 *Kubernetes*를 검색하고 **Kubernetes용 컨�
 
 ::: moniker-end
 
-축하합니다! 이제 모든 Kubernetes 앱 개발에서 Visual Studio의 전체 기능을 사용할 수 있습니다.
+지금까지 이제 모든 Kubernetes 앱 개발에서 Visual Studio의 전체 기능을 사용할 수 있습니다.
 
 ## <a name="next-steps"></a>다음 단계
 

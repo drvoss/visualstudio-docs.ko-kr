@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ac7a0ace5c4d6e31516d372baabec9883603300
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: eacf41d20164e4526e4f7bf5c2493dde0a00a2b3
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426841"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189359"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>방법: 독립 실행형 프로파일러 설치
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]은(는) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE를 설치하지 않고 실행할 수 있는 명령줄 기반 독립 실행형 프로파일러를 제공합니다. 이 경우는 컴퓨터에 설치된 개발 환경이 없거나 설치할 수 없는 경우에 발생합니다. 예를 들어 프로덕션 웹 서버에 개발 환경을 설치하면 안 됩니다.
@@ -40,7 +40,7 @@ ms.locfileid: "63426841"
    > [!NOTE]
    > vsinstr.exe에 대한 사용 정보가 표시되면 모든 것이 올바르게 설정된 것입니다. vsinstr.exe를 나타내는 오류가 표시되거나 해당 종속성 중 하나가 없는 경우 2단계에 설명된 대로 경로를 정확하게 설정했는지 확인합니다.
 
-4. **_NT_SYMBOL_PATH** variable to **symsrv\*symsrv.dll\*c:\localcache\*http://msdl.microsoft.com/download/symbols**를 설정하여 기호 서버를 설정합니다.
+4. **_NT_SYMBOL_PATH** variable to **symsrv\*symsrv.dll\*c:\localcache\*http://msdl.microsoft.com/download/symbols** 를 설정하여 기호 서버를 설정합니다.
 
 5. 시스템 환경 변수를 사용하여 기호 서버를 설정한 후 새 명령 프롬프트에서 명령줄 프로파일러 도구를 실행합니다. 그러면 새 환경 변수가 적용됩니다. 명령 프롬프트 창에서 다음 명령을 입력합니다.
 
@@ -54,6 +54,6 @@ ms.locfileid: "63426841"
 ## <a name="see-also"></a>참고 항목
 - [명령줄에서 프로파일링](../profiling/using-the-profiling-tools-from-the-command-line.md)
 - [연습: 샘플링을 사용하여 명령줄 프로파일링](../profiling/walkthrough-command-line-profiling-using-sampling.md)
-- [연습: 계측을 사용하여 명령줄 프로파일링](/visualstudio/profiling/command-line-profiling-of-stand-alone-applications)
+- [연습: 계측을 사용하여 명령줄 프로파일링](command-line-profiling-of-stand-alone-applications.md)
 - [방법: Windows 기호 정보 참조](../profiling/how-to-reference-windows-symbol-information.md)
 - [VSPerfReport](../profiling/vsperfreport.md)

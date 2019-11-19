@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 9d69c91af316c755b2dcf4f339d8f47d49096b6a
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 824b928c9f89b98f9026059b824fce84969bf69a
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982908"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189108"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Visual Studio에서 C/C++에 대한 단위 테스트 작성
 
@@ -79,7 +79,7 @@ Google Test 어댑터와 Boost.Test 어댑터 확장은 Visual Studio Marketplac
 
 ### <a name="link-to-object-or-library-files"></a>개체 또는 라이브러리 파일에 연결
 
-테스트 코드가 테스트할 함수를 내보내지 않는 경우 .obj 또는 .lib 출력 파일을 테스트 프로젝트의 종속성에 추가할 수 있습니다. [개체 또는 라이브러리 파일에 테스트를 연결하려면](unit-testing-existing-cpp-applications-with-test-explorer.md)을 참조하세요.
+테스트 코드가 테스트할 함수를 내보내지 않는 경우 .obj 또는 .lib 출력 파일을 테스트 프로젝트의 종속성에 추가할 수 있습니다. [개체 또는 라이브러리 파일에 테스트를 연결하려면](how-to-use-microsoft-test-framework-for-cpp.md)을 참조하세요.
 
 ### <a name="add-include-directives-for-header-files"></a>헤더 파일에 대해 #include 지시문 추가
 

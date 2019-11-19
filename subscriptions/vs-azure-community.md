@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: 선택한 Visual Studio 구독에 포함된 Azure 커뮤니티 지원 혜택에 대해 알아봅니다.
-ms.openlocfilehash: 128147833baf450c0d161f39628a0928e9118412
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 32a1c962e238bfc5ab8083ff643a99a77b699925
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816544"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983758"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Azure 커뮤니티 지원 포함
 Azure 커뮤니티를 통해 선택 지원 포럼 내에서 Azure 팀의 직접적인 도움을 받습니다.  Azure 커뮤니티 혜택은 Azure 관련 항목에 초점을 맞춘 포럼 컬렉션에 대한 액세스 권한을 제공합니다.
@@ -50,7 +50,9 @@ Azure 커뮤니티 혜택의 제공 여부는 구독 수준에 따르며 아래�
 |                                          구독 수준                                           |     채널      |    이점    | 갱신 가능? |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
 |                           Visual Studio Enterprise(Standard)                           | VL, Azure, 일반 정품 |   1년    |    예     |
+|                           GitHub Enterprise가 포함된 Visual Studio Enterprise                           | VL, Azure, 일반 정품 |   1년    |    예     |
 |                          Visual Studio Professional(표준)                          | VL, Azure, 일반 정품 |   1년    |    예     |
+|                          GitHub Enterprise가 포함된 Visual Studio Professional                          | VL, Azure, 일반 정품 |   1년    |    예     |
 |                              Visual Studio Test Professional(표준)                               |    VL, 일반 정품     |   1년    |    예     |
 |                                       MSDN 플랫폼(표준)                                       |    VL, 일반 정품     |   1년    |    예     |
 | Visual Studio Enterprise(월간 클라우드) Visual Studio Professional(월간 클라우드) NFR<sup>1</sup> |        모두        | 사용할 수 없음 |     아니요     |

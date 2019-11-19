@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e62226147fc160c6d967115fbd3aaa52dd69995
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: e51f346501b680b8183f8552aad48ffff84a71dd
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985060"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983727"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>연습: SharePoint 워크플로 솔루션 만들기 및 디버깅
   이 연습에서는 기본 순차 워크플로 템플릿을 만드는 방법을 보여 줍니다. 워크플로는 공유 문서 라이브러리의 속성을 검사 하 여 문서가 검토 되었는지 여부를 확인 합니다. 문서가 검토 되 면 워크플로가 완료 됩니다.
@@ -285,7 +285,7 @@ ms.locfileid: "72985060"
 
 - SharePoint 워크플로 작업에 대 한 자세한 내용은 [Sharepoint Foundation에 대 한 워크플로 작업](/previous-versions/office/developer/sharepoint-2010/ms446847(v=office.14))을 참조 하세요.
 
-- Windows Workflow Foundation 작업에 대 한 자세한 내용은 [system.web. 작업 네임 스페이스](/dotnet/api/system.workflow.activities&view=netframework-4.8)를 참조 하세요.
+- Windows Workflow Foundation 작업에 대 한 자세한 내용은 [system.web. 작업 네임 스페이스](/dotnet/api/system.windows.media.color)를 참조 하세요.
 
 ## <a name="see-also"></a>참조
 - [SharePoint 워크플로 솔루션 만들기](../sharepoint/creating-sharepoint-workflow-solutions.md)

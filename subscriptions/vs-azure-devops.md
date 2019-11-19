@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/30/2019
 ms.topic: conceptual
 description: Azure DevOps를 Visual Studio 구독자로 사용할 수 있는 방법을 알아봅니다.
-ms.openlocfilehash: 227ba1652c592a6fdf3f20bdb5052d9330f142a1
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 9b4c616c870f0834b6974d59540035687b32fc12
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314163"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983687"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Visual Studio 구독자용 Azure DevOps 혜택
 적극적인 Visual Studio 구독자는 구독 혜택에 포함된 Azure DevOps의 다양한 기능을 사용할 수 있습니다. 조직을 직접 만들었든 또는 다른 사용자에 의해 추가되었든, 멤버로 속해 있는 각 Azure DevOps 조직에서 이러한 동일한 기능을 사용할 수 있습니다.
@@ -25,7 +25,9 @@ Visual Studio 구독을 활성화하는 데 사용한 것과 동일한 ID 또는
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise(표준, 월간 클라우드)   | VL, Azure, 일반 정품, 선택한 NFR<sup>1</sup>  | Azure Boards & Repos(기본), Azure Test Plans, Azure Pipelines(자체 호스트됨)       |  예          |
-| Visual Studio Professional(표준, 월간 클라우드) | VL, Azure, 일반 정품,                                        | Azure Boards & Repos(기본)                                                            |  예          |
+| GitHub Enterprise가 포함된 Visual Studio Enterprise   | VL| Azure Boards & Repos(기본), Azure Test Plans, Azure Pipelines(자체 호스트됨)       |  예          |
+| Visual Studio Professional(표준, 월간 클라우드) | VL, Azure, 일반 정품                                        | Azure Boards & Repos(기본)                                                            |  예          |
+| GitHub Enterprise가 포함된 Visual Studio Professional | VL| Azure Boards & Repos(기본)                                                            |  예          |
 | Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | Azure Boards & Repos(기본), Azure Test Plans                                              |  예          |
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | Azure Boards & Repos(기본), Azure Test Plans                                              |  예          |
 ||
@@ -49,3 +51,5 @@ Azure DevOps 기능에 대한 자세한 정보:
 - [Azure Boards & Repos(기본)](https://azure.microsoft.com/services/devops/compare-features/)
 - [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)
+
+[Azure DevTest 개별 크레딧](vs-azure.md)을 활성화하는 방법을 알아보세요.

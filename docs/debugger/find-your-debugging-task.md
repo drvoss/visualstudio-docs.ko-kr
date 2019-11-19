@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8467463b5a97c5bf7de1c3864ee6a5e5fc4681d1
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: b833d8b68af418b727861226df41c700d582805e
+ms.sourcegitcommit: d55438841123aad56a524a65332a86ad67af386b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188105"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73599287"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Visual Studio에서 디버깅 작업 찾기
 
@@ -102,6 +102,10 @@ Native C++의 경우 [NatVis 프레임 워크](create-custom-views-of-native-obj
 디버거 옵션 및 디버거 프로젝트 설정을 구성 하려면 [디버거 설정 및 준비](debugger-settings-and-preparation.md)를 참조 하세요.
 
 ## <a name="additional-tasks"></a>추가 작업
+
+### <a name="fix-an-exception"></a>예외 수정
+
+[예외 수정](write-better-code-with-visual-studio.md#fix-an-exception)을 참조 하세요.
 
 ### <a name="edit-code-during-a-debugging-session"></a>디버깅 세션 중에 코드 편집
 

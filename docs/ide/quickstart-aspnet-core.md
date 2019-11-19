@@ -2,7 +2,7 @@
 title: C#에서 ASP.NET Core 웹앱 만들기
 description: C# 및 ASP.NET Core를 사용하여 단계별로 Visual Studio에서 간단한 Hello World 웹앱을 만드는 방법을 알아봅니다.
 ms.custom: mvc,seodec18
-ms.date: 10/15/2019
+ms.date: 11/06/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: e57a72262e9fdf3224b97d6d107e8547dc0a267e
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: c87fd68a68076ab0ccab2d86f758f2217e956e26
+ms.sourcegitcommit: 292ccebc601d465931fb94218a1c289c5cf77795
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516898"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753997"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>빠른 시작: Visual Studio를 사용하여 첫 번째 ASP.NET Core 웹앱 만들기
 
@@ -120,6 +120,8 @@ ms.locfileid: "72516898"
 
 ## <a name="create-and-run-the-app"></a>앱 만들기 및 실행
 
+::: moniker range="vs-2017"
+
 1. **솔루션 탐색기**에서 **Pages** 폴더를 확장한 다음, **About.cshtml**을 선택합니다.
 
    ![솔루션 탐색기에서 About.cshtml 파일 선택](../ide/media/csharp-aspnet-about-page-html-file.png)
@@ -168,6 +170,41 @@ ms.locfileid: "72516898"
   ![Visual Studio에서 간단한 C# ASP.NET Core 웹앱을 만들고 실행하는 방법을 보여주는 애니메이션 처리된 .gif 파일 보기](../ide/media/csharp-aspnet-animated-hello-world.gif)
 
 이 빠른 시작을 완료한 것을 축하 드립니다! C#, ASP.NET Core 및 Visual Studio IDE(통합 개발 환경)를 이해하는 데 도움이 되었기를 바랍니다.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. **솔루션 탐색기**에서 **Pages** 폴더를 확장한 다음, **Index.cshtml**을 선택합니다.
+
+   ![솔루션 탐색기에서 Index.cshtml 파일 선택](../ide/media/vs-2019/csharp-aspnet-index-page-cshtml-file.png)
+
+   이 파일은 웹 브라우저에서 실행되는 웹앱에서 **홈**이라는 페이지에 해당합니다.
+
+   ![웹앱의 정보 페이지](../ide/media/vs-2019/csharp-aspnet-index-page.png)
+
+   편집기에 **홈** 페이지에 표시되는 텍스트에 대한 HTML 코드가 표시됩니다.
+
+   ![Visual Studio 편집기의 홈 페이지에 대한 Index.cshtml 파일의 HTML 코드](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page.png)
+
+1. "Welcome"이라는 텍스트를 "**Hello World!** "로 변경합니다.
+
+   ![Visual Studio 편집기에서 기본 HTML 코드를 Welcome이라고 말하는 대신 Hello World라고 말하도록 변경](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page-hello-world.png)
+
+1. **IIS Express**를선 택하거나 **Ctrl**+**F5**를 눌러 앱을 실행하고 웹 브라우저에서 엽니다.
+
+   ![Visual Studio에서 IIS Express 단추 선택](../ide/media/vs-2019/csharp-aspnet-generic-iisbutton.png)
+
+   > [!NOTE]
+   > **웹 서버 'IIS Express'에 연결할 수 없음**이라는 오류 메시지 또는 SSL 인증서를 언급하는 오류 메시지를 받는 경우 Visual Studio를 닫습니다. 다음으로, 마우스 오른쪽 단추 컨텍스트 메뉴에서 **관리자 권한으로 실행** 옵션을 사용하여 Visual Studio를 엽니다. 그런 다음 애플리케이션을 다시 실행합니다.
+
+1. 웹 브라우저에서 **홈** 페이지에 업데이트된 텍스트가 포함되는지 확인합니다.
+
+   ![변경 내용이 포함된 업데이트된 홈 페이지 표시](../ide/media/vs-2019/csharp-aspnet-index-page-hello-world.png)
+
+1. 웹 브라우저를 닫습니다.
+
+::: moniker-end
 
 ## <a name="next-steps"></a>다음 단계
 

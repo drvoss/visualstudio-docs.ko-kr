@@ -7,12 +7,12 @@ ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 3e4a41567b02807dce280426daf59e30ed1876eb
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 1ace600f9c4582e99c6fa324cb9dcc61593d3d97
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211443"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73716774"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Mac용 Visual Studio 2019 설치
 
@@ -28,7 +28,7 @@ macOS에서 네이티브, .NET 앱 플랫폼 간 개발을 시작하려면 다�
 iOS 또는 macOS용 Xamarin 앱을 빌드하려면 다음 항목도 필요합니다.
 
 - Xcode 10.0 이상 대개 안정적인 최신 버전을 사용하는 것이 좋습니다.
-- Apple ID. Apple ID가 없으면 https://appleid.apple.com 에서 새로 만들 수 있습니다. Xcode를 설치하고 로그인하려면 Apple ID가 있어야 합니다.
+- Apple ID. Apple ID가 없으면 https://appleid.apple.com 에서 새로 만들 수 있습니다. Xcode를 설치하고 서명하려면 Apple ID가 있어야 합니다.
 
 ## <a name="installation-instructions"></a>설치 지침
 
@@ -53,7 +53,7 @@ iOS 또는 macOS용 Xamarin 앱을 빌드하려면 다음 항목도 필요합니
    일부 플랫폼을 설치하지 않으려는 경우 아래 가이드를 사용하면 설치할 플랫폼을 결정할 수 있습니다.
 
 
-|앱 유형  |대상  |선택  |메모  |
+|앱 유형  |Target  |선택  |참고  |
 |---------|---------|---------|---------|
 |**Xamarin을 사용한 앱**:| Xamarin.Forms|**Android** 및 **iOS** 플랫폼을 선택합니다. |[**Xcode**](https://developer.apple.com/xcode/)를 설치해야 합니다. |
 ||iOS만|**iOS** 플랫폼을 선택합니다.|[**Xcode**](https://developer.apple.com/xcode/)를 설치해야 합니다.|
@@ -61,7 +61,7 @@ iOS 또는 macOS용 Xamarin 앱을 빌드하려면 다음 항목도 필요합니
 ||Mac만|**macOS(Cocoa)** 플랫폼을 선택합니다.|[**Xcode**](https://developer.apple.com/xcode/)를 설치해야 합니다.|
 |**.NET Core 애플리케이션**|         |**.NET Core** 플랫폼을 선택합니다.|         |
 |**ASP.NET Core 웹 애플리케이션**|         |**.NET Core** 플랫폼을 선택합니다.|         |
-|**Azure Functions**|         |**.NET Core** 플랫폼을 선택합니다.|         |
+|**Azure 기능**|         |**.NET Core** 플랫폼을 선택합니다.|         |
 |**플랫폼 간 Unity 게임 개발**|         |Mac용 Visual Studio 이외에는 추가 플랫폼을 설치하지 않아도 됩니다.| Unity 확장 설치에 대한 자세한 내용은 [Unity 설치 가이드](/visualstudio/mac/setup-vsmac-tools-unity)를 참조하세요.|
 
 
@@ -76,9 +76,9 @@ iOS 또는 macOS용 Xamarin 앱을 빌드하려면 다음 항목도 필요합니
 
     [![사용할 바로 가기 키 선택](media/ide-tour-2019-keyboard-shortcut.png)](media/ide-tour-2019-keyboard-shortcut.png#lightbox)
 
-회사 환경에 설치하는 동안 네트워크 문제가 있는 경우 [방화벽 또는 프록시 뒤에 설치](https://docs.microsoft.com/visualstudio/mac/installation#install-visual-studio-for-mac-behind-a-firewall-or-proxy-server) 지침을 검토하세요.
+회사 환경에 설치하는 동안 네트워크 문제가 있는 경우 [방화벽 또는 프록시 뒤에 설치](/visualstudio/mac/installation#install-visual-studio-for-mac-behind-a-firewall-or-proxy-server) 지침을 검토하세요.
 
-[릴리스 정보](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)의 변경 내용에 대해 자세히 알아보세요.
+[릴리스 정보](/visualstudio/releasenotes/vs2019-mac-relnotes)의 변경 내용에 대해 자세히 알아보세요.
 
 > [!NOTE]
 > 원래 설치 중 6단계에서 선택 취소하여 플랫폼 또는 도구를 설치하지 않도록 선택한 경우 나중에 구성 요소를 추가하려면 설치 관리자를 다시 실행해야 합니다.

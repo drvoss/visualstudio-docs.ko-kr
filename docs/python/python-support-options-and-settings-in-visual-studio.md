@@ -17,12 +17,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d917f0211a0888fa2a712b0c010cf6177823c223
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 08501d71400a0df139022f04e68573d0dd1449d1
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62431016"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661915"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Visual Studio의 Python 옵션
 
@@ -48,15 +48,15 @@ Python 옵션을 보려면 **도구** > **옵션** 메뉴 명령을 사용하고
 | --- | --- | --- |
 | **가상 환경을 만들 때 출력 창 표시**| 켜기 | **출력** 창이 표시되지 않도록 하려면 선택 취소합니다. |
 | **패키지를 설치하거나 제거할 때 출력 창 표시** | 켜기 | **출력** 창이 표시되지 않도록 하려면 선택 취소합니다. |
-| **환경 만들기에 대한 알림 표시줄 표시** | 켜기 | ‘Visual Studio 2019만’ 해당합니다. 이 옵션이 설정되어 있는 경우 사용자가 *requirements.txt* 또는 *environment.yml* 파일이 포함된 프로젝트를 열면 Visual Studio는 기본 전역 환경을 사용하지 않고 가상 환경 또는 Conda 환경을 만들기 위한 각각의 제안이 포함되어 있는 알림 표시줄을 보여 줍니다. |
-| **패키지 설치에 대한 알림 표시줄 표시** | 켜기 | ‘Visual Studio 2019만’ 해당합니다. 이 옵션이 설정되어 있는 경우 사용자가 *requirements.txt* 파일이 포함된 프로젝트를 열면(기본 전역 환경을 사용하지 않음), Visual Studio가 해당 요구 사항을 현재 환경에 설치된 패키지와 비교합니다. 패키지가 누락된 경우에는 Visual Studio에서 해당 종속성을 설치하라는 메시지를 표시합니다. |
+| **환경 만들기에 대한 알림 표시줄 표시** | 켜기 | ‘Visual Studio 2019만’ 해당합니다.  이 옵션이 설정되어 있는 경우 사용자가 *requirements.txt* 또는 *environment.yml* 파일이 포함된 프로젝트를 열면 Visual Studio는 기본 전역 환경을 사용하지 않고 가상 환경 또는 Conda 환경을 만들기 위한 각각의 제안이 포함되어 있는 알림 표시줄을 보여 줍니다. |
+| **패키지 설치에 대한 알림 표시줄 표시** | 켜기 | ‘Visual Studio 2019만’ 해당합니다.  이 옵션이 설정되어 있는 경우 사용자가 *requirements.txt* 파일이 포함된 프로젝트를 열면(기본 전역 환경을 사용하지 않음), Visual Studio가 해당 요구 사항을 현재 환경에 설치된 패키지와 비교합니다. 패키지가 누락된 경우에는 Visual Studio에서 해당 종속성을 설치하라는 메시지를 표시합니다. |
 | **항상 관리자로 패키지 관리자 실행** | 끄기 | 항상 모든 환경에서 `pip install` 및 유사한 패키지 관리자 작업 권한을 상승합니다. 패키지를 설치할 때 환경이 *c:\Program Files*와 같은 파일 시스템의 보호된 영역에 있을 경우 Visual Studio에서 관리자 권한을 확인하는 메시지를 표시합니다. 해당 메시지에서 하나의 환경에 대해서만 항상 설치 명령 권한을 상승하도록 선택할 수 있습니다. [패키지 탭](python-environments-window-tab-reference.md#packages-tab)을 참조하세요. |
-| **처음 사용할 때 완성 DB 자동 생성** | 켜기 | Visual Studio 2017 버전 15.5 및 이전 버전과 IntelliSense 데이터베이스를 사용하는 경우 이후 버전에 적용됩니다. 데이터베이스를 사용하는 코드를 작성할 때 라이브러리에 대한 데이터베이스 완성에 우선 순위를 지정합니다. 자세한 내용은 [IntelliSense 탭](python-environments-window-tab-reference.md#intellisense-tab)을 참조하세요. |
+| **처음 사용할 때 완성 DB 자동 생성** | 켜기 | Visual Studio 2017 버전 15.5 및 이전 버전과 IntelliSense 데이터베이스를 사용하는 경우 이후 버전에 적용됩니다.  데이터베이스를 사용하는 코드를 작성할 때 라이브러리에 대한 데이터베이스 완성에 우선 순위를 지정합니다. 자세한 내용은 [IntelliSense 탭](python-environments-window-tab-reference.md?view=vs-2017#intellisense-tab)을 참조하세요. |
 | **시스템 전체 PYTHONPATH 변수 무시** | 켜기 | Visual Studio에서 환경 및 프로젝트에 검색 경로를 지정하는 보다 직접적인 수단을 제공하기 때문에 PYTHONPATH는 기본적으로 무시됩니다. 자세한 내용은 [검색 경로](search-paths.md)를 참조하세요. |
 | **연결된 파일을 추가할 때 검색 경로 업데이트** | 켜기 | 설정된 경우 [연결된 파일](managing-python-projects-in-visual-studio.md#linked-files)을 프로젝트에 추가하면 IntelliSense가 연결된 파일의 폴더 내용을 완성 데이터베이스에 포함할 수 있도록 [검색 경로](search-paths.md)가 업데이트됩니다. 이러한 내용을 완성 데이터베이스에서 제외하려면 이 옵션의 선택을 취소합니다. |
 | **가져온 모듈을 찾을 수 없으면 경고 표시** | 켜기 | 가져온 모듈을 현재 사용할 수 없지만 달리 코드 작업에 영향을 주지 않음을 알고 있는 경우 경고를 무시하려면 이 옵션의 선택을 취소합니다. |
 | **일치하지 않는 들여쓰기를 보고할 형식** | **경고** | Python 인터프리터는 적절한 들여쓰기를 사용하여 범위를 확인하기 때문에 Visual Studio는 기본적으로, 코딩 오류를 나타낼 수 있는 일관성 없는 들여쓰기가 검색될 경우 경고를 실행합니다. **오류**로 설정하면 훨씬 더 엄격하게 적용되어, 프로그램이 종료됩니다. 이 동작을 사용하지 않으려면 **사용 안 함**을 선택합니다. |
-| **설문 조사/뉴스 확인** | **한 주에 한 번** | ‘Visual Studio 2017 및 이전 버전’에 제공됩니다. Visual Studio에서 사용 가능한 경우 Python 관련 설문 조사 및 뉴스 항목이 표시된 웹 페이지를 포함하는 창을 열 수 있는 빈도를 설정합니다. 옵션은 **안 함**, **하루에 한 번**, **한 주에 한 번**, **한 달에 한 번**입니다. |
+| **설문 조사/뉴스 확인** | **한 주에 한 번** | ‘Visual Studio 2017 및 이전 버전’에 제공됩니다.  Visual Studio에서 사용 가능한 경우 Python 관련 설문 조사 및 뉴스 항목이 표시된 웹 페이지를 포함하는 창을 열 수 있는 빈도를 설정합니다. 옵션은 **안 함**, **하루에 한 번**, **한 주에 한 번**, **한 달에 한 번**입니다. |
 | **영구적으로 숨겨진 모든 대화 상자 다시 설정** 단추 | N/A | 여러 대화 상자에서 **이 대화 상자를 다시 표시 안 함** 등의 옵션을 제공합니다. 이러한 옵션의 선택을 취소하고 대화 상자를 다시 표시하려면 이 단추를 사용합니다. |
 
 ::: moniker range="vs-2017"
@@ -90,8 +90,8 @@ Python 옵션을 보려면 **도구** > **옵션** 메뉴 명령을 사용하고
 | **디버그 출력 창에 Tee 프로그램 출력** | 켜기 | 별도 콘솔 창과 Visual Studio **출력** 창에 프로그램 출력을 표시합니다. 별도 콘솔 창에만 출력을 표시하려면 이 옵션의 선택을 취소합니다. |
 | **SystemExit 예외에서 중단하고 종료 코드로 0 출력** | 끄기 | 설정하면 이 예외에서 디버거를 중지합니다. 선택 취소하면 디버거가 중단되지 않고 종료됩니다. |
 | **Python 표준 라이브러리 디버깅 사용** | 끄기 | 디버깅하는 동안 표준 라이브러리 소스 코드를 한 단계씩 실행할 수 있지만 디버거를 시작하는 데 걸리는 시간이 증가합니다.|
-| **함수 반환 값 표시** | 켜기 | ‘Visual Studio 2019만’ 해당합니다. **지역** 창에 함수 반환 값을 표시한 후 디버거(F10)의 함수 호출을 건너뜁니다. |
-| **레거시 디버거 사용** | 끄기 | ‘Visual Studio 2019만’ 해당합니다. Visual Studio에서 기본적으로 레거시 디버거를 사용하도록 지시합니다. 자세한 내용은 [디버깅 - 레거시 디버거 사용](debugging-python-in-visual-studio.md#use-the-legacy-debugger)을 참조하세요. |
+| **함수 반환 값 표시** | 켜기 | ‘Visual Studio 2019만’ 해당합니다.  **지역** 창에 함수 반환 값을 표시한 후 디버거(F10)의 함수 호출을 건너뜁니다. |
+| **레거시 디버거 사용** | 끄기 | ‘Visual Studio 2019만’ 해당합니다.  Visual Studio에서 기본적으로 레거시 디버거를 사용하도록 지시합니다. 자세한 내용은 [디버깅 - 레거시 디버거 사용](debugging-python-in-visual-studio.md#use-the-legacy-debugger)을 참조하세요. |
 
 ::: moniker range="vs-2017"
 ![Python 옵션 대화 상자, 디버깅 탭](media/options-debugging.png)
@@ -132,7 +132,7 @@ Python 옵션을 보려면 **도구** > **옵션** 메뉴 명령을 사용하고
 
 | 옵션 | 기본값 | 설명 |
 | --- | --- | --- |
-| **Typeshed의 완성 사용 안 함** | 끄기 | Visual Studio IntelliSense는 일반적으로 번들 버전의 Typeshed(*.pyi* 파일 집합)를 사용하여 Python 2 및 Python 3 둘 다에 대해 표준 라이브러리 및 타사 라이브러리의 형식 힌트를 찾습니다. 이 옵션을 설정하면 번들 TypeShed 동작을 사용하지 않도록 설정합니다. |
+| **Typeshed의 완성 사용 안 함** | 끄기 | Visual Studio IntelliSense는 일반적으로 번들 버전의 Typeshed( *.pyi* 파일 집합)를 사용하여 Python 2 및 Python 3 둘 다에 대해 표준 라이브러리 및 타사 라이브러리의 형식 힌트를 찾습니다. 이 옵션을 설정하면 번들 TypeShed 동작을 사용하지 않도록 설정합니다. |
 | **사용자 지정 Typeshed 경로** | (비어 있음) | 이 옵션을 설정하면 Visual Studio가 이 경로에서는 해당 번들 버전이 아닌 Typeshed 파일을 사용합니다. **Typeshed의 완성 사용 안 함**이 설정된 경우에는 무시합니다. |
 
 ![Python 옵션 대화 상자, 언어 서버 탭](media/options-language-server.png)

@@ -3,15 +3,15 @@ title: 기술 지원 혜택
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/29/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: Visual Studio 구독에 포함된 기술 지원 혜택을 활성화하는 방법을 알아봅니다.
-ms.openlocfilehash: 6d76fa3bdff63a31598fb9a977f6ed024d214af1
-ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
+ms.openlocfilehash: f88cf221f47f2b8aa89a733a4794e424ac938261
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73061154"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161973"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 기술 지원 혜택 활성화 및 사용
 Visual Studio 구독의 기술 지원 혜택은 [지원 수명 주기](https://support.microsoft.com/lifecycle/search)의 기본 지원 단계에 여전히 있는 제품에 대해 **비-프로덕션 환경**의 중단 수정 문제 해결을 위한 것입니다. Visual Studio Enterprise 표준 및 연간 클라우드 구독은 네 개의 인시던트를 받고, Visual Studio Professional 표준 및 연간 클라우드 구독은 혜택 활성화 후 최대 1년 간 두 개의 인시던트를 받습니다. 혜택 활성화는 구독이 최신 상태인 동안 발생해야 합니다.
@@ -112,7 +112,9 @@ Azure와 관련된 문제에 대해 Visual Studio 구독 기술 지원 혜택을
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise(Standard)   | VL, Azure, 일반 정품, 선택한 NFR<sup>1</sup> | 인시던트 4개       |  예|
+| GitHub Enterprise가 포함된 Visual Studio Enterprise | VL | 인시던트 4개       |  예|
 | Visual Studio Professional(표준) | VL, Azure, 일반 정품, 선택한 NFR<sup>2</sup>                                        | 인시던트 2개                                                          |예         |
+| GitHub Enterprise가 포함된 Visual Studio Professional | VL                                     | 인시던트 2개                                                          |예         |
 | Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 인시던트 2개                                             |  예         |
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 인시던트 2개                                               | 예         |
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure                                       | 사용할 수 없음                                                           |해당 없음|
@@ -123,3 +125,9 @@ Azure와 관련된 문제에 대해 Visual Studio 구독 기술 지원 혜택을
 <sup>2</sup> *포함: Imagine Standard.*
 
 어떤 구독을 사용하고 있는지 확실하지 않나요?  자신의 이메일 주소에 할당된 모든 구독을 보려면 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)에 연결합니다. 일부 구독이 표시되지 않으면 하나 이상이 다른 전자 메일 주소에 할당되어 있을 수 있습니다.  해당 구독을 보려면 해당 전자 메일 주소로 로그인해야 합니다.
+
+## <a name="next-steps"></a>다음 단계
+Visual Studio 구독을 최대한 활용하려면 다음과 같은 유용한 혜택을 활성화해야 합니다.
+- [Visual Studio](vs-ide-benefit.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Azure DevTest 개별 크레딧](vs-azure.md)

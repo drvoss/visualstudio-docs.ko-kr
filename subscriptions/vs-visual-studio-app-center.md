@@ -3,15 +3,15 @@ title: Visual Studio 구독의 Visual Studio App Center 혜택 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/31/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: Visual Studio 구독에 포함된 Visual Studio App Center 혜택에 대해 알아봅니다.
-ms.openlocfilehash: 1feb4660e52335f838c1e7c80428575aaf7a04cc
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 243d277a5f6e143f472398538d025c18180d088d
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787814"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161925"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Visual Studio App Center
 
@@ -39,12 +39,14 @@ Visual Studio App Center를 시작하는 것은 간단합니다.
 
 ## <a name="eligibility"></a>자격
 
-| 구독 수준                                                 |     채널                                            | 혜택                                                          | 갱신 가능?    |
+| 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise(표준, 월간 클라우드)   | VL, Azure, 일반 정품, NFR<sup>1</sup> | 포함       |  예          |
-| Visual Studio Professional(표준, 월간 클라우드) | VL, Azure, 일반 정품                                       | 포함                                                            |예 |
-| Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 포함                                                            |예 |
-| MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 포함                                                            |예 |
+| Visual Studio Enterprise(표준, 월간 클라우드)   | VL, Azure, 일반 정품, NFR<sup>1</sup> | Included       |  예          |
+| GitHub Enterprise가 포함된 Visual Studio Enterprise  | VL | Included       |  예          |
+| Visual Studio Professional(표준, 월간 클라우드) | VL, Azure, 일반 정품                                       | Included                                                            |예 |
+| GitHub Enterprise가 포함된 Visual Studio Professional | VL                                      | Included                                                            |예 |
+| Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | Included                                                            |예 |
+| MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | Included                                                            |예 |
 ||
 
 <sup>1</sup> 포함:  NFR(전매금지), FTE, VSIP(Visual Studio Industry Partner), Imagine, MPN(Microsoft 파트너 네트워크), MCT Software & Services, MCT Software & Services Developer, BizSpark, MVP(Most Valuable Professional), RD(Regional Director)
@@ -72,4 +74,7 @@ A:  App Center에는 일부 이전 브라우저에서 제공하지 않을 수 �
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
-Azure는 개발/테스트용 개인 샌드박스입니다.  가상 머신, 클라우드 서비스 및 기타 Azure 리소스를 프로비전할 수 있습니다. [Azure 혜택](vs-azure.md)을 아직 활성화하지 않은 경우 활성화합니다. 
+Visual Studio 구독을 최대한 활용하려면 다음과 같은 유용한 혜택을 활성화해야 합니다.
+- [Visual Studio](vs-ide-benefit.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Azure DevTest 개별 크레딧](vs-azure.md)

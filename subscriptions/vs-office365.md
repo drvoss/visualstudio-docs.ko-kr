@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: 일부 Visual Studio 구독에 포함된 Office 365 혜택을 알아봅니다.
-ms.openlocfilehash: 58bfed3de99e3a3fa0a46e084ea566ae0451c47f
-ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
+ms.openlocfilehash: 2dde8489f15d8bd2e6a5d04045b99aea2245f73d
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73144710"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099603"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Office 365 ProPlus
 
@@ -51,8 +51,10 @@ Office 365 ProPlus를 다운로드하고 활성화하려면 다음 단계를 따
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise(Standard)   | VL, Azure, 일반 정품| 사용 가능       |  예          |
+| GitHub Enterprise가 포함된 Visual Studio Enterprise  | VL | 사용 가능       |  예          |
 | Visual Studio Enterprise(Standard)   | NFR<sup>1</sup> | 사용할 수 없음       |  해당 사항 없음          |
 | Visual Studio Professional(표준) | VL, Azure, 일반 정품                                       | 사용할 수 없음                                                            |  해당 사항 없음          |
+| GitHub Enterprise가 포함된 Visual Studio Professional | VL | 사용할 수 없음         |  해당 사항 없음          |
 | Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 사용할 수 없음                                             |  해당 사항 없음          |
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 사용할 수 없음                                              |  해당 사항 없음          |
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure | 사용할 수 없음 | N/A |

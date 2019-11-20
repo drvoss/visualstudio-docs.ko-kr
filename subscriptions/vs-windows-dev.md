@@ -3,15 +3,15 @@ title: Visual Studio 구독의 Windows 개발자 계정 혜택 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/31/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: Visual Studio 구독에 포함된 Windows 개발자 계정에 대해 알아봅니다.
-ms.openlocfilehash: e7dc24fef7328dee38f9aca92f3676573b0143ef
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 662dc6d911903a4c0d2c0a77382647639bb25d07
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816423"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74174112"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Windows 개발자 계정
 선택한 Visual Studio 구독에 포함된 Windows 개발자 계정으로 무료 및 유료 Windows 앱을 Windows 스토어에 제출할 수 있습니다.
@@ -43,7 +43,9 @@ Windows 개발자 계정을 사용하려면 기존 계정을 사용하여 계정
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise(Standard)   | VL, Azure, 일반 정품, 선택한 NFR<sup>1</sup> | Included       |  예|
+| GitHub Enterprise가 포함된 Visual Studio Enterprise   | VL  | Included       |  예|
 | Visual Studio Professional(표준) | VL, Azure, 일반 정품                                       | Included                                                            |예|
+| GitHub Enterprise가 포함된 Visual Studio Professional | VL                                        | Included                                                            |예|
 | Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 사용할 수 없음                                            |  해당 없음|
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              |  사용할 수 없음                                            |  해당 없음|
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure                                       | 사용할 수 없음                                                           |해당 없음|
@@ -63,4 +65,7 @@ Windows 개발자 계정을 사용하려면 기존 계정을 사용하여 계정
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
-Azure는 개발/테스트용 개인 샌드박스입니다.  가상 머신, 클라우드 서비스 및 기타 Azure 리소스를 프로비전할 수 있습니다. [Azure 혜택](vs-azure.md)을 활성화하여 Azure DevTest 개별 크레딧을 사용하여 시작하세요.
+Visual Studio 구독을 최대한 활용하려면 다음과 같은 유용한 혜택을 활성화해야 합니다.
+- [Visual Studio](vs-ide-benefit.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Azure DevTest 개별 크레딧](vs-azure.md)

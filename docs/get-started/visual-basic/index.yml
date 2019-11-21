@@ -6,7 +6,7 @@ metadata:
   description: Visual Studio를 사용하여 Visual Basic 앱을 만듭니다.
   ms.custom: seodec18
   ms.topic: landing-page
-  ms.date: 09/20/2019
+  ms.date: 11/19/2019
   ms.author: ghogen
   author: ghogen
   manager: jillfra
@@ -14,12 +14,12 @@ metadata:
   ms.technology: vs-acquisition
   dev_langs:
   - VB
-  ms.openlocfilehash: 729388bf6eaa799580576b12076dc3da880a6386
-  ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+  ms.openlocfilehash: 3462f85ea571e163617c6c5f315a28c98342acab
+  ms.sourcegitcommit: 8530d15aa72fe058ee3a3b4714c36b8638f8b494
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 10/04/2019
-  ms.locfileid: "71962849"
+  ms.lasthandoff: 11/19/2019
+  ms.locfileid: "74188613"
 landingContent:
 - title: 시작
   linkLists:
@@ -31,6 +31,10 @@ landingContent:
     links:
     - text: 둘러보기 시작
       url: visual-studio-ide.md
+  - linkListType: quickstart
+    links:
+    - text: “Hello World” 콘솔 앱 만들기
+      url: ../../ide/quickstart-visual-basic-console.md
 - title: Visual Basic 앱 만들기
   linkLists:
   - linkListType: tutorial

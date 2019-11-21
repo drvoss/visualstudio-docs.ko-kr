@@ -91,7 +91,7 @@ public sealed class MyClass
 }
 ```
 
-", Nq" 접미사는 최종 값 (nq = 따옴표 없음)을 표시할 때 식 계산기에 따옴표를 제거 하도록 지시 합니다.
+",nq" 접미사는 최종 값 (nq = 따옴표 없음)을 표시할 때 식 계산기에 따옴표를 제거 하도록 지시 합니다.
 
 ## <a name="example"></a>예제
 다음 코드 예제에서는 `DebuggerDisplay`와 `DebuggerBrowseable` 및 `DebuggerTypeProxy`를 함께 사용하는 방법을 보여 줍니다. **조사식** 창과 같은 디버거 변수 창에 이 코드가 표시될 때는 다음과 같은 확장이 생성됩니다.

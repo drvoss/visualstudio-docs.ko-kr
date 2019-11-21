@@ -3,15 +3,15 @@ title: Visual Studio 구독의 Power BI Pro 혜택 | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 12/19/2018
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: 선택한 Visual Studio 구독에 포함된 Power BI Pro 구독에 대해 알아봅니다.
-ms.openlocfilehash: 499a4ee168aaab7dfee2527bdbf10cc3b10313b8
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 8e7046d8fc16868e23978203cf2bc400c70b6b8d
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787948"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161942"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Power BI Pro
 
@@ -56,14 +56,16 @@ Power BI Pro를 사용하려면 기존 계정을 사용하여 계정을 설정�
 
 11. 다음 페이지에서 Power BI Pro 사용을 시작하도록 완전히 설정되었는지 확인합니다.  이 페이지에는 로그인 페이지에 대한 링크가 제공됩니다.  로그인 페이지에 대한 링크 및 사용자 ID를 기록해 두는 것이 좋습니다.  (또한 계정을 설정할 때 제공한 주소로 환영 전자 메일을 받게 됩니다.)  자동화된 [Office 365 길잡이] 창도 표시되며, 질문이 있을 경우 사용할 수 있습니다.  **시작합니다.** 를 클릭하여 계속합니다.
 
-12. 이제 Power BI Pro 계정이 설정되었으므로 사용자와 도메인을 관리하고, Office 소프트웨어를 설치하며, Office 365에 대해 알아볼 수 있는 Office 365 관리 센터가 표시됩니다.  끝났습니다.  이제 사용할 준비가 되었습니다.
+12. 이제 Power BI Pro 계정이 설정되었으므로 사용자와 도메인을 관리하고, Office 소프트웨어를 설치하며, Office 365에 대해 알아볼 수 있는 Office 365 관리 센터가 표시됩니다.  정말 간단하죠.  이제 사용할 준비가 되었습니다.
 
 ## <a name="eligibility"></a>자격
 
-| 구독 수준                                                 |     채널                                            | 혜택                                                          | 갱신 가능?    |
+| 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise(Standard)   | VL, Azure, 일반 정품, 선택한 NFR<sup>1</sup> | 사용 가능       |  예|
+| GitHub Enterprise가 포함된 Visual Studio Enterprise  | VL | 사용 가능       |  예|
 | Visual Studio Professional(표준, 월간 클라우드) | VL, Azure, 일반 정품                                       | 사용할 수 없음                                                            |해당 없음         |
+| GitHub Enterprise가 포함된 Visual Studio Professional | VL                                      | 사용할 수 없음                                                            |해당 없음         |
 | Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 사용할 수 없음                                                            |해당 없음         |
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 사용 가능       |  예|
 | Visual Studio Enterprise(월간 클라우드) | Azure                                       | 사용할 수 없음                                  |해당 없음|
@@ -100,7 +102,7 @@ A:  예.  메시지는 관리자가 아닌 활성 Office 365 테넌트가 이미
 4. 프로세스의 나머지 단계는 6단계로 시작하는 문서의 본문에 나열된 단계와 동일합니다.
 
 ### <a name="q--im-on-a-government-tenant--can-i-use-the-benefit"></a>Q:  저는 정부 테넌트에 있습니다.  혜택을 사용할 수 있나요?
-A:   아니요.  Power BI Pro 혜택은 정부 테넌트에는 추가할 수 없습니다.
+A:  아니요.  Power BI Pro 혜택은 정부 테넌트에는 추가할 수 없습니다.
 
 ## <a name="support-resources"></a>지원 리소스
 - Power BI Pro와 관련하여 도움이 필요하세요?
@@ -111,4 +113,5 @@ A:   아니요.  Power BI Pro 혜택은 정부 테넌트에는 추가할 수 없
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
-Power BI Pro 혜택을 활성화 하려면 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)를 방문하세요.
+- Power BI Pro 혜택을 활성화하려면 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)를 방문하세요.
+- [Azure DevTest 개별 크레딧](vs-azure.md)을 활성화하여 고유한 개발 샌드박스를 활용하세요. 

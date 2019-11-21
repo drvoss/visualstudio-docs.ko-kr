@@ -3,15 +3,15 @@ title: WhiteSource Bolt 혜택 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/01/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: Visual Studio 구독에 포함된 WhiteSource Bolt 구독을 활성화하는 방법을 알아봅니다.
-ms.openlocfilehash: 54248c0291fe54c2cb7db9155233d08e96991581
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: fb403053d101cf2edf8677c7bcce494ae4e2d21e
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816416"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74174123"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio 구독의 WhiteSource Bolt
 
@@ -38,7 +38,7 @@ ms.locfileid: "72816416"
 9. 자세한 내용은 WhiteSource Bolt [FAQ 페이지](https://bolt.whitesourcesoftware.com/azure/faq/)를 참조하세요. 
 
 ## <a name="eligibility"></a>자격
-WhiteSource Bolt는 현재 Visual Studio Marketplace에서 무료로 제공됩니다. 
+[WhiteSource Bolt](https://marketplace.visualstudio.com/search?term=whitesource&target=AzureDevOps&category=All%20categories&sortBy=Relevance)는 현재 Visual Studio Marketplace에서 별도 비용 없이 제공됩니다. 
 
 ## <a name="support-resources"></a>지원 리소스
 - WhiteSource Bolt와 관련하여 도움이 필요하세요?  [https://www.whitesourcesoftware.com/vse_whitesource_bolt/](https://www.whitesourcesoftware.com/vse_whitesource_bolt/ )에서 WhiteSource Bolt 담당자와 실시간 채팅이 가능합니다.
@@ -46,4 +46,7 @@ WhiteSource Bolt는 현재 Visual Studio Marketplace에서 무료로 제공됩�
 - Visual Studio IDE, Azure DevOps Services 또는 기타 Visual Studio 제품이나 서비스와 관련하여 궁금한 점이 있나요?  [Visual Studio 지원](https://visualstudio.microsoft.com/support/)을 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
-Visual Studio 구독자는 추가 비용 없이 Microsoft Azure를 사용할 수 있습니다.  [월간 Azure DevTest 개별 크레딧](vs-azure.md)을 사용하면 Azure는 개발/테스트를 위한 개인용 샌드박스가 됩니다.  가상 머신, 클라우드 서비스 및 기타 Azure 리소스를 프로비전할 수 있습니다.  크레딧 금액은 구독 수준에 따라 다릅니다.
+Visual Studio 구독을 최대한 활용하려면 다음과 같은 유용한 혜택을 활성화해야 합니다.
+- [Visual Studio](vs-ide-benefit.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Azure DevTest 개별 크레딧](vs-azure.md)

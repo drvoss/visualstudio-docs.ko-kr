@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 4ea1a936de215340cc13971e7a70a8d795d36cbb
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: c2f96bcc9df16b5de7d7f3ff485431352800d27e
+ms.sourcegitcommit: 9801fc66a14c0f855b9ff601fb981a9e5321819e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713937"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "74072732"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose 빌드 속성
 
@@ -46,6 +46,46 @@ ms.locfileid: "73713937"
 |DockerServiceName| dcproj|DockerLaunchAction 또는 DockerLaunchBrowser를 지정한 경우, DockerServiceName은 시작할 서비스의 이름입니다.  이 속성을 사용하여 docker-compose 파일에서 참조할 수 있는 많은 프로젝트 중 시작할 프로젝트를 확인합니다.|-|
 |DockerServiceUrl| dcproj | 브라우저를 시작할 때 사용할 URL입니다.  유효한 대체 토큰은 “{ServiceIPAddress}”, “{ServicePort}”, “{Scheme}”입니다.  예: {Scheme}://{ServiceIPAddress}:{ServicePort}|-|
 |DockerTargetOS| dcproj | Docker 이미지를 빌드할 때 사용되는 대상 OS입니다.|-|
+
+## <a name="example"></a>예
+
+`DockerComposeBaseFilePath`를 상대 경로로 설정하여 Docker Compose 파일의 위치를 변경하는 경우 솔루션 폴더를 참조하도록 빌드 컨텍스트가 변경되었는지도 확인해야 합니다. 예를 들어 Docker Compose 파일이 *DockerComposeFiles*라는 폴더인 경우 Docker Compose 파일은 솔루션 폴더를 기준으로 한 상대 위치에 따라 빌드 컨텍스트를 “..” 또는 “../..”으로 설정해야 합니다.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" Sdk="Microsoft.Docker.Sdk">
+  <PropertyGroup Label="Globals">
+    <ProjectVersion>2.1</ProjectVersion>
+    <DockerTargetOS>Windows</DockerTargetOS>
+    <ProjectGuid>154022c1-8014-4e9d-bd78-6ff46670ffa4</ProjectGuid>
+    <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
+    <DockerServiceUrl>{Scheme}://{ServiceIPAddress}{ServicePort}</DockerServiceUrl>
+    <DockerServiceName>webapplication1</DockerServiceName>
+    <DockerComposeBaseFilePath>DockerComposeFiles\mydockercompose</DockerComposeBaseFilePath>
+    <AdditionalComposeFilePaths>AdditionalComposeFiles\myadditionalcompose.yml</AdditionalComposeFilePaths>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="DockerComposeFiles\mydockercompose.override.yml">
+      <DependentUpon>DockerComposeFiles\mydockercompose.yml</DependentUpon>
+    </None>
+    <None Include="DockerComposeFiles\mydockercompose.yml" />
+    <None Include=".dockerignore" />
+  </ItemGroup>
+</Project>
+```
+
+*mydockercompose.yml* 파일은 다음과 같으며, 빌드 컨텍스트가 솔루션 폴더의 상대 경로(이 경우 `..`)로 설정된 상태입니다.
+
+```yml
+version: '3.4'
+
+services:
+  webapplication1:
+    image: ${DOCKER_REGISTRY-}webapplication1
+    build:
+      context: ..
+      dockerfile: WebApplication1\Dockerfile
+```
 
 > [!NOTE]
 > DockerComposeBuildArguments, DockerComposeDownArguments 및 DockerComposeUpArguments는 Visual Studio 2019 버전 16.3에 새로 추가되었습니다.

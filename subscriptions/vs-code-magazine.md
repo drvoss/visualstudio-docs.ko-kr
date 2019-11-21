@@ -3,15 +3,15 @@ title: Visual Studio 구독의 CODE Magazine 혜택 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 09/17/2019
+ms.date: 10/13/2019
 ms.topic: conceptual
 description: Visual Studio 구독에 포함된 CODE Magazine 혜택에 대해 알아봅니다.
-ms.openlocfilehash: 80efa2c78b8780f319ab5e532d74b689d5998cef
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 6f120bae88a7d613873a9d350e411842904e700e
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256632"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099598"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Visual Studio 구독에 포함된 CODE Magazine
 
@@ -26,22 +26,22 @@ CODE Magazine 구독을 설정하는 프로세스는 간단합니다.  다음 �
    > ![CODE Magazine 타일](_img/vs-code-magazine/vs-code-magazine-tile.png "CODE Magazine 타일")
 3. 코드가 검색되었다는 메시지가 표시됩니다.  **활성화**를 클릭하여 계속합니다.  활성화 준비가 되지 않았어도 괜찮습니다.  언제든지 타일로 돌아가서 활성화할 수 있습니다.  코드를 검색한 후에는 “Get Code”(코드 가져오기) 링크가 “Activate”(활성화)로 바뀝니다.
    > [!div class="mx-imgBorder"]
-   > ![CODE Magazine 코드 검색됨](_img/vs-code-magazine/vs-code-magazine-success.png "코드를 검색했습니다.")
+   > ![CODE Magazine 코드 검색됨](_img/vs-code-magazine/vs-code-magazine-success.png "코드 검색됨")
 4. CODE Magazine 방문 페이지로 리디렉션됩니다. 국가를 선택하고 잡지를 받는 방법을 선택합니다. 
-> [!NOTE]
-> Visual Studio Dev Essentials 멤버는 디지털 버전 구독만 이용할 수 있습니다. 
+   > [!NOTE]
+   > Visual Studio Dev Essentials 멤버는 디지털 버전 구독만 이용할 수 있습니다. 
 5. 선택 항목에 따라, 적용된 쿠폰 금액과 함께 구독 가격을 보여 주는 메모가 표시됩니다.
-> [!NOTE]
-> 인쇄 버전 구독의 경우:
-> - 미국이 아닌 다른 국가의 구독자에게는 배송 요금이 부과될 수 있습니다. 
-> - 첫 번째 인쇄 버전이 배송되기까지 몇 주가 걸릴 수 있습니다.
-   > [!div class="mx-imgBorder"]
-   > ![CODE Magazine 구독 세부 정보](_img/vs-code-magazine/vs-code-magazine-details.png "구독 세부 정보 및 가격")
+   > [!NOTE]
+   > 인쇄 버전 구독의 경우:
+   > - 미국이 아닌 다른 국가의 구독자에게는 배송 요금이 부과될 수 있습니다. 
+   > - 첫 번째 인쇄 버전이 배송되기까지 몇 주가 걸릴 수 있습니다.
+      > [!div class="mx-imgBorder"]
+      > ![CODE Magazine 구독 세부 정보](_img/vs-code-magazine/vs-code-magazine-details.png "구독 세부 정보 및 가격")
 6. 다음으로, 구독자 정보와 배송 주소를 입력해야 합니다.  배송 주소는 이행, 제품 선택, 디지털 액세스 프로세스를 지원하므로 디지털 버전 구독에도 필요합니다.
 7. 미국이 아닌 다른 국가에 거주하고 있으며 인쇄 버전의 잡지 구독을 선택한 경우, 배송 요금 결제를 위한 청구 주소와 결제 정보를 입력하라는 메시지가 표시될 수 있습니다. 
 8. 확인란을 클릭하여 CODE HTML Newletter를 옵트인할 수 있습니다.
    > [!div class="mx-imgBorder"]
-   > ![CODE Magazine 구독자 정보](_img/vs-code-magazine/vs-code-magazine-subscriber-info.png "구독자 정보 및 배송 주소")
+   > ![CODE Magazine 구독자 정보](_img/vs-code-magazine/vs-code-magazine-subscriber-info.png "구독자 정보 및 배달 주소")
 9. **Place Order**(주문하기)를 클릭하여 구독을 완료합니다.  
 구독 주문을 완료하면, 발생한 문제를 확인하는 데 사용할 수 있는 링크가 포함된 확인 페이지가 표시됩니다. https://codemag.com/my/fulfillment 
 
@@ -49,7 +49,9 @@ CODE Magazine 구독을 설정하는 프로세스는 간단합니다.  다음 �
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise(Standard)   | VL, Azure, 일반 정품, 선택한 NFR<sup>1</sup> | 사용 가능       |  아니요          |
-| Visual Studio Professional(표준<sup>2</sup>) | VL, Azure, 일반 정품                                       | 사용 가능                                                            |  아니요          |
+| GitHub Enterprise가 포함된 Visual Studio Enterprise   | VL| 사용 가능       |  아니요          |
+| Visual Studio Professional(표준) | VL, Azure, 일반 정품                                       | 사용 가능                                                            |  아니요          |
+| GitHub Enterprise가 포함된 Visual Studio Professional | VL                                      | 사용 가능                                                            |  아니요          |
 | Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 사용 가능                                             |  아니요          |
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 사용 가능                                              |  아니요          |
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure | 사용할 수 없음 | N/A |
@@ -76,3 +78,4 @@ A:  CODE Magazine은 이행, 제품 선택, 디지털 액세스 프로세스를 
 ## <a name="next-steps"></a>다음 단계
 구독에 포함된 기타 유용한 혜택을 확인합니다. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)로 이동합니다.
 
+구독과 함께 제공되는 Azure DevTest 개별 크레딧 혜택을 아직 활성화하지 않은 경우 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)를 방문하여 도구 범주의 Azure 타일을 클릭하고, Azure 구독을 설정하고, Azure DevTest 개별 크레딧을 사용합니다.

@@ -7,12 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 124f60a4a632115625524b4e30ab28f795d41660
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 7eae92f7c65208dfeda9cd19e14eaa627e12a22a
+ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "71126120"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74142207"
 ---
 Visual Studio를 사용하여 컨테이너화된 ASP.NET Core 앱을 쉽게 빌드, 디버그, 실행하고 ACR(Azure Container Registry), Docker Hub, Azure App Service 또는 사용자 고유 컨테이너 레지스트리에 게시할 수 있습니다. 이 문서에서는 ACR에 게시합니다.
 
@@ -92,6 +92,18 @@ PMC에서 `docker ps` 명령을 실행합니다. 앱은 컨테이너를 사용�
 CONTAINER ID        IMAGE                  COMMAND               CREATED             STATUS              PORTS                                           NAMES
 cf5d2ef5f19a        hellodockertools:dev   "tail -f /dev/null"   2 minutes ago       Up 2 minutes        0.0.0.0:52036->80/tcp, 0.0.0.0:44342->443/tcp   priceless_cartwright
 ```
+
+## <a name="containers-window"></a>컨테이너 창
+
+Visual Studio 2019 버전 16.4 이상을 사용하는 경우 **컨테이너** 창을 사용하여 머신에서 실행 중인 컨테이너와 사용할 수 있는 이미지를 확인할 수 있습니다.
+
+IDE에서 검색 상자를 사용하여(사용하려면 **Ctrl**+**Q**를 누름) **컨테이너** 창을 열고 `container`를 입력한 후 목록에서 **컨테이너** 창을 선택합니다.
+
+**컨테이너** 창을 움직여서 창 배치 안내선에 따라 편집기 아래 등 편리한 위치에 탑재할 수 있습니다.
+
+창에서 컨테이너를 찾고 각 탭을 단계별로 진행하여 환경 변수, 포트 매핑, 로그 및 파일 시스템을 확인합니다.
+
+자세한 내용은 [Visual Studio에서 컨테이너와 이미지를 보고 진단](../../view-and-diagnose-containers.md)을 참조하세요.
 
 ## <a name="publish-docker-images"></a>Docker 이미지 게시
 

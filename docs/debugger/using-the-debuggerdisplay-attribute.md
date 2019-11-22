@@ -19,15 +19,15 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72728668"
 ---
-# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>DebuggerDisplay 특성을 사용하여 표시할 내용 (C#, Visual Basic, F#, C++/cli)을 디버거에 알립니다.
+# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>DebuggerDisplay 특성을 사용하여 표시할 내용을 디버거에게 지시(C#, Visual Basic, F#, C++/CLI)
 
 <xref:System.Diagnostics.DebuggerDisplayAttribute>는 개체, 속성 또는 필드가 디버거 변수 창에 표시되는 방식을 제어합니다. 이 특성은 형식, 대리자, 속성, 필드 및 어셈블리에 적용할 수 있습니다. 기본 형식에 적용 되는 경우 특성은 하위 클래스에도 적용 됩니다.
 
 `DebuggerDisplay` 특성에는 형식 인스턴스에 대한 값 열에 표시되는 문자열인 단일 인수가 있습니다. 이 문자열에는 중괄호(`{` 및 `}`)가 포함될 수 있습니다. 중괄호 쌍 안의 텍스트는 필드, 속성 또는 메서드로 확인됩니다.
 
-클래스에 재정의된 `ToString()` 메서드가 있는 경우 디버거에서는 기본 `{<typeName>}`대신 재정의된 메서드를 사용합니다. 따라서 `ToString()` 메서드를 재정의한 경우 디버거는 기본`{<typeName>}`대신 재정의된 메서드를 사용하므로 `DebuggerDisplay`를 사용할 필요가 없습니다. 둘 다 사용하는 경우에는 `DebuggerDisplay` 특성이 재정의된 `ToString()` 메서드보다 우선합니다. 또한 `DebuggerDisplay` 특성은 하위 클래스의 재정의 된 `ToString()` 메서드 보다 우선 적용됩니다.
+클래스에 재정의된 `ToString()` 메서드가 있는 경우 디버거에서는 기본 `{<typeName>}`대신 재정의된 메서드를 사용합니다. 따라서 `ToString()` 메서드를 재정의한 경우 디버거는 기본`{<typeName>}`대신 재정의된 메서드를 사용하므로 `DebuggerDisplay`를 사용할 필요가 없습니다. 둘 다 사용하는 경우에는 `DebuggerDisplay` 특성이 재정의된 `ToString()` 메서드보다 우선합니다. 또한 `DebuggerDisplay` 특성은 하위 클래스의 재정의된 `ToString()` 메서드보다 우선 적용됩니다.
 
-디버거가 이 암시적 `ToString()` 호출을 평가할지 여부는 **도구/옵션/디버깅** 대화 상자의 사용자 설정에 따라 결정됩니다. Visual Basic에서는 이 암시적 `ToString()` 평가를  구현하지않습니다.
+디버거가 이 암시적 `ToString()` 호출을 평가할지 여부는 **도구/옵션/디버깅** 대화 상자의 사용자 설정에 따라 결정됩니다. Visual Basic에서는 이 암시적 `ToString()` 평가를 구현하지 않습니다.
 
 > [!IMPORTANT]
 > **변수 창에서 개체의 원시 구조체 표시** 확인란이 **도구/옵션/디버깅** 대화 상자에서 선택되어 있는 경우 `DebuggerDisplay` 특성이 무시됩니다.

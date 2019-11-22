@@ -15,17 +15,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 62f81e6a697089d7a352f652ad9f77d279faac0c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bc65e58aa5bdea786aba05236b6fa684780ccae2
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660816"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296083"
 ---
 # <a name="convert-dialog-box"></a>변환 대화 상자
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-**변환** 대화 상자에서는 변환 도구를 선택하여 이전 프로젝트에서 새 프로젝트를 만들 수 있습니다(예: Visual Basic 6 프로젝트에서 [!INCLUDE[vbprvblong](../../includes/vbprvblong-md.md)] 프로젝트 만들기). Visual Studio의 이전 버전에서 만든 프로젝트를 업그레이드하려면 CodePlex 웹 사이트에서 제공하는 [Visual Studio 프로젝트 변환기](http://go.microsoft.com/fwlink/?LinkID=246465)를 사용할 수도 있습니다.
+**변환** 대화 상자에서는 변환 도구를 선택하여 이전 프로젝트에서 새 프로젝트를 만들 수 있습니다(예: Visual Basic 6 프로젝트에서 [!INCLUDE[vbprvblong](../../includes/vbprvblong-md.md)] 프로젝트 만들기). Visual Studio의 이전 버전에서 만든 프로젝트를 업그레이드하려면 CodePlex 웹 사이트에서 제공하는 [Visual Studio 프로젝트 변환기](https://go.microsoft.com/fwlink/?LinkID=246465)를 사용할 수도 있습니다.
 
  [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]
 

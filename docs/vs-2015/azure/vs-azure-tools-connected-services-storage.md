@@ -1,5 +1,5 @@
 ---
-title: 연결 된 서비스를 사용 하 여 Azure Storage 추가
+title: Add Azure Storage by using Connected Services
 description: Visual Studio 연결된 서비스 추가 대화 상자를 사용하여 Azure Storage를 앱에 추가
 author: ghogen
 manager: jillfra
@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/26/2017
 ms.author: ghogen
-ms.openlocfilehash: e68f7503ecc75c03e9f4beda2003415d3175ee7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6d7bf7901ab33dc6dba50013ebdfa05c3188cd6c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963874"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300168"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Visual Studio 연결 서비스를 사용하여 Azure Storage 추가
 Visual Studio를 사용하면 **연결된 서비스 추가** 대화 상자에서 Azure Storage에 다음을 연결할 수 있습니다.
@@ -63,12 +63,12 @@ Visual Studio를 사용하면 **연결된 서비스 추가** 대화 상자에서
 ## <a name="how-your-project-is-modified"></a>프로젝트를 수정하는 방법
 대화 상자를 완료하면 Visual Studio는 참조를 추가하고 특정 구성 파일을 수정합니다. 특정 변경 내용은 프로젝트 형식에 따라 달라집니다.
 
-- ASP.NET 프로젝트 - [변경된 내용 – ASP.NET 프로젝트](http://go.microsoft.com/fwlink/p/?LinkId=513126)
-- ASP.NET Core 프로젝트 - [변경된 내용 – ASP.NET 5 프로젝트](http://go.microsoft.com/fwlink/p/?LinkId=513124)
-- 클라우드 서비스 프로젝트(웹 역할 및 작업자 역할) - [변경된 내용 – 클라우드 서비스 프로젝트](http://go.microsoft.com/fwlink/p/?LinkId=516965)
+- ASP.NET 프로젝트 - [변경된 내용 – ASP.NET 프로젝트](https://go.microsoft.com/fwlink/p/?LinkId=513126)
+- ASP.NET Core 프로젝트 - [변경된 내용 – ASP.NET 5 프로젝트](https://go.microsoft.com/fwlink/p/?LinkId=513124)
+- 클라우드 서비스 프로젝트(웹 역할 및 작업자 역할) - [변경된 내용 – 클라우드 서비스 프로젝트](https://go.microsoft.com/fwlink/p/?LinkId=516965)
 - WebJob 프로젝트 - [변경된 내용 -WebJob 프로젝트](/azure/visual-studio/vs-storage-webjobs-what-happened)
 
 ## <a name="next-steps"></a>다음 단계
-- [MSDN 포럼: Azure Storage](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
-- [Microsoft Azure Storage 팀 블로그](http://blogs.msdn.com/b/windowsazurestorage/)
+- [MSDN Forum: Azure Storage](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
+- [Microsoft Azure Storage 팀 블로그](https://blogs.msdn.microsoft.com/windowsazurestorage/)
 - [Azure Storage 설명서](https://docs.microsoft.com/azure/storage/)

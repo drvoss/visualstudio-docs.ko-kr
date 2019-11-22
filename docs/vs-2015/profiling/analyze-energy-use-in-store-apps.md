@@ -14,12 +14,12 @@ caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c2b25d0fa57659b3081b54c51b7493621423188f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a3147a6bafc550383f96134f5a76932413eb8a22
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696997"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299365"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>스토어 앱의 에너지 사용 분석
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,14 +42,14 @@ Visual Studio **에너지 소비** 프로파일러를 사용하면 자체 배터
   
 - *에너지* 는 배터리의 전력 용량과 같이 총 전력량을 용량 또는 전위로 측정하거나 일정 기간 동안 사용된 총 전력량으로 측정합니다. 에너지 단위는 1시간 동안 1와트가 일정하게 적용된 전력량인 와트-시간입니다. **에너지 요약**에서 단위가 **mW-h**(밀리와트시)로 표시됩니다.  
   
-  ![에너지 양, 사용한 전원, 사용한 전체 에너지](../profiling/media/energyprof-capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
+  ![Energy capacity, power used, total energy used](../profiling/media/energyprof-capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
   
   예를 들어, 태블릿의 완전히 충전된 배터리에는 저장된 에너지가 상당히 많습니다. 네트워크 통신, 값 계산, 그래픽 표시 등의 작업을 수행하는 데 에너지를 사용하므로 다른 속도로 배터리 전력이 소실됩니다. 특정 기간 동안 소비된 총 전력도 에너지로 측정합니다.  
   
 ## <a name="BKMK_Identify_scenarios_with_user_marks"></a> 사용자 표시로 시나리오 식별  
  프로파일링 데이터에 *사용자 표시* 를 추가하여 타임라인 눈금자의 영역을 식별할 수 있습니다.  
   
- ![시간 표시 막대의 사용자 표시](../profiling/media/profilers-usermarktimeline.png "PROFILERS_UserMarkTimeline")  
+ ![타임라인의 사용자 표시](../profiling/media/profilers-usermarktimeline.png "PROFILERS_UserMarkTimeline")  
   
  이 표시는 메서드 실행 시 타임라인에 주황색 삼각형으로 표시됩니다. 이 표시를 마우스로 가리키면 메시지와 시간이 도구 설명으로 표시됩니다. 두 개 이상의 사용자 표시가 서로 가까이 있으면 표시가 병합되고 도구 설명 데이터가 결합됩니다. 타임라인을 확대하면 표시가 분리되어 표시됩니다.  
   
@@ -62,8 +62,6 @@ Visual Studio **에너지 소비** 프로파일러를 사용하면 자체 배터
 > [!NOTE]
 > - Windows.Foundation.Diagnostics LoggingChannel은 [Windows.Foundation.IClosable](https://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) 인터페이스를 구현합니다(C# 및 VB에서 [System.IDisposable](https://msdn.microsoft.com/library/System.IDisposable.aspx) 로 프로젝션됨). 운영 체제 리소스 누수를 방지하려면 로깅 채널이 완료될 때 [LoggingChannel.Close](https://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)(C# 및 VB에서는 Windows.Foundation.Diagnostics.LoggingChannel.Dispose)를 호출합니다.  
 >   - 열린 각 로깅 채널의 이름은 고유해야 합니다. 동일한 이름의 새 로깅 채널을 삭제되지 않은 채널로 만들려고 하면 예외가 발생합니다.  
-  
- 예제는 Windows SDK 샘플 [LoggingSession 샘플](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) 을 참조하세요.  
   
  **JavaScript 코드에 표시 추가**  
   
@@ -127,7 +125,7 @@ if (performance && performance.mark) {
 |![1단계](../profiling/media/procguid-1.png "ProcGuid_1")|보고서 파일의 이름은 Report*YYYYMMDD-HHMM*.diagsession입니다. 보고서를 저장할 경우 이름을 변경할 수 있습니다.|  
 |![2단계](../profiling/media/procguid-2.png "ProcGuid_2")|타임라인에는 프로파일링 세션 길이, 응용 프로그램 수명 주기 시작 이벤트 및 사용자 표시가 표시됩니다.|  
 |![3단계](../profiling/media/procguid-3.png "ProcGuid_3")|파란색 막대를 끌어 타임라인의 부분의 선택하여 보고서를 타임라인의 일부분으로 제한할 수 있습니다.|  
-|![4단계](../profiling/media/procguid-4.png "ProcGuid_4")|**전원 사용** 그래프는 프로파일링 세션 동안 장치 리소스로 발생하는 전원 출력의 변화를 나타내는 다중선형 차트입니다. 에너지 소비 프로파일러는 CPU, 네트워크 작업 및 화면 디스플레이에서 사용하는 전력을 추적합니다.|  
+|![4단계](../profiling/media/procguid-4.png "ProcGuid_4")|**전원 사용** 그래프는 프로파일링 세션 동안 디바이스 리소스로 발생하는 전원 출력의 변화를 나타내는 다중선형 차트입니다. 에너지 소비 프로파일러는 CPU, 네트워크 작업 및 화면 디스플레이에서 사용하는 전력을 추적합니다.|  
 |![5단계](../profiling/media/procguid-6.png "ProcGuid_6")|**리소스(설정/해제)**  그래프는 네트워크 에너지 소비에 대한 자세한 정보를 제공합니다. **네트워크** 표시줄은 네트워크 연결이 열려 있던 시간을 나타냅니다. **데이터 전송** 하위 막대는 앱에서 네트워크를 통해 데이터를 수신하거나 송신하는 시간을 나타냅니다.|  
 |![6단계](../profiling/media/procguid-6a.png "ProcGuid_6a")|**에너지 사용 요약** 에서는 선택한 타임라인에서 CPU, 네트워크 작업 및 화면 디스플레이 사용에 비례하는 총 에너지양을 보여 줍니다.|  
   
@@ -138,7 +136,7 @@ if (performance && performance.mark) {
 ## <a name="BKMK_Optimize_energy_use"></a> 에너지 사용 최적화  
  네트워크 연결에서는 데이터 전송 이외에 연결 초기화, 유지, 종료의 에너지 비용이 발생합니다. 일부 네트워크는 단일 연결에서 더 많은 데이터를 전송할 수 있도록 데이터가 전송 또는 수신된 후 일정 기간 동안 연결을 유지합니다. **리소스(설정/해제)** 창을 사용하여 앱이 연결과 상호 작용하는 방법을 검사할 수 있습니다.  
   
- ![리소스&#40;설정&#47;해제&#41; 창](../profiling/media/energyprof-resources.png "ENERGYPROF_Resources")  
+ ![리소스 &#40;On&#47;Off&#41; 창](../profiling/media/energyprof-resources.png "ENERGYPROF_Resources")  
   
  **네트워크** 및 **데이터 전송** 막대에서 일련의 작은 데이터 패킷을 가끔 전송하기 위해 오랜 시간 동안 연결이 열려 있다고 표시되는 경우, 데이터를 한번에 전송하도록 일괄 처리하여 네트워크가 열려 있는 시간을 줄이고 에너지 소비도 절약할 수 있습니다.  
   

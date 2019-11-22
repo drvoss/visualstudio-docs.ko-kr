@@ -8,12 +8,12 @@ ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: a33d7928e6e2555f0cfd484059b062ae801d8633
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: af3dd595b786c57983e44982fa2eb8b9afa2959a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442082"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300773"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Android용 Visual Studio 에뮬레이터
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Android용 Visual Studio 에뮬레이터는 Android 디바이스를 에뮬레이
 ## <a name="Requirements"></a> 시스템 요구 사항 및 이전 버전과의 호환성  
  Android용 Visual Studio 에뮬레이터의 하드웨어, 소프트웨어 및 구성 요구 사항에 대한 중요한 내용을 보려면 다음 항목을 참조하세요.  
   
-- [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
+- [Visual Studio Emulator for Android의 시스템 요구 사항](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
   
   Android용 Visual Studio 에뮬레이터를 사용하려면 Visual Studio 2015가 필요합니다. 이전 버전의 Visual Studio와 호환되지 않습니다.  
   
@@ -90,7 +90,7 @@ Android용 Visual Studio 에뮬레이터는 Android 디바이스를 에뮬레이
  대상으로 할 프로필 집합을 설치하고 나면 녹색 **재생** 단추를 눌러 이 새로운 프로필을 관리자에서 바로 시작할 수 있습니다. 이 프로필은 또한 Visual Studio 플랫폼 간 모바일 프로젝트 형식의 디버그 대상 드롭다운 메뉴에도 나타납니다.  
   
 ## <a name="FeaturesTest"></a> 에뮬레이터에서 테스트할 수 있는 기능  
- 에뮬레이터에서 테스트할 수 있는 기능에 대한 자세한 내용은 이 [설명서](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx)를 참조하세요.  
+ 에뮬레이터에서 테스트할 수 있는 기능에 대한 자세한 내용은 이 [설명서](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/)를 참조하세요.  
   
 ## <a name="FeaturesNonTest"></a> 에뮬레이터에서 테스트할 수 없는 기능  
  다음 목록에서는 에뮬레이터에서 테스트할 수 **없는** Android 플랫폼의 기능에 대해 설명합니다. 물리적 디바이스에서 다음 기능을 테스트해야 합니다.  
@@ -106,10 +106,10 @@ Android용 Visual Studio 에뮬레이터는 Android 디바이스를 에뮬레이
 ## <a name="Support"></a> 지원 리소스  
  호스트 컴퓨터가 시스템 요구 사항을 충족한 상태에서 이 문제 해결 가이드에서 다루지 않은 문제가 발생하는 경우:  
   
-- [android-emulator](http://stackoverflow.com/questions/tagged/android-emulator) 및 visual-studio 태그를 사용하여 StackOverflow에 대해 질문합니다.  
+- [android-emulator](https://stackoverflow.com/questions/tagged/android-emulator) 및 visual-studio 태그를 사용하여 StackOverflow에 대해 질문합니다.  
   
 - Visual Studio 또는 에뮬레이터 관리자에서 웃는 얼굴 보내기 도구를 사용하여 문제를 보고합니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목:  
  [Visual Studio Emulator for Android에 대한 시스템 요구 사항](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)   
- [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
+ [Visual Studio Emulator for Android 문제 해결](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

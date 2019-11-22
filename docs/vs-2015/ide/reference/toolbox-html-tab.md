@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d3d6eafbafbf9b373028a7ba052ba9e8df62511c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b7ca3179d3e4883f8a2867e13cbdd5e874d60462
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661608"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297773"
 ---
 # <a name="toolbox-html-tab"></a>도구 상자, HTML 탭
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -121,7 +121,7 @@ ms.locfileid: "72661608"
  자세한 내용은 [HTML Input 컨트롤](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [HtmlInputPassword 서버 컨트롤 선언 구문](https://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f), [방법: 암호 입력란으로 TextBox 웹 서버 컨트롤 설정](https://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310) 및 [연습: Web Forms 페이지에서 사용자 입력 유효성 검사](https://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436)를 참조하세요.
 
 > [!IMPORTANT]
-> 애플리케이션에서 사용자 이름과 암호를 전송할 경우 SSL(Secure Sockets Layer)을 사용하여 전송을 암호화하도록 웹 사이트를 구성해야 합니다. 자세한 내용은 [IIS Operations Guide](http://go.microsoft.com/fwlink/?linkid=47856)(IIS 작업 가이드)에서 "Securing Connections with SSL(SSL을 사용하여 연결 보호)"을 참조하세요. 또한 모든 사용자 입력의 유효성을 검사하는 것이 좋습니다. 자세한 내용은 [ASP.NET 웹 페이지에서 사용자 입력 유효성 검사](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)를 참조하세요.
+> 애플리케이션에서 사용자 이름과 암호를 전송할 경우 SSL(Secure Sockets Layer)을 사용하여 전송을 암호화하도록 웹 사이트를 구성해야 합니다. 자세한 내용은 [IIS Operations Guide](https://go.microsoft.com/fwlink/?linkid=47856)(IIS 작업 가이드)에서 "Securing Connections with SSL(SSL을 사용하여 연결 보호)"을 참조하세요. 또한 모든 사용자 입력의 유효성을 검사하는 것이 좋습니다. 자세한 내용은 [ASP.NET 웹 페이지에서 사용자 입력 유효성 검사](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)를 참조하세요.
 
  **입력 (확인란)** ![HTML 웹 페이지 도구 상자 확인란 옵션](../../ide/reference/media/vxcheckbox.gif "|::ref8::|")
 
@@ -198,7 +198,7 @@ ms.locfileid: "72661608"
 
  자세한 내용은 [HtmlImage 서버 컨트롤 선언 구문](https://msdn.microsoft.com/528430e8-ced1-47d1-8db2-942e734a61f6), [Image 웹 서버 컨트롤 개요](https://msdn.microsoft.com/library/096a8d8d-58ee-4ee8-ab82-6594a0f3a0a9), <xref:System.Web.UI.HtmlControls.HtmlImage>, <xref:System.Web.UI.HtmlControls.HtmlInputImage> 및 <xref:System.Web.UI.WebControls.Image>를 참조하세요.
 
- ![HTML 페이지 도구 상자 드롭다운](../../ide/reference/media/vxdropdown.gif "|::ref14::|") **선택**
+ **** ![HTML 페이지 도구 상자 드롭다운](../../ide/reference/media/vxdropdown.gif "|::ref14::|") 선택
 
  `select` 요소를 삽입합니다(`size` 특성 없음). 기본적으로 `id="select1"`은 첫 번째 목록 상자로 삽입되고, `id="select2"`는 두 번째 목록 상자로 삽입되는 식으로 항목이 삽입됩니다.
 

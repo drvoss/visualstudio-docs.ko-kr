@@ -1,5 +1,5 @@
 ---
-title: 'DA0021: Gen 1 가비지 수집의 비율이 높습니다. | Microsoft Docs'
+title: 'DA0021: Gen 1 가비지 컬렉션의 비율이 높습니다. | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,21 +13,21 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2a4502be6c683376b93bc144ef5b3568550a1c9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 37827d565da065697acff4c5a775356085163836
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62584038"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300150"
 ---
 # <a name="da0021-high-rate-of-gen-1-garbage-collections"></a>DA0021: Gen 1 가비지 수집의 비율이 높습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-규칙 Id | DA0021 |  
-| 범주. NET Framework 사용 |  
-| 프로 파일링 방법 | 모든 |  
-| 메시지 | Gen 1 가비지 수집의 비율이 상당히 높습니다 있습니다. 의도적으로 프로그램의 데이터 구조가 대다수 오랜 시간 동안 할당되고 지속되는 경우 일반적으로 이러한 현상은 문제가 되지 않습니다. 하지만 이러한 동작이 의도되지 않은 경우에는 애플리케이션이 개체를 고정하고 있는 것일 수 있습니다. 확실하지 않으면 .NET 메모리 할당 데이터 및 개체 수명 정보를 수집하여 애플리케이션이 사용하는 메모리 할당 패턴을 파악할 수 있습니다.|  
-| 규칙 유형 | 정보 |  
+Rule Id|DA0021|  
+|Category|.NET Framework Usage|  
+|Profiling methods|All|  
+|Message|There is a fairly high rate of Gen 1 garbage collections occurring. 의도적으로 프로그램의 데이터 구조가 대다수 오랜 시간 동안 할당되고 지속되는 경우 일반적으로 이러한 현상은 문제가 되지 않습니다. 하지만 이러한 동작이 의도되지 않은 경우에는 애플리케이션이 개체를 고정하고 있는 것일 수 있습니다. 확실하지 않으면 .NET 메모리 할당 데이터 및 개체 수명 정보를 수집하여 애플리케이션이 사용하는 메모리 할당 패턴을 파악할 수 있습니다.|  
+|Rule type|Information|  
   
  샘플링, .NET 메모리 또는 리소스 경합 방법을 사용하여 프로파일링할 경우 이 규칙을 트리거하려면 10개 이상의 샘플을 수집해야 합니다.  
   
@@ -39,11 +39,11 @@ ms.locfileid: "62584038"
   
  0세대의 개체는 빈번하게, 보통 매우 효율적으로 수집됩니다. 1세대의 개체는 덜 빈번하게, 덜 효율적으로 수집됩니다. 마지막으로 2세대의 장기 유지 개체는 훨씬 덜 빈번하게 수집되어야 합니다. 전체 가비지 수집 실행을 나타내는 2세대 수집은 가장 부담이 큰 작업이기도 합니다.  
   
- 1세대 수집이 상대적으로 너무 많이 발생한 경우 이 규칙이 실행됩니다. 너무 많은 단기 유지 개체가 0세대 수집에서 생존하지만 1세대 수집에서 이를 수집할 수 있다면 메모리 관리 비용이 과도해질 수 있습니다. 자세한 내용은 MSDN 웹 사이트의 Rico Mariani의 Performance Tidbits에서 [Mid-life crisis](http://go.microsoft.com/fwlink/?LinkId=177835)(중간 수명의 위기) 게시물을 참조하세요.  
+ 1세대 수집이 상대적으로 너무 많이 발생한 경우 이 규칙이 실행됩니다. 너무 많은 단기 유지 개체가 0세대 수집에서 생존하지만 1세대 수집에서 이를 수집할 수 있다면 메모리 관리 비용이 과도해질 수 있습니다. 자세한 내용은 MSDN 웹 사이트의 Rico Mariani의 Performance Tidbits에서 [Mid-life crisis](https://go.microsoft.com/fwlink/?LinkId=177835)(중간 수명의 위기) 게시물을 참조하세요.  
   
 ## <a name="how-to-investigate-a-warning"></a>경고를 조사하는 방법  
  [오류 목록] 창에서 메시지를 두 번 클릭하여 프로파일링 데이터의 [표시 뷰](../profiling/marks-view.md)로 이동합니다. **.NET CLR Memory\\# of Gen 0 Collections** 및 **.NET CLR Memory\\# of Gen 1 Collections** 열을 찾습니다. 가비지 수집이 더 빈번히 발생하는 특정 프로그램 실행 단계가 있는지 확인합니다. 이러한 값을 **% Time in GC** 열에 비교하여 관리되는 메모리 할당의 패턴이 과도한 메모리 관리 오버헤드를 일으키는지 확인합니다.  
   
  애플리케이션의 관리되는 메모리 사용 패턴을 파악하려면 .NET 메모리 할당 프로필을 실행하여 애플리케이션을 다시 프로파일링하고 개체 수명 측정값을 요청합니다.  
   
- 가비지 수집 성능 향상 방법에 대한 자세한 내용은 Microsoft 웹 사이트에서 [가비지 수집기 기본 및 성능 힌트](http://go.microsoft.com/fwlink/?LinkId=148226)를 참조하세요. 자동 가비지 수집의 오버헤드에 대한 자세한 내용은 [Large Object Heap Uncovered](http://go.microsoft.com/fwlink/?LinkId=177836)(대형 개체 힙 살펴보기)를 참조하세요.
+ 가비지 수집 성능 향상 방법에 대한 자세한 내용은 Microsoft 웹 사이트에서 [가비지 수집기 기본 및 성능 힌트](https://go.microsoft.com/fwlink/?LinkId=148226)를 참조하세요. 자동 가비지 수집의 오버헤드에 대한 자세한 내용은 [Large Object Heap Uncovered](https://go.microsoft.com/fwlink/?LinkId=177836)(대형 개체 힙 살펴보기)를 참조하세요.

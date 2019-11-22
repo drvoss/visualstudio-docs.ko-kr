@@ -1,5 +1,5 @@
 ---
-title: 정적 코드 분석을 사용 하 여 스토어 앱의 코드 품질 분석
+title: Analyze the code quality of Store apps using static code analysis
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fcaa8424e1b60375ec62bde31c5e22f3706641d0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4633b32c1d59a59c91848f72403571955263472f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660749"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297548"
 ---
 # <a name="analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Visual Studio 정적 코드 분석을 사용하여 스토어 앱의 코드 품질 분석
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,5 +35,5 @@ Visual Studio의 코드 분석 도구는 코드에 일련의 일반적인 오류
 
 |||
 |-|-|
-|[MSDN 라이브러리의 코드 분석](http://go.microsoft.com/fwlink/?LinkID=227580)|Visual Studio Ultimate, Visual Studio Premium 및 Visual Studio Professional에서 코드 분석을 사용하는 방법에 대한 자세한 정보를 찾아봅니다.|
-|[MSDN 코드 분석 팀 블로그](http://go.microsoft.com/fwlink/?LinkId=227200)|코드 분석 팀블로그에서 기술 문서 및 샘플을 비롯한 자세한 정보를 찾아봅니다.|
+|[MSDN 라이브러리의 코드 분석](https://go.microsoft.com/fwlink/?LinkID=227580)|Visual Studio Ultimate, Visual Studio Premium 및 Visual Studio Professional에서 코드 분석을 사용하는 방법에 대한 자세한 정보를 찾아봅니다.|
+|[MSDN 코드 분석 팀 블로그](https://go.microsoft.com/fwlink/?LinkId=227200)|코드 분석 팀블로그에서 기술 문서 및 샘플을 비롯한 자세한 정보를 찾아봅니다.|

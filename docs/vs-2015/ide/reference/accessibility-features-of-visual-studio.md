@@ -12,12 +12,12 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fbf7c539c8bf1290aff92edf876ac4c437fd1c68
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ff7d0e7a26c9e8fa6abe984353d3368ca1f6a36a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670293"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296096"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio의 내게 필요한 옵션 기능
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "72670293"
 - 메서드 및 매개 변수의 자동 완성
 
 > [!IMPORTANT]
-> 이 섹션의 정보는 미국에서 Microsoft 제품 사용 허가를 받은 사용자에게만 적용됩니다. 미국 이외의 국가에서 이 제품을 구입한 경우 소프트웨어 패키지에 동봉된 자회사 정보 카드를 참조하거나 [Microsoft 지원 문의처 페이지](http://support.microsoft.com/ContactUs)를 방문하여 페이지 아래쪽의 **전 세계 Microsoft 주소 찾기** 링크를 클릭할 수 있습니다. 이 페이지에서는 Microsoft 지원 서비스의 전화 번호 및 주소 목록을 제공합니다. 자회사에 연락하여 이 섹션에서 설명하는 제품 및 서비스 유형이 해당 지역에서 제공되는지 확인할 수 있습니다. 내게 필요한 옵션에 대한 정보는 일본어, 프랑스어 등 다른 언어로도 제공됩니다.
+> 이 섹션의 정보는 미국에서 Microsoft 제품 사용 허가를 받은 사용자에게만 적용됩니다. 미국 이외의 국가에서 이 제품을 구입한 경우 소프트웨어 패키지에 동봉된 자회사 정보 카드를 참조하거나 [Microsoft 지원 문의처 페이지](https://support.microsoft.com/contactus/)를 방문하여 페이지 아래쪽의 **전 세계 Microsoft 주소 찾기** 링크를 클릭할 수 있습니다. 이 페이지에서는 Microsoft 지원 서비스의 전화 번호 및 주소 목록을 제공합니다. 자회사에 연락하여 이 섹션에서 설명하는 제품 및 서비스 유형이 해당 지역에서 제공되는지 확인할 수 있습니다. 내게 필요한 옵션에 대한 정보는 일본어, 프랑스어 등 다른 언어로도 제공됩니다.
 
  자세한 내용은 다음 항목을 참조하세요.
 

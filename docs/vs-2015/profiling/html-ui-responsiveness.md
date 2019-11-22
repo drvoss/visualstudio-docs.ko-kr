@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e8078ad03661e8430158106aa2d0d40f844eb6c3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: af2b71dd2169500b1c4a75ed59292779959d31a0
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824831"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299675"
 ---
 # <a name="html-ui-responsiveness"></a>HTML UI 응답성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -172,7 +172,7 @@ if (performance.mark && performance.measure) {
   
  기간 단위는 타임라인 세부 정보 보기에서 **사용자 측정** 이벤트로 표시되며 선택 시 자세한 정보를 보여줍니다.  
   
- ![시간 표시 막대 세부 정보 보기의 사용자 측정 이벤트](../profiling/media/js-htmlvizprofiler-user-measure.png "JS_HTMLVizProfiler_User_Measure")  
+ ![타임라인 세부 정보 보기의 사용자 측정 이벤트](../profiling/media/js-htmlvizprofiler-user-measure.png "JS_HTMLVizProfiler_User_Measure")  
   
 ## <a name="AnalyzeData"></a> 데이터 분석  
  다음 단원에서는 프로파일러에 표시되는 데이터를 해석하기 위한 정보를 제공합니다.  
@@ -247,7 +247,7 @@ if (performance.mark && performance.measure) {
   
  다음 예제에서는 DOM 클릭 이벤트를 위한 이벤트 수신기가 선택된 경우의 시간 표시 막대 정보 그래프 모양을 보여 줍니다.  
   
- ![시간 표시 막대 세부 정보 그래프](../profiling/media/js-htmlvizprof-timelinedet.png "JS_HTMLVizProf_TimelineDet")  
+ ![타임라인 세부 정보 그래프](../profiling/media/js-htmlvizprof-timelinedet.png "JS_HTMLVizProf_TimelineDet")  
   
  이 그림에서 **이벤트 이름** 열의 **spinAction** 이벤트 처리기는 선택 시 소스 코드의 이벤트 처리기로 연결되는 링크입니다. 오른쪽 창에서 **콜백 함수** 속성은 소스 코드에 대한 같은 링크를 제공합니다. 또한 다른 속성에는 관련 DOM 요소와 같은 이벤트에 대한 정보가 제공됩니다.  
   
@@ -279,14 +279,14 @@ if (performance.mark && performance.measure) {
 ### <a name="FilterTimelineDetails"></a> 타임라인 세부 정보 필터링  
  특정 이벤트의 상황에 맞는 메뉴에서 **이벤트 필터** 를 선택하여 타임 라인 세부 정보의 뷰를 특정 이벤트로 필터링할 수 있습니다. 이 옵션을 선택하면 타임라인 및 표 뷰가 선택된 이벤트로 범위가 정해집니다. CPU 사용률 그래프에서의 선택도 특정 이벤트로 범위가 정해집니다.  
   
- ![이벤트에 대한 시간 표시 막대 필터링](../profiling/media/js-htmlvizprofiler-filtertoevent.png "JS_HTMLVizProfiler_FilterToEvent")  
+ ![이벤트에 대한 타임라인 필터링](../profiling/media/js-htmlvizprofiler-filtertoevent.png "JS_HTMLVizProfiler_FilterToEvent")  
   
 ### <a name="FilterEvents"></a> 필터 이벤트  
  타임라인 세부 정보 그래프에서 일부 이벤트를 필터링해 데이터의 노이즈를 줄이거나 성능 시나리오와 관련되지 않은 데이터를 제거할 수 있습니다. 이벤트 이름 또는 이벤트 기간으로 필터링하거나 여기서 설명하는 특정 필터로 필터링할 수 있습니다.  
   
  이미지 디코딩, 잘못된 다운로드 및 GC 이벤트를 필터링하려면 아래쪽 창의 필터 아이콘에서 **백그라운드 작업** 옵션의 선택을 취소합니다. 이러한 이벤트는 실행 가능성이 높지 않지만 기본적으로 숨겨집니다.  
   
- ![시간 표시 막대에서 이벤트 필터링](../profiling/media/js-htmlvizprofiler-event-filter.png "JS_HTMLVizProfiler_Event_Filter")  
+ ![타임라인에서 이벤트 필터링](../profiling/media/js-htmlvizprofiler-event-filter.png "JS_HTMLVizProfiler_Event_Filter")  
   
  HTTP 요청 이벤트를 필터링하려면 아래쪽 창의 필터 아이콘에서 **네트워크 트래픽** 옵션의 선택을 취소합니다. 기본적으로 이러한 이벤트는 타임라인 세부 정보 그래프에 표시됩니다.  
   
@@ -304,7 +304,7 @@ if (performance.mark && performance.measure) {
   
  프레임별로 이벤트를 그룹화하는 경우 타임라인 세부 정보 보기의 최상위 이벤트는 각각 프레임을 나타냅니다.  
   
- ![프레임별로 그룹화된 시간 표시 막대 이벤트](../profiling/media/js-htmlvizprofiler-frame-grouping.png "JS_HTMLVizProfiler_Frame_Grouping")  
+ ![프레임별로 그룹화된 타임라인 이벤트](../profiling/media/js-htmlvizprofiler-frame-grouping.png "JS_HTMLVizProfiler_Frame_Grouping")  
   
 ## <a name="SaveSession"></a> 진단 세션 저장  
  Visual Studio에서 진단 세션과 연결된 탭을 닫을 때 이 세션을 저장할 수 있습니다. 저장된 세션은 나중에 다시 열 수 있습니다.  
@@ -351,12 +351,12 @@ if (performance.mark && performance.measure) {
 |그리기|렌더링|DOM에서 시각적 항목이 변경되었고 페이지의 일부를 다시 렌더링하려고 했습니다.|  
 |레이어 렌더링|렌더링|독립적으로 렌더링된 DOM 조각(레이어라고 함)에서 페이지의 일부분을 렌더링해야 하는 시각적 항목이 변경되었습니다.|  
 |이미지 디코딩|이미지 디코딩|DOM에 이미지가 포함되어 해당 이미지를 원본 형식에서 비트맵으로 압축 해제하고 디코딩하려 했습니다.|  
-|프레임|해당 없음|DOM에서 시각적 항목이 변경되어 페이지에서 영향을 받는 모든 부분이 다시 그려져야 합니다. 그룹화에 사용되는 도구 생성 이벤트입니다.|  
-|사용자 측정|해당 없음|앱 관련 시나리오는 `performance.measure` 메서드를 사용하여 측정되었습니다. 코드 분석에 사용되는 도구 생성 이벤트입니다.|  
+|프레임|해당 사항 없음|DOM에서 시각적 항목이 변경되어 페이지에서 영향을 받는 모든 부분이 다시 그려져야 합니다. 그룹화에 사용되는 도구 생성 이벤트입니다.|  
+|사용자 측정|해당 사항 없음|앱 관련 시나리오는 `performance.measure` 메서드를 사용하여 측정되었습니다. 코드 분석에 사용되는 도구 생성 이벤트입니다.|  
   
 ## <a name="Tips"></a> 추가 정보  
   
-- UI 응답성 프로파일러에 대한 Build 2013 컨퍼런스에서 [이 비디오](http://channel9.msdn.com/Events/Build/2013/3-316) 를 시청하십시오.  
+- UI 응답성 프로파일러에 대한 Build 2013 컨퍼런스에서 [이 비디오](https://channel9.msdn.com/Events/Build/2013/3-316) 를 시청하십시오.  
   
 - JavaScript를 사용하여 Windows에 대해 빌드된 Windows 저장소 앱의 성능 팁을 읽어 보세요. 자세한 내용은 [JavaScript를 사용하는 Windows 스토어 앱의 성능 모범 사례](https://msdn.microsoft.com/library/windows/apps/hh465194.aspx)를 참조하십시오.  
   

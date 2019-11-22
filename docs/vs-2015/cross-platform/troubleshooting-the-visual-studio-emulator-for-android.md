@@ -1,5 +1,5 @@
 ---
-title: Android 용 에뮬레이터 문제 해결 | Microsoft Docs
+title: Troubleshooting the Emulator for Android | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: tgt-pltfrm-cross-plat
@@ -8,12 +8,12 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 4e9aa77848c3784b1df7a2c1f32651b8d00e5998
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 380de9206b2dc4e78c3719919dfd78720de28129
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263380"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297643"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Troubleshooting the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,12 +62,12 @@ ms.locfileid: "66263380"
 ## <a name="BeforeYouStart"></a> 시작하기 전에
  문제 해결을 시작하기 전에 다음 항목을 검토하는 것이 유용할 수 있습니다.
 
-- [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)
+- [Visual Studio Emulator for Android의 시스템 요구 사항](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)
 
 ## <a name="NoInstall"></a> 에뮬레이터 설치 실패
  Hyper-V를 설치하지 않은 경우 에뮬레이터를 설치하려고 할 때 다음과 같은 메시지가 나타납니다. HyperV를 지원하는 컴퓨터가 있어야 하고 HyperV를 사용하도록 설정해야 합니다.
 
- ![Android&#95;Emu&#95;Install&#95;Issue](../cross-platform/media/android-emu-install-issue.png "Android_Emu_Install_Issue")
+ ![Android_Emu_Install_Issue](../cross-platform/media/android-emu-install-issue.png "Android_Emu_Install_Issue")
 
 > [!NOTE]
 > 이 메시지는 Android용 Visual Studio 에뮬레이터 및 Windows Phone 에뮬레이터 모두에 적용됩니다. Windows 8.1 및 Windows 10에서 에뮬레이터를 지원합니다.
@@ -132,9 +132,9 @@ ms.locfileid: "66263380"
 
 - Hyper-V 관리자에 가상 스위치 관리자를 열고 네트워크 스위치가 2개 있고, 첫 번째는 내부 스위치, 두 번째는 외부 스위치인지 확인합니다.
 
-     ![Android&#95;Emu&#95;V&#95;Switch&#95;Man](../cross-platform/media/android-emu-v-switch-man.png "Android_Emu_V_Switch_Man")
+     ![Android_Emu_V_Switch_Man](../cross-platform/media/android-emu-v-switch-man.png "Android_Emu_V_Switch_Man")
 
-     설치가 잘못되고 Windows 10을 사용 중인 경우 [netcfg – d 명령을 사용하여 네트워크 디바이스를 다시 설치](http://windows.microsoft.com/windows-10/fix-network-connection-issues) 할 수 있습니다(섹션 6).
+     설치가 잘못되고 Windows 10을 사용 중인 경우 [netcfg – d 명령을 사용하여 네트워크 디바이스를 다시 설치](https://support.microsoft.com/help/10741/windows-fix-network-connection-issues) 할 수 있습니다(섹션 6).
 
 - 이러한 단계로도 문제가 해결되지 않으면 [Emulator fails to start (first use)](#NoStart) 에서 에뮬레이터에 방해가 될 수 있는 타사 소프트웨어에 대한 정보를 확인하세요.
 
@@ -173,7 +173,7 @@ ms.locfileid: "66263380"
 
      - 신뢰할 수 있는 실행 사용 안 함
 
-       자세한 내용은 이 문서를 참조하세요. Technet: Hyper-V: Hyper-V를 활성화하여 BIOS 오류를 해결하는 방법
+       자세한 내용은 다음 문서를 참조하세요. Technet: Hyper-V: Hyper-V를 사용하도록 설정하는 동안 BIOS 오류를 해결하는 방법
 
   5. 4GB 이상의 시스템 메모리가 있는지와 이 메모리가 다른 리소스 집약적 프로그램 및 프로세스에서 사용되고 있지 않은지 확인합니다.
 
@@ -191,7 +191,7 @@ ms.locfileid: "66263380"
 
    일반적으로 Windows 8 및 Hyper-V와 호환되도록 해당 소프트웨어를 업데이트하는 작업은 해당 제품 개발자가 진행해야 합니다.
 
-   다음 제품은 Windows 8 규정 준수를 위해 업그레이드가 필요할 수 있습니다. VirtualBox, Virtual PC 7, VMWare, 일부 VPN 클라이언트, 소프트웨어 방화벽, Cisco VPN 클라이언트 일부 버전 및 기타 가상화 시스템. 문제가 있을 수 있는 가상화 소프트웨어의 개발자에게 Windows 8 및 Hyper-V와 호환되도록 소프트웨어를 업그레이드하도록 권장하세요.
+   Windows 8 규정 준수를 위해 VirtualBox, Virtual PC 7, VMWare, 일부 VPN 클라이언트, 소프트웨어 방화벽, 일부 Cisco VPN 클라이언트 버전 및 기타 가상화 시스템의 업그레이드가 필요할 수 있습니다. 문제가 있을 수 있는 가상화 소프트웨어의 개발자에게 Windows 8 및 Hyper-V와 호환되도록 소프트웨어를 업그레이드하도록 권장하세요.
 
    **해결 방법**으로, 에뮬레이터에서 Visual Studio와 통신하는 데 사용하는 가상 네트워크에 방해가 될 수 있는 모든 타사 드라이버 및 애플리케이션을 사용하지 않도록 설정할 수 있습니다. 이러한 애플리케이션에는 다음이 포함될 수 있습니다.
 
@@ -209,7 +209,7 @@ ms.locfileid: "66263380"
 
   2. vEthernet(내부 이더넷 포트 Windows Phone 에뮬레이터 내부 스위치) 어댑터에 대해 상황에 맞는 메뉴에서 **속성** 을 선택합니다.
 
-      ![Hyper&#45;V에서 사용되는 가상 어댑터](../cross-platform/media/android-emu-virtual-adapter.png "Android_Emu_Virtual_Adapter")
+      ![Hyper-V에서 사용되는 가상 어댑터](../cross-platform/media/android-emu-virtual-adapter.png "Android_Emu_Virtual_Adapter")
 
       어댑터 속성은 다음과 같습니다.
 
@@ -254,7 +254,7 @@ ms.locfileid: "66263380"
 
   이 문제를 해결하려면 마더보드의 BIOS 설정에서 USB3를 사용하지 않도록 설정하고 컴퓨터를 다시 부팅합니다. 그런 후 Gigabyte에서 이 마더보드의 BIOS에 대한 업데이트를 출시했는지 확인합니다.
 
-  자세한 내용은 다음 기술 자료 문서를 참조하세요. [Gigabyte 시스템에서 Hyper-V 역할을 설치한 후 부팅 오류](https://support.microsoft.com/kb/2693144).
+  자세한 내용은 기술 자료 문서 [Gigabyte 시스템에서 Hyper-V 역할을 설치한 후 부팅 오류 발생](https://support.microsoft.com/kb/2693144)을 참조하세요.
 
 ## <a name="ADB"></a> Visual Studio가 앱을 에뮬레이터에 배포하는 동안 중지되거나 에뮬레이터가 다른 IDE에 디버그 대상으로 표시되지 않습니다.
  에뮬레이터를 실행하고 있지만 ADB(Android 디버그 브리지)에 연결된 것으로 나타나지 않거나 ADB를 사용하는 Android 도구(예: Android Studio 또는 Eclipse)에 나타나지 않는 경우 에뮬레이터가 ADB를 찾는 위치를 조정해야 할 수 있습니다. 에뮬레이터는 레지스트리 키를 사용하여 Android SDK의 기본 위치를 식별하고 해당 디렉터리에서 \platform-tools\adb.exe 파일을 찾습니다. 에뮬레이터에서 사용하는 Android SDK 경로를 수정하려면
@@ -311,6 +311,6 @@ ms.locfileid: "66263380"
 ## <a name="Support"></a> 지원 리소스
  호스트 컴퓨터가 시스템 요구 사항을 충족한 상태에서 이 문제 해결 가이드에서 다루지 않은 문제가 발생하는 경우:
 
-- [Android 에뮬레이터](http://stackoverflow.com/questions/tagged/android-emulator) 및 visual-studio 태그를 사용하여 StackOverflow에 대해 질문합니다.
+- [Android 에뮬레이터](https://stackoverflow.com/questions/tagged/android-emulator) 및 visual-studio 태그를 사용하여 StackOverflow에 대해 질문합니다.
 
 - Visual Studio 또는 에뮬레이터 관리자에서 웃는 얼굴 보내기 도구를 사용하여 문제를 보고합니다.

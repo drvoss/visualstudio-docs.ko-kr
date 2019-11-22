@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 61f8748a3874f32db9c235d03b6b7464bc5cecf1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 288fb24c9c1c4ddee1cb59a968e717531e274af1
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62551002"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300591"
 ---
 # <a name="getting-started-with-ptvs-building-a-website-in-azure"></a>PTVS 시작: Azure에서 웹 사이트 빌드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Azure에서 Python 웹 사이트를 신속하게 빌드할 수 있습니다.
   
  짧은 [youtube 동영상](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6)을 통해 이러한 지침을 확인할 수 있습니다.  
   
- 새 프로젝트... 대화 상자에서 Python 프로젝트 아래의 Bottle 웹 프로젝트를 선택합니다.  이 [Bottle](http://bottlepy.org/docs/dev/index.html) 템플릿은 [부트스트랩 프레임워크](http://getbootstrap.com/)를 기준으로 하는 시작 사이트입니다.  프로젝트를 만들 때 Visual Studio에서 종속성(이 경우 Bottle)을 가상 환경에 설치하라는 메시지를 표시합니다.  Azure 웹 사이트에 배포하기 때문에 사이트 작업에 필요한 비트를 배포하기 위해 가상 환경에 종속성을 추가해야 합니다.  또한 Python 2.7 또는 3.4 32비트를 기반으로 하는 환경을 설정해야 합니다.  프로젝트를 만든 후 F5 키를 눌러 사이트를 로컬로 실행합니다.  
+ 새 프로젝트... 대화 상자에서 Python 프로젝트 아래의 Bottle 웹 프로젝트를 선택합니다.  이 [Bottle](http://bottlepy.org/docs/dev/index.html) 템플릿은 [부트스트랩 프레임워크](https://getbootstrap.com/)를 기준으로 하는 시작 사이트입니다.  프로젝트를 만들 때 Visual Studio에서 종속성(이 경우 Bottle)을 가상 환경에 설치하라는 메시지를 표시합니다.  Azure 웹 사이트에 배포하기 때문에 사이트 작업에 필요한 비트를 배포하기 위해 가상 환경에 종속성을 추가해야 합니다.  또한 Python 2.7 또는 3.4 32비트를 기반으로 하는 환경을 설정해야 합니다.  프로젝트를 만든 후 F5 키를 눌러 사이트를 로컬로 실행합니다.  
   
  Azure에서 쉽게 사이트를 체험해 볼 수 있습니다.  Azure 구독이 없는 경우 [try.azurewebsites.net](https://trywebsites.azurewebsites.net/)을 사용할 수 있습니다.  이 사이트는 소셜 로그인만으로 한 번에 한 시간 동안 Azure Websites를 체험할 수 있는 간단한 방법을 제공합니다.  신용 카드를 사용할 필요가 없습니다.  언어 변경 드롭다운에서 빈 사이트 템플릿을 선택한 다음 만들기를 선택합니다.  "웹 애플리케이션 작업"에서 게시 프로필 다운로드를 선택하고 Visual Studio에서 사용할 파일을 저장합니다.  운영 체제의 git를 사용하여 배포할 수도 있습니다.  
   

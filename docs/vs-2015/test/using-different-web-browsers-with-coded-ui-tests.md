@@ -8,19 +8,19 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 31ca0fdbecf7ea3742fef60f99f2a0a25220f9cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d9c86125d934c5165e3e8111fdd06631844ad1a6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657230"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297957"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>코딩된 UI 테스트에 다른 웹 브라우저 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 코딩된 UI 테스트는 Internet Explorer로 테스트를 기록하여 웹 애플리케이션 테스트를 자동화합니다. 그런 다음 이러한 웹 애플리케이션에 대해 Internet Explorer 또는 기타 브라우저를 사용하여 테스트를 사용자 지정하고 재생할 수 있습니다.
 
- **요구 사항**
+ **Requirements**
 
 - Visual Studio Enterprise
 
@@ -38,19 +38,19 @@ ms.locfileid: "72657230"
 
   - Windows Internet Explorer 10
 
-  - Mozilla Firefox 및 Google Chrome의 지원되는 버전을 확인하려면 [여기](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)로 이동하세요.
+  - Mozilla Firefox 및 Google Chrome의 지원되는 버전을 확인하려면 [여기](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting)로 이동하세요.
 
-- [코딩된 UI 다중 브라우저용 Selenium 구성 요소](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)를 설치합니다.
+- [코딩된 UI 다중 브라우저용 Selenium 구성 요소](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting)를 설치합니다.
 
   **모든 웹 브라우저에 어떤 기능이 지원됩니까?**
 
-- 속성, 검색, 재생 대기자 등 [기능 제어를 위한 사용자 지정 코드를 추가](http://blogs.msdn.com/b/visualstudioalm/archive/2012/12/10/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer.aspx)합니다.
+- 속성, 검색, 재생 대기자 등 [기능 제어를 위한 사용자 지정 코드를 추가](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/)합니다.
 
 - 팝업 및 대화 상자
 
-- [반환 형식이 없는 기본 JavaScript 실행](http://blogs.msdn.com/b/visualstudioalm/archive/2013/01/18/introducing-jscript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test.aspx)
+- [반환 형식이 없는 기본 JavaScript 실행](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
 
-- 검색 복원력(스마트 매치 사용) 및 [성능 향상](http://blogs.msdn.com/b/visualstudioalm/archive/2012/02/01/guidelines-on-improving-performance-of-coded-ui-test-playback.aspx)
+- 검색 복원력(스마트 매치 사용) 및 [성능 향상](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>여러 웹 브라우저 형식에 코딩된 UI 테스트를 사용해야 하는 이유는 무엇입니까?
  다양한 웹 브라우저 종류로 웹 애플리케이션을 테스트하면 다양한 브라우저를 실행하는 사용자의 UI 환경을 더 잘 에뮬레이션할 수 있습니다. 예를 들어, 애플리케이션에 다른 웹 브라우저와 호환되지 않는 Internet Explorer의 컨트롤 또는 코드를 포함할 수 있습니다. 다른 브라우저에서 코딩된 UI 테스트를 실행하면 고객에게 영향을 미치기 전에 문제를 발견하고 수정할 수 있습니다.
@@ -76,7 +76,7 @@ ms.locfileid: "72657230"
 3. 확장명을 강조 표시하고 **다운로드**를 선택합니다.
 
    > [!TIP]
-   > 또한 [여기](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)에서 코딩된 UI 다중 브라우저 테스트용 Selenium 구성 요소를 다운로드할 수 있습니다.
+   > 또한 [여기](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting)에서 코딩된 UI 다중 브라우저 테스트용 Selenium 구성 요소를 다운로드할 수 있습니다.
 
    코딩된 UI 테스트를 만들고 사용하는 방법은 [코딩된 UI 테스트 만들기](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)를 참조하세요.
 
@@ -101,17 +101,17 @@ ms.locfileid: "72657230"
  *그 외 무엇을 알아야 하나요?*
  **참고**
 
-- ![Prereq](../test/media/prereq.png "필수 구성 요소") Apple Safari 웹 브라우저는 지원 되지 않습니다.
+- ![Prerequsite](../test/media/prereq.png "Prereq") Apple Safari web browser is not supported.
 
-- ![Prereq](../test/media/prereq.png "필수 구성 요소") 웹 브라우저를 시작 하는 작업은 코딩 된 UI 테스트의 일부 여야 합니다.
+- ![Prerequsite](../test/media/prereq.png "Prereq") The action of starting the web browser must be part of the coded UI test.
 
    웹 브라우저가 이미 열려 있는 상태에서는 Internet Explorer를 사용하지 않는 이상 단계를 실행하려고 해도 재생이 실패합니다. 따라서 코딩된 UI 테스트에 웹 브라우저 시작을 포함하는 것이 좋습니다.
 
-- ![Prereq](../test/media/prereq.png "필수 구성 요소") 최대화, 최소화, 복원 등의 브라우저별 기본 UI 작업은 자동화할 수 없습니다.
+- ![Prerequsite](../test/media/prereq.png "Prereq") Automating browser specific based UI actions such as maximize, minimize and restore is not supported.
 
   **팁**
 
-- ![팁](../test/media/tip.png "팁") 출력을 구성 하 여 코딩 된 UI 로그에 스크린 샷을 포함할 수 있습니다. 이렇게 하려면 QTAgent32.exe.config 파일에 일부 구성 설정을 설정해야 합니다. 기본적으로 이 파일은 다음 디렉터리에 설치됩니다.
+- ![Tip](../test/media/tip.png "팁") You can configure the output to include screenshots in the coded UI logs. 이렇게 하려면 QTAgent32.exe.config 파일에 일부 구성 설정을 설정해야 합니다. 기본적으로 이 파일은 다음 디렉터리에 설치됩니다.
 
    **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**
 
@@ -139,17 +139,17 @@ ms.locfileid: "72657230"
  [다중 브라우저 테스트 오류 문제 해결](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
 ### <a name="guidance"></a>지침
- Visual Studio 2012을 사용한 지속적인 업데이트를 위한 [Testing-2 장: 유닛 테스트: 내부 ](http://go.microsoft.com/fwlink/?LinkID=255188) 테스트
+ [Visual Studio 2012를 사용한 지속적인 업데이트 테스트 - 2장: 단위 테스트: 내부 테스트](https://go.microsoft.com/fwlink/?LinkID=255188)
 
- Visual Studio 2012을 사용한 지속적인 업데이트에 대 한 [Testing – 5 장: 시스템 테스트 자동화 ](http://go.microsoft.com/fwlink/?LinkID=255196)
+ [Visual Studio 2012를 사용한 지속적인 업데이트 테스트 - 5장: 시스템 테스트 자동화](https://go.microsoft.com/fwlink/?LinkID=255196)
 
 ### <a name="faq"></a>FAQ
- [코딩된 UI 테스트 FAQ - 1](http://go.microsoft.com/fwlink/?LinkID=230576)
+ [코딩된 UI 테스트 FAQ - 1](https://go.microsoft.com/fwlink/?LinkID=230576)
 
- [코딩된 UI 테스트 FAQ - 2](http://go.microsoft.com/fwlink/?LinkID=230578)
+ [코딩된 UI 테스트 FAQ - 2](https://go.microsoft.com/fwlink/?LinkID=230578)
 
 ### <a name="forum"></a>포럼
- [Visual Studio UI 자동화 테스트(Coded UI 포함)](http://go.microsoft.com/fwlink/?LinkID=224497)
+ [Visual Studio UI 자동화 테스트(Coded UI 포함)](https://go.microsoft.com/fwlink/?LinkID=224497)
 
 ## <a name="see-also"></a>관련 항목:
- [Ui 자동화를 사용](../test/use-ui-automation-to-test-your-code.md) 하 여 코딩 된 ui 테스트 [및 작업 기록에 대해 지원 되는 코드 구성 및 플랫폼](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) 테스트 코딩 된 Ui [테스트 로그를 사용 하 여 코딩 된 ui 테스트 분석](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)
+ [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md) [Supported Configurations and Platforms for Coded UI Tests and Action Recordings](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [Analyzing Coded UI Tests Using Coded UI Test Logs](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

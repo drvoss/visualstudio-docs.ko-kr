@@ -1,4 +1,4 @@
----
+﻿---
 title: 디버거에서 호출 스택 보기 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/29/2018
@@ -97,7 +97,7 @@ ms.locfileid: "72535982"
 
 (유일하게) Visual Studio Enterprise에서는 디버깅하는 동안 호출 스택에 대한 코드 맵을 볼 수 있습니다.
 
-- **호출 스택** 창에서 바로 가기 메뉴를 엽니다. **코드 맵에 호출 스택 표시**를 선택합니다**(Ctrl** + **Shift** + **`** ).
+- **호출 스택** 창에서 바로 가기 메뉴를 엽니다. **코드 맵에 호출 스택 표시**를 선택합니다 **(Ctrl**  + **Shift**  +  **`** ).
 
     자세한 내용은 [디버그 하는 동안 호출 스택의 맵 메서드](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)를 참조 하세요.
 
@@ -109,7 +109,7 @@ ms.locfileid: "72535982"
 
 ## <a name="change-the-optional-information-displayed"></a>표시 되는 선택적 정보 변경
 
-- **호출 스택** 창에서 마우스 오른쪽 단추를 클릭하고 **<** _원하는 정보_ **\> 표시**를 설정하거나 선택을 취소합니다.
+- **호출 스택** 창에서 마우스 오른쪽 단추를 클릭하고 **\<** _원하는 정보_ **> 표시**를 설정하거나 선택을 취소합니다.
 
 ## <a name="bkmk_symbols"></a>모듈에 대한 기호 로드(C#, C++, Visual Basic, F#)
 

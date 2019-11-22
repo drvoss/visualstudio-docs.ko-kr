@@ -1,5 +1,5 @@
 ---
-title: 빌드 프로세스의 코드 생성 | Microsoft Docs
+title: Code Generation in a Build Process | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -12,26 +12,26 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 81c4160ca6d03d55d631cd4dad8c3bce01fa9722
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ae28c59f9c5f19e87b833c90e7dbc6bf3b7497ea
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667873"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297931"
 ---
 # <a name="code-generation-in-a-build-process"></a>빌드 프로세스의 코드 생성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-텍스트 변환은 Visual Studio 솔루션의 빌드 프로세스의 일부로 호출 될 수 있습니다. 이는 텍스트 변형에 대해 특수화된 빌드 작업입니다. T4 빌드 작업은 디자인 타임 텍스트 템플릿을 실행하고 전처리된 런타임 텍스트 템플릿을 컴파일합니다.
+Text transformation can be invoked as part of the build process of a Visual Studio solution. 이는 텍스트 변형에 대해 특수화된 빌드 작업입니다. T4 빌드 작업은 디자인 타임 텍스트 템플릿을 실행하고 전처리된 런타임 텍스트 템플릿을 컴파일합니다.
 
-사용하는 빌드 엔진에 따라 빌드 작업에서 수행할 수 있는 몇 가지 작업이 다를 수 있습니다. Visual Studio에서 솔루션을 빌드하면 [hostspecific = "true"](../modeling/t4-template-directive.md) 특성이 설정 된 경우 텍스트 템플릿이 VISUAL studio API (EnvDTE)에 액세스할 수 있습니다. 그러나 Visual Studio를 통해 서버 빌드를 시작하거나 명령줄에서 솔루션을 빌드할 때는 액세스할 수 없습니다. 이러한 경우에는 MSBuild에서 빌드가 수행되고 다른 T4 호스트가 사용됩니다.
+사용하는 빌드 엔진에 따라 빌드 작업에서 수행할 수 있는 몇 가지 작업이 다를 수 있습니다. When you build the solution in Visual Studio, a text template can access the Visual Studio API (EnvDTE) if the [hostspecific="true"](../modeling/t4-template-directive.md) attribute is set. 그러나 Visual Studio를 통해 서버 빌드를 시작하거나 명령줄에서 솔루션을 빌드할 때는 액세스할 수 없습니다. 이러한 경우에는 MSBuild에서 빌드가 수행되고 다른 T4 호스트가 사용됩니다.
 
-즉, MSBuild에서 텍스트 템플릿을 빌드하는 경우와 같은 방법으로 프로젝트 파일 이름과 같은 항목에 액세스할 수 없습니다. 그러나 [빌드 매개 변수를 사용 하 여 환경 정보를 텍스트 템플릿 및 지시문 프로세서에 전달할](#parameters)수 있습니다.
+즉, MSBuild에서 텍스트 템플릿을 빌드하는 경우와 같은 방법으로 프로젝트 파일 이름과 같은 항목에 액세스할 수 없습니다. However, you can [pass environment information into text templates and directive processors by using build parameters](#parameters).
 
-## <a name="buildserver"></a>컴퓨터 구성
+## <a name="buildserver"></a> Configure your machines
 
-개발 컴퓨터에서 빌드 작업을 사용 하도록 설정 하려면 [모델링 SDK For Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148)를 설치 합니다.
+To enable build tasks on your development computer, install [Modeling SDK for Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148).
 
-Visual Studio가 설치 되어 있지 않은 컴퓨터에서 [빌드 서버](https://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) 를 실행 하는 경우 개발 컴퓨터에서 빌드 컴퓨터로 다음 파일을 복사 합니다. 여기서 '*'는 가장 최신 버전 번호로 대체합니다.
+If [your build server](https://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) runs on a computer on which Visual Studio is not installed, copy the following files to the build computer from your development machine. 여기서 '*'는 가장 최신 버전 번호로 대체합니다.
 
 - $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 
@@ -57,9 +57,9 @@ Visual Studio가 설치 되어 있지 않은 컴퓨터에서 [빌드 서버](htt
 
 MSBuild에서 일부 특성을 구성하기 위해 프로젝트 파일을 편집해야 합니다.
 
-솔루션 탐색기에서 프로젝트의 상황에 맞는 메뉴에서 **언로드** 를 선택 합니다. 이렇게 하면 XML 편집기에서 .csproj 또는 .vbproj 파일을 편집할 수 있습니다.
+In solution explorer, choose **Unload** from the context menu of your project. 이렇게 하면 XML 편집기에서 .csproj 또는 .vbproj 파일을 편집할 수 있습니다.
 
-편집을 마친 후 **다시 로드**를 선택 합니다.
+When you’ve finished editing, choose **Reload**.
 
 ## <a name="import-the-text-transformation-targets"></a>텍스트 변환 대상 가져오기
 
@@ -213,9 +213,9 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-## <a name="parameters"></a>빌드 컨텍스트 데이터를 템플릿에 전달 합니다.
+## <a name="parameters"></a> Pass build context data into the templates
 
-프로젝트 파일에서 매개 변수 값을 설정할 수 있습니다. 예를 들어 빌드 속성 및 [환경 변수](../msbuild/how-to-use-environment-variables-in-a-build.md)를 전달할 수 있습니다.
+프로젝트 파일에서 매개 변수 값을 설정할 수 있습니다. For example, you can pass build properties and [environment variables](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
 ```xml
 <ItemGroup>
@@ -226,7 +226,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </ItemGroup>
 ```
 
-텍스트 템플릿에서 `hostspecific`를 템플릿 지시문에 설정하십시오. [매개 변수](../modeling/t4-parameter-directive.md) 지시어를 사용 하 여 값을 가져옵니다.
+텍스트 템플릿에서 `hostspecific`를 템플릿 지시문에 설정하십시오. Use the [parameter](../modeling/t4-parameter-directive.md) directive to get values:
 
 ```
 <#@template language="c#" hostspecific="true"#>
@@ -234,7 +234,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 The project folder is: <#= ProjectFolder #>
 ```
 
-## <a name="msbuild"></a>어셈블리 및 include 지시문에서 프로젝트 속성 사용
+## <a name="msbuild"></a> Using project properties in assembly and include directives
 
 $(SolutionDir)과 같은 Visual Studio 매크로는 MSBuild에서 작동하지 않습니다. 대신 적절한 프로젝트 속성을 사용할 수 있습니다.
 
@@ -265,24 +265,24 @@ $(SolutionDir)과 같은 Visual Studio 매크로는 MSBuild에서 작동하지 �
 
 ## <a name="q--a"></a>Q&A
 
-**빌드 서버에서 템플릿을 변환 하려면 어떻게 해야 하나요? 코드를 체크 인하기 전에 이미 Visual Studio에서 템플릿을 변환 했습니다.**
+**Why would I want to transform templates in the build server? I already transformed templates in Visual Studio before I checked in my code.**
 
 포함 파일을 업데이트하거나 템플릿에서 다른 파일을 읽은 경우 Visual Studio가 파일을 자동으로 변환하지 않습니다. 빌드 중에 템플릿이 변형되면 모두 최신 상태임을 나타냅니다.
 
-**텍스트 템플릿을 변환 하는 데 사용할 수 있는 다른 옵션은 무엇 인가요?**
+**What other options are there for transforming text templates?**
 
-- 명령 스크립트에서 [Texttransform 유틸리티](../modeling/generating-files-with-the-texttransform-utility.md) 를 사용할 수 있습니다. 대부분의 경우 MSBuild를 사용하는 것이 더 쉽습니다.
+- The [TextTransform utility](../modeling/generating-files-with-the-texttransform-utility.md) can be used in command scripts. 대부분의 경우 MSBuild를 사용하는 것이 더 쉽습니다.
 
 - [VS 확장에서 텍스트 변환 호출](../modeling/invoking-text-transformation-in-a-vs-extension.md)
 
-- [디자인 타임 텍스트 템플릿은](../modeling/design-time-code-generation-by-using-t4-text-templates.md) Visual Studio에 의해 변환 됩니다.
+- [Design-time text templates](../modeling/design-time-code-generation-by-using-t4-text-templates.md) are transformed by Visual Studio.
 
-- 런타임에 응용 프로그램에서 런타임에 [텍스트 템플릿이](../modeling/run-time-text-generation-with-t4-text-templates.md) 변환 됩니다.
+- [Run time text templates](../modeling/run-time-text-generation-with-t4-text-templates.md) are transformed at run time in your application.
 
 ## <a name="read-more"></a>자세히 보기
 
 T4 MSbuild 템플릿, $(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets의 유용한 안내서
 
 - [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)
-- [Visual Studio 시각화 및 모델링 SDK](http://go.microsoft.com/fwlink/?LinkID=185579)
-- [Oleg Sych: T4 이해: MSBuild 통합](https://github.com/olegsych/T4Toolbox)
+- [Visual Studio Visualization and Modeling SDK](https://go.microsoft.com/fwlink/?LinkID=185579)
+- [Oleg Sych: Understanding T4:MSBuild Integration](https://github.com/olegsych/T4Toolbox)

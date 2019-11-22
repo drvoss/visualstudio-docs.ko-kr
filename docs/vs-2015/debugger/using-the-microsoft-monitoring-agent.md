@@ -1,5 +1,5 @@
 ---
-title: Microsoft Monitoring Agent를 사용 하 여 | Microsoft Docs
+title: Using the Microsoft Monitoring Agent | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,22 +9,22 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 48c020c978b593a94ecd4d60109245f6acb718b1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 1d92fd478e4106afd9b61a15146a68f279a358fb
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65684084"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297102"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Microsoft Monitoring Agent 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio에서 최신 설명서를 참조 하세요 [Microsoft Monitoring Agent를 사용 하 여](https://docs.microsoft.com/visualstudio/debugger/using-the-microsoft-monitoring-agent)입니다.
+For the latest documentation on Visual Studio, see [Using the Microsoft Monitoring Agent](https://docs.microsoft.com/visualstudio/debugger/using-the-microsoft-monitoring-agent).
 
-**Microsoft Monitoring Agent**를 사용하면 IIS에서 호스트되는 ASP.NET 웹앱과 SharePoint 2010 또는 2013 응용 프로그램의 오류, 성능 문제 또는 기타 문제를 로컬로 모니터링할 수 있습니다. Monitoring Agent에서 IntelliTrace 로그(.iTrace) 파일로 진단 이벤트를 저장할 수 있습니다. 다음에 Visual Studio Enterprise (Professional 또는 Community edition 아님) 모든 Visual Studio 진단 도구를 사용 하 여 문제를 디버깅 하려면 로그 파일을 열 수 있습니다. 또한 **Trace** 모드에서 Monitoring Agent를 실행하여 IntelliTrace 진단 데이터와 메서드 데이터를 수집할 수도 있습니다. Microsoft Monitoring Agent를 [Application Insights](/azure/azure-monitor/app/app-insights-overview) 및 [System Center Operation Manager](https://technet.microsoft.com/library/hh205987.aspx)와 통합할 수 있습니다. Microsoft Monitoring Agent는 설치 시 대상 시스템 환경을 변경합니다.  
+**Microsoft Monitoring Agent**를 사용하면 IIS에서 호스트되는 ASP.NET 웹앱과 SharePoint 2010 또는 2013 애플리케이션의 오류, 성능 문제 또는 기타 문제를 로컬로 모니터링할 수 있습니다. Monitoring Agent에서 IntelliTrace 로그(.iTrace) 파일로 진단 이벤트를 저장할 수 있습니다. You can then open the log file in Visual Studio Enterprise (but not Professional or Community editions) to debug problems with all the Visual Studio diagnostic tools. 또한 **Trace** 모드에서 Monitoring Agent를 실행하여 IntelliTrace 진단 데이터와 메서드 데이터를 수집할 수도 있습니다. Microsoft Monitoring Agent를 [Application Insights](/azure/azure-monitor/app/app-insights-overview) 및 [System Center Operation Manager](https://technet.microsoft.com/library/hh205987.aspx)와 통합할 수 있습니다. Microsoft Monitoring Agent는 설치 시 대상 시스템 환경을 변경합니다.  
   
 > [!NOTE]
-> **IntelliTrace 독립 실행형 수집기**를 사용하면 대상 환경을 변경하지 않고 원격 컴퓨터의 웹, SharePoint, WPF 및 Windows Forms 앱에 대해 IntelliTrace 진단 및 메서드 데이터를 수집할 수도 있습니다. Microsoft Monitoring Agent를 **Monitor** 모드로 실행하는 경우에 비해 독립 실행형 수집기가 성능에 더 큰 영향을 줍니다. 참조 [IntelliTrace 독립 실행형 수집기를 사용 하 여](../debugger/using-the-intellitrace-stand-alone-collector.md)입니다.  
+> **IntelliTrace 독립 실행형 수집기**를 사용하면 대상 환경을 변경하지 않고 원격 컴퓨터의 웹, SharePoint, WPF 및 Windows Forms 앱에 대해 IntelliTrace 진단 및 메서드 데이터를 수집할 수도 있습니다. Microsoft Monitoring Agent를 **Monitor** 모드로 실행하는 경우에 비해 독립 실행형 수집기가 성능에 더 큰 영향을 줍니다. See [Using the IntelliTrace stand-alone collector](../debugger/using-the-intellitrace-stand-alone-collector.md).  
   
  System Center 2012를 사용하는 경우 Microsoft Monitoring Agent와 Operations Manager를 함께 사용하면 문제에 대한 경고를 받고 저장된 IntelliTrace 로그의 링크를 사용하여 Team Foundation Server 작업 항목을 만들 수 있습니다. 그런 다음 추가 디버깅을 위해 이러한 작업 항목을 다른 사용자에게 할당할 수 있습니다. [개발 프로세스와 Operations Manager 통합](https://technet.microsoft.com/library/jj614609.aspx) 및 [Microsoft Monitoring Agent를 사용하여 모니터링](https://technet.microsoft.com/library/dn465153.aspx)을 참조하세요.  
   
@@ -34,7 +34,7 @@ Visual Studio에서 최신 설명서를 참조 하세요 [Microsoft Monitoring A
   
 2. [2단계: 앱 모니터링 시작](#MonitorEvents)  
   
-3. [3단계: 기록 된 이벤트 저장](#SaveEvents)  
+3. [3단계: 기록된 이벤트 저장](#SaveEvents)  
   
 ## <a name="SetUpMonitoring"></a> 1단계: Microsoft Monitoring Agent 설치  
  애플리케이션을 변경하지 않고 로컬 모니터링을 수행하려면 웹 서버에 독립 실행형 Monitoring Agent를 설치합니다. System Center 2012를 사용하는 경우 [Microsoft Monitoring Agent 설치](https://technet.microsoft.com/library/dn465156.aspx)를 참조하세요.  
@@ -53,7 +53,7 @@ Visual Studio에서 최신 설명서를 참조 하세요 [Microsoft Monitoring A
   
     - 이전 버전의 Microsoft Monitoring Agent를 제거했습니다.  
   
-2. [무료 Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384)의 32비트 버전( **MMASetup-i386.exe** ) 또는 64비트 버전( **MMASetup-AMD64.exe**)을 Microsoft 다운로드 센터에서 웹 서버로 다운로드합니다.  
+2. [무료 Microsoft Monitoring Agent](https://go.microsoft.com/fwlink/?LinkId=320384)의 32비트 버전( **MMASetup-i386.exe** ) 또는 64비트 버전( **MMASetup-AMD64.exe**)을 Microsoft 다운로드 센터에서 웹 서버로 다운로드합니다.  
   
 3. 다운로드한 실행 파일을 실행하여 설치 마법사를 시작합니다.  
   
@@ -64,7 +64,7 @@ Visual Studio에서 최신 설명서를 참조 하세요 [Microsoft Monitoring A
     > [!IMPORTANT]
     > IntelliTrace 로그에는 개인 데이터와 중요한 데이터가 포함될 수 있습니다. 따라서 파일을 사용해야 하는 ID만 이 디렉터리에 액세스할 수 있도록 합니다. 이와 관련한 사항은 회사의 개인 정보 보호 정책을 확인하세요.  
   
-5. 자세한 함수 수준 모니터링을 실행하거나 SharePoint 애플리케이션을 모니터링하려면 웹앱 또는 SharePoint 애플리케이션을 호스트하는 애플리케이션 풀에 IntelliTrace 로그 디렉터리에 대한 읽기 및 쓰기 권한을 제공합니다. [Q: 애플리케이션 풀에 대한 사용 권한을 설정하려면 어떻게 하나요?](#FullPermissionsITLog)  
+5. 자세한 함수 수준 모니터링을 실행하거나 SharePoint 애플리케이션을 모니터링하려면 웹앱 또는 SharePoint 애플리케이션을 호스트하는 애플리케이션 풀에 IntelliTrace 로그 디렉터리에 대한 읽기 및 쓰기 권한을 제공합니다. [Q: 애플리케이션 풀에 대한 사용 권한은 어떻게 설정하나요?](#FullPermissionsITLog)  
   
 ### <a name="q--a"></a>Q&A  
   
@@ -79,16 +79,16 @@ Visual Studio에서 최신 설명서를 참조 하세요 [Microsoft Monitoring A
   
 3. 최신 도움말 콘텐츠를 보려면[TechNet을 방문](https://technet.microsoft.com/systemcenter/default) 하세요.  
   
-#### <a name="FullPermissionsITLog"></a> Q: 응용 프로그램 풀에 대한 사용 권한은 어떻게 설정하나요?  
- **A:** Windows **icacls** 명령 또는 Windows 탐색기(또는 파일 탐색기)를 사용합니다. 예를 들어:  
+#### <a name="FullPermissionsITLog"></a> Q: 애플리케이션 풀에 대한 사용 권한은 어떻게 설정하나요?  
+ **A:** Windows **icacls** 명령 또는 Windows 탐색기(파일 탐색기)를 사용합니다. 예를 들어 다음과 같은 가치를 제공해야 합니다.  
   
 - Windows **icacls** 명령을 통해 사용 권한을 설정하려면 다음 명령을 사용합니다.  
   
-  - **DefaultAppPool** 응용 프로그램 풀의 웹앱:  
+  - **DefaultAppPool** 애플리케이션 풀의 웹앱:  
   
      `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\DefaultAppPool":RX`  
   
-  - **SharePoint - 80** 응용 프로그램 풀의 SharePoint 응용 프로그램:  
+  - **SharePoint - 80** 애플리케이션 풀의 SharePoint 애플리케이션:  
   
      `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\SharePoint - 80":RX`  
   
@@ -104,20 +104,20 @@ Visual Studio에서 최신 설명서를 참조 하세요 [Microsoft Monitoring A
   
   4. **찾을 위치를 선택하세요.** 상자에 로컬 컴퓨터가 표시되는지 확인하고 표시되지 않으면 **위치** 를 선택하여 변경합니다.  
   
-  5. **선택할 개체 이름을 입력하세요.** 상자에 웹 앱 또는 SharePoint 응용 프로그램의 응용 프로그램 풀을 추가합니다.  
+  5. **선택할 개체 이름을 입력하세요.** 상자에 웹 앱 또는 SharePoint 애플리케이션의 애플리케이션 풀을 추가합니다.  
   
   6. **이름 확인** 을 선택하여 이름을 확인합니다. **확인**을 선택합니다.  
   
   7. 애플리케이션 풀에 **읽기 및 실행** 권한이 있는지 확인합니다.  
   
 ## <a name="MonitorEvents"></a> 2단계: 앱 모니터링 시작  
- Windows PowerShell [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) 명령을 사용하여 앱 모니터링을 시작합니다. System Center 2012를 사용하는 경우 [Microsoft Monitoring Agent를 사용하여 웹 애플리케이션 모니터링](https://technet.microsoft.com/library/dn465157.aspx)을 참조하세요.  
+ Windows PowerShell [Start-WebApplicationMonitoring](https://go.microsoft.com/fwlink/?LinkID=313686) 명령을 사용하여 앱 모니터링을 시작합니다. System Center 2012를 사용하는 경우 [Microsoft Monitoring Agent를 사용하여 웹 애플리케이션 모니터링](https://technet.microsoft.com/library/dn465157.aspx)을 참조하세요.  
   
 1. 웹 서버에서 **Windows PowerShell** 또는 **Windows PowerShell ISE** 명령 프롬프트 창을 관리자 권한으로 엽니다.  
   
-     ![관리자 권한으로 Windows PowerShell을 엽니다](../debugger/media/ffr-powershellrunadmin.png "FFR_PowerShellRunAdmin")  
+     ![Open Windows PowerShell as administrator](../debugger/media/ffr-powershellrunadmin.png "FFR_PowerShellRunAdmin")  
   
-2. [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) 명령을 실행하여 앱 모니터링을 시작합니다. 그러면 웹 서버에서 모든 웹앱이 다시 시작됩니다.  
+2. [Start-WebApplicationMonitoring](https://go.microsoft.com/fwlink/?LinkID=313686) 명령을 실행하여 앱 모니터링을 시작합니다. 그러면 웹 서버에서 모든 웹앱이 다시 시작됩니다.  
   
      이 명령의 간단한 구문은 다음과 같습니다.  
   
@@ -133,23 +133,23 @@ Visual Studio에서 최신 설명서를 참조 하세요 [Microsoft Monitoring A
   
      모니터링을 시작하고 나면 앱이 다시 시작되는 동안 Microsoft Monitoring Agent가 일시 중지될 수 있습니다.  
   
-     ![MMA 확인을 사용 하 여 모니터링을 시작](../debugger/media/ffr-powershellstartmonitoringconfirmation.png "FFR_PowerShellStartMonitoringConfirmation")  
+     ![Start monitoring with MMA confirmation](../debugger/media/ffr-powershellstartmonitoringconfirmation.png "FFR_PowerShellStartMonitoringConfirmation")  
   
     |||  
     |-|-|  
-    |*"\<appName>"*|IIS에서 웹 사이트 및 웹앱 이름에 대한 경로를 지정합니다. 원하는 경우 IIS 경로도 포함할 수 있습니다.<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> 또는<br /><br /> **"IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*<br /><br /> IIS 관리자에서 이 경로를 찾을 수 있습니다. 예를 들어:<br /><br /> ![IIS 웹 사이트 및 웹 앱에 대 한 경로](../debugger/media/ffr-iismanager.png "FFR_IISManager")<br /><br /> [Get-WebSite](https://technet.microsoft.com/library/ee807832.aspx) 및 [Get WebApplication](https://technet.microsoft.com/library/ee790554.aspx) 명령을 사용할 수도 있습니다.|  
-    |*\<monitoringMode>*|모니터링 모드를 지정합니다.<br /><br /> <ul><li>**모니터링**: 이 모드에서는 예외 이벤트 및 성능 이벤트에 대한 최소한의 세부 정보를 기록하며 기본 수집 계획을 사용합니다.</li><li>**추적**: 함수 수준 세부 정보를 기록하거나 지정된 컬렉션 계획을 사용하여 SharePoint 2010 및 SharePoint 2013 애플리케이션을 모니터링합니다. 이 모드를 사용하는 경우 앱 실행 속도가 느려질 수 있습니다.<br /><br /> <ul><li>[Q: 애플리케이션 풀에 대한 사용 권한을 설정하려면 어떻게 하나요?](#FullPermissionsITLog)</li><li>[Q: 앱 속도를 그대로 유지하면서 데이터를 최대한 수집하려면 어떻게 하나요?](#Minimizing)</li></ul><br />     아래 예제에서는 SharePoint 사이트에서 호스트되는 SharePoint 앱에 대한 이벤트를 기록합니다.<br /><br />     **Start-webapplicationmonitoring "FabrikamSharePointSite\FabrikamSharePointApp" "C:\Program Files\Microsoft Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml를 모니터링 하는 데 사용" "C:\IntelliTraceLogs" 추적**</li><li>**사용자 지정**: 지정된 사용자 지정 컬렉션 계획을 사용하여 사용자 지정 세부 정보를 기록합니다. 모니터링이 이미 시작된 후 수집 계획을 편집하는 경우에는 모니터링을 다시 시작해야 합니다.</li></ul>|  
+    |*"\<appName>"*|IIS에서 웹 사이트 및 웹앱 이름에 대한 경로를 지정합니다. 원하는 경우 IIS 경로도 포함할 수 있습니다.<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> 또는<br /><br /> **"IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*<br /><br /> IIS 관리자에서 이 경로를 찾을 수 있습니다. 예를 들어 다음과 같은 가치를 제공해야 합니다.<br /><br /> ![Path to IIS web site and web app](../debugger/media/ffr-iismanager.png "FFR_IISManager")<br /><br /> [Get-WebSite](https://technet.microsoft.com/library/ee807832.aspx) 및 [Get WebApplication](https://technet.microsoft.com/library/ee790554.aspx) 명령을 사용할 수도 있습니다.|  
+    |*\<monitoringMode>*|모니터링 모드를 지정합니다.<br /><br /> <ul><li>**Monitor**: 이 모드에서는 예외 이벤트 및 성능 이벤트에 대한 최소한의 세부 정보를 기록하며 기본 수집 계획을 사용합니다.</li><li>**Trace**: 함수 수준 세부 정보를 기록하거나 지정된 수집 계획을 사용하여 SharePoint 2010 및 SharePoint 2013 애플리케이션을 모니터링합니다. 이 모드를 사용하는 경우 앱 실행 속도가 느려질 수 있습니다.<br /><br /> <ul><li>[Q: 애플리케이션 풀에 대한 사용 권한은 어떻게 설정하나요?](#FullPermissionsITLog)</li><li>[Q: 앱 속도를 그대로 유지하면서 데이터를 최대한 수집하려면 어떻게 해야 하나요?](#Minimizing)</li></ul><br />     아래 예제에서는 SharePoint 사이트에서 호스트되는 SharePoint 앱에 대한 이벤트를 기록합니다.<br /><br />     **Start-WebApplicationMonitoring "FabrikamSharePointSite\FabrikamSharePointApp" Trace "C:\Program Files\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml" "C:\IntelliTraceLogs"**</li><li>**Custom**: 지정된 사용자 지정 수집 계획을 사용하여 사용자 지정 세부 정보를 기록합니다. 모니터링이 이미 시작된 후 수집 계획을 편집하는 경우에는 모니터링을 다시 시작해야 합니다.</li></ul>|  
     |*"\<outputPath>"*|IntelliTrace 로그를 저장할 전체 디렉터리 경로를 지정합니다. 모니터링을 시작하기 전에 이 디렉터리를 만들어야 합니다.|  
     |*\<UInt32>*|IntelliTrace 로그의 최대 크기를 지정합니다. IntelliTrace 로그의 기본 최대 크기는 250MB입니다.<br /><br /> 로그가 이 한도에 도달하면 Monitoring Agent는 항목을 추가로 기록할 수 있도록 가장 오래된 항목을 덮어씁니다. 이 제한을 변경하려면 **-MaximumFileSizeInMegabytes** 옵션을 사용하거나 수집 계획에서 `MaximumLogFileSize` 특성을 편집합니다.|  
-    |*"\<collectionPlanPathAndFileName>"*|수집 계획의 전체 경로 또는 상대 경로와 파일 이름을 지정합니다. 이 계획은 Monitoring Agent의 설정을 구성하는.xml 파일입니다.<br /><br /> Monitoring Agent에 포함되어 있으며 웹앱과 SharePoint 애플리케이션에 사용 가능한 계획은 다음과 같습니다.<br /><br /> -   **collection_plan.ASP.NET.default.xml**<br />     예외, 성능 이벤트, 데이터베이스 호출, 웹 서버 요청 등의 이벤트만 수집합니다.<br />-   **collection_plan.ASP.NET.trace.xml**<br />     함수 수준 호출과 기본 수집 계획의 모든 데이터를 수집합니다. 이 계획은 상세 분석에 적합하지만 앱 속도는 느려질 수 있습니다.<br /><br /> 이러한 계획의 지역화된 버전은 Monitoring Agent의 하위 폴더에 있습니다. 앱 속도 저하를 방지하기 위해 [이러한 계획을 사용자 지정하거나 계획을 직접 만들](http://go.microsoft.com/fwlink/?LinkId=227871) 수도 있습니다. 모든 사용자 지정 계획은 Monitoring Agent와 같은 안전한 위치에 저장합니다.<br /><br /> [Q: 앱 속도를 그대로 유지하면서 데이터를 최대한 수집하려면 어떻게 하나요?](#Minimizing)|  
+    |*"\<collectionPlanPathAndFileName>"*|수집 계획의 전체 경로 또는 상대 경로와 파일 이름을 지정합니다. 이 계획은 Monitoring Agent의 설정을 구성하는.xml 파일입니다.<br /><br /> Monitoring Agent에 포함되어 있으며 웹앱과 SharePoint 애플리케이션에 사용 가능한 계획은 다음과 같습니다.<br /><br /> -   **collection_plan.ASP.NET.default.xml**<br />     예외, 성능 이벤트, 데이터베이스 호출, 웹 서버 요청 등의 이벤트만 수집합니다.<br />-   **collection_plan.ASP.NET.trace.xml**<br />     함수 수준 호출과 기본 수집 계획의 모든 데이터를 수집합니다. 이 계획은 상세 분석에 적합하지만 앱 속도는 느려질 수 있습니다.<br /><br /> 이러한 계획의 지역화된 버전은 Monitoring Agent의 하위 폴더에 있습니다. 앱 속도 저하를 방지하기 위해 [이러한 계획을 사용자 지정하거나 계획을 직접 만들](https://go.microsoft.com/fwlink/?LinkId=227871) 수도 있습니다. 모든 사용자 지정 계획은 Monitoring Agent와 같은 안전한 위치에 저장합니다.<br /><br /> [Q: 앱 속도를 그대로 유지하면서 데이터를 최대한 수집하려면 어떻게 해야 하나요?](#Minimizing)|  
   
      전체 구문 및 기타 예제에 대한 자세한 내용을 보려면 **get-help Start-WebApplicationMonitoring –detailed** 명령이나 **get-help Start-WebApplicationMonitoring –examples** 명령을 실행합니다.  
   
-3. 모니터링되는 모든 웹앱의 상태를 확인하려면 [Get-WebApplicationMonitoringStatus](http://go.microsoft.com/fwlink/?LinkID=313685) 명령을 실행합니다.  
+3. 모니터링되는 모든 웹앱의 상태를 확인하려면 [Get-WebApplicationMonitoringStatus](https://go.microsoft.com/fwlink/?LinkID=313685) 명령을 실행합니다.  
   
 ### <a name="q--a"></a>Q&A  
   
-#### <a name="Minimizing"></a> Q: 앱 속도를 그대로 유지하면서 데이터를 최대한 수집하는 방법  
+#### <a name="Minimizing"></a> Q: 앱 속도를 그대로 유지하면서 데이터를 최대한 수집하려면 어떻게 해야 하나요?  
  **A:** Microsoft Monitoring Agent는 많은 데이터를 수집할 수 있으므로 수집하도록 선택하는 데이터 및 수집 방법에 따라 앱 성능에 영향을 줄 수 있습니다. 앱 속도를 그대로 유지하면서 대부분의 데이터를 가져올 수 있는 몇 가지 방법은 다음과 같습니다.  
   
 - 웹 앱 및 SharePoint 애플리케이션의 경우 Monitoring Agent는 지정한 애플리케이션 풀을 공유하는 모든 앱에 대한 데이터를 기록합니다. 이로 인해 단일 애플리케이션 풀을 공유하는 앱의 속도가 느려질 수 있습니다. 그러나 단일 앱의 모듈에서만 데이터를 수집하도록 제한할 수 있습니다. 앱 속도 저하를 방지하려면 각 앱을 자체 애플리케이션 풀에서 호스트합니다.  
@@ -162,7 +162,7 @@ Visual Studio에서 최신 설명서를 참조 하세요 [Microsoft Monitoring A
   
    `enabled` 특성이 없으면 이벤트는 사용하도록 설정됩니다.  
   
-   예를 들면 다음과 같습니다.  
+   예를 들어 다음과 같은 가치를 제공해야 합니다.  
   
   - Windows 워크플로를 사용하지 앱에 대해 Windows 워크플로 이벤트를 사용하지 않도록 설정합니다.  
   
@@ -209,11 +209,11 @@ Visual Studio에서 최신 설명서를 참조 하세요 [Microsoft Monitoring A
   
   ```  
   
-   **Q: 이유는 바로 모듈만 제외 되지 않나요?**  
+   **Q: 모듈만 제외하면 되지 않나요?**  
   
    **A:** 기본적으로 수집 계획에서는 `isExclusionList` 특성을 `true`로 설정하여 모듈을 제외합니다. 그러나 모듈을 제외해도 목록 기준을 충족하지 않거나 관련이 없는 모듈(예: 타사 또는 오픈 소스 모듈)에서 데이터가 수집될 수 있습니다.  
   
-#### <a name="q-what-values-does-the-agent-collect"></a>Q: 에이전트는 어떤 값을 수집 합니까?  
+#### <a name="q-what-values-does-the-agent-collect"></a>Q: Monitoring Agent는 어떤 값을 수집하나요?  
  **A:** 성능에 대한 영향을 줄이기 위해 Monitoring Agent는 다음 값만 수집합니다.  
   
 - 메서드로 전달되며 메서드에서 반환되는 기본 값 형식  
@@ -226,11 +226,11 @@ Visual Studio에서 최신 설명서를 참조 하세요 [Microsoft Monitoring A
   
   `Employee` 형식에는 `Id`, `Name`및 `HomeAddress`특성이 있습니다. 그리고 `Employee` 및 `Address` 형식 간에는 연결 관계가 있습니다.  
   
-  ![직원과 주소의 관계](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")  
+  ![Relationship between Employee and Address](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")  
   
   Monitoring Agent는 `id`메서드에서 반환되는 `Employee.Id`, `Employee.Name` , `Employee` 및 `AlterEmployee` 개체의 값을 기록합니다. 그러나 `Address` 개체에 대한 정보는 null인지 여부를 제외하고는 기록하지 않습니다. 또한 `AlterEmployee` 메서드의 로컬 변수에 대한 데이터도 기록하지 않습니다. 단, 다른 메서드가 해당 로컬 변수를 매개 변수로 사용하는 경우에는 로컬 변수가 메서드 매개 변수로 기록됩니다.  
   
-## <a name="SaveEvents"></a> 3 단계: 기록 된 이벤트 저장  
+## <a name="SaveEvents"></a> 3단계: 기록된 이벤트 저장  
  오류 또는 성능 문제가 발견되면 기록된 이벤트를 IntelliTrace 로그에 저장합니다. Monitoring Agent는 이벤트가 기록된 경우에만 로그를 만듭니다. System Center 2012를 사용하는 경우 [Microsoft Monitoring Agent를 사용하여 웹 애플리케이션 모니터링](https://technet.microsoft.com/library/dn465157.aspx)을 참조하세요.  
   
 ### <a name="save-recorded-events-but-continue-monitoring"></a>기록된 이벤트를 저장하고 모니터링 계속  
@@ -238,7 +238,7 @@ Visual Studio에서 최신 설명서를 참조 하세요 [Microsoft Monitoring A
   
 1. 웹 서버에서 관리자 권한으로 Windows PowerShell 명령 프롬프트 창을 엽니다.  
   
-2. [Checkpoint-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313684) 명령을 실행하여 IntelliTrace 로그의 스냅샷을 저장합니다.  
+2. [Checkpoint-WebApplicationMonitoring](https://go.microsoft.com/fwlink/?LinkID=313684) 명령을 실행하여 IntelliTrace 로그의 스냅샷을 저장합니다.  
   
     **Checkpoint-WebApplicationMonitoring** *"\<IISWebsiteName>\\<IISWebAppName\>"*  
   
@@ -246,7 +246,7 @@ Visual Studio에서 최신 설명서를 참조 하세요 [Microsoft Monitoring A
   
     **Checkpoint-WebApplicationMonitoring "IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*  
   
-    예를 들어:  
+    예를 들어 다음과 같은 가치를 제공해야 합니다.  
   
     **PS C:\\>Checkpoint-WebApplicationMonitoring "Fabrikam\FabrikamFiber.Web"**  
   
@@ -261,14 +261,14 @@ Visual Studio에서 최신 설명서를 참조 하세요 [Microsoft Monitoring A
    > [!IMPORTANT]
    > IntelliTrace 로그는 개인 데이터와 중요한 데이터를 포함할 수 있으므로 공유 시 주의해야 합니다. 이러한 로그에 액세스하는 모든 사용자에게 해당 데이터를 볼 권한이 있는지 확인합니다. 이와 관련한 사항은 회사의 개인 정보 보호 정책을 확인하세요.  
   
-   **다음:** [Visual Studio Enterprise에서 기록 된 이벤트 진단](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
+   **다음 단계:** [Visual Studio Enterprise에서 기록된 이벤트 진단](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
   
 ### <a name="save-recorded-events-and-stop-monitoring"></a>기록된 이벤트를 저장하고 모니터링 중지  
  특정 문제를 재현하는 동안에만 진단 정보를 확인하려면 다음 단계를 수행합니다. 그러면 웹 서버에서 모든 웹앱이 다시 시작됩니다.  
   
 1. 웹 서버에서 관리자 권한으로 Windows PowerShell 명령 프롬프트 창을 엽니다.  
   
-2. [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) 명령을 실행하여 IntelliTrace 로그를 만든 다음 특정 웹앱 모니터링을 중지합니다.  
+2. [Stop-WebApplicationMonitoring](https://go.microsoft.com/fwlink/?LinkID=313687) 명령을 실행하여 IntelliTrace 로그를 만든 다음 특정 웹앱 모니터링을 중지합니다.  
   
     **Stop-WebApplicationMonitoring** *"\<IISWebsiteName>\\<IISWebAppName\>"*  
   
@@ -280,7 +280,7 @@ Visual Studio에서 최신 설명서를 참조 하세요 [Microsoft Monitoring A
   
     **Stop-WebApplicationMonitoring -All**  
   
-    예를 들어:  
+    예를 들어 다음과 같은 가치를 제공해야 합니다.  
   
     **PS C:\\>Stop-WebApplicationMonitoring "Fabrikam\iFabrikamFiber.Web"**  
   
@@ -292,16 +292,16 @@ Visual Studio에서 최신 설명서를 참조 하세요 [Microsoft Monitoring A
   
 3. 안전한 공유 폴더에 로그를 복사한 다음 Visual Studio Enterprise가 설치되어 있는 컴퓨터에서 로그를 엽니다.  
   
-   **다음:** [Visual Studio Enterprise에서 기록 된 이벤트 진단](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
+   **다음 단계:** [Visual Studio Enterprise에서 기록된 이벤트 진단](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
   
 ## <a name="q--a"></a>Q&A  
   
 ### <a name="q-where-can-i-get-more-information"></a>Q: 추가 정보는 어디서 확인할 수 있나요?  
   
 #### <a name="blogs"></a>블로그  
- [Microsoft Monitoring Agent 소개](http://blogs.msdn.com/b/visualstudioalm/archive/2013/09/20/introducing-microsoft-monitoring-agent.aspx)  
+ [Microsoft Monitoring Agent 소개](https://devblogs.microsoft.com/devops/introducing-microsoft-monitoring-agent-2/)  
   
- [프로덕션 서버에서 IntelliTrace 컬렉션 최적화](http://go.microsoft.com/fwlink/?LinkId=255233)  
+ [프로덕션 서버에서 IntelliTrace 컬렉션 최적화](https://go.microsoft.com/fwlink/?LinkId=255233)  
   
 #### <a name="forums"></a>포럼  
- [Visual Studio 진단](http://go.microsoft.com/fwlink/?LinkId=262263)
+ [Visual Studio 진단](https://go.microsoft.com/fwlink/?LinkId=262263)

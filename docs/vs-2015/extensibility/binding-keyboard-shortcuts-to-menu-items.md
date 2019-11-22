@@ -1,5 +1,5 @@
 ---
-title: 메뉴 항목에 바로 가기 키 바인딩 | Microsoft Docs
+title: Binding Keyboard Shortcuts to Menu Items | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,56 +14,56 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fb85bc64164acc09aef6464b69e72b7c6cf46d77
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e362a61c5ecab78c332eb5e077a02ee4e9e3fa9b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405634"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295617"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>메뉴 항목에 바로 가기 키 바인딩
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-바로 가기 키 사용자 지정 메뉴 명령을 바인딩할 바로.vsct 파일 패키지에 항목을 추가 합니다. 이 항목에서는 바로 가기 키 사용자 지정 단추, 메뉴 항목 또는 도구 모음 명령에 매핑하는 방법 및 기본 편집기에서 키보드 매핑을 적용 하거나 사용자 지정 편집기를 제한 하는 방법을 설명 합니다.  
+To bind a keyboard shortcut to a custom menu command, just add an entry to the .vsct file for the package. This topic explains how to map a keyboard shortcut to a custom button, menu item, or toolbar command, and how to apply the keyboard mapping in the default editor or limit it to a custom editor.  
   
- 기존 Visual Studio 메뉴 항목에 바로 가기 키에 할당 하려면을 참조 하세요 [사용자 지정 바로 가기 키 식별 및](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)합니다.  
+ To assign keyboard shortcuts to existing Visual Studio menu items, see [Identifying and Customizing Keyboard Shortcuts](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
   
-## <a name="choosing-a-key-combination"></a>키 조합 선택  
- 대부분의 키보드 바로 가기는 Visual Studio에서 이미 사용 됩니다. 할당 하지 말아야 하 동일한 바로 가기 둘 이상의 명령에 중복 바인딩이 감지 하기 어려운 고 예기치 않은 결과가 발생할 수 있습니다. 따라서 것 할당 하려면 해당 바로 가기의 가용성을 확인 하는 것이 좋습니다.  
+## <a name="choosing-a-key-combination"></a>Choosing a Key Combination  
+ Many keyboard shortcuts are already used in Visual Studio. You should not assign the same shortcut to more than one command because duplicate bindings are hard to detect and may also cause unpredictable results. Therefore, it is a good idea to verify the availability of a shortcut before you assign it.  
   
-#### <a name="to-verify-the-availability-of-a-keyboard-shortcut"></a>바로 가기 키의 가용성을 확인 하려면  
+#### <a name="to-verify-the-availability-of-a-keyboard-shortcut"></a>To verify the availability of a keyboard shortcut  
   
-1. 에 **도구 / 옵션 / 환경** 창에서 **키보드**합니다.  
+1. In the **Tools / Options / Environment** window, select **Keyboard**.  
   
-2. 했는지 **에서 사용 하 여 새 바로 가기를** 로 설정 된 **전역**합니다.  
+2. Make sure that **Use new shortcut in** is set to **Global**.  
   
-3. 에 **바로 가기 키 누르기** 상자를 사용 하려는 바로 가기 키를 입력 합니다.  
+3. In the **Press shortcut keys** box, type the keyboard shortcut that you want to use.  
   
-    Visual Studio에서 바로 가기 이미 사용 되는 경우는 **에서 현재 사용 하는 바로 가기** 상자 바로 가기 현재 호출 하는 명령에 표시 됩니다.  
+    If the shortcut is already used in Visual Studio, the **Shortcut currently used by** box will show the command that the shortcut currently calls.  
   
-4. 매핑되지 않은 것을 찾을 때까지 다양 한 키 조합을 시도 합니다.  
+4. Try different combinations of keys until you find one that is not mapped.  
   
    > [!NOTE]
-   > Alt 키를 사용 하는 키보드 바로 가기 메뉴를 열고 하 고 직접 명령을 실행할 수 있습니다. 따라서 합니다 **에서 현재 사용 하는 바로 가기** alt 키를 포함 하는 바로 가기를 입력 상자를 비워 둘 수 있습니다. 바로 가기 열리지 메뉴 닫아 확인할 수 있습니다 합니다 **옵션** 대화 상자 및 키를 눌러 합니다.  
+   > Keyboard shortcuts that use ALT may open a menu and not directly execute a command. Therefore, the **Shortcut currently used by** box may be blank when you type a shortcut that includes ALT. You can verify that the shortcut does not open a menu by closing the **Options** dialog box and then pressing the keys.  
   
-   다음 절차는 메뉴 명령 사용 하 여 기존 VSPackage를 있다고 가정 합니다. 그렇게 도움이 필요한 경우 잠시 살펴 [메뉴 명령을 사용 하 여 확장을 만드는](../extensibility/creating-an-extension-with-a-menu-command.md)합니다.  
+   The following procedure assumes that you have an existing VSPackage with a menu command. If you need help doing that, take a look at [Creating an Extension with a Menu Command](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-#### <a name="to-assign-a-keyboard-shortcut-to-a-command"></a>명령에 바로 가기 키를 할당 하려면  
+#### <a name="to-assign-a-keyboard-shortcut-to-a-command"></a>To assign a keyboard shortcut to a command  
   
-1. 패키지에 대 한.vsct 파일을 엽니다.  
+1. Open the .vsct file for your package.  
   
-2. 빈 `<KeyBindings>` 섹션을 `<Commands>` 아직 제공 되지 경우.  
+2. Create an empty `<KeyBindings>` section after the `<Commands>` if it is not already present.  
   
    > [!WARNING]
-   > 키 바인딩에 대 한 자세한 내용은 참조 하세요. [Keybinding](../extensibility/keybinding-element.md)합니다.  
+   > For more information about key bindings, see [Keybinding](../extensibility/keybinding-element.md).  
   
-    에 `<KeyBindings>` 섹션에서 만들기를 `<KeyBinding>` 항목입니다.  
+    In the `<KeyBindings>` section, create a `<KeyBinding>` entry.  
   
-    설정 합니다 `guid` 및 `id` 특성을 호출 하려는 명령입니다.  
+    Set the `guid`  and  `id` attributes to those of the command you want to invoke.  
   
-    설정 된 `mod1` 특성을 **제어**, **Alt**, 또는 **Shift**합니다.  
+    Set the `mod1` attribute to **Control**, **Alt**, or **Shift**.  
   
-    키 바인딩 섹션을 다음과 같이 표시 됩니다.  
+    The KeyBindings section should look something like this:  
   
    ```xml  
    <KeyBindings>  
@@ -73,18 +73,18 @@ ms.locfileid: "63405634"
   
    ```  
   
-   바로 가기 키는 두 개 이상의 키가 필요한 경우 설정 합니다 `mod2` 고 `key2` 특성입니다.  
+   If your keyboard shortcut requires more than two keys, set the `mod2` and `key2` attributes.  
   
-   대부분의 경우 **Shift** 해서는 안 두 번째 한정자 없이 이미를 눌러 하므로 대부분의 영숫자 키 대문자 또는 기호를 입력 합니다.  
+   In most situations, **Shift** should not be used without a second modifier because pressing it already causes most alphanumeric keys to type an uppercase letter or a symbol.  
   
-   가상 키 코드를 사용 하면 함수 키 예를 들어, 그와 관련 된 문자를 갖지 않는 특수 키에 액세스 하며 **백스페이스** 키입니다. 자세한 내용은 [가상 키 코드로](http://go.microsoft.com/fwlink/?LinkID=105932)입니다.  
+   Virtual-key codes let you access special keys that do not have a character associated with them, for example, function keys and the **BACKSPACE** key. For more information, see [Virtual-Key Codes](https://go.microsoft.com/fwlink/?LinkID=105932).  
   
-   명령을 사용할 수 있도록 Visual studio에서 편집기를 설정 합니다 `editor` 특성을 `guidVSStd97`입니다.  
+   To make the command available in the Visual Studio editor, set the `editor` attribute to `guidVSStd97`.  
   
-   명령에서 사용자 지정 편집기 에서만에서 사용할 수 있도록 설정 합니다 `editor` 의해 생성 된 사용자 지정 편집기의 이름으로 특성는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 는 VSPackage를 만들 때 패키지 템플릿은 사용자 지정 편집기를 포함 합니다. 이름 값을 찾으려면 확인 합니다 `<Symbols>` 에 대 한 섹션을 `<GuidSymbol>` 노드입니다 `name` 특성으로 끝나는 "`editorfactory`." 사용자 지정 편집기의 이름입니다.  
+   To make the command available only in a custom editor, set the `editor` attribute to the name of the custom editor that was generated by the [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Package Template when you created the VSPackage that includes the custom editor. To find the name value, look in the `<Symbols>` section for a `<GuidSymbol>` node whose `name` attribute ends in "`editorfactory`." This is the name of the custom editor.  
   
 ## <a name="example"></a>예제  
- 이 예제에서는 명명 된 명령에 바로 가기 키 CTRL + ALT + C를 바인딩합니다 `cmdidMyCommand` 라는 패키지 `MyPackage`합니다.  
+ This example binds the keyboard shortcut CTRL+ALT+C to a command named `cmdidMyCommand` in a package named `MyPackage`.  
   
 ```  
 <CommandTable>  
@@ -101,11 +101,11 @@ ms.locfileid: "63405634"
 ```  
   
 ## <a name="example"></a>예제  
- 이 예제에서는 명명 된 명령에 바로 가기 키 CTL + B를 바인딩합니다 `cmdidBold` 라는 프로젝트 `TestEditor`합니다. 명령이입니다 다른 편집기 및 사용자 지정 편집기 에서만에서 사용할 수 있습니다.  
+ This example binds the keyboard shortcut CTL+B to a command named `cmdidBold` in a project named `TestEditor`. The command is available only in the custom editor and not in other editors.  
   
 ```xml  
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />  
 ```  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목:  
  [메뉴 및 명령 확장](../extensibility/extending-menus-and-commands.md)

@@ -23,12 +23,12 @@ caps.latest.revision: 48
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 04b6573b6cd04b5a061a40025a9872d9972e35cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1ed9a341e1b0f7247175e62aceafc6051f83e8f9
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645478"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300164"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>방법: 참조 관리자를 사용하여 참조 추가 또는 제거
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "72645478"
 - 찾아보기, 최근 항목 하위 그룹 포함
 
 ## <a name="assemblies-tab"></a>어셈블리 탭
- **어셈블리** 탭은 참조에 사용할 수 있는 .NET Framework 어셈블리를 모두 나열합니다. **어셈블리** 탭에는 GAC(전역 어셈블리 캐시)의 어셈블리는 표시되지 않습니다. GAC의 어셈블리는 런타임 환경의 일부이기 때문입니다. GAC에 등록된 어셈블리에 대한 참조가 포함된 애플리케이션을 배포하거나 복사하는 경우, 이 어셈블리는 로컬 복사 설정과 관계없이 애플리케이션과 함께 배포되거나 복사되지 않습니다. 자세한 내용은 [프로젝트의 참조 관리](http://go.microsoft.com/fwlink/?LinkId=238512)를 참조하세요.
+ **어셈블리** 탭은 참조에 사용할 수 있는 .NET Framework 어셈블리를 모두 나열합니다. **어셈블리** 탭에는 GAC(전역 어셈블리 캐시)의 어셈블리는 표시되지 않습니다. GAC의 어셈블리는 런타임 환경의 일부이기 때문입니다. GAC에 등록된 어셈블리에 대한 참조가 포함된 애플리케이션을 배포하거나 복사하는 경우, 이 어셈블리는 로컬 복사 설정과 관계없이 애플리케이션과 함께 배포되거나 복사되지 않습니다. 자세한 내용은 [프로젝트의 참조 관리](https://go.microsoft.com/fwlink/?LinkId=238512)를 참조하세요.
 
  EnvDTE 네임스페이스(EnvDTE, EnvDTE80, EnvDTE90, EnvDTE90a 또는 EnvDTE100)에 대한 참조를 수동으로 추가할 때는 속성 창에서 참조의 Interop 형식 포함 속성을 False로 설정합니다. 이 속성을 True로 설정하면 포함할 수 없는 특정 EnvDTE 속성으로 인해 빌드 문제가 발생할 수 있습니다.
 
@@ -131,7 +131,7 @@ ms.locfileid: "72645478"
 
     HKEY_LOCAL_MACHINE 노드 아래에 레지스트리 키를 만들면 모든 사용자가 **참조 추가** 대화 상자에서 지정된 위치의 어셈블리를 볼 수 있습니다. HKEY_CURRENT_USER 노드 아래에 레지스트리 키를 만들면 현재 사용자에 대한 설정에만 영향을 줍니다.
 
-    **참조 추가** 대화 상자를 다시 엽니다. 어셈블리가 **.net** 탭에 나타나야 합니다. 어셈블리가 없으면 지정 된 *Assemblylocation* 디렉터리에 어셈블리가 있는지 확인 하 고 Visual Studio를 다시 시작한 후 다시 시도 합니다.
+    **참조 추가** 대화 상자를 다시 엽니다. The assemblies should appear on the **.NET** tab. If they do not, make sure that the assemblies are located in the specified *AssemblyLocation* directory, restart Visual Studio, and try again.
 
 ## <a name="com-tab"></a>COM 탭
  COM 탭은 참조에 사용할 수 있는 COM 구성 요소를 모두 나열합니다. 내부 매니페스트가 포함된 등록 COM DLL에 참조를 추가하려는 경우 해당 DLL의 등록을 먼저 해제합니다. 그렇지 않으면 네이티브 DLL 대신 ActiveX 컨트롤 같은 어셈블리 참조가 추가됩니다.
@@ -216,4 +216,4 @@ ms.locfileid: "72645478"
  **참조 관리자** 대화 상자의 검색 창은 포커스가 있는 탭에 대해서 작동합니다. 예를 들어, 사용자가 **솔루션** 탭에 포커스가 있을 때 검색 창에 "System"을 입력한 경우, "System"을 포함하는 프로젝트 이름으로 구성된 솔루션이 아닌 한 어떠한 검색 결과도 반환되지 않습니다.
 
 ## <a name="see-also"></a>관련 항목:
- [NIB 방법: 참조 추가 대화 상자를 사용 하 여 참조 추가 또는 제거](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) [프로젝트에서 참조 관리](../ide/managing-references-in-a-project.md)
+ [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) [Managing references in a project](../ide/managing-references-in-a-project.md)

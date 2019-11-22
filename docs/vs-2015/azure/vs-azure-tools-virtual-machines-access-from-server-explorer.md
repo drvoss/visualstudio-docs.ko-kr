@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: 6d6b35218355db686a4154928e5529d213e733d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9a95cd84ede6befded37f9d875535f39846de50a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968030"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291060"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>서버 탐색기에서 Azure Virtual Machines에 액세스
 
@@ -24,18 +24,18 @@ Azure에서 호스팅되는 가상 머신이 있는 경우 서버 탐색기에�
 
 1. 클라우드 탐색기에서 가상 머신을 선택한 다음 F4 키를 선택하여 속성 창을 표시합니다.
 
-    다음의 테이블은 사용 가능하지만 모두 읽기 전용인 속성을 보여줍니다. 변경하려면 [Azure Portal](http://go.microsoft.com/fwlink/p/?LinkID=525040)을 사용합니다.
+    다음의 테이블은 사용 가능하지만 모두 읽기 전용인 속성을 보여줍니다. 변경하려면 [Azure Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040)을 사용합니다.
 
    | 속성 | 설명 |
    | --- | --- |
    | DNS 이름 |가상 머신의 인터넷 주소 URL입니다. |
    | 환경 |가상 머신에 대한 이 속성의 값은 항상 프로덕션입니다. |
    | name |가상 머신의 이름입니다. |
-   | 크기 |사용 가능한 디스크 공간과 메모리의 양이 반영된 가상 머신의 크기입니다. 자세한 내용은 [Virtual Machine 크기](https://docs.microsoft.com/azure/cloud-services/cloud-services-sizes-specs)를 참조하세요. |
-   | 상태 |값은 시작, 시작됨, 중지, 중지됨 및 상태 검색을 포함합니다. 상태 검색이 나타나면 현재 상태는 알 수 없습니다. 이 속성의 값은 [Azure Portal](http://go.microsoft.com/fwlink/p/?LinkID=525040)에서 사용된 값과 다릅니다. |
-   | 구독 ID |Azure 계정에 대한 구독 ID 구독에 대한 속성을 확인하여 [Azure Portal](http://go.microsoft.com/fwlink/p/?LinkID=525040)에 대한 이 정보를 표시할 수 있습니다. |
+   | Size |사용 가능한 디스크 공간과 메모리의 양이 반영된 가상 머신의 크기입니다. 자세한 내용은 [Virtual Machine 크기](https://docs.microsoft.com/azure/cloud-services/cloud-services-sizes-specs)를 참조하세요. |
+   | Status |값은 시작, 시작됨, 중지, 중지됨 및 상태 검색을 포함합니다. 상태 검색이 나타나면 현재 상태는 알 수 없습니다. 이 속성의 값은 [Azure Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040)에서 사용된 값과 다릅니다. |
+   | 구독 ID |Azure 계정에 대한 구독 ID 구독에 대한 속성을 확인하여 [Azure Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040)에 대한 이 정보를 표시할 수 있습니다. |
 2. 엔드포인트 노드를 선택한 다음 **속성** 창을 확인합니다.
-3. 다음 테이블은 사용 가능하지만 읽기 전용인 엔드포인트 속성을 설명합니다. 가상 머신에 대해 엔드포인트를 추가하거나 편집하려면 [Azure Portal](http://go.microsoft.com/fwlink/p/?LinkID=525040)을 사용합니다. 
+3. 다음 테이블은 사용 가능하지만 읽기 전용인 엔드포인트 속성을 설명합니다. 가상 머신에 대해 엔드포인트를 추가하거나 편집하려면 [Azure Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040)을 사용합니다. 
 
    | 속성 | 설명 |
    | --- | --- |

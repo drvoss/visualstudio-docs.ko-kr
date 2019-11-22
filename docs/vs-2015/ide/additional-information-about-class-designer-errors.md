@@ -29,12 +29,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7500782a1d935c08ae95e26764c9476c63f36660
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 10eb94783abbd63ca152fbf73a544665199ba137
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72620384"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300292"
 ---
 # <a name="additional-information-about-class-designer-errors"></a>클래스 디자이너 오류에 대한 추가 정보
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,9 +43,9 @@ ms.locfileid: "72620384"
 
  다음 리소스에서 다른 오류 및 경고에 대한 도움말을 찾을 수 있습니다.
 
- [Visual C++ 코드 작업](../ide/working-with-visual-cpp-code-class-designer.md) 클래스 다이어그램에 C++를 표시하는 것과 관련된 문제 해결 정보를 포함합니다.
+ [시각적 C++ 코드 작업 (클래스 디자이너)](../ide/working-with-visual-cpp-code-class-designer.md) 에는 클래스 다이어그램에 표시 C++ 하는 방법에 대 한 문제 해결 정보가 포함 되어 있습니다.
 
- [Visual Studio 클래스 디자이너 포럼](http://go.microsoft.com/fwlink/?LinkId=160754) 클래스 디자이너 관련 질문을 위한 포럼을 제공합니다.
+ [Visual Studio 클래스 디자이너 포럼](https://go.microsoft.com/fwlink/?LinkId=160754) 클래스 디자이너 관련 질문을 위한 포럼을 제공합니다.
 
 ## <a name="see-also"></a>참고 항목
  [클래스와 형식 디자인 및 보기](../ide/designing-and-viewing-classes-and-types.md)

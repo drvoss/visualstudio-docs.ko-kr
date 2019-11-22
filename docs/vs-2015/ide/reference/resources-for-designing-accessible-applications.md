@@ -14,17 +14,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5cc95418f392e3c771350428e26e1447dae3bcf5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: af300bca2b1e679eae58a92962067fcd50fea78f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665555"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297794"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>내게 필요한 옵션을 제공하는 애플리케이션 설계를 위한 리소스
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-다음 링크를 사용하면 내게 필요한 옵션이 있는 Windows 애플리케이션과 웹 사이트 개발을 위한 팁과 예제뿐만 아니라 내게 필요한 옵션이 있는 애플리케이션 디자인을 지원하는 기술 관련 정보를 찾을 수 있습니다. 내게 필요한 옵션에 대한 일반적인 내용은 [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/)에서 온라인으로 찾을 수 있습니다.
+다음 링크를 사용하면 내게 필요한 옵션이 있는 Windows 애플리케이션과 웹 사이트 개발을 위한 팁과 예제뿐만 아니라 내게 필요한 옵션이 있는 애플리케이션 디자인을 지원하는 기술 관련 정보를 찾을 수 있습니다. 내게 필요한 옵션에 대한 일반적인 내용은 [http://www.microsoft.com/enable/](https://www.microsoft.com/accessibility/)에서 온라인으로 찾을 수 있습니다.
 
 ## <a name="technologies"></a>기술
 
@@ -54,7 +54,7 @@ ms.locfileid: "72665555"
 
 ### <a name="third-party-resources"></a>타사 리소스
 
-- **W3C의 웹 콘텐츠에 대한 내게 필요한 옵션 지침** 이 웹 사이트에는 내게 필요한 옵션이 있는 웹 사이트 개발에 필요한 지침 및 기술이 있습니다. 자세한 내용은 [http://www.w3.org/WAI/GL/](http://www.w3.org/WAI/GL/)를 참조하세요.
+- **W3C의 웹 콘텐츠에 대한 내게 필요한 옵션 지침** 이 웹 사이트에는 내게 필요한 옵션이 있는 웹 사이트 개발에 필요한 지침 및 기술이 있습니다. 자세한 내용은 [http://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/)를 참조하세요.
 
 ## <a name="see-also"></a>관련 항목:
  [Visual Studio의 접근성 기능](../../ide/reference/accessibility-features-of-visual-studio.md)

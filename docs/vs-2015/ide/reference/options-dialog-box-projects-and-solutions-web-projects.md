@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ddb8688822f4465d313130e5505ff67a93413956
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5456ef4935feb2ad6f08e2a0b7ff24ad58089e1f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668862"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297862"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>옵션 대화 상자, 프로젝트 및 솔루션, 웹 프로젝트
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,6 +29,6 @@ ms.locfileid: "72668862"
 > 대화 상자에서 사용할 수 있는 옵션과 메뉴 명령의 이름 및 위치는 실제 설정이나 버전에 따라 도움말에서 설명하는 것과 다를 수 있습니다. 이 도움말 페이지는 **웹 설정**에 따라 작성되었습니다. 설정을 보거나 변경하려면 **도구** 메뉴에서 **설정 가져오기 및 내보내기**를 선택합니다. 자세한 내용은 [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.
 
 ## <a name="settings"></a>설정
- **웹 사이트 및 프로젝트에 64 비트 버전의 IIS Express 사용** Visual Studio 개발 서버 대신 IIS Express을 사용 하려면이 옵션을 선택 합니다. 자세한 내용은 [Introducing IIS Express](http://go.microsoft.com/?linkid=9747914)(IIS Express 소개) 및 [IIS Express Overview](http://go.microsoft.com/?linkid=9747915)(IIS Express 개요)를 참조하세요. 이 옵션은 기본적으로 비활성화됩니다.
+ **Use the 64-bit version of IIS Express for web sites and projects** Select this option to use IIS Express instead of the Visual Studio Development Server. 자세한 내용은 [Introducing IIS Express](https://weblogs.asp.net/scottgu/introducing-iis-express)(IIS Express 소개) 및 [IIS Express Overview](https://docs.microsoft.com/iis/extensions/introduction-to-iis-express/iis-express-overview)(IIS Express 개요)를 참조하세요. 이 옵션은 기본적으로 비활성화됩니다.
 
- **오류 목록에 오류가 있을 때 웹 응용 프로그램을 실행 하기 전 경고** 이 확인란을 선택 하면 오류 없이 컴파일하지 않을 때 웹 응용 프로그램을 실행 하려고 하면 경고가 표시 됩니다.
+ **Warn before running web applications when there are errors in the error list** If this box is checked, you will be warned if you try to run your web application when it does not compile  without errors.

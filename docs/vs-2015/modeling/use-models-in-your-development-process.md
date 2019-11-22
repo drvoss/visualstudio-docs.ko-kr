@@ -1,5 +1,5 @@
 ---
-title: 개발 프로세스에서 모델 사용 | Microsoft Docs
+title: Use models in your development process | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -11,30 +11,30 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d3bc95e74c9e80596ea46efa42abce5c4ed48fa8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5d5284bb163f474d67324c395a4342ccef6f8561
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659433"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298262"
 ---
 # <a name="use-models-in-your-development-process"></a>개발 프로세스에서 모델 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio에서 모델을 사용하여 시스템, 애플리케이션 또는 구성 요소를 이해하고 변경할 수 있습니다. 모델은 시스템이 작동하는 세계를 시각화하고, 사용자 요구를 명확하게 설명하고, 시스템 아키텍처를 정의하고, 코드를 분석하고, 코드가 요구 사항을 충족하는지 확인하는 데 도움이 됩니다. [Channel 9 비디오: 모델링을 통해 아키텍처 향상](http://go.microsoft.com/fwlink/?LinkID=252078)을 참조 하세요.
+Visual Studio에서 모델을 사용하여 시스템, 애플리케이션 또는 구성 요소를 이해하고 변경할 수 있습니다. 모델은 시스템이 작동하는 세계를 시각화하고, 사용자 요구를 명확하게 설명하고, 시스템 아키텍처를 정의하고, 코드를 분석하고, 코드가 요구 사항을 충족하는지 확인하는 데 도움이 됩니다. See [Channel 9 Video: Improve architecture through modeling](https://go.microsoft.com/fwlink/?LinkID=252078).
 
  각 모델 형식을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)를 참조하세요.
 
 ## <a name="how-to-use-models"></a>모델을 사용하는 방법
  모델은 다음과 같은 여러 방식에서 유용할 수 있습니다.
 
-- 모델링 다이어그램을 그리면 요구 사항, 아키텍처 및 전반적인 디자인에 관련된 개념을 명확하게 설명할 수 있습니다. 자세한 내용은 [모델 사용자 요구 사항](../modeling/model-user-requirements.md)을 참조 하세요.
+- 모델링 다이어그램을 그리면 요구 사항, 아키텍처 및 전반적인 디자인에 관련된 개념을 명확하게 설명할 수 있습니다. For more information, see [Model user requirements](../modeling/model-user-requirements.md).
 
 - 모델로 작업하면 요구 사항 불일치를 노출할 수 있습니다.
 
-- 모델을 사용하여 커뮤니케이션하면 중요한 개념을 자연어보다 더 명확하게 전달할 수 있습니다. 자세한 내용은 [응용 프로그램의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)을 참조 하세요.
+- 모델을 사용하여 커뮤니케이션하면 중요한 개념을 자연어보다 더 명확하게 전달할 수 있습니다. For more information, see [Model your app's architecture](../modeling/model-your-app-s-architecture.md).
 
-- 때로는 모델을 사용하여 코드 또는 데이터베이스 스키마나 문서와 같은 기타 아티팩트를 생성할 수 있습니다. 예를 들어 [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]의 모델링 구성 요소는 모델에서 생성됩니다.  자세한 내용은 [모델에서 앱 생성 및 구성](../modeling/generate-and-configure-your-app-from-models.md)을 참조 하세요.
+- 때로는 모델을 사용하여 코드 또는 데이터베이스 스키마나 문서와 같은 기타 아티팩트를 생성할 수 있습니다. 예를 들어 [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]의 모델링 구성 요소는 모델에서 생성됩니다.  For more information, see [Generate and configure your app from models](../modeling/generate-and-configure-your-app-from-models.md).
 
   매우 민첩한 프로세스부터 격식 있는 프로세스에 이르기까지 다양한 프로세스에 모델을 사용할 수 있습니다.
 
@@ -45,7 +45,7 @@ Visual Studio에서 모델을 사용하여 시스템, 애플리케이션 또는 
 
  프로젝트가 대규모이고 전 세계 여러 지역에 팀이 있는 경우 모델을 사용하여 일반 텍스트보다 훨씬 더 효과적으로 요구 사항 및 아키텍처를 전달할 수 있습니다.
 
- 두 경우 모두, 모델을 만들면 거의 항상 불일치와 모호성이 상당히 감소합니다. 이해 관계자에 따라 시스템이 작동하는 비즈니스 세계에 대한 이해가 다른 경우가 많으며, 개발자마다 시스템 작동 방식에 대한 이해가 서로 다릅니다. 일반적으로 논의의 초점으로 모델을 사용하면 이러한 차이가 노출됩니다. 모델을 사용 하 여 불일치를 줄이는 방법에 대 한 자세한 내용은 [사용자 요구 사항 모델링](../modeling/model-user-requirements.md)을 참조 하세요.
+ 두 경우 모두, 모델을 만들면 거의 항상 불일치와 모호성이 상당히 감소합니다. 이해 관계자에 따라 시스템이 작동하는 비즈니스 세계에 대한 이해가 다른 경우가 많으며, 개발자마다 시스템 작동 방식에 대한 이해가 서로 다릅니다. 일반적으로 논의의 초점으로 모델을 사용하면 이러한 차이가 노출됩니다. For more information about how to use a model to reduce inconsistencies, see [Model user requirements](../modeling/model-user-requirements.md).
 
 ### <a name="use-models-with-other-artifacts"></a>다른 아티팩트와 함께 모델 사용
  모델 자체는 요구 사항 사양 또는 아키텍처가 아닙니다. 이러한 사항의 일부 측면을 보다 명확하게 표현하기 위한 도구지만 소프트웨어 디자인 중에 필요한 모든 개념을 표현할 수 있는 것은 아닙니다. OneNote 페이지 또는 단락, Microsoft Office 문서, [!INCLUDE[esprfound](../includes/esprfound-md.md)]의 작업 항목 또는 프로젝트 사무실 벽의 스티커 메모와 같은 다른 커뮤니케이션 수단과 함께 사용해야 합니다. 마지막 항목을 제외하고 이러한 모든 개체 형식을 모델의 요소 파트에 연결할 수 있습니다.
@@ -93,20 +93,20 @@ Visual Studio에서 모델을 사용하여 시스템, 애플리케이션 또는 
 - 일반적으로 비전문적 이해 관계자도 약간의 도움만 받으면 UML 다이어그램을 문제 없이 이해할 수 있습니다.
 
 #### <a name="link-model-to-work-items"></a>작업 항목에 모델 연결
- 요구 사항 워크숍 후에 요구 사항 모델을 자세히 설명하고 개발 작업에 모델을 연결합니다. 모델의 요소에 [!INCLUDE[esprfound](../includes/esprfound-md.md)]의 작업 항목을 연결하면 이 작업을 수행할 수 있습니다. 이 작업을 수행 하는 방법에 대 한 자세한 내용은 [모델 요소 및 작업 항목 연결](../modeling/link-model-elements-and-work-items.md)을 참조 하세요.
+ 요구 사항 워크숍 후에 요구 사항 모델을 자세히 설명하고 개발 작업에 모델을 연결합니다. 모델의 요소에 [!INCLUDE[esprfound](../includes/esprfound-md.md)]의 작업 항목을 연결하면 이 작업을 수행할 수 있습니다. To learn how to do this, see [Link model elements and work items](../modeling/link-model-elements-and-work-items.md).
 
  작업 항목에 모든 요소를 연결할 수 있지만 가장 유용한 요소는 다음과 같습니다.
 
 - 사용 사례. 구현하는 개발 작업에 사용 사례를 연결할 수 있습니다.
 
-- 사용 사례 확장. 사용 사례의 한 측면이 반복에서 구현되는 경우에만 기본 사용 사례 및 하나 이상의 확장으로 구분할 수 있습니다. 확장은 «extend» 관계로 기본 사례에 연결된 사용 사례입니다. 사용 사례 확장에 대 한 자세한 내용은 [UML 사용 사례 다이어그램: 참조](../modeling/uml-use-case-diagrams-reference.md)를 참조 하세요.
+- 사용 사례 확장. 사용 사례의 한 측면이 반복에서 구현되는 경우에만 기본 사용 사례 및 하나 이상의 확장으로 구분할 수 있습니다. 확장은 «extend» 관계로 기본 사례에 연결된 사용 사례입니다. For more information about use case extension, see [UML Use Case Diagrams: Reference](../modeling/uml-use-case-diagrams-reference.md).
 
-- 비즈니스 규칙 또는 서비스 품질 요구 사항을 설명하는 주석. 자세한 내용은 [모델 사용자 요구 사항](../modeling/model-user-requirements.md)을 참조 하세요.
+- 비즈니스 규칙 또는 서비스 품질 요구 사항을 설명하는 주석. For more information, see [Model user requirements](../modeling/model-user-requirements.md).
 
 #### <a name="link-model-to-tests"></a>테스트에 모델 연결
  요구 사항 모델을 사용하여 수락 테스트의 디자인 과정을 안내합니다. 개발 작업과 동시에 이러한 테스트를 만듭니다.
 
- 이 방법에 대해 자세히 알아보려면 [모델에서 테스트 개발](../modeling/develop-tests-from-a-model.md)을 참조 하세요.
+ To learn more about this technique, see [Develop tests from a model](../modeling/develop-tests-from-a-model.md).
 
 #### <a name="estimate-remaining-work"></a>남은 작업 예상
  요구 사항 모델은 각 반복의 크기를 기준으로 프로젝트의 전체 크기를 예상하는 데 도움이 됩니다. 사용 사례 및 클래스의 개수와 복잡성을 평가하면 필요한 개발 작업을 예상할 수 있습니다. 처음 몇 개의 반복을 완료했을 때 처리된 요구 사항과 처리해야 할 요구 사항을 비교하면 나머지 프로젝트의 비용과 범위를 대략 측정할 수 있습니다.
@@ -116,26 +116,26 @@ Visual Studio에서 모델을 사용하여 시스템, 애플리케이션 또는 
 ## <a name="levels-of-abstraction"></a>추상화 수준
  모델에는 소프트웨어와 관련해서 다양한 추상화가 있습니다. 가장 구체적인 모델은 프로그램 코드를 직접 나타내고, 가장 추상적인 모델은 코드로 표현될 수도 있고 표현되지 않을 수도 있는 비즈니스 개념을 나타냅니다.
 
- 여러 종류의 다이어그램을 통해 모델을 볼 수 있습니다. 모델 및 다이어그램에 대 한 자세한 내용은 [앱에 대 한 모델 만들기](../modeling/create-models-for-your-app.md)를 참조 하세요.
+ 여러 종류의 다이어그램을 통해 모델을 볼 수 있습니다. For information about models and diagrams, see [Create models for your app](../modeling/create-models-for-your-app.md).
 
  각 종류의 다이어그램은 서로 다른 추상화 수준에서 디자인을 설명하는 데 유용합니다. 대부분의 다이어그램 형식은 두 개 이상의 수준에서 유용합니다. 이 표에서는 각 다이어그램 형식을 사용할 수 있는 방법을 보여 줍니다.
 
 |디자인 수준|다이어그램 형식|
 |------------------|-------------------|
-|비즈니스 프로세스<br /><br /> 시스템이 사용되는 컨텍스트를 이해하면 사용자가 시스템에서 요구하는 사항을 이해하는 데 도움이 됩니다.|-동작 다이어그램은 사용자와 시스템 간의 작업 흐름을 설명 하 여 비즈니스 목표를 달성 합니다.<br />-개념적 클래스 다이어그램은 비즈니스 프로세스 내에서 사용 되는 비즈니스 개념을 설명 합니다.|
-|사용자 요구 사항<br /><br /> 사용자가 시스템에서 요구하는 사항의 정의입니다.|-사용 사례 다이어그램은 사용자 및 다른 외부 시스템에 개발 중인 시스템과의 상호 작용을 요약 합니다. 각 사용 사례에 다른 문서를 연결하여 자세히 설명할 수 있습니다.<br />-UML 클래스 다이어그램은 사용자와 시스템에서 통신 하는 정보의 유형을 설명 합니다.<br />-비즈니스 규칙 및 서비스 품질 요구 사항은 별도의 문서에서 설명할 수 있습니다.|
-|개략적인 디자인<br /><br /> 시스템의 전체 구조: 주요 구성 요소 및 결합 방식입니다.|-계층 다이어그램은 시스템이 상호 종속 된 부분으로 구성 되는 방식을 설명 합니다. 레이어 다이어그램에 대해 프로그램 코드의 유효성을 검사하여 아키텍처를 준수하는지 확인할 수 있습니다.<br />-구성 요소 다이어그램은 파트의 인터페이스를 표시 하 고 각 구성 요소에서 제공 하 고 필요로 하는 메시지 및 서비스를 지정 합니다.<br />-시퀀스 다이어그램은 구성 요소가 통신 하 여 각 사용 사례를 구현 하는 방법을 보여 줍니다.<br />-UML 클래스 다이어그램은 구성 요소와 구성 요소 간에 전달 되는 데이터 형식에 대 한 인터페이스를 설명 합니다.|
-|디자인 패턴<br /><br /> 디자인의 모든 파트에서 사용되는 디자인 문제 해결 방법 및 규칙입니다.|-UML 클래스 다이어그램은 패턴의 구조를 설명 합니다.<br />-시퀀스 또는 동작 다이어그램은 상호 작용 및 알고리즘을 보여 줍니다.|
-|코드 분석<br /><br /> 코드에서 여러 형식의 다이어그램을 생성할 수 있습니다.|-시퀀스 다이어그램은 코드에서 개체 간의 상호 작용을 보여 줍니다.<br />-레이어 다이어그램은 클래스 간의 종속성을 보여 줍니다. 레이어 다이어그램에 대해 업데이트된 코드의 유효성을 검사할 수 있습니다.<br />-클래스 다이어그램은 코드의 클래스를 표시 합니다.|
+|비즈니스 프로세스<br /><br /> 시스템이 사용되는 컨텍스트를 이해하면 사용자가 시스템에서 요구하는 사항을 이해하는 데 도움이 됩니다.|-   Activity diagrams describe the flow of work between people and systems to achieve business goals.<br />-   Conceptual class diagrams describe the business concepts used within the business process.|
+|사용자 요구 사항<br /><br /> 사용자가 시스템에서 요구하는 사항의 정의입니다.|-   Use case diagrams summarize the interactions that the users and other external systems have with the system that you are developing. 각 사용 사례에 다른 문서를 연결하여 자세히 설명할 수 있습니다.<br />-   UML class diagrams describe the types of information that the users and system communicate about.<br />-   Business rules and quality of service requirements can be described in separate documents.|
+|개략적인 디자인<br /><br /> 시스템의 전체 구조: 주요 구성 요소 및 결합 방식입니다.|-   Layer Diagrams describe how the system is structured into interdependent parts. 레이어 다이어그램에 대해 프로그램 코드의 유효성을 검사하여 아키텍처를 준수하는지 확인할 수 있습니다.<br />-   Component diagrams show the interfaces of the parts, specifying the messages and services that are provided and required by each component.<br />-   Sequence diagrams show how the components communicate to implement each use case.<br />-   UML class diagrams describe the interfaces of the components and the types of data passed between the components.|
+|디자인 패턴<br /><br /> 디자인의 모든 파트에서 사용되는 디자인 문제 해결 방법 및 규칙입니다.|-   UML class diagrams describe the structures of a pattern<br />-   Sequence or activity diagrams show the interactions and algorithms|
+|코드 분석<br /><br /> 코드에서 여러 형식의 다이어그램을 생성할 수 있습니다.|-   Sequence diagrams show the interaction between objects in the code.<br />-   Layer diagrams show the dependencies between classes. 레이어 다이어그램에 대해 업데이트된 코드의 유효성을 검사할 수 있습니다.<br />-   Class diagrams show the classes in the code.|
 
 ## <a name="external-resources"></a>외부 리소스
 
 |**범주**|**Links**|
 |------------------|---------------|
-|**비디오**|![비디오에 대 한 링크](../data-tools/media/playvideo.gif "링크 playvideo 보려면") [MSDN 방법 비디오: UML 모델 및 다이어그램을 만들고 사용 하는 방법 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![비디오 채널 9에 대 한 링크](../data-tools/media/playvideo.gif "PlayVideo") [: Visual Studio 2010를 사용 하는 UML](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![비디오에 대 한 링크](../data-tools/media/playvideo.gif "PlayVideo") [MSDN How Do DO 시리즈: UML 도구 및 확장성 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
-|**포럼**|-   [Visual Studio 시각화 및 모델링 도구](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio 시각화 및 모델링 SDK(DSL 도구)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Blogs**|[Visual Studio ALM + Team Foundation Server 블로그](http://go.microsoft.com/fwlink/?LinkID=201340)|
-|**기술 문서 및 저널**|[MSDN 아키텍처 센터](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio 아키텍처 도구 사용 지침](../modeling/visual-studio-architecture-tooling-guidance.md)|
+|**비디오**|![link to video](../data-tools/media/playvideo.gif "PlayVideo") [MSDN How Do I Videos: How to Create and Use UML Models and Diagrams (Visual Studio 2010 Ultimate)](https://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![link to video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML with Visual Studio 2010](https://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![link to video](../data-tools/media/playvideo.gif "PlayVideo") [MSDN How Do I Series: UML Tools and Extensibility (Visual Studio 2010 Ultimate)](https://go.microsoft.com/fwlink/?LinkID=214467)|
+|**포럼**|-   [Visual Studio 시각화 및 모델링 도구](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio 시각화 및 모델링 SDK(DSL 도구)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Blogs**|[Visual Studio ALM + Team Foundation Server 블로그](https://go.microsoft.com/fwlink/?LinkID=201340)|
+|**기술 문서 및 저널**|[MSDN 아키텍처 센터](https://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio 아키텍처 도구 사용 지침](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
 ## <a name="see-also"></a>관련 항목:
- [Agile 개발에서 모델 사용](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f) [앱 모델에 대 한 모델 만들기](../modeling/create-models-for-your-app.md) [사용자 요구 사항](../modeling/model-user-requirements.md) [모델 앱 아키텍처](../modeling/model-your-app-s-architecture.md) [모델 구조에서 테스트 개발](../modeling/develop-tests-from-a-model.md) [모델링 솔루션](../modeling/structure-your-modeling-solution.md)
+ [Use models in Agile development](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f) [Create models for your app](../modeling/create-models-for-your-app.md) [Model user requirements](../modeling/model-user-requirements.md) [Model your app's architecture](../modeling/model-your-app-s-architecture.md) [Develop tests from a model](../modeling/develop-tests-from-a-model.md) [Structure your modeling solution](../modeling/structure-your-modeling-solution.md)

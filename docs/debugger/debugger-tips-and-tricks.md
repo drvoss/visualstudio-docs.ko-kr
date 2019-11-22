@@ -1,4 +1,4 @@
----
+﻿---
 title: 디버거의 팁과 요령
 description: Visual Studio 디버거에서 지 원하는 몇 가지 덜 알려진 기능에 대해 알아봅니다.
 ms.custom: seodec18
@@ -31,7 +31,7 @@ ms.locfileid: "73188625"
 
 ![데이터 팁 고정](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
 
-## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>코드를 편집하고 디버깅을 계속합니다(C#, VB, C++) 
+## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>코드를 편집하고 디버깅을 계속합니다(C#, VB, C++)
 
 Visual Studio에서 지원되는 대부분의 언어에서 디버깅 세션 중에 코드를 편집하고 디버깅을 계속할 수 있습니다. 이 기능을 사용하려면 디버거에서 일시 중지된 동안 커서를 사용하여 코드를 클릭하고 편집을 수행한 후 **F5**, **F10** 또는 **F11**을 눌러 디버깅을 계속합니다.
 
@@ -94,11 +94,11 @@ C#, Visual Basic 및 C++(C++/CLI 코드만 해당)의 경우 [DebuggerDisplay](.
 
 ## <a name="view-return-values-for-functions"></a>함수의 반환 값 보기
 
-함수의 반환 값을 보려면 코드를 단계별로 실행하는 동안 **자동** 창에 표시되는 함수를 확인합니다. 함수의 반환 값을 보려면 관심 있는 함수가 이미 실행되었는지 확인합니다. 현재 함수 호출에서 중지된 경우 **F10** 키를 누릅니다. 창이 닫히면 **디버그 > Windows > 자동**을 사용하여 **자동** 창을 엽니다.
+함수의 반환 값을 보려면 코드를 단계별로 실행하는 동안 **자동** 창에 표시되는 함수를 확인합니다. 함수의 반환 값을 보려면 관심 있는 함수가 이미 실행 되었는지 확인 합니다. 현재 함수 호출에서 중지 된 경우 **F10** 키를 누릅니다. 창이 닫히면 **디버그 > Windows > 자동**을 사용하여 **자동** 창을 엽니다.
 
 ![자동 창](../debugger/media/dbg-tips-autos-window.png "AutosWindow")
 
-또한 **직접 실행** 창에 함수를 입력하여 반환 값을 볼 수 있습니다. (**디버그 > Windows >**를 사용하여 엽니다.)
+또한 **직접 실행** 창에 함수를 입력하여 반환 값을 볼 수 있습니다. (**디버그 > Windows >** 를 사용하여 엽니다.)
 
 ![직접 실행 창](../debugger/media/dbg-tips-immediate-window.png "ImmediateWindow")
 

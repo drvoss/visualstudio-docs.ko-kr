@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5f664b1bf2af89d8c3f6e06792039571f4211236
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 23c6f008050cc2695a5b86d2164093823726a7b2
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692753"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300657"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>동시성 시각화 도우미 명령줄 유틸리티(CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,10 +24,10 @@ ms.locfileid: "65692753"
 동시성 시각화 도우미 명령줄 유틸리티(CVCollectionCmd.exe)를 사용하면 명령줄에서 추적을 수집하여 Visual Studio용 동시성 시각화 도우미에서 확인할 수 있습니다. 이러한 도구는 Visual Studio가 설치되지 않은 컴퓨터에서도 사용할 수 있습니다.  
   
 > [!NOTE]
-> Visual Studio 2013부터 동시성 시각화 도우미는 선택적 확장입니다. (이전에는 Visual Studio에 포함되었습니다.) 다운로드 센터에서 [Visual Studio 2015용 동시성 시각화 수집 도구](http://www.microsoft.com/download/details.aspx?id=49103)를 다운로드할 수 있습니다.  
+> Visual Studio 2013부터 동시성 시각화 도우미는 선택적 확장입니다. (Previously it had been included in Visual Studio.) You can download the [Concurrency Visualizer Collection Tools for Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103) from the Download Center.  
   
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>동시성 시각화 도우미 명령줄 유틸리티 다운로드  
- 명령줄 유틸리티를 다운로드하여 설치하려면 Microsoft 다운로드 센터 웹 사이트에서 [Visual Studio 2015용 동시성 시각화 수집 도구](http://www.microsoft.com/download/details.aspx?id=49103) 로 이동한 후 아래 지침을 따르세요. 기본적으로 CVCollectionCmd.exe는 %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\(%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ on x64 computers)에 설치됩니다.  
+ 명령줄 유틸리티를 다운로드하여 설치하려면 Microsoft 다운로드 센터 웹 사이트에서 [Visual Studio 2015용 동시성 시각화 수집 도구](https://www.microsoft.com/download/details.aspx?id=49103) 로 이동한 후 아래 지침을 따르세요. 기본적으로 CVCollectionCmd.exe는 %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\(%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ on x64 computers)에 설치됩니다.  
   
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>CVCollectionCmd를 사용하여 추적 수집  
  CVCollectionCmd를 사용하여 앱을 시작하거나 CVCollectionCmd에 연결하여 추적을 수집할 수 있습니다. 옵션은 아래의 명령 참조를 참조하세요. 예  
@@ -43,15 +43,15 @@ ms.locfileid: "65692753"
   
 |옵션|설명|매개 변수|반환 값|  
 |------------|-----------------|----------------|-------------------|  
-|Query|수집을 시작할 수 있는지 여부를 반환합니다.|없음|수집을 시작할 준비가 되면 0입니다.<br /><br /> 수집이 이미 진행 중이면 1입니다.<br /><br /> 수집이 진행되고 있지는 않지만 필수 [ETW](https://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) 세션 중 하나 이상이 이미 활성화되었으면 2입니다.|  
+|Query|수집을 시작할 수 있는지 여부를 반환합니다.|없음|수집을 시작할 준비가 되면 0입니다.<br /><br /> 수집이 이미 진행 중이면 1입니다.<br /><br /> 수집이 진행 중이 아니지만 필수 [ETW](https://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) 세션 중 하나 이상이 이미 활성화되었으면 2입니다.|  
 |Launch|Concurrency 시각화 도우미 아래에서 지정한 프로세스를 실행합니다.|실행 파일의 경로|실행에 성공한 경우 0입니다.<br /><br /> 대상 애플리케이션을 시작할 수 없어 실행에 실패한 경우 1입니다.<br /><br /> CVCollectionCmd에 지정한 출력 디렉토리에 쓸 수 있는 충분한 권한이 없어 실행에 실패한 경우 13입니다.|  
-|연결|시스템 차원에서 추적 수집을 시작합니다. 그렇지 않고 프로세스가 지정되어 있으면 해당 프로세스에 연결합니다.|없음|연결에 성공한 경우 0입니다.<br /><br /> 지정한 프로세스가 잘못되었거나 모호해서 연결에 실패한 경우 1입니다.<br /><br /> CVCollectionCmd에 지정한 출력 디렉토리에 쓸 수 있는 충분한 권한이 없어 연결에 실패한 경우 13입니다.|  
-|Detach|수집을 중지합니다.|없음|분리에 성공한 경우 0입니다.<br /><br /> 현재 수집이 진행되고 있지 않아 분리에 실패한 경우 1입니다.<br /><br /> 수집을 중지할 수 없어 분리에 실패한 경우 2입니다.|  
+|연결|시스템 차원에서 추적 수집을 시작합니다. 그렇지 않고 프로세스가 지정되어 있으면 해당 프로세스에 연결합니다.|없음.|연결에 성공한 경우 0입니다.<br /><br /> 지정한 프로세스가 잘못되었거나 모호해서 연결에 실패한 경우 1입니다.<br /><br /> CVCollectionCmd에 지정한 출력 디렉토리에 쓸 수 있는 충분한 권한이 없어 연결에 실패한 경우 13입니다.|  
+|Detach|수집을 중지합니다.|없음.|분리에 성공한 경우 0입니다.<br /><br /> 현재 수집이 진행되고 있지 않아 분리에 실패한 경우 1입니다.<br /><br /> 수집을 중지할 수 없어 분리에 실패한 경우 2입니다.|  
 |분석|지정한 추적을 분석합니다.|CVTrace 파일의 전체 경로입니다.|분석에 성공한 경우 0입니다.<br /><br /> 지정한 추적이 시스템 차원이지만 대상 프로세스를 지정하지 않아 분석을 시작할 수 없는 경우 1입니다.<br /><br /> 프로세스를 지정했으나 추적이 시스템 차원이 아니라서 분석을 시작할 수 없는 경우 2입니다.<br /><br /> 지정한 프로세스가 잘못되어 분석에 실패한 경우 3입니다.<br /><br /> 지정한 CVTrace 파일이 잘못되어 분석에 실패한 경우 4입니다.|  
-|LaunchArgs|실행 가능한 대상 인수를 지정합니다. 이 옵션은 Launch 명령에만 적용됩니다.|애플리케이션에 대한 명령줄 인수|없음|  
-|Outdir|추적 파일을 저장할 디렉터리를 지정합니다. Launch 및 Attach 명령에 적용됩니다.|디렉터리 경로 또는 상대 경로|없음|  
-|프로세스|Attach 명령이 실행되면 연결할 프로세스 또는 Analyze 명령이 실행되면 분석할 추적의 프로세스를 지정합니다. Attach 및 Analyze 명령에 적용됩니다.|프로세스의 PID 또는 이름|없음|  
-|Config|기본값 이외의 수집 설정이 필요한 경우 구성 파일의 경로를 지정합니다.   Launch, Attach 및 Analyze 명령에 적용됩니다.|XML 구성 파일의 디렉터리 경로 또는 상대 경로|없음|  
+|LaunchArgs|실행 가능한 대상 인수를 지정합니다. 이 옵션은 Launch 명령에만 적용됩니다.|애플리케이션에 대한 명령줄 인수|없음.|  
+|Outdir|추적 파일을 저장할 디렉터리를 지정합니다. Launch 및 Attach 명령에 적용됩니다.|디렉터리 경로 또는 상대 경로|없음.|  
+|프로세스|Attach 명령이 실행되면 연결할 프로세스 또는 Analyze 명령이 실행되면 분석할 추적의 프로세스를 지정합니다. Attach 및 Analyze 명령에 적용됩니다.|프로세스의 PID 또는 이름|없음.|  
+|Config|기본값 이외의 수집 설정이 필요한 경우 구성 파일의 경로를 지정합니다.   Launch, Attach 및 Analyze 명령에 적용됩니다.|XML 구성 파일의 디렉터리 경로 또는 상대 경로|없음.|  
   
 ## <a name="customizing-configuration-settings"></a>구성 설정 사용자 지정  
  CVCollectionCmd를 사용해 추적을 수집하고 수집 설정을 사용자 지정하려는 경우 구성 파일을 사용해 설정을 지정합니다.  
@@ -64,19 +64,19 @@ ms.locfileid: "65692753"
 ### <a name="configuration-file-tags"></a>구성 파일 태그  
  구성 파일은 XML 기반입니다. 올바른 태그 및 값은 다음과 같습니다.  
   
-|태그|설명|값|  
+|Tag|설명|값|  
 |---------|-----------------|------------|  
 |Config|전체 구성 파일의 경계를 지정합니다.|다음 요소를 포함해야 합니다.<br /><br /> -   MinorVersion<br />-   MajorVersion|  
 |MajorVersion|구성 파일의 주 버전을 지정합니다.|[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 프로젝트의 경우 1이어야 합니다. 1이 아니면 유틸리티가 작동하지 않습니다.|  
 |MinorVersion|구성 파일의 부 버전을 지정합니다.|[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 프로젝트의 경우 0이어야 합니다. 0이 아니면 유틸리티가 작동하지 않습니다.|  
 |IncludeEnvSymbolPath|환경 기호 경로(_NT_SYMBOL_PATH)를 사용할지 여부를 결정하는 값을 설정합니다.|-   True<br />-   False|  
 |DeleteEtlsAfterAnalysis|분석이 완료되면 ETL 파일을 삭제할지 여부를 결정하는 값을 설정합니다.|-   True<br />-   False|  
-|SymbolPath|기호 서버의 경로를 지정합니다. 자세한 내용은 [Microsoft 기호 서버를 사용하여 디버그 기호 파일 얻기](http://go.microsoft.com/fwlink/?LinkID=149389)를 참조하세요.|디렉터리 이름 또는 URL|  
+|SymbolPath|기호 서버의 경로를 지정합니다. 자세한 내용은 [Microsoft 기호 서버를 사용하여 디버그 기호 파일 얻기](https://go.microsoft.com/fwlink/?LinkID=149389)를 참조하세요.|디렉터리 이름 또는 URL|  
 |Markers|표식 공급자 목록을 포함합니다.|MarkerProvider 요소를 0개 이상 포함할 수 있습니다.|  
 |MarkerProvider|단일 표식 공급자를 지정합니다.|다음 요소를 포함해야 합니다.<br /><br /> -   Level<br />-   GUID<br />-   Name<br /><br /> 다음 요소를 포함할 수 있습니다.<br /><br /> -   Categories<br />-   IsEnabled|  
-|수준|MarkerProvider의 중요도 수준을 설정합니다.|-   Low<br />-   Normal<br />-   High<br />-   Critical<br />-   Everything|  
+|Level|MarkerProvider의 중요도 수준을 설정합니다.|-   Low<br />-   Normal<br />-   High<br />-   Critical<br />-   Everything|  
 |GUID|ETW 표식 공급자의 고유한 전역 식별자입니다.|GUID|  
-|이름|표식 공급자에 대한 설명을 지정합니다.|문자열|  
+|name|표식 공급자에 대한 설명을 지정합니다.|문자열|  
 |범주|표식 공급자에 대해 수집된 범주를 지정합니다.|쉼표로 구분된 숫자 문자열 또는 숫자 범위|  
 |IsEnabled|표식 공급자를 수집에 사용할지 여부를 결정하는 값을 설정합니다.|-   True<br />-   False|  
 |FilterConfig|수집에서 필터링된 ETW 이벤트의 구성 옵션 목록을 지정합니다.|다음 요소가 포함되어 있을 수 있습니다.<br /><br /> -   CollectClrEvents<br />-   ClrCollectionOptions<br />-   CollectSampleEvents<br />-   CollectGpuEvents<br />-   CollectFileIO|  

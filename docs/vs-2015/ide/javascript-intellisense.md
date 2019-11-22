@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 39c90a8550736c945f04467e9366a73039cfa2b1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e367ff6d6abbf40cdf7efebed04aee6fc74a384c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670471"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300745"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,7 +127,7 @@ IntelliSense를 사용하면 코드를 작성하는 동안 적절한 정보가 �
 ### <a name="UserDefined"></a> 사용자 정의 변수, 함수 및 개체
  JavaScript 파일을 변경하면 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]에서 열린 문서와 참조된 문서를 검색하여 사용 가능한 모든 코드 리소스를 확인합니다. 여기에는 사용자가 만든 변수, 함수 및 개체가 포함됩니다. 그런 후에는 JavaScript IntelliSense에서 해당 리소스를 사용할 수 있습니다.
 
- 사용자 정의 변수, 함수 및 개체에 대한 자세한 내용은 MSDN 웹 사이트에서 [Creating Your Own Objects](http://go.microsoft.com/fwlink/?LinkId=108671)(사용자 고유 개체 만들기)를 참조하세요.
+ 사용자 정의 변수, 함수 및 개체에 대한 자세한 내용은 MSDN 웹 사이트에서 [Creating Your Own Objects](https://go.microsoft.com/fwlink/?LinkId=108671)(사용자 고유 개체 만들기)를 참조하세요.
 
 ### <a name="External"></a> 외부 파일 참조
  코드에 IntelliSense 지원을 달성하기 위해 다양한 형식의 외부 파일 참조를 포함할 수 있습니다. 외부 파일 참조는 스크립트 참조, 참조 지시문이거나 참조 그룹을 사용하여 지정할 수 있습니다.
@@ -283,6 +283,6 @@ IntelliSense를 사용하면 코드를 작성하는 동안 적절한 정보가 �
 - [JavaScript IntelliSense 확장](../ide/extending-javascript-intellisense.md)
 - [식별자 문 완성](../ide/statement-completion-for-identifiers.md)
 - [XML 문서 주석](../ide/xml-documentation-comments-javascript.md)
-- [About the DHTML Object Model](http://go.microsoft.com/fwlink/?LinkID=92344)(DHTML 개체 모델 정보)
+- [About the DHTML Object Model](https://go.microsoft.com/fwlink/?LinkID=92344)(DHTML 개체 모델 정보)
 - [멤버 목록](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
-- [SRC 특성 &#124; src 속성](http://go.microsoft.com/fwlink/?LinkId=92345)
+- [SRC 특성 &#124; src 속성](https://go.microsoft.com/fwlink/?LinkId=92345)

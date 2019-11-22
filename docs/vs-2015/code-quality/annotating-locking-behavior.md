@@ -1,5 +1,5 @@
 ---
-title: 잠금 동작에 주석 지정 | Microsoft Docs
+title: Annotating Locking Behavior | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -33,12 +33,12 @@ caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 66c4aafb380d50ec0faafce931b8ce73e5138e6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a5b34253485da233ba6e25841b6592068de6fb69
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68157120"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295822"
 ---
 # <a name="annotating-locking-behavior"></a>잠금 동작에 주석 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "68157120"
   
  동시성 SAL 주석은 잠금 부작용, 잠금 책임, 데이터 보호, 잠금 순서 계층 구조 및 예상되는 기타 잠금 동작을 지정할 수 있도록 설계되었습니다. 암시적 규칙을 명시적으로 지정함으로써 SAL 동시성 주석은 코드에서 잠금 규칙을 사용하는 방법을 문서화할 수 있는 일관된 방법을 제공합니다. 또한 동시성 주석은 경합 상태, 교착 상태, 일치하지 않는 동기화 작업 및 다른 미묘한 동시성 오류를 찾기 위한 코드 분석 도구의 기능을 향상시킵니다.  
   
-## <a name="general-guidelines"></a>일반적인 지침  
+## <a name="general-guidelines"></a>일반 지침  
  주석을 사용하여 구현(호출 수신자)과 클라이언트(호출자) 간의 함수 정의에서 암시된 계약을 명시할 수 있으며, 분석을 더욱 개선할 수 있는 프로그램의 고정 항목과 기타 속성을 나타낼 수 있습니다.  
   
  SAL은 임계 영역, 뮤텍스, 스핀 잠금 및 기타 리소스 개체와 같은 다양한 종류의 잠금 기본 형식을 지원합니다. 많은 동시성 주석이 잠금 식을 매개 변수로 사용합니다. 규칙에 따라 잠금은 내부 잠금 개체의 경로 식으로 표시됩니다.  
@@ -67,7 +67,7 @@ ms.locfileid: "68157120"
 ## <a name="locking-annotations"></a>주석 잠금  
  다음 표에서는 잠금 주석을 보여 줍니다.  
   
-|Annotation|Description|  
+|주석|설명|  
 |----------------|-----------------|  
 |`_Acquires_exclusive_lock_(expr)`|함수에 주석을 달고 사후 상태에서 함수가 `expr`로 명명된 잠금 개체의 단독 잠금 수를 하나 증가시킴을 나타냅니다.|  
 |`_Acquires_lock_(expr)`|함수에 주석을 달고 사후 상태에서 함수가 `expr`로 명명된 잠금 개체의 잠금 수를 하나 증가시킴을 나타냅니다.|  
@@ -91,7 +91,7 @@ ms.locfileid: "68157120"
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>노출되지 않은 잠금 개체에 대한 SAL 내장 함수  
  특정 잠금 개체는 연결된 잠금 함수의 구현에 의해 노출되지 않습니다.  다음 표에서는 이러한 노출되지 않는 잠금 개체에서 작동하는 함수에 주석을 사용하도록 설정하는 SAL 내장 변수를 보여 줍니다.  
   
-|Annotation|Description|  
+|주석|설명|  
 |----------------|-----------------|  
 |`_Global_cancel_spin_lock_`|취소 스핀 잠금을 설명합니다.|  
 |`_Global_critical_region_`|임계 영역을 설명합니다.|  
@@ -101,20 +101,20 @@ ms.locfileid: "68157120"
 ## <a name="shared-data-access-annotations"></a>공유 데이터 액세스 주석  
  다음 표에서는 공유 데이터 액세스에 대한 주석을 보여 줍니다.  
   
-|Annotation|Description|  
+|주석|설명|  
 |----------------|-----------------|  
 |`_Guarded_by_(expr)`|변수에 주석을 추가하고 변수가 엑세스될 때마다 `expr`로 명명된 잠금 개체의 잠금 수가 1개 이상임을 나타냅니다.|  
 |`_Interlocked_`|변수에 주석을 추가하며 `_Guarded_by_(_Global_interlock_)`와 동일합니다.|  
 |`_Interlocked_operand_`|주석이 추가된 함수 매개 변수는 다양한 연동 함수 중 하나의 대상 피연산자입니다.  해당 피연산자에는 특정 추가 속성이 있어야 합니다.|  
 |`_Write_guarded_by_(expr)`|변수에 주석을 추가하고 변수가 수정될 때마다 `expr`로 명명된 잠금 개체의 잠금 수가 1개 이상임을 나타냅니다.|  
   
-## <a name="see-also"></a>참고 항목  
- [SAL 주석은 C를 줄이기 위해 사용 하 여 /C++ 오류 코드](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
- [SAL 이해](../code-quality/understanding-sal.md)   
- [함수 매개 변수 및 반환 값에 주석 지정](../code-quality/annotating-function-parameters-and-return-values.md)   
- [함수 동작에 주석 지정](../code-quality/annotating-function-behavior.md)   
- [구조체 및 클래스에 주석 지정](../code-quality/annotating-structs-and-classes.md)   
- [주석 적용 시기 및 위치 지정](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
- [내장 함수](../code-quality/intrinsic-functions.md)   
- [모범 사례 및 예제](../code-quality/best-practices-and-examples-sal.md)   
- [코드 분석 팀 블로그](http://go.microsoft.com/fwlink/p/?LinkId=251197)
+## <a name="see-also"></a>관련 항목:  
+ [Using SAL Annotations to Reduce C/C++ Code Defects](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [Understanding SAL](../code-quality/understanding-sal.md)   
+ [Annotating Function Parameters and Return Values](../code-quality/annotating-function-parameters-and-return-values.md)   
+ [Annotating Function Behavior](../code-quality/annotating-function-behavior.md)   
+ [Annotating Structs and Classes](../code-quality/annotating-structs-and-classes.md)   
+ [Specifying When and Where an Annotation Applies](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
+ [Intrinsic Functions](../code-quality/intrinsic-functions.md)   
+ [Best Practices and Examples](../code-quality/best-practices-and-examples-sal.md)   
+ [Code Analysis Team Blog](https://go.microsoft.com/fwlink/p/?LinkId=251197)

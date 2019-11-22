@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4b61a187f4e07c73e5c53db382a6ee5e5cb8cb70
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6d838b7519b40d47b644a53befb91391fa30a664
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664078"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74293136"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>게임 또는 응용 프로그램에 3차원 자산 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +89,7 @@ ms.locfileid: "72664078"
 
 |속성|설명|
 |--------------|-----------------|
-|**압축**|출력 파일에 사용할 압축 형식을 지정합니다.<br /><br /> 사용 가능한 옵션은 다음과 같습니다.<br /><br /> -   **압축 안 함**<br />-   **BC1_UNORM 압축**<br />-   **BC1_UNORM_SRGB 압축**<br />-   **BC2_UNORM 압축**<br />-   **BC2_UNORM_SRGB 압축**<br />-   **BC3_UNORM 압축**<br />-   **BC3_UNORM_SRGB 압축**<br />-   **BC4_UNORM 압축**<br />-   **BC4_SNORM 압축**<br />-   **BC5_UNORM 압축**<br />-   **BC5_SNORM 압축**<br />-   **BC6H_UF16 압축**<br />-   **BC6H_SF16 압축**<br />-   **BC7_UNORM 압축**<br />-   **BC7_UNORM_SRGB 압축**<br /><br /> 다른 버전의 DirectX에서 지원되는 압축 형식에 대한 자세한 내용은 [DXGI 프로그래밍 가이드](http://go.microsoft.com/fwlink/p/?LinkId=246265)를 참조하세요.|
+|**압축**|출력 파일에 사용할 압축 형식을 지정합니다.<br /><br /> 사용 가능한 옵션은 다음과 같습니다.<br /><br /> -   **압축 안 함**<br />-   **BC1_UNORM 압축**<br />-   **BC1_UNORM_SRGB 압축**<br />-   **BC2_UNORM 압축**<br />-   **BC2_UNORM_SRGB 압축**<br />-   **BC3_UNORM 압축**<br />-   **BC3_UNORM_SRGB 압축**<br />-   **BC4_UNORM 압축**<br />-   **BC4_SNORM 압축**<br />-   **BC5_UNORM 압축**<br />-   **BC5_SNORM 압축**<br />-   **BC6H_UF16 압축**<br />-   **BC6H_SF16 압축**<br />-   **BC7_UNORM 압축**<br />-   **BC7_UNORM_SRGB 압축**<br /><br /> 다른 버전의 DirectX에서 지원되는 압축 형식에 대한 자세한 내용은 [DXGI 프로그래밍 가이드](https://go.microsoft.com/fwlink/p/?LinkId=246265)를 참조하세요.|
 |미리 곱한 알파 형식으로 변환|이미지를 출력 파일에서 미리 곱한 알파 형식으로 변환하려면 **예**를 선택하고, 그렇지 않으면 **아니요**를 선택합니다. 출력 파일만 변경되고 원본 이미지는 그대로 남습니다.|
 |**MIP 생성**|빌드 시간에 전체 MIP 체인을 생성한 다음 출력 파일에 포함하려면 **예**를 선택하고, 그렇지 않으면 **아니요**를 선택합니다. **아니요**이고 이미 원본 파일에 MIP 맵 체인이 포함되어 있는 경우 출력 파일에 MIP 체인이 있게 됩니다. 그렇지 않으면 출력 파일에 MIP 체인이 없습니다.|
 |**콘텐츠 출력**|출력 파일의 이름을 지정합니다. **중요:** 출력 파일의 확장명을 변경하더라도 파일 형식에는 아무런 영향을 주지 않습니다.|
@@ -111,13 +111,13 @@ ms.locfileid: "72664078"
 ## <a name="loading-and-using-3-d-assets-at-run-time"></a>런타임에 3-D 자산 로드 후 사용
 
 ### <a name="using-textures-and-images"></a>질감 및 이미지 사용
- Direct3D에서는 질감 리소스를 만들기 위한 기능을 제공합니다. Direct3D 11에서 D3DX11 유틸리티 라이브러리는 이미지 파일에서 직접 질감 리소스 및 리소스 뷰를 만들 수 있는 추가 기능을 제공합니다. Direct3D 11에서 질감 리소스를 만드는 방법에 대한 자세한 내용은 [질감](http://go.microsoft.com/fwlink/p/?LinkID=246267)을 참조하세요. D3DX11 라이브러리를 사용하여 이미지 파일에서 질감 리소스 또는 리소스 뷰를 만드는 방법에 대한 자세한 내용은 [방법: 파일에서 질감 초기화](http://go.microsoft.com/fwlink/p/?LinkId=246268)를 참조하세요.
+ Direct3D에서는 질감 리소스를 만들기 위한 기능을 제공합니다. Direct3D 11에서 D3DX11 유틸리티 라이브러리는 이미지 파일에서 직접 질감 리소스 및 리소스 뷰를 만들 수 있는 추가 기능을 제공합니다. Direct3D 11에서 질감 리소스를 만드는 방법에 대한 자세한 내용은 [질감](https://go.microsoft.com/fwlink/p/?LinkID=246267)을 참조하세요. D3DX11 라이브러리를 사용하여 이미지 파일에서 질감 리소스 또는 리소스 뷰를 만드는 방법에 대한 자세한 내용은 [방법: 파일에서 질감 초기화](https://go.microsoft.com/fwlink/p/?LinkId=246268)를 참조하세요.
 
 ### <a name="using-3-d-models"></a>3-D 모델 사용
  Direct3D 11은 3-D 모델에서 리소스를 만드는 기능을 제공하지 않습니다. 대신 3-D 모델 파일을 읽고 모델에 필요한 3-D 모델 및 모든 리소스(예: 질감 또는 셰이더)를 나타내는 꼭짓점 및 인덱스 버퍼를 만드는 코드를 작성해야 합니다.
 
 ### <a name="using-shaders"></a>셰이더 사용
- Direct3D에서는 셰이더 리소스를 만들어 프로그래밍 가능한 그래픽 파이프라인으로 바인딩하기 위한 기능을 제공합니다. Direct3D에서 셰이더 리소스를 만들고 파이프라인에 바인딩하는 방법에 대한 자세한 내용은 [HLSL 프로그래밍 가이드](http://go.microsoft.com/fwlink/p/?LinkID=261521)를 참조하세요.
+ Direct3D에서는 셰이더 리소스를 만들어 프로그래밍 가능한 그래픽 파이프라인으로 바인딩하기 위한 기능을 제공합니다. Direct3D에서 셰이더 리소스를 만들고 파이프라인에 바인딩하는 방법에 대한 자세한 내용은 [HLSL 프로그래밍 가이드](https://go.microsoft.com/fwlink/p/?LinkID=261521)를 참조하세요.
 
  프로그래밍 가능한 그래픽 파이프라인에서 파이프라인의 각 단계는 파이프라인에서 인식할 수 있는 방식으로 형식이 지정된 결과를 파이프라인의 다음 단계에 지정해야 합니다. 셰이더 디자이너는 픽셀 셰이더만 만들 수 있으므로 셰이더 디자이너에서 수신한 데이터가 예상한 형식인지는 앱에서 확인해야 합니다 프로그래밍 가능한 여러 셰이더 단계(예: 꼭짓점 셰이더, 헐 셰이더, 도메인 셰이더 및 기하 셰이더)는 픽셀 셰이더 이전에 실행되고 기하학적 변환을 수행합니다. 프로그래밍할 수 없는 공간 분할(tessellation) 단계 또한 픽셀 셰이더 이전에 실행됩니다. 이러한 단계 중 어떤 단계가 픽셀 셰이더 바로 이전에 오는지와 상관없이 다음과 같은 형식으로 결과를 제공해야 합니다.
 

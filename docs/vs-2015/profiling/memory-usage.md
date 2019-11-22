@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 132e6252662ed765630764dabca26b22f868a315
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0feabad8dfa3b086c9ed5a1a58e231719774f9cc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704872"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298362"
 ---
 # <a name="memory-usage"></a>메모리 사용량
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ ms.locfileid: "65704872"
 ## <a name="analyze-memory-use-with-the-debugger"></a>디버거를 사용하여 메모리 사용 분석  
   
 > [!NOTE]
-> 메모리 데이터를 수집할 경우 네이티브 또는 혼합 모드 앱의 디버깅 성능에 영향을 줄 수 있으므로 메모리 스냅샷은 기본적으로 사용되지 않습니다. 스냅숏 네이티브 또는 혼합 모드 앱을 사용 하도록 설정 하려면 디버깅 세션 시작 (바로 가기 키: **F5**). **진단 도구** 창이 나타나면 메모리 사용량 탭을 선택한 다음 **스냅샷 사용**을 선택합니다.  
+> 메모리 데이터를 수집할 경우 네이티브 또는 혼합 모드 앱의 디버깅 성능에 영향을 줄 수 있으므로 메모리 스냅샷은 기본적으로 사용되지 않습니다. 스냅샷 네이티브 또는 혼합 모드 앱을 사용하도록 설정하려면 디버깅 세션을 시작합니다(바로 가기 키: **F5**). **진단 도구** 창이 나타나면 메모리 사용량 탭을 선택한 다음 **스냅샷 사용**을 선택합니다.  
 >   
-> ![스냅숏 사용](../profiling/media/dbgdiag-mem-mixedtoolbar-enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
+> ![Enable snapshots](../profiling/media/dbgdiag-mem-mixedtoolbar-enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
 >   
-> 중지(바로 가기 키: **Shift + F5**) 디버깅을 다시 시작 합니다.  
+> 디버깅을 중지(바로 가기 키: **Shift + F5**)하고 다시 시작합니다.  
   
  메모리 상태를 캡처할 때마다 **메모리 사용량** 요약 도구 모음에서 **스냅샷 만들기** 를 선택합니다.  
   
- ![스냅숏 만들기](../profiling/media/dbgdiag-mem-mixedtoolbar-takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")  
+ ![Take snapshot](../profiling/media/dbgdiag-mem-mixedtoolbar-takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")  
   
 > [!TIP]
 > - 메모리 비교 기준을 만들려면 디버깅 세션을 시작할 때 스냅샷을 만드는 것이 좋습니다.  
@@ -66,7 +66,7 @@ ms.locfileid: "65704872"
   
 - 여러 스냅샷을 만든 경우 요약 테이블의 셀에 행 스냅샷과 이전 스냅샷 간의 값 변경 내용이 포함됩니다.  
   
-   ![메모리 요약 표 셀](../profiling/media/dbgdiag-mem-summarytablecell.png "DBGDIAG_MEM_SummaryTableCell")  
+   ![Memory summary table cell](../profiling/media/dbgdiag-mem-summarytablecell.png "DBGDIAG_MEM_SummaryTableCell")  
   
   **세부 정보 보고서를 보려면**  
   
@@ -81,7 +81,7 @@ ms.locfileid: "65704872"
 ### <a name="managed-types-reports"></a>관리되는 형식 보고서  
  메모리 사용량 요약 테이블에서 **관리되는 개체** 또는 **관리되는 힙 크기** 셀의 현재 링크를 선택합니다.  
   
- ![디버거 관리되는 형식 보고서 &#45; 루트 경로](../profiling/media/dbgdiag-mem-managedtypesreport-pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")  
+ ![Debugger managed type report &#45; Paths to Root](../profiling/media/dbgdiag-mem-managedtypesreport-pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")  
   
  위쪽 창에는 형식에서 참조되는 모든 개체의 크기(**포함 크기**)를 포함하여 스냅샷의 형식 개수 및 크기가 표시됩니다.  
   
@@ -89,50 +89,50 @@ ms.locfileid: "65704872"
   
  **참조 된 형식** 트리에는 위쪽 창에서 선택한 형식이 보유하고 있는 참조가 표시됩니다.  
   
- ![관리되는 참조 형식 보고서 뷰](../profiling/media/dbgdiag-mem-managedtypesreport-referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")  
+ ![Managed eferenced types report view](../profiling/media/dbgdiag-mem-managedtypesreport-referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")  
   
- 위쪽 창에서 선택한 형식의 인스턴스를 표시하려면 ![인스턴스 아이콘](../profiling/media/dbgdiag-mem-instanceicon.png "DBGDIAG_MEM_InstanceIcon") 아이콘을 선택합니다.  
+ To display the instances of a selected type in the upper pane, choose the ![Instance icon](../profiling/media/dbgdiag-mem-instanceicon.png "DBGDIAG_MEM_InstanceIcon") icon.  
   
- ![인스턴스 뷰](../profiling/media/dbgdiag-mem-managedtypesreport-instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")  
+ ![Instances view](../profiling/media/dbgdiag-mem-managedtypesreport-instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")  
   
  **인스턴스** 뷰에는 위쪽 창의 스냅샷에서 선택한 개체의 인스턴스가 표시됩니다. 루트 경로 및 참조된 개체 창에는 선택한 인스턴스를 참조하는 개체 및 선택한 인스턴스가 참조하는 형식이 표시됩니다. 스냅샷이 만들어진 지점에서 디버거가 중지되면 값 셀을 마우스로 가리켜 도구 설명에 개체 값을 표시할 수 있습니다.  
   
 ### <a name="native-type-reports"></a>네이티브 형식 보고서  
  **진단 도구** 창의 메모리 사용량 요약 테이블에서 **네이티브 할당** 또는 **네이티브 힙 크기** 셀의 현재 링크를 선택합니다.  
   
- ![네이티브 형식 뷰](../profiling/media/dbgdiag-mem-native-typesview.png "DBGDIAG_MEM_Native_TypesView")  
+ ![Native Type View](../profiling/media/dbgdiag-mem-native-typesview.png "DBGDIAG_MEM_Native_TypesView")  
   
  **형식 뷰** 에는 스냅샷의 형식 수와 크기가 표시됩니다.  
   
-- 선택한 형식의 인스턴스 아이콘(![개체 형식 열의 인스턴스 아이콘](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon"))을 선택하여 스냅샷에서 선택한 형식의 개체에 대한 정보를 표시합니다.  
+- Choose the instances icon (![The instance icon in the Object Type column](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) of a selected type to display information about the objects of the selected type in the snapshot.  
   
      **인스턴스** 뷰에는 선택한 형식의 각 인스턴스가 표시됩니다. 인스턴스를 선택하면 **할당 호출 스택** 창에 인스턴스를 만든 호출 스택이 표시됩니다.  
   
-     ![인스턴스 뷰](../profiling/media/dbgdiag-mem-native-instances.png "DBGDIAG_MEM_Native_Instances")  
+     ![Instances view](../profiling/media/dbgdiag-mem-native-instances.png "DBGDIAG_MEM_Native_Instances")  
   
 - **뷰 모드** 에서 **스택 뷰** 를 선택하여 선택한 형식에 대한 할당 스택을 확인합니다.  
   
-     ![스택 뷰](../profiling/media/dbgdiag-mem-native-stacksview.png "DBGDIAG_MEM_Native_Instances")  
+     ![Stacks View](../profiling/media/dbgdiag-mem-native-stacksview.png "DBGDIAG_MEM_Native_StacksView")  
   
 ### <a name="change-diff-reports"></a>변경(차이) 보고서  
   
 - **진단 도구** 창의 **메모리 사용량** 탭에서 요약 테이블 셀의 변경 링크를 선택합니다.  
   
-   ![변경&#40;차이&#41; 보고서 선택](../profiling/media/dbgdiag-mem-choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
+   ![Choose a change &#40;dif&#41;f report](../profiling/media/dbgdiag-mem-choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
   
 - 관리되는 보고서 또는 네이티브 보고서의 **비교 대상** 목록에서 스냅샷을 선택합니다.  
   
-   ![비교 목록에서 스냅샷 선택](../profiling/media/dbgdiag-mem-choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
+   ![Choose a snapshot from the Compare To list](../profiling/media/dbgdiag-mem-choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
   
   변경 보고서는 기본 스냅샷 값과 비교 스냅샷 간의 차이를 표시하는 열( **(차이)** 로 표시됨)을 기본 보고서에 추가합니다. 네이티브 형식 뷰 차이 보고서가 표시되는 모양은 다음과 같습니다.  
   
-  ![네이티브 형식 Diff 뷰](../profiling/media/dbgdiag-mem-native-typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
+  ![Native Types Diff Veiw](../profiling/media/dbgdiag-mem-native-typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
   
 ## <a name="blogs-and-videos"></a>블로그 및 동영상  
- [Visual Studio 2015의 진단 도구 디버거 창](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
+ [Visual Studio 2015의 진단 도구 디버거 창](https://devblogs.microsoft.com/devops/diagnostic-tools-debugger-window-in-visual-studio-2015/)  
   
- [블로그: Visual Studio 2015에서 디버그 하는 동안 메모리 사용량 도구](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/13/memory-usage-tool-while-debugging-in-visual-studio-2015.aspx)  
+ [블로그: Visual Studio 2015에서 디버그하는 동안 메모리 사용 도구](https://devblogs.microsoft.com/devops/memory-usage-tool-while-debugging-in-visual-studio-2015/)  
   
- [Visual C++ 블로그: VS2015 Preview의 네이티브 메모리 진단](http://blogs.msdn.com/b/vcblog/archive/2014/11/21/native-memory-diagnostics-in-vs2015-preview.aspx)  
+ [Visual C++ 블로그: VS2015 Preview의 기본 메모리 진단](https://devblogs.microsoft.com/cppblog/native-memory-diagnostics-in-vs2015-preview/)  
   
- [Visual C++ 블로그: Visual Studio 2015 CTP 용 네이티브 메모리 진단 도구](http://blogs.msdn.com/b/vcblog/archive/2014/06/04/native-memory-diagnostic-tools-for-visual-studio-14-ctp1.aspx)
+ [Visual C++ 블로그: Visual Studio 2015 CTP용 기본 메모리 진단 도구](https://devblogs.microsoft.com/cppblog/native-memory-diagnostic-tools-for-visual-studio-14-ctp/)

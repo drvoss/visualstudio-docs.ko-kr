@@ -1,4 +1,4 @@
----
+﻿---
 title: 라이브 ASP.NET Azure 앱 디버그
 description: 스냅샷 디버거로 snappoint를 설정하고 스냅샷을 보는 방법을 알아봅니다.
 ms.custom: ''
@@ -37,7 +37,7 @@ snappoint 및 logpoint는 중단점과 유사하지만, 중단점과 달리 snap
 * 스냅샷 디버거는 **Azure 개발 워크로드**를 사용하여 Visual Studio 2017 Enterprise 버전 15.5 이상에서만 사용할 수 있습니다. (**개별 구성 요소** 탭의 **디버깅 및 테스트** > **스냅샷 디버거**에서 찾을 수 있습니다.)
 
    ::: moniker range=">=vs-2019"
-    아직 설치하지 않은 경우 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)를 설치합니다. 이전 Visual Studio 설치에서 업데이트하는 경우 Visual Studio 설치 관리자를 실행하고 **ASP.NET 및 웹 개발 워크로드**에서 스냅샷 디버거 구성 요소를 확인합니다.
+   아직 설치하지 않은 경우 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)를 설치합니다. 이전 Visual Studio 설치에서 업데이트하는 경우 Visual Studio 설치 관리자를 실행하고 **ASP.NET 및 웹 개발 워크로드**에서 스냅샷 디버거 구성 요소를 확인합니다.
    ::: moniker-end
    ::: moniker range="<=vs-2017"
    아직 설치되지 않은 경우 [Visual Studio 2017 Enterprise 버전 15.5](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 이상을 설치하세요. 이전 Visual Studio 2017 설치에서 업데이트하는 경우 Visual Studio 설치 관리자를 실행하고 **ASP.NET 및 웹 개발 워크로드**에서 스냅샷 디버거 구성 요소를 확인합니다.
@@ -83,7 +83,7 @@ snappoint 및 logpoint는 중단점과 유사하지만, 중단점과 달리 snap
    ::: moniker-end
    ::: moniker range=">=vs-2019"
    > [!NOTE]
-    > (Visual Studio 2019 버전 16.2 이상) 스냅샷 디버거에서 Azure 클라우드 지원을 사용하도록 설정했습니다. 선택한 Azure 리소스 및 Azure Storage 계정이 모두 동일한 클라우드에서 사용되는지 확인합니다. 기업의 [Azure 규정 준수](https://azure.microsoft.com/overview/trusted-cloud/) 구성에 대해 궁금한 사항이 있으면 Azure 관리자에게 문의하세요.
+   > (Visual Studio 2019 버전 16.2 이상) 스냅샷 디버거에서 Azure 클라우드 지원을 사용하도록 설정했습니다. 선택한 Azure 리소스 및 Azure Storage 계정이 모두 동일한 클라우드에서 사용되는지 확인합니다. 기업의 [Azure 규정 준수](https://azure.microsoft.com/overview/trusted-cloud/) 구성에 대해 궁금한 사항이 있으면 Azure 관리자에게 문의하세요.
    ::: moniker-end
 
    Visual Studio가 이제 스냅샷 디버깅 모드입니다.

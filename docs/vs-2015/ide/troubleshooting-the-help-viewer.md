@@ -1,5 +1,5 @@
 ---
-title: 도움말 뷰어 문제 해결 | Microsoft Docs
+title: Troubleshooting the Help Viewer | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-help-viewer
@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 490525cded11a4cddbbfb3f650d87c55b2fa196b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 01049d5ecf8710cd680278dbf95dbe70767cd5bf
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654765"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299897"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>도움말 뷰어 문제 해결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +45,9 @@ ms.locfileid: "72654765"
 ## <a name="additional-resources"></a>추가 리소스
  다음 리소스를 사용하여 도움말 뷰어에 대한 추가 정보를 얻고 피드백을 제공할 수 있습니다.
 
-- 피드백을 제공 하려면 Microsoft 웹 사이트에서 [Microsoft Connect](http://go.microsoft.com/fwlink/?linkid=243983)를 참조하거나 [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com)으로 이메일을 보내십시오.
+- 피드백을 제공 하려면 Microsoft 웹 사이트에서 [Microsoft Connect](https://go.microsoft.com/fwlink/?linkid=243983)를 참조하거나 [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com)으로 이메일을 보내십시오.
 
-- 자세한 내용은 [개발자 설명서 및 도움말 시스템](http://go.microsoft.com/fwlink/?LinkId=232741) 포럼 및 [도움말 전문가](http://go.microsoft.com/fwlink/?LinkId=232743) 블로그를 참조 하세요.
+- For more information, see the [Developer Documentation and Help System](https://go.microsoft.com/fwlink/?LinkId=232741) forum and [The Help Guy](https://go.microsoft.com/fwlink/?LinkId=232743) blog.
 
 ## <a name="see-also"></a>관련 항목:
- [도움말 뷰어 2.1 관리자 가이드](http://go.microsoft.com/fwlink/?LinkId=243985)
+ [도움말 뷰어 2.1 관리자 가이드](https://go.microsoft.com/fwlink/?LinkId=243985)

@@ -11,24 +11,24 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 227d4ba765dbea3be5306f05995cc29d075e6a66
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 695cbeaba5a108c61b5e81078a9651c0df9237f5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434142"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299807"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-플랫폼 간 모바일 개발용 Visual C++를 사용하여 iOS 코드를 편집 및 디버깅하고 iOS 시뮬레이터 또는 iOS 디바이스에 배포할 수 있지만 라이선스 제한으로 인해 Mac에서 코드를 빌드하고 원격으로 실행해야 합니다. Visual Studio를 사용하여 iOS 앱을 빌드 및 실행하려면 Mac에서 원격 에이전트 [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988)를 설정 및 구성해야 합니다. 원격 에이전트는 Visual Studio의 빌드 요청을 처리하고 Mac에 연결된 iOS 디바이스 또는 Mac의 iOS 시뮬레이터에서 앱을 실행합니다.  
+플랫폼 간 모바일 개발용 Visual C++를 사용하여 iOS 코드를 편집 및 디버깅하고 iOS 시뮬레이터 또는 iOS 디바이스에 배포할 수 있지만 라이선스 제한으로 인해 Mac에서 코드를 빌드하고 원격으로 실행해야 합니다. Visual Studio를 사용하여 iOS 앱을 빌드 및 실행하려면 Mac에서 원격 에이전트 [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)를 설정 및 구성해야 합니다. 원격 에이전트는 Visual Studio의 빌드 요청을 처리하고 Mac에 연결된 iOS 디바이스 또는 Mac의 iOS 시뮬레이터에서 앱을 실행합니다.  
   
 > [!NOTE]
 > Mac이 아닌 클라우드에서 호스트되는 Mac 서비스를 사용하는 방법에 대한 자세한 내용은 [Build and Simulate iOS in the Cloud](https://taco.visualstudio.com/docs/build_ios_cloud/)를 참조하세요. 지침은 Visual Studio Tools for Apache Cordova를 사용한 빌드에 해당합니다. 플랫폼 간 모바일 개발용 Visual C++를 사용한 빌드 지침을 사용하려면 vs-mda-remote를 vcremote로 대체합니다.  
   
  iOS를 사용하여 빌드하는 도구를 설치한 경우 Visual Studio 및 Mac에서 iOS 개발용 원격 에이전트를 신속하게 구성 및 업데이트하는 방법은 이 항목을 참조하세요.  
   
- [필수 조건](#Prerequisites)  
+ [전제 조건](#Prerequisites)  
   
  [iOS용 원격 에이전트 설치](#Install)  
   
@@ -42,12 +42,12 @@ ms.locfileid: "63434142"
   
  [Configure the remote agent on the Mac](#ConfigureMac)  
   
-## <a name="Prerequisites"></a> 필수 조건  
+## <a name="Prerequisites"></a> 필수 구성 요소  
  원격 에이전트를 설치 및 사용하여 iOS용 코드를 개발하려면 다음 필수 조건이 있어야 합니다.  
   
 - OS X Mavericks 이상을 실행하는 Mac 컴퓨터  
   
--  [Apple ID](https://appleid.apple.com/)  
+- [Apple ID](https://appleid.apple.com/)  
   
 - Apple의 활성 [iOS 개발자 프로그램](https://developer.apple.com/programs/ios/) 계정  
   
@@ -69,7 +69,7 @@ ms.locfileid: "63434142"
   
      프로비저닝 프로필을 만드는 방법에 대한 자세한 내용은 iOS 개발자 라이브러리에서 [회원 센터를 사용하여 프로비저닝 프로필 만들기](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW24) 를 참조하세요.  
   
-- [Node.js](http://nodejs.org/)  
+- [Node.js](https://nodejs.org/en/)  
   
 - npm의 업데이트된 버전  
   
@@ -78,7 +78,7 @@ ms.locfileid: "63434142"
      `sudo npm install -g npm@latest`  
   
 ## <a name="Install"></a> iOS용 원격 에이전트 설치  
- 플랫폼 간 모바일 개발용 Visual C++를 설치하는 경우 Visual Studio는 Mac에서 실행되는 원격 에이전트인 [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988)와 통신하여 파일을 전송하고, iOS 앱을 빌드 및 실행하고, 디버깅 명령을 보낼 수 있습니다.  
+ 플랫폼 간 모바일 개발용 Visual C++를 설치하는 경우 Visual Studio는 Mac에서 실행되는 원격 에이전트인 [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)와 통신하여 파일을 전송하고, iOS 앱을 빌드 및 실행하고, 디버깅 명령을 보낼 수 있습니다.  
   
  원격 에이전트를 설치하기 전에 [필수 조건](#Prerequisites) 을 충족하고 [플랫폼 간 모바일 개발용 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#InstallTheTools)를 설치했는지 확인합니다.  
   
@@ -88,9 +88,9 @@ ms.locfileid: "63434142"
   
    `sudo npm install -g --unsafe-perm vcremote`  
   
-   전역 설치(**-g**) 스위치는 사용하는 것이 좋지만 반드시 사용할 필요는 없습니다.  
+   전역 설치( **-g**) 스위치는 사용하는 것이 좋지만 반드시 사용할 필요는 없습니다.  
   
-   설치하는 동안 vcremote가 설치되고 Mac에서 개발자 모드가 활성화됩니다. [Homebrew](http://brew.sh/) 및 vcremote-lib 및 vcremote-utils의 두 npm 패키지도 설치됩니다.  
+   설치하는 동안 vcremote가 설치되고 Mac에서 개발자 모드가 활성화됩니다. [Homebrew](https://brew.sh/) 및 vcremote-lib 및 vcremote-utils의 두 npm 패키지도 설치됩니다.  
   
   > [!NOTE]
   > Homebrew를 설치하려면 sudo(관리자) 액세스 권한이 있어야 합니다. sudo 액세스 권한 없이 vcremote를 설치해야 하는 경우 usr/local 위치에 Homebrew를 수동으로 설치하고 해당 bin 폴더를 사용자의 경로에 추가하면 됩니다. 자세한 내용은 [Homebrew 설명서](https://github.com/Homebrew/homebrew/wiki/Installation)를 참조하세요. 개발자 모드를 수동으로 사용하도록 설정하려면 터미널 앱에서 다음 명령을 입력합니다. `DevToolsSecurity –enable`  
@@ -149,7 +149,7 @@ ms.locfileid: "63434142"
   
 3. Visual Studio 메뉴 모음에서 **도구**, **옵션**을 차례로 선택합니다.  
   
-4. **옵션** 대화 상자에서 **플랫폼 간**, **C++**, **iOS**를 확장합니다.  
+4. **옵션** 대화 상자에서 **플랫폼 간**, **C++** , **iOS**를 확장합니다.  
   
 5. **호스트 이름** 및 **포트** 필드에서 시작할 때 원격 에이전트에 의해 지정된 값을 입력합니다. 호스트 이름은 Mac의 DNS 이름 또는 IP 주소일 수 있습니다. 기본 포트는 3030입니다.  
   
@@ -158,7 +158,7 @@ ms.locfileid: "63434142"
   
 6. 기본 보안된 연결 모드에서 원격 에이전트를 사용하는 경우 **보안** 확인란을 선택한 다음 **Pin** 필드에 원격 에이전트에 의해 지정된 PIN 값을 입력합니다. 보안되지 않은 연결 모드에서 원격 에이전트를 사용하는 경우 **보안** 확인란을 선택 취소하고 **Pin** 필드를 비워 둡니다.  
   
-7. **연결**을 선택하여 연결을 사용하도록 설정합니다.  
+7. **쌍** 을 선택하여 연결을 사용할 수 있도록 합니다.  
   
     ![iOS 빌드에 대한 vcremote 연결 구성](../cross-platform/media/cppmdd-options-ios.PNG "CPPMDD_Options_iOS")  
   
@@ -239,5 +239,5 @@ ms.locfileid: "63434142"
   
      여기서 *config_file_path* 는 JSON 형식의 구성 파일 경로입니다. 시작 옵션과 해당 값에 대시가 포함되어서는 안 됩니다.  
   
-## <a name="see-also"></a>참고 항목  
- [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+## <a name="see-also"></a>관련 항목:  
+ [플랫폼 간 모바일 개발용 Visual C++ 설치](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

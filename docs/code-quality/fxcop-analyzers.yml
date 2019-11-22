@@ -1,50 +1,50 @@
 ### YamlMime:Landing
-title: 레거시 분석 (FxCop)에서 원본 분석 (FxCop 분석기)으로 마이그레이션
-summary: 처음으로 코드를 분석 하거나, FxCop (이진 분석)에서 소스 분석 (FxCop 분석기)을 사용 하 여 관리 코드를 분석 하는 새로운 방법으로 마이그레이션하는 방법에 대해 알아봅니다.
+title: Migrate from legacy analysis (FxCop) to source analysis (FxCop analyzers)
+summary: Learn how to analyze code for the first time or how to migrate from binary analysis (FxCop) to the new way of analyzing managed code using source analysis (FxCop analyzers).
 metadata:
-  title: FxCop 마이그레이션 설명서
-  description: 코드를 분석할 때 FxCop (레거시 이진 분석)에서 소스 분석 (FxCop 분석기)으로 이동 하는 방법에 대해 알아봅니다.
+  title: FxCop migration documentation
+  description: Learn how to move from legacy binary analysis (FxCop) to source analysis (FxCop analyzers) when you analyze code.
   ms.prod: visual-studio-dev16
   ms.technology: vs-ide-code-analysis
   ms.topic: landing-page
   f1_keywords:
   - vs.projectpropertypages.codeanalysis
-  author: gewarren
-  ms.author: gewarren
+  author: jillre
+  ms.author: jillfra
   manager: jillfra
   ms.date: 09/24/2019
-  ms.openlocfilehash: 0b86e42acaab7cf50443cc404eb81c257c9e352e
-  ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+  ms.openlocfilehash: 5ee1fc570d60dd5ff6a8aaabb4d2443cd878bbac
+  ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
   ms.translationtype: MT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 10/17/2019
-  ms.locfileid: "72535884"
+  ms.lasthandoff: 11/22/2019
+  ms.locfileid: "74316384"
 landingContent:
-- title: 코드 분석 소개
+- title: Introduction to code analysis
   linkLists:
   - linkListType: overview
     links:
-    - text: 코드 분석기 개요
+    - text: Overview of code analyzers
       url: roslyn-analyzers-overview.md
   - linkListType: download
     links:
-    - text: 코드 분석기 설치
+    - text: Install code analyzers
       url: install-roslyn-analyzers.md
   - linkListType: how-to-guide
     links:
-    - text: 규칙 심각도 설정 및 오류 표시 안 함
+    - text: Set rule severity and suppress errors
       url: use-roslyn-analyzers.md
-    - text: 명령줄 사용
+    - text: Command-line usage
       url: use-roslyn-analyzers.md#command-line-usage
-- title: 레거시 분석 마이그레이션 해제
+- title: Migrate off legacy analysis
   linkLists:
   - linkListType: overview
     links:
-    - text: 다른 기능
+    - text: What's different
       url: roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis
   - linkListType: get-started
     links:
-    - text: FxCop 분석기에 대 한 FAQ
+    - text: FAQ about FxCop analyzers
       url: fxcop-analyzers-faq.md
   - linkListType: download
     links:
@@ -52,15 +52,15 @@ landingContent:
       url: install-fxcop-analyzers.md
   - linkListType: how-to-guide
     links:
-    - text: FxCop 분석기 구성
+    - text: Configure FxCop analyzers
       url: configure-fxcop-analyzers.md
-    - text: 미리 정의 된 규칙 집합 사용
+    - text: Use predefined rule sets
       url: analyzer-rule-sets.md
   - linkListType: reference
     links:
-    - text: 이식 및 이식 되지 않은 규칙
+    - text: Ported and unported rules
       url: fxcop-rule-port-status.md
-- title: 기타 코드 분석 형식
+- title: Other types of code analysis
   linkLists:
   - linkListType: overview
     links:

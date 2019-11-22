@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 6e1b34cbc2497bd70f65021c83db4f59480519f1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad085cc6c41714a551fbb344274e6d0f164ab67e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62573208"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297660"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>문제 해결 및 알려진 문제(Visual Studio Tools for Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,12 +36,12 @@ ms.locfileid: "62573208"
 3. 새 솔루션 및 프로젝트 파일을 생성합니다. 지금 생성하려면 Unity 편집기의 주 메뉴에서 **Visual Studio Tools**, **프로젝트 파일 생성**을 선택합니다. 그렇지 않으면 원하는 경우 이 단계를 건너뛸 수 있습니다. **Visual Studio Tools**, **Visual Studio에서 열기**를 선택하면 Visual Studio Tools for Unity에서 새 파일을 자동으로 생성합니다.  
   
 ### <a name="visual-studio-wont-load-the-solution-that-visual-studio-tools-for-unity-created"></a>Visual Studio는 Visual Studio Tools for Unity에서 만든 솔루션을 로드하지 않습니다.  
- 자세한 내용은 [the answer to this stackoverflow question(이 stackoverflow 질문의 답변)](http://stackoverflow.com/a/24035907/36702)을 참조하세요.  
+ 자세한 내용은 [the answer to this stackoverflow question(이 stackoverflow 질문의 답변)](https://stackoverflow.com/questions/20086755/unityvs-visual-studio-can-not-open/24035907#24035907)을 참조하세요.  
   
 ### <a name="on-windows-8-visual-studio-asks-to-download-the-unity-target-framework"></a>Windows 8에서 Visual Studio는 Unity 대상 프레임워크 다운로드를  요청합니다.  
  UnityVS를 사용하려면 Windows 8에 기본적으로 설치되지 않는 .net framework 3.5가 필요합니다. 이 문제를 해결하려면 지침에 따라 .net framework 3.5를 다운로드하고 설치하세요.  
   
-## <a name="known-issues"></a>알려진 문제  
+## <a name="known-issues"></a>알려진 문제점  
  Visual Studio Tools for Unity에는 디버거가 C# 컴파일러의 Unity 이전 버전과 상호작용하는 방법에서 발생하는 알려진 문제가 있습니다. 문제를 해결하기 위해 노력 중이지만 해결하기 전까지는 다음과 같은 문제가 발생할 수 있습니다.  
   
 - 디버그할 때 Unity가 충돌되는 경우가 있습니다.  

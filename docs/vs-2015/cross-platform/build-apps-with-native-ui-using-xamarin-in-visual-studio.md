@@ -1,5 +1,5 @@
 ---
-title: Xamarin을 사용 하 여 네이티브 UI로 앱 빌드
+title: Build apps with native UI using Xamarin
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: tgt-pltfrm-cross-plat
@@ -8,19 +8,19 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 90517c46d8fa92d58e73e976f593a1bcfbfac9b1
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 7a0284ab6b8d2e89e1c0129c2bc98fb486918f90
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263565"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297915"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Visual Studio에서 Xamarin을 사용하여 네이티브 UI로 앱 빌드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [설정 및 설치](../cross-platform/setup-and-install.md) 및 [Xamarin 환경 확인](../cross-platform/verify-your-xamarin-environment.md)의 단계를 완료했으면 이 연습 과정을 통해 네이티브 UI 레이어로 기본 Xamarin 앱을 빌드하는 방법을 확인합니다(아래 참조). 네이티브 UI에서는 공유 코드가 PCL(이식 가능한 클래스 라이브러리)에 상주하며 개별 플랫폼 프로젝트가 UI 정의를 포함합니다.
 
- ![Android 및 Windows Phone의 Xamarin 앱](../cross-platform/media/cross-plat-xamarin-build-1.png "Cross-Plat Xamarin Build 1")
+ ![Xamarin app on Android and Windows Phone](../cross-platform/media/cross-plat-xamarin-build-1.png "Cross-Plat Xamarin Build 1")
 
  앱을 빌드하려면 다음 작업을 수행합니다.
 
@@ -37,7 +37,7 @@ ms.locfileid: "66263565"
 > [!TIP]
 > [GitHub의 mobile-samples 리포지토리](https://github.com/xamarin/mobile-samples/tree/master/Weather)에서 이 프로젝트에 대한 전체 소스 코드를 찾을 수 있습니다.
 >
-> 어려움이 있거나 오류가 발생하면 [forums.xamarin.com](http://forums.xamarin.com)에 질문을 게시하세요. Xamarin에 필요한 최신 SDK로 업데이트하면 많은 오류를 해결할 수 있습니다. 자세한 내용은 각 플랫폼에 대한 [Xamarin 릴리스 정보](https://developer.xamarin.com/)에 설명되어 있습니다.
+> 어려움이 있거나 오류가 발생하면 [forums.xamarin.com](https://forums.xamarin.com/)에 질문을 게시하세요. Xamarin에 필요한 최신 SDK로 업데이트하면 많은 오류를 해결할 수 있습니다. 자세한 내용은 각 플랫폼에 대한 [Xamarin 릴리스 정보](https://developer.xamarin.com/)에 설명되어 있습니다.
 >
 > [!NOTE]
 > Xamarin 개발자 설명서에서는 아래와 같이 빠른 시작 및 심층 분석 섹션이 둘 다 포함된 여러 가지 연습도 제공합니다. 이러한 모든 페이지에서 Visual Studio 관련 연습을 보려면 페이지 오른쪽 위에서 "Visual Studio"를 선택해야 합니다.
@@ -46,7 +46,7 @@ ms.locfileid: "66263565"
 >
 >   - [Hello, Android](https://developer.xamarin.com/guides/android/getting_started/hello,android/) (단일 화면을 사용한 간단한 앱)
 >   - [Hello, Android 멀티스크린](https://developer.xamarin.com/guides/android/getting_started/hello,android_multiscreen/) (화면 간 탐색을 사용한 앱)
->   - [Android 조각 연습](http://developer.xamarin.com/guides/android/platform_features/fragments/fragments_walkthrough/) (마스터/세부 정보 화면에 사용됨)
+>   - [Android 조각 연습](https://docs.microsoft.com/xamarin/android/platform/fragments/implementing-with-fragments/) (마스터/세부 정보 화면에 사용됨)
 >   - [Hello, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
 >   - [Hello, iOS 멀티스크린](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS_multiscreen/)
 >   - Xamarin.Forms를 사용한 Xamarin 앱(공유 UI)
@@ -87,7 +87,7 @@ ms.locfileid: "66263565"
 
    - **설치**를 클릭합니다.
 
-   - ![Newtonsoft.Json NuGet 패키지 찾기 및 설치](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")
+   - ![Locating and installing the Newtonsoft.Json NuGet package](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")
 
 4. 3단계를 반복하여 **Microsoft.Net.Http** 패키지를 찾아서 설치합니다.
 
@@ -98,7 +98,7 @@ ms.locfileid: "66263565"
 
  다음 단계에서는 날씨 서비스의 데이터를 액세스하고 저장하기 위한 코드를 PCL에 추가합니다.
 
-1. 이 샘플을 실행하려면 무료 API 키를 위해 [http://openweathermap.org/appid](http://openweathermap.org/appid)에 먼저 등록해야 합니다.
+1. 이 샘플을 실행하려면 무료 API 키를 위해 [http://openweathermap.org/appid](https://openweathermap.org/appid)에 먼저 등록해야 합니다.
 
 2. **WeatherApp** 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가 > 클래스...** 를 선택합니다. **새 항목 추가** 대화 상자에서 파일 이름을 **Weather.cs**로 지정합니다. 이 클래스는 날씨 데이터 서비스의 데이터를 저장하는 데 사용합니다.
 
@@ -227,10 +227,10 @@ ms.locfileid: "66263565"
 
 ### <a name="design-the-look-and-feel-of-your-app"></a>앱의 모양과 느낌 디자인
 
-1. **솔루션 탐색기**에서 **WeatherApp.Droid**>**Resources**>**layout** 폴더를 확장하고 **Main.axml**을 엽니다. 비주얼 디자이너에서 파일이 열립니다. Java 관련 오류가 나타나는 경우 이 [블로그 게시물](http://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9)을 참조하세요.
+1. **솔루션 탐색기**에서 **WeatherApp.Droid**>**Resources**>**layout** 폴더를 확장하고 **Main.axml**을 엽니다. 비주얼 디자이너에서 파일이 열립니다. Java 관련 오류가 나타나는 경우 이 [블로그 게시물](https://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9)을 참조하세요.
 
     > [!TIP]
-    > 프로젝트에는 다른 많은 파일이 있습니다. 이 항목에서는 이러한 파일에 대해 자세히 다루지 않지만 Android 프로젝트의 구조를 좀 더 자세히 알아보려면 xamarin.com의 Hello Android 항목에서 [Part 2 Deep Dive(2부 자세히 알아보기)](http://developer.xamarin.com/guides/android/getting_started/hello,android/hello,android_deepdive/)를 참조하세요.
+    > 프로젝트에는 다른 많은 파일이 있습니다. 이 항목에서는 이러한 파일에 대해 자세히 다루지 않지만 Android 프로젝트의 구조를 좀 더 자세히 알아보려면 xamarin.com의 Hello Android 항목에서 [Part 2 Deep Dive(2부 자세히 알아보기)](https://docs.microsoft.com/xamarin/android/get-started/hello-android/hello-android-deepdive?pivots=windows)를 참조하세요.
 
 2. 디자이너에 표시되는 기본 단추를 선택하여 삭제합니다.
 
@@ -249,16 +249,16 @@ ms.locfileid: "66263565"
 
     |속성|값|
     |--------------|-----------|
-    |**text**|**우편 번호로 검색**|
+    |**텍스트**|**우편 번호로 검색**|
     |**ID**|`@+id/ZipCodeSearchLabel`|
     |**layout_marginLeft**|`10dp`|
     |**textColor**|`@android:color/white`|
     |**textStyle**|`bold`|
 
     > [!TIP]
-    > 대부분의 속성은 선택 가능한 값이 포함된 드롭다운 목록이 없습니다.  따라서 특정 속성에 어떤 문자열 값을 사용해야 할지 추측하기가 어려울 수 있습니다. 제안 사항을 보려면 [R.attr](http://developer.android.com/reference/android/R.attr.html) 클래스 페이지에서 속성 이름을 검색해 보세요.
+    > 대부분의 속성은 선택 가능한 값이 포함된 드롭다운 목록이 없습니다.  따라서 특정 속성에 어떤 문자열 값을 사용해야 할지 추측하기가 어려울 수 있습니다. 제안 사항을 보려면 [R.attr](https://developer.android.com/reference/android/R.attr.html) 클래스 페이지에서 속성 이름을 검색해 보세요.
     >
-    >  또한 빠른 웹 검색을 수행하면 [http://stackoverflow.com/](http://stackoverflow.com/) 에서 다른 사용자가 동일한 속성을 사용한 페이지를 종종 찾을 수 있습니다.
+    >  또한 빠른 웹 검색을 수행하면 [http://stackoverflow.com/](https://stackoverflow.com/) 에서 다른 사용자가 동일한 속성을 사용한 페이지를 종종 찾을 수 있습니다.
 
      참조용으로, **소스** 보기로 전환하면 이 요소에 대해 다음 코드가 표시됩니다.
 
@@ -450,7 +450,7 @@ ms.locfileid: "66263565"
 
 13. 파일을 저장하고 **디자인** 보기로 전환합니다. UI가 다음과 같아야 합니다.
 
-     ![Android 앱용 UI](../cross-platform/media/xamarin-androidui.png "Xamarin_AndroidUI")
+     ![UI for Android app](../cross-platform/media/xamarin-androidui.png "Xamarin_AndroidUI")
 
 14. **MainActivity.cs**를 열고 *OnCreate* 메서드에서 앞서 제거된 기본 단추를 참조하는 줄을 삭제합니다. 완료했을 때 코드는 다음과 같습니다.
 
@@ -518,9 +518,9 @@ ms.locfileid: "66263565"
 
 2. 적절한 디바이스 또는 에뮬레이터 대상을 선택한 다음 F5 키를 눌러 앱을 시작합니다.
 
-3. 장치 또는 에뮬레이터에서 편집 상자에 유효한 미국 우편 번호 입력 (예: 60601)를 누르고 **날씨**합니다. 그러면 해당 지역의 날씨 데이터가 컨트롤에 표시됩니다.
+3. 디바이스 또는 에뮬레이터에서 편집 상자에 유효한 미국 우편 번호(예: 60601)를 입력하고 **Get Weather**를 누릅니다. 그러면 해당 지역의 날씨 데이터가 컨트롤에 표시됩니다.
 
-     ![Android 및 Windows Phone용 날씨 앱](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
+     ![Weather app for Android and Windows Phone](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
 
 > [!TIP]
 > 이 프로젝트에 대한 전체 소스 코드는 [GitHub의 xamarin-forms-samples 리포지토리](https://github.com/xamarin/mobile-samples/tree/master/Weather)에 있습니다.
@@ -579,13 +579,13 @@ ms.locfileid: "66263565"
 
  디자인 보기에서 UI가 다음과 같아야 합니다.
 
- ![Windows Phone 앱 UI](../cross-platform/media/xamarin-winphone-finalui.png "Xamarin_WinPhone_FinalUI")
+ ![Windows Phone app UI](../cross-platform/media/xamarin-winphone-finalui.png "Xamarin_WinPhone_FinalUI")
 
 ### <a name="consume-your-shared-code"></a>공유 코드 사용
 
 1. 디자이너에서 **날씨 검색** 단추를 선택합니다.
 
-2. **속성** 창에서 이벤트 처리기 단추(![Visual Studio 이벤트 처리기 아이콘](../cross-platform/media/blend-vs-eventhandlers-icon.png "blend_VS_EventHandlers_icon"))를 선택합니다.
+2. In the **Properties** window, choose the event handler button (![Visual Studio Event Handlers icon](../cross-platform/media/blend-vs-eventhandlers-icon.png "blend_VS_EventHandlers_icon")).
 
      이 아이콘은 **속성** 창의 위 모퉁이에 표시됩니다.
 
@@ -624,9 +624,9 @@ ms.locfileid: "66263565"
 
 2. F5 키를 눌러 앱을 시작합니다.
 
-3. Windows Phone 에뮬레이터에서 편집 상자에 유효한 미국 우편 번호 입력 (예: 60601)를 누르고 **날씨**합니다. 그러면 해당 지역의 날씨 데이터가 컨트롤에 표시됩니다.
+3. Windows Phone 에뮬레이터에서 편집 상자에 유효한 미국 우편 번호(예: 60601)를 입력한 다음 **Get Weather**를 누릅니다. 그러면 해당 지역의 날씨 데이터가 컨트롤에 표시됩니다.
 
-     ![실행 중인 앱의 Windows 버전](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
+     ![Windows version of the running app](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
 
 > [!TIP]
 > 이 프로젝트에 대한 전체 소스 코드는 [GitHub의 xamarin-forms-samples 리포지토리](https://github.com/xamarin/mobile-samples/tree/master/Weather)에 있습니다.
@@ -636,11 +636,11 @@ ms.locfileid: "66263565"
 
  iOS용 네이티브 UI를 추가하여 이 샘플을 확장합니다. 이렇게 하려면, 로컬 네트워크에 있으며 Xcode 및 Xamarin이 설치된 Mac에 연결해야 합니다. 완료했으면 Visual Studio에서 직접 iOS 디자이너를 사용할 수 있습니다. 완성된 앱은 [GitHub의 모바일 샘플 리포지토리](https://github.com/xamarin/mobile-samples/tree/master/Weather)를 참조하세요.
 
- 또한 [Hello, iOS](http://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/hello,iOS_quickstart/)(xamarin.com) 연습을 참조하세요. 이 페이지에서 올바른 명령 집합이 표시되도록 xamarin.com의 페이지 오른쪽 위 모서리에서 "Visual Studio"가 선택되어 있는지 확인합니다.
+ 또한 [Hello, iOS](https://docs.microsoft.com/xamarin/ios/get-started/hello-ios/hello-ios-quickstart?pivots=windows)(xamarin.com) 연습을 참조하세요. 이 페이지에서 올바른 명령 집합이 표시되도록 xamarin.com의 페이지 오른쪽 위 모서리에서 "Visual Studio"가 선택되어 있는지 확인합니다.
 
  **공유 프로젝트에 플랫폼별 코드 추가**
 
- PCL의 공유 코드는 플랫폼 중립적입니다. PCL은 한 번 컴파일되어 각 플랫폼별 앱 패키지에 포함되기 때문입니다. 플랫폼별 코드를 격리하는 조건부 컴파일을 사용하는 공유 코드를 작성하려면 *공유* 프로젝트를 사용할 수 있습니다. 자세한 내용은 [ode Sharing Options](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/)(xamarin.com)를 참조하세요.
+ PCL의 공유 코드는 플랫폼 중립적입니다. PCL은 한 번 컴파일되어 각 플랫폼별 앱 패키지에 포함되기 때문입니다. 플랫폼별 코드를 격리하는 조건부 컴파일을 사용하는 공유 코드를 작성하려면 *공유* 프로젝트를 사용할 수 있습니다. 자세한 내용은 [ode Sharing Options](https://docs.microsoft.com/xamarin/cross-platform/app-fundamentals/code-sharing)(xamarin.com)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
- [Xamarin 개발자 사이트](http://developer.xamarin.com/) [Windows 개발자 센터](https://dev.windows.com/en-us) [Swift 및 C# 빠른 참조 포스터](https://aka.ms/scposter)
+## <a name="see-also"></a>관련 항목:
+ [Xamarin Developer site](https://docs.microsoft.com/xamarin/) [Windows Dev Center](https://dev.windows.com/en-us) [Swift and C# Quick Reference Poster](https://aka.ms/scposter)

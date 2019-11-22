@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d85b71c2ed54a8ab8bc85c93ce61e3ed274d86e0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: eed389a3847145a0f37eb3141526a38e4374d368
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65673817"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297905"
 ---
 # <a name="network-usage"></a>네트워크 사용량
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,14 +24,14 @@ Visual Studio **네트워크** 진단 도구는 [Windows.Web.Http API](https://m
  네트워크 도구는 Windows 유니버설 플랫폼 앱만 지원합니다. 지금은 다른 플랫폼이 지원되지 않습니다.  
   
 > [!NOTE]
-> 네트워크 도구에 대한 자세한 설명은 [Visual Studio 네트워크 도구 소개](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studio-s-network-tool.aspx)를 참조하세요.  
+> 네트워크 도구에 대한 자세한 설명은 [Visual Studio 네트워크 도구 소개](https://devblogs.microsoft.com/visualstudio/?m=20155)를 참조하세요.  
   
 ## <a name="collecting-network-tool-data"></a>네트워크 도구 데이터 수집  
  Visual Studio가 설치된 컴퓨터에 열려 있는 Visual Studio 프로젝트로 **네트워크** 도구를 실행해야 합니다.  
   
 1. Visual Studio에서 프로젝트를 엽니다.  
   
-2. 메뉴에서 **디버그/성능 프로파일러...** 를 클릭합니다. **네트워크**를 선택한 다음 **시작**을 선택합니다.  
+2. On the  menu, click **Debug / Performance Profiler...** . Choose **Network**, and then choose **Start**.  
   
 3. 네트워크 도구에서 앱의 HTTP 트래픽 수집을 시작합니다.  
   
@@ -73,7 +73,7 @@ Visual Studio **네트워크** 진단 도구는 [Windows.Web.Http API](https://m
   
 3. 예쁜 응답 인쇄 단추(본문 탭 내부)를 사용하면 콘텐츠 가독성을 높여 JSON, XML, HTML, CSS, JavaScript 및 TypeScript 응답 페이로드를 통해 구문 분석하는 데 도움이 될 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
- [디버깅 하지 않고 프로 파일링 도구 실행](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
- [Visual Studio 블로그: Visual Studio의 네트워크 검사기 소개](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [Channel 9 비디오: VS 진단 도구 – 새 네트워크 Profiler](http://channel9.msdn.com/Series/ConnectOn-Demand/206)
+## <a name="see-also"></a>관련 항목:  
+ [Run profiling tools without debugging](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
+ [Visual Studio 블로그: Visual Studio의 네트워크 검사기 소개](https://go.microsoft.com/fwlink/?LinkId=535022)   
+ [Channel 9 비디오: VS 진단 도구 – 새 네트워크 프로파일러](https://channel9.msdn.com/Series/ConnectOn-Demand/206)

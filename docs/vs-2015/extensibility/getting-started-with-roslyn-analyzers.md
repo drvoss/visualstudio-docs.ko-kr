@@ -1,5 +1,5 @@
 ---
-title: Roslyn 분석기 시작 | Microsoft Docs
+title: Getting Started with Roslyn Analyzers | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -8,32 +8,32 @@ ms.assetid: 367c2ec8-3059-46a5-9d1c-57bead0419e7
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 104e3a30589f5892c1440266afd7917486d704ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d45491fe031c01a31812f5ed4944f76d059cd60
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546650"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300021"
 ---
 # <a name="getting-started-with-roslyn-analyzers"></a>Roslyn 분석기 시작
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio에서 프로젝트 기반 라이브 코드 분석기를 사용 하 여 API 작성자는 NuGet 패키지의 일부로 도메인 관련 코드 분석을 제공할 수 있습니다.  이러한 분석기는.NET 컴파일러 플랫폼 (코드 이름된 "Roslyn")에서 구동 되, 때문에 (빌드 문제를 검색 하는 코드를 더 이상 대기) 줄을 마친 전이라를 입력할 때 코드에서 경고를 생성할 수 있으므로 합니다.  분석기 수 있도록 코드 정리 즉시 Visual Studio 전구 프롬프트를 통해 자동 코드 픽스를 화면도 수 있습니다.
+With live, project-based code analyzers in Visual Studio, API authors can ship domain-specific code analysis as part of their NuGet packages.  Because these analyzers are powered by the .NET Compiler Platform (code-named “Roslyn”), they can produce warnings in your code as you type even before you’ve finished the line (no more waiting to build your code to discover issues).  Analyzers can also surface an automatic code fix through the Visual Studio light bulb prompt to let you clean up your code immediately
 
 ## <a name="getting-started"></a>시작
-[Roslyn 라이브 코드 분석기 소개와 연습은](https://msdn.microsoft.com/magazine/dn879356.aspx)
+[Roslyn Live Code Analyzers Introduction and Walkthrough](https://msdn.microsoft.com/magazine/dn879356.aspx)
 
-[연습을 해결 코드를 추가 합니다. 분석기 문제에 대 한 사용자 수정 사항 제공](https://msdn.microsoft.com/magazine/dn904670.aspx)
+[Adding Code Fixes Walkthrough: Provide Users Fixes for Analyzer Issues](https://msdn.microsoft.com/magazine/dn904670.aspx)
 
-[소개 및 실제 분석기 대해서는 연습](http://channel9.msdn.com/events/Build/2015/3-725)
+[Introduction and Walkthrough of Real World Analyzer Talk](https://channel9.msdn.com/events/Build/2015/3-725)
 
-[실제 세계 Roslyn 분석기](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md) 로 볼 수 있도록는 [통신](http://channel9.msdn.com/events/Build/2015/3-725)
+[Real World Roslyn Analyzer](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md) that you can also watch as a [talk](https://channel9.msdn.com/events/Build/2015/3-725)
 
-[세 가지 유형의 분석기를 그룹화 하는 GitHub에서 몇 가지 예제](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
+[Several examples on GitHub, grouped into three kinds of analyzers](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 
-[소개과 몇 가지 분석기 둘러보기](http://channel9.msdn.com/Events/dotnetConf/2015/NET-Compiler-Platform-Roslyn-Analyzers-and-the-Rise-of-Code-Aware-Libraries)
+[Introduction and Tour of a Few Analyzers Talk](https://channel9.msdn.com/Events/dotnetConf/2015/NET-Compiler-Platform-Roslyn-Analyzers-and-the-Rise-of-Code-Aware-Libraries)
 
 ## <a name="other-resources"></a>기타 리소스
-[GitHub OSS 사이트에서 더 많은 문서](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
+[More docs on the GitHub OSS site](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
 
-[GitHub의 Roslyn 분석기를 사용 하 여 구현 하는 FxCop 규칙](https://github.com/dotnet/roslyn/tree/master/src/Diagnostics/FxCop)
+[FxCop rules implemented with Roslyn analyzers on GitHub](https://github.com/dotnet/roslyn/tree/master/src/Diagnostics/FxCop)

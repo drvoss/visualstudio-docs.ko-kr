@@ -8,12 +8,12 @@ ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: 19
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a230b55149152ba1d195f487951323eda855b8b2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9f2e62766f919c9f3379d59c4528a32739ef73ac
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657148"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301396"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>스텁을 사용하여 유닛 테스트를 위한 애플리케이션의 여러 부분을 서로 격리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,18 +26,18 @@ ms.locfileid: "72657148"
 
  다이어그램에서 StockAnalyzer 구성 요소가 테스트하려는 대상입니다. 이 구성 요소는 일반적으로 다른 구성 요소인 RealStockFeed를 사용합니다. 하지만 RealStockFeed는 해당 메서드가 호출될 때마다 다른 결과를 반환하기 때문에 StockAnalyzer를 테스트하기가 어렵습니다.  테스트하는 동안 StubStockFeed라는 다른 클래스로 대체하겠습니다.
 
- ![Real 및 Stub 클래스는 하나의 인터페이스를 따릅니다.](../test/media/fakesinterfaces.png "FakesInterfaces")
+ ![Real and Stub classes conform to one interface.](../test/media/fakesinterfaces.png "FakesInterfaces")
 
  스텁은 사용자가 이러한 방식으로 코드를 구성할 수 있어야 사용 가능하므로 일반적으로 애플리케이션의 다른 부분에서 한 부분을 격리하는 데 사용합니다. System.dll과 같이 사용자가 제어하지 않는 다른 어셈블리에서 일부를 격리하려면 일반적으로 shim을 사용합니다. [shim을 사용하여 유닛 테스트를 위한 다른 어셈블리에서 애플리케이션 격리](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)를 참조하세요.
 
- **요구 사항**
+ **Requirements**
 
 - Visual Studio Enterprise
 
 ## <a name="How"></a> 스텁 사용 방법
 
 ### <a name="Dependency"></a> 종속성 주입을 위한 디자인
- 스텁을 사용하려면 다른 구성 요소가 서로 종속되지 않도록 하고 인터페이스 정의에만 종속되도록 애플리케이션을 설계해야 합니다. 구성 요소는 컴파일 타임에 결합되지 않고, 런타임에 연결됩니다. 이러한 패턴에서는 변경 내용이 구성 요소 경계를 넘어 전파되지 않으므로 견고하고 업데이트가 간편한 소프트웨어를 만들 수 있습니다. 스텁을 사용하지 않는 경우에도 다음을 권장합니다. 새 코드를 작성하는 경우 [종속성 삽입](http://en.wikipedia.org/wiki/Dependency_injection) 패턴을 따르는 것이 쉽습니다. 기존 소프트웨어에 대한 테스트를 작성하는 경우 리팩터링해야 할 수 있습니다. 실무적으로 어려운 경우에는 대신 shim을 사용해 보세요.
+ 스텁을 사용하려면 다른 구성 요소가 서로 종속되지 않도록 하고 인터페이스 정의에만 종속되도록 애플리케이션을 설계해야 합니다. 구성 요소는 컴파일 타임에 결합되지 않고, 런타임에 연결됩니다. 이러한 패턴에서는 변경 내용이 구성 요소 경계를 넘어 전파되지 않으므로 견고하고 업데이트가 간편한 소프트웨어를 만들 수 있습니다. 스텁을 사용하지 않는 경우에도 다음을 권장합니다. 새 코드를 작성하는 경우 [종속성 삽입](https://en.wikipedia.org/wiki/Dependency_injection) 패턴을 따르는 것이 쉽습니다. 기존 소프트웨어에 대한 테스트를 작성하는 경우 리팩터링해야 할 수 있습니다. 실무적으로 어려운 경우에는 대신 shim을 사용해 보세요.
 
  다이어그램의 흥미로운 예제로 이 토론을 시작하겠습니다. StockAnalyzer 클래스는 주식 가격을 읽고 몇 가지 흥미로운 결과를 생성합니다. 여기에는 우리가 테스트하려는 몇 가지 공용 메서드가 있습니다. 간단히 특정 주식의 현재 가격만 보고하는 간단한 메서드만 살펴보겠습니다. 이 메서드의 단위 테스트를 작성하려고 합니다. 다음은 테스트의 첫 번째 초안입니다.
 
@@ -224,7 +224,7 @@ End Class
  스텁은 속성, 이벤트 및 제네릭 메서드의 getter와 setter에 대해서도 생성됩니다.
 
 ### <a name="mocks"></a> 매개 변수 값 확인
- 구성 요소가 다른 구성 요소를 호출할 때 올바른 값을 전달하는지 확인할 수 있습니다. 스텁에 어설션을 추가하거나 값을 저장한 다음 테스트 본문에서 확인할 수 있습니다. 예:
+ 구성 요소가 다른 구성 요소를 호출할 때 올바른 값을 전달하는지 확인할 수 있습니다. 스텁에 어설션을 추가하거나 값을 저장한 다음 테스트 본문에서 확인할 수 있습니다. 예를 들어 다음과 같은 가치를 제공해야 합니다.
 
 ```csharp
 [TestClass]
@@ -400,7 +400,7 @@ public void TestGetValue()
  코드가 기타 인스턴스화를 사용하여 `GetValue<T>`를 호출하는 경우 스텁이 동작만 호출합니다.
 
 ### <a name="BKMK_Partial_stubs"></a> 가상 클래스의 스텁
- 위 예제에서는 인터페이스에서 스텁이 생성되었습니다. 또한 가상 또는 추상 멤버가 있는 클래스에서 스텁을 생성할 수 있습니다. 예:
+ 위 예제에서는 인터페이스에서 스텁이 생성되었습니다. 또한 가상 또는 추상 멤버가 있는 클래스에서 스텁을 생성할 수 있습니다. 예를 들어 다음과 같은 가치를 제공해야 합니다.
 
 ```csharp
 // Base class in application under test
@@ -472,7 +472,7 @@ StubBehaviors.Current =
 ## <a name="external-resources"></a>외부 리소스
 
 ### <a name="guidance"></a>지침
- Visual Studio 2012을 사용한 지속적인 업데이트를 위한 [Testing-2 장: 유닛 테스트: 내부 ](http://go.microsoft.com/fwlink/?LinkID=255188) 테스트
+ [Visual Studio 2012를 사용한 지속적인 업데이트 테스트 - 2장: 단위 테스트: 내부 테스트](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ## <a name="see-also"></a>관련 항목:
  [Microsoft Fakes를 사용하여 테스트 중인 코드 격리](../test/isolating-code-under-test-with-microsoft-fakes.md)

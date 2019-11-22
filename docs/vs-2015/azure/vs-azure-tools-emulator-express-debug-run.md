@@ -10,14 +10,14 @@ ms.date: 03/06/2017
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: b7e1d5e63a93f8fe1f67de920a1ccf7966d97ed6
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: d89762511e88e296a51c781c6a403c2dd227ed4f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263777"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74293260"
 ---
-# <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Emulator Express를 사용하여 로컬 컴퓨터에서 Azure 클라우드 서비스 실행 및 디버그
+# <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Emulator Express를 사용하여 로컬 머신에서 Azure 클라우드 서비스 실행 및 디버그
 Emulator Express를 사용하여 관리자로 Visual Studio를 실행하지 않고 클라우드 서비스를 테스트 및 디버그할 수 있습니다. 클라우드 서비스의 요구 사항에 따라 Emulator Express 또는 전체 에뮬레이터를 사용하도록 프로젝트를 설정할 수 있습니다. 전체 에뮬레이터에 대한 자세한 내용은 [ 에뮬레이터에서 Azure 애플리케이션 실행](/azure/storage/common/storage-use-emulator)을 참조하세요.
 
 ## <a name="using-emulator-express-in-visual-studio"></a>Visual Studio에서 Emulator Express 사용
@@ -47,7 +47,7 @@ Azure SDK 2.3 이상에서 Azure 프로젝트를 만들 때 Emulator Express가 
 - Emulator Express는 IIS 웹 서버와 호환되지 않습니다.
 - 클라우드 서비스는 여러 역할을 포함할 수 있지만 각 역할은 하나의 인스턴스로 제한됩니다.
 - 1000 아래의 포트 번호에 액세스할 수 없습니다. 일반적으로 1000 아래의 포트를 사용하는 인증 공급자를 사용하는 경우 1000 위의 포트 번호로 이 값을 변경해야 할 수도 있습니다.
-- Azure 컴퓨팅 에뮬레이터에 적용되는 모든 제한 사항은 Emulator Express에도 적용됩니다. 예를 들어 배포당 50개 이상의 역할 인스턴스를 가질 수 없습니다. Azure Compute 에뮬레이터에 대한 자세한 내용은 [컴퓨팅 에뮬레이터에서 Azure 애플리케이션 실행](http://go.microsoft.com/fwlink/p/?LinkId=623050)을 참조하세요.
+- Azure 컴퓨팅 에뮬레이터에 적용되는 모든 제한 사항은 Emulator Express에도 적용됩니다. 예를 들어 배포당 50개 이상의 역할 인스턴스를 가질 수 없습니다. Azure Compute 에뮬레이터에 대한 자세한 내용은 [컴퓨팅 에뮬레이터에서 Azure 애플리케이션 실행](https://go.microsoft.com/fwlink/p/?LinkId=623050)을 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 [Azure Cloud Services 디버그](vs-azure-tools-debugging-cloud-services-overview.md)

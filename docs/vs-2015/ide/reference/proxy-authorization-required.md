@@ -9,23 +9,23 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7456e60b42b18ad706b951ee58ca5c33f05cabc1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 848817691d7fae32f2240e3d6cac4451c4ce58c4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665711"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297822"
 ---
 # <a name="proxy-authorization-required"></a>프록시 권한 필요
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-프록시 **권한 필요** 오류는 일반적으로 사용자가 프록시 서버를 통해 Visual Studio online 리소스에 연결 하 고 프록시 서버에서 호출을 차단 하는 경우 발생 합니다.
+The **Proxy authorization required** error generally occurs when users are connected to Visual Studio online resources through a proxy server, and the proxy server blocks the calls.
 
-이 오류를 해결 하려면 다음 단계 중 하나 이상을 시도 합니다.
+To correct this error, try one or more of the following steps:
 
 - Visual Studio를 다시 시작합니다. 프록시 인증 대화 상자가 나타납니다. 대화 상자에서 자격 증명을 입력합니다.
 
-- 위의 단계를 수행해도 문제가 해결되지 않으면 프록시 서버에서 http://go.microsoft.com 주소가 아닌 *.visualStudio.com 주소에 대한 자격 증명을 입력하라는 메시지를 표시하기 때문일 수 있습니다. 이러한 서버에 대해 다음 Url을 허용 목록에 추가 하 여 Visual Studio에서 모든 로그인 시나리오를 차단 해제 해야 합니다.
+- 위의 단계를 수행해도 문제가 해결되지 않으면 프록시 서버에서 https://go.microsoft.com 주소가 아닌 *.visualStudio.com 주소에 대한 자격 증명을 입력하라는 메시지를 표시하기 때문일 수 있습니다. For these servers, you need to add the following URLs to the allow list to unblock all sign-in scenarios in Visual Studio:
 
   - *.windows.net
 
@@ -37,9 +37,9 @@ ms.locfileid: "72665711"
 
   - *.live.com
 
-- Visual Studio를 다시 시작할 때 http://go.microsoft.com 주소와 서버 끝점 모두에 대해 프록시 인증 대화 상자가 표시 되도록 허용 목록에서 http://go.microsoft.com 주소를 제거할 수 있습니다.
+- You can remove the https://go.microsoft.com address from the allow list so that the proxy authentication dialog shows up for both the https://go.microsoft.com address and the server endpoints when Visual Studio is restarted.
 
-- 프록시를 사용 하 여 기본 자격 증명을 사용 하려면 다음을 수행 합니다.
+- If you want to use your default credentials with your proxy, do the following:
 
    1. **%ProgramFiles%\Microsoft Visual Studio 14.0\Common7\IDE** (또는 **%ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE**)에서 devenv.exe.config(devenv.exe 구성 파일)를 찾습니다.
 
@@ -51,6 +51,6 @@ ms.locfileid: "72665711"
       </defaultProxy>
       ```
 
-      @No__t_0에서 네트워크에 대 한 올바른 프록시 주소를 삽입 합니다.
+      Insert the correct proxy address for your network in `proxyaddress="<http://<yourproxy:port#>`.
 
-- [이 블로그 게시물](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) 의 지침에 따라 프록시를 사용할 수 있는 코드를 추가 합니다.
+- Follow the instructions in [this blog post](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/) to add code that allows you to use the proxy.

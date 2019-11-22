@@ -1,5 +1,5 @@
 ---
-title: 시작 페이지를 직접 만드는 | Microsoft Docs
+title: Creating Your Own Start Page | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
-ms.openlocfilehash: cc465ca5bc9474aaba51042d453a57ee7ec124ec
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ceb78d3310f37a58850199b11fb2b2fed86f6799
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432295"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299315"
 ---
 # <a name="creating-your-own-start-page"></a>고유한 시작 페이지 만들기
 시작 페이지 프로젝트 템플릿을 사용하거나 빈 시작 페이지를 만들어 사용자 지정 시작 페이지를 만들 수 있습니다.  
@@ -28,10 +28,10 @@ ms.locfileid: "63432295"
   
 #### <a name="to-create-a-custom-start-page-by-using-the-start-page-project-template"></a>시작 페이지 프로젝트 템플릿을 사용하여 사용자 지정 시작 페이지를 만들려면  
   
-1. Visual Studio 갤러리에서 [시작 페이지 프로젝트 템플릿](http://go.microsoft.com/fwlink/?LinkId=186204) 을 다운로드 및 설치합니다.  
+1. Visual Studio 갤러리에서 [시작 페이지 프로젝트 템플릿](https://go.microsoft.com/fwlink/?LinkId=186204) 을 다운로드 및 설치합니다.  
   
     > [!WARNING]
-    > 이번에는 Visual Studio 2010 시작 페이지 프로젝트 템플릿이 업그레이드되지 않았습니다. 이 서식 파일을 업그레이드 하는 방법에 대 한 정보를 참조 하세요. [방법: Visual Studio 사용자 지정 시작 페이지 업그레이드](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md)합니다.  
+    > 이번에는 Visual Studio 2010 시작 페이지 프로젝트 템플릿이 업그레이드되지 않았습니다. For information about how to upgrade this template, see [How to: Upgrade a Visual Studio Custom Start Page](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
   
 2. 템플릿을 설치한 후 해당 템플릿으로 새 시작 페이지 프로젝트를 만듭니다.  
   
@@ -78,7 +78,7 @@ ms.locfileid: "63432295"
   
     배포를 위해 .vsix 및 .pkgdef 파일을 유지해야 합니다.  
   
-   또는 Visual Studio에서 인식할 수 있도록 올바른 태그 구조를 가진 XAML 파일을 만들어 빈 시작 페이지를 만들 수 있습니다. 그런 다음 태그와 코드 숨김을 추가하여 원하는 모양과 기능을 얻을 수 있습니다. 자세한 내용은 [사용자 지정 시작 페이지 만들기](../extensibility/creating-a-custom-start-page.md)합니다.  
+   또는 Visual Studio에서 인식할 수 있도록 올바른 태그 구조를 가진 XAML 파일을 만들어 빈 시작 페이지를 만들 수 있습니다. 그런 다음 태그와 코드 숨김을 추가하여 원하는 모양과 기능을 얻을 수 있습니다. For more information, see [Creating a Custom Start Page](../extensibility/creating-a-custom-start-page.md).  
   
 ## <a name="testing-and-applying-the-custom-start-page"></a>사용자 지정 시작 페이지 테스트 및 적용  
  충돌하지 않는 것을 확인할 때까지 사용자 지정 시작 페이지를 실행할 기본 인스턴스를 설정하지 마세요. 사용자 지정 시작 페이지를 테스트한 경우 Visual Studio의 기본 인스턴스에서 이 절차의 마지막 세 단계를 반복하여 시스템에 적용할 수 있습니다.  
@@ -97,8 +97,8 @@ ms.locfileid: "63432295"
   
     작동하는 시작 페이지가 표시됩니다. 새 변경 내용을 확인하려면 실험적 인스턴스를 닫고 변경된 파일을 다시 복사한 다음 실험적 인스턴스를 다시 열어야 합니다.  
   
-   Bin\debug 디렉터리의.vsix 파일을 업로드 하 여 사용자 지정 시작 페이지를 공유할 수는 [Visual Studio Marketplace](https://marketplace.visualstudio.com/) 웹 사이트 또는 다른 웹 사이트 또는 인트라넷 공유 합니다. 자세한 내용은 [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)을 참조하세요.  
+   You can share your custom Start Page by uploading the .vsix file from your bin\debug directory to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web site, or to another Web site or intranet share. 자세한 내용은 [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
- [시작 페이지 사용자 지정](../ide/customizing-the-start-page-for-visual-studio.md)   
+## <a name="see-also"></a>관련 항목:  
+ [Customizing the Start Page](../ide/customizing-the-start-page-for-visual-studio.md)   
  [연습: 시작 페이지에 사용자 지정 XAML 추가](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

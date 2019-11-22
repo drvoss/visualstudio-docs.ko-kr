@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f3cf8d0cfd3119113247dedf7723e02fca9634a3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 278858eb28e0db7edd2694397cc7b24f1cfec301
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662644"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296835"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>연습: 코드 조각 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "72662644"
 몇 가지 단계로 코드 조각을 만들 수 있습니다. XML 파일을 만들고, 적절한 요소를 입력하고, 코드를 추가하기만 하면 됩니다. 또한 코드에 참조 및 대체 매개 변수를 추가할 수 있습니다. 코드 조각 관리자(**도구/코드 조각 관리자**)에서 가져오기 단추를 사용하여 Visual Studio 설치에 코드 조각을 추가할 수 있습니다.
 
 > [!TIP]
-> 코드 조각을 더 쉽게 작성 하는 방법에 대 한 자세한 내용을 보려면 CodePlex 웹 사이트에서 코드 [조각 편집기](http://go.microsoft.com/fwlink/?LinkId=251033)와 같은 커뮤니티 도구를 검색 합니다.
+> For information about how to write code snippets more easily, search the CodePlex website for community tools such as [Snippet Editor](https://go.microsoft.com/fwlink/?LinkId=251033).
 
 ## <a name="snippet-template"></a>코드 조각 템플릿
  다음은 기본 코드 조각 템플릿입니다.
@@ -56,7 +56,7 @@ ms.locfileid: "72662644"
 
 1. Visual Studio에서 새 XML 파일을 만들고 위에 표시된 템플릿을 추가합니다.
 
-2. Title 요소에 코드 조각의 제목 (예: "Hello World VB")을 입력 합니다.
+2. Fill in the title of the snippet, e.g. "Hello World VB", in the Title element.
 
 3. Code 요소의 언어 특성에 코드 조각의 언어를 입력합니다. 예를 들어 "VB"를 사용합니다.
 
@@ -85,13 +85,13 @@ ms.locfileid: "72662644"
 
      `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippets`
 
-6. Visual Basic 프로젝트를 열고 코드 파일을 열어 코드 조각을 테스트합니다. 파일의 상황에 맞는 메뉴에서 코드 **조각 삽입** 을 클릭 한 다음 **내 코드 조각**을 클릭 합니다. **내 Visual Basic 코드 조각**이라는 코드 조각이 나타납니다. 폴더를 두 번 클릭합니다.
+6. Visual Basic 프로젝트를 열고 코드 파일을 열어 코드 조각을 테스트합니다. In the file click **Insert Snippet** on the context menu, then **My Code Snippets**. **내 Visual Basic 코드 조각**이라는 코드 조각이 나타납니다. 폴더를 두 번 클릭합니다.
 
-7. 코드에 `Console.WriteLine("Hello, World!")` 삽입 된 것을 볼 수 있습니다.
+7. You should see `Console.WriteLine("Hello, World!")` inserted in the code.
 
 ### <a name="adding-description-and-shortcut-fields"></a>설명 및 바로 가기 필드 추가
 
-1. 설명 필드는 코드 조각 관리자에서 볼 때 코드 조각에 대한 자세한 정보를 제공합니다. 바로 가기는 코드 조각을 삽입하기 위해 사용자가 입력할 수 있는 태그입니다. @No__t_0 파일을 열어 추가한 코드 조각을 편집 합니다.
+1. 설명 필드는 코드 조각 관리자에서 볼 때 코드 조각에 대한 자세한 정보를 제공합니다. 바로 가기는 코드 조각을 삽입하기 위해 사용자가 입력할 수 있는 태그입니다. Edit the snippet you have added by opening the file `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet`.
 
 2. Header 요소에 Author 및 Description 요소를 추가하고 채웁니다.
 
@@ -122,11 +122,11 @@ ms.locfileid: "72662644"
 
 6. 코드 조각 파일을 다시 저장합니다.
 
-7. 바로 가기를 테스트하려면 Visual Basic 프로젝트를 열고 코드 파일을 엽니다. 파일에 `hello`를 입력 하 고 TAB 키를 누릅니다. 코드 조각 코드를 삽입 해야 합니다.
+7. 바로 가기를 테스트하려면 Visual Basic 프로젝트를 열고 코드 파일을 엽니다. Type `hello` in the file and press TAB. The snippet code should be inserted.
 
 ### <a name="to-add-references-and-imports"></a>참조 및 가져오기를 추가하려면
 
-1. Visual Basic 코드 조각을 사용 하면 References 요소를 사용 하 여 프로젝트에 참조를 추가 하 고 Imports 요소를 사용 하 여 Imports 선언을 추가할 수 있습니다. (다른 언어의 코드 조각에는이 기능이 없습니다.) 예를 들어 코드 예제의 `Console.WriteLine`를 `MessageBox.Show`으로 변경 하는 경우 프로젝트에 System.object 어셈블리를 추가 해야 할 수 있습니다.
+1. With Visual Basic snippets you can add a reference to a project by using the References element, and add an Imports declaration by using the Imports element. (Snippets in other languages do not have this feature.) For example, if you change `Console.WriteLine` in the code example to `MessageBox.Show`, you may need to add the System.Windows.Forms.dll assembly to the project.
 
 2. 코드 조각을 엽니다.
 
@@ -248,7 +248,7 @@ ms.locfileid: "72662644"
 
 8. Visual Basic 프로젝트를 열고 코드 조각을 추가합니다.
 
-9. 코드는 다음과 같아야 합니다. 여기서 대체 `SQL connection string` 및 `dcConnection`은 연한 주황색으로 강조 표시됩니다. TAB 키를 눌러 다른 쪽으로 이동 합니다.
+9. 코드는 다음과 같아야 합니다. 여기서 대체 `SQL connection string` 및 `dcConnection`은 연한 주황색으로 강조 표시됩니다. Press TAB to navigate from one to the other.
 
     ```
     Dim daCustomers As SqlDataAdapter

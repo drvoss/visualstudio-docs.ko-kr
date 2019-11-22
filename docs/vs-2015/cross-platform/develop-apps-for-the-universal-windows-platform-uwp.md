@@ -9,12 +9,12 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ed601f6b3bfeba4d7aebed5955b340fb28908c74
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ac6ce00002e40c6d8bd1d5db65b8c7bb5e6bc7cd
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660202"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299837"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>UWP(유니버설 Windows 플랫폼)용 앱 개발
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,9 +38,9 @@ ms.locfileid: "72660202"
 
  필요한 소프트웨어 목록은 다음과 같습니다.
 
-- [Windows 10](http://windows.microsoft.com/windows/downloads)
+- [Windows 10](https://windows.microsoft.com/windows/downloads)
 
-- [Visual Studio 2015](http://go.microsoft.com/fwlink/p/?LinkId=526725). 유니버설 Windows 앱 개발 도구가 선택적 기능 목록에서 선택되었는지 확인합니다. 이러한 도구가 없으면 유니버설 앱을 만들 수 없습니다.
+- [Visual Studio 2015](https://go.microsoft.com/fwlink/p/?LinkId=526725). 유니버설 Windows 앱 개발 도구가 선택적 기능 목록에서 선택되었는지 확인합니다. 이러한 도구가 없으면 유니버설 앱을 만들 수 없습니다.
 
   이 소프트웨어를 설치한 후에 개발에 대해 [Windows 10 디바이스를 사용하도록 설정](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) (영문)해야 합니다. 각 Windows 10 디바이스에 대한 개발자 라이선스는 더 이상 필요하지 않습니다.
 
@@ -48,14 +48,14 @@ ms.locfileid: "72660202"
 
   Windows 10 이외의 플랫폼에서 Visual Studio 2015를 사용하여 유니버설 Windows 앱을 개발하기로 선택한 경우 다음과 같은 제한 사항이 적용됩니다.
 
-- Windows 8.1: 응용 프로그램을 로컬로 실행할 수 없습니다 (원격 Windows 10 장치 에서만). Visual Studio에서 에뮬레이터를 사용할 수 있지만 시뮬레이터는 사용할 수 없습니다.
+- Windows 8.1: 앱을 로컬로 실행할 수 없습니다(원격 Windows 10 디바이스에서만). Visual Studio에서 에뮬레이터를 사용할 수 있지만 시뮬레이터는 사용할 수 없습니다.
 
-- Windows 7: 응용 프로그램을 로컬로 실행할 수 없습니다 (원격 Windows 10 장치 에서만). Visual Studio에서 에뮬레이터나 시뮬레이터 중 하나만 사용할 수 있습니다.
+- Windows 7: 앱을 로컬로 실행할 수 없습니다(원격 Windows 10 디바이스에서만). Visual Studio에서 에뮬레이터나 시뮬레이터 중 하나만 사용할 수 있습니다.
 
   개발 플랫폼이 Windows 10인 경우에만 XAML 디자이너를 사용할 수 있습니다.
 
 ## <a name="universal-windows-apps"></a>유니버설 Windows 앱
- C#, Visual Basic, C++ 또는 JavaScript에서 기본 설정 개발 언어를 선택하여 [Windows 10 디바이스용 유니버설 Windows 앱을 만드세요](https://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10). 또는 [이 시작 동영상](http://channel9.msdn.com/Series/ConnectOn-Demand/229)을 시청하세요.
+ C#, Visual Basic, C++ 또는 JavaScript에서 기본 설정 개발 언어를 선택하여 [Windows 10 디바이스용 유니버설 Windows 앱을 만드세요](https://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10). 또는 [이 시작 동영상](https://channel9.msdn.com/Series/ConnectOn-Demand/229)을 시청하세요.
 
  기존 Windows 스토어 8.1 앱, Windows Phone 8.1 앱 또는 Visual Studio 2015 RC를 사용하여 만든 유니버설 Windows 앱이 있으면 [이러한 기존 앱을 포팅](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) 하여 최신 유니버설 Windows 플랫폼을 사용합니다.
 

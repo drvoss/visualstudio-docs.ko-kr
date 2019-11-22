@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 90cc4849567d744c5380076bf8c1773254cda618
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7eeb6b0ac3322090cf85e26ac6388aac76890d44
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657042"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297571"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Visual Studio 2015 시작
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ ms.locfileid: "72657042"
 >
 > [Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)의 릴리스 정보를 확인하려면 링크를 클릭하세요.
 
- 지금 바로 코딩을 시작하려면 [Visual Studio Community](http://go.microsoft.com/fwlink/?LinkId=517106) 를 무료로 다운로드하세요. 플랫폼 간 개발을 수행하려는 경우에는 선택적 패키지를 설치해야 합니다. ( [여러 가지 Visual Studio 버전](http://www.visualstudio.com/products/compare-visual-studio-products-vs)에서 더욱 다양한 기능을 사용할 수 있습니다.)
+ 지금 바로 코딩을 시작하려면 [Visual Studio Community](https://go.microsoft.com/fwlink/?LinkId=517106) 를 무료로 다운로드하세요. 플랫폼 간 개발을 수행하려는 경우에는 선택적 패키지를 설치해야 합니다. ( [여러 가지 Visual Studio 버전](https://visualstudio.microsoft.com/vs/compare/)에서 더욱 다양한 기능을 사용할 수 있습니다.)
 
  지금 바로 새 프로젝트를 만들고 코드 작성을 시작해 보세요. 먼저 만들려는 앱의 유형을 선택합니다. 도구에 익숙해지기 위해 Visual Studio IDE를 [둘러볼](./ide/visual-studio-ide.md) 수도 있습니다.
 
  [코드 갤러리](https://code.msdn.microsoft.com/) 를 탐색하여 더 신속하게 앱을 작성하는 데 도움이 되는 샘플을 찾아보는 것도 잊지 마세요.
 
- [Visual Studio 다운로드](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)에서 Visual Studio 2015를 다운로드하여 설치할 수 있습니다. 설치 프로세스에 대해 자세히 알아보려면 [Visual Studio 2015 설치](./install/install-visual-studio-2015.md)를 참조 하세요.
+ [Visual Studio 다운로드](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)에서 Visual Studio 2015를 다운로드하여 설치할 수 있습니다. To learn more about the installation process, see [Install Visual Studio 2015](./install/install-visual-studio-2015.md).
 
 ## <a name="extend-visual-studio"></a>Visual Studio 확장
  코드를 작성하는 동안 자주 사용하는 도구 또는 스크립트를 포함하기 위해 사용자 고유의 Visual Studio 확장을 추가합니다. 사용자 지정 메뉴 항목 및 도구 창을 만들어 사용자 고유의 도구를 Visual Studio IDE에 통합할 수 있습니다. 코드를 분석하고 수정할 수 있도록 Visual Studio 편집기를 확장하거나 새 프로젝트 형식을 추가하여 필요한 항목만 포함할 수 있습니다.
@@ -74,7 +74,7 @@ ms.locfileid: "72657042"
 - 클라우드에 저장된 데이터에 연결하기 위해 자신의 앱에 Office 365 REST API를 통합합니다. 자세한 내용은 [이러한 샘플](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365)(영문)을 참조하세요.
 
 ## <a name="write-great-web-apps-with-aspnet"></a>ASP.NET으로 유용한 웹앱 작성
- [ASP.NET 5](http://www.asp.net/vnext/overview/aspnet-vnext/aspnet-5-overview) 는 MVC, WebAPI 및 SignalR에 대한 주요 업데이트이며 Windows, Mac 및 Linux에서 실행됩니다.  ASP.NET 5는 최신 클라우드 기반 웹앱 및 서비스를 빌드하기 위한 간결하고 구성 가능한 .NET 스택을 제공하도록 처음부터 다시 설계되었습니다.
+ [ASP.NET 5](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-3.0) 는 MVC, WebAPI 및 SignalR에 대한 주요 업데이트이며 Windows, Mac 및 Linux에서 실행됩니다.  ASP.NET 5는 최신 클라우드 기반 웹앱 및 서비스를 빌드하기 위한 간결하고 구성 가능한 .NET 스택을 제공하도록 처음부터 다시 설계되었습니다.
 
 ## <a name="build-test-and-manage-your-code"></a>코드 빌드, 테스트 및 관리
 

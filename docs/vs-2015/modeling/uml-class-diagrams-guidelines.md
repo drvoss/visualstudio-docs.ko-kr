@@ -1,5 +1,5 @@
 ---
-title: 'UML 클래스 다이어그램: 지침 | Microsoft Docs'
+title: 'UML Class Diagrams: Guidelines | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -17,33 +17,33 @@ caps.latest.revision: 56
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 804678985ae30d833b57fe7589f0903cf1edb291
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c170827825d772f4d97cd22f0b5754232e8d2257
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652271"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297291"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>UML 클래스 다이어그램: 지침
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio에서는 *UML 클래스 다이어그램* 을 사용 하 여 데이터 형식 및 해당 관계를 구현과 별도로 설명할 수 있습니다. 이 다이어그램은 클래스의 구현 대신 논리적 측면에 중점을 둘 때 사용됩니다.
+In Visual Studio, you can use a *UML class diagram* to describe data types and their relationships separately from their implementation. 이 다이어그램은 클래스의 구현 대신 논리적 측면에 중점을 둘 때 사용됩니다.
 
- UML 클래스 다이어그램을 만들려면 **아키텍처** 메뉴에서 **새 UML 다이어그램 또는 레이어 다이어그램**을 선택 합니다.
+ To create a UML class diagram, on the **Architecture** menu, choose **New UML Diagram or Layer Diagram**.
 
  이 기능을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
 
 > [!NOTE]
-> 이 항목에서는 UML 클래스 다이어그램에 대해 설명합니다. 이외에도 프로그램 코드를 시각화하는 데 사용하기 위해 만들 수 있는 다른 종류의 클래스 다이어그램이 있습니다. [클래스 및 형식 디자인 및 보기](http://go.microsoft.com/fwlink/?LinkId=142231)를 참조 하세요.
+> 이 항목에서는 UML 클래스 다이어그램에 대해 설명합니다. 이외에도 프로그램 코드를 시각화하는 데 사용하기 위해 만들 수 있는 다른 종류의 클래스 다이어그램이 있습니다. See [Designing and Viewing Classes and Types](https://go.microsoft.com/fwlink/?LinkId=142231).
 
-## <a name="Using"></a>UML 클래스 다이어그램 사용
+## <a name="Using"></a> Using UML Class Diagrams
  다음과 같은 다양한 용도로 UML 클래스 다이어그램을 사용할 수 있습니다.
 
 - 시스템에 사용되고 구성 요소 간에 전달되는 형식에 대해 구현과 독립적인 설명을 제공할 수 있습니다.
 
      예를 들어 .NET 코드의 비즈니스 계층, XML의 구성 요소 간 인터페이스, SQL의 데이터베이스 및 HTML의 사용자 인터페이스 등에서 Meal Order 형식을 구현할 수 있습니다. 이러한 구현은 세부적으로는 다르지만 Menu와 Payment 같은 다른 형식과 Meal Order 간의 관계는 항상 같습니다. UML 클래스 다이어그램을 사용하면 이러한 관계를 구현과 분리하여 논의할 수 있습니다.
 
-- 애플리케이션과 사용자 간의 통신에 사용되고 사용자 요구를 기술하는 데 필요한 용어 모음을 명확하게 정의할 수 있습니다. [모델 사용자 요구 사항](../modeling/model-user-requirements.md)을 참조 하세요.
+- 애플리케이션과 사용자 간의 통신에 사용되고 사용자 요구를 기술하는 데 필요한 용어 모음을 명확하게 정의할 수 있습니다. See [Model user requirements](../modeling/model-user-requirements.md).
 
      예를 들어 식당 애플리케이션의 사용자 스토리, 사용 사례 또는 기타 요구 사항을 설명하는 경우를 가정해 봅니다. 이러한 설명에서 Menu, Order, Meal, Price, Payment 등의 용어를 발견할 수 있습니다. 이때 이러한 용어 간의 관계를 정의하는 UML 클래스 다이어그램을 그릴 수 있습니다. 그러면 요구 사항 설명, 사용자 인터페이스 및 도움말 문서 등에서 용어 불일치 문제가 줄어듭니다.
 
@@ -56,7 +56,7 @@ Visual Studio에서는 *UML 클래스 다이어그램* 을 사용 하 여 데이
 
  입력 핀, 출력 핀 및 동작 매개 변수 노드의 형식
 
- [UML 동작 다이어그램: 지침](../modeling/uml-activity-diagrams-guidelines.md)을 참조 하세요.
+ See [UML Activity Diagrams: Guidelines](../modeling/uml-activity-diagrams-guidelines.md).
 
  시퀀스 다이어그램
 
@@ -64,70 +64,70 @@ Visual Studio에서는 *UML 클래스 다이어그램* 을 사용 하 여 데이
 
  수명선 형식. 수명선의 클래스에는 수신할 수 있는 모든 메시지에 대한 작업이 포함되어야 합니다.
 
- [UML 시퀀스 다이어그램: 지침](../modeling/uml-sequence-diagrams-guidelines.md)을 참조 하세요.
+ See [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md).
 
  구성 요소 다이어그램
 
  구성 요소 인터페이스, 각 인터페이스의 작업 목록
 
- [UML 구성 요소 다이어그램: 지침](../modeling/uml-component-diagrams-guidelines.md)을 참조 하세요.
+ See [UML Component Diagrams: Guidelines](../modeling/uml-component-diagrams-guidelines.md).
 
  사용 사례 다이어그램
 
  사용 사례의 목표 및 단계를 기술할 때 언급된 형식
 
- [UML 사용 사례 다이어그램: 지침](../modeling/uml-use-case-diagrams-guidelines.md)을 참조 하세요.
+ See [UML Use Case Diagrams: Guidelines](../modeling/uml-use-case-diagrams-guidelines.md).
 
-## <a name="BasicSteps"></a>클래스 다이어그램을 그리는 기본 단계
- UML 클래스 다이어그램의 요소에 대 한 참조 정보는 [Uml 클래스 다이어그램: 참조](../modeling/uml-class-diagrams-reference.md)를 참조 하세요.
+## <a name="BasicSteps"></a> Basic Steps for Drawing Class Diagrams
+ For reference information about the elements on UML class diagrams, see [UML Class Diagrams: Reference](../modeling/uml-class-diagrams-reference.md).
 
 > [!NOTE]
-> 모델링 다이어그램을 만드는 자세한 단계는 [UML 모델 및 다이어그램 편집](../modeling/edit-uml-models-and-diagrams.md)에 설명 되어 있습니다.
+> Detailed steps for creating any of the modeling diagrams are described in [Edit UML models and diagrams](../modeling/edit-uml-models-and-diagrams.md).
 
 #### <a name="to-create-a-uml-class-diagram"></a>UML 클래스 다이어그램을 만들려면
 
-1. **아키텍처** 메뉴에서 **새 UML 또는 레이어 다이어그램**을 선택 합니다.
+1. On the **Architecture** menu, choose **New UML or Layer Diagram**.
 
-2. **템플릿**에서 **UML 클래스 다이어그램**을 선택 합니다.
+2. Under **Templates**, choose **UML Class Diagram**.
 
 3. 다이어그램 이름을 지정합니다.
 
-4. **모델링 프로젝트에 추가**에서 솔루션의 기존 모델링 프로젝트를 선택 하거나 **새 모델링 프로젝트를 만든**다음 **확인**을 선택 합니다.
+4. In **Add to Modeling Project**, select an existing modeling project in your solution, or **Create a New Modeling Project**, and then choose **OK**.
 
-     **Umlclass 다이어그램** 도구 상자와 함께 새 클래스 다이어그램이 표시 됩니다. 이 도구 상자에는 필요한 요소 및 관계가 포함되어 있습니다.
+     A new class diagram appears with the **UMLClass Diagram** Toolbox. 이 도구 상자에는 필요한 요소 및 관계가 포함되어 있습니다.
 
 #### <a name="to-draw-a-uml-class-diagram"></a>UML 클래스 다이어그램을 그리려면
 
-1. 형식을 만들려면 도구 상자에서 **클래스**, **인터페이스** 또는 **열거형** 도구를 선택 하 고 다이어그램의 빈 부분을 클릭 합니다. (도구 상자가 표시되지 않은 경우 Ctrl + ALT + X를 누릅니다.)
+1. To create a type, choose the **Class**, **Interface** or **Enumeration** tool on the Toolbox, and then click a blank part of the diagram. (도구 상자가 표시되지 않은 경우 Ctrl + ALT + X를 누릅니다.)
 
-2. 형식에 특성 또는 작업을 추가 하거나, 리터럴을 열거형에 추가 하려면 형식에서 **특성**, **작업** 또는 **리터럴** 머리글을 선택 하 고 enter 키를 누릅니다.
+2. To add attributes or operations to the types, or literals to an enumeration, choose the **Attributes**, **Operations** or **Literals** heading in the type, and press ENTER.
 
-     `f(x:Boolean):Integer`와 같은 시그니처를 작성할 수 있습니다. [특성 및 작업](#AttributesAndOperations)을 참조 하세요.
+     `f(x:Boolean):Integer`와 같은 시그니처를 작성할 수 있습니다. See [Attributes and Operations](#AttributesAndOperations).
 
      여러 항목을 빠르게 추가하려면 각 항목의 끝에서 Enter 키를 두 번 누릅니다. 화살표 키를 사용하여 목록에서 위 또는 아래로 이동할 수 있습니다.
 
-3. 형식을 확장하거나 축소하려면 왼쪽 위에 있는 펼침 아이콘을 선택합니다. 클래스 또는 인터페이스의 **특성** 및 **작업** 섹션을 확장 하 고 축소할 수도 있습니다.
+3. 형식을 확장하거나 축소하려면 왼쪽 위에 있는 펼침 아이콘을 선택합니다. You can also expand and collapse the **Attributes** and **Operations** section of a class or interface.
 
 4. 형식 간의 연결, 상속 또는 종속성 링크를 그리려면 적절한 도구를 클릭하고 소스 형식과 대상 형식을 차례로 클릭합니다.
 
-5. 패키지에서 형식을 만들려면 **패키지 도구를** 사용 하 여 패키지를 만든 다음 패키지 내에서 새 형식 및 패키지를 만듭니다. 복사 명령을 사용하여 형식을 복사한 후 패키지에 붙여넣을 수도 있습니다.
+5. To create types in a package, create a package using the **Package** tool, and then create new types and packages within the package. 복사 명령을 사용하여 형식을 복사한 후 패키지에 붙여넣을 수도 있습니다.
 
-6. 모든 다이어그램은 같은 프로젝트에서 다른 다이어그램과 공유하는 모델 뷰입니다. 전체 모델의 트리 뷰를 보려면 **보기**, **다른 창**, **UML 모델 탐색기**를 선택 합니다.
+6. 모든 다이어그램은 같은 프로젝트에서 다른 다이어그램과 공유하는 모델 뷰입니다. To see a tree view of the complete model, choose **View**, **Other Windows**, **UML Model Explorer**.
 
-## <a name="UsingTypes"></a>클래스, 인터페이스 및 열거형 사용
- 도구 상자에서 사용할 수 있는 표준 분류자에는 세 가지 종류가 있습니다. 이 문서 전체에서 *형식* 이라고 합니다.
+## <a name="UsingTypes"></a> Using Classes, Interfaces, and Enumerations
+ 도구 상자에서 사용할 수 있는 표준 분류자에는 세 가지 종류가 있습니다. These are referred to as *types* throughout this document.
 
- ![클래스, 열거형 및 인터페이스](../modeling/media/uml-classguidetypes.png "UML_ClassGuideTypes")
+ ![A class, an enumeration, and an interface](../modeling/media/uml-classguidetypes.png "UML_ClassGuideTypes")
 
-- 대부분의 용도로는 **클래스** (1)를 사용 하 여 데이터 또는 개체 형식을 나타냅니다.
+- Use **Classes** (1) to represent data or object types for most purposes.
 
-- 순수 인터페이스와 내부 구현이 있는 구체적 클래스를 구분 해야 하는 컨텍스트에서 **인터페이스** (2)를 사용 합니다. 이런 식으로 구별하면 다이어그램으로 소프트웨어 구현을 기술하려는 경우 유용합니다. 그러나 수동 데이터를 모델링하는 경우 또는 사용자 요구 사항을 기술하는 데 사용되는 개념을 정의하는 경우에는 별로 유용하지 않습니다.
+- Use **Interfaces** (2) in a context where you have to differentiate between pure interfaces and concrete classes that have internal implementations. 이런 식으로 구별하면 다이어그램으로 소프트웨어 구현을 기술하려는 경우 유용합니다. 그러나 수동 데이터를 모델링하는 경우 또는 사용자 요구 사항을 기술하는 데 사용되는 개념을 정의하는 경우에는 별로 유용하지 않습니다.
 
-- **열거형** (3)을 사용 하 여 `Stop` 및 `Go`와 같이 제한 된 수의 리터럴 값이 있는 형식을 나타냅니다.
+- Use an **Enumeration** (3) to represent a type that has a limited number of literal values, for example `Stop` and `Go`.
 
   - 리터럴 값을 열거형에 추가하고 각각 별도의 이름을 지정합니다.
 
-  - 원하는 경우 각 리터럴 값에 숫자 값을 제공할 수도 있습니다. 열거형에서 리터럴에 대 한 바로 가기 메뉴를 열고 **속성**을 선택한 다음 **속성** 창에서 **값** 필드에 숫자를 입력 합니다.
+  - 원하는 경우 각 리터럴 값에 숫자 값을 제공할 수도 있습니다. Open the shortcut menu for the literal in the enumeration, choose **Properties**, and then type a number in the **Value** field in the **Properties** window.
 
   각 형식에 고유한 이름을 지정합니다.
 
@@ -136,7 +136,7 @@ Visual Studio에서는 *UML 클래스 다이어그램* 을 사용 하 여 데이
 
  UML 클래스 다이어그램
 
- 둘 이상의 UML 클래스 다이어그램에 클래스를 나타낼 수 있습니다. 한 다이어그램에서 클래스를 만들었으면 **UML 모델 탐색기** 에서 다른 다이어그램으로 클래스를 끌어 옵니다.
+ 둘 이상의 UML 클래스 다이어그램에 클래스를 나타낼 수 있습니다. When you have created a class on one diagram, drag the class from **UML Model Explorer** onto the other diagram.
 
  이 방법은 각 다이어그램에서 특정 관계 그룹에 중점을 두려는 경우 유용합니다.
 
@@ -144,26 +144,26 @@ Visual Studio에서는 *UML 클래스 다이어그램* 을 사용 하 여 데이
 
  구성 요소 다이어그램
 
- 구성 요소 다이어그램의 구성 요소에 인터페이스를 정의한 경우 **UML 모델 탐색기** 의 인터페이스를 클래스 다이어그램으로 끌어 올 수 있습니다. 클래스 다이어그램에서 인터페이스를 포함하는 메서드를 정의할 수 있습니다.
+ If you have defined interfaces on the components in a component diagram, you can drag an interface from **UML Model Explorer** onto the class diagram. 클래스 다이어그램에서 인터페이스를 포함하는 메서드를 정의할 수 있습니다.
 
- [UML 구성 요소 다이어그램: 지침](../modeling/uml-component-diagrams-guidelines.md)을 참조 하세요.
+ See [UML Component Diagrams: Guidelines](../modeling/uml-component-diagrams-guidelines.md).
 
  UML 시퀀스 다이어그램
 
- 시퀀스 다이어그램의 수명선에서 클래스 및 인터페이스를 만든 다음, **Uml 모델 탐색기** 에서 uml 클래스 다이어그램으로 클래스를 끌어올 수 있습니다. 시퀀스 다이어그램의 각 수명선은 개체, 구성 요소 또는 행위자의 인스턴스를 나타냅니다.
+ You can create classes and interfaces from lifelines in a sequence diagram, and then drag the class from **UML Model Explorer** to a UML class diagram. 시퀀스 다이어그램의 각 수명선은 개체, 구성 요소 또는 행위자의 인스턴스를 나타냅니다.
 
- 수명선에서 클래스를 만들려면 수명선에 대 한 바로 가기 메뉴를 연 다음 **클래스 만들기** 또는 **인터페이스 만들기**를 선택 합니다. [UML 시퀀스 다이어그램: 지침](../modeling/uml-sequence-diagrams-guidelines.md)을 참조 하세요.
+ To create a class from a lifeline, open the shortcut menu for the lifeline, and then choose **Create Class** or **Create Interface**. See [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md).
 
-## <a name="AttributesAndOperations"></a>특성 및 작업
+## <a name="AttributesAndOperations"></a> Attributes and Operations
  특성(4)은 형식의 모든 인스턴스가 가질 수 있는 명명된 값입니다. 특성에 액세스하면 인스턴스의 상태가 변경되는 것이 아닙니다.
 
- 작업(5)은 형식의 인스턴스가 수행할 수 있는 메서드 또는 함수입니다. 이때 값을 반환할 수 있습니다. **Isquery** 속성이 true 이면 인스턴스의 상태를 변경할 수 없습니다.
+ 작업(5)은 형식의 인스턴스가 수행할 수 있는 메서드 또는 함수입니다. 이때 값을 반환할 수 있습니다. If its **isQuery** property is true, it cannot change the state of the instance.
 
- 형식에 특성 또는 작업을 추가 하려면 해당 형식에 대 한 바로 가기 메뉴를 열고 **추가**를 선택한 다음 **특성** 또는 **작업**을 선택 합니다.
+ To add an attribute or operation to a type, open the shortcut menu for the type, choose **Add**, and then choose **Attribute** or **Operation**.
 
- 해당 속성을 보려면 특성이 나 작업에 대 한 바로 가기 메뉴를 열고 **속성**을 선택 합니다. 속성은 **속성** 창에 표시 됩니다.
+ To see its properties, open the shortcut menu for the attribute or operation, and then choose **Properties**. The properties appear in the **Properties** window.
 
- 작업 매개 변수의 속성을 보려면 <strong>[...]</strong> 를 선택 합니다. **매개 변수** 속성에 있습니다. 그러면 새 속성 대화 상자가 나타납니다.
+ To see the properties of an operation's parameters, choose <strong>[…]</strong>in the **Parameters** property. 그러면 새 속성 대화 상자가 나타납니다.
 
  설정할 수 있는 모든 속성에 대한 자세한 내용은 다음을 참조하세요.
 
@@ -172,17 +172,17 @@ Visual Studio에서는 *UML 클래스 다이어그램* 을 사용 하 여 데이
 - [UML 클래스 다이어그램 작업의 속성](../modeling/properties-of-operations-on-uml-class-diagrams.md)
 
 ### <a name="types-of-attributes-and-operations"></a>특성 및 작업의 형식
- 특성 또는 작업의 각 *형식* 및 각 매개 변수 형식은 다음 중 하나일 수 있습니다.
+ Each *Type* of an attribute or operation, and each parameter type, can be one of the following:
 
-- **(없음)** -앞의 콜론 (`:`)을 생략 하 여 시그니처에 지정 되지 않은 형식을 그대로 둘 수 있습니다.
+- **(none)** - You can leave a type unspecified in the signature by omitting the preceding colon (`:`).
 
-- 표준 기본 형식 ( **부울**, **정수**, **문자열**) 중 하나입니다.
+- One of the standard primitive types: **Boolean**, **Integer**, **String**.
 
 - 모델에 정의된 형식
 
-- 템플릿 형식에 대 한 매개 변수가 있는 값 \<Parameter >입니다. [템플릿 형식](#Templates)을 참조 하세요.
+- A parameterized value of a template type, written Template\<Parameter>. See [Template Types](#Templates).
 
-  모델에 아직 정의하지 않은 형식의 이름을 작성할 수도 있습니다. 이름은 UML 모델 탐색기의 **지정 되지 않은 형식** 아래에 나열 됩니다.
+  모델에 아직 정의하지 않은 형식의 이름을 작성할 수도 있습니다. The name will be listed under **Unspecified Types** in UML Model Explorer.
 
 > [!NOTE]
 > 그런 다음 이 이름의 클래스 또는 인터페이스를 모델에 정의하더라도 기존 특성 및 작업에서는 여전히 지정되지 않은 형식의 요소를 참조합니다. 기존 특성 및 작업에서 새 클래스를 참조하도록 변경하려면 각 특성 또는 작업의 드롭다운 메뉴에서 새 클래스를 선택하여 형식을 다시 설정해야 합니다.
@@ -198,7 +198,7 @@ Visual Studio에서는 *UML 클래스 다이어그램* 을 사용 하 여 데이
 
  `[0..1]`
 
- **Null** 또는 지정 된 형식의 값입니다.
+ **Null** or a value of the given type.
 
  `[*]`
 
@@ -214,12 +214,12 @@ Visual Studio에서는 *UML 클래스 다이어그램* 을 사용 하 여 데이
 
  복합성이 1보다 크면 다음 속성도 설정할 수 있습니다.
 
-- **Isordered** -true 이면 컬렉션에 순서가 정의 되어 있습니다.
+- **IsOrdered** - If true, the collection has a defined order.
 
-- **IsUnique** -true 이면 컬렉션에 중복 값이 없습니다.
+- **IsUnique** - If true, there are no duplicate values in the collection.
 
 ### <a name="visibility"></a>표시 유형
- *표시 유형* 클래스 정의 외부에서 특성 또는 작업에 액세스할 수 있는지 여부를 나타냅니다. 허용된 값은 다음과 같습니다.
+ *Visibility* indicates whether the attribute or operation can be accessed outside the class definition. 허용된 값은 다음과 같습니다.
 
  **Public**
 
@@ -237,13 +237,13 @@ Visual Studio에서는 *UML 클래스 다이어그램* 을 사용 하 여 데이
 
  **~**
 
- 이 형식을 포함하는 패키지 및 형식을 명시적으로 가져오는 패키지에서만 액세스할 수 있습니다. [네임 스페이스 및 패키지 정의](#Packages)를 참조 하세요.
+ 이 형식을 포함하는 패키지 및 형식을 명시적으로 가져오는 패키지에서만 액세스할 수 있습니다. See [Defining Namespaces and Packages](#Packages).
 
  **보호됨**
 
  **#**
 
- 이 형식 및 이 형식에서 상속되는 형식에만 액세스할 수 있습니다. [상속](#Inheritance)을 참조 하세요.
+ 이 형식 및 이 형식에서 상속되는 형식에만 액세스할 수 있습니다. See [Inheritance](#Inheritance).
 
 ### <a name="setting-the-signature-of-an-attribute-or-an-operation"></a>특성 또는 작업의 시그니처 설정
  특성 또는 작업의 시그니처는 표시 유형, 이름, 매개 변수(작업의 경우) 및 형식을 포함하는 속성 컬렉션입니다.
@@ -262,7 +262,7 @@ visibility attribute-name : Type
 visibility operation-name (parameter1 : Type1, ...) : Type
 ```
 
- 예를 들면,
+ 예를 들어 다음과 같은 가치를 제공해야 합니다.
 
 ```
 + AddItem (item : MenuItem, quantity : Integer) : Boolean
@@ -286,10 +286,10 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
  특성 또는 작업이 정적이면 시그니처에서 이름에 밑줄이 표시되고 추상인 경우에는 이름이 기울임꼴로 표시됩니다.
 
- 그러나 **속성** 창에서 **Static** 및 **is Abstract** 속성만 설정할 수 있습니다.
+ However, you can only set the **Is Static** and **Is Abstract** properties in the **Properties** window.
 
 #### <a name="full-signature"></a>전체 시그니처
- 특성 또는 작업의 시그니처를 편집하는 경우 줄의 끝과 각 매개 변수 뒤에 몇 가지 추가 속성이 나타날 수 있습니다. 이러한 속성은 중괄호 {…} 안에 포함되어 있으며 편집하거나 추가할 수 있습니다. 예를 들면,
+ 특성 또는 작업의 시그니처를 편집하는 경우 줄의 끝과 각 매개 변수 뒤에 몇 가지 추가 속성이 나타날 수 있습니다. 이러한 속성은 중괄호 {…} 안에 포함되어 있으며 편집하거나 추가할 수 있습니다. 예를 들어 다음과 같은 가치를 제공해야 합니다.
 
 ```
 + AddItems (items: MenuItem [1..*] {unique, ordered})
@@ -300,58 +300,58 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
  `unique`
 
- **고유**
+ **Is Unique**
 
  컬렉션에 중복 값이 없습니다. 복합성이 1보다 큰 형식에 적용됩니다.
 
  `ordered`
 
- **정렬 여부**
+ **Is Ordered**
 
  컬렉션이 시퀀스입니다. false이면 첫 번째 항목이 명확하지 않습니다. 복합성이 1보다 큰 형식에 적용됩니다.
 
  `query`
 
- **쿼리**
+ **Is Query**
 
  작업이 인스턴스의 상태를 변경하지 않습니다. 작업에만 적용됩니다.
 
  `/`
 
- **파생 됨**
+ **Is Derived**
 
  특성이 다른 특성의 값 또는 연결에서 계산됩니다.
 
- 특성 이름 앞에 "/"가 나타납니다. 예를 들면,
+ 특성 이름 앞에 "/"가 나타납니다. 예를 들어 다음과 같은 가치를 제공해야 합니다.
 
 ```
 /TotalPrice: Integer
 ```
 
- 일반적으로 전체 시그니처는 편집하는 동안에만 다이어그램에 나타나고 편집이 끝나면 추가 속성이 숨겨집니다. 전체 서명을 항상 표시 하려면 해당 형식에 대 한 바로 가기 메뉴를 연 다음 **전체 시그니처 표시**를 선택 합니다.
+ 일반적으로 전체 시그니처는 편집하는 동안에만 다이어그램에 나타나고 편집이 끝나면 추가 속성이 숨겨집니다. If you want to see the full signature all the time, open the shortcut menu for the type, and then choose **Show Full Signature**.
 
-## <a name="Associations"></a>연결 그리기 및 사용
+## <a name="Associations"></a> Drawing and Using Associations
  두 요소 간의 링크가 소프트웨어에서 구현되는 방식에 관계없이 링크의 종류를 나타낼 때 연결을 사용합니다. 예를 들어 C#의 포인터, 데이터베이스의 관계, XML 파일에서 각 파트 간 상호 참조 등을 나타낼 때 연결을 사용할 수 있습니다. 이러한 연결은 지구와 태양 같이 실재하는 개체 간의 연결을 나타낼 수 있으며, 해당 정보가 존재한다는 것만 알려 줄 뿐 링크를 나타내는 방법에 대해서는 알려 주지 않습니다.
 
 ### <a name="properties-of-an-association"></a>연결의 속성
- 연결을 만든 후에는 속성을 설정합니다. 연결에 대 한 바로 가기 메뉴를 열고 **속성**을 선택 합니다.
+ 연결을 만든 후에는 속성을 설정합니다. Open the shortcut menu for the association, and then choose **Properties**.
 
- 전체 연결의 속성 외에도 각 *역할*에는 연결의 각 끝에 해당 하는 속성이 있습니다. 이를 보려면 **첫 번째 역할과** **두 번째 역할** 속성을 확장 합니다.
+ In addition to the properties of the association as a whole, each *role*, that is, each end of the association, has some properties of its own. To view them, expand the **First Role** and **Second Role** properties.
 
  각 역할의 일부 속성은 다이어그램에서 직접 볼 수 있습니다. 그 차이점은 다음과 같습니다.
 
-- 역할 이름. 다이어그램에서 연결의 끝에 나타납니다. 다이어그램 또는 속성 창에서이 **속성** 을 설정할 수 있습니다.
+- 역할 이름. 다이어그램에서 연결의 끝에 나타납니다. You can set it either on the diagram or in the **Properties** window.
 
-- **복합성이**기본값은 **1**입니다. 마찬가지로 다이어그램에서 연결의 끝에 나타납니다.
+- **Multiplicity**, which defaults to **1**. 마찬가지로 다이어그램에서 연결의 끝에 나타납니다.
 
-- **집계**. 이 속성은 연결선의 한 쪽 끝에 다이아몬드 모양으로 나타납니다. 집합체 역할의 인스턴스가 다른 역할의 인스턴스를 소유하거나 포함한다는 것을 나타낼 때 사용할 수 있습니다.
+- **Aggregation**. 이 속성은 연결선의 한 쪽 끝에 다이아몬드 모양으로 나타납니다. 집합체 역할의 인스턴스가 다른 역할의 인스턴스를 소유하거나 포함한다는 것을 나타낼 때 사용할 수 있습니다.
 
-- **탐색**가능. 한 역할에 대해서만 true이면 탐색 가능 방향에 화살표가 나타납니다. 소프트웨어에서 데이터베이스 관계 및 링크의 탐색 가능성을 나타낼 때 이 속성을 사용할 수 있습니다.
+- **Is Navigable**. 한 역할에 대해서만 true이면 탐색 가능 방향에 화살표가 나타납니다. 소프트웨어에서 데이터베이스 관계 및 링크의 탐색 가능성을 나타낼 때 이 속성을 사용할 수 있습니다.
 
-  이러한 속성 및 기타 속성에 대 한 자세한 내용은 [UML 클래스 다이어그램 연결의 속성](../modeling/properties-of-associations-on-uml-class-diagrams.md)을 참조 하세요.
+  For the full details of these and other properties, see [Properties of associations on UML class diagrams](../modeling/properties-of-associations-on-uml-class-diagrams.md).
 
 ### <a name="navigability"></a>탐색 가능성
- 연결을 그리면 한쪽 끝에 화살표가 표시되어 그 방향으로 연결을 탐색할 수 있음을 나타냅니다. 이는 클래스 다이어그램이 소프트웨어 클래스를 나타내고 연결이 포인터나 참조를 나타내는 경우에 유용합니다. 그러나 클래스 다이어그램을 사용하여 엔터티 및 관계나 비즈니스 개념을 나타내는 경우는 탐색 가능성을 나타내는 것과 관련이 적습니다. 이 경우에는 화살표 없이 연결을 그릴 수 있습니다. 이렇게 하려면 연결의 양쪽 끝에 있는 **탐색** 가능 속성을 True로 설정 합니다. 이 작업을 더 쉽게 수행 하기 위해 코드 샘플 [UML 도메인 모델링](http://code.msdn.microsoft.com/UML-Domain-Modeling-6df6f7f4)을 다운로드할 수 있습니다.
+ 연결을 그리면 한쪽 끝에 화살표가 표시되어 그 방향으로 연결을 탐색할 수 있음을 나타냅니다. 이는 클래스 다이어그램이 소프트웨어 클래스를 나타내고 연결이 포인터나 참조를 나타내는 경우에 유용합니다. 그러나 클래스 다이어그램을 사용하여 엔터티 및 관계나 비즈니스 개념을 나타내는 경우는 탐색 가능성을 나타내는 것과 관련이 적습니다. 이 경우에는 화살표 없이 연결을 그릴 수 있습니다. You can do so by setting the **Is Navigable** property on both ends of the association to True.
 
 ### <a name="attributes-and-associations"></a>특성 및 연결
  연결은 그림으로 특성을 나타내는 방법입니다. 예를 들어 Menu 형식의 특성이 있는 Restaurant 클래스를 만드는 대신 Restaurant에서 Menu로 이어지는 연결을 그릴 수 있습니다.
@@ -360,16 +360,16 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
  일반적으로 기본 형식과 같이 다이어그램에 그리지 않는 형식에 대해서만 특성을 사용하는 것이 좋습니다.
 
- ![동등한 연결 및 특성](../modeling/media/uml-classguideattrib.png "UML_ClassGuideAttrib")
+ ![Equivalent association and attributes](../modeling/media/uml-classguideattrib.png "UML_ClassGuideAttrib")
 
 ## <a name="Inheritance"></a> 상속
- **상속** 도구를 사용 하 여 다음 관계를 만듭니다.
+ Use the **Inheritance** tool to create the following relationships:
 
-- 특수화 된 형식과 일반 형식 간의 *일반화* 관계
+- A *generalization* relationship between a specialized type and a general type
 
    \- 또는 -
 
-- 클래스와 클래스에서 구현 하는 인터페이스 간의 *인식* 관계입니다.
+- A *realization* relation between a class and an interface that it implements.
 
   상속 관계에서는 루프를 만들 수 없습니다.
 
@@ -386,11 +386,11 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
     관계가 강조 표시된 상태로 나타나고 작업 태그가 주변에 나타납니다.
 
-2. 작업 태그를 클릭 한 다음 **작업 재정의**를 클릭 합니다.
+2. Click the Action tag, and then click **Override Operations**.
 
-    **재정의 작업** 대화 상자가 나타납니다.
+    The **Override Operations** dialog box appears.
 
-3. 특수화 형식에 표시할 작업을 선택 하 고 **확인**을 클릭 합니다.
+3. Select the operations that you want to appear in the specializing type, and then click **OK**.
 
    선택한 작업이 특수화 형식에 나타납니다.
 
@@ -399,78 +399,78 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
  인식 연결선을 만들면 인터페이스의 작업이 자동으로 인식 클래스에 복제됩니다. 인터페이스에 새 작업을 추가하는 경우에도 이러한 작업이 인식 클래스에 복제됩니다.
 
- 인식 관계를 만든 후에는 롤리팝 표기로 변환할 수 있습니다. 관계를 마우스 오른쪽 단추로 클릭 하 고 **롤리팝으로 표시**를 선택 합니다.
+ 인식 관계를 만든 후에는 롤리팝 표기로 변환할 수 있습니다. Right-click the relationship and choose **Show as Lollipop**.
 
  이렇게 하면 인식 링크로 인해 클래스 다이어그램을 복잡하게 만들지 않고 클래스에서 구현하는 인터페이스를 표시할 수 있습니다. 또한 인터페이스와 이 인터페이스를 구현하는 클래스를 별도의 다이어그램에 표시할 수도 있습니다.
 
- ![연결선 및 롤리팝으로 표시 된 실현](../modeling/media/uml-classguiderealize.png "UML_ClassGuideRealize")
+ ![Realization shown with conector and lollipop](../modeling/media/uml-classguiderealize.png "UML_ClassGuideRealize")
 
-## <a name="Templates"></a>템플릿 형식
+## <a name="Templates"></a> Template Types
  다른 형식이나 값에 의해 매개 변수화될 수 있는 제네릭 또는 템플릿 형식을 정의할 수 있습니다.
 
  예를 들어 다음과 같이 키 및 값 형식에 의해 매개 변수화된 제네릭 Dictionary를 만들 수 있습니다.
 
- ![두 매개 변수가 있는 템플릿 클래스](../modeling/media/uml-classguidetemplate1.png "UML_ClassGuideTemplate1")
+ ![Template class with two parameters](../modeling/media/uml-classguidetemplate1.png "UML_ClassGuideTemplate1")
 
 #### <a name="to-create-a-template-type"></a>템플릿 형식을 만들려면
 
 1. 클래스 또는 인터페이스를 만듭니다. 이 클래스 또는 인터페이스가 템플릿 형식이 됩니다. 그런 다음 적절하게 이름을 지정합니다(예: `Dictionary`).
 
-2. 새 형식에 대 한 바로 가기 메뉴를 열고 **속성**을 선택 합니다.
+2. Open the shortcut menu for the new type, and then choose **Properties**.
 
-3. **속성** 창의 **템플릿 매개 변수** 필드에서 **[...]** 를 클릭 합니다.
+3. In the **Properties** window, click **[…]** in the **Template Parameters** field.
 
-    **템플릿 매개 변수 컬렉션 편집기** 대화 상자가 나타납니다.
+    The **Template Parameter Collection Editor** dialog box appears.
 
 4. **추가**를 선택합니다.
 
 5. 이름 속성을 템플릿 형식의 매개 변수 이름으로 설정합니다(예: `Key`).
 
-6. **매개 변수 종류**를 설정 합니다. 기본값은 **클래스**입니다.
+6. Set **Parameter Kind**. The default is **Class**.
 
-7. 매개 변수가 특정 기본 클래스의 파생 클래스만 허용 하도록 하려면 **제한 된 값** 을 원하는 기본 클래스로 설정 합니다.
+7. If you want the parameter to accept only derived classes of a particular base class, set **Constrained Value** to the base class that you want.
 
-8. 필요한 만큼 매개 변수를 추가한 다음 **확인**을 선택 합니다.
+8. Add as many parameters as you need, then choose **OK**.
 
 9. 다른 클래스에 했던 것과 마찬가지로 템플릿 형식에 특성 및 작업을 추가합니다.
 
-     특성 및 작업 정의에서 종류가 **클래스**, **인터페이스** 또는 **열거형** 인 매개 변수를 사용할 수 있습니다. 예를 들어 다음과 같이 `Key`와 `Value`라는 클래스 매개 변수를 사용하여 `Dictionary`에 이 작업을 정의할 수 있습니다.
+     You can use parameters whose kind is **Class**, **Interface** or **Enumeration** in the definition of attributes and operations. 예를 들어 다음과 같이 `Key`와 `Value`라는 클래스 매개 변수를 사용하여 `Dictionary`에 이 작업을 정의할 수 있습니다.
 
      `Get(k : Key) : Value`
 
-     종류가 **정수** 인 매개 변수를 복합성의 바인딩된 매개 변수로 사용할 수 있습니다. 예를 들어 정수 매개 변수 max를 사용하여 특성의 복합성을 `[0..max]`로 정의할 수 있습니다.
+     You can use a parameter whose kind is **Integer** as a bound in a multiplicity. 예를 들어 정수 매개 변수 max를 사용하여 특성의 복합성을 `[0..max]`로 정의할 수 있습니다.
 
    템플릿 형식을 만들었으면 템플릿 바인딩을 정의하는 데 사용할 수 있습니다.
 
-   ![사전 템플릿에서 바인딩된 클래스](../modeling/media/uml-classguidetemplate2.png "UML_ClassGuideTemplate2")
+   ![A  class bound from the Dictionary template](../modeling/media/uml-classguidetemplate2.png "UML_ClassGuideTemplate2")
 
 #### <a name="to-use-a-template-type"></a>템플릿 형식을 사용하려면
 
 1. 새 형식을 만듭니다(예: `AddressTable`).
 
-2. 새 형식에 대 한 바로 가기 메뉴를 열고 **속성**을 선택 합니다.
+2. Open the shortcut menu for the new type, and then choose **Properties**.
 
-3. **템플릿 바인딩** 속성의 드롭다운 목록에서 템플릿 유형 (예: `Dictionary`)을 선택 합니다.
+3. In the **Template Binding** property, select the template type, for example `Dictionary`, from the drop-down list.
 
-4. **템플릿 바인딩** 속성을 확장 합니다.
+4. Expand the **Template Binding** property.
 
      템플릿 형식의 각 매개 변수에 대한 행이 나타납니다.
 
 5. 각 매개 변수에 적절한 값을 설정합니다. 예를 들어 `Key` 매개 변수를 `Name`이라는 클래스로 설정합니다.
 
-## <a name="Packages"></a>검색할
+## <a name="Packages"></a> Packages
  UML 클래스 다이어그램에서 패키지를 볼 수 있습니다. 패키지는 다른 모델 요소를 포함하기 위한 컨테이너입니다. 패키지 내에 어떤 요소라도 만들 수 있습니다. 다이어그램에서 패키지를 움직이면 해당 패키지에 포함된 요소도 움직이게 됩니다.
 
  확장/축소 컨트롤을 사용하여 패키지 내용을 표시하거나 숨길 수 있습니다.
 
- [패키지 및 네임 스페이스 정의를](../modeling/define-packages-and-namespaces.md)참조 하세요.
+ See [Define packages and namespaces](../modeling/define-packages-and-namespaces.md).
 
-## <a name="generating"></a>UML 클래스 다이어그램에서 코드 생성
+## <a name="generating"></a> Generating Code from UML Class Diagrams
  UML 클래스 다이어그램에 대한 클래스 구현을 시작하려면 C# 코드를 생성하거나 코드 생성에 대한 템플릿을 사용자 지정합니다. 제공된 C# 템플릿을 사용하여 코드 생성을 시작하려면
 
-- 다이어그램 또는 요소에 대 한 바로 가기 메뉴를 열고 **코드 생성**을 선택한 다음 필요한 속성을 설정 합니다.
+- Open the shortcut menu for the diagram or an element, choose **Generate Code**, and then set the necessary properties.
 
-     이러한 속성을 설정 하 고 제공 된 템플릿을 사용자 지정 하는 방법에 대 한 자세한 내용은 [UML 클래스 다이어그램에서 코드 생성](../modeling/generate-code-from-uml-class-diagrams.md)을 참조 하세요.
+     For more information about how to set these properties and customize the provided templates, see [Generate code from UML class diagrams](../modeling/generate-code-from-uml-class-diagrams.md).
 
 ## <a name="see-also"></a>관련 항목:
- [Uml 모델 및 다이어그램 편집](../modeling/edit-uml-models-and-diagrams.md) [uml 클래스 다이어그램](../modeling/uml-class-diagrams-reference.md) : 참조 [모델 사용자 요구 사항](../modeling/model-user-requirements.md) Uml [구성 요소 다이어그램](../modeling/uml-component-diagrams-reference.md) : Uml [시퀀스 다이어그램](../modeling/uml-sequence-diagrams-reference.md) 참조: uml [사용 사례 다이어그램 참조:](../modeling/uml-use-case-diagrams-reference.md) [uml 참조 구성 요소 다이어그램: 참조](../modeling/uml-component-diagrams-reference.md)
+ [Edit UML models and diagrams](../modeling/edit-uml-models-and-diagrams.md) [UML Class Diagrams: Reference](../modeling/uml-class-diagrams-reference.md) [Model user requirements](../modeling/model-user-requirements.md) [UML Component Diagrams: Reference](../modeling/uml-component-diagrams-reference.md) [UML Sequence Diagrams: Reference](../modeling/uml-sequence-diagrams-reference.md) [UML Use Case Diagrams: Reference](../modeling/uml-use-case-diagrams-reference.md) [UML Component Diagrams: Reference](../modeling/uml-component-diagrams-reference.md)

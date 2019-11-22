@@ -1,5 +1,5 @@
 ---
-title: 기호 (.pdb)을 지정 하 고 디버거에서 파일 원본 | Microsoft Docs
+title: Specify Symbol (.pdb) and Source Files in the Debugger | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -27,12 +27,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 23c570e9d29c2288da32469b524c5e4d9125b097
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: d4d4b02d512480d96c501758f4cf0f1313158942
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65694921"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300559"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Visual Studio 디버거에서 기호 파일(.pdb) 및 원본 파일 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,9 +41,9 @@ ms.locfileid: "65694921"
 
  Visual Studio IDE에서 프로젝트를 디버깅할 때 디버거는 코드에 대한 .pdb 및 소스 파일의 기본 위치를 알고 있습니다. 프로젝트에서 호출하는 Windows 또는 타사 코드와 같은 프로젝트 소스 코드 외부의 코드를 디버깅하려는 경우, .pdb(및 필요에 따라 외부 코드의 소스 파일)의 위치를 지정해야 하며 이러한 파일은 실행 파일의 빌드와 정확히 일치해야 합니다.
 
- Visual Studio 2012 이전에는 원격 디바이스에서 관리 코드를 디버그하는 경우 원격 컴퓨터에 기호 파일을 넣어야 했습니다. 이제는 그렇지 않습니다. 모든 기호 파일은 로컬 컴퓨터 또는 **도구/옵션/디버깅/기호** 페이지에 지정된 위치에 있어야 합니다.
+ Visual Studio 2012 이전에는 원격 디바이스에서 관리 코드를 디버그하는 경우 원격 컴퓨터에 기호 파일을 넣어야 했습니다. 물론 이에 해당하는 경우는 더 이상 없습니다. 모든 기호 파일은 로컬 컴퓨터 또는 **도구/옵션/디버깅/기호** 페이지에 지정된 위치에 있어야 합니다.
 
-## <a name="BKMK_Find_symbol___pdb__files"></a> 디버거에서는.pdb 파일을 검색할 위치
+## <a name="BKMK_Find_symbol___pdb__files"></a> Where the debugger searches for .pdb files
 
 1. DLL 또는 실행 파일 내의 지정된 위치
 
@@ -58,14 +58,14 @@ ms.locfileid: "65694921"
 ### <a name="BKMK_Why_do_symbol_files_need_to_exactly_match_the_executable_files_"></a> 기호 파일이 실행 파일과 정확하게 일치해야 하는 이유
  디버거는 실행 파일을 빌드할 때 만든 .pdb 파일과 정확히 일치하는 실행 파일의 .pdb 파일만 로드합니다. 즉, .pdb는 원본이거나 원본 .pdb 파일의 복사본이어야 합니다. 올바르고 효율적인 코드를 작성하는 주요 작업 외에 컴파일 속도에 대해 컴파일러가 최적화되므로 실행 파일의 실제 레이아웃은 코드 자체가 변경되지 않은 경우에도 변경될 수 있습니다. 자세한 내용은 [Why does Visual Studio require debugger symbol files to exactly match the binary files that they were built with?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)(영문)를 참조하십시오.
 
-### <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a> 기호 위치 및 로드 동작 지정
+### <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a> Specify symbol locations and loading behavior
  VS IDE에서 프로젝트를 디버깅할 때 디버거는 프로젝트 디렉터리에 있는 기호 파일을 자동으로 로드합니다. **도구/옵션/디버깅/기호**에서 Microsoft, Windows 또는 타사 구성 요소의 대체 검색 경로 및 기호 서버를 지정할 수 있습니다. 디버거에서 자동으로 기호를 로드할 특정 모듈을 지정할 수도 있습니다. 그런 다음 본격적으로 디버깅하는 동안 이러한 설정을 수동으로 변경할 수 있습니다.
 
 1. Visual Studio에서 **도구/옵션/디버깅/기호** 페이지를 엽니다.
 
-    ![도구 &#45; 옵션 &#45; 디버깅 &#45; 기호 페이지](../debugger/media/dbg-tools-options-symbols.png "DBG_Tools_Options_Symbols")
+    ![Tools &#45; Options &#45; Debugging &#45; Symbols page](../debugger/media/dbg-tools-options-symbols.png "DBG_Tools_Options_Symbols")
 
-2. 폴더 선택 ![도구&#47; 옵션&#47; 디버깅&#47;기호 폴더 아이콘](../debugger/media/dbg-tools-options-foldersicon.png "DBG_Tools_Options_FoldersIcon") 아이콘입니다. 편집 가능한 텍스트가 **기호 파일(.pdb) 위치** 상자에 나타납니다.
+2. Choose the folder ![Tools&#47; Options&#47; Debugging&#47;Symbols  folder icon](../debugger/media/dbg-tools-options-foldersicon.png "DBG_Tools_Options_FoldersIcon") icon. 편집 가능한 텍스트가 **기호 파일(.pdb) 위치** 상자에 나타납니다.
 
 3. 기호 서버 또는 기호 위치에 대한 URL 또는 디렉터리 경로를 입력합니다. 문 완성 기능으로 올바른 형식을 찾을 수 있습니다.
 
@@ -74,7 +74,7 @@ ms.locfileid: "65694921"
    > [!NOTE]
    > 보호되는 폴더(예: C:\Windows 폴더 또는 하위 폴더 중 하나)에 기호 캐시를 배치하지 마십시오. 대신 읽기/쓰기 폴더를 사용하십시오.
 
-   **기호 로드 동작 지정**
+   **Specify symbol loading behavior**
 
    디버깅을 시작할 때 **기호 파일(.pdb) 위치** 상자 위치에서 자동으로 로드될 파일을 지정할 수 있습니다. 프로젝트 디렉터리에 있는 기호 파일은 항상 로드됩니다.
 
@@ -82,15 +82,15 @@ ms.locfileid: "65694921"
 
 6. **지정된 모듈만** 옵션을 선택한 다음 **모듈 지정** 을 선택하여 자동으로 로드하려는 기호 파일 모듈을 나열합니다. 다른 모듈의 기호 파일은 무시됩니다.
 
-   **추가 기호 옵션 지정**
+   **Specify additional symbol options**
 
    **도구/옵션/디버깅/기호** 페이지에서 다음 옵션을 설정할 수도 있습니다.
 
-   **시작 (네이티브 전용)에 기호가 없으면 경으십시오**
+   **Warn if no symbols on launch (native only)**
 
    이 옵션을 선택하면 디버거에 기호 정보가 없는 프로그램을 디버깅하려고 할 때 경고 대화 상자가 표시됩니다.
 
-   **DLL 내보내기 로드**
+   **Load DLL exports**
 
    이 옵션을 선택하면 DLL 내보내기 테이블이 로드됩니다. Windows 메시지, Windows 프로시저(WindowProcs), COM 개체, 마샬링 또는 기호가 없는 DLL을 사용하여 작업하는 경우 DLL 내보내기 테이블의 기호 정보가 유용할 수 있지만, DLL 내보내기 정보를 읽으면 오버헤드가 발생합니다. 따라서 이 기능은 기본적으로 해제되어 있습니다.
 
@@ -135,7 +135,7 @@ ms.locfileid: "65694921"
 
    이러한 이벤트 중 하나가 발생하면 디버거는 **로드된 기호 없음** 페이지를 표시하여 필요한 기호를 찾고 로드할 수 있게 해 줍니다.
 
-   ![로드 된 기호 없음 페이지](../debugger/media/dbg-nosymbolsloaded.png "DBG_NoSymbolsLoaded")
+   ![No Symbols Loaded page](../debugger/media/dbg-nosymbolsloaded.png "DBG_NoSymbolsLoaded")
 
 - 검색 경로를 변경하려면 선택되지 않은 경로를 선택하거나 **새로 만들기** 를 선택하고 새 경로를 입력합니다. 경로를 다시 검색하고 발견되는 기호 파일을 로드하려면 **로드** 를 선택합니다.
 
@@ -147,7 +147,7 @@ ms.locfileid: "65694921"
 
 - 소스 또는 기호 파일을 찾을 수 없는 경우 항상 디스어셈블리를 표시하려면 **옵션 대화 상자** 링크를 선택하고 **주소 수준 디버깅 사용** 및 **소스를 사용할 수 없을 경우 디스어셈블리 표시**를 둘 다 선택합니다.
 
-   ![옵션 &#47; 디버깅 &#47; 일반 디스어셈블리 옵션](../debugger/media/dbg-options-general-disassembly-checkbox.png "DBG_Options_General_disassembly_checkbox")
+   ![Options &#47; Debugging  &#47; General disassembly options](../debugger/media/dbg-options-general-disassembly-checkbox.png "DBG_Options_General_disassembly_checkbox")
 
   **바로 가기 메뉴에서 기호 옵션 변경**
 
@@ -175,7 +175,7 @@ ms.locfileid: "65694921"
 
 - project.pdb. 이 파일에는 .exe 파일에 대한 디버그 정보가 모두 저장됩니다. C/C++의 경우에는 \debug 하위 디렉터리에 이 파일이 저장됩니다.
 
-  C/C++ 컴파일러는 OBJ 파일을 만들 때마다 VC*x*.pdb에 디버그 정보를 병합합니다. 삽입되는 정보에는 유형 정보가 포함되지만 함수 정의와 같은 기호 정보는 포함되지 않습니다. 와 같은 공통 헤더 파일은 모든 소스 파일에 포함 하는 경우에 \<windows.h >에 해당 헤더의 typedef는 모든 OBJ 파일에 되지 않고 한 번만 저장 됩니다.
+  C/C++ 컴파일러는 OBJ 파일을 만들 때마다 VC*x*.pdb에 디버그 정보를 병합합니다. 삽입되는 정보에는 유형 정보가 포함되지만 함수 정의와 같은 기호 정보는 포함되지 않습니다. So even if every source file includes common header files such as \<windows.h>, the typedefs from those headers are stored only once, rather than being in every OBJ file.
 
   링커는 프로젝트의 EXE 파일에 대한 디버그 정보가 포함된 project.pdb를 만듭니다. project.pdb 파일에는 VC*x*.pdb에 있는 형식 정보뿐만 아니라 함수 프로토타입을 비롯한 전체 디버그 정보가 포함됩니다. 두 .pdb 파일 모두 증분 업데이트가 가능합니다. 링커에서는 작성되는 .exe 파일이나 .dll 파일에 .pdb 파일의 경로도 포함합니다.
 
@@ -183,11 +183,11 @@ ms.locfileid: "65694921"
 
   **.NET Framework 옵션**
 
-  프로그램 데이터베이스(.pdb) 파일에는 프로그램에 대한 디버그 구성의 증분 링크를 허용하는 디버깅 및 프로젝트 상태 정보가 저장됩니다. .pdb 파일은 **/debug**로 빌드하는 경우 만들어집니다. **/debug:full** 또는 **/debug:pdbonly**를 사용하여 응용 프로그램을 빌드할 수 있습니다. **/debug:full** 을 사용하여 빌드하면 디버깅 가능한 코드가 생성됩니다. **/debug:pdbonly** 를 사용하여 빌드하면 .pdb 파일이 생성되지만 디버그 정보를 사용할 수 있다는 사실을 JIT 컴파일러에 알리는 `DebuggableAttribute` 는 생성되지 않습니다. 디버깅할 수 없도록 하려는 릴리스 빌드에 대해 .pdb 파일을 생성하려면 **/debug:pdbonly** 를 사용합니다. 자세한 내용은 [/debug (C# Compiler Options)](https://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969) 또는 [/debug (Visual Basic)](https://msdn.microsoft.com/library/c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2)를 참조하세요.
+  프로그램 데이터베이스(.pdb) 파일에는 프로그램에 대한 디버그 구성의 증분 링크를 허용하는 디버깅 및 프로젝트 상태 정보가 저장됩니다. .pdb 파일은 **/debug**로 빌드하는 경우 만들어집니다. **/debug:full** 또는 **/debug:pdbonly**를 사용하여 애플리케이션을 빌드할 수 있습니다. **/debug:full** 을 사용하여 빌드하면 디버깅 가능한 코드가 생성됩니다. **/debug:pdbonly** 를 사용하여 빌드하면 .pdb 파일이 생성되지만 디버그 정보를 사용할 수 있다는 사실을 JIT 컴파일러에 알리는 `DebuggableAttribute` 는 생성되지 않습니다. 디버깅할 수 없도록 하려는 릴리스 빌드에 대해 .pdb 파일을 생성하려면 **/debug:pdbonly** 를 사용합니다. 자세한 내용은 [/debug (C# Compiler Options)](https://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969) 또는 [/debug (Visual Basic)](https://msdn.microsoft.com/library/c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2)를 참조하세요.
 
   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 디버거는 project.pdb 파일을 찾기 위해 EXE 또는 DLL 파일에서 .pdb 파일의 경로를 사용합니다. 디버거가 해당 위치에서 .pdb 파일을 찾을 수 없거나 경로가 올바르지 않은 경우, 디버거는 EXE가 포함된 경로를 검색한 다음 **옵션** 대화 상자에 지정된 기호 경로를 검색합니다. 이 경로는 일반적으로 **기호** 노드의 **디버깅** 폴더입니다. 디버거는 디버깅 중인 실행 파일과 일치하지 않는 .pdb 파일은 로드하지 않습니다. 디버거가 .pdb 파일을 찾지 못하면 기호를 검색하거나 검색 경로에 위치를 더 추가할 수 있는 **기호 찾기** 대화 상자가 나타납니다.
 
-  **웹 응용 프로그램**
+  **웹 애플리케이션**
 
   애플리케이션의 구성 파일(Web.config)이 디버그 모드로 설정되어 있어야 합니다. 디버그 모드에서는 동적으로 생성된 파일에 대한 기호가 ASP.NET에서 생성되며 디버거가 ASP.NET 애플리케이션에 연결될 수 있습니다. 웹 프로젝트 템플릿에서 프로젝트를 만든 경우 디버깅을 시작하면 VS가 이를 자동으로 설정합니다.
 
@@ -214,7 +214,7 @@ ms.locfileid: "65694921"
 
 2. **공용 속성** 노드에서 **소스 파일 디버그**를 선택합니다.
 
-3. 폴더를 클릭 ![도구&#47; 옵션&#47; 디버깅&#47;기호 폴더 아이콘](../debugger/media/dbg-tools-options-foldersicon.png "DBG_Tools_Options_FoldersIcon") 아이콘입니다. 편집 가능한 텍스트가 **소스 코드가 포함되어 있는 디렉터리** 목록에 나타납니다.
+3. Click the folder ![Tools&#47; Options&#47; Debugging&#47;Symbols  folder icon](../debugger/media/dbg-tools-options-foldersicon.png "DBG_Tools_Options_FoldersIcon") icon. 편집 가능한 텍스트가 **소스 코드가 포함되어 있는 디렉터리** 목록에 나타납니다.
 
 4. 검색할 경로를 추가합니다.
 
@@ -224,7 +224,7 @@ ms.locfileid: "65694921"
  로컬 컴퓨터에 소스 코드가 없거나 .pdb 파일이 소스 코드와 일치하지 않는 경우 소스 서버를 사용하여 애플리케이션을 디버깅할 수 있습니다. 소스 서버에서는 파일에 대한 요청을 전달받고 실제 파일을 반환합니다. 소스 서버를 실행하는 데는 srcsrv.dll이라는 DLL 파일이 사용됩니다. 소스 서버는 애플리케이션의 .pdb 파일을 읽습니다. 이 PDB 파일에는 소스 코드 리포지토리에 대한 포인터와 리포지토리에서 소스 코드를 검색하는 데 사용되는 명령이 포함되어 있습니다. srcsrv.ini라는 파일 내에 허용되는 명령의 목록을 지정하여 애플리케이션의 .pdb 파일에서 실행할 수 있는 명령을 제한할 수 있습니다. 이 파일은 srcsrv.dll 및 devenv.exe와 동일한 디렉터리에 있어야 합니다.
 
 > [!IMPORTANT]
-> 임의의 명령이 애플리케이션의 .pdb 파일에 포함될 수 있으므로 실행하려는 명령만 srcsrv.ini 파일에 삽입해야 합니다. srcsvr.ini 파일에 포함되지 않은 명령을 실행하려고 하면 확인 대화 상자가 나타납니다. 자세한 내용은 참조 하세요. [보안 경고: 디버거가 신뢰할 수 없는 명령을 실행해야 합니다](../debugger/security-warning-debugger-must-execute-untrusted-command.md). 명령 매개 변수에 대해서는 유효성 검사를 수행하지 않으므로 신뢰되는 명령에 대해 주의를 기울여야 합니다. 예를 들어 cmd.exe를 신뢰한 경우 악의적인 사용자가 이 명령을 위험하게 만드는 매개 변수를 지정할 수도 있습니다.
+> 임의의 명령이 애플리케이션의 .pdb 파일에 포함될 수 있으므로 실행하려는 명령만 srcsrv.ini 파일에 삽입해야 합니다. srcsvr.ini 파일에 포함되지 않은 명령을 실행하려고 하면 확인 대화 상자가 나타납니다. 자세한 내용은 [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md)을 참조하세요. 명령 매개 변수에 대해서는 유효성 검사를 수행하지 않으므로 신뢰되는 명령에 대해 주의를 기울여야 합니다. 예를 들어 cmd.exe를 신뢰한 경우 악의적인 사용자가 이 명령을 위험하게 만드는 매개 변수를 지정할 수도 있습니다.
 
  **소스 서버를 사용하도록 설정하려면**
 
@@ -238,11 +238,11 @@ ms.locfileid: "65694921"
 
 4. **소스 서버 지원 사용** 확인란을 선택합니다.
 
-     ![원본 서버 옵션을 사용 하도록 설정](../debugger/media/dbg-options-general-enablesrcsrvr-checkbox.png "DBG_Options_General_EnableSrcSrvr_checkbox")
+     ![Enable source server options](../debugger/media/dbg-options-general-enablesrcsrvr-checkbox.png "DBG_Options_General_EnableSrcSrvr_checkbox")
 
 5. (선택 사항) 원하는 자식 옵션을 선택합니다.
 
      **부분 트러스트 어셈블리에 대한 소스 서버 허용(관리만 해당)** 및 **항상 묻지 않고 신뢰하지 않는 소스 서버 명령 실행** 은 위에서 설명한 보안 위험을 증가시킬 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
- [Visual Studio 2012 및 2013의 .NET 원격 기호 로드 변경 내용](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)
+## <a name="see-also"></a>관련 항목:
+ [Visual Studio 2012 및 2013의 .NET 원격 기호 로드 변경 내용](https://devblogs.microsoft.com/devops/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)

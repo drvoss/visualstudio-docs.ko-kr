@@ -9,25 +9,25 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d9cf0177efe373933f8c34e1600658160f489a64
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a9651c04c1d94459052d92cdda0afa58e344b650
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667348"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295790"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>1단계: Windows Forms 애플리케이션 프로젝트 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 사진 뷰어를 만드는 첫 번째 단계는 Windows Forms 애플리케이션 프로젝트를 만드는 것입니다.
 
- ![비디오에 연결](../data-tools/media/playvideo.gif "링크 playvideo 보려면") 이 항목의 비디오 버전을 보려면 [자습서 1: Visual Basic에서 사진 뷰어 만들기-비디오 1](http://go.microsoft.com/fwlink/?LinkId=205209) 또는 [자습서 1: 비디오 1에서 C# 사진 뷰어 만들기](http://go.microsoft.com/fwlink/?LinkId=205199)를 참조 하세요. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
+ ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 1](https://go.microsoft.com/fwlink/?LinkId=205209) or [Tutorial 1: Create a Picture Viewer in C# - Video 1](https://go.microsoft.com/fwlink/?LinkId=205199). 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
 
 ### <a name="to-create-a-windows-forms-application-project"></a>Windows Forms 애플리케이션 프로젝트를 만들려면
 
 1. 메뉴 모음에서 **파일**, **새로 만들기**, **프로젝트**를 차례로 선택합니다. 대화 상자는 다음과 같습니다.
 
-     ![새 프로젝트 대화 상자](../ide/media/newprojectdialogcallouts.png "NewProjectDialogCallouts") 새 프로젝트 대화 상자
+     ![New project dialog](../ide/media/newprojectdialogcallouts.png "NewProjectDialogCallouts") New project dialog box
 
 2. **설치된 템플릿** 목록에서 **Visual C#** 또는 **Visual Basic**을 선택합니다.
 
@@ -40,7 +40,7 @@ ms.locfileid: "72667348"
     > [!NOTE]
     > 창 레이아웃은 이 그림과 다를 수 있습니다. 정확한 창 레이아웃은 Visual Studio 버전, 사용 중인 프로그래밍 언어 및 기타 요소에 따라 달라집니다. 그러나 3개 창이 모두 나타나는지 확인해야 합니다.
 
-     ![IDE 창](../ide/media/express-ideoverview-visio.png "Express_IDEOverview_Visio") IDE 창
+     ![IDE window](../ide/media/express-ideoverview-visio.png "Express_IDEOverview_Visio") IDE window
 
      인터페이스에는 주 창, **솔루션 탐색기** 및 **속성** 창의 세 가지 창이 포함되어 있습니다.
 
@@ -61,7 +61,7 @@ ms.locfileid: "72667348"
 
      또는 다음 그림과 같이 도구 모음에서 **모두 저장** 단추를 선택합니다.
 
-     ![모두 저장 도구 모음 단추](../ide/media/express-iconsaveall.png "Express_IconSaveAll") 모두 저장 도구 모음 단추
+     ![Save All toolbar button](../ide/media/express-iconsaveall.png "Express_IconSaveAll") Save All toolbar button
 
      Visual Studio에서 자동으로 폴더 이름과 프로젝트 이름이 채워진 후 프로젝트 폴더에 프로젝트가 저장됩니다.
 

@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 806eeba9b3dfee8dc45c90f0a6d2f99ed0772ec7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b242bd0eec4f7faa3f7a27923de289c494ccf798
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68191646"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298202"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>디버거를 사용하거나 사용하지 않고 프로파일링 도구 실행
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,18 +67,18 @@ Visual Studio에서는 이제 성능 도구를 선택할 수 있습니다. 그 �
   
    ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
   
-   자세한 내용은 [진단 도구 창의 이벤트 탭 검색 및 필터링](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx)을 참조하세요.  
+   자세한 내용은 [진단 도구 창의 이벤트 탭 검색 및 필터링](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/)을 참조하세요.  
   
 ## <a name="collect-profiling-data-without-debugging"></a>디버깅을 사용하지 않고 프로파일링 데이터 수집  
  일부 프로파일링 도구를 실행하려면 관리자 권한이 필요합니다. 관리자 권한으로 Visual Studio를 시작할 수도 있고, 진단 세션을 시작할 때 관리자 권한으로 도구를 실행하도록 선택할 수 있습니다.  
   
 1. Visual Studio에서 프로젝트를 엽니다.  
   
-2. **디버그** 메뉴에서 **성능 프로파일러...** 를 (바로 가기 키: Alt+f2)입니다.  
+2. On the **Debug** menu, choose **Performance Profiler...** (Shortcut key: Alt + F2).  
   
 3. 진단 시작 페이지에서, 세션에서 실행할 하나 이상의 도구를 선택합니다. 프로젝트 형식, 운영 체제 및 프로그래밍 언어에 적용되는 도구만 표시됩니다. 진단 도구를 선택하면 같은 진단 세션에서 실행할 수 없는 도구 선택을 사용할 수 없게 설정됩니다. C# Windows 유니버설 앱의 경우 선택 항목이 다음과 같이 표시될 수 있습니다.  
   
-    ![진단 도구 선택](../profiling/media/diag-selecttool.png "DIAG_SelectTool")  
+    ![Select the diagnostic tools](../profiling/media/diag-selecttool.png "DIAG_SelectTool")  
   
 4. 진단 세션을 시작하려면 **시작**을 클릭합니다.  
   
@@ -86,7 +86,7 @@ Visual Studio에서는 이제 성능 도구를 선택할 수 있습니다. 그 �
   
     세션을 실행하는 동안 일부 도구는 진단 도구 시작 페이지에 실시간 데이터의 그래프를 표시합니다.  
   
-    ![성능 및 진단 페이지에서 데이터 수집](../profiling/media/pdhub-collectdata.png "PDHUB_CollectData")  
+    ![Collect data on the Performance and Diagnostic pag](../profiling/media/pdhub-collectdata.png "PDHUB_CollectData")  
   
 6. 진단 세션을 종료하려면 **컬렉션 중지**를 클릭합니다.  
   
@@ -94,10 +94,10 @@ Visual Studio에서는 이제 성능 도구를 선택할 수 있습니다. 그 �
   
    진단 도구 시작 페이지의 최근에 열어 본 목록에서 저장된 진단 세션 파일을 열 수도 있습니다.  
   
-   ![저장된 진단 세션 파일 열기](../profiling/media/pdhub-openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
+   ![Open a saved diagnosis session file](../profiling/media/pdhub-openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
   
 ## <a name="the-profiling-report"></a>프로파일링 보고서  
- ![진단 도구 보고서](../profiling/media/diag-report.png "DIAG_Report")  
+ ![Diagnostic tools report](../profiling/media/diag-report.png "DIAG_Report")  
   
 |||  
 |-|-|  
@@ -111,15 +111,15 @@ Visual Studio에서는 이제 성능 도구를 선택할 수 있습니다. 그 �
 ## <a name="setting-the-analysis-target-to-another-device"></a>다른 디바이스로 분석 대상 설정  
  Visual Studio 프로젝트에서 앱을 시작할 수 있는 것 외에, 다른 대상에서 진단 세션을 실행할 수도 있습니다. 예를 들어 Windows 앱 스토어에서 설치된 앱 버전의 성능 문제를 진단할 수 있습니다.  
   
- ![진단 도구 분석 대상 선택](../profiling/media/pdhub-chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  
+ ![Choose diagnostic tools analysis target](../profiling/media/pdhub-chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  
   
  디바이스에 이미 설치된 앱을 시작하거나 이미 실행 중인 일부 앱에 진단 도구를 연결할 수 있습니다. **실행 중인 응용 프로그램** 또는 **설치된 응용 프로그램**을 선택하면 지정된 배포 대상에서 앱을 검색하는 목록에서 앱을 선택하는 것입니다.  
   
- ![진단을 위해 실행 중이거나 설치된 응용 프로그램 선택](../profiling/media/pdhub-selectrunningapp.png "PDHUB_SelectRunningApp")  
+ ![Choose a running or installed app for diagnosis](../profiling/media/pdhub-selectrunningapp.png "PDHUB_SelectRunningApp")  
   
  **Internet Explorer**를 선택하면 URL을 지정하고 휴대폰 배포 대상을 변경할 수 있습니다.  
   
- ![Internet Explorer에 표시할 URL 지정](../profiling/media/pdhub-choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
+ ![Specify the url to display in Internet Explorer](../profiling/media/pdhub-choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
   
 ## <a name="remote-debugging"></a>Remote Debugging  
  원격 PC 또는 태블릿에서 진단 세션을 실행하려면 원격 대상에 Visual Studio 원격 도구가 설치되어 있고 실행 중이어야 합니다. 데스크톱 앱의 경우 [원격 디버깅](../debugger/remote-debugging.md)을 참조하세요.  Windows 유니버설 앱의 경우 [원격 컴퓨터에서 Windows 스토어 앱 실행](../debugger/run-windows-store-apps-on-a-remote-machine.md)을 참조하세요.  
@@ -129,14 +129,14 @@ Visual Studio에서는 이제 성능 도구를 선택할 수 있습니다. 그 �
   
  [MSDN Magazine: IntelliTrace를 사용하여 문제를 더 빠르게 진단](https://msdn.microsoft.com/magazine/dn973014.aspx)  
   
- [블로그 게시물: Visual Studio 2015의 메모리 사용량 도구로 이벤트 처리기 누수 진단](http://blogs.msdn.com/b/visualstudioalm/archive/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015.aspx)  
+ [블로그 게시물: Visual Studio 2015의 메모리 사용량 도구로 이벤트 처리기 누수 진단](https://devblogs.microsoft.com/devops/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/)  
   
  [비디오: Microsoft Visual Studio Ultimate 2015의 IntelliTrace를 사용하여 기록 디버그](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)  
   
  [비디오: Visual Studio 2015를 사용하여 성능 문제 디버그](https://channel9.msdn.com/Events/Build/2015/3-731)  
   
- [PerfTips: Visual Studio에서 디버깅 중에 성능 정보 한눈에 확인](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
+ [성능 팁: Visual Studio를 사용하여 디버그하는 동안 성능 정보 요약](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)  
   
- [Visual Studio 2015의 진단 도구 디버거 창](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
+ [Visual Studio 2015의 진단 도구 디버거 창](https://devblogs.microsoft.com/devops/diagnostic-tools-debugger-window-in-visual-studio-2015/)  
   
- [Visual Studio Enterprise 2015의 IntelliTrace](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/intellitrace-in-visual-studio-ultimate-2015.aspx)
+ [Visual Studio Enterprise 2015의 IntelliTrace](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-ultimate-2015/)

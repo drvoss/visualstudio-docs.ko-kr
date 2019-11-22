@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3ae3d35f98b54038b590c2fbaf75d0f1597fd0b3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0312846431f670ae136fdadfc8647c4096348941
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645447"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300127"
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>방법: Visual Studio에서 글꼴 및 색 변경
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Visual Studio의 IDE 프레임과 도구 창의 색을 여러 가지 방식으�
     > [!IMPORTANT]
     > 색 테마를 변경하면 IDE의 텍스트가 기본값 또는 이전에 사용자 지정된 글꼴과 크기로 변환됩니다.
     >
-    >  Visual Studio Professional, Visual Studio Premium 또는 Visual Studio Ultimate가 있다면 [Visual Studio 2013 색 테마 편집기](http://visualstudiogallery.msdn.microsoft.com/9e08e5d3-6eb4-4e73-a045-6ea2a5cbdabe)를 다운로드 및 설치하여 미리 정의된 색 테마를 추가로 설치하거나 자체 색 테마를 만들 수 있습니다.
+    >  Visual Studio Professional, Visual Studio Premium 또는 Visual Studio Ultimate가 있다면 [Visual Studio 2013 색 테마 편집기](https://marketplace.visualstudio.com/items?itemName=MatthewJohnsonMSFT.VisualStudio2013ColorThemeEditor)를 다운로드 및 설치하여 미리 정의된 색 테마를 추가로 설치하거나 자체 색 테마를 만들 수 있습니다.
 
 ### <a name="use-windows-high-contrast-colors"></a>Windows 고대비 색상 사용
 
@@ -66,4 +66,4 @@ Visual Studio의 IDE 프레임과 도구 창의 색을 여러 가지 방식으�
 5. **크기** 목록에서 텍스트 크기를 선택한 다음 **확인** 단추를 선택합니다.
 
 ## <a name="see-also"></a>관련 항목:
- [Visual Studio의 내게 필요한 옵션 기능](../ide/reference/accessibility-features-of-visual-studio.md) [방법: 편집기에서 글꼴 및 색 변경](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+ [Accessibility Features of Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) [How to: Change Fonts and Colors in the Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

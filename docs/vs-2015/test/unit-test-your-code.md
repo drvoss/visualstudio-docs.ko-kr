@@ -12,12 +12,12 @@ ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
 caps.latest.revision: 64
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 96ab033cad301f478df3d011b7c648e6e5e8d6c9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8c861099ac5253c9610e8ae75d3c429a5ce88a9d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660355"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301429"
 ---
 # <a name="unit-test-your-code"></a>코드 단위 테스트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "72660355"
 |**코드 검사를 사용하여 프로젝트의 코드 중 단위 테스트로 테스트되는 부분 식별:** [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]테스트 도구의 코드 검사 기능에 대해 알아보세요.|-   [코드 검사를 사용하여 테스트할 코드 범위 결정](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
 |**단위 테스트에 대한 부하 테스트를 사용하여 스트레스 및 성능 분석 수행:** 애플리케이션에서 성능 및 스트레스 문제를 격리하기 위해 부하 테스트를 만들고 여기에 단위 테스트를 추가할 수 있습니다. **참고:**  부하 테스트를 만들고 사용하려면 Visual Studio Enterprise가 필요합니다.|-   [부하 테스트 만들기 및 편집](https://msdn.microsoft.com/e2985d15-60a7-4177-93b4-f986c2936337)<br />-   [방법: 부하 테스트 시나리오에 웹 성능 테스트 및 단위 테스트 추가](https://msdn.microsoft.com/03cc073e-9bdf-4530-ae46-504a51884594)<br />-   [방법: 부하 테스트 시나리오에서 웹 성능 테스트 및 단위 테스트 제거](https://msdn.microsoft.com/3d6128d2-82b0-42fc-bda2-23a8aa03be07)|
 |**품질 게이트 설정 및 적용:** 코드의 품질을 확인하기 위해 코드를 체크 인하기 전에 테스트가 실행되도록 품질 게이트를 만들 수 있습니다.|-   [품질 게이트 설정 및 적용](https://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|
-|**단위 테스트 형식 확장:** 단위 테스트 프레임워크에 없을 수도 있는 테스트에 기능을 추가할 수 있습니다. 예를 들어 테스트를 일반 사용자로 실행할지 여부를 지정하는 테스트 속성을 추가할 수 있습니다. 또는 프레임워크를 확장하여 메서드에 행 특성을 추가하고 테스트에서 이 행의 데이터를 사용할 수 있습니다.|단위 테스트 프레임워크를 확장하는 방법에 대한 예제 코드는 다음 [Microsoft 웹 사이트](http://go.microsoft.com/fwlink/?LinkId=185591)를 참조하세요.|
+|**단위 테스트 형식 확장:** 단위 테스트 프레임워크에 없을 수도 있는 테스트에 기능을 추가할 수 있습니다. 예를 들어 테스트를 일반 사용자로 실행할지 여부를 지정하는 테스트 속성을 추가할 수 있습니다. 또는 프레임워크를 확장하여 메서드에 행 특성을 추가하고 테스트에서 이 행의 데이터를 사용할 수 있습니다.|단위 테스트 프레임워크를 확장하는 방법에 대한 예제 코드는 다음 [Microsoft 웹 사이트](https://go.microsoft.com/fwlink/?LinkId=185591)를 참조하세요.|
 |**테스트 옵션 설정:** 예를 들면 테스트 결과가 저장되는 위치를 지정할 수 있습니다.|[.runsettings 파일을 사용하여 단위 테스트 구성](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="related-tasks"></a>관련 작업
@@ -64,23 +64,23 @@ ms.locfileid: "72660355"
  Visual Studio를 사용하여 자동화된 테스트를 실행하는 방법을 [!INCLUDE[TCMext](../includes/tcmext-md.md)]를 사용할 경우와 비교하여 설명하는 항목에 대한 링크를 제공합니다.
 
 ## <a name="reference"></a>참고
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting>는 특성, 예외, 어설션 및 단위 테스트를 지 원하는 기타 클래스를 제공 하는 UnitTesting 네임 스페이스에 대해 설명 합니다.
+ <xref:Microsoft.VisualStudio.TestTools.UnitTesting> Describes the UnitTesting namespace, which provides attributes, exceptions, asserts, and other classes that support unit testing.
 
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 및 웹 서비스 단위 테스트에 대 한 지원을 제공 하 여 UnitTesting 네임 스페이스를 확장 하는 UnitTesting 네임 스페이스에 대해 설명 합니다.
+ <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> Describes the UnitTesting.Web namespace, which extends the UnitTesting namespace by providing support for [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] and Web service unit tests.
 
 ## <a name="external-resources"></a>외부 리소스
 
 ### <a name="videos"></a>비디오
- [채널 9: XAML을 사용하여 빌드한 Windows 스토어 앱 유닛 테스트](http://go.microsoft.com/fwlink/?LinkId=226285)
+ [채널 9: XAML을 사용하여 빌드한 Windows 스토어 앱 유닛 테스트](https://go.microsoft.com/fwlink/?LinkId=226285)
 
 ### <a name="forums"></a>포럼
- [Visual Studio 단위 테스트](http://go.microsoft.com/fwlink/?LinkId=224477)
+ [Visual Studio 단위 테스트](https://go.microsoft.com/fwlink/?LinkId=224477)
 
 ### <a name="guidance"></a>지침
- [Visual Studio 2012를 사용한 지속적인 업데이트 테스트 - 2장: 단위 테스트: 내부 테스트](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Visual Studio 2012를 사용한 지속적인 업데이트 테스트 - 2장: 단위 테스트: 내부 테스트](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ### <a name="reference"></a>참고
- [단위 테스트에 대한 콘텐츠 인덱스](http://go.microsoft.com/fwlink/?LinkID=254719)
+ [단위 테스트에 대한 콘텐츠 인덱스](https://go.microsoft.com/fwlink/?LinkID=254719)
 
 ## <a name="see-also"></a>관련 항목:
- [응용 프로그램 테스트](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac) [코드 품질 향상](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)
+ [Improve Code Quality](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945) [Testing the application](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)

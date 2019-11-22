@@ -10,12 +10,12 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 63c960fd68aba444ff24c0e5f24bab70cbe0746e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3aec055c0fb0253f0b233f51e50485ccb4ee3382
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660627"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302603"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>데이터 기반의 코딩된 UI 테스트 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,19 +33,19 @@ ms.locfileid: "72660627"
 
 1. 프로젝트를 만듭니다.
 
-     ![코딩 된 UI 테스트 프로젝트 만들기](../test/media/cuit-datadriven.png "CUIT_dataDriven_")
+     ![Create a coded UI test project](../test/media/cuit-datadriven.png "CUIT_dataDriven_")
 
 2. 작업을 기록하도록 선택합니다.
 
-     ![작업을 기록 하도록 선택](../test/media/cuit-datadriven-generatecodedialog.png "CUIT_dataDriven_GenerateCodeDialog")
+     ![Choose to record the actions](../test/media/cuit-datadriven-generatecodedialog.png "CUIT_dataDriven_GenerateCodeDialog")
 
 3. 계산기 앱을 열고 테스트 기록을 시작합니다.
 
-     ![작업 기록](../test/media/cuit-datadriven-cuitbuilder.png "CUIT_dataDriven_CUITBuilder")
+     ![Record actions](../test/media/cuit-datadriven-cuitbuilder.png "CUIT_dataDriven_CUITBuilder")
 
 4. 1+2를 추가하고 레코더를 일시 중지한 다음 테스트 메서드를 생성합니다. 나중에 이 사용자 입력의 값을 데이터 파일의 값으로 바꿉니다.
 
-     ![테스트 메서드 생성](../test/media/cuit-datadriven-cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")
+     ![Generate test method](../test/media/cuit-datadriven-cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")
 
      테스트 빌더를 닫습니다. 메서드가 테스트에 추가됩니다.
 
@@ -67,15 +67,15 @@ ms.locfileid: "72660627"
 
      합을 표시하는 계산기의 텍스트 컨트롤을 매핑합니다.
 
-     ![UI 텍스트 컨트롤 매핑](../test/media/cuit-datadriven-addassertion.png "CUIT_dataDriven_AddAssertion")
+     ![Map the UI text control](../test/media/cuit-datadriven-addassertion.png "CUIT_dataDriven_AddAssertion")
 
 7. 합의 값이 올바른지 유효성을 검사하는 어설션을 추가합니다. 값이 **3**인 **DisplayText** 속성을 선택한 후 **어설션 추가**를 선택합니다. **AreEqual** 비교 연산자를 사용하여 비교 값이 **3**인지 확인합니다.
 
-     ![어설션 구성](../test/media/cuit-datadriven-builderaddassertion2.png "CUIT_dataDriven_BuilderAddAssertion2")
+     ![Configure the assertion](../test/media/cuit-datadriven-builderaddassertion2.png "CUIT_dataDriven_BuilderAddAssertion2")
 
 8. 어설션을 구성한 후 빌더에서 코드를 다시 생성합니다. 그러면 이 유효성 검사를 위한 새 메서드가 작성됩니다.
 
-     ![어설션 메서드 생성](../test/media/cuit-datadriven-assertiongencode.png "CUIT_dataDriven_AssertionGenCode")
+     ![Generate the assertion method](../test/media/cuit-datadriven-assertiongencode.png "CUIT_dataDriven_AssertionGenCode")
 
      `ValidateSum` 메서드는 `AddNumbers` 메서드의 결과 유효성을 검사하므로 코드 블록 아래쪽으로 이동합니다.
 
@@ -98,7 +98,7 @@ ms.locfileid: "72660627"
 
 1. 이름이 `data.csv`인 dataDrivenSample 프로젝트에 텍스트 파일을 추가합니다.
 
-     ![쉼표로 구분 된 값 파일을 프로젝트에 추가 합니다.](../test/media/cuit-datadriven-addcsvfile.png "CUIT_dataDriven_AddCSVFile")
+     ![Add a comma seperated value file to the project](../test/media/cuit-datadriven-addcsvfile.png "CUIT_dataDriven_AddCSVFile")
 
 2. 다음 데이터를 사용하여 .csv 파일을 채웁니다.
 
@@ -110,13 +110,13 @@ ms.locfileid: "72660627"
 
      데이터를 추가하고 나면 파일은 다음과 같이 표시됩니다.
 
-     ![를 채웁니다. 데이터가 포함 된 CSV 파일](../test/media/cuit-datadriven-adddatatocsvfile.png "CUIT_dataDriven_AddDataToCSVFile")
+     ![Populate the .CSV file with data](../test/media/cuit-datadriven-adddatatocsvfile.png "CUIT_dataDriven_AddDataToCSVFile")
 
 3. .csv 파일은 올바른 인코딩을 사용하여 저장되어야 합니다. **파일** 메뉴에서 **고급 저장 옵션**을 선택하고 인코딩으로 **유니코드(서명 없는 UTF-8) - 코드 페이지 65001**을 선택합니다.
 
 4. .csv 파일은 출력 디렉터리에 복사해야 하며 그렇지 않으면 테스트를 실행할 수 없습니다. 속성 창에서 해당 파일을 복사합니다.
 
-     ![을 배포 합니다. CSV 파일](../test/media/cuit-datadriven-deploycsvfile.png "CUIT_dataDriven_DeployCSVFile")
+     ![Deploy the .CSV file](../test/media/cuit-datadriven-deploycsvfile.png "CUIT_dataDriven_DeployCSVFile")
 
      이제 데이터 집을 만들었으므로 데이터를 테스트에 바인딩하겠습니다.
 
@@ -185,15 +185,15 @@ ms.locfileid: "72660627"
 
     - UIMap.uitest 파일을 엽니다.
 
-         ![코딩 된 UI 테스트 편집기 열기](../test/media/cuit-datadriven-opentesteditor.png "CUIT_dataDriven_OpenTestEditor")
+         ![Open the Coded UI Test Editor](../test/media/cuit-datadriven-opentesteditor.png "CUIT_dataDriven_OpenTestEditor")
 
     - UI 작업을 선택하고 해당 UI 컨트롤 매핑을 관찰하여 매핑과 그에 해당하는 `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button` 등의 코드를 살펴봅니다.
 
-         ![코딩 된 UI 테스트 편집기를 사용 하 여 코드 지원](../test/media/cuit-datadriven-testeditor.png "CUIT_dataDriven_TestEditor")
+         ![Use the Coded UI Test Editor to assist with code](../test/media/cuit-datadriven-testeditor.png "CUIT_dataDriven_TestEditor")
 
     - 속성 창에서 **검색 속성**을 엽니다. 검색 속성 **Name** 값은 코드에서 데이터 소스를 사용하여 조작하는 항목입니다. 예를 들어 `SearchProperties`에는 다음과 같이 각 데이터 행의 첫 번째 열 값이 할당됩니다. `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. 이 테스트는 3회 반복하는 동안 검색 속성의 **Name** 값을 3, 5, 6의 순서로 변경합니다.
 
-         ![코딩을 지원 하기 위해 검색 속성 사용](../test/media/cuit-datadriven-searchproperties.png "CUIT_dataDriven_SearchProperties")
+         ![Use the search properties to assist in coding](../test/media/cuit-datadriven-searchproperties.png "CUIT_dataDriven_SearchProperties")
 
 3. 솔루션을 저장합니다.
 
@@ -205,7 +205,7 @@ ms.locfileid: "72660627"
 
    **지침**
 
-   자세한 내용은 [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside](http://go.microsoft.com/fwlink/?LinkID=255188)(Visual Studio 2012를 사용한 연속 배달 테스트 - 2장: 단위 테스트: 내부 테스트) 및 [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests](http://go.microsoft.com/fwlink/?LinkID=255196)(Visual Studio 2012를 사용한 연속 배달 테스트 - 5장: 시스템 테스트 자동화)를 참조하세요.
+   자세한 내용은 [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside](https://go.microsoft.com/fwlink/?LinkID=255188)(Visual Studio 2012를 사용한 연속 배달 테스트 - 2장: 단위 테스트: 내부 테스트) 및 [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests](https://go.microsoft.com/fwlink/?LinkID=255196)(Visual Studio 2012를 사용한 연속 배달 테스트 - 5장: 시스템 테스트 자동화)를 참조하세요.
 
 ## <a name="q--a"></a>Q&A
 

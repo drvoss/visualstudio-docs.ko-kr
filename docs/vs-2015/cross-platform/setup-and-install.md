@@ -6,12 +6,12 @@ ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 caps.latest.revision: 19
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 646d8949004f44041fe75d1c6fed2e6f989b92c9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 430c54527ad0a4647bb750c505942242688aaa17
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435295"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297723"
 ---
 # <a name="setup-and-install"></a>설정 및 설치
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,12 +24,12 @@ Xamarin을 사용하여 일반적인 C#/.NET 코드베이스에서 네이티브 
   
   Windows 및 Mac 컴퓨터를 동시에 설정할 수 있고 해당 설치 관리자가 실행되는 동안 [Xamarin을 사용한 모바일 개발에 대해 알아보기](../cross-platform/learn-about-mobile-development-with-xamarin.md)를 검토하여 필요한 배경 자료를 읽고 살펴볼 수 있습니다.  
  
-이 설정 및 설치를 수행한 후 Xamarin을 사용하는 데 문제가 있으면 [forums.xamarin.com](http://forums.xamarin.com/)에 질문을 게시하세요.
+이 설정 및 설치를 수행한 후 Xamarin을 사용하는 데 문제가 있으면 [forums.xamarin.com](https://forums.xamarin.com/)에 질문을 게시하세요.
   
 > [!NOTE]
 > 2016년 3월 31일부터는 모든 Visual Studio 버전에 모든 Xamarin이 추가 비용 없이 포함되며 별도의 라이선스는 필요하지 않습니다. 학생, OSS 개발자 및 소규모 팀의 경우에는 Xamarin Studio Community for Mac도 무료로 사용할 수 있습니다. 이전 Xamarin 라이선스로 구성한 기존 Visual Studio 설치의 경우에는 Xamarin을 버전 4.0.3.214 이상으로 업데이트해야 합니다. 이 작업을 수행하려면 **도구 > 옵션 > Xamarin > 기타**로 이동하여 **지금 확인** 링크를 클릭한 다음 4.0.3.214 업데이트를 다운로드합니다. Visual Studio를 다시 시작하고 **도구 > Xamarin 계정...** 으로 이동하면 업데이트된 상태가 표시됩니다.  
   
- **항목 내용**  
+ **항목 내용:**  
   
 - [필수 구성 요소](#prereq)  
   
@@ -64,23 +64,23 @@ Xamarin을 사용하여 일반적인 C#/.NET 코드베이스에서 네이티브 
   
 2. (새 설치에만 해당) 설치 관리자 내에서 **사용자 지정** 설치를 선택합니다.  
   
-    ![Visual Studio 설치에서 사용자 지정 옵션 선택](../cross-platform/media/cross-plat-xamarin-setup-1.png "Cross-Plat Xamarin Setup 1")  
+    ![Choosing the Custom option in Visual Studio installation](../cross-platform/media/cross-plat-xamarin-setup-1.png "Cross-Plat Xamarin Setup 1")  
   
 3. 다음 상자를 선택합니다.  
   
-   1. **플랫폼 간 모바일 개발 > C#/.NET(Xamarin)**. 그러면 일반 도구와 소프트웨어 개발 키트 아래에서 다양한 Android 도구가 자동으로 선택됩니다. 이 옵션을 사용하는 경우 기존 Xamarin 설치도 업데이트합니다.  
+   1. **플랫폼 간 모바일 개발 > C#/.NET(Xamarin)** . 그러면 일반 도구와 소프트웨어 개발 키트 아래에서 다양한 Android 도구가 자동으로 선택됩니다. 이 옵션을 사용하는 경우 기존 Xamarin 설치도 업데이트합니다.  
   
-        ![플랫폼 간 모바일 개발 아래에서 Xamarin 옵션 선택](../cross-platform/media/cross-plat-xamarin-setup-2.png "Cross-Plat Xamarin Setup 2")  
+        ![Select the Xamarin option under Cross&#45;Platform Mobile Development](../cross-platform/media/cross-plat-xamarin-setup-2.png "Cross-Plat Xamarin Setup 2")  
   
-   2. Windows 8 +: **플랫폼 간 모바일 개발 > Microsoft Visual Studio Emulator for Android**합니다. 참고: Windows 7 이하 컴퓨터를 사용하거나 Mac에서 Windows를 실행하고 있으면 이 확인란이 *선택 취소*되어 있는지 확인합니다. 5단계 후에 "Windows 컴퓨터의 에뮬레이터에 대한 참고"를 참조하세요. 물리적 Android 디바이스에서만 디버그하려는 경우에는 이 확인란을 선택 취소한 상태로 유지해도 됩니다.  
+   2. Windows 8 이상: **플랫폼 간 모바일 개발 > Microsoft Visual Studio Emulator for Android**. 참고: Windows 7 이하 컴퓨터를 사용하거나 Mac에서 Windows를 실행하고 있으면 이 확인란이 *선택 취소*되어 있는지 확인합니다. 5단계 후에 "Windows 컴퓨터의 에뮬레이터에 대한 참고"를 참조하세요. 물리적 Android 디바이스에서만 디버그하려는 경우에는 이 확인란을 선택 취소한 상태로 유지해도 됩니다.  
   
-   3. (선택 사항) Windows 장치를 대상으로 지정하려면 **Windows 및 웹 개발 > 유니버설 Windows 앱 개발 도구** 및/또는 **Windows 8.1 및 Windows Phone 8.0/8.1 도구**도 선택합니다. 여기에는 다운로드하는 데 시간이 더 오래 걸리는 에뮬레이터 이미지를 설치하기 위한 옵션이 포함되고, 언제든지 Visual Studio 설치 관리자로 돌아가서 나중에 추가할 수 있습니다.  
+   3. (선택 사항) Windows 디바이스를 대상으로 지정하려면 **Windows 및 웹 개발 &gt; 유니버설 Windows 앱 개발 도구** 및/또는 **Windows 8.1 및 Windows Phone 8.0/8.1 도구**도 선택합니다. 여기에는 다운로드하는 데 시간이 더 오래 걸리는 에뮬레이터 이미지를 설치하기 위한 옵션이 포함되고, 언제든지 Visual Studio 설치 관리자로 돌아가서 나중에 추가할 수 있습니다.  
   
 4. 설치 단추를 클릭하면 프로세스가 실행됩니다. 이 작업도 완료하는 데 약간 시간이 걸리므로 기다리는 동안 Mac 설치 지침을 계속 확인하고 [Xamarin을 사용한 모바일 개발에 대해 알아보기](../cross-platform/learn-about-mobile-development-with-xamarin.md)를 살펴볼 수 있습니다.  
   
 5. 설치가 완료되면 Visual Studio를 시작하고 메시지가 표시되면 Microsoft 계정으로 로그인합니다(Windows에서 사용하는 것과 같은 계정). 그리고 **도구 > 옵션 >Xamarin** 또는 **도구 > 옵션 Xamarin > 기타**에서 **지금 확인** 링크를 통해 Xamarin 업데이트를 확인합니다.  
   
-    ![Visual Studio 옵션에서 Xamarin 업데이트 확인](../cross-platform/media/cross-plat-xamarin-setup-3.png "Cross-Plat Xamarin Setup 3")  
+    ![Checking for Xamarin updates in Visual Studio options](../cross-platform/media/cross-plat-xamarin-setup-3.png "Cross-Plat Xamarin Setup 3")  
   
    > [!NOTE]
    > 앞에서 언급한 것처럼, 이전 Xamarin 라이선스 관련 문제를 방지하려면 Xamarin을 4.0.3.214 이상으로 업데이트해야 합니다.  
@@ -89,7 +89,7 @@ Xamarin을 사용하여 일반적인 C#/.NET 코드베이스에서 네이티브 
       
 6. Windows 7 이하 버전의 경우 또는 Mac에서 Windows를 실행하는 경우 물리적 디바이스가 없으면 [Android SDK 에뮬레이터](https://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debug-on-emulator/android-sdk-emulator/)를 사용합니다. 다음 참고를 참조하세요.  
   
-   **컴퓨터의 에뮬레이터에 Windows에 대 한 note:** Cpu를 한 번에 하나의 가상화 기술 지원 하므로 개발 컴퓨터에서 사용 하 여에 하나만 있어야 하는 것이 좋습니다. 세 가지 주요 가상화 기술은 Hyper-V(Visual Studio Emulator for Android 및 Windows Phone 에뮬레이터에서 사용됨), Virtual Box(Genymotion에서 사용됨) 및 Intel HAXM(Android SDK 에뮬레이터에서 사용됨)입니다. Hyper-V와 Virtual Box 간의 다양한 문제 때문에 지정된 컴퓨터에서 한 가지 유형의 에뮬레이터만 사용하는 것이 좋습니다. 즉, 위의 권장 사항에 따라 Windows 8 이상 컴퓨터에서는 Hyper-V를 사용하고 Windows 7 이하 컴퓨터를 사용하는 경우와 Mac에서 Windows를 실행하는 경우에는 Intel HAXM 에뮬레이터를 사용하는 것이 좋습니다.  
+   **Windows 컴퓨터의 에뮬레이터에 대한 참고:** CPU는 한 번에 하나의 가상화 기술만 지원하므로 개발 컴퓨터에서 하나의 기술만 사용하는 것이 좋습니다. 세 가지 주요 가상화 기술은 Hyper-V(Visual Studio Emulator for Android 및 Windows Phone 에뮬레이터에서 사용됨), Virtual Box(Genymotion에서 사용됨) 및 Intel HAXM(Android SDK 에뮬레이터에서 사용됨)입니다. Hyper-V와 Virtual Box 간의 다양한 문제 때문에 지정된 컴퓨터에서 한 가지 유형의 에뮬레이터만 사용하는 것이 좋습니다. 즉, 위의 권장 사항에 따라 Windows 8 이상 컴퓨터에서는 Hyper-V를 사용하고 Windows 7 이하 컴퓨터를 사용하는 경우와 Mac에서 Windows를 실행하는 경우에는 Intel HAXM 에뮬레이터를 사용하는 것이 좋습니다.  
   
 ## <a name="mac"></a> Mac 설치(Apple ID, Xcode 및 Xamarin)  
   
@@ -97,8 +97,8 @@ Xamarin을 사용하여 일반적인 C#/.NET 코드베이스에서 네이티브 
   
 2. [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/)에서 Xcode를 다운로드하여 설치하고 [Adding Your Account to XCode(XCode에 계정 추가)](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1)(apple.com)에 설명된 대로 Apple ID를 추가합니다.  
   
-3. [Xamarin.iOS 설치 및 구성](http://developer.xamarin.com/guides/ios/getting_started/installation/mac/) (영문)(xamarin.com)의 지침에 따라 Xamarin을 다운로드하여 설치합니다.  
+3. [Xamarin.iOS 설치 및 구성](https://docs.microsoft.com/xamarin/ios/get-started/installation/mac) (영문)(xamarin.com)의 지침에 따라 Xamarin을 다운로드하여 설치합니다.  
   
-4. Windows 및 Mac 컴퓨터에서 Xamarin 설치를 마친 후 [Mac에 연결](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/xamarin-mac-agent/)(xamarin.com)의 지침에 따라 Windows 컴퓨터의 Visual Studio에서 iOS 및 Mac 작업을 수행할 수 있습니다.  
+4. Windows 및 Mac 컴퓨터에서 Xamarin 설치를 마친 후 [Mac에 연결](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/connecting-to-mac/)(xamarin.com)의 지침에 따라 Windows 컴퓨터의 Visual Studio에서 iOS 및 Mac 작업을 수행할 수 있습니다.  
   
      두 컴퓨터는 같은 로컬 네트워크에 있어야 합니다.

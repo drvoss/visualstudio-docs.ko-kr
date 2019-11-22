@@ -1,5 +1,5 @@
 ---
-title: 레이어 다이어그램 확장 | Microsoft Docs
+title: Extend layer diagrams | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -12,12 +12,12 @@ caps.latest.revision: 41
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 48fdddd8711086ff185e64df6981cd6848ad1f51
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bfcec64f9401fdbf79e67bee5fe8430452632fbc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669626"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301030"
 ---
 # <a name="extend-layer-diagrams"></a>Extend layer diagrams
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,9 +41,9 @@ ms.locfileid: "72669626"
 
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md)
 
-- [Visual Studio 2015 용 SDK 모델링](http://www.microsoft.com/download/details.aspx?id=48148)
+- [Modeling SDK for Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148)
 
-  레이어 확장을 실행하려는 컴퓨터에 적합한 버전의 Visual Studio가 설치되어 있어야 합니다. 자세한 내용은 [레이어 모델 확장 배포](../modeling/deploy-a-layer-model-extension.md)를 참조 하세요.
+  레이어 확장을 실행하려는 컴퓨터에 적합한 버전의 Visual Studio가 설치되어 있어야 합니다. For more information, see [Deploy a layer model extension](../modeling/deploy-a-layer-model-extension.md).
 
   레이어 다이어그램을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
 
@@ -61,4 +61,4 @@ ms.locfileid: "72669626"
  [레이어 다이어그램의 확장 문제 해결](../modeling/troubleshoot-extensions-for-layer-diagrams.md)
 
 ## <a name="see-also"></a>관련 항목:
- [모델링 확장 레이어 다이어그램 정의 및 설치](../modeling/define-and-install-a-modeling-extension.md) [: 참조](../modeling/layer-diagrams-reference.md) [레이어 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md) [코드에서 레이어 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md) [레이어 다이어그램으로 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md) [UML 모델](../modeling/generate-files-from-a-uml-model.md) [에서 파일 생성 Visual Studio API를 사용 하 여 UML 모델 열기](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)
+ [Define and install a modeling extension](../modeling/define-and-install-a-modeling-extension.md) [Layer Diagrams: Reference](../modeling/layer-diagrams-reference.md) [Layer Diagrams: Guidelines](../modeling/layer-diagrams-guidelines.md) [Create layer diagrams from your code](../modeling/create-layer-diagrams-from-your-code.md) [Validate code with layer diagrams](../modeling/validate-code-with-layer-diagrams.md) [Generate files from a UML model](../modeling/generate-files-from-a-uml-model.md) [Open a UML model by using the Visual Studio API](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)

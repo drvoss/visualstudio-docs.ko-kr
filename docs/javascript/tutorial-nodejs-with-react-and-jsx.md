@@ -2,7 +2,7 @@
 title: Node.js 및 React 앱 만들기
 description: 이 자습서에서는 Visual Studio용 Node.js 도구를 사용하여 앱을 만듭니다.
 ms.custom: mvc
-ms.date: 11/01/2018
+ms.date: 11/01/2019
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 6c7bec91f6a938a131f99abfd5ab9cbef6479a85
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 2f14a5f2255f7ba1b077ead60147a6df407970fc
+ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888668"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73636563"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>자습서: Visual Studio에서 Node.js 및 React 앱 만들기
 
@@ -148,6 +148,8 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
 
     빈 템플릿 버전에 `dependencies` 섹션이 이미 있는 경우는 앞에 나온 JSON 코드로 바꾸기만 하면 됩니다. 이 파일의 사용에 대한 자세한 내용은 [package.json configuration](../javascript/configure-packages-with-package-json.md)을 참조하세요.
 
+1. 변경 내용을 저장합니다.
+
 1. 프로젝트에서 **npm** 노드를 마우스 오른쪽 단추로 클릭하고 **npm 패키지 업데이트**를 선택합니다.
 
     아래쪽 창에서 **출력** 창을 선택하여 패키지 설치 진행률을 확인합니다. 설치하는 데 몇 분 정도 걸릴 수 있으며 즉시 결과를 확인할 수는 없습니다. 출력을 보려면 **출력** 창의 **출력 표시** 필드에서 **Npm**을 선택합니다.
@@ -172,7 +174,7 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
 
 1. 솔루션 탐색기에서 **NodejsWebAppBlank** 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가** > **새 항목**을 선택합니다.
 
-1. **새 항목 추가** 대화 상자에서 **TypeScript JSX 파일**을 선택하고 *app.tsx* 이름을 입력하고 **확인**을 선택합니다.
+1. **새 항목 추가** 대화 상자에서 **TypeScript JSX 파일**을 선택하고 *app.tsx* 이름을 입력하고 **추가** 또는 **확인**을 선택합니다.
 
 1. *webpack-config.js*를 추가하려면 이러한 단계를 반복합니다. TypeScript JSX 파일 대신 **JavaScript 파일**을 선택합니다.
 
@@ -334,7 +336,7 @@ Visual Studio 2019부터 빌드 스크립트가 필요합니다. 앞의 섹션�
 
 ## <a name="run-the-app"></a>앱 실행
 
-1. 현재 디버그 대상으로 Chrome을 선택합니다.
+1. Microsoft Edge 또는 Chrome을 현재 디버그 대상으로 선택합니다.
 
     ::: moniker range=">=vs-2019"
     ![디버그 대상으로 크롬 선택](../javascript/media/vs-2019/tutorial-nodejs-react-debug-target.png)
@@ -343,7 +345,12 @@ Visual Studio 2019부터 빌드 스크립트가 필요합니다. 앞의 섹션�
     ![디버그 대상으로 크롬 선택](../javascript/media/tutorial-nodejs-react-debug-target.png)
     ::: moniker-end
 
-    머신에서 Chrome을 사용할 수 있지만 옵션으로 표시되지 않는 경우 디버그 대상 드롭다운 목록에서 **웹 브라우저(browsername)**  > **Google Chrome**을 선택하고 기본 브라우저 대상으로 Chrome을 선택합니다.
+    ::: moniker range=">=vs-2019"
+    컴퓨터에서 Chrome을 사용할 수 있지만 옵션으로 표시되지 않는 경우 디버그 대상 드롭다운 목록에서 **웹 브라우저(browsername)** >**웹 브라우저 선택**을 선택하고 기본 브라우저 대상으로 **Chrome**을 선택합니다.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    컴퓨터에서 Chrome을 사용할 수 있지만 옵션으로 표시되지 않는 경우 디버그 대상 드롭다운 목록에서 **웹 브라우저(browsername)** >**Google Chrome**을 선택하고 기본 브라우저 대상으로 **Chrome**을 선택합니다.
+    ::: moniker-end
 
 1. 앱을 실행하려면 **F5**(**디버그** > **디버깅 시작**) 키 또는 녹색 화살표 단추를 누릅니다.
 
@@ -371,7 +378,7 @@ Visual Studio 2019부터 빌드 스크립트가 필요합니다. 앞의 섹션�
 
 1. 앱을 계속하려면 **F5** 키를 누릅니다.
 
-1. 크롬 개발자 도구를 사용하려는 경우 **F12** 키를 누릅니다. JavaScript 콘솔을 사용하여 앱과 상호 작용하고 DOM을 검사하려면 이러한 도구를 사용할 수 있습니다.
+1. Chrome 개발자 도구 또는 Microsoft Edge용 F12 도구를 사용하려는 경우 **F12**를 누릅니다. JavaScript 콘솔을 사용하여 앱과 상호 작용하고 DOM을 검사하려면 이러한 도구를 사용할 수 있습니다.
 
 1. 콘솔 및 웹 브라우저를 닫습니다.
 
@@ -379,60 +386,137 @@ Visual Studio 2019부터 빌드 스크립트가 필요합니다. 앞의 섹션�
 
 이전 섹션에서 서버 쪽 Node.js 코드에 디버거를 연결했습니다. Visual Studio에서 디버거를 연결하고 클라이언트 쪽 React 코드에서 중단점을 적중하려면 디버거는 올바른 프로세스를 식별하기 위한 도움이 필요합니다. 이를 사용하는 한 방법은 다음과 같습니다.
 
-1. 모든 크롬 창을 닫습니다.
+### <a name="prepare-the-browser-for-debugging"></a>디버그할 브라우저 준비
 
-2. Windows **시작** 단추(**실행**을 마우스 오른쪽 단추로 클릭하고 선택)에서 **실행** 명령을 열고 다음 명령을 입력합니다.
+::: moniker range=">=vs-2019"
+이 시나리오에서는 현재 IDE에서 **Microsoft Edge 베타**라고 되어 있는 Microsoft Edge(Chromium) 또는 Chrome을 사용합니다.
+::: moniker-end
+::: moniker range="vs-2017"
+이 시나리오에서는 Chrome을 사용합니다.
+::: moniker-end
 
-    `chrome.exe --remote-debugging-port=9222`
+1. 대상 브라우저의 모든 창을 닫습니다.
 
-    디버깅 사용이 설정된 상태로 크롬을 시작합니다.
+   다른 브라우저 인스턴스에서는 디버깅을 사용하도록 설정하여 브라우저를 열지 못하게 할 수 있습니다. (브라우저 확장이 실행 중이고 전체 디버그 모드를 방해할 수 있으므로 예기치 않은 Chrome 인스턴스를 찾으려면 작업 관리자를 열어야 할 수 있습니다.)
+
+   ::: moniker range=">=vs-2019"
+   Microsoft Edge(Chromium)의 경우 Chrome의 모든 인스턴스도 종료합니다. 두 브라우저는 모두 chromium 코드 베이스를 사용하기 때문에 최상의 결과를 제공합니다.
+   ::: moniker-end
+
+2. 디버깅을 사용하도록 설정된 상태로 브라우저를 시작합니다.
 
     ::: moniker range=">=vs-2019"
+    Visual Studio 2019부터 **디버그** 도구 모음에서 **브라우저 선택...** >을 선택하고, **추가**를 선택한 다음, **인수** 필드에서 플래그를 설정하여 브라우저 시작 시 `--remote-debugging-port=9222` 플래그를 설정할 수 있습니다. 브라우저에 대해 **디버깅 포함 Edge** 또는 **디버깅 포함 Chrome**과 같은 다른 식별 이름을 사용하세요. 자세한 내용은 [릴리스 정보](/visualstudio/releases/2019/release-notes-v16.2)를 참조하세요.
 
-    > [!NOTE]
-    > **디버그** 도구 모음에서 **브라우저 선택...** >를 선택하고, **추가**를 선택한 다음, **인수** 필드에서 플래그를 설정하여 브라우저 시작 시 `--remote-debugging-port` 플래그를 설정할 수도 있습니다. **디버깅 포함 Chrome**과 같은 친숙한 다른 브라우저 이름을 사용하세요. 자세한 내용은 [릴리스 정보](/visualstudio/releases/2019/release-notes-preview)를 참조하세요.
+    ![디버깅 사용 설정 상태로 열도록 브라우저 설정](../javascript/media/tutorial-nodejs-react-edge-with-debugging.png)
 
+    또는 Windows **시작** 단추에서 **실행** 명령을 열고(마우스 오른쪽 단추로 클릭하고 **실행** 선택) 다음 명령을 입력합니다.
+
+    `msedge --remote-debugging-port=9222`
+
+    또는
+
+    `chrome.exe --remote-debugging-port=9222`
     ::: moniker-end
 
-3. 다음 그림에 표시된 것처럼 Visual Studio로 전환하고 `render()` 기능의 *app-bundle.js* 코드에서 중단점을 설정합니다.
+    ::: moniker range="vs-2017"
+    Windows **시작** 단추(**실행**을 마우스 오른쪽 단추로 클릭하고 선택)에서 **실행** 명령을 열고 다음 명령을 입력합니다.
+
+    `chrome.exe --remote-debugging-port=9222`
+    ::: moniker-end
+
+    이렇게 하면 디버깅을 사용하도록 설정된 상태로 브라우저가 시작됩니다.
+
+    앱이 아직 실행되고 있지 않으므로 빈 브라우저 페이지를 가져옵니다.
+
+### <a name="attach-the-debugger-to-client-side-script"></a>클라이언트 쪽 스크립트에 디버거 연결
+
+1. Visual Studio로 전환한 다음 소스 코드에서 *app-bundle.js* 또는 *app.tsx*로 중단점을 설정합니다.
+
+    *app-bundle.js*의 경우 다음 그림에 표시된 것처럼 `render()` 함수에서 중단점을 설정합니다.
 
     ![중단점 설정](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
-    *app-bundle.js*에서 `render()` 함수를 찾으려면 **Ctrl**+**F**를 사용합니다(**편집** > **찾기 및 바꾸기** > **빠른 찾기** 사용).
+    트랜스파일된 *app-bundle.js* 파일에서 `render()` 함수를 찾으려면 **Ctrl**+**F**를 사용합니다(**편집** > **찾기 및 바꾸기** > **빠른 찾기** 사용).
 
-4. Visual Studio에서 디버그 대상으로 선택된 크롬을 사용하여 **Ctrl**+**F5**(**디버그** > **디버깅하지 않고 시작**) 키를 눌러 브라우저에서 앱을 실행합니다.
+    *app.tsx*의 경우 `return` 문에서 `render()` 함수 내부에 중단점을 설정합니다.
+
+    ![중단점 설정](../javascript/media/tutorial-nodejs-react-set-breakpoint-in-tsx-file.png)
+
+2. *.tsx* 파일(*app-bundle.js* 아님)에서 중단점을 설정하는 경우 *webpack-config.js*를 업데이트해야 합니다. 다음 코드를
+
+    ```javascript
+    output: {
+        filename: "./app-bundle.js",
+    },
+    ```
+
+    이 코드로 바꿉니다.
+
+    ```javascript
+    output: {
+        filename: "./app-bundle.js",
+        devtoolModuleFilenameTemplate: '[resource-path]'  // removes the webpack:/// prefix
+    },
+    ```
+
+    Visual Studio에서 디버깅을 사용하도록 설정하는 개발 전용 설정입니다. 이 설정을 사용하면 앱을 빌드할 때 소스 맵 파일 *app-bundle.js.map*에서 생성된 참조를 재정의할 수 있습니다. 기본적으로 소스 맵 파일의 webpack 참조에는 Visual Studio에서 소스 파일 *app.tsx*를 찾을 수 없도록 하는 *webpack:///* 접두사가 포함되어 있습니다. 특히 이 변경을 수행하면 소스 파일 *app.tsx*에 대한 참조가 *webpack:///./app.tsx*에서 *./app.tsx*로 변경되어 디버깅을 사용할 수 있습니다.
+
+3. Visual Studio에서 디버그 대상으로 대상 브라우저를 선택하여 **Ctrl**+**F5**(**디버그** > **디버깅하지 않고 시작**) 키를 눌러 브라우저에서 앱을 실행합니다.
+
+    ::: moniker range=">=vs-2019"
+    식별 이름을 사용하여 브라우저 구성을 만들었다면 이를 디버그 대상으로 선택합니다.
+    ::: moniker-end
 
     앱이 새 브라우저 탭에서 열립니다.
 
-5. **디버그** > **프로세스에 연결**을 선택합니다.
+4. **디버그** > **프로세스에 연결**을 선택합니다.
 
-6. **프로세스에 연결** 대화 상자의 **연결** 필드에서 **Webkit 코드**를 선택하고 필터 상자에 **크롬**을 입력해 검색 결과를 필티링합니다.
+    > [!TIP]
+    > Visual Studio 2017부터 이러한 단계를 수행하여 처음으로 프로세스에 연결할 때 **디버그** > **프로세스에 다시 연결**을 선택하여 동일 프로세스에 신속하게 다시 연결할 수 있습니다.
 
-7. 올바른 호스트 포트(이 예제에서는 1337)를 사용하여 크롬 프로세스를 선택하고 **연결**을 선택합니다.
+5. **프로세스에 연결** 대화 상자에서 연결할 수 있는 브라우저 인스턴스의 필터링된 목록을 가져옵니다.
 
+    ::: moniker range=">=vs-2019"
+    Visual Studio 2019의 **연결 대상** 필드에서 대상 브라우저에 대해 올바른 디버거 **JavaScript(Chrome)** 또는 **JavaScript(Microsoft Edge - Chromium)** 를 선택하고 필터 상자에 **chrome** 또는 **edge**를 입력하여 검색 결과를 필터링합니다.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Visual Studio 2017의 **연결 대상** 필드에서 **WebKit 코드**를 선택하고 필터 상자에 **chrome**을 입력해 검색 결과를 필터링합니다.
+    ::: moniker-end
+
+6. 올바른 호스트 포트(이 예제에서는 localhost)를 사용하여 브라우저 프로세스를 선택하고 **연결**을 선택합니다.
+
+    올바른 브라우저 인스턴스를 선택하는 데 도움이 되도록 포트(1337)가 **제목** 필드에 나타날 수도 있습니다.
+
+    ::: moniker range=">=vs-2019"
+    다음 예제에서는 Microsoft Edge(Chromium) 브라우저를 찾는 방법을 보여 줍니다.
+
+    ![프로세스에 연결](../javascript/media/tutorial-nodejs-react-attach-to-process-edge.png)
+    ::: moniker-end
+    ::: moniker range="vs-2017"
     ![프로세스에 연결](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
-    ::: moniker range="vs-2017"
     DOM 탐색기와 JavaScript 콘솔이 Visual Studio에서 열릴 때 디버거가 올바르게 연결됐는지 알 수 있습니다. 이러한 디버깅 도구는 크롬 개발자 도구 및 F12 Tools for Microsoft Edge와 유사합니다.
     ::: moniker-end
 
-    > [!NOTE]
-    > 디버거가 연결되지 않고 “프로세스에 연결할 수 없습니다. 작업이 현재 상태에서 잘못되었으므로 디버깅 모드로 Chrome을 시작하기 전에 작업 관리자를 사용하여 Chrome의 모든 인스턴스를 닫습니다. 크롬 확장 프로그램을 실행하여 전체 디버그 모드를 방지할 수 있습니다.
+    > [!TIP]
+    > 디버거가 연결되지 않고 “프로세스에 연결할 수 없습니다. 현재 상태에서는 작업을 수행할 수 없습니다.”라는 메시지가 표시되는 경우, 디버깅 모드로 브라우저를 시작하기 전에 작업 관리자를 사용하여 대상 브라우저의 모든 인스턴스를 닫습니다. 실행 중일 수 있는 브라우저 확장 프로그램이 전체 디버그 모드를 방지할 수 있습니다.
 
-8. 중단점이 있는 코드가 이미 실행됐기 때문에 중단점을 적중하려면 브라우저 페이지를 새로 고치기 합니다.
+7. 중단점이 있는 코드가 이미 실행됐기 때문에 중단점을 적중하려면 브라우저 페이지를 새로 고치기 합니다.
 
-    디버거에서 일시 중지된 동안 변수를 가리키고 디버거 창을 사용하여 앱 상태를 검사할 수 있습니다. 단계별 코드 실행(**F5**, **F10** 및 **F11**)으로 디버거로 이동할 수 있습니다.
+    디버거에서 일시 중지된 동안 변수를 가리키고 디버거 창을 사용하여 앱 상태를 검사할 수 있습니다. 단계별 코드 실행(**F5**, **F10** 및 **F11**)으로 디버거로 이동할 수 있습니다. 기본 디버깅 기능에 대한 자세한 내용은 [디버거 소개](../debugger/debugger-feature-tour.md)를 참조하세요.
 
-    환경 및 브라우저 상태에 따라 *app.tsx*에서 매핑된 위치 또는 *app-bundle.js*에서 중단점을 적중할 수 있습니다. 어느 경우든 단계별 코드를 실행하고 변수를 검사할 수 있습니다.
+    환경 및 브라우저 상태와 함께 이전에 수행한 단계에 따라 *app.tsx*에서 매핑된 위치 또는 *app-bundle.js*에서 중단점을 적중할 수 있습니다. 어느 경우든 단계별 코드를 실행하고 변수를 검사할 수 있습니다.
 
-   * *app.tsx*에서 코드를 중단해야 하는데 그럴 수 없는 경우 이전 단계에 설명된 대로 **프로세스에 연결**을 사용하여 디버거를 연결합니다. 그런 다음, **스크립트 문서** > **app.tsx**를 열어 솔루션 탐색기에서 동적으로 생성된 *app.tsx* 파일을 열고, 중단점을 설정하고, 브라우저에서 페이지를 새로 고칩니다(`return` 문 또는 `var` 선언 같은 중단점을 허용하는 코드 줄에서 중단점을 설정합니다).
+   * *app.tsx*에서 코드를 중단해야 하는데 그럴 수 없는 경우 이전 단계에 설명된 대로 **프로세스에 연결**을 사용하여 디버거를 연결합니다. 환경이 올바르게 설정되었는지 확인합니다.
 
-       또는 *app.tsx*에서 코드를 중단해야 하는데 그럴 수 없는 경우 *app.tsx*에서 `debugger;` 문을 사용하거나 대신 Chrome 개발자 도구에서 중단점을 설정합니다.
+      * 디버그 모드에서 브라우저를 실행할 수 있도록 Chrome 확장 프로그램(작업 관리자 사용)을 비롯한 모든 브라우저 인스턴스를 닫았습니다. 디버그 모드에서 브라우저를 시작해야 합니다.
+
+      * 소스 맵 파일에 Visual Studio 디버거가 *app.tsx*를 찾을 수 없도록 하는 *webpack:///./app.tsx*가 아니라 *./app.tsx*에 대한 참조를 포함하도록 합니다.
+
+       또는 *app.tsx*에서 코드를 중단해야 하는데 그럴 수 없는 경우 *app.tsx*에서 `debugger;` 문을 사용하거나 대신 Chrome 개발자 도구(또는 Microsoft Edge의 F12 도구)에서 중단점을 설정합니다.
 
    * *app-bundle.js*에서 코드를 중단해야 하는데 그럴 수 없는 경우 *app-bundle.js.map* 소스 맵 파일을 제거합니다.
-
-     > [!TIP]
-     > 이러한 단계를 수행하여 처음으로 프로세스에 연결할 때 **디버그** > **프로세스에 다시 연결**을 선택하여 Visual Studio 2017에서 동일 프로세스에 신속하게 다시 연결할 수 있습니다.
 
 ## <a name="next-steps"></a>다음 단계
 

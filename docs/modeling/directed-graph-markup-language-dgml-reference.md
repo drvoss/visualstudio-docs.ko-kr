@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b5405afbcea1f80d19e3985da3d0781cd459e43
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 292ba29e1902053b04f70052989e4eb0efff5b19
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985108"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983671"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>DGML(Directed Graph Markup Language) 참조
 
@@ -21,7 +21,7 @@ DGML(Directed Graph Markup Language)은 시각화에 사용되고 복잡성 분�
 일부 버전의 Visual Studio에서는 DGML 기능의 하위 집합만 지원 합니다. [아키텍처 및 모델링 도구에 대 한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조 하세요.
 
 > [!NOTE]
-> .dgml 파일을 편집하는 경우 IntelliSense를 사용하면 각 요소 및 요소 값에 사용할 수 있는 특성을 식별할 수 있습니다. 특성에 색을 지정하려면 "Blue"와 같은 일반적인 색의 이름 또는 "#ffa0b1c3"과 같은 ARGB 16진수 값을 사용합니다. DGML은 WPF(Windows Presentation Foundation) 색 정의 형식의 일부를 사용합니다. 자세한 내용은 [Colors 클래스](/dotnet/api/system.windows.media.colors&view=netframework-4.8)를 참조 하세요.
+> .dgml 파일을 편집하는 경우 IntelliSense를 사용하면 각 요소 및 요소 값에 사용할 수 있는 특성을 식별할 수 있습니다. 특성에 색을 지정하려면 "Blue"와 같은 일반적인 색의 이름 또는 "#ffa0b1c3"과 같은 ARGB 16진수 값을 사용합니다. DGML은 WPF(Windows Presentation Foundation) 색 정의 형식의 일부를 사용합니다. 자세한 내용은 [Colors 클래스](/dotnet/api/system.windows.media.colors?view=netframework-4.8)를 참조 하세요.
 
 ## <a name="DGML"></a>DGML 구문
 

@@ -9,12 +9,12 @@ caps.latest.revision: 36
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 52e0b8f87774b11b1750700d5bef19c5423824c4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3780e0ee5cf6bffb1a749b17d868445fbda38b13
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667136"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296928"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ Visual Studio는 기본적으로 C#, C 및 C++, JavaScript, F# 및 Visual Basic�
 Visual Studio 2015의 새로운 기능에 대한 자세한 내용은 [Visual Studio 2015의 새로운 기능](../what-s-new-in-visual-studio-2015.md)을 참조하세요.
 
 ## <a name="visual-studio-setup"></a>Visual Studio 설치
- [Visual Studio 버전](http://www.visualstudio.com/products/visual-studio-with-msdn-overview-vs)에서 적합한 Visual Studio 버전을 확인할 수 있습니다.
+ [Visual Studio 버전](https://visualstudio.microsoft.com/vs/)에서 적합한 Visual Studio 버전을 확인할 수 있습니다.
 
- [Visual Studio 다운로드](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)에서 Visual Studio 2015를 다운로드하여 설치할 수 있습니다. 설치 프로세스에 대한 자세한 내용은 [Visual Studio 2015 설치](../install/install-visual-studio-2015.md)를 참조하세요.
+ [Visual Studio 다운로드](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)에서 Visual Studio 2015를 다운로드하여 설치할 수 있습니다. 설치 프로세스에 대한 자세한 내용은 [Visual Studio 2015 설치](../install/install-visual-studio-2015.md)를 참조하세요.
 
 ## <a name="ide-basics"></a>IDE 기본 사항
  다음 이미지는 열린 프로젝트가 있는 Visual Studio IDE, 프로젝트 파일 탐색을 위한 솔루션 탐색기 창, 소스 제어 및 작업 항목 추적 탐색을 위한 팀 탐색기 창을 보여 줍니다. 설명선 안의 제목 표시줄 기능은 아래에서 자세히 설명합니다.

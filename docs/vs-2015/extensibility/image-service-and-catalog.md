@@ -1,50 +1,50 @@
 ---
-title: 이미지 서비스 및 카탈로그 | Microsoft Docs
+title: Image Service and Catalog | Microsoft Docs
 ms.date: 11/15/2016
 ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1cc402792f39cbbebb6e7804e7406be4f06658a4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 0f509ca93b6802fc99a21143360227d64f8db319
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824678"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301171"
 ---
 # <a name="image-service-and-catalog"></a>이미지 서비스 및 카탈로그
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 cookbook 지침 및 Visual Studio 이미지 서비스 및 Visual Studio 2015에 도입 된 이미지 카탈로그에 대 한 모범 사례를 포함 합니다.  
+This cookbook contains guidance and best practices for adopting the Visual Studio Image Service and Image Catalog introduced in Visual Studio 2015.  
 
- Visual Studio 2015에 도입 된 이미지 서비스 개발자를 장치 및 사용자의 표시 되는 상황에 맞는 올바른 테마를 포함 하 여 이미지를 표시 하려면 선택한 테마에 대 한 최상의 이미지를 가져올 수 있습니다. 이미지 서비스를 채택 자산 유지 관리, HDPI 확장 및 테마와 관련 된 주요 고충을 없애는 데 도움이 됩니다.  
+ The image service introduced in Visual Studio 2015 lets developers get the best images for the device and the user’s chosen theme to display the image, including correct theming for the context in which they are displayed. Adopting the image service will help eliminate major pain points related to asset maintenance, HDPI scaling, and theming.  
 
 |||  
 |-|-|  
-|**현재 문제**|**솔루션**|  
-|배경 색 혼합|기본 제공 알파 혼합|  
-|(일부) 테마 설정 이미지|테마 메타 데이터|  
-|고대비 모드|대체 고대비 리소스|  
-|서로 다른 DPI 모드에 대 한 여러 리소스 필요|벡터 기반 대체 (fallback) 사용 하 여 선택할 수 있는 리소스|  
-|중복 된 이미지|이미지 개념 당 한 개의 식별자|  
+|**Problems today**|**솔루션**|  
+|Background color blending|Built-in alpha blending|  
+|Theming (some) images|Theme metadata|  
+|High Contrast mode|Alternate High Contrast resources|  
+|Need multiple resources for different DPI modes|Selectable resources with vector-based fallback|  
+|Duplicate images|One identifier per image concept|  
 
- 이미지 서비스를 채택 하는 이유  
+ Why adopt the image service?  
 
-- Visual Studio에서 최신 "완벽 한 픽셀" 이미지를 항상 가져오기  
+- Always get the latest “pixel-perfect” image from Visual Studio  
 
-- 제출 하 고 사용자 고유의 이미지를 사용할 수 있습니다.  
+- You can submit and use your own images  
 
-- 새 DPI 배율 Windows을 추가 하는 경우 아웃 이미지를 테스트할 필요가 없습니다  
+- No need to test your images out when Windows adds new DPI scaling  
 
-- 구현에서 이전 아키텍처 문제를 해결 합니다.  
+- Address old architectural hurdles in your implementations  
 
-  Visual Studio shell 도구 모음에서 이전 및 이후 이미지를 사용 하 여:  
+  The Visual Studio shell toolbar before and after using the image service:  
 
-  ![이미지 서비스 이전 및 이후](../extensibility/media/image-service-before-and-after.png "이전 및 이후 이미지 서비스")  
+  ![Image Service Before and After](../extensibility/media/image-service-before-and-after.png "이미지 서비스 이전 및 이후")  
 
-## <a name="how-it-works"></a>작동 방법  
- 이미지 서비스는 모든 지원 되는 UI 프레임 워크에 대 한 적절 한 비트맵 이미지를 제공할 수 있습니다.  
+## <a name="how-it-works"></a>How it works  
+ The image service can supply a bitmapped image suitable for any supported UI framework:  
 
 - WPF: BitmapSource  
 
@@ -52,25 +52,25 @@ ms.locfileid: "67824678"
 
 - Win32: HBITMAP  
 
-  이미지 서비스 흐름 다이어그램  
+  Image service flow diagram  
 
-  ![이미지 서비스 흐름 다이어그램](../extensibility/media/image-service-flow-diagram.png "이미지 서비스 흐름 다이어그램")  
+  ![Image Service Flow Diagram](../extensibility/media/image-service-flow-diagram.png "이미지 서비스 흐름 다이어그램")  
 
-  **이미지 모니커**  
+  **Image monikers**  
 
-  이미지 모니커 (또는 줄여서 모니커)는 고유 하 게 이미지 자산 또는 이미지 라이브러리에서 이미지 목록 자산을 식별 하는 GUID/i D 쌍입니다.  
+  An image moniker (or moniker for short) is a GUID/ID pair that uniquely identifies an image asset or image list asset in the image library.  
 
-  **알려진된 모니커**  
+  **Known monikers**  
 
-  Visual Studio 이미지 카탈로그 및 공개적으로 사용할 수 있는 모든 Visual Studio 구성 요소 또는 확장에 의해 포함 된 이미지 모니커 집합이 있습니다.  
+  The set of image monikers contained in the Visual Studio Image Catalog and publicly consumable by any Visual Studio component or extension.  
 
-  **이미지 매니페스트 파일**  
+  **Image manifest files**  
 
-  이미지 매니페스트 (.imagemanifest) 파일은 이미지 자산, 자산 및 실제 이미지 또는 각 자산을 나타내는 이미지를 나타내는 모니커 집합을 정의 하는 XML 파일입니다. 이미지 매니페스트 독립 실행형 이미지를 정의할 수 있습니다 또는 레거시 UI 지원에 대 한 이미지를 나열 합니다. 또한, 시기 및 해당 자산을 표시 하는 방법을 변경 하려면 각각의 자산 뒤 개별 이미지 또는 자산에서 설정할 수 있는 속성이 있습니다.  
+  Image manifest (.imagemanifest) files are XML files that define a set of image assets, the monikers that represent those assets, and the real image or images that represent each asset. Image manifests can define standalone images or image lists for legacy UI support. Additionally, there are attributes that can be set either on the asset or on the individual images behind each asset to change when and how those assets are displayed.  
 
-  **이미지 매니페스트 스키마**  
+  **Image manifest schema**  
 
-  이미지 완료 매니페스트는 다음과 같습니다.  
+  A complete image manifest looks like this:  
 
 ```xml  
 <ImageManifest>  
@@ -91,7 +91,7 @@ ms.locfileid: "67824678"
 
  **Symbols**  
 
- 가독성 및 유지 관리를 지 원하는 대로 이미지 매니페스트 특성 값에 대 한 기호를 사용할 수 있습니다. 기호는 다음과 같이 정의 됩니다.  
+ As a readability and maintenance aid, the image manifest can use symbols for attribute values. Symbols are defined like this:  
 
 ```xml  
 <Symbols>  
@@ -104,13 +104,13 @@ ms.locfileid: "67824678"
 
 |||  
 |-|-|  
-|**하위 요소**|**정의**|  
-|가져오기|현재 매니페스트에서 사용 하기 위해 지정된 된 매니페스트 파일의 기호를 가져옵니다.|  
-|Guid|GUID를 나타내는 기호와 GUID 서식 지정과 일치 해야 합니다.|  
-|ID|기호 ID를 나타내며 음수가 아닌 정수 여야 합니다.|  
-|String|기호를 나타내는 임의의 문자열 값|  
+|**Subelement**|**정의**|  
+|가져오기|Imports the symbols of the given manifest file for use in the current manifest|  
+|GUID|The symbol represents a GUID and must match GUID formatting|  
+|ID|The symbol represents an ID and must be a nonnegative integer|  
+|String|The symbol represents an arbitrary string value|  
 
- 기호는 대/소문자 구분, 및 $(symbol-name) 구문을 사용 하 여 참조입니다.  
+ Symbols are case-sensitive, and referenced using $(symbol-name) syntax:  
 
 ```xml  
 <Image Guid="$(ShellCommandGuid)" ID="$(cmdidSaveAll)" >  
@@ -118,24 +118,24 @@ ms.locfileid: "67824678"
 </Image>  
 ```  
 
- 일부 기호는 모든 매니페스트에 대 한 미리 정의 됩니다. 이러한 Uri 특성에 사용할 수 있습니다 합니다 \<소스 > 또는 \<가져오기 > 로컬 컴퓨터의 참조 경로 요소입니다.  
+ Some symbols are predefined for all manifests. These can be used in the Uri attribute of the \<Source> or \<Import> element to reference paths on the local machine.  
 
 |||  
 |-|-|  
 |**Symbol**|**설명**|  
-|CommonProgramFiles|% CommonProgramFiles % 환경 변수 값|  
-|LocalAppData|% LocalAppData % 환경 변수 값|  
-|ManifestFolder|매니페스트 파일을 포함 하는 폴더|  
-|MyDocuments|현재 사용자의 내 문서 폴더의 전체 경로|  
-|ProgramFiles|% ProgramFiles % 환경 변수 값|  
-|시스템|Windows\System32 폴더|  
-|WinDir|% WinDir % 환경 변수 값|  
+|CommonProgramFiles|The value of the %CommonProgramFiles% environment variable|  
+|LocalAppData|The value of the %LocalAppData% environment variable|  
+|ManifestFolder|The folder containing the manifest file|  
+|MyDocuments|The full path of the My Documents folder of the current user|  
+|ProgramFiles|The value of the %ProgramFiles% environment variable|  
+|시스템|The Windows\System32 folder|  
+|WinDir|The value of the %WinDir% environment variable|  
 
  **Image**  
 
- \<이미지 > 요소는 모니커를 참조할 수 있는 이미지를 정의 합니다. GUID 및 ID 종합해 이미지 모니커를 형성 합니다. 이미지에 대 한 모니커는 전체 이미지 갤러리에서 고유 해야 합니다. 라이브러리를 빌드하는 동안 발생 한 첫 번째 지정 된 모니커를 갖도록 하는 둘 이상의 이미지를 경우 유지 되는 것입니다.  
+ The \<Image> element defines an image that can be referenced by a moniker. The GUID and ID taken together form the image moniker. The moniker for the image must be unique across the entire image library. If more than one image has a given moniker, the first one encountered while building the library is the one that is retained.  
 
- 소스가 하나 이상 있어야 합니다. 크기와 무관 원본 최상의 결과 다양 한 범위의 크기에서 지지만 필요 하지 않습니다. 서비스에서 정의 되지 않은 크기의 이미지에 대 한 요청을 \<이미지 > 요소 및 크기와 무관 원본이 없는, 서비스는 가장 좋은 크기 관련 소스를 선택 하 고 요청 된 크기 조정 합니다.  
+ It must contain at least one source. Size-neutral sources will give the best results across a broad range of sizes, but they are not required. If the service is asked for an image of a size not defined in the \<Image> element and there is no size-neutral source, the service will choose the best size-specific source and scale it to the requested size.  
 
 ```xml  
 <Image Guid="guid" ID="int" AllowColorInversion="true/false">  
@@ -147,13 +147,13 @@ ms.locfileid: "67824678"
 |||  
 |-|-|  
 |**특성**|**정의**|  
-|Guid|[필수] 이미지 모니커의 GUID 부분|  
-|ID|[필수] 이미지 모니커 ID 부분|  
-|AllowColorInversion|[선택 사항, 기본값은 true] 이미지를 프로그래밍 방식으로 어두운 배경을 사용 하는 경우 반전 된 색을 가질 수 있는지 여부를 나타냅니다.|  
+|GUID|[Required] The GUID portion of the image moniker|  
+|ID|[Required] The ID portion of the image moniker|  
+|AllowColorInversion|[Optional, default true] Indicates whether the image can have its colors programmatically inverted when used on a dark background.|  
 
- **원본**  
+ **Source**  
 
- \<소스 > 요소 (XAML 및 PNG)을 단일 이미지 원본 자산을 정의 합니다.  
+ The \<Source> element defines a single image source asset (XAML and PNG).  
 
 ```xml  
 <Source Uri="uri" Background="background">  
@@ -164,21 +164,21 @@ ms.locfileid: "67824678"
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **특성** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **정의**                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-|      URI      |                                                                                                                                                                                                                                                                                                               [필수] 이미지를 로드할 수 있는 정의 하는 URI입니다. 다음 중 하나일 수 있습니다.<br /><br /> -A [Pack URI](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) 응용 프로그램을 사용 하 여: / / / 기관<br />-절대 구성 요소 리소스 참조<br />-네이티브 리소스를 포함 하는 파일 경로                                                                                                                                                                                                                                                                                                               |
-|  배경   | [선택 사항] 어떤 종류의 원본으로 사용할 목적이 백그라운드에서 나타냅니다.<br /><br /> 다음 중 하나일 수 있습니다.<br /><br /> *조명:* 밝은 배경에 소스를 사용할 수 있습니다.<br /><br /> <em>진한:</em>어두운 배경을에서 소스를 사용할 수 있습니다.<br /><br /> *HighContrast:* 고대비 모드에서 백그라운드에서 소스를 사용할 수 있습니다.<br /><br /> *HighContrastLight:* 고대비 모드에서 밝은 배경에 소스를 사용할 수 있습니다.<br /><br /> *HighContrastDark:* 고대비 모드에서 어두운 배경을에서 소스를 사용할 수 있습니다.<br /><br /> 배경 특성을 생략 하는 경우 백그라운드에서 소스를 사용할 수 있습니다.<br /><br /> 배경이 *Light*를 *어두운*를 *HighContrastLight*, 또는 *HighContrastDark*, 소스의 색 반전 되지 않습니다. 백그라운드 생략 되거나로 설정 하는 경우 *고 대비*, 소스의 색 반전을 이미지의 의해 제어 됩니다 **AllowColorInversion** 특성입니다. |
+|      URI      |                                                                                                                                                                                                                                                                                                               [Required] A URI that defines where the image can be loaded from. 다음 중 하나일 수 있습니다.<br /><br /> -   A [Pack URI](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) using the application:/// authority<br />-   An absolute component resource reference<br />-   A path to a file containing a native resource                                                                                                                                                                                                                                                                                                               |
+|  배경   | [Optional] Indicates what on kind of background the source is intended to be used.<br /><br /> 다음 중 하나일 수 있습니다.<br /><br /> *Light:* The source can be used on a light background.<br /><br /> <em>Dark:</em>The source can be used on a dark background.<br /><br /> *HighContrast:* The source can be used on any background in High Contrast mode.<br /><br /> *HighContrastLight:* The source can be used on a light background in High Contrast mode.<br /><br /> *HighContrastDark:* The source can be used on a dark background in High Contrast mode.<br /><br /> If the Background attribute is omitted, the source can be used on any background.<br /><br /> If Background is *Light*, *Dark*, *HighContrastLight*, or *HighContrastDark*, the source’s colors are never inverted. If Background is omitted or set to *HighContrast*, the inversion of the source’s colors is controlled by the image’s **AllowColorInversion** attribute. |
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
- \<소스 > 요소는 다음 선택적 하위 요소 중 하나만 포함할 수 있습니다.  
+ A \<Source> element can have exactly one of the following optional subelements:  
 
 ||||  
 |-|-|-|  
-|**요소**|**특성 (모두 필요)**|**정의**|  
-|\<크기 >|값|원본 장치 단위로 지정된 된 크기의 이미지에 대 한 사용 됩니다. 이미지는 사각형 됩니다.|  
-|\<SizeRange>|MinSize, MaxSize|원본 장치 단위로 최대 크기로 MinSize에서 이미지에 대 한 포괄적 사용 됩니다. 이미지는 사각형 됩니다.|  
-|\<크기 >|Width, Height|원본은 이미지의 지정 된 너비와 높이 (장치 단위)에 대 한 사용 됩니다.|  
-|\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|원본 장치 단위로 최대 너비/높이에 최소 너비/높이의 이미지에 대 한 포괄적 사용 됩니다.|  
+|**요소**|**Attributes (all required)**|**정의**|  
+|\<Size>|값|The source will be used for images of the given size (in device units). The image will be square.|  
+|\<SizeRange>|MinSize, MaxSize|The source will be used for images from MinSize to MaxSize (in device units) inclusively. The image will be square.|  
+|\<Dimensions>|Width, Height|The source will be used for images of the given width and height (in device units).|  
+|\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|The source will be used for images from the minimum width/height to the maximum width/height (in device units) inclusively.|  
 
- A \<소스 > 요소는 선택적 수도 있습니다 \<NativeResource > 하위 요소를 정의 하는 \<원본 > 관리 되는 어셈블리 대신 네이티브 어셈블리에서 로드 되는 합니다.  
+ A \<Source> element can also have an optional \<NativeResource> subelement, which defines a \<Source> that is loaded from a native assembly rather than a managed assembly.  
 
 ```xml  
 <NativeResource Type="type" ID="int" />  
@@ -187,12 +187,12 @@ ms.locfileid: "67824678"
 |||  
 |-|-|  
 |**특성**|**정의**|  
-|형식|[필수] 네이티브 리소스를 XAML 또는 PNG 형식|  
-|ID|[필수] 네이티브 리소스의 정수 ID 부분|  
+|Type|[Required] The type of the native resource, either XAML or PNG|  
+|ID|[Required] The integer ID portion of the native resource|  
 
  **ImageList**  
 
- \<ImageList > 요소를 단일 줄에에서 반환 될 수 있는 이미지의 컬렉션을 정의 합니다. 줄 필요에 따라 주문형으로 빌드됩니다.  
+ The \<ImageList> element defines a collection of images that can be returned in a single strip. The strip is built on demand, as needed.  
 
 ```xml  
 <ImageList>  
@@ -204,89 +204,89 @@ ms.locfileid: "67824678"
 |||  
 |-|-|  
 |**특성**|**정의**|  
-|Guid|[필수] 이미지 모니커의 GUID 부분|  
-|ID|[필수] 이미지 모니커 ID 부분|  
-|외부|[선택 사항, 기본값: false] 이미지 모니커를 사용 하 여 현재 매니페스트에서 이미지를 참조 하는지 여부를 나타냅니다.|  
+|GUID|[Required] The GUID portion of the image moniker|  
+|ID|[Required] The ID portion of the image moniker|  
+|외부|[Optional, default false] Indicates whether the image moniker references an image in the current manifest.|  
 
- 포함 된 이미지에 대 한 모니커 현재 매니페스트에 정의 된 이미지를 참조할 필요가 없습니다. 이미지 라이브러리에 포함 된 이미지를 찾지 못하면 빈 자리 표시자 이미지를 해당 위치에 됩니다.  
+ The moniker for the contained image does not have to reference an image defined in the current manifest. If the contained image cannot be found in the image library, a blank placeholder image will be used in its place.  
 
-## <a name="using-the-image-service"></a>이미지 서비스 사용  
+## <a name="using-the-image-service"></a>Using the image service  
 
-### <a name="first-steps-managed"></a>첫 번째 단계 (관리)  
- 이미지 서비스를 사용 하려면 프로젝트에 다음 어셈블리의 일부 또는 전부에 대 한 참조를 추가 해야 합니다.  
+### <a name="first-steps-managed"></a>First steps (managed)  
+ To use the image service, you need to add references to some or all of the following assemblies to your project:  
 
 - **Microsoft.VisualStudio.ImageCatalog.dll**  
 
-  - 기본 제공 이미지 카탈로그 KnownMonikers를 사용 하는 경우 필요  
+  - Required if you use the built-in image catalog KnownMonikers  
 
 - **Microsoft.VisualStudio.Imaging.dll**  
 
-  - 사용 하는 경우 필요 **CrispImage** 하 고 **ImageThemingUtilities** WPF UI에서  
+  - Required if you use **CrispImage** and **ImageThemingUtilities** in your WPF UI  
 
 - **Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll**  
 
-  - 사용 하는 경우 필요 합니다 **ImageMoniker** 하 고 **ImageAttributes** 형식  
+  - Required if you use the **ImageMoniker** and **ImageAttributes** types  
 
-  - **EmbedInteropTypes** 설정 해야 true로  
+  - **EmbedInteropTypes** should be set to true  
 
 - **Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime**  
 
-  - 사용 하는 경우 필요 합니다 **IVsImageService2** 형식  
+  - Required if you use the **IVsImageService2** type  
 
-  - **EmbedInteropTypes** 설정 해야 true로  
+  - **EmbedInteropTypes** should be set to true  
 
 - **Microsoft.VisualStudio.Utilities.dll**  
 
-  - 사용 하는 경우 필요 합니다 **BrushToColorConverter** 는 ImageThemingUtilities에 대 한. **ImageBackgroundColor** WPF UI에서  
+  - Required if you use the **BrushToColorConverter** for the ImageThemingUtilities.**ImageBackgroundColor** in your WPF UI  
 
 - **Microsoft.VisualStudio.Shell.\<VSVersion>.0**  
 
-  - 사용 하는 경우 필요 합니다 **IVsUIObject** 형식  
+  - Required if you use the **IVsUIObject** type  
 
 - **Microsoft.VisualStudio.Shell.Interop.10.0.dll**  
 
-  - UI WinForms 관련 도우미를 사용 하는 경우 필요  
+  - Required if you use the WinForms-related UI helpers  
 
-  - **EmbedInteropTypes** 설정 해야 true로  
+  - **EmbedInteropTypes** should be set to true  
 
-### <a name="first-steps-native"></a>첫 번째 단계 (네이티브)  
- 이미지 서비스를 사용 하려면 일부 또는 모든 프로젝트에 다음 헤더를 포함 해야 합니다.  
+### <a name="first-steps-native"></a>First steps (native)  
+ To use the image service, you need to include some or all of the following headers to your project:  
 
 - **KnownImageIds.h**  
 
-  - 기본 제공 이미지 카탈로그를 사용 하는 경우 필요 **KnownMonikers**, 하지만 사용할 수 없습니다는 **ImageMoniker** 면에서 값 반환 등의 형식 **IVsHierarchy GetGuidProperty**나 **GetProperty** 호출 합니다.  
+  - Required if you use the built-in image catalog **KnownMonikers**, but cannot use the **ImageMoniker** type, such as when returning values from **IVsHierarchy GetGuidProperty** or **GetProperty** calls.  
 
 - **KnownMonikers.h**  
 
-  - 기본 제공 이미지 카탈로그를 사용 하는 경우 필요 **KnownMonikers**합니다.  
+  - Required if you use the built-in image catalog **KnownMonikers**.  
 
 - **ImageParameters140.h**  
 
-  - 사용 하는 경우 필요 합니다 **ImageMoniker** 하 고 **ImageAttributes** 형식입니다.  
+  - Required if you use the **ImageMoniker** and **ImageAttributes** types.  
 
 - **VSShell140.h**  
 
-  - 사용 하는 경우 필요 합니다 **IVsImageService2** 형식입니다.  
+  - Required if you use the **IVsImageService2** type.  
 
 - **ImageThemingUtilities.h**  
 
-  - 이미지를 테마를 처리할 수 없는 경우 필요 합니다.  
+  - Required if you are unable to let the image service handle theming for you.  
 
-  - 이미지 서비스에 이미지 테마를 처리할 수 있는 경우에이 헤더를 사용 하지 마세요.  
+  - Do not use this header if the image service can handle your image theming.  
 
 - **VSUIDPIHelper.h**  
 
-  - DPI 도우미를 사용 하 여 현재 DPI를 가져오려는 경우 필요 합니다.  
+  - Required if you use the DPI helpers to get the current DPI.  
 
-## <a name="how-do-i-write-new-wpf-ui"></a>새 WPF UI를 작성 하는 방법  
+## <a name="how-do-i-write-new-wpf-ui"></a>How do I write new WPF UI?  
 
-1. 위의 필요한 어셈블리 참조를 추가 하 여 시작 프로젝트에 섹션을 첫 번째 단계입니다. 모두 추가 해야 하는 참조만 추가 필요가 없습니다. (참고: 사용 하는 경우에 대 한 액세스 권한이 **색** of **브러시**에 대 한 참조를 건너뛸 수 있습니다 **유틸리티**변환기가 필요 하지 않으므로,.)  
+1. Start by adding the assembly references required in the above first steps section to your project. You don’t need to add all of them, so add just the references you need. (Note: if you are using or have access to **Colors** instead of **Brushes**, then you can skip the reference to **Utilities**, since you won’t need the converter.)  
 
-2. 원하는 이미지를 선택 하 고 해당 모니커를 가져옵니다. 사용 하 여는 **KnownMoniker**, 하거나 사용자 고유의 사용자 지정 이미지 및 모니커 경우 직접 사용 합니다.  
+2. Select the desired image and get its moniker. Use a **KnownMoniker**, or use your own if you have your own custom images and monikers.  
 
-3. 추가 **CrispImages** 에 XAML을 합니다. (아래 예제 참조).  
+3. Add **CrispImages** to your XAML. (See below example.)  
 
-4. 설정 된 **ImageThemingUtilities.ImageBackgroundColor** UI 계층의 속성입니다. (배경색 알려져 없는 반드시에 하지 위치에 설정 해야 합니다 **CrispImage**.) (아래 예제 참조).  
+4. Set the **ImageThemingUtilities.ImageBackgroundColor** property in your UI hierarchy. (This should be set at the location where the background color is known, not necessarily on the **CrispImage**.) (See below example.)  
 
 ```xaml  
 <Window  
@@ -308,35 +308,35 @@ ms.locfileid: "67824678"
 </Window>  
 ```  
 
- **기존 WPF UI를 업데이트 하려면 어떻게 해야 하나요?**  
+ **How do I update existing WPF UI?**  
 
- 기존 WPF UI 업데이트는 세 단계로 구성 된 비교적 간단한 프로세스입니다.  
+ Updating existing WPF UI is a relatively simple process that consists of three basic steps:  
 
-1. 모두 바꾸기 \<이미지 > 요소를 사용 하 여 UI에서 \<CrispImage > 요소  
+1. Replace all \<Image> elements in your UI with \<CrispImage> elements  
 
-2. 모니커 특성에 모든 원본 특성을 변경 합니다.  
+2. Change all the Source attributes to Moniker attributes  
 
-    - 이미지는 변경 되지 않습니다 하 고 사용 하는 경우 **KnownMonikers**, 한 다음 해당 속성을 정적으로 바인딩할 합니다 **KnownMoniker**합니다. (위의 예제 참조).  
+    - If the image never changes and you are using **KnownMonikers**, then statically bind that property to the **KnownMoniker**. (See the above example.)  
 
-    - 이미지는 변경 되지 않습니다 사용자 고유의 사용자 지정 이미지를 사용 하는 경우 다음 정적으로 바인딩할 사용자 고유의 모니커.  
+    - If the image never changes and you are using your own custom image, then statically bind to your own moniker.  
 
-    - 이미지를 변경할 수 있으면 모니커 특성을 속성 변경 내용에 알리는 코드 속성에 바인딩하십시오.  
+    - If the image can change, bind the Moniker attribute to a code property that notifies on property changes.  
 
-3. 어딘가에 UI 계층 구조를 설정 **ImageThemingUtilities.ImageBackgroundColor** 있는지 색 반전 되도록 제대로 적용 됩니다.  
+3. Somewhere in the UI hierarchy, set **ImageThemingUtilities.ImageBackgroundColor** to make sure color inversion works correctly.  
 
-    - 사용 해야 합니다 **BrushToColorConverter** 클래스입니다. (위의 예제 참조).  
+    - This might require the use of the **BrushToColorConverter** class. (See the above example.)  
 
-## <a name="how-do-i-update-win32-ui"></a>Win32 UI를 업데이트 하려면 어떻게 해야 하나요?  
- 로드 하는 원시 이미지의 이름을 바꾸려면 해당 되는 경우 다음 코드를 추가 합니다. 필요에 따라 HICONs HIMAGELIST 비교와 이러한 방식으로 반환 하는 것에 대 한 값을 전환 합니다.  
+## <a name="how-do-i-update-win32-ui"></a>How do I update Win32 UI?  
+ Add the following to your code wherever appropriate to replace the raw loading of images. Switch values for returning HBITMAPs versus HICONs versus HIMAGELIST as needed.  
 
- **이미지 서비스**  
+ **Get the image service**  
 
 ```cpp  
 CComPtr<IVsImageService2> spImgSvc;  
 CGlobalServiceProvider::HrQueryService(SID_SVsImageService, &spImgSvc);  
 ```  
 
- **이미지를 요청합니다.**  
+ **Requesting the image**  
 
 ```cpp  
 ImageAttributes attr = { 0 };  
@@ -357,16 +357,16 @@ spImgSvc->GetImage(KnownMonikers::Blank, attributes, &spImg);
 
 ```  
 
-## <a name="how-do-i-update-winforms-ui"></a>WinForms UI를 업데이트 하려면 어떻게 해야 하나요?  
- 로드 하는 원시 이미지의 이름을 바꾸려면 해당 되는 경우 다음 코드를 추가 합니다. 필요에 따라 비트맵 및 아이콘을 반환 하는 것에 대 한 값을 전환 합니다.  
+## <a name="how-do-i-update-winforms-ui"></a>How do I update WinForms UI?  
+ Add the following to your code wherever appropriate to replace the raw loading of images. Switch values for returning Bitmaps versus Icons as needed.  
 
- **문을 사용 하 여 도움이**  
+ **Helpful using statement**  
 
 ```csharp  
 using GelUtilities = Microsoft.Internal.VisualStudio.PlatformUI.Utilities;  
 ```  
 
- **이미지 서비스**  
+ **Get the image service**  
 
 ```csharp  
 // This or your preferred way of querying for Visual Studio services  
@@ -374,7 +374,7 @@ IVsImageService2 imageService = (IVsImageService2)Package.GetGlobalService(typeo
 
 ```  
 
- **이미지를 요청 합니다.**  
+ **Request the image**  
 
 ```csharp  
 ImageAttributes attributes = new ImageAttributes  
@@ -398,23 +398,23 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 
 ```  
 
-## <a name="how-do-i-use-image-monikers-in-a-new-tool-window"></a>새 도구 창에서 이미지 모니커를 사용 하는 방법  
- VSIX 패키지 프로젝트 템플릿은 Visual Studio 2015에 대 한 업데이트 되었습니다. 새 도구 창을 만들려면 VSIX 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 "새 항목... 추가" 선택 (Ctrl+Shift+A). 프로젝트 언어에 대 한 확장성 노드 아래의 "사용자 지정 도구 창," 선택 "추가" 단추를 누르고 도구 창에 이름을 지정 합니다.  
+## <a name="how-do-i-use-image-monikers-in-a-new-tool-window"></a>How do I use image monikers in a new tool window?  
+ The VSIX package project template was updated for Visual Studio 2015. To create a new tool window, right-click on the VSIX project and select “Add New Item…” (Ctrl+Shift+A). Under the Extensibility node for the project language, select “Custom Tool Window,” give the tool window a name, and press the “Add” button.  
 
- 이들은 도구 창에서 모니커를 사용 하는 키 위치입니다. 각각에 대 한 지침을 따르세요.  
+ These are the key places to use monikers in a tool window. Follow the instructions for each:  
 
-1. 도구 창 탭 탭 작은 경우 (Ctrl + Tab 창 전환기에도 사용)에 충분 합니다.  
+1. The tool window tab when the tabs get small enough (also used in the Ctrl+Tab window switcher).  
 
-    파생 된 클래스의 생성자에이 줄을 추가 합니다 **ToolWindowPane** 형식:  
+    Add this line to the constructor for the class that derives from the **ToolWindowPane** type:  
 
    ```csharp  
    // Replace this KnownMoniker with your desired ImageMoniker  
    this.BitmapImageMoniker = KnownMonikers.Blank;  
    ```  
 
-2. 도구 창을 열려면 명령입니다.  
+2. The command to open the tool window.  
 
-    패키지에 대 한.vsct 파일에서 도구 창의 명령 단추를 편집 합니다.  
+    In the .vsct file for the package, edit the tool window’s command button:  
 
    ```xml  
    <Button guid="guidPackageCmdSet" id="CommandId" priority="0x0100" type="Button">  
@@ -429,29 +429,29 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
    </Button>  
    ```  
 
-   **기존 도구 창에서 이미지 모니커를 사용 하는 방법**  
+   **How do I use image monikers in an existing tool window?**  
 
-   이미지 모니커를 사용 하는 기존 도구 창을 업데이트 하는 것은 새 도구 창을 만드는 단계와 비슷합니다.  
+   Updating an existing tool window to use image monikers is similar to the steps for creating a new tool window.  
 
-   이들은 도구 창에서 모니커를 사용 하는 키 위치입니다. 각각에 대 한 지침을 따르세요.  
+   These are the key places to use monikers in a tool window. Follow the instructions for each:  
 
-3. 도구 창 탭 탭 작은 경우 (Ctrl + Tab 창 전환기에도 사용)에 충분 합니다.  
+3. The tool window tab when the tabs get small enough (also used in the Ctrl+Tab window switcher).  
 
-   1. 파생 된 클래스의 생성자에서 (있는 경우) 다음이 줄을 제거 합니다 **ToolWindowPane** 형식:  
+   1. Remove these lines (if they exist) in the constructor for the class that derives from the **ToolWindowPane** type:  
 
        ```csharp  
        this.BitmapResourceID = <Value>;  
        this.BitmapIndex = <Value>;  
        ```  
 
-   2. 단계 # 1의 참조는 "어떻게 할까요 새 도구 창에서 사용 하 여 이미지 모니커?" 위의 섹션입니다.  
+   2. See step #1 of the “How Do I Use Image Monikers in a New Tool Window?” section above.  
 
-4. 도구 창을 열려면 명령입니다.  
+4. The command to open the tool window.  
 
-   - 2 단계가 표시 된 "작업 방법에 새 도구 창 사용 하 여 이미지 모니커?" 위의 섹션입니다.  
+   - See step #2 of the “How Do I Use Image Monikers in a New Tool Window?” section above.  
 
-## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>.Vsct 파일에서 이미지 모니커를 사용 하는 방법  
- 주석 처리 된 줄 아래에 표시 된 대로.vsct 파일을 업데이트 합니다.  
+## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>How do I use image monikers in a .vsct file?  
+ Update your .vsct file as indicated by the commented lines below:  
 
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -491,11 +491,11 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 </CommandTable>  
 ```  
 
- **그렇다면 이전 버전의 Visual Studio에서 읽을 수 있도록 내.vsct 파일 해야?**  
+ **What if my .vsct file also needs to be read by older versions of Visual Studio?**  
 
- 이전 버전의 Visual Studio를 인식 하지 못하는 합니다 **IconIsMoniker** 명령 플래그입니다. 이미지 서비스에서 이미지를 지원 하지만 계속 이전 버전의 Visual Studio에서 이전 스타일 이미지를 사용 하는 버전의 Visual Studio에서 사용할 수 있습니다. 이 위해 변경 되지 않은 (및 이전 버전의 Visual Studio와 호환 되므로).vsct 파일을 유지 하는.vsct 파일에 정의 된 GUID/i D 쌍에서 매핑하는 CSV (쉼표로 구분 된 값) 파일 만들기 \<비트맵 > 이미지 요소 모니커 GUID/ID 쌍입니다.  
+ Older versions of Visual Studio do not recognize the **IconIsMoniker** command flag. You can use images from the image service on versions of Visual Studio that support it, but continue to use old-style images on older versions of Visual Studio. To do this, you’d leave the .vsct file unchanged (and therefore compatible with older versions of Visual Studio), and create a CSV (comma-separated values) file that maps from GUID/ID pairs defined in a .vsct file’s \<Bitmaps> element to image moniker GUID/ID pairs.  
 
- 매핑 CSV 파일의 형식은 다음과 같습니다.  
+ The format of the mapping CSV file is:  
 
 ```  
 Icon guid, Icon id, Moniker guid, Moniker id  
@@ -503,49 +503,49 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,1,fda30684-682d-421c-8be4-650a2967058e,100
 b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200  
 ```  
 
- 패키지를 사용 하 여 CSV 파일을 배포 하 고 해당 위치를 지정 하 여는 **IconMappingFilename** 의 속성을 **ProvideMenuResource** 패키지 특성:  
+ The CSV file is deployed with the package and its location is specified by the **IconMappingFilename** property of the **ProvideMenuResource** package attribute:  
 
 ```csharp  
 [ProvideMenuResource("MyPackage.ctmenu", 1, IconMappingFilename="IconMappings.csv")]  
 ```  
 
- 합니다 **IconMappingFilename** @"%UserProfile%\ 같은 환경 변수를 정의한 디렉터리에서 명시적으로 시작 하는 절대 경로 또는 상대 경로 암시적으로 루 팅 (예에서 같이 위의) $PackageFolder $ dir1\dir2\MyMappingFile.csv "입니다.  
+ The **IconMappingFilename** is either a relative path implicitly rooted at $PackageFolder$ (as in the example above), or an absolute path explicitly rooted at a directory defined by an environment variable, such as @"%UserProfile%\dir1\dir2\MyMappingFile.csv".  
 
-## <a name="how-do-i-port-a-project-system"></a>프로젝트 시스템을 포트 수행는 방법  
- **프로젝트에 대해 ImageMonikers를 제공 하는 방법**  
+## <a name="how-do-i-port-a-project-system"></a>How do I port a project system?  
+ **How to supply ImageMonikers for a project**  
 
-1. 구현 **VSHPROPID_SupportsIconMonikers** 프로젝트의 **IVsHierarchy**, true를 반환 합니다.  
+1. Implement **VSHPROPID_SupportsIconMonikers** on the project’s **IVsHierarchy**, and return true.  
 
-2. 구현 **VSHPROPID_IconMonikerImageList** (원래 프로젝트를 사용 하는 경우 **VSHPROPID_IconImgList**) 또는 **VSHPROPID_IconMonikerGuid**,  **VSHPROPID_IconMonikerId**하십시오 **VSHPROPID_OpenFolderIconMonikerGuid**합니다 **VSHPROPID_OpenFolderIconMonikerId** (원래 프로젝트를 사용 하는 경우  **VSHPROPID_IconHandle** 하 고 **VSHPROPID_OpenFolderIconHandle**).  
+2. Implement either **VSHPROPID_IconMonikerImageList** (if the original project used **VSHPROPID_IconImgList**) or **VSHPROPID_IconMonikerGuid**, **VSHPROPID_IconMonikerId**, **VSHPROPID_OpenFolderIconMonikerGuid**, **VSHPROPID_OpenFolderIconMonikerId** (if the original project used **VSHPROPID_IconHandle** and **VSHPROPID_OpenFolderIconHandle**).  
 
-3. "레거시"의 버전을 만드는 아이콘 확장점 요청 하는 경우 아이콘에 대 한 원래 VSHPROPIDs의 구현을 변경 합니다. **IVsImageService2** 아이콘에 해당 하는 데 필요한 기능을 제공 합니다.  
+3. Change the implementation of the original VSHPROPIDs for icons to create “legacy” versions of the icons if extension points request them. **IVsImageService2** provides functionality necessary to get those icons  
 
-   **VB에 대 한 추가 요구 사항이 C# 프로젝트 특성 /**  
+   **Extra requirements for VB/C# project flavors**  
 
-   만 구현 **VSHPROPID_SupportsIconMonikers** 프로젝트가 것을 감지 하는 경우를 **바깥쪽 flavor**합니다. 이 고, 그렇지 실제 가장 바깥쪽 버전을 실제로 이미지 모니커를 지원 하지 않을 수 및 기본 버전에 효과적으로 "숨어서 실행" 사용자 지정된 이미지입니다.  
+   Only implement **VSHPROPID_SupportsIconMonikers** if you detect that your project is the **outermost flavor**. Otherwise, the actual outermost flavor may not support image monikers in reality, and your base flavor might effectively “hide” customized images.  
 
-   **CPS에서 이미지 모니커를 사용 하는 방법**  
+   **How do I use image monikers in CPS?**  
 
-   CPS (공통 프로젝트 시스템)에서 사용자 지정 이미지를 설정 수동으로 또는 프로젝트 시스템 확장 SDK를 사용 하 여 제공 되는 항목 템플릿을 통해 수행할 수 있습니다.  
+   Setting custom images in CPS (Common Project System) can be done manually or via an item template that comes with the Project System Extensibility SDK.  
 
-   **프로젝트 시스템 확장 SDK를 사용 하 여**  
+   **Using the Project System Extensibility SDK**  
 
-   지침을 따르세요 [프로젝트 형식/항목 형식에 대 한 사용자 지정 아이콘을 제공](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/scenario/provide_custom_icons_for_the_project_or_item_type.md) CPS 이미지를 사용자 지정할 수 있습니다. 자세한 내용은 CPS에서 찾을 수 있습니다 [Visual Studio 프로젝트 시스템 확장 설명서](https://github.com/Microsoft/VSProjectSystem)  
+   Follow the instructions at [Provide custom icons for the Project Type/Item type](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/scenario/provide_custom_icons_for_the_project_or_item_type.md) to customize your CPS images. More information about CPS can be found at [Visual Studio Project System Extensibility Documentation](https://github.com/Microsoft/VSProjectSystem)  
 
-   **수동으로 ImageMonikers 사용**  
+   **Manually use ImageMonikers**  
 
-4. 구현 및 내보내기 합니다 **IProjectTreeModifier** 프로젝트 시스템의 인터페이스입니다.  
+4. Implement and export the **IProjectTreeModifier** interface in your project system.  
 
-5. 결정 **KnownMoniker** 또는 사용자 지정 이미지 모니커를 사용 하려면.  
+5. Determine which **KnownMoniker** or custom image moniker you want to use.  
 
-6. 에 **ApplyModifications** 메서드를 다음을 수행 비슷하게 새 트리를 반환 하기 전에 메서드 내의 아래 예제:  
+6. In the **ApplyModifications** method, do the following somewhere in the method before returning the new tree, similar to the below example:  
 
    ```csharp  
    // Replace this KnownMoniker with your desired ImageMoniker  
    tree = tree.SetIcon(KnownMonikers.Blank.ToProjectSystemType());  
    ```  
 
-7. 새 트리를 만드는 경우 원하는 모니커 비슷합니다 NewTree 메서드를 전달 하 여 사용자 지정 이미지를 설정할 수 있습니다는 아래 예제:  
+7. If you are creating a new tree, you can set the custom images by passing in the desired monikers into the NewTree method, similar to the below example:  
 
    ```csharp  
    // Replace this KnownMoniker with your desired ImageMoniker  
@@ -559,38 +559,38 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
                                                 expandedIcon);  
    ```  
 
-## <a name="how-do-i-convert-from-a-real-image-strip-to-a-moniker-based-image-strip"></a>변환 하는 방법 실제 이미지 스트립에서 모니커 기반 이미지 스트립에?  
- **HIMAGELISTs를 지원 해야 하는 경우**  
+## <a name="how-do-i-convert-from-a-real-image-strip-to-a-moniker-based-image-strip"></a>How do I convert from a real image strip to a moniker-based image strip?  
+ **I need to support HIMAGELISTs**  
 
- 이미지 서비스를 사용 하 여 업데이트 하려는 하지만 이미지 목록 전달 해야 하는 Api에 의해 제한 되는 코드에 대 한 기존 이미지 스트립의 경우 여전히 이미지 서비스의 이점을 얻을 수 있습니다. 모니커 기반 이미지 스트립을 만들려면 기존 모니커에서 매니페스트를 만들려면 다음 단계를 수행 합니다.  
+ If there is an already existing image strip for your code that you want to update to use the image service, but you are constrained by APIs that require passing around image lists, you can still get the benefits of the image service. To create a moniker-based image strip, follow the steps below to create a manifest from existing monikers.  
 
-1. 실행 합니다 **ManifestFromResources** 도구인 이미지 스트립을 전달 합니다. 이 줄에 대 한 매니페스트를 생성 됩니다.  
+1. Run the **ManifestFromResources** tool, passing it the image strip. This will generate a manifest for the strip.  
 
-   - 권장: 용도 맞게 매니페스트에 대 한 기본이 아닌 이름을 제공 합니다.  
+   - Recommended: provide a non default name for the manifest to suit its usage.  
 
-2. 만 사용 하는 경우 **KnownMonikers**, 다음을 수행 합니다.  
+2. If you are using only **KnownMonikers**, then do the following:  
 
-   - 대체는 \<이미지 > 섹션으로 매니페스트에 \<이미지 / >입니다.  
+   - Replace the \<Images> section of the manifest with \<Images/>.  
 
-   - 모든 subimage Id를 제거 (개 \<imagestrip 이름 > _ # #).  
+   - Remove all the subimage IDs (anything with \<imagestrip name>_##).  
 
-   - 권장: AssetsGuid 기호 및 용도 맞게 이미지 스트립 기호 이름을 바꿉니다.  
+   - Recommended: rename the AssetsGuid symbol and image strip symbol to suit its usage.  
 
-   - 각 대체 **ContainedImage**의 각 $(ImageCatalogGuid)를 사용 하 여 GUID 바꿀 **ContainedImage**의 $를 사용 하 여 ID (\<모니커 >), 각 외부="true"특성추가**ContainedImage**  
+   - Replace each **ContainedImage**’s GUID with $(ImageCatalogGuid), replace each **ContainedImage**’s ID with $(\<moniker>), and add the External=”true” attribute to each **ContainedImage**  
 
-       - \<모니커 > 바꿔야 합니다 **KnownMoniker** 이미지와 일치 하는 같지만 "KnownMonikers" 이름에서 제거 합니다.  
+       - \<moniker> should be replaced with the **KnownMoniker** that matches the image but with the “KnownMonikers.” removed from the name.  
 
-   - 추가 < 가져오기 Manifest="$(ManifestFolder)\\< 디렉터리 경로 설치 하는 상대\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest" /\> 의 맨 위에 \<기호 > 섹션.  
+   - Add <Import Manifest="$(ManifestFolder)\\<Relative install dir path to\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest" /\> to the top of the \<Symbols> section.  
 
-       - 상대 경로 매니페스트에 대 한 제작 설치에 정의 된 배포 위치에 따라 결정 됩니다.  
+       - The relative path is determined by the deployment location defined in the setup authoring for the manifest.  
 
-3. 실행 합니다 **ManifestToCode** 기존 코드에는 모니커 이미지 스트립에 대 한 이미지 서비스를 쿼리 하는 데 사용할 수 있도록 래퍼를 생성 하는 도구입니다.  
+3. Run the **ManifestToCode** tool to generate wrappers so that the existing code has a moniker it can use to query the image service for the image strip.  
 
-   - 권장: 래퍼 및 용도 맞게 네임 스페이스에 대 한 기본이 아닌 이름을 제공 합니다.  
+   - Recommended: provide nondefault names for the wrappers and namespaces to suit their usage.  
 
-4. 모든 작업을 수행 합니다 추가 설치 작성/배포 및 다른 코드 변경은 이미지 서비스 및 새 파일을 사용 하 합니다.  
+4. Do all the adds, setup authoring/deployment, and other code changes to work with the image service and the new files.  
 
-   샘플 매니페스트를 내부 및 외부 이미지 처럼 보여야 합니다 참조를 포함 합니다.  
+   Sample manifest including both internal and external images to see what it should look like:  
 
 ```xml  
 <?xml version="1.0"?>  
@@ -641,54 +641,54 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 </ImageManifest>  
 ```  
 
- **HIMAGELISTs 지원할 필요가 없습니다.**  
+ **I don’t need to support HIMAGELISTs**  
 
-1. 집합을 결정 **KnownMonikers** 프로그램 이미지 스트립에 있는 이미지와 일치는 또는 사용자 이미지 스트립에서 이미지에 대 한 고유한 모니커를 만듭니다.  
+1. Determine the set of **KnownMonikers** that match the images in your image strip, or create your own monikers for the images in your image strip.  
 
-2. 필요한 인덱스 대신 모니커를 사용 하도록 이미지 스트립에 있는 이미지를 가져오는 데 모든 매핑을 업데이트 합니다.  
+2. Update whatever mapping you used to get the image at the required index in the image strip to use the monikers instead.  
 
-3. 이미지 서비스 요청을 통해 업데이트 되는 매핑의 모니커를 사용 하도록 코드를 업데이트 합니다. (업데이트를 의미할 수 있습니다 **CrispImages** 관리 코드 또는 이러한 방식으로 또는 HICONs 이미지 서비스에서 요청 및 네이티브 코드에 대 한 관련 전달 합니다.)  
+3. Update your code to use the image service to request monikers via the updated mapping. (This might mean updating to **CrispImages** for managed code, or requesting HBITMAPs or HICONs from the image service and passing them around for native code.)  
 
-## <a name="testing-your-images"></a>이미지를 테스트합니다.  
- 이미지 라이브러리 뷰어 도구를 사용 하 여 모든 것이 제대로 작성 되었는지 확인 하 여 이미지 매니페스트를 테스트할 수 있습니다. 도구를 [Visual Studio 2015 SDK](https://msdn.microsoft.com/library/bb166441.aspx)합니다. 이 도구 및 기타 도구에 대 한 설명서를 찾을 수 있습니다 [여기](https://aka.ms/VSImageThemeTools)합니다.  
+## <a name="testing-your-images"></a>Testing your images  
+ You can use the Image Library Viewer tool to test your image manifests to make sure everything is authored correctly. You can find the tool in the [Visual Studio 2015 SDK](https://msdn.microsoft.com/library/bb166441.aspx). Documentation for this tool and others can be found [here](https://aka.ms/VSImageThemeTools).  
 
 ## <a name="additional-resources"></a>추가 자료  
 
 ### <a name="samples"></a>샘플  
- GitHub에서 Visual Studio 샘플의 여러 다양 한 Visual Studio 확장성 지점의 일환으로 이미지 서비스를 사용 하는 방법을 보여 주는 업데이트 되었습니다.  
+ Several of the Visual Studio samples on GitHub have been updated to show how to use the image service as part of various Visual Studio extensibility points.  
 
- 확인할 [ http://github.com/Microsoft/VSSDK-Extensibility-Samples ](http://github.com/Microsoft/VSSDK-Extensibility-Samples) 최신 샘플에 대 한 합니다.  
+ Check [http://github.com/Microsoft/VSSDK-Extensibility-Samples](https://github.com/Microsoft/VSSDK-Extensibility-Samples) for the latest samples.  
 
 ### <a name="tooling"></a>도구  
- 이미지 서비스와 작동 하는 UI를 작성/업데이트 지원 하기 위해 이미지 서비스에 대 한 지원 도구 집합을 만들었습니다. 각 도구에 대 한 자세한 내용은 도구와 함께 제공 되는 설명서를 확인 합니다. 도구는의 일부분으로 포함 된 [Visual Studio 2015 SDK.](https://msdn.microsoft.com/library/bb166441.aspx)  
+ A set of support tools for the Image Service was created to aid in creating/updating UI that works with the Image Service. For more information about each tool, check the documentation that comes with the tools. The tools are included as part of the [Visual Studio 2015 SDK.](https://msdn.microsoft.com/library/bb166441.aspx)  
 
  **ManifestFromResources**  
 
- 매니페스트 리소스 도구에서 이미지 리소스 (PNG 또는 XAML)의 목록을 사용 하 고 이미지 서비스를 사용 하 여 해당 이미지를 사용 하 여 이미지 매니페스트 파일을 생성 합니다.  
+ The Manifest from Resources Tool takes a list of image resources (PNG or XAML) and generates an image manifest file for using those images with the image service.  
 
  **ManifestToCode**  
 
- 매니페스트 코드 도구를 이미지 매니페스트 파일을 사용 하 고 코드에서 매니페스트 값 참조에 대 한 래퍼 파일을 생성 (C++, C#, 또는 VB) 또는.vsct 파일입니다.  
+ The Manifest to Code Tool takes an image manifest file and generates a wrapper file for referencing the manifest values in code (C++, C#, or VB) or .vsct files.  
 
  **ImageLibraryViewer**  
 
- 이미지 라이브러리 뷰어 도구 이미지 매니페스트를 로드할 수 있습니다 및 Visual Studio 매니페스트가 제대로 작성 되었는지 확인 하는 동일한 방식으로 조작할 수 있습니다. 백그라운드, 크기, DPI 설정, 고대비 등 및 기타 설정을 변경할 수 있습니다. 또한 매니페스트에서 오류를 찾을 수 로드 정보를 표시 하 고 매니페스트에 각 이미지에 대 한 소스 정보를 표시 합니다.  
+ The Image Library Viewer Tool can load image manifests and allows the user to manipulate them in the same way Visual Studio would to make sure the manifest is authored correctly. The user can alter background, sizes, DPI setting, High Contrast, and other settings. It also displays loading information to find errors in the manifests and displays source information for each image in the manifest.  
 
 ## <a name="faq"></a>FAQ  
 
-- 로드할 때 포함 해야 하는 종속성이 있습니까 \<Include="Microsoft.VisualStudio.* 참조 합니다. Interop.14.0.DesignTime"/ >?  
+- Are there any dependencies that you must include when loading \<Reference Include="Microsoft.VisualStudio.*.Interop.14.0.DesignTime" />?  
 
-  - EmbedInteropTypes 설정 = "true" 모든 interop Dll에 있습니다.  
+  - Set EmbedInteropTypes="true" on all interop DLLs.  
 
-- 이미지 매니페스트는 my 확장을 사용 하 여 배포 하려면 어떻게 해야 하나요?  
+- How do I deploy an image manifest with my extension?  
 
-  - 프로젝트에.imagemanifest 파일을 추가 합니다.  
+  - Add the .imagemanifest file to your project.  
 
-  - "VSIX에 포함"을 true로 설정 합니다.  
+  - Set “Include in VSIX” to True.  
 
-- CPS 프로젝트 시스템 내를 업데이트 합니다. 변경 내용 **ImageName** 하 고 **StockIconService**?  
+- I am updating my CPS Project System. What happened to **ImageName** and **StockIconService**?  
 
-  - 이러한 CPS 모니커를 사용 하도록 업데이트 되었을 때 제거 되었습니다. 더 이상 호출 해야 합니다 **StockIconService**, 원하는 전달 하기만 하면 됩니다 **KnownMoniker** 메서드를 사용 하 여 속성에는 **ToProjectSystemType()** 확장 메서드 CPS 유틸리티입니다. 매핑을 찾을 수 있습니다 **ImageName** 하 **KnownMonikers** 아래:  
+  - These were removed when CPS was updated to use monikers. You no longer need to call the **StockIconService**, just pass the desired **KnownMoniker** to the method or property using the **ToProjectSystemType()** extension method in the CPS utilities. You can find a mapping from **ImageName** to **KnownMonikers** below:  
 
     |||  
     |-|-|  
@@ -756,7 +756,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |ImageName.CSharpCodeFile|KnownImageIds.CSFileNode|  
     |ImageName.VisualBasicCodeFile|KnownImageIds.VBFileNode|  
 
-  - 내 완료 목록 공급자를 업데이트 합니다. 어떤 **KnownMonikers** 이전 일치 **StandardGlyphGroup** 하 고 **StandardGlyph** 값?  
+  - I am updating my completion list provider. What **KnownMonikers** match to the old **StandardGlyphGroup** and **StandardGlyph** values?  
 
     ||||  
     |-|-|-|  
@@ -948,17 +948,17 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphGroupJSharpInterface|GlyphItemShortcut|InterfaceShortcut|  
     |GlyphGroupError||StatusError|  
     |GlyphBscFile||ClassFile|  
-    |GlyphAssembly||참조|  
-    |GlyphLibrary||Library|  
+    |GlyphAssembly||참고|  
+    |GlyphLibrary||라이브러리|  
     |GlyphVBProject||VBProjectNode|  
     |GlyphCoolProject||CSProjectNode|  
     |GlyphCppProject||CPPProjectNode|  
-    |GlyphDialogId||대화 상자|  
+    |GlyphDialogId||Dialog|  
     |GlyphOpenFolder||FolderOpened|  
     |GlyphClosedFolder||FolderClosed|  
     |GlyphArrow||GoToNext|  
     |GlyphCSharpFile||CSFileNode|  
-    |GlyphCSharpExpansion||코드 조각|  
+    |GlyphCSharpExpansion||Snippet|  
     |GlyphKeyword||IntellisenseKeyword|  
     |GlyphInformation||StatusInformation|  
     |GlyphReference||ClassMethodReference|  

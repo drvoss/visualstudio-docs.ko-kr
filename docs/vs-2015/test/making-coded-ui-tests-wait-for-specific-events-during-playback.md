@@ -8,12 +8,12 @@ ms.assetid: 41981ad6-673e-492e-b739-9863b14157b1
 caps.latest.revision: 26
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0e86364641b477c7b4d8d919cb78afb925f7c27e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 266c4fd418b71c61391ac3b9b20ac93e5c77428c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660499"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302546"
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>코딩된 UI 테스트가 재생 중 특정 이벤트를 기다리도록 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,7 +109,7 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
 
  **지침**
 
- 자세한 내용은 [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests](http://go.microsoft.com/fwlink/?LinkID=255196)(Visual Studio 2012를 사용한 연속 배달 테스트 – 5장: 시스템 테스트 자동화)를 참조하세요.
+ 자세한 내용은 [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests](https://go.microsoft.com/fwlink/?LinkID=255196)(Visual Studio 2012를 사용한 연속 배달 테스트 – 5장: 시스템 테스트 자동화)를 참조하세요.
 
 ## <a name="see-also"></a>관련 항목:
- [UI 자동화를 사용 하 여 코드 테스트](../test/use-ui-automation-to-test-your-code.md) [코딩 된 ui 테스트 만들기](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) 연습: 코딩 된 Ui 테스트 [만들기, 편집 및 유지 관리](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md) 코딩 된 ui 테스트 [의 분석 코딩 된](../test/anatomy-of-a-coded-ui-test.md) ui 테스트 [및 작업에 대해 지원 되는 구성 및 플랫폼 기록](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [방법: 코딩 된 Ui 테스트 편집기를 사용 하 여 UI 작업 앞에 지연 삽입](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)
+ [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md) [Creating Coded UI Tests](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) [Walkthrough: Creating, Editing and Maintaining a Coded UI Test](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md) [Anatomy of a Coded UI Test](../test/anatomy-of-a-coded-ui-test.md) [Supported Configurations and Platforms for Coded UI Tests and Action Recordings](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [How to: Insert a Delay Before a UI Action Using the Coded UI Test Editor](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)

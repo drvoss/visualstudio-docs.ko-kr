@@ -5,12 +5,12 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 08/20/2019
 ms.assetid: 8B8CEBE8-00DA-4AD1-8193-77F58B57F244
-ms.openlocfilehash: 98451c728b15344b116f275ca6a40fd902f33f0f
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: ad23044792d2c21c075e70107b74984d54de2bd3
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186805"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714534"
 ---
 # <a name="net-core-support"></a>.NET Core 지원
 
@@ -33,5 +33,5 @@ ms.locfileid: "71186805"
 * 8\.3의 경우 기본적으로 .NET Core v 3.0이 설치됩니다.
 * .NET core v2.1.700(8.1의 경우에는 v2.1.700)은 설치 관리자에서 기본적으로 설치됩니다.
 * 다른 버전의.NET Core를 다운로드하려면 [dotnet 페이지](https://dotnet.microsoft.com/download/dotnet-core)를 방문하십시오.
-* .NET Core 3.0을 사용하는 경우, 기본적으로 C# 버전 8이 사용됩니다. .NET Core 2.x를 사용할 때는 C# 7.3이 기본값입니다. 자세한 내용은 [C# 언어 버전 관리](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version)를 참조하세요.
-* Mac용 Visual Studio의 미리 보기 버전 설치에 대한 자세한 내용은 [미리 보기 릴리스 설치](https://docs.microsoft.com/visualstudio/mac/install-preview) 가이드를 참조하세요.
+* .NET Core 3.0을 사용하는 경우, 기본적으로 C# 버전 8이 사용됩니다. .NET Core 2.x를 사용할 때는 C# 7.3이 기본값입니다. 자세한 내용은 [C# 언어 버전 관리](/dotnet/csharp/language-reference/configure-language-version)를 참조하세요.
+* Mac용 Visual Studio의 미리 보기 버전 설치에 대한 자세한 내용은 [미리 보기 릴리스 설치](/visualstudio/mac/install-preview) 가이드를 참조하세요.

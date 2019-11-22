@@ -3,15 +3,15 @@ title: Visual Studio 구독의 Pluralsight 혜택 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/02/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: 선택한 Visual Studio 구독에 포함된 Pluralsight 교육 구독에 대해 알아봅니다.
-ms.openlocfilehash: 25a699f0e97f88fefaaf5b62f752ef579c0cd736
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: 7db7858b95ca0b78ea54cebc394c3d57de53305a
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342393"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161962"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Pluralsight 교육 혜택
 
@@ -57,9 +57,11 @@ ms.locfileid: "71342393"
 |                          구독 수준                          |     채널      |    이점    |   갱신 가능?   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
 |          Visual Studio Enterprise(Standard)           | VL, Azure, 일반 정품 |   6개월    | 예<sup>2</sup> |
+|          GitHub Enterprise가 포함된 Visual Studio Enterprise          | VL  |   6개월    | 예<sup>2</sup> |
 |         Visual Studio Professional(표준)          | VL, Azure, 일반 정품 |   3개월    | 예<sup>2</sup> |
-|              Visual Studio Test Professional(표준)              |    VL, 일반 정품     |   3개월    | 아니요 |
-|                      MSDN 플랫폼(표준)                       |    VL, 일반 정품     |   3개월    | 아니요 |
+|         GitHub Enterprise가 포함된 Visual Studio Professional          | VL  |   3개월    | 예<sup>2</sup> |
+|              Visual Studio Test Professional(표준)              |    VL, 일반 정품     |   3개월    | 예<sup>2</sup>  |
+|                      MSDN 플랫폼(표준)                       |    VL, 일반 정품     |   3개월    | 예<sup>2</sup>  |
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) |       Azure       | 사용할 수 없음 |       해당 없음       |
 |             Visual Studio Enterprise(NFR<sup>1</sup>)              |      프로그램      | 사용할 수 없음 |       해당 없음       |
 ||
@@ -97,3 +99,5 @@ A:  체험 Pluralsight 구독이 끝나면 Pluralsight에서 직접 구독을 �
 
 ## <a name="next-steps"></a>다음 단계
 계정을 만들면 학습을 시작할 준비가 된 것입니다.  [https://www.pluralsight.com](http://www.pluralsight.com)을 방문하여 페이지 오른쪽 위 모서리에 있는 **로그인**을 탭하여 새 코스를 시작하거나 이미 진행 중인 코스로 돌아갑니다.
+
+[Azure DevTest 개별 크레딧](vs-azure.md)을 활성화하여 고유한 개발 샌드박스를 활용하세요. 

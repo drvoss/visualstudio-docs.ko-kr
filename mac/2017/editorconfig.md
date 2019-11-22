@@ -6,22 +6,22 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: 8f54b4c43ed0c438b7d02e4fc08fbb3dff36c34b
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.openlocfilehash: 8132a7f92986b853ffc2b20b93d0db34f7ac1880
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108120"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73715886"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>사용자 지정 EditorConfig 파일 만들기 및 편집
 
-Mac용 Visual Studio에서는 프로젝트 또는 솔루션에 [EditorConfig](http://editorconfig.org/) 파일을 추가하여 코드베이스에서 작업하는 모든 사람들의 코딩 스타일을 일관적으로 유지할 수 있습니다. EditorConfig 파일에 선언된 설정은 글로벌 Mac용 Visual Studio 텍스트 편집기 설정에 우선합니다. 프로젝트 또는 코드베이스 내에서 EditorConfig 파일을 사용하여 프로젝트의 코딩 스타일, 기본 설정 및 경고를 지정할 수 있습니다. 파일은 코드베이스의 일부이기 때문에 사용하는 IDE 또는 코드 편집기에 관계없이 모든 사용자가 프로젝트의 코딩 방법을 쉽게 준수할 수 있습니다.
+Mac용 Visual Studio에서는 프로젝트 또는 솔루션에 [EditorConfig](https://editorconfig.org/) 파일을 추가하여 코드베이스에서 작업하는 모든 사람들의 코딩 스타일을 일관적으로 유지할 수 있습니다. EditorConfig 파일에 선언된 설정은 글로벌 Mac용 Visual Studio 텍스트 편집기 설정에 우선합니다. 프로젝트 또는 코드베이스 내에서 EditorConfig 파일을 사용하여 프로젝트의 코딩 스타일, 기본 설정 및 경고를 지정할 수 있습니다. 파일은 코드베이스의 일부이기 때문에 사용하는 IDE 또는 코드 편집기에 관계없이 모든 사용자가 프로젝트의 코딩 방법을 쉽게 준수할 수 있습니다.
 
-[EditorConfig](http://editorconfig.org/) 파일은 Visual Studio 2017을 비롯한 여러 IDE 및 코드 편집기에서 지원됩니다.
+[EditorConfig](https://editorconfig.org/) 파일은 Visual Studio 2017을 비롯한 여러 IDE 및 코드 편집기에서 지원됩니다.
 
 ## <a name="supported-settings"></a>지원되는 설정
 
-Mac용 Visual Studio의 편집기는 다음과 같은 [EditorConfig 속성](http://editorconfig.org/#supported-properties)의 핵심 집합을 지원합니다.
+Mac용 Visual Studio의 편집기는 다음과 같은 [EditorConfig 속성](https://editorconfig.org/#supported-properties)의 핵심 집합을 지원합니다.
 
 - `indent_style`
 - `indent_size`
@@ -134,7 +134,7 @@ csharp_new_line_before_open_brace = none
 
 ![editorconfig 설정이 적용된 후](media/editorconfig-image5.png)
 
-사용 가능한 EditorConfig 설정에 대한 자세한 내용은 [EditorConfig에 대한 .NET 코딩 규칙 설정](/visualstudio/ide/editorconfig-code-style-settings-reference) 아티클과 공식 문서의 [지원되는 속성](http://editorconfig.org/#supported-properties) 섹션을 참조하세요.
+사용 가능한 EditorConfig 설정에 대한 자세한 내용은 [EditorConfig에 대한 .NET 코딩 규칙 설정](/visualstudio/ide/editorconfig-code-style-settings-reference) 아티클과 공식 문서의 [지원되는 속성](https://editorconfig.org/#supported-properties) 섹션을 참조하세요.
 
 ## <a name="override-editorconfig-settings"></a>EditorConfig 설정 재정의
 

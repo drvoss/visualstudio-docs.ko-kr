@@ -1,5 +1,5 @@
 ---
-title: 기본 프로젝트 시스템 만들기, 1 부 | Microsoft Docs
+title: Creating a Basic Project System, Part 1 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,77 +12,77 @@ ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 caps.latest.revision: 48
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8304719a4b15b5f23957c99244796999d7b3f55c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 20637fb47d85b7cb8341df22d056ffe44534835f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439394"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295484"
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>기본 프로젝트 시스템 만들기, 1부
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타 자산을 구성 하는 데 사용할 컨테이너를 사용 합니다. 프로젝트에서 솔루션의 자식으로 표시 합니다 **솔루션 탐색기**합니다. 프로젝트를 사용 하 여 구성, 빌드, 디버그 및 소스 코드를 배포 및 웹 서비스, 데이터베이스 및 기타 리소스에 대 한 참조를 만들 수 있습니다.  
+In Visual Studio, projects are the containers that developers use to organize source code files and other assets. Projects appear as children of solutions in the **Solution Explorer**. Projects let you organize, build, debug, and deploy source code and create references to Web services, databases, and other resources.  
   
- 프로젝트는 Visual C# 프로젝트의.csproj 파일 예를 들어 프로젝트 파일에 정의 됩니다. 사용자 고유의 프로젝트 파일 이름 확장명을 가진 고유한 프로젝트 형식을 만들 수 있습니다. 프로젝트 형식에 대 한 자세한 내용은 참조 하세요. [프로젝트 형식](../extensibility/internals/project-types.md)합니다.  
-  
-> [!NOTE]
-> 사용자 지정 프로젝트 형식을 사용 하 여 Visual Studio를 확장 하는 경우 좋습니다 활용 하 여 [Visual Studio 프로젝트 시스템](https://github.com/Microsoft/VSProjectSystem) 다양 한 프로젝트 시스템을 처음부터 구축 하는 장점이 있는:  
-> 
-> - 쉽게 온 보 딩 합니다.  기본 프로젝트 시스템 에서도 수천 줄의 코드만 필요합니다.  CPS를 활용 하 여 비용을 줄일 수 온 보 딩 몇 번의 클릭을 요구 사항에 맞게 사용자 지정할 준비가 되었습니다. 전에 합니다.  
->   - 더 쉽게 유지 관리 합니다.  CPS를 활용 하 여 고유한 시나리오를 유지 관리 하기만 하면 됩니다.  프로젝트 시스템 인프라의 모든 진다는 점을 처리 합니다.  
-> 
->   대상 버전의 Visual Studio 2013 이전의 Visual Studio를 해야 하는 경우 CPS는 Visual Studio 확장에서 활용할 수 없습니다.  이 연습에서는,이 경우 시작 하는 것이 좋습니다.  
-  
- 이 연습에서는 프로젝트 파일 이름 확장명.myproj에는 프로젝트 형식을 만드는 방법을 보여 줍니다. 이 연습에서는 기존 Visual C# 프로젝트 시스템에서 활용합니다.  
+ Projects are defined in project files, for example a .csproj file for a Visual C# project. You can create your own project type that has your own project file name extension. For more information about project types, see [Project Types](../extensibility/internals/project-types.md).  
   
 > [!NOTE]
-> 전체 언어 프로젝트 시스템의 종단 간 샘플을 참조에서 IronPython 샘플 심층 분석 [VSSDK 샘플](../misc/vssdk-samples.md)합니다.  
+> If you need to extend Visual Studio with a custom project type, we strongly recommend leveraging the [Visual Studio Project System](https://github.com/Microsoft/VSProjectSystem) which has a number of advantages over building a project system from scratch:  
+> 
+> - Easier onboarding.  Even a basic project system requires tens of thousands of lines of code.  Leveraging CPS reduces the onboarding cost to a few clicks before you are ready to customize it to your needs.  
+>   - Easier maintenance.  By leveraging CPS, you only need to maintain your own scenarios.  We handle the upkeep of all of the project system infrastructure.  
+> 
+>   If you need to target versions of Visual Studio older than Visual Studio 2013, you will not be able to leverage CPS in a Visual Studio extension.  If that is the case, this walkthrough is a good place to get started.  
   
- 이 연습에서는 이러한 작업을 수행 하는 방법에 설명 합니다.  
+ This walkthrough shows you how to create a project type that has the project file name extension .myproj. This walkthrough borrows from the existing Visual C# project system.  
   
-- 기본 프로젝트 형식을 만듭니다.  
+> [!NOTE]
+> For an end-to-end sample of a complete language project system, see the IronPython Sample Deep Dive in [VSSDK Samples](../misc/vssdk-samples.md).  
   
-- 기본 프로젝트 템플릿을 만듭니다.  
+ This walkthrough teaches how to accomplish these tasks:  
   
-- Visual Studio 프로젝트 템플릿을 등록 합니다.  
+- Create a basic project type.  
   
-- 프로젝트 인스턴스를 열어 만듭니다는 **새 프로젝트** 대화 상자 및 다음 템플릿을 사용 하 여 합니다.  
+- Create a basic project template.  
   
-- 프로젝트 시스템에 대 한 프로젝트 팩터리를 만듭니다.  
+- Register the project template with Visual Studio.  
   
-- 프로젝트 시스템에 대 한 프로젝트 노드를 만듭니다.  
+- Create a project instance by opening the **New Project** dialog box and then using your template.  
   
-- 프로젝트 시스템에 대 한 사용자 지정 아이콘을 추가 합니다.  
+- Create a project factory for your project system.  
   
-- 기본 템플릿 매개 변수 대체를 구현 합니다.  
+- Create a project node for your project system.  
   
-## <a name="prerequisites"></a>전제 조건  
- Visual Studio 2015부터 수행 설치 하면 Visual Studio SDK 다운로드 센터에서. Visual Studio 설치에서 선택적 기능으로 포함 됩니다. 또한 VS SDK를 나중에 설치할 수 있습니다. 자세한 내용은 [Visual Studio SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)합니다.  
+- Add custom icons for the project system.  
   
- 또한 소스 코드를 다운로드 해야 합니다 [프로젝트에 대 한 관리 되는 패키지 프레임 워크](http://mpfproj12.codeplex.com/)합니다. 만들려고 한다고 솔루션에 액세스할 수 있는 위치로 파일을 추출 합니다.  
+- Implement basic template parameter substitution.  
   
-## <a name="creating-a-basic-project-type"></a>기본 프로젝트 형식 만들기  
- 라는 C# VSIX 프로젝트를 만듭니다 **SimpleProject**합니다. (**파일, 새로 만들기, 프로젝트** 차례로 **C#, 확장성, Visual Studio 패키지**). Visual Studio 패키지 프로젝트 항목 템플릿을 추가 (솔루션 탐색기에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 선택 **추가 / 새 항목**으로 이동 하세요 **확장성 / Visual Studio 패키지**). 파일 이름을 **SimpleProjectPackage**합니다.  
+## <a name="prerequisites"></a>Prerequisites  
+ Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-basic-project-template"></a>기본 프로젝트 템플릿 만들기  
- 이제 새.myproj 프로젝트 유형을 구현 하도록이 기본 VSPackage를 수정할 수 있습니다. .Myproj 프로젝트 형식을 기반으로 하는 프로젝트를 만들려면 Visual Studio는 파일, 리소스 및 새 프로젝트에 추가할 참조를 확인 해야 합니다. 이 정보를 제공 하려면 프로젝트 템플릿 폴더에 있는 프로젝트 파일을 저장 합니다. 프로젝트를 만들려면.myproj 프로젝트를 사용 하는 사용자, 새 프로젝트에 파일 복사 됩니다.  
+ You must also download the source code for the [Managed Package Framework for Projects](https://archive.codeplex.com/?p=mpfproj12). Extract the file to a location that is accessible to the solution you are going to create.  
   
-#### <a name="to-create-a-basic-project-template"></a>기본 프로젝트 템플릿을 만들려면  
+## <a name="creating-a-basic-project-type"></a>Creating a Basic Project Type  
+ Create a C# VSIX project named **SimpleProject**. (**File, New, Project** and then **C#, Extensibility, Visual Studio Package**). Add a Visual Studio Package project item template (on the Solution Explorer, right-click the project node and select **Add / New Item**, then go to **Extensibility / Visual Studio Package**). Name the file **SimpleProjectPackage**.  
   
-1. 다른 하나는 프로젝트에 세 개의 폴더를 추가 합니다. **Templates\Projects\SimpleProject**. (에서 **솔루션 탐색기**, 마우스 오른쪽 단추로 클릭 합니다 **SimpleProject** 프로젝트 노드를 가리키도록 **추가**를 클릭 하 고 **새 폴더**. 폴더 이름을 `Templates`서 무료 평가판 계정을 등록할 수 있습니다. 에 **템플릿을** 폴더를 라는 폴더를 추가 `Projects`합니다. 에 **프로젝트** 폴더를 라는 폴더를 추가 `SimpleProject`.)  
+## <a name="creating-a-basic-project-template"></a>Creating a Basic Project Template  
+ Now, you can modify this basic VSPackage to implement the new .myproj project type. To create a project that is based on the .myproj project type, Visual Studio has to know which files, resources, and references to add to the new project. To provide this information, put project files in a project template folder. When a user uses the .myproj project to create a project, the files are copied to the new project.  
   
-2. 에 **Projects\SimpleProject** 폴더는 명명 된 아이콘 파일을 추가할 `SimpleProject.ico`합니다. 클릭 하면 **추가**, 아이콘 편집기가 열립니다.  
+#### <a name="to-create-a-basic-project-template"></a>To create a basic project template  
   
-3. 눈에 띄는 아이콘을 확인 합니다. 이 아이콘에 표시 됩니다는 **새 프로젝트** 연습 뒷부분에서 대화 상자.  
+1. Add three folders to the project, one under the other: **Templates\Projects\SimpleProject**. (In **Solution Explorer**, right-click the **SimpleProject** project node, point to **Add**, and then click **New Folder**. 폴더 이름을 `Templates`서 무료 평가판 계정을 등록할 수 있습니다. In the **Templates** folder, add a folder named `Projects`. In the **Projects** folder, add a folder named `SimpleProject`.)  
   
-    ![간단한 프로젝트 아이콘](../extensibility/media/simpleprojicon.png "SimpleProjIcon")  
+2. In the **Projects\SimpleProject** folder add an icon file named `SimpleProject.ico`. When you click **Add**, the icon editor opens.  
   
-4. 아이콘을 저장 하 고 아이콘 편집기를 닫습니다.  
+3. Make the icon distinctive. This icon will appear in the **New Project** dialog box later in the walkthrough.  
   
-5. 에 **Projects\SimpleProject** 폴더를 추가 **클래스** 이라는 항목이 `Program.cs`합니다.  
+    ![Simple Project Icon](../extensibility/media/simpleprojicon.png "SimpleProjIcon")  
   
-6. 기존 코드를 다음 줄으로 바꿉니다.  
+4. Save the icon and close the icon editor.  
+  
+5. In the **Projects\SimpleProject** folder, add a **Class** item named `Program.cs`.  
+  
+6. Replace the existing code with the following lines.  
   
    ```csharp  
    using System;  
@@ -103,18 +103,18 @@ Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타
    ```  
   
    > [!IMPORTANT]
-   > 최종 Program.cs 코드; 형식의 아닙니다. 대체 매개 변수는 이후 단계에서 다루지 것입니다. 표시 될 수 있습니다 컴파일 오류를 하지만 한 파일의 **빌드 작업** 됩니다 **콘텐츠**를 구축 하 고 프로젝트를 정상적으로 실행 해야 합니다.  
+   > This is not the final form of the Program.cs code; the replacement parameters will be dealt with in a later step. You may see compile errors, but as long as the file’s **BuildAction** is **Content**, you should be able to build and run the project as usual.  
   
 7. 파일을 저장합니다.  
   
-8. AssemblyInfo.cs 파일을 복사 합니다 **속성** 폴더를 **Projects\SimpleProject** 폴더.  
+8. Copy the AssemblyInfo.cs file from the **Properties** folder to the **Projects\SimpleProject** folder.  
   
-9. 에 **Projects\SimpleProject** 라는 XML 파일을 추가 하는 폴더 `SimpleProject.myproj`합니다.  
+9. In the **Projects\SimpleProject** folder add an XML file named `SimpleProject.myproj`.  
   
    > [!NOTE]
-   > 이 형식의 모든 프로젝트에 대 한 파일 이름 확장명은.myproj 합니다. 변경 하려는 경우 변경 해야 everywhere 연습에서 설명 합니다.  
+   > The file name extension for all projects of this type is .myproj. If you want to change it, you must change it everywhere it is mentioned in the walkthrough.  
   
-10. 기존 콘텐츠를 다음 줄을 바꿉니다.  
+10. Replace the existing content with the following lines.  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8" ?>  
@@ -156,11 +156,11 @@ Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타
   
 11. 파일을 저장합니다.  
   
-12. **속성** 창에서 **빌드 작업** AssemblyInfo.cs, Program.cs, SimpleProject.ico, 및를 SimpleProject.myproj **콘텐츠**, 해당 설정 **VSIX에 포함** 속성을 **True**합니다.  
+12. In the **Properties** window, set the **Build Action** of AssemblyInfo.cs, Program.cs, SimpleProject.ico, and SimpleProject.myproj to **Content**, and set their **Include in VSIX** properties to **True**.  
   
-    이 프로젝트 템플릿은 기본 Visual C# 프로젝트를 디버그 구성 및 릴리스 구성을를 설명 합니다. 두 소스 파일, AssemblyInfo.cs 및 Program.cs 및 여러 어셈블리를 프로젝트에 대 한 참조입니다. 프로젝트를 템플릿에서 만들면 ProjectGuid 값은 새 GUID로 자동 교체 됩니다.  
+    This project template describes a basic Visual C# project that has both a Debug configuration and a Release configuration. The project includes two source files, AssemblyInfo.cs and Program.cs, and several assembly references. When a project is created from the template, the ProjectGuid value is automatically replaced by a new GUID.  
   
-    **솔루션 탐색기**, 확장 된 **템플릿** 폴더가 다음과 같이 표시 되어야 합니다.  
+    In **Solution Explorer**, the expanded **Templates** folder should appear as follows:  
   
     템플릿  
   
@@ -176,14 +176,14 @@ Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타
   
     SimpleProject.myproj  
   
-## <a name="creating-a-basic-project-factory"></a>기본 프로젝트 팩터리 만들기  
- Visual Studio 프로젝트 템플릿 폴더의 위치를 알려야 합니다. 이렇게 하려면 VSPackage를 빌드할 때 템플릿 위치가 시스템 레지스트리에 쓸 수 있도록 프로젝트 팩터리 구현 하는 VSPackage 클래스에 특성을 추가 합니다. 프로젝트 팩터리 GUID로 식별 되는 기본 프로젝트 팩터리를 만들어 시작 합니다. 사용 된 <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> 프로젝트 팩터리 SimpleProjectPackage 클래스에 연결 하는 특성입니다.  
+## <a name="creating-a-basic-project-factory"></a>Creating a Basic Project Factory  
+ You must tell Visual Studio the location of your project template folder. To do this, add an attribute to the VSPackage class that implements the project factory so that the template location is written to the system registry when the VSPackage is built. Start by creating a basic project factory that is identified by a project factory GUID. Use the <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> attribute to connect the project factory to the SimpleProjectPackage class.  
   
-#### <a name="to-create-a-basic-project-factory"></a>기본 프로젝트 팩터리를 만들려면  
+#### <a name="to-create-a-basic-project-factory"></a>To create a basic project factory  
   
-1. SimpleProjectPackageGuids.cs 코드 편집기에서 엽니다.  
+1. Open SimpleProjectPackageGuids.cs in the code editor.  
   
-2. 프로젝트 팩터리 Guid 만들기 (에 **도구** 메뉴에서 클릭 **GUID 만들기**), 하거나 다음 예제에서를 사용 합니다. SimpleProjectPackageGuids 클래스 Guid를 추가 합니다. Guid를 GUID 형식 및 문자열 형식 이어야 합니다. 결과 코드에는 다음 예제와 유사 해야 합니다.  
+2. Create GUIDs for your project factory (on the **Tools** menu, click **Create GUID**), or use the one in the following example. Add the GUIDs to the SimpleProjectPackageGuids class. The GUIDs must be in both GUID form and string form. The resulting code should resemble the following example.  
   
    ```  
    static class SimpleProjectPackageGuids  
@@ -202,16 +202,16 @@ Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타
    }  
    ```  
   
-3. 클래스 맨 위에 추가 **SimpleProject** 라는 폴더 `SimpleProjectFactory.cs`합니다.  
+3. Add a class to the top **SimpleProject** folder named `SimpleProjectFactory.cs`.  
   
-4. 다음 추가 문을 사용 하 여:  
+4. Add the following using statements:  
   
    ```  
    using System.Runtime.InteropServices;  
    using Microsoft.VisualStudio.Shell;  
    ```  
   
-5. SimpleProjectFactory 클래스 Guid 특성을 추가 합니다. 특성의 값은 새 프로젝트 팩터리 GUID.  
+5. Add a Guid attribute to the SimpleProjectFactory class. The value of the attribute is the new project factory GUID.  
   
    ```  
    [Guid(SimpleProjectGuids.guidSimpleProjectFactoryString)]  
@@ -220,11 +220,11 @@ Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타
    }  
    ```  
   
-   이제 프로젝트 템플릿을 등록할 수 있습니다.  
+   Now you can register your project template.  
   
-#### <a name="to-register-the-project-template"></a>프로젝트 템플릿을 등록 하려면  
+#### <a name="to-register-the-project-template"></a>To register the project template  
   
-1. SimpleProjectPackage.cs, 추가 <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> SimpleProjectPackage 클래스에 특성을 다음과 같이 합니다.  
+1. In SimpleProjectPackage.cs, add a <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> attribute to the SimpleProjectPackage class, as follows.  
   
    ```  
    [ProvideProjectFactory(    typeof(SimpleProjectFactory),     "Simple Project",   
@@ -234,31 +234,31 @@ Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타
    public sealed class SimpleProjectPackage : Package  
    ```  
   
-2. 솔루션을 다시 작성 하 고 오류 없이 빌드되는지 확인 합니다.  
+2. Rebuild the solution and verify that it builds without errors.  
   
-    다시 작성 프로젝트 템플릿을 등록합니다.  
+    Rebuilding registers the project template.  
   
-   매개 변수 `defaultProjectExtension` 고 `possibleProjectExtensions` 프로젝트 파일 이름 확장명 (.myproj)으로 설정 됩니다. `projectTemplatesDirectory` 템플릿 폴더의 상대 경로 매개 변수 설정 됩니다. 빌드 중에이 경로 전체 빌드를 변환 하 고 프로젝트 시스템을 등록 하려면 레지스트리를 추가할 수 됩니다.  
+   The parameters `defaultProjectExtension` and `possibleProjectExtensions` are set to the project file name extension (.myproj). The `projectTemplatesDirectory` parameter is set to the relative path of the Templates folder. During the build, this path will be converted to a full build and added to the registry to register the project system.  
   
-## <a name="testing-the-template-registration"></a>템플릿 등록 테스트  
- 템플릿 등록 하면 Visual Studio 프로젝트 템플릿 폴더의 위치가 Visual Studio 템플릿 이름 및 아이콘에 표시 될 수 있도록 합니다 **새 프로젝트** 대화 상자.  
+## <a name="testing-the-template-registration"></a>Testing the Template Registration  
+ Template registration tells Visual Studio the location of your project template folder so that Visual Studio can display the template name and icon in the **New Project** dialog box.  
   
-#### <a name="to-test-the-template-registration"></a>템플릿 등록을 테스트 하려면  
+#### <a name="to-test-the-template-registration"></a>To test the template registration  
   
-1. F5 키를 눌러 Visual Studio의 실험적 인스턴스에서 디버깅을 시작 합니다.  
+1. Press F5 to start debugging an experimental instance of Visual Studio.  
   
-2. 실험적 인스턴스를 새로 만든 프로젝트 형식의 새 프로젝트를 만듭니다. 에 **새 프로젝트** 표시 대화 상자에서 **SimpleProject** 아래에 있는 **설치 되어 있는 템플릿**합니다.  
+2. In the experimental instance, create a new project of your newly-created project type. In the **New Project** dialog box, you should see **SimpleProject** under **Installed templates**.  
   
-   이제 프로젝트 팩터리를 등록 해야 합니다. 그러나 프로젝트를 만들 아직 없습니다. 프로젝트 패키지와 프로젝트 팩터리를 만들고 프로젝트를 초기화 하려면 함께 작동 합니다.  
+   Now you have a project factory that is registered. However, it cannot yet create a project. The project package and project factory work together to create and initialize a project.  
   
-## <a name="add-the-managed-package-framework-code"></a>관리 패키지 프레임 워크 코드를 추가 합니다.  
- 프로젝트 패키지와 프로젝트 팩터리 간의 연결을 구현 합니다.  
+## <a name="add-the-managed-package-framework-code"></a>Add the Managed Package Framework code  
+ Implement the connection between the project package and the project factory.  
   
-- 관리 패키지 프레임 워크에 대 한 소스 코드 파일을 가져옵니다.  
+- Import the source-code files for the Managed Package Framework.  
   
-    1. SimpleProject 프로젝트 언로드 (에서 **솔루션 탐색기**, 프로젝트 노드를 선택 하 고 상황에 맞는 메뉴를 클릭 **프로젝트 언로드**.) 및 XML 편집기에서 프로젝트 파일을 엽니다.  
+    1. Unload the SimpleProject project (in **Solution Explorer**, select the project node and on the context menu click **Unload Project**.) and open the project file in the XML editor.  
   
-    2. 프로젝트 파일에 다음 요소를 추가 (바로 위에 \<가져오기 > 요소). 방금 다운로드 한 관리 되는 패키지 프레임 워크 코드 ProjectBase.files 파일의 위치로 ProjectBasePath를 설정 합니다. 경로 이름에 백슬래시를 추가 해야 합니다. 이렇게 하지 않으면 프로젝트 관리 패키지 프레임 워크 코드를 찾으려면 실패할 수 있습니다.  
+    2. Add the following blocks to the project file (just above the \<Import> blocks). Set ProjectBasePath to the location of the ProjectBase.files file in the Managed Package Framework code you just downloaded. You might have to add a backslash to the pathname. If you do not, the project might fail to find the Managed Package Framework code.  
   
         ```  
         <PropertyGroup>  
@@ -269,40 +269,40 @@ Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타
         ```  
   
         > [!IMPORTANT]
-        > 경로 끝에 백슬래시를 잊지 마십시오.  
+        > Don’t forget the backslash at the end of the path.  
   
-    3. 프로젝트를 다시 로드 합니다.  
+    3. Reload the project.  
   
     4. 다음 어셈블리에 대한 참조를 추가합니다.  
   
-        - Microsoft.VisualStudio.Designer.Interfaces (에서 \<VSSDK 설치 > \VisualStudioIntegration\Common\Assemblies\v2.0)  
+        - Microsoft.VisualStudio.Designer.Interfaces (in \<VSSDK install>\VisualStudioIntegration\Common\Assemblies\v2.0)  
   
         - WindowsBase  
   
         - Microsoft.Build.Tasks.v4.0  
   
-#### <a name="to-initialize-the-project-factory"></a>프로젝트 팩터리를 초기화 하려면  
+#### <a name="to-initialize-the-project-factory"></a>To initialize the project factory  
   
-1. SimpleProjectPackage.cs 파일에 다음 추가 `using` 문입니다.  
+1. In the SimpleProjectPackage.cs file, add the following `using` statement.  
   
     ```  
     using Microsoft.VisualStudio.Project;  
     ```  
   
-2. 파생 된 `SimpleProjectPackage` 클래스에서 `Microsoft.VisualStudio.Package.ProjectPackage`합니다.  
+2. Derive the `SimpleProjectPackage` class from `Microsoft.VisualStudio.Package.ProjectPackage`.  
   
     ```  
     public sealed class SimpleProjectPackage : ProjectPackage  
     ```  
   
-3. 프로젝트 팩터리를 등록 합니다. 다음 줄을 추가 합니다 `SimpleProjectPackage.Initialize` 메서드를 직후 `base.Initialize`합니다.  
+3. Register the project factory. Add the following line to the `SimpleProjectPackage.Initialize` method, just after `base.Initialize`.  
   
     ```  
     base.Initialize();  
     this.RegisterProjectFactory(new SimpleProjectFactory(this));  
     ```  
   
-4. 추상 속성을 구현 `ProductUserContext`:  
+4. Implement the abstract property `ProductUserContext`:  
   
     ```csharp  
     public override string ProductUserContext  
@@ -311,19 +311,19 @@ Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타
     }  
     ```  
   
-5. SimpleProjectFactory.cs에서 다음을 추가 `using` 기존 뒤의 문으로 `using` 문입니다.  
+5. In SimpleProjectFactory.cs, add the following `using` statement after the existing `using` statements.  
   
     ```  
     using Microsoft.VisualStudio.Project;  
     ```  
   
-6. 파생 된 `SimpleProjectFactory` 클래스에서 `ProjectFactory`합니다.  
+6. Derive the `SimpleProjectFactory` class from `ProjectFactory`.  
   
     ```  
     class SimpleProjectFactory : ProjectFactory  
     ```  
   
-7. 다음 더미 메서드를 추가 합니다 `SimpleProjectFactory` 클래스입니다. 이후 섹션에서이 메서드를 구현 합니다.  
+7. Add the following dummy method to the `SimpleProjectFactory` class. You will implement this method in a later section.  
   
     ```  
     protected override ProjectNode CreateProject()  
@@ -332,7 +332,7 @@ Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타
     }  
     ```  
   
-8. 다음 필드 및 생성자를 추가 합니다 `SimpleProjectFactory` 클래스입니다. 이 `SimpleProjectPackage` 설정 서비스 공급자 사이트에서 사용할 수 있도록 참조를 개인 필드에 캐시 됩니다.  
+8. Add the following field and constructor to the `SimpleProjectFactory` class. This `SimpleProjectPackage` reference is cached in a private field so that it can be used in setting a service provider site.  
   
     ```  
     private SimpleProjectPackage package;  
@@ -344,43 +344,43 @@ Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타
     }  
     ```  
   
-9. 솔루션을 다시 작성 하 고 오류 없이 빌드되는지 확인 합니다.  
+9. Rebuild the solution and verify that it builds without errors.  
   
-## <a name="testing-the-project-factory-implementation"></a>프로젝트 팩터리 구현 테스트  
- 프로젝트 팩터리 구현에 대 한 생성자가 호출 여부를 테스트 합니다.  
+## <a name="testing-the-project-factory-implementation"></a>Testing the Project Factory Implementation  
+ Test whether the constructor for your project factory implementation is called.  
   
-#### <a name="to-test-the-project-factory-implementation"></a>프로젝트 팩터리 구현을 테스트 하려면  
+#### <a name="to-test-the-project-factory-implementation"></a>To test the project factory implementation  
   
-1. SimpleProjectFactory.cs 파일에 다음 줄에 중단점을 설정 합니다 `SimpleProjectFactory` 생성자입니다.  
+1. In the SimpleProjectFactory.cs file, set a breakpoint on the following line in the `SimpleProjectFactory` constructor.  
   
     ```  
     this.package = package;  
     ```  
   
-2. F5 키를 눌러 Visual Studio의 실험적 인스턴스를 시작 합니다.  
+2. Press F5 to start an experimental instance of Visual Studio.  
   
-3. 실험적 인스턴스에서 새 프로젝트 만들기를 시작 합니다. 에 **새 프로젝트** 대화 상자를 선택 합니다 SimpleProject 프로젝트 형식을 클릭 **확인**합니다. 중단점에서 실행이 중지됩니다.  
+3. In the experimental instance, start to create a new project.In the **New Project** dialog box, select the SimpleProject project type and then click **OK**. 중단점에서 실행이 중지됩니다.  
   
-4. 중단점의 선택을 취소 하 고 디버깅을 중지 합니다. 만들었으므로 하지 프로젝트 노드 아직, 프로젝트 생성 코드는 여전히 예외를 throw 합니다.  
+4. Clear the breakpoint and stop debugging. Since we have not created a project node yet, the project creation code still throws exceptions.  
   
-## <a name="extending-the-project-node-class"></a>프로젝트 노드 클래스를 확장합니다.  
- 이제 구현할 수 있습니다는 `SimpleProjectNode` 에서 파생 되는 클래스는 `ProjectNode` 클래스입니다. `ProjectNode` 프로젝트 만들기의 다음 작업을 처리 하는 기본 클래스:  
+## <a name="extending-the-project-node-class"></a>Extending the Project Node Class  
+ Now you can implement the `SimpleProjectNode` class, which derives from the `ProjectNode` class. The `ProjectNode` base class handles the following tasks of project creation:  
   
-- 새 프로젝트 폴더로 SimpleProject.myproj, 프로젝트 템플릿 파일을 복사합니다. 복사본에 입력 된 이름에 따라 이름이 합니다 **새 프로젝트** 대화 상자. `ProjectGuid` 속성 값이 새 GUID로 대체 됩니다.  
+- Copies the project template file, SimpleProject.myproj, to the new project folder. The copy is renamed according to the name that is entered in the **New Project** dialog box. The `ProjectGuid` property value is replaced by a new GUID.  
   
-- SimpleProject.myproj, 프로젝트 템플릿 파일의 MSBuild 요소를 트래버스하 고 찾고 `Compile` 요소입니다. 각 `Compile` 대상 파일을 새 프로젝트 폴더에 파일을 복사 합니다.  
+- Traverses the MSBuild elements of the project template file, SimpleProject.myproj, and looks for `Compile` elements. For each `Compile` target file, copies the file to the new project folder.  
   
-  파생 된 `SimpleProjectNode` 클래스는 이러한 작업을 처리 합니다.  
+  The derived `SimpleProjectNode` class handles these tasks:  
   
-- 프로젝트 및 파일 노드에 대 한 아이콘을 사용 하도록 설정 **솔루션 탐색기** 만들거나 선택 합니다.  
+- Enables icons for project and file nodes in **Solution Explorer** to be created or selected.  
   
-- 추가 프로젝트 템플릿 매개 변수를 대체를를 지정할 수 있습니다.  
+- Enables additional project template parameter substitutions to be specified.  
   
-#### <a name="to-extend-the-project-node-class"></a>프로젝트 노드 클래스를 확장 하려면  
+#### <a name="to-extend-the-project-node-class"></a>To extend the project node class  
   
 1. 
   
-2. 라는 클래스를 추가 `SimpleProjectNode.cs`합니다.  
+2. Add a class named `SimpleProjectNode.cs`.  
   
 3. 기존 코드를 다음 코드로 바꿉니다.  
   
@@ -418,27 +418,27 @@ Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타
    }  
    ```  
   
-   이 `SimpleProjectNode` 클래스 구현을 다음 재정의 된 메서드를 포함 합니다.  
+   This `SimpleProjectNode` class implementation has these overridden methods:  
   
-- `ProjectGuid`를 프로젝트 팩터리 GUID를 반환 합니다.  
+- `ProjectGuid`, which returns the project factory GUID.  
   
-- `ProjectType`에서 프로젝트 형식의 지역화 된 이름을 반환 합니다.  
+- `ProjectType`, which returns the localized name of the project type.  
   
-- `AddFileFromTemplate`에서 선택한 파일 템플릿 폴더에서 대상 프로젝트에 복사 합니다. 이 메서드는 이후 섹션에서 추가로 구현 됩니다.  
+- `AddFileFromTemplate`, which copies selected files from the template folder to the destination project. This method is further implemented in a later section.  
   
-  `SimpleProjectNode` 생성자 마찬가지로 합니다 `SimpleProjectFactory` 생성자에 캐시를 `SimpleProjectPackage` 나중에 사용할 개인 필드에 대 한 참조.  
+  The `SimpleProjectNode` constructor, like the `SimpleProjectFactory` constructor, caches a `SimpleProjectPackage` reference in a private field for later use.  
   
-  연결할를 `SimpleProjectFactory` 클래스를 `SimpleProjectNode` 클래스를 인스턴스화해야 새 `SimpleProjectNode` 에서 `SimpleProjectFactory.CreateProject` 메서드 하 고 나중에 사용할 개인 필드에 캐시 합니다.  
+  To connect the `SimpleProjectFactory` class to the `SimpleProjectNode` class, you must instantiate a new `SimpleProjectNode` in the `SimpleProjectFactory.CreateProject` method and cache it in a private field for later use.  
   
-#### <a name="to-connect-the-project-factory-class-and-the-node-class"></a>프로젝트 팩터리 클래스 및 노드 클래스를 연결 하려면  
+#### <a name="to-connect-the-project-factory-class-and-the-node-class"></a>To connect the project factory class and the node class  
   
-1. SimpleProjectFactory.cs 파일에 다음 추가 `using` 문:  
+1. In the SimpleProjectFactory.cs file, add the following `using` statement:  
   
     ```  
     using IOleServiceProvider =    Microsoft.VisualStudio.OLE.Interop.IServiceProvider;  
     ```  
   
-2. 대체는 `SimpleProjectFactory.CreateProject` 메서드를 다음 코드를 사용 합니다.  
+2. Replace the `SimpleProjectFactory.CreateProject` method by using the following code.  
   
     ```  
     protected override ProjectNode CreateProject()  
@@ -450,40 +450,40 @@ Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타
     }  
     ```  
   
-3. 솔루션을 다시 작성 하 고 오류 없이 빌드되는지 확인 합니다.  
+3. Rebuild the solution and verify that it builds without errors.  
   
-## <a name="testing-the-project-node-class"></a>테스트 프로젝트 노드 클래스입니다.  
- 프로젝트 계층 구조를 만들면 여부를 확인 하려면 프로젝트 팩터리를 테스트 합니다.  
+## <a name="testing-the-project-node-class"></a>Testing the Project Node Class  
+ Test your project factory to see whether it creates a project hierarchy.  
   
-#### <a name="to-test-the-project-node-class"></a>프로젝트 노드 클래스를 테스트 하려면  
+#### <a name="to-test-the-project-node-class"></a>To test the project node class  
   
-1. F5 키를 눌러 디버깅을 시작합니다. 새 SimpleProject 실험적 인스턴스를 만듭니다.  
+1. F5 키를 눌러 디버깅을 시작합니다. In the experimental instance, create a new SimpleProject.  
   
-2. Visual Studio 프로젝트를 만들려면 프로젝트 팩터리를 호출 해야 합니다.  
+2. Visual Studio should call your project factory to create a project.  
   
 3. Visual Studio의 실험적 인스턴스를 닫습니다.  
   
-## <a name="adding-a-custom-project-node-icon"></a>사용자 지정 프로젝트 노드 아이콘 추가  
- 이전 섹션에서 프로젝트 노드 아이콘은 기본 아이콘입니다. 사용자 지정 아이콘을 변경할 수 있습니다.  
+## <a name="adding-a-custom-project-node-icon"></a>Adding a Custom Project Node Icon  
+ The project node icon in the earlier section is a default icon. You can change it to a custom icon.  
   
-#### <a name="to-add-a-custom-project-node-icon"></a>사용자 지정 프로젝트 노드 아이콘을 추가 하려면  
+#### <a name="to-add-a-custom-project-node-icon"></a>To add a custom project node icon  
   
-1. 에 **리소스** 폴더 SimpleProjectNode.bmp 라는 비트맵 파일을 추가 합니다.  
+1. In the **Resources** folder, add a bitmap file named SimpleProjectNode.bmp.  
   
-2. 에 **속성** windows 16x16 픽셀 비트맵을 줄입니다. 눈에 띄는 비트맵을 확인 합니다.  
+2. In the **Properties** windows, reduce the bitmap to 16 by 16 pixels. Make the bitmap distinctive.  
   
-    ![간단한 프로젝트 명령](../extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
+    ![Simple Project Comm](../extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
   
-3. 에 **속성** 창에서 변경 합니다 **빌드 작업** 비트맵의 **포함 리소스**합니다.  
+3. In the **Properties** window, change the **Build action** of the bitmap to **Embedded Resource**.  
   
-4. SimpleProjectNode.cs에서 다음을 추가 `using` 문:  
+4. In SimpleProjectNode.cs, add the following `using` statements:  
   
    ```  
    using System.Drawing;  
    using System.Windows.Forms;  
    ```  
   
-5. 정적 필드 및 생성자를 추가 합니다 `SimpleProjectNode` 클래스입니다.  
+5. Add the following static field and constructor to the `SimpleProjectNode` class.  
   
    ```  
    private static ImageList imageList;  
@@ -494,7 +494,7 @@ Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타
    }  
    ```  
   
-6. 시작 부분에 다음 속성을 추가 합니다 `SimpleProjectNode` 클래스입니다.  
+6. Add the following property to the beginning of the `SimpleProjectNode` class.  
   
    ```  
    internal static int imageIndex;  
@@ -504,7 +504,7 @@ Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타
       }  
    ```  
   
-7. 인스턴스 생성자를 다음 코드로 바꿉니다.  
+7. Replace the instance constructor with the following code.  
   
    ```  
    public SimpleProjectNode(SimpleProjectPackage package)  
@@ -520,7 +520,7 @@ Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타
    }  
    ```  
   
-   정적 생성 하는 동안 `SimpleProjectNode` 어셈블리 매니페스트 리소스에서 프로젝트 노드 비트맵을 검색 하 고 나중에 사용할 개인 필드에 캐시 합니다. 구문을 확인 합니다 <xref:System.Reflection.Assembly.GetManifestResourceStream%2A> 이미지 경로입니다. 어셈블리에 포함 된 매니페스트 리소스의 이름을 보려면는 <xref:System.Reflection.Assembly.GetManifestResourceNames%2A> 메서드. 이 메서드가 적용 되는 경우는 `SimpleProject` 어셈블리 결과 다음과 같아야 합니다.  
+   During static construction, `SimpleProjectNode` retrieves the project node bitmap from the assembly manifest resources and caches it in a private field for later use. Notice the syntax of the <xref:System.Reflection.Assembly.GetManifestResourceStream%2A> image path. To see the names of the manifest resources embedded in an assembly, use the <xref:System.Reflection.Assembly.GetManifestResourceNames%2A> method. When this method is applied to the `SimpleProject` assembly, the results should be as follows:  
   
 - SimpleProject.Resources.resources  
   
@@ -536,20 +536,20 @@ Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타
   
 - SimpleProject.Resources.SimpleProjectNode.bmp  
   
-  인스턴스 생성 도중는 `ProjectNode` Resources.imagelis.bmp, 되는 Resources\imagelis.bmp에서 자주 사용 되는 포함 된 16 x 16 비트맵을 로드 하는 기본 클래스입니다. 이 비트맵 목록을 사용할 수 있는 `SimpleProjectNode` ImageHandler.ImageList으로 합니다. `SimpleProjectNode` 프로젝트 노드 비트맵 목록에 추가합니다. 이미지 목록에서 프로젝트 노드 비트맵의 오프셋은 나중에 사용할 공용 값으로 캐시 됩니다 `ImageIndex` 속성입니다. Visual Studio에서 프로젝트 노드 아이콘으로 표시 하는 비트맵을 확인 하려면이 속성을 사용 합니다.  
+  During instance construction, the `ProjectNode` base class loads Resources.imagelis.bmp, in which are embedded commonly used 16 x 16 bitmaps from Resources\imagelis.bmp. This bitmap list is made available to `SimpleProjectNode` as ImageHandler.ImageList. `SimpleProjectNode` appends the project node bitmap to the list. The offset of the project node bitmap in the image list is cached for later use as the value of the public `ImageIndex` property. Visual Studio uses this property to determine which bitmap to display as the project node icon.  
   
-## <a name="testing-the-custom-project-node-icon"></a>테스트를 사용자 지정 프로젝트 노드 아이콘  
- 사용자 지정 프로젝트 노드 아이콘이 있는 프로젝트 계층 구조를 만들면 여부를 확인 하려면 프로젝트 팩터리를 테스트 합니다.  
+## <a name="testing-the-custom-project-node-icon"></a>Testing the Custom Project Node Icon  
+ Test your project factory to see whether it creates a project hierarchy that has your custom project node icon.  
   
-#### <a name="to-test-the-custom-project-node-icon"></a>사용자 지정 프로젝트 노드 아이콘을 테스트 하려면  
+#### <a name="to-test-the-custom-project-node-icon"></a>To test the custom project node icon  
   
-1. 디버깅을 시작 하 고 실험적 인스턴스에서 새 SimpleProject 만듭니다.  
+1. Start debugging, and in the experimental instance create a new SimpleProject.  
   
-2. 새로 만든 프로젝트에서 SimpleProjectNode.bmp 된 프로젝트 노드 아이콘으로 사용 됨을 확인 합니다.  
+2. In the newly-created project, notice that SimpleProjectNode.bmp is used as the project node icon.  
   
-     ![간단한 프로젝트 노드를 새 프로젝트](../extensibility/media/simpleprojnewprojectnode.png "SimpleProjNewProjectNode")  
+     ![Simple Project New Project Node](../extensibility/media/simpleprojnewprojectnode.png "SimpleProjNewProjectNode")  
   
-3. 코드 편집기에서 Program.cs를 엽니다. 다음 코드와 비슷한 소스 코드를 표시 되어야 합니다.  
+3. Open Program.cs in the code editor. You should see source code that resembles the following code.  
   
     ```  
     using System;  
@@ -569,22 +569,22 @@ Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타
     }  
     ```  
   
-     템플릿 매개 변수 $nameSpace$ 및 $ $className$ 수행할 새 값이 없는지 확인 합니다. 다음 섹션에서 템플릿 매개 변수 대체를 구현 하는 방법을 배웁니다.  
+     Notice that the template parameters $nameSpace$ and $className$ do not have new values. You will learn how to implement template parameter substitution in the next section.  
   
-## <a name="substituting-template-parameters"></a>템플릿 매개 변수를 대체합니다.  
- 이전 단원에서 등록할 프로젝트 템플릿을 Visual Studio를 사용 하 여 사용 하 여는 `ProvideProjectFactory` 특성입니다. 재정의 하 고 확장 하 여 기본 템플릿 매개 변수 대체를 사용 하면 이러한 방식으로 템플릿 폴더의 경로 등록 합니다 `ProjectNode.AddFileFromTemplate` 클래스입니다. 자세한 내용은 참조 하세요. [새 프로젝트 생성: 내부적으로 2 부](../extensibility/internals/new-project-generation-under-the-hood-part-two.md)합니다.  
+## <a name="substituting-template-parameters"></a>Substituting Template Parameters  
+ In an earlier section, you registered the project template with Visual Studio by using the `ProvideProjectFactory` attribute. Registering the path of a template folder in this manner lets you enable basic template parameter substitution by overriding and expanding the `ProjectNode.AddFileFromTemplate` class. For more information, see [New Project Generation: Under the Hood, Part Two](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
- 대체 코드를 추가 합니다 `AddFileFromTemplate` 클래스입니다.  
+ Now add replacement code to the `AddFileFromTemplate` class.  
   
-#### <a name="to-substitute-template-parameters"></a>템플릿 매개 변수를 대체 합니다.  
+#### <a name="to-substitute-template-parameters"></a>To substitute template parameters  
   
-1. SimpleProjectNode.cs 파일에 다음 추가 `using` 문입니다.  
+1. In the SimpleProjectNode.cs file, add the following `using` statement.  
   
    ```  
    using System.IO;  
    ```  
   
-2. 대체는 `AddFileFromTemplate` 메서드를 다음 코드를 사용 합니다.  
+2. Replace the `AddFileFromTemplate` method by using the following code.  
   
    ```  
    public override void AddFileFromTemplate(  
@@ -602,30 +602,30 @@ Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타
    }  
    ```  
   
-3. 직후 메서드에서 중단점을 설정 합니다 `className` 대입문 합니다.  
+3. Set a breakpoint in the method, just after the `className` assignment statement.  
   
-   대입문을 사용 하 여 새 클래스 이름 및 네임 스페이스에 대 한 적절 한 값을 결정합니다. 두 `ProjectNode.FileTemplateProcessor.AddReplace` 메서드 호출에 이러한 새 값을 사용 하 여 해당 템플릿 매개 변수 값으로 바꿉니다.  
+   The assignment statements determine reasonable values for a namespace and a new class name. The two `ProjectNode.FileTemplateProcessor.AddReplace` method calls replace the corresponding template parameter values by using these new values.  
   
-## <a name="testing-the-template-parameter-substitution"></a>템플릿 매개 변수 대체를 테스트합니다.  
- 이제 템플릿 매개 변수 대체를 테스트할 수 있습니다.  
+## <a name="testing-the-template-parameter-substitution"></a>Testing the Template Parameter Substitution  
+ Now you can test template parameter substitution.  
   
-#### <a name="to-test-the-template-parameter-substitution"></a>템플릿 매개 변수 대체를 테스트 하려면  
+#### <a name="to-test-the-template-parameter-substitution"></a>To test the template parameter substitution  
   
-1. 디버깅을 시작 하 고 실험적 인스턴스에서 새 SimpleProject 만듭니다.  
+1. Start debugging, and in the experimental instance create a new SimpleProject.  
   
-2. 실행이 중단점에서 중지 되는 `AddFileFromTemplate` 메서드.  
+2. Execution stops at the breakpoint in the `AddFileFromTemplate` method.  
   
-3. 에 대 한 값을 확인 합니다 `nameSpace` 고 `className` 매개 변수입니다.  
+3. Examine the values for the `nameSpace` and `className` parameters.  
   
-   - `nameSpace` 값이 지정 되는 \<RootNamespace > \Templates\Projects\SimpleProject\SimpleProject.myproj 프로젝트 템플릿 파일의 요소입니다. 이 경우 값은 "MyRootNamespace"입니다.  
+   - `nameSpace` is given the value of the \<RootNamespace> element in the \Templates\Projects\SimpleProject\SimpleProject.myproj project template file. In this case, the value is "MyRootNamespace".  
   
-   - `className` 클래스 이름의 원본 파일, 파일 이름 확장명이 없는 값이 지정 됩니다. 이 경우 첫 번째 대상 폴더에 복사할 파일이 AssemblyInfo.cs; 따라서 className의 값은 "AssemblyInfo".  
+   - `className` is given the value of the class source file name, without the file name extension. In this case, the first file to be copied to the destination folder is AssemblyInfo.cs; therefore, the value of className is "AssemblyInfo".  
   
-4. 중단점을 제거 하 고 f5 키를 눌러 실행을 계속 합니다.  
+4. Remove the breakpoint and press F5 to continue execution.  
   
-    Visual Studio 프로젝트 만들기를 완료 해야 합니다.  
+    Visual Studio should finish creating a project.  
   
-5. 코드 편집기에서 Program.cs를 엽니다. 다음 코드와 비슷한 소스 코드를 표시 되어야 합니다.  
+5. Open Program.cs in the code editor. You should see source code that resembles the following code.  
   
    ```  
    using System;  
@@ -646,10 +646,10 @@ Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타
    }  
    ```  
   
-    네임 스페이스는 "MyRootNamespace" 및 클래스 이름을 이제 "Program" 됩니다.  
+    Notice that the namespace is now "MyRootNamespace" and the class name is now "Program".  
   
-6. 프로젝트 디버깅을 시작 합니다. 새 프로젝트는 컴파일, 실행 및 "VSX Hello!"를 표시 합니다. 콘솔 창에 표시합니다.  
+6. Start debugging the project. The new project should compile, run, and display "Hello VSX!!!" 콘솔 창에 표시합니다.  
   
-    ![간단한 프로젝트 명령](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")  
+    ![Simple Project Command](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")  
   
-   축하합니다. 관리 되는 기본 프로젝트 시스템을 구현 했습니다.
+   지금까지 You have implemented a basic managed project system.

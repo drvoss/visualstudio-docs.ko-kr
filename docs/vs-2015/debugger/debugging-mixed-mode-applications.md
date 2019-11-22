@@ -1,5 +1,5 @@
 ---
-title: 혼합 모드 응용 프로그램 디버그 | Microsoft Docs
+title: Debugging Mixed-Mode Applications | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -25,12 +25,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9c8e9f36e7118b1681701f6c8ac60a5bc851308f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: b462d5d0c449b8e47c936242908e5bbe6e433429
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65691352"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298313"
 ---
 # <a name="debugging-mixed-mode-applications"></a>혼합 모드 애플리케이션 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "65691352"
   
 ## <a name="enable-c-edit-and-continue-in-mixed-mode-debugging"></a>혼합 모드 디버깅에서 C++ 편집하며 계속하기 사용  
   
-- Visual Studio 2013에서 C++에 대한 편집하며 계속하기를 사용하려면 레거시 디버깅 엔진으로 되돌려야 합니다. Microsoft Application Lifecycle Management 블로그에서 [Visual Studio 2013에서 관리되는 호환성 모드로 전환](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/switching-to-managed-compatibility-mode-in-visual-studio-2013.aspx)을 참조하세요.  
+- Visual Studio 2013에서 C++에 대한 편집하며 계속하기를 사용하려면 레거시 디버깅 엔진으로 되돌려야 합니다. Microsoft Application Lifecycle Management 블로그에서 [Visual Studio 2013에서 관리되는 호환성 모드로 전환](https://devblogs.microsoft.com/devops/switching-to-managed-compatibility-mode-in-visual-studio-2013/)을 참조하세요.  
   
 ## <a name="property-evaluation-in-mixed-mode-applications"></a>혼합 모드 애플리케이션의 속성 확인  
  혼합 모드 애플리케이션에서 디버거의 속성 확인 작업은 많은 리소스를 차지합니다. 그러므로 단계별 실행과 같은 디버깅 작업이 느리게 나타날 수 있습니다. 자세한 내용은 [단계별 실행](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)을 참조하세요. 혼합 모드 디버깅의 성능이 좋지 않을 경우에는 디버거 창에서 속성 확인을 해제할 수 있습니다.  
@@ -57,5 +57,5 @@ ms.locfileid: "65691352"
   
    네이티브 호출 스택과 관리되는 호출 스택이 서로 다르기 때문에 디버거는 혼합 코드에 대한 완전한 호출 스택을 항상 제공할 수는 없습니다. 네이티브 코드가 관리 코드를 호출할 경우 약간 다를 수 있습니다. 자세한 내용은 [호출 스택 창의 혼합 코드 및 누락된 정보](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)를 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목:  
  [관리 코드 디버그](../debugger/debugging-managed-code.md)

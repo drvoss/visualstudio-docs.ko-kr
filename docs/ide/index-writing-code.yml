@@ -1,6 +1,6 @@
 ### YamlMime:Landing
-title: Visual Studio에서 코드 편집
-summary: 프로젝트 열기, 코드 편집기 기능 사용 및 일관된 코드 스타일 유지와 같은 편집 작업에 대해 알아봅니다.
+title: Visual Studio에서 코드 구성 및 편집
+summary: 코드 프로젝트 작업, 코드 편집기 기능 사용 및 일관된 코드 스타일 유지에 대해 알아봅니다.
 metadata:
   title: 코드 편집기 기능
   description: Visual Studio의 코드 편집 기능에 대해 알아봅니다.
@@ -10,12 +10,12 @@ metadata:
   author: gewarren
   ms.author: gewarren
   ms.date: 10/15/2019
-  ms.openlocfilehash: 30345839ca1c5f4f07b3c36415f7aad277693069
-  ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+  ms.openlocfilehash: 8cecddb4c8b9a49d56a6f133b751be53302b4347
+  ms.sourcegitcommit: 20325d85cd74906f5f30668133bd11a40f229b0c
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 10/17/2019
-  ms.locfileid: "72516831"
+  ms.lasthandoff: 11/14/2019
+  ms.locfileid: "74087244"
 landingContent:
 - title: 프로젝트 열기 또는 만들기
   linkLists:

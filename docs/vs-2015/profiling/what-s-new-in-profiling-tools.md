@@ -12,12 +12,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 46eb6585bffb96397d73a03f142bd7b6b4779f15
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: f9611170c7b23a9db72c27b9c3f69a39e21a4bdc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261631"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300630"
 ---
 # <a name="what39s-new-in-profiling-tools"></a>프로파일링 도구의 새로운 기능
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ Visual Studio 2015 업데이트 1 디버깅 및 진단의 모든 새로운 기�
  Visual Studio 2015 디버깅 및 진단의 모든 새로운 기능에 대한 자세한 내용은 [Visual Studio 2015 릴리스 정보](https://www.visualstudio.com/news/vs2015-vs#Debug)를 참조하세요.  
   
 ## <a name="whats-new-in-update-1"></a>업데이트 1의 새로운 기능  
- Visual Studio 2015 업데이트 1부터 디버거를 종료하지 않고 CPU 사용의 기능별 분석 결과를 볼 수 있습니다. 자세한 내용은 [Visual Studio 2015의 디버거에서 CPU 프로파일링](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/29/profile-your-cpu-in-the-debugger-in-visual-studio-2015.aspx)을 참조하세요.  
+ Visual Studio 2015 업데이트 1부터 디버거를 종료하지 않고 CPU 사용의 기능별 분석 결과를 볼 수 있습니다. 자세한 내용은 [Visual Studio 2015의 디버거에서 CPU 프로파일링](https://devblogs.microsoft.com/devops/profile-your-cpu-in-the-debugger-in-visual-studio-2015/)을 참조하세요.  
   
- **진단 도구** 창의 **이벤트** 탭에 검색 및 필터 옵션을 추가했습니다. 자세한 내용은 [디버거 통합 프로파일링](/visualstudio/profiling/running-profiling-tools-with-or-without-the-debugger) 및 [진단 도구 창의 이벤트 탭 검색 및 필터링](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx)을 참조하세요.  
+ **진단 도구** 창의 **이벤트** 탭에 검색 및 필터 옵션을 추가했습니다. 자세한 내용은 [디버거 통합 프로파일링](/visualstudio/profiling/running-profiling-tools-with-or-without-the-debugger) 및 [진단 도구 창의 이벤트 탭 검색 및 필터링](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/)을 참조하세요.  
   
 ## <a name="diagnostics-with-debugging-ui-and-hotkey-changes"></a>디버깅 UI 및 변경된 바로 가기 키를 사용하여 진단  
  이제 디버깅 하는 동안 새 **진단 도구** 창에서 진단 도구를 실행할 수 있습니다. 이 창은 자동으로 표시되지만 새 메뉴 항목 **진단 도구 표시** (바로 가기 키 **Ctrl+Alt+F2**)를 사용하여 열 수도 있습니다.  

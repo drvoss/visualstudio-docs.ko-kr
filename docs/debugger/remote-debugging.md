@@ -28,10 +28,10 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 06/13/2019
 ms.locfileid: "67043324"
 ---
-# <a name="remote-debugging"></a>Remote Debugging
+# <a name="remote-debugging"></a>원격 디버깅
 다른 컴퓨터에 배포된 Visual Studio 애플리케이션을 디버그할 수 있습니다. 이렇게 하려면 Visual Studio 원격 디버거를 사용합니다.
 
-원격 디버깅에 대 한 자세한 내용은 다음이 항목을 참조 하세요.
+원격 디버깅에 대한 자세한 내용은 다음 이 항목을 참조하세요.
 
 |시나리오|링크|
 |-|-|-|
@@ -43,7 +43,7 @@ ms.locfileid: "67043324"
 |C++|[C++ 프로젝트 원격 디버그](../debugger/remote-debugging-cpp.md)|
 |유니버설 Windows 앱 (UWP)|[원격 컴퓨터에서 UWP 앱 실행](../debugger/run-windows-store-apps-on-a-remote-machine.md) 또는 [설치 된 앱 패키지 디버그](../debugger/debug-installed-app-package.md)|
 
-방금 다운로드 하 고 원격 디버거를 설치 하 고 시나리오에 대 한 추가 지침을 필요 하지 않습니다,이 문서의 단계를 수행 합니다.
+원격 디버거를 다운로드하여 설치하고자 하고 시나리오에 대한 추가 지침은 필요하지 않은 경우 이 문서의 단계를 수행하세요.
 
 ## <a name="download-and-install-the-remote-tools"></a>원격 도구 다운로드 및 설치
 
@@ -74,9 +74,9 @@ ms.locfileid: "67043324"
 
    ::: moniker-end
 
-2. 공유 합니다 **원격 디버거** Visual Studio 컴퓨터의 폴더입니다.
+2. Visual Studio 컴퓨터에서 **원격 디버거** 폴더를 공유하세요.
 
-3. 원격 컴퓨터에서 실행 *msvsmon.exe* 공유 폴더에서. 수행 합니다 [설치 지침](#bkmk_setup)합니다.
+3. 원격 컴퓨터의 공유 폴더에서 *msvsmon.exe*를 실행하세요. [설치 지침](#bkmk_setup)을 따라야 합니다.
 
 > [!TIP]
 > 명령줄 설치와 명령줄 참조에 대 한 도움말 페이지를 참조 하세요 *msvsmon.exe* 입력 하 여 ``msvsmon.exe /?`` Visual Studio가 설치 된 컴퓨터의 명령줄에서 (또는 이동 **도움말 > 사용량**원격 디버거의).
@@ -97,7 +97,7 @@ ms.locfileid: "67043324"
 
 - 인증 모드 또는 포트 번호를 변경 하거나 원격 도구의 시간 제한 값을 지정 하는 경우: 선택할 **도구 > 옵션**합니다.
 
-     기본적으로 사용 되는 포트 번호의 나열을 참조 하세요 [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)합니다.
+     기본적으로 사용되는 포트 번호의 목록은 [원격 디버거 포트 할당(Remote Debugger Port Assignments)](../debugger/remote-debugger-port-assignments.md)을 참조하세요.
 
      > [!WARNING]
      > 원격 도구를 인증 안 함 모드에서 실행할 수도 있지만 이 모드는 사용하지 않는 것이 좋습니다. 이 모드에서 실행할 때는 네트워크 보안이 없습니다. 네트워크에 악의적인 트래픽이나 유해 트래픽 위험이 확실히 없는 경우에만 인증 안 함 모드를 선택하세요.
@@ -105,7 +105,7 @@ ms.locfileid: "67043324"
 ## <a name="bkmk_configureService"></a> (선택 사항) 원격 디버거를 서비스로 구성
 ASP.NET 및 기타 서버 환경에서 디버깅을 위해 관리자 권한으로 원격 디버거를 실행 하거나, 항상 실행 하려는 경우 원격 디버거를 서비스로 실행 됩니다.
 
- 원격 디버거를 서비스로 구성 하려는 경우 다음이 단계를 수행 합니다.
+ 원격 디버거를 서비스로 구성하려는 경우 다음 단계를 수행하세요.
 
 1. **원격 디버거 구성 마법사** (rdbgwiz.exe)를 찾습니다. 이는 원격 디버거와 별도의 응용 프로그램입니다. 원격 도구를 설치한 경우에만 사용할 수 있습니다. Visual Studio와 함께 설치되지 않습니다.
 

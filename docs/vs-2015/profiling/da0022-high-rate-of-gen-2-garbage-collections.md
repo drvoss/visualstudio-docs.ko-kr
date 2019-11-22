@@ -1,5 +1,5 @@
 ---
-title: 'DA0022: Gen 2 가비지 수집의 비율이 높습니다. | Microsoft Docs'
+title: 'DA0022: Gen 2 가비지 컬렉션의 비율이 높습니다. | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,21 +13,21 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 820d74a9dced29dc237c4bf182419abcb7d503b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 067544e6b97e2709ed217ae0232771e833800e52
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68194920"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300125"
 ---
 # <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022: Gen 2 가비지 수집의 비율이 높습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-규칙 Id | DA0022 |  
-| 범주. NET Framework 사용 |  
-| 프로 파일링 방법을 | 모든 |  
-| 메시지 | Gen 2 가비지 수집의 비율이 상당히 높습니다 있습니다. 의도적으로 프로그램의 데이터 구조가 대다수 오랜 시간 동안 할당되고 지속되는 경우 일반적으로 이러한 현상은 문제가 되지 않습니다. 하지만 이러한 동작이 의도되지 않은 경우에는 애플리케이션이 개체를 고정하고 있는 것일 수 있습니다. 확실하지 않으면 .NET 메모리 할당 데이터 및 개체 수명 정보를 수집하여 애플리케이션이 사용하는 메모리 할당 패턴을 파악할 수 있습니다.|  
-| 규칙 유형 | 경고 |  
+Rule Id|DA0022|  
+|Category|.NET Framework Usage|  
+|Profiling method|All|  
+|Message|There is a fairly high rate of Gen 2 garbage collections occurring. 의도적으로 프로그램의 데이터 구조가 대다수 오랜 시간 동안 할당되고 지속되는 경우 일반적으로 이러한 현상은 문제가 되지 않습니다. 하지만 이러한 동작이 의도되지 않은 경우에는 애플리케이션이 개체를 고정하고 있는 것일 수 있습니다. 확실하지 않으면 .NET 메모리 할당 데이터 및 개체 수명 정보를 수집하여 애플리케이션이 사용하는 메모리 할당 패턴을 파악할 수 있습니다.|  
+|Rule type|Warning|  
   
  샘플링, .NET 메모리 또는 리소스 경합 방법을 사용하여 프로파일링할 경우 이 규칙을 트리거하려면 10개 이상의 샘플을 수집해야 합니다.  
   
@@ -50,4 +50,4 @@ ms.locfileid: "68194920"
   
  애플리케이션의 관리되는 메모리 사용 패턴을 파악하려면 .NET 메모리 할당 프로필을 실행하여 애플리케이션을 다시 프로파일링하고 개체 수명 프로파일링 옵션을 선택합니다.  
   
- 가비지 수집 성능 향상 방법에 대한 자세한 내용은 Microsoft 웹 사이트에서 [가비지 수집기 기본 및 성능 힌트](http://go.microsoft.com/fwlink/?LinkId=148226)를 참조하세요. 자동 가비지 수집의 오버헤드에 대한 자세한 내용은 [Large Object Heap Uncovered](http://go.microsoft.com/fwlink/?LinkId=177836)(대형 개체 힙 살펴보기)를 참조하세요.
+ 가비지 수집 성능 향상 방법에 대한 자세한 내용은 Microsoft 웹 사이트에서 [가비지 수집기 기본 및 성능 힌트](https://go.microsoft.com/fwlink/?LinkId=148226)를 참조하세요. 자동 가비지 수집의 오버헤드에 대한 자세한 내용은 [Large Object Heap Uncovered](https://go.microsoft.com/fwlink/?LinkId=177836)(대형 개체 힙 살펴보기)를 참조하세요.

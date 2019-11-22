@@ -6,16 +6,19 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: 일부 Visual Studio 구독에 포함된 Office 365 혜택을 알아봅니다.
-ms.openlocfilehash: 65a071cbfcdc31ca2ef8a36ac5a779fc99467c17
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 2dde8489f15d8bd2e6a5d04045b99aea2245f73d
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816466"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099603"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Office 365 ProPlus
 
 최상의 작업을 만들 수 있습니다. 항상 업데이트되는 앱을 사용하여 어디서든 작업할 수 있습니다. Office 365 ProPlus는 Word, Excel, PowerPoint, OneNote, Outlook, Publisher 및 Access(PC에서만 사용 가능한 Publisher 및 Access)와 같은 프리미엄 앱과 함께 제공되는 구독입니다. PC, Mac, iPad, iPhone, Android 태블릿 및 Android 휴대폰을 포함한 여러 디바이스에 앱을 설치할 수 있습니다. 구독을 사용할 경우 최신 버전의 앱을 다운로드할 수 있으며, 업데이트가 제공되면 자동으로 받을 수 있습니다.
+
+> [!NOTE]
+> Visual Studio 구독을 통해 프로덕션 목적으로 Office 365를 사용할 수 있습니다.  
 
 ## <a name="getting-started-with-office-365-proplus"></a>Office 365 ProPlus 시작
 
@@ -43,17 +46,15 @@ Office 365 ProPlus를 다운로드하고 활성화하려면 다음 단계를 따
 0. **다음**을 다시 클릭합니다.
 0. **설치**를 클릭하여 Office 애플리케이션을 설치합니다.
 
-## <a name="next-steps"></a>다음 단계
-
-Office용 애플리케이션을 개발하려는 경우 [Office 개발자 구독](vs-office-dev.md)을 활성화하는 것이 좋습니다.
-
 ## <a name="eligibility"></a>자격
 
 | 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise(Standard)   | VL, Azure, 일반 정품| 사용 가능       |  예          |
+| GitHub Enterprise가 포함된 Visual Studio Enterprise  | VL | 사용 가능       |  예          |
 | Visual Studio Enterprise(Standard)   | NFR<sup>1</sup> | 사용할 수 없음       |  해당 사항 없음          |
 | Visual Studio Professional(표준) | VL, Azure, 일반 정품                                       | 사용할 수 없음                                                            |  해당 사항 없음          |
+| GitHub Enterprise가 포함된 Visual Studio Professional | VL | 사용할 수 없음         |  해당 사항 없음          |
 | Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 사용할 수 없음                                             |  해당 사항 없음          |
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 사용할 수 없음                                              |  해당 사항 없음          |
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure | 사용할 수 없음 | N/A |
@@ -75,4 +76,4 @@ Office용 애플리케이션을 개발하려는 경우 [Office 개발자 구독]
 Visual Studio 구독을 최대한 활용하려면 다음과 같은 유용한 혜택을 활성화해야 합니다.
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
-- [Azure DevTest 개별 크레딧](vs-azure.md)
+- [Azure DevTest 개별 크레딧](vs-azure.md) Office용 애플리케이션을 개발하려는 경우 [Office 개발자 구독](vs-office-dev.md)을 활성화하는 것이 좋습니다.

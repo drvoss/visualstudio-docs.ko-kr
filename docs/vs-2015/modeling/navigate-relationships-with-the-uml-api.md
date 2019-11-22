@@ -1,5 +1,5 @@
 ---
-title: UML API를 사용 하 여 관계 탐색 | Microsoft Docs
+title: Navigate relationships with the UML API | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5c0067e213fdff2bde09c290d9fcaa9b4f52b9ab
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f19208e886eb499c825b119ad4ade7e8b52ab88f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668535"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300236"
 ---
 # <a name="navigate-relationships-with-the-uml-api"></a>UML API를 사용하여 관계 탐색
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -152,9 +152,9 @@ IEnumerable<IUseCase>GetIncludingCases(this IUseCase usecase);
 ```
 
 ## <a name="enumerating-relationships"></a>관계 열거
- 여러 값을 반환 하는 UML 모델의 모든 속성은 IEnumerable < > 인터페이스를 따릅니다. 즉, [Linq 쿼리 식](http://go.microsoft.com/fwlink/?LinkId=168834) 과 **system.xml 네임 스페이스** 에 정의 된 확장 메서드를 사용할 수 있습니다.
+ All properties of the UML model that return multiple values conform to the IEnumerable<> interface. This means that you can use [Linq Query Expressions](https://go.microsoft.com/fwlink/?LinkId=168834) and the extension methods defined in the **System.Linq** namespace.
 
- 예:
+ 예를 들어 다음과 같은 가치를 제공해야 합니다.
 
 ```
 from shape in     Context.CurrentDiagram.GetSelectedShapes<IClassifier>()
@@ -164,4 +164,4 @@ select shape.Element
 ```
 
 ## <a name="see-also"></a>관련 항목:
- [Uml 모델 및 다이어그램 확장](../modeling/extend-uml-models-and-diagrams.md) [uml 모델 탐색](../modeling/navigate-the-uml-model.md)
+ [Extend UML models and diagrams](../modeling/extend-uml-models-and-diagrams.md) [Navigate the UML model](../modeling/navigate-the-uml-model.md)

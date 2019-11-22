@@ -1,5 +1,5 @@
 ---
-title: 'DA0503: 프로파일링 중인 프로세스에 대한 평균 작업 세트(바이트) | Microsoft Docs'
+title: 'DA0503: 프로파일링 중인 프로세스에 대한 평균 작업 집합(바이트) | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,21 +13,21 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b45725c59cb18f965ba7d1fa134de739d9c4144d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 898208530eb1ba71a5a1443fcb97ac1f1a1081e1
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68205913"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300061"
 ---
-# <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503: 프로파일링되고 있는 프로세스의 평균 작업 집합(바이트)
+# <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503: 프로파일링 중인 프로세스에 대한 평균 작업 집합(바이트)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-규칙 Id | DA0503 |  
-| 범주 | 리소스 모니터링 |  
-| 프로 파일링 방법을 | 모든 |  
-| 메시지 | 이 정보는 참고용 으로만 수집 되었습니다. Process Working Set 카운터는 프로파일링하고 있는 프로세스의 실제 메모리 사용량을 측정합니다. 보고된 값은 모든 측정 간격에 걸쳐 계산된 평균값입니다.|  
-| 규칙 유형 | 정보 |  
+Rule Id|DA0503|  
+|Category|Resource Monitoring|  
+|Profiling method|All|  
+|Message|This information was gathered for information only. Process Working Set 카운터는 프로파일링하고 있는 프로세스의 실제 메모리 사용량을 측정합니다. 보고된 값은 모든 측정 간격에 걸쳐 계산된 평균값입니다.|  
+|Rule type|Information|  
   
  샘플링, .NET 메모리 또는 리소스 경합 방법을 사용하여 프로파일링할 경우 이 규칙을 트리거하려면 10개 이상의 샘플을 수집해야 합니다.  
   
@@ -40,7 +40,7 @@ ms.locfileid: "68205913"
   
  프로세스 작업 집합의 크기는 프로세스가 적극적으로 사용하는 가상 메모리 크기를 반영합니다. 또한 애플리케이션을 실행할 수 있는 실제 메모리(또는 RAM)의 크기 및 해당 실제 메모리에 대한 실행 중인 다른 프로세스의 경합이 이 크기에 영향을 미칩니다. 실제 메모리가 제한될 경우 운영 체제에서는 주기적으로 프로세스 작업 집합에서 많은 비활성 페이지를 잘라내는 방식으로 모든 활성 프로세스에서 메모리 사용량을 분산하려고 하므로 프로세스 작업 집합의 값이 크게 달라질 수 있습니다.  
   
- 프로세스 작업 집합에 대한 자세한 내용은 MSDN의 Windows 메모리 관리 설명서에 있는 [Working Set](http://go.microsoft.com/fwlink/?LinkId=177830)(작업 집합)를 참조하세요.  
+ 프로세스 작업 집합에 대한 자세한 내용은 MSDN의 Windows 메모리 관리 설명서에 있는 [Working Set](https://go.microsoft.com/fwlink/?LinkId=177830)(작업 집합)를 참조하세요.  
   
 ## <a name="how-to-use-rule-data"></a>규칙 데이터를 사용하는 방법  
  규칙 값을 사용하여 프로그램의 여러 가지 버전이나 빌드에 대한 성능을 비교하거나 여러 가지 프로파일링 시나리오에서 애플리케이션의 성능을 파악합니다.  

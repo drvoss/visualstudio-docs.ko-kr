@@ -1,17 +1,17 @@
 ---
-title: 선택한 Visual Studio 구독의 DataCamp 혜택을 통해 데이터 과학 역량을 증대합니다. | Microsoft Docs
+title: 선택한 Visual Studio 구독의 DataCamp 혜택을 통해 데이터 과학 역량을 증대합니다. | Microsoft 문서
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/30/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 description: 선택한 Visual Studio 구독에 포함된 DataCamp Training 구독에 대해 알아봅니다.
-ms.openlocfilehash: 64176f5a58641bf51434c99eee914a8ac176da56
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: ea889814373fa7c970e905bb4a845d5ca67c92e7
+ms.sourcegitcommit: 6f25855de9db455e6d38bc105057d2ed1e7454b9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681647"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199875"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독의 DataCamp Training 혜택
 적격 Visual Studio 구독에는 DataCamp 구독이 포함됩니다.  DataCamp를 사용하면 브라우저에서 편안하게 필요한 데이터 과학 기술을 학습할 수 있습니다. 학습 시기와 대상을 선택하게 됩니다. 소프트웨어 설치나 특수 하드웨어 요구 사항이 필요하지 않으므로 전에 없이 쉽게 데이터 과학을 학습할 수 있습니다.
@@ -28,7 +28,7 @@ ms.locfileid: "68681647"
    > [!NOTE]
    > 계정을 만들기 시작하면 다음과 같은 오류 메시지가 나타날 수 있습니다. "죄송합니다!  프로모션 코드가 잘못되었거나 만료되었습니다."  이것은 프로모션 코드가 만들어질 때 몇 분 후에 만료되기 때문에 발생합니다.  이런 메시지가 표시되면 [혜택](https://my.visualstudio.com/benefits) 페이지로 돌아가서 DataCamp 혜택 타일에서 **활성화** 링크를 클릭하면 됩니다.
 
-4. 계정을 만든 후에는 학습 경로를 선택할 수 있습니다.  옵션은 다음과 같습니다.
+4. 계정을 만든 후에는 학습 경로를 선택할 수 있습니다.  다음 옵션을 사용할 수 있습니다.
     - 데이터 과학을 위한 R 학습
     - 데이터 과학을 위한 Python 학습 시작
     - 데이터 과학 역량 개발
@@ -56,13 +56,15 @@ ms.locfileid: "68681647"
 > ![DataCamp 학습 계속](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>자격
-| 구독 수준                                                 |     채널                                            | 혜택                                                          | 갱신 가능?    |
+| 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise(Standard)   | VL, Azure, 일반 정품, | 3개월       |  아니요.  새 구독자만 사용할 수 있음          |
+| GitHub Enterprise가 포함된 Visual Studio Enterprise   | VL | 3개월       |  아니요.  새 구독자만 사용할 수 있음          |
 | Visual Studio Professional(표준) | VL, Azure, 일반 정품                                       | 3개월                                                            |  아니요.  새 구독자만 사용할 수 있음           |
+| GitHub Enterprise가 포함된 Visual Studio Professional| VL | 3개월                                                            |  아니요.  새 구독자만 사용할 수 있음           |
 | Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 3개월                                             |  아니요.  새 구독자만 사용할 수 있음           |
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 3개월                                              |  아니요.  새 구독자만 사용할 수 있음           |
-| Visual Studio Enterprise(Standard)  | NFR<sup>1</sup> |사용할 수 없음  | 해당 없음 |
+| Visual Studio Enterprise(Standard)  | NFR<sup>1</sup> |사용할 수 없음  | 해당 사항 없음 |
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure | 사용할 수 없음 | N/A |
 
 <sup>1</sup> 포함:  ‘NFR(전매금지), FTE, MVP(Most Valuable Professional), RD(Regional Director), MPN(Microsoft 파트너 네트워크), VSIP(Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark, Imagine’
@@ -83,5 +85,7 @@ ms.locfileid: "68681647"
 ## <a name="next-steps"></a>다음 단계
 구독에서 더 전문적인 개발 기회를 확인하세요.
 - [Pluralsight](vs-pluralsight.md)
-- [LinkedIn Learning](vs-linkedin-learning.md)
-- [MSDN Magazine](vs-msdn.md)
+- [LinkedIn 학습](vs-linkedin-learning.md)
+
+
+구독과 함께 제공되는 Azure DevTest 개별 크레딧 혜택을 아직 활성화하지 않은 경우 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)를 방문하여 도구 범주의 Azure 타일을 클릭하고, Azure 구독을 설정하고, Azure DevTest 개별 크레딧을 사용합니다.

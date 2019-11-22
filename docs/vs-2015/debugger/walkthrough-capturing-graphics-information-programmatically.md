@@ -1,5 +1,5 @@
 ---
-title: '연습: 프로그래밍 방식으로 그래픽 정보 캡처 | Microsoft Docs'
+title: 'Walkthrough: Capturing Graphics Information Programmatically | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1eaa3547733432715c5362b20030fe3d4a886900
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 54097420fd212ec9057f4a968e2c6d5de199e56e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444338"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296905"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>연습: 프로그래밍 방식으로 그래픽 정보 캡처
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,13 +58,13 @@ ms.locfileid: "63444338"
     ```  
   
     > [!IMPORTANT]
-    > 헤더 파일 vsgcapture.h—which 지원 프로그래밍 방식 캡처를 Windows 8.0 및 이전 버전을 포함 하지 마십시오-Windows 8.1 앱에서 프로그래밍 캡처를 수행 합니다. 이 헤더는 DirectX 11.2와 호환되지 않습니다. D3d11_2.h 헤더를 포함 한 후이 파일이 포함 되어 있으면 컴파일러는 경고를 실행 합니다. D3d11_2.h 전에 vsgcapture.h는 포함 하는 경우 앱이 시작 되지 않습니다.  
+    > Do not include the header file vsgcapture.h—which supports programmatic capture on Windows 8.0 and earlier—to perform programmatic capture in your Windows 8.1 apps. 이 헤더는 DirectX 11.2와 호환되지 않습니다. If this file is included after the d3d11_2.h header is included, the compiler issues a warning. If vsgcapture.h is included before d3d11_2.h, the app will not start.  
   
     > [!NOTE]
     > 컴퓨터에 June 2010 DirectX SDK가 설치되어 있고 프로젝트의 포함 경로에 `%DXSDK_DIR%includex86`이 포함되어 있으면 이 부분을 포함 경로의 끝으로 옮깁니다. 라이브러리 경로에 대해서도 동일하게 수행합니다.  
   
 #### <a name="windows-phone-81"></a>Windows Phone 8.1  
- 정의 해야 하므로 Windows Phone 8.1 SDK DXProgrammableCapture.h 헤더를 포함 하지 않습니다 합니다 `IDXGraphicsAnalysis` 사용할 수 있도록 인터페이스를 직접 합니다 `BeginCapture()` 및 `EndCapture()` 메서드. 이전 섹션에서 설명한 대로 다른 헤더를 포함합니다.  
+ Because the Windows Phone 8.1 SDK doesn't include the DXProgrammableCapture.h header, you'll need to define the `IDXGraphicsAnalysis` interface yourself so that you can use the `BeginCapture()` and `EndCapture()` methods. 이전 섹션에서 설명한 대로 다른 헤더를 포함합니다.  
   
 ###### <a name="to-define-the-idxgraphicsanalysis-interface"></a>IDXGraphicsAnalysis 인터페이스를 정의하려면  
   
@@ -85,7 +85,7 @@ ms.locfileid: "63444338"
  DirectX 11.2에서 그래픽 정보를 캡처하려면 DXGI 디버그 인터페이스를 가져와야 합니다.  
   
 > [!IMPORTANT]
-> 프로그래밍 방식 캡처를 사용 하는 경우 여전히 그래픽 진단 모드로 앱을 실행 해야 합니다 (에서 Alt + F5 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]) 또는 합니다 [명령줄 캡처 도구](../debugger/command-line-capture-tool.md)합니다.  
+> When using programmatic capture, you must still run your app under graphics diagnostics (Alt+F5 in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]) or under the [Command-Line Capture Tool](../debugger/command-line-capture-tool.md).  
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>IDXGraphicsAnalysis 인터페이스를 가져오려면  
   
@@ -106,7 +106,7 @@ ms.locfileid: "63444338"
     ```  
   
     > [!NOTE]
-    >  `DXGIGetDebugInterface1` 이 `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`)를 반환하는 경우 앱이 그래픽 진단에서 실행되고 있는지 확인합니다( [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 Alt+F5)로 앱을 실행해야 합니다.  
+    > `DXGIGetDebugInterface1` 이 `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`)를 반환하는 경우 앱이 그래픽 진단에서 실행되고 있는지 확인합니다( [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 Alt+F5)로 앱을 실행해야 합니다.  
   
 ### <a name="capturing-graphics-information"></a>그래픽 정보 캡처  
  이제 유효한 `IDXGraphicsAnalysis` 인터페이스가 있으므로 `BeginCapture` 및 `EndCapture` 를 사용하여 그래픽 정보를 캡처할 수 있습니다.  
@@ -145,7 +145,7 @@ ms.locfileid: "63444338"
 ### <a name="preparing-your-computer-to-use-programmatic-capture"></a>프로그래밍 캡처를 사용하도록 컴퓨터 준비  
  프로그래밍 캡처 API는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 용 원격 도구를 사용하여 캡처 기능을 제공합니다. 로컬 컴퓨터에서 프로그래밍 캡처를 사용하더라도 앱을 실행할 컴퓨터에는 원격 도구가 설치되어 있어야 합니다. 로컬 컴퓨터에서 프로그래밍 캡처를 수행하는 경우[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 를 실행 중일 필요는 없습니다.  
   
- 컴퓨터에서 실행 중인 앱에서 원격 캡처 API를 사용하려면 먼저 해당 컴퓨터에 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 용 원격 도구를 설치해야 합니다. 원격 도구 버전마다 지원하는 하드웨어 플랫폼이 다릅니다. 원격 도구 설치 방법에 대한 자세한 내용은 Microsoft 다운로드 웹 사이트에서 [원격 도구 다운로드 페이지](http://go.microsoft.com/fwlink/p/?LinkId=246691) 를 참조하세요.  
+ 컴퓨터에서 실행 중인 앱에서 원격 캡처 API를 사용하려면 먼저 해당 컴퓨터에 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 용 원격 도구를 설치해야 합니다. 원격 도구 버전마다 지원하는 하드웨어 플랫폼이 다릅니다. 원격 도구 설치 방법에 대한 자세한 내용은 Microsoft 다운로드 웹 사이트에서 [원격 도구 다운로드 페이지](https://go.microsoft.com/fwlink/p/?LinkId=246691) 를 참조하세요.  
   
  그렇지 않으면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에서는 32비트 앱용 원격 캡처를 수행하기 위한 필수 구성 요소를 설치합니다.  
   
@@ -182,7 +182,7 @@ ms.locfileid: "63444338"
   
    이 단계를 수행하지 않으면 파일 이름은 default.vsglog가 됩니다. `DONT_SAVE_VSGLOG_TO_TEMP`를 정의하지 않으면 로그 파일의 위치는 임시 디렉터리에 대해 상대적입니다. 그렇지 않은 경우에는 작업 디렉터리에 대해 상대적이고 절대 파일 이름을 지정한 경우에는 다른 위치에 있습니다.  
   
-  에 대 한 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱 임시 디렉터리의 위치는 각 사용자 및 앱 및 C:\users 같은 위치에 일반적으로 발견 되\\*username*\AppData\Local\Packages\\ *패키지 제품군 이름*\TempState\\합니다. 데스크톱 앱에 대 한 임시 디렉터리의 위치는 각 사용자에 게 특정 및 C:\Users 같은 위치에 일반적으로 발견 되\\*사용자 이름*\AppData\Local\Temp\\합니다.  
+  For [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] apps, the location of the temp directory is specific to each user and app, and is typically found in a location such as C:\users\\*username*\AppData\Local\Packages\\*package family name*\TempState\\. For desktop apps, the location of the temp directory is specific to each user and is typically found in a location such as C:\Users\\*username*\AppData\Local\Temp\\.  
   
 > [!NOTE]
 > 특정 위치에 기록하려면 해당 위치에 대한 쓰기 권한이 있어야 합니다. 그렇지 않으면 오류가 발생합니다. [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱은 데이터를 쓸 수 있는 위치에 대해 데스크톱 앱보다 더욱 제한적입니다. 그러므로 특정 위치에 쓰려면 추가 구성이 필요할 수 있습니다.  
@@ -196,9 +196,9 @@ ms.locfileid: "63444338"
 ## <a name="next-steps"></a>다음 단계  
  이 연습에서는 그래픽 정보를 프로그래밍 방식으로 캡처하는 방법을 보여주었습니다. 다음 단계로 아래 옵션을 고려해 보세요.  
   
-- 그래픽 진단 도구를 사용하여 캡처한 그래픽 정보를 분석하는 방법에 대해 알아봅니다. 참조 [개요](../debugger/overview-of-visual-studio-graphics-diagnostics.md)합니다.  
+- 그래픽 진단 도구를 사용하여 캡처한 그래픽 정보를 분석하는 방법에 대해 알아봅니다. See [Overview](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
   
-## <a name="see-also"></a>참고 항목  
- [연습: 그래픽 정보 캡처](../debugger/walkthrough-capturing-graphics-information.md)   
+## <a name="see-also"></a>관련 항목:  
+ [Walkthrough: Capturing Graphics Information](../debugger/walkthrough-capturing-graphics-information.md)   
  [Capturing Graphics Information](../debugger/capturing-graphics-information.md)   
  [명령줄 캡처 도구](../debugger/command-line-capture-tool.md)

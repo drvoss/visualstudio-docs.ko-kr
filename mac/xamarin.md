@@ -5,12 +5,12 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: c8b6bddac92a9ec6b40ba08ebcdc3fe3577b0bc8
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 31fb7fa4c2a87820285809d24b98fe8e59a6be01
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211479"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714472"
 ---
 # <a name="xamarin-mobile-app-development"></a>Xamarin 모바일 앱 개발
 
@@ -22,7 +22,7 @@ Mac용 Visual Studio 버전 8.3 이상에서는 Xamarin.Forms용 XAML 핫 다시
 
 **Visual Studio > 기본 설정 > 프로젝트 > Xamarin 핫 다시 로드**에서 **Xamarin 핫 다시 로드 사용** 확인란을 선택하면 XAML 핫 다시 로드를 사용하도록 설정할 수 있습니다.
 
-핫 다시 로드에 대한 자세한 내용은 설명서 내에서 [Xamarin.Forms용 XAML 핫 다시 로드 가이드](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/hot-reload)를 참조하세요.
+핫 다시 로드에 대한 자세한 내용은 설명서 내에서 [Xamarin.Forms용 XAML 핫 다시 로드 가이드](/xamarin/xamarin-forms/xaml/hot-reload)를 참조하세요.
 
 ## <a name="android"></a>Android
 
@@ -40,7 +40,7 @@ iOS 디자이너는 Mac용 Visual Studio와 완벽하게 통합되었으며 .xib
 
 ![iOS Storyboard 디자이너](media/intro-image30.png)
 
-iOS 디자이너 사용에 대한 자세한 내용은 [디자이너](https://docs.microsoft.com/xamarin/ios/user-interface/designer/?tabs=macos) 가이드를 참조하세요.
+iOS 디자이너 사용에 대한 자세한 내용은 [디자이너](/xamarin/ios/user-interface/designer/?tabs=macos) 가이드를 참조하세요.
 
 ### <a name="mac"></a>Mac
 

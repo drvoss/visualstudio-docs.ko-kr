@@ -1,5 +1,5 @@
 ---
-title: 코드 시각화 | Microsoft Docs
+title: Visualize code | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -13,17 +13,17 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 51b546e953cae80b7a1871b72a1f0b0613c77342
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 955103b6d28e90321fb45c23825f0c2a25362208
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659330"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301314"
 ---
 # <a name="visualize-code"></a>코드 시각화
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio의 시각화 및 모델링 도구를 사용하여 기존 코드를 이해하고 애플리케이션을 설명할 수 있습니다. 이렇게 하면 변경 내용이 코드에 미치는 영향을 시각적으로 알아보고 작업 및 해당 변경 내용으로 인한 위험을 평가할 수 있습니다. 예:
+Visual Studio의 시각화 및 모델링 도구를 사용하여 기존 코드를 이해하고 애플리케이션을 설명할 수 있습니다. 이렇게 하면 변경 내용이 코드에 미치는 영향을 시각적으로 알아보고 작업 및 해당 변경 내용으로 인한 위험을 평가할 수 있습니다. 예를 들어 다음과 같은 가치를 제공해야 합니다.
 
 - 코드의 관계를 이해하려면 해당 관계를 시각적으로 매핑합니다.
 
@@ -41,18 +41,18 @@ Visual Studio의 시각화 및 모델링 도구를 사용하여 기존 코드를
 
 |||
 |-|-|
-|**코드 및 해당 관계 이해:**<br /><br /> 특정 코드 조각 간의 관계를 매핑합니다.<br /><br /> 전체 솔루션에 대한 코드의 관계 개요를 참조하세요.<br /><br /> **참고**: 이 Visual Studio 릴리스에서는 *종속성 그래프*대신 *코드 맵* 이라는 용어를 사용 합니다.|[솔루션 전체에서 종속성 -    매핑](../modeling/map-dependencies-across-your-solutions.md)<br />[코드 맵을 사용 하 여 응용 프로그램 디버그](../modeling/use-code-maps-to-debug-your-applications.md) -   <br />[코드 맵 분석기를 사용 하 여 잠재적인 문제 찾기](../modeling/find-potential-problems-using-code-map-analyzers.md) -   <br />[디버깅 하는 동안 호출 스택의 맵 메서드](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md) -   |
-|**클래스 구조 이해:**<br /><br /> 코드에서 클래스 다이어그램을 만들어 프로젝트의 클래스 구조를 시각화합니다.|[방법: 프로젝트에 클래스 다이어그램 추가(클래스 디자이너)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|
-|**이 디자인에 대해 개략적인 시스템 디자인을 설명 하 고 코드의 유효성을 검사 합니다.**<br /><br /> 레이어 다이어그램을 만들어 전반적인 시스템 디자인 및 의도한 종속성에 대해 설명합니다. 이 디자인과 비교해서 코드의 유효성을 검사하여 코드의 종속성이 디자인과 일치하는지 확인합니다.|[코드에서 레이어 다이어그램 -    만들기](../modeling/create-layer-diagrams-from-your-code.md)<br />-    [Layer 다이어그램: 참조](../modeling/layer-diagrams-reference.md)<br />-    [Layer 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)<br />[레이어 다이어그램을 사용 하 여 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md) -   |
-|**사용자 요구 사항 및 아키텍처를 전달 합니다.**<br /><br /> 동작, 구성 요소, 클래스, 시퀀스 및 사용 사례의 UML 다이어그램을 그려 사용자 요구 사항과 소프트웨어 시스템의 아키텍처를 모델링합니다.|[앱에 대 한 모델을 만드는](../modeling/create-models-for-your-app.md) -   <br />-   [모델 사용자 요구 사항](../modeling/model-user-requirements.md)<br />[앱 아키텍처를 모델링](../modeling/model-your-app-s-architecture.md) -   |
+|**Understand code and its relationships:**<br /><br /> 특정 코드 조각 간의 관계를 매핑합니다.<br /><br /> 전체 솔루션에 대한 코드의 관계 개요를 참조하세요.<br /><br /> **참고**: 이 Visual Studio 릴리스에서는 *종속성 그래프* 대신에 *코드 맵*이 사용됩니다.|-   [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Use code maps to debug your applications](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [Find potential problems using code map analyzers](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />-   [Map methods on the call stack while debugging](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
+|**Understand class structures:**<br /><br /> 코드에서 클래스 다이어그램을 만들어 프로젝트의 클래스 구조를 시각화합니다.|[방법: 프로젝트에 클래스 다이어그램 추가(클래스 디자이너)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|
+|**Describe the high-level system design and validate code against this design:**<br /><br /> 레이어 다이어그램을 만들어 전반적인 시스템 디자인 및 의도한 종속성에 대해 설명합니다. 이 디자인과 비교해서 코드의 유효성을 검사하여 코드의 종속성이 디자인과 일치하는지 확인합니다.|-   [Create layer diagrams from your code](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Layer Diagrams: Reference](../modeling/layer-diagrams-reference.md)<br />-   [Layer Diagrams: Guidelines](../modeling/layer-diagrams-guidelines.md)<br />-   [Validate code with layer diagrams](../modeling/validate-code-with-layer-diagrams.md)|
+|**Communicate the user requirements and architecture:**<br /><br /> 동작, 구성 요소, 클래스, 시퀀스 및 사용 사례의 UML 다이어그램을 그려 사용자 요구 사항과 소프트웨어 시스템의 아키텍처를 모델링합니다.|-   [Create models for your app](../modeling/create-models-for-your-app.md)<br />-   [Model user requirements](../modeling/model-user-requirements.md)<br />-   [Model your app's architecture](../modeling/model-your-app-s-architecture.md)|
 
 ## <a name="external-resources"></a>외부 리소스
 
 |**범주**|**Links**|
 |------------------|---------------|
-|**포럼**|-   [Visual Studio 시각화 및 모델링 도구](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio 시각화 및 모델링 SDK(DSL 도구)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Blogs**|[Visual Studio ALM + Team Foundation Server 블로그](http://go.microsoft.com/fwlink/?LinkID=201340)|
-|**기술 문서 및 저널**|[MSDN 아키텍처 포럼](http://go.microsoft.com/fwlink/?LinkId=201343)|
+|**포럼**|-   [Visual Studio 시각화 및 모델링 도구](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio 시각화 및 모델링 SDK(DSL 도구)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Blogs**|[Visual Studio ALM + Team Foundation Server 블로그](https://go.microsoft.com/fwlink/?LinkID=201340)|
+|**기술 문서 및 저널**|[MSDN Architecture Forum](https://go.microsoft.com/fwlink/?LinkId=201343)|
 
 ## <a name="see-also"></a>관련 항목:
- [시나리오: 시각화 및 모델링을 사용 하 여 디자인 변경 ](../modeling/scenario-change-your-design-using-visualization-and-modeling.md) [분석 및 모델링 아키텍처](../modeling/analyze-and-model-your-architecture.md) [앱 모델에 대 한 모델 만들기](../modeling/create-models-for-your-app.md) [사용자 요구 사항](../modeling/model-user-requirements.md) [모델 응용 프로그램 아키텍처](../modeling/model-your-app-s-architecture.md) 사용자의 [개발에서 모델 사용 프로세스](../modeling/use-models-in-your-development-process.md)
+ [Scenario: Change your design using visualization and modeling](../modeling/scenario-change-your-design-using-visualization-and-modeling.md) [Analyzing and Modeling Architecture](../modeling/analyze-and-model-your-architecture.md) [Create models for your app](../modeling/create-models-for-your-app.md) [Model user requirements](../modeling/model-user-requirements.md) [Model your app's architecture](../modeling/model-your-app-s-architecture.md) [Use models in your development process](../modeling/use-models-in-your-development-process.md)

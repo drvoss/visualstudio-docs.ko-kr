@@ -1,7 +1,7 @@
 ---
 title: 네트워크 기반 설치 만들기
 description: 기업 내에서 Visual Studio를 배포하기 위한 네트워크 설치 지점을 만드는 방법을 알아봅니다.
-ms.date: 10/11/2019
+ms.date: 10/29/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fcc4a3d3d99deab62971c40b26c9a4252367438f
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: ca393af528abc7f685ceca83ac4c59ebb75dedfe
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516327"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189498"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Visual Studio의 네트워크 설치 만들기
 
@@ -88,8 +88,9 @@ Visual Studio 2017에 대한 부트스트래퍼를 가져오려면 [Visual Studi
 
 ## <a name="modify-the-responsejson-file"></a>response.json 파일 수정
 
-response.json을 수정하여 설치 프로그램이 실행될 때 사용되는 기본값을 설정할 수 있습니다.  예를 들어 자동으로 선택된 특정 워크로드 집합을 선택하도록 `response.json` 파일을 구성할 수 있습니다.
-자세한 내용은 [지시 파일을 사용하여 Visual Studio 설치 자동화](automated-installation-with-response-file.md)를 참조하세요.
+response.json을 수정하여 설치 프로그램이 실행될 때 사용되는 기본값을 설정할 수 있습니다.  예를 들어 자동으로 선택된 특정 워크로드 집합을 선택하도록 `response.json` 파일을 구성할 수 있습니다. 자세한 내용은 [지시 파일을 사용하여 Visual Studio 설치 자동화](automated-installation-with-response-file.md)를 참조하세요.
+
+또한 response.json 파일과 함께 사용할 때 Visual Studio 부트스트래퍼에서 오류가 발생하는 경우 수행할 작업에 대한 자세한 내용은 [Visual Studio 설치 또는 사용 시의 네트워크 관련 오류 문제 해결](troubleshooting-network-related-errors-in-visual-studio.md#error-failed-to-parse-id-from-parent-process) 페이지의 “부모 프로세스에서 ID를 구문 분석하지 못했습니다” 섹션을 참조하세요.
 
 ## <a name="copy-the-layout-to-a-network-share"></a>레이아웃을 네트워크 공유로 복사
 
@@ -219,7 +220,7 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 > [!IMPORTANT]
 > 오류를 방지하려면 전체 레이아웃 경로가 80자 미만인지 확인합니다.
->
+
 > [!TIP]
 > `--wait` 옵션을 배치 파일의 일부로 실행하면 `vs_enterprise.exe` 프로세스는 설치가 완료될 때까지 기다린 후에 종료 코드를 반환합니다.
 >
@@ -287,6 +288,7 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 - [Visual Studio 관리자 가이드](visual-studio-administrator-guide.md)
 - [Visual Studio의 네트워크 기반 설치 업데이트](update-a-network-installation-of-visual-studio.md)
+- [Visual Studio 설치 또는 사용 시의 네트워크 관련 오류 문제 해결](troubleshooting-network-related-errors-in-visual-studio.md)
 - [네트워크 기반 Visual Studio 배포에 대한 업데이트 제어](controlling-updates-to-visual-studio-deployments.md)
 - [Visual Studio 제품 수명 주기 및 서비스](/visualstudio/releases/2019/servicing/)
 - [서비스 기준선에서 Visual Studio 업데이트](update-servicing-baseline.md)

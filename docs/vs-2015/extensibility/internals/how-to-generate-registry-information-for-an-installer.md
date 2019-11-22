@@ -1,5 +1,5 @@
 ---
-title: '방법: 설치 관리자에 대 한 레지스트리 정보를 생성 합니다. | Microsoft Docs'
+title: 'How to: Generate Registry Information for an Installer | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,36 +12,36 @@ ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: be17b2f78048bd0e9c2052066796857dbeba2048
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b6d6ce169eeb36bcde58cf81707fbe9ebcc4e882
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435258"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298248"
 ---
-# <a name="how-to-generate-registry-information-for-an-installer"></a>방법: 설치 관리자에 대한 레지스트리 정보 생성
+# <a name="how-to-generate-registry-information-for-an-installer"></a>How to: Generate Registry Information for an Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-관리 되는 VSPackage에 대 한 등록 매니페스트를 생성 하는 RegPkg.exe 유틸리티를 사용할 수 있습니다. 매니페스트는 Windows Installer 설치 패키지를 통합할 수 있습니다. RegPkg도 파일을 생성할 수에 따라 설치 원본 파일에 포함 될 수 있는 합니다 [Windows Installer XML 도구 집합](http://go.microsoft.com/fwlink/?LinkId=62238)합니다.  
+The RegPkg.exe utility can be used to generate a registration manifest for a managed VSPackage. The manifest can be incorporated into a Windows Installer setup package. RegPkg also can generate a file that can be included in a setup source file based on the [Windows Installer XML Toolset](https://go.microsoft.com/fwlink/?LinkId=62238).  
   
 > [!IMPORTANT]
-> 적절 한 Windows Installer 속성을 포맷 되므로 사용 하 여 출력을 편집 해야 RegPkg를 사용할 때마다, RegPkg 개발 시스템에 관련 된 경로 이름을 생성 합니다. 예를 들어 InprocServer32 값 이어야 합니다 **[SystemFolder]mscoree.dll** 경로 사용 해야 **[#filekey]** 하 고 **[$componentkey]** 합니다. 이 방식으로 출력을 조정 Windows 또는 다른 디렉터리, 지역화 된 디렉터리 이름 및 사용자가 선택할 수 있는 경로 다른 드라이브에 설치 되어 있는 컴퓨터를 지원 합니다. 자세한 내용은 [서식 있음](http://go.microsoft.com/fwlink/?LinkId=71120) Windows Installer SDK의 합니다. 개발 시스템 경로 대 한 RegPkg 규칙에 따라 경우-예를 들어 파일 형식의 File_ Id*filename*-적은 변경 해야 합니다.  
+> RegPkg generates path names that are specific to your development system, so every time you use RegPkg, you must edit the output to use appropriate Windows Installer formatted properties. For example, the InprocServer32 value should be **[SystemFolder]mscoree.dll** and paths should use **[#filekey]** and **[$componentkey]** . Adjusting the output in this way supports computers with Windows installed on a different drive or in a different directory, localized directory names, and paths that users can choose. For more information, see [Formatted](https://go.microsoft.com/fwlink/?LinkId=71120) in the Windows Installer SDK. If you follow RegPkg conventions for your development system paths—for example, file IDs of the form File_*filename*—you need make fewer changes.  
   
-### <a name="to-create-a-registration-manifest"></a>등록 매니페스트를 만들려면  
+### <a name="to-create-a-registration-manifest"></a>To create a registration manifest  
   
-- RegPkg 사용 하 여 실행 합니다 **/regfile** 전환 합니다. 다른 스위치, 출력 파일의 이름 및 VSPackage의 경로 제공 합니다.  
+- Run RegPkg with the **/regfile** switch. Provide any other switches, the name of the output file, and the path of the VSPackage.  
   
-     예를 들어, 명령 프롬프트에서 입력 다음과 유사 하 게 합니다.  
+     For example, at the command prompt, you would type something like the following:  
   
     ```  
     [Visual Studio SDK installation path]\VisualStudioIntegration\Tools\Bin\RegPkg /regfile:MyRegFile.reg MyPackage.dll  
     ```  
   
-### <a name="to-view-a-registration-manifest"></a>등록 매니페스트를 보려면  
+### <a name="to-view-a-registration-manifest"></a>To view a registration manifest  
   
-- 임의의 텍스트 편집기에서 등록 매니페스트를 엽니다.  
+- Open the registration manifest in any text editor.  
   
-     다음 예제는 RegPkg IronPython 언어 서비스에 대해 만든 등록 매니페스트:  
+     The following example is the registration manifest that RegPkg creates for the IronPython language service:  
   
     ```  
     REGEDIT4  
@@ -98,21 +98,21 @@ ms.locfileid: "63435258"
   
     ```  
   
-### <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>Windows Installer XML 도구 집합을 만들려면 파일을 포함 합니다.  
+### <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>To create a Windows Installer XML Toolset include file  
   
-- RegPkg 사용 하 여 실행 합니다 **/wixfile** 전환 합니다. 다른 스위치, 출력 파일의 이름 및 VSPackage의 경로 제공 합니다.  
+- Run RegPkg with the **/wixfile** switch. Provide any other switches, the name of the output file, and the path of the VSPackage.  
   
-     예를 들어, 명령 프롬프트에서 입력 다음과 유사 하 게 합니다.  
+     For example, at the command prompt, you would type something like the following:  
   
     ```  
     [Visual Studio SDK installation path]\VisualStudioIntegration\Tools\Bin\RegPkg /codebase /wixfile:IronPython.LanguageService.wxi ..\bin\Release\IronPython.LanguageService.dll  
     ```  
   
-### <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>Windows Installer XML 도구 집합을 보려면 파일을 포함 합니다.  
+### <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>To view a Windows Installer XML Toolset include file  
   
-- 열기 Windows Installer XML 도구 집합 파일을 포함 텍스트 편집기에서.  
+- Open the Windows Installer XML Toolset include file in any text editor.  
   
-     다음 예제는 IronPython 언어 서비스에 대 한 RegPkg 만든 포함 파일:  
+     The following example is the include file that RegPkg creates for the IronPython language service:  
   
     ```  
     <Include>  
@@ -182,6 +182,6 @@ ms.locfileid: "63435258"
     </Include>  
     ```  
   
-## <a name="see-also"></a>참고 항목  
- [Vspackage 등록](registering-vspackages.md)   
+## <a name="see-also"></a>관련 항목:  
+ [Registering VSPackages](registering-vspackages.md)   
  [VSPackage](../../extensibility/internals/vspackages.md)

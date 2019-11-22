@@ -599,12 +599,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5bf30e3267939385a3cca3459390c4c7591909a6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 031ffa0daa899429454faf64819a6778022a5645
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68187098"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298216"
 ---
 # <a name="additional-msbuild-resources"></a>추가 MSBuild 리소스
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -612,15 +612,15 @@ ms.locfileid: "68187098"
 문제를 해결하려고 하는데 설명서에서 필요한 정보를 찾을 수 없으면 기술 자료 문서, 개발자 커뮤니티 또는 제품 지원과 같은 다른 리소스를 참조할 수 있습니다.  
   
 ## <a name="knowledge-base-articles"></a>기술 자료 문서  
- KB(기술 자료)에서 온라인으로 제품 문제에 대한 문서를 검색할 수 있습니다. 일부 문제에는 해당하는 KB 문서가 없지만 많은 고객에게 발생한 오류는 일반적으로 문서화되어 있습니다. [기술 자료(MSBuild 검색 결과)](http://search.microsoft.com/supportresults.aspx?q=knowledge+base+MSBuild&x=0&y=0) 웹 사이트에서 KB 문서에 액세스할 수 있습니다.  
+ KB(기술 자료)에서 온라인으로 제품 문제에 대한 문서를 검색할 수 있습니다. 일부 문제에는 해당하는 KB 문서가 없지만 많은 고객에게 발생한 오류는 일반적으로 문서화되어 있습니다. [기술 자료(MSBuild 검색 결과)](https://search.microsoft.com/supportresults.aspx?q=knowledge+base+MSBuild&x=0&y=0) 웹 사이트에서 KB 문서에 액세스할 수 있습니다.  
   
 ## <a name="community-forums"></a>커뮤니티 포럼  
- 포럼을 통해 다른 개발자 및 Microsoft 직원과 상호 작용할 수 있습니다. 해결 방법을 찾을 수 없는 오류가 발생한 경우에는 문제에 대한 질문을 포럼에 게시할 수 있습니다. 뉴스 그룹을 검색하여 다른 사용자가 같은 문제를 게시했는지 알아볼 수 있습니다. [MSDN 포럼](http://go.microsoft.com/fwlink/?LinkId=48931) 웹 사이트에서 Visual Studio MSBuild 포럼에 액세스할 수 있습니다.  
+ 포럼을 통해 다른 개발자 및 Microsoft 직원과 상호 작용할 수 있습니다. 해결 방법을 찾을 수 없는 오류가 발생한 경우에는 문제에 대한 질문을 포럼에 게시할 수 있습니다. 뉴스 그룹을 검색하여 다른 사용자가 같은 문제를 게시했는지 알아볼 수 있습니다. [MSDN 포럼](https://go.microsoft.com/fwlink/?LinkId=48931) 웹 사이트에서 Visual Studio MSBuild 포럼에 액세스할 수 있습니다.  
   
- [Channel 9 MSBuild](http://channel9.msdn.com/) 웹 사이트에서 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 커뮤니티 리소스에 액세스할 수 있습니다.  
+ [Channel 9 MSBuild](https://channel9.msdn.com/) 웹 사이트에서 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 커뮤니티 리소스에 액세스할 수 있습니다.  
   
 ## <a name="product-support"></a>기술 지원  
- 다른 리소스를 확인한 후에도 질문 사항이 있는 경우 [Microsoft 도움말 및 지원](http://go.microsoft.com/fwlink/?linkid=1782) 웹 사이트를 방문하여 Microsoft 지원 서비스에 문의할 수 있습니다. 해당 지역에서 사용 가능한 제품 지원에 대한 자세한 내용은 [의견 보내기](../ide/talk-to-us.md)를 참조하세요.  
+ 다른 리소스를 확인한 후에도 질문 사항이 있는 경우 [Microsoft 도움말 및 지원](https://go.microsoft.com/fwlink/?linkid=1782) 웹 사이트를 방문하여 Microsoft 지원 서비스에 문의할 수 있습니다. 해당 지역에서 사용 가능한 제품 지원에 대한 자세한 내용은 [의견 보내기](../ide/talk-to-us.md)를 참조하세요.  
   
 ## <a name="see-also"></a>참고 항목  
  [.NET Framework 타기팅 오류 문제 해결](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)

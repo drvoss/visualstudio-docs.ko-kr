@@ -1,5 +1,5 @@
 ---
-title: 앱에 대 한 모델 만들기 | Microsoft Docs
+title: Create models for your app | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -37,19 +37,19 @@ caps.latest.revision: 60
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: da86a6cf2e561fdc7e642a76b84b4e604bec12d6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a9f20629c39bc37ca20550c3b88d8ecb2aca470f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651236"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300256"
 ---
 # <a name="create-models-for-your-app"></a>앱용 모델 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 모델링 다이어그램을 통해 코드에 대한 아이디어 및 소프트웨어 시스템에서 지원해야 하는 사용자 요구 사항을 이해하고 분명히 설명하고 전달할 수 있습니다. 예를 들어 사용자 요구 사항을 설명 및 전달하려면 UML(Unified Modeling Language) 사용 사례, 동작, 클래스 및 시퀀스 다이어그램을 사용하면 됩니다. 시스템 기능을 설명 및 전달하려면 UML 구성 요소, 클래스, 동작 및 시퀀스 다이어그램을 사용하면 됩니다.
 
- [Channel 9 비디오: 모델링을 통해 아키텍처 향상](http://go.microsoft.com/fwlink/?LinkID=252078)을 참조 하세요.
+ See [Channel 9 Video: Improve architecture through modeling](https://go.microsoft.com/fwlink/?LinkID=252078).
 
  이 릴리스에서 다음 UML 다이어그램을 만들 수 있습니다.
 
@@ -61,7 +61,7 @@ ms.locfileid: "72651236"
 |[UML 시퀀스 다이어그램: 참조](../modeling/uml-sequence-diagrams-reference.md)|개체, 구성 요소, 시스템 또는 행위자 간 상호 작용의 시퀀스|
 |[UML 사용 사례 다이어그램: 참조](../modeling/uml-use-case-diagrams-reference.md)|시스템이 지원하는 사용자 목표 및 작업|
 
- 각 종류의 다이어그램을 지 원하는 Visual Studio 버전을 확인 하려면 [아키텍처 및 모델링 도구에 대 한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조 하세요.
+ To see which versions of Visual Studio support each type of diagram, see [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
  시스템 또는 기존 코드의 아키텍처를 시각화하려면 다음 다이어그램을 만듭니다.
 
@@ -73,29 +73,29 @@ ms.locfileid: "72651236"
 
 ## <a name="common-tasks"></a>일반 작업
 
-|**뒷부분**|**Task**|
+|**Topic**|**Task**|
 |---------------|--------------|
-|[UML 모델링 프로젝트 및 다이어그램 만들기](../modeling/create-uml-modeling-projects-and-diagrams.md)|**모델을 만들고** 다이어그램을 추가 합니다.|
-|[UML 모델 및 다이어그램 편집](../modeling/edit-uml-models-and-diagrams.md)|**다이어그램을 그려** 모델을 편집 합니다.|
-|[패키지 및 네임스페이스 정의](../modeling/define-packages-and-namespaces.md)|다른 팀 멤버가 작업할 수 있는 단위로 모델을 분할 하는 **패키지를 만듭니다** .|
-|[UML 클래스 다이어그램에서 코드 생성](../modeling/generate-code-from-uml-class-diagrams.md)|**클래스 C# 다이어그램에서 코드를 생성** 하 여 구현을 시작 합니다.|
-|[프로필 및 스테레오타입을 사용하여 모델 사용자 지정](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|스테레오 타입을 사용 하 여 **모델 요소를 사용자 지정** 하 여 특정 용도에 맞게 표준 UML 모델 요소를 확장 합니다.|
-|[모델 요소 및 작업 항목 연결](../modeling/link-model-elements-and-work-items.md)|작업, 테스트 사례, 버그, 요구 사항, 문제 또는 모델의 특정 부분과 연결 된 다른 종류의 작업을 추적 하는 데 도움이 되도록 **모델 요소와 작업 항목 간에 링크를 만듭니다** .|
-|[다이어그램을 이미지로 내보내기](../modeling/export-diagrams-as-images.md)|@No__t_1 사용 하지 않는 사용자를 포함 하 여 다른 사용자와 공유할 수 있도록 **모델 및 다이어그램을 저장** 합니다.|
+|[UML 모델링 프로젝트 및 다이어그램 만들기](../modeling/create-uml-modeling-projects-and-diagrams.md)|**Create models** and add diagrams.|
+|[UML 모델 및 다이어그램 편집](../modeling/edit-uml-models-and-diagrams.md)|**Draw diagrams** to edit the model.|
+|[패키지 및 네임스페이스 정의](../modeling/define-packages-and-namespaces.md)|**Create packages** to divide a model into units that different team members can work on.|
+|[UML 클래스 다이어그램에서 코드 생성](../modeling/generate-code-from-uml-class-diagrams.md)|**Generate C# code from class diagrams** to start your implementation.|
+|[프로필 및 스테레오타입을 사용하여 모델 사용자 지정](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|**Customize model elements** using stereotypes, to extend the standard UML model elements for specific purposes.|
+|[모델 요소 및 작업 항목 연결](../modeling/link-model-elements-and-work-items.md)|**Create links between model elements and work items** to help you track tasks, test cases, bugs, requirements, issues, or other kinds of work that are associated with specific parts of your model.|
+|[다이어그램을 이미지로 내보내기](../modeling/export-diagrams-as-images.md)|**Save your model and diagrams** so that you can share them with other users, including those who do not use [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].|
 
 ## <a name="related-tasks"></a>관련 작업
 
-|**뒷부분**|**Task**|
+|**Topic**|**Task**|
 |---------------|--------------|
 |[코드 시각화](../modeling/visualize-code.md)|친숙하지 않은 코드를 더 잘 이해하도록 코드 맵과 레이어 다이어그램을 만듭니다.|
 |[사용자 요구 사항 모델링](../modeling/model-user-requirements.md)|모델을 사용하여 사용자 요구 사항을 분명히 설명하고 전달합니다.|
 |[앱의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)|모델을 사용하여 시스템의 전체 구조 및 동작을 설명하고 사용자 요구 사항에 맞는지 확인합니다.|
 |[개발하는 동안 시스템 유효성 검사](../modeling/validate-your-system-during-development.md)|소프트웨어와 사용자 요구 사항 및 전체 시스템 아키텍처의 일관성이 유지되는지 확인합니다.|
-|[개발 프로세스에서 모델 사용](../modeling/use-models-in-your-development-process.md)<br /><br /> [Agile 개발에서 모델 사용](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|모델을 사용하여 개발하는 동안 시스템을 이해하고 변경하도록 도와줍니다.|
+|[개발 프로세스에서 모델 사용](../modeling/use-models-in-your-development-process.md)<br /><br /> [Use models in Agile development](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|모델을 사용하여 개발하는 동안 시스템을 이해하고 변경하도록 도와줍니다.|
 |[모델링 솔루션 구성](../modeling/structure-your-modeling-solution.md)|대규모 또는 중간 규모 프로젝트에서 모델을 구성합니다.|
 
 ## <a name="external-resources"></a>외부 리소스
 
 |**범주**|**Links**|
 |------------------|---------------|
-|**포럼**|-   [Visual Studio 시각화 및 모델링 도구](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio 시각화 및 모델링 SDK(DSL 도구)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|**포럼**|-   [Visual Studio 시각화 및 모델링 도구](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio 시각화 및 모델링 SDK(DSL 도구)](https://go.microsoft.com/fwlink/?LinkId=184721)|

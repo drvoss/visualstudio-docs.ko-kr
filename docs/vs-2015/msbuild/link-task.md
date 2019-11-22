@@ -31,12 +31,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: efcdbb4f72d47a5044b287f1b40424f5611d6401
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 181c32017a84328037ea46d49698821fa3cb41ea
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703426"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295874"
 ---
 # <a name="link-task"></a>링크 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,13 +68,13 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    매니페스트 파일의 `dependency` 섹션에 배치될 특성을 지정합니다.  
   
-   자세한 내용은 [/MANIFESTDEPENDENCY(매니페스트 종속성 지정)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73)를 참조하세요. [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 웹 사이트의 "게시자 구성 파일"도 참조하세요.  
+   자세한 내용은 [/MANIFESTDEPENDENCY(매니페스트 종속성 지정)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73)를 참조하세요. [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 웹 사이트의 "게시자 구성 파일"도 참조하세요.  
   
 - **AdditionalOptions**  
   
    선택적 **문자열** 매개 변수입니다.  
   
-   명령줄에 지정된 링커 옵션 목록입니다. 예를 들어 **"**_/option1 /option2 /option#_"과 같습니다. 이 매개 변수를 사용하여 다른 **링크** 작업 매개 변수로 표현되지 않는 링커 옵션을 지정합니다.  
+   명령줄에 지정된 링커 옵션 목록입니다. 예를 들어 **"** _/option1 /option2 /option#_ "과 같습니다. 이 매개 변수를 사용하여 다른 **링크** 작업 매개 변수로 표현되지 않는 링커 옵션을 지정합니다.  
   
    자세한 내용은 [링커 옵션](https://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129)을 참조하세요.  
   
@@ -140,13 +140,13 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    각 링커 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
-  - **기본값** - *\<없음>*  
+  - **기본값** -  *\<없음>*  
   
-  - **ForceIJWImage** - **/CLRIMAGETYPE:IJW**  
+  - **ForceIJWImage** -  **/CLRIMAGETYPE:IJW**  
   
-  - **ForcePureILImage** - **/CLRIMAGETYPE:PURE**  
+  - **ForcePureILImage** -  **/CLRIMAGETYPE:PURE**  
   
-  - **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**  
+  - **ForceSafeILImage** -  **/CLRIMAGETYPE:SAFE**  
   
     자세한 내용은 [/CLRIMAGETYPE(CLR 이미지 형식 지정)](https://msdn.microsoft.com/library/04c60ee6-9dd7-4391-bc03-6926ad0fa116)을 참조하세요.  
   
@@ -158,11 +158,11 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    각 링커 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
-  - **Enabled** - **/CLRSupportLastError**  
+  - **Enabled** -  **/CLRSupportLastError**  
   
-  - **Disabled** - **/CLRSupportLastError:NO**  
+  - **Disabled** -  **/CLRSupportLastError:NO**  
   
-  - **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**  
+  - **SystemDlls** -  **/CLRSupportLastError:SYSTEMDLL**  
   
     자세한 내용은 [/CLRSUPPORTLASTERROR(PInvoke 호출의 마지막 오류 코드 유지)](https://msdn.microsoft.com/library/b7057990-4154-4b1d-9fc9-6236f7be7575)를 참조하세요.  
   
@@ -174,11 +174,11 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    각 링커 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
-  - **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE:NONE**  
+  - **DefaultThreadingAttribute** -  **/CLRTHREADATTRIBUTE:NONE**  
   
-  - **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**  
+  - **MTAThreadingAttribute** -  **/CLRTHREADATTRIBUTE:MTA**  
   
-  - **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**  
+  - **STAThreadingAttribute** -  **/CLRTHREADATTRIBUTE:STA**  
   
     자세한 내용은 [/CLRTHREADATTRIBUTE(CLR 스레드 특성 설정)](https://msdn.microsoft.com/library/4907e9ef-5031-446c-aecf-0a0b32fae1e8)를 참조하세요.  
   
@@ -198,13 +198,13 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    링커 옵션에 해당하는 다음 값 중 하나를 지정 하세요.  
   
-  - **Enabled** - **/FUNCTIONPADMIN**  
+  - **Enabled** -  **/FUNCTIONPADMIN**  
   
-  - **X86Image** - **/FUNCTIONPADMIN:5**  
+  - **X86Image** -  **/FUNCTIONPADMIN:5**  
   
-  - **X64Image** - **/FUNCTIONPADMIN:6**  
+  - **X64Image** -  **/FUNCTIONPADMIN:6**  
   
-  - **ItaniumImage** - **/FUNCTIONPADMIN:16**  
+  - **ItaniumImage** -  **/FUNCTIONPADMIN:16**  
   
     자세한 내용은 [/FUNCTIONPADMIN(핫 패치 가능 이미지 만들기)](https://msdn.microsoft.com/library/25b02c13-1add-4fbd-add9-fcb30eb2cae7)을 참조하세요.  
   
@@ -240,13 +240,13 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    각 링커 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
-  - **NotSet** - *\<none>*  
+  - **NotSet** -  *\<none>*  
   
-  - **Driver** - **/Driver**  
+  - **Driver** -  **/Driver**  
   
-  - **UpOnly** - **/DRIVER:UPONLY**  
+  - **UpOnly** -  **/DRIVER:UPONLY**  
   
-  - **WDM** - **/DRIVER:WDM**  
+  - **WDM** -  **/DRIVER:WDM**  
   
     자세한 내용은 [/DRIVER(Windows NT 커널 모드 드라이버)](https://msdn.microsoft.com/library/aeee8e28-5d97-40f5-ba16-9f370fe8a1b8)를 참조하세요.  
   
@@ -298,11 +298,11 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
-  - **Enabled** - **/FORCE**  
+  - **Enabled** -  **/FORCE**  
   
-  - **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**  
+  - **MultiplyDefinedSymbolOnly** -  **/FORCE:MULTIPLE**  
   
-  - **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**  
+  - **UndefinedSymbolOnly** -  **/FORCE:UNRESOLVED**  
   
     자세한 내용은 [/FORCE(파일 출력 강제)](https://msdn.microsoft.com/library/b1e9a218-a5eb-4e60-a4a4-65b4be15e5da)를 참조하세요.  
   
@@ -448,13 +448,13 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
-  - **NoErrorReport** - **/ERRORREPORT:NONE**  
+  - **NoErrorReport** -  **/ERRORREPORT:NONE**  
   
-  - **PromptImmediately** - **/ERRORREPORT:PROMPT**  
+  - **PromptImmediately** -  **/ERRORREPORT:PROMPT**  
   
-  - **QueueForNextLogin** - **/ERRORREPORT:QUEUE**  
+  - **QueueForNextLogin** -  **/ERRORREPORT:QUEUE**  
   
-  - **SendErrorReport** - **/ERRORREPORT:SEND**  
+  - **SendErrorReport** -  **/ERRORREPORT:SEND**  
   
     자세한 내용은 [/ERRORREPORT(내부 링커 오류 보고)](https://msdn.microsoft.com/library/f5fab595-a2f1-4eb0-ab5c-1c0fbd3d8c28)를 참조하세요.  
   
@@ -490,13 +490,13 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
-  - **기본값** - *\<없음>*  
+  - **기본값** -  *\<없음>*  
   
-  - **UseLinkTimeCodeGeneration** - **/LTCG**  
+  - **UseLinkTimeCodeGeneration** -  **/LTCG**  
   
-  - **PGInstrument** - **/LTCG:PGInstrument**  
+  - **PGInstrument** -  **/LTCG:PGInstrument**  
   
-  - **PGOptimization** - **/LTCG:PGOptimize**  
+  - **PGOptimization** -  **/LTCG:PGOptimize**  
   
   - **PGUpdate**  
   
@@ -684,19 +684,19 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
-  - **NotSet** - *\<none>*  
+  - **NotSet** -  *\<none>*  
   
-  - **LinkVerbose** - **/VERBOSE**  
+  - **LinkVerbose** -  **/VERBOSE**  
   
-  - **LinkVerboseLib** - **/VERBOSE:Lib**  
+  - **LinkVerboseLib** -  **/VERBOSE:Lib**  
   
-  - **LinkVerboseICF** - **/VERBOSE:ICF**  
+  - **LinkVerboseICF** -  **/VERBOSE:ICF**  
   
-  - **LinkVerboseREF** - **/VERBOSE:REF**  
+  - **LinkVerboseREF** -  **/VERBOSE:REF**  
   
-  - **LinkVerboseSAFESEH** - **/VERBOSE:SAFESEH**  
+  - **LinkVerboseSAFESEH** -  **/VERBOSE:SAFESEH**  
   
-  - **LinkVerboseCLR** - **/VERBOSE:CLR**  
+  - **LinkVerboseCLR** -  **/VERBOSE:CLR**  
   
     자세한 내용은 [/VERBOSE(진행 메시지 표시)](https://msdn.microsoft.com/library/9c347d98-4c37-4724-a39e-0983934693ab)를 참조하세요.  
   
@@ -746,25 +746,25 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
-  - **NotSet** - *\<none>*  
+  - **NotSet** -  *\<none>*  
   
-  - **콘솔** - **/SUBSYSTEM:CONSOLE**  
+  - **콘솔** -  **/SUBSYSTEM:CONSOLE**  
   
-  - **Windows** - **/SUBSYSTEM:WINDOWS**  
+  - **Windows** -  **/SUBSYSTEM:WINDOWS**  
   
-  - **네이티브** - **/SUBSYSTEM:NATIVE**  
+  - **네이티브** -  **/SUBSYSTEM:NATIVE**  
   
-  - **EFI 애플리케이션** - **/SUBSYSTEM:EFI_APPLICATION**  
+  - **EFI 애플리케이션** -  **/SUBSYSTEM:EFI_APPLICATION**  
   
-  - **EFI 부트 서비스 드라이버** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**  
+  - **EFI 부트 서비스 드라이버** -  **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**  
   
-  - **EFI ROM** - **/SUBSYSTEM:EFI_ROM**  
+  - **EFI ROM** -  **/SUBSYSTEM:EFI_ROM**  
   
-  - **EFI 런타임** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
+  - **EFI 런타임** -  **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
   
-  - **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**  
+  - **WindowsCE** -  **/SUBSYSTEM:WINDOWSCE**  
   
-  - **POSIX** - **/SUBSYSTEM:POSIX**  
+  - **POSIX** -  **/SUBSYSTEM:POSIX**  
   
     자세한 내용은 [/SUBSYSTEM(하위 시스템 지정)](https://msdn.microsoft.com/library/d7b133cf-cf22-4da8-ab46-6552702c0b9b)을 참조하세요.  
   
@@ -816,29 +816,29 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    각 명령줄 옵션에 해당하는 다음 값 중 하나를 지정하세요.  
   
-  - **NotSet** - *\<none>*  
+  - **NotSet** -  *\<none>*  
   
-  - **MachineARM** - **/MACHINE:ARM**  
+  - **MachineARM** -  **/MACHINE:ARM**  
   
-  - **MachineEBC** - **/MACHINE:EBC**  
+  - **MachineEBC** -  **/MACHINE:EBC**  
   
-  - **MachineIA64** - **/MACHINE:IA64**  
+  - **MachineIA64** -  **/MACHINE:IA64**  
   
-  - **MachineMIPS** - **/MACHINE:MIPS**  
+  - **MachineMIPS** -  **/MACHINE:MIPS**  
   
-  - **MachineMIPS16** - **/MACHINE:MIPS16**  
+  - **MachineMIPS16** -  **/MACHINE:MIPS16**  
   
-  - **MachineMIPSFPU** - **/MACHINE:MIPSFPU**  
+  - **MachineMIPSFPU** -  **/MACHINE:MIPSFPU**  
   
-  - **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**  
+  - **MachineMIPSFPU16** -  **/MACHINE:MIPSFPU16**  
   
-  - **MachineSH4** - **/MACHINE:SH4**  
+  - **MachineSH4** -  **/MACHINE:SH4**  
   
-  - **MachineTHUMB** - **/MACHINE:THUMB**  
+  - **MachineTHUMB** -  **/MACHINE:THUMB**  
   
-  - **MachineX64** - **/MACHINE:X64**  
+  - **MachineX64** -  **/MACHINE:X64**  
   
-  - **MachineX86** - **/MACHINE:X86**  
+  - **MachineX86** -  **/MACHINE:X86**  
   
     자세한 내용은 [/MACHINE(대상 플랫폼 지정)](https://msdn.microsoft.com/library/8d41bf4b-7e53-4ab9-9085-d852b08d31c2)을 참조하세요.  
   

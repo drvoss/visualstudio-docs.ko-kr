@@ -1,5 +1,5 @@
 ---
-title: DSL 정의에 확장 추가 | Microsoft Docs
+title: Adding Extensions to DSL Definitions | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,33 +9,33 @@ caps.latest.revision: 8
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 447001a8aefa22fe15bce9158eddeb0cdb26e4e8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aeeac82b27b4b5bb71ed05ba658bf9ee048bd85d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654714"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74292154"
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>DSL 정의에 확장 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-DSL 정의 확장을 사용 하면 DSL (도메인별 언어)에 대 한 확장 패키지를 만들 수 있습니다. VSIX (Visual Studio Integration Extension)에 포함 된 DSL 확장은 DSL과 동일한 방식으로 사용자의 컴퓨터에 설치할 수 있습니다. 추가 기능은 런타임에 동적으로 사용 하도록 설정 하 고 비활성화할 수 있습니다. Dsl은 확장을 위해 명시적으로 설계 하지 않아도 되며 확장 된 DSL을 변경 하지 않고 나중에 또는 제 3 자가 확장을 디자인할 수 있습니다.
+DSL Definition extension allows you to create a package of extensions to a domain-specific language (DSL). The DSL extension, which is contained in a Visual Studio Integration Extension (VSIX), can be installed on a user's computer in the same manner as a DSL. The additional features can be dynamically enabled and disabled at run time. DSLs do not have to be explicitly designed for extension, and extensions can be designed later or by third parties without altering the extended DSL.
 
- 추가 기능에는 다음이 포함 될 수 있습니다.
+ The additional features can include the following:
 
-- 모델 및 프레젠테이션 요소의 속성
+- Properties for model and presentation elements
 
-- 데코레이터 셰이프 및 연결선
+- Decorators for shapes and connectors
 
-- 클래스, 관계, 모양 및 연결선
+- Classes, relationships, shapes and connectors
 
-- 유효성 검사 제약 조건
+- Validation constraints
 
-- 도구 상자 항목 및 탭
+- Toolbox items and tabs
 
-  확장 된 DSL의 사용자는 추가 기능의 인스턴스를 포함 하는 모델을 만들고 저장할 수 있으며, 이러한 모델은 적절 한 확장을 설치한 다른 사용자가 읽을 수 있습니다. 확장을 설치 하지 않은 사용자는 추가 기능을 사용할 수 없지만 추가 기능을 잃지 않고도 모델을 업데이트 하 고 저장할 수 있습니다.
+  A user of an extended DSL can create and save a model that contains instances of the additional features, and these can be read by other users who have installed the appropriate extension. Users who have not installed the extension cannot use the additional features, but they can update and save a model without losing the additional features.
 
-  예제 코드 및이 기능에 대 한 자세한 내용은 [Visual Studio 시각화 및 모델링 SDK](http://go.microsoft.com/fwlink/?LinkID=186128) 웹 사이트를 참조 하세요.
+  For sample code and more information about this feature, see the [Visual Studio Visualization and Modeling SDK](https://go.microsoft.com/fwlink/?LinkID=186128) Web site.
 
 ## <a name="see-also"></a>관련 항목:
- [Visual Studio 시각화 및 모델링 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+ [Visual Studio Visualization and Modeling SDK](https://go.microsoft.com/fwlink/?LinkID=186128)

@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bfb5f28763e4f95a2713e67543fca35398536fa9
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: ecc14e4dc98caa17ac3849e9231ab17491f2acc8
+ms.sourcegitcommit: 2f64b3b231900018fceafb72b5a1c65140213a18
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180311"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73428774"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>자습서: Visual Studio에서 Node.js 및 Express 앱 만들기
 
@@ -42,7 +42,7 @@ Node.js 및 Express를 사용하여 Visual Studio를 개발하기 위한 이 자
 > * 앱 실행
 > * 디버거에서 중단점에 도달
 
-## <a name="before-you-begin"></a>시작하기 전에
+## <a name="before-you-begin"></a>시작하기 전 주의 사항
 
 다음은 몇 가지 주요 개념을 소개하는 빠른 FAQ입니다.
 
@@ -182,6 +182,8 @@ IntelliSense는 코드를 작성할 때 지원하는 Visual Studio 도구입니�
 1. `data` 문자열 뒤에 커서를 놓고 `: get`을 입력하면 IntelliSense가 앞서 코드에서 정의된 `getData` 함수를 표시합니다. `getData`를 선택합니다.
 
     ![IntelliSense 사용](../javascript/media/tutorial-nodejs-intellisense.png)
+
+1. 괄호를 추가하여 `getData()` 함수를 호출합니다.
 
 1. `"data"` 앞의 쉼표(`,`)를 제거하면 해당 식에 녹색의 구문 강조 표시가 나타납니다. 구문 강조 표시 위에 마우스를 가져갑니다.
 

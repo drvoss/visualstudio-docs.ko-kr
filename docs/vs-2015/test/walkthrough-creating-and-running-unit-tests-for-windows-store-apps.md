@@ -1,5 +1,5 @@
 ---
-title: '연습: Windows 스토어 앱에 대 한 단위 테스트 만들기 및 실행 | Microsoft Docs'
+title: '연습: Windows 스토어 앱용 단위 테스트 만들기 및 실행 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -13,20 +13,20 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5999edf14692e5ad51f56cb7989ea07eb0f11f5c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 60e7ddd7c535d99abcb64d4adde97157b117f3ed
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657119"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301382"
 ---
-# <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>연습: Windows 스토어 앱용 유닛 테스트 만들기 및 실행
+# <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>연습: Windows 스토어 앱용 단위 테스트 만들기 및 실행
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio에는 관리되는 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 응용 프로그램에 대한 단위 테스트 지원이 포함되어 있으며, Visual C#, Visual Basic 및 Visual C++에 대한 단위 테스트 라이브러리 템플릿이 포함되어 있습니다.
 
 > [!TIP]
-> [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱 개발에 대한 자세한 내용은 [Windows 스토어 앱 시작하기](http://go.microsoft.com/fwlink/?LinkID=241410)를 참조하세요.
+> [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱 개발에 대한 자세한 내용은 [Windows 스토어 앱 시작하기](https://go.microsoft.com/fwlink/?LinkID=241410)를 참조하세요.
 
  Visual Studio는 다음과 같은 유닛 테스트 기능을 제공합니다.
 
@@ -40,7 +40,7 @@ Visual Studio에는 관리되는 [!INCLUDE[win8_appname_long](../includes/win8-a
 
   다음 절차에서는 관리되는 Windows 8 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 응용 프로그램에 대한 단위 테스트를 작성, 실행 및 디버깅하는 단계를 설명합니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>Prerequisites
  Visual Studio
 
 ## <a name="CreateAndRunUnitTestWin8Tailored_Create"></a> 단위 테스트 프로젝트 만들기
@@ -64,11 +64,11 @@ Visual Studio에는 관리되는 [!INCLUDE[win8_appname_long](../includes/win8-a
 
 6. **솔루션용 디렉터리 만들기** 옵션을 선택한 상태에서 **확인** 단추를 선택합니다.
 
-     ![맞춤형 단위 테스트 라이브러리](../test/media/unit-test-win8-1.png "Unit_Test_Win8_1")
+     ![Tailored Unit Test Library](../test/media/unit-test-win8-1.png "Unit_Test_Win8_1")
 
-     솔루션 탐색기는 새로운 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]단위 테스트 프로젝트로 채워지며 코드 편집기에는 UnitTest1이라는 제목의 기본 단위 테스트가 표시됩니다.
+     솔루션 탐색기는 새로운 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 단위 테스트 프로젝트로 채워지며 코드 편집기에는 UnitTest1이라는 제목의 기본 단위 테스트가 표시됩니다.
 
-     ![새 맞춤형 단위 테스트 프로젝트](../test/media/unit-test-win8-unittestexplorer-newprojectcreated.png "Unit_Test_Win8_UnitTestExplorer_NewProjectCreated")
+     ![New tailored unit test project](../test/media/unit-test-win8-unittestexplorer-newprojectcreated.png "Unit_Test_Win8_UnitTestExplorer_NewProjectCreated")
 
 ## <a name="CreateAndRunUnitTestWin8Tailored_Manifest"></a> 단위 테스트 프로젝트에 대한 매니페스트 편집
  단위 테스트 프로젝트가 필요한 기능을 제공하여 응용 프로그램을 실행하려면 매니페스트를 편집해야 할 수 있습니다.
@@ -88,7 +88,7 @@ Visual Studio에는 관리되는 [!INCLUDE[win8_appname_long](../includes/win8-a
 
      매니페스트 디자이너에 대한 자세한 내용은 [매니페스트 디자이너를 사용하여 Windows 8.1 앱 패키지 구성](https://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d)을 참조하세요.
 
-     ![단위 테스트 매니페스트](../test/media/unit-test-win8.png "Unit_Test_Win8_")
+     ![Unit Test Manifest](../test/media/unit-test-win8.png "Unit_Test_Win8_")
 
 ## <a name="CreateAndRunUnitTestWin8Tailored_Code"></a> 단위 테스트 코딩
 
@@ -96,7 +96,7 @@ Visual Studio에는 관리되는 [!INCLUDE[win8_appname_long](../includes/win8-a
 
 1. 코드 편집기에서, 단위 테스트를 편집하고 테스트에 필요한 어설션과 논리를 추가합니다.
 
-     자세한 내용은 MSDN 라이브러리에서 [어설션 클래스 사용](http://go.microsoft.com/fwlink/?LinkID=224991) 을 참조하세요.
+     자세한 내용은 MSDN 라이브러리에서 [어설션 클래스 사용](https://go.microsoft.com/fwlink/?LinkID=224991) 을 참조하세요.
 
 ## <a name="CreateAndRunUnitTestWin8Tailored_Run"></a> 단위 테스트 실행
 
@@ -123,29 +123,29 @@ Visual Studio에는 관리되는 [!INCLUDE[win8_appname_long](../includes/win8-a
 
 4. **모두 실행**을 선택합니다.
 
-     ![단위 테스트 탐색기 &#45; 실행 단위 테스트](../test/media/unit-test-win8-unittestexplorer-contextmenurun.png "Unit_Test_Win8_UnitTestExplorer_ContextMenuRun")
+     ![Unit Test Explorer &#45; run unit test](../test/media/unit-test-win8-unittestexplorer-contextmenurun.png "Unit_Test_Win8_UnitTestExplorer_ContextMenuRun")
 
     > [!TIP]
     > 탐색기에 나열된 하나 이상의 단위 테스트를 선택하고 마우스 오른쪽 단추를 클릭한 다음 **선택한 테스트 실행**을 선택합니다.
     >
     >  또한 **선택한 테스트 디버그**, **테스트 열기**를 선택하고 **속성** 옵션을 사용할 수 있습니다.
     >
-    >  ![단위 테스트 탐색기 &#45; 단일 테스트 상황에 맞는 메뉴](../test/media/unit-test-win8-unittestexplorer-contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")
+    >  ![Unit Test Explorer &#45; uni test context menu](../test/media/unit-test-win8-unittestexplorer-contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")
 
      단위 테스트가 실행됩니다. 완료되면, 테스트 탐색기는 테스트 상태와 경과된 시간을 표시하고 소스에 대한 링크를 제공합니다.
 
-     ![단위 테스트 탐색기 &#45; 테스트 완료](../test/media/unit-test-win8-unittestexplorer-done.png "Unit_Test_Win8_UnitTestExplorer_Done")
+     ![Unit Test Explorer &#45; test completed](../test/media/unit-test-win8-unittestexplorer-done.png "Unit_Test_Win8_UnitTestExplorer_Done")
 
 ## <a name="external-resources"></a>외부 리소스
 
 ### <a name="videos"></a>비디오
- [Channel 9: XAML을 사용 하 여 빌드한 Windows 스토어 앱 단위 테스트 ](http://go.microsoft.com/fwlink/?LinkId=226285)
+ [채널 9: XAML을 사용하여 빌드한 Windows 스토어 앱 유닛 테스트](https://go.microsoft.com/fwlink/?LinkId=226285)
 
 ### <a name="forums"></a>포럼
- [Visual Studio 유닛 테스트](http://go.microsoft.com/fwlink/?LinkId=224477)
+ [Visual Studio 단위 테스트](https://go.microsoft.com/fwlink/?LinkId=224477)
 
 ### <a name="msdn-library"></a>MSDN 라이브러리
- [MSDN 라이브러리 – 기존 코드에 대한 단위 테스트 만들기 및 실행(Visual Studio 2010)](http://go.microsoft.com/fwlink/?LinkID=223683)
+ [MSDN 라이브러리 – 기존 코드에 대한 단위 테스트 만들기 및 실행(Visual Studio 2010)](https://go.microsoft.com/fwlink/?LinkID=223683)
 
 ## <a name="see-also"></a>관련 항목:
- [Visual Studio를 사용 하 여 스토어 앱 테스트](../test/testing-store-apps-with-visual-studio.md) [Team Foundation build를 사용 하 여 Windows 스토어 앱 빌드 및 테스트](https://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)
+ [Testing Store apps with Visual Studio](../test/testing-store-apps-with-visual-studio.md) [Build and test a Windows Store app using Team Foundation Build](https://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)

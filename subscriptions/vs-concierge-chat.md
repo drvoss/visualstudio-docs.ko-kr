@@ -3,15 +3,15 @@ title: Visual Studio Subscription의 Concierge Chat 혜택 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/29/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 description: Visual Studio 구독에 포함된 Concierge Chat 혜택을 알아봅니다.
-ms.openlocfilehash: 543fee937437141aa38d53707cb6e5bf84031e94
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 83fdb9a21528e00db1ef8652846c6b852c5c6067
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681180"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099587"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Concierge Chat
 Concierge Chat 서비스는 Visual Studio 구독 혜택 사용에 도움이 될 뿐 아니라 제품 정보 및 기술 문서를 찾는 데도 도움이 됩니다.
@@ -26,7 +26,7 @@ Concierge Chat 서비스를 통해 도움을 받는 것은 정말 간단합니�
     > [!div class="mx-imgBorder"]
     > ![Concierge Chat 타일](_img/vs-concierge-chat/vs-concierge-chat-tile.png)
 
-3. **계속**을 클릭합니다.
+3. **Continue(계속)** 를 클릭합니다.
 
 4. 채팅 창이 열리고 큐에서 현재 위치를 보여주는 카운터가 표시됩니다.
 
@@ -35,10 +35,12 @@ Concierge Chat 서비스를 통해 도움을 받는 것은 정말 간단합니�
     > ![Concierge Chat 세션](_img/vs-concierge-chat/vs-concierge-chat-session.png)
 
 ## <a name="eligibility"></a>자격
-| 구독 수준                                                 |     채널                                            | 혜택                                                          | 갱신 가능?    |
+| 구독 수준                                                 |     채널                                            | 이점                                                          | 갱신 가능?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise(Standard)   | VL, Azure, 일반 정품, 선택한 NFR<sup>1</sup> | 사용 가능       |  예          |
+| GitHub Enterprise가 포함된 Visual Studio Enterprise | VL| 사용 가능       |  예          |
 | Visual Studio Professional(표준) | VL, Azure, 일반 정품                                       | 사용 가능                                                            |  예          |
+| GitHub Enterprise가 포함된 Visual Studio Professional | VL | 사용 가능                                                            |  예          |
 | Visual Studio Test Professional(표준)                         | VL, 일반 정품                                              | 사용 가능                                             |  예          |
 | MSDN 플랫폼(표준)                                          | VL, 일반 정품                                              | 사용 가능                                              |  예          |
 | Visual Studio Enterprise, Visual Studio Professional(월간 클라우드) | Azure | 사용할 수 없음 | N/A |
@@ -63,3 +65,5 @@ Microsoft 도구 및 서비스에 대한 자세한 내용은 다음 설명서를
 - [Azure](/azure/)
 - [Azure DevOps](/azure/devops/)
 - [Visual Studio IDE](/visualstudio/)
+
+구독과 함께 제공되는 Azure DevTest 개별 크레딧 혜택을 아직 활성화하지 않은 경우 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)를 방문하여 도구 범주의 Azure 타일을 클릭하고, Azure 구독을 설정하고, Azure DevTest 개별 크레딧을 사용합니다.

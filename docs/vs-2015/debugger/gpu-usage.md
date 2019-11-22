@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b7dee579f726a1edfc81e1f3e1ec62bf7d8beba4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b2e827b180ae218f3dd42b124500e01260e72d82
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437949"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297388"
 ---
 # <a name="gpu-usage"></a>GPU 사용량
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Visual Studio 성능 및 진단 허브의 GPU 사용량 도구를 사용하여 D
   
  다음은 **GPU 사용량 보고서** 창입니다.  
   
- ![CPU 및 GPU 타임라인을 사용한 GPU 사용량 보고서](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
+ ![The GPU Usage report, with CPU and GPU timelines](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
   
 ## <a name="requirements"></a>요구 사항  
  그래픽 진단 요구 사항 외에 GPU 사용량 도구를 사용하기 위한 요구 사항은 다음과 같습니다.  
@@ -40,11 +40,11 @@ Visual Studio 성능 및 진단 허브의 GPU 사용량 도구를 사용하여 D
   
 #### <a name="to-start-the-gpu-usage-tool"></a>GPU 사용량 도구를 시작하려면  
   
-1. 주 메뉴에서 **디버그**를 선택한 다음, **성능 및 진단**을 선택합니다(키보드: Alt+F2 키 누름).  
+1. 주 메뉴에서 **디버그**를 선택한 다음 **성능 및 진단**을 선택합니다(키보드: Alt+F2 누름).  
   
 2. 성능 및 진단 허브에서 **GPU 사용량** 옆에 있는 상자를 선택합니다. 선택적으로, 사용하려는 다른 도구 옆에 있는 확인란을 선택합니다. 다수의 성능 및 진단 도구를 동시에 실행하여 앱 성능을 보다 자세히 확인할 수 있습니다.  
   
-    ![사용하려는 진단 도구를 선택합니다.](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
+    ![Choose the diagnostic tools you want to use.](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
   
    > [!NOTE]
    > 일부 성능 및 진단 도구는 동시에 사용할 수 없습니다.  
@@ -63,15 +63,15 @@ Visual Studio 성능 및 진단 허브의 GPU 사용량 도구를 사용하여 D
   
 1. 진단 세션 창 아랫부분에서 **컬렉션 중지** 링크를 선택하거나 왼쪽 위 모서리에 있는 **중지**를 누릅니다.  
   
-    ![GPU 및 CPU 타이밍 정보를 수집합니다.](../debugger/media/gfx-diag-gpu-usage-collect.png "gfx_diag_gpu_usage_collect")  
+    ![Collect GPU and CPU timing information.](../debugger/media/gfx-diag-gpu-usage-collect.png "gfx_diag_gpu_usage_collect")  
   
 2. 보고서의 윗부분에서 조사하려는 문제가 표시된 그래프의 섹션을 선택합니다. 최대 3초 길이까지 선택할 수 있습니다. 이보다 긴 섹션은 끝에서 앞쪽으로 잘립니다.  
   
-    ![이후 컬렉션, 세부 사항을 볼 범위 선택](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
+    ![Post&#45;collection, select a range to view details](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
   
 3. 보고서 아래 부분에 있는 **해당 범위의 GPU 사용량을 자세히 보려면 여기를 클릭...** 메시지에서 **자세히 보기** 링크를 선택하여 선택 항목의 자세한 타임라인을 봅니다.  
   
-    ![범위가 선택된 이후 컬렉션](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
+    ![Post&#45;collection, with range selected](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
   
    이렇게 하면 보고서가 포함된 새 탭 문서가 열립니다. GPU 사용량 보고서를 사용하면 CPU에서 그래픽 이벤트가 시작된 시간, 이벤트가 GPU에 도착한 시간, 이를 GPU가 실행하는 데 걸린 시간 등을 확인할 수 있습니다. 이러한 정보는 병목 현상 및 코드 병렬 처리를 개선해야 할 부분 등을 식별하는 데 도움이 됩니다.  
   
@@ -82,7 +82,7 @@ Visual Studio 성능 및 진단 허브의 GPU 사용량 도구를 사용하여 D
   
  다음은 **GPU 사용량 보고서** 창입니다.  
   
- ![CPU 및 GPU 타임라인을 사용한 GPU 사용량 보고서](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
+ ![The GPU Usage report, with CPU and GPU timelines](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
   
  보고서의 하단에서 이벤트 중 하나를 선택하면 관련 타임라인에서 해당 이벤트에 표식이 배치됩니다. 일반적으로 CPU 스레드에서 API 호출을 나타내는 이벤트가 하나 표시되고, GPU 타임라인 중 하나에 GPU가 작업을 완료한 때를 나타내는 다른 이벤트가 표시됩니다. 마찬가지로, 타임라인에서 이벤트 중 하나를 선택하면 보고서 하단에서 해당 이벤트가 강조 표시됩니다. 보고서 상단에 있는 타임라인을 축소하면 가장 많은 시간이 소요되는 이벤트만 표시됩니다. 기간이 더 짧은 이벤트를 보려면 Ctrl 키를 누른 채로 포인팅 디바이스의 휠을 움직이거나 상단 패널의 왼쪽 아래 모서리에 있는 크기 조정 컨트롤을 사용하여 타임라인을 확대합니다. 타임라인 패널의 콘텐츠를 끌어 기록된 이벤트를 이동할 수도 있습니다.  
   
@@ -94,13 +94,13 @@ Visual Studio 성능 및 진단 허브의 GPU 사용량 도구를 사용하여 D
 |--------------------|-----------------|  
 |**Process**|관심 있는 프로세스의 이름입니다. 진단 세션 도중에 GPU를 사용한 모든 프로세스가 이 드롭다운에 포함됩니다. 이 드롭다운에 있는 프로세스와 연결된 색은 아래 타임라인에 나오는 스레드 작업의 색입니다.|  
 |**스레드**|관심 있는 스레드 ID입니다. 다중 스레드 앱에서는 이 컨트롤을 사용하여 관심 있는 프로세스에 속한 특정 스레드를 격리시킬 수 있습니다. 선택한 스레드와 관련 있는 이벤트는 각 타임라인에서 강조 표시됩니다.|  
-|**표시**|새로 고침 빈도가 표시되는 디스플레이의 수입니다. **참고:**  일부 드라이버는 여러 개의 실제 디스플레이를 하나의 대형 가상 디스플레이로 표현되도록 구성할 수 있습니다. 컴퓨터에 여러 디스플레이가 연결되었더라도 목록에 디스플레이가 하나만 표시될 수 있습니다.|  
+|**표시**|새로 고침 빈도가 표시되는 디스플레이의 수입니다. **참고:** 일부 드라이버는 여러 개의 실제 디스플레이를 하나의 대형 가상 디스플레이로 표현되도록 구성할 수 있습니다. 컴퓨터에 여러 디스플레이가 연결되었더라도 목록에 디스플레이가 하나만 표시될 수 있습니다.|  
 |**필터**|관심 있는 키워드입니다. 보고서 하단에 나오는 이벤트에는 키워드 전체 또는 일부와 일치하는 이벤트만 포함됩니다. 여러 키워드를 세미콜론(;)으로 구분하여 지정할 수 있습니다.|  
 |**계층 정렬**|사용자 표식을 통해 정의된 이벤트 계층 구조를 유지하는지 아니면 무시하는지 나타내는 확인란입니다.|  
   
  GPU 사용량 보고서 하단에 있는 이벤트 목록은 각 이벤트의 세부 정보를 표시합니다.  
   
-|열|설명|  
+|Column|설명|  
 |------------|-----------------|  
 |**이벤트 이름**|그래픽 이벤트의 이름입니다. 이벤트는 일반적으로 CPU 스레드 타임라인에 있는 하나의 이벤트와 GPU 타임라인에 있는 하나의 이벤트에 해당합니다.<br /><br /> 이벤트 이름은 GPU 사용량에서 이벤트의 이름을 확인할 수 없는 경우 이벤트 이름은 'unattributed'가 될 수 있습니다. 자세한 내용은 이 표 아래의 참고 내용을 참조하세요.|  
 |**CPU 시작(ns)**|Direct3D API 호출을 통해 이벤트가 CPU에서 시작된 시간입니다. 이 시간은 앱이 시작된 시간을 기준으로 나노초 단위로 측정됩니다.|  
@@ -117,13 +117,13 @@ Visual Studio 성능 및 진단 허브의 GPU 사용량 도구를 사용하여 D
   
 #### <a name="to-postpone-profiling-from-the-start-of-the-app"></a>앱 시작 이후 프로파일링을 연기하려면  
   
-1. 주 메뉴에서 **디버그**를 선택한 다음, **성능 및 진단**을 선택합니다(키보드: Alt+F2 키 누름).  
+1. 주 메뉴에서 **디버그**를 선택한 다음 **성능 및 진단**을 선택합니다(키보드: Alt+F2 누름).  
   
 2. 성능 및 진단 허브에서 **GPU 사용량** 옆에 있는 **설정** 링크를 선택합니다.  
   
 3. **일반** 속성 페이지의 **GPU 프로파일링 구성** 아래에서 **앱 시작 시 프로파일링 시작** 확인란의 선택을 취소하여 프로파일링을 연기합니다.  
   
-     ![GPU 사용량 수집이 시작되면 구성](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
+     ![Configure when GPU Usage collection starts](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
 > [!IMPORTANT]
 > 현재 Direct3D 12 앱에 대해서는 프로파일링 연기가 지원되지 않습니다.  
@@ -141,12 +141,12 @@ Visual Studio 성능 및 진단 허브의 GPU 사용량 도구를 사용하여 D
   
  NVIDIA® SLI™ 및 AMD Crossfire™ 등의 다중 GPU 구성은 현재 지원되지 않습니다. NVIDIA® Optimus™ 및 AMD Enduro™ 등의 하이브리드 그래픽 설정이 지원됩니다.  
   
-## <a name="see-also"></a>참고자료  
+## <a name="see-also"></a>참조  
   
-- [DirectX 도구를 사용하여 어려운 게임 그래픽 문제 해결(비디오)](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
+- [DirectX 도구를 사용하여 어려운 게임 그래픽 문제 해결(비디오)](https://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
   
-- [Visual Studio의 GPU 사용량 도구(비디오)](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
+- [Visual Studio의 GPU 사용량 도구(비디오)](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
   
-- [Visual Studio 2013 업데이트 4 CTP1의 GPU 사용량 도구(블로그)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
+- [Visual Studio 2013 업데이트 4 CTP1의 GPU 사용량 도구(블로그)](https://devblogs.microsoft.com/cppblog/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1/)  
   
-- [Visual Studio의 DirectX에 대한 GPU 사용량(블로그)](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)
+- [Visual Studio의 DirectX에 대한 GPU 사용량(블로그)](https://blogs.msdn.microsoft.com/ianhu/2014/12/16/gpu-usage-for-directx-in-visual-studio/)

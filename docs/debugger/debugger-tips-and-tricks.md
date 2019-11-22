@@ -27,11 +27,11 @@ ms.locfileid: "73188625"
 
 ## <a name="pin-data-tips"></a>데이터 고정 팁
 
-디버깅 하는 동안 데이터 팁을 자주 가리키면 변수에 대 한 데이터 팁을 고정 하 여 자신에 게 신속 하 게 액세스할 수 있습니다. 변수는를 다시 시작한 후에도 고정 된 상태로 유지 됩니다. 데이터 팁을 고정 하려면 해당 아이콘 위로 마우스를 가져가면 고정 아이콘을 클릭 합니다. 여러 변수를 고정할 수 있습니다.
+만약 데이터 팁을 자주 가리키게 된다면, 변수에 대한 데이터 팁을 고정하여 신속하게 엑세스할 수 있습니다. 다시 시작한 후에도 변수는 고정된 상태를 유지합니다. 데이터 팁을 고정하려면 해당 아이콘 위로 마우스를 가져가 고정 아이콘을 클릭하면 됩니다. 여러 변수를 고정할 수도 있습니다.
 
 ![데이터 팁 고정](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
 
-## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>코드를 편집 하 고 디버깅을C#계속 합니다 ( C++, VB,).
+## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>코드를 편집하고 디버깅을 계속합니다(C#, VB, C++)
 
 Visual Studio에서 지원되는 대부분의 언어에서 디버깅 세션 중에 코드를 편집하고 디버깅을 계속할 수 있습니다. 이 기능을 사용하려면 디버거에서 일시 중지된 동안 커서를 사용하여 코드를 클릭하고 편집을 수행한 후 **F5**, **F10** 또는 **F11**을 눌러 디버깅을 계속합니다.
 
@@ -45,11 +45,11 @@ Visual Studio에서 지원되는 대부분의 언어에서 디버깅 세션 중�
 
 ## <a name="debug-issues-that-are-hard-to-reproduce"></a>재현 하기 어려운 문제 디버그
 
-앱에서 특정 상태를 다시 만드는 데 어렵거나 시간이 오래 걸리는 경우 조건부 중단점을 사용할 수 있는지 여부를 고려 합니다. [조건부 중단점](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) 및 필터 중단점을 사용 하 여 앱이 필요한 상태 (예: 변수가 잘못 된 데이터를 저장 하는 상태)를 입력할 때까지 앱 코드가 중단 되지 않도록 할 수 있습니다. 식, 필터, 적중 횟수 등을 사용 하 여 조건을 설정할 수 있습니다.
+앱에서 특정 상태를 다시 만들기 어렵거나 시간이 오래 걸리는 경우 조건부 중단점 사용이 도움이 될 수 있는지 여부를 고려하세요. [조건부 중단점](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) 및 필터 중단점을 사용하여 앱이 필요한 상태(예: 변수가 잘못된 데이터를 저장하는 상태)에 진입할 때까지 앱 코드에 들어가지 않도록 할 수 있습니다. 식, 필터, 적중 횟수 등을 사용하여 조건을 설정할 수 있습니다.
 
 #### <a name="to-create-a-conditional-breakpoint"></a>조건부 중단점을 만들려면
 
-1. 중단점 아이콘 (빨간색 구슬)을 마우스 오른쪽 단추로 클릭 하 고 **조건**을 선택 합니다.
+1. 중단점 아이콘(빨간색 구슬)을 마우스 오른쪽 단추로 클릭하고 **조건**을 선택합니다.
 
 2. **중단점 설정** 창에서 식을 입력 합니다.
 
@@ -59,11 +59,11 @@ Visual Studio에서 지원되는 대부분의 언어에서 디버깅 세션 중�
 
 ## <a name="configure-the-data-to-show-in-the-debugger"></a>디버거에 표시할 데이터 구성
 
-, C#Visual Basic 및 C++ (C++/cli 코드만 해당)의 경우 [DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md) 특성을 사용 하 여 표시할 정보를 디버거에 지시할 수 있습니다. 코드 C++ 의 경우 [Natvis 시각화](create-custom-views-of-native-objects.md)를 사용 하 여 동일한 작업을 수행할 수 있습니다.
+C#, Visual Basic 및 C++(C++/CLI 코드만 해당)의 경우 [DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md) 특성을 사용하여 표시할 정보를 디버거에 지시할 수 있습니다. C++ 코드의 경우 [Natvis 시각화](create-custom-views-of-native-objects.md)를 사용하여 동일한 작업을 수행할 수 있습니다.
 
 ## <a name="change-the-execution-flow"></a>실행 흐름 변경
 
-디버거가 코드 줄에서 일시 중지 된 상태에서 마우스를 사용 하 여 왼쪽의 노란색 화살표 포인터를 가져옵니다. 노란색 화살표 포인터를 코드 실행 경로의 다른 지점으로 이동 합니다. 그런 다음 F5 또는 step 명령을 사용 하 여 앱을 계속 실행 합니다.
+디버거가 코드 줄에서 일시 중지된 상태에서 마우스를 사용하여 왼쪽의 노란색 화살표 포인터를 가져옵니다. 노란색 화살표 포인터를 코드 실행 경로의 다른 지점으로 이동합니다. 그런 다음 F5 또는 step 명령을 사용하여 앱을 계속 실행합니다.
 
 ![실행 포인터 이동](../debugger/media/dbg-tour-move-the-execution-pointer.gif "실행 포인터 이동")
 
@@ -80,25 +80,25 @@ Visual Studio에서 지원되는 대부분의 언어에서 디버깅 세션 중�
 
 1. 추적 하려는 변수 근처에 중단점을 설정 합니다.
 
-2. 디버거 (**F5**)를 시작 하 고 중단점에서 중지 합니다.
+2. 디버거(**F5**)를 시작하고 중단점에서 중지합니다.
 
-3. **지역** 창에서 변수를 찾아 (**디버그 > Windows > 지역**) 변수를 마우스 오른쪽 단추로 클릭 하 고 **개체 ID 만들기**를 선택 합니다.
+3. **지역** 창(**디버그 > Windows > 지역**)에서 변수를 찾아 변수를 마우스 오른쪽 단추로 클릭하고 **개체 ID 만들기**를 선택합니다.
 
     ![개체 ID 만들기](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
 
 4. **$** 창에 **지역** 창을 닫습니다. 이 변수는 개체 ID입니다.
 
-5. 개체 ID 변수를 마우스 오른쪽 단추로 클릭 하 고 **조사식 추가**를 선택 합니다.
+5. 개체 ID 변수를 마우스 오른쪽 단추로 클릭하고 **조사식 추가**를 선택합니다.
 
-자세한 내용은 [개체 ID 만들기](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds)를 참조 하세요.
+자세한 내용은 [개체 ID 만들기](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds)를 참조하세요.
 
 ## <a name="view-return-values-for-functions"></a>함수의 반환 값 보기
 
-함수의 반환 값을 보려면 코드를 단계별로 실행 하는 동안 **자동** 창에 표시 되는 함수를 확인 합니다. 함수의 반환 값을 보려면 관심 있는 함수가 이미 실행 되었는지 확인 합니다. 현재 함수 호출에서 중지 된 경우 **F10** 키를 누릅니다. 창이 닫히면 **디버그 > Windows > 자동** 을 사용 하 여 **자동** 창을 엽니다.
+함수의 반환 값을 보려면 코드를 단계별로 실행하는 동안 **자동** 창에 표시되는 함수를 확인합니다. 함수의 반환 값을 보려면 관심 있는 함수가 이미 실행 되었는지 확인 합니다. 현재 함수 호출에서 중지 된 경우 **F10** 키를 누릅니다. 창이 닫히면 **디버그 > Windows > 자동**을 사용하여 **자동** 창을 엽니다.
 
 ![자동 창](../debugger/media/dbg-tips-autos-window.png "AutosWindow")
 
-또한 **직접 실행** 창에 함수를 입력 하 여 반환 값을 볼 수 있습니다. ( **디버그 > Windows >** 를 사용 하 여 엽니다.
+또한 **직접 실행** 창에 함수를 입력하여 반환 값을 볼 수 있습니다. (**디버그 > Windows >** 를 사용하여 엽니다.)
 
 ![직접 실행 창](../debugger/media/dbg-tips-immediate-window.png "ImmediateWindow")
 
@@ -110,7 +110,7 @@ Visual Studio에서 지원되는 대부분의 언어에서 디버깅 세션 중�
 
 ![문자열 시각화 도우미 열기](../debugger/media/dbg-tips-string-visualizers.png "OpenStringVisualizer")
 
-문자열 시각화 도우미는 문자열 형식에 따라 문자열 형식이 잘못 되었는지 여부를 확인 하는 데 도움이 될 수 있습니다. 예를 들어 빈 **값** 필드는 시각화 도우미 형식에서 문자열이 인식 되지 않음을 나타냅니다. 자세한 내용은 [문자열 시각화 도우미 대화 상자](../debugger/string-visualizer-dialog-box.md)를 참조 하세요.
+문자열 시각화 도우미는 문자열 형식에 따라 문자열 형식이 잘못되었는지 여부를 확인하는 데 도움이 될 수 있습니다. 예를 들어 빈 **값** 필드는 시각화 도우미 형식에서 문자열이 인식되지 않음을 나타냅니다. 자세한 내용은 [문자열 시각화 도우미 대화 상자](../debugger/string-visualizer-dialog-box.md)를 참조하세요.
 
 ![JSON 문자열 시각화 도우미](../debugger/media/dbg-tips-string-visualizer-json.png "JSONStringVisualizer")
 
@@ -118,15 +118,15 @@ Visual Studio에서 지원되는 대부분의 언어에서 디버깅 세션 중�
 
 ## <a name="break-into-code-on-handled-exceptions"></a>처리 되지 않은 예외에 대 한 코드 중단
 
-디버거가 처리 되지 않은 예외에서 코드를 중단 합니다. 그러나 처리 된 예외 (예: `try/catch` 블록 내에서 발생 하는 예외)는 버그의 소스가 될 수도 있으며 발생 시기를 조사할 수도 있습니다. **예외 설정** 대화 상자에서 옵션을 구성 하 여 처리 된 예외에 대 한 코드를 중단 하도록 디버거를 구성할 수 있습니다. **디버그 > Windows > 예외 설정**을 선택 하 여이 대화 상자를 엽니다.
+디버거는 처리되지 않은 예외에서 코드를 중단합니다. 그러나 처리된 예외(예: `try/catch` 블록 내에서 발생하는 예외)는 버그의 소스가 될 수도 있으며 발생 시기를 조사할 수도 있습니다. **예외 설정** 대화 상자에서 옵션을 구성하여 처리된 예외에 대한 코드를 중단하도록 디버거를 구성할 수 있습니다. **디버그 > Windows > 예외 설정**을 선택하여 이 대화 상자를 엽니다.
 
-**예외 설정** 대화 상자에서 특정 예외에 대 한 코드를 중단 하도록 디버거에 지시할 수 있습니다. 아래 그림에서는 `System.NullReferenceException` 발생할 때마다 디버거가 코드를 중단 합니다. 자세한 내용은 [예외 관리](../debugger/managing-exceptions-with-the-debugger.md)를 참조 하세요.
+**예외 설정** 대화 상자에서 특정 예외에 대한 코드를 중단하도록 디버거에 지시할 수 있습니다. 아래 그림에서는 `System.NullReferenceException`이 발생할 때마다 디버거가 코드를 중단합니다. 자세한 내용은 [예외 관리](../debugger/managing-exceptions-with-the-debugger.md)를 참조하세요.
 
 ![예외 설정 대화 상자](../debugger/media/dbg-tips-exception-settings.png "ExceptionSettingsDialogBox")
 
 ## <a name="debug-deadlocks-and-race-conditions"></a>디버깅 교착 상태 및 경합 상태
 
-다중 스레드 앱에 공통적인 문제 종류를 디버깅 해야 하는 경우 디버깅 하는 동안 스레드의 위치를 확인 하는 것이 도움이 되는 경우가 많습니다. **소스에 스레드 표시** 단추를 사용 하 여이 작업을 쉽게 수행할 수 있습니다.
+다중 스레드 앱에 공통적인 문제 종류를 디버깅해야 하는 경우 디버깅하는 동안 스레드의 위치를 확인하는 것이 도움이 되는 경우가 많습니다. **소스에 스레드 표시** 단추를 사용하여 이 작업을 쉽게 수행할 수 있습니다.
 
 #### <a name="to-show-threads-in-your-source-code"></a>소스 코드에 스레드를 표시 하려면
 
@@ -141,9 +141,9 @@ Visual Studio에서 지원되는 대부분의 언어에서 디버깅 세션 중�
     [병렬 스택 창](../debugger/get-started-debugging-multithreaded-apps.md)에서 스레드 위치를 볼 수도 있습니다.
 
 ::: moniker range="vs-2017"
-## <a name="examine-payloads-for-web-services-and-network-resources-uwp"></a>웹 서비스 및 네트워크 리소스에 대 한 페이로드 검사 (UWP)
+## <a name="examine-payloads-for-web-services-and-network-resources-uwp"></a>웹 서비스 및 네트워크 리소스에 대한 페이로드 검사(UWP)
 
-UWP 앱에서 `Windows.Web.Http` API를 사용 하 여 수행 되는 네트워크 작업을 분석할 수 있습니다. 이 도구를 사용 하면 웹 서비스 및 네트워크 리소스를 쉽게 디버그할 수 있습니다. 이 도구를 사용 하려면 **디버그 > 성능 프로파일러**를 선택 합니다. **네트워크**를 선택한 다음 **시작**을 선택 합니다. 앱에서 `Windows.Web.Http`를 사용하는 시나리오를 확인한 다음 **컬렉션 중지**를 선택하여 보고서를 생성합니다.
+UWP 앱에서 `Windows.Web.Http` API를 사용하여 수행되는 네트워크 작업을 분석할 수 있습니다. 이 도구를 사용하면 웹 서비스 및 네트워크 리소스를 쉽게 디버그할 수 있습니다. 이 도구를 사용하려면 **디버그 > 성능 프로파일러**를 선택합니다. **네트워크**를 선택한 다음 **시작**을 선택합니다. 앱에서 `Windows.Web.Http`를 사용하는 시나리오를 확인한 다음 **컬렉션 중지**를 선택하여 보고서를 생성합니다.
 
 ![네트워크 사용량 프로 파일링 도구](../profiling/media/prof-tour-network-usage.png "NetworkUsageProfTool")
 

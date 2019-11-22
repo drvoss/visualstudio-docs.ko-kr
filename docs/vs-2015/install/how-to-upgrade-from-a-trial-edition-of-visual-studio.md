@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: a92d0ead091167437904c384b8f9afca2a3ab89c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ecef4536ec11d2319007602b195c96a9df7d3719
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696199"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298059"
 ---
 # <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>방법: Visual Studio Trial Edition에서 업그레이드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,12 +23,12 @@ ms.locfileid: "65696199"
 
  Visual Studio Professional 및 Enterprise Edition의 릴리스 버전은 제품 설치 후 30일 동안 평가할 수 있습니다. [Visual Studio에 로그인](../ide/signing-in-to-visual-studio.md)하면 평가 기간이 60일 추가되어 총 90일이 됩니다. Visual Studio의 평가판을 30일 내에 등록하지 않으면 설치 30일 후에 평가 기간이 만료됩니다.
 
- 예를 들어 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]을 다운로드하여 10일 동안 사용한 후 등록하면 추가로 80일 동안 사용할 수 있습니다. 90일 후 제품을 계속 사용하려면 유효한 제품 키를 제공하거나 MSDN 구독이나 Visual Studio Online 구독과 연결된 Microsoft 계정 또는 조직 계정을 사용하여 Visual Studio에 로그인해야 합니다. 제품 키를 찾거나 얻는 방법에 대한 자세한 내용은 [방법: Visual Studio 제품 키 찾기](../install/how-to-locate-the-visual-studio-product-key.md) 및 [Visual Studio 구입 방법](http://www.visualstudio.com/products/how-to-buy-vs)을 참조하세요.
+ 예를 들어 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]을 다운로드하여 10일 동안 사용한 후 등록하면 추가로 80일 동안 사용할 수 있습니다. 90일 후 제품을 계속 사용하려면 유효한 제품 키를 제공하거나 MSDN 구독이나 Visual Studio Online 구독과 연결된 Microsoft 계정 또는 조직 계정을 사용하여 Visual Studio에 로그인해야 합니다. 제품 키를 찾거나 얻는 방법에 대한 자세한 내용은 [방법: Visual Studio 제품 키 찾기](../install/how-to-locate-the-visual-studio-product-key.md) 및 [Visual Studio 구입 방법](https://visualstudio.microsoft.com/vs/pricing/)을 참조하세요.
 
 > [!IMPORTANT]
 > Visual Studio Express Edition의 릴리스 버전에 대한 평가 기간 역시 30일입니다. Visual Studio Express Edition의 평가 기간을 영구히 확장하려면 Visual Studio에 로그인하거나 제품을 등록합니다.
 
- 업그레이드하기 전에 Microsoft 웹 사이트에서 [Visual Studio 및 MSDN 라이선스 백서](http://www.microsoft.com/download/details.aspx?id=13350)를 다운로드하여 검토하는 것이 좋습니다. 추가로 도움이 필요한 경우 [Visual Studio 지원](http://support.microsoft.com/ph/1117/en-us)을 참조하세요.
+ 업그레이드하기 전에 Microsoft 웹 사이트에서 [Visual Studio 및 MSDN 라이선스 백서](https://www.microsoft.com/download/details.aspx?id=13350)를 다운로드하여 검토하는 것이 좋습니다. 추가로 도움이 필요한 경우 [Visual Studio 지원](https://support.microsoft.com/ph/1117/en-us)을 참조하세요.
 
 ### <a name="to-upgrade-from-a-trial-edition-of-visual-studio-professional-or-enterprise"></a>Visual Studio Professional 또는 Enterprise의 평가판에서 업그레이드하려면
 

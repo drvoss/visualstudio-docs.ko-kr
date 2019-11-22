@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 디버깅 샘플 | Microsoft Docs
+title: Visual Studio Debugging Samples | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,18 +12,18 @@ ms.assetid: fbcc42a7-7851-487f-b981-8c4ae7ec7347
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 19144365a428fdde8915f481ce8d12841bddc003
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f1dab6be397028917976c9827e48a6748ba78bd
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68185263"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296002"
 ---
 # <a name="visual-studio-debugging-samples"></a>Visual Studio 디버깅 샘플
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-두 샘플에 사용 하 여 Visual Studio 디버거를 확장 하는 방법을 보여 줍니다 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]합니다.  
+Two samples show how to extend the Visual Studio debugger using [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
   
-- 관리 되는 언어에 대 한 디버거 식 계산기 샘플에 포함 된 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]합니다. 에 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] 창에서 클릭 합니다 **샘플** 탭을 클릭 **모든** 또는 **C#** 언어 및 클릭 한 다음 목록에서 **디버거**.  
+- The Debugger Expression Evaluator Sample, for managed languages, is included in the [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]. In the [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] window, click the **Samples** tab, click **All** or **C#** in the list of languages, and then click **Debugger**.  
   
-- Visual Studio 디버그 엔진 샘플에서는 기본 언어에 대 한이 제품은 MSDN 코드 갤러리의입니다. 자세한 내용은 Microsoft 웹 사이트의 다음 페이지를 참조하세요. [Visual Studio 디버그 엔진 샘플](http://go.microsoft.com/fwlink/?LinkId=150236)합니다.
+- The Visual Studio Debug Engine Sample, for native languages, is available on MSDN Code Gallery. For more information, see this page on the Microsoft Web site: [Visual Studio Debug Engine Sample](https://go.microsoft.com/fwlink/?LinkId=150236).

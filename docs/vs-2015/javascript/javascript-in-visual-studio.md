@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 700417e0cf6bb93c96c0826a7d49d4d0deb7395f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 175cb6f6a8a3f240c244e139406841b0546209cc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65705785"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295899"
 ---
 # <a name="javascript-in-visual-studio"></a>Visual Studio의 JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ JavaScript는 Visual Studio의 고급 언어입니다. Visual Studio IDE에서 J
 
  특정 버전의 Visual Studio나 특정 Visual Studio 확장은 HTML 및 JavaScript를 사용하여 특정 애플리케이션 유형 및 서비스를 개발하는 데 필요할 수 있습니다. 다음 목록에 자세한 내용을 볼 수 있는 링크가 있습니다.
 
-- Apache Cordova를 사용하여 플랫폼 간 앱을 만들려면 [Apache Cordova용 Visual Studio Tools를 다운로드](http://go.microsoft.com/fwlink/p/?LinkId=397606)합니다.
+- Apache Cordova를 사용하여 플랫폼 간 앱을 만들려면 [Apache Cordova용 Visual Studio Tools를 다운로드](https://go.microsoft.com/fwlink/p/?LinkId=397606)합니다.
 
-- [Windows 스토어](http://dev.windows.com/develop), [Windows Phone](http://dev.windows.com/develop) 및 범용 앱(두 플랫폼 모두 지원)을 만들려면 [도구를 다운로드](https://developer.microsoft.com/windows/downloads)합니다.
+- [Windows 스토어](https://developer.microsoft.com/), [Windows Phone](https://developer.microsoft.com/) 및 범용 앱(두 플랫폼 모두 지원)을 만들려면 [도구를 다운로드](https://developer.microsoft.com/windows/downloads)합니다.
 
 - 클라우드 기반 서비스를 만들려면 [Microsoft Azure 사이트](https://azure.microsoft.com/documentation/)를 참조하세요.
 
-- 웹 사이트 및 웹앱을 만들려면 [ASP.NET 사이트를 참조](http://www.asp.net/get-started/websites)하세요.
+- 웹 사이트 및 웹앱을 만들려면 [ASP.NET 사이트를 참조](https://dotnet.microsoft.com/apps/aspnet/web-apps)하세요.
 
   > [!NOTE]
   > 빈 ASP.Net 웹 사이트를 만들고 HTML, CSS 및 JavaScript 프로그래밍에 사용할 수 있습니다. ASP.NET에서 제공하는 Webconfig 파일을 통해 Visual Studio에서 디버깅을 사용할 수 있습니다(또는 앱을 실행하는 경우 F12 도구를 사용할 수 있음).
@@ -45,7 +45,7 @@ JavaScript는 Visual Studio의 고급 언어입니다. Visual Studio IDE에서 J
 |-------------|-----------------|
 |클래스|새로운 구문에서는 [클래스](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/class)의 선언을 지원합니다.|
 |Promise|[Promises](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)를 사용하면 더 쉽고 명확한 비동기 코드를 작성할 수 있습니다. Promise 생성자가 `all` 및 `race` 유틸리티 메서드와 함께 지원됩니다.|
-|반복기|이제 반복 가능한 개체(배열, 배열과 유사한 개체, 반복기 등)를 반복하여 고유한 각 속성의 값에 대해 실행될 문이 포함된 사용자 지정 반복 후크를 호출할 수 있습니다. 자세한 내용은 [반복기 및 생성기](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators)를 참조하세요. **참고:**  생성기는 아직 지원되지 않습니다.|
+|Iterators|이제 반복 가능한 개체(배열, 배열과 유사한 개체, 반복기 등)를 반복하여 고유한 각 속성의 값에 대해 실행될 문이 포함된 사용자 지정 반복 후크를 호출할 수 있습니다. 자세한 내용은 [반복기 및 생성기](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators)를 참조하세요. **참고:**  생성기는 아직 지원되지 않습니다.|
 |화살표 함수|화살표 함수(=>)는 어휘 `this` 바인딩이 포함된 `function` 키워드의 약식 구문입니다.|
 |기본 제공 개체에 대한 새로운 메서드|[Array 개체](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array), [Math 개체](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math), [Number 개체](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number), [Object 개체](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object) 및 [String 개체](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) 기본 제공 개체에는 데이터 조작 및 검사에 사용할 수 있는 많은 새로운 유틸리티 함수와 속성이 포함되어 있습니다.|
 |개체 리터럴 향상|개체는 이제 계산된 속성, 간결한 메서드 정의 및 같은 이름의 변수로 값이 초기화되는 속성에 대한 약식 구문을 지원합니다. 자세한 내용은 [개체 만들기](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)를 참조하세요.|

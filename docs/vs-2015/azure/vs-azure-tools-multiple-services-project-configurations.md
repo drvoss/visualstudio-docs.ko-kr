@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 3dfea05e38930cc4613335fa5b5bccbe228b71fe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 70217cc4c83a1f281e8a2fdebec404fa9757bf01
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62422739"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299015"
 ---
-# <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>여러 서비스 구성을 사용하여 Visual Studio에서 Azure 프로젝트 구성
+# <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>여러 서비스 구성을 사용하도록 Visual Studio에서 Azure 프로젝트 구성
 
 Visual Studio의 Azure 클라우드 서비스 프로젝트에는 `ServiceDefinition.csdef`, `ServiceConfiguration.Local.cscfg` 및 `ServiceConfiguration.Cloud.cscfg`와 같은 세 개의 구성 파일이 포함되어 있습니다.
 
@@ -57,7 +57,7 @@ HTTPS 엔드포인트를 이미 추가한 경우, HTTPS 엔드포인트 옵션�
 
 ## <a name="settings-page"></a>설정 페이지
 
-**설정** 페이지에서 설정을 구성에 이름-값 쌍으로 추가할 수 있습니다. 역할에서 실행되는 코드는 [Azure 관리 라이브러리](http://go.microsoft.com/fwlink?LinkID=171026)에서 제공하는 클래스를 사용하여 런타임에서 구성 설정 값을 읽을 수 있습니다(특히 [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx) 메서드).
+**설정** 페이지에서 설정을 구성에 이름-값 쌍으로 추가할 수 있습니다. 역할에서 실행되는 코드는 [Azure 관리 라이브러리](https://go.microsoft.com/fwlink?LinkID=171026)에서 제공하는 클래스를 사용하여 런타임에서 구성 설정 값을 읽을 수 있습니다(특히 [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx) 메서드).
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>스토리지 계정에 대한 연결 문자열 구성
 
@@ -75,7 +75,7 @@ HTTPS 엔드포인트를 이미 추가한 경우, HTTPS 엔드포인트 옵션�
 1. **연결 방법**에서 구독에서 스토리지 계정을 선택하는 **구독** 옵션을 선택합니다. 그런 다음 Visual Studio에서 자동으로 `.publishsettings` 파일에서 스토리지 계정 자격 증명을 획득합니다.
 1. **수동으로 입력한 자격 증명**을 선택하면 Azure Portal의 정보를 사용하여 계정 이름 및 키를 직접 지정할 수 있습니다. 계정 키를 복사하려면:
     1. Azure Portal에서 스토리지 계정으로 이동하고 **키 관리**를 선택합니다.
-    1. 계정 키를 복사하려면 Azure Portal에서 저장소 계정으로 이동하고 **설정 > 액세스 키**를 선택한 다음, 복사 단추를 사용하여 기본 액세스 키를 클립보드에 복사합니다.
+    1. 계정 키를 복사하려면 Azure Portal에서 스토리지 계정으로 이동하고 **설정 &gt; 액세스 키**를 선택한 다음, 복사 단추를 사용하여 기본 액세스 키를 클립보드에 복사합니다.
 1. 연결 옵션 중 하나를 선택합니다. **사용자 지정 엔드포인트 지정**에서 blob, 테이블 및 큐에 대한 특정 URL을 지정하라는 메시지가 표시됩니다. 사용자 지정 엔드포인트를 사용하면 [사용자 지정 도메인](/azure/storage/blobs/storage-custom-domain-name)을 사용하고 액세스를 더 정확하게 제어할 수 있습니다. [Azure Storage 연결 문자열 구성](/azure/storage/common/storage-configure-connection-string)을 참조하세요.
 1. **확인**을 선택한 다음, **파일 > 저장**을 선택하여 새 연결 문자열로 구성을 업데이트합니다.
 
@@ -97,7 +97,7 @@ HTTPS 엔드포인트를 이미 추가한 경우, HTTPS 엔드포인트 옵션�
 
 ## <a name="certificates-page"></a>인증서 페이지
 
-**인증서** 속성 페이지는 서비스 구성 인증서에 대한 정보를 추가합니다. 인증서는 서비스와 함께 패키징되지 않습니다. [Azure Portal](http://portal.azure.com)을 통해 Azure에 별도로 인증서를 업로드해야 합니다.
+**인증서** 속성 페이지는 서비스 구성 인증서에 대한 정보를 추가합니다. 인증서는 서비스와 함께 패키징되지 않습니다. [Azure Portal](https://portal.azure.com)을 통해 Azure에 별도로 인증서를 업로드해야 합니다.
 
 여기서는 인증서를 추가하여 서비스 구성에 대한 인증서의 정보를 추가합니다. 인증서는 서비스와 함께 패키징되지 않습니다. Azure Portal을 통해 별도로 인증서를 업로드해야 합니다.
 

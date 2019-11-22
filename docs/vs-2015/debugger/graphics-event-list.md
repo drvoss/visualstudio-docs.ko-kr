@@ -1,5 +1,5 @@
 ---
-title: 그래픽 이벤트 목록 | Microsoft Docs
+title: Graphics Event List | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 137f3f91922a16b0e3f2a7e459a72c4381162f2e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 5b1d8bdeb4497af57c385e73ff0dcd34041a2097
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704630"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297329"
 ---
 # <a name="graphics-event-list"></a>그래픽 이벤트 목록
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Visual Studio Graphics Analyzer의 그래픽 이벤트 목록을 사용하여 �
   
  이벤트 목록은 다음과 같습니다.  
   
- ![목록 이름에 "Index"가 있는 이벤트입니다. ](../debugger/media/gfx-diag-demo-event-list-orientation.png "gfx_diag_demo_event_list_orientation")  
+ ![A list of events that have "Index" in their name.](../debugger/media/gfx-diag-demo-event-list-orientation.png "gfx_diag_demo_event_list_orientation")  
   
 ## <a name="using-the-event-list"></a>이벤트 목록 사용  
  이벤트 목록에서 이벤트를 선택하면 다른 그래픽 분석 도구에 표시되는 정보에 반영됩니다. 이러한 다른 도구와 함께 이벤트 목록을 사용하면 렌더링 문제를 자세히 검사하여 원인을 확인할 수 있습니다. 다른 그래픽 분석 도구와 이벤트 목록을 함께 사용하여 렌더링 문제를 해결할 수 있는 방법에 대해 자세히 알아보려면 [예제](../debugger/graphics-diagnostics-examples.md)를 참조하세요.  
@@ -35,7 +35,7 @@ Visual Studio Graphics Analyzer의 그래픽 이벤트 목록을 사용하여 �
 ### <a name="color-coded-events-in-direct3d-12"></a>Direct3D 12의 색으로 구분된 이벤트  
  Direct3D 12는 다른 하드웨어 기능에 해당하는 여러 큐를 표시합니다. Direct3D 12의 특정 그래픽 이벤트와 연결된 큐를 쉽게 식별하도록 Direct3D 12 앱의 캡처 작업을 수행할 때 이벤트 목록의 이벤트는 큐에 따라 색으로 구분됩니다.  
   
-|Direct3D 12 큐|색|  
+|Direct3D 12 큐|Color|  
 |-----------------------|-----------|  
 |렌더링 큐|녹색|  
 |컴퓨팅 큐|노랑|  
@@ -71,9 +71,9 @@ Visual Studio Graphics Analyzer의 그래픽 이벤트 목록을 사용하여 �
 |아이콘|이벤트 설명|  
 |----------|-----------------------|  
 |(아이콘 없음)|일반 이벤트<br /> 사용자 정의 이벤트, 사용자 정의 이벤트 그룹 또는 그리기 이벤트가 아닌 모든 이벤트입니다.|  
-|![그리기 이벤트 아이콘](../debugger/media/vsg-eventlist-icon-draw.png "vsg_eventlist_icon_draw")|그리기 이벤트<br /> 캡처된 프레임 중 발생한 그리기 이벤트를 표시합니다.|  
-|![사용자&#45;정의 이벤트 마커 아이콘](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|사용자 정의 이벤트 그룹<br /> 앱에서 정의한 것처럼 그룹 관련 이벤트입니다.|  
-|![사용자&#45;정의 이벤트 마커 아이콘](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|사용자 정의 이벤트 표식<br /> 앱에서 정의한 것처럼 특정 위치를 표시합니다.|  
+|![The draw event icon](../debugger/media/vsg-eventlist-icon-draw.png "vsg_eventlist_icon_draw")|그리기 이벤트<br /> 캡처된 프레임 중 발생한 그리기 이벤트를 표시합니다.|  
+|![The user&#45;defined event marker icon](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|사용자 정의 이벤트 그룹<br /> 앱에서 정의한 것처럼 그룹 관련 이벤트입니다.|  
+|![The user&#45;defined event marker icon](../debugger/media/vsg-eventlist-icon-user.png "vsg_eventlist_icon_user")|사용자 정의 이벤트 표식<br /> 앱에서 정의한 것처럼 특정 위치를 표시합니다.|  
   
 ## <a name="marking-user-defined-events-in-your-app"></a>앱에서 사용자 정의 이벤트 표시  
  사용자 정의 이벤트는 앱에 고유합니다. 이러한 이벤트를 사용하여 앱에서 발생한 중요한 이벤트를 그래픽 이벤트 목록의 이벤트와 연관시킬 수 있습니다. 예를 들어 사용자 정의 이벤트 그룹을 만들어 관련 이벤트(예: 사용자 인터페이스를 렌더링하는 이벤트)를 그룹 또는 계층 구조로 그룹화하여 이벤트 목록을 보다 쉽게 찾을 수 있습니다. 또는 특정 종류의 개체를 그릴 때 표식을 만들어 이벤트 목록에서 그래픽 이벤트를 쉽게 찾을 수 있습니다.  
@@ -93,7 +93,7 @@ Visual Studio Graphics Analyzer의 그래픽 이벤트 목록을 사용하여 �
 ### <a name="user-defined-events-in-direct3d-11-and-earlier"></a>Direct3D 11 이하의 사용자 정의 이벤트  
  Direct3D 11 이하에서 그룹 및 표식을 만들려면 이 섹션에 설명된 API를 사용합니다. 아래 표에서는 Direct3D 11의 여러 버전 및 Direct3D 이전 버전에서 사용할 수 있는 API를 간략히 설명합니다.  
   
-|API 설명|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](http://go.microsoft.com/fwlink/p/?LinkID=250967) (Direct3D 11.1)|D3DPerf_ API 패밀리(Direct3D 11.0 및 이전)|  
+|API 설명|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](https://go.microsoft.com/fwlink/p/?LinkID=250967) (Direct3D 11.1)|D3DPerf_ API 패밀리(Direct3D 11.0 및 이전)|  
 |---------------------|---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|--------------------------------------------------------|  
 |이벤트 그룹 시작|`BeginEventInt`|`BeginEvent`|`D3DPerf_BeginEvent`|  
 |이벤트 그룹 종료|`EndEventInt`|`EndEvent`|`D3DPerf_EndEvent`|  
@@ -101,5 +101,5 @@ Visual Studio Graphics Analyzer의 그래픽 이벤트 목록을 사용하여 �
   
  사용 중인 Direct3D 버전에서 지원하는 API 중 하나를 사용할 수 있습니다. 예를 들어 Direct3D 11.1 API를 대상으로 하는 경우 `SetMarker` 또는 `D3DPerf_SetMarker` 를 사용하여 이벤트 표식을 만들 수 있지만 `SetMarkerInt` 는 Direct3D 11.2에서만 사용할 수 있으므로 사용하지 마세요. 그리고 다른 버전의 Direct3D를 지원하는 API를 동일한 앱에서 함께 사용할 수 있습니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목:  
  [연습: 디바이스 상태로 인해 누락된 개체](../debugger/walkthrough-missing-objects-due-to-device-state.md)

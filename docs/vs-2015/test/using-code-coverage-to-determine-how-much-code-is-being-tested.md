@@ -10,12 +10,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ee281e2cabcbce4f950188465163769caae7b2bc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8c7ec729c81f11096a55e87cea528764e500b535
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657236"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297969"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>코드 검사를 사용하여 테스트할 코드 범위 결정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "72657236"
 
  테스트 탐색기를 사용하여 테스트 메서드를 실행하는 경우 코드 검사는 선택 사항입니다. 결과 테이블에는 각 어셈블리, 클래스 및 메서드에서 실행되는 코드의 백분율이 표시됩니다. 또한 소스 편집기에는 테스트된 코드가 표시됩니다.
 
- ![색 지정을 사용 하 여 코드 검사 결과](../test/media/codecoverage1.png "CodeCoverage1")
+ ![Code coverage results with coloring](../test/media/codecoverage1.png "CodeCoverage1")
 
- **요구 사항**
+ **Requirements**
 
 - Visual Studio Enterprise
 
@@ -36,9 +36,9 @@ ms.locfileid: "72657236"
 
 1. **테스트** 메뉴에서 **코드 검사 분석**을 선택합니다.
 
-2. 실행 된 줄을 보려면 ![코드 검사 강조 표시 아이콘](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")**코드 검사 강조 표시**를 선택 합니다.
+2. To see which lines have been run, choose ![Show Code Coverage Coloring Icon](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")**Show Code Coverage Coloring**.
 
-     색을 변경 하거나 굵게 표시 하려면 **도구**, **옵션**, **환경**, **글꼴 및 색**, **Show 설정을 선택 합니다. 텍스트 편집기**를 선택합니다. **표시 항목**에서 검사 항목을 조정합니다.
+     색을 변경하거나 굵게 표시하려면 **도구**, **옵션**, **환경**, **글꼴 및 색**, **설정 표시: 텍스트 편집기**를 선택합니다. **표시 항목**에서 검사 항목을 조정합니다.
 
 3. 결과에 검사가 낮게 표시되는 경우, 코드에서 실행되지 않은 부분을 확인한 다음 검사할 추가 테스트를 작성합니다. 개발 팀을 일반적으로 약 80%의 코드 검사를 목표로 합니다. 경우에 따라 더 낮은 검사도 허용됩니다. 예를 들어, 일부 코드가 표준 템플릿에서 생성된 경우 낮은 검사가 허용됩니다.
 
@@ -50,7 +50,7 @@ ms.locfileid: "72657236"
 >   관리되지 않은(네이티브) 코드를 사용하는 경우 디버그 빌드를 사용합니다.
 >   - 각 어셈블리에 대해 .pdb(기호) 파일을 생성하고 있는지 확인합니다.
 >
->   예상한 결과를 얻지 못한 경우 [코드 검사 문제 해결](../test/troubleshooting-code-coverage.md)을 참조하세요. 을 선택합니다. 코드를 업데이트한 후 반드시 코드 검사를 다시 실행하세요. 검사 결과 및 코드 강조는 코드를 수정한 후 또는 테스트를 실행한 경우 자동으로 업데이트되지 않습니다.
+>   예상한 결과를 얻지 못한 경우 [코드 검사 문제 해결](../test/troubleshooting-code-coverage.md)을 참조하세요. 이어야 합니다. 코드를 업데이트한 후 반드시 코드 검사를 다시 실행하세요. 검사 결과 및 코드 강조는 코드를 수정한 후 또는 테스트를 실행한 경우 자동으로 업데이트되지 않습니다.
 
 ## <a name="reporting-in-blocks-or-lines"></a>블록 또는 줄에 보고
  코드 검사는 *블록*으로 계산됩니다. 블록은 진입점 및 진출점이 정확히 하나씩인 코드입니다.  테스트 실행 중 프로그램의 제어 흐름이 블록을 통과할 경우 해당 블록은 검사된 것으로 계산됩니다. 블록이 사용된 횟수는 결과에 영향을 아무 영향을 미치지 않습니다.
@@ -81,7 +81,7 @@ ms.locfileid: "72657236"
 
  예를 들어, 입력 "2"로 테스트를 실행할 경우를 가정하면 특정 함수의 50%만 검사됩니다. 입력 "-2"로 다시 테스트를 실행하면 검사 강조 보기에서 함수의 나머지 50%가 검사된 것을 확인할 수 있습니다. 이제 두 테스트 실행의 결과를 병합하면 보고서와 검사 강조 보기에 함수의 100%가 검사된 것으로 나타납니다.
 
- ![코드 검사 창의 병합 단추를](../test/media/codecoverage-mergeicon.png "CodeCoverage-MergeIcon")사용 하 여**코드 검사 결과를 병합** 합니다. 최근의 실행 또는 가져온 결과의 조합을 선택할 수 있습니다. 내보낸 결과를 결합하려면 내보낸 결과를 가져와야 합니다.
+ Use ![Icon for Merge button in Code Coverage window](../test/media/codecoverage-mergeicon.png "CodeCoverage-MergeIcon")**Merge Code Coverage Results** to do this. 최근의 실행 또는 가져온 결과의 조합을 선택할 수 있습니다. 내보낸 결과를 결합하려면 내보낸 결과를 가져와야 합니다.
 
  병합 작업 결과를 저장하려면 **코드 검사 결과 내보내기**를 사용합니다.
 
@@ -96,7 +96,7 @@ ms.locfileid: "72657236"
 ## <a name="excluding-elements-from-the-code-coverage-results"></a>코드 검사 결과에서 요소 제외
  코드가 텍스트 템플릿에서 생성된 경우와 같이 검사 점수에서 코드의 특정 요소를 제외하려는 경우가 있습니다. `System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage` 특성을 class, struct, method, property, property setter 또는 getter, event 코드 요소에 임의로 추가할 수 있습니다. 클래스를 제외할 경우 해당 파생 클래스는 제외되지 않습니다.
 
- 예:
+ 예를 들어 다음과 같은 가치를 제공해야 합니다.
 
 ```csharp
 
@@ -248,7 +248,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
  .runsettings 파일을 작성하면 코드 검사 분석에 대해 선택되는 어셈블리와 요소를 더 자세히 제어할 수 있습니다. 예를 들어, 클래스에 특성을 추가하지 않고도 특정 종류의 어셈블리를 제외할 수 있습니다. 자세한 내용은 [코드 검사 분석 사용자 지정](../test/customizing-code-coverage-analysis.md)을 참조하세요.
 
 ## <a name="analyzing-code-coverage-in-the-build-service"></a>빌드 서비스에서 코드 검사 분석
- 코드에 체크 인하면 테스트가 다른 팀원의 나머지 모든 테스트와 함께 빌드 서버에서 실행됩니다. (아직 설정하지 않은 경우 [빌드 프로세스에서 테스트 실행](https://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)을 참조하세요.) 빌드 서비스에서 코드 검사를 분석하면 전체 프로젝트에 대한 최신 검사 정보를 전체적으로 파악할 수 있습니다. 또한 일반적으로 개발 컴퓨터에서 실행하지 않는 자동화된 시스템 테스트와 기타 코딩된 테스트도 포함됩니다.
+ 코드에 체크 인하면 테스트가 다른 팀원의 나머지 모든 테스트와 함께 빌드 서버에서 실행됩니다. (If you haven’t already set this up, see [Run tests in your build process](https://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38).) It’s useful to analyze code coverage on the build service, because that gives the most up-to-date and comprehensive picture of coverage in the whole project. 또한 일반적으로 개발 컴퓨터에서 실행하지 않는 자동화된 시스템 테스트와 기타 코딩된 테스트도 포함됩니다.
 
 1. 팀 탐색기에서 **빌드**를 연 다음 빌드 정의를 추가하거나 편집합니다.
 
@@ -260,7 +260,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
       **자동화된 테스트**에서 **테스트 어셈블리**를 선택한 다음 줄임표 단추 **[...]** 를 선택합니다. **테스트 실행 추가/편집** 대화 상자의 **Test Runner**에서 **Visual Studio Test Runner**를 선택합니다.
 
-   ![코드 검사에 대 한 빌드 정의 설정](../test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")
+   ![Setting the build definition for code coverage](../test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")
 
    빌드 실행 후 코드 검사 결과가 테스트 실행에 첨부되고 빌드 요약에 나타납니다.
 
@@ -281,7 +281,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ## <a name="external-resources"></a>외부 리소스
 
 ### <a name="guidance"></a>지침
- Visual Studio 2012을 사용한 지속적인 업데이트를 위한 [Testing-2 장: 유닛 테스트: 내부 ](http://go.microsoft.com/fwlink/?LinkID=255188) 테스트
+ [Visual Studio 2012를 사용한 지속적인 업데이트 테스트 - 2장: 단위 테스트: 내부 테스트](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ## <a name="see-also"></a>관련 항목:
- 코드 [검사 분석 사용자 지정](../test/customizing-code-coverage-analysis.md) 코드 [검사](../test/troubleshooting-code-coverage.md) [단위 테스트 코드 검사 단위 테스트](../test/unit-test-your-code.md)
+ [Customizing Code Coverage Analysis](../test/customizing-code-coverage-analysis.md) [Troubleshooting Code Coverage](../test/troubleshooting-code-coverage.md) [Unit Test Your Code](../test/unit-test-your-code.md)

@@ -1,5 +1,5 @@
 ---
-title: '방법: UML 모델의 변경 내용에 응답 | Microsoft Docs'
+title: 'How to: Respond to Changes in a UML Model | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -9,12 +9,12 @@ caps.latest.revision: 3
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: eff43f3c7547a46b75885448999335637e9fbc62
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9eaaa1406591bc950dbbf95aff8dcd732eef3448
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609799"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74293395"
 ---
 # <a name="how-to-respond-to-changes-in-a-uml-model"></a>방법: UML 모델의 변경 내용에 응답
 Visual Studio의 UML 모델에서 변경이 발생할 때마다 실행되는 코드를 작성할 수 있습니다. 사용자 및 다른 Visual Studio 확장에 의해 직접 수행된 변경에 대해 똑같이 반응합니다. UML 모델을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
@@ -22,7 +22,5 @@ Visual Studio의 UML 모델에서 변경이 발생할 때마다 실행되는 코
 > [!WARNING]
 > 이러한 방법은 UML API에서 지원되지 않습니다. Visual Studio의 이후 버전에서 작동하지 않을 수 있습니다.
 
- Uml에서 사용할 수 있는 샘플 코드 [: 이벤트 및 규칙을 사용 하 여 Uml 모델의 변경 내용에 응답](http://code.msdn.microsoft.com/UML-Responding-to-changes-c024cd4b)
-
 ## <a name="see-also"></a>관련 항목:
- [UML 모델 탐색](../modeling/navigate-the-uml-model.md) [이벤트 처리기 모델 외부의 변경 내용 전파](../modeling/event-handlers-propagate-changes-outside-the-model.md) [샘플: 스테레오 타입 별 색](http://go.microsoft.com/fwlink/?LinkId=213841)
+ [Navigate the UML model](../modeling/navigate-the-uml-model.md) [Event Handlers Propagate Changes Outside the Model](../modeling/event-handlers-propagate-changes-outside-the-model.md) [Sample: Color by Stereotype](https://go.microsoft.com/fwlink/?LinkId=213841)

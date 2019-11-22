@@ -1,5 +1,5 @@
 ---
-title: 'DA0018: 프로세스 관리 메모리 한도로 실행 중인 32비트 애플리케이션 | Microsoft Docs'
+title: 'DA0018: 프로세스 관리 메모리 한도로 실행 중인 32비트 애플리케이션 | Microsoft 문서'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,21 +13,21 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6418a39d7e53a3edaa48b3cd003d35d95cba386e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 67589a04b8f3c39e442b596a7a41981825bd5aa5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68194953"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301107"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 프로세스 관리되는 메모리 한도로 실행 중인 32비트 애플리케이션
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 프로세스 관리 메모리 한도로 실행 중인 32비트 애플리케이션
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-규칙 Id | DA0018 |  
-| 범주 | 프로 파일링 도구 사용 |  
-| 프로 파일링 방법을 | 샘플링 |  
-| 메시지 | 32 비트 프로세스에 대 한 기본 제한에 도달 하는 메모리 할당을 관리 합니다. 애플리케이션이 메모리 바인딩될 수 있습니다.|  
-| 규칙 유형 | 경고 |  
+Rule Id|DA0018|  
+|Category|Profiling Tools Usage|  
+|Profiling method|Sampling|  
+|Message|Managed memory allocations approaching the default limit for a 32-bit process. 애플리케이션이 메모리 바인딩될 수 있습니다.|  
+|Rule type|Warning|  
   
  샘플링, .NET 메모리 또는 리소스 경합 방법을 사용하여 프로파일링할 경우 이 규칙을 트리거하려면 10개 이상의 샘플을 수집해야 합니다.  
   
@@ -58,13 +58,13 @@ ms.locfileid: "68194953"
   
 - 32비트 프로세스의 최대 가상 메모리 크기에 대한 아키텍처 제약 조건을 완화하는 단계 수행  
   
-  애플리케이션의 관리되는 메모리 리소스 사용을 최적화하려면 .NET 메모리 할당 프로파일링 실행에서 관리되는 메모리 할당 데이터를 수집합니다. [.NET 메모리 데이터 뷰](../profiling/dotnet-memory-data-views.md) 보고서를 검토하여 응용 프로그램의 메모리 할당 패턴을 파악합니다.  
+  애플리케이션의 관리되는 메모리 리소스 사용을 최적화하려면 .NET 메모리 할당 프로파일링 실행에서 관리되는 메모리 할당 데이터를 수집합니다. [.NET 메모리 데이터 뷰](../profiling/dotnet-memory-data-views.md) 보고서를 검토하여 애플리케이션의 메모리 할당 패턴을 파악합니다.  
   
   [개체 수명 뷰](../profiling/object-lifetime-view.md)를 사용하여 프로그램의 어떤 데이터 개체가 세대로 생존하고 세대에서 회수되는지 확인합니다.  
   
   [할당 뷰](../profiling/dotnet-memory-allocations-view.md)를 사용하여 이러한 할당이 시작된 실행 경로를 확인합니다.  
   
-  가비지 수집 성능을 향상시키는 방법에 대한 자세한 내용은 MSDN 웹 사이트에서 .NET Framework 기술 문서, [가비지 수집기 기본 및 성능 힌트](http://go.microsoft.com/fwlink/?LinkId=177946)를 참조하세요.  
+  가비지 수집 성능을 향상시키는 방법에 대한 자세한 내용은 MSDN 웹 사이트에서 .NET Framework 기술 문서, [가비지 수집기 기본 및 성능 힌트](https://go.microsoft.com/fwlink/?LinkId=177946)를 참조하세요.  
   
   프로세스 주소 공간 중 전용 부분 크기에 대한 가상 메모리 제약 조건을 구조적으로 완화하려면 64비트 컴퓨터에서 이 32비트 프로세스를 실행해 보세요.  64비트 컴퓨터에서 32비트 프로세스를 실행하면 전용 가상 메모리를 4GB까지 확보할 수 있습니다.  
   

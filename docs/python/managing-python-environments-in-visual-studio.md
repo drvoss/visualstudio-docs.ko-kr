@@ -9,16 +9,16 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a709c4b76f23529e0ffee7027bd1b6257ba00d84
-ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.openlocfilehash: 5e269e19a09aec157e38eaf8938b5995c2647803
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73024707"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661938"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Visual Studio에서 Python 환경을 만들고 관리하는 방법
 
-Python ‘환경’은 Python 코드를 실행할 컨텍스트이며 전역, 가상 및 conda 환경을 포함합니다.  환경은 인터프리터, 라이브러리(일반적으로 Python 표준 라이브러리) 및 설치된 패키지 집합으로 구성됩니다. 이러한 모든 구성 요소에 따라, 어떤 언어로 구성되고 구문이 유효한지, 어떤 운영 체제 기능에 액세스할 수 있으며 어떤 패키지를 사용할 수 있는지가 결정됩니다.
+Python ‘환경’은 Python 코드를 실행할 컨텍스트이며 전역, 가상 및 conda 환경을 포함합니다. 환경은 인터프리터, 라이브러리(일반적으로 Python 표준 라이브러리) 및 설치된 패키지 집합으로 구성됩니다. 이러한 모든 구성 요소에 따라, 어떤 언어로 구성되고 구문이 유효한지, 어떤 운영 체제 기능에 액세스할 수 있으며 어떤 패키지를 사용할 수 있는지가 결정됩니다.
 
 Windows의 Visual Studio에서는 이 문서에 설명된 대로 **Python 환경** 창을 사용하여 여러 환경을 관리하고 새 프로젝트의 기본값으로 하나의 환경을 선택합니다. 환경의 기타 측면은 다음 문서를 참조하십시오.
 
@@ -124,7 +124,7 @@ Visual Studio는 글로벌 환경, 가상 환경 및 Conda 환경을 사용할 �
 
 Visual Studio는 프로젝트에 대한 가상 환경을 만드는 작업을 직접 지원합니다. 예를 들어 *requirements.txt*가 포함된 프로젝트를 열거나 해당 파일이 포함된 템플릿에서 프로젝트를 만드는 경우 Visual Studio에서는 사용자에게 가상 환경을 자동으로 만들고 해당 종속성을 설치하게 합니다.
 
-열린 프로젝트 내에서 언제든 새 가상 환경을 만들 수 있습니다. **솔루션 탐색기**에서 프로젝트 노드를 확장하고 **Python 환경** 노드를 마우스 오른쪽 단추로 클릭하고 “가상 환경 추가”를 선택합니다. 자세한 내용은 [가상 환경 만들기](selecting-a-python-environment-for-a-project.md#create-a-virtual-environment-1)를 참조하세요.
+열린 프로젝트 내에서 언제든 새 가상 환경을 만들 수 있습니다. **솔루션 탐색기**에서 프로젝트 노드를 확장하고 **Python 환경** 노드를 마우스 오른쪽 단추로 클릭하고 “가상 환경 추가”를 선택합니다. 자세한 내용은 [가상 환경 만들기](/visualstudio/python/selecting-a-python-environment-for-a-project?view=vs-2019#create-a-virtual-environment-1)를 참조하세요.
 
 Visual Studio에서는 쉽게 다른 컴퓨터에서 환경을 다시 만들 수 있도록 가상 환경에서 *requirements.txt* 파일을 생성하는 명령을 제공합니다. 자세한 내용은 [가상 환경 사용](selecting-a-python-environment-for-a-project.md#use-virtual-environments)을 참조하세요.
 
@@ -215,7 +215,7 @@ Visual Studio 2017 버전 15.6 이전의 Conda 환경을 포함하여 비표준 
 
 1. **설명** 필드에 환경에 대한 이름을 입력합니다.
 
-1. **접두사 경로** 필드에 인터프리터의 경로를 입력하거나 찾습니다( **...** 사용).
+1. **접두사 경로** 필드에 인터프리터의 경로를 입력하거나 찾습니다(**...** 사용).
 
 1. Visual Studio가 해당 위치(예: conda 환경에 대해 아래에 표시된 경로)에서 Python 인터프리터를 검색할 경우 **자동 검색** 명령을 사용할 수 있습니다. **자동 검색**을 선택하면 나머지 필드가 채워집니다. 해당 필드를 수동으로 완료할 수도 있습니다.
 

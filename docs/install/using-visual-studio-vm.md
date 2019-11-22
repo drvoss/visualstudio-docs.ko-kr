@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 32446e40fa388e72fd12e32dad3a466c0b5823d5
-ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
+ms.openlocfilehash: 88e11bf7bd84fdac5d584c06042488c895b7aa09
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71273381"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74174137"
 ---
 # <a id="top"> </a> Azure의 Visual Studio 이미지
 
@@ -36,9 +36,9 @@ Azure를 처음 사용하는 경우 [체험 Azure 계정을 만드세요](https:
 
 | 릴리스 버전                                                                                                                                          | 버전              |    제품 버전    |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------:|:-----------------------:|
-| [Visual Studio 2019: 최신(버전 16.3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise, Community | 버전 16.3.0    |
-| [Visual Studio 2019: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Enterprise            | 버전 16.0.8    |
-| [Visual Studio 2017: 최신(버전 15.9)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise, Community | 버전 15.9.16   |
+| [Visual Studio 2019: 최신(버전 16.3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise, Community | 버전 16.3.9    |
+| [Visual Studio 2019: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Enterprise            | 버전 16.0.9    |
+| [Visual Studio 2017: 최신(버전 15.9)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise, Community | 버전 15.9.17   |
 | [Visual Studio 2017: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise, Community | 버전 15.0.27   |
 | [Visual Studio 2015: 최신(업데이트 3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)               | Enterprise, Community | 버전 14.0.25431.01 |
 

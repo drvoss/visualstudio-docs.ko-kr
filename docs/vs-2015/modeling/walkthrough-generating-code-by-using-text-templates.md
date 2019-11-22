@@ -1,5 +1,5 @@
 ---
-title: '연습: 텍스트 템플릿을 사용 하 여 코드 생성 | Microsoft Docs'
+title: 'Walkthrough: Generating Code by using Text Templates | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 29a455194e64ee30186941cb67b014170426cce0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c2a86689fd41b7c0233db0df544082ef22c4931a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659258"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295504"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>연습: 텍스트 템플릿을 사용하여 코드 생성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "72659258"
  이 예제 프로젝트에서는 템플릿이 샘플 XML 파일을 읽고, 각 노드 형식에 해당하는 클래스를 생성합니다. 직접 작성한 코드에서 이러한 클래스를 사용하여 XML 파일을 탐색할 수 있습니다. 동일한 노드 형식을 사용하는 다른 파일에서 애플리케이션을 실행할 수도 있습니다. 샘플 XML 파일의 목적은 애플리케이션에서 처리하고자 하는 모든 노드 형식의 예를 제공하는 것입니다.
 
 > [!NOTE]
-> [에 포함된 애플리케이션](http://go.microsoft.com/fwlink/?LinkId=178765)xsd.exe [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]는 XML 파일에서 강력한 형식의 클래스를 생성할 수 있습니다. 여기에 표시된 템플릿은 예로서 제공됩니다.
+> [에 포함된 애플리케이션](https://go.microsoft.com/fwlink/?LinkId=178765)xsd.exe [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]는 XML 파일에서 강력한 형식의 클래스를 생성할 수 있습니다. 여기에 표시된 템플릿은 예로서 제공됩니다.
 
  샘플 파일은 다음과 같습니다.
 
@@ -108,7 +108,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
    .
 
 ### <a name="add-a-test-code-file"></a>테스트 코드 파일 추가
- C# 파일을 프로젝트에 추가하고, 여기에 원하는 코드의 샘플을 작성합니다. 예:
+ C# 파일을 프로젝트에 추가하고, 여기에 원하는 코드의 샘플을 작성합니다. 예를 들어 다음과 같은 가치를 제공해야 합니다.
 
 ```
 using System;
@@ -157,7 +157,7 @@ namespace MyProject
    <#@ output extension=".cs" #>
    ```
 
-   을 선택합니다.
+   이어야 합니다.
 
    템플릿 파일의 보조 파일로 솔루션 탐색기에 .cs 파일이 표시되는지 확인합니다. 템플릿 파일의 이름 옆에 있는 [+]를 클릭하여 확인할 수 있습니다. 템플릿 파일을 저장하거나 템플릿 파일에서 포커스를 이동할 때마다 이 파일이 템플릿 파일에서 생성됩니다. 생성된 파일은 프로젝트의 일부로 컴파일됩니다.
 
@@ -421,4 +421,4 @@ namespace MyProject
  **오류 목록**에 템플릿 변환 또는 컴파일 오류가 표시된 경우 또는 출력 파일이 정확히 생성되지 않은 경우 [TextTransform 유틸리티 사용하여 파일 생성](../modeling/generating-files-with-the-texttransform-utility.md)에 설명된 방법으로 텍스트 템플릿의 문제를 해결할 수 있습니다.
 
 ## <a name="see-also"></a>관련 항목:
- T4 텍스트 [템플릿을 사용 하 여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md) [t4 텍스트 템플릿 작성](../modeling/writing-a-t4-text-template.md)
+ [Design-Time Code Generation by using T4 Text Templates](../modeling/design-time-code-generation-by-using-t4-text-templates.md) [Writing a T4 Text Template](../modeling/writing-a-t4-text-template.md)

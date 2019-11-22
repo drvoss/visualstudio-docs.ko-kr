@@ -14,12 +14,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ba7566e4a6bdffc5e7075bc138832097415a7129
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6a816981b41dd8ca2a2119bbd99c776c6a7e2436
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667106"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296882"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio 다중 대상 지정 개요
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ ms.locfileid: "72667106"
 > Visual Studio의 Express 버전에서는 **새 프로젝트** 대화 상자에서 대상 프레임워크를 설정할 수 없습니다.
 
 ## <a name="resolving-system-and-user-assembly-references"></a>시스템 및 사용자 어셈블리 참조 확인
- .NET Framework 버전을 대상으로 지정하려면 먼저 적절한 어셈블리 참조를 설치해야 합니다. .NET Framework 버전 2.0, 3.0 및 3.5에 대한 어셈블리 참조는 [Microsoft Download Center, Microsoft Visual Studio](https://www.microsoft.com/download/details.aspx?id=25150)(Microsoft 다운로드 센터, Microsoft Visual Studio) 웹 사이트에서 다운로드할 수 있는 .NET Framework 3.5 SP1에 포함됩니다. .NET Framework 3.5 Client Profile, .NET Framework 4, .NET Framework 4 Client Profile 및 Silverlight에 대한 어셈블리 참조는 [Visual Studio Downloads](http://go.microsoft.com/fwlink/?LinkId=179687)(Visual Studio 다운로드) 웹 사이트에서도 다운로드할 수 있습니다.
+ .NET Framework 버전을 대상으로 지정하려면 먼저 적절한 어셈블리 참조를 설치해야 합니다. .NET Framework 버전 2.0, 3.0 및 3.5에 대한 어셈블리 참조는 [Microsoft Download Center, Microsoft Visual Studio](https://www.microsoft.com/download/details.aspx?id=25150)(Microsoft 다운로드 센터, Microsoft Visual Studio) 웹 사이트에서 다운로드할 수 있는 .NET Framework 3.5 SP1에 포함됩니다. .NET Framework 3.5 Client Profile, .NET Framework 4, .NET Framework 4 Client Profile 및 Silverlight에 대한 어셈블리 참조는 [Visual Studio Downloads](https://go.microsoft.com/fwlink/?LinkId=179687)(Visual Studio 다운로드) 웹 사이트에서도 다운로드할 수 있습니다.
 
 > [!NOTE]
 > .NET Framework Client Profile은 라이브러리 및 기능의 제한된 집합을 제공하는 .NET Framework의 하위 집합입니다. Client Profile에 대한 자세한 내용은 [.NET Framework Client Profile](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)을 참조하세요.

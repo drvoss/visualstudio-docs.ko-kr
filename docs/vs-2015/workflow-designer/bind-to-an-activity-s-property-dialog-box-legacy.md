@@ -1,5 +1,5 @@
 ---
-title: 활동&#39;속성에 바인딩 대화 상자 (레거시) | Microsoft Docs
+title: Bind to an Activity&#39;s Property Dialog Box (Legacy) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -13,26 +13,26 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b93f6787ef24a191385c0fd86672aa23ff72e3e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 451544a84237bc6fa4e069df9dd1e17feccf86f7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659213"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301015"
 ---
-# <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>활동&#39;속성에 바인딩 대화 상자 (레거시)
-이 항목에서는 레거시 [!INCLUDE[wfd1](../includes/wfd1-md.md)]에서 **활동 속성에 바인딩** 대화 상자를 사용 하는 방법에 대해 설명 합니다. 레거시 [!INCLUDE[wfd2](../includes/wfd2-md.md)]는 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 또는 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]를 대상으로 해야 하는 경우에 사용합니다.
+# <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Bind to an Activity&#39;s Property Dialog Box (Legacy)
+This topic describes how use the **Bind to an Activity's Property** dialog box in the legacy [!INCLUDE[wfd1](../includes/wfd1-md.md)]. 레거시 [!INCLUDE[wfd2](../includes/wfd2-md.md)]는 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 또는 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]를 대상으로 해야 하는 경우에 사용합니다.
 
- 종속성 속성인 인스턴스 형식을 다른 활동의 public 속성이나 이벤트에 바인딩할 수 있습니다. 작업 바인딩에 대 한 자세한 내용은 [종속성 속성 사용](http://go.microsoft.com/fwlink?LinkID=65007)을 참조 하세요.
+ 종속성 속성인 인스턴스 형식을 다른 활동의 public 속성이나 이벤트에 바인딩할 수 있습니다. For more information about activity binding, see [Using Dependency Properties](https://go.microsoft.com/fwlink?LinkID=65007).
 
- **활동 속성에 바인딩** 대화 상자를 사용 하 여 바인딩할 속성을 선택 합니다. **속성** 창에서 선택한 속성의 텍스트 상자 끝에 있는 줄임표 **[...]** 를 클릭 하거나 속성 브라우저에서 속성 이름 옆에 나타나는 파란색 느낌표 아이콘을 클릭 하 여이 대화 상자를 엽니다.
+ You select a property to bind to using the **Bind to an Activity's Property** dialog box. You open this dialog box by clicking the ellipses **[…]** at the end of the selected property's text box in the **Properties** window, or by clicking the blue exclamation mark icon that appears next to the property name in the property browser.
 
- 다음 표에서는 **활동 속성에 바인딩** 대화 상자의 UI (사용자 인터페이스) 요소에 대해 설명 합니다.
+ The following table describes the user interface (UI) elements of the **Bind to an Activity's Property** dialog box.
 
 |UI 요소|설명|
 |----------------|-----------------|
-|**기존 멤버에 바인딩**|트리 뷰 창에서 바인딩할 멤버를 선택합니다. 트리 뷰 아래의 창에서는 멤버가 바인딩하기에 올바른 형식인지 여부를 나타내는 메시지가 표시됩니다. **확인** 을 클릭 하 여 선택한 유효한 구성원에 바인딩합니다.|
-|**새 멤버에 바인딩**|바인딩할 새 멤버 필드나 속성을 만듭니다. **새 멤버 이름을**입력 합니다. **필드 만들기** 또는 **속성 만들기**를 선택 하 여 종속성 속성 또는 공용 필드를 만들지 여부를 선택 합니다. **확인** 을 클릭 하 여 새 멤버를 만듭니다.|
+|**Bind to an existing member**|트리 뷰 창에서 바인딩할 멤버를 선택합니다. 트리 뷰 아래의 창에서는 멤버가 바인딩하기에 올바른 형식인지 여부를 나타내는 메시지가 표시됩니다. Click **OK** to bind to the selected valid member.|
+|**Bind to a new member**|바인딩할 새 멤버 필드나 속성을 만듭니다. Enter a **New Member Name**. Choose whether you want to create a dependency property or a public field by selecting **Create Field** or **Create Property**. Click **OK** to create the new member.|
 
 ## <a name="see-also"></a>관련 항목:
- [작업 속성을 사용](http://go.microsoft.com/fwlink?LinkID=65013) 하 여 [종속성 속성 사용](http://go.microsoft.com/fwlink?LinkID=65007) [레거시 디자이너 Windows Workflow Foundation UI 도움말](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+ [Using Activity Properties](https://go.microsoft.com/fwlink?LinkID=65013) [Using Dependency Properties](https://go.microsoft.com/fwlink?LinkID=65007) [Legacy Designer for Windows Workflow Foundation UI Help](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

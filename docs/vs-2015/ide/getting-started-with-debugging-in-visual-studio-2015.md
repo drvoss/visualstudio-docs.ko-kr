@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 디버깅 시작 | Microsoft 문서
+title: Visual Studio 2015에서 디버깅 시작 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,12 +10,12 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 08e317555042bbc63707cc6eccd0177e78b6ddcc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fe8b158fd870b83b39b9d316e68582f2726d89bb
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645661"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300202"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Visual Studio 2015에서 디버그 시작
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -170,12 +170,12 @@ Visual Studio 2015에서는 프로젝트 빌드 및 디버깅 도구의 강력�
 
  ![Visual Studio 2015 조건부 중단점](../ide/media/vs-ide-gs-debug-breakpoint-conditional.PNG "|::ref23::|")
 
- 조건부 중단점 평가에 사용되는 식을 선언하는 방법에 대한 자세한 내용은 Channel9 동영상 [Visual Studio 2015의 중단점 구성 환경](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/711)을 참조하세요.
+ 조건부 중단점 평가에 사용되는 식을 선언하는 방법에 대한 자세한 내용은 Channel9 동영상 [Visual Studio 2015의 중단점 구성 환경](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/711)을 참조하세요.
 
 ### <a name="inspecting-your-code-at-run-time"></a>런타임에 코드 검사
  실행 중인 코드가 중단점을 적중하고 중단되는 경우 변수 및 호출 스택을 검사하여 문제를 확인할 수 있습니다. 값이 예상 범위 내에 있나요? 호출이 올바른 순서로 수행되나요?
 
- ![Visual Studio 2015 런타임 값 검사](../ide/media/vs-ide-gs-debug-inspect-value.PNG "|::ref24::|")
+ ![Visual Studio 2015 런타임&#45;값 검사](../ide/media/vs-ide-gs-debug-inspect-value.PNG "|::ref24::|")
 
  변수 위로 마우스를 가져가서 현재 포함된 값 및 참조를 확인합니다. 예상하지 않은 값이 표시되는 경우 이전 또는 호출하는 코드 줄에 버그가 있을 가능성이 큽니다. 중단점을 위로 이동하거나 기존 중단점에 조건을 추가하여 검색 범위를 더욱 좁힙니다.
 
@@ -191,4 +191,4 @@ Visual Studio 2015에서는 프로젝트 빌드 및 디버깅 도구의 강력�
  Visual Studio 2015의 단위 테스트 및 단위 테스트를 통해 더 나은 품질의 코드를 만드는 방법에 대한 자세한 내용은 [단위 테스트 기본 사항](../test/unit-test-basics.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
- [Visual Studio에서 디버깅 ](../debugger/debugging-in-visual-studio.md) [Debugger 설정 및 준비 ](../debugger/debugger-settings-and-preparation.md) [Debug 64 비트 응용 프로그램 ](../debugger/debug-64-bit-applications.md) 기본 사항 [Debugger](../debugger/debugger-basics.md)
+ [Visual Studio의 디버깅](../debugger/debugging-in-visual-studio.md) [디버거 설정 및 준비](../debugger/debugger-settings-and-preparation.md) [디버그 64 비트 응용 프로그램](../debugger/debug-64-bit-applications.md) [디버거 기본 사항](../debugger/debugger-basics.md)

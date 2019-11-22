@@ -1,5 +1,5 @@
 ---
-title: VSIX 패키지 분석 | Microsoft Docs
+title: Anatomy of a VSIX Package | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,51 +12,51 @@ ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 86c2beeab5fba0224fbdfb104d01ee5c28bba158
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 156b221265b4c3c23b795b09b9a50ccb27a63bcf
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65699137"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295651"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX 패키지 분석
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-VSIX 패키지는 Visual Studio 확장을 설치 하 고 분류를 사용 하 여 메타 데이터와 함께 하나 이상의 Visual Studio 확장을 포함 하는.vsix 파일입니다. 해당 메타 데이터는 VSIX 매니페스트 및 [Content_Types].xml 파일에 포함 됩니다. VSIX 패키지 지역화 된 설치 프로그램 텍스트를 제공 하려면 하나 이상의 Extension.vsixlangpack 파일 포함 될 수도 있습니다 및 종속성을 설치 하는 추가 VSIX 패키지를 포함할 수 있습니다.  
+A VSIX package is a .vsix file that contains one or more Visual Studio extensions, together with the metadata Visual Studio uses to classify and install the extensions. That metadata is contained in the VSIX manifest and the [Content_Types].xml file. A VSIX package may also contain one or more Extension.vsixlangpack files to provide localized setup text, and may contain additional VSIX packages to install dependencies.  
   
- VSIX 패키지 형식으로 OPC Open Packaging Conventions () 표준을 따릅니다. 패키지 이진 파일에 포함 하 고 매니페스트 [Content_Types].xml 파일 및.vsix 파일을 지원 파일. 하나의 VSIX 패키지는 여러 프로젝트나 자신의 매니페스트는 여러 패키지의 출력을 포함할 수 있습니다.  
+ The VSIX package format follows the Open Packaging Conventions (OPC) standard. The package contains binaries and supporting files, together with a [Content_Types].xml file and a .vsix manifest file. One VSIX package may contain the output of multiple projects, or even multiple packages that have their own manifests.  
   
 > [!NOTE]
-> VSIX 패키지에 포함 된 파일의 이름은 공백을 포함할 수 없습니다 나으로 리소스 URI (Uniform Identifier), 예약 된 문자 아래에 정의 된 [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339)합니다.  
+> The names of the files included in VSIX packages must not include spaces, nor characters that are reserved in Uniform Resource Identifiers (URI), as defined under [\[RFC2396\]](https://go.microsoft.com/fwlink/?LinkId=90339).  
   
-## <a name="the-vsix-manifest"></a>VSIX 매니페스트  
- VSIX 매니페스트의 확장이 설치 되도록 하 고 다음과 같이 VSX 스키마에 대 한 정보를 포함 합니다. 자세한 내용은 [VSIX 확장 스키마 1.0 참조](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)합니다. VSIX 매니페스트 예제를 참조 하세요. [PackageManifest 요소 (루트 요소, VSX 스키마)](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)합니다.  
+## <a name="the-vsix-manifest"></a>The VSIX Manifest  
+ The VSIX manifest contains information about the extension to be installed, and follows the VSX Schema. For more information, see [VSIX Extension Schema 1.0 Reference](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). For an example VSIX manifest, see [PackageManifest Element (Root Element, VSX Schema)](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
   
- VSIX 매니페스트의 이름은 `extension.vsixmanifest` .vsix 파일에 포함 된 경우.  
+ The VSIX manifest must be named `extension.vsixmanifest` when it is included in a .vsix file.  
   
-## <a name="the-content"></a>콘텐츠  
- VSIX 패키지 템플릿, 도구 상자 항목, Vspackage 또는 다른 유형의 Visual Studio에서 지원 되는 확장에 포함 될 수 있습니다.  
+## <a name="the-content"></a>The Content  
+ A VSIX package may contain templates, toolbox items, VSPackages, or any other kind of extension that is supported by Visual Studio.  
   
 ## <a name="language-packs"></a>언어 팩  
- VSIX 패키지를 한 번 또는 설치 하는 동안 지역화 된 텍스트를 제공 하는 더 많은 Extension.vsixlangpack 파일에 포함할 수 있습니다. 자세한 내용은 [VSIX 패키지 지역화](../extensibility/localizing-vsix-packages.md)합니다.  
+ A VSIX package may contain once or more Extension.vsixlangpack files to provide localized text during installation. For more information, see [Localizing VSIX Packages](../extensibility/localizing-vsix-packages.md).  
   
-## <a name="dependencies-and-references"></a>종속성 및 참조  
- VSIX 패키지 참조로 다른 VSIX 패키지를 포함할 수 있습니다. 이러한 다른 패키지의 각 자체 VSIX 매니페스트를 포함 해야 합니다.  
+## <a name="dependencies-and-references"></a>Dependencies and References  
+ A VSIX package may contain other VSIX packages as references. Each of these other packages must include its own VSIX manifest.  
   
- 사용자가 종속성이 있는 확장을 설치 하려고 하는 경우 설치 관리자는 필요한 어셈블리 사용자 시스템에 설치 되어 있는지 확인 합니다. 필요한 어셈블리를 찾을 수 없는 경우 **확장 및 업데이트** 누락 된 어셈블리의 목록을 표시 합니다.  
+ If a user tries to install an extension that has dependencies, the installer verifies that the required assemblies are installed on the user system. If the required assemblies are not found, **Extensions and Updates** displays a list of the missing assemblies.  
   
- 확장 매니페스트 하나 이상 포함 하는 경우 [참조](https://msdn.microsoft.com/32c52934-e81e-4b53-8cb6-4df45ef7bfa8) 요소인 **확장 및 업데이트** 시스템에 설치 된 확장에 대 한 각 참조의 매니페스트를 비교 하 고 설치 합니다 아직 설치 되지 않은 경우 확장을 참조 합니다. 이전 버전을 참조 되는 확장의 설치 된 경우 최신 버전으로 바꿉니다.  
+ If the extension manifest includes one or more [Reference](https://msdn.microsoft.com/32c52934-e81e-4b53-8cb6-4df45ef7bfa8) elements, **Extensions and Updates** compares the manifest of each reference to the extensions that are installed on the system, and installs the referenced extension if it is not already installed. If an earlier version of a referenced extension is installed, the newer version replaces it.  
   
- 다중 프로젝트 솔루션에서 프로젝트를 동일한 솔루션에서 다른 프로젝트에 대 한 참조를 포함 하는 경우 해당 프로젝트의 종속성 VSIX 패키지에 포함 됩니다. 내부 프로젝트를 선택한 다음에 대 한 참조를 클릭 하 여이 동작을 재정의할 수 있습니다는 **속성** 창에서 설정 합니다 **출력 VSIX에 포함 된 그룹** 속성을 `BuiltProjectOutputGroup`입니다.  
+ If a project in a multi-project solution includes a reference to another project in the same solution, the VSIX package includes the dependencies of that project. You can override this behavior by clicking the reference for the internal project, and then, in the **Properties** window, setting the **Output Groups Included in VSIX** property to `BuiltProjectOutputGroup`.  
   
- VSIX 패키지에 참조 된 어셈블리의 위성 Dll을 포함 하려면 추가 `SatelliteDllsProjectOutputGroup` 에 **출력 VSIX에 포함 된 그룹** 속성입니다.  
+ To include satellite DLLs from referenced assemblies in the VSIX package, add `SatelliteDllsProjectOutputGroup` to the **Output Groups Included in VSIX** property.  
   
 ## <a name="installation-location"></a>설치 위치  
- 설치 하는 동안 **확장 및 업데이트** %LocalAppData%\Microsoft\VisualStudio\14.0\Extensions 아래의 폴더에 VSIX 패키지 내용의 압축을 찾습니다.  
+ During installation, **Extensions and Updates** looks for the contents of the VSIX package in a folder under %LocalAppData%\Microsoft\VisualStudio\14.0\Extensions.  
   
- 기본적으로 설치 % LocalAppData % 사용자별 디렉터리 이므로 현재 사용자 에게만 적용 합니다. 그러나 설정 하는 경우는 [AllUsers](https://msdn.microsoft.com/ac817f50-3276-4ddb-b467-8bbb1432455b) 매니페스트를 요소의 `True`, 아래에 확장을 설치할 수는... \\ *VisualStudioInstallationFolder*\Common7\IDE\Extensions 되며 컴퓨터의 모든 사용자에 게 제공 됩니다.  
+ By default, the installation applies only to the current user, because %LocalAppData% is a user-specific directory. However, if you set the [AllUsers](https://msdn.microsoft.com/ac817f50-3276-4ddb-b467-8bbb1432455b) element of the manifest to `True`, the extension will be installed under ..\\*VisualStudioInstallationFolder*\Common7\IDE\Extensions and will be available to all users of the computer.  
   
-## <a name="contenttypesxml"></a>[Content_Types].xml  
- [Content_Types].xml 파일에는 확장 된.vsix 파일의 파일 형식을 식별합니다. Visual Studio 패키지를 설치 하는 동안이 파일을 사용 하지만 파일 자체를 설치 하지 않습니다. 이 파일에 대 한 자세한 내용은 참조 하세요. [구조는 Content_types\].xml 파일](../extensibility/the-structure-of-the-content-types-dot-xml-file.md)합니다.  
+## <a name="content_typesxml"></a>[Content_Types].xml  
+ The [Content_Types].xml file identifies the file types in the expanded .vsix file. Visual Studio uses this file during installation of the package but does not install the file itself. For more information about this file, see [The Structure of the Content_types\].xml File](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
   
- [Content_Types].xml 파일을 여는 OPC Open Packaging Conventions () 표준 필요 합니다. OPC에 대 한 자세한 내용은 참조 하세요. [OPC: 새로운 표준에 대 한 패키징 Your 데이터](http://go.microsoft.com/fwlink/?LinkID=148207) MSDN 웹 사이트입니다.
+ A [Content_Types].xml file is required by the Open Packaging Conventions (OPC) standard. For more information about OPC, see [OPC: A New Standard For Packaging Your Data](https://go.microsoft.com/fwlink/?LinkID=148207) on the MSDN Web site.

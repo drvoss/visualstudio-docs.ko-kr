@@ -12,19 +12,19 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 81dd772d78b0abec7c2e22093ac6d30a9f6a0465
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 63d9e6694fab400b1f29ed5e2706bb788a760357
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72620973"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301258"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>NuGet을 사용한 참조 추가와 확장명 SDK를 사용한 참조 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio에 대한 NuGet 확장 또는 SDK(소프트웨어 개발 키트)를 사용하여 Visual Studio 프로젝트 내에서 사용할 패키지를 제공할 수 있습니다. 이 항목에서 설명하는 두 메커니즘 간의 유사점과 차이점을 참조하여 작업에 가장 적합한 메커니즘을 선택할 수 있습니다.
 
-- NuGet은 프로젝트 솔루션에 라이브러리를 통합하는 과정을 간소화하는 오픈 소스 패키지 관리 시스템입니다. 자세한 내용은 [NuGet 개요](http://go.microsoft.com/fwlink/?LinkId=254877)를 참조하세요.
+- NuGet은 프로젝트 솔루션에 라이브러리를 통합하는 과정을 간소화하는 오픈 소스 패키지 관리 시스템입니다. 자세한 내용은 [NuGet 개요](https://go.microsoft.com/fwlink/?LinkId=254877)를 참조하세요.
 
 - SDK는 Visual Studio에서 단일 참조 항목으로 처리하는 파일 컬렉션입니다. **참조 관리자** 대화 상자에는 해당 대화 상자를 표시할 때 열려 있던 프로젝트에 관련된 모든 SDK가 나열됩니다. 프로젝트에 SDK를 추가하면 IntelliSense, **도구 상자**, 디자이너, **개체 브라우저**, MSBuild, 배포, 디버깅 및 패키징을 통해 해당 SDK의 모든 내용에 액세스할 수 있습니다. SDK에 대한 자세한 내용은 [소프트웨어 개발 키트 만들기](../extensibility/creating-a-software-development-kit.md)를 참조하세요.
 

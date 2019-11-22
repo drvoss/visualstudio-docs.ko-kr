@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: b60e5df4d94c290ca8aa7bf56471b5fed6c1879a
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: 312c827c3b748e10951b243070f43cce559e3a60
+ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568902"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74127198"
 ---
 # <a name="container-tools-in-visual-studio"></a>Visual Studio의 컨테이너 도구
 
@@ -53,11 +53,13 @@ Docker 지원은 ASP.NET 프로젝트, ASP.NET Core, .NET Core 및 .NET Framewor
 
 Visual Studio의 Docker에 대한 지원은 고객 요구에 대응하여 여러 릴리스에 걸쳐 변경되었습니다. 프로젝트에 추가할 수 있는 Docker 지원에는 두 가지 수준이 있으며, 지원되는 옵션은 프로젝트의 유형 및 Visual Studio 버전에 따라 다릅니다. 일부 지원되는 프로젝트 유형에서 오케스트레이션을 사용하지 않고 단일 프로젝트용 컨테이너만 원하는 경우 Docker 지원을 추가하면 됩니다.  다음 수준은 컨테이너 오케스트레이션 지원으로, 선택한 특정 오케스트레이터용으로 적절한 지원 파일을 추가합니다.  
 
-
 Visual Studio 2019를 사용하면 Docker Compose, Kubernetes 및 Service Fabric을 컨테이너 오케스트레이션 서비스로 사용할 수 있습니다.
 
 > [!NOTE]
 > 전체 .NET Framework 콘솔 프로젝트 템플릿을 사용하는 중이면 Docker 지원을 추가하는 경우 Docker Compose를 사용한 오케스트레이션 지원이 자동으로 추가됩니다.
+
+Visual Studio 2019 버전 16.4 이상에서는 실행 중인 컨테이너를 보고, 사용할 수 있는 이미지를 찾아보고, 환경 변수, 로그 및 포트 매핑을 보고, 파일 시스템을 검사하고, 디버거를 연결하거나, 컨테이너 환경 내에서 터미널 창을 열 수 있는 **컨테이너** 창을 사용할 수 있습니다. [Visual Studio에서 컨테이너와 이미지를 보고 진단](view-and-diagnose-containers.md)을 참조하세요.
+
 ::: moniker-end
 
 ### <a name="adding-docker-support"></a>Docker 지원 추가

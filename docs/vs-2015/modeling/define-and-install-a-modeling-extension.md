@@ -1,5 +1,5 @@
 ---
-title: 모델링 확장 정의 및 설치 | Microsoft Docs
+title: Define and install a modeling extension | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -12,20 +12,20 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 66a9cdab1284d015e2ea76162d240b6a1232d90f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9c0fa4e92c62ffb5b9c41cf5e297ed11ca63c38e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669913"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298717"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>모델링 확장 정의 및 설치
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio에서 모델링 다이어그램에 대한 확장을 정의할 수 있습니다. 이러한 방식으로 사용자 고유의 요구에 따라 다이어그램 및 모델을 조정할 수 있습니다. 예를 들어 메뉴 명령, UML 프로필, 유효성 검사 제약 조건 및 도구 상자 항목을 정의할 수 있습니다. 단일 확장에서 여러 개의 구성 요소를 정의할 수 있습니다. [VSIX(Visual Studio Integration Extension)](http://go.microsoft.com/fwlink/?LinkId=160780)(영문) 형식으로 이러한 확장을 다른 Visual Studio 사용자에게 배포할 수도 있습니다. Visual Studio에서 VSIX 프로젝트를 사용하여 VSIX를 만들 수 있습니다.
+Visual Studio에서 모델링 다이어그램에 대한 확장을 정의할 수 있습니다. 이러한 방식으로 사용자 고유의 요구에 따라 다이어그램 및 모델을 조정할 수 있습니다. 예를 들어 메뉴 명령, UML 프로필, 유효성 검사 제약 조건 및 도구 상자 항목을 정의할 수 있습니다. 단일 확장에서 여러 개의 구성 요소를 정의할 수 있습니다. [VSIX(Visual Studio Integration Extension)](https://go.microsoft.com/fwlink/?LinkId=160780)(영문) 형식으로 이러한 확장을 다른 Visual Studio 사용자에게 배포할 수도 있습니다. Visual Studio에서 VSIX 프로젝트를 사용하여 VSIX를 만들 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
- [요구 사항](../modeling/extend-uml-models-and-diagrams.md#Requirements)을 참조 하세요.
+ See [Requirements](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  이 기능을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
 
@@ -74,10 +74,10 @@ Visual Studio에서 모델링 다이어그램에 대한 확장을 정의할 수 
 
         |||
         |-|-|
-        |**형식**  =|**VisualStudio 구성 요소**|
-        |**Source** =|**현재 솔루션의 프로젝트**|
-        |**프로젝트**  =|*클래스 라이브러리 프로젝트*|
-        |**이 폴더에 포함**  =|*비우려면*|
+        |**Type** =|**Microsoft.VisualStudio.MefComponent**|
+        |**Source** =|**A project in current solution**|
+        |**Project** =|*Your class library project*|
+        |**Embed in this folder** =|*(empty)*|
 
          다른 구성 요소 형식의 경우 다음 섹션의 링크를 참조하세요.
 
@@ -109,14 +109,14 @@ Visual Studio에서 모델링 다이어그램에 대한 확장을 정의할 수 
 
 3. **디버깅하지 않고 시작** 을 사용했지만 디버거를 사용하려는 경우 Visual Studio의 기본 인스턴스로 돌아갑니다. **디버그** 메뉴에서 **프로세스에 연결**을 클릭합니다. 대화 상자에서 프로그램 이름이 **devenv**인 Visual Studio의 실험적 인스턴스를 선택합니다.
 
-## <a name="Installing"></a>확장 설치 및 제거
+## <a name="Installing"></a> Installing and uninstalling an extension
  자신의 컴퓨터나 다른 컴퓨터의 Visual Studio 기본 인스턴스에서 확장을 실행하려면 다음 단계를 수행합니다.
 
 1. 사용 중인 컴퓨터에서 확장 프로젝트를 통해 빌드된 **.vsix** 파일을 찾습니다.
 
     1. **솔루션 탐색기**의 프로젝트 바로 가기 메뉴에서 **Windows 탐색기에서 폴더 열기**를 선택합니다.
 
-    2. 파일 **bin \\ \* \\** _프로젝트_**vsix** 를 찾습니다.
+    2. Locate the file **bin\\\*\\** _YourProject_ **.vsix**
 
 2. 확장을 설치할 대상 컴퓨터에 **.vsix** 파일을 복사합니다. 이 컴퓨터는 사용 중인 컴퓨터이거나 다른 컴퓨터일 수 있습니다.
 
@@ -136,9 +136,9 @@ Visual Studio에서 모델링 다이어그램에 대한 확장을 정의할 수 
 
 3. 확장을 선택하고 **제거**를 클릭합니다.
 
-   드물게 결함이 있는 확장은 로드되지 않고 오류 창에 보고서를 생성하지만 확장 관리자에 나타나지 않습니다. 이 경우 다음 위치에서 파일을 삭제 하 여 확장을 제거할 수 있습니다. 여기서 *% LocalAppData%* 는 일반적으로 *DriveName*: \Users \\*UserName*\AppData\Local입니다.
+   드물게 결함이 있는 확장은 로드되지 않고 오류 창에 보고서를 생성하지만 확장 관리자에 나타나지 않습니다. In that case, you can remove the extension by deleting the file from the following location where *%LocalAppData%* is typically *DriveName*:\Users\\*UserName*\AppData\Local:
 
-   *% LocalAppData%* **\Microsoft\VisualStudio \\ [version] \extensions**
+   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**
 
 ## <a name="see-also"></a>관련 항목:
- [프로필을 정의 하 여 uml 확장](../modeling/define-a-profile-to-extend-uml.md) [사용자 지정 모델링 도구 상자 정의](../modeling/define-a-custom-modeling-toolbox-item.md) [uml 모델에 대 한 유효성 검사 제약 조건 정의](../modeling/define-validation-constraints-for-uml-models.md) [모델링 다이어그램의 메뉴 명령 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
+ [Define a profile to extend UML](../modeling/define-a-profile-to-extend-uml.md) [Define a custom modeling toolbox item](../modeling/define-a-custom-modeling-toolbox-item.md) [Define validation constraints for UML models](../modeling/define-validation-constraints-for-uml-models.md) [Define a menu command on a modeling diagram](../modeling/define-a-menu-command-on-a-modeling-diagram.md)

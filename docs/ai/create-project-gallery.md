@@ -9,16 +9,16 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 3967b637d547ed99ed840761b3b843068afee1af
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 6f84051e4450926136064b9af7f3c09e2e91a2f9
+ms.sourcegitcommit: 8530d15aa72fe058ee3a3b4714c36b8638f8b494
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777480"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188579"
 ---
 # <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Visual Studio의 Azure Machine Learning 갤러리에서 AI 프로젝트 만들기
 
-Azure Machine Learning은 Visual Studio Tools for AI와 통합됩니다. Azure 가상 머신, Spark 클러스터 등과 같은 원격 컴퓨팅 대상에 기계 학습 작업을 제출할 수 있습니다. [Azure Machine Learning 실험](https://docs.microsoft.com/azure/machine-learning/preview/experimentation-service-configuration)에 대해 자세히 알아보세요.
+Azure Machine Learning은 Visual Studio Tools for AI와 통합됩니다. Azure 가상 머신, Spark 클러스터 등과 같은 원격 컴퓨팅 대상에 기계 학습 작업을 제출할 수 있습니다. 
 
 [Visual Studio Tools for AI](installation.md)가 설치되면 Azure Machine Learning 샘플 갤러리에서 미리 만들어진 방법을 사용하여 새 Python 프로젝트를 쉽게 만들 수 있습니다.
 

@@ -8,12 +8,12 @@ ms.assetid: 20221de4-2a9e-4787-b99a-b5855bb90872
 caps.latest.revision: 18
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: df937d43c196193593bcfb1244bcc9e59a3c634a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6ff1d953dc853beba8ef836b1eab03140ee0b1e0
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660668"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300399"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes의 코드 생성, 컴파일 및 명명 규칙
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -285,7 +285,7 @@ attribute of the Assembly element in the .fakes:
 ## <a name="BKMK_External_resources"></a> 외부 리소스
 
 ### <a name="BKMK_Guidance"></a> 지침
- [Visual Studio 2012를 사용한 연속 배달 테스트 - 2장: 단위 테스트: 내부 테스트](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Visual Studio 2012를 사용한 연속 배달 테스트 - 2장: 단위 테스트: 내부 테스트](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ## <a name="see-also"></a>참고 항목
  [Microsoft Fakes를 사용하여 테스트 중인 코드 격리](../test/isolating-code-under-test-with-microsoft-fakes.md)

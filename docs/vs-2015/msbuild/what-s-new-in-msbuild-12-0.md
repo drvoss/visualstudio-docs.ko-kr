@@ -9,17 +9,17 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9746b156d2ec959f2ffb5bbff41b3891516d130f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9d088844a3d8c1137b762b541b0393f939cdc194
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68193616"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301291"
 ---
 # <a name="what39s-new-in-msbuild-120"></a>MSBuild 12.0의 새로운 기능
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-MSBuild는 이제 .NET Framework의 일부가 아니라 Visual Studio의 일부로 설치되었습니다. 현재 MSBuild 버전 번호는 12.0입니다. MSBuild를 개별적으로 설치하려면 [MSBuild 다운로드](http://go.microsoft.com/fwlink/?LinkId=309745)에서 설치 패키지를 다운로드하세요.  
+MSBuild는 이제 .NET Framework의 일부가 아니라 Visual Studio의 일부로 설치되었습니다. 현재 MSBuild 버전 번호는 12.0입니다. MSBuild를 개별적으로 설치하려면 [MSBuild 다운로드](https://go.microsoft.com/fwlink/?LinkId=309745)에서 설치 패키지를 다운로드하세요.  
   
 ## <a name="changed-path"></a>변경된 경로  
  이제 MSBuild는 *%ProgramFiles%* 아래(예: C:\Program Files\MSBuild\\)에 직접 설치됩니다.  

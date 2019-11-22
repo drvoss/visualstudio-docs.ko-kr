@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bf06151265c1647de29725917624c5984577bf6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d5e41dbf3422374add68e351da1e4b703772a3a4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658609"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296865"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>연습: Visual C# 또는 Visual Basic으로 간단한 애플리케이션 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,10 +30,10 @@ ms.locfileid: "72658609"
  [애플리케이션 디버깅 및 테스트](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)
 
 > [!NOTE]
-> 이 연습은 Visual Studio Professional을 기반으로 하며, 여기서 제공하는 WPF 애플리케이션 템플릿에서 이 연습용 프로젝트를 빌드하게 됩니다. Visual Studio Express for Windows Desktop에서도 이 템플릿을 제공하지만, Visual Studio Express for Windows 및 Visual Studio Express for Web에서는 제공하지 않습니다. Visual Studio Express for Windows 사용 방법에 대한 기본적인 정보는 [Windows 스토어 앱용 개발자 센터](https://msdn.microsoft.com/windows/apps/br229519)를 참조하세요. Visual Studio Express for Web 사용 방법에 대한 기본적인 정보는 [ASP.NET 시작](http://www.asp.net/get-started)을 참조하세요. 또한 사용 중인 Visual Studio 버전과 설정에 따라 일부 사용자 인터페이스 요소의 이름과 위치가 결정됩니다. [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.
+> 이 연습은 Visual Studio Professional을 기반으로 하며, 여기서 제공하는 WPF 애플리케이션 템플릿에서 이 연습용 프로젝트를 빌드하게 됩니다. Visual Studio Express for Windows Desktop에서도 이 템플릿을 제공하지만, Visual Studio Express for Windows 및 Visual Studio Express for Web에서는 제공하지 않습니다. Visual Studio Express for Windows 사용 방법에 대한 기본적인 정보는 [Windows 스토어 앱용 개발자 센터](https://msdn.microsoft.com/windows/apps/br229519)를 참조하세요. Visual Studio Express for Web 사용 방법에 대한 기본적인 정보는 [ASP.NET 시작](https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro)을 참조하세요. 또한 사용 중인 Visual Studio 버전과 설정에 따라 일부 사용자 인터페이스 요소의 이름과 위치가 결정됩니다. [Visual Studio에서 개발 설정 사용자 지정](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)을 참조하세요.
 
 ## <a name="BKMK_ConfigureIDE"></a> IDE 구성
- Visual Studio를 처음 시작하는 경우 MSA(Microsoft Service Account)로 로그인하라는 [Visual Studio에 로그인](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx)메시지가 표시됩니다. 당장 로그인할 필요는 없으며 나중에 로그인해도 됩니다.
+ Visual Studio를 처음 시작하는 경우 MSA(Microsoft Service Account)로 로그인하라는 [Visual Studio에 로그인](https://devblogs.microsoft.com/visualstudio/welcome-sign-in-to-visual-studio/)메시지가 표시됩니다. 당장 로그인할 필요는 없으며 나중에 로그인해도 됩니다.
 
  Visual Studio가 시작되면 다음으로 IDE에는 일련의 미리 정의된 사용자 지정을 적용하는 설정 조합을 선택해야 합니다. 각 설정 조합은 쉽게 애플리케이션을 개발할 수 있도록 설계되었습니다.
 
@@ -90,7 +90,7 @@ ms.locfileid: "72658609"
 
     또는
 
-    ![Visual C# WPF 프로젝트 HelloWPFApp 만들기](../ide/media/exploreide-newprojectcsharp.png "|::ref9::|")
+    ![HelloWPFApp Visual C&#35; WPF 프로젝트 만들기](../ide/media/exploreide-newprojectcsharp.png "|::ref9::|")
 
    HelloWPFApp 프로젝트 및 솔루션이 만들어지고 **솔루션 탐색기** 에 다양한 파일이 표시됩니다. WPF Designer는 분할 뷰에 디자인 뷰와 MainWindow.xaml의 XAML 뷰를 표시합니다. 분할자를 밀어 뷰를 더 많이 표시하거나 더 적게 표시할 수 있습니다.  시각적 뷰만 표시하거나 XAML 뷰만 표시하도록 선택할 수 있습니다. 자세한 내용은 [Windows Forms 개발자용 WPF 디자이너](https://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca)를 참조하세요. 다음 항목이 **솔루션 탐색기**에 나타납니다.
 
@@ -332,4 +332,4 @@ ms.locfileid: "72658609"
    이 연습을 완료한 것을 축하 드립니다! 솔루션 및 프로젝트 디렉터리(…\HelloWPFApp\HelloWPFApp\bin\Release\\)에서 빌드한.exe를 찾을 수 있습니다. 더 많은 예제를 탐색하려는 경우 [Visual Studio 샘플](../ide/visual-studio-samples.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
- [Visual studio 2015 ](../what-s-new-in-visual-studio-2015.md)의 새로운 기능 [Get Visual Studio를 사용 하 여 개발 시작 ](../ide/get-started-developing-with-visual-studio.md) [Productivity 팁](../ide/productivity-tips-for-visual-studio.md)
+ [Visual studio 2015의 새로운 기능](../what-s-new-in-visual-studio-2015.md) [Visual Studio에서 개발 시작](../ide/get-started-developing-with-visual-studio.md) [생산성 팁](../ide/productivity-tips-for-visual-studio.md)

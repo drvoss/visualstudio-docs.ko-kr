@@ -9,19 +9,19 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2d5f3f02e89e77b63420d4a04062d7b661c0c9f2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 90fab2724c3d392db7824222da2450a8a4d585c3
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671818"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295743"
 ---
 # <a name="step-3-set-your-form-properties"></a>3단계: 폼 속성 설정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이제 **속성** 창을 사용하여 폼의 모양을 변경합니다.
 
- ![비디오에 연결](../data-tools/media/playvideo.gif "링크 playvideo 보려면") 이 항목의 비디오 버전을 보려면 [자습서 1: Visual Basic에서 사진 뷰어 만들기-비디오 1](http://go.microsoft.com/fwlink/?LinkId=205209) 또는 [자습서 1: 비디오 1에서 C# 사진 뷰어 만들기](http://go.microsoft.com/fwlink/?LinkId=205199)를 참조 하세요. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
+ ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 1](https://go.microsoft.com/fwlink/?LinkId=205209) or [Tutorial 1: Create a Picture Viewer in C# - Video 1](https://go.microsoft.com/fwlink/?LinkId=205199). 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
 
 ### <a name="to-set-your-form-properties"></a>폼 속성을 설정하려면
 
@@ -34,7 +34,7 @@ ms.locfileid: "72671818"
 
 3. 폼을 선택한 후 **속성** 창에서 **텍스트** 속성을 찾습니다. 목록을 정렬 방법에 따라 아래로 스크롤해야 할 수도 있습니다. **텍스트**를 선택하고 **사진 뷰어**를 입력한 다음 Enter 키를 선택합니다.  이제 폼의 제목 표시줄에 **사진 뷰어**라는 텍스트가 표시되고 **속성** 창이 다음 그림과 같이 표시됩니다.
 
-    ![속성 창](../ide/media/express-edittextproperty.png "Express_EditTextProperty") 속성 창
+    ![Properties window](../ide/media/express-edittextproperty.png "Express_EditTextProperty") Properties window
 
    > [!NOTE]
    > 속성은 항목별 뷰 또는 사전순 뷰로 정렬할 수 있는데, **속성** 창에 있는 단추를 사용하면 이러한 두 뷰 간에 전환할 수 있습니다. 이 자습서에서는 사전순 뷰에서 속성을 더 쉽게 찾을 수 있습니다.
@@ -55,7 +55,7 @@ ms.locfileid: "72671818"
 
    - 도구 모음에서 **디버깅 시작** 단추를 선택하면 다음과 같이 표시됩니다.
 
-      ![디버깅 시작 도구 모음 단추](../ide/media/express-icondebug.png "Express_IconDebug") 디버깅 시작 도구 모음 단추
+      ![Start Debugging toolbar button](../ide/media/express-icondebug.png "Express_IconDebug") Start Debugging toolbar button
 
      이전과 마찬가지로 IDE에 의해 프로그램이 빌드되고 실행되며 창이 나타납니다.
 

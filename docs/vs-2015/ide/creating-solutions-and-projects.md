@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 47083fe3f496cb855a7fb7101a886290e53cfbce
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 03ecd3fcc253f255afc59c2d6412f3864fe253b8
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72619126"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300606"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "72619126"
  4\.0 이전 버전의 프레임워크에 액세스하려면 시스템에 .NET Framework 3.5가 설치되어 있어야 합니다.
 
 ## <a name="downloading-sample-solutions"></a>샘플 솔루션 다운로드
- Visual Studio를 사용하여 [MSDN 코드 갤러리](http://go.microsoft.com/fwlink/?LinkId=254185)에서 샘플 솔루션을 다운로드한 후 설치할 수 있습니다.
+ Visual Studio를 사용하여 [MSDN 코드 갤러리](https://go.microsoft.com/fwlink/?LinkId=254185)에서 샘플 솔루션을 다운로드한 후 설치할 수 있습니다.
 
  샘플을 개별적으로 다운로드하거나 기술 또는 항목을 공유하는 관련된 샘플을 포함하는 샘플 팩을 다운로드할 수 있습니다. 소스 코드 변경 내용이 다운로드하는 샘플에 게시되는 경우 알림을 받게 됩니다.
 

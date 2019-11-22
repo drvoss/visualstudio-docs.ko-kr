@@ -13,17 +13,17 @@ caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: d040353aadbc448b6608cd11fc78a134872fdafa
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a146872561c4be5fe48016c17eb64ad6f854106a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65693570"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298019"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Visual Studio 버전 병렬 설치
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이전 버전이 설치된 컴퓨터에 이 버전의 Visual Studio를 설치할 수 있습니다. 설치 오류가 발생할 경우 문제를 직접 디버그할 수 있도록 [로그 수집 도구](http://go.microsoft.com/fwlink/?LinkId=262077) 를 사용하여 오류에 대한 정보를 수집할 수 있습니다.
+이전 버전이 설치된 컴퓨터에 이 버전의 Visual Studio를 설치할 수 있습니다. 설치 오류가 발생할 경우 문제를 직접 디버그할 수 있도록 [로그 수집 도구](https://go.microsoft.com/fwlink/?LinkId=262077) 를 사용하여 오류에 대한 정보를 수집할 수 있습니다.
 
 > [!NOTE]
 > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 버전은 출시 순서대로 설치하는 것이 좋습니다. 예를 들어 Visual Studio 2015를 설치하기 전에 Visual Studio 2013을 설치합니다.
@@ -36,7 +36,7 @@ ms.locfileid: "65693570"
 
 - 둘 이상의 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 버전이 설치된 컴퓨터에서 한 버전을 제거할 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 의 파일 연결이 모든 버전에 대해 제거됩니다. **옵션** 대화 상자의 **환경**, **일반** 페이지에 있는 [파일 연결 복원](../ide/reference/general-environment-options-dialog-box.md) 단추를 사용하여 이 파일 연결을 다시 매핑할 수 있습니다.
 
-- 모든 확장이 호환되는 것은 아니므로 Visual Studio에서는 확장을 자동으로 업그레이드하지 않습니다. [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=178891) 또는 소프트웨어 게시자에서 확장을 다시 설치해야 합니다.
+- 모든 확장이 호환되는 것은 아니므로 Visual Studio에서는 확장을 자동으로 업그레이드하지 않습니다. [Visual Studio Marketplace](https://go.microsoft.com/fwlink/?LinkId=178891) 또는 소프트웨어 게시자에서 확장을 다시 설치해야 합니다.
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>.NET Framework 버전 및 Side-by-Side 설치
 

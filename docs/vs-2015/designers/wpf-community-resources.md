@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0c2e58686c1369847fdeb0d83aaac6c65341aa08
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7d740f1cc6c19e8d3b53dc084d9de01547369337
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663928"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299543"
 ---
 # <a name="wpf-community-resources"></a>WPF 커뮤니티 리소스
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,13 +22,13 @@ ms.locfileid: "72663928"
 Microsoft는 WPF 팀 멤버 및 커뮤니티 리더가 생성한 블로그, 포럼 및 Microsoft Connect 피드백 센터를 포함하여 배우고, 토론하고, WPF(Windows Presentation Foundation)에 대한 피드백을 제공하는 다양한 커뮤니티 리소스를 제공합니다.
 
 ## <a name="community"></a>커뮤니티
- [WPF 포럼](http://go.microsoft.com/fwlink/?LinkId=187440)
+ [WPF 포럼](https://go.microsoft.com/fwlink/?LinkId=187440)
 
- [스택 오버플로](http://stackoverflow.com/questions/tagged/wpf)
+ [스택 오버플로](https://stackoverflow.com/questions/tagged/wpf)
 
- [WPF 팀 블로그](http://blogs.msdn.com/b/wpf/)
+ [WPF 팀 블로그](https://devblogs.microsoft.com/wpf/)
 
- [CodePlex의 WPF 도구 키트](http://wpf.codeplex.com/)
+ [CodePlex의 WPF 도구 키트](https://archive.codeplex.com/?p=wpf)
 
  [Windows Presentation Foundation 개발자 센터](https://www.visualstudio.com/features/wpf-vs)
 

@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5a543e7a1e2aca4590df320261aef2c653a55132
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cb2b5a55f778b8025ea9da25713eca903f9cbf74
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662614"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296210"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Visual C++ 코드 사용(클래스 디자이너)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ ms.locfileid: "72662614"
 - 클래스 디자이너에서 찾을 수 있도록 형식이 올바른 범위에 있는지 확인하세요. 이 경우 코드에 `using`, `imports` 또는 `#include` 문이 누락되지 않았는지 확인합니다. 또한 해당 형식이나 관련 형식을 원래 있던 네임스페이스 밖으로 이동하지 않았는지 확인합니다.
 
 ### <a name="troubleshooting-other-error-messages"></a>기타 오류 메시지 문제 해결
- MSDN(Microsoft Developer Network) 공개 포럼에서 오류 및 경고 문제 해결 관련 지원 정보를 찾을 수 있습니다. [Visual Studio Class Designer Forum](http://go.microsoft.com/fwlink/?linkid=160754)(Visual Studio 클래스 디자이너 포럼)을 참조하세요.
+ MSDN(Microsoft Developer Network) 공개 포럼에서 오류 및 경고 문제 해결 관련 지원 정보를 찾을 수 있습니다. [Visual Studio Class Designer Forum](https://go.microsoft.com/fwlink/?linkid=160754)(Visual Studio 클래스 디자이너 포럼)을 참조하세요.
 
 ## <a name="limitations"></a> C++ 코드 요소에 대한 제한 사항
 
@@ -107,4 +107,4 @@ ms.locfileid: "72662614"
 - 클래스 디자이너에서는 void 형식이거나 void 형식에서 파생된 형식을 표시할 수 없습니다.
 
 ## <a name="see-also"></a>참고 항목
- 클래스 및 [형식 디자인 및 보기](../ide/designing-and-viewing-classes-and-types.md) 클래스 및 [기타 형식 작업 (클래스 디자이너)](../ide/working-with-classes-and-other-types-class-designer.md) [클래스 다이어그램 작업 (클래스 디자이너)](../ide/working-with-class-diagrams-class-designer.md) 클래스 [및 형식 디자인 (클래스 디자이너)](../ide/designing-classes-and-types-class-designer.md) [추가 정보 클래스 디자이너 오류](../ide/additional-information-about-class-designer-errors.md) [ C++ ](../ide/visual-cpp-classes-in-class-designer.md) 시각적 개체 클래스 디자이너의 시각적 [ C++ 구조 클래스 디자이너](../ide/visual-cpp-structures-in-class-designer.md) [ C++ ](../ide/visual-cpp-enumerations-in-class-designer.md) 의 시각적 개체 클래스 디자이너 클래스 디자이너의 시각적 [ C++ 형식 정의](../ide/visual-cpp-typedefs-in-class-designer.md)
+ 클래스 및 [형식 디자인 및 보기](../ide/designing-and-viewing-classes-and-types.md) 클래스 및 [기타 형식 작업 (클래스 디자이너)](../ide/working-with-classes-and-other-types-class-designer.md) [클래스 다이어그램 작업 (클래스 디자이너) 클래스 다이어그램 작업](../ide/working-with-class-diagrams-class-designer.md) [(클래스 디자이너) 클래스 및 형식 디자인](../ide/designing-classes-and-types-class-designer.md) 클래스 디자이너 시각적 [ C++ 구조체](../ide/visual-cpp-structures-in-class-designer.md) 의 시각적 개체에 [ C++ ](../ide/visual-cpp-classes-in-class-designer.md) [클래스 디자이너 대 한 추가 정보](../ide/additional-information-about-class-designer-errors.md) 클래스 디자이너 시각적 [ C++ 형식](../ide/visual-cpp-typedefs-in-class-designer.md) 클래스 디자이너의 시각적 [ C++ 열거형](../ide/visual-cpp-enumerations-in-class-designer.md) 클래스 디자이너

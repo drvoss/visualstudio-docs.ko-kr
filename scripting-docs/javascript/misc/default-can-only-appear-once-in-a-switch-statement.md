@@ -26,9 +26,9 @@ Switch 문 내에서 **기본** 문을 두 번 이상 사용 하려고 했습니
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
-- @No__t_1 문에서 추가 **기본** case 문을 제거 합니다 (switch 문에는 하나의 기본 case 문만 사용).  
+- `switch` 문에서 추가 **기본** case 문을 제거 합니다 (switch 문에는 하나의 기본 case 문만 사용).  
   
-## <a name="see-also"></a>참조  
- [Switch 문](../../javascript/reference/switch-statement-javascript.md)    
- [프로그램 흐름   제어](../../javascript/controlling-program-flow-javascript.md)  
+## <a name="see-also"></a>참고 항목  
+ [Switch 문](../../javascript/reference/switch-statement-javascript.md)   
+ [프로그램 흐름  제어](../../javascript/controlling-program-flow-javascript.md)  
  [JavaScript 예약어](../../javascript/reference/javascript-reserved-words.md)

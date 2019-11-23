@@ -40,7 +40,7 @@ HRESULT DebugOutput(
  진행 디버거에 표시할 문자열입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드는 `HRESULT`를 반환 합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
+ 이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
   
 |값|설명|  
 |-----------|-----------------|  
@@ -51,6 +51,6 @@ HRESULT DebugOutput(
   
  이 메서드를 호출 하면 `IApplicationDebugger::onDebugOutput` 호출 됩니다.  
   
-## <a name="see-also"></a>참조  
- [Idebugapplication 인터페이스](../../winscript/reference/idebugapplication-interface.md)    
+## <a name="see-also"></a>참고 항목  
+ [Idebugapplication 인터페이스](../../winscript/reference/idebugapplication-interface.md)   
  [IApplicationDebugger::onDebugOutput](../../winscript/reference/iapplicationdebugger-ondebugoutput.md)

@@ -48,7 +48,7 @@ HRESULT ResumeFromBreakPoint(
  진행 오류가 발생 하 여 응용 프로그램이 중지 되는 경우 수행할 작업입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드는 `HRESULT`를 반환 합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
+ 이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
   
 |값|설명|  
 |-----------|-----------------|  
@@ -57,7 +57,7 @@ HRESULT ResumeFromBreakPoint(
 ## <a name="remarks"></a>주의  
  이 메서드는 현재 중단점에 있는 응용 프로그램을 계속 합니다.  
   
-## <a name="see-also"></a>참조  
- [Iremotedebugapplication 인터페이스](../../winscript/reference/iremotedebugapplication-interface.md)    
- [BREAKRESUMEACTION 열거형](../../winscript/reference/breakresumeaction-enumeration.md)    
+## <a name="see-also"></a>참고 항목  
+ [Iremotedebugapplication 인터페이스](../../winscript/reference/iremotedebugapplication-interface.md)   
+ [BREAKRESUMEACTION 열거형](../../winscript/reference/breakresumeaction-enumeration.md)   
  [ERRORRESUMEACTION 열거형](../../winscript/reference/errorresumeaction-enumeration.md)

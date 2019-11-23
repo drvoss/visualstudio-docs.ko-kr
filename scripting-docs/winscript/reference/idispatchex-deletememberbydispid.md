@@ -37,14 +37,14 @@ HRESULT DeleteMemberByDispID(
   
 #### <a name="parameters"></a>매개 변수  
  `id`  
- 멤버 식별자입니다. @No__t_0 또는 `GetNextDispID`를 사용 하 여 디스패치 식별자를 가져옵니다.  
+ 멤버 식별자입니다. `GetDispID` 또는 `GetNextDispID`를 사용 하 여 디스패치 식별자를 가져옵니다.  
   
 ## <a name="return-value"></a>반환 값  
  는 다음 값 중 하나를 반환 합니다.  
   
 |||  
 |-|-|  
-|`S_OK`|성공할.|  
+|`S_OK`|명령 실행 성공|  
 |`S_FALSE`|멤버가 있지만 삭제할 수 없습니다.|  
   
 ## <a name="remarks"></a>주의  
@@ -64,7 +64,7 @@ if (SUCCEEDED(pdex->GetDispID(bstrName, fdexNameCaseSensitive, &dispid)))
     pdex->DeleteMemberByDispID(dispid);  
 ```  
   
-## <a name="see-also"></a>참조  
- [IDispatchEx 인터페이스](../../winscript/reference/idispatchex-interface.md)    
- [IDispatchEx:: GetDispID](../../winscript/reference/idispatchex-getdispid.md)    
+## <a name="see-also"></a>참고 항목  
+ [IDispatchEx 인터페이스](../../winscript/reference/idispatchex-interface.md)   
+ [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

@@ -25,7 +25,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573610"
 ---
 # <a name="iscriptnode-createchildentry"></a>IScriptNode:: CreateChildEntry
-@No__t_0의 자식 인스턴스를 추가 합니다.  
+`IScriptEntry`의 자식 인스턴스를 추가 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -61,7 +61,7 @@ HRESULT CreateChildEntry(
   
  함수 개체를 나타내는 `IScriptEntry` 개체의 경우이 메서드는 실패 합니다.  
   
- @No__t_0 개체의 경우이 메서드는 실패 합니다.  
+ `IScriptScriptlet` 개체의 경우이 메서드는 실패 합니다.  
   
 ## <a name="return-value"></a>반환 값  
  `HRESULT`입니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
@@ -71,8 +71,8 @@ HRESULT CreateChildEntry(
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>주의  
- @No__t_0 인터페이스는 웹 페이지 또는 해당 요소를 나타냅니다. @No__t_1에서 파생 된 `IScriptEntry` 인터페이스는 스크립트 블록이 나 함수 개체를 나타냅니다. @No__t_1에서 파생 된 `IScriptScriptlet` 인터페이스는 이벤트 처리기를 나타냅니다.  
+ `IScriptNode` 인터페이스는 웹 페이지 또는 해당 요소를 나타냅니다. `IScriptNode`에서 파생 된 `IScriptEntry` 인터페이스는 스크립트 블록이 나 함수 개체를 나타냅니다. `IScriptEntry`에서 파생 된 `IScriptScriptlet` 인터페이스는 이벤트 처리기를 나타냅니다.  
   
-## <a name="see-also"></a>참조  
- [Iscriptnode 인터페이스](../../winscript/reference/iscriptnode-interface.md)    
+## <a name="see-also"></a>참고 항목  
+ [Iscriptnode 인터페이스](../../winscript/reference/iscriptnode-interface.md)   
  [IScriptEntry 인터페이스](../../winscript/reference/iscriptentry-interface.md)

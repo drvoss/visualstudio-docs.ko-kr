@@ -42,7 +42,7 @@ typedef struct DebugPropertyInfo{
 ```  
   
 ## <a name="members"></a>멤버  
- Dw유효한 필드  
+ dwValidFields  
  초기화할 필드를 지정 하는 데 사용 되는 열거 데이터 형식입니다.  
   
  bstrName  
@@ -63,7 +63,7 @@ typedef struct DebugPropertyInfo{
  pDebugProp  
  이 `DebugPropertyInfo` 구조의 정보에서 설명 하는 `IDebugProperty`입니다.  
   
-## <a name="see-also"></a>참조  
- [Idebugproperty 인터페이스](../../winscript/reference/idebugproperty-interface.md)    
- [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)    
+## <a name="see-also"></a>참고 항목  
+ [Idebugproperty 인터페이스](../../winscript/reference/idebugproperty-interface.md)   
+ [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)   
  [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)

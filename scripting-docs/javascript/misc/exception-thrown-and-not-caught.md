@@ -32,7 +32,7 @@ ms.locfileid: "72572861"
   
 - 예외가 다시 throw 되는 경우 다른 해당 catch 문이 있는지 확인 합니다.  
   
-## <a name="see-also"></a>참조  
- [오류 개체](../../javascript/reference/error-object-javascript.md)    
- [Throw 문](../../javascript/reference/throw-statement-javascript.md)    
+## <a name="see-also"></a>참고 항목  
+ [오류 개체](../../javascript/reference/error-object-javascript.md)   
+ [Throw 문](../../javascript/reference/throw-statement-javascript.md)   
  [try...catch...finally 문](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

@@ -42,10 +42,10 @@ typedef DWORD SCRIPTTHREADID;
 |SCRIPTTHREADID_ALL|0xFFFFFFFF|모든 스레드.|  
   
 ## <a name="remarks"></a>주의  
- @No__t_0 형식은 `IActiveScript::GetCurrentScriptThreadID`, `IActiveScript::GetScriptThreadID`, `IActiveScript::GetScriptThreadState` 및 `IActiveScript::InterruptScriptThread`에서 사용 되지만 상수는 `IActiveScript::GetScriptThreadState` 및 `IActiveScript::InterruptScriptThread` 에서만 사용할 수 있습니다.  
+ `SCRIPTTHREADID` 형식은 `IActiveScript::GetCurrentScriptThreadID`, `IActiveScript::GetScriptThreadID`, `IActiveScript::GetScriptThreadState`및 `IActiveScript::InterruptScriptThread`에서 사용 되지만 상수는 `IActiveScript::GetScriptThreadState` 및 `IActiveScript::InterruptScriptThread`에서만 사용할 수 있습니다.  
   
-## <a name="see-also"></a>참조  
- [IActiveScript:: GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)    
- [IActiveScript:: GetScriptThreadID](../../winscript/reference/iactivescript-getscriptthreadid.md)    
- [IActiveScript:: GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md)    
+## <a name="see-also"></a>참고 항목  
+ [IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)   
+ [IActiveScript::GetScriptThreadID](../../winscript/reference/iactivescript-getscriptthreadid.md)   
+ [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md)   
  [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)

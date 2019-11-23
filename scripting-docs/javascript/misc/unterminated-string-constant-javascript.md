@@ -31,6 +31,6 @@ ms.locfileid: "72575886"
   
 - 문자열의 끝에 닫는 따옴표를 추가 합니다.  
   
-## <a name="see-also"></a>참조  
- [문자열 개체](../../javascript/reference/string-object-javascript.md)    
+## <a name="see-also"></a>참고 항목  
+ [문자열 개체](../../javascript/reference/string-object-javascript.md)   
  [toString 메서드(Object)](../../javascript/reference/tostring-method-object-javascript.md)

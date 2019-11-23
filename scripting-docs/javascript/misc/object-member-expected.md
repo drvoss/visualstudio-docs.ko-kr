@@ -28,6 +28,6 @@ ms.locfileid: "72573711"
   
 - 데이터 멤버의 이름을 올바르게 입력 했는지 확인 합니다.  
   
-## <a name="see-also"></a>참조  
- [개체 개체](../../javascript/reference/object-object-javascript.md)    
+## <a name="see-also"></a>참고 항목  
+ [개체 개체](../../javascript/reference/object-object-javascript.md)   
  [개체 및 배열](../../javascript/objects-and-arrays-javascript.md)

@@ -83,9 +83,9 @@ typedef struct ExtendedDebugPropertyInfo{
  `pDebugExtProp`  
  이 `ExtendedDebugPropertyInfo`에 해당 하 `IDebugExtendedProperty` 개체입니다.  
   
-## <a name="see-also"></a>참조  
- [DebugPropertyInfo 구조체](../../winscript/reference/debugpropertyinfo-structure.md)    
- [Idebugproperty 인터페이스](../../winscript/reference/idebugproperty-interface.md)    
- [Idebugextendedproperty 인터페이스](../../winscript/reference/idebugextendedproperty-interface.md)    
- [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)    
+## <a name="see-also"></a>참고 항목  
+ [DebugPropertyInfo 구조체](../../winscript/reference/debugpropertyinfo-structure.md)   
+ [Idebugproperty 인터페이스](../../winscript/reference/idebugproperty-interface.md)   
+ [Idebugextendedproperty 인터페이스](../../winscript/reference/idebugextendedproperty-interface.md)   
+ [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)   
  [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)

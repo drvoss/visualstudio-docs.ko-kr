@@ -52,7 +52,7 @@ HRESULT CreatePropertyBrowser(
  제한이 속성 브라우저입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드는 `HRESULT`를 반환 합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
+ 이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
   
 |값|설명|  
 |-----------|-----------------|  
@@ -61,7 +61,7 @@ HRESULT CreatePropertyBrowser(
 ## <a name="remarks"></a>주의  
  이 메서드는 VARIANT를 래핑하는 속성 브라우저를 반환 합니다.  
   
-## <a name="see-also"></a>참조  
- [IDebugHelper:: CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)    
- [IDebugHelper 인터페이스](../../winscript/reference/idebughelper-interface.md)    
+## <a name="see-also"></a>참고 항목  
+ [IDebugHelper::CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)   
+ [IDebugHelper 인터페이스](../../winscript/reference/idebughelper-interface.md)   
  [IDebugProperty 인터페이스](../../winscript/reference/idebugproperty-interface.md)

@@ -26,12 +26,12 @@ ms.locfileid: "72573385"
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
-- 등호를 추가 합니다. 예를 들면,  
+- 등호를 추가 합니다. 예를 들면 다음과 같습니다.  
   
     ```JavaScript  
     @set @myvar1 = 1  
     ```  
   
-## <a name="see-also"></a>참조  
- [조건부 컴파일](../../javascript/advanced/conditional-compilation-javascript.md)    
+## <a name="see-also"></a>참고 항목  
+ [조건부 컴파일](../../javascript/advanced/conditional-compilation-javascript.md)   
  [조건부 컴파일 변수](../../javascript/advanced/conditional-compilation-variables-javascript.md)

@@ -28,6 +28,6 @@ ms.locfileid: "72573413"
   
 - 두 번째와 세 번째 피연산자 사이에 콜론을 삽입 합니다.  
   
-## <a name="see-also"></a>참조  
- [조건부 (삼항) 연산자 (?:)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)    
+## <a name="see-also"></a>참고 항목  
+ [조건부 (삼항) 연산자 (?:)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)   
  [연산자](../../javascript/operators-javascript.md)

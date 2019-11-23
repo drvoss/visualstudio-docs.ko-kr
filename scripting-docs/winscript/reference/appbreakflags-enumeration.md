@@ -37,7 +37,7 @@ enum enum_APPBREAKFLAGS{APPBREAKFLAG_DEBUGGER_BLOCK= 0x00000001,APPBREAKFLAG_DEB
   
 |멤버|값|설명|  
 |------------|-----------|-----------------|  
-|APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|언어 엔진은 BREAKREASON_DEBUGGER_BLOCK를 사용 하는 모든 스레드에서 즉시 중단 되어야 합니다.|  
+|APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|언어 엔진은 BREAKREASON_DEBUGGER_BLOCK를 사용 하 여 모든 스레드에서 즉시 중단 되어야 합니다.|  
 |APPBREAKFLAG_DEBUGGER_HALT|0x00000002|언어 엔진은 BREAKREASON_DEBUGGER_HALT를 사용 하 여 즉시 중단 되어야 합니다.|  
 |APPBREAKFLAG_STEP|0x00010000|언어 엔진은 BREAKREASON_STEP를 사용 하 여 단계별 스레드에서 즉시 중단 되어야 합니다.|  
 |APPBREAKFLAG_NESTED|0x00020000|응용 프로그램이 중단점에서 중첩 된 실행에 있습니다.|  
@@ -50,6 +50,6 @@ enum enum_APPBREAKFLAGS{APPBREAKFLAG_DEBUGGER_BLOCK= 0x00000001,APPBREAKFLAG_DEB
 ## <a name="remarks"></a>주의  
  일부 플래그는 언어 엔진이 다음 기회에서 중단 되어야 함을 지정 하는 반면 다른 플래그는 디버거의 단계별 실행 모드를 지정 합니다.  
   
-## <a name="see-also"></a>참조  
- [액티브 스크립트 디버거 상수, 열거형 및 구조체](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)    
+## <a name="see-also"></a>참고 항목  
+ [액티브 스크립트 디버거 상수, 열거형 및 구조체](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)   
  [BREAKREASON 열거형](../../winscript/reference/breakreason-enumeration.md)

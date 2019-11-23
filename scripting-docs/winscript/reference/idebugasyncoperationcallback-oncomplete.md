@@ -37,7 +37,7 @@ HRESULT onComplete();
  이 메서드는 매개 변수를 사용 하지 않습니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드는 `HRESULT`를 반환 합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
+ 이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
   
 |값|설명|  
 |-----------|-----------------|  
@@ -46,6 +46,6 @@ HRESULT onComplete();
 ## <a name="remarks"></a>주의  
  이 메서드는 `IDebugAsyncOperation` 개체에서 결과를 사용할 수 있음을 신호로 보냅니다. 이벤트는 디버거 스레드에서 발생 합니다.  
   
-## <a name="see-also"></a>참조  
- [IDebugAsyncOperationCallBack 인터페이스](../../winscript/reference/idebugasyncoperationcallback-interface.md)    
+## <a name="see-also"></a>참고 항목  
+ [IDebugAsyncOperationCallBack 인터페이스](../../winscript/reference/idebugasyncoperationcallback-interface.md)   
  [IDebugAsyncOperation 인터페이스](../../winscript/reference/idebugasyncoperation-interface.md)

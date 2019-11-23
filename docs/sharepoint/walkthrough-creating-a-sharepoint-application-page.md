@@ -37,7 +37,7 @@ ms.locfileid: "72985022"
 > [!NOTE]
 > 일부 Visual Studio 사용자 인터페이스 요소의 경우 다음 지침에 설명된 것과 다른 이름 또는 위치가 시스템에 표시될 수 있습니다. 이러한 요소는 사용하는 Visual Studio 버전 및 설정에 따라 결정됩니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>필수 조건
 
 - 지원 되는 버전의 Windows 및 SharePoint
 
@@ -151,7 +151,7 @@ SharePoint 응용 프로그램 페이지에 대 한 자세한 내용은 [sharepo
 
 - [웹 파트 또는 응용 프로그램 페이지에 다시 사용할 수 있는 컨트롤을 만듭니다](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
-[방법: 응용 프로그램 페이지 만들기](../sharepoint/how-to-create-an-application-page.md)
-[응용 프로그램 _layouts 페이지 유형](/previous-versions/office/aa979604(v=office.14))
+[방법:](../sharepoint/how-to-create-an-application-page.md) 응용 프로그램 페이지
+응용 프로그램 [_Layouts 페이지 형식](/previous-versions/office/aa979604(v=office.14)) 만들기

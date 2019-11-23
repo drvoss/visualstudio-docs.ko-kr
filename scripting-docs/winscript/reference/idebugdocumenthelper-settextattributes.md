@@ -48,18 +48,18 @@ HRESULT SetTextAttributes(
  진행 텍스트 범위에 대 한 소스 텍스트 특성입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드는 `HRESULT`를 반환 합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
+ 이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
   
 |값|설명|  
 |-----------|-----------------|  
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>주의  
- 텍스트를 문서에 추가 하기 전에 텍스트 범위에서 `SetTextAttributes`를 호출 하는 것은 오류입니다. @No__t_0, `AddUnicodeText` 또는 `AddDeferredText` 메서드를 호출 하 여 문서에 텍스트를 추가 합니다.  
+ 텍스트를 문서에 추가 하기 전에 텍스트 범위에서 `SetTextAttributes`를 호출 하는 것은 오류입니다. `AddDBCSText`, `AddUnicodeText`또는 `AddDeferredText` 메서드를 호출 하 여 문서에 텍스트를 추가 합니다.  
   
-## <a name="see-also"></a>참조  
- [IDebugDocumentHelper 인터페이스](../../winscript/reference/idebugdocumenthelper-interface.md)    
- [IDebugDocumentHelper:: AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)    
- [IDebugDocumentHelper:: AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)    
- [IDebugDocumentHelper:: AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)    
+## <a name="see-also"></a>참고 항목  
+ [IDebugDocumentHelper 인터페이스](../../winscript/reference/idebugdocumenthelper-interface.md)   
+ [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
+ [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
+ [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
  [SOURCE_TEXT_ATTR 열거형](../../winscript/reference/source-text-attr-enumeration.md)

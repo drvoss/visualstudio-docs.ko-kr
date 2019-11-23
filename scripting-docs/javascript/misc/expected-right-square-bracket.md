@@ -28,6 +28,6 @@ ms.locfileid: "72576518"
   
 - 배열 요소를 참조 하는 식에 오른쪽 괄호를 추가 합니다.  
   
-## <a name="see-also"></a>참조  
- [배열   사용](../../javascript/advanced/using-arrays-javascript.md)  
+## <a name="see-also"></a>참고 항목  
+ [배열  사용](../../javascript/advanced/using-arrays-javascript.md)  
  [Array 개체](../../javascript/reference/array-object-javascript.md)

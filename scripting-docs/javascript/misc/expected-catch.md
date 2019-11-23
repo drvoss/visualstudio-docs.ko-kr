@@ -30,6 +30,6 @@ ms.locfileid: "72573432"
   
 - **Catch** 블록 대신 **finally** 블록을 사용해 보세요.  
   
-## <a name="see-also"></a>참조  
- [try ... catch ... finally 문](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)    
+## <a name="see-also"></a>참고 항목  
+ [try ... catch ... finally 문](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)   
  [Error 개체](../../javascript/reference/error-object-javascript.md)

@@ -37,7 +37,7 @@ HRESULT QueryContinue();
  이 메서드는 매개 변수를 사용 하지 않습니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드는 `HRESULT`를 반환 합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
+ 이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
   
 |값|설명|  
 |-----------|-----------------|  
@@ -45,10 +45,10 @@ HRESULT QueryContinue();
 |`S_FALSE`|호출이 성공 하 고 호스트가 스크립트가 종료 되도록 요청 합니다.|  
   
 ## <a name="remarks"></a>주의  
- @No__t_0 메서드의 반환 값을 `S_OK` 하지 않으면 호스팅된 스크립트가 종료 됩니다. @No__t_0의 반환 값은 호스트가 스크립트가 종료 되도록 명시적으로 요청 함을 나타냅니다.  
+ `QueryContinue` 메서드의 반환 값을 `S_OK`하지 않으면 호스팅된 스크립트가 종료 됩니다. `S_FALSE`의 반환 값은 호스트가 스크립트가 종료 되도록 명시적으로 요청 함을 나타냅니다.  
   
  다중 스레드 호스트는 `IActiveScript::InterruptScriptThread` 메서드를 사용 하 여 스크립트를 종료할 수 있습니다.  
   
-## <a name="see-also"></a>참조  
- [IActiveScriptSiteInterruptPoll 인터페이스](../../winscript/reference/iactivescriptsiteinterruptpoll-interface.md)    
+## <a name="see-also"></a>참고 항목  
+ [IActiveScriptSiteInterruptPoll 인터페이스](../../winscript/reference/iactivescriptsiteinterruptpoll-interface.md)   
  [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)

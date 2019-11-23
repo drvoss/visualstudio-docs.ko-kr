@@ -1,5 +1,5 @@
 ---
-title: "' @No__t_0 '가 필요 합니다. | Microsoft Docs"
+title: "'@end'가 필요 합니다. | Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -21,13 +21,13 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573447"
 ---
-# <a name="expected-end"></a>' @No__t_0end '가 필요 합니다.
-조건부로 컴파일된 코드 블록을 만들려고 했지만 끝에 <strong>@end</strong> 문이 포함 되지 않았습니다. [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 문은 <strong>@if/ @end</strong> 블록 내에 포함 하 여 조건부로 컴파일할 수 있습니다.  
+# <a name="expected-end"></a>'\@end '가 필요 합니다.
+조건부로 컴파일된 코드 블록을 만들려고 했지만 끝에 <strong>@end</strong> 문이 포함 되지 않았습니다. [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 문은 <strong>@if/@end</strong> 블록 내에 포함 하 여 조건부로 컴파일할 수 있습니다.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
 - 해당 하는 <strong>@end</strong> 문을 추가 합니다.  
   
-## <a name="see-also"></a>참조  
- [조건부 컴파일](../../javascript/advanced/conditional-compilation-javascript.md)    
+## <a name="see-also"></a>참고 항목  
+ [조건부 컴파일](../../javascript/advanced/conditional-compilation-javascript.md)   
  [조건부 컴파일 변수](../../javascript/advanced/conditional-compilation-variables-javascript.md)

@@ -109,6 +109,6 @@ DBGPROP_ATTRIB_NO_ATTRIB  =0x00000000,
 ## <a name="remarks"></a>주의  
  개체의 자식을 필터링할 때도 이러한 플래그를 사용합니다. 비트 OR을 사용하여 값을 결합할 수 있습니다.  
   
-## <a name="see-also"></a>참조  
- [Idebugproperty 인터페이스](../../winscript/reference/idebugproperty-interface.md)    
+## <a name="see-also"></a>참고 항목  
+ [Idebugproperty 인터페이스](../../winscript/reference/idebugproperty-interface.md)   
  [DebugPropertyInfo 구조체](../../winscript/reference/debugpropertyinfo-structure.md)

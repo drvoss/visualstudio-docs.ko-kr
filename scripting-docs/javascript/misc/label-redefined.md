@@ -28,8 +28,8 @@ ms.locfileid: "72573765"
   
 - 프로그램에서 사용 하는 모든 레이블이 해당 범위 내에서 고유한 지 확인 합니다.  
   
-## <a name="see-also"></a>참조  
- [레이블 문](../../javascript/reference/labeled-statement-javascript.md)    
- [Switch 문](../../javascript/reference/switch-statement-javascript.md)    
+## <a name="see-also"></a>참고 항목  
+ [레이블 문](../../javascript/reference/labeled-statement-javascript.md)   
+ [Switch 문](../../javascript/reference/switch-statement-javascript.md)   
  [break 문](../../javascript/reference/break-statement-javascript.md)   
  [continue 문](../../javascript/reference/continue-statement-javascript.md)

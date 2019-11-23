@@ -44,7 +44,7 @@ Loop 외부에서 **continue** 문을 사용 하려고 했습니다. **Continue*
 
   - **for/in** 루프.  
   
-## <a name="see-also"></a>참조  
- [Continue 문](../../javascript/reference/continue-statement-javascript.md)    
- [프로그램 흐름   제어](../../javascript/controlling-program-flow-javascript.md)  
+## <a name="see-also"></a>참고 항목  
+ [Continue 문](../../javascript/reference/continue-statement-javascript.md)   
+ [프로그램 흐름  제어](../../javascript/controlling-program-flow-javascript.md)  
  [스크립트 문제 해결](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

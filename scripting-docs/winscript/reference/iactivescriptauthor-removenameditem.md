@@ -45,11 +45,11 @@ HRESULT RemoveNamedItem(
 |값|설명|  
 |-----------|-----------------|  
 |`S_OK`|메서드가 성공했으며|  
-|`S_FALSE`|@No__t_0 개체가 스크립트 작성 엔진의 네임 스페이스에 없습니다.|  
+|`S_FALSE`|`NamedItem` 개체가 스크립트 작성 엔진의 네임 스페이스에 없습니다.|  
   
 ## <a name="remarks"></a>주의  
  [IActiveScript:: AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) 은 스크립트 작성 엔진의 네임 스페이스에 `NamedItem` 개체를 삽입 하는 데 사용 됩니다.  
   
-## <a name="see-also"></a>참조  
- [IActiveScriptAuthor 인터페이스](../../winscript/reference/iactivescriptauthor-interface.md)    
+## <a name="see-also"></a>참고 항목  
+ [IActiveScriptAuthor 인터페이스](../../winscript/reference/iactivescriptauthor-interface.md)   
  [IActiveScriptAuthor::AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)

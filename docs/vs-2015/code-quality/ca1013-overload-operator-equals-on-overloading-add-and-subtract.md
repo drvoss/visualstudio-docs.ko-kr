@@ -33,7 +33,7 @@ ms.locfileid: "72663207"
 |-|-|
 |TypeName|OverloadOperatorEqualsOnOverloadingAddAndSubtract|
 |CheckId|CA1013|
-|범주|Microsoft 디자인|
+|범주|Microsoft.Design|
 |변경 수준|최신이 아님|
 
 ## <a name="cause"></a>원인
@@ -65,7 +65,7 @@ return left.Equals(right);
  같음 연산자의 기본 구현이 형식에 올바른 동작을 제공 하는 경우이 규칙에서 경고를 표시 하지 않는 것이 안전 합니다.
 
 ## <a name="example"></a>예제
- 다음 예제에서는이 규칙을 위반 하는 형식 (`BadAddableType`)을 정의 합니다. 이 형식은 같음 연산자를 구현 하 여 동일한 필드 값이 있는 두 인스턴스가 같은지를 `true` 합니다. @No__t_0 형식에는 수정 된 구현이 표시 됩니다. 또한이 형식은 같지 않음 연산자를 구현 하 고 다른 규칙을 충족 하기 위해 <xref:System.Object.Equals%2A>를 재정의 합니다. 전체 구현에서는 <xref:System.Object.GetHashCode%2A>도 구현 합니다.
+ 다음 예제에서는이 규칙을 위반 하는 형식 (`BadAddableType`)을 정의 합니다. 이 형식은 같음 연산자를 구현 하 여 동일한 필드 값이 있는 두 인스턴스가 같은지를 `true` 합니다. `GoodAddableType` 형식에는 수정 된 구현이 표시 됩니다. 또한이 형식은 같지 않음 연산자를 구현 하 고 다른 규칙을 충족 하기 위해 <xref:System.Object.Equals%2A>를 재정의 합니다. 전체 구현에서는 <xref:System.Object.GetHashCode%2A>도 구현 합니다.
 
  [!code-csharp[FxCop.Design.AddAndSubtract#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AddAndSubtract/cs/FxCop.Design.AddAndSubtract.cs#1)]
 
@@ -76,7 +76,10 @@ return left.Equals(right);
 
  이 예제의 결과는 다음과 같습니다.
 
- **잘못 된 형식: {2,2} {2,2} 같습니다. **@No__t_3**올바른 형식이 아닙니다. {3,3} {3,3}는 동일 합니까? 예** 
-**좋은 유형: {3,3} 0 = =?   예** 1**잘못 된 유형: 3 4 같습니다. **@No__t_15**올바른 형식이 아닙니다. 7 8 = =?   아니요**
-## <a name="see-also"></a>관련 항목:
+ **잘못 된 형식: {2,2} {2,2} 같습니다. **
+**올바른 형식이 아닙니다. {3,3} {3,3}는 동일 합니까? 예**
+**좋은 유형: {3,3} {3,3} = =?   예**
+**잘못 된 유형: {2,2} {9,9} 같습니다. **
+**올바른 형식이 아닙니다. {3,3} {9,9} = =?   아니요**
+## <a name="see-also"></a>참고 항목
  [같음 연산자](https://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)

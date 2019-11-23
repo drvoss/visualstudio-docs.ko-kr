@@ -73,22 +73,22 @@ HRESULT GetInfoFromContext(
  `pichListAnchorPosition`  
  제한이 현재 위치를 포함 하는 컨텍스트의 시작 인덱스입니다. 시작 인덱스는 블록의 시작 부분을 기준으로 합니다.  
   
- 이는 `dwListTypesRequested` SCRIPT_CMPL_MEMBERLIST, SCRIPT_CMPL_ENUMLIST 또는 SCRIPT_CMPL_GLOBALLIST를 포함 하는 경우에만 채워집니다. 요청 된 다른 목록 형식의 경우 결과가 정의 되지 않습니다.  
+ 이는 `dwListTypesRequested` SCRIPT_CMPL_MEMBERLIST, SCRIPT_CMPL_ENUMLIST 또는 SCRIPT_CMPL_GLOBALLIST 포함 된 경우에만 채워집니다. 요청 된 다른 목록 형식의 경우 결과가 정의 되지 않습니다.  
   
  `pichFuncAnchorPosition`  
  제한이 현재 위치를 포함 하는 함수 호출의 시작 인덱스입니다. 시작 인덱스는 블록의 시작 부분을 기준으로 합니다.  
   
- 이는 현재 위치를 포함 하는 컨텍스트가 함수 호출이 고 `dwListTypesRequested`에 SCRIPT_CMPL_PARAMLIST 포함 된 경우에만 채워집니다. 그렇지 않으면 결과가 정의 되지 않습니다.  
+ 이는 현재 위치를 포함 하는 컨텍스트가 함수 호출이 고 `dwListTypesRequested`에 SCRIPT_CMPL_PARAMLIST 포함 되어 있는 경우에만 채워집니다. 그렇지 않으면 결과가 정의 되지 않습니다.  
   
  `pmemid`  
  제한이 `IProvideMultipleClassInfo``ppunk` out 매개 변수의 형식으로 정의 된 함수의 MEMBERID입니다.  
   
- 이는 `dwListTypesRequested`에 SCRIPT_CMPL_PARAMLIST 포함 된 경우에만 채워집니다.  
+ 이는 `dwListTypesRequested` SCRIPT_CMPL_PARAMLIST 포함 되어 있는 경우에만 채워집니다.  
   
  `piCurrentParameter`  
  제한이 현재 위치를 포함 하는 매개 변수의 인덱스입니다. 현재 위치가 함수 이름에 있으면-1이 반환 됩니다.  
   
- `piCurrentParameter` 값은 `dwListTypesRequested`에 SCRIPT_CMPL_PARAMLIST 포함 된 경우에만 채워집니다.  
+ `piCurrentParameter` 값은 `dwListTypesRequested` SCRIPT_CMPL_PARAMLIST를 포함 하는 경우에만 채워집니다.  
   
  `ppunk`  
  형식 정보 이며 `IProvideMultipleClassInfo` 개체의 형식으로 제공 됩니다.  
@@ -102,6 +102,6 @@ HRESULT GetInfoFromContext(
   
 ## <a name="remarks"></a>주의  
   
-## <a name="see-also"></a>참조  
- [IProvideMultipleClassInfo 인터페이스](/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)    
+## <a name="see-also"></a>참고 항목  
+ [IProvideMultipleClassInfo 인터페이스](/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)   
  [IActiveScriptAuthor 인터페이스](../../winscript/reference/iactivescriptauthor-interface.md)

@@ -45,8 +45,8 @@ typedef enum {
 |PROFILER_SCRIPT_TYPE_NATIVE|스크립팅 엔진에서 정의 하는 개체와 네이티브 함수에 대 한 스크립트 유형을 지정 합니다.|  
 |PROFILER_SCRIPT_TYPE_DOM|Internet Explorer의 문서 개체 모델 (DOM) 호출을 지정 합니다. 예를 들어 `document.getElementById` 메서드를 호출 합니다.|  
   
-## <a name="see-also"></a>참조  
- [액티브 스크립트 프로파일러 상수, 열거형 및 구조체](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)    
- [IActiveScriptProfilerCallback:: ScriptCompiled](../../winscript/reference/iactivescriptprofilercallback-scriptcompiled.md)    
- [IActiveScriptProfilerCallback2:: OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)    
+## <a name="see-also"></a>참고 항목  
+ [액티브 스크립트 프로파일러 상수, 열거형 및 구조체](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)   
+ [IActiveScriptProfilerCallback::ScriptCompiled](../../winscript/reference/iactivescriptprofilercallback-scriptcompiled.md)   
+ [IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)   
  [IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md)

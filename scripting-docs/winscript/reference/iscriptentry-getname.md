@@ -37,7 +37,7 @@ HRESULT GetName(
   
 #### <a name="parameters"></a>매개 변수  
  `pbstr`  
- 제한이 @No__t_0 스크립트 블록으로 표시 되는 개체의 이름입니다. 항목이 단일 개체를 나타내지 않으면 NULL이 반환 됩니다.  
+ 제한이 `IScriptEntry` 스크립트 블록으로 표시 되는 개체의 이름입니다. 항목이 단일 개체를 나타내지 않으면 NULL이 반환 됩니다.  
   
  자식 항목은 단일 함수 개체를 나타냅니다.  
   
@@ -50,6 +50,6 @@ HRESULT GetName(
   
 ## <a name="remarks"></a>주의  
   
-## <a name="see-also"></a>참조  
- [Iscriptentry 인터페이스](../../winscript/reference/iscriptentry-interface.md)    
+## <a name="see-also"></a>참고 항목  
+ [Iscriptentry 인터페이스](../../winscript/reference/iscriptentry-interface.md)   
  [IScriptNode:: CreateChildEntry](../../winscript/reference/iscriptnode-createchildentry.md)

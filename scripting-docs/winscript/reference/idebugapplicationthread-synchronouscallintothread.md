@@ -43,16 +43,16 @@ HRESULT SynchronousCallIntoThread(
  진행 호출할 개체입니다.  
   
  `dwParam1`  
- 진행 @No__t_0 메서드에 전달할 첫 번째 매개 변수입니다.  
+ 진행 `IDebugThreadCall::ThreadCallHandler` 메서드에 전달할 첫 번째 매개 변수입니다.  
   
  `dwParam2`  
- 진행 @No__t_0 메서드에 전달할 두 번째 매개 변수입니다.  
+ 진행 `IDebugThreadCall::ThreadCallHandler` 메서드에 전달할 두 번째 매개 변수입니다.  
   
  `dwParam3`  
- 진행 @No__t_0 메서드에 전달할 세 번째 매개 변수입니다.  
+ 진행 `IDebugThreadCall::ThreadCallHandler` 메서드에 전달할 세 번째 매개 변수입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드는 `HRESULT`를 반환 합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
+ 이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
   
 |값|설명|  
 |-----------|-----------------|  
@@ -61,6 +61,6 @@ HRESULT SynchronousCallIntoThread(
 ## <a name="remarks"></a>주의  
  이 메서드는 호출자가 디버거 스레드에서 코드를 실행 하는 메커니즘을 제공 합니다. 언어 엔진 및 호스트는 일반적으로이 메서드를 사용 하 여 단일 스레드 구현 위에 자유 스레드 개체를 구현 합니다.  
   
-## <a name="see-also"></a>참조  
- [Idebugapplicationthread 인터페이스](../../winscript/reference/idebugapplicationthread-interface.md)    
+## <a name="see-also"></a>참고 항목  
+ [Idebugapplicationthread 인터페이스](../../winscript/reference/idebugapplicationthread-interface.md)   
  [IDebugThreadCall 인터페이스](../../winscript/reference/idebugthreadcall-interface.md)

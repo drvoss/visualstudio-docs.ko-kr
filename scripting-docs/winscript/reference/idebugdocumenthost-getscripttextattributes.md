@@ -54,15 +54,15 @@ HRESULT GetScriptTextAttributes(
   
 |상수|값|설명|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|0x0001|SOURCETEXT_ATTR_IDENTIFIER 및 SOURCETEXT_ATTR_MEMBERLOOKUP 플래그를 사용 하 여 식별자와 점 연산자를 각각 식별 해야 함을 나타냅니다.|  
+|GETATTRTYPE_DEPSCAN|0x0001|식별자와 점 연산자가 각각 SOURCETEXT_ATTR_IDENTIFIER 및 SOURCETEXT_ATTR_MEMBERLOOKUP 플래그로 식별 되어야 함을 나타냅니다.|  
 |GETATTRFLAG_THIS|0x0100|현재 개체의 식별자가 SOURCETEXT_ATTR_THIS 플래그로 식별 되어야 함을 나타냅니다.|  
-|GETATTRFLAG_HUMANTEXT|0x8000|SOURCETEXT_ATTR_HUMANTEXT 플래그를 사용 하 여 문자열 내용과 주석 텍스트를 식별 해야 함을 나타냅니다.|  
+|GETATTRFLAG_HUMANTEXT|0x8000|SOURCETEXT_ATTR_HUMANTEXT 플래그를 사용 하 여 문자열 내용과 주석 텍스트를 식별 함을 나타냅니다.|  
   
  `pattr`  
  [in, out] 반환 된 특성을 포함 하는 버퍼입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드는 `HRESULT`를 반환 합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
+ 이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
   
 |값|설명|  
 |-----------|-----------------|  
@@ -72,6 +72,6 @@ HRESULT GetScriptTextAttributes(
 ## <a name="remarks"></a>주의  
  이 메서드는 임의의 문서 텍스트 블록에 대 한 텍스트 특성을 반환 합니다. 호스트는 `E_NOTIMPL`를 반환할 수 있으며,이 경우 기본 특성이 사용 됩니다.  
   
-## <a name="see-also"></a>참조  
- [IDebugDocumentHost 인터페이스](../../winscript/reference/idebugdocumenthost-interface.md)    
+## <a name="see-also"></a>참고 항목  
+ [IDebugDocumentHost 인터페이스](../../winscript/reference/idebugdocumenthost-interface.md)   
  [SOURCE_TEXT_ATTR 열거형](../../winscript/reference/source-text-attr-enumeration.md)

@@ -48,9 +48,9 @@ HRESULT EnumExtendedMembers(
  제한이 멤버 속성을 열거 하는 `IEnumDebugExtendedPropertyInfo` 인터페이스를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 유효한 `HRESULT` (일반적으로 `S_OK`)를 반환 합니다.  
+ 유효한 `HRESULT`(일반적으로 `S_OK`)를 반환 합니다.  
   
-## <a name="see-also"></a>참조  
- [Idebugextendedproperty 인터페이스](../../winscript/reference/idebugextendedproperty-interface.md)    
- [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)    
+## <a name="see-also"></a>참고 항목  
+ [Idebugextendedproperty 인터페이스](../../winscript/reference/idebugextendedproperty-interface.md)   
+ [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)   
  [ExtendedDebugPropertyInfo 구조체](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

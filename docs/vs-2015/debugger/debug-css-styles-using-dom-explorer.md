@@ -20,17 +20,17 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 05d8cafce91fa55c515457b9f44779a06586387a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a9f07fc064a87910f59f5734d4d635aa3b5d6b77
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63409497"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299506"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>DOM 탐색기를 사용하여 CSS 스타일 디버그
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
+Windows 및 Windows Phone]에 적용 됩니다. /Image/windows_and_phone_content .png "windows_and_phone_content")  
   
  Windows 스토어 앱, Windows Phone 스토어 앱 및 Visual Studio Tools for Apache Cordova를 사용하여 만든 앱을 디버그할 때 선택한 DOM 요소 및 해당 요소의 자식 요소에 대한 CSS 규칙을 보고 변경할 수 있습니다.  
   
@@ -48,7 +48,7 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
 - 디버깅 세션 중 변경한 CSS 스타일을 식별하고 추적하려면 **변경 내용** 탭(Windows 스토어 앱 및 Windows Phone 스토어 앱에만 해당)을 사용합니다.  
   
 > [!TIP]
-> **스타일** 및 **계산됨** 탭에서 변경한 스타일은 영구적이지 않습니다. 이 변경 내용은 디버깅을 중지하면 손실됩니다. 소스 코드를 변경 하 고 중지 하 고 디버거를 다시 시작 하지 않고 페이지를 다시 로드를 사용 하 여 앱을 새로 고칠 합니다 ![새로 고침 Windows 앱 단추](../debugger/media/js-refresh.png "JS_Refresh") 단추 (**새로 고침 Windows 앱** )에 **디버그** 도구 모음 (Windows 스토어 및 Windows Phone 스토어 앱만 해당). 자세한 내용은 참조 하세요. [앱 (JavaScript) 새로 고침](../debugger/refresh-an-app-javascript.md)합니다.  
+> **스타일** 및 **계산됨** 탭에서 변경한 스타일은 영구적이지 않습니다. 이 변경 내용은 디버깅을 중지하면 손실됩니다. 디버거를 중지 한 후 다시 시작 하지 않고 소스 코드를 변경 하 고 페이지를 다시 로드 하려면 **디버그** 도구 모음에서 windows 앱 새로 ![고침 단추 (](../debugger/media/js-refresh.png "JS_Refresh") windows**앱 새로 고침**)를 사용 하 여 앱을 새로 고칩니다 (windows 스토어 및 Windows Phone 스토어 앱에만 해당). 자세한 내용은 [앱 새로 고침 (JavaScript)](../debugger/refresh-an-app-javascript.md)을 참조 하세요.  
   
 ## <a name="example-of-fixing-a-css-rule"></a>CSS 규칙 수정 예제  
  이 예제에서는 CSS 규칙을 검사하고 스타일 문제를 디버깅하는 방법을 보여 줍니다. 이 예제에서는 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 분할 앱 템플릿에서 그룹 제목을 표시하는 데 사용되는 글꼴의 색을 변경하려고 합니다.  
@@ -95,19 +95,19 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
   
 5. F5 키를 눌러 디버그 모드에서 응용 프로그램을 실행합니다.  
   
-     앱 로드가 완료 되 면, 확인 목록 항목의 머리글 같은 **그룹 제목: 1**. 색이 변경되지 않으므로 주황색을 제목에 적용하려고 해도 적용되지 않습니다. DOM 탐색기에서 CSS 탭을 사용하여 무엇이 잘못되었는지 알아보고 수정해보도록 하겠습니다.  
+     앱 로드가 완료되면 **그룹 제목: 1**과 같은 목록 항목의 머리글을 살펴봅니다. 색이 변경되지 않으므로 주황색을 제목에 적용하려고 해도 적용되지 않습니다. DOM 탐색기에서 CSS 탭을 사용하여 무엇이 잘못되었는지 알아보고 수정해보도록 하겠습니다.  
   
     > [!TIP]
     > 시뮬레이터에 앱이 나타나면 선택한 사항과 변경한 CSS 스타일의 결과를 즉시 확인할 수 있도록 시뮬레이터를 Visual Studio 창 바로 오른쪽으로 이동합니다.  
   
-6. Visual Studio로 전환하고 DOM 탐색기에서 **요소 선택** 을 클릭하거나 Ctrl + B를 누릅니다. 그러면 항목을 클릭하여 선택할 수 있도록 선택 모드가 변경되며, 앱이 전경에 옵니다. 한 번 클릭 후 모드는 되돌려집니다. **요소 선택** 단추는 다음과 같습니다. ![DOM 탐색기의 요소 선택 단추](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
+6. Visual Studio로 전환하고 DOM 탐색기에서 **요소 선택** 을 클릭하거나 Ctrl + B를 누릅니다. 그러면 항목을 클릭하여 선택할 수 있도록 선택 모드가 변경되며, 앱이 전경에 옵니다. 한 번 클릭 후 모드는 되돌려집니다. **요소 선택** 단추는 다음과 같습니다. ![DOM 탐색기에서 요소 선택 단추](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button ")  
   
     > [!TIP]
-    > DOM 탐색기에서 HTML 요소를 직접 선택할 수도 있습니다. 요소 선택에 대 한 자세한 내용은 참조 하세요. [빠른 시작: HTML 및 CSS 디버그](../debugger/quickstart-debug-html-and-css.md)합니다.  
+    > DOM 탐색기에서 HTML 요소를 직접 선택할 수도 있습니다. 요소 선택에 대 한 자세한 내용은 [빠른 시작: HTML 및 CSS 디버그](../debugger/quickstart-debug-html-and-css.md)를 참조 하세요.  
   
-7. 목록에서 첫 번째 항목 제목 마우스로 시뮬레이터에서 **그룹 제목: 1**, 홈 페이지의 왼쪽된 패널에서. 다음과 같이 제목이 강조 표시됩니다.  
+7. 시뮬레이터에서 홈 페이지의 왼쪽 창에 있는 **Group Title: 1**목록의 첫 번째 항목 제목을 마우스로 가리킵니다. 다음과 같이 제목이 강조 표시됩니다.  
   
-     ![요소 선택 단추를 사용 하 여](../debugger/media/js-css-select-element.png "JS_CSS_Select_Element")  
+     ![요소 선택 단추 사용](../debugger/media/js-css-select-element.png "JS_CSS_Select_Element")  
   
     > [!NOTE]
     > Windows Phone 에뮬레이터에서는 요소를 마우스로 가리키면 강조 표시되는 기능이 일부만 지원됩니다.  
@@ -120,7 +120,7 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
   
      DOM 탐색기에서 H4 요소를 선택하면 DOM 탐색기 탭에 H4 요소와 연결된 규칙이 표시됩니다. 여기에 **속성이 열린 상태의** 계산됨 `color` 탭이 표시됩니다.  
   
-     ![DOM 탐색기에서 추적 스타일 탭](../debugger/media/js-css-styles.png "JS_CSS_Styles")  
+     ![DOM 탐색기의 추적 스타일 탭](../debugger/media/js-css-styles.png "JS_CSS_Styles")  
   
      이 뷰에서는 `color` 스타일과 연결된 규칙에 대한 다음과 같은 유용한 정보를 제공합니다.  
   
@@ -136,7 +136,7 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
   
 9. `color` 선택기에 대해 첫 번째 나타난 `.itemspage .itemslist .item .item-overlay .item-title` 스타일의 확인란을 선택 취소합니다. 이제 시뮬레이터에서 항목 제목의 색이 의도한 대로 모두 주황색으로 바뀌고, CSS에서 수정한 선택기 `.itemspage .itemslist .item`이 더 이상 재정의되지 않습니다(즉, 더 이상 취소선 텍스트가 적용되지 않음). 확인란을 선택 취소하면 **계산됨** 탭이 다음과 같이 표시됩니다.  
   
-     ![CSS 스타일을 업데이트 한 후 계산 탭](../debugger/media/js-css-styles-fixed.png "JS_CSS_Styles_Fixed")  
+     ![CSS 스타일을 업데이트 한 후 계산 된 탭](../debugger/media/js-css-styles-fixed.png "JS_CSS_Styles_Fixed")  
   
 10. **변경 내용** 탭을 선택합니다.  
   
@@ -154,10 +154,10 @@ Windows 및 Windows Phone 적용 됩니다] (.. /Image/windows_and_phone_content
   
 15. 키보드를 사용하여 이 값을 수정합니다. `rgb(255, 255, 0, 0.87)`로 변경한 다음 Enter 키를 누릅니다. 시뮬레이터에서 항목 제목의 색이 모두 노란색으로 변경됩니다.  
   
-16. 소스 CSS 파일을 변경하려면 **스타일** 탭에서 **items.css** 링크를 클릭합니다. 그러면 items.css가 열리고, 여기에서 앱 코드의 `color` 스타일 값을 변경할 수 있습니다. 앱을 중지 하 고 디버거를 다시 시작 하지 않고 새로 고치려면 클릭 합니다 ![새로 고침 Windows 앱 단추](../debugger/media/js-refresh.png "JS_Refresh") (**새로 고침 Windows 앱**) 단추를 **디버그** 도구 모음입니다.  
+16. 소스 CSS 파일을 변경 하려면 **스타일** 탭에서 **항목 .css** 링크를 클릭 합니다. 그러면 응용 프로그램 코드에서 `color` 스타일의 값을 변경할 수 있는 items가 열립니다. 디버거를 중지 한 후 다시 시작 하지 않고 응용 프로그램을 새로 고치려면 **디버그** 도구 모음에서 ![windows 앱](../debugger/media/js-refresh.png "JS_Refresh") 새로 고침 단추 (**windows 앱 새로 고침**) 단추를 클릭 합니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [빠른 시작: HTML 및 CSS 디버그](../debugger/quickstart-debug-html-and-css.md)   
+ [빠른 시작: HTML 및 CSS  디버그](../debugger/quickstart-debug-html-and-css.md)  
  [DOM 탐색기를 사용 하 여 레이아웃 디버그](../debugger/debug-layout-using-dom-explorer.md)   
  [DOM 이벤트 수신기 보기](../debugger/view-dom-event-listeners.md)   
- [기술 지원 및 접근성](http://go.microsoft.com/fwlink/?LinkId=253502)
+ [기술 지원 및 접근성](https://go.microsoft.com/fwlink/?LinkId=253502)

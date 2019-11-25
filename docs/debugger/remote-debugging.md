@@ -55,7 +55,7 @@ ms.locfileid: "67043324"
 
 ## <a name="fileshare_msvsmon"></a> (선택 사항) 파일 공유에서 원격 디버거를 실행 하려면
 
-원격 디버거를 찾을 수 있습니다 (*msvsmon.exe*) Visual Studio Community, Professional 또는 Enterprise를 이미 설치 된 컴퓨터에 있습니다. 일부 시나리오에 대 한 원격 디버깅을 설정 하는 가장 쉬운 방법은 파일 공유에서 원격 디버거 (msvsmon.exe)를 실행 하는 것입니다. 사용 제한 사항에 대 한 원격 디버거의 도움말 페이지를 참조 하세요. (**도움말 > 사용량** 원격 디버거의).
+Visual Studio Community, Professional 또는 Enterprise가 이미 설치된 컴퓨터에서 원격 디버거(msvsmon.exe)를 찾을 수 있습니다. 일부 시나리오의 경우 원격 디버깅을 설정하는 가장 쉬운 방법은 파일 공유에서 원격 디버거(msvsmon.exe)를 실행하는 것입니다. 사용 제한 사항에 대한 원격 디버거의 도움말 페이지(원격 디버거의 **도움말 > 사용량**)를 참조하세요.
 
 1. 찾을 *msvsmon.exe* Visual Studio 버전과 일치 하는 디렉터리에 있습니다.
 
@@ -93,7 +93,7 @@ ms.locfileid: "67043324"
      > [!IMPORTANT]
      > Visual Studio 컴퓨터에서 사용 하는 사용자 계정에서 다른 사용자 계정으로 원격 디버거를 실행할 수는 있지만 원격 디버거의 사용 권한에 다른 사용자 계정을 추가 해야 합니다.
 
-     또는 사용 하 여 명령줄에서 원격 디버거를 시작할 수 있습니다 합니다 **허용 / \<사용자 이름 >** 매개 변수: **msvsmon /allow \< username@computer>** 합니다.
+     또는 **/ allow \<username>** 매개 변수: **msvsmon / allow \<username@computer>** 를 사용하여 명령줄에서 원격 디버거를 시작할 수 있습니다.
 
 - 인증 모드 또는 포트 번호를 변경 하거나 원격 도구의 시간 제한 값을 지정 하는 경우: 선택할 **도구 > 옵션**합니다.
 

@@ -45,7 +45,7 @@ devenv {/LCID|/l} LocaleID
 
  다음 표에서는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]에서 지원하는 언어의 LCID 목록을 보여 줍니다.
 
-|언어|인 DWORD 값의 레지스트리에서 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\|
+|언어|LCID|
 |--------------|----------|
 |및|2052|
 |옵션 대신,|1028|

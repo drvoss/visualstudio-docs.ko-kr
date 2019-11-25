@@ -74,7 +74,7 @@ C#, Visual Basic 및 C++(C++/CLI 코드만 해당)의 경우 [DebuggerDisplay](.
 
 ## <a name="track-an-out-of-scope-object-c-visual-basic"></a>범위를 벗어난 개체 (C#, Visual Basic) 추적
 
-**조사식** 창과 같은 디버거 창을 사용 하 여 변수를 쉽게 볼 수 있습니다. 그러나 변수가 **조사식** 창에서 범위를 벗어나면 회색으로 표시 되는 것을 알 수 있습니다. 일부 앱 시나리오에서는 변수가 범위를 벗어난 경우에도 변수 값이 변경 될 수 있으며, 변수가 가비지 수집 될 수 있습니다. 예를 들어 변수가 가비지 수집 될 수 있습니다. **조사식** 창에서 개체에 대 한 개체 ID를 만들어 변수를 추적할 수 있습니다.
+**조사식** 창과 같은 디버거 창을 사용하여 변수를 쉽게 볼 수 있습니다. 그러나 변수가 **조사식** 창에서 범위를 벗어나면 회색으로 표시되는 것을 알 수 있습니다. 일부 앱 시나리오에서는 변수의 범위를 벗어난 경우에도 변수의 값이 변경될 수 있으며 변수를 자세히 보고 싶을 수 있습니다(예: 변수가 가비지 수집될 수 있음). **조사식** 창에서 개체에 대한 개체 ID를 만들어 변수를 추적할 수 있습니다.
 
 #### <a name="to-create-an-object-id"></a>개체 ID를 만들려면
 
@@ -106,7 +106,7 @@ C#, Visual Basic 및 C++(C++/CLI 코드만 해당)의 경우 [DebuggerDisplay](.
 
 ## <a name="string_visualizer"></a>시각화 도우미에서 문자열 검사
 
-문자열로 작업할 때 서식이 지정 된 전체 문자열을 보는 것이 도움이 될 수 있습니다. 일반 텍스트, XML, HTML 또는 JSON 문자열을 보려면 문자열 값을 포함 하는 변수를 마우스로 가리킬 때 돋보기 아이콘 ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "시각화 도우미 아이콘") 을 클릭 합니다.
+문자열로 작업할 때 서식이 지정된 전체 문자열을 보는 것이 도움이 될 수 있습니다. 일반 텍스트, XML, HTML 또는 JSON 문자열을 보려면 문자열 값을 포함하는 변수를 마우스로 가리킬 때 돋보기 아이콘 ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "시각화 도우미 아이콘")을 클릭합니다.
 
 ![문자열 시각화 도우미 열기](../debugger/media/dbg-tips-string-visualizers.png "OpenStringVisualizer")
 
@@ -130,7 +130,7 @@ C#, Visual Basic 및 C++(C++/CLI 코드만 해당)의 경우 [DebuggerDisplay](.
 
 #### <a name="to-show-threads-in-your-source-code"></a>소스 코드에 스레드를 표시 하려면
 
-1. 디버깅 하는 동안 **디버그** 도구 모음에서 소스에서 **스레드 표시** 단추를 ![소스에 표시](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") 를 클릭 합니다.
+1. 디버깅하는 동안 **디버그** 도구 모음에서 **소스에서 스레드 표시** 단추 ![소스에 표시](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker")를 클릭합니다.
 
 2. 창 왼쪽의 여백을 확인합니다. 이 줄에는 두 개의 천으로 *스레드 마커* 아이콘 ![스레드 마커가](../debugger/media/dbg-thread-marker.png "ThreadMarker") 표시 됩니다. 스레드 마커는 이 위치에서 스레드가 중지되었음을 나타냅니다.
 
@@ -156,13 +156,13 @@ UWP 앱에서 `Windows.Web.Http` API를 사용하여 수행되는 네트워크 �
 
 ## <a name="modules_window"></a>디버거를 앱에 연결 하는 방법에 대 한 자세한C#정보 C++(,, F#Visual Basic,)
 
-실행 중인 앱에 연결 하기 위해 디버거는 디버깅 하려는 응용 프로그램의 정확히 동일한 빌드에 대해 생성 된 기호 (.pdb) 파일을 로드 합니다. 일부 시나리오에서는 기호 파일에 대해 약간의 지식이 도움이 될 수 있습니다. Visual Studio에서 **모듈** 창을 사용 하 여 기호 파일을 로드 하는 방법을 검토할 수 있습니다.
+실행 중인 앱에 연결하기 위해 디버거는 디버깅하려는 응용 프로그램의 정확히 동일한 빌드에 대해 생성된 기호 (.pdb) 파일을 로드합니다. 일부 시나리오에서는 기호 파일에 대한 약간의 지식이 도움이 될 수 있습니다. Visual Studio에서 **모듈** 창을 사용하여 기호 파일을 로드하는 방법을 검토할 수 있습니다.
 
-디버깅 하는 동안 **Windows > 모듈 디버그 >** 선택 하 여 **모듈** 창을 엽니다. 모듈 **창에서는** 디버거가 사용자 코드로 처리 하는 모듈, 또는 [*내 코드*](../debugger/just-my-code.md)및 모듈에 대 한 기호 로딩 상태를 알 수 있습니다. 대부분의 시나리오에서 디버거는 사용자 코드에 대 한 기호 파일을 자동으로 검색 하지만 .NET 코드, 시스템 코드 또는 타사 라이브러리 코드를 한 단계씩 코드 실행 하거나 디버그 하려면 올바른 기호 파일을 가져오기 위해 추가 단계가 필요 합니다.
+디버깅하는 동안 **디버그 > Windows > 모듈**을 선택하여 **모듈** 창을 엽니다. **모듈** 창에서는 디버거가 사용자 코드로 처리하는 모듈, 또는 [*내 코드*](../debugger/just-my-code.md) 및 모듈에 대한 기호 로딩 상태를 알 수 있습니다. 대부분의 시나리오에서 디버거는 사용자 코드에 대한 기호 파일을 자동으로 검색하지만 .NET 코드, 시스템 코드 또는 타사 라이브러리 코드를 한 단계씩 코드 실행하거나 디버그하려면 올바른 기호 파일을 가져오기 위해 추가 단계가 필요합니다.
 
 ![모듈 창에서 기호 정보 보기](../debugger/media/dbg-tips-modules-window.png "View기호 정보")
 
-마우스 오른쪽 단추를 클릭 하 고 **기호 로드**를 선택 하 여 **모듈** 창에서 직접 기호 정보를 로드할 수 있습니다.
+마우스 오른쪽 단추를 클릭하고 **기호 로드**를 선택하여 **모듈** 창에서 직접 기호 정보를 로드할 수 있습니다.
 
 앱 개발자가 일치 하는 기호 파일 없이 앱을 제공 하는 경우 (공간을 줄이기 위해) 나중에 릴리스 버전을 디버그할 수 있도록 빌드에 대해 일치 하는 기호 파일의 복사본을 유지 하는 경우가 있습니다.
 
@@ -170,7 +170,7 @@ UWP 앱에서 `Windows.Web.Http` API를 사용하여 수행되는 네트워크 �
 
 ## <a name="learn-more"></a>자세히
 
-추가 팁과 요령 및 자세한 내용은 다음 블로그 게시물을 참조 하세요.
+추가 팁과 요령 및 자세한 내용은 다음 블로그 게시물을 참조하세요.
 
 - [7 Visual Studio에서 디버깅에 대 한 알려진 해킹 보다 작음](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
 - [7 Visual Studio에서 숨겨진 보석](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)

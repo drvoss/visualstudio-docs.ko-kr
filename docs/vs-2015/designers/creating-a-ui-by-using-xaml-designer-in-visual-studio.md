@@ -36,7 +36,7 @@ Visual Studio의 XAML 디자이너는 XAML 기반 Windows 스토어, Windows Pho
 
  디자인 뷰에서 *아트 보드* 포함하는 창이 활성 창이고 이를 기본 작업 화면으로 사용할 수 있습니다. 이 창에서 요소를 추가하거나 그린 다음 수정하여 앱에서 페이지를 시각적으로 디자인할 수 있습니다. 자세한 내용은 [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md)을 참조하세요. 이 그림은 디자인 뷰에서 아트보드를 보여 줍니다.
 
- ![Design view of XAML Designer](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
+ ![XAML 디자이너 디자인 뷰](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
 
  이러한 기능은 아트보드에서 사용할 수 있습니다.
 
@@ -58,7 +58,7 @@ Visual Studio의 XAML 디자이너는 XAML 기반 Windows 스토어, Windows Pho
 
  디자인 뷰에서 다음과 같이 화면의 왼쪽 아래 영역에서 추가 아트보드 명령을 사용할 수 있습니다.
 
- ![Design view commands](../designers/media/xaml-editor-design-controls.png "xaml_editor_design_controls")
+ ![디자인 뷰 명령](../designers/media/xaml-editor-design-controls.png "xaml_editor_design_controls")
 
  이러한 명령은 이 도구 모음에서 사용할 수 있습니다.
 
@@ -72,16 +72,16 @@ Visual Studio의 XAML 디자이너는 XAML 기반 Windows 스토어, Windows Pho
 
  XAML 뷰에서 XAML 편집기가 포함된 창이 활성 창이며 XAML 편집기는 기본 제작 도구입니다. XAML(Extensible Application Markup Language)은 애플리케이션의 사용자 인터페이스를 지정하는 데 사용할 수 있는 선언적인 XML 기반 어휘를 제공합니다. XAML 뷰에는 IntelliSense, 자동 서식 지정, 구문 강조 표시 및 태그 탐색이 포함됩니다. 이 그림에서는 XAML 뷰를 보여 줍니다.
 
- ![XAML view](../designers/media/xaml-editor.png "xaml_editor")
+ ![XAML 뷰](../designers/media/xaml-editor.png "xaml_editor")
 
  **분할 뷰 구분선** XAML 편집기가 아래쪽 창에 있을 때 분할 뷰 구분선이 XAML 뷰의 맨 위에 나타납니다. 분할 뷰 구분선을 사용하여 디자인 뷰 및 XAML 뷰의 상대적 크기를 제어할 수 있습니다. 뷰의 위치를 바꾸고( **창 바꾸기** 단추 사용), 뷰를 가로 또는 세로로 정렬할지 여부를 지정하고, 뷰 중 하나를 축소할 수 있습니다.
 
  **태그 확대/축소** 태그 확대/축소를 사용하여 XAML 뷰의 크기를 조정할 수 있습니다. 20%부터 400%까지 확대/축소할 수 있습니다.
 
 ## <a name="device-window"></a>디바이스 창
- XAML 디자이너의 디바이스 창에서 다양한 디자인 타임 뷰와 디스플레이, Windows 스토어 또는 Windows Phone 프로젝트에 대한 표시 옵션으로 시뮬레이트할 수 있습니다. 디바이스 창은  XAML 디자이너에서 작업할 때 **디자인** 메뉴에서 사용할 수 있습니다. 다음과 같이 나타납니다.
+ XAML 디자이너의 디바이스 창에서 다양한 디자인 타임 뷰와 디스플레이, Windows 스토어 또는 Windows Phone 프로젝트에 대한 표시 옵션으로 시뮬레이트할 수 있습니다. 디바이스 창은  XAML 디자이너에서 작업할 때 **디자인** 메뉴에서 사용할 수 있습니다. 이 창의 모양은 다음과 같습니다.
 
- ![Device window](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
+ ![장치 창](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
 
  다음은 디바이스 창에서 사용할 수 있는 옵션입니다.
 
@@ -116,7 +116,7 @@ Visual Studio의 XAML 디자이너는 XAML 기반 Windows 스토어, Windows Pho
 
   문서 개요 창을 보려면 메뉴 모음에서 **보기**, **다른 창**, **문서 개요**를 선택합니다.
 
-  ![Document Outline window](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")
+  ![문서 개요 창](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")
 
   다음은 문서 개요 창에서 사용할 수 있는 옵션입니다.
 
@@ -129,7 +129,7 @@ Visual Studio의 XAML 디자이너는 XAML 기반 Windows 스토어, Windows Pho
   **범위를 pageRoot로 되돌립니다.** 문서 개요 창의 위쪽에 있는 옵션은 위쪽 화살표 기호를 표시하며 문서 개요를 이전 범위로 반환합니다. 범위 상향 지정은 스타일이나 템플릿의 범위에 있을 경우에만 적용할 수 있습니다.
 
 ## <a name="properties-window"></a>속성 창
- 속성 창을 사용하면 컨트롤에 대한 속성 값을 설정할 수 있습니다. 다음과 같이 나타납니다.
+ 속성 창을 사용하면 컨트롤에 대한 속성 값을 설정할 수 있습니다. 이 창의 모양은 다음과 같습니다.
 
  ![속성 창](../designers/media/xaml-editor-prop-window.png "xaml_editor_prop_window")
 
@@ -137,5 +137,5 @@ Visual Studio의 XAML 디자이너는 XAML 기반 Windows 스토어, Windows Pho
 
  각 속성 값의 오른쪽에 상자 기호로 나타나는 *속성 표식* 이 있습니다. 속성 표식의 모양은 속성에 적용되는 리소스 또는 데이터 바인딩이 있는지 여부를 나타냅니다. 예를 들어 흰색 상자 기호는 기본값을 나타내고, 검은색 상자 기호는 일반적으로 로컬 리소스가 적용되었음을 나타내고, 주황색 상자는 일반적으로 데이터 바인딩이 적용되었음을 나타냅니다. 속성 표식을 클릭하면 스타일의 정의로 이동하거나, 데이터 바인딩 작성기를 열거나, 리소스 선택기를 엽니다.
 
-## <a name="see-also"></a>관련 항목:
- [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md) [How to create and apply a resource](../designers/how-to-create-and-apply-a-resource.md) [Walkthrough: Binding to data in XAML Designer](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+## <a name="see-also"></a>참고 항목
+ [에서 요소 작업 XAML 디자이너](../designers/working-with-elements-in-xaml-designer.md) [리소스를 만들고 적용 하는 방법](../designers/how-to-create-and-apply-a-resource.md) [연습: XAML 디자이너의 데이터에 바인딩](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

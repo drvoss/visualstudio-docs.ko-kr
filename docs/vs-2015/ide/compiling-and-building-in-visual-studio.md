@@ -29,7 +29,7 @@ Visual Studio를 사용하여 개발 주기 동안 잦은 간격으로 애플리
 ## <a name="choosing-a-build-method"></a>빌드 방법 선택
  IDE에서 기본 빌드 옵션을 사용하거나, 명령 프롬프트를 사용하거나, Team Foundation Build를 사용하여 애플리케이션을 빌드할 수 있습니다. 이러한 각 옵션은 MSBuild를 기본 기술로 사용하며, 각 접근 방식에는 다음 표에 나와 있는 것과 같은 혜택이 있습니다.
 
-|빌드 방법|이점|추가 정보|
+|빌드 방법|이점|참조 항목|
 |------------------|--------------|--------------------------|
 |IDE 사용|-   보다 쉽게 즉시 빌드를 만들고 실행할 수 있습니다.<br />-   C++ 및 C# 프로젝트에 대해 다중 프로세서 빌드를 실행할 수 있습니다.<br />-   빌드 시스템의 일부 측면을 사용자 지정할 수 있습니다.|[Visual Studio에서 프로젝트 및 솔루션 빌드 및 정리](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)|
 |MSBuild 명령줄 실행|-   Visual Studio를 설치하지 않고도 프로젝트를 빌드할 수 있습니다.<br />-   모든 프로젝트 형식에 대해 다중 프로세서 빌드를 실행할 수 있습니다.<br />-   빌드 시스템의 영역 대부분을 사용자 지정할 수 있습니다.|[MSBuild](../msbuild/msbuild.md)|
@@ -52,5 +52,5 @@ Visual Studio를 사용하여 개발 주기 동안 잦은 간격으로 애플리
 
 - 병렬 빌드를 사용하여 빌드 성능 개선. 자세한 내용은 [병렬로 여러 프로젝트 빌드](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) 또는 블로그 게시물 [Tuning C++ build parallelism](https://blogs.msdn.microsoft.com/msbuild/2010/03/07/tuning-c-build-parallelism-in-vs2010/)(C++ 빌드 병렬 처리 조정)을 참조하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [연습: 애플리케이션 빌드](../ide/walkthrough-building-an-application.md)[빌드 구성 이해](../ide/understanding-build-configurations.md)[빌드 플랫폼 이해](../ide/understanding-build-platforms.md)[(컴파일) 웹 사이트 프로젝트 빌드](https://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193)[ 어떻게: 프로젝트 종속성 만들기 및 제거](../ide/how-to-create-and-remove-project-dependencies.md)

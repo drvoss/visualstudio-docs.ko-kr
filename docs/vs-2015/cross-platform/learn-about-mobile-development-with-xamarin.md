@@ -16,14 +16,14 @@ ms.locfileid: "74299774"
 # <a name="learn-about-mobile-development-with-xamarin"></a>Xamarin을 사용한 모바일 개발에 대해 알아보기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 항목에서는 Xamarin을 사용한 플랫폼 간 모바일 앱 개발을 이해하는 데 도움되는 개요 자료를 안내합니다. 아직 Visual Studio 및 Xamarin을 설치하지 않았으면 먼저 [설정 및 설치](../cross-platform/setup-and-install.md) 프로세스를 시작하고 여기로 돌아와서 설치 관리자가 실행되는 동안 이러한 리소스를 살펴봅니다.  
+이 항목에서는 Xamarin을 사용한 플랫폼 간 모바일 앱 개발을 이해하는 데 도움되는 개요 자료를 안내합니다. 아직 Visual Studio 및 Xamarin을 설치하지 않았으면 먼저 [Setup and install](../cross-platform/setup-and-install.md) 프로세스를 시작하고 여기로 돌아와서 설치 관리자가 실행되는 동안 이러한 리소스를 살펴봅니다.  
   
 > [!NOTE]
 > 별도로 명시되지 않는 한 처음에는 부수적인 페이지가 아닌 여기에 직접 연결된 페이지만 읽는 것이 좋습니다. 이 목록이 완료된 후에도 설치 프로세스가 계속 실행 중이면 돌아가서 추가 항목을 살펴볼 수 있습니다.  
 >   
 > 또한 "주요 사항"으로 표시된 항목을 자유롭게 검토한 후 나중에 "심층 분석" 항목을 확인합니다.  
   
-## <a name="essentials-introduction-to-xamarin"></a>주요 사항: Xamarin 소개  
+## <a name="essentials-introduction-to-xamarin"></a>주요 사항: Xamarin essentials: 소개  
  *10~20분*  
   
 1. [Xamarin을 사용한 Visual Studio의 모바일 앱](https://www.visualstudio.com/explore/xamarin-vs) (영문)(visualstudio.com)에서는 Xamarin의 기본 특성에 대한 매우 짧은 설명을 제공합니다.  
@@ -31,7 +31,7 @@ ms.locfileid: "74299774"
 2. Xamarin 전문가인 James Montemagno와 함께하는[C# 및 Visual Studio를 사용하여 플랫폼 간 모바일 앱 빌드](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2015-Final-Release-Event/Building-cross-platform-mobile-apps-using-C-and-Visual-Studio-2015) (영문)(Channel9, 15분 16초). 처음 3분은 Xamarin 개요이고 코드 데모가 뒤따릅니다.  
   
 ## <a name="essentials-overview-of-the-visual-studio-and-xamarin-environment"></a>주요 사항: Visual Studio 및 Xamarin 환경 개요  
- *5~15분*  
+ *5-15분*  
   
 - Visual Studio 및 Xamarin이 설치된 Windows 컴퓨터에서 대부분 작업을 수행합니다. 이 컴퓨터에서 직접 Windows 및 Android 앱을 빌드하고 디바이스나 에뮬레이터에서 실행 및 디버그합니다. Mac을 통해 원격으로 iOS 앱을 빌드, 실행 및 디버그할 수도 있습니다. Windows 컴퓨터의 Visual Studio를 iOS 스토리보드 디자이너 및 iOS 시뮬레이터에 연결할 수도 있습니다.  
   
@@ -39,7 +39,7 @@ ms.locfileid: "74299774"
   
   이러한 관계는 아래에서 설명하고 iOS 앱 작업에 대한 자세한 내용은 [Visual Studio용 Xamarin.iOS 소개](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/introduction-to-xamarin-ios-for-visual-studio) (영문)(xamarin.com)를 참조하세요.  
   
-  ![The relationship between Windows and Mac dev computers in a Xamarin environment](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin Learn 1")  
+  ![Xamarin 환경에서 Windows 및 Mac 개발 컴퓨터 간의 관계](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin 배우기 1")  
   
 ## <a name="essentials-how-projects-are-structured"></a>주요 사항: 프로젝트 구성 방법  
  *10~30분*  
@@ -90,9 +90,9 @@ ms.locfileid: "74299774"
   
     - **Windows 7 또는 이전/Mac OS X에서 실행되는 Windows**: [Xamarin Android Player](https://docs.microsoft.com/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (xamarin.com)를 사용합니다.  
   
-2. **Apple iOS 시뮬레이터.** 자세한 내용은 [iOS 시뮬레이터 시작](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (영문)(apple.com)을 참조하세요.  
+2. **Apple iOS 시뮬레이터.** 자세한 내용은 [Getting Started with the iOS Simulator](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1)(iOS 시뮬레이터 시작)(apple.com)를 참조하세요.  
   
-3. **Microsoft Window Phone Emulator.** 자세한 내용은 [Windows Phone 8용 Windows Phone Emulator](https://msdn.microsoft.com/library/dn632391.aspx)(영문)를 참조하세요.  
+3. **Microsoft Window Phone Emulator.** 자세한 내용은 [Windows Phone 8용 Windows Phone Emulator](https://msdn.microsoft.com/library/dn632391.aspx)를 참조하세요.  
   
 ## <a name="components"></a> Deeper Dive: Xamarin Components  
  *10분*  

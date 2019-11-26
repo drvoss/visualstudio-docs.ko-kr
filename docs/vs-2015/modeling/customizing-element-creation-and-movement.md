@@ -1,5 +1,5 @@
 ---
-title: Customizing Element Creation and Movement | Microsoft Docs
+title: 요소 만들기 및 이동 사용자 지정 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -23,147 +23,147 @@ ms.locfileid: "74301150"
 # <a name="customizing-element-creation-and-movement"></a>요소 만들기 및 이동 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-You can allow an element to be dragged onto another, either from the toolbox or in a paste or move operation. You can have the moved elements linked to the target elements, using the relationships that you specify.
+도구 상자 또는 붙여넣기 또는 이동 작업에서 요소를 다른 페이지로 끌 수 있습니다. 지정한 관계를 사용 하 여 이동 된 요소를 대상 요소에 연결할 수 있습니다.
 
- An element merge directive (EMD) specifies what happens when one model element is *merged* into another model element. This happens when:
+ 요소 병합 지시문 (EMD)은 하나의 모델 요소가 다른 모델 요소에 *병합* 될 때 발생 하는 결과를 지정 합니다. 이는 다음과 같은 경우에 발생 합니다.
 
-- The user drags from the toolbox onto the diagram or a shape.
+- 사용자가 도구 상자에서 다이어그램 또는 모양으로 끌어 옵니다.
 
-- The user creates an element by using an Add menu in the explorer or a compartment shape.
+- 사용자가 탐색기 또는 구획 도형에서 추가 메뉴를 사용 하 여 요소를 만듭니다.
 
-- The user moves an item from one swimlane to another.
+- 사용자가 한 스윔 레인에서 다른 스윔 레인로 항목을 이동 합니다.
 
-- The user pastes an element.
+- 사용자가 요소를 붙여넣습니다.
 
-- Your program code calls the element merge directive.
+- 프로그램 코드는 요소 병합 지시문을 호출 합니다.
 
-  Although the creation operations might seem to be different from the copy operations, they actually work in the same way. When an element is added, for example from the toolbox, a prototype of it is replicated. The prototype is merged into the model in the same manner as elements that have been copied from another part of the model.
+  만들기 작업은 복사 작업과 다른 것 처럼 보일 수 있지만 실제로는 동일한 방식으로 작동 합니다. 예를 들어 도구 상자에서 요소를 추가 하면 그 프로토타입이 복제 됩니다. 프로토타입은 모델의 다른 부분에서 복사 된 요소와 동일한 방식으로 모델에 병합 됩니다.
 
-  The responsibility of an EMD is to decide how an object or group of objects should be merged into a particular location in the model. In particular, it decides what relationships should be instantiated to link the merged group into the model. You can also customize it to set properties and to create additional objects.
+  EMD의 책임은 개체 또는 개체 그룹을 모델의 특정 위치에 병합 하는 방법을 결정 하는 것입니다. 특히 병합 된 그룹을 모델에 연결 하기 위해 인스턴스화할 관계를 결정 합니다. 또한 속성을 설정 하 고 추가 개체를 만들기 위해 사용자 지정할 수 있습니다.
 
-  ![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd-merge.png "DSL-EMD_Merge") The role of an Element Merge Directive
+  ![DSL&#45;emd&#95;병합](../modeling/media/dsl-emd-merge.png "DSL-EMD_Merge") 요소 병합 지시문의 역할입니다.
 
-  An EMD is generated automatically when you define an embedding relationship. This default EMD creates an instance of the relationship when users add new child instances to the parent. You can modify these default EMDs, for example by adding custom code.
+  EMD는 포함 관계를 정의할 때 자동으로 생성 됩니다. 사용자가 새 자식 인스턴스를 부모에 추가할 때이 기본 EMD는 관계의 인스턴스를 만듭니다. 예를 들어 사용자 지정 코드를 추가 하 여 이러한 기본 EMDs를 수정할 수 있습니다.
 
-  You can also add your own EMDs in the DSL definition, to let users drag or paste different combinations of merged and receiving classes.
+  DSL 정의에서 사용자 고유의 EMDs를 추가 하 여 사용자가 병합 된 클래스와 수신 하는 클래스의 다른 조합을 끌거나 붙여 넣을 수도 있습니다.
 
-## <a name="defining-an-element-merge-directive"></a>Defining an Element Merge Directive
- You can add element merge directives to domain classes, domain relationships, shapes, connectors, and diagrams. You can add or find them in DSL Explorer under the receiving domain class. The receiving class is the domain class of the element that is already in the model, and onto which the new or copied element will be merged.
+## <a name="defining-an-element-merge-directive"></a>요소 병합 지시문 정의
+ 도메인 클래스, 도메인 관계, 모양, 연결선 및 다이어그램에 요소 병합 지시문을 추가할 수 있습니다. DSL 탐색기에서 수신 도메인 클래스 아래에 해당 항목을 추가 하거나 찾을 수 있습니다. 수신 클래스는 이미 모델에 있는 요소의 도메인 클래스 이며, 새 요소 또는 복사 된 요소가 병합 됩니다.
 
- ![DSL&#45;EMD&#95;Details](../modeling/media/dsl-emd-details.png "DSL-EMD_Details")
+ ![DSL&#45;emd&#95;세부 정보](../modeling/media/dsl-emd-details.png "DSL-EMD_Details")
 
- The **Indexing Class** is the domain class of elements that can be merged into members of the receiving class. Instances of subclasses of the Indexing Class will also be merged by this EMD, unless you set **Applies to subclasses** to False.
+ **인덱싱 클래스** 는 수신 하는 클래스의 멤버로 병합 될 수 있는 요소의 도메인 클래스입니다. **서브 클래스에 적용** 을 False로 설정 하지 않으면 인덱싱 클래스의 하위 클래스 인스턴스도이 emd에 의해 병합 됩니다.
 
- There are two kinds of merge directive:
+ Merge 지시문에는 다음과 같은 두 가지 종류가 있습니다.
 
-- A **Process Merge** directive specifies the relationships by which the new element should be linked into the tree.
+- **프로세스 병합** 지시문은 새 요소가 트리에 연결 되어야 하는 관계를 지정 합니다.
 
-- A **Forward Merge** directive redirects the new element to another receiving element, typically a parent.
+- **전방 병합** 지시문은 새 요소를 일반적으로 부모 인 다른 수신 요소로 리디렉션합니다.
 
-  You can add custom code to merge directives:
+  Merge 지시문에 사용자 지정 코드를 추가할 수 있습니다.
 
-- Set **Uses custom accept** to add your own code to determine whether a particular instance of the indexing element should be merged into the target element. When the user drags from the toolbox, the "invalid" pointer shows if your code disallows the merge.
+- Set **사용자 지정 허용을 사용** 하 여 사용자 고유의 코드를 추가 하 여 인덱싱 요소의 특정 인스턴스를 대상 요소로 병합할지 여부를 결정 합니다. 사용자가 도구 상자에서 끌면 "유효 하지 않은" 포인터가 코드에서 병합을 허용 하지 않는 경우를 표시 합니다.
 
-   For example, you could allow the merge only when the receiving element is in a particular state.
+   예를 들어 수신 요소가 특정 상태에 있는 경우에만 병합을 허용할 수 있습니다.
 
-- Set **Uses custom merge** to add provide own code to define the changes that are made to the model when the merge is performed.
+- Set **사용자 지정 병합을 사용** 하 여 병합 수행 시 모델에 대 한 변경 내용을 정의 하는 고유한 코드를 추가 합니다.
 
-   For example, you could set properties in the merged element by using data from its new location in the model.
+   예를 들어 모델의 새 위치에 있는 데이터를 사용 하 여 병합 된 요소에 속성을 설정할 수 있습니다.
 
 > [!NOTE]
-> If you write custom merge code, it affects only merges that are performed by using this EMD. If there are other EMDs that merge the same type of object, or if there is other custom code that creates these objects without using the EMD, then they will not be affected by your custom merge code.
+> 사용자 지정 병합 코드를 작성 하는 경우이 EMD를 사용 하 여 수행 된 병합에만 영향을 줍니다. 동일한 형식의 개체를 병합 하는 다른 EMDs가 있거나 EMDS를 사용 하지 않고 이러한 개체를 만드는 다른 사용자 지정 코드가 있는 경우 사용자 지정 병합 코드의 영향을 받지 않습니다.
 >
-> If you want to make sure that a new element or new relationship is always processed by your custom code, consider defining an `AddRule` on the embedding relationship and a `DeleteRule` on the element’s domain class. For more information, see [Rules Propagate Changes Within the Model](../modeling/rules-propagate-changes-within-the-model.md).
+> 사용자 지정 코드에서 새 요소나 새 관계를 항상 처리 하는지 확인 하려면 포함 관계 및 요소의 도메인 클래스에 대 한 `DeleteRule`에 대 한 `AddRule`를 정의 하는 것이 좋습니다. 자세한 내용은 [모델 내에서 변경 내용 전파 규칙](../modeling/rules-propagate-changes-within-the-model.md)을 참조 하세요.
 
-## <a name="example-defining-an-emd-without-custom-code"></a>Example: Defining an EMD without custom code
- The following example lets users create an element and a connector at the same time by dragging from the toolbox onto an existing shape. The example adds an EMD to the DSL Definition. Before this modification, users can drag tools onto the diagram, but not onto existing shapes.
+## <a name="example-defining-an-emd-without-custom-code"></a>예: 사용자 지정 코드 없이 EMD 정의
+ 다음 예제에서는 사용자가 도구 상자에서 기존 모양으로 끌어 요소와 연결선을 동시에 만들 수 있습니다. 이 예에서는 EMD를 DSL 정의에 추가 합니다. 이 수정 작업을 수행 하기 전에 사용자가 도구를 다이어그램으로 끌 수 있지만 기존 셰이프에는 끌어 오지 않습니다.
 
- Users can also paste elements onto other elements.
+ 사용자가 요소를 다른 요소에 붙여넣을 수도 있습니다.
 
-#### <a name="to-let-users-create-an-element-and-a-connector-at-the-same-time"></a>To let users create an element and a connector at the same time
+#### <a name="to-let-users-create-an-element-and-a-connector-at-the-same-time"></a>사용자가 요소와 연결선을 동시에 만들 수 있도록 하려면
 
-1. Create a new DSL by using the **Minimal Language** solution template.
+1. **최소 언어** 솔루션 템플릿을 사용 하 여 새 DSL을 만듭니다.
 
-    When you run this DSL, it lets you create shapes and connectors between the shapes. You cannot drag a new **ExampleElement** shape from the toolbox onto an existing shape.
+    이 DSL을 실행 하면 셰이프 사이에 모양과 연결선을 만들 수 있습니다. 도구 상자에서 기존 모양으로 새 **ExampleElement** 셰이프를 끌어올 수 없습니다.
 
-2. To let users merge elements onto `ExampleElement` shapes, create a new EMD in the `ExampleElement` domain class:
+2. 사용자가 `ExampleElement` 셰이프에 요소를 병합할 수 있도록 `ExampleElement` 도메인 클래스에 새 EMD를 만듭니다.
 
-   1. In **DSL Explorer**, expand **Domain Classes**. Right-click `ExampleElement` and then click **Add New Element Merge Directive**.
+   1. **DSL 탐색기**에서 **도메인 클래스**를 확장 합니다. `ExampleElement`를 마우스 오른쪽 단추로 클릭 한 다음 **새 요소 병합 지시문 추가**를 클릭 합니다.
 
-   2. Make sure that the **DSL Details** window is open, so that you can see the details of the new EMD. (Menu: **View**, **Other Windows**, **DSL Details**.)
+   2. 새 EMD의 세부 정보를 볼 수 있도록 **DSL 세부 정보** 창이 열려 있는지 확인 합니다. (메뉴: **보기**, **다른 창**, **DSL 세부 정보**)
 
-3. Set the **Indexing class** in the DSL Details window, to define what class of elements can be merged onto `ExampleElement` objects.
+3. DSL 정보 창에서 **인덱싱 클래스** 를 설정 하 여 `ExampleElement` 개체에 병합할 수 있는 요소 클래스를 정의 합니다.
 
-    For this example, select `ExampleElements`, so that the user can drag new elements onto existing elements.
+    이 예에서는 사용자가 새 요소를 기존 요소로 끌어올 수 있도록 `ExampleElements`를 선택 합니다.
 
-    Notice that the Indexing class becomes the name of the EMD in DSL Explorer.
+    인덱싱 클래스는 DSL 탐색기에서 EMD의 이름이 됩니다.
 
-4. Under **Process merge by creating links**, add two paths:
+4. **링크를 만들어 병합 처리**에서 두 개의 경로를 추가 합니다.
 
-   1. One path links the new element to the parent model. The path expression that you need to enter navigates from the existing element, up through the embedding relationship to the parent model. Finally, it specifies the role in the new link to which the new element will be assigned. The path is as follows:
+   1. 한 경로는 새 요소를 부모 모델에 연결 합니다. 입력 해야 하는 경로 식은 기존 요소에서 부모 모델과의 포함 관계를 통해 탐색 합니다. 마지막으로 새 요소가 할당 될 새 링크의 역할을 지정 합니다. 경로는 다음과 같습니다.
 
        `ExampleModelHasElements.ExampleModel/!ExampleModel/.Elements`
 
-   2. The other path links the new element to the existing element. The path expression specifies the reference relationship and the role to which the new element will be assigned. This path is as follows:
+   2. 다른 경로는 새 요소를 기존 요소에 연결 합니다. 경로 식은 참조 관계와 새 요소가 할당 될 역할을 지정 합니다. 이 경로는 다음과 같습니다.
 
        `ExampleElementReferencesTargets.Sources`
 
-      You can use the path navigation tool to create each path:
+      경로 탐색 도구를 사용 하 여 각 경로를 만들 수 있습니다.
 
-   3. Under **Process merge by creating links at paths**, click **\<add path>** .
+   3. **경로에서 링크를 만들어 병합 처리**아래에서 **\<경로 > 추가**를 클릭 합니다.
 
-   4. Click the drop-down arrow to the right of the list item. A tree view appears.
+   4. 목록 항목의 오른쪽에 있는 드롭다운 화살표를 클릭 합니다. 트리 뷰가 나타납니다.
 
-   5. Expand the nodes in the tree to form the path that you want to specify.
+   5. 트리의 노드를 확장 하 여 지정 하려는 경로를 구성 합니다.
 
-5. Test the DSL:
+5. DSL 테스트:
 
-   1. Press F5 to rebuild and run the solution.
+   1. F5 키를 눌러 솔루션을 다시 빌드하고 실행 합니다.
 
-        Rebuilding will take longer than usual because the generated code will be updated from text templates to conform to the new DSL Definition.
+        생성 된 코드는 새 DSL 정의를 준수 하도록 텍스트 템플릿에서 업데이트 되기 때문에 다시 작성 하는 것이 평소 보다 더 오래 걸립니다.
 
-   2. When the experimental instance of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] has started, open a model file of your DSL. Create some example elements.
+   2. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 실험적 인스턴스가 시작 되 면 DSL의 모델 파일을 엽니다. 몇 가지 예제 요소를 만듭니다.
 
-   3. Drag from the **Example Element** tool onto an existing shape.
+   3. **예제 요소** 도구에서 기존 모양으로 끌어 옵니다.
 
-        A new shape appears, and it is linked to the existing shape with a connector.
+        새 셰이프가 나타나고 연결선을 사용 하 여 기존 셰이프에 연결 됩니다.
 
-   4. Copy an existing shape. Select another shape and paste.
+   4. 기존 셰이프를 복사 합니다. 다른 셰이프를 선택 하 고 붙여 넣습니다.
 
-        A copy of the first shape is created.  It has a new name and it is linked to the second shape with a connector.
+        첫 번째 셰이프의 복사본이 생성 됩니다.  새 이름을 가지 며 커넥터를 사용 하 여 두 번째 셰이프에 연결 됩니다.
 
-   Notice the following points from this procedure:
+   이 절차에서 다음 사항을 확인 합니다.
 
-- By creating Element Merge Directives, you can allow any class of element to accept any other. The EMD is created in the receiving domain class, and the accepted domain class is specified in the **Index class** field.
+- 요소 병합 지시문을 만들어 요소 클래스에서 다른 모든 요소를 허용 하도록 허용할 수 있습니다. EMD는 수신 도메인 클래스에서 만들어지며, 허용 된 도메인 클래스는 **인덱스 클래스** 필드에 지정 됩니다.
 
-- By defining paths, you can specify what links should be used to connect the new element to the existing model.
+- 경로를 정의 하 여 새 요소를 기존 모델에 연결 하는 데 사용할 링크를 지정할 수 있습니다.
 
-     The links that you specify should include one embedding relationship.
+     지정 하는 링크에는 포함 관계 하나가 포함 되어야 합니다.
 
-- The EMD affects both creation from the toolbox and also paste operations.
+- EMD는 도구 상자에서 만드는 작업과 붙여넣기 작업에 모두 영향을 줍니다.
 
-     If you write custom code that creates new elements, you can explicitly invoke the EMD by using the `ElementOperations.Merge` method. This makes sure that your code links new elements into the model in the same way as other operations. For more information, see [Customizing Copy Behavior](../modeling/customizing-copy-behavior.md).
+     새 요소를 만드는 사용자 지정 코드를 작성 하는 경우 `ElementOperations.Merge` 메서드를 사용 하 여 EMD를 명시적으로 호출할 수 있습니다. 이렇게 하면 코드에서 다른 작업과 동일한 방식으로 새 요소를 모델에 연결 합니다. 자세한 내용은 [복사 동작 사용자 지정](../modeling/customizing-copy-behavior.md)을 참조 하세요.
 
-## <a name="example-adding-custom-accept-code-to-an-emd"></a>Example: Adding Custom Accept code to an EMD
- By adding custom code to an EMD, you can define more complex merge behavior. This simple example prevents the user from adding more than a fixed number of elements to the diagram. The example modifies the default EMD that accompanies an embedding relationship.
+## <a name="example-adding-custom-accept-code-to-an-emd"></a>예: EMD에 사용자 지정 수락 코드 추가
+ EMD에 사용자 지정 코드를 추가 하 여 더 복잡 한 병합 동작을 정의할 수 있습니다. 이 간단한 예제에서는 사용자가 보다 고정 된 수의 요소를 다이어그램에 추가할 수 없습니다. 이 예제에서는 포함 관계와 함께 제공 되는 기본 EMD를 수정 합니다.
 
-#### <a name="to-write-custom-accept-code-to-restrict-what-the-user-can-add"></a>To write Custom Accept code to restrict what the user can add
+#### <a name="to-write-custom-accept-code-to-restrict-what-the-user-can-add"></a>사용자 지정 수락 코드를 작성 하 여 사용자가 추가할 수 있는 항목을 제한 하려면
 
-1. Create a DSL by using the **Minimal Language** solution template. Open the DSL Definition diagram.
+1. **최소 언어** 솔루션 템플릿을 사용 하 여 DSL을 만듭니다. DSL 정의 다이어그램을 엽니다.
 
-2. In DSL Explorer, expand **Domain Classes**, `ExampleModel`, **Element Merge Directives**. Select the element merge directive that is named `ExampleElement`.
+2. DSL 탐색기에서 **도메인 클래스**, `ExampleModel`, **요소 병합 지시문**을 차례로 확장 합니다. 이름이 `ExampleElement`인 요소 병합 지시문을 선택 합니다.
 
-     This EMD controls how the user can create new `ExampleElement` objects in the model, for example by dragging from the toolbox.
+     이 EMD는 사용자가 도구 상자에서 끌어와 같이 모델에 새 `ExampleElement` 개체를 만들 수 있는 방법을 제어 합니다.
 
-3. In the **DSL Details** window, select **Uses custom accept**.
+3. **DSL 정보** 창에서 **사용자 지정 허용 사용**을 선택 합니다.
 
-4. 솔루션을 다시 빌드합니다. This will take longer than usual because the generated code will be updated from the model.
+4. 솔루션을 다시 빌드합니다. 생성 된 코드가 모델에서 업데이트 되기 때문에이는 평소 보다 시간이 오래 걸립니다.
 
-     A build error will be reported, similar to: "Company.ElementMergeSample.ExampleElement does not contain a definition for CanMergeExampleElement…"
+     "ElementMergeSample. ExampleElement에 CanMergeExampleElement에 대 한 정의가 포함 되어 있지 않습니다."와 비슷한 빌드 오류가 보고 됩니다.
 
-     You must implement the method `CanMergeExampleElement`.
+     `CanMergeExampleElement`메서드를 구현 해야 합니다.
 
-5. Create a new code file in the **Dsl** project. Replace its content with the following code and change the namespace to the namespace of your project.
+5. **Dsl** 프로젝트에서 새 코드 파일을 만듭니다. 해당 콘텐츠를 다음 코드로 바꾸고 네임 스페이스를 프로젝트의 네임 스페이스로 변경 합니다.
 
     ```csharp
     using Microsoft.VisualStudio.Modeling;
@@ -191,46 +191,46 @@ You can allow an element to be dragged onto another, either from the toolbox or 
 
     ```
 
-     This simple example restricts the number of elements that can be merged into the parent model. For more interesting conditions, the method can inspect any of the properties and links of the receiving object. It can also inspect the properties of the merging elements, which are carried in a <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. For more information about `ElementGroupPrototypes`, see [Customizing Copy Behavior](../modeling/customizing-copy-behavior.md). For more information about how to write code that reads a model, see [Navigating and Updating a Model in Program Code](../modeling/navigating-and-updating-a-model-in-program-code.md).
+     이 간단한 예제에서는 부모 모델에 병합할 수 있는 요소의 수를 제한 합니다. 더 흥미로운 조건을 위해 메서드에서는 수신 개체의 속성 및 링크를 검사할 수 있습니다. 또한 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>에 전달 되는 병합 요소의 속성을 검사할 수 있습니다. `ElementGroupPrototypes`에 대 한 자세한 내용은 [복사 동작 사용자 지정](../modeling/customizing-copy-behavior.md)을 참조 하세요. 모델을 읽는 코드를 작성 하는 방법에 대 한 자세한 내용은 [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)를 참조 하세요.
 
-6. Test the DSL:
+6. DSL 테스트:
 
-    1. Press F5 to rebuild the solution. When the experimental instance of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] opens, open an instance of your DSL.
+    1. F5 키를 눌러 솔루션을 다시 빌드합니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 실험적 인스턴스가 열리면 DSL의 인스턴스를 엽니다.
 
-    2. Create new elements in several ways:
+    2. 여러 가지 방법으로 새 요소를 만듭니다.
 
-        1. Drag from the **Example Element** tool onto the diagram.
+        1. **예제 요소** 도구에서 다이어그램으로 끌어 옵니다.
 
-        2. In the **Example Model Explorer**, right-click the root node and then click **Add New Example Element**.
+        2. **예제 모델 탐색기**에서 루트 노드를 마우스 오른쪽 단추로 클릭 한 다음 **새 예제 요소 추가**를 클릭 합니다.
 
-        3. Copy and paste an element on the diagram.
+        3. 다이어그램에서 요소를 복사 하 여 붙여넣습니다.
 
-    3. Verify that you cannot use any of these ways to add more than four elements to the model. This is because they all use the Element Merge Directive.
+    3. 이러한 방법 중 하나를 사용 하 여 모델에 4 개 이상의 요소를 추가할 수 있는지 확인 합니다. 이는 모두 요소 병합 지시문을 사용 하기 때문입니다.
 
-## <a name="example-adding-custom-merge-code-to-an-emd"></a>Example: Adding Custom Merge code to an EMD
- In custom merge code, you can define what happens when the user drags a tool or pastes onto an element. There are two ways to define a custom merge:
+## <a name="example-adding-custom-merge-code-to-an-emd"></a>예: EMD에 사용자 지정 병합 코드 추가
+ 사용자 지정 병합 코드에서 사용자가 도구를 끌거나 요소에 붙여넣을 때 발생 하는 작업을 정의할 수 있습니다. 사용자 지정 병합을 정의 하는 방법에는 다음 두 가지가 있습니다.
 
-1. Set **Uses Custom Merge** and supply the required code. Your code replaces the generated merge code. Use this option if you want to completely redefine what the merge does.
+1. Set **사용자 지정 병합을 사용 하** 고 필요한 코드를 제공 합니다. 코드는 생성 된 병합 코드를 대체 합니다. 병합이 수행 하는 작업을 완전히 다시 정의 하려면이 옵션을 사용 합니다.
 
-2. Override the `MergeRelate` method, and optionally the `MergeDisconnect` method. To do this, you must set the **Generates Double Derived** property of the domain class. Your code can call the generated merge code in the base class. Use this option if you want to perform additional operations after the merge has been performed.
+2. `MergeRelate` 메서드를 재정의 하 고 선택적으로 `MergeDisconnect` 메서드를 재정의 합니다. 이렇게 하려면 도메인 클래스의 **이중 파생 클래스 생성** 속성을 설정 해야 합니다. 코드는 기본 클래스에서 생성 된 병합 코드를 호출할 수 있습니다. 병합을 수행한 후 추가 작업을 수행 하려는 경우이 옵션을 사용 합니다.
 
-   These approaches only affect merges that are performed by using this EMD. If you want to affect all ways in which the merged element can be created, an alternative is to define an `AddRule` on the embedding relationship and a `DeleteRule` on the merged domain class. For more information, see [Rules Propagate Changes Within the Model](../modeling/rules-propagate-changes-within-the-model.md).
+   이러한 방법은이 EMD를 사용 하 여 수행 되는 병합에만 영향을 줍니다. 병합 된 요소를 만들 수 있는 모든 방법에 영향을 주려면 포함 관계 및 병합 된 도메인 클래스의 `DeleteRule`에 대 한 `AddRule`를 정의 하는 것이 좋습니다. 자세한 내용은 [모델 내에서 변경 내용 전파 규칙](../modeling/rules-propagate-changes-within-the-model.md)을 참조 하세요.
 
-#### <a name="to-override-mergerelate"></a>To override MergeRelate
+#### <a name="to-override-mergerelate"></a>MergeRelate를 재정의 하려면
 
-1. In the DSL definition, make sure that you have defined the EMD to which you want to add code. If you want, you can add paths and define custom accept code as described in the previous sections.
+1. DSL 정의에서 코드를 추가할 EMD를 정의 했는지 확인 합니다. 원하는 경우 이전 섹션에 설명 된 대로 경로를 추가 하 고 사용자 지정 수락 코드를 정의할 수 있습니다.
 
-2. In the DslDefinition diagram, select the receiving class of the merge. Typically it is the class at the source end of an embedding relationship.
+2. DslDefinition 다이어그램에서 병합의 수신 클래스를 선택 합니다. 일반적으로 포함 관계의 소스 끝에 있는 클래스입니다.
 
-     For example, in a DSL generated from the Minimal Language solution, select `ExampleModel`.
+     예를 들어 최소 언어 솔루션에서 생성 된 DSL에서 `ExampleModel`를 선택 합니다.
 
-3. In the **Properties** window, set **Generates Double Derived** to **true**.
+3. **속성** 창에서 **Double 파생** 을 **true**로 설정 합니다.
 
 4. 솔루션을 다시 빌드합니다.
 
-5. Inspect the content of **Dsl\Generated Files\DomainClasses.cs**. Search for methods named `MergeRelate` and examine their contents. This will help you write your own versions.
+5. **Dsl\generated Files\DomainClasses.cs**의 콘텐츠를 검사 합니다. `MergeRelate` 메서드를 검색 하 고 해당 내용을 검사 합니다. 이렇게 하면 고유한 버전을 작성 하는 데 도움이 됩니다.
 
-6. In a new code file, write a partial class for the receiving class, and override the `MergeRelate` method. Remember to call the base method. 예를 들어 다음과 같은 가치를 제공해야 합니다.
+6. 새 코드 파일에서 수신 하는 클래스에 대 한 partial 클래스를 작성 하 고 `MergeRelate` 메서드를 재정의 합니다. 기본 메서드를 호출 해야 합니다. 예를 들면 다음과 같습니다.
 
     ```csharp
     partial class ExampleModel
@@ -257,64 +257,64 @@ You can allow an element to be dragged onto another, either from the toolbox or 
 
     ```
 
-#### <a name="to-write-custom-merge-code"></a>To write Custom Merge code
+#### <a name="to-write-custom-merge-code"></a>사용자 지정 병합 코드를 작성 하려면
 
-1. In **Dsl\Generated Code\DomainClasses.cs**, inspect methods named `MergeRelate`. These methods create links between a new element and the existing model.
+1. **Dsl\generated Code\DomainClasses.cs**에서 `MergeRelate`라는 메서드를 검사 합니다. 이러한 메서드는 새 요소와 기존 모델 간에 링크를 만듭니다.
 
-    Also, inspect methods named `MergeDisconnect`. These methods unlink an element from the model when it is to be deleted.
+    또한 `MergeDisconnect`라는 메서드를 검사 합니다. 이러한 메서드는 모델을 삭제할 때 모델에서 요소의 연결을 해제 합니다.
 
-2. In **DSL Explorer**, select or create the Element Merge Directive that you want to customize. In the **DSL Details** window, set **Uses Custom Merge**.
+2. **DSL 탐색기**에서 사용자 지정 하려는 요소 병합 지시문을 선택 하거나 만듭니다. **DSL 정보** 창에서 설정 **사용자 지정 병합을 사용**합니다.
 
-    When you set this option, the **Process Merge** and **Forward Merge** options are ignored. Your code is used instead.
+    이 옵션을 설정 하면 **병합** 및 **전달 병합** 옵션이 무시 됩니다. 코드가 대신 사용 됩니다.
 
-3. 솔루션을 다시 빌드합니다. It will take longer than usual because the generated code files will be updated from the model.
+3. 솔루션을 다시 빌드합니다. 생성 된 코드 파일이 모델에서 업데이트 되기 때문에이는 평소 보다 시간이 더 오래 걸립니다.
 
-    Error messages will appear. Double-click the error messages to see the instructions in the generated code. These instructions ask you to supply two methods, `MergeRelate`*YourDomainClass* and `MergeDisconnect`*YourDomainClass*
+    오류 메시지가 표시 됩니다. 오류 메시지를 두 번 클릭 하면 생성 된 코드의 지침이 표시 됩니다. 이 지침에서는 `MergeRelate`*YourDomainClass* 및 `MergeDisconnect`*YourDomainClass* 를 제공 하는 두 가지 방법을 제공 합니다.
 
-4. Write the methods in a partial class definition in a separate code file. The examples you inspected earlier should suggest what you need.
+4. 별도의 코드 파일에서 partial 클래스 정의에 메서드를 작성 합니다. 앞서 검사 한 예제에서는 필요한 항목을 제안 해야 합니다.
 
-   Custom merge code will not affect code that creates objects and relationships directly, and it will not affect other EMDs. To make sure that your additional changes are implemented regardless of how the element is created, consider writing an `AddRule` and a `DeleteRule` instead. For more information, see [Rules Propagate Changes Within the Model](../modeling/rules-propagate-changes-within-the-model.md).
+   사용자 지정 병합 코드는 개체 및 관계를 직접 만드는 코드에는 영향을 주지 않으며 다른 EMDs에는 영향을 주지 않습니다. 요소가 생성 되는 방법에 관계 없이 추가 변경 내용이 구현 되었는지 확인 하려면 `AddRule` 및 `DeleteRule`를 대신 작성 하는 것이 좋습니다. 자세한 내용은 [모델 내에서 변경 내용 전파 규칙](../modeling/rules-propagate-changes-within-the-model.md)을 참조 하세요.
 
-## <a name="redirecting-a-merge-operation"></a>Redirecting a Merge Operation
- A forward merge directive redirects the target of a merge operation. Typically, the new target is the embedding parent of the initial target.
+## <a name="redirecting-a-merge-operation"></a>병합 작업 리디렉션
+ 전방 병합 지시문은 병합 작업의 대상을 리디렉션합니다. 일반적으로 새 대상은 초기 대상의 포함 부모입니다.
 
- For example, in a DSL that was created with the component diagram template, Ports are embedded in Components. Ports are displayed as small shapes on the edge of a component shape. The user creates ports by dragging the Port tool onto a Component shape. But sometimes, the user mistakenly drags the Port tool onto an existing port, instead of the component, and the operation fails. This is an easy mistake when there are several existing ports. To help the user to avoid this nuisance, you can allow ports to be dragged onto an existing port, but have the action redirected to the parent component. The operation works as if the target element were the component.
+ 예를 들어 구성 요소 다이어그램 템플릿을 사용 하 여 만든 DSL에서 포트는 구성 요소에 포함 됩니다. 포트는 구성 요소 셰이프의 가장자리에 작은 모양으로 표시 됩니다. 사용자는 포트 도구를 구성 요소 셰이프로 끌어 포트를 만듭니다. 그러나 경우에 따라 사용자가 실수로 포트 도구를 구성 요소 대신 기존 포트로 끌어 오면 작업이 실패 합니다. 이는 기존 포트가 여러 개 있는 경우에 쉬운 실수입니다. 사용자가이 걸림돌를 방지 하는 데 도움이 되도록 기존 포트로 포트를 끌 수 있지만 작업을 부모 구성 요소로 리디렉션할 수 있습니다. 작업은 대상 요소가 구성 요소인 것 처럼 작동 합니다.
 
- You can create a forward merge directive in the Component Model solution. If you compile and run the original solution, you should see that users can drag any number of **Input Port** or **Output Port** elements from the **Toolbox** to a **Component** element. However, they cannot drag a port to an existing port. The Unavailable pointer alerts them that this move is not enabled. However, you can create a forward merge directive so that a port that is unintentionally dropped on an existing **Input Port** is forwarded to the **Component** element.
+ 구성 요소 모델 솔루션에서 전방 병합 지시문을 만들 수 있습니다. 원본 솔루션을 컴파일 및 실행 하는 경우 사용자가 **도구 상자** 에서 원하는 수의 **입력 포트** 또는 **출력 포트** 요소를 **구성** 요소 요소에 끌어 놓을 수 있습니다. 그러나 포트를 기존 포트로 끌어올 수 없습니다. 사용할 수 없는 포인터는이 이동이 사용 되지 않도록 경고 합니다. 그러나 기존 **입력 포트** 에서 실수로 삭제 된 포트가 **Component** 요소로 전달 되도록 전방 병합 지시문을 만들 수 있습니다.
 
-#### <a name="to-create-a-forward-merge-directive"></a>To create a forward merge directive
+#### <a name="to-create-a-forward-merge-directive"></a>전방 병합 지시문을 만들려면
 
-1. Create a [!INCLUDE[dsl](../includes/dsl-md.md)] solution by using the Component Model template.
+1. 구성 요소 모델 템플릿을 사용 하 여 [!INCLUDE[dsl](../includes/dsl-md.md)] 솔루션을 만듭니다.
 
-2. Display the **DSL Explorer** by opening DslDefinition.dsl.
+2. DslDefinition. dsl을 열어 **Dsl 탐색기** 를 표시 합니다.
 
-3. In the **DSL Explorer**, expand **Domain Classes**.
+3. **DSL 탐색기**에서 **도메인 클래스**를 확장 합니다.
 
-4. The **ComponentPort** abstract domain class is the base class of both **InPort** and **OutPort**. Right-click **ComponentPort** and then click **Add New Element Merge Directive**.
+4. **Componentport** abstract 도메인 클래스는 **InPort** 및 **outport**의 기본 클래스입니다. **Componentport** 를 마우스 오른쪽 단추로 클릭 한 다음 **새 요소 병합 지시문 추가**를 클릭 합니다.
 
-     A new **Element Merge Directive** node appears under the **Element Merge Directives** node.
+     새 **요소 병합 지시문** 노드가 **요소 병합** 지시문 노드 아래에 나타납니다.
 
-5. Select the **Element Merge Directive** node and open the **DSL Details** window.
+5. **요소 병합 지시문** 노드를 선택 하 고 **DSL 세부 정보** 창을 엽니다.
 
-6. In the Indexing class list, select **ComponentPort**.
+6. 인덱싱 클래스 목록에서 **Componentport**를 선택 합니다.
 
-7. Select **Forward merge to a different domain class**.
+7. **다른 도메인 클래스로 병합 전달을**선택 합니다.
 
-8. In the path selection list, expand **ComponentPort**, expand **ComponentHasPorts**, and then select **Component**.
+8. 경로 선택 목록에서 **Componentport**를 확장 하 고 **ComponentHasPorts**를 확장 한 다음 **구성 요소**를 선택 합니다.
 
-     The new path should resemble this one:
+     새 경로는 다음과 유사 합니다.
 
-     **ComponentHasPorts.Component/!Component**
+     **ComponentHasPorts/! 구성 요소**
 
-9. Save the solution, and then transform the templates by clicking the rightmost button on the **Solution Explorer** toolbar.
+9. 솔루션을 저장 한 다음 **솔루션 탐색기** 도구 모음에서 맨 오른쪽 단추를 클릭 하 여 템플릿을 변환 합니다.
 
-10. 솔루션을 빌드하고 실행합니다. A new instance of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] appears.
+10. 솔루션을 빌드하고 실행합니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 새 인스턴스가 나타납니다.
 
-11. In **Solution Explorer**, open Sample.mydsl. The diagram and the **ComponentLanguage Toolbox** appear.
+11. **솔루션 탐색기**에서 샘플. mydsl을 엽니다. 다이어그램 및 **Componentlanguage 도구 상자가** 나타납니다.
 
-12. Drag an **Input Port** from the **Toolbox** to another **Input Port.** Next, drag an **OutputPort** to an **InputPort** and then to another **OutputPort**.
+12. **입력 포트** 를 **도구 상자** 에서 다른 **입력 포트로** 끌어 옵니다. 그런 다음 **outputport** 를 **inputport** 로 끈 다음 다른 **outputport**로 끕니다.
 
-     You should not see the Unavailable pointer, and you should be able to drop the new **Input Port** on the existing one. Select the new **Input Port** and drag it to another point on the **Component**.
+     사용할 수 없는 포인터는 표시 되지 않으며 기존 **입력 포트에 새 입력 포트** 를 삭제할 수 있어야 합니다. 새 **입력 포트** 를 선택 하 고 **구성 요소의**다른 위치로 끕니다.
 
-## <a name="see-also"></a>관련 항목:
- [Navigating and Updating a Model in Program Code](../modeling/navigating-and-updating-a-model-in-program-code.md) [Customizing Tools and the Toolbox](../modeling/customizing-tools-and-the-toolbox.md)
+## <a name="see-also"></a>참고 항목
+ [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md) [도구 및 도구 상자 사용자 지정](../modeling/customizing-tools-and-the-toolbox.md)

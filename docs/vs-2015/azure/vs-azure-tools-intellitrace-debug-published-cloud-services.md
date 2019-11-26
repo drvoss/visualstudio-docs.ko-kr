@@ -1,5 +1,5 @@
 ---
-title: Debugging a published an Azure cloud service with Visual Studio and IntelliTrace | Microsoft Docs
+title: Visual Studio 및 IntelliTrace를 사용 하 여 게시 된 Azure 클라우드 서비스 디버깅 | Microsoft Docs
 description: Visual Studio 및 IntelliTrace를 사용하여 클라우드 서비스를 디버그하는 방법을 알아봅니다.
 author: mikejo5000
 manager: jillfra
@@ -32,7 +32,7 @@ Visual Studio Enterprise가 설치되어 있으며 Azure 애플리케이션 대�
 ## <a name="configure-an-azure-application-for-intellitrace"></a>IntelliTrace에 대한 Azure 애플리케이션 구성
 Azure 애플리케이션에 IntelliTrace를 사용하려면 Visual Studio Azure 프로젝트에서 애플리케이션을 만들고 게시해야 합니다. Azure에 게시하기 전에 Azure 애플리케이션에 대한 IntelliTrace를 구성해야 합니다. IntelliTrace를 구성하지 않고 애플리케이션을 게시하는 경우 프로젝트를 다시 게시해야 합니다. 자세한 내용은 [Visual Studio를 사용하여 Azure Cloud Services 게시](https://go.microsoft.com/fwlink/p/?LinkId=623012)를 참조하세요.
 
-1. Azure 애플리케이션을 배포할 준비가 되면 프로젝트의 빌드 대상이 **디버그**로 설정되어 있는지 확인합니다.
+1. Azure 응용 프로그램을 배포할 준비가 되면 프로젝트 빌드 대상이 **디버그**로 설정되었는지 확인합니다.
 
 1. **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고, 상황에 맞는 메뉴에서 **게시**를 선택합니다.
    

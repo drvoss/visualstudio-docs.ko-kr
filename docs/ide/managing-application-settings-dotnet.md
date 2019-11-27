@@ -76,11 +76,11 @@ ms.locfileid: "72654626"
 
 ## <a name="access-or-change-application-settings-at-run-time-in-visual-basic"></a>Visual Basic에서 런타임에 애플리케이션 설정 액세스 또는 변경
 
-Visual Basic 프로젝트에서는 런타임에 `My.Settings` 개체를 사용하여 애플리케이션 설정에 액세스할 수 있습니다. **설정** 페이지에서 **코드 보기** 단추를 클릭하여 *Settings.vb* 파일을 볼 수 있습니다. *Settings.vb*에 정의된 `Settings` 클래스를 통해 사용자는 설정 클래스에서 <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>, <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving> 등의 이벤트를 처리할 수 있습니다. *Settings.vb*의 `Settings` 클래스는 사용자 소유 코드만 표시하고 전체적으로 생성된 클래스는 표시하지 않는 partial 클래스입니다. `My.Settings` 개체를 사용하여 애플리케이션 설정에 액세스하는 방법에 대한 자세한 내용은 [애플리케이션 설정 액세스(.NET Framework)](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)를 참조하세요.
+Visual Basic 프로젝트에서는 런타임에 `My.Settings` 개체를 사용하여 애플리케이션 설정에 액세스할 수 있습니다. **설정** 페이지에서 **코드 보기** 버튼을 클릭하여 *Settings.vb* 파일을 볼 수 있습니다. *Settings.vb*에 정의된 `Settings` 클래스를 통해 사용자는 설정 클래스에서 <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>, <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving> 등의 이벤트를 처리할 수 있습니다. *Settings.vb*의 `Settings` 클래스는 사용자 소유 코드만 표시하고 전체적으로 생성된 클래스는 표시하지 않는 partial 클래스입니다. `My.Settings` 개체를 사용하여 애플리케이션 설정에 액세스하는 방법에 대한 자세한 내용은 [애플리케이션 설정 액세스(.NET Framework)](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)를 참조하세요.
 
 사용자가 런타임에 변경하는 사용자 범위 설정(예: 폼의 위치)의 값은 *user.config* 파일에 저장됩니다. 기본값은 여전히 *app.config*에 저장되어 있습니다.
 
-애플리케이션을 테스트할 때와 같이 런타임에 사용자 범위 설정을 변경하고 해당 설정을 기본값으로 다시 설정하려는 경우 **동기화** 단추를 클릭합니다.
+애플리케이션을 테스트할 때와 같이 런타임에 사용자 범위 설정을 변경하고 해당 설정을 기본값으로 다시 설정하려는 경우 **동기화** 버튼을 클릭합니다.
 
 설정에 액세스할 때는 `My.Settings` 개체와 기본 *.settings* 파일을 사용하는 것이 좋습니다. 이는 **설정 디자이너**를 사용하여 설정에 속성을 할당할 수 있을 뿐 아니라 사용자 속성이 애플리케이션이 종료되기 전에 자동으로 저장되기 때문입니다. 그러나 Visual Basic 애플리케이션에서 설정에 직접 액세스할 수 있습니다. 이 경우 `MySettings` 클래스에 액세스하고 프로젝트 루트의 사용자 지정 *.settings* 파일을 사용해야 합니다. 애플리케이션을 끝내기 전에 사용자 설정을 저장해야 합니다. C# 애플리케이션의 경우도 마찬가지이며 이는 다음 단원에서 설명합니다.
 

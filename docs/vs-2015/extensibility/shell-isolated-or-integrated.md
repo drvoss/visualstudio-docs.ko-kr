@@ -1,5 +1,5 @@
 ---
-title: Shell (Isolated or Integrated) | Microsoft Docs
+title: Shell (격리 또는 통합) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -24,38 +24,38 @@ ms.locfileid: "74300485"
 # <a name="shell-isolated-or-integrated"></a>셸(격리 또는 통합)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-You can create your own Visual Studio-based application in either integrated or isolated mode. In integrated mode, many Visual Studio features are available in addition to your application. In the isolated mode, you choose a subset of Visual Studio features that you wish to distribute along with your own extension.  
+통합 모드나 격리 모드에서 Visual Studio 기반 응용 프로그램을 직접 만들 수 있습니다. 통합 모드에서는 응용 프로그램 외에도 많은 Visual Studio 기능을 사용할 수 있습니다. 격리 모드에서는 사용자 고유의 확장과 함께 배포 하려는 Visual Studio 기능의 하위 집합을 선택 합니다.  
   
-## <a name="integrated-mode"></a>Integrated Mode  
- Integrated mode enables your users to use standard Visual Studio features along with your custom tools. The integrated shell is intended primarily for hosting programming languages and software development tools.  
+## <a name="integrated-mode"></a>통합 모드  
+ 통합 모드를 사용 하면 사용자가 표준 Visual Studio 기능을 사용자 지정 도구와 함께 사용할 수 있습니다. 통합 셸은 주로 프로그래밍 언어 및 소프트웨어 개발 도구를 호스팅하기 위한 것입니다.  
   
- Custom tools that are built on the integrated shell automatically merge with any other edition of Visual Studio that is installed on the same computer. You can provide a redistributable version of the Visual Studio integrated shell if Visual Studio is not already installed.  
+ 통합 셸에서 빌드된 사용자 지정 도구는 동일한 컴퓨터에 설치 된 다른 모든 버전의 Visual Studio와 자동으로 병합 됩니다. Visual Studio가 아직 설치 되지 않은 경우 재배포 가능 버전의 Visual Studio 통합 셸을 제공할 수 있습니다.  
   
- The redistributable version of the Visual Studio integrated shell does not include programming languages and the features that support their respective project systems.  
+ 재배포 가능 버전의 Visual Studio 통합 셸에는 해당 프로젝트 시스템을 지 원하는 프로그래밍 언어 및 기능이 포함 되어 있지 않습니다.  
   
 > [!NOTE]
-> The Visual Studio shell integrated mode can be installed together with all editions of Visual Studio except the Express editions.  
+> Visual Studio shell 통합 모드는 Express edition을 제외한 모든 버전의 Visual Studio와 함께 설치할 수 있습니다.  
   
- For more information, see [Visual Studio Shell (Integrated)](../extensibility/visual-studio-shell-integrated.md).  
+ 자세한 내용은 [Visual Studio Shell (통합)](../extensibility/visual-studio-shell-integrated.md)을 참조 하세요.  
   
-## <a name="isolated-mode"></a>Isolated Mode  
- Isolated mode allows you to create custom tools that run side-by-side with other versions of Visual Studio. It is intended primarily for tools that can access Visual Studio services without depending on all the standard Visual Studio features. You can customize the appearance of applications built on the Visual Studio isolated shell. You can easily turn off the features and menu command groups that you do not wish to appear together with your application.  
+## <a name="isolated-mode"></a>격리 모드  
+ 격리 모드를 사용 하면 다른 버전의 Visual Studio와 나란히 실행 되는 사용자 지정 도구를 만들 수 있습니다. 모든 표준 Visual Studio 기능에 의존 하지 않고 Visual Studio 서비스에 액세스할 수 있는 도구를 주로 사용 합니다. Visual Studio 격리 셸을 기반으로 하는 응용 프로그램의 모양을 사용자 지정할 수 있습니다. 응용 프로그램과 함께 표시 하지 않을 기능 및 메뉴 명령 그룹을 쉽게 해제할 수 있습니다.  
   
- For more information, see [Visual Studio Isolated Shell](../extensibility/visual-studio-isolated-shell.md).  
+ 자세한 내용은 [Visual Studio 격리 셸](../extensibility/visual-studio-isolated-shell.md)을 참조 하세요.  
   
-## <a name="distributing-your-integrated-or-isolated-shell-application"></a>Distributing your Integrated or Isolated Shell Application  
- In order to distribute your integrated or isolated shell application, you need to include your application, a special integrated or isolated shell redistributable, and an installation program. For more information about distribution and installation, see [Distributing Isolated Shell Applications](../extensibility/distributing-isolated-shell-applications.md).  
+## <a name="distributing-your-integrated-or-isolated-shell-application"></a>통합 또는 격리 셸 응용 프로그램 배포  
+ 통합 또는 격리 셸 응용 프로그램을 배포 하려면 응용 프로그램, 특수 한 통합 또는 격리 셸 재배포 가능 패키지 및 설치 프로그램을 포함 해야 합니다. 배포 및 설치에 대 한 자세한 내용은 [격리 된 셸 응용 프로그램 배포](../extensibility/distributing-isolated-shell-applications.md)를 참조 하세요.  
   
 > [!IMPORTANT]
-> The [End User License Agreement (EULA)](https://www.visualstudio.com/support/legal/mt171552) for the Visual Studio integrated and isolated shells includes a section on data collection (**Section 3. Data**).  It describes the customer usage data that may be collected by Microsoft from users of either the integrated or isolated shell software that you build into your application. For more information, see [Microsoft Visual Studio Product Family Privacy Statement](https://www.visualstudio.com/dn948229).  
+> Visual Studio 통합 및 격리 된 셸에 대 한 [EULA (최종 사용자 사용권 계약)](https://www.visualstudio.com/support/legal/mt171552) 에는 데이터 컬렉션에 대 한 섹션이 포함 되어 있습니다 (**섹션 3). 데이터**).  응용 프로그램에 빌드하는 통합 또는 격리 된 셸 소프트웨어의 사용자가 Microsoft에서 수집할 수 있는 고객 사용 데이터에 대해 설명 합니다. 자세한 내용은 [Microsoft Visual Studio 제품군 개인 정보 취급 방침](https://www.visualstudio.com/dn948229)을 참조 하세요.  
 > 
-> If you collect separate usage data from your customers through your application, you must provide appropriate notice to users of your application of what you collect.  When you distribute either the isolated or integrated shell software as part of your application, according to the Visual Studio Software Development Kit license, you must include one of the following:  
+> 응용 프로그램을 통해 고객의 별도의 사용 현황 데이터를 수집 하는 경우 수집 하는 내용에 대 한 응용 프로그램 사용자에 게 적절 한 알림을 제공 해야 합니다.  Visual Studio 소프트웨어 개발 키트 라이선스에 따라 격리 되었거나 통합 된 셸 소프트웨어를 응용 프로그램의 일부로 배포 하는 경우 다음 중 하나를 포함 해야 합니다.  
 > 
-> - the End User License Agreement as part of your application license  
-> - your own EULA that requires your customers to agree to terms that protect the Visual Studio integrated or isolated shell at least as much as the Microsoft End User License Terms for the shell software  
+> - 응용 프로그램 라이선스의 일부로 최종 사용자 사용권 계약  
+> - 고객이 셸 소프트웨어에 대 한 Microsoft 최종 사용자 사용 조건 이상으로 Visual Studio 통합 또는 격리 셸을 보호 하는 약관에 동의 해야 하는 사용자의 EULA  
   
 ## <a name="additional-resources"></a>추가 리소스  
- For more information about redistributable packages, see the [Visual Studio Extensibility Downloads](https://go.microsoft.com/fwlink/?LinkID=119298) Web site.  
+ 재배포 가능 패키지에 대 한 자세한 내용은 [Visual Studio 확장성 다운로드](https://go.microsoft.com/fwlink/?LinkID=119298) 웹 사이트를 참조 하세요.  
   
-## <a name="see-also"></a>관련 항목:  
+## <a name="see-also"></a>참고 항목  
  [Visual Studio 확장 전달](../extensibility/shipping-visual-studio-extensions.md)

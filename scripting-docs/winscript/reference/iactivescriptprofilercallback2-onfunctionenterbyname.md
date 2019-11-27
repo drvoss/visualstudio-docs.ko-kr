@@ -44,6 +44,6 @@ HRESULT OnFunctionEnterByName(
 ## <a name="remarks"></a>주의  
  DOM 호출의 경우 스크립팅 엔진은 [IActiveScriptProfilerCallback:: OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)를 호출 하는 대신이 메서드를 호출 합니다. 이는 DOM에서 많은 수의 고유한 메서드와 속성 때문입니다.  
   
-## <a name="see-also"></a>참조  
- [IActiveScriptProfilerCallback2:: OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md)    
+## <a name="see-also"></a>참고 항목  
+ [IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md)   
  [IActiveScriptProfilerCallback2 인터페이스](../../winscript/reference/iactivescriptprofilercallback2-interface.md)

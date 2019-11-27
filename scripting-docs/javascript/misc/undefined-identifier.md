@@ -22,7 +22,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72572547"
 ---
 # <a name="undefined-identifier"></a>식별자가 정의되지 않았습니다.
-@No__t_0 컴파일러에서 인식할 수 없는 식별자를 사용 하려고 했습니다. 다음을 사용할 때마다 정의 되지 않은 값이 반환 됩니다.  
+[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 컴파일러에서 인식할 수 없는 식별자를 사용 하려고 했습니다. 다음을 사용할 때마다 정의 되지 않은 값이 반환 됩니다.  
   
 - 존재 하지 않는 변수  
   
@@ -34,6 +34,6 @@ ms.locfileid: "72572547"
   
 - **Var** 문 (`var` x;)을 사용 하 여 변수를 선언 합니다.  
   
-## <a name="see-also"></a>참조  
- [변수](../../javascript/variables-javascript.md)    
+## <a name="see-also"></a>참고 항목  
+ [변수](../../javascript/variables-javascript.md)   
  [변수 범위](../../javascript/advanced/variable-scope-javascript.md)

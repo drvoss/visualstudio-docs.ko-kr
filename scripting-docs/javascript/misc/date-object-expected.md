@@ -22,7 +22,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72572891"
 ---
 # <a name="date-object-expected"></a>Date 개체가 필요합니다.
-@No__t_2 이외의 형식의 개체에 대해 **date. prototype** 또는 **valueOf** 메서드를 호출 하려고 했습니다. 이 호출 형식의 개체는 `Date` 형식 이어야 합니다. 예를 들면,  
+`Date`이외의 형식의 개체에 대해 **date. prototype** 또는 **valueOf** 메서드를 호출 하려고 했습니다. 이 호출 형식의 개체는 `Date`형식 이어야 합니다. 예를 들면 다음과 같습니다.  
   
 ```JavaScript  
 var o = new Object;  
@@ -32,9 +32,9 @@ o.f();
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
-- @No__t_2 형식의 개체에 대해서만 **valueOf** **메서드를 호출 합니다.**  
+- `Date`형식의 개체에 대해서만 **valueOf** **메서드를 호출 합니다.**  
   
-## <a name="see-also"></a>참조  
+## <a name="see-also"></a>참고 항목  
  [Date 개체](../../javascript/reference/date-object-javascript.md)   
- [GetDate 메서드 (Date)](../../javascript/reference/getdate-method-date-javascript.md)    
+ [GetDate 메서드 (Date)](../../javascript/reference/getdate-method-date-javascript.md)   
  [내장 개체](../../javascript/intrinsic-objects-javascript.md)

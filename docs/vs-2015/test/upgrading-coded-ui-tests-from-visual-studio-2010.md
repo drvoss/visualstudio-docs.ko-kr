@@ -1,5 +1,5 @@
 ---
-title: Upgrading Coded UI Tests
+title: 코딩 된 UI 테스트 업그레이드
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -39,10 +39,10 @@ ms.locfileid: "74297994"
 > [!CAUTION]
 > 솔루션 탐색기에 나타나지 않는 코딩된 UI 테스트 프로젝트의 참조와 관련된 알려진 문제가 있습니다. 자세한 내용은 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 설치 미디어에 포함된 추가 정보 파일을 참조하세요.
 
-|코딩된 UI 기능|문제점|솔루션|
+|코딩된 UI 기능|문제|솔루션|
 |----------------------------|-----------|--------------|
-|[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]|**빌드가 실패합니다.**<br /><br /> [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 기능 팩 2가 있고 Silverlight 애플리케이션에 대한 코딩된 UI 테스트 프로젝트를 만든 경우 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]에서 이러한 프로젝트를 열 수 없습니다.|이러한 프로젝트는 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 기능 팩 2에서만 관리하는 것이 좋습니다.|
-|[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]|**빌드는 성공하지만 테스트 실행이 실패합니다.**<br /><br /> [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 기능 팩 2가 있고 Firefox에서 웹 애플리케이션에 대한 코딩된 UI 테스트 프로젝트를 만든 경우 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]에서 이러한 프로젝트를 열 수 없습니다.|이러한 프로젝트는 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 기능 팩 2에서만 관리하는 것이 좋습니다.|
+|[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]에서는 Silverlight UI 테스트가 지원되지 않습니다.|**빌드가 실패합니다.**<br /><br /> [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 기능 팩 2가 있고 Silverlight 애플리케이션에 대한 코딩된 UI 테스트 프로젝트를 만든 경우 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]에서 이러한 프로젝트를 열 수 없습니다.|이러한 프로젝트는 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 기능 팩 2에서만 관리하는 것이 좋습니다.|
+|[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]에서는 Firefox UI 테스트가 지원되지 않습니다.|**빌드는 성공하지만 테스트 실행이 실패합니다.**<br /><br /> [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 기능 팩 2가 있고 Firefox에서 웹 애플리케이션에 대한 코딩된 UI 테스트 프로젝트를 만든 경우 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]에서 이러한 프로젝트를 열 수 없습니다.|이러한 프로젝트는 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 기능 팩 2에서만 관리하는 것이 좋습니다.|
 |새 UI 코드 테스트 API가 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]추가되었습니다.|**빌드가 실패합니다.**<br /><br /> [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]에서 새 UI 테스트 API를 사용하여 코딩된 UI 테스트를 만드는 경우 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)]에서 이러한 프로젝트를 열 수 없습니다.|새 API를 사용하는 프로젝트는 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 에서만 관리해야 합니다.|
 |[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)]에서 참조가 csproj 파일의 'Choose' 문 내부에 추가되었습니다. [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]에서는 코딩된 UI 테스트 어셈블리 참조를 포함하는 피드백 대상 파일이 사용됩니다.|[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]에서는 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] (또는 SP1)에서 만든, 코딩된 UI 테스트를 포함하지 않는 테스트 프로젝트에 코딩된 UI 테스트를 추가할 수 없습니다.<br /><br /> 복구 프로세스에서 대상 파일 및 Choose 문을 추가합니다. 코딩된 UI 테스트가 테스트 프로젝트에 없는 경우 프로젝트가 복구됨으로 표시되면 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]에서 코딩된 UI 테스트를 추가할 때 적절한 참조가 추가되지 않습니다.|동일한 솔루션에서 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 를 사용하여 새 테스트 프로젝트를 만들고 새 코딩된 UI 테스트를 추가해야 합니다. 또는 코딩된 UI 테스트를 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1의 테스트 프로젝트에 추가하고 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]에서 해당 프로젝트를 열 수 있습니다.|
 
@@ -63,5 +63,5 @@ ms.locfileid: "74297994"
 
 - **부하 테스트:** Windows 8을 실행하는 컴퓨터에서 LAN(Local Area Network) 프로필이 아닌 다른 네트워크 형식과 함께 부하 테스트를 실행하는 경우 네트워크 에뮬레이터 드라이버로 인해 운영 체제가 충돌합니다. 자세한 내용은 [기술 자료 문서 2736182](https://support.microsoft.com/help/2736182/a-gdr-update-for-visual-studio-2010-sp1-is-available-to-add-compatibil)를 참조하세요.
 
-## <a name="see-also"></a>관련 항목:
- [Porting, Migrating, and Upgrading Visual Studio Projects](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [Upgrading Tests from Earlier Versions of Visual Studio](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md) [Generating a Coded UI Test from an Existing Action Recording](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [Supported Configurations and Platforms for Coded UI Tests and Action Recordings](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+## <a name="see-also"></a>참고 항목
+ [Visual Studio 프로젝트 포팅, 마이그레이션 및 업그레이드](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [이전 버전의 Visual studio에서 테스트 업그레이드](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) 는 [ui 자동화를 사용 하](../test/use-ui-automation-to-test-your-code.md) 여 코딩 된 Ui [테스트를 생성 하는](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) 코드를 테스트 합니다. 코딩 된 [ui 테스트 및 작업 기록에 대해 지원 되는 구성 및 플랫폼](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) 을 기록 합니다.

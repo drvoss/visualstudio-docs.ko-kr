@@ -25,7 +25,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72574267"
 ---
 # <a name="ienumdebugextendedpropertyinfonext"></a>IEnumDebugExtendedPropertyInfo::Next
-열거형 시퀀스에서 지정 된 수의 `ExtendedDebugPropertyInfo` 구조체를 검색 합니다.  
+열거형 시퀀스에서 지정 된 수의`ExtendedDebugPropertyInfo` 구조체를 검색 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -39,7 +39,7 @@ HRESULT Next (
   
 #### <a name="parameters"></a>매개 변수  
  `celt`  
- 진행 검색할 `ExtendedDebugPropertyInfo`structures의 수입니다.  
+ 진행 검색할 `ExtendedDebugPropertyInfo`구조체의 수입니다.  
   
  `rgelt`  
  제한이 검색 된 `ExtendedDebugPropertyInfo` 구조체의 배열입니다.  
@@ -48,8 +48,8 @@ HRESULT Next (
  제한이 실제로 검색 된 `ExtendedDebugPropertyInfo` 구조체의 수입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 유효한 `HRESULT` (일반적으로 `S_OK`)를 반환 합니다.  
+ 유효한 `HRESULT`(일반적으로 `S_OK`)를 반환 합니다.  
   
-## <a name="see-also"></a>참조  
- [IEnumDebugExtendedPropertyInfo 인터페이스](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)    
+## <a name="see-also"></a>참고 항목  
+ [IEnumDebugExtendedPropertyInfo 인터페이스](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)   
  [ExtendedDebugPropertyInfo 구조체](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

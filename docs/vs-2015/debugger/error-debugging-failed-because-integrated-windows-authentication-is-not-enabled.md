@@ -1,5 +1,5 @@
 ---
-title: 'Error: Debugging Failed Because Integrated Windows Authentication Is Not Enabled | Microsoft Docs'
+title: '오류: Windows 통합 인증을 사용할 수 없기 때문에 디버깅 하지 못했습니다. | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -71,13 +71,13 @@ ms.locfileid: "74299785"
   
 2. Windows 인증 및 II6 관리 호환성을 설정하지 않은 경우 다음 단계에 따라 이를 설정합니다.  
   
-    1. Click **Start**, click **Control Panel** and then click **Programs**.  
+    1. **시작**, **제어판** 을 차례로 클릭 한 다음 **프로그램**을 클릭 합니다.  
   
     2. **프로그램 및 기능**에서 **Windows 기능 사용/사용 안 함**을 클릭합니다.  
   
          사용자 Access Control 대화 상자가 표시되고 작업을 계속할 수 있는 권한이 있는지 묻습니다.  
   
-    3. **Continue(계속)** 를 클릭합니다.  
+    3. **계속**을 클릭합니다.  
   
          Windows 기능 대화 상자가 표시됩니다.  
   
@@ -117,7 +117,7 @@ ms.locfileid: "74299785"
   
 10. **IIS(인터넷 정보 서비스) 관리자** 창을 닫습니다.  
   
-## <a name="see-also"></a>관련 항목:  
- [Debugging Web Applications: Errors and Troubleshooting](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
+## <a name="see-also"></a>참고 항목  
+ [웹 응용 프로그램 디버깅: 오류 및 문제 해결](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
  [Microsoft Digest 인증](https://go.microsoft.com/fwlink/?LinkId=77938)   
- [Running Web Applications on Windows Vista with IIS 7.0 and Visual Studio](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)
+ [IIS 7.0 및 Visual Studio를 사용 하 여 Windows Vista에서 웹 응용 프로그램 실행](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)

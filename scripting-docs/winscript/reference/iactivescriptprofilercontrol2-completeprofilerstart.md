@@ -44,8 +44,8 @@ HRESULT CompleteProfilerStart();
 |`E_OUTOFMEMORY`|메모리 부족 상태로 인해 호출 스택을 가져올 수 없습니다.|  
   
 ## <a name="remarks"></a>주의  
- @No__t_0를 호출 하면 이미 호출 스택에 있는 함수에 대 한 이벤트가 전송 됩니다. 현재 탭에 있는 모든 스크립팅 엔진에서 프로 파일링이 시작 된 후이 메서드를 호출 해야 합니다. 모든 스크립팅 엔진에 대해 메서드를 호출할 수 있습니다.  
+ `IActiveScriptProfilerControl2::CompleteProfilerStart`를 호출 하면 이미 호출 스택에 있는 함수에 대 한 이벤트가 전송 됩니다. 현재 탭에 있는 모든 스크립팅 엔진에서 프로 파일링이 시작 된 후이 메서드를 호출 해야 합니다. 모든 스크립팅 엔진에 대해 메서드를 호출할 수 있습니다.  
   
-## <a name="see-also"></a>참조  
- [IActiveScriptProfilerControl2::P repareprofilerstop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)    
+## <a name="see-also"></a>참고 항목  
+ [IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)   
  [IActiveScriptProfilerControl2 인터페이스](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)

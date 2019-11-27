@@ -1,5 +1,5 @@
 ---
-title: Authoring a Windows Installer Package | Microsoft Docs
+title: Windows Installer 패키지 작성 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -21,35 +21,35 @@ ms.locfileid: "74301138"
 # <a name="authoring-a-windows-installer-package"></a>Windows Installer 패키지 작성
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Data drives the Windows Installer model. Rather than writing a procedural script to copy files and write registry entries, for example, you author rows and columns in database tables that contain file and registry data.  
+데이터는 Windows Installer 모델을 구동 합니다. 예를 들어 파일을 복사 하 고 레지스트리 항목을 작성 하는 프로시저 스크립트를 작성 하는 대신 파일 및 레지스트리 데이터를 포함 하는 데이터베이스 테이블에서 행과 열을 작성 합니다.  
   
 ## <a name="database-entries"></a>데이터베이스 항목  
- To install a VSPackage, a Windows Installer package must contain database entries to perform the following tasks:  
+ VSPackage를 설치 하려면 Windows Installer 패키지에 다음 태스크를 수행 하는 데이터베이스 항목이 포함 되어 있어야 합니다.  
   
-- Search the system to locate the versions of [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] your VSPackage supports (using Windows Installer tables that include AppSearch, CompLocator, RegLocator, DrLocator, and Signature).  
+- 시스템을 검색 하 여 VSPackage에서 지 원하는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 버전을 찾습니다 (AppSearch, CompLocator, RegLocator, DrLocator 및 서명이 포함 된 Windows Installer 테이블 사용).  
   
-- Cancel the installation if no supported version of [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] is installed or if another system requirement of the VSPackage is not met (using the LaunchCondition table).  
+- 지원 되는 버전의 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 설치 되지 않았거나 VSPackage의 다른 시스템 요구 사항이 충족 되지 않는 경우 (LaunchCondition 테이블 사용) 설치를 취소 합니다.  
   
-- Install the VSPackage and dependent files (using the directory, component, and file tables).  
+- 디렉터리, 구성 요소 및 파일 테이블을 사용 하 여 VSPackage 및 종속 파일을 설치 합니다.  
   
-- Add appropriate information for the VSPackage to the registry (using the Registry table).  
+- 레지스트리 테이블을 사용 하 여 VSPackage에 대 한 적절 한 정보를 레지스트리에 추가 합니다.  
   
-- Integrate the VSPackage in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] by calling **devenv.exe /setup** (using the CustomAction table).  
+- CustomAction 테이블을 사용 하 여 VSPackage **를 호출 하** 여 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]에 있는를 통합 합니다.  
   
-  For more information, see [Windows Installer](https://msdn.microsoft.com/library/cc185688\(VS.85\).aspx).  
+  자세한 내용은 [Windows Installer](https://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)를 참조 하세요.  
   
-## <a name="setup-tools"></a>Setup Tools  
- A variety of third-party setup tools provide a development environment for Windows Installer packages. Two free tools are the following:  
+## <a name="setup-tools"></a>설치 도구  
+ 다양 한 타사 설치 도구는 Windows Installer 패키지에 대 한 개발 환경을 제공 합니다. 두 가지 무료 도구는 다음과 같습니다.  
   
 - InstallShield Limited Edition  
   
-   You can get a limited version of InstallShield through the Visual Studio **New Project** dialog. Expand **Other Project Types** and then select **Setup and Deployment**. Select the InstallShield template.  
+   Visual Studio **새 프로젝트** 대화 상자를 통해 InstallShield의 제한 된 버전을 가져올 수 있습니다. **기타 프로젝트 형식** 을 확장 한 다음 **설치 및 배포**를 선택 합니다. InstallShield 템플릿을 선택 합니다.  
   
 - Windows Installer XML 도구 집합  
   
-   The Toolset builds Windows Installer packages from XML source files. The Toolset is a Microsoft open-source project. You can download the source code and executables from [http://sourceforge.net/projects/wix](https://sourceforge.net/projects/wix/).  
+   도구 집합은 XML 원본 파일에서 패키지 Windows Installer 작성 합니다. 도구 집합은 Microsoft 오픈 소스 프로젝트입니다. [http://sourceforge.net/projects/wix](https://sourceforge.net/projects/wix/)에서 소스 코드 및 실행 파일을 다운로드할 수 있습니다.  
   
-  For commercial products that integrate into [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] by using the [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], see [https://marketplace.visualstudio.com/](https://marketplace.visualstudio.com/).  
+  [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]를 사용 하 여 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]에 통합 되는 상용 제품은 [https://marketplace.visualstudio.com/](https://marketplace.visualstudio.com/)를 참조 하세요.  
   
-## <a name="see-also"></a>관련 항목:  
+## <a name="see-also"></a>참고 항목  
  [Windows Installer를 사용하여 VSPackage 설치](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

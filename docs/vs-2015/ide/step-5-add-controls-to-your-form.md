@@ -21,7 +21,7 @@ ms.locfileid: "74295721"
 
 이 단계에서는 `PictureBox` 컨트롤 및 `CheckBox` 컨트롤과 같은 컨트롤을 폼에 추가합니다. 그런 다음 폼에 단추를 추가합니다.
 
- ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 2](https://go.microsoft.com/fwlink/?LinkId=205211) or [Tutorial 1: Create a Picture Viewer in C# - Video 2](https://go.microsoft.com/fwlink/?LinkId=205200). 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
+ ![비디오에 연결](../data-tools/media/playvideo.gif "링크 playvideo 보려면") 이 항목의 비디오 버전을 보려면 [자습서 1: Visual Basic에서 사진 뷰어 만들기-비디오 2](https://go.microsoft.com/fwlink/?LinkId=205211) 또는 [자습서 1: 비디오 2에서 C# 사진 뷰어 만들기](https://go.microsoft.com/fwlink/?LinkId=205200)를 참조 하세요. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
 
 ### <a name="to-add-controls-to-your-form"></a>폼에 컨트롤을 추가하려면
 
@@ -33,7 +33,7 @@ ms.locfileid: "74295721"
 
 4. 새 PictureBox 컨트롤을 클릭하여 선택한 다음 새 PictureBox 컨트롤의 검정색 삼각형을 선택하여 다음 그림과 같이 작업 목록을 표시합니다.
 
-     ![PictureBox tasks](../ide/media/express-pictureboxtasks.png "Express_PictureBoxTasks") PictureBox tasks
+     ![PictureBox 작업](../ide/media/express-pictureboxtasks.png "Express_PictureBoxTasks") PictureBox 작업
 
     > [!NOTE]
     > TableLayoutPanel에 실수로 잘못된 컨트롤 형식을 추가한 경우 삭제할 수 있습니다. 컨트롤을 마우스 오른쪽 단추로 클릭하고 상황에 맞는 메뉴에서 **삭제**를 선택합니다. 메뉴 모음을 사용하여 폼에서 컨트롤을 제거할 수도 있습니다. 메뉴 모음에서 **편집**, **실행 취소**를 선택하거나 **편집**, **삭제**를 선택합니다.
@@ -47,7 +47,7 @@ ms.locfileid: "74295721"
 
 7. 폼에서 TableLayoutPanel을 선택한 다음 **CheckBox** 컨트롤을 폼에 추가합니다. 도구 상자에서 **CheckBox** 항목을 두 번 클릭하여 새 CheckBox 컨트롤을 테이블의 사용 가능한 다음 셀에 추가합니다. PictureBox가 TableLayoutPanel의 처음 두 셀을 차지하므로 CheckBox 컨트롤은 왼쪽 아래 셀에 추가됩니다. 다음 그림과 같이 **Text** 속성을 선택하고 단어 **늘이기**를 입력합니다.
 
-     ![TextBox control with Stretch property](../ide/media/express-pictureviewercheckbox.png "Express_PictureViewerCheckbox") TextBox control with Stretch property
+     ![Stretch 속성이 있는 TextBox 컨트롤](../ide/media/express-pictureviewercheckbox.png "Express_PictureViewerCheckbox") Stretch 속성이 있는 TextBox 컨트롤
 
 8. 폼에서 TableLayoutPanel을 선택하고 도구 상자에서 TableLayoutPanel 컨트롤이 있는 **컨테이너** 그룹으로 이동한 다음 **FlowLayoutPanel** 항목을 두 번 클릭하여 PictureBox의 마지막 셀(오른쪽 맨 아래)에 새 컨트롤을 추가합니다. 그런 다음 FlowLayoutPanel의 검정색 삼각형 작업 목록에서 **부모 컨테이너에서 도킹**을 선택하거나 FlowLayoutPanel의 **Dock** 속성을 **채우기**로 설정하여 FlowLayoutPanel을 TableLayoutPanel에 도킹합니다.
 
@@ -70,9 +70,9 @@ ms.locfileid: "74295721"
     > [!NOTE]
     > 단추의 순서가 잘못되어 있는 경우 FlowLayoutPanel에서 단추를 끌어서 원하는 순서대로 다시 배치할 수 있습니다. 단추를 선택하여 왼쪽 또는 오른쪽으로 끌어 놓을 수 있습니다.
 
-5. **닫기** 단추를 클릭하여 선택합니다. Ctrl 키를 누른 채로 다른 세 개의 단추를 선택하여 모든 단추가 선택되도록 합니다. 모든 단추가 선택된 상태로 **속성** 창으로 이동하여 **AutoSize** 속성까지 위로 스크롤합니다. 이 속성은 단추의 모든 텍스트에 맞게 자동으로 단추 크기가 조정되도록 합니다. 이 속성을 **true**로 설정합니다. 이제 단추가 적절한 크기로 조정되고 올바른 순서로 정렬됩니다. (As long as all four buttons are selected, you can change all four **AutoSize** properties at the same time.) The following picture shows the four buttons.
+5. **닫기** 단추를 클릭하여 선택합니다. Ctrl 키를 누른 채로 다른 세 개의 단추를 선택하여 모든 단추가 선택되도록 합니다. 모든 단추가 선택된 상태로 **속성** 창으로 이동하여 **AutoSize** 속성까지 위로 스크롤합니다. 이 속성은 단추의 모든 텍스트에 맞게 자동으로 단추 크기가 조정되도록 합니다. 이 속성을 **true**로 설정합니다. 이제 단추가 적절한 크기로 조정되고 올바른 순서로 정렬됩니다. 네 개의 단추가 모두 선택 되어 있는 동안에는 네 개의 **AutoSize** 속성을 동시에 변경할 수 있습니다. 다음 그림에서는 네 개의 단추를 보여 줍니다.
 
-     ![Picture Viewer with four buttons](../ide/media/express-autosize.png "Express_AutoSize") Picture Viewer with four buttons
+     ![단추가 네 개 있는 사진 뷰어](../ide/media/express-autosize.png "Express_AutoSize") 단추가 네 개 있는 사진 뷰어
 
 6. 이제 프로그램을 다시 실행하여 새로 레이아웃된 폼을 확인합니다. 단추와 확인란을 선택해도 아직 아무런 동작이 수행되지 않지만 곧 동작하게 될 것입니다.
 

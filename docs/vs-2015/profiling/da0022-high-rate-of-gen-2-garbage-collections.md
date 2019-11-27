@@ -20,14 +20,14 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74300125"
 ---
-# <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022: Gen 2 가비지 수집의 비율이 높습니다.
+# <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022: Gen 2 가비지 컬렉션의 비율이 높습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0022|  
-|Category|.NET Framework Usage|  
-|Profiling method|All|  
-|Message|There is a fairly high rate of Gen 2 garbage collections occurring. 의도적으로 프로그램의 데이터 구조가 대다수 오랜 시간 동안 할당되고 지속되는 경우 일반적으로 이러한 현상은 문제가 되지 않습니다. 하지만 이러한 동작이 의도되지 않은 경우에는 애플리케이션이 개체를 고정하고 있는 것일 수 있습니다. 확실하지 않으면 .NET 메모리 할당 데이터 및 개체 수명 정보를 수집하여 애플리케이션이 사용하는 메모리 할당 패턴을 파악할 수 있습니다.|  
-|Rule type|Warning|  
+규칙 Id | DA0022 |  
+| 범주 |. NET Framework 사용 |  
+| 프로 파일링 방법 | 모두 |  
+| 메시지 | Gen 2 가비지 수집의 비율이 상당히 높습니다. 의도적으로 프로그램의 데이터 구조가 대다수 오랜 시간 동안 할당되고 지속되는 경우 일반적으로 이러한 현상은 문제가 되지 않습니다. 하지만 이러한 동작이 의도되지 않은 경우에는 애플리케이션이 개체를 고정하고 있는 것일 수 있습니다. 확실하지 않으면 .NET 메모리 할당 데이터 및 개체 수명 정보를 수집하여 애플리케이션이 사용하는 메모리 할당 패턴을 파악할 수 있습니다.|  
+| 규칙 유형 | 경고 |  
   
  샘플링, .NET 메모리 또는 리소스 경합 방법을 사용하여 프로파일링할 경우 이 규칙을 트리거하려면 10개 이상의 샘플을 수집해야 합니다.  
   

@@ -1,5 +1,5 @@
 ---
-title: Annotating Function Parameters and Return Values | Microsoft Docs
+title: 함수 매개 변수 및 반환 값에 주석 추가 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -136,76 +136,76 @@ ms.locfileid: "74295850"
 # <a name="annotating-function-parameters-and-return-values"></a>함수 매개 변수 및 반환 값에 주석 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-This article describes typical uses of annotations for simple function parameters—scalars, and pointers to structures and classes—and most kinds of buffers.  This article also shows common usage patterns for annotations. For additional annotations that are related to functions, see [Annotating Function Behavior](../code-quality/annotating-function-behavior.md)  
+이 문서에서는 간단한 함수 매개 변수 (스칼라) 및 구조체와 클래스에 대 한 포인터, 대부분의 버퍼에 대 한 주석의 일반적인 사용에 대해 설명 합니다.  또한이 문서에서는 주석의 일반적인 사용 패턴을 보여 줍니다. 함수와 관련 된 추가 주석은 [함수 동작에 주석](../code-quality/annotating-function-behavior.md) 추가를 참조 하세요.  
   
 ## <a name="pointer-parameters"></a>포인터 매개 변수  
- For the annotations in the following table, when a pointer parameter is being annotated, the analyzer reports an error if the pointer is null.  This applies to pointers and to any data item that's pointed to.  
+ 다음 표의 주석에서는 포인터 매개 변수를 주석으로 처리 하는 경우 포인터가 null 인 경우 분석기에서 오류를 보고 합니다.  이는 포인터가 가리키는 모든 데이터 항목에 적용 됩니다.  
   
- **Annotations and Descriptions**  
+ **주석 및 설명**  
   
 - `_In_`  
   
-     Annotates input parameters that are scalars, structures, pointers to structures and the like.  Explicitly may be used on simple scalars.  The parameter must be valid in pre-state and will not be modified.  
+     스칼라, 구조체, 구조체에 대 한 포인터 및 이와 같은 입력 매개 변수를 주석을 추가 합니다.  Simple 스칼라에서 명시적으로 사용할 수 있습니다.  매개 변수는 사전 상태에서 유효 해야 하며 수정 되지 않습니다.  
   
 - `_Out_`  
   
-     Annotates output parameters that are scalars, structures, pointers to structures and the like.  Do not apply this to an object that cannot return a value—for example, a scalar that's passed by value.  The parameter does not have to be valid in pre-state but must be valid in post-state.  
+     주석을 추가는 스칼라, 구조체, 구조체에 대 한 포인터 및 이와 같은 출력 매개 변수를 출력 합니다.  값으로 전달 되는 스칼라와 같이 값을 반환할 수 없는 개체에는이를 적용 하지 마십시오.  매개 변수는 사전 상태에서 유효 하지 않아도 되지만 사후 상태에서 유효 해야 합니다.  
   
 - `_Inout_`  
   
-     Annotates a parameter that will be changed by the function.  It must be valid in both pre-state and post-state, but is assumed to have different values before and after the call. Must apply to a modifiable value.  
+     주석을 추가 함수에 의해 변경 되는 매개 변수입니다.  사전 상태와 사후 상태 모두에서 유효 해야 하지만 호출 전후에 다른 값을 갖는 것으로 간주 됩니다. 수정할 수 있는 값에 적용 해야 합니다.  
   
 - `_In_z_`  
   
-     A pointer to a null-terminated string that's used as input.  The string must be valid in pre-state.  Variants of `PSTR`, which already have the correct annotations, are preferred.  
+     입력으로 사용 되는 null로 끝나는 문자열에 대 한 포인터입니다.  문자열은 사전 상태에서 유효 해야 합니다.  이미 올바른 주석이 있는 `PSTR`의 변형은 선호 됩니다.  
   
 - `_Inout_z_`  
   
-     A pointer to a null-terminated character array that will be modified.  It must be valid before and after the call, but the value is assumed to have changed.  The null terminator may be moved, but only the elements up to the original null terminator may be accessed.  
+     수정 되는 null로 끝나는 문자 배열에 대 한 포인터입니다.  이 값은 호출 전후에 유효 해야 하지만 값은 변경 된 것으로 간주 됩니다.  Null 종결자는 이동 될 수 있지만 원래의 null 종결자 까지의 요소만 액세스할 수 있습니다.  
   
 - `_In_reads_(s)`  
   
      `_In_reads_bytes_(s)`  
   
-     A pointer to an array, which is read by the function.  The array is of size `s` elements, all of which must be valid.  
+     함수에서 읽는 배열에 대 한 포인터입니다.  배열의 크기 `s` 요소는 모두 유효 해야 합니다.  
   
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this only when the size cannot be expressed as elements.  For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.  
+     `_bytes_` 변형은 요소 대신 크기 (바이트)를 제공 합니다. 크기를 요소로 표현할 수 없는 경우에만이를 사용 합니다.  예를 들어 `char` 문자열은 `wchar_t`을 사용 하는 유사한 함수를 사용 하는 경우에만 `_bytes_` variant를 사용 합니다.  
   
 - `_In_reads_z_(s)`  
   
-     A pointer to an array that is null-terminated and has a known size. The elements up to the null terminator—or `s` if there is no null terminator—must be valid in pre-state.  If the size is known in bytes, scale `s` by the element size.  
+     Null로 종료 되 고 크기가 알려진 배열에 대 한 포인터입니다. Null 종결자에 이르는 요소 또는 null 종결자가 없는 경우 `s`는 사전 상태에서 유효 해야 합니다.  크기를 바이트 단위로 알고 있으면 요소 크기에 따라 `s` 크기를 조정 합니다.  
   
 - `_In_reads_or_z_(s)`  
   
-     A pointer to an array that is null-terminated or has a known size, or both. The elements up to the null terminator—or `s` if there is no null terminator—must be valid in pre-state.  If the size is known in bytes, scale `s` by the element size.  (Used for the `strn` family.)  
+     Null로 끝나는 배열에 대 한 포인터 이거나, 해당 크기 또는 둘 다를 포함 하는 배열에 대 한 포인터입니다. Null 종결자에 이르는 요소 또는 null 종결자가 없는 경우 `s`는 사전 상태에서 유효 해야 합니다.  크기를 바이트 단위로 알고 있으면 요소 크기에 따라 `s` 크기를 조정 합니다.  `strn` 제품군에 사용 됩니다.  
   
 - `_Out_writes_(s)`  
   
      `_Out_writes_bytes_(s)`  
   
-     A pointer to an array of `s` elements (resp. bytes) that will be written by the function.  The array elements do not have to be valid in pre-state, and the number of elements that are valid in post-state is unspecified.  If there are annotations on the parameter type, they are applied in post-state. 예를 들어, 다음과 같은 코드를 생각해 볼 수 있습니다.  
+     함수에서 쓸 `s` 요소 (응답)의 배열에 대 한 포인터입니다.  배열 요소는 사전 상태에서 유효 하지 않아도 되며 사후 상태에서 유효한 요소 수는 지정 되지 않습니다.  매개 변수 형식에 주석이 있으면 사후 상태에 적용 됩니다. 예를 들어, 다음과 같은 코드를 생각해 볼 수 있습니다.  
   
      `typedef _Null_terminated_ wchar_t *PWSTR; void MyStringCopy(_Out_writes_ (size) PWSTR p1,    _In_ size_t size,    _In_ PWSTR p2);`  
   
-     In this example, the caller provides a buffer of `size` elements for `p1`.  `MyStringCopy` makes some of those elements valid. More importantly, the `_Null_terminated_` annotation on `PWSTR` means that `p1` is null-terminated in post-state.  In this way, the number of valid elements is still well-defined, but a specific element count is not required.  
+     이 예제에서 호출자는 `p1`에 대 한 `size` 요소의 버퍼를 제공 합니다.  `MyStringCopy`는 이러한 요소 중 일부를 유효 하 게 만듭니다. 더 중요 한 것은 `PWSTR`에 대 한 `_Null_terminated_` 주석은 사후 상태에서 `p1` null로 종료 됨을 의미 합니다.  이러한 방식으로 올바른 요소 수는 여전히 잘 정의 되어 있지만 특정 요소 수는 필요 하지 않습니다.  
   
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this only when the size cannot be expressed as elements.  For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.  
+     `_bytes_` 변형은 요소 대신 크기 (바이트)를 제공 합니다. 크기를 요소로 표현할 수 없는 경우에만이를 사용 합니다.  예를 들어 `char` 문자열은 `wchar_t`을 사용 하는 유사한 함수를 사용 하는 경우에만 `_bytes_` variant를 사용 합니다.  
   
 - `_Out_writes_z_(s)`  
   
-     A pointer to an array of `s` elements.  The elements do not have to be valid in pre-state.  In post-state, the elements up through the null terminator—which must be present—must be valid.  If the size is known in bytes, scale `s` by the element size.  
+     `s` 요소의 배열에 대 한 포인터입니다.  요소는 사전 상태에서 유효 하지 않아도 됩니다.  사후 상태에서 null 종결자 (존재 해야 함) 까지의 요소가 유효 해야 합니다.  크기를 바이트 단위로 알고 있으면 요소 크기에 따라 `s` 크기를 조정 합니다.  
   
 - `_Inout_updates_(s)`  
   
      `_Inout_updates_bytes_(s)`  
   
-     A pointer to an array, which is both read and written to in the function.  It is of size `s` elements, and valid in pre-state and post-state.  
+     함수에서 읽고 쓸 수 있는 배열에 대 한 포인터입니다.  크기 `s` 요소 이며 사전 상태 및 사후 상태에서 유효 합니다.  
   
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this only when the size cannot be expressed as elements.  For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.  
+     `_bytes_` 변형은 요소 대신 크기 (바이트)를 제공 합니다. 크기를 요소로 표현할 수 없는 경우에만이를 사용 합니다.  예를 들어 `char` 문자열은 `wchar_t`을 사용 하는 유사한 함수를 사용 하는 경우에만 `_bytes_` variant를 사용 합니다.  
   
 - `_Inout_updates_z_(s)`  
   
-     A pointer to an array that is null-terminated and has a known size. The elements up through the null terminator—which must be present—must be valid in both pre-state and post-state.  The value in the post-state is presumed to be different from the value in the pre-state; this includes the location of the null terminator. If the size is known in bytes, scale `s` by the element size.  
+     Null로 종료 되 고 크기가 알려진 배열에 대 한 포인터입니다. Null 종결자 (존재 해야 함)의 요소는 사전 상태와 사후 상태 모두에서 유효 해야 합니다.  사후 상태 값은 사전 상태 값과 다른 것으로 간주 됩니다. 여기에는 null 종결자의 위치가 포함 됩니다. 크기를 바이트 단위로 알고 있으면 요소 크기에 따라 `s` 크기를 조정 합니다.  
   
 - `_Out_writes_to_(s,c)`  
   
@@ -215,11 +215,11 @@ This article describes typical uses of annotations for simple function parameter
   
      `_Out_writes_bytes_all_(s)`  
   
-     A pointer to an array of `s` elements.  The elements do not have to be valid in pre-state.  In post-state, the elements up to the `c`-th element must be valid.  If the size is known in bytes, scale `s` and `c` by the element size or use the `_bytes_` variant, which is defined as:  
+     `s` 요소의 배열에 대 한 포인터입니다.  요소는 사전 상태에서 유효 하지 않아도 됩니다.  사후 상태에서 `c`번째 요소 까지의 요소가 유효 해야 합니다.  크기를 바이트 단위로 알고 있으면 크기 조정 `s` 및 요소 크기에 따라 `c` 하 고 다음과 같이 정의 된 `_bytes_` variant를 사용 합니다.  
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     In other words, every element that exists in the buffer up to `s` in the pre-state is valid in the post-state.  예를 들어 다음과 같은 가치를 제공해야 합니다.  
+     즉, 이전 상태에서 `s`까지 버퍼에 있는 모든 요소는 사후 상태에서 유효 합니다.  예를 들면 다음과 같습니다.  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -227,13 +227,13 @@ This article describes typical uses of annotations for simple function parameter
   
      `_Inout_updates_bytes_to_(s,c)`  
   
-     A pointer to an array, which is both read and written by the function.  It is of size `s` elements, all of which must be valid in pre-state, and `c` elements must be valid in post-state.  
+     함수에서 읽고 쓰는 배열에 대 한 포인터입니다.  크기 `s` 요소 이며, 모든 요소는 사전 상태에서 유효 해야 하며 `c` 요소가 사후 상태에서 유효 해야 합니다.  
   
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this only when the size cannot be expressed as elements.  For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.  
+     `_bytes_` 변형은 요소 대신 크기 (바이트)를 제공 합니다. 크기를 요소로 표현할 수 없는 경우에만이를 사용 합니다.  예를 들어 `char` 문자열은 `wchar_t`을 사용 하는 유사한 함수를 사용 하는 경우에만 `_bytes_` variant를 사용 합니다.  
   
 - `_Inout_updates_z_(s)`  
   
-     A pointer to an array that is null-terminated and has a known size. The elements up through the null terminator—which must be present—must be valid in both pre-state and post-state.  The value in the post-state is presumed to be different from the value in the pre-state; this includes the location of the null terminator. If the size is known in bytes, scale `s` by the element size.  
+     Null로 종료 되 고 크기가 알려진 배열에 대 한 포인터입니다. Null 종결자 (존재 해야 함)의 요소는 사전 상태와 사후 상태 모두에서 유효 해야 합니다.  사후 상태 값은 사전 상태 값과 다른 것으로 간주 됩니다. 여기에는 null 종결자의 위치가 포함 됩니다. 크기를 바이트 단위로 알고 있으면 요소 크기에 따라 `s` 크기를 조정 합니다.  
   
 - `_Out_writes_to_(s,c)`  
   
@@ -243,11 +243,11 @@ This article describes typical uses of annotations for simple function parameter
   
      `_Out_writes_bytes_all_(s)`  
   
-     A pointer to an array of `s` elements.  The elements do not have to be valid in pre-state.  In post-state, the elements up to the `c`-th element must be valid.  If the size is known in bytes, scale `s` and `c` by the element size or use the `_bytes_` variant, which is defined as:  
+     `s` 요소의 배열에 대 한 포인터입니다.  요소는 사전 상태에서 유효 하지 않아도 됩니다.  사후 상태에서 `c`번째 요소 까지의 요소가 유효 해야 합니다.  크기를 바이트 단위로 알고 있으면 크기 조정 `s` 및 요소 크기에 따라 `c` 하 고 다음과 같이 정의 된 `_bytes_` variant를 사용 합니다.  
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     In other words, every element that exists in the buffer up to `s` in the pre-state is valid in the post-state.  예를 들어 다음과 같은 가치를 제공해야 합니다.  
+     즉, 이전 상태에서 `s`까지 버퍼에 있는 모든 요소는 사후 상태에서 유효 합니다.  예를 들면 다음과 같습니다.  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -255,72 +255,72 @@ This article describes typical uses of annotations for simple function parameter
   
      `_Inout_updates_bytes_to_(s,c)`  
   
-     A pointer to an array, which is both read and written by the function.  It is of size `s` elements, all of which must be valid in pre-state, and `c` elements must be valid in post-state.  
+     함수에서 읽고 쓰는 배열에 대 한 포인터입니다.  크기 `s` 요소 이며, 모든 요소는 사전 상태에서 유효 해야 하며 `c` 요소가 사후 상태에서 유효 해야 합니다.  
   
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this only when the size cannot be expressed as elements.  For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.  
+     `_bytes_` 변형은 요소 대신 크기 (바이트)를 제공 합니다. 크기를 요소로 표현할 수 없는 경우에만이를 사용 합니다.  예를 들어 `char` 문자열은 `wchar_t`을 사용 하는 유사한 함수를 사용 하는 경우에만 `_bytes_` variant를 사용 합니다.  
   
 - `_Inout_updates_all_(s)`  
   
      `_Inout_updates_bytes_all_(s)`  
   
-     A pointer to an array, which is both read and written by the function of size `s` elements. Defined as equivalent to:  
+     크기 `s` 요소의 함수로 읽고 쓰는 배열에 대 한 포인터입니다. 다음에 해당 하는 것으로 정의 됩니다.  
   
      `_Inout_updates_to_(_Old_(s), _Old_(s))    _Inout_updates_bytes_to_(_Old_(s), _Old_(s))`  
   
-     In other words, every element that exists in the buffer up to `s` in the pre-state is valid in the pre-state and post-state.  
+     즉, 사전 상태에서 `s`까지 버퍼에 있는 모든 요소는 사전 상태 및 사후 상태에서 유효 합니다.  
   
-     The `_bytes_` variant gives the size in bytes instead of elements. Use this only when the size cannot be expressed as elements.  For example, `char` strings would use the `_bytes_` variant only if a similar function that uses `wchar_t` would.  
+     `_bytes_` 변형은 요소 대신 크기 (바이트)를 제공 합니다. 크기를 요소로 표현할 수 없는 경우에만이를 사용 합니다.  예를 들어 `char` 문자열은 `wchar_t`을 사용 하는 유사한 함수를 사용 하는 경우에만 `_bytes_` variant를 사용 합니다.  
   
 - `_In_reads_to_ptr_(p)`  
   
-     A pointer to an array for which the expression `p` – `_Curr_` (that is, `p` minus `_Curr_`) is defined by the appropriate language standard.  The elements prior to `p` must be valid in pre-state.  
+     `p` – `_Curr_` (즉, `p` 빼기 `_Curr_`) 식에 대 한 포인터는 적절 한 언어 표준에 의해 정의 됩니다.  `p` 이전 요소는 사전 상태에서 유효 해야 합니다.  
   
 - `_In_reads_to_ptr_z_(p)`  
   
-     A pointer to a null-terminated array for which the expression `p` – `_Curr_` (that is, `p` minus `_Curr_`) is defined by the appropriate language standard.  The elements prior to `p` must be valid in pre-state.  
+     `p` – `_Curr_` (즉, `p` 빼기 `_Curr_`) 식의 null로 끝나는 배열에 대 한 포인터는 적절 한 언어 표준에 의해 정의 됩니다.  `p` 이전 요소는 사전 상태에서 유효 해야 합니다.  
   
 - `_Out_writes_to_ptr_(p)`  
   
-     A pointer to an array for which the expression `p` – `_Curr_` (that is, `p` minus `_Curr_`) is defined by the appropriate language standard.  The elements prior to `p` do not have to be valid in pre-state and must be valid in post-state.  
+     `p` – `_Curr_` (즉, `p` 빼기 `_Curr_`) 식에 대 한 포인터는 적절 한 언어 표준에 의해 정의 됩니다.  `p` 이전 요소는 사전 상태에서 유효 하지 않아도 되며 사후 상태에서 유효 해야 합니다.  
   
 - `_Out_writes_to_ptr_z_(p)`  
   
-     A pointer to a null-terminated array for which the expression `p` – `_Curr_` (that is, `p` minus `_Curr_`) is defined by the appropriate language standard.  The elements prior to `p` do not have to be valid in pre-state and must be valid in post-state.  
+     `p` – `_Curr_` (즉, `p` 빼기 `_Curr_`) 식의 null로 끝나는 배열에 대 한 포인터는 적절 한 언어 표준에 의해 정의 됩니다.  `p` 이전 요소는 사전 상태에서 유효 하지 않아도 되며 사후 상태에서 유효 해야 합니다.  
   
 ## <a name="optional-pointer-parameters"></a>선택적 포인터 매개 변수  
- When a pointer parameter annotation includes `_opt_`, it indicates that the parameter may be null. Otherwise, the annotation performs the same as the version that doesn't include `_opt_`. Here is a list of the `_opt_` variants of the pointer parameter annotations:  
+ 포인터 매개 변수 주석에 `_opt_`포함 된 경우 매개 변수가 null 일 수 있음을 나타냅니다. 그렇지 않으면 주석이 `_opt_`를 포함 하지 않는 버전과 동일 하 게 수행 됩니다. 다음은 포인터 매개 변수 주석의 `_opt_` 변형 목록입니다.  
   
 ||||  
 |-|-|-|  
 |`_In_opt_`<br /><br /> `_Out_opt_`<br /><br /> `_Inout_opt_`<br /><br /> `_In_opt_z_`<br /><br /> `_Inout_opt_z_`<br /><br /> `_In_reads_opt_`<br /><br /> `_In_reads_bytes_opt_`<br /><br /> `_In_reads_opt_z_`|`_Out_writes_opt_`<br /><br /> `_Out_writes_opt_z_`<br /><br /> `_Inout_updates_opt_`<br /><br /> `_Inout_updates_bytes_opt_`<br /><br /> `_Inout_updates_opt_z_`<br /><br /> `_Out_writes_to_opt_`<br /><br /> `_Out_writes_bytes_to_opt_`<br /><br /> `_Out_writes_all_opt_`<br /><br /> `_Out_writes_bytes_all_opt_`|`_Inout_updates_to_opt_`<br /><br /> `_Inout_updates_bytes_to_opt_`<br /><br /> `_Inout_updates_all_opt_`<br /><br /> `_Inout_updates_bytes_all_opt_`<br /><br /> `_In_reads_to_ptr_opt_`<br /><br /> `_In_reads_to_ptr_opt_z_`<br /><br /> `_Out_writes_to_ptr_opt_`<br /><br /> `_Out_writes_to_ptr_opt_z_`|  
   
 ## <a name="output-pointer-parameters"></a>포인터 매개 변수 출력  
- Output pointer parameters require special notation to disambiguate null-ness on the parameter and the pointed-to location.  
+ 출력 포인터 매개 변수에는 매개 변수 및 가리킨 위치에서 null을 구분 하기 위해 특수 한 표기법이 필요 합니다.  
   
- **Annotations and Descriptions**  
+ **주석 및 설명**  
   
 - `_Outptr_`  
   
-   Parameter cannot be null, and in the post-state the pointed-to location cannot be null and must be valid.  
+   매개 변수는 null 일 수 없으며 사후 상태에서 가리키는 위치는 null 일 수 없으며 유효한 상태 여야 합니다.  
   
 - `_Outptr_opt_`  
   
-   Parameter may be null, but in the post-state the pointed-to location cannot be null and must be valid.  
+   매개 변수는 null 일 수 있지만 사후 상태에서 위치가 null 일 수 없으며 유효한 상태 여야 합니다.  
   
 - `_Outptr_result_maybenull_`  
   
-   Parameter cannot be null, and in the post-state the pointed-to location can be null.  
+   매개 변수는 null 일 수 없으며 사후 상태에서 가리키는 위치는 null 일 수 있습니다.  
   
 - `_Outptr_opt_result_maybenull_`  
   
-   Parameter may be null, and in the post-state the pointed-to location can be null.  
+   매개 변수는 null 일 수 있으며, 사후 상태에서 가리키는 위치는 null 일 수 있습니다.  
   
-  In the following table, additional substrings are inserted into the annotation name to further qualify the meaning of the annotation.  The various substrings are `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`, and `_to_`.  
+  다음 표에서는 주석의 의미를 더 한정 하기 위해 주석 이름에 추가 부분 문자열이 삽입 됩니다.  다양 한 부분 문자열은 `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`및 `_to_`입니다.  
   
 > [!IMPORTANT]
-> If the interface that you are annotating is COM, use the COM form of these annotations. Do not use the COM annotations with any other type interface.  
+> 주석을 추가할 인터페이스가 COM 인 경우 이러한 주석의 COM 폼을 사용 합니다. 다른 형식 인터페이스에는 COM 주석을 사용 하지 마십시오.  
   
- **Annotations and Descriptions**  
+ **주석 및 설명**  
   
 - `_Outptr_result_z_`  
   
@@ -330,7 +330,7 @@ This article describes typical uses of annotations for simple function parameter
   
    `_Ouptr_opt_result_maybenull_z_`  
   
-   The returned pointer has the `_Null_terminated_` annotation.  
+   반환 된 포인터에 `_Null_terminated_` 주석이 있습니다.  
   
 - `_COM_Outptr_`  
   
@@ -340,7 +340,7 @@ This article describes typical uses of annotations for simple function parameter
   
    `_COM_Outptr_opt_result_maybenull_`  
   
-   The returned pointer has COM semantics, and therefore carries an `_On_failure_` post-condition that the returned pointer is null.  
+   반환 된 포인터에는 COM 의미 체계가 있으므로 반환 된 포인터가 null 인 `_On_failure_` 사후 조건을 전달 합니다.  
   
 - `_Outptr_result_buffer_(s)`  
   
@@ -350,7 +350,7 @@ This article describes typical uses of annotations for simple function parameter
   
    `_Outptr_opt_result_bytebuffer_(s)`  
   
-   The returned pointer points to a valid buffer of size `s` elements or bytes.  
+   반환 된 포인터는 `s` 요소나 바이트의 올바른 크기의 버퍼를 가리킵니다.  
   
 - `_Outptr_result_buffer_to_(s, c)`  
   
@@ -360,102 +360,102 @@ This article describes typical uses of annotations for simple function parameter
   
    `_Outptr_opt_result_bytebuffer_to_(s,c)`  
   
-   The returned pointer points to a buffer of size `s` elements or bytes, of which the first `c` are valid.  
+   반환 된 포인터는 첫 번째 `c` 유효한 크기 `s` 요소 또는 바이트의 버퍼를 가리킵니다.  
   
-  Certain interface conventions presume that output parameters are nullified on failure.  Except for explicitly COM code, the forms in the following table are preferred.  For COM code, use the corresponding COM forms that are listed in the previous section.  
+  특정 인터페이스 규칙은 출력 매개 변수가 실패 시 무효화 것으로 가정 합니다.  명시적 COM 코드를 제외 하 고 다음 표에 나와 있는 폼을 선호 합니다.  COM 코드의 경우 이전 섹션에 나열 된 해당 COM 폼을 사용 합니다.  
   
-  **Annotations and Descriptions**  
+  **주석 및 설명**  
   
 - `_Result_nullonfailure_`  
   
-   Modifies other annotations. The result is set to null if the function fails.  
+   다른 주석을 수정 합니다. 함수가 실패 하면 결과가 null로 설정 됩니다.  
   
 - `_Result_zeroonfailure_`  
   
-   Modifies other annotations. The result is set to zero if the function fails.  
+   다른 주석을 수정 합니다. 함수가 실패 하는 경우 결과는 0으로 설정 됩니다.  
   
 - `_Outptr_result_nullonfailure_`  
   
-   The returned pointer points to a valid buffer if the function succeeds, or null if the function fails. This annotation is for a non-optional parameter.  
+   반환 된 포인터는 함수가 성공 하는 경우 유효한 버퍼를 가리키거나 함수가 실패 하면 null입니다. 이 주석은 선택적인 매개 변수를 위한 것입니다.  
   
 - `_Outptr_opt_result_nullonfailure_`  
   
-   The returned pointer points to a valid buffer if the function succeeds, or null if the function fails. This annotation is for an optional parameter.  
+   반환 된 포인터는 함수가 성공 하는 경우 유효한 버퍼를 가리키거나 함수가 실패 하면 null입니다. 이 주석은 선택적 매개 변수에 대 한 것입니다.  
   
 - `_Outref_result_nullonfailure_`  
   
-   The returned pointer points to a valid buffer if the function succeeds, or null if the function fails. This annotation is for a reference parameter.  
+   반환 된 포인터는 함수가 성공 하는 경우 유효한 버퍼를 가리키거나 함수가 실패 하면 null입니다. 이 주석은 참조 매개 변수에 대 한 것입니다.  
   
 ## <a name="output-reference-parameters"></a>참조 매개 변수 출력  
- A common use of the reference parameter is for output parameters.  For simple output reference parameters—for example, `int&`—`_Out_` provides the correct semantics.  However, when the output value is a pointer—for example `int *&`—the equivalent pointer annotations like `_Outptr_ int **` don’t provide the correct semantics.  To concisely express the semantics of output reference parameters for pointer types, use these composite annotations:  
+ 참조 매개 변수는 일반적으로 output 매개 변수에 사용 됩니다.  간단한 출력 참조 매개 변수의 경우 (예: `int&`)`_Out_` 올바른 의미 체계를 제공 합니다.  그러나 출력 값이 포인터인 경우 (예: `int *&`) `_Outptr_ int **` 같은 동일한 포인터 주석이 올바른 의미 체계를 제공 하지 않습니다.  포인터 형식에 대 한 출력 참조 매개 변수의 의미를 간결 하 게 표현 하려면 다음 복합 주석을 사용 합니다.  
   
- **Annotations and Descriptions**  
+ **주석 및 설명**  
   
 - `_Outref_`  
   
-     Result must be valid in post-state and cannot be null.  
+     결과는 사후 상태에서 유효 해야 하며 null 일 수 없습니다.  
   
 - `_Outref_result_maybenull_`  
   
-     Result must be valid in post-state, but may be null in post-state.  
+     결과는 사후 상태에서 유효 해야 하지만 사후 상태에서 null 일 수 있습니다.  
   
 - `_Outref_result_buffer_(s)`  
   
-     Result must be valid in post-state and cannot be null. Points to valid buffer of size `s` elements.  
+     결과는 사후 상태에서 유효 해야 하며 null 일 수 없습니다. `s` 요소 크기의 유효한 버퍼를 가리킵니다.  
   
 - `_Outref_result_bytebuffer_(s)`  
   
-     Result must be valid in post-state and cannot be null. Points to valid buffer of size `s` bytes.  
+     결과는 사후 상태에서 유효 해야 하며 null 일 수 없습니다. 크기가 `s` 바이트의 올바른 버퍼를 가리킵니다.  
   
 - `_Outref_result_buffer_to_(s, c)`  
   
-     Result must be valid in post-state and cannot be null. Points to buffer of `s` elements, of which the first `c` are valid.  
+     결과는 사후 상태에서 유효 해야 하며 null 일 수 없습니다. 첫 번째 `c` 유효한 `s` 요소의 버퍼를 가리킵니다.  
   
 - `_Outref_result_bytebuffer_to_(s, c)`  
   
-     Result must be valid in post-state and cannot be null. Points to buffer of `s` bytes of which the first `c` are valid.  
+     결과는 사후 상태에서 유효 해야 하며 null 일 수 없습니다. 첫 번째 `c` 유효한 `s` 바이트의 버퍼를 가리킵니다.  
   
 - `_Outref_result_buffer_all_(s)`  
   
-     Result must be valid in post-state and cannot be null. Points to valid buffer of size `s` valid elements.  
+     결과는 사후 상태에서 유효 해야 하며 null 일 수 없습니다. 유효한 요소 `s` 올바른 크기의 버퍼를 가리킵니다.  
   
 - `_Outref_result_bytebuffer_all_(s)`  
   
-     Result must be valid in post-state and cannot be null. Points to valid buffer of `s` bytes of valid elements.  
+     결과는 사후 상태에서 유효 해야 하며 null 일 수 없습니다. 유효한 요소의 `s` 바이트의 올바른 버퍼를 가리킵니다.  
   
 - `_Outref_result_buffer_maybenull_(s)`  
   
-     Result must be valid in post-state, but may be null in post-state. Points to valid buffer of size `s` elements.  
+     결과는 사후 상태에서 유효 해야 하지만 사후 상태에서 null 일 수 있습니다. `s` 요소 크기의 유효한 버퍼를 가리킵니다.  
   
 - `_Outref_result_bytebuffer_maybenull_(s)`  
   
-     Result must be valid in post-state, but may be null in post-state. Points to valid buffer of size `s` bytes.  
+     결과는 사후 상태에서 유효 해야 하지만 사후 상태에서 null 일 수 있습니다. 크기가 `s` 바이트의 올바른 버퍼를 가리킵니다.  
   
 - `_Outref_result_buffer_to_maybenull_(s, c)`  
   
-     Result must be valid in post-state, but may be null in post-state. Points to buffer of `s` elements, of which the first `c` are valid.  
+     결과는 사후 상태에서 유효 해야 하지만 사후 상태에서 null 일 수 있습니다. 첫 번째 `c` 유효한 `s` 요소의 버퍼를 가리킵니다.  
   
 - `_Outref_result_bytebuffer_to_maybenull_(s,c)`  
   
-     Result must be valid in post-state, but may be null in post state. Points to buffer of `s` bytes of which the first `c` are valid.  
+     결과는 사후 상태에서 유효 해야 하지만 post 상태에서 null 일 수 있습니다. 첫 번째 `c` 유효한 `s` 바이트의 버퍼를 가리킵니다.  
   
 - `_Outref_result_buffer_all_maybenull_(s)`  
   
-     Result must be valid in post-state, but may be null in post state. Points to valid buffer of size `s` valid elements.  
+     결과는 사후 상태에서 유효 해야 하지만 post 상태에서 null 일 수 있습니다. 유효한 요소 `s` 올바른 크기의 버퍼를 가리킵니다.  
   
 - `_Outref_result_bytebuffer_all_maybenull_(s)`  
   
-     Result must be valid in post-state, but may be null in post state. Points to valid buffer of `s` bytes of valid elements.  
+     결과는 사후 상태에서 유효 해야 하지만 post 상태에서 null 일 수 있습니다. 유효한 요소의 `s` 바이트의 올바른 버퍼를 가리킵니다.  
   
 ## <a name="return-values"></a>반환 값  
- The return value of a function resembles an `_Out_` parameter but is at a different level of de-reference, and you don't have to consider the concept of the pointer to the result.  For the following annotations, the return value is the annotated object—a scalar, a pointer to a struct, or a pointer to a buffer. These annotations have the same semantics as the corresponding `_Out_` annotation.  
+ 함수의 반환 값은 `_Out_` 매개 변수와 유사 하지만 참조의 다른 수준에 있으므로 결과에 대 한 포인터의 개념을 고려 하지 않아도 됩니다.  다음 주석에서 반환 값은 주석이 추가 된 개체 (스칼라, 구조체에 대 한 포인터 또는 버퍼에 대 한 포인터)입니다. 이러한 주석은 해당 `_Out_` 주석과 동일한 의미 체계를 갖습니다.  
   
 |||  
 |-|-|  
 |`_Ret_z_`<br /><br /> `_Ret_writes_(s)`<br /><br /> `_Ret_writes_bytes_(s)`<br /><br /> `_Ret_writes_z_(s)`<br /><br /> `_Ret_writes_to_(s,c)`<br /><br /> `_Ret_writes_maybenull_(s)`<br /><br /> `_Ret_writes_to_maybenull_(s)`<br /><br /> `_Ret_writes_maybenull_z_(s)`|`_Ret_maybenull_`<br /><br /> `_Ret_maybenull_z_`<br /><br /> `_Ret_null_`<br /><br /> `_Ret_notnull_`<br /><br /> `_Ret_writes_bytes_to_`<br /><br /> `_Ret_writes_bytes_maybenull_`<br /><br /> `_Ret_writes_bytes_to_maybenull_`|  
   
 ## <a name="other-common-annotations"></a>기타 일반 주석  
- **Annotations and Descriptions**  
+ **주석 및 설명**  
   
 - `_In_range_(low, hi)`  
   
@@ -471,36 +471,36 @@ This article describes typical uses of annotations for simple function parameter
   
      `_Field_range_(low, hi)`  
   
-     The parameter, field, or result is in the range (inclusive) from `low` to `hi`.  Equivalent to `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)` that is applied to the annotated object together with the appropriate pre-state or post-state conditions.  
+     매개 변수, 필드 또는 결과는 `low`에서 `hi`까지의 범위 (포함)입니다.  주석이 추가 된 개체에 적절 한 사전 상태 또는 사후 상태 조건과 함께 적용 되는 `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)`와 동일 합니다.  
   
     > [!IMPORTANT]
-    > Although the names contain "in" and "out", the semantics of `_In_` and `_Out_` do **not** apply to these annotations.  
+    > 이름에 "in" 및 "out"이 포함 되어 있지만 `_In_` 및 `_Out_`의 의미 체계는 이러한 주석에 적용 **되지** 않습니다.  
   
 - `_Pre_equal_to_(expr)`  
   
      `_Post_equal_to_(expr)`  
   
-     The annotated value is exactly `expr`.  Equivalent to `_Satisfies_(_Curr_ == expr)` that is applied to the annotated object together with the appropriate pre-state or post-state conditions.  
+     주석이 추가 된 값은 정확히 `expr`입니다.  주석이 추가 된 개체에 적절 한 사전 상태 또는 사후 상태 조건과 함께 적용 되는 `_Satisfies_(_Curr_ == expr)`와 동일 합니다.  
   
 - `_Struct_size_bytes_(size)`  
   
-     Applies to a struct or class declaration.  Indicates that a valid object of that type may be larger than the declared type, with the number of bytes being given by `size`.  예를 들어 다음과 같은 가치를 제공해야 합니다.  
+     구조체 또는 클래스 선언에 적용 됩니다.  `size`에서 제공 하는 바이트 수를 사용 하 여 해당 형식의 유효한 개체가 선언 된 형식 보다 클 수 있음을 나타냅니다.  예를 들면 다음과 같습니다.  
   
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`  
   
-     The buffer size in bytes of a parameter `pM` of type `MyStruct *` is then taken to be:  
+     `MyStruct *` 형식의 매개 변수 `pM` 버퍼 크기 (바이트)는 다음과 같습니다.  
   
      `min(pM->nSize, sizeof(MyStruct))`  
   
 ## <a name="related-resources"></a>관련 참고 자료  
- [Code Analysis Team Blog](https://go.microsoft.com/fwlink/?LinkId=251197)  
+ [코드 분석 팀 블로그](https://go.microsoft.com/fwlink/?LinkId=251197)  
   
-## <a name="see-also"></a>관련 항목:  
- [Using SAL Annotations to Reduce C/C++ Code Defects](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
- [Understanding SAL](../code-quality/understanding-sal.md)   
- [Annotating Function Behavior](../code-quality/annotating-function-behavior.md)   
- [Annotating Structs and Classes](../code-quality/annotating-structs-and-classes.md)   
- [Annotating Locking Behavior](../code-quality/annotating-locking-behavior.md)   
- [Specifying When and Where an Annotation Applies](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
- [Intrinsic Functions](../code-quality/intrinsic-functions.md)   
+## <a name="see-also"></a>참고 항목  
+ [CC++ /코드 오류를 줄이기 위해 SAL 주석 사용](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [SAL  이해](../code-quality/understanding-sal.md)  
+ [함수 동작에 주석 달기](../code-quality/annotating-function-behavior.md)   
+ [구조체 및 클래스  주석 달기](../code-quality/annotating-structs-and-classes.md)  
+ [잠금 동작에 주석 달기](../code-quality/annotating-locking-behavior.md)   
+ [주석이 적용 되는 시기 및 위치 지정](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
+ [내장 함수](../code-quality/intrinsic-functions.md)   
  [모범 사례 및 예제](../code-quality/best-practices-and-examples-sal.md)

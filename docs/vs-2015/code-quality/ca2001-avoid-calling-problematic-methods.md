@@ -1,5 +1,5 @@
 ---
-title: 'CA2001: Avoid calling problematic methods | Microsoft Docs'
+title: 'CA2001: 문제가 있는 메서드를 호출 하지 마세요. | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -30,29 +30,29 @@ ms.locfileid: "74298505"
 |TypeName|AvoidCallingProblematicMethods|
 |CheckId|CA2001|
 |범주|Microsoft.Reliability|
-|변경 수준|Non-breaking|
+|변경 수준|최신이 아님|
 
 ## <a name="cause"></a>원인
  멤버에서 잠재적 위험이나 문제가 있는 메서드를 호출합니다.
 
 ## <a name="rule-description"></a>규칙 설명
- Avoid making unnecessary and potentially dangerous method calls.
+ 불필요 하 고 잠재적으로 위험한 메서드 호출을 방지 합니다.
 
- A violation of this rule occurs when a member calls one of the following methods.
+ 멤버가 다음 메서드 중 하나를 호출 하면이 규칙의 위반이 발생 합니다.
 
 |메서드|설명|
 |------------|-----------------|
-|<xref:System.GC.Collect%2A?displayProperty=fullName>|Calling GC.Collect can significantly affect application performance and is rarely necessary. For more information, see the [Rico Mariani's Performance Tidbits](https://go.microsoft.com/fwlink/?LinkId=169256) blog entry on MSDN.|
-|<xref:System.Threading.Thread.Resume%2A?displayProperty=fullName><br /><br /> <xref:System.Threading.Thread.Suspend%2A?displayProperty=fullName>|Thread.Suspend and Thread.Resume have been deprecated because of their unpredictable behavior.  Use other classes in the <xref:System.Threading> namespace, such as <xref:System.Threading.Monitor>, <xref:System.Threading.Mutex>, and <xref:System.Threading.Semaphore> to synchronize threads or protect resources.|
-|<xref:System.Runtime.InteropServices.SafeHandle.DangerousGetHandle%2A?displayProperty=fullName>|The DangerousGetHandle method poses a security risk because it can return a handle that is not valid. See the <xref:System.Runtime.InteropServices.SafeHandle.DangerousAddRef%2A> and the <xref:System.Runtime.InteropServices.SafeHandle.DangerousRelease%2A> methods for more information about how to use the DangerousGetHandle method safely.|
-|<xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=fullName>|These methods can load assemblies from unexpected locations. For example, see Suzanne Cook's .NET CLR Notes blog posts [LoadFile vs. LoadFrom](https://go.microsoft.com/fwlink/?LinkId=164450) and [Choosing a Binding Context](https://go.microsoft.com/fwlink/?LinkId=164451) on the MSDN Web site for information about methods that load assemblies.|
-|[CoSetProxyBlanket](https://go.microsoft.com/fwlink/?LinkID=169250) (Ole32)<br /><br /> [CoInitializeSecurity](https://go.microsoft.com/fwlink/?LinkId=169255) (Ole32)|By the time the user code starts executing in a managed process, it is too late to reliably call CoSetProxyBlanket. The common language runtime (CLR) takes initialization actions that may prevent the users P/Invoke from succeeding.<br /><br /> If you do have to call CoSetProxyBlanket for a managed application, we recommend that you start the process by using a native code (C++) executable, call CoSetProxyBlanket in the native code, and then start your managed code application in process. (Be sure to specify a runtime version number.)|
+|<xref:System.GC.Collect%2A?displayProperty=fullName>|GC를 호출 합니다. Collect는 응용 프로그램 성능에 큰 영향을 줄 수 있으며 거의 필요 하지 않습니다. 자세한 내용은 MSDN의 [Turiani의 Performance Tidbits](https://go.microsoft.com/fwlink/?LinkId=169256) 블로그 항목을 참조 하세요.|
+|<xref:System.Threading.Thread.Resume%2A?displayProperty=fullName><br /><br /> <xref:System.Threading.Thread.Suspend%2A?displayProperty=fullName>|스레드의 일시 중단 및 다시 시작은 예측할 수 없는 동작으로 인해 더 이상 사용 되지 않습니다.  <xref:System.Threading.Monitor>, <xref:System.Threading.Mutex>, <xref:System.Threading.Semaphore>와 같이 <xref:System.Threading> 네임 스페이스의 다른 클래스를 사용 하 여 스레드를 동기화 하거나 리소스를 보호 합니다.|
+|<xref:System.Runtime.InteropServices.SafeHandle.DangerousGetHandle%2A?displayProperty=fullName>|Safehandle.dangerousgethandle 메서드는 유효 하지 않은 핸들을 반환할 수 있기 때문에 보안 위험을 초래 합니다. Safehandle.dangerousgethandle 메서드를 안전 하 게 사용 하는 방법에 대 한 자세한 내용은 <xref:System.Runtime.InteropServices.SafeHandle.DangerousAddRef%2A> 및 <xref:System.Runtime.InteropServices.SafeHandle.DangerousRelease%2A> 메서드를 참조 하세요.|
+|<xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=fullName>|이러한 메서드는 예기치 않은 위치에서 어셈블리를 로드할 수 있습니다. 예를 들어 어셈블리를 로드 하는 메서드에 대 한 자세한 내용은 Suzanne 쿡의 .NET CLR Notes 블로그 게시물 [assembly.loadfile And LoadFrom](https://go.microsoft.com/fwlink/?LinkId=164450) (MSDN 웹 사이트에서 [바인딩 컨텍스트 선택](https://go.microsoft.com/fwlink/?LinkId=164451) )를 참조 하세요.|
+|[CoSetProxyBlanket](https://go.microsoft.com/fwlink/?LinkID=169250) (ole32.lib)<br /><br /> [CoInitializeSecurity](https://go.microsoft.com/fwlink/?LinkId=169255) (ole32.lib)|사용자 코드는 관리 되는 프로세스에서 실행을 시작 하는 시간을 기준으로 CoSetProxyBlanket를 안정적으로 호출 하는 것이 너무 늦습니다. CLR (공용 언어 런타임)은 사용자 P/Invoke가 성공할 수 없도록 하는 초기화 작업을 수행 합니다.<br /><br /> 관리 되는 응용 프로그램에 대해 CoSetProxyBlanket를 호출 해야 하는 경우 네이티브 코드 (C++) 실행 파일을 사용 하 여 프로세스를 시작 하 고 네이티브 코드에서 CoSetProxyBlanket를 호출한 다음 프로세스에서 관리 코드 응용 프로그램을 시작 하는 것이 좋습니다. 런타임 버전 번호를 지정 해야 합니다.|
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- To fix a violation of this rule, remove or replace the call to the dangerous or problematic method.
+ 이 규칙 위반 문제를 해결 하려면 위험 또는 문제가 있는 메서드에 대 한 호출을 제거 하거나 바꿉니다.
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
- You should suppress messages from this rule only when no alternatives to the problematic method are available.
+ 문제가 있는 방법에 대 한 대안을 사용할 수 없는 경우에만이 규칙에서 메시지를 표시 하지 않아야 합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [안정성 경고](../code-quality/reliability-warnings.md)

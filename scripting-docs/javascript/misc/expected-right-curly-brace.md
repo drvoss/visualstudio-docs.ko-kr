@@ -28,6 +28,6 @@ ms.locfileid: "72577553"
   
 - 함수, 루프, 블록 또는 개체 이니셜라이저의 끝을 표시 하는 오른쪽 중괄호를 추가 합니다.  
   
-## <a name="see-also"></a>참조  
- [함수 개체](../../javascript/reference/function-object-javascript.md)    
+## <a name="see-also"></a>참고 항목  
+ [함수 개체](../../javascript/reference/function-object-javascript.md)   
  [프로그램 흐름 제어](../../javascript/controlling-program-flow-javascript.md)

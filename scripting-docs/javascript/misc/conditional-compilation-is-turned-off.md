@@ -36,9 +36,9 @@ ms.locfileid: "72572937"
     /*@cc_on @*/  
     ```  
   
-## <a name="see-also"></a>참조  
- [조건부 컴파일](../../javascript/advanced/conditional-compilation-javascript.md)    
- [조건부 컴파일 변수](../../javascript/advanced/conditional-compilation-variables-javascript.md)    
- [@cc_on 문](../../javascript/reference/at-cc-on-statement-javascript.md)    
- [@if 문](../../javascript/reference/at-if-statement-javascript.md)    
+## <a name="see-also"></a>참고 항목  
+ [조건부 컴파일](../../javascript/advanced/conditional-compilation-javascript.md)   
+ [조건부 컴파일 변수](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
+ [@cc_on Statement](../../javascript/reference/at-cc-on-statement-javascript.md)   
+ [@if Statement](../../javascript/reference/at-if-statement-javascript.md)   
  [@set 문](../../javascript/reference/at-set-statement-javascript.md)

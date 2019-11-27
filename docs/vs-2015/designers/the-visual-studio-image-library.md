@@ -1,5 +1,5 @@
 ---
-title: Image Library | Microsoft Docs
+title: 이미지 라이브러리 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -33,5 +33,5 @@ Visual Studio 이미지 라이브러리에는 Microsoft Visual Studio, Microsoft
 
  이미지 라이브러리는 공통 요소, 작업, 주석, 아이콘 및 개체 등 5개 범주로 나뉩니다. 공통 요소 및 아이콘 형식에 대한 PDF 형식의 Readme 파일이 포함되어 있습니다. 여기에는 애플리케이션에서 이러한 이미지를 적절하게 사용하는 방법에 대한 정보가 포함되어 있습니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [이미지, 비트맵 및 메타파일](https://msdn.microsoft.com/library/7152b45b-a55c-49bc-8c78-ae002a844f71)

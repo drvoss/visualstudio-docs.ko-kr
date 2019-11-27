@@ -29,7 +29,7 @@ ms.locfileid: "74297592"
   
  그런 다음 Visual Studio에서 **파일 > 새 프로젝트**를 사용하여 Xamarin 솔루션을 새로 만들고, 대화 상자에서 **템플릿 > 기타 언어 > Visual C# > 크로스 플랫폼**을 확장하고, **비어 있는 앱(네이티브 이식 가능)** 을 선택하고, 확인을 클릭합니다. 그러면 공유된 이식 가능한 클래스 라이브러리 프로젝트와 Android, iOS 및 Windows에 대한 개별 프로젝트가 포함된 솔루션이 생성됩니다.  
   
- ![Results of creating a new project from the Blank App &#40;Native Portable&#41; template](../cross-platform/media/crossplat-xamarin-verify-1.png "CrossPlat Xamarin Verify 1")  
+ ![비어 있는 앱 &#40;네이티브 이식 가능한&#41; 템플릿에서 새 프로젝트를 만든 결과](../cross-platform/media/crossplat-xamarin-verify-1.png "CrossPlat Xamarin 확인 1")  
   
 > [!NOTE]
 > 템플릿이 없으면 이 페이지 아래쪽에 있는 [Are the Xamarin project templates missing? Try this](#missing) (영문)를 참조하세요.  
@@ -46,20 +46,20 @@ ms.locfileid: "74297592"
   
     - 솔루션 탐색기에서 Android 프로젝트를 마우스 오른쪽 단추로 클릭하고 **시작 프로젝트로 설정**을 선택합니다.  
   
-         ![Visual Studio Set as Startup project option](../cross-platform/media/crossplat-xamarin-verify-2.png "CrossPlat Xamarin Verify 2")  
+         ![Visual Studio 시작 프로젝트로 설정 옵션](../cross-platform/media/crossplat-xamarin-verify-2.png "CrossPlat Xamarin 확인 2")  
   
     - 대상 Android 버전에 따라 적절한 에뮬레이터를 선택합니다. 컴퓨터에 연결된 Android 개발 디바이스가 있으면 에뮬레이터와 함께 여기에 나열됩니다.  
   
-        - Windows 8+: 아래 표시된 대로 Visual Studio의 디버그 드롭다운에서 **VS 에뮬레이터** 대상을 선택하고 **F5**키를 눌러 디버거를 시작합니다. 자세한 내용은 [Visual Studio Emulator for Android 소개](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/) (영문)(Visual Studio ALM 블로그)를 참조하세요. 에뮬레이터를 작동시키는 중 문제가 발생하면 [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)을 참조하세요. **도구 &gt; Visual Studio Emulator for Android...** 를 선택하여 에뮬레이터에 대한 새로운 디바이스 프로필을 만들 수도 있습니다.  
+        - Windows 8+: 아래 표시된 대로 Visual Studio의 디버그 드롭다운에서 **VS 에뮬레이터** 대상을 선택하고 **F5**키를 눌러 디버거를 시작합니다. 자세한 내용은 [Visual Studio Emulator for Android 소개](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/) (영문)(Visual Studio ALM 블로그)를 참조하세요. 에뮬레이터를 작동시키는 중 문제가 발생하면 [Visual Studio Emulator for Android 문제 해결](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)을 참조하세요. **도구 &gt; Visual Studio Emulator for Android...** 를 선택하여 에뮬레이터에 대한 새로운 디바이스 프로필을 만들 수도 있습니다.  
   
-             ![Selecting the Visual Studio Emulator for Android as a debug target](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin Verify 3")  
+             ![디버그 대상으로 Android 용 Visual Studio 에뮬레이터 선택](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin Verify 3")  
   
              참고: **도구 > Visual Studio Emulator for Android...** 메뉴 옵션이 표시되지 않으면 에뮬레이터 자체가 설치되지 않은 것일 수 있습니다. **제어판 > 프로그램 및 기능**으로 이동하여 **Microsoft Visual Studio**를 선택하고 **변경**을 클릭하여 설치 관리자를 다시 실행합니다. 설치 관리자에서 **수정**을 클릭하고 **플랫폼 간 모바일 개발 > Microsoft Visual Studio Emulator for Android** 확인란을 선택한 후에 **업데이트**를 클릭합합니다.  
   
         - Windows 7 이하: 대신 드롭다운에서 Xamarin Player for Android를 선택하고 F5 키를 눌러 실행합니다. Xamarin Player, 해당 디바이스 관리자 및 문제 해결 팁에 대해서는 [Xamarin Android Player](https://docs.microsoft.com/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (영문)(xamarin.com)를 참조하세요.  
   
 > [!NOTE]
-> Visual Studio에서 도구 모음에 AVD(Android Emulator Manager) 단추가 표시되는 것을 알 수 있습니다(아래 그림 참조). 이 단추를 선택하면 Google Android 에뮬레이터를 구성하는 데 특별히 사용되는 디바이스 관리자가 열립니다.  이 단추는 프로필을 구성하는 자체 디바이스 관리자가 있는 Visual Studio Emulator for Android 또는 Xamarin Player에는 영향을 미치지 않습니다.  See [Introducing Visual Studio’s Emulator for Android](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/) (Visual Studio ALM blog) and [Xamarin Android Player](https://docs.microsoft.com/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (xamarin.com) for details.  
+> Visual Studio에서 도구 모음에 AVD(Android Emulator Manager) 단추가 표시되는 것을 알 수 있습니다(아래 그림 참조). 이 단추를 선택하면 Google Android 에뮬레이터를 구성하는 데 특별히 사용되는 디바이스 관리자가 열립니다.  이 단추는 프로필을 구성하는 자체 디바이스 관리자가 있는 Visual Studio Emulator for Android 또는 Xamarin Player에는 영향을 미치지 않습니다.  자세한 내용은 [Visual Studio Emulator for Android 소개](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/) (영문)(Visual Studio ALM 블로그) 및 [Xamarin Android Player](https://docs.microsoft.com/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (영문)(xamarin.com)를 참조하세요.  
 > ![CrossPlat Xamarin Verify 7](../cross-platform/media/crossplat-xamarin-verify-7.png "CrossPlat Xamarin Verify 7")  
   
 ## <a name="windows-phone"></a>Windows Phone  
@@ -72,7 +72,7 @@ ms.locfileid: "74297592"
   
     - 아래 표시된 대로 Visual Studio의 디버그 드롭다운에서 **Emulator 8.1** 대상 또는 연결된 디바이스를 선택하고 F5 키를 눌러 디버거를 시작합니다.  
   
-         ![Selecting a Windows Phone emulator as a debug target](../cross-platform/media/crossplat-xamarin-verify-4.png "CrossPlat Xamarin Verify 4")  
+         ![디버그 대상으로 Windows Phone 에뮬레이터 선택](../cross-platform/media/crossplat-xamarin-verify-4.png "CrossPlat Xamarin Verify 4")  
   
     - 에뮬레이터를 작동하는 데 문제가 발생하는 경우 [Windows Phone 8 Emulator 문제 해결](https://msdn.microsoft.com/library/windows/apps/jj681694.aspx)(영문)을 참조하세요.  
   
@@ -88,11 +88,11 @@ ms.locfileid: "74297592"
   
     2. 아래 표시된 대로 Visual Studio의 빌드 드롭다운에서 **iPhoneSimulator** 대상을 선택하거나 테더링된 디바이스가 있는 경우 **iPhone** 대상을 선택합니다. 시뮬레이터가 나열되지 않으면 Mac에서 Xcode를 시작하고 **Xcode->기본 설정**을 선택한 후에 **다운로드**를 클릭합니다. **구성 요소** 에 다운로드할 수 있는 시뮬레이터 버전이 표시되어야 합니다. 디버깅에 대한 추가 지침은 Xamarin의 [디버깅](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/#Debugging_on_the_Simulator) (영문) 페이지(xamarin.com)에서 확인할 수 있습니다.  
   
-         ![Selecting the iPhoneSimulator build target](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin Verify 5")  
+         ![드롭다운에서 iphonesimulator 대상을 빌드 대상 선택](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin Verify 5")  
   
     3. 아래 표시된 대로 Visual Studio의 디버그 드롭다운에서 iPhone 대상을 선택하고 F5 키를 눌러 디버거를 시작합니다. 그러면 앱을 조작할 Mac에서 시뮬레이터가 시작되고 동시에 Visual Studio에서 디버깅이 수행됩니다. 실제로 iPhone 또는 iPad가 Mac에 연결되어 있으면 여기에 나타나며, 해당 iPhone 또는 iPad를 대신 선택할 수 있습니다. 나열된 디바이스 또는 시뮬레이터가 하나도 표시되지 않는다면 위의 1단계에서 연결된 항목을 검토하거나 **도구** >**iOS** >**Xamarin Mac 에이전트**  
   
-         ![Selecting an iPhone debug target](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin Verify 6")  
+         ![IPhone 디버그 대상 선택](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin Verify 6")  
   
     4. Mac에 연결할 때 문제가 발생하면 [연결 문제 해결](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/connecting-to-mac/troubleshooting) (영문)(xamarin.com)을 참조하세요.  
   

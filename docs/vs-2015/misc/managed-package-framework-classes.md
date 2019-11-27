@@ -1,5 +1,5 @@
 ---
-title: Managed Package Framework Classes | Microsoft Docs
+title: 관리 되는 패키지 프레임 워크 클래스 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -38,7 +38,7 @@ MPF(관리되는 패키지 프레임워크) 클래스를 사용하여 관리 코
 |<xref:Microsoft.VisualStudio.Shell.Design.Serialization.CodeDom>|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CodeDom 디자이너 확장을 포함합니다.|  
 |<xref:Microsoft.VisualStudio.Shell.Flavor>|프로젝트 하위 형식("버전")을 지원합니다.|  
   
-## <a name="see-also"></a>관련 항목:  
- [VSPackages and the Managed Package Framework](../misc/vspackages-and-the-managed-package-framework.md)   
- [Using Visual Studio Interop Assemblies](../extensibility/internals/using-visual-studio-interop-assemblies.md)   
+## <a name="see-also"></a>참고 항목  
+ [Vspackage 및 관리 패키지 프레임 워크](../misc/vspackages-and-the-managed-package-framework.md)   
+ [Visual Studio Interop 어셈블리 사용](../extensibility/internals/using-visual-studio-interop-assemblies.md)   
  [VSPackage 및 관리 패키지 프레임워크](../misc/vspackages-and-the-managed-package-framework.md)

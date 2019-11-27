@@ -25,7 +25,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72576382"
 ---
 # <a name="idebugextendedpropertygetextendedpropertyinfo"></a>IDebugExtendedProperty::GetExtendedPropertyInfo
-확장 속성에 대 한 확장 된 정보를 페치합니다 .이는 보다 간단한 `IDebugProperty` 보다 자세한 정보를 가져옵니다.  
+확장 속성에 대 한 확장 된 정보를 페치합니다 .이는 보다 간단한 `IDebugProperty`보다 자세한 정보를 가져옵니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -39,7 +39,7 @@ HRESULT GetExtendedPropertyInfo(
   
 #### <a name="parameters"></a>매개 변수  
  `dwFieldSpec`  
- 진행 @No__t_0 구조에서 채울 필드를 결정 하는 EX_DBGPROP_INFO_FLAGS 상수를 지정 합니다.  
+ 진행 `ExtendedDebugPropertyInfo` 구조에서 입력할 필드를 결정 하는 EX_DBGPROP_INFO_FLAGS 상수를 지정 합니다.  
   
  `nRadix`  
  진행 숫자 정보를 해석 하는 데 사용할 기 수입니다.  
@@ -48,9 +48,9 @@ HRESULT GetExtendedPropertyInfo(
  제한이 속성을 설명 하는 `ExtendedDebugPropertyInfo` 구조체를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 유효한 `HRESULT` (일반적으로 `S_OK`)를 반환 합니다.  
+ 유효한 `HRESULT`(일반적으로 `S_OK`)를 반환 합니다.  
   
-## <a name="see-also"></a>참조  
- [Idebugextendedproperty 인터페이스](../../winscript/reference/idebugextendedproperty-interface.md)    
- [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)    
+## <a name="see-also"></a>참고 항목  
+ [Idebugextendedproperty 인터페이스](../../winscript/reference/idebugextendedproperty-interface.md)   
+ [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)   
  [ExtendedDebugPropertyInfo 구조체](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

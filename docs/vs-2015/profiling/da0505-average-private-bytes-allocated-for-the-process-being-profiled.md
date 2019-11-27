@@ -23,11 +23,11 @@ ms.locfileid: "74300464"
 # <a name="da0505-average-private-bytes-allocated-for-the-process-being-profiled"></a>DA0505: 프로파일링 중인 프로세스에 할당되는 평균 전용 바이트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0505|  
-|Category|Resource Management|  
-|Profiling method|All|  
-|Message|This information was gathered for information only. Process Private Bytes 카운터는 프로파일링하고 있는 프로세스에 의해 할당된 가상 메모리를 측정합니다. 보고된 값은 모든 측정 간격에 걸쳐 계산된 평균값입니다.|  
-|Rule type|Information|  
+규칙 Id | DA0505 |  
+| 범주 | 리소스 관리 |  
+| 프로 파일링 방법 | 모두 |  
+| 메시지 | 이 정보는 정보를 위해서만 수집 되었습니다. Process Private Bytes 카운터는 프로파일링하고 있는 프로세스에 의해 할당된 가상 메모리를 측정합니다. 보고된 값은 모든 측정 간격에 걸쳐 계산된 평균값입니다.|  
+| 규칙 유형 | 정보 |  
   
  샘플링, .NET 메모리 또는 리소스 경합 방법을 사용하여 프로파일링할 경우 이 규칙을 트리거하려면 10개 이상의 샘플을 수집해야 합니다.  
   

@@ -23,11 +23,11 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573805"
 ---
 # <a name="invalid-replacer-argument"></a>치환 인수가 잘못되었습니다.
-잘못 된 인수를 사용 하 여 `JSON.stringify`를 호출 하려고 한 경우 @No__t_0 인수는 함수 또는 배열 이어야 합니다.  
+잘못 된 인수를 사용 하 여 `JSON.stringify`를 호출 하려고 한 경우 `replacer` 인수는 함수 또는 배열 이어야 합니다.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
-- @No__t_0 인수를 함수 또는 배열로 변경 합니다.  
+- `replacer` 인수를 함수 또는 배열로 변경 합니다.  
   
 ## <a name="example"></a>예제  
  이 예제의 코드는 `memberfilter`가 함수 또는 배열이 아닌 개체 이기 때문에 런타임 오류를 발생 시킵니다.  
@@ -44,7 +44,7 @@ var memberfilter = new Object();
 var jsontext = JSON.stringify(contact, memberfilter, "\t");  
 ```  
   
-## <a name="see-also"></a>참조  
- [JSON 개체](../../javascript/reference/json-object-javascript.md)    
- [JSON   함수를 구문 분석 합니다.](../../javascript/reference/json-parse-function-javascript.md)  
+## <a name="see-also"></a>참고 항목  
+ [JSON 개체](../../javascript/reference/json-object-javascript.md)   
+ [JSON  함수를 구문 분석 합니다.](../../javascript/reference/json-parse-function-javascript.md)  
  [JavaScript 런타임 오류](../../javascript/reference/javascript-run-time-errors.md)

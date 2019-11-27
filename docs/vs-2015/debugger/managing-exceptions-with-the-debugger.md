@@ -1,5 +1,5 @@
 ---
-title: Managing Exceptions with the Debugger | Microsoft Docs
+title: 디버거를 사용 하 여 예외 관리 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -69,7 +69,7 @@ ms.locfileid: "74301101"
   
  **예외 설정** 창에서 예외 범주(예: .NET 예외를 의미하는 **공용 언어 런타임 예외**)에 대한 노드를 확장하고 해당 범주 내의 특정 예외(예: **System.AccessViolationException**)에 대한 확인란을 선택합니다. 전체 예외 범주를 선택할 수도 있습니다.  
   
- ![Checked AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")  
+ ![선택 된 AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")  
   
  주어진 예외를 선택하는 경우, 이 예외가 발생할 때마다 예외가 처리되었는지 여부에 관계없이 디버거 실행이 중단됩니다. 여기서 이 예외를 첫째 예외라고 합니다. 예를 들어 다음은 몇 가지 시나리오입니다.  
   
@@ -135,13 +135,13 @@ ms.locfileid: "74301101"
    }  
    ```  
   
-    If you have **AccessViolationException** checked in **Exception Settings**, when you run this code in the debugger execution will break on the `throw` line in both **ThrowHandledException()** and **ThrowUnhandledException()** .  
+    **AccessViolationException** 를 체크 인 한 **예외 설정이**있는 경우 디버거 실행 시이 코드를 실행 하면 **ThrowHandledException ()** 및 **ThrowUnhandledException ()** 의 `throw` 줄에서 중단 됩니다.  
   
    예외 설정을 기본값으로 복원하려는 경우에는 도구 모음에서 **복원** 단추를 클릭하면 됩니다.  
   
-   ![Restore defaults in Exception Settings](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
+   ![예외 설정의 기본값 복원](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-### <a name="BKMK_UserUnhandled"></a> Setting the debugger to continue on user-unhandled exceptions  
+### <a name="BKMK_UserUnhandled"></a>사용자가 처리 하지 않은 예외에 대해 계속 하도록 디버거 설정  
  [Just My Code](../debugger/just-my-code.md)옵션을 사용하여 .NET 또는 JavaScript 코드를 디버그하는 경우 사용자 코드에서 처리되지 않았지만 다른 위치에서는 처리된 예외가 발견되면 실행을 중단하지 않도록 디버거에 지시할 수 있습니다.  
   
 1. **예외 설정** 창에서 창 내부를 마우스 오른쪽 단추로 클릭한 다음 **열 표시**를 선택하여 상황에 맞는 메뉴를 엽니다. ( **내 코드만**을 해제한 경우에는 이 명령이 표시되지 않습니다.)  
@@ -152,7 +152,7 @@ ms.locfileid: "74301101"
   
    예를 들어 ASP.NET 웹 애플리케이션은 예외를 HTTP 500 상태 코드([ASP.NET API의 예외 처리](https://docs.microsoft.com/aspnet/web-api/overview/error-handling/exception-handling))로 변환하여 예외를 처리하며, 이에 따라 예외의 소스를 확인하는 데 도움이 되지 않을 수도 있습니다. 아래 예제에서는 사용자 코드가 `String.Format()` 을 발생시키는 <xref:System.FormatException>을 호출합니다. 다음과 같이 실행이 중단됩니다.  
   
-   ![breaks on user&#45;unhanlded exception](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
+   ![사용자&#45;unhanlded 예외 발생 시 중단](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
 ### <a name="adding-and-deleting-exceptions"></a>예외 추가 및 삭제  
  예외를 추가하거나 삭제할 수 있습니다. 어느 범주에서나 어떤 형식의 예외든 삭제할 수 있습니다. 예외를 선택하고 **예외 설정** 도구 모음에서 **삭제** 단추(빼기 기호)를 클릭하거나 예외를 마우스 오른쪽 단추로 클릭하고 상황에 맞는 메뉴에서 **삭제** 를 선택하면 됩니다. 예외를 삭제하는 것은 예외를 선택 취소하는 것과 같은 효과를 가집니다. 즉, 해당 예외가 발생해도 디버거가 실행을 중단하지 않습니다.  
@@ -179,12 +179,12 @@ public class GenericException<T> : Exception
   
  **예외 설정** 에 다음과 같이 예외를 추가할 수 있습니다.  
   
- ![adding generic exception](../debugger/media/addgenericexception.png "AddGenericException")  
+ ![일반 예외 추가](../debugger/media/addgenericexception.png "AddGenericException")  
   
-## <a name="see-also"></a>관련 항목:  
- [Continuing Execution After an Exception](../debugger/continuing-execution-after-an-exception.md)   
- [How to: Examine System Code After an Exception](../debugger/how-to-examine-system-code-after-an-exception.md)   
- [How to: Use Native Run-Time Checks](../debugger/how-to-use-native-run-time-checks.md)   
- [Using Run-Time Checks Without the C Run-Time Library](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
- [Exception Assistant](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
+## <a name="see-also"></a>참고 항목  
+ [예외  후 실행을 계속 합니다](../debugger/continuing-execution-after-an-exception.md) .  
+ [방법: 예외 발생 후 시스템 코드 검사](../debugger/how-to-examine-system-code-after-an-exception.md)   
+ [방법: 네이티브 런타임 검사  사용](../debugger/how-to-use-native-run-time-checks.md)  
+ [C 런타임 라이브러리 없이 런타임 검사 사용](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
+ [예외 도우미](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
  [디버거 기본 사항](../debugger/debugger-basics.md)

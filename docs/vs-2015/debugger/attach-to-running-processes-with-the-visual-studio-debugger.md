@@ -1,5 +1,5 @@
 ---
-title: Attach to Running Processes with the Debugger | Microsoft Docs
+title: 디버거를 사용 하 여 실행 중인 프로세스에 연결 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -39,21 +39,21 @@ ms.locfileid: "74299520"
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio 디버거에서 실행 중인 프로세스에 연결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-로컬 또는 원격 컴퓨터에서 실행 중인 프로세스에 Visual Studio 디버거를 연결할 수 있습니다. After the process is running, click **Debug / Attach to Process** (or press **CTRL+ALT+P**) to open the **Attach to Process** dialog box.
+로컬 또는 원격 컴퓨터에서 실행 중인 프로세스에 Visual Studio 디버거를 연결할 수 있습니다. 프로세스를 실행 한 후 **디버그/프로세스에 연결** 을 클릭 하거나 **ctrl + ALT + P**를 눌러 **프로세스에 연결** 대화 상자를 엽니다.
 
-You can use this capability to debug apps that are running on a local or remote computer, debug multiple processes simultaneously, or debug an application that was not created in Visual Studio. It is often useful when you want to debug an app, but (for whatever reason) you did not start the app from Visual Studio with the debugger attached. For example, if you are running the app without the debugger and hit an exception, you might then attach to the process running the app to begin debugging.
+이 기능을 사용 하 여 로컬 또는 원격 컴퓨터에서 실행 중인 앱을 디버그 하거나, 여러 프로세스를 동시에 디버깅 하거나, Visual Studio에서 생성 되지 않은 응용 프로그램을 디버그할 수 있습니다. 응용 프로그램을 디버깅 하려는 경우에도 유용 하지만 디버거가 연결 된 상태에서 Visual Studio에서 앱을 시작 하지 않은 경우가 있습니다. 예를 들어 디버거를 사용 하지 않고 응용 프로그램을 실행 하 고 예외를 발생 하는 경우 응용 프로그램을 실행 하는 프로세스에 연결 하 여 디버깅을 시작할 수 있습니다.
 
 > [!TIP]
-> Not sure whether you need to use **Attach to Process** for your debugging scenario? See [Common debugging scenarios](#BKMK_Scenarios). If you want to debug ASP.NET applications that have been deployed to IIS, see [Remote Debugging ASP.NET on a remote IIS computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md).
+> 디버깅 시나리오에 대 한 **연결에 연결** 을 사용 해야 하는지 여부를 확실히 알 수 있나요? [일반적인 디버깅 시나리오](#BKMK_Scenarios)를 참조 하십시오. IIS에 배포 된 ASP.NET 응용 프로그램을 디버깅 하려는 경우 원격 [iis 컴퓨터의 원격 디버깅 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)을 참조 하세요.
 
-## <a name="BKMK_Attach_to_a_running_process"></a> Attach to a running process on the local machine
- In order to attach to a process, you must know the name of the process (see [Common debugging scenarios](#BKMK_Scenarios) for a few common process names).
+## <a name="BKMK_Attach_to_a_running_process"></a>로컬 컴퓨터에서 실행 중인 프로세스에 연결
+ 프로세스에 연결 하려면 프로세스의 이름을 알아야 합니다 (몇 가지 일반적인 프로세스 이름에 대 한 [일반적인 디버깅 시나리오](#BKMK_Scenarios) 참조).
 
-1. In Visual Studio, select **Debug / Attach to Process** (or press **CTRL+ALT+P**).
+1. Visual Studio에서 **디버그/프로세스에 연결** 을 선택 하거나 **ctrl + ALT + P**를 누릅니다.
 
 2. **프로세스에 연결** 대화 상자의 **사용 가능한 프로세스** 목록에서 연결할 프로그램을 찾습니다.
 
-     To quickly select the process you want, type the first letter of the process name. If you don't know the process name, see [Common debugging scenarios](#BKMK_Scenarios).
+     원하는 프로세스를 신속 하 게 선택 하려면 프로세스 이름의 첫 문자를 입력 합니다. 프로세스 이름을 모르는 경우 [일반적인 디버깅 시나리오](#BKMK_Scenarios)를 참조 하세요.
 
      ![DBG_Basics_Attach_To_Process](../debugger/media/dbg-basics-attach-to-process.png "DBG_Basics_Attach_To_Process")
 
@@ -70,13 +70,13 @@ You can use this capability to debug apps that are running on a local or remote 
 4. **연결**을 클릭합니다.
 
 ## <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> 원격 컴퓨터의 프로세스에 연결
- In order to attach to a process, you must know the name of the process (see [Common debugging scenarios](#BKMK_Scenarios) for a few common process names). For more complete guidance for ASP.NET apps that have been deployed to IIS, see [Remote Debugging ASP.NET on a remote IIS computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). 다른 앱은 작업 관리자에서 프로세스 이름을 찾을 수 있습니다.
+ 프로세스에 연결 하려면 프로세스의 이름을 알아야 합니다 (몇 가지 일반적인 프로세스 이름에 대 한 [일반적인 디버깅 시나리오](#BKMK_Scenarios) 참조). IIS에 배포 된 ASP.NET 앱에 대 한 자세한 지침은 원격 [iis 컴퓨터에서 원격 디버깅 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)을 참조 하세요. 다른 앱은 작업 관리자에서 프로세스 이름을 찾을 수 있습니다.
 
- **프로세스에 연결** 대화 상자를 사용할 때 원격 디버깅용으로 설정된 다른 컴퓨터를 선택할 수 있습니다. For more information, see [Remote Debugging](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c). 원격 컴퓨터를 선택하면 해당 컴퓨터에서 실행되는 사용 가능한 프로세스의 목록을 볼 수 있고 디버깅을 위해 하나 이상의 프로세스에 연결할 수 있습니다.
+ **프로세스에 연결** 대화 상자를 사용할 때 원격 디버깅용으로 설정된 다른 컴퓨터를 선택할 수 있습니다. 자세한 내용은 [원격 디버깅](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)을 참조 하세요. 원격 컴퓨터를 선택하면 해당 컴퓨터에서 실행되는 사용 가능한 프로세스의 목록을 볼 수 있고 디버깅을 위해 하나 이상의 프로세스에 연결할 수 있습니다.
 
- **To select a remote computer:**
+ **원격 컴퓨터를 선택 하려면:**
 
-1. In Visual Studio, select **Debug / Attach to Process** (or press **CTRL+ALT+P**).
+1. Visual Studio에서 **디버그/프로세스에 연결** 을 선택 하거나 **ctrl + ALT + P**를 누릅니다.
 
 2. **프로세스에 연결** 대화 상자의 **전송** 목록에서 적합한 연결 형식을 선택합니다. 대부분의 경우에는**기본값** 이 올바른 설정입니다.
 
@@ -87,11 +87,11 @@ You can use this capability to debug apps that are running on a local or remote 
    1. **한정자** 목록 상자에 이름을 입력합니다.
 
       > [!NOTE]
-      > If, in later steps, you can't connect using the remote computer name, use the IP address. (The port number may appear automatically after selecting the process. You can also enter it manually. In the illustration below, 4020 is the default port for the remote debugger.)
+      > 이후 단계에서 원격 컴퓨터 이름을 사용 하 여 연결할 수 없는 경우 IP 주소를 사용 합니다. 프로세스를 선택한 후 포트 번호가 자동으로 표시 될 수 있습니다. 수동으로 입력할 수도 있습니다. 아래 그림에서 4020는 원격 디버거의 기본 포트입니다.
 
    2. **한정자** 목록 상자 옆에 있는 드롭다운 화살표를 클릭하고 드롭다운 목록에서 컴퓨터 이름을 선택합니다.
 
-   3. Click the **Find** button next to the **Qualifier** list to open the **Select Remote Debugger Connection** dialog box. **원격 디버거 연결 선택** 대화 상자에는 로컬 서브넷에 있는 모든 디바이스와 이더넷 케이블을 통해 컴퓨터에 직접 연결된 모든 디바이스가 나열됩니다. 원하는 컴퓨터 또는 디바이스를 클릭한 다음 **선택**을 클릭합니다.
+   3. **한정자** 목록 옆에 있는 **찾기** 단추를 클릭 하 여 **원격 디버거 연결 선택** 대화 상자를 엽니다. **원격 디버거 연결 선택** 대화 상자에는 로컬 서브넷에 있는 모든 디바이스와 이더넷 케이블을 통해 컴퓨터에 직접 연결된 모든 디바이스가 나열됩니다. 원하는 컴퓨터 또는 디바이스를 클릭한 다음 **선택**을 클릭합니다.
 
       **한정자** 설정은 해당 한정자를 사용하여 디버깅 연결에 성공한 경우에만 디버깅 세션 간에 유지됩니다.
 
@@ -105,7 +105,7 @@ You can use this capability to debug apps that are running on a local or remote 
 
 6. **연결**을 클릭합니다.
 
-## <a name="additional-info"></a>Additional info
+## <a name="additional-info"></a>추가 정보
 
 디버깅하는 동안 여러 프로그램에 연결할 수 있지만 언제든지 디버거에서 활성화되는 프로그램은 한 개뿐입니다. **디버그 위치** 도구 모음이나 **프로세스** 창에서 활성 프로그램을 설정할 수 있습니다. 자세한 내용은 [방법: 현재 프로세스 설정](https://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e)을 참조하세요.
 
@@ -113,25 +113,25 @@ You can use this capability to debug apps that are running on a local or remote 
 
 원격 데스크톱(터미널 서비스) 세션에서 디버그할 때 **사용 가능한 프로세스** 목록에 사용 가능한 프로세스 중 일부가 표시되지 않는 경우가 있습니다. 제한된 사용자 계정의 사용자로 Visual Studio를 실행하는 경우 서비스 및 w3wp.exe를 비롯한 다른 서버 프로세스에 사용되는 세션 0에서 실행되는 프로세스는 **사용 가능한 프로세스** 목록에 표시되지 않습니다. 관리자 계정으로 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 를 실행하거나 터미널 서비스 세션 대신 서버 콘솔에서 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 를 실행하여 이 문제를 해결할 수 있습니다. 이러한 해결 방법을 둘 다 사용할 수 없는 경우 세 번째 방법으로 Windows 명령줄에서 `vsjitdebugger.exe -p` *ProcessId* 를 실행하여 프로세스에 연결합니다. 프로세스 ID는 tlist.exe를 사용하여 확인할 수 있습니다. tlist.exe를 얻으려면  [WDK 및 WinDbg 다운로드](https://go.microsoft.com/fwlink/?LinkId=168279)에서 Debugging Tools for Windows를 다운로드하여 설치합니다.
 
-## <a name="BKMK_Scenarios"></a> Common debugging scenarios
+## <a name="BKMK_Scenarios"></a>일반적인 디버깅 시나리오
 
-To help you identify whether you need to use **Attach to process** and what process to attach to, a few common debugging scenarios are shown here (the list is not exhaustive). Where more instructions are available, we provide links.
+**프로세스에 연결을** 사용 해야 하는지 여부와 연결할 프로세스를 확인 하는 데 도움이 되도록 몇 가지 일반적인 디버깅 시나리오가 여기에 표시 됩니다 (목록은 완전 하지 않음). 추가 지침이 제공 되는 경우 링크를 제공 합니다.
 
-For some app types (like Windows Store apps), you don't attach directly to a process name, but use the **Debug Installed App Package** menu option instead (see table).
+일부 앱 유형 (예: Windows 스토어 앱)의 경우 프로세스 이름에 직접 연결 하지 않고 **설치 된 앱 패키지 디버그** 메뉴 옵션을 대신 사용 합니다 (표 참조).
 
 > [!NOTE]
-> For information about basic debugging in Visual Studio, see [Getting started with the debugger](../debugger/getting-started-with-the-debugger.md).
+> Visual Studio의 기본 디버깅에 대 한 자세한 내용은 [디버거 시작](../debugger/getting-started-with-the-debugger.md)을 참조 하세요.
 
-|시나리오|Debug Method|프로세스 이름|Notes and Links|
+|시나리오|Debug 메서드|프로세스 이름|노트 및 링크|
 |-|-|-|-|
-|Debug a managed or native app on the local machine|Use attach to process or [standard debugging](../debugger/getting-started-with-the-debugger.md)|*appname*.exe|To quickly access the dialog box, use **CTRL+ALT+P** and then type the first letter of the process name.|
-|Debug ASP.NET apps on the local machine after starting the app without the debugger|Use attach to process|iiexpress.exe|This may be helpful to make your app load faster, such as (for example) when profiling. |
-|Remote debug ASP.NET 4 or 4.5 on an IIS server|Use remote tools and attach to process|w3wp.exe|See [Remote Debugging ASP.NET on a remote IIS computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|Remote debug ASP.NET Core on an IIS server|Use remote tools and attach to process|dnx.exe|For app deployment, see [Publish to IIS](https://docs.asp.net/en/latest/publishing/iis.html). For debugging, see [Remote Debugging ASP.NET on a remote IIS computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|Debug other supported app types on a server process|Use remote tools (if server is remote) and attach to process|iexplore.exe or other processes|If necessary, use Task Manager to help identify the process. See [Remote Debugging](../debugger/remote-debugging.md) and later sections in this topic|
-|Remote debug a Windows desktop app|Remote Tools and F5|해당 사항 없음| See [Remote Debugging](../debugger/remote-debugging.md)|
-|Remote debug a Windows Universal (UWP), OneCore, HoloLens, or IoT app|설치된 앱 패키지 디버그|해당 사항 없음|Use **Debug / Other Debug Targets / Debug Installed App Package** instead of **Attach to process**|
-|Debug a Windows Universal (UWP), OneCore, HoloLens, or IoT app that you didn't start from Visual Studio|설치된 앱 패키지 디버그|해당 사항 없음|Use **Debug / Other Debug Targets / Debug Installed App Package** instead of **Attach to process**|
+|로컬 컴퓨터에서 관리 되는 앱 또는 네이티브 앱 디버그|프로세스에 연결 또는 [표준 디버깅](../debugger/getting-started-with-the-debugger.md) 사용|*appname*|대화 상자에 빠르게 액세스 하려면 **CTRL + ALT + P** 를 사용 하 여 프로세스 이름의 첫 문자를 입력 합니다.|
+|디버거를 사용 하지 않고 앱을 시작한 후 로컬 컴퓨터에서 ASP.NET apps 디버그|프로세스에 연결 사용|iiexpress.exe|이렇게 하면 프로 파일링 하는 경우와 같이 앱을 더 빠르게 로드 하는 데 도움이 될 수 있습니다. |
+|IIS 서버에서 원격 디버그 ASP.NET 4 또는 4.5|원격 도구를 사용 하 여 프로세스에 연결|w3wp.exe|원격 [IIS 컴퓨터의 원격 디버깅 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) 을 참조 하세요.|
+|IIS 서버의 원격 디버그 ASP.NET Core|원격 도구를 사용 하 여 프로세스에 연결|dnx.exe|앱 배포의 경우 [IIS에 게시](https://docs.asp.net/en/latest/publishing/iis.html)를 참조 하세요. 디버깅 [은 원격 IIS 컴퓨터의 원격 디버깅 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) 을 참조 하세요.|
+|서버 프로세스에서 지원 되는 다른 앱 유형 디버깅|원격 도구 (서버가 원격 인 경우)를 사용 하 여 프로세스에 연결|iexplore.exe 또는 기타 프로세스|필요한 경우 작업 관리자를 사용 하 여 프로세스를 쉽게 식별할 수 있습니다. 이 항목의 [원격 디버깅](../debugger/remote-debugging.md) 및 이후 섹션을 참조 하십시오.|
+|Windows 데스크톱 응용 프로그램 원격 디버그|원격 도구 및 F5|N/A| [원격 디버깅](../debugger/remote-debugging.md) 을 참조 하세요.|
+|Windows 유니버설 (UWP), OneCore, HoloLens 또는 IoT 앱 원격 디버그|설치된 앱 패키지 디버그|N/A|**프로세스에 연결 하** 는 대신 **디버그/기타 디버그 대상/디버그 설치 된 앱 패키지** 를 사용 합니다.|
+|Visual Studio에서 시작 하지 않은 UWP (Windows 유니버설), OneCore, HoloLens 또는 IoT 앱 디버그|설치된 앱 패키지 디버그|N/A|**프로세스에 연결 하** 는 대신 **디버그/기타 디버그 대상/디버그 설치 된 앱 패키지** 를 사용 합니다.|
 
 > [!WARNING]
 > JavaScript로 작성된 Windows 유니버설 앱에 연결하려면 먼저 앱에 디버깅을 사용하도록 설정해야 합니다. Windows 개발자 센터에서 [Attach the debugger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) 을 참조하세요.
@@ -139,13 +139,13 @@ For some app types (like Windows Store apps), you don't attach directly to a pro
 > [!NOTE]
 > 디버거에서 C++로 작성된 코드에 연결하려면 코드에 `DebuggableAttribute`가 있어야 합니다. 이 특성은 [/ASSEMBLYDEBUG](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) 링커 옵션으로 링크하여 자동으로 코드에 추가할 수 있습니다.
 
-## <a name="what-debugger-features-can-i-use"></a>What debugger features can I use?
+## <a name="what-debugger-features-can-i-use"></a>어떤 디버거 기능을 사용할 수 있나요?
 
-To use the full features of the Visual Studio debugger (like hitting breakpoints) when attaching to a process, the executable must exactly match your local source and symbols (that is, the debugger must be able to load the correct [symbol (.pbd) files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)). By default, this requires a debug build.
+프로세스에 연결할 때 Visual Studio 디버거의 전체 기능 (예: 중단점 적중)을 사용 하려면 실행 파일이 로컬 소스와 기호와 정확히 일치 해야 합니다. 즉, 디버거가 올바른 [기호 (pbd) 파일](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)을 로드할 수 있어야 합니다. 기본적으로이 경우 디버그 빌드가 필요 합니다.
 
-For remote debugging scenarios, you must have the source code (or a copy of the source code) already open in Visual Studio. The compiled app binaries on the remote machine must come from the same build as on the local machine.
+원격 디버깅 시나리오의 경우 Visual Studio에서 이미 열려 있는 소스 코드 (또는 소스 코드의 복사본)가 있어야 합니다. 원격 컴퓨터의 컴파일된 응용 프로그램 이진 파일은 로컬 컴퓨터와 동일한 빌드에서 가져와야 합니다.
 
-In some local debugging scenarios, you can debug in Visual Studio with no access to the source if the correct symbol files are present with the app (by default, this requires a debug build). For more info, see [Specify Symbol and Source Files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+일부 로컬 디버깅 시나리오에서는 응용 프로그램에 올바른 기호 파일이 있는 경우 소스에 액세스 하지 않고 Visual Studio에서 디버그할 수 있습니다. 기본적으로 디버그 빌드가 필요 합니다. 자세한 내용은 [기호 및 소스 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)을 참조 하세요.
 
 ## <a name="BKMK_Troubleshoot_attach_errors"></a> 연결 오류 문제 해결
  실행 중인 프로세스에 디버거를 연결할 때 이 프로세스에는 한 가지 이상의 코드 형식이 포함될 수 있습니다. 디버거가 연결될 수 있는 코드 형식이 **코드 형식 선택** 대화 상자에서 표시되고 선택됩니다.
@@ -158,7 +158,7 @@ In some local debugging scenarios, you can debug in Visual Studio with no access
 
  디버거가 연결되지 않는 특정 코드 형식에만 다시 연결을 시도하면 해당 코드 형식에 디버거가 연결되지 않는 이유를 더 구체적으로 확인할 수 있습니다.
 
- **To obtain specific information about why a code type failed to attach**
+ **코드 형식을 연결 하지 못한 이유에 대 한 특정 정보를 가져오려면**
 
 1. 프로세스에서 분리합니다. **디버그** 메뉴에서 **모두 분리**를 클릭합니다.
 
@@ -176,5 +176,5 @@ In some local debugging scenarios, you can debug in Visual Studio with no access
 
       이렇게 하면 연결이 완전히 실패하고 자세한 오류 메시지가 나타납니다.
 
-## <a name="see-also"></a>관련 항목:
- [Debug Multiple Processes](../debugger/debug-multiple-processes.md) [Just-In-Time Debugging](../debugger/just-in-time-debugging-in-visual-studio.md) [Remote Debugging](../debugger/remote-debugging.md)
+## <a name="see-also"></a>참고 항목
+ [원격 디버깅](../debugger/remote-debugging.md) [을 just-in-time 디버깅](../debugger/just-in-time-debugging-in-visual-studio.md) 하는 [여러 프로세스](../debugger/debug-multiple-processes.md) 디버깅

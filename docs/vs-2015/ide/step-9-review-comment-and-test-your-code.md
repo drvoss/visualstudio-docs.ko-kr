@@ -43,9 +43,9 @@ ms.locfileid: "74299959"
   pictureBox1.Load(openFileDialog1.FileName)
   ```
 
-   문은 특정 작업을 수행하도록 프로그램에 지시합니다. Visual C#에서는 문이 항상 세미콜론으로 끝나고, Visual Basic에서는 줄의 끝이 문의 끝입니다. (No semicolon is needed in Visual Basic.) The preceding statement tells your `PictureBox` control to load the file that the user selected with the **OpenFileDialog** component.
+   문은 특정 작업을 수행하도록 프로그램에 지시합니다. Visual C#에서는 문이 항상 세미콜론으로 끝나고, Visual Basic에서는 줄의 끝이 문의 끝입니다. Visual Basic에는 세미콜론이 필요 하지 않습니다. 위의 문은 사용자가 **OpenFileDialog** 구성 요소를 사용 하 여 선택한 파일을 로드 하도록 `PictureBox` 컨트롤에 지시 합니다.
 
-  ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 5](https://go.microsoft.com/fwlink/?LinkId=205216) or [Tutorial 1: Create a Picture Viewer in C# - Video 5](https://go.microsoft.com/fwlink/?LinkId=205206). 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
+  ![비디오에 연결](../data-tools/media/playvideo.gif "링크 playvideo 보려면") 이 항목의 비디오 버전을 보려면 [자습서 1: Visual Basic에서 사진 뷰어 만들기-비디오 5](https://go.microsoft.com/fwlink/?LinkId=205216) 또는 [자습서 1: 비디오 5에서 C# 사진 뷰어 만들기](https://go.microsoft.com/fwlink/?LinkId=205206)를 참조 하세요. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
 
 ### <a name="to-add-comments"></a>주석을 추가하려면
 
@@ -66,13 +66,13 @@ ms.locfileid: "74299959"
 
 2. 프로그램을 실행하기 전에 다음과 같은 **모두 저장** 도구 모음 단추를 선택하여 프로그램을 저장합니다.
 
-     ![Save All toolbar button](../ide/media/express-iconsaveall.png "Express_IconSaveAll") Save All button
+     ![모두 저장 도구 모음 단추](../ide/media/express-iconsaveall.png "Express_IconSaveAll") 모두 저장 단추
 
      또는 메뉴 모음에서 **파일**, **모두 저장**을 차례로 선택하여 프로그램을 저장합니다. 프로그램은 초기에 자주 저장하는 것이 좋습니다.
 
      실행 중인 프로그램은 다음과 같습니다.
 
-     ![Picture Viewer](../ide/media/express-pictureviewerdonerun.png "Express_PictureViewerDoneRun") Picture Viewer
+     ![사진 뷰어](../ide/media/express-pictureviewerdonerun.png "Express_PictureViewerDoneRun") 사진 뷰어
 
 ### <a name="to-test-your-program"></a>프로그램을 테스트하려면
 

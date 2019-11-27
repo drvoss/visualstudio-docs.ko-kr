@@ -27,17 +27,17 @@ ms.locfileid: "74300003"
 
   IDE에는 코드 작성에 유용한 IntelliSense라는 강력한 도구가 있습니다. 코드 입력을 시작하면 입력한 부분 단어에 대한 완성 단어를 제시하는 상자가 IDE에서 열립니다. IntelliSense는 사용자가 다음에 할 일을 판단하며 목록에서 사용자가 마지막으로 선택한 항목으로 자동으로 이동합니다. 위쪽 또는 아래쪽 화살표를 사용하여 목록에서 이동하거나 문자를 계속 입력하여 선택 범위를 좁힐 수 있습니다. 원하는 선택 항목이 있으면 Tab 키를 선택해서 항목을 선택합니다. 원하는 항목이 없는 경우 제시되는 항목을 무시할 수도 있습니다.
 
-  ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 4](https://go.microsoft.com/fwlink/?LinkId=205215) or [Tutorial 1: Create a Picture Viewer in C# - Video 4](https://go.microsoft.com/fwlink/?LinkId=205203). 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
+  ![비디오에 연결](../data-tools/media/playvideo.gif "링크 playvideo 보려면") 이 항목의 비디오 버전을 보려면 [자습서 1: Visual Basic에서 사진 뷰어 만들기-비디오 4](https://go.microsoft.com/fwlink/?LinkId=205215) 또는 [자습서 1: 비디오 4에서 C# 사진 뷰어 만들기](https://go.microsoft.com/fwlink/?LinkId=205203)를 참조 하세요. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
 
 ### <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>그림 표시 단추 이벤트 처리기를 위한 코드를 작성하려면
 
 1. Windows Forms 디자이너로 이동하여 **사진 표시** 단추를 두 번 클릭합니다. IDE는 즉시 코드 디자이너로 이동하여 사용자가 이전에 추가한 `showButton_Click()` 메서드 내부로 커서를 이동합니다.
 
-2. 두 중괄호 { } 사이의 빈 줄에 `i`를 입력합니다. (In Visual Basic, type on the empty line between Private Sub… and End Sub.) An **IntelliSense** window opens, as shown in the following picture.
+2. 두 중괄호 { } 사이의 빈 줄에 `i`를 입력합니다. (Visual Basic에서 Private Sub 사이에 빈 줄을 입력 합니다. 및 End Sub) 다음 그림과 같이 **IntelliSense** 창이 열립니다.
 
-     ![IntelliSense with Visual C&#35; code](../ide/media/express-ifintellisense.png "Express_IfIntellisense") IntelliSense with Visual C# code
+     ![시각적 코드를 사용&#35; 하는 visual C 코드 intellisense를 사용 하는 intellisense](../ide/media/express-ifintellisense.png "Express_IfIntellisense") C#
 
-3. **IntelliSense** 창에 단어 **if**가 강조 표시됩니다. (If not, enter a lowercase `f`, and it will.) Notice how a little *tooltip* box next to the **IntelliSense** window appears with the description, **Code snippet for if statement**. (In Visual Basic, the tooltip also states that this is a snippet, but with slightly different wording.) You want to use that snippet, so choose the TAB key to insert **if** into your code. 그런 다음 **if** 코드 조각을 사용하려면 Tab 키를 다시 선택합니다. 다른 곳을 선택하여 **IntelliSense** 창이 사라진 경우 백스페이스로 **i**를 지우고 다시 입력하면 **IntelliSense** 창이 다시 열립니다.
+3. **IntelliSense** 창에 단어 **if**가 강조 표시됩니다. (그렇지 않은 경우 소문자 `f`입력 하면 됩니다.) **IntelliSense** 창 옆에 작은 *도구 설명* 상자가 표시 되는 방법에 대해 설명 하 고 **if 문에 대 한 코드 조각**입니다. Visual Basic 도구 설명에도 코드 조각이 포함 되어 있지만 약간 다른 표현을 포함 하 고 있습니다. 해당 코드 조각을 사용 하려면 TAB 키를 선택 하 여 **if** 를 코드에 삽입 합니다. 그런 다음 **if** 코드 조각을 사용하려면 Tab 키를 다시 선택합니다. 다른 곳을 선택하여 **IntelliSense** 창이 사라진 경우 백스페이스로 **i**를 지우고 다시 입력하면 **IntelliSense** 창이 다시 열립니다.
 
      ![Visual C&#35; 코드](../ide/media/express-highlighttrue.png "Express_HighlightTrue") Visual C# 코드
 
@@ -49,16 +49,16 @@ ms.locfileid: "74300003"
 
          `OpenFileDialog`에 대한 자세한 내용은 [OpenFileDialog](https://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx)를 참조하세요.
 
-    3. Type a period (`.`) (Many programmers call this a dot.) Because you typed a dot right after **openFileDialog1**, an **IntelliSense** window opens, filled in with all of the **OpenFileDialog** component's properties and methods. 이 속성은 Windows Forms 디자이너에서 선택할 경우 **속성** 창에 표시되는 것과 같습니다. 또한 구성 요소에 대화 상자 열기와 같은 작업을 지시할 수 있는 메서드를 선택할 수도 있습니다.
+    3. 마침표 (`.`)를 입력 합니다. 많은 프로그래머는이 점을 호출 합니다. **OpenFileDialog1**바로 뒤에 점을 입력 했으므로 **IntelliSense** 창이 열리고 모든 **OpenFileDialog** 구성 요소의 속성 및 메서드가 함께 채워집니다. 이 속성은 Windows Forms 디자이너에서 선택할 경우 **속성** 창에 표시되는 것과 같습니다. 또한 구성 요소에 대화 상자 열기와 같은 작업을 지시할 수 있는 메서드를 선택할 수도 있습니다.
 
         > [!NOTE]
         > **IntelliSense** 창에는 속성과 메서드가 모두 표시될 수 있습니다. 표시되는 항목을 확인하려면 **IntelliSense** 창의 각 항목 왼쪽에 있는 아이콘을 봅니다. 각 메서드 옆에는 벽돌 그림이, 각 속성 옆에는 렌치(또는 스패너) 그림이 표시됩니다. 또한 각 이벤트 옆에는 번개 모양 아이콘이 표시됩니다. 이러한 그림은 다음과 같습니다.
 
-         ![Method icon](../ide/media/express-iconmethod.png "Express_IconMethod") Method icon
+         ![메서드 아이콘](../ide/media/express-iconmethod.png "Express_IconMethod") 메서드 아이콘
 
-         ![Property icon](../ide/media/express-iconproperty.png "Express_IconProperty") Property icon
+         ![속성 아이콘](../ide/media/express-iconproperty.png "Express_IconProperty") 속성 아이콘
 
-         ![Event icon](../ide/media/express-iconevent.png "Express_IconEvent") Event icon
+         ![이벤트 아이콘](../ide/media/express-iconevent.png "Express_IconEvent") 이벤트 아이콘
 
     4. `ShowDialog` 입력을 시작합니다(IntelliSense에서 대문자 표시는 중요하지 않음). `ShowDialog()` 메서드에서 **파일 열기** 대화 상자를 표시합니다. 창에서 **ShowDialog**가 강조 표시된 후 Tab 키를 선택합니다. 또한 “ShowDialog”를 강조 표시하고 F1 키를 선택하여 도움말을 표시할 수도 있습니다.
 

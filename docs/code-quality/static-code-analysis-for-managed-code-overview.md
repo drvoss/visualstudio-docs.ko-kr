@@ -26,15 +26,15 @@ Visual Studio는 [레거시 분석](../code-quality/walkthrough-analyzing-manage
 분석 도구는 분석하는 동안 수행하는 검사를 경고 메시지로 나타냅니다. 경고 메시지는 관련 프로그래밍 및 디자인 문제를 식별하며 가능한 경우 문제 해결 방법에 대한 정보를 제공합니다.
 
 > [!NOTE]
-> Visual Studio에서 .NET Core 및 .NET Standard 프로젝트에 대 한 레거시 분석 (정적 코드 분석)은 지원 되지 않습니다. Msbuild의 일부로 .NET Core 또는 .NET Standard 프로젝트에 대해 코드 분석을 실행 하는 경우 **error와 유사한 오류가 표시 됩니다. CA0055 : @No__t에 대 한 플랫폼을 식별할 수 없습니다. >** 입니다. .NET Core 또는 .NET Standard 프로젝트에서 코드를 분석 하려면 대신 [코드 분석기](../code-quality/roslyn-analyzers-overview.md) 를 사용 합니다.
+> Visual Studio에서 .NET Core 및 .NET Standard 프로젝트에 대 한 레거시 분석 (정적 코드 분석)은 지원 되지 않습니다. Msbuild의 일부로 .NET Core 또는 .NET Standard 프로젝트에 대해 코드 분석을 실행 하는 경우 다음과 유사한 오류가 표시 됩니다. **CA0055: .dll > \<에 대 한 플랫폼을 식별할 수**없습니다. .NET Core 또는 .NET Standard 프로젝트에서 코드를 분석 하려면 대신 [코드 분석기](../code-quality/roslyn-analyzers-overview.md) 를 사용 합니다.
 
 ## <a name="ide-integrated-development-environment-integration"></a>IDE(통합 개발 환경) 통합
 
 프로젝트에서 수동으로 또는 자동으로 코드 분석을 실행할 수 있습니다.
 
-프로젝트를 빌드할 때마다 코드 분석을 실행 하려면 프로젝트의 **코드 분석** 속성 페이지에서 옵션을 선택 합니다. 자세한 내용은 [방법: 자동 코드 분석 사용 설정 및 해제](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)를 참조하세요.
+프로젝트를 빌드할 때마다 코드 분석을 실행 하려면 프로젝트의 **코드 분석** 속성 페이지에서 옵션을 선택 합니다. 자세한 내용은 [방법: 자동 코드 분석 사용 및 사용 안 함](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)을 참조 하세요.
 
-프로젝트에서 수동으로 코드 분석을 실행 하려면 메뉴 모음에서 **분석** > **코드 분석 실행** >  **\< 프로젝트 >에서 코드 분석 실행**을 선택 합니다.
+프로젝트에서 수동으로 코드 분석을 실행 하려면 메뉴 모음에서 **분석** > **코드 분석 실행** 을 선택 하 >  **\<프로젝트 >에 대해 코드 분석 실행**을 선택 합니다.
 
 ## <a name="rule-sets"></a>규칙 집합
 
@@ -59,7 +59,7 @@ Public class MyClass
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> 프로젝트를 Visual Studio 2017로 마이그레이션하는 경우 많은 수의 코드 분석 경고가 발생 했을 수 있습니다. 경고를 수정할 준비가 되지 않은 경우 @no__t **분석**을 선택 하 여**코드 분석을 실행 하 고 활성 문제를 표시**하지 않도록 설정 하 여 모든 경고를 표시 하지 않을 수 있습니다.
+> 프로젝트를 Visual Studio 2017로 마이그레이션하는 경우 많은 수의 코드 분석 경고가 발생 했을 수 있습니다. 경고를 수정할 준비가 되지 않은 경우 > **분석** 을 선택 하 여 **코드 분석을 실행 하 고 활성 문제를 표시**하지 않도록 하 여 모든 경고를 표시 하지 않을 수 있습니다.
 >
 > ![Visual Studio에서 코드 분석을 실행 하 고 문제를 표시 하지 않습니다.](media/suppress-active-issues.png)
 
@@ -68,7 +68,7 @@ Public class MyClass
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> 프로젝트를 Visual Studio 2019로 마이그레이션하는 경우 많은 수의 코드 분석 경고가 발생 했을 수 있습니다. 경고를 해결할 준비가 되지 않은 경우- **1 @no__t** **빌드를 선택 하 고 활성 문제를 표시**하지 않도록 설정 하 여 모든 경고를 표시 하지 않을 수 있습니다.
+> 프로젝트를 Visual Studio 2019로 마이그레이션하는 경우 많은 수의 코드 분석 경고가 발생 했을 수 있습니다. 경고를 해결할 준비가 되지 않은 경우 > **분석** 을 선택 하 **고 활성 문제를 표시 하지 않도록**설정 하 여 모든 경고를 표시 하지 않을 수 있습니다.
 
 ::: moniker-end
 
@@ -84,9 +84,9 @@ Public class MyClass
 
 ## <a name="team-build-integration"></a>팀 빌드 통합
 
-빌드 시스템의 통합된 기능을 사용하여 빌드 프로세스의 일부로 분석 도구를 실행할 수 있습니다. 자세한 내용은 [Azure 파이프라인](/azure/devops/pipelines/index?view=vsts)을 참조합니다.
+빌드 시스템의 통합된 기능을 사용하여 빌드 프로세스의 일부로 분석 도구를 실행할 수 있습니다. 자세한 내용은 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [.NET Compiler Platform 기반 분석기 개요](../code-quality/roslyn-analyzers-overview.md)
 - [규칙 집합을 사용하여 코드 분석 규칙 그룹화](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)

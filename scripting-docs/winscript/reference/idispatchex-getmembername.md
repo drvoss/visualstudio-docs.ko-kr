@@ -38,7 +38,7 @@ HRESULT GetMemberName(
   
 #### <a name="parameters"></a>매개 변수  
  `id`  
- 멤버를 식별합니다. @No__t_0 또는 `GetNextDispID`를 사용 하 여 디스패치 식별자를 가져옵니다.  
+ 멤버를 식별합니다. `GetDispID` 또는 `GetNextDispID`를 사용 하 여 디스패치 식별자를 가져옵니다.  
   
  `pbstrName`  
  멤버의 이름을 받는 `BSTR` 주소입니다. 호출 응용 프로그램은이 값을 해제 해야 합니다.  
@@ -48,7 +48,7 @@ HRESULT GetMemberName(
   
 |||  
 |-|-|  
-|`S_OK`|성공할.|  
+|`S_OK`|명령 실행 성공|  
 |`DISP_E_UNKNOWNNAME`|이름을 알 수 없습니다.|  
   
 ## <a name="example"></a>예제  
@@ -74,7 +74,7 @@ HRESULT hr;
    }  
 ```  
   
-## <a name="see-also"></a>참조  
- [IDispatchEx 인터페이스](../../winscript/reference/idispatchex-interface.md)    
- [IDispatchEx:: GetDispID](../../winscript/reference/idispatchex-getdispid.md)    
+## <a name="see-also"></a>참고 항목  
+ [IDispatchEx 인터페이스](../../winscript/reference/idispatchex-interface.md)   
+ [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

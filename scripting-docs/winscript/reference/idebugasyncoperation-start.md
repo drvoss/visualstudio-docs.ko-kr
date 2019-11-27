@@ -40,7 +40,7 @@ HRESULT Start(
  이 작업의 상태 이벤트를 수신 하는 콜백 인터페이스입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드는 `HRESULT`를 반환 합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
+ 이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
   
 |값|설명|  
 |-----------|-----------------|  
@@ -50,8 +50,8 @@ HRESULT Start(
 ## <a name="remarks"></a>주의  
  이 메서드는 `IDebugSyncOperation::GetTargetThread`에서 가져온 스레드에서 `IDebugSyncOperation::Execute`를 비동기적으로 호출 합니다. 이 메서드는 디버거 스레드 내 에서만 호출 해야 합니다. 그렇지 않으면 작업이 완료 될 때까지 반환 되지 않습니다.  
   
-## <a name="see-also"></a>참조  
- [IDebugAsyncOperation:: Abort](../../winscript/reference/idebugasyncoperation-abort.md)    
- [IDebugAsyncOperation 인터페이스](../../winscript/reference/idebugasyncoperation-interface.md)    
- [IDebugSyncOperation:: Execute](../../winscript/reference/idebugsyncoperation-execute.md)    
+## <a name="see-also"></a>참고 항목  
+ [IDebugAsyncOperation::Abort](../../winscript/reference/idebugasyncoperation-abort.md)   
+ [IDebugAsyncOperation 인터페이스](../../winscript/reference/idebugasyncoperation-interface.md)   
+ [IDebugSyncOperation::Execute](../../winscript/reference/idebugsyncoperation-execute.md)   
  [IDebugSyncOperation::GetTargetThread](../../winscript/reference/idebugsyncoperation-gettargetthread.md)

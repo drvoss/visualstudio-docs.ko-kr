@@ -41,10 +41,10 @@ HRESULT onDebuggerEvent(
  진행 개체에 대 한 인터페이스 식별자입니다.  
   
  `punk`  
- 진행 @No__t_0에서 정의 된 인터페이스를 구현 하는 이벤트 개체입니다.  
+ 진행 `riid`에서 정의 된 인터페이스를 구현 하는 이벤트 개체입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드는 `HRESULT`를 반환 합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
+ 이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
   
 |값|설명|  
 |-----------|-----------------|  
@@ -52,12 +52,12 @@ HRESULT onDebuggerEvent(
 |`E_NOTIMPL`|메서드가 현재 구현 되어 있지 않습니다.|  
   
 ## <a name="remarks"></a>주의  
- @No__t_0의 의미 체계는 완전히 응용 프로그램/디버거 정의 됩니다.  
+ `IUnknown`의 의미 체계는 완전히 응용 프로그램/디버거 정의 됩니다.  
   
  이 메서드는 디버거 모델의 사용자 지정 확장을 허용 합니다. 현재는 구현 되어 있지 않습니다.  
   
  이 메서드는 `IDebugApplication::FireDebuggerEvent`가 호출 될 때 호출 됩니다.  
   
-## <a name="see-also"></a>참조  
- [Iapplicationdebugger 인터페이스](../../winscript/reference/iapplicationdebugger-interface.md)    
+## <a name="see-also"></a>참고 항목  
+ [Iapplicationdebugger 인터페이스](../../winscript/reference/iapplicationdebugger-interface.md)   
  [IDebugApplication::FireDebuggerEvent](../../winscript/reference/idebugapplication-firedebuggerevent.md)

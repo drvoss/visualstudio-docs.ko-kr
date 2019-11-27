@@ -1,5 +1,5 @@
 ---
-title: Samples | Microsoft Docs
+title: 샘플 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,7 +18,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74296846"
 ---
-# <a name="visual-studio-samples"></a>Visual Studio Samples
+# <a name="visual-studio-samples"></a>Visual Studio 샘플
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [MSDN 코드 갤러리](https://go.microsoft.com/fwlink/?LinkID=127810) 웹 사이트에서 Visual Studio 샘플을 확인할 수 있습니다.
@@ -41,5 +41,5 @@ ms.locfileid: "74296846"
 |[Office 개발 샘플](https://docs.microsoft.com/samples/browse/?products=office)|Visual Studio에서 Office 개발 도구를 사용하는 방법을 보여 줍니다. 최신 샘플은 [MSDN 개발자 샘플: 코드 살펴보기](https://go.microsoft.com/fwlink/?LinkID=248199)를 참조하세요.|
 |[VSSDK 샘플](https://aka.ms/vs2015sdksamples)|Visual Studio를 확장하는 방법을 보여 줍니다.|
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [Visual C# 및 Visual Basic 시작](../ide/getting-started-with-visual-csharp-and-visual-basic.md)

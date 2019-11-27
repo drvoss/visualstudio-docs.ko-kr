@@ -51,10 +51,10 @@ ms.locfileid: "74295700"
   
  ![메모리 사용량 개요 페이지](../profiling/media/memuse-reportoverview.png "MEMUSE__ReportOverview")  
   
- 이 타임라인 그래프에는 앱을 실행할 때 앱의 메모리 변동 사항이 표시됩니다. 그래프에 스파이크가 있으면 일반적으로 일부 코드에서 데이터를 수집하거나 생성한 다음 처리가 완료되면 삭제함을 나타냅니다. 큰 스파이크는 최적화할 수 있는 영역을 나타냅니다. 비효율적인 메모리 사용량 또는 메모리 누수를 나타낼 수 있기 때문에 더욱 걱정스러운 점은 되돌릴 수 없는 메모리 사용량이 증가하는 문제입니다.  
+ 이 타임라인 그래프에는 앱을 실행할 때 앱의 메모리 변동 사항이 표시됩니다. 그래프에 스파이크가 있으면 일반적으로 일부 코드에서 데이터를 수집하거나 생성한 다음 처리가 완료되면 삭제함을 나타냅니다. 큰 스파이크는 최적화할 수 있는 영역을 나타냅니다. 비효율적인 메모리 사용 또는 메모리 누수를 나타낼 수 있기 때문에 더욱 걱정스러운 점은 메모리 사용량이 증가하여 되돌릴 수 없다는 점입니다.  
   
 ### <a name="BKMK_Close_a_monitoring_session"></a> 모니터링 세션 닫기  
- ![Stop collection](../profiling/media/memuse-stopcollection.png "MEMUSE__StopCollection")  
+ ![수집 중지](../profiling/media/memuse-stopcollection.png "MEMUSE__StopCollection")  
   
  보고서를 생성하지 않고 모니터링 세션을 중지하려면 진단 창을 닫기만 하면 됩니다. 메모리 스냅샷을 만들 때 보고서를 생성하려면 **중지**를 선택합니다.  
   
@@ -64,12 +64,12 @@ ms.locfileid: "74295700"
  스냅샷을 수집하려면 새로운 진단 세션을 시작합니다. 메모리 데이터를 캡처하려는 경우 **스냅샷 만들기**를 선택합니다. 보고서를 생성하려면 **중지**를 선택합니다.  
   
 ## <a name="BKMK_Memory_Usage_overview_page"></a> 메모리 사용량 개요 페이지  
- 데이터 컬렉션을 중지한 후 메모리 사용량 도구에서 앱을 중지하고 개요 보고서를 표시합니다.  
+ 데이터 수집을 중지한 후 메모리 사용량 도구에서 앱을 중지하고 개요 보고서를 표시합니다.  
   
  ![메모리 사용량 개요 페이지](../profiling/media/memuse-reportoverview.png "MEMUSE__ReportOverview")  
   
 ### <a name="BKMK_Memory_Usage_snapshot_views"></a> 메모리 사용량 스냅샷 뷰  
- 스냅샷 뷰를 사용하여 새 Visual Studio 창에서 자세한 보고서를 엽니다. 다음과 같은 두 종류의 스냅샷 뷰가 있습니다.  
+ 스냅숏 뷰를 사용하여 새 Visual Studio 창에서 자세한 보고서를 엽니다. 다음과 같은 두 종류의 스냅숏 뷰가 있습니다.  
   
 - [스냅샷 정보 보고서](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_details_reports)에서는 한 스냅샷의 형식 및 인스턴스를 보여 줍니다.  
   
@@ -77,7 +77,7 @@ ms.locfileid: "74295700"
   
   ![스냅샷 보기 링크](../profiling/media/memuse-snapshotview-numbered.png "MEMUSE__SnapshotView_Numbered")  
   
-  스냅샷 뷰 그림에서 번호가 있는 항목은 메모리 사용량 보고서 뷰를 여는 링크입니다.  
+  스냅숏 뷰 그림에서 번호가 있는 항목은 메모리 사용량 보고서 뷰를 여는 링크입니다.  
   
 |||  
 |-|-|  
@@ -108,23 +108,23 @@ ms.locfileid: "74295700"
  쉽게 식별할 수 없는 형식이 있거나 이러한 형식이 코드와 어떻게 관련되는지 모르는 경우 개체의 소유권 체인과 관련되어 있기 때문에 메모리 사용량 도구에서 표시하는 .NET 프레임워크, 운영 체제 또는 컴파일러의 개체일 수 있습니다.  
   
 ### <a name="BKMK_Report_tree_filters_"></a> 보고서 트리 필터  
- 대다수 앱에는 굉장히 다양한 유형이 있는데, 이 중 대부분의 유형에는 앱 개발자가 거의 관심을 두지 않습니다. **메모리 사용량** 도구는 **관리되는 힙**과 **루트 경로** 트리에서 이러한 형식을 대부분 숨기는 데 사용할 수 있는 필터 두 개를 정의합니다. 또한 유형 이름별로 트리를 필터링할 수도 있습니다.  
+ 대다수 앱에는 굉장히 다양한 형식이 있는데, 이 중 대부분의 형식에는 앱 개발자가 거의 관심을 두지 않습니다. **메모리 사용량** 도구는 **관리되는 힙**과 **루트 경로** 트리에서 이러한 형식을 대부분 숨기는 데 사용할 수 있는 필터 두 개를 정의합니다. 또한 형식 이름별로 트리를 필터링할 수도 있습니다.  
   
  ![옵션 정렬 및 필터링](../profiling/media/memuse-sortandfilter.png "MEMUSE_SortAndFilter")  
   
 #### <a name="BKMK_Filter"></a> 필터  
- **필터** 상자에 문자열을 입력하여 지정한 텍스트가 포함된 형식으로 트리 표시를 제한합니다. 필터는 대/소문자를 구분하지 않고 유형 이름의 모든 부분에서 지정한 문자열을 인식합니다.  
+ **필터** 상자에 문자열을 입력하여 지정한 텍스트가 포함된 형식으로 트리 표시를 제한합니다. 필터는 대/소문자를 구분하지 않고 형식 이름의 모든 부분에서 지정한 문자열을 인식합니다.  
   
 #### <a name="BKMK_Collapse_Small_Objects"></a> 작은 개체 축소  
  이 필터를 적용하면 **크기(바이트)** 가 총 스냅샷 메모리 크기의 0.5%보다 작은 형식이 **관리되는 힙** 목록에서 숨겨집니다.  
   
 #### <a name="BKMK_Just_My_Code"></a> 내 코드만  
- **내 코드만** 필터는 외부 코드로 생성된 인스턴스를 대부분 숨깁니다. 외부 유형은 운영 체제 또는 프레임워크 구성 요소에서 소유하거나 컴파일러에서 생성합니다.  
+ **내 코드만** 필터는 외부 코드로 생성된 인스턴스를 대부분 숨깁니다. 외부 형식은 운영 체제 또는 프레임워크 구성 요소에서 소유하거나 컴파일러에서 생성합니다.  
   
 ## <a name="BKMK_Snapshot_details_reports"></a> 스냅샷 정보 보고서  
- 스냅샷 정보 보고서를 사용하여 진단 세션에서 스냅샷 하나에만 집중합니다. 정보 보고서를 열려면 다음 그림과 같이 스냅샷 뷰에서 링크 중 하나를 선택합니다. 두 링크 모두 동일한 보고서를 열지만, 보고서에서 **관리되는 힙** 트리의 시작 정렬 순서만 다릅니다. 두 경우 모두 보고서를 열고 나서 정렬 순서를 변경할 수 있습니다.  
+ 스냅숏 정보 보고서를 사용하여 진단 세션에서 스냅숏 하나에만 집중합니다. 정보 보고서를 열려면 다음 그림과 같이 스냅샷 뷰에서 링크 중 하나를 선택합니다. 두 링크 모두 동일한 보고서를 열지만, 보고서에서 **관리되는 힙** 트리의 시작 정렬 순서만 다릅니다. 두 경우 모두 보고서를 열고 나서 정렬 순서를 변경할 수 있습니다.  
   
- ![Links to snapshot report in a snapshot view](../profiling/media/memuse-snapshotview-snapshotdetailslinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
+ ![스냅숏 뷰의 스냅숏 보고서에 대 한 링크](../profiling/media/memuse-snapshotview-snapshotdetailslinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
   
 - **MB** 링크는 **포함 크기(바이트)** 열을 기준으로 보고서를 정렬합니다.  
   
@@ -138,32 +138,32 @@ ms.locfileid: "74295700"
 |||  
 |-|-|  
 |**개체 형식**|유형 이름 또는 개체 인스턴스입니다.|  
-|**Count**|유형의 개체 인스턴스 수입니다. 인스턴스의 경우 이 숫자는 항상 1입니다.|  
-|**크기(바이트)**|유형의 경우 인스턴스에 포함된 개체 크기를 제외한 메모리 스냅샷 유형의 모든 인스턴스 크기입니다.<br /><br /> 인스턴스의 경우 인스턴스에 포함된 개체 크기를 제외한 개체 크기입니다.|  
-|**포함 크기(바이트)**|포함된 개체 크기를 비롯한 유형의 인스턴스 크기 또는 단일 인스턴스 크기입니다.|  
+|**Count**|형식의 개체 인스턴스 수입니다. 인스턴스의 경우 이 숫자는 항상 1입니다.|  
+|**크기(바이트)**|형식의 경우 인스턴스에 포함된 개체 크기를 제외한 메모리 스냅숏에 있는 형식의 모든 인스턴스 크기입니다.<br /><br /> 인스턴스의 경우 인스턴스에 포함된 개체 크기를 제외한 개체 크기입니다.|  
+|**포함 크기(바이트)**|포함된 개체 크기를 비롯한 형식의 인스턴스 크기 또는 단일 인스턴스 크기입니다.|  
   
 ### <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> 루트 경로 트리(스냅샷 정보)  
  **루트 경로 트리**는 형식 또는 인스턴스를 참조하는 개체의 체인을 보여 줍니다. .NET Framework 가비지 수집기는 개체에 대한 모든 참조가 해제된 경우에만 개체에 대한 메모리를 정리합니다.  
   
- ![Paths to Root tree for Types](../profiling/media/memuse-snapshotdetails-type-pathstoroottree.png "MEMUSE_SnapshotDetails_Type_PathsToRootTree")  
+ ![형식에 대 한 루트 트리 경로](../profiling/media/memuse-snapshotdetails-type-pathstoroottree.png "MEMUSE_SnapshotDetails_Type_PathsToRootTree")  
   
  **루트 경로** 트리에서 형식을 보면 해당 형식을 참조하는 형식의 개체 수가 **참조 개수** 열에 표시됩니다. 인스턴스를 분석할 때에는 이 열이 나타나지 않습니다.  
   
 ### <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> 참조된 개체 트리(스냅샷 정보)  
  **참조된 개체** 트리는 선택한 형식 또는 인스턴스가 참조하는 개체를 보여 줍니다.  
   
- ![Referenced Objjects tree for instances](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
+ ![인스턴스에 대 한 참조 된 인스턴스에 트리](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
 |||  
 |-|-|  
 |**개체 형식/인스턴스**|유형 이름 또는 개체 인스턴스입니다.|  
-|**크기(바이트)**|유형의 경우 유형에 포함된 개체 크기를 제외한 유형의 모든 인스턴스 크기입니다.<br /><br /> 인스턴스의 경우 개체에 포함된 개체 크기를 제외한 개체 크기입니다.|  
-|**포함 크기(바이트)**|포함된 개체의 크기를 비롯한 유형의 총 인스턴스 크기 또는 단일 인스턴스 크기입니다.|  
+|**크기(바이트)**|형식의 경우 형식에 포함된 개체 크기를 제외한 형식의 모든 인스턴스 크기입니다.<br /><br /> 인스턴스의 경우 개체에 포함된 개체 크기를 제외한 개체 크기입니다.|  
+|**포함 크기(바이트)**|포함된 개체의 크기를 비롯한 형식의 총 인스턴스 크기 또는 단일 인스턴스 크기입니다.|  
   
 ## <a name="BKMK_Snapshot_difference__diff__reports"></a> 스냅샷 차이(diff) 보고서  
- 스냅샷 차이(diff) 보고서는 기본 스냅샷과 기본 스냅샷 바로 직전에 만든 스냅샷 간의 변경 사항을 보여 줍니다. 차이 보고서를 열려면 다음 그림과 같이 스냅샷 뷰에서 링크 중 하나를 선택합니다. 두 링크 모두 동일한 보고서를 열지만, 보고서에서 **관리되는 힙** 트리의 시작 정렬 순서만 다릅니다. 보고서를 연 후 정렬 순서를 변경할 수 있습니다.  
+ 스냅숏 차이(diff) 보고서는 기본 스냅숏과 기본 스냅숏 바로 직전에 만든 스냅숏 간의 변경 사항을 보여 줍니다. 차이 보고서를 열려면 다음 그림과 같이 스냅샷 뷰에서 링크 중 하나를 선택합니다. 두 링크 모두 동일한 보고서를 열지만, 보고서에서 **관리되는 힙** 트리의 시작 정렬 순서만 다릅니다. 보고서를 연 후 정렬 순서를 변경할 수 있습니다.  
   
- ![Links to difference report in a snapshot view](../profiling/media/memuse-snapshotview-snapshotdifflinks.png "MEMUSE_SnapshotView_SnapshotDiffLinks")  
+ ![스냅숏 뷰의 차이점 보고서에 대 한 링크](../profiling/media/memuse-snapshotview-snapshotdifflinks.png "MEMUSE_SnapshotView_SnapshotDiffLinks")  
   
 - **MB** 링크는 **포함 크기(바이트)** 열을 기준으로 보고서를 정렬합니다.  
   
@@ -179,30 +179,30 @@ ms.locfileid: "74295700"
 |||  
 |-|-|  
 |**개체 형식**|유형 이름 또는 개체 인스턴스입니다.|  
-|**Count**|기본 스냅샷에 있는 유형의 인스턴스 수입니다. 인스턴스의 경우 **개수**는 항상 1입니다.|  
-|**개수 차이**|유형의 경우 기본 스냅샷과 이전 스냅샷 간 유형의 인스턴스 수 차이입니다. 인스턴스의 경우 이 필드는 비어 있습니다.|  
-|**크기(바이트)**|개체에 포함된 개체의 크기를 제외한 기본 스냅샷의 개체 크기입니다. 형식의 경우 **크기(바이트)** 및 **포함 크기(바이트)** 는 형식 인스턴스의 총 크기입니다.|  
-|**총 크기 차이(바이트)**|유형의 경우 인스턴스에 포함된 개체 크기를 제외한 기본 스냅샷과 이전 스냅샷 간 유형의 총 인스턴스 크기의 차이를 나타냅니다. 인스턴스의 경우 이 필드는 비어 있습니다.|  
-|**포함 크기(바이트)**|개체에 포함된 개체의 크기를 비롯한 기본 스냅샷의 개체 크기입니다.|  
-|**포함 크기 차이(바이트)**|유형의 경우 개체에 포함된 개체 크기를 비롯한 기본 스냅샷과 이전 스냅샷 간 유형의 모든 인스턴스 크기 차이를 나타냅니다. 인스턴스의 경우 이 필드는 비어 있습니다.|  
+|**Count**|기본 스냅숏에 있는 형식의 인스턴스 수입니다. 인스턴스의 경우 **개수**는 항상 1입니다.|  
+|**개수 차이**|형식의 경우 기본 스냅숏과 이전 스냅숏 간 형식의 인스턴스 수 차이입니다. 인스턴스의 경우 이 필드는 비어 있습니다.|  
+|**크기(바이트)**|개체에 포함된 개체의 크기를 제외한 기본 스냅숏에 있는 개체의 크기입니다. 형식의 경우 **크기(바이트)** 및 **포함 크기(바이트)** 는 형식 인스턴스의 총 크기입니다.|  
+|**총 크기 차이(바이트)**|형식의 경우 인스턴스에 포함된 개체 크기를 제외한 기본 스냅숏과 이전 스냅숏 간 형식의 총 인스턴스 크기의 차이를 나타냅니다. 인스턴스의 경우 이 필드는 비어 있습니다.|  
+|**포함 크기(바이트)**|개체에 포함된 개체의 크기를 비롯한 기본 스냅숏에 있는 개체의 크기입니다.|  
+|**포함 크기 차이(바이트)**|형식의 경우 개체에 포함된 개체 크기를 비롯한 기본 스냅숏과 이전 스냅숏 간 형식의 모든 인스턴스 크기 차이를 나타냅니다. 인스턴스의 경우 이 필드는 비어 있습니다.|  
   
 ### <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> 루트 경로 트리(스냅샷 차이)  
  **루트 경로 트리**는 형식 또는 인스턴스를 참조하는 개체의 체인을 보여 줍니다. .NET Framework 가비지 수집기는 개체에 대한 모든 참조가 해제된 경우에만 개체에 대한 메모리를 정리합니다.  
   
- ![Paths To Root tree for instances in a diff view](../profiling/media/memuse-snapshotdiff-pathstoroot-instance-all.png "MEMUSE_SnapshotDiff_PathsToRoot_Instance_All")  
+ ![Diff 뷰의 인스턴스에 대 한 루트 트리 경로](../profiling/media/memuse-snapshotdiff-pathstoroot-instance-all.png "MEMUSE_SnapshotDiff_PathsToRoot_Instance_All")  
   
 ### <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> 참조된 개체 트리(스냅샷 차이)  
  **참조된 개체** 트리는 기본 형식 또는 인스턴스가 참조하는 개체를 보여 줍니다.  
   
- ![Referenced Objjects tree for instances](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
+ ![인스턴스에 대 한 참조 된 인스턴스에 트리](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
 |||  
 |-|-|  
 |**개체 형식/인스턴스**|유형 이름 또는 개체 인스턴스입니다.|  
-|**크기(바이트)**|인스턴스의 경우 인스턴스에 포함된 개체 크기를 제외한 기본 스냅샷의 개체 크기입니다.<br /><br /> 유형의 경우 인스턴스에 포함된 개체 크기를 제외한 기본 스냅샷에 있는 유형의 총 인스턴스 크기입니다.|  
-|**포함 크기(바이트)**|개체에 포함된 개체의 크기를 비롯한 기본 스냅샷의 개체 크기입니다.|  
+|**크기(바이트)**|인스턴스의 경우 인스턴스에 포함된 개체 크기를 제외한 기본 스냅숏에 있는 개체의 크기입니다.<br /><br /> 유형의 경우 인스턴스에 포함된 개체 크기를 제외한 기본 스냅샷에 있는 유형의 총 인스턴스 크기입니다.|  
+|**포함 크기(바이트)**|개체에 포함된 개체의 크기를 비롯한 기본 스냅숏에 있는 개체의 크기입니다.|  
   
-## <a name="see-also"></a>관련 항목:  
+## <a name="see-also"></a>참고 항목  
  [JavaScript 메모리](../profiling/javascript-memory.md)   
  [앱 성능 분석](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
  [성능 및 진단 도구 실행](https://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   

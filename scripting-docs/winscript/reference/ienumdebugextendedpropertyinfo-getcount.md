@@ -40,8 +40,8 @@ HRESULT GetCount (
  제한이 열거자에 `ExtendedDebugPropertyInfo` 구조체의 수를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 유효한 `HRESULT` (일반적으로 `S_OK`)를 반환 합니다.  
+ 유효한 `HRESULT`(일반적으로 `S_OK`)를 반환 합니다.  
   
-## <a name="see-also"></a>참조  
- [IEnumDebugExtendedPropertyInfo 인터페이스](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)    
+## <a name="see-also"></a>참고 항목  
+ [IEnumDebugExtendedPropertyInfo 인터페이스](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)   
  [ExtendedDebugPropertyInfo 구조체](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

@@ -1,5 +1,5 @@
 ---
-title: More Debugging Features | Microsoft Docs
+title: 추가 디버깅 기능 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -38,7 +38,7 @@ ms.locfileid: "74300535"
  [디버거에서 데이터 보기](../debugger/viewing-data-in-the-debugger.md)  
  다양한 디버그 창에 대해 설명하고  
   
- [Just-In-Time 디버깅](../debugger/just-in-time-debugging-in-visual-studio.md)  
+ [Just-In-Time Debugging in Visual Studio](../debugger/just-in-time-debugging-in-visual-studio.md)(Visual Studio의 Just-In-Time 디버깅)  
  Visual Studio의 외부에서 실행하는 동안 프로그램이 충돌할 때 자동으로 디버거를 시작할 수 있는 Just-In-Time 디버깅에 대해 설명합니다.  
   
  [연습: 디자인 타임에 디버그](../debugger/walkthrough-debugging-at-design-time.md)  
@@ -47,7 +47,7 @@ ms.locfileid: "74300535"
  [편집하며 계속하기](../debugger/edit-and-continue.md)  
  프로그램이 중단 모드에 있는 동안 소스 코드를 변경할 수 있으며, 디버그 세션을 종료하고 프로그램을 다시 빌드하지 않고도 변경 내용을 적용할 수 있도록 해 주는 도구인 편집하며 계속하기에 대해 설명하고, 이 기능을 활성화/비활성화하는 방법을 소개합니다.  
   
- [Using Dump Files](../debugger/using-dump-files.md) Describes dump files, including instructions on saving and opening. 덤프 파일에는 일정한 시점(대개 충돌 이후)의 프로그램 상태에 대한 스냅샷이 포함됩니다. 소스 파일이나 PDB가 설치되어 있지 않은 컴퓨터에서 프로그램을 테스트하는 경우 충돌이 발생하면 덤프 파일을 저장하고 소스 파일과 PDB가 있는 빌드 컴퓨터에서 이 덤프 파일을 사용하여 충돌을 디버그할 수 있습니다. 
+ [덤프 파일 사용](../debugger/using-dump-files.md) 저장 및 열기에 대 한 지침을 포함 하 여 덤프 파일에 대해 설명 합니다. 덤프 파일에는 일정한 시점(대개 충돌 이후)의 프로그램 상태에 대한 스냅샷이 포함됩니다. 소스 파일이나 PDB가 설치되어 있지 않은 컴퓨터에서 프로그램을 테스트하는 경우 충돌이 발생하면 덤프 파일을 저장하고 소스 파일과 PDB가 있는 빌드 컴퓨터에서 이 덤프 파일을 사용하여 충돌을 디버그할 수 있습니다. 
   
  [방법: 숨겨진 디버거 명령 복원](../debugger/how-to-restore-hidden-debugger-commands.md)  
  IDE 기본 설정에 따라 숨겨진 디버거 명령을 표시하는 방법에 대해 설명합니다.

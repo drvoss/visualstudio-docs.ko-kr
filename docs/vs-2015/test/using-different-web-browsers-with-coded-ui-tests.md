@@ -101,17 +101,17 @@ ms.locfileid: "74297957"
  *그 외 무엇을 알아야 하나요?*
  **참고**
 
-- ![Prerequsite](../test/media/prereq.png "Prereq") Apple Safari web browser is not supported.
+- ![Prereq](../test/media/prereq.png "필수 구성 요소") Apple Safari 웹 브라우저는 지원 되지 않습니다.
 
-- ![Prerequsite](../test/media/prereq.png "Prereq") The action of starting the web browser must be part of the coded UI test.
+- ![Prereq](../test/media/prereq.png "필수 구성 요소") 웹 브라우저를 시작 하는 작업은 코딩 된 UI 테스트의 일부 여야 합니다.
 
    웹 브라우저가 이미 열려 있는 상태에서는 Internet Explorer를 사용하지 않는 이상 단계를 실행하려고 해도 재생이 실패합니다. 따라서 코딩된 UI 테스트에 웹 브라우저 시작을 포함하는 것이 좋습니다.
 
-- ![Prerequsite](../test/media/prereq.png "Prereq") Automating browser specific based UI actions such as maximize, minimize and restore is not supported.
+- ![Prereq](../test/media/prereq.png "필수 구성 요소") 최대화, 최소화, 복원 등의 브라우저별 기본 UI 작업은 자동화할 수 없습니다.
 
   **팁**
 
-- ![Tip](../test/media/tip.png "팁") You can configure the output to include screenshots in the coded UI logs. 이렇게 하려면 QTAgent32.exe.config 파일에 일부 구성 설정을 설정해야 합니다. 기본적으로 이 파일은 다음 디렉터리에 설치됩니다.
+- ![팁](../test/media/tip.png "팁") 출력을 구성 하 여 코딩 된 UI 로그에 스크린 샷을 포함할 수 있습니다. 이렇게 하려면 QTAgent32.exe.config 파일에 일부 구성 설정을 설정해야 합니다. 기본적으로 이 파일은 다음 디렉터리에 설치됩니다.
 
    **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**
 
@@ -151,5 +151,5 @@ ms.locfileid: "74297957"
 ### <a name="forum"></a>포럼
  [Visual Studio UI 자동화 테스트(Coded UI 포함)](https://go.microsoft.com/fwlink/?LinkID=224497)
 
-## <a name="see-also"></a>관련 항목:
- [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md) [Supported Configurations and Platforms for Coded UI Tests and Action Recordings](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [Analyzing Coded UI Tests Using Coded UI Test Logs](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)
+## <a name="see-also"></a>참고 항목
+ [Ui 자동화를 사용](../test/use-ui-automation-to-test-your-code.md) 하 여 코딩 된 ui 테스트 [및 작업 기록에 대해 지원 되는 코드 구성 및 플랫폼](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) 테스트 코딩 된 Ui [테스트 로그를 사용 하 여 코딩 된 ui 테스트 분석](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

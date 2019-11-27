@@ -37,7 +37,7 @@ HRESULT Detach();
  이 메서드는 매개 변수를 사용 하지 않습니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드는 `HRESULT`를 반환 합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
+ 이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
   
 |값|설명|  
 |-----------|-----------------|  
@@ -46,6 +46,6 @@ HRESULT Detach();
 ## <a name="remarks"></a>주의  
  이 메서드는 프로젝트 트리에서이 응용 프로그램 노드를 제거 합니다.  
   
-## <a name="see-also"></a>참조  
- [Idebugapplicationnode:: Attach](../../winscript/reference/idebugapplicationnode-attach.md)    
+## <a name="see-also"></a>참고 항목  
+ [IDebugApplicationNode::Attach](../../winscript/reference/idebugapplicationnode-attach.md)   
  [IDebugApplicationNode 인터페이스](../../winscript/reference/idebugapplicationnode-interface.md)

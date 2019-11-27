@@ -44,7 +44,7 @@ HRESULT GetScriptTextAttributes(
  [in, size_is (`cch`)] 스크립트 블록의 텍스트입니다. 이 문자열은 null로 종료할 필요가 없습니다.  
   
  `cch`  
- 진행 @No__t_0 및 `pattr` 매개 변수에 사용 되는 크기입니다.  
+ 진행 `pszCode` 및 `pattr` 매개 변수에 사용 되는 크기입니다.  
   
  `pszDelimiter`  
  진행 스크립트 끝 구분 기호의 주소입니다. 텍스트 스트림에서 `pszCode` 구문 분석 되는 경우 호스트는 일반적으로 구분 기호 (예: 두 개의 작은따옴표)를 사용 하 여 scriptlet의 끝을 검색 합니다. 스크립트 블록의 끝을 식별할 구분 기호가 없으면이 매개 변수를 NULL로 설정 합니다.  
@@ -56,7 +56,7 @@ HRESULT GetScriptTextAttributes(
 |--------------|-----------|-----------------|  
 |GETATTRTYPE_DEPSCAN|0x0001|SOURCETEXT_ATTR_IDENTIFIER 특성이 있는 식별자를 식별 하 고 SOURCETEXT_ATTR_MEMBERLOOKUP 특성이 있는 점 연산자를 식별 합니다.|  
 |GETATTRFLAG_THIS|0x0100|SOURCETEXT_ATTR_THIS 특성이 있는 현재 개체를 식별 합니다.|  
-|GETATTRFLAG_HUMANTEXT|0x8000|SOURCETEXT_ATTR_HUMANTEXT 특성을 포함 하는 문자열 내용과 주석 텍스트를 식별 합니다.|  
+|GETATTRFLAG_HUMANTEXT|0x8000|SOURCETEXT_ATTR_HUMANTEXT 특성이 있는 문자열 내용과 설명 텍스트를 식별 합니다.|  
   
  `pattr`  
  [in, out, size_is (`cch`)] 스크립트 블록 코드의 색 정보입니다.  
@@ -70,6 +70,6 @@ HRESULT GetScriptTextAttributes(
   
 ## <a name="remarks"></a>주의  
   
-## <a name="see-also"></a>참조  
- [IActiveScriptAuthor 인터페이스](../../winscript/reference/iactivescriptauthor-interface.md)    
+## <a name="see-also"></a>참고 항목  
+ [IActiveScriptAuthor 인터페이스](../../winscript/reference/iactivescriptauthor-interface.md)   
  [SOURCE_TEXT_ATTR 열거형](../../winscript/reference/source-text-attr-enumeration.md)

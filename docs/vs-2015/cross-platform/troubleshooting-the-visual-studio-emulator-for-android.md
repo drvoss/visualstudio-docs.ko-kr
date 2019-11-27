@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting the Emulator for Android | Microsoft Docs
+title: Android 용 에뮬레이터 문제 해결 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: tgt-pltfrm-cross-plat
@@ -15,7 +15,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74297643"
 ---
-# <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Troubleshooting the Visual Studio Emulator for Android
+# <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Android용 Visual Studio 에뮬레이터 문제 해결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 항목에는 Android용 Visual Studio 에뮬레이터를 사용하는 동안 발생할 수 있는 문제를 해결하는 데 도움이 되는 정보가 들어 있습니다.
@@ -227,7 +227,7 @@ ms.locfileid: "74297643"
 
      - 연결 계층 토폴로지 검색 매퍼 I/O 드라이버
 
-     - 연결 계층 토폴로지 검색 응답기
+     - 연결 계층 토폴로지 검색 응답자
 
      - 인터넷 프로토콜 버전 6(TCP/IPv6)
 

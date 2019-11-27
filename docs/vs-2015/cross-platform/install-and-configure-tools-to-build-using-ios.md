@@ -158,7 +158,7 @@ ms.locfileid: "74299807"
   
 6. 기본 보안된 연결 모드에서 원격 에이전트를 사용하는 경우 **보안** 확인란을 선택한 다음 **Pin** 필드에 원격 에이전트에 의해 지정된 PIN 값을 입력합니다. 보안되지 않은 연결 모드에서 원격 에이전트를 사용하는 경우 **보안** 확인란을 선택 취소하고 **Pin** 필드를 비워 둡니다.  
   
-7. **쌍** 을 선택하여 연결을 사용할 수 있도록 합니다.  
+7. **연결**을 선택하여 연결을 사용하도록 설정합니다.  
   
     ![iOS 빌드에 대한 vcremote 연결 구성](../cross-platform/media/cppmdd-options-ios.PNG "CPPMDD_Options_iOS")  
   
@@ -239,5 +239,5 @@ ms.locfileid: "74299807"
   
      여기서 *config_file_path* 는 JSON 형식의 구성 파일 경로입니다. 시작 옵션과 해당 값에 대시가 포함되어서는 안 됩니다.  
   
-## <a name="see-also"></a>관련 항목:  
+## <a name="see-also"></a>참고 항목  
  [플랫폼 간 모바일 개발용 Visual C++ 설치](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

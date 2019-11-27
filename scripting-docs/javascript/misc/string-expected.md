@@ -22,12 +22,12 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573682"
 ---
 # <a name="string-expected"></a>문자열이 필요합니다.
-@No__t_2이 아닌 형식의 개체에 대해 **valueOf** **메서드를 호출** 하려고 한 경우입니다. 이 호출 형식의 개체는 `String` 형식 이어야 합니다.  
+`String`이 아닌 형식의 개체에 대해 **valueOf** **메서드를 호출** 하려고 한 경우입니다. 이 호출 형식의 개체는 `String`형식 이어야 합니다.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
-- @No__t_2 형식의 개체에 대해서만 **valueOf** **메서드를 호출 합니다.**  
+- `String`형식의 개체에 대해서만 **valueOf** **메서드를 호출 합니다.**  
   
-## <a name="see-also"></a>참조  
- [문자열 개체](../../javascript/reference/string-object-javascript.md)    
+## <a name="see-also"></a>참고 항목  
+ [문자열 개체](../../javascript/reference/string-object-javascript.md)   
  [toString 메서드(Object)](../../javascript/reference/tostring-method-object-javascript.md)

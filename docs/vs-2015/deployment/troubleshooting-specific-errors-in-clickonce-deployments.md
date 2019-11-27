@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting Specific Errors in ClickOnce Deployments | Microsoft Docs
+title: ClickOnce 배포의 특정 오류 문제 해결 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -30,115 +30,115 @@ ms.locfileid: "74294732"
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>ClickOnce 배포 관련 오류 문제 해결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-This topic lists the following common errors that can occur when you deploy a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application, and provides steps to resolve each problem.  
+이 항목에서는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램을 배포할 때 발생할 수 있는 다음과 같은 일반적인 오류를 나열 하 고 각 문제를 해결 하는 단계를 제공 합니다.  
   
-## <a name="general-errors"></a>General Errors  
+## <a name="general-errors"></a>일반 오류  
   
-#### <a name="when-you-try-to-locate-an-application-file-nothing-occurs-or-xml-renders-in-internet-explorer-or-you-receive-a-run-or-save-as-dialog-box"></a>When you try to locate an .application file, nothing occurs, or XML renders in Internet Explorer, or you receive a Run or Save As dialog box  
- This error is likely caused by content types (also known as MIME types) not being registered correctly on the server or client.  
+#### <a name="when-you-try-to-locate-an-application-file-nothing-occurs-or-xml-renders-in-internet-explorer-or-you-receive-a-run-or-save-as-dialog-box"></a>Internet Explorer에서 응용 프로그램 파일을 찾으려고 하거나, 아무 일도 발생 하지 않거나, XML 렌더링을 시도 하거나, 실행 또는 다른 이름으로 저장 대화 상자가 표시 되는 경우  
+ 이 오류는 서버 또는 클라이언트에서 콘텐츠 형식 (MIME 형식이 라고도 함)이 올바르게 등록 되지 않은 경우에 발생할 수 있습니다.  
   
- First, make sure that the server is configured to associate the .application extension with content type "application/x-ms-application".  
+ 먼저, 응용 프로그램 확장명을 "application/x-y-application" 내용 유형과 연결 하도록 서버가 구성 되어 있는지 확인 합니다.  
   
- If the server is configured correctly, ensure that the [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] is installed on your computer. If the [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] is installed, and you are still seeing this problem, try uninstalling and reinstalling the [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] to re-register the content type on the client.  
+ 서버가 올바르게 구성 된 경우 컴퓨터에 [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] 설치 되어 있는지 확인 합니다. [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] 설치 되어 있지만이 문제가 계속 발생 하는 경우 [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)]을 제거 하 고 다시 설치 하 여 클라이언트에서 콘텐츠 형식을 다시 등록 하십시오.  
   
-#### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>Error message says, "Unable to retrieve application. Files missing in deployment" or "Application download has been interrupted, check for network errors and try again later"  
- This message indicates that one or more files being referenced by the [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifests cannot be downloaded. The easiest way to debug this error is to try to download the URL that [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] says it cannot download. Here are some possible causes:  
+#### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>"응용 프로그램을 검색할 수 없습니다. 라는 오류 메시지가 표시 됩니다. 배포에 누락 된 파일이 있습니다. "또는" 응용 프로그램 다운로드가 중단 되었습니다. 네트워크 오류를 확인 하 고 나중에 다시 시도 하십시오. "  
+ 이 메시지는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 매니페스트에서 참조 하는 하나 이상의 파일을 다운로드할 수 없음을 나타냅니다. 이 오류를 디버깅 하는 가장 쉬운 방법은 다운로드할 수 없다는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] URL을 다운로드 하는 것입니다. 몇 가지 가능한 원인은 다음과 같습니다.  
   
-- If the log file says "(403) Forbidden" or "(404) Not found," verify that the Web server is configured so that it does not block download of this file. 자세한 내용은 [ClickOnce 배포 시 서버 및 클라이언트 구성 문제](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)를 참조하세요.  
+- 로그 파일에 "(403)을 (를) 사용할 수 없음" 또는 "(404) 찾을 수 없음"이 표시 되는 경우 "이 파일의 다운로드를 차단 하지 않도록 웹 서버를 구성 했는지 확인 합니다. 자세한 내용은 [ClickOnce 배포 시 서버 및 클라이언트 구성 문제](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)를 참조하세요.  
   
-- If the .config file is being blocked by the server, see the section "Download error when you try to install a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application that has a .config file" later in this topic.  
+- .Config 파일이 서버에 의해 차단 되는 경우이 항목의 뒷부분에 나오는 ".config 파일이 있는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램을 설치 하려고 할 때 다운로드 오류" 섹션을 참조 하십시오.  
   
-- Determine whether this occurred because the `deploymentProvider` URL in the deployment manifest is pointing to a different location than the URL used for activation.  
+- 배포 매니페스트의 `deploymentProvider` URL이 활성화에 사용 된 URL과 다른 위치를 가리키기 때문에이 오류가 발생 했는지 여부를 확인 합니다.  
   
-- Ensure that all files are present on the server; the [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] log should tell you which file was not found.  
+- 모든 파일이 서버에 존재 하는지 확인 합니다. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 로그에는 찾을 수 없는 파일이 표시 됩니다.  
   
-- See whether there are network connectivity issues; you can receive this message if your client computer went offline during the download.  
+- 네트워크 연결 문제가 있는지 여부를 확인 합니다. 다운로드 하는 동안 클라이언트 컴퓨터가 오프 라인 상태가 되 면이 메시지를 수신할 수 있습니다.  
   
-#### <a name="download-error-when-you-try-to-install-a-clickonce-application-that-has-a-config-file"></a>Download error when you try to install a ClickOnce application that has a .config file  
- By default, a Visual Basic Windows-based application includes an App.config file. There will be a problem when a user tries to install from a Web server that uses Windows Server 2003, because that operating system blocks the installation of .config files for security reasons. To enable the .config file to be installed, click **Use ".deploy" file extension** in the **Publish Options** dialog box.  
+#### <a name="download-error-when-you-try-to-install-a-clickonce-application-that-has-a-config-file"></a>.Config 파일이 있는 ClickOnce 응용 프로그램을 설치 하려고 하면 다운로드 오류가 발생 합니다.  
+ 기본적으로 Visual Basic Windows 기반 응용 프로그램에는 App.config 파일이 포함 되어 있습니다. 사용자가 Windows Server 2003를 사용 하는 웹 서버에서를 설치 하려고 하면 운영 체제가 보안상의 이유로 .config 파일의 설치를 차단 하기 때문에 문제가 발생 합니다. .Config 파일 설치를 사용 하도록 설정 하려면 **게시 옵션** 대화 상자에서 **".deploy" 파일 확장명 사용** 을 클릭 합니다.  
   
- You also must set the content types (also known as MIME types) appropriately for .application, .manifest, and .deploy files. For more information, see your Web server documentation.  
+ 또한 응용 프로그램, .manifest 및 .deploy 파일에 대해 콘텐츠 형식 (MIME 형식이 라고도 함)을 적절 하 게 설정 해야 합니다. 자세한 내용은 웹 서버 설명서를 참조 하세요.  
   
- For more information, see "Windows Server 2003: Locked-Down Content Types" in [Server and Client Configuration Issues in ClickOnce Deployments](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
+ 자세한 내용은 [ClickOnce 배포의 서버 및 클라이언트 구성 문제](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)에서 "Windows Server 2003: 잠긴 콘텐츠 형식"을 참조 하세요.  
   
-#### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>Error message: "Application is improperly formatted;" Log file contains "XML signature is invalid"  
- Ensure that you updated the manifest file and signed it again. Republish your application by using [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] or use Mage to sign the application again.  
+#### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>오류 메시지: "응용 프로그램의 형식이 잘못 되었습니다." 로그 파일에 "XML 서명이 잘못 되었습니다."가 포함 되어 있습니다.  
+ 매니페스트 파일을 업데이트 하 고 다시 서명 했는지 확인 합니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 사용 하 여 응용 프로그램을 다시 게시 하거나 Mage.exe를 사용 하 여 응용 프로그램에 다시 서명 합니다.  
   
-#### <a name="you-updated-your-application-on-the-server-but-the-client-does-not-download-the-update"></a>You updated your application on the server, but the client does not download the update  
- This problem might be solved by completing one of the following tasks:  
+#### <a name="you-updated-your-application-on-the-server-but-the-client-does-not-download-the-update"></a>서버에서 응용 프로그램을 업데이트 했지만 클라이언트는 업데이트를 다운로드 하지 않습니다.  
+ 이 문제는 다음 작업 중 하나를 완료 하 여 해결할 수 있습니다.  
   
-- Examine the `deploymentProvider` URL in the deployment manifest. Ensure that you are updating the bits in the same location that `deploymentProvider` points to.  
+- 배포 매니페스트에서 `deploymentProvider` URL을 검사 합니다. `deploymentProvider` 가리키는 동일한 위치의 비트를 업데이트 하 고 있는지 확인 합니다.  
   
-- Verify the update interval in the deployment manifest. If this interval is set to a periodic interval, such as one time every six hours, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] will not scan for an update until this interval has passed. You can change the manifest to scan for an update every time that the application starts. Changing the update interval is a convenient option during development time to verify updates are being installed, but it slows down application activation.  
+- 배포 매니페스트에서 업데이트 간격을 확인 합니다. 이 간격이 정기적 간격으로 설정 된 경우 (예: 6 시간 마다 한 번) [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]이 간격이 경과할 때까지 업데이트를 검색 하지 않습니다. 응용 프로그램이 시작 될 때마다 업데이트를 검색 하도록 매니페스트를 변경할 수 있습니다. 업데이트 간격을 변경 하는 것은 업데이트를 설치 하는 것을 확인 하는 개발 시간 동안 편리한 옵션 이지만 응용 프로그램 활성화 속도가 느려집니다.  
   
-- Try starting the application again on the Start menu. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] may have detected the update in the background, but will prompt you to install the bits on the next activation.  
+- 시작 메뉴에서 응용 프로그램을 다시 시작 해 보세요. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 백그라운드에서 업데이트를 검색 했을 수 있지만 다음 활성화 시 비트를 설치할지 묻는 메시지가 표시 됩니다.  
   
-#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>During update you receive an error that has the following log entry: "The reference in the deployment does not match the identity defined in the application manifest"  
- This error may occur because you have manually edited the deployment and application manifests, and have caused the description of the identity of an assembly in one manifest to become out of sync with the other. The identity of an assembly consists of its name, version, culture, and public key token. Examine the identity descriptions in your manifests, and correct any differences.  
+#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>업데이트 중에 "배포의 참조가 응용 프로그램 매니페스트에 정의 된 id와 일치 하지 않습니다."와 같은 오류 메시지가 표시 됩니다.  
+ 이 오류는 배포 및 응용 프로그램 매니페스트를 수동으로 편집 하 여 한 매니페스트의 어셈블리 id에 대 한 설명이 다른 매니페스트의 동기화 되지 않기 때문에 발생할 수 있습니다. 어셈블리의 id는 해당 이름, 버전, 문화권 및 공개 키 토큰으로 구성 됩니다. 매니페스트에서 id 설명을 검사 하 고 차이점을 수정 합니다.  
   
-#### <a name="first-time-activation-from-local-disk-or-cd-rom-succeeds-but-subsequent-activation-from-start-menu-does-not-succeed"></a>First time activation from local disk or CD-ROM succeeds, but subsequent activation from Start Menu does not succeed  
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uses the Deployment Provider URL to receive updates for the application. Verify that the location that the URL is pointing to is correct.  
+#### <a name="first-time-activation-from-local-disk-or-cd-rom-succeeds-but-subsequent-activation-from-start-menu-does-not-succeed"></a>로컬 디스크 또는 CD-ROM에서 처음으로 정품 인증에 성공 했지만 시작 메뉴의 후속 활성화에 성공 하지 않음  
+ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]는 배포 공급자 URL을 사용 하 여 응용 프로그램에 대 한 업데이트를 수신 합니다. URL이 가리키는 위치가 올바른지 확인 합니다.  
   
-#### <a name="error-cannot-start-the-application"></a>Error: "Cannot start the application"  
- This error message usually indicates that there is a problem installing this application into the [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] store. Either the application has an error or the store is corrupted. The log file might tell you where the error occurred.  
+#### <a name="error-cannot-start-the-application"></a>오류: "응용 프로그램을 시작할 수 없습니다."  
+ 이 오류 메시지는 일반적으로 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 저장소에이 응용 프로그램을 설치 하는 데 문제가 있음을 나타냅니다. 응용 프로그램에 오류가 있거나 저장소가 손상 되었습니다. 로그 파일에서 오류가 발생 한 위치를 알 수 있습니다.  
   
- You should do the following:  
+ 다음을 수행 해야 합니다.  
   
-- Verify that the identity of the deployment manifest, identity of application manifest, and identity of the main application EXE are all unique.  
+- 배포 매니페스트의 id, 응용 프로그램 매니페스트의 id 및 주 응용 프로그램 EXE의 id가 모두 고유한 지 확인 합니다.  
   
-- Verify that your file paths are not longer than 100 characters. If your application contains file paths that are too long, you may exceed the limitations on the maximum path you can store. Try shortening the paths and reinstall.  
+- 파일 경로가 100 자 보다 길지 않은지 확인 합니다. 응용 프로그램에 너무 긴 파일 경로가 포함 되어 있으면 저장할 수 있는 최대 경로에 대 한 제한 사항을 초과할 수 있습니다. 경로를 단축 하 고 다시 설치 하세요.  
   
-#### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>PrivatePath settings in application config file are not honored  
- To use PrivatePath (Fusion probing paths), the application must request full trust permission. Try changing the application manifest to request full trust, and then try again.  
+#### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>응용 프로그램 구성 파일의 PrivatePath 설정이 적용 되지 않습니다.  
+ PrivatePath (Fusion 검색 경로)를 사용 하려면 응용 프로그램이 완전 신뢰 권한을 요청 해야 합니다. 완전 신뢰를 요청 하도록 응용 프로그램 매니페스트를 변경한 후 다시 시도 하십시오.  
   
-#### <a name="during-uninstall-a-message-appears-saying-failed-to-uninstall-application"></a>During uninstall a message appears saying, "Failed to uninstall application"  
- This message usually indicates that the application has already been removed or the store is corrupted. After you click **OK**, the **Add/Remove Program** entry will be removed.  
+#### <a name="during-uninstall-a-message-appears-saying-failed-to-uninstall-application"></a>제거하는 동안 "응용 프로그램 제거 실패"메시지가 나타납니다.  
+ 이 메시지는 일반적으로 응용 프로그램이 이미 제거 되었거나 저장소가 손상 되었음을 나타냅니다. **확인**을 클릭 하면 **프로그램 추가/제거** 항목이 제거 됩니다.  
   
-#### <a name="during-installation-a-message-appears-that-says-that-the-platform-dependencies-are-not-installed"></a>During installation, a message appears that says that the platform dependencies are not installed  
- You are missing a prerequisite in the GAC (global assembly cache) that the application needs in order to run.  
+#### <a name="during-installation-a-message-appears-that-says-that-the-platform-dependencies-are-not-installed"></a>설치 하는 동안 플랫폼 종속성이 설치 되어 있지 않다는 메시지가 표시 됩니다.  
+ 응용 프로그램을 실행 하는 데 필요한 GAC (전역 어셈블리 캐시)에 필수 구성 요소가 누락 되었습니다.  
   
-## <a name="publishing-with-visual-studio"></a>Publishing with Visual Studio  
+## <a name="publishing-with-visual-studio"></a>Visual Studio를 사용 하 여 게시  
   
-#### <a name="publishing-in-visual-studio-fails"></a>Publishing in Visual Studio fails  
- Ensure that you have the right to publish to the server that you are targeting. For example, if you are logged in to a terminal server computer as an ordinary user, not as an administrator, you probably will not have the rights required to publish to the local Web server.  
+#### <a name="publishing-in-visual-studio-fails"></a>Visual Studio에서 게시 하지 못함  
+ 대상 서버에 게시할 수 있는 권한이 있는지 확인 합니다. 예를 들어 관리자가 아닌 일반 사용자로 터미널 서버 컴퓨터에 로그인 한 경우 로컬 웹 서버에 게시 하는 데 필요한 권한이 없는 것일 수 있습니다.  
   
- If you are publishing with a URL, ensure that the destination computer has FrontPage Server Extensions enabled.  
+ URL을 사용 하 여 게시 하는 경우 대상 컴퓨터가 FrontPage Server Extensions 사용 하도록 설정 되었는지 확인 합니다.  
   
-#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Error Message: Unable to create the Web site '\<site>'. The components for communicating with FrontPage Server Extensions are not installed.  
- Ensure that you have the Microsoft Visual Studio Web Authoring Component installed on the machine that you are publishing from. For Express users, this component is not installed by default. 자세한 내용은 [http://go.microsoft.com/fwlink/?LinkId=102310](https://go.microsoft.com/fwlink/?LinkId=102310)를 참조하세요.  
+#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>오류 메시지: '\<사이트 > ' 웹 사이트를 만들 수 없습니다. FrontPage Server Extensions와 통신 하기 위한 구성 요소가 설치 되어 있지 않습니다.  
+ 게시 중인 컴퓨터에 Microsoft Visual Studio 웹 제작 구성 요소가 설치 되어 있는지 확인 합니다. Express 사용자의 경우이 구성 요소는 기본적으로 설치 되지 않습니다. 자세한 내용은 [http://go.microsoft.com/fwlink/?LinkId=102310](https://go.microsoft.com/fwlink/?LinkId=102310)를 참조하세요.  
   
-#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Error Message: Could not find file 'Microsoft.Windows.Common-Controls, Version=6.0.0.0, Culture=*, PublicKeyToken=6595b64144ccf1df, ProcessorArchitecture=\*, Type=win32'  
- This error message appears when you attempt to publish a WPF application with visual styles enabled. To resolve this issue, see [How to: Publish a WPF Application with Visual Styles Enabled](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).  
+#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>오류 메시지: 파일 ' 6.0.0.0, Version =, Culture = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture =\*, Type = win32 '를 찾을 수 없습니다.  
+ 비주얼 스타일을 사용 하 여 WPF 응용 프로그램을 게시 하려고 하면이 오류 메시지가 나타납니다. 이 문제를 해결 하려면 [방법: 비주얼 스타일을 사용 하 여 WPF 응용 프로그램 게시](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)를 참조 하세요.  
   
-## <a name="using-mage"></a>Using Mage  
+## <a name="using-mage"></a>Mage 사용  
   
-#### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>You tried to sign with a certificate in your certificate store and a received blank message box  
- In the **Signing** dialog box, you must:  
+#### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>인증서 저장소의 인증서를 사용 하 여 서명 하려고 하 고 빈 메시지 상자를 받았습니다.  
+ **서명** 대화 상자에서 다음을 수행 해야 합니다.  
   
-- Select **Sign with a stored certificate**, and  
+- **저장 된 인증서로 서명**을 선택 하 고  
   
-- Select a certificate from the list; the first certificate is not the default selection.  
+- 목록에서 인증서를 선택 합니다. 첫 번째 인증서는 기본 선택 사항이 아닙니다.  
   
-#### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>Clicking the "Don't Sign" button causes an exception  
- This issue is a known bug. All [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifests are required to be signed. Just select one of the signing options, and then click **OK**.  
+#### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>"서명 안 함" 단추를 클릭 하면 예외가 발생 합니다.  
+ 이 문제는 알려진 버그입니다. 모든 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 매니페스트는 서명 해야 합니다. 서명 옵션 중 하나를 선택한 다음 **확인**을 클릭 하면 됩니다.  
   
-## <a name="additional-errors"></a>Additional Errors  
- The following table shows some common error messages that a client-computer user may receive when the user installs a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application. Each error message is listed next to a description of the most probable cause for the error.  
+## <a name="additional-errors"></a>추가 오류  
+ 다음 표에서는 사용자가 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램을 설치할 때 클라이언트 컴퓨터 사용자가 받을 수 있는 몇 가지 일반적인 오류 메시지를 보여 줍니다. 오류의 가장 가능성이 높은 원인에 대 한 설명 옆에 각 오류 메시지가 나열 됩니다.  
   
 |오류 메시지|설명|  
 |-------------------|-----------------|  
-|Application cannot be started. Contact the application publisher.<br /><br /> Cannot start the application. Contact the application vendor for assistance.|These are generic error messages that occur when the application cannot be started, and no other specific reason can be found. Frequently this means that the application is somehow corrupted, or that the [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] store is corrupted.|  
-|Cannot continue. The application is improperly formatted. Contact the application publisher for assistance.<br /><br /> Application validation did not succeed. Unable to continue.<br /><br /> Unable to retrieve application files. Files corrupt in deployment.|One of the manifest files in the deployment is syntactically not valid, or contains a hash that cannot be reconciled with the corresponding file. This error may also indicate that the manifest embedded inside an assembly is corrupted. Re-create your deployment and recompile your application, or find and fix the errors manually in your manifests.|  
-|Cannot retrieve application. 인증 오류입니다.<br /><br /> Application installation did not succeed. Cannot locate applications files on the server. Contact the application publisher or your administrator for assistance.|One or more files in the deployment cannot be downloaded because you do not have permission to access them. This can be caused by a 403 Forbidden error being returned by a Web server, which may occur if one of the files in your deployment ends with an extension that makes the Web server treat it as a protected file. Also, a directory that contains one or more of the application's files might require a username and password in order to access.|  
-|Cannot download the application. The application is missing required files. Contact the application vendor or your system administrator for assistance.|One or more of the files listed in the application manifest cannot be found on the server. Verify that you have uploaded all the deployment's dependent files, and try again.|  
-|Application download did not succeed. Check your network connection, or contact your system administrator or network service provider.|[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] cannot establish a network connection to the server. Examine the server's availability and the state of your network.|  
-|URLDownloadToCacheFile failed with HRESULT '\<number>'. An error occurred trying to download '\<file>'.|If a user has set Internet Explorer Advanced Security option "Warn if changing between secure and not secure mode" on the deployment target computer, and if the setup URL of the ClickOnce application being installed is redirected from a non-secure to a secure site (or vice-versa), the installation will fail because the Internet Explorer warning interrupts it.<br /><br /> To resolve this, you can do one of the following:<br /><br /> -   Clear the security option.<br />-   Make sure that the setup URL is not redirected in such a way that changes security modes.<br />-   Remove the redirection completely and point to the actual setup URL.|  
-|An error has occurred writing to the hard disk. There might be insufficient space available on the disk. Contact the application vendor or your system administrator for assistance.|This may indicate insufficient disk space for storing the application, but it may also indicate a more general I/O error when you are trying to save the application files to the drive.|  
-|Cannot start the application. There is not enough available space on the disk.|The hard disk is full. Clear off space and try to run the application again.|  
-|Too many deployed activations are attempting to load at once.|[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] limits the number of different applications that can start at the same time. This is largely to help protect against malicious attempts to instigate denial-of-service attacks against the local [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] service; users who try to start the same application repeatedly, in rapid succession, will only end up with a single instance of the application.|  
-|Shortcuts cannot be activated over the network.|Shortcuts to a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application can only be started on the local hard disk. They cannot be started by opening a URL that points to a shortcut file on a remote server.|  
-|The application is too large to run online in partial trust. Contact the application vendor or your system administrator for assistance.|An application that runs in partial trust cannot be larger than half of the size of the online application quota, which by default is 250 MB.|  
+|응용 프로그램을 시작할 수 없습니다. 응용 프로그램 게시자에 게 문의 하십시오.<br /><br /> 응용 프로그램을 시작할 수 없습니다. 응용 프로그램 공급 업체에 지원을 문의 하십시오.|이러한 메시지는 응용 프로그램을 시작할 수 없을 때 발생 하는 일반적인 오류 메시지 이며 다른 특정 이유를 찾을 수 없습니다. 이는 응용 프로그램이 손상 되었거나 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 저장소가 손상 된 것을 의미 하는 경우가 많습니다.|  
+|계속할 수 없습니다. 응용 프로그램의 형식이 잘못 되었습니다. 도움이 필요 하면 응용 프로그램 게시자에 게 문의 하십시오.<br /><br /> 응용 프로그램 유효성 검사에 실패 했습니다. 계속할 수 없습니다.<br /><br /> 응용 프로그램 파일을 검색할 수 없습니다. 배포에서 파일이 손상 되었습니다.|배포의 매니페스트 파일 중 하나가 구문상 잘못 되었거나 해당 파일을 사용 하 여 조정할 수 없는 해시가 포함 되어 있습니다. 이 오류는 어셈블리 내에 포함 된 매니페스트가 손상 되었음을 나타낼 수도 있습니다. 배포를 다시 만들고 응용 프로그램을 다시 컴파일하거나 매니페스트에서 오류를 수동으로 찾아서 수정 합니다.|  
+|응용 프로그램을 검색할 수 없습니다. 인증 오류.<br /><br /> 응용 프로그램을 설치 하지 못했습니다. 서버에서 응용 프로그램 파일을 찾을 수 없습니다. 도움이 필요 하면 응용 프로그램 게시자 또는 관리자에 게 문의 하십시오.|배포에 있는 하나 이상의 파일에 액세스할 수 있는 권한이 없어서 해당 파일을 다운로드할 수 없습니다. 웹 서버에서 403 금지 오류가 반환 되는 경우이 오류가 발생할 수 있습니다 .이는 배포의 파일 중 하나가 웹 서버에서 해당 파일을 보호 된 파일로 처리 하는 확장명으로 끝나는 경우에 발생할 수 있습니다. 또한 하나 이상의 응용 프로그램 파일을 포함 하는 디렉터리는에 액세스 하기 위해 사용자 이름과 암호를 요구할 수 있습니다.|  
+|응용 프로그램을 다운로드할 수 없습니다. 응용 프로그램에 필요한 파일이 없습니다. 도움이 필요 하면 응용 프로그램 공급 업체 또는 시스템 관리자에 게 문의 하십시오.|응용 프로그램 매니페스트에 나열 된 파일 중 하나 이상을 서버에서 찾을 수 없습니다. 모든 배포의 종속 파일을 업로드 했는지 확인 한 후 다시 시도 하십시오.|  
+|응용 프로그램 다운로드에 실패 했습니다. 네트워크 연결을 확인 하거나 시스템 관리자나 네트워크 서비스 공급자에 게 문의 하십시오.|[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 서버에 대 한 네트워크 연결을 설정할 수 없습니다. 서버의 가용성 및 네트워크 상태를 확인 합니다.|  
+|'\<number > ' HRESULT를 사용 하 여 URLDownloadToCacheFile이 실패 했습니다. '\<파일 > '을 (를) 다운로드 하는 동안 오류가 발생 했습니다.|사용자가 배포 대상 컴퓨터에서 Internet Explorer 고급 보안 옵션인 "보안 모드를 변경 하는 경우 경고 표시"를 설정 하 고 설치 되는 ClickOnce 응용 프로그램의 설치 URL이 안전 하지 않은 사이트에서 보안 되지 않은 사이트로 리디렉션되는 경우 (또는 그 반대의 경우도 마찬가지입니다. Internet Explorer 경고가 중단 되 면 설치가 실패 합니다.<br /><br /> 이 문제를 해결 하기 위해 다음 중 하나를 수행할 수 있습니다.<br /><br /> -보안 옵션을 선택 취소 합니다.<br />-보안 모드를 변경 하는 방식으로 설치 URL이 리디렉션되지 않는지 확인 합니다.<br />-리디렉션을 완전히 제거 하 고 실제 설치 URL을 가리킵니다.|  
+|하드 디스크에 쓰는 동안 오류가 발생 했습니다. 디스크에 사용 가능한 공간이 부족할 수 있습니다. 도움이 필요 하면 응용 프로그램 공급 업체 또는 시스템 관리자에 게 문의 하십시오.|이는 응용 프로그램을 저장 하는 데 충분 한 디스크 공간이 없다는 것을 나타낼 수 있지만 응용 프로그램 파일을 드라이브에 저장 하려고 할 때 더 일반적인 i/o 오류를 나타낼 수도 있습니다.|  
+|응용 프로그램을 시작할 수 없습니다. 디스크에 사용 가능한 공간이 부족 합니다.|하드 디스크가 꽉 찼습니다. 공간을 해제 하 고 응용 프로그램을 다시 실행 해 보십시오.|  
+|배포 된 활성화를 한 번에 너무 많이 로드 하려고 합니다.|[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]는 동시에 시작할 수 있는 응용 프로그램의 수를 제한 합니다. 이는 instigate 로컬 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 서비스에 대 한 서비스 거부 공격을 방지 하는 악의적인 시도를 방지 하는 데 주로 유용 합니다. 반복적으로 같은 응용 프로그램을 반복적으로 시작 하려는 사용자는 응용 프로그램의 단일 인스턴스만 종료 합니다.|  
+|네트워크를 통해 바로 가기를 활성화할 수 없습니다.|[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램에 대 한 바로 가기는 로컬 하드 디스크 에서만 시작할 수 있습니다. 원격 서버에서 바로 가기 파일을 가리키는 URL을 열어 시작할 수 없습니다.|  
+|응용 프로그램이 너무 커서 부분 신뢰로 온라인에서 실행할 수 없습니다. 도움이 필요 하면 응용 프로그램 공급 업체 또는 시스템 관리자에 게 문의 하십시오.|부분 신뢰로 실행 되는 응용 프로그램은 온라인 응용 프로그램 할당량 크기의 절반 (기본적으로 250 MB) 보다 클 수 없습니다.|  
   
-## <a name="see-also"></a>관련 항목:  
+## <a name="see-also"></a>참고 항목  
  [ClickOnce 보안 및 배포](../deployment/clickonce-security-and-deployment.md)   
  [ClickOnce 배포 문제 해결](../deployment/troubleshooting-clickonce-deployments.md)

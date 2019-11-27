@@ -40,8 +40,8 @@ HRESULT Skip(
  진행 건너뛸 열거형 시퀀스의 `ExtendedDebugPropertyInfo` 구조체 수입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 유효한 `HRESULT` (일반적으로 `S_OK`)를 반환 합니다. @No__t_1이 열거자에 남아 있는 요소 수보다 크면 `S_FALSE`을 반환 하 고 현재 요소 포인터를 열거형의 끝으로 설정 합니다.  
+ 유효한 `HRESULT`(일반적으로 `S_OK`)를 반환 합니다. `celt`이 열거자에 남아 있는 요소 수보다 크면 `S_FALSE`을 반환 하 고 현재 요소 포인터를 열거형의 끝으로 설정 합니다.  
   
-## <a name="see-also"></a>참조  
- [IEnumDebugExtendedPropertyInfo 인터페이스](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)    
+## <a name="see-also"></a>참고 항목  
+ [IEnumDebugExtendedPropertyInfo 인터페이스](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)   
  [ExtendedDebugPropertyInfo 구조체](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

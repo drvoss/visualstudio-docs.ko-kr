@@ -30,7 +30,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74300164"
 ---
-# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>방법: 참조 관리자를 사용하여 참조 추가 또는 제거
+# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>How to: Add or Remove References By Using the Reference Manager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **참조 관리자** 대화 상자를 사용하여 사용자가 개발했거나 Microsoft 또는 타사에서 개발한 구성 요소에 대한 참조를 추가하고 관리할 수 있습니다. 유니버설 Windows 앱을 개발하는 경우 프로젝트에서 올바른 모든 Windows SDK DLL을 자동으로 참조합니다. .NET 애플리케이션을 개발하는 경우 프로젝트에서 자동으로 mscorlib.dll을 참조합니다. 일부 .NET API는 수동으로 추가해야 하는 구성 요소에서 노출됩니다. COM 구성 요소 또는 사용자 지정 구성 요소에 대한 참조를 수동으로 추가해야 합니다.
@@ -131,7 +131,7 @@ ms.locfileid: "74300164"
 
     HKEY_LOCAL_MACHINE 노드 아래에 레지스트리 키를 만들면 모든 사용자가 **참조 추가** 대화 상자에서 지정된 위치의 어셈블리를 볼 수 있습니다. HKEY_CURRENT_USER 노드 아래에 레지스트리 키를 만들면 현재 사용자에 대한 설정에만 영향을 줍니다.
 
-    **참조 추가** 대화 상자를 다시 엽니다. The assemblies should appear on the **.NET** tab. If they do not, make sure that the assemblies are located in the specified *AssemblyLocation* directory, restart Visual Studio, and try again.
+    **참조 추가** 대화 상자를 다시 엽니다. 어셈블리가 **.net** 탭에 나타나야 합니다. 어셈블리가 없으면 지정 된 *Assemblylocation* 디렉터리에 어셈블리가 있는지 확인 하 고 Visual Studio를 다시 시작한 후 다시 시도 합니다.
 
 ## <a name="com-tab"></a>COM 탭
  COM 탭은 참조에 사용할 수 있는 COM 구성 요소를 모두 나열합니다. 내부 매니페스트가 포함된 등록 COM DLL에 참조를 추가하려는 경우 해당 DLL의 등록을 먼저 해제합니다. 그렇지 않으면 네이티브 DLL 대신 ActiveX 컨트롤 같은 어셈블리 참조가 추가됩니다.
@@ -196,7 +196,7 @@ ms.locfileid: "74300164"
 
  WinMD에 대한 파일 참조를 수행하는 경우, 예상되는 레이아웃은 *FileName*.winmd, *FileName*.dll 및 *FileName*.pri 파일이 모두 나란히 배치되는 것입니다. 다음과 같은 시나리오에서 WinMD를 참조하는 경우, 불완전한 파일 집합이 프로젝트 출력 디렉터리에 복사되고, 그에 따라 빌드 및 런타임 오류가 발생합니다.
 
-- **기본 구성 요소**: 네이티브 프로젝트에서는 연결되지 않은 네임스페이스 집합 각각에 대한 하나의 WinMD 및 그 구현으로 구성된 하나의 DLL을 만듭니다. WinMD는 서로 다른 이름을 갖게 됩니다. 이 기본 구성 요소 파일을 참조하는 경우, MSBuild에서는 서로 다른 이름을 가진 WinMD에서 하나의 구성 요소를 만드는 것을 인식하지 못합니다. 따라서 동일한 이름의 *FileName*.dll 및 *FileName*.winmd만 복사되어 런타임 오류가 발생합니다. 이 문제를 해결하기 위해서는 확장명 SDK를 만듭니다. 자세한 내용은 [소프트웨어 개발자 키트 만들기](../extensibility/creating-a-software-development-kit.md)를 참조하세요.
+- **기본 구성 요소**: 네이티브 프로젝트에서는 연결되지 않은 네임스페이스 집합 각각에 대한 하나의 WinMD 및 그 구현으로 구성된 하나의 DLL을 만듭니다. WinMD는 서로 다른 이름을 갖게 됩니다. 이 기본 구성 요소 파일을 참조하는 경우, MSBuild에서는 서로 다른 이름을 가진 WinMD에서 하나의 구성 요소를 만드는 것을 인식하지 못합니다. 따라서 동일한 이름의 *FileName*.dll 및 *FileName*.winmd만 복사되어 런타임 오류가 발생합니다. 이 문제를 해결하기 위해서는 확장명 SDK를 만듭니다. 자세한 내용은 [소프트웨어 개발 키트 만들기](../extensibility/creating-a-software-development-kit.md)를 참조하세요.
 
 - **컨트롤 사용**: XAML 컨트롤은 최소한 *FileName*.winmd, *FileName*.dll, *FileName*.pri, *XamlName*.xaml 및 *ImageName*.jpg로 구성됩니다. 프로젝트를 빌드할 때 파일 참조와 연관된 리소스 파일은 프로젝트의 출력 디렉터리에 복사되지 않고 *FileName*.winmd, *FileName*.dll 및 *FileName*.pri만 복사됩니다. 빌드 오류가 기록되어 사용자에게 리소스 *XamlName*.xaml 및 *ImageName*.jpg가 누락되었음을 알려줍니다. 성공적으로 빌드하려면 사용자는 이러한 리소스 파일을 수동으로 빌드 및 디버깅/런타임용 프로젝트 출력 디렉터리에 복사해야 합니다. 이 문제를 해결하려면 [소프트웨어 개발 키트 만들기](../extensibility/creating-a-software-development-kit.md)의 단계에 따라 확장명 SDK를 만들거나, 프로젝트 파일을 편집하여 다음 속성을 추가합니다.
 
@@ -209,11 +209,11 @@ ms.locfileid: "74300164"
     > [!NOTE]
     > 이 속성을 추가하면 빌드 실행이 느려질 수 있습니다.
 
-## <a name="recent"></a>최근 항목
+## <a name="recent"></a>최근
  어셈블리, COM, Windows 및 찾아보기 탭 각각은 최근에 프로젝트에 추가된 구성 요소의 목록을 열거하는 최근 항목 탭을 지원합니다.
 
 ## <a name="search"></a>검색
  **참조 관리자** 대화 상자의 검색 창은 포커스가 있는 탭에 대해서 작동합니다. 예를 들어, 사용자가 **솔루션** 탭에 포커스가 있을 때 검색 창에 "System"을 입력한 경우, "System"을 포함하는 프로젝트 이름으로 구성된 솔루션이 아닌 한 어떠한 검색 결과도 반환되지 않습니다.
 
-## <a name="see-also"></a>관련 항목:
- [NIB How to: Add or Remove References By Using the Add Reference Dialog Box](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) [Managing references in a project](../ide/managing-references-in-a-project.md)
+## <a name="see-also"></a>참고 항목
+ [NIB 방법: 참조 추가 대화 상자를 사용 하 여 참조 추가 또는 제거](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) [프로젝트에서 참조 관리](../ide/managing-references-in-a-project.md)

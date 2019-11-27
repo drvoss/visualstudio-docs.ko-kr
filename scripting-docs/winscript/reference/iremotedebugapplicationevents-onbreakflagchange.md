@@ -44,7 +44,7 @@ HRESULT OnBreakFlagChange(
  진행 현재 실행 중인 스레드입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드는 `HRESULT`를 반환 합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
+ 이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
   
 |값|설명|  
 |-----------|-----------------|  
@@ -53,6 +53,6 @@ HRESULT OnBreakFlagChange(
 ## <a name="remarks"></a>주의  
  이 메서드는 중단 플래그가 변경 될 때 이벤트를 처리 합니다.  
   
-## <a name="see-also"></a>참조  
- [Iremotedebugapplicationevents 인터페이스](../../winscript/reference/iremotedebugapplicationevents-interface.md)    
+## <a name="see-also"></a>참고 항목  
+ [Iremotedebugapplicationevents 인터페이스](../../winscript/reference/iremotedebugapplicationevents-interface.md)   
  [APPBREAKFLAGS 열거형](../../winscript/reference/appbreakflags-enumeration.md)

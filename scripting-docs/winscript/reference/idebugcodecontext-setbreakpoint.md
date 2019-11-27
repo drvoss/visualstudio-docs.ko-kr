@@ -40,7 +40,7 @@ HRESULT SetBreakPoint(
  진행 이 코드 컨텍스트의 중단점 상태를 지정 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드는 `HRESULT`를 반환 합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
+ 이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
   
 |값|설명|  
 |-----------|-----------------|  
@@ -49,6 +49,6 @@ HRESULT SetBreakPoint(
 ## <a name="remarks"></a>주의  
  이 메서드는이 코드 컨텍스트에서 중단점을 설정 하거나 해제 합니다.  
   
-## <a name="see-also"></a>참조  
- [IDebugCodeContext 인터페이스](../../winscript/reference/idebugcodecontext-interface.md)    
+## <a name="see-also"></a>참고 항목  
+ [IDebugCodeContext 인터페이스](../../winscript/reference/idebugcodecontext-interface.md)   
  [BREAKPOINT_STATE 열거형](../../winscript/reference/breakpoint-state-enumeration.md)

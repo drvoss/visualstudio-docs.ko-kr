@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Lifecycle Policy Exceptions | Microsoft Docs
+title: Visual Studio 수명 주기 정책 예외 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-install
@@ -24,7 +24,7 @@ Visual Studio에는 여러 Microsoft 플랫폼에 대한 개발을 가능하게 
 ## <a name="external-components-that-follow-a-lifecycle-policy-other-than-the-visual-studio-policy"></a>Visual Studio 정책이 아닌 다른 수명 주기 정책을 따르는 외부 구성 요소  
  다음 표에서는 특정 Visual Studio 소프트웨어 버전에 따라 Visual Studio에 포함될 수 있고 고유한 지원 정책 및 시간 프레임이 적용될 수 있는 Microsoft 플랫폼 구성 요소를 보여 줍니다.  
   
-|제품군|외부 이름|  
+|제품군|EXTERNAL NAME|  
 |--------------------|-------------------|  
 |[.NET 3.5](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=net%20framework%203.5&Filter=FilterNO)|.NET 3.5 SDK<br /><br /> Windows Identity Foundation|  
 |[.NET 4.5](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=net%20framework%204.5&Filter=FilterNO)|.NET 4.5 SDK|  
@@ -49,4 +49,4 @@ Visual Studio에는 여러 Microsoft 플랫폼에 대한 개발을 가능하게 
 |[Windows 7](https://support.microsoft.com/lifecycle/search/?c2=14019)|Windows 7 SDK|  
 |[Windows 8](https://support.microsoft.com/lifecycle/search/?c2=16796)|Windows 8 SDK|  
 |[Windows 8.1](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=windows%208.1&Filter=FilterNO)|Windows 8.1 SDK<br /><br /> JavaScript용 Windows 라이브러리(WinJS)|  
-|[Microsoft Azure](https://support.microsoft.com/help/18486/lifecycle-faq-azure)<br /><br /> <br />> See also: [Online Lifecycle Policy](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy)|Microsoft Azure 모바일 서비스 SDK<br /><br /> Microsoft Azure 모바일 서비스 도구|
+|[Microsoft Azure](https://support.microsoft.com/help/18486/lifecycle-faq-azure)<br /><br /> <br />> 참고 항목: [온라인 수명 주기 정책](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy)|Microsoft Azure 모바일 서비스 SDK<br /><br /> Microsoft Azure 모바일 서비스 도구|

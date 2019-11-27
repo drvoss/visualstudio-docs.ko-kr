@@ -23,7 +23,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72572340"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>값 인수에 순환 참조를 사용하는 것은 지원되지 않습니다.
-잘못 된 값을 사용 하 여 `JSON.stringify`를 호출 하려고 한 경우 @No__t_0 인수인 배열 또는 개체는 순환 참조를 포함 합니다.  
+잘못 된 값을 사용 하 여 `JSON.stringify`를 호출 하려고 한 경우 `value` 인수인 배열 또는 개체는 순환 참조를 포함 합니다.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
@@ -42,7 +42,7 @@ mary.brother = john;
 var error = JSON.stringify(john);  
 ```  
   
-## <a name="see-also"></a>참조  
- [JSON 개체](../../javascript/reference/json-object-javascript.md)    
- [JSON   함수를 구문 분석 합니다.](../../javascript/reference/json-parse-function-javascript.md)  
+## <a name="see-also"></a>참고 항목  
+ [JSON 개체](../../javascript/reference/json-object-javascript.md)   
+ [JSON  함수를 구문 분석 합니다.](../../javascript/reference/json-parse-function-javascript.md)  
  [JavaScript 런타임 오류](../../javascript/reference/javascript-run-time-errors.md)

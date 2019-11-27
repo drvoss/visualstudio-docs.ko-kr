@@ -40,7 +40,7 @@ HRESULT AddDBCSText(
  진행 텍스트를 포함 하는 null로 끝나는 문자열에 대 한 포인터입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드는 `HRESULT`를 반환 합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
+ 이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
   
 |값|설명|  
 |-----------|-----------------|  
@@ -51,9 +51,9 @@ HRESULT AddDBCSText(
  이 메서드는 `IDebugDocumentTextEvents` 알림을 생성 합니다.  
   
 > [!NOTE]
-> @No__t_0를 호출한 후이 메서드를 호출 하면 `E_FAIL` 반환 됩니다.  
+> `IDebugDocumentHelper::AddDeferredText`를 호출한 후이 메서드를 호출 하면 `E_FAIL` 반환 됩니다.  
   
-## <a name="see-also"></a>참조  
- [IDebugDocumentHelper 인터페이스](../../winscript/reference/idebugdocumenthelper-interface.md)    
- [IDebugDocumentHelper:: AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)    
+## <a name="see-also"></a>참고 항목  
+ [IDebugDocumentHelper 인터페이스](../../winscript/reference/idebugdocumenthelper-interface.md)   
+ [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
  [IDebugDocumentTextEvents 인터페이스](../../winscript/reference/idebugdocumenttextevents-interface.md)

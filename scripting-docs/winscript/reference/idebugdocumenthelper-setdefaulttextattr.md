@@ -40,15 +40,15 @@ HRESULT SetDefaultTextAttr(
  기본 소스 텍스트 특성입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드는 `HRESULT`를 반환 합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
+ 이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
   
 |값|설명|  
 |-----------|-----------------|  
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>주의  
- 이 메서드에서 기본 특성을 변경 하지 않는 한 스크립트 블록 외부에 있는 텍스트의 기본 특성은 SOURCETEXT_ATTR_NONSOURCE입니다. 사용자 인터페이스는이 정보를 사용 하 여 스크립트 블록 외부에 있는 텍스트를 읽기 전용으로 표시할 수 있습니다.  
+ 이 메서드에서 기본 특성을 변경 하지 않는 한 스크립트 블록 외부에 있는 텍스트에 대 한 기본 특성은 SOURCETEXT_ATTR_NONSOURCE입니다. 사용자 인터페이스는이 정보를 사용 하 여 스크립트 블록 외부에 있는 텍스트를 읽기 전용으로 표시할 수 있습니다.  
   
-## <a name="see-also"></a>참조  
- [IDebugDocumentHelper 인터페이스](../../winscript/reference/idebugdocumenthelper-interface.md)    
+## <a name="see-also"></a>참고 항목  
+ [IDebugDocumentHelper 인터페이스](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [SOURCE_TEXT_ATTR 열거형](../../winscript/reference/source-text-attr-enumeration.md)

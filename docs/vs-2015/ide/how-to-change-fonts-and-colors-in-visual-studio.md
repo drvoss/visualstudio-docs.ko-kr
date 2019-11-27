@@ -65,5 +65,5 @@ Visual Studio의 IDE 프레임과 도구 창의 색을 여러 가지 방식으�
 
 5. **크기** 목록에서 텍스트 크기를 선택한 다음 **확인** 단추를 선택합니다.
 
-## <a name="see-also"></a>관련 항목:
- [Accessibility Features of Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) [How to: Change Fonts and Colors in the Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+## <a name="see-also"></a>참고 항목
+ [Visual Studio의 내게 필요한 옵션 기능](../ide/reference/accessibility-features-of-visual-studio.md) [방법: 편집기에서 글꼴 및 색 변경](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

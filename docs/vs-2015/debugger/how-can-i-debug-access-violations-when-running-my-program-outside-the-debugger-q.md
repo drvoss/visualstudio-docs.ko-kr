@@ -36,8 +36,8 @@ ms.locfileid: "74299257"
 ## <a name="solution"></a>솔루션  
  [Just-In-Time 디버깅](../debugger/just-in-time-debugging-in-visual-studio.md) 옵션을 설정하고 액세스 위반이 발생할 때까지 프로그램을 독립 실행형으로 실행합니다. 그런 다음, **액세스 위반** 대화 상자에서 **취소**를 클릭하여 디버거를 시작할 수 있습니다.  
   
- 또는 기술 자료 문서 Q133174 "How to Locate Where a General Protection (GP) Fault Occurs."를 참조하십시오. You can find Knowledge Base articles on the MSDN Library CD or by searching [http://support.microsoft.com/](https://support.microsoft.com/).  
+ 또는 기술 자료 문서 Q133174 "How to Locate Where a General Protection (GP) Fault Occurs."를 참조하십시오. 기술 자료 문서는 MSDN Library CD 또는 [http://support.microsoft.com/](https://support.microsoft.com/)을 검색 하 여 찾을 수 있습니다.  
   
-## <a name="see-also"></a>관련 항목:  
+## <a name="see-also"></a>참고 항목  
  [네이티브 코드 디버깅 FAQ](../debugger/debugging-native-code-faqs.md)   
  [네이티브 코드 디버그](../debugger/debugging-native-code.md)

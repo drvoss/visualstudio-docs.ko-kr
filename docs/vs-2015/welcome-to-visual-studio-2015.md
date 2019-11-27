@@ -15,7 +15,7 @@ ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7eeb6b0ac3322090cf85e26ac6388aac76890d44
 ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74297571"
@@ -36,7 +36,7 @@ ms.locfileid: "74297571"
 
  [코드 갤러리](https://code.msdn.microsoft.com/) 를 탐색하여 더 신속하게 앱을 작성하는 데 도움이 되는 샘플을 찾아보는 것도 잊지 마세요.
 
- [Visual Studio 다운로드](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)에서 Visual Studio 2015를 다운로드하여 설치할 수 있습니다. To learn more about the installation process, see [Install Visual Studio 2015](./install/install-visual-studio-2015.md).
+ [Visual Studio 다운로드](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)에서 Visual Studio 2015를 다운로드하여 설치할 수 있습니다. 설치 프로세스에 대해 자세히 알아보려면 [Visual Studio 2015 설치](./install/install-visual-studio-2015.md)를 참조 하세요.
 
 ## <a name="extend-visual-studio"></a>Visual Studio 확장
  코드를 작성하는 동안 자주 사용하는 도구 또는 스크립트를 포함하기 위해 사용자 고유의 Visual Studio 확장을 추가합니다. 사용자 지정 메뉴 항목 및 도구 창을 만들어 사용자 고유의 도구를 Visual Studio IDE에 통합할 수 있습니다. 코드를 분석하고 수정할 수 있도록 Visual Studio 편집기를 확장하거나 새 프로젝트 형식을 추가하여 필요한 항목만 포함할 수 있습니다.
@@ -67,7 +67,7 @@ ms.locfileid: "74297571"
 ## <a name="connect-your-apps-to-services"></a>앱을 서비스에 연결
  다음과 같은 서비스에 즉시 연결할 수 있습니다(각 서비스에 대한 계정이 있다고 가정함).
 
-- [Azure 모바일 서비스](https://azure.microsoft.com/documentation/services/mobile-services/)
+- [Azure Mobile Services](https://azure.microsoft.com/documentation/services/mobile-services/)
 
 - [Azure Storage](https://azure.microsoft.com/documentation/services/storage/)
 
@@ -81,7 +81,7 @@ ms.locfileid: "74297571"
 ### <a name="check-in-your-code"></a>코드 체크 인
  팀에서 작업하는 경우 팀의 모든 구성원이 동일한 코드베이스를 사용하도록 최신 버전의 코드도 공유해야 합니다. Visual Studio는 Visual Studio Team Services나 Team Foundation Server와 원활하게 통합되어 Git 또는 TFVC(Team Foundation 버전 제어)를 통해 버전 제어를 제공합니다. 로컬 서버를 유지 관리하지 않고 클라우드에 코드를 저장하려면 Visual Studio Team Services를 사용하고, 온-프레미스 서버를 사용하려면 Team Foundation Server를 사용합니다. 코드 프로젝트를 만들 때마다 버전 제어에 추가하는 옵션이 있습니다. 요구 사항에 가장 적합한 버전 제어에 대해 알아보려면 [버전 제어 사용](https://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)을 참조하세요.
 
-### <a name="build-your-app"></a>응용 프로그램 빌드
+### <a name="build-your-app"></a>앱 빌드
  [로컬로 앱을 빌드](./ide/compiling-and-building-in-visual-studio.md) 하고 올바르게 작동하는지 확인할 수 있습니다. 그런 다음 [디버깅 도구](./debugger/debugging-in-visual-studio.md) 를 사용하여 앱 관련 문제를 해결합니다. 또는 공유 빌드 서버나 클라우드에서 프로젝트를 빌드할 수 있습니다. 팀의 개발자들이 버전 제어에 체크 인한 코드를 빌드하도록 빌드 프로세스를 자동화합니다. 예를 들어 밤마다 또는 코드를 체크 인할 때마다 하나 이상의 프로젝트를 빌드할 수 있습니다.
 
 ### <a name="test-your-app"></a>응용 프로그램 테스트

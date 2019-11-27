@@ -1,5 +1,5 @@
 ---
-title: 'How to: Create a Toolbox Control That Uses Windows Forms | Microsoft Docs'
+title: '방법: Windows Forms를 사용 하는 도구 상자 컨트롤 만들기 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -87,7 +87,7 @@ ms.locfileid: "74300420"
   
 2. 네트워크 또는 웹 사이트에 .vsix 파일을 업로드합니다.  
   
-     If you upload the file to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web site, other users can use **Extension Manager** in Visual Studio to find the control and install it.  
+     [Visual Studio Marketplace](https://marketplace.visualstudio.com/) 웹 사이트에 파일을 업로드 하는 경우 다른 사용자가 Visual Studio의 **확장 관리자** 를 사용 하 여 컨트롤을 찾아 설치할 수 있습니다.  
   
-## <a name="see-also"></a>관련 항목:  
+## <a name="see-also"></a>참고 항목  
  [WPF 도구 상자 컨트롤 만들기](../extensibility/creating-a-wpf-toolbox-control.md)

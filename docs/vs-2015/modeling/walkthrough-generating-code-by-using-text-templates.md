@@ -1,5 +1,5 @@
 ---
-title: 'Walkthrough: Generating Code by using Text Templates | Microsoft Docs'
+title: '연습: 텍스트 템플릿을 사용 하 여 코드 생성 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -108,7 +108,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
    .
 
 ### <a name="add-a-test-code-file"></a>테스트 코드 파일 추가
- C# 파일을 프로젝트에 추가하고, 여기에 원하는 코드의 샘플을 작성합니다. 예를 들어 다음과 같은 가치를 제공해야 합니다.
+ C# 파일을 프로젝트에 추가하고, 여기에 원하는 코드의 샘플을 작성합니다. 예를 들면 다음과 같습니다.
 
 ```
 using System;
@@ -157,7 +157,7 @@ namespace MyProject
    <#@ output extension=".cs" #>
    ```
 
-   이어야 합니다.
+   .
 
    템플릿 파일의 보조 파일로 솔루션 탐색기에 .cs 파일이 표시되는지 확인합니다. 템플릿 파일의 이름 옆에 있는 [+]를 클릭하여 확인할 수 있습니다. 템플릿 파일을 저장하거나 템플릿 파일에서 포커스를 이동할 때마다 이 파일이 템플릿 파일에서 생성됩니다. 생성된 파일은 프로젝트의 일부로 컴파일됩니다.
 
@@ -420,5 +420,5 @@ namespace MyProject
 ## <a name="troubleshooting-the-text-template"></a>텍스트 템플릿 문제 해결
  **오류 목록**에 템플릿 변환 또는 컴파일 오류가 표시된 경우 또는 출력 파일이 정확히 생성되지 않은 경우 [TextTransform 유틸리티 사용하여 파일 생성](../modeling/generating-files-with-the-texttransform-utility.md)에 설명된 방법으로 텍스트 템플릿의 문제를 해결할 수 있습니다.
 
-## <a name="see-also"></a>관련 항목:
- [Design-Time Code Generation by using T4 Text Templates](../modeling/design-time-code-generation-by-using-t4-text-templates.md) [Writing a T4 Text Template](../modeling/writing-a-t4-text-template.md)
+## <a name="see-also"></a>참고 항목
+ T4 텍스트 [템플릿을 사용 하 여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md) [t4 텍스트 템플릿 작성](../modeling/writing-a-t4-text-template.md)

@@ -1,5 +1,5 @@
 ---
-title: 'CA1065: Do not raise exceptions in unexpected locations | Microsoft Docs'
+title: 'CA1065: 예기치 않은 위치에서 예외를 발생 시 키 지 않음 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -36,104 +36,104 @@ ms.locfileid: "74295938"
  예외를 throw하지 않아야 하는 메서드가 예외를 throw했습니다.
 
 ## <a name="rule-description"></a>규칙 설명
- Methods that are not expected to throw exceptions can be categorized as follows:
+ 예외를 throw 하지 않을 것으로 예상 되는 메서드는 다음과 같이 분류할 수 있습니다.
 
-- Property Get Methods
+- Property Get 메서드
 
 - 이벤트 접근자 메서드
 
-- Equals Methods
+- Equals 메서드
 
-- GetHashCode Methods
+- GetHashCode 메서드
 
-- ToString Methods
+- ToString 메서드
 
 - 정적 생성자
 
 - 종료자
 
-- Dispose Methods
+- Dispose 메서드
 
 - 같음 연산자
 
-- Implicit Cast Operators
+- 암시적 캐스트 연산자
 
-  The following sections discuss these method types.
+  다음 섹션에서는 이러한 메서드 형식에 대해 설명 합니다.
 
-### <a name="property-get-methods"></a>Property Get Methods
- Properties are basically smart fields. Therefore, they should behave like a field as much as possible. Fields do not throw exceptions and neither should properties. If you have a property that throws an exception, consider making it a method.
+### <a name="property-get-methods"></a>Property Get 메서드
+ 속성은 기본적으로 스마트 필드입니다. 따라서 필드는 가능한 한 필드 처럼 동작 합니다. 필드는 예외를 throw 하지 않으며 속성을 지정 하지 않습니다. 예외를 throw 하는 속성이 있는 경우 해당 속성을 메서드로 만드는 것이 좋습니다.
 
- The following exceptions are allowed to be thrown from a property get method:
+ 다음 예외는 속성 get 메서드에서 throw 될 수 있습니다.
 
-- <xref:System.InvalidOperationException?displayProperty=fullName> and all derivatives (including <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> 및 모든 파생 (<xref:System.ObjectDisposedException?displayProperty=fullName>포함)
 
-- <xref:System.NotSupportedException?displayProperty=fullName> and all derivatives
+- <xref:System.NotSupportedException?displayProperty=fullName> 및 모든 파생
 
-- <xref:System.ArgumentException?displayProperty=fullName> (only from indexed get)
+- <xref:System.ArgumentException?displayProperty=fullName> (인덱싱된 get 에서만)
 
-- <xref:System.Collections.Generic.KeyNotFoundException> (only from indexed get)
+- <xref:System.Collections.Generic.KeyNotFoundException> (인덱싱된 get 에서만)
 
 ### <a name="event-accessor-methods"></a>이벤트 접근자 메서드
- Event accessors should be simple operations that do not throw exceptions. An event should not throw an exception when you try to add or remove an event handler.
+ 이벤트 접근자는 예외를 throw 하지 않는 간단한 작업 이어야 합니다. 이벤트는 이벤트 처리기를 추가 하거나 제거 하려고 할 때 예외를 throw 해서는 안 됩니다.
 
- The following exceptions are allowed to be thrown from an event accesor:
+ 다음 예외는 이벤트 accesor throw 될 수 있습니다.
 
-- <xref:System.InvalidOperationException?displayProperty=fullName> and all derivatives (including <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> 및 모든 파생 (<xref:System.ObjectDisposedException?displayProperty=fullName>포함)
 
-- <xref:System.NotSupportedException?displayProperty=fullName> and all derivatives
+- <xref:System.NotSupportedException?displayProperty=fullName> 및 모든 파생
 
-- <xref:System.ArgumentException> and derivatives
+- <xref:System.ArgumentException> 및 파생물
 
-### <a name="equals-methods"></a>Equals Methods
- The following **Equals** methods should not throw exceptions:
+### <a name="equals-methods"></a>Equals 메서드
+ 다음 **Equals** 메서드는 예외를 throw 해서는 안 됩니다.
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 
 - [M:IEquatable.Equals](https://go.microsoft.com/fwlink/?LinkId=113472)
 
-  An **Equals** method should return `true` or `false` instead of throwing an exception. For example, if Equals is passed two mismatched types it should just return `false` instead of throwing an <xref:System.ArgumentException>.
+  **Equals** 메서드는 예외를 throw 하는 대신 `true` 또는 `false`를 반환 해야 합니다. 예를 들어 Equals가 두 개의 일치 하지 않는 형식을 전달 하는 경우 <xref:System.ArgumentException>를 throw 하는 대신 `false` 반환 해야 합니다.
 
-### <a name="gethashcode-methods"></a>GetHashCode Methods
- The following **GetHashCode** methods should usually not throw exceptions:
+### <a name="gethashcode-methods"></a>GetHashCode 메서드
+ 다음 **GetHashCode** 메서드는 일반적으로 예외를 throw 하지 않아야 합니다.
 
 - <xref:System.Object.GetHashCode%2A>
 
-- [M:IEqualityComparer.GetHashCode(T)](https://go.microsoft.com/fwlink/?LinkId=113477)
+- [M:IEqualityComparer.GetHashCode (T)](https://go.microsoft.com/fwlink/?LinkId=113477)
 
-  **GetHashCode** should always return a value. Otherwise, you can lose items in the hash table.
+  **GetHashCode** 는 항상 값을 반환 해야 합니다. 그렇지 않으면 해시 테이블의 항목이 손실 될 수 있습니다.
 
-  The versions of **GetHashCode** that take an argument can throw an <xref:System.ArgumentException>. However, **Object.GetHashCode** should never throw an exception.
+  인수를 사용 하는 **GetHashCode** 버전은 <xref:System.ArgumentException>을 throw 할 수 있습니다. 그러나 **개체 GetHashCode** 는 예외를 throw 해서는 안 됩니다.
 
-### <a name="tostring-methods"></a>ToString Methods
- The debugger uses <xref:System.Object.ToString%2A?displayProperty=fullName> to help display information about objects in string format. Therefore, **ToString** should not change the state of an object and it should not throw exceptions.
+### <a name="tostring-methods"></a>ToString 메서드
+ 디버거는 <xref:System.Object.ToString%2A?displayProperty=fullName>를 사용 하 여 개체에 대 한 정보를 문자열 형식으로 표시 합니다. 따라서 **ToString** 은 개체의 상태를 변경 하면 안 되며 예외를 throw 해서는 안 됩니다.
 
 ### <a name="static-constructors"></a>정적 생성자
- Throwing exceptions from a static constructor causes the type to be unusable in the current application domain. You should have a very good reason (such as a security issue) for throwing an exception from a static constructor.
+ 정적 생성자에서 예외를 throw 하면 현재 응용 프로그램 도메인에서 형식을 사용할 수 없게 됩니다. 정적 생성자에서 예외를 throw 하기 위한 매우 좋은 이유 (예: 보안 문제)가 있어야 합니다.
 
 ### <a name="finalizers"></a>종료자
- Throwing an exception from a finalizer causes the CLR to fail fast, which tears down the process. Therefore, throwing exceptions in a finalizer should always be avoided.
+ 종료자에서 예외를 throw 하면 CLR이 신속 하 게 실패 하 여 프로세스가 중단 됩니다. 따라서 종료자에서 예외 throw는 항상 피해 야 합니다.
 
-### <a name="dispose-methods"></a>Dispose Methods
- A <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> method should not throw an exception. Dispose is often called as part of the clean up logic in a `finally` clause. Therefore, explicitly throwing an exception from Dispose forces the user to add exception handling inside the `finally` clause.
+### <a name="dispose-methods"></a>Dispose 메서드
+ <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> 메서드는 예외를 throw 해서는 안 됩니다. Dispose는 종종 `finally` 절에서 정리 논리의 일부로 호출 됩니다. 따라서 Dispose에서 명시적으로 예외를 throw 하면 사용자가 `finally` 절 내에 예외 처리를 추가 하 게 됩니다.
 
- The **Dispose(false)** code path should never throw exceptions, because this is almost always called from a finalizer.
+ **Dispose (false)** 코드 경로는 거의 항상 종료자에서 호출 되기 때문에 예외를 throw 해서는 안 됩니다.
 
-### <a name="equality-operators--"></a>Equality Operators (==, !=)
- Like Equals methods, equality operators should return either `true` or `false` and should not throw exceptions.
+### <a name="equality-operators--"></a>같음 연산자 (= =,! =)
+ Equals 메서드와 마찬가지로 같음 연산자는 `true` 또는 `false`을 반환 해야 하며 예외를 throw 해서는 안 됩니다.
 
-### <a name="implicit-cast-operators"></a>Implicit Cast Operators
- Because the user is often unaware that an implicit cast operator has been called, an exception thrown by the implicit cast operator is completely unexpected. Therefore, no exceptions should be thrown from implicit cast operators.
+### <a name="implicit-cast-operators"></a>암시적 캐스트 연산자
+ 사용자는 암시적 캐스트 연산자가 호출 되었음을 인식 하지 못하는 경우가 많으므로 암시적 캐스트 연산자에 의해 throw 된 예외는 완전히 예기치 않은 것입니다. 따라서 암시적 캐스트 연산자에서 예외가 throw 되어서는 안 됩니다.
 
 ## <a name="how-to-fix-violations"></a>위반 문제를 해결하는 방법
- For property getters, either change the logic so that it no longer has to throw an exception, or change the property into a method.
+ 속성 getter의 경우 더 이상 예외를 throw 할 필요가 없도록 논리를 변경 하거나 속성을 메서드로 변경 합니다.
 
- For all other method types listed previously, change the logic so that it no longer must throw an exception.
+ 이전에 나열 된 다른 모든 메서드 형식의 경우 더 이상 예외를 throw 하지 않도록 논리를 변경 합니다.
 
 ## <a name="when-to-suppress-warnings"></a>경고를 표시하지 않는 경우
- It is safe to suppress a warning from this rule if the violation was caused by an exception declaration instead of a thrown exception.
+ 위반이 throw 된 예외 대신 예외 선언에 의해 발생 한 경우에는이 규칙에서 경고를 표시 하지 않는 것이 안전 합니다.
 
-## <a name="related-rules"></a>Related Rules
+## <a name="related-rules"></a>관련 규칙
  [CA2219: exception 절에서 예외를 발생시키지 마십시오.](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [디자인 경고](../code-quality/design-warnings.md)

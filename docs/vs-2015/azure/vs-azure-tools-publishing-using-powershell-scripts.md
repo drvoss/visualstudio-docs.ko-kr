@@ -24,7 +24,7 @@ Visual Studio에서 웹 애플리케이션을 만들 경우 Windows PowerShell �
 
 이러한 스크립트를 사용하면 일시적으로 사용할 사이트의 사용자 지정 버전(개발 및 테스트 환경이라고도 함)을 프로비저닝할 수 있습니다. 예를 들어 Azure 가상 컴퓨터 또는 웹 사이트의 스테이징 슬롯에 특정 버전의 웹 사이트를 설정하고 테스트 제품군 실행, 버그 재현, 버그 수정 사항 테스트, 제안된 변경 사항 시험, 데모 또는 프레젠테이션을 위한 사용자 지정 환경 설정을 수행할 수 있습니다. 프로젝트를 게시하는 스크립트를 만든 다음 필요에 따라 스크립트를 다시 실행하여 동일한 환경을 다시 만들거나 웹 애플리케이션의 자체 빌드로 스크립트를 실행하여 테스트를 위한 사용자 지정 환경을 만들 수 있습니다.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>필수 조건
 
 * Azure SDK 2.3 이상 [Visual Studio 다운로드](https://go.microsoft.com/fwlink/?LinkID=624384)를 참조하세요. (웹 프로젝트용 스크립트를 생성하기 위해 Azure SDK는 필요하지 않습니다. 이 기능은 클라우드 서비스의 웹 역할이 아닌 웹 프로젝트용입니다.)
 * Azure PowerShell 0.7.4 이상 [Azure PowerShell 설치 및 구성 방법](/powershell/azure/overview)을 참조하세요.
@@ -40,7 +40,7 @@ Azure 개발 시 Visual Studio에서 PowerShell을 사용하기 위한 추가 �
 
 ## <a name="scripts-that-visual-studio-generates"></a>Visual Studio에서 생성하는 스크립트
 
-Visual Studio는 2개의 Windows PowerShell 파일이 포함되어 있는 솔루션 수준 폴더 **PublishScripts** , 가상 머신 또는 웹 사이트의 게시 스크립트, 스크립트에 사용할 수 있는 함수가 포함된 모듈을 만듭니다. Visual Studio는 또한 배포하는 프로젝트의 상세 정보를 지정하는 JSON 형식으로 파일을 생성합니다.
+Visual Studio는 Windows PowerShell 파일이 두 개 포함된 **PublishScripts**라고 하는 솔루션 수준의 폴더, 가상 컴퓨터 또는 웹 사이트용 게시 스크립트 및 스크립트에서 사용할 수 있는 함수가 포함된 모듈을 생성합니다. Visual Studio는 또한 배포하는 프로젝트의 상세 정보를 지정하는 JSON 형식으로 파일을 생성합니다.
 
 ### <a name="windows-powershell-publish-script"></a>Windows PowerShell 게시 스크립트
 
@@ -52,7 +52,7 @@ Visual Studio에서 생성하는 Windows PowerShell 모듈에는 게시 스크�
 
 ### <a name="json-configuration-file"></a>JSON 구성 파일
 
-JSON 파일은 **Configurations** 폴더에 생성되며 Azure에 배포할 리소스를 정확히 지정하는 구성 데이터가 포함되어 있습니다. 웹 사이트를 만든 경우 Visual Studio가 생성하는 파일의 이름은 project-name-WAWS-dev.json이며 가상 머신을 만든 경우에는 project name-VM-dev.json입니다. 다음은 웹 사이트를 만들 때 생성된 JSON 구성 파일의 예입니다. 대부분의 값은 따로 설명이 필요하지 않습니다. 웹 사이트 이름은 Azure에서 생성하므로 프로젝트 이름과 일치하지 않을 수 있습니다.
+JSON 파일은 **Configurations** 폴더에 만들어지며, Azure에 배포할 리소스를 정확하게 지정하는 구성 데이터가 포함되어 있습니다. 웹 사이트를 만든 경우 Visual Studio가 생성하는 파일의 이름은 project-name-WAWS-dev.json이며 가상 머신을 만든 경우에는 project name-VM-dev.json입니다. 다음은 웹 사이트를 만들 때 생성된 JSON 구성 파일의 예입니다. 대부분의 값은 따로 설명이 필요하지 않습니다. 웹 사이트 이름은 Azure에서 생성하므로 프로젝트 이름과 일치하지 않을 수 있습니다.
 
 ```json
 {
@@ -144,7 +144,7 @@ JSON 파일은 **Configurations** 폴더에 생성되며 Azure에 배포할 리�
 
 JSON 구성을 편집하여 게시 스크립트를 실행할 때 발생하는 결과를 변경할 수 있습니다. `cloudService` 및 `virtualMachine` 섹션은 필수이며 `databases` 섹션은 필요하지 않을 경우 삭제할 수 있습니다. Visual Studio에서 생성한 기본 구성 파일이 비어 있는 속성은 선택 사항이고, 기본 구성 파일에 값이 있는 속성은 필수 속성입니다.
 
-Azure에 단일 프로덕션 사이트가 아닌 여러 배포 환경(슬롯이라고 함)이 포함된 웹 사이트가 있을 경우 JSON 구성 파일에서 웹 사이트 이름에 슬롯 이름을 포함할 수 있습니다. 예를 들어 이름이 **mysite**인 웹 사이트와 **test**라는 슬롯이 있을 경우 URI는 `mysite-test.cloudapp.net`이지만 구성 파일에서 사용해야 할 올바른 이름은 mysite(test)입니다. 구독에 웹 사이트와 슬롯이 이미 있는 경우에만 이렇게 할 수 있습니다. 없을 경우에는 슬롯을 지정하지 않고 스크립트를 실행한 다음 [Azure Portal](https://portal.azure.com/)에 슬롯을 만들고 수정한 웹 사이트 이름으로 스크립트를 실행합니다. 웹앱의 배포 슬롯에 대한 자세한 내용은 [Azure App Service에서 웹앱에 대한 스테이징 환경 설정](/azure/app-service/web-sites-staged-publishing)을 참조하세요.
+Azure에 단일 프로덕션 사이트가 아닌 여러 배포 환경(슬롯이라고 함)이 포함된 웹 사이트가 있을 경우 JSON 구성 파일에서 웹 사이트 이름에 슬롯 이름을 포함할 수 있습니다. 예를 들어 이름이 **mysite**인 웹 사이트가 있고 이 웹 사이트의 슬롯 이름이 **test**이면 URI는 `mysite-test.cloudapp.net`입니다. 그러나 구성 파일에서 사용할 올바른 이름은 mysite(test)입니다. 구독에 웹 사이트와 슬롯이 이미 있는 경우에만 이렇게 할 수 있습니다. 없을 경우에는 슬롯을 지정하지 않고 스크립트를 실행한 다음 [Azure Portal](https://portal.azure.com/)에 슬롯을 만들고 수정한 웹 사이트 이름으로 스크립트를 실행합니다. 웹앱의 배포 슬롯에 대한 자세한 내용은 [Azure App Service에서 웹앱에 대한 스테이징 환경 설정](/azure/app-service/web-sites-staged-publishing)을 참조하세요.
 
 ## <a name="how-to-run-the-publish-scripts"></a>게시 스크립트 실행 방법
 
@@ -156,7 +156,7 @@ Azure에 단일 프로덕션 사이트가 아닌 여러 배포 환경(슬롯이�
 
    ![웹 배포 패키지 만들기](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
-   For more information, see [How to: Create a Web Deployment Package in Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). 또한 [게시 스크립트 사용자 지정 및 확장](#customizing-and-extending-the-publish-scripts)에서 설명하는 대로 웹 배포 패키지 생성을 자동화할 수 있습니다.
+   자세한 내용은 [방법: Visual Studio에서 웹 배포 패키지 만들기](https://msdn.microsoft.com/library/dd465323.aspx)를 참조 하세요. 또한 [게시 스크립트 사용자 지정 및 확장](#customizing-and-extending-the-publish-scripts)에서 설명하는 대로 웹 배포 패키지 생성을 자동화할 수 있습니다.
 
 1. **솔루션 탐색기**에서 스크립트의 상황에 맞는 메뉴를 연 다음 **PowerShell ISE로 열기**를 선택합니다.
 1. 이 컴퓨터에서 Windows PowerShell 스크립트를 처음으로 실행하는 경우 관리자 권한으로 명령 프롬프트 창을 열고 다음 명령을 입력합니다.
@@ -244,7 +244,7 @@ Azure에 단일 프로덕션 사이트가 아닌 여러 배포 환경(슬롯이�
     }
     ```
 
-1. `New-WebDeployPackage`을(를) 다음 코드로 바꾸고 `$msbuildCmd` 생성 줄에서 자리 표시자를 바꿉니다. This code is for Visual Studio 2015. If you're using Visual Studio 2017, change the **VisualStudioVersion** property to `15.0` (`12.0` for Visual Studio 2013).
+1. `New-WebDeployPackage`을(를) 다음 코드로 바꾸고 `$msbuildCmd` 생성 줄에서 자리 표시자를 바꿉니다. 이 코드는 Visual Studio 2015에 대 한 코드입니다. Visual Studio 2017을 사용 하는 경우 **VisualStudioVersion** 속성을 `15.0` (`12.0` Visual Studio 2013)로 변경 합니다.
 
     ```powershell
     function New-WebDeployPackage
@@ -324,7 +324,7 @@ Windows PowerShell 명령 프롬프트에서 사용할 수 있는 함수에 대�
 | Find-AzureVM |지정된 Azure 가상 머신을 가져옵니다. |
 | Format-DevTestMessageWithTime |메시지 앞에 날짜와 시간을 추가합니다. 이 함수는 오류 및 자세한 정보 표시 스트림에 작성되는 메시지를 위해 설계되었습니다. |
 | Get-AzureSQLDatabaseConnectionString |연결 문자열을 조립하여 Azure SQL 데이터베이스에 연결합니다. |
-| Get-AzureVMStorage |Returns the name of the first storage account with the name pattern "devtest *" (case insensitive) in the specified location or affinity group. If the "devtest*" storage account doesn't match the location or affinity group, the function ignores it. 위치 또는 선호도 그룹을 지정합니다. |
+| Get-AzureVMStorage |*지정 된 위치 또는 선호도 그룹에서 이름 패턴이 "devtest" (대/소문자 구분 안 함) 인 첫 번째 저장소 계정의 이름을 반환 합니다. "Devtest*" 저장소 계정이 위치 또는 선호도 그룹과 일치 하지 않으면 함수는이를 무시 합니다. 위치 또는 선호도 그룹을 지정합니다. |
 | Get-MSDeployCmd |MsDeploy.exe 도구를 실행하는 명령을 반환합니다. |
 | New-AzureVMEnvironment |JSON 구성 파일의 값과 일치하는 구독에서 가상 머신을 검색하거나 만듭니다. |
 | Publish-WebPackage |MsDeploy.exe 및 웹 게시 패키지인 .Zip 파일을 사용하여 리소스를 웹 사이트에 배포합니다. 이 함수는 출력을 생성하지 않습니다. MSDeploy.exe에 대한 호출이 실패할 경우 함수가 예외를 throw합니다. 더 자세한 출력을 가져오려면 **-Verbose** 옵션을 사용합니다. |

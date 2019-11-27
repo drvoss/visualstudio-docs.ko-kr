@@ -1,5 +1,5 @@
 ---
-title: Define a profile to extend UML | Microsoft Docs
+title: 프로필을 정의 하 여 UML 확장 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -26,11 +26,11 @@ ms.locfileid: "74295674"
 # <a name="define-a-profile-to-extend-uml"></a>프로필을 정의하여 UML 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-You can define a *UML profile* to customize the standard model elements for specific purposes. A profile defines one or more *UML stereotypes*. 스테레오타입을 사용하여 특정 종류의 개체를 나타내는 것으로 형식을 표시할 수 있습니다. 스테레오타입은 요소의 속성 목록을 확장할 수도 있습니다.
+*UML 프로필* 을 정의 하 여 특정 용도에 맞게 표준 모델 요소를 사용자 지정할 수 있습니다. 프로필은 하나 이상의 *UML 스테레오 타입*을 정의 합니다. 스테레오타입을 사용하여 특정 종류의 개체를 나타내는 것으로 형식을 표시할 수 있습니다. 스테레오타입은 요소의 속성 목록을 확장할 수도 있습니다.
 
- 지원되는 버전의 Visual Studio와 함께 여러 프로필이 설치됩니다. 이 기능을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요. For more information about those profiles and about how to apply stereotypes, see [Customize your model with profiles and stereotypes](../modeling/customize-your-model-with-profiles-and-stereotypes.md).
+ 지원되는 버전의 Visual Studio와 함께 여러 프로필이 설치됩니다. 이 기능을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요. 이러한 프로필 및 스테레오 타입을 적용 하는 방법에 대 한 자세한 내용은 [프로필 및 스테레오 타입을 사용 하 여 모델 사용자 지정](../modeling/customize-your-model-with-profiles-and-stereotypes.md)을 참조 하세요.
 
- 사용자 고유의 프로필을 정의하여 비즈니스 영역 또는 아키텍처에 맞게 UML을 조정 및 확장할 수 있습니다. 예를 들어 다음과 같은 가치를 제공해야 합니다.
+ 사용자 고유의 프로필을 정의하여 비즈니스 영역 또는 아키텍처에 맞게 UML을 조정 및 확장할 수 있습니다. 예를 들면 다음과 같습니다.
 
 - 웹 사이트를 자주 정의하는 경우 클래스 다이어그램의 클래스에 적용할 수 있는 «WebPage» 스테레오타입을 제공하는 고유한 프로필을 정의할 수 있습니다. 그런 다음 클래스 다이어그램을 사용하여 웹 사이트를 계획할 수 있습니다. 모든 «WebPage» 클래스에 페이지 콘텐츠, 스타일 등에 대한 추가 속성이 있습니다.
 
@@ -41,21 +41,21 @@ You can define a *UML profile* to customize the standard model elements for spec
 > [!NOTE]
 > 편집 중인 모델에 프로필의 스테레오타입을 적용한 후 다른 사용자와 모델을 공유하는 경우 자신의 컴퓨터에 동일한 프로필을 설치해야 합니다. 그렇지 않으면 사용된 스테레오타입을 볼 수 없습니다.
 
- A profile is often part of a larger [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] extension. 예를 들어 모델의 일부를 코드로 변환하는 명령을 정의할 수 있습니다. 사용자가 변환하려는 패키지에 적용해야 하는 프로필을 정의할 수 있습니다. 단일 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 확장에서 이 프로필과 함께 새 명령을 배포합니다.
+ 프로필은 종종 큰 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 확장의 일부입니다. 예를 들어 모델의 일부를 코드로 변환하는 명령을 정의할 수 있습니다. 사용자가 변환하려는 패키지에 적용해야 하는 프로필을 정의할 수 있습니다. 단일 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 확장에서 이 프로필과 함께 새 명령을 배포합니다.
 
  프로필의 지역화된 변형을 정의할 수도 있습니다. 확장을 로드하는 사용자에게 해당 문화권에 적합한 변형이 표시됩니다.
 
-## <a name="DefineProfile"></a> How to Define a Profile
+## <a name="DefineProfile"></a>프로필을 정의 하는 방법
 
 #### <a name="to-define-a-uml-profile"></a>UML 프로필을 정의하려면
 
 1. 파일 이름 확장명이 `.profile`인 새 XML 파일을 만듭니다.
 
-2. Add stereotype definitions according to the guidelines described in [The Structure of a Profile](#Schema).
+2. [프로필 구조](#Schema)에 설명 된 지침에 따라 스테레오 타입 정의를 추가 합니다.
 
 3. Visual Studio 확장(`.vsix` 파일)에 프로필을 추가합니다. 프로필에 대한 새 확장을 만들거나 기존 확장에 프로필을 추가할 수 있습니다.
 
-     See the next section, [How to Add a Profile to a Visual Studio Extension](#AddProfile).
+     다음 섹션인 [Visual Studio 확장에 프로필을 추가 하는 방법](#AddProfile)을 참조 하세요.
 
 4. 컴퓨터에 확장을 설치합니다.
 
@@ -67,16 +67,16 @@ You can define a *UML profile* to customize the standard model elements for spec
 
     1. UML 탐색기에서 모델을 선택합니다.
 
-    2. In the Properties window, click the **Profiles** property. 프로필이 메뉴에 나타납니다. 프로필 옆의 확인 표시를 설정합니다.
+    2. 속성 창에서 **프로필** 속성을 클릭 합니다. 프로필이 메뉴에 나타납니다. 프로필 옆의 확인 표시를 설정합니다.
 
-    3. 프로필에서 스테레오타입을 정의하는 요소를 선택합니다. In the Properties window, click the **Stereotypes** property. 스테레오타입이 목록에 나타납니다. 스테레오타입 중 하나에 대해 확인 표시를 설정합니다.
+    3. 프로필에서 스테레오타입을 정의하는 요소를 선택합니다. 속성 창에서 **스테레오 타입** 속성을 클릭 합니다. 스테레오타입이 목록에 나타납니다. 스테레오타입 중 하나에 대해 확인 표시를 설정합니다.
 
     4. 프로필에서 이 스테레오타입에 대한 추가 속성을 정의하는 경우 스테레오타입 속성을 확장하여 표시합니다.
 
 6. 자신의 컴퓨터에 설치하도록 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 다른 사용자에게 확장 파일을 보냅니다.
 
-## <a name="AddProfile"></a> How to Add a Profile to a Visual Studio Extension
- 프로필을 설치하고 다른 사용자에게 보낼 수 있으려면 Visual Studio 확장에 프로필을 추가해야 합니다. For more information, see [Deploying Visual Studio Extensions](https://go.microsoft.com/fwlink/?LinkId=160780).
+## <a name="AddProfile"></a>Visual Studio 확장에 프로필을 추가 하는 방법
+ 프로필을 설치하고 다른 사용자에게 보낼 수 있으려면 Visual Studio 확장에 프로필을 추가해야 합니다. 자세한 내용은 [Visual Studio 확장 배포](https://go.microsoft.com/fwlink/?LinkId=160780)를 참조 하세요.
 
 #### <a name="to-define-a-profile-in-a-new-visual-studio-extension"></a>새 Visual Studio 확장에서 프로필을 정의하려면
 
@@ -87,41 +87,41 @@ You can define a *UML profile* to customize the standard model elements for spec
 
    1. **파일** 메뉴에서 **새로 만들기**를 가리킨 다음 **프로젝트**를 클릭합니다.
 
-   2. In the **New Project** dialog box, under **Installed Templates**, expand **Visual C#** , click **Extensibility**, and then click **VSIX project**. Set the project name and click **OK**.
+   2. **새 프로젝트** 대화 상자의 **설치 된 템플릿**에서 **Visual C#** 을 확장 하 고 **확장성**을 클릭 한 다음 **VSIX 프로젝트**를 클릭 합니다. 프로젝트 이름을 설정 하 고 **확인을**클릭 합니다.
 
 2. 프로젝트에 프로필을 추가합니다.
 
-   - In Solution Explorer, right-click the project, point to **Add**, and then click **Existing Item**. 대화 상자에서 프로필 파일을 찾습니다.
+   - 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **추가**를 가리킨 다음 **기존 항목**을 클릭 합니다. 대화 상자에서 프로필 파일을 찾습니다.
 
-3. Set the profile file's **Copy to Output** property.
+3. 프로필 파일의 **출력 복사** 속성을 설정 합니다.
 
-   1. In Solution Explorer, right-click the profile file, and then click **Properties**.
+   1. 솔루션 탐색기에서 프로필 파일을 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 클릭 합니다.
 
-   2. In the Properties window, set the **Copy to Output Directory** property to **Copy Always**.
+   2. 속성 창에서 **출력 디렉터리로 복사** 속성을 **항상 복사**로 설정 합니다.
 
 4. 솔루션 탐색기에서 `source.extension.vsixmanifest`를 엽니다.
 
     파일이 확장 매니페스트 편집기에서 열립니다.
 
-5. On the **Assets** page, add a row describing the profile:
+5. **자산** 페이지에서 프로필을 설명 하는 행을 추가 합니다.
 
-   - **새로 만들기**를 클릭합니다. Set the fields in the **Add New Asset** dialog as follows.
+   - **새로 만들기**를 클릭합니다. **새 자산 추가** 대화 상자의 필드를 다음과 같이 설정 합니다.
 
-   - Set **Type** to `Microsoft.VisualStudio.UmlProfile`
+   - **유형** 을 `Microsoft.VisualStudio.UmlProfile`로 설정 합니다.
 
         이것은 드롭다운 선택 항목 중 하나가 아니므로 키보드에서 이 이름을 입력합니다.
 
-   - Click **File on filesystem** and select the name of your profile file, for example `MyProfile.profile`
+   - **파일 시스템에서 파일** 을 클릭 하 고 프로필 파일의 이름을 선택 합니다 (예: `MyProfile.profile`
 
 6. 프로젝트를 빌드합니다.
 
-7. **To debug the profile**, press F5.
+7. **프로필을 디버깅 하려면**f5 키를 누릅니다.
 
     Visual Studio의 실험적 인스턴스가 열립니다. 이 인스턴스에서 모델링 프로젝트를 엽니다. UML 탐색기에서 모델의 루트 요소를 선택하고 속성 창에서 프로필을 선택합니다. 그런 다음 모델 내의 요소를 선택하고 요소에 대해 정의한 스테레오타입을 설정합니다.
 
-8. **To extract the VSIX for deployment**
+8. **배포용 VSIX를 추출 하려면**
 
-   1. In Windows Explorer, open the folder **.\bin\Debug** or **.\bin\Release** to find the **.vsix** file. 이 파일은 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 확장 파일입니다. 컴퓨터에 설치하고 다른 Visual Studio 사용자에게 보낼 수 있습니다.
+   1. Windows 탐색기에서 **.\bin\Release** **폴더를** 열고 **.vsix** 파일을 찾습니다. 이 파일은 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 확장 파일입니다. 컴퓨터에 설치하고 다른 Visual Studio 사용자에게 보낼 수 있습니다.
 
    2. 확장을 설치하려면
 
@@ -135,11 +135,11 @@ You can define a *UML profile* to customize the standard model elements for spec
 
 1. 다음 세 개의 파일이 포함된 Windows 디렉터리를 만듭니다.
 
-    - *YourProfile* `.profile`
+    - *프로필* `.profile`
 
     - `extension.vsixmanifest`
 
-    - `[Content_Types].xml` - 이 이름을 대괄호와 함께 여기에 표시된 대로 입력합니다.
+    - `[Content_Types].xml`-여기에 표시 된 것 처럼 대괄호를 사용 하 여이 이름을 입력 합니다.
 
 2. 다음 텍스트를 포함하도록 `[Content_Types].xml`을 편집합니다. 각 파일 이름 확장명에 대한 항목이 포함되었는지 확인합니다.
 
@@ -155,7 +155,7 @@ You can define a *UML profile* to customize the standard model elements for spec
 
     - 다음 디렉터리에서 `extension.vsixmanifest`의 예를 확인할 수 있습니다.
 
-         *drive* **:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles**
+         *drive* **: S\Files\Microsoft Visual Studio [version] \Common7\IDE\Extensions\Microsoft\Architecture tools\umlprofiles**
 
     - 콘텐츠 노드는 다음과 같아야 합니다.
 
@@ -168,7 +168,7 @@ You can define a *UML profile* to customize the standard model elements for spec
 
 4. 세 개의 파일을 Zip 파일로 압축합니다.
 
-     In Windows Explorer, select the three files, right-click, point to **Send To**, and then click **Compressed (zipped) folder**.
+     Windows 탐색기에서 세 개의 파일을 선택 하 고 마우스 오른쪽 단추를 클릭 한 다음 **보내기**를 가리키고 **압축 (zip) 폴더**를 클릭 합니다.
 
 5. Zip 파일의 이름을 바꾸고 파일 이름 확장명을 `.zip`에서 `.vsix`로 변경합니다.
 
@@ -178,29 +178,29 @@ You can define a *UML profile* to customize the standard model elements for spec
 
 1. Windows 탐색기에서 `.vsix` 파일을 두 번 클릭하거나 Visual Studio 내에서 엽니다.
 
-2. Click **Install** in the dialog box that appears.
+2. 표시 되는 대화 상자에서 **설치** 를 클릭 합니다.
 
-3. To uninstall or temporarily disable the extension, open **Extensions and Updates** from the **Tools** menu.
+3. 확장을 제거 하거나 일시적으로 사용 하지 않도록 설정 하려면 **도구** 메뉴에서 **확장 및 업데이트** 를 엽니다.
 
-## <a name="Localized"></a> How to Define Localized Profiles
+## <a name="Localized"></a>지역화 된 프로필을 정의 하는 방법
  각 문화권 또는 언어에 대해 다른 프로필을 정의하고 모두 동일한 확장에 패키징할 수 있습니다. 사용자가 확장을 로드하면 해당 문화권에 대해 정의한 프로필이 표시됩니다.
 
  기본 프로필은 항상 제공해야 합니다. 사용자 문화권에 대해 프로필을 정의하지 않은 경우 기본 프로필이 표시됩니다.
 
 #### <a name="to-define-a-localized-profile"></a>지역화된 프로필을 정의하려면
 
-1. Create a profile as described in the previous sections[How to Define a Profile](#DefineProfile) and [How to Add a Profile to a Visual Studio Extension](#AddProfile). 이는 기본 프로필이며, 지역화된 프로필을 제공하지 않은 모든 설치에 사용됩니다.
+1. 이전 섹션인[프로필을 정의 하는 방법](#DefineProfile) 및 [Visual Studio 확장에 프로필을 추가](#AddProfile)하는 방법에 설명 된 대로 프로필을 만듭니다. 이는 기본 프로필이며, 지역화된 프로필을 제공하지 않은 모든 설치에 사용됩니다.
 
 2. 기본 프로필 파일과 동일한 디렉터리에 새 디렉터리를 추가합니다.
 
     > [!NOTE]
     > Visual Studio 확장 프로젝트를 사용하여 확장을 빌드하는 경우 솔루션 탐색기를 사용하여 프로젝트에 새 폴더를 추가합니다.
 
-3. 새 디렉터리의 이름을 지역화된 문화권에 대한 ISO 짧은 코드로 변경합니다. 예를 들어 불가리아어는 `bg`이고, 프랑스어는 `fr`입니다. `fr-CA`와 같은 특정 문화권이 아니라 일반적으로 두 문자로 이루어진 중립 문화권 코드를 사용해야 합니다. For more information about culture codes, see [CultureInfo.GetCultures method](https://go.microsoft.com/fwlink/?LinkId=160782), which provides a complete list of culture codes.
+3. 새 디렉터리의 이름을 지역화된 문화권에 대한 ISO 짧은 코드로 변경합니다. 예를 들어 불가리아어는 `bg`이고, 프랑스어는 `fr`입니다. `fr-CA`와 같은 특정 문화권이 아니라 일반적으로 두 문자로 이루어진 중립 문화권 코드를 사용해야 합니다. 문화권 코드에 대 한 자세한 내용은 전체 문화권 코드 목록을 제공 하는 [CultureInfo. GetCultures 메서드](https://go.microsoft.com/fwlink/?LinkId=160782)를 참조 하세요.
 
 4. 기본 프로필의 복사본을 새 디렉터리에 추가합니다. 파일 이름을 변경하지 마세요.
 
-     A sample [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] Extension folder, before it is built or compressed into a `.vsix` file, would contain the following folders and files:
+     `.vsix` 파일에 빌드 또는 압축 되기 전의 샘플 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 확장 폴더는 다음 폴더와 파일을 포함 합니다.
 
      `extension.vsixmanifest`
 
@@ -219,18 +219,18 @@ You can define a *UML profile* to customize the standard model elements for spec
 
 7. 이전 섹션에서 설명한 대로 확장 프로젝트를 빌드하거나 모든 파일을 압축하여 Visual Studio 확장을 빌드합니다.
 
-## <a name="Schema"></a> The Structure of a Profile
- The XSD file for UML profiles can be found in the following sample: [Setting Stereotypes and Profiles XSD](https://go.microsoft.com/fwlink/?LinkID=213811). 프로필 파일 편집에 도움이 되도록 `.xsd` 파일을 다음 위치에 설치합니다.
+## <a name="Schema"></a>프로필의 구조
+ UML 프로필에 대 한 XSD 파일은 다음 샘플: [스테레오 타입 및 프로필 Xsd 설정](https://go.microsoft.com/fwlink/?LinkID=213811)에서 찾을 수 있습니다. 프로필 파일 편집에 도움이 되도록 `.xsd` 파일을 다음 위치에 설치합니다.
 
- **%ProgramFiles%\Microsoft Visual Studio [version]\Xml\Schemas**
+ **%ProgramFiles%\Microsoft Visual Studio [version] \Xml\Schemas**
 
  이 섹션에서는 C# 프로필을 예로 사용합니다. 전체 프로필 정의는 다음 위치에서 확인할 수 있습니다.
 
- *drive* **:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\CSharp.profile**
+ *drive* **: S\Files\Microsoft Visual Studio [version] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\CSharp.profile**
 
  이 경로의 첫 번째 부분은 설치마다 다를 수 있습니다.
 
- For more information about the .NET profile, see [Standard stereotypes for UML models](../modeling/standard-stereotypes-for-uml-models.md).
+ .NET 프로필에 대 한 자세한 내용은 [UML 모델에 대 한 표준 스테레오 타입](../modeling/standard-stereotypes-for-uml-models.md)을 참조 하세요.
 
 ### <a name="main-sections-of-the-uml-profile-definition"></a>UML 프로필 정의의 주요 섹션
  모든 프로필에는 다음 내용이 포함됩니다.
@@ -251,14 +251,14 @@ You can define a *UML profile* to customize the standard model elements for spec
 
  모든 프로필에 세 개의 주요 섹션이 있습니다. 해당 프로필은 반대 순서로 다음과 같습니다.
 
-- `<propertyTypes>` - 스테레오타입 섹션에서 정의된 속성에 사용되는 형식 목록입니다.
+- `<propertyTypes>`-스테레오 타입 섹션에 정의 된 속성에 사용 되는 형식 목록입니다.
 
-- `<metaclasses>` - 이 프로필의 스테레오타입이 적용되는 모델 요소 형식(예: IClass, IInterface, IOperation, IDependency)의 목록입니다.
+- `<metaclasses>`-IClass, IInterface, Iinterface, Iinterface와 같이이 프로필의 스테레오 타입이 적용 되는 모델 요소 형식의 목록입니다.
 
-- `<stereotypes>` - 스테레오타입 정의입니다. 각 정의는 대상 모델 요소에 추가된 속성의 이름 및 형식을 포함합니다.
+- `<stereotypes>`-스테레오 타입 정의입니다. 각 정의는 대상 모델 요소에 추가된 속성의 이름 및 형식을 포함합니다.
 
-#### <a name="property-types"></a>속성 형식
- The `<propertyTypes>` section declares a list of types that are used for properties in the `<stereotypes>` section. 두 종류의 속성 형식이 있으며, 외부 형식과 열거형입니다.
+#### <a name="property-types"></a>속성 유형
+ `<propertyTypes>` 섹션에서는 `<stereotypes>` 섹션의 속성에 사용 되는 형식 목록을 선언 합니다. 두 종류의 속성 형식이 있으며, 외부 형식과 열거형입니다.
 
  외부 형식은 표준 .NET 형식의 정규화된 이름을 선언합니다.
 
@@ -289,7 +289,7 @@ You can define a *UML profile* to customize the standard model elements for spec
       name="Microsoft.VisualStudio.Uml.Components.IComponent" />
 ```
 
- For the full list of model element and relationship types that you can use as metaclasses, see [Model Element Types](#Elements).
+ 메타 클래스로 사용할 수 있는 모델 요소 및 관계 형식의 전체 목록은 [모델 요소 형식](#Elements)을 참조 하세요.
 
 #### <a name="stereotype-definition"></a>스테레오타입 정의
  `<stereotypes>` 섹션에는 하나 이상의 스테레오타입 정의가 포함되어 있습니다.
@@ -312,7 +312,7 @@ You can define a *UML profile* to customize the standard model elements for spec
 > [!NOTE]
 > 모니커 이름은 `/yourProfileName/`으로 시작해야 합니다. 여기서 `yourProfileName`은 프로필의 `name` 특성(이 예제에서는 "CSharpProfile")에서 정의됩니다. 모니커는 메타클래스 섹션에 있는 항목 중 하나의 이름으로 끝납니다.
 
- 각 스테레오타입은 적용되는 모델 요소에 추가하는 0개 이상의 속성을 나열할 수 있습니다. The `<propertyType>` contains a link to one of the types that are defined in the `<propertyTypes>` section. 링크는 `<externalTypeMoniker>`을 참조하는 `<externalType>,` 또는 `<enumerationTypeMoniker>`을 참조하는 `<enumerationType>` 중 하나여야 합니다. 다시, 링크는 프로필 이름으로 시작합니다.
+ 각 스테레오타입은 적용되는 모델 요소에 추가하는 0개 이상의 속성을 나열할 수 있습니다. `<propertyType>`에는 `<propertyTypes>` 섹션에 정의 된 형식 중 하나에 대 한 링크가 포함 되어 있습니다. 링크는 `<externalTypeMoniker>`을 참조하는 `<externalType>,` 또는 `<enumerationTypeMoniker>`을 참조하는 `<enumerationType>` 중 하나여야 합니다. 다시, 링크는 프로필 이름으로 시작합니다.
 
 ```
   <properties>
@@ -335,19 +335,19 @@ You can define a *UML profile* to customize the standard model elements for spec
 </stereotype>
 ```
 
-## <a name="Elements"></a> Model Element Types
- The set of types for which you can define stereotypes is listed in [UML model element types](../modeling/uml-model-element-types.md).
+## <a name="Elements"></a>모델 요소 형식
+ 스테레오 타입을 정의할 수 있는 형식 집합은 [UML 모델 요소 형식](../modeling/uml-model-element-types.md)에 나열 됩니다.
 
 ## <a name="troubleshooting"></a>문제 해결
  내 스테레오타입이 UML 모델에 나타나지 않습니다.
-패키지 또는 모델에서 프로필을 선택해야 합니다. 그러면 패키지 또는 모델 내 요소에 스테레오타입이 나타납니다. For more information, see [Add stereotypes to UML model elements](../modeling/add-stereotypes-to-uml-model-elements.md).
+패키지 또는 모델에서 프로필을 선택해야 합니다. 그러면 패키지 또는 모델 내 요소에 스테레오타입이 나타납니다. 자세한 내용은 [UML 모델 요소에 스테레오 타입 추가](../modeling/add-stereotypes-to-uml-model-elements.md)를 참조 하세요.
 
- The following error appears when I open a UML model: **VS1707: The following profiles cannot be loaded because a serialization error occurred: MyProfile.profile**
+ UML 모델을 열 때 다음과 같은 오류가 표시 됩니다. **VS1707: serialization 오류가 발생 하 여 다음 프로필을 로드할 수 없습니다. MyProfile. profile**
 1. .profile의 기본 XML 구문이 올바른지 확인합니다.
 
 2. 각 모니커 이름이 /profileName/nodeName 형식인지 확인합니다. profileName은 루트 프로필 노드의 name 특성 값입니다. nodeName은 메타클래스, externalType 또는 enumerationType의 name 특성 값입니다.
 
-3. Ensure the syntax is as described here, and as demonstrated in _drive_ **:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\\** .
+3. 구문은 여기에 설명 된 것 처럼, _드라이브_ **: Files\Microsoft Visual Studio [version] \Common7\IDE\Extensions\Microsoft\Architecture tools\umlprofiles\\** 에 설명 된 대로 확인 합니다.
 
 4. 오류가 발생한 확장을 제거합니다. **도구** 메뉴에서 **확장 및 업데이트**를 클릭합니다.
 
@@ -355,14 +355,14 @@ You can define a *UML profile* to customize the standard model elements for spec
 
 5. VSIX 파일을 다시 빌드하고 Windows 탐색기에서 열어 다시 설치합니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 다시 시작합니다.
 
-   The extension does not appear in Extension Manager, but when you try to re-install it, the following message appears: **The extension is already installed to all applicable products.**
-   1. Remove the extension file from a subfolder of *LocalAppData*\Microsoft\VisualStudio\\[version]\Extensions\
+   확장 관리자에는 표시 되지 않지만 확장 관리자를 다시 설치 하려고 하면 다음 메시지가 표시 됩니다. **확장은 적용 가능한 모든 제품에 이미 설치** 되어 있습니다.
+   1. *LocalAppData*\Microsoft\VisualStudio\\[version] \Extensions\의 하위 폴더에서 확장 파일을 제거 합니다.
 
-   - To see *LocalAppData*, you must set Show Hidden Files and Folders in the View tab of the Windows Explorer Folder Options.
+   - *LocalAppData*를 보려면 Windows 탐색기 폴더 옵션의 보기 탭에서 숨김 파일 및 폴더 표시를 설정 해야 합니다.
 
-   - *LocalAppData* is typically in C:\Users\\*userName*\AppData\Local\
+   - *LocalAppData* 는 일반적으로 C:\Users\\*userName*\AppData\Local\에 있습니다.
 
 6. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 다시 시작합니다.
 
-## <a name="see-also"></a>관련 항목:
- [Add stereotypes to UML model elements](../modeling/add-stereotypes-to-uml-model-elements.md) [Customize your model with profiles and stereotypes](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [Standard stereotypes for UML models](../modeling/standard-stereotypes-for-uml-models.md) [Sample: Color UML Elements by Stereotype](https://go.microsoft.com/fwlink/?LinkID=213841) [Sample: Setting Stereotypes, Profiles XSD](https://go.microsoft.com/fwlink/?LinkID=213811)
+## <a name="see-also"></a>참고 항목
+ [Uml 모델 요소에 스테레오 타입 추가](../modeling/add-stereotypes-to-uml-model-elements.md) [uml 모델에 대 한](../modeling/standard-stereotypes-for-uml-models.md) 프로필 및 스테레오 타입 표준 스테레오 타입 [을 사용 하 여 모델 사용자 지정](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [샘플: 스테레오 타입 별 색 UML 요소](https://go.microsoft.com/fwlink/?LinkID=213841) [샘플: 스테레오 타입 설정, 프로필 XSD](https://go.microsoft.com/fwlink/?LinkID=213811)

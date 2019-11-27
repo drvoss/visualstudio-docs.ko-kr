@@ -88,5 +88,5 @@ ms.locfileid: "74299523"
 
  WPF 동적 바인딩을 구현하기 위해 동적 속성은 <xref:System.Windows.Data> 네임스페이스(무엇보다도 <xref:System.Windows.Data.Binding> 클래스)에서 제공하는 기능과 함께 사용됩니다
 
-## <a name="see-also"></a>관련 항목:
- [WPF Data Binding with LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml.md) [LINQ to XML Dynamic Properties](../designers/linq-to-xml-dynamic-properties.md) [XAML in WPF](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8) [Data Binding (WPF)](https://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e) [Using Workflow Markup](https://go.microsoft.com/fwlink/?LinkId=98685)
+## <a name="see-also"></a>참고 항목
+ Wpf 데이터 [바인딩 (wpf)](https://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e) [에서 워크플로 마크업을 사용 하 여](https://go.microsoft.com/fwlink/?LinkId=98685) LINQ to XML [LINQ to XML 동적 속성](../designers/linq-to-xml-dynamic-properties.md) [XAML](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8) 을 사용 하 [여 wpf 데이터 바인딩](../designers/wpf-data-binding-with-linq-to-xml.md)

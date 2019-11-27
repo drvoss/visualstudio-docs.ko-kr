@@ -22,29 +22,29 @@ ms.locfileid: "74297669"
 # <a name="using-msbuild"></a>MSBuild 사용
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-MSBuild supplies a well-defined, extensible XML format for creating project files that fully describe project items to be built, build tasks, and build configurations.  
+MSBuild는 빌드할 프로젝트 항목을 완벽 하 게 설명 하는 프로젝트 파일을 만들기 위한 잘 정의 된 확장 가능한 XML 형식을 제공 합니다.  
   
- For an end-to-end sample of a language project system based on MSBuild, see the IronPython Sample Deep Dive in the[VSSDK Samples](../../misc/vssdk-samples.md).  
+ MSBuild를 기반으로 하는 언어 프로젝트 시스템에 대 한 종단 간 샘플을 보려면 서 수[진한 샘플](../../misc/vssdk-samples.md)에서 IronPython 샘플 심층 이해를 참조 하세요.  
   
-## <a name="general-msbuild-considerations"></a>General MSBuild Considerations  
- MSBuild project files, for example, [!INCLUDE[csprcs](../../includes/csprcs-md.md)] .csproj and [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] .vbproj files, contain data that is used at build time, but also can contain data that is used at design time. Build-time data is stored using MSBuild primitives, including [Item Element (MSBuild)](../../msbuild/item-element-msbuild.md) and [Property Element (MSBuild)](../../msbuild/property-element-msbuild.md). Design-time data, which is data specific to the project type and any related project subtypes, is stored in free-form XML reserved for it.  
+## <a name="general-msbuild-considerations"></a>일반 MSBuild 고려 사항  
+ MSBuild 프로젝트 파일 ([!INCLUDE[csprcs](../../includes/csprcs-md.md)] 예: .csproj 및 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 파일)에는 빌드 시에 사용 되는 데이터가 들어 있으며 디자인 타임에 사용 되는 데이터도 포함 될 수 있습니다. 빌드 시간 데이터는 [Item 요소 (msbuild)](../../msbuild/item-element-msbuild.md) 및 [Property 요소 (msbuild)](../../msbuild/property-element-msbuild.md)를 비롯 한 msbuild 기본 형식을 사용 하 여 저장 됩니다. 프로젝트 형식 및 관련 된 프로젝트 하위 형식에 해당 하는 데이터 인 디자인 타임 데이터는 해당 데이터에 대해 예약 된 자유 형식 XML로 저장 됩니다.  
   
- MSBuild does not have native support for configuration objects, but does provide conditional attributes for specifying configuration-specific data. 예를 들어 다음과 같은 가치를 제공해야 합니다.  
+ MSBuild는 구성 개체에 대 한 기본 지원을 제공 하지 않지만 구성 관련 데이터를 지정 하기 위한 조건부 특성을 제공 합니다. 예를 들면 다음과 같습니다.  
   
 ```  
 <OutputDir Condition="'$(Configuration)'=="release'">Bin\MyReleaseConfig</OutputDir>  
 ```  
   
- For more information on conditional attributes, see [Conditional Constructs](../../msbuild/msbuild-conditional-constructs.md).  
+ 조건부 특성에 대 한 자세한 내용은 [조건부 구문](../../msbuild/msbuild-conditional-constructs.md)을 참조 하세요.  
   
-### <a name="extending-msbuild-for-your-project-type"></a>Extending MSBuild for Your Project Type  
- MSBuild interfaces and APIs are subject to change in future versions of [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Therefore, it is prudent to use the managed package framework (MPF) classes because they provide shielding from changes.  
+### <a name="extending-msbuild-for-your-project-type"></a>프로젝트 형식에 대 한 MSBuild 확장  
+ MSBuild 인터페이스와 Api는 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]의 이후 버전에서 변경 될 수 있습니다. 따라서 MPF (관리 패키지 프레임 워크) 클래스는 변경 으로부터 차폐를 제공 하기 때문에이 클래스를 사용 하는 것이 좋습니다.  
   
- The Managed Package Framework for Projects (MPFProj) provides helper classes for creating and managing new project system. You can find the source code and compilation instructions at [MPF for Projects - Visual Studio 2013](https://archive.codeplex.com/?p=mpfproj12).  
+ 프로젝트에 대 한 관리 패키지 프레임 워크 (MPFProj)는 새 프로젝트 시스템을 만들고 관리 하기 위한 도우미 클래스를 제공 합니다. [프로젝트에 대 한 MPF](https://archive.codeplex.com/?p=mpfproj12)에서 소스 코드 및 컴파일 지침-Visual Studio 2013를 찾을 수 있습니다.  
   
- The project-specific MPF classes are as follows:  
+ 프로젝트별 MPF 클래스는 다음과 같습니다.  
   
-|인스턴스|구현|  
+|클래스|구현|  
 |-----------|--------------------|  
 |`Microsoft.VisualStudio.Package.ProjectNode`|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents>|  
 |`Microsoft.VisualStudio.Package.ProjectFactory`|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>|  
@@ -52,12 +52,12 @@ MSBuild supplies a well-defined, extensible XML format for creating project file
 |`Microsoft.VisualStudio.Package.ProjectConfig`|<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg>|  
 |`Microsoft.VisualStudio.Package.SettingsPage`|<xref:Microsoft.VisualStudio.OLE.Interop.IPropertyPageSite>|  
   
- `Microsoft.VisualStudio.Package.ProjectElement` class is a wrapper for MSBuild items.  
+ `Microsoft.VisualStudio.Package.ProjectElement` 클래스는 MSBuild 항목에 대 한 래퍼입니다.  
   
-#### <a name="single-file-generators-vs-msbuild-tasks"></a>Single File Generators vs. MSBuild Tasks  
- Single file generators are accessible at design-time only, but MSBuild tasks can be used at design-time and build-time. For maximum flexibility, therefore, use MSBuild tasks to transform and generate code. For more information, see [Custom Tools](../../extensibility/internals/custom-tools.md).  
+#### <a name="single-file-generators-vs-msbuild-tasks"></a>단일 파일 생성기 및 MSBuild 작업  
+ 디자인 타임에만 단일 파일 생성기에 액세스할 수 있지만 디자인 타임 및 빌드 시에는 MSBuild 작업을 사용할 수 있습니다. 따라서 유연성을 최대화 하기 위해 MSBuild 작업을 사용 하 여 코드를 변환 하 고 생성 합니다. 자세한 내용은 [사용자 지정 도구](../../extensibility/internals/custom-tools.md)를 참조 하세요.  
   
-## <a name="see-also"></a>관련 항목:  
+## <a name="see-also"></a>참고 항목  
  [MSBuild 참조](../../msbuild/msbuild-reference.md)   
  [MSBuild](https://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)   
  [사용자 지정 도구](../../extensibility/internals/custom-tools.md)

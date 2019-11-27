@@ -26,7 +26,7 @@ ms.locfileid: "74302559"
 
   이 단원에서는 Excel 워크시트의 테스트를 기록하고 재생할 수 있는 코딩된 UI 테스트 확장을 제공합니다. 확장의 각 부분은 이 단원과 그러한 확장을 생성하려는 개발자를 위한 코드 설명에서 설명됩니다.
 
-  ![UI Test Architecture](../test/media/ui-testarch.png "UI_TestArch") Architecture Overview
+  ![UI 테스트 아키텍처](../test/media/ui-testarch.png "UI_TestArch") 아키텍처 개요
 
 ## <a name="download-the-sample"></a>샘플 다운로드
  이 샘플은 `CodedUIExtensibilitySample.sln` 솔루션에서 네 개의 프로젝트로 구성되어 있습니다.
@@ -70,12 +70,12 @@ ms.locfileid: "74302559"
 ### <a name="testing-excel-with-the-sampletestproject"></a>SampleTestProject를 사용하여 Excel 테스트
  가지고 있거나 가지고 있지 않은 특정 버전의 Excel을 사용하는 제공된 테스트 프로젝트에서 테스트를 실행하거나 고유한 테스트 프로젝트를 만들어 자신만의 테스트를 기록할 수 있습니다. 자세한 내용은 [코딩된 UI 테스트 만들기](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)를 참조하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>
 - [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110))
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>
 - [UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)
-- [최선의 코딩된 UI 테스트 방법](../test/best-practices-for-coded-ui-tests.md)
+- [코딩된 UI 테스트에 대한 모범 사례](../test/best-practices-for-coded-ui-tests.md)
 - [코딩된 UI 테스트 및 작업 기록에 지원되는 구성 및 플랫폼](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

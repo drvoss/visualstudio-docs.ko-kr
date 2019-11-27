@@ -24,11 +24,11 @@ ms.locfileid: "74300983"
 # <a name="da0006-override-equals-for-value-types"></a>DA0006: 값 형식에 대해 Equals()를 재정의하십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0006|  
-|Category|.NET Framework Usage|  
-|Profiiling methods|Sampling|  
-|Message|Override Equals and equality operator on value types.|  
-|Messge type|Warning|  
+규칙 Id | DA0006 |  
+| 범주 |. NET Framework 사용 |  
+| Profiiling 메서드 | 샘플링 |  
+| 메시지 | 값 형식에 대해 Equals 및 같음 연산자를 재정의 하십시오. |  
+| 안 면 유형 | 경고 |  
   
 ## <a name="cause"></a>원인  
  Equals 메서드 또는 공개 값 형식의 같음 연산자에 대한 호출이 프로파일링 데이터의 상당한 부분을 차지합니다. 더 효율적인 메서드를 구현해 보세요.  

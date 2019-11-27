@@ -1,5 +1,5 @@
 ---
-title: Integrate UML models with other models and tools | Microsoft Docs
+title: UML 모델을 다른 모델 및 도구와 통합 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -32,47 +32,47 @@ UML 요소에서 ID를 문자열로 인코드하여 다른 UML 요소, 파일 �
 
  문자열 및 기타 데이터를 요소에 저장할 수 있는 방법에는 다음 두 가지가 있습니다.
 
-- **Stereotype properties.** 지정된 종류의 UML 요소에 속성을 추가하는 스테레오타입을 정의하는 UML 프로필을 정의할 수 있습니다. For example, you could define a profile that adds a property named **MoreDetail** to a UML action. 작업에 스테레오타입을 적용한 다음 속성에 데이터를 저장하여 링크 데이터를 작업에 저장하는 확장 코드를 작성할 수 있습니다.
+- **스테레오 타입 속성.** 지정된 종류의 UML 요소에 속성을 추가하는 스테레오타입을 정의하는 UML 프로필을 정의할 수 있습니다. 예를 들어 UML 동작에 **MoreDetail** 라는 속성을 추가 하는 프로필을 정의할 수 있습니다. 작업에 스테레오타입을 적용한 다음 속성에 데이터를 저장하여 링크 데이터를 작업에 저장하는 확장 코드를 작성할 수 있습니다.
 
    스테레오타입 및 해당 속성은 속성 창에서 사용자에게 표시됩니다.
 
    이 확장을 배포하려면 프로필 정의 및 확장 코드를 단일 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장으로 패키징합니다.
 
-   For more information, see [Define a profile to extend UML](../modeling/define-a-profile-to-extend-uml.md).
+   자세한 내용은 [프로필을 정의 하 여 UML 확장](../modeling/define-a-profile-to-extend-uml.md)을 참조 하세요.
 
-   For a sample project in which a profile is deployed together with menu commands and gesture handlers, see [Sample: UML Profiles](https://go.microsoft.com/fwlink/?LinkID=213811).
+   프로필을 메뉴 명령 및 제스처 처리기와 함께 배포 하는 샘플 프로젝트의 경우 [샘플: UML 프로필](https://go.microsoft.com/fwlink/?LinkID=213811)을 참조 하세요.
 
-- **References.** 문자열 집합을 UML 요소에 연결할 수 있습니다. 파일 이름 또는 다른 요소의 GUID와 같은 정보를 저장하는 코드를 작성할 수 있습니다. 추가 정의를 제공하지 않고 이 작업을 수행할 수 있습니다. 참조는 사용자에게 직접 표시되지 않습니다.
+- **참조할.** 문자열 집합을 UML 요소에 연결할 수 있습니다. 파일 이름 또는 다른 요소의 GUID와 같은 정보를 저장하는 코드를 작성할 수 있습니다. 추가 정의를 제공하지 않고 이 작업을 수행할 수 있습니다. 참조는 사용자에게 직접 표시되지 않습니다.
 
-   For more information, see [Attach reference strings to UML model elements](../modeling/attach-reference-strings-to-uml-model-elements.md). For a sample, see [Link UML Elements to Diagrams or other Files](https://go.microsoft.com/fwlink/?LinkId=213813).
+   자세한 내용은 [UML 모델 요소에 참조 문자열 연결](../modeling/attach-reference-strings-to-uml-model-elements.md)을 참조 하세요. 샘플은 [UML 요소를 다이어그램 또는 다른 파일에 연결](https://go.microsoft.com/fwlink/?LinkId=213813)을 참조 하세요.
 
   모델 요소에 대한 참조를 인코드하는 방법에는 다음 두 가지가 있습니다.
 
-- **GUID and Filename** of the target model element and the model that contains it, or a particular diagram that displays it.
+- 대상 모델 요소와이 요소를 포함 하는 모델 또는 해당 요소를 표시 하는 특정 다이어그램의 **GUID 및 파일 이름** 입니다.
 
-   For an example, see [Link UML Elements to Diagrams or other Files](https://go.microsoft.com/fwlink/?LinkId=213813).
+   예제는 [다이어그램 또는 다른 파일에 UML 요소 연결](https://go.microsoft.com/fwlink/?LinkId=213813)을 참조 하세요.
 
-- **ModelBus References.** ModelBus는 모델 간에 참조를 만들고 해결하기 위한 프레임워크입니다. 사용자가 모델의 요소를 선택할 수 있는 ModelBus 선택을 포함합니다. 또한 사용자가 대상 모델의 변경으로 인해 손실된 참조를 해결하는 데 도움이 됩니다.
+- **ModelBus 참조** ModelBus는 모델 간에 참조를 만들고 해결하기 위한 프레임워크입니다. 사용자가 모델의 요소를 선택할 수 있는 ModelBus 선택을 포함합니다. 또한 사용자가 대상 모델의 변경으로 인해 손실된 참조를 해결하는 데 도움이 됩니다.
 
-   For more information, see [Integrating Models by using Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
+   자세한 내용은 [Visual Studio를 사용 하 여 모델 통합 Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)을 참조 하세요.
 
   모델 간에 변경 내용을 전파합니다.
   예를 들어 사용자가 하나를 변경하는 경우 다른 것도 변경되도록 요소의 이름을 연결된 다이어그램의 이름과 동기화할 수 있습니다. 이 작업을 수행하는 메커니즘에는 다음 두 가지가 있습니다.
 
-1. **VMSDK Rules** can be used to propagate changes inside the same model.
+1. **VMSDK 규칙** 을 사용 하 여 동일한 모델 내에서 변경 내용을 전파할 수 있습니다.
 
-    For an example, see [Link UML Elements to Diagrams or other Files](https://go.microsoft.com/fwlink/?LinkId=213813).
+    예제는 [다이어그램 또는 다른 파일에 UML 요소 연결](https://go.microsoft.com/fwlink/?LinkId=213813)을 참조 하세요.
 
-2. **VMSDK Events** can be used to propagate changes outside the model – for example, to change the filename of a linked document, or to change an element in another model.
+2. **VMSDK 이벤트** 를 사용 하 여 연결 된 문서의 파일 이름을 변경 하거나 다른 모델의 요소를 변경 하는 등 모델 외부에서 변경 내용을 전파할 수 있습니다.
 
-   For information about both these mechanisms, see [How to: Respond to Changes in a UML Model](../misc/how-to-respond-to-changes-in-a-uml-model.md).
+   이러한 메커니즘에 대 한 자세한 내용은 [방법: UML 모델의 변경 내용에 응답](../misc/how-to-respond-to-changes-in-a-uml-model.md)을 참조 하세요.
 
-   Drag elements to copy them from one model to another You can let the user create elements by dragging items onto a UML diagram. 만든 요소가 원본의 복사본일 필요는 없습니다. 예를 들어 사용자가 솔루션 탐색기에서 다른 동작 다이어그램으로 동작 다이어그램을 끌어와 새 작업을 만들게 할 수 있습니다.
+   요소를 끌어 모델 간에 복사 하는 경우 사용자가 UML 다이어그램으로 항목을 끌어 요소를 만들 수 있습니다. 만든 요소가 원본의 복사본일 필요는 없습니다. 예를 들어 사용자가 솔루션 탐색기에서 다른 동작 다이어그램으로 동작 다이어그램을 끌어와 새 작업을 만들게 할 수 있습니다.
 
-   For more information see [Define a gesture handler on a modeling diagram](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) and [How to: Add a Drag-and-Drop Handler](../modeling/how-to-add-a-drag-and-drop-handler.md).
+   자세한 내용은 [모델링 다이어그램에서 제스처 처리기 정의](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) 및 [방법: 끌어서 놓기 처리기 추가](../modeling/how-to-add-a-drag-and-drop-handler.md)를 참조 하세요.
 
 ## <a name="samples"></a>샘플
- Please see the code sample [Link UML Elements to Diagrams or other Files](https://go.microsoft.com/fwlink/?LinkId=213813). 이 샘플에서는 사용자가 파일을 UML 요소로 끌어오고 나중에 요소를 두 번 클릭하여 파일을 열 수 있습니다. 예를 들어 동작 다이어그램을 사용 사례 요소에 연결할 수 있습니다. 아이콘은 링크가 있는 요소를 표시합니다.
+ [UML 요소를 다이어그램 또는 다른 파일에 연결](https://go.microsoft.com/fwlink/?LinkId=213813)코드 샘플을 참조 하세요. 이 샘플에서는 사용자가 파일을 UML 요소로 끌어오고 나중에 요소를 두 번 클릭하여 파일을 열 수 있습니다. 예를 들어 동작 다이어그램을 사용 사례 요소에 연결할 수 있습니다. 아이콘은 링크가 있는 요소를 표시합니다.
 
  이 코드 샘플에서는 다음 기술을 보여 줍니다.
 
@@ -80,7 +80,7 @@ UML 요소에서 ID를 문자열로 인코드하여 다른 UML 요소, 파일 �
 
    샘플 코드에서는 요소와 연결된 참조 문자열에 파일 경로 및 요소 GUID를 저장합니다.
 
-- UML 요소에 데코레이터를 추가하는 방법 For general information about decorators, see [Customizing Text and Image Fields](../modeling/customizing-text-and-image-fields.md).
+- UML 요소에 데코레이터를 추가하는 방법 데코레이터에 대 한 일반적인 내용은 [텍스트 및 이미지 필드 사용자 지정](../modeling/customizing-text-and-image-fields.md)을 참조 하세요.
 
    샘플에서는 UML 모양에 이미지 데코레이터를 추가합니다.
 
@@ -94,7 +94,7 @@ UML 요소에서 ID를 문자열로 인코드하여 다른 UML 요소, 파일 �
 
    샘플에서는 Windows 탐색기(또는 파일 탐색기), 솔루션 탐색기 및 기타 UML 요소에서 끌어온 항목을 처리하는 방법을 보여 줍니다.
 
-  For an example in which a UML model is be read by a DSL, see [How to: Add a Drag-and-Drop Handler](../modeling/how-to-add-a-drag-and-drop-handler.md).
+  DSL에서 UML 모델을 읽는 예제는 [방법: 끌어서 놓기 처리기 추가](../modeling/how-to-add-a-drag-and-drop-handler.md)를 참조 하세요.
 
-## <a name="see-also"></a>관련 항목:
- [Define a menu command on a modeling diagram](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [Define a gesture handler on a modeling diagram](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [How to: Add a Drag-and-Drop Handler](../modeling/how-to-add-a-drag-and-drop-handler.md) [How to: Respond to Changes in a UML Model](../misc/how-to-respond-to-changes-in-a-uml-model.md) [Sample: UML Profiles](https://go.microsoft.com/fwlink/?LinkID=213811) [Link UML Elements to Diagrams or other Files](https://go.microsoft.com/fwlink/?LinkId=213813)
+## <a name="see-also"></a>참고 항목
+ [모델링 다이어그램의 메뉴 명령 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [모델링 다이어그램의 제스처 처리기 정의](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [방법: 끌어서 놓기 처리기 추가](../modeling/how-to-add-a-drag-and-drop-handler.md) [방법: uml 모델의 변경 내용에 응답](../misc/how-to-respond-to-changes-in-a-uml-model.md) [샘플: uml 프로필](https://go.microsoft.com/fwlink/?LinkID=213811) uml [요소를 다이어그램이 나 기타 파일에 연결](https://go.microsoft.com/fwlink/?LinkId=213813)

@@ -1,5 +1,5 @@
 ---
-title: Debug Store apps
+title: 스토어 앱 디버그
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -33,10 +33,10 @@ Visual Studio 디버거를 사용하면 프로그램의 실행을 제어하고 �
 |[디버그 세션 시작(JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md)|디버깅 세션을 시작하는 방법에서는 JavaScript 앱에 대한 디버깅 세션을 구성 및 시작할 수 있는 다양한 옵션을 설명합니다.|
 |[디버그 세션에서 실행 제어(JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md)|디버거 탐색에서는 디버깅을 시작 및 중지하는 방법과 코드를 탐색하는 방법, 프로그램 상태를 보는 방법을 알려 주는 간단한 앱을 소개합니다.|
 |[빠른 시작: HTML 및 CSS 디버그](../debugger/quickstart-debug-html-and-css.md)|HTML 및 CSS 디버깅에서는 HTML과 CSS를 보고 수정할 수 있는 라이브 DOM 검사 도구를 사용하여 JavaScript 앱을 대화형으로 디버깅하는 방법을 설명합니다.|
-|[빠른 시작: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md)|Debug JavaScript using the console shows you how to interactively debug a JavaScript app using [JavaScript Console commands](../debugger/javascript-console-commands.md).|
+|[빠른 시작: JavaScript 디버그](../debugger/quickstart-debug-javascript-using-the-console.md)|콘솔을 사용 하 여 JavaScript 디버그 javascript [콘솔 명령을](../debugger/javascript-console-commands.md)사용 하 여 javascript 앱을 대화형으로 디버깅 하는 방법을 보여 줍니다.|
 |[디버그 세션 시작(VB, C#, C++ 및 XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)|디버깅 세션을 시작하는 방법(Visual C++, Visual C# 및 Visual Basic)에서는 Visual C++, Visual C# 또는 Visual Basic으로 작성된 앱의 디버깅 세션을 구성 및 시작할 수 있는 다양한 옵션을 설명합니다.|
 |[디버그 세션 탐색(XAML 및 C#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md)|디버거 탐색에서는 디버깅을 시작 및 중지하는 방법과 코드를 탐색하는 방법, 프로그램 상태를 보고 변경하는 방법을 알려 주는 간단한 앱을 설명합니다.|
 |[Windows 스토어에 대한 일시 중단, 다시 시작 및 백그라운드 이벤트 트리거](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)|디버거는 앱을 일시 중지, 다시 시작 및 종료하는 Windows PLM(프로세스 수명 관리) 이벤트를 사용하지 않도록 설정합니다. 디버거 도구 모음에서 이러한 이벤트를 트리거할 수 있습니다.<br /><br /> 백그라운드 작업을 통해 앱이 일시 중단된 경우에도 중요한 작업을 수행할 수 있습니다. 디버거를 사용하면 이러한 백그라운드 작업을 시작하고 디버깅할 수 있습니다.|
 
-## <a name="see-also"></a>관련 항목:
- [Debugging in Visual Studio (in the MSDN Library)](https://go.microsoft.com/fwlink/?LinkID=226896)
+## <a name="see-also"></a>참고 항목
+ [Visual Studio에서 디버깅 (MSDN 라이브러리)](https://go.microsoft.com/fwlink/?LinkID=226896)

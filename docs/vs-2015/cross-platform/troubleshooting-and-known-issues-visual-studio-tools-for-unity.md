@@ -51,7 +51,7 @@ ms.locfileid: "74297660"
 - 특히 반복기 또는 switch 문 내에서 경우에 따라 메서드를 한 단계씩 코드 실행하고 메서드의 프로시저에서 나가는 동작이 제대로 작동하지 않습니다.  
   
 ## <a name="reporting-errors"></a>오류 보고  
- 충돌, 고정 또는 기타 오류가 발생하는 경우 오류 보고서를 전송하여 Visual Studio Tools for Unity의 품질을 개선할 수 있도록 도와주시기 바랍니다. Visual Studio Tools for Unity의 문제를 조사하고 해결하는 데 도움이 됩니다. 감사합니다!  
+ 충돌, 고정 또는 기타 오류가 발생하는 경우 오류 보고서를 전송하여 Visual Studio Tools for Unity의 품질을 개선할 수 있도록 도와주시기 바랍니다. Visual Studio Tools for Unity의 문제를 조사하고 해결하는 데 도움이 됩니다. 감사합니다.  
   
 ### <a name="how-to-report-an-error-when-visual-studio-freezes"></a>Visual Studio가 고정될 때 오류를 보고하는 방법  
  Visual Studio가 Visual Studio Tools for Unity로 디버그할 때 중지되는 경우가 있다는 보고가 있지만 이 문제를 파악하려면 더 많은 데이터가 필요합니다. 아래의 단계를 따라 이 문제를 조사하는 데 도움을 주실 수 있습니다.  

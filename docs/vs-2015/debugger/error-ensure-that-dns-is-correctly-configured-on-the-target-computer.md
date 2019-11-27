@@ -1,5 +1,5 @@
 ---
-title: 'Error: Ensure that DNS is Correctly Configured on the Target Computer | Microsoft Docs'
+title: '오류: 대상 컴퓨터에서 DNS가 올바르게 구성 되어 있는지 확인 하십시오. | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -38,4 +38,4 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 - 자세한 내용은 [Microsoft Windows 웹 사이트](https://go.microsoft.com/fwlink/?LinkId=252720)를 방문하거나 **TCP/IP 설정 변경**을 검색하세요.  
   
-  DNS 문제를 해결할 수 없는 경우 다른 계정으로 원격 디버거를 실행해 볼 수 있습니다. 이 오류는 로컬 시스템 또는 네트워크 서비스 계정으로 원격 디버거를 실행하는 경우에만 발생합니다. 다른 계정으로 원격 디버거를 실행하는 경우 DNS를 요구하지 않는 NTLM 인증을 사용할 수 있습니다. 이어야 합니다. For the procedure, see [Error: The Visual Studio Remote Debugger service on the target computer cannot connect back to this computer](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).
+  DNS 문제를 해결할 수 없는 경우 다른 계정으로 원격 디버거를 실행해 볼 수 있습니다. 이 오류는 로컬 시스템 또는 네트워크 서비스 계정으로 원격 디버거를 실행하는 경우에만 발생합니다. 다른 계정으로 원격 디버거를 실행하는 경우 DNS를 요구하지 않는 NTLM 인증을 사용할 수 있습니다. . 절차에 대 한 자세한 내용은 [오류: 대상 컴퓨터의 Visual Studio 원격 디버거 서비스가이 컴퓨터에 다시 연결할 수 없습니다](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).

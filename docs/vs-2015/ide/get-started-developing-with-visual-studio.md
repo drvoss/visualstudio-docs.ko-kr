@@ -1,5 +1,5 @@
 ---
-title: Get Started Developing | Microsoft Docs
+title: 개발 시작 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -33,7 +33,7 @@ ms.locfileid: "74292060"
 
 - **[C# 또는 Visual Basic(Xamarin)으로 플랫폼 간 모바일 앱 만들기](../cross-platform/visual-studio-and-xamarin.md)** : Visual Studio 및 Xamarin용 도구를 사용하여 Android, iOS 및 유니버설 Windows 플랫폼에서 실행되는 모바일 앱을 공유 코드베이스를 활용하여 만들기 시작할 수 있습니다.
 
-     Load a sample: [TaskyPortable](https://github.com/xamarin/mobile-samples/tree/master/TaskyPortable) (native UI) or  [Xamarin Forms Todo sample](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (Xamarin.Forms shared UI) &#124;   [Do a tutorial](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124;                             [Browse the docs](https://msdn.microsoft.com/library/mt299001.aspx) &#124;                                  [Watch a video](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)
+     샘플 로드: [taskyportable](https://github.com/xamarin/mobile-samples/tree/master/TaskyPortable) (네이티브 UI) 또는 [xamarin forms Todo 샘플](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (xamarin. Forms 공유 UI) &#124; [자습서](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124; [문서](https://msdn.microsoft.com/library/mt299001.aspx) &#124;에서 [비디오 시청](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)
 
 - **[C++로 네이티브 플랫폼 간 앱 및 라이브러리 만들기](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)** Android, iOS 및 유니버설 Windows 플랫폼에서 실행되는 C++ 앱 및 라이브러리를 만들기 시작하려면 여기로 이동하세요.
 
@@ -55,7 +55,7 @@ ms.locfileid: "74292060"
 
      [샘플 로드](https://github.com/microsoft/windows-classic-samples) &#124;                     [자습서 수행](https://msdn.microsoft.com/library/dd492171.aspx) &#124;                               [문서 찾아보기](https://dev.windows.com/desktop)
 
-- **[Make Office applications](https://msdn.microsoft.com/library/fp161347.aspx)** : Get started creating Office applications that extend and customize Word, Excel, Outlook and PowerPoint with Office 365 services.
+- **[Office 응용 프로그램 만들기](https://msdn.microsoft.com/library/fp161347.aspx)** : office 365 서비스를 사용 하 여 Word, Excel, Outlook 및 PowerPoint를 확장 하 고 사용자 지정 하는 office 응용 프로그램 만들기를 시작 합니다.
 
      [샘플 로드](https://code.msdn.microsoft.com/office365/) &#124;                    [자습서 수행](https://developer.microsoft.com/graph) &#124;                               [문서 찾아보기](https://msdn.microsoft.com/office/aa905340.aspx) &#124;                                [동영상 시청](https://developer.microsoft.com/office/gallery/?filterBy=Videos)
 

@@ -64,7 +64,7 @@ Windows 8 및 Windows Server 2012의 강화된 보안 기능을 위해 Visual St
   
 - [JavaScript 함수 타이밍](https://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)  
   
-- [JavaScript Function Timing on a Remote Device](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
+- [원격 장치의 JavaScript 함수 타이밍](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
   
 - [JavaScript 함수 타이밍 데이터 분석](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
   
@@ -138,13 +138,13 @@ Windows 8 및 Windows Server 2012의 강화된 보안 기능을 위해 Visual St
   
    원격 머신에서 계층 상호 작용 데이터를 수집하려면 **vs\_profiler\_** _\<Platform>_ **\_** _\<Language>_ **.exe** 파일을 Visual Studio 머신의 _%VSInstallDir_ **%\Team Tools\Performance Tools\Setups** 폴더에서 원격 컴퓨터로 복사하여 설치해야 합니다. [Visual Studio 원격 도구](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) 다운로드 패키지의 프로파일링 도구를 사용할 수 없습니다.  
   
-   [VSPerfCmd](../profiling/vsperfcmd.md) 또는 [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md)를 사용하여 프로파일링 데이터를 수집할 수 있습니다.  
+   [VSPerfCmd](../profiling/vsperfcmd.md) 또는 [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) 를 사용하여 프로파일링 데이터를 수집할 수 있습니다.  
   
    **TIP 보고서**  
   
-   계층 상호 작용 데이터는 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] 또는 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] IDE에서만 볼 수 있습니다. [VSPerfReport](../profiling/vsperfreport.md)를 통한 파일 기반 계층 상호 작용 보고서는 사용할 수 없습니다.  
+   계층 상호 작용 데이터는 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] 또는 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] IDE에서만 볼 수 있습니다. [VSPerfReport](../profiling/vsperfreport.md)를 통한 파일 기반 계층 상호 작용 보고서를 사용할 수 없습니다.  
   
-## <a name="see-also"></a>관련 항목:  
+## <a name="see-also"></a>참고 항목  
  [성능 탐색기](../profiling/performance-explorer.md)   
  [성능 세션 구성](../profiling/configuring-performance-sessions.md)   
  [명령줄에서 프로파일링](../profiling/using-the-profiling-tools-from-the-command-line.md)

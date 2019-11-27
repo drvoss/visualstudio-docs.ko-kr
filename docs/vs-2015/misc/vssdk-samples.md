@@ -1,5 +1,5 @@
 ---
-title: VSSDK Samples | Microsoft Docs
+title: 가 나 진한 샘플 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -21,5 +21,5 @@ Visual Studio 확장성 샘플의 공식 홈은 [MSDN 코드 갤러리](https://
   
  IronPython 샘플도 사용할 수 있습니다. 이 샘플은 CodePlex 웹 사이트의 [IronPython Studio 프로젝트](https://go.microsoft.com/fwlink/?LinkID=183554) 에 통합되어 있습니다.  
   
-## <a name="see-also"></a>관련 항목:  
+## <a name="see-also"></a>참고 항목  
  [Visual Studio SDK](../extensibility/visual-studio-sdk.md)

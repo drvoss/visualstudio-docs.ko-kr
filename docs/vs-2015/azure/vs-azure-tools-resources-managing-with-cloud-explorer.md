@@ -24,9 +24,9 @@ ms.locfileid: "74298070"
 
 [Azure Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040)에서와 마찬가지로 클라우드 탐색기는 Azure Resource Manager 스택을 토대로 구축되었습니다. 따라서 클라우드 탐색기는 Azure 리소스 그룹과 같은 리소스 및 논리 앱과 API 앱과 같은 Azure 서비스를 이해하고 RBAC([역할 기반 액세스 제어](/azure/role-based-access-control/role-assignments-portal))를 지원합니다.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>필수 조건
 
-* Visual Studio 2015 with the [Microsoft Azure SDK for .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657).
+* [.Net 2.9 용 MICROSOFT AZURE SDK](https://www.microsoft.com/download/details.aspx?id=51657)를 사용 하는 Visual Studio 2015.
 * Microsoft Azure 계정 - 계정이 없는 경우 [평가판을 등록](https://go.microsoft.com/fwlink/?LinkId=623901)하거나 [Visual Studio 구독자 혜택을 활성화](https://go.microsoft.com/fwlink/?LinkId=623901)할 수 있습니다.
 
 > [!NOTE]

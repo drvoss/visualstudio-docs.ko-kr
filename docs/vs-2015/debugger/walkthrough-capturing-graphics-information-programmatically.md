@@ -1,5 +1,5 @@
 ---
-title: 'Walkthrough: Capturing Graphics Information Programmatically | Microsoft Docs'
+title: '연습: 프로그래밍 방식으로 그래픽 정보 캡처 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -58,13 +58,13 @@ ms.locfileid: "74296905"
     ```  
   
     > [!IMPORTANT]
-    > Do not include the header file vsgcapture.h—which supports programmatic capture on Windows 8.0 and earlier—to perform programmatic capture in your Windows 8.1 apps. 이 헤더는 DirectX 11.2와 호환되지 않습니다. If this file is included after the d3d11_2.h header is included, the compiler issues a warning. If vsgcapture.h is included before d3d11_2.h, the app will not start.  
+    > Windows 8.1 앱에서 프로그래밍 방식 캡처를 수행하기 위해 Windows 8.0 및 이전 버전에서 프로그래밍 방식 캡처를 지원하는 헤더 파일인 vsgcapture.h를 포함하지 마세요. 이 헤더는 DirectX 11.2와 호환되지 않습니다. D3d11_2 헤더를 포함 한 후에이 파일이 포함 된 경우 컴파일러에서 경고를 발생 시킵니다. D3d11_2 이전에 vsgcapture. h가 포함 되어 있으면 앱이 시작 되지 않습니다.  
   
     > [!NOTE]
     > 컴퓨터에 June 2010 DirectX SDK가 설치되어 있고 프로젝트의 포함 경로에 `%DXSDK_DIR%includex86`이 포함되어 있으면 이 부분을 포함 경로의 끝으로 옮깁니다. 라이브러리 경로에 대해서도 동일하게 수행합니다.  
   
 #### <a name="windows-phone-81"></a>Windows Phone 8.1  
- Because the Windows Phone 8.1 SDK doesn't include the DXProgrammableCapture.h header, you'll need to define the `IDXGraphicsAnalysis` interface yourself so that you can use the `BeginCapture()` and `EndCapture()` methods. 이전 섹션에서 설명한 대로 다른 헤더를 포함합니다.  
+ Windows Phone 8.1 SDK는 DXProgrammableCapture 헤더를 포함 하지 않기 때문에 `BeginCapture()` 및 `EndCapture()` 메서드를 사용할 수 있도록 `IDXGraphicsAnalysis` 인터페이스를 직접 정의 해야 합니다. 이전 섹션에서 설명한 대로 다른 헤더를 포함합니다.  
   
 ###### <a name="to-define-the-idxgraphicsanalysis-interface"></a>IDXGraphicsAnalysis 인터페이스를 정의하려면  
   
@@ -85,7 +85,7 @@ ms.locfileid: "74296905"
  DirectX 11.2에서 그래픽 정보를 캡처하려면 DXGI 디버그 인터페이스를 가져와야 합니다.  
   
 > [!IMPORTANT]
-> When using programmatic capture, you must still run your app under graphics diagnostics (Alt+F5 in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]) or under the [Command-Line Capture Tool](../debugger/command-line-capture-tool.md).  
+> 프로그래밍 캡처를 사용 하는 경우에도 그래픽 진단 ([!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 경우 Alt + F5) 이나 [명령줄 캡처 도구](../debugger/command-line-capture-tool.md)에서 응용 프로그램을 실행 해야 합니다.  
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>IDXGraphicsAnalysis 인터페이스를 가져오려면  
   
@@ -182,7 +182,7 @@ ms.locfileid: "74296905"
   
    이 단계를 수행하지 않으면 파일 이름은 default.vsglog가 됩니다. `DONT_SAVE_VSGLOG_TO_TEMP`를 정의하지 않으면 로그 파일의 위치는 임시 디렉터리에 대해 상대적입니다. 그렇지 않은 경우에는 작업 디렉터리에 대해 상대적이고 절대 파일 이름을 지정한 경우에는 다른 위치에 있습니다.  
   
-  For [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] apps, the location of the temp directory is specific to each user and app, and is typically found in a location such as C:\users\\*username*\AppData\Local\Packages\\*package family name*\TempState\\. For desktop apps, the location of the temp directory is specific to each user and is typically found in a location such as C:\Users\\*username*\AppData\Local\Temp\\.  
+  [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱의 경우 임시 디렉터리의 위치는 각 사용자 및 앱에만 해당 되며 일반적으로 C:\users\\*username*\AppData\Local\Packages\\*package family name*\tempstate\\과 같은 위치에 있습니다. 데스크톱 앱의 경우 임시 디렉터리의 위치는 각 사용자와 관련이 있으며 일반적으로 C:\Users\\*username*\AppData\Local\Temp\\와 같은 위치에서 찾을 수 있습니다.  
   
 > [!NOTE]
 > 특정 위치에 기록하려면 해당 위치에 대한 쓰기 권한이 있어야 합니다. 그렇지 않으면 오류가 발생합니다. [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱은 데이터를 쓸 수 있는 위치에 대해 데스크톱 앱보다 더욱 제한적입니다. 그러므로 특정 위치에 쓰려면 추가 구성이 필요할 수 있습니다.  
@@ -196,9 +196,9 @@ ms.locfileid: "74296905"
 ## <a name="next-steps"></a>다음 단계  
  이 연습에서는 그래픽 정보를 프로그래밍 방식으로 캡처하는 방법을 보여주었습니다. 다음 단계로 아래 옵션을 고려해 보세요.  
   
-- 그래픽 진단 도구를 사용하여 캡처한 그래픽 정보를 분석하는 방법에 대해 알아봅니다. See [Overview](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
+- 그래픽 진단 도구를 사용하여 캡처한 그래픽 정보를 분석하는 방법에 대해 알아봅니다. [개요](../debugger/overview-of-visual-studio-graphics-diagnostics.md)를 참조 하세요.  
   
-## <a name="see-also"></a>관련 항목:  
- [Walkthrough: Capturing Graphics Information](../debugger/walkthrough-capturing-graphics-information.md)   
+## <a name="see-also"></a>참고 항목  
+ [연습: 그래픽 정보  캡처](../debugger/walkthrough-capturing-graphics-information.md)  
  [Capturing Graphics Information](../debugger/capturing-graphics-information.md)   
  [명령줄 캡처 도구](../debugger/command-line-capture-tool.md)

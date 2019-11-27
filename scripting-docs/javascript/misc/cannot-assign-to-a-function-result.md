@@ -42,7 +42,7 @@ myFunction() = 42;  // Attempting to assign the value 42 to the result of the fu
     myFunction = new Function("return 42;");  
     ```  
   
-## <a name="see-also"></a>참조  
- [함수 개체](../../javascript/reference/function-object-javascript.md)    
- [JavaScript 코드   작성](../../javascript/writing-javascript-code.md)  
+## <a name="see-also"></a>참고 항목  
+ [함수 개체](../../javascript/reference/function-object-javascript.md)   
+ [JavaScript 코드  작성](../../javascript/writing-javascript-code.md)  
  [함수](../../javascript/functions-javascript.md)

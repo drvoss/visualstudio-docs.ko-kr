@@ -34,6 +34,6 @@ new VBArray(safeArray);
   
 - **Vbarray 생성자에** **vbarray** 개체만 전달 하는지 확인 합니다.  
   
-## <a name="see-also"></a>참조  
- [VBArray 개체](../../javascript/reference/vbarray-object-javascript.md)    
+## <a name="see-also"></a>참고 항목  
+ [VBArray 개체](../../javascript/reference/vbarray-object-javascript.md)   
  [배열 사용](../../javascript/advanced/using-arrays-javascript.md)

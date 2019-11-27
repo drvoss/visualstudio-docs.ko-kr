@@ -8,7 +8,7 @@ ms.author: crdun
 manager: crdun
 ms.openlocfilehash: 14da8fab1b3190d77951298ac7d1a130c85f6135
 ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74297711"
@@ -20,7 +20,7 @@ ms.locfileid: "74297711"
   
  Mac에서 Xamarin을 사용하려면 다음이 필요합니다.  
   
-- Xamarin 계정. Go to [https://www.xamarin.com/](https://www.xamarin.com/) and click **Sign In** on the upper right of the page, then click **Create a new account** on the page that appears. Xamarin 계정에 사용할 전자 메일 주소와 암호를 선택합니다.  
+- Xamarin 계정. [https://www.xamarin.com/](https://www.xamarin.com/) 로 이동 하 고 페이지의 오른쪽 위에서 **로그인** 을 클릭 한 다음 표시 되는 페이지에서 **새 계정 만들기** 를 클릭 합니다. Xamarin 계정에 사용할 전자 메일 주소와 암호를 선택합니다.  
   
 - Xcode 7 및 Xamarin 4가 설치된 OSX Yosemite(10.10) 이상을 기반으로 둔 Mac.  
   
@@ -32,7 +32,7 @@ ms.locfileid: "74297711"
   
   이 항목에서는 이러한 요구 사항에 대한 지침을 제공합니다.  설치 프로세스가 실행되는 동안 [Xamarin을 사용한 모바일 개발에 대해 알아보기](../cross-platform/learn-about-mobile-development-with-xamarin.md) 항목을 검토하여 필요한 배경 자료를 읽고 살펴볼 수 있습니다.  
   
-  **항목 내용:**  
+  **항목 내용**  
   
 - [Mac 설치(Apple ID, Xcode 및 Xamarin)](#mac)  
   
@@ -56,13 +56,13 @@ ms.locfileid: "74297711"
   
 2. 설치 관리자 내에서 **사용자 지정** 설치를 선택합니다.  
   
-     ![Choosing the Custom option in Visual Studio installation](../cross-platform/media/cross-plat-xamarin-setup-1.png "Cross-Plat Xamarin Setup 1")  
+     ![Visual Studio 설치에서 사용자 지정 옵션 선택](../cross-platform/media/cross-plat-xamarin-setup-1.png "크로스 Cross-plat Xamarin 설치 1")  
   
 3. 다음 확인란을 선택하거나 선택을 취소합니다.  
   
     1. **플랫폼 간 모바일 개발 > C#/.NET(Xamarin)** 을 선택합니다. 그러면 일반 도구와 소프트웨어 개발 키트 아래에서 다양한 Android 도구가 자동으로 선택됩니다.  
   
-         ![Select the Xamarin option under Cross&#45;Platform Mobile Development](../cross-platform/media/cross-plat-xamarin-setup-2.png "Cross-Plat Xamarin Setup 2")  
+         ![플랫폼 간&#45;모바일 개발 아래에서 Xamarin 옵션을 선택 합니다.](../cross-platform/media/cross-plat-xamarin-setup-2.png "크로스 Cross-plat Xamarin 설치 2")  
   
     2. **플랫폼 간 모바일 개발 > Microsoft Visual Studio Emulator for Android**를 선택 취소합니다.  
   
@@ -70,7 +70,7 @@ ms.locfileid: "74297711"
   
 5. 설치가 완료되면 Visual Studio를 시작하고 메시지가 표시되면 Microsoft 계정으로 로그인합니다(Windows에서 사용하는 것과 같은 계정). 그리고 **도구 > 옵션 >Xamarin** 또는 **도구 > 옵션 Xamarin > 기타**에서 **지금 확인** 링크를 통해 Xamarin 업데이트를 확인합니다.  
   
-     ![Checking for Xamarin updates in Visual Studio options](../cross-platform/media/cross-plat-xamarin-setup-3.png "Cross-Plat Xamarin Setup 3")  
+     ![Visual Studio 옵션에서 Xamarin 업데이트를 확인 하는 중](../cross-platform/media/cross-plat-xamarin-setup-3.png "크로스 Cross-plat Xamarin 설치 3")  
   
     > [!NOTE]
     > 이전 Xamarin 라이선스 관련 문제를 방지하려면 Xamarin을 4.0.3.214 이상으로 업데이트해야 합니다.  업데이트를 확인하려고 하는데 Microsoft 빌드 도구에 대한 오류가 발생하면 [Xamarin 포럼](https://forums.xamarin.com/discussion/69015/xamarin-update-on-vs-2013-says-i-need-the-build-tools-for-vs-2015)의 스레드를 참조하세요.
@@ -83,9 +83,9 @@ ms.locfileid: "74297711"
 ### <a name="xamarin-studio"></a>Xamarin Studio  
  먼저 제공된 링크로 이동할 때 Xamarin 설명서의 올바른 버전이 표시되도록 오른쪽 위에 **Xamarin Studio** 가 선택되었는지 확인합니다.  
   
- ![Selecting Xamarin Studio to see the correct documentation on Xamarin.com](../cross-platform/media/crossplat-xamarin-mac-1.png "CrossPlat Xamarin Mac 1")  
+ ![Xamarin.com에 대 한 올바른 설명서를 보려면 Xamarin Studio를 선택 합니다.](../cross-platform/media/crossplat-xamarin-mac-1.png "CrossPlat Xamarin Mac 1")  
   
- **OWA(Outlook Web Access)**  
+ **Android**  
   
 1. [Android 프로젝트 만들기](https://github.com/xamarin/docs-archive/tree/master/Recipes/android/general/projects/create_an_android_project) (영문)(xamarin.com)의 지침에 따라 Android 프로젝트 만들기를 확인합니다.  
   
@@ -100,11 +100,11 @@ ms.locfileid: "74297711"
 ### <a name="visual-studio"></a>Visual Studio  
  먼저 제공된 링크로 이동할 때 Xamarin 설명서의 올바른 버전이 표시되도록 오른쪽 위에 **Visual Studio** 가 선택되었는지 확인합니다.  
   
- ![Selecting Visual Studio to see the correct documentation on Xamarin.com](../cross-platform/media/crossplat-xamarin-mac-2.png "CrossPlat Xamarin Mac 2")  
+ ![Xamarin.com에 대 한 올바른 설명서를 보려면 Visual Studio를 선택 합니다.](../cross-platform/media/crossplat-xamarin-mac-2.png "CrossPlat Xamarin Mac 2")  
   
  또한 **도구 > Xamarin 계정...** 을 통해 Xamarin 계정에 로그인합니다.  
   
- **OWA(Outlook Web Access)**  
+ **Android**  
   
 1. [Android 프로젝트 만들기](https://github.com/xamarin/docs-archive/tree/master/Recipes/android/general/projects/create_an_android_project) (영문)(xamarin.com)의 지침에 따라 Android 프로젝트 만들기를 확인합니다.  
   
@@ -128,8 +128,8 @@ ms.locfileid: "74297711"
   
    2. 아래 표시된 대로 Visual Studio의 빌드 드롭다운에서 **iPhoneSimulator** 대상을 선택합니다. 시뮬레이터가 나열되지 않으면 Mac에서 Xcode를 시작하고 **Xcode->기본 설정**을 선택한 후에 **다운로드**를 클릭합니다. **구성 요소** 에 다운로드할 수 있는 시뮬레이터 버전이 표시되어야 합니다. 디버깅에 대한 추가 지침은 Xamarin의 [디버깅](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/#Debugging_on_the_Simulator) (영문) 페이지(xamarin.com)에서 확인할 수 있습니다.  
   
-        ![Selecting the iPhoneSimulator build target](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin Verify 5")  
+        ![드롭다운에서 iphonesimulator 대상을 빌드 대상 선택](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin Verify 5")  
   
    3. 아래 표시된 대로 Visual Studio의 디버그 드롭다운에서 iPhone 대상을 선택하고 F5 키를 눌러 디버거를 시작합니다. 그러면 앱을 조작할 Mac에서 시뮬레이터가 시작되고 동시에 Visual Studio에서 디버깅이 수행됩니다.  
   
-        ![Selecting an iPhone debug target](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin Verify 6")
+        ![IPhone 디버그 대상 선택](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin Verify 6")

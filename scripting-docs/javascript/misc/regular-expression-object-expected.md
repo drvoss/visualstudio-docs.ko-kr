@@ -22,12 +22,12 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573699"
 ---
 # <a name="regular-expression-object-expected"></a>정규식 개체가 필요합니다.
-@No__t_2이 아닌 형식의 개체에 대해 **valueOf** **메서드를 호출** 하려고 한 경우입니다. 이 호출 형식의 개체는 `RegExp` 형식 이어야 합니다.  
+`RegExp`이 아닌 형식의 개체에 대해 **valueOf** **메서드를 호출** 하려고 한 경우입니다. 이 호출 형식의 개체는 `RegExp`형식 이어야 합니다.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
-- @No__t_2 형식의 개체에 대해서만 **valueOf** **메서드를 호출 합니다.**  
+- `RegExp`형식의 개체에 대해서만 **valueOf** **메서드를 호출 합니다.**  
   
-## <a name="see-also"></a>참조  
- [Regular Expression 개체](../../javascript/reference/regular-expression-object-javascript.md)    
+## <a name="see-also"></a>참고 항목  
+ [Regular Expression 개체](../../javascript/reference/regular-expression-object-javascript.md)   
  [정규식 구문 (JavaScript)](https://msdn.microsoft.com/library/1400241x)

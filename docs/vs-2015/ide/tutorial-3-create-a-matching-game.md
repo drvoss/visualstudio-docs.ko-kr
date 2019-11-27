@@ -16,10 +16,10 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74299849"
 ---
-# <a name="tutorial-3-create-a-matching-game"></a>Tutorial 3: Create a Matching Game
+# <a name="tutorial-3-create-a-matching-game"></a>자습서 3: 일치 게임 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이 자습서에서는 플레이어가 숨겨진 아이콘의 쌍을 찾는 일치 게임을 빌드합니다. 여기에서는 다음과 같은 작업을 수행하는 방법에 대해 배우게 됩니다.
+이 자습서에서는 플레이어가 숨겨진 아이콘의 쌍을 찾는 일치 게임을 빌드합니다. 다음과 같은 작업을 수행하는 방법을 살펴봅니다.
 
 - 아이콘과 같은 개체를 `List` 개체에 저장합니다.
 

@@ -28,7 +28,7 @@ ms.locfileid: "72573658"
   
 - 정규식 검색 문자열의 구조가 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 정규식 구문을 준수 하는지 확인 합니다.  
   
-## <a name="see-also"></a>참조  
- [Regular Expression 개체](../../javascript/reference/regular-expression-object-javascript.md)    
- [정규식 구문 (JavaScript)](https://msdn.microsoft.com/library/1400241x)    
+## <a name="see-also"></a>참고 항목  
+ [Regular Expression 개체](../../javascript/reference/regular-expression-object-javascript.md)   
+ [정규식 구문 (JavaScript)](https://msdn.microsoft.com/library/1400241x)   
  [compile 메서드(Regular Expression)](../../javascript/reference/compile-method-regular-expression-javascript.md)

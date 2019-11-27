@@ -29,8 +29,8 @@ ms.locfileid: "72577532"
 - 오른쪽에 닫는 괄호를 추가 합니다.  
   
     > [!NOTE]
-    > 단일 괄호를 일치 시키려면를 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 하 여 특수 문자로 해석 되지 않도록 백슬래시 \\ (-)를 사용 하 여 이스케이프 합니다.  
+    > 단일 괄호를 일치 시키려면를 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]하 여 특수 문자로 해석 되지 않도록 백슬래시 \\(-)를 사용 하 여 이스케이프 합니다.  
   
-## <a name="see-also"></a>참조  
- [Regular Expression 개체](../../javascript/reference/regular-expression-object-javascript.md)    
+## <a name="see-also"></a>참고 항목  
+ [Regular Expression 개체](../../javascript/reference/regular-expression-object-javascript.md)   
  [정규식 구문 (JavaScript)](https://msdn.microsoft.com/library/1400241x)

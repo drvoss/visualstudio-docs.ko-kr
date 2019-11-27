@@ -40,7 +40,7 @@ HRESULT EnumCodeContextsOfPosition(
   
 #### <a name="parameters"></a>매개 변수  
  `dwSourceContext`  
- 진행 @No__t_0 또는 `IActiveScriptParse::AddScriptlet`에 제공 되는 소스 컨텍스트입니다.  
+ 진행 `IActiveScriptParse::ParseScriptText` 또는 `IActiveScriptParse::AddScriptlet`에 제공 되는 소스 컨텍스트입니다.  
   
  `uCharacterOffset`  
  진행 스크립트 텍스트의 시작을 기준으로 하는 문자 오프셋입니다.  
@@ -52,7 +52,7 @@ HRESULT EnumCodeContextsOfPosition(
  제한이 지정 된 범위에 있는 코드 컨텍스트의 열거자입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드는 `HRESULT`를 반환 합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
+ 이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
   
 |값|설명|  
 |-----------|-----------------|  
@@ -61,6 +61,6 @@ HRESULT EnumCodeContextsOfPosition(
 ## <a name="remarks"></a>주의  
  스마트 호스트는이 메서드를 사용 하 여 `IDebugDocumentContext::EnumCodeContexts` 메서드를 위임 합니다.  
   
-## <a name="see-also"></a>참조  
- [IActiveScriptDebug 인터페이스](../../winscript/reference/iactivescriptdebug-interface.md)    
+## <a name="see-also"></a>참고 항목  
+ [IActiveScriptDebug 인터페이스](../../winscript/reference/iactivescriptdebug-interface.md)   
  [IDebugDocumentContext::EnumCodeContexts](../../winscript/reference/idebugdocumentcontext-enumcodecontexts.md)

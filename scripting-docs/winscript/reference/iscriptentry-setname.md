@@ -37,7 +37,7 @@ HRESULT SetName(
   
 #### <a name="parameters"></a>매개 변수  
  `psz`  
- 진행 @No__t_0 개체의 새 이름입니다.  
+ 진행 `IScriptEntry` 개체의 새 이름입니다.  
   
 ## <a name="return-value"></a>반환 값  
  `HRESULT`입니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
@@ -48,6 +48,6 @@ HRESULT SetName(
   
 ## <a name="remarks"></a>주의  
   
-## <a name="see-also"></a>참조  
- [Iscriptentry 인터페이스](../../winscript/reference/iscriptentry-interface.md)    
+## <a name="see-also"></a>참고 항목  
+ [Iscriptentry 인터페이스](../../winscript/reference/iscriptentry-interface.md)   
  [IScriptEntry::GetName](../../winscript/reference/iscriptentry-getname.md)

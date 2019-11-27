@@ -28,6 +28,6 @@ ms.locfileid: "72573752"
   
 - **Number**형식의 개체에 대해서만 **number. prototype** 또는 **number. valueOf** 메서드를 호출 합니다.  
   
-## <a name="see-also"></a>참조  
- [Number 개체](../../javascript/reference/number-object-javascript.md)    
+## <a name="see-also"></a>참고 항목  
+ [Number 개체](../../javascript/reference/number-object-javascript.md)   
  [number 속성(Error)](../../javascript/reference/number-property-error-javascript.md)

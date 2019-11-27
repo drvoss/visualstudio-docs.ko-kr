@@ -22,7 +22,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72576580"
 ---
 # <a name="invalid-character-javascript"></a>잘못된 문자입니다.(JavaScript)
-@No__t_0 컴파일러에서 유효한 것으로 인식 되지 않는 문자를 사용 하 여 식별자를 구성 했습니다. 유효한 문자는 다음 규칙을 사용 합니다.  
+[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 컴파일러에서 유효한 것으로 인식 되지 않는 문자를 사용 하 여 식별자를 구성 했습니다. 유효한 문자는 다음 규칙을 사용 합니다.  
   
 - 첫 번째 문자는 ASCII 문자 (대문자 또는 소문자) 또는 밑줄 (_) 이어야 합니다.  
   
@@ -32,9 +32,9 @@ ms.locfileid: "72576580"
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
-- @No__t_0 언어 정의의 일부가 아닌 문자를 사용 하지 마십시오.  
+- [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 언어 정의의 일부가 아닌 문자를 사용 하지 마십시오.  
   
-## <a name="see-also"></a>참조  
- [변수](../../javascript/variables-javascript.md)    
- [특수 문자](../../javascript/advanced/special-characters-javascript.md)    
+## <a name="see-also"></a>참고 항목  
+ [변수](../../javascript/variables-javascript.md)   
+ [특수 문자](../../javascript/advanced/special-characters-javascript.md)   
  [데이터 형식](../../javascript/data-types-javascript.md)

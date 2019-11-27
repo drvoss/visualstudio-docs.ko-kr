@@ -1,5 +1,5 @@
 ---
-title: Edit and Continue (Visual C++) | Microsoft Docs
+title: 편집 하며 계속 하기 ( C++시각적 개체) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -25,18 +25,18 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74301055"
 ---
-# <a name="edit-and-continue-visual-c"></a>Edit and Continue (Visual C++)
+# <a name="edit-and-continue-visual-c"></a>편집하며 계속하기(Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual C++ 프로젝트에서 편집하며 계속하기를 사용할 수 있습니다. See [Supported Code Changes (C++)](../debugger/supported-code-changes-cpp.md) for information about the limitations of Edit and Continue.  
+Visual C++ 프로젝트에서 편집하며 계속하기를 사용할 수 있습니다. 편집 하며 계속 하기의 제한 사항에 대 한 자세한 내용은 [지원 되는 코드 변경 내용 (C++)](../debugger/supported-code-changes-cpp.md) 을 참조 하세요.  
   
- Starting in Visual Studio 2015 Update 1, you can now use Edit and Continue in Windows Store C++ apps and DirectX apps, because it now supports the **/ZI** compiler switch with **/bigobj** switch. You can also use Edit  and Continue with binaries compiled with the **/FASTLINK** switch.  
+ 이제 Visual Studio 2015 업데이트 1부터 Windows 스토어 C++ 앱 및 DirectX 앱에서 편집 하며 계속 하기를 사용할 수 있습니다. 이제 **/bigobj** 스위치와 함께 **/zi** 컴파일러 스위치를 지원 하기 때문입니다. **/Fastlink 스위치로** 스위치를 사용 하 여 컴파일된 이진 파일에 대해 편집 하며 계속 하기를 사용할 수도 있습니다.  
   
- Other Update 1 improvements include a new, cancelable wait dialog, and notification when a file does not support Edit and Continue. For more information about Update 1 improvements, see [Improvements for C++ Edit and Continue in Visual Studio 2015 Update 1](https://devblogs.microsoft.com/cppblog/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1/).  
+ 다른 업데이트 1 개선 사항으로는 취소할 수 있는 새로운 대기 대화 상자와, 파일에서 편집하며 계속하기를 지원하지 않는 경우 알리는 기능이 있습니다. 업데이트 1 개선 사항에 대 한 자세한 내용은 [Visual Studio C++ 2015 업데이트 1에서 편집 하며 계속 하기에 대 한 향상 된 기능](https://devblogs.microsoft.com/cppblog/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1/)을 참조 하세요.  
   
  Visual Studio 2013 업데이트 3에 도입된 [/Zo(최적화된 디버깅 향상)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) 컴파일러 옵션은 [/Od((디버그) 비활성화)](https://msdn.microsoft.com/library/aafb762y.aspx) 옵션 없이 컴파일된 이진에 대한 .pdb(기호) 파일에 정보를 더 추가합니다.  
   
- **/Zo** disables Edit and Continue. [방법: 최적화된 코드 디버그](../debugger/how-to-debug-optimized-code.md)를 참조하세요.  
+ **/Zo** 는 편집 하며 계속 하기를 사용 하지 않도록 설정 합니다. [방법: 최적화된 코드 디버그](../debugger/how-to-debug-optimized-code.md)를 참조하세요.  
   
 ## <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> 편집하며 계속하기 사용 또는 사용 안 함  
  현재 디버깅 세션 중에 적용하지 않으려는 코드 편집 내용이 있는 경우 편집하며 계속하기의 자동 호출을 사용하지 않도록 설정할 수 있습니다. 자동 편집하며 계속하기를 다시 사용하도록 설정할 수도 있습니다.  
@@ -77,5 +77,5 @@ Visual C++ 프로젝트에서 편집하며 계속하기를 사용할 수 있습�
   
  이러한 경우 디버거는 변경 내용을 적용할 수 있을 때까지 원본 코드를 계속 실행합니다. 부실 코드는 별도의 소스 창에 `enc25.tmp`같은 제목을 사용하여 임시 소스 파일 창으로 표시됩니다. 편집된 소스는 원본 소스 창에 계속 표시됩니다. 부실 코드를 편집하려고 하면 경고 메시지가 나타납니다.  
   
-## <a name="see-also"></a>관련 항목:  
+## <a name="see-also"></a>참고 항목  
  [지원되는 코드 변경(C++)](../debugger/supported-code-changes-cpp.md)

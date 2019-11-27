@@ -1,5 +1,5 @@
 ---
-title: 'Error: The Web Server Could Not Find the Requested Resource | Microsoft Docs'
+title: '오류: 웹 서버에서 요청 된 리소스를 찾을 수 없습니다. Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -34,6 +34,6 @@ ms.locfileid: "74297423"
   
  IIS 문제 해결에 대한 자세한 내용은 [IIS 관리](https://go.microsoft.com/fwlink/?LinkId=255872)를 참조하세요.  
   
-## <a name="see-also"></a>관련 항목:  
- [UrlScan Security Tool](/iis/extensions/working-with-urlscan/urlscan-3-reference)   
+## <a name="see-also"></a>참고 항목  
+ [UrlScan 보안 도구](/iis/extensions/working-with-urlscan/urlscan-3-reference)   
  [오류: 웹 서버가 잠겨 있기 때문에 디버깅을 사용하기 위해 필요한 DEBUG 동사를 사용할 수 없습니다.](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)

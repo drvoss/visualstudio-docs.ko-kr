@@ -29,14 +29,14 @@ SharePoint 애플리케이션에 코딩된 UI 테스트를 포함하면 해당 U
 
  **참고**
 
-- ![Prerequsite](../test/media/prereq.png "Prereq") Coded UI tests for SharePoint applications are supported only with SharePoint 2010.
+- ![Prereq](../test/media/prereq.png "필수 구성 요소") SharePoint 응용 프로그램에 대 한 코딩 된 UI 테스트는 SharePoint 2010 에서만 지원 됩니다.
 
-- ![Prerequsite](../test/media/prereq.png "Prereq") Support for Visio and PowerPoint 2010 controls in your SharePoint application is not supported.
+- ![Prereq](../test/media/prereq.png "필수 구성 요소") SharePoint 응용 프로그램에서 Visio 및 PowerPoint 2010 컨트롤은 지원 되지 않습니다.
 
 ## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>SharePoint 응용 프로그램에 대해 코딩된 UI 테스트 만들기
  SharePoint 2010 애플리케이션에 대한[코딩된 UI 테스트 만들기](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) 는 다른 유형의 애플리케이션에 대해 테스트 만들기와 동일합니다. 기록 및 재생은 웹 편집 인터페이스의 모든 컨트롤에 대해 지원됩니다. 범주 및 웹 파트 선택 인터페이스는 모두 표준 웹 컨트롤입니다.
 
- ![SharePoint web parts](../test/media/cuit-sharepoint.png "CUIT_SharePoint")
+ ![SharePoint 웹 파트](../test/media/cuit-sharepoint.png "CUIT_SharePoint")
 
 > [!NOTE]
 > 작업을 기록하는 경우 코드를 생성하기 전에 작업의 유효성을 검사합니다. 마우스를 위로 가져가는 것과 관련해서는 몇 가지 동작이 있으므로 기본적으로 설정됩니다. 코딩된 UI 테스트에서 중복된 위로 가져가기는 제거할 때 주의가 필요합니다. 이렇게 하려면 테스트에 대한 코드를 편집하거나 [코딩된 UI 테스트 편집기](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)를 사용합니다.
@@ -53,7 +53,7 @@ SharePoint 애플리케이션에 코딩된 UI 테스트를 포함하면 해당 U
 > [!WARNING]
 > 화살표 작업 후 Excel 셀에 텍스트를 입력하는 작업은 올바르게 기록되지 않습니다. 마우스를 사용해서 셀을 선택하세요.
 
- 빈 셀에 대한 작업을 기록할 때는 셀을 두 번 클릭하고 텍스트 설정 작업을 수행하여 코드를 수정해야 합니다. 셀을 클릭하고 키보드 작업을 수행하면 셀 내에서 `textarea` 가 활성화되기 때문에 이 작업이 필요합니다. 빈 셀에서 단순히 `setvalue` 를 기록하면 셀을 클릭할 때까지 제공되지 않은 `editbox` 가 검색됩니다. 예를 들어 다음과 같은 가치를 제공해야 합니다.
+ 빈 셀에 대한 작업을 기록할 때는 셀을 두 번 클릭하고 텍스트 설정 작업을 수행하여 코드를 수정해야 합니다. 셀을 클릭하고 키보드 작업을 수행하면 셀 내에서 `textarea` 가 활성화되기 때문에 이 작업이 필요합니다. 빈 셀에서 단순히 `setvalue` 를 기록하면 셀을 클릭할 때까지 제공되지 않은 `editbox` 가 검색됩니다. 예를 들면 다음과 같습니다.
 
 ```csharp
 Mouse.DoubliClick(uiItemCell,new Point(31,14));
@@ -138,10 +138,10 @@ uiGridKeyboardInputEdit.Text=value;
  [코딩된 UI 테스트에 대한 콘텐츠 인덱스](https://blogs.msdn.microsoft.com/mathew_aniyan/2013/02/18/content-index-for-coded-ui-test/)
 
 ### <a name="guidance"></a>지침
- [Visual Studio 2012를 사용한 지속적인 업데이트 테스트 - 5장 시스템 테스트 자동화](https://go.microsoft.com/fwlink/?LinkID=255196)
+ [Visual Studio 2012를 사용한 지속적인 업데이트 테스트 - 5장: 시스템 테스트 자동화](https://go.microsoft.com/fwlink/?LinkID=255196)
 
 ### <a name="forum"></a>포럼
  [Visual Studio ALM + Team Foundation Server 블로그](https://go.microsoft.com/fwlink/?LinkID=254496)
 
-## <a name="see-also"></a>관련 항목:
- [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md) [Web performance and load testing SharePoint 2010 and 2013 applications](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54) [Create SharePoint Solutions](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631) [Verifying and Debugging SharePoint Code](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c) [Building and Debugging SharePoint Solutions](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) [Profiling the Performance of SharePoint Applications](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)
+## <a name="see-also"></a>참고 항목
+ [UI 자동화를 사용 하 여 코드 테스트](../test/use-ui-automation-to-test-your-code.md) [웹 성능 테스트 및 부하 테스트 sharepoint 2010 및 2013 응용 프로그램](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54) [sharepoint](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631) [코드 확인 및 디버깅](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c) sharepoint [솔루션 빌드 및 디버깅 Sharepoint 솔루션 빌드 및 디버깅](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) sharepoint [응용 프로그램의 성능 프로 파일링](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)

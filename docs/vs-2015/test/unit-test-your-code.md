@@ -41,7 +41,7 @@ ms.locfileid: "74301429"
 ## <a name="key-tasks"></a>주요 작업
  다음 항목은 단위 테스트를 이해하고 만드는 데 유용합니다.
 
-|태스크|관련 항목|
+|작업|관련 주제|
 |-----------|-----------------------|
 |**빠른 시작 및 연습:** 다음 항목을 사용하여 코드 예제에서 Visual Studio의 단위 테스트에 대해 알아봅니다.|-   [연습: 관리 코드에 대한 단위 테스트 만들기 및 실행](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [빠른 시작: 테스트 탐색기를 사용한 테스트 기반 개발](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [기존 C++ 애플리케이션에 단위 테스트 추가](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)<br />-   [테스트 탐색기를 사용하여 네이티브 코드 단위 테스트](https://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)|
 |**테스트 탐색기를 사용한 단위 테스트:** 테스트 탐색기를 통해 보다 다 생산적이고 효율적인 단위 테스트를 만드는 방법에 대해 알아봅니다.|-   [단위 테스트 기본 사항](../test/unit-test-basics.md)<br />-   [단위 테스트 프로젝트 만들기](../test/create-a-unit-test-project.md)<br />-   [테스트 탐색기를 사용하여 단위 테스트 실행](../test/run-unit-tests-with-test-explorer.md)<br />-   [타사 단위 테스트 프레임워크 설치](../test/install-third-party-unit-test-frameworks.md)<br />-   [Visual Studio 2010에서 단위 테스트 업그레이드](https://msdn.microsoft.com/9bb75856-f68a-4de2-a084-b08a947a1172)|
@@ -63,10 +63,10 @@ ms.locfileid: "74301429"
 
  Visual Studio를 사용하여 자동화된 테스트를 실행하는 방법을 [!INCLUDE[TCMext](../includes/tcmext-md.md)]를 사용할 경우와 비교하여 설명하는 항목에 대한 링크를 제공합니다.
 
-## <a name="reference"></a>참고
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting> Describes the UnitTesting namespace, which provides attributes, exceptions, asserts, and other classes that support unit testing.
+## <a name="reference"></a>참조
+ <xref:Microsoft.VisualStudio.TestTools.UnitTesting>는 특성, 예외, 어설션 및 단위 테스트를 지 원하는 기타 클래스를 제공 하는 UnitTesting 네임 스페이스에 대해 설명 합니다.
 
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> Describes the UnitTesting.Web namespace, which extends the UnitTesting namespace by providing support for [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] and Web service unit tests.
+ <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 및 웹 서비스 단위 테스트에 대 한 지원을 제공 하 여 UnitTesting 네임 스페이스를 확장 하는 UnitTesting 네임 스페이스에 대해 설명 합니다.
 
 ## <a name="external-resources"></a>외부 리소스
 
@@ -74,13 +74,13 @@ ms.locfileid: "74301429"
  [채널 9: XAML을 사용하여 빌드한 Windows 스토어 앱 유닛 테스트](https://go.microsoft.com/fwlink/?LinkId=226285)
 
 ### <a name="forums"></a>포럼
- [Visual Studio 단위 테스트](https://go.microsoft.com/fwlink/?LinkId=224477)
+ [Visual Studio 유닛 테스트](https://go.microsoft.com/fwlink/?LinkId=224477)
 
 ### <a name="guidance"></a>지침
  [Visual Studio 2012를 사용한 지속적인 업데이트 테스트 - 2장: 단위 테스트: 내부 테스트](https://go.microsoft.com/fwlink/?LinkID=255188)
 
-### <a name="reference"></a>참고
+### <a name="reference"></a>참조
  [단위 테스트에 대한 콘텐츠 인덱스](https://go.microsoft.com/fwlink/?LinkID=254719)
 
-## <a name="see-also"></a>관련 항목:
- [Improve Code Quality](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945) [Testing the application](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)
+## <a name="see-also"></a>참고 항목
+ [응용 프로그램 테스트](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac) [코드 품질 향상](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)

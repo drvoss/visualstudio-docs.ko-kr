@@ -1,5 +1,5 @@
 ---
-title: Navigate relationships with the UML API | Microsoft Docs
+title: UML API를 사용 하 여 관계 탐색 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -152,9 +152,9 @@ IEnumerable<IUseCase>GetIncludingCases(this IUseCase usecase);
 ```
 
 ## <a name="enumerating-relationships"></a>관계 열거
- All properties of the UML model that return multiple values conform to the IEnumerable<> interface. This means that you can use [Linq Query Expressions](https://go.microsoft.com/fwlink/?LinkId=168834) and the extension methods defined in the **System.Linq** namespace.
+ 여러 값을 반환 하는 UML 모델의 모든 속성은 IEnumerable < > 인터페이스를 따릅니다. 즉, [Linq 쿼리 식](https://go.microsoft.com/fwlink/?LinkId=168834) 과 **system.xml 네임 스페이스** 에 정의 된 확장 메서드를 사용할 수 있습니다.
 
- 예를 들어 다음과 같은 가치를 제공해야 합니다.
+ 예를 들면 다음과 같습니다.
 
 ```
 from shape in     Context.CurrentDiagram.GetSelectedShapes<IClassifier>()
@@ -163,5 +163,5 @@ select shape.Element
 
 ```
 
-## <a name="see-also"></a>관련 항목:
- [Extend UML models and diagrams](../modeling/extend-uml-models-and-diagrams.md) [Navigate the UML model](../modeling/navigate-the-uml-model.md)
+## <a name="see-also"></a>참고 항목
+ [Uml 모델 및 다이어그램 확장](../modeling/extend-uml-models-and-diagrams.md) [uml 모델 탐색](../modeling/navigate-the-uml-model.md)

@@ -34,7 +34,7 @@ XAML 디자이너의 요소에 대한 스타일 및 템플릿은 리소스라는
 
      리소스를 만들 수 있는 적절한 대화 상자가 나타납니다. 이 대화 상자는 브러시에서 리소스를 만들 때 나타납니다.
 
-     ![Create Resource Dialog Box](../designers/media/xaml-create-resource.png "xaml_create_resource")
+     ![리소스 만들기 대화 상자](../designers/media/xaml-create-resource.png "xaml_create_resource")
 
 3. **이름(키)** 상자에 키 이름을 입력합니다. 이 이름은 다른 요소가 리소스를 참조하도록 할 때 사용할 수 있습니다.
 
@@ -65,7 +65,7 @@ XAML 디자이너의 요소에 대한 스타일 및 템플릿은 리소스라는
      > [!NOTE]
      > **템플릿 편집**은 컨트롤 템플릿을 적용하는 데 사용됩니다. **추가 템플릿 편집**은 다른 템플릿 형식을 적용하는 데 사용됩니다.
 
-     호환되는 모든 위치에 리소스를 적용할 수 있습니다. 예를 들어 <xref:Windows.UI.Xaml.Controls.TextBox> 컨트롤의 **Foreground** 속성에 브러시 리소스를 적용할 수 있습니다.
+     호환되는 모든 위치에 리소스를 적용할 수 있습니다. 예를 들어 **컨트롤의**Foreground<xref:Windows.UI.Xaml.Controls.TextBox> 속성에 브러시 리소스를 적용할 수 있습니다.
 
 ### <a name="to-edit-a-resource"></a>리소스를 편집하려면
 
@@ -75,5 +75,5 @@ XAML 디자이너의 요소에 대한 스타일 및 템플릿은 리소스라는
 
 3. 리소스에 대한 옵션을 수정합니다.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [XAML 디자이너를 사용하여 UI 만들기](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

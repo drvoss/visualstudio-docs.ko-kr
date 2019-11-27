@@ -39,10 +39,10 @@ HRESULT GetMemberProperties(
   
 #### <a name="parameters"></a>매개 변수  
  `id`  
- 멤버를 식별합니다. @No__t_0 또는 `GetNextDispID`를 사용 하 여 디스패치 식별자를 가져옵니다.  
+ 멤버를 식별합니다. `GetDispID` 또는 `GetNextDispID`를 사용 하 여 디스패치 식별자를 가져옵니다.  
   
  `grfdexFetch`  
- 검색할 속성을 결정 합니다. @No__t_0 및/또는 다음 값의 조합에 나열 된 값을 조합 하 여 사용할 수 있습니다.  
+ 검색할 속성을 결정 합니다. `pgrfdex` 및/또는 다음 값의 조합에 나열 된 값을 조합 하 여 사용할 수 있습니다.  
   
 |값|의미|  
 |-----------|-------------|  
@@ -56,17 +56,17 @@ HRESULT GetMemberProperties(
   
 |값|의미|  
 |-----------|-------------|  
-|fdexPropCanGet|DISPATCH_PROPERTYGET를 사용 하 여 멤버를 가져올 수 있습니다.|  
+|fdexPropCanGet|멤버는 DISPATCH_PROPERTYGET를 사용 하 여 가져올 수 있습니다.|  
 |fdexPropCannotGet|DISPATCH_PROPERTYGET를 사용 하 여 멤버를 가져올 수 없습니다.|  
-|fdexPropCanPut|DISPATCH_PROPERTYPUT를 사용 하 여 멤버를 설정할 수 있습니다.|  
+|fdexPropCanPut|멤버는 DISPATCH_PROPERTYPUT를 사용 하 여 설정할 수 있습니다.|  
 |fdexPropCannotPut|DISPATCH_PROPERTYPUT를 사용 하 여 멤버를 설정할 수 없습니다.|  
-|fdexPropCanPutRef|DISPATCH_PROPERTYPUTREF를 사용 하 여 멤버를 설정할 수 있습니다.|  
+|fdexPropCanPutRef|멤버는 DISPATCH_PROPERTYPUTREF를 사용 하 여 설정할 수 있습니다.|  
 |fdexPropCannotPutRef|DISPATCH_PROPERTYPUTREF를 사용 하 여 멤버를 설정할 수 없습니다.|  
 |fdexPropNoSideEffects|멤버에 부작용이 없습니다. 예를 들어 디버거는 디버깅 중인 스크립트의 상태를 변경 하지 않고이 멤버를 안전 하 게 가져오거나 설정 하거나 호출할 수 있습니다.|  
 |fdexPropDynamicType|멤버는 동적 이며 개체의 수명 동안 변경 될 수 있습니다.|  
 |fdexPropCanCall|DISPATCH_METHOD를 사용 하 여 멤버를 메서드로 호출할 수 있습니다.|  
 |fdexPropCannotCall|DISPATCH_METHOD를 사용 하 여 멤버를 메서드로 호출할 수 없습니다.|  
-|fdexPropCanConstruct|멤버는 DISPATCH_CONSTRUCT을 사용 하 여 생성자로 호출 될 수 있습니다.|  
+|fdexPropCanConstruct|멤버는 DISPATCH_CONSTRUCT를 사용 하 여 생성자로 호출 될 수 있습니다.|  
 |fdexPropCannotConstruct|DISPATCH_CONSTRUCT를 사용 하 여 멤버를 생성자로 호출할 수 없습니다.|  
 |fdexPropCanSourceEvents|멤버가 이벤트를 발생 시킬 수 있습니다.|  
 |fdexPropCannotSourceEvents|멤버가 이벤트를 발생 시킬 수 없습니다.|  
@@ -76,7 +76,7 @@ HRESULT GetMemberProperties(
   
 |||  
 |-|-|  
-|`S_OK`|성공할.|  
+|`S_OK`|명령 실행 성공|  
 |`DISP_E_UNKNOWNNAME`|이름을 알 수 없습니다.|  
   
 ## <a name="example"></a>예제  
@@ -96,7 +96,7 @@ BSTR bstrName;
    }  
 ```  
   
-## <a name="see-also"></a>참조  
- [IDispatchEx 인터페이스](../../winscript/reference/idispatchex-interface.md)    
- [IDispatchEx:: GetDispID](../../winscript/reference/idispatchex-getdispid.md)    
+## <a name="see-also"></a>참고 항목  
+ [IDispatchEx 인터페이스](../../winscript/reference/idispatchex-interface.md)   
+ [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

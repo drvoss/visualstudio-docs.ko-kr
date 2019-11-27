@@ -61,7 +61,7 @@ HRESULT AddTypeLib(
 ## <a name="remarks"></a>주의  
  이 메서드는 `LoadTypeLib`를 호출 하 여 형식 라이브러리를 로드 합니다. 성공 하면이 메서드는 `IActiveScriptAuthor::AddNamedItem`를 호출 하 여 형식 정보를 추가 합니다.  
   
-## <a name="see-also"></a>참조  
- [IActiveScriptAuthor 인터페이스](../../winscript/reference/iactivescriptauthor-interface.md)    
- [IActiveScriptAuthor:: AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)    
+## <a name="see-also"></a>참고 항목  
+ [IActiveScriptAuthor 인터페이스](../../winscript/reference/iactivescriptauthor-interface.md)   
+ [IActiveScriptAuthor::AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)   
  [LoadTypeLib](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelib)

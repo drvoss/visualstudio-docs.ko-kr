@@ -1,5 +1,5 @@
 ---
-title: Navigate the UML model | Microsoft Docs
+title: UML 모델 탐색 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -24,15 +24,15 @@ ms.locfileid: "74289855"
 이 항목에서는 UML 모델의 주요 형식을 소개합니다.
 
 ## <a name="the-model-elements-model-and-model-store"></a>모델 요소, 모델 및 모델 저장소
- The types defined in the assembly **Microsoft.VisualStudio.Uml.Interfaces.dll** correspond to the types defined in the [UML Specification, version 2.1.2](https://www.omg.org/spec/UML/2.1.2/Superstructure/PDF/).
+ **VisualStudio** 어셈블리에 정의 된 형식은 [Uml 사양 버전 2.1.2](https://www.omg.org/spec/UML/2.1.2/Superstructure/PDF/)에 정의 된 형식에 해당 합니다.
 
- UML 사양의 형식은 Visual Studio에서 인터페이스로 인식됩니다. 각 형식의 이름 앞에 'I' 문자가 추가됩니다. For example: [IElement](/previous-versions/dd516035(v=vs.140)), [IClass](/previous-versions/dd523539%28v%3dvs.140%29), [IOperation](/previous-versions/dd481186(v=vs.140)).
+ UML 사양의 형식은 Visual Studio에서 인터페이스로 인식됩니다. 각 형식의 이름 앞에 'I' 문자가 추가됩니다. 예: [IElement](/previous-versions/dd516035(v=vs.140)), [IClass](/previous-versions/dd523539%28v%3dvs.140%29), [ioperation](/previous-versions/dd481186(v=vs.140)).
 
  IElement를 제외한 모든 형식은 하나 이상의 상위 형식에서 속성을 상속합니다.
 
-- For a summary of the model types, see [UML model element types](../modeling/uml-model-element-types.md).
+- 모델 형식에 대 한 요약은 [UML 모델 요소 형식](../modeling/uml-model-element-types.md)을 참조 하세요.
 
-- For full details of the API, see [API Reference for UML Modeling Extensibility](../modeling/api-reference-for-uml-modeling-extensibility.md).
+- API에 대 한 자세한 내용은 [UML 모델링 확장성에 대 한 Api 참조](../modeling/api-reference-for-uml-modeling-extensibility.md)를 참조 하세요.
 
 ### <a name="relationships"></a>관계
  UML 사양에 정의된 속성 및 관계는 .NET 속성으로 구현됩니다.
@@ -45,18 +45,18 @@ ms.locfileid: "74289855"
 
  모델에서 요소를 삭제하면 참여하는 관계도 자동으로 삭제되고 반대쪽 속성이 업데이트됩니다.
 
- UML 사양에서 속성에 복합성 0..1을 할당하는 경우 `null` 값을 가질 수 있습니다. A multiplicity with maximum greater than 1 means that the .NET property has the type: `IEnumerable<`*Type*`>`.
+ UML 사양에서 속성에 복합성 0..1을 할당하는 경우 `null` 값을 가질 수 있습니다. 복합성이 1 보다 큰 복합성은 .NET 속성의 type: `IEnumerable<`*형식이*`>`것을 의미 합니다.
 
- For more information about traversing relationships, see [Navigate relationships with the UML API](../modeling/navigate-relationships-with-the-uml-api.md).
+ 관계 트래버스에 대 한 자세한 내용은 [UML API를 사용 하 여 관계 탐색](../modeling/navigate-relationships-with-the-uml-api.md)을 참조 하세요.
 
 ### <a name="the-ownership-tree"></a>소유권 트리
- A model contains a tree of [IElement](/previous-versions/dd516035(v=vs.140)) objects. 모든 요소에 `OwnedElements` 및 `Owner` 속성이 있습니다.
+ 모델에는 [IElement](/previous-versions/dd516035(v=vs.140)) 개체의 트리가 포함 되어 있습니다. 모든 요소에 `OwnedElements` 및 `Owner` 속성이 있습니다.
 
- 대부분의 경우 `Owner` 및 `OwnedElements` 속성의 대상은 보다 구체적인 이름을 가진 다른 속성에서도 참조됩니다. 예를 들어 모든 UML 작업은 UML 클래스가 소유합니다. Therefore [IOperation](/previous-versions/dd481186(v=vs.140)) has a property named [IOperation.Class](/previous-versions/dd473473%28v%3dvs.140%29), and in every [IOperation](/previous-versions/dd481186(v=vs.140)) object, `Class == Owner`.
+ 대부분의 경우 `Owner` 및 `OwnedElements` 속성의 대상은 보다 구체적인 이름을 가진 다른 속성에서도 참조됩니다. 예를 들어 모든 UML 작업은 UML 클래스가 소유합니다. 따라서 [Ioperation](/previous-versions/dd481186(v=vs.140)) 에는 [Ioperation. 클래스](/previous-versions/dd473473%28v%3dvs.140%29)라는 속성이 있으며 모든 [ioperation](/previous-versions/dd481186(v=vs.140)) 개체에서 `Class == Owner`합니다.
 
- The topmost element of the tree, which has no Owner, is an `AuxiliaryConstructs.IModel`. The IModel is contained within a `IModelStore`, in which it is the [IModelStore.Root](/previous-versions/ee789368(v=vs.140)).
+ 소유자가 없는 트리의 최상위 요소는 `AuxiliaryConstructs.IModel`입니다. IModel은 `IModelStore`내에 포함 되며,이는 [Imodelstore입니다.](/previous-versions/ee789368(v=vs.140))
 
- 모든 모델 요소는 소유자를 사용하여 생성됩니다. For more information, see [Create elements and relationships in UML models](../modeling/create-elements-and-relationships-in-uml-models.md).
+ 모든 모델 요소는 소유자를 사용하여 생성됩니다. 자세한 내용은 [UML 모델에서 요소 및 관계 만들기](../modeling/create-elements-and-relationships-in-uml-models.md)를 참조 하세요.
 
  ![클래스 다이어그램: 모델, 다이어그램, 도형 및 요소](../modeling/media/uml-mm1.png)
 
@@ -67,12 +67,12 @@ ms.locfileid: "74289855"
 
  모양은 트리로 정렬됩니다. 트리의 가장자리는 ParentShape 및 ChildShapes 속성으로 표시됩니다. 다이어그램은 부모가 없는 유일한 모양입니다. 다이어그램 화면의 모양은 더 작은 파트로 구성됩니다. 예를 들어 클래스 모양에는 특성 및 작업 구획이 있습니다.
 
- For more information about shapes, see [Display a UML model on diagrams](../modeling/display-a-uml-model-on-diagrams.md).
+ 도형에 대 한 자세한 내용은 [다이어그램에 UML 모델 표시](../modeling/display-a-uml-model-on-diagrams.md)를 참조 하세요.
 
 ## <a name="access-to-the-model-in-extensions"></a>확장에서 모델 액세스
  MEF 구성 요소로 정의된 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장에서 확장이 실행되는 컨텍스트의 정보를 가져오는 속성을 선언할 수 있습니다.
 
-|특성 유형|다음에 대한 액세스 제공|추가 정보|
+|특성 형식|다음에 대한 액세스 제공|추가 정보|
 |--------------------|----------------------------------|----------------------|
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation<br /><br /> .IDiagramContext<br /><br /> (Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll)|현재 포커스 다이어그램입니다.|[모델링 다이어그램의 메뉴 명령 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|
 |Microsoft.VisualStudio.Modeling.ExtensionEnablement<br /><br /> .ILinkedUndoContext<br /><br /> (in Microsoft.VisualStudio.Modeling.Sdk.[version].dll)|변경 내용을 트랜잭션으로 그룹화할 수 있습니다.|[트랜잭션을 사용하여 UML 모델 업데이트 연결](../modeling/link-uml-model-updates-by-using-transactions.md)|
@@ -120,15 +120,15 @@ foreach (IShape<IInterface> in
 ```
 
 ## <a name="accessing-another-model-or-diagrams"></a>다른 모델 또는 다이어그램 액세스
- 다음과 같은 작업을 수행할 수 있습니다.
+ 다음과 같습니다.
 
-- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 모델 버스를 사용하여 서로 다른 모델의 요소 간에 링크를 만듭니다. For more information, see [Integrate UML models with other models and tools](../modeling/integrate-uml-models-with-other-models-and-tools.md).
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 모델 버스를 사용하여 서로 다른 모델의 요소 간에 링크를 만듭니다. 자세한 내용은 [UML 모델을 다른 모델 및 도구와 통합](../modeling/integrate-uml-models-with-other-models-and-tools.md)을 참조 하세요.
 
-- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 사용자 인터페이스에 표시하지 않고 모델링 프로젝트 및 다이어그램을 읽기 전용 모드로 로드합니다. For more information, see [Read a UML model in program code](../modeling/read-a-uml-model-in-program-code.md).
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 사용자 인터페이스에 표시하지 않고 모델링 프로젝트 및 다이어그램을 읽기 전용 모드로 로드합니다. 자세한 내용은 [프로그램 코드에서 UML 모델 읽기](../modeling/read-a-uml-model-in-program-code.md)를 참조 하세요.
 
-- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 모델링 프로젝트 및 다이어그램을 열고 내용에 액세스합니다. For more information, see [Open a UML model by using the Visual Studio API](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md).
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 모델링 프로젝트 및 다이어그램을 열고 내용에 액세스합니다. 자세한 내용은 [Visual STUDIO API를 사용 하 여 UML 모델 열기](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)를 참조 하세요.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - [UML 모델 및 다이어그램 확장](../modeling/extend-uml-models-and-diagrams.md)
 - [UML API를 사용한 프로그래밍](../modeling/programming-with-the-uml-api.md)

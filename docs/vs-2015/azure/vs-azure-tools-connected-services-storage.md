@@ -1,5 +1,5 @@
 ---
-title: Add Azure Storage by using Connected Services
+title: 을 사용 하 여 Azure Storage 추가 연결된 서비스
 description: Visual Studio 연결된 서비스 추가 대화 상자를 사용하여 Azure Storage를 앱에 추가
 author: ghogen
 manager: jillfra
@@ -69,6 +69,6 @@ Visual Studio를 사용하면 **연결된 서비스 추가** 대화 상자에서
 - WebJob 프로젝트 - [변경된 내용 -WebJob 프로젝트](/azure/visual-studio/vs-storage-webjobs-what-happened)
 
 ## <a name="next-steps"></a>다음 단계
-- [MSDN Forum: Azure Storage](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
+- [MSDN 포럼: Azure Storage](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
 - [Microsoft Azure Storage 팀 블로그](https://blogs.msdn.microsoft.com/windowsazurestorage/)
 - [Azure Storage 설명서](https://docs.microsoft.com/azure/storage/)

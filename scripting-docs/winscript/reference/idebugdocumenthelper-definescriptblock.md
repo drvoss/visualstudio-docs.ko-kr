@@ -56,7 +56,7 @@ HRESULT DefineScriptBlock(
  제한이 스크립트 블록의 소스 컨텍스트입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드는 `HRESULT`를 반환 합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
+ 이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
   
 |값|설명|  
 |-----------|-----------------|  
@@ -67,9 +67,9 @@ HRESULT DefineScriptBlock(
   
  스크립트 엔진은 스크립트 블록의 모든 구문 색 지정 및 코드 컨텍스트 조회를 담당 합니다.  
   
- @No__t_0 메서드는 텍스트가 추가 된 후 (예: `IDebugDocumentHelper::AddDBCSText` 메서드 사용) 스크립트 블록이 구문 분석 되기 전에 호출 해야 합니다 (예: `IActiveScriptParse ::ParseScriptText` 메서드 사용).  
+ `DefineScriptBlock` 메서드는 텍스트가 추가 된 후 (예: `IDebugDocumentHelper::AddDBCSText` 메서드 사용) 스크립트 블록이 구문 분석 되기 전에 호출 해야 합니다 (예: `IActiveScriptParse ::ParseScriptText` 메서드 사용).  
   
-## <a name="see-also"></a>참조  
- [IDebugDocumentHelper 인터페이스](../../winscript/reference/idebugdocumenthelper-interface.md)    
- [IDebugDocumentHelper:: AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)    
+## <a name="see-also"></a>참고 항목  
+ [IDebugDocumentHelper 인터페이스](../../winscript/reference/idebugdocumenthelper-interface.md)   
+ [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
  [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)

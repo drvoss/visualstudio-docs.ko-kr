@@ -52,7 +52,7 @@ HRESULT GetStat(
  제한이 통계를 나타내는 64 비트 부호 없는 정수의 하위 32 비트입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드는 `HRESULT`를 반환 합니다. 가능한 값은 다음 표에 나와 있는 값을 포함 하지만이에 제한 되지 않습니다.  
+ 이 메서드는 `HRESULT`를 반환합니다. 가능한 값은 다음 표에 나와 있는 값을 포함 하지만이에 제한 되지 않습니다.  
   
 |값|설명|  
 |-----------|-----------------|  
@@ -61,6 +61,6 @@ HRESULT GetStat(
 ## <a name="remarks"></a>주의  
  이 메서드는 표준 스크립트 통계 중 하나를 반환 합니다.  
   
-## <a name="see-also"></a>참조  
- [IActiveScriptStats:: GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)    
+## <a name="see-also"></a>참고 항목  
+ [IActiveScriptStats::GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)   
  [IActiveScriptStats 인터페이스](../../winscript/reference/iactivescriptstats-interface.md)

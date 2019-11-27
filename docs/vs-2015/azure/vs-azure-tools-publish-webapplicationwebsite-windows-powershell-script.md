@@ -32,7 +32,7 @@ Publish-WebApplicationWebSite
 -Verbose
 ```
 
-## <a name="configuration"></a>Configuration
+## <a name="configuration"></a>구성
 배포의 세부 정보를 설명하는 JSON 구성 파일에 대한 경로입니다.
 
 | 매개 변수 | 기본값 |
@@ -41,8 +41,8 @@ Publish-WebApplicationWebSite
 | 필수 여부 |true |
 | 위치 |명명됨 |
 | 기본값 |없음 |
-| Accept Pipeline Input? |False |
-| Accept Wildcard Characters? |False |
+| Accept Pipeline Input? |false |
+| Accept Wildcard Characters? |false |
 
 ## <a name="subscriptionname"></a>SubscriptionName
 웹사이트를 만들려는 Azure 구독의 이름입니다.
@@ -50,11 +50,11 @@ Publish-WebApplicationWebSite
 | 매개 변수 | 기본값 |
 | --- | --- |
 | 별칭 |없음 |
-| 필수 여부 |False |
+| 필수 여부 |false |
 | 위치 |명명됨 |
 | 기본값 |없음 |
-| Accept Pipeline Input? |False |
-| Accept Wildcard Characters? |False |
+| Accept Pipeline Input? |false |
+| Accept Wildcard Characters? |false |
 
 ## <a name="webdeploypackage"></a>WebDeployPackage
 웹 사이트에 게시하는 웹 배포 패키지에 대한 경로입니다. Visual Studio에서 웹 게시 마법사를 사용하여 이 패키지를 만들 수 있습니다. 자세한 내용은 [Azure Cloud Services 및 ASP.NET으로 시작하기](https://go.microsoft.com/fwlink/p/?LinkID=623089)를 참조하세요.
@@ -62,11 +62,11 @@ Publish-WebApplicationWebSite
 | 매개 변수 | 기본값 |
 | --- | --- |
 | 별칭 |없음 |
-| 필수 여부 |False |
+| 필수 여부 |false |
 | 위치 |명명됨 |
 | 기본값 |없음 |
-| Accept Pipeline Input? |False |
-| Accept Wildcard Characters? |False |
+| Accept Pipeline Input? |false |
+| Accept Wildcard Characters? |false |
 
 ## <a name="databaseserverpassword"></a>DatabaseServerPassword
 Azure에서 SQL 데이터베이스의 사용자 이름 및 암호입니다.
@@ -74,11 +74,11 @@ Azure에서 SQL 데이터베이스의 사용자 이름 및 암호입니다.
 | 매개 변수 | 기본값 |
 | --- | --- |
 | 별칭 |없음 |
-| 필수 여부 |False |
+| 필수 여부 |false |
 | 위치 |명명됨 |
 | 기본값 |없음 |
-| Accept Pipeline Input? |False |
-| Accept Wildcard Characters? |False |
+| Accept Pipeline Input? |false |
+| Accept Wildcard Characters? |false |
 
 ## <a name="sendhostmessagestooutput"></a>SendHostMessagesToOutput
 True이면 스크립트에서 출력 스트림으로 메시지를 프린트합니다.
@@ -86,11 +86,11 @@ True이면 스크립트에서 출력 스트림으로 메시지를 프린트합�
 | 매개 변수 | 기본값 |
 | --- | --- |
 | 별칭 |없음 |
-| 필수 여부 |False |
+| 필수 여부 |false |
 | 위치 |명명됨 |
-| 기본값 |False |
-| Accept Pipeline Input? |False |
-| Accept Wildcard Characters? |False |
+| 기본값 |false |
+| Accept Pipeline Input? |false |
+| Accept Wildcard Characters? |false |
 
 ## <a name="remarks"></a>주의
 스크립트를 사용하여 개발 및 테스트 환경을 만드는 방법에 대한 전체 설명은 [Windows PowerShell 스크립트를 사용하여 개발 및 테스트 환경에 게시](vs-azure-tools-publishing-using-powershell-scripts.md)를 참조하세요.
@@ -121,7 +121,7 @@ JSON 구성 파일은 배포될 내용의 세부 정보를 지정합니다. 해�
 }
 ```
 
-배포된 내용을 변경하도록 JSON 구성 파일을 편집할 수 있습니다. 웹 사이트 섹션은 필수이지만 데이터 섹션은 선택 사항입니다.
+배포된 내용을 변경하도록 JSON 구성 파일을 편집할 수 있습니다. webSite 섹션은 필수이지만 database 섹션은 선택 사항입니다.
 
 ## <a name="next-steps"></a>다음 단계
 자세한 내용은 [Publish-WebApplicationVM(Windows PowerShell 스크립트)](vs-azure-tools-publish-webapplicationvm.md)

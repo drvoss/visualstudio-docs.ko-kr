@@ -45,8 +45,8 @@ JavaScript는 Visual Studio의 고급 언어입니다. Visual Studio IDE에서 J
 |-------------|-----------------|
 |클래스|새로운 구문에서는 [클래스](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/class)의 선언을 지원합니다.|
 |Promise|[Promises](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)를 사용하면 더 쉽고 명확한 비동기 코드를 작성할 수 있습니다. Promise 생성자가 `all` 및 `race` 유틸리티 메서드와 함께 지원됩니다.|
-|Iterators|이제 반복 가능한 개체(배열, 배열과 유사한 개체, 반복기 등)를 반복하여 고유한 각 속성의 값에 대해 실행될 문이 포함된 사용자 지정 반복 후크를 호출할 수 있습니다. 자세한 내용은 [반복기 및 생성기](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators)를 참조하세요. **참고:**  생성기는 아직 지원되지 않습니다.|
-|화살표 함수|화살표 함수(=>)는 어휘 `this` 바인딩이 포함된 `function` 키워드의 약식 구문입니다.|
+|반복기|이제 반복 가능한 개체(배열, 배열과 유사한 개체, 반복기 등)를 반복하여 고유한 각 속성의 값에 대해 실행될 문이 포함된 사용자 지정 반복 후크를 호출할 수 있습니다. 자세한 내용은 [반복기 및 생성기](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators)를 참조하세요. **참고:**  생성기는 아직 지원되지 않습니다.|
+|화살표 함수|화살표 함수(=>)는 어휘 `function` 바인딩이 포함된 `this` 키워드의 약식 구문입니다.|
 |기본 제공 개체에 대한 새로운 메서드|[Array 개체](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array), [Math 개체](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math), [Number 개체](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number), [Object 개체](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object) 및 [String 개체](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) 기본 제공 개체에는 데이터 조작 및 검사에 사용할 수 있는 많은 새로운 유틸리티 함수와 속성이 포함되어 있습니다.|
 |개체 리터럴 향상|개체는 이제 계산된 속성, 간결한 메서드 정의 및 같은 이름의 변수로 값이 초기화되는 속성에 대한 약식 구문을 지원합니다. 자세한 내용은 [개체 만들기](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)를 참조하세요.|
 |Proxy|[Proxies](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy)를 사용하여 개체에 대한 사용자 지정 동작을 설정할 수 있습니다.|

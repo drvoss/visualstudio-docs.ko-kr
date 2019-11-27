@@ -91,7 +91,7 @@ ms.locfileid: "74300046"
 |테스트 계획, 테스트 사례 만들기 및 테스트 도구 모음 구성|예||  
 |수동 테스트|예||  
 |테스트 관리자(테스트 기록 및 재생)|Windows 디바이스 및 Android 에뮬레이터에만 해당||  
-|코드 검사|N/A|Visual Studio가 아니라 Unity 내에서 단위 테스트가 발생하는 경우에는 해당하지 않습니다. 아래를 참조하세요.|  
+|코드 검사|해당 없음|Visual Studio가 아니라 Unity 내에서 단위 테스트가 발생하는 경우에는 해당하지 않습니다. 아래를 참조하세요.|  
 |[코드 단위 테스트](../test/unit-test-your-code.md)|Visual Studio가 아니라 Unity 내에서 발생|Unity는 [Unity 테스트 도구](https://www.assetstore.unity3d.com/en/#!/content/13802)(Unity 자산 스토어)의 일부로 자체 단위 테스트 프레임워크를 제공합니다. 단위 테스트 결과는 Unity 내에서 보고되고 Visual Studio 내에 표시되지 않습니다.|  
 |[UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)|아니요|코딩된 UI 테스트는 앱 UI의 읽을 수 있는 컨트롤을 사용합니다. Unity 앱은 본질적으로 그래픽이므로 코딩된 UI 테스트 도구에서 콘텐츠를 읽을 수 없습니다.|  
   
@@ -113,7 +113,7 @@ ms.locfileid: "74300046"
 |-------------|--------------------------|-------------------------|  
 |릴리스 프로세스 관리|예||  
 |스크립트를 통한 테스트용 로드를 위해 서버에 배포|예||  
-|앱 스토어에 업로드|Partial|일부 앱 스토어의 경우 이 프로세스를 자동화할 수 있는 확장을 사용할 수 있습니다.  [Visual Studio Team Services용 확장](https://marketplace.visualstudio.com/VSTS)(예: [Google Play용 확장](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play))을 참조하세요.|  
+|앱 스토어에 업로드|부분|일부 앱 스토어의 경우 이 프로세스를 자동화할 수 있는 확장을 사용할 수 있습니다.  [Visual Studio Team Services용 확장](https://marketplace.visualstudio.com/VSTS)(예: [Google Play용 확장](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play))을 참조하세요.|  
   
 ## <a name="monitor-with-hockeyapp"></a>HockeyApp으로 모니터링  
  참조 링크: **[HockeyApp으로 모니터링](https://www.hockeyapp.net/features/)**  

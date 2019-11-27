@@ -39,7 +39,7 @@ HRESULT Next (
   
 #### <a name="parameters"></a>매개 변수  
  `celt`  
- 진행 검색할 `DebugPropertyInfo`structures의 수입니다.  
+ 진행 검색할 `DebugPropertyInfo`구조체의 수입니다.  
   
  `rgelt`  
  제한이 검색 된 `DebugPropertyInfo` 구조체의 배열입니다.  
@@ -48,8 +48,8 @@ HRESULT Next (
  제한이 실제로 검색 된 `DebugPropertyInfo` 구조체의 수를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 유효한 `HRESULT` (일반적으로 `S_OK`)를 반환 합니다.  
+ 유효한 `HRESULT`(일반적으로 `S_OK`)를 반환 합니다.  
   
-## <a name="see-also"></a>참조  
- [IEnumDebugPropertyInfo 인터페이스](../../winscript/reference/ienumdebugpropertyinfo-interface.md)    
+## <a name="see-also"></a>참고 항목  
+ [IEnumDebugPropertyInfo 인터페이스](../../winscript/reference/ienumdebugpropertyinfo-interface.md)   
  [DebugPropertyInfo 구조체](../../winscript/reference/debugpropertyinfo-structure.md)

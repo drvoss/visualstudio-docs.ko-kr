@@ -28,6 +28,6 @@ ms.locfileid: "72577560"
   
 - 정규식의 끝을 표시 하는 종료 슬래시를 삽입 합니다.  
   
-## <a name="see-also"></a>참조  
- [Regular Expression 개체](../../javascript/reference/regular-expression-object-javascript.md)    
+## <a name="see-also"></a>참고 항목  
+ [Regular Expression 개체](../../javascript/reference/regular-expression-object-javascript.md)   
  [정규식 구문 (JavaScript)](https://msdn.microsoft.com/library/1400241x)

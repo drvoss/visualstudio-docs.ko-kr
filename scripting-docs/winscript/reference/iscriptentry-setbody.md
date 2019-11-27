@@ -25,7 +25,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72575378"
 ---
 # <a name="iscriptentrysetbody"></a>IScriptEntry::SetBody
-@No__t_0 스크립트 블록 또는 `IScriptScriptlet` scriptlet의 본문에 있는 텍스트를 설정 합니다.  
+`IScriptEntry` 스크립트 블록 또는 `IScriptScriptlet` scriptlet의 본문에 있는 텍스트를 설정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -37,11 +37,11 @@ HRESULT SetBody(
   
 #### <a name="parameters"></a>매개 변수  
  `psz`  
- 진행 @No__t_0 스크립트 블록의 경우 스크립트 태그에 포함 된 텍스트를 `psz` 합니다.  
+ 진행 `IScriptEntry` 스크립트 블록의 경우 스크립트 태그에 포함 된 텍스트를 `psz` 합니다.  
   
- @No__t_0 함수 블록의 경우 함수 본문은 `psz`입니다.  
+ `IScriptEntry` 함수 블록의 경우 함수 본문은 `psz`입니다.  
   
- @No__t_1에서 파생 되는 `IScriptScriptlet` 개체의 경우는 scriptlet의 스크립트 텍스트 `psz`입니다.  
+ `IScriptEntry`에서 파생 되는 `IScriptScriptlet` 개체의 경우는 scriptlet의 스크립트 텍스트 `psz`입니다.  
   
 ## <a name="return-value"></a>반환 값  
  `HRESULT`입니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
@@ -52,6 +52,6 @@ HRESULT SetBody(
   
 ## <a name="remarks"></a>주의  
   
-## <a name="see-also"></a>참조  
- [Iscriptentry 인터페이스](../../winscript/reference/iscriptentry-interface.md)    
+## <a name="see-also"></a>참고 항목  
+ [Iscriptentry 인터페이스](../../winscript/reference/iscriptentry-interface.md)   
  [IScriptEntry::GetBody](../../winscript/reference/iscriptentry-getbody.md)

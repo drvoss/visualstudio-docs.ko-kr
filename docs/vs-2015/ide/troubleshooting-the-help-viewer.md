@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting the Help Viewer | Microsoft Docs
+title: 도움말 뷰어 문제 해결 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-help-viewer
@@ -47,7 +47,7 @@ ms.locfileid: "74299897"
 
 - 피드백을 제공 하려면 Microsoft 웹 사이트에서 [Microsoft Connect](https://go.microsoft.com/fwlink/?linkid=243983)를 참조하거나 [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com)으로 이메일을 보내십시오.
 
-- For more information, see the [Developer Documentation and Help System](https://go.microsoft.com/fwlink/?LinkId=232741) forum and [The Help Guy](https://go.microsoft.com/fwlink/?LinkId=232743) blog.
+- 자세한 내용은 [개발자 설명서 및 도움말 시스템](https://go.microsoft.com/fwlink/?LinkId=232741) 포럼 및 [도움말 전문가](https://go.microsoft.com/fwlink/?LinkId=232743) 블로그를 참조 하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [도움말 뷰어 2.1 관리자 가이드](https://go.microsoft.com/fwlink/?LinkId=243985)

@@ -27,7 +27,7 @@ ms.locfileid: "74290119"
   
  **Requirements**  
   
-- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]에서 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]에서 [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
   **성능 마법사**를 실행하거나 세션을 수동으로 만드는 방법으로 **성능 세션**을 만듭니다. **성능 세션**을 만들고 나면 **성능 탐색기**에 **성능 세션**이 표시됩니다.  
   
@@ -46,7 +46,7 @@ ms.locfileid: "74290119"
   
  [방법: 성능 데이터 파일 이름 옵션 설정](../profiling/how-to-set-performance-data-file-name-options.md)  
   
-## <a name="launch"></a>Launch  
+## <a name="launch"></a>먼저  
  이러한 설정을 사용하면 이진 파일 목록에서 원하는 파일을 선택하고 이진 파일의 시작 순서를 지정할 수 있습니다.  
   
  자세한 내용은 [방법: 시작할 이진 파일 지정](../profiling/how-to-specify-the-binary-to-start.md)을 참조하세요.  
@@ -66,7 +66,7 @@ ms.locfileid: "74290119"
   
   자세한 내용은 [방법: 샘플링 이벤트 선택](../profiling/how-to-choose-sampling-events.md)을 참조하세요.  
   
-## <a name="binary"></a>이항  
+## <a name="binary"></a>Binary  
  이러한 설정을 사용하면 계측된 이진 파일을 다른 위치로 옮길지 여부를 지정할 수 있습니다. 예를 들어 My.DLL을 프로파일링할 때 계측된 이진 파일을 옮기지 않도록 선택하면 My.Orig.DLL이라는 My.DLL의 백업 복사본이 만들어집니다. 그런 후에는 데이터를 수집하기 위한 프로브를 삽입하여 My.DLL이 수정됩니다. 계측된 이진 파일을 옮기도록 선택하면 원본 이진 파일 이름이 바뀌지 않으며 계측 중에 사용하기 위해 계측된 이진 파일이 지정한 위치에 복사됩니다.  
   
  자세한 내용은 [방법: 시작할 이진 파일 지정](../profiling/how-to-specify-the-binary-to-start.md)을 참조하세요.  
@@ -111,7 +111,7 @@ ms.locfileid: "74290119"
   
  [방법: 추가 계측 옵션 지정](../profiling/how-to-specify-additional-instrumentation-options.md)  
   
-## <a name="see-also"></a>관련 항목:  
+## <a name="see-also"></a>참고 항목  
  [개요](../profiling/overviews-performance-tools.md)   
  [성능 세션 구성](../profiling/configuring-performance-sessions.md)   
- [데이터 수집 제어](../profiling/controlling-data-collection.md)
+ [데이터 컬렉션 제어](../profiling/controlling-data-collection.md)

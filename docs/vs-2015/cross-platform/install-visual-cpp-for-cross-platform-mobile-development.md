@@ -11,17 +11,17 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 1aa81017f1a3d73e4ade1556ab141878e8a773f7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8046b261021a1147dbf0356c6854968b3d23a1df
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698472"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299797"
 ---
-# <a name="install-visual-c-for-cross-platform-mobile-development"></a>플랫폼 간 모바일 개발용 Visual C++ 설치
+# <a name="install-visual-c-for-cross-platform-mobile-development"></a>Install Visual C++ for Cross-Platform Mobile Development
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-플랫폼 간 모바일 개발용 Visual C++](http://go.microsoft.com/fwlink/p/?LinkId=536383)는 Visual Studio 2015의 설치 가능한 구성 요소입니다. 플랫폼 간 Visual Studio 템플릿을 포함하며, 직접 찾아서 다운로드 및 구성하지 않고도 신속하게 시작할 수 있도록 플랫폼 간 도구 및 SDK를 설치합니다. Visual Studio에서 이러한 도구를 사용하여 플랫폼 간 프로젝트를 쉽게 만들고, 편집, 디버그 및 테스트할 수 있습니다. 이 항목에서는 Visual Studio를 사용하여 플랫폼 간 앱을 개발하는 데 필요한 도구 및 타사 소프트웨어를 설치하는 방법을 설명합니다. 구성 요소의 개요는 [Visual C++ 플랫폼 간 모바일](http://go.microsoft.com/fwlink/p/?LinkId=536387)을 참조하세요.  
+플랫폼 간 모바일 개발용 Visual C++](https://go.microsoft.com/fwlink/p/?LinkId=536383)는 Visual Studio 2015의 설치 가능한 구성 요소입니다. 플랫폼 간 Visual Studio 템플릿을 포함하며, 직접 찾아서 다운로드 및 구성하지 않고도 신속하게 시작할 수 있도록 플랫폼 간 도구 및 SDK를 설치합니다. Visual Studio에서 이러한 도구를 사용하여 플랫폼 간 프로젝트를 쉽게 만들고, 편집, 디버그 및 테스트할 수 있습니다. 이 항목에서는 Visual Studio를 사용하여 플랫폼 간 앱을 개발하는 데 필요한 도구 및 타사 소프트웨어를 설치하는 방법을 설명합니다. 구성 요소의 개요는 [Visual C++ 플랫폼 간 모바일](https://go.microsoft.com/fwlink/p/?LinkId=536387)을 참조하세요.  
   
  [요구 사항](#Requirements)   
  [도구 다운로드](#GetTheTools)   
@@ -40,12 +40,12 @@ ms.locfileid: "65698472"
   
 - Windows Phone 에뮬레이터 및 Android용 Microsoft Visual Studio 에뮬레이터를 사용하려면 Hyper-V를 실행할 수 있는 컴퓨터가 필요합니다. 에뮬레이터를 설치하고 실행하려면 먼저 Windows에서 Hyper-V 기능을 사용하도록 설정해야 합니다. 자세한 내용은 에뮬레이터의 [시스템 요구 사항](https://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf)을 참조하세요.  
   
-- Android SDK와 함께 제공되는 x86 Android 에뮬레이터는 Intel HAXM 드라이버를 실행할 수 있는 컴퓨터에서 가장 잘 작동합니다. 이 드라이버를 사용하려면 VT-x 및 XD 비트(Execute Disable Bit)를 지원하는 Intel x64 프로세서가 필요합니다. 자세한 내용은 [Intel ® Hardware Accelerated Execution Manager 설치 지침 - Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=536385)(영문)를 참조하세요.  
+- Android SDK와 함께 제공되는 x86 Android 에뮬레이터는 Intel HAXM 드라이버를 실행할 수 있는 컴퓨터에서 가장 잘 작동합니다. 이 드라이버를 사용하려면 VT-x 및 XD 비트(Execute Disable Bit)를 지원하는 Intel x64 프로세서가 필요합니다. 자세한 내용은 [Intel ® Hardware Accelerated Execution Manager 설치 지침 - Microsoft Windows](https://go.microsoft.com/fwlink/p/?LinkId=536385)(영문)를 참조하세요.  
   
-- iOS용 코드를 빌드하려면 Apple ID, iOS 개발자 프로그램 계정 및 OS X Mavericks 이상 버전에서 [Xcode 6](http://go.microsoft.com/fwlink/p/?LinkId=536387) 이상을 실행할 수 있는 Mac 컴퓨터가 필요합니다. 자세한 설치 단계는 [Install tools for iOS](#InstallForiOS)를 참조하세요.  
+- iOS용 코드를 빌드하려면 Apple ID, iOS 개발자 프로그램 계정 및 OS X Mavericks 이상 버전에서 [Xcode 6](https://go.microsoft.com/fwlink/p/?LinkId=536387) 이상을 실행할 수 있는 Mac 컴퓨터가 필요합니다. 자세한 설치 단계는 [Install tools for iOS](#InstallForiOS)를 참조하세요.  
   
 ## <a name="GetTheTools"></a> 도구 다운로드  
- 플랫폼 간 모바일 개발용 Visual C++는 Visual Studio Community, Professional 및 Enterprise 버전에 포함된 설치 가능한 구성 요소입니다. Visual Studio를 다운로드하려면 [Visual Studio 2015 Downloads](http://go.microsoft.com/fwlink/p/?linkid=517106)(Visual Studio 2015 다운로드) 페이지로 이동하여 Visual Studio 2015 업데이트 2 이상을 다운로드하세요.  
+ 플랫폼 간 모바일 개발용 Visual C++는 Visual Studio Community, Professional 및 Enterprise 버전에 포함된 설치 가능한 구성 요소입니다. Visual Studio를 다운로드하려면 [Visual Studio 2015 Downloads](https://go.microsoft.com/fwlink/p/?linkid=517106)(Visual Studio 2015 다운로드) 페이지로 이동하여 Visual Studio 2015 업데이트 2 이상을 다운로드하세요.  
   
 ## <a name="InstallTheTools"></a> 도구 설치  
  Visual Studio 2015 설치 관리자에는 플랫폼 간 모바일 개발용 Visual C++를 설치하는 옵션이 포함되어 있습니다. 이 옵션은 Visual Studio에 필요한 C++ 언어 도구, 템플릿 및 구성 요소, Android 빌드 및 디버깅에 필요한 GCC 및 Clang 도구 집합 및 iOS 개발을 위해 Mac과 통신하기 위한 구성 요소를 설치합니다. 또한 iOS 및 Android 앱 개발을 지원하는 데 필요한 모든 타사 도구 및 소프트웨어 개발 키트를 설치합니다. 이러한 타사 도구는 대부분 Android 플랫폼 지원에 필요한 오픈 소스 소프트웨어입니다.  
@@ -62,13 +62,13 @@ ms.locfileid: "65698472"
   
 2. 기능 선택에서 **플랫폼 간 모바일 개발** 을 확장하고 **Visual C++ 모바일 개발**을 선택합니다.  
   
-     ![Visual C&#43;&#43; 모바일 개발 선택](../cross-platform/media/cppmdd-install-vcmdd.png "CPPMDD_Install_VCMDD")  
+     ![Visual C&#43; &#43; 모바일 개발 선택](../cross-platform/media/cppmdd-install-vcmdd.png "CPPMDD_Install_VCMDD")  
   
      기본적으로 **Visual C++ 모바일 개발**을 선택하면 **프로그래밍 언어** 옵션은 **Visual C++** 를 설치하도록 설정되고 **일반 도구와 소프트웨어 개발 키트** 옵션은 필요한 타사 구성 요소를 설치하도록 설정됩니다. 필요한 경우 추가 구성 요소를 선택할 수 있습니다. 기본적으로 **Microsoft Visual Studio Emulator for Android**도 선택됩니다. 이미 설치된 구성 요소는 목록에서 비활성 상태로 표시됩니다.  
   
      유니버설 Windows 앱을 빌드하고 해당 앱과 Android 및 iOS 프로젝트 간에 코드를 공유하려면 **기능 선택**에서 **Windows 및 웹 개발**을 확장하고 **유니버설 Windows 앱 개발 도구**를 선택합니다. 유니버설 Windows 앱을 빌드하지 않으려는 경우에는 이 옵션을 건너뛸 수 있습니다.  
   
-     **다음** 을 선택하여 계속 진행합니다.  
+     **다음**을 선택하여 계속합니다.  
   
 3. 타사 구성 요소에는 해당 사용 조건이 있습니다. 각 구성 요소 옆에 있는 **사용 조건** 링크를 선택하면 사용 조건을 볼 수 있습니다. **설치**를 선택하여 구성 요소를 추가하고 Visual Studio와 플랫폼 간 모바일 개발용 Visual C++를 설치합니다.  
   
@@ -129,7 +129,7 @@ ms.locfileid: "65698472"
   
      ![Android 도구 경로 옵션](../cross-platform/media/cppmdd-options-android.PNG "CPPMDD_Options_Android")  
   
-3. 도구에서 사용되는 경로를 변경하려면 경로 옆에 있는 확인란을 선택하고 텍스트 상자에서 폴더 경로를 편집합니다. 찾아보기 단추(**...**)를 사용하여 **위치 선택** 대화 상자를 열고 폴더를 선택할 수도 있습니다.  
+3. 도구에서 사용되는 경로를 변경하려면 경로 옆에 있는 확인란을 선택하고 텍스트 상자에서 폴더 경로를 편집합니다. 찾아보기 단추( **...** )를 사용하여 **위치 선택** 대화 상자를 열고 폴더를 선택할 수도 있습니다.  
   
 4. **확인** 을 선택하여 사용자 지정 도구 폴더 위치를 저장합니다.  
   

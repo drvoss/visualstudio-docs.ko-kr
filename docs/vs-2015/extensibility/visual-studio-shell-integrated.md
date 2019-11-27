@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Shell (Integrated) | Microsoft Docs
+title: Visual Studio Shell (통합) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -21,52 +21,52 @@ ms.locfileid: "74299696"
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell(통합)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The Visual Studio integrated shell includes the integrated development environment (IDE), debugger, and source control integration. No programming language is included. However, the integrated shell does provide a framework that allows you to add programming languages.  
+Visual Studio 통합 셸에는 IDE (통합 개발 환경), 디버거 및 소스 제어 통합이 포함 되어 있습니다. 프로그래밍 언어는 포함 되지 않습니다. 그러나 통합 셸은 프로그래밍 언어를 추가 하는 데 사용할 수 있는 프레임 워크를 제공 합니다.  
   
- The Visual Studio integrated shell is actually a combination of the Visual Studio isolated shell plus an additional install which include integrated shell specific components.  Your integrated shell application should include both the isolated shell redistributable package from [Microsoft Visual Studio Shell (Isolated) Redistributable Package](https://go.microsoft.com/fwlink/?LinkId=616022) as well as the integrated shell redistributable package from [Microsoft Visual Studio Shell (Integrated) Redistributable Package](https://go.microsoft.com/fwlink/?LinkId=616021).  
+ Visual Studio 통합 셸은 실제로는 Visual Studio 격리 셸 및 통합 된 셸 관련 구성 요소가 포함 된 추가 설치의 조합입니다.  통합 셸 응용 프로그램은 [Microsoft Visual Studio Shell(격리) 재배포 가능 패키지](https://go.microsoft.com/fwlink/?LinkId=616022) 의 격리 된 셸 재배포 가능 패키지 뿐만 아니라 [Microsoft Visual Studio Shell(통합) 재배포 가능 패키지](https://go.microsoft.com/fwlink/?LinkId=616021)의 통합 셸 재배포 가능 패키지를 포함 해야 합니다.  
   
 > [!NOTE]
-> Before you can access the isolated and integrated shell redistributable packages, you will be asked to fill out a brief customer survey.  After filling out the survey, you’ll be directed to a Visual Studio Connect page with redistributable package download links.  You can find the download links on subsequent visits to the Visual Studio Connect site under the **PROGRAMS &#124; VISUAL STUDIO 2015 INTEGRATED AND ISOLATED SHELL** tab.  
+> 격리 되 고 통합 된 셸 재배포 가능 패키지에 액세스 하기 전에 간단한 고객 설문 조사를 입력 하 라는 메시지가 표시 됩니다.  설문 조사를 작성 한 후에는 재배포 가능 패키지 다운로드 링크가 포함 된 Visual Studio 연결 페이지로 이동 됩니다.  **&#124; 프로그램 VISUAL STUDIO 2015 통합 및 격리 셸** 탭에서 visual studio Connect 사이트에 대 한 후속 방문에서 다운로드 링크를 찾을 수 있습니다.  
   
- If you install your integrated shell application on the same computer as a full version of Visual Studio, your application’s components will be integrated directly into Visual Studio.  
+ 통합 셸 응용 프로그램을 전체 버전의 Visual Studio와 같은 컴퓨터에 설치 하는 경우 응용 프로그램의 구성 요소는 Visual Studio에 직접 통합 됩니다.  
   
-## <a name="features-in-the-integrated-shell"></a>Features in the Integrated Shell  
+## <a name="features-in-the-integrated-shell"></a>통합 셸에서의 기능  
   
 |||  
 |-|-|  
 |기능 영역|기능|  
-|언어 지원|-   None|  
-|IDE|<ul><li>설정<br /><br /> <ul><li>Create settings</li><li>Import and export settings</li><li>설정 다시 설정</li></ul></li><li>**Toolbox** integration</li><li>**Task List** integration</li><li>Help integration</li><li>**Options** dialog box</li><li>Fonts and colors management</li><li>**Output** window</li><li>**Command** window</li><li>창 관리</li><li>Commands, menus, and key bindings</li><li>Domain-specific language (DSL) runtime</li></ul>|  
-|Project System and Project Types|-   Solutions and solution folders<br />-   Solution configuration manager<br />-   Item management<br />-   Single-project and multi-project solutions<br />-   Application Designer (simplified project properties)<br />-   Add Web Reference<br />-   Add Service Reference<br />-   Single-project<br />-   Web site project types<br />-   Web application projects|  
-|빌드|-   Custom build steps in IDE<br />-   Pre-compilation for intellectual property (IP) protection<br />-   Code signing<br />     MSBuild|  
-|편집기|-   Code browsing tools (unified find, source definition, inheritance)<br />-   Code navigation<br />-   IntelliSense<br />-   SmartTags<br />-   Refactoring<br />-   Pretty listing<br />-   IntelliSense filtering<br />-   **Code Definition** window|  
-|Designer|-   Windows Presentation Foundation Designer<br />-   Windows Forms Designer<br />-   Web Designer and HTML Editor|  
-|데이터|-   **Server Explorer** (Simplified: data only). 참고 1을 참조하세요.<br />-   **Data Sources** window<br />-   Full set of data controls<br />-   XML Editor<br />-   Data bind to local data source (.MDF or .MDB)<br />-   Data bind to object<br />-   Data bind to Web service<br />-   Data bind to local database server<br />-   Data bind to remote database server<br />-   DDL tools for remote data<br />-   **Server Explorer** extensibility ([!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] samples)|  
-|디버거|-   Local debugging. See Note 2.<br />-   Managed debugging<br />-   Local debugging<br />-   Attach to local process<br />-   Attach to remote process<br />-   Anonymous delegate<br />-   Application domains<br />-   ASPX Debugging<br />-   Attributes<br />-   Break during Func-eval<br />-   Breakpoints<br />-   Breakpoint constraints<br />-   Callstack<br />-   **Command** window<br />-   Cross-thread debugging<br />-   Data Tips<br />-   Data visualizer<br />-   Debugger support for managed debugging assistants (MDAs)<br />-   Debugger support for type forwarder<br />-   DTEEvents support for OTB<br />-   JMC Stepper<br />-   Debugger AppID test (DBGCLR)<br />-   Debugger profile<br />-   Debugger tools and options<br />-   Debugging iterator<br />-   Design-time expression evaluation<br />-   C# Expression Evaluator<br />-   Disassembly<br />-   Edit and Continue<br />-   Expression evaluator windows (Watch, Locals, Autos)<br />-   Exception Helper<br />-   Exceptions<br />-   Execution<br />-   제네릭<br />-   Getting right source<br />-   HPC/Cluster debugging<br />-   Integrated multi-language debugging<br />-   InterOp debugging<br />-   Just-in-time debugging<br />-   Local debugging<br />-   Managed debugging<br />-   Manual control (Processes window)<br />-   Memory<br />-   MiniDump support<br />-   Modules<br />-   Multi-process debugging<br />-   Native debugging<br />-   New debug engine support<br />-   Optimized code debugging<br />-   Output windows filtering<br />-   Process hosting for managed debugging<br />-   Processes<br />-   Quickwatch<br />-   Registers<br />-   Registers in stack<br />-   Remote debugging<br />-   Return values<br />-   Script debugging<br />-   Source service support<br />-   Security<br />-   Side-by-side<br />-   SQL<br />-   Symbol server<br />-   Trace points<br />-   Thread<br />-   Visualizations<br />-   Extensible Stylesheet Language Transformations (XSLT) debugger|  
-|64-bit Support|-   64-bit debugging for both managed and native code, all languages<br />-   x64 native support|  
-|Source Code Control (SCC)|-   Basic SCC integration. 참고 3을 참조하세요.<br />-   Tools and options verification|  
-|확장성|-   Consume VSPackages and MEF components|  
+|언어 지원|-None|  
+|IDE|<ul><li>설정<br /><br /> <ul><li>설정 만들기</li><li>설정 가져오기 및 내보내기</li><li>설정 다시 설정</li></ul></li><li>**도구 상자** 통합</li><li>**작업 목록** 통합</li><li>도움말 통합</li><li>**옵션** 대화 상자</li><li>글꼴 및 색 관리</li><li>**출력** 창</li><li>**명령** 창</li><li>창 관리</li><li>명령, 메뉴 및 키 바인딩</li><li>DSL (도메인별 언어) 런타임</li></ul>|  
+|프로젝트 시스템 및 프로젝트 형식|-솔루션 및 솔루션 폴더<br />-솔루션 구성 관리자<br />-항목 관리<br />-단일 프로젝트 및 다중 프로젝트 솔루션<br />-애플리케이션 디자이너 (간소화 된 프로젝트 속성)<br />-웹 참조 추가<br />-서비스 참조 추가<br />-단일 프로젝트<br />-웹 사이트 프로젝트 형식<br />-웹 응용 프로그램 프로젝트|  
+|빌드|-IDE의 사용자 지정 빌드 단계<br />-지적 재산 (IP) 보호를 위한 사전 컴파일<br />-코드 서명<br />     MSBuild|  
+|편집기|-코드 검색 도구 (통합 찾기, 소스 정의, 상속)<br />-코드 탐색<br />-   IntelliSense<br />-   SmartTags<br />-리팩터링<br />-매우 나열<br />-IntelliSense 필터링<br />-   **코드 정의** 창|  
+|Designer|-Windows Presentation Foundation 디자이너<br />-Windows Forms 디자이너<br />-웹 디자이너 및 HTML 편집기|  
+|데이터|-   **서버 탐색기** (단순화: 데이터만). 참고 1을 참조하세요.<br />-   **데이터 소스** 창<br />-전체 데이터 컨트롤 집합<br />-XML 편집기<br />-로컬 데이터 원본에 데이터 바인딩 (. MDF 또는. 않았더라도<br />-개체에 데이터 바인딩<br />-웹 서비스에 데이터 바인딩<br />-로컬 데이터베이스 서버에 데이터 바인딩<br />-원격 데이터베이스 서버에 데이터 바인딩<br />-원격 데이터에 대 한 DDL 도구<br />-   **서버 탐색기** 확장성 ([!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 샘플)|  
+|디버거|-로컬 디버깅 참고 2를 참조 하세요.<br />-관리 디버깅<br />-로컬 디버깅<br />-로컬 프로세스에 연결<br />-원격 프로세스에 연결<br />-익명 대리자<br />-응용 프로그램 도메인<br />-ASPX 디버깅<br />-특성<br />-Func 중 중단-eval<br />-중단점<br />-중단점 제약 조건<br />-호출 스택<br />**명령** 창 -   <br />-크로스 스레드 디버깅<br />-데이터 팁<br />-데이터 시각화 도우미<br />-Mda (관리 디버깅 도우미)에 대 한 디버거 지원<br />-형식 전달자에 대 한 디버거 지원<br />-OTB에 대 한-d Teevents 지원<br />-JMC 스텝 퍼<br />-디버거 AppID 테스트 (DBGCLR)<br />-디버거 프로필<br />-디버거 도구 및 옵션<br />-반복기 디버깅<br />-디자인 타임 식 계산<br />- C# 식 계산기<br />-디스어셈블리<br />-편집 하며 계속 하기<br />-식 계산기 창 (조사식, 지역, 자동)<br />-예외 도우미<br />-예외<br />-실행<br />-   제네릭<br />-올바른 소스 가져오기<br />-HPC/클러스터 디버깅<br />-통합 다국어 디버깅<br />-InterOp 디버깅<br />-Just-in-time 디버깅<br />-로컬 디버깅<br />-관리 디버깅<br />-수동 컨트롤 (프로세스 창)<br />-메모리<br />-미니 덤프 지원<br />-모듈<br />-다중 프로세스 디버깅<br />-네이티브 디버깅<br />-새 디버그 엔진 지원<br />최적화 된 코드 디버깅<br />-출력 windows 필터링<br />-관리 디버깅을 위한 프로세스 호스팅<br />-프로세스<br />-간략 한 조사식<br />-레지스터<br />-스택에 등록<br />-원격 디버깅<br />-반환 값<br />-스크립트 디버깅<br />-원본 서비스 지원<br />-보안<br />-Side-by-side<br />-   SQL<br />-기호 서버<br />-추적 요소<br />-Thread<br />-시각화<br />-XSLT (Extensible Stylesheet Language 변환) 디버거|  
+|64 비트 지원|-64-관리 코드와 네이티브 코드 모두, 모든 언어<br />-x64 기본 지원|  
+|소스 코드 제어 (SCC)|-기본 SCC 통합. 참고 3을 참조하세요.<br />-도구 및 옵션 확인|  
+|확장성|-Vspackage 및 MEF 구성 요소 사용|  
   
-## <a name="notes"></a>노트  
+## <a name="notes"></a>참고  
   
-#### <a name="1-data-tools"></a>1. Data Tools  
- The integrated shell includes database development tools such as data extensibility support and the simplified **Solution Explorer**. However, SQL Server Express, SQL Reporting, and Crystal Reports are not included in the integrated shell.  
+#### <a name="1-data-tools"></a>1. 데이터 도구  
+ 통합 셸에는 데이터 확장성 지원 및 간소화 된 **솔루션 탐색기**와 같은 데이터베이스 개발 도구가 포함 되어 있습니다. 그러나 SQL Server Express, SQL Reporting 및 크리스탈 보고서는 통합 셸에 포함 되지 않습니다.  
   
-#### <a name="2-debugging-support"></a>2. Debugging Support  
- The integrated shell includes the same debugging engine that is included in the Community version of Visual Studio. The debugging engine includes the common debugger for managed code, and also related features, such as Run, Attach, Set Breakpoint, Edit and Continue, and others. However, the debugging engine does not support SQL Server database debugging.  
+#### <a name="2-debugging-support"></a>2. 디버깅 지원  
+ 통합 셸은 커뮤니티 버전의 Visual Studio에 포함 된 것과 동일한 디버깅 엔진을 포함 합니다. 디버깅 엔진에는 관리 코드에 대 한 공통 디버거와 실행, 연결, 중단점 설정, 편집 하며 계속 하기 등의 관련 기능도 포함 되어 있습니다. 그러나 디버깅 엔진은 SQL Server 데이터베이스 디버깅을 지원 하지 않습니다.  
   
- Although support for native debugging is included in the basic debugger package, you cannot extend it to support additional languages.  
+ 기본 디버깅에 대 한 지원은 기본 디버거 패키지에 포함 되지만 추가 언어를 지원 하도록 확장할 수 없습니다.  
   
-#### <a name="3-source-code-control-integration"></a>3. Source Code Control Integration  
- The integrated shell provides APIs for implementing source-code control (SCC) and for providing the MSSCCI-based common source control integration components.  
+#### <a name="3-source-code-control-integration"></a>3. 소스 코드 제어 통합  
+ 통합 셸은 SCC (소스 코드 제어)를 구현 하 고 MSSCCI 기반 공통 소스 제어 통합 구성 요소를 제공 하기 위한 Api를 제공 합니다.  
   
- Although SCC integration is not a regular feature of the Pro edition of Visual Studio, SCC integration is provided in the integrated shell.  
+ SCC 통합은 Visual Studio Pro 버전의 일반 기능이 아니지만 통합 셸에서 SCC 통합이 제공 됩니다.  
   
-#### <a name="4-build-support"></a>4. Build Support  
- The integrated shell provides build support. You can find information about builds in the [MSBuild Reference](../msbuild/msbuild-reference.md).  
+#### <a name="4-build-support"></a>4. 빌드 지원  
+ 통합 셸에서는 빌드를 지원 합니다. [MSBuild 참조](../msbuild/msbuild-reference.md)에서 빌드에 대 한 정보를 찾을 수 있습니다.  
   
-## <a name="features-not-included-in-the-integrated-shell"></a>Features Not Included in the Integrated Shell  
- The following is a list of features that are not included in the integrated shell:  
+## <a name="features-not-included-in-the-integrated-shell"></a>통합 셸에 포함 되지 않은 기능  
+ 다음은 통합 셸에 포함 되지 않은 기능 목록입니다.  
   
 - 클래스 디자이너  
   
@@ -74,9 +74,9 @@ The Visual Studio integrated shell includes the integrated development environme
   
 - 언어 기능  
   
-- VSHost  
+- Vshost.exe  
   
-- No Visual Studio languages or their associated project templates or project item templates, are included in the integrated shell. No language-specific implementations of other features are included, for example Visual Basic code snippets.  
+- Visual Studio 언어나 이와 관련 된 프로젝트 템플릿 또는 프로젝트 항목 템플릿은 통합 셸에 포함 되지 않습니다. 예를 들어 Visual Basic 코드 조각과 같은 다른 기능의 언어 관련 구현은 포함 되지 않습니다.  
   
-## <a name="see-also"></a>관련 항목:  
- [Extending Visual Studio Overview](https://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)
+## <a name="see-also"></a>참고 항목  
+ [Visual Studio 확장 개요](https://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)

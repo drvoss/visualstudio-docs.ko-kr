@@ -52,7 +52,7 @@ Visual Studio에서 디버거 변수 창에 데이터 형식이 표시되는 방
   
  또한 식 계산기 추가 기능을 작성하여 네이티브 형식 뷰를 사용자 지정할 수도 있습니다. 자세한 내용은 [Eeaddin 샘플: 디버깅 식 계산기 추가 기능](https://msdn.microsoft.com/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e)을 참조 하세요.  
   
-## <a name="see-also"></a>관련 항목:  
+## <a name="see-also"></a>참고 항목  
  [DebuggerTypeProxy 특성 사용](../debugger/using-debuggertypeproxy-attribute.md)   
  [DebuggerDisplay 특성 사용](../debugger/using-the-debuggerdisplay-attribute.md)   
  [조사식 및 간략한 조사식 창](../debugger/watch-and-quickwatch-windows.md)   

@@ -1,5 +1,5 @@
 ---
-title: '&lt;Signature&gt; Element (ClickOnce Deployment) | Microsoft Docs'
+title: '&lt;Signature&gt; 요소 (ClickOnce 배포) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -22,7 +22,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74295073"
 ---
-# <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Signature&gt; Element (ClickOnce Deployment)
+# <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Signature&gt; 요소 (ClickOnce 배포)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 배포 매니페스트에 디지털 방식으로 서명하는 데 필요한 정보를 포함합니다.  
@@ -37,12 +37,12 @@ ms.locfileid: "74295073"
 ```  
   
 ## <a name="remarks"></a>주의  
- Signing a deployment manifest using an envelope signature is optional, but recommended. For more information about signing XML files see the World Wide Web Consortium Recommendation, "XML-Signature Syntax and Processing," described at [http://www.w3.org/TR/xmldsig-core/](https://www.w3.org/TR/xmldsig-core/).  
+ 봉투 (envelope) 서명을 사용 하 여 배포 매니페스트에 서명 하는 것은 선택 사항 이지만 권장 됩니다. XML 파일에 서명 하는 방법에 대 한 자세한 내용은 [http://www.w3.org/TR/xmldsig-core/](https://www.w3.org/TR/xmldsig-core/)에 설명 된 World Wide Web 컨소시엄 권장 사항 "XML 서명 구문 및 처리"를 참조 하십시오.  
   
- If you want to sign your manifest, hashes must be provided for all files. A manifest with files that are not hashed cannot be signed, because users cannot verify the contents of unhashed files.  
+ 매니페스트에 서명 하려면 모든 파일에 대해 해시를 제공 해야 합니다. 사용자는 해시 되지 않은 파일의 콘텐츠를 확인할 수 없으므로 해시 되지 않은 파일이 있는 매니페스트는 서명할 수 없습니다.  
   
 ## <a name="example"></a>예제  
- The following code example illustrates a `Signature` element in a deployment manifest used in a [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] deployment.  
+ 다음 코드 예제에서는 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 배포에 사용 되는 배포 매니페스트의 `Signature` 요소를 보여 줍니다.  
   
 ```  
 <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">  
@@ -73,5 +73,5 @@ MIIHnTCCBoWgAwIBAgIKJY9+nwAHAAB...
 </Signature>  
 ```  
   
-## <a name="see-also"></a>관련 항목:  
+## <a name="see-also"></a>참고 항목  
  [ClickOnce 배포 매니페스트](../deployment/clickonce-deployment-manifest.md)

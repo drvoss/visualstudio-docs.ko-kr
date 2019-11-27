@@ -1,5 +1,5 @@
 ---
-title: 'Walkthrough: Creating a Basic Isolated Shell Application | Microsoft Docs'
+title: '연습: 기본 격리 셸 응용 프로그램 만들기 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -19,114 +19,114 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74291269"
 ---
-# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Walkthrough: Creating a Basic Isolated Shell Application
+# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>연습: 기본 격리 셸 응용 프로그램 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-This walkthrough shows how to create an isolated shell solution, customize the Help About tool window, and create a setup program that installs the isolated shell.  
+이 연습에서는 격리 된 셸 솔루션을 만들고, 도구 창에 대 한 도움말을 사용자 지정 하 고, 격리 된 셸을 설치 하는 설치 프로그램을 만드는 방법을 보여 줍니다.  
   
-## <a name="prerequisites"></a>Prerequisites  
- 이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. For more information, see [Visual Studio SDK](../extensibility/visual-studio-sdk.md). To deploy the isolated shell, you must also use the Visual Studio Shell (Isolated) Redistributable Package.  
+## <a name="prerequisites"></a>필수 조건  
+ 이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)를 참조 하세요. 격리 된 셸을 배포 하려면 Visual Studio Shell (격리) 재배포 가능 패키지도 사용 해야 합니다.  
   
-## <a name="creating-an-isolated-shell-solution"></a>Creating an Isolated Shell Solution  
- This section shows how to use the Visual Studio Shell Isolated project template to create an isolated shell solution. The solution contains the following projects:  
+## <a name="creating-an-isolated-shell-solution"></a>격리 셸 솔루션 만들기  
+ 이 섹션에서는 Visual Studio Shell 격리 프로젝트 템플릿을 사용 하 여 격리 된 셸 솔루션을 만드는 방법을 보여 줍니다. 솔루션에는 다음 프로젝트가 포함 되어 있습니다.  
   
-- The *SolutionName*.AboutBoxPackage project, which allows you to customize the appearance of the Help/About box.  
+- *SolutionName*입니다. AboutBoxPackage 프로젝트를 사용 하 여 도움말/정보 상자의 모양을 사용자 지정할 수 있습니다.  
   
-- The ShellExtensionsVSIX project, which contains the source.extension.vsixmanifest file that defines the different components of the isolated shell application.  
+- ShellExtensionsVSIX 프로젝트-격리 셸 응용 프로그램의 다양 한 구성 요소를 정의 하는 source.extension.vsixmanifest 파일이 포함 되어 있습니다.  
   
-- The *SolutionName* project, which produces the executable file that invokes the isolated shell application. This project contains the Shell Customization folder, which allows you to customiz the appearance and behavior of the isolated shell application.  
+- *SolutionName* 프로젝트는 격리 셸 응용 프로그램을 호출 하는 실행 파일을 생성 합니다. 이 프로젝트에는 격리 된 셸 응용 프로그램의 모양과 동작을 customiz 수 있는 셸 사용자 지정 폴더가 포함 되어 있습니다.  
   
-- The *SolutionName* UI project, which produces a satellite assembly that defines active menu commands and localizable strings.  
+- *SolutionName* UI 프로젝트는 활성 메뉴 명령과 지역화 가능한 문자열을 정의 하는 위성 어셈블리를 생성 합니다.  
   
-#### <a name="to-create-a-basic-isolated-shell-solution"></a>To create a basic isolated shell solution  
+#### <a name="to-create-a-basic-isolated-shell-solution"></a>기본 격리 셸 솔루션을 만들려면  
   
 1. Visual Studio를 연 다음 새 프로젝트를 만듭니다.  
   
-2. In the **New Project** window, expand **Other Project Types** and then **Extensibility**. Select the **Visual Studio Shell Isolated** project template.  
+2. **새 프로젝트** 창에서 **기타 프로젝트 형식** , **확장성**을 차례로 확장 합니다. **Visual Studio Shell 격리** 프로젝트 템플릿을 선택 합니다.  
   
-3. Name the project `MyVSShellStub` and specify a location. Make sure that **Create directory for solution** is checked, and then click **OK**.  
+3. 프로젝트 이름을 `MyVSShellStub` 지정 하 고 위치를 지정 합니다. **솔루션용 디렉터리 만들기** 가 선택 되어 있는지 확인 한 다음 **확인**을 클릭 합니다.  
   
-     The new solution appears in **Solution Explorer**.  
+     새 솔루션이 **솔루션 탐색기**에 나타납니다.  
   
-4. Build the solution and start debugging the isolated shell application.  
+4. 솔루션을 빌드하고 격리 된 셸 응용 프로그램의 디버깅을 시작 합니다.  
   
-     The Visual Studio isolated shell appears. The title bar reads **MyVSShellStub**. The title bar icon is generated from \MyVSShellStub\Resource Files\ApplicationIcon.ico.  
+     Visual Studio 격리 셸이 나타납니다. 제목 표시줄은 **Myvsshellstub**을 읽습니다. 제목 표시줄 아이콘은 \MyVSShellStub\Resource Files\ApplicationIcon.ico.에서 생성 됩니다.  
   
-## <a name="customizing-the-application-name-and-icon"></a>Customizing the Application Name and Icon  
- You may want to brand your application by using the name of your company and its logo in the title bar. The following steps show how to change the name and icon that are displayed in the custom application title bar by changing the package definition file, MyVSShellStub.Application.pkgdef.  
+## <a name="customizing-the-application-name-and-icon"></a>응용 프로그램 이름 및 아이콘 사용자 지정  
+ 제목 표시줄에 회사의 이름과 로고를 사용 하 여 응용 프로그램의 브랜드를 지정할 수 있습니다. 다음 단계에서는 패키지 정의 파일 MyVSShellStub을 변경 하 여 사용자 지정 응용 프로그램 제목 표시줄에 표시 되는 이름 및 아이콘을 변경 하는 방법을 보여 줍니다.  
   
-#### <a name="to-customize-the-application-name-and-icon"></a>To customize the application name and icon  
+#### <a name="to-customize-the-application-name-and-icon"></a>응용 프로그램 이름 및 아이콘을 사용자 지정 하려면  
   
-1. In the MyVSShellStub project, open \Shell Customization\MyVSShellStub.Application.pkgdef.  
+1. MyVSShellStub 프로젝트에서 \Shell Customization\MyVSShellStub.Application.pkgdef.을 엽니다.  
   
-2. Change the `AppName` element value to **"AppName"="Fabrikam Music Editor"**  
+2. `AppName` 요소 값을 **"AppName" = "Fabrikam Music Editor"** 로 변경 합니다.  
   
-3. To change the application icon, copy a different icon to the \MyVSShellStub\MyVSShellStub\MyVSShellStub\ directory. Rename the existing ApplicationIcon.ico file to ApplicationIcon1.ico. Rename the new file to ApplicationIcon.ico.  
+3. 응용 프로그램 아이콘을 변경 하려면 다른 아이콘을 \MyVSShellStub\MyVSShellStub\MyVSShellStub\ 디렉터리에 복사 합니다. 기존 ApplicationIcon .ico 파일의 이름을 ApplicationIcon1로 바꿉니다. 새 파일의 이름을 ApplicationIcon .ico로 바꿉니다.  
   
-4. 솔루션을 빌드하고 디버깅을 시작합니다. The isolated shell IDE appears. The title bar has your new icon next to the words **Fabrikam Music Editor**.  
+4. 솔루션을 빌드하고 디버깅을 시작합니다. 격리 된 셸 IDE가 나타납니다. 제목 표시줄에는 **Fabrikam 음악 편집기**라는 단어 옆에 새 아이콘이 표시 됩니다.  
   
-## <a name="customizing-the-default-web-browser-home-page"></a>Customizing the Default Web Browser Home Page  
- This section shows how to change the default home page of the **Web Browser** window by changing the package definition file.  
+## <a name="customizing-the-default-web-browser-home-page"></a>기본 웹 브라우저 홈 페이지 사용자 지정  
+ 이 섹션에서는 패키지 정의 파일을 변경 하 여 **웹 브라우저** 창의 기본 홈 페이지를 변경 하는 방법을 보여 줍니다.  
   
-#### <a name="to-customize-the-default-web-browser-home-page"></a>To customize the default Web Browser home page  
+#### <a name="to-customize-the-default-web-browser-home-page"></a>기본 웹 브라우저 홈 페이지를 사용자 지정 하려면  
   
-1. In the MyVSShellStub.Application.pkgdef file, change the `DefaultHomePage` element value to "<https://www.microsoft.com>".  
+1. MyVSShellStub 파일에서 `DefaultHomePage` 요소 값을 "<https://www.microsoft.com>"로 변경 합니다.  
   
-2. Rebuild the MyVSShellStub project.  
+2. MyVSShellStub 프로젝트를 다시 빌드합니다.  
   
 3. 솔루션을 빌드하고 디버깅을 시작합니다.  
   
-4. In **View / Other Windows**, click **Web Browser**. The **Web Browser** window displays the Microsoft Corporation home page.  
+4. **보기/기타 창**에서 **웹 브라우저**를 클릭 합니다. **웹 브라우저** 창에 Microsoft Corporation 홈 페이지가 표시 됩니다.  
   
-## <a name="removing-the-print-command"></a>Removing the Print Command  
- The .vsct file in an isolated shell UI project consists of a set of declarations of the form `<Define name=No_`*Element*`>`, where *Element* is one of the standard Visual Studio menus and commands.  
+## <a name="removing-the-print-command"></a>인쇄 명령 제거  
+ 격리 된 셸 UI 프로젝트의. vsct 파일은 *요소*`>``<Define name=No_`폼의 선언 집합으로 구성 됩니다. 여기서 *요소* 는 표준 Visual Studio 메뉴 및 명령 중 하나입니다.  
   
- If a declaration is uncommented, that menu or command is excluded from the isolated shell. Conversely, if a declaration is commented, the menu or command is included in the isolated shell.  
+ 선언이 주석 처리가 제거 인 경우 해당 메뉴 또는 명령은 격리 된 셸에서 제외 됩니다. 반대로, 선언이 주석 처리 된 경우 메뉴 또는 명령이 격리 된 셸에 포함 됩니다.  
   
- In the following steps, you uncomment print command in your .vsct file.  
+ 다음 단계에서는. vsct 파일에서 인쇄 명령의 주석 처리를 제거 합니다.  
   
-#### <a name="to-remove-the-print-command"></a>To remove the print command  
+#### <a name="to-remove-the-print-command"></a>인쇄 명령을 제거 하려면  
   
-1. Verify that the **Print** command appears on the **File** menu in the isolated shell application.  
+1. 격리 된 셸 응용 프로그램의 **파일** 메뉴에 **인쇄** 명령이 표시 되는지 확인 합니다.  
   
-2. In the MyVSShellStubUI project, open \Resource Files\MyVSShellStubUI.vsct for editing.  
+2. MyVSShellStubUI 프로젝트에서 \Resource Files\MyVSShellStubUI.vsct를 편집용으로 엽니다.  
   
-3. Uncomment this line:  
+3. 이 줄의 주석 처리를 제거 합니다.  
   
     ```  
     <!-- <Define name="No_PrintChildrenCommand"/> -->  
     ```  
   
-4. This removes the print command.  
+4. 그러면 인쇄 명령이 제거 됩니다.  
   
-5. Start debugging the isolated shell application. Verify that the **File / Print** command is gone.  
+5. 격리 된 셸 응용 프로그램 디버깅을 시작 합니다. **파일/인쇄** 명령이 사라졌는지 확인 합니다.  
   
-## <a name="removing-features-from-the-isolated-shell"></a>Removing Features from the Isolated Shell  
- You can remove some of the packages that are loaded with Visual Studio by editing the .pkgundef file if you do not want those features in your custom isolated shell application. You specify the package in one of the subkeys of the $RootKey$\Packages registry key.  
+## <a name="removing-features-from-the-isolated-shell"></a>격리 된 셸에서 기능 제거  
+ 사용자 지정 격리 셸 응용 프로그램에서 해당 기능을 사용 하지 않으려는 경우 .pkgundef 파일을 편집 하 여 Visual Studio를 사용 하 여 로드 된 패키지 중 일부를 제거할 수 있습니다. $RootKey $ \Packages 레지스트리 키의 하위 키 중 하나에 패키지를 지정 합니다.  
   
 > [!NOTE]
-> To find the GUIDs of Visual Studio features, see [Package GUIDs of Visual Studio Features](../extensibility/package-guids-of-visual-studio-features.md).  
+> Visual Studio 기능의 Guid를 찾으려면 [Visual Studio 기능의 패키지 guid](../extensibility/package-guids-of-visual-studio-features.md)를 참조 하세요.  
   
- The following procedure shows how to remove the XML editor from the isolated shell.  
+ 다음 절차에서는 격리 된 셸에서 XML 편집기를 제거 하는 방법을 보여 줍니다.  
   
-#### <a name="to-remove-the-xml-editor"></a>To remove the XML editor  
+#### <a name="to-remove-the-xml-editor"></a>XML 편집기를 제거 하려면  
   
-1. Open the MyVSShellStub.pkgundef file in the Shell Customization folder of the MyVSShellStub project.  
+1. MyVSShellStub 프로젝트의 셸 사용자 지정 폴더에서 .pkgundef 파일을 엽니다.  
   
-2. Uncomment the following line:  
+2. 다음 줄의 주석 처리를 제거 합니다.  
   
-     [$RootKey$\Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
+     [$RootKey $ \Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
   
-3. Rebuild the solution and start debugging the isolated shell. Open an XML file,for example, \MyVSShellStub\MyVSShellStub\MyVSShellStubUI\MyVSShellStubUI.vsct. Verify that the XML keywords in the file are not colorized and that typing "<" on a line does not bring up XML tooltips.  
+3. 솔루션을 다시 빌드하고 격리 된 셸 디버깅을 시작 합니다. XML 파일 (예: \MyVSShellStub\MyVSShellStub\MyVSShellStubUI\MyVSShellStubUI.vsct.)을 엽니다. 파일의 XML 키워드에 색이 지정 되지 않고 줄에 "<"을 입력 해도 XML 도구 설명이 표시 되지 않는지 확인 합니다.  
   
-## <a name="customizing-the-helpabout-box"></a>Customizing the Help/About box  
- You can customize the Help/About box, which is created as part of the isolated shell project template.  
+## <a name="customizing-the-helpabout-box"></a>도움말/정보 상자 사용자 지정  
+ 격리 된 셸 프로젝트 템플릿의 일부로 생성 되는 도움말/정보 상자를 사용자 지정할 수 있습니다.  
   
-#### <a name="to-customize-the-company-name"></a>To customize the company name  
+#### <a name="to-customize-the-company-name"></a>회사 이름을 사용자 지정 하려면  
   
-1. The company name, copyright information, product version, and product description are found in the MyVSShellStub.AboutBoxPackage project, in the \Properties\AssemblyInfo.cs file. 이 파일을 엽니다.  
+1. 회사 이름, 저작권 정보, 제품 버전 및 제품 설명은 \Properties\AssemblyInfo.cs 파일의 MyVSShellStub 프로젝트에 있습니다. 이 파일을 엽니다.  
   
-2. Change the `AssemblyCompany` value to **Fabrikam**, the `AssemblyProduct` and `AssemblyTitle` values to **Fabrikam Music Editor**, and the `AssemblyCopyright` value to **Copyright © Fabrikam 2015**:  
+2. `AssemblyCompany` 값을 **fabrikam**, `AssemblyProduct` 및 `AssemblyTitle` **fabrikam 음악 편집기**로, `AssemblyCopyright` 값을 **저작권 © fabrikam 2015**으로 변경 합니다.  
   
     ```  
     [assembly: AssemblyTitle("Fabrikam Music Editor")]  
@@ -139,15 +139,15 @@ This walkthrough shows how to create an isolated shell solution, customize the H
     [assembly: AssemblyCopyright("Copyright © Fabrikam 2015”)]  
     ```  
   
-3. To add a description of the product, change the `AssemblyDescription` value to **The description of Fabrikam Music editor.** :  
+3. 제품에 대 한 설명을 추가 하려면 `AssemblyDescription` 값을 **Fabrikam 음악 편집기의 설명으로 변경 합니다.**  
   
     ```  
     [assembly: AssemblyDescription("The description of Fabrikam Music editor.”)]  
     ```  
   
-4. Start debugging and in the isolated shell application, open the **Help / About** box. You should see the changed strings. The title of the Help/About box is the same as the `AssemblyTitle` value in AssemblyInfo.cs.  
+4. 디버깅을 시작 하 고 격리 된 셸 응용 프로그램에서 **도움말/정보** 상자를 엽니다. 변경 된 문자열이 표시 되어야 합니다. 도움말/정보 상자의 제목은 AssemblyInfo.cs의 `AssemblyTitle` 값과 동일 합니다.  
   
-5. The properties of the **Help/About** box itself are found in the MyVSShellStub.AboutBoxPackage\AboutBox.xaml file. To change the width of the Help/About box, go to the `AboutDialogStyle` block and set the `Width` property to 200:  
+5. **도움말/정보** 상자 자체의 속성은 MyVSShellStub 파일에 있습니다. 도움말/정보 상자의 너비를 변경 하려면 `AboutDialogStyle` 블록으로 이동 하 `Width` 속성을 200으로 설정 합니다.  
   
     ```  
     <Style x:Key="AboutDialogStyle" TargetType="Window">  
@@ -160,47 +160,47 @@ This walkthrough shows how to create an isolated shell solution, customize the H
     </Style>  
     ```  
   
-6. Rebuild the solution and start debugging the isolated shell. The Help/About box should be approximately square.  
+6. 솔루션을 다시 빌드하고 격리 된 셸 디버깅을 시작 합니다. 도움말/정보 상자는 대략 사각형 이어야 합니다.  
   
-## <a name="before-you-deploy-the-isolated-shell-application"></a>Before You Deploy the Isolated Shell Application  
- Your isolated shell application can be installed on any computer that has the Visual Studio Shell (Isolated) Redistributable Package. For more information about the redistributable package, see the [Visual Studio Extensibility Downloads](https://go.microsoft.com/fwlink/?LinkID=119298) website.  
+## <a name="before-you-deploy-the-isolated-shell-application"></a>격리 된 셸 응용 프로그램을 배포 하기 전에  
+ 격리 된 셸 응용 프로그램은 Visual Studio Shell (격리) 재배포 가능 패키지가 있는 모든 컴퓨터에 설치할 수 있습니다. 재배포 가능 패키지에 대 한 자세한 내용은 [Visual Studio 확장성 다운로드](https://go.microsoft.com/fwlink/?LinkID=119298) 웹 사이트를 참조 하세요.  
   
-## <a name="deploying-the-isolated-shell-application"></a>Deploying the Isolated Shell Application  
- You deploy your isolated shell application to a target computer by creating a setup project. You must specify these things:  
+## <a name="deploying-the-isolated-shell-application"></a>격리 된 셸 응용 프로그램 배포  
+ 설치 프로젝트를 만들어 대상 컴퓨터에 격리 된 셸 응용 프로그램을 배포 합니다. 다음 항목을 지정 해야 합니다.  
   
-- The layout of the folders and files on the target computer.  
+- 대상 컴퓨터에 있는 폴더와 파일의 레이아웃입니다.  
   
-- The launch conditions that guarantee that the .NET Framework and the Visual Studio shell runtime are installed on the target computer.  
+- .NET Framework 및 Visual Studio shell 런타임이 대상 컴퓨터에 설치 되도록 보장 하는 시작 조건입니다.  
   
-  In the following procedure you will need to install InstallShield Limited Edition on your computer.  
+  다음 절차에서는 컴퓨터에 InstallShield Edition을 설치 해야 합니다.  
   
-#### <a name="to-create-the-setup-project"></a>To create the setup project  
+#### <a name="to-create-the-setup-project"></a>설치 프로젝트를 만들려면  
   
-1. In **Solution Explorer**, right-click the solution node and then click **Add New Project**.  
+1. **솔루션 탐색기**에서 솔루션 노드를 마우스 오른쪽 단추로 클릭 한 다음 **새 프로젝트 추가**를 클릭 합니다.  
   
-2. In the **New Project** dialog box, expand **Other Project Types** and then select **Setup and Deployment**. Select the InstallShield template. Name the new project `MySetup` and then click **OK**.  
+2. **새 프로젝트** 대화 상자에서 **기타 프로젝트 형식** 을 확장 한 다음 **설치 및 배포**를 선택 합니다. InstallShield 템플릿을 선택 합니다. 새 프로젝트의 이름을 `MySetup`로 지정한 다음 **확인을**클릭 합니다.  
   
-3. If InstallShield Limited Edition is already installed, continue to the next step.  
+3. InstallShield 제한 된 버전이 이미 설치 되어 있는 경우 다음 단계를 계속 합니다.  
   
-    If InstallShield Limited Edition is not already installed, the InstallShield download page appears. Follow the instructions to download and install the product, choosing the version of InstallShield that is compatible with your version of Visual Studio. You must decide whether to register your installation of InstallShield or use it as an evaluation. You must restart Visual Studio after you complete the installation.  
+    InstallShield 제한 된 버전이 아직 설치 되지 않은 경우 InstallShield 다운로드 페이지가 나타납니다. 지침에 따라 제품을 다운로드 하 여 설치 하 고, 해당 버전의 Visual Studio와 호환 되는 InstallShield 버전을 선택 합니다. InstallShield 설치를 등록 하거나 평가로 사용할지 여부를 결정 해야 합니다. 설치를 완료 한 후 Visual Studio를 다시 시작 해야 합니다.  
   
    > [!IMPORTANT]
-   > You must start Visual Studio as an administrator before you create an InstallShield project. If you do not do so, you will get an error when you build the project.  
+   > InstallShield 프로젝트를 만들려면 먼저 Visual Studio를 관리자 권한으로 시작 해야 합니다. 이렇게 하지 않으면 프로젝트를 빌드할 때 오류가 발생 합니다.  
   
-   The next steps show how to configure the setup project.  
+   다음 단계에서는 설치 프로젝트를 구성 하는 방법을 보여 줍니다.  
   
 > [!IMPORTANT]
-> Make sure that you have built the release configuration of your isolated shell project at least once before you configure the setup project.  
+> 설치 프로젝트를 구성 하기 전에 격리 된 셸 프로젝트의 릴리스 구성을 한 번 이상 빌드 했는지 확인 합니다.  
   
-#### <a name="to-configure-the-setup-project"></a>To configure the setup project  
+#### <a name="to-configure-the-setup-project"></a>설치 프로젝트를 구성 하려면  
   
-1. In the **Solution Explorer**, under the **MySetup** project, choose **Project Assistant**. On the bottom row of the **Project Assistant** window, choose **Application Information**. Enter **Fabrikam** as your company name and **Fabrikam Music Editor** as your application name. Choose the forward arrow at the bottom right of the **Project Assistant**.  
+1. **솔루션 탐색기**의 **Mysetup.bat** 프로젝트에서 **프로젝트 도우미**를 선택 합니다. **프로젝트 도우미** 창의 맨 아래 행에서 **응용 프로그램 정보**를 선택 합니다. 회사 이름 및 **Fabrikam 음악 편집기** 로 **fabrikam** 을 응용 프로그램 이름으로 입력 합니다. **프로젝트 도우미**의 오른쪽 아래에 있는 앞으로 화살표를 선택 합니다.  
   
-2. Select **Yes** under **Does your application require any software to be installed on the machine?** and then select **Microsoft .NET Framework 4.5 Full Package**.  
+2. **응용 프로그램에서 컴퓨터에 소프트웨어를 설치 해야 합니까?** 에서 **예** 를 선택 하 고 **Microsoft .NET Framework 4.5 전체 패키지**를 선택 합니다.  
   
-3. Choose the **Application Files** button at the bottom of the window, and make sure that the **Fabrikam Music Editor** folder is selected.  
+3. 창의 맨 아래에 있는 **응용 프로그램 파일** 단추를 선택 하 고 **Fabrikam 음악 편집기** 폴더가 선택 되어 있는지 확인 합니다.  
   
-4. Choose the **Add Files** button. In the **Add Files** dialog box, add the following files from the **MyVSShellStub\Release** folder:  
+4. **파일 추가** 단추를 선택 합니다. **파일 추가** 대화 상자에서 **MyVSShellStub\Release** 폴더의 다음 파일을 추가 합니다.  
   
     1. MyVSShellStub.exe.config  
   
@@ -214,49 +214,49 @@ This walkthrough shows how to create an isolated shell solution, customize the H
   
     6. MyVSShellStub.winprf  
   
-    7. Splash.bmp  
+    7. 시작 .bmp  
   
-5. Click the **Add Project Outputs** button and add **MyVSShellStub/Primary Output**. **확인**을 클릭합니다.  
+5. **프로젝트 출력 추가** 단추를 클릭 하 고 **Myvsshellstub/기본 출력**을 추가 합니다. **확인**을 클릭합니다.  
   
-6. In the left pane, under **Destination Computer**, right-click the **Fabrikam Music Editor [INSTALLDIR]** node and add a **New Folder** named **Extensions**.  
+6. 왼쪽 창의 **대상 컴퓨터**에서 **Fabrikam 음악 편집기 [INSTALLDIR]** 노드를 마우스 오른쪽 단추로 클릭 하 고 **확장명**이라는 **새 폴더** 를 추가 합니다.  
   
-7. Right-click the **Extensions** node in the left pane and add a new folder named **Application**.  
+7. 왼쪽 창에서 **확장** 노드를 마우스 오른쪽 단추로 클릭 하 고 **응용 프로그램**이라는 새 폴더를 추가 합니다.  
   
-8. Select the **Application** folder and click the **Add Project Outputs** button, then select the primary output from the MyVSShellStub.AboutBoxPackage project.  
+8. **응용 프로그램** 폴더를 선택 하 고 **프로젝트 출력 추가** 단추를 클릭 한 다음 myvsshellstub 프로젝트에서 기본 출력을 선택 합니다.  
   
-9. Click the **Add Files** button and from the \MyVSShellStub\Release\Extensions\Application\ folder add the following files:  
+9. **파일 추가** 단추를 클릭 하 고 \MyVSShellStub\Release\Extensions\Application\ 폴더에서 다음 파일을 추가 합니다.  
   
     - MyVSShellStub.AboutBoxPackage.pkgdef  
   
     - MyVSShellStub.Application.pkgdef  
   
-10. Right-click the **Fabrikam Music Editor [INSTALLDIR]** node in the left pane and add a new folder named **1033**.  
+10. 왼쪽 창에서 **Fabrikam 음악 편집기 [INSTALLDIR]** 노드를 마우스 오른쪽 단추로 클릭 하 고 이름이 **1033**인 새 폴더를 추가 합니다.  
   
-11. Select the 1033 folder and then click the **Add Project Outputs** button, and select the primary output from the MyVSShellStubUI project.  
+11. 1033 폴더를 선택 하 고 **프로젝트 출력 추가** 단추를 클릭 한 다음 MyVSShellStubUI 프로젝트에서 기본 출력을 선택 합니다.  
   
-12. Move to the **Application Shortcuts** window.  
+12. **응용 프로그램 바로 가기** 창으로 이동 합니다.  
   
-13. Click **New** to create a shortcut and select **[ProgramFilesFolder]\Fabrikam\Fabrikam Music Editor\MyVSShellStub.Primary Output**.  
+13. **새로** 만들기를 클릭 하 여 바로 가기를 만들고 **[ProgramFilesFolder] \Fabrikam\Fabrikam Music Editor\MyVSShellStub.Primary Output**을 선택 합니다.  
   
-14. Move to the **Installation Interview** pane.  
+14. **설치 인터뷰** 창으로 이동 합니다.  
   
-15. Set all items to **No**.  
+15. 모든 항목을 **아니요**로 설정 합니다.  
   
-16. In **Solution Explorer**, in the MySetup project, open **Define Setup Requirements and Actions \ Requirements**. The **Requirements** window opens.  
+16. **솔루션 탐색기**의 mysetup.bat 프로젝트에서 **설치 요구 사항 및 작업 정의 \ 요구 사항 정의**를 엽니다. **요구 사항** 창이 열립니다.  
   
-17. Right click **System Software Requirements** and select **Create New Launch Condition**. The **System Search Wizard** appears.  
+17. **시스템 소프트웨어 요구 사항** 을 마우스 오른쪽 단추로 클릭 하 고 **새 시작 조건 만들기**를 선택 합니다. **시스템 검색 마법사** 가 나타납니다.  
   
-18. In the **What do you want to find?** pane, choose **Registry Entry** in the drop-down list and click **Next**.  
+18. **찾으려는 항목** 을 선택 하십시오. 창의 드롭다운 목록에서 **레지스트리 항목** 을 선택 하 고 **다음**을 클릭 합니다.  
   
-19. In the **How do you want to look for it?** pane, select **HKEY_LOCAL_MACHINE** as the registry root. Enter **SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** for 64-bit systems or **SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** for 32-bit systems, and enter **Install** as the registry value. **다음**을 클릭합니다.  
+19. **어떻게 찾을 수 있나요?** 창에서 레지스트리 루트로 **HKEY_LOCAL_MACHINE** 를 선택 합니다. 64 비트 시스템의 경우 **SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** 을 입력 하 고 32 비트 시스템에는 **SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** 를 입력 하 고 **설치** 를 레지스트리 값으로 입력 합니다. **다음**을 클릭합니다.  
   
-20. In the **What do you want to do with the value?** pane, enter **This product requires the Visual Studio 2015 Isolated Shell Redistributable to be installed.** as the display text and click **Finish**.  
+20. 값을 **선택** 하십시오. 창에서이 제품을 입력 하려면 **Visual Studio 2015 격리 셸 재배포 가능 패키지가 설치 되어 있어야 합니다.** 텍스트를 표시 하 고 **마침**을 클릭 합니다.  
   
-21. Rebuild the isolated shell solution to create the setup project.  
+21. 격리 셸 솔루션을 다시 빌드하여 설치 프로젝트를 만듭니다.  
   
-     You can find the setup.exe file in the following folder:  
+     다음 폴더에서 setup.exe 파일을 찾을 수 있습니다.  
   
      \MyVSShellStub\MySetup\MySetup\Express\SingleImage\DiskImages\DISK1  
   
-## <a name="testing-the-installation-program"></a>Testing the Installation Program  
- To test the setup, copy the setup.exe file to a different computer and run the Setup executable. You should be able to run the isolated shell application.
+## <a name="testing-the-installation-program"></a>설치 프로그램 테스트  
+ 설치를 테스트 하려면 setup.exe 파일을 다른 컴퓨터에 복사 하 고 설치 프로그램 실행 파일을 실행 합니다. 격리 된 셸 응용 프로그램을 실행할 수 있습니다.

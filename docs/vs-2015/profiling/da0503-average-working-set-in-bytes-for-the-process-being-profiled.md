@@ -23,11 +23,11 @@ ms.locfileid: "74300061"
 # <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503: 프로파일링 중인 프로세스에 대한 평균 작업 집합(바이트)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0503|  
-|Category|Resource Monitoring|  
-|Profiling method|All|  
-|Message|This information was gathered for information only. Process Working Set 카운터는 프로파일링하고 있는 프로세스의 실제 메모리 사용량을 측정합니다. 보고된 값은 모든 측정 간격에 걸쳐 계산된 평균값입니다.|  
-|Rule type|Information|  
+규칙 Id | DA0503 |  
+| 범주 | 리소스 모니터링 |  
+| 프로 파일링 방법 | 모두 |  
+| 메시지 | 이 정보는 정보를 위해서만 수집 되었습니다. Process Working Set 카운터는 프로파일링하고 있는 프로세스의 실제 메모리 사용량을 측정합니다. 보고된 값은 모든 측정 간격에 걸쳐 계산된 평균값입니다.|  
+| 규칙 유형 | 정보 |  
   
  샘플링, .NET 메모리 또는 리소스 경합 방법을 사용하여 프로파일링할 경우 이 규칙을 트리거하려면 10개 이상의 샘플을 수집해야 합니다.  
   

@@ -52,7 +52,7 @@ HRESULT CreateChildHandler(
  [in, size_is (`cpszNames`)] 호스트의 정규화 된 이름에서 가져온 식별자 목록입니다.  
   
  `cpszNames`  
- 진행 @No__t_0 매개 변수의 식별자 수입니다.  
+ 진행 `prgpszNames` 매개 변수의 식별자 수입니다.  
   
  `pszEvent`  
  진행 Scriptlet 연결 된 이벤트 이름을 식별 하는 버퍼 주소입니다.  
@@ -68,7 +68,7 @@ HRESULT CreateChildHandler(
  진행 함수 개체에 대 한 형식 정보입니다.  
   
  `iMethodSignature`  
- 진행 @No__t_0 매개 변수에 있는 함수의 인덱스입니다.  
+ 진행 `ITypeInfo``ptiSignature` 매개 변수에 있는 함수의 인덱스입니다.  
   
  `isn`  
  진행 부모에 있는 자식의 인덱스입니다.  
@@ -89,6 +89,6 @@ HRESULT CreateChildHandler(
 ## <a name="remarks"></a>주의  
  Scriptlet는 이벤트 처리기를 지정 합니다. 이 메서드는 웹 페이지를 나타내는 `IScriptNode` 개체에 의해 호출 되는 경우 scriptlet를 만듭니다. 다른 인터페이스에서 호출 하는 경우에는이 메서드가 성공 하지 않습니다.  
   
-## <a name="see-also"></a>참조  
- [Iscriptnode 인터페이스](../../winscript/reference/iscriptnode-interface.md)    
+## <a name="see-also"></a>참고 항목  
+ [Iscriptnode 인터페이스](../../winscript/reference/iscriptnode-interface.md)   
  [IScriptEntry 인터페이스](../../winscript/reference/iscriptentry-interface.md)

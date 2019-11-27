@@ -56,7 +56,7 @@ HRESULT HandleRuntimeError(
  제한이 엔진이 `IActiveScriptSite::OnScriptError` 메서드를 호출 해야 하는 경우 `TRUE` 되는 플래그입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드는 `HRESULT`를 반환 합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
+ 이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
   
 |값|설명|  
 |-----------|-----------------|  
@@ -68,9 +68,9 @@ HRESULT HandleRuntimeError(
 > [!NOTE]
 > 런타임 오류 시 스레드는 스택 프레임 열거 또는 식 계산 등의 작업을 수행 하기 위해 언어 엔진을 호출할 수 있습니다.  
   
-## <a name="see-also"></a>참조  
- [Idebugapplication 인터페이스](../../winscript/reference/idebugapplication-interface.md)    
- [IActiveScriptErrorDebug 인터페이스](../../winscript/reference/iactivescripterrordebug-interface.md)    
- [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)    
- [BREAKRESUMEACTION 열거형](../../winscript/reference/breakresumeaction-enumeration.md)    
+## <a name="see-also"></a>참고 항목  
+ [Idebugapplication 인터페이스](../../winscript/reference/idebugapplication-interface.md)   
+ [IActiveScriptErrorDebug 인터페이스](../../winscript/reference/iactivescripterrordebug-interface.md)   
+ [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)   
+ [BREAKRESUMEACTION 열거형](../../winscript/reference/breakresumeaction-enumeration.md)   
  [ERRORRESUMEACTION 열거형](../../winscript/reference/errorresumeaction-enumeration.md)

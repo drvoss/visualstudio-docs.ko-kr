@@ -30,6 +30,6 @@ ms.locfileid: "72573402"
   
 - 변수를 조건부 컴파일 변수로 바꿉니다.  
   
-## <a name="see-also"></a>참조  
- [조건부 컴파일](../../javascript/advanced/conditional-compilation-javascript.md)    
+## <a name="see-also"></a>참고 항목  
+ [조건부 컴파일](../../javascript/advanced/conditional-compilation-javascript.md)   
  [조건부 컴파일 변수](../../javascript/advanced/conditional-compilation-variables-javascript.md)

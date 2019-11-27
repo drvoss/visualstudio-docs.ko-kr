@@ -22,7 +22,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72572258"
 ---
 # <a name="the-uri-to-be-decoded-is-not-a-valid-encoding"></a>디코딩할 URI가 올바른 인코딩이 아닙니다.
-잘못 된 형식의 URI (Uniform Resource Identifier)를 디코드 하려고 했습니다. Uri에는 특수 구문이 있습니다. 영숫자가 아닌 대부분의 문자는 URI에서 사용할 수 있으려면 인코딩해야 합니다. @No__t_0 및 `encodeURIComponent` 메서드를 사용 하 여 일반 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 문자열에서 URI를 만들 수 있습니다.  
+잘못 된 형식의 URI (Uniform Resource Identifier)를 디코드 하려고 했습니다. Uri에는 특수 구문이 있습니다. 영숫자가 아닌 대부분의 문자는 URI에서 사용할 수 있으려면 인코딩해야 합니다. `encodeURI` 및 `encodeURIComponent` 메서드를 사용 하 여 일반 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 문자열에서 URI를 만들 수 있습니다.  
   
  전체 URI는 구성 요소 및 구분 기호의 시퀀스로 구성 됩니다. 일반적인 형식은 다음과 같습니다.  
   
@@ -36,6 +36,6 @@ ms.locfileid: "72572258"
   
 - 유효한 Uri만 디코딩하 려 고 하는지 확인 합니다. 정상적인 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 문자열에는 잘못 된 문자가 포함 될 수 있으므로 디코딩할 수 없습니다.  
   
-## <a name="see-also"></a>참조  
- [DecodeURI 함수](../../javascript/reference/decodeuri-function-javascript.md)    
+## <a name="see-also"></a>참고 항목  
+ [DecodeURI 함수](../../javascript/reference/decodeuri-function-javascript.md)   
  [decodeURIComponent 함수](../../javascript/reference/decodeuricomponent-function-javascript.md)

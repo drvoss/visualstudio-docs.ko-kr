@@ -1,5 +1,5 @@
 ---
-title: Accessing data
+title: 데이터 액세스
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -32,17 +32,17 @@ ms.locfileid: "74299434"
 # <a name="accessing-data-in-visual-studio"></a>Visual Studio에서 데이터 액세스
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In Visual Studio, you can create applications that connect to data in virtually any database product or service, in any format, anywhere—on a local machine, on a local area network, or in a public, private, or hybrid cloud.
+Visual Studio에서는 거의 모든 데이터베이스 제품 또는 서비스의 데이터에 연결 하는 응용 프로그램을 로컬 컴퓨터, 로컬 영역 네트워크 또는 공용, 사설 또는 하이브리드 클라우드에서 모든 형식으로 만들 수 있습니다.
 
- For applications in JavaScript, Python, PHP, Ruby, or C++, you connect to data like you do anything else, by obtaining libraries and writing code. For .NET applications, Visual Studio provides tools that you can use to explore data sources,  create object models to store and manipulate data in memory, and bind data to the user interface.     Microsoft Azure provides SDKs for .NET, Java, Node.js, PHP, Python, Ruby, and mobile apps, and tools in Visual Studio for connecting to Azure Storage.
+ JavaScript, Python, PHP, Ruby 또는 C++의 응용 프로그램의 경우 라이브러리를 가져오고 코드를 작성 하 여 다른 작업을 수행 하는 것 처럼 데이터에 연결 합니다. .NET 응용 프로그램의 경우 Visual Studio는 데이터 원본을 탐색 하 고, 개체 모델을 만들어 메모리에 데이터를 저장 및 조작 하 고, 데이터를 사용자 인터페이스에 바인딩하는 데 사용할 수 있는 도구를 제공 합니다.     Microsoft Azure는 .NET, Java, node.js, PHP, Python, Ruby 및 모바일 앱에 대 한 Sdk 및 Visual Studio에서 Azure Storage에 연결 하는 데 사용할 수 있는 도구를 제공 합니다.
 
- The following lists show just a few of the many database and storage systems that can be used from Visual Studio. The [Microsoft Azure](https://azure.microsoft.com/) offerings are data services that include all provisioning and administration of the  underlying data store.  [Azure Tools for Visual Studio](https://www.visualstudio.com/features/azure-tools-vs.aspx) is an optional component that enables you to work with Azure data stores directly from Visual Studio. Most of the other SQL and NoSQL database products that are listed here can be hosted on a local machine, on a local network, or in Microsoft Azure on a virtual machine. In this scenario, you are responsible for managing the database itself.
+ 다음 목록에서는 Visual Studio에서 사용할 수 있는 몇 가지 데이터베이스 및 저장소 시스템을 보여 줍니다. [Microsoft Azure](https://azure.microsoft.com/) 제품은 기본 데이터 저장소의 모든 프로 비전 및 관리를 포함 하는 데이터 서비스입니다.  [Azure Tools For Visual studio](https://www.visualstudio.com/features/azure-tools-vs.aspx) 는 visual studio에서 직접 azure 데이터 저장소를 사용할 수 있도록 하는 선택적 구성 요소입니다. 여기에 나열 된 다른 SQL 및 NoSQL 데이터베이스 제품은 대부분 로컬 컴퓨터, 로컬 네트워크 또는 가상 컴퓨터의 Microsoft Azure에서 호스팅될 수 있습니다. 이 시나리오에서는 데이터베이스 자체를 관리 하는 일을 담당 합니다.
 
  **Microsoft Azure**
 
 ||||
 |-|-|-|
-|SQL Database|DocumentDB|Storage (blobs, tables, queues, files)|
+|SQL 데이터베이스|DocumentDB|저장소 (blob, 테이블, 큐, 파일)|
 |SQL Data Warehouse|SQL Server Stretch Database|StorSimple|
 
  기타...
@@ -51,7 +51,7 @@ In Visual Studio, you can create applications that connect to data in virtually 
 
 ||||
 |-|-|-|
-|SQL Server 2005–2016, including Express and LocalDB|Firebird|MariaDB|
+|SQL Server 2005 – 2016 (Express 및 LocalDB 포함)|Firebird|MariaDB|
 |MySQL|Oracle|PostgreSQL|
 |SQLite|||
 
@@ -67,78 +67,78 @@ In Visual Studio, you can create applications that connect to data in virtually 
 
  기타...
 
- Many database vendors and third parties support Visual Studio integration by NuGet packages. You can explore the offerings on nuget.org or through the NuGet Package Manager in Visual Studio (**Tools** > **NuGet Package Manager** > **Manage NuGet Packages for Solution**). Other database products integrate with Visual Studio as an extension.   You can browse these offerings in the Visual Studio Gallery by navigating to **Tools** > **Extensions and Updates** and then selecting **Online** in the left pane of the dialog box.  For more information, see [Installing database systems, tools, and samples](../data-tools/installing-database-systems-tools-and-samples.md).
+ 많은 데이터베이스 공급 업체와 제 3 자가 NuGet 패키지를 통해 Visual Studio 통합을 지원 합니다. Nuget.org에서 또는 Visual Studio의 NuGet 패키지 관리자를 통해 제공 되는 기능을 탐색할 수 있습니다 (**도구** > **nuget 패키지 관리자** > **솔루션에 대 한 nuget 패키지 관리**). 다른 데이터베이스 제품은 Visual Studio와 확장으로 통합 됩니다.   **도구** > **확장 및 업데이트** 로 이동한 다음 대화 상자의 왼쪽 창에서 **온라인** 을 선택 하 여 Visual Studio 갤러리에서 이러한 제품을 찾아볼 수 있습니다.  자세한 내용은 [데이터베이스 시스템, 도구 및 샘플 설치](../data-tools/installing-database-systems-tools-and-samples.md)를 참조 하세요.
 
 > [!NOTE]
-> Extended support for SQL Server 2005 ended on April 12, 2016.   There is no guarantee that data tools in Visual Studio 2015 and later will continue to work with SQL Server 2005 after this date. For more information, see the [end-of-support announcement for SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
+> SQL Server 2005에 대 한 연장 지원은 2016 년 4 월 12 일에 종료 되었습니다.   이 날짜 이후에는 Visual Studio 2015 이상 버전의 데이터 도구가 SQL Server 2005에서 계속 작동 한다는 보장이 없습니다. 자세한 내용은 [SQL Server 2005에 대 한 지원 종료 알림](https://www.microsoft.com/sql-server/sql-server-2005)을 참조 하세요.
 
-### <a name="net-languages"></a>.NET languages
- All .NET data access, including in .NET Core,  is based on ADO.NET, a set of classes that defines an interface for accessing any kind of data source, both relational and non-relational. Visual Studio has several tools and designers that work with ADO.NET to help you connect to databases, manipulate the data, and present the data to the user. The documentation in this section describes how to use those tools. You can also program directly against the ADO.NET command objects. For more information about calling the ADO.NET APIs directly, see [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) in the MSDN Library.
+### <a name="net-languages"></a>.NET 언어
+ .NET Core에 포함 된 모든 .NET 데이터 액세스는 모든 종류의 데이터 원본에 액세스 하기 위한 인터페이스를 정의 하는 클래스 집합인 ADO.NET을 기반으로 합니다. Visual Studio에는 데이터베이스에 연결 하 고, 데이터를 조작 하 고, 사용자에 게 데이터를 표시 하는 데 도움이 되는 ADO.NET와 함께 작동 하는 몇 가지 도구와 디자이너가 있습니다. 이 섹션의 설명서에서는 이러한 도구를 사용 하는 방법을 설명 합니다. ADO.NET 명령 개체에 대해 직접 프로그래밍할 수도 있습니다. ADO.NET Api를 직접 호출 하는 방법에 대 한 자세한 내용은 MSDN Library의 [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) 를 참조 하십시오.
 
- For data-access documentation specifically related to ASP.NET, see  [Working with Data](https://docs.microsoft.com/aspnet/web-forms/overview/presenting-and-managing-data/) on the ASP.NET site. For a tutorial on using Entity Framework with ASP.NET MVC, see [Getting Started with Entity Framework 6 Code First using MVC 5](https://docs.microsoft.com/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
+ ASP.NET와 관련 된 데이터 액세스 설명서는 ASP.NET 사이트에서 [데이터 작업](https://docs.microsoft.com/aspnet/web-forms/overview/presenting-and-managing-data/) 을 참조 하세요. ASP.NET MVC와 함께 Entity Framework를 사용 하는 방법에 대 한 자습서는 [mvc 5를 사용 하 여 Entity Framework 6 Code First 시작](https://docs.microsoft.com/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)을 참조 하세요.
 
- Universal Windows Platform (UWP) apps in C# or Visual Basic can use the      Microsoft Azure SDK for .NET to access Azure Storage and other Azure services. The Windows.Web.HttpClient class enables communication with any RESTful service. For more information, see [How to connect to an HTTP server using Windows.Web.Http](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
+ 또는 Visual Basic의 C# UWP (유니버설 Windows 플랫폼) 앱은 .net 용 Microsoft Azure SDK를 사용 하 여 Azure Storage 및 기타 Azure 서비스에 액세스할 수 있습니다. Windows. HttpClient 클래스를 사용 하면 모든 RESTful 서비스와 통신할 수 있습니다. 자세한 내용은 [Windows를 사용 하 여 http 서버에 연결 하는 방법](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx)을 참조 하세요.
 
- For data storage on the local machine, the recommended approach is to use SQLite, which runs in the same process as the app. If an object-relational mapping (ORM) layer is required, you can use Entity Framework. For more information, see [Data access](https://msdn.microsoft.com/windows/uwp/data-access/index) in the Windows Developer Center.
+ 로컬 컴퓨터에 데이터를 저장 하는 경우 권장 되는 방법은 앱과 동일한 프로세스에서 실행 되는 SQLite를 사용 하는 것입니다. ORM (개체-관계형 매핑) 계층이 필요한 경우 Entity Framework를 사용할 수 있습니다. 자세한 내용은 Windows 개발자 센터에서 [데이터 액세스](https://msdn.microsoft.com/windows/uwp/data-access/index) 를 참조 하세요.
 
- If you are connecting to Azure services, be sure to download the latest [Azure SDK tools](https://azure.microsoft.com/downloads/).
+ Azure 서비스에 연결 하는 경우 최신 [AZURE SDK 도구](https://azure.microsoft.com/downloads/)를 다운로드 해야 합니다.
 
 #### <a name="data-providers"></a>데이터 공급자
- For a database to be consumable in ADO.NET, it must have a custom *ADO.NET data provider* or else must expose an ODBC or OLE DB interface. Microsoft provides a [list of ADO.NET data providers](https://msdn.microsoft.com/data/dd363565) for SQL Server products as well as ODBC and OLE DB providers.
+ ADO.NET에서 데이터베이스를 사용할 수 있도록 하려면 사용자 지정 *ADO.NET 데이터 공급자* 가 있어야 합니다. 그렇지 않으면 ODBC 또는 OLE DB 인터페이스를 노출 해야 합니다. Microsoft는 SQL Server 제품 뿐만 아니라 ODBC 및 OLE DB 공급자에 대 한 [ADO.NET 데이터 공급자의 목록을](https://msdn.microsoft.com/data/dd363565) 제공 합니다.
 
 #### <a name="data-modeling"></a>데이터 모델링
- In .NET, you have three choices for modeling and manipulating data in memory after you have retrieved it from a data source:
+ .NET에서는 데이터 원본에서 데이터를 검색 한 후 메모리에서 데이터를 모델링 하 고 조작할 수 있는 세 가지 옵션이 있습니다.
 
- Entity Framework The preferred Microsoft ORM technology. You can use it to program against relational data as first-class .NET objects. For new applications, it should be the default first choice when a model is required. It requires custom support from the underlying ADO.NET provider.
+ 기본 설정 된 Microsoft ORM 기술 Entity Framework 합니다. 이를 사용 하 여 관계형 데이터를 최고 수준의 .NET 개체로 프로그래밍할 수 있습니다. 새 응용 프로그램의 경우 모델이 필요할 때 첫 번째로 선택 해야 합니다. 기본 ADO.NET 공급자의 사용자 지정 지원이 필요 합니다.
 
- LINQ to SQL An earlier-generation object-relational mapper. It works well for less complex scenarios but is no longer in active development.
+ 이전 세대 개체-관계형 매퍼를 LINQ to SQL 합니다. 더 복잡 한 시나리오에 적합 하지만 더 이상 개발에 더 이상 필요 하지 않습니다.
 
- Datasets The oldest of the three modeling technologies. It is designed primarily for rapid development of "forms over data" applications in which you are not processing huge amounts of data or performing complex queries or transformations. A DataSet object consists of DataTable and  DataRow objects that logically resemble SQL database objects much more than .NET objects. For  relatively simple applications based on SQL data sources, datasets might still be a good choice.
+ 세 가지 모델링 기술 중 가장 오래 된 데이터 집합입니다. 대량의 데이터를 처리 하거나 복잡 한 쿼리 또는 변환을 수행 하지 않는 "데이터 폼" 응용 프로그램을 신속 하 게 개발 하는 데 주로 설계 되었습니다. DataSet 개체는 SQL 데이터베이스 개체와 논리적으로 동일한 SQL 데이터베이스 개체와 유사한 DataTable 및 DataRow 개체로 구성 됩니다. SQL 데이터 원본을 기반으로 하는 비교적 간단한 응용 프로그램의 경우에도 데이터 집합을 선택 하는 것이 좋습니다.
 
- There is no requirement to use any of these technologies. In some scenarios, especially where performance is critical, you can simply use a DataReader object to read from the database and copy the values that you need into a collection object such as List\<T>.
+ 이러한 기술을 사용할 필요는 없습니다. 특히 성능이 중요 한 일부 시나리오에서는 DataReader 개체를 사용 하 여 데이터베이스에서 읽고 필요한 값을\<T > 목록 등의 컬렉션 개체에 복사할 수 있습니다.
 
 ### <a name="native-c"></a>네이티브 C++
- C++ applications that connect to SQL Server should use the [SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733.aspx). You can access other databases by  using [ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx) or OLE DB drivers directly. ODBC is the current standard database interface, but most database systems provide custom functionality that can't be accessed through the ODBC interface.  OLE DB is a legacy COM data-access technology that is still supported but not recommended for new applications.  For more information, see [Data Access](https://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b).
+ C++SQL Server에 연결 하는 응용 프로그램은 [SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733.aspx)를 사용 해야 합니다. [ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx) 또는 OLE DB 드라이버를 직접 사용 하 여 다른 데이터베이스에 액세스할 수 있습니다. ODBC는 현재 표준 데이터베이스 인터페이스 이지만 대부분의 데이터베이스 시스템은 ODBC 인터페이스를 통해 액세스할 수 없는 사용자 지정 기능을 제공 합니다.  OLE DB은 계속 지원 되지만 새 응용 프로그램에는 권장 되지 않는 레거시 COM 데이터 액세스 기술입니다.  자세한 내용은 [데이터 액세스](https://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)를 참조 하세요.
 
- C++ programs that consume REST services can use the [C++ REST SDK](https://github.com/Microsoft/cpprestsdk).
+ C++rest 서비스를 사용 하는 프로그램은 [ C++ rest SDK](https://github.com/Microsoft/cpprestsdk)를 사용할 수 있습니다.
 
- C++ programs that work with Microsoft Azure Storage can use the [Microsoft Azure Storage Client](https://www.nuget.org/packages/wastorage).
+ C++Microsoft Azure Storage와 함께 작동 하는 프로그램은 [Microsoft Azure Storage 클라이언트](https://www.nuget.org/packages/wastorage)를 사용할 수 있습니다.
 
 #### <a name="data-modeling"></a>데이터 모델링
- Visual Studio  does not provide an ORM layer for C++.  [ODB](https://www.codesynthesis.com/products/odb/) is a popular open-source ORM for C++.
+ Visual Studio는에 대해 C++ORM 계층을 제공 하지 않습니다.  [ODB](https://www.codesynthesis.com/products/odb/) 는의 C++인기 있는 오픈 소스 ORM입니다.
 
- For more information about legacy Visual C++ data-access technologies, see  [Data Access](https://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)
+ 레거시 시각적 C++ 데이터 액세스 기술에 대 한 자세한 내용은 [데이터 액세스](https://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b) 를 참조 하세요.
 
 ### <a name="javascript"></a>JavaScript
- [JavaScript in Visual Studio](https://msdn.microsoft.com/library/hh334522.aspx) is a first-class language for building cross-platform apps, UWP apps, cloud services, websites, and web apps. You can use Bower, Grunt, Gulp, npm, and NuGet  from within Visual Studio to install your favorite JavaScript libraries and database products. Connect to Azure storage and services by downloading SDKs from the [Azure website](https://azure.microsoft.com/).  Edge.js is a library that connects server-side JavaScript (Node.js) to ADO.NET data sources.
+ [Visual Studio의 JavaScript](https://msdn.microsoft.com/library/hh334522.aspx) 는 플랫폼 간 앱, UWP 앱, 클라우드 서비스, 웹 사이트 및 웹 앱을 빌드하기 위한 최고 수준의 언어입니다. Visual Studio 내에서 Bower, Grunt, Gulp, npm 및 NuGet을 사용 하 여 즐겨 사용 하는 JavaScript 라이브러리 및 데이터베이스 제품을 설치할 수 있습니다. [Azure 웹 사이트](https://azure.microsoft.com/)에서 sdk를 다운로드 하 여 azure storage 및 서비스에 연결 합니다.  Node.js는 서버 쪽 JavaScript (node.js)를 ADO.NET 데이터 원본에 연결 하는 라이브러리입니다.
 
 ### <a name="python"></a>Python
- Install  [Python Tools for Visual Studio](http://microsoft.github.io/PTVS/) along with your favorite Python framework to create CPython or IronPython (.NET)  applications.  The Python Tools for Visual Studio website has several tutorials on connecting to data, including [Django and SQL Database on Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-SQL-Database-on-Azure), [Django and MySQL on Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-MySQL-on-Azure) and [Bottle and MongoDB on Azure](https://github.com/Microsoft/PTVS/wiki/Bottle-and-MongoDB-on-Azure).
+ 선호 하는 Python 프레임 워크와 함께 [Visual Studio용 Python 도구](http://microsoft.github.io/PTVS/) 를 설치 하 여 CPython 또는 IronPython (.net) 응용 프로그램을 만듭니다.  Visual Studio용 Python 도구 웹 사이트에는 azure의 [Django 및 SQL Database](https://github.com/Microsoft/PTVS/wiki/Django-and-SQL-Database-on-Azure), azure의 [Django 및 MySQL](https://github.com/Microsoft/PTVS/wiki/Django-and-MySQL-on-Azure) , Azure의 [병 및 MongoDB](https://github.com/Microsoft/PTVS/wiki/Bottle-and-MongoDB-on-Azure)를 포함 하 여 데이터에 연결 하는 몇 가지 자습서가 있습니다.
 
 ## <a name="in-this-section"></a>이 섹션의 내용
- [Installing database systems, tools, and samples](../data-tools/installing-database-systems-tools-and-samples.md) Discusses how to obtain database products and the Visual Studio extensions or drivers that support them, and where to find sample databases for experimentation and learning purposes.
+ [데이터베이스 시스템, 도구 및 샘플 설치](../data-tools/installing-database-systems-tools-and-samples.md) 데이터베이스 제품 및이를 지 원하는 Visual Studio 확장 또는 드라이버를 가져오는 방법 및 실험 및 학습 목적으로 샘플 데이터베이스를 찾을 수 있는 위치에 대해 설명 합니다.
 
- [Visual Studio data tools for .NET](https://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) Describes how to use Visual Studio tool windows to connect to data sources, create datasets or Entity Framework models, and bind the data to user interface controls.
+ [.Net 용 Visual Studio data tools](https://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) Visual Studio 도구 창을 사용 하 여 데이터 소스에 연결 하 고, 데이터 집합을 만들고, 모델을 Entity Framework 하 고, 데이터를 사용자 인터페이스 컨트롤에 바인딩하는 방법을 설명 합니다.
 
 ## <a name="related-topics"></a>관련 항목
- [Data, Devices, and Analytics](https://msdn.microsoft.com/data-and-devices) Provides an introduction to the Microsoft intelligent cloud, including Cortana Analytics Suite and support for Internet of Things.
+ [데이터, 장치 및 분석](https://msdn.microsoft.com/data-and-devices) Cortana Analytics Suite 및 사물 인터넷에 대 한 지원을 포함 하 여 Microsoft intelligent cloud에 대 한 소개를 제공 합니다.
 
- [Microsoft Azure Storage](/azure/storage/) Describes Azure Storage, and how to create applications by  using Azure blobs, tables, queues, and files.
+ [Microsoft Azure Storage](/azure/storage/) Azure Storage 및 Azure blob, 테이블, 큐 및 파일을 사용 하 여 응용 프로그램을 만드는 방법을 설명 합니다.
 
- [Azure SQL Database](https://azure.microsoft.com/documentation/services/sql-database/) Describes how to connect to Azure SQL Database, a relational database as a service.
+ [Azure SQL Database](https://azure.microsoft.com/documentation/services/sql-database/) 관계형 Database as a Service Azure SQL Database에 연결 하는 방법을 설명 합니다.
 
- [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx) Describes the tools that simplify design, exploration, testing, and deploying of data-connected applications and databases.
+ [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx) 데이터 연결 응용 프로그램 및 데이터베이스의 디자인, 탐색, 테스트 및 배포를 간소화 하는 도구에 대해 설명 합니다.
 
- [ADO.NET](https://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca) Describes the ADO.NET architecture and how to use the ADO.NET classes to manage application data and interact with data sources and XML.
+ [ADO.NET](https://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca) ADO.NET 아키텍처와 ADO.NET 클래스를 사용 하 여 응용 프로그램 데이터를 관리 하 고 데이터 원본 및 XML과 상호 작용 하는 방법을 설명 합니다.
 
- [ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef) Describes how to create data applications that allow developers to program against a conceptual model instead of directly against a relational database.
+ [ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef) 개발자가 관계형 데이터베이스에 대해 직접 프로그래밍 하는 대신 개념적 모델을 기반으로 프로그래밍할 수 있도록 하는 데이터 응용 프로그램을 만드는 방법을 설명 합니다.
 
- [WCF Data Services 4.5](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a) Describes how to use [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] to deploy data services on the web or an intranet that implement the [Open Data Protocol (OData)](https://go.microsoft.com/fwlink/?LinkID=182204).
+ [WCF Data Services 4.5](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a) [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]를 사용 하 여 [OData (Open Data Protocol](https://go.microsoft.com/fwlink/?LinkID=182204)를 구현 하는 웹 또는 인트라넷에 데이터 서비스를 배포 하는 방법을 설명 합니다.
 
- [Data in Office Solutions](https://msdn.microsoft.com/library/8478c095-864b-4ed3-8a70-1fc19b411c6a) Contains links to topics that explain how data works in Office solutions. This includes information about schema-oriented programming, data caching, and server-side data access.
+ [Office 솔루션의 데이터](https://msdn.microsoft.com/library/8478c095-864b-4ed3-8a70-1fc19b411c6a) Office 솔루션에서 데이터가 작동 하는 방식을 설명 하는 항목의 링크를 포함 합니다. 여기에는 스키마 지향 프로그래밍, 데이터 캐싱 및 서버 쪽 데이터 액세스에 대 한 정보가 포함 됩니다.
 
- [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) Describes the query capabilities built into C# and Visual Basic, and the common model for querying relational databases, XML documents, datasets, and in-memory collections.
+ [LINQ (통합 언어 쿼리)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) 에서 제공 C# 하는 쿼리 기능 및 Visual Basic, 관계형 데이터베이스, XML 문서, 데이터 집합 및 메모리 내 컬렉션을 쿼리 하기 위한 일반 모델에 대해 설명 합니다.
 
- [XML Tools in Visual Studio](../xml-tools/xml-tools-in-visual-studio.md) Discusses working with XML data, debugging XSLT, .NET Framework XML features, and the architecture of XML Query.
+ [Visual Studio의 XML 도구](../xml-tools/xml-tools-in-visual-studio.md) Xml 데이터 작업, XSLT 디버깅, xml 기능 .NET Framework xml 쿼리 아키텍처 등에 대해 설명 합니다.
 
- [XML Documents and Data](https://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380) Provides an overview to a comprehensive and integrated set of classes that work with XML documents and data in the .NET Framework.
+ [XML 문서 및 데이터](https://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380) .NET Framework에서 XML 문서 및 데이터를 사용 하는 포괄적이 고 통합 된 클래스 집합에 대 한 개요를 제공 합니다.

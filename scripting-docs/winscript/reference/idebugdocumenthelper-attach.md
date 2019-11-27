@@ -37,18 +37,18 @@ HRESULT Attach(
   
 #### <a name="parameters"></a>매개 변수  
  `pddhParent`  
- 진행 이 문서를 추가할 문서 트리입니다. NULL 일 수 있습니다.  
+ 진행 이 문서를 추가할 문서 트리입니다. NULL일 수 있습니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드는 `HRESULT`를 반환 합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
+ 이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
   
 |값|설명|  
 |-----------|-----------------|  
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>주의  
- 이 메서드는 `pddhParent`를 부모로 사용 하 여 문서 트리에이 문서를 추가 합니다. @No__t_0 `NULL` 되는 경우이 문서는 최상위 문서입니다.  
+ 이 메서드는 `pddhParent`를 부모로 사용 하 여 문서 트리에이 문서를 추가 합니다. `pddhParent` `NULL`되는 경우이 문서는 최상위 문서입니다.  
   
-## <a name="see-also"></a>참조  
- [IDebugDocumentHelper::D etach](../../winscript/reference/idebugdocumenthelper-detach.md)    
+## <a name="see-also"></a>참고 항목  
+ [IDebugDocumentHelper::Detach](../../winscript/reference/idebugdocumenthelper-detach.md)   
  [IDebugDocumentHelper 인터페이스](../../winscript/reference/idebugdocumenthelper-interface.md)

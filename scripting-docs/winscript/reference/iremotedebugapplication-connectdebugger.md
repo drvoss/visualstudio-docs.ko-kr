@@ -40,7 +40,7 @@ HRESULT ConnectDebugger(
  진행 이 응용 프로그램에 연결할 디버거입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드는 `HRESULT`를 반환 합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
+ 이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
   
 |값|설명|  
 |-----------|-----------------|  
@@ -50,6 +50,6 @@ HRESULT ConnectDebugger(
 ## <a name="remarks"></a>주의  
  응용 프로그램은 한 번에 하나의 디버거만 연결 될 수 있습니다. 디버거가 이미 연결 되어 있으면이 메서드는 실패 합니다.  
   
-## <a name="see-also"></a>참조  
- [Iremotedebugapplication:: GetDebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)    
+## <a name="see-also"></a>참고 항목  
+ [IRemoteDebugApplication::GetDebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)   
  [IRemoteDebugApplication 인터페이스](../../winscript/reference/iremotedebugapplication-interface.md)

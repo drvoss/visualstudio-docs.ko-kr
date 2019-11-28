@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28a533fff657e9e6cf426124bf65068f15190e7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a567ca32a78eb6a78aad3702a68a6e08ed122db8
+ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997370"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74316500"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>방법: 먼저 빌드할 대상 지정
 프로젝트 파일에는 프로젝트 빌드 방식을 정의하는 하나 이상의 `Target` 요소가 포함됩니다. 프로젝트 파일에 `DefaultTargets` 특성, `InitialTargets` 특성이 포함되거나 대상이 명령줄에서 **-target** 스위치를 사용하여 지정된 경우가 아니면 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)]([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) 엔진은 발견한 첫 번째 프로젝트 및 모든 종속성을 빌드합니다.
@@ -72,6 +72,6 @@ ms.locfileid: "62997370"
      `msbuild <file name>.proj -t:Clean;Compile`
 
 ## <a name="see-also"></a>참고 항목
-  [MSBuild](../msbuild/msbuild.md)
+- [MSBuild](../msbuild/msbuild.md)
 - [대상](../msbuild/msbuild-targets.md)
 - [방법: 빌드 정리](../msbuild/how-to-clean-a-build.md)

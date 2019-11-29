@@ -10,12 +10,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 905fd0b3f9ad37125ae8cccd5dab30f0517d16a1
-  ms.sourcegitcommit: 890ae10c8ea3bff8306ed25b06256578dee08397
+  ms.openlocfilehash: 2b2fffb32ba16111449c2876769e70d9c687b976
+  ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 11/15/2019
-  ms.locfileid: "74119717"
+  ms.lasthandoff: 11/25/2019
+  ms.locfileid: "74474009"
 highlightedContent:
   items:
   - title: 설정 및 설치
@@ -157,8 +157,8 @@ additionalContent:
     - title: 공동 작업
       summary: 실시간 공동 작업 환경에서 코드를 공유, 편집, 디버그합니다.
       url: /visualstudio/liveshare/
-    - title: 컨테이너를 사용하여 개발
-      summary: 컨테이너를 사용하여 모듈식 구성 요소를 격리하고 확장성을 향상시킵니다.
+    - title: Docker 컨테이너를 사용하여 개발
+      summary: Docker 컨테이너를 사용하여 모듈식 구성 요소를 격리하고 확장성을 향상시킵니다.
       url: ../containers/index.yml
   - title: 작업
     items:

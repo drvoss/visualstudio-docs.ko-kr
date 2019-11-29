@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 036ad2171c3b117049635247a980cd0f8411d887
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: HT
+ms.openlocfilehash: ce064209ca96abda1f9e44825fa869c2ba250a32
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297564"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74538982"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Visual Studio 2015의 새로운 기능
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "74297564"
 
 이 페이지는 Visual Studio 2013 업데이트 중 하나에 처음으로 도입된 기능을 포함하여 Visual Studio 2013 RTM 이후 새로 포함된 가장 중요한 기능 중 일부에 대해 주로 다룹니다. Visual Studio 2015의 새로운 기능의 전체 목록은 [릴리스 정보](https://www.visualstudio.com/news/vs2015-vs)를 참조하세요.
 
-Visual Studio ALM의 다양 한 개선 사항 및 새로운 기능에 대해 자세히 알아보려면 [TFS 2015의 새로운](/tfs/server/whats-new?view=vsts#tfs-2015-rtm)기능을 참조 하세요.
+Visual Studio ALM의 다양 한 개선 사항 및 새로운 기능에 대해 자세히 알아보려면 [TFS 2015의 새로운](/azure/devops/server/whats-new#tfs-2015)기능을 참조 하세요.
 
 ## <a name="a-new-setup-experience"></a>새로운 설치 환경
  [!INCLUDE[downloadvs](./includes/downloadvs-md.md)]
@@ -107,7 +107,7 @@ Visual Studio ALM의 다양 한 개선 사항 및 새로운 기능에 대해 자
 
 1. Azure 모바일 서비스
 
-2. Azure Storage
+2. Azure 저장소
 
 3. Office 365(메일, 연락처, 달력, 파일, 사용자 및 그룹)
 

@@ -6,12 +6,12 @@ ms.assetid: 22725520-59ba-4f6f-80e4-097b1287a34b
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 14da8fab1b3190d77951298ac7d1a130c85f6135
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: HT
+ms.openlocfilehash: 703ee752a9f16f0abc5e4813707890a6d17947af
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297711"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74538935"
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Mac 사용자용 설정, 설치 및 확인
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "74297711"
   
   이 항목에서는 이러한 요구 사항에 대한 지침을 제공합니다.  설치 프로세스가 실행되는 동안 [Xamarin을 사용한 모바일 개발에 대해 알아보기](../cross-platform/learn-about-mobile-development-with-xamarin.md) 항목을 검토하여 필요한 배경 자료를 읽고 살펴볼 수 있습니다.  
   
-  **항목 내용**  
+  **항목 내용:**  
   
 - [Mac 설치(Apple ID, Xcode 및 Xamarin)](#mac)  
   
@@ -48,7 +48,7 @@ ms.locfileid: "74297711"
   
 3. [Xamarin.iOS 설치 및 구성](https://docs.microsoft.com/xamarin/ios/get-started/installation/mac) (영문)(xamarin.com)의 지침에 따라 Xamarin을 다운로드하여 설치합니다.  
   
-4. Windows 및 Mac 컴퓨터에서 Xamarin 설치를 마친 후 [XMA를 사용하여 Mac에 연결](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/?pivots=windows#Connecting_to_the_Mac_Using_XMA)(xamarin.com)의 지침에 따라 Windows 컴퓨터의 Visual Studio에서 iOS 및 Mac 작업을 수행할 수 있습니다.  
+4. Windows 및 Mac 컴퓨터에서 Xamarin 설치를 마친 후 [XMA를 사용하여 Mac에 연결](/xamarin/ios/get-started/installation/windows/connecting-to-mac)(xamarin.com)의 지침에 따라 Windows 컴퓨터의 Visual Studio에서 iOS 및 Mac 작업을 수행할 수 있습니다.  
   
 ## <a name="windows"></a> Parallels 내부의 Windows 설치(Visual Studio 및 Xamarin)  
   
@@ -75,7 +75,7 @@ ms.locfileid: "74297711"
     > [!NOTE]
     > 이전 Xamarin 라이선스 관련 문제를 방지하려면 Xamarin을 4.0.3.214 이상으로 업데이트해야 합니다.  업데이트를 확인하려고 하는데 Microsoft 빌드 도구에 대한 오류가 발생하면 [Xamarin 포럼](https://forums.xamarin.com/discussion/69015/xamarin-update-on-vs-2013-says-i-need-the-build-tools-for-vs-2015)의 스레드를 참조하세요.
   
-6. Windows 및 Mac 컴퓨터에서 모두 Xamarin 설치를 완료한 후 [XMA를 사용하여 Mac에 연결](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/?pivots=windows#Connecting_to_the_Mac_Using_XMA)(xamarin.com)의 지침에 따라 Visual Studio에서 iOS 작업을 수행할 수 있습니다.  
+6. Windows 및 Mac 컴퓨터에서 모두 Xamarin 설치를 완료한 후 [XMA를 사용하여 Mac에 연결](/xamarin/ios/get-started/installation/windows/connecting-to-mac)(xamarin.com)의 지침에 따라 Visual Studio에서 iOS 작업을 수행할 수 있습니다.  
   
 ## <a name="verify"></a> 환경 확인  
  설치 관리자가 완료되면 잠시 Xamarin 개발을 경험할 모든 준비가 되었는지 확인하세요.  
@@ -85,7 +85,7 @@ ms.locfileid: "74297711"
   
  ![Xamarin.com에 대 한 올바른 설명서를 보려면 Xamarin Studio를 선택 합니다.](../cross-platform/media/crossplat-xamarin-mac-1.png "CrossPlat Xamarin Mac 1")  
   
- **Android**  
+ **OWA(Outlook Web Access)**  
   
 1. [Android 프로젝트 만들기](https://github.com/xamarin/docs-archive/tree/master/Recipes/android/general/projects/create_an_android_project) (영문)(xamarin.com)의 지침에 따라 Android 프로젝트 만들기를 확인합니다.  
   
@@ -104,7 +104,7 @@ ms.locfileid: "74297711"
   
  또한 **도구 > Xamarin 계정...** 을 통해 Xamarin 계정에 로그인합니다.  
   
- **Android**  
+ **OWA(Outlook Web Access)**  
   
 1. [Android 프로젝트 만들기](https://github.com/xamarin/docs-archive/tree/master/Recipes/android/general/projects/create_an_android_project) (영문)(xamarin.com)의 지침에 따라 Android 프로젝트 만들기를 확인합니다.  
   
@@ -116,7 +116,7 @@ ms.locfileid: "74297711"
   
    **Android**  
   
-4. [XMA를 사용하여 Mac에 연결](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/?pivots=windows#Connecting_to_the_Mac_Using_XMA) (영문)(xamarin.com)에 설명된 대로 Mac이 네트워크에서 사용 가능하고 Visual Studio와 연결되었는지 확인합니다.  
+4. [XMA를 사용하여 Mac에 연결](/xamarin/ios/get-started/installation/windows/connecting-to-mac) (영문)(xamarin.com)에 설명된 대로 Mac이 네트워크에서 사용 가능하고 Visual Studio와 연결되었는지 확인합니다.  
   
 5. [iOS 만들기](https://github.com/xamarin/docs-archive/tree/master/Recipes/ios/general/projects/create_an_ios_project) (영문)(xamarin.com)의 지침에 따라 iOS 프로젝트 만들기를 확인합니다.  
   

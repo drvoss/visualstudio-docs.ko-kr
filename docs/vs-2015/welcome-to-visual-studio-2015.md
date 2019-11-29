@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7eeb6b0ac3322090cf85e26ac6388aac76890d44
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: HT
+ms.openlocfilehash: d7d488581aefee150b1a186eaba48576f0b8146d
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297571"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74537956"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Visual Studio 2015 시작
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ ms.locfileid: "74297571"
 ## <a name="connect-your-apps-to-services"></a>앱을 서비스에 연결
  다음과 같은 서비스에 즉시 연결할 수 있습니다(각 서비스에 대한 계정이 있다고 가정함).
 
-- [Azure Mobile Services](https://azure.microsoft.com/documentation/services/mobile-services/)
+- [Azure 모바일 서비스](https://azure.microsoft.com/documentation/services/mobile-services/)
 
 - [Azure Storage](https://azure.microsoft.com/documentation/services/storage/)
 
@@ -81,7 +81,7 @@ ms.locfileid: "74297571"
 ### <a name="check-in-your-code"></a>코드 체크 인
  팀에서 작업하는 경우 팀의 모든 구성원이 동일한 코드베이스를 사용하도록 최신 버전의 코드도 공유해야 합니다. Visual Studio는 Visual Studio Team Services나 Team Foundation Server와 원활하게 통합되어 Git 또는 TFVC(Team Foundation 버전 제어)를 통해 버전 제어를 제공합니다. 로컬 서버를 유지 관리하지 않고 클라우드에 코드를 저장하려면 Visual Studio Team Services를 사용하고, 온-프레미스 서버를 사용하려면 Team Foundation Server를 사용합니다. 코드 프로젝트를 만들 때마다 버전 제어에 추가하는 옵션이 있습니다. 요구 사항에 가장 적합한 버전 제어에 대해 알아보려면 [버전 제어 사용](https://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)을 참조하세요.
 
-### <a name="build-your-app"></a>앱 빌드
+### <a name="build-your-app"></a>응용 프로그램 빌드
  [로컬로 앱을 빌드](./ide/compiling-and-building-in-visual-studio.md) 하고 올바르게 작동하는지 확인할 수 있습니다. 그런 다음 [디버깅 도구](./debugger/debugging-in-visual-studio.md) 를 사용하여 앱 관련 문제를 해결합니다. 또는 공유 빌드 서버나 클라우드에서 프로젝트를 빌드할 수 있습니다. 팀의 개발자들이 버전 제어에 체크 인한 코드를 빌드하도록 빌드 프로세스를 자동화합니다. 예를 들어 밤마다 또는 코드를 체크 인할 때마다 하나 이상의 프로젝트를 빌드할 수 있습니다.
 
 ### <a name="test-your-app"></a>응용 프로그램 테스트
@@ -96,7 +96,7 @@ ms.locfileid: "74297571"
 
 |||||
 |-|-|-|-|
-|[Visual Studio 2015의 새로운 기능](./what-s-new-in-visual-studio-2015.md)|[Visual C#의 새로운 기능](https://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[.NET Framework 4.6의 새로운 기능](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[ALM의 새로운 기능](https://msdn.microsoft.com/54b98a53-6083-4303-869a-8063d8fae938)|
+|[Visual Studio 2015의 새로운 기능](./what-s-new-in-visual-studio-2015.md)|[Visual C#의 새로운 기능](https://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[.NET Framework 4.6의 새로운 기능](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[ALM의 새로운 기능](/azure/devops/server/whats-new)|
 |[C++의 새로운 기능](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Visual Basic의 새로운 기능](https://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[JavaScript의 새로운 기능](javascript/javascript-in-visual-studio.md#whats-new-in-javascript)||
 |[Python](./python/getting-started-with-python.md)||||
 

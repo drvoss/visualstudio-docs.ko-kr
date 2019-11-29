@@ -40,15 +40,15 @@ HRESULT SetDebugDocumentHost(
  진행 디버그 문서 호스트입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드는 `HRESULT`를 반환 합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
+ 이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
   
 |값|설명|  
 |-----------|-----------------|  
 |`S_OK`|메서드가 성공했으며|  
   
 ## <a name="remarks"></a>주의  
- @No__t_0 인터페이스는 스마트 호스트 구문 색 지정에 사용 되 고, 지연 된 텍스트를 가져오고, 새로 만든 문서 컨텍스트의 개체를 반환 하는 데 사용 됩니다.  
+ `IDebugDocumentHost` 인터페이스는 스마트 호스트 구문 색 지정에 사용 되 고, 지연 된 텍스트를 가져오고, 새로 만든 문서 컨텍스트의 개체를 반환 하는 데 사용 됩니다.  
   
-## <a name="see-also"></a>참조  
- [IDebugDocumentHelper 인터페이스](../../winscript/reference/idebugdocumenthelper-interface.md)    
+## <a name="see-also"></a>참고 항목  
+ [IDebugDocumentHelper 인터페이스](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [IDebugDocumentHost 인터페이스](../../winscript/reference/idebugdocumenthost-interface.md)

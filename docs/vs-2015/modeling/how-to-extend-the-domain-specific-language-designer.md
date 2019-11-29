@@ -1,5 +1,5 @@
 ---
-title: 'How to: Extend the Domain-Specific Language Designer | Microsoft Docs'
+title: '방법: 도메인 특정 언어 디자이너 확장 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -19,34 +19,34 @@ ms.locfileid: "74300902"
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>방법: 도메인별 언어 디자이너 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-You can make extensions to the designer that you use to edit DSL Definitions. Types of extension that you can make include adding menu commands, adding handlers for drag and double-click gestures, and rules that are triggered when particular types of values or relationships change. The extensions can be packaged as a Visual Studio Integration Extension (VSIX) and distributed to other users.
+DSL 정의를 편집 하는 데 사용 하는 디자이너에 확장을 만들 수 있습니다. 사용할 수 있는 확장 유형으로는 메뉴 명령 추가, 끌어서 두 번 클릭 제스처에 대 한 처리기 추가, 특정 유형의 값 또는 관계가 변경 될 때 트리거되는 규칙 등이 있습니다. 확장을 VSIX (Visual Studio Integration Extension)로 패키지 하 고 다른 사용자에 게 배포할 수 있습니다.
 
- For sample code and more information about this feature, see the Visual Studio [Visualization and Modeling SDK (VMSDK) Web site](https://go.microsoft.com/fwlink/?LinkID=186128).
+ 예제 코드 및이 기능에 대 한 자세한 내용은 Visual Studio [시각화 및 모델링 SDK (VMSDK) 웹 사이트](https://go.microsoft.com/fwlink/?LinkID=186128)를 참조 하십시오.
 
-## <a name="setting-up-the-solution"></a>Setting up the Solution
- Set up a project that contains the code of your extension, and a VSIX project that exports the project. Your solution can contain other projects that are incorporated into the same VSIX.
+## <a name="setting-up-the-solution"></a>솔루션 설정
+ 확장의 코드와 프로젝트를 내보내는 VSIX 프로젝트를 포함 하는 프로젝트를 설정 합니다. 솔루션은 동일한 VSIX에 통합 된 다른 프로젝트를 포함할 수 있습니다.
 
-#### <a name="to-create-a-dsl-designer-extension-solution"></a>To create a DSL Designer Extension Solution
+#### <a name="to-create-a-dsl-designer-extension-solution"></a>DSL 디자이너 확장 솔루션을 만들려면
 
-1. Create a new project using the Class Library project template. In the **New Project** dialog box, click **Visual C#** and then in the middle window click **Class Library**.
+1. 클래스 라이브러리 프로젝트 템플릿을 사용 하 여 새 프로젝트를 만듭니다. **새 프로젝트** 대화 상자에서 **시각적 C# 개체** 를 클릭 한 다음 가운데 창에서 **클래스 라이브러리**를 클릭 합니다.
 
-     This project will contain the code of your extensions.
+     이 프로젝트에는 확장의 코드가 포함 됩니다.
 
-2. Create a new project using the VSIX project template. In the **New Project** dialog box, expand **Visual C#** , click **Extensibility**, and then in the middle window select **VSIX Project**.
+2. VSIX 프로젝트 템플릿을 사용 하 여 새 프로젝트를 만듭니다. **새 프로젝트** 대화 상자에서 **시각적 개체 C#** 를 확장 하 고 **확장성**을 클릭 한 다음 가운데 창에서 **VSIX 프로젝트**를 선택 합니다.
 
-     Select **Add to Solution**.
+     **솔루션에 추가를**선택 합니다.
 
-     Source.extension.vsixmanifest opens in the VSIX manifest editor.
+     Source.extension.vsixmanifest VSIX 매니페스트 편집기에서 열립니다.
 
-3. Above the Content field, click **Add Content**.
+3. 콘텐츠 필드 위에서 **콘텐츠 추가**를 클릭 합니다.
 
-4. In the **Add Content** dialog box, set **Select a Content Type** to **MEF Component**, and set **Project** to your class library project.
+4. **콘텐츠 추가** 대화 상자에서 **콘텐츠 형식 선택** 을 **MEF 구성 요소**로 설정 하 고 **프로젝트** 를 클래스 라이브러리 프로젝트로 설정 합니다.
 
-5. Click **Select Editions** and make sure that **Visual Studio Enterprise** is checked.
+5. **버전 선택** 을 클릭 하 고 **Visual Studio Enterprise** 이 선택 되어 있는지 확인 합니다.
 
-6. Make sure that the VSIX project is the Startup project of the solution.
+6. VSIX 프로젝트가 솔루션의 시작 프로젝트 인지 확인 합니다.
 
-7. In the class library project, add references to the following assemblies:
+7. 클래스 라이브러리 프로젝트에서 다음 어셈블리에 대 한 참조를 추가 합니다.
 
      Microsoft.VisualStudio.CoreUtility
 
@@ -67,26 +67,26 @@ You can make extensions to the designer that you use to edit DSL Definitions. Ty
      System.Windows.Forms
 
 ## <a name="testing-and-deployment"></a>테스트 및 배포
- To test any of the extensions in this topic, build and run the solution. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 의 실험적 인스턴스가 열립니다. In this instance, open a DSL solution. Edit the DslDefinition diagram. The extension behavior can be seen.
+ 이 항목의 확장을 테스트 하려면 솔루션을 빌드하고 실행 합니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 의 실험적 인스턴스가 열립니다. 이 인스턴스에서 DSL 솔루션을 엽니다. DslDefinition 다이어그램을 편집 합니다. 확장 동작을 볼 수 있습니다.
 
- To deploy the extensions to the main [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], and to other computers, follow these steps:
+ 기본 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]및 다른 컴퓨터에 확장을 배포 하려면 다음 단계를 수행 합니다.
 
-1. Find the VSIX installation file, in your VSIX project in bin\\*\\\*.vsix
+1. Vsix 프로젝트의 vsix 프로젝트에서 vsix 설치 파일을 찾아 \*\\*\\합니다.
 
-2. Copy this file to the target computer, and then in Windows Explorer (or File Explorer), double-click it.
+2. 이 파일을 대상 컴퓨터에 복사한 다음 Windows 탐색기 (또는 파일 탐색기)에서 해당 파일을 두 번 클릭 합니다.
 
-    The [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension Manager opens to confirm that the extension has been installed.
+    확장 프로그램이 설치 되어 있는지 확인 하기 위해 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장 관리자가 열립니다.
 
-   To uninstall the extension, follow these steps:
+   확장을 제거 하려면 다음 단계를 수행 합니다.
 
-3. in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], on the **Tools** menu, click **Extension Manager**.
+3. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 **도구** 메뉴에서 **확장 관리자**를 클릭 합니다.
 
-4. Select the extension and delete it.
+4. 확장을 선택 하 고 삭제 합니다.
 
-## <a name="adding-a-shortcut-menu-command"></a>Adding a Shortcut Menu Command
- To make a shortcut menu command appear on the DSL Designer surface or in the DSL Explorer window, write a class resembling the following.
+## <a name="adding-a-shortcut-menu-command"></a>바로 가기 메뉴 명령 추가
+ 바로 가기 메뉴 명령이 DSL 디자이너 화면 또는 DSL 탐색기 창에 표시 되도록 하려면 다음과 유사한 클래스를 작성 합니다.
 
- The class must implement `ICommandExtension` and must have the attribute `DslDefinitionModelCommandExtension`.
+ 클래스는 `ICommandExtension`를 구현 해야 하며 `DslDefinitionModelCommandExtension`특성이 있어야 합니다.
 
 ```
 using System.Collections.Generic;
@@ -148,8 +148,8 @@ namespace Fabrikam.SimpleDslDesignerExtension
 }
 ```
 
-## <a name="handling-mouse-gestures"></a>Handling Mouse Gestures
- The code is similar to the code of the menu command.
+## <a name="handling-mouse-gestures"></a>마우스 제스처 처리
+ 코드는 메뉴 명령의 코드와 비슷합니다.
 
 ```
 [DslDefinitionModelGestureExtension]
@@ -209,8 +209,8 @@ namespace Fabrikam.SimpleDslDesignerExtension
  }
 ```
 
-## <a name="responding-to-value-changes"></a>Responding to Value Changes
- This handler needs a domain model to work correctly. We provide a simple domain model.
+## <a name="responding-to-value-changes"></a>값 변경에 대 한 응답
+ 이 처리기는 도메인 모델이 제대로 작동 해야 합니다. 간단한 도메인 모델을 제공 합니다.
 
 ```
 using System.Diagnostics;
@@ -250,7 +250,7 @@ namespace Fabrikam.SimpleDslDesignerExtension
 } }  }  );
 ```
 
- The following code implements a simple model. Create a new GUID to replace the placeholder.
+ 다음 코드에서는 간단한 모델을 구현 합니다. 자리 표시자를 대체할 새 GUID를 만듭니다.
 
 ```
 using System;

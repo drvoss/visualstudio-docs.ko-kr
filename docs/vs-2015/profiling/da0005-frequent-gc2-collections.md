@@ -25,10 +25,10 @@ ms.locfileid: "74301247"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 RuleId|DA0005|  
-|Category|.NET Framework Usage|  
-|Profiling method|.NET Memory|  
-|Message|Many of your objects are being collected in generation 2 garbage collection.|  
-|Message type|Warning|  
+| 범주 |. NET Framework 사용 |  
+| 프로 파일링 방법 |. NET Memory |  
+| 메시지 | 많은 개체가 2 세대 가비지 수집에서 수집 됩니다. |  
+| 메시지 유형 | 경고 |  
   
 ## <a name="cause"></a>원인  
  많은 .NET 메모리 개체가 2세대 가비지 수집에서 회수됩니다.  

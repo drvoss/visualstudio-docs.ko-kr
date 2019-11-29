@@ -1,5 +1,5 @@
 ---
-title: Display a UML model on diagrams | Microsoft Docs
+title: 다이어그램에 UML 모델 표시 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -24,37 +24,37 @@ ms.locfileid: "74296006"
 Visual Studio 확장에 대한 프로그램 코드에서 모델 요소가 다이어그램에 표시되는 방식을 제어할 수 있습니다. UML 모델을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
 
 항목 내용:
-- [To display an element on a diagram](#Display)
+- [다이어그램에 요소를 표시 하려면](#Display)
 
-- [Accessing the shapes that represent an element](#GetShapes)
+- [요소를 나타내는 도형에 액세스](#GetShapes)
 
-- [Moving and resizing shapes](#Moving)
+- [셰이프 이동 및 크기 조정](#Moving)
 
-- [To remove a shape from a diagram](#Removing)
+- [다이어그램에서 모양을 제거 하려면](#Removing)
 
-- [Opening and creating diagrams](#Opening)
+- [다이어그램 열기 및 만들기](#Opening)
 
-- [Example: Command for Aligning Shapes](#AlignCommand)
+- [예: 셰이프를 정렬 하는 명령](#AlignCommand)
 
-## <a name="Display"></a> To display an element on a diagram
+## <a name="Display"></a>다이어그램에 요소를 표시 하려면
  사용 사례 또는 작업과 같은 요소를 만들면 사용자가 UML 모델 탐색기에서 볼 수 있지만 다이어그램에 항상 자동으로 표시되지는 않습니다. 표시하는 코드를 작성해야 하는 경우도 있습니다. 다음 표에서는 대체 방법을 요약해서 보여 줍니다.
 
 |요소의 형식|예|표시를 위해 코드에서 수행해야 하는 작업|
 |---------------------|-----------------|-------------------------------------|
-|분류자|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|지정한 다이어그램에서 연결된 모양을 만듭니다. 각 분류자에 대한 모양을 원하는 개수만큼 만들 수 있습니다.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> 다이어그램의 최상위 모양에 대해 `parentShape`를 `null`로 설정합니다.<br /><br /> 다른 모양 안에 모양을 표시하려면<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **Note:**  If you perform Display inside an **ILinkedUndo** transaction, the method sometimes returns no `IShape`. 그러나 모양은 올바르게 생성되며 `IElement.Shapes().`를 사용하여 액세스할 수 있습니다.|
+|분류자|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|지정한 다이어그램에서 연결된 모양을 만듭니다. 각 분류자에 대한 모양을 원하는 개수만큼 만들 수 있습니다.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> 다이어그램의 최상위 모양에 대해 `parentShape`를 `null`로 설정합니다.<br /><br /> 다른 모양 안에 모양을 표시하려면<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **참고:** **ILinkedUndo** 트랜잭션 내부에서 표시를 수행 하는 경우 메서드는 때때로 `IShape`를 반환 하지 않습니다. 그러나 모양은 올바르게 생성되며 `IElement.Shapes().`를 사용하여 액세스할 수 있습니다.|
 |분류자의 자식|특성, 작업,<br /><br /> 파트, 포트|자동 - 코드가 필요하지 않습니다.<br /><br /> 부모의 일부로 표시됩니다.|
-|동작|상호 작용(시퀀스),<br /><br /> 활동|해당 다이어그램에 동작을 바인딩합니다.<br /><br /> 한 번에 최대 하나의 다이어그램에 각 동작을 바인딩할 수 있습니다.<br /><br /> 예를 들어 다음과 같은 가치를 제공해야 합니다.<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|
+|동작|상호 작용(시퀀스),<br /><br /> 작업|해당 다이어그램에 동작을 바인딩합니다.<br /><br /> 한 번에 최대 하나의 다이어그램에 각 동작을 바인딩할 수 있습니다.<br /><br /> 예를 들면 다음과 같습니다.<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|
 |동작의 자식|수명선, 메시지, 작업, 개체 노드|자동 - 코드가 필요하지 않습니다.<br /><br /> 부모가 다이어그램에 바인딩된 경우 표시됩니다.|
-|Relationship|연결, 일반화, 흐름, 종속성|자동 - 코드가 필요하지 않습니다.<br /><br /> 양쪽 끝이 표시되는 모든 다이어그램에 표시됩니다.|
+|관계|연결, 일반화, 흐름, 종속성|자동 - 코드가 필요하지 않습니다.<br /><br /> 양쪽 끝이 표시되는 모든 다이어그램에 표시됩니다.|
 
-## <a name="GetShapes"></a> Accessing the shapes that represent an element
+## <a name="GetShapes"></a>요소를 나타내는 도형에 액세스
  요소를 나타내는 모양은 다음 형식에 속합니다.
 
  `IShape`
 
  `IShape<` *ElementType* `>`
 
- where *ElementType* is a type of the model element such as `IClass` or `IUseCase`.
+ 여기서 *ElementType* 은 `IClass` 또는 `IUseCase`같은 모델 요소의 형식입니다.
 
 |||
 |-|-|
@@ -68,16 +68,16 @@ Visual Studio 확장에 대한 프로그램 코드에서 모델 요소가 다이
 |`IShape iShape = ...;`<br /><br /> `IShape<IClass> classShape = iShape.ToIShape<IClass>();`<br /><br /> `IClass aClass = classShape.Element;`|제네릭 `IShape`를 강력한 형식의 `IShape<IElement>`로 캐스팅합니다.|
 |`IShape<IClassifier> classifierShape;`<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `classifierShape.ToIShape<IUseCase>();`|매개 변수가 있는 모양 형식 간에 모양을 캐스팅합니다.|
 
-## <a name="Moving"></a> Moving and resizing shapes
+## <a name="Moving"></a>셰이프 이동 및 크기 조정
 
 |||
 |-|-|
 |`anIShape.Move(x, y, [width], [height])`|모양을 이동하거나 크기를 조정합니다.|
 |`IDiagram.EnsureVisible( IEnumerable<IShape> shapes, bool zoomToFit = false)`|창을 활성화하고 지정된 모양이 모두 표시되도록 다이어그램을 스크롤합니다. 모양이 모두 다이어그램에 있어야 합니다. `zoomToFit`이 true이면 필요한 경우 모든 모양이 표시되도록 다이어그램의 크기가 조정됩니다.|
 
- For an example, see [Defining an Alignment Command](#AlignCommand).
+ 예제는 [맞춤 명령 정의](#AlignCommand)를 참조 하세요.
 
-## <a name="Removing"></a> To remove a shape from a diagram
+## <a name="Removing"></a>다이어그램에서 모양을 제거 하려면
  요소를 삭제하지 않고 일부 형식의 요소 모양을 삭제할 수 있습니다.
 
 |모델 요소|모양을 제거하려면|
@@ -86,7 +86,7 @@ Visual Studio 확장에 대한 프로그램 코드에서 모델 요소가 다이
 |동작: 상호 작용 또는 동작|프로젝트에서 다이어그램을 삭제할 수 있습니다. `IDiagram.FileName`을 사용하여 경로를 가져옵니다.<br /><br /> 이 경우 모델에서 동작이 삭제되지 않습니다.|
 |다른 모든 모양|다른 모양은 다이어그램에서 명시적으로 삭제할 수 없습니다. 모델에서 요소를 삭제하거나 다이어그램에서 부모 모양을 제거하면 모양이 자동으로 사라집니다.|
 
-## <a name="Opening"></a> Opening and creating diagrams
+## <a name="Opening"></a>다이어그램 열기 및 만들기
 
 ### <a name="to-access-the-users-current-diagram-from-a-command-or-gesture-extension"></a>명령 또는 제스처 확장에서 사용자의 현재 다이어그램에 액세스하려면
  클래스에서 가져온 이 속성을 선언합니다.
@@ -104,7 +104,7 @@ Visual Studio 확장에 대한 프로그램 코드에서 모델 요소가 다이
 > [!NOTE]
 > `IDiagram` 인스턴스(및 `IClassDiagram`과 같은 하위 형식)는 처리 중인 명령 내에서만 유효합니다. 제어가 사용자에게 반환하는 동안 지속되는 변수에 `IDiagram` 개체를 유지하지 않는 것이 좋습니다.
 
- For more information, see [Define a menu command on a modeling diagram](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
+ 자세한 내용은 [모델링 다이어그램에서 메뉴 명령 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md)를 참조 하세요.
 
 ### <a name="to-obtain-a-list-of-open-diagrams"></a>열려 있는 다이어그램 목록을 가져오려면
  프로젝트에서 현재 열려 있는 다이어그램의 목록입니다.
@@ -162,10 +162,10 @@ foreach (ProjectItem item in project.ProjectItems)
 IModelStore modelStore = (project as IModelingProject).Store;
 ```
 
-## <a name="AlignCommand"></a> Example: Command for Aligning Shapes
+## <a name="AlignCommand"></a>예: 셰이프를 정렬 하는 명령
  다음 코드에서를 깔끔하게 모양을 맞추는 메뉴 명령을 구현합니다. 먼저 사용자가 두 개 이상의 모양을 세로 또는 가로로 대충 맞춰서 배치해야 합니다. 그런 후에 맞춤 명령을 사용하여 가운데 맞춤을 수행할 수 있습니다.
 
- 명령을 사용할 수 있게 하려면 메뉴 명령 프로젝트에 다음 코드를 추가하고 결과로 생성된 확장을 사용자에게 배포합니다. For more information, see [Define a menu command on a modeling diagram](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
+ 명령을 사용할 수 있게 하려면 메뉴 명령 프로젝트에 다음 코드를 추가하고 결과로 생성된 확장을 사용자에게 배포합니다. 자세한 내용은 [모델링 다이어그램에서 메뉴 명령 정의](../modeling/define-a-menu-command-on-a-modeling-diagram.md)를 참조 하세요.
 
 ```csharp
 using System;
@@ -378,5 +378,5 @@ namespace AlignCommand
 
 ```
 
-## <a name="see-also"></a>관련 항목:
- [Extend UML models and diagrams](../modeling/extend-uml-models-and-diagrams.md) [Navigate the UML model](../modeling/navigate-the-uml-model.md) [Sample: Align Shapes on a Diagram menu command](https://go.microsoft.com/fwlink/?LinkId=213809) [Sample: Creating Elements, Shapes and Stereotypes](https://go.microsoft.com/fwlink/?LinkId=213811)
+## <a name="see-also"></a>참고 항목
+ [Uml 모델 및 다이어그램 확장](../modeling/extend-uml-models-and-diagrams.md) [uml 모델](../modeling/navigate-the-uml-model.md) [샘플: 다이어그램에서 셰이프 맞춤 메뉴 명령](https://go.microsoft.com/fwlink/?LinkId=213809) [샘플: 요소, 모양 및 스테레오 타입 만들기](https://go.microsoft.com/fwlink/?LinkId=213811)

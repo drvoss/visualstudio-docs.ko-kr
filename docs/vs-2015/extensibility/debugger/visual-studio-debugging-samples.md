@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Debugging Samples | Microsoft Docs
+title: Visual Studio 디버깅 샘플 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -22,8 +22,8 @@ ms.locfileid: "74296002"
 # <a name="visual-studio-debugging-samples"></a>Visual Studio 디버깅 샘플
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Two samples show how to extend the Visual Studio debugger using [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
+두 샘플은 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]를 사용 하 여 Visual Studio 디버거를 확장 하는 방법을 보여 줍니다.  
   
-- The Debugger Expression Evaluator Sample, for managed languages, is included in the [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]. In the [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] window, click the **Samples** tab, click **All** or **C#** in the list of languages, and then click **Debugger**.  
+- 관리 되는 언어에 대 한 디버거 식 계산기 예제는 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]에 포함 되어 있습니다. [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] 창에서 **샘플** 탭을 클릭 하 고 **전체** 또는 **C#** 언어 목록에서 **디버거**를 클릭 합니다.  
   
-- The Visual Studio Debug Engine Sample, for native languages, is available on MSDN Code Gallery. For more information, see this page on the Microsoft Web site: [Visual Studio Debug Engine Sample](https://go.microsoft.com/fwlink/?LinkId=150236).
+- 네이티브 언어용 Visual Studio 디버그 엔진 샘플은 MSDN 코드 갤러리에서 사용할 수 있습니다. 자세한 내용은 Microsoft 웹 사이트의 [Visual Studio 디버그 엔진 샘플](https://go.microsoft.com/fwlink/?LinkId=150236)페이지를 참조 하십시오.

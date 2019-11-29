@@ -31,7 +31,7 @@ Visual Studio **네트워크** 진단 도구는 [Windows.Web.Http API](https://m
   
 1. Visual Studio에서 프로젝트를 엽니다.  
   
-2. On the  menu, click **Debug / Performance Profiler...** . Choose **Network**, and then choose **Start**.  
+2. 메뉴에서 **디버그/성능 프로파일러**...를 클릭 합니다. **네트워크**를 선택한 다음 **시작**을 선택 합니다.  
   
 3. 네트워크 도구에서 앱의 HTTP 트래픽 수집을 시작합니다.  
   
@@ -73,7 +73,7 @@ Visual Studio **네트워크** 진단 도구는 [Windows.Web.Http API](https://m
   
 3. 예쁜 응답 인쇄 단추(본문 탭 내부)를 사용하면 콘텐츠 가독성을 높여 JSON, XML, HTML, CSS, JavaScript 및 TypeScript 응답 페이로드를 통해 구문 분석하는 데 도움이 될 수 있습니다.  
   
-## <a name="see-also"></a>관련 항목:  
- [Run profiling tools without debugging](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
+## <a name="see-also"></a>참고 항목  
+ [디버깅 하지 않고 프로 파일링 도구 실행](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
  [Visual Studio 블로그: Visual Studio의 네트워크 검사기 소개](https://go.microsoft.com/fwlink/?LinkId=535022)   
  [Channel 9 비디오: VS 진단 도구 – 새 네트워크 프로파일러](https://channel9.msdn.com/Series/ConnectOn-Demand/206)

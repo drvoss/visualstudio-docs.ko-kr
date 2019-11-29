@@ -32,6 +32,6 @@ ms.locfileid: "72573741"
   
 - 자세한 내용은 개체 설명서를 참조하세요.  
   
-## <a name="see-also"></a>참조  
- [개체 개체](../../javascript/reference/object-object-javascript.md)    
+## <a name="see-also"></a>참고 항목  
+ [개체 개체](../../javascript/reference/object-object-javascript.md)   
  [JavaScript 개체](../../javascript/reference/javascript-objects.md)

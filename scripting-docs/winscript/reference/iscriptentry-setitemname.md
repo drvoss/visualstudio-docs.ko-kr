@@ -25,7 +25,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72575364"
 ---
 # <a name="iscriptentrysetitemname"></a>IScriptEntry::SetItemName
-@No__t_0 개체를 식별 하는 항목 이름을 설정 합니다.  
+`IScriptEntry` 개체를 식별 하는 항목 이름을 설정 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -48,10 +48,10 @@ HRESULT SetItemName(
 |`E_FAIL`|메서드가 실패 했습니다.|  
   
 ## <a name="remarks"></a>주의  
- @No__t_0 개체의 경우이 메서드는 `S_OK` 반환 합니다.  
+ `IScriptEntry` 개체의 경우이 메서드는 `S_OK`반환 합니다.  
   
- @No__t_1에서 파생 되는 `IScriptScriptlet` 개체의 경우이 메서드는 `E_FAIL`를 반환 합니다. @No__t_0 개체의 경우 항목 이름은 [IActiveScriptAuthor:: AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md) 에 의해 설정 되며 변경할 수 없습니다.  
+ `IScriptEntry`에서 파생 되는 `IScriptScriptlet` 개체의 경우이 메서드는 `E_FAIL`를 반환 합니다. `IScriptScriptlet` 개체의 경우 항목 이름은 [IActiveScriptAuthor:: AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md) 에 의해 설정 되며 변경할 수 없습니다.  
   
-## <a name="see-also"></a>참조  
- [Iscriptentry 인터페이스](../../winscript/reference/iscriptentry-interface.md)    
+## <a name="see-also"></a>참고 항목  
+ [Iscriptentry 인터페이스](../../winscript/reference/iscriptentry-interface.md)   
  [IScriptEntry::GetItemName](../../winscript/reference/iscriptentry-getitemname.md)

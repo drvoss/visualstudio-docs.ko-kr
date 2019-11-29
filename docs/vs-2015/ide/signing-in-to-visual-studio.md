@@ -1,5 +1,5 @@
 ---
-title: Sign in to Visual Studio 2015 | Microsoft Docs
+title: Visual Studio 2015에 로그인 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -46,7 +46,7 @@ IDE에 로그인하여 개인 설정 계정을 설정하면 Visual Studio의 개
 
  설정을 제공한 후 Visual Studio가 시작되고 로그인되면 시작할 수 있습니다. 로그인되어 있는지 여부를 확인하려면 Visual Studio 환경의 오른쪽 위 모서리에서 이름을 찾습니다.
 
- ![Currentlly logged in user](../ide/media/vs2015-username.png "VS2015_UserName")
+ ![사용자의 currentlly 로그인](../ide/media/vs2015-username.png "VS2015_UserName")
 
  로그아웃하지 않으면 시작할 때마다 자동으로 Visual Studio에 로그인되고 동기화된 설정의 모든 변경 내용이 자동으로 적용됩니다. 로그아웃하려면 Visual Studio 환경에서 프로필 이름 옆에 있는 아래쪽 화살표를 선택하고 **계정 설정** 명령을 선택한 후 **로그아웃** 링크를 선택합니다. 다시 로그인하려면 Visual Studio 환경의 오른쪽 위 모서리에서 **로그인** 명령을 선택합니다.
 

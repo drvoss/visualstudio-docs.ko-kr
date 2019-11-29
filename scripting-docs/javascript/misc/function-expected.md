@@ -22,7 +22,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72576589"
 ---
 # <a name="function-expected"></a>함수가 필요합니다.
-@No__t_1 개체가 아닌 개체에서 **함수 프로토타입** 메서드 중 하나를 호출 하려고 했거나 함수 호출 컨텍스트에서 개체를 사용 했습니다. 예를 들어 다음 코드는 함수가 함수가 **아니기 때문에** 이 오류를 생성 합니다.  
+`Function` 개체가 아닌 개체에서 **함수 프로토타입** 메서드 중 하나를 호출 하려고 했거나 함수 호출 컨텍스트에서 개체를 사용 했습니다. 예를 들어 다음 코드는 함수가 함수가 **아니기 때문에** 이 오류를 생성 합니다.  
   
 ```JavaScript  
 var example = new Object();  // Create a new object called "example".  
@@ -31,10 +31,10 @@ var x = example();           // Try and call example as if it were a function.
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
-- @No__t_1 개체 에서만 **함수 프로토타입** 메서드를 호출 합니다.  
+- `Function` 개체 에서만 **함수 프로토타입** 메서드를 호출 합니다.  
   
 - 함수 호출 연산자 `()` 사용 하 여 함수를 호출 해야 합니다.  
   
-## <a name="see-also"></a>참조  
- [함수 개체](../../javascript/reference/function-object-javascript.md)    
+## <a name="see-also"></a>참고 항목  
+ [함수 개체](../../javascript/reference/function-object-javascript.md)   
  [prototype 속성(Object)](../../javascript/reference/prototype-property-object-javascript.md)

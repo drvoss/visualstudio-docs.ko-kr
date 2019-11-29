@@ -44,8 +44,8 @@ HRESULT OnFunctionExit(
  이 메서드의 반환 값은 스크립팅 엔진에서 무시 됩니다.  
   
 ## <a name="remarks"></a>주의  
- DOM 호출의 경우 스크립팅 엔진은 `IActiveScriptProfilerCallback::OnFunctionExit` 대신 [IActiveScriptProfilerCallback2:: OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md) 를 호출 합니다. 이는 DOM에서 많은 수의 고유한 메서드와 속성 때문입니다.  
+ DOM 호출의 경우 스크립팅 엔진은 `IActiveScriptProfilerCallback::OnFunctionExit`대신 [IActiveScriptProfilerCallback2:: OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md) 를 호출 합니다. 이는 DOM에서 많은 수의 고유한 메서드와 속성 때문입니다.  
   
-## <a name="see-also"></a>참조  
- [IActiveScriptProfilerCallback:: OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)    
+## <a name="see-also"></a>참고 항목  
+ [IActiveScriptProfilerCallback::OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)   
  [IActiveScriptProfilerCallback 인터페이스](../../winscript/reference/iactivescriptprofilercallback-interface.md)

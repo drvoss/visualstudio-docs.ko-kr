@@ -1,5 +1,5 @@
 ---
-title: 'CA1305: IFormatProvider 지정 | Microsoft Docs'
+title: 'CA1305: IFormatProvider를 지정 합니다. | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -22,14 +22,14 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/19/2019
 ms.locfileid: "72661436"
 ---
-# <a name="ca1305-specify-iformatprovider"></a>CA1305: IFormatProvider를 지정하세요.
+# <a name="ca1305-specify-iformatprovider"></a>CA1305: IFormatProvider를 지정하십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|SpecifyIFormatProvider|
 |CheckId|CA1305|
-|범주|Microsoft 세계화|
+|범주|Microsoft.Globalization|
 |변경 수준|최신이 아님|
 
 ## <a name="cause"></a>원인
@@ -42,7 +42,7 @@ ms.locfileid: "72661436"
 - <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
 
 ## <a name="rule-description"></a>규칙 설명
- @No__t_0 또는 <xref:System.IFormatProvider> 개체를 제공 하지 않으면 오버 로드 된 멤버에서 제공 하는 기본값이 모든 로캘에서 원하는 효과를 갖지 않을 수 있습니다. 또한 멤버 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 기본 문화권을 선택 하 고 코드에 맞지 않을 수 있는 가정을 기반으로 서식을 지정 합니다. 시나리오에 대해 코드가 예상 대로 작동 하는지 확인 하려면 다음 지침에 따라 문화권 관련 정보를 제공 해야 합니다.
+ <xref:System.Globalization.CultureInfo?displayProperty=fullName> 또는 <xref:System.IFormatProvider> 개체를 제공 하지 않으면 오버 로드 된 멤버에서 제공 하는 기본값이 모든 로캘에서 원하는 효과를 갖지 않을 수 있습니다. 또한 멤버 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 기본 문화권을 선택 하 고 코드에 맞지 않을 수 있는 가정을 기반으로 서식을 지정 합니다. 시나리오에 대해 코드가 예상 대로 작동 하는지 확인 하려면 다음 지침에 따라 문화권 관련 정보를 제공 해야 합니다.
 
 - 값이 사용자에 게 표시 되 면 현재 문화권을 사용 합니다. <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>을 참조하세요.
 
@@ -50,7 +50,7 @@ ms.locfileid: "72661436"
 
 - 값의 대상을 모르는 경우 데이터 소비자 또는 공급자가 문화권을 지정 하도록 합니다.
 
-  @No__t_0은 <xref:System.Resources.ResourceManager?displayProperty=fullName> 클래스의 인스턴스를 사용 하 여 지역화 된 리소스를 검색 하는 데만 사용 됩니다.
+  <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName>은 <xref:System.Resources.ResourceManager?displayProperty=fullName> 클래스의 인스턴스를 사용 하 여 지역화 된 리소스를 검색 하는 데만 사용 됩니다.
 
   오버 로드 된 멤버의 기본 동작이 사용자의 요구 사항에 적합 한 경우에도 코드를 자체 문서화 하 고 더 쉽게 유지 관리할 수 있도록 문화권 관련 오버 로드를 명시적으로 호출 하는 것이 좋습니다.
 
@@ -72,10 +72,10 @@ ms.locfileid: "72661436"
 
  이 예제의 결과는 다음과 같습니다.
 
- **오후 6/4/1900 12:15:12** 
+ **오후 6/4/1900 12:15:12**
 **06/04/1900 12:15:12**
 ## <a name="related-rules"></a>관련 규칙
- [CA1304: CultureInfo ](../code-quality/ca1304-specify-cultureinfo.md) 지정
+ [CA1304: CultureInfo를 지정하십시오.](../code-quality/ca1304-specify-cultureinfo.md)
 
-## <a name="see-also"></a>관련 항목:
- [NIB: CultureInfo 클래스를 사용 하 여 ](https://msdn.microsoft.com/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)
+## <a name="see-also"></a>참고 항목
+ [NIB: CultureInfo 클래스 사용](https://msdn.microsoft.com/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)

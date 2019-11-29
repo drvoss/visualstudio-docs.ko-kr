@@ -1,5 +1,5 @@
 ---
-title: 'UML Activity Diagrams: Guidelines | Microsoft Docs'
+title: 'UML 동작 다이어그램: 지침 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -25,25 +25,25 @@ ms.locfileid: "74298994"
 # <a name="uml-activity-diagrams-guidelines"></a>UML 동작 다이어그램: 지침
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio에서 동작 다이어그램을 그려서 일련의 작업을 통한 작업 흐름으로 비즈니스 프로세스 또는 소프트웨어 알고리즘을 설명합니다. 사용자, 소프트웨어 구성 요소 또는 디바이스가 이러한 작업을 수행할 수 있습니다. For a video demonstration, see: [Capture Business Workflows by using Activity Diagrams](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-4-capture-business-workflows).
+Visual Studio에서 동작 다이어그램을 그려서 일련의 작업을 통한 작업 흐름으로 비즈니스 프로세스 또는 소프트웨어 알고리즘을 설명합니다. 사용자, 소프트웨어 구성 요소 또는 디바이스가 이러한 작업을 수행할 수 있습니다. 비디오 데모를 보려면 [동작 다이어그램을 사용 하 여 비즈니스 워크플로 캡처](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-4-capture-business-workflows)를 참조 하세요.
 
  이 기능을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
 
- To create a UML activity diagram, on the **Architecture** menu, click **New UML or Layer Diagram**.
+ UML 동작 다이어그램을 만들려면 **아키텍처** 메뉴에서 **새 UML 또는 레이어 다이어그램**을 클릭 합니다.
 
  다음과 같은 다양한 용도로 동작 다이어그램을 사용할 수 있습니다.
 
-- 사용자와 시스템 간의 비즈니스 프로세스 또는 워크플로를 설명합니다. For more information, see [Model user requirements](../modeling/model-user-requirements.md).
+- 사용자와 시스템 간의 비즈니스 프로세스 또는 워크플로를 설명합니다. 자세한 내용은 [모델 사용자 요구 사항](../modeling/model-user-requirements.md)을 참조 하세요.
 
-- 사용 사례에서 수행된 단계를 설명합니다. For more information, see [UML Use Case Diagrams: Guidelines](../modeling/uml-use-case-diagrams-guidelines.md).
+- 사용 사례에서 수행된 단계를 설명합니다. 자세한 내용은 [UML 사용 사례 다이어그램: 지침](../modeling/uml-use-case-diagrams-guidelines.md)을 참조 하세요.
 
-- 소프트웨어의 메서드, 함수 또는 작업을 설명합니다. For more information, see [Model your app's architecture](../modeling/model-your-app-s-architecture.md).
+- 소프트웨어의 메서드, 함수 또는 작업을 설명합니다. 자세한 내용은 [응용 프로그램의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)을 참조 하세요.
 
   동작 다이어그램 그리기를 통해 프로세스를 향상할 수 있습니다. 기존 프로세스의 다이어그램이 매우 복잡한 것으로 확인되면 프로세스를 단순화하는 방법을 고려할 수 있습니다.
 
-  For reference information about the elements on activity diagrams, see [UML Activity Diagrams: Reference](../modeling/uml-activity-diagrams-reference.md).
+  동작 다이어그램의 요소에 대 한 참조 정보는 [UML 동작 다이어그램: 참조](../modeling/uml-activity-diagrams-reference.md)를 참조 하세요.
 
-## <a name="Relationships"></a> Relationship to Other Diagrams
+## <a name="Relationships"></a>다른 다이어그램과의 관계
  동작 다이어그램을 그려서 비즈니스 프로세스 또는 사용자가 시스템을 사용하는 방법을 설명할 경우 사용 사례 다이어그램을 그려서 같은 정보를 다른 뷰로 표시할 수 있습니다. 사용 사례 다이어그램에서는 동작을 사용 사례로 그립니다. 사용 사례에 해당 동작과 같은 이름을 지정합니다. 사용 사례 뷰의 장점은 다음을 수행할 수 있다는 점입니다.
 
 - 포함 관계를 사용하여 더 작은 작업/사용 사례로 더 큰 작업/사용 사례를 구성하는 방법을 한 다이어그램에 표시합니다.
@@ -54,20 +54,20 @@ Visual Studio에서 동작 다이어그램을 그려서 일련의 작업을 통�
 
   동작 다이어그램을 그려서 소프트웨어 작업의 세부 디자인을 설명할 수도 있습니다.
 
-  동작 다이어그램에서 작업 간에 전달된 데이터 흐름을 표시할 수 있습니다. See the section on [Describing Data Flow](#DataFlows). 그러나 동작 다이어그램에서는 데이터 구조를 설명하지 않습니다. 데이터 구조를 설명하려면 UML 클래스 다이어그램을 그립니다. For information see [UML Class Diagrams: Guidelines](../modeling/uml-class-diagrams-guidelines.md).
+  동작 다이어그램에서 작업 간에 전달된 데이터 흐름을 표시할 수 있습니다. [데이터 흐름 설명](#DataFlows)에 대 한 섹션을 참조 하세요. 그러나 동작 다이어그램에서는 데이터 구조를 설명하지 않습니다. 데이터 구조를 설명하려면 UML 클래스 다이어그램을 그립니다. 자세한 내용은 [UML 클래스 다이어그램: 지침](../modeling/uml-class-diagrams-guidelines.md)을 참조 하세요.
 
-## <a name="BasicSteps"></a> Basic Steps for Drawing Activity Diagrams
- Detailed steps for creating any of the modeling diagrams are described in [Edit UML models and diagrams](../modeling/edit-uml-models-and-diagrams.md).
+## <a name="BasicSteps"></a>동작 다이어그램을 그리는 기본 단계
+ 모델링 다이어그램을 만드는 자세한 단계는 [UML 모델 및 다이어그램 편집](../modeling/edit-uml-models-and-diagrams.md)에 설명 되어 있습니다.
 
 #### <a name="to-draw-an-activity-diagram"></a>동작 다이어그램을 그리려면
 
-1. On the **Architecture** menu, click **New UML or Layer Diagram**.
+1. **아키텍처** 메뉴에서 **새 UML 또는 레이어 다이어그램**을 클릭 합니다.
 
-2. Under **Templates**, click **UML Activity Diagram**.
+2. **템플릿**에서 **UML 동작 다이어그램**을 클릭 합니다.
 
 3. 다이어그램 이름을 지정합니다.
 
-4. In **Add to Modeling Project**, select an existing modeling project in your solution, or **Create a New Modeling Project**.
+4. **모델링 프로젝트에 추가**에서 솔루션의 기존 모델링 프로젝트를 선택 하거나 **새 모델링 프로젝트를 만듭니다**.
 
 #### <a name="to-draw-elements-on-an-activity-diagram"></a>동작 다이어그램의 요소를 그리려면
 
@@ -80,7 +80,7 @@ Visual Studio에서 동작 다이어그램을 그려서 일련의 작업을 통�
 
 2. 요소를 연결하려면 다음 단계를 수행합니다.
 
-    1. In the **Activity Diagram** toolbox, click **Connector**.
+    1. **동작 다이어그램** 도구 상자에서 **커넥터**를 클릭 합니다.
 
     2. 다이어그램에서 소스 요소를 클릭합니다.
 
@@ -91,49 +91,49 @@ Visual Studio에서 동작 다이어그램을 그려서 일련의 작업을 통�
 
 #### <a name="to-move-an-activity-to-another-package"></a>동작을 다른 패키지로 이동하려면
 
-- In **UML Model Explorer**, drag the activity into a package.
+- **UML 모델 탐색기**에서 활동을 패키지로 끌어 옵니다.
 
      \- 또는 -
 
-- In **UML Model Explorer**, right-click the activity and click **Cut**. Then right-click the package and click **Paste**.
+- **UML 모델 탐색기**에서 작업을 마우스 오른쪽 단추로 클릭 하 고 **잘라내기**를 클릭 합니다. 그런 다음 패키지를 마우스 오른쪽 단추로 클릭 하 고 **붙여넣기**를 클릭 합니다.
 
     > [!NOTE]
     > 다이어그램에 첫 번째 요소를 추가할 때만 동작이 UML 모델 탐색기에 표시됩니다.
 
-## <a name="SimpleControlFlow"></a> Describing Control Flow
+## <a name="SimpleControlFlow"></a>제어 흐름 설명
  동작 다이어그램에서는 비즈니스 프로세스나 소프트웨어 알고리즘을 일련의 작업으로 설명합니다. 커넥터 화살표는 한 작업에서 다음 작업으로 제어가 순차적으로 전달되는 방식을 보여 줍니다. 일반적으로 작업은 이전 작업이 완료된 후에만 시작될 수 있습니다.
 
  다음 그림은 작업, 커넥터, 분기 및 루프가 있는 일련의 작업을 표시하는 방법의 한 가지 예입니다. 각 요소는 다음 섹션에서 더 자세히 설명합니다.
 
- ![A simple activity diagram](../modeling/media/uml-actguidectrl.png "UML_ActGuideCtrl")
+ ![간단한 동작 다이어그램](../modeling/media/uml-actguidectrl.png "UML_ActGuideCtrl")
 
- Activity diagrams use **Actions** and **Connectors** to describe your system or application as a series of actions with the control flowing sequentially from one action to the next.
+ 동작 다이어그램은 **동작** 및 **커넥터** 를 사용 하 여 컨트롤이 한 작업에서 다음 작업으로 순차적으로 흐르는 일련의 작업으로 시스템 또는 응용 프로그램을 설명 합니다.
 
-- Create an **Action** (1) for each major task that is performed by a user, the system, or both in collaboration.
+- 사용자, 시스템 또는 둘 다가 공동 작업에서 수행 하는 각 주요 작업에 대해 **작업** (1)을 만듭니다.
 
   > [!NOTE]
-  > 몇 가지 작업으로만 프로세스나 알고리즘을 설명해 보세요. You can use **Call Behavior Actions** to define each action in more detail in a separate diagram, as described in [Describing Sub-activities with Call Behavior Actions](#Subactivities).
+  > 몇 가지 작업으로만 프로세스나 알고리즘을 설명해 보세요. 동작 호출 작업을 사용 하 [여 하위 활동 설명](#Subactivities)에 설명 된 대로 **동작 호출 작업** 을 사용 하 여 별도의 다이어그램에서 각 작업을 더 자세히 정의할 수 있습니다.
 
 - 각 작업의 제목이 일반적으로 작업으로 달성하는 결과를 분명히 나타내는지 확인합니다.
 
-- Link the actions in sequence with **Connectors** (2).
+- **커넥터** 를 사용 하 여 작업을 순서 대로 연결 합니다 (2).
 
-- 각 작업은 제어 흐름의 다음 작업이 시작되기 전에 끝납니다. If you want to describe actions that overlap, use a **Fork Node** as described in the section [Concurrent Flows](#Concurrent).
+- 각 작업은 제어 흐름의 다음 작업이 시작되기 전에 끝납니다. 겹치는 작업을 설명 하려면 [동시 흐름](#Concurrent)섹션에 설명 된 대로 **분기 노드** 를 사용 합니다.
 
   다이어그램에서는 작업 시퀀스를 설명하지만 작업이 실행되는 방식이나 한 작업에서 다음 작업으로 컨트롤이 전달되는 방식을 설명하지는 않습니다. 예를 들어 다이어그램을 사용하여 비즈니스 프로세스를 나타낼 경우 한 사람이 다른 사람에게 메일 메시지를 보낼 때 제어가 전달될 수 있습니다. 다이어그램을 사용하여 소프트웨어 디자인을 나타낼 경우 한 문에서 다음 문으로 일반적인 실행 흐름에 의해 제어가 전달될 수 있습니다.
 
 ### <a name="describing-decisions-and-loops"></a>의사 결정 및 루프 설명
 
-- Use a **Decision Node** (3) to indicate a point where the outcome of a decision dictates the next step. 원하는 만큼 나가는 경로를 그릴 수 있습니다.
+- 의사 결정 **노드** (3)를 사용 하 여 의사 결정 결과가 다음 단계를 나타내는 지점을 나타냅니다. 원하는 만큼 나가는 경로를 그릴 수 있습니다.
 
-- 동작 다이어그램을 사용하여 애플리케이션 파트를 정의할 경우 각 경로를 사용해야 하는 시기가 분명하도록 가드(4)를 정의해야 합니다. Right-click the connector, click **Properties**, and in the **Properties** window, type a value for the **Guard** field.
+- 동작 다이어그램을 사용하여 애플리케이션 파트를 정의할 경우 각 경로를 사용해야 하는 시기가 분명하도록 가드(4)를 정의해야 합니다. 커넥터를 마우스 오른쪽 단추로 클릭 하 고 **속성**을 클릭 한 다음 **속성** 창에서 **가드** 필드의 값을 입력 합니다.
 
 - 가드를 항상 정의할 필요는 없습니다. 예를 들어 동작 다이어그램을 사용하여 비즈니스 프로세스 또는 상호 작용 프로토콜을 설명할 경우 분기는 사용자 또는 상호 작용하는 구성 요소에 제공되는 옵션 범위를 정의합니다.
 
-- Use a **Merge Node** (5) to bring together two or more alternative flows that branched at a **Decision Node**.
+- **병합 노드** (5)를 사용 하 여 **의사 결정 노드에서**분기 된 두 개 이상의 대체 흐름을 함께 가져옵니다.
 
     > [!NOTE]
-    > You should use a **Merge Node** to bring together alternative flows, instead of bringing the flows together at an action. In the example, it would not be correct to connect from the decision node directly back to **Choose Menu Item**. 이는 제어 스레드가 모든 들어오는 커넥터에 도착할 때까지 작업이 시작되지 않기 때문입니다. 따라서 동시 흐름만 작업으로 결합해야 합니다. For more information, see [Concurrent Flows](#Concurrent).
+    > 작업에서 흐름을 함께 가져오는 대신 **병합 노드** 를 사용 하 여 대체 흐름을 함께 가져와야 합니다. 이 예에서는 의사 결정 노드에서 바로 다시 연결 하 여 **메뉴 항목을 선택**하는 것이 올바르지 않습니다. 이는 제어 스레드가 모든 들어오는 커넥터에 도착할 때까지 작업이 시작되지 않기 때문입니다. 따라서 동시 흐름만 작업으로 결합해야 합니다. 자세한 내용은 [동시 흐름](#Concurrent)을 참조 하세요.
 
 - 예제와 같이 분기를 사용하여 루프를 설명합니다.
 
@@ -143,163 +143,163 @@ Visual Studio에서 동작 다이어그램을 그려서 일련의 작업을 통�
 ### <a name="starting-the-activity"></a>동작 시작
  동작에 대한 진입점을 나타내는 두 가지 방법은 다음과 같습니다.
 
-- **Initial Node**
+- **초기 노드**
 
-     Create one **Initial Node** (6) to indicate the first action of the activity.
+     **초기 노드** (6) 하나를 만들어 작업의 첫 번째 작업을 표시 합니다.
 
      이 메서드는 하위 동작을 설명할 때나 동작을 시작하는 상태를 명시적으로 지정할 필요가 없을 경우 가장 유용합니다. 예를 들어 Order a Meal 동작은 분명히 고객이 배고플 때 시작됩니다.
 
-- **Accept Event Node**
+- **이벤트 노드 수락**
 
-     Create **Accept Event Nodes**, as described in the section [Concurrent Flows](#Concurrent), to indicate the start of a thread that responds to a particular event, such as a user input. 노드에 들어오는 흐름을 제공하지 마세요. 들어오는 흐름을 생략하면 이벤트가 발생할 때마다 스레드가 시작됩니다.
+     [동시 흐름](#Concurrent)섹션에 설명 된 대로 **Accept 이벤트 노드**를 만들어 사용자 입력과 같은 특정 이벤트에 응답 하는 스레드의 시작을 표시 합니다. 노드에 들어오는 흐름을 제공하지 마세요. 들어오는 흐름을 생략하면 이벤트가 발생할 때마다 스레드가 시작됩니다.
 
      이 방법은 특정 외부 이벤트에 대한 응답을 설명할 때 가장 유용합니다.
 
 ### <a name="ending-the-activity"></a>동작 종료
- Use an **Activity Final Node** (7) to indicate the end of an activity.
+ 활동 **최종 노드** (7)를 사용 하 여 활동의 끝을 표시 합니다.
 
-- When a thread of control reaches an **Activity Final Node**, all the activity's concurrent actions and sub-activities terminate.
+- 제어 스레드가 **작업 최종 노드에**도달 하면 모든 활동의 동시 작업 및 하위 활동이 종료 됩니다.
 
 - 동작 최종 노드를 두 개 이상 사용하여 추가 커넥터의 혼잡함을 줄일 수 있습니다.
 
 ### <a name="interrupting-the-activity"></a>동작 중단
- 예를 들어 사용자가 프로세스를 취소하도록 결정할 경우, 일반적인 동작 흐름을 중단할 수 있는 방법을 설명하려면 해당 이벤트를 수신하는 이벤트 적용 노드를 만들면 됩니다. For more information, see the section [Concurrent Flows](#Concurrent). 이 노드에서 동작 최종 노드(7)까지 제어 흐름을 만듭니다.
+ 예를 들어 사용자가 프로세스를 취소하도록 결정할 경우, 일반적인 동작 흐름을 중단할 수 있는 방법을 설명하려면 해당 이벤트를 수신하는 이벤트 적용 노드를 만들면 됩니다. 자세한 내용은 [동시 흐름](#Concurrent)섹션을 참조 하세요. 이 노드에서 동작 최종 노드(7)까지 제어 흐름을 만듭니다.
 
 ### <a name="swimlanes"></a>스윔 레인
- 때때로 작업을 수행하는 다양한 개체 또는 비즈니스 역할에 해당하는 영역으로 동작의 작업을 정렬할 때 유용합니다. These areas are conventionally arranged in columns and are called *swimlanes*.
+ 때때로 작업을 수행하는 다양한 개체 또는 비즈니스 역할에 해당하는 영역으로 동작의 작업을 정렬할 때 유용합니다. 이러한 영역은 일반적으로 열에 정렬 되며 *스윔 레인*이라고 합니다.
 
-- Use lines or rectangles from the **Simple Shapes** section of the Toolbox to draw swimlanes or other areas.
+- 도구 상자의 **단순 도형** 섹션에서 선 또는 사각형을 사용 하 여 스윔 레인 또는 기타 영역을 그립니다.
 
-- To label each swimlane, create a comment and set its **Transparent** property to **True**.
+- 각 스윔 레인에 레이블을 지정 하려면 주석을 만들고 **투명** 속성을 **True**로 설정 합니다.
 
   단순한 모양은 UML 모델의 파트를 구성하지 않고 UML 모델 탐색기에 나타나지 않습니다.
 
-## <a name="DataFlows"></a> Describing Data Flow
+## <a name="DataFlows"></a>데이터 흐름 설명
  동작에 대해 나가거나 들어오는 데이터 전달은 다음 두 가지 방법의 하나로 설명할 수 있습니다.
 
-- Use an **Object Node**. 이는 동작 간에 흐르는 정보를 설명하는 가장 단순한 방법입니다. 개체 노드는 프로그램의 변수와 같습니다. 한 작업에서 다른 작업으로 전달되는 하나 이상의 값을 저장하는 항목을 나타냅니다.
+- **개체 노드**를 사용 합니다. 이는 동작 간에 흐르는 정보를 설명하는 가장 단순한 방법입니다. 개체 노드는 프로그램의 변수와 같습니다. 한 작업에서 다른 작업으로 전달되는 하나 이상의 값을 저장하는 항목을 나타냅니다.
 
-- Use an **Output Pin** and an **Input Pin**. 이 방법을 통해 한 작업에서 나가는 출력 및 다른 작업으로 들어오는 입력을 개별적으로 설명할 수 있습니다. 핀은 프로그램의 매개 변수와 같습니다. 핀은 개체가 작업에 들어오고 나가는 포트를 나타냅니다.
+- **출력 핀** 및 **입력 핀**을 사용 합니다. 이 방법을 통해 한 작업에서 나가는 출력 및 다른 작업으로 들어오는 입력을 개별적으로 설명할 수 있습니다. 핀은 프로그램의 매개 변수와 같습니다. 핀은 개체가 작업에 들어오고 나가는 포트를 나타냅니다.
 
     > [!NOTE]
-    > For an overview of the elements used in this section, see the Data Flows section of the topic see [UML Activity Diagrams: Reference](../modeling/uml-activity-diagrams-reference.md).
+    > 이 섹션에 사용 된 요소에 대 한 개요는 [UML 동작 다이어그램](../modeling/uml-activity-diagrams-reference.md)참조 항목의 데이터 흐름 섹션을 참조 하세요.
 
 ### <a name="describing-data-flow-with-object-nodes"></a>개체 노드를 사용하여 데이터 흐름 설명
  대부분 제어 흐름은 데이터를 전달합니다. 예를 들어 “고객이 세부 정보 제공” 작업의 출력 흐름은 배송 주소에 대한 참조를 전달합니다.
 
  다이어그램에서 해당 데이터를 설명하려면 다음 그림과 같이 커넥터를 개체 노드 및 두 개의 커넥터로 바꿉니다.
 
- ![Object nodes can show data passed between actions](../modeling/media/uml-actguidedata.png "UML_ActGuideData")
+ ![개체 노드는 작업 간에 전달 되는 데이터를 표시할 수 있습니다.](../modeling/media/uml-actguidedata.png "UML_ActGuideData")
 
  모퉁이가 둥근 사각형(예: 상품 발송)은 처리가 발생하는 작업을 나타냅니다. 모퉁이가 각진 사각형(예: 배송 주소)은 한 작업에서 다른 작업으로 개체의 흐름을 나타냅니다.
 
  작업 간에 흐르는 개체의 통로 또는 버퍼로 사용되는 노드 역할을 반영하는 이름을 개체 노드에 지정합니다.
 
- You can set the **Type** of the object node in the Properties window. 형식은 클래스 다이어그램에서 정의한 정수 또는 클래스와 같은 기본 형식, 인터페이스 또는 열거형이 될 수 있습니다. 예를 들어 Street Address, City 등의 특성과 Customer라는 다른 클래스에 대한 연결을 함께 사용하여 Shipment Address 클래스를 만들 수 있습니다. For more information, see [UML Class Diagrams: Guidelines](../modeling/uml-class-diagrams-guidelines.md).
+ 속성 창에서 개체 노드의 **유형을** 설정할 수 있습니다. 형식은 클래스 다이어그램에서 정의한 정수 또는 클래스와 같은 기본 형식, 인터페이스 또는 열거형이 될 수 있습니다. 예를 들어 Street Address, City 등의 특성과 Customer라는 다른 클래스에 대한 연결을 함께 사용하여 Shipment Address 클래스를 만들 수 있습니다. 자세한 내용은 [UML 클래스 다이어그램: 지침](../modeling/uml-class-diagrams-guidelines.md)을 참조 하세요.
 
 > [!NOTE]
-> If you type the name of a type that has not yet been defined, an item will be added under **Unspecified Types** in UML Model Explorer. 이후에 클래스 다이어그램에서 해당 이름의 형식을 정의할 경우 새 형식을 참조하도록 개체 노드의 형식을 다시 설정해야 합니다.
+> 아직 정의 되지 않은 형식의 이름을 입력 하면 UML 모델 탐색기의 **지정 되지 않은 형식** 아래에 항목이 추가 됩니다. 이후에 클래스 다이어그램에서 해당 이름의 형식을 정의할 경우 새 형식을 참조하도록 개체 노드의 형식을 다시 설정해야 합니다.
 
 #### <a name="buffering-data-in-object-nodes"></a>개체 노드에서 데이터 버퍼링
  개체 노드는 여러 개체에 대한 버퍼로 사용될 수 있습니다. 다음 그림에서 제어 흐름은 사용자가 [choose more] 루프(1)를 여러 번 방문하고 동시에 Chosen Menu Items 개체 노드(2)에 사용자 선택이 누적됨을 보여 줍니다. 마지막으로 사용자가 선택을 완료하면 Chosen Menu Items 버퍼에서 전체 선택 목록을 적용하는 Confirm Order 작업(3)으로 제어가 전달됩니다.
 
- ![Buffering data in object nodes](../modeling/media/uml-actguidebuffer.png "UML_ActGuideBuffer")
+ ![개체 노드의 데이터 버퍼링](../modeling/media/uml-actguidebuffer.png "UML_ActGuideBuffer")
 
  개체 노드의 속성을 설정하여 버퍼의 항목을 저장하는 방법을 지정할 수 있습니다.
 
-- Set the **Ordering** property:
+- **순서** 속성을 설정 합니다.
 
-  - **Unordered** to specify a random or unspecified order. (Default.)
+  - **순서가** 지정 되지 않은 임의 또는 지정 되지 않은 순서를 지정 합니다. (기본값)
 
-  - **Ordered** to specify an order according to a specific key.
+  - 지정 된 순서에 따라 특정 키에 따라 **순서를 지정** 합니다.
 
-  - **Fifo** to specify an order of first-in, first-out.
+  - **Fifo** -선입 선출 순서를 지정 합니다.
 
-  - **Lifo** to specify an order of last-in, first-out.
+  - **Lifo** -마지막으로 인 한 순서를 지정 합니다.
 
-- Set the **Upper Bound** property to specify the maximum number of objects that can be contained in the buffer. 기본값은 *입니다. 이는 제한이 없음을 의미합니다.
+- **상한** 속성을 설정 하 여 버퍼에 포함할 수 있는 최대 개체 수를 지정 합니다. 기본값은 *입니다. 이는 제한이 없음을 의미합니다.
 
 ### <a name="describing-data-flow-with-input-and-output-pins"></a>입력 및 출력 핀을 사용하여 데이터 흐름 설명
- Use an **Output Pin** and an **Input Pin** to separately describe the outputs from one action and the inputs to another.
+ **출력 핀** 및 **입력 핀** 을 사용 하 여 한 동작의 출력과 다른 동작에 대 한 입력을 개별적으로 설명할 수 있습니다.
 
- ![Input and output pins are action parameters](../modeling/media/uml-actguidepins.png "UML_ActGuidePins")
+ ![입력 및 출력 핀은 작업 매개 변수입니다.](../modeling/media/uml-actguidepins.png "UML_ActGuidePins")
 
- To create a pin, click **Input Pin** or **Output Pin** on the toolbox and then click an action. 작업 경계로 핀을 이동하고 해당 이름을 변경할 수 있습니다. You can create input and output pins on any kind of action, including **Call Behavior Actions**, **Call Operation Actions**, **Send Signal Actions**, and **Accept Event Actions**.
+ Pin을 만들려면 도구 상자에서 **입력 pin** 또는 **출력 핀** 을 클릭 한 다음 작업을 클릭 합니다. 작업 경계로 핀을 이동하고 해당 이름을 변경할 수 있습니다. **동작 호출 작업**, **작업 호출**작업, **신호 보내기**작업 및 **이벤트 적용 작업**을 포함 하 여 모든 종류의 작업에 입력 및 출력 핀을 만들 수 있습니다.
 
  개체 노드에 들어오고 나가는 흐름이 수행하는 것과 같이 두 핀 사이의 커넥터는 개체 흐름을 나타냅니다.
 
  매개 변수 이름과 같이 핀이 생성하거나 적용하는 개체의 역할을 나타내는 이름을 핀에 지정합니다.
 
- You can set the type of objects transmitted in the **Type** property. 이 형식은 UML 클래스 다이어그램에서 만든 형식이어야 합니다.
+ **형식** 속성에서 전송 되는 개체의 형식을 설정할 수 있습니다. 이 형식은 UML 클래스 다이어그램에서 만든 형식이어야 합니다.
 
  연결된 핀 사이에 흐르는 개체는 어떤 방식으로든 호환되어야 합니다. 이는 출력 핀에서 생성된 개체는 입력 핀 형식의 파생 형식에 속하기 때문일 수 있습니다.
 
  또는 출력 핀 형식과 입력 핀 형식 간에 데이터를 바꾸는 변환이 개체 흐름에 포함되도록 지정할 수 있습니다. 이 종류의 가장 일반적인 변환만으로 더 큰 형식에서 적절한 파트를 추출할 수 있습니다. 그림의 예제는 주문 세부 정보에서 배송 주소를 추출하는 변환이 있음을 의미합니다.
 
-## <a name="Details"></a> Defining an Action in More Detail
+## <a name="Details"></a>더 자세히 작업 정의
  작업 이름을 사용하여 일반적으로 획득하는 결과를 분명히 설명하는 방법 이외에 다음과 같은 몇 가지 방법으로 작업에 세부 정보를 추가할 수 있습니다.
 
-- Write a more detailed description in the **Body** property. 예를 들어 프로그램 코드 또는 의사 코드의 조각을 작성하거나 획득한 결과에 대한 전체 설명을 작성할 수 있습니다.
+- **Body** 속성에서 보다 자세한 설명을 작성 합니다. 예를 들어 프로그램 코드 또는 의사 코드의 조각을 작성하거나 획득한 결과에 대한 전체 설명을 작성할 수 있습니다.
 
-- 작업을 동작 호출 작업으로 바꾸고 개별 동작 다이어그램 내에서 세부 동작을 설명합니다. See [Describing Sub-activities with Call Behavior Actions](#Subactivities).
+- 작업을 동작 호출 작업으로 바꾸고 개별 동작 다이어그램 내에서 세부 동작을 설명합니다. [동작 호출 작업을 사용 하 여 하위 활동 설명을](#Subactivities)참조 하세요.
 
-- Set the action's **Local Postconditions** and **Local Preconditions** properties to describe its outcome in more specific detail. For more information, see [Defining Postconditions and Preconditions](#Postcondition).
+- 작업의 **로컬 사후** 조건 및 **로컬 사전 조건** 속성을 설정 하 여 그 결과를 보다 구체적인 세부 정보로 설명 합니다. 자세한 내용은 [사후 조건 및 사전 조건 정의](#Postcondition)를 참조 하세요.
 
-### <a name="Subactivities"></a> Describing Sub-activities with Call Behavior Actions
+### <a name="Subactivities"></a>동작 호출 작업을 사용 하 여 하위 활동 설명
  개별 동작 다이어그램을 사용하여 작업의 세부 동작을 설명할 수 있습니다. 호출된 동작은 동작 호출 작업을 통해 주 동작 다이어그램에 표시되는 동작 다이어그램입니다. 하위 동작을 여러 번 그릴 필요가 없도록 동작 호출 작업을 사용하여 여러 동작 간에 공유되는 동작을 설명할 수도 있습니다.
 
  다음 그림에서 다이어그램 1에는 동작 호출 작업이 포함된 동작이 표시되고 다이어그램 2에는 호출된 동작을 나타내는 하위 동작 다이어그램이 표시됩니다.
 
- ![A separate activity diagram shows detailed actions](../modeling/media/uml-actguidedetail.png "UML_ActGuideDetail")
+ ![별도의 동작 다이어그램은 자세한 동작을 보여 줍니다.](../modeling/media/uml-actguidedetail.png "UML_ActGuideDetail")
 
 ##### <a name="to-describe-a-sub-activity-with-a-call-behavior-action"></a>동작 호출 작업으로 하위 동작을 설명하려면
 
-1. To create the diagram for the sub-activity, in **Solution Explorer**, right-click your modeling project, point to **Add**, and then click **New Item**.
+1. 하위 작업에 대 한 다이어그램을 만들려면 **솔루션 탐색기**에서 모델링 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **추가**를 가리킨 다음 **새 항목**을 클릭 합니다.
 
-2. In the **Add New Item** dialog box, under **Templates** click **Activity Diagram** and in the **Name** box type the name that you plan to give your **Call Behavior Action**.
+2. **새 항목 추가** 대화 상자의 **템플릿** 에서 동작 **다이어그램** 을 클릭 하 고 **이름** 상자에 **통화 동작 동작**을 지정할 이름을 입력 합니다.
 
 3. 하위 동작에 대한 세부 작업을 그립니다. 이는 호출된 동작입니다.
 
-    - In the called sub-activity diagram, the **Initial Node** indicates where control starts when the called behavior is invoked. The **Activity Final Node** shows where control should return to the parent activity.
+    - 호출 된 하위 동작 다이어그램에서 **초기 노드** 는 호출 된 동작을 호출할 때 컨트롤이 시작 되는 위치를 나타냅니다. **작업 최종 노드** 는 컨트롤이 부모 작업으로 반환 되어야 하는 위치를 표시 합니다.
 
-4. Set the **Behavior** property of the **Call Behavior Action** to refer to the called behavior diagram.
+4. 호출 동작 동작의 **동작** 속성을 **설정 하 여** 호출 된 동작 다이어그램을 참조 합니다.
 
     > [!NOTE]
-    > The sub-activity diagram must have some elements on it or the diagram will not be available in the drop-down list for the **Behavior** property. Also, the trident icon will not appear on your **Call Behavior Action** shape until you set its **Behavior** property.
+    > 하위 동작 다이어그램에는 일부 요소가 있어야 합니다. 그렇지 않으면 **동작** 속성에 대 한 드롭다운 목록에서 다이어그램을 사용할 수 없습니다. 또한 **동작** 속성을 설정할 때까지 Trident 아이콘이 **통화 동작 작업** 셰이프에 표시 되지 않습니다.
 
-5. Set the **Is Synchronous** property of the action to indicate whether your activity waits for the called activity to complete.
+5. 작업의 **Is 동기** 속성을 설정 하 여 작업에서 호출 된 작업이 완료 될 때까지 기다릴지 여부를 나타냅니다.
 
-    - If you set **Is Synchronous** to false, you are indicating that the flow can continue to the next action before the called activity finishes. 작업에서 출력 핀 또는 나가는 데이터 흐름을 정의하면 안 됩니다.
+    - **동기** 를 false로 설정 하면 호출 된 작업이 완료 되기 전에 흐름이 다음 작업으로 계속 될 수 있음을 나타냅니다. 작업에서 출력 핀 또는 나가는 데이터 흐름을 정의하면 안 됩니다.
 
 ### <a name="describing-data-flow-in-and-out-of-sub-activities"></a>하위 동작에 들어오고 나가는 데이터 흐름 설명
  소프트웨어에서 매개 변수를 사용하는 것과 같은 방법으로 하위 동작에 들어오고 나가는 데이터 흐름을 설명할 수 있습니다.
 
 - 호출된 동작 작업에서 작업에 흘러 들어오거나 나가는 데이터의 조각에 대한 입력 및 출력 핀(1)을 만듭니다. 각 조각에 적절한 이름을 지정합니다.
 
-- In the sub-activity diagram, create an **Activity Parameter Node** (2) for each input and output pin on the calling action. 각 노드에 해당 핀과 같은 이름을 지정합니다.
+- 하위 동작 다이어그램에서 호출 작업에 대 한 각 입력 및 출력 핀에 대해 **활동 매개 변수 노드** (2)를 만듭니다. 각 노드에 해당 핀과 같은 이름을 지정합니다.
 
   > [!NOTE]
-  > 동작 매개 변수 노드는 개체 노드와 비슷합니다. To check what type of node that you are looking at, right-click the node and then click **Properties**. 노드 형식은 속성 창의 헤더에 표시됩니다.
+  > 동작 매개 변수 노드는 개체 노드와 비슷합니다. 원하는 노드 유형을 확인 하려면 노드를 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 클릭 합니다. 노드 형식은 속성 창의 헤더에 표시됩니다.
 
 - 하위 동작 다이어그램에서 각 동작 매개 변수 노드에 들어오거나 나가는 개체 흐름을 표시하는 커넥터를 그립니다.
 
-  ![Pins on Call Behavior map to activity parameters](../modeling/media/uml-actguidesub.png "UML_ActGuideSub")
+  ![호출 동작의 핀이 활동 매개 변수에 매핑됩니다.](../modeling/media/uml-actguidesub.png "UML_ActGuideSub")
 
-### <a name="Postcondition"></a> Defining Postconditions and Preconditions
- You can use the **Local Postconditions** and **Local Preconditions** properties to specify in detail the outcome of an action. 이들 속성은 효과를 어떻게 얻는지를 설명하지 않고 작업의 효과를 설명합니다.
+### <a name="Postcondition"></a>사후 조건 및 사전 조건 정의
+ **로컬 사후 조건** 및 **로컬 사전 조건** 속성을 사용 하 여 작업 결과를 자세히 지정할 수 있습니다. 이들 속성은 효과를 어떻게 얻는지를 설명하지 않고 작업의 효과를 설명합니다.
 
- To set these properties, right-click the action and then click **Properties**. 속성 창에서 속성에 값을 입력합니다.
+ 이러한 속성을 설정 하려면 작업을 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 클릭 합니다. 속성 창에서 속성에 값을 입력합니다.
 
 #### <a name="local-postconditions"></a>로컬 사후 조건
  사후 조건은 작업을 완료된 것으로 간주하기 전에 충족해야 하는 조건입니다. 예제 작업 Confirm Order에서 사후 조건은 다음과 같습니다.
 
  고객이 신용 카드를 처리하는 데 필요한 완전하고 올바른 세부 정보를 제공했습니다.
 
- 사후 조건은 작업 발생 전후 상태 간의 관계를 표현합니다. 예를 들어 다음과 같은 가치를 제공해야 합니다.
+ 사후 조건은 작업 발생 전후 상태 간의 관계를 표현합니다. 예를 들면 다음과 같습니다.
 
  이자율이 이전보다 2배가 되었습니다.
 
- 작업에서 처리된 데이터의 특정 특성을 참조하여 사후 조건을 더 공식적인 스타일로 작성할 수 있습니다. 예를 들어 다음과 같은 가치를 제공해야 합니다.
+ 작업에서 처리된 데이터의 특정 특성을 참조하여 사후 조건을 더 공식적인 스타일로 작성할 수 있습니다. 예를 들면 다음과 같습니다.
 
  `InvoiceTotal == Sum(OrderItem.MenuItem.Price)`
 
@@ -315,18 +315,18 @@ Visual Studio에서 동작 다이어그램을 그려서 일련의 작업을 통�
 
 - 작업 호출 작업에 입력 및 출력 핀을 추가하여 매개 변수를 설명하고 값을 반환합니다.
 
-- You can set the **Is Synchronous** property of the action to indicate whether your activity waits for the operation to complete.
+- 작업의 **Is 동기** 속성을 설정 하 여 작업이 완료 될 때까지 작업이 대기 하는지 여부를 나타낼 수 있습니다.
 
-  - If you set **Is Synchronous** to false, you are indicating that the flow can continue to the next action before the called operation is complete. 작업에서 출력 핀 또는 나가는 데이터 흐름을 정의하면 안 됩니다.
+  - **동기** 를 false로 설정 하면 호출 된 작업이 완료 되기 전에 흐름이 다음 작업으로 계속 될 수 있음을 나타냅니다. 작업에서 출력 핀 또는 나가는 데이터 흐름을 정의하면 안 됩니다.
 
-## <a name="Concurrent"></a> Concurrent Flows
- You can use the **Fork Node** and the **Join Node** to describe two or more threads of activities that can execute at the same time.
+## <a name="Concurrent"></a>동시 흐름
+ **분기 노드와** **조인 노드** 를 사용 하 여 동시에 실행할 수 있는 두 개 이상의 활동 스레드를 설명할 수 있습니다.
 
- ![The fork and join nodes show concurrent flows](../modeling/media/uml-actguideconcurrent.png "UML_ActGuideConcurrent")
+ ![포크 및 조인 노드는 동시 흐름을 표시 합니다.](../modeling/media/uml-actguideconcurrent.png "UML_ActGuideConcurrent")
 
- The effect of the **Fork Node** (1) is to divide the thread of control into two or more threads. 이전 작업이 종료되면 분기의 출력 쪽 모든 작업이 시작될 수 있습니다.
+ **분기 노드의** 효과 (1)는 컨트롤 스레드를 둘 이상의 스레드로 나누는 것입니다. 이전 작업이 종료되면 분기의 출력 쪽 모든 작업이 시작될 수 있습니다.
 
- A **Join Node** (2) brings concurrent threads together. The action after the **Join Node** may not start until all the actions leading to the **Join Node** are complete.
+ **조인 노드** (2)는 동시 스레드를 함께 가져옵니다. 조인 노드 후의 작업은 **조인 노드로** 이어지는 모든 작업이 완료 될 때까지 시작 되지 **않을 수 있습니다** .
 
 ### <a name="describing-signals-and-events"></a>신호 및 이벤트 설명
  동작에서 신호를 신호 보내기 작업으로 보내는 프로세스의 단계를 표시할 수 있습니다. 단계가 이벤트 적용 작업으로 계속되기 전에 특정 신호 또는 이벤트를 기다리는 단계를 표시할 수 있습니다.
@@ -340,7 +340,7 @@ Visual Studio에서 동작 다이어그램을 그려서 일련의 작업을 통�
 
 - 신호 보내기 작업을 사용하여 프로세스가 반환된 정보에 응답하는 방식을 설명합니다. 이렇게 하려면 별도의 이벤트 적용 작업을 사용합니다.
 
-- 신호 보내기 작업에 들어오는 데이터 흐름을 표시하여 나가는 메시지와 함께 전송될 수 있는 데이터를 나타냅니다. For more information, see [Describing Data Flow](#DataFlows).
+- 신호 보내기 작업에 들어오는 데이터 흐름을 표시하여 나가는 메시지와 함께 전송될 수 있는 데이터를 나타냅니다. 자세한 내용은 [데이터 흐름 설명](#DataFlows)을 참조 하세요.
 
 #### <a name="waiting-for-a-signal-or-event"></a>신호 또는 이벤트 대기
  이벤트 적용 작업(4)을 사용하여 이 동작이 일부 외부 이벤트 또는 들어오는 메시지를 기다리도록 지정합니다. 작업 이름을 사용하여 기다리는 이벤트 형식을 나타냅니다.
@@ -351,14 +351,14 @@ Visual Studio에서 동작 다이어그램을 그려서 일련의 작업을 통�
 
 - 신호의 보낸 사람에게 반환되는 값을 설명하는 데는 이벤트 적용 작업을 사용할 수 없습니다. 이 목적에는 개별 신호 보내기 작업을 사용하세요.
 
-- 작업에서 나가는 데이터 흐름을 표시하여 신호로 수신된 데이터를 동작에서 어떻게 처리하는지를 나타낼 수 있습니다. If you want to show more than one output flow, you should set the **IsUnmarshall** property of the Accept Event Action, which indicates that the action parses the incoming signal into its separate components. For more information, see [Describing Data Flow](#DataFlows).
+- 작업에서 나가는 데이터 흐름을 표시하여 신호로 수신된 데이터를 동작에서 어떻게 처리하는지를 나타낼 수 있습니다. 출력 흐름을 두 개 이상 표시 하려면 작업에서 들어오는 신호를 개별 구성 요소로 구문 분석 하는 이벤트 적용 작업의 **역 마샬링** 속성을 설정 해야 합니다. 자세한 내용은 [데이터 흐름 설명](#DataFlows)을 참조 하세요.
 
 ### <a name="describing-multiple-data-flows"></a>여러 데이터 흐름 설명
  작업에서 나오는 두 개 이상의 제어 흐름 또는 개체 흐름을 그려서 작업이 종료되면 두 개 이상의 스레드가 곧 발생함을 나타냅니다. 제어 및 개체 흐름을 혼합해서 사용할 수 있다는 점을 제외하고 이 효과는 분기의 효과와 비슷합니다.
 
  다음 예제에서는 작업에 들어오고 나가는 여러 흐름을 보여 줍니다.
 
- ![Parallel object flows](../modeling/media/uml-actguidemulti.png "UML_ActGuideMulti")
+ ![병렬 개체 흐름](../modeling/media/uml-actguidemulti.png "UML_ActGuideMulti")
 
  “고객이 세부 정보 제공” 작업이 완료되면 "Shipment address" 및 "Credit card details" 개체가 생성됩니다. 두 개체는 다른 작업에서 처리하기 위해 전달됩니다.
 
@@ -371,7 +371,7 @@ Visual Studio에서 동작 다이어그램을 그려서 일련의 작업을 통�
 
  이 예제의 커넥터는 동작 매개 변수 노드, 개체 노드 또는 입력/출력 핀에 하나 이상의 끝이 있으므로 모두 개체 흐름입니다.
 
- ![A data flow](../modeling/media/uml-actguidestream.png "UML_ActGuideStream")
+ ![데이터 흐름](../modeling/media/uml-actguidestream.png "UML_ActGuideStream")
 
  1. 예제에는 입력 및 출력을 나타내는 세 가지 동작 매개 변수 노드가 있습니다.
 
@@ -392,13 +392,13 @@ Visual Studio에서 동작 다이어그램을 그려서 일련의 작업을 통�
 
   예제에서는 변환을 보여 줍니다. 다이어그램 1의 첫 번째 작업에서는 출력 핀에 우편 번호를 생성합니다. 이 항목은 두 번째 작업에서 입력 핀에 연결됩니다. 그러나 두 번째 작업에는 완전히 지정된 주소가 필요합니다. 한 형식에서 다른 형식으로의 변환은 두 번째 동작인 주소 조회에서 지정됩니다. 이 동작은 개체 흐름의 변환 속성에서 참조됩니다. 주소 조회 동작에는 들어오는 우편 번호에 대한 한 동작 매개 변수 노드 및 나가는 전체 주소에 대한 다른 동작 매개 변수 노드가 포함됩니다.
 
-  ![Object transformation defined in another diagram](../modeling/media/uml-actguidetransform.png "UML_ActGuideTransform")
+  ![다른 다이어그램에 정의 된 개체 변환](../modeling/media/uml-actguidetransform.png "UML_ActGuideTransform")
 
   변환 또는 선택을 지정할 수 있는 두 가지 방법은 다음과 같습니다.
 
 - 주석을 입력 또는 출력 핀에 연결합니다.
 
-  - To distinguish this description from a general comment, you can begin the comment with <\<**transformation**>> or <\<**selection**>>.
+  - 이 설명을 일반적인 주석과 구분 하기 위해 <\<**변환**> > 또는 <\<> **선택을**사용 하 여 주석을 시작할 수 있습니다.
 
 - 개별 동작 다이어그램에서 변환 또는 선택을 자세히 지정합니다.
 
@@ -408,7 +408,7 @@ Visual Studio에서 동작 다이어그램을 그려서 일련의 작업을 통�
 
 1. 변환 또는 선택 흐름을 설명하는 새 동작 다이어그램을 만듭니다.
 
-   - In **Solution Explorer**, right-click your project, point to **Add**, click **New Item**, and then click **Activity Diagram**. 변환 또는 선택 흐름에 대한 적절한 이름을 다이어그램에 지정합니다. **추가**를 클릭합니다.
+   - **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **추가**를 가리킨 다음 **새 항목**을 클릭 하 고 **동작 다이어그램**을 클릭 합니다. 변환 또는 선택 흐름에 대한 적절한 이름을 다이어그램에 지정합니다. **추가**를 클릭합니다.
 
 2. 새 다이어그램에서:
 
@@ -420,11 +420,11 @@ Visual Studio에서 동작 다이어그램을 그려서 일련의 작업을 통�
 
    1. 입력/출력 핀, 개체 노드 또는 동작 매개 변수 노드에 들어오거나 나가는 커넥터인 개체 흐름을 만듭니다.
 
-   2. Right-click the object flow and then click **Properties**.
+   2. 개체 흐름을 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 클릭 합니다.
 
-   3. In the **Transformation** or **Selection** property, select the diagram where you specified the transformation or selection flow.
+   3. **변환** 또는 **선택** 속성에서 변환 또는 선택 흐름을 지정한 다이어그램을 선택 합니다.
 
-   개체 노드 및 개별 입력/출력 핀에 대해 선택을 정의할 수도 있습니다. Define a selection activity as in the previous procedure, and then set the **Selection** property of the object node, or input or output pin.
+   개체 노드 및 개별 입력/출력 핀에 대해 선택을 정의할 수도 있습니다. 이전 절차에서와 같이 선택 활동을 정의한 다음 개체 노드의 **selection** 속성 또는 입력 또는 출력 핀을 설정 합니다.
 
-## <a name="see-also"></a>관련 항목:
- [Edit UML models and diagrams](../modeling/edit-uml-models-and-diagrams.md) [UML Sequence Diagrams: Reference](../modeling/uml-sequence-diagrams-reference.md) [UML Component Diagrams: Reference](../modeling/uml-component-diagrams-reference.md) [UML Use Case Diagrams: Reference](../modeling/uml-use-case-diagrams-reference.md) [UML Class Diagrams: Reference](../modeling/uml-class-diagrams-reference.md) [UML Component Diagrams: Reference](../modeling/uml-component-diagrams-reference.md) [Video: Capture Business Workflows by using Activity Diagrams](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-4-capture-business-workflows)
+## <a name="see-also"></a>참고 항목
+ [Uml 모델 및 다이어그램 편집](../modeling/edit-uml-models-and-diagrams.md) [uml 시퀀스 다이어그램](../modeling/uml-sequence-diagrams-reference.md) : uml [사용 사례 다이어그램](../modeling/uml-use-case-diagrams-reference.md) [참조:](../modeling/uml-component-diagrams-reference.md) uml 클래스 다이어그램 참조: Uml [클래스 다이어그램](../modeling/uml-class-diagrams-reference.md) 참조: [uml 구성 요소 다이어그램](../modeling/uml-component-diagrams-reference.md) 참조: 참조 [비디오: 동작 다이어그램을 사용 하 여 비즈니스 워크플로 캡처](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-4-capture-business-workflows)

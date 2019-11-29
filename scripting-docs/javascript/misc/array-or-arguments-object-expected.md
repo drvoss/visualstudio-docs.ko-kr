@@ -26,9 +26,9 @@ ms.locfileid: "72576029"
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
-- @No__t_0 또는 **Arguments** 개체를 두 번째 인수로 지정 합니다.  
+- `Array` 또는 **Arguments** 개체를 두 번째 인수로 지정 합니다.  
   
-## <a name="see-also"></a>참조  
- [배열   사용](../../javascript/advanced/using-arrays-javascript.md)  
- [Apply 메서드 (Function)](../../javascript/reference/apply-method-function-javascript.md)    
+## <a name="see-also"></a>참고 항목  
+ [배열  사용](../../javascript/advanced/using-arrays-javascript.md)  
+ [Apply 메서드 (Function)](../../javascript/reference/apply-method-function-javascript.md)   
  [함수](../../javascript/functions-javascript.md)

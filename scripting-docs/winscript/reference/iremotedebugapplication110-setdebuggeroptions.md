@@ -39,6 +39,6 @@ HRESULT SetDebuggerOptions(        [in] enum SCRIPT_DEBUGGER_OPTIONS mask,      
  `value`  
  [SCRIPT_DEBUGGER_OPTIONS 열거형](../../winscript/reference/script-debugger-options-enumeration.md) 값입니다.  
   
-## <a name="see-also"></a>참조  
- [Iremotedebugapplication 인터페이스](../../winscript/reference/iremotedebugapplication-interface.md)    
+## <a name="see-also"></a>참고 항목  
+ [Iremotedebugapplication 인터페이스](../../winscript/reference/iremotedebugapplication-interface.md)   
  [IRemoteDebugApplication110 인터페이스](../../winscript/reference/iremotedebugapplication110-interface.md)

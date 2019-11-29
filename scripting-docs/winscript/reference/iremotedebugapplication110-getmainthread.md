@@ -36,6 +36,6 @@ HRESULT GetMainThread([out] IRemoteDebugApplicationThread **ppThread);
  `ppThread`  
  제한이 기본 [Iremotedebugapplicationthread 인터페이스](../../winscript/reference/iremotedebugapplicationthread-interface.md)입니다.  
   
-## <a name="see-also"></a>참조  
- [Iremotedebugapplication 인터페이스](../../winscript/reference/iremotedebugapplication-interface.md)    
+## <a name="see-also"></a>참고 항목  
+ [Iremotedebugapplication 인터페이스](../../winscript/reference/iremotedebugapplication-interface.md)   
  [IRemoteDebugApplication110 인터페이스](../../winscript/reference/iremotedebugapplication110-interface.md)

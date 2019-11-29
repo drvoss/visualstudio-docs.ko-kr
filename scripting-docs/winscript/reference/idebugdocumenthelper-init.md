@@ -25,7 +25,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72576856"
 ---
 # <a name="idebugdocumenthelperinit"></a>IDebugDocumentHelper::Init
-@No__t_0 메서드는 이름 및 초기 특성을 사용 하 여 디버그 문서 도우미를 초기화 합니다.  
+`Init` 메서드는 이름 및 초기 특성을 사용 하 여 디버그 문서 도우미를 초기화 합니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -52,7 +52,7 @@ HRESULT Init(
  진행 텍스트 문서 특성을 지정 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드는 `HRESULT`를 반환 합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
+ 이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
   
 |값|설명|  
 |-----------|-----------------|  
@@ -63,7 +63,7 @@ HRESULT Init(
   
  이 문서는 `IDebugDocumentHelper::Attach`가 호출 될 때까지 트리에 나타나지 않습니다.  
   
-## <a name="see-also"></a>참조  
- [IDebugDocumentHelper:: Attach](../../winscript/reference/idebugdocumenthelper-attach.md)    
- [IDebugDocumentHelper 인터페이스](../../winscript/reference/idebugdocumenthelper-interface.md)    
+## <a name="see-also"></a>참고 항목  
+ [IDebugDocumentHelper::Attach](../../winscript/reference/idebugdocumenthelper-attach.md)   
+ [IDebugDocumentHelper 인터페이스](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [TEXT_DOC_ATTR 상수](../../winscript/reference/text-doc-attr-constants.md)

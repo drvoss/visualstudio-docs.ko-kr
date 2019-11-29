@@ -1,5 +1,5 @@
 ---
-title: Sequential Workflow Views (Legacy) | Microsoft Docs
+title: 순차 워크플로 뷰 (레거시) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -20,21 +20,21 @@ ms.lasthandoff: 11/21/2019
 ms.locfileid: "74292364"
 ---
 # <a name="sequential-workflow-views-legacy"></a>순차 워크플로 뷰(레거시)
-[!INCLUDE[vs2010](../includes/vs2010-md.md)]에서는 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 또는 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)]를 대상으로 하는 데 사용할 수 있는 레거시 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]를 제공합니다.
+[!INCLUDE[vs2010](../includes/vs2010-md.md)]은 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 또는 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]를 대상으로 하는 데 사용할 수 있는 레거시 [!INCLUDE[wfd1](../includes/wfd1-md.md)]를 제공 합니다.
 
- [!INCLUDE[wfd2](../includes/wfd2-md.md)]에서는 친숙한 [!INCLUDE[wf](../includes/wf-md.md)] 사용자 인터페이스를 사용하여 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 애플리케이션을 시각적으로 만들 수 있습니다. [!INCLUDE[wf](../includes/wf-md.md)] 애플리케이션은 활동이라고 하는 워크플로 프로세스 단계로 구성됩니다. To create a workflow, compose activities on the design surface by dragging their respective activity designers from **Toolbox** onto the design surface.
+ [!INCLUDE[wfd2](../includes/wfd2-md.md)]에서는 친숙한 [!INCLUDE[wf](../includes/wf-md.md)] 사용자 인터페이스를 사용하여 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 애플리케이션을 시각적으로 만들 수 있습니다. [!INCLUDE[wf](../includes/wf-md.md)] 애플리케이션은 활동이라고 하는 워크플로 프로세스 단계로 구성됩니다. 워크플로를 만들려면 **도구 상자** 에서 해당 활동 디자이너를 디자인 화면으로 끌어서 디자인 화면에서 활동을 작성 합니다.
 
- When you create a sequential workflow, which is a [SequentialWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65040), three views of the workflow are available. These views are accessible from the **Workflow** menu and from the context menu on the design surface.
+ [SequentialWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65040)순차 워크플로를 만드는 경우에는 세 가지 워크플로의 뷰를 사용할 수 있습니다. 이러한 보기는 **워크플로** 메뉴와 디자인 화면의 상황에 맞는 메뉴에서 액세스할 수 있습니다.
 
  다음 표에서는 각 뷰의 이름과 설명을 보여 줍니다.
 
 |메뉴/탭 옵션|설명|
 |----------------------|-----------------|
-|**View SequentialWorkflow**|Right-click the design surface and select the **View SequentialWorkflow** option from the context menu to display the **Sequential Workflow** view, which shows the activity-based graphical representation of the sequential workflow. Or select **View SequentialWorkflow** from the **Workflow** menu.|
-|**View Cancel Handler**|Right-click the design surface and select the **View Cancel Handler** option from the context menu to display the **Sequential Workflow** view, which shows the [CancellationHandlerActivity](https://go.microsoft.com/fwlink?LinkID=65050) activity associated with the workflow. Or select **View Cancel Handler** from the **Workflow** menu.|
-|**View Fault Handler**|Right-click the design surface and select the **View Fault Handler** option from the context menu to display the **Faults** view, which shows the [FaultHandlersActivity](https://go.microsoft.com/fwlink?LinkID=65055) activity associated with the workflow. Or select **View Fault Handler** from the **Workflow** menu.|
+|**SequentialWorkflow 보기**|디자인 화면을 마우스 오른쪽 단추로 클릭 하 고 상황에 맞는 메뉴에서 **SequentialWorkflow 보기** 옵션을 선택 하 **여 순차 워크플로 뷰를** 표시 합니다 .이 뷰에는 순차 워크플로의 활동 기반 그래픽 표현이 표시 됩니다. 또는 **워크플로** 메뉴에서 **SequentialWorkflow 보기** 를 선택 합니다.|
+|**취소 처리기 보기**|디자인 화면을 마우스 오른쪽 단추로 클릭 하 고 상황에 맞는 메뉴에서 **취소 처리기 보기** 옵션을 선택 하 여 워크플로에 연결 된 [CancellationHandlerActivity](https://go.microsoft.com/fwlink?LinkID=65050) 활동을 보여 주는 **순차 워크플로** 뷰를 표시 합니다. 또는 **워크플로** 메뉴에서 **취소 처리기 보기** 를 선택 합니다.|
+|**오류 처리기 보기**|디자인 화면을 마우스 오른쪽 단추로 클릭 하 고 상황에 맞는 메뉴에서 **오류 처리기 보기** 옵션을 선택 하 여 **오류** 뷰를 표시 합니다 .이 뷰는 워크플로와 연결 된 [FaultHandlersActivity](https://go.microsoft.com/fwlink?LinkID=65055) 활동을 보여 줍니다. 또는 **워크플로** 메뉴에서 **오류 처리기 보기** 를 선택 합니다.|
 
- For more information about similar views, see [Activity Views (Legacy)](../workflow-designer/activity-views-legacy.md).
+ 유사한 뷰에 대 한 자세한 내용은 [활동 뷰 (레거시)](../workflow-designer/activity-views-legacy.md)를 참조 하세요.
 
-## <a name="see-also"></a>관련 항목:
- [Activity Views (Legacy)](../workflow-designer/activity-views-legacy.md) [Creating Legacy Workflow Projects](../workflow-designer/creating-legacy-workflow-projects.md) [Workflow Authoring Modes](https://go.microsoft.com/fwlink?LinkID=65014)
+## <a name="see-also"></a>참고 항목
+ [활동 뷰 (레거시)](../workflow-designer/activity-views-legacy.md) [레거시 워크플로 프로젝트 만들기](../workflow-designer/creating-legacy-workflow-projects.md) [워크플로 제작 모드](https://go.microsoft.com/fwlink?LinkID=65014)

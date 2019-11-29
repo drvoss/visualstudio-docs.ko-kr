@@ -1,5 +1,5 @@
 ---
-title: Event Handlers Propagate Changes Outside the Model | Microsoft Docs
+title: 이벤트 처리기가 모델 외부에서 변경 내용을 전파 합니다. | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -22,29 +22,29 @@ ms.locfileid: "74295514"
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>이벤트 처리기로 모델 외부의 변경 내용 전파
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In Visualization and Modeling SDK, you can define store event handlers to propagate changes to resources outside the store, such as non-store variables, files, models in other stores, or other [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensions. Store event handlers are executed after the end of the transaction in which the triggering event occurred. They are also executed in an Undo or Redo operation. Therefore, unlike store rules, store events are most useful for updating values that are outside the store. Unlike .NET events, store event handlers are registered to listen to a class: you do not have to register a separate handler for each instance. For more information about how to choose between different ways to handle changes, see [Responding to and Propagating Changes](../modeling/responding-to-and-propagating-changes.md).
+시각화 및 모델링 SDK에서 저장소 외부의 리소스 (예: 비 스토어 변수, 파일, 다른 저장소의 모델 또는 기타 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장)에 변경 내용을 전파 하는 저장소 이벤트 처리기를 정의할 수 있습니다. 트리거 이벤트가 발생 한 트랜잭션이 종료 된 후에도 저장소 이벤트 처리기가 실행 됩니다. 실행 취소 또는 다시 실행 작업 에서도 실행 됩니다. 따라서 저장소 규칙과 달리 저장소 이벤트는 저장소 외부에 있는 값을 업데이트 하는 데 가장 유용 합니다. .NET 이벤트와 달리 저장소 이벤트 처리기는 클래스를 수신 하도록 등록 됩니다. 각 인스턴스에 대해 별도의 처리기를 등록할 필요가 없습니다. 변경 사항을 처리 하는 다양 한 방법 중에서 선택 하는 방법에 대 한 자세한 내용은 [변경 내용에 대 한 응답 및 전파](../modeling/responding-to-and-propagating-changes.md)를 참조 하세요.
 
- The graphical surface and other user interface controls are examples of external resources that can be handled by store events.
+ 그래픽 화면 및 기타 사용자 인터페이스 컨트롤은 저장소 이벤트에서 처리할 수 있는 외부 리소스의 예입니다.
 
-### <a name="to-define-a-store-event"></a>To define a store event
+### <a name="to-define-a-store-event"></a>저장소 이벤트를 정의 하려면
 
-1. Choose the type of event that you want to monitor. For a full list, look at the properties of <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Each property corresponds to a type of event. The most frequently used event types are:
+1. 모니터링할 이벤트 유형을 선택 합니다. 전체 목록은 <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>의 속성을 참조 하세요. 각 속성은 이벤트의 형식에 해당 합니다. 가장 자주 사용 되는 이벤트 유형은 다음과 같습니다.
 
-   - `ElementAdded` – triggered when a model element, relationship link, shape or connector is created.
+   - `ElementAdded` – 모델 요소, 관계 링크, 셰이프 또는 연결선을 만들 때 트리거됩니다.
 
-   - ElementPropertyChanged – triggered when the value of a `Normal` domain property is changed. The event is triggered only if the new and old values are not equal. The event cannot be applied to calculated and custom storage properties.
+   - ElementPropertyChanged – `Normal` 도메인 속성 값이 변경 될 때 트리거됩니다. 이벤트는 새 값과 이전 값이 같지 않은 경우에만 트리거됩니다. 계산 된 저장소 속성 및 사용자 지정 저장소 속성에는 이벤트를 적용할 수 없습니다.
 
-        It cannot be applied to the role properties that correspond to relationship links. Instead, use `ElementAdded` to monitor the domain relationship.
+        관계 링크에 해당 하는 역할 속성에는 적용할 수 없습니다. 대신 `ElementAdded`를 사용 하 여 도메인 관계를 모니터링 합니다.
 
-   - `ElementDeleted` – triggered after a model element, relationship, shape or connector has been deleted. You can still access the property values of the element, but it will have no relationships to other elements.
+   - `ElementDeleted` – 모델 요소, 관계, 모양 또는 커넥터가 삭제 된 후에 트리거됩니다. 요소의 속성 값에 계속 액세스할 수 있지만 다른 요소와의 관계는 없습니다.
 
-2. Add a partial class definition for _YourDsl_**DocData** in a separate code file in the **DslPackage** project.
+2. **Dslpackage** 프로젝트의 별도 코드 파일에 _dsl_**docdata** 에 대 한 부분 클래스 정의를 추가 합니다.
 
-3. Write the code of the event as a method, as in the following example. It can be `static`, unless you want to access `DocData`.
+3. 다음 예제와 같이 이벤트의 코드를 메서드로 작성 합니다. `DocData`에 액세스 하려는 경우를 제외 하 고 `static`수 있습니다.
 
-4. Override `OnDocumentLoaded()` to register the handler. If you have more than one handler, you can register them all in the same place.
+4. 처리기를 등록 하려면 `OnDocumentLoaded()`를 재정의 합니다. 둘 이상의 처리기가 있는 경우 모두 동일한 장소에 등록할 수 있습니다.
 
-   The location of the registration code is not critical. `DocView.LoadView()` is an alternative location.
+   등록 코드의 위치는 중요 하지 않습니다. `DocView.LoadView()`는 대체 위치입니다.
 
 ```
 using System;
@@ -93,12 +93,12 @@ namespace Company.MusicLib
 
 ```
 
-## <a name="using-events-to-make-undoable-adjustments-in-the-store"></a>Using Events to Make Undoable Adjustments in the Store
- Store events are not normally used for propagating changes inside the store, because the event handler executes after the transaction is committed. Instead, you would use a store rule. For more information, see [Rules Propagate Changes Within the Model](../modeling/rules-propagate-changes-within-the-model.md).
+## <a name="using-events-to-make-undoable-adjustments-in-the-store"></a>이벤트를 사용 하 여 저장소에서 취소할 수 있는 조정 만들기
+ 트랜잭션 커밋 후 이벤트 처리기가 실행 되기 때문에 저장소 이벤트는 일반적으로 저장소 내에서 변경 내용을 전파 하는 데 사용 되지 않습니다. 대신 저장소 규칙을 사용 합니다. 자세한 내용은 [모델 내에서 변경 내용 전파 규칙](../modeling/rules-propagate-changes-within-the-model.md)을 참조 하세요.
 
- However, you could use an event handler to make additional updates to the store, if you want the user to be able to undo the additional updates separately from the original event. For example, suppose that lower case characters are the usual convention for album titles. You could write a store event handler that corrects the title to lower case after the user has typed it in upper case. But the user could use the Undo command to cancel your correction, restoring the upper case characters. A second Undo would remove the user’s change.
+ 그러나 사용자가 원래 이벤트와 별도로 추가 업데이트를 실행 취소할 수 있도록 하려면 이벤트 처리기를 사용 하 여 저장소에 대 한 추가 업데이트를 만들 수 있습니다. 예를 들어 낮은 케이스 문자가 앨범 제목의 일반적인 규칙 이라고 가정 합니다. 사용자가 대문자로 입력 한 후 소문자로 제목을 수정 하는 저장소 이벤트 처리기를 작성할 수 있습니다. 그러나 사용자는 실행 취소 명령을 사용 하 여 대/소문자를 복원 하는 수정 작업을 취소할 수 있습니다. 두 번째 실행 취소는 사용자의 변경 내용을 제거 합니다.
 
- By contrast, if you wrote a store rule to do the same thing, the user’s change and your correction would be in the same transaction, so that the user could not undo the adjustment without losing the original change.
+ 이와 대조적으로 동일한 작업을 수행 하는 저장 규칙을 작성 한 경우 사용자가 변경 내용을 유지 하는 동시에 사용자가 원래 변경 내용을 잃지 않고 조정을 취소할 수 없게 됩니다.
 
 ```
 
@@ -164,30 +164,30 @@ private static void AlbumTitleAdjuster(object sender,
 
 ```
 
- If you write an event that updates the store:
+ 저장소를 업데이트 하는 이벤트를 작성 하는 경우:
 
-- Use `store.InUndoRedoOrRollback` to avoid making changes to model elements in Undo. The transaction manager will set everything in the store back to its original state.
+- 실행 취소의 모델 요소를 변경 하지 않으려면 `store.InUndoRedoOrRollback`를 사용 합니다. 트랜잭션 관리자는 저장소의 모든 항목을 원래 상태로 다시 설정 합니다.
 
-- Use `store.InSerializationTransaction` to avoid making changes while the model is being loaded from file.
+- 모델을 파일에서 로드 하는 동안 변경 하지 않으려면 `store.InSerializationTransaction`를 사용 합니다.
 
-- Your changes will cause further events to be triggered. Make sure that you avoid an infinite loop.
+- 변경 내용으로 인해 추가 이벤트가 트리거됩니다. 무한 루프가 발생 하지 않도록 하십시오.
 
-## <a name="store-event-types"></a>Store Event types
- Each event type corresponds to a collection in Store.EventManagerDirectory. You can add or remove event handlers at any time, but it is usual to add them when the document is loaded.
+## <a name="store-event-types"></a>이벤트 유형 저장
+ 각 이벤트 형식은 EventManagerDirectory의 컬렉션에 해당 합니다. 언제 든 지 이벤트 처리기를 추가 하거나 제거할 수 있지만 문서가 로드 될 때 이러한 처리기를 추가 하는 것이 일반적입니다.
 
-|`EventManagerDirectory` Property name|Executed when|
+|`EventManagerDirectory` 속성 이름|실행 시간|
 |-------------------------------------------|-------------------|
-|ElementAdded|An instance of a domain class, domain relationship, shape, connector or diagram is created.|
-|ElementDeleted|A model element has been removed from the store’s element directory and is no longer the source or target of any relationship. The element is not actually deleted from memory, but is retained in case of a future Undo.|
-|ElementEventsBegun|Invoked at the end of an outer transaction.|
-|ElementEventsEnded|Invoked when all other events have been processed.|
-|ElementMoved|A model element has been moved from one store partition to another.<br /><br /> This is not related to the location of a shape on the diagram.|
-|ElementPropertyChanged|The value of a domain property has changed. This is executed only if the old and new values are unequal.|
-|RolePlayerChanged|One of the two roles (ends) of a relationship references a new element.|
-|RolePlayerOrderChanged|In a role with multiplicity greater than 1, the sequence of links has changed.|
+|ElementAdded 됨|도메인 클래스, 도메인 관계, 셰이프, 연결선 또는 다이어그램의 인스턴스가 만들어집니다.|
+|ElementDeleted|모델 요소가 저장소의 요소 디렉터리에서 제거 되었으며 더 이상 관계의 소스 또는 대상이 아닙니다. 요소는 실제로 메모리에서 삭제 되지 않지만 이후 실행 취소의 경우 유지 됩니다.|
+|ElementEventsBegun|외부 트랜잭션의 끝에서 호출 됩니다.|
+|ElementEventsEnded|다른 모든 이벤트가 처리 될 때 호출 됩니다.|
+|ElementMoved|하나의 저장소 파티션에서 다른 저장소 파티션으로 모델 요소가 이동 되었습니다.<br /><br /> 이는 다이어그램에서 셰이프의 위치와는 관련이 없습니다.|
+|ElementPropertyChanged|도메인 속성의 값이 변경 되었습니다. 이전 값과 새 값이 같지 않은 경우에만 실행 됩니다.|
+|RolePlayerChanged|관계의 두 역할 (end) 중 하나가 새 요소를 참조 합니다.|
+|RolePlayerOrderChanged|복합성이 1 보다 큰 역할에서 링크 시퀀스는 변경 되었습니다.|
 |TransactionBeginning||
 |TransactionCommitted||
 |TransactionRolledBack||
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [변경 내용에 대한 대응 및 전파](../modeling/responding-to-and-propagating-changes.md)

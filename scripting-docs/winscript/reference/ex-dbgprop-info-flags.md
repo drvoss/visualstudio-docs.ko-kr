@@ -25,7 +25,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72575848"
 ---
 # <a name="ex_dbgprop_info_flags"></a>EX_DBGPROP_INFO_FLAGS
-@No__t_0 필드를 지정 하는 데 사용 됩니다.  
+`ExtendedDebugPropertyInfo` 필드를 지정 하는 데 사용 됩니다.  
   
 ## <a name="syntax"></a>구문  
   
@@ -50,11 +50,11 @@ enum {
  속성의 값을 초기화 합니다.  
   
  EX_DBGPROP_INFO_LOCKBYTES  
- @No__t_0 필드를 초기화 합니다.  
+ `plb` 필드를 초기화 합니다.  
   
  EX_DBGPROP_INFO_DEBUGEXTPROP  
- @No__t_1 인터페이스를 포함 하는 `pDebugExtProp` 필드를 초기화 합니다.  
+ `IDebugExtendedProperty` 인터페이스를 포함 하는 `pDebugExtProp` 필드를 초기화 합니다.  
   
-## <a name="see-also"></a>참조  
- [ExtendedDebugPropertyInfo 구조체](../../winscript/reference/extendeddebugpropertyinfo-structure.md)    
+## <a name="see-also"></a>참고 항목  
+ [ExtendedDebugPropertyInfo 구조체](../../winscript/reference/extendeddebugpropertyinfo-structure.md)   
  [IDebugExtendedProperty 인터페이스](../../winscript/reference/idebugextendedproperty-interface.md)

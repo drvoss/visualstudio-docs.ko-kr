@@ -44,7 +44,7 @@ HRESULT Advise(
  제한이 이 연결을 고유 하 게 식별 하는 반환 된 토큰에 대 한 포인터입니다. 호출자는 나중에이 토큰을 사용 하 여 연결을 `ISimpleConnectionPoint::Unadvise` 메서드에 전달 함으로써 삭제 합니다. 연결이 제대로 설정 되지 않은 경우이 값은 0입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드는 `HRESULT`를 반환 합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
+ 이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
   
 |값|설명|  
 |-----------|-----------------|  
@@ -53,6 +53,6 @@ HRESULT Advise(
 ## <a name="remarks"></a>주의  
  이 메서드는 단순 연결 지점 개체와 클라이언트의 싱크 간에 연결을 설정 합니다.  
   
-## <a name="see-also"></a>참조  
- [ISimpleConnectionPoint 인터페이스](../../winscript/reference/isimpleconnectionpoint-interface.md)    
+## <a name="see-also"></a>참고 항목  
+ [ISimpleConnectionPoint 인터페이스](../../winscript/reference/isimpleconnectionpoint-interface.md)   
  [ISimpleConnectionPoint::Unadvise](../../winscript/reference/isimpleconnectionpoint-unadvise.md)

@@ -1,5 +1,5 @@
 ---
-title: Creating and managing databases and data-tier applications
+title: 데이터베이스 및 데이터 계층 응용 프로그램 만들기 및 관리
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -25,19 +25,19 @@ ms.locfileid: "74299640"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 중요]
-> The database projects that were included in earlier versions of [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] are now provided in [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] tools. For more information, see [SQL Server Developer Tools](https://go.microsoft.com/fwlink/?LinkId=228126).
+> 이전 버전의 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에 포함 된 데이터베이스 프로젝트는 이제 [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] 도구에서 제공 됩니다. 자세한 내용은 [SQL Server Developer 도구](https://go.microsoft.com/fwlink/?LinkId=228126)를 참조 하세요.
 
- You can use database projects to create new databases, new data-tier applications (DACs), and to update existing databases and data-tier applications. Both database projects and DAC projects enable you to apply version control and project management techniques to your database development efforts in much the same way that you apply those techniques to managed or native code. You can help your development team manage changes to databases and database servers by creating a *DAC project*, *database project*, or a *server project* and putting it under version control. Members of your team can then check out files to make, build, and test changes in an *isolated development environment*, or sandbox, before sharing them with the team. To help ensure code quality, your team can finish and test all changes for a particular release of the database in a staging environment before you deploy the changes into production.
+ 데이터베이스 프로젝트를 사용 하 여 새 데이터베이스, 새 Dac (데이터 계층 응용 프로그램)를 만들고 기존 데이터베이스 및 데이터 계층 응용 프로그램을 업데이트할 수 있습니다. 데이터베이스 프로젝트와 DAC 프로젝트를 모두 사용 하면 관리 코드 또는 네이티브 코드에 이러한 기술을 적용 하는 것과 거의 동일한 방식으로 데이터베이스 개발 작업에 버전 제어 및 프로젝트 관리 기법을 적용할 수 있습니다. *DAC 프로젝트*, *데이터베이스 프로젝트*또는 *서버 프로젝트* 를 만들고 버전 제어에 배치 하 여 개발 팀이 데이터베이스 및 데이터베이스 서버에 대 한 변경 내용을 관리 하도록 지원할 수 있습니다. 팀 멤버는 파일을 체크 아웃 하 여 *격리 된 개발 환경*에서 변경 내용을 적용, 빌드 및 테스트 한 후 팀과 공유할 수 있습니다. 코드 품질을 보장 하기 위해 팀은 변경 내용을 프로덕션에 배포 하기 전에 스테이징 환경에서 데이터베이스의 특정 릴리스에 대 한 모든 변경 내용을 완료 하 고 테스트할 수 있습니다.
 
- For a list of the database features that are supported by Data-tier Applications, see [Features Supported in Data-tier Applications](https://go.microsoft.com/fwlink/?LinkId=164239) on the Microsoft web site. If you use features in your database that are not supported by Data-tier Applications, you should instead use a database project to manage changes to your database.
+ 데이터 계층 응용 프로그램에서 지원 되는 데이터베이스 기능 목록은 Microsoft 웹 사이트의 [데이터 계층 응용 프로그램에서 지원](https://go.microsoft.com/fwlink/?LinkId=164239) 되는 기능을 참조 하십시오. 데이터 계층 응용 프로그램에서 지원 하지 않는 기능을 데이터베이스에서 사용 하는 경우에는 데이터베이스 프로젝트를 사용 하 여 데이터베이스에 대 한 변경 내용을 관리 해야 합니다.
 
-## <a name="common-high-level-tasks"></a>Common High-Level Tasks
+## <a name="common-high-level-tasks"></a>일반적인 상위 수준 작업
 
-|High-Level Task|지원 내용|
+|상위 수준 작업|지원 내용|
 |----------------------|------------------------|
-|**Start development of a data-tier application:** A DAC is a new concept introduced with [!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] that contains the definition for a [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] database and the supporting instance objects that are used by a client-server or 3-tier application. A DAC includes database objects, such as tables and views, together with instance entities such as logins. You can use [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] to create a DAC project, build a DAC package file, and send that DAC package file to a database administrator for deployment onto an instance of the [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] database engine.|-   [Creating and Managing Data-tier Applications](https://go.microsoft.com/fwlink/?LinkId=160741) (Microsoft web site)<br />-   [SQL Server Management Studio](https://go.microsoft.com/fwlink/?LinkId=227328)|
-|**Performing iterative database development:** If you are a developer or a tester, you check out parts of the project and then update them in an isolated development environment. By using this type of environment, you can test  your changes without affecting other members of the team. After the changes are complete, you check the files back into version control, where other team members can obtain your changes and build and deploy them to a test server.|-   [Query and Text Editors (SQL Server Management Studio)](https://go.microsoft.com/fwlink/?LinkId=227327) (Microsoft web site)<br />-   [Transact-SQL Debugger](https://go.microsoft.com/fwlink/?LinkId=227324) (Microsoft web site)|
-|**Prototyping, verifying test results, and modifying database scripts and objects:** You can use the [!INCLUDE[tsql](../includes/tsql-md.md)] editor to perform any one of these common tasks.|-   [Query and Text Editors (SQL Server Management Studio)](https://go.microsoft.com/fwlink/?LinkId=227327) (Microsoft web site)|
+|**데이터 계층 응용 프로그램 개발을 시작 합니다.** DAC는 [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] 데이터베이스에 대 한 정의와 클라이언트 서버 또는 3 계층 응용 프로그램에서 사용 하는 지원 인스턴스 개체를 포함 하는 [!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)]에 도입 된 새로운 개념입니다. DAC에는 데이터베이스 개체 (예: 테이블 및 뷰)와 함께 인스턴스 엔터티 (예: 로그인)가 포함 됩니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 사용 하 여 DAC 프로젝트를 만들고, DAC 패키지 파일을 작성 하 고,이 DAC 패키지 파일을 데이터베이스 관리자에 게 배포 하 여 [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] 데이터베이스 엔진의 인스턴스로 보낼 수 있습니다.|[데이터 계층 응용 프로그램 만들기 및 관리](https://go.microsoft.com/fwlink/?LinkId=160741) -   (Microsoft 웹 사이트)<br />-   [SQL Server Management Studio](https://go.microsoft.com/fwlink/?LinkId=227328)|
+|**반복적인 데이터베이스 개발 수행:** 개발자 또는 테스터 인 경우 프로젝트의 일부를 체크 아웃 한 다음 격리 된 개발 환경에서 업데이트 합니다. 이러한 유형의 환경을 사용 하 여 팀의 다른 멤버에 게 영향을 주지 않고 변경 내용을 테스트할 수 있습니다. 변경이 완료 되 면 파일을 다시 버전 제어에 체크 인 합니다. 그러면 다른 팀 멤버가 변경 내용을 가져와 테스트 서버에 빌드하고 배포할 수 있습니다.|-   [쿼리 및 텍스트 편집기 (SQL Server Management Studio)](https://go.microsoft.com/fwlink/?LinkId=227327) (Microsoft 웹 사이트)<br />[Transact-sql 디버거](https://go.microsoft.com/fwlink/?LinkId=227324) -   (Microsoft 웹 사이트)|
+|**프로토타입 생성, 테스트 결과 확인 및 데이터베이스 스크립트 및 개체 수정:** [!INCLUDE[tsql](../includes/tsql-md.md)] 편집기를 사용 하 여 이러한 일반적인 작업 중 하나를 수행할 수 있습니다.|-   [쿼리 및 텍스트 편집기 (SQL Server Management Studio)](https://go.microsoft.com/fwlink/?LinkId=227327) (Microsoft 웹 사이트)|
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [.NET용 Visual Studio 데이터 도구](../data-tools/visual-studio-data-tools-for-dotnet.md)

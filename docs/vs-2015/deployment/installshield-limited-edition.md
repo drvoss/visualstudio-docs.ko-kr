@@ -1,5 +1,5 @@
 ---
-title: InstallShield Limited Edition | Microsoft Docs
+title: InstallShield 제한 된 버전 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment

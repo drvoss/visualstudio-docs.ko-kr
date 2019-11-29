@@ -1,5 +1,5 @@
 ---
-title: Build apps with native UI using Xamarin
+title: Xamarin을 사용 하 여 네이티브 UI를 사용 하 여 앱 빌드
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: tgt-pltfrm-cross-plat
@@ -20,7 +20,7 @@ ms.locfileid: "74297915"
 
 [설정 및 설치](../cross-platform/setup-and-install.md) 및 [Xamarin 환경 확인](../cross-platform/verify-your-xamarin-environment.md)의 단계를 완료했으면 이 연습 과정을 통해 네이티브 UI 레이어로 기본 Xamarin 앱을 빌드하는 방법을 확인합니다(아래 참조). 네이티브 UI에서는 공유 코드가 PCL(이식 가능한 클래스 라이브러리)에 상주하며 개별 플랫폼 프로젝트가 UI 정의를 포함합니다.
 
- ![Xamarin app on Android and Windows Phone](../cross-platform/media/cross-plat-xamarin-build-1.png "Cross-Plat Xamarin Build 1")
+ ![Android 및 Windows Phone의 Xamarin 앱](../cross-platform/media/cross-plat-xamarin-build-1.png "크로스 Cross-plat Xamarin 빌드 1")
 
  앱을 빌드하려면 다음 작업을 수행합니다.
 
@@ -87,7 +87,7 @@ ms.locfileid: "74297915"
 
    - **설치**를 클릭합니다.
 
-   - ![Locating and installing the Newtonsoft.Json NuGet package](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")
+   - ![Newtonsoft.json NuGet 패키지 찾기 및 설치](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin 양식 가이드 5")
 
 4. 3단계를 반복하여 **Microsoft.Net.Http** 패키지를 찾아서 설치합니다.
 
@@ -249,8 +249,8 @@ ms.locfileid: "74297915"
 
     |속성|값|
     |--------------|-----------|
-    |**텍스트**|**우편 번호로 검색**|
-    |**ID**|`@+id/ZipCodeSearchLabel`|
+    |**text**|**우편 번호로 검색**|
+    |**id**|`@+id/ZipCodeSearchLabel`|
     |**layout_marginLeft**|`10dp`|
     |**textColor**|`@android:color/white`|
     |**textStyle**|`bold`|
@@ -281,8 +281,8 @@ ms.locfileid: "74297915"
 
     |속성|값|
     |--------------|-----------|
-    |**텍스트**|**우편 번호**|
-    |**ID**|`@+id/ZipCodeLabel`|
+    |**text**|**우편 번호**|
+    |**id**|`@+id/ZipCodeLabel`|
     |**layout_marginLeft**|`10dp`|
     |**layout_marginTop**|`5dp`|
 
@@ -303,7 +303,7 @@ ms.locfileid: "74297915"
 
     |속성|값|
     |--------------|-----------|
-    |**ID**|`@+id/zipCodeEntry`|
+    |**id**|`@+id/zipCodeEntry`|
     |**layout_marginLeft**|`10dp`|
     |**layout_marginBottom**|`10dp`|
     |**width**|`165dp`|
@@ -326,8 +326,8 @@ ms.locfileid: "74297915"
 
     |속성|값|
     |--------------|-----------|
-    |**ID**|`@+id/weatherBtn`|
-    |**텍스트**|**날씨 검색**|
+    |**id**|`@+id/weatherBtn`|
+    |**text**|**날씨 검색**|
     |**layout_marginLeft**|`20dp`|
     |**layout_alignBottom**|`@id/zipCodeEntry`|
     |**width**|`165dp`|
@@ -343,7 +343,7 @@ ms.locfileid: "74297915"
         android:width="165dp" />
     ```
 
-12. Android 디자이너를 사용하여 기본 UI를 빌드할 수 있을 정도로 충분히 연습했습니다. 페이지의 .asxml 파일에 직접 마크업을 추가하여 UI를 빌드할 수도 있습니다. UI의 나머지를 이런 방식으로 빌드하려면 디자이너에서 소스 보기로 전환하고, `</RelativeLayout>` 태그 *아래에* 다음 마크업을 붙여 넣습니다. 태그 아래입니다. 이러한 요소는 ReleativeLayout에 포함되어 있지 않습니다.
+12. Android 디자이너를 사용하여 기본 UI를 빌드할 수 있을 정도로 충분히 연습했습니다. 페이지의 .asxml 파일에 직접 마크업을 추가하여 UI를 빌드할 수도 있습니다. UI의 나머지를 이런 방식으로 빌드하려면 디자이너에서 소스 보기로 전환하고, *태그*아래에`</RelativeLayout>` 다음 마크업을 붙여 넣습니다. 태그 아래입니다. 이러한 요소는 ReleativeLayout에 포함되어 있지 않습니다.
 
     ```xml
     <TextView
@@ -450,7 +450,7 @@ ms.locfileid: "74297915"
 
 13. 파일을 저장하고 **디자인** 보기로 전환합니다. UI가 다음과 같아야 합니다.
 
-     ![UI for Android app](../cross-platform/media/xamarin-androidui.png "Xamarin_AndroidUI")
+     ![Android 앱에 대 한 UI](../cross-platform/media/xamarin-androidui.png "Xamarin_AndroidUI")
 
 14. **MainActivity.cs**를 열고 *OnCreate* 메서드에서 앞서 제거된 기본 단추를 참조하는 줄을 삭제합니다. 완료했을 때 코드는 다음과 같습니다.
 
@@ -520,7 +520,7 @@ ms.locfileid: "74297915"
 
 3. 디바이스 또는 에뮬레이터에서 편집 상자에 유효한 미국 우편 번호(예: 60601)를 입력하고 **Get Weather**를 누릅니다. 그러면 해당 지역의 날씨 데이터가 컨트롤에 표시됩니다.
 
-     ![Weather app for Android and Windows Phone](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
+     ![Android 및 Windows Phone 용 날씨 앱](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
 
 > [!TIP]
 > 이 프로젝트에 대한 전체 소스 코드는 [GitHub의 xamarin-forms-samples 리포지토리](https://github.com/xamarin/mobile-samples/tree/master/Weather)에 있습니다.
@@ -579,13 +579,13 @@ ms.locfileid: "74297915"
 
  디자인 보기에서 UI가 다음과 같아야 합니다.
 
- ![Windows Phone app UI](../cross-platform/media/xamarin-winphone-finalui.png "Xamarin_WinPhone_FinalUI")
+ ![Windows Phone 앱 UI](../cross-platform/media/xamarin-winphone-finalui.png "Xamarin_WinPhone_FinalUI")
 
 ### <a name="consume-your-shared-code"></a>공유 코드 사용
 
 1. 디자이너에서 **날씨 검색** 단추를 선택합니다.
 
-2. In the **Properties** window, choose the event handler button (![Visual Studio Event Handlers icon](../cross-platform/media/blend-vs-eventhandlers-icon.png "blend_VS_EventHandlers_icon")).
+2. **속성** 창에서 이벤트 처리기 단추 (![Visual Studio 이벤트 처리기 아이콘](../cross-platform/media/blend-vs-eventhandlers-icon.png "blend_VS_EventHandlers_icon"))를 선택 합니다.
 
      이 아이콘은 **속성** 창의 위 모퉁이에 표시됩니다.
 
@@ -626,7 +626,7 @@ ms.locfileid: "74297915"
 
 3. Windows Phone 에뮬레이터에서 편집 상자에 유효한 미국 우편 번호(예: 60601)를 입력한 다음 **Get Weather**를 누릅니다. 그러면 해당 지역의 날씨 데이터가 컨트롤에 표시됩니다.
 
-     ![Windows version of the running app](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
+     ![실행 중인 앱의 Windows 버전](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
 
 > [!TIP]
 > 이 프로젝트에 대한 전체 소스 코드는 [GitHub의 xamarin-forms-samples 리포지토리](https://github.com/xamarin/mobile-samples/tree/master/Weather)에 있습니다.
@@ -642,5 +642,5 @@ ms.locfileid: "74297915"
 
  PCL의 공유 코드는 플랫폼 중립적입니다. PCL은 한 번 컴파일되어 각 플랫폼별 앱 패키지에 포함되기 때문입니다. 플랫폼별 코드를 격리하는 조건부 컴파일을 사용하는 공유 코드를 작성하려면 *공유* 프로젝트를 사용할 수 있습니다. 자세한 내용은 [ode Sharing Options](https://docs.microsoft.com/xamarin/cross-platform/app-fundamentals/code-sharing)(xamarin.com)를 참조하세요.
 
-## <a name="see-also"></a>관련 항목:
- [Xamarin Developer site](https://docs.microsoft.com/xamarin/) [Windows Dev Center](https://dev.windows.com/en-us) [Swift and C# Quick Reference Poster](https://aka.ms/scposter)
+## <a name="see-also"></a>참고 항목
+ [Xamarin 개발자 사이트](https://docs.microsoft.com/xamarin/) [Windows 개발자 센터](https://dev.windows.com/en-us) [Swift 및 C# 빠른 참조 포스터](https://aka.ms/scposter)

@@ -22,12 +22,12 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72575911"
 ---
 # <a name="expected-while"></a>'while'이 필요합니다.
-@No__t_1 루프에 `while` 조건을 포함 하지 않았습니다. **Do** 문에는 코드 블록의 끝에 해당 하는 `while` 테스트가 있어야 합니다.  
+`do...while` 루프에 `while` 조건을 포함 하지 않았습니다. **Do** 문에는 코드 블록의 끝에 해당 하는 `while` 테스트가 있어야 합니다.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   
 - 닫는 중괄호 뒤에 `while` test 문을 포함 합니다.  
   
-## <a name="see-also"></a>참조  
- [While 문](../../javascript/reference/while-statement-javascript.md)    
+## <a name="see-also"></a>참고 항목  
+ [While 문](../../javascript/reference/while-statement-javascript.md)   
  [프로그램 흐름 제어](../../javascript/controlling-program-flow-javascript.md)

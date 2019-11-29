@@ -34,7 +34,7 @@ ms.locfileid: "74297794"
 
 - **SAMI 1.0 이해** Microsoft SAMI(Synchronized Accessible Media Interchange) 기술을 사용하면 개발자가 PC 멀티미디어용 오디오 콘텐츠에 캡션을 추가할 수 있습니다. 자세한 내용은 [https://msdn.microsoft.com/library/ms971327.aspx](https://msdn.microsoft.com/library/ms971327.aspx)를 참조하세요.
 
-## <a name="windows-applications"></a>Windows 애플리케이션
+## <a name="windows-applications"></a>Windows 응용 프로그램
 
 - [연습: 내게 필요한 옵션이 지원되는 Windows 기반 애플리케이션 만들기](https://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b) 이 항목에서는 Certified for Windows 로고 취득을 위해 갖춰야 하는 5가지 내게 필요한 옵션 조건을 포함하는 방법을 샘플 Windows 애플리케이션을 통해 단계별로 설명합니다.
 
@@ -42,7 +42,7 @@ ms.locfileid: "74297794"
 
 - [내게 필요한 옵션이 있는 콘솔](/previous-versions/windows/desktop/dnacc/console-accessibility) 이 기술 문서에서는 Windows XP에서 내게 필요한 옵션 보조 도구를 사용할 수 있도록 콘솔을 노출하는 데 사용되는 API와 이벤트에 대해 설명합니다.
 
-## <a name="web-sites"></a>웹 사이트
+## <a name="web-sites"></a>네트워크 토폴로지
 
 - [연습: 이미지 컨트롤, 메뉴 컨트롤 및 AutoPostBack을 사용하기 위한 내게 필요한 옵션 지침](https://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) 이 항목에서는 샘플 웹 페이지에 내게 필요한 옵션이 있는 컨트롤을 포함하는 방법과 웹에 대한 내게 필요한 옵션의 몇 가지 설계 팁을 단계적으로 설명합니다.
 
@@ -56,5 +56,5 @@ ms.locfileid: "74297794"
 
 - **W3C의 웹 콘텐츠에 대한 내게 필요한 옵션 지침** 이 웹 사이트에는 내게 필요한 옵션이 있는 웹 사이트 개발에 필요한 지침 및 기술이 있습니다. 자세한 내용은 [http://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/)를 참조하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [Visual Studio의 접근성 기능](../../ide/reference/accessibility-features-of-visual-studio.md)

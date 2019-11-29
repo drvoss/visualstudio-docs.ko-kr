@@ -34,7 +34,7 @@ break labelname;
   
 - **Break** 키워드가 바깥쪽 루프 또는 switch 문 내에 표시 되는지 확인 합니다.  
   
-## <a name="see-also"></a>참조  
+## <a name="see-also"></a>참고 항목  
  [break 문](../../javascript/reference/break-statement-javascript.md)   
- [프로그램 흐름   제어](../../javascript/controlling-program-flow-javascript.md)  
+ [프로그램 흐름  제어](../../javascript/controlling-program-flow-javascript.md)  
  [스크립트 문제 해결](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

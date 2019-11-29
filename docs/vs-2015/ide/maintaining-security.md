@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 008199331778a1e7d780a6aac7591ca2285d683e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dfff199d49bcb801b85452b37c4282ff53d01fe4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651404"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74294251"
 ---
 # <a name="maintaining-security"></a>보안 유지 관리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "72651404"
 
  또한 애플리케이션에 대한 경계를 늦추지 않아야 할 뿐만 아니라 애플리케이션이 실행되는 플랫폼과 종속되는 다른 제품의 보안 위협 및 결함을 지속적으로 확인해야 합니다.
 
- [보안, 개인 정보 및 계정](http://go.microsoft.com/fwlink/?LinkId=72881) 바이러스, 암호, 자녀 보호, 방화벽 및 드라이브 암호화에 대 한 정보를 포함 하 여 보안, 개인 정보 및 사용자 계정에 대 한 도움을 받으세요.
+ [보안, 개인 정보 및 계정](https://go.microsoft.com/fwlink/?LinkId=72881) 바이러스, 암호, 자녀 보호, 방화벽 및 드라이브 암호화에 대 한 정보를 포함 하 여 보안, 개인 정보 및 사용자 계정에 대 한 도움을 받으세요.
 
  [Microsoft 보안 공지 검색](/security-updates/) 이 페이지를 사용 하면 이전에 릴리스된 게시판을 쉽게 찾을 수 있습니다. IT 전문가를 위한 보안 게시판에는 보안 업데이트와 관련된 자세한 정보가 있습니다.
 

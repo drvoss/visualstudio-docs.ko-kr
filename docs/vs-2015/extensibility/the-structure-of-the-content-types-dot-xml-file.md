@@ -1,5 +1,5 @@
 ---
-title: The Structure of the Content_types].xml File | Microsoft Docs
+title: Content_types] .xml 파일의 구조입니다. Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -23,70 +23,70 @@ ms.locfileid: "74301231"
 # <a name="the-structure-of-the-content_typesxml-file"></a>[Content_types].xml 파일의 구조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Contains information about the kinds of content in a VSIX package. Visual Studio uses the [Content_Types].xml file to install the package, but it does not install the file itself.  
+VSIX 패키지의 콘텐츠 종류에 대 한 정보를 포함 합니다. Visual Studio는 [Content_Types] .xml 파일을 사용 하 여 패키지를 설치 하지만 파일 자체를 설치 하지는 않습니다.  
   
 > [!NOTE]
-> Although this topic applies only to [Content_Type].xml files that are used in VSIX packages, the [Content_Types].xml file type is part of the *Open Packaging Conventions (OPC)* standard. For more information, see [OPC: A New Standard For Packaging Your Data](https://go.microsoft.com/fwlink/?LinkID=148207) on the MSDN Web site.  
+> 이 항목은 VSIX 패키지에 사용 되는 [Content_Type] .xml 파일에만 적용 되기는 하지만 [Content_Types] .xml 파일 형식은 *OPC (Open 패키징 규칙)* 표준의 일부입니다. 자세한 내용은 OPC: MSDN 웹 사이트에서 [데이터를 패키징하는 새 표준](https://go.microsoft.com/fwlink/?LinkID=148207) 을 참조 하세요.  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
- The following sections describe the root element and its attributes and child elements.  
+ 다음 섹션에서는 루트 요소와 해당 특성 및 자식 요소에 대해 설명 합니다.  
   
-### <a name="root-element"></a>루트 요소  
+### <a name="root-element"></a>Root 요소  
   
 |요소|설명|  
 |-------------|-----------------|  
-|`Types`|Contains child elements that enumerate the file types in the VSIX package.|  
+|`Types`|VSIX 패키지의 파일 형식을 열거 하는 자식 요소를 포함 합니다.|  
   
 ### <a name="attributes"></a>특성  
   
 |특성|설명|  
 |---------------|-----------------|  
-|`Xmlns`|(Required.) The location of the schema used for this [Content_Types].xml file.|  
+|`Xmlns`|필요 합니다. 이 [Content_Types] .xml 파일에 사용 되는 스키마의 위치입니다.|  
   
-### <a name="attribute-name-attribute"></a>{Attribute name} Attribute  
+### <a name="attribute-name-attribute"></a>{Attribute name} 특성도  
   
 |                           값                           |                설명                |
 |-----------------------------------------------------------|-------------------------------------------|
-| http://schemas.openformats.org/package/2006/content-types | The location of the content types schema. |
+| http://schemas.openformats.org/package/2006/content-types | 콘텐츠 형식 스키마의 위치입니다. |
   
 ### <a name="child-elements"></a>자식 요소  
- The `Types` element can contain any number of `Default` elements.  
+ `Types` 요소는 개수에 관계없이 `Default` 요소를 포함할 수 있습니다.  
   
 |요소|설명|  
 |-------------|-----------------|  
-|`Default`|Describes a content type in the VSIX package. Every file type in the package must have its own `Default` element.|  
+|`Default`|VSIX 패키지의 콘텐츠 형식을 설명 합니다. 패키지의 모든 파일 형식에는 자체 `Default` 요소가 있어야 합니다.|  
   
 ### <a name="attributes"></a>특성  
   
 |특성|설명|  
 |---------------|-----------------|  
-|`Extension`|The file name extension of a file in the VSIX package.|  
-|`ContentType`|Describes the kind of content that is associated with the file name extension.|  
+|`Extension`|VSIX 패키지에 있는 파일의 파일 이름 확장명입니다.|  
+|`ContentType`|파일 이름 확장명과 연결 된 콘텐츠의 종류를 설명 합니다.|  
   
-### <a name="attribute-name-attribute"></a>{Attribute name} Attribute  
- Visual Studio recognizes the following `ContentType` values for the associated `Extension` types.  
+### <a name="attribute-name-attribute"></a>{Attribute name} 특성도  
+ Visual Studio에서는 연결 된 `Extension` 형식에 대해 다음과 같은 `ContentType` 값을 인식 합니다.  
   
 |확장명|ContentType|  
 |---------------|-----------------|  
 |txt|text/plain|  
 |pkgdef|text/plain|  
-|xml|text/xml|  
-|vsixmanifest|text/xml|  
-|htm or html|text/html|  
-|rtf|application/rtf|  
-|pdf|application/pdf|  
-|gif|image/gif|  
-|jpg or jpeg|image/jpg|  
+|xml|텍스트/xml|  
+|source.extension.vsixmanifest|텍스트/xml|  
+|htm 또는 html|text/html|  
+|rtf|응용 프로그램/rtf|  
+|pdf|응용 프로그램/pdf|  
+|GIF|image/gif|  
+|jpg 또는 jpeg|image/jpg|  
 |tiff|image/tiff|  
-|vsix|application/zip|  
-|zip|application/zip|  
+|vsix|응용 프로그램/zip|  
+|zip|응용 프로그램/zip|  
 |dll|application/octet-stream|  
-|all other file types|application/octet-stream|  
+|기타 모든 파일 형식|application/octet-stream|  
   
 ## <a name="example"></a>예제  
   
 ### <a name="description"></a>설명  
- The following [Content_Types].xml file describes a typical VSIX package.  
+ 다음 [Content_Types] .xml 파일은 일반적인 VSIX 패키지를 설명 합니다.  
   
 ### <a name="code"></a>코드  
   
@@ -101,7 +101,7 @@ Contains information about the kinds of content in a VSIX package. Visual Studio
 </Types>  
 ```  
   
-## <a name="see-also"></a>관련 항목:  
- [Anatomy of a VSIX Package](../extensibility/anatomy-of-a-vsix-package.md)   
- [VSIX Extension Schema 1.0 Reference](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
- [OPC: A New Standard For Packaging Your Data](https://go.microsoft.com/fwlink/?LinkID=148207)
+## <a name="see-also"></a>참고 항목  
+ [VSIX 패키지  분석](../extensibility/anatomy-of-a-vsix-package.md)  
+ [VSIX 확장 스키마 1.0 참조](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
+ [OPC: 데이터를 패키징하는 새 표준](https://go.microsoft.com/fwlink/?LinkID=148207)

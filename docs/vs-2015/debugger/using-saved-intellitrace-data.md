@@ -1,5 +1,5 @@
 ---
-title: Using saved IntelliTrace data | Microsoft Docs
+title: 저장 된 IntelliTrace 데이터 사용 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -30,7 +30,7 @@ IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 애플리�
   
  아래와 같은 파일과 버전이 있어야 합니다.  
   
-- 애플리케이션 코드에 일치하는 소스 파일과 기호 파일(.pdb) 이 파일이 없으면 Visual Studio에서 소스 위치를 확인할 수 없어 "기호를 찾을 수 없습니다." 메시지가 표시됩니다. See [Specify Symbol (.pdb) and Source Files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) and [Diagnose problems after deployment](../debugger/diagnose-problems-after-deployment.md).  
+- 애플리케이션 코드에 일치하는 소스 파일과 기호 파일(.pdb) 이 파일이 없으면 Visual Studio에서 소스 위치를 확인할 수 없어 "기호를 찾을 수 없습니다." 메시지가 표시됩니다. [기호 (.pdb) 및 소스 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) 을 참조 하 고 [배포 후 문제를 진단](../debugger/diagnose-problems-after-deployment.md)합니다.  
   
 - 개발 컴퓨터 또는 다른 컴퓨터에서 .iTrace 파일을 열기 위한 Visual Studio Enterprise(Professional 또는 Community Edition 아님)  
   
@@ -100,7 +100,7 @@ IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 애플리�
   
 1. **성능 위반**에서 기록된 성능 이벤트, 총 실행 시간 및 기타 이벤트 정보를 검토합니다. 그런 다음 특정 성능 이벤트 중 호출된 메서드를 자세히 살펴봅니다.  
   
-     ![View performance event details](../debugger/media/ffr-itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
+     ![성능 이벤트 세부 정보 보기](../debugger/media/ffr-itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
   
      이벤트를 두 번 클릭할 수도 있습니다.  
   
@@ -114,13 +114,13 @@ IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 애플리�
   
      해당 호출에서 디버깅을 시작합니다.  
   
-     ![Start debugging from method call](../debugger/media/ffr-itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")  
+     ![메서드 호출에서 디버깅 시작](../debugger/media/ffr-itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")  
   
      호출을 두 번 클릭하거나 **Enter** 키를 누를 수도 있습니다.  
   
      메서드가 애플리케이션 코드에 있는 경우 Visual Studio가 해당 메서드로 이동합니다.  
   
-     ![Go to application code from performance event](../debugger/media/ffr-itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
+     ![성능 이벤트에서 응용 프로그램 코드로 이동](../debugger/media/ffr-itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
   
      이제 다른 기록된 값, 호출 스택을 검토하고 코드를 단계적으로 실행하거나 **IntelliTrace** 창을 사용하여 이 성능 이벤트 동안 호출된 [다른 메서드 사이에 "in time"을 뒤나 앞으로 이동](../debugger/intellitrace.md) 합니다.  
   
@@ -131,13 +131,13 @@ IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 애플리�
   
 1. **예외 데이터**에서 기록된 예외 이벤트, 해당 유형, 메시지 및 예외가 발생한 시간을 검토합니다. 코드를 자세히 살펴보려면 예외 그룹의 가장 최근 이벤트부터 디버깅을 시작합니다.  
   
-     ![Start debugging from exception event](../debugger/media/ffr-itsummarypageexception.png "FFR_ITSummaryPageException")  
+     ![예외 이벤트에서 디버깅 시작](../debugger/media/ffr-itsummarypageexception.png "FFR_ITSummaryPageException")  
   
      이벤트를 두 번 클릭할 수도 있습니다. 이벤트가 그룹화되지 않으면 **이 이벤트 디버그**를 선택합니다.  
   
      애플리케이션 코드에서 예외가 발생하는 경우 Visual Studio가 예외가 발생한 위치로 이동합니다.  
   
-     ![Go to application code from an exception event](../debugger/media/ffr-itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")  
+     ![예외 이벤트에서 응용 프로그램 코드로 이동](../debugger/media/ffr-itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")  
   
      이제 다른 기록된 값, 호출 스택을 검토하거나 **IntelliTrace** 창을 사용하여 [다른 기록된 이벤트 사이의 "in time"](../debugger/intellitrace.md), 관련 코드 및 이 시점에 기록된 값을 뒤나 앞으로 이동합니다.  
   
@@ -161,13 +161,13 @@ IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 애플리�
   
 1. 해당 소스에서 SharePoint 상관 관계 ID를 복사합니다.  
   
-    예를 들어 다음과 같은 가치를 제공해야 합니다.  
+    예를 들면 다음과 같습니다.  
   
-    ![IntelliTrace &#45; SharePoint error &#45; correlation ID](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
+    ![IntelliTrace &#45; SharePoint 오류 &#45; 상관 관계 ID](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
   
 2. 일치하는 웹 요청 및 기록된 이벤트를 검토하려면 iTrace 파일을 연 다음 **분석** 으로 이동하여 SharePoint 상관 관계 ID를 입력합니다.  
   
-    ![IntelliTrace log &#45; Enter SharePoint correlation ID](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
+    ![IntelliTrace 로그 &#45; SharePoint 상관 관계 ID 입력](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
   
 3. **이벤트 요청**에서 이벤트를 검사합니다. 위에서 시작하여 이벤트가 발생하는 순서대로 나타납니다.  
   
@@ -175,7 +175,7 @@ IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 애플리�
   
    2. 이벤트가 발생한 지점에서 디버깅을 시작하려면 **디버깅 시작** 을 선택합니다.  
   
-      ![IntelliTrace log file &#45; View web request &#43; events](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
+      ![IntelliTrace 로그 파일 &#45; 보기 웹 요청 &#43; 이벤트](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
   
    이러한 종류의 SharePoint 이벤트를 IntelliTrace 이벤트와 함께 볼 수 있습니다.  
   
@@ -205,9 +205,9 @@ IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 애플리�
   
 3. 예외가 발생한 위치와 시간에 디버깅을 시작하려면 **예외 디버그** 를 선택합니다.  
   
-    ![IntelliTrace log &#45; SharePoint unhandled exceptions](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
+    ![IntelliTrace 로그 &#45; SharePoint 처리 되지 않은 예외](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
-   For a walkthrough, see [Walkthrough: Debugging a SharePoint Application by Using IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4). For the kinds of data that the agent records, see [IntelliTrace Features](../debugger/intellitrace-features.md).  
+   연습은 [연습: IntelliTrace를 사용 하 여 SharePoint 응용 프로그램 디버깅](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)을 참조 하세요. 에이전트가 기록 하는 데이터의 종류는 [IntelliTrace 기능](../debugger/intellitrace-features.md)을 참조 하세요.  
   
 ### <a name="ThreadsList"></a> 스레드 목록  
  대상 프로세스에서 실행하는 기록된 스레드를 검사합니다. 선택한 스레드에서 첫 번째로 유효한 IntelliTrace 이벤트부터 디버깅을 시작할 수 있습니다.  
@@ -218,14 +218,14 @@ IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 애플리�
   
 2. **스레드 목록**아래쪽에서 **디버깅 시작**을 선택합니다. 스레드를 두 번 클릭할 수도 있습니다.  
   
-    응용 프로그램의 시작 지점에서 디버깅을 시작하려면 **주 스레드**를 두 번 클릭합니다. See [IntelliTrace Features](../debugger/intellitrace-features.md).  
+    응용 프로그램의 시작 지점에서 디버깅을 시작하려면 **주 스레드**를 두 번 클릭합니다. [IntelliTrace 기능](../debugger/intellitrace-features.md)을 참조 하세요.  
   
    사용자가 만드는 스레드 데이터는 서버가 만들고 IIS를 호스트하는 웹 응용 프로그램을 관리하는 스레드보다 더 유용할 수 있습니다.  
   
 |**열**|**표시**|  
 |----------------|-------------------|  
 |**ID**|스레드 ID 번호|  
-|**이름**|스레드 이름. 명명되지 않은 스레드는 “\<이름 없음>”으로 나타납니다.|  
+|**Name**|스레드 이름. 명명되지 않은 스레드는 “\<이름 없음>”으로 나타납니다.|  
 |**시작 시간**|스레드를 만든 시간|  
 |**종료 시간**|스레드를 완료한 시간|  
   

@@ -21,7 +21,7 @@ ms.locfileid: "74300829"
 
 이미지, 비디오 및 오디오 클립은 앱에 시각적 효과를 추가합니다.
 
- ![Images sized to fit](../designers/media/b5-memory-images-sized.png "b5_memory_images_sized")
+ ![크기에 맞게 조정 되는 이미지](../designers/media/b5-memory-images-sized.png "b5_memory_images_sized")
 
  이미지, 동영상 또는 오디오 클립을 사용하려면 프로젝트에 추가한 다음 이러한 항목을 **자산** 패널에서 **아트보드**로 끌어다 놓습니다.
 
@@ -34,5 +34,5 @@ ms.locfileid: "74300829"
 |Adobe Photoshop 파일 가져오기|![설치된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Blend로 Photoshop 파일 가져오기](https://www.youtube.com/watch?v=ekYyhirFKs0)|
 |오디오 클립 삽입|![설치된 기능 구성](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [오디오 클립 추가](https://www.youtube.com/watch?v=7qW9l0tmkAI&index=52&list=PLBDF977B2F1DAB358)|
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [Blend for Visual Studio를 사용하여 UI 만들기](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

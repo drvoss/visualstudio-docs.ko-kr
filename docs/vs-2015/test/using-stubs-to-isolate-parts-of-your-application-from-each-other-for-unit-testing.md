@@ -15,10 +15,10 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74301396"
 ---
-# <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>스텁을 사용하여 유닛 테스트를 위한 애플리케이션의 여러 부분을 서로 격리
+# <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>단위 테스트를 위해 스텁을 사용하여 각 응용 프로그램의 일부를 격리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-스텁 유형*은 테스트하는 구성 요소를 이러한 구성 요소가 호출하는 다른 구성 요소에서 쉽게 격리할 수 있도록 Microsoft Fakes 프레임워크에서 제공하는 두 가지 기술 중 하나입니다. 스텁은 테스트 중 다른 구성 요소의 자리를 차지하는 작은 코드입니다. 스텁을 사용하는 이점은 일관적 결과를 반환하기 때문에 테스트를 더 쉽게 작성할 수 있다는 점입니다. 또한 아직 다른 구성 요소가 작동하지 않을 경우에도 테스트를 실행할 수 있습니다.
+스텁 유형*은 테스트하는 구성 요소를 이러한 구성 요소가 호출하는 다른 구성 요소에서 쉽게 격리할 수 있도록 Microsoft Fakes 프레임워크에서 제공하는 두 가지 기술 중 하나입니다. 스텁은 작은 코드로 테스트 중 다른 구성 요소에 위치합니다. 스텁을 사용하면 일관된 결과를 반환하므로 테스트를 쉽게 기록할 수 있습니다. 또한 아직 다른 구성 요소가 작동하지 않을 경우에도 테스트를 실행할 수 있습니다.
 
  Fakes의 개요 및 빠른 시작 가이드를 보려면 [Microsoft Fakes를 사용하여 테스트 대상 코드 격리](../test/isolating-code-under-test-with-microsoft-fakes.md)를 참조하세요.
 
@@ -26,7 +26,7 @@ ms.locfileid: "74301396"
 
  다이어그램에서 StockAnalyzer 구성 요소가 테스트하려는 대상입니다. 이 구성 요소는 일반적으로 다른 구성 요소인 RealStockFeed를 사용합니다. 하지만 RealStockFeed는 해당 메서드가 호출될 때마다 다른 결과를 반환하기 때문에 StockAnalyzer를 테스트하기가 어렵습니다.  테스트하는 동안 StubStockFeed라는 다른 클래스로 대체하겠습니다.
 
- ![Real and Stub classes conform to one interface.](../test/media/fakesinterfaces.png "FakesInterfaces")
+ ![Real 및 Stub 클래스는 하나의 인터페이스를 따릅니다.](../test/media/fakesinterfaces.png "FakesInterfaces")
 
  스텁은 사용자가 이러한 방식으로 코드를 구성할 수 있어야 사용 가능하므로 일반적으로 애플리케이션의 다른 부분에서 한 부분을 격리하는 데 사용합니다. System.dll과 같이 사용자가 제어하지 않는 다른 어셈블리에서 일부를 격리하려면 일반적으로 shim을 사용합니다. [shim을 사용하여 유닛 테스트를 위한 다른 어셈블리에서 애플리케이션 격리](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)를 참조하세요.
 
@@ -224,7 +224,7 @@ End Class
  스텁은 속성, 이벤트 및 제네릭 메서드의 getter와 setter에 대해서도 생성됩니다.
 
 ### <a name="mocks"></a> 매개 변수 값 확인
- 구성 요소가 다른 구성 요소를 호출할 때 올바른 값을 전달하는지 확인할 수 있습니다. 스텁에 어설션을 추가하거나 값을 저장한 다음 테스트 본문에서 확인할 수 있습니다. 예를 들어 다음과 같은 가치를 제공해야 합니다.
+ 구성 요소가 다른 구성 요소를 호출할 때 올바른 값을 전달하는지 확인할 수 있습니다. 스텁에 어설션을 추가하거나 값을 저장한 다음 테스트 본문에서 확인할 수 있습니다. 예를 들면 다음과 같습니다.
 
 ```csharp
 [TestClass]
@@ -400,7 +400,7 @@ public void TestGetValue()
  코드가 기타 인스턴스화를 사용하여 `GetValue<T>`를 호출하는 경우 스텁이 동작만 호출합니다.
 
 ### <a name="BKMK_Partial_stubs"></a> 가상 클래스의 스텁
- 위 예제에서는 인터페이스에서 스텁이 생성되었습니다. 또한 가상 또는 추상 멤버가 있는 클래스에서 스텁을 생성할 수 있습니다. 예를 들어 다음과 같은 가치를 제공해야 합니다.
+ 위 예제에서는 인터페이스에서 스텁이 생성되었습니다. 또한 가상 또는 추상 멤버가 있는 클래스에서 스텁을 생성할 수 있습니다. 예를 들면 다음과 같습니다.
 
 ```csharp
 // Base class in application under test
@@ -474,5 +474,5 @@ StubBehaviors.Current =
 ### <a name="guidance"></a>지침
  [Visual Studio 2012를 사용한 지속적인 업데이트 테스트 - 2장: 단위 테스트: 내부 테스트](https://go.microsoft.com/fwlink/?LinkID=255188)
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [Microsoft Fakes를 사용하여 테스트 중인 코드 격리](../test/isolating-code-under-test-with-microsoft-fakes.md)

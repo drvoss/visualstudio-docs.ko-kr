@@ -22,7 +22,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72572755"
 ---
 # <a name="throw-must-be-followed-by-an-expression-on-the-same-source-line"></a>같은 소스 줄에서 throw 뒤에는 식이 와야 합니다.
-@No__t_0 키워드를 사용 했지만 동일한 소스 줄에서 식과 함께 사용 하지 않았습니다. @No__t_0 문은 `throw` 키워드와 throw 될 식의 두 부분으로 구성 됩니다. 예를 들면,  
+`throw` 키워드를 사용 했지만 동일한 소스 줄에서 식과 함께 사용 하지 않았습니다. `throw` 문은 `throw` 키워드와 throw 될 식의 두 부분으로 구성 됩니다. 예를 들면 다음과 같습니다.  
   
 ```JavaScript  
 if (denominator == 0) {  
@@ -36,7 +36,7 @@ if (denominator == 0) {
   
 - Throw 할 `throw` 키워드와 식이 같은 줄에 표시 되는지 확인 합니다.  
   
-## <a name="see-also"></a>참조  
- [오류 개체](../../javascript/reference/error-object-javascript.md)    
- [Throw 문](../../javascript/reference/throw-statement-javascript.md)    
+## <a name="see-also"></a>참고 항목  
+ [오류 개체](../../javascript/reference/error-object-javascript.md)   
+ [Throw 문](../../javascript/reference/throw-statement-javascript.md)   
  [try...catch...finally 문](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

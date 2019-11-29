@@ -1,5 +1,5 @@
 ---
-title: 'How to: Migrate Extensibility Projects to Visual Studio 2015 | Microsoft Docs'
+title: '방법: 확장성 프로젝트를 Visual Studio 2015로 마이그레이션 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -17,41 +17,41 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74295551"
 ---
-# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>How to: Migrate Extensibility Projects to Visual Studio 2015
+# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>방법: 확장성 프로젝트를 Visual Studio 2015로 마이그레이션
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Here’s how to upgrade your extension.  
+확장을 업그레이드 하는 방법은 다음과 같습니다.  
   
 > [!IMPORTANT]
-> If you intend to maintain a version of your extension solution for an earlier version of Visual Studio, be sure to make a copy before you upgrade it. It may be difficult to return the upgraded version to its previous state.  
+> 이전 버전의 Visual Studio에 대 한 확장 솔루션 버전을 유지 하려는 경우 업그레이드 하기 전에 복사본을 만들어야 합니다. 업그레이드 된 버전을 이전 상태로 되돌리는 것은 어려울 수 있습니다.  
   
-#### <a name="to-upgrade-an-extensibility-solution"></a>To upgrade an extensibility solution  
+#### <a name="to-upgrade-an-extensibility-solution"></a>확장성 솔루션을 업그레이드 하려면  
   
-1. Using the copy you want to upgrade, open it in the new version. You will be advised that the upgrade is not reversible.  
+1. 업그레이드 하려는 복사본을 사용 하 여 새 버전에서 엽니다. 업그레이드는 되돌릴 수 없다는 것이 좋습니다.  
   
-2. After the upgrade completes, change the path of the external program to the new version of devenv.exe. Right-click the project node in the **Solution Explorer**, then choose **Properties**. In the **Debug** tab, find the textbox by **Start external program** and change the path of devenv.exe to the Visual Studio 2015 path, which should look something like this:  
+2. 업그레이드가 완료 되 면 외부 프로그램의 경로를 devenv.exe의 새 버전으로 변경 합니다. **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 선택 합니다. **디버그** 탭에서 **시작 외부 프로그램** 으로 텍스트 상자를 찾고 Devenv.exe 경로를 Visual Studio 2015 경로로 변경 합니다 .이는 다음과 같습니다.  
   
-     **%ProgramFiles%\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe**  
+     **%ProgramFiles%\Microsoft Visual Studio 14.0 \ Common7\IDE\devenv.exe**  
   
-3. Add a reference to Microsoft.VisualStudio.Shell.14.0.dll. (Right-click the project node in the **Solution Explorer** and then choose **Add / Reference**. Select the **Extensions** tab and then check **Microsoft.VisualStudio.Shell.14.0**.)  
+3. VisualStudio에 대 한 참조를 추가 합니다. 14.0에 대 한 참조를 추가 합니다. **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 한 다음 **추가/참조**를 선택 합니다. **확장** 탭을 선택 하 고 VisualStudio를 확인 합니다. **14.0**.  
   
-4. 솔루션을 빌드합니다. The built files are deployed to:  
+4. 솔루션을 빌드합니다. 빌드된 파일은 다음에 배포 됩니다.  
   
-     **%LOCALAPPDATA%\Microsoft\VisualStudio.14.0Exp\Extensions\\<Author Name\>\\<Project Name\>\\<Project Version\>\\** .  
+     **%LOCALAPPDATA%\Microsoft\VisualStudio.14.0Exp\Extensions\\< Author 이름\>\\** < 프로젝트 버전\>\\< 프로젝트 이름\>\\.  
   
-#### <a name="to-update-an-extensibility-project-to-nuget-vs-sdk-reference-assemblies"></a>To update an extensibility project to NuGet VS SDK reference assemblies  
+#### <a name="to-update-an-extensibility-project-to-nuget-vs-sdk-reference-assemblies"></a>확장성 프로젝트를 NuGet VS SDK 참조 어셈블리로 업데이트 하려면  
   
-1. Determine the VS SDK reference assemblies your project needs.  In **Solution Explorer**, expand the project’s **References** node and review the list of project references.  VS SDK references assemblies will have the prefix **Microsoft.VisualStudio** in the name (for example: Microsoft.VisualStudio.Shell.14.0).  
+1. 프로젝트에 필요한 VS SDK 참조 어셈블리를 확인 합니다.  **솔루션 탐색기**에서 프로젝트의 **참조** 노드를 확장 하 고 프로젝트 참조 목록을 검토 합니다.  VS SDK 참조 어셈블리에는 이름에 **VisualStudio** 접두사가 있습니다 (예: VisualStudio 14.0).  
   
-2. Remove the VS SDK reference assemblies from the project by selecting them, right click and **Remove**.  
+2. VS SDK 참조 어셈블리를 선택 하 여 프로젝트에서 제거 하 고 마우스 오른쪽 단추를 클릭 한 다음 **제거**합니다.  
   
-3. Add the NuGet versions of the VS SDK reference assemblies.  While still in the **Solution Explorer References** node, open the **Manage NuGet Packages…** dialog.  If you want to learn more about this dialog, see [Manage NuGet Packages Using the Dialog](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio). The VS SDK reference assemblies are published on [nuget.org](https://www.nuget.org/) by [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility).  
+3. VS SDK 참조 어셈블리의 NuGet 버전을 추가 합니다.  **솔루션 탐색기 참조** 노드에 있지만 **NuGet 패키지 관리 ...** 를 엽니다. 대화 상자에서 추가합니다.  이 대화 상자에 대 한 자세한 내용을 보려면 [대화 상자를 사용 하 여 NuGet 패키지 관리](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio)를 참조 하세요. VS SDK 참조 어셈블리는 [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility)에 의해 [nuget.org](https://www.nuget.org/) 에 게시 됩니다.  
   
-4. Using **nuget.org** as your **Package Source**, search for the NuGet package name which matches the desired reference assembly (for example: Microsoft.VisualStudio.Shell.14.0) and install it in your project.  NuGet may add multiple reference assemblies in order to satisfy the initial assembly’s dependencies.  
+4. **Nuget.org** 를 **패키지 원본**으로 사용 하 여 원하는 참조 어셈블리 (예: VisualStudio. 14.0)와 일치 하는 nuget 패키지 이름을 검색 하 고 프로젝트에 설치 합니다.  NuGet은 초기 어셈블리의 종속성을 충족 하기 위해 여러 참조 어셈블리를 추가할 수 있습니다.  
   
-     If you prefer, you can add all the VS SDK reference assemblies at once by installing the VS SDK [Meta package](https://www.nuget.org/packages/VSSDK_Reference_Assemblies).  
+     원하는 경우 VS SDK [메타 패키지](https://www.nuget.org/packages/VSSDK_Reference_Assemblies)를 설치 하 여 모든 vs sdk 참조 어셈블리를 한 번에 추가할 수 있습니다.  
   
-5. You can also switch to using the NuGet version of the VS SDK build tools. This NuGet package is [Microsoft.VSSDK.BuildTools](https://www.nuget.org/packages/Microsoft.VSSDK.BuildTools) and once added to your project will include the necessary tools and target files to let you build your extensibility project on a computer without the VS SDK installed.  
+5. 또한 NuGet 버전의 VS SDK 빌드 도구를 사용 하 여로 전환할 수 있습니다. 이 NuGet 패키지는 [Microsoft.](https://www.nuget.org/packages/Microsoft.VSSDK.BuildTools) 사용자의 프로젝트에 추가 되 고 나면 VS SDK가 설치 되지 않은 컴퓨터에서 확장성 프로젝트를 빌드할 수 있도록 필요한 도구와 대상 파일이 포함 됩니다.  
   
 > [!NOTE]
-> It is not required that you update your existing extensibility projects to use NuGet reference assemblies and tools.  They can continue to build using reference assemblies and tools installed with the VS SDK.
+> NuGet 참조 어셈블리 및 도구를 사용 하도록 기존 확장성 프로젝트를 업데이트 하지 않아도 됩니다.  VS SDK와 함께 설치 된 참조 어셈블리 및 도구를 사용 하 여 계속 빌드할 수 있습니다.

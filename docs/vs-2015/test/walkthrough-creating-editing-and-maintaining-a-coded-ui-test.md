@@ -20,7 +20,7 @@ ms.locfileid: "74302054"
 
 이 연습에서는 간단한 WPF(Windows Presentation Foundation) 웹 애플리케이션을 만들어, 코딩된 UI 테스트를 만들고 편집하고 유지 관리하는 방법을 보여 줍니다. 이 연습에서는 여러 타이밍 문제 및 제어 리팩터링으로 인해 중단된 테스트를 해결하기 위한 방법을 제공합니다.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>필수 조건
  이 연습을 수행하려면 다음이 필요합니다.
 
 - Visual Studio Enterprise
@@ -55,7 +55,7 @@ ms.locfileid: "74302054"
 
 12. Checkbox 컨트롤을 선택합니다. 속성 창에서 **Name** 속성을 \<이름 없음>에서 checkBox1로 변경하고 **IsEnabled** 속성을 선택 취소합니다.
 
-     ![Simple WPF Application](../test/media/codedui-wpfapp.png "CodedUI_WPFApp")
+     ![간단한 WPF 응용 프로그램](../test/media/codedui-wpfapp.png "CodedUI_WPFApp")
 
 13. 단추 컨트롤을 두 번 클릭하여 Click 이벤트 처리기를 추가합니다.
 
@@ -147,11 +147,11 @@ ms.locfileid: "74302054"
 
 8. UIMap – 코딩된 UI 테스트 빌더에서 **기록 시작**을 선택합니다.
 
-     ![Start recording](../test/media/cuit-builder-record.png "CUIT_Builder_Record")
+     ![기록 시작](../test/media/cuit-builder-record.png "CUIT_Builder_Record")
 
      필요한 경우, 예를 들어 들어오는 메일을 처리해야 하는 경우 기록을 일시 중지할 수 있습니다.
 
-     ![Pause the recording](../test/media/cuit.png "CUIT_")
+     ![기록 일시 중지](../test/media/cuit.png "CUIT_")
 
     > [!WARNING]
     > 데스크톱에서 수행된 모든 작업이 기록됩니다. 기록에 중요한 데이터가 포함될 수 있는 작업을 수행하는 경우에는 기록을 일시 중지합니다.
@@ -369,11 +369,11 @@ ms.locfileid: "74302054"
 ## <a name="external-resources"></a>외부 리소스
 
 ### <a name="videos"></a>비디오
- ![link to video](../data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode1-GettingStarted](https://go.microsoft.com/fwlink/?LinkID=230573)
+ 비디오 코딩 된 UI 테스트 ![에 대 한 링크](../data-tools/media/playvideo.gif "링크 playvideo 보려면") [-DeepDive-Deepdive-episode1-gettingstarted-get started](https://go.microsoft.com/fwlink/?LinkID=230573)
 
- ![link to video](../data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode2-MaintainenceAndDebugging](https://go.microsoft.com/fwlink/?LinkID=230574)
+ 비디오 코딩 된 UI 테스트 ![에 대 한 링크](../data-tools/media/playvideo.gif "링크 playvideo 보려면") [-DeepDive-Episode2-deepdive-episode2-maintainenceanddebugging](https://go.microsoft.com/fwlink/?LinkID=230574)
 
- ![link to video](../data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode3-HandCoding](https://go.microsoft.com/fwlink/?LinkID=230575)
+ 비디오 코딩 된 UI 테스트 ![에 대 한 링크](../data-tools/media/playvideo.gif "링크 playvideo 보려면") [-DeepDive-Episode3-핸드 코딩](https://go.microsoft.com/fwlink/?LinkID=230575)
 
 ### <a name="hands-on-lab"></a>실습
  [MSDN 가상 랩: Visual Studio 2010을 사용하여 코딩된 UI 테스트 만들기 소개](https://go.microsoft.com/fwlink/?LinkID=22508)
@@ -386,5 +386,5 @@ ms.locfileid: "74302054"
 ### <a name="forum"></a>포럼
  [Visual Studio UI 자동화 테스트(CodedUI 포함)](https://go.microsoft.com/fwlink/?LinkID=224497)
 
-## <a name="see-also"></a>관련 항목:
- [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md) [Getting Started with the WPF Designer](https://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b) [Supported Configurations and Platforms for Coded UI Tests and Action Recordings](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [Editing Coded UI Tests Using the Coded UI Test Editor](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
+## <a name="see-also"></a>참고 항목
+ [UI 자동화를 사용 하 여 코드 테스트](../test/use-ui-automation-to-test-your-code.md) 코딩 [된](https://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b) [ui 테스트 및 작업 기록에 대해 지원 되는 구성 및 플랫폼](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) 코딩 된 Ui 테스트 [편집기를 사용 하 여 코딩 된 ui 테스트 편집](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

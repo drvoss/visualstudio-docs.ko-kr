@@ -24,7 +24,7 @@ ms.locfileid: "74295957"
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: 연결에 StringBuilder를 사용하십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-For the latest documentation on Visual Studio, see [DA0001: Use StringBuilder for concatenations](https://docs.microsoft.com/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations).  
+Visual Studio에 대 한 최신 설명서는 [DA0001:를 사용](https://docs.microsoft.com/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations)하는 경우 StringBuilder 사용을 참조 하세요.  
   
 |||  
 |-|-|  
@@ -45,4 +45,4 @@ For the latest documentation on Visual Studio, see [DA0001: Use StringBuilder fo
 ## <a name="how-to-investigate-a-warning"></a>경고를 조사하는 방법  
  [오류 목록] 창에서 메시지를 두 번 클릭하여 샘플링 프로필 데이터의 [함수 정보 뷰](../profiling/function-details-view.md)로 이동합니다. 문자열 연결을 가장 자주 사용하는 프로그램 섹션을 찾습니다. 빈번한 문자열 연결 작업을 포함하여 복잡한 문자열 조작에 StringBuilder 클래스를 사용합니다.  
   
- 문자열 사용 방법에 대한 자세한 내용은 Microsoft Patterns and Practices 라이브러리에서 [5장 - 관리 코드 성능 향상](https://go.microsoft.com/fwlink/?LinkId=177817)의 [문자열 작업](https://go.microsoft.com/fwlink/?LinkId=177816) 섹션을 참조하세요.
+ 문자열 사용 방법에 대한 자세한 내용은 Microsoft Patterns and Practices 라이브러리에서 [5장 - 관리 코드 성능 향상](https://go.microsoft.com/fwlink/?LinkId=177816)의 [문자열 작업](https://go.microsoft.com/fwlink/?LinkId=177817) 섹션을 참조하세요.

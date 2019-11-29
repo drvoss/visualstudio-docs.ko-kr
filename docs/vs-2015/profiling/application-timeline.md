@@ -38,10 +38,10 @@ ms.locfileid: "74297746"
 5. Windows 7  
   
 > [!NOTE]
-> **애플리케이션 타임라인** 데이터와 함께 CPU 사용량 데이터 및 에너지 소비량 데이터를 수집하고 분석할 수 있습니다. See [Run profiling tools without debugging](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
+> **애플리케이션 타임라인** 데이터와 함께 CPU 사용량 데이터 및 에너지 소비량 데이터를 수집하고 분석할 수 있습니다. [디버깅 하지 않고 프로 파일링 도구 실행](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01) 을 참조 하세요.  
   
 ## <a name="BKMK_Collect_Timeline_data_for_your_app"></a> 애플리케이션 타임라인 데이터 수집  
- 로컬 시스템, 연결된 디바이스, Visual Studio 시뮬레이터 또는 에뮬레이터, 또는 원격 디바이스에서 앱 응답성을 프로파일링할 수 있습니다. See [Run profiling tools without debugging](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01).  
+ 로컬 시스템, 연결된 디바이스, Visual Studio 시뮬레이터 또는 에뮬레이터, 또는 원격 디바이스에서 앱 응답성을 프로파일링할 수 있습니다. [디버깅 하지 않고 프로 파일링 도구 실행](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)을 참조 하세요.  
   
 > [!TIP]
 > 가능한 경우 디바이스에서 앱을 직접 실행합니다. 시뮬레이터에서 또는 원격 데스크톱 연결을 통해 관찰한 애플리케이션 성능은 디바이스의 실제 성능과 다를 수 있습니다. 반면에 Visual Studio 원격 도구를 사용하여 데이터를 수집하면 성능 데이터에 영향을 주지 않습니다.  
@@ -50,7 +50,7 @@ ms.locfileid: "74297746"
   
 1. XAML 앱을 엽니다.  
   
-2. Click **Debug / Performance Profiler...** . You should see a list of profiling tools in the .diagsession window.  
+2. **디버그/성능 프로파일러**...를 클릭 합니다. Diagsession 창에 프로 파일링 도구 목록이 표시 됩니다.  
   
 3. **애플리케이션 타임라인** 을 선택한 다음 창 하단의 **시작** 을 클릭합니다.  
   
@@ -61,9 +61,9 @@ ms.locfileid: "74297746"
   
 5. 프로파일링을 중지하려면 .diagsession 창으로 다시 전환하고 창 상단의 **중지** 를 클릭하세요.  
   
-     Visual Studio에서 수집된 데이터를 분석하고 결과를 표시합니다.  
+     Visual Studio에서는 수집된 데이터를 분석하고 결과를 표시합니다.  
   
-     ![Timeline profiler report](../profiling/media/timeline-base.png "TIMELINE_Base")  
+     ![타임 라인 프로파일러 보고서](../profiling/media/timeline-base.png "TIMELINE_Base")  
   
 ## <a name="BKMK_Analyze_Timeline_profiling_data"></a> 타임라인 프로파일링 데이터 분석  
  프로파일링 데이터를 수집한 후 이러한 단계를 이용하여 분석을 시작할 수 있습니다.  
@@ -76,11 +76,11 @@ ms.locfileid: "74297746"
  **애플리케이션 타임라인** 도구는 XAML 성능과 관련된 시나리오, 범주 및 이벤트에 대한 타이밍 데이터를 표시합니다.  
   
 ### <a name="BKMK_Diagnostic_session_timeline"></a> 진단 세션 타임라인  
- ![Performance and Diagnostics timeline](../profiling/media/diaghub-timelinewithusermarks.png "DIAGHUB_TimelineWithUserMarks")  
+ ![성능 및 진단 타임 라인](../profiling/media/diaghub-timelinewithusermarks.png "DIAGHUB_TimelineWithUserMarks")  
   
  페이지 상단에 있는 눈금자는 프로파일링된 정보의 타임라인을 보여 줍니다. 이 타임라인은 **UI 스레드 사용량** 그래프와 **시각적 처리량** 그래프에 적용됩니다. 타임라인의 탐색 모음을 끌어 보고서의 범위를 좁혀서 타임라인의 세그먼트를 선택할 수 있습니다.  
   
- 타임라인에는 사용자가 삽입한 사용자 표시와 앱의 활성화 수명 주기 이벤트가 표시됩니다.  
+ 타임라인에는 또한 사용자가 삽입한 사용자 표시 및 앱의 활성화 수명 주기 이벤트가 표시됩니다.  
   
 ### <a name="BKMK_UI_thread_utilization_graph"></a> UI 스레드 사용률 그래프  
  ![CPU 사용률 그래프](../profiling/media/timeline-cpuutilization.png "TIMELINE_CpuUtilization")  
@@ -115,11 +115,11 @@ ms.locfileid: "74297746"
 |||  
 |-|-|  
 |**정렬 기준**|시작 시간 또는 이벤트의 길이로 정렬합니다.|  
-|![Group events by frame](../profiling/media/timeline-groupbyframes.png "TIMELINE_GroupByFrames")|프레임으로 이벤트를 그룹화하는 최상위 **프레임** 범주를 추가하거나 제거합니다.|  
-|![Filter Timeline details list](../profiling/media/timeline-filter.png "TIMELINE_Filter")|선택한 범주와 이벤트의 길이를 기준으로 목록을 필터링합니다.|  
-|![Customize Timeline details information](../profiling/media/timeline-viewsettings.png "TIMELINE_ViewSettings")|이벤트에 대한 주석을 지정할 수 있습니다.|  
+|![프레임별 이벤트 그룹화](../profiling/media/timeline-groupbyframes.png "TIMELINE_GroupByFrames")|프레임으로 이벤트를 그룹화하는 최상위 **프레임** 범주를 추가하거나 제거합니다.|  
+|![타임 라인 정보 목록 필터링](../profiling/media/timeline-filter.png "TIMELINE_Filter")|선택한 범주와 이벤트의 길이를 기준으로 목록을 필터링합니다.|  
+|![타임 라인 세부 정보 사용자 지정](../profiling/media/timeline-viewsettings.png "TIMELINE_ViewSettings")|이벤트에 대한 주석을 지정할 수 있습니다.|  
   
-## <a name="see-also"></a>관련 항목:  
+## <a name="see-also"></a>참고 항목  
  [WPF 팀 블로그: WPF 애플리케이션의 새로운 UI 성능 분석 도구](https://devblogs.microsoft.com/wpf/new-ui-performance-analysis-tool-for-wpf-applications/)   
  [C++, C# 및 Visual Basic을 사용하는 Windows 스토어 앱의 성능 모범 사례](https://msdn.microsoft.com/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
  [WPF 애플리케이션 성능 최적화](https://msdn.microsoft.com/library/ac8c6aa3-3c68-4a24-9827-3b6c829c1ebf)

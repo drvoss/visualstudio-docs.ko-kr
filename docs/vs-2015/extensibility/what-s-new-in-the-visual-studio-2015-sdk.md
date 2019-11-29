@@ -1,5 +1,5 @@
 ---
-title: What's New in the Visual Studio 2015 SDK | Microsoft Docs
+title: Visual Studio 2015 SDK의 새로운 기능 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -15,32 +15,32 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74299677"
 ---
-# <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>What&#39;s New in the Visual Studio 2015 SDK
+# <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Visual&#39;STUDIO 2015 SDK의 새로운 기능
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-The Visual Studio SDK has the following new and updated features for Visual Studio 2015, Visual Studio 2015 updated, and Visual Studio 2017.
+Visual studio SDK에는 visual Studio 2015, Visual Studio 2015 업데이트 및 Visual Studio 2017에 대해 다음과 같은 새롭고 업데이트 된 기능이 포함 되어 있습니다.
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
-Starting in Visual Studio 2017, scanning for custom project and item templates will no longer be performed. Instead, the extension must provide template manifest files that describe the install location of these templates. You can use Visual Studio 2017 to update your VSIX extensions. If you deploy your extension using an MSI, you must generate the template manifest files by hand. For more information, see [Upgrading Custom Project and Item Templates for Visual Studio 2017](/visualstudio/extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017?view=vs-2015). The template manifest schema is documented in [Visual Studio Template Manifest Schema Reference](/visualstudio/extensibility/visual-studio-template-manifest-schema-reference).
+Visual Studio 2017부터 사용자 지정 프로젝트 및 항목 템플릿을 검색 하는 작업이 더 이상 수행 되지 않습니다. 대신 확장은 이러한 템플릿의 설치 위치를 설명 하는 템플릿 매니페스트 파일을 제공 해야 합니다. Visual Studio 2017을 사용 하 여 VSIX 확장을 업데이트할 수 있습니다. MSI를 사용 하 여 확장을 배포 하는 경우 템플릿 매니페스트 파일을 직접 생성 해야 합니다. 자세한 내용은 [사용자 지정 Visual Studio용 프로젝트 및 항목 템플릿 2017 업그레이드](/visualstudio/extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017?view=vs-2015)를 참조 하세요. 템플릿 매니페스트 스키마는 [Visual Studio 템플릿 매니페스트 스키마 참조](/visualstudio/extensibility/visual-studio-template-manifest-schema-reference)에 설명 되어 있습니다.
 
-## <a name="vs-2015-sdk-update-1"></a>VS 2015 SDK Update 1
- Update 1 includes tools to help your extension work well with color themes and the Visual Studio image service.
+## <a name="vs-2015-sdk-update-1"></a>VS 2015 SDK 업데이트 1
+ 업데이트 1에는 색 테마 및 Visual Studio 이미지 서비스에서 확장이 잘 작동 하는 데 도움이 되는 도구가 포함 되어 있습니다.
 
- These topics are under the [VSSDK Utilities](../extensibility/internals/vssdk-utilities.md) section:
+ 이러한 [항목은 다음과](../extensibility/internals/vssdk-utilities.md) 같습니다.
 
-- The [Color Theming Tools](../extensibility/internals/color-theming-tools.md) help you create and edit custom colors for Visual Studio.
+- [색 테마 지정 도구](../extensibility/internals/color-theming-tools.md) 를 통해 Visual Studio에 대 한 사용자 지정 색을 만들고 편집할 수 있습니다.
 
-- The [Image Service Tools](../extensibility/internals/image-service-tools.md) let you work with Visual Studio image manifest files.
+- [이미지 서비스 도구](../extensibility/internals/image-service-tools.md) 를 사용 하 여 Visual Studio 이미지 매니페스트 파일을 사용할 수 있습니다.
 
-## <a name="new-way-to-add-the-visual-studio-sdk-to-visual-studio"></a>New Way to Add the Visual Studio SDK to Visual Studio
- Starting in Visual Studio 2015, you don't need to download the Visual Studio SDK separately. Instead, you can install it as part of the normal installation process, or you can choose to install it later on. When you open or create  a VSIX solution, Visual Studio will ask you to install the Visual Studio Extensibility Tools. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+## <a name="new-way-to-add-the-visual-studio-sdk-to-visual-studio"></a>Visual studio에 visual studio SDK를 추가 하는 새로운 방법
+ Visual Studio 2015부터 Visual Studio SDK를 별도로 다운로드할 필요가 없습니다. 대신 일반 설치 프로세스의 일부로 설치 하거나 나중에 설치 하도록 선택할 수 있습니다. VSIX 솔루션을 열거나 만들 때 Visual Studio는 Visual Studio 확장성 도구을 설치 하 라는 메시지를 표시 합니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
-## <a name="new-ways-of-creating-extensions"></a>New Ways of Creating Extensions
- Starting in the Visual Studio 2015 SDK, you have different options for creating extensions, depending on which programming language you’re using.
+## <a name="new-ways-of-creating-extensions"></a>새 확장을 만드는 방법
+ Visual Studio 2015 SDK부터 사용 중인 프로그래밍 언어에 따라 확장을 만들 수 있는 다양 한 옵션이 있습니다.
 
 ### <a name="visual-c-and-visual-basic"></a>Visual C# 및 Visual Basic
- For C# and Visual Basic, there is a full range of project item templates that allow you to create VSPackages, menu commands, tool windows, editor classifiers, editor adornments, and editor margin extensions. You can add any or all of these to the standard VSIX project. 자세한 내용은 다음을 참조하십시오.
+ 및 C# Visual Basic에는 vspackage, 메뉴 명령, 도구 창, 편집기 분류자, 편집기 장식 및 편집기 여백 확장을 만들 수 있는 다양 한 프로젝트 항목 템플릿이 있습니다. 이러한 중 하나 또는 모두를 표준 VSIX 프로젝트에 추가할 수 있습니다. 자세한 내용은 다음을 참조하십시오.
 
 - [메뉴 명령을 사용하여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)
 
@@ -50,27 +50,27 @@ Starting in Visual Studio 2017, scanning for custom project and item templates w
 
 - [로 확장 만들기](../extensibility/creating-an-extension-with-a-vspackage.md)
 
-     The VSPackage Wizard no longer creates extensions in C# or Visual Basic.
+     VSPackage 마법사는 더 이상 C# 또는 Visual Basic 확장을 만들 필요가 없습니다.
 
 ### <a name="c"></a>C++
- For C++, the VSPackage Wizard support menu commands, tool windows, and custom editors. Look for it in the **New Project** dialog in **Visual C++ / Extensibility**.
+ 의 C++경우 VSPackage 마법사는 메뉴 명령, 도구 창 및 사용자 지정 편집기를 지원 합니다. **Visual C++ /확장성**의 **새 프로젝트** 대화 상자에서 찾을 수 있습니다.
 
-## <a name="vs-sdk-reference-assemblies-via-nuget"></a>VS SDK Reference Assemblies via NuGet
- For increased portability and sharing of extensibility projects, you can use the NuGet versions of the VS SDK reference assemblies.  These are available on [nuget.org](https://www.nuget.org/) published by [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility) and can be easily added to your project or solution through the Visual Studio **References / Manage NuGet Packages** dialog. You can add individual references to specific extensibility assemblies or add all the VS SDK references assemblies at once using the VS SDK [Meta package](https://www.nuget.org/packages/VSSDK_Reference_Assemblies). To learn more about NuGet, see [NuGet Overview](https://docs.microsoft.com/nuget/) and [Manage NuGet Packages Using the Dialog](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio).
+## <a name="vs-sdk-reference-assemblies-via-nuget"></a>NuGet을 통한 VS SDK 참조 어셈블리
+ 확장성 및 확장성 프로젝트의 공유를 향상 하기 위해 NuGet 버전의 VS SDK 참조 어셈블리를 사용할 수 있습니다.  이러한 기능은 [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility) 에서 게시 한 [nuget.org](https://www.nuget.org/) 에서 사용할 수 있으며 Visual Studio **참조/nuget 패키지 관리** 대화 상자를 통해 프로젝트 또는 솔루션에 쉽게 추가할 수 있습니다. VS SDK [메타 패키지](https://www.nuget.org/packages/VSSDK_Reference_Assemblies)를 사용 하 여 특정 확장성 어셈블리에 개별 참조를 추가 하거나 한 번에 모든 vs sdk 참조 어셈블리를 추가할 수 있습니다. NuGet에 대 한 자세한 내용은 [Nuget 개요](https://docs.microsoft.com/nuget/) 및 [대화 상자를 사용 하 여 nuget 패키지 관리](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio)를 참조 하세요.
 
- When you use the NuGet versions of the VS SDK reference assemblies, another user doesn’t need to install the VS SDK to open and build your project.  The NuGet reference assemblies and VS SDK build tools will automatically be installed on their computer for that project.
+ VS SDK 참조 어셈블리의 NuGet 버전을 사용 하는 경우 다른 사용자가 VS SDK를 설치 하 여 프로젝트를 열고 빌드할 필요가 없습니다.  NuGet 참조 어셈블리 및 VS SDK 빌드 도구는 해당 프로젝트의 컴퓨터에 자동으로 설치 됩니다.
 
- The VS SDK item templates use NuGet for their references and build tools so you get the benefits of NuGet by default.
+ VS SDK 항목 템플릿은 nuget을 사용 하 여 참조 및 빌드 도구에 대해 NuGet을 사용 하므로 기본적으로 NuGet의 이점을 얻을 수 있습니다.
 
 > [!NOTE]
-> You can continue to use the VS SDK installed reference assemblies with your projects (located under \<Visual Studio Install Location>\ VSSDK\VisualStudioIntegration\Common\Assemblies) and existing extensibility projects do not need to be upgraded to use NuGet packages.  The project **References / Add Reference** dialog continues to use the VS SDK installed reference assemblies.
+> VS SDK에 설치 된 참조 어셈블리를 프로젝트와 함께 계속 사용할 수 있습니다 (\<Visual Studio 설치 위치 > \ VSSDK\VisualStudioIntegration\Common\Assemblies). 그리고 기존 확장성 프로젝트는 NuGet 패키지를 사용 하도록 업그레이드 하지 않아도 됩니다.  프로젝트 **참조/참조 추가** 대화 상자는 VS SDK에서 설치 된 참조 어셈블리를 계속 사용 합니다.
 >
-> If you’d like to modify your existing projects to use NuGet, see [How to: Migrate VSPackages to Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) which has a section on updating extensibility projects to NuGet packages.
+> NuGet을 사용 하도록 기존 프로젝트를 수정 하려면 방법: 확장성 프로젝트를 NuGet 패키지로 업데이트 하는 섹션이 있는 [방법: vspackage을 Visual Studio 2015로 마이그레이션](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) 을 참조 하세요.
 
-## <a name="light-bulbs"></a>Light Bulbs
- One of the most exciting new ways of writing extension code is provided by the Roslyn project. For more information, see [Roslyn](https://github.com/dotnet/Roslyn).
+## <a name="light-bulbs"></a>연한 전구
+ 확장 코드를 작성 하는 가장 흥미로운 새로운 방법 중 하나는 Roslyn 프로젝트에 의해 제공 됩니다. 자세한 내용은 [Roslyn](https://github.com/dotnet/Roslyn)를 참조 하세요.
 
- Light bulbs are a new feature that ships with the VSSDK. They are icons used in the Visual Studio editor that expand to display a set of code refactoring actions or fixes for problems identified by the built-in code analyzers. For more information, see [Walkthrough: Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).
+ Light 전구는 고가와 함께 제공 되는 새로운 기능입니다. Visual Studio 편집기에서 사용 되는 아이콘으로, 코드 리팩터링 작업 집합 또는 기본 제공 코드 분석기에서 식별 하는 문제에 대 한 수정 내용을 표시 하도록 확장 됩니다. 자세한 내용은 [연습: 전구 제안 표시](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)를 참조 하세요.
 
-## <a name="updated-user-experience-guidelines"></a>Updated User Experience Guidelines
- Designing new extensions or features for Visual Studio? Check out the updated and expanded [Visual Studio User Experience Guidelines](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  You’ll find the [color tokens](../extensibility/ux-guidelines/shared-colors-for-visual-studio.md), [font sizes](../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md), [dialog layout specifications](../extensibility/ux-guidelines/layout-for-visual-studio.md), and other guidance you need to seamlessly integrate your new UI with Visual Studio.
+## <a name="updated-user-experience-guidelines"></a>업데이트 된 사용자 환경 지침
+ Visual Studio에 대 한 새로운 확장 또는 기능 디자인 업데이트 되 고 확장 된 [Visual Studio 사용자 환경 지침](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)을 확인 하세요.  새 UI를 Visual Studio와 원활 하 게 통합 하는 데 필요한 [색 토큰](../extensibility/ux-guidelines/shared-colors-for-visual-studio.md), [글꼴 크기](../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md), [대화 상자 레이아웃 사양](../extensibility/ux-guidelines/layout-for-visual-studio.md)및 기타 지침을 찾을 수 있습니다.

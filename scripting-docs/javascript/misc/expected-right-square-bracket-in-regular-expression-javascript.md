@@ -29,8 +29,8 @@ ms.locfileid: "72576487"
 - 정규식에 오른쪽 괄호를 추가 합니다.  
   
     > [!NOTE]
-    > 대괄호 하나를 일치 시키려는 경우에는 백슬래시-\\ [-로 이스케이프 합니다. 따라서 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]는 특수 문자로 해석 되지 않습니다.  
+    > 대괄호 하나를 일치 시키려는 경우에는 백슬래시-\\[-로 이스케이프 합니다. 따라서 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]는 특수 문자로 해석 되지 않습니다.  
   
-## <a name="see-also"></a>참조  
- [Regular Expression 개체](../../javascript/reference/regular-expression-object-javascript.md)    
+## <a name="see-also"></a>참고 항목  
+ [Regular Expression 개체](../../javascript/reference/regular-expression-object-javascript.md)   
  [정규식 구문 (JavaScript)](https://msdn.microsoft.com/library/1400241x)

@@ -24,11 +24,11 @@ ms.locfileid: "74300302"
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012: 리플렉션 양이 많습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Rule Id|DA0012|  
-|Category|.NET Framework Usage|  
-|Profiling methods|Sampling|  
-|Message|You may be using Reflection excessively. 이 작업은 부담이 큰 작업입니다.|  
-|Rule type|Warning|  
+규칙 Id | DA0012 |  
+| 범주 |. NET Framework 사용 |  
+| 프로 파일링 방법 | 샘플링 |  
+| 메시지 | 리플렉션을 과도 하 게 사용할 수 있습니다. 이 작업은 부담이 큰 작업입니다.|  
+| 규칙 유형 | 경고 |  
   
 ## <a name="cause"></a>원인  
  InvokeMember, GetMember 등의 System.Reflection 메서드 호출이나 MemberInvoke 등의 Type 메서드 호출이 프로파일링 데이터의 상당한 부분을 차지합니다. 가능할 경우 이러한 메서드를 종속 어셈블리의 메서드에 대한 초기 바인딩으로 바꿔 보세요.  

@@ -40,7 +40,7 @@ HRESULT GetDescription(
  제한이 오류에 대 한 간단한 설명을 포함 하는 문자열입니다.  
   
 ## <a name="return-value"></a>반환 값  
- 메서드는 `HRESULT`를 반환 합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
+ 이 메서드는 `HRESULT`를 반환합니다. 가능한 값에는 다음 표에 있는 값이 포함되지만, 이에 국한되는 것은 아닙니다.  
   
 |값|설명|  
 |-----------|-----------------|  
@@ -50,8 +50,8 @@ HRESULT GetDescription(
  오류가 발생 한 메서드에 대 한 `IDispatchEx::InvokeEx`에 전달 된 LCID (로캘 id)로 지정 된 언어로 텍스트가 반환 됩니다.  
   
 > [!NOTE]
-> 이 메서드는 구현 되지 않습니다.  
+> 이 메서드가 구현되지 않았습니다.  
   
-## <a name="see-also"></a>참조  
- [IDispError 인터페이스](../../winscript/reference/idisperror-interface.md)    
+## <a name="see-also"></a>참고 항목  
+ [IDispError 인터페이스](../../winscript/reference/idisperror-interface.md)   
  [IDispatchEx::InvokeEx](../../winscript/reference/idispatchex-invokeex.md)

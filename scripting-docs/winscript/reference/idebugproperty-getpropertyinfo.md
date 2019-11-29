@@ -39,7 +39,7 @@ HRESULT GetPropertyInfo (
   
 #### <a name="parameters"></a>매개 변수  
  `dwFields`  
- 진행 @No__t_1 구조에서 입력할 필드를 결정 하는 `DBGPROP_INFO_FLAGS` 상수를 지정 합니다.  
+ 진행 `DebugPropertyInfo` 구조에서 입력할 필드를 결정 하는 `DBGPROP_INFO_FLAGS` 상수를 지정 합니다.  
   
  `nRadix`  
  진행 숫자 정보의 서식을 지정 하는 데 사용할 기 수입니다.  
@@ -48,9 +48,9 @@ HRESULT GetPropertyInfo (
  제한이 속성을 설명 하는 `DebugPropertyInfo` 구조체를 반환 합니다.  
   
 ## <a name="return-value"></a>반환 값  
- 유효한 `HRESULT` (일반적으로 `S_OK`)를 반환 합니다.  
+ 유효한 `HRESULT`(일반적으로 `S_OK`)를 반환 합니다.  
   
-## <a name="see-also"></a>참조  
- [Idebugproperty 인터페이스](../../winscript/reference/idebugproperty-interface.md)    
- [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)    
+## <a name="see-also"></a>참고 항목  
+ [Idebugproperty 인터페이스](../../winscript/reference/idebugproperty-interface.md)   
+ [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)   
  [DebugPropertyInfo 구조체](../../winscript/reference/debugpropertyinfo-structure.md)

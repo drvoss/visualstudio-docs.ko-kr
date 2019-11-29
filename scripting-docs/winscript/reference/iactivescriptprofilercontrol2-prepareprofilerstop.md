@@ -43,8 +43,8 @@ HRESULT PrepareProfilerStop();
 |`ACTIVPROF_E_PROFILER_ABSENT`|프로 파일링이 사용 하도록 설정 되어 있지 않습니다.|  
   
 ## <a name="remarks"></a>주의  
- @No__t_0를 호출 하면 호출 스택에 있는 함수에 대 한 이벤트가 전송 됩니다. 현재 탭에 있는 모든 스크립팅 엔진에서 프로 파일링을 중지 하기 전에이 메서드를 호출 해야 합니다. 모든 스크립팅 엔진에 대해 메서드를 호출할 수 있습니다.  
+ `IActiveScriptProfilerControl2::PrepareProfilerStop`를 호출 하면 호출 스택에 있는 함수에 대 한 이벤트가 전송 됩니다. 현재 탭에 있는 모든 스크립팅 엔진에서 프로 파일링을 중지 하기 전에이 메서드를 호출 해야 합니다. 모든 스크립팅 엔진에 대해 메서드를 호출할 수 있습니다.  
   
-## <a name="see-also"></a>참조  
- [IActiveScriptProfilerControl2:: CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)    
+## <a name="see-also"></a>참고 항목  
+ [IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)   
  [IActiveScriptProfilerControl2 인터페이스](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)

@@ -50,7 +50,7 @@ typedef enum {
 |PROFILER_EVENT_MASK_TRACE_DOM_FUNCTION_CALL|DOM을 호출 하는 함수를 프로 파일링 합니다.|  
 |PROFILER_EVENT_MASK_TRACE_ALL_WITH_DOM|DOM에 대 한 호출을 포함 하 여 모든 함수를 프로 파일링 합니다.|  
   
-## <a name="see-also"></a>참조  
- [액티브 스크립트 프로파일러 상수, 열거형 및 구조체](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)    
- [IActiveScriptProfilerControl:: SetProfilerEventMask](../../winscript/reference/iactivescriptprofilercontrol-setprofilereventmask.md)    
+## <a name="see-also"></a>참고 항목  
+ [액티브 스크립트 프로파일러 상수, 열거형 및 구조체](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)   
+ [IActiveScriptProfilerControl::SetProfilerEventMask](../../winscript/reference/iactivescriptprofilercontrol-setprofilereventmask.md)   
  [IActiveScriptProfilerControl::StartProfiling](../../winscript/reference/iactivescriptprofilercontrol-startprofiling.md)

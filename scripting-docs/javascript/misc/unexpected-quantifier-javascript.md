@@ -39,7 +39,7 @@ ms.locfileid: "72572533"
 |*|0 개 이상의 반복|  
 |+|하나 이상의 반복|  
 |?|0 회 또는 1 회 반복|  
-|개의|n 회 반복|  
+|{n}|n 회 반복|  
 |{n,}|n 개 이상의 반복|  
 |{n, m}|N 개에서 m 회 반복 (포함)|  
   
@@ -47,6 +47,6 @@ ms.locfileid: "72572533"
   
 - 검색 패턴 요소에 올바른 반복 요소만 포함 되어 있는지 확인 합니다.  
   
-## <a name="see-also"></a>참조  
- [Regular Expression 개체](../../javascript/reference/regular-expression-object-javascript.md)    
+## <a name="see-also"></a>참고 항목  
+ [Regular Expression 개체](../../javascript/reference/regular-expression-object-javascript.md)   
  [정규식 구문 (JavaScript)](https://msdn.microsoft.com/library/1400241x)

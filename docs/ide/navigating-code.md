@@ -1,6 +1,6 @@
 ---
 title: 코드 탐색 명령
-ms.date: 08/14/2018
+ms.date: 11/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, navigation
@@ -13,17 +13,17 @@ helpviewer_keywords:
 - peek definition
 - go to line
 - go to
-author: jillre
-ms.author: jillfra
-manager: jillfra
+author: mikadumont
+ms.author: midumont
+manager: tglee
 ms.workload:
 - multiple
-ms.openlocfilehash: f1fcfd69e2de9a174c708da1c4f5eaedd397722e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f5348fc0c36435e5760f3967a7e6c9be2aecb1b7
+ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667005"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74316463"
 ---
 # <a name="navigate-code"></a>코드 탐색
 
@@ -124,6 +124,15 @@ Visual Studio 2017 버전 15.8 이상에서는 다음과 같은 **이동** 탐�
 ------------ | ---
 **키보드** | 형식 이름 내부에 텍스트 커서를 놓고 **Ctrl**+**F12** 키를 누릅니다.
 **마우스** | 형식 이름을 마우스 오른쪽 단추로 클릭하고 **구현으로 이동**을 선택합니다.
+
+## <a name="go-to-base"></a>기본으로 이동
+
+[기본으로 이동]을 사용하여 선택한 요소의 상속 체인을 탐색할 수 있습니다. 결과가 여러 개인 경우 **기본으로 이동** 창에 표시됩니다.
+
+입력 | 기능
+------------ | ---
+**키보드** | 형식 이름 내부에 텍스트 커서를 놓고 **Alt**+**Home**을 누릅니다.
+**마우스** | 형식 이름을 마우스 오른쪽 단추로 클릭하고 **기본으로 이동**을 선택합니다.
 
 ## <a name="call-hierarchy"></a>호출 계층 구조
 

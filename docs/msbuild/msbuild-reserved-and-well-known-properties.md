@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f9740da2674ad7e48f8863027fcb9a1acc8f1cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bd54e97535c281d50119fdc7aa759d0704fa9e1
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842174"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491554"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>MSBuild의 예약된 속성 및 잘 알려진 속성
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서는 프로젝트 파일과 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 이진 파일에 대한 정보를 저장하는 미리 정의된 속성 집합을 제공합니다. 이러한 속성은 다른 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 속성과 동일한 방식으로 평가됩니다. 예를 들어, `MSBuildProjectFile` 속성을 사용하려면 `$(MSBuildProjectFile)`을 입력합니다.
@@ -46,7 +46,7 @@ ms.locfileid: "62842174"
 | `MSBuildProjectFile` | 예약됨 | 파일 확장명이 포함된 프로젝트 파일의 전체 파일 이름(예: *MyApp.proj*)입니다. |
 | `MSBuildProjectFullPath` | 예약됨 | 파일 확장명이 포함된 프로젝트 파일의 절대 경로와 전체 파일 이름(예: *C:\MyCompany\MyProduct\MyApp.proj*)입니다. |
 | `MSBuildProjectName` | 예약됨 | 파일 확장명이 없는 프로젝트 파일의 파일 이름(예: *MyApp*)입니다. |
-| `MSBuildRuntimeType` | 예약됨 | 현재 실행 중인 런타임의 형식입니다. MSBuild 15에서 도입되었습니다. MSBuild가 데스크톱 .NET Framework에서 실행 중임을 나타내는 `Full`, MSBuild가 .NET Core에서 실행 중임을 나타내는 `Core` 또는 MSBuild가 Mono에서 실행 중임을 나타내는 `Mono` 값이 정의되어 있지 않을 수 있습니다(MSBuild 15 이전). |
+| `MSBuildRuntimeType` | 예약됨 | 현재 실행 중인 런타임의 형식입니다. MSBuild 15에서 도입되었습니다. MSBuild가 데스크톱 .NET Framework에서 실행 중임을 나타내는 `Full`, MSBuild가 .NET Core에서 실행 중임을 나타내는 `Core`(예를 들어 `dotnet build`에서) 또는 MSBuild가 Mono에서 실행 중임을 나타내는 `Mono` 값이 정의되어 있지 않을 수 있습니다(MSBuild 15 이전). |
 | `MSBuildStartupDirectory` | 예약됨 | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]가 호출되는 폴더의 절대 경로입니다. 이 속성을 사용하면 모든 디렉터리에서 *\<dirs>.proj* 파일을 만들지 않고 프로젝트 트리에서 특정 지점 아래에 모든 것을 빌드할 수 있습니다. 대신 다음과 같이 프로젝트(예: *c:\traversal.proj*)를 하나만 포함합니다.<br /><br /> `<Project ...>     <ItemGroup>         <ProjectFiles              Include="$            (MSBuildStartupDirectory)            **\*.csproj"/>     </ItemGroup>     <Target Name="build">         <MSBuild             Projects="@(ProjectFiles)"/>     </Target> </Project>`<br /><br /> 임의의 트리 위치에 빌드하려면 다음을 입력합니다.<br /><br /> `msbuild c:\traversal.proj`<br /><br /> 이 속성에는 마지막 백슬래시를 포함하지 마세요. |
 | `MSBuildThisFile` | 예약됨 | `MSBuildThisFileFullPath`의 파일 이름 및 파일 확장명 부분입니다. |
 | `MSBuildThisFileDirectory` | 예약됨 | `MSBuildThisFileFullPath`의 디렉터리 부분입니다.<br /><br /> 경로에 마지막 백슬래시를 포함하세요. |

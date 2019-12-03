@@ -1,7 +1,7 @@
 ---
 title: Linux App Service에 Node.js 앱 게시
 description: Azure에서 Linux App Service에 Visual Studio에서 생성한 Node.js 애플리케이션을 게시할 수 있습니다.
-ms.date: 11/1/2018
+ms.date: 11/22/2019
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e02e232f8ebfd9454842de5aabaa1706a0df6202
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c304aca5171e1addab9a941105f11fb534eaa5ff
+ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695917"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74474023"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Azure에 Node.js 애플리케이션 게시(Linux App Service)
 
@@ -65,7 +65,7 @@ Linux App Service는 Linux Docker 컨테이너를 배포하여 Node.js 애플리
     **Esc** 키를 눌러 시작 창을 닫습니다. **Ctrl + Q**를 입력하여 검색 상자를 열고 **Node.js**를 입력한 다음, **새 기본 Azure Node.js Express 4 애플리케이션 만들기**(TypeScript)를 선택합니다. 표시되는 대화 상자에서 **만들기**를 선택합니다.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **TypeScript**를 확장한 다음, **Node.js**를 선택합니다. 가운데 창에서 **기본 Azure Node.js Express 4 애플리케이션**을 선택한 후 **확인**을 선택합니다.
+    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례대로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **TypeScript**를 확장한 다음, **Node.js**를 선택합니다. 가운데 창에서 **기본 Azure Node.js Express 4 애플리케이션**을 선택한 후 **확인**을 선택합니다.
 
     ![새로운 TypeScript Express 앱 만들기](../javascript/media/azure-ts-express-app.png)
     ::: moniker-end
@@ -130,15 +130,17 @@ Visual Studio에 대해 GitHub를 설정하려면 다음을 수행합니다.
     > [!WARNING]
     > App Service 배포 프로세스는 추론 집합을 사용하여 시도 및 실행할 애플리케이션의 유형을 결정합니다. .*sln* 파일이 배포된 콘텐츠에서 검색되면 MSBuild 기반 프로젝트가 배포되는 것으로 가정합니다. 위에서 추가된 설정은 이 논리를 재정의하고 Node.js 애플리케이션임을 명시적으로 지정합니다. 이 설정이 없으면 .*sln* 파일이 App Service에 배포되는 리포지토리의 일부인 경우 Node.js 애플리케이션은 배포에 실패하게 됩니다.
 
-7. 배포된 후 App Service를 열고 **배포 옵션**을 선택합니다.
+7. **애플리케이션 설정**에서 이름이 `WEBSITE_NODE_DEFAULT_VERSION`이고 값이 `8.9.0`인 다른 설정을 추가합니다.
+
+8. 배포된 후 App Service를 열고 **배포 옵션**을 선택합니다.
 
     ![배포 옵션](../javascript/media/azure-deployment-options.png)
 
-8. **원본 선택**을 클릭한 다음, **GitHub**를 선택한 다음, 필요한 권한을 구성합니다.
+9. **원본 선택**을 클릭한 다음, **GitHub**를 선택한 다음, 필요한 권한을 구성합니다.
 
     ![GitHub 권한](../javascript/media/azure-choose-source.png)
 
-9. 게시할 리포지토리 및 분기를 선택한 다음, **확인**을 선택합니다.
+10. 게시할 리포지토리 및 분기를 선택한 다음, **확인**을 선택합니다.
 
     ![Linux App Service에 게시](../javascript/media/azure-repo-and-branch.png)
 
@@ -173,7 +175,7 @@ Visual Studio에 대해 GitHub를 설정하려면 다음을 수행합니다.
 * node.exe 프로세스가 중단되는 경우(즉, 처리되지 않은 예외가 발생) 컨테이너가 다시 시작됩니다.
 * 컨테이너가 시작되면 Node.js 프로세스를 시작하는 방법을 파악하는 다양한 추론을 통해 실행됩니다. 구현에 대한 세부 정보는 [generateStartupCommand.js](https://github.com/Azure-App-Service/node/blob/master/8.9.4/startup/generateStartupCommand.js)에서 볼 수 있습니다.
 * 조사를 위해 SSH를 통해 실행 중인 컨테이너에 연결할 수 있습니다. Azure Portal을 사용하여 손쉽게 수행할 수 있습니다. App Service를 선택하고 **개발 도구** 섹션의 **SSH**에 도달할 때까지 도구 목록을 아래로 스크롤합니다.
-* 문제 해결을 돕기 위해 App Service에 대한 **진단 로그** 설정으로 이동하고 **Docker 컨테이너 로깅** 설정을 **해제**에서 **파일 시스템**으로 변경합니다. 로그가 */home/LogFiles/*_docker.log*에 있는 컨테이너에 생성되며, SSH 또는 FTP(S)를 사용하여 상자에서 액세스할 수 있습니다.
+* 문제 해결을 돕기 위해 App Service에 대한 **진단 로그** 설정으로 이동하고 **Docker 컨테이너 로깅** 설정을 **해제**에서 **파일 시스템**으로 변경합니다. 로그가 */home/LogFiles/* _docker.log*에 있는 컨테이너에 생성되며, SSH 또는 FTP(S)를 사용하여 상자에서 액세스할 수 있습니다.
 * 사용자 지정 도메인 이름을 기본적으로 할당된 *.azurewebsites.net URL이 아닌 사이트에 할당할 수도 있습니다. 자세한 내용은 [사용자 지정 도메인 매핑](/azure/app-service/app-service-web-tutorial-custom-domain) 항목을 참조하세요.
 * 프로덕션으로 이동하기 전에 추가 테스트를 위해 스테이징 사이트를 배포하는 것이 가장 좋습니다. 이를 구성하는 방법에 대한 자세한 내용은 [스테이징 환경 만들기](/azure/app-service/web-sites-staged-publishing) 항목을 참조하세요.
 * 더 자주 묻는 질문은 [Linux의 App Service에 대한 FAQ](/azure/app-service/containers/app-service-linux-faq)를 참조하세요.

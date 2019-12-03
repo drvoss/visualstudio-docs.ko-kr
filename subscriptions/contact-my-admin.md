@@ -6,14 +6,14 @@ manager: lank
 ms.date: 08/21/2019
 ms.topic: conceptual
 description: 질문이나 문제에 대한 도움이 필요한 경우 구독 관리자에게 문의하는 방법에 대해 알아봅니다.
-ms.openlocfilehash: a1769140db7800798c91d583f835e3cad8488397
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: eb0720718f8ed5ccd0033456f887f638c0f3e395
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293529"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491582"
 ---
-# <a name="get-assistance-from-your-subscriptions-adminstrator"></a>구독 관리자의 도움 받기
+# <a name="get-assistance-from-your-subscriptions-administrator"></a>구독 관리자의 도움 받기
 회사 또는 학교에서 Visual Studio 구독이 제공된 경우 구독 관리자나 “관리자”가 해당 구독을 할당했을 수 있습니다.  관리자는 구독을 할당 또는 제거하고, 로그인 전자 메일 주소를 변경하고, 소프트웨어를 다운로드하는 기능을 제공할지 여부를 결정하고, 구독과 관련된 다른 기능을 수행할 수 있습니다.
 
 많은 조직의 규모 및 복잡성을 고려해 볼 때 관리자가 누구인지 알지 못할 수 있으므로 어디에서 도움을 받을지 알기 어려울 수 있습니다.  관리자에게 문의하는 데 도움이 되는 새로운 기능을 구독자 포털에 추가했습니다.   

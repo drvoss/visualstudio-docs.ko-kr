@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0a16f9501b9ce1e7c69eaa8f2460a50affd6d579
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 1d7c7ada277d9b9f7259b8ab07d93c48294b252c
+ms.sourcegitcommit: 6336c387388707da94a91060dc3f34d4cfdc0a7b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888705"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74549972"
 ---
 # <a name="install-build-tools-into-a-container"></a>Build Tools를 컨테이너에 설치
 
@@ -134,6 +134,9 @@ Visual Studio Build Tools에 소스 코드를 빌드하는 데 필요한 것이 
    > 어떤 호스트 OS 버전에 어떤 컨테이너 OS 버전이 지원되는지 확인하려면 [Windows 컨테이너 버전 호환성](/virtualization/windowscontainers/deploy-containers/version-compatibility)을 참조하고, 알려진 문제의 경우에는 [알려진 컨테이너 관련 문제](build-tools-container-issues.md)를 참조하세요.
 
    ::: moniker-end
+   
+   > [!NOTE]
+   > 오류 코드 `3010`은 재부팅이 성공해야 함을 나타내는 데 사용됩니다. 자세한 내용은 [MsiExec.exe 오류 메시지](/windows/win32/msi/error-codes)를 참조하세요.
 
 1. 해당 디렉터리 내에서 다음 명령을 실행합니다.
 

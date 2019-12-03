@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/24/2019
 ms.topic: conceptual
 description: 구독자 목록과 해당 구독 할당의 세부 정보를 내보내는 방법을 알아봅니다.
-ms.openlocfilehash: f5fbdb69f9961c9ec80910387c0549cfbc182729
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 46e5ae706383d2ed03a289844bc9e6fcc4a01a91
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605579"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491731"
 ---
 # <a name="export-subscription-information"></a>구독 정보 내보내기
 Visual Studio 구독 [관리 포털](https://manage.visualstudio.com)에서 구독자 목록 및 해당 할당에 대한 세부 정보를 내보낼 수 있습니다. 이 정보에는 해당 이름, 전자 메일 주소, 대체 전자 메일 주소, 구독 수준, 할당된 날짜, 활성화 상태, 만료일, 참조 필드, 다운로드 활성화 여부, 국가, 언어, 구독 상태 및 구독 GUID가 포함됩니다.  이 목록은 CSV 파일로 내보내지며, Microsoft Excel에서 쉽게 열고 차트, 피벗 및 기타 아티팩트를 만들 수 있습니다.

@@ -1,21 +1,21 @@
 ---
 title: .NET 개발을 위한 생산성 향상
 description: .NET 코드를 더 신속하게 작성할 수 있는 탐색, 코드 분석, 단위 테스트 및 기타 기능의 개요입니다.
-author: kuhlenh
-ms.author: jillfra
+author: mikadumont
+ms.author: tglee
 manager: jillfra
-ms.date: 04/25/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 69dd92c2dae1a042e37601917bcdef628400d8bf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5777ef318d557b85abddf35d2fbdf37a044b0ead
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652585"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491650"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>C# 개발자용 Visual Studio 생산성 가이드
 
@@ -47,6 +47,7 @@ Visual Studio에서 개발자 생산성을 높이는 방법을 알아봅니다. 
 | **F12**(또는 **Ctrl**+**클릭**) | 정의로 이동 | 기호가 정의된 위치로 이동 |
 | **Ctrl**+**F12** | 구현으로 이동 | 모든 베이스 형식 또는 멤버에서 다양한 구현으로 이동 |
 | **Shift**+**F12** | 모든 참조 찾기 | 모든 기호 또는 리터럴 참조 보기 |
+| **Alt**+**홈** | 기본으로 이동 | 상속 체인 탐색 |
 | **Ctrl**+ **.** (또는 C# 프로필에서 **Alt**+**Enter**) | 빠른 작업 및 리팩터링 | 커서 위치 또는 코드 선택에서 사용 가능한 코드 해결, 코드 생성 작업, 리팩터링, 또는 기타 빠른 작업 확인 |
 | **Ctrl**+**D** | 중복된 줄 | 커서가 있는 코드 줄 복제(**Visual Studio 2017 버전 15.6** 이상에서 사용 가능) |
 | **Shift**+**Alt**+ **+** / **-** | 선택 영역을 확대/축소 | 편집기(**Visual Studio 2017 버전 15.5** 이상에서 사용 가능)에서 현재 선택 영역을 확장하거나 축소 |
@@ -95,6 +96,10 @@ EditorConfig 파일을 사용하여 코딩 규칙을 체계화하고 소스와 �
 ::: moniker-end
 
 - IntelliCode for Visual Studio의 [코드 유추 기능](/visualstudio/intellicode/code-style-inference)은 기존 코드에서 코드 스타일을 유추합니다. 그런 다음, 이미 정의된 코드 스타일 기본 설정을 사용하여 비어 있지 않은 EditorConfig 파일을 만듭니다.
+
+- 편집기를 통해 코드 스타일 규칙의 심각도 수준을 직접 구성합니다. 현재 .editorconfig 파일이 없으면 해당 파일 하나가 생성됩니다. 오류, 경고 또는 제안 위에 커서를 올리고 **Ctrl**+ **.** 을 입력하여 [빠른 작업 및 리팩터링] 메뉴를 엽니다. **문제 구성 또는 표시 안 함**을 선택합니다. 그런 다음 규칙을 선택하고 해당 규칙에 대해 구성할 심각도 수준을 선택합니다. 그러면 기존 EditorConfig가 규칙의 새 심각도로 업데이트됩니다.
+
+   ![편집기에서 코드 스타일 규칙의 심각도 수준을 직접 구성](../ide/media/configure-severity-level.png)
 
 [.NET 코딩 규칙 옵션](editorconfig-code-style-settings-reference.md) 문서를 확인합니다. 이 문서에는 전체 EditorConfig 파일 예제도 포함되어 있습니다.
 

@@ -7,14 +7,14 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 7eae92f7c65208dfeda9cd19e14eaa627e12a22a
-ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
+ms.openlocfilehash: 0232b37d08901bcc04c9d66facfe6850a9852e88
+ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74142207"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74485428"
 ---
-Visual Studio를 사용하여 컨테이너화된 ASP.NET Core 앱을 쉽게 빌드, 디버그, 실행하고 ACR(Azure Container Registry), Docker Hub, Azure App Service 또는 사용자 고유 컨테이너 레지스트리에 게시할 수 있습니다. 이 문서에서는 ACR에 게시합니다.
+Visual Studio를 사용하여 컨테이너화된 NET, ASP.NET 및 ASP.NET Core 앱을 쉽게 빌드, 디버그, 실행하고 ACR(Azure Container Registry), Docker Hub, Azure App Service 또는 사용자 고유 컨테이너 레지스트리에 게시할 수 있습니다. 이 문서에서는 ASP.NET Core 앱을 ACR에 게시합니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -73,26 +73,6 @@ ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 
 **출력** 창의 **컨테이너 도구** 옵션에 실행 중인 작업이 표시됩니다.
 
-**도구**> NuGet 패키지 관리자, **패키지 관리자 콘솔** 메뉴에서 **패키지 관리자 콘솔**(PMC)을 엽니다.
-
-앱의 최종 Docker 이미지는 *dev*로 태그가 지정됩니다. 이미지는 *microsoft/dotnet* 기본 이미지의 *2.2-aspnetcore-runtime* 태그를 기반으로 합니다. **패키지 관리자 콘솔**(PMC) 창에서 `docker images` 명령을 실행합니다. 컴퓨터의 이미지가 표시됩니다.
-
-```console
-REPOSITORY        TAG                     IMAGE ID      CREATED         SIZE
-hellodockertools  dev                     d72ce0f1dfe7  30 seconds ago  255MB
-microsoft/dotnet  2.2-aspnetcore-runtime  fcc3887985bb  6 days ago      255MB
-```
-
-> [!NOTE]
-> **디버그** 구성은 볼륨 마운트를 사용하여 반복 편집 및 디버그 환경을 제공하므로 **dev** 이미지에는 앱 바이너리 및 다른 콘텐츠가 포함되지 않습니다. 모든 콘텐츠를 포함하는 프로덕션 이미지를 만들려면 **릴리스** 구성을 사용하세요.
-
-PMC에서 `docker ps` 명령을 실행합니다. 앱은 컨테이너를 사용하여 실행됩니다.
-
-```console
-CONTAINER ID        IMAGE                  COMMAND               CREATED             STATUS              PORTS                                           NAMES
-cf5d2ef5f19a        hellodockertools:dev   "tail -f /dev/null"   2 minutes ago       Up 2 minutes        0.0.0.0:52036->80/tcp, 0.0.0.0:44342->443/tcp   priceless_cartwright
-```
-
 ## <a name="containers-window"></a>컨테이너 창
 
 Visual Studio 2019 버전 16.4 이상을 사용하는 경우 **컨테이너** 창을 사용하여 머신에서 실행 중인 컨테이너와 사용할 수 있는 이미지를 확인할 수 있습니다.
@@ -102,6 +82,8 @@ IDE에서 검색 상자를 사용하여(사용하려면 **Ctrl**+**Q**를 누름
 **컨테이너** 창을 움직여서 창 배치 안내선에 따라 편집기 아래 등 편리한 위치에 탑재할 수 있습니다.
 
 창에서 컨테이너를 찾고 각 탭을 단계별로 진행하여 환경 변수, 포트 매핑, 로그 및 파일 시스템을 확인합니다.
+
+![컨테이너 창의 스크린샷](../../media/overview/vs-2019/container-tools-window.png)
 
 자세한 내용은 [Visual Studio에서 컨테이너와 이미지를 보고 진단](../../view-and-diagnose-containers.md)을 참조하세요.
 

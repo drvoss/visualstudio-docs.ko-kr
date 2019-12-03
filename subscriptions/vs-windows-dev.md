@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: Visual Studio 구독에 포함된 Windows 개발자 계정에 대해 알아봅니다.
-ms.openlocfilehash: 662dc6d911903a4c0d2c0a77382647639bb25d07
-ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.openlocfilehash: 7ba77979c47d61cd230351a352d85baa7c1eae9a
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74174112"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491276"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio 구독의 Windows 개발자 계정
 선택한 Visual Studio 구독에 포함된 Windows 개발자 계정으로 무료 및 유료 Windows 앱을 Windows 스토어에 제출할 수 있습니다.
@@ -19,7 +19,7 @@ ms.locfileid: "74174112"
 ## <a name="activation-steps"></a>활성화 단계
 Windows 개발자 계정을 사용하려면 기존 계정을 사용하여 계정을 설정하거나 로그인해야 합니다.
 
-이 프로세스에 대해 “개인” 브라우저 창을 만드는 것이 좋습니다.  예를 들어 Google 크롬에서는 새 “incongnito” 창을 만듭니다.  Internet Explorer에서는 새 "InPrivate" 창을 만듭니다.
+이 프로세스에 대해 “개인” 브라우저 창을 만드는 것이 좋습니다.  예를 들어 Google Chrome에서는 새 “incognito” 창을 만듭니다.  Internet Explorer에서는 새 "InPrivate" 창을 만듭니다.
 
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)에 로그인합니다.
 2. 도구 섹션에서 Windows 개발자 계정 타일을 찾고 혜택 타일 아래쪽에 있는 **코드 얻기** 링크를 클릭합니다.  클립보드에 코드를 복사한 다음 **활성화**를 클릭합니다.

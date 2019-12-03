@@ -6,12 +6,12 @@ manager: lank
 ms.date: 10/13/2019
 ms.topic: conceptual
 description: Visual Studio 구독에 포함된 CODE Magazine 혜택에 대해 알아봅니다.
-ms.openlocfilehash: 6f120bae88a7d613873a9d350e411842904e700e
-ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.openlocfilehash: 341e21d3411afdd8402d223b455f60bcf39a4a40
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099598"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491661"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Visual Studio 구독에 포함된 CODE Magazine
 
@@ -39,7 +39,7 @@ CODE Magazine 구독을 설정하는 프로세스는 간단합니다.  다음 �
       > ![CODE Magazine 구독 세부 정보](_img/vs-code-magazine/vs-code-magazine-details.png "구독 세부 정보 및 가격")
 6. 다음으로, 구독자 정보와 배송 주소를 입력해야 합니다.  배송 주소는 이행, 제품 선택, 디지털 액세스 프로세스를 지원하므로 디지털 버전 구독에도 필요합니다.
 7. 미국이 아닌 다른 국가에 거주하고 있으며 인쇄 버전의 잡지 구독을 선택한 경우, 배송 요금 결제를 위한 청구 주소와 결제 정보를 입력하라는 메시지가 표시될 수 있습니다. 
-8. 확인란을 클릭하여 CODE HTML Newletter를 옵트인할 수 있습니다.
+8. 확인란을 클릭하여 CODE HTML Newsletter를 옵트인할 수 있습니다.
    > [!div class="mx-imgBorder"]
    > ![CODE Magazine 구독자 정보](_img/vs-code-magazine/vs-code-magazine-subscriber-info.png "구독자 정보 및 배달 주소")
 9. **Place Order**(주문하기)를 클릭하여 구독을 완료합니다.  

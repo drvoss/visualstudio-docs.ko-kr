@@ -6,12 +6,12 @@ manager: lank
 ms.date: 03/24/2019
 ms.topic: conceptual
 description: 관리 포털에서 할당된 최대 구독 수를 보는 방법 알아보기
-ms.openlocfilehash: 15ef4acf8bd02ec4846f387fdce3a9882585a64a
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 368ca1ad0373267e9753ab223c2e200cbc87f1e0
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605481"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491727"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>최대 사용량 기능을 사용하여 할당된 구독 수 추적
 Visual Studio 구독 관리 포털의 새로운 기능을 사용하면 구매 및 할당된 구독 수를 추적하고, 지난 1년 내 및 규약 기간 동안 할당된 각 수준의 최대 구독 수를 식별할 수 있습니다. 
@@ -41,7 +41,7 @@ Visual Studio 구독 관리 포털의 새로운 기능을 사용하면 구매 �
 ### <a name="q-how-is-the-information-in-the-maximum-usage-different-from-the-assignment-information-available-in-the-overview-section-on-the-left-side-of-the-portal"></a>Q: 포털 왼쪽에 있는 "개요" 섹션에서 사용할 수 있는 할당 정보와 최대 사용량 정보는 어떻게 다른가요?
 A:  개요의 정보는 각 구독 수준에 대한 ‘현재’ 할당 및 사용 가능한 구독을 보여줍니다.   이는 현재 연도 또는 계약 동안 계약에 할당된 최대 구독 수와는 매우 다를 수 있습니다.  최대 사용량 기능을 사용하면 최대 할당 수준에 도달한 시기와 해당 수준을 확인할 수 있습니다.  트루업 도중 구독에 대한 요금 청구는 연중 언제든 할당된 최대 구독 수를 기반으로 하기 때문에 이는 중요한 차이입니다. 
 
-## <a name="resources"></a>자료
+## <a name="resources"></a>리소스
 - [Visual Studio 라이선스 백서](https://aka.ms/vslicensing)
 - [Visual Studio 관리 및 구독 지원](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [볼륨 라이선스 약관](https://www.microsoft.com/licensing/product-licensing/products.aspx)

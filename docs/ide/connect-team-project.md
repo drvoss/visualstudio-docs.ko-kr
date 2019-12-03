@@ -5,16 +5,16 @@ ms.topic: conceptual
 ms.author: jillfra
 author: jillre
 ms.manager: jillfra
-ms.openlocfilehash: f3e4b2b5df96f397104afb3ab6268e1fa294116e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c442ec22080a5f3533776e9d581aa1e7ef0e52ee
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652642"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74538670"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>팀 탐색기의 프로젝트에 연결
 
-**팀 탐색기** 도구 창을 사용하여 프로젝트를 개발하고 사용자, 팀 또는 프로젝트에 할당된 작업을 관리하기 위해 다른 팀 구성원과 코드 작업을 조정합니다. **팀 탐색기**는 Visual Studio를 Git 및 GitHub 리포지토리, TFVC(Team Foundation 버전 제어) 리포지토리 및 [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) 또는 온-프레미스 [Azure DevOps 서버](/tfs/index)(이전의 TFS로 알려짐)에 호스팅된 프로젝트와 연결합니다. 소스 코드, 작업 항목 및 빌드를 관리할 수 있습니다.
+**팀 탐색기** 도구 창을 사용하여 프로젝트를 개발하고 사용자, 팀 또는 프로젝트에 할당된 작업을 관리하기 위해 다른 팀 구성원과 코드 작업을 조정합니다. **팀 탐색기**는 Visual Studio를 Git 및 GitHub 리포지토리, TFVC(Team Foundation 버전 제어) 리포지토리 및 [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) 또는 온-프레미스 [Azure DevOps 서버](/azure/devops/index-all)(이전의 TFS로 알려짐)에 호스팅된 프로젝트와 연결합니다. 소스 코드, 작업 항목 및 빌드를 관리할 수 있습니다.
 
 ![Visual Studio의 팀 탐색기 홈 페이지](media/team-explorer/team-explorer.png)
 

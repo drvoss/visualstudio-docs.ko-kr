@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4b9f55f0dc7d2b0a9fb57fa6177cd8a250f6f62
-ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.openlocfilehash: 10a325c75179ed6917e1772bb9e17f2237e4ee17
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73024831"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74538951"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens에서 코드 변경 내용 및 기타 기록 찾기
 
@@ -95,7 +95,7 @@ Team Foundation Server 또는 Azure DevOps Services에서 TFVC(Team Foundation �
 
 ![CodeLens: TFVC에서 코드에 대한 변경 기록 가져오기](../ide/media/codelens-code-changes.png)
 
-기본 기간은 지난 12 개월입니다. 코드가 Team Foundation Server에 저장되는 경우 [TFSConfig 명령](/tfs/server/ref/command-line/tfsconfig-cmd)을 [CodeIndex 명령](../ide/codeindex-command.md) 및 **/indexHistoryPeriod** 플래그와 함께 실행하여 기간을 변경할 수 있습니다.
+기본 기간은 지난 12 개월입니다. 코드가 Team Foundation Server에 저장되는 경우 [TFSConfig 명령](/azure/devops/server/command-line/tfsconfig-cmd)을 [CodeIndex 명령](../ide/codeindex-command.md) 및 **/indexHistoryPeriod** 플래그와 함께 실행하여 기간을 변경할 수 있습니다.
 
 1년 이상 전의 변경 내용을 포함하여 모든 변경 내용에 대한 자세한 기록을 보려면 **모든 파일 변경 내용 표시**를 선택합니다.
 
@@ -266,7 +266,7 @@ Team Foundation Server 또는 Azure DevOps Services에서 TFVC(Team Foundation �
 
 - CodeLens가 설정되어 있는지 확인합니다. **도구** > **옵션** > **텍스트 편집기** > **모든 언어**  >  **CodeLens**로 이동합니다.
 
-- 코드가 TFS에 저장되는 경우 [CodeIndex 명령](../ide/codeindex-command.md) 과 [TFS 구성 명령](/tfs/server/ref/command-line/tfsconfig-cmd)을 함께 사용하여 코드 인덱싱이 설정되어 있는지 확인합니다.
+- 코드가 TFS에 저장되는 경우 [CodeIndex 명령](../ide/codeindex-command.md) 과 [TFS 구성 명령](/azure/devops/server/command-line/tfsconfig-cmd)을 함께 사용하여 코드 인덱싱이 설정되어 있는지 확인합니다.
 
 - DevOps 관련 지표는 작업 항목이 코드와 링크되어 있는 경우 및 링크된 작업 항목을 열 권한이 있는 경우에만 나타납니다. [팀 멤버 권한](/azure/devops/organizations/security/view-permissions?view=vsts)이 있는지 확인합니다.
 
@@ -348,7 +348,7 @@ CodeLens는 다른 버전의 Lync 또는 Skype가 설치되는 것을 지원하�
 
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>Q: CodeLens가 코드를 처리하여 기록 및 연결된 항목을 표시하는 방법을 관리할 수 있나요?
 
-**A:** 예. 코드가 TFS에 있는 경우 [CodeIndex 명령](../ide/codeindex-command.md)과 [TFS 구성 명령](/tfs/server/ref/command-line/tfsconfig-cmd)을 함께 사용합니다.
+**A:** 예. 코드가 TFS에 있는 경우 [CodeIndex 명령](../ide/codeindex-command.md)과 [TFS 구성 명령](/azure/devops/server/command-line/tfsconfig-cmd)을 함께 사용합니다.
 
 ### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>Q: 내 CodeLens 테스트 지표는 더 이상 솔루션을 처음 열 때 내 파일에 나타나지 않습니다. 로드하려면 어떻게 하나요?
 

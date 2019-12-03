@@ -1410,6 +1410,8 @@
         - name: 문제 상태 보고 및 FAQ
           displayName: Developer Community
           href: ide/report-a-problem.md
+        - name: 성능 문제가 해결될 가능성 증가
+          href: ide/how-to-increase-chances-of-performance-issue-being-fixed.md
         - name: 모든 호출 스택을 사용하여 Visual Studio 프로세스에 대한 미니덤프 만들기
           displayName: Create minidumps with call stacks
           href: ide/report-a-problem-minidumps.md

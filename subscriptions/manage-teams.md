@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/23/2019
 ms.topic: conceptual
 description: 관리자의 대규모 팀 및 외부 계약업체 구독 관리 책임에 대해 알아봅니다.
-ms.openlocfilehash: 91e507358084bcb878d2a9afc7aad4fe4a2b869c
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: 975db18e207f52db8e9d37aa190f9085d4069163
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493342"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491698"
 ---
 # <a name="large-teams-and-external-contractors"></a>대규모 팀 및 외부 계약업체
 Visual Studio 구독 관리자는 Visual Studio 사용이 허가된 소프트웨어와 상호 작용하는 모든 사용자가 자신 소유의 Visual Studio 구독에 대해 적절하게 사용이 허가되어 있는지 확인해야 하는 책임이 있습니다.
@@ -28,7 +28,7 @@ Visual Studio 구독 관리자는 Visual Studio 사용이 허가된 소프트웨
 ## <a name="external-contractors-and-partners"></a>외부 계약업체 및 파트너
 외부 계약업체가 Visual Studio 사용이 허가된 환경에서 작업이 가능한 라이선스를 가져올 수도 있습니다. Microsoft Certified Partner는 내부용으로 몇 가지 무료 Visual Studio 구독을 수신할 수도 있습니다. 단, 이러한 구독은 고객을 위한 사용자 지정 소프트웨어 개발과 같이 수익을 창출하는 활동을 다루지 않습니다. 업체가 제공하는 라이선스 및 사용자에게 공급을 요구하는 사항을 설명하는 인증된 문서를 보내줄 것을 파트너에게 요청합니다.
 
-## <a name="resources"></a>자료
+## <a name="resources"></a>리소스
 - [Visual Studio 라이선스 백서](https://aka.ms/vslicensing)
 - [Visual Studio 관리 및 구독 지원](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [볼륨 라이선스 약관](https://www.microsoft.com/licensing/product-licensing/products.aspx)

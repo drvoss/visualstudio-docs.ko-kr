@@ -21,22 +21,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8313bc8e0419e281dceefbafd6dcdcc2f368580f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 516b04bb625ad2546c4c8f3d3e7d7d4ba9419094
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734248"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74705835"
 ---
 # <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>포인터가 메모리 주소를 손상시키는지 어떻게 알 수 있습니까?
 ## <a name="problem-description"></a>문제 설명
  포인터 하나가 0x00408000 주소의 메모리를 손상시키고 있는 것 같습니다. 어떻게 알아 낼 수 있습니까?
 
-## <a name="solution"></a>솔루션
+## <a name="solution"></a>해결 방법
 
 #### <a name="check-for-heap-corruption"></a>힙 손상 확인
 
-- 대부분의 메모리 손상은 실제로 힙 손상으로 인해 발생합니다. 전역 플래그 유틸리티(gflags.exe) 또는 pageheap.exe를 사용해 보십시오. [@No__t_1; en-us; 286470](http://support.microsoft.com/default.aspx?scid=kb;en-us;286470)를 참조 하세요.
+- 대부분의 메모리 손상은 실제로 힙 손상으로 인해 발생합니다. 전역 플래그 유틸리티(gflags.exe) 또는 pageheap.exe를 사용해 보십시오. [https://docs.microsoft.com/windows-hardware/drivers/debugger/gflags-and-pageheap](/windows-hardware/drivers/debugger/gflags-and-pageheap)을 참조하세요.
 
 #### <a name="to-find-where-the-memory-address-is-modified"></a>메모리 주소가 수정된 위치를 찾으려면
 

@@ -12,14 +12,15 @@ ms.assetid: ee2b3e0c-0990-46d9-8de6-c29fa386b15b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ebdfdb1503570e08f38eed8efd278830756e50fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 46c0f1bfeee785feebf1d643b0796c1308053403
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817170"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778832"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>방법: 성능 세션 수동으로 만들기
 성능 세션을 수동으로 만들 수 있습니다. 이 작업을 위해 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 프로젝트를 열 필요가 없습니다. 자세한 내용은 [성능 세션 구성](../profiling/configuring-performance-sessions.md)을 참조하세요.

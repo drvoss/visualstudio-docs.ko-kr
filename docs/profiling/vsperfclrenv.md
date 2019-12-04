@@ -11,14 +11,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 119aa0a710218635cca945372ba9ea6fb6d4d27b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2163ebb9b363de8ee638998dbe56fd76f5a891c8
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822887"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779911"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 
@@ -103,7 +104,7 @@ VSPerfCmd /Attach:MyService.exe
 |**Off**|표준 .NET 프로파일링용 환경 변수를 삭제합니다. 비전역 VSPerfClrEnv 옵션을 사용하여 프로파일러 환경 변수를 설정한 경우 이 옵션을 사용합니다.|
 |**GlobalOff**|전역 .NET 프로파일링용 환경 변수를 삭제합니다. 프로파일러가 아닌 운영 체제에 의해 애플리케이션이 시작된 경우 이 옵션을 사용합니다.|
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 IDE의 성능 탐색기를 사용하여 애플리케이션을 시작한 경우에는 관리되는 애플리케이션을 프로파일링하는 데 이러한 옵션이 필요하지 않습니다. 성능 탐색기가 필요한 모든 환경 설정을 자동으로 지정합니다.
 

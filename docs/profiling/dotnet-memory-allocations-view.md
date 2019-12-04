@@ -13,14 +13,15 @@ ms.assetid: 01eb876e-c413-4516-977b-4f896929e8a6
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e6bead46c52ed2bc33572e0eacc6f3f0219e72e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce16f65947fd69b5a54e564ba6bec061bc68e328
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970098"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777379"
 ---
 # <a name="net-memory-allocations-view"></a>.NET 메모리 할당 뷰
 할당 뷰는 프로파일링 실행 중에 생성된 형식을 나열합니다. 각 형식은 형식의 할당에서 발생한 함수 실행 경로를 표시하는 호출 트리의 루트 노드입니다.
@@ -38,7 +39,7 @@ ms.locfileid: "62970098"
 
 - 최대 활성 경로를 표시하려면 형식 또는 함수를 마우스 오른쪽 단추로 클릭한 후 **실행 부하 과다 경로 확장**을 클릭합니다.
 
-|열|설명|
+|Column|설명|
 |------------|-----------------|
 |**이름**|할당된 형식 또는 함수의 이름입니다.|
 |**프로세스 ID**|프로파일링 실행의 PID(프로세스 ID)입니다.|

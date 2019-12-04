@@ -8,18 +8,19 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bf78c94f8982af78d0f393c9cb5b878bef27d87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 74137752900d082c545dd5e5271b7700ec81fa01
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939530"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778299"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>성능 데이터 파일을 사용하여 기호 정보 저장
 
-Visual Studio IDE를 사용하여 파일을 분석하는 경우 VSP 파일을 다른 컴퓨터로 이동하려면 보고서 파일에서 기호를 저장 또는 ‘직렬화’하기 위한 성능 프로젝트 설정을 지정해야 합니다. 이렇게 하면 보고서 파일의 크기가 증가합니다. 기호를 serialize해야 하는 이유는 다음의 두 가지입니다.
+Visual Studio IDE를 사용하여 파일을 분석하는 경우 VSP 파일을 다른 컴퓨터로 이동하려면 보고서 파일에서 기호를 저장 또는 ‘직렬화’하기 위한 성능 프로젝트 설정을 지정해야 합니다.  이렇게 하면 보고서 파일의 크기가 증가합니다. 기호를 serialize해야 하는 이유는 다음의 두 가지입니다.
 
 - 대상 어셈블리가 임시 스토리지의 해당 위치에서 손실되기 전에 성능 보고서에 코드 기호를 포함합니다.
 

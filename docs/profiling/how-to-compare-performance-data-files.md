@@ -11,14 +11,15 @@ ms.assetid: 1905b45d-c6b3-43c8-87b1-1aee734f37f9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 101512cb15bca022e5e3b473c84bd433a7269e15
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c6dc9d485f6f40eb345ade8f9680be9e0b948106
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973905"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779001"
 ---
 # <a name="how-to-compare-performance-data-files"></a>방법: 성능 데이터 파일 비교
 비교(“Diff”) 보고서 또는 뷰를 만들어 두 가지 프로파일러 데이터 파일(.*vsp* 또는 .*vsps*)의 결과를 비교할 수 있습니다. 이 비교는 프로파일링 세션 사이에 발생한 차이점, 성능 회귀 및 향상된 기능을 보여 줍니다.

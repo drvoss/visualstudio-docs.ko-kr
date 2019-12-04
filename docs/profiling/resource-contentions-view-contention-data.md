@@ -10,14 +10,15 @@ ms.assetid: 14a7f774-211f-4ef8-af05-94d1c8f65d2f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: efadc6917f565f5449a76b6a8b91b309356a00bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1607e594b6456d4da4396069d589160230b39680
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797909"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778338"
 ---
 # <a name="resource-contentions-view---contention-data"></a>리소스 경합 뷰 - 경합 데이터
 리소스 경합 뷰에는 경합 이벤트의 출처인 리소스의 경합 데이터 목록이 표시됩니다. 다른 스레드의 함수가 리소스에 대한 배타적 액세스 권한을 확보하여 스레드가 해당 리소스 액세스를 대기해야 하는 경우 경합 이벤트가 발생합니다. 각 리소스는 경합 이벤트가 발생한 함수 실행 경로를 표시하는 호출 트리의 루트 노드입니다.
@@ -39,7 +40,7 @@ ms.locfileid: "62797909"
 
 ## <a name="navigating-the-resource-allocation-view"></a>리소스 할당 뷰 탐색
 
-|열|설명|
+|Column|설명|
 |------------|-----------------|
 |**이름**|리소스 또는 함수의 이름입니다.|
 |**차단된 전용 시간**|-   리소스의 경우 리소스 액세스가 차단되어 스레드가 대기해야 했던 총 시간입니다.<br />-   함수의 경우 함수가 함수 본문의 코드를 실행할 때 이러한 함수 인스턴스의 부모 리소스 액세스가 차단되었던 시간입니다. 해당 함수가 호출한 함수의 차단된 시간은 포함되지 않습니다.|

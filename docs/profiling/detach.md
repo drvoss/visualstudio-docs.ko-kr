@@ -6,14 +6,15 @@ ms.assetid: d9d1b52c-7f28-467d-b1e0-512afc4e46c9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a28551656c7cb47185713a6246479ef2bd96325
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 0b151e3ede34d0c8fa3a863d7a4e7474431ae6f4
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446834"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777392"
 ---
 # <a name="detach"></a>Detach
 VSPerfCmd.exe **Detach** 옵션은 지정된 프로세스 또는 지정되지 않은 경우 모든 프로세서에서 프로파일러의 연결을 끊습니다. 프로파일링은 샘플링 방법을 사용하여 초기화되어야 합니다.
@@ -45,7 +46,7 @@ VSPerfCmd.exe /Detach[:PIDs|ProcessNames]
 
  **Crosssession** 로그온 세션 이외의 세션에서 프로파일링 애플리케이션을 활성화합니다. **Start** 옵션이 **Crosssession** 옵션으로 지정된 경우 필요합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  이 예제에서 **Detach** 명령은 프로파일링을 일시 중단하고 **Shutdown** 명령은 프로파일러 데이터 파일을 닫습니다.
 
 ```cmd

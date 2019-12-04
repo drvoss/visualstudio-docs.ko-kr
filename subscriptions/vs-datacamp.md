@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/13/2019
 ms.topic: conceptual
 description: 선택한 Visual Studio 구독에 포함된 DataCamp Training 구독에 대해 알아봅니다.
-ms.openlocfilehash: ea889814373fa7c970e905bb4a845d5ca67c92e7
-ms.sourcegitcommit: 6f25855de9db455e6d38bc105057d2ed1e7454b9
+ms.openlocfilehash: 4ddfe064539a2ff572a7c89b89d618dff84f63a0
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199875"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706875"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독의 DataCamp Training 혜택
 적격 Visual Studio 구독에는 DataCamp 구독이 포함됩니다.  DataCamp를 사용하면 브라우저에서 편안하게 필요한 데이터 과학 기술을 학습할 수 있습니다. 학습 시기와 대상을 선택하게 됩니다. 소프트웨어 설치나 특수 하드웨어 요구 사항이 필요하지 않으므로 전에 없이 쉽게 데이터 과학을 학습할 수 있습니다.
@@ -50,7 +50,7 @@ ms.locfileid: "74199875"
    > [!div class="mx-imgBorder"]
    > ![DataCamp 시작](_img/vs-datacamp/vs-datacamp-getting-started.png)
 
-언제든 코스를 중지하고 다음 세션에서 학습을 이어갈 수 있습니다.  [http://www.datacamp.com](http://www.datacamp.com)을 방문해 로그인합니다.  대시보드를 확인하고 일시 중지한 부분부터 학습을 다시 시작할 수 있습니다. **트랙 계속**을 클릭하기만 하면 됩니다.
+언제든 코스를 중지하고 다음 세션에서 학습을 이어갈 수 있습니다.  [https://www.datacamp.com](https://www.datacamp.com)을 방문해 로그인합니다.  대시보드를 확인하고 일시 중지한 부분부터 학습을 다시 시작할 수 있습니다. **트랙 계속**을 클릭하기만 하면 됩니다.
 
 > [!div class="mx-imgBorder"]
 > ![DataCamp 학습 계속](_img/vs-datacamp/vs-datacamp-continue-training.png)

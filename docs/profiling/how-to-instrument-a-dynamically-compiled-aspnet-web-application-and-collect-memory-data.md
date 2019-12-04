@@ -6,14 +6,15 @@ ms.assetid: 2cdd9903-39db-47e8-93dd-5e6a21bc3435
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: f784807a99c288663bee381bfc1e481dd9d5d8e4
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 3378a45ebace942bb8696f2f67962365b5f57796
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67031981"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778884"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>방법: 프로파일러 명령줄을 통해 동적으로 컴파일된 ASP.NET 웹 애플리케이션 계측 및 메모리 데이터 수집
 이 항목에서는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구의 명령줄 도구를 사용하여 계측 프로파일링 방법으로 동적으로 컴파일된 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 애플리케이션에 대한 자세한 .NET 메모리 할당 및 개체 수명 데이터를 수집하는 방법을 설명합니다.

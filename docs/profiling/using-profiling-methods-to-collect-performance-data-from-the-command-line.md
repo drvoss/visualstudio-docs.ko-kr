@@ -6,14 +6,15 @@ ms.assetid: 5613fafc-f298-4e7a-9a2d-a853b61cdf9c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b5f2c1d350f487b6490d0c2b4ce4fe0b83bb38f
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: b30aa723ea3014aec2bd05d4bd204b9427b3c218
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746774"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779976"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>명령줄에서 프로파일링 방법을 사용하여 성능 데이터 수집
 프로파일링하는 애플리케이션의 유형, 사용하려는 프로파일링 방법, 그리고 대상 애플리케이션이 네이티브 코드로 작성되었는지 아니면 .NET Framework 코드로 작성되었는지에 따라 선택하는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 명령줄 도구 및 옵션이 달라집니다.

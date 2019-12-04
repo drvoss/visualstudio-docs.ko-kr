@@ -8,14 +8,15 @@ ms.assetid: bd98d6bf-2560-4eba-b063-2facb09f87c4
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 826031c2030c2ed8662ff98517a36c1a7ade3cde
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 34a63645933a173e449cf4292cc3d014cc3ec740
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386645"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74775321"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>방법: 특정 함수로 계측 제한
 **성능 세션**의 **고급** 페이지 또는 대상 이진 속성 페이지에서 옵션을 설정하여 계측 및 데이터 수집을 하나 이상의 함수로 제한할 수 있습니다.
@@ -41,7 +42,7 @@ ms.locfileid: "63386645"
 
     **/include:** `FuncSpec` **[;** `FuncSpec` **]** `...`
 
-    `FuncSpec`는 네임스페이스 및 함수 이름입니다. 형식은 `Namespace`**::**`FunctionName`입니다. 세미콜론을 사용하여 여러 함수를 구분합니다. 별표(\*)를 사용하여 하나 이상의 문자에 대한 와일드 카드를 지정합니다. 예를 들어 **/include:MyNS::\\***는 MyNS 네임스페이스에 있는 모든 함수를 지정합니다.
+    `FuncSpec`는 네임스페이스 및 함수 이름입니다. 형식은 `Namespace` **::** `FunctionName`입니다. 세미콜론을 사용하여 여러 함수를 구분합니다. 별표(\*)를 사용하여 하나 이상의 문자에 대한 와일드 카드를 지정합니다. 예를 들어 **/include:MyNS::\\** *는 MyNS 네임스페이스에 있는 모든 함수를 지정합니다.
 
    > [!NOTE]
    > 이진 파일의 함수를 나열하려면 프로파일링 도구 설치 디렉터리([명령줄 도구 경로 지정](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md) 참조)에서 명령 프롬프트 창을 연 다음, **vsinstr /DumpFuncs**를 입력합니다.
@@ -60,7 +61,7 @@ ms.locfileid: "63386645"
 
     **/include:** `FuncSpec` **[;** `FuncSpec` **]** `...`
 
-    `FuncSpec`는 네임스페이스 및 함수 이름입니다. 형식은 `Namespace`**::**`FunctionName`입니다. 세미콜론을 사용하여 여러 함수를 구분합니다. 별표(\*)를 사용하여 하나 이상의 문자에 대한 와일드 카드를 지정합니다. 예를 들어 **/include:MyNS::\\***는 MyNS 네임스페이스에 있는 모든 함수를 지정합니다.
+    `FuncSpec`는 네임스페이스 및 함수 이름입니다. 형식은 `Namespace` **::** `FunctionName`입니다. 세미콜론을 사용하여 여러 함수를 구분합니다. 별표(\*)를 사용하여 하나 이상의 문자에 대한 와일드 카드를 지정합니다. 예를 들어 **/include:MyNS::\\** *는 MyNS 네임스페이스에 있는 모든 함수를 지정합니다.
 
    > [!NOTE]
    > 이진 파일의 함수를 나열하려면 프로파일링 도구 설치 디렉터리([명령줄 도구 경로 지정](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md) 참조)에서 명령 프롬프트 창을 연 다음, **vsinstr /DumpFuncs**를 입력합니다.

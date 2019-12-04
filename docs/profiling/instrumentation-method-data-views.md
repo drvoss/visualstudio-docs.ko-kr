@@ -9,14 +9,15 @@ ms.assetid: 481f7579-f784-49ef-bb6c-2944e9d6ab42
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0da4ea0080bfbfb3e4192902f63f50a640b14c8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 18cc473f517e1f2eb03b657a365a33e4e37ff23f
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62995374"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774165"
 ---
 # <a name="instrumentation-method-data-views"></a>계측 방법 데이터 뷰
 이 섹션에서는 계측 방법을 사용하여 생성된 프로파일러 데이터 파일의 뷰와 보고서에 대한 참조 정보를 제공합니다.

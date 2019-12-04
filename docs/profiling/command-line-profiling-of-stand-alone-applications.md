@@ -9,14 +9,15 @@ ms.assetid: a47f2bf2-186d-4120-bb79-34e2f3a1ee42
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a3bcc9dabbd325674e0731adaf4fcfb5b1abcbb
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: c5fd11f12f368c266dd19577925db7cec1867e39
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189396"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779560"
 ---
 # <a name="command-line-profiling-of-stand-alone-applications"></a>독립 실행형 애플리케이션의 명령줄 프로파일링
 이 섹션에서는 명령줄에서 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구를 사용하여 독립 실행형(클라이언트) 애플리케이션의 성능 데이터를 수집하기 위한 절차 및 옵션을 설명합니다.

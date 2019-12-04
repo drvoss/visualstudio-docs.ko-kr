@@ -9,14 +9,15 @@ ms.assetid: 79056873-2985-40be-9112-cdbc26a65156
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b346047ff52c994e76a322a5afa0494259277163
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 649d0e9e5b32c124cfa962f45e4d128e4a32210f
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438473"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778208"
 ---
 # <a name="summary-view---sampling-data"></a>요약 뷰 - 샘플링 데이터
 요약 뷰에는 프로파일링 실행에서 성능상 가장 많은 비용이 소요된 함수에 대한 정보가 표시됩니다. 알림 링크 및 보고서 목록에 대한 설명을 비롯한 자세한 내용은 [요약 뷰](../profiling/summary-view.md)를 참조하세요.
@@ -32,7 +33,7 @@ ms.locfileid: "63438473"
 
  **실행 부하 과다 경로**에는 각 함수에 대해 다음 데이터가 표시됩니다.
 
-|열|설명|
+|Column|설명|
 |------------|-----------------|
 |**이름**|함수의 이름.|
 |**포괄 샘플 비율(%)**|이 함수 또는 이 함수가 호출한 함수가 실행 중일 때 발생한 모든 샘플의 비율입니다.|
@@ -45,7 +46,7 @@ ms.locfileid: "63438473"
 
  **개별 작업이 가장 많은 함수**에는 각 함수에 대해 다음 데이터가 포함됩니다.
 
-|열|설명|
+|Column|설명|
 |------------|-----------------|
 |**이름**|함수의 이름.|
 |**전용 샘플 비율(%)**|함수가 함수 본문의 코드를 실행 중일 때 수집된 프로파일링 실행 내 모든 샘플의 백분율입니다. 이 함수가 호출한 함수가 실행 중일 때 수집된 샘플은 백분율에서 제외됩니다.|

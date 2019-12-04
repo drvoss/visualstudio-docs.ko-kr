@@ -6,14 +6,15 @@ ms.assetid: 1971868e-89fa-4452-8ee7-76e4daf31b66
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 351b5a8da781d8e60d6a603c1d037f8bf71cd317
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e1bed2715421948385a5b7eb1ddbbac064f3288b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62999321"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778117"
 ---
 # <a name="timer"></a>Timer
 *VSPerfCmd.exe* **Timer** 옵션은 프로세서 클록 주기로 샘플링되는 프로파일링 이벤트를 설정하며 경우에 따라 샘플링 간격의 주기 수를 기본값 10,000,000에서 변경합니다. 1GH(1기가헤르츠) 프로세서에서 10,000,000 클록 주기는 초당 샘플 100개입니다. 지정할 수 있는 최소 주기 수는 50,000입니다.
@@ -43,15 +44,15 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /Timer[:Cycles] [Options]
 ## <a name="invalid-options"></a>잘못된 옵션
  다음 옵션은 **Timer**와 동일한 명령줄에서 지정할 수 없습니다.
 
- **PF**[**:**`Events`] 샘플링 이벤트를 페이지 폴트로 설정하고 경우에 따라 샘플링 간격을 `Events`로 설정합니다. 기본 PF 간격은 10입니다.
+ **PF**[ **:** `Events`] 샘플링 이벤트를 페이지 폴트로 설정하고 경우에 따라 샘플링 간격을 `Events`로 설정합니다. 기본 PF 간격은 10입니다.
 
- **Sys**[**:**`Events`] 샘플링 이벤트를 운영 체제 호출로 설정하고 필요한 경우 샘플링 간격을 `Events`로 설정합니다. 기본 시스템 간격은 10입니다.
+ **Sys**[ **:** `Events`] 샘플링 이벤트를 운영 체제 호출로 설정하고 필요한 경우 샘플링 간격을 `Events`로 설정합니다. 기본 시스템 간격은 10입니다.
 
- **Counter:**[**:**`Name,Reload,FriendlyName`] 샘플링 이벤트를 `Name`으로 지정한 CPU 성능 카운터로 설정하고 샘플링 간격을 `Reload`로 설정합니다.
+ **Counter:** [ **:** `Name,Reload,FriendlyName`] 샘플링 이벤트를 `Name`으로 지정한 CPU 성능 카운터로 설정하고 샘플링 간격을 `Reload`로 설정합니다.
 
- **GC**[**:**{**Allocation**&#124;**Lifetime**}] .NET 메모리 데이터를 수집합니다. 기본적으로(**Allocation**) 모든 메모리 할당 이벤트에서 데이터가 수집됩니다. **Lifetime** 매개변수가 지정되면 데이터는 각 가비지 컬렉션 이벤트에서도 수집됩니다.
+ **GC**[ **:** {**Allocation**&#124;**Lifetime**}] .NET 메모리 데이터를 수집합니다. 기본적으로(**Allocation**) 모든 메모리 할당 이벤트에서 데이터가 수집됩니다. **Lifetime** 매개변수가 지정되면 데이터는 각 가비지 컬렉션 이벤트에서도 수집됩니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제는 프로파일러 샘플링 간격을 1,000,000 프로세서 주기로 설정하는 방법을 보여줍니다.
 
 ```cmd

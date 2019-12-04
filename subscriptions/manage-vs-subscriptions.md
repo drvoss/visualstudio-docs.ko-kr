@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/17/2019
 ms.topic: conceptual
 description: Visual Studio 구독을 최대한 활용하는 방법을 알아봅니다.
-ms.openlocfilehash: dcbcbc9c11dc5c695a1ca2ed523ad982ff18f5c5
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: a8a58cd3fca2443ca84db712cbd2a356351d4499
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493353"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706979"
 ---
 # <a name="managing-subscriptions"></a>구독 관리
 
@@ -43,7 +43,7 @@ Visual Studio 구독 포털은 향상된 단일 포털 환경에서 모든 Visua
 ## <a name="renewing-my-subscriptions"></a>내 구독 갱신
 
 **표준 구독**
-- Microsoft Store: [Microsoft Store](http://www.microsoft.com/store)에서 구독을 구입한 경우 해당 구독을 갱신할 수 있습니다.
+- Microsoft Store: [Microsoft Store](https://www.microsoft.com/store)에서 구독을 구입한 경우 해당 구독을 갱신할 수 있습니다.
 - 볼륨 라이선스:  회사에서 볼륨 라이선스를 통해 구독을 구입하는 경우 관리자는 대리점에 연락하여 구독을 갱신해야 합니다.
 
 **클라우드 구독:**  클라우드 구독은 갱신할 필요가 없습니다. 구독료를 지불하는 한 계속 활성 상태로 유지됩니다.

@@ -8,14 +8,15 @@ ms.assetid: 6da57b83-7b42-4d7c-9aea-8e0a830faf6b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bc0997d46b928d4aef21c152fa4bf27f095f0d22
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 185345c13134f4d2ec6086e6a66183e044c577ba
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62419870"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74771450"
 ---
 # <a name="summary-view---resource-contention-view"></a>요약 뷰 - 리소스 경합 뷰
 요약 뷰에는 스레드 또는 프로세스가 리소스 액세스를 대기하던 중 일시 중단된 애플리케이션의 이벤트에 대한 정보가 표시됩니다.
@@ -30,7 +31,7 @@ ms.locfileid: "62419870"
 
  **경합이 가장 많은 리소스**에는 각 리소스에 대해 다음 데이터가 포함됩니다.
 
-|열|설명|
+|Column|설명|
 |------------|-----------------|
 |**이름**|리소스의 이름입니다.|
 |**경합 비율(%)**|이 리소스에 대해 경합이 발생한 프로파일링 데이터 내 모든 경합 이벤트의 백분율입니다.|
@@ -40,7 +41,7 @@ ms.locfileid: "62419870"
 
  **경합이 가장 많은 스레드**에는 각 스레드에 대해 다음 데이터가 포함됩니다.
 
-|열|설명|
+|Column|설명|
 |------------|-----------------|
 |**ID**|스레드 식별자입니다.|
 |**이름**|스레드를 소유하는 프로세스의 이름입니다.|

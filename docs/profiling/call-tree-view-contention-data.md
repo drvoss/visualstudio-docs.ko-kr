@@ -8,14 +8,15 @@ ms.assetid: 9bd4bde2-2ca3-446c-9ccc-7421522e03ae
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 969945260ee453e84ae2aeec0f28559ca11933a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e91e231f72b006d2020c8b4d5d96c7e24fa1dd9c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777013"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779781"
 ---
 # <a name="call-tree-view---contention-data"></a>호출 트리 뷰 - 경합 데이터
 호출 트리 뷰에는 프로파일링 된 애플리케이션에서 이동한 함수 실행 경로가 표시됩니다. 트리의 루트는 애플리케이션 또는 구성 요소에 대한 진입점입니다. 각 함수 노드는 호출한 모든 함수, 다른 스레드 또는 프로세스와 리소스에 대해 경합하기 때문에 함수가 차단된 횟수 및 함수가 차단된 시간을 나열합니다.
@@ -32,7 +33,7 @@ ms.locfileid: "62777013"
 
  루트 노드를 설정하면 선택한 노드의 하위 트리를 제외한 다른 모든 항목이 뷰에서 제거됩니다. 루트 노드를 원래 노드로 다시 설정하려면 호출 트리 뷰를 마우스 오른쪽 단추로 클릭하고 **루트 다시 설정**을 클릭합니다.
 
-|열|설명|
+|Column|설명|
 |------------|-----------------|
 |**차단된 전용 시간**|프로파일링 실행 시 이 실행 경로에서 이 함수 인스턴스의 실행이 차단된 시간입니다. 이 시간에 함수가 호출한 자식 함수에서 차단된 시간은 포함되지 않습니다.|
 |**차단된 전용 시간 비율(%)**|프로파일링 실행의 모든 차단된 시간 중 이 실행 경로에서 이러한 함수에 대해 차단된 전용 시간의 백분율입니다.|

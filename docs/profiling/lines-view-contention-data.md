@@ -8,14 +8,15 @@ ms.assetid: 859b02d2-eddf-4ad3-95de-0df67ee2ab03
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 572400794af73ed70503ce39327d678c5ffa195a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1dfcdf67c897c0c1565e536a69cc940b9df83390
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000622"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778598"
 ---
 # <a name="lines-view---contention-data"></a>줄 뷰 - 경합 데이터
 경합 데이터의 줄 뷰에는 프로파일링 실행 시 샘플이 수집될 때 실행되고 있던 문에 대한 성능 데이터가 나열됩니다. 소스 파일에서는 하나의 문이 소스 파일의 여러 줄에 걸쳐 있거나 한 줄에 여러 문이 포함될 수 있습니다.
@@ -38,7 +39,7 @@ ms.locfileid: "63000622"
 
   다음 표에서는 줄 뷰 보고서의 열에 대해 설명합니다.
 
-|열|설명|
+|Column|설명|
 |------------|-----------------|
 |**차단된 전용 시간**|경합 이벤트로 인해 문의 코드를 실행할 수 없도록 이 문이 차단된 시간입니다. 문이 호출한 함수의 차단된 시간은 포함되지 않습니다.|
 |**차단된 전용 시간 비율(%)**|프로세스에서 문의 차단된 전용 시간이었던 모든 차단된 시간의 백분율입니다.|
@@ -50,7 +51,7 @@ ms.locfileid: "63000622"
 |**차단된 포괄 시간 비율(%)**|프로세스에서 문의 차단된 포괄 시간이었던 모든 차단된 시간의 백분율입니다.|
 |**포괄 경합**|이 문과 해당 문에서 호출된 함수가 실행할 수 없도록 차단된 횟수입니다.|
 |**포괄 경합 비율(%)**|프로세스에서 이 문의 포괄 경합이었던 모든 경합 이벤트의 백분율입니다.|
-|**줄 이름**|프로파일러에서 생성된 줄 식별자입니다. 이 식별자에는 다음 구문이 사용됩니다. `SourceFile`**;[**`LineNumberStart`**,**`CharacterStart`**]->;[**`LineNumberEnd`**,**`CharacterEnd`**]**|
+|**줄 이름**|프로파일러에서 생성된 줄 식별자입니다. 이 식별자에는 다음 구문이 사용됩니다. `SourceFile` **;[** `LineNumberStart` **,** `CharacterStart` **]->;[** `LineNumberEnd` **,** `CharacterEnd` **]**|
 |**함수 줄 번호**|소스 파일에서 이 함수가 시작되는 줄 번호입니다.|
 |**모듈 이름**|문이 포함된 모듈의 이름입니다.|
 |**모듈 경로**|문이 포함된 모듈의 경로입니다.|

@@ -10,14 +10,15 @@ ms.assetid: a4ecfe1c-abbc-4fb3-9ab2-34de50486901
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6328ea53c90b5a5a7ba50fde5a00e29fadacaaa7
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e66432fd2f5d8b1532bece9d76e7dfc2a261e4b7
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924516"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74771605"
 ---
 # <a name="resource-details-view---contention-data"></a>리소스 정보 뷰 - 경합 데이터
 리소스 정보 뷰에는 선택한 리소스에 대한 경합으로 인해 발생한 차단 이벤트의 시간 표시 막대 그래프가 표시됩니다. 다른 스레드가 리소스에 대한 액세스를 잠가 스레드가 실행을 일시 중단해야 했던 경우 차단 이벤트가 발생합니다.

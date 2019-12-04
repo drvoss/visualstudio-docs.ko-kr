@@ -7,14 +7,15 @@ ms.assetid: df44fe42-281b-4398-b3fc-277b62ae41f1
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d9f82efee62519fd50604268bf873d1db364209a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 96d4a812fd98dbd0f58a8012a61cdaef96db3a8b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439610"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779105"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>방법: 명령줄을 통해 네이티브 독립 실행형 애플리케이션에 프로파일러를 연결하여 애플리케이션 통계 수집
 이 문서에서는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 명령줄 도구를 사용하여 실행 중인 네이티브 독립 실행형(클라이언트) 애플리케이션에 프로파일러를 연결하고 샘플링 방법을 사용하여 성능 통계를 수집하는 방법을 설명합니다.
@@ -37,15 +38,15 @@ ms.locfileid: "63439610"
 
     **VSPerfCmd /start:sample /output:** `OutputFile` [`Options`]
 
-   - [/start](../profiling/start.md)**:sample** 옵션은 프로파일러를 초기화합니다.
+   - [/start](../profiling/start.md) **:sample** 옵션은 프로파일러를 초기화합니다.
 
-   - **/start**에는 [/output](../profiling/output.md)**:**`OutputFile` 옵션이 필요합니다. `OutputFile`은 프로파일링 데이터(.vsp) 파일의 이름과 위치를 지정합니다.
+   - **/start**에는 [/output](../profiling/output.md) **:** `OutputFile` 옵션이 필요합니다. `OutputFile`은 프로파일링 데이터(.vsp) 파일의 이름과 위치를 지정합니다.
 
      **/start:sample** 옵션과 다음 옵션을 함께 사용할 수 있습니다.
 
    | 옵션 | 설명 |
    | - | - |
-   | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | 프로파일링된 프로세스를 소유한 계정의 도메인 및 사용자 이름을 지정합니다. 이 옵션은 프로세스가 로그온한 사용자 이외의 사용자로 실행 중인 경우에만 필요합니다. [Windows 작업 관리자]의 [프로세스] 탭에 있는 [사용자 이름] 열에 프로세스 소유자가 나열됩니다. |
+   | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | 프로파일링된 프로세스를 소유한 계정의 도메인 및 사용자 이름을 지정합니다. 이 옵션은 프로세스가 로그온한 사용자 이외의 사용자로 실행 중인 경우에만 필요합니다. [Windows 작업 관리자]의 [프로세스] 탭에 있는 [사용자 이름] 열에 프로세스 소유자가 나열됩니다. |
    | [/crosssession](../profiling/crosssession.md) | 프로세스 프로파일링 기능을 다른 세션에서 사용하도록 설정합니다. 이 옵션은 ASP.NET 애플리케이션이 다른 세션에서 실행 중인 경우 필요합니다. Windows 작업 관리자의 프로세스 탭에 있는 세션 ID 열에 세션 식별자가 나열됩니다. **/CS**를 **/crosssession**에 대한 약어로 지정할 수 있습니다. |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | 프로파일링 중에 수집할 Windows 성능 카운터를 지정합니다. |
    | [/automark](../profiling/automark.md) **:** `Interval` | **/wincounter**와 함께 사용해야 합니다. Windows 성능 카운터 수집 이벤트 사이에 경과하는 시간(밀리초)을 지정합니다. 기본값은 500ms입니다. |
@@ -53,7 +54,7 @@ ms.locfileid: "63439610"
 
 3. 대상 애플리케이션에 프로파일러를 연결합니다. 유형:
 
-    **VSPerfCmd**  [/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [`Sample Event`]
+    **VSPerfCmd**  [/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [`Sample Event`]
 
     `PID`는 대상 애플리케이션의 프로세스 ID를 지정합니다. `ProcessName`은 프로세스의 이름을 지정합니다. `ProcessName`을 지정하며 동일한 이름을 갖는 여러 프로세스가 실행되고 있으면 결과를 예측할 수 없습니다. [Windows 작업 관리자]에서 모든 실행 중인 프로세스의 프로세스 ID를 볼 수 있습니다.
 
@@ -62,8 +63,8 @@ ms.locfileid: "63439610"
    |샘플 이벤트|설명|
    |------------------|-----------------|
    |[/timer](../profiling/timer.md) **:** `Interval`|샘플링 간격을 `Interval`로 지정된 무중단 클록 주기 수로 변경합니다.|
-   |[/pf](../profiling/pf.md)[**:**`Interval`]|샘플링 이벤트를 페이지 폴트로 변경합니다. `Interval`이 지정되면 샘플 간의 페이지 폴트 수를 설정합니다. 기본값은 10입니다.|
-   |[/sys](../profiling/sys-vsperfcmd.md) [**:**`Interval`]|샘플링 이벤트를 운영 체제 커널에 대한 프로세스의 시스템 호출로 변경합니다(syscalls). `Interval`이 지정되면 샘플 간의 호출 수를 설정합니다. 기본값은 10입니다.|
+   |[/pf](../profiling/pf.md)[ **:** `Interval`]|샘플링 이벤트를 페이지 폴트로 변경합니다. `Interval`이 지정되면 샘플 간의 페이지 폴트 수를 설정합니다. 기본값은 10입니다.|
+   |[/sys](../profiling/sys-vsperfcmd.md) [ **:** `Interval`]|샘플링 이벤트를 운영 체제 커널에 대한 프로세스의 시스템 호출로 변경합니다(syscalls). `Interval`이 지정되면 샘플 간의 호출 수를 설정합니다. 기본값은 10입니다.|
    |[/counter](../profiling/counter.md) **:** `Config`|샘플링 이벤트 및 간격을 `Config`에 지정된 프로세서 성능 카운터 및 간격으로 변경합니다.|
 
 ## <a name="control-data-collection"></a>데이터 수집 제어
@@ -75,8 +76,8 @@ ms.locfileid: "63439610"
 
     |옵션|설명|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|모든 프로세스에 대한 데이터 수집을 시작(**/globalon**) 또는 중지(**/globaloff**)합니다.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|`PID`로 지정된 프로세스에 대한 데이터 수집을 시작(**/processon**) 또는 중지(**/processoff**)합니다.|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|모든 프로세스에 대한 데이터 수집을 시작( **/globalon**) 또는 중지( **/globaloff**)합니다.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|`PID`로 지정된 프로세스에 대한 데이터 수집을 시작( **/processon**) 또는 중지( **/processoff**)합니다.|
     |[/attach](../profiling/attach.md) **:** `PID` [/detach](../profiling/detach.md)|**/attach**는 `PID`로 지정된 프로세스에 대한 데이터 수집을 시작합니다. **/detach**는 모든 프로세스에 대한 데이터 수집을 중지합니다.|
 
 ## <a name="end-the-profiling-session"></a>프로파일링 세션 종료

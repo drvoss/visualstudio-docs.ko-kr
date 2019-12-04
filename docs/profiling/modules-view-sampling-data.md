@@ -9,14 +9,15 @@ ms.assetid: 816f5633-65d7-41e5-aee1-033628d4e2df
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 359d36ed7eb74394e63af39cdbc9986b02385f8d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 7ead219ddf482af5917842118d386c6fefe67973
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403615"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772716"
 ---
 # <a name="modules-view---sampling-data"></a>모듈 뷰 - 샘플링 데이터
 샘플링 데이터의 모듈 뷰에는 프로파일링 데이터에서 샘플링된 모듈별로 그룹화된 성능 데이터가 표시됩니다. 각 모듈은 계층 트리의 루트입니다. 모듈의 샘플링된 함수는 모듈 노드 아래에 나열됩니다.
@@ -26,7 +27,7 @@ ms.locfileid: "63403615"
 
  샘플을 수집할 때 함수가 실행 중이었다면, 즉 함수가 호출 스택 맨 위에 있었다면 실행 중이었던 소스 줄 및 명령 주소가 함수 노드 아래에 나열됩니다. 소스 줄이나 명령을 실행할 때는 해당 줄 또는 명령 포인터에 대한 데이터가 수집되므로, 줄 데이터 및 명령 데이터에 대한 포괄 값과 전용 값은 항상 동일합니다.
 
-|열|설명|
+|Column|설명|
 |------------|-----------------|
 |**이름**|모듈, 함수, 줄 번호 또는 명령 포인터 주소의 이름입니다.|
 |**프로세스 ID**|프로파일링 실행의 PID(프로세스 ID)입니다.|

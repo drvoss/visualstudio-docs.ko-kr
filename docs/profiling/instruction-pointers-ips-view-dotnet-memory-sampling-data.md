@@ -8,21 +8,22 @@ ms.assetid: 7d91cc14-e8e9-4ebb-b14f-b9f0da770508
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8443f17507b7e4225e6f04d914c115bf17f7d091
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aa90262081a693227b4594a4e5b7fe22c8fb1627
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62995425"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778663"
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>IP(명령 포인터) 뷰 - .NET 메모리 샘플링 데이터
 샘플링 방법을 사용하여 수집된 .NET 메모리 할당 프로파일링 데이터에 대한 IP 뷰는 프로파일링 실행 중 메모리를 할당한 어셈블리 명령을 나열합니다. 뷰의 열은 할당의 크기와 할당 수도 나열합니다.
 
  전용 값만 나열됩니다.
 
-|열|설명|
+|Column|설명|
 |------------|-----------------|
 |**프로세스 ID**|프로파일링 실행의 PID(프로세스 ID)입니다.|
 |**프로세스 이름**|프로세스의 이름입니다.|

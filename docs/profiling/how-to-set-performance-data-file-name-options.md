@@ -6,14 +6,15 @@ ms.assetid: d7a8d6b9-ab23-46fb-98ed-774781157860
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b83b0aa083ca115797c9dc1cd8345d397307177
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cc42b63524a867c0893aa255180c740d03d4b5fe
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539274"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778767"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>방법: 성능 데이터 파일 이름 옵션 설정
 
@@ -25,7 +26,7 @@ ms.locfileid: "62539274"
 
 |||
 |-|-|
-|*Path*|보고서가 포함된 디렉터리입니다. 기본 위치는 사용자의 프로젝트 및 솔루션에 대한 솔루션 폴더 또는 기본 위치입니다.|
+|*경로*|보고서가 포함된 디렉터리입니다. 기본 위치는 사용자의 프로젝트 및 솔루션에 대한 솔루션 폴더 또는 기본 위치입니다.|
 |*VSP-File*|프로파일링 데이터 파일의 이름입니다. 기본 이름은 프로파일링되는 솔루션 또는 실행 파일의 이름입니다.|
 |*YYMMDD*|프로파일링 데이터가 수집된 연도, 월 및 일을 표시하는 날짜 스탬프입니다.|
 |*(N)*|두 개 이상의 프로파일링 데이터 파일이 있으면 괄호 사이의 파일 이름에 증분된 숫자가 추가됩니다.|

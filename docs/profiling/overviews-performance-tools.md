@@ -6,14 +6,15 @@ ms.assetid: b877802d-c736-4047-821a-bd7733fff6de
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: dcce2a7a505c5ac5aa1db3232055f8b37b7e64ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d284ffc6b850a9746cf1442f35400a18045bbe18
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62794412"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772686"
 ---
 # <a name="overviews-performance-tools"></a>개요(성능 도구)
 이 섹션에서는 개발 중인 애플리케이션의 성능 특성을 측정하는 데 사용할 수 있는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구의 개념과 용어를 간략하게 설명합니다.

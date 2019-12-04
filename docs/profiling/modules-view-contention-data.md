@@ -8,14 +8,15 @@ ms.assetid: 1a9aa122-2d8f-4a09-b503-92975aa6b648
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f9d3cf030ca0e996365963e5dad419b19ff67596
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2de844867e9c0a8d95abdaa13f860a6487254bfe
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830065"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74780015"
 ---
 # <a name="modules-view---contention-data"></a>모듈 뷰 - 경합 데이터
 경합 데이터의 모듈 뷰에는 프로파일링 데이터에서 샘플링된 모듈별로 그룹화된 동시성 데이터가 표시됩니다. 각 모듈은 계층 트리의 루트입니다. 경합 이벤트가 발생한 모듈의 함수는 모듈 노드 아래에 나열됩니다.
@@ -24,7 +25,7 @@ ms.locfileid: "62830065"
 
  다음 표는 경합 데이터의 모듈 뷰에서 열의 값을 설명합니다.
 
-|열|설명|
+|Column|설명|
 |------------|-----------------|
 |**차단된 전용 시간**|-   함수의 경우 이 함수에서 함수 본문의 코드 실행이 차단되는 시간입니다. 해당 함수가 호출한 함수의 차단된 시간은 포함되지 않습니다.<br />-   모듈의 경우 모듈 내 함수의 차단된 전용 시간의 합입니다.<br />-   줄 또는 명령의 경우 이 줄 또는 명령이 실행에서 차단된 시간입니다.|
 |**차단된 전용 시간 비율(%)**|-   함수 또는 모듈의 경우 프로파일링 실행의 모든 차단된 시간 중 이 함수 또는 모듈의 차단된 전용 시간의 백분율입니다.<br />-   줄 또는 명령의 경우 이 줄이나 명령이 실행에서 차단되었던 프로파일링 실행의 차단된 모든 시간의 백분율입니다.|

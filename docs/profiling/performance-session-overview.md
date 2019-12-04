@@ -9,14 +9,15 @@ ms.assetid: 35752f95-a57a-4def-b64d-cf4899669e99
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 545a77791d7bc5318dc17d869c510fb4e8a0787f
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: e7b23a7cbefeace19a3deaa5c1bfc05580081d39
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189354"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778468"
 ---
 # <a name="performance-session-overview"></a>성능 세션 개요
 이 개요에서는 프로파일링의 기본 사항에 대해 설명합니다. 성능 작업을 처음 수행하는 개발자는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구를 통해 빠르게 생산성을 높이고 코드 성능을 개선하는 방법을 파악할 수 있습니다. 그리고 프로파일링에 대해 잘 알고 있는 개발자는 특정 프로파일링 도구의 기능과 프로세스에 대해 대략적으로 확인할 수 있습니다.

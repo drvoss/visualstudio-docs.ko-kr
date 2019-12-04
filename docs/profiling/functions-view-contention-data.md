@@ -8,21 +8,22 @@ ms.assetid: 208773b0-1a54-4b7a-ad37-2b6fd4f731d4
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dcea1097b33c612094c4a7eb35b240c28f8bde0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5874ffc7b4d304d1eaacd78032d657fe6ff31d94
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969747"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74780054"
 ---
 # <a name="functions-view---contention-data"></a>함수 뷰 - 경합 데이터
 경함 데이터의 함수 보고서 뷰는 프로파일링 실행 중에 실행에서 차단된 프로파일링 실행 시 함수를 나열합니다.
 
  다음 표에서는 동시성 방법을 사용하여 수집된 프로파일링 데이터 파일의 함수 뷰에 표시된 값을 설명합니다.
 
-|열|설명|
+|Column|설명|
 |------------|-----------------|
 |**차단된 전용 시간**|이 함수가 함수 본문에서 코드를 실행할 수 없도록 차단된 시간의 양입니다. 해당 함수가 호출한 함수의 차단된 시간은 포함되지 않습니다.|
 |**차단된 전용 시간 비율(%)**|프로파일링 실행의 모든 차단된 시간 중 이 함수의 차단된 전용 시간의 백분율입니다.|

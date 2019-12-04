@@ -12,14 +12,15 @@ ms.assetid: 778bc105-7643-46c4-a338-f3620e31125a
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c616564a8d9cc84b4ea85267ae6e2c4c735d16a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53378c3d210ef9666df251d68a3eec570f8caa2f
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972345"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778000"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 *VSPerfCmd.exe* 도구는 성능 데이터 수집을 시작하고 중지하는 데 사용됩니다. 이 도구는 다음 구문을 사용합니다.

@@ -8,14 +8,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 97644776f4197e2f3286d29cbd3f746f7ecd0b15
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cbe03f52b31664c59cb7e59d448db7c6b96b6487
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809654"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772880"
 ---
 # <a name="collect-performance-statistics-by-using-sampling"></a>샘플링을 사용하여 성능 통계 수집
 

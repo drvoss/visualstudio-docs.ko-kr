@@ -8,18 +8,19 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f10a3f434def1c96c2f096c4b299b47dd8aad9f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3dace7b13816c63664ccb4dabfed52d1c5fb7523
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004403"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778078"
 ---
 # <a name="understand-instrumentation-data-values"></a>계측 데이터 값 이해
 
-Visual Studio의 ‘계측’ 프로파일링 방법은 함수 호출, 줄 및 프로파일링된 애플리케이션의 명령에 대해 자세한 타이밍 정보를 기록합니다.
+Visual Studio의 ‘계측’ 프로파일링 방법은 함수 호출, 줄 및 프로파일링된 애플리케이션의 명령에 대해 자세한 타이밍 정보를 기록합니다. 
 
 계측 메서드는 프로파일링된 바이너리에서 대상 함수의 시작 및 끝 부분에 코드를 삽입하고 다른 함수들에 대한 이러한 함수의 각 호출 이전 및 다음 위치에 코드를 삽입합니다. 주입되는 코드는 다음 정보를 기록합니다.
 

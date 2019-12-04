@@ -13,14 +13,15 @@ ms.assetid: 98a1eb71-bbf5-4ce7-8559-cdc29f082c4b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 66d44ff0c2c2406e9ba4508c835deab571b70e44
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 87692c938462f166f93b4cfb8b223a45e2553ada
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926490"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74771586"
 ---
 # <a name="summary-view"></a>요약 뷰
 요약 뷰에는 프로파일링 실행에서 성능상 가장 많은 비용이 소요된 함수 또는 개체에 대한 정보가 표시됩니다. 이 뷰는 타임라인 그래프 및 프로파일링 방법의 성능 메트릭을 기반으로 가장 많은 비용이 소요된 함수 또는 개체의 두 개 이상의 목록을 제공합니다. 이 뷰의 데이터는 사용된 프로파일링 방법(샘플링, 계측 또는 동시성) 및 .NET 메모리 할당이 수집되었는지 여부에 따라 달라집니다.

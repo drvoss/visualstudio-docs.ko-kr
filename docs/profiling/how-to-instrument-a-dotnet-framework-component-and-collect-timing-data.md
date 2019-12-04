@@ -6,14 +6,15 @@ ms.assetid: b7dcc27b-45c6-4302-9552-6fa5b1e94b56
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: ff23dd4995be70c9a34c95dbe744961b75de3e0c
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: ef50983d964c4b7ef6479117ed2501569a77a62d
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032908"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778910"
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>방법: 명령줄에서 독립 실행형 .NET Framework 구성 요소 계측 및 프로파일러를 사용하여 타이밍 데이터 수집
 이 항목에서는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 명령줄 도구를 사용하여 .*exe* 또는 .*dll* 파일과 같은 .NET Framework 구성 요소를 계측하고 자세한 타이밍 데이터를 수집하는 방법을 설명합니다.

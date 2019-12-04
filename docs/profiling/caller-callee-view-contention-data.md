@@ -8,14 +8,15 @@ ms.assetid: a18a1b1b-9b39-43c7-b1f3-708fd20376f6
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d14296ab4218cbcab0d508f47b0f38f3c50a94f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 083386a808f7b91a18b3ea685ae657118c723978
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777335"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779742"
 ---
 # <a name="callercallee-view----contention-data"></a>호출자/호출 수신자 뷰 - 경합 데이터
 호출자/호출 수신자 뷰는 선택한 함수와 해당 부모 및 자식 함수에 대한 경합 정보를 표시합니다. 호출자/호출 수신자 뷰에는 세 개의 표가 포함되어 있습니다.
@@ -26,7 +27,7 @@ ms.locfileid: "62777335"
 
  **현재 함수에서 호출된 함수**는 아래쪽 표에 표시되며, 현재 함수가 자식 함수를 호출한 경우 선택한 함수의 호출 수신자(자식) 함수에 대한 경합 정보를 보여 줍니다.
 
-|열|설명|
+|Column|설명|
 |------------|-----------------|
 |**Type**|함수의 컨텍스트:<br /><br /> -   **0** - 현재 함수<br />-   **1** - 현재 함수를 호출하는 함수<br />-   **2** - 현재 함수가 호출하는 함수<br /><br /> [VSPerfReport](../profiling/vsperfreport.md) 명령줄 보고서에서만 사용됩니다.|
 |**차단된 전용 시간**|-   현재 함수의 경우 이 함수에서 함수 본문의 코드 실행이 차단되는 시간입니다. 해당 함수가 호출한 함수의 차단된 시간은 포함되지 않습니다.<br />-   호출자 함수의 경우 이 함수가 현재 함수를 호출했을 때 발생한 현재 함수의 차단된 전용 시간 부분입니다.<br />-   호출 수신자 함수의 경우 이 함수가 현재 함수에 의해 호출되었을 때 자체 코드를 실행할 수 없도록 차단된 시간입니다. 호출 수신자 함수가 호출한 하위 함수의 차단된 시간은 포함되지 않습니다.|

@@ -8,21 +8,22 @@ ms.assetid: 9c05b51a-8382-44cf-a8f7-3fabdd2e8f1b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0b4870a17988c4f926e04aca24e50419c4a27165
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9d0d9b7ab681a266115673b48f2c2604c5ff869c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829959"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772729"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>모듈 뷰 - .NET 메모리 샘플링 데이터
 샘플링 방법을 사용하여 수집되는 .NET 메모리 할당 데이터의 모듈 뷰에서는 프로파일링 실행에서 실행된 모듈을 기준으로 메모리 데이터를 그룹화합니다. 각 모듈은 계층 트리의 루트입니다. 모듈의 함수는 모듈 노드 아래에 나열됩니다.
 
  메모리를 할당하는 문의 소스 파일 줄 번호는 함수 노드 아래에 나열되며 할당을 수행하는 명령의 주소는 줄 노드 아래에 나열됩니다. 포괄 및 전용 값은 줄 데이터와 명령 데이터에 대해 항상 동일합니다.
 
-|열|설명|
+|Column|설명|
 |------------|-----------------|
 |**이름**|모듈, 함수, 줄 번호 또는 명령 주소의 이름입니다.|
 |**프로세스 ID**|프로파일링 실행의 PID(프로세스 ID)입니다.|

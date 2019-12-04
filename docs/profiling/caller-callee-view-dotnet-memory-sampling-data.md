@@ -8,14 +8,15 @@ ms.assetid: 36f5b4de-5686-4f40-9e72-f4aee27d833c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: f3e07510f38c18f7d8e4a52d788935400b5a9388
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 50e278e858ea086c83b29ef4eebf6b48ee8e477e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62776746"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773311"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>호출자/호출 수신자 뷰 - .NET 메모리 샘플링 데이터
 호출자/호출 수신자 뷰는 선택한 함수와 해당 부모 및 자식 함수에 대한 .NET 메모리 프로파일링 데이터를 표시합니다. 호출자/호출 수신자 뷰에는 세 개의 표가 포함되어 있습니다.
@@ -28,7 +29,7 @@ ms.locfileid: "62776746"
 
  호출자 또는 호출 수신자 함수 행을 두 번 클릭하면 해당 행이 현재 함수가 됩니다.
 
-|열|설명|
+|Column|설명|
 |------------|-----------------|
 |**프로세스 ID**|프로파일링 실행의 PID(프로세스 ID)입니다.|
 |**프로세스 이름**|프로세스의 이름입니다.|

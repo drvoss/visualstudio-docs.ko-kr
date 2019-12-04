@@ -8,14 +8,15 @@ ms.assetid: 876f145b-ec07-4240-ade6-4f6e44baadce
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e0d9db4660936629c1e9dd6a5b7ff9704a7e7e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3d65d5fcf8961493c2b780453f2143de788551a5
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814100"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778312"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 `ResumeProfile` 메서드는 지정된 프로파일링 수준에 대한 Suspend/Resume 카운터를 감소시킵니다.
@@ -54,7 +55,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
 |PROFILE_ERROR_NOT_YET_IMPLEMENTED|프로파일링 함수 호출, 프로파일링 수준 또는 호출과 수준의 조합이 아직 구현되지 않았습니다.|
 |PROFILE_OK|호출이 성공했습니다.|
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
  Suspend/Resume 카운터의 초기값은 0입니다. SuspendProfile에 대한 각 호출은 Suspend/Resume 카운트에 1을 추가합니다. ResumeProfile에 대한 각 호출은 1을 뺍니다.
 
  Suspend/Resume 카운트가 0보다 큰 경우 수준에 대한 Suspend/Resume 상태는 OFF입니다. 카운트가 0보다 작거나 같은 경우 Suspend/Resume 상태는 ON입니다.
@@ -69,7 +70,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
 
  가져오기 라이브러리: *VSPerf.lib*
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 예제에서는 ResumeProfile 함수를 보여 줍니다. 예제에서는 SuspendProfile 메서드에 대한 호출이 [PROFILE_CURRENTID](../profiling/profile-currentid.md)에서 식별된 동일한 스레드 또는 프로세스에 대해 만들어졌다고 가정합니다.
 
 ```cpp

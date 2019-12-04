@@ -11,14 +11,15 @@ ms.assetid: 2c4fb569-929e-4f1d-8c50-b590ee371351
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fcc468d3820e34db24edbbf311cbae17bda0732
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b324d26d21920bae9f03f909b2eab0c1ce7ab419
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936709"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777727"
 ---
 # <a name="da0004-high-processor-usage"></a>DA0004: 프로세서 사용률이 높습니다.
 

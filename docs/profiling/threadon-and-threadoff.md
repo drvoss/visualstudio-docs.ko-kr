@@ -6,14 +6,15 @@ ms.assetid: 5cd5a695-0a14-484a-8952-ed47e13d8e92
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2516ff5597151e65276b0fcb2bef5bb81c929cd3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 906629eb24f6be097f3e24dfca3e6a231f42357f
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965234"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778156"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn 및 ThreadOff
 *VSPerfCmd.exe* **ThreadOff** 및 **ThreadOn** 하위 명령은 계측 방법을 사용하는 명령줄 프로파일링 세션에서만 사용할 수 있습니다. **ThreadOff** 및 **ThreadOn**은 지정된 스레드에 대한 프로파일링을 일시 중지하고 다시 시작합니다. **ThreadOff**는 스레드 프로파일링을 중지하고 **ThreadOn**은 스레드 프로파일링을 시작합니다.
@@ -47,9 +48,9 @@ VSPerfCmd.exe /{ThreadOff|ThreadOn}:TID [Options]
 
  **GlobalOff**&#124;**GlobalOn** 명령줄 프로파일링 세션에서 모든 프로세스에 대한 프로파일링을 중지하거나 시작합니다.
 
- {**ProcessOff**&#124;**ProcessOn**}**:**`TID` 지정된 프로세스에 대한 프로파일링을 중지하거나 시작합니다.
+ {**ProcessOff**&#124;**ProcessOn**} **:** `TID` 지정된 프로세스에 대한 프로파일링을 중지하거나 시작합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  이 예제에서 **ThreadOff** 하위 명령은 애플리케이션 시작 데이터만 수집될 수 있도록 프로파일링 데이터 수집을 중지하는 데 사용됩니다.
 
 ```cmd

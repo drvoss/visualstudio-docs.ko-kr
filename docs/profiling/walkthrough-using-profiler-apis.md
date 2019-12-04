@@ -9,14 +9,15 @@ ms.assetid: c2ae0b3e-a0ca-4967-b4df-e319008f520e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 203952f712fb3b28b93d570f99e6d36f56b5f2b5
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 81071a44b51b1441782b25741126873fc720ed7b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870284"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779885"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>연습: 프로파일러 API 사용
 
@@ -30,9 +31,6 @@ ms.locfileid: "68870284"
 
  Visual Studio 프로파일러를 사용하면 데이터의 수집을 제한할 수 있습니다. 이 연습에서는 프로파일러 API를 사용하여 데이터의 수집을 제한하는 방법의 예를 제공합니다. Visual Studio 프로파일러는 애플리케이션 내에서 데이터 수집 제어에 대한 API를 제공합니다.
 
- ::: moniker range=">=vs-2019"
- 네이티브 코드의 경우 Visual Studio 프로파일러 API는 *VSPerf.dll*에 있습니다. 헤더 파일, *VSPerf.h* 및 가져오기 라이브러리, *VSPerf.lib*는 *Microsoft Visual Studio\2019\Team Tools\Performance Tools\PerfSDK* 디렉터리에 있습니다.  64비트 앱의 경우 폴더는 *Microsoft Visual Studio\2019\Team Tools\Performance Tools\x64\PerfSDK*입니다.
- ::: moniker-end
  ::: moniker range="vs-2017"
  네이티브 코드의 경우 Visual Studio 프로파일러 API는 *VSPerf.dll*에 있습니다. 헤더 파일, *VSPerf.h* 및 가져오기 라이브러리, *VSPerf.lib*는 *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* 디렉터리에 있습니다.  64비트 앱의 경우 폴더는 *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*입니다.
  ::: moniker-end

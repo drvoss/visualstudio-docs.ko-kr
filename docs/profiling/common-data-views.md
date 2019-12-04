@@ -9,14 +9,15 @@ ms.assetid: ee5e964c-1222-496d-b825-166443a89d2b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b71271213e10c460c0b1744ba079ec034aa9d118
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 39af1975dc3bcb0f5df729579ca1af38fa60160f
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001043"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777831"
 ---
 # <a name="common-data-views"></a>공통 데이터 뷰
 이 섹션에는 모든 프로파일링 방법에 공통적인 프로파일러 데이터 파일의 뷰와 보고서에 대한 참조 정보가 포함되어 있습니다.

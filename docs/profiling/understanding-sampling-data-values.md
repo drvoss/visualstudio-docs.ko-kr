@@ -8,18 +8,19 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f2668d5b60fba429613975cc24e751dbe07f87b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 289f92deaceca32a44249ed77c17187743a34fa4
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830872"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778052"
 ---
 # <a name="understand-sampling-data-values"></a>샘플링 데이터 값 이해
 
-Visual Studio 프로파일링 도구의 ‘샘플링’ 프로파일링 방법은 설정된 간격으로 컴퓨터 프로세서를 중단하여 함수 호출 스택을 수집합니다. *호출 스택*은 프로세서에서 실행되는 함수에 대한 정보를 저장하는 동적 구조체입니다.
+Visual Studio 프로파일링 도구의 ‘샘플링’ 프로파일링 방법은 설정된 간격으로 컴퓨터 프로세서를 중단하여 함수 호출 스택을 수집합니다.  *호출 스택*은 프로세서에서 실행되는 함수에 대한 정보를 저장하는 동적 구조체입니다.
 
 프로파일러 분석에서는 프로세서가 대상 프로세스에서 코드를 실행하고 있는지 확인합니다. 프로세서가 대상 프로세스에서 코드를 실행하고 있지 않으면 샘플은 삭제됩니다.
 

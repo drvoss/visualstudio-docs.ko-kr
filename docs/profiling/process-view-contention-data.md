@@ -8,14 +8,15 @@ ms.assetid: 8821d98c-0771-43b2-a38b-e9039a3abd75
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 79f9330733a0d32faeb9980813f170f52a6f7121
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30c938088538bcecc71e3a7e37d5ae403dd476e1
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965638"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778403"
 ---
 # <a name="process-view---contention-data"></a>프로세스 뷰 - 경합 데이터
 프로세스 뷰에는 프로파일링 실행 중에 실행된 프로세스와 스레드에 대한 경합 데이터가 표시됩니다.
@@ -24,7 +25,7 @@ ms.locfileid: "62965638"
 
  다음 표에서는 프로세스 뷰 테이블에 있는 열의 값에 대해 설명합니다.
 
-|열|설명|
+|Column|설명|
 |------------|-----------------|
 |**시작 시간**|프로파일링 시작에서 프로세스 또는 스레드 시작까지의 시간(밀리초) 또는 프로세서 주기 수입니다.|
 |**차단된 시간**|프로세스 또는 스레드의 함수 실행이 차단된 총 시간입니다.|

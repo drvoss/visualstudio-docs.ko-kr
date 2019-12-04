@@ -6,14 +6,15 @@ ms.assetid: 6d73e21e-c04e-48ea-91cc-e517a5f2cd3f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac35f506aadfcceebcbcf0dd4f6ec5b6dc33107
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cd9748d88a9398792274c386a42bdaa3ce48ba70
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62552865"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777792"
 ---
 # <a name="create-basic-profiling-reports-from-the-command-line"></a>명령줄에서 기본 프로파일링 보고서 만들기
 이 문서에서는 .*vsp* 또는 .*vsps* 프로파일링 데이터 파일에서 쉼표로 구분된 값(.*csv*) 보고서를 생성하는 기본 VSPerfReport 명령을 설명합니다. 모든 보고서 옵션에 대한 설명은 [VSPerfReport](../profiling/vsperfreport.md)를 참조하세요.
@@ -23,7 +24,7 @@ ms.locfileid: "62552865"
 
  **VSPerfReport** `VSPFile` **/Summary:All** .*vsp* 또는 .*vsps* 파일에 사용할 수 있는 모든 보고서를 생성합니다.
 
- **VSPerfReport** `VSPFile` **/Summary:**`ReportType`[,`ReportType`...] 지정된 보고서 형식을 생성합니다.
+ **VSPerfReport** `VSPFile` **/Summary:** `ReportType`[,`ReportType`...] 지정된 보고서 형식을 생성합니다.
 
  **VSPerfReport** `VSPFile` **/CallTrace** 각 데이터 수집 이벤트를 나열하는 보고서를 생성합니다. 계측만 해당합니다.
 

@@ -36,7 +36,7 @@
           href: container-tools-configure.md
     - name: 개념
       items:
-        - name: 컨테이너화된 앱 빌드
+        - name: Visual Studio에서 컨테이너화된 앱을 빌드하는 방법
           href: container-build.md
     - name: 문제 해결
       href: troubleshooting-docker-errors.md

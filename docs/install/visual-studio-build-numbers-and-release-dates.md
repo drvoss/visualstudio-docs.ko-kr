@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e6bcfc5501ace51b0d4c15c991633a83701982d2
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 1520f5f74ea28850d615b93f37278c4cda090988
+ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74777961"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74797225"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 빌드 번호 및 릴리스 날짜
 
@@ -29,6 +29,7 @@ ms.locfileid: "74777961"
 
 | **Version**| **채널** | **릴리스 날짜** | **빌드 버전** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.5.0 | 미리 보기 1 | 2019년 12월 3일 | 16.5.29521.150 |
 | 16.4.0 | Release | 2019년 12월 3일 | 16.4.29519.181 |
 | 16.4.0 | 미리 보기 6 | 2019년 11월 21일 | 16.4.29519.161 |
 | 16.3.10 | Release | 2019년 11월 20일 | 16.3.29519.87 |

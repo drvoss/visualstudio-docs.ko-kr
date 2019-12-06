@@ -32,12 +32,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 26c788319331d0da4024844b50b4c495ed2c3a37
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 25978ae5fa76afc7cd43c9ccc243f25712495ddd
+ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806760"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74879284"
 ---
 # <a name="annotating-locking-behavior"></a>잠금 동작에 주석 지정
 다중 스레드 프로그램에서 동시성 버그를 방지하려면 항상 적절한 잠금 규칙을 따르고 SAL 주석을 사용합니다.
@@ -64,7 +64,7 @@ SAL은 임계 영역, 뮤텍스, 스핀 잠금 및 기타 리소스 개체와 �
 ## <a name="locking-annotations"></a>주석 잠금
 다음 표에서는 잠금 주석을 보여 줍니다.
 
-|주석|설명|
+|Annotation|설명|
 |----------------|-----------------|
 |`_Acquires_exclusive_lock_(expr)`|함수에 주석을 달고 사후 상태에서 함수가 `expr`로 명명된 잠금 개체의 단독 잠금 수를 하나 증가시킴을 나타냅니다.|
 |`_Acquires_lock_(expr)`|함수에 주석을 달고 사후 상태에서 함수가 `expr`로 명명된 잠금 개체의 잠금 수를 하나 증가시킴을 나타냅니다.|
@@ -73,7 +73,7 @@ SAL은 임계 영역, 뮤텍스, 스핀 잠금 및 기타 리소스 개체와 �
 |`_Create_lock_level_(name)`|기호 `name`을 잠금 수준으로 선언하여 `_Has_Lock_level_` 및 `_Lock_level_order_` 주석에서 사용될 수 있도록 하는 문입니다.|
 |`_Has_lock_kind_(kind)`|개체에 주석을 달아 리소스 개체의 형식 정보를 구체화합니다. 공용 형식이 여러 종류의 리소스에 사용되고 오버로드된 형식이 다양한 리소스 간의 의미적 요구 사항을 구분하는 데 충분하지 않은 경우가 있습니다. 미리 정의된 `kind` 매개 변수의 목록은 다음과 같습니다.<br /><br /> `_Lock_kind_mutex_`<br /> 뮤텍스에 대한 잠금 종류 ID<br /><br /> `_Lock_kind_event_`<br /> 이벤트에 대한 잠금 종류 ID<br /><br /> `_Lock_kind_semaphore_`<br /> 세마포에 대한 잠금 종류 ID<br /><br /> `_Lock_kind_spin_lock_`<br /> 스핀 잠금에 대한 잠금 종류 ID<br /><br /> `_Lock_kind_critical_section_`<br /> 임계 영역에 대한 잠금 종류 ID|
 |`_Has_lock_level_(name)`|잠금 개체에 주석을 추가하고 `name` 잠금 수준을 부여합니다.|
-|`_Lock_level_order_(name1, name2)`|`name1`과 `name2` 간의 잠금 순서를 제공하는 문입니다.|
+|`_Lock_level_order_(name1, name2)`|`name1`과 `name2` 간의 잠금 순서를 제공하는 문입니다.  수준 `name1` 있는 잠금은 수준이 `name2` 잠금 보다 먼저 획득 해야 합니다.|
 |`_Post_same_lock_(expr1, expr2)`|함수에 주석을 추가하고 사후 상태에서 `expr1` 및 `expr2`라는 두 잠금이 동일한 잠금 개체인 것처럼 처리됨을 나타냅니다.|
 |`_Releases_exclusive_lock_(expr)`|함수에 주석을 달고 사후 상태에서 함수가 `expr`로 명명된 잠금 개체의 단독 잠금 수를 하나 감소시킴을 나타냅니다.|
 |`_Releases_lock_(expr)`|함수에 주석을 추가하고 사후 상태에서 함수가 `expr`로 명명된 잠금 개체의 잠금 수를 하나 감소시킴을 나타냅니다.|
@@ -88,7 +88,7 @@ SAL은 임계 영역, 뮤텍스, 스핀 잠금 및 기타 리소스 개체와 �
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>노출되지 않은 잠금 개체에 대한 SAL 내장 함수
 특정 잠금 개체는 연결된 잠금 함수의 구현에 의해 노출되지 않습니다.  다음 표에서는 이러한 노출되지 않는 잠금 개체에서 작동하는 함수에 주석을 사용하도록 설정하는 SAL 내장 변수를 보여 줍니다.
 
-|주석|설명|
+|Annotation|설명|
 |----------------|-----------------|
 |`_Global_cancel_spin_lock_`|취소 스핀 잠금을 설명합니다.|
 |`_Global_critical_region_`|임계 영역을 설명합니다.|
@@ -98,7 +98,7 @@ SAL은 임계 영역, 뮤텍스, 스핀 잠금 및 기타 리소스 개체와 �
 ## <a name="shared-data-access-annotations"></a>공유 데이터 액세스 주석
 다음 표에서는 공유 데이터 액세스에 대한 주석을 보여 줍니다.
 
-|주석|설명|
+|Annotation|설명|
 |----------------|-----------------|
 |`_Guarded_by_(expr)`|변수에 주석을 추가하고 변수가 엑세스될 때마다 `expr`로 명명된 잠금 개체의 잠금 수가 1개 이상임을 나타냅니다.|
 |`_Interlocked_`|변수에 주석을 추가하며 `_Guarded_by_(_Global_interlock_)`와 동일합니다.|
@@ -108,7 +108,7 @@ SAL은 임계 영역, 뮤텍스, 스핀 잠금 및 기타 리소스 개체와 �
 ## <a name="smart-lock-and-raii-annotations"></a>Smart Lock 및 RAII 주석
 스마트 잠금은 일반적으로 기본 잠금을 래핑하고 수명 주기를 관리 합니다. 다음 표에서는 `move` 의미 체계를 지 원하는 스마트 잠금과 RAII 코딩 패턴에서 사용할 수 있는 주석을 보여 줍니다.
 
-|주석|설명|
+|Annotation|설명|
 |----------------|-----------------|
 |`_Analysis_assume_smart_lock_acquired_`|분석기에 스마트 잠금을 획득 했다고 가정 합니다. 이 주석에는 참조 잠금 형식이 매개 변수로 필요 합니다.|
 |`_Analysis_assume_smart_lock_released_`|스마트 잠금이 해제 된 것으로 가정 하 여 분석기에 지시 합니다. 이 주석에는 참조 잠금 형식이 매개 변수로 필요 합니다.|

@@ -128,12 +128,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 8437a18bf2b732ee3f12774b04baedf12003d554
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 16e7ffb30dc7ec4ae1b78647a0964b81932617ab
+ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806798"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74879271"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>함수 매개 변수 및 반환 값에 주석 지정
 이 문서에서는 간단한 함수 매개 변수 (스칼라) 및 구조체와 클래스에 대 한 포인터, 대부분의 버퍼에 대 한 주석의 일반적인 사용에 대해 설명 합니다.  또한이 문서에서는 주석의 일반적인 사용 패턴을 보여 줍니다. 함수와 관련 된 추가 주석은 [함수 동작에 주석](../code-quality/annotating-function-behavior.md)추가를 참조 하세요.
@@ -185,7 +185,10 @@ ms.locfileid: "72806798"
 
      함수에서 쓸 `s` 요소 (응답)의 배열에 대 한 포인터입니다.  배열 요소는 사전 상태에서 유효 하지 않아도 되며 사후 상태에서 유효한 요소 수는 지정 되지 않습니다.  매개 변수 형식에 주석이 있으면 사후 상태에 적용 됩니다. 예를 들어, 다음과 같은 코드를 생각해 볼 수 있습니다.
 
-     `typedef _Null_terminated_ wchar_t *PWSTR; void MyStringCopy(_Out_writes_ (size) PWSTR p1,    _In_ size_t size,    _In_ PWSTR p2);`
+     ```cpp
+     typedef _Null_terminated_ wchar_t *PWSTR;
+     void MyStringCopy(_Out_writes_(size) PWSTR p1, _In_ size_t size, _In_ PWSTR p2);
+     ```
 
      이 예제에서 호출자는 `p1`에 대 한 `size` 요소의 버퍼를 제공 합니다.  `MyStringCopy`는 이러한 요소 중 일부를 유효 하 게 만듭니다. 더 중요 한 것은 `PWSTR`에 대 한 `_Null_terminated_` 주석은 사후 상태에서 `p1` null로 종료 됨을 의미 합니다.  이러한 방식으로 올바른 요소 수는 여전히 잘 정의 되어 있지만 특정 요소 수는 필요 하지 않습니다.
 
@@ -215,13 +218,14 @@ ms.locfileid: "72806798"
 
      `_Out_writes_bytes_all_(s)`
 
-     `s` 요소의 배열에 대 한 포인터입니다.  요소는 사전 상태에서 유효 하지 않아도 됩니다.  사후 상태에서 `c` 번째 요소 까지의 요소가 유효 해야 합니다.  크기를 바이트 단위로 알고 있으면 크기 조정 `s` 및 요소 크기에 따라 `c` 하 고 다음과 같이 정의 된 `_bytes_` variant를 사용 합니다.
+     `s` 요소의 배열에 대 한 포인터입니다.  요소는 사전 상태에서 유효 하지 않아도 됩니다.  사후 상태에서 `c`번째 요소 까지의 요소가 유효 해야 합니다.  크기를 요소 수가 아닌 바이트 단위로 알고 있는 경우 `_bytes_` variant를 사용할 수 있습니다.
+     
+     예를 들면 다음과 같습니다.:
 
-     `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
-
-     즉, 이전 상태에서 `s`까지 버퍼에 있는 모든 요소는 사후 상태에서 유효 합니다.  예를 들면,
-
-     `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
+     ```cpp
+     void *memcpy(_Out_writes_bytes_all_(s) char *p1, _In_reads_bytes_(s) char *p2, _In_ int s); 
+     void *wordcpy(_Out_writes_all_(s) DWORD *p1, _In_reads_(s) DWORD *p2, _In_ int s);
+     ```
 
 - `_Inout_updates_to_(s,c)`
 
@@ -245,19 +249,24 @@ ms.locfileid: "72806798"
 
 - `_In_reads_to_ptr_(p)`
 
-     `_Curr_` - 식 `p`배열에 대 한 포인터 (즉, `p` 빼기 `_Curr_`)는 적절 한 언어 표준에 의해 정의 됩니다.  `p` 이전 요소는 사전 상태에서 유효 해야 합니다.
+     `p - _Curr_` (`p` 빼기 `_Curr_`)가 유효한 식인 배열에 대 한 포인터입니다.  `p` 이전 요소는 사전 상태에서 유효 해야 합니다.
+
+    예를 들어
+    ```cpp
+    int ReadAllElements(_In_reads_to_ptr_(EndOfArray) const int *Array, const int *EndOfArray);
+    ```
 
 - `_In_reads_to_ptr_z_(p)`
 
-     식 `p` - `_Curr_` (즉, `p` 빼기 `_Curr_`)에 대 한 null로 끝나는 배열에 대 한 포인터는 적절 한 언어 표준에 의해 정의 됩니다.  `p` 이전 요소는 사전 상태에서 유효 해야 합니다.
+     식 `p - _Curr_` (`p` 빼기 `_Curr_`)가 유효한 식인 null로 끝나는 배열에 대 한 포인터입니다.  `p` 이전 요소는 사전 상태에서 유효 해야 합니다.
 
 - `_Out_writes_to_ptr_(p)`
 
-     `_Curr_` - 식 `p`배열에 대 한 포인터 (즉, `p` 빼기 `_Curr_`)는 적절 한 언어 표준에 의해 정의 됩니다.  `p` 이전 요소는 사전 상태에서 유효 하지 않아도 되며 사후 상태에서 유효 해야 합니다.
+     `p - _Curr_` (`p` 빼기 `_Curr_`)가 유효한 식인 배열에 대 한 포인터입니다.  `p` 이전 요소는 사전 상태에서 유효 하지 않아도 되며 사후 상태에서 유효 해야 합니다.
 
 - `_Out_writes_to_ptr_z_(p)`
 
-     식 `p` - `_Curr_` (즉, `p` 빼기 `_Curr_`)에 대 한 null로 끝나는 배열에 대 한 포인터는 적절 한 언어 표준에 의해 정의 됩니다.  `p` 이전 요소는 사전 상태에서 유효 하지 않아도 되며 사후 상태에서 유효 해야 합니다.
+     `p - _Curr_` (`p` 빼기 `_Curr_`)가 유효한 식인 null로 끝나는 배열에 대 한 포인터입니다.  `p` 이전 요소는 사전 상태에서 유효 하지 않아도 되며 사후 상태에서 유효 해야 합니다.
 
 ## <a name="optional-pointer-parameters"></a>선택적 포인터 매개 변수
 
@@ -361,7 +370,7 @@ ms.locfileid: "72806798"
 
 ## <a name="output-reference-parameters"></a>참조 매개 변수 출력
 
-참조 매개 변수는 일반적으로 output 매개 변수에 사용 됩니다.  간단한 출력 참조 매개 변수의 경우 (예: `int&`)`_Out_` 올바른 의미 체계를 제공 합니다.  그러나 출력 값이 포인터인 경우 (예: `int *&`) `_Outptr_ int **` 같은 동일한 포인터 주석이 올바른 의미 체계를 제공 하지 않습니다.  포인터 형식에 대 한 출력 참조 매개 변수의 의미를 간결 하 게 표현 하려면 다음 복합 주석을 사용 합니다.
+참조 매개 변수는 일반적으로 output 매개 변수에 사용 됩니다.  `int&`와 같은 간단한 출력 참조 매개 변수의 경우 `_Out_` 올바른 의미 체계를 제공 합니다.  그러나 출력 값이 `int *&`와 같은 포인터인 경우 `_Outptr_ int **` 같은 동일한 포인터 주석이 올바른 의미 체계를 제공 하지 않습니다.  포인터 형식에 대 한 출력 참조 매개 변수의 의미를 간결 하 게 표현 하려면 다음 복합 주석을 사용 합니다.
 
 **주석 및 설명**
 
@@ -494,7 +503,7 @@ ms.locfileid: "72806798"
 
      `_Field_range_(low, hi)`
 
-     매개 변수, 필드 또는 결과는 `low`에서 `hi` 까지의 범위 (포함)입니다.  주석이 추가 된 개체에 적절 한 사전 상태 또는 사후 상태 조건과 함께 적용 되는 `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)`와 동일 합니다.
+     매개 변수, 필드 또는 결과는 `low`에서 `hi`까지의 범위 (포함)입니다.  주석이 추가 된 개체에 적절 한 사전 상태 또는 사후 상태 조건과 함께 적용 되는 `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)`와 동일 합니다.
 
     > [!IMPORTANT]
     > 이름에 "in" 및 "out"이 포함 되어 있지만 `_In_` 및 `_Out_`의 의미 체계는 이러한 주석에 적용 **되지** 않습니다.
@@ -507,11 +516,11 @@ ms.locfileid: "72806798"
 
 - `_Struct_size_bytes_(size)`
 
-     구조체 또는 클래스 선언에 적용 됩니다.  `size`에서 제공 하는 바이트 수를 사용 하 여 해당 형식의 유효한 개체가 선언 된 형식 보다 클 수 있음을 나타냅니다.  예를 들면,
+     구조체 또는 클래스 선언에 적용 됩니다.  `size`에서 제공 하는 바이트 수를 사용 하 여 해당 형식의 유효한 개체가 선언 된 형식 보다 클 수 있음을 나타냅니다.  예를 들면 다음과 같습니다.:
 
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`
 
-     @No__t_1 형식의 매개 변수 `pM` 버퍼 크기 (바이트)는 다음과 같습니다.
+     `MyStruct *` 형식의 매개 변수 `pM` 버퍼 크기 (바이트)는 다음과 같습니다.
 
      `min(pM->nSize, sizeof(MyStruct))`
 

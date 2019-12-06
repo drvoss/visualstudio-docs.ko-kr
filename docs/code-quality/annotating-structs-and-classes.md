@@ -24,12 +24,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 93c6826f2903f30fbbdcb9c40ec5f695df32ac05
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 70dc130633e9f191811748b2ab316ad339ad4277
+ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747058"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74879258"
 ---
 # <a name="annotating-structs-and-classes"></a>구조체 및 클래스에 주석 지정
 
@@ -39,19 +39,19 @@ ms.locfileid: "72747058"
 
 - `_Field_range_(low, high)`
 
-     필드는 `low`에서 `high` 까지의 범위 (포함)에 있습니다.  적절 한 사전 또는 사후 조건을 사용 하 여 주석이 달린 개체에 적용 `_Satisfies_(_Curr_ >= low && _Curr_ <= high)`와 동일 합니다.
+     필드는 `low`에서 `high`까지의 범위 (포함)에 있습니다.  적절 한 사전 또는 사후 조건을 사용 하 여 주석이 달린 개체에 적용 `_Satisfies_(_Curr_ >= low && _Curr_ <= high)`와 동일 합니다.
 
 - `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`
 
-     @No__t_0에 지정 된 대로 (또는 바이트) 요소에 쓰기 가능한 크기가 있는 필드입니다.
+     `size`에 지정 된 대로 (또는 바이트) 요소에 쓰기 가능한 크기가 있는 필드입니다.
 
-- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`, `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
+- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
 
-     @No__t_0에 의해 지정 된 요소 (또는 바이트)에 쓰기 가능한 크기가 있는 필드 및 읽을 수 있는 요소 (바이트)의 `count`입니다.
+     `size`에 의해 지정 된 요소 (또는 바이트)에 쓰기 가능한 크기가 있는 필드 및 읽을 수 있는 요소 (바이트)의 `count`입니다.
 
 - `_Field_size_full_(size)`, `_Field_size_full_opt_(size)`, `_Field_size_bytes_full_(size)`, `_Field_size_bytes_full_opt_(size)`
 
-     @No__t_0에 지정 된 대로 읽을 수 있는 크기와 쓰기 가능한 크기의 요소 (또는 바이트)가 모두 있는 필드입니다.
+     `size`에 지정 된 대로 읽을 수 있는 크기와 쓰기 가능한 크기의 요소 (또는 바이트)가 모두 있는 필드입니다.
 
 - `_Field_z_`
 
@@ -59,7 +59,7 @@ ms.locfileid: "72747058"
 
 - `_Struct_size_bytes_(size)`
 
-     구조체 또는 클래스 선언에 적용 됩니다.  @No__t_0에 지정 된 바이트 수를 사용 하 여 해당 형식의 유효한 개체가 선언 된 형식 보다 클 수 있음을 나타냅니다.  예를 들면,
+     구조체 또는 클래스 선언에 적용 됩니다.  `size`에 지정 된 바이트 수를 사용 하 여 해당 형식의 유효한 개체가 선언 된 형식 보다 클 수 있음을 나타냅니다.  예를 들면 다음과 같습니다.:
 
     ```cpp
 
@@ -71,7 +71,7 @@ ms.locfileid: "72747058"
 
     ```
 
-     @No__t_1 형식의 매개 변수 `pM` 버퍼 크기 (바이트)는 다음과 같습니다.
+     `MyStruct *` 형식의 매개 변수 `pM` 버퍼 크기 (바이트)는 다음과 같습니다.
 
     ```cpp
     min(pM->nSize, sizeof(MyStruct))
@@ -81,11 +81,9 @@ ms.locfileid: "72747058"
 
 ```cpp
 #include <sal.h>
-// For FIELD_OFFSET macro
-#include <windows.h>
 
 // This _Struct_size_bytes_ is equivalent to what below _Field_size_ means.
-_Struct_size_bytes_(FIELD_OFFSET(MyBuffer, buffer) + bufferSize * sizeof(int))
+_Struct_size_bytes_(__builtin_offsetof(MyBuffer, buffer) + bufferSize * sizeof(int))
 struct MyBuffer
 {
     static int MaxBufferSize;
@@ -99,8 +97,9 @@ struct MyBuffer
 
     _Field_range_(1, MaxBufferSize)
     int bufferSize;
+    
     _Field_size_(bufferSize)        // Prefered way - easier to read and maintain.
-    int buffer[0];
+    int buffer[]; // Using C99 Flexible array member
 };
 ```
 
@@ -108,7 +107,7 @@ struct MyBuffer
 
 - `_Field_z_`는 `_Null_terminated_`와 같습니다.  이름 필드에 대 한 `_Field_z_` 이름 필드가 null로 끝나는 문자열 임을 지정 합니다.
 - `bufferSize`에 대 한 `_Field_range_` `bufferSize` 값이 1과 `MaxBufferSize` 사이에 있어야 함을 지정 합니다 (모두 포함).
-- @No__t_0 및 `_Field_size_` 주석의 최종 결과는 동일 합니다. 비슷한 레이아웃을 가진 구조 또는 클래스의 경우 `_Field_size_`는 동일한 `_Struct_size_bytes_` 주석 보다 더 많은 참조와 계산을 포함 하기 때문에 더 쉽게 읽고 유지 관리할 수 있습니다. `_Field_size_` 바이트 크기로 변환할 필요가 없습니다. 예를 들어 void 포인터 필드의 경우에는 바이트 크기만 유일한 옵션 `_Field_size_bytes_` 사용할 수 있습니다. @No__t_0와 `_Field_size_` 모두 있는 경우 도구에서 둘 다 사용할 수 있습니다. 두 주석이 동의 하지 않는 경우에는이 도구를 통해 수행할 작업을 결정 해야 합니다.
+- `_Struct_size_bytes_` 및 `_Field_size_` 주석의 최종 결과는 동일 합니다. 비슷한 레이아웃을 가진 구조 또는 클래스의 경우 `_Field_size_`는 동일한 `_Struct_size_bytes_` 주석 보다 더 많은 참조와 계산을 포함 하기 때문에 더 쉽게 읽고 유지 관리할 수 있습니다. `_Field_size_` 바이트 크기로 변환할 필요가 없습니다. 예를 들어 void 포인터 필드의 경우에는 바이트 크기만 유일한 옵션 `_Field_size_bytes_` 사용할 수 있습니다. `_Struct_size_bytes_`와 `_Field_size_` 모두 있는 경우 도구에서 둘 다 사용할 수 있습니다. 두 주석이 동의 하지 않는 경우에는이 도구를 통해 수행할 작업을 결정 해야 합니다.
 
 ## <a name="see-also"></a>참조
 

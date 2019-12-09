@@ -1,7 +1,7 @@
 ---
 title: 변경 로그(Visual Studio Tools for Unity, Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 09/18/2019
+ms.date: 12/02/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,16 +10,64 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 713535bb11b4bd9cab4ef1b31507b96fe1c9897a
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 0e1810f452f48c95e0c4e8117820be3598b0f139
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71185995"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706780"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>변경 로그(Visual Studio Tools for Unity, Windows)
 
 Visual Studio Tools for Unity에 대한 변경 로그입니다.
+
+## <a name="4420"></a>4.4.2.0
+
+릴리스 날짜: 2019년 12월 3일
+
+### <a name="bug-fixes"></a>버그 수정
+
+- **통합:**
+
+  - 사용자 정의 인터페이스를 사용하여 진단을 수정했습니다.
+
+  - 형식이 잘못된 식이 있는 빠른 도구 설명을 수정했습니다.
+
+## <a name="4410"></a>4.4.1.0
+
+릴리스 날짜: 2019년 11월 6일
+
+### <a name="new-features"></a>새 기능
+
+- **통합:**
+
+  - Unity 백그라운드 프로세스에 대한 지원이 추가되었습니다. (디버거는 자식 프로세스가 아닌 기본 프로세스에 자동으로 연결할 수 있습니다.)
+  
+  - 관련 설명서를 표시하는 Unity 메시지에 대한 빠른 도구 설명을 추가했습니다.
+
+### <a name="bug-fixes"></a>버그 수정
+
+- **통합:**
+
+  - 고급 이진 및 호출 식을 사용하여 태그 비교 분석기 `UNT0002`를 수정했습니다.
+
+### <a name="deprecated-features"></a>사용되지 않는 기능
+
+- **통합:**
+
+  - 앞으로 Visual Studio Tools for Unity에서는 Visual Studio 2017+만 지원합니다.
+
+## <a name="4400"></a>4.4.0.0
+
+릴리스 날짜: 2019년 10월 15일
+
+### <a name="new-features"></a>새 기능
+
+- **통합:**
+
+  - 모든 Unity 메시지에 대해 `IDE0060`(사용되지 않는 매개 변수)의 억제 장치를 추가했습니다.
+  
+  - `TooltipAttribute` 태그가 지정된 필드에 대한 빠른 도구 설명을 추가했습니다. (이 내용은 이 필드를 사용하는 간단한 get 접근자에도 적용됩니다.)
 
 ## <a name="4330"></a>4.3.3.0
 
@@ -1046,7 +1094,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 ## <a name="1990---20-preview-2"></a>1.9.9.0 - 2.0 Preview 2
 릴리스 날짜: 2015년 4월 2일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - **Unity 프로젝트 탐색기:**
 
@@ -1135,7 +1183,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 ## <a name="1980---20-preview"></a>1.9.8.0 - 2.0 Preview
 릴리스 날짜: 2014년 11월 12일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - Visual Studio 2015가 지원됩니다.
 
@@ -1175,7 +1223,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2014년 10월 9일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - Unity 플레이어의 검색을 향상합니다.
 
@@ -1199,7 +1247,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2014년 9월 22일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - 원본 위치로 바인딩 중단점을 최적화합니다.
 
@@ -1245,7 +1293,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2014년 7월 29일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - Unity 디버거 연결 창에서 디버그할 사용자 지정 IP 및 포트를 입력하는 기능을 추가합니다.
 
@@ -1294,7 +1342,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2014년 1월 7일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - 편집기의 원격 검색을 위해 Mavericks에서 Unity의 스크립팅 엔진 네트워크 계층에 있는 문제를 해결합니다.
 
@@ -1322,7 +1370,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2013년 11월 21일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - Unity 4.3 API와 함께 MonoBehaviour 마법사가 조정되었습니다.
 
@@ -1356,7 +1404,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2013년 9월 24일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - 디버거 연결 속도가 크게 향상되었습니다.
 
@@ -1436,7 +1484,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2013년 3월 25일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - 디버거 연결 속도가 크게 향상되었습니다.
 
@@ -1548,7 +1596,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 ## <a name="10110"></a>1.0.11.0
 릴리스 날짜: 2012년 11월 28일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - Unity 4를 공식 지원합니다.
 
@@ -1625,7 +1673,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2012년 9월 14일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - Visual Studio 2012를 지원합니다.
 
@@ -1655,7 +1703,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2012년 9월 5일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - Unity에서 디버그 기호가 자동으로 변환됩니다.
 
@@ -1669,7 +1717,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2012년 9월 4일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - Unity에서 파일을 열기 위해 UnityVS의 사용을 비활성화하는 새 구성 옵션입니다.
 
@@ -1697,7 +1745,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2012년 8월 28일
 
-### <a name="new-features"></a>새로운 기능
+### <a name="new-features"></a>새 기능
 
 - Unity 4.0 베타에 대한 미리 보기를 지원합니다.
 

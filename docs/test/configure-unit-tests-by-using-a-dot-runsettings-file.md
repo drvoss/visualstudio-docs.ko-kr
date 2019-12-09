@@ -1,18 +1,18 @@
 ---
 title: .runsettings 파일을 사용하여 단위 테스트 구성
-ms.date: 06/14/2019
+ms.date: 10/03/2019
 ms.topic: conceptual
 ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 author: jillre
-ms.openlocfilehash: 22fe1de176819807c5cd60d746f381e325601799
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aba7ea1c26d38db2f845b2e743aae7a3d90d4d53
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665148"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74771504"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings* 파일을 사용하여 단위 테스트 구성
 
@@ -38,11 +38,52 @@ IDE에서 실행 설정 파일을 지정하려면 **테스트** > **테스트 �
 
 ::: moniker range=">=vs-2019"
 
+#### <a name="visual-studio-2019-version-163-and-earlier"></a>Visual Studio 2019 버전 16.3 이하
+
 IDE에서 실행 설정 파일을 지정하려면 **테스트** > **테스트 설정 파일 선택**을 선택합니다. *.runsettings* 파일을 찾아 선택합니다.
 
 ![Visual Studio 2019에서 테스트 설정 파일 메뉴 선택](media/vs-2019/select-settings-file.png)
 
 테스트 메뉴에 파일이 나타나고 해당 파일을 선택 또는 선택 취소할 수 있습니다. 파일이 선택된 상태에서 **코드 검사 분석**을 사용할 때마다 실행 설정 파일이 적용됩니다.
+
+#### <a name="visual-studio-2019-version-164-and-later"></a>Visual Studio 2019 버전 16.4 이상
+
+Visual Studio 2019 버전 16.4 이상에서 실행 설정 파일을 지정하는 세 가지 방법은 다음과 같습니다.
+
+- 프로젝트 파일 또는 Directory.Build.props 파일을 통해 프로젝트에 빌드 속성을 추가합니다. 프로젝트의 실행 설정 파일은 **RunSettingsFilePath** 속성을 통해 지정됩니다. 
+
+    - 프로젝트 수준 실행 설정은 현재 C#, VB, C++ 및 F# 프로젝트에서 지원됩니다.
+    - 프로젝트에 지정된 파일이 솔루션에 지정된 다른 실행 설정 파일을 재정의합니다.
+
+    프로젝트에 대한 *.runsettings* 파일을 지정하는 예제:
+    
+    ```xml
+    <Project Sdk="Microsoft.NET.Sdk">
+      <PropertyGroup>
+        <RunSettingsFilePath>$(SolutionDir)\example.runsettings</RunSettingsFilePath>
+      </PropertyGroup>
+      ...
+    </Project>
+    ```
+
+- 솔루션의 루트에 ".runsettings"라는 실행 설정 파일을 배치합니다.
+
+  실행 설정 파일의 자동 검색을 사용하도록 설정하면 이 파일의 설정이 모든 테스트 실행에 적용됩니다. runsettings 파일의 자동 검색은 다음 두 위치에서 켤 수 있습니다.
+  
+    - **도구** > **옵션** > **테스트** > **runsettings 파일 자동 검색**
+
+      ![Visual Studio 2019의 runsettings 파일 자동 검색 옵션](media/vs-2019/auto-detect-runsettings-tools-window.png)
+      
+    - **테스트** > **실행 설정 구성** > **runsettings 파일 자동 검색**
+    
+      ![Visual Studio 2019의 runsettings 파일 자동 검색 메뉴](media/vs-2019/auto-detect-runsettings-menu.png)
+
+- IDE에서는 **테스트** > **실행 설정 구성** > **솔루션 전체의 runsettings 파일 선택**을 선택한 후 *.runsettings* 파일을 선택합니다.
+
+   ![Visual Studio 2019의 솔루션 전체의 runsettings 파일 선택 메뉴](media/vs-2019/select-solution-settings-file.png)
+      
+   - 이 파일은 솔루션의 루트에서 ".runsettings" 파일(있는 경우)을 재정의하며 모든 테스트 실행에 적용됩니다.  
+   - 이 파일 선택은 로컬에서만 지속됩니다. 
 
 ::: moniker-end
 

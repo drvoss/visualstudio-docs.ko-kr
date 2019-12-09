@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Tools for Unity | Microsoft Docs
 ms.custom: ''
-ms.date: 07/03/2018
+ms.date: 10/25/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 6cabc626-5310-4622-a743-210a9abb5535
@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d04f197b9114f87c0ebdfa54088d41a958d4584a
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 9789c400ee01bc986bbdf72c509f7a1841c5f300
+ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777689"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74797121"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity
 
@@ -47,6 +47,12 @@ Visual Studio Tools for Unity는 Visual Studio만의 강력한 [디버깅](using
 * 조사식 창에서 복잡한 식을 평가합니다.
 * 변수 및 인수 값을 조사하고 수정합니다.
 * 복잡한 개체 및 데이터 구조로 드릴다운합니다.
+
+### <a name="roslyn-diagnostics-and-quick-fixes-for-unity"></a>Unity에 대한 Roslyn 진단 및 빠른 수정
+
+Unity 프로젝트에 대한 Visual Studio의 깊은 이해를 바탕으로 모범 사례를 캡처하는 향상된 코드를 작성합니다.
+
+![CompareTag를 사용한 VS 리팩터링 문자열 비교](media/unity-diagnostics.png)
 
 ### <a name="visual-studio-for-mac-tools-for-unity"></a>Mac용 Visual Studio Tools for Unity
 

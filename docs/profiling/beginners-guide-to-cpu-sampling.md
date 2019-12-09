@@ -13,14 +13,15 @@ ms.assetid: 85161cc4-18ee-49b3-9487-33680e687597
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 91b175eec9d17624f2b7225d1aac428926310734
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: c6a5a0eb84e4f06fd1b4dd248a1bce952b2c7197
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128226"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779807"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>CPU 샘플링 초보자를 위한 지침
 Visual Studio 프로파일링 도구를 사용하여 애플리케이션의 성능 문제를 분석할 수 있습니다. 다음 절차에서는 **샘플링** 데이터 사용 방법을 보여 줍니다.
@@ -100,7 +101,7 @@ Visual Studio 프로파일링 도구를 사용하여 애플리케이션의 성�
 
      세그먼트를 다시 분석하려면 **요약 타임라인** 상자에서 세그먼트를 선택하고 **선택 항목으로 필터링**을 클릭합니다.
 
-     ![성능 요약 보기 타임라인](../profiling/media/performancesummary.png "PerformanceSummary")
+     ![성능 요약 뷰 시간 표시줄](../profiling/media/performancesummary.png "PerformanceSummary")
 
 4. 또한 프로파일러는 규칙 집합을 사용하여 프로파일링 실행을 개선하는 방법을 제안하고 잠재적인 성능 문제를 식별합니다. 문제가 발견되면 **오류 목록** 창에 경고가 표시됩니다. **오류 목록** 창을 열려면 **뷰** 메뉴에서 **오류 목록**을 클릭합니다.
 

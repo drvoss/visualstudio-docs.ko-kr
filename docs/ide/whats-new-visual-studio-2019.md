@@ -2,7 +2,7 @@
 title: Visual Studio 2019의 새로운 기능
 titleSuffix: ''
 description: Visual Studio 2019의 새로운 기능을 알아보세요.
-ms.date: 09/24/2019
+ms.date: 12/03/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 5871e782ee84e49762d26a925380ad481e3623d1
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: eb4282941af9dff8619cb15510399b2e37e0c718
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211338"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777917"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019의 새로운 기능
 
-**[16.3 릴리스](/visualstudio/releases/2019/release-notes/)용으로 업데이트됨**
+**[16.4 릴리스](/visualstudio/releases/2019/release-notes/)용으로 업데이트됨**
 
 >[!div class="button"]
 >[Visual Studio 2019 다운로드](https://visualstudio.microsoft.com/downloads)
@@ -110,7 +110,7 @@ Visual Studio 2019 릴리스부터 Visual Studio를 PMA(모니터별 인식) 애
 
 ### <a name="net-core"></a>.NET Core
 
-**16.3의 새로운 기능**: .NET Core 3.0 지원을 포함했습니다. 플랫폼 간 오픈 소스이며, Microsoft에서 완전하게 지원됩니다. 
+**16.3의 새로운 기능**: .NET Core 3.0 지원을 포함했습니다. 플랫폼 간 오픈 소스이며, Microsoft에서 완전하게 지원됩니다.
 
 자세한 내용은 [.NET Core 3.0 알림](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/) 블로그 게시물을 참조하세요.
 
@@ -152,7 +152,7 @@ Visual Studio 2019를 열면 새 시작 창이 표시됩니다.
 
 자세한 내용은 [Visual Studio 끌어오기 요청 확장을 사용하여 코드 검토](https://devblogs.microsoft.com/visualstudio/code-reviews-using-the-visual-studio-pull-requests-extension/) 블로그 게시물을 참조하세요.
 
-## <a name="debug"></a>디버그
+## <a name="debug"></a>Debug
 
 디버그하는 동안 정확한 대상 지정으로 목표를 달성하는 방법에 대한 자세한 내용을 보려면 다음 비디오를 보세요. <br><br>*비디오 길이: 3.54분*
 
@@ -196,7 +196,13 @@ Azure VM에서 실행되는 ASP.NET(Core 및 데스크톱) 애플리케이션을
 
    ![브라우저에서 JavaScript 코드 렌더링을 보여 주는 스크린샷](media/vs-2019/edge-chromium-breakpoint.png)
 
-## <a name="whats-next"></a>다음 단계
+### <a name="pinnable-properties-tool"></a>고정 가능한 속성 도구
+
+**16.4의 새로운 기능**: 이제 새 고정 가능한 속성 도구를 사용하여 디버그하는 동안 해당 속성으로 개체를 더 쉽게 식별할 수 있습니다. [조사식], [자동] 및 [로컬] 창의 디버거 창에 표시하려는 속성 위에 커서를 놓고 고정 아이콘을 클릭하면 창의 맨 위에 찾고 있는 정보가 즉시 표시됩니다.
+
+   ![고정 가능한 속성 도구를 사용하여 Visual Studio 디버거에서 속성을 고정하는 방법을 보여 주는 애니메이션](media/vs-2019/debugger-pinnable-properties.gif)
+
+## <a name="whats-next"></a>새로운 기능
 
 Visual Studio 2019는 개발 환경을 훨씬 더 좋게 만들어 줄 수 있는 새 기능으로 자주 업데이트됩니다. 최신 혁신 기능을 자세히 알아보려면 [Visual Studio 블로그](https://devblogs.microsoft.com/visualstudio/)를 확인하세요. 미리 보기에서 현재까지 릴리스된 내용에 대한 기록은 [미리 보기 릴리스 노트](/visualstudio/releases/2019/release-notes-preview/)를 살펴보세요.
 

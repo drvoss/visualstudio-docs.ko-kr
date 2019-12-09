@@ -7,14 +7,15 @@ f1_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0395f58d9e4cf700784ee632dc860823cd50e11f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 023681b263e6e70048ec7d82d2cee741672989ff
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979912"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773944"
 ---
 # <a name="set-general-performance-session-options"></a>일반 성능 세션 옵션 설정
 
@@ -27,8 +28,8 @@ ms.locfileid: "62979912"
 |||
 |-|-|
 |**샘플링** 샘플링 방법은 정기적으로 프로파일링 정보를 수집합니다. 이 방법은 프로세서 사용률 문제를 찾는 데 유용하며, 대부분의 성능 조사를 시작할 수 있는 방법으로 제안됩니다.|- [샘플링을 사용하여 성능 통계 수집](../profiling/collecting-performance-statistics-by-using-sampling.md)|
-|**계측** 계측 방법은 프로파일링 실행 중 모듈에 각 시작, 종료 및 함수의 함수 호출을 기록하는 모듈 프로파일링 코드의 복사본에 삽입합니다. 이 방법은 코드의 섹션에 대한 자세한 타이밍 정보를 수집하고 입력 및 출력 작업이 애플리케이션 성능에 미치는 영향을 이해하는데 유용합니다.|- [계측을 사용하여 자세한 타이밍 데이터 수집](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)|
-|**동시성** 동시성 방법은 스레드가 해제될 애플리케이션 리소스에 대한 잠긴 액세스에 대해 대기하는 경우와 같은 코드의 실행을 차단하는 각 이벤트에 대한 데이터를 수집합니다. 이 방법은 멀티스레드 애플리케이션을 분석하는데 유용합니다.|- [스레드 및 프로세스 동시성 데이터 수집](../profiling/collecting-thread-and-process-concurrency-data.md)|
+|**계측** 계측 방법은 프로파일링 실행 중 모듈에 각 시작, 종료 및 함수의 함수 호출을 기록하는 모듈 프로파일링 코드의 복사본에 삽입합니다. 이 방법은 코드의 한 섹션에 대한 자세한 타이밍 정보를 수집하고 입력 및 출력 작업이 애플리케이션 성능에 미치는 영향을 이해하는 데 유용합니다.|- [계측을 사용하여 자세한 타이밍 데이터 수집](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)|
+|**동시성** 동시성 방법은 스레드가 해제될 애플리케이션 리소스에 대한 잠긴 액세스에 대해 대기하는 경우와 같은 코드의 실행을 차단하는 각 이벤트에 대한 데이터를 수집합니다. 이 메서드는 다중 스레드 애플리케이션을 분석하는 데 유용합니다.|- [스레드 및 프로세스 동시성 데이터 수집](../profiling/collecting-thread-and-process-concurrency-data.md)|
 
  샘플링 또는 계측 방법을 사용하여 .NET 메모리 데이터를 수집할 수 있습니다. **.NET 메모리 프로파일링** 아래에서 데이터의 형식을 선택합니다.
 
@@ -39,7 +40,7 @@ ms.locfileid: "62979912"
 
  프로파일링 세션 페이지는 애플리케이션에 대한 프로파일링을 시작할 때 나타납니다. 여기에서는 프로파일링을 일시 중지, 다시 시작 및 중지할 수 있습니다.
 
- ![프로파일링 세션 시작](../profiling/media/prof_profilingsessionpage.png "PROF_ProfilingSessionPage")
+ ![프로파일링 세션 페이지](../profiling/media/prof_profilingsessionpage.png "PROF_ProfilingSessionPage")
 
 ## <a name="set-profiling-data-file-options"></a>프로파일링 데이터 파일 옵션 설정
 

@@ -1403,28 +1403,6 @@
           href: 'https://visualstudio.microsoft.com/license-terms/'
         - name: 지원 수명 주기 및 서비스
           href: /visualstudio/productinfo/vs-servicing-vs/
-    - name: 문제 보고서
-      items:
-        - name: Visual Studio에서 문제를 보고하는 방법
-          href: ide/how-to-report-a-problem-with-visual-studio.md
-        - name: 문제 상태 보고 및 FAQ
-          displayName: Developer Community
-          href: ide/report-a-problem.md
-        - name: 성능 문제가 해결될 가능성 증가
-          href: ide/how-to-increase-chances-of-performance-issue-being-fixed.md
-        - name: 모든 호출 스택을 사용하여 Visual Studio 프로세스에 대한 미니덤프 만들기
-          displayName: Create minidumps with call stacks
-          href: ide/report-a-problem-minidumps.md
-        - name: MSBuild 문제에 대한 로그 만들기
-          displayName: Create logs for MSBuild problems
-          href: ide/msbuild-logs.md
-        - name: PerfView를 사용하여 ETL 추적 수집
-          displayName: ETL trace with PerfView
-          href: ide/report-a-problem-perfview.md
-    - name: Visual Studio에 대한 기능 제안
-      href: ide/suggest-a-feature.md
-    - name: 개발자 커뮤니티 데이터 개인 정보
-      href: ide/developer-community-privacy.md
     - name: 사용자 환경 개선 프로그램
       items:
         - name: 개요
@@ -1434,6 +1412,25 @@
           href: ide/diagnostic-data-collection.md
     - name: IDE 오류 문제 해결을 위한 리소스
       href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
-    - name: 사용자 의견
-      displayName: Feedback
+- name: 피드백 보내기
+  items:
+    - name: 개요
       href: ide/feedback-options.md
+    - name: 문제 보고
+      items:
+        - name: 문제 보고 방법
+          href: ide/how-to-report-a-problem-with-visual-studio.md
+        - name: 문제 상태 보고 및 FAQ
+          href: ide/report-a-problem.md
+        - name: 빠른 성능 문제 해결
+          href: ide/how-to-increase-chances-of-performance-issue-being-fixed.md
+        - name: 호출 스택을 사용하여 미니덤프 만들기
+          href: ide/report-a-problem-minidumps.md
+        - name: MSBuild 문제에 대한 로그 만들기
+          href: ide/msbuild-logs.md
+        - name: PerfView를 사용하여 ETL 추적 수집
+          href: ide/report-a-problem-perfview.md
+    - name: 기능 제안
+      href: ide/suggest-a-feature.md
+    - name: 개발자 커뮤니티 데이터 개인 정보
+      href: ide/developer-community-privacy.md

@@ -6,16 +6,16 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: a2f837ba264a12391786f584cf2698e19250fb2e
-ms.sourcegitcommit: 6336c387388707da94a91060dc3f34d4cfdc0a7b
+ms.openlocfilehash: e1b2f332563503dcb4d63faf301000db83eed5ea
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74549950"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706827"
 ---
-# <a name="build-and-debug-containerized-apps-using-visual-studio-or-the-command-line"></a>Visual Studio 또는 명령줄을 사용하여 컨테이너화된 앱 빌드 및 디버그
+# <a name="how-visual-studio-builds-containerized-apps"></a>Visual Studio에서 컨테이너화된 앱을 빌드하는 방법
 
-Visual Studio IDE에서 빌드하거나 명령줄 빌드를 설정하는 경우, Visual Studio 빌드에서 Dockerfile을 사용하여 프로젝트를 빌드하는 방법을 알고 있어야 합니다.  성능상의 이유로, Visual Studio는 컨테이너화된 앱을 위해 특별한 프로세스를 따릅니다. Dockerfile을 수정하여 빌드 프로세스를 사용자 지정하는 경우에는 Visual Studio에서 프로젝트를 빌드하는 방법을 이해하는 것이 특히 중요합니다.
+Visual Studio IDE에서 빌드하거나 명령줄 빌드를 설정하는 경우, Visual Studio에서 Dockerfile을 사용하여 프로젝트를 빌드하는 방법을 알고 있어야 합니다.  성능상의 이유로, Visual Studio는 컨테이너화된 앱을 위해 특별한 프로세스를 따릅니다. Dockerfile을 수정하여 빌드 프로세스를 사용자 지정하는 경우에는 Visual Studio에서 프로젝트를 빌드하는 방법을 이해하는 것이 특히 중요합니다.
 
 Visual Studio는 Docker 컨테이너를 사용하지 않는 프로젝트를 빌드할 때, 로컬 컴퓨터에서 MSBuild를 호출하고 로컬 솔루션 폴더 아래에 있는 폴더(일반적으로 `bin`)에 출력 파일을 생성합니다. 그러나 컨테이너화된 프로젝트의 경우 빌드 프로세스에서 컨테이너화된 앱 빌드에 대한 Dockerfile의 지침을 고려합니다. Visual Studio에서 사용하는 Dockerfile은 여러 스테이지로 나누어져 있습니다. 이 프로세스는 Docker의 ‘다단계 빌드’ 기능을 사용합니다. 
 
@@ -99,7 +99,7 @@ msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-comp
 - Dockerfile의 첫 번째 스테이지(대부분 Dockerfile의 `base` 스테이지)에서 이미지를 풀합니다.  
 - Dockerfile을 빌드하고 컨테이너를 시작합니다.
 
-준비는 **고속** 모드에서만 발생하므로, 실행 중인 컨테이너에는 앱 폴더 볼륨이 탑재되고 앱에 대한 변경 내용은 컨테이너를 무효화해서는 안 됩니다. 따라서 디버깅 성능이 크게 향상되고 큰 이미지 풀하기처럼 오랫동안 실행되는 작업의 대기 시간이 줄어듭니다.
+준비는 **고속** 모드에서만 발생하므로, 실행 중인 컨테이너에는 앱 폴더 볼륨이 탑재됩니다. 즉, 앱에 대한 변경 내용은 컨테이너를 무효화하지 않습니다. 따라서 디버깅 성능이 크게 향상되고 큰 이미지 풀하기처럼 오랫동안 실행되는 작업의 대기 시간이 줄어듭니다.
 
 ## <a name="volume-mapping"></a>볼륨 매핑
 

@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 2f14a5f2255f7ba1b077ead60147a6df407970fc
-ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.openlocfilehash: 321e8271806f8f9e2983e82db010cd2ffb49a3ee
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73636563"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777948"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>자습서: Visual Studio에서 Node.js 및 React 앱 만들기
 
@@ -88,7 +88,7 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
     **Esc** 키를 눌러 시작 창을 닫습니다. **Ctrl + Q** 입력하여 검색 상자를 열고 **Node.js**를 입력한 다음, **빈 Node.js 웹 애플리케이션**(JavaScript)을 선택합니다. 표시되는 대화 상자에서 **만들기**를 선택합니다.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **JavaScript**를 확장한 다음, **Node.js**를 선택합니다. 가운데 창에서 **빈 Node.js 웹 애플리케이션**을 선택하고, 이름을 **NodejsWebAppBlank**로 입력하고, **확인**을 선택합니다.
+    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례대로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **JavaScript**를 확장한 다음, **Node.js**를 선택합니다. 가운데 창에서 **빈 Node.js 웹 애플리케이션**을 선택하고, 이름을 **NodejsWebAppBlank**로 입력하고, **확인**을 선택합니다.
     ::: moniker-end
     **빈 Node.js 웹 애플리케이션** 프로젝트 템플릿이 표시되지 않으면 **Node.js 개발** 워크로드를 추가해야 합니다. 자세한 지침은 [필수 조건](#prerequisites)을 참조하세요.
 
@@ -370,7 +370,7 @@ Visual Studio 2019부터 빌드 스크립트가 필요합니다. 앞의 섹션�
 
     ![중단점 설정](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
 
-    중단점은 신뢰할 수 있는 디버깅의 가장 기본적이 고 필수적인 기능입니다. 중단점은 변수의 값, 메모리의 동작 또는 코드 분기의 실행 여부를 확인할 수 있도록 Visual Studio에서 실행 중인 코드를 일시 중단해야 하는 위치를 나타냅니다.
+    중단점은 신뢰할 수 있는 디버깅의 가장 기본적이고 필수적인 기능입니다. 중단점은 변수의 값, 메모리의 동작 또는 코드 분기의 실행 여부를 확인할 수 있도록 Visual Studio에서 실행 중인 코드를 일시 중단해야 하는 위치를 나타냅니다.
 
 1. 앱을 실행하려면 **F5**(**디버그** > **디버깅 시작**) 키를 누릅니다.
 
@@ -398,6 +398,10 @@ Visual Studio 2019부터 빌드 스크립트가 필요합니다. 앞의 섹션�
 1. 대상 브라우저의 모든 창을 닫습니다.
 
    다른 브라우저 인스턴스에서는 디버깅을 사용하도록 설정하여 브라우저를 열지 못하게 할 수 있습니다. (브라우저 확장이 실행 중이고 전체 디버그 모드를 방해할 수 있으므로 예기치 않은 Chrome 인스턴스를 찾으려면 작업 관리자를 열어야 할 수 있습니다.)
+
+   ::: moniker range=">=vs-2019"
+   Microsoft Edge(Chromium)의 경우 Chrome의 모든 인스턴스도 종료합니다. 두 브라우저는 모두 chromium 코드베이스를 공유하기 때문에 최상의 결과를 제공합니다.
+   ::: moniker-end
 
    ::: moniker range=">=vs-2019"
    Microsoft Edge(Chromium)의 경우 Chrome의 모든 인스턴스도 종료합니다. 두 브라우저는 모두 chromium 코드 베이스를 사용하기 때문에 최상의 결과를 제공합니다.
@@ -513,7 +517,6 @@ Visual Studio 2019부터 빌드 스크립트가 필요합니다. 앞의 섹션�
       * 디버그 모드에서 브라우저를 실행할 수 있도록 Chrome 확장 프로그램(작업 관리자 사용)을 비롯한 모든 브라우저 인스턴스를 닫았습니다. 디버그 모드에서 브라우저를 시작해야 합니다.
 
       * 소스 맵 파일에 Visual Studio 디버거가 *app.tsx*를 찾을 수 없도록 하는 *webpack:///./app.tsx*가 아니라 *./app.tsx*에 대한 참조를 포함하도록 합니다.
-
        또는 *app.tsx*에서 코드를 중단해야 하는데 그럴 수 없는 경우 *app.tsx*에서 `debugger;` 문을 사용하거나 대신 Chrome 개발자 도구(또는 Microsoft Edge의 F12 도구)에서 중단점을 설정합니다.
 
    * *app-bundle.js*에서 코드를 중단해야 하는데 그럴 수 없는 경우 *app-bundle.js.map* 소스 맵 파일을 제거합니다.

@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 018c71be69efa7b68f08cb0d320633b82be9832d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad451c6146593713b02901ac43423c76174d0684
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821234"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778091"
 ---
 # <a name="understand-performance-collection-methods"></a>성능 데이터 수집 방법 이해
 

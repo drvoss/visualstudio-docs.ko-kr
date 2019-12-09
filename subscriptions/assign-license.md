@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/24/2019
 ms.topic: conceptual
 description: 관리자가 구독자에게 라이선스를 할당하는 방법을 알아봅니다.
-ms.openlocfilehash: 8125c5cbad2ff44dabbf1b0c5014c313d75d2e71
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 8785d4d4253fa3217341c8200a94dab923ae4a5f
+ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604728"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74797372"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Visual Studio 구독 관리 포털에서 라이선스 할당
 Visual Studio 구독 관리자는 관리 포털을 사용하여 개별 사용자 또는 사용자 그룹에 구독을 할당할 수 있습니다.
@@ -41,9 +41,10 @@ Visual Studio 구독 관리자는 관리 포털을 사용하여 개별 사용자
    > [!div class="mx-imgBorder"]
    > ![추가 단추 선택](media/add-button.png)
 
-4. 구독자가 추가되면 새 구독자에게 추가 지침이 있는 할당 이메일을 자동으로 보냅니다. 구독자를 선택하고 위쪽 메뉴의 **다시 보내기** 단추를 클릭하여 할당 전자 메일을 다시 보낼 수 있습니다.
+## <a name="resend-assignment-emails"></a>할당 전자 메일 다시 보내기
+구독자를 추가한 후 새 구독자에게 추가 지침이 있는 할당 전자 메일이 자동으로 전송됩니다. 구독자를 선택하고 위쪽 메뉴의 **다시 보내기** 단추를 클릭하여 언제든지 할당 전자 메일을 다시 보낼 수 있습니다.  여러 사용자에게 전자 메일을 다시 보내려면 구독자를 선택 하는 동안 **Ctrl** 키를 누르고 있습니다.  **다시 보내기** 단추를 클릭하면 해당 구독자에게 다시 보낼 것인지 확인하는 대화 상자가 표시됩니다.  
 
 ## <a name="next-steps"></a>다음 단계
 - 추가할 사용자가 많은가요?  [여러 구독자](assign-license-bulk.md)에게 구독을 할당하는 방법을 알아보세요.
-- 도움이 필요하십니까?  [Visual Studio 관리 및 구독 지원](https://visualstudio.microsoft.com/support/support-overview-vs)에 문의하세요.
+- 도움 필요 시  [Visual Studio 관리 및 구독 지원](https://visualstudio.microsoft.com/support/support-overview-vs)에 문의하세요.
 

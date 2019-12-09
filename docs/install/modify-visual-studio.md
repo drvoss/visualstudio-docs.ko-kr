@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a97db7e6b81eb9e807902d1b9bd0ea8ee6efa55e
-ms.sourcegitcommit: 0bd63f3bc429ae059b9df6e45c6b8dcae6152940
+ms.openlocfilehash: 628d8fe5d8374d0cb203e6953f63bd63d77d0c58
+ms.sourcegitcommit: 3ba2968a4b44643482aadad4d50e1a55bb36b136
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70026483"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74566992"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>워크로드와 구성 요소를 추가하거나 제거하여 Visual Studio 수정
 
@@ -46,7 +46,17 @@ Visual Studio를 쉽게 수정할 수 있어 원하는 때에 원하는 대로 �
 
 ## <a name="modify-workloads"></a>작업 수정
 
- [워크로드](https://visualstudio.microsoft.com/vs/visual-studio-workloads/)에는 사용 중인 프로그래밍 언어 또는 플랫폼에 필요한 기능이 포함됩니다. 작업을 사용하여 원하는 시기에 원하는 작업을 지원하도록 Visual Studio를 수정할 수 있습니다.
+::: moniker range="vs-2017"
+
+ [워크로드](https://visualstudio.microsoft.com/vs/support/selecting-workloads-visual-studio-2017/)에는 사용 중인 프로그래밍 언어 또는 플랫폼에 필요한 기능이 포함됩니다. 작업을 사용하여 원하는 시기에 원하는 작업을 지원하도록 Visual Studio를 수정할 수 있습니다.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+ 작업에는 사용 중인 프로그래밍 언어 또는 플랫폼에 필요한 기능이 포함되어 있습니다. 작업을 사용하여 원하는 시기에 원하는 작업을 지원하도록 Visual Studio를 수정할 수 있습니다.
+
+::: moniker-end
 
 >[!NOTE]
 > 다음 절차에서는 인터넷 연결이 있다고 가정합니다.
@@ -66,7 +76,7 @@ Visual Studio를 쉽게 수정할 수 있어 원하는 때에 원하는 대로 �
 
 1. 설치 관리자를 클릭하거나 탭한 다음, **수정**을 선택합니다.
 
-     ![Visual Studio 실행 또는 수정](media/modify-visual-studio.png "Visual Studio 2017 수정")
+     ![Visual Studio 시작 또는 수정](media/modify-visual-studio.png "Visual Studio 2017 수정")
 
      보류 중인 업데이트가 있는 경우 수정 단추는 다른 위치에 있습니다. 이러한 방식으로 Visual Studio를 업데이트하지 않고 수정할 수 있습니다. **자세히**를 클릭한 다음, **수정**을 선택합니다.
 
@@ -74,7 +84,7 @@ Visual Studio를 쉽게 수정할 수 있어 원하는 때에 원하는 대로 �
 
 1. **작업** 화면에서 설치하거나 제거할 작업을 선택하거나 선택 취소합니다.
 
-    ![Visual Studio 2017 설치 대화 상자](media/vs2017-modify-workloads.PNG "Visual Studio 2017에서 작업 선택")
+    ![Visual Studio 2017 설치 대화 상자](media/vs2017-modify-workloads.PNG "Visual Studio 2017에서 워크로드 선택")
 
 1. **수정**을 다시 선택합니다.
 
@@ -103,7 +113,7 @@ Visual Studio를 쉽게 수정할 수 있어 원하는 때에 원하는 대로 �
 
 1. **워크로드** 탭에서 설치하거나 제거할 워크로드를 선택하거나 선택 취소합니다.
 
-    ![Visual Studio 2019 설정 대화 상자](media/vs-2019/vs-installer-modify-workloads.png "Visual Studio 2019에서 작업 선택")
+    ![Visual Studio 2019 설치 대화 상자](media/vs-2019/vs-installer-modify-workloads.png "Visual Studio 2019에서 워크로드 선택")
 
 1. 기본 **다운로드하는 동안 설치** 옵션 또는 **모두 다운로드한 후 설치** 옵션을 허용할지 여부를 선택합니다.
 
@@ -119,13 +129,12 @@ Visual Studio를 쉽게 수정할 수 있어 원하는 때에 원하는 대로 �
 
 ## <a name="modify-individual-components"></a>개별 구성 요소 수정
 
-Visual Studio 설치를 사용자 지정하기 위해 [워크로드](https://visualstudio.microsoft.com/vs/visual-studio-workloads/)를 설치하지 않으려면 Visual Studio 설치 관리자에서 **개별 구성 요소** 탭을 선택하고 원하는 항목을 선택한 다음, 표시되는 메시지를 따릅니다.
+Visual Studio 설치를 사용자 지정하기 위해 워크로드를 설치하지 않으려면 Visual Studio 설치 관리자에서 **개별 구성 요소** 탭을 선택하고 원하는 항목을 선택한 다음, 표시되는 메시지를 따릅니다.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>참고 항목
 
-* [Visual Studio 워크로드에 대한 자세한 정보](https://visualstudio.microsoft.com/vs/visual-studio-workloads/)
 * [Visual Studio 워크로드 및 구성 요소 ID 목록](workload-and-component-ids.md)
 * [Visual Studio 업데이트](update-visual-studio.md)
 * [Visual Studio의 네트워크 기반 설치 업데이트](update-a-network-installation-of-visual-studio.md)

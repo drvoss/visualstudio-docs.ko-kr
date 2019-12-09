@@ -3,14 +3,14 @@ title: Mac용 Visual Studio Tools for Unity
 description: Visual Studio Tools for Unity 확장 소개
 author: therealjohn
 ms.author: johmil
-ms.date: 06/18/2019
+ms.date: 10/25/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 98a34df9960ca95edbaf6b9c5ae91d7cd4e06568
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: c411ae1730c2bd9b4f92729a8480d7fa399d0894
+ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691863"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74797259"
 ---
 # <a name="visual-studio-for-mac-tools-for-unity"></a>Mac용 Visual Studio Tools for Unity
 
@@ -47,6 +47,12 @@ Mac용 Visual Studio Tools for Unity는 Visual Studio만의 강력한 [디버깅
 ### <a name="powerful-refactoring-and-context-actions"></a>효과적인 리팩터링 및 컨텍스트 작업
 
 [이름 바꾸기, 리팩터링 및 컨텍스트 작업](refactoring.md)을 위한 빠른 메뉴와 바로 가기 키로 더 유용한 코드를 작성할 수 있습니다.
+
+### <a name="roslyn-diagnostics-and-quick-fixes-for-unity"></a>Unity에 대한 Roslyn 진단 및 빠른 수정
+
+Unity 프로젝트에 대한 Mac용 Visual Studio의 깊은 이해를 바탕으로 모범 사례를 캡처하는 향상된 코드를 작성합니다. 
+
+![CompareTag를 사용한 Mac용 VS 리팩터링 문자열 비교](media/using-vsmac-tools-unity-image9.png)
 
 ### <a name="browse-and-add-new-files"></a>탐색 및 새 파일 추가
 

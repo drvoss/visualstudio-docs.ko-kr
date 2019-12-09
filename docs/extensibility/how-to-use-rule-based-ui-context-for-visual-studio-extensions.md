@@ -7,16 +7,16 @@ author: madskristensen
 ms.author: madsk
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd7e091192e0111a9dcf0997af8316daef364adb
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 2abe9938d4c3212f29b8591727d731e99e47929c
+ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252340"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74904009"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>방법: Visual Studio 확장에 대 한 규칙 기반 UI 컨텍스트 사용
 
-Visual Studio에서는 잘 알려진 <xref:Microsoft.VisualStudio.Shell.UIContext>특정를 활성화할 때 vspackage를 로드할 수 있습니다. 그러나 이러한 UI 컨텍스트는 미세 하 게 세분화 되지 않으므로 확장 작성자는 선택 하지 않고 VSPackage 로드 하기 전에 활성화 되는 사용 가능한 UI 컨텍스트를 선택 합니다. 잘 알려진 UI 컨텍스트의 목록은를 참조 <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>하십시오.
+잘 알려진 특정 <xref:Microsoft.VisualStudio.Shell.UIContext>s가 활성화 되 면 Visual Studio에서 Vspackage를 로드할 수 있습니다. 그러나 이러한 UI 컨텍스트는 미세 하 게 세분화 되지 않으므로 확장 작성자는 선택 하지 않고 VSPackage 로드 하기 전에 활성화 되는 사용 가능한 UI 컨텍스트를 선택 합니다. 잘 알려진 UI 컨텍스트의 목록은 <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>를 참조 하세요.
 
 패키지를 로드 하면 성능에 영향을 줄 수 있으며 필요한 것 보다 빨리 로드할 수 있습니다. Visual Studio 2015에는 확장 작성자가 UI 컨텍스트가 활성화 되 고 관련 Vspackage 로드 되는 정확한 조건을 정의 하는 데 사용할 수 있는 메커니즘인 규칙 기반 UI 컨텍스트의 개념이 도입 되었습니다.
 
@@ -35,17 +35,17 @@ Visual Studio에서는 잘 알려진 <xref:Microsoft.VisualStudio.Shell.UIContex
    모든 Visual Studio 확장에서이 메커니즘을 사용할 수 있습니다.
 
 ## <a name="create-a-rule-based-ui-context"></a>규칙 기반 UI 컨텍스트 만들기
- 확장명이 *.config* 인 파일에만 적용 되는 메뉴 명령을 제공 하는 testpackage 라는 확장 프로그램이 있다고 가정 합니다. VS2015 하기 전에 UI 컨텍스트가 활성화 될 때 <xref:Microsoft.VisualStudio.Shell.KnownUIContexts.SolutionExistsAndFullyLoadedContext%2A> testpackage를 로드 하는 것이 가장 좋습니다. 이러한 방식으로 TestPackage를 로드 하는 것은 효율적이 지 않습니다. 로드 된 솔루션에 *.config* 파일이 포함 되지 않을 수 있기 때문입니다. 이러한 단계에서는 *.config* 확장명을 가진 파일을 선택한 경우에만 규칙 기반 ui 컨텍스트를 사용 하 여 ui 컨텍스트를 활성화 하 고 해당 ui 컨텍스트가 활성화 될 때 testpackage를 로드 하는 방법을 보여 줍니다.
+ 확장명이 *.config* 인 파일에만 적용 되는 메뉴 명령을 제공 하는 testpackage 라는 확장 프로그램이 있다고 가정 합니다. VS2015 하기 전에 <xref:Microsoft.VisualStudio.Shell.KnownUIContexts.SolutionExistsAndFullyLoadedContext%2A> UI 컨텍스트가 활성화 될 때 TestPackage를 로드 하는 것이 가장 좋습니다. 이러한 방식으로 TestPackage를 로드 하는 것은 효율적이 지 않습니다. 로드 된 솔루션에 *.config* 파일이 포함 되지 않을 수 있기 때문입니다. 이러한 단계에서는 *.config* 확장명을 가진 파일을 선택한 경우에만 규칙 기반 ui 컨텍스트를 사용 하 여 ui 컨텍스트를 활성화 하 고 해당 ui 컨텍스트가 활성화 될 때 testpackage를 로드 하는 방법을 보여 줍니다.
 
-1. 새 uicontext GUID를 정의 하 고 VSPackage 클래스 <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> 및 <xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute>에 추가 합니다.
+1. 새 UIContext GUID를 정의 하 고 VSPackage 클래스 <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> 및 <xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute>에 추가 합니다.
 
-    예를 들어 새 UIContext "UIContextGuid"를 추가 한다고 가정해 보겠습니다. 만든 guid ( **도구** > **guid 만들기**를 클릭 하 여 guid를 만들 수 있음)는 "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B"입니다. 그런 다음 패키지 클래스 내부에 다음 선언을 추가 합니다.
+    예를 들어 새 UIContext "UIContextGuid"를 추가 한다고 가정해 보겠습니다. 만든 GUID (guid **만들기 > guid 만들기를 클릭** 하 여 guid를 만들 수 **있음)는**"8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B"입니다. 그런 다음 패키지 클래스 내부에 다음 선언을 추가 합니다.
 
    ```csharp
    public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";
    ```
 
-    특성의 경우 다음 값을 추가 합니다. 이러한 특성에 대 한 자세한 내용은 뒷부분에서 설명 합니다.
+    특성의 경우 다음 값을 추가 합니다. (이러한 특성에 대 한 자세한 내용은 뒷부분에서 설명 합니다.)
 
    ```csharp
    [ProvideAutoLoad(TestPackage.UIContextGuid)]
@@ -56,7 +56,7 @@ Visual Studio에서는 잘 알려진 <xref:Microsoft.VisualStudio.Shell.UIContex
        termValues: new[] { "HierSingleSelectionName:.config$" })]
    ```
 
-    이러한 메타 데이터는 새 UIContext GUID (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) 및 단일 용어 "DotConfig"를 참조 하는 식을 정의 합니다. "DotConfig" 용어는 활성 계층의 현재 선택 영역이 정규식 패턴 "\\.config $"와 일치 하는 이름을 가질 때마다 true로 평가 됩니다 ( *.config*로 끝남). (기본값) 값은 디버깅에 유용한 규칙의 선택적 이름을 정의 합니다.
+    이러한 메타 데이터는 새 UIContext GUID (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) 및 단일 용어 "DotConfig"를 참조 하는 식을 정의 합니다. "DotConfig" 용어는 활성 계층의 현재 선택 영역에 정규식 패턴 "\\.config $" ( *.config*로 끝남)와 일치 하는 이름이 있는 경우 항상 true로 평가 됩니다. (기본값) 값은 디버깅에 유용한 규칙의 선택적 이름을 정의 합니다.
 
     이 특성의 값은 빌드 시 나중에 생성 된 .pkgdef에 추가 됩니다.
 
@@ -80,7 +80,7 @@ Visual Studio에서는 잘 알려진 <xref:Microsoft.VisualStudio.Shell.UIContex
    <GuidSymbol name="UIContextGuid" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />
    ```
 
-    이제  *\*.config* 파일에 대 한 상황에 맞는 메뉴 명령은 솔루션 탐색기에서 선택한 항목이 *.config* 파일 일 때만 표시 되 고 패키지는 해당 명령 중 하나를 선택할 때까지 로드 되지 않습니다.
+    이제 *\*.config* 파일에 대 한 상황에 맞는 메뉴 명령은 솔루션 탐색기에서 선택한 항목이 *.config* 파일이 고 해당 명령 중 하나를 선택할 때까지 패키지가 로드 되지 않을 때만 표시 됩니다.
 
    그런 다음 디버거를 사용 하 여 패키지가 정상적으로 로드 되는지 확인 합니다. TestPackage를 디버그 하려면:
 
@@ -136,7 +136,7 @@ Visual Studio에서는 잘 알려진 <xref:Microsoft.VisualStudio.Shell.UIContex
 |UserSettingsStoreQuery:\<query>|"query"는 0이 아닌 값으로 평가 되어야 하는 사용자 설정 저장소의 전체 경로를 나타냅니다. 쿼리가 마지막 슬래시에서 "collection" 및 "propertyName"으로 분할 됩니다.|
 |ConfigSettingsStoreQuery:\<query>|"query"는 0이 아닌 값으로 계산 되어야 하는 구성 설정 저장소의 전체 경로를 나타냅니다. 쿼리가 마지막 슬래시에서 "collection" 및 "propertyName"으로 분할 됩니다.|
 |ActiveProjectFlavor:\<projectTypeGuid>|용어는 현재 선택 된 프로젝트가 flavored (집계) 되 고 지정 된 프로젝트 형식 GUID와 일치 하는 버전이 있는 경우에도 마찬가지입니다.|
-|ActiveEditorContentType:\<contentType>|선택한 문서가 지정 된 콘텐츠 형식의 텍스트 편집기 인 경우 용어는 true가 됩니다.|
+|ActiveEditorContentType:\<contentType>|선택한 문서가 지정 된 콘텐츠 형식의 텍스트 편집기 인 경우 용어는 true가 됩니다. 참고: 선택한 문서의 이름이 변경 되 면 파일을 닫았다가 다시 열 때까지이 용어는 새로 고쳐지지 않습니다.|
 |ActiveProjectCapability:\<Expression>|용어는 활성 프로젝트 기능이 제공 된 식과 일치 하는 경우 true입니다. 식은 VB &#124; CSharp와 같을 수 있습니다.|
 |SolutionHasProjectCapability:\<Expression>|위와 비슷하지만, 식과 일치 하는 로드 된 프로젝트가 솔루션에 있는 경우 용어는 true입니다.|
 |SolutionHasProjectFlavor:\<projectTypeGuid>|솔루션에 flavored (집계) 된 프로젝트가 있고 지정 된 프로젝트 형식 GUID와 일치 하는 버전이 있는 경우에는 해당 용어가 항상 true가 됩니다.|
@@ -149,7 +149,7 @@ Visual Studio에서는 잘 알려진 <xref:Microsoft.VisualStudio.Shell.UIContex
 
 규칙 기반 UI 컨텍스트는 Visual Studio 2015의 새로운 기능이 며 이전 버전으로 이식할 수 없습니다. 이전 버전으로 이식 하지 않으면 여러 버전의 Visual Studio를 대상으로 하는 확장명/패키지와 관련 된 문제가 발생 합니다. 이러한 버전은 Visual Studio 2013 및 이전 버전에서 자동으로 로드 되어야 하지만, Visual Studio 2015에서 자동으로 로드 되지 않도록 규칙 기반 UI 컨텍스트의 이점을 누릴 수 있습니다.
 
-이러한 패키지를 지원 하기 위해 레지스트리의 AutoLoadPackages 항목은 이제 값 필드에 플래그를 제공 하 여 Visual Studio 2015 이상에서 항목을 건너뛰어야 함을 나타낼 수 있습니다. 플래그 옵션을에 <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags>추가 하 여이 작업을 수행할 수 있습니다. Vspackage는 이제 **SkipWhenUIContextRulesActive** 옵션을 해당 <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> 특성에 추가 하 여 Visual Studio 2015 이상에서 항목을 무시 하도록 지정할 수 있습니다.
+이러한 패키지를 지원 하기 위해 레지스트리의 AutoLoadPackages 항목은 이제 값 필드에 플래그를 제공 하 여 Visual Studio 2015 이상에서 항목을 건너뛰어야 함을 나타낼 수 있습니다. <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags>에 플래그 옵션을 추가 하 여이 작업을 수행할 수 있습니다. Vspackage는 이제 <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> 특성에 **SkipWhenUIContextRulesActive** 옵션을 추가 하 여 Visual Studio 2015 이상에서 항목을 무시 하도록 지정할 수 있습니다.
 ## <a name="extensible-ui-context-rules"></a>확장 가능한 UI 컨텍스트 규칙
 
 경우에 따라 패키지에서 정적 UI 컨텍스트 규칙을 사용할 수 없습니다. 예를 들어, 가져온 MEF 공급자가 지 원하는 편집기 유형을 기반으로 명령 상태를 지 원하는 확장성을 지 원하는 패키지가 있다고 가정 합니다. 현재 편집 유형을 지 원하는 확장이 있는 경우이 명령을 사용할 수 있습니다. 이러한 경우 사용 가능한 MEF 확장에 따라 용어는 변경 되므로 패키지 자체는 정적 UI 컨텍스트 규칙을 사용할 수 없습니다.

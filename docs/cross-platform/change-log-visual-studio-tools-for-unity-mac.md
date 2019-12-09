@@ -1,7 +1,7 @@
 ---
 title: 변경 로그(Visual Studio Tools for Unity, Mac) | Microsoft Docs
 ms.custom: ''
-ms.date: 09/18/2019
+ms.date: 12/02/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 33a6ac54-d997-4308-b5a0-af7387460849
@@ -10,16 +10,64 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 897851055bd2eacc10edea9fdff2ab3ecd61b963
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: fe317d446ddc9196df02dfafcf0397f8815574c3
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71185969"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74771545"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>변경 로그(Visual Studio Tools for Unity, Mac)
 
 Visual Studio Tools for Unity에 대한 변경 로그입니다.
+
+## <a name="2420"></a>2.4.2.0
+
+릴리스 날짜: 2019년 12월 3일
+
+### <a name="bug-fixes"></a>버그 수정
+
+- **통합:**
+
+  - 사용자 정의 인터페이스를 사용하여 진단을 수정했습니다.
+
+  - 형식이 잘못된 식이 있는 빠른 도구 설명을 수정했습니다.
+  
+## <a name="2410"></a>2.4.1.0
+
+릴리스 날짜: 2019년 11월 6일
+
+### <a name="new-features"></a>새 기능
+
+- **통합:**
+
+  - Unity 백그라운드 프로세스에 대한 지원이 추가되었습니다. (디버거는 자식 프로세스가 아닌 기본 프로세스에 자동으로 연결할 수 있습니다.)
+
+  - 관련 설명서를 표시하는 Unity 메시지에 대한 빠른 도구 설명을 추가했습니다.
+
+### <a name="bug-fixes"></a>버그 수정
+
+- **통합:**
+
+  - 고급 이진 및 호출 식을 사용하여 태그 비교 분석기 `UNT0002`를 수정했습니다.
+
+### <a name="deprecated-features"></a>사용되지 않는 기능
+
+- **통합:**
+
+  - 앞으로 Visual Studio Tools for Unity에서는 Visual Studio 2017+만 지원합니다.
+
+## <a name="2400"></a>2.4.0.0
+
+릴리스 날짜: 2019년 10월 15일
+
+### <a name="new-features"></a>새 기능
+
+- **통합:**
+
+  - 모든 Unity 메시지에 대해 `IDE0060`(사용되지 않는 매개 변수)의 억제 장치를 추가했습니다.
+
+  - `TooltipAttribute` 태그가 지정된 필드에 대한 빠른 도구 설명을 추가했습니다. (이 내용은 이 필드를 사용하는 간단한 get 접근자에도 적용됩니다.)
 
 ## <a name="2330"></a>2.3.3.0
 

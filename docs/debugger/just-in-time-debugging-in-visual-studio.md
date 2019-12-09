@@ -11,20 +11,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0024716875dce7e81567d60a6e61069be64ec185
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: eb66615abbd7124fd6b781598bd8eb28ea34756d
+ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911451"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74903867"
 ---
 # <a name="disable-the-just-in-time-debugger"></a>Just-In-Time 디버거를 사용하지 않도록 설정
 
 실행 중인 앱에서 오류가 발생 하 고 앱을 계속할 수 없는 경우 Just-in-time 디버거 대화 상자가 열립니다.
 
-Just-in-time 디버거는 Visual Studio를 시작 하 여 오류를 디버그할 수 있는 옵션을 제공 합니다. 오류에 대 한 자세한 정보를 보거나 디버깅을 시도 하려면 [Visual Studio](https://visualstudio.microsoft.com/) 또는 선택한 다른 디버거가 설치 되어 있어야 합니다.
+Just-in-time 디버거는 Visual Studio를 시작 하 여 오류를 디버그할 수 있는 옵션을 제공 합니다. 오류에 대 한 자세한 정보를 보거나 디버깅을 시도 하려면 Visual Studio 또는 선택한 다른 디버거가 설치 되어 있어야 합니다.
 
-Visual Studio 사용자 이며 오류를 디버깅 하려는 경우 [Just-in-time 디버거를 사용 하 여 디버그](../debugger/debug-using-the-just-in-time-debugger.md)를 참조 하세요. 오류를 수정할 수 없거나 Just-in-time 디버거가 열리지 않도록 하려면 [Visual Studio에서 just-in-time 디버깅을 사용 하지 않도록 설정할](debug-using-the-just-in-time-debugger.md#BKMK_Enabling)수 있습니다.
+이미 Visual Studio 사용자가 오류를 디버깅 하려는 경우 [Just-in-time 디버거를 사용 하 여 디버그](../debugger/debug-using-the-just-in-time-debugger.md)를 참조 하세요. 오류를 수정할 수 없거나 Just-in-time 디버거가 열리지 않도록 하려면 [Visual Studio에서 just-in-time 디버깅을 사용 하지 않도록 설정할](debug-using-the-just-in-time-debugger.md#BKMK_Enabling)수 있습니다.
 
 Visual Studio를 설치 했지만 더 이상 수행 하지 않는 경우 [Windows 레지스트리에서 just-in-time 디버깅을 사용 하지 않도록 설정](debug-using-the-just-in-time-debugger.md#disable-just-in-time-debugging-from-the-windows-registry)해야 할 수 있습니다.
 

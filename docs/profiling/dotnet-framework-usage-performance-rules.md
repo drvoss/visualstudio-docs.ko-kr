@@ -6,14 +6,15 @@ ms.assetid: ab573755-6370-48aa-853d-a7321c424c79
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bf47871b8b1c2e6f8e4f67bf26ba5f73ca078c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a740885d8876398bf86e279aa259e9169fcf7c2
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970020"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779289"
 ---
 # <a name="net-framework-usage-performance-rules"></a>.NET Framework 사용 성능 규칙
 .NET Framework 사용 범주의 성능 규칙은 최적화할 수 있는 특정 방법을 확인하고 성능 문제가 있는지 조사할 수 있는 가비지 수집 및 잠금 경합과 같은 더 일반적인 사용 패턴도 확인합니다.

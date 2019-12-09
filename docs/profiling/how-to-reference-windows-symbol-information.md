@@ -11,14 +11,15 @@ ms.assetid: b7c67318-6be2-4b1e-a161-077b1f4a7c30
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 91b5c90b2451780458982ba73a0e04672fa2e507
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 28bbd4b584d679c03c58ba8532ced3f28f16d6aa
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422857"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774915"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>방법: Windows 기호 정보 참조
 Visual Studio 프로파일링 도구는 기호 파일(.*pdb*)을 사용하여 프로그램 바이너리의 함수 이름과 같은 기호 이름을 확인합니다. 로컬 컴퓨터에 설치된 Windows 버전에 대한 올바른 .*pdb* 파일을 자동으로 다운로드하고 업데이트하려면 다음 단계를 수행합니다.
@@ -44,7 +45,7 @@ Visual Studio 프로파일링 도구는 기호 파일(.*pdb*)을 사용하여 �
 
      **C:\SymbolCache**
 
-     줄임표 단추(**...**)를 클릭한 후 **폴더 찾아보기** 대화 상자에서 디렉터리를 선택할 수도 있습니다.
+     줄임표 단추( **...** )를 클릭한 후 **폴더 찾아보기** 대화 상자에서 디렉터리를 선택할 수도 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 - [성능 세션 구성](../profiling/configuring-performance-sessions.md)

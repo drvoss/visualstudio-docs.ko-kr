@@ -12,14 +12,15 @@ ms.assetid: 6593fa82-181e-4009-a0ed-02aa24c2c063
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 049e1163f54dfcdfe2338faa59ae8c37c3114fa7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 1420aa9f92e8ef7564478499c78393510ad61c23
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422046"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778039"
 ---
 # <a name="use-the-profiling-tools-from-the-command-line"></a>명령줄에서 프로파일링 도구 사용
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구의 명령줄 도구를 사용하면 명령 프롬프트에서 애플리케이션을 프로파일링하고 배치 파일 및 스크립팅을 통해 프로파일링을 자동화할 수 있습니다. 또한 명령 프롬프트에서 보고서 파일을 생성할 수 있습니다. 간단한 독립 실행형 프로파일러를 사용하여 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]가 설치되어 있지 않은 컴퓨터에서 데이터를 수집할 수 있습니다.

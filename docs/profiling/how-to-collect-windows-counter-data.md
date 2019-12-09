@@ -12,14 +12,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 730345edb42ff3d14608bdcce91bc7b97c4bb478
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c85187fd54d61fdf40956c8aee3c0a222d95a313
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973853"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74776321"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>방법: Windows 카운터 데이터 수집
 

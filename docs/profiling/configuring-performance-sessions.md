@@ -11,14 +11,15 @@ ms.assetid: e1c3ba41-ffca-4edf-9a7f-8a5a9244ef9b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a36486816d9b6bdc160616b893c6d7a79dfad58
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 1bdf1c372ffcb3ad3a0ebf102827565853947e2b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405777"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777870"
 ---
 # <a name="configure-performance-sessions"></a>성능 세션 구성
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구를 사용하여 다양한 애플리케이션 종류에 대한 성능 데이터를 수집할 수 있습니다. 이 섹션에서는 성능 세션 및 대상 이진 파일의 성능 Wizardand 속성을 사용하여 관심 있는 데이터를 수집하도록 프로파일링 도구를 구성하는 방법을 보여 줍니다. 프로파일링 도구 구성 속성을 사용하여 프로파일링 실행에서 수집되는 데이터의 양을 제어할 수도 있습니다. 자세한 내용은 [데이터 수집 제어](../profiling/controlling-data-collection.md)를 참조하세요.

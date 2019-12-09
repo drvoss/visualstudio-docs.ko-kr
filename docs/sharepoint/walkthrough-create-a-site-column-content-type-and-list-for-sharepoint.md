@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e78594a98066dec6cedff6da6f3f1de823bec796
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: cc6782e4a83f259eb17632addec36c7804b27858
+ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985011"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74879357"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>연습: SharePoint 용 사이트 열, 콘텐츠 형식 및 목록 만들기
   다음 절차에서는 사용자 지정 SharePoint 사이트 열 또는 *필드*를 만드는 방법 및 사이트 열을 사용 하는 내용 유형을 보여 줍니다. 또한 새 콘텐츠 형식을 사용 하는 목록을 만드는 방법도 보여 줍니다.
@@ -44,7 +44,7 @@ ms.locfileid: "72985011"
 ## <a name="prerequisites"></a>Prerequisites
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.
 
-- 지원 되는 버전의 Windows 및 SharePoint
+- 지원되는 Windows 및 SharePoint 버전.
 
 - [!INCLUDE[vsprvs-current](../sharepoint/includes/vsprvs-current-md.md)]
 
@@ -54,33 +54,48 @@ ms.locfileid: "72985011"
 #### <a name="to-create-the-project"></a>프로젝트를 만들려면
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 선택 합니다.
+::: moniker range="=vs-2017"
+2. **새 프로젝트** 대화 상자의  **C# 시각적 개체** 또는 **Visual Basic**에서 **Office/sharepoint** 노드를 확장 한 다음 **sharepoint 솔루션**을 선택 합니다.
 
-2. **새 프로젝트** 대화 상자의  **C# 시각적 개체** 또는 **Visual Basic**에서 **SharePoint** 노드를 확장 한 다음 **2010**을 선택 합니다.
+3. **템플릿** 창에서 설치 된 sharepoint의 특정 버전에 대 한 **sharepoint 빈 프로젝트** 를 선택 합니다. 예를 들어 SharePoint 2016을 설치한 경우 **sharepoint 2016-빈 프로젝트** 템플릿을 선택 합니다.  
 
-3. **템플릿** 창에서 **SharePoint 2010 프로젝트**를 선택 하 고 프로젝트의 이름을 **클리닉**로 변경한 다음 **확인** 단추를 선택 합니다.
+4. 프로젝트의 이름을 **클리닉**으로 변경한 다음 **확인** 단추를 선택 합니다.
 
-     SharePoint 2010 프로젝트 템플릿은 나중에 추가 되는 사이트 열 및 기타 프로젝트 항목을 포함 하기 위해이 예제에서 사용 되는 빈 프로젝트입니다.
+5. **디버깅에 사용할 사이트 및 보안 수준 지정** 대화 상자에서 새 사용자 지정 필드 항목을 추가할 로컬 SharePoint 사이트의 URL을 입력 하거나 기본 위치 (`http://<`*SystemName*`>/)`를 사용 합니다.
 
-4. **디버깅에 사용할 사이트 및 보안 수준 지정** 페이지에서 새 사용자 지정 필드 항목을 추가할 로컬 SharePoint 사이트의 URL을 입력 하거나 기본 위치 (`http://<`*SystemName*`>/)`를 사용 합니다.
+6. **이 SharePoint 솔루션의 신뢰 수준을 선택** 하십시오. 섹션에서 기본 값인 **샌드박스 솔루션으로 배포**를 사용 합니다.
+
+     샌드박스가 적용 된 솔루션과 팜 솔루션에 대 한 자세한 내용은 [샌드박스 솔루션 고려 사항](../sharepoint/sandboxed-solution-considerations.md)을 참조 하세요.
+
+7. **마침** 단추를 선택합니다. 이제 프로젝트가 **솔루션 탐색기**에 나열 됩니다.
+::: moniker-end
+::: moniker range=">=vs-2019"
+2.  **새 프로젝트 만들기** 대화 상자에서 설치 된 sharepoint의 특정 버전에 대 한 **sharepoint 빈 프로젝트** 를 선택 합니다. 예를 들어 SharePoint 2016을 설치한 경우 **sharepoint 2016-빈 프로젝트** 템플릿을 선택 합니다.
+    [!INCLUDE[new-project-dialog-search](../sharepoint/includes/new-project-dialog-search-md.md)]
+
+3. 프로젝트의 이름을 **클리닉**로 변경한 다음 **만들기** 단추를 선택 합니다.
+
+4. **디버깅에 사용할 사이트 및 보안 수준 지정** 대화 상자에서 새 사용자 지정 필드 항목을 추가할 로컬 SharePoint 사이트의 URL을 입력 하거나 기본 위치 (`http://<`*SystemName*`>/)`를 사용 합니다.
 
 5. **이 SharePoint 솔루션의 신뢰 수준을 선택** 하십시오. 섹션에서 기본 값인 **샌드박스 솔루션으로 배포**를 사용 합니다.
 
      샌드박스가 적용 된 솔루션과 팜 솔루션에 대 한 자세한 내용은 [샌드박스 솔루션 고려 사항](../sharepoint/sandboxed-solution-considerations.md)을 참조 하세요.
 
-6. **마침** 단추를 선택 합니다. 이제 프로젝트가 **솔루션 탐색기**에 나열 됩니다.
+6. **마침** 단추를 선택합니다. 이제 프로젝트가 **솔루션 탐색기**에 나열 됩니다.
+::: moniker-end
 
 #### <a name="to-add-site-columns"></a>사이트 열을 추가 하려면
 
-1. 새 사이트 열을 추가 합니다. 이렇게 하려면 **솔루션 탐색기**에서 **클리닉**에 대 한 바로 가기 메뉴를 열고 **추가** > **새 항목**을 선택 합니다.
+1. 새 사이트 열을 추가 합니다. 이렇게 하려면 **솔루션 탐색기**에서 **클리닉** 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 **추가** > **새 항목**을 선택 합니다.
 
-2. **새 항목 추가** 대화 상자에서 **사이트 열**을 선택 하 고 이름을 **환자 이름**으로 변경한 다음 **추가** 단추를 선택 합니다.
+2. **새 항목 추가** 대화 상자에서 **사이트 열**을 선택 하 고 이름을 **PatientName**로 변경한 다음 **추가** 단추를 선택 합니다.
 
 3. 사이트 열의 *Elements .xml* 파일에서 **형식** 설정을 **텍스트로**그대로 두고 **그룹** 설정을 **클리닉 사이트 열**로 변경 합니다. 완료 되 면 사이트 열의 *Elements .xml* 파일은 다음 예제와 같습니다.
 
     ```xml
     <Field
          ID="{f9ba60d1-5631-41fb-b016-a38cf48eef63}"
-         Name="Clinic - Patient Name"
+         Name="PatientName"
          DisplayName="Patient Name"
          Type="Text"
          Required="FALSE"
@@ -88,7 +103,11 @@ ms.locfileid: "72985011"
     </Field>
     ```
 
-4. 동일한 절차를 사용 하 여 두 개 이상의 사이트 열을 프로젝트에 추가 합니다. **환자 ID** (type = "Integer") 및 **의사 이름** (type = "Text"). 해당 그룹 값을 **클리닉 사이트 열**로 설정 합니다.
+    > [!TIP]
+    > 사이트 열의 이름에 카멜식 대/소문자를 사용 하는 경우 Visual Studio는 DisplayName에 자동으로 공백을 추가 합니다.
+    > SharePoint에 솔루션을 배포 하려고 할 때 문제가 발생할 수 있으므로 사이트 열 이름에 공백을 사용 하지 않는 것이 좋습니다.
+
+4. 동일한 절차를 사용 하 여 두 개 이상의 사이트 열을 프로젝트에 추가 합니다. **PatientID** (type = "Integer") 및 **doctorname** (type = "Text"). 해당 그룹 값을 **클리닉 사이트 열**로 설정 합니다.
 
 ## <a name="create-a-custom-content-type"></a>사용자 지정 콘텐츠 형식 만들기
  다음으로, 이전 절차에서 만든 사이트 열을 포함 하는 콘텐츠 형식 (연락처 콘텐츠 형식에 따라)을 만듭니다. 콘텐츠 형식을 기존 콘텐츠 형식으로 기반으로 하 여 기본 콘텐츠 형식에서 새 콘텐츠 형식에 사용할 여러 사이트 열을 제공 하기 때문에 시간을 절약할 수 있습니다.
@@ -133,11 +152,11 @@ ms.locfileid: "72985011"
 
 2. 메뉴 모음에서 **프로젝트** > **새 항목 추가**를 선택합니다.
 
-3. **C# 시각적 개체** 또는 **Visual Basic**에서 **SharePoint** 노드를 확장 한 다음 **2010** 노드를 선택 합니다.
+3. **시각적 개체 C#**  또는 **Visual Basic**에서 **SharePoint** 노드를 확장 합니다.
 
 4. **템플릿** 창에서 **목록** 템플릿을 선택 하 고 이름을 **환자**로 변경한 다음 **추가** 단추를 선택 합니다.
 
-5. 설정 **에 따라 목록 사용자 지정** 을 기본값으로 유지 **(비어 있음)** 한 후 **마침** 단추를 선택 합니다.
+5. 설정 **에 따라 목록 사용자 지정** 을 **기본값 (사용자 지정 목록)** 으로 두고 **마침** 단추를 선택 합니다.
 
 6. 목록 디자이너에서 **콘텐츠** 형식 단추를 선택 하 여 **콘텐츠 형식 설정** 대화 상자를 표시 합니다.
 
@@ -153,7 +172,7 @@ ms.locfileid: "72985011"
 
     - 집 전화
 
-    - 주소
+    - 전자 메일
 
     - 의사 이름
 
@@ -170,7 +189,7 @@ ms.locfileid: "72985011"
 
 10. **환자 ID** 및 **환자 이름** 상자 옆에 있는 **필수** 확인란을 선택 합니다.
 
-11. **뷰 탭에서** 빈 행을 선택 하 여 뷰를 만듭니다. **환자 세부 정보**를 입력 합니다.
+11. **뷰 탭에서** 빈 행을 선택 하 여 뷰를 만듭니다. **보기 이름** 열 아래에 있는 빈 행에 **환자 정보** 를 입력 합니다.
 
      **보기** 탭에서 SharePoint 목록에 표시할 열을 지정할 수 있습니다.
 
@@ -186,7 +205,7 @@ ms.locfileid: "72985011"
 
     - 집 전화
 
-    - 주소
+    - 전자 메일
 
     - 의사 이름
 
@@ -198,7 +217,7 @@ ms.locfileid: "72985011"
 
 15. **열 이름** 목록에서 **환자 이름**을 선택 하 고 **정렬** 열이 **오름차순**으로 설정 되었는지 확인 한 다음 **확인** 단추를 선택 합니다.
 
-## <a name="test-the-application"></a>애플리케이션 테스트
+## <a name="test-the-application"></a>응용 프로그램 테스트
  이제 사용자 지정 사이트 열, 콘텐츠 형식 및 목록이 준비 되었으므로 SharePoint에 배포 하 고 응용 프로그램을 실행 하 여 테스트 합니다.
 
 #### <a name="to-test-the-application"></a>애플리케이션을 테스트하려면
@@ -224,4 +243,4 @@ ms.locfileid: "72985011"
 - [SharePoint 솔루션 개발](../sharepoint/developing-sharepoint-solutions.md)
 - [방법: 사용자 지정 필드 형식 만들기](/previous-versions/office/developer/sharepoint-2010/bb862248(v=office.14))
 - [콘텐츠 형식](/previous-versions/office/developer/sharepoint-2010/ms479905(v=office.14))
-- [세로](/previous-versions/office/developer/sharepoint-2010/ms196085(v=office.14))
+- [열](/previous-versions/office/developer/sharepoint-2010/ms196085(v=office.14))

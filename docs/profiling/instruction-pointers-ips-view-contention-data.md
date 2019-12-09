@@ -8,21 +8,22 @@ ms.assetid: f5e49c24-d4cf-4f87-977d-37e3223d1196
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d41f48594e50e9d5ae0c6f67aabab673a9f112a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f37fb451238ec7ce6f48d8a4d3b91efa9ce04db7
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62995398"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774314"
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>IP(명령 포인터) 뷰 - 경합 데이터
 경합 데이터의 IP 뷰는 프로파일링 실행 시 실행되지 않도록 차단된 어셈블리 명령에 대한 데이터를 나열합니다.
 
  다음 표에서는 명령 포인터 뷰에 있는 열의 값에 대해 설명합니다.
 
-|열|설명|
+|Column|설명|
 |------------|-----------------|
 |**차단된 전용 시간**|이 함수에서 차단된 시간입니다.|
 |**차단된 전용 시간 비율(%)**|명령이 실행되는 동안 차단된 시간의 백분율입니다.|

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Visual Studio 구독을 위한 소프트웨어 다운로드 내의 제품 가용성 알아보기
-ms.openlocfilehash: 2b6e53ab959d91b269c4235a1438af36eae24e11
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: bf75f9638807b823fb72c4e23f69d0204fcec5de
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681687"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706819"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Visual Studio 구독 내 소프트웨어 다운로드 관련 제품 가용성
 구독자 혜택의 일환으로 다양한 소프트웨어 다운로드에 액세스할 수 있습니다.
@@ -25,12 +25,12 @@ ms.locfileid: "68681687"
 - **제품이 구독 수준 또는 프로그램에 포함되지 않습니다.** 구독을 통해 제공되는 소프트웨어 및 혜택에 대해 [자세히 알아보거나](https://visualstudio.microsoft.com/vs/pricing/) 구독 수준에서 제공되는 제품의 전체 목록을 [다운로드](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx)하세요. [Microsoft 파트너 네트워크](https://partner.microsoft.com/)와 같은 일부 프로그램은 Visual Studio 구독을 혜택의 일부로 제공합니다.  이러한 구독에는 구입한 Visual Studio 구독에 포함된 모든 제품이 포함되지 않습니다. 이러한 프로그램의 구독자는 제품 다운로드 가용성에 대한 질문을 해당 프로그램의 지원 팀에 전달해야 합니다.
 - **제품이 구독에 포함되어 있지 않습니다.** 특별 사용 조건, 기술 제한 또는 개발자 관련성으로 인해 일부 Microsoft 제품이 구독에 포함되지 않습니다. 제품을 구독에 추가하도록 제안하려면 Visual Studio [고객 서비스 센터](https://visualstudio.microsoft.com/subscriptions/support/)로 전자 메일을 보내주세요.
 - **공개적으로 제공되는 제품입니다.** 일부 도구, SDK, DDK 및 서비스 팩은 [Microsoft 다운로드 센터](https://www.microsoft.com/download)에서 공개적으로 제공됩니다. 이러한 제품 중 일부는 [다운로드]에 게시되지 않을 수 있습니다.
-- **아직 릴리스되지 않은 제품입니다.**  [다운로드]에서는 많은 시험판(베타) 버전 및 릴리스 후보가 제공됩니다. 그러나 모든 베타 버전이 포함될 수 있는 것은 아닙니다. 예를 들어 일부 베타 버전에는 특별한 등록이나 자격이 필요합니다. 공개 기술 베타 프로그램에 대한 자세한 내용은 [Microsoft Connect](http://connect.microsoft.com/)를 참조하세요.
+- **아직 릴리스되지 않은 제품입니다.**  [다운로드]에서는 많은 시험판(베타) 버전 및 릴리스 후보가 제공됩니다. 그러나 모든 베타 버전이 포함될 수 있는 것은 아닙니다. 예를 들어 일부 베타 버전에는 특별한 등록이나 자격이 필요합니다. 공개 기술 베타 프로그램에 대한 자세한 내용은 [Microsoft Connect](https://connect.microsoft.com/)를 참조하세요.
 - **해당 국가에서 사용할 수 없는 제품입니다.** 일부 Microsoft 제품은 지역 제한으로 인해 사용할 수 없습니다.
 - **중복 소프트웨어입니다.** Office 제품군, 독립 실행형 Office 다운로드 및 제품 키 선택은 Office가 포함된 구독에서 더 이상 사용할 수 없습니다. 다운로드 및 제품 키는 동일한 버전의 해당 최상위 Office 제품군에서 사용할 수 있습니다.  예를 들어 PowerPoint 2010을 검색하면 검색 결과가 생성되지 않습니다.  그러나 Office 2010(PowerPoint 2010이 포함된 Office 제품군)을 검색하면 해당 제품군을 다운로드할 수 있습니다.
 
 ## <a name="what-do-i-get"></a>무엇을 얻을 수 있나요?
-다운로드 수와 유형은 구독 수준과 프로그램 멤버 자격에 따라 다릅니다.  예를 들어 Visual Studio Enterprise 표준 구독이 있는 구독자는 Microsoft 파트너 네트워크 또는 BizSpark 프로그램 구독을 통해 구독을 가져오는 구독자와 다른 다운로드를 사용할 수 있습니다.  각 구독 수준에서 사용할 수 있는 다운로드에 대한 자세한 내용은 [혜택 수준별 제품](http://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx) 목록을 다운로드하세요.
+다운로드 수와 유형은 구독 수준과 프로그램 멤버 자격에 따라 다릅니다.  예를 들어 Visual Studio Enterprise 표준 구독이 있는 구독자는 Microsoft 파트너 네트워크 또는 BizSpark 프로그램 구독을 통해 구독을 가져오는 구독자와 다른 다운로드를 사용할 수 있습니다.  각 구독 수준에서 사용할 수 있는 다운로드에 대한 자세한 내용은 [혜택 수준별 제품](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx) 목록을 다운로드하세요.
 
 > [!NOTE]
 > 동일한 이메일 주소와 연결된 구독이 여럿인 경우 사용자가 이용 가능한 소프트웨어 타이틀은 사용자의 **최고** 수준 구독에 따라 결정됩니다.  예를 들어 사용자에게 Visual Studio Enterprise 구독과 Visual Studio Test Professional 구독이 있다면 구독 포털에서 어떤 구독이 현재 사용 중인지와 관계없이 Visual Studio Enterprise 구독과 함께 포함된 소프트웨어 타이틀 액세스 권한이 주어집니다. 

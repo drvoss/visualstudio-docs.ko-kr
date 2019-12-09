@@ -6,14 +6,15 @@ ms.assetid: afa7db3b-8c1d-473a-81ac-24ede112a17f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 15b5789a04b4a94156ebec33e525eafe4e22f296
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 51c4f1384a58b19ad9a6a4f46ad0131158cc967c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745291"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778351"
 ---
 # <a name="profiling-tools-usage-rules"></a>프로파일링 도구 사용 규칙
 프로파일링 도구 사용 범주의 성능 규칙은 프로파일러를 사용하여 데이터를 가장 효율적으로 수집하기 위한 지침을 제공합니다.

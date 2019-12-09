@@ -12,14 +12,15 @@ ms.assetid: 47512bc9-a8e9-4628-883a-d9888edab786
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 259b4089e4a54dbde4cc8b30a3da2899ad37a85a
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: f1a0cba29caeda01de1154430af7a0d94bcfc2a5
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189302"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779950"
 ---
 # <a name="vsinstr-warnings"></a>VSInstr 경고
 다음 표에는 *VSInstr.exe* 도구에서 발생되는 경고가 나와 있습니다. 경고 번호와 NOWARN 옵션을 함께 사용하여 경고가 표시되지 않도록 할 수 있습니다.

@@ -6,14 +6,15 @@ ms.assetid: f37972b2-efe4-4a1c-a5d1-a246ccd76817
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f779a050c334e8f61d6d3711ed2be2a7b087e72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f491ee766b2f17e14a8d13cc189018adea84903f
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62896688"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778559"
 ---
 # <a name="memory-and-paging-performance-rules"></a>메모리 및 페이징 성능 규칙
 메모리의 성능 규칙 및 페이징 범주는 애플리케이션 성능과 응답성에 영향을 줄 수 있는 프로파일링 실행의 페이징 작업을 식별합니다.

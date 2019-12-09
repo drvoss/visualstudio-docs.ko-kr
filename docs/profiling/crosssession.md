@@ -6,14 +6,15 @@ ms.assetid: b9fcb9c3-7903-478c-9b7c-dbd94092fcba
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8087f620f457f1e88ee6dc9ffff90f5c8747e50d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 06de982643a08e1af88073dde0fb0a9abc029900
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62552816"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779456"
 ---
 # <a name="crosssession"></a>CrossSession
 *VSPerfCmd.exe* **CrossSession** 옵션을 통해 프로파일러는 모든 콘솔 세션에서 데이터를 수집할 수 있습니다. **CrossSession** 옵션은 **Start** 옵션과 함께 사용되어야 합니다.
@@ -34,11 +35,11 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
 
  **시작:** `Method` **Start** 옵션은 지정된 프로파일링 방법으로 프로파일러를 초기화합니다.
 
- **연결:** _PID_[**,**_PID_] 지정된 프로세스의 프로파일링을 시작합니다.
+ **연결:** _PID_[ **,** _PID_] 지정된 프로세스의 프로파일링을 시작합니다.
 
- **Detach**[**:**_PID_[,_PID_]] 지정된 프로세스의 프로파일링을 중지합니다.
+ **Detach**[ **:** _PID_[,_PID_]] 지정된 프로세스의 프로파일링을 중지합니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  이 예제에서 **CrossSession** 옵션은 다른 콘솔 세션에서 시작된 애플리케이션에 연결하는 데 사용됩니다.
 
 ```cmd

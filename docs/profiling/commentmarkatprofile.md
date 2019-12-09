@@ -9,14 +9,15 @@ ms.assetid: 04294ca3-bf9c-4c76-86f1-898c2140de27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e67f41bc4e30f0790e672a241dfe478a13ded9b7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 51028dce1d60c0d01c83cee509a1ed7321855437
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407559"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777844"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 `CommentMarkAtProfile` 메서드는 .*vsp* 파일에 타임스탬프 값, 숫자 기호 및 설명 문자열을 삽입합니다. 외부 이벤트를 동기화하는 데 타임스탬프 값을 사용할 수 있습니다. 삽입될 표시 및 주석의 경우 CommentMarkAtProfile 함수가 포함된 스레드에 대한 프로파일링이 ON이어야 합니다.
@@ -56,7 +57,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 |MARK_TEXTTOOLONG|문자열이 최대값인 256자를 초과합니다. 주석 문자열이 잘리고 표시와 주석이 기록됩니다.|
 |MARK_OK|MARK_OK는 성공을 나타내기 위해 반환됩니다.|
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
  표시 및 주석을 Mark 명령 또는 API 함수(CommentMarkAtProfile, CommentMarkProfile 또는 MarkProfile)를 사용하여 삽입한 경우 표시 프로필 함수를 포함하는 스레드의 프로파일링 상태는 ON입니다. 프로필 표시는 범위 내에서 전역입니다. 예를 들어 한 스레드에 삽입된 프로필 표시를 사용하여 .vsp 파일의 스레드에 있는 데이터 세그먼트의 시작이나 끝을 표시할 수 있습니다.
 
 > [!IMPORTANT]
@@ -73,7 +74,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 |**라이브러리**|*VSPerf.lib* 사용|
 |**유니코드**|CommentMarkAtProfileW(유니코드) 및 CommentMarkAtProfileA(ANSI)로 구현됩니다.|
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
  다음 코드는 CommentMarkAtProfile 일반 함수 호출의 사용을 보여 줍니다. 예제에서는 코드에서 ANSI 사용 함수를 호출할지 여부를 결정하도록 Win32 문자열 매크로 및 ANSI에 대한 컴파일러 설정의 사용을 가정합니다.
 
 ```cpp

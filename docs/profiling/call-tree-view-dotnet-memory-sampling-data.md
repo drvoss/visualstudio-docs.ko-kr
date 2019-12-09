@@ -8,14 +8,15 @@ ms.assetid: fbb6cb60-420b-4ca9-8306-2494f7d321fe
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8d05809d7d2c3c0c93044eee4d44603eac2bffec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 76ea78f37cbc8c5e2b6df900aa0e3f320346300a
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62776809"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779768"
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>호출 트리 뷰 - .NET 메모리 샘플링 데이터
 호출 트리 뷰에는 프로파일링 된 애플리케이션에서 이동한 함수 실행 경로가 표시됩니다. 트리의 루트는 애플리케이션 또는 구성 요소에 대한 진입점입니다. 각 함수 노드에는 호출한 모든 함수 및 이러한 함수 호출에 대한 .NET 메모리 할당 데이터가 나열됩니다.
@@ -30,7 +31,7 @@ ms.locfileid: "62776809"
 
  루트 노드를 설정하면 선택한 노드의 하위 트리를 제외한 다른 모든 항목이 뷰에서 제거됩니다. 호출 트리 뷰 창에서 마우스 오른쪽 단추로 클릭하고 **루트 다시 설정**을 선택하여 루트 노드를 보고 있던 노드로 다시 설정할 수 있습니다.
 
-|열|설명|
+|Column|설명|
 |------------|-----------------|
 |**프로세스 ID**|프로파일링 실행의 PID(프로세스 ID)입니다.|
 |**프로세스 이름**|프로세스의 이름입니다.|

@@ -6,14 +6,15 @@ ms.assetid: 1deed23e-b31b-4714-982f-08ceebfc3096
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bc0c1b5245817a8946b1ccbd0fb244b3f0608c6e
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: f5af6b366a1181187c23327449ade8e03e30107f
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189323"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778065"
 ---
 # <a name="use-performance-rules-to-analyze-data"></a>성능 규칙을 사용하여 데이터 분석
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구의 성능 경고는 프로파일링된 애플리케이션에서 프로그램 실행 속도를 저하시킬 수 있는 문제를 나타냅니다. 또한 경고는 보다 유용한 데이터를 수집하기 위해 수집 방법을 변경해야 할 수 있음을 나타낼 수도 있습니다. 성능 경고는 프로파일링 세션에서 자동으로 생성됩니다. 프로파일링 데이터 파일을 Visual Studio에서 열면 **오류 목록** 창에 경고가 표시됩니다. **오류 목록** 창에서 해당 문제의 소스 코드를 찾을 수 있으며 문제를 해결 하는 방법에 대한 정보 등 오류에 대한 자세한 정보를 표시할 수 있습니다. 확인하지 않으려는 경고는 비활성화할 수도 있습니다.

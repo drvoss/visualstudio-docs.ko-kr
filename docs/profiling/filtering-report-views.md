@@ -8,14 +8,15 @@ ms.assetid: 820cf192-7fd6-4bee-9a51-aa69154aca85
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b2f06778de19c16df9d6e43108ecf4daba539c06
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: acdfe8f96d30ad881d8c9c0f0a9ff48c3353afee
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969890"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779248"
 ---
 # <a name="filter-report-views"></a>보고서 뷰 필터링
 프로파일링 데이터 파일에 필터를 적용하여 성능 보고서 뷰에 표시되고 보고서 파일로 내보내는 프로파일링 데이터를 제한할 수 있습니다. 타임스탬프 값 사이의 데이터로 보고서를 제한하고, 특정 프로세스 및 스레드로 데이터를 제한할 수 있습니다. 파일에 필터를 저장한 다음 저장된 필터를 가져와서 다른 프로파일링 데이터 파일에서 필터를 만들 수 있습니다.

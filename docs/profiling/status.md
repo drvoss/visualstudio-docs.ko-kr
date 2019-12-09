@@ -6,16 +6,17 @@ ms.assetid: ba656fa4-ef9d-4d8c-a3b6-739c3b5d23ae
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 25f452dcb473abf87d8992f36f5326973937e85e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bf5e0fdf478e067f61b1d0e259cb1624380e4f02
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967874"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778247"
 ---
-# <a name="status"></a>상태
+# <a name="status"></a>Status
 *VSPerfCmd.exe* **Status** 옵션은 프로파일러의 상태에 대한 정보 및 현재 프로파일링되는 모든 프로세스를 표시합니다.
 
  **Status** 옵션은 명령줄에 지정된 유일한 옵션이어야 합니다. 상태를 표시하려면 먼저 프로파일러가 *VSPerfCmd.exe* **Start** 옵션으로 초기화되어야 합니다.
@@ -29,7 +30,7 @@ VSPerfCmd.exe /Status
 #### <a name="parameters"></a>매개 변수
  없음
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
  **Status** 옵션은 프로파일러에 대한 다음 상태 정보를 표시합니다.
 
  **출력 파일 이름** 현재 프로파일러 데이터 파일의 경로 및 파일 이름입니다.

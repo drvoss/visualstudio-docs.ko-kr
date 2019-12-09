@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: Visual Studio 구독에 포함된 기술 지원 혜택을 활성화하는 방법을 알아봅니다.
-ms.openlocfilehash: f88cf221f47f2b8aa89a733a4794e424ac938261
-ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.openlocfilehash: f7c1353e9f9759b91a7d83d8296a036bb5b80dd7
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74161973"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706992"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 기술 지원 혜택 활성화 및 사용
 Visual Studio 구독의 기술 지원 혜택은 [지원 수명 주기](https://support.microsoft.com/lifecycle/search)의 기본 지원 단계에 여전히 있는 제품에 대해 **비-프로덕션 환경**의 중단 수정 문제 해결을 위한 것입니다. Visual Studio Enterprise 표준 및 연간 클라우드 구독은 네 개의 인시던트를 받고, Visual Studio Professional 표준 및 연간 클라우드 구독은 혜택 활성화 후 최대 1년 간 두 개의 인시던트를 받습니다. 혜택 활성화는 구독이 최신 상태인 동안 발생해야 합니다.
@@ -54,7 +54,7 @@ Visual Studio 구독에서 다운로드한 비 개발자 제품(예: SQL, Window
 > 지원 계정을 영어가 아닌 다른 언어로 활성화하려면 [이 목록](https://support.microsoft.com/help/14084/activate-support-contract)에서 국가를 선택합니다.
 
 ## <a name="how-to-submit-an-incident-using-your-benefit"></a>혜택을 사용하여 인시던트를 제출하는 방법
-**계약 ID**와 **액세스 ID**가 설정되었으면 이를 사용하여 기술 지원 인스턴트 [온라인](http://support.microsoft.com/oas/)(로그인 필요)이나 [Azure Portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)을 통해 또는 국가의 기술 지원 번호로 전화를 걸어 제출할 수 있습니다. 온라인으로 인시던트를 제출하는 경우 Microsoft 지원 전문가를 다시 호출할 수 있는 옵션이 있습니다.
+**계약 ID**와 **액세스 ID**가 설정되었으면 이를 사용하여 기술 지원 인스턴트 [온라인](https://support.microsoft.com/oas/)(로그인 필요)이나 [Azure Portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)을 통해 또는 국가의 기술 지원 번호로 전화를 걸어 제출할 수 있습니다. 온라인으로 인시던트를 제출하는 경우 Microsoft 지원 전문가를 다시 호출할 수 있는 옵션이 있습니다.
 
 ### <a name="already-have-your-contract-id-and-access-id-associated-with-the-account-used-to-sign-in-to-submit-a-tech-support-incident-online"></a>기술 지원 인시던트를 제출하기 위해 로그인하는 데 사용된 계정과 연결된 계약 ID 및 액세스 ID를 이미 가지고 있나요?
 온라인으로 인시던트를 제출할 때 먼저 로그인하라는 메시지가 나타납니다. 알고 있는 계정으로 로그인하면 계약 ID와 액세스 ID가 연결됩니다. 계정에 연결된 기존 지원 플랜 혜택은 지원 워크플로의 3단계에 나타납니다. 해당 계획을 선택하고 사례를 제출하려면 계속하기만 하면 됩니다. 계획에 표시된 한도 또는 계획의 만료일 중 먼저 도래하는 날짜까지 인시던트를 제출할 수 있습니다. 나머지 인시던트가 "0"으로 표시되거나 계획이 만료되면 더 이상 활성화되지 않습니다.

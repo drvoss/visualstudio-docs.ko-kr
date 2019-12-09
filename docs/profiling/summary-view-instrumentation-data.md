@@ -8,14 +8,15 @@ ms.assetid: 0a3b3a1f-e22b-4ac8-b46e-71694e9b2cf1
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 91d53eef12c1c2dc59d8c442a040f721af75e7b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f52f80cad4ce7678a832a7b76a75d8f2fd4460e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557052"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778221"
 ---
 # <a name="summary-view---instrumentation-data"></a>요약 뷰 - 계측 데이터
 요약 뷰에는 프로파일링 실행에서 성능상 가장 많은 비용이 소요된 함수에 대한 정보가 표시됩니다. 알림 링크 및 보고서 목록에 대한 설명을 비롯한 자세한 내용은 [요약 뷰](../profiling/summary-view.md)를 참조하세요.
@@ -28,7 +29,7 @@ ms.locfileid: "62557052"
 
  **실행 부하 과다 경로**에는 각 함수에 대해 다음 데이터가 표시됩니다.
 
-|열|설명|
+|Column|설명|
 |------------|-----------------|
 |**이름**|함수의 이름.|
 |**경과된 포괄 시간 %**|함수가 함수 본문과 자신이 호출한 함수의 코드를 실행하는 데 소요된 프로파일링 데이터 내 모든 시간의 백분율입니다.|
@@ -39,7 +40,7 @@ ms.locfileid: "62557052"
 
  **개별 작업이 가장 많은 함수**에는 각 함수에 대해 다음 데이터가 포함됩니다.
 
-|열|설명|
+|Column|설명|
 |------------|-----------------|
 |**이름**|함수의 이름.|
 |**전용 시간 비율(%)**|함수가 함수 본문의 코드를 실행하는 데 소요된 프로파일링 데이터 내 모든 시간의 백분율입니다. 해당 함수가 호출한 함수에서 소요된 시간은 포함되지 않습니다.|

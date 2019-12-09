@@ -10,14 +10,15 @@ ms.assetid: 874c3b1c-88d8-479a-bb35-1291d9aa8e67
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 76adb2a5355800889939afd41075c261270b02aa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 679fd9fd039fa903f5df5a479fa4f0e119bb7a9c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968057"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778169"
 ---
 # <a name="thread-details-view---contention-data"></a>스레드 정보 뷰 - 경합 데이터
 스레드 정보 뷰에는 리소스 간의 경합으로 인해 프로파일링 실행의 선택한 스레드에서 발생한 차단 이벤트의 시간 표시 막대 그래프가 표시됩니다. 다른 스레드가 리소스에 대한 액세스를 잠가 스레드가 실행을 일시 중단해야 했던 경우 차단 이벤트가 발생합니다.

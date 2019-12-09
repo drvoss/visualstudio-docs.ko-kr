@@ -8,14 +8,15 @@ ms.assetid: 46497249-c797-42c5-a02c-3e4bb3b4ee60
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ed2c552baa07bf0f3d2a395cbdfbf1d5346178c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: ff4d851937111400002de531696b9b69aec20ba9
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435610"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778585"
 ---
 # <a name="lines-view---sampling-data"></a>줄 뷰 - 샘플링 데이터
 샘플링 데이터의 줄 뷰에는 프로파일링 실행 시 샘플이 수집될 때 실행되고 있던 문에 대한 성능 데이터가 표시됩니다.
@@ -41,7 +42,7 @@ ms.locfileid: "63435610"
 
   정의에 따라 문은 다른 함수를 호출하지 않습니다. 따라서 전용 값만 나열됩니다.
 
-|열|설명|
+|Column|설명|
 |------------|-----------------|
 |**프로세스 ID**|프로파일링 실행의 PID(프로세스 ID)입니다.|
 |**프로세스 이름**|프로세스의 이름입니다.|
@@ -55,7 +56,7 @@ ms.locfileid: "63435610"
 |**소스 줄 끝**|소스 파일에서 이 샘플이 수집된 끝 줄 번호입니다.|
 |**소스 문자 시작**|소스 파일 줄에서 이 샘플이 수집된 시작 문자의 오프셋입니다.|
 |**소스 문자 끝**|소스 파일 줄에서 이 샘플이 수집된 끝 문자의 오프셋입니다.|
-|**줄 이름**|프로파일러에서 생성된 줄 식별자로 다음 구문을 사용합니다. `Source File`**;[**`Line Number Start`**,**`Character Start`**]->;[**`Line Number End`**,**`Character End`**]**|
+|**줄 이름**|프로파일러에서 생성된 줄 식별자로 다음 구문을 사용합니다. `Source File` **;[** `Line Number Start` **,** `Character Start` **]->;[** `Line Number End` **,** `Character End` **]**|
 |**전용 샘플**|함수 줄이 실행될 때 수집된 샘플의 총 수입니다.|
 |**전용 샘플 비율(%)**|프로파일링 실행 시 함수 줄이 실행될 때 수집된 모든 샘플의 백분율입니다.|
 

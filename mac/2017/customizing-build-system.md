@@ -1,16 +1,16 @@
 ---
 title: 빌드 시스템 사용자 지정
 description: 이 아티클에서는 Mac용 Visual Studio에서 사용하는 MSBuild 빌드 시스템을 간략히 소개합니다.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 0c2a4590b15faa2573ccab3ff51ff5cd54e177ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 97416ef126ee77f9955d8fa486d7bb7e2ceb725e
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62932828"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983441"
 ---
 # <a name="customizing-the-build-system"></a>빌드 시스템 사용자 지정
 
@@ -54,7 +54,7 @@ Mac용 Visual Studio의 새 탭에서 `.csproj`를 표시하려면 프로젝트 
 
 ### <a name="items-and-properties"></a>항목 및 속성
 
-MSBuild에는 두 가지 기본적인 데이터 형식인 ‘항목’ 및 ‘속성’이 있습니다. 두 데이터 형식은 다음 섹션에서 자세히 설명합니다.
+MSBuild에는 두 가지 기본적인 데이터 형식인 ‘항목’ 및 ‘속성’이 있습니다. 두 데이터 형식은 다음 섹션에서 자세히 설명합니다.  
 
 #### <a name="properties"></a>속성
 

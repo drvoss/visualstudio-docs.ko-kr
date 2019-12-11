@@ -1,16 +1,16 @@
 ---
 title: Visual Studio 사용자 환경 개선 프로그램
 description: Mac용 Visual Studio에서 개인 정보 설정을 관리하는 방법을 알아봅니다.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/22/2018
 ms.assetid: 6F2ECF5A-E195-4890-8399-12A88C7D62FD
-ms.openlocfilehash: ba9257acf5c9d68aad5bbbab9ee6cec41f8e77d9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5e8fa7f740275f416f80827276d74be1f05b0e21
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62986545"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984740"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio 사용자 환경 개선 프로그램
 

@@ -8,14 +8,14 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4da08c2a7fed28b7f4ca75770682673bf58e30c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3af6d0b7b9f211fb9d0aa0a4b9a96b618081b89e
+ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951076"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74853518"
 ---
-# <a name="overview-suggest-a-feature"></a>개요: 기능 제안
+# <a name="suggest-a-feature-for-visual-studio"></a>Visual Studio에 대한 기능 제안
 
 [Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com)에서는 문제를 보고하는 현재 기능과 더불어 기능을 제안하기 위한 새로운 환경이 도입되었습니다. 이는 Visual Studio의 엔지니어링 워크플로에 직접 참여할 수 있는 새로운 방법입니다.
 

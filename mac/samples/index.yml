@@ -3,8 +3,8 @@ documentType: LandingData
 title: Mac용 Visual Studio 샘플
 metadata:
   description: Mac용 Visual Studio에서 작동하는 샘플 앱입니다.
-  author: asb3993
-  ms.author: amburns
+  author: heiligerdankgesang
+  ms.author: dominicn
   ms.date: 07/31/2019
   ms.topic: sample
 abstract:

@@ -1,17 +1,17 @@
 ---
 title: JavaScript 및 TypeScript
 description: Mac용 Visual Studio의 JavaScript에 대한 지원 정보
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
-ms.openlocfilehash: 7839b3ed777de134bea835c94c428166ea4430f4
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.openlocfilehash: cc10cd6125dc19571424358fd1ce9de46f7d86c5
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70107848"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984906"
 ---
 # <a name="javascript-and-typescript-support"></a>JavaScript 및 TypeScript 지원
 

@@ -1,18 +1,18 @@
 ---
 title: 코드 주석 처리
 description: 이 문서에서는 Mac용 Visual Studio 소스 편집기에서의 주석 사용에 대해 설명합니다.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 0FE5E929-1846-4F48-B5E3-70990FAF9504
-ms.openlocfilehash: 1f792e5ba670854e4a3a9ce703212d18c16e5512
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 038c2bf7205ccc642d613893635b9323afe613b9
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62933016"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74982641"
 ---
-# <a name="comments"></a>설명
+# <a name="comments"></a>주석
 
 코드로 디버깅하거나 실험하는 경우 일시적 또는 장기적으로 코드 블록을 주석으로 처리하는 것이 유용할 수 있습니다.
 

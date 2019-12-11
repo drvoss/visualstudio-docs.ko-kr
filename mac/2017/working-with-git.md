@@ -1,17 +1,17 @@
 ---
 title: Git 작업
 description: Mac용 Visual Studio에서 Git 사용
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: 2d18ef3d693c3906c1312cfecb8da605c6a27226
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 33148c5202251525504864f26177da4497b5fabe
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692975"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983561"
 ---
 # <a name="working-with-git"></a>Git 작업
 

@@ -3,15 +3,15 @@ title: 방화벽 또는 프록시 서버 뒤에 Mac용 Visual Studio 설치 및 
 description: 이 문서에서는 Mac용 Visual Studio(및 Xamarin을 포함하는 해당 워크로드)가 회사 환경에서 작동할 수 있도록 방화벽에서 허용해야 하는 호스트 목록을 제공합니다.
 ms.topic: troubleshooting
 ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 09/18/2019
-ms.openlocfilehash: 3c5fce37b7cb26ef9aeceaba700e72e79e809d7d
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 717eb9cd58f213c3d2c31a18c546a83ab8feb645
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71213642"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984034"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>방화벽 또는 프록시 서버 뒤에 Mac용 Visual Studio 설치 및 사용
 
@@ -27,7 +27,7 @@ Mac용 Visual Studio 설치 관리자는 다양한 도메인 및 다운로드 �
 
 ### <a name="microsoft-domains"></a>Microsoft 도메인
 
-| 도메인| 목적 |
+| 도메인| 용도 |
 | ----------------------------------- |---------------------------|
 | *.live.com| 자격 증명 관리 |
 | app.vssps.visualstudio.com| 설치 관리자 메타데이터|
@@ -44,7 +44,7 @@ Mac용 Visual Studio 설치 관리자는 다양한 도메인 및 다운로드 �
 
 ### <a name="third-party-domains"></a>타사 도메인
 
-| 도메인| 목적 |
+| 도메인| 용도 |
 | --------------------------|-------------------------|
 | dl.google.com | Android SDK |
 | download.oracle.com | Java SDK|
@@ -56,7 +56,7 @@ Mac용 Visual Studio 설치 관리자는 다양한 도메인 및 다운로드 �
 
 ### <a name="general"></a>일반
 
-| 도메인 | 포트|목적|
+| 도메인 | 포트|용도|
 | ----------------------|------------------|------------------|
 | go.microsoft.com | 80/443|Microsoft URL 확인 |
 | vsstartpage.blob.core.windows.net| 80/443| 시작 페이지 데이터|
@@ -65,9 +65,9 @@ Mac용 Visual Studio 설치 관리자는 다양한 도메인 및 다운로드 �
 | visualstudio-devdiv-c2s.msedge.net | 80/443| 실험적 기능 및 알림 |
 | targetednotifications.azurewebsites.net|  80/443| 전체 알림 목록을 특정 유형의 컴퓨터/사용 시나리오에만 적용 가능한 목록으로 필터링하는 데 사용됩니다.|
 
-### <a name="identity"></a>ID
+### <a name="identity"></a>클레임
 
-| 도메인 | 포트|목적|
+| 도메인 | 포트|용도|
 | ----------------------|------------------|------------------|
 | login.microsoftonline.com | 80/443| ID 공급자|
 | secure.aadcdn.microsoftonline-p.com | 80/443|ID 공급자|
@@ -76,14 +76,14 @@ Mac용 Visual Studio 설치 관리자는 다양한 도메인 및 다운로드 �
 
 ### <a name="nuget"></a>NuGet
 
-| 도메인 | 포트|목적|
+| 도메인 | 포트|용도|
 | ----------------------|------------------|------------------|
 | api.nuget.org | 80/443|NuGet API|
 | secure.aadcdn.microsoftonline-p.com |80/443| ID 공급자|
 
 ### <a name="android-projects"></a>Android 프로젝트
 
-| 도메인| 목적|
+| 도메인| 용도|
 | ------------------------------------|------------------------------------|
 | time.android.com| Android Emulator의 시간 서버 |
 | connectivitycheck.gstatic.com | Android Emulator의 연결|

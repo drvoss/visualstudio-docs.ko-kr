@@ -46,6 +46,8 @@
           href: using-breakpoints.md
         - name: 중단점 문제 해결
           href: troubleshooting-breakpoints.md
+        - name: 'C# 데이터 중단점 문제 해결'
+          href: troubleshoot-data-breakpoint-errors.md
     - name: 데이터 검사
       items:
         - name: 디버거 창에서 데이터 검사

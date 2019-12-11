@@ -1,16 +1,16 @@
 ---
 title: 편집기 테마
 description: 이 문서에서는 Mac용 Visual Studio에서 편집기 테마를 편집하거나 자체 테마를 추가하는 방법에 대해 설명합니다.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 11/06/2018
 ms.assetid: 4C1B7952-CD45-4132-AD6B-01CF993D83F8
-ms.openlocfilehash: 0b9b9ba5697b68aab87133d05a8f8112decb3b09
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6aa4868f5e9c5fbaa4fb58258c70ce672edf2e30
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998409"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984824"
 ---
 # <a name="editor-themes"></a>편집기 테마
 

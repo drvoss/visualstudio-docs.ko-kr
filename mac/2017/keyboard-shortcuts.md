@@ -3,14 +3,14 @@ title: 기본 바로 가기 키
 description: 이 문서에는 Mac용 Visual Studio의 기본 바로 가기 키가 나열되어 있습니다.
 ms.date: 03/14/2019
 author: bytesguy
-ms.author: crdun
+ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 371f1e93405d3034bda4259831cee27c6f52a40c
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: c0d51c0b458a1d4079eb935d40b09c260cf01186
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872238"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983634"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Mac용 Visual Studio의 기본 바로 가기 키
 
@@ -32,7 +32,7 @@ ms.locfileid: "68872238"
 |이전 오류|**⌥⇧⇞**|
 |파일의 이전 문제|**⌥⇞**|
 
-## <a name="debug"></a>디버그
+## <a name="debug"></a>Debug
 
 |명령|바로 가기 키|
 |-|-|
@@ -253,7 +253,7 @@ ms.locfileid: "68872238"
 
 ## <a name="macos-key-symbols-lookup"></a>macOS 키 기호 조회
 
-|기호|키|
+|Symbol|Key|
 |-|-|
 |⌘|**명령**(**cmd**)|
 |⌥|**옵션**(**alt**)|

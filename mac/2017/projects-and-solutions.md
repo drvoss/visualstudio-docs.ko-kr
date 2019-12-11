@@ -1,16 +1,16 @@
 ---
 title: 프로젝트 및 솔루션
 description: 이 문서에서는 Mac용 Visual Studio의 프로젝트 및 솔루션에 대한 개요를 제공합니다.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
-ms.openlocfilehash: 6ae37b7256b1cefe2bfbd2174135b013b1aa37cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d0cf61c94161e6d6bef6cd580e5fb342a177c1c4
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62987998"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983515"
 ---
 # <a name="projects-and-solutions"></a>프로젝트 및 솔루션
 

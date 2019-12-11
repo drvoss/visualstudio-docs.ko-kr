@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 79570fe403c12c89860a67683456a3d6ca3d3f01
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: de26054894783df283d38223a59741c0500d0bc5
+ms.sourcegitcommit: 0a8855572c6c88f4b2ece232c04aa124fbd9cec3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189608"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955038"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017의 새로운 기능
 
@@ -389,6 +389,6 @@ Visual Studio를 개선하는 방법을 제안하거나 제품 지원 옵션에 
 * [Visual Studio 2017 SDK의 새로운 기능](../extensibility/what-s-new-in-the-visual-studio-2017-sdk.md)
 * [Visual C++의 새로운 기능](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [C#의 새로운 기능](/dotnet/csharp/whats-new)
-* [Team Foundation Server의 새로운 기능](/tfs/server/whats-new?view=vsts)
+* [Team Foundation Server의 새로운 기능](/azure/devops/server/whats-new)
 * [Mac용 Visual Studio의 새로운 기능](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
 * [Visual Studio 2019의 새로운 기능](whats-new-visual-studio-2019.md)

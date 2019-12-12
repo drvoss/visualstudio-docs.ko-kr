@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 9606b02cb26e8e0ad37f490e330e7d81f3089e27
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 684cd4762eed38d947d76655bd9632fc10d0aacd
+ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189004"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74830000"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>자습서: Visual Studio에서 Visual Basic 시작
 
@@ -132,6 +132,8 @@ VB(Visual Basic)에 대한 이 자습서에서는 Visual Studio를 사용하여 
 
    ![What Is Your Name 코드를 표시하는 코드 창](./media/vs-2019/vb-codewindow-what-name-dark.png)
 
+1. 녹색 **시작** 단추를 사용하거나 **F5**를 눌러 첫 번째 앱을 빌드하고 실행합니다.
+
 1. 콘솔 창이 열리면 자신의 이름을 입력합니다. 콘솔 창이 다음 스크린샷과 유사하게 표시될 것입니다.
 
    ![What Is Your Name, 날짜 및 시간, Press any key to continue message를 표시하는 콘솔 창](media/vb-console-what-name.png)
@@ -156,6 +158,8 @@ VB(Visual Basic)에 대한 이 자습서에서는 Visual Studio를 사용하여 
     이 코드는 기존 <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A> 및 <xref:System.Console.ReadKey%2A> 문을 대체합니다.
 
    ![What Is Your Name 코드를 표시하는 코드 창](./media/vs-2019/vb-codewindow-what-name-dark.png)
+
+1. 녹색 **시작** 단추를 사용하거나 **F5**를 눌러 첫 번째 앱을 빌드하고 실행합니다.
 
 1. 콘솔 창이 열리면 자신의 이름을 입력합니다. 콘솔 창이 다음 스크린샷과 유사하게 표시될 것입니다.
 

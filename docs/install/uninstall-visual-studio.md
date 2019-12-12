@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9e9212bc5dda2ea69f685077eb2cbe86470d4064
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: d15a20adeb3203687e4d940635551c33774953a5
+ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681361"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74809670"
 ---
 # <a name="uninstall-visual-studio"></a>Visual Studio 제거
 
@@ -36,7 +36,7 @@ ms.locfileid: "68681361"
 
      예를 들어 Windows 10의 1주년 업데이트 이상을 실행하는 컴퓨터에서 **시작**을 선택하고 **V** 문자로 스크롤하면 **Visual Studio 설치 관리자**로 나열됩니다.
 
-     ![Visual Studio 설치 관리자](media/vs2017-locate-the-visual-studio-installer.PNG "Microsoft Visual Studio 설치 관리자 찾기")
+     ![Visual Studio 설치 관리자](media/locate-the-visual-studio-installer.png "Microsoft Visual Studio 설치 관리자 찾기")
 
    > [!NOTE]
    > 일부 컴퓨터에서는 Visual Studio 설치 관리자가 **Microsoft Visual Studio 설치 관리자**로 문자 **“M”** 아래에 나열될 수 있습니다.<br/><br/> 또는 다음 위치에서 Visual Studio 설치 관리자를 찾을 수 있습니다.`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
@@ -82,7 +82,7 @@ ms.locfileid: "68681361"
 
 1. **확인**을 클릭하여 선택을 확인합니다.
 
-     ![Visual Studio 제거 확인](media/vs-2019/uninstall-visualstudio-confirm.png "Visual Studio 2019를 제거할 것인지 확인")
+     ![Visual Studio 확인 제거](media/vs-2019/uninstall-visualstudio-confirm.png "Visual Studio 2019를 제거할 것인지 확인")
 
 나중에 마음이 바뀌어 Visual Studio 2019를 다시 설치하려면 Visual Studio 설치 관리자를 다시 시작하여 **사용 가능** 탭을 선택하고 설치할 Visual Studio 버전을 선택한 다음, **설치**를 선택합니다.
 

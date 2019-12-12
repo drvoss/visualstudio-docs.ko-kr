@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: eb4282941af9dff8619cb15510399b2e37e0c718
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 975b9ca88a775e08b97cccf1d1580a96ac4d9d65
+ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74777917"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74810117"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019의 새로운 기능
 
@@ -33,9 +33,9 @@ Visual Studio 2019를 사용하면 모든 개발자, 앱 및 플랫폼을 위한
 
 다음은 새로운 기능에 대한 간략한 요약입니다.
 
-* **[개발](#develop)** : 향상된 성능, 인스턴트 코드 정리, 더 나은 검색 결과를 사용하여 계속 집중하고 생산성을 유지합니다.
-* **[공동 작업](#collaborate)** : Git 우선 워크플로, 실시간 편집 및 디버깅, Visual Studio에서 바로 코드 검토를 사용하여 자연스럽게 협업합니다.
-* **[디버그](#debug)** : 특정 값을 강조 표시하여 탐색하고, 메모리 사용을 최적화하며, 애플리케이션 실행의 자동 스냅샷을 만듭니다.
+* **[개발](#develop)**: 향상된 성능, 인스턴트 코드 정리, 더 나은 검색 결과를 사용하여 계속 집중하고 생산성을 유지합니다.
+* **[공동 작업](#collaborate)**: Git 우선 워크플로, 실시간 편집 및 디버깅, Visual Studio에서 바로 코드 검토를 사용하여 자연스럽게 협업합니다.
+* **[디버그](#debug)**: 특정 값을 강조 표시하여 탐색하고, 메모리 사용을 최적화하며, 애플리케이션 실행의 자동 스냅샷을 만듭니다.
 
 이 버전에 포함된 모든 새로운 기능의 전체 목록은 [릴리스 정보](/visualstudio/releases/2019/release-notes/)를 참조하세요.
 
@@ -198,7 +198,7 @@ Azure VM에서 실행되는 ASP.NET(Core 및 데스크톱) 애플리케이션을
 
 ### <a name="pinnable-properties-tool"></a>고정 가능한 속성 도구
 
-**16.4의 새로운 기능**: 이제 새 고정 가능한 속성 도구를 사용하여 디버그하는 동안 해당 속성으로 개체를 더 쉽게 식별할 수 있습니다. [조사식], [자동] 및 [로컬] 창의 디버거 창에 표시하려는 속성 위에 커서를 놓고 고정 아이콘을 클릭하면 창의 맨 위에 찾고 있는 정보가 즉시 표시됩니다.
+**16.4의 새로운 기능**: 이제 새 고정 가능한 속성 도구를 사용하여 디버깅하는 동안 해당 속성으로 개체를 더 쉽게 식별할 수 있습니다. [조사식], [자동] 및 [로컬] 창의 디버거 창에 표시하려는 속성 위에 커서를 놓고 고정 아이콘을 선택하면 창의 맨 위에서 원하는 정보를 즉시 볼 수 있습니다!
 
    ![고정 가능한 속성 도구를 사용하여 Visual Studio 디버거에서 속성을 고정하는 방법을 보여 주는 애니메이션](media/vs-2019/debugger-pinnable-properties.gif)
 

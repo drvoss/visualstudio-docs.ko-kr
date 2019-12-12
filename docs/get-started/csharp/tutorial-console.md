@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: bef87392ca9e08e38950f5e3eed53223dd38bd00
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 740968740306bed4c2cf52191c4ff661b6247bd0
+ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180248"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74830002"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>자습서: Visual Studio에서 간단한 C# 콘솔 앱 만들기
 
@@ -46,7 +46,7 @@ C#에 대한 이 자습서에서는 Visual Studio를 사용해서 콘솔 앱을 
 
 1. Visual Studio 2017을 엽니다.
 
-2. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례로 선택합니다.
+2. 메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례대로 선택합니다.
    (또는 **Ctrl**+**Shift**+**N**을 누릅니다).
 
 3. **새 프로젝트** 대화 상자의 왼쪽 창에서 **C#** 을 확장한 다음, **.NET Core**를 선택합니다. 가운데 창에서 **콘솔 앱(.NET Core)** 을 선택합니다. 그런 다음, 파일 이름을 ***Calculator***로 지정합니다.
@@ -136,7 +136,7 @@ C#의 몇 가지 기본 정수 수식부터 살펴보겠습니다.
 
     ![Visual Studio IDE에서 IntelliSense 자동 완성 기능을 보여주는 정수 수식 코드의 애니메이션](./media/integer-math-intellisense.gif)
 
-1. 프로그램을 실행할 **계산기**를 선택하거나 **F5** 키를 누릅니다.
+1. **계산기** 옆의 녹색 **시작** 단추를 선택하여 프로그램을 빌드하고 실행하거나 **F5**를 누릅니다.
 
    ![계산기 단추를 선택하여 도구 모음에서 앱을 실행합니다.](./media/csharp-console-calculator-button.png)
 

@@ -2,15 +2,15 @@
 title: 연결된 서비스
 description: Mac용 Visual Studio 내에서 모바일 앱에 Azure 데이터 스토리지, 인증 및 푸시 알림 추가
 ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 11/06/2018
-ms.openlocfilehash: 7f3cf8ce9e82310a8fe2f6ab9542d3d575a30f5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 241820de009a5118869583bbe228ecb0604f9001
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62932044"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985295"
 ---
 # <a name="connected-services-walkthrough"></a>연결된 서비스 연습
 
@@ -21,7 +21,7 @@ ms.locfileid: "62932044"
 1. 솔루션에서 **연결된 서비스** 노드를 두 번 클릭하여 시작하면 **서비스 갤러리**가 표시됩니다.
   애플리케이션 유형에 대한 모든 사용 가능한 서비스 목록입니다. 서비스(예: **Azure App Service를 사용한 모바일 백 엔드**)를 클릭하여 선택합니다.
 
-    [![Mac용 Visual Studio에서 연결된 서비스 노드](media/connected-services-image001-sml.png "Mac용 Visual Studio에서 연결된 서비스 노드")](media/connected-services-image001.png#lightbox)
+    [![Mac용 Visual Studio에서 연결된 Services 노드](media/connected-services-image001-sml.png "Mac용 Visual Studio에서 연결된 Services 노드")](media/connected-services-image001.png#lightbox)
 
 2. 서비스 세부 정보 페이지에서는 설치될 서비스 및 종속성에 대해 설명합니다.
   **추가** 단추를 클릭하여 앱에 종속성을 추가합니다.
@@ -36,7 +36,7 @@ ms.locfileid: "62932044"
 4. NuGet 패키지용 **라이선스 승인** 대화 상자에서 **동의**를 선택합니다.
   MobileClient 및 종속성을 위한 대화 상자 및 오프라인 데이터 동기화에 필요한 SQLiteStore를 위한 대화 상자 등 동의를 위한 대화 상자는 두 개가 있을 수 있습니다.
 
-    [![사용권 계약에 동의](media/connected-services-image004-sml.png "사용권 계약에 동의")](media/connected-services-image004.png#lightbox)
+    [![라이선스 계약에 동의](media/connected-services-image004-sml.png "라이선스 계약에 동의")](media/connected-services-image004.png#lightbox)
 
     ![라이선스 승인 창](media/connected-services-image005.png "라이선스 승인 창")
 
@@ -52,7 +52,7 @@ ms.locfileid: "62932044"
 7. `MobileServiceClient`에 대한 템플릿 코드를 PCL로 복사합니다. 파일 위치의 인스턴스가 하나만 있는 경우 파일 위치는 중요하지 않습니다.
   권장하는 방법은 `MobileServiceClient`를 사용하고 모든 Azure 상호 작용을 처리하는 `AzureService` 클래스를 만드는 것입니다.
 
-    ![구성 코드 앱에 복사](media/connected-services-image007.png "구성 코드 앱에 복사")
+    ![구성 코드를 앱에 복사](media/connected-services-image007.png "구성 코드를 앱에 복사")
 
 8. **다음 단계**의 설명서에 따라 데이터, 오프라인 동기화, 인증 및 푸시 알림을 앱에 추가합니다.
 

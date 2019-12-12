@@ -5,19 +5,19 @@ description: 날짜별로 정렬된 Visual Studio의 릴리스 버전 및 빌드
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 12/03/2019
+ms.date: 12/10/2019
 ms.topic: reference
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1520f5f74ea28850d615b93f37278c4cda090988
-ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.openlocfilehash: 752e1a73686a5932682642555089988f49c0eb1a
+ms.sourcegitcommit: 2485f597d909e8176622af25678bc3764fcd860c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74797225"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000266"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 빌드 번호 및 릴리스 날짜
 
@@ -29,6 +29,8 @@ ms.locfileid: "74797225"
 
 | **Version**| **채널** | **릴리스 날짜** | **빌드 버전** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.4.1 | Release | 2019년 12월 10일 | 16.4.29609.76 |
+| 16.0.10 | Release | 2019년 12월 10일 | 16.0.28803.631 |
 | 16.5.0 | 미리 보기 1 | 2019년 12월 3일 | 16.5.29521.150 |
 | 16.4.0 | Release | 2019년 12월 3일 | 16.4.29519.181 |
 | 16.4.0 | 미리 보기 6 | 2019년 11월 21일 | 16.4.29519.161 |
@@ -116,6 +118,7 @@ ms.locfileid: "74797225"
 
 | **Version**| **채널** | **릴리스 날짜** | **빌드 버전** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.18 | Release | 2019년 12월 10일 | 15.9.28307.960 |
 | 15.9.17 | Release | 2019년 10월 15일 | 15.9.28307.905 |
 | 15.9.16 | Release | 2019년 9월 10일 | 15.9.28307.858 |
 | 15.0.27 | Release | 2019년 9월 10일 | 15.0.26228.98 |

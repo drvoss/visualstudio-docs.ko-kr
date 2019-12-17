@@ -215,7 +215,7 @@ void CPerson::AssertValid() const
 #endif
 ```
 
-멤버 변수에 개체를 저장 하는 경우 `ASSERT_VALID` 매크로를 사용 하 여 해당 클래스가 `AssertValid`를 재정의 하는 경우 내부 유효성을 테스트할 수 있습니다.
+멤버 변수에 개체를 저장하는 경우 `ASSERT_VALID` 매크로를 사용하여 해당 클래스가 `AssertValid`를 재정의하는 경우 내부 유효성을 테스트할 수 있습니다.
 
 예를 들어 [CObList](/cpp/mfc/reference/coblist-class) 를 해당 멤버 변수 중 하나에 저장 하는 클래스 `CMyData`를 생각해 보겠습니다. `CObList` 변수 `m_DataList`는 `CPerson` 개체의 컬렉션을 저장 합니다. `CMyData`의 약식 선언은 다음과 같습니다.
 
@@ -250,25 +250,25 @@ void CMyData::AssertValid( ) const
 #endif
 ```
 
-`CMyData`는 `AssertValid` 메커니즘을 사용 하 여 데이터 멤버에 저장 된 개체의 유효성을 테스트 합니다. `CMyData`의 재정의 `AssertValid`는 자체 m_pDataList 멤버 변수에 대해 `ASSERT_VALID` 매크로를 호출 합니다.
+`CMyData`는 `AssertValid` 메커니즘을 사용하여 데이터 멤버에 저장된 개체의 유효성을 테스트합니다. `CMyData`의 재정의 `AssertValid`는 자체 m_pDataList 멤버 변수에 대해 `ASSERT_VALID` 매크로를 호출 합니다.
 
-클래스 `CObList`도 `AssertValid`를 재정의 하므로 유효성 테스트는이 수준에서 중지 되지 않습니다. 이 재정의는 목록의 내부 상태에서 추가 유효성 테스트를 수행 합니다. 따라서 `CMyData` 개체에 대 한 유효성 테스트는 저장 된 `CObList` 목록 개체의 내부 상태에 대 한 추가 유효성 테스트를 발생 시킵니다.
+클래스 `CObList`도 `AssertValid`를 재정의하므로 유효성 테스트는 이 수준에서 중지되지 않습니다. 이 재정의는 목록의 내부 상태에서 추가 유효성 테스트를 수행합니다. 따라서 `CMyData` 개체에 대한 유효성 테스트는 저장된 `CObList` 목록 개체의 내부 상태에 대한 추가 유효성 테스트를 발생시킵니다.
 
-몇 가지 추가 작업을 통해 목록에 저장 된 `CPerson` 개체에 대 한 유효성 테스트를 추가할 수도 있습니다. `CObList`에서 `CPersonList` 클래스를 파생 시키고 `AssertValid`를 재정의할 수 있습니다. 재정의에서 `CObject::AssertValid`를 호출한 다음 목록 전체를 반복 하 여 목록에 저장 된 각 `CPerson` 개체의 `AssertValid`를 호출 합니다. 이 항목의 시작 부분에 표시 된 `CPerson` 클래스는 이미 `AssertValid`를 재정의 합니다.
+몇 가지 추가 작업을 통해 목록에 저장된 `CPerson` 개체에 대한 유효성 테스트를 추가할 수도 있습니다. `CObList`에서 `CPersonList` 클래스를 파생 시키고 `AssertValid`를 재정의할 수 있습니다. 재정의에서 `CObject::AssertValid`를 호출한 다음 목록 전체를 반복 하 여 목록에 저장 된 각 `CPerson` 개체의 `AssertValid`를 호출 합니다. 이 항목의 시작 부분에 표시된 `CPerson` 클래스는 이미 `AssertValid`를 재정의합니다.
 
 이는 디버깅을 위해 빌드할 때 강력한 메커니즘입니다. 이후에 릴리스를 빌드할 때 메커니즘이 자동으로 꺼집니다.
 
 ### <a name="BKMK_Limitations_of_AssertValid"></a>AssertValid의 제한 사항
-트리거된 어설션은 개체가 명확 하 고 실행이 중지 됨을 나타냅니다. 그러나 어설션이 없으면 문제가 발견 되지 않은 것을 나타내지만 개체가 양호 하지 않을 수 있습니다.
+트리거된 어설션은 개체가 명확히 잘못되었음을, 그리고 실행이 중지될 것임을 나타냅니다. 그러나 어설션이 없다는 것은 발견된 문제가 없음을 나타내지만 개체는 양호하지 않을 수 있습니다.
 
 [항목 내용](#BKMK_In_this_topic)
 
 ## <a name="BKMK_Using_assertions"></a>어설션 사용
 
 ### <a name="BKMK_Catching_logic_errors"></a>논리 오류 catch
-프로그램의 논리에 따라 true 여야 하는 조건에 대 한 어설션을 설정할 수 있습니다. 논리 오류가 발생 하지 않으면 어설션이 적용 되지 않습니다.
+프로그램의 논리에 따라 true여야 하는 조건에 대한 어설션을 설정할 수 있습니다. 논리 오류가 발생하지 않으면 어설션이 적용되지 않습니다.
 
-예를 들어, 컨테이너에서 가스 molecules를 시뮬레이션 하 고 `numMols` 변수는 총 molecules 수를 나타냅니다. 이 숫자는 0 보다 작지 않으므로 다음과 같은 MFC 어설션 문을 포함할 수 있습니다.
+예를 들어, 컨테이너에서 가스 분자를 시뮬레이션하고 `numMols` 변수는 총 분자 수를 나타냅니다. 이 숫자는 0보다 작지 않으므로 다음과 같은 MFC 어설션 문을 포함할 수 있습니다.
 
 ```cpp
 ASSERT(numMols >= 0);
@@ -280,7 +280,7 @@ ASSERT(numMols >= 0);
 _ASSERT(numMols >= 0);
 ```
 
-이러한 문은 프로그램이 제대로 작동 하는 경우 아무 작업도 수행 하지 않습니다. 논리 오류로 인해 `numMols` 0 보다 작은 경우 어설션이 프로그램 실행을 중단 하 고 [어설션 실패 대화 상자](../debugger/assertion-failed-dialog-box.md)를 표시 합니다.
+이러한 문은 프로그램이 제대로 작동하는 경우 아무 작업도 수행하지 않습니다. 논리 오류로 인해 `numMols`가 0보다 작은 경우 어설션이 프로그램 실행을 중단하고 [어설션 실패 대화 상자](../debugger/assertion-failed-dialog-box.md)를 표시합니다.
 
 [항목 내용](#BKMK_In_this_topic)
 

@@ -99,7 +99,7 @@ ASSERT ( myFnctn(0)==1 ) // unsafe if myFnctn has side effects
 VERIFY ( myFnctn(0)==1 ) // safe
 ```
 
-`VERIFY`는 디버그 버전과 릴리스 버전 모두에서 `myFnctn`를 호출 하므로를 사용할 수 있습니다. 그러나 `VERIFY`를 사용 하면 릴리스 버전에서 불필요 한 함수 호출의 오버 헤드가 발생 합니다.
+`VERIFY`는 디버그 버전과 릴리스 버전 모두에서 `myFnctn`를 호출하여 사용할 수 있습니다. 그러나 `VERIFY`를 사용하면 릴리스 버전에서 불필요한 함수 호출의 오버헤드가 발생합니다.
 
 [항목 내용](#BKMK_In_this_topic)
 
@@ -111,7 +111,7 @@ CRTDBG.H입니다. H 헤더 파일은 어설션 검사를 위한 [_ASSERT 및 _A
 | `_ASSERT` | 지정 된 식이 FALSE 이면 `_ASSERT`파일 이름과 줄 번호를 반환 합니다. |
 | `_ASSERTE` | `_ASSERT`와 같으며 어설션된 식의 문자열 표현을 포함 합니다. |
 
-`_ASSERTE` FALSE로 설정 된 어설션된 식을 보고 하므로 더 강력 합니다. 이는 소스 코드를 참조 하지 않고 문제를 식별 하는 데 충분할 수 있습니다. 그러나 응용 프로그램의 디버그 버전에는 `_ASSERTE`를 사용 하 여 어설션된 각 식에 대 한 문자열 상수가 포함 됩니다. 많은 `_ASSERTE` 매크로를 사용 하는 경우 이러한 문자열 식은 많은 양의 메모리를 차지 합니다. 이로 인해 문제가 발생 하는 경우 `_ASSERT`를 사용 하 여 메모리를 절약 합니다.
+`_ASSERTE`는 FALSE로 판명된 어설션된 식을 보고하므로 더 강력합니다. 이는 소스 코드를 참조하지 않고 문제를 식별하는 데 충분할 수 있습니다. 그러나 응용 프로그램의 디버그 버전에는 `_ASSERTE`를 사용하여 어설션된 각 식에 대한 문자열 상수가 포함됩니다. 많은 `_ASSERTE` 매크로를 사용하는 경우 이러한 문자열 식은 많은 양의 메모리를 차지합니다. 이로 인해 문제가 발생하는 경우 `_ASSERT`를 사용하여 메모리를 절약합니다.
 
 `_DEBUG` 정의 된 경우 `_ASSERTE` 매크로는 다음과 같이 정의 됩니다.
 
@@ -124,17 +124,17 @@ CRTDBG.H입니다. H 헤더 파일은 어설션 검사를 위한 [_ASSERT 및 _A
     } while (0)
 ```
 
-어설션된 식이 FALSE로 평가 되 면 [_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) 가 호출 되어 어설션 오류를 보고 합니다 (기본적으로 메시지 대화 상자 사용). 메시지 대화 상자에서 **다시 시도** 를 선택 하는 경우 `_CrtDbgReport` 1을 반환 하 고 `_CrtDbgBreak` `DebugBreak`를 통해 디버거를 호출 합니다.
+어설션된 식이 FALSE로 평가되면 [_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)가 호출되어 어설션 오류를 보고합니다(기본적으로 메시지 대화 상자 사용). 메시지 대화 상자에서 **다시 시도**를 선택하는 경우 `_CrtDbgReport`는 1을 반환하고 `_CrtDbgBreak`는 `DebugBreak`를 통해 디버거를 호출합니다.
 
 ### <a name="checking-for-heap-corruption"></a>힙 손상 확인
-다음 예제에서는 [_CrtCheckMemory](/cpp/c-runtime-library/reference/crtcheckmemory) 를 사용 하 여 힙이 손상 되었는지 확인 합니다.
+다음 예제에서는 [_CrtCheckMemory](/cpp/c-runtime-library/reference/crtcheckmemory)를 사용하여 힙이 손상되었는지 확인합니다.
 
 ```cpp
 _ASSERTE(_CrtCheckMemory());
 ```
 
 ### <a name="checking-pointer-validity"></a>포인터 유효성 검사
-다음 예제에서는 [_CrtIsValidPointer](/cpp/c-runtime-library/reference/crtisvalidpointer) 를 사용 하 여 지정 된 메모리 범위가 읽기 또는 쓰기에 유효한 지 확인 합니다.
+다음 예제에서는 [_CrtIsValidPointer](/cpp/c-runtime-library/reference/crtisvalidpointer)를 사용하여 지정된 메모리 범위가 읽기 또는 쓰기에 유효한지 확인합니다.
 
 ```cpp
 _ASSERTE(_CrtIsValidPointer( address, size, TRUE );
@@ -147,7 +147,7 @@ _ASSERTE(_CrtIsValidPointer( myData );
 ```
 
 ### <a name="checking-a-memory-block"></a>메모리 블록 확인
-다음 예제에서는 [_CrtIsMemoryBlock](/cpp/c-runtime-library/reference/crtismemoryblock) 를 사용 하 여 메모리 블록이 로컬 힙에 있고 올바른 블록 형식을 사용 하는지 확인 합니다.
+다음 예제에서는 [_CrtIsMemoryBlock](/cpp/c-runtime-library/reference/crtismemoryblock)를 사용하여 메모리 블록이 로컬 힙에 있고 올바른 블록 형식을 사용하는지 확인합니다.
 
 ```cpp
 _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber));
@@ -160,16 +160,16 @@ MFC는 어설션 검사를 위한 [ASSERT](https://msdn.microsoft.com/Library/1e
 
 MFC `ASSERT` 매크로의 인수가 0 또는 false로 평가 되는 경우 매크로는 프로그램 실행을 중단 하 고 사용자에 게 경고 합니다. 그렇지 않으면 실행이 계속 됩니다.
 
-어설션이 실패 하면 메시지 대화 상자에 소스 파일의 이름과 어설션의 줄 번호가 표시 됩니다. 대화 상자에서 다시 시도를 선택 하면 [AfxDebugBreak](/cpp/mfc/reference/diagnostic-services#afxdebugbreak) 에 대 한 호출로 인해 실행이 디버거로 중단 됩니다. 이 시점에서 호출 스택을 검사 하 고 다른 디버거 기능을 사용 하 여 어설션이 실패 한 이유를 확인할 수 있습니다. [Just-in-time 디버깅](../debugger/just-in-time-debugging-in-visual-studio.md)을 사용 하도록 설정 하 고 디버거가 아직 실행 되지 않은 경우 대화 상자에서 디버거를 시작할 수 있습니다.
+어설션이 실패하면 메시지 대화 상자에 소스 파일의 이름과 어설션의 줄 번호가 표시됩니다. 대화 상자에서 다시 시도를 선택하면 [AfxDebugBreak](/cpp/mfc/reference/diagnostic-services#afxdebugbreak)에 대한 호출로 인해 실행이 디버거로 중단됩니다. 이 시점에서 호출 스택을 검사하고 다른 디버거 기능을 사용하여 어설션이 실패한 이유를 확인할 수 있습니다. [Just-in-time 디버깅](../debugger/just-in-time-debugging-in-visual-studio.md)을 사용하도록 설정하고 디버거가 아직 실행되지 않은 경우 대화 상자에서 디버거를 시작할 수 있습니다.
 
-다음 예에서는 `ASSERT`를 사용 하 여 함수의 반환 값을 확인 하는 방법을 보여 줍니다.
+다음 예에서는 `ASSERT`를 사용하여 함수의 반환 값을 확인하는 방법을 보여줍니다.
 
 ```cpp
 int x = SomeFunc(y);
 ASSERT(x >= 0);   //  Assertion fails if x is negative
 ```
 
-[IsKindOf](/cpp/mfc/reference/cobject-class#iskindof) 함수와 함께 ASSERT를 사용 하 여 함수 인수에 대 한 형식 검사를 제공할 수 있습니다.
+[IsKindOf](/cpp/mfc/reference/cobject-class#iskindof) 함수와 함께 ASSERT를 사용하여 함수 인수에 대한 형식 검사를 제공할 수 있습니다.
 
 ```cpp
 ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );
@@ -178,7 +178,7 @@ ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );
 `ASSERT` 매크로는 릴리스 버전에서 코드를 생성 하지 않습니다. 릴리스 버전에서 식을 평가 해야 하는 경우 ASSERT 대신 [VERIFY](https://msdn.microsoft.com/library/s8c29sw2.aspx#verify) 매크로를 사용 합니다.
 
 ### <a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a>MFC ASSERT_VALID 및 CObject:: AssertValid
-[CObject:: AssertValid](/cpp/mfc/reference/cobject-class#assertvalid) 메서드는 개체의 내부 상태에 대 한 런타임 검사를 제공 합니다. `CObject`에서 클래스를 파생 시킬 때 `AssertValid`를 재정의할 필요는 없지만,이를 통해 클래스를 더욱 안정적으로 만들 수 있습니다. `AssertValid`는 모든 개체의 멤버 변수에 대해 어설션을 수행 하 여 유효한 값이 포함 되어 있는지 확인 해야 합니다. 예를 들어 포인터 멤버 변수가 NULL이 아닌 것을 확인 해야 합니다.
+[CObject:: AssertValid](/cpp/mfc/reference/cobject-class#assertvalid) 메서드는 개체의 내부 상태에 대한 런타임 검사를 제공합니다. `CObject`에서 클래스를 파생 시킬 때 `AssertValid`를 재정의할 필요는 없지만,이를 통해 클래스를 더욱 안정적으로 만들 수 있습니다. `AssertValid`는 모든 개체의 멤버 변수에 대해 어설션을 수행하여 유효한 값이 포함되어 있는지 확인해야 합니다. 예를 들어 포인터 멤버 변수가 NULL이 아닌 것을 확인해야 합니다.
 
 다음 예제에서는 `AssertValid` 함수를 선언 하는 방법을 보여 줍니다.
 
@@ -197,7 +197,7 @@ public:
 };
 ```
 
-`AssertValid`를 재정의 하는 경우 고유한 검사를 수행 하기 전에 `AssertValid`의 기본 클래스 버전을 호출 합니다. 그런 다음 ASSERT 매크로를 사용 하 여 다음과 같이 파생 클래스에 고유한 멤버를 확인 합니다.
+`AssertValid`를 재정의하는 경우 고유한 검사를 수행하기 전에 `AssertValid`의 기본 클래스 버전을 호출합니다. 그런 다음 ASSERT 매크로를 사용하여 다음과 같이 파생 클래스에 고유한 멤버를 확인합니다.
 
 ```cpp
 #ifdef _DEBUG
@@ -308,7 +308,7 @@ _ASSERT(iMols<=numMols); // CRT version
 [항목 내용](#BKMK_In_this_topic)
 
 ### <a name="BKMK_Testing_error_conditions_"></a>처리 되지 않은 오류 찾기
-어설션을 사용 하 여 오류를 처리 해야 하는 코드의 특정 지점에서 오류 조건을 테스트할 수 있습니다. 다음 예에서는 그래픽 루틴이 성공에 대해 오류 코드 또는 0을 반환 합니다.
+어설션을 사용하여 오류를 처리해야 하는 코드의 특정 지점에서 오류 조건을 테스트할 수 있습니다. 다음 예에서는 그래픽 루틴이 성공에 대해 오류 코드 또는 0을 반환합니다.
 
 ```cpp
 myErr = myGraphRoutine(a, b);
@@ -320,7 +320,7 @@ ASSERT(!myErr); -- MFC version
 _ASSERT(!myErr); -- CRT version
 ```
 
-오류 처리 코드가 제대로 작동 하는 경우 오류를 처리 하 고 어설션이 도달 하기 전에 0으로 다시 설정 `myErr` 합니다. `myErr`에 다른 값이 있으면 어설션이 실패 하 고 프로그램이 중단 되며 [어설션 실패 대화 상자가](../debugger/assertion-failed-dialog-box.md) 나타납니다.
+오류 처리 코드가 제대로 작동하는 경우 오류를 처리하고 어설션에 도달하기 전에 `myErr`이 0으로 다시 설정됩니다. `myErr`에 다른 값이 있으면 어설션이 실패하고 프로그램이 중단되며 [어설션 실패 대화 상자](../debugger/assertion-failed-dialog-box.md)가 나타납니다.
 
 그러나 어설션 문은 오류 처리 코드를 대체 하지 않습니다. 다음 예에서는 최종 릴리스 코드의 문제를 일으킬 수 있는 어설션 문을 보여 줍니다.
 
@@ -333,7 +333,7 @@ ASSERT(!myErr); // Don't do this!
 _ASSERT(!myErr); // Don't do this, either!
 ```
 
-이 코드는 어설션 문을 사용 하 여 오류 조건을 처리 합니다. 따라서 `myGraphRoutine`에서 반환 되는 오류 코드는 최종 릴리스 코드에서 처리 되지 않습니다.
+이 코드는 어설션 문을 사용하여 오류 조건을 처리합니다. 따라서 `myGraphRoutine`에서 반환되는 오류 코드는 최종 릴리스 코드에서 처리되지 않습니다.
 
 [항목 내용](#BKMK_In_this_topic)
 

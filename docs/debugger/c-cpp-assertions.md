@@ -36,19 +36,19 @@ ms.lasthandoff: 10/25/2019
 ms.locfileid: "72911616"
 ---
 # <a name="cc-assertions"></a>C/C++ 어설션
-어설션 문은 프로그램의 특정 지점에서 true로 간주 되는 조건을 지정 합니다. 해당 조건이 true가 아니면 어설션이 실패 하 고, 프로그램 실행이 중단 되 고, [어설션 실패 대화 상자가](../debugger/assertion-failed-dialog-box.md) 나타납니다.
+어설션 문은 프로그램의 특정 지점에서 true로 간주되는 조건을 지정합니다. 해당 조건이 true가 아니면 어설션이 실패하고, 프로그램 실행이 중단되며, [어설션 실패 대화 상자](../debugger/assertion-failed-dialog-box.md)가 나타납니다.
 
 Visual Studio는 C++ 다음 구문을 기반으로 하는 어설션 문을 지원 합니다.
 
 - MFC 프로그램의 MFC 어설션
 
-- ATL을 사용 하는 프로그램에 대 한 프로그램 [어설션](/cpp/atl/reference/debugging-and-error-reporting-macros#atlassert) .
+- ATL을 사용하는 프로그램에 대한 [ATLASSERT](/cpp/atl/reference/debugging-and-error-reporting-macros#atlassert).
 
-- C 런타임 라이브러리를 사용 하는 프로그램에 대 한 CRT 어설션.
+- C 런타임 라이브러리를 사용하는 프로그램에 대한 CRT 어설션.
 
-- 다른 C/C++ 프로그램에 대 한 ANSI [assert 함수](/cpp/c-runtime-library/reference/assert-macro-assert-wassert) 입니다.
+- 다른 C/C++ 프로그램에 대한 ANSI [assert 함수](/cpp/c-runtime-library/reference/assert-macro-assert-wassert).
 
-  어설션을 사용 하 여 논리 오류를 catch 하 고, 작업의 결과를 확인 하 고, 처리 해야 하는 오류 조건을 테스트할 수 있습니다.
+  어설션을 사용하여 논리 오류를 catch하고, 작업의 결과를 확인하고, 처리해야 하는 오류 조건을 테스트할 수 있습니다.
 
 ## <a name="BKMK_In_this_topic"></a> 항목 내용
 [어설션 작동 방법](#BKMK_How_assertions_work)
@@ -74,17 +74,17 @@ Visual Studio는 C++ 다음 구문을 기반으로 하는 어설션 문을 지�
 - [처리 되지 않은 오류 찾기](#BKMK_Testing_error_conditions_)
 
 ## <a name="BKMK_How_assertions_work"></a>어설션 작동 방법
-MFC 또는 C 런타임 라이브러리 어설션으로 인해 디버거가 중단 되 면 소스를 사용할 수 있는 경우 디버거는 어설션이 발생 한 소스 파일의 지점으로 이동 합니다. 어설션 메시지는 [출력 창과](../ide/reference/output-window.md) **어설션 실패** 대화 상자에 모두 나타납니다. 나중에 참조할 수 있도록 저장 하려면 **출력** 창에서 텍스트 창으로 어설션 메시지를 복사할 수 있습니다. **출력** 창에도 다른 오류 메시지가 포함 될 수 있습니다. 이러한 메시지는 어설션 실패의 원인에 대 한 단서를 제공 하므로 신중 하 게 검토 합니다.
+MFC 또는 C 런타임 라이브러리 어설션으로 인해 디버거가 중단되면 소스를 사용할 수 있는 경우 디버거는 어설션이 발생한 소스 파일의 지점으로 이동합니다. 어설션 메시지는 [출력 창](../ide/reference/output-window.md)과 **어설션 실패** 대화 상자에 모두 나타납니다. 나중에 참조할 수 있도록 저장하려면 **출력** 창에서 텍스트 창으로 어설션 메시지를 복사할 수 있습니다. **출력** 창에는 다른 오류 메시지도 포함될 수 있습니다. 이러한 메시지는 어설션 실패의 원인에 대한 단서를 제공하므로 신중하게 검토합니다.
 
-어설션을 사용 하 여 개발 중에 오류를 검색 합니다. 규칙으로 가정 마다 하나의 어설션을 사용 합니다. 예를 들어 인수가 NULL이 아닌 것으로 가정 하는 경우 어설션을 사용 하 여 해당 가정을 테스트 합니다.
+어설션을 사용하여 개발 중에 오류를 검색합니다. 규칙으로 가정마다 하나의 어설션을 사용합니다. 예를 들어 인수가 NULL이 아닌 것으로 가정하는 경우 어설션을 사용하여 해당 가정을 테스트합니다.
 
 [항목 내용](#BKMK_In_this_topic)
 
 ## <a name="BKMK_Assertions_in_Debug_and_Release_builds"></a>디버그 및 릴리스 빌드의 어설션
-`_DEBUG` 정의 된 경우에만 어설션 문이 컴파일됩니다. 그렇지 않으면 컴파일러는 어설션을 null 문으로 처리 합니다. 따라서 어설션 문은 최종 릴리스 프로그램에서 오버 헤드 나 성능 비용을 부과 하지 않으며 `#ifdef` 지시문 사용을 피할 수 있습니다.
+`_DEBUG`가 정의된 경우에만 어설션 문이 컴파일됩니다. 그렇지 않으면 컴파일러는 어설션을 null 문으로 처리합니다. 따라서 어설션 문은 최종 릴리스 프로그램에서 오버헤드나 성능 비용을 부과하지 않으며 `#ifdef` 지시문 사용을 피할 수 있습니다.
 
 ## <a name="BKMK_Side_effects_of_using_assertions"></a>어설션을 사용할 경우의 부작용
-코드에 어설션을 추가 하는 경우 어설션에 부작용이 없는지 확인 합니다. 예를 들어 `nM` 값을 수정 하는 다음 어설션을 고려 하십시오.
+코드에 어설션을 추가하는 경우 어설션에 부작용이 없는지 확인합니다. 예를 들어 `nM` 값을 수정하는 다음 어설션을 고려해 보세요.
 
 ```cpp
 ASSERT(nM++ > 0); // Don't do this!
@@ -92,7 +92,7 @@ ASSERT(nM++ > 0); // Don't do this!
 
 `ASSERT` 식은 프로그램의 릴리스 버전에서 계산 되지 않기 때문에 디버그 및 릴리스 버전에는 `nM` 값이 다릅니다. MFC에서이 문제를 방지 하기 위해 `ASSERT` 대신 [VERIFY](/cpp/mfc/reference/diagnostic-services#verify) 매크로를 사용할 수 있습니다. `VERIFY`는 모든 버전의 식을 계산 하지만 릴리스 버전의 결과를 확인 하지는 않습니다.
 
-함수를 계산할 때 예기치 않은 부작용이 발생할 수 있으므로 어설션 문에서 함수 호출을 사용 하는 데 특히 주의 해야 합니다.
+함수를 계산할 때 예기치 않은 부작용이 발생할 수 있으므로 어설션 문에서 함수 호출을 사용하는 데 특히 주의해야 합니다.
 
 ```cpp
 ASSERT ( myFnctn(0)==1 ) // unsafe if myFnctn has side effects

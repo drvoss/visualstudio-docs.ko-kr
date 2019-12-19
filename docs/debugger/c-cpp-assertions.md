@@ -104,7 +104,7 @@ VERIFY ( myFnctn(0)==1 ) // safe
 [항목 내용](#BKMK_In_this_topic)
 
 ## <a name="BKMK_CRT_assertions"></a>CRT 어설션
-CRTDBG.H입니다. H 헤더 파일은 어설션 검사를 위한 [_ASSERT 및 _ASSERTE 매크로](/cpp/c-runtime-library/reference/assert-asserte-assert-expr-macros) 를 정의 합니다.
+CRTDBG.H 헤더 파일은 어설션 검사를 위한 [_ASSERT 및 _ASSERTE 매크로](/cpp/c-runtime-library/reference/assert-asserte-assert-expr-macros)를 정의합니다.
 
 | 매크로 | 결과 |
 |------------| - |
@@ -140,7 +140,7 @@ _ASSERTE(_CrtCheckMemory());
 _ASSERTE(_CrtIsValidPointer( address, size, TRUE );
 ```
 
-다음 예제에서는 [_CrtIsValidHeapPointer](/cpp/c-runtime-library/reference/crtisvalidheappointer) 를 사용 하 여 로컬 힙의 메모리를 가리키는 포인터를 확인 합니다 .이는 C 런타임 라이브러리의이 인스턴스에 의해 생성 및 관리 되는 힙입니다. DLL에는 자체 라이브러리 인스턴스가 포함 될 수 있으며, 그에 따라 고유한 힙이 있습니다. 응용 프로그램 힙 외부). 이 어설션은 null 또는 범위를 벗어난 주소 뿐만 아니라 정적 변수, 스택 변수 및 기타 비로컬 메모리에 대 한 포인터를 catch 합니다.
+다음 예제에서는 [_CrtIsValidHeapPointer](/cpp/c-runtime-library/reference/crtisvalidheappointer)를 사용하여 로컬 힙의 메모리를 가리키는 포인터를 확인합니다.이는 C 런타임 라이브러리의이 인스턴스에 의해 생성 및 관리되는 힙입니다.DLL에는 자체 라이브러리 인스턴스가 포함될 수 있으며, 그에 따라 응용 프로그램 힙 외부에 고유한 힙이 있습니다.) 이 어설션은 null 또는 범위를 벗어난 주소 뿐만 아니라 정적 변수, 스택 변수 및 기타 비로컬 메모리에 대한 포인터를 catch합니다.
 
 ```cpp
 _ASSERTE(_CrtIsValidPointer( myData );
@@ -158,7 +158,8 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
 ## <a name="BKMK_MFC_assertions"></a>MFC 어설션
 MFC는 어설션 검사를 위한 [ASSERT](https://msdn.microsoft.com/Library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) 매크로를 정의 합니다. 또한 `CObject`파생 개체의 내부 상태를 확인 하는 `MFC ASSERT_VALID` 및 `CObject::AssertValid` 메서드를 정의 합니다.
 
-MFC `ASSERT` 매크로의 인수가 0 또는 false로 평가 되는 경우 매크로는 프로그램 실행을 중단 하 고 사용자에 게 경고 합니다. 그렇지 않으면 실행이 계속 됩니다.
+MFC `ASSERT` 매크로의 인수가 0 또는 false로 평가되는 경우 매크로는 프로그램 실행을 중단하고 사용자에 게 경고합니다. 그렇지 않으면 실행이 계속됩니다.
+
 
 어설션이 실패하면 메시지 대화 상자에 소스 파일의 이름과 어설션의 줄 번호가 표시됩니다. 대화 상자에서 다시 시도를 선택하면 [AfxDebugBreak](/cpp/mfc/reference/diagnostic-services#afxdebugbreak)에 대한 호출로 인해 실행이 디버거로 중단됩니다. 이 시점에서 호출 스택을 검사하고 다른 디버거 기능을 사용하여 어설션이 실패한 이유를 확인할 수 있습니다. [Just-in-time 디버깅](../debugger/just-in-time-debugging-in-visual-studio.md)을 사용하도록 설정하고 디버거가 아직 실행되지 않은 경우 대화 상자에서 디버거를 시작할 수 있습니다.
 

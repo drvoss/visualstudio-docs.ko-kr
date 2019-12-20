@@ -27,7 +27,7 @@ ms.lasthandoff: 10/22/2019
 ms.locfileid: "72738357"
 ---
 # <a name="debugbreak-and-__debugbreak"></a>DebugBreak 및 __debugbreak
-코드의 어떤 위치에서든 DebugBreak Win32 함수 또는 [__debugbreak](/cpp/intrinsics/debugbreak) 내장 함수를 호출할 수 있습니다. `DebugBreak` 및 `__debugbreak`는 해당 위치에 중단점을 설정하는 것과 같은 효과가 있습니다.
+코드의 어떤 위치에서든 [DebugBreak](/windows/win32/api/debugapi/nf-debugapi-debugbreak) Win32 함수 또는 [__debugbreak](/cpp/intrinsics/debugbreak) 내장 함수를 호출할 수 있습니다. `DebugBreak` 및 `__debugbreak`는 해당 위치에 중단점을 설정하는 것과 같은 효과가 있습니다.
 
  `DebugBreak`는 시스템 함수에 대한 호출이므로 중단 후 올바른 호출 스택 정보가 표시되도록 하려면 시스템 디버그 기호를 설치해야 합니다. 이렇게 하지 않으면 디버거에서 표시하는 호출 스택 정보가 한 프레임씩 차이가 날 수 있습니다. `__debugbreak`를 사용하는 경우에는 기호가 필요하지 않습니다.
 

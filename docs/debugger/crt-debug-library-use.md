@@ -36,7 +36,7 @@ ms.lasthandoff: 10/22/2019
 ms.locfileid: "72745614"
 ---
 # <a name="crt-debug-library-use"></a>CRT 디버그 라이브러리 사용
-C 런타임 라이브러리는 디버깅을 폭넓게 지원합니다. CRT 디버그 라이브러리 중 하나를 사용 하려면 [/debug](/cpp/build/reference/debug-generate-debug-info) 와 연결 하 고 **/mdd**, **/MTd**또는 **/ldd**로 컴파일해야 합니다.
+C 런타임 라이브러리는 디버깅을 폭넓게 지원합니다. CRT 디버그 라이브러리 중 하나를 사용 하려면 [/debug](/cpp/build/reference/debug-generate-debug-info) 와 연결하고 **/mdd**, **/MTd** 또는 **/ldd**로 컴파일해야 합니다.
 
 ## <a name="remarks"></a>주의
  CRT 디버깅의 주요 정의와 매크로는 CRTDBG.h 헤더 파일에 포함되어 있습니다.

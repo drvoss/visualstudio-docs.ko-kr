@@ -101,7 +101,7 @@ ms.locfileid: "72745621"
 ## <a name="BKMK_Find_buffer_overruns_with_debug_heap"></a> 디버그 힙을 사용하여 버퍼 오버런 찾기
 프로그래머가 직면 하는 가장 일반적인 문제 중 두 가지는 할당 된 버퍼 및 메모리 누수의 끝을 덮어쓰는 것입니다 (더 이상 필요 하지 않은 할당을 해제 하지 못함). 디버그 힙을 사용하여 이러한 메모리 할당 문제를 효과적으로 해결할 수 있습니다.
 
-힙 함수의 디버그 버전은 릴리스 빌드에서 사용하는 표준 또는 기본 버전을 호출합니다. 메모리 블록을 요청하면 디버그 힙 관리자는 요청한 것 보다 약간 더 큰 메모리 블록을 기본 힙에서 할당하고 블록의 해당 부분에 대한 포인터를 반환합니다. 예를 들어 애플리케이션에 `malloc( 10 )` 호출이 있을 경우, 릴리스 빌드에서 [malloc](/cpp/c-runtime-library/reference/malloc) 는 10 바이트의 할당을 요청 하는 기본 힙 할당 루틴을 호출 합니다. @No__t_0 그러나 디버그 빌드에서는 [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg)를 호출 하 여 10 바이트 할당 및 약 36 바이트의 추가 메모리를 요청 하는 기본 힙 할당 루틴을 호출 합니다. 디버그 힙의 모든 결과 메모리 블록은 할당된 순서에 따라 하나의 연결 리스트로 연결됩니다.
+힙 함수의 디버그 버전은 릴리스 빌드에서 사용하는 표준 또는 기본 버전을 호출합니다. 메모리 블록을 요청하면 디버그 힙 관리자는 요청한 것 보다 약간 더 큰 메모리 블록을 기본 힙에서 할당하고 블록의 해당 부분에 대한 포인터를 반환합니다. 예를 들어 애플리케이션에 `malloc( 10 )` 호출이 있을 경우, 릴리스 빌드에서 [malloc](/cpp/c-runtime-library/reference/malloc) 는 10 바이트의 할당을 요청 하는 기본 힙 할당 루틴을 호출 합니다. 그러나 `malloc`은 디버그 빌드에서는 [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg)를 호출하여 10 바이트 할당 및 약 36 바이트의 추가 메모리를 요청 하는 기본 힙 할당 루틴을 호출 합니다. 디버그 힙의 모든 결과 메모리 블록은 할당된 순서에 따라 하나의 연결 리스트로 연결됩니다.
 
 디버그 힙 루틴이 할당한 추가 메모리는 할당된 영역의 덮어 쓰기를 찾기 위해 부기 정보, 디버그 메모리 블록을 연결하는 포인터, 데이터 양쪽에 있는 작은 버퍼 등에 사용됩니다.
 
@@ -138,12 +138,12 @@ NoMansLand (0xFD) 응용 프로그램에서 사용 하는 메모리의 양쪽에
 
 새 개체 (0xCD) 새 개체는 할당 될 때 0xCD로 채워집니다.
 
-![최상위](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [콘텐츠로](#BKMK_Contents) 돌아가기
+![최상위](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [목차](#BKMK_Contents)로 돌아가기
 
 ## <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> 디버그 힙의 블록 형식
 디버그 힙의 모든 메모리 블록은 다섯 가지 할당 형식 중 하나에 지정됩니다. 누수 탐지와 상태 보고 등의 목적에 따라 이러한 형식을 다르게 추적하고 보고합니다. [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg)와 같은 디버그 힙 할당 함수 중 하나를 직접 호출하여 블록을 할당하면 블록의 형식을 지정할 수 있습니다. 디버그 힙에 있는 메모리 블록 형식( **_CrtMemBlockHeader** 구조체의 **nBlockUse** 멤버에 설정) 다섯 가지는 다음과 같습니다.
 
-**_NORMAL_BLOCK** [Malloc](/cpp/c-runtime-library/reference/malloc) 또는 [calloc](/cpp/c-runtime-library/reference/calloc) 를 호출 하면 일반 블록이 생성 됩니다. 표준 블록만 사용하고 클라이언트 블록은 사용하지 않으려면 모든 힙 할당 호출을 디버그 빌드의 해당 디버그 부분에 매핑시키는 [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc)을 정의해야 합니다. 그러면 각 할당 호출에 대한 파일 이름과 줄 번호 정보가 해당 블록 헤더에 저장됩니다.
+**_NORMAL_BLOCK** [malloc](/cpp/c-runtime-library/reference/malloc) 또는 [calloc](/cpp/c-runtime-library/reference/calloc) 를 호출 하면 일반 블록이 생성 됩니다. 표준 블록만 사용하고 클라이언트 블록은 사용하지 않으려면 모든 힙 할당 호출을 디버그 빌드의 해당 디버그 부분에 매핑시키는 [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc)을 정의해야 합니다. 그러면 각 할당 호출에 대한 파일 이름과 줄 번호 정보가 해당 블록 헤더에 저장됩니다.
 
 `_CRT_BLOCK` 여러 런타임 라이브러리 함수에 의해 내부적으로 할당된 메모리 블록은 CRT 블록으로 표시되어 별도로 처리할 수 있습니다. 결과적으로 누수 탐지나 다른 작업들이 런타임 라이브러리 함수의 영향을 받지 않습니다. 할당은 CRT 형식의 어떠한 블록도 할당하거나 할당 취소하거나 해제할 수 없습니다.
 
@@ -167,7 +167,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
 #define _BLOCK_SUBTYPE(block)       (block >> 16 & 0xFFFF)
 ```
 
-![최상위](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [콘텐츠로](#BKMK_Contents) 돌아가기
+![최상위](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [목차](#BKMK_Contents)로 돌아가기
 
 ## <a name="BKMK_Check_for_heap_integrity_and_memory_leaks"></a> 힙 무결성 및 메모리 누수 확인
 디버그 힙의 기능 중 상당수는 코드 안에서 액세스해야 합니다. 다음 단원에서는 이러한 기능과 사용 방법에 대해 설명합니다.
@@ -186,7 +186,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
 |**_CRTDBG_CHECK_CRT_DF**|끄기|**_CRT_BLOCK** 형식으로 표시된 블록이 누수 탐지 및 상태 차이 작업에 포함되게 합니다. 비트를 해제하면 위와 같은 작업을 하는 동안 런타임 라이브러리가 내부적으로 사용하는 메모리를 무시합니다.|
 |**_CRTDBG_LEAK_CHECK_DF**|끄기|**_CrtDumpMemoryLeaks**를 호출하여 프로그램을 종료할 때 누수 검사를 수행합니다. 애플리케이션이 할당한 모든 메모리를 해제하는 데 실패하면 오류 보고서가 생성됩니다.|
 
-![최상위](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [콘텐츠로](#BKMK_Contents) 돌아가기
+![최상위](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [목차](#BKMK_Contents)로 돌아가기
 
 ## <a name="BKMK_Configure_the_debug_heap"></a> 디버그 힙 구성
 `malloc`, `free`, `calloc`, `realloc`, `new` 및 `delete` 등의 힙 함수에 대한 모든 호출은 디버그 힙에서 작동하는 해당 함수의 디버그 버전으로 확인됩니다. 메모리 블록을 해제할 경우, 디버그 힙은 자동으로 할당 영역 양쪽에 있는 버퍼의 무결성을 확인하며 덮어쓰기가 발생하면 오류 보고서를 만듭니다.
@@ -221,7 +221,7 @@ tmpFlag &= ~_CRTDBG_CHECK_CRT_DF;
 _CrtSetDbgFlag( tmpFlag );
 ```
 
-![최상위](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [콘텐츠로](#BKMK_Contents) 돌아가기
+![최상위](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [목차](#BKMK_Contents)로 돌아가기
 
 ## <a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a> C++ 디버그 힙의 new, delete 및 _CLIENT_BLOCK
 C 런타임 라이브러리의 디버그 버전은 C++ `new` 및 `delete` 연산자의 디버그 버전을 포함합니다. `_CLIENT_BLOCK` 할당 형식을 사용하는 경우 다음 예제와 같이 `new` 연산자의 디버그 버전을 직접 호출하거나 디버그 모드에서 `new` 연산자를 대체하는 매크로를 만들어야 합니다.
@@ -259,7 +259,7 @@ int main( )   {
 
 `delete` 연산자의 디버그 버전은 모든 블록 형식에 대해 작동하며, 릴리스 버전을 컴파일할 때 프로그램을 변경할 필요가 없습니다.
 
-![최상위](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [콘텐츠로](#BKMK_Contents) 돌아가기
+![최상위](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [목차](#BKMK_Contents)로 돌아가기
 
 ## <a name="BKMK_Heap_State_Reporting_Functions"></a> 힙 상태 보고 함수
  **_CrtMemState**
@@ -296,7 +296,7 @@ typedef struct _CrtMemState
 |[_CrtMemDumpAllObjectsSince](/cpp/c-runtime-library/reference/crtmemdumpallobjectssince)|지정한 스냅샷이 힙의 스냅샷이거나 실행을 시작할 때 만들어진 스냅샷이기 때문에 할당된 모든 개체 정보를 덤프합니다. **_CrtSetDumpClient**를 사용하여 **_CLIENT_BLOCK** 블록을 설치한 경우, 이 블록을 덤프할 때마다 애플리케이션의 후크 함수를 호출합니다.|
 |[_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks)|프로그램 실행을 시작한 이후로 메모리 누수가 발생했는지 확인하고, 메모리 누수를 탐지한 경우 할당된 개체를 모두 덤프합니다. **_CrtSetDumpClient**를 사용하여 **_CLIENT_BLOCK** 블록을 설치한 경우, **_CrtDumpMemoryLeaks**가 이 블록을 덤프할 때마다 애플리케이션의 후크 함수를 호출합니다.|
 
-![최상위](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [콘텐츠로](#BKMK_Contents) 돌아가기
+![최상위](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [목차](#BKMK_Contents)로 돌아가기
 
 ## <a name="BKMK_Track_Heap_Allocation_Requests"></a> 힙 할당 요청 추적
 어설션 매크로나 보고서 매크로를 실행하는 소스 파일 이름과 줄 번호를 식별하는 것은 문제의 원인을 찾는 데 유용하지만 힙 할당 함수에서는 다릅니다. 애플리케이션 논리 트리에서는 적절한 지점에 매크로를 삽입할 수 있지만, 할당은 서로 다른 시간에 여러 위치에서 호출되는 특별한 루틴에 숨겨지는 경우도 있습니다. 대개의 경우 코드의 어느 줄이 잘못된 할당을 만들었는지가 아니라 잘못된 할당이 어느 것이고 원인이 무엇인지가 문제입니다.
@@ -351,7 +351,7 @@ int addNewRecord(struct RecStruct *prevRecord,
 
 이제 `addNewRecord`를 호출한 소스 파일 이름과 줄 번호는 디버그 힙에 할당된 각 결과 블록에 저장되며 해당 블록을 검사할 때 보고됩니다.
 
-![최상위](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [콘텐츠로](#BKMK_Contents) 돌아가기
+![최상위](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [목차](#BKMK_Contents)로 돌아가기
 
 ## <a name="see-also"></a>참조
 [네이티브 코드 디버그](../debugger/debugging-native-code.md)

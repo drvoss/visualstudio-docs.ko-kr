@@ -36,10 +36,10 @@ ms.locfileid: "62563375"
 
  [할당 후크 함수](../debugger/allocation-hook-functions.md) 할당 후크 함수를 정의 다른 용도 탐색, 제한 사항 지적 및 프로토타입을 제공 합니다.
 
- [할당 후크 및 CRT 메모리 할당](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md) 제한을 무시 하 고 명시적으로 할당 후크 함수에서 설명 `_CRT_BLOCK` 내부 메모리를 할당 하는 C 런타임 라이브러리 함수를 호출 하는 경우 차단 합니다. 또한 이 항목에서는 할당 후크가 `_CRT_BLOCK` 블록(예제 포함)을 무시하지 않을 경우에 발생하는 결과 및 기본 할당 후크 함수 **CrtDefaultAllocHook**를 변경하는 방법도 소개합니다.
+ [할당 후크 및 CRT 메모리 할당](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md) 내부 메모리를 할당하는 C 런타임 라이브러리 함수를 호출하는 경우 `_CRT_BLOCK`  블록을 명시적으로 무시하는 할당 후크 함수 제한에 대해 설명합니다. 또한 이 항목에서는 할당 후크가 `_CRT_BLOCK` 블록을 무시하지 않을 경우에 발생하는 결과(예제 포함) 및 기본 할당 후크 함수 **CrtDefaultAllocHook**를 변경하는 방법도 소개합니다.
 
- [보고서 후크 함수](../debugger/report-hook-functions.md) 에 대해 설명 `_CrtSetReportHook`를 필터링 하는 데 사용할 수 있는 특정 형식의 할당에 초점을 보고 합니다. 프로토타입을 제공합니다.
+ [보고서 후크 함수](../debugger/report-hook-functions.md) 특정 형식의 할당에 초점을 맞추기 위해 보고서를 필터링하는 데 사용할 수 있는 `_CrtSetReportHook`에 대해 설명합니다. 이 항목은 프로토타입도 제공합니다.
 
 ## <a name="related-sections"></a>관련 단원
 
-- [CRT 디버깅 기술](../debugger/crt-debugging-techniques.md) -CRT 디버그 라이브러리 사용, 보고서 매크로 포함 하 여 C 런타임 라이브러리에 대 한 디버깅 기술에 대 한 링크 간의 차이점 `malloc` 고 `_malloc_dbg`, 디버그 후크 함수 작성, CRT 디버그 힙의입니다.
+- [CRT 디버깅 기술](../debugger/crt-debugging-techniques.md) - CRT 디버그 라이브러리 사용, 보고서 매크로, `malloc`과 `_malloc_dbg`의 차이점, 디버그 후크 함수 작성 및 CRT 디버그 힙을 포함하여 C 런타임 라이브러리의 디버깅 기술에 대한 링크입니다.

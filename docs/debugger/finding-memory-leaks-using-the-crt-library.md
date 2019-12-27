@@ -1,5 +1,5 @@
 ---
-title: CRT 라이브러리를 사용 하 여 메모리 누수 찾기 | Microsoft Docs
+title: CRT 라이브러리를 사용하여 메모리 누수 찾기 | Microsoft Docs
 ms.date: 10/04/2018
 ms.topic: conceptual
 dev_langs:
@@ -31,16 +31,16 @@ ms.workload:
 - multiple
 ms.openlocfilehash: eb2729dcaf0da41c0adac24b0e1909a6d2697eb6
 ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/05/2019
 ms.locfileid: "74829938"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>CRT 라이브러리로 메모리 누수 찾기
 
-C/C++ 앱에서 메모리 누수는 가장 복잡 하 고 감지 하기 어려운 버그 중 하나입니다. 메모리 누수가 발생 하 여 이전에 할당 된 메모리를 올바르게 할당 해제 했습니다. 작은 메모리 누수는 처음에는 인식 되지 않을 수 있지만 시간이 지남에 따라 응용 프로그램의 메모리가 부족 하면 성능 저하에서 발생 하는 문제가 발생할 수 있습니다. 사용 가능한 모든 메모리를 사용 하는 누수 앱은 다른 앱이 충돌 하 여 책임이 있는 앱과 혼동을 일으킬 수 있습니다. 메모리 누수가 무해 하더라도 수정 해야 할 다른 문제가 나타날 수 있습니다.
+C/C++ 앱에서 메모리 누수는 가장 복잡하고 감지하기 어려운 버그 중 하나입니다. 이전에 할당된 메모리를 올바르게 할당 해제하지 못하면 메모리 누수가 발생합니다. 작은 메모리 누수는 처음에는 눈에 띄지 않지만 시간이 지남에 따라 앱의 메모리가 부족할 때 성능 저하에서 크래시에 이르는 증상이 발생할 수 있습니다. 사용 가능한 모든 메모리를 사용하는 누수 앱은 다른 앱이 중단되도록 하여 어떤 앱에 책임이 있는지 혼란스러울 수 있습니다. 무해한 메모리 누수조차도 해결해야 할 다른 문제가 있음을 나타낼 수 있습니다.
 
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 디버거와 CRT (C 런타임 라이브러리)는 메모리 누수를 검색 하 고 식별 하는 데 도움이 될 수 있습니다.
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 디버거와 CRT(C 런타임 라이브러리)는 메모리 누수를 검색하고 식별하는 데 도움이 될 수 있습니다.
 
 ## <a name="enable-memory-leak-detection"></a>메모리 누수 검색 사용
 
@@ -54,17 +54,17 @@ C/C++ 앱에서 메모리 누수는 가장 복잡 하 고 감지 하기 어려�
 #include <crtdbg.h>
 ```
 
-`#define` 문은 CRT 힙 함수의 기본 버전을 해당 디버그 버전에 매핑합니다. `#define` 문을 생략 하면 메모리 누수 덤프가 [더 자세하게](#interpret-the-memory-leak-report)표시 되지 않습니다.
+`#define` 문은 CRT 힙 함수의 기본 버전을 해당 디버그 버전에 매핑합니다. `#define` 문을 생략하면 메모리 누수 덤프가 [덜 자세하게](#interpret-the-memory-leak-report) 표시됩니다.
 
-*Crtdbg.h* 를 포함 하 여 `malloc` 및 `free` 함수를 디버그 버전 [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg) 및 [_free_dbg](/cpp/c-runtime-library/reference/free-dbg)에 매핑하여 메모리 할당 및 할당 취소를 추적 합니다. 이 매핑은 `_DEBUG`가 있는 디버그 빌드에서만 발생합니다. 릴리스 빌드에서는 일반적인 `malloc` 함수와 `free` 함수가 사용됩니다.
+*crtdbg.h*를 포함하여 `malloc` 및 `free` 함수를 디버그 버전 [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg) 및 [_free_dbg](/cpp/c-runtime-library/reference/free-dbg)에 매핑하여 메모리 할당 및 할당 취소를 추적합니다. 이 매핑은 `_DEBUG`가 있는 디버그 빌드에서만 발생합니다. 릴리스 빌드에서는 일반적인 `malloc` 함수와 `free` 함수가 사용됩니다.
 
-앞의 문을 사용 하 여 디버그 힙 함수를 사용 하도록 설정한 후에는 앱 종료 지점 전에 [_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks) 에 대 한 호출을 수행 하 여 앱이 종료 될 때 메모리 누수 보고서를 표시 합니다.
+앞의 문을 사용하여 디버그 힙 함수를 사용하도록 설정한 후에는 앱 종료 지점 전에 [_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks)에 대한 호출을 수행하여 앱이 종료될 때 메모리 누수 보고서를 표시합니다.
 
 ```cpp
 _CrtDumpMemoryLeaks();
 ```
 
-앱이 여러 번 종료 되는 경우 모든 종료 지점에 `_CrtDumpMemoryLeaks`를 수동으로 저장할 필요가 없습니다. 각 종료 지점에서 `_CrtDumpMemoryLeaks` 자동으로 호출 되도록 하려면 여기에 나와 있는 비트 필드를 사용 하 여 앱의 시작 부분에 `_CrtSetDbgFlag` 호출을 추가 합니다.
+앱이 여러 번 종료되는 경우 모든 종료 지점에 `_CrtDumpMemoryLeaks`를 수동으로 저장할 필요는 없습니다. 각 종료 지점에서 `_CrtDumpMemoryLeaks`가 자동으로 호출되도록 하려면 여기에 나와 있는 비트 필드를 사용하여 앱의 시작 부분에 `_CrtSetDbgFlag`에 대한 호출을 추가합니다.
 
 ```cpp
 _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );
@@ -72,7 +72,7 @@ _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );
 
 기본적으로 `_CrtDumpMemoryLeaks` 는 **출력** 창의 **디버그** 창에 메모리 누수 보고서를 출력합니다. 라이브러리를 사용할 경우에는 라이브러리에 의해 출력이 다른 위치로 다시 설정될 수도 있습니다.
 
-`_CrtSetReportMode`를 사용 하 여 보고서를 다른 위치로 리디렉션하거나 아래와 같이 **출력** 창으로 롤백할 수 있습니다.
+`_CrtSetReportMode`를 사용하여 보고서를 다른 위치로 리디렉션하거나 아래와 같이 **출력** 창으로 롤백할 수 있습니다.
 
 ```cpp
 _CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_DEBUG );
@@ -101,19 +101,19 @@ normal block at 0x00780E80, 64 bytes long.
 Object dump complete.
 ```
 
-두 번째 보고서에는 누수 된 메모리가 처음 할당 된 파일 이름 및 줄 번호가 표시 됩니다.
+두 번째 보고서에는 누수된 메모리가 처음 할당된 파일 이름 및 줄 번호가 표시됩니다.
 
 `_CRTDBG_MAP_ALLOC`정의 하는지 여부에 관계 없이 메모리 누수 보고서는 다음과 같이 표시 됩니다.
 
-- 예제에서 `18` 된 메모리 할당 번호
-- 예제에서 `normal` 블록 형식입니다.
-- 예제에서 `0x00780E80` 16 진수 메모리 위치입니다.
-- 예제에서 `64 bytes` 블록의 크기입니다.
+- 예제에서 메모리 할당 번호인 `18`
+- 예제에서 블록 형식인 `normal`
+- 예제에서 16진수 메모리 위치 `0x00780E80`
+- 예제에서 블록의 크기인 `64 bytes`
 - 블록 내 데이터의 처음 16바이트(16진수 형식)
 
-메모리 블록 형식은 *보통*, *클라이언트*또는 *CRT*입니다. *표준 블록* 은 프로그램이 할당한 보통 메모리입니다. *클라이언트 블록* 은 MFC 프로그램이 소멸자를 필요로 하는 개체에 대해 사용하는 특별한 메모리 블록 형식입니다. MFC `new` 연산자는 표준 블록 또는 클라이언트 블록 중 생성되는 개체에 적합한 블록을 만듭니다.
+메모리 블록 형식은 *normal*, *client* 또는 *CRT*입니다. *normal 블록*은 프로그램이 할당한 보통 메모리입니다. *client 블록*은 MFC 프로그램이 소멸자를 필요로 하는 개체에 대해 사용하는 특별한 메모리 블록 형식입니다. MFC `new` 연산자는 normal 블록 또는 client 블록 중 생성되는 개체에 적합한 블록을 만듭니다.
 
-*CRT 블록* 은 CRT 라이브러리가 자체 용도에 맞게 할당한 메모리 블록입니다. Crt 라이브러리는 이러한 블록의 할당 취소를 처리 하므로 crt 라이브러리에 심각한 문제가 있는 경우를 제외 하 고 메모리 누수 보고서에 CRT 블록이 나타나지 않습니다.
+*CRT 블록*은 CRT 라이브러리가 자체 용도에 맞게 할당한 메모리 블록입니다. CRT 라이브러리는 이러한 블록의 할당 취소를 처리하므로 CRT 라이브러리에 심각한 문제가 있는 경우를 제외하고 메모리 누수 보고서에 CRT 블록이 나타나지 않습니다.
 
 그 외에도 메모리 누수 보고서에 표시되지 않는 두 가지 메모리 블록 형식이 있습니다. *빈 블록* 은 해제 된 메모리 이므로 정의가 유출 되지 않습니다. *무시 블록* 은 메모리 누수 보고서에서 제외 하도록 명시적으로 표시 한 메모리입니다.
 

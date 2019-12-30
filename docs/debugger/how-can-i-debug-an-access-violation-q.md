@@ -26,7 +26,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "72911471"
 ---
-# <a name="how-can-i-debug-a-c-access-violation"></a>액세스 위반을 C++ 어떻게 디버깅할 수 있나요?
+# <a name="how-can-i-debug-a-c-access-violation"></a>C++ 액세스 위반을 어떻게 디버깅할 수 있나요?
 
 ## <a name="problem-description"></a>문제 설명
 

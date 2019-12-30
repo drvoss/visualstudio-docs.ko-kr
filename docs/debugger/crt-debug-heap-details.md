@@ -143,7 +143,7 @@ NoMansLand (0xFD) 응용 프로그램에서 사용 하는 메모리의 양쪽에
 ## <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> 디버그 힙의 블록 형식
 디버그 힙의 모든 메모리 블록은 다섯 가지 할당 형식 중 하나에 지정됩니다. 누수 탐지와 상태 보고 등의 목적에 따라 이러한 형식을 다르게 추적하고 보고합니다. [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg)와 같은 디버그 힙 할당 함수 중 하나를 직접 호출하여 블록을 할당하면 블록의 형식을 지정할 수 있습니다. 디버그 힙에 있는 메모리 블록 형식( **_CrtMemBlockHeader** 구조체의 **nBlockUse** 멤버에 설정) 다섯 가지는 다음과 같습니다.
 
-**_NORMAL_BLOCK** [malloc](/cpp/c-runtime-library/reference/malloc) 또는 [calloc](/cpp/c-runtime-library/reference/calloc) 를 호출 하면 일반 블록이 생성 됩니다. 표준 블록만 사용하고 클라이언트 블록은 사용하지 않으려면 모든 힙 할당 호출을 디버그 빌드의 해당 디버그 부분에 매핑시키는 [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc)을 정의해야 합니다. 그러면 각 할당 호출에 대한 파일 이름과 줄 번호 정보가 해당 블록 헤더에 저장됩니다.
+**_NORMAL_BLOCK** [malloc](/cpp/c-runtime-library/reference/malloc) 또는 [calloc](/cpp/c-runtime-library/reference/calloc)을 호출하면 일반 블록이 생성됩니다. 표준 블록만 사용하고 클라이언트 블록은 사용하지 않으려면 모든 힙 할당 호출을 디버그 빌드의 해당 디버그 부분에 매핑시키는 [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc)을 정의해야 합니다. 그러면 각 할당 호출에 대한 파일 이름과 줄 번호 정보가 해당 블록 헤더에 저장됩니다.
 
 `_CRT_BLOCK` 여러 런타임 라이브러리 함수에 의해 내부적으로 할당된 메모리 블록은 CRT 블록으로 표시되어 별도로 처리할 수 있습니다. 결과적으로 누수 탐지나 다른 작업들이 런타임 라이브러리 함수의 영향을 받지 않습니다. 할당은 CRT 형식의 어떠한 블록도 할당하거나 할당 취소하거나 해제할 수 없습니다.
 

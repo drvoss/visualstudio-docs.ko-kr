@@ -31,7 +31,7 @@ ms.locfileid: "72018859"
 
 ::: moniker range="vs-2019"
 
-Visual Studio 2019를 설치하는 것을 환영합니다! 이 버전에서는 필요한 기능만 선택하여 쉽게 설치할 수 있습니다. 또한 최소 설치 공간이 줄어들기 때문에 시스템에 미치는 영향을 최소화하면서 빠르게 설치됩니다.
+Visual Studio 2019 설치를 시작합니다! 이 버전에서는 필요한 기능만 선택하여 쉽게 설치할 수 있습니다. 또한 최소 설치 공간이 줄어들기 때문에 시스템에 미치는 영향을 최소화하면서 빠르게 설치됩니다.
 
 ::: moniker-end
 
@@ -110,7 +110,7 @@ Visual Studio 2017에 대한 부트스트래퍼를 가져오려면 [Visual Studi
 
 ::: moniker range="vs-2019"
 
-다운로드하기 위해서는, 다음 단추를 선택하고, 원하는 Visual Studio 버전을 선택하고, **저장**을 선택한 다음, **폴더 열기**를 선택합니다.
+이렇게 하려면 다음 단추를 선택하고, 원하는 Visual Studio 버전을 선택하고, **저장**을 선택한 다음, **폴더 열기**를 선택합니다.
 
  > [!div class="button"]
  > [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads)
@@ -123,8 +123,8 @@ Visual Studio 설치 관리자를 설치하려면 부트스트래퍼 파일을 �
 
 1. **다운로드** 폴더에서 다음 파일 중 하나와 일치하거나 비슷한 부트스트래퍼 파일을 두 번 클릭합니다.
 
-   * Visual Studio Community를 설치하기 위한 **vs_community.exe**
-   * Visual Studio Professional을 설치하기 위한 **vs_professional.exe**
+   * Visual Studio Community용 **vs_community.exe**
+   * Visual Studio Professional용 **vs_professional.exe**
    * Visual Studio Enterprise를 설치하기 위한 **vs_enterprise.exe**
 
    사용자 계정 컨트롤 알림을 받으면 **예**를 선택합니다.
@@ -157,8 +157,8 @@ Visual Studio 설치 관리자를 설치하려면 부트스트래퍼 파일을 �
 
    ![Visual Studio 2019: 작업 설치](../install/media/vs-2019/vs-installer-workloads.png)
 
-     예를 들어 "ASP.NET 및 웹 개발" 작업 선택합니다. 20개가 넘는 언어에 대한 기본 코드 편집 기능, 프로젝트 없이도 폴더에서 코드를 열어 편집할 수 있는 기능 및 통합 소스 코드 제어 기능이 포함된 기본 핵심 편집기가 제공됩니다.
-
+     예를 들어 "ASP.NET 및 웹 개발" 작업을 선택합니다. 20개가 넘는 언어에 대한 기본 코드 편집 기능, 프로젝트 없이도 폴더에서 코드를 열어 편집할 수 있는 기능 및 통합 소스 코드 제어 기능이 포함된 기본 핵심 편집기가 제공됩니다.
+     
 1. 원하는 작업을 선택한 후 **설치**를 선택합니다.
 
     다음으로 Visual Studio 설치 진행률을 보여 주는 상태 화면이 나타납니다.
@@ -166,7 +166,7 @@ Visual Studio 설치 관리자를 설치하려면 부트스트래퍼 파일을 �
  ::: moniker-end
 
 > [!TIP]
-> 설치 후에 언제든지 초기에 설치하지 않은 작업 또는 구성 요소를 설치할 수 있습니다. Visual Studio가 열려 있으면 **도구** > **도구 및 기능 가져오기...** 로 이동하여 Visual Studio 설치 관리자를 엽니다. 또는 [시작] 메뉴에서 **Visual Studio 설치 관리자**를 엽니다. 여기에서 설치할 작업 또는 구성 요소를 선택합니다. 그런 다음, **수정**을 선택합니다.
+> 설치 후에 언제든지 초기에 설치하지 않은 작업 또는 구성 요소를 설치할 수 있습니다. Visual Studio가 열려 있으면 **도구** > **도구 및 기능 가져오기...**로 이동하여 Visual Studio 설치 관리자를 엽니다. 또는 [시작] 메뉴에서 **Visual Studio 설치 관리자**를 엽니다. 여기에서 설치할 작업 또는 구성 요소를 선택합니다. 그런 다음, **수정**을 선택합니다.
 
 ## <a name="step-5---choose-individual-components-optional"></a>5단계 - 개별 구성 요소 선택(선택 사항)
 

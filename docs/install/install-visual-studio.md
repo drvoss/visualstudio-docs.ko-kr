@@ -31,7 +31,7 @@ ms.locfileid: "72018859"
 
 ::: moniker range="vs-2019"
 
-Visual Studio 2019를 시작합니다. 이 버전에서는 필요한 기능만 선택하여 쉽게 설치할 수 있습니다. 또한 최소 설치 공간이 줄어들기 때문에 시스템에 미치는 영향을 최소화하면서 빠르게 설치됩니다.
+Visual Studio 2019 설치를 시작합니다! 이 버전에서는 필요한 기능만 선택하여 쉽게 설치할 수 있습니다. 또한 최소 설치 공간이 줄어들기 때문에 시스템에 미치는 영향을 최소화하면서 빠르게 설치됩니다.
 
 ::: moniker-end
 
@@ -42,7 +42,7 @@ Visual Studio를 설치하는 새로운 방법이 있습니다. 이 버전에서
 ::: moniker-end
 
 > [!NOTE]
-> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio 설치](/visualstudio/mac/installation/)를 참조하세요.
+> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio에 대해서는 [Mac용 Visual Studio 설치](/visualstudio/mac/installation/)를 참조하세요.
 
 ::: moniker range="vs-2019"
 
@@ -58,15 +58,15 @@ Visual Studio를 설치하는 새로운 방법이 있습니다. 이 버전에서
 
 설치할 준비가 되었나요? 설치 과정을 단계별로 안내합니다.
 
-## <a name="step-1---make-sure-your-computer-is-ready-for-visual-studio"></a>1단계 - Visual Studio에 대해 컴퓨터가 준비되었는지 확인
+## <a name="step-1---make-sure-your-computer-is-ready-for-visual-studio"></a>1단계 - 컴퓨터가 Visual Studio를 설치하기 적합한지 확인하기
 
-Visual Studio 설치를 시작하기 전에
+Visual Studio 설치를 시작하기 전에:
 
 ::: moniker range="vs-2017"
 
 1. [시스템 요구 사항](/visualstudio/productinfo/vs2017-system-requirements-vs)을 확인합니다. 이러한 요구 사항은 컴퓨터에서 Visual Studio 2017을 지원하는지 여부를 확인하는 데 도움이 됩니다.
 
-1. 최신 Windows 업데이트를 적용합니다. 이러한 업데이트는 컴퓨터에 최신 보안 업데이트와 Visual Studio에 필요한 시스템 구성 요소가 모두 설치되어 있는지 확인합니다.
+1. 최신 Windows 업데이트를 적용합니다. 이러한 업데이트는 컴퓨터에 최신 보안 업데이트와 Visual Studio에 필요한 시스템 구성 요소를 모두 설치합니다.
 
 1. 다시 부팅합니다. 다시 부팅하면 보류 중인 설치 또는 업데이트가 Visual Studio 설치를 방해하지 않습니다.
 
@@ -78,7 +78,7 @@ Visual Studio 설치를 시작하기 전에
 
 1. [시스템 요구 사항](/visualstudio/releases/2019/system-requirements)을 확인합니다. 이러한 요구 사항은 컴퓨터에서 Visual Studio 2019를 지원하는지 여부를 확인하는 데 도움이 됩니다.
 
-1. 최신 Windows 업데이트를 적용합니다. 이러한 업데이트는 컴퓨터에 최신 보안 업데이트와 Visual Studio에 필요한 시스템 구성 요소가 모두 설치되어 있는지 확인합니다.
+1. 최신 Windows 업데이트를 적용합니다. 이러한 업데이트는 컴퓨터에 최신 보안 업데이트와 Visual Studio에 필요한 시스템 구성 요소를 모두 설치합니다.
 
 1. 다시 부팅합니다. 다시 부팅하면 보류 중인 설치 또는 업데이트가 Visual Studio 설치를 방해하지 않습니다.
 
@@ -104,7 +104,7 @@ Visual Studio 2019와 함께 이전 버전의 Visual Studio를 실행하는 방�
 
 ::: moniker range="vs-2017"
 
-Visual Studio 2017에 대한 부트스트래퍼를 가져오려면 [Visual Studio 이전 버전](https://visualstudio.microsoft.com/vs/older-downloads/) 다운로드 페이지에서 방법에 관한 세부 정보를 참조하세요.
+Visual Studio 2017에 대한 부트스트래퍼를 가져오려면 [Visual Studio 이전 버전](https://visualstudio.microsoft.com/vs/older-downloads/) 다운로드 페이지에서 세부 정보를 참조하세요.
 
 ::: moniker-end
 
@@ -119,7 +119,7 @@ Visual Studio 2017에 대한 부트스트래퍼를 가져오려면 [Visual Studi
 
 ## <a name="step-3---install-the-visual-studio-installer"></a>3단계 - Visual Studio 설치 관리자 설치
 
-Visual Studio 설치 관리자를 설치하려면 부트스트래퍼 파일을 실행합니다. 이 새 경량 설치 관리자는 Visual Studio를 설치하고 사용자 지정하는 데 필요한 모든 항목을 포함합니다.
+Visual Studio 설치 관리자를 설치하려면 부트스트래퍼 파일을 실행합니다. 이 새로운 경량 설치 관리자는 Visual Studio를 설치하고 사용자 지정하는 데 필요한 모든 항목을 포함합니다.
 
 1. **다운로드** 폴더에서 다음 파일 중 하나와 일치하거나 비슷한 부트스트래퍼 파일을 두 번 클릭합니다.
 
@@ -153,11 +153,11 @@ Visual Studio 설치 관리자를 설치하려면 부트스트래퍼 파일을 �
 
 ::: moniker range="vs-2019"
 
-1. 새 워크로드 및 구성 요소가 설치된 후 **시작**을 선택합니다.
+1. **Visual Studio 설치** 화면에서 원하는 작업을 찾습니다.
 
    ![Visual Studio 2019: 워크로드 설치](../install/media/vs-2019/vs-installer-workloads.png)
 
-     예를 들어 "ASP.NET 및 웹 개발" 워크로드를 선택합니다. 20개가 넘는 언어에 대한 기본 코드 편집 기능, 프로젝트 없이도 폴더에서 코드를 열어 편집할 수 있는 기능 및 통합 소스 코드 제어 기능이 포함된 기본 핵심 편집기가 제공됩니다.
+     예를 들어 "ASP.NET 및 웹 개발" 작업을 선택합니다. 20개가 넘는 언어에 대한 기본 코드 편집 기능, 프로젝트 없이도 폴더에서 코드를 열어 편집할 수 있는 기능 및 통합 소스 코드 제어 기능이 포함된 기본 핵심 편집기가 제공됩니다.
 
 1. 원하는 작업을 선택한 후 **설치**를 선택합니다.
 
@@ -170,7 +170,7 @@ Visual Studio 설치 관리자를 설치하려면 부트스트래퍼 파일을 �
 
 ## <a name="step-5---choose-individual-components-optional"></a>5단계 - 개별 구성 요소 선택(선택 사항)
 
-Workloads 기능을 사용하여 Visual Studio 설치를 사용자 지정하지 않거나 워크로드 설치보다 더 많은 구성 요소를 추가하려는 경우, **개별 구성 요소** 탭에서 개별 구성 요소를 설치하거나 추가하여 수행할 수 있습니다. 원하는 것을 선택한 다음, 지시를 따릅니다.
+작업 기능을 이용하여 Visual Studio 설치를 사용자 지정하고 싶지 않거나 작업 설치보다 더 많은 구성 요소를 추가하려는 경우, **개별 구성 요소** 탭에서 개별 구성 요소를 설치하거나 추가하여 수행할 수 있습니다. 원하는 것을 선택한 다음, 지시를 따릅니다.
 
 ::: moniker range="vs-2017"
 
@@ -186,7 +186,7 @@ Workloads 기능을 사용하여 Visual Studio 설치를 사용자 지정하지 
 
 ## <a name="step-6---install-language-packs-optional"></a>6단계 - 언어 팩 설치(선택 사항)
 
-기본적으로 설치 관리자 프로그램은 처음 실행될 때 운영 체제의 언어와 일치시키려고 합니다. 선택한 언어로 Visual Studio를 설치하려면 Visual Studio 설치 관리자에서 **언어 팩** 탭을 선택한 다음, 지시에 따릅니다.
+기본적으로 설치 관리자 프로그램은 처음 실행될 때 운영 체제의 언어와 일치시키려고 합니다. 원하는 언어로 Visual Studio를 설치하려면 Visual Studio 설치 관리자에서 **언어 팩** 탭을 선택한 다음, 지시에 따릅니다.
 
 ::: moniker range="vs-2017"
 
@@ -249,11 +249,11 @@ Workloads 기능을 사용하여 Visual Studio 설치를 사용자 지정하지 
 
 1. 시작 창에서 **새 프로젝트 만들기**를 선택합니다.
 
-1. 검색 상자에 생성할 앱 유형을 입력하여 사용 가능한 템플릿 목록을 확인합니다. 템플릿 목록은 설치 중에 선택한 워크로드에 따라 달라집니다. 다른 템플릿을 보려면 다른 워크로드를 선택합니다.
+1. 검색 상자에 생성할 앱 유형을 입력하여 사용 가능한 템플릿 목록을 확인합니다. 템플릿 목록은 설치 중에 선택한 작업에 따라 달라집니다. 다른 템플릿을 보려면 다른 워크로드를 선택합니다.
 
    **언어** 드롭다운 목록을 사용하여 특정 프로그래밍 언어 검색을 필터링할 수도 있습니다. **플랫폼** 목록 및 **프로젝트 형식** 목록을 사용하여 필터링할 수도 있습니다.
 
-1. Visual Studio에서 새 프로젝트를 열면 코딩할 준비가 완료됩니다.
+1. Visual Studio에서 새 프로젝트를 열면 코딩할 준비가 완료됩니다!
 
 ::: moniker-end
 

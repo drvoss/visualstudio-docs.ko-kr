@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e7ddccf321259ff8f4de2522404fdc42617a810
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 9b38089a088186a30ebd13cae68d19ac23235bf9
+ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180187"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74829981"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>자습서: Visual Studio를 사용하여 Visual Basic 코드를 디버그하는 방법 알아보기
 
@@ -66,17 +66,17 @@ Visual Studio 2017이 설치되어 있어야 하고 **.NET 데스크톱 개발**
 1. Visual Studio를 엽니다.
 
     ::: moniker range=">=vs-2019"
-    **Esc** 키를 눌러 시작 창을 닫습니다. **Ctrl + Q**를 입력하여 검색 상자를 열고 **시각적 개체 기본 사항**을 입력하고 **템플릿**을 선택한 다음, **새 콘솔 앱(.NET Framework) 프로젝트 만들기**를 선택합니다. 표시되는 대화 상자에 **get-started-debugging**과 같은 이름을 입력한 다음, **만들기**를 선택합니다.
+    **Esc** 키를 눌러 시작 창을 닫습니다. **Ctrl + Q**를 입력하여 검색 상자를 열고 **시각적 개체 기본 사항**을 입력하고 **템플릿**을 선택한 다음, **새 콘솔 앱(.NET Core) 프로젝트 만들기** 또는 **새 콘솔 앱(.NET Framework) 만들기**를 선택합니다. 표시되는 대화 상자에 **get-started-debugging**과 같은 이름을 입력한 다음, **만들기**를 선택합니다.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Basic** 아래에 **Windows 데스크톱**을 선택한 다음, 가운데 창에서 **콘솔 앱(.NET Framework)** 을 선택합니다. 그런 다음, **get-started-debugging**과 같은 이름을 입력하고 **확인**을 클릭합니다.
+    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례대로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Basic** 아래에 **Windows 데스크톱**을 선택한 다음, 가운데 창에서 **콘솔 앱(.NET Framework)** 을 선택합니다. 그런 다음, **get-started-debugging**과 같은 이름을 입력하고 **확인**을 클릭합니다.
     ::: moniker-end
 
     **콘솔 앱(.NET Framework)** 프로젝트 템플릿이 표시되지 않는 경우 **도구** > **도구 및 기능 가져오기...** 로 이동하면 Visual Studio 설치 관리자가 열립니다. **.NET 데스크톱 개발** 워크로드를 선택한 다음 **수정**을 선택합니다.
 
     Visual Studio가 프로젝트를 만듭니다.
 
-1. *Module1.vb*에서 다음 코드로 바꿉니다.
+1. *Module1.vb*에서 모든 기본 코드를 바꿉니다.
 
     ```vb
     Module Module1
@@ -197,7 +197,7 @@ Visual Studio 2017이 설치되어 있어야 하고 **.NET 데스크톱 개발**
 
 ## <a name="start-the-debugger"></a>디버거 시작!
 
-1. **F5** 키(**디버그 > 디버깅 시작**) 또는 **디버깅 시작** 단추 ![디버깅 시작](../../debugger/media/dbg-tour-start-debugging.png "디버깅 시작")를 누릅니다.
+1. 디버그 도구 모음에서 **F5**(**디버그 > 디버깅 시작**) 또는 **디버깅 시작** 단추 ![디버깅 시작](../../debugger/media/dbg-tour-start-debugging.png "디버깅 시작")을 누릅니다.
 
      **F5** 키는 애플리케이션 프로세스에 디버거가 연결된 상태에서 애플리케이션을 시작하지만, 지금은 코드를 검사하기 위한 특별한 작업을 수행하지 않았습니다. 따라서 애플리케이션이 로드되고 콘솔 출력이 표시됩니다.
 
@@ -212,7 +212,7 @@ Visual Studio 2017이 설치되어 있어야 하고 **.NET 데스크톱 개발**
 
      이 자습서에서는 디버거를 사용하여 이 애플리케이션을 자세히 살펴보고 디버거 기능도 살펴봅니다.
 
-2. 빨간색 중지 ![디버깅 중지](../../debugger/media/dbg-tour-stop-debugging.png "디버깅 중지") 단추를 눌러 디버거를 중지합니다.
+2. 빨간색 중지 ![디버깅 중지](../../debugger/media/dbg-tour-stop-debugging.png "디버그하는 동안 진단 도구 사용") 단추를 눌러 디버거를 중지합니다.
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>중단점 설정 및 디버거 시작
 
@@ -224,7 +224,7 @@ Visual Studio 2017이 설치되어 있어야 하고 **.NET 데스크톱 개발**
 
     ![중단점 설정](../visual-basic/media/get-started-set-breakpoint-vb.png)
 
-    중단점은 신뢰할 수 있는 디버깅의 가장 기본적이 고 필수적인 기능입니다. 중단점은 변수의 값, 메모리의 동작 또는 코드 분기의 실행 여부를 확인할 수 있도록 Visual Studio에서 실행 중인 코드를 일시 중단해야 하는 위치를 나타냅니다.
+    중단점은 신뢰할 수 있는 디버깅의 가장 기본적이고 필수적인 기능입니다. 중단점은 변수의 값, 메모리의 동작 또는 코드 분기의 실행 여부를 확인할 수 있도록 Visual Studio에서 실행 중인 코드를 일시 중단해야 하는 위치를 나타냅니다.
 
 2. **F5** 또는 **디버깅 시작** 단추 ![디버깅 시작](../../debugger/media/dbg-tour-start-debugging.png "디버깅 시작")을 누릅니다. 그러면 앱이 시작되고, 중단점이 설정된 코드 줄에서 디버거가 실행됩니다.
 
@@ -242,13 +242,13 @@ Visual Studio 2017이 설치되어 있어야 하고 **.NET 데스크톱 개발**
 
 1. `Main` 함수의 `shape.Draw` 메서드 호출에서 일시 중지된 상태로 **F11** 키를 눌러(또는 **디버그 > 한 단계씩 코드 실행** 선택) `Rectangle` 클래스에 대한 코드로 이동합니다.
 
-     ![F11 키를 사용하여 한 단계씩 코드 실행](../visual-basic/media/get-started-f11-vb.png "F11 한 단계씩 코드 실행")
+     ![F11을 사용하여 한 단계씩 코드 실행](../visual-basic/media/get-started-f11-vb.png "F11 한 단계씩 코드 실행")
 
-     F11 키는 **한 단계씩 코드 실행** 명령이고 한 번에 하나의 명령문을 실행합니다. F11 키는 실행 흐름을 가장 자세히 검사할 수 있는 좋은 방법입니다. (코드에서 더 빨리 이동할 수 있도록 몇 가지 다른 옵션도 표시합니다.) 기본적으로 디버거는 사용자 코드가 아닌 코드를 건너뜁니다(자세한 내용은 [내 코드만](../../debugger/just-my-code.md)을 참조하세요).
+     F11 키는 **한 단계씩 코드 실행** 명령으로서 한 번에 하나의 명령문씩 앱을 실행합니다. F11 키는 실행 흐름을 가장 자세히 검사할 수 있는 좋은 방법입니다. (코드에서 더 빨리 이동할 수 있도록 몇 가지 다른 옵션도 표시합니다.) 기본적으로 디버거는 사용자 코드가 아닌 코드를 건너뜁니다(자세한 내용은 [내 코드만](../../debugger/just-my-code.md)을 참조하세요).
 
 2. 디버거가 `MyBase.Draw` 메서드 호출에서 중지할 때까지 **F10** 키를 몇 번 누른(또는 **디버그 > 프로시저 단위 실행** 선택) 다음, **F10** 키를 한 번 더 누릅니다.
 
-     ![F10 키를 사용하여 프로시저 단위 코드 실행](../visual-basic/media/get-started-step-over-vb.png "F10 프로시저 단위 실행")
+     ![F10을 사용하여 코드를 프로시저 단위로 실행](../visual-basic/media/get-started-step-over-vb.png "F10 프로시저 단위 실행")
 
      지금은 디버거에서 기본 클래스(`Shape`)의 `Draw` 메서드를 한 단계씩 실행하지 않습니다. **F10** 키는 애플리케이션 코드의 함수 또는 메서드를 한 단계씩 실행하지 않고 디버거를 진행합니다(코드는 계속 실행되고 있음). `MyBase.Draw` 메서드 호출에서 **F10**(**F11** 대신)을 눌러 `MyBase.Draw`에 대한 구현 코드(지금은 관심이 없을 수 있음)를 건너뛰었습니다.
 
@@ -263,9 +263,9 @@ Visual Studio 2017이 설치되어 있어야 하고 **.NET 데스크톱 개발**
 
 2. **실행하려면 클릭** 단추 ![실행하려면 클릭](../../debugger/media/dbg-tour-run-to-click.png "RunToClick")을 클릭합니다.
 
-    이 단추를 사용하는 것은 임시 중단점을 설정하는 것과 비슷합니다. **실행하려면 클릭**은 애플리케이션 코드의 표시 영역 내에서 빠르게 이동할 수 있습니다(열려 있는 파일은 모두 클릭할 수 있음).
+    이 단추 사용은 임시 중단점 설정과 비슷합니다. **실행하려면 클릭**은 애플리케이션 코드의 표시 영역 내에서 빠르게 이동할 수 있습니다(열려 있는 파일은 모두 클릭할 수 있음).
 
-    디버거에서 `Triangle` 클래스에 대한 `Console.WriteLine` 메서드 구현으로 이동합니다.
+    디버거에서 `Triangle` 클래스에 대한 `Console.WriteLine` 메서드 구현으로 이동합니다. (이전에 설정한 중단점에서 디버거가 먼저 일시 중지되는 경우 **실행하려면 클릭**를 다시 사용하여 디버거를 `Console.WriteLine`으로 진행합니다.)
 
     일시 중지한 상태에서 오타가 있음을 알 수 있습니다! "Drawing a trangle" 출력의 철자가 틀립니다. 디버거에서 애플리케이션을 실행하면서 바로 여기에서 수정할 수 있습니다.
 
@@ -286,13 +286,13 @@ Visual Studio 2017이 설치되어 있어야 하고 **.NET 데스크톱 개발**
 
      이 명령은 현재 함수가 반환될 때까지 앱 실행을 다시 시작하고 디버거를 진행시킵니다.
 
-     `Main` 메서드의 `For Each` 루프로 돌아와야 합니다.
+     `Main` 메서드의 `For Each` 루프로 돌아와야 합니다. 그렇지 않으면 **Shift** + **F11**을 두 번 누릅니다.
 
 ## <a name="restart-your-app-quickly"></a>앱을 빠르게 다시 시작
 
-디버그 도구 모음에서 **다시 시작** ![애플리케이션 다시 시작](../../debugger/media/dbg-tour-restart.png "RestartApp") 단추를 클릭합니다(**Ctrl** + **Shift** + **F5**).
+디버그 도구 모음에서 **다시 시작** ![앱 다시 시작](../../debugger/media/dbg-tour-restart.png "RestartApp") 단추를 클릭합니다(**Ctrl** + **Shift** + **F5**).
 
-**다시 시작**을 누르면 애플리케이션을 중지하고 디버거를 다시 시작하는 것보다 더 많은 시간이 절약됩니다. 디버거가 코드를 실행하여 적중한 첫 번째 중단점에서 일시 중지합니다.
+**다시 시작**을 누르면 앱을 중지하고 디버거를 다시 시작하는 것에 비해 시간이 절약됩니다. 디버거가 코드를 실행하여 적중한 첫 번째 중단점에서 일시 중지합니다.
 
 디버거가 `shape.Draw()` 메서드에서 설정한 중단점에서 다시 중지합니다.
 

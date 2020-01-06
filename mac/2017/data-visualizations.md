@@ -1,17 +1,17 @@
 ---
 title: 디버깅 - 데이터 시각화
 description: 디버깅은 프로그래밍의 공통적인 필수 부분입니다. Mac용 Visual Studio에는 편리한 디버깅을 위한 전체 기능 모음이 포함되어 있습니다. 이 문서에서는 디버거에서 개체를 검사할 때 볼 수 있는 다양한 데이터 시각화를 살펴보겠습니다.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 0b9ec63855eff0b69f5523b1905b79d360509e67
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3355b81406d2b510dc13604a026bcd014bf9dbcb
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62932005"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984764"
 ---
 # <a name="data-visualizations"></a>데이터 시각화
 
@@ -28,7 +28,7 @@ iOS 및 Mac의 CGPoint 또는 Point/PointF는 디버그 패드에 X 및 Y 값을
 
 ![포인트 시각화](media/data-visualizations-image10.png)
 
-## <a name="size"></a>크기
+## <a name="size"></a>Size
 iOS 및 Mac의 CGSize 또는 Size/SizeF는 사각형으로 렌더링됩니다. 크기가 250px 이상으로 확장될 때까지 크기가 조정되고, 250px 이상이 되면 최대 크기가 250px인 사각형으로 크기가 조정됩니다.
 
 [크기 시각화](media/data-visualizations-image11.png)

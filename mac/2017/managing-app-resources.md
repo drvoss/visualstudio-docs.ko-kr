@@ -1,16 +1,16 @@
 ---
 title: 앱 리소스 관리
 description: 이 문서는 Mac용 Visual Studio에서 다양한 플랫폼을 위한 앱 리소스를 관리하는 방법을 설명하는 여러 가이드로 연결됩니다.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 61EAAB8F-3C32-4574-924F-CFC616604089
-ms.openlocfilehash: e4182bdcc8e2a97b152d5548b07cd03a152607ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c3572edc46d4f69a338ba655b32254126a7fce9c
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997191"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985281"
 ---
 # <a name="managing-app-resources"></a>앱 리소스 관리
 

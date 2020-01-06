@@ -1,16 +1,16 @@
 ---
 title: Mac용 Visual Studio 워크로드
 description: 이 문서에서는 Xamarin 모바일 앱, ASP.NET Core 및 게임용 Unity를 포함하여 Mac용 Visual Studio에서 사용할 수 있는 다양한 워크로드를 설명합니다.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 12/05/2018
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
-ms.openlocfilehash: 959af3acf8c6da1437ffc6efd66e984902e9e94a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a189abf6b46acbf708b1a56fb33d5a50cd3d740c
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62985426"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985108"
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Mac용 Visual Studio 워크로드
 

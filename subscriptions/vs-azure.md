@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Visual Studio 구독에 포함된 Azure DevTest 개별 크레딧 혜택을 활성화하는 방법을 알아봅니다.
-ms.openlocfilehash: 25bb97675c65244258c217901a010ab2211554d0
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.openlocfilehash: 789548f50f7d631f3db190ce5e2638858e8c4707
+ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983761"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74810045"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 Microsoft Azure 사용
 Visual Studio 구독자는 추가 비용 없이 Microsoft Azure를 사용할 수 있습니다.  [월간 Azure DevTest 개별 크레딧](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)을 사용하면 Azure는 개발/테스트를 위한 개인용 샌드박스가 됩니다.  가상 머신, 클라우드 서비스 및 기타 Azure 리소스를 프로비전할 수 있습니다.  크레딧 금액은 구독 수준에 따라 다릅니다.
@@ -74,6 +74,9 @@ A:  Azure Portal에서 지원 인시던트를 제출하는 작업은 세 단계�
 3. 지원 인시던트를 제출합니다.
 
 자세한 내용은 [기술 지원](vs-tech-support.md) 설명서를 참조하세요.
+
+### <a name="q-how-owns-the-intellectual-property-i-create-using-my-azure-devtest-individual-credit"></a>Q: Azure DevTest 개별 크레딧을 사용하여 만든 지적 재산을 소유하는 방법
+A:  해당 회사가 제공하는 리소스로 만들어진 직원이 생성한 지적 재산은 해당 리소스를 제공하는 회사의 지적 재산입니다. 따라서 고용주를 통해 Visual Studio 구독을 받은 경우 해당 지적 재산권 정책이 적용됩니다. 
 
 ### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>Q: Azure에 대한 내 액세스가 곧 종료된다는 메시지를 받았습니다.  Azure를 계속 사용하려면 어떻게 해야 합니까?
 A:  이 이메일은 Visual Studio 구독에 연결된 Azure 혜택을 사용하고 있으며 해당 구독이 만료 또는 제거되면 수신됩니다.  Azure를 계속 사용하기 위한 다음과 같은 몇 가지 옵션이 있습니다.

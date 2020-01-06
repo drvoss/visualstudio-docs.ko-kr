@@ -1,5 +1,5 @@
 ---
-title: 문제 보고
+title: '문제 보고: 상태 및 FAQ'
 description: 문제 보고 도구의 개요를 제공하며 문제 상태 및 정의를 포함합니다.
 ms.date: 11/15/2018
 ms.custom: seodec18
@@ -9,14 +9,14 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 519c7f233866bf71bb342d4f740b3e0a90a4ba72
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d024e28d696a60a9fc77c290283382dcd0e0ede8
+ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925991"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74853505"
 ---
-# <a name="overview-report-a-problem"></a>개요: 문제 보고
+# <a name="report-a-problem-states-and-faq"></a>문제 보고: 상태 및 FAQ
 
 문제 보고 도구를 사용하면 Visual Studio 개발자 커뮤니티에서 문제를 제출할 수 있습니다. 각 문제 보고서는 핵심 엔지니어링 시스템의 작업 항목이 되며, 중요한 문제를 식별하고 해결하는 데 도움이 되도록 제품 팀과 직접 소통할 수 있는 권한을 부여합니다. 풍부한 진단 정보와 함께 제출된 피드백은 Visual Studio 제품군을 개선하는 데 중요합니다. 시간을 내어 문제를 보고해 주셔서 정말 감사합니다.
 

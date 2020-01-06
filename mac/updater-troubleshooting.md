@@ -2,17 +2,17 @@
 title: Updater에서 정보 검색 중에 오류가 발생했습니다.
 description: ‘업데이트 정보를 검색하는 동안 오류가 발생했습니다.’라는 오류가 나타나는 경우 수정하는 방법에 대한 지침입니다. Mac용 Visual Studio 2019에서
 ms.topic: troubleshooting
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 04/13/2019
 ms.technology: vs-ide-install
 ms.assetid: 31AF914A-C66B-4CD3-9429-39695E0E94AE
-ms.openlocfilehash: 5ba295defe19c6f3c6c56d5bccc7cc3fa367bb50
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.openlocfilehash: b25285ff3060734ee18085d7a9e89cd0d0c43439
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70107785"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984411"
 ---
 # <a name="troubleshooting-updater-has-errors-retrieving-information"></a>문제 해결: Updater에서 정보 검색 중에 오류가 발생했습니다.
 

@@ -6,14 +6,15 @@ manager: lank
 ms.date: 08/07/2019
 ms.topic: conceptual
 description: 구독 관리 포털을 사용하여 조직의 Visual Studio 구독 관리를 시작하는 방법을 알아봅니다.
-ms.openlocfilehash: 6ee33bfaf47452a1213cd5def206e47aee790fc3
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: 484ecdca3435ee725853932acd66e307c2eb3cbe
+ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490702"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74879310"
 ---
-# <a name="overview-of-the-visual-studio-subscriptions-administration-portal"></a>Visual Studio 구독 관리 포털 개요
+# <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio Subscriptions Administrator 포털 개요
+
 Visual Studio 구독 관리 포털은 조직의 구독을 한 곳에서 관리하는 도구를 제공합니다. 
 
 ## <a name="important-considerations"></a>중요 고려 사항
@@ -45,7 +46,7 @@ Visual Studio 구독 관리 포털을 사용하는 경우 다음 사항을 유�
 > [!div class="mx-imgBorder"]
 > ![Visual Studio 구독 관리 포털 세부 정보 페이지](_img/using-admin-portal/details-page.png)
 
-## <a name="resources"></a>자료
+## <a name="resources"></a>리소스
 - [Visual Studio 라이선스 백서](https://aka.ms/vslicensing)
 - [구독 옵션 및 가격 비교](https://visualstudio.microsoft.com/vs/pricing)
 - [Visual Studio IDE 기능 비교](https://visualstudio.microsoft.com/vs/compare)

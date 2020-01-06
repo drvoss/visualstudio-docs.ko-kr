@@ -1,17 +1,17 @@
 ---
 title: Mac용 Visual Studio 둘러보기
 description: Mac용 Visual Studio에서는 iOS, Android, Mac, Xamarin.Forms용 Xamarin 프로젝트와 ASP.NET Core 웹 사이트를 비롯하여 macOS에서 .NET 애플리케이션을 빌드하기 위한 통합 개발 환경을 제공합니다.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 43b7918dfba6ff1d8076d3173900ecdc1b1223a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3d25fced1e9c9dd6431f4056b5b561f476eecb28
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998397"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984977"
 ---
 # <a name="visual-studio-2017-for-mac-tour"></a>Mac용 Visual Studio 2017 둘러보기
 
@@ -41,7 +41,7 @@ Mac용 Visual Studio는 애플리케이션 파일 및 설정 관리, 애플리�
 
 ## <a name="welcome-screen"></a>시작 화면
 
-Mac용 Visual Studio를 시작하면 ‘시작 화면’이 표시됩니다.
+Mac용 Visual Studio를 시작하면 ‘시작 화면’이 표시됩니다. 
 
 ![시작 화면](media/ide-tour-image1.png)
 

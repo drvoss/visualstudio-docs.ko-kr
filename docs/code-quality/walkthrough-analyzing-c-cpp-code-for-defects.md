@@ -12,12 +12,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdb99cf487995859b9623f11b3559f1b5e7e3ca7
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: e2154a07d498012c9c45f992ebed51b0218e823a
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018346"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75401014"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>연습: C/C++ 코드의 오류 분석
 
@@ -28,7 +28,7 @@ ms.locfileid: "72018346"
 - 경고를 오류로 처리 합니다.
 - 코드 오류 분석을 향상 시키기 위해 소스 코드에 주석을 추가 합니다.
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>전제 조건
 
 - [데모 샘플](../code-quality/demo-sample.md)의 복사본입니다.
 - C/C++의 기본적인 이해 해야 합니다.
@@ -49,7 +49,7 @@ ms.locfileid: "72018346"
 
      **Codedefects 속성 페이지** 대화 상자가 표시 됩니다.
 
-5. **코드 분석**을 클릭 합니다.
+5. **코드 분석**을 클릭합니다.
 
 6. 클릭는 **C/C++ 빌드에 코드 분석 사용** 확인란 합니다.
 
@@ -59,7 +59,7 @@ ms.locfileid: "72018346"
 
 ### <a name="to-analyze-code-defect-warnings"></a>코드 오류 경고를 분석 하려면
 
-1. **보기** 메뉴에서 **오류 목록**를 클릭 합니다.
+1. **보기** 메뉴에서 **오류 목록**을 클릭합니다.
 
      [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 선택한 개발자 프로필에 따라 **보기** 메뉴에서 **다른 창** 을 가리킨 다음 **오류 목록**를 클릭 해야 할 수도 있습니다.
 
@@ -67,9 +67,9 @@ ms.locfileid: "72018346"
 
      경고 C6230: 의미 체계가 다른 형식 간의 암시적 캐스트입니다. 부울 컨텍스트에서 HRESULT를 사용 합니다.
 
-     코드 편집기는 함수 `bool ProcessDomain()`에 경고를 발생 시킨 줄을 표시 합니다. 이 경고는 HRESULT가 부울 결과가 필요한 ' if ' 문에서 사용 중임을 나타냅니다.
+     코드 편집기는 함수 `bool ProcessDomain()`에 경고를 발생 시킨 줄을 표시 합니다. 이 경고는 `HRESULT` 부울 결과가 필요한 ' if ' 문에서 사용 중임을 나타냅니다.  이 오류는 일반적으로이 함수에서 `S_OK` HRESULT가 반환 될 때 success를 나타내지만 부울 값으로 변환 될 때 `false`로 계산 되기 때문에 발생 합니다.
 
-3. SUCCEEDED 매크로를 사용 하 여이 경고를 수정 합니다. 코드는 다음 코드와 유사 해야 합니다.
+3. `SUCCEEDED` 매크로를 사용 하 여이 경고를 수정 합니다 .이 매크로는 `HRESULT` 반환 값이 성공을 나타내는 경우 `true`으로 변환 됩니다. 코드는 다음 코드와 유사 해야 합니다.
 
    ```cpp
    if (SUCCEEDED (ReadUserAccount()) )
@@ -111,7 +111,7 @@ ms.locfileid: "72018346"
 
      **주석 속성 페이지** 대화 상자가 표시 됩니다.
 
-3. **코드 분석**을 클릭 합니다.
+3. **코드 분석**을 클릭합니다.
 
 4. 선택 된 **C/C++ 빌드에 코드 분석 사용** 확인란 합니다.
 
@@ -128,11 +128,11 @@ ms.locfileid: "72018346"
 8. 이 경고를 해결 하려면 ' if ' 문을 사용 하 여 반환 값을 테스트 합니다. 코드는 다음 코드와 유사 해야 합니다.
 
    ```cpp
-   if (NULL != newNode)
+   if (nullptr != newNode)
    {
-   newNode->data = value;
-   newNode->next = 0;
-   node->next = newNode;
+       newNode->data = value;
+       newNode->next = 0;
+       node->next = newNode;
    }
    ```
 
@@ -142,14 +142,10 @@ ms.locfileid: "72018346"
 
 ### <a name="to-use-source-code-annotation"></a>소스 코드 주석을 사용 하려면
 
-1. 형식 매개 변수를 주석 달기 및는 함수의 반환 값 `AddTail` 이 예제에 표시 된 대로 Pre 및 Post 조건을 사용하여:
+1. `AddTail` 함수에 대 한 정식 매개 변수 및 반환 값에 주석을 추가 하 여 포인터 값이 null 일 수 있음을 표시 합니다.
 
    ```cpp
-   [returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail
-   (
-   [SA_Pre(Null=SA_Maybe)] LinkedList* node,
-   int value
-   )
+   _Ret_maybenull_ LinkedList* AddTail(_Maybenull_ LinkedList* node, int value)
    ```
 
 2. 주석 프로젝트를 다시 빌드합니다.
@@ -160,23 +156,20 @@ ms.locfileid: "72018346"
 
      이 경고는 함수에 전달 된 노드가 null 일 수 있음을 나타내며 경고가 발생 한 줄 번호를 나타냅니다.
 
-4. 이 경고를 해결 하려면 ' if ' 문을 사용 하 여 반환 값을 테스트 합니다. 코드는 다음 코드와 유사 해야 합니다.
+4. 이 경고를 해결 하려면 함수 시작 부분에 ' if ' 문을 사용 하 여 전달 된 값을 테스트 합니다. 코드는 다음 코드와 유사 해야 합니다.
 
    ```cpp
-   . . .
-   LinkedList *newNode = NULL;
-   if (NULL == node)
+   if (nullptr == node)
    {
-        return NULL;
-        . . .
+        return nullptr;
    }
    ```
 
 5. 주석 프로젝트를 다시 빌드합니다.
 
-     프로젝트는 경고 또는 오류 없이 빌드됩니다.
+     이제 프로젝트는 경고 또는 오류 없이 빌드됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [연습: 코드 오류에 대 한 관리되는 코드를 분석](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
 [C/C++ 코드 분석](../code-quality/code-analysis-for-c-cpp-overview.md)

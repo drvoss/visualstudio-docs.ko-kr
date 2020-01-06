@@ -9,17 +9,17 @@ helpviewer_keywords:
 - service references [Visual Studio], configuring behavior
 - Configure Service Reference dialog box
 ms.assetid: 25e4c36b-2db6-4e71-9010-b7068255d09d
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 033663c347a39c63a76bddd10625bdc86cec1f00
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f5bae3acb6f687c8c787e2d4121999d1133b0f1f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642854"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586928"
 ---
 # <a name="configure-service-reference-dialog-box"></a>서비스 참조 구성 대화 상자
 
@@ -71,11 +71,11 @@ WCF 클라이언트에 대해 메시지 계약 형식이 생성 되는지 여부
 
 **컬렉션 형식**
 
-WCF 클라이언트에 대한 목록 컬렉션 형식을 지정합니다. 기본 형식은 <xref:System.Array>입니다.
+WCF 클라이언트에 대한 목록 컬렉션 형식을 지정합니다. 기본 유형은 <xref:System.Array>입니다.
 
 **사전 컬렉션 형식**
 
-WCF 클라이언트에 대한 사전 컬렉션 형식을 지정합니다. 기본 형식은 <xref:System.Collections.Generic.Dictionary%602>입니다.
+WCF 클라이언트에 대한 사전 컬렉션 형식을 지정합니다. 기본 유형은 <xref:System.Collections.Generic.Dictionary%602>입니다.
 
 **참조된 어셈블리의 형식 재사용**
 

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Visual Studio Workflow Designer [WFD]
 - Workflow Designer [WFD], overview
 ms.assetid: 4cd062b1-b496-4668-bbc1-ee85545e066d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b689628983c50fc891c5a3ebe6a0df5c952468d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 51c38a16ddbdca376dbc9788ca49783c7956d101
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650537"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597089"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>워크플로 디자이너를 사용하여 앱 개발
 
@@ -31,7 +31,7 @@ ms.locfileid: "72650537"
 
 Visual Studio에서 워크플로 프로젝트 템플릿을 사용 하려면 먼저 **Windows Workflow Foundation** 구성 요소를 설치 합니다.
 
-1. Visual Studio 설치 관리자를 엽니다. Visual Studio에서 도구  > **도구 및 기능 가져오기** 를 **선택 하 여** 신속 하 게 열 수 있습니다.
+1. Visual Studio 설치 관리자를 엽니다. Visual Studio에서 도구 > **도구 및 기능 가져오기** 를 **선택 하 여** 신속 하 게 열 수 있습니다.
 
 1. Visual Studio 설치 관리자에서 **개별 구성 요소** 탭을 선택 합니다.
 
@@ -43,6 +43,6 @@ Visual Studio에서 워크플로 프로젝트 템플릿을 사용 하려면 먼�
 
    Visual Studio에서 **Windows Workflow Foundation** 구성 요소를 설치 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Windows Workflow Foundation (.NET Framework)](/dotnet/framework/windows-workflow-foundation/index)

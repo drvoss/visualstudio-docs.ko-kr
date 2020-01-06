@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, providing overridable classes
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c2386b7a7472f6b80457a5a803f6dfe886cc1d0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c3374f67f4fba11543e3dbbca47fef621dd2e714
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658328"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595893"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>생성 된 클래스 재정의 및 확장
 
@@ -28,7 +28,7 @@ DSL 정의는 도메인 특정 언어를 기반으로 하는 강력한 도구 �
 
 Partial 클래스 정의를 사용 하면 클래스를 둘 이상의 위치로 정의할 수 있습니다. 이렇게 하면 생성 된 코드를 사용자가 직접 작성 하는 코드와 분리할 수 있습니다. 수동으로 작성 된 코드에서 생성 된 코드에 의해 상속 된 클래스를 재정의할 수 있습니다.
 
-예를 들어 DSL 정의에서 `Book` 이라는 도메인 클래스를 정의 하는 경우 재정의 메서드를 추가 하는 사용자 지정 코드를 작성할 수 있습니다.
+예를 들어 DSL 정의에서 `Book`이라는 도메인 클래스를 정의 하는 경우 재정의 메서드를 추가 하는 사용자 지정 코드를 작성할 수 있습니다.
 
 ```csharp
 public partial class Book
@@ -56,7 +56,7 @@ public partial class Book
 
 - `CirculationBookBase`는 추상 이며 모든 메서드와 속성을 포함 합니다.
 
-- `CirculationBook` `CirculationBookBase`에서 파생 됩니다. 생성자를 제외 하 고는 비어 있습니다.
+- `CirculationBook``CirculationBookBase`에서 파생 됩니다. 생성자를 제외 하 고는 비어 있습니다.
 
 메서드를 재정의 하려면 `CirculationBook`와 같은 파생 클래스의 부분 정의를 만듭니다. 생성 된 메서드와 모델링 프레임 워크에서 상속 된 메서드를 모두 재정의할 수 있습니다.
 
@@ -80,7 +80,7 @@ public partial class Book
 
 트랜잭션 관리자를 사용 하면 속성의 변경과 같이 지정 된 이벤트가 발생 한 트랜잭션의 끝 이전에 실행 되는 규칙을 정의할 수 있습니다. 규칙은 일반적으로 저장소에 있는 서로 다른 요소 간의 synchronism를 유지 관리 하는 데 사용 됩니다. 예를 들어 규칙을 사용 하 여 다이어그램에 모델의 현재 상태가 표시 되는지 확인 합니다.
 
-규칙은 각 개체에 대해 규칙을 등록 하는 코드를 가질 필요가 없도록 클래스 별로 정의 됩니다. 자세한 내용은 [모델 내에서 변경 내용 전파 규칙](../modeling/rules-propagate-changes-within-the-model.md)을 참조 하세요.
+규칙은 각 개체에 대해 규칙을 등록 하는 코드를 가질 필요가 없도록 클래스 별로 정의 됩니다. 자세한 내용은 [규칙이 전파 변경 내용을 내에서 모델](../modeling/rules-propagate-changes-within-the-model.md)합니다.
 
 ### <a name="store-events"></a>이벤트 저장
 
@@ -90,6 +90,6 @@ public partial class Book
 
 셰이프에 대 한 일부 이벤트를 구독할 수 있습니다. 예를 들어, 도형에서 마우스 클릭을 수신할 수 있습니다. 각 개체에 대해 이벤트를 구독 하는 코드를 작성 해야 합니다. 이 코드는 InitializeInstanceResources ()의 재정의로 작성 될 수 있습니다.
 
-ShapeFields에서 생성 되는 일부 이벤트는 도형에 데코레이터을 그리는 데 사용 됩니다. 예는 [방법: 셰이프 또는 데코레이터 ](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md) 클릭을 가로챕니다.
+ShapeFields에서 생성 되는 일부 이벤트는 도형에 데코레이터을 그리는 데 사용 됩니다. 예제는 [방법: 모양 또는 데코레이터 클릭 가로채기](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)를 참조 하세요.
 
 이러한 이벤트는 일반적으로 트랜잭션 내에서 발생 하지 않습니다. 저장소에서 변경을 수행 하려는 경우 트랜잭션을 만들어야 합니다.

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - data tier
 - n-tier applications, about n-tier applications
 ms.assetid: 1020581d-eaaa-41a2-aca4-bf4c212895f6
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 80b6f89d9c074d7d17c258263c03e97334e6fd90
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 21233b94350823b1f765aa33f9304c10c43e0535
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648282"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586382"
 ---
 # <a name="n-tier-data-applications-overview"></a>N 계층 데이터 애플리케이션 개요
 *N 계층* 데이터 응용 프로그램은 여러 *계층*으로 구분 되는 데이터 응용 프로그램입니다. "분산 응용 프로그램" 및 "다중 계층 응용 프로그램" 이라는 n 계층 응용 프로그램은 클라이언트와 서버 간에 분산 된 불연속 계층으로 처리를 분리 합니다. 데이터에 액세스 하는 응용 프로그램을 개발 하는 경우 응용 프로그램을 구성 하는 다양 한 계층을 명확 하 게 구분 해야 합니다.
@@ -36,7 +36,7 @@ Visual Studio에는 개발자가 n 계층 응용 프로그램을 만드는 데 �
 ## <a name="presentation-tier"></a>프레젠테이션 계층
 *프레젠테이션 계층* 은 사용자가 응용 프로그램과 상호 작용 하는 계층입니다. 추가 응용 프로그램 논리도 포함 하는 경우가 많습니다. 일반적인 프레젠테이션 계층 구성 요소에는 다음이 포함 됩니다.
 
-- @No__t_0 및 <xref:System.Windows.Forms.BindingNavigator>와 같은 데이터 바인딩 구성 요소입니다.
+- <xref:System.Windows.Forms.BindingSource> 및 <xref:System.Windows.Forms.BindingNavigator>와 같은 데이터 바인딩 구성 요소입니다.
 
 - 프레젠테이션 계층에서 사용할 엔터티 클래스 [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) 같은 데이터의 개체 표현입니다.
 
@@ -57,16 +57,16 @@ Visual Studio에는 개발자가 n 계층 응용 프로그램을 만드는 데 �
 
 다음 그림에서는 Visual Studio에서 사용할 수 있는 기능 및 기술과 n 계층 응용 프로그램의 중간 계층에 적합할 수 있는 기술을 보여 줍니다.
 
-![Middle 계층 구성 요소 ](../data-tools/media/ntiermid.png) 중간 계층
+중간 계층](../data-tools/media/ntiermid.png) 중간 계층 구성 요소 ![
 
 중간 계층은 일반적으로 데이터 연결을 사용 하 여 데이터 계층에 연결 합니다. 이 데이터 연결은 일반적으로 데이터 액세스 구성 요소에 저장 됩니다.
 
 ## <a name="data-tier"></a>데이터 계층
-*데이터 계층* 은 기본적으로 응용 프로그램의 데이터를 저장 하는 서버 (예: SQL Server을 실행 하는 서버)입니다.
+*데이터 계층* 은 기본적으로 애플리케이션의 데이터를 저장하는 서버입니다(예: SQL Server를 실행하는 서버).
 
 다음 그림에서는 Visual Studio에서 사용할 수 있는 기능 및 기술과 n 계층 응용 프로그램의 데이터 계층에 적합할 수 있는 기술을 보여 줍니다.
 
-![Data 계층 구성 요소 ](../data-tools/media/ntierdatatier.png) 데이터 계층
+데이터 계층](../data-tools/media/ntierdatatier.png) 데이터 계층 구성 요소 ![
 
 프레젠테이션 계층의 클라이언트에서 직접 데이터 계층에 액세스할 수 없습니다. 대신, 중간 계층의 데이터 액세스 구성 요소는 프레젠테이션과 데이터 계층 간의 통신에 사용 됩니다.
 
@@ -79,7 +79,7 @@ Visual Studio에는 개발자가 n 계층 응용 프로그램을 만드는 데 �
 
 [LINQ to SQL을 사용한 N 계층 및 원격 애플리케이션](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [연습: N 계층 데이터 애플리케이션 만들기](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [계층적 업데이트](../data-tools/hierarchical-update.md)

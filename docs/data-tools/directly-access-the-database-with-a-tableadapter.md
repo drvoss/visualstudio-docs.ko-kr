@@ -18,21 +18,21 @@ helpviewer_keywords:
 - saving data
 - TableAdapters
 ms.assetid: 012c5924-91f7-4790-b2a6-f51402b7014b
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e8d5d8e3091b464084df065bb7b889db9fc2194f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8fe408c090dbdc2157cd52977d4bbed66cfe9109
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648519"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586694"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>TableAdapter를 사용하여 데이터베이스에 직접 액세스
 
-@No__t_0, `UpdateCommand` 및 `DeleteCommand` 외에도 Tableadapter는 데이터베이스에 대해 직접 실행할 수 있는 메서드를 사용 하 여 생성 됩니다. 이러한 메서드 (`TableAdapter.Insert`, `TableAdapter.Update` 및 `TableAdapter.Delete`)를 호출 하 여 데이터베이스에서 직접 데이터를 조작할 수 있습니다.
+`InsertCommand`, `UpdateCommand`및 `DeleteCommand`외에도 Tableadapter는 데이터베이스에 대해 직접 실행할 수 있는 메서드를 사용 하 여 생성 됩니다. 이러한 메서드 (`TableAdapter.Insert`, `TableAdapter.Update`및 `TableAdapter.Delete`)를 호출 하 여 데이터베이스에서 직접 데이터를 조작할 수 있습니다.
 
 이러한 직접 메서드를 만들지 않으려면 **속성** 창에서 TableAdapter의 `GenerateDbDirectMethods` 속성을 `false`로 설정 합니다. Tableadapter의 주 쿼리와 함께 TableAdapter에 쿼리를 추가 하는 경우 이러한 `DbDirect` 메서드를 생성 하지 않는 독립 실행형 쿼리를 사용할 수 있습니다.
 
@@ -70,6 +70,6 @@ ms.locfileid: "72648519"
      [!code-vb[VbRaddataSaving#21](../data-tools/codesnippet/VisualBasic/directly-access-the-database-with-a-tableadapter_3.vb)]
      [!code-csharp[VbRaddataSaving#21](../data-tools/codesnippet/CSharp/directly-access-the-database-with-a-tableadapter_3.cs)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [TableAdapter를 사용하여 데이터 세트 채우기](../data-tools/fill-datasets-by-using-tableadapters.md)

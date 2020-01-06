@@ -4,24 +4,24 @@ ms.date: 09/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - FxCop analyzers, configuring
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1d2c4f6b44daf83b3fd013167ec24e82c45ce2e8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b1d178adbbb847b2629ee785a7a0fa4e990a46dd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649694"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587721"
 ---
 # <a name="configure-fxcop-analyzers"></a>FxCop 분석기 구성
 
 [FxCop 분석기 패키지](install-fxcop-analyzers.md) 는 레거시 분석에서 .NET Compiler Platform 기반 코드 분석기로 변환 된 가장 중요 한 "FxCop" 규칙으로 구성 됩니다. 특정 FxCop 규칙의 경우 [구성 가능한 옵션](fxcop-analyzer-options.md)을 통해 코드 베이스에서 적용 해야 하는 부분을 구체화할 수 있습니다. 각 옵션은 [Editorconfig](https://editorconfig.org) 파일에 키-값 쌍을 추가 하 여 지정 합니다. 구성 파일은 [프로젝트에 특정](#per-project-configuration) 하거나 둘 이상의 프로젝트 간에 [공유](#shared-configuration) 될 수 있습니다.
 
 > [!TIP]
-> **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고  > **새 항목** **추가** 를 선택 하 여 프로젝트에 editorconfig 파일을 추가 합니다. **새 항목 추가** 창에서 검색 상자에 **editorconfig** 를 입력 합니다. **Editorconfig 파일 (기본)** 템플릿을 선택 하 고 **추가**를 선택 합니다.
+> **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 > **새 항목** **추가** 를 선택 하 여 프로젝트에 editorconfig 파일을 추가 합니다. **새 항목 추가** 창에서 검색 상자에 **editorconfig** 를 입력 합니다. **Editorconfig 파일 (기본)** 템플릿을 선택 하 고 **추가**를 선택 합니다.
 >
 > ![Visual Studio에서 프로젝트에 editorconfig 파일 추가](media/add-editorconfig-file.png)
 
@@ -44,25 +44,25 @@ ms.locfileid: "72649694"
 
 *모든* 규칙에 대 한 옵션을 구성 하는 구문은 다음과 같습니다.
 
-|구문|예제|
+|구문|예|
 |-|-|
-| dotnet_code_quality. OptionName = OptionValue | `dotnet_code_quality.api_surface = public` |
+| dotnet_code_quality.OptionName = OptionValue | `dotnet_code_quality.api_surface = public` |
 
 ### <a name="category-of-rules"></a>규칙 범주
 
 규칙 *범주* 에 대 한 옵션을 구성 하는 구문 (예: 이름 지정, 디자인 또는 성능)은 다음과 같습니다.
 
-|구문|예제|
+|구문|예|
 |-|-|
-| dotnet_code_quality. RuleCategory OptionName = OptionValue | `dotnet_code_quality.Naming.api_surface = public` |
+| dotnet_code_quality.RuleCategory.OptionName = OptionValue | `dotnet_code_quality.Naming.api_surface = public` |
 
 ### <a name="specific-rule"></a>특정 규칙
 
 *특정* 규칙에 대 한 옵션을 구성 하는 구문은 다음과 같습니다.
 
-|구문|예제|
+|구문|예|
 |-|-|
-| dotnet_code_quality. RuleId OptionName = OptionValue | `dotnet_code_quality.CA1040.api_surface = public` |
+| dotnet_code_quality.RuleId.OptionName = OptionValue | `dotnet_code_quality.CA1040.api_surface = public` |
 
 ## <a name="per-project-configuration"></a>프로젝트별 구성
 

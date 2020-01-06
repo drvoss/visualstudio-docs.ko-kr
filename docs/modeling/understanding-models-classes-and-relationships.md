@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, models
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 391dff6540bcea26f63d8ea88f344455722b742a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c2e8891307520ee841fbed1591565624f2016939
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748227"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565905"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>모델, 클래스 및 관계 이해
 Dsl (도메인별 언어)은 사용자가 작성할 수 있는 사용자 지정 프로그램 코드와 함께 DSL 정의 파일에 의해 정의 됩니다. DSL 솔루션의 프로그램 코드 대부분은이 파일에서 생성 됩니다.
@@ -22,7 +22,7 @@ Dsl (도메인별 언어)은 사용자가 작성할 수 있는 사용자 지정 
  이 항목에서는 DSL 정의의 중앙 기능에 대해 설명 합니다.
 
 ## <a name="the-dsl-definition"></a>DSL 정의
- @No__t_0를 열면 Visual Studio 창이 다음 그림과 같이 표시 됩니다.
+ `Dsl\DslDefinition.dsl`를 열면 Visual Studio 창이 다음 그림과 같이 표시 됩니다.
 
  ![dsl 디자이너](../modeling/media/dsl_designer.png)
 
@@ -128,7 +128,7 @@ Dsl (도메인별 언어)은 사용자가 작성할 수 있는 사용자 지정 
  DSL 정의에서 관계를 만들 때 속성 및 관계 이름에 기본값이 지정 됩니다. 그러나이를 변경할 수 있습니다.
 
 ## <a name="multiplicities"></a>복합성
- 복합성 도메인 관계에서 동일한 역할을 가질 수 있는 요소 수를 지정 합니다. 이 예제에서 **카탈로그** 역할에 대 한 0-다 (0 \*) 다중성 설정은 **게시자** 도메인 클래스의 모든 인스턴스에 게 지정할 수 있는 **PublisherCatalog** relationship 링크를 포함할 수 있도록 지정 합니다.
+ 복합성 도메인 관계에서 동일한 역할을 가질 수 있는 요소 수를 지정 합니다. 이 예제에서 **카탈로그** 역할에 대 한 0-다 (0\*) 다중성 설정은 **게시자** 도메인 클래스의 모든 인스턴스에 게 지정할 수 있는 **PublisherCatalog** relationship 링크를 포함할 수 있도록 지정 합니다.
 
  다이어그램에를 입력 하거나 **속성** 창에서 `Multiplicity` 속성을 수정 하 여 역할의 복합성을 구성 합니다. 다음 표에서는이 속성에 대 한 설정을 설명 합니다.
 

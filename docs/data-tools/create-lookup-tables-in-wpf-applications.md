@@ -11,23 +11,23 @@ helpviewer_keywords:
 - WPF Designer, data binding
 - data binding, WPF
 ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a2a2179a759bc11a9466361d3c8cc2df45c12f20
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a14209d895b461c64b30d0f1690b68484f09d970
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648590"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586759"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>WPF 애플리케이션에서 조회 테이블 만들기
 
 용어 *조회 테이블* ( *조회 바인딩*이라고 함)은 다른 테이블의 외래 키 필드 값을 기반으로 한 데이터 테이블의 정보를 표시 하는 컨트롤을 설명 합니다. **데이터 소스** 창에서 부모 테이블 또는 개체의 주 노드를 관련 자식 테이블의 열 또는 속성에 이미 바인딩된 컨트롤로 끌어 조회 테이블을 만들 수 있습니다.
 
-예를 들어 sales 데이터베이스에 `Orders` 테이블이 있다고 가정 합니다. @No__t_0 테이블의 각 레코드에는 주문이 배치 된 고객을 나타내는 `CustomerID` 포함 되어 있습니다. @No__t_0은 `Customers` 테이블의 고객 레코드를 가리키는 외래 키입니다. @No__t_0 테이블의 주문 목록을 표시 하는 경우 `CustomerID` 대신 실제 고객 이름을 표시 하는 것이 좋습니다. 고객 이름이 `Customers` 테이블에 있으므로 고객 이름을 표시 하는 조회 테이블을 만들어야 합니다. 조회 테이블은 `Orders` 레코드의 `CustomerID` 값을 사용 하 여 관계를 탐색 하 고 고객 이름을 반환 합니다.
+예를 들어 sales 데이터베이스에 `Orders` 테이블이 있다고 가정 합니다. `Orders` 테이블의 각 레코드에는 주문이 배치 된 고객을 나타내는 `CustomerID` 포함 되어 있습니다. `CustomerID`은 `Customers` 테이블의 고객 레코드를 가리키는 외래 키입니다. `Orders` 테이블의 주문 목록을 표시 하는 경우 `CustomerID`대신 실제 고객 이름을 표시 하는 것이 좋습니다. 고객 이름이 `Customers` 테이블에 있으므로 고객 이름을 표시 하는 조회 테이블을 만들어야 합니다. 조회 테이블은 `Orders` 레코드의 `CustomerID` 값을 사용 하 여 관계를 탐색 하 고 고객 이름을 반환 합니다.
 
 ## <a name="to-create-a-lookup-table"></a>조회 테이블을 만들려면
 
@@ -68,7 +68,7 @@ ms.locfileid: "72648590"
         > [!NOTE]
         > 목록에 **ListBox** 또는 **ListView** 컨트롤이 표시 되지 않는 경우 목록에 이러한 컨트롤을 추가할 수 있습니다. 자세한 내용은 [데이터 소스 창에서 끌어올 때 만들 컨트롤 설정](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)을 참조 하세요.
 
-    - @No__t_0에서 파생 되는 모든 사용자 지정 컨트롤입니다.
+    - <xref:System.Windows.Controls.Primitives.Selector>에서 파생 되는 모든 사용자 지정 컨트롤입니다.
 
         > [!NOTE]
         > **데이터 소스** 창에서 항목에 대해 선택할 수 있는 컨트롤 목록에 사용자 지정 컨트롤을 추가 하는 방법에 대 한 자세한 내용은 [데이터 소스 창에 사용자 지정 컨트롤 추가](../data-tools/add-custom-controls-to-the-data-sources-window.md)를 참조 하세요.

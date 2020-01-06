@@ -3,17 +3,17 @@ title: 디버깅 하는 동안 XPath 식 계산
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 523c89af70c762f0cd0e31519c8c862c440c79eb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c2e0b6c84fa9447dc38aa7976fa59bb5aa67d5c3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654280"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592726"
 ---
 # <a name="evaluate-xpath-expressions"></a>XPath 식 계산
 
@@ -34,7 +34,7 @@ XPath 식을 계산할 때:
 
 1. `xsl:if` 시작 태그에 중단점을 삽입합니다.
 
-2. 디버깅을 시작 하려면 메뉴 모음에서 **XML**  > **XSLT 디버깅 시작** 을 선택 하거나 **alt** +**f5**키를 누릅니다.
+2. 디버깅을 시작 하려면 메뉴 모음에서 **XML** > **XSLT 디버깅 시작** 을 선택 하거나 **alt**+**f5**키를 누릅니다.
 
    디버거가 시작되고 `xsl:if` 태그에서 중단됩니다.
 

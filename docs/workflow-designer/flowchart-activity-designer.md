@@ -7,21 +7,21 @@ f1_keywords:
 - System.Activities.Statements.FlowStep.UI
 - System.Activities.Core.Presentation.FlowStart.UI
 ms.assetid: d5af2276-5215-4138-880a-cf2b90bbf3a0
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f56c7eac56572d8a3be1f8b478feb0543390481
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d786e9acfa99d2b106b72822a0106e2161724790
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650452"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597037"
 ---
 # <a name="flowchart-activity-designer"></a>순서도 활동 디자이너
 
-<xref:System.Activities.Statements.Flowchart> 활동은 복잡한 흐름 제어를 정의하고 관리하는 워크플로를 만드는 데 사용됩니다. @No__t_0는 코드 또는 워크플로 디자이너를 사용 하 여 작성할 수 있습니다. 이 항목에서는 워크플로 디자이너 환경에 대해 설명 합니다. 개발자는 워크플로 디자이너 워크플로 활동 디자이너를 사용 하 여 워크플로를 자연스럽 게 작성할 수 있습니다.
+<xref:System.Activities.Statements.Flowchart> 활동은 복잡한 흐름 제어를 정의하고 관리하는 워크플로를 만드는 데 사용됩니다. <xref:System.Activities.Statements.Flowchart>는 코드 또는 워크플로 디자이너를 사용 하 여 작성할 수 있습니다. 이 항목에서는 워크플로 디자이너 환경에 대해 설명 합니다. 개발자는 워크플로 디자이너 워크플로 활동 디자이너를 사용 하 여 워크플로를 자연스럽 게 작성할 수 있습니다.
 
 ## <a name="the-flowchart-activity"></a>Flowchart 활동
 
@@ -29,7 +29,7 @@ ms.locfileid: "72650452"
 
 ### <a name="using-the-flowchart-activity-designer"></a>Flowchart 활동 디자이너 사용
 
-**Flowchart** 활동 디자이너는 **도구**상자의 **순서도** 범주에 있습니다 .이 범주에 액세스 하려면 워크플로 디자이너의 **도구 상자** 탭을 클릭 합니다. 또는 **보기** 메뉴에서 **도구 상자** 를 선택 하거나 **ctrl** +**alt** +**X**를 누릅니다.
+**Flowchart** 활동 디자이너는 **도구**상자의 **순서도** 범주에 있습니다 .이 범주에 액세스 하려면 워크플로 디자이너의 **도구 상자** 탭을 클릭 합니다. 또는 **보기** 메뉴에서 **도구 상자** 를 선택 하거나 **ctrl**+**alt**+**X**를 누릅니다.
 
 **Flowchart** 활동 디자이너를 **도구 상자** 에서 끌어 활동 디자이너가 일반적으로 루트 활동 또는 다른 제어 흐름 활동의 자식으로 배치 되는 워크플로 디자이너 화면에 놓을 수 있습니다. **Flowchart** 활동 디자이너를 빈 워크플로 디자이너 표면에 놓으면 <xref:System.Activities.Statements.Flowchart> 활동을 만듭니다 .이 활동은 기본적으로 실행을 시작 하는 시작 노드가 녹색 공을 나타내는 확장 된 뷰에 표시 됩니다. **Flowchart** 활동 디자이너를 다른 제어 흐름 활동으로 끌어 놓는 경우 해당 활동 디자이너는 **flowchart** 활동 디자이너를 두 번 클릭 하 여 확장할 수 있는 최소화 된 뷰로 표시 됩니다. **도구 상자** 의 모든 작업은 다른 제어 흐름 작업을 포함 하 여 **Flowchart** activity designer로 직접 끌어 올 수 있습니다.
 
@@ -39,7 +39,7 @@ ms.locfileid: "72650452"
 
 다음 표에서는 <xref:System.Activities.Statements.Flowchart> 속성을 보여 주고 디자이너에서 이 속성을 사용하는 방법을 설명합니다. 이러한 속성은 속성 표 또는 디자이너 화면에서 편집할 수 있습니다.
 
-|속성 이름|필요한 공간|사용 현황|
+|속성 이름|필수|용도|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|머리글에 활동 디자이너의 표시 이름을 지정합니다. 기본값은 Flowchart입니다. 값은 **속성** 창에서 편집 하거나 activity designer 헤더에서 직접 편집할 수 있습니다.<br /><br /> <xref:System.Activities.Activity.DisplayName%2A>은 꼭 필요하지 않더라도 사용하는 것이 좋습니다.|
 |<xref:System.Activities.Statements.Flowchart.Variables%2A>|False|자식 활동 간에 상태를 공유하기 위해 이 <xref:System.Activities.Statements.Flowchart> 내로 범위가 지정된 변수 컬렉션입니다.|

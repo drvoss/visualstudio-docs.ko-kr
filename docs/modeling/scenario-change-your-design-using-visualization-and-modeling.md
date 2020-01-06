@@ -10,22 +10,22 @@ helpviewer_keywords:
 - walkthrough [Visual Studio ALM], visualizing code
 - walkthrough [Visual Studio ALM], modeling software
 - walkthroughs [Visual Studio ALM], modeling software
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d332050538ca10d133a69f61a914338484fe799
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 371eadd1438d33601b90ebfae0432c20841c313c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986381"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591985"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>시나리오: 시각화 및 모델링을 사용하여 디자인 변경
 
 Visual Studio에서 시각화 및 모델링 도구를 사용하여 소프트웨어 시스템이 사용자의 요구를 충족하는지 확인합니다.
-코드 맵, 종속성 다이어그램 및 클래스 다이어그램과 같은 도구를 사용 하 여 다음을 수행 합니다.
+코드 맵, 종속성 다이어그램 및 클래스 다이어그램을와 같은 도구를 사용 합니다:
 
 각 도구를 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
 
@@ -144,7 +144,7 @@ Dinner Now는 새 요구 사항을 충족하기 위한 비용을 예측해야 �
 
 |**맵 또는 다이어그램**|**보여 주는 것**|
 |-|-|
-|*코드 맵*<br /><br /> 참조<br /><br /> [솔루션 전체에서 종속성 -  매핑](../modeling/map-dependencies-across-your-solutions.md)<br />- [코드 맵 찾아보기 및 다시 정렬](../modeling/browse-and-rearrange-code-maps.md)<br />[DGML 파일을 편집 하 여 코드 맵을 사용자 지정](../modeling/customize-code-maps-by-editing-the-dgml-files.md) - |코드의 종속성 및 기타 관계.<br /><br /> 예를 들어 Dinner Now는 어셈블리 및 해당 종속성을 살펴보기 위해 먼저 어셈블리 코드 맵을 검토할 수 있습니다. 맵을 분석하여 해당 어셈블리의 네임스페이스 및 클래스를 살펴볼 수 있습니다.<br /><br /> Dinner Now에서 맵을 만들어서 코드의 특정 영역 및 다른 관계 종류를 살펴볼 수도 있습니다. 솔루션 탐색기를 사용하여 관심 있는 영역 및 관계를 찾고 선택합니다.|
+|*코드 맵*<br /><br /> 참조<br /><br /> [솔루션 전체에서 종속성 - 매핑](../modeling/map-dependencies-across-your-solutions.md)<br />- [코드 맵 찾아보기 및 다시 정렬](../modeling/browse-and-rearrange-code-maps.md)<br />[DGML 파일을 편집 하 여 코드 맵을 사용자 지정](../modeling/customize-code-maps-by-editing-the-dgml-files.md) - |코드의 종속성 및 기타 관계.<br /><br /> 예를 들어 Dinner Now는 어셈블리 및 해당 종속성을 살펴보기 위해 먼저 어셈블리 코드 맵을 검토할 수 있습니다. 맵을 분석하여 해당 어셈블리의 네임스페이스 및 클래스를 살펴볼 수 있습니다.<br /><br /> Dinner Now에서 맵을 만들어서 코드의 특정 영역 및 다른 관계 종류를 살펴볼 수도 있습니다. 솔루션 탐색기를 사용하여 관심 있는 영역 및 관계를 찾고 선택합니다.|
 |*코드 기반 클래스 다이어그램*<br /><br /> [방법: 프로젝트에 클래스 다이어그램 추가(클래스 디자이너)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)을 참조하세요.|코드의 기존 클래스|
 
  예를 들어 개발자는 코드 맵을 만듭니다. 범위를 조정하여 새 시나리오가 영향을 미치는 영역에 초점을 맞춥니다. 맵에서 다음 영역이 선택되고 강조 표시됩니다.
@@ -159,7 +159,7 @@ Dinner Now는 새 요구 사항을 충족하기 위한 비용을 예측해야 �
 
  **그룹 간 링크가 표시된 확장된 네임스페이스 코드 맵**
 
- 개발자는 코드를 검사하여 영향을 받는 클래스 및 메서드를 찾습니다. 변경할 때 각 변경이 미치는 영향을 확인하기 위해 각 변경 후에 코드 맵을 다시 생성합니다. [코드 시각화](../modeling/visualize-code.md)를 참조 하세요.
+ 개발자는 코드를 검사하여 영향을 받는 클래스 및 메서드를 찾습니다. 변경할 때 각 변경이 미치는 영향을 확인하기 위해 각 변경 후에 코드 맵을 다시 생성합니다. 참조 [코드를 시각화](../modeling/visualize-code.md)합니다.
 
  구성 요소 또는 상호 작용과 같은 시스템의 다른 부분에 대한 변경 내용을 설명하기 위해 팀에서는 화이트보드에 이들 요소를 그릴 수 있습니다. 두 팀 모두가 세부 정보를 캡처, 관리 및 이해할 수 있도록 Visual Studio에서 다음 다이어그램을 그릴 수도 있습니다.
 
@@ -174,7 +174,7 @@ Dinner Now는 새 요구 사항을 충족하기 위한 비용을 예측해야 �
 |-|-|
 |*종속성 다이어그램*<br /><br /> 참조<br /><br /> - [코드에서 종속성 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)<br />- [종속성 다이어그램: 참조](../modeling/layer-diagrams-reference.md)<br />- [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)<br />[종속성 다이어그램을 사용 하 여 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md) - |코드의 논리적 아키텍처.<br /><br /> 종속성 다이어그램은 Visual Studio 솔루션의 아티팩트를 구성 하 고 *레이어*라는 추상 그룹에 매핑합니다. 이들 레이어는 아티팩트가 시스템에서 수행하는 역할, 작업 또는 기능을 식별합니다.<br /><br /> 종속성 다이어그램은 시스템의 의도 된 디자인을 설명 하 고 해당 디자인에 대해 진화 하는 코드의 유효성을 검사 하는 데 유용 합니다.<br /><br /> 레이어를 만들려면 솔루션 탐색기, 코드 맵, 클래스 뷰 및 개체 브라우저에서 항목을 끌어옵니다. 새 레이어를 그리려면 도구 상자를 사용하거나 다이어그램 곡면을 마우스 오른쪽 단추로 클릭합니다.<br /><br /> 기존 종속성을 보려면 종속성 다이어그램 화면을 마우스 오른쪽 단추로 클릭 한 다음 **종속성 생성**을 클릭 합니다. 의도한 종속성을 지정하려면 새 종속성을 그립니다.|
 
-예를 들어 다음 종속성 다이어그램은 레이어 간 종속성 및 각 레이어와 연결 된 아티팩트 수를 설명 합니다.
+예를 들어 다음 종속성 다이어그램에서는 레이어 간 종속성 및 각 레이어와 연결 된 아티팩트의 수를 설명 합니다:
 
 ![통합 지불 시스템의 종속성 다이어그램](../modeling/media/layer_integrated_dnlucerne.png)
 
@@ -329,7 +329,7 @@ Lucerne 결제 시스템에 대한 다음 맵을 생성하여 클래스, 메서�
 
 |**다이어그램**|**설명 내용**|
 |-|-|
-|종속성 다이어그램|시스템의 논리적 아키텍처. 종속성 유효성 검사를 사용 하 여 코드가 디자인과 일관성을 유지 하는지 확인 합니다.<br /><br /> 기존 종속성 또는 의도 한 종속성을 식별 하는 데 도움이 되도록 코드 맵을 만들고 관련 항목을 그룹화 합니다. 종속성 다이어그램을 만들려면 다음을 참조 하세요.<br /><br /> - [코드에서 종속성 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)<br />- [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)|
+|종속성 다이어그램|시스템의 논리적 아키텍처. 종속성 유효성 검사를 사용 하 여 코드가 디자인과 일관성을 유지 하는지 확인 합니다.<br /><br /> 기존 종속성 또는 의도 한 종속성을 식별 하는 데 도움이 되도록 코드 맵을 만들고 관련 항목을 그룹화 합니다. 종속성 다이어그램을 만들려면 다음을 참조 하세요:<br /><br /> - [코드에서 종속성 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)<br />- [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)|
 |클래스 다이어그램(코드 기반)|특정 프로젝트에 대한 코드의 기존 클래스.<br /><br /> 코드에서 기존 클래스를 시각화 및 수정하려면 클래스 디자이너를 사용합니다.<br /><br /> [방법: 프로젝트에 클래스 다이어그램 추가(클래스 디자이너)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)을 참조하세요.|
 
 ### <a name="DefineClasses"></a> 형식 용어집 정의: 클래스 다이어그램
@@ -399,12 +399,12 @@ Lucerne 결제 시스템에 대한 다음 맵을 생성하여 클래스, 메서�
 |**다이어그램**|**설명**|
 |-|-|
 |종속성 다이어그램|시스템의 논리적 아키텍처를 클래스에 대한 관계로 설명합니다.<br /><br /> 종속성 유효성 검사를 사용 하 여 코드가 디자인과 일관성을 유지 하는지 확인 합니다.<br /><br /> 참조<br /><br /> - [코드에서 종속성 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)<br />- [종속성 다이어그램: 참조](../modeling/layer-diagrams-reference.md)<br />- [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)<br />[종속성 다이어그램을 사용 하 여 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md) - |
-|코드 맵|기존 코드에서 구성 및 관계를 시각화합니다.<br /><br /> 클래스, 해당 관계 및 해당 메서드를 식별하려면 해당 요소를 표시하는 코드 맵을 만듭니다.<br /><br /> 참조<br /><br /> [솔루션 전체에서 종속성 -  매핑](../modeling/map-dependencies-across-your-solutions.md)|
+|코드 맵|기존 코드에서 구성 및 관계를 시각화합니다.<br /><br /> 클래스, 해당 관계 및 해당 메서드를 식별하려면 해당 요소를 표시하는 코드 맵을 만듭니다.<br /><br /> 참조<br /><br /> [솔루션 전체에서 종속성 - 매핑](../modeling/map-dependencies-across-your-solutions.md)|
 
 ### <a name="DescribeLayers"></a>논리적 아키텍처 설명: 종속성 다이어그램
  종속성 다이어그램은 솔루션의 아티팩트를 추상 그룹 또는 *레이어*로 구성 하 여 시스템의 논리적 아키텍처를 설명 합니다. 아티팩트는 네임스페이스, 프로젝트, 클래스, 메서드 등 다양한 항목에 해당할 수 있습니다. 레이어는 아티팩트가 시스템에서 수행하는 역할 또는 작업을 표시하고 설명합니다. 빌드 및 체크 인 작업에 레이어 유효성 검사를 포함하여 코드와 디자인의 일관성이 유지되는지 확인할 수도 있습니다.
 
- 코드를 디자인과 일관 되 게 유지 하기 위해 Dinner Now와 Lucerne은 다음 종속성 다이어그램을 사용 하 여 코드의 진화에 따라 코드의 유효성을 검사 합니다.
+ 코드와 디자인의 일관성을 유지 하기 위해 Dinner Now 및 Lucerne 발전 함에 따라 코드의 유효성을 검사 하려면 다음 종속성 다이어그램을 사용 합니다:
 
  ![통합 지불 시스템의 종속성 다이어그램](../modeling/media/layer_integrated_dnlucerne.png)
 
@@ -428,7 +428,7 @@ Lucerne 결제 시스템에 대한 다음 맵을 생성하여 클래스, 메서�
 
 #### <a name="drawing-a-dependency-diagram"></a>종속성 다이어그램 그리기
 
-종속성 다이어그램은 다음과 같은 주요 기능을 제공 합니다.
+종속성 다이어그램의 주요 기능은 다음과 같습니다:
 
 - *레이어* - 아티팩트의 논리 그룹을 설명합니다.
 
@@ -462,7 +462,7 @@ Lucerne 결제 시스템에 대한 다음 맵을 생성하여 클래스, 메서�
 
 #### <a name="summary-strengths-of-dependency-diagrams"></a>요약: 종속성 다이어그램의 장점
 
-종속성 다이어그램은 다음을 지원 합니다.
+종속성 다이어그램 데 유용 합니다:
 
 - 아티팩트의 기능에 따라 시스템의 논리적 아키텍처를 설명합니다.
 
@@ -472,11 +472,11 @@ Lucerne 결제 시스템에 대한 다음 맵을 생성하여 클래스, 메서�
 
 |**다이어그램**|**설명**|
 |-|-|
-|코드 맵|기존 코드에서 구성 및 관계를 시각화합니다.<br /><br /> 레이어를 만들려면 코드 맵을 생성하고 맵에서 항목을 잠재적인 레이어로 그룹화합니다. 지도에서 종속성 다이어그램으로 그룹을 끌어 옵니다.<br /><br /> 참조<br /><br /> [솔루션 전체에서 종속성 -  매핑](../modeling/map-dependencies-across-your-solutions.md)<br />- [코드 맵 찾아보기 및 다시 정렬](../modeling/browse-and-rearrange-code-maps.md)|
+|코드 맵|기존 코드에서 구성 및 관계를 시각화합니다.<br /><br /> 레이어를 만들려면 코드 맵을 생성하고 맵에서 항목을 잠재적인 레이어로 그룹화합니다. 지도에서 종속성 다이어그램으로 그룹을 끌어 옵니다.<br /><br /> 참조<br /><br /> [솔루션 전체에서 종속성 - 매핑](../modeling/map-dependencies-across-your-solutions.md)<br />- [코드 맵 찾아보기 및 다시 정렬](../modeling/browse-and-rearrange-code-maps.md)|
 
 ## <a name="external-resources"></a>외부 리소스
 
-|**범주**|**Links**|
+|**범주**|**링크**|
 |-|-|
 |**포럼**|- [Visual Studio 시각화 및 모델링 도구](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Visual Studio 시각화 및 모델링 SDK(DSL 도구)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 

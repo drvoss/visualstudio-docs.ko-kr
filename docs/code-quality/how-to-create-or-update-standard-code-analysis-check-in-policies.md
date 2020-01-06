@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codeanalysis.policyeditor
 helpviewer_keywords:
 - code analysis, migrating check-in policy
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6d502dc75530bb6b95f38b069b9220c5ad54cac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d034d65cd356ff44a42d10840ae064d81713457f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649471"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587539"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>방법: 표준 코드 분석 체크 인 정책 만들기 또는 업데이트
 
@@ -61,7 +61,7 @@ ms.locfileid: "72649471"
 
 - Microsoft 표준 규칙 집합을 선택 합니다.
 
-- **소스 제어에서 규칙 집합 \<Select 클릭 하 여 사용자 지정 규칙 집합을 선택 합니다. >** . 그런 다음 소스 제어 브라우저에서 규칙 집합의 버전 제어 경로를 입력 합니다. 버전 제어 경로의 구문은 다음과 같습니다.
+- **소스 제어에서 규칙 집합 선택\<클릭 하 여 사용자 지정 규칙 집합을 선택 합니다. >** . 그런 다음 소스 제어 브라우저에서 규칙 집합의 버전 제어 경로를 입력 합니다. 버전 제어 경로의 구문은 다음과 같습니다.
 
    **$/** `TeamProjectName` **/** `VersionControlPath`
 
@@ -69,4 +69,4 @@ ms.locfileid: "72649471"
 
 ## <a name="see-also"></a>참조
 
-- [코드 분석 체크 인 정책 만들기 및 사용](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
+- [관리 코드에 대한 사용자 지정 코드 분석 체크 인 정책 구현](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)

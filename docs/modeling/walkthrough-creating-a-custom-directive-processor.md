@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 - walkthroughs [text templates], directive processor
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 73473a549c774cd0f4302404e2ca3a450cc2e6d2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8e280f64cc23dc2e949e5aa896a8e20673a3f293
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666988"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596491"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>연습: 사용자 지정 지시문 프로세서 만들기
 
@@ -42,7 +42,7 @@ ms.locfileid: "72666988"
 
 `<#@ CoolDirective Processor="CustomDirectiveProcessor" FileName="<Your Path>DocFile.xml" #>`
 
-사용자 지정 지시문 프로세서는 생성된 변환 클래스에 변수와 속성을 추가합니다. 작성하는 지시문은 <xref:System.CodeDom> 클래스를 사용하여 엔진이 생성된 변환 클래스에 추가하는 코드를 만듭니다. @No__t_0 클래스는 `template` 지시문의 `language` 매개 C# 변수에 지정 된 언어에 따라 Visual 또는 Visual Basic에서 코드를 만듭니다. 지시문 프로세서의 언어와 지시문 프로세서에 액세스하는 텍스트 템플릿의 언어는 일치하지 않아도 됩니다.
+사용자 지정 지시문 프로세서는 생성된 변환 클래스에 변수와 속성을 추가합니다. 작성하는 지시문은 <xref:System.CodeDom> 클래스를 사용하여 엔진이 생성된 변환 클래스에 추가하는 코드를 만듭니다. <xref:System.CodeDom> 클래스는 `template` 지시문의 `language` 매개 C# 변수에 지정 된 언어에 따라 Visual 또는 Visual Basic에서 코드를 만듭니다. 지시문 프로세서의 언어와 지시문 프로세서에 액세스하는 텍스트 템플릿의 언어는 일치하지 않아도 됩니다.
 
 지시문이 만드는 코드는 다음과 같습니다.
 
@@ -84,9 +84,9 @@ End Property
 
 2. 다음 어셈블리에 대 한 참조를 추가 합니다.
 
-    - **VisualStudio \*.0**
+    - **Microsoft.VisualStudio.TextTemplating.\*.0**
 
-    - **VisualStudio. \*.0**
+    - **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**
 
 3. **Class1** 의 코드를 다음 코드로 바꿉니다. 이 코드에서는 <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> 클래스에서 상속하는 CustomDirectiveProcessor 클래스를 정의하고 필요한 메서드를 구현합니다.
 
@@ -637,9 +637,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 1. 시작 메뉴 또는 명령줄을 사용 하 여 `regedit` 명령을 실행 합니다.
 
-2. **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio \\ \* .0 \ .0\ texttemplating\directiveprocessors**위치로 이동 하 여 노드를 클릭 합니다.
+2. **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\\\*.0 \ .0\ texttemplating\directiveprocessors**위치로 이동 하 여 노드를 클릭 합니다.
 
-   64 비트 시스템에서는 **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio \\ \*를 사용 합니다. 0 \ .0\ texttemplating\directiveprocessors**
+   64 비트 시스템에서 **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\visualstudio\\\*를 사용 합니다. 0 \ .0\ texttemplating\directiveprocessors**
 
 3. CustomDirectiveProcessor라는 새 키를 추가합니다.
 
@@ -650,23 +650,23 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 5. 이 연습의 앞부분에서 만든 CustomDP.dll의 경로와 같은 값을 가진 CodeBase라는 새 문자열 값을 추가합니다.
 
-     예를 들어 경로는 `C:\UserFiles\CustomDP\bin\Debug\CustomDP.dll` 같습니다.
+     예를 들어 경로는 `C:\UserFiles\CustomDP\bin\Debug\CustomDP.dll`같습니다.
 
      레지스트리 키의 값은 다음과 같습니다.
 
-   | name | Type | 데이터 |
+   | 이름 | 형식 | 데이터 |
    |-|-|-|
    | (기본값) | REG_SZ | (값 설정 안 됨) |
-   | 인스턴스 | REG_SZ | CustomDP.CustomDirectiveProcessor |
-   | CodeBase | REG_SZ | <strong>솔루션에 \<Path ></strong> CustomDP\bin\Debug\CustomDP.dll |
+   | 클래스 | REG_SZ | CustomDP.CustomDirectiveProcessor |
+   | CodeBase | REG_SZ | <strong>솔루션에 대 한\<경로 ></strong> CustomDP\bin\Debug\CustomDP.dll |
 
      GAC에 어셈블리를 배치한 경우 값은 다음과 같습니다.
 
-   | name | Type | 데이터 |
+   | 이름 | 형식 | 데이터 |
    |-|-|-|
    | (기본값) | REG_SZ | (값 설정 안 됨) |
-   | 인스턴스 | REG_SZ | CustomDP.CustomDirectiveProcessor |
-   | Assembly | REG_SZ | CustomDP.dll |
+   | 클래스 | REG_SZ | CustomDP.CustomDirectiveProcessor |
+   | 어셈블리 | REG_SZ | CustomDP.dll |
 
 6. Visual Studio를 다시 시작합니다.
 
@@ -737,7 +737,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 4. TestDP.tt의 내용을 다음 텍스트로 변경 합니다.
 
     > [!NOTE]
-    > @No__t_0 문자열을 *docfile.xml* 파일의 경로로 바꿉니다.
+    > `<YOUR PATH>` 문자열을 *docfile.xml* 파일의 경로로 바꿉니다.
 
     텍스트 템플릿의 언어는 지시문 프로세서의 언어와 일치하지 않아도 됩니다.
 
@@ -874,10 +874,10 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 ### <a name="to-add-html-to-the-generated-text"></a>생성된 텍스트에 HTML을 추가하려면
 
-1. *TestDP.tt* 의 코드를 다음으로 바꿉니다. HTML이 강조 표시되어 있습니다. @No__t_0 문자열을 *docfile.xml* 파일의 경로로 바꾸어야 합니다.
+1. *TestDP.tt* 의 코드를 다음으로 바꿉니다. HTML이 강조 표시되어 있습니다. `YOUR PATH` 문자열을 *docfile.xml* 파일의 경로로 바꾸어야 합니다.
 
     > [!NOTE]
-    > 추가 open \< # 및 close # > 태그는 HTML 태그에서 문 코드를 분리 합니다.
+    > 추가 open \<# 및 close # > 태그는 HTML 태그에서 문 코드를 분리 합니다.
 
     ```csharp
     <#@ assembly name="System.Xml" #>

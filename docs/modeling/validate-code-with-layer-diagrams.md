@@ -14,17 +14,17 @@ helpviewer_keywords:
 - MSBuild, tasks
 - MSBuild, dependency diagrams
 - MSBuild, validating code
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fc852b4d5003cf809248c72ca3ac42ad3a6bf23
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 36320daf91380d0b04333b228a1d4b9d58c6693c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981129"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594021"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>종속성 다이어그램을 사용하여 코드 유효성 검사
 
@@ -57,7 +57,7 @@ Visual Studio 또는 명령 프롬프트에서 열려 있는 종속성 다이어
 > [!IMPORTANT]
 > TFS (Team Foundation Server)를 사용 하 여 레이어 유효성 검사를 실행 하려면 빌드 서버에 동일한 버전의 Visual Studio도 설치 해야 합니다.
 
-## <a name="live-dependency-validation"></a>라이브 종속성 유효성 검사
+## <a name="live-dependency-validation"></a>실시간 종속성 유효성 검사
 
 종속성 유효성 검사는 실시간으로 수행 되 고 오류는 **오류 목록**에 즉시 표시 됩니다.
 
@@ -218,7 +218,7 @@ Visual Studio 또는 명령 프롬프트에서 열려 있는 종속성 다이어
 
 |**구문**|**설명**|
 |-|-|
-|*Artifactn*(*artifacttypen*)|*Artifactn* 은 종속성 다이어그램의 레이어와 연결 된 아티팩트입니다.<br /><br /> *Artifacttypen* 은 **클래스** 또는 **메서드와**같은 *artifactn*의 형식입니다. 예를 들면 다음과 같습니다.<br /><br /> MySolution.MyProject.MyClass.MyMethod(메서드)|
+|*ArtifactN*(*ArtifactTypeN*)|*Artifactn* 은 종속성 다이어그램의 레이어와 연결 된 아티팩트입니다.<br /><br /> *Artifacttypen* 은 **클래스** 또는 **메서드와**같은 *artifactn*의 형식입니다. 예를 들면 다음과 같습니다.<br /><br /> MySolution.MyProject.MyClass.MyMethod(메서드)|
 |*NamespaceNameN*|네임스페이스의 이름입니다.|
 |*LayerNameN*|종속성 다이어그램의 계층 이름입니다.|
 |*DependencyType*|*Artifact1* 와 *Artifact2*간의 종속성 관계 유형입니다. 예를 들어 *Artifact1* 에는 *Artifact2*와의 **호출** 관계가 있습니다.|
@@ -229,6 +229,8 @@ Visual Studio 또는 명령 프롬프트에서 열려 있는 종속성 다이어
 | DV1001: **네임 스페이스 이름이 잘못 되었습니다** . | 이 문제는 "허용 되는 네임 스페이스 이름" 속성에이 코드 요소가 정의 된 네임 스페이스가 포함 되지 않은 계층에 연결 된 코드 요소에서 보고 됩니다. 이것은 명명 제약 조건 위반입니다. "허용 되는 네임 스페이스 이름" 구문은 계층에 연결 된 코드 요소를 정의할 수 있는 네임 스페이스를 세미콜론으로 구분한 목록입니다. |
 | DV1002: **참조할 수 없는 네임 스페이스에 대 한 종속성** | 이 문제는 계층에 연결 된 코드 요소에 대해 보고 되 고 계층의 "참조할 수 없는 Namespace" 속성에 정의 된 네임 스페이스에 정의 된 다른 코드 요소를 참조 합니다. 이것은 명명 제약 조건 위반입니다. "참조할 수 없는 네임 스페이스" 속성은이 계층과 연결 된 코드 요소에서 참조 해서는 안 되는 세미콜론으로 구분 된 네임 스페이스 목록으로 정의 됩니다. |
 | DV1003: **허용 되지 않는 네임 스페이스 이름** | 이 문제는 계층에 연결 된 코드 요소에서 보고 됩니다. "허용 되지 않는 네임 스페이스 이름" 속성에는이 코드 요소가 정의 된 네임 스페이스가 포함 됩니다. 이것은 명명 제약 조건 위반입니다. "허용 되지 않는 네임 스페이스 이름" 속성은이 레이어와 연결 된 코드 요소를 정의 하면 안 되는 세미콜론으로 구분 된 네임 스페이스 목록으로 정의 됩니다. |
+| DV2001: **레이어 다이어그램 상태** | 이 문제는 종속성 다이어그램 파일을 포함 하지 않지만 종속성 유효성 검사 분석기를 참조 하는 프로젝트에서 보고 됩니다. 종속성 유효성 검사를 사용 하지 않은 경우 솔루션 탐색기에서 직접 "DependencyValidation"를 제거 하거나이 경고를 표시 하지 않을 수 있습니다. 종속성 다이어그램을 추가 하려면 [코드에서 종속성 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)를 참조 하세요. |
+| DV2002: **매핑되지 않은 형식 기준** | 이 문제는 코드 요소가 계층에 매핑되지 않은 경우에 보고 됩니다. |
 | DV3001: **누락 된 링크** | '*LayerName*' 계층은 찾을 수 없는 '*아티팩트*'에 연결 됩니다. 어셈블리 참조가 있는지 확인하세요. |
 | DV9001: **아키텍처 분석에서 내부 오류가 발생 했습니다** . | 결과가 불완전할 수 있습니다. 자세한 내용은 상세 빌드 이벤트 로그를 참조하세요. |
 

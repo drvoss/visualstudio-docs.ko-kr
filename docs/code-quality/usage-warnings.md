@@ -9,23 +9,23 @@ helpviewer_keywords:
 - managed code analysis warnings, usage warnings
 - usage warnings
 ms.assetid: fe7dc2a3-289d-4bf7-a1e4-0947a81287c4
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 423367381c9b4624b9b3f4f739b017231276c76d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ca3a5efb7d75cebfd36ea6ac190f50ab90dcb06c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649065"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587188"
 ---
 # <a name="usage-warnings"></a>사용법 경고
 
 사용 경고는 .NET의 적절 한 사용을 지원 합니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 
 |규칙|설명|
 |----------|-----------------|
@@ -59,8 +59,8 @@ ms.locfileid: "72649065"
 |[CA2228: 릴리스되지 않은 리소스 형식을 제공하지 마십시오.](../code-quality/ca2228.md)|.NET의 시험판 버전을 사용 하 여 빌드된 리소스 파일은 지원 되는 버전의 .NET에서 사용 하지 못할 수 있습니다.|
 |[CA2229: serialization 생성자를 구현하십시오.](../code-quality/ca2229.md)|이 규칙 위반 문제를 해결하려면 serialization 생성자를 구현합니다. 봉인 클래스의 경우에는 생성자를 private으로 만들고, 그 밖의 경우에는 protected로 만듭니다.|
 |[CA2230: 가변 인수로 params를 사용하십시오.](../code-quality/ca2230.md)|public 또는 protected 형식에 params 키워드 대신 VarArgs 호출 규칙을 사용하는 public 또는 protected 메서드가 들어 있습니다.|
-|[CA2231: ValueType.Equals를 재정의할 때 같음 연산자를 오버로드하십시오.](../code-quality/ca2231.md)|값 형식은 `Object.Equals`을 재정의 하지만 같음 연산자를 구현 하지 않습니다.|
-|[CA2232: Windows Forms 진입점을 STAThread를 사용하여 표시하십시오.](../code-quality/ca2232.md)|STAThreadAttribute는 응용 프로그램에 대한 COM 스레딩 모델이 단일 스레드 아파트임을 나타냅니다. 이 특성은 Windows Forms을 사용하는 응용 프로그램의 진입점에 있어야 합니다. 이 특성을 생략하면 Windows 구성 요소가 제대로 작동하지 않을 수 있습니다.|
+|[CA2231: ValueType.Equals를 재정의할 때 같음 연산자를 오버로드하십시오.](../code-quality/ca2231.md)|값 형식이 `Object.Equals`를 재정의 하지만 같음 연산자를 구현 하지 않습니다.|
+|[CA2232: Windows Forms 진입점을 STAThread를 사용하여 표시하십시오.](../code-quality/ca2232.md)|STAThreadAttribute는 애플리케이션에 대한 COM 스레딩 모델이 단일 스레드 아파트임을 나타냅니다. 이 특성은 Windows Forms을 사용하는 애플리케이션의 진입점에 있어야 합니다. 이 특성을 생략하면 Windows 구성 요소가 제대로 작동하지 않을 수 있습니다.|
 |[CA2233: 연산은 오버플로되지 않아야 합니다.](../code-quality/ca2233.md)|연산 결과가 관련 데이터 형식에 대해 가능한 값의 범위를 벗어나지 않도록 하려면 먼저 피연산자의 유효성을 검사 하지 않고 산술 연산을 수행 하면 안 됩니다.|
 |[CA2234: 문자열 대신 System.Uri 개체를 전달하십시오.](../code-quality/ca2234.md)|이름에 "uri", "URI", "urn", "URN", "url" 또는 "URL"이 포함된 문자열 매개 변수가 있는 메서드가 호출되었습니다.  메서드의 선언 형식에 System.Uri 매개 변수를 가진 해당 메서드 오버로드가 들어 있습니다.|
 |[CA2235: 모두 serialize할 수 없는 필드로 표시하십시오.](../code-quality/ca2235.md)|serialize할 수 없는 형식의 인스턴스 필드가 serialize할 수 있는 형식에 정의되었습니다.|

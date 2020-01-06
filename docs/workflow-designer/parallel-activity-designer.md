@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Parallel.UI
 ms.assetid: 0306dc3b-075a-4091-ac3a-96486fbabed5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0c1ea74c1cf64252bdae201e8cc3dd529adb7cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3f07dd02f682cd5c61d4d17099c1aeb76bb39bf8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650098"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593163"
 ---
 # <a name="parallel-activity-designer"></a>Parallel 활동 디자이너
 
@@ -25,7 +25,7 @@ ms.locfileid: "72650098"
 
 <xref:System.Activities.Statements.Parallel> 활동은 자식 활동을 <xref:System.Activities.Statements.Parallel.Branches%2A> 컬렉션에 저장합니다. 일부 자식 활동이 유휴 상태가 될 수 있는 경우에는 <xref:System.Activities.Statements.Parallel> 활동 대신 <xref:System.Activities.Statements.Sequence> 활동을 사용합니다.
 
-@No__t_0 작업에는 사용자가 지정한 Visual Basic 식이 포함 된 <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> 속성이 있습니다. <xref:System.Activities.Statements.Parallel> 활동은 각 분기가 완료된 후 이 속성을 평가합니다. **True**로 평가 되 면 다른 분기를 실행 하지 않고 <xref:System.Activities.Statements.Parallel> 작업이 완료 됩니다. @No__t_0이 **True**로 평가 되지 않으면 모든 자식 활동이 완료 되 면 <xref:System.Activities.Statements.Parallel> 활동이 완료 됩니다.
+<xref:System.Activities.Statements.Parallel> 작업에는 사용자가 지정한 Visual Basic 식이 포함 된 <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> 속성이 있습니다. <xref:System.Activities.Statements.Parallel> 활동은 각 분기가 완료된 후 이 속성을 평가합니다. **True**로 평가 되 면 다른 분기를 실행 하지 않고 <xref:System.Activities.Statements.Parallel> 작업이 완료 됩니다. <xref:System.Activities.Statements.Parallel.CompletionCondition%2A>이 **True**로 평가 되지 않으면 모든 자식 활동이 완료 되 면 <xref:System.Activities.Statements.Parallel> 활동이 완료 됩니다.
 
 ### <a name="using-the-parallel-activity-designer"></a>Parallel 활동 디자이너 사용
 
@@ -39,7 +39,7 @@ ms.locfileid: "72650098"
 
 다음 표에서는 가장 유용한 Parallel 활동 속성을 보여 주고 디자이너에서 이러한 속성을 사용하는 방법을 설명합니다.
 
-|속성 이름|필요한 공간|사용 현황|
+|속성 이름|필수|용도|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|머리글에 활동 디자이너의 표시 이름을 지정합니다. 기본값은 **Parallel**입니다. 값은 선택적으로 **속성** 표에서 편집 하거나 activity designer 헤더에서 직접 편집할 수 있습니다.|
 |<xref:System.Activities.Statements.Parallel.Branches%2A>|True|실행할 자식 활동의 컬렉션을 포함합니다.|

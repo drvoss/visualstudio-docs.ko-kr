@@ -2,24 +2,22 @@
 title: 데이터 액세스 및 도구
 ms.date: 11/04/2016
 ms.topic: conceptual
-f1_keywords:
-- "80025080"
 helpviewer_keywords:
 - data [Visual Studio]
 - data access [Visual Studio]
 - data [C#]
 - ADO.NET, data access
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 07c7c9db37a951b689e28e87a02c7f41a667685b
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 4087541b11b240f455dc6c0109ef44c0cb8d72ad
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807051"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587097"
 ---
 # <a name="access-data-in-visual-studio"></a>Visual Studio에서 데이터 액세스
 
@@ -35,7 +33,7 @@ JavaScript, Python, PHP, Ruby 또는 C++의 응용 프로그램의 경우 라이
 
 **Microsoft Azure**
 
-- SQL Database
+- SQL 데이터베이스
 - Azure Cosmos DB
 - 저장소 (blob, 테이블, 큐, 파일)
 - SQL Data Warehouse
@@ -67,18 +65,18 @@ JavaScript, Python, PHP, Ruby 또는 C++의 응용 프로그램의 경우 라이
 
 ::: moniker range="vs-2017"
 
-많은 데이터베이스 공급 업체와 제 3 자가 NuGet 패키지를 통해 Visual Studio 통합을 지원 합니다. Nuget.org에서 또는 Visual Studio의 NuGet 패키지 관리자를 통해 제공 되는 기능을 탐색할 수 있습니다 (**도구**  > **nuget 패키지 관리자**  > **솔루션에 대 한 nuget 패키지 관리**). 다른 데이터베이스 제품은 Visual Studio와 확장으로 통합 됩니다. [Visual Studio Marketplace](https://marketplace.visualstudio.com/) 에서 이러한 제품을 찾아보거나, **도구**  > **확장 및 업데이트** 로 이동한 다음 대화 상자의 왼쪽 창에서 **온라인** 을 선택 합니다. 자세한 내용은 [Visual Studio에 대 한 호환 데이터베이스 시스템](../data-tools/installing-database-systems-tools-and-samples.md)을 참조 하세요.
+많은 데이터베이스 공급 업체와 제 3 자가 NuGet 패키지를 통해 Visual Studio 통합을 지원 합니다. Nuget.org에서 또는 Visual Studio의 NuGet 패키지 관리자를 통해 제공 되는 기능을 탐색할 수 있습니다 (**도구** > **nuget 패키지 관리자** > **솔루션에 대 한 nuget 패키지 관리**). 다른 데이터베이스 제품은 Visual Studio와 확장으로 통합 됩니다. [Visual Studio Marketplace](https://marketplace.visualstudio.com/) 에서 이러한 제품을 찾아보거나, **도구** > **확장 및 업데이트** 로 이동한 다음 대화 상자의 왼쪽 창에서 **온라인** 을 선택 합니다. 자세한 내용은 [Visual Studio에 대 한 호환 데이터베이스 시스템](../data-tools/installing-database-systems-tools-and-samples.md)을 참조 하세요.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-많은 데이터베이스 공급 업체와 제 3 자가 NuGet 패키지를 통해 Visual Studio 통합을 지원 합니다. Nuget.org에서 또는 Visual Studio의 NuGet 패키지 관리자를 통해 제공 되는 기능을 탐색할 수 있습니다 (**도구**  > **nuget 패키지 관리자**  > **솔루션에 대 한 nuget 패키지 관리**). 다른 데이터베이스 제품은 Visual Studio와 확장으로 통합 됩니다. [Visual Studio Marketplace](https://marketplace.visualstudio.com/) 에서 이러한 **제품을 찾아보거나 확장  >  확장** 으로 이동한 다음 대화 상자의 왼쪽 창에서 **온라인** **을 선택** 하면 됩니다. 자세한 내용은 [Visual Studio에 대 한 호환 데이터베이스 시스템](../data-tools/installing-database-systems-tools-and-samples.md)을 참조 하세요.
+많은 데이터베이스 공급 업체와 제 3 자가 NuGet 패키지를 통해 Visual Studio 통합을 지원 합니다. Nuget.org에서 또는 Visual Studio의 NuGet 패키지 관리자를 통해 제공 되는 기능을 탐색할 수 있습니다 (**도구** > **nuget 패키지 관리자** > **솔루션에 대 한 nuget 패키지 관리**). 다른 데이터베이스 제품은 Visual Studio와 확장으로 통합 됩니다. [Visual Studio Marketplace](https://marketplace.visualstudio.com/) 에서 이러한 **제품을 찾아보거나 확장 > 확장** 으로 이동한 다음 대화 상자의 왼쪽 창에서 **온라인** **을 선택** 하면 됩니다. 자세한 내용은 [Visual Studio에 대 한 호환 데이터베이스 시스템](../data-tools/installing-database-systems-tools-and-samples.md)을 참조 하세요.
 
 ::: moniker-end
 
 > [!NOTE]
-> SQL Server 2005에 대 한 연장 지원은 2016 년 4 월 12 일에 종료 되었습니다. Visual Studio 2015 이상에서 데이터 도구가 SQL Server 2005에서 계속 작동할 수 있는 것은 아닙니다. 자세한 내용은 [SQL Server 2005에 대 한 지원 종료 알림](https://www.microsoft.com/sql-server/sql-server-2005)을 참조 하세요.
+> SQL Server 2005에 대해 연장된 지원은 2016년 4월 12일에 종료되었습니다. Visual Studio 2015 이상에서 데이터 도구가 SQL Server 2005에서 계속 작동할 수 있는 것은 아닙니다. 자세한 내용은 [SQL Server 2005에 대 한 지원 종료 알림](https://www.microsoft.com/sql-server/sql-server-2005)을 참조 하세요.
 
 ## <a name="net-languages"></a>.NET 언어
 
@@ -106,7 +104,7 @@ ADO.NET에서 데이터베이스를 사용할 수 있도록 하려면 사용자 
 
 [데이터 집합](../data-tools/dataset-tools-in-visual-studio.md) 세 가지 모델링 기술 중 가장 오래 된 기술입니다. 대량의 데이터를 처리 하거나 복잡 한 쿼리 또는 변환을 수행 하지 않는 "데이터 폼" 응용 프로그램을 신속 하 게 개발 하는 데 주로 설계 되었습니다. DataSet 개체는 SQL 데이터베이스 개체와 논리적으로 동일한 SQL 데이터베이스 개체와 유사한 DataTable 및 DataRow 개체로 구성 됩니다. SQL 데이터 원본을 기반으로 하는 비교적 간단한 응용 프로그램의 경우에도 데이터 집합을 선택 하는 것이 좋습니다.
 
-이러한 기술을 사용할 필요는 없습니다. 특히 성능이 중요 한 일부 시나리오에서는 DataReader 개체를 사용 하 여 데이터베이스에서 읽고 필요한 값을 목록 \<T >와 같은 컬렉션 개체에 복사할 수 있습니다.
+이러한 기술을 사용할 필요는 없습니다. 특히 성능이 중요 한 일부 시나리오에서는 DataReader 개체를 사용 하 여 데이터베이스에서 읽고 필요한 값을\<T > 목록 등의 컬렉션 개체에 복사할 수 있습니다.
 
 ## <a name="native-c"></a>네이티브 C++
 
@@ -116,7 +114,7 @@ C++rest 서비스를 사용 하는 프로그램은 [ C++ rest SDK](https://githu
 
 C++Microsoft Azure Storage와 함께 작동 하는 프로그램은 [Microsoft Azure Storage 클라이언트](https://www.nuget.org/packages/Microsoft.Azure.Storage.CPP)를 사용할 수 있습니다.
 
-데이터 모델링 &mdash;Visual Studio는에 대해 C++ORM 계층을 제공 하지 않습니다. [ODB](https://www.codesynthesis.com/products/odb/) 는의 C++인기 있는 오픈 소스 ORM입니다.
+Visual Studio&mdash;데이터 모델링은에 대 한 C++ORM 계층을 제공 하지 않습니다. [ODB](https://www.codesynthesis.com/products/odb/) 는의 C++인기 있는 오픈 소스 ORM입니다.
 
 응용 프로그램에서 C++ 데이터베이스에 연결 하는 방법에 대 한 자세한 내용은 [용 C++Visual Studio data tools ](../data-tools/visual-studio-data-tools-for-cpp.md)를 참조 하세요. 레거시 시각적 C++ 데이터 액세스 기술에 대 한 자세한 내용은 [데이터 액세스](/cpp/data/data-access-in-cpp)를 참조 하세요.
 
@@ -134,24 +132,24 @@ Python 응용 프로그램을 만들기 위해 [Visual Studio에서 python 지�
 
 ## <a name="related-topics"></a>관련 항목
 
-[MICROSOFT AI 플랫폼](https://azure.microsoft.com/overview/ai-platform/?v=17.42w) &mdash;Provides Cortana Analytics Suite 및 사물 인터넷에 대 한 지원을 포함 하 여 microsoft intelligent cloud를 소개 합니다.
+[MICROSOFT AI platform](https://azure.microsoft.com/overview/ai-platform/?v=17.42w)&mdash;는 Cortana Analytics Suite 및 사물 인터넷에 대 한 지원을 포함 하 여 microsoft intelligent cloud에 대 한 소개를 제공 합니다.
 
-[Microsoft Azure Storage](/azure/storage/) &mdash;Describes Azure Storage, Azure blob, 테이블, 큐 및 파일을 사용 하 여 응용 프로그램을 만드는 방법을 설명 합니다.
+[Microsoft Azure Storage](/azure/storage/)&mdash;에서는 Azure Storage에 대해 설명 하 고, Azure blob, 테이블, 큐 및 파일을 사용 하 여 응용 프로그램을 만드는 방법을 설명 합니다.
 
-[Azure SQL Database](/azure/sql-database/) &mdash;Describes 관계형 Database as a Service Azure SQL Database에 연결 하는 방법을 설명 합니다.
+[Azure SQL Database](/azure/sql-database/)&mdash;관계형 Database as a Service Azure SQL Database에 연결 하는 방법을 설명 합니다.
 
-[SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt) 는 데이터 연결 응용 프로그램 및 데이터베이스의 디자인, 탐색, 테스트 및 배포를 간소화 하는 도구를 &mdash;Describes 합니다.
+[SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt)&mdash;에서는 데이터 연결 응용 프로그램 및 데이터베이스의 디자인, 탐색, 테스트 및 배포를 간소화 하는 도구에 대해 설명 합니다.
 
-[ADO.NET](/dotnet/framework/data/adonet/index) &mdash;Describes ADO.NET 아키텍처와 ADO.NET 클래스를 사용 하 여 응용 프로그램 데이터를 관리 하 고 데이터 원본 및 XML과 상호 작용 하는 방법을 보여 줍니다.
+[ADO.NET](/dotnet/framework/data/adonet/index)&mdash;는 ADO.NET 아키텍처와 ADO.NET 클래스를 사용 하 여 응용 프로그램 데이터를 관리 하 고 데이터 원본 및 XML과 상호 작용 하는 방법을 설명 합니다.
 
-[ADO.NET Entity Framework](/ef/ef6/) 는 개발자가 관계형 데이터베이스에 대해 직접 프로그래밍 하는 대신 개념적 모델에 대해 프로그래밍할 수 있도록 하는 데이터 응용 프로그램을 만드는 방법을 &mdash;Describes 합니다.
+[ADO.NET Entity Framework](/ef/ef6/)&mdash;는 개발자가 관계형 데이터베이스에 대해 직접 프로그래밍 하는 대신 개념적 모델을 기반으로 프로그래밍할 수 있도록 하는 데이터 응용 프로그램을 만드는 방법을 설명 합니다.
 
 [WCF Data Services 4.5](/dotnet/framework/data/wcf/index)&mdash;[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]를 사용 하 여 웹 또는 [OData (Open Data Protocol)](https://www.odata.org/)를 구현 하는 인트라넷에 데이터 서비스를 배포 하는 방법을 설명 합니다.
 
-[Office 솔루션의 데이터](../vsto/data-in-office-solutions.md) &mdash;Contains office 솔루션에서 데이터가 작동 하는 방식을 설명 하는 항목에 대 한 링크를 제공 합니다. 여기에는 스키마 지향 프로그래밍, 데이터 캐싱 및 서버 쪽 데이터 액세스에 대 한 정보가 포함 됩니다.
+[Office](../vsto/data-in-office-solutions.md) 솔루션의 데이터&mdash;에는 office 솔루션에서 데이터가 작동 하는 방식을 설명 하는 항목에 대 한 링크가 포함 되어 있습니다. 여기에는 스키마 지향 프로그래밍, 데이터 캐싱 및 서버 쪽 데이터 액세스에 대 한 정보가 포함 됩니다.
 
-[LINQ (통합 언어 쿼리)](/dotnet/csharp/linq/) &mdash;Describes에 C# 기본 제공 되 고 Visual Basic는 쿼리 기능과 관계형 데이터베이스, XML 문서, 데이터 집합 및 메모리 내 컬렉션을 쿼리 하기 위한 공용 모델을 제공 합니다.
+[LINQ (통합 언어 쿼리)](/dotnet/csharp/linq/)&mdash;에 C# 기본 제공 되 고 Visual Basic 되는 쿼리 기능과 관계형 데이터베이스, XML 문서, 데이터 집합 및 메모리 내 컬렉션을 쿼리 하기 위한 일반 모델을 설명 합니다.
 
-[Visual Studio의 Xml 도구](../xml-tools/xml-tools-in-visual-studio.md) 는 xml 데이터 작업, XSLT 디버깅, .net xml 기능 및 xml 쿼리 아키텍처를 &mdash;Discusses 합니다.
+[Visual Studio의 Xml 도구](../xml-tools/xml-tools-in-visual-studio.md)&mdash;xml 데이터 작업, XSLT 디버깅, .net xml 기능 및 xml 쿼리 아키텍처에 대해 설명 합니다.
 
-[Xml 문서 및 데이터](/dotnet/standard/data/xml/index) 는 .NET에서 xml 문서 및 데이터를 사용 하는 포괄적이 고 통합 된 클래스 집합에 대 한 개요를 &mdash;Provides 합니다.
+[Xml 문서 및 데이터](/dotnet/standard/data/xml/index)&mdash;는 .NET에서 xml 문서 및 데이터를 사용 하는 포괄적이 고 통합 된 클래스 집합에 대 한 개요를 제공 합니다.

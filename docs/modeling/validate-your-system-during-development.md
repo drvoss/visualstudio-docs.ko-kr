@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 328b600a21adf274d1d016f595438eb5622ee853
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ae2b7d81b1f166e6cc97debc3291661d59ee6960
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663742"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594034"
 ---
 # <a name="validate-your-system-during-development"></a>개발하는 동안 시스템 유효성 검사
 
@@ -33,9 +33,9 @@ Visual Studio를 사용 하면 사용자 요구 사항과 시스템 아키텍처
 
 ## <a name="external-resources"></a>외부 리소스
 
-|**범주**|**Links**|
+|**범주**|**링크**|
 |-|-|
-|**비디오**|비디오 ](../data-tools/media/playvideo.gif) [Channel 9: Doug 7: Visual Studio 2010을 사용 하 여 코드 이해 및 시스템 디자인](https://channel9.msdn.com/shows/VS2010Launch/Doug-Seven-Code-Understanding-and-Systems-Design-with-Visual-Studio-2010) 에 ![link<br /><br /> 비디오 ](../data-tools/media/playvideo.gif)에 ![link [Channel 9: 응용 프로그램 설계](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-5-architecting-an-application))|
+|**비디오**|비디오](../data-tools/media/playvideo.gif) [Channel 9: Doug 7: Visual Studio 2010을 사용 하 여 코드를 이해 하 고 시스템 디자인](https://channel9.msdn.com/shows/VS2010Launch/Doug-Seven-Code-Understanding-and-Systems-Design-with-Visual-Studio-2010) ![링크<br /><br /> 비디오](../data-tools/media/playvideo.gif)에 링크 ![[Channel 9: 응용 프로그램 설계](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-5-architecting-an-application))|
 |**포럼**|- [Visual Studio 시각화 및 모델링 도구](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Visual Studio 확장성](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)|
 
 ## <a name="see-also"></a>참조

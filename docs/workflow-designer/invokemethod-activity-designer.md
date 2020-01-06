@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.InvokeMethod.UI
 ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 593ec198cdfdd8acd1967abb046384711e1fa9ac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8660cd82f9d671da3b535ac228e8ce62c875dc07
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650163"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593202"
 ---
 # <a name="invokemethod-activity-designer"></a>InvokeMethod 활동 디자이너
 
@@ -27,19 +27,19 @@ ms.locfileid: "72650163"
 
 ### <a name="use-the-invokemethod-activity-designer"></a>InvokeMethod 활동 디자이너 사용
 
-**도구 상자**의 **기본 형식** 범주에서 **InvokeMethod** activity 디자이너에 액세스 합니다. **InvokeMethod** 활동 디자이너를 **도구 상자** 에서 끌어다가 일반적으로 활동을 배치 하는 워크플로 디자이너 화면 (예: <xref:System.Activities.Statements.Sequence> 내부)에 놓을 수 있습니다. 활동 디자이너를 삭제 하면 기본 <xref:System.Activities.Activity.DisplayName%2A> InvokeMethod의 <xref:System.Activities.Statements.InvokeMethod> 활동이 만들어집니다. **InvokeMethod** 활동 디자이너의 머리글 또는 속성 표의 **DisplayName** 상자에서 <xref:System.Activities.Activity.DisplayName%2A> 편집할 수 있습니다.
+**도구 상자**의 **기본 형식** 범주에서 **InvokeMethod** activity 디자이너에 액세스 합니다. **InvokeMethod** 활동 디자이너를 **도구 상자** 에서 끌어다가 일반적으로 활동을 배치 하는 워크플로 디자이너 화면 (예: <xref:System.Activities.Statements.Sequence>내부)에 놓을 수 있습니다. 활동 디자이너를 삭제 하면 기본 <xref:System.Activities.Activity.DisplayName%2A> InvokeMethod의 <xref:System.Activities.Statements.InvokeMethod> 활동이 만들어집니다. **InvokeMethod** 활동 디자이너의 머리글 또는 속성 표의 **DisplayName** 상자에서 <xref:System.Activities.Activity.DisplayName%2A> 편집할 수 있습니다.
 
 ### <a name="the-invokemethod-properties"></a>InvokeMethod 속성
 
 다음 표에서는 <xref:System.Activities.Statements.InvokeMethod> 속성을 보여 주고 디자이너에서 이러한 속성을 사용 하는 방법을 설명 합니다. 이러한 속성은 속성 표에서 편집할 수 있으며 일부 속성은 워크플로 디자이너 화면에서 편집할 수 있습니다.
 
-|속성 이름|필요한 공간|사용 현황|
+|속성 이름|필수|용도|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.InvokeMethod> 활동의 이름입니다. 기본값은 InvokeMethod입니다.<br /><br /> @No__t_0 반드시 필요한 것은 아니지만 하나를 사용 하는 것이 좋습니다.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.InvokeMethod> 활동의 이름입니다. 기본값은 InvokeMethod입니다.<br /><br /> <xref:System.Activities.Activity.DisplayName%2A> 반드시 필요한 것은 아니지만 하나를 사용 하는 것이 좋습니다.|
 |<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|True|작업이 실행될 때 호출할 메서드의 이름입니다. 호출 된 메서드를 **public**으로 선언 해야 합니다. 이 속성은 디자이너 화면에서 편집할 수 있으며 필수 항목입니다.|
-|<xref:System.Activities.Statements.InvokeMethod.Parameters%2A>|False|호출되는 메서드의 매개 변수 컬렉션입니다. 매개 변수는 메서드 서명에 표시 되는 순서와 동일한 순서로 컬렉션에 추가 되어야 합니다. 이 속성을 설정할 수 있는 **매개 변수** 대화 상자를 표시 하려면 속성 표의 **매개 변수** 필드에서 줄임표 단추를 클릭 합니다. **인수 만들기** 단추를 클릭 하 여 매개 변수를 추가 합니다.|
+|<xref:System.Activities.Statements.InvokeMethod.Parameters%2A>|False|호출되는 메서드의 매개 변수 컬렉션입니다. 메서드 시그니처에 표시되는 것과 동일한 순서대로 컬렉션에 매개 변수를 추가해야 합니다. 이 속성을 설정할 수 있는 **매개 변수** 대화 상자를 표시 하려면 속성 표의 **매개 변수** 필드에서 줄임표 단추를 클릭 합니다. **인수 만들기** 단추를 클릭 하 여 매개 변수를 추가 합니다.|
 |<xref:System.Activities.Statements.InvokeMethod.Result%2A>|False|메서드 호출의 반환 값입니다.|
-|<xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>|True|메서드가 비동기적으로 호출되는지 여부를 지정합니다. 기본값은 **False**입니다.|
+|<xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>|True|메서드가 비동기적으로 호출되는지 여부를 지정합니다. 기본값은 **False**.|
 |<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>|False|호출할 메서드가 포함된 개체입니다. 이 속성은 디자이너 화면에서 편집할 수 있습니다.<br /><br /> <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> 또는 <xref:System.Activities.Statements.InvokeMethod.TargetType%2A>을 설정해야 합니다.|
 |<xref:System.Activities.Statements.InvokeMethod.TargetType%2A>|False|<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>의 형식입니다. 이 속성은 디자이너 화면에서 편집할 수 있습니다. 이 속성은 호출된 메서드가 정적인 경우에만 설정해야 합니다.|
 
@@ -57,7 +57,7 @@ ms.locfileid: "72650163"
 
 다음과 같은 메시지와 함께 <xref:System.Activities.InvalidWorkflowException> 형식의 예외가 발생합니다. 'InvokeMethod': 이름이 'TargetObject'인 변수(RuntimeArgument 또는 DelegateArgument) 변수가 이미 있습니다. 이름은 환경 범위 내에서 고유해야 합니다.
 
-@No__t_0 및 <xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>에는이 제한이 적용 되지 않습니다. 워크플로 인수가 아니므로 <xref:System.Activities.Activity.CacheMetadata%2A> 메서드에서 <xref:System.Activities.Statements.InvokeMethod> 활동의 <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A> 컬렉션에 등록 되지 않습니다.
+<xref:System.Activities.Statements.InvokeMethod.TargetType%2A> 및 <xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>에는이 제한이 적용 되지 않습니다. 워크플로 인수가 아니므로 <xref:System.Activities.Activity.CacheMetadata%2A> 메서드에서 <xref:System.Activities.Statements.InvokeMethod> 활동의 <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A> 컬렉션에 등록 되지 않습니다.
 
 ## <a name="see-also"></a>참조
 

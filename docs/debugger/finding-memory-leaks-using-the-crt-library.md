@@ -1,4 +1,4 @@
----
+﻿---
 title: CRT 라이브러리를 사용하여 메모리 누수 찾기 | Microsoft Docs
 ms.date: 10/04/2018
 ms.topic: conceptual
@@ -109,7 +109,7 @@ Object dump complete.
 - 예제에서 블록 형식인 `normal`
 - 예제에서 16진수 메모리 위치 `0x00780E80`
 - 예제에서 블록의 크기인 `64 bytes`
-- 블록 내 데이터의 처음 16바이트(16진수 형식)
+- 블록 처음 데이터의 16바이트(16진수 형식)를 표시합니다.
 
 메모리 블록 형식은 *normal*, *client* 또는 *CRT*입니다. *normal 블록*은 프로그램이 할당한 보통 메모리입니다. *client 블록*은 MFC 프로그램이 소멸자를 필요로 하는 개체에 대해 사용하는 특별한 메모리 블록 형식입니다. MFC `new` 연산자는 normal 블록 또는 client 블록 중 생성되는 개체에 적합한 블록을 만듭니다.
 
@@ -185,7 +185,7 @@ Object dump complete.
 
 1. 앱의 시작 부분 근처에 중단점을 설정 하 고 디버깅을 시작 합니다.
 
-1. 앱이 중단점에서 일시 중지 되 면 **디버그** > **Windows** > **조사식 1** (또는 조사식 **2**, **조사식 3**또는 **조사식 4**)을 선택 하 여 **조사식** 창을 엽니다.
+1. 앱이 중단점에서 일시 중지 되 면 **디버그** > **Windows** > **조사식 1** (또는 조사식 **2**, **조사식 3** 또는 **조사식 4**)을 선택하여 **조사식** 창을 엽니다.
 
 1. **조사식** 창에서 **이름** 열에 `_crtBreakAlloc`을 입력 합니다.
 
@@ -216,14 +216,14 @@ _CrtSetBreakAlloc(18);
 ```
 
 ## <a name="compare-memory-states"></a>메모리 상태 비교
- 주요 지점에서 애플리케이션의 메모리 상태 스냅샷을 보고 메모리 누수를 찾을 수도 있습니다. 응용 프로그램의 지정된 지점에서 메모리 상태의 스냅샷을 만들려면 `_CrtMemState` 구조체를 만들고 `_CrtMemCheckpoint` 함수에 전달합니다.
+ 주요 지점에서 애플리케이션의 메모리 상태 스냅샷을 보고 메모리 누수를 찾을 수도 있습니다. 응용 프로그램의 지정된 지점에서 메모리 상태의 스냅샷을 만들려면 `_CrtMemState` 구조체를 만들고 `_CrtMemCheckpoint` 함수에 전달 합니다.
 
 ```cpp
 _CrtMemState s1;
 _CrtMemCheckpoint( &s1 );
 ```
 
-`_CrtMemCheckpoint` 함수는 구조체를 현재 메모리 상태의 스냅숏으로 채웁니다.
+`_CrtMemCheckpoint` 함수는 구조체를 현재 메모리 상태의 스냅샷으로 채웁니다.
 
 `_CrtMemState` 구조체의 내용을 출력 하려면 `_ CrtMemDumpStatistics` 함수에 구조체를 전달 합니다.
 
@@ -231,7 +231,7 @@ _CrtMemCheckpoint( &s1 );
 _CrtMemDumpStatistics( &s1 );
 ```
 
-`_ CrtMemDumpStatistics`는 다음과 같은 메모리 상태 덤프를 출력 합니다.
+`_CrtMemDumpStatistics`는 다음과 같은 메모리 상태 덤프를 출력 합니다.
 
 ```cmd
 0 bytes in 0 Free Blocks.
@@ -243,7 +243,7 @@ Largest number used: 3071 bytes.
 Total allocations: 3764 bytes.
 ```
 
-코드의 한 섹션에서 메모리 누수가 발생했는지 확인하려면 해당 섹션 앞뒤에서 메모리 상태 스냅샷을 만든 다음 `_CrtMemDifference`를 사용하여 두 상태를 비교합니다.
+코드의 한 섹션에서 메모리 누수가 발생했는지 확인하려면 해당 섹션 앞뒤에서 메모리 상태 스냅샷을 만든 다음 `_CrtMemDifference` 를 사용하여 두 상태를 비교합니다.
 
 ```cpp
 _CrtMemCheckpoint( &s1 );
@@ -254,12 +254,12 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
    _CrtMemDumpStatistics( &s3 );
 ```
 
-`_CrtMemDifference`는 `s1` 메모리 상태를 비교 하 고 `s2` `s1`과 `s2`의 차이를 나타내는 결과 (`s3`)를 반환 합니다.
+`_CrtMemDifference`는 `s1` 메모리 상태를 비교하고 `s2` `s1`과 `s2`의 차이를 나타내는 결과 (`s3`)를 반환 합니다.
 
-메모리 누수를 찾는 한 가지 기술은 응용 프로그램의 시작과 끝에 `_CrtMemCheckpoint` 호출을 배치한 다음 `_CrtMemDifference`를 사용하여 결과를 비교하는 것으로 시작됩니다. `_CrtMemDifference`가 메모리 누수를 표시하는 경우 누수의 근원을 격리할 때까지 이진 검색을 사용하여 프로그램을 분할하는 `_CrtMemCheckpoint` 호출을 더 추가할 수 있습니다.
+메모리 누수를 찾는 한 가지 기술은 응용 프로그램의 시작과 끝에 `_CrtMemCheckpoint` 호출을 배치한 다음 `_CrtMemDifference`를 사용하여 결과를 비교 하는 것으로 시작 됩니다. `_CrtMemDifference` 메모리 누수를 표시하는 경우 누수 원본을 격리할 때까지 이진 검색을 사용하여 프로그램을 분할 하는 `_CrtMemCheckpoint` 호출을 더 추가할 수 있습니다.
 
 ## <a name="false-positives"></a>가양성(false positive)
- 라이브러리에서 내부 할당을 CRT 블록 또는 클라이언트 블록 대신 일반 블록으로 표시하는 경우에는 `_CrtDumpMemoryLeaks`에서 잘못된 메모리 누수를 나타낼 수 있습니다. 이 경우 `_CrtDumpMemoryLeaks`는 사용자 할당과 내부 라이브러리 할당을 구별할 수 없게 됩니다. `_CrtDumpMemoryLeaks`를 호출한 이후에 라이브러리 할당을 위한 전역 소멸자가 실행되면 모든 내부 라이브러리 할당이 메모리 누수로 보고됩니다. Visual Studio .NET 이전 버전의 표준 템플릿 라이브러리에서는`_CrtDumpMemoryLeaks`가 이러한 가양성을 보고하도록 할 수 있습니다.
+ 라이브러리에서 내부 할당을 CRT 블록 또는 클라이언트 블록 대신 일반 블록으로 표시하는 경우에는 `_CrtDumpMemoryLeaks`에서 잘못 된 메모리 누수를 나타낼 수 있습니다. 이 경우 `_CrtDumpMemoryLeaks` 가 사용자 할당과 내부 라이브러리 할당을 구별할 수 없게 됩니다. `_CrtDumpMemoryLeaks`를 호출한 이후에 라이브러리 할당을 위한 전역 소멸자가 실행되면 모든 내부 라이브러리 할당이 메모리 누수로 보고됩니다. Visual Studio .NET 이전 버전의 표준 템플릿 라이브러리에서는 이러한 가양성을 보고 `_CrtDumpMemoryLeaks` 수 있습니다.
 
 ## <a name="see-also"></a>참조
 - [CRT 디버그 힙 정보](../debugger/crt-debug-heap-details.md)

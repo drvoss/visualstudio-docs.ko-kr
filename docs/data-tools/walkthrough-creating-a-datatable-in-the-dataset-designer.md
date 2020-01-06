@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Dataset Designer, creating data tables
 - tables [Visual Studio], creating
 - data [Visual Studio], Dataset Designer
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9dbf7116c614a8eec599f197f975ab4c389bc950
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1526a5f4137ece5b76c282255af3da4ab20ac119
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648064"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586005"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>연습: 데이터 세트 디자이너에서 DataTable 만들기
 
@@ -25,7 +25,7 @@ ms.locfileid: "72648064"
 
 ## <a name="create-a-new-windows-forms-application"></a>새 Windows Forms 애플리케이션 만들기
 
-1. Visual Studio의 **파일** 메뉴에서 **새로 만들기**  > **프로젝트**를 선택 합니다.
+1. Visual Studio의 **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 차례로 선택합니다.
 
 2. 왼쪽 창 **에서 C# 시각적 개체** 또는 **Visual Basic** 을 확장 한 다음 **Windows 데스크톱**을 선택 합니다.
 

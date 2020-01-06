@@ -12,17 +12,17 @@ helpviewer_keywords:
 - PictureBox control [Windows Forms], data binding
 - images [Visual Basic], dragging from Data Sources window
 ms.assetid: 9748815e-3556-49e8-86b1-c6aa593c6163
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 64168339e5f6bd9be6b3108268a009f6a87bc22c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a4155a246516bef074a56e5644712912b2ce5af6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648827"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587006"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>데이터베이스의 그림에 컨트롤 바인딩
 
@@ -39,7 +39,7 @@ ms.locfileid: "72648827"
 2. **데이터 원본** 창에서 원하는 테이블 또는 개체를 확장 하 여 해당 열 또는 속성을 표시 합니다.
 
    > [!TIP]
-   > **데이터 소스** 창이 열려 있지 않으면**다른 Windows**  > **데이터 원본** >  **보기** 를 선택 하 여 엽니다.
+   > **데이터 소스** 창이 열려 있지 않으면 **다른 Windows** > **데이터 원본** > **보기** 를 선택 하 여 엽니다.
 
 3. 이미지 데이터를 포함 하는 열 또는 속성을 선택 하 고 드롭다운 컨트롤 목록에서 다음 컨트롤 중 하나를 선택 합니다.
 

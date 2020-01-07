@@ -1,4 +1,4 @@
----
+﻿---
 title: 디버거를 사용 하 여 코드 탐색 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/12/2018
@@ -24,7 +24,7 @@ ms.locfileid: "73187605"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Visual Studio 디버거를 사용 하 여 코드 탐색
 
-Visual Studio 디버거는 코드를 탐색하여 앱의 상태를 검사하고 실행 흐름을 표시하는 데 도움이 될 수 있습니다. 바로 가기 키, 디버그 명령, 중단점 및 기타 기능을 사용 하여 검사하려는 코드로 신속하게 이동할 수 있습니다. 디버거 탐색 명령 및 바로 가기에 익숙하면 앱 문제를 보다 쉽고 빠르게 찾고 해결할 수 있습니다.  처음으로 코드를 디버깅 하는 경우이 문서를 진행 하기 전에 절대 초보자와 [디버깅 기술 및 도구](../debugger/write-better-code-with-visual-studio.md) [에 대 한 디버깅](../debugger/debugging-absolute-beginners.md) 을 읽어야 할 수 있습니다.
+Visual Studio 디버거는 코드를 탐색하여 앱의 상태를 검사하고 실행 흐름을 표시하는 데 도움이 될 수 있습니다. 바로 가기 키, 디버그 명령, 중단점 및 기타 기능을 사용 하여 검사하려는 코드로 신속하게 이동할 수 있습니다. 디버거 탐색 명령 및 바로 가기에 익숙하면 앱 문제를 보다 쉽고 빠르게 찾고 해결할 수 있습니다. 처음으로 코드를 디버깅하는 경우 이 문서를 진행하기 전에 [완전 초보자를 위한 디버깅](../debugger/debugging-absolute-beginners.md)과 [디버깅 기술 및 도구](../debugger/write-better-code-with-visual-studio.md)을 읽고 오는 것을 추천합니다.
 
 ## <a name="get-into-break-mode"></a>"중단 모드"로 가져오기
 
@@ -34,7 +34,7 @@ Visual Studio 디버거는 코드를 탐색하여 앱의 상태를 검사하고 
 
 - [중단점을 설정](using-breakpoints.md)하고 앱을 시작하는 등의 방법으로 [특정 위치 또는 함수까지 실행](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All)합니다.
 
-   예를 들어 Visual Studio의 코드 편집기에서 **커서까지 실행** 명령을 사용하여 앱을 시작하고 디버거를 연결하여 중단 모드로 전환하고 **F11** 키를 눌러 코드를 탐색할 수 있습니다.
+    예를 들어 Visual Studio의 코드 편집기에서 **커서까지 실행** 명령을 사용하여 앱을 시작하고 디버거를 연결하여 중단 모드로 전환하고 **F11** 키를 눌러 코드를 탐색할 수 있습니다.
 
    ![커서까지 실행 및 코드 한 단계씩 코드 실행](../debugger/media/navigate-code-code-stepping.gif "커서까지 실행 및 코드 한 단계씩 코드 실행")
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: '빠른 시작: C/C++ 코드 분석'
 description: Visual Studio에서 코드 C++ 에 대 한 정적 분석을 실행 하 여 일반적인 코딩 문제 및 결함을 검색 합니다.
 ms.date: 11/04/2016

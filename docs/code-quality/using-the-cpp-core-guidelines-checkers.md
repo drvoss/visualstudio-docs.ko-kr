@@ -1,4 +1,4 @@
----
+﻿---
 title: C++ Core Guidelines 사용
 ms.date: 08/14/2018
 ms.topic: conceptual

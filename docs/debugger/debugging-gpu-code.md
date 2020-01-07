@@ -65,7 +65,7 @@ GPU(그래픽 처리 장치)에서 실행되는 C++ 코드를 디버깅할 수 �
 ## <a name="troubleshooting"></a>문제 해결
 
 ### <a name="specifying-an-accelerator"></a>가속기 지정
- GPU 코드의 중단점은 코드가 [accelerator::direct3d_ref](/cpp/parallel/amp/reference/accelerator-class#direct3d_ref)(REF) 가속기에서 실행되는 경우에만 적중됩니다. 코드에서 가속기를 지정하지 않는 경우 REF 가속기가 프로젝트 속성에서 **디버깅 가속기 형식**으로 자동으로 선택됩니다. 코드에서 명시적으로 가속기를 선택하는 경우에는 REF 가속기가 디버깅 중에 사용되지 않으며 GPU 하드웨어에 디버깅 지원 기능이 없는 한 중단점이 적중되지 않습니다. 디버깅 중에 REF 가속기를 사용하도록 코드를 작성하여 이 문제를 해결할 수 있습니다. 자세한 내용은 프로젝트 속성 및 [ C++ 디버그 구성에 대 한](../debugger/project-settings-for-a-cpp-debug-configuration.md) [Accelerator 및 Accelerator_view 개체](/cpp/parallel/amp/using-accelerator-and-accelerator-view-objects) 및 프로젝트 설정 사용을 참조 하세요.
+ GPU 코드의 중단점은 코드가 [accelerator::direct3d_ref](/cpp/parallel/amp/reference/accelerator-class#direct3d_ref)(REF) 가속기에서 실행되는 경우에만 적중됩니다. 코드에서 가속기를 지정하지 않는 경우 REF 가속기가 프로젝트 속성에서 **디버깅 가속기 형식**으로 자동으로 선택됩니다. 코드에서 명시적으로 가속기를 선택하는 경우에는 REF 가속기가 디버깅 중에 사용되지 않으며 GPU 하드웨어에 디버깅 지원 기능이 없는 한 중단점이 적중되지 않습니다. 디버깅 중에 REF 가속기를 사용하도록 코드를 작성하여 이 문제를 해결할 수 있습니다. 자세한 내용은 프로젝트 속성 및 [ C++ 디버그 구성에 대한](../debugger/project-settings-for-a-cpp-debug-configuration.md) [Accelerator 및 Accelerator_view 개체](/cpp/parallel/amp/using-accelerator-and-accelerator-view-objects) 및 프로젝트 설정 사용을 참조 하세요.
 
 ### <a name="conditional-breakpoints"></a>조건부 중단점
  GPU 코드에서 조건부 중단점이 지원되지만 디바이스에서 일부 식은 계산될 수 없습니다. 식이 디바이스에서 계산될 수 없는 경우 디버거에서 계산됩니다. 디버거는 대개 디바이스보다 느리게 실행됩니다.

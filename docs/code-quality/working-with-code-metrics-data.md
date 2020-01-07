@@ -8,17 +8,17 @@ helpviewer_keywords:
 - code metrics results
 - code metrics results window
 - results window, code metrics
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0824fe608ad1bac86ef904702bd1be907bc9ce7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6d62baf32685832072266438de003b523399137f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649001"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587084"
 ---
 # <a name="use-the-code-metrics-results-window"></a>코드 메트릭 결과 창 사용
 
@@ -30,9 +30,9 @@ ms.locfileid: "72649001"
 
 다음 메뉴 시퀀스 중 하나를 사용 하 여 코드 메트릭 결과 창을 표시할 수 있습니다.
 
-- **분석** 메뉴에서 **Windows**  > **코드 메트릭 결과**를 선택 합니다.
+- **분석** 메뉴에서 **Windows** > **코드 메트릭 결과**를 선택 합니다.
 
-- **보기** 메뉴에서 **다른 Windows**  > **코드 메트릭 결과**를 선택 합니다.
+- **보기** 메뉴에서 **다른 Windows** > **코드 메트릭 결과**를 선택 합니다.
 
 결과를 포함 하지 않는 경우에도 **코드 메트릭 결과** 창이 열립니다.
 

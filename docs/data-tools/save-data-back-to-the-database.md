@@ -15,17 +15,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], constraints
 - TableAdapters
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ab2bd92b5636c89027c9c5954567be8048c1b152
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 64d46d4d662b7226dd2be15e6281a17e5b87e577
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648218"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586291"
 ---
 # <a name="save-data-back-to-the-database"></a>데이터를 다시 데이터베이스에 저장
 
@@ -70,27 +70,27 @@ Tableadapter에 대해 잘 알고 있는 경우 다음 항목 중 하나로 직�
 
 데이터 집합을 병합할 때 대상 데이터 집합의 기존 수정 내용을 유지할지 여부를 <xref:System.Data.DataSet.Merge%2A> 메서드에 알려 주는 부울 인수 (`preserveChanges`)를 전달할 수 있습니다. 데이터 집합은 여러 버전의 레코드를 유지 하기 때문에 두 개 이상의 레코드가 병합 되 고 있다는 점을 명심 해야 합니다. 다음 표에서는 두 데이터 집합의 레코드를 병합 하는 방법을 보여 줍니다.
 
-|DataRowVersion|대상 데이터 세트|원본 데이터 집합|
+|DataRowVersion|대상 데이터 세트|원본 데이터 세트|
 | - | - | - |
-|원래 이름|James Wilson|James C. Wilson|
+|원래 색|James Wilson|James C. Wilson|
 |현재|Jim Wilson|James C. Wilson|
 
 위의 표에서 `preserveChanges=false targetDataset.Merge(sourceDataset)`를 사용 하 여 <xref:System.Data.DataSet.Merge%2A> 메서드를 호출 하면 다음 데이터가 반환 됩니다.
 
-|DataRowVersion|대상 데이터 세트|원본 데이터 집합|
+|DataRowVersion|대상 데이터 세트|원본 데이터 세트|
 | - | - | - |
-|원래 이름|James C. Wilson|James C. Wilson|
+|원래 색|James C. Wilson|James C. Wilson|
 |현재|James C. Wilson|James C. Wilson|
 
-@No__t_1를 사용 하 여 <xref:System.Data.DataSet.Merge%2A> 메서드를 호출 하면 다음 데이터가 반환 됩니다.
+`preserveChanges = true targetDataset.Merge(sourceDataset, true)`를 사용 하 여 <xref:System.Data.DataSet.Merge%2A> 메서드를 호출 하면 다음 데이터가 반환 됩니다.
 
-|DataRowVersion|대상 데이터 세트|원본 데이터 집합|
+|DataRowVersion|대상 데이터 세트|원본 데이터 세트|
 | - | - | - |
-|원래 이름|James C. Wilson|James C. Wilson|
+|원래 색|James C. Wilson|James C. Wilson|
 |현재|Jim Wilson|James C. Wilson|
 
 > [!CAUTION]
-> @No__t_0 시나리오에서 대상 데이터 집합의 레코드에 대해 <xref:System.Data.DataSet.RejectChanges%2A> 메서드를 호출 하면 *원본* 데이터 집합에서 원래 데이터로 되돌아갑니다. 즉, 대상 데이터 집합을 사용 하 여 원래 데이터 원본을 업데이트 하려고 하면 업데이트할 원래 행을 찾지 못할 수 있습니다. 데이터 원본에서 업데이트 된 레코드로 다른 데이터 집합을 채운 다음, 동시성 위반을 방지 하기 위해 병합을 수행 하 여 동시성 위반을 방지할 수 있습니다. 데이터 집합을 채운 후 다른 사용자가 데이터 소스의 레코드를 수정 하면 동시성 위반이 발생 합니다.
+> `preserveChanges = true` 시나리오에서 대상 데이터 집합의 레코드에 대해 <xref:System.Data.DataSet.RejectChanges%2A> 메서드를 호출 하면 *원본* 데이터 집합에서 원래 데이터로 되돌아갑니다. 즉, 대상 데이터 집합을 사용 하 여 원래 데이터 원본을 업데이트 하려고 하면 업데이트할 원래 행을 찾지 못할 수 있습니다. 데이터 원본에서 업데이트 된 레코드로 다른 데이터 집합을 채운 다음, 동시성 위반을 방지 하기 위해 병합을 수행 하 여 동시성 위반을 방지할 수 있습니다. 데이터 집합을 채운 후 다른 사용자가 데이터 소스의 레코드를 수정 하면 동시성 위반이 발생 합니다.
 
 ## <a name="update-constraints"></a>제약 조건 업데이트
 
@@ -103,7 +103,7 @@ Tableadapter에 대해 잘 알고 있는 경우 다음 항목 중 하나로 직�
 - 특정 업데이트 이벤트 (종종 유효성 검사에 사용 되는 이벤트)가 발생 하지 않도록 합니다.
 
 > [!NOTE]
-> Windows Forms datagrid에 기본 제공 되는 데이터 바인딩 아키텍처는 포커스가 행 외부로 이동할 때까지 제약 조건 검사를 일시 중단 하며, <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A> 또는 <xref:System.Data.DataRow.CancelEdit%2A> 메서드를 명시적으로 호출할 필요가 없습니다.
+> Windows Forms datagrid에 기본 제공 되는 데이터 바인딩 아키텍처는 포커스가 행 외부로 이동할 때까지 제약 조건 검사를 일시 중단 하며, <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A>또는 <xref:System.Data.DataRow.CancelEdit%2A> 메서드를 명시적으로 호출할 필요가 없습니다.
 
 데이터 집합에서 <xref:System.Data.DataSet.Merge%2A> 메서드가 호출 되 면 제약 조건이 자동으로 비활성화 됩니다. 병합이 완료 되 면 사용 하도록 설정할 수 없는 데이터 집합에 대 한 제약 조건이 있으면 <xref:System.Data.ConstraintException> throw 됩니다. 이 경우 <xref:System.Data.DataSet.EnforceConstraints%2A> 속성이 `false,`로 설정 되 고 <xref:System.Data.DataSet.EnforceConstraints%2A> 속성을 `true`로 다시 설정 하기 전에 모든 제약 조건 위반을 확인 해야 합니다.
 
@@ -121,21 +121,21 @@ Tableadapter에 대해 잘 알고 있는 경우 다음 항목 중 하나로 직�
 
 ### <a name="rowstate-property"></a>RowState 속성
 
-@No__t_1 개체의 <xref:System.Data.DataRow.RowState%2A> 속성은 특정 데이터 행의 상태에 대 한 정보를 제공 하는 값입니다.
+<xref:System.Data.DataRow> 개체의 <xref:System.Data.DataRow.RowState%2A> 속성은 특정 데이터 행의 상태에 대 한 정보를 제공 하는 값입니다.
 
 다음 표에서는 <xref:System.Data.DataRowState> 열거형의 가능한 값에 대해 자세히 설명 합니다.
 
 |DataRowState 값|설명|
 | - |-----------------|
 |<xref:System.Data.DataRowState.Added>|행이 <xref:System.Data.DataRowCollection>에 항목으로 추가 되었습니다. 이 상태의 행은 마지막 <xref:System.Data.DataRow.AcceptChanges%2A> 메서드를 호출한 경우 존재 하지 않기 때문에 해당 하는 원래 버전이 없습니다.|
-|<xref:System.Data.DataRowState.Deleted>|@No__t_1 개체의 <xref:System.Data.DataRow.Delete%2A>를 사용 하 여 행을 삭제 했습니다.|
-|<xref:System.Data.DataRowState.Detached>|행이 만들어졌지만 <xref:System.Data.DataRowCollection>의 일부가 아닙니다. @No__t_0 개체는 만들어진 직후, 컬렉션에 추가 되기 전에, 그리고 컬렉션에서 제거 된 후에이 상태가 됩니다.|
+|<xref:System.Data.DataRowState.Deleted>|<xref:System.Data.DataRow> 개체의 <xref:System.Data.DataRow.Delete%2A>를 사용 하 여 행을 삭제 했습니다.|
+|<xref:System.Data.DataRowState.Detached>|행 생성 되었지만의 일부가 아닌 <xref:System.Data.DataRowCollection>합니다. <xref:System.Data.DataRow> 개체는 만들어진 직후, 컬렉션에 추가 되기 전에, 그리고 컬렉션에서 제거 된 후에이 상태가 됩니다.|
 |<xref:System.Data.DataRowState.Modified>|행의 열 값이 변경 되었습니다.|
-|<xref:System.Data.DataRowState.Unchanged>|@No__t_0가 마지막으로 호출 된 이후 행이 변경 되지 않았습니다.|
+|<xref:System.Data.DataRowState.Unchanged>|행이 이후 변경 되지 <xref:System.Data.DataRow.AcceptChanges%2A> 가 마지막으로 호출 합니다.|
 
 ### <a name="datarowversion-enumeration"></a>DataRowVersion 열거형
 
-데이터 집합은 여러 버전의 레코드를 유지 관리 합니다. @No__t_0 필드는 <xref:System.Data.DataRow> 개체의 <xref:System.Data.DataRow.GetChildRows%2A> 메서드 또는 <xref:System.Data.DataRow.Item%2A> 속성을 사용 하 여 <xref:System.Data.DataRow>에 있는 값을 검색할 때 사용 됩니다.
+데이터 집합은 여러 버전의 레코드를 유지 관리 합니다. <xref:System.Data.DataRowVersion> 필드는 <xref:System.Data.DataRow> 개체의 <xref:System.Data.DataRow.GetChildRows%2A> 메서드 또는 <xref:System.Data.DataRow.Item%2A> 속성을 사용 하 여 <xref:System.Data.DataRow>에 있는 값을 검색할 때 사용 됩니다.
 
 다음 표에서는 <xref:System.Data.DataRowVersion> 열거형의 가능한 값에 대해 자세히 설명 합니다.
 
@@ -144,7 +144,7 @@ Tableadapter에 대해 잘 알고 있는 경우 다음 항목 중 하나로 직�
 |<xref:System.Data.DataRowVersion.Current>|최신 버전의 레코드에는 <xref:System.Data.DataRow.AcceptChanges%2A>가 마지막으로 호출 된 이후 레코드에 대해 수행 된 모든 수정 내용이 포함 되어 있습니다. 행이 삭제 된 경우에는 현재 버전이 없습니다.|
 |<xref:System.Data.DataRowVersion.Default>|데이터 집합 스키마 또는 데이터 원본에 의해 정의 된 레코드의 기본값입니다.|
 |<xref:System.Data.DataRowVersion.Original>|레코드의 원래 버전은 데이터 집합에서 변경 내용이 마지막으로 커밋된 시점의 레코드 복사본입니다. 실제로이는 일반적으로 데이터 원본에서 읽은 레코드의 버전입니다.|
-|<xref:System.Data.DataRowVersion.Proposed>|업데이트 중에 일시적으로 사용할 수 있는 (즉, <xref:System.Data.DataRow.BeginEdit%2A> 메서드와 <xref:System.Data.DataRow.EndEdit%2A> 메서드를 호출한 시간 사이에) 임시 버전의 레코드를 사용할 수 있습니다. 일반적으로 <xref:System.Data.DataTable.RowChanging>와 같은 이벤트에 대 한 처리기에서 제안 된 레코드 버전에 액세스 합니다. @No__t_0 메서드를 호출 하면 변경 내용이 취소 되 고 데이터 행의 제안 된 버전이 삭제 됩니다.|
+|<xref:System.Data.DataRowVersion.Proposed>|업데이트 중에 일시적으로 사용할 수 있는 (즉, <xref:System.Data.DataRow.BeginEdit%2A> 메서드와 <xref:System.Data.DataRow.EndEdit%2A> 메서드를 호출한 시간 사이에) 임시 버전의 레코드를 사용할 수 있습니다. 일반적으로 <xref:System.Data.DataTable.RowChanging>와 같은 이벤트에 대 한 처리기에서 제안 된 레코드 버전에 액세스 합니다. <xref:System.Data.DataRow.CancelEdit%2A> 메서드를 호출 하면 변경 내용이 취소 되 고 데이터 행의 제안 된 버전이 삭제 됩니다.|
 
 원본 및 현재 버전은 업데이트 정보가 데이터 원본으로 전송 되는 경우에 유용 합니다. 일반적으로 데이터 원본에 업데이트를 보낼 때 데이터베이스의 새 정보는 레코드의 현재 버전에 있습니다. 원래 버전의 정보는 업데이트할 레코드를 찾는 데 사용 됩니다.
 
@@ -176,12 +176,12 @@ Tableadapter에 대해 잘 알고 있는 경우 다음 항목 중 하나로 직�
 
 - 변경 내용을 데이터베이스에 전송 하는 데 필요한 변경 정보를 잃지 않으므로 데이터 집합에서 데이터 원본으로 변경 내용을 전송한 후 (이전에는 그렇지 않음)
 
-@No__t_0 메서드를 호출 하 여 데이터 집합에 대 한 보류 중인 변경 내용을 커밋할 수 있습니다. 일반적으로 <xref:System.Data.DataSet.AcceptChanges%2A>는 다음과 같은 시간에 호출 됩니다.
+<xref:System.Data.DataSet.AcceptChanges%2A> 메서드를 호출 하 여 데이터 집합에 대 한 보류 중인 변경 내용을 커밋할 수 있습니다. 일반적으로 <xref:System.Data.DataSet.AcceptChanges%2A>는 다음과 같은 시간에 호출 됩니다.
 
 - 데이터 집합을 로드 한 후 TableAdapter의 `Fill` 메서드를 호출 하 여 데이터 집합을 로드 하는 경우 어댑터는 자동으로 변경 내용을 커밋합니다. 그러나 다른 데이터 집합을 병합 하 여 데이터 집합을 로드 하는 경우에는 변경 내용을 수동으로 커밋해야 합니다.
 
     > [!NOTE]
-    > 어댑터의 `AcceptChangesDuringFill` 속성을 `false`로 설정 하 여 `Fill` 메서드를 호출할 때 어댑터가 자동으로 변경 내용을 커밋하는 것을 방지할 수 있습니다. @No__t_0로 설정 된 경우 채우기 중에 삽입 된 각 행의 <xref:System.Data.DataRow.RowState%2A> <xref:System.Data.DataRowState.Added>로 설정 됩니다.
+    > 어댑터의 `AcceptChangesDuringFill` 속성을 `false`로 설정 하 여 `Fill` 메서드를 호출할 때 어댑터가 자동으로 변경 내용을 커밋하는 것을 방지할 수 있습니다. `false`로 설정 된 경우 채우기 중에 삽입 된 각 행의 <xref:System.Data.DataRow.RowState%2A> <xref:System.Data.DataRowState.Added>로 설정 됩니다.
 
 - XML web services와 같은 다른 프로세스에 데이터 집합 변경 내용을 전송 합니다.
 
@@ -190,13 +190,13 @@ Tableadapter에 대해 잘 알고 있는 경우 다음 항목 중 하나로 직�
 
 이 메서드는 다음을 수행 합니다.
 
-- @No__t_0 버전의 레코드를 <xref:System.Data.DataRowVersion.Original> 버전에 쓰고 원래 버전을 덮어씁니다.
+- <xref:System.Data.DataRowVersion.Current> 버전의 레코드를 <xref:System.Data.DataRowVersion.Original> 버전에 쓰고 원래 버전을 덮어씁니다.
 
-- @No__t_0 속성이 <xref:System.Data.DataRowState.Deleted>로 설정 된 모든 행을 제거 합니다.
+- <xref:System.Data.DataRow.RowState%2A> 속성이 <xref:System.Data.DataRowState.Deleted>로 설정 된 모든 행을 제거 합니다.
 
-- @No__t_1 레코드의 <xref:System.Data.DataRow.RowState%2A> 속성을 설정 합니다.
+- <xref:System.Data.DataRowState.Unchanged>레코드의 <xref:System.Data.DataRow.RowState%2A> 속성을 설정 합니다.
 
-@No__t_0 메서드는 세 가지 수준에서 사용할 수 있습니다. @No__t_0 개체에서이 메서드를 호출 하 여 해당 행에 대 한 변경 내용을 커밋할 수 있습니다. 또한 <xref:System.Data.DataTable> 개체에서이 메서드를 호출 하 여 테이블의 모든 행을 커밋할 수 있습니다. 마지막으로 <xref:System.Data.DataSet> 개체에서이 메서드를 호출 하 여 데이터 집합의 모든 테이블에 있는 모든 레코드의 보류 중인 모든 변경 내용을 커밋할 수 있습니다.
+<xref:System.Data.DataSet.AcceptChanges%2A> 메서드는 세 가지 수준에서 사용할 수 있습니다. <xref:System.Data.DataRow> 개체에서이 메서드를 호출 하 여 해당 행에 대 한 변경 내용을 커밋할 수 있습니다. 또한 <xref:System.Data.DataTable> 개체에서이 메서드를 호출 하 여 테이블의 모든 행을 커밋할 수 있습니다. 마지막으로 <xref:System.Data.DataSet> 개체에서이 메서드를 호출 하 여 데이터 집합의 모든 테이블에 있는 모든 레코드의 보류 중인 모든 변경 내용을 커밋할 수 있습니다.
 
 다음 표에서는 메서드가 호출 되는 개체에 따라 커밋된 변경 내용을 설명 합니다.
 
@@ -209,7 +209,7 @@ Tableadapter에 대해 잘 알고 있는 경우 다음 항목 중 하나로 직�
 > [!NOTE]
 > TableAdapter의 `Fill` 메서드를 호출 하 여 데이터 집합을 로드 하는 경우에는 변경 내용을 명시적으로 수락할 필요가 없습니다. 기본적으로 `Fill` 메서드는 데이터 테이블 채우기를 완료 한 후 `AcceptChanges` 메서드를 호출 합니다.
 
-관련 메서드인 <xref:System.Data.DataSet.RejectChanges%2A> <xref:System.Data.DataRowVersion.Original> 버전을 다시 <xref:System.Data.DataRowVersion.Current> 버전의 레코드에 복사 하 여 변경 효과를 취소 합니다. 또한 각 레코드의 <xref:System.Data.DataRow.RowState%2A>를 <xref:System.Data.DataRowState.Unchanged>으로 다시 설정 합니다.
+관련 메서드인 <xref:System.Data.DataSet.RejectChanges%2A><xref:System.Data.DataRowVersion.Original> 버전을 다시 <xref:System.Data.DataRowVersion.Current> 버전의 레코드에 복사 하 여 변경 효과를 취소 합니다. 또한 각 레코드의 <xref:System.Data.DataRow.RowState%2A>를 <xref:System.Data.DataRowState.Unchanged>으로 다시 설정 합니다.
 
 ## <a name="data-validation"></a>데이터 유효성 검사
 
@@ -224,7 +224,7 @@ Tableadapter에 대해 잘 알고 있는 경우 다음 항목 중 하나로 직�
 - 데이터 백 엔드에서 데이터 원본으로 데이터를 보내고 (예: 데이터베이스) 데이터를 수락 하거나 거부 하도록 허용 합니다. 데이터의 유효성을 검사 하 고 오류 정보를 제공 하기 위한 정교한 기능이 있는 데이터베이스를 사용 하 여 작업 하는 경우에는 데이터의 출처에 상관 없이 데이터의 유효성을 검사할 수 있으므로 실용적인 방법이 될 수 있습니다. 그러나이 방법은 응용 프로그램별 유효성 검사 요구 사항을 수용 하지 못할 수 있습니다. 또한 데이터 원본의 유효성을 검사 하는 경우 백 엔드에서 발생 하는 유효성 검사 오류를 응용 프로그램에서 얼마나 쉽게 해결할 수 있는지에 따라 데이터 원본에 대 한 많은 왕복이 발생할 수 있습니다.
 
    > [!IMPORTANT]
-   > @No__t_1로 설정 된 <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> 속성을 사용 하 여 데이터 명령을 사용 하는 경우 클라이언트에서 전송 된 정보를 데이터베이스에 전달 하기 전에 주의 깊게 확인 합니다. 악의적인 사용자가 인증되지 않은 액세스 권한을 얻거나 데이터베이스를 손상시키기 위해 수정되었거나 추가된 SQL 문을 전송(주입)할 수도 있습니다. 사용자 입력을 데이터베이스로 전송 하기 전에 항상 정보가 유효한 지 확인 하십시오. 가능 하면 항상 매개 변수가 있는 쿼리 또는 저장 프로시저를 사용 하는 것이 좋습니다.
+   > <xref:System.Data.CommandType.Text>로 설정 된 <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> 속성을 사용 하 여 데이터 명령을 사용 하는 경우 클라이언트에서 전송 된 정보를 데이터베이스에 전달 하기 전에 주의 깊게 확인 합니다. 악의적인 사용자가 인증되지 않은 액세스 권한을 얻거나 데이터베이스를 손상시키기 위해 수정되었거나 추가된 SQL 문을 전송(주입)할 수도 있습니다. 사용자 입력을 데이터베이스로 전송 하기 전에 항상 정보가 유효한 지 확인 하십시오. 가능 하면 항상 매개 변수가 있는 쿼리 또는 저장 프로시저를 사용 하는 것이 좋습니다.
 
 ## <a name="transmit-updates-to-the-data-source"></a>데이터 원본에 업데이트 전송
 
@@ -238,7 +238,7 @@ Tableadapter에 대해 잘 알고 있는 경우 다음 항목 중 하나로 직�
 (Unchanged)    c400         Nancy Buchanan    Pending
 ```
 
-응용 프로그램이 김소미의 상태를 "기본 설정"으로 변경 합니다. 이러한 변경으로 인해 해당 행의 <xref:System.Data.DataRow.RowState%2A> 속성 값이 <xref:System.Data.DataRowState.Unchanged>에서 <xref:System.Data.DataRowState.Modified>로 변경 됩니다. 첫 번째 행에 대 한 <xref:System.Data.DataRow.RowState%2A> 속성 값은 <xref:System.Data.DataRowState.Unchanged> 남아 있습니다. 이제 데이터 테이블은 다음과 같습니다.
+응용 프로그램이 김소미의 상태를 "기본 설정"으로 변경 합니다. 이러한 변경으로 인해 해당 행의 <xref:System.Data.DataRow.RowState%2A> 속성 값이 <xref:System.Data.DataRowState.Unchanged>에서 <xref:System.Data.DataRowState.Modified>로 변경 됩니다. 첫 번째 행에 대 한 <xref:System.Data.DataRow.RowState%2A> 속성 값은 <xref:System.Data.DataRowState.Unchanged>남아 있습니다. 이제 데이터 테이블은 다음과 같습니다.
 
 ```sql
 (RowState)     CustomerID   Name             Status
@@ -250,9 +250,9 @@ Tableadapter에 대해 잘 알고 있는 경우 다음 항목 중 하나로 직�
 
 그러나 두 번째 행의 `Update` 메서드는 자동으로 올바른 데이터 명령을 호출 하 고 데이터베이스로 전송 합니다. SQL 문의 특정 구문은 기본 데이터 저장소에서 지 원하는 SQL 언어에 따라 달라 집니다. 하지만 전송 된 SQL 문의 다음과 같은 일반적인 특성은 중요 합니다.
 
-- 전송 된 SQL 문은 UPDATE 문입니다. 어댑터는 <xref:System.Data.DataRow.RowState%2A> 속성 값이 <xref:System.Data.DataRowState.Modified> 되므로 UPDATE 문을 사용 하는 것을 알고 있습니다.
+- 전송 된 SQL 문은 UPDATE 문입니다. 어댑터는 <xref:System.Data.DataRow.RowState%2A> 속성 값이 <xref:System.Data.DataRowState.Modified>되므로 UPDATE 문을 사용 하는 것을 알고 있습니다.
 
-- 전송 된 SQL 문에는 UPDATE 문의 대상이 `CustomerID = 'c400'` 행 임을 나타내는 WHERE 절이 포함 되어 있습니다. SELECT 문의이 부분은 대상 테이블의 기본 키 이기 때문 `CustomerID`에 다른 모든 행의 대상 행을 구분 합니다. WHERE 절에 대 한 정보는 행을 식별 하는 데 필요한 값이 변경 된 경우 레코드의 원래 버전 (`DataRowVersion.Original`)에서 파생 됩니다.
+- 전송 된 SQL 문에는 UPDATE 문의 대상이 `CustomerID = 'c400'`행 임을 나타내는 WHERE 절이 포함 되어 있습니다. SELECT 문의이 부분은 대상 테이블의 기본 키 이기 때문 `CustomerID`에 다른 모든 행의 대상 행을 구분 합니다. WHERE 절에 대 한 정보는 행을 식별 하는 데 필요한 값이 변경 된 경우 레코드의 원래 버전 (`DataRowVersion.Original`)에서 파생 됩니다.
 
 - 전송 된 SQL 문에는 수정 된 열의 새 값을 설정 하는 SET 절이 포함 되어 있습니다.
 
@@ -272,11 +272,11 @@ UPDATE 문에서는 레코드에 기록 될 새 값과 이전 값 (레코드를 
 > [!NOTE]
 > 데이터 어댑터의 <xref:System.Data.DataTable.RowChanging> 이벤트에 대 한 이벤트 처리기에서 일반적으로 수행 하는 코드를 통해 `Parameters` 컬렉션의 값을 직접 설정할 수도 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 데이터 세트 도구](../data-tools/dataset-tools-in-visual-studio.md)
 - [TableAdapter 만들기 및 구성](create-and-configure-tableadapters.md)
 - [TableAdapter를 사용하여 데이터 업데이트](../data-tools/update-data-by-using-a-tableadapter.md)
 - [Visual Studio에서 데이터에 컨트롤 바인딩](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [데이터 유효성 검사](validate-data-in-datasets.md)
-- [방법: 엔터티 추가, 수정 및 삭제 (WCF data services) ](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)
+- [방법: 엔터티 추가, 수정 및 삭제(WCF 데이터 서비스)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)

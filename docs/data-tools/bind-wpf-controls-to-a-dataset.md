@@ -10,17 +10,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 68ffb040e7d642fc2bf285f0510850edc343a5ce
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: 8de276bfb6d7ec8bc36380ee41d86de07fc8dd74
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924542"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586980"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>데이터 세트로 WPF 컨트롤 바인딩
 
@@ -80,7 +80,7 @@ ms.locfileid: "72924542"
 
 ::: moniker-end
 
-   Visual Studio에서 AdventureWorksProductsEditor 프로젝트를 만듭니다.
+   AdventureWorksProductsEditor 프로젝트가 만들어집니다.
 
 ## <a name="create-a-dataset-for-the-application"></a>응용 프로그램에 대 한 데이터 집합 만들기
 
@@ -230,7 +230,7 @@ WPF 디자이너에서 XAML을 수정하여 창에 여러 단추를 추가합니
     > [!NOTE]
     > 이 예에서는 `Save`의 `TableAdapter` 메서드를 사용하여 변경 내용을 저장합니다. 이 연습에서는 데이터 테이블을 하나만 변경하므로 이러한 방식이 적절합니다. 여러 데이터 테이블의 변경 내용을 저장해야 하는 경우에는 데이터 세트과 함께 생성되는 `UpdateAll`의 `TableAdapterManager` 메서드를 사용할 수 있습니다. 자세한 내용은 [tableadapter](../data-tools/create-and-configure-tableadapters.md)를 참조 하십시오.
 
-## <a name="test-the-application"></a>애플리케이션 테스트
+## <a name="test-the-application"></a>응용 프로그램 테스트
 
 애플리케이션을 빌드 및 실행합니다. 제품 레코드를 보고 업데이트할 수 있는지 확인합니다.
 
@@ -256,9 +256,9 @@ WPF 디자이너에서 XAML을 수정하여 창에 여러 단추를 추가합니
 
 - Visual Studio의 **데이터 원본** 창을 사용하여 WPF 컨트롤을 다른 형식의 데이터 원본에 바인딩하는 방법을 알아봅니다. 자세한 내용은 [WPF 컨트롤을 WCF data service에 바인딩](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)을 참조 하세요.
 
-- Visual Studio의 **데이터 원본** 창을 사용하여 WPF 컨트롤에 관련 데이터(즉, 부모-자식 관계가 있는 데이터)를 표시하는 방법을 알아봅니다. 자세한 내용은 [연습: WPF 앱 ](../data-tools/display-related-data-in-wpf-applications.md) 관련 데이터를 표시 합니다.
+- Visual Studio의 **데이터 원본** 창을 사용하여 WPF 컨트롤에 관련 데이터(즉, 부모-자식 관계가 있는 데이터)를 표시하는 방법을 알아봅니다. 자세한 내용은 [연습: WPF 앱에서 관련 데이터 표시](../data-tools/display-related-data-in-wpf-applications.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio에서 데이터에 WPF 컨트롤 바인딩](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Visual Studio의 데이터 세트 도구](../data-tools/dataset-tools-in-visual-studio.md)

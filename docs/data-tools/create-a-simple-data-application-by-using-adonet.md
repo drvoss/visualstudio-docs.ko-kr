@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f895bd909ec9fda496d284c163bff4a5168bd057
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8f35173ded1ba4d52e0c5a9800fa228a7f93b981
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648724"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586876"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET을 사용하여 간단한 데이터 애플리케이션 만들기
 
@@ -27,11 +27,11 @@ ms.locfileid: "72648724"
 > [!IMPORTANT]
 > 코드를 간단히 유지하기 위해 프로덕션에 사용하는 예외 처리는 포함되어 있지 않습니다.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>전제 조건
 
 애플리케이션을 만들려면 다음이 필요 합니다.
 
-- Visual Studio.
+- 보여 줍니다.
 
 - SQL Server Express LocalDB. LocalDB SQL Server Express 없는 경우 [SQL Server Express 다운로드 페이지](https://www.microsoft.com/sql-server/sql-server-editions-express)에서 설치할 수 있습니다.
 
@@ -84,7 +84,7 @@ ms.locfileid: "72648724"
 
    ![검색 대화 상자](../data-tools/media/simpleappnav.png)
 
-|Navigation 폼 컨트롤|데이터 액세스|
+|Navigation 폼 컨트롤|속성|
 | - |----------------|
 |단추|Name = btnGoToAdd|
 |단추|Name = btnGoToFillOrCancel|
@@ -94,7 +94,7 @@ ms.locfileid: "72648724"
 
 ![새 고객을 추가하고 주문하기](../data-tools/media/simpleappnewcust.png)
 
-|NewCustomer 폼 컨트롤|데이터 액세스|
+|NewCustomer 폼 컨트롤|속성|
 | - |----------------|
 |TextBox|Name = txtCustomerName|
 |TextBox|Name = txtCustomerID<br /><br /> Readonly = True|
@@ -109,7 +109,7 @@ ms.locfileid: "72648724"
 
 ![주문 입력 또는 취소](../data-tools/media/simpleappcancelfill.png)
 
-|FillOrCancel 폼 컨트롤|데이터 액세스|
+|FillOrCancel 폼 컨트롤|속성|
 | - |----------------|
 |TextBox|Name = txtOrderID|
 |단추|Name = btnFindByOrderID|
@@ -122,7 +122,7 @@ ms.locfileid: "72648724"
 ## <a name="store-the-connection-string"></a>연결 문자열 저장
 애플리케이션이 데이터베이스에 대한 연결을 열려면 애플리케이션에는 연결 문자열에 액세스할 수 있어야 합니다. 각 폼에 문자열을 수동으로 입력 하지 않도록 하려면 프로젝트의 *app.config 파일에* 문자열을 저장 하 고, 응용 프로그램의 모든 폼에서 메서드가 호출 될 때 문자열을 반환 하는 메서드를 만듭니다.
 
-**서버 탐색기** 에서 **판매** 데이터 연결을 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 하 여 연결 문자열을 찾을 수 있습니다. **ConnectionString** 속성을 찾은 다음 **ctrl** +**A**, **ctrl** +**C** 를 사용 하 여 문자열을 선택 하 고 클립보드에 복사 합니다.
+**서버 탐색기** 에서 **판매** 데이터 연결을 마우스 오른쪽 단추로 클릭 하 고 **속성**을 선택 하 여 연결 문자열을 찾을 수 있습니다. **ConnectionString** 속성을 찾은 다음 **ctrl**+**A**, **ctrl**+**C** 를 사용 하 여 문자열을 선택 하 고 클립보드에 복사 합니다.
 
 1. 를 C#사용 하는 경우 **솔루션 탐색기**에서 프로젝트의 **속성** 노드를 확장 한 다음 **설정** 파일을 엽니다.
     Visual Basic를 사용 하는 경우 **솔루션 탐색기**에서 **모든 파일 표시**를 클릭 하 고 **내 프로젝트** 노드를 확장 한 다음 **설정** 파일을 엽니다.
@@ -229,7 +229,7 @@ FillOrCancel 폼 논리를 완료 하려면 다음 단계를 수행 합니다.
      [!code-csharp[FillOrCancel#2](../data-tools/codesnippet/CSharp/SimpleDataApp/FillOrCancel.cs#2)]
      [!code-vb[FillOrCancel#2](../data-tools/codesnippet/VisualBasic/SimpleDataApp/FillOrCancel.vb#2)]
 
-## <a name="test-your-application"></a>애플리케이션 테스트
+## <a name="test-your-application"></a>응용 프로그램 테스트
 
 각 Click 이벤트 처리기를 코딩하고 코딩을 마친 후에 **F5** 키를 선택하여 애플리케이션을 빌드하고 테스트합니다.
 

@@ -2,17 +2,17 @@
 title: 소스 파일 및 C++ 헤더 파일 간 종속성 확인
 ms.date: 05/16/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbba97f47c3ac0686bad15c3a1882e1e9bd85057
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a17015c7efbb51027450e06bd1fb571ef9820d48
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654190"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597245"
 ---
 # <a name="code-maps-for-c-projects"></a>프로젝트에 대 C++ 한 코드 맵
 
@@ -20,7 +20,7 @@ C++ 프로젝트에 대해 보다 완전한 맵을 만들려면 해당 프로젝
 
 Visual C++ 프로젝트가 포함된 솔루션을 열 때 IntelliSense 데이터베이스를 업데이트하는 데 시간이 걸릴 수 있습니다. 이 시간 동안에는 IntelliSense 데이터베이스가 업데이트를 완료할 때까지 헤더 파일 ( *.h* 또는 `#include`)에 대 한 코드 맵을 만들 수 없습니다. Visual Studio 상태 표시줄에서 업데이트 진행률을 모니터링할 수 있습니다.
 
-- 솔루션의 모든 소스 파일과 헤더 파일 간의 종속성을 확인 하려면 **아키텍처**  > **포함 파일의 그래프 생성**을 선택 합니다.
+- 솔루션의 모든 소스 파일과 헤더 파일 간의 종속성을 확인 하려면 **아키텍처** > **포함 파일의 그래프 생성**을 선택 합니다.
 
    ![네이티브 코드의 종속성 그래프](../modeling/media/dependencygraphgeneral_nativecode.png)
 

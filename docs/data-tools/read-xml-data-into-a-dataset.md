@@ -15,17 +15,17 @@ helpviewer_keywords:
 - XML documents, reading
 - datasets [Visual Basic], reading XML data
 ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6dec7cad50d818d4b2418442d8196cb8b5ff046a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5f89645b9d5ec8ab0f69fad4fea5a399d8e6764d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641370"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586330"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>XML 데이터를 데이터 세트에 읽어오기
 
@@ -141,14 +141,14 @@ ADO.NET는 XML 데이터 작업을 위한 간단한 메서드를 제공 합니�
     |-------------|--------------|-------------|
     |`TextBox1`|**Multiline**|`true`|
     ||**ScrollBars**|**세로**|
-    |`Button1`|**이름**|`ReadXmlButton`|
-    ||**텍스트**|`Read XML`|
-    |`Button2`|**이름**|`ShowSchemaButton`|
-    ||**텍스트**|`Show Schema`|
+    |`Button1`|**Name**|`ReadXmlButton`|
+    ||**Text**|`Read XML`|
+    |`Button2`|**Name**|`ShowSchemaButton`|
+    ||**Text**|`Show Schema`|
 
 ## <a name="create-the-dataset-that-receives-the-xml-data"></a>XML 데이터를 수신 하는 데이터 집합 만들기
 
-이 단계에서는 `authors` 라는 새 데이터 집합을 만듭니다. 데이터 집합에 대 한 자세한 내용은 [Visual Studio의 데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md)를 참조 하세요.
+이 단계에서는 `authors`라는 새 데이터 집합을 만듭니다. 데이터 집합에 대 한 자세한 내용은 [Visual Studio의 데이터 집합 도구](../data-tools/dataset-tools-in-visual-studio.md)를 참조 하세요.
 
 1. **솔루션 탐색기**에서 **Form1**의 원본 파일을 선택한 다음 **솔루션 탐색기** 도구 모음에서 **디자이너 보기** 단추를 선택 합니다.
 
@@ -158,7 +158,7 @@ ADO.NET는 XML 데이터 작업을 위한 간단한 메서드를 제공 합니�
 
      **DataSet1** 가 구성 요소 트레이에 추가 됩니다.
 
-4. **속성** 창에서 `AuthorsDataSet`의 **이름** 및 <xref:System.Data.DataSet.DataSetName%2A> 속성을 설정 합니다.
+4. **속성** 창에서`AuthorsDataSet`의 **이름** 및 <xref:System.Data.DataSet.DataSetName%2A> 속성을 설정 합니다.
 
 ## <a name="create-the-event-handler-to-read-the-xml-file-into-the-dataset"></a>XML 파일을 데이터 집합으로 읽도록 이벤트 처리기를 만듭니다.
 
@@ -168,24 +168,24 @@ ADO.NET는 XML 데이터 작업을 위한 간단한 메서드를 제공 합니�
 
 2. **XML 읽기** 단추를 선택 합니다.
 
-     @No__t_1 이벤트 처리기에서 **코드 편집기** 가 열립니다.
+     `ReadXmlButton_Click` 이벤트 처리기에서 **코드 편집기** 가 열립니다.
 
-3. @No__t_0 이벤트 처리기에 다음 코드를 입력 합니다.
+3. `ReadXmlButton_Click` 이벤트 처리기에 다음 코드를 입력 합니다.
 
      [!code-csharp[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_1.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_1.vb)]
 
-4. @No__t_0 이벤트 처리기 코드에서 `filepath =` 항목을 올바른 경로로 변경 합니다.
+4. `ReadXMLButton_Click` 이벤트 처리기 코드에서 `filepath =` 항목을 올바른 경로로 변경 합니다.
 
 ## <a name="create-the-event-handler-to-display-the-schema-in-the-textbox"></a>텍스트 상자에 스키마를 표시 하는 이벤트 처리기를 만듭니다.
 
-**스키마 표시** 단추를 클릭 하면 스키마로 채워지고 <xref:System.Windows.Forms.TextBox>control에 표시 되는 <xref:System.IO.StringWriter> 개체가 만들어집니다.
+**스키마 표시** 단추를 클릭 하면 스키마로 채워지고 <xref:System.Windows.Forms.TextBox>컨트롤에 표시 되는 <xref:System.IO.StringWriter> 개체가 만들어집니다.
 
 1. **솔루션 탐색기**에서 **Form1**을 선택 하 고 **디자이너 보기** 단추를 선택 합니다.
 
 2. **스키마 표시** 단추를 선택 합니다.
 
-     @No__t_1 이벤트 처리기에서 **코드 편집기** 가 열립니다.
+     `ShowSchemaButton_Click` 이벤트 처리기에서 **코드 편집기** 가 열립니다.
 
 3. `ShowSchemaButton_Click` 이벤트 처리기에 다음 코드를 붙여넣습니다.
 
@@ -210,7 +210,7 @@ ADO.NET는 XML 데이터 작업을 위한 간단한 메서드를 제공 합니�
 
 이 연습에서는 xml 파일을 데이터 집합으로 읽는 방법 뿐만 아니라 XML 파일의 내용에 따라 스키마를 만들 수 있는 기본 사항을 배웁니다. 다음 작업을 수행할 수 있는 몇 가지 작업은 다음과 같습니다.
 
-- 데이터 집합의 데이터를 편집 하 고 XML로 다시 작성 합니다. 자세한 내용은 <xref:System.Data.DataSet.WriteXml%2A>을 참조하십시오.
+- 데이터 집합의 데이터를 편집 하 고 XML로 다시 작성 합니다. 자세한 내용은 <xref:System.Data.DataSet.WriteXml%2A>를 참조하세요.
 
 - 데이터 집합의 데이터를 편집 하 고 데이터베이스에 기록 합니다.
 

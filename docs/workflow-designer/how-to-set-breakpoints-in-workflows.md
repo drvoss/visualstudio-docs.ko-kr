@@ -3,17 +3,17 @@ title: '워크플로 디자이너-방법: 워크플로에 중단점 설정'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e41b21c9-c061-4358-8e2f-eb5e412864a8
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6d2806a8757f00924d51c76aea82cfc8c6a5673
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4ebebd0efe689c2f3f83e776c0cb3889ee64add2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650326"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593891"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>방법: 워크플로에 중단점 설정
 
@@ -25,10 +25,10 @@ ms.locfileid: "72650326"
 > 호출된 워크플로에는 중단점을 설정할 수 없습니다.
 
 > [!NOTE]
-> 디버깅 하기 전에 **도구**  > **옵션**  > **디버깅** 메뉴에서 **내 코드만 사용 (관리 전용)** 옵션을 선택 했는지 확인 합니다. 이 옵션을 선택 하지 않은 경우 두 개의 시퀀스가 다른 시퀀스 내에 중첩 되어 있고 첫 번째 내부 시퀀스에서 중단점을 설정 하는 경우 **F11** 키를 누르면 두 번째 내부 시퀀스로 디버깅 되지 않습니다.
+> 디버깅 하기 전에 **도구** > **옵션** > **디버깅** 메뉴에서 **내 코드만 사용 (관리 전용)** 옵션을 선택 했는지 확인 합니다. 이 옵션을 선택 하지 않은 경우 두 개의 시퀀스가 다른 시퀀스 내에 중첩 되어 있고 첫 번째 내부 시퀀스에서 중단점을 설정 하는 경우 **F11** 키를 누르면 두 번째 내부 시퀀스로 디버깅 되지 않습니다.
 
 > [!NOTE]
-> XAML 파일에 대 한 전체 경로 속성을 정확 하 게 찾지 못하면 워크플로의 중단점이 적중 되지 않습니다. 프로젝트나 솔루션을 다른 폴더나 다른 컴퓨터로 이동한 후에는 XAML 파일의 전체 경로가 정확 하지 않습니다. **Ctrl** +**S** 를 선택 하 여 전체 경로 속성을 저장 하 고 업데이트 합니다.
+> XAML 파일에 대 한 전체 경로 속성을 정확 하 게 찾지 못하면 워크플로의 중단점이 적중 되지 않습니다. 프로젝트나 솔루션을 다른 폴더나 다른 컴퓨터로 이동한 후에는 XAML 파일의 전체 경로가 정확 하지 않습니다. **Ctrl**+**S** 를 선택 하 여 전체 경로 속성을 저장 하 고 업데이트 합니다.
 
 ## <a name="to-set-a-breakpoint-on-an-activity-in-the-design-view"></a>디자인 뷰에서 활동의 중단점을 설정하려면
 
@@ -36,7 +36,7 @@ ms.locfileid: "72650326"
 
 2. **디버그** 메뉴에서 **중단점 설정/해제**를 선택 합니다. 활동의 왼쪽 위에 빨간색 아이콘이 표시됩니다.
 
-   또는 활동을 선택한 후 **F9** 키를 누르거나 마우스 오른쪽 단추를 클릭 하 고 마우스 오른쪽**단추를 클릭** 한 다음 메뉴에서 중단점  >  **중단점** 을 선택할 수 있습니다.
+   또는 활동을 선택한 후 **F9** 키를 누르거나 마우스 오른쪽 단추를 클릭 하 고 마우스 오른쪽 **단추를 클릭** 한 다음 메뉴에서 중단점 > **중단점** 을 선택할 수 있습니다.
 
 ## <a name="see-also"></a>참조
 

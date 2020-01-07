@@ -3,17 +3,17 @@ title: DTE를 사용하여 Visual Studio 시작
 titleSuffix: ''
 ms.date: 04/26/2019
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92085a42ec2c85eb0fb5571badaabca801c403d0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 79af14e80ef39b0cad732dcd0c9f37af1481bd4c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647967"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590633"
 ---
 # <a name="launch-visual-studio-using-dte"></a>DTE를 사용하여 Visual Studio 시작
 
@@ -33,7 +33,7 @@ Visual Studio 2017부터 DTE를 사용 하 여 Visual Studio를 시작 하는 �
 
 4. 뒤에 나오는 [예제 코드](#example-code) 를 *Program.cs* 파일에 붙여 넣습니다.
 
-5. **F5** 키를 눌러 프로그램을 실행 합니다. 프로그램이 종료 되기 전에 Visual Studio 2019가 열려 있어야 합니다.
+5. **F5** 키를 눌러 프로그램을 실행합니다. 프로그램이 종료 되기 전에 Visual Studio 2019가 열려 있어야 합니다.
 
 ## <a name="example-code"></a>예제 코드
 

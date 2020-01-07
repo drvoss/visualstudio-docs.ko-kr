@@ -3,21 +3,21 @@ title: XML 스키마 탐색기
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2fc39e98-b194-456b-a452-cfafb0a52d66
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9350e4ca41661e6bc9613d036ad4dd2a978a706d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 04c6415fed131abc5a102f6ec15c69e33f21fd68
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72608090"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592349"
 ---
 # <a name="xml-schema-explorer"></a>XML 스키마 탐색기
 
-Xml **스키마 탐색기** 는 XSD (xml 스키마 정의 언어) 스키마 작업을 수행할 수 있도록 MICROSOFT VISUAL STUDIO 및 xml 편집기와 통합 됩니다. XML 스키마 파일을 열면 **xml 스키마 탐색기**에 **스키마 집합** 노드가 표시 됩니다. @No__t_0 또는 `import` 문을 통해 참조 되는 모든 파일 뿐만 아니라 대상 파일에 대해 포함 되거나 가져온 모든 스키마가 **XML 스키마 탐색기**에도 표시 됩니다.
+Xml **스키마 탐색기** 는 XSD (xml 스키마 정의 언어) 스키마 작업을 수행할 수 있도록 MICROSOFT VISUAL STUDIO 및 xml 편집기와 통합 됩니다. XML 스키마 파일을 열면 **xml 스키마 탐색기**에 **스키마 집합** 노드가 표시 됩니다. `include` 또는 `import` 문을 통해 참조 되는 모든 파일 뿐만 아니라 대상 파일에 대해 포함 되거나 가져온 모든 스키마가 **XML 스키마 탐색기**에도 표시 됩니다.
 
 **XML 스키마 탐색기** 를 사용 하 여 다음을 수행할 수 있습니다.
 

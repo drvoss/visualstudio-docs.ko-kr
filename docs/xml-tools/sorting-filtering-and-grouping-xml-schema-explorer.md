@@ -3,17 +3,17 @@ title: XML 스키마 탐색기에서 정렬, 필터링 및 그룹화
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4a914de0-9ffc-4526-9603-92e460e52513
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bf9226f3b491a39c7ef5936667cabd789c6a457
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cd288171cd8713e6b403f71a4eee6ba09d3f6ea9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604587"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592518"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>정렬, 필터링 및 그룹화 (XML 스키마 탐색기)
 
@@ -65,7 +65,7 @@ ms.locfileid: "72604587"
 
 **이름으로 정렬** 옵션을 선택 하면 전역 노드가 다음 순서로 정렬 됩니다.
 
-1. `import` 노드(네임스페이스의 알파벳 순서로 정렬)
+1. 노드 (네임 스페이스의 알파벳 순서로)를 `import` 합니다.
 
 2. `include` 노드(`schemaLocation` 특성의 알파벳 순서로 정렬)
 

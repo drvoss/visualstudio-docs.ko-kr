@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, transformation process
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 518c06f8630ad9fa7742f7b3e85ac27263cd0a86
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6d6cca9a4a98c4afcffa8322acb75a4cef8a7527
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605802"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565866"
 ---
 # <a name="the-text-template-transformation-process"></a>텍스트 템플릿 변환 프로세스
 텍스트 템플릿 변환 프로세스는 텍스트 템플릿 파일을 입력으로 사용 하 고 새 텍스트 파일을 출력으로 생성 합니다. 예를 들어 텍스트 템플릿을 사용 하 여 Visual Basic 또는 C# 코드를 생성 하거나 HTML 보고서를 생성할 수 있습니다.
@@ -23,13 +23,13 @@ ms.locfileid: "72605802"
 
  텍스트 템플릿 변환 프로세스는 두 단계로 수행 됩니다. 먼저 엔진이 생성 된 변환 클래스 라고 하는 임시 클래스를 만듭니다. 이 클래스에는 지시문 및 제어 블록에 의해 생성 되는 코드가 포함 되어 있습니다. 그런 다음 엔진은 생성 된 변환 클래스를 컴파일하고 실행 하 여 출력 파일을 생성 합니다.
 
-## <a name="components"></a>구성 요소
+## <a name="components"></a>Components
 
 |구성 요소|설명|사용자 지정 가능 (예/아니요)|
 |-|-|-|
-|엔진|엔진 구성 요소가 텍스트 템플릿 변환 프로세스를 제어 합니다.|아니요.|
-|호스트|호스트는 엔진과 사용자 환경 간의 인터페이스입니다. Visual Studio는 텍스트 변환 프로세스의 호스트입니다.|예. 사용자 지정 호스트를 작성할 수 있습니다.|
-|지시문 프로세서|지시문 프로세서는 텍스트 템플릿에서 지시문을 처리 하는 클래스입니다. 지시문을 사용 하 여 입력 소스에서 텍스트 템플릿에 데이터를 제공할 수 있습니다.|예. 사용자 지정 지시문 프로세서를 작성할 수 있습니다.|
+|Engine|엔진 구성 요소가 텍스트 템플릿 변환 프로세스를 제어 합니다.|No.|
+|Host|호스트는 엔진과 사용자 환경 간의 인터페이스입니다. Visual Studio는 텍스트 변환 프로세스의 호스트입니다.|예, 사용자 지정 호스트를 작성할 수 있습니다.|
+|지시문 프로세서|지시문 프로세서는 텍스트 템플릿에서 지시문을 처리 하는 클래스입니다. 지시문을 사용 하 여 입력 소스에서 텍스트 템플릿에 데이터를 제공할 수 있습니다.|예, 사용자 지정 지시문 프로세서를 작성할 수 있습니다.|
 
 ## <a name="the-engine"></a>엔진
  엔진은 변환 프로세스에 사용 되는 모든 파일을 처리 하는 호스트의 문자열로 템플릿을 받습니다. 그런 다음 엔진은 호스트에 사용자 지정 지시문 프로세서 및 환경의 다른 측면을 찾도록 요청 합니다. 그런 다음 엔진이 생성 된 변환 클래스를 컴파일하고 실행 합니다. 엔진은 생성 된 텍스트를 호스트에 반환 합니다 .이는 일반적으로 텍스트를 파일에 저장 합니다.

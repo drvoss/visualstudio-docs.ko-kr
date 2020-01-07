@@ -30,17 +30,17 @@ helpviewer_keywords:
 - WCF services, endpoints
 - service method, called asynchronously[Visual Studio]
 ms.assetid: d56f12cb-e139-4fec-b3e4-488383356642
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8654e42db8ec2a285c9104c6f43bc34beb22ad22
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: abcfde777223ada130e06ab7766319e1d982258c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806960"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585940"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Windows Communication Foundation 서비스 및 Visual Studio의 WCF.NET 데이터 서비스
 
@@ -52,7 +52,7 @@ WCF (Windows Communication Foundation)는 안전 하 고 신뢰할 수 있으며
 
 ### <a name="what-are-wcf-data-services"></a>WCF Data Services 정의
 
-WCF Data Services는 OData (Open Data) 프로토콜 표준의 구현입니다.  WCF Data Services를 사용 하면 테이블 형식 데이터를 일련의 REST Api로 노출 하 여 GET, POST, PUT 또는 DELETE와 같은 표준 HTTP 동사를 사용 하 여 데이터를 반환할 수 있습니다. 서버 쪽에서는 새 OData 서비스를 만들기 위해 WCF Data Services [ASP.NET Web API](https://dotnet.microsoft.com/apps/aspnet/apis) 으로 대체 됩니다. WCF Data Services 클라이언트 라이브러리는 Visual Studio (**Project** > **서비스 참조 추가**)의 .Net 응용 프로그램에서 OData 서비스를 사용 하는 데 적합 합니다. 자세한 내용은 [WCF Data Services 4.5](http://go.microsoft.com/fwlink/?LinkID=119952)를 참조하세요.
+WCF Data Services는 OData (Open Data) 프로토콜 표준의 구현입니다.  WCF Data Services를 사용 하면 테이블 형식 데이터를 일련의 REST Api로 노출 하 여 GET, POST, PUT 또는 DELETE와 같은 표준 HTTP 동사를 사용 하 여 데이터를 반환할 수 있습니다. 서버 쪽에서는 새 OData 서비스를 만들기 위해 WCF Data Services [ASP.NET Web API](https://dotnet.microsoft.com/apps/aspnet/apis) 으로 대체 됩니다. WCF Data Services 클라이언트 라이브러리는 Visual Studio (**Project** > **서비스 참조 추가**)의 .Net 응용 프로그램에서 OData 서비스를 사용 하는 데 적합 합니다. 자세한 내용은 [WCF Data Services 4.5](/dotnet/framework/data/wcf)를 참조하세요.
 
 ### <a name="wcf-programming-model"></a>WCF 프로그래밍 모델
 
@@ -154,7 +154,7 @@ WCF (일부 Windows Communication Foundation) 서비스는 클라이언트가 �
     > [!NOTE]
     > *ServiceReference* 을 서비스 참조의 네임 스페이스로 바꾸고 *Service1Client* 을 서비스 이름으로 바꿉니다.
 
-3. 생성자에 대 한 오버 로드가 포함 된 IntelliSense 목록이 표시 됩니다. @No__t_0 오버 로드를 선택 합니다.
+3. 생성자에 대 한 오버 로드가 포함 된 IntelliSense 목록이 표시 됩니다. `endpointConfigurationName As String` 오버 로드를 선택 합니다.
 
 4. 오버 로드 뒤에 `=` *configurationname*을 입력 합니다. 여기서 *configurationname* 은 사용 하려는 끝점의 이름입니다.
 
@@ -167,7 +167,7 @@ WCF (일부 Windows Communication Foundation) 서비스는 클라이언트가 �
 
 2. 파일에서 `<Client>` 태그를 검색 합니다.
 
-3. @No__t_0 태그 아래에서 `<Endpoint>`로 시작 하는 태그를 검색 합니다.
+3. `<Client>` 태그 아래에서 `<Endpoint>`로 시작 하는 태그를 검색 합니다.
 
      서비스 참조에서 여러 끝점을 제공 하는 경우 두 개 이상의 `<Endpoint` 태그가 있습니다.
 
@@ -263,7 +263,7 @@ WCF (Windows Communication Foundation) 서비스의 대부분의 메서드는 �
 | [연습: N 계층 데이터 애플리케이션 만들기](../data-tools/walkthrough-creating-an-n-tier-data-application.md) | 형식화된 데이터 세트을 만들고 TableAdapter 및 데이터 세트 코드를 여러 프로젝트로 분리하는 단계별 지침을 제공합니다. |
 | [서비스 참조 구성 대화 상자](../data-tools/configure-service-reference-dialog-box.md) | **서비스 참조 구성** 대화 상자의 사용자 인터페이스 요소에 대해 설명 합니다. |
 
-## <a name="reference"></a>참고
+## <a name="reference"></a>참조
 
 - <xref:System.ServiceModel>
 - <xref:System.Data.Services>

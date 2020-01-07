@@ -2,24 +2,24 @@
 title: 도메인별 언어 시작
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c86383ddc833a6b76affa451f21180ed4941ad14
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 226111f7bd2c064fa2aec3cbd4f94a0adeb0e5b8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985046"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596569"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>도메인 특정 언어 시작
 
 이 항목에서는 Visual Studio 용 모델링 SDK를 사용 하 여 만든 DSL (도메인별 언어)을 정의 하 고 사용 하는 기본 개념을 설명 합니다.
 
 > [!NOTE]
-> Visual Studio의 특정 기능을 설치 하면 텍스트 템플릿 변환 SDK 및 Visual Studio 모델링 SDK가 자동으로 설치 됩니다. 자세한 내용은 [이 블로그 게시물](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)을 참조 하세요.
+> Visual Studio의 특정 기능을 설치 하면 텍스트 템플릿 변환 SDK 및 Visual Studio 모델링 SDK가 자동으로 설치 됩니다. 자세한 내용은 참조 하세요. [이 블로그 게시물](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)합니다.
 
 Dsl을 처음 접하는 경우이 사이트에서 찾을 수 있는 **DSL 도구 랩을**통해 작업 하는 것이 좋습니다. [시각화 및 모델링 SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)
 
@@ -37,7 +37,7 @@ Dsl의 주요 응용 프로그램 중 하나는 프로그램 코드, 구성 파�
 
 이 개요의 나머지 부분에서는 Visual Studio에서 도메인별 언어를 만들고 사용 하는 기본 작업을 소개 하는 연습입니다.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>전제 조건
 
 DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
@@ -147,7 +147,7 @@ DSL 정의는 다이어그램에 모델을 표시 하는 방법을 지정할 수
 
 모델을 편집 하는 동안 **탐색기** 보기에서 트리로 모델을 볼 수 있습니다. 다이어그램에 셰이프를 추가 하면 모델 요소도 탐색기에 표시 됩니다. 다이어그램이 없는 경우에도 탐색기를 사용할 수 있습니다.
 
-Visual Studio의 디버깅 인스턴스에서 탐색기가 표시 되지 않으면 **보기** 메뉴에서 **다른 창**을 가리킨 다음 *\<Your 언어 >* **탐색기**를 클릭 합니다.
+Visual Studio의 디버깅 인스턴스에서 탐색기가 표시 되지 않으면 **보기** 메뉴에서 **다른 창**을 가리키고 *언어 >* **탐색기**\<를 클릭 합니다.
 
 ### <a name="the-api-of-your-dsl"></a>DSL의 API
 
@@ -209,7 +209,7 @@ DSL에 대 한 다양 한 확장을 만들 수 있습니다. 다음 예에서는
 
     2. 속성 창를 열고 DSL 탐색기와 속성을 동시에 볼 수 있도록 배치 합니다.
 
-    3. DSL 탐색기에서 **편집기**, **도구 상자 탭**, *DSL \<your >* , **도구**를 차례로 확장 합니다.
+    3. DSL 탐색기에서 **편집기**, **도구 상자 탭**, *DSL >\<* , **도구**를 차례로 확장 합니다.
 
     4. **ExampleElement**을 클릭 합니다. 요소를 만드는 데 사용 되는 도구 상자 항목입니다.
 
@@ -264,7 +264,7 @@ DSL에 대 한 다양 한 확장을 만들 수 있습니다. 다음 예에서는
 
 3. 데코레이터을 속성에 매핑합니다.
 
-   1. DSL 세부 정보 창을 엽니다. 일반적으로 출력 창 옆에 있는 탭에 있습니다. 표시 되지 않는 경우 **보기** 메뉴에서 **다른 창**을 가리킨 다음 **DSL 정보**를 클릭 합니다.
+   1. DSL 정보 창을 엽니다. 일반적으로 출력 창 옆에 있는 탭에 있습니다. 표시 되지 않는 경우 **보기** 메뉴에서 **다른 창**을 가리킨 다음 **DSL 정보**를 클릭 합니다.
 
    2. DSL 정의 다이어그램에서 **Person** 도메인 클래스를 shape 클래스에 연결 하는 선을 클릭 합니다.
 
@@ -333,7 +333,7 @@ DSL에 대 한 다양 한 확장을 만들 수 있습니다. 다음 예에서는
 
     1. **DSL 탐색기**에서 **편집기** , **도구 상자 탭**을 차례로 확장 합니다.
 
-    2. *DSL \<your >* 마우스 오른쪽 단추로 클릭 한 다음 **새 요소 도구 추가**를 클릭 합니다.
+    2. *DSL >\<* 을 마우스 오른쪽 단추로 클릭 한 다음 **새 요소 도구 추가**를 클릭 합니다.
 
     3. 새 도구의 **Name** 속성을 설정 하 고 **Class** 속성을 타운으로 설정 합니다.
 
@@ -341,7 +341,7 @@ DSL에 대 한 다양 한 확장을 만들 수 있습니다. 다음 예에서는
 
 7. 도시와 사람 간에 링크를 만들기 위한 연결선 도구를 만듭니다.
 
-    1. *DSL \<your >* 마우스 오른쪽 단추로 클릭 한 다음 **새 커넥터 도구 추가**를 클릭 합니다.
+    1. *DSL >\<* 을 마우스 오른쪽 단추로 클릭 한 다음 **새 커넥터 도구 추가**를 클릭 합니다.
 
     2. 새 도구의 이름 속성을 설정 합니다.
 

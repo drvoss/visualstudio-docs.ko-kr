@@ -2,17 +2,17 @@
 title: '방법: 끌어서 놓기 처리기 추가'
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2019f1333f6f9a5d6e1bffde16cfee2da32061d
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: cc0124df648dbc5ecfbcf60ce0cca2fdc974e7e8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985088"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594697"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>방법: 끌어서 놓기 처리기 추가
 
@@ -128,7 +128,7 @@ MEF(Managed Extensibility Framework)를 사용하면 최소한의 구성으로 �
 
   - diagramEventArgs. GetDataFormats ()-끌어온 개체를 디코딩할 수 있는 형식을 나열 합니다. 예를 들어 사용자가 바탕 화면에서 파일을 끄는 경우 사용 가능한 형식에는 파일 이름("`FileNameW`")이 포함됩니다.
 
-  - 끌어 온 개체를 지정 된 형식으로 `diagramEventArgs.Data.GetData(format)` 디코딩합니다. 적절한 형식으로 개체를 캐스팅합니다. 예를 들면 다음과 같습니다.
+  - 끌어 온 개체를 지정 된 형식으로 `diagramEventArgs.Data.GetData(format)` 디코딩합니다. 적절한 형식으로 개체를 캐스팅합니다. 예를 들면 다음과 같습니다.:
 
     `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
@@ -569,7 +569,7 @@ namespace Company.CompartmentDrag  // EDIT.
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [복사 동작 사용자 지정](../modeling/customizing-copy-behavior.md)
 - [도메인별 언어 솔루션 배포](msi-and-vsix-deployment-of-a-dsl.md)

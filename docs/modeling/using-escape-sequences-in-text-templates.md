@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, escape sequences
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e03f5eafc00b8431725ed06da10371a93692fb5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 83e6e5cf163037077d0517e5f7ea460f9124f27c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662926"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594047"
 ---
 # <a name="use-escape-sequences-in-text-templates"></a>텍스트 템플릿에서 이스케이프 시퀀스 사용
 
@@ -32,7 +32,7 @@ ms.locfileid: "72662926"
 
 - 텍스트 템플릿 태그 앞에 짝수 개의 이스케이프 문자 (\\)가 오면 템플릿 파서는 이스케이프 문자의 절반을 포함 하 고 시퀀스를 텍스트 템플릿 태그로 포함 합니다. 예를 들어 텍스트 템플릿에 이스케이프 문자가 4 개 있는 경우 생성 된 파일에는 두 개의 "\\" 문자가 있습니다.
 
-- 텍스트 템플릿 태그 앞에 홀수 개의 이스케이프 문자 (\\)가 오면 템플릿 파서는 "\\" 문자와 태그 자체 (\< # 또는 # >)의 절반을 포함 합니다. 태그는 텍스트 템플릿 태그로 간주 되지 않습니다.
+- 텍스트 템플릿 태그 앞에 홀수 개의 이스케이프 문자 (\\)가 오면 템플릿 파서는 "\\" 문자와 태그 자체 (\<# 또는 # >)의 절반을 포함 합니다. 태그는 텍스트 템플릿 태그로 간주 되지 않습니다.
 
 - 이스케이프 (\\) 문자가 제어 문자나 따옴표를 이스케이프 하는 위치 이외의 다른 위치에 있는 경우 (의 경우에 C# 만) 문자는 직접 출력 됩니다.
 

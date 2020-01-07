@@ -2,17 +2,17 @@
 title: T4 Assembly 지시문
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f605748d4bda13567713b646f0232d684ec46fe1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8d441d74d1ddea5a7b5dd063d302ec93e75fc1c9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748182"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591894"
 ---
 # <a name="t4-assembly-directive"></a>T4 Assembly 지시문
 
@@ -32,11 +32,11 @@ Visual Studio 디자인 타임 텍스트 템플릿에서 `assembly` 지시문은
 
  어셈블리 이름은 다음 중 하나여야 합니다.
 
-- GAC 어셈블리의 강력한 이름(예: `System.Xml.dll`). `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`와 같은 긴 형식도 사용할 수 있습니다. 자세한 내용은 <xref:System.Reflection.AssemblyName>을 참조하십시오.
+- GAC 어셈블리의 강력한 이름(예: `System.Xml.dll`). `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`와 같은 긴 형식도 사용할 수 있습니다. 자세한 내용은 <xref:System.Reflection.AssemblyName>를 참조하세요.
 
 - 어셈블리의 절대 경로
 
-  @No__t_0 구문을 사용 하 여 `$(SolutionDir)`와 같은 Visual Studio 변수를 참조 하 고 `%VariableName%` 환경 변수를 참조할 수 있습니다. 예를 들면,
+  `$(variableName)` 구문을 사용 하 여 `$(SolutionDir)`와 같은 Visual Studio 변수를 참조 하 고 `%VariableName%` 환경 변수를 참조할 수 있습니다. 예를 들면 다음과 같습니다.:
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>

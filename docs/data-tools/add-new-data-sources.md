@@ -8,17 +8,17 @@ helpviewer_keywords:
 - data [Visual Studio], data sources
 - data sources
 ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 99e9d9d466ae32d86b64b17738c96c245bda8f96
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 555d32eb295e944060d2efe0b843e9d157b7c675
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648894"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587058"
 ---
 # <a name="add-new-data-sources"></a>새 데이터 원본 추가
 
@@ -37,7 +37,7 @@ Visual Studio에서 .NET 데이터 도구를 사용 하는 경우 데이터 *소
 > [!NOTE]
 > 데이터 바인딩 기능, 데이터 집합, Entity Framework LINQ to SQL, WCF 또는 SharePoint를 사용 하지 않는 경우 "데이터 원본"의 개념이 적용 되지 않습니다. SQLCommand 개체를 사용 하 여 데이터베이스에 직접 연결 하 고 데이터베이스와 직접 통신 합니다.
 
-Windows Forms 또는 Windows Presentation Foundation 응용 프로그램에서 **데이터 소스 구성 마법사** 를 사용 하 여 데이터 원본을 만들고 편집할 수 있습니다. Entity Framework의 경우 먼저 엔터티 클래스를 만든 다음 **프로젝트**  > **새 데이터 소스 추가** 를 선택 하 여 마법사를 시작 합니다 (이 문서의 뒷부분에서 자세히 설명).
+Windows Forms 또는 Windows Presentation Foundation 응용 프로그램에서 **데이터 소스 구성 마법사** 를 사용 하 여 데이터 원본을 만들고 편집할 수 있습니다. Entity Framework의 경우 먼저 엔터티 클래스를 만든 다음 **프로젝트** > **새 데이터 소스 추가** 를 선택 하 여 마법사를 시작 합니다 (이 문서의 뒷부분에서 자세히 설명).
 
 ![데이터 소스 구성 마법사](../data-tools/media/data-source-configuration-wizard.png)
 
@@ -46,7 +46,7 @@ Windows Forms 또는 Windows Presentation Foundation 응용 프로그램에서 *
 데이터 원본을 만든 후에는 **데이터** 원본 도구 창에 표시 됩니다.
 
 > [!TIP]
-> **데이터 소스** 창을 열려면 프로젝트가 열려 있는지 확인 한 다음 **Shift** +**Alt** +**D** 를 누르거나**다른 Windows**  > **데이터 원본** >  **보기** 를 선택 합니다.
+> **데이터 소스** 창을 열려면 프로젝트가 열려 있는지 확인 한 다음 **Shift**+**Alt**+**D** 를 누르거나 **다른 Windows** > **데이터 원본** > **보기** 를 선택 합니다.
 
 **데이터 소스 창에서** 폼 디자인 화면 또는 컨트롤로 데이터 소스를 끌어올 수 있습니다. 이렇게 하면 데이터 저장소의 데이터를 표시 하는 상용구 코드가 생성 됩니다.
 
@@ -58,15 +58,15 @@ Windows Forms 또는 Windows Presentation Foundation 응용 프로그램에서 *
 
 데이터베이스나 데이터베이스 파일에 대 한 데이터 원본으로 사용할 데이터 집합 또는 Entity Framework 모델을 만들 수 있습니다.
 
-### <a name="dataset"></a>데이터 세트
+### <a name="dataset"></a>데이터 집합
 
-데이터 집합을 데이터 원본으로 만들려면 **프로젝트**  > **새 데이터 소스 추가**를 선택 하 여 **데이터 소스 구성 마법사** 를 실행 합니다. **데이터베이스** 데이터 원본 유형을 선택 하 고 메시지의 지시에 따라 새 데이터베이스 연결 또는 데이터베이스 파일을 지정 합니다.
+데이터 집합을 데이터 원본으로 만들려면 **프로젝트** > **새 데이터 소스 추가**를 선택 하 여 **데이터 소스 구성 마법사** 를 실행 합니다. **데이터베이스** 데이터 원본 유형을 선택 하 고 메시지의 지시에 따라 새 데이터베이스 연결 또는 데이터베이스 파일을 지정 합니다.
 
 ### <a name="entity-classes"></a>엔터티 클래스
 
 Entity Framework 모델을 데이터 원본으로 만들려면 다음을 수행 합니다.
 
-1. **엔터티 데이터 모델 마법사** 를 실행 하 여 엔터티 클래스를 만듭니다. **프로젝트**  > **새 항목 추가**  > **ADO.NET 엔터티 데이터 모델**를 선택 합니다.
+1. **엔터티 데이터 모델 마법사** 를 실행 하 여 엔터티 클래스를 만듭니다. **프로젝트** > **새 항목 추가** > **ADO.NET 엔터티 데이터 모델**를 선택 합니다.
 
    ![새 Entity Framework 모델 프로젝트 항목](../data-tools/media/raddata-new-entity-framework-model-project-item.png)
 

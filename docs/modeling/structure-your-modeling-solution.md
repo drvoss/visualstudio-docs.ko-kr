@@ -2,17 +2,17 @@
 title: 모델링 솔루션 구성
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fecf0d146c1116e6ec6376ffd9ad929cc9179d1c
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 57edf4253840294968238793bf9f3b24326a1e3f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985218"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591946"
 ---
 # <a name="structure-your-modeling-solution"></a>모델링 솔루션 구성
 
@@ -72,7 +72,7 @@ ms.locfileid: "72985218"
 
 #### <a name="use-a-separate-package-for-each-layer"></a>각 계층에 대해 별도의 패키지를 사용 합니다.
 
-1. 각 레이어에 대한 솔루션에서 아키텍처 모델링 프로젝트를 추가합니다. **솔루션 탐색기**에서 솔루션 노드를 마우스 오른쪽 단추로 클릭 하 고 **추가**를 가리킨 다음 **기존 프로젝트**를 클릭 합니다. 이제 모든 솔루션에서 아키텍처 프로젝트 및 각 레이어에 대한 개발 프로젝트인 단일 모델링 프로젝트에 액세스할 수 있습니다.
+1. 각 레이어에 대한 솔루션에서 아키텍처 모델링 프로젝트를 추가합니다. **솔루션 탐색기**솔루션 노드를 마우스 오른쪽 단추로 클릭, 가리킨 **추가**를 클릭 하 고 **기존 프로젝트**합니다. 이제 모든 솔루션에서 아키텍처 프로젝트 및 각 레이어에 대한 개발 프로젝트인 단일 모델링 프로젝트에 액세스할 수 있습니다.
 
 2. 공유 모델에서 각 계층에 대 한 패키지를 만듭니다. **솔루션 탐색기**에서 모델링 프로젝트를 선택 합니다. **UML 모델 탐색기**에서 모델 루트 노드를 마우스 오른쪽 단추로 클릭 하 고 **추가**를 가리킨 다음 **패키지**를 클릭 합니다.
 
@@ -102,7 +102,7 @@ ms.locfileid: "72985218"
 
 4. 마법사의 지침에 따라 템플릿에 포함할 프로젝트를 선택하고, 템플릿의 이름 및 설명을 제공하고, 출력 위치를 지정합니다.
 
-## <a name="watch-a-video"></a>비디오 시청
+## <a name="watch-a-video"></a>방법을 보려면
 
 [모델 구성 및 관리](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-9-organizing-and-managing-your-models)
 

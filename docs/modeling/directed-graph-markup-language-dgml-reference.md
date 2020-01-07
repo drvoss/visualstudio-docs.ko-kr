@@ -2,17 +2,17 @@
 title: DGML(Directed Graph Markup Language) 참조
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 292ba29e1902053b04f70052989e4eb0efff5b19
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.openlocfilehash: 2363e5131dd499dd85a5822ed15e2bfe473f1e1c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983671"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596638"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>DGML(Directed Graph Markup Language) 참조
 
@@ -33,17 +33,17 @@ DGML(Directed Graph Markup Language)은 시각화에 사용되고 복잡성 분�
 
    다음 목록에서는 포함할 수 있는 선택적 특성에 대해 설명합니다.
 
-   `Background` - 맵 배경의 색입니다.
+   `Background`-지도 배경의 색입니다.
 
-   `BackgroundImage` - 맵 배경으로 사용할 이미지 파일의 위치입니다.
+   `BackgroundImage`-지도 배경으로 사용할 이미지 파일의 위치입니다.
 
-   `GraphDirection` - 맵이 트리 레이아웃(`Sugiyama`)으로 설정되면 대부분의 링크가 지정된 방향, 즉 `TopToBottom`, `BottomToTop`, `LeftToRight` 또는 `RightToLeft`로 흐르도록 노드를 정렬합니다. [지도 레이아웃 변경](../modeling/browse-and-rearrange-code-maps.md#Selecting)을 참조 하세요.
+   `GraphDirection`-맵이 트리 레이아웃 (`Sugiyama`)으로 설정 되 면 대부분의 링크가 지정 된 방향 (`TopToBottom`, `BottomToTop`, `LeftToRight`또는 `RightToLeft`으로 흐르도록 노드를 정렬 합니다. [지도 레이아웃 변경](../modeling/browse-and-rearrange-code-maps.md#Selecting)을 참조 하세요.
 
-   `Layout` - 맵을 `None`, `Sugiyama`(트리 레이아웃), `ForceDirected`(빠른 클러스터) 또는 `DependencyMatrix` 레이아웃으로 설정합니다. [지도 레이아웃 변경](../modeling/browse-and-rearrange-code-maps.md#Selecting)을 참조 하세요.
+   `Layout`-지도를 `None`, `Sugiyama` (트리 레이아웃), `ForceDirected` (빠른 클러스터) 또는 `DependencyMatrix`레이아웃으로 설정 합니다. [지도 레이아웃 변경](../modeling/browse-and-rearrange-code-maps.md#Selecting)을 참조 하세요.
 
-   `NeighborhoodDistance` - 맵이 트리 레이아웃 또는 빠른 클러스터 레이아웃으로 설정되면 선택한 노드에서 지정된 링크 수(1-7)만큼 떨어진 노드만 표시합니다. [지도 레이아웃 변경](../modeling/browse-and-rearrange-code-maps.md#Selecting)을 참조 하세요.
+   `NeighborhoodDistance`-맵이 트리 레이아웃 또는 빠른 클러스터 레이아웃으로 설정 되 면 선택한 노드에서 지정 된 링크 수 (1-7) 만큼 떨어진 노드만 표시 합니다. [지도 레이아웃 변경](../modeling/browse-and-rearrange-code-maps.md#Selecting)을 참조 하세요.
 
-   예제:
+   예:
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -70,7 +70,7 @@ DGML(Directed Graph Markup Language)은 시각화에 사용되고 복잡성 분�
   > [!NOTE]
   > `<Link/>` 요소에서 정의되지 않은 노드를 참조하는 경우 맵에서 `<Node/>` 요소를 자동으로 만듭니다.
 
-   예제:
+   예:
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -90,7 +90,7 @@ DGML(Directed Graph Markup Language)은 시각화에 사용되고 복잡성 분�
 
    이 요소에는 다음과 같은 특성이 포함되어야 합니다.
 
-   `Id` - `Label` 특성이 별도로 지정되지 않은 경우 `Label` 특성의 기본값 및 노드의 고유 이름입니다. 이 이름은 노드를 참조하는 링크의 `Source` 또는 `Target` 특성과 일치해야 합니다.
+   `Id`-별도의 `Label` 특성이 지정 되지 않은 경우 노드의 고유 이름과 `Label` 특성의 기본값입니다. 이 이름은 노드를 참조하는 링크의 `Source` 또는 `Target` 특성과 일치해야 합니다.
 
    다음 목록에서는 포함할 수 있는 선택적 특성 중 일부에 대해 설명합니다.
 
@@ -98,17 +98,17 @@ DGML(Directed Graph Markup Language)은 시각화에 사용되고 복잡성 분�
 
    스타일 특성. [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)을 참조하세요.
 
-   `Category` - 이 특성을 공유하는 요소를 식별하는 범주의 이름입니다. 자세한 내용은 `<Category/>` 요소를 참조하십시오.
+   `Category`-이 특성을 공유 하는 요소를 식별 하는 범주의 이름입니다. 자세한 내용은 `<Category/>` 요소를 참조하십시오.
 
-   `Property` - 속성 값이 같은 요소를 식별하는 속성의 이름입니다. 자세한 내용은 `<Property/>` 요소를 참조하십시오.
+   `Property`-동일한 속성 값을 가진 요소를 식별 하는 속성의 이름입니다. 자세한 내용은 `<Property/>` 요소를 참조하십시오.
 
    `Group` - 노드에 다른 노드가 포함된 경우 이 특성을 `Expanded` 또는 `Collapsed`로 설정하여 노드의 내용을 표시하거나 숨길 수 있습니다. `<Link/>` 특성을 포함하고, 부모 노드와 자식 노드를 각각 소스 노드와 대상 노드로 지정하는 `Category="Contains"` 요소가 있어야 합니다. [그룹 코드 요소](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes)를 참조 하세요.
 
-   `Visibility` - 이 특성을 `Visible`, `Hidden` 또는 `Collapsed`로 설정합니다. `System.Windows.Visibility`를 사용합니다. [노드 및 링크 숨기기 또는 표시를](../modeling/browse-and-rearrange-code-maps.md#HidingShowing)참조 하세요.
+   `Visibility`-이 특성을 `Visible`, `Hidden`또는 `Collapsed`로 설정 합니다. `System.Windows.Visibility`를 사용합니다. [노드 및 링크 숨기기 또는 표시를](../modeling/browse-and-rearrange-code-maps.md#HidingShowing)참조 하세요.
 
    `Reference` - 이 특성을 문서 또는 URL에 대한 링크로 설정합니다. [코드 요소 및 링크에 문서 또는 Url 링크를](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences)참조 하세요.
 
-   예제:
+   예:
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -133,7 +133,7 @@ DGML(Directed Graph Markup Language)은 시각화에 사용되고 복잡성 분�
 
    이 요소에는 노드 간의 링크를 정의하는 `<Link>` 요소 목록이 포함됩니다. 자세한 내용은 `<Link/>` 요소를 참조하십시오.
 
-   예제:
+   예:
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -153,21 +153,21 @@ DGML(Directed Graph Markup Language)은 시각화에 사용되고 복잡성 분�
 
    이 요소에는 다음과 같은 특성이 포함되어야 합니다.
 
-   `Source` - 링크의 소스 노드입니다.
+   `Source`-링크의 소스 노드입니다.
 
    `Target` - 링크의 대상 노드입니다.
 
    다음 목록에서는 포함할 수 있는 선택적 특성 중 일부에 대해 설명합니다.
 
-   `Label` - 링크의 표시 이름입니다.
+   `Label`-링크의 표시 이름
 
    스타일 특성. [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)을 참조하세요.
 
-   `Category` - 이 특성을 공유하는 요소를 식별하는 범주의 이름입니다. 자세한 내용은 `<Category/>` 요소를 참조하십시오.
+   `Category`-이 특성을 공유 하는 요소를 식별 하는 범주의 이름입니다. 자세한 내용은 `<Category/>` 요소를 참조하십시오.
 
-   `Property` - 속성 값이 같은 요소를 식별하는 속성의 이름입니다. 자세한 내용은 `<Property/>` 요소를 참조하십시오.
+   `Property`-동일한 속성 값을 가진 요소를 식별 하는 속성의 이름입니다. 자세한 내용은 `<Property/>` 요소를 참조하십시오.
 
-   예제:
+   예:
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -191,7 +191,7 @@ DGML(Directed Graph Markup Language)은 시각화에 사용되고 복잡성 분�
 
    이 요소에는 `<Category/>` 요소 목록이 포함됩니다. 자세한 내용은 `<Category/>` 요소를 참조하십시오.
 
-   예제:
+   예:
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -214,13 +214,13 @@ DGML(Directed Graph Markup Language)은 시각화에 사용되고 복잡성 분�
 
    `Label` - 읽기 쉬운 형식의 범주 이름입니다.
 
-   `BasedOn` - 현재 요소의 `<Category/>`가 상속되는 부모 범주입니다.
+   `BasedOn`-현재 요소의 `<Category/>`를 상속 하는 부모 범주입니다.
 
    이 요소의 예제에서 `FailedTest` 범주는 `Stroke` 범주에서 `PassedTest` 특성을 상속합니다. [DGML 파일을 편집 하 여 코드 맵 사용자 지정](../modeling/customize-code-maps-by-editing-the-dgml-files.md)에서 "계층적 범주를 만들려면"을 참조 하세요.
 
    또한 범주는 노드 및 링크가 맵에 표시되는 모양을 제어하는 몇 가지 기본적인 템플릿 동작을 제공합니다. [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)을 참조하세요.
 
-   예제:
+   예:
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -248,7 +248,7 @@ DGML(Directed Graph Markup Language)은 시각화에 사용되고 복잡성 분�
 
    이 요소에는 `<Property/>` 요소 목록이 포함됩니다. 자세한 내용은 `<Property/>` 요소를 참조하십시오.
 
-   예제:
+   예:
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -265,15 +265,15 @@ DGML(Directed Graph Markup Language)은 시각화에 사용되고 복잡성 분�
 
    이 요소에는 다음과 같은 특성이 포함되어야 합니다.
 
-  - `Id` - `Label` 특성이 별도로 지정되지 않은 경우 `Label` 특성의 기본값 및 속성의 고유 이름입니다.
+  - `Id`-별도의 `Label` 특성이 지정 되지 않은 경우 속성의 고유 이름과 `Label` 특성의 기본값입니다.
 
-  - `DataType` - 속성에 의해 저장되는 데이터의 형식입니다.
+  - `DataType`-속성에 의해 저장 되는 데이터 형식
 
     **속성을 속성 창에** 표시 하려면 `Label` 속성을 사용 하 여 속성의 표시 이름을 지정 합니다.
 
     [코드 요소 및 링크에 범주 할당을](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AssignCategories)참조 하세요.
 
-    예제:
+    예:
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>

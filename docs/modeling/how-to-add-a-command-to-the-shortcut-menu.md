@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools]
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e476f1db1e30a04e67e6b53f593f55ee3867fae2
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 75805dc08eb340b3f70884d3bf5078a5b2712ed3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985125"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594736"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>방법: 바로 가기 메뉴에 명령 추가
 
@@ -139,13 +139,13 @@ MEF(Managed Extension Framework)는 다이어그램 메뉴의 메뉴 명령을 �
 
 2. `ProvideMenuResource` 특성을 찾습니다.
 
-3. 특성의 `version` 매개 변수(두 번째 매개 변수)를 증분합니다. 원하는 경우 용도에 맞게 매개 변수 이름을 명시적으로 작성할 수 있습니다. 예를 들면,
+3. 특성의 `version` 매개 변수(두 번째 매개 변수)를 증분합니다. 원하는 경우 용도에 맞게 매개 변수 이름을 명시적으로 작성할 수 있습니다. 예를 들면 다음과 같습니다.:
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
 ## <a name="CommandSet"></a>명령의 동작을 정의 합니다.
 
-DS에는 DslPackage\GeneratedCode\CommandSet.cs에서 선언된 partial 클래스에서 구현되는 일부 명령이 이미 포함되어 있습니다. 새 명령을 추가하려면 같은 클래스의 partial 선언을 포함하는 새 파일을 만들어 이 클래스를 확장해야 합니다. 클래스의 이름은 일반적으로 `CommandSet` *> \<YourDslName* 됩니다. 클래스의 이름을 확인 하 고 해당 내용을 검사 하 여를 시작 하는 것이 좋습니다.
+DS에는 DslPackage\GeneratedCode\CommandSet.cs에서 선언된 partial 클래스에서 구현되는 일부 명령이 이미 포함되어 있습니다. 새 명령을 추가하려면 같은 클래스의 partial 선언을 포함하는 새 파일을 만들어 이 클래스를 확장해야 합니다. 클래스의 이름은 일반적으로`CommandSet` *\<* 합니다. 클래스의 이름을 확인 하 고 해당 내용을 검사 하 여를 시작 하는 것이 좋습니다.
 
 명령 집합 클래스는 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>에서 파생됩니다.
 
@@ -157,9 +157,9 @@ DS에는 DslPackage\GeneratedCode\CommandSet.cs에서 선언된 partial 클래�
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. **Dslpackage**에서 **custom Code**라는 폴더를 만듭니다. 이 폴더에 `CommandSet.cs` 라는 새 클래스 파일을 만듭니다.
+2. **Dslpackage**에서 **custom Code**라는 폴더를 만듭니다. 이 폴더에 `CommandSet.cs`라는 새 클래스 파일을 만듭니다.
 
-3. 새 파일에 생성된 partial 클래스와 이름 및 네임스페이스가 같은 partial 선언을 작성합니다. 예를 들면,
+3. 새 파일에 생성된 partial 클래스와 이름 및 네임스페이스가 같은 partial 선언을 작성합니다. 예를 들면 다음과 같습니다.:
 
      `namespace Company.Language1 /* Make sure this is correct */`
 
@@ -220,17 +220,17 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 
 OnStatus 메서드에서는 다음 코드 조각이 유용하게 사용되는 경우가 많습니다.
 
-- `this.CurrentSelection` 사용자가 마우스 오른쪽 단추로 클릭한 모양은 항상 이 목록에 포함됩니다. 사용자가 다이어그램의 빈 부분을 클릭하는 경우의 목록 멤버는 Diagram뿐입니다.
+- `this.CurrentSelection`. 사용자가 마우스 오른쪽 단추로 클릭한 모양은 항상 이 목록에 포함됩니다. 사용자가 다이어그램의 빈 부분을 클릭하는 경우의 목록 멤버는 Diagram뿐입니다.
 
-- 사용자가 다이어그램의 빈 부분을 클릭 한 경우 `this.IsDiagramSelected()`  -  `true`.
+- 사용자가 다이어그램의 빈 부분을 클릭 한 경우 `this.IsDiagramSelected()` - `true`.
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()` - 사용자가 여러 개체를 선택하지 않은 경우입니다.
+- `this.IsSingleSelection()`-사용자가 여러 개체를 선택 하지 않았습니다.
 
-- `this.SingleSelection` - 사용자가 마우스 오른쪽 단추로 클릭한 모양이나 다이어그램입니다.
+- `this.SingleSelection`-사용자가 마우스 오른쪽 단추로 클릭 한 모양 또는 다이어그램
 
-- `shape.ModelElement as MyLanguageElement` - 모양이 나타내는 모델 요소입니다.
+- `shape.ModelElement as MyLanguageElement`-셰이프가 나타내는 모델 요소입니다.
 
 일반적으로는 선택한 항목에 따라 `Visible` 속성이 설정되고 선택한 요소의 상태에 따라 `Enabled` 속성이 설정되도록 지정합니다.
 
@@ -297,7 +297,7 @@ private const int cmdidMyContextMenuCommand = 1;
 > [!NOTE]
 > VSCT 파일의 Symbols 섹션을 변경하는 경우 이러한 선언도 일치하도록 변경해야 합니다. 또한 Package.tt에서 버전 번호도 증분해야 합니다.
 
- 이 명령 집합의 일부분으로 메뉴 명령을 등록합니다. 다이어그램을 초기화할 때 `GetMenuCommands()`가 한 번 호출됩니다.
+ 이 명령 집합의 일부분으로 메뉴 명령을 등록합니다. `GetMenuCommands()`는 다이어그램이 초기화 될 때 한 번 호출 됩니다.
 
 ```csharp
 protected override IList<MenuCommand> GetMenuCommands()

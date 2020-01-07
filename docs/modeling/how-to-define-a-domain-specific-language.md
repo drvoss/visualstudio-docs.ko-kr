@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Domain-Specific Language, external types
 - Domain-Specific Language, relationships
 - Domain-Specific Language, domain properties
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1823fb808985d27a02dc2cac34859ea1fbca44b6
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 00ade696290e4b8d3c32fa335fc4bf07509aef1c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985152"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594684"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>도메인별 언어 정의 방법
 DSL (도메인별 언어)을 정의 하려면 템플릿에서 Visual Studio 솔루션을 만듭니다. 이 솔루션의 중요한 요소는 DslDefinition.dsl에 저장되는 DSL 정의 다이어그램입니다. DSL 정의는 DSL의 클래스와 모양을 정의합니다. 이러한 요소를 수정하고 필요한 내용을 추가한 후에 프로그램 코드를 추가하여 DSL을 보다 자세하게 사용자 지정할 수 있습니다.
@@ -190,7 +190,7 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
  클래스에서 **도메인 속성** 을 클릭 하 고 enter 키를 누른 다음 속성의 이름을 입력 합니다. 도메인 속성의 기본 형식은 문자열입니다. 유형을 변경 하려면 도메인 속성을 선택 하 고 **속성** 창에서 **유형을** 설정 합니다. 원하는 형식이 드롭다운 목록에 없는 경우 [속성 형식 추가](#addTypes)를 참조 하세요.
 
- **요소 이름 속성을 설정 합니다.** 언어 탐색기에서 요소를 식별 하는 데 사용할 수 있는 도메인 속성을 선택 합니다. 예를 들어 Song 도메인 클래스에서는 Title 도메인 속성을 선택할 수 있습니다. **속성** 창에서 **요소 이름** 을 `true`로 설정 합니다.
+ **요소 이름 속성을 설정 합니다.** 언어 탐색기에서 요소를 식별하는 데 사용할 수 있는 도메인 속성을 선택합니다. 예를 들어 Song 도메인 클래스에서는 Title 도메인 속성을 선택할 수 있습니다. **속성** 창에서 **요소 이름** 을 `true`로 설정 합니다.
 
 ### <a name="create-derived-domain-classes"></a>파생된 도메인 클래스 만들기
  도메인 클래스에 해당 속성과 관계를 상속하는 변형을 포함하려면 해당 클래스에서 파생되는 클래스를 만듭니다. 예를 들어 Album에는 WMA 및 MP3 파생 클래스가 포함될 수 있습니다.
@@ -344,7 +344,7 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
  필요한 경우 **각 역할의 복합성을 조정**합니다. 각 개인에게 관리자를 한 명까지만 지정하려면 다이어그램의 관리자 레이블 아래에 표시되는 다중성을 0..1로 설정합니다.
 
- **관계에 도메인 속성을 추가 합니다.** 그림에서 음악가-앨범 관계에는 role 속성이 있습니다.
+ **관계에 도메인 속성을 추가 합니다.** 아래 그림에서 Artist-Album 관계에는 역할 속성이 있습니다.
 
  동일한 모델 요소 쌍 사이에 동일한 클래스의 링크가 둘 이상 있을 수 있는 경우 **관계의 중복 허용 속성을 설정** 합니다. 예를 들어 교사 한 명이 같은 학생에게 둘 이상의 과목을 가르치도록 허용할 수 있습니다.
 
@@ -396,7 +396,7 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
 5. 셰이프 사이에 **연결을 만듭니다** . 연결선 도구와 모양을 차례로 클릭하고 다른 모양을 클릭합니다.
 
-6. **부적절 한 클래스 간에 연결을 만들 수 없는지 확인 합니다.** 예를 들어 앨범 및 음악가 사이에 관계가 있는 경우 아티스트에 아티스트를 연결할 수 없는지 확인 합니다.
+6. **부적절 한 클래스 간에 연결을 만들 수 없는지 확인 합니다.** 예를 들어 Album과 Artist 간에 관계가 설정된 경우 Artist를 Artist에 연결할 수 없는지 확인합니다.
 
 7. **복합성이 올바른지 확인 합니다. 예를 들어 한 사람을 두 대 이상의 관리자에 연결할 수 없는지 확인 합니다.**
 
@@ -606,7 +606,7 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
  [방법: 도메인별 언어의 네임 스페이스 변경을](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)참조 하세요.
 
-## <a name="trouble"></a>슈팅이
+## <a name="trouble"></a> 문제 해결
  아래 테이블에는 DSL을 디자인할 때 가장 흔히 발생하는 몇 가지 문제와 제안 해결 방법이 나와 있습니다. [시각화 도구 확장성 포럼](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx)에서 추가 조언을 사용할 수 있습니다.
 
 | 문제점 | 제안 해결 방법 |

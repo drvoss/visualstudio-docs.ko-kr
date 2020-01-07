@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], custom host
 - text templates, custom host walkthrough
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 999e8f27a9c60d776d65dc87eb2b42adeec2226c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3d578161d43de68d85f3b7704c9fd69fe4e268ea
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666969"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593540"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>연습: 사용자 지정 텍스트 템플릿 호스트 만들기
 
@@ -35,7 +35,7 @@ Visual Studio 외부에서 *텍스트 템플릿 변환* 기능을 사용 하거�
 
 - 사용자 지정 호스트 테스트
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>전제 조건
 
 이 연습을 완료하려면 다음이 필요합니다.
 
@@ -51,7 +51,7 @@ Visual Studio 외부에서 *텍스트 템플릿 변환* 기능을 사용 하거�
 
 2. 다음 어셈블리에 대한 참조를 추가합니다.
 
-   - **VisualStudio \*.0**
+   - **Microsoft.VisualStudio.TextTemplating.\*.0**
 
    - **VisualStudio-10.0 및 이후 버전**
 
@@ -714,7 +714,7 @@ Visual Studio 외부에서 *텍스트 템플릿 변환* 기능을 사용 하거�
    End Namespace
    ```
 
-4. @No__t_0의 경우 **프로젝트** 메뉴를 열고 **customhost 속성**을 클릭 합니다. **시작 개체** 목록에서 **Customhost. Program**을 클릭 합니다.
+4. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]의 경우 **프로젝트** 메뉴를 열고 **customhost 속성**을 클릭 합니다. **시작 개체** 목록에서 **Customhost. Program**을 클릭 합니다.
 
 5. **파일** 메뉴에서 **모두 저장**을 클릭합니다.
 

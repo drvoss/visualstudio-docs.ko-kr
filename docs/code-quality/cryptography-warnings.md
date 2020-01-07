@@ -3,17 +3,17 @@ title: 암호화 경고
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: d96723ea-a293-488d-b9db-adb437e50cdd
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2414a12c00b7d496e09f01982783a90874721cdc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 78923dfd2873b53790421cde3fe01f024e267202
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649689"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587703"
 ---
 # <a name="cryptography-warnings"></a>암호화 경고
 암호화를 올바르게 사용하여 더 안전한 라이브러리 및 애플리케이션을 지원하는 암호화 경고입니다. 이들 경고는 프로그램의 보안 결함을 방지하는 데 도움이 됩니다. 이들 경고를 비활성화하는 경우 코드에 그 이유를 명확하게 표시하고 개발 프로젝트의 지정된 보안 담당자에게 이 사실을 알려야 합니다.

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - n-tier applications, creating
 - n-tier applications, walkthroughs
 ms.assetid: d15e4d31-2839-48d9-9e0e-2e73404d82a2
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8fad79423465ac3d90c426862f93f09d721c7df3
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: f84e334409f4e3546d8963a51bb5cf79b31f0afd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806982"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585966"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>연습: n 계층 데이터 응용 프로그램 만들기
 *N 계층* 데이터 애플리케이션은 데이터에 액세스하며 여러 논리 *계층*으로 구분되는 애플리케이션입니다. 애플리케이션 구성 요소를 개별 계층으로 분리하면 애플리케이션의 확장성과 유지 관리 가능성이 높아집니다. 이는 전체 솔루션을 다시 설계하지 않고도 단일 계층에 적용할 수 있는 새로운 기술을 보다 쉽게 도입할 수 있기 때문입니다. N 계층 아키텍처에는 표시 계층, 중간 계층 및 데이터 계층이 포함됩니다. 중간 계층에는 대개 데이터 액세스 계층, 비즈니스 논리 계층 및 인증, 유효성 검사 등의 공유 구성 요소가 포함됩니다. 데이터 계층에는 관계형 데이터베이스가 포함됩니다. 표시 계층에 액세스하는 최종 사용자로부터 격리된 상태를 유지하기 위해 N 계층 애플리케이션에서는 보통 중요한 정보가 중간 계층의 데이터 액세스 계층에 저장됩니다. 자세한 내용은 [N 계층 데이터 응용 프로그램 개요](../data-tools/n-tier-data-applications-overview.md)를 참조 하세요.
@@ -50,7 +50,7 @@ N 계층 애플리케이션의 여러 계층을 분리하는 방법 중 하나�
 
 ![비디오 링크](../data-tools/media/playvideo.gif) 이 항목의 비디오 버전을 참조 하세요. [Video How to: N 계층 데이터 애플리케이션 만들기](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/cc178916(v=vs.90)).
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>전제 조건
 이 연습에서는 SQL Server Express LocalDB 및 Northwind 샘플 데이터베이스를 사용 합니다.
 
 1. LocalDB SQL Server Express 없는 경우 [SQL Server Express 다운로드 페이지](https://www.microsoft.com/sql-server/sql-server-editions-express)에서 또는 **Visual Studio 설치 관리자**를 통해 설치 합니다. **Visual Studio 설치 관리자**에서 **.NET 데스크톱 개발** 워크로드의 일부로 또는 개별 구성 요소로서 SQL Server Express LocalDB를 설치할 수 있습니다.
@@ -75,7 +75,7 @@ N 계층 애플리케이션의 여러 계층을 분리하는 방법 중 하나�
 
 ### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>N 계층 솔루션 및 DataEntityTier 클래스 라이브러리를 만들려면
 
-1. Visual Studio의 **파일** 메뉴에서 **새로 만들기**  > **프로젝트**를 선택 합니다.
+1. Visual Studio의 **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 차례로 선택합니다.
 
 2. 왼쪽 창 **에서 C# 시각적 개체** 또는 **Visual Basic** 을 확장 한 다음 **Windows 데스크톱**을 선택 합니다.
 
@@ -122,7 +122,7 @@ DataEntityTier 프로젝트를 만든 후 다음 단계에서는 다른 클래�
 
      Northwind 샘플 데이터베이스에 대한 데이터 연결이 드롭다운 목록에 표시되면 해당 연결을 선택합니다.
 
-     또는
+     -또는-
 
      **새 연결** 을 선택 하 여 **연결 추가** 대화 상자를 엽니다.
 
@@ -361,7 +361,7 @@ DataEntityTier 프로젝트를 만든 후 다음 단계에서는 다른 클래�
 `maxReceivedMessageSize`의 기본값은 `Customers` 및 `Orders` 테이블에서 검색 된 데이터를 저장할 수 있을 만큼 크지 않습니다. 다음 단계에서는 값을 6553600로 늘립니다. 클라이언트에서 값을 변경 하 여 서비스 참조를 자동으로 업데이트 합니다.
 
 > [!NOTE]
-> 기본값이 작은 이유는 DoS(서비스 거부) 공격에 대한 노출을 제한하기 위해서입니다. 자세한 내용은 <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>을 참조하십시오.
+> 기본값이 작은 이유는 DoS(서비스 거부) 공격에 대한 노출을 제한하기 위해서입니다. 자세한 내용은 <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>를 참조하세요.
 
 ### <a name="to-increase-the-maxreceivedmessagesize-value"></a>maxReceivedMessageSize 값을 늘리려면
 
@@ -369,7 +369,7 @@ DataEntityTier 프로젝트를 만든 후 다음 단계에서는 다른 클래�
 
 2. **maxReceivedMessage** 크기 특성을 찾아 값을 `6553600`으로 변경합니다.
 
-## <a name="test-the-application"></a>애플리케이션 테스트
+## <a name="test-the-application"></a>응용 프로그램 테스트
 **F5**를 눌러 애플리케이션을 실행합니다. `Customers` 및 `Orders` 테이블의 데이터는 데이터 서비스에서 검색 되어 폼에 표시 됩니다.
 
 ## <a name="next-steps"></a>다음 단계

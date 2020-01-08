@@ -2,17 +2,17 @@
 title: '방법: 프로그램 코드로 파일에서 모델 열기'
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d39543a388c112cf13a5841e4fe825717597d5c1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fae71f748f1f64480c046ae157e1fbca0dd0bec9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661173"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594619"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>방법: 프로그램 코드로 파일에서 모델 열기
 
@@ -33,7 +33,7 @@ Visual Studio 확장에서이 목적을 위해 ModelBus를 사용할 수 있습�
 > [!NOTE]
 > 대상 프레임 워크는 **4 개의 클라이언트 프로필 .NET Framework**되어서는 안 됩니다.
 
-## <a name="references"></a>참조 항목
+## <a name="references"></a>참조
 
 Visual Studio 응용 프로그램 프로젝트에 다음 참조를 추가 합니다.
 
@@ -41,7 +41,7 @@ Visual Studio 응용 프로그램 프로젝트에 다음 참조를 추가 합니
 
   - **참조 추가** 대화 상자의 **.net** 탭에 표시 되지 않는 경우 **찾아보기** 탭을 클릭 하 고 `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`로 이동 합니다.
 
-- Dsl 어셈블리는 DSL 프로젝트의 bin 폴더 아래에서 찾을 수 있습니다. 해당 이름은 일반적으로 *회사*의 형식입니다. *프로젝트* `.Dsl.dll`.
+- Dsl 어셈블리는 DSL 프로젝트의 bin 폴더 아래에서 찾을 수 있습니다. 해당 이름은 일반적으로 *회사*의 형식입니다. *프로젝트*`.Dsl.dll`.
 
 ## <a name="important-classes-in-the-dsl"></a>DSL의 중요 한 클래스
 

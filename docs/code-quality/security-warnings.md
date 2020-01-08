@@ -10,23 +10,23 @@ helpviewer_keywords:
 - managed code analysis warnings, security warnings
 - warnings, security
 ms.assetid: 60d4e8ea-230a-494f-aa6a-b91db77540e4
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a57236d42ed38070d79843ecf4097c3af80239a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 004f10600df3ed2f9c1f62557e0915638482877e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649073"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587214"
 ---
 # <a name="security-warnings"></a>보안 경고
 
 보안 경고는 더 안전한 라이브러리 및 애플리케이션을 지원합니다. 이들 경고는 프로그램의 보안 결함을 방지하는 데 도움이 됩니다. 이들 경고를 비활성화하는 경우 코드에 그 이유를 명확하게 표시하고 개발 프로젝트의 지정된 보안 담당자에게 이 사실을 알려야 합니다.
 
-## <a name="in-this-section"></a>이 섹션의 내용
+## <a name="in-this-section"></a>단원 내용
 
 |규칙|설명|
 |----------|-----------------|
@@ -102,19 +102,19 @@ ms.locfileid: "72649073"
 |[CA3012: regex 삽입 취약점에 대 한 코드 검토](../code-quality/ca3012.md)|신뢰할 수 없는 입력으로 작업할 때는 regex 삽입 공격에 유의 해야 합니다. 공격자는 regex 주입을 사용 하 여 정규식을 악의적으로 수정 하거나 regex가 의도 하지 않은 결과와 일치 하도록 하거나 regex가 과도 한 CPU를 사용 하 여 서비스 거부 공격을 내릴 수 있습니다.|
 |[CA3061: URL을 기준으로 스키마를 추가 하지 않습니다.](../code-quality/ca3061.md)|위험한 외부 참조를 유발할 수 있으므로 Add 메서드의 unsafe 오버 로드를 사용 하지 마세요.|
 |[CA3075: 안전하지 않은 DTD 처리](../code-quality/ca3075.md)|안전하지 않은 DTDProcessing 인스턴스를 사용하거나 외부 엔터티 소스를 참조하면 파서는 신뢰할 수 없는 입력을 허용하고 공격자에게 중요 한 정보를 공개할 수 있습니다.|
-|[CA3076: 안전하지 않은 XSLT 스크립트 실행](../code-quality/ca3076.md)|.NET 애플리케이션에서 비보안 방식으로 XSLT(Extensible Stylesheets Language Transformations)를 실행하는 경우 프로세서는 공격자에게 중요한 정보를 노출하여 서비스 거부 및 사이트 간 공격을 유발할 수 있는 신뢰할 수 없는 URI 참조를 확인할 수 있습니다.|
+|[CA3076: 안전하지 않은 XSLT 스크립트 실행](../code-quality/ca3076.md)|.NET 응용 프로그램에서 비보안 방식으로 XSLT(Extensible Stylesheets Language Transformations)를 실행하는 경우 프로세서는 공격자에게 중요한 정보를 노출하여 서비스 거부 및 사이트 간 공격을 유발할 수 있는 신뢰할 수 없는 URI 참조를 확인할 수 있습니다.|
 |[CA3077: API 디자인, XML 문서 및 XML 텍스트 판독기의 안전하지 않은 처리](../code-quality/ca3077.md)|XMLDocument 및 XMLTextReader에서 파생된 API를 디자인할 경우 DtdProcessing에 주의해야 합니다. 외부 엔터티 소스를 참조하거나 확인할 때 안전하지 않은 DTDProcessing 인스턴스를 사용하거나 XML에서 안전하지 않은 값을 설정하면 정보가 공개될 수 있습니다.|
 |[CA3147: 동사 처리기를 ValidateAntiForgeryToken로 표시 합니다.](../code-quality/ca3147.md)|ASP.NET MVC 컨트롤러를 설계할 때 사이트 간 요청 위조 공격을 염두에 둘 수 있습니다. 교차 사이트 요청 위조 공격은 인증 된 사용자의 악성 요청을 ASP.NET MVC 컨트롤러로 보낼 수 있습니다.|
 |[CA5122: P/Invoke 선언은 안전에 중요한 선언이 아니어야 합니다.](../code-quality/ca5122.md)|메서드는 보안에 중요한 작업을 수행할 때 SecuritySafeCritical로 표시되지만, 투명 코드에서도 안전하게 사용할 수 있습니다. 투명 코드는 P/Invoke를 통해 절대 네이티브 코드를 직접 호출할 수 없습니다. 따라서 P/Invoke를 SecuritySafeCritical로 표시할 경우 투명 코드가 P/Invoke를 호출할 수 없으며, 보안 분석에서 잘못 해석하는 원인이 됩니다.|
-|[CA5361: 강력한 암호화의 SChannel 사용을 사용 하지 않도록 설정 하지 마십시오.](../code-quality/ca5361.md)|@No__t_0를 `true`로 설정 하면 weakens가 보내는 TLS (전송 계층 보안) 연결에 사용 되는 암호화가 사용 됩니다. 약한 암호화는 응용 프로그램과 서버 간 통신의 기밀성을 손상 시켜 공격자가 중요 한 데이터를 보다 쉽게 도청 수 있도록 합니다.|
+|[CA5361: 강력한 암호화의 SChannel 사용을 사용 하지 않도록 설정 하지 마십시오.](../code-quality/ca5361.md)|`Switch.System.Net.DontEnableSchUseStrongCrypto`를 `true`로 설정 하면 weakens가 보내는 TLS (전송 계층 보안) 연결에 사용 되는 암호화가 사용 됩니다. 약한 암호화는 응용 프로그램과 서버 간 통신의 기밀성을 손상 시켜 공격자가 중요 한 데이터를 보다 쉽게 도청 수 있도록 합니다.|
 |[CA5363: 요청 유효성 검사를 사용 하지 않도록 설정 하지 마십시오.](../code-quality/ca5363.md)|요청 유효성 검사는 HTTP 요청을 검사 하 고 사이트 간 스크립팅을 포함 하 여 삽입 공격으로 이어질 수 있는 잠재적으로 위험한 콘텐츠가 포함 되어 있는지 여부를 확인 하는 ASP.NET의 기능입니다.|
 |[CA5364: 사용 되지 않는 보안 프로토콜을 사용 하지 마십시오.](../code-quality/ca5364.md)|TLS (전송 계층 보안)는 일반적으로 http (하이퍼텍스트 전송 프로토콜 보안)를 사용 하는 컴퓨터 간의 통신을 보호 합니다. 이전 프로토콜 버전의 TLS는 TLS 1.2 및 TLS 1.3 보다 안전 하지 않으며 새로운 취약성이 있을 가능성이 높습니다. 위험을 최소화 하기 위해 이전 프로토콜 버전을 사용 하지 않습니다.|
 |[CA5369: Deserialization에 XmlReader를 사용 합니다.](../code-quality/ca5369.md)|신뢰할 수 없는 DTD 및 XML 스키마를 처리 하면 보안 해결 프로그램이 포함 된 XmlReader를 사용 하 여 제한 하거나 DTD 및 XML 인라인 스키마 처리를 사용 하지 않도록 설정 해야 하는 위험한 외부 참조를 로드할 수 있습니다.|
 |[CA5370: 판독기의 유효성을 검사 하기 위해 XmlReader를 사용 합니다.](../code-quality/ca5370.md)|신뢰할 수 없는 DTD 및 XML 스키마를 처리 하면 위험한 외부 참조를 로드할 수 있습니다. 이 위험한 로드는 보안 해결 프로그램이 포함 된 XmlReader를 사용 하거나 DTD 및 XML 인라인 스키마 처리를 사용 하지 않도록 설정 하 여 제한할 수 있습니다.|
 |[CA5371: 스키마 읽기에 XmlReader를 사용 합니다.](../code-quality/ca5371.md)|신뢰할 수 없는 DTD 및 XML 스키마를 처리 하면 위험한 외부 참조를 로드할 수 있습니다. 보안 해결 프로그램을 사용 하거나 DTD 및 XML 인라인 스키마 처리를 사용 하지 않는 XmlReader를 사용 하면이이 제한 됩니다.|
 |[CA5372: XPathDocument에 XmlReader를 사용 합니다.](../code-quality/ca5372.md)|신뢰할 수 없는 데이터에서 XML을 처리 하면 위험한 외부 참조가 로드 될 수 있으며,이는 보안 해결 프로그램이 포함 된 XmlReader를 사용 하 여 제한 하거나 DTD 처리를 사용 하지 않도록 설정할 수 있습니다.|
-|[CA5373: 사용 되지 않는 키 파생 함수를 사용 하지 마십시오.](../code-quality/ca5373.md)|이 규칙은 <xref:System.Security.Cryptography.PasswordDeriveBytes?displayProperty=fullName> 및 `Rfc2898DeriveBytes.CryptDeriveKey` 약한 키 파생 메서드 호출을 검색 합니다. <xref:System.Security.Cryptography.PasswordDeriveBytes?displayProperty=fullName> 약한 알고리즘 PBKDF1을 사용 했습니다.|
-|[CA5378: ServicePointManagerSecurityProtocols를 사용 하지 않도록 설정 하지 마십시오.](../code-quality/ca5378.md)|@No__t_0를 `true`로 설정 하면 TLS 1.0를 사용 하 여 Windows Communication Framework의 TLS (전송 계층 보안) 연결을 제한 합니다. 해당 버전의 TLS는 더 이상 사용 되지 않습니다.|
+|[CA5373: 사용 되지 않는 키 파생 함수를 사용 하지 마십시오.](../code-quality/ca5373.md)|이 규칙은 <xref:System.Security.Cryptography.PasswordDeriveBytes?displayProperty=fullName> 및 `Rfc2898DeriveBytes.CryptDeriveKey`약한 키 파생 메서드 호출을 검색 합니다. <xref:System.Security.Cryptography.PasswordDeriveBytes?displayProperty=fullName> 약한 알고리즘 PBKDF1을 사용 했습니다.|
+|[CA5378: ServicePointManagerSecurityProtocols를 사용 하지 않도록 설정 하지 마십시오.](../code-quality/ca5378.md)|`Switch.System.ServiceModel.DisableUsingServicePointManagerSecurityProtocols`를 `true`로 설정 하면 TLS 1.0를 사용 하 여 Windows Communication Framework의 TLS (전송 계층 보안) 연결을 제한 합니다. 해당 버전의 TLS는 더 이상 사용 되지 않습니다.|
 |[CA5380: 루트 저장소에 인증서를 추가 하지 않습니다.](../code-quality/ca5380.md)|이 규칙은 신뢰할 수 있는 루트 인증 기관 인증서 저장소에 인증서를 추가 하는 코드를 검색 합니다. 기본적으로 신뢰할 수 있는 루트 인증 기관 인증서 저장소는 Microsoft 루트 인증서 프로그램의 요구 사항을 충족 하는 공용 Ca 집합을 사용 하 여 구성 됩니다.|
 |[CA5381: 루트 저장소에 인증서가 추가 되지 않았는지 확인 합니다.](../code-quality/ca5381.md)|이 규칙은 잠재적으로 신뢰할 수 있는 루트 인증 기관 인증서 저장소에 인증서를 추가 하는 코드를 검색 합니다. 기본적으로 신뢰할 수 있는 루트 인증 기관 인증서 저장소는 Microsoft 루트 인증서 프로그램의 요구 사항을 충족 하는 공용 Ca (인증 기관) 집합으로 구성 됩니다.|
 |[CA5386: 하드 코딩 SecurityProtocolType 값을 사용 하지 마십시오.](../code-quality/ca5386.md)|TLS (전송 계층 보안)는 일반적으로 http (하이퍼텍스트 전송 프로토콜 보안)를 사용 하는 컴퓨터 간의 통신을 보호 합니다. 프로토콜 버전 TLS 1.0 및 TLS 1.1은 사용 되지 않지만 TLS 1.2 및 TLS 1.3은 최신 상태입니다. 향후에는 TLS 1.2 및 TLS 1.3이 더 이상 사용 되지 않을 수 있습니다. 응용 프로그램의 보안을 유지 하려면 프로토콜 버전을 하드 코딩 하지 않고 .NET Framework v 4.7.1 이상을 대상으로 해야 합니다.|

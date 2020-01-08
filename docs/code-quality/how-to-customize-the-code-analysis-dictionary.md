@@ -7,17 +7,17 @@ helpviewer_keywords:
 - custom dictionary, code analysis
 - dictionary, code analysis
 ms.assetid: 667e3b4e-beff-48be-b3d1-376e1716a895
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26629ed099eea9a1d0c73a2eaa1105525d05dcf3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c3fbcbbfd52e4715dc6ee063ae0bae905eb3e65a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649465"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587526"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>방법: 코드 분석 사전 사용자 지정
 
@@ -72,7 +72,7 @@ ms.locfileid: "72649465"
 
 - [Dictionary/Words/DiscreteExceptions/Term](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
 
-- [사전/머리글자어/CasingExceptions/머리글자어](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
+- [Dictionary/Acronyms/CasingExceptions/Acronym](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
 
 ### <a name="BKMK_DictionaryWordsRecognizedWord"></a>사전/단어/인식/단어
 
@@ -241,7 +241,7 @@ Dictionary/Words/DiscreteExceptions 노드의 용어는 다음 코드 분석 규
 
 ### <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>사전/머리글자어/CasingExceptions/머리글자어
 
-코드 분석이 올바른 철자를 확인 하는 용어 목록에 머리글자어를 포함 하 고 복합 단어에 대 한 대/소문자 규칙에 따라 용어를 선택 하는 방법을 표시 하려면 용어를 사전/머리글자어/CasingExceptions의 내부 텍스트로 추가 합니다. 머리글자어 요소입니다. Dictionary/머리글자어/CasingExceptions/머리글자어 요소의 머리글자어는 대/소문자를 구분 합니다.
+코드 분석이 올바른 철자를 확인 하는 용어 목록에 머리글자어를 포함 하 고 복합 단어에 대 한 대/소문자 규칙에 따라 용어를 선택 하는 방법을 표시 하려면 용어를 Dictionary/머리글자어/CasingExceptions/머리글자어 요소의 내부 텍스트로 추가 합니다. Dictionary/머리글자어/CasingExceptions/머리글자어 요소의 머리글자어는 대/소문자를 구분 합니다.
 
 **예**
 

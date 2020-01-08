@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6c7b6370793068ff07f30066ddd51b72dcc924b3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b45716db44dcc316ec60604aa0411e6498797ae0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668695"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595022"
 ---
 # <a name="options-page-environment-node-properties"></a>옵션 페이지, 환경 노드 속성
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -160,5 +160,10 @@ ms.locfileid: "72668695"
 |ViewSourceIn|Get/Set(Enum)|<xref:EnvDTE.vsBrowserViewSource>(소스, 디자인, 외부)입니다.|
 |ViewSourceExternalProgram|Get/Set(문자열)|외부 소스 뷰어의 경로입니다.|
 
-## <a name="see-also"></a>참고 항목
- [옵션 설정 제어](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) 옵션 페이지 옵션 페이지에서 [속성 항목의 이름 결정](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa) 페이지 [, 글꼴 및 색 노드 속성](../../ide/reference/options-page-fonts-and-colors-node-properties.md) [옵션 페이지, 텍스트 편집기 노드 속성](../../ide/reference/options-page-text-editor-node-properties.md) [환경 옵션 대화 상자](../../ide/reference/environment-options-dialog-box.md)
+## <a name="see-also"></a>관련 항목
+
+- [옵션 설정 제어](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
+- [옵션 페이지에서 속성 항목의 이름 확인](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
+- [옵션 페이지, 글꼴 및 색 노드 속성](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
+- [옵션 페이지, 텍스트 편집기 노드 속성](../../ide/reference/options-page-text-editor-node-properties.md)
+- [옵션 대화 상자, 환경](../../ide/reference/environment-options-dialog-box.md)

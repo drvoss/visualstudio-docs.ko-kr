@@ -42,24 +42,24 @@ helpviewer_keywords:
 - datasets [Visual Basic], namespace
 - data adapters, populating datasets
 ms.assetid: ee57f4f6-9fe1-4e0a-be9a-955c486ff427
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3796a9b7a1d37911601574e02c89e8ccebb684ca
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cb41a4e3e4ed1c0032c579779a18c7df0bc22477
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642112"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586720"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio의 데이터 세트 도구
 
 > [!NOTE]
 > 데이터 집합 및 관련 클래스는 응용 프로그램이 데이터베이스와의 연결을 해제 하는 동안 응용 프로그램에서 메모리의 데이터를 사용할 수 있도록 하는 초기 2000s의 레거시 .NET 기술입니다. 사용자가 데이터를 수정 하 고 변경 내용을 데이터베이스에 다시 저장할 수 있도록 하는 응용 프로그램에 특히 유용 합니다. 데이터 집합은 매우 성공적인 기술로 입증 되었지만 새 .NET 응용 프로그램에서 Entity Framework를 사용 하는 것이 좋습니다. Entity Framework은 테이블 형식 데이터를 개체 모델로 사용 하는 보다 자연 스러운 방법을 제공 하 고 프로그래밍 인터페이스를 단순화 합니다.
 
-@No__t_0 개체는 기본적으로 미니 데이터베이스인 메모리 내 개체입니다. 여기에는 열려 있는 연결을 유지 관리할 필요 없이 하나 이상의 데이터베이스에서 데이터를 저장 하 고 수정할 수 있는 `DataTable`, `DataColumn` 및 `DataRow` 개체가 포함 되어 있습니다. 데이터 집합은 해당 데이터 변경 내용에 대 한 정보를 유지 하므로 응용 프로그램이 다시 연결 되 면 업데이트를 추적 하 고 데이터베이스로 다시 보낼 수 있습니다.
+`DataSet` 개체는 기본적으로 미니 데이터베이스인 메모리 내 개체입니다. 여기에는 열려 있는 연결을 유지 관리할 필요 없이 하나 이상의 데이터베이스에서 데이터를 저장 하 고 수정할 수 있는 `DataTable`, `DataColumn`및 `DataRow` 개체가 포함 되어 있습니다. 데이터 집합은 해당 데이터 변경 내용에 대 한 정보를 유지 하므로 응용 프로그램이 다시 연결 되 면 업데이트를 추적 하 고 데이터베이스로 다시 보낼 수 있습니다.
 
 데이터 집합 및 관련 클래스는 .NET API의 <xref:System.Data?displayProperty=fullName> 네임 스페이스에 정의 되어 있습니다. ADO.NET를 사용 하 여 코드에서 동적으로 데이터 집합을 만들고 수정할 수 있습니다. 이 단원의 설명서에서는 Visual Studio 디자이너를 사용 하 여 데이터 집합으로 작업 하는 방법을 보여 줍니다. 디자이너를 통해 생성 된 데이터 집합은 **TableAdapter** 개체를 사용 하 여 데이터베이스와 상호 작용 합니다. 프로그래밍 방식으로 만들어진 데이터 집합은 **DataAdapter** 개체를 사용 합니다. 프로그래밍 방식으로 데이터 집합을 만드는 방법에 대 한 자세한 내용은 [dataadapter 및 DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders)를 참조 하세요.
 

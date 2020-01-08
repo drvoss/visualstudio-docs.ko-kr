@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c9cc0d8a40970e2ec36030ab3121d6fc02748e2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e01136b845124d74c22ceb1c7cab877a8e2d1d04
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654192"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590555"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>빌드 프로세스에서 텍스트 변환 호출
 
@@ -51,7 +51,7 @@ Visual Studio가 설치 되지 않은 컴퓨터에서 [빌드 서버](/azure/dev
   - VisualStudio. 15.0 .dll.
 
 > [!TIP]
-> 빌드 서버에서 TextTemplating 빌드 대상을 실행 하는 경우 Roslyn 어셈블리가 *Roslyn* 라는 디렉터리에 있는지 확인 합니다 (예: *빌드 실행 파일과 동일한 디렉터리에 있는 디렉터리에 있습니다. `MissingMethodException` msbuild.exe*)를 실행 합니다.
+> 빌드 서버에서 TextTemplating 빌드 대상을 실행할 때 Roslyn 어셈블리가 *Roslyn* 라는 디렉터리에 있는지 확인 합니다 .이 디렉터리에는 빌드 실행 파일과 동일한 디렉터리에 있습니다 (예: *msbuild.exe*). `MissingMethodException`
 
 ## <a name="edit-the-project-file"></a>프로젝트 파일 편집
 
@@ -184,7 +184,7 @@ MSBuild에서만 이러한 속성을 사용합니다. Visual Studio의 코드 �
 </ItemGroup>
 ```
 
-로 리디렉션하는 데 유용한 폴더를 `$(IntermediateOutputPath)` 합니다.
+로 리디렉션하는 데 유용한 폴더를 `$(IntermediateOutputPath)`합니다.
 
 출력 파일 이름을 지정 하는 경우 템플릿의 output 지시어에 지정 된 확장 보다 우선 적용 됩니다.
 
@@ -198,7 +198,7 @@ MSBuild에서만 이러한 속성을 사용합니다. Visual Studio의 코드 �
 </ItemGroup>
 ```
 
-**Transform** 을 사용 하거나 단일 파일 생성기를 실행 하 여 Visual Studio 내에서 템플릿을 변형 하는 경우에는 OutputFileName 또는 outputfilepath를 지정 하지 않는 것이 좋습니다. 변환을 트리거한 방법에 따라 다른 파일 경로를 사용 합니다. 이는 혼란 스 러 울 수 있습니다.
+**Transform** 을 사용 하거나 단일 파일 생성기를 실행 하 여 Visual Studio 내에서 템플릿을 변형 하는 경우에는 OutputFileName 또는 outputfilepath를 지정 하지 않는 것이 좋습니다. 변환을 트리거한 방법에 따라 다른 파일 경로를 사용 합니다. 이 작업은 혼동될 수 있습니다.
 
 ## <a name="add-reference-and-include-paths"></a>참조 및 포함 경로 추가
 
@@ -252,7 +252,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 ```
 
 > [!NOTE]
-> MSBuild를 사용하는 경우에만 `ResolveParameterValue`이 `T4ParameterValues`에서 데이터를 가져옵니다. Visual Studio를 사용 하 여 템플릿을 변환 하는 경우 매개 변수에 기본값이 있습니다.
+> `ResolveParameterValue` MSBuild를 사용 하는 경우에만 `T4ParameterValues`에서 데이터를 가져옵니다. Visual Studio를 사용 하 여 템플릿을 변환 하는 경우 매개 변수에 기본값이 있습니다.
 
 ## <a name="msbuild"></a>어셈블리 및 include 지시문에서 프로젝트 속성 사용
 

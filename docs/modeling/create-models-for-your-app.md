@@ -16,17 +16,17 @@ helpviewer_keywords:
 - diagrams - modeling, layer
 - software, designing
 - software, modeling
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95df70a3458c758fb886cbe2bc5d52d3192ba7cc
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: b7015583fef2323e3c53b8e786c9e8a529e0fab6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984437"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590529"
 ---
 # <a name="create-models-for-your-app"></a>앱용 모델 만들기
 
@@ -42,9 +42,9 @@ ms.locfileid: "72984437"
 |코드 맵<br /><br /> [솔루션 전체의 종속성 매핑](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [코드 맵 분석기를 사용하여 잠재적 문제 찾기](../modeling/find-potential-problems-using-code-map-analyzers.md)|기존 코드의 종속성 및 기타 관계|
 |코드에서 생성된 클래스 다이어그램<br /><br /> [클래스 다이어그램 사용(클래스 디자이너)](../ide/class-designer/designing-and-viewing-classes-and-types.md)|.NET 코드의 형식 및 해당 관계|
 
-## <a name="related-tasks"></a>관련 작업
+## <a name="related-tasks"></a>관련 태스크
 
-|**뒷부분**|**Task**|
+|**항목**|**Task**|
 |-|-|
 |[코드 시각화](../modeling/visualize-code.md)|익숙하지 않은 코드를 더 잘 이해할 수 있도록 코드 맵 및 종속성 다이어그램을 만듭니다.|
 |[사용자 요구 사항 모델링](../modeling/model-user-requirements.md)|모델을 사용하여 사용자 요구 사항을 분명히 설명하고 전달합니다.|

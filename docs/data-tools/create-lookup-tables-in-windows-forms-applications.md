@@ -6,17 +6,17 @@ helpviewer_keywords:
 - lookup tables
 - lookup tables, creating
 ms.assetid: 0edd5385-c381-4b17-9096-74e2778db9d5
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f7660eba181c0a08ea3736c36e84bc7c9a574e10
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9fe49ee90dba3edd0e2777817c4903c6101a1b47
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642250"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586772"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Windows Forms 애플리케이션에서 조회 테이블 만들기
 
@@ -24,11 +24,11 @@ ms.locfileid: "72642250"
 
 부모 테이블의 주 노드 ( [데이터 소스 창](add-new-data-sources.md#data-sources-window)에서)를 연결 된 자식 테이블의 열에 이미 바인딩되어 있는 폼의 컨트롤로 끌어 조회 테이블을 만들 수 있습니다.
 
-예를 들어 sales 데이터베이스에 `Orders` 테이블이 있다고 가정 합니다. @No__t_0 테이블의 각 레코드에는 주문이 배치 된 고객을 나타내는 `CustomerID` 포함 되어 있습니다. @No__t_0은 `Customers` 테이블의 고객 레코드를 가리키는 외래 키입니다. 이 시나리오에서는 **데이터 소스** 창에서 `Orders` 테이블을 확장 하 고 주 노드를 **자세히**로 설정 합니다. 그런 다음 <xref:System.Windows.Forms.ComboBox> (또는 조회 바인딩을 지 원하는 다른 컨트롤)를 사용 하도록 `CustomerID` 열을 설정 하 고 `Orders` 노드를 폼으로 끌어 옵니다. 마지막으로 `Customers` 노드를 관련 열에 바인딩된 컨트롤 (이 경우에는 <xref:System.Windows.Forms.ComboBox> `CustomerID` 열에 바인딩)로 끌어옵니다.
+예를 들어 sales 데이터베이스에 `Orders` 테이블이 있다고 가정 합니다. `Orders` 테이블의 각 레코드에는 주문이 배치 된 고객을 나타내는 `CustomerID`포함 되어 있습니다. `CustomerID`은 `Customers` 테이블의 고객 레코드를 가리키는 외래 키입니다. 이 시나리오에서는 **데이터 소스** 창에서 `Orders` 테이블을 확장 하 고 주 노드를 **자세히**로 설정 합니다. 그런 다음 <xref:System.Windows.Forms.ComboBox> (또는 조회 바인딩을 지 원하는 다른 컨트롤)를 사용 하도록 `CustomerID` 열을 설정 하 고 `Orders` 노드를 폼으로 끌어 옵니다. 마지막으로 `Customers` 노드를 관련 열에 바인딩된 컨트롤 (이 경우에는 <xref:System.Windows.Forms.ComboBox> `CustomerID` 열에 바인딩)로 끌어옵니다.
 
 ## <a name="to-databind-a-lookup-control"></a>조회 컨트롤을 바인딩하려면
 
-1. 프로젝트를 연 상태에서**다른 Windows**  > **데이터 원본** >  **보기** 를 선택 하 여 **데이터 소스** 창을 엽니다.
+1. 프로젝트를 연 상태에서 **다른 Windows** > **데이터 원본** > **보기** 를 선택 하 여 **데이터 소스** 창을 엽니다.
 
     > [!NOTE]
     > 조회 테이블을 사용 하려면 **데이터 소스** 창에서 두 개의 관련 테이블이 나 개체를 사용할 수 있어야 합니다. 자세한 내용은 [데이터 집합의 관계](relationships-in-datasets.md)를 참조 하세요.
@@ -44,7 +44,7 @@ ms.locfileid: "72642250"
 
 5. 주 자식 테이블 노드를 **데이터 소스** 창에서 폼으로 끌어 옵니다.
 
-     데이터 바인딩된 컨트롤 (설명 레이블 포함)과 도구 스트립 (<xref:System.Windows.Forms.BindingNavigator>)이 폼에 나타납니다. [데이터 집합](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource> 및 <xref:System.Windows.Forms.BindingNavigator> 구성 요소 트레이에 나타납니다.
+     데이터 바인딩된 컨트롤 (설명 레이블 포함)과 도구 스트립 (<xref:System.Windows.Forms.BindingNavigator>)이 폼에 나타납니다. [데이터 집합](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource>및 <xref:System.Windows.Forms.BindingNavigator> 구성 요소 트레이에 나타납니다.
 
 6. 이제 **데이터 소스** 창에서 조회 컨트롤 (<xref:System.Windows.Forms.ComboBox>)로 직접 주 부모 테이블 노드를 끌어 옵니다.
 

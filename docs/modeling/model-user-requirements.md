@@ -5,21 +5,21 @@ ms.topic: conceptual
 helpviewer_keywords:
 - requirements
 - stories
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68aa46b3dc07813b73921b8acb5970289c30aecc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0c09e45250ad95d50d5d2cd0ca2753a70bb95748
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658406"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590243"
 ---
 # <a name="model-user-requirements"></a>사용자 요구 사항 모델링
 
-Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수행하는 작업에 대한 다이어그램을 그려 사용자 요구 사항을 이해, 논의 및 전달할 수 있도록 도와줍니다. 요구 사항 모델은 각각 사용자 요구의 다른 측면에 중점을 두는 다이어그램 집합입니다. 비디오 데모를 보려면 다음을 참조 하세요. [비즈니스 도메인 모델링](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)
+Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수행하는 작업에 대한 다이어그램을 그려 사용자 요구 사항을 이해, 논의 및 전달할 수 있도록 도와줍니다. 요구 사항 모델은 각각 사용자 요구의 다른 측면에 중점을 두는 다이어그램 집합입니다. 비디오 데모는 [비즈니스 도메인 모델링](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)을 참조하세요.
 
 각 모델 형식을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)를 참조하세요.
 
@@ -60,7 +60,7 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
 
 비즈니스 규칙은 특정 사용 사례와 연결되지 않은 요구 사항이며 시스템 전체에서 관찰되어야 합니다.
 
-대부분의 비즈니스 규칙은 개념적 클래스 간의 관계에 대한 제약 조건입니다. 이러한 *정적 비즈니스 규칙* 을 개념적 클래스 다이어그램의 관련 클래스와 연결 된 주석으로 작성할 수 있습니다. 예:
+대부분의 비즈니스 규칙은 개념적 클래스 간의 관계에 대한 제약 조건입니다. 이러한 *정적 비즈니스 규칙* 을 개념적 클래스 다이어그램의 관련 클래스와 연결 된 주석으로 작성할 수 있습니다. 예를 들면 다음과 같습니다.:
 
 ![Order 클래스에 연결된 주석의 규칙](../modeling/media/uml_reqmcd2.png)
 
@@ -72,19 +72,19 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
 
 자세한 내용은 다음 항목을 참조하세요.
 
-|자세한 정보|Read|
+|원하는 내용|읽기|
 |-|-|
 |비즈니스 규칙을 준수하는 코드를 개발하는 방법|[앱의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)|
 
 ## <a name="QoSRequirements"></a> Describing Quality of Service Requirements
 
-여러 범주의 서비스 품질 요구 사항이 있습니다. 이러한 형식은 다음과 같습니다.
+여러 범주의 서비스 품질 요구 사항이 있습니다. 이름은 다음과 같습니다.
 
 - 성능
 
 - 보안
 
-- 유용성
+- 사용 편의성
 
 - 안정성
 
@@ -96,7 +96,7 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
 
 서비스 품질 요구 사항을 준수 하는 코드를 개발 하는 방법을 알아보려면 [앱 아키텍처 모델링](../modeling/model-your-app-s-architecture.md) 을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [개발 프로세스에서 모델 사용](../modeling/use-models-in-your-development-process.md)
 - [앱의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)

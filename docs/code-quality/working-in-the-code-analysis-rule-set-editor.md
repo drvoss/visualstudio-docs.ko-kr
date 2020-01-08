@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e23bf15796a8ff581a8a017687f90084c338e74
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8ea828cd0cba0bdab60a1f7cf4f74dbf20bd01d2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649006"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587136"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>코드 분석 규칙 집합 편집기 사용
 
@@ -26,10 +26,10 @@ ms.locfileid: "72649006"
 |작업 (심각도)|설명|
 |-|-|
 |경고|**오류 목록** 및 빌드 시에 경고를 생성 합니다.|
-|Error|는 **오류 목록** 및 빌드 시에도 오류를 생성 합니다.|
+|오류|는 **오류 목록** 및 빌드 시에도 오류를 생성 합니다.|
 |Info|**오류 목록**에서 메시지를 생성 합니다.|
 |Hidden|위반은 사용자에 게 표시 되지 않습니다. 그러나 IDE에 위반에 대 한 알림이 표시 됩니다.|
-|없음|규칙이 표시 되지 않습니다. 규칙이 규칙 집합에서 제거 된 것과 동일한 동작입니다.|
+|None|규칙이 표시 되지 않습니다. 규칙이 규칙 집합에서 제거 된 것과 동일한 동작입니다.|
 
 사용자가 지정한 규칙 집합 필드를 기준으로 규칙을 그룹화 하는 트리 구조의 규칙이 편집기에 표시 됩니다. 규칙 집합에서 규칙을 추가 하거나 제거 하려면 다음 단계 중 하나 이상을 수행 합니다.
 
@@ -52,7 +52,7 @@ ms.locfileid: "72649006"
 |---------------------|-----------------|
 |**모두 확장**|모든 그룹의 규칙을 표시 합니다.|
 |**모두 축소**|모든 그룹의 규칙을 숨깁니다.|
-|**Group By**|규칙을 그룹화 하는 기준이 되는 필드를 지정 합니다. **@No__t_1None >** 를 클릭 하 여 그룹 없이 규칙을 표시 합니다.|
+|**Group By**|규칙을 그룹화 하는 기준이 되는 필드를 지정 합니다. **\<없음 >** 을 클릭 하 여 그룹 없이 규칙을 표시 합니다.|
 |**열 옵션**|표시할 규칙 필드를 지정 합니다.|
 |**현재 솔루션에 적용 되지 않는 규칙 숨기기**|솔루션과 동일한 대상 형식이 아닌 규칙을 표시 하거나 숨깁니다.|
 |**코드 분석 오류를 생성할 수 있는 규칙 표시**|오류 동작이 할당 된 규칙을 표시 하거나 숨깁니다.|
@@ -71,8 +71,8 @@ ms.locfileid: "72649006"
 |-----------|-----------------|
 |**ID**|규칙의 식별자입니다.|
 |**범주**|규칙 집합의 멤버 자격 외에도 코드 분석 규칙은 범주별로 그룹화 됩니다. 자세한 내용은 [코드 분석 경고](../code-quality/code-analysis-for-managed-code-warnings.md)를 참조 하세요.|
-|**이름**|규칙의 제목입니다.|
-|**Namespace**|규칙의 네임 스페이스입니다.|
+|**Name**|규칙의 제목입니다.|
+|**네임스페이스**|규칙의 네임 스페이스입니다.|
 |**대상 유형**|기본, 관리 또는 데이터베이스 코드에 대 한 규칙 인지 여부를 나타냅니다.|
 |**작업**|코드 분석 실행에서 규칙을 위반할 때 수행 되는 동작입니다. **작업** 필드를 편집할 수 있습니다.|
 |**원본 규칙 집합**|규칙을 포함 하는 규칙 집합입니다.|

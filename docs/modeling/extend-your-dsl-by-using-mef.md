@@ -2,17 +2,17 @@
 title: MEF를 사용하여 DSL 확장
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f42186915ade2a518506f5f6ccc55b3599a3ba99
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b8e4898ba6c87f25b38a6c3e42032412d69d8ece
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657509"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596608"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>MEF를 사용하여 DSL 확장
 
@@ -107,7 +107,7 @@ MEF에 대 한 자세한 내용은 [Managed Extensibility Framework (mef)](/dotn
 
 5. DSL 탐색기에서 **Editor\validation**을 선택 합니다.
 
-6. 속성 창에서 **사용 하** 는 속성 중 하나 이상이 `true` 인지 확인 합니다.
+6. 속성 창에서 **사용 하** 는 속성 중 하나 이상이 `true`인지 확인 합니다.
 
 7. **솔루션 탐색기** 도구 모음에서 **모든 템플릿 변환**을 클릭 합니다.
 
@@ -129,17 +129,17 @@ MEF에 대 한 자세한 내용은 [Managed Extensibility Framework (mef)](/dotn
 
    - 이 어셈블리의 이름은 일반적으로 "로 끝납니다. Dsl .dll ".
 
-   - DSL 프로젝트에 액세스할 수 있는 경우 **\\bin \\ 디렉터리 dsl** 에서 어셈블리 파일을 찾을 수 있습니다 \*
+   - DSL 프로젝트에 액세스할 수 있는 경우 **\\bin\\** 디렉터리에서 어셈블리 파일을 찾을 수 있습니다 \*
 
    - DSL VSIX 파일에 액세스할 수 있는 경우 VSIX 파일의 파일 이름 확장명을 ".zip"으로 변경 하 여 어셈블리를 찾을 수 있습니다. .Zip 파일의 압축을 해제 합니다.
 
 3. 다음 .NET 어셈블리에 대 한 참조를 추가 합니다.
 
-   - VisualStudio. d a.
+   - Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
 
-   - VisualStudio. d l l.
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
 
-   - VisualStudio. d a.
+   - Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
 
    - System.ComponentModel.Composition.dll
 
@@ -157,7 +157,7 @@ MEF에 대 한 자세한 내용은 [Managed Extensibility Framework (mef)](/dotn
 
    1. Source.extension.vsixmanifest에서 **참조 추가** 를 클릭 **합니다.**
 
-   2. 대화 상자에서 **페이로드 추가** 를 클릭 한 다음 DSL의 VSIX 파일을 찾습니다. VSIX 파일은 DSL 솔루션의 **Dslpackage \\bin \\ \*** 에 빌드됩니다.
+   2. 대화 상자에서 **페이로드 추가** 를 클릭 한 다음 DSL의 VSIX 파일을 찾습니다. VSIX 파일은 DSL 솔루션의 **Dslpackage\\bin\\\*** 에 빌드됩니다.
 
        이를 통해 사용자는 DSL 및 확장을 동시에 설치할 수 있습니다. 사용자가 이미 DSL을 설치한 경우에는 확장만 설치 됩니다.
 
@@ -175,7 +175,7 @@ MEF에 대 한 자세한 내용은 [Managed Extensibility Framework (mef)](/dotn
 
 ### <a name="menu-commands"></a>메뉴 명령
 
-메뉴 명령을 작성 하려면 <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension>를 구현 하는 클래스를 정의 하 고 dsl에 정의 된 특성을 사용 하 여 클래스에 *접두사 `CommandExtension` 명명* 합니다. 둘 이상의 메뉴 명령 클래스를 작성할 수 있습니다.
+메뉴 명령을 작성 하려면 <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension>를 구현 하는 클래스를 정의 하 고 dsl에 정의 된 특성을 사용 하 여 클래스에 *접두사`CommandExtension`명명* 합니다. 둘 이상의 메뉴 명령 클래스를 작성할 수 있습니다.
 
 `QueryStatus()`는 사용자가 다이어그램을 마우스 오른쪽 단추로 클릭할 때마다 호출 됩니다. 현재 선택 영역을 검사 하 고 `command.Enabled` 설정 하 여 명령이 적용 되는 시기를 지정 해야 합니다.
 

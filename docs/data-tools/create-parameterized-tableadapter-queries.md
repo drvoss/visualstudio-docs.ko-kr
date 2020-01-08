@@ -13,17 +13,17 @@ helpviewer_keywords:
 - TableAdapters, searching data
 - queries [Visual Studio], TableAdapters
 ms.assetid: 104d1d19-b5a9-4071-b81e-1b3af08e9c7b
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0926558c4d6e94032e2af2c75189f287da8d4811
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 98e1ee8a279933cc2cc59abe70b6ea8af4850676
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642154"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586746"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>매개 변수가 있는 TableAdapter 쿼리 만들기
 
@@ -40,7 +40,7 @@ ms.locfileid: "72642154"
 
 - 원하는 매개 변수가 포함된 WHERE 절을 SQL 문에 추가하여 새 TableAdapter를 만듭니다. 자세한 내용은 [Tableadapter 만들기 및 구성](../data-tools/create-and-configure-tableadapters.md)을 참조 하세요.
 
-     또는
+     -또는-
 
 - 원하는 매개 변수가 포함된 WHERE 절을 SQL 문에 추가하여 기존 TableAdapter에 쿼리를 추가합니다.
 
@@ -65,7 +65,7 @@ ms.locfileid: "72642154"
 
 4. 새 쿼리를 만드는 경우 **새 쿼리 이름** 상자에 이름을 입력합니다.
 
-     또는
+     -또는-
 
      **기존 쿼리 이름** 상자에서 쿼리를 선택합니다.
 

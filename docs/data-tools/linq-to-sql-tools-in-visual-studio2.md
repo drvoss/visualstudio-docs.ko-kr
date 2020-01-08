@@ -3,17 +3,17 @@ title: O/R 디자이너 개요
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 45e477c0-5c6b-41f9-b2d0-2808fb4f6537
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c02dbc42d629385671403de7131b27a449313591
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c1d60f2fd2fdaa239ea9528caa6d39424ad2b85c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648290"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586395"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Visual Studio의 LINQ to SQL 도구
 
@@ -27,7 +27,7 @@ Visual Studio에서 **개체 관계형 디자이너** (**O/R 디자이너**)를 
 
 ## <a name="open-the-or-designer"></a>O/R 디자이너 열기
 
-LINQ to SQL 엔터티 모델을 프로젝트에 추가 하려면 프로젝트  > **새 항목 추가** **를 선택한 다음** 프로젝트 항목 목록에서 **LINQ to SQL 클래스** 를 선택 합니다.
+LINQ to SQL 엔터티 모델을 프로젝트에 추가 하려면 프로젝트 > **새 항목 추가** **를 선택한 다음** 프로젝트 항목 목록에서 **LINQ to SQL 클래스** 를 선택 합니다.
 
 ![LINQ to SQL 클래스](../data-tools/media/raddata-linq-to-sql-classes.png)
 
@@ -44,7 +44,7 @@ Visual Studio는 *.dbml* 파일을 만들어 솔루션에 추가 합니다. XML 
 
 ## <a name="create-and-configure-the-datacontext"></a>DataContext 만들기 및 구성
 
-프로젝트에 **LINQ to SQL 클래스** 항목을 추가 하 고 **O/R 디자이너**를 연 후 빈 디자인 화면은 구성 가능한 빈 <xref:System.Data.Linq.DataContext>를 나타냅니다. 따라서 <xref:System.Data.Linq.DataContext>는 디자인 화면에 놓여진 첫째 항목에서 제공된 연결 정보를 사용하여 구성됩니다. 따라서 <xref:System.Data.Linq.DataContext>는 디자인 화면에 놓여진 첫째 항목의 연결 정보를 사용하여 구성됩니다. @No__t_0 클래스에 대 한 자세한 내용은 [DataContext 메서드 (O/R 디자이너)](../data-tools/datacontext-methods-o-r-designer.md)를 참조 하세요.
+프로젝트에 **LINQ to SQL 클래스** 항목을 추가 하 고 **O/R 디자이너**를 연 후 빈 디자인 화면은 구성 가능한 빈 <xref:System.Data.Linq.DataContext>를 나타냅니다. 따라서 <xref:System.Data.Linq.DataContext>는 디자인 화면에 놓여진 첫째 항목에서 제공된 연결 정보를 사용하여 구성됩니다. 따라서 <xref:System.Data.Linq.DataContext>는 디자인 화면에 놓여진 첫째 항목의 연결 정보를 사용하여 구성됩니다. <xref:System.Data.Linq.DataContext> 클래스에 대 한 자세한 내용은 [DataContext 메서드 (O/R 디자이너)](../data-tools/datacontext-methods-o-r-designer.md)를 참조 하세요.
 
 ## <a name="create-entity-classes-that-map-to-database-tables-and-views"></a>데이터베이스 테이블 및 뷰에 매핑되는 엔터티 클래스 만들기
 

@@ -10,22 +10,22 @@ helpviewer_keywords:
 - performance, warnings
 - managed code analysis warnings, performance warnings
 ms.assetid: e014ac3a-02e6-46d9-942c-3491dd63782f
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ebbe15bdcef27b7b19474b2c42f0b62741fd53a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 42f188901db72378acfd1dee8e22c9a2261b8eb9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649150"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587253"
 ---
 # <a name="performance-warnings"></a>성능 경고
 성능 경고는 고성능 라이브러리 및 응용 프로그램을 지원 합니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 
 | 규칙 | 설명 |
 | - | - |
@@ -39,7 +39,7 @@ ms.locfileid: "72649150"
 | [CA1811: 호출되지 않는 전용 코드를 사용하지 마십시오.](../code-quality/ca1811.md) | Private 또는 internal (어셈블리 수준) 멤버는 어셈블리에 호출자가 없으며 공용 언어 런타임에서 호출 되지 않으며 대리자에 의해 호출 되지 않습니다. |
 | [CA1812: 인스턴스화되지 않은 내부 클래스를 사용하지 마십시오.](../code-quality/ca1812.md) | 어셈블리 수준 형식의 인스턴스가 어셈블리에서 코드에 의해 만들어지지 않습니다. |
 | [CA1813: 봉인되지 않은 특성을 사용하지 마십시오.](../code-quality/ca1813.md) | .NET에서는 사용자 지정 특성을 검색 하는 메서드를 제공 합니다. 기본적으로 이러한 메서드는 특성 상속 계층을 검색합니다. 특성을 봉인하면 상속 계층을 검색하지 않으므로 성능이 향상될 수 있습니다. |
-| [CA1814: 다차원 배열보다 가변 배열을 사용하십시오.](../code-quality/ca1814.md) | 가변 배열의 요소에는 배열이 사용됩니다. 요소를 구성 하는 배열은 크기가 다를 수 있으며,이로 인해 일부 데이터 집합에 대해 공간을 낭비 하 게 될 수 있습니다. |
+| [CA1814: 다차원 배열보다 가변 배열을 사용하십시오.](../code-quality/ca1814.md) | 가변 배열이란 해당 요소가 배열인 배열입니다. 요소를 구성 하는 배열은 크기가 다를 수 있으며,이로 인해 일부 데이터 집합에 대해 공간을 낭비 하 게 될 수 있습니다. |
 | [CA1815: 값 형식에서 Equals 또는 같음 연산자를 재정의하십시오.](../code-quality/ca1815.md) | 값 형식의 경우 Equals의 상속된 구현에서 Reflection 라이브러리를 사용하며 모든 필드의 내용을 비교합니다. Reflection에는 많은 계산이 요구되며 모든 필드의 일치 여부를 비교하는 것이 불필요할 수 있습니다. 사용자가 인스턴스를 비교 또는 정렬하거나 인스턴스를 해시 테이블 키로 사용할 것으로 예측되는 경우에는 값 형식에서 Equals를 구현해야 합니다. |
 | [CA1816: GC.SuppressFinalize를 올바르게 호출하십시오.](../code-quality/ca1816.md) | Dispose의 구현인 메서드는 GC를 호출 하지 않습니다. Gc.suppressfinalize 또는 Dispose 호출 GC의 구현이 아닌 메서드입니다. Gc.suppressfinalize 또는 메서드는 GC를 호출 합니다. Gc.suppressfinalize 하 고이 이외의 항목을 전달 합니다 ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). |
 | [CA1819: 속성은 배열을 반환해서는 안 됩니다.](../code-quality/ca1819.md) | 속성이 읽기 전용 이더라도 속성에 의해 반환 되는 배열은 쓰기 방지 되지 않습니다. 배열을 무단으로 변경하지 못하도록 하려면 속성에서 배열의 복사본을 반환해야 합니다. 일반적으로 사용자는 이러한 속성을 호출할 경우 성능에 부정적인 영향을 준다는 것을 인식하지 못합니다. |

@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c976f14a4250741d166c189c53a1b8cae8ea891a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2f0e3666c313c55df605cd7b79199827765f40f3
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736700"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404346"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>오류: 웹 서버에서 디버깅을 시작할 수 없습니다.
 
@@ -41,7 +41,7 @@ ms.locfileid: "72736700"
 
 ## <a name="specificerrors"></a>자세한 오류 메시지는 무엇입니까?
 
-@No__t_0 메시지는 일반 메시지입니다. 일반적으로 보다 구체적인 메시지는 오류 문자열에 포함 되며 문제의 원인을 파악 하는 데 도움이 될 수 있으며 보다 정확한 수정 사항을 검색 하는 데 도움이 될 수 있습니다. 다음은 기본 오류 메시지에 추가 되는 몇 가지 일반적인 오류 메시지입니다.
+`Unable to start debugging on the Web server` 메시지는 일반 메시지입니다. 일반적으로 보다 구체적인 메시지는 오류 문자열에 포함 되며 문제의 원인을 파악 하는 데 도움이 될 수 있으며 보다 정확한 수정 사항을 검색 하는 데 도움이 될 수 있습니다. 다음은 기본 오류 메시지에 추가 되는 몇 가지 일반적인 오류 메시지입니다.
 
 - [IIS는 시작 url과 일치 하는 웹 사이트를 나열 하지 않습니다.](#IISlist)
 - [웹 서버가 제대로 구성되어 있지 않습니다.](#web_server_config)
@@ -52,6 +52,7 @@ ms.locfileid: "72736700"
 - [ASP.NET 디버깅을 시작할 수 없습니다.](#aspnet)
 - [디버거가 원격 컴퓨터에 연결할 수 없습니다.](#cannot_connect)
 - [일반적인 구성 오류는 도움말을 참조하십시오. 디버거 외부에서 웹 페이지를 실행 합니다. 추가 정보가 제공 될 수 있습니다.](#see_help)
+- [지원 되지 않는 작업입니다. 알 수 없는 오류: *오류 번호*](#operation_not_supported)
 
 ## <a name="IISlist"></a>IIS는 시작 url과 일치 하는 웹 사이트를 나열 하지 않습니다.
 
@@ -76,7 +77,7 @@ ms.locfileid: "72736700"
 ## <a name="msvsmon"></a> Microsoft Visual Studio 원격 디버깅 모니터(msvsmon.exe)가 원격 컴퓨터에서 실행 중인 것 같지 않습니다.
 
 - 원격 컴퓨터에서 디버깅 하는 경우 [원격 디버거를 설치 하 고 실행](../debugger/remote-debugging.md)중인지 확인 합니다. 메시지가 방화벽을 언급 하는 경우, 특히 타사 방화벽을 사용 하는 경우 [방화벽의 올바른 포트가](../debugger/remote-debugger-port-assignments.md) 열려 있는지 확인 합니다.
-- HOSTS 파일을 사용 하는 경우 올바르게 구성 되어 있는지 확인 합니다. 예를 들어 **F5 키** 를 사용 하 여 디버깅 하는 경우 ( **프로세스에 연결 하**는 대신) 호스트 파일에 프로젝트 속성, **속성 > 웹 > 서버** 또는 **> 속성과**동일한 프로젝트 URL을 포함 해야 합니다. 프로젝트 형식입니다.
+- HOSTS 파일을 사용 하는 경우 올바르게 구성 되어 있는지 확인 합니다. 예를 들어 **F5 키** 를 사용 하 여 디버깅 하는 경우 ( **프로세스에 연결 하**는 대신) 호스트 파일은 프로젝트 형식에 따라 프로젝트 속성, **속성 > 웹 > 서버** 또는 **> 속성과**동일한 프로젝트 URL을 포함 해야 합니다.
 
 ## <a name="server_error"></a>원격 서버에서 오류를 반환 했습니다.
 
@@ -106,6 +107,10 @@ ms.locfileid: "72736700"
 
 - 이 작업이 작동 하지 않거나 원격으로 디버깅 하는 경우에는 [IIS 구성 확인](#vxtbshttpservererrorsthingstocheck)의 단계를 따르세요.
 
+## <a name="operation_not_supported"></a>지원 되지 않는 작업입니다. 알 수 없는 오류: *오류 번호*
+
+URL 다시 쓰기를 수행 하는 경우 URL을 다시 작성 하지 않고 기본 web.config를 테스트 합니다. [IIS 구성 확인](#vxtbshttpservererrorsthingstocheck)에서 URL 다시 쓰기 모듈에 대 한 **참고** 를 참조 하세요.
+
 ## <a name="vxtbshttpservererrorsthingstocheck"></a>IIS 구성 확인
 
 여기에 설명 된 단계를 수행 하 여 문제를 해결 한 후 디버깅을 다시 시도 하기 전에 IIS를 다시 설정 해야 할 수도 있습니다. 관리자 권한 명령 프롬프트를 열고 `iisreset`를 입력 하 여이 작업을 수행할 수 있습니다.
@@ -125,7 +130,7 @@ ms.locfileid: "72736700"
 
 * 웹 응용 프로그램 폴더에 올바른 권한이 있는지 확인 합니다.
 
-    [응용 프로그램 풀](/iis/manage/configuring-security/application-pool-identities) 에 연결 된 IIS_IUSRS, IUSR 또는 특정 사용자에 게 웹 응용 프로그램 폴더에 대 한 읽기 및 실행 권한이 있는지 확인 합니다. 문제를 해결 하 고 응용 프로그램 풀을 다시 시작 합니다.
+    웹 응용 프로그램 폴더에 대 한 읽기 및 실행 권한과 [응용 프로그램 풀](/iis/manage/configuring-security/application-pool-identities) 에 연결 된 특정 사용자를 IIS_IUSRS, IUSR 또는 특정 사용자에 게 제공 해야 합니다. 문제를 해결 하 고 응용 프로그램 풀을 다시 시작 합니다.
 
 * IIS에 올바른 버전의 ASP.NET가 설치 되어 있는지 확인 합니다.
 

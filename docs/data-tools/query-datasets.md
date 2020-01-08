@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 7b1a91cf-8b5a-4fc0-ac36-0dc2d336fa1b
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 056d88790cda6e763ebd0531d61f7007d16d82eb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4080866de58e17c5e11ed01d61740c2f83aed9a7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648242"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586343"
 ---
 # <a name="query-datasets"></a>데이터 세트 쿼리
 데이터 집합에서 특정 레코드를 검색 하려면 DataTable에서 `FindBy` 메서드를 사용 하 고, 테이블의 Rows 컬렉션을 반복 하는 고유한 foreach 문을 작성 하거나 [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)를 사용 합니다.
@@ -35,14 +35,14 @@ ms.locfileid: "72648242"
 
 - 행을 찾으려면 테이블의 기본 키를 사용 하는 강력한 형식의 `FindBy` 메서드를 호출 합니다.
 
-     다음 예에서는 `CustomerID` 열이 `Customers` 테이블의 기본 키입니다. 즉, 생성 된 `FindBy` 메서드가 `FindByCustomerID` 됩니다. 이 예제에서는 생성 된 `FindBy` 메서드를 사용 하 여 변수에 특정 <xref:System.Data.DataRow>를 할당 하는 방법을 보여 줍니다.
+     다음 예에서는 `CustomerID` 열이 `Customers` 테이블의 기본 키입니다. 즉, 생성 된 `FindBy` 메서드가 `FindByCustomerID`됩니다. 이 예제에서는 생성 된 `FindBy` 메서드를 사용 하 여 변수에 특정 <xref:System.Data.DataRow>를 할당 하는 방법을 보여 줍니다.
 
      [!code-csharp[VbRaddataEditing#18](../data-tools/codesnippet/CSharp/query-datasets_1.cs)]
      [!code-vb[VbRaddataEditing#18](../data-tools/codesnippet/VisualBasic/query-datasets_1.vb)]
 
 #### <a name="to-find-a-row-in-an-untyped-dataset-with-a-primary-key-value"></a>기본 키 값을 사용 하 여 형식화 되지 않은 데이터 집합에서 행을 찾으려면
 
-- @No__t_1 컬렉션의 <xref:System.Data.DataRowCollection.Find%2A> 메서드를 호출 하 여 기본 키를 매개 변수로 전달 합니다.
+- <xref:System.Data.DataRowCollection> 컬렉션의 <xref:System.Data.DataRowCollection.Find%2A> 메서드를 호출 하 여 기본 키를 매개 변수로 전달 합니다.
 
      다음 예제에서는 `foundRow` 라는 새 행을 선언 하 고이를 <xref:System.Data.DataRowCollection.Find%2A> 메서드의 반환 값에 할당 하는 방법을 보여 줍니다. 기본 키가 있는 경우에는 열 인덱스 1의 내용이 메시지 상자에 표시 됩니다.
 
@@ -53,7 +53,7 @@ ms.locfileid: "72648242"
 
 #### <a name="to-find-rows-based-on-the-values-in-any-column"></a>열의 값을 기준으로 행을 찾으려면
 
-- 데이터 테이블은 <xref:System.Data.DataTable.Select%2A> 메서드에 전달 된 식에 따라 <xref:System.Data.DataRow>s 배열을 반환 하는 <xref:System.Data.DataTable.Select%2A> 메서드를 사용 하 여 생성 됩니다. 유효한 식을 만드는 방법에 대 한 자세한 내용은 <xref:System.Data.DataColumn.Expression%2A> 속성에 대 한 페이지의 "식 구문" 섹션을 참조 하세요.
+- 데이터 테이블은 <xref:System.Data.DataTable.Select%2A> 메서드에 전달 된 식을 기반으로 <xref:System.Data.DataRow>의 배열을 반환 하는 <xref:System.Data.DataTable.Select%2A> 메서드를 사용 하 여 생성 됩니다. 유효한 식을 만드는 방법에 대 한 자세한 내용은 <xref:System.Data.DataColumn.Expression%2A> 속성에 대 한 페이지의 "식 구문" 섹션을 참조 하세요.
 
      다음 예제에서는 <xref:System.Data.DataTable>의 <xref:System.Data.DataTable.Select%2A> 메서드를 사용 하 여 특정 행을 찾는 방법을 보여 줍니다.
 
@@ -63,7 +63,7 @@ ms.locfileid: "72648242"
 ## <a name="access-related-records"></a>관련 레코드 액세스
 데이터 집합의 테이블이 관련 된 경우 <xref:System.Data.DataRelation> 개체를 사용 하 여 다른 테이블에서 관련 레코드를 사용할 수 있습니다. 예를 들어 `Customers` 및 `Orders` 테이블을 포함 하는 데이터 집합을 사용할 수 있습니다.
 
-@No__t_0 개체를 사용 하 여 부모 테이블에서 <xref:System.Data.DataRow>의 <xref:System.Data.DataRow.GetChildRows%2A> 메서드를 호출 하 여 관련 레코드를 찾을 수 있습니다. 이 메서드는 관련 된 자식 레코드의 배열을 반환 합니다. 또는 자식 테이블에서 <xref:System.Data.DataRow>의 <xref:System.Data.DataRow.GetParentRow%2A> 메서드를 호출할 수 있습니다. 이 메서드는 부모 테이블에서 단일 <xref:System.Data.DataRow> 반환 합니다.
+<xref:System.Data.DataRelation> 개체를 사용 하 여 부모 테이블에서 <xref:System.Data.DataRow>의 <xref:System.Data.DataRow.GetChildRows%2A> 메서드를 호출 하 여 관련 레코드를 찾을 수 있습니다. 이 메서드는 관련 된 자식 레코드의 배열을 반환 합니다. 또는 자식 테이블에서 <xref:System.Data.DataRow>의 <xref:System.Data.DataRow.GetParentRow%2A> 메서드를 호출할 수 있습니다. 이 메서드는 부모 테이블에서 단일 <xref:System.Data.DataRow> 반환 합니다.
 
 이 페이지에서는 형식화 된 데이터 집합을 사용 하는 예제를 제공 합니다. 형식화 되지 않은 데이터 집합에서 관계를 탐색 하는 방법은 [DataRelations 탐색](/dotnet/framework/data/adonet/dataset-datatable-dataview/navigating-datarelations)을 참조 하세요.
 
@@ -72,11 +72,11 @@ ms.locfileid: "72648242"
 
 다음 코드 예제에서는 형식화 된 데이터 집합에서 위쪽 및 아래쪽 관계를 탐색 하는 방법을 보여 줍니다. 이 코드 예제에서는 형식화 된 <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) 및 생성 된 FindBy*PrimaryKey* (`FindByCustomerID`) 메서드를 사용 하 여 원하는 행을 찾고 관련 레코드를 반환 합니다. 예제는 다음을 수행 하는 경우에만 올바르게 컴파일 및 실행 됩니다.
 
-- @No__t_1 테이블이 있는 `NorthwindDataSet` 이라는 데이터 집합의 인스턴스입니다.
+- `Customers` 테이블이 있는 `NorthwindDataSet` 이라는 데이터 집합의 인스턴스입니다.
 
-- @No__t_0 테이블입니다.
+- `Orders` 테이블입니다.
 
-- 두 테이블 `FK_Orders_Customers`relating 이라는 관계입니다.
+- 두 테이블을 관련 `FK_Orders_Customers`이라는 관계입니다.
 
 또한 반환 될 레코드에 대 한 데이터를 두 테이블에 채워야 합니다.
 
@@ -94,6 +94,6 @@ ms.locfileid: "72648242"
      [!code-csharp[VbRaddataDatasets#7](../data-tools/codesnippet/CSharp/query-datasets_5.cs)]
      [!code-vb[VbRaddataDatasets#7](../data-tools/codesnippet/VisualBasic/query-datasets_5.vb)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 데이터 세트 도구](../data-tools/dataset-tools-in-visual-studio.md)

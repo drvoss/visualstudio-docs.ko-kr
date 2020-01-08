@@ -6,17 +6,17 @@ helpviewer_keywords:
 - text templates, syntax
 - text templates, guide
 - text templates, functions that generate text
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df653dbd449429b6995c987328a401866751fd5e
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 1990377bffe0c663a70520c07bd3ab60b91f8bbd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981244"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593488"
 ---
 # <a name="writing-a-t4-text-template"></a>T4 텍스트 템플릿 쓰기
 텍스트 템플릿은 해당 템플릿에서 생성될 텍스트를 포함합니다. 예를 들어 웹 페이지를 만드는 템플릿에는 "\<html > ..."가 포함 됩니다. 및 HTML 페이지의 기타 모든 표준 부분입니다. 템플릿에 삽입 된 *제어 블록*은 프로그램 코드의 조각입니다. 제어 블록은 경우에 따라 다른 값을 제공하여 텍스트 부분을 조건부로/반복 적용할 수 있도록 합니다.
@@ -155,7 +155,7 @@ private int Square(int i)
  제어 블록에 대 한 자세한 내용은 [텍스트 템플릿 제어 블록](../modeling/text-template-control-blocks.md)을 참조 하세요.
 
 ### <a name="class-feature-blocks-can-contain-text-blocks"></a>텍스트 블록을 포함할 수 있는 클래스 기능 블록
- 텍스트를 생성하는 메서드를 작성할 수 있습니다. 예를 들면,
+ 텍스트를 생성하는 메서드를 작성할 수 있습니다. 예를 들면 다음과 같습니다.:
 
 ```
 List of Squares:
@@ -178,14 +178,14 @@ private void WriteSquareLine(int i)
 
 ## <a name="using-external-definitions"></a>외부 정의 사용
 
-### <a name="assemblies"></a>어셈블리
+### <a name="assemblies"></a>Assemblies
  템플릿의 코드 블록은 System.dll 등 가장 흔히 사용되는 .NET 어셈블리에 대해 정의되는 형식을 사용할 수 있습니다. 또한 기타 .NET 어셈블리나 고유한 어셈블리를 참조할 수도 있습니다. 다음과 같이 어셈블리의 경로 이름 또는 강력한 이름을 제공할 수 있습니다.
 
 ```
 <#@ assembly name="System.Xml" #>
 ```
 
- 절대 경로 이름을 사용하거나 경로 이름에 표준 매크로 이름을 사용해야 합니다. 예를 들면,
+ 절대 경로 이름을 사용하거나 경로 이름에 표준 매크로 이름을 사용해야 합니다. 예를 들면 다음과 같습니다.:
 
 ```
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>
@@ -238,7 +238,7 @@ private void WriteSquareLine(int i)
 
  **탐색 가능한 모델로 파일을 로드**합니다. 즉, 텍스트 템플릿 코드가 탐색할 수 있는 모델로 데이터를 읽는 보다 효율적인 방식을 사용할 수 있습니다. 예를 들어 XML 파일을 로드한 다음 XPath 식을 사용하여 탐색할 수 있습니다. 또한 [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) 를 사용 하 여 XML 데이터를 읽을 수 있는 클래스 집합을 만들 수 있습니다.
 
- **다이어그램 또는 폼에서 모델 파일을 편집 합니다.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]에서는 모델을 다이어그램 또는 Windows form으로 편집할 수 있는 도구를 제공 합니다. 그러면 생성된 애플리케이션의 사용자와 모델에 대해 보다 쉽게 논의할 수 있습니다. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]에서는 모델 구조를 반영하는 강력한 형식의 클래스 집합도 만듭니다. 자세한 내용은 [도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)을 참조 하세요.
+ **다이어그램 또는 폼에서 모델 파일을 편집 합니다.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]에서는 모델을 다이어그램 또는 Windows form으로 편집할 수 있는 도구를 제공 합니다. 그러면 생성된 애플리케이션의 사용자와 모델에 대해 보다 쉽게 논의할 수 있습니다. 또한 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]은 모델의 구조를 반영 하는 강력한 형식의 클래스 집합을 만듭니다. 자세한 내용은 [도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)을 참조 하세요.
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>디자인 타임 템플릿의 상대 파일 경로
  [디자인 타임 텍스트 템플릿에서](../modeling/design-time-code-generation-by-using-t4-text-templates.md)텍스트 템플릿에 상대적인 위치에 있는 파일을 참조 하려면 `this.Host.ResolvePath()`을 사용 합니다. 또한 `hostspecific="true"` 지시문에서 `template`도 설정해야 합니다.

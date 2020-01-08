@@ -5,23 +5,23 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, API
 - text templates, custom hosts
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3222a7bdf8e843a915d0ed0fb72f58ff4a89dca0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8e35c279f397f1228c17fb6a41a18a2fe583ab88
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654008"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589736"
 ---
 # <a name="customize-t4-text-transformation"></a>T4 텍스트 변환 사용자 지정
 
-텍스트 템플릿은 변환 프로세스를 통해 프로그램 코드나 다른 텍스트 파일을 생성할 수 있도록 하는 Visual Studio의 기능입니다. @No__t_0를 사용 하 여 텍스트 템플릿 지시문 프로세서 또는 텍스트 템플릿 호스트를 사용자 지정 하 여 기본 템플릿 변환 프로세스를 확장할 수 있습니다.
+텍스트 템플릿은 변환 프로세스를 통해 프로그램 코드나 다른 텍스트 파일을 생성할 수 있도록 하는 Visual Studio의 기능입니다. [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]를 사용 하 여 텍스트 템플릿 지시문 프로세서 또는 텍스트 템플릿 호스트를 사용자 지정 하 여 기본 템플릿 변환 프로세스를 확장할 수 있습니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 
  [텍스트 템플릿 변환 프로세스](../modeling/the-text-template-transformation-process.md) 텍스트 변환의 작동 방식에 대해 설명 하 고 템플릿 호스트 및 지시문 프로세서의 역할에 대해 설명 합니다.
 
@@ -33,6 +33,6 @@ ms.locfileid: "72654008"
 
  Visual Studio 확장을 작성 하는 경우 고유 호스트를 작성 하는 대신 기존 텍스트 변환 서비스를 사용 하는 것이 좋습니다. 자세한 내용은 [VS 확장에서 텍스트 변환 호출](../modeling/invoking-text-transformation-in-a-vs-extension.md)을 참조 하세요.
 
-## <a name="reference"></a>참고
+## <a name="reference"></a>참조
 
 - [T4 텍스트 템플릿 작성](../modeling/writing-a-t4-text-template.md) 텍스트 템플릿 지시문 및 제어 블록의 구문을 제공 합니다.

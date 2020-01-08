@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 660c93c5e1ee6b41369ebbfc9f43c4c047042589
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bfd073b07902e3c0a9e33dfe9ae50d4947a50ef2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652409"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597271"
 ---
 # <a name="about-domain-specific-languages"></a>도메인별 언어 정보
 
@@ -74,7 +74,7 @@ DSL을 정의한 경우 해당 컴퓨터에 설치할 수 있는 다른 사용�
 
 ### <a name="notation"></a>Notation
 
-도메인 특정 언어에는 도메인 특정 구문을 나타내기 위해 쉽게 정의 하 고 확장할 수 있는 합리적인 규모의 요소 집합이 있어야 합니다. 표기법은 요소를 나타내는 도형 및 그래픽 다이어그램 화면에서 요소 간의 관계를 나타내는 연결선으로 구성 됩니다. @No__t_0에서 셰이프를 확장 하 고 구체화 하 여 도메인별 언어의 요소를 나타낼 수 있습니다.
+도메인 특정 언어에는 도메인 특정 구문을 나타내기 위해 쉽게 정의 하 고 확장할 수 있는 합리적인 규모의 요소 집합이 있어야 합니다. 표기법은 요소를 나타내는 도형 및 그래픽 다이어그램 화면에서 요소 간의 관계를 나타내는 연결선으로 구성 됩니다. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]에서 셰이프를 확장 하 고 구체화 하 여 도메인별 언어의 요소를 나타낼 수 있습니다.
 
 ### <a name="domain-model"></a>도메인 모델
 
@@ -82,7 +82,7 @@ DSL을 정의한 경우 해당 컴퓨터에 설치할 수 있는 다른 사용�
 
 ### <a name="artifact-generation"></a>아티팩트 생성
 
-도메인별 언어의 주요 용도 중 하나는 소스 코드, XML 파일 또는 일부 다른 사용 가능한 데이터와 같은 아티팩트를 생성 하는 것입니다. 일반적으로 모델의 변경 내용은 아티팩트의 변경을 의미 합니다. @No__t_0를 사용 하 여 아티팩트를 생성 하 고 모델을 변경할 때 아티팩트를 다시 생성할 수 있습니다.
+도메인별 언어의 주요 용도 중 하나는 소스 코드, XML 파일 또는 일부 다른 사용 가능한 데이터와 같은 아티팩트를 생성 하는 것입니다. 일반적으로 모델의 변경 내용은 아티팩트의 변경을 의미 합니다. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]를 사용 하 여 아티팩트를 생성 하 고 모델을 변경할 때 아티팩트를 다시 생성할 수 있습니다.
 
 ### <a name="serialization"></a>Serialization
 
@@ -90,7 +90,7 @@ DSL을 정의한 경우 해당 컴퓨터에 설치할 수 있는 다른 사용�
 
 ### <a name="integration-with-visual-studio"></a>Visual Studio와의 통합
 
-@No__t_0 Visual Studio에서 호스팅되므로 많은 Visual Studio 창 및 컨트롤을 확장 합니다. 또한 메뉴 명령, 도구 상자 항목 및 사용자 인터페이스의 기타 요소 동작을 사용자 지정할 수 있습니다.
+[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Visual Studio에서 호스팅되므로 많은 Visual Studio 창 및 컨트롤을 확장 합니다. 또한 메뉴 명령, 도구 상자 항목 및 사용자 인터페이스의 기타 요소 동작을 사용자 지정할 수 있습니다.
 
 도메인 특정 언어에 대 한 모델 버스 어댑터를 만들 수도 있습니다. 이 어댑터를 사용 하면 모델 및 모델 내에서 요소를 참조할 수 있으며 DSL의 인스턴스를 액세스 하 고 업데이트할 수 있는 코드를 작성할 수 있습니다. 강력한 모델 버스 메커니즘을 사용 하 여 여러 모델에서 작동 하는 Visual Studio 확장을 작성할 수 있습니다. 모델에서 작동 하는 독립 실행형 응용 프로그램을 작성할 수도 있습니다. 자세한 내용은 [Visual Studio를 사용 하 여 모델 통합 Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)을 참조 하세요.
 

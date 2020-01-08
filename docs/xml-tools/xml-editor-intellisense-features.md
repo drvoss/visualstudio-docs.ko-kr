@@ -3,17 +3,17 @@ title: XML 편집기 IntelliSense 기능
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a44af076e8663e525e33727a24aa93f9391f4b5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 609684452190bf7471f90fee75f66dbb2fcbec8e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603960"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592388"
 ---
 # <a name="xml-editor-intellisense-features"></a>XML 편집기 IntelliSense 기능
 
@@ -87,13 +87,13 @@ XML 편집기에서는 필수 XML 구문이 자동으로 입력되므로 XML을 
 
 ## <a name="brace-matching"></a>중괄호 일치
 
-XML 편집기에서는 중괄호 강조 기능을 제공하므로 방금 닫은 요소에 대한 피드백을 즉시 얻을 수 있습니다. 바로 가기 키 (**Ctrl** + **]** )를 사용 하 여 한 중괄호에서 일치 하는 중괄호로 이동할 수도 있습니다.
+XML 편집기에서는 중괄호 강조 기능을 제공하므로 방금 닫은 요소에 대한 피드백을 즉시 얻을 수 있습니다. 바로 가기 키 (**Ctrl**+ **]** )를 사용 하 여 한 중괄호에서 일치 하는 중괄호로 이동할 수도 있습니다.
 
 XML 편집기에서는 다음 항목에 대해 이 작업을 수행합니다.
 
 - 일치하는 시작 태그와 끝 태그
 
-- "@No__t_0" 또는 ">" 꺾쇠 괄호의 쌍입니다.
+- "\<" 또는 ">" 꺾쇠 괄호의 쌍입니다.
 
 - 주석의 시작과 끝
 
@@ -107,11 +107,11 @@ XML 편집기에서는 다음 항목에 대해 이 작업을 수행합니다.
 
 ## <a name="modify-the-intellisense-options"></a>IntelliSense 옵션 수정
 
-IntelliSense 및 자동 완성 기능은 기본적으로 활성화되어 있습니다. 그러나 **도구**  > **옵션** 설정을 수정 하 여이를 변경할 수 있습니다.
+IntelliSense 및 자동 완성 기능은 기본적으로 활성화되어 있습니다. 그러나 **도구** > **옵션** 설정을 수정 하 여이를 변경할 수 있습니다.
 
 **기타** 페이지의 **자동 삽입** 섹션에서는 다음과 같은 동작을 제어 합니다.
 
-|name|설명|
+|이름|설명|
 |-|-----------------|
 |닫기 태그|새 요소에 대해 닫기 태그를 삽입합니다.|
 |특성 따옴표|새 특성 이름을 입력할 때 특성 값 따옴표를 삽입합니다.|

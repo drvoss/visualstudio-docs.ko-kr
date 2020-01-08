@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 836e2c24d9f236c7b87dfff60b934221b7645f1b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c70aa1853701ef671b7057ad698a0fb63334a1ca
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654064"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597180"
 ---
 # <a name="create-custom-t4-text-template-directive-processors"></a>사용자 지정 T4 텍스트 템플릿 지시문 프로세서 만들기
 
@@ -22,7 +22,7 @@ ms.locfileid: "72654064"
 
 사용자 지정 지시문 프로세서를 만들려면 <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> 또는 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>에서 상속하는 클래스를 만듭니다.
 
-이러한 두 가지 차이점은 <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> 사용자 로부터 매개 변수를 가져오고 템플릿 출력 파일을 생성 하는 코드를 생성 하는 데 필요한 최소 인터페이스를 구현 한다는 것입니다. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>은 requires/제공 디자인 패턴을 구현 합니다. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>는 `requires` 및 `provides` 라는 두 개의 특수 매개 변수를 처리 합니다.  예를 들어 사용자 지정 지시문 프로세서는 사용자의 파일 이름을 허용 하 고, 파일을 열고 읽고, 파일의 텍스트를 `fileText` 라는 변수에 저장할 수 있습니다. @No__t_0 클래스의 서브 클래스는 사용자의 파일 이름을 `requires` 매개 변수의 값으로 사용 하 고 텍스트를 `provides` 매개 변수 값으로 저장할 변수의 이름을 사용할 수 있습니다. 이 프로세서는 파일을 열고 읽은 다음 지정 된 변수에 파일의 텍스트를 저장 합니다.
+이러한 두 가지 차이점은 <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> 사용자 로부터 매개 변수를 가져오고 템플릿 출력 파일을 생성 하는 코드를 생성 하는 데 필요한 최소 인터페이스를 구현 한다는 것입니다. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>은 requires/제공 디자인 패턴을 구현 합니다. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>는 `requires` 및 `provides`라는 두 개의 특수 매개 변수를 처리 합니다.  예를 들어 사용자 지정 지시문 프로세서는 사용자의 파일 이름을 허용 하 고, 파일을 열고 읽고, 파일의 텍스트를 `fileText`라는 변수에 저장할 수 있습니다. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> 클래스의 서브 클래스는 사용자의 파일 이름을 `requires` 매개 변수의 값으로 사용 하 고 텍스트를 `provides` 매개 변수 값으로 저장할 변수의 이름을 사용할 수 있습니다. 이 프로세서는 파일을 열고 읽은 다음 지정 된 변수에 파일의 텍스트를 저장 합니다.
 
 Visual Studio의 텍스트 템플릿에서 사용자 지정 지시문 프로세서를 호출 하기 전에이를 등록 해야 합니다.
 

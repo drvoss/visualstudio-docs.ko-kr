@@ -11,25 +11,25 @@ helpviewer_keywords:
 - transactions, saving data
 - data [Visual Studio], saving
 ms.assetid: 8b835e8f-34a3-413d-9bb5-ebaeb87f1198
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cfb03944743609d20d14f6104e5fadd529a5cfa6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: beadb43d7eed78f04fc60ce1307045e9badac205
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641304"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586278"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>방법: 트랜잭션을 사용하여 데이터 저장
 
-@No__t_0 네임 스페이스를 사용 하 여 트랜잭션에 데이터를 저장 합니다. @No__t_0 개체를 사용 하 여 자동으로 관리 되는 트랜잭션에 참여할 수 있습니다.
+<xref:System.Transactions> 네임 스페이스를 사용 하 여 트랜잭션에 데이터를 저장 합니다. <xref:System.Transactions.TransactionScope> 개체를 사용 하 여 자동으로 관리 되는 트랜잭션에 참여할 수 있습니다.
 
 프로젝트는 *System. 트랜잭션* 어셈블리에 대 한 참조를 사용 하 여 만들어지지 않으므로 트랜잭션을 사용 하는 프로젝트에 대 한 참조를 수동으로 추가 해야 합니다.
 
-트랜잭션을 구현 하는 가장 쉬운 방법은 `using` 문에서 <xref:System.Transactions.TransactionScope> 개체를 인스턴스화하는 것입니다. 자세한 내용은 [using 문](/dotnet/visual-basic/language-reference/statements/using-statement)및 [using 문](/dotnet/csharp/language-reference/keywords/using-statement)을 참조 하세요. @No__t_2 문 내에서 실행 되는 코드는 트랜잭션에 참여 합니다.
+트랜잭션을 구현 하는 가장 쉬운 방법은 `using` 문에서 <xref:System.Transactions.TransactionScope> 개체를 인스턴스화하는 것입니다. 자세한 내용은 [using 문](/dotnet/visual-basic/language-reference/statements/using-statement)및 [using 문](/dotnet/csharp/language-reference/keywords/using-statement)을 참조 하세요. `using` 문 내에서 실행 되는 코드는 트랜잭션에 참여 합니다.
 
 트랜잭션을 커밋하려면 using 블록의 마지막 문으로 <xref:System.Transactions.TransactionScope.Complete%2A> 메서드를 호출 합니다.
 
@@ -37,7 +37,7 @@ ms.locfileid: "72641304"
 
 ## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>System.object에 대 한 참조를 추가 하려면
 
-1. **프로젝트** 메뉴에서 **참조 추가**를 선택 합니다.
+1. **프로젝트** 메뉴에서 **참조 추가**를 선택합니다.
 
 2. **.Net** 탭 (SQL Server 프로젝트에 대 한**SQL Server** 탭)에서 **시스템 트랜잭션을**선택한 다음 **확인**을 선택 합니다.
 

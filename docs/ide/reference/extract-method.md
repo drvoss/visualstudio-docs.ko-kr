@@ -3,8 +3,8 @@ title: 메서드 추출
 description: 코드를 선택하고 Ctrl+R, Ctrl+M을 입력하여 코드 조각을 자체 메서드로 전환합니다.
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.extractmethod
@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a1ec6ca273f873c82a1bb2c730a9288b5e2ae4ed
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 50f14cc2a7eafe5d65e0c6a6af54bafa2ebb5a1f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654390"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569701"
 ---
 # <a name="extract-a-method-refactoring"></a>메서드 추출 리팩터링
 
@@ -71,7 +71,7 @@ ms.locfileid: "72654390"
 
 3. 변경 내용에 만족할 경우 **적용** 단추를 선택하거나 **Enter** 키를 누르면 변경 내용이 커밋됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [리팩터링](../refactoring-in-visual-studio.md)
 - [변경 내용 미리 보기](../../ide/preview-changes.md)

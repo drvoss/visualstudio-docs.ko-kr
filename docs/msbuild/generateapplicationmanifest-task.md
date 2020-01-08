@@ -14,17 +14,17 @@ helpviewer_keywords:
 - HostInBrowser property (MSBuild)
 - GenerateApplicationManifest task [MSBuild]
 ms.assetid: a494102b-0cb2-4755-8e2a-d2c0f39fac1d
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86593ca3ac437b9a36fb671694898a7d80434eba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 446f4728f92d5a486afea1a7c03c8d5006690bfc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003629"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589307"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest 작업
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션 매니페스트 또는 네이티브 매니페스트를 생성합니다. 네이티브 매니페스트는 구성 요소의 고유 ID를 정의하고 구성 요소를 구성하는 모든 어셈블리와 파일을 식별하는 방식으로 구성 요소를 설명합니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 애플리케이션 매니페스트는 애플리케이션의 진입점을 지정하고 애플리케이션 보안 수준을 지정하여 네이티브 매니페스트를 확장합니다.
@@ -64,7 +64,7 @@ ms.locfileid: "63003629"
 | `TrustInfoFile` | 선택적 <xref:Microsoft.Build.Framework.ITaskItem> 매개 변수입니다.<br /><br /> 애플리케이션 보안을 지정하는 XML 문서를 나타냅니다. XML 문서의 루트 요소는 asmv2 네임스페이스의 trustInfo 노드여야 합니다. 작업에서 네이티브 매니페스트를 생성할 경우 이 매개 변수가 무시됩니다. |
 | `UseApplicationTrust` | 선택적 `Boolean` 매개 변수입니다.<br /><br /> True인 경우 `Product`, `Publisher` 및 `SupportUrl` 속성은 애플리케이션 매니페스트에 기록됩니다. |
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.GenerateManifestBase> 클래스의 매개 변수도 상속합니다. Task 클래스의 매개 변수 목록에 대해서는 [Task 기본 클래스](../msbuild/task-base-class.md)를 참조하세요.
 
 `GenerateDeploymentManifest` 작업을 사용하는 방법에 대한 자세한 내용은 [GenerateApplicationManifest 작업](../msbuild/generateapplicationmanifest-task.md)을 참조하세요.
@@ -349,7 +349,7 @@ ms.locfileid: "63003629"
 </Project>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [작업](../msbuild/msbuild-tasks.md)
 - [GenerateDeploymentManifest 작업](../msbuild/generatedeploymentmanifest-task.md)
 - [SignFile 작업](../msbuild/signfile-task.md)

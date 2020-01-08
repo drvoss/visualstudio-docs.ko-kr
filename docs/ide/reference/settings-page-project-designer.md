@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - Settings page in Project Designer
 - Project Designer, Settings page
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11f6f787d3799813aa526395a7137fd68e5c573d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4f4ca1def334241999445e3f11cf142aa426d962
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645260"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566776"
 ---
 # <a name="settings-page-project-designer"></a>설정 페이지, 프로젝트 디자이너
 
@@ -85,7 +85,7 @@ Visual Basic 프로젝트의 경우 액세스 한정자는 **Friend** 또는 **P
 
 애플리케이션 설정과 연결된 데이터 또는 값입니다. 예를 들어 설정이 글꼴인 경우 값은 **Verdana, 9.75pt, style=Bold**일 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [애플리케이션 설정 관리](../managing-application-settings-dotnet.md)
 - [애플리케이션 설정 액세스(Visual Basic)](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)

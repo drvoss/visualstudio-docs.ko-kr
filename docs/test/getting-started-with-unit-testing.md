@@ -4,17 +4,17 @@ ms.date: 04/01/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ecddad721547fdb5689a26a192cf0580ddb44cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 72ab0a6664740f2d772d79f9c77fddfbc12fb82f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664911"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596478"
 ---
 # <a name="get-started-with-unit-testing"></a>유닛 테스트 시작
 
@@ -174,7 +174,7 @@ Boost, Google, NUnit 등의 타사 테스트 프레임워크를 사용하여 Vis
 
 6. **테스트 탐색기**에서 테스트를 실행하거나 테스트 코드를 마우스 오른쪽 단추로 클릭하고 **테스트 실행**을 선택하여 테스트를 실행합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [연습: 관리 코드에 대한 단위 테스트 만들기 및 실행](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [단위 테스트 만들기 명령](create-unit-tests-menu.md)

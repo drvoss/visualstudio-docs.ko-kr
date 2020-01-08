@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.RoamingSettings
 ms.assetid: 3cfe09d2-1120-46e8-b882-f7056acb778b
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63b5443599e5e84cab1693aca4281c882c082162
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9ff457523024db49502ae982a390d9a7be6ba9dd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645343"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595906"
 ---
 # <a name="accounts-environment-options-dialog-box"></a>계정, 환경, 옵션 대화 상자
 
@@ -41,7 +41,7 @@ ms.locfileid: "72645343"
 
 추가 Azure 클라우드를 등록한 후에는 Visual Studio에 로그인할 때 로그인하려는 Azure 클라우드를 선택할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [여러 컴퓨터 간에 설정 동기화](../synchronized-settings-in-visual-studio.md)
 - [Visual Studio에 로그인](../signing-in-to-visual-studio.md)

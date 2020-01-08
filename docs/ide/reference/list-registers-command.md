@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Debug.ListRegisters command
 - ListRegisters command
 ms.assetid: 19a9d789-f6c9-46b3-b1f6-4934fc33e055
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0e52f42e495c2bac5e80195d360096947210980
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e87b10a7827b5365b507abb2c72a21506e59c19e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748687"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568687"
 ---
 # <a name="list-registers-command"></a>레지스터 목록 표시 명령
 선택된 레지스터의 값을 등록하고 표시할 레지스터의 목록을 수정합니다.
@@ -58,14 +58,14 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 ## <a name="remarks"></a>설명
 별칭 `r`을 `Debug.ListRegisters` 대신 사용할 수 있습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 이 예제에서는 `Debug.ListRegisters` 별칭 `r`을 사용하여 `Flags` 레지스터 그룹의 값을 표시합니다.
 
 ```cmd
 r /Display Flags
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)
 - [디버깅 기본 사항: 레지스터 창](../../debugger/debugging-basics-registers-window.md)

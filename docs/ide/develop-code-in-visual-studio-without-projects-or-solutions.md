@@ -6,17 +6,17 @@ helpviewer_keywords:
 - open folder [Visual Studio]
 - anycode [Visual Studio]
 - projects and solutions, develop code without
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a88bfb5f12ae707c98eedd1f57a4be14665aa83c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d7a9459868d569a7466dccf92e4b548c0500bf80
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652513"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596296"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>프로젝트 또는 솔루션 없이 Visual Studio에서 코드 개발
 
@@ -115,7 +115,7 @@ Visual Studio에서 솔루션이나 프로젝트 없이 C++ 코드를 여는 방
 
 ![시작 단추에 대한 프로젝트](media/customize-start-button-project.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [빌드 및 디버그 작업 사용자 지정](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
 - [C++의 폴더 열기 프로젝트](/cpp/build/open-folder-projects-cpp)

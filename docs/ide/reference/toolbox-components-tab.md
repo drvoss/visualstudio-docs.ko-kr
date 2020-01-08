@@ -8,17 +8,17 @@ f1_keywords:
 - VS.CHOOSEITEMS.UniversalWindowsComponents
 helpviewer_keywords:
 - Toolbox, Components tab
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd9c6bf4d24a681c426a20f490dba2cc1d5080fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e5eb8c320a3190121d95395f7b359aa9ed978408
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72644601"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597310"
 ---
 # <a name="toolbox-components-tab"></a>도구 상자, 구성 요소 탭
 
@@ -87,7 +87,7 @@ Windows 기반 애플리케이션에 시간 기반 기능을 추가하는 데 �
 > [!NOTE]
 > **도구 상자**에 추가할 수 있는 시스템 기반 <xref:System.Timers.Timer>도 있습니다. 이 <xref:System.Timers.Timer>는 서버 애플리케이션에 최적화되어 있고 Windows Forms <xref:System.Windows.Forms.Timer>는 Windows Forms에 가장 적합합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Windows Forms에 사용할 수 있는 컨트롤](/dotnet/framework/winforms/controls/controls-to-use-on-windows-forms)
 - [도구 상자 항목 선택, WPF 구성 요소](choose-toolbox-items-wpf-components.md)

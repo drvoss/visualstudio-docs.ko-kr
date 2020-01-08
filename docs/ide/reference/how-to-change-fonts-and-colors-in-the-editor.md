@@ -9,17 +9,17 @@ helpviewer_keywords:
 - text, fonts
 - editors, text color
 ms.assetid: 3f7629d1-1cdf-4046-9a31-0632517f234d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7aa359e9918cb808989bb1f0e65de516af422dc6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c7347ba6bf599e34d9555f6acaeb03cf396a5855
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668243"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595568"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>방법: Visual Studio에서 편집기의 글꼴 및 색 변경
 
@@ -46,7 +46,7 @@ ms.locfileid: "72668243"
 
 5. **확인**을 클릭합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 편집기의 기능](../../ide/writing-code-in-the-code-and-text-editor.md)
 - [방법: Visual Studio에서 글꼴 및 색 변경](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

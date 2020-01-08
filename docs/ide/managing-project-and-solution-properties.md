@@ -2,17 +2,17 @@
 title: 프로젝트 및 솔루션 속성 관리
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99786cc2b646c011a0398e973e0fd3d4dd97583f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 01fcdc09c9d3ee4f5a38a95ef4304bfdf537d527
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603433"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591309"
 ---
 # <a name="manage-project-and-solution-properties"></a>프로젝트 및 솔루션 속성 관리
 
@@ -25,7 +25,7 @@ ms.locfileid: "72603433"
 ![솔루션 탐색기 트리의 속성 노드](../ide/media/vs2015_props_se.png)
 
 > [!NOTE]
-> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [솔루션 및 프로젝트 속성 관리(Mac용 Visual Studio)](/visualstudio/mac/managing-solutions-and-project-properties)를 참조하세요.
+> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [솔루션 및 프로젝트 속성 관리(Mac용 Visual Studio)](/visualstudio/mac/managing-solutions-and-project-properties)를 참조하세요.
 
 ## <a name="project-properties"></a>프로젝트 속성
 
@@ -54,7 +54,7 @@ C++ 프로젝트 속성에 대한 자세한 내용은 [프로젝트 속성 작�
 
 솔루션에 대한 속성에 액세스하려면 **솔루션 탐색기**에서 솔루션 노드를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다. 대화 상자에서 **디버그** 또는 **릴리스** 빌드에 대한 프로젝트 구성을 설정하고, **F5** 키를 누를 때 시작 프로젝트여야 하는 프로젝트를 선택하고, 코드 분석 옵션을 설정할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 솔루션 및 프로젝트](../ide/solutions-and-projects-in-visual-studio.md)
 - [솔루션 및 프로젝트 속성 관리(Mac용 Visual Studio)](/visualstudio/mac/managing-solutions-and-project-properties)

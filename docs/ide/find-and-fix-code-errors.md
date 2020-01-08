@@ -4,17 +4,17 @@ description: 이 문서에서는 빌드 오류, 코드 분석, 디버깅 도구,
 ms.date: 05/02/2018
 ms.topic: conceptual
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0be3965ea8343317cf570ae752109b50fa80dd4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e66d0d1ed8115b214b1da1654cbefdc96f7d1774
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650848"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588618"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Visual Studio에서 코드를 작동하게 하기
 
@@ -166,7 +166,7 @@ Visual Studio는 편집기의 맨 아래에 있는 **코드 정리** 단추를 �
 
 Visual Studio의 단위 테스트 및 단위 테스트를 통해 더 나은 품질의 코드를 만드는 방법에 대한 자세한 내용은 [단위 테스트 기본 사항](../test/unit-test-basics.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [디버거 소개](../debugger/debugger-feature-tour.md)
 - [디버거 사용에 대해 자세히 알아보기](../debugger/index.yml)

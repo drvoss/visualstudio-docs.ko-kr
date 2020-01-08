@@ -6,12 +6,12 @@ ms.author: sayedha
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 6bea12b37bc7fe1f608c27cd72e48c7cdc7e13d8
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.openlocfilehash: 1a3c4f3283ab10cfc4f8ee8364113dcb7f075af8
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108138"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75398170"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>자습서: Azure Functions 시작
 
@@ -27,7 +27,7 @@ ms.locfileid: "70108138"
 ## <a name="requirements"></a>요구 사항
 
 - Mac용 Visual Studio 7.5 이상
-- Azure 구독([https://azure.com/free](https://azure.com/free)부터 무료로 사용 가능)
+- Azure 구독([https://azure.com/free](https://azure.com/free?ref=visualstudio)부터 무료로 사용 가능)
 
 ## <a name="exercise-1-creating-an-azure-functions-project"></a>연습 1: Azure Functions 프로젝트 만들기
 

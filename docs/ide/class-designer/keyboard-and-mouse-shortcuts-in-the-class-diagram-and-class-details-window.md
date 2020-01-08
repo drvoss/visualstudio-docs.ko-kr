@@ -8,17 +8,17 @@ helpviewer_keywords:
 - class diagrams, keyboard shortcuts
 - class diagrams, mouse shortcuts
 ms.assetid: c12d8dac-9902-4fde-b721-2a8116da53b7
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a755de4df0cd7402debbc964d2f3f9c54802eb85
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 6df4932a1043c984509632951ba67864fefe31ce
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188973"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590763"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>클래스 다이어그램 및 클래스 세부 내용 창의 키보드 및 마우스 바로 가기
 
@@ -100,7 +100,7 @@ ms.locfileid: "73188973"
 |**왼쪽 화살표**|커서가 이름 열에 있는 경우 왼쪽 화살표를 누르면 계층 구조에서 현재 노드가 축소됩니다(열려 있는 경우).|
 |**오른쪽 화살표**|커서가 이름 열에 있는 경우 오른쪽 화살표를 누르면 계층 구조에서 현재 노드가 확장됩니다(축소된 경우).|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [형식 멤버 만들기 및 구성](creating-and-configuring-type-members.md)
 - [단독으로 키보드를 사용하는 방법](../reference/how-to-use-the-keyboard-exclusively.md)

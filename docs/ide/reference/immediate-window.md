@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Immediate window
 - first-chance exception notifications
 ms.assetid: d33e7937-73f3-4c69-9df0-777a8713c6f2
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa5f804c22090fa79586549db00b13d824a54690
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b21cdb9136abe1e960e5b74bbf09e7d1694519d7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662536"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568960"
 ---
 # <a name="immediate-window"></a>직접 실행 창
 
@@ -90,7 +90,7 @@ Office용 Visual Studio Tools 프로젝트, 웹 프로젝트, 스마트 디바�
 
 **즉시 실행** 창에서 Visual Studio 명령을 실행할 경우 보다 큼 기호(>)를 입력하세요. **위쪽 화살표** 및 **아래쪽 화살표** 키를 사용하여 이전에 사용한 명령을 스크롤합니다.
 
-|작업|솔루션|예|
+|작업|솔루션|예제|
 |----------|--------------|-------------|
 |식을 계산합니다.|식 앞에 물음표(?)를 추가합니다.|`? a+b`|
 |직접 실행 모드(단일 명령 실행)에 있는 동안 명령 모드를 일시적으로 입력합니다.|앞에 보다 큼 기호(>)를 추가하여 명령을 입력합니다.|`>alias`|
@@ -129,7 +129,7 @@ Expression has been evaluated and has no value
 
 2. **출력** 창의 텍스트 영역을 마우스 오른쪽 단추로 클릭한 다음, **예외 메시지**를 선택 또는 선택 취소합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [디버거로 코드 탐색](../../debugger/navigating-through-code-with-the-debugger.md)
 - [명령 창](../../ide/reference/command-window.md)

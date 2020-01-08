@@ -3,23 +3,23 @@ title: '연습: 사실적인 3D 당구공 만들기'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95125e2f808dde634435e4eeb2254e397fceb140
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 866f91303c224f8330a4d2be76f3d29331fcb346
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72634552"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589918"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>연습: 사실적인 3D 당구공 만들기
 
 이 연습에서는 Visual Studio에서 셰이더 디자이너 및 이미지 편집기를 사용하여 사실적인 3D 당구공을 만드는 방법을 보여줍니다. 당구공의 3D 모양을 만들려면 여러 셰이더 기술을 적절한 질감 리소스와 결합합니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 이 연습을 완료하려면 다음 구성 요소와 기술이 필요합니다.
 
@@ -207,7 +207,7 @@ ms.locfileid: "72634552"
 
    이 마지막 이미지에서 추가한 효과가 어떻게 결합되어 매우 사실적인 당구공을 만드는지 알 수 있습니다. 도형, 질감 및 조명은 3D 개체의 기본 모양을 만들고 반사 하이라이트 및 반사는 당구공을 더 눈에 띠고 환경의 일부처럼 보이게 만듭니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방법: 셰이더 내보내기](../designers/how-to-export-a-shader.md)
 - [방법: 3D 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md)

@@ -2,17 +2,17 @@
 title: 코딩된 UI 테스트 및 작업 기록 확장
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 3060014002b2e34443741dc654cf29df53278fe2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 05ccb885c799bf2bfd2e3868b80226eca726cc31
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664920"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589554"
 ---
 # <a name="extend-coded-ui-tests-and-action-recordings"></a>코딩된 UI 테스트 및 작업 기록 확장
 
@@ -29,7 +29,7 @@ ms.locfileid: "72664920"
 > [!NOTE]
 > 샘플은 Microsoft Excel 2010에서 사용하도록 제공됩니다. 다른 버전의 Excel에서 작동하거나 작동하지 않을 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>

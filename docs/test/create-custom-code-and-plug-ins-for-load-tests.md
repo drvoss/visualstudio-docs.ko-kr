@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Web performance tests, plug-ins
 - load tests, plug-ins
 ms.assetid: 0c0fcc99-673b-4ea0-a268-0475f66e5cb6
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7cd3dbd5e7aeb00c2de1a656c26db3a377b8ffe8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3519a593182c199cc9f7a92cfb77e9c79bd1a9ee
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665102"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590100"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>부하 테스트에 대한 사용자 지정 코드 및 플러그 인 만들기
 
@@ -33,7 +33,7 @@ ms.locfileid: "72665102"
 |**웹 성능 테스트 결과 뷰어에 UI 기능 추가:** Visual Studio 추가 기능을 사용하여 웹 성능 테스트 결과 뷰어에 더 많은 UI 기능을 추가할 수 있습니다.|-   [방법: 웹 성능 테스트 결과 뷰어에 대한 Visual Studio 추가 기능 만들기](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)|
 |**사용자 지정 HTTP 본문 편집기 만들기:** 사용자 지정 편집기를 만들어 웹 서비스의 이진 또는 문자열 http XML 응답을 편집할 수 있습니다.|-   [방법: 웹 성능 테스트 편집기에 대한 사용자 지정 HTTP 본문 편집기 만들기](../test/how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md)|
 
-## <a name="reference"></a>참조
+## <a name="reference"></a>참고
 
 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>
 
@@ -45,7 +45,7 @@ ms.locfileid: "72665102"
 
 <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [부하 테스트 결과 분석](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [코딩된 웹 성능 테스트 생성 및 실행](../test/generate-and-run-a-coded-web-performance-test.md)

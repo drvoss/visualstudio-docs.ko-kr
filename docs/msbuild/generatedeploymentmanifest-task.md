@@ -12,17 +12,17 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, GenerateDeploymentManifest task
 - GenerateDeploymentManifest task [MSBuild]
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8a2f4810c8a485d6b9013f658e221db39d8071f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc953298241ec7c48bbf5ea87c902aa28b349ce0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003352"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588306"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest 작업
 
@@ -60,11 +60,11 @@ ms.locfileid: "63003352"
 | `UpdateMode` | 선택적 `String` 매개 변수입니다.<br /><br /> 업데이트를 애플리케이션이 시작되기 전에 포그라운드에서 확인해야 하는지 아니면 애플리케이션이 실행되는 동안 백그라운드에서 확인해야 하는지 여부를 지정합니다. 이 매개 변수는 다음 값 중 하나를 가질 수 있습니다.<br /><br /> -   `Foreground`<br />-   `Background`<br /><br /> 이 매개 변수의 기본값은 `Background`입니다. 이 매개 변수는 `Install` 및 `UpdateEnabled` 매개 변수의 값이 모두 `true`일 때만 적용됩니다. |
 | `UpdateUnit` | 선택적 `String` 매개 변수입니다.<br /><br /> `UpdateInterval` 매개 변수의 단위를 지정합니다. 이 매개 변수는 다음 값 중 하나를 가질 수 있습니다.<br /><br /> -   `Hours`<br />-   `Days`<br />-   `Weeks`<br /><br /> 이 매개 변수는 `Install` 및 `UpdateEnabled` 매개 변수의 값이 모두 `true`일 때만 적용됩니다. |
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 
 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.GenerateManifestBase> 클래스의 매개 변수도 상속합니다. Task 클래스의 매개 변수 목록에 대해서는 [Task 기본 클래스](../msbuild/task-base-class.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [작업](../msbuild/msbuild-tasks.md)
 - [GenerateApplicationManifest 작업](../msbuild/generateapplicationmanifest-task.md)

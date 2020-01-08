@@ -13,17 +13,17 @@ helpviewer_keywords:
 - <When> Element [MSBuild]
 - When Element [MSBuild]
 ms.assetid: eb27de6f-4e71-4e87-87e2-d93f7bf5899c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31c94844e9860f1de9be92c1e23580e314ada367
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 481be1f0e9c5444e56c95b13e938cda1d541af71
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777960"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566899"
 ---
 # <a name="when-element-msbuild"></a>When 요소(MSBuild)
 `Choose` 요소에서 선택할 수 있는 가능한 코드 블록을 지정합니다.
@@ -63,7 +63,7 @@ ms.locfileid: "62777960"
 |-------------|-----------------|
 |[Choose 요소(MSBuild)](../msbuild/choose-element-msbuild.md)|자식 요소를 평가하여 실행할 코드의 한 섹션을 선택합니다.|
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
  `Condition` 특성이 true로 평가되면 `When` 요소의 자식 `ItemGroup` 및 `PropertyGroup` 요소가 실행되고 모든 후속 `When` 요소가 생략됩니다.
 
  `Choose`, `When` 및 `Otherwise` 요소는 몇 가지 가능한 대안 중에서 실행할 코드의 한 섹션을 선택하는 방법을 제공하기 위해 함께 사용됩니다. 자세한 내용은 [조건부 구문](../msbuild/msbuild-conditional-constructs.md)을 참조하세요.
@@ -116,6 +116,6 @@ ms.locfileid: "62777960"
 </Project>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [조건부 구문](../msbuild/msbuild-conditional-constructs.md)
 - [프로젝트 파일 스키마 참조](../msbuild/msbuild-project-file-schema-reference.md)

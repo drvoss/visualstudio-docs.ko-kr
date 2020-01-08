@@ -4,15 +4,15 @@ ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - load tests, test agents and controllers
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 657037cdb3ef36c4ef81c72cb4fc43f6a94203a3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b8824e1836d8a49de91cf0e3b9cccf2e85a7de18
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665167"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597349"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>부하 테스트 실행에 대한 테스트 에이전트 및 테스트 컨트롤러 개요
 
@@ -89,6 +89,6 @@ Visual Studio 는 실제 또는 가상 머신을 사용하여 앱에 대해 시�
 
 테스트 컨트롤러와 하나 이상의 에이전트를 설치한 다음에는 부하 테스트를 위한 테스트 설정에서 테스트 컨트롤러에 원격 실행을 사용할지 여부를 지정할 수 있습니다. 또한 테스트 설정의 에이전트와 연결된 역할에 사용할 데이터 및 진단 어댑터를 지정할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [테스트 에이전트 설치 및 구성](../test/lab-management/install-configure-test-agents.md)

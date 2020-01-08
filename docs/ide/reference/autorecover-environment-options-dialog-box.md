@@ -12,17 +12,17 @@ helpviewer_keywords:
 - saving files, automatically
 - files, saving automatically
 ms.assetid: 397e5e44-4bbe-4289-94d1-642b466c9111
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 865cf2ec43071a01a333961e118beab14abab82b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 81493379cf847251124d2ab4fd0a978abd96af8f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651891"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585667"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>자동 복구, 환경, 옵션 대화 상자
 
@@ -38,6 +38,6 @@ ms.locfileid: "72651891"
 
 Visual Studio에서 자동 복구를 위해 생성된 파일을 보관할 기간을 지정하려면 이 옵션을 사용합니다.
 
-### <a name="see-also"></a>참고 항목
+### <a name="see-also"></a>참조
 
 - [옵션 대화 상자](../../ide/reference/options-dialog-box-visual-studio.md)

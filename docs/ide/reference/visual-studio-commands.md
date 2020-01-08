@@ -7,23 +7,23 @@ helpviewer_keywords:
 - commands, Visual Studio
 - command syntax
 ms.assetid: 76ffa394-ee89-4629-aba9-1a62b72e6cc1
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af3685288c00e27bb63cd45c682ab8b6354f4e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ac0284ce274791f21c9c0f85d265d92a7097cb09
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72622108"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596374"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio 명령
 
 **명령** 창, **직접 실행** 창 또는 **찾기/명령** 상자에서 Visual Studio 명령을 입력할 수 있습니다. 각 경우에서 보다 큼 기호(`>`)는 검색 또는 디버그 작업이 아닌 명령이 뒤에 표시됨을 나타냅니다.
 
-**도구** > **옵션**  > **환경**의 **키보드** 페이지에서 전체 명령 목록 및 해당 구문을 확인할 수 있습니다.
+**도구** > **옵션** > **환경**의 **키보드** 페이지에서 전체 명령 목록 및 해당 구문을 확인할 수 있습니다.
 
 IDE의 지역화된 버전에서는 IDE의 기본 언어 또는 영어로 명령 이름을 입력할 수 있습니다. 예를 들어 프랑스어 IDE에서 동일한 명령을 실행하려면 `File.NewFile` 또는 `Fichier.NouveauFichier` 를 입력할 수 있습니다.
 
@@ -78,7 +78,7 @@ Visual Studio 명령의 이스케이프 문자는 캐럿(^)입니다. 이스케�
 | [중단점 설정/해제](../../ide/reference/toggle-breakpoint-command.md) | 파일의 현재 위치에서 현재 상태에 따라 중단점을 켜거나 끕니다. |
 | [조사식 명령](../../ide/reference/watch-command.md) | **조사식** 창의 지정된 인스턴스를 만들고 엽니다. |
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [명령 창](../../ide/reference/command-window.md)
 - [찾기/명령 상자](../../ide/find-command-box.md)

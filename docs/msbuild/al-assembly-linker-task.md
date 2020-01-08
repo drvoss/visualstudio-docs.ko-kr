@@ -13,17 +13,17 @@ helpviewer_keywords:
 - AL task [MSBuild]
 - MSBuild, AL task
 ms.assetid: 2ddefbf2-5662-4d55-99a6-ac383bf44560
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39340e268d41207e9b054866ecebe613f7836347
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d90e6c94d07b73e79d793982944bca395a562df2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951278"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593475"
 ---
 # <a name="al-assembly-linker-task"></a>AL(어셈블리 링커) 작업
 AL 작업은 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]와 함께 배포되는 도구인 *AL.exe*를 래핑합니다. 이 어셈블리 링커 도구는 모듈 또는 리소스 파일에 해당하는 하나 이상의 파일에 있는 매니페스트로 어셈블리를 생성하는 데 사용됩니다. 컴파일러 및 개발 환경에서 이러한 기능을 이미 제공할 수 있으므로 이 작업을 직접 사용할 필요가 없는 경우가 많습니다. 어셈블리 링커는 혼합 언어 개발에서 생성될 수 있는 것과 같은 여러 구성 요소 파일에서 단일 어셈블리를 만들어야 하는 개발자에게 가장 유용합니다. 이 작업은 모듈을 단일 어셈블리 파일로 결합하지 않습니다. 결과 어셈블리가 올바르게 로드되려면 여전히 개별 모듈이 분산되어야 하고 사용 가능해야 하기 때문입니다. *AL.exe*에 대한 자세한 내용은 [Al.exe(어셈블리 링커)](/dotnet/framework/tools/al-exe-assembly-linker)를 참조하세요.
@@ -68,7 +68,7 @@ AL 작업은 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]와 
 | `Win32Icon` | 선택적 `String` 매개 변수입니다.<br /><br /> *.ico* 파일을 어셈블리에 삽입합니다. *.ico* 파일을 사용하면 파일 탐색기에서 출력 파일을 원하는 모양으로 나타납니다. 이 매개 변수는 [Al.exe(어셈블리 링커)](/dotnet/framework/tools/al-exe-assembly-linker)의 `/win32icon` 옵션에 해당합니다. |
 | `Win32Resource` | 선택적 `String` 매개 변수입니다.<br /><br /> Win32 리소스( *.res* 파일)를 출력 파일에 삽입합니다. 자세한 내용은 [Al.exe(어셈블리 링커)](/dotnet/framework/tools/al-exe-assembly-linker)의 `/win32res` 옵션에 대한 설명서를 참조하세요. |
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
  이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.ToolTask> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [ToolTaskExtension 기본 클래스](../msbuild/tooltaskextension-base-class.md)를 참조하세요.
 
 ## <a name="example"></a>예제
@@ -91,6 +91,6 @@ AL 작업은 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]와 
 </AL>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 * [작업 참조](../msbuild/msbuild-task-reference.md)
 * [작업](../msbuild/msbuild-tasks.md)

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - MSBuild, registering extensions of the .NET Framework
 - .NET Framework extensions, registering
 ms.assetid: deee6f53-ea87-4b88-a120-bea589822e03
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f1e780a67ee419a8cae661570802e5d85081f1fd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 1957bae45504e5654b3ed63c9fa0821a7f4c8758
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445801"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596764"
 ---
 # <a name="register-extensions-of-the-net-framework"></a>.NET Framework 확장명 등록
 .NET Framework의 특정 버전을 확장하는 어셈블리를 개발할 수 있습니다. 해당 어셈블리가 Visual Studio의 **참조 추가** 대화 상자에 표시되도록 설정하려면 이 어셈블리를 포함하는 폴더를 시스템 레지스트리에 추가해야 합니다.
@@ -31,5 +31,5 @@ ms.locfileid: "63445801"
 
  64비트 컴퓨터에서 32비트 어셈블리를 등록하려면 다음과 같이 Wow6432 노드를 사용합니다. **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\**
 
-### <a name="see-also"></a>참고 항목
+### <a name="see-also"></a>참조
 - [Visual Studio 통합](../msbuild/visual-studio-integration-msbuild.md)

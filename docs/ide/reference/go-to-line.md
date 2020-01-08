@@ -8,17 +8,17 @@ helpviewer_keywords:
 - code, locating lines
 - Go To Line dialog box
 ms.assetid: 529fa251-b7b3-49cf-863c-10e0b82ac7cc
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88d70df94b8b15037b9c4ce6f7830faa50f2d6c7
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 0ac8b07e5e788a258e39cce5209b33c0190b08bf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748726"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569194"
 ---
 # <a name="go-to-line-dialog-box"></a>행 이동 대화 상자
 
@@ -30,7 +30,7 @@ ms.locfileid: "72748726"
 
 **줄 번호(1 - \<n>)** 상자에 이동할 활성 문서의 줄 번호를 입력합니다. 입력한 번호는 1과 현재 문서의 마지막 줄 번호 사이여야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [이동 명령을 사용하여 코드 찾기](../../ide/go-to.md)
 - [코드에 책갈피 설정](../../ide/setting-bookmarks-in-code.md)

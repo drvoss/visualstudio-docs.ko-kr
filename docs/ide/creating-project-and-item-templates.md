@@ -7,15 +7,15 @@ helpviewer_keywords:
 - templates [Visual Studio], item
 - item templates [Visual Studio]
 - project templates [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 1590317bf2749cc1aeef8a4c3bfbf2937c8404c7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2cc932a2407aeb4951bab970a0edc6e2b2a5fcc9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652604"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589762"
 ---
 # <a name="project-and-item-templates"></a>프로젝트 및 항목 템플릿
 
@@ -67,7 +67,7 @@ ms.locfileid: "72652604"
 
 템플릿 폴더에 대한 자세한 내용은 [방법: 템플릿 찾기 및 구성](../ide/how-to-locate-and-organize-project-and-item-templates.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방법: 프로젝트 템플릿 만들기](../ide/how-to-create-project-templates.md)
 - [방법: 항목 템플릿 만들기](../ide/how-to-create-item-templates.md)

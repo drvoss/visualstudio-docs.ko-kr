@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, tasks specific to C++
 ms.assetid: 05410f0c-7356-4692-bc00-20664421c9ff
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6ea400d7473fae27ac4b17d9e3692748db549f3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 89f7d8465b2078d4c0c1ce86894edb834581596d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748066"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593826"
 ---
 # <a name="msbuild-tasks-specific-to-c"></a>C++ 관련 MSBuild 작업
 작업은 빌드 프로세스 동안 실행되는 코드를 제공합니다. C++가 설치되면 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]와 함께 설치되는 작업 외에 다음 작업을 사용할 수 있습니다. 자세한 내용은 [MSBuild(C++) 개요](/cpp/build/msbuild-visual-cpp-overview)를 참조하세요.

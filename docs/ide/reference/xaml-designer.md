@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.XAMLDesigner
 - VS.ToolsOptionsPages.XAML_Designer.General
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 6a08358e8e82abf00a133edab876dc45626bf500
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9a925e7f3c31b8347148c15b050692fcee26fcb1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72621901"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585615"
 ---
 # <a name="xaml-designer-options-page"></a>XAML 디자이너 옵션 페이지
 
@@ -106,7 +106,7 @@ ms.locfileid: "72621901"
 |**효과 렌더링**|Blend를 통해 XAML 디자이너에서 XAML 파일을 편집할 때 효과가 렌더링되는지 여부를 지정합니다.|
 |**확대/축소 임계값**|**효과 렌더링** 확인란이 선택된 경우 효과가 렌더링되는 확대/축소 비율을 지정합니다. 이 설정을 초과하여 확대/축소하면 XAML 디자이너에서 효과가 더 이상 렌더링되지 않습니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [WPF의 XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)
 - [연습: 내 첫 WPF 데스크톱 애플리케이션](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)

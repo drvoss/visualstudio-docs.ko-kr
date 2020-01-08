@@ -11,17 +11,17 @@ helpviewer_keywords:
 - .targets files
 - MSBuild, .targets files
 ms.assetid: f6d98eb4-d2fa-49b7-8e3c-bae1ca3cf596
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dc3964524536b1d0452462512e5847311e8bfeb
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.openlocfilehash: 4dc5df9c4eba4195400b6a41fa50a5c88257d70e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983815"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566555"
 ---
 # <a name="msbuild-targets-files"></a>MSBuild .Targets 파일
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에는 일반 시나리오에 대한 항목, 속성, 대상 및 작업이 들어 있는 여러 *.targets* 파일이 포함됩니다. 이러한 파일은 대부분의 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트 파일로 자동 가져오기되므로 쉽게 유지 관리하고 읽을 수 있습니다.
@@ -44,7 +44,7 @@ ms.locfileid: "73983815"
 ## <a name="directorybuildtargets"></a>Directory.Build.targets
 *Directory.Build.targets*는 디렉터리 아래에 프로젝트에 대한 사용자 지정을 제공하는 사용자 정의 파일입니다. **ImportDirectoryBuildTargets** 속성을 **false**로 설정한 경우가 아니면 *Microsoft.Common.targets*에서 이 파일을 자동으로 가져옵니다. 자세한 내용은 [빌드 사용자 지정](customize-your-build.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Import 요소(MSBuild)](../msbuild/import-element-msbuild.md)
 - [MSBuild 참조](../msbuild/msbuild-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

@@ -21,15 +21,15 @@ helpviewer_keywords:
 - Dotfuscator Professional
 description: Visual Studio에 포함된 Dotfuscator Community 무료 복사본을 업그레이드하는 방법을 알아봅니다.
 ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
-author: Joe-Sewell-PreEmptive
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 555b23f33ee1e3541afc6181a9ec6c4ece833b81
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 08492340022f772beadca8061a216de69fafc8af
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748884"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596803"
 ---
 # <a name="upgrade-dotfuscator-community"></a>Dotfuscator Community 업그레이드
 
@@ -65,7 +65,7 @@ Dotfuscator Professional은 산업 표준 [.NET Obfuscator][net-obfuscator]이�
 Dotfuscator Professional의 고급 애플리케이션 보호 기능에 대한 자세한 내용을 보려면 PreEmptive Solutions의 [Dotfuscator 개요 페이지][product-about]를 방문해서 [Dotfuscator Community와 비교][product-compare]해 보세요.
 [preemptive.com][eval]에서 전체 기능이 지원되는 평가판을 사용할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [전체 Dotfuscator Community 사용자 가이드의 이 문서][full]
 

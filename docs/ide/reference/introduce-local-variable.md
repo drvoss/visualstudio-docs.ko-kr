@@ -3,17 +3,17 @@ title: 지역 변수 소개
 description: 기존 식을 대체할 지역 변수를 생성합니다. 식을 선택하고 마우스 오른쪽 단추를 클릭한 다음 빠른 작업 및 리팩터링 메뉴를 선택하고 ‘expression’의 모든 항목에 대한 로컬 지정을 선택합니다.
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6407810b4143d5edacecf42990ae5b6d63497be2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0fbd5ed752b28cc3f8c0dd734ed2b3ce09e80b78
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668750"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568817"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Visual Studio에서 지역 변수 소개
 
@@ -69,7 +69,7 @@ ms.locfileid: "72668750"
    > [!NOTE]
    > **...모든 항목...** 메뉴 옵션을 사용하면 특별히 강조 표시한 항목만이 아니라 선택한 식의 모든 인스턴스를 대체할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 생성](../code-generation-in-visual-studio.md)
 - [변경 내용 미리 보기](../../ide/preview-changes.md)

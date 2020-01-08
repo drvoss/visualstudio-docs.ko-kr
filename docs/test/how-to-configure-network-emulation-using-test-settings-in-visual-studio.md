@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - test settings, network emulation
 ms.assetid: ff275cfb-5df9-4710-9a91-9caabaaad34f
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f49f7952b287989d6e828d92b4c3479731dc2c21
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 350640a4db6a81d19801aedb03d0d490895f97ef
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664804"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589216"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>방법: Visual Studio에서 테스트 설정을 사용하여 네트워크 에뮬레이션 구성
 
@@ -83,7 +83,7 @@ Visual Studio는 모든 테스트 형식에 소프트웨어 기반의 진정한 
     > [!TIP]
     > 다음 명령을 사용하여 Visual Studio 테스트 에이전트를 설치하지 않고 로컬 머신의 명령줄에서 네트워크 에뮬레이션 드라이버를 설치할 수도 있습니다. **VSTestConfig NETWORKEMULATION /install**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [테스트 설정을 사용하여 진단 정보 수집](../test/collect-diagnostic-information-using-test-settings.md)
 - [수동 테스트 실행(Azure Test Plans)](/azure/devops/test/run-manual-tests?view=vsts)

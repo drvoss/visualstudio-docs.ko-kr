@@ -10,17 +10,17 @@ helpviewer_keywords:
 - collections, collection associations
 - Class Designer [Visual Studio], collection associations
 ms.assetid: 54e39838-2fc9-4dc2-85b6-7e88a743108e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e074eee5972bcf952108a36f52c0915057c470a3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7ba237b9c763421287e3878a6a98f59032bfd092
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631317"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590776"
 ---
 # <a name="how-to-visualize-a-collection-association-in-class-designer"></a>방법: 클래스 디자이너에서 컬렉션 연결 시각화
 
@@ -36,7 +36,7 @@ ms.locfileid: "72631317"
 
 속성 또는 필드가 수집된 형식과 연결된 형식 연결 선으로 표시됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방법: 형식 간에 연결 만들기](how-to-create-associations-between-types.md)
 - [클래스 및 형식 디자인](designing-and-viewing-classes-and-types.md)

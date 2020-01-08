@@ -6,17 +6,17 @@ helpviewer_keywords:
 - multiple processors
 - MSBuild, multiple processor systems
 ms.assetid: 49fa36c9-8e14-44f5-8a2b-34146cf6807b
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 065b11b689189f5ad833ce642cfcfc94da06f83d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bd377318d92989f7e1341d166b2ca3d3978a148d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747197"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595243"
 ---
 # <a name="use-multiple-processors-to-build-projects"></a>다중 프로세서를 사용하여 프로젝트 빌드
 MSBuild에서는 다중 프로세서 또는 다중 핵심 프로세서가 있는 시스템을 사용할 수 있습니다. 사용 가능한 각 프로세서에 대해 별도 빌드 프로세스가 만들어집니다. 예를 들어 시스템에 4개의 프로세서가 있는 경우 네 개의 빌드 프로세스가 만들어집니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]는 이러한 빌드를 동시에 처리할 수 있기 때문에 전체 빌드 시간이 감소합니다. 그러나 병렬 빌드에서는 빌드 프로세스가 발생하는 방법과 관련하여 몇 가지 사항이 변경되었습니다. 이 항목에서는 이러한 변경 내용에 대해 설명합니다.
@@ -38,6 +38,6 @@ MSBuild에서는 다중 프로세서 또는 다중 핵심 프로세서가 있는
 
  이 문제를 방지하면서 여전히 다중 프로세서 빌드를 사용하기 위해 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서는 "프로세스 격리"를 사용합니다. 프로세스 격리를 사용하여 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]는 최대 `n`개의 프로세스를 만들 수 있습니다. 여기서 `n`은 시스템에서 사용할 수 있는 프로세서 수입니다. 예를 들어 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]가 두 개의 프로세서가 있는 시스템에서 솔루션을 빌드할 경우 빌드 프로세서가 2개만 만들어집니다. 이러한 프로세스는 솔루션의 모든 프로젝트를 빌드하기 위해 다시 사용됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [병렬로 여러 프로젝트 빌드](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)
 - [작업](../msbuild/msbuild-tasks.md)

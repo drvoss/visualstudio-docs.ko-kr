@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Visual Studio, unit tests
 - unit tests, verifying code with
 - testing code, automated tests
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: fd6d6dca2680dcfcaa42912333b080c428ba78d2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: ffe383d2195feb6689954a8ec858b196bae8c06a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659857"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565996"
 ---
 # <a name="unit-test-your-code"></a>코드 단위 테스트
 
@@ -56,6 +56,6 @@ ms.locfileid: "72659857"
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting>에서는 단위 테스트를 지원하는 특성, 예외, 어설션 및 기타 클래스를 제공하는 UnitTesting 네임스페이스에 대해 설명합니다.
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web>에서는 ASP.NET 및 웹 서비스 단위 테스트를 지원하여 UnitTesting 네임스페이스를 확장하는 UnitTesting.Web 네임스페이스에 대해 설명합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 품질 향상](../test/improve-code-quality.md)

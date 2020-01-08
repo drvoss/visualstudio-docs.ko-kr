@@ -9,17 +9,17 @@ f1_keywords:
 helpviewer_keywords:
 - Project Designer, Security page
 - Security page in Project Designer
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29723f5e253a2ff6d4f6c35e8ad8d3e09e2393f1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1834713ad114ab8a86e314bbe052f4873b308956
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748648"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593579"
 ---
 # <a name="security-page-project-designer"></a>프로젝트 디자이너, 보안 페이지
 
@@ -72,7 +72,7 @@ WPF 웹 브라우저 애플리케이션 프로젝트의 경우 이 옵션은 기
 
 [고급 보안 설정 대화 상자](../../ide/reference/advanced-security-settings-dialog-box.md)를 열어 제한된 권한으로 애플리케이션을 디버깅하는 설정을 구성하는 데 사용합니다. 이 설정은 디버깅하는 동안 검사됩니다. 권한 예외는 애플리케이션에 영역에 정의된 것보다 많은 권한이 필요할 수 있음을 나타냅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - <xref:System.Security.Permissions.WebBrowserPermission>
 - <xref:System.Security.Permissions.MediaPermission>

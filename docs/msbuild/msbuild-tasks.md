@@ -6,17 +6,17 @@ helpviewer_keywords:
 - tasks
 - MSBuild, tasks
 ms.assetid: 5d3cc4a7-e5db-4f73-b707-8b6882fddcf8
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90b6731cf75a1825139aba57fe8491cd7cb0253f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3a6bc01ee1f692a4da0cf1921de757236651a177
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004553"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593800"
 ---
 # <a name="msbuild-tasks"></a>MSBuild 작업
 빌드 플랫폼에는 빌드 프로세스 중에 동작을 필요한 수만큼 실행할 수 있는 기능이 필요합니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서는 *작업*을 통해 이러한 동작을 수행합니다. 작업은 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서 원자성 빌드 작업을 수행하는 데 사용하는 실행 코드 단위입니다.
@@ -64,7 +64,7 @@ ms.locfileid: "63004553"
 ## <a name="overridden-tasks"></a>재정의된 작업
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]는 여러 위치에서 작업을 찾습니다. 첫 번째 위치는 .NET Framework 디렉터리에 저장된 확장명이 *.OverrideTasks*인 파일입니다. 이러한 파일의 작업은 프로젝트 파일의 작업을 비롯하여 이름이 동일한 다른 작업을 재정의합니다. 두 번째 위치는 .NET Framework 디렉터리의 확장명이 *.Tasks*인 파일입니다. 이러한 위치 중 하나에 작업이 없으면 프로젝트 파일의 작업을 사용합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [MSBuild 개념](../msbuild/msbuild-concepts.md)
 - [MSBuild](../msbuild/msbuild.md)
 - [작업 작성](../msbuild/task-writing.md)

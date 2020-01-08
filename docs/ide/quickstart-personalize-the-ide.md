@@ -2,17 +2,17 @@
 title: 색 테마 및 글꼴 설정
 ms.date: 11/20/2017
 ms.topic: quickstart
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 039e48dec17ce902932e2d0df26ebb336c396985
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 11cd73574f42fffb7bcfcda5ab47496fe92565c7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667792"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596946"
 ---
 # <a name="personalize-the-visual-studio-ide-and-editor"></a>Visual Studio IDE 및 편집기 개인 설정
 
@@ -36,7 +36,7 @@ Visual Studio의 기본 색 테마는 **파랑**이라고 합니다. **어두운
 
 1. **파일** 및 **편집**과 같은 메뉴의 행인 메뉴 모음에서 **도구** > **옵션**을 선택합니다.
 
-1. **환경** > **일반** 옵션 페이지에서 **색 테마** 선택을 **어두운**으로 변경한 다음, **확인**을 선택합니다.
+1. **환경** > **일반** 옵션 페이지에서 **색 테마** 선택을 **어둡게**로 변경하고 **확인**을 선택합니다.
 
    전체 Visual Studio 개발 환경(IDE)에 대한 색 테마가 **어둡게**로 변경됩니다.
 
@@ -115,7 +115,7 @@ Visual Studio의 기본 색 테마는 **파랑**이라고 합니다. **어두운
 
 Visual Studio에서 색을 사용자 지정하는 몇 가지 방법을 살펴보았습니다. **옵션** 대화 상자에서 다른 사용자 지정 옵션도 탐색하여 자신에게 맞게 Visual Studio를 설정하시기 바랍니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [편집기 사용자 지정](../ide/how-to-change-text-case-in-the-editor.md)
 - [Visual Studio IDE 개요](../get-started/visual-studio-ide.md)

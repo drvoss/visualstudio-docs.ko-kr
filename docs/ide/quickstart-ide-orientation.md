@@ -3,17 +3,17 @@ title: Visual Studio IDE 둘러보기
 titleSuffix: ''
 ms.date: 02/21/2019
 ms.topic: quickstart
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 072233bde233712024d01fa315e11c679d39e9e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 490d3edddd35ad5d72733824e3af41888839e946
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667797"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596972"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>빠른 시작: 먼저 Visual Studio IDE 살펴보기
 
@@ -197,7 +197,7 @@ Visual Studio를 사용하는 동안 문제가 발생하거나 제품을 개선�
 > [!div class="nextstepaction"]
 > [프로젝트 및 솔루션에 대한 자세한 정보](../get-started/tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio IDE 개요](../get-started/visual-studio-ide.md)
 - [Visual Studio의 추가 기능](../ide/advanced-feature-overview.md)

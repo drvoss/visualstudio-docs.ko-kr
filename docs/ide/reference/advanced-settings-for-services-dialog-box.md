@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - Advanced Settings for Services dialog box
 ms.assetid: 6dde4a2d-85e1-4275-aa55-24b84111be91
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed0ce1eecbd9bcc9508f6fc884220a59eb428df0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 967e99102f3b88e82a5466e7ce8d2cac2412d286
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652776"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585680"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>서비스의 고급 설정 대화 상자
 클라이언트 애플리케이션 서비스를 통해 Windows Forms 및 WPF(Windows Presentation Foundation) 애플리케이션에서 [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] 로그인, 역할 및 프로필 서비스에 간편하게 액세스할 수 있습니다. **프로젝트 디자이너**에서 **서비스** 페이지를 사용하여 클라이언트 애플리케이션 서비스를 구성할 수 있습니다. **서비스** 페이지에 대한 자세한 내용은 [프로젝트 디자이너, 서비스 페이지](../../ide/reference/services-page-project-designer.md)를 참조하세요.
@@ -42,7 +42,7 @@ ms.locfileid: "72652776"
 
  **사용자 지정 연결 문자열 사용** 클라이언트 서비스 공급자가 로컬 캐시에 대해 사용자 지정 데이터 저장소를 사용할지 여부를 지정합니다. 기본적으로 서비스 공급자는 캐시에 대해 로컬 파일 시스템을 사용합니다. 이 옵션을 선택하면 입력란이 기본 연결 문자열로 자동으로 채워집니다. 기본 연결 문자열을 유지하여 SQL Server Compact Edition 데이터베이스를 자동으로 생성 및 사용하거나, 기존 SQL Server 데이터베이스에 대한 연결 문자열을 지정할 수 있습니다. 자세한 내용은 [방법: 클라이언트 애플리케이션 서비스 구성](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services) 기본적으로 이 옵션은 선택 취소되어 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [클라이언트 애플리케이션 서비스](/dotnet/framework/common-client-technologies/client-application-services)
 - [프로젝트 디자이너, 서비스 페이지](../../ide/reference/services-page-project-designer.md)

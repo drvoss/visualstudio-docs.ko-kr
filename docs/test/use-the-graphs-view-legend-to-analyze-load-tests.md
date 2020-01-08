@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Load Test Analyzer, graphs view legend
 - load tests, graphs view legend
 ms.assetid: 0f6ba8e4-1343-419c-8a9f-240cf50efed7
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 17f91ba90a6a9de1c4084d4186adae6ab8388f23
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1455c67c3cb6d8dc99aeab91a7bfa63cce009c51
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659822"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590802"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>그래프 보기 범례를 사용하여 부하 테스트 분석
 
@@ -57,7 +57,7 @@ ms.locfileid: "72659822"
 > [!TIP]
 > **부하 테스트 분석기** 도구 모음에서 **그래프 옵션 드롭다운** 단추를 사용하고 **범례 표시**를 선택하여 그래프 보기와 관련된 **범례** 패널을 표시하거나 숨길 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방법: 그래프의 영역으로 확대](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
 - [그래프 뷰에서 부하 테스트 결과 분석](../test/analyze-load-test-results-in-the-graphs-view.md)

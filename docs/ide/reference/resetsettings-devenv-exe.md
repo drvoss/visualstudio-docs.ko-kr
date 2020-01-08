@@ -8,17 +8,17 @@ helpviewer_keywords:
 - /ResetSettings Devenv switch
 - settings [Visual Studio], resetting
 ms.assetid: 1d41021c-6f58-4bd5-b122-d1c995812192
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3549801001ba8df60634884dc58137a8fa77d905
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: eebcf2c6796723e51c3aefdb12575aa89779429f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655557"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593865"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings(devenv.exe)
 
@@ -59,7 +59,7 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
 
 *SettingsFile*을 지정하지 않으면 IDE가 기존 설정을 사용하여 열립니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 첫 번째 예제에서는 `MySettings.vssettings` 파일에 저장된 설정을 적용합니다.
 
@@ -71,7 +71,7 @@ devenv /resetsettings "%USERPROFILE%\MySettings.vssettings"
 devenv /resetsettings CSharp
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [환경 설정](../environment-settings.md)
 - [Visual Studio IDE 개인 설정](../../ide/personalizing-the-visual-studio-ide.md)

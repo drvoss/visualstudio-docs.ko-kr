@@ -4,17 +4,17 @@ ms.date: 10/24/2017
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: eac59cb6-f12e-4a77-9953-6d62b164a643
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: c3c5d648a5880da43d96e6741656da1023f7cf7f
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 2ef09f58d22e3cb72af5b745f16b2acf8920900e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777759"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587149"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>UWP(유니버설 Windows 플랫폼)용 앱 개발
 
@@ -68,6 +68,6 @@ C#, Visual Basic, C++ 또는 JavaScript에서 기본 설정된 개발 언어를 
 
 유니버설 Windows 앱을 만든 후 앱을 패키지하여 Windows 10 디바이스에 설치하거나 Windows 스토어에 제출해야 합니다. [앱 패키징](/windows/uwp/packaging/index)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio에서 플랫폼 간 모바일 개발](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)

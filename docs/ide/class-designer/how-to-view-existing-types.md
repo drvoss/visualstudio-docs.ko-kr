@@ -9,17 +9,17 @@ helpviewer_keywords:
 - types [Visual Studio], class diagrams
 - class diagrams, types
 ms.assetid: de110a4e-5b51-4a40-9dee-615df4d8f999
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 386b62e278b1fbe8230af16b54f8b7bb95857c48
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 04b109bfa5741a5d4349f2d503bd1c821e19029d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631527"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588709"
 ---
 # <a name="how-to-view-existing-types-in-class-designer"></a>방법: 클래스 디자이너에서 기존 형식 보기
 
@@ -61,7 +61,7 @@ ms.locfileid: "72631527"
 
 **솔루션 탐색기**나 **클래스 뷰**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **보기**, **클래스 다이어그램 보기**를 차례로 선택합니다. 자동으로 채워진 클래스 다이어그램이 만들어집니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방법: 형식 간에 상속 보기](how-to-view-inheritance-between-types.md)
 - [방법: 클래스 다이어그램 사용자 지정](how-to-customize-class-diagrams.md)

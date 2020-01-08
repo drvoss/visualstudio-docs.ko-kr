@@ -5,15 +5,15 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XML.Miscellaneous
 ms.assetid: b6538cbe-badd-4313-a1fb-39e906736bbe
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 58de904e1697a820a2f4bc6f88fbff5237cabc30
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dd468945b1ab9ac83b219b9c8c396f017065e2be
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666585"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568128"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>옵션, 텍스트 편집기, XML, 기타
 
@@ -55,7 +55,7 @@ HTTP 위치에서 스키마 및 DTD(문서 종류 정의)가 자동으로 다운
 
 스키마 캐시의 위치를 지정합니다. **찾아보기** 단추를 클릭하면 새 창에서 현재 스키마 캐시 위치를 엽니다. 기본 위치는 *%VsInstallDir%\xml\Schemas*입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [XML 옵션 - 서식 지정](options-text-editor-xml-formatting.md)
 - [Visual Studio의 XML 도구](../../xml-tools/xml-tools-in-visual-studio.md)

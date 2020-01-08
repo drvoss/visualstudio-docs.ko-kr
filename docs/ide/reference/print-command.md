@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Print method
 - Print command
 ms.assetid: 0412d381-590a-483f-bab4-6e1cca095645
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae87afb11be71af8f0582a0b2899d67ba970186e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3056570e52893f1c21eaf10c7856b21fbbc02c61
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747818"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567842"
 ---
 # <a name="print-command"></a>인쇄 명령
 
@@ -53,13 +53,13 @@ ms.locfileid: "72747818"
 
 이 명령의 두 버전은 모두 `expA` 식의 현재 값을 반환합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cmd
 >Debug.Print DateTime.Now.Day
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [문 실행 명령](../../ide/reference/evaluate-statement-command.md)
 - [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)

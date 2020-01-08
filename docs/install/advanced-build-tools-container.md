@@ -4,19 +4,19 @@ description: ''
 ms.date: 07/03/2019
 ms.topic: conceptual
 ms.assetid: e03835db-a616-41e6-b339-92b41d0cfc70
-author: heaths
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a1a9c1a8db0c4f3481e1edf220412612d70064a8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 539b21c474f9c119427e7f74192e80e7686b299c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825172"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588536"
 ---
 # <a name="advanced-example-for-containers"></a>컨테이너에 대한 고급 예제
 
@@ -37,7 +37,7 @@ ms.locfileid: "67825172"
 > [!NOTE]
 > 컨테이너에서 설치 관리자 실행 시 알려진 문제가 있는 microsoft/windowsservercore:10.0.14393.1593 또는 이를 기반으로 하는 이미지에는 Visual Studio를 설치할 수 없습니다. 자세한 내용은 [컨테이너의 알려진 문제](build-tools-container-issues.md)를 참조하세요.
 
-다음 예제에서는 최신 릴리스의 Build Tools를 다운로드합니다. 나중에 컨테이너에 설치할 수 있는 이전 버전의 Build Tools를 사용하려면 먼저 레이아웃을 [만들고](create-an-offline-installation-of-visual-studio.md) [유지](update-a-network-installation-of-visual-studio.md)해야 합니다.
+다음 예제에서는 최신 릴리스의 Build Tools를 다운로드합니다. 나중에 컨테이너에 설치할 수 있는 이전 버전의 Build Tools를 사용하려면 먼저 레이아웃을 [만들고](create-an-offline-installation-of-visual-studio.md)[유지](update-a-network-installation-of-visual-studio.md)해야 합니다.
 
 ## <a name="install-script"></a>스크립트 설치
 
@@ -211,7 +211,7 @@ The command 'cmd /S /C C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe ...' return
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [Build Tools를 컨테이너에 설치](build-tools-container.md)
 * [알려진 컨테이너 관련 문제](build-tools-container-issues.md)

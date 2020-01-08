@@ -6,17 +6,17 @@ helpviewer_keywords:
 - MSBuild, overriding ToolsVersion setting
 - MSBuild, building solutions with
 ms.assetid: ccd42c07-0fb6-4e8b-9ebb-a6a6db18aa2e
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 151e714a00a3030c2ed502a739c54c28e5ae75d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1706d0e82139da5962fbb43610cdecd6b1477ad1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006751"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590490"
 ---
 # <a name="override-toolsversion-settings"></a>ToolsVersion 설정 재정의
 다음 세 가지 방법 중 하나로 프로젝트 및 솔루션에 대한 도구 집합을 변경할 수 있습니다.
@@ -123,7 +123,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
     4. 이외에는 현재 `ToolsVersion`을 사용합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [멀티 타기팅](../msbuild/msbuild-multitargeting-overview.md)
 - [MSBuild 개념](../msbuild/msbuild-concepts.md)
 - [도구 집합(ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

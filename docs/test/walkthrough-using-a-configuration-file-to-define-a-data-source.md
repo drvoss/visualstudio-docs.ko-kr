@@ -6,17 +6,17 @@ helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
 - unit tests, walkthrough
 - data sources, defining with configuration files
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ba7ee908a96675a77997902fc96cea72309b747
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c76d71c106dbd2b5cbe63ab2f36defdfbd6cf127
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659592"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590724"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>연습: 구성 파일을 사용하여 데이터 원본 정의
 
@@ -32,7 +32,7 @@ ms.locfileid: "72659592"
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 클래스를 사용하여 데이터 원본 액세스
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 이 연습을 완료하려면 다음 사항이 필요합니다.
 
@@ -267,7 +267,7 @@ ms.locfileid: "72659592"
 > [!IMPORTANT]
 > 테스트에서 배포 디렉터리를 통해 액세스할 수 있도록 데이터 원본과 같은 항목을 배포합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 단위 테스트](../test/unit-test-your-code.md)
 - [방법: 데이터 기반 단위 테스트 만들기](../test/how-to-create-a-data-driven-unit-test.md)

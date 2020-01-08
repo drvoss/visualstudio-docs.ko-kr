@@ -7,19 +7,19 @@ helpviewer_keywords:
 - optimizing performance [Visual Studio]
 - speed up start time [Visual Studio]
 ms.assetid: d1508121-8499-4084-8eb5-fa89fa7b17d3
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 84f91b9fd6338698f3ffa918ff34011ac3d3acb6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4824939b4ef3ed1bc7fa48b2508fc891c984a3c5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666023"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585784"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Visual Studio 시작 시간 최적화
 
@@ -68,7 +68,7 @@ Visual Studio에서 시작 속도가 느린 것을 감지하면 속도 저하를
 > [!NOTE]
 > 일부 이전 버전의 Visual Studio 2017에는 **경량 솔루션 로드**라는 기능이 있습니다. 현재 버전에서는 경량 솔루션 로드 없이도 관리 코드가 포함된 대규모 솔루션이 이전보다 훨씬 빠르게 로드됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio 성능 최적화](../ide/optimize-visual-studio-performance.md)
 - [Visual Studio 성능 팁과 요령](../ide/visual-studio-performance-tips-and-tricks.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - load tests, counter sets
 - load tests, threshold rules
 ms.assetid: 9e14d955-f3a4-4717-bbfe-7f08cdda5678
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 493295bdbcd1b4906aedf6dca54e264e8ae5e8c6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 440bc01b52269c477d9d2f2194fd831041f1d20d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659963"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596322"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>부하 테스트에서 컴퓨터에 대한 카운터 집합 및 임계값 규칙 지정
 
@@ -97,7 +97,7 @@ ms.locfileid: "72659963"
 
 **초과하면 경고** 속성을 **False**로 설정하면 임계값 밑으로 떨어질 때 경고가 표시됩니다. 예를 들어 **Requests/Sec**에 임계값 규칙이 설정된 경우 값이 50을 밑돌 때 경고를 표시하려면 **상수 비교** 규칙 형식을 사용하고 **중요 임계값**을 50으로 설정한 다음, **초과하면 경고**를 **False**로 설정합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방법: 임계값 규칙 추가](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)
 - [임계값 규칙 위반 분석](../test/analyze-threshold-rule-violations-in-load-tests.md)

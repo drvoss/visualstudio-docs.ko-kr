@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, item definitions
 ms.assetid: 8e3dc223-f9e5-4974-aa0e-5dc7967419cb
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8673cb816cfd03aa5bb0f2c6ffb7aa5205a8372e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 95275f90af0fbf6f002a7e3a127e7d7ca7d08a39
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006812"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573783"
 ---
 # <a name="item-definitions"></a>항목 정의
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0에서는 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 요소를 사용하여 프로젝트 파일에서 항목의 정적 선언을 수행할 수 있습니다. 그러나 메타데이터는 모든 항목에 대해 동일하더라도 항목 수준에만 추가할 수 있습니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5부터 [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md)이라는 프로젝트 요소가 이 제한 사항을 해결합니다. *ItemDefinitionGroup*을 사용하면 명명된 항목 형식의 모든 항목에 기본 메타데이터 값을 추가하는 항목 정의 집합을 정의할 수 있습니다.
@@ -26,7 +26,7 @@ ms.locfileid: "63006812"
 
 - 항목 형식은 여러 정의를 포함할 수 있습니다. 추가 메타데이터 사양이 형식에 추가되면 마지막 사양이 우선적으로 적용됩니다. \(메타데이터는 속성이 따르는 동일한 가져오기 순서를 따릅니다.\)
 
-- 메타데이터는 가산될 수 있습니다. 예를 들어 CDefines 값은 설정되는 속성에 따라 조건부로 누적됩니다. 예를 들어, `MT;STD_CALL;DEBUG;UNICODE`을 입력합니다.
+- 메타데이터는 가산될 수 있습니다. 예를 들어 CDefines 값은 설정되는 속성에 따라 조건부로 누적됩니다. 예: `MT;STD_CALL;DEBUG;UNICODE`.
 
 - 메타데이터는 제거될 수 있습니다.
 
@@ -251,5 +251,5 @@ ItemDefinitionGroup의 정의된 전역 속성에는 해당 항목이 정의되�
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [일괄 처리](../msbuild/msbuild-batching.md)

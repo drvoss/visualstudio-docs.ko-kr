@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b91d18fe5924abe12240f31295b4853c1e932333
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 13290aef7acfe599c7693af4be771c625e713596
+ms.sourcegitcommit: d04441e3c5f2eff3a63f7aca35ccf7ecac90fb44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984613"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75735820"
 ---
 # <a name="install-python-interpreters"></a>Python 인터프리터 설치
 
@@ -42,7 +42,7 @@ Visual Studio는 [**Python 환경**](managing-python-environments-in-visual-stud
 
 | 인터프리터 | 설명 |
 | --- | --- |
-| [CPython](https://www.python.org/) | 가장 널리 사용되는 “기본” 인터프리터로, 32비트 및 64비트 버전으로 사용 가능합니다(32비트 권장). 최신 언어 기능, 최대 Python 패키지 호환성, 완전한 디버깅 지원 및 [IPython](https://ipython.org/)과 상호 interop을 포함합니다. 참고 항목: [Python 2 또는 Python 3을 사용해야 하나요?](https://wiki,python.org/moin/Python2orPython3). Visual Studio 2015 이전 버전은 Python 3.6+를 지원하지 않으며 **Python 버전 3.6이 지원되지 않음**과 같은 오류를 표시할 수 있습니다. 대신 Python 3.5 또는 이전을 사용합니다. |
+| [CPython](https://www.python.org/) | 가장 널리 사용되는 “기본” 인터프리터로, 32비트 및 64비트 버전으로 사용 가능합니다(32비트 권장). 최신 언어 기능, 최대 Python 패키지 호환성, 완전한 디버깅 지원 및 [IPython](https://ipython.org/)과 상호 interop을 포함합니다. 참고 항목: [Python 2 또는 Python 3을 사용해야 하나요?](https://wiki.python.org/moin/Python2orPython3). Visual Studio 2015 이전 버전은 Python 3.6+를 지원하지 않으며 **Python 버전 3.6이 지원되지 않음**과 같은 오류를 표시할 수 있습니다. 대신 Python 3.5 또는 이전을 사용합니다. |
 | [IronPython](https://github.com/IronLanguages/ironpython2) | Python의 .NET 구현으로, 32비트 및 64비트 버전으로 사용 가능하며 C#/F#/Visual Basic interop, .NET API에 대한 액세스, 표준 Python 디버깅(그러나 C++ 혼합 모드 디버깅은 제외) 및 혼합 IronPython/C# 디버깅을 제공합니다. 하지만 IronPython에서는 가상 환경을 지원하지 않습니다. |
 | [Anaconda](https://www.continuum.io) | Python에서 제공하는 개방형 데이터 과학 플랫폼으로, 최신 버전의 CPython과 설치하기 어려운 대부분의 패키지를 포함합니다. 달리 결정할 수 없는 경우 권장됩니다. |
 | [PyPy](https://www.pypy.org/) | Python의 고성능 추적 JIT 구현으로, 장기적으로 실행되는 프로그램과 성능 문제를 확인했으나 다른 해결 방법을 찾을 수 없는 상황에 적절합니다. Visual Studio에서 작동하지만 고급 디버깅 기능은 제한적으로 지원됩니다. |
@@ -65,7 +65,7 @@ Python 환경에 대한 새로운 검색 양식을 제공하려는 개발자인 
 
 이 프로세스를 수행하면 Visual Studio에서 사용하는 인터프리터의 위치를 식별하는 레지스트리 항목이 제대로 업데이트됩니다. 설치 관리자를 사용하면 존재할 수 있는 다른 부작용도 처리됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Python 환경 관리](managing-python-environments-in-visual-studio.md)
 - [프로젝트의 인터프리터 선택](selecting-a-python-environment-for-a-project.md)

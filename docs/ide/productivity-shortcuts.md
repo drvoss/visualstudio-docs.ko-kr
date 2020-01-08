@@ -3,17 +3,17 @@ title: 키보드 및 마우스 바로 가기
 description: 이 문서에는 생산성을 높이는 데 도움이 되는 Visual Studio의 바로 가기 키 및 마우스 바로 가기에 대한 팁이 포함되어 있습니다.
 ms.date: 11/02/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cbe2ddd87f867768c6fd7c041f6b88fbe88c44f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 71116fbc05eade8ffb89c38a922106f375b86021
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666740"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585732"
 ---
 # <a name="shortcut-tips-for-visual-studio"></a>Visual Studio 바로 가기 팁
 
@@ -22,7 +22,7 @@ ms.locfileid: "72666740"
 명령 바로 가기의 전체 목록은 [기본 바로 가기 키](../ide/default-keyboard-shortcuts-in-visual-studio.md)를 참조하세요.
 
 > [!NOTE]
-> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio의 일반적인 바로 가기 키](/visualstudio/mac/keyboard-shortcuts)를 참조하세요.
+> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio의 일반적인 바로 가기 키](/visualstudio/mac/keyboard-shortcuts)를 참조하세요.
 
 ## <a name="window-management"></a>창 관리
 
@@ -127,7 +127,7 @@ ms.locfileid: "72666740"
 |직접 실행 창 - 버퍼 지우기|**cls** 입력|
 |직접 실행 창 - 값 출력|**?varname** 입력|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [접근성 팁과 요령](../ide/reference/accessibility-tips-and-tricks.md)
 - [Visual Studio의 생산성 기능](productivity-features.md)

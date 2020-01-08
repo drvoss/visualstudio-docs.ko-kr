@@ -10,19 +10,19 @@ helpviewer_keywords:
 - installing Visual Studio, administrator guide
 - list of domains, locations, URLs
 ms.assetid: ''
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 12b8f29f80f80a4322dc6a4cf43061696db6f370
-ms.sourcegitcommit: 4b911e768601992ad42dd5911dc6a01e1fe48588
+ms.openlocfilehash: c33de2ef29394cc09b6a65072439c745ca24af94
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73413569"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594099"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>방화벽 또는 프록시 서버 배후에서 Visual Studio와 Azure 서비스 설치 및 사용
 
@@ -140,7 +140,7 @@ Visual Studio 설치 관리자는 다양한 도메인과 다운로드 서버에�
 * [Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com/)에서 기능을 제안하고, 제품 문제를 추적하고, 답변을 찾습니다.
 * [GitHub](https://github.com/)을 사용하여 [Gitter 커뮤니티의 Visual Studio 관련 대화](https://gitter.im/Microsoft/VisualStudio)에서 본사 및 다른 Visual Studio 개발자와 소통합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [Live Share 연결 요구 사항](/visualstudio/liveshare/reference/connectivity/)
 * [Visual Studio의 네트워크 설치 만들기](create-a-network-installation-of-visual-studio.md)

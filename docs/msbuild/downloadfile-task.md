@@ -17,17 +17,17 @@ helpviewer_keywords:
 - MSBuild, DownloadFile task
 ms.assetid: 916bb2e3-3017-4828-ae27-c0b5c99bbb48
 caps.latest.revision: 16
-author: Mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cde5e140bb9dd2019de684124f69096d2022fe0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 06171f3a1543f6fa827c1b6fd477b992d099fff6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821432"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590477"
 ---
 # <a name="downloadfile-task"></a>DownloadFile 작업
 HTTP(Hypertext Transfer Protocol)를 사용하여 지정된 파일을 다운로드합니다.
@@ -48,7 +48,7 @@ HTTP(Hypertext Transfer Protocol)를 사용하여 지정된 파일을 다운로�
 |`SkipUnchangedFiles`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 변경되지 않은 파일의 다운로드를 건너뜁니다. 기본값은 `true`입니다. 파일 크기가 같고 원격 서버에 따라 마지막으로 수정된 시간이 같으면 `DownloadFile` 작업에서 파일이 변경되지 않은 것으로 간주합니다. <br /><br />**참고:**  일부 HTTP 서버는 파일의 마지막으로 수정한 날짜를 표시하지 않으므로 파일이 다시 다운로드됩니다.|
 |`SourceUrl`|필수 `String` 매개 변수입니다.<br /><br /> 다운로드할 URL을 지정합니다.|
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.
 
 ## <a name="example"></a>예제
@@ -72,6 +72,6 @@ HTTP(Hypertext Transfer Protocol)를 사용하여 지정된 파일을 다운로�
 </Project>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [작업](../msbuild/msbuild-tasks.md)
 - [작업 참조](../msbuild/msbuild-task-reference.md)

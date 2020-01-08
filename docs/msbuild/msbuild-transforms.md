@@ -6,17 +6,17 @@ helpviewer_keywords:
 - MSBuild, transforms
 - transforms [MSBuild]
 ms.assetid: d0bcfc3c-14fa-455e-805c-63ccffa4a3bf
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a3875e508105bbe23b1d5cbdcd863a058592537
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.openlocfilehash: 5c4262ed1a7b92170565f7006c9ed06ed884f928
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67852181"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593774"
 ---
 # <a name="msbuild-transforms"></a>MSBuild 변환
 변환은 항목 목록 간의 일대일 변환입니다. 변환을 수행하면 프로젝트가 항목 목록을 변환할 수 있을 뿐만 아니라, 대상이 입력과 출력 간의 직접 매핑을 식별할 수 있습니다. 이 항목에서는 변환 및 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에서 변환을 사용하여 보다 효율적으로 프로젝트를 빌드하는 방법을 설명합니다.
@@ -61,7 +61,7 @@ ms.locfileid: "67852181"
 </Target>
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ### <a name="description"></a>설명
  다음 예제에서는 변환을 사용하는 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트 파일을 보여줍니다. 이 예제에서는 *c:\sub0\sub1\sub2\sub3* 디렉터리에 *.xsd* 파일 하나만 있고 작업 디렉터리가 *c:\sub0*이라고 가정합니다.
@@ -87,7 +87,7 @@ ms.locfileid: "67852181"
 </Project>
 ```
 
-### <a name="comments"></a>설명
+### <a name="comments"></a>주석
  이 예제는 다음과 같은 출력을 생성합니다.
 
 ```
@@ -101,7 +101,7 @@ relativedir: sub1\sub2\sub3\
 extension: .xsd
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [MSBuild 개념](../msbuild/msbuild-concepts.md)
 - [MSBuild 참조](../msbuild/msbuild-reference.md)
 - [방법: 증분 방식으로 빌드](../msbuild/how-to-build-incrementally.md)

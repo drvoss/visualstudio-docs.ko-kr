@@ -9,17 +9,17 @@ helpviewer_keywords:
 - class diagrams, adding comment shapes
 - comment shapes
 ms.assetid: d54005d5-a29d-4c4e-b153-feb6e84dd44f
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc778700873b79eb9fc2ec4fa1dd90d631993622
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a46ad971fa9b68de25b55c6c4c882f29c71d6b68
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631876"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592258"
 ---
 # <a name="how-to-add-comments-to-class-diagrams"></a>방법: 클래스 다이어그램에 설명 추가
 
@@ -35,7 +35,7 @@ ms.locfileid: "72631876"
 
 2. 다이어그램에서 새 주석 도형을 클릭하고 원하는 텍스트를 입력합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [클래스 다이어그램 작업](designing-and-viewing-classes-and-types.md)
 - [방법: 클래스 다이어그램 사용자 지정](how-to-customize-class-diagrams.md)

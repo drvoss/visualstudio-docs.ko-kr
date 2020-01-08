@@ -11,17 +11,17 @@ helpviewer_keywords:
 - MSBuild, WriteCodeFragment task
 - WriteCodeFragment task [MSBuild]
 ms.assetid: 1d2514b4-5bef-43bb-bebe-496da8ef063c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59938817c06a29b8842cbbe080ef8b477af5d39e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3745e1c2f300c860d281752a0bf81359806c5d5e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778162"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567400"
 ---
 # <a name="writecodefragment-task"></a>WriteCodeFragment 작업
 생성된 특정 코드 조각에서 임시 코드 파일을 생성합니다. 파일을 삭제하지는 않습니다.
@@ -36,9 +36,9 @@ ms.locfileid: "62778162"
 |`OutputDirectory`|선택적 <xref:Microsoft.Build.Framework.ITaskItem> 매개 변수입니다.<br /><br /> 생성된 코드에 대한 대상 폴더를 지정합니다. 일반적으로 중간 폴더입니다.|
 |`OutputFile`|선택적 <xref:Microsoft.Build.Framework.ITaskItem> 출력 매개 변수입니다.<br /><br /> 생성된 파일의 경로를 지정합니다. 이 매개 변수가 파일 이름을 사용하여 설정된 경우 대상 폴더는 파일 이름에 추가됩니다. 루트를 사용하여 설정된 경우 대상 폴더는 무시됩니다.<br /><br /> 이 매개 변수가 설정되지 않은 경우 출력 파일 이름은 지정된 언어에 대한 대상 폴더, 임의의 파일 이름 및 기본 파일 이름 확장명입니다.|
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
  이 작업은 표에 나열된 매개 변수 외에, <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [작업](../msbuild/msbuild-tasks.md)
 - [작업 참조](../msbuild/msbuild-task-reference.md)

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, multiple UI maps
 - coded UI tests, for large applications
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86a4ad5c44c124ee7faf9ac633f2a78685adb426
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9fa5afd01ad25d4eebdc0b29e924cb2430d9c775
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659903"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590295"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>여러 UI 맵이 포함된 대형 애플리케이션 테스트
 
@@ -79,7 +79,7 @@ UI 맵 파일을 여러 개 사용하면 다음과 같은 이점을 얻을 수 �
 
    이러한 영향을 최소화하려면 `CopyFrom()` 메서드를 사용하여 해당 UI 맵의 새 최상위 창이 주 최상위 창과 동일한지 확인할 수 있습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제는 다양한 UI 맵에서 생성된 클래스로 표현되는 각 구성 요소 및 해당 자식 컨트롤에 액세스할 수 있는 유틸리티 클래스의 일부입니다.
 
@@ -139,7 +139,7 @@ namespace ContosoProject
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>

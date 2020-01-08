@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - System.Activities.Presentation.View.DesignTimeVariable.UI
 ms.assetid: 0318dfb0-bf8f-4f92-9b86-ae4c1b2161ad
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59a0da5ad0345ba0733f52d087b262bdc706cd21
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ec5e6d16d17024b0b49f977b87ddacc275e5860
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650246"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593176"
 ---
 # <a name="how-to-use-the-variable-designer"></a>방법: 변수 디자이너 사용
 
@@ -31,7 +31,7 @@ ms.locfileid: "72650246"
 
 3. 디자인 캔버스의 왼쪽 아래 모퉁이에 있는 **변수** 단추를 클릭 하 여 변수 디자이너를 엽니다. 변수 디자이너가 나타납니다.
 
-4. **변수 만들기**라는 빈 행을 클릭 합니다. 그러면 다음 기본값을 사용 하 여 새 변수를 사용 하 여 새 행을 **추가 합니다. 여기서 x** 는 초기 값이 1 인 정수입니다. 여기서 x는 고유 변수 이름을 만들기 위해 자동으로 증가 하는 정수이 고, 변수에 대 한 **문자열** 은 variablex입니다.및 **범위의** **시퀀스** 를 입력 합니다. **기본값**에는 값이 추가 되지 않습니다. 워크플로 디자인 프로세스 중 언제라도 이러한 값을 변경할 수 있습니다.
+4. **변수 만들기**라는 빈 행을 클릭 합니다. 그러면 다음 기본값을 사용 하 여 새 변수를 사용 하 여 새 행을 **추가 합니다. 여기서 x** 는 초기 값이 1 인 정수입니다. 여기서 x는 고유 변수 이름, **변수 형식**에 대 한 문자열, **범위** **에 대 한** **문자열** 을 만들기 위해 자동으로 증가 하는 정수 variablex. **기본값**에는 값이 추가 되지 않습니다. 워크플로 디자인 프로세스 중 언제라도 이러한 값을 변경할 수 있습니다.
 
     > [!NOTE]
     > 변수를 삭제 하려면 변수를 클릭 하 여 선택한 다음 **delete** 키를 누릅니다.

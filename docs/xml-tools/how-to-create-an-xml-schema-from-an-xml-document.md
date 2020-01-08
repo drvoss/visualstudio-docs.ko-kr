@@ -3,17 +3,17 @@ title: XML 스키마 만들기
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 1d6700a9-fd67-4794-8997-399589e99bec
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73563d732aab48192892794c15750bc9e5d3eb6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 857b75f22d45cbabc22062fd14b385e8f6ea5f14
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645960"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592778"
 ---
 # <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>방법: XML 문서에서 XML 스키마 만들기
 
@@ -33,7 +33,7 @@ Xml 편집기를 사용 하 여 xml 문서에서 XSD (XML 스키마 정의 언�
 
 1. Visual Studio에서 XML 파일을 엽니다.
 
-2. 메뉴 모음에서 **XML**  > **스키마 만들기**를 선택 합니다.
+2. 메뉴 모음에서 **XML** > **스키마 만들기**를 선택 합니다.
 
    Xml 파일에 있는 각 네임 스페이스에 대해 XML 스키마 문서가 만들어지고 열립니다. 각 스키마는 임시 기타 파일로 열립니다. 스키마를 디스크에 저장하거나 프로젝트에 추가 또는 삭제할 수 있습니다.
 

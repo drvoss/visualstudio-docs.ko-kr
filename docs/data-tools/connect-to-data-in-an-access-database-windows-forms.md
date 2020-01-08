@@ -7,23 +7,23 @@ helpviewer_keywords:
 - connecting to data, Access databases
 - Access databases, connecting
 ms.assetid: 4159e815-d430-4ad0-a234-e4125fcbef18
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 65fa8b823a49644110dc773eb614da6022f4e8f5
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: deb163779110c50560787b35ad7744f90f6a7f36
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924513"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586863"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Access 데이터베이스의 데이터에 연결
 
 Visual Studio를 사용 하 여 Access 데이터베이스 ( *.mdb* 파일 또는 *.accdb* 파일)에 연결할 수 있습니다. 연결을 정의한 후 **데이터 원본** 창에 데이터가 나타납니다. 여기에서 테이블 또는 뷰를 디자인 화면으로 끌 수 있습니다.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>전제 조건
 
 이러한 절차를 사용 하려면 Windows Forms 또는 WPF 프로젝트와 Access 데이터베이스 ( *.accdb* 파일) 또는 access 2000-2003 데이터베이스 ( *.mdb* 파일)가 필요 합니다. 파일 형식에 해당하는 절차를 따릅니다.
 
@@ -33,7 +33,7 @@ Visual Studio를 사용 하 여 Access 데이터베이스 ( *.mdb* 파일 또는
 
 1. Visual Studio에서 Windows Forms 또는 WPF 응용 프로그램 프로젝트를 엽니다.
 
-2. **데이터 소스** 창을 열려면 **보기** 메뉴에서 **다른 창**  > **데이터 소스**를 선택 합니다.
+2. **데이터 소스** 창을 열려면 **보기** 메뉴에서 **다른 창** > **데이터 소스**를 선택 합니다.
 
    ![다른 창 데이터 소스 보기](../data-tools/media/viewdatasources.png)
 
@@ -75,7 +75,7 @@ Visual Studio를 사용 하 여 Access 데이터베이스 ( *.mdb* 파일 또는
 
 1. Visual Studio에서 Windows Forms 또는 WPF 응용 프로그램 프로젝트를 엽니다.
 
-2. **보기** 메뉴에서 **다른 Windows**  > **데이터 원본**을 선택 합니다.
+2. **보기** 메뉴에서 **다른 Windows** > **데이터 원본**을 선택 합니다.
 
    ![다른 창 데이터 소스 보기](../data-tools/media/viewdatasources.png)
 

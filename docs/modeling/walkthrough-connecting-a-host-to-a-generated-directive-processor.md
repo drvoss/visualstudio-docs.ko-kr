@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], connecting host to processor
 - text templates, custom directive hosts
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: d474de7da459e9639e8ec9f29f34e59267388b50
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: a27b856b9c5129f725381afa34bd134009002216
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984419"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593982"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>연습: 생성된 지시문 프로세서에 호스트 연결
 
@@ -37,7 +37,7 @@ ms.locfileid: "72984419"
 
 - 생성 된 지시문 프로세서를 사용 하 여 사용자 지정 호스트 테스트
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>전제 조건
 
 DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
@@ -94,19 +94,19 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
      **참조 추가** 대화 상자가 열리고 **.net** 탭이 표시 됩니다.
 
-3. 다음 참조를 추가 합니다.
+3. 다음 참조를 추가합니다.
 
-    - VisualStudio입니다.
+    - Microsoft.VisualStudio.Modeling.Sdk.11.0
 
-    - VisualStudio (영문).
+    - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
 
-    - VisualStudio. TextTemplating 11.0
+    - Microsoft.VisualStudio.TextTemplating.11.0
 
-    - VisualStudio. * 11.0
+    - Microsoft.VisualStudio.TextTemplating.Interfaces.11.0
 
-    - VisualStudio. i.
+    - Microsoft.VisualStudio.TextTemplating.Modeling.11.0
 
-    - VisualStudio. Vshost.exe.
+    - Microsoft.VisualStudio.TextTemplating.VSHost.11.0
 
 4. Program.cs 또는 module1.vb의 맨 위에 다음 코드 줄을 추가 합니다.
 
@@ -312,7 +312,7 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
     #>
     ```
 
-3. 코드에서 \<YOUR PATH >을 첫 번째 절차에서 만든 디자인 특정 언어의 샘플. min 파일 경로로 바꿉니다.
+3. 코드에서 \<경로 >을 첫 번째 절차에서 만든 디자인 특정 언어의 샘플. min 파일 경로로 바꿉니다.
 
 4. 파일을 저장한 후 닫습니다.
 

@@ -3,17 +3,17 @@ title: 작업 영역에 XML 스키마 집합 검색 결과 노드 추가
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ff33b3cc-4db9-4b4e-9378-b45ed5999b18
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be024ac139d2b420f56b14158afd33ae5b7e917d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1bdb21c2b9ce3f6a79bf24738c84fcb3064c24cb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646027"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592791"
 ---
 # <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>방법: 작업 영역에 스키마 집합 검색 결과 노드 추가
 
@@ -38,4 +38,4 @@ ms.locfileid: "72646027"
 
      ![XML 스키마 탐색기 검색 결과](../xml-tools/media/schemaexplorersearchresult.gif)
 
-     [그래프 뷰의](../xml-tools/graph-view.md)디자인 화면에서 `purchaseOrder` 노드와 `PurchaseOrderType` 노드가 서로 옆에 표시 됩니다. 이 두 노드는 서로 관련되어 있으므로(`purchaseOrder` 요소가 `PurchaseOrderType` 형식임) 두 노드 사이에 화살표가 그려집니다.
+     `purchaseOrder` 노드 및 `PurchaseOrderType` 노드가 [그래프 뷰](../xml-tools/graph-view.md)의 디자인 화면에서 서로 옆에 표시 됩니다. 이 두 노드는 서로 관련되어 있으므로(`purchaseOrder` 요소가 `PurchaseOrderType` 형식임) 두 노드 사이에 화살표가 그려집니다.

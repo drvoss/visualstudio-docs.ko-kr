@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83edb231819a47c3c8a6f7a1943ae9086e06467d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8a10252d8465373c8637681763e59511b1e2d621
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653892"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596673"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>사용자 지정 지시문 처리기 배포
 
@@ -52,25 +52,25 @@ Visual Studio 또는 MSBuild에서 텍스트 템플릿을 변환 하려는 경�
 
     1. VSIX 매니페스트 편집기의 **자산** 탭에서 **새로 만들기** 를 선택 하 고 새 항목의 속성을 설정 합니다.
 
-         **콘텐츠 형식**  = **VSPackage**
+         **콘텐츠 형식** = **VSPackage**
 
-         *현재 프로젝트* \<  =  **소스 프로젝트** >
+         *현재 프로젝트* \< = **소스 프로젝트**>
 
     2. **선택한 버전** 을 클릭 하 고 지시문 프로세서를 사용할 설치 유형을 확인 합니다.
 
 3. .pkgdef 파일을 추가하고 VSIX에 포함할 속성을 설정합니다.
 
-    1. 텍스트 파일을 만들고 이름을*assemblyName*>. .pkgdef로 \< 합니다.
+    1. 텍스트 파일을 만들고 이름을 *assemblyName*>. .pkgdef로 \<합니다.
 
          \<*assemblyName*>는 일반적으로 프로젝트 이름과 동일 합니다.
 
     2. 솔루션 탐색기에서 이 파일을 선택하고 다음과 같이 속성을 설정합니다.
 
-         **빌드 작업**  = **콘텐츠**
+         **빌드 작업** = **콘텐츠**
 
-         **출력 디렉터리에 복사**  = **항상 복사**
+         **출력 디렉터리에 복사** = **항상 복사**
 
-         **VSIX에 포함**  = **True**
+         **VSIX에 포함** = **True**
 
     3. VSIX의 이름을 설정하고 ID가 고유한지 확인합니다.
 
@@ -89,11 +89,11 @@ Visual Studio 또는 MSBuild에서 텍스트 템플릿을 변환 하려는 경�
 
 5. 프로젝트에 다음 참조를 추가합니다.
 
-    - **VisualStudio \*.0**
+    - **Microsoft.VisualStudio.TextTemplating.\*.0**
 
-    - **VisualStudio. \*.0**
+    - **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**
 
-    - **VisualStudio Vshost.exe \*.0**
+    - **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**
 
 6. 사용자 지정 지시문 프로세서 클래스를 프로젝트에 추가합니다.
 
@@ -124,7 +124,7 @@ Visual Studio 또는 MSBuild에서 텍스트 템플릿을 변환 하려는 경�
 
 - `IsDirectiveSupported` 메서드가 `true`의 이름이 전달될 때 `CustomDirective`를 반환해야 합니다.
 
-- 확장 관리자에서 확장을 볼 수 없지만 시스템에서 확장을 설치할 수 없는 경우 **%localappdata%\Microsoft\VisualStudio \\ \* .0 \ 확장 \\** 에서 확장을 삭제 합니다.
+- 확장 관리자에서 확장을 볼 수 없지만 시스템에서 확장을 설치할 수 없는 경우 **%localappdata%\Microsoft\VisualStudio\\\*.0 \ 확장\\** 에서 확장을 삭제 합니다.
 
 - .vsix 파일을 열고 파일 내용을 검사합니다. 이 파일을 열려면 파일 확장명을 .zip으로 변경합니다. 이 파일에 .dll, .pkgdef 및 extension.vsixmanifest 파일이 포함되어 있는지 확인합니다. extension.vsixmanifest 파일은 SupportedProducts 노드에 적절한 목록을 포함해야 하며 Content 노드 아래에 VsPackage 노드를 포함해야 합니다.
 
@@ -164,7 +164,7 @@ Visual Studio 또는 MSBuild에서 텍스트 템플릿을 변환 하려는 경�
 
 2. regedit에서 다음 레지스트리 키로 이동합니다.
 
-    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio \\ \*.0 \ .0\ Texttemplating\directiveprocessors**
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**
 
     실험 버전의 Visual Studio에 지시문 프로세서를 설치 하려는 경우 "11.0" 뒤에 "Exp"를 삽입 합니다.
 
@@ -182,20 +182,20 @@ Visual Studio 또는 MSBuild에서 텍스트 템플릿을 변환 하려는 경�
 
    사용자 지정 지시문 프로세서가 GAC에 없는 경우 레지스트리 하위 키는 다음 표와 같습니다.
 
-|name|type|데이터|
+|이름|형식|데이터|
 |-|-|-|
 |(기본값)|REG_SZ|(값 설정 안 됨)|
-|클래스|REG_SZ|**\<Namespace 이름 >입니다. \<Class 이름 >**|
-|CodeBase|REG_SZ|**어셈블리 이름 < \\ > 경로를 \<Your \>**|
+|클래스|REG_SZ|**\<네임 스페이스 이름 >입니다.\<클래스 이름 >**|
+|CodeBase|REG_SZ|**어셈블리 이름 <\\> 경로를 \<\>**|
 
  어셈블리가 GAC에 있는 경우 레지스트리 하위 키는 다음 표와 같습니다.
 
-|name|형식|데이터|
+|이름|형식|데이터|
 |-|-|-|
 |(기본값)|REG_SZ|(값 설정 안 됨)|
-|클래스|REG_SZ|정규화 된**클래스 이름을** \< >|
-|Assembly|REG_SZ|**GAC에 어셈블리 이름을** \< >|
+|클래스|REG_SZ|정규화 된 **클래스 이름을** \<>|
+|어셈블리|REG_SZ|**GAC에 어셈블리 이름을** \<>|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [사용자 지정 T4 텍스트 템플릿 지시문 프로세서 만들기](../modeling/creating-custom-t4-text-template-directive-processors.md)

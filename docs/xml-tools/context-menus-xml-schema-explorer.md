@@ -3,17 +3,17 @@ title: XML 스키마 탐색기의 상황에 맞는 메뉴
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9310102177e19d2129dd620285d6c45df63ec78
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f7224ca09588858398a0f45c35008ddd5ba0af71
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651198"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592895"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>상황에 맞는 메뉴 (XML 스키마 탐색기)
 
@@ -36,7 +36,7 @@ ms.locfileid: "72651198"
 |옵션|설명|
 |-|-----------------|
 |**모든 인바운드 참조 표시**|선택된 네임스페이스를 가져오는 파일을 찾아서 강조 표시합니다.|
-|**모든 아웃 바운드 참조 표시**|선택된 네임스페이스의 모든 파일에 대해 다음 항목을 찾아서 강조 표시합니다.<br /><br /> -@No__t_0 특성이 없는 import 문에서 참조 된 모든 네임 스페이스입니다.<br />-Import 및 include 문의 `schemaLocation` 특성에 지정 된 네임 스페이스 이외의 네임 스페이스에 있는 모든 파일|
+|**모든 아웃 바운드 참조 표시**|선택된 네임스페이스의 모든 파일에 대해 다음 항목을 찾아서 강조 표시합니다.<br /><br /> -`schemaLocation` 특성이 없는 import 문에서 참조 된 모든 네임 스페이스입니다.<br />-Import 및 include 문의 `schemaLocation` 특성에 지정 된 네임 스페이스 이외의 네임 스페이스에 있는 모든 파일|
 |**전역 형식 표시**|선택된 네임스페이스에서 모든 전역 형식을 찾아서 강조 표시합니다.|
 |**전역 요소 표시**|선택된 네임스페이스에서 모든 전역 요소를 찾아서 강조 표시합니다.|
 |**속성 창**|아직 열려 있지 않은 경우 **속성** 창을 엽니다. 이 창에서 노드에 대한 정보를 표시합니다.|
@@ -47,7 +47,7 @@ ms.locfileid: "72651198"
 |옵션|설명|
 |-|-----------------|
 |**모든 인바운드 참조 표시**|include 문과 import 문의 `schemaLocation` 특성에서 선택된 파일을 지정하는 모든 파일을 찾아서 강조 표시합니다.|
-|**모든 아웃 바운드 참조 표시**|다음 항목을 찾아서 강조 표시합니다.<br /><br /> -@No__t_0 특성이 없는 모든 import 문의 네임 스페이스 특성에 지정 된 모든 네임 스페이스입니다.<br />-모든 import 및 include 문의 `schemaLocation` 특성에 지정 된 모든 파일|
+|**모든 아웃 바운드 참조 표시**|다음 항목을 찾아서 강조 표시합니다.<br /><br /> -`schemaLocation` 특성이 없는 모든 import 문의 네임 스페이스 특성에 지정 된 모든 네임 스페이스입니다.<br />-모든 import 및 include 문의 `schemaLocation` 특성에 지정 된 모든 파일|
 |**전역 형식 표시**|이 파일에서 모든 전역 형식을 찾아서 강조 표시합니다.|
 |**전역 요소 표시**|이 파일에서 모든 전역 요소를 찾아서 강조 표시합니다.|
 |**코드 보기**|XML 편집기에서 선택한 노드를 포함 하는 파일을 엽니다. Xml 스키마 탐색기에서 선택한 항목은 XML 편집기 에서도 선택 됩니다.|

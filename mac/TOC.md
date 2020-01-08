@@ -25,6 +25,7 @@
 ## [새 프로젝트 만들기](create-new-projects.md)
 ## [프로젝트 항목 추가 및 제거](add-and-remove-project-items.md)
 ## [솔루션 및 프로젝트 속성 관리](managing-solutions-and-project-properties.md)
+## [멀티 타기팅](project-multitargeting.md)
 ## 프로젝트의 참조 관리
 ### [개요](managing-references-in-a-project.md)
 ### [연습 - 프로젝트에서 NuGet 패키지 포함](nuget-walkthrough.md)
@@ -35,6 +36,8 @@
 ## [편집기 기능](source-editor.md)
 ## [리팩터링](refactoring.md)
 ## [IntelliSense](intellisense.md)
+## [가져오기 항목 표시](show-imports.md)
+## [다중 캐럿 편집](multi-caret-editing.md)
 ## [설명](comments.md)
 ## [편집기 동작](editor-behavior.md)
 ## [작업 설명](task-comments.md)
@@ -47,6 +50,7 @@
 # 디버깅
 ## [개요](debugging.md)
 ## [데이터 시각화](data-visualizations.md)
+## [소스 링크를 사용하여 NuGet 패키지 디버그](source-link.md)
 
 # 컴파일 및 빌드
 ## [개요](compiling-and-building.md)

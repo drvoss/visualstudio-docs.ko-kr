@@ -4,27 +4,27 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, events
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 537f41418b6e66055acd9bedd5f0ccf4e01db524
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fbe09c242fce137d90b90ff2d6c547cee1ed2dc7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660333"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595399"
 ---
 # <a name="respond-to-and-propagate-changes"></a>변경 내용에 대 한 응답 및 전파
 
 요소가 만들어지거나 삭제 되거나 업데이트 되 면 변경 내용을 모델의 다른 부분 또는 파일, 데이터베이스 또는 기타 구성 요소와 같은 외부 리소스에 전파 하는 코드를 작성할 수 있습니다.
 
-## <a name="reference"></a>참고
+## <a name="reference"></a>참조
 
 지침으로 다음과 같은 방법으로 이러한 기술을 고려 합니다.
 
-|기법은|시나리오|추가 정보|
+|방법|시나리오|추가 정보|
 |-|-|-|
 |계산 된 도메인 속성을 정의 합니다.|모델의 다른 속성에서 값을 계산 하는 도메인 속성입니다. 예를 들어 관련 된 요소 가격의 합계인 가격입니다.|[계산된 스토리지 속성 및 사용자 지정 스토리지 속성](../modeling/calculated-and-custom-storage-properties.md)|
 |사용자 지정 저장소 도메인 속성을 정의 합니다.|모델의 다른 부분이 나 외부에 저장 된 도메인 속성입니다. 예를 들어 모델의 트리로 식 문자열을 구문 분석할 수 있습니다.|[계산된 스토리지 속성 및 사용자 지정 스토리지 속성](../modeling/calculated-and-custom-storage-properties.md)|
@@ -44,9 +44,9 @@ ms.locfileid: "72660333"
 
 저장소 이벤트를 사용 하 여 저장소 외부의 개체와 모델을 동기화 하 고 저장소 내에서 일관성을 유지 하는 규칙을 사용 합니다.
 
-- **사용자 지정 규칙 만들기** 추상 규칙에서 파생 클래스로 사용자 지정 규칙을 만듭니다. 또한 사용자 지정 규칙에 대해 프레임 워크에 알려야 합니다. 자세한 내용은 [모델 내에서 변경 내용 전파 규칙](../modeling/rules-propagate-changes-within-the-model.md)을 참조 하세요.
+- **사용자 지정 규칙 만들기** 추상 규칙에서 파생 클래스로 사용자 지정 규칙을 만듭니다. 또한 사용자 지정 규칙에 대해 프레임 워크에 알려야 합니다. 자세한 내용은 [규칙이 전파 변경 내용을 내에서 모델](../modeling/rules-propagate-changes-within-the-model.md)합니다.
 
-- **이벤트 구독** 이벤트를 구독 하려면 이벤트 처리기를 만들고을 위임 합니다. 그런 다음 <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>property를 사용 하 여 이벤트를 구독 합니다. 자세한 내용은 [이벤트 처리기가 모델 외부에서 변경 내용을 전파](../modeling/event-handlers-propagate-changes-outside-the-model.md)하는 방법을 참조 하세요.
+- **이벤트 구독** 이벤트를 구독 하려면 이벤트 처리기를 만들고을 위임 합니다. 그런 다음 <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>속성을 사용 하 여 이벤트를 구독 합니다. 자세한 내용은 [이벤트 처리기가 모델 외부에서 변경 내용을 전파](../modeling/event-handlers-propagate-changes-outside-the-model.md)하는 방법을 참조 하세요.
 
 - **변경 취소** 트랜잭션을 실행 취소 하면 이벤트가 발생 하지만 규칙은 적용 되지 않습니다. 규칙에서 값을 변경 하 고 해당 변경 내용을 실행 취소 하면 실행 취소 작업 중에 값이 원래 값으로 다시 설정 됩니다. 이벤트가 발생 하는 경우 값을 다시 원래 값으로 다시 변경 해야 합니다. 트랜잭션 및 실행 취소에 대해 자세히 알아보려면 [방법: 트랜잭션을 사용 하 여 모델 업데이트](../modeling/how-to-use-transactions-to-update-the-model.md)를 참조 하세요.
 

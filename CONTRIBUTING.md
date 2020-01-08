@@ -6,11 +6,11 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62419845"
 ---
-# <a name="contribute-to-visual-studio-documentation"></a>Visual Studio 설명서에 기여
+# <a name="contribute-to-visual-studio-documentation"></a>Visual Studio 설명서에 기여하기
 
 시간을 내어 Visual Studio 문서에 기여해 주셔서 감사합니다.
 
-이 가이드에서는 기여에 대한 몇 가지 일반 토픽을 다루고 자세한 설명에 대한 docs.microsoft.com [기여자 가이드](https://docs.microsoft.com/contribute)를 언급합니다.
+이 가이드에서는 기여에 대한 몇 가지 일반 토픽을 다루고 자세한 설명에 대해서는 docs.microsoft.com [기여자 가이드](https://docs.microsoft.com/contribute)를 언급합니다.
 
 ## <a name="code-of-conduct"></a>사용 규정
 
@@ -36,4 +36,4 @@ ms.locfileid: "62419845"
 
 **참고**
 
-Visual Studio 2015(이전 버전의 제품)용이므로 `docs/vs-2015` 폴더에 있는 파일에 대해서는 적극적으로 작업하고 있지 않습니다. 이러한 파일에 변경에 대한 사소한 끌어오기 요청을 허용하지 않습니다.
+`docs/vs-2015` 폴더에 있는 파일들은 Visual Studio 2015(이전 버전의 제품)용이므로 적극적으로 작업하고 있지 않습니다. 이러한 파일에 변경에 대한 사소한 끌어오기 요청을 허용하지 않습니다.

@@ -4,17 +4,17 @@ ms.date: 04/29/2019
 ms.topic: reference
 helpviewer_keywords:
 - roslyn package versions
-author: jillre
-ms.author: jillfra
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1965b0a2aa4b87dacee6f7cd1e1d2d7bc5c36819
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9c05b9533461cbf233c2e5fd323f3723f7fc6bec
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647933"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590789"
 ---
 # <a name="net-compiler-platform-package-version-reference"></a>.NET 컴파일러 플랫폼 패키지 버전 참조
 
@@ -24,11 +24,11 @@ ms.locfileid: "72647933"
 
 | Roslyn 패키지 버전 | 지원 되는 최소 Visual Studio 버전 |
 | - | - |
-| 에서처럼 | Visual Studio 2019 |
+| 3.x | Visual Studio 2019 |
 | 2.10.0 | Visual Studio 2017 버전 15.9 |
 | 2.9.0 | Visual Studio 2017 버전 15.8 |
 | 2.8.2 | Visual Studio 2017 버전 15.7 |
-| 합니다 | Visual Studio 2017 버전 15.6 |
+| 2.7.0 | Visual Studio 2017 버전 15.6 |
 | 2.6.1 | Visual Studio 2017 15.5 버전 |
 | 2.4.0 | Visual Studio 2017 버전 15.4 |
 | 2.3.2 | Visual Studio 2017 15.3 버전 |

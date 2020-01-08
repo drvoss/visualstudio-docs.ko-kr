@@ -3,21 +3,21 @@ title: XML 스키마 디자이너 콘텐츠 모델 뷰
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67453571963ae22910842be0021e008632942de5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 830dbdda0027551a25747235e6ad9dffbbc11b23
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661535"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592915"
 ---
 # <a name="content-model-view"></a>콘텐츠 모델 뷰
 
-콘텐츠 모델 뷰에서는 단순/복합 형식, 요소, 모델 그룹, 특성 및 특성 그룹을 포함하여 로컬 스키마 노드와 전역 스키마 노드는 물론 해당 구성 요소를 그래픽으로 표현할 수 있습니다. XML 주석과 처리 명령은 콘텐츠 모델 뷰에서 볼 수 없습니다. 콘텐츠 모델 뷰에는 두 개의 패널, 즉 [XML 스키마 디자이너 작업 영역](../xml-tools/xml-schema-designer-workspace.md)에 노드 목록이 포함 된 **작업 영역** 패널과 **작업 영역에서 선택한 스키마 노드의 콘텐츠 모델을 볼 수 있는 디자인 화면이 포함 되어 있습니다.** 패널. 콘텐츠 모델 뷰에는 XML 스키마 디자이너 도구 모음과 이동 경로 탐색 막대도 들어 있습니다.
+콘텐츠 모델 뷰에서는 단순/복합 형식, 요소, 모델 그룹, 특성 및 특성 그룹을 포함하여 로컬 스키마 노드와 전역 스키마 노드는 물론 해당 구성 요소를 그래픽으로 표현할 수 있습니다. XML 주석과 처리 명령은 콘텐츠 모델 뷰에서 볼 수 없습니다. 콘텐츠 모델 뷰에는 두 개의 패널, 즉 [XML 스키마 디자이너 작업 영역](../xml-tools/xml-schema-designer-workspace.md)에 노드 목록이 포함 된 **작업 영역** 패널과 **작업 영역** 패널에서 선택한 스키마 노드의 콘텐츠 모델을 볼 수 있는 디자인 화면이 있습니다. 콘텐츠 모델 뷰에는 XML 스키마 디자이너 도구 모음과 이동 경로 탐색 막대도 들어 있습니다.
 
 다음 그림의 **작업 영역** 패널에는 6 개의 스키마 노드가 포함 되어 있습니다. **작업 영역** 패널에서 `purchaseOrder` 노드가 선택 되 고 디자인 화면에 표시 됩니다.
 
@@ -81,9 +81,9 @@ ms.locfileid: "72661535"
 
 |옵션|설명|
 |-|-----------------|
-|**시작 뷰 표시**|[시작 뷰로](../xml-tools/start-view.md)전환 합니다. 이 보기에는 바로 가기 키 ( **Ctrl** +**1)** 를 사용 하 여 액세스할 수 있습니다.|
-|**콘텐츠 모델 뷰 표시**|[콘텐츠 모델 뷰로](../xml-tools/content-model-view.md)전환 합니다. 이 보기는 키보드 바로 가기: **Ctrl** +**2**를 사용 하 여 액세스할 수 있습니다.|
-|**그래프 뷰 표시**|[그래프 뷰로](../xml-tools/graph-view.md)전환 합니다. 이 보기에는 바로 가기 키 ( **Ctrl** +**3**)를 사용 하 여 액세스할 수 있습니다.|
+|**시작 뷰 표시**|[시작 뷰로](../xml-tools/start-view.md)전환 합니다. 이 보기에는 바로 가기 키 ( **Ctrl**+**1)** 를 사용 하 여 액세스할 수 있습니다.|
+|**콘텐츠 모델 뷰 표시**|[콘텐츠 모델 뷰로](../xml-tools/content-model-view.md)전환 합니다. 이 보기는 키보드 바로 가기: **Ctrl**+**2**를 사용 하 여 액세스할 수 있습니다.|
+|**그래프 뷰 표시**|[그래프 뷰로](../xml-tools/graph-view.md)전환 합니다. 이 보기에는 바로 가기 키 ( **Ctrl**+**3**)를 사용 하 여 액세스할 수 있습니다.|
 |**작업 영역 지우기**|작업 영역 및 디자인 화면을 지웁니다.|
 |**작업 영역에서 제거**|작업 영역 및 디자인 화면에서 선택한 노드를 제거합니다.|
 |**작업 영역에서 선택 항목을 제외한 모든 항목을 제거 합니다.**|작업 영역 및 디자인 화면에서 선택하지 않은 노드를 제거합니다.|

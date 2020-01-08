@@ -14,17 +14,17 @@ helpviewer_keywords:
 - typed datasets, n-tier applications
 - multiple tier applications
 ms.assetid: f6ae2ee0-ea5f-4a79-8f4b-e21c115afb20
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b96f2e51048216388eea50935a1ced536d8d230b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c7532bed6a7d43c24d698870723d2265fc2b176f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648025"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585927"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>n 계층 애플리케이션에서 데이터 세트 작업
 
@@ -34,7 +34,7 @@ TableAdapter 및 데이터 클래스를 개별 프로젝트로 생성할 수 있
 
 형식화 된 데이터 집합의 n 계층 지원을 통해 n 계층 디자인에 대 한 응용 프로그램 아키텍처의 반복적인 개발을 수행할 수 있습니다. 또한 코드를 두 개 이상의 프로젝트로 수동으로 분리 하는 요구 사항을 제거 합니다. **데이터 세트 디자이너**를 사용 하 여 데이터 계층 디자인을 시작 합니다. 애플리케이션 아키텍처에 N 계층 디자인을 적용할 준비가 되면 데이터 세트 클래스를 별도의 프로젝트로 생성하도록 데이터 세트의 **데이터 세트 프로젝트** 속성을 설정합니다.
 
-## <a name="reference"></a>참고
+## <a name="reference"></a>참조
 
 - <xref:System.Data.DataSet>
 - <xref:System.Data.TypedTableBase%601>

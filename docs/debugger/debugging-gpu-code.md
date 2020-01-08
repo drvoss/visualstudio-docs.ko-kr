@@ -42,7 +42,7 @@ GPU(그래픽 처리 장치)에서 실행되는 C++ 코드를 디버깅할 수 �
 ## <a name="run-current-tile-to-cursor-and-run-to-cursor"></a>현재 Tile을 커서까지 실행 및 커서까지 실행
  GPU에서 디버깅하는 경우 커서 위치까지 실행하기 위한 두 가지 옵션이 있습니다. 두 옵션에 대한 명령은 코드 편집기의 바로 가기 메뉴에서 사용할 수 있습니다.
 
-1. **커서까지 실행** 명령은 커서 위치에 도달할 때까지 애플리케이션을 실행한 다음, 중단됩니다. 이는 현재 스레드가 커서까지 실행됨을 의미하는 것이 아니라 커서 지점에 도달하는 첫 번째 스레드가 중단을 트리거함을 의미합니다. [디버거를 사용 하 여 코드 탐색을](../debugger/navigating-through-code-with-the-debugger.md) 참조 하세요.
+1. **커서까지 실행** 명령은 커서 위치에 도달할 때까지 애플리케이션을 실행한 다음, 중단됩니다. 이는 현재 스레드가 커서까지 실행됨을 의미하는 것이 아니라 커서 지점에 도달하는 첫 번째 스레드가 중단을 트리거함을 의미합니다. [디버거를 사용하여 코드 탐색을](../debugger/navigating-through-code-with-the-debugger.md) 참조 하세요.
 
 2. **현재 Tile을 커서까지 실행** 명령은 현재 타일의 모든 스레드가 커서에 도달할 때까지 애플리케이션을 실행한 다음, 중단됩니다.
 
@@ -60,18 +60,18 @@ GPU(그래픽 처리 장치)에서 실행되는 C++ 코드를 디버깅할 수 �
 - [방법: GPU 스레드 창 사용](../debugger/how-to-use-the-gpu-threads-window.md)
 
 ## <a name="data-synchronization-exceptions"></a>데이터 동기화 예외
- 디버거는 실행 중에 몇 가지 데이터 동기화 조건을 식별할 수 있습니다. 조건이 감지되는 경우 디버거는 중단 상태로 전환됩니다. **중단** 또는 **계속**이라는 두 가지 옵션이 있습니다. **예외** 대화 상자를 사용하여 디버거가 이러한 조건을 감지하는지 여부와 디버거가 중단되는 조건을 구성할 수 있습니다. 자세한 내용은 [디버거를 사용 하 여 예외 관리](../debugger/managing-exceptions-with-the-debugger.md)를 참조 하세요. 또한 **옵션** 대화 상자를 사용하여 기록되는 데이터가 데이터의 값을 변경하지 않는 경우 디버거가 예외를 무시하도록 지정할 수도 있습니다. 자세한 내용은 [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md)을 참조하세요.
+ 디버거는 실행 중에 몇 가지 데이터 동기화 조건을 식별할 수 있습니다. 조건이 감지되는 경우 디버거는 중단 상태로 전환됩니다. **중단** 또는 **계속**이라는 두 가지 옵션이 있습니다. **예외** 대화 상자를 사용하여 디버거가 이러한 조건을 감지하는지 여부와 디버거가 중단되는 조건을 구성할 수 있습니다. 자세한 내용은 [디버거를 사용하여 예외 관리](../debugger/managing-exceptions-with-the-debugger.md)를 참조 하세요. 또한 **옵션** 대화 상자를 사용하여 기록되는 데이터가 데이터의 값을 변경하지 않는 경우 디버거가 예외를 무시하도록 지정할 수도 있습니다. 자세한 내용은 [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md)을 참조하세요.
 
 ## <a name="troubleshooting"></a>문제 해결
 
 ### <a name="specifying-an-accelerator"></a>가속기 지정
- GPU 코드의 중단점은 코드가 [accelerator::direct3d_ref](/cpp/parallel/amp/reference/accelerator-class#direct3d_ref)(REF) 가속기에서 실행되는 경우에만 적중됩니다. 코드에서 가속기를 지정하지 않는 경우 REF 가속기가 프로젝트 속성에서 **디버깅 가속기 형식**으로 자동으로 선택됩니다. 코드에서 명시적으로 가속기를 선택하는 경우에는 REF 가속기가 디버깅 중에 사용되지 않으며 GPU 하드웨어에 디버깅 지원 기능이 없는 한 중단점이 적중되지 않습니다. 디버깅 중에 REF 가속기를 사용하도록 코드를 작성하여 이 문제를 해결할 수 있습니다. 자세한 내용은 프로젝트 속성 및 [ C++ 디버그 구성에 대 한](../debugger/project-settings-for-a-cpp-debug-configuration.md) [Accelerator 및 Accelerator_view 개체](/cpp/parallel/amp/using-accelerator-and-accelerator-view-objects) 및 프로젝트 설정 사용을 참조 하세요.
+ GPU 코드의 중단점은 코드가 [accelerator::direct3d_ref](/cpp/parallel/amp/reference/accelerator-class#direct3d_ref)(REF) 가속기에서 실행되는 경우에만 적중됩니다. 코드에서 가속기를 지정하지 않는 경우 REF 가속기가 프로젝트 속성에서 **디버깅 가속기 형식**으로 자동으로 선택됩니다. 코드에서 명시적으로 가속기를 선택하는 경우에는 REF 가속기가 디버깅 중에 사용되지 않으며 GPU 하드웨어에 디버깅 지원 기능이 없는 한 중단점이 적중되지 않습니다. 디버깅 중에 REF 가속기를 사용하도록 코드를 작성하여 이 문제를 해결할 수 있습니다. 자세한 내용은 프로젝트 속성 및 [ C++ 디버그 구성에 대한](../debugger/project-settings-for-a-cpp-debug-configuration.md) [Accelerator 및 Accelerator_view 개체](/cpp/parallel/amp/using-accelerator-and-accelerator-view-objects) 및 프로젝트 설정 사용을 참조 하세요.
 
 ### <a name="conditional-breakpoints"></a>조건부 중단점
  GPU 코드에서 조건부 중단점이 지원되지만 디바이스에서 일부 식은 계산될 수 없습니다. 식이 디바이스에서 계산될 수 없는 경우 디버거에서 계산됩니다. 디버거는 대개 디바이스보다 느리게 실행됩니다.
 
 ### <a name="error-there-is-a-configuration-issue-with-the-selected-debugging-accelerator-type"></a>오류: 선택한 디버깅 가속기 형식에 구성 문제가 있습니다.
- 이 오류는 프로젝트 설정과 디버깅하고 있는 PC의 구성이 일치하지 않는 경우 발생합니다. 자세한 내용은 [ C++ 디버그 구성에 대 한 프로젝트 설정](../debugger/project-settings-for-a-cpp-debug-configuration.md)을 참조 하세요.
+ 이 오류는 프로젝트 설정과 디버깅하고 있는 PC의 구성이 일치하지 않는 경우 발생합니다. 자세한 내용은 [ C++ 디버그 구성에 대한 프로젝트 설정](../debugger/project-settings-for-a-cpp-debug-configuration.md)을 참조 하세요.
 
 ### <a name="error-the-debug-driver-for-the-selected-debugging-accelerator-type-is-not-installed-on-the-target-machine"></a>오류: 선택한 디버깅 가속기 형식용 디버그 드라이버가 대상 컴퓨터에 설치되어 있지 않습니다.
  이 오류는 원격 PC에서 디버깅하는 경우에 발생합니다. 디버거는 드라이버가 원격 PC에 설치되어 있는지 여부를 런타임까지 확인할 수 없습니다. 드라이버는 그래픽 카드의 제조업체에서 제공합니다.

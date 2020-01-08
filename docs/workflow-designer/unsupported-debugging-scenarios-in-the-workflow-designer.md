@@ -3,17 +3,17 @@ title: Workflow Designer에서 지원되지 않는 디버깅 시나리오
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 6adbe379-41d0-4681-9cd0-b91f187c3c2c
-ms.author: jillfra
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: bfc4e0995a9abb88f73ff27186ed4e0d1dc81648
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: TerryGLee
+ms.openlocfilehash: 77d1318dbdb23516902523e9c7865dad781cb06b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649783"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593039"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Workflow Designer에서 지원되지 않는 디버깅 시나리오
 
@@ -41,7 +41,7 @@ ms.locfileid: "72649783"
 
 - 중단점 창 또는 바로 가기 메뉴에서는 워크플로 디버깅에 다음과 같은 열 또는 옵션을 사용할 수 없습니다.
 
-  - 조건
+  - 상태
 
   - 적중 횟수
 
@@ -51,6 +51,6 @@ ms.locfileid: "72649783"
 
   - 데이터
 
-  - 프로세스
+  - 처리
 
   - 디스어셈블리로 이동

@@ -1,4 +1,4 @@
----
+﻿---
 title: C/C++ 어설션 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -159,6 +159,7 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
 MFC는 어설션 검사를 위한 [ASSERT](https://msdn.microsoft.com/Library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) 매크로를 정의 합니다. 또한 `CObject`파생 개체의 내부 상태를 확인 하는 `MFC ASSERT_VALID` 및 `CObject::AssertValid` 메서드를 정의 합니다.
 
 MFC `ASSERT` 매크로의 인수가 0 또는 false로 평가되는 경우 매크로는 프로그램 실행을 중단하고 사용자에 게 경고합니다. 그렇지 않으면 실행이 계속됩니다.
+
 
 어설션이 실패하면 메시지 대화 상자에 소스 파일의 이름과 어설션의 줄 번호가 표시됩니다. 대화 상자에서 다시 시도를 선택하면 [AfxDebugBreak](/cpp/mfc/reference/diagnostic-services#afxdebugbreak)에 대한 호출로 인해 실행이 디버거로 중단됩니다. 이 시점에서 호출 스택을 검사하고 다른 디버거 기능을 사용하여 어설션이 실패한 이유를 확인할 수 있습니다. [Just-in-time 디버깅](../debugger/just-in-time-debugging-in-visual-studio.md)을 사용하도록 설정하고 디버거가 아직 실행되지 않은 경우 대화 상자에서 디버거를 시작할 수 있습니다.
 

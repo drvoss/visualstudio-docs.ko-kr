@@ -3,17 +3,17 @@ title: XML 문서 속성, 속성 창
 ms.date: 03/05/2019
 ms.topic: reference
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99102248a9456de3a2b3aeba28e54de4299fae40
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1b21f4435737597136e1ac4a4dd8651decaf4c65
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604150"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592427"
 ---
 # <a name="xml-document-properties-properties-window"></a>XML 문서 속성, 속성 창
 
@@ -22,13 +22,13 @@ ms.locfileid: "72604150"
 > [!NOTE]
 > 모든 XML 문서 속성은 솔루션에 저장됩니다. 그러면 다음에 솔루션을 열 때는 이러한 값을 다시 입력하지 않아도 됩니다.
 
-**인코딩이**
+**인코딩**
 
 파일에 대한 문자 인코딩입니다. 이 속성을 변경하면 XML 선언의 인코딩 특성도 변경되며 XML 선언의 인코딩 특성을 변경하면 이 속성도 변경됩니다. 새 인코딩은 파일을 저장할 때 파일을 인코딩하는 데 사용 됩니다.
 
 **입력**
 
-XSLT 스타일시트에 연결된 입력 문서입니다. **Xslt 시작** 명령 (예: **XML**  > **디버깅 하지 않고 xslt 시작**)에서 사용 됩니다. 찾아보기 ( **...** ) 단추를 사용 하 여 문서를 선택할 수 있습니다.
+XSLT 스타일시트에 연결된 입력 문서입니다. **Xslt 시작** 명령 (예: **XML** > **디버깅 하지 않고 xslt 시작**)에서 사용 됩니다. 찾아보기 ( **...** ) 단추를 사용 하 여 문서를 선택할 수 있습니다.
 
 이 속성은 편집기에서 XSLT 파일이 열려 있는 경우에만 표시 됩니다.
 

@@ -2,17 +2,17 @@
 title: 네이티브 권장 규칙 규칙 집합
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dcc5112262dd36e431a34becd36729ea9a3c186f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9d8080005b9d1d9cbd055e0475517738223bba1d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649161"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587266"
 ---
 # <a name="native-recommended-rules-rule-set"></a>네이티브 권장 규칙 규칙 집합
 
@@ -154,7 +154,7 @@ ms.locfileid: "72649161"
 |[C28020](../code-quality/c28020.md)|이 식은이 호출에서 true가 아닙니다.|
 |[C28021](../code-quality/c28021.md)|주석이 달린 매개 변수는 포인터여야 합니다.|
 |[C28022](../code-quality/c28022.md)|이 함수의 함수 클래스는 해당 클래스를 정의 하는 데 사용 된 typedef의 함수 클래스와 일치 하지 않습니다.|
-|[C28023](../code-quality/c28023.md)|할당 되거나 전달 되는 함수에는 클래스 중 하나 이상에 대 한 \_Function \_class \_ 주석이 있어야 합니다.|
+|[C28023](../code-quality/c28023.md)|할당 되거나 전달 되는 함수는 클래스 중 하나 이상에 대 한 \_함수\_클래스\_ 주석을 포함 해야 합니다.|
 |[C28024](../code-quality/c28024.md)|할당 되는 함수 포인터는 함수 클래스 (es) 목록에 포함 되지 않은 함수 클래스를 사용 하 여 주석 처리 됩니다.|
 |[C28039](../code-quality/c28039.md)|실제 매개 변수의 형식은 형식과 정확히 일치 해야 합니다.|
 |[C28112](../code-quality/c28112.md)|연동 함수를 통해 액세스 되는 변수는 항상 연동 함수를 통해 액세스 해야 합니다.|
@@ -172,14 +172,14 @@ ms.locfileid: "72649161"
 |[C28196](../code-quality/c28196.md)|요구 사항이 충족 되지 않았습니다. 식이 true로 계산 되지 않습니다.|
 |[C28202](../code-quality/c28202.md)|비정적 멤버에 대한 잘못된 참조입니다.|
 |[C28203](../code-quality/c28203.md)|클래스 멤버에 대한 모호한 참조입니다.|
-|[C28205](../code-quality/c28205.md)|잘못 된 컨텍스트에서 사용 되는 \_Success \_ 또는 \_On \_failure \_|
+|[C28205](../code-quality/c28205.md)|잘못 된 컨텍스트에서 사용\_\_실패에 대 한 성공\_ 또는 \_\_|
 |[C28206](../code-quality/c28206.md)|왼쪽 피연산자가 구조체를 가리킵니다. '->'를 사용하세요.|
 |[C28207](../code-quality/c28207.md)|왼쪽 피연산자가 구조체입니다. '.'를 사용하세요.|
 |[C28209](../code-quality/c28209.md)|기호의 선언에 충돌 하는 선언이 있습니다.|
 |[C28210](../code-quality/c28210.md)|__on_failure 컨텍스트에 대한 주석이 명시적 사전 컨텍스트에 없어야 합니다.|
 |[C28211](../code-quality/c28211.md)|SAL_context에 대해 정적 컨텍스트 이름이 필요합니다.|
 |[C28212](../code-quality/c28212.md)|주석에 대한 포인터 식이 있어야 합니다.|
-|[C28213](../code-quality/c28213.md)|이전 선언을 수정 하지 않고 참조 하려면 \_Use \_decl \_annotations \_ 주석을 사용 해야 합니다.|
+|[C28213](../code-quality/c28213.md)|\_decl\_\_ 주석을 사용 \_이전 선언을 수정 하지 않고 참조 하려면 주석을 사용 해야 합니다.|
 |[C28214](../code-quality/c28214.md)|특성 매개 변수 이름은 p1...p9여야 합니다.|
 |[C28215](../code-quality/c28215.md)|typefix는 이미 typefix가 있는 매개 변수에 적용할 수 없습니다.|
 |[C28216](../code-quality/c28216.md)|checkReturn 주석은 특정 함수 매개 변수에 대한 사전 조건에만 적용됩니다.|
@@ -222,7 +222,7 @@ ms.locfileid: "72649161"
 |[C28267](../code-quality/c28267.md)|함수 주석에서 주석 구문 오류가 발견되었습니다.|
 |[C28272](../code-quality/c28272.md)|함수, 매개 변수에 대한 주석이 검사 시 함수 선언과 일치하지 않습니다.|
 |[C28273](../code-quality/c28273.md)|함수의 경우 단서가 함수 선언과 일치하지 않습니다.|
-|[C28275](../code-quality/c28275.md)|@No__t_1value \_ \_Macro 매개 변수가 null입니다.|
+|[C28275](../code-quality/c28275.md)|매크로\_값\_ \_매개 변수가 null입니다.|
 |[C28279](../code-quality/c28279.md)|기호의 경우 일치하는 'end'가 없는 'begin'이 있습니다.|
 |[C28280](../code-quality/c28280.md)|기호의 경우 일치하는 'begin'이 없는 'end'가 있습니다.|
 |[C28282](../code-quality/c28282.md)|형식 문자열이 사전 조건에 있어야 합니다.|

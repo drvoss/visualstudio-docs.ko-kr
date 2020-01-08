@@ -1,4 +1,4 @@
----
+﻿---
 title: 디버그 후크 함수 작성 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual

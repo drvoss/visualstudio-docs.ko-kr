@@ -27,21 +27,21 @@ helpviewer_keywords:
 - XSL, style sheets
 - XMLDataDocument class
 ms.assetid: 1fd5de47-2d61-4180-9539-c2c4bf9ab768
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9412d89ee7d9ad1412f0eaf9fe9341e336a65e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 87a5f069d5255a744e256bc9f7d1b48a135e85d8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668716"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592310"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Visual Studio의 XML 도구
 
-*XML(Extensible Markup Language) (XML)* 는 데이터를 설명 하는 형식을 제공 하는 태그 언어입니다. XML은 XSL (Extensible Stylesheet Language) 및 CSS 스타일 시트와 같은 관련 스타일 시트를 사용 하 여 데이터와 해당 프레젠테이션을 분리 합니다. Visual Studio에 포함된 도구와 기능을 사용하면 보다 쉽게 XML, XSLT 및 XML 스키마에 대한 작업을 수행할 수 있습니다.
+*Extensible Markup Language (XML)* 은 데이터를 설명 하는 형식을 제공 하는 마크업 언어입니다. XML은 XSL (Extensible Stylesheet Language) 및 CSS 스타일 시트와 같은 관련 스타일 시트를 사용 하 여 데이터와 해당 프레젠테이션을 분리 합니다. Visual Studio에 포함된 도구와 기능을 사용하면 보다 쉽게 XML, XSLT 및 XML 스키마에 대한 작업을 수행할 수 있습니다.
 
 ## <a name="xml-editor"></a>XML 편집기
 

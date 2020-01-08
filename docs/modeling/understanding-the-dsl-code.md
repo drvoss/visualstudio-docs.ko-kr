@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, generated code
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44f66ed25ab43db2d08db3cb93263bd61ac3a907
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 1196faa5831ae44a93f21ab1808915357690a0ac
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189453"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565944"
 ---
 # <a name="understanding-the-dsl-code"></a>DSL 코드 이해
 
@@ -58,7 +58,7 @@ DSL (도메인 특정 언어) 솔루션은 Visual Studio에서 DSL 인스턴스�
 ## <a name="generated-files-in-dsl"></a>DSL의 생성된 파일
  다음 생성 된 파일은 **Dsl** 프로젝트에 표시 됩니다.
 
- 모든 *dsl* `Schema.xsd`
+ *YourDsl* `Schema.xsd`
 
  DSL 인스턴스를 포함하는 파일의 스키마입니다. 이 파일은 컴파일 (**bin**) 디렉터리에 복사 됩니다. DSL을 설치할 때 모델 파일의 유효성을 검사할 수 있도록이 파일을 **Files\Microsoft Visual Studio 11.0 \ Xml\Schemas** 에 복사할 수 있습니다. 자세한 내용은 [도메인 특정 언어 솔루션 배포](msi-and-vsix-deployment-of-a-dsl.md)를 참조하세요.
 
@@ -70,7 +70,7 @@ DSL (도메인 특정 언어) 솔루션은 Visual Studio에서 DSL 인스턴스�
 
  구성 요소 솔루션 예제에서는 연결 작성기 중 하나의 이름이 ConnectionBuilder입니다. 도메인 관계의 이름이 Connection이므로 이는 우연의 일치입니다.
 
- 관계는 *relationship* `Builder.Connect()` 메서드에서 생성 됩니다. 기본 버전은 소스 및 대상 모델 요소가 적절한지 확인한 다음 관계를 인스턴스화합니다. 예를 들면,
+ 관계는 *relationship*`Builder.Connect()` 메서드에서 생성 됩니다. 기본 버전은 소스 및 대상 모델 요소가 적절한지 확인한 다음 관계를 인스턴스화합니다. 예를 들면 다음과 같습니다.:
 
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`
 
@@ -122,7 +122,7 @@ DSL (도메인 특정 언어) 솔루션은 Visual Studio에서 DSL 인스턴스�
 
 - EGP(Element Group Prototype) 처리기 메서드. 사용자가이 클래스의 인스턴스에 다른 요소를 *병합* (추가) 할 수 있는 경우에 필요 합니다. 사용자는 일반적으로 요소 도구나 다른 모양에서 끌기 또는 붙여넣기를 통해 이 작업을 수행합니다.
 
-   예제 DSL에서는 Input Port 또는 Output Port를 Component에 병합할 수 있습니다. 또한 Component와 Comment를 모델에 병합할 수도 있습니다. Component
+   예제 DSL에서는 Input Port 또는 Output Port를 Component에 병합할 수 있습니다. 또한 Component와 Comment를 모델에 병합할 수도 있습니다. 특정 일
 
    클래스의 EGP 처리기 메서드를 사용하면 Component가 Port는 수락하되 Comment는 수락하지 않도록 지정할 수 있습니다. 루트 모델 클래스의 EGP 처리기는 Comment와 Component는 수락하지만 Port는 수락하지 않습니다.
 
@@ -340,7 +340,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  이 파일을 사용자 지정하려면 `.tt` 파일을 편집합니다.
 
 > [!WARNING]
-> 아이콘, 이미지 등의 리소스를 포함하도록 .tt 파일을 편집하는 경우에는 VSIX 빌드에 리소스가 포함되는지 확인해야 합니다. 솔루션 탐색기에서 파일을 선택 하 고 **VSIX에 포함** 속성이 `True` 인지 확인 합니다.
+> 아이콘, 이미지 등의 리소스를 포함하도록 .tt 파일을 편집하는 경우에는 VSIX 빌드에 리소스가 포함되는지 확인해야 합니다. 솔루션 탐색기에서 파일을 선택 하 고 **VSIX에 포함** 속성이 `True`인지 확인 합니다.
 
  이 파일은 DSL을 VSIX(Visual Studio Integration Extension)로 패키징하는 방식을 제어합니다. 자세한 내용은 [도메인 특정 언어 솔루션 배포](msi-and-vsix-deployment-of-a-dsl.md)를 참조하세요.
 

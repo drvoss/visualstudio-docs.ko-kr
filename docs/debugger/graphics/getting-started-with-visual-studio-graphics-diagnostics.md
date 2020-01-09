@@ -19,7 +19,7 @@ ms.locfileid: "72735704"
 이 섹션에서는 처음으로 그래픽 진단 사용을 준비한 다음 Direct3D 앱에서 프레임을 캡처하고 Graphics Analyzer에서 검사합니다.
 
 ## <a name="requirements"></a>요구 사항
- Visual Studio에서 그래픽 진단를 사용하려면 Visual Studio Enterprise, Visual Studio Professional 또는 Visual Studio Community를 사용해야 합니다.  Visual Studio Code를 비롯 한 다른 버전은 이 기능을 포함 하지 않습니다.
+ Visual Studio에서 그래픽 진단을 사용하려면 Visual Studio Enterprise, Visual Studio Professional 또는 Visual Studio Community를 사용해야 합니다. Visual Studio Code를 비롯한 다른 버전은 이 기능을 포함하지 않습니다.
 
  [!INCLUDE[downloadvs](../includes/downloadvs_md.md)]
 
@@ -29,11 +29,11 @@ ms.locfileid: "72735704"
  그래픽 도구를 설치하는 방법에 대한 자세한 내용은 [Windows 10용 그래픽 도구 설치](#InstallGraphicsTools)를 참조하세요.
 
 ## <a name="InstallGraphicsTools"></a> Windows 10용 그래픽 도구 설치
- Windows 10에서 그래픽 진단 인프라는 *그래픽 도구*라는 Windows의 선택적 기능에서 제공합니다. 이 기능은 캡처할 앱이 이전 버전의 Windows를 대상으로 하는지 여부나 사용하는 Direct3D 버전에 관계없이 Windows 10에서 그래픽 정보를 캡처하고 재생하는데 필요합니다. 그래픽 도구 기능을 미리 설치하도록 선택할 수 있습니다. 그렇지 않으면 처음으로 Visual Studio에서 그래픽 진단 세션을 시작할 때 주문형으로 설치됩니다.
+ Windows 10에서 그래픽 진단 인프라는 *그래픽 도구*라는 Windows의 선택적 기능에서 제공합니다. 이 기능은 캡처할 앱이 이전 버전의 Windows를 대상으로 하는지 여부나 사용하는 Direct3D 버전에 관계없이 Windows 10에서 그래픽 정보를 캡처하고 재생하는 데 필요합니다. 그래픽 도구 기능을 미리 설치하도록 선택할 수 있습니다. 그렇지 않으면 처음으로 Visual Studio에서 그래픽 진단 세션을 시작할 때 주문형으로 설치됩니다.
 
 #### <a name="to-install-graphics-tools-for-windows-10"></a>Windows 10용 그래픽 도구를 설치하려면
 
-1. 검색에서 **앱 및 기능** 을 입력한 다음 **앱 & 기능** 설정을 엽니다.
+1. 검색에서 **앱 및 기능**을 입력한 다음 **앱 & 기능** 설정을 엽니다.
 
 2. **앱 & 기능** 대화 상자의 오른쪽에서 **선택적 기능 관리** ( **앱 & 기능**아래)를 선택 합니다.
 
@@ -52,15 +52,15 @@ ms.locfileid: "72735704"
  이제 필요한 모든 항목이 준비되었으므로 그래픽 진단을 사용할 수 있습니다. 아래 단계를 따르기만 하면 됩니다.
 
 ### <a name="1---create-a-direct3d-app"></a>1 - Direct3D 앱 만들기
- 그래픽 진단를 탐색 하는데 고유한 Direct3D 앱이 이미 있는 경우 좋은 방법입니다! 그렇지 않으면 다음 중 하나를 사용 합니다.
+ 그래픽 진단을 탐색할 Direct3D 앱이 이미 있다면 좋습니다! 그렇지 않으면 다음 중 하나를 사용합니다.
 
-- Windows 10 용 **DirectX 11 앱 (유니버설 windows)** 또는 **DirectX 12 앱 (유니버설 windows)** 프로젝트 템플릿
+- Windows 10용 **DirectX 11 앱(유니버설 Windows)** 또는 **DirectX 12 앱(유니버설 Windows)** 프로젝트 템플릿
 - Windows 10 용 [Direct3D 12 UAP 샘플](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f)
 
   계속 진행하기 전에 앱을 빌드할 수 있는지 확인합니다.
 
 ### <a name="2---start-a-graphics-diagnostics-session"></a>2 - 그래픽 진단 세션 시작
- 이제 첫 번째 그래픽 진단 세션을 시작할 준비가 되었습니다. Visual Studio의 주 메뉴에서 **디버그, 그래픽, 그래픽 디버깅 시작**을 선택 하거나 **Alt + F5**를 누릅니다. 그러면 그래픽 진단 모드로 앱이 시작되고 Visual Studio에 진단 세션 창이 표시됩니다.
+ 이제 첫 번째 그래픽 진단 세션을 시작할 준비가 되었습니다. Visual Studio의 주 메뉴에서 **디버그, 그래픽, 그래픽 디버깅 시작**을 선택하거나 **Alt + F5**를 누릅니다. 그러면 그래픽 진단 모드로 앱이 시작되고 Visual Studio에 진단 세션 창이 표시됩니다.
 
 > [!IMPORTANT]
 > Windows 10에서 앱을 실행 중인 경우 선택적 그래픽 도구 기능을 아직 설치하지 않았으면 지금 설치하라는 메시지가 표시됩니다. Windows 10에서 그래픽 진단을 사용하려면 먼저 설치해야 합니다.

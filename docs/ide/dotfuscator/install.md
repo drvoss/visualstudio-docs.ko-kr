@@ -19,15 +19,15 @@ helpviewer_keywords:
 - set up Dotfuscator
 description: Visual Studio에 포함된 Dotfuscator Community 무료 복사본을 설치하는 방법을 알아봅니다.
 ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
-author: Joe-Sewell-PreEmptive
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: f4ff951ee202f706ab3b8553cff83519e36c86ed
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bb659976126713a11594ad1b4aeb536510744c38
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652411"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596816"
 ---
 # <a name="install-dotfuscator-community"></a>Dotfuscator Community 설치
 
@@ -103,7 +103,7 @@ Dotfuscator Community를 Visual Studio의 개별 구성 요소로 설치할 수 
 
 설치가 완료되면 Dotfuscator Community 사용을 시작할 수 있습니다. 자세한 내용은 [전체 Dotfuscator Community 사용자 가이드의 시작하기][get-started] 페이지를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [전체 Dotfuscator Community 사용자 가이드의 이 항목](https://www.preemptive.com/dotfuscator/ce/docs/help/)
 

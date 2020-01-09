@@ -11,17 +11,17 @@ helpviewer_keywords:
 - ResolveManifestFiles task [MSBuild]
 - MSBuild, ResolveManifestFiles task
 ms.assetid: e1e14f67-9b69-433f-94d4-a783a68676b2
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cebb7c2449657112f3f13abc6c4589cba4f7ceb4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4ebbc2a036700c26ccd6ca3bec7b235722432e9f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970785"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595178"
 ---
 # <a name="resolvemanifestfiles-task"></a>ResolveManifestFiles 작업
 빌드 프로세스에서 빌드된 항목, 종속성, 위성, 콘텐츠, 디버그 기호 및 설명서 등의 항목을 확인합니다.
@@ -46,9 +46,9 @@ ms.locfileid: "62970785"
 |`TargetCulture`|선택적 `String` 매개 변수입니다.<br /><br /> 위성 어셈블리의 대상 문화권을 지정합니다.|
 |`TargetFrameworkVersion`|선택적 `String` 매개 변수입니다.<br /><br /> 대상 .NET Framework 버전을 지정합니다.|
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
  이 작업은 표에 나열된 매개 변수 외에, <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [작업](../msbuild/msbuild-tasks.md)
 - [작업 참조](../msbuild/msbuild-task-reference.md)

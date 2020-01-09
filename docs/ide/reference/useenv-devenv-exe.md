@@ -14,17 +14,17 @@ helpviewer_keywords:
 - /UseEnv Devenv switch
 - Devenv, /UseEnv
 ms.assetid: 2dd14603-a61b-42d2-ba31-427a0ee8a799
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da7a5e1d3490ea8342e6a7b21e91552ae2e8fdf0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 35808b27964b3ca8fa0488f1be2ce6dc5530b3dd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72622401"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596398"
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv(devenv.exe)
 
@@ -58,7 +58,7 @@ devenv /UseEnv {SolutionName|ProjectName}
 
 이 스위치로 프로젝트 이름을 지정하면 프로젝트의 부모 솔루션 내에 있는 모든 프로젝트의 환경 변수가 표시됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 Visual Studio를 시작하고 환경 변수를 `MySolution` 솔루션의 속성 페이지에 로드합니다.
 
@@ -66,7 +66,7 @@ devenv /UseEnv {SolutionName|ProjectName}
 devenv.exe /useenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln"
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Devenv 명령줄 스위치](../../ide/reference/devenv-command-line-switches.md)
 - [VC++ 디렉터리 속성 페이지(Windows)](/cpp/build/reference/vcpp-directories-property-page)

@@ -7,15 +7,15 @@ helpviewer_keywords:
 - counter sets
 - load tests, counter sets
 ms.assetid: e17d0e71-f982-4fc1-a2df-a1065d37473d
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e7e547e3dfc863e3459cc0e5c575d394f83582f6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b83d9c3624a4a268bfeba8a02b224fb9813ad7d1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72644353"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594336"
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>방법: 부하 테스트 편집기를 사용하여 카운터 집합에 카운터 추가
 
@@ -62,7 +62,7 @@ ms.locfileid: "72644353"
     > [!NOTE]
     > 기존 카운터 또는 카운터 범주를 선택하고 복사를 선택한 다음, 다른 카운터 집합 노드에 붙여넣어 카운터 집합에 카운터를 추가할 수도 있습니다. 필요하지 않은 카운터가 추가로 복사된 경우 이를 삭제할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [부하 테스트에서 컴퓨터에 대한 카운터 집합 및 임계값 규칙 지정](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [부하 테스트 실행 설정 구성](../test/configure-load-test-run-settings.md)

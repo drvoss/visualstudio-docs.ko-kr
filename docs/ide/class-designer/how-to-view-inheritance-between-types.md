@@ -9,17 +9,17 @@ helpviewer_keywords:
 - types [Visual Studio], base
 - types [Visual Studio], derived
 ms.assetid: ea3f0ada-f53b-4fb1-9fb5-908286f5ec3e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fd6d2ce365399550b5455ff8bf909e9cc56187b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 47907493451841b631d561bfddb74676a460ff29
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647683"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591777"
 ---
 # <a name="how-to-view-inheritance-between-types-in-class-designer"></a>방법: 클래스 디자이너에서 형식 간의 상속 보기
 
@@ -45,7 +45,7 @@ ms.locfileid: "72647683"
 
 파생 형식을 확인할 형식을 마우스 오른쪽 단추로 클릭하고 **파생 클래스 표시** 또는 **파생 인터페이스 표시**를 선택해도 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방법: 형식 간에 연결 만들기](how-to-create-associations-between-types.md)
 - [형식 및 관계 보기](designing-and-viewing-classes-and-types.md)

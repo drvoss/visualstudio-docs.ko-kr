@@ -5,19 +5,19 @@ ms.custom: seodec18, get-started
 ms.date: 11/20/2018
 ms.technology: vs-ide-general
 ms.topic: tutorial
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1b5fb79430b081986764f0ee1789f68471667498
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 0cacd56ff6b3b3510505ca2752404b55a2771429
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189071"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590438"
 ---
 # <a name="learn-to-use-the-code-editor"></a>코드 편집기를 사용하는 방법 알아보기
 
@@ -70,7 +70,7 @@ Visual Studio의 코드편집기에 대한 이 10분 소개에서 코드를 파�
 
 Visual Studio에서는 일반적으로 사용되는 코드 블록을 쉽고 빠르게 생성하는 데 사용할 수 있는 유용한 *코드 조각*을 제공합니다. [코드 조각](../../ide/code-snippets.md)은 C#, Visual Basic 및 C++를 포함하여 다양한 프로그래밍 언어에서 사용할 수 있습니다. C# `void Main` 코드 조각을 파일에 추가하겠습니다.
 
-1. 파일에서 마지막 닫는 괄호 **}** 바로 위에 커서를 놓고, `svm`(`static void Main` &mdash;의미를 알 수 없는 경우 너무 걱정하지 마세요라는 의미임) 문자를 입력합니다.
+1. 파일에서 마지막 닫는 괄호 **}** 바로 위에 커서를 놓고, `svm`(`static void Main`&mdash;의미를 알 수 없는 경우 너무 걱정하지 마세요라는 의미임) 문자를 입력합니다.
 
    `svm` 코드 조각에 대한 정보를 포함한 팝업 대화 상자가 표시됩니다.
 
@@ -188,7 +188,7 @@ Visual Studio 편집기를 사용하면 형식, 메서드 등 정의를 쉽게 �
 > [!div class="nextstepaction"]
 > [프로젝트 및 솔루션에 대한 자세한 정보](../tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 조각](../../ide/code-snippets.md)
 - [코드 탐색](../../ide/navigating-code.md)

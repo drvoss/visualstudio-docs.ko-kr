@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Web performance tests, Visual Studio Add-in
 - Visual Studio Add-in, Web performance tests
 ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ba6ef865b326bd8bc5eea89a9e270b793111e539
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a6da2686a5a68325101e7161a51a8144e7ef42b6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653591"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589086"
 ---
 # <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>방법: 웹 성능 테스트 결과 뷰어에 대한 추가 기능 만들기
 
@@ -334,7 +334,7 @@ ms.locfileid: "72653591"
 
 - **URL에서 추가 기능 구성 요소 로드 허용.** 기본적으로 선택되지 않습니다. 이 옵션을 선택하면 외부 웹 사이트에서 추가 기능을 로드할 수 있습니다. 이 옵션을 선택하지 않으면 원격 추가 기능이 Visual Studio에서 로드되지 않습니다. 다른 원인으로 인해 추가 기능을 로드할 수 없으면 웹에서도 이를 로드할 수 없습니다. 이 설정은 추가 기능 DLL의 로드만 제어합니다. *.Addin* 등록 파일은 항상 로컬 시스템에 있어야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - <xref:System.Windows.Forms.UserControl>
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting>

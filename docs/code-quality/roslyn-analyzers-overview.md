@@ -7,17 +7,17 @@ helpviewer_keywords:
 - analyzers
 - Roslyn analyzers
 - code analyzers
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 388667485f27b59e46a1c39d95b37ddc413240ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 77ee96272733eb519e92262cece405de21c06fa3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649145"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587279"
 ---
 # <a name="overview-of-source-code-analyzers"></a>소스 코드 분석기 개요
 
@@ -69,7 +69,7 @@ Roslyn 코드 분석기는 레거시 분석에서 수행하는 동일한 유형�
 
 Roslyn 코드 분석기는 NuGet 패키지를 통해 프로젝트별로 설치할 수 있습니다. 일부는 Visual Studio 확장으로도 사용할 수 있으며, 이 경우 Visual Studio에서 여는 모든 솔루션에 적용됩니다. [분석기 설치](../code-quality/install-roslyn-analyzers.md)의 이러한 두 방법 간에 몇 가지 핵심 동작 차이점이 있습니다.
 
-### <a name="scope"></a>범위
+### <a name="scope"></a>Scope
 
 Visual Studio 확장으로 분석기를 설치하는 경우 모든 Visual Studio의 인스턴스에 솔루션 수준에서 적용됩니다. 기본 방법인 NuGet 패키지로 분석기를 설치하는 경우 NuGet 패키지가 설치된 프로젝트에만 적용됩니다. 팀 환경에서 NuGet 패키지로 설치된 분석기는 해당 프로젝트에서 작업하는 *모든 개발자*에 대한 범위에 있습니다.
 
@@ -93,7 +93,7 @@ Visual Studio 확장으로 설치된 분석기에서 규칙의 심각도를 구�
 > [!div class="nextstepaction"]
 > [Visual Studio에서 코드 분석기 사용](../code-quality/use-roslyn-analyzers.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [분석기 FAQ](analyzers-faq.md)
 - [사용자 고유의 코드 분석기 작성](../extensibility/getting-started-with-roslyn-analyzers.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - MSBuild, targeting a specific .NET framework
 - multitargeting [MSBuild]
 ms.assetid: 40040ee7-4620-4043-a6d8-ccba921421d1
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f87513a8124b728568f78bee9efdf48fb35a5301
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 4af4816440c2eb285a0f30db50e18108ce79265f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926381"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593809"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild 도구 집합(ToolsVersion)
 
@@ -131,7 +131,7 @@ MSBuild는 `ToolLocationHelper` 열거형 값을 매개 변수로 추가하는 `
 
 하위 도구 집합은 .NET Framework 4.5에서 도입되었습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [표준 및 사용자 지정 도구 집합 구성](../msbuild/standard-and-custom-toolset-configurations.md)
 - [멀티 타기팅](../msbuild/msbuild-multitargeting-overview.md)

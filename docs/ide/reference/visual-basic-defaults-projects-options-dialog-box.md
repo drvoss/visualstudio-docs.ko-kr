@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Option Compare statement, setting in the IDE
 - Option Strict statement, setting in the IDE
 ms.assetid: 2465cd9d-18b6-4c4a-b1ea-86dbab23fc79
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9e260bc6d290729ae470ca906e9ab5c3d219112
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f33dd9b19297811597be406337d70392904e6e44
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748556"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596387"
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>옵션 대화 상자, 프로젝트, VB 기본값
 Visual Basic 프로젝트 옵션에 대한 기본 설정을 지정합니다. 새 프로젝트를 만든 경우 지정된 옵션 문이 코드 편집기의 프로젝트 헤더에 추가됩니다. 이 옵션은 모든 Visual Basic 프로젝트에 적용됩니다.
@@ -42,6 +42,6 @@ Visual Basic 프로젝트 옵션에 대한 기본 설정을 지정합니다. 새
 
 지역 형식 유추를 위한 컴파일러 기본값을 설정합니다. 기본적으로 새로 만든 프로젝트에 대해서는 **Option Infer**가 **설정**으로 설정되고 이전 버전의 Visual Basic에서 만든 마이그레이션된 프로젝트에 대해서는 **Off**로 설정됩니다. 자세한 내용은 [/optioninfer](/dotnet/visual-basic/reference/command-line-compiler/optioninfer)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [솔루션 및 프로젝트](../../ide/solutions-and-projects-in-visual-studio.md)

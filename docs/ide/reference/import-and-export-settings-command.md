@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Tools.ImportandExportSettings
 - Import and Export Settings command
 ms.assetid: 94a06468-a44d-403d-a931-77bbc9d06e56
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0be61d8690c0605f6e7773efe02f5db351110f9a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 409c0f40adfd374065dedb842965d2d1237bc9a0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658770"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568830"
 ---
 # <a name="import-and-export-settings-command"></a>설정 가져오기 및 내보내기 명령
 
@@ -48,7 +48,7 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 
 스위치 없이 이 명령을 실행하면 **설정 가져오기 및 내보내기** 마법사가 열립니다. 자세한 내용은 [설정 동기화](../synchronized-settings-in-visual-studio.md) 및 [환경 설정](../environment-settings.md)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 명령은 현재 설정을 `MyFile.vssettings` 파일로 내보냅니다.
 
@@ -56,7 +56,7 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [환경 설정](../../ide/environment-settings.md)
 - [설정 동기화](../../ide/synchronized-settings-in-visual-studio.md)

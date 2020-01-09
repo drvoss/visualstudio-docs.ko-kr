@@ -6,17 +6,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - app.config files, adding to C# projects
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 48e6516b48b524c3da4d80bc5171608ac1aea03d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3eb813dc5d4389b002851a904d61219b0d5c316e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654257"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593644"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>방법: C# 프로젝트에 애플리케이션 구성 파일 추가
 
@@ -39,7 +39,7 @@ C# 프로젝트에 애플리케이션 구성 파일(*app.config* 파일)을 추�
 
      *app.config*라는 파일을 프로젝트에 추가합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [애플리케이션 설정 관리(.NET)](../ide/managing-application-settings-dotnet.md)
 - [구성 파일 스키마(.NET Framework)](/dotnet/framework/configure-apps/file-schema/index)

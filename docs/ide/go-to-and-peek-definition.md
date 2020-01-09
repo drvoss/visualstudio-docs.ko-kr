@@ -8,17 +8,17 @@ helpviewer_keywords:
 - peek definition
 - type definition [Visual Studio]
 - member definition [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d78614966a33421aac707f370f2b18e62e4b3d9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3ef13b959d4e106b451ea0cfb336835059667ce4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603540"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592076"
 ---
 # <a name="view-type-and-member-definitions"></a>형식 및 멤버 정의 보기
 
@@ -42,7 +42,7 @@ ms.locfileid: "72603540"
 
 **정의 피킹** 기능을 사용하면 편집기에서 현재 위치를 벗어나지 않고 형식 정의를 미리 볼 수 있습니다. 키보드 사용자인 경우 텍스트 커서를 형식 또는 멤버 이름의 어딘가에 놓고 **Alt + F12** 키를 누릅니다. 마우스 사용자인 경우 오른쪽 클릭 메뉴에서 **정의 피킹**을 선택할 수 있습니다.
 
-**Ctrl**+**클릭** 기능을 사용하려면 **도구** > **옵션**  >   **텍스트 편집기** > **일반**으로 이동합니다. **Peek 뷰에서 정의 열기** 옵션을 선택하고 **확인**을 클릭하여 **옵션** 대화 상자를 닫습니다.
+**Ctrl**+**클릭** 기능을 사용하려면 **도구** > **옵션** >  **텍스트 편집기** > **일반**으로 이동합니다. **Peek 뷰에서 정의 열기** 옵션을 선택하고 **확인**을 클릭하여 **옵션** 대화 상자를 닫습니다.
 
 ![마우스 클릭 정의 피킹 옵션 설정](../ide/media/editor_options_peek_view.png)
 
@@ -76,7 +76,7 @@ ms.locfileid: "72603540"
 > [!NOTE]
 > Visual Studio는 ILSpy 디컴파일을 사용하여 메서드 본문을 다시 만듭니다. 이 기능에 처음으로 액세스할 때는 소프트웨어 라이선스와 저작권 및 상표 관련 법률에 관한 법적 고지 사항에 동의해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 탐색](../ide/navigating-code.md)
 - [방법: 정의 피킹(Peeking)을 사용하여 코드 보기 및 편집(Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

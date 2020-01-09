@@ -13,17 +13,17 @@ helpviewer_keywords:
 - MSBuild, GenerateResource task
 - GenerateResource task [MSBuild]
 ms.assetid: c0aff32f-f2cc-46f6-9c3e-a5c9f8f912b1
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b47c3315236dc228d3c561c4a3e0f333f5c9600
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c0e83cc04b309a940f5aa4c5a36099f10afddcc3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007095"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594802"
 ---
 # <a name="generateresource-task"></a>GenerateResource 작업
 *.txt* 및 *.resx*(XML 기반 리소스 형식) 파일과 런타임 이진 실행 파일에 포함되거나 위성 어셈블리로 컴파일할 수 있는 공용 언어 런타임 이진 *.resources* 파일 간을 변환합니다. 이 작업은 일반적으로 *.txt* 또는 *.resx* 파일을 *.resources* 파일로 변환하는 데 사용됩니다. `GenerateResource` 작업은 [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator)와 기능적으로 비슷합니다.
@@ -39,12 +39,12 @@ ms.locfileid: "63007095"
 |`ExecuteAsTool`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`이면 해당 대상 프레임워크 out-of-proc에서 *tlbimp.exe* 및 *aximp.exe*를 실행하여 필요한 래퍼 어셈블리를 생성합니다. 이 매개 변수는 `ResolveComReferences`의 멀티 타기팅을 허용합니다.|
 |`FilesWritten`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 디스크에 기록된 모든 파일의 이름을 포함합니다. 여기에는 캐시 파일(있는 경우)이 포함됩니다. 이 매개 변수는 Clean 구현에 유용합니다.|
 |`MinimalRebuildFromTracking`|선택적 `Boolean` 매개 변수입니다.<br /><br /> 추적된 증분 빌드가 사용될지 여부를 지정하는 스위치를 가져오거나 설정합니다. `true`이면 증분 빌드가 켜지고 그렇지 않으면 다시 빌드가 강제로 실행됩니다.|
-|`NeverLockTypeAssemblies`|선택적 `Boolean` 매개 변수입니다.<br /><br /> 리소스(*.resx*) 파일(true)을 평가하는 데 [새 AppDomain](/dotnet/api/system.appdomain)을 만들지 아니면 리소스 파일이 사용자의 어셈블리(false)를 참조할 때만 새 [AppDomain](/dotnet/api/system.appdomain)을 만들지 여부를 지정하는 부울 값을 가져오거나 설정합니다.|
+|`NeverLockTypeAssemblies`|선택적 `Boolean` 매개 변수입니다.<br /><br /> 리소스( *.resx*) 파일(true)을 평가하는 데 [새 AppDomain](/dotnet/api/system.appdomain)을 만들지 아니면 리소스 파일이 사용자의 어셈블리(false)를 참조할 때만 새 [AppDomain](/dotnet/api/system.appdomain)을 만들지 여부를 지정하는 부울 값을 가져오거나 설정합니다.|
 |`OutputResources`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> *.resources* 파일과 같은 생성된 파일의 이름을 지정합니다. 이름을 지정하지 않는 경우 일치하는 입력 파일의 이름이 사용되고, 만들어진 *.resources* 파일이 입력 파일을 포함하는 디렉터리에 배치됩니다.|
 |`PublicClass`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`이면 강력한 형식의 리소스 클래스를 공용 클래스로 만듭니다.|
 |`References`|선택적 `String[]` 매개 변수입니다.<br /><br /> *.resx* 파일에서 형식을 로드할 참조입니다. *.resx* 파일 데이터 요소는 .NET 형식일 수 있습니다. *.resx* 파일이 읽힐 때 이 항목이 확인되어야 합니다. 일반적으로 표준 형식 로드 규칙을 사용하여 확인됩니다. `References`에 어셈블리를 제공하는 경우 우선적으로 적용됩니다.<br /><br /> 강력한 형식의 리소스에는 이 매개 변수가 필요하지 않습니다.|
 |`SdkToolsPath`|선택적 `String` 매개 변수입니다.<br /><br /> *resgen.exe*와 같은 SDK 도구에 대한 경로를 지정합니다.|
-|`Sources`|필수 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 변환할 항목을 지정합니다. 이 매개 변수에 전달된 항목은 다음 파일 확장명 중 하나를 사용해야 합니다.<br /><br /> -   *.txt*: 변환할 텍스트 파일의 확장명을 지정합니다. 텍스트 파일에는 문자열 리소스만 포함될 수 있습니다.<br />-   *.resx*: 변환할 XML 기반 리소스 파일의 확장명을 지정합니다.<br />-   *.restext*: *.txt*와 같은 형식을 지정합니다. 빌드 프로세스의 다른 소스 파일과 리소스를 포함하는 소스 파일 간을 명확히 구분하려는 경우에 이러한 다른 확장명이 도움이 됩니다.<br />-   *.resources*: 변환할 리소스 파일의 확장명을 지정합니다.|
+|`Sources`|필수 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 매개 변수입니다.<br /><br /> 변환할 항목을 지정합니다. 이 매개 변수에 전달된 항목은 다음 파일 확장명 중 하나를 사용해야 합니다.<br /><br /> -    *.txt*: 변환할 텍스트 파일의 확장명을 지정합니다. 텍스트 파일에는 문자열 리소스만 포함될 수 있습니다.<br />-    *.resx*: 변환할 XML 기반 리소스 파일의 확장명을 지정합니다.<br />-    *.restext*: *.txt*와 같은 형식을 지정합니다. 빌드 프로세스의 다른 소스 파일과 리소스를 포함하는 소스 파일 간을 명확히 구분하려는 경우에 이러한 다른 확장명이 도움이 됩니다.<br />-    *.resources*: 변환할 리소스 파일의 확장명을 지정합니다.|
 |`StateFile`|선택적 <xref:Microsoft.Build.Framework.ITaskItem> 매개 변수입니다.<br /><br /> *.resx* 입력 파일의 종속성 검사 속도를 향상시키는 데 사용할 선택적 캐시 파일의 경로를 지정합니다.|
 |`StronglyTypedClassName`|선택적 `String` 매개 변수입니다.<br /><br /> 강력한 형식의 리소스 클래스에 대한 클래스 이름을 지정합니다. 이 매개 변수를 지정하지 않으면 리소스 파일의 기본 이름이 사용됩니다.|
 |`StronglyTypedFilename`|선택적 <xref:Microsoft.Build.Framework.ITaskItem> 매개 변수입니다.<br /><br /> 소스 파일의 파일 이름을 지정합니다. 이 매개 변수를 지정하지 않으면 클래스의 이름이 언어별 확장명을 포함하는 기본 파일 이름으로 사용됩니다. 예: *MyClass.cs*|
@@ -60,7 +60,7 @@ ms.locfileid: "63007095"
 |`TrackFileAccess`|선택적 <xref:System.Boolean> 매개 변수입니다.<br /><br /> true이면 입력 파일의 디렉터리가 상대 파일 경로를 확인하는 데 사용됩니다.|
 |`UseSourcePath`|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`이면 입력 파일의 디렉터리가 상대 파일 경로를 확인하는 데 사용되도록 지정합니다.|
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 *.resx* 파일에는 다른 리소스 파일에 대한 링크가 포함될 수 있으므로 *.resx* 및 *.resources* 파일 타임스탬프를 비교하는 것만으로는 출력이 최신인지 확인할 수 없습니다. 대신 `GenerateResource` 작업은 *.resx* 파일에 있는 링크를 따라 이동하여 연결된 파일의 타임스탬프도 확인합니다. 즉, `GenerateResource` 작업을 포함하는 `Inputs` 및 `Outputs` 특성은 일반적으로 사용하지 않아야 합니다. 실제로 실행되어야 할 때 건너뛸 수 있기 때문입니다.
 
 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.
@@ -94,6 +94,6 @@ MSBuild 4.0을 사용하여 .NET 3.5 프로젝트를 대상으로 지정하면 x
 
 \<LogicalName> 메타데이터가 없으면 리소스 이름은 *myAssembly.myResource.resources*로 지정됩니다.  이 예제는 Visual Basic 및 Visual C# 빌드 프로세스에만 적용됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [작업](../msbuild/msbuild-tasks.md)
 - [작업 참조](../msbuild/msbuild-task-reference.md)

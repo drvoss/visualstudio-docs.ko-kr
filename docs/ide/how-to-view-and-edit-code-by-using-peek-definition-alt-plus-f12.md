@@ -2,17 +2,17 @@
 title: 정의 피킹(Peeking) 사용
 ms.date: 01/10/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39d4d9dd4fb7364ddadd5e7568a2f34255c393ae
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9eac5c8c47c208f39f74f542fbbff89c8340a93f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656521"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591348"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>방법: 정의 피킹(Peeking)을 사용하여 코드 보기 및 편집(Alt+F12)
 
@@ -82,7 +82,7 @@ ms.locfileid: "72656521"
 > [!NOTE]
 > **정의 피킹(Peeking)** 창에서 코드를 편집하기 위해 Visual Studio의 다른 위치에서 사용할 때와 같은 바로 가기 키를 사용할 수도 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 탐색](../ide/navigating-code.md)
 - [정의로 이동 및 정의 피킹(Peeking)](../ide/go-to-and-peek-definition.md)

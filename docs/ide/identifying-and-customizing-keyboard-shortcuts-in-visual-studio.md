@@ -12,17 +12,17 @@ helpviewer_keywords:
 - custom shortcut keys [Visual Studio]
 - customizing keyboard shortcuts [Visual Studio]
 - exporting shortcut keys [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 585c50818148235cebcdda3f18a9ed91f1a2aa1a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ce87385314ec84c7c0ed9d30c806a6287bb91d9e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656491"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591335"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Visual Studio에서 바로 가기 키 식별 및 사용자 지정
 
@@ -43,7 +43,7 @@ Visual Studio 명령에 대한 바로 가기 키를 확인하고, 해당 바로 
 
 ## <a name="identify-a-keyboard-shortcut"></a>바로 가기 키 식별
 
-1. 메뉴 모음에서 **도구** > **옵션**을 선택합니다.
+1. 메뉴 모음에서 **도구** > **옵션**을 차례로 선택합니다.
 
 2. **환경**을 확장한 다음 **키보드**를 선택합니다.
 
@@ -63,7 +63,7 @@ Visual Studio 명령에 대한 바로 가기 키를 확인하고, 해당 바로 
 
 ## <a name="customize-a-keyboard-shortcut"></a>바로 가기 키 사용자 지정
 
-1. 메뉴 모음에서 **도구** > **옵션**을 선택합니다.
+1. 메뉴 모음에서 **도구** > **옵션**을 차례로 선택합니다.
 
 2. **환경**을 확장한 다음 **키보드**를 선택합니다.
 
@@ -147,6 +147,6 @@ Visual Studio 명령에 대한 바로 가기 키를 확인하고, 해당 바로 
 
    ![사용자 지정 바로 가기 키만 가져옵니다.](../ide/media/importshortcuts.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 접근성 기능](../ide/reference/accessibility-features-of-visual-studio.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - load tests, results
 - Load Test Viewer, viewing
 ms.assetid: b0a3e694-2894-479b-b270-7e61e9fafacd
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6be8649ab611a44cb9d2791ae1f4a0e61e930d5b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b6a5da728e24d5d7fdbeccd1e28aa2742e04bf48
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664888"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596465"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>방법: 분석을 위한 부하 테스트 결과 액세스
 
@@ -52,6 +52,6 @@ ms.locfileid: "72664888"
 
      **결과 열기 및 관리** 대화 상자에서 부하 테스트 결과 가져오기, 내보내기 및 제거를 비롯하여 부하 테스트 결과의 다양한 특성을 관리할 수 있습니다. 자세한 내용은 [부하 테스트 결과 리포지토리에서 부하 테스트 결과 관리](../test/manage-load-test-results-in-the-load-test-results-repository.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [부하 테스트 결과 분석](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

@@ -19,17 +19,17 @@ helpviewer_keywords:
 - MSBUILD (C++), MT task
 - MT task (MSBuild (C++))
 ms.assetid: bb94913c-1042-4968-9f08-b394518e899f
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fad0b3ddf57167c6721371ae5f8e11f5b7a4c13
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 2f90a1349771ab67f342a3490874cd422051cac2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911234"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595032"
 ---
 # <a name="mt-task"></a>MT 작업
 Microsoft 매니페스트 도구, *mt.exe*를 래핑합니다. 자세한 내용은 [Mt.exe](/windows/desktop/SbsCs/mt-exe)를 참조하세요.
@@ -68,5 +68,5 @@ Microsoft 매니페스트 도구, *mt.exe*를 래핑합니다. 자세한 내용�
 |**UpdateFileHashesSearchPath**|선택적 `String` 매개 변수입니다.<br /><br /> 파일 해시가 업데이트될 때 사용할 검색 경로를 지정합니다. **UpdateFileHashesMT** 작업 매개 변수와 함께 이 매개 변수를 사용합니다.<br /><br /> 자세한 내용은 이 표의 **UpdateFileHashes** 매개 변수를 참조하세요.|
 |**VerboseOutput**|선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 자세한 디버깅 정보를 표시합니다.<br /><br /> 자세한 내용은 [Mt.exe](/windows/desktop/SbsCs/mt-exe)의 **/verbose** 옵션을 참조하세요.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [작업 참조](../msbuild/msbuild-task-reference.md)

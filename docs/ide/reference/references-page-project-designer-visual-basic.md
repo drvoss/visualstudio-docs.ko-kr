@@ -10,17 +10,17 @@ helpviewer_keywords:
 - References page in Project Designer
 - Project Designer, References page
 ms.assetid: 5a47c595-e084-401c-86e1-74e0bf74fd86
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ca3d54a7e2643baebe44e0f2756d6ae65eb228d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b80427999ad841c493e61cd704b64435f81c3914
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747789"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565606"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>참조 페이지, 프로젝트 디자이너(Visual Basic)
 
@@ -88,7 +88,7 @@ ms.locfileid: "72747789"
 
 - XML 네임스페이스(예: `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`).
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [프로젝트의 참조 관리](../../ide/managing-references-in-a-project.md)
 - [방법: 가져온 네임스페이스 추가 또는 제거(Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - command line [Visual Studio], switches
 - Devenv
 ms.assetid: e12bc6ed-74fd-4bea-8d7c-89b99c20bad8
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf7ebda1e661801995c17a81e658b4f638c2f8a1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b3ed82bd8ba3845541d7dce628f99fb78b62ab9f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661646"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595711"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv 명령줄 스위치
 
@@ -92,7 +92,7 @@ VSPackage 개발과 관련된 스위치에 대한 자세한 내용은 [VSPackage
 |[/ResetSettings](resetsettings-devenv-exe.md)|Visual Studio 기본 설정을 복원합니다. 필요에 따라 설정을 지정한 `.vssettings` 파일로 초기화합니다.<br /><br /> `devenv /resetsettings mysettings.vssettings`|
 |[/Upgrade](upgrade-devenv-exe.md)|지정한 솔루션 파일 및 모든 프로젝트 파일이나 지정한 프로젝트 파일을 이러한 파일의 현재 Visual Studio 형식으로 업그레이드합니다.<br /><br /> `devenv mysln.sln /upgrade`|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [옵션 대화 상자, 환경, 일반](general-environment-options-dialog-box.md)
 - [VSPackage 개발을 위한 Devenv 명령줄 스위치](../../extensibility/devenv-command-line-switches-for-vspackage-development.md)

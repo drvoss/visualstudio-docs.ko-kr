@@ -11,17 +11,17 @@ helpviewer_keywords:
 - build support [WPF]
 - MSBuild [WPF]
 ms.assetid: 94b12890-365d-479a-b239-71109fbcb462
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 147ee5dbaf6d521b609005425eac076314f1f417
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3b3f47f41466d8eb7ddf0a4700428b6e28500b61
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778116"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596309"
 ---
 # <a name="wpf-msbuild-reference"></a>WPF MSBuild 참조
 
@@ -57,6 +57,6 @@ WPF .Targets 파일을 설명합니다.
 
 빌드 작업 창 어셈블리.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [MSBuild](../msbuild/msbuild.md)

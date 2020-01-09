@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee57e0fb78eadce226a7fa8371d395181c6060a1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: d874d8b9c96cc8cc58466bb42d8ac189e1aabc11
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445300"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567296"
 ---
 # <a name="walkthrough-use-msbuild"></a>연습: MSBuild 사용
 
@@ -40,12 +40,12 @@ Visual Studio 또는 **명령 창**에서 MSBuild를 실행할 수 있습니다.
     ::: moniker range=">=vs-2019"
     **Esc** 키를 눌러 시작 창을 닫습니다. **Ctrl+Q**를 입력하여 검색 상자를 열고, **winforms**를 입력한 다음, **새 Windows Forms 앱(.NET Framework) 만들기**를 선택합니다. 표시되는 대화 상자에서 **만들기**를 선택합니다.
 
-    **이름** 상자에 `BuildApp`을 입력합니다. 솔루션의 **위치**를 *D:\\*와 같이 입력합니다. **솔루션**, **솔루션 이름**(**BuildApp**) 및 **프레임워크**의 기본값을 적용합니다.
+    **이름** 상자에 `BuildApp`을 입력합니다. 솔루션의 **위치**를 *D:\\* 와 같이 입력합니다. **솔루션**, **솔루션 이름**(**BuildApp**) 및 **프레임워크**의 기본값을 적용합니다.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#** > **Windows Desktop**을 확장한 다음, **Windows Forms 앱(.NET Framework)** 을 선택합니다. 그런 다음, **확인**을 선택합니다.
+    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례대로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#**  > **Windows Desktop**을 확장한 다음, **Windows Forms 앱(.NET Framework)** 을 선택합니다. 그런 다음, **확인**을 선택합니다.
 
-    **이름** 상자에 `BuildApp`을 입력합니다. 솔루션의 **위치**를 *D:\\*와 같이 입력합니다. **솔루션용 디렉터리 만들기**의 기본값(선택된 상태), **소스 제어에 추가**의 기본값(선택되지 않은 상태) 및 **솔루션 이름**의 기본값(**BuildApp**)을 적용합니다.
+    **이름** 상자에 `BuildApp`을 입력합니다. 솔루션의 **위치**를 *D:\\* 와 같이 입력합니다. **솔루션용 디렉터리 만들기**의 기본값(선택된 상태), **소스 제어에 추가**의 기본값(선택되지 않은 상태) 및 **솔루션 이름**의 기본값(**BuildApp**)을 적용합니다.
     ::: moniker-end
 
 1. **확인** 또는 **만들기**를 클릭하여 프로젝트 파일을 만듭니다.
@@ -432,7 +432,7 @@ MSBuild는 Configuration 속성을 생성하고 "Release" 값을 지정합니다
 <Photos Include="images\*.gif" />
 ```
 
- 위의 코드는 파일 확장명이 ‘.jpeg’ 또는 ‘.gif’인 ‘images’ 폴더의 모든 파일을 포함하는 Photo라는 항목 종류를 만듭니다. 이 코드는 다음 줄과 동일합니다.
+ 위의 코드는 파일 확장명이  ‘.jpeg’ 또는  ‘.gif’인  ‘images’ 폴더의 모든 파일을 포함하는 Photo라는 항목 종류를 만듭니다. 이 코드는 다음 줄과 동일합니다.
 
 ```xml
 <Photos Include="images\*.jpeg;images\*.gif" />
@@ -602,7 +602,7 @@ Exclude 특성은 Include 특성과 Exclude 특성을 모두 포함하는 항목
 
  간단한 프로젝트 파일을 단계별로 만드는 방법을 알아보려면 [연습: 처음부터 MSBuild 프로젝트 파일 만들기](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)를 진행해 보세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [MSBuild 개요](../msbuild/msbuild.md)
 - [MSBuild 참조](../msbuild/msbuild-reference.md)

@@ -3,17 +3,17 @@ title: 수학 노드
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: adc225cc-1cf5-4f7c-9b00-e7ac8450b6b9
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 594adb7f726c29c9344dbd437479e74ef484118c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 75c1b3b9c515defde9eceac1a370f40b0acbd2c8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635073"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589398"
 ---
 # <a name="math-nodes"></a>수학 노드
 
@@ -24,7 +24,7 @@ ms.locfileid: "72635073"
 
 ## <a name="math-node-reference"></a>수학 노드 참조
 
-|노드|세부 정보|속성|
+|노드|설명|속성|
 |----------|-------------|----------------|
 |**Abs**|구성 요소별로 지정된 입력의 절대값을 계산합니다.<br /><br /> 입력 `X`의 각 구성 요소에 대해 음수 값을 양수로 바꿔 결과의 모든 구성 요소가 양수 값을 갖도록 합니다.<br /><br /> **입력:**<br /><br /> `X`: `float`, `float2`, `float3` 또는 `float4`<br /> 절대 값을 확인할 값입니다.<br /><br /> `Output:`<br /><br /> `Output`: 입력 `X`과 동일<br /> 구성 요소별 절대 값입니다.|없음|
 |**추가**|구성 요소별로 지정된 입력의 구성 요소 단위 합계를 계산합니다.<br /><br /> 결과의 각 구성 요소에 대해 입력 `X` 및 입력 `Y`의 해당 구성 요소를 더합니다.<br /><br /> **입력:**<br /><br /> `X`: `float`, `float2`, `float3` 또는 `float4`<br /> 더할 값 중 하나입니다.<br /><br /> `Y`: 입력 `X`과 동일<br /> 더할 값 중 하나입니다.<br /><br /> **출력:**<br /><br /> `Output`: 입력 `X`과 동일<br /> 구성 요소별 합계입니다.|없음|

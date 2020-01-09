@@ -2,19 +2,19 @@
 title: 참조 근처로 변수 선언 이동
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: c0a82b48a556e26866393661d4b87836db765abb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 35735009a5b813ca29159f276fe2d5abb734be0e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666490"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585286"
 ---
 # <a name="move-declaration-near-reference-refactoring"></a>참조 리팩터링 근처로 선언 이동
 
@@ -62,7 +62,7 @@ if (condition)
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [리팩터링](../refactoring-in-visual-studio.md)
 - [변경 내용 미리 보기](../../ide/preview-changes.md)

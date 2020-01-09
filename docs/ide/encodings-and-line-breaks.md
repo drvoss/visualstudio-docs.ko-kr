@@ -12,17 +12,17 @@ helpviewer_keywords:
 - line break characters
 - Visual Studio, line break characters
 ms.assetid: 8f9b3ffc-7b8d-44f4-87cb-dc29105be12d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fd37547d8107cf35991aab684313dbff37adda0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6448b553c1da9e697bca3860cb8507727c99cc08
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650887"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588592"
 ---
 # <a name="encodings-and-line-endings"></a>인코딩 및 줄 끝
 
@@ -53,6 +53,6 @@ Visual Studio에서 다음 문자는 줄 바꿈으로 해석됩니다.
 >
 > 또는 **파일** > **다른 이름으로 \<파일\> 저장**을 선택하여 **고급 저장 옵션**에 액세스할 수 있습니다. **다른 이름으로 파일 저장** 대화 상자에서 **저장** 단추 옆의 드롭다운 삼각형을 선택하고 **인코딩하여 저장**을 선택합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 편집기의 기능](../ide/writing-code-in-the-code-and-text-editor.md)

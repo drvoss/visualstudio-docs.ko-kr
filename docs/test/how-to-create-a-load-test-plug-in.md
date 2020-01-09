@@ -9,19 +9,19 @@ helpviewer_keywords:
 - plug-ins, load test
 - load tests, plug-ins
 ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e2eea116eb18e192720410b71136de9d823ed0fe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 97952f65d78f7204410d07b90e0e538fb8499116
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653660"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589125"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>방법: 부하 테스트 플러그 인 만들기
 
-부하 테스트 플러그 인을 만들어 부하 테스트가 실행되는 동안 코드를 여러 시점에서 실행할 수 있습니다. 플러그 인을 만들어 부하 테스트의 기본 제공 기능을 확장하거나 수정합니다. 예를 들어 부하 테스트 플러그 인을 코딩하여 부하 테스트가 실행되는 동안 부하 테스트 패턴을 설정하거나 수정할 수 있습니다. 그러기 위해서는 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> 인터페이스를 상속하는 클래스를 만들어야 합니다. 이 클래스는 이 인터페이스의 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin.Initialize*> 메서드를 구현해야 합니다. 자세한 내용은 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>을 참조하세요.
+부하 테스트 플러그 인을 만들어 부하 테스트가 실행되는 동안 코드를 여러 시점에서 실행할 수 있습니다. 플러그 인을 만들어 부하 테스트의 기본 제공 기능을 확장하거나 수정합니다. 예를 들어 부하 테스트 플러그 인을 코딩하여 부하 테스트가 실행되는 동안 부하 테스트 패턴을 설정하거나 수정할 수 있습니다. 그러기 위해서는 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> 인터페이스를 상속하는 클래스를 만들어야 합니다. 이 클래스는 이 인터페이스의 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin.Initialize*> 메서드를 구현해야 합니다. 자세한 내용은 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>를 참조하세요.
 
 > [!TIP]
 > 웹 성능 테스트 플러그 인도 만들 수 있습니다. 자세한 내용은 [방법: 웹 성능 테스트 플러그 인 만들기](../test/how-to-create-a-web-performance-test-plug-in.md)를 참조하세요.
@@ -89,7 +89,7 @@ ms.locfileid: "72653660"
     > 1. 웹 성능 및 부하 테스트 프로젝트에서는 참조에 경고가 표시됩니다. 참조를 제거했다가 플러그 인 DLL에 다시 추가합니다.
     > 2. 테스트 또는 적절한 위치에서 플러그 인을 제거했다가 다시 추가합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드에서는 LoadTestFinished 이벤트가 발생한 후 사용자 지정 코드를 실행하는 부하 테스트 플러그 인을 보여 줍니다. 이 코드가 원격 컴퓨터의 테스트 에이전트에서 실행되는 경우 테스트 에이전트에 localhost SMTP 서비스가 없으면 메시지 상자가 열려 있으므로 부하 테스트가 "진행 중" 상태로 유지됩니다.
 
@@ -157,7 +157,7 @@ namespace LoadTestPluginTest
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.LoadTestAborted>
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>
 - [부하 테스트에 대한 사용자 지정 코드 및 플러그 인 만들기](../test/create-custom-code-and-plug-ins-for-load-tests.md)

@@ -7,17 +7,17 @@ f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
 helpviewer_keywords:
 - Prerequisites dialog box
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ab3cb844f518ef5fae553010fe4a800c09d170a
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
+ms.openlocfilehash: 0ecbba1a1c5e8670fd9adcafdfed8cec21dd3912
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533388"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567907"
 ---
 # <a name="prerequisites-dialog-box"></a>필수 조건 대화 상자
 
@@ -56,7 +56,7 @@ ms.locfileid: "68533388"
 |**Visual C++ “14” 런타임 라이브러리(x64)**|이 패키지는 Microsoft Windows 운영 체제에 프로그래밍 루틴을 제공하는 x64 운영 체제용 Visual C++ 런타임 라이브러리를 설치합니다. 이러한 루틴은 C 및 C++ 언어에서 제공하지 않는 여러 일반 프로그래밍 작업을 자동화합니다.<br /><br /> 자세한 내용은 [C 런타임 라이브러리 참조](/cpp/c-runtime-library/c-run-time-library-reference)를 참조하세요.|
 |**Visual “14” 런타임 라이브러리(x86)**|이 패키지는 Microsoft Windows 운영 체제에 프로그래밍 루틴을 제공하는 x86 운영 체제용 Visual C++ 런타임 라이브러리를 설치합니다. 이러한 루틴은 C 및 C++ 언어에서 제공하지 않는 여러 일반 프로그래밍 작업을 자동화합니다.<br /><br /> 자세한 내용은 [C 런타임 라이브러리 참조](/cpp/c-runtime-library/c-run-time-library-reference)를 참조하세요.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [프로젝트 디자이너, 게시 페이지](../../ide/reference/publish-page-project-designer.md)
 - [애플리케이션 배포 필수 조건](../../deployment/application-deployment-prerequisites.md)

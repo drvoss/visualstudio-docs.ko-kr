@@ -25,17 +25,17 @@ helpviewer_keywords:
 - find text
 - replace text
 - multi-caret selection
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e5c4bd54e71357ff6a2d667c540953bc0057b70
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ffc31a0d0e2b6878b5dd5173a35ce4f538e135be
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654239"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590347"
 ---
 # <a name="find-and-replace-text"></a>텍스트 찾기 및 바꾸기
 
@@ -132,7 +132,7 @@ ms.locfileid: "72654239"
 
 ![Visual Studio에서 다중 캐럿 플라이아웃 메뉴](media/edit-menu-multiple-carets.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio에서 정규식 사용](../ide/using-regular-expressions-in-visual-studio.md)
 - [Visual Studio에서 코드 리팩터링](../ide/refactoring-in-visual-studio.md)

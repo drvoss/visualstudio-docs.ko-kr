@@ -6,17 +6,17 @@ f1_keywords:
 - msvse_settingsdesigner.err.nameblank
 helpviewer_keywords:
 - application settings [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae4215987ee0a61935efe27ab927d826cc1c6ff9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8d792a6147795f81211203fc442539371f3caa91
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654626"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593709"
 ---
 # <a name="manage-application-settings-net"></a>애플리케이션 설정 관리(.NET)
 
@@ -102,6 +102,6 @@ Properties.Settings.Default.Save();
 
 `Settings` 클래스를 통해 애플리케이션 설정에 액세스하는 방법에 대한 일반적인 내용은 [애플리케이션 설정 개요(.NET Framework)](/dotnet/framework/winforms/advanced/application-settings-overview)를 참조하세요. 설정 반복에 대한 자세한 내용은 이 [포럼 게시물](https://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [애플리케이션 설정 액세스(.NET Framework)](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)

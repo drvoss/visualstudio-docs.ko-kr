@@ -8,15 +8,15 @@ helpviewer_keywords:
 - agents, network adapter
 - controllers, configuring
 ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b0dc70169deb8d09fed45bcb921c783765e87c0e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6383d7a16839ba8934bb7f91664379e99da17a36
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72643774"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594788"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>방법: 네트워크 어댑터에 테스트 컨트롤러 또는 테스트 에이전트 바인딩
 
@@ -128,7 +128,7 @@ ms.locfileid: "72643774"
 
     `net start vsttagent`
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [테스트 에이전트 설치 및 구성](../test/lab-management/install-configure-test-agents.md)
 - [부하 테스트 로깅 설정 수정](../test/modify-load-test-logging-settings.md)

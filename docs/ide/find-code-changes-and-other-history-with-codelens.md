@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.CodeLens
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10a325c75179ed6917e1772bb9e17f2237e4ee17
-ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.openlocfilehash: 9859366f6e4b9a0d1c219adc2080e6415b1e44a7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74538951"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588657"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens에서 코드 변경 내용 및 기타 기록 찾기
 
@@ -250,7 +250,7 @@ Team Foundation Server 또는 Azure DevOps Services에서 TFVC(Team Foundation �
 
 ### <a name="q-how-do-i-turn-codelens-off-or-on-or-choose-which-indicators-to-see"></a>Q: CodeLens를 끄거나 켜고 확인할 표시기를 선택하려면 어떻게 할까요?
 
-**A:**  참조 지표를 제외하고 지표를 설정하거나 해제할 수 있습니다. **도구** > **옵션** > **텍스트 편집기** > **모든 언어**  >  **CodeLens**로 이동합니다.
+**A:**  참조 지표를 제외하고 지표를 설정하거나 해제할 수 있습니다. **도구** > **옵션** > **텍스트 편집기** > **모든 언어** > **CodeLens**로 이동합니다.
 
 지표가 설정되어 있으면 해당 지표에서 CodeLens 옵션을 열 수도 있습니다.
 
@@ -264,7 +264,7 @@ Team Foundation Server 또는 Azure DevOps Services에서 TFVC(Team Foundation �
 
 **A:** CodeLens는 메서드, 클래스, 인덱서 및 속성 수준에서 C# 및 Visual Basic 코드에 표시됩니다. CodeLens는 기타 모든 형식의 파일에 대해 파일 수준에서 표시됩니다.
 
-- CodeLens가 설정되어 있는지 확인합니다. **도구** > **옵션** > **텍스트 편집기** > **모든 언어**  >  **CodeLens**로 이동합니다.
+- CodeLens가 설정되어 있는지 확인합니다. **도구** > **옵션** > **텍스트 편집기** > **모든 언어** > **CodeLens**로 이동합니다.
 
 - 코드가 TFS에 저장되는 경우 [CodeIndex 명령](../ide/codeindex-command.md) 과 [TFS 구성 명령](/azure/devops/server/command-line/tfsconfig-cmd)을 함께 사용하여 코드 인덱싱이 설정되어 있는지 확인합니다.
 
@@ -340,7 +340,7 @@ CodeLens는 다른 버전의 Lync 또는 Skype가 설치되는 것을 지원하�
 
    ![CodeLens 팀 지표 새로 고침 메뉴 항목](../ide/media/codelensrefreshindicatorsfromcode.png)
 
-- **테스트**: [코드에 대한 단위 테스트를 찾아](#associated-unit-tests) **테스트** 지표를 새로 고칩니다.
+- **테스트**: [코드에 대한 단위 테스트를 찾아](#associated-unit-tests)**테스트** 지표를 새로 고칩니다.
 
 ### <a name="q-whats-local-version"></a>Q: "로컬 버전"이란 무엇인가요?
 
@@ -354,6 +354,6 @@ CodeLens는 다른 버전의 Lync 또는 Skype가 설치되는 것을 지원하�
 
 **A:** CodeLens 테스트 지표를 가져오는 프로젝트를 다시 빌드하여 파일에서 로드합니다. 성능을 향상시키기 위해 코드 파일을 로드하는 경우 Visual Studio는 테스트 지표에 대한 원본 정보를 더 이상 페치하지 않습니다. 빌드 후에 또는 **테스트 탐색기**를 두 번 클릭하여 테스트로 이동할 때 테스트 지표가 로드됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 편집기의 기능](../ide/writing-code-in-the-code-and-text-editor.md)

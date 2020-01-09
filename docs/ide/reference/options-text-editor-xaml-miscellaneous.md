@@ -23,17 +23,17 @@ helpviewer_keywords:
 - WPF Designer, XAML formatting
 - XAML view settings, attribute spacing
 ms.assetid: 2a420e58-a408-4e8d-9220-44eeb4f67801
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 693e0d206455c2c430f8d723f131868fdf21eefc
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: cec66cdb2de3f89358cd0ee90867154cc374a7fd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189560"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568206"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>옵션, 텍스트 편집기, XAML, 기타
 
@@ -54,6 +54,6 @@ ms.locfileid: "73189560"
 
 이 설정을 사용하여 오류 및 경고가 자동으로 생성되는 경우를 제어합니다. 자세한 내용은 [XAML 오류 및 경고](../../xaml-tools/xaml-errors-warnings.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [WPF의 XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)

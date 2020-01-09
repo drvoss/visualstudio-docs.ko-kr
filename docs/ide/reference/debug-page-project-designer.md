@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Project Designer, Debug page
 - Debug page in Project Designer
 ms.assetid: ef11eae9-df96-4e20-aabd-2678ba317140
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1f54485a4dd47b0aec4401f6cdfb39072e9f8cf
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: a2c3e7813e5e07a0fbb8f4ebf5838c883faa0fb8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461403"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595724"
 ---
 # <a name="debug-page-project-designer"></a>프로젝트 디자이너, 디버그 페이지
 
@@ -82,7 +82,7 @@ ms.locfileid: "68461403"
 
 Visual Basic 애플리케이션에서 SQL 프로시저의 디버깅을 사용하거나 사용하지 않도록 설정하려면 이 확인란을 선택하거나 선택을 취소합니다. 이 확인란은 기본적으로 선택되어 있지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [디버거 소개](../../debugger/debugger-feature-tour.md)
 - [C# 디버그 구성에 대한 프로젝트 설정](../../debugger/project-settings-for-csharp-debug-configurations.md)

@@ -16,17 +16,17 @@ helpviewer_keywords:
 - Options dialog box, Web settings
 - Internet Explorer, setting options
 ms.assetid: 586db4eb-032d-4cb5-93a6-a7c14de1ae49
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae83add4db8e45fca1b97b9c4148cea5bcba0947
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8915bef3bba477dd515b1d176971cfb9949e9899
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72621908"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596504"
 ---
 # <a name="options-dialog-box-environment--web-browser"></a>옵션 대화 상자: 환경 \> 웹 브라우저
 
@@ -50,9 +50,9 @@ IDE 웹 브라우저를 열 때 표시되는 페이지를 설정합니다.
 
 내부 웹 브라우저를 통해 페이지에서 **소스 보기**를 선택할 때 웹 페이지를 여는 데 사용되는 편집기를 설정합니다.
 
-- **소스 편집기** [편집기](../../ide/writing-code-in-the-code-and-text-editor.md)에서 소스를 보려면 선택합니다.
+- **소스 편집기**[편집기](../../ide/writing-code-in-the-code-and-text-editor.md)에서 소스를 보려면 선택합니다.
 
-- **HTML 편집기** [HTML 디자이너](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)에서 소스를 보려면 선택합니다. 다음 두 보기 중 하나에서 웹 페이지를 편집하려면 이 선택 영역을 사용합니다. 디자인 보기 또는 표준 텍스트 기반 원본 보기
+- **HTML 편집기**[HTML 디자이너](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)에서 소스를 보려면 선택합니다. 다음 두 보기 중 하나에서 웹 페이지를 편집하려면 이 선택 영역을 사용합니다. 디자인 보기 또는 표준 텍스트 기반 원본 보기
 
 - **외부 편집기** 다른 편집기에서 소스를 보려면 선택합니다. Notepad.exe 등 선택한 편집기의 경로를 지정합니다.
 
@@ -63,7 +63,7 @@ IDE 웹 브라우저를 열 때 표시되는 페이지를 설정합니다.
 > [!NOTE]
 > **브라우저 선택** 대화 상자를 사용하여 Visual Studio 내부 웹 브라우저를 선택한 브라우저로 바꿉니다. 프로젝트의 HTML 파일 등을 마우스 오른쪽 단추로 클릭하거나 상황에 맞는 메뉴에서 브라우저 선택 대화 상자에 액세스할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [옵션 대화 상자, 환경, 일반](../../ide/reference/general-environment-options-dialog-box.md)
 - [HTML 디자이너](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)

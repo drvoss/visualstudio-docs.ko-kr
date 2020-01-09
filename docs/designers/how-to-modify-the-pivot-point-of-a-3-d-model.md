@@ -3,17 +3,17 @@ title: '방법: 3D 모델의 피벗 지점 수정'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2c49e42009c81f6932f76128f12fb37399a789b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 114beda700359eb5cdbfd4db12c18e442b8894f2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635476"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589944"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>방법: 3D 모델의 피벗 점 수정
 
@@ -42,7 +42,7 @@ ms.locfileid: "72635476"
 
 ![수정된 피벗 점이 있는 집 모델](../designers/media/digit-modified-model.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방법: 기본 3D 모델 만들기](../designers/how-to-create-a-basic-3-d-model.md)
 - [모델 편집기](../designers/model-editor.md)

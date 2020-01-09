@@ -3,18 +3,18 @@ title: MSBuild 15의 새로운 기능 | Microsoft Docs
 ms.date: 03/01/2017
 ms.topic: conceptual
 ms.assetid: 9976b6fd-d052-4017-b848-35b5bf4b2f66
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2017'
-ms.openlocfilehash: cd3e86e3cbaaf9c368f848cbd0136c0473932490
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 49e248ee0e5537ae54957695ca698b041fc1ce8b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913105"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567282"
 ---
 # <a name="whats-new-in-msbuild-15"></a>MSBuild 15의 새로운 기능
 
@@ -51,5 +51,5 @@ MSBuild는 현재 [.NET Core SDK](https://www.microsoft.com/net/download/core)�
 - `NormalizeDirectory`는 path 요소를 결합하고 후행 슬래시를 확인하며 출력 문자열에 현재 운영 체제에 대한 정확한 디렉터리 구분 문자가 있는지 확인합니다.
 - `GetPathOfFileAbove`는 바로 앞에 오는 파일의 경로를 반환합니다. `<Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />`를 호출하는 것과 기능적으로 동일합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [MSBuild](../msbuild/msbuild.md)

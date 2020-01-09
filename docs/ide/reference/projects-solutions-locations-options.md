@@ -4,17 +4,17 @@ ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.Locations
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e20c584a5acecc06a9d04e79a7c70c088eacc15b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2be4f2977f34ec57198ed3e87f58bdacb4daae4a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655711"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565723"
 ---
 # <a name="options-dialog-box-projects-and-solutions--locations"></a>옵션 대화 상자: 프로젝트 및 솔루션 \> 위치
 
@@ -34,7 +34,7 @@ Visual Studio에서 새 프로젝트 및 솔루션 폴더를 만드는 기본 �
 
 사용자가 만든 항목 템플릿을 검색하는 데 사용되는 기본 위치를 지정합니다. 자세한 내용은 [방법: 템플릿 찾기 및 구성](../../ide/how-to-locate-and-organize-project-and-item-templates.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [옵션 대화 상자: 프로젝트 및 솔루션 \> 일반](projects-and-solutions-options-dialog-box.md)
 - [옵션 대화 상자, 프로젝트 및 솔루션, 빌드 및 실행](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - load test results, repository
 - Load Test Results Repository
 ms.assetid: 1cd63c4b-4f74-4133-b675-5e8fbeab25f3
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a6b24fcc485462b8d67ae88104c1ee3ed156e747
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bd0562a6cceeb50d43222a7850de11d52b0587cf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652941"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584428"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>부하 테스트 결과 리포지토리에서 부하 테스트 결과 관리
 
@@ -56,7 +56,7 @@ Visual Studio Enterprise가 설치된 경우 부하 테스트 결과 저장소�
 
 **부하 테스트 분석기**를 사용하여 실행 중인 부하 테스트와 완료된 부하 테스트 모두의 결과를 볼 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [부하 테스트 결과 분석](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [방법: 분석을 위한 부하 테스트 결과 액세스](../test/how-to-access-load-test-results-for-analysis.md)

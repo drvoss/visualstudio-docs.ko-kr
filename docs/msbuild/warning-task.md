@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Warning task [MSBuild]
 - MSBuild, Warning task
 ms.assetid: 96ba5507-8b43-4f54-a1d7-9b15644dd56c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afbf7dd2f8ae42cd21ee7c9d006d9f503d2d3bf9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84b9f9d9d92815d1719f8ba43f4014ef9598e0c4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779093"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567140"
 ---
 # <a name="warning-task"></a>Warning 작업
 평가된 조건부 문에 따라 빌드 중에 경고를 로깅합니다.
@@ -38,7 +38,7 @@ ms.locfileid: "62779093"
 | `HelpKeyword` | 선택적 `String` 매개 변수입니다.<br /><br /> 경고와 연결할 도움말 키워드입니다. |
 | `Text` | 선택적 `String` 매개 변수입니다.<br /><br /> `Condition` 매개 변수가 `true`로 평가될 경우 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]가 기록하는 경고 텍스트입니다. |
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
  `Warning` 작업을 통해 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 프로젝트는 다음 빌드 단계를 계속하기 전에 필수 구성 또는 속성의 존재를 확인할 수 있습니다.
 
  `Warning` 작업의 `Condition` 매개 변수가 `true`로 평가되는 경우 `Text` 매개 변수 값은 로깅되고 빌드가 계속 실행됩니다. `Condition` 매개 변수가 없으면 경고 텍스트가 로깅됩니다. 로깅에 대한 자세한 내용은 [빌드 로그 가져오기](../msbuild/obtaining-build-logs-with-msbuild.md)를 참조하세요.
@@ -62,6 +62,6 @@ ms.locfileid: "62779093"
 </Project>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [빌드 로그 가져오기](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [프로젝트 파일 스키마 참조](../msbuild/msbuild-project-file-schema-reference.md)

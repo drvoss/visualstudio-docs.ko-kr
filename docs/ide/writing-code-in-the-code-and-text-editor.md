@@ -5,24 +5,24 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code, editing [Visual Studio]
 - code editor [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86cab4db7c732aeb33d9adf61bfdcb2c4563da57
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: de209e0a940fe7f7c64644cea37de3762df0d643
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647041"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588553"
 ---
 # <a name="features-of-the-code-editor"></a>코드 편집기의 기능
 
 Visual Studio 편집기에서는 코드 및 텍스트를 더 쉽게 작성 및 관리할 수 있는 다양한 기능을 제공합니다. 개요를 사용하여 여러 코드 블록을 확장 및 축소할 수 있습니다. IntelliSense, **개체 브라우저**및 호출 계층 구조를 사용하여 코드에 대해 자세히 알아볼 수 있습니다. **이동**, **정의로 이동**, 및 **모든 참조 찾기** 등의 기능을 사용하여 코드를 찾을 수 있습니다. 코드 조각이 있는 코드 블록을 삽입할 수 있고 **사용법에서 생성**과 같은 기능을 사용하여 코드를 생성할 수 있습니다. 이전에 Visual Studio 편집기를 사용한 적이 없는 경우 [코드 편집기를 사용하는 방법 알아보기](../get-started/tutorial-editor.md)를 참조하세요.
 
 > [!NOTE]
-> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [원본 편집기(Mac용 Visual Studio)](/visualstudio/mac/source-editor)를 참조하세요.
+> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [원본 편집기(Mac용 Visual Studio)](/visualstudio/mac/source-editor)를 참조하세요.
 
 다양한 방법으로 코드를 볼 수 있습니다. 기본적으로 **솔루션 탐색기**는 파일별로 구성된 코드를 보여 줍니다. 창 아래쪽의 **클래스 뷰** 탭을 클릭하여 클래스별로 구성된 코드를 볼 수 있습니다.
 
@@ -86,7 +86,7 @@ Visual Studio 편집기에서는 코드 및 텍스트를 더 쉽게 작성 및 �
 
 JavaScript 관련 편집기 옵션은 [JavaScript 편집기 옵션](../ide/reference/options-text-editor-javascript-formatting.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [원본 편집기(Mac용 Visual Studio)](/visualstudio/mac/source-editor)
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)

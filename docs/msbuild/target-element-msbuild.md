@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Target element [MSBuild]
 - <Target> element [MSBuild]
 ms.assetid: 350f6fc2-86b3-45f2-a31e-ece0e6bd4dca
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1748064482e13eba95e9aa83e9cb04c93b8066f
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: c69ee5758d5c6e513af853a8d7589057c6537956
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491623"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566425"
 ---
 # <a name="target-element-msbuild"></a>Target 요소(MSBuild)
 순차적으로 실행할 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]의 작업 집합을 포함합니다.
@@ -100,7 +100,7 @@ ms.locfileid: "74491623"
 
  MSBuild 4 이전 버전에서는 `Target`에 `Outputs`의 같은 항목에 대한 여러 참조가 포함되어 있는 경우 항상 중복 항목이 기록되었습니다. 중복 항목은 전혀 사용되지 않으므로 출력 수와 프로젝트 상호 종속성이 많은 대형 빌드에서는 이러한 방식으로 인해 많은 양의 메모리가 낭비됩니다. `KeepDuplicateOutputs` 특성을 `true`로 설정하면 이러한 중복 항목이 기록됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 코드 예제는 `Csc` 작업을 실행하는 `Target` 요소를 보여 줍니다.
 
 ```xml
@@ -117,6 +117,6 @@ ms.locfileid: "74491623"
 </Target>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [대상](../msbuild/msbuild-targets.md)
 - [프로젝트 파일 스키마 참조](../msbuild/msbuild-project-file-schema-reference.md)

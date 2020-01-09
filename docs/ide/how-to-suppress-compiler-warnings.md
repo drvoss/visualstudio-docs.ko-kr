@@ -3,17 +3,17 @@ title: 프로젝트 및 NuGet 패키지에 대한 컴파일러 경고 표시 안
 ms.date: 01/24/2018
 ms.technology: vs-ide-compile
 ms.topic: conceptual
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aec3dfb45471a3349e14419671ef1fb3b5e05db5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: cbcef86187ad03545066f3c595d00b56f83be5c5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747955"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591426"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>방법: 컴파일러 경고 표시 안 함
 
@@ -130,7 +130,7 @@ ms.locfileid: "72747955"
 
    **솔루션 탐색기** 및 **오류 목록**에서 경고가 사라집니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [연습: 애플리케이션 빌드](../ide/walkthrough-building-an-application.md)
 - [방법: 빌드 로그 파일 보기, 저장 및 구성](../ide/how-to-view-save-and-configure-build-log-files.md)

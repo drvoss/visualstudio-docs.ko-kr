@@ -13,17 +13,17 @@ helpviewer_keywords:
 - MSBuild, Message task
 - Message task [MSBuild]
 ms.assetid: 2293309d-42b6-46dc-9684-8c146f66bc28
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5efcc41a82cab32172aa395b488535f2777b9e13
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: c5a2e2a1adb810a8468d318298747eec226846df
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681163"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592180"
 ---
 # <a name="message-task"></a>Message 작업
 빌드하는 동안 메시지를 로깅합니다.
@@ -45,7 +45,7 @@ ms.locfileid: "68681163"
 
  이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.Task> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.TaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [TaskExtension 기본 클래스](../msbuild/taskextension-base-class.md)를 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 코드 예제에서는 등록된 모든 로거에 메시지를 로깅합니다.
 
 ```xml
@@ -58,6 +58,6 @@ ms.locfileid: "68681163"
 </Project>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [작업 참조](../msbuild/msbuild-task-reference.md)
 - [빌드 로그 가져오기](../msbuild/obtaining-build-logs-with-msbuild.md)

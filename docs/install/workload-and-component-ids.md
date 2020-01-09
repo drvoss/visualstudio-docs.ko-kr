@@ -3,8 +3,8 @@ title: Visual Studio 워크로드 및 구성 요소 ID
 titleSuffix: ''
 description: 작업 및 구성 요소 ID를 사용하여 명령줄로 Visual Studio를 설치하거나 VSIX 매니페스트에서 종속성으로 지정합니다.
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.date: 09/23/2019
 ms.topic: reference
@@ -16,12 +16,12 @@ ms.custom: seodec18
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 51d5c25b9e8a3125a0f1b09a4fbfd5f6d6139084
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: a5da7186bcc67fb61e80fdd691142423b879f312
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211387"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588436"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>Visual Studio 워크로드 및 구성 요소 ID
 
@@ -31,7 +31,7 @@ ms.locfileid: "71211387"
 
 **15.9 릴리스[용으로 업데이트됨](/visualstudio/releasenotes/vs2017-relnotes/)**
 
-| **에디션** | **ID** | **설명** |
+| **버전** | **ID** | **설명** |
 | ----------- | ------ | --------------- |
 | [Visual&nbsp;Studio Enterprise&nbsp;2017](workload-component-id-vs-enterprise.md?vs-2017) | Microsoft.VisualStudio.Product.Enterprise | 모든 규모의 팀에서 생산성과 조정을 구현하기 위한 Microsoft DevOps 솔루션 |
 | [Visual&nbsp;Studio Professional&nbsp;2017](workload-component-id-vs-professional.md?vs-2017) | Microsoft.VisualStudio.Product.Professional | 소규모 팀을 위한 전문적인 개발자 도구 및 서비스 |
@@ -52,7 +52,7 @@ ms.locfileid: "71211387"
 
 **[16.3 릴리스](/visualstudio/releases/2019/release-notes/)용으로 업데이트됨**
 
-| **에디션** | **ID** | **설명** |
+| **버전** | **ID** | **설명** |
 | ----------- | ------ | --------------- |
 | [Visual&nbsp;Studio Enterprise&nbsp;2019](workload-component-id-vs-enterprise.md?vs-2019) | Microsoft.VisualStudio.Product.Enterprise | 모든 규모의 팀에서 생산성과 조정을 구현하기 위한 Microsoft DevOps 솔루션 |
 | [Visual&nbsp;Studio Professional&nbsp;2019](workload-component-id-vs-professional.md?vs-2019) | Microsoft.VisualStudio.Product.Professional | 소규모 팀을 위한 전문적인 개발자 도구 및 서비스 |
@@ -71,7 +71,7 @@ ms.locfileid: "71211387"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [Visual Studio용 Visual Studio 관리자 가이드](visual-studio-administrator-guide.md)
 * [명령줄 매개 변수를 사용하여 Visual Studio 설치](use-command-line-parameters-to-install-visual-studio.md)

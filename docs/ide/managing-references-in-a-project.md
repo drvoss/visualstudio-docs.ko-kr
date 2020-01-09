@@ -16,17 +16,17 @@ helpviewer_keywords:
 - namespaces [Visual Studio], referencing
 - COM components, referencing
 - objects [Visual Studio], referencing
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06235439fdff952225fe3aafea9f5354a27cb0a3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9623e8ffb6a315851d26cd06defb62899e429f44
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658428"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591257"
 ---
 # <a name="manage-references-in-a-project"></a>프로젝트에서 참조 관리
 
@@ -126,7 +126,7 @@ GAC에 등록되어 있는 사용자 지정 구성 요소에 대한 참조가 �
 
 파일 참조는 Visual Studio 프로젝트의 컨텍스트 외부에서 어셈블리에 대한 직접 참조로서, 참조 관리자 대화 상자의 **찾아보기** 탭을 사용하여 만들 수 있습니다. 어셈블리나 구성 요소는 있지만 이를 출력으로 작성하는 프로젝트가 없는 경우 파일 참조를 사용하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [끊어진 참조 문제 해결](../ide/troubleshooting-broken-references.md)
 - [방법: 참조 추가 또는 제거](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

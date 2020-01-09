@@ -4,17 +4,17 @@ ms.date: 08/31/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a5b136c91873c0af60705ea361a19e53f28e06b0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 748dfc592fbf7a3b9737e9f418362067b92bb8ff
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653053"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594294"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Live Unit Testing 시작
 
@@ -24,7 +24,7 @@ Visual Studio 솔루션에서 Live Unit Testing을 사용하도록 설정하면 
 
 전체 C# 솔루션은 GitHub의 [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/csharp/UtilityLibraries/) 리포지토리에서 다운로드할 수 있습니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 이 자습서를 사용하려면 **.NET Core 플랫폼간 개발** 워크로드가 있는 Visual Studio Enterprise Edition을 설치해야 합니다.
 
@@ -249,7 +249,7 @@ Live Unit Testing에서 확인해야 할 주요 문제점은 불완전한 코드
 
     ![성공적인 HasEmbeddedSpaces 테스트](media/lut-start/test-success-cs.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 Live Unit Testing](live-unit-testing.md)
 - [Live Unit Testing 질문과 대답](live-unit-testing-faq.md)

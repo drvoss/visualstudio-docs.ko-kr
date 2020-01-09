@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Shell, launching exe files
 - Visual Studio, executables from
 ms.assetid: 737fda23-b852-45c4-a9fe-41cbce6ba70f
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 502bb7b1ab6236fd88c7c6dbc789737e50686d89
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5bf13c7624d6c9d8e64b79f653eb83a0c5f3b3f0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747739"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565879"
 ---
 # <a name="shell-command"></a>셸 명령
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 내에서 실행 프로그램을 시작합니다.
@@ -77,14 +77,14 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 > [!CAUTION]
 > 리터럴 따옴표(""")로 경로 문자열을 묶지 않으면 Windows는 첫 번째 공백까지의 문자열 부분만 사용합니다. 예를 들어 위의 경로 문자열이 제대로 인용되지 않으면 Windows는 C:\ 루트 디렉터리에 있는 "Program"이라는 파일을 찾습니다. C:\Program.exe 실행 파일을 실제로 사용할 수 있는 경우 Windows는 불법적 인 변조로 설치한 경우 조차도 원하는 "c:\Program Files\SomeFile.exe" 프로그램 대신 해당 프로그램을 실행하려고 시도합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 다음 명령은 xcopy.exe를 사용하여 `MyText.txt` 파일을 `Text` 폴더에 복사합니다. xcopy.exe 출력은 **명령 창** 및 **출력** 창 모두에 표시됩니다.
 
 ```cmd
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)
 - [명령 창](../../ide/reference/command-window.md)

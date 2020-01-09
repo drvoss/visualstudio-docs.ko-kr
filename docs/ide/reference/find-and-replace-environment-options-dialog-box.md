@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Find and Replace, Options dialog box
 - Find and Replace, customizing
 ms.assetid: f804d6d5-6309-46e4-8294-b83e880b5ec9
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24c9d1f75eef2b785c8fa96bd721144480e134fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3ef53be4d3894dd1d22a3afbde9dbf631b472aa2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654380"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569571"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>옵션 대화 상자, 환경, 찾기 및 바꾸기
 
@@ -53,6 +53,6 @@ ms.locfileid: "72654380"
 
 **편집** 메뉴에서 **찾기 및 바꾸기** 창의 보기를 선택할 때 현지 편집기 삽입 지점의 양쪽에 있는 텍스트를 **찾을 내용** 필드에 붙여넣으려면 이 옵션을 선택합니다. 이전 검색의 마지막 검색 패턴을 **찾을 내용** 문자열로 사용하려면 이 옵션의 선택을 취소합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [텍스트 찾기 및 바꾸기](../../ide/finding-and-replacing-text.md)

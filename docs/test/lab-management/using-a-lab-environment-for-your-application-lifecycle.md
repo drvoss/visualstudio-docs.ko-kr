@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - lab environment, test lab
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: d33562c686365029bc75781c76ad26d772dfcf66
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: c9d7e90e0c4eb48a19c36ad86d8f438080b38d62
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653093"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588904"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Devops에 랩 환경 사용
 
@@ -137,7 +137,7 @@ Lab Management에 대한 자세한 내용은 다음을 참조하세요.
 * [SCVMM(가상) 환경](https://msdn.microsoft.com/library/ee943322.aspx)
 * [네트워크 격리 환경 만들기 및 사용](https://msdn.microsoft.com/library/ee518924.aspx)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [테스트 에이전트 설치 및 구성](../../test/lab-management/install-configure-test-agents.md)
 * [Visual Studio Lab Management Guide](https://aka.ms/vsarsolutions)(Visual Studio Lab Management 가이드)

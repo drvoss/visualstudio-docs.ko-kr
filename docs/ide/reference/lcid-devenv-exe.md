@@ -13,17 +13,17 @@ helpviewer_keywords:
 - LCID devenv switch
 - /LCID Devenv switch
 ms.assetid: 3a3f4e70-ea66-4351-9d62-acb1dec30e8e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 991886289ac2c2ee06e37476169dff6d2354a52e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 80c4af137edc80166d6a652c676d5607d8c2328d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659986"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595529"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 
@@ -49,7 +49,7 @@ IDE를 로드하고 환경에 대한 기본 자연 언어를 설정합니다. �
 
 다음 표에서는 Visual Studio에서 지원하는 언어의 LCID 목록을 보여 줍니다.
 
-|언어|인 DWORD 값의 레지스트리에서 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\|
+|언어|LCID|
 |--------------|----------|
 |및|2052|
 |옵션 대신,|1028|
@@ -61,7 +61,7 @@ IDE를 로드하고 환경에 대한 기본 자연 언어를 설정합니다. �
 |한국어|1042|
 |스페인어|3082|
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 이 예에서는 영어 리소스 문자열을 사용하는 IDE를 로드합니다.
 
@@ -69,7 +69,7 @@ IDE를 로드하고 환경에 대한 기본 자연 언어를 설정합니다. �
 devenv /LCID 1033
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Devenv 명령줄 스위치](../../ide/reference/devenv-command-line-switches.md)
 - [옵션 대화 상자, 환경, 국가별 설정](../../ide/reference/international-settings-environment-options-dialog-box.md)

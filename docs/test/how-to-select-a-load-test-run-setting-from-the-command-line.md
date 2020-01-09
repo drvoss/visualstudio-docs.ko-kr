@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, command line
 - load tests, run settings, selecting
 ms.assetid: 175d1d58-f09a-4449-b132-a29a394a7c8e
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 09aa92b36058ff714784aff12851e1b82c78a99a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 760cf18062e607e9f9039c6cc5f4adf409134cb5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653452"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588995"
 ---
 # <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>방법: 명령줄에서 사용할 부하 테스트 실행 설정 선택
 
@@ -34,7 +34,7 @@ ms.locfileid: "72653452"
 
     `mstest /testcontainer:loadtest1.loadtest`
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [부하 테스트 실행 설정 구성](../test/configure-load-test-run-settings.md)
 - [부하 테스트에서 컴퓨터에 대한 카운터 집합 및 임계값 규칙 지정](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

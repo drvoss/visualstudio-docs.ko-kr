@@ -7,15 +7,15 @@ helpviewer_keywords:
 - load test, iterations
 - load tests, scenarios
 ms.assetid: ac480fb7-f4f7-47dc-9ae5-98be3aca4fba
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ae0f75ac19f858cba9de1e2d75d4ef5529da1d75
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e95ca27ace50c7b28d1ffb1d3fc02589daddee2d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665152"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590984"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>부하 테스트 시나리오에서 테스트 반복 구성
 
@@ -89,7 +89,7 @@ ms.locfileid: "72665152"
 
 5. 속성 변경을 마친 다음, **파일** 메뉴에서 **저장**을 선택합니다. 그러면 새 **테스트 반복 간 인지 시간** 값을 사용하여 부하 테스트를 실행할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [부하 테스트 시나리오 편집](../test/edit-load-test-scenarios.md)
 - [부하 테스트에 대한 데스트 에이전트 및 테스트 컨트롤러 구성](../test/configure-test-agents-and-controllers-for-load-tests.md)

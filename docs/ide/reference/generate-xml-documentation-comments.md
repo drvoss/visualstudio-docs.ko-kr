@@ -2,17 +2,17 @@
 title: XML 문서 주석 삽입
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e9153677b833a89a236923a971b511548b064142
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ad29957cc31247c16ca38038ad4880ea75a85182
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668608"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595581"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>방법: 문서 생성에 대한 XML 주석 삽입
 
@@ -51,7 +51,7 @@ Visual Studio 및 기타 IDE가 IntelliSense를 사용하여 형식 및 멤버�
 > [!NOTE]
 > C#에서 `///` 또는 Visual Basic에서 `'''`를 입력한 후 XML 문서 주석을 설정/해제하는 [옵션](../../ide/reference/options-text-editor-csharp-advanced.md)이 있습니다. 메뉴 모음에서 **도구** > **옵션**을 선택하여 **옵션** 대화 상자를 엽니다. 그런 다음, **텍스트 편집기** > **C#** 또는 **기본** > **고급**으로 이동합니다. **편집기 도움말** 섹션에서 **XML 문서 주석 생성** 옵션을 찾습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [XML 문서 주석(C# 프로그래밍 가이드)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
 - [XML 주석과 함께 코드 문서화(C# 가이드)](/dotnet/csharp/codedoc)

@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, properties
 - load tests, scenarios
 ms.assetid: 4414a638-1fa2-40ad-b1f4-b99f90b62e62
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 54159ca7b0d99e0bba7e7b048138ffacf6ab5b0b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c2011438f1fcb0230cde0de527216456553e7c64
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652963"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584441"
 ---
 # <a name="load-test-scenario-properties"></a>부하 테스트 시나리오 속성
 
@@ -56,6 +56,6 @@ ms.locfileid: "72652963"
 |**준비 시간 동안 사용 안 함**|부하 테스트의 실행 설정에서 **준비 시간** 속성 값으로 지정한 시간 동안 시나리오를 실행할지 여부를 지정하는 데 사용되는 부울 값입니다.<br /><br />부하 테스트 실행 설정의 속성에 대한 자세한 내용은 [부하 테스트 실행 설정 속성](../test/load-test-run-settings-properties.md)을 참조하세요.<br /><br />자세한 내용은 [시나리오 시작 시간 지연 구성](../test/configure-scenario-start-delays.md)을 참조하세요.|
 |**테스트 반복 간 인지 시간**|테스트 반복 사이의 대기 시간(초)을 지정하는 데 사용되는 숫자 값입니다.<br /><br />자세한 내용은 [인지 시간을 편집하여 웹 사이트 사용자 상호 작용 지연 시뮬레이션](../test/edit-think-times-in-load-test-scenarios.md)을 참조하세요.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [부하 테스트 시나리오 편집](../test/edit-load-test-scenarios.md)

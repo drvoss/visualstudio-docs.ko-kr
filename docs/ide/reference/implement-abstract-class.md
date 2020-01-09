@@ -2,17 +2,17 @@
 title: 추상 클래스 구현
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3f8d61e6e2632d62d7244ec0918e56816c3a028e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6fcfdc06a055df28159f9d1ddc440aaf113f3264
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662474"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568908"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>Visual Studio에서 추상 클래스 구현
 
@@ -67,7 +67,7 @@ ms.locfileid: "72662474"
 
        ![클래스 구현 결과 VB](media/abstract-result-vb.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 생성](../code-generation-in-visual-studio.md)
 - [변경 내용 미리 보기](../../ide/preview-changes.md)

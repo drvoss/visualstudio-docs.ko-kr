@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Command mode in Command window
 - IDE Command window
 ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75792518eadc5449f070b90f3f1e8c2da38bf2b3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: cb855cbed67bffc5ff2fb63b1785c577dd9fea25
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748778"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75570351"
 ---
 # <a name="command-window"></a>명령 창
 **명령** 창은 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE(통합 개발 환경)에서 직접 명령 또는 별칭을 실행하는 데 사용됩니다. 메뉴 명령 및 메뉴에 나타나지 않는 명령을 둘 다 실행할 수 있습니다. **명령** 창을 표시하려면 **보기** 메뉴에서 **다른 창**을 선택하고 **명령 창**을 선택합니다.
@@ -44,7 +44,7 @@ ms.locfileid: "72748778"
 ## <a name="entering-commands"></a>명령 입력
 보다 큼 기호(`>`)는 명령 창의 왼쪽 가장자리에 새 줄 프롬프트로 표시됩니다. 위쪽 화살표 및 아래쪽 화살표 키를 사용해서 이전에 실행된 명령을 스크롤합니다.
 
-|작업|솔루션|예|
+|작업|솔루션|예제|
 |----------|--------------|-------------|
 |식을 계산합니다.|식 앞에 물음표(`?`)를 추가합니다.|`? myvar`|
 |직접 실행 창으로 전환합니다.|`immed`를 보다 큼 기호(>) 없이 창에 입력합니다.|`immed`|
@@ -109,7 +109,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ## <a name="use-quotes-for-path-names-with-spaces"></a>공백이 있는 경로 이름에 따옴표 사용
 예를 들어 경로에 공백이 포함된 파일을 열려면 공백이 포함된 경로 또는 경로 세그먼트 주위에 큰따옴표를 넣어야 합니다. (예: **C:\\"Program Files"** 또는 **"C:\Program Files"** )
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 - [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)

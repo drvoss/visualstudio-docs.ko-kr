@@ -8,15 +8,15 @@ helpviewer_keywords:
 - load tests, test agents
 - troubleshooting, test controllers and agents in load tests
 ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 716bc28626e6b408fd618a8ed6c623c5118d7782
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 51d7e15ec71eec7134dfc49b3515385970e593a0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659919"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565957"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>부하 테스트에서 테스트 컨트롤러 및 테스트 에이전트 문제를 해결하기 위한 전략
 
@@ -139,6 +139,6 @@ ms.locfileid: "72659919"
 
 이 내용은 테스트 컨트롤러, 테스트 에이전트 서비스 및 테스트 에이전트 프로세스에 적용됩니다. 네트워크 어댑터가 둘 이상인 컴퓨터에서 실행되는 프로세스마다 `BindTo` 속성을 설정해야 합니다. `BindTo` 속성을 설정하는 절차는 앞에서 테스트 컨트롤러를 대상으로 설명한 내용과 같으며 세 가지 프로세스에서 모두 동일합니다. 테스트 에이전트 서비스 및 테스트 에이전트 프로세스의 로깅 수준을 설정하려면 [테스트 컨트롤러 컴퓨터의 로깅 수준 설정](#set-the-logging-level-on-a-test-controller-computer)에 나열된 구성 파일을 사용합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [테스트 컨트롤러 및 테스트 에이전트](../test/configure-test-agents-and-controllers-for-load-tests.md)

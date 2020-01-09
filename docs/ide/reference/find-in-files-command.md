@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Edit.FindInFiles command
 - find in files command
 ms.assetid: 2fc78bfe-b339-4599-97f9-4cafd8a194d9
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25342f86c545752a263d295550222e14c2aa7866
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 87d313c29be1d5fb4f1be1febe9b5b7cd32e7e11
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748769"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569584"
 ---
 # <a name="find-in-files-command"></a>파일에서 찾기 명령
 **찾기 및 바꾸기** 창의 **파일에서 바꾸기** 탭에서 사용할 수 있는 옵션의 하위 집합을 사용하여 파일을 검색합니다.
@@ -77,14 +77,14 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 /word 또는 /w\
 선택 사항입니다. 전체 단어만을 검색합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 이 예제에서는 "내 Visual Studio 프로젝트" 폴더에 있는 모든 .cls 파일에서 btnCancel을 검색하고 찾기 결과 2 창에서 일치 항목 정보를 표시합니다.
 
 ```cmd
 >Edit.FindinFiles btnCancel /lookin:"c:/My Visual Studio Projects" /ext:*.cls /text2
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [파일에서 찾기](../../ide/find-in-files.md)
 - [명령 창](../../ide/reference/command-window.md)

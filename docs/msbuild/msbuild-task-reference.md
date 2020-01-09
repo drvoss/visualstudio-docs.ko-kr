@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, tasks
 ms.assetid: b3144b27-a426-4259-b8ae-5f7991b202b6
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00af44212dd142dd94629f886a50b9646488af3b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d050aa095868e229887e4928285d746e1b5906a5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747275"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593878"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild 작업 참조
 
@@ -307,7 +307,7 @@ ms.locfileid: "72747275"
 
  디렉터리의 콘텐츠에서 *.zip* 보관을 만듭니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [MSBuild 참조](../msbuild/msbuild-reference.md)
 - [작업 작성](../msbuild/task-writing.md)

@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d1d540f3a49eda22973b25a6b9a91691907efe93
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c2f4c01a627fb2cd1b581331dd086e2d783d475f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666285"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596231"
 ---
 # <a name="options-text-editor-c-advanced"></a>옵션, 텍스트 편집기, C#, 고급
 
@@ -126,7 +126,7 @@ ms.locfileid: "72666285"
 
    이 옵션을 선택한 경우 `///` 주석 도입부를 입력한 후 XML 문서 주석에 대한 XML 요소를 삽입합니다. XML 문서에 대한 자세한 내용은 [XML 문서 주석(C# 프로그래밍 가이드)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방법: 문서 생성에 대한 XML 주석 삽입](../../ide/reference/generate-xml-documentation-comments.md)
 - [XML 문서 주석(C# 프로그래밍 가이드)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)

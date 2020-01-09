@@ -2,8 +2,8 @@
 title: 리팩터링 이름 바꾸기
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.rename
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2991227b3c8d742da360465e6c506e7123259e2c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4dbccd4732f56d671fd74f59916885ea338136f8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655614"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565463"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>코드 기호 이름 바꾸기 래픽터링
 
@@ -80,7 +80,7 @@ ms.locfileid: "72655614"
 
 - 기호의 이름을 바꾸는 다른 방법은 편집기에서 해당 이름을 변경하는 것입니다. 그런 다음 커서를 기호 이름에 놓고 **Ctrl**+**을 누릅니다.** 또는 나타나는 전구 아이콘 메뉴를 확장한 후 **이름 바꾸기\<를 선택하여 이전 이름을 \<새 이름**으로 바꿉니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [리팩터링](../refactoring-in-visual-studio.md)
 - [변경 내용 미리 보기](../../ide/preview-changes.md)

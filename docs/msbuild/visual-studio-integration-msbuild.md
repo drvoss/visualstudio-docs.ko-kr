@@ -15,17 +15,17 @@ helpviewer_keywords:
 - MSBuild, in-process compilers
 - MSBuild, design-time target execution
 ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00d64b060b340302107ddffaf1d69cad802a283b
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: b1ddb8bdbc913a72791144d5e9d29d206712a3d6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913283"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594424"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 통합(MSBuild)
 Visual Studio는 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 를 호스팅하여 관리되는 프로젝트를 로드하고 빌드합니다. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 에서 프로젝트를 관리하므로 프로젝트가 다른 도구에서 작성되어 사용자 지정된 빌드 프로세스를 가지더라도 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 형식의 프로젝트는 대부분 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에서 사용될 수 있습니다.
@@ -180,7 +180,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
  Visual Studio의 일반 빌드에는 빠른 업데이트 검사가 적용되지 않으며, 명령 프롬프트에서 빌드를 호출한 것처럼 프로젝트가 빌드됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [방법: Visual Studio 빌드 프로세스 확장](../msbuild/how-to-extend-the-visual-studio-build-process.md)
 - [IDE에서 빌드 시작](../msbuild/starting-a-build-from-within-the-ide.md)
 - [.NET Framework 확장명 등록](../msbuild/registering-extensions-of-the-dotnet-framework.md)

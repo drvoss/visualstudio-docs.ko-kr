@@ -26,17 +26,17 @@ helpviewer_keywords:
 - warnings, files changed
 - Solution Explorer, displaying files in
 ms.assetid: 4e3ccf1b-cd68-4db6-9470-710c911b47fc
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff1b5e83d9aaca0181699e3cc7effcc973ef2349
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7813a2e7686bef5a146e7472bce7f2c24baf9cd2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661637"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75570065"
 ---
 # <a name="options-dialog-box-environment--documents"></a>옵션 대화 상자: 환경 \> 문서
 
@@ -83,7 +83,7 @@ ms.locfileid: "72661637"
 
 선택된 코드 페이지와 호환되지 않는 정보가 포함된 파일이 기본적으로 유니코드로 저장되도록 하려면 이 옵션을 선택합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [기타 파일](../../ide/reference/miscellaneous-files.md)
 - [텍스트 찾기 및 바꾸기](../../ide/finding-and-replacing-text.md)

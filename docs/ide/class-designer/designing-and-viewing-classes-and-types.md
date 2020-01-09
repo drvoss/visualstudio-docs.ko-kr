@@ -11,17 +11,17 @@ helpviewer_keywords:
 - classes [Visual Studio], viewing
 - class designer
 ms.assetid: 40ed2c9d-0ce0-4b95-ad78-5dec2065ccea
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31b28da2206d23c6112d7e7e154d7e907f63b163
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c65be2b5afe91f9ee20a5eecde57d790a0cbcb2c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631896"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590399"
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>Class Designer를 사용하여 클래스와 형식 디자인 및 보기
 
@@ -55,7 +55,7 @@ Visual Studio에서 **클래스 디자이너**를 사용하여 코드의 클래�
 > [!NOTE]
 > 클래스 디자이너는 소스 파일 위치를 추적하지 않으므로 프로젝트 구조를 변경하거나 프로젝트에서 소스 파일을 이동하면 클래스 디자이너가 해당 형식을 찾지 못할 수 있습니다(특히 소스 형식이 typedef, 기본 클래스 또는 연결 형식인 경우). **클래스 디자이너에서 이 형식을 표시할 수 없습니다.** 와 같은 오류가 발생할 수 있습니다. 이러한 오류가 발생하면 수정되거나 위치가 변경된 소스 코드를 클래스 다이어그램으로 끌어서 다시 표시합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 편집기의 기능](../writing-code-in-the-code-and-text-editor.md)
 - [솔루션 전체의 종속성 매핑](../../modeling/map-dependencies-across-your-solutions.md)

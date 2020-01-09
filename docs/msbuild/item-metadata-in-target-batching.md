@@ -7,17 +7,17 @@ helpviewer_keywords:
 - MSBuild, target batching
 - target batching [MSBuild]
 ms.assetid: f3cc4186-6a4c-4161-bbe5-1ec638b4925b
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff9aa4cdc2e3a406b21aeccf5538bcbfdd6b4249
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 013cf211fe9fdfb8fef07c5ac757fa5f4b35a521
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006794"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75577280"
 ---
 # <a name="item-metadata-in-target-batching"></a>대상 일괄 처리의 항목 메타데이터
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]에는 빌드 대상의 입력 및 출력에 대한 종속성 분석을 수행하는 기능이 있습니다. 대상의 입력 또는 출력이 최신 상태인지를 확인한 경우 대상을 건너뛰고 빌드를 계속합니다. `Target` 요소는 `Inputs` 및 `Outputs` 특성을 사용하여 종속성을 분석하는 동안 검사할 항목을 지정합니다.
@@ -65,7 +65,7 @@ ms.locfileid: "63006794"
 </Project>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [방법: 증분 방식으로 빌드](../msbuild/how-to-build-incrementally.md)
 - [일괄 처리](../msbuild/msbuild-batching.md)
 - [Target 요소(MSBuild)](../msbuild/target-element-msbuild.md)

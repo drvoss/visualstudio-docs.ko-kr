@@ -13,17 +13,17 @@ helpviewer_keywords:
 - MSBuild, ResolveCOMReference task
 - ResolveCOMReference task [MSBuild]
 ms.assetid: c9bf5fcf-6453-40ea-b50f-a212adc3e9b5
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ecefab48babc2938a4995ec8232e0aa7a06dae3c
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 3fdc6c6ccd58bcc83cc37ff3a9f7888af837ed6e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681106"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595204"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference 작업
 
@@ -84,7 +84,7 @@ ms.locfileid: "68681106"
 
 이 작업을 수행하기 위해 COM DLL을 컴퓨터에 등록할 필요가 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [작업](../msbuild/msbuild-tasks.md)
 - [작업 참조](../msbuild/msbuild-task-reference.md)

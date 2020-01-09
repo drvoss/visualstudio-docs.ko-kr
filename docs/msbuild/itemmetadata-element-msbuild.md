@@ -11,17 +11,17 @@ helpviewer_keywords:
 - ItemMetadata Element [MSBuild]
 - <ItemMetadata> Element [MSBuild]
 ms.assetid: e3db5122-202d-43a9-b2f4-3e0ec4ed3d08
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 825c6b897447a5a628d9a97e4c7e64f1427fb4d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 66c19dbd74176babbf9e26030a68a6095992b660
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817673"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589372"
 ---
 # <a name="itemmetadata-element-msbuild"></a>ItemMetadata 요소(MSBuild)
 항목 메타데이터 값을 포함하는 사용자 정의 항목 메타데이터 키를 포함합니다. 한 항목에 메타데이터 키-값 쌍이 얼마든지 포함될 수 있습니다.
@@ -68,6 +68,6 @@ ms.locfileid: "62817673"
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [프로젝트 파일 스키마 참조](../msbuild/msbuild-project-file-schema-reference.md)
 - [항목](../msbuild/msbuild-items.md)

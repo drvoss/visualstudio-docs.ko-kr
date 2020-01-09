@@ -6,15 +6,15 @@ helpviewer_keywords:
 - request-level plug-in, creating
 - Web performance tests, requests
 ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ce0a8030253e69b35deda379cffcf7475dc8bb62
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b6e57f92a3f45983321a866f3524974ea99dba82
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653631"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589158"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>방법: 요청 수준 플러그 인 만들기
 
@@ -81,7 +81,7 @@ ms.locfileid: "72653631"
     > 1. 웹 성능 및 부하 테스트 프로젝트에서는 참조에 경고가 표시됩니다. 참조를 제거했다가 플러그 인 DLL에 다시 추가합니다.
     > 2. 테스트 또는 적절한 위치에서 플러그 인을 제거했다가 다시 추가합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드를 사용하여 두 대화 상자를 표시하는 사용자 지정 웹 성능 테스트 플러그 인을 만들 수 있습니다. 첫 번째 대화 상자에는 요청 추가 기능을 연결할 요청과 연결된 URL이 표시됩니다. 두 번째 대화 상자에 에이전트의 컴퓨터 이름이 표시됩니다.
 
@@ -110,7 +110,7 @@ namespace RequestPluginNamespace
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>
 - [부하 테스트에 대한 사용자 지정 코드 및 플러그 인 만들기](../test/create-custom-code-and-plug-ins-for-load-tests.md)

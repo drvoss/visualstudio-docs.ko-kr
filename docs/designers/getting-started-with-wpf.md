@@ -3,17 +3,17 @@ title: WPF란?
 ms.date: 04/16/2018
 ms.topic: conceptual
 ms.assetid: f3be98cb-870f-472c-9da5-cb815e4f6598
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8cc1ea22c5cdbe85bf1d24d1641709c5fe5da7a
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: eb58a1a7bee7b07cc9b5434f7fa3e6bd295060d2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187139"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589541"
 ---
 # <a name="get-started-with-wpf"></a>WPF 시작
 
@@ -31,7 +31,7 @@ WPF(Windows Presentation Foundation)는 데스크톱 클라이언트 애플리�
 |WPF에 대한 자세한 설명...|[WPF 개요](/dotnet/framework/wpf/introduction-to-wpf)<br /><br />[XAML 개요(WPF)](/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br />[컨트롤](/dotnet/framework/wpf/controls/)<br /><br />[데이터 바인딩 개요](/dotnet/desktop-wpf/data/data-binding-overview)<br /><br />[LINQ to XML로 WPF 데이터 바인딩](/dotnet/framework/wpf/data/wpf-data-binding-with-linq-to-xml-overview)|
 |Windows Forms 개발자인가요?|[Windows Forms 컨트롤 및 해당 WPF 컨트롤](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)<br /><br />[WPF 및 Windows Forms 상호 운용성에서 지원되는 시나리오](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [WPF용 데스크톱 가이드](/dotnet/desktop-wpf/overview/index)
 - [클래스 라이브러리(WPF)](/dotnet/framework/wpf/class-library-wpf)

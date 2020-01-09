@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Build options [C#]
 - Project Designer, Build page
 ms.assetid: 77ff1bfc-d633-4634-ba29-9afdb6d7e362
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab60524f854b3974d383cb7d8ab37470195fc85e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 619840f417c922b4019bafffca8d66c9b1c939e2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668218"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596868"
 ---
 # <a name="build-page-project-designer-c"></a>프로젝트 디자이너, 빌드 페이지(C#)
 
@@ -139,7 +139,7 @@ XML serialization 어셈블리를 만드는 데 XML 직렬 변환기 생성기 �
 
 [고급 빌드 설정 대화 상자(C#)](../../ide/reference/advanced-build-settings-dialog-box-csharp.md) 대화 상자를 표시하려면 클릭합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [프로젝트 속성 참조](../../ide/reference/project-properties-reference.md)
 - [C# 컴파일러 옵션](/dotnet/csharp/language-reference/compiler-options/index)

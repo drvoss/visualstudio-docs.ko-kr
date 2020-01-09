@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, scenarios
 - load tests, logging
 ms.assetid: 08a7fe98-a7f7-4b8d-94a3-ec82b65a2aaf
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cdae6abf3af71967357319addd755a31721053ca
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6b47010a68520379afd8e0d969fa99169cb1ff0b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653414"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588956"
 ---
 # <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>방법: 부하 테스트 편집기를 사용하여 테스트 실패를 테스트 로그에 저장할지 여부 지정
 
@@ -43,7 +43,7 @@ ms.locfileid: "72653414"
 
      로그에 저장된 데이터는 부하 테스트 분석기의 테이블 뷰를 사용하여 볼 수 있습니다. 자세한 내용은 [테이블 뷰에서 부하 테스트 결과 및 오류 분석](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [부하 테스트 시나리오 편집](../test/edit-load-test-scenarios.md)
 - [연습: 부하 테스트 만들기 및 실행](../test/walkthrough-create-and-run-a-load-test.md)

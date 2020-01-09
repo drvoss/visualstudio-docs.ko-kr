@@ -3,17 +3,17 @@ title: 설정 동기화
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cebfc33b3bc0fc664874dd8c531e6630b3e64c5c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8f7183f20139df82d14f80ee4b57e28b4aed3a66
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647426"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566789"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>여러 컴퓨터에서 Visual Studio 설정 동기화
 
@@ -89,7 +89,7 @@ Visual Studio의 동기화된 설정이 기본적으로 켜져 있습니다. **�
 
 모든 설정을 기본값으로 다시 설정하려면 Visual Studio에 로그인한 후 **도구** > **설정 가져오기 및 내보내기**를 선택하여 **설정 가져오기 및 내보내기 마법사**를 엽니다. **모두 다시 설정**을 선택한 후 마법사의 나머지 단계를 따릅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)
 - [환경 설정](../ide/environment-settings.md)

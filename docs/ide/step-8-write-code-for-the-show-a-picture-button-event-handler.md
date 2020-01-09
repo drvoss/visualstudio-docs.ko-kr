@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7afdae8e98dba33184889fe314725e634e3bfa7
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: e249f2ad765063c54df08466bef15b8e443af1bf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314059"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591725"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>8단계: 그림 표시 단추 이벤트 처리기를 위한 코드 작성
 
@@ -105,7 +105,7 @@ IntelliSense는 사용자가 다음에 할 일을 판단하며 목록에서 사�
 
 * 이전 자습서 단계로 돌아가려면 [7단계: 양식에 대화 상자 구성 요소 추가](../ide/step-7-add-dialog-components-to-your-form.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [자습서 2: 시간이 지정된 수학 퀴즈 만들기](tutorial-2-create-a-timed-math-quiz.md)
 * [자습서 3: 맞추기 게임 만들기](tutorial-3-create-a-matching-game.md)

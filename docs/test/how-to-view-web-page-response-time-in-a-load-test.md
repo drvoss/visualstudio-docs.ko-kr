@@ -7,15 +7,15 @@ helpviewer_keywords:
 - response times in load tests
 - load test results, response times
 ms.assetid: e61c49f3-3161-45b1-9220-08b5459065a2
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5fbaa3f8f322bc6633e4f5081ba4cae38b581b95
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cf8bc1205658899a51cf1a50e83a9a8b34034b25
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653287"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594320"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>방법: 부하 테스트 분석기를 사용하여 부하 테스트의 웹 페이지 응답 시간 보기
 
@@ -91,7 +91,7 @@ ms.locfileid: "72653287"
 
    자세한 내용은 [그래프 뷰에서 부하 테스트 결과 분석](../test/analyze-load-test-results-in-the-graphs-view.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [테이블 뷰에서 부하 테스트 결과 및 오류 분석](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
 - [방법: 분석을 위한 부하 테스트 결과 액세스](../test/how-to-access-load-test-results-for-analysis.md)

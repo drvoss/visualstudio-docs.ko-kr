@@ -2,17 +2,17 @@
 title: 코드 검사 문제 해결
 ms.date: 11/04/2016
 ms.topic: troubleshooting
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 9a7e90310df3e9e2e73b653fdc651ba266e679ae
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: bd70394262a2dd19ebf32f57549b9d2b3e8ee92a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659873"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565977"
 ---
 # <a name="troubleshoot-code-coverage"></a>코드 검사 문제 해결
 
@@ -126,6 +126,6 @@ DataCollectors 노드에서 코드 검사를 지정하는지 확인합니다. [�
 
 해결&mdash;없음.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 검사를 사용하여 테스트할 코드 범위 결정](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

@@ -2,17 +2,17 @@
 title: 이전 버전의 .NET Framework를 대상으로 하는 단위 테스트
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-author: jillre
-ms.openlocfilehash: 32f34eb9af74f8db06cfc6910db83806383ae3be
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 32380ddc802d1421f39d4920073fc277876cfef4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72643612"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596023"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>방법: 이전 버전의 .NET Framework를 대상으로 사용하도록 단위 테스트 구성
 
@@ -104,7 +104,7 @@ Microsoft Visual Studio에서 테스트 프로젝트를 만들 때 .NET Framewor
 
 6. **솔루션 탐색기**에 새 C++ 테스트 프로젝트의 오른쪽 클릭 메뉴에서 **프로젝트 다시 로드**를 선택합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [SharePoint 솔루션 만들기](../sharepoint/create-sharepoint-solutions.md)
 - [SharePoint 솔루션 빌드 및 디버그](../sharepoint/building-and-debugging-sharepoint-solutions.md)

@@ -13,17 +13,17 @@ helpviewer_keywords:
 - MSBuild, AspNetCompiler task
 - AspNetCompiler task [MSBuild]
 ms.assetid: f811c019-a67b-4d54-82e6-e29549496f6e
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 90b9111d8d8ae78e5b937942df32fb84c97355fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a6535dbec7c09f0888d0fb29a2e6b801632da22f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945429"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593462"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler 작업
 `AspNetCompiler` 작업은 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 애플리케이션을 미리 컴파일하는 유틸리티인 *aspnet_compiler.exe*를 래핑합니다.
@@ -48,7 +48,7 @@ ms.locfileid: "62945429"
 |`Updateable`|선택적 `Boolean` 매개 변수입니다.<br /><br /> 이 매개 변수가 `true`이면 미리 컴파일된 애플리케이션이 업데이트 가능합니다.  기본값은 `false`입니다. 이 매개 변수는 *aspnet_compiler.exe*의 **-u** 스위치에 해당합니다.|
 |`VirtualPath`|선택적 `String` 매개 변수입니다.<br /><br /> 컴파일할 애플리케이션의 가상 경로입니다. `PhysicalPath`가 지정되면 실제 경로가 애플리케이션을 찾는 데 사용됩니다. 그렇지 않으면 IIS 메타베이스가 사용되고 애플리케이션은 기본 사이트에 있는 것으로 간주됩니다. 이 매개 변수는 *aspnet_compiler.exe*의 **-v** 스위치에 해당합니다.|
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
 이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.ToolTask> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [ToolTaskExtension 기본 클래스](../msbuild/tooltaskextension-base-class.md)를 참조하세요.
 
 ## <a name="example"></a>예제
@@ -68,6 +68,6 @@ ms.locfileid: "62945429"
 </Project>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 * [작업](../msbuild/msbuild-tasks.md)
 * [작업 참조](../msbuild/msbuild-task-reference.md)

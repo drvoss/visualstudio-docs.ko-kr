@@ -13,17 +13,17 @@ helpviewer_keywords:
 - SGen task [MSBuild]
 - MSBuild, SGen task
 ms.assetid: 22c5ade4-4159-4667-b891-0c1aa06f4df5
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c326dc31f6ce80026f1c83c5b71f8e27faabf93e
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: a97133892926e60adc1d9f0165415868732066ca
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887638"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595126"
 ---
 # <a name="sgen-task"></a>SGen 작업
 지정된 어셈블리의 형식에 대한 XML serialization 어셈블리를 만듭니다. 이 작업은 XML Serializer 생성기 도구(*Sgen.exe*)를 래핑합니다. 자세한 내용은 [XML Serializer 생성기 도구(Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe)를 참조하세요.
@@ -52,7 +52,7 @@ ms.locfileid: "70887638"
 ## <a name="remarks"></a>설명
  이 작업은 위에 나와 있는 매개 변수 외에 <xref:Microsoft.Build.Utilities.ToolTask> 클래스에서 직접 상속하는 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 클래스의 매개 변수도 상속합니다. 이러한 추가 매개 변수 및 해당 설명이 포함된 목록은 [ToolTaskExtension 기본 클래스](../msbuild/tooltaskextension-base-class.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [작업 참조](../msbuild/msbuild-task-reference.md)
 - [작업](../msbuild/msbuild-tasks.md)
 - [MSBuild 개념](../msbuild/msbuild-concepts.md)

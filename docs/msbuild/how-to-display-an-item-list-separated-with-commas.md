@@ -6,17 +6,17 @@ helpviewer_keywords:
 - MSBuild, separating items with semicolons
 - MSBuild, formatting item collections
 ms.assetid: 3cae844c-7c6d-4144-82dc-efad10ba458f
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b01e39569207065fac9c28d093267348a829d73f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 677278d08e3223f759afc64692481311bfba3356
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945051"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596335"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>방법: 항목 목록을 쉼표로 구분하여 표시
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)])에서 항목 목록을 사용할 때 쉽게 읽을 수 있는 방식으로 해당 항목 목록의 내용을 표시하는 데 유용합니다. 또는 특별한 구분 기호 문자열로 구분된 항목의 목록을 사용하는 작업이 있을 수 있습니다. 이러한 모든 경우에 항목 목록에 대한 구분 기호 문자열을 지정할 수 있습니다.
@@ -66,6 +66,6 @@ ms.locfileid: "62945051"
 </Project>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [MSBuild 참조](../msbuild/msbuild-reference.md)
 - [항목](../msbuild/msbuild-items.md)

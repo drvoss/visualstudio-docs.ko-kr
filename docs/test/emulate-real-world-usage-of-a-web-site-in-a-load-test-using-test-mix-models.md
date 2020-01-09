@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load model, specifying
 - load test load model, specifying
 ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c3125a229faed10b141834565fec71e3b9f0a0d2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 18e22cd151d8013a50e34a01757069dde9574e79
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664966"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589606"
 ---
 # <a name="test-mix-models-overview"></a>테스트 조합 모델 개요
 
@@ -102,7 +102,7 @@ ms.locfileid: "72664966"
 
 - 시나리오 속성 "새 사용자의 백분율"에 정의된 대로 새 사용자는 항상 초기화 테스트를 실행하고 테스트 조합의 테스트를 한 번 반복한 다음 종료 테스트를 실행합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [텍스트 조합 모델을 편집하여 가상 사용자의 테스트 실행 가능성 지정](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)
 - [모델 가상 사용자 동작에 대한 부하 패턴 편집](../test/edit-load-patterns-to-model-virtual-user-activities.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Toolbox, HTML tab
 - HTML Designer, setting options
 - HTML tab in Toolbox
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed46bdb9b5562b38f37129d69e7f075e425588b0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0489f534466149a437384d4f21e34f1fa9e98c5b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72644779"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596439"
 ---
 # <a name="toolbox-html-tab"></a>도구 상자, HTML 탭
 
@@ -230,6 +230,6 @@ size 속성 값을 늘려 여러 줄 `select` 요소를 만들 수 있습니다.
 <div ms_positioning="FlowLayout" style="width: 70px; position: relative; height: 15px">Label</div>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [도구 상자](../../ide/reference/toolbox.md)

@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Web performance tests, using the API
 - APIs, Web performance tests
 ms.assetid: 93a6a1dd-663b-4ab5-8760-7d6b081561d3
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d22c1962727d22af965c879de3ae5fea6d4e54af
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e869bc46997ffb6ebecae2aa3e49c3cb6b2582fa
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653305"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594341"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>방법: 웹 성능 테스트 API 사용
 
@@ -64,7 +64,7 @@ ms.locfileid: "72653305"
 
      <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>의 구현에 대한 예제를 보려면 [방법: 웹 성능 테스트 플러그 인 만들기](../test/how-to-create-a-web-performance-test-plug-in.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 - [부하 테스트에 대한 사용자 지정 코드 및 플러그 인 만들기](../test/create-custom-code-and-plug-ins-for-load-tests.md)

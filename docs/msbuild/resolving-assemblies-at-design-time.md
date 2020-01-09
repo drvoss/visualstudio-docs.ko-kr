@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - msbuild
 ms.assetid: 20dae076-733e-49c1-a2e9-b336757ae21d
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 131cc61614c9f3e814cca5bcbc0ff6db303414cf
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: d46b2042755df9f9f0e1abcb43c07a5318c92593
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253750"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595152"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>디자인 타임에 어셈블리 확인
 **참조 추가** 대화 상자의 **.NET** 탭을 통해 어셈블리에 참조를 추가할 때, 참조는 중간 참조 어셈블리를 가리킵니다. 이 어셈블리는 모든 형식 및 시그니처 정보를 포함하지만 코드를 반드시 포함하지는 않습니다. **.NET** 탭에는 .NET Framework의 런타임 어셈블리에 해당하는 참조 어셈블리가 표시됩니다. 또한 타사에서 사용되는 등록된 AssemblyFoldersEx 폴더의 런타임 어셈블리에 해당하는 참조 어셈블리도 표시됩니다.
@@ -36,5 +36,5 @@ ms.locfileid: "71253750"
 
  이제 .NET Framework SDK가 포함된 타기팅 팩에는 해당 버전의 Framework에 있는 모든 런타임 어셈블리 목록(재배포 목록이라고도 함)이 포함되므로, 빌드 시스템이 어셈블리의 잘못된 버전에 대해 형식을 확인할 수 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [고급 개념](../msbuild/msbuild-advanced-concepts.md)

@@ -7,15 +7,15 @@ helpviewer_keywords:
 - Web services [Visual Studio ALM], creating
 - service tests, Web
 ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 90dae3add4782af18763168643cfa5755d37cc2e
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 7a6e42d6d92a74a0fc8be96c966b9146b7888b9e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981267"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589099"
 ---
 # <a name="how-to-create-a-web-service-test"></a>방법: 웹 서비스 테스트 만들기
 
@@ -73,6 +73,6 @@ Visual Studio Enterprise
 
 13. 테스트를 실행합니다. **웹 성능 테스트 결과 뷰어**의 위쪽 창에서 웹 서비스 요청을 선택합니다. 아래쪽 창에서 [웹 브라우저] 탭을 선택합니다. 웹 서비스에서 반환되는 XML및 작업 결과가 표시됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [부하 테스트에 대한 사용자 지정 코드 및 플러그 인 만들기](../test/create-custom-code-and-plug-ins-for-load-tests.md)

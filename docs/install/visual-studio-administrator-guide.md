@@ -10,19 +10,19 @@ helpviewer_keywords:
 - administrator guide, Visual Studio
 - installing Visual Studio, administrator guide
 ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 89f34d027ec238b1e34724924ffb163267d56dc0
-ms.sourcegitcommit: 0bd63f3bc429ae059b9df6e45c6b8dcae6152940
+ms.openlocfilehash: 0508715637a3ac03c1377d3a337a6ded41a906de
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70026479"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590932"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio 관리자 가이드
 
@@ -30,7 +30,7 @@ ms.locfileid: "70026479"
 
 이 관리자 가이드에서는 네트워크 환경의 엔터프라이즈 배포에 대한 시나리오 기반 지침을 제공합니다.
 
-## <a name="before-you-begin"></a>시작하기 전에
+## <a name="before-you-begin"></a>시작하기 전 주의 사항
 
 조직 전체에 Visual Studio를 배포하기 전에 몇 가지 결정할 사항과 완료할 작업이 있습니다.
 
@@ -158,7 +158,7 @@ ms.locfileid: "70026479"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [명령줄 매개 변수 예](command-line-parameter-examples.md)
 * [Visual Studio 오프라인 설치에 필요한 인증서 설치](install-certificates-for-visual-studio-offline.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - escape characters
 - MSBuild, escaping special characters
 ms.assetid: 1aa3669c-1647-4960-b770-752e2532102f
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 983e10f26e6fd1d8b4b7ff18c73edd65cb4810f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 955739372605b9e4f9fe58f73669322e2724de31
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968108"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595009"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>방법: MSBuild의 이스케이프 특수 문자
 
@@ -50,7 +50,7 @@ ms.locfileid: "62968108"
 
 특수 문자 대신 `%<xx>` 표기법을 사용할 수 있습니다. 여기서 `<xx>`는 ASCII 문자의 16진수 값을 나타냅니다. 예를 들어 별표(`*`)를 리터럴 문자로 사용하려면 `%2A` 값을 사용합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [MSBuild 개념](../msbuild/msbuild-concepts.md)
 - [MSBuild](../msbuild/msbuild.md)
 - [항목](../msbuild/msbuild-items.md)

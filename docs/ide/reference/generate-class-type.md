@@ -2,8 +2,8 @@
 title: 클래스 및 형식 생성
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 f1_keywords:
 - vsl.GenerateFromUsage
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d561a77006b83d366506b48d3a164ada380b1a24
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 94786ef10e427a0deb4f80471305509124f1638b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660070"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595633"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Visual Studio에서 클래스 또는 형식 생성
 
@@ -74,7 +74,7 @@ ms.locfileid: "72660070"
    --- | ---
    액세스 | *기본*, *내부* 또는 *공용* 액세스 권한을 가지도록 형식을 설정합니다.
    Kind | *클래스* 또는 *구조체*로 설정할 수 있습니다.
-   name | 이를 변경할 수 없으며 이미 입력한 이름이 사용됩니다.
+   이름 | 이를 변경할 수 없으며 이미 입력한 이름이 사용됩니다.
    프로젝트 | 솔루션에 여러 프로젝트가 있는 경우 클래스/구조체를 활성화할 위치를 선택할 수 있습니다.
    파일 이름 | 새 파일을 만들거나 기존 파일에 형식을 추가할 수 있습니다.
 
@@ -88,7 +88,7 @@ ms.locfileid: "72660070"
 
    ![클래스 생성 결과 VB](media/class-result-vb.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 생성](../code-generation-in-visual-studio.md)
 - [변경 내용 미리 보기](../../ide/preview-changes.md)

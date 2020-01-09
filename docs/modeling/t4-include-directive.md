@@ -2,17 +2,17 @@
 title: T4 Include 지시문
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 636260609aa535e3bc45efe0224a517fd782c040
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a1ee58c29be3c4dfb5e2148c54464a7a511d1839
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606385"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591855"
 ---
 # <a name="t4-include-directive"></a>T4 Include 지시문
 
@@ -24,13 +24,13 @@ Visual Studio의 텍스트 템플릿에서 `<#@include#>` 지시어를 사용 �
 <#@ include file="filePath" [once="true"] #>
 ```
 
-- `filePath`는 현재 템플릿 파일에 대해 상대적인 경로이거나 절대 경로일 수 있습니다.
+- `filePath`는 절대 경로 이거나 현재 템플릿 파일을 기준으로 할 수 있습니다.
 
    또한 특정 Visual Studio 확장에서 포함 파일을 검색 하는 고유한 디렉터리를 지정할 수 있습니다. 예를 들어 시각화 및 모델링 SDK (DSL 도구)를 설치한 경우 다음 폴더가 포함 목록: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`에 추가 됩니다.
 
    이러한 추가적인 포함 폴더는 포함 파일의 파일 확장명에 따라 달라질 수 있습니다. 예를 들어 DSL 도구의 포함 폴더에서는 파일 확장명이 `.tt`인 파일이 있는 포함 파일에만 액세스할 수 있습니다.
 
-- `filePath`는 "%"로 구분되는 환경 변수를 포함할 수 있습니다. 예를 들면,
+- `filePath`는 "%"로 구분되는 환경 변수를 포함할 수 있습니다. 예를 들면 다음과 같습니다.:
 
   ```
   <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>
@@ -44,7 +44,7 @@ Visual Studio의 텍스트 템플릿에서 `<#@include#>` 지시어를 사용 �
 
 - 포함된 내용은 포함하는 텍스트 템플릿의 일부인 것처럼 처리됩니다. 그러나 `<#+...#>` 지시문 뒤에 일반 텍스트와 표준 제어 블록이 있는 경우에도 클래스 기능 블록 `include`이 포함된 파일을 포함할 수 있습니다.
 
-- @No__t_0를 사용 하 여 둘 이상의 다른 포함 파일에서 호출 되는 경우에도 템플릿이 한 번만 포함 되도록 합니다.
+- `once="true"`를 사용 하 여 둘 이상의 다른 포함 파일에서 호출 되는 경우에도 템플릿이 한 번만 포함 되도록 합니다.
 
    이 기능을 사용 하면 다른 코드 조각이 이미 포함 된 경우를 걱정 하지 않고에 포함할 수 있는 재사용 가능한 T4 코드 조각의 라이브러리를 쉽게 빌드할 수 있습니다.  예를 들어 템플릿 처리 및 C# 생성을 처리 하는 매우 세분화 된 조각 라이브러리를 가정 합니다.  그러면 예외 생성과 같은 몇 가지 작업 관련 유틸리티에서 사용 하 여 응용 프로그램 관련 템플릿에서 사용할 수 있습니다. 종속성 그래프를 그리는 경우 일부 코드 조각이 여러 번 포함될 수 있습니다. 그러나 `once` 매개 변수가 이후에 포함되지 않도록 방지합니다.
 
@@ -61,7 +61,7 @@ Output message 5 (from top template).
 #>
 ```
 
- **Textfile1.txt:**
+ **TextFile1.t4:**
 
 ```
    Output Message 2 (from included file).
@@ -77,7 +77,7 @@ void GenerateMessage(int n)
 #>
 ```
 
- **Textfile2.txt:**
+ **TextFile2.t4:**
 
 ```
         Output Message 3 (from included file 2).

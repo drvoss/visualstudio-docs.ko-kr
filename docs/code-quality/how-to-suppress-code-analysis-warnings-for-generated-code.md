@@ -3,17 +3,17 @@ title: 생성 된 코드에 대 한 코드 분석 위반 표시 안 함
 ms.date: 05/13/2019
 ms.topic: conceptual
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39daa50254f2d1b69514d4065e582154e9ceb6b5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9ab2ffce28103059414cef8f1b556152485a12ff
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649400"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587435"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>방법: 생성 된 코드에 대 한 코드 분석 경고 표시 안 함
 
@@ -32,5 +32,5 @@ ms.locfileid: "72649400"
 
 3. 생성 된 **코드에서 결과 표시 안 함** 확인란을 선택 합니다.
 
-> [!NOTE]
-> 레거시 분석의 경고만 표시 하지 않을 수 있습니다. 현재 [분석기](roslyn-analyzers-overview.md)에서 코드 분석 경고를 표시 하지 않을 수 있습니다.
+> [!IMPORTANT]
+> 레거시 분석의 경고만 표시 하지 않을 수 있습니다. 설정이 있는 속성 페이지는 더 이상 사용 되지 않으며 이후 제품 릴리스에서 제거 될 예정입니다. 현재 [분석기](roslyn-analyzers-overview.md)에서 코드 분석 경고를 표시 하지 않을 수 있습니다.

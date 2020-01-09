@@ -27,17 +27,17 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.ScrollBars
 - VS.ToolsOptionsPages.Text_Editor.XAML.ScrollBars
 - VS.ToolsOptionsPages.Text_Editor.XML.ScrollBars
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da66270d29778e48d89d713e36c6c717e5f86d89
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 54ce07537adc436f719de8596657d1367afcb87d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666378"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588800"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>옵션, 텍스트 편집기, 모든 언어, 스크롤 막대
 이 대화 상자에서는 코드 편집기 스크롤 막대의 기본 동작을 변경할 수 있습니다. 이러한 옵션을 표시하려면 **도구** 메뉴에서 **옵션**을 선택합니다. **텍스트 편집기** 폴더 내에서 **모든 언어** 하위 폴더를 확장한 다음, **스크롤 막대**를 선택합니다.
@@ -86,6 +86,6 @@ ms.locfileid: "72666378"
 > [!TIP]
 > **소스 개요**를 **끔**으로 설정하여 지도 모드에서 축소 코드 보기를 끌 수 있습니다. **미리 보기 도구 설명 표시**를 선택한 경우에도 스크롤 막대를 포인터로 가리키면 해당 위치의 코드 미리 보기가 표시되며, 클릭하면 커서가 파일의 해당 위치로 이동합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방법: 스크롤 막대 사용자 지정](../how-to-track-your-code-by-customizing-the-scrollbar.md)

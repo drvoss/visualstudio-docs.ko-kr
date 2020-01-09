@@ -3,17 +3,17 @@ title: XSLT 디버거 창
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae37db21072e81a5940f09f085bf261839686a69
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bb72acf2db63e54da8a1ee001d2abfaa30850fc3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646084"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592882"
 ---
 # <a name="debugger-user-interface-xslt"></a>디버거 사용자 인터페이스 (XSLT)
 
@@ -25,7 +25,7 @@ ms.locfileid: "72646084"
 
 지역 창에는 스타일시트에 정의되어 있는 변수에 대한 정보가 표시됩니다. 지역 창에는 다음 세 개의 정보 열이 있습니다.
 
-**이름**
+**Name**
 
 이 열에는 현재 범위에 있는 모든 지역 변수의 이름이 포함됩니다. 노드 집합에는 하위 폴더를 보기 위해 드릴 다운할 수 있는 트리 컨트롤이 있습니다.
 
@@ -39,7 +39,7 @@ ms.locfileid: "72646084"
 
 지역 창에는 XSLT 변형 컨텍스트를 추적하는 미리 정의된 컨텍스트 변수도 표시됩니다. 다음 표에서는 XSLT 디버거에서 사용하는 미리 정의된 컨텍스트 변수를 설명합니다.
 
-|name|설명|
+|이름|설명|
 |-|-----------------|
 |`last()`|컨텍스트 크기입니다.|
 |`position()`|컨텍스트 크기에 상대적인 컨텍스트 노드의 위치 또는 인덱스 번호입니다.|
@@ -88,7 +88,7 @@ XSLT 파일에 템플릿 이름이 없을 경우 XSLT 프로세서에서 생성�
 
 - 기본 제공 XPath 함수만 사용할 수 있습니다.
 
-- @No__t_0 및 `key()`와 같은 기본 제공 XSLT 함수는 허용 되지 않습니다.
+- `document()` 및 `key()`와 같은 기본 제공 XSLT 함수는 허용 되지 않습니다.
 
 - 사용자 정의 함수는 사용할 수 없습니다.
 

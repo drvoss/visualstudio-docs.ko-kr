@@ -18,17 +18,17 @@ helpviewer_keywords:
 - debug mode
 - custom layouts
 ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6ca1f34604c314fea6e90130b298be04f3a6189
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c1963c76b67eaedea4cdf013739c112275ecffb2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652528"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596712"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Visual Studio에서 창 레이아웃 사용자 지정
 
@@ -182,6 +182,6 @@ UI 레이아웃을 적용한 후 편집 모드와 디버깅 모드에서 레이�
 
 이러한 레이아웃은 Visual Studio 버전 간에, 서로 다른 컴퓨터에 있는 Blend 인스턴스 간에, 그리고 Express 버전에서 다른 Express 조직으로 자동으로 로밍됩니다. 하지만 Visual Studio, Blend 및 Express 간에는 레이아웃이 로밍되지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방법: IDE에서 이동](../ide/how-to-move-around-in-the-visual-studio-ide.md)

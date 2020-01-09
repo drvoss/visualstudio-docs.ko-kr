@@ -3,17 +3,17 @@ title: '워크플로 디자이너: 활동 대리자 정의 및 사용'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
-ms.author: jillfra
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 67e862e3772b157c4a0999ccd44c3698119ae8a8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: TerryGLee
+ms.openlocfilehash: 4309294a2be703b7511355b87c97341fee06d405
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650345"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593904"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>방법: 워크플로 디자이너에서 활동 대리자 정의 및 사용
 
@@ -32,7 +32,7 @@ ms.locfileid: "72650345"
 
 4. 워크플로 디자이너에서 **인수** 탭을 클릭 합니다.
 
-5. **인수 만들기**를 클릭합니다. 새 인수 **항목**의 이름을로 합니다.
+5. **인수 만들기**를 클릭 합니다. 새 인수 **항목**의 이름을로 합니다.
 
 6. **인수 형식** 열에서 **배열 [T]** 를 선택 합니다.
 

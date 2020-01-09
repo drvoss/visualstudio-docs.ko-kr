@@ -2,17 +2,17 @@
 title: VS 확장명에서 텍스트 변형 호출
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8729a96d236fd565f31c827ebff6911dbc0b81d6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7ab846d1d7121d0c36c4187d937330d2ade52eb1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667761"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594593"
 ---
 # <a name="invoke-text-transformation-in-a-visual-studio-extension"></a>Visual Studio 확장에서 텍스트 변환 호출
 
@@ -140,6 +140,6 @@ Visual Studio 오류 창에 컴파일러 경고가 표시 되 고 `ErrorCallback
 
 전처리 된 텍스트 템플릿에서 텍스트를 생성 하려면: 생성 된 클래스의 `TransformText()` 메서드를 호출 합니다. 자세한 내용은 [T4 텍스트 템플릿을 사용 하 여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)을 참조 하세요.
 
-Visual Studio 확장 외부에서 텍스트를 생성 하려면: 사용자 지정 호스트를 정의 합니다. 자세한 내용은 [사용자 지정 호스트를 사용 하 여 텍스트 템플릿 처리](../modeling/processing-text-templates-by-using-a-custom-host.md)를 참조 하세요.
+Visual Studio 확장 외부에서 텍스트를 생성 하려면: 사용자 지정 호스트를 정의 합니다. 자세한 내용은 [사용자 지정 호스트를 사용 하 여 텍스트 템플릿 처리](../modeling/processing-text-templates-by-using-a-custom-host.md)합니다.
 
 나중에 컴파일 및 실행할 수 있는 소스 코드를 생성 하려면 [Itexttemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110))의 [PreprocessTemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) 메서드를 호출 합니다.

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Load Test Results Repository
 - SQL, Load Test Results Store
 ms.assetid: fa0c4dd9-612f-4a57-b8eb-458f129d9cda
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b5b1b13ec6b81536a63a1732e7521dd1e64d007f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 513dd884f65e041e7ad90dda1483633fec57e100
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653467"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589008"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>방법: 부하 테스트 결과 리포지토리 선택
 
@@ -53,7 +53,7 @@ ms.locfileid: "72653467"
 
 8. **테스트 컨트롤러 관리** 대화 상자에서 **닫기**를 선택합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [부하 테스트 결과 리포지토리에서 부하 테스트 결과 관리](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [테스트 컨트롤러 및 테스트 에이전트](configure-test-agents-and-controllers-for-load-tests.md)

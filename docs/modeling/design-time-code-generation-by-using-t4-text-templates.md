@@ -10,17 +10,17 @@ helpviewer_keywords:
 - text templates, getting started
 - Text Template project item
 - text templates, generating code for your application
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08451c679f372cb376c6baf97a9a4d06282ba45f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 06c6244f59482825ed435226f79437da9e2c0df0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748415"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589632"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>T4 텍스트 템플릿을 사용하여 디자인 타임 코드 생성
 
@@ -41,7 +41,7 @@ ms.locfileid: "72748415"
 
 2. 텍스트 템플릿 파일을 프로젝트에 추가 하 고 확장명이 **.tt**인 이름을 지정 합니다.
 
-    이렇게 하려면 **솔루션 탐색기**의 프로젝트 바로 가기 메뉴에서 **추가**  > **새 항목**을 선택 합니다. **새 항목 추가** 대화 상자의 가운데 창에서 **텍스트 템플릿** 을 선택 합니다.
+    이렇게 하려면 **솔루션 탐색기**의 프로젝트 바로 가기 메뉴에서 **추가** > **새 항목**을 선택 합니다. **새 항목 추가** 대화 상자의 가운데 창에서 **텍스트 템플릿** 을 선택 합니다.
 
     파일의 **사용자 지정 도구** 속성은 **Texttemplatingfilegenerator**입니다.
 
@@ -54,7 +54,7 @@ ms.locfileid: "72748415"
 
     [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 프로젝트에 템플릿을 추가한 경우 언어 특성은 "`VB`"입니다.
 
-4. 파일 끝에 원하는 텍스트를 추가합니다. 예를 들면,
+4. 파일 끝에 원하는 텍스트를 추가합니다. 예를 들면 다음과 같습니다.:
 
    ```
    Hello, world!
@@ -75,7 +75,7 @@ ms.locfileid: "72748415"
 
 - 템플릿을 편집한 다음 다른 Visual Studio 창으로 포커스를 변경 합니다.
 
-- 템플릿을 저장하는 경우
+- 템플릿을 저장합니다.
 
 - **빌드** 메뉴에서 **모든 템플릿 변환** 을 클릭 합니다. 그러면 Visual Studio 솔루션의 모든 템플릿이 변환 됩니다.
 
@@ -123,7 +123,7 @@ ms.locfileid: "72748415"
 
 텍스트 템플릿을 디버그하려면
 
-- 먼저 `debug="true"`를 `template` 지시문에 삽입합니다. 예를 들면,
+- 먼저 `debug="true"`를 `template` 지시문에 삽입합니다. 예를 들면 다음과 같습니다.:
 
    `<#@ template debug="true" hostspecific="false" language="C#" #>`
 
@@ -219,7 +219,7 @@ ms.locfileid: "72748415"
 <#@ import namespace="System.IO" #>
 ```
 
-@No__t_0 지시문을 사용 하면 Visual Studio 프로젝트의 참조 섹션과 동일한 방식으로 지정 된 어셈블리를 템플릿 코드에서 사용할 수 있습니다. System.dll은 자동으로 참조되므로 해당 참조를 포함할 필요는 없습니다. `import` 지시문을 사용하면 일반 프로그램 파일의 `using` 지시문과 같은 방식으로 정규화된 이름을 사용하지 않고도 형식을 사용할 수 있습니다.
+`assembly` 지시문을 사용 하면 Visual Studio 프로젝트의 참조 섹션과 동일한 방식으로 지정 된 어셈블리를 템플릿 코드에서 사용할 수 있습니다. System.dll은 자동으로 참조되므로 해당 참조를 포함할 필요는 없습니다. `import` 지시문을 사용하면 일반 프로그램 파일의 `using` 지시문과 같은 방식으로 정규화된 이름을 사용하지 않고도 형식을 사용할 수 있습니다.
 
 예를 들어 **System.IO**를 가져온 후 다음을 작성할 수 있습니다.
 
@@ -272,7 +272,7 @@ ms.locfileid: "72748415"
 
 ### <a name="getting-data-from-visual-studio"></a>Visual Studio에서 데이터 가져오기
 
-Visual Studio에서 제공 하는 서비스를 사용 하려면 `hostSpecific` 특성을 설정 하 고 `EnvDTE` 어셈블리를 로드 합니다. @No__t_1 확장 메서드를 포함 하는 `Microsoft.VisualStudio.TextTemplating`를 가져옵니다.  그런 다음 IServiceProvider.GetCOMService()를 사용하여 DTE 및 기타 서비스에 액세스할 수 있습니다. 예를 들면,
+Visual Studio에서 제공 하는 서비스를 사용 하려면 `hostSpecific` 특성을 설정 하 고 `EnvDTE` 어셈블리를 로드 합니다. `GetCOMService()` 확장 메서드를 포함 하는 `Microsoft.VisualStudio.TextTemplating`를 가져옵니다.  그런 다음 IServiceProvider.GetCOMService()를 사용하여 DTE 및 기타 서비스에 액세스할 수 있습니다. 예를 들면 다음과 같습니다.:
 
 ```src
 <#@ template hostspecific="true" language="C#" #>
@@ -299,7 +299,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 Visual Studio 모델링 SDK를 설치한 경우 빌드를 수행할 때마다 모든 템플릿이 자동으로 변환 되도록 할 수 있습니다. 이렇게 하려면 프로젝트 파일(.csproj 또는 .vbproj)을 텍스트 편집기에서 편집하여 파일 끝부분의 다른 `<import>` 문 뒤에 다음 줄을 추가합니다.
 
 > [!NOTE]
-> Visual Studio의 특정 기능을 설치 하면 텍스트 템플릿 변환 SDK 및 Visual Studio 모델링 SDK가 자동으로 설치 됩니다. 자세한 내용은 [이 블로그 게시물](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)을 참조 하세요.
+> Visual Studio의 특정 기능을 설치 하면 텍스트 템플릿 변환 SDK 및 Visual Studio 모델링 SDK가 자동으로 설치 됩니다. 자세한 내용은 참조 하세요. [이 블로그 게시물](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)합니다.
 
 ::: moniker range="vs-2017"
 
@@ -325,7 +325,7 @@ Visual Studio 모델링 SDK를 설치한 경우 빌드를 수행할 때마다 �
 
 ::: moniker-end
 
-자세한 내용은 [빌드 프로세스에서 코드 생성](../modeling/code-generation-in-a-build-process.md)을 참조 하세요.
+자세한 내용은 [빌드 프로세스에서 코드 생성](../modeling/code-generation-in-a-build-process.md)합니다.
 
 ## <a name="error-reporting"></a>오류 보고
 
@@ -342,7 +342,7 @@ Warning("A warning message");
 
 ### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>기존 파일을 디자인 타임 템플릿으로 변환하려면
 
-1. Visual Studio 프로젝트에 `.cs`, `.vb` 또는 `.resx` 파일과 같이 생성 하려는 형식의 파일을 추가 합니다.
+1. Visual Studio 프로젝트에 `.cs`, `.vb`또는 `.resx` 파일과 같이 생성 하려는 형식의 파일을 추가 합니다.
 
 2. 새 파일을 테스트하여 작동하는지 확인합니다.
 

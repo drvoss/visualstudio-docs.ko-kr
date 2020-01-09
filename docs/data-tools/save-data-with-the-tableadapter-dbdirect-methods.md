@@ -11,21 +11,21 @@ helpviewer_keywords:
 - saving data, walkthroughs
 - data [Visual Studio], TableAdapter
 ms.assetid: 74a6773b-37e1-4d96-a39c-63ee0abf49b1
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b73e193f1bb3082a353e004200d437a74f508941
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 16ba6fcab6ef0f7a60f8cb8373a10a7c4383676b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641155"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586213"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>TableAdapter DBDirect 메서드를 사용하여 데이터 저장
 
-이 연습에서는 TableAdapter의 DBDirect 메서드를 사용 하 여 데이터베이스에 대해 직접 SQL 문을 실행 하기 위한 자세한 지침을 제공 합니다. TableAdapter의 DBDirect 메서드는 데이터베이스 업데이트에 대한 상세 제어 수준을 제공합니다. 업데이트를 수행 하는 오버 로드 된 `Update` 메서드와 달리 응용 프로그램에서 필요에 따라 개별 `Insert`, `Update` 및 `Delete` 메서드를 호출 하 여 특정 SQL 문 및 저장 프로시저를 실행 하는 데 사용할 수 있습니다. 및는 모두 하나의 호출로 문을 삭제 합니다.
+이 연습에서는 TableAdapter의 DBDirect 메서드를 사용 하 여 데이터베이스에 대해 직접 SQL 문을 실행 하기 위한 자세한 지침을 제공 합니다. TableAdapter의 DBDirect 메서드는 데이터베이스 업데이트에 대한 상세 제어 수준을 제공합니다. 응용 프로그램에서 필요에 따라 개별 `Insert`, `Update`및 `Delete` 메서드를 호출 하 여 특정 SQL 문 및 저장 프로시저를 실행 하는 데 사용할 수 있습니다 .이 메서드는 업데이트, 삽입 및 삭제 문을 모두 한 번 호출 하는 오버 로드 된 `Update` 메서드와는 반대로 수행 합니다.
 
 이 연습에서는 다음 작업을 수행하는 방법을 배웁니다.
 
@@ -39,7 +39,7 @@ ms.locfileid: "72641155"
 
 - 데이터베이스에 직접 액세스 하 고 삽입, 업데이트 및 삭제를 수행 하는 메서드를 추가 합니다.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>전제 조건
 
 이 연습에서는 SQL Server Express LocalDB 및 Northwind 샘플 데이터베이스를 사용 합니다.
 
@@ -61,7 +61,7 @@ ms.locfileid: "72641155"
 
 첫 번째 단계는 **Windows Forms 응용 프로그램**을 만드는 것입니다.
 
-1. Visual Studio의 **파일** 메뉴에서 **새로 만들기**  > **프로젝트**를 선택 합니다.
+1. Visual Studio의 **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 차례로 선택합니다.
 
 2. 왼쪽 창 **에서 C# 시각적 개체** 또는 **Visual Basic** 을 확장 한 다음 **Windows 데스크톱**을 선택 합니다.
 
@@ -89,7 +89,7 @@ ms.locfileid: "72641155"
 
     - Northwind 샘플 데이터베이스에 대한 데이터 연결이 드롭다운 목록에 표시되면 해당 연결을 선택합니다.
 
-         또는
+         -또는-
 
     - **새 연결**을 선택하여 **연결 추가/수정** 대화 상자를 시작합니다.
 
@@ -99,7 +99,7 @@ ms.locfileid: "72641155"
 
 7. **데이터베이스 개체 선택** 화면에서 **테이블** 노드를 확장 합니다.
 
-8. @No__t_0 테이블을 선택 하 고 **마침**을 선택 합니다.
+8. `Region` 테이블을 선택 하 고 **마침**을 선택 합니다.
 
      **NorthwindDataSet**가 프로젝트에 추가되고 `Region` 테이블이 **데이터 원본** 창에 나타납니다.
 
@@ -109,7 +109,7 @@ ms.locfileid: "72641155"
 
 Windows form에서 데이터 바인딩된 컨트롤을 만들려면 주 **지역** 노드를 **데이터 소스** 창에서 폼으로 끌어 옵니다.
 
-<xref:System.Windows.Forms.DataGridView> 컨트롤과 레코드 탐색에 사용되는 도구 모음인 <xref:System.Windows.Forms.BindingNavigator>가 폼에 나타납니다. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `RegionTableAdapter`, <xref:System.Windows.Forms.BindingSource> 및 <xref:System.Windows.Forms.BindingNavigator>가 구성 요소 트레이에 나타납니다.
+<xref:System.Windows.Forms.DataGridView> 컨트롤과 레코드 탐색에 사용되는 도구 모음인 <xref:System.Windows.Forms.BindingNavigator>가 폼에 나타납니다. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `RegionTableAdapter`, <xref:System.Windows.Forms.BindingSource>및 <xref:System.Windows.Forms.BindingNavigator>가 구성 요소 트레이에 나타납니다.
 
 ### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>개별 TableAdapter DbDirect 메서드를 호출하는 단추를 추가하려면
 
@@ -117,7 +117,7 @@ Windows form에서 데이터 바인딩된 컨트롤을 만들려면 주 **지역
 
 2. 각 단추에 대해 다음 **이름** 및 **텍스트** 속성을 설정합니다.
 
-    |name|Text|
+    |이름|텍스트|
     |----------|----------|
     |`InsertButton`|**삽입**|
     |`UpdateButton`|**업데이트**|

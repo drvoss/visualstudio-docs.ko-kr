@@ -3,17 +3,17 @@ title: '방법: 기본 3D 모델 만들기'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 604847e5f9bf6111d548b9d3bbdc0a0e10301784
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ce16e436172a7d369f2df8342f6b027b574056ab
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72636728"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589528"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>방법: 기본 3D 모델 만들기
 
@@ -72,7 +72,7 @@ ms.locfileid: "72636728"
 
    다음 단계에서 이 3D 모델에 셰이더를 적용할 수 있습니다. 자세한 내용은 [방법: 3D 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방법: 3D 지형 모델 만들기](../designers/how-to-model-3-d-terrain.md)
 - [모델 편집기](../designers/model-editor.md)

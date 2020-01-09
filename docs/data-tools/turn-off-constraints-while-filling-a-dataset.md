@@ -15,23 +15,23 @@ helpviewer_keywords:
 - datasets [Visual Basic], constraints
 - constraints [Visual Basic], suspending during dataset update
 ms.assetid: 553f7d0c-2faa-4c17-b226-dd02855bf1dc
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b8ab7bb827c478360a64d65f44af6770c77ebf77
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 13cde04c3a10833c25fdc351d730b866f876e8da
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648130"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586135"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>데이터 세트를 채우는 동안 제약 조건 해제
 
 데이터 집합에 제약 조건 (예: foreign key 제약 조건)이 포함 된 경우 데이터 집합에 대해 수행 되는 작업의 순서와 관련 된 오류를 발생 시킬 수 있습니다. 예를 들어 관련 된 부모 레코드를 로드 하기 전에 자식 레코드를 로드 하면 제약 조건을 위반 하 여 오류가 발생할 수 있습니다. 자식 레코드를 로드 하는 즉시 제약 조건은 관련 된 부모 레코드를 확인 하 고 오류를 발생 시킵니다.
 
-임시 제약 조건 일시 중단을 허용 하는 메커니즘이 없는 경우 자식 테이블에 레코드를 로드 하려고 할 때마다 오류가 발생 합니다. 데이터 집합의 모든 제약 조건을 일시 중단 하는 또 다른 방법은 <xref:System.Data.DataRow.BeginEdit%2A> 및 <xref:System.Data.DataRow.EndEdit%2A> 속성을 사용 하는 것입니다.
+임시 제약 조건 일시 중단을 허용 하는 메커니즘이 없는 경우 자식 테이블에 레코드를 로드 하려고 할 때마다 오류가 발생 합니다. 데이터 집합의 모든 제약 조건을 일시 중단 하는 또 다른 방법은 <xref:System.Data.DataRow.BeginEdit%2A>및 <xref:System.Data.DataRow.EndEdit%2A> 속성을 사용 하는 것입니다.
 
 > [!NOTE]
 > 제약 조건이 해제 되 면 유효성 검사 이벤트 (예: <xref:System.Data.DataTable.ColumnChanging> 및 <xref:System.Data.DataTable.RowChanging>)가 발생 하지 않습니다.

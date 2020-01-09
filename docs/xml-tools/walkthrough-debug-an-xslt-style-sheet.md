@@ -3,17 +3,17 @@ title: XSLT 스타일 시트 디버그
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c1f774757acc293091f19a783ed93f34647d494
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cd5882cc606bf241a281940464ba028e77986807
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604606"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592479"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>연습: XSLT 스타일 시트 디버깅
 
@@ -26,7 +26,7 @@ ms.locfileid: "72604606"
 
 ## <a name="start-debugging"></a>디버깅 시작
 
-1. **파일** 메뉴에서  > **파일** **열기** 를 선택 합니다.
+1. **파일** 메뉴에서 > **파일** **열기** 를 선택 합니다.
 
 2. *Below-average* 파일을 찾아 **열기**를 선택 합니다.
 
@@ -44,11 +44,11 @@ ms.locfileid: "72604606"
 
    - 12 줄에서 아무 곳 이나 클릭 한 다음 **F9**키를 누릅니다.
 
-   - @No__t_0 시작 태그를 마우스 오른쪽 단추로 클릭 한 다음 중단점 ** > ** 중단점**삽입**을 선택 합니다.
+   - `xsl:if` 시작 태그를 마우스 오른쪽 단추로 클릭 한 다음 중단점 ** > ** 중단점 **삽입**을 선택 합니다.
 
       ![Visual Studio에서 XSL 파일에 중단점 삽입](media/insert-breakpoint.PNG)
 
-6. 메뉴 모음에서 **XML**  > **XSLT 디버깅 시작** 을 선택 하거나 **Alt** +**f5**키를 누릅니다.
+6. 메뉴 모음에서 **XML** > **XSLT 디버깅 시작** 을 선택 하거나 **Alt**+**f5**키를 누릅니다.
 
    디버깅 프로세스가 시작 됩니다.
 
@@ -60,19 +60,19 @@ ms.locfileid: "72604606"
 
 입력 파일이 처리 될 때 값을 검사할 수 있도록 **조사식 1** 창에 두 개의 변수를 추가 합니다. 보려는 변수가 이미 있는 경우 **지역** 창을 사용 하 여 값을 검사할 수도 있습니다.
 
-1. **디버그** 메뉴에서 **Windows**  > **조사식**  > **조사식 1**을 선택 합니다.
+1. **디버그** 메뉴에서 **Windows** > **조사식** > **조사식 1**을 선택 합니다.
 
    **조사식 1** 창이 표시 됩니다.
 
 2. **이름** 필드에 `$bookAverage`를 입력 하 고 **enter**키를 누릅니다.
 
-   @No__t_0 변수의 값은 **값** 필드에 표시 됩니다.
+   `$bookAverage` 변수의 값은 **값** 필드에 표시 됩니다.
 
 3. 다음 줄에서 **이름** 필드에 `self::node()`를 입력 하 고 **enter**키를 누릅니다.
 
    `self::node()`는 현재 컨텍스트 노드로 계산되는 XPath 식입니다. `self::node()` XPath 식의 값은 첫 번째 book 노드입니다. 이 값은 변환을 진행하면서 변경됩니다.
 
-4. @No__t_0 노드를 확장 한 다음 값이 `price` 인 노드를 확장 합니다.
+4. `self::node()` 노드를 확장 한 다음 값이 `price`인 노드를 확장 합니다.
 
    ![Visual Studio에서 XSLT 디버깅 중 조사식 창](media/xslt-debugging-watch-window.png)
 
@@ -90,17 +90,17 @@ ms.locfileid: "72604606"
 
    두 번째 book 노드가 `xsl:if` 조건을 충족 하지 않으므로 book 노드가 *below-average* 출력 파일에 추가 되지 않습니다. 디버거는 스타일 시트의 `xsl:if` 요소에 다시 배치 될 때까지 계속 실행 됩니다. 이제 디버거가 *books.xml* 파일의 세 번째 `book` 노드에 배치 됩니다.
 
-   **조사식 1** 창에서 `self::node()` 값이 세 번째 book 노드로 변경 됩니다. @No__t_0 요소의 값을 검사 하 여 가격이 평균 미만인 지 확인할 수 있습니다. @No__t_0 조건이 성공 합니다.
+   **조사식 1** 창에서 `self::node()` 값이 세 번째 book 노드로 변경 됩니다. `price` 요소의 값을 검사 하 여 가격이 평균 미만인 지 확인할 수 있습니다. `xsl:if` 조건이 성공 합니다.
 
 3. **F5**를 눌러 계속합니다.
 
-   @No__t_0 조건이 충족 되었으므로 세 번째 책이 *below-average* 출력 파일에 추가 됩니다. XML 문서에 있는 모든 book이 처리되었으므로 디버거가 중지됩니다.
+   `xsl:if` 조건이 충족 되었으므로 세 번째 책이 *below-average* 출력 파일에 추가 됩니다. XML 문서에 있는 모든 book이 처리되었으므로 디버거가 중지됩니다.
 
 ## <a name="sample-files"></a>샘플 파일
 
 다음 두 파일은 연습에 사용됩니다.
 
-### <a name="below-averagexsl"></a>below-average
+### <a name="below-averagexsl"></a>below-average.xsl
 
 ```xml
 <?xml version='1.0'?>

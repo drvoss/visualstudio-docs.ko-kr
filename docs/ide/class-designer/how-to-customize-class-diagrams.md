@@ -8,17 +8,17 @@ helpviewer_keywords:
 - type shapes, removing from class diagrams
 - class diagrams, removing type shapes
 ms.assetid: e9030aea-c77d-4cc1-b8f6-b6ca469b692d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb2901d756e332a719fc56732a951257760ca03f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f4c55204983f9e7a546867621ec21070c8d69645
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647810"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590165"
 ---
 # <a name="how-to-customize-class-diagrams"></a>방법: 클래스 다이어그램 사용자 지정
 
@@ -125,7 +125,7 @@ ms.locfileid: "72647810"
 
      모양이 다이어그램에서 제거되고 해당 기본 코드가 프로젝트에서 삭제됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방법: 멤버 표시와 연결 표시 간 변경](how-to-change-between-member-notation-and-association-notation.md)
 - [방법: 기존 형식 보기](how-to-view-existing-types.md)

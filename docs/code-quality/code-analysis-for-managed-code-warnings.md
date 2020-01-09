@@ -10,17 +10,17 @@ helpviewer_keywords:
 - managed code analysis warnings
 - code analysis,managed code
 ms.assetid: 3c2741ff-0d3a-42e6-acd5-d42310bd03c4
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8fbc5bbb596cc7b790ea456b22a24b582e1b609a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d18763f3638442de4e0142204d696ee13b1bdb19
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72622459"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587773"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>관리 코드 경고에 대한 코드 분석
 관리 코드 분석 도구는 관리 코드 라이브러리의 규칙 위반을 나타내는 경고를 제공합니다. 경고는 디자인, 지역화, 성능, 보안 등의 규칙 영역으로 구성됩니다. 각 경고는 관리 코드 분석 규칙을 위반했음을 나타냅니다. 이 섹션에서는 각 관리 코드 분석 경고에 대한 자세한 논의와 예제를 제공합니다.
@@ -29,7 +29,7 @@ ms.locfileid: "72622459"
 
 |항목|설명|
 |----------|-----------------|
-|type|규칙의 TypeName입니다.|
+|형식|규칙의 TypeName입니다.|
 |CheckId|규칙의 고유 식별자입니다. 소스에서 경고를 표시하지 않으려는 경우에 사용되는 CheckId 및 범주입니다.|
 |범주|경고의 범주입니다.|
 |주요 변경 내용|규칙의 위반에 대한 수정이 주요 변경 내용인지 여부입니다. 주요 변경 내용은 위반의 원인이 된 대상에 대해 종속성이 있으며 새로 수정된 버전으로 다시 컴파일되지 않거나 변경으로 인해 런타임에 실패할 수 있는 어셈블리를 의미합니다. 여러 픽스를 사용할 수 있고 하나 이상의 수정이 주요 변경 사항이 며 한 가지 픽스는 그렇지 않으면 ' 중단 ' 및 ' 중단 '이 모두 지정 됩니다.|
@@ -51,7 +51,7 @@ ms.locfileid: "72622459"
 |[전역화 경고](../code-quality/globalization-warnings.md)|지역화에 대비한 라이브러리 및 애플리케이션을 지원하는 경고입니다.|
 |[상호 운용성 경고](../code-quality/interoperability-warnings.md)|COM 클라이언트와의 상호 작용을 지원하는 경고입니다.|
 |[유지 관리 경고](../code-quality/maintainability-warnings.md)|라이브러리 및 애플리케이션 유지 관리를 지원하는 경고입니다.|
-|[Mobility Warnings](../code-quality/mobility-warnings.md)|효율적인 전원 사용을 지원하는 경고입니다.|
+|[이동성 경고](../code-quality/mobility-warnings.md)|효율적인 전원 사용을 지원하는 경고입니다.|
 |[이름 지정 경고](../code-quality/naming-warnings.md)|.NET 디자인 지침의 명명 규칙 준수를 지 원하는 경고입니다.|
 |[성능 경고](../code-quality/performance-warnings.md)|고성능 라이브러리 및 애플리케이션을 지원하는 경고입니다.|
 |[Portability Warnings](../code-quality/portability-warnings.md)|여러 플랫폼 간의 이식성을 지원하는 경고입니다.|

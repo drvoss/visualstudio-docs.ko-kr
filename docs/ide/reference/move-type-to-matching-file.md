@@ -3,20 +3,20 @@ title: 형식을 일치하는 파일 리팩터링으로 이동
 description: 같은 이름을 가진 별도의 파일로 형식을 이동합니다. 형식을 마우스 오른쪽 단추로 클릭하고 빠른 작업 및 리팩터링를 선택한 다음 <TypeName>.cs로 형식 이동을 선택합니다.
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba822981ade5ebdc191732e0a32b02a9a4005fb4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ba082e90c2447d1da7510ce16f888f67a52b5ac0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666481"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585273"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>형식을 일치하는 파일 리팩터링으로 이동
 
@@ -61,6 +61,6 @@ ms.locfileid: "72666481"
 
       ![인라인 결과 - Visual Basic](media/movetype-result-vb.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [리팩터링](../refactoring-in-visual-studio.md)

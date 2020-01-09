@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5161f81aaf3edf654a5979f6226449bc52604167
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: 3039207cd36e1fcfedef95830fec9ebb91686491
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516586"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590269"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>자습서 3: 맞추기 게임 만들기
 
@@ -59,7 +59,7 @@ ms.locfileid: "72516586"
 
 자습서를 시작하려면 **[1단계: 프로젝트 만들기 및 양식에 테이블 추가](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)** 를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [추가 C# 자습서](/visualstudio/get-started/csharp/)
 * [Visual Basic 자습서](/visualstudio/get-started/visual-basic/)

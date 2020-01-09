@@ -6,21 +6,21 @@ f1_keywords:
 - TypeBrowser.UI
 - ActivityTypeResolver.UI
 ms.assetid: 864b60b6-a070-4e5c-aa5b-a25341b57ea6
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5eac3c2a45f1e220415f7512e601f4bf034c4dd7
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: a526bc9504f4f63a7a135978ade02654bbe63ffd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189806"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597115"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>.NET 유형 선택 대화 상자
 
-데이터 형식 목록에서 **형식 찾아보기** 를 선택 하면 **속성** 창, 대화 상자 또는 변수 디자이너와 같은 디자이너에서 **.net 형식 찾아보기 및 선택** 대화 상자가 표시 됩니다 .이 대화 상자는 약식 형식으로 표시 됩니다. "). 이 대화 상자의 어셈블리 및 프로젝트 트리 뷰에서 형식을 선택할 수 있습니다.
+데이터 형식 목록에서 **형식 찾아보기** 를 선택 하면 **속성** 창, 대화 상자 또는 변수 디자이너와 같은 디자이너에서 **.net 형식 찾아보기 및 선택** 대화 상자가 표시 됩니다 .이 대화 상자는 약식 형식으로 "형식 브라우저" 라고 합니다. 이 대화 상자의 어셈블리 및 프로젝트 트리 뷰에서 형식을 선택할 수 있습니다.
 
 이 대화 상자는 다음을 비롯한 여러 가지 사용자 시나리오에서 사용됩니다.
 
@@ -63,7 +63,7 @@ ms.locfileid: "73189806"
 
 일치 항목을 찾기 위해 더 많은 문자를 입력 하면 **유형 이름** 상자의 유형 목록이 더 짧아집니다. Fullyqualified 이름이 입력 한 문자열로 시작 하는 형식 또는 약식 이름이 입력 한 문자열로 시작 하는 형식만 필터링 된 목록에 표시 됩니다.
 
-예를 들면,
+예를 들면 다음과 같습니다.:
 
 1. 입력 **작업** 은 <xref:System.OperationCanceledException> 일치 하지만 <xref:System.InvalidOperationException>는 일치 하지 않습니다. <xref:System.InvalidOperationException>을 찾으려면 System.I 또는 Invalid를 입력해야 합니다.
 

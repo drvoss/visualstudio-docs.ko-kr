@@ -21,17 +21,17 @@ helpviewer_keywords:
 - MSBuild (C++), MIDL task
 - MIDL task (MSBuild (C++))
 ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2ad8163b86742da99be2a2a626eab58d27cb22b
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 44b51617aa28f02763cc513a4619b3bd3b041cc5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911245"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592154"
 ---
 # <a name="midl-task"></a>MIDL 작업
 MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 *midl.exe*를 래핑합니다. 자세한 내용은 [MIDL 명령줄 참조](/windows/desktop/Midl/midl-command-line-reference)를 참조하세요.
@@ -415,5 +415,5 @@ MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 *midl.exe*�
 
      자세한 내용은 [MIDL 명령줄 참조](/windows/desktop/Midl/midl-command-line-reference)에서 **/W** 옵션을 참조하세요. 이 표의 **WarnAsError** 매개 변수도 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [작업 참조](../msbuild/msbuild-task-reference.md)

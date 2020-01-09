@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e092e11474aa872903977e1b07c699b160bef8a2
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: 884047237652f6b69bd437b5faf47d820903b824
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516592"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588670"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>자습서 2: 시간이 지정된 수학 퀴즈 만들기
 
@@ -56,7 +56,7 @@ ms.locfileid: "72516592"
 
 자습서를 시작하려면 **[1단계: 프로젝트 만들기 및 양식에 레이블 추가](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)** 를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [추가 C# 자습서](/visualstudio/get-started/csharp/)
 * [Visual Basic 자습서](/visualstudio/get-started/visual-basic/)

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - /Command Devenv switch
 - Command Devenv switch
 ms.assetid: 13c20cd6-f09d-400a-8b7b-ecc266a32cef
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ca9a6550fd5fd141a5f8051d1948ccd626e970b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 434b2ad0f2a6ca4d84c6d82bf9a1a85876a4d975
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654603"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75570403"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 
@@ -47,7 +47,7 @@ devenv /Command CommandName
 
 추가 기능이 명령을 표시할 경우에는 이 스위치를 사용하여 명령줄에서 추가 기능을 시작할 수 있습니다. 자세한 내용은 [방법: 추가 기능 관리자를 사용하여 추가 기능 제어](/previous-versions/xwdatdwh(v=vs.140))를 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 첫 번째 예제에서는 Visual Studio를 시작하고 Open Favorite Files(즐겨찾기 파일 열기) 매크로를 자동으로 실행합니다.
 
@@ -63,7 +63,7 @@ devenv /command "navigate https://docs.microsoft.com/"
 devenv /command "nf some_file.cs"
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Devenv 명령줄 스위치](../../ide/reference/devenv-command-line-switches.md)
 - [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, adding custom properties
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58a52983b1a3def85d5785d0aa3f7abf99e0317c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3623a0c2380188cbb16f6186bddc3f3f2f0c3bd7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652305"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590594"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>종속성 다이어그램에 사용자 지정 속성 추가
 
@@ -38,7 +38,7 @@ ms.locfileid: "72652305"
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
 >
-> 3. Visual Studio 응용 프로그램 시작 메뉴의 **Visual Studio Tools** 섹션에서 **개발자 명령 프롬프트**를 엽니다. 다음을 입력합니다.
+> 3. Visual Studio 응용 프로그램 시작 메뉴의 **Visual Studio Tools** 섹션에서 **개발자 명령 프롬프트**를 엽니다. 입력:
 >
 >      `devenv /rootSuffix /updateConfiguration`
 >
@@ -63,17 +63,17 @@ public class MyProperty : PropertyExtension<ILayerElement>
 
 [Ilayerelement](/previous-versions/ff644511(v=vs.140)) 또는 해당 파생 클래스 (다음을 포함)에 대 한 속성을 정의할 수 있습니다.
 
-- `ILayerModel` - 모델
+- `ILayerModel`-모델
 
-- `ILayer` - 각 레이어
+- `ILayer`-각 계층
 
-- `ILayerDependencyLink` - 레이어 간의 링크
+- `ILayerDependencyLink`-레이어 간 링크
 
 - `ILayerComment`
 
 - `ILayerCommentLink`
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 다음 코드는 일반적인 사용자 지정 속성 설명자입니다. 레이어 모델(`ILayerModel`)에서 사용자가 사용자 지정 유효성 검사 메서드의 값을 제공할 수 있게 해주는 부울 속성을 정의합니다.
 

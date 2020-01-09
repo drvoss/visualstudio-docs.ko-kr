@@ -4,17 +4,17 @@ ms.date: 04/04/2018
 ms.topic: reference
 helpviewer_keywords:
 - code analysis, rule sets reference
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96b2c0410e9e1934e8e0a3c9c31c568f1e832c0e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d380346b7e049a6ffc4e8d03a5be27983de10249
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649092"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587240"
 ---
 # <a name="code-analysis-rule-set-reference"></a>코드 분석 규칙 집합 참조
 
@@ -23,9 +23,9 @@ Visual Studio에서 관리 코드 프로젝트에 대 한 레거시 분석을 �
 > [!NOTE]
 > 이 섹션의 규칙 집합은 레거시 분석과 관련이 있습니다. 코드 분석기 패키지에 사용할 수 있는 규칙 집합에 대 한 자세한 내용은 [코드 분석기와 함께 규칙 집합 사용](analyzer-rule-sets.md)을 참조 하세요.
 
-이러한 기본 제공 규칙 집합 중 하나를 사용 하거나 프로젝트 요구 사항에 맞게 [규칙 집합을 사용자 지정할](../code-quality/how-to-create-a-custom-rule-set.md) 수 있습니다. 사용자 지정 규칙 집합에 동일한 규칙이 포함 된 여러 규칙 집합을 포함 하는 경우 해당 규칙은 사용자 지정 규칙 집합에 한 번만 표시 됩니다.
+이러한 기본 제공 규칙 집합 중 하나를 사용 하거나 또는 할 수 있습니다 [규칙 집합을 사용자 지정](../code-quality/how-to-create-a-custom-rule-set.md) 프로젝트 요구 사항에 맞게 합니다. 사용자 지정 규칙 집합에 동일한 규칙이 포함 된 여러 규칙 집합을 포함 하는 경우 해당 규칙은 사용자 지정 규칙 집합에 한 번만 표시 됩니다.
 
-이 섹션의 항목에서는 기본 제공 규칙 집합과 여기에 포함 된 규칙 (또는 경고)에 대해 설명 합니다.
+이 섹션의에서 항목에서는 기본 제공 규칙 설명 포함 된 집합 및 규칙 (또는 경고).
 
 | 규칙 집합 | 포함 된 규칙 |
 | - | - |

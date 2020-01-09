@@ -3,19 +3,19 @@ title: LINQ 쿼리를 foreach 문으로 변환하도록 코드 리팩터링
 description: 쿼리 구문으로 작성된 모든 LINQ 쿼리를 foreach 문으로 변환합니다.
 ms.date: 05/15/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: a618285e1981171eb8f5f2f435fb23d412296b5b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bb2cdf96d7f7829ff6a6d1394160548da2adae7f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654540"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595750"
 ---
 # <a name="refactoring-to-convert-linq-to-a-foreach-statement"></a>LINQ를 foreach 문으로 변환하도록 리팩터링
 
@@ -41,7 +41,7 @@ ms.locfileid: "72654540"
 > [!NOTE]
 > C#의 경우 이러한 리팩터링에서 생성된 코드는 `foreach` 루프의 반복 변수에 대해 명시적 형식 또는 [var](/dotnet/csharp/language-reference/keywords/var)을 사용합니다. 생성된 코드가 명시적 또는 암시적 형식인지 여부는 범위에 있는 코드 스타일 설정에 따라 다릅니다. 이러한 특정 코드 스타일 설정은 **도구** > **옵션** > **텍스트 편집기** > **C#**  > **코드 스타일** > **일반** >  **\'var' 기본 설정** 아래 컴퓨터 수준 또는 [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types) 파일의 솔루션 수준에서 구성됩니다. **옵션**에서 코드 스타일 설정을 변경하는 경우 변경 내용을 적용하려면 코드 파일을 다시 엽니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [LINQ](/dotnet/standard/using-linq)
 - [리팩터링](../refactoring-in-visual-studio.md)

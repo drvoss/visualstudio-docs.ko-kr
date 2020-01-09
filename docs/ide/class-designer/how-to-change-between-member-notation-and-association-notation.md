@@ -8,17 +8,17 @@ helpviewer_keywords:
 - member notation
 - notation, association
 ms.assetid: 65881c5a-d251-4a36-ad0d-73d088436092
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd1bb86e13fb5f5b654ad4f4e1ee7fe7a243f1f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9f706acfbaee7c6170f74bc655f9172ff6bdd3b4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647740"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592271"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>방법: 클래스 디자이너에서 멤버 표시와 연결 표시 간 변경
 
@@ -42,7 +42,7 @@ ms.locfileid: "72647740"
 
 클래스 다이어그램에서 형식 연결 선을 마우스 오른쪽 단추로 클릭하고 **속성으로 표시** 또는 **필드로 표시**를 적절하게 선택합니다. 형식 연결 선이 사라지고 다이어그램의 해당 형식 도형 내 적합한 구획에 속성이 표시됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방법: 형식 간에 상속 만들기](how-to-create-inheritance-between-types.md)
 - [방법: 형식 간에 상속 보기](how-to-view-inheritance-between-types.md)

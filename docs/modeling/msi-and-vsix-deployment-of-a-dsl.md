@@ -2,17 +2,17 @@
 title: DSL의 MSI 및 VSIX 배포
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73c81d88f055ea7a585e3d14ab4a0086d9236938
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 96922848adf053e3b728196a445407f3d5f86428
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984449"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590191"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL의 MSI 및 VSIX 배포
 도메인 특정 언어를 사용자의 컴퓨터 또는 다른 컴퓨터에 설치할 수 있습니다. Visual Studio가 대상 컴퓨터에 이미 설치 되어 있어야 합니다.
@@ -35,7 +35,7 @@ ms.locfileid: "72984449"
 
    1. **솔루션 탐색기**에서 **dslpackage** 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 **파일 탐색기에서 폴더 열기**를 클릭 합니다.
 
-   2. 해당_프로젝트_ **\\ \* \\ 파일 bin**을 찾습니다 **. 패키지 vsix**
+   2. 해당 _프로젝트_ **\\\*\\파일 bin** 을 찾습니다 **. 패키지 vsix**
 
 2. DSL을 설치할 대상 컴퓨터에 **.vsix** 파일을 복사 합니다. 이 컴퓨터는 사용 중인 컴퓨터이거나 다른 컴퓨터일 수 있습니다.
 
@@ -74,7 +74,7 @@ ms.locfileid: "72984449"
 
 1. 확장 매니페스트에서 `InstalledByMsi`를 설정 합니다. 이렇게 하면 MSI를 제외 하 고 VSX 설치 및 제거 되지 않습니다. 이는 MSI에 다른 구성 요소를 포함 하는 경우에 중요 합니다.
 
-   1. DslPackage\source.extension.tt 열기
+   1. Open DslPackage\source.extension.tt
 
    2. `<SupportedProducts>`앞에 다음 줄을 삽입 합니다.
 
@@ -102,11 +102,11 @@ ms.locfileid: "72984449"
 
     Visual Studio에서 **CreateMsiSetupProject. .vdproj**라는 파일을 만듭니다.
 
-6. Windows 탐색기에서 Dsl \\ *. .vdproj를 Setup 이라는 새 폴더에 복사 합니다.
+6. Windows 탐색기에서 Dsl\\*. .vdproj를 Setup 이라는 새 폴더에 복사 합니다.
 
     (원하는 경우 이제 Dsl 프로젝트에서 CreateMsiSetupProject.tt를 제외할 수 있습니다.)
 
-7. **솔루션 탐색기**에서 **설치 \* \\ .vdproj** 을 기존 프로젝트로 추가 합니다.
+7. **솔루션 탐색기**에서 **설치 \*\\.vdproj** 을 기존 프로젝트로 추가 합니다.
 
 8. **프로젝트** 메뉴에서 **프로젝트 종속성**을 클릭 합니다.
 
@@ -118,9 +118,9 @@ ms.locfileid: "72984449"
 
 10. Windows 탐색기에서 설치 프로젝트의 기본 MSI 파일을 찾습니다.
 
-     DSL을 설치 하려는 컴퓨터에 MSI 파일을 복사 합니다. MSI 파일을 두 번 클릭 합니다. 설치 관리자가 실행 됩니다.
+     DSL을 설치 하려는 컴퓨터에 MSI 파일을 복사 합니다. MSI 파일을 두 번 클릭 합니다. 설치 관리자를 실행합니다.
 
-11. 대상 컴퓨터에서 DSL의 파일 확장명이 있는 새 파일을 만듭니다. 다음을 확인 합니다.
+11. 대상 컴퓨터에서 DSL의 파일 확장명이 있는 새 파일을 만듭니다. 다음 사항을 확인합니다.
 
     - Windows 탐색기 목록 보기에서 파일은 사용자가 정의한 아이콘과 설명과 함께 표시 됩니다.
 

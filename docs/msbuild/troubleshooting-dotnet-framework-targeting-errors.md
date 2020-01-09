@@ -12,17 +12,17 @@ helpviewer_keywords:
 - multitargeting
 - .NET Framework Client Profile
 ms.assetid: 830e3e45-9a93-4279-a249-75b84599aefb
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 36401e2ac002a74cdab6e9c19373354f4eb6fb1e
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 1c384f7e2bdd22f7a68140c90aa172d1efc9aca6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189429"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594918"
 ---
 # <a name="troubleshoot-net-framework-targeting-errors"></a>.NET Framework 대상 지정 오류 문제 해결
 이 항목에서는 참조 문제로 인해 발생할 수 있는 MSBuild 오류와 이러한 문제를 해결하는 방법을 설명합니다.
@@ -53,7 +53,7 @@ ms.locfileid: "73189429"
 > [!NOTE]
 > 프로젝트를 닫았다가 다시 연 후에도 다시 빌드해야 모든 참조가 제대로 확인됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방법: .NET Framework 버전 대상 지정](../ide/visual-studio-multi-targeting-overview.md)
 - [.NET Framework 클라이언트 프로필](/dotnet/framework/deployment/client-profile)

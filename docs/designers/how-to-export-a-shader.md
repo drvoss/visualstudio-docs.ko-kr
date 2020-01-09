@@ -3,17 +3,17 @@ title: '방법: 셰이더 내보내기'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c05e40b76d60a5602cee1cb67b5c3094fb94d249
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f4a3aec047238786a60b1261415acccfed521695
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635543"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589437"
 ---
 # <a name="how-to-export-a-shader"></a>방법: 셰이더 내보내기
 
@@ -41,7 +41,7 @@ ms.locfileid: "72635543"
 
 4. **파일 이름** 콤보 상자에서 내보낸 셰이더의 이름을 지정하고 **저장** 단추를 선택합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방법: 기본 색 셰이더 만들기](../designers/how-to-create-a-basic-color-shader.md)
 - [셰이더 디자이너](../designers/shader-designer.md)

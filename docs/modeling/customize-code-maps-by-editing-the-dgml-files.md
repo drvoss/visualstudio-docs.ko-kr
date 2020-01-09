@@ -1,5 +1,5 @@
 ---
-title: Customize code maps by editing the DGML files
+title: DGML 파일을 편집하여 코드 맵 사용자 지정
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,19 +15,19 @@ helpviewer_keywords:
 - dependency graphs, customizing
 - graph documents, grouping nodes
 - dependency graphs, assigning categories and properties
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ace7da233f135aa795d73d43a5e10e411c0d646f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2b79fd73713de535c11062fd6396abde6b1a0131
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748477"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590516"
 ---
-# <a name="customize-code-maps-by-editing-the-dgml-files"></a>Customize code maps by editing the DGML files
+# <a name="customize-code-maps-by-editing-the-dgml-files"></a>DGML 파일을 편집하여 코드 맵 사용자 지정
 
 코드 맵을 사용자 지정 하려면 해당 사용자의 지시 된 Graph Markup Language (.dgml) 파일을 편집 하면 됩니다. 예를 들어 요소를 편집하여 사용자 지정 스타일을 지정하거나, 코드 요소와 링크에 속성 및 범주를 할당하거나, 코드 요소 또는 링크에 문서 또는 URL을 연결할 수 있습니다. DGML 요소에 대 한 자세한 내용은 [dgml (방향이 지정 된 그래프 태그 언어) 참조](../modeling/directed-graph-markup-language-dgml-reference.md)를 참조 하세요.
 
@@ -47,7 +47,7 @@ ms.locfileid: "72748477"
 
     새 그룹을 추가하려면 `<Nodes>` 섹션을 찾습니다. 새 `<Node/>` 요소를 추가합니다.
 
-3. `<Node/>` 요소에 `Group` 특성을 추가하여 그룹을 확장된 상태로 표시할지 축소된 상태로 표시할지를 지정합니다. 예를 들면,
+3. `<Node/>` 요소에 `Group` 특성을 추가하여 그룹을 확장된 상태로 표시할지 축소된 상태로 표시할지를 지정합니다. 예를 들면 다음과 같습니다.:
 
    ```xml
    <Nodes>
@@ -64,7 +64,7 @@ ms.locfileid: "72748477"
 
    - 그룹 코드 요소와 자식 코드 요소 간의 `Category` 관계를 지정하는 `Contains` 특성
 
-     예를 들면,
+     예를 들면 다음과 같습니다.:
 
    ```xml
    <Links>
@@ -75,7 +75,7 @@ ms.locfileid: "72748477"
    </Links>
    ```
 
-    @No__t_0 특성에 대 한 자세한 내용은 [코드 요소 및 링크에 범주 할당](#AssignCategories)을 참조 하세요.
+    `Category` 특성에 대 한 자세한 내용은 [코드 요소 및 링크에 범주 할당](#AssignCategories)을 참조 하세요.
 
 ## <a name="ChangeGraphStyle"></a>지도의 스타일 변경
  맵의 .dgml 파일을 편집하여 맵의 배경색과 테두리 색을 변경할 수 있습니다. 코드 요소 및 링크 스타일을 변경 하려면 [코드 요소 및 링크 스타일 변경](#Highlight)을 참조 하세요.
@@ -96,7 +96,7 @@ ms.locfileid: "72748477"
     Stroke="StrokeValue"
     ```
 
-     예를 들면,
+     예를 들면 다음과 같습니다.:
 
     ```xml
     <DirectedGraph Background="Green" xmlns="http://schemas.microsoft.com/vs/2009/dgml" >
@@ -201,7 +201,7 @@ ms.locfileid: "72748477"
     Shape="ShapeFilePathLocation"
     ```
 
-     예를 들면,
+     예를 들면 다음과 같습니다.:
 
     ```xml
     <Nodes>
@@ -236,7 +236,7 @@ ms.locfileid: "72748477"
     StrokeDashArray="StrokeArrayValues"
     ```
 
-     예를 들면,
+     예를 들면 다음과 같습니다.:
 
     ```xml
     <Links>
@@ -266,7 +266,7 @@ ms.locfileid: "72748477"
 
 2. `<Style/>` 요소에 `<Condition/>` 특성이 포함된 `Expression` 요소를 추가하여 부울 값을 반환하는 식을 지정합니다.
 
-    예를 들면,
+    예를 들면 다음과 같습니다.:
 
    ```xml
    <Condition Expression="MyCategory"/>
@@ -286,35 +286,35 @@ ms.locfileid: "72748477"
 
     이 식에서는 다음과 같은 BNF(Backus-Naur Form) 구문을 사용합니다.
 
-    \<Expression >:: = \<BinaryExpression > &#124; \<UnaryExpression > &#124; "(" \<Expression > ")" &#124; \<MemberBindings > &#124; &#124; \<Literal > 1Number >
+    \<Expression> ::= \<BinaryExpression> &#124; \<UnaryExpression> &#124; "("\<Expression>")" &#124; \<MemberBindings> &#124; \<Literal> &#124; \<Number>
 
-    \<BinaryExpression >:: = \<Expression > \<Operator > \<Expression >
+    \<BinaryExpression> ::= \<Expression> \<Operator> \<Expression>
 
-    \<UnaryExpression >:: = "!"  \<Expression > &#124; "+" \<Expression > &#124; "-" \<Expression
+    \<UnaryExpression >:: = "!" \<식 > &#124; "+" \<식 > &#124; "-" \<식 >
 
-    \<Operator >:: = "<" &#124; "\< =" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "," &#124; "및" &#124; "+ &#124; " "*" &#124; "/" &#124; "-"
+    \<Operator> ::= "<" &#124; "\<=" &#124; "=" &#124; ">=" &#124; ">" &#124; "!=" &#124; "or" &#124; "and" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
 
-    \<MemberBindings >:: = \<MemberBindings > &#124; \<MemberBinding > "."  \<MemberBinding >
+    MemberBindings >:: = \<MemberBindings > &#124; \<memberbindings > "." \<memberbindings > \<
 
-    \<MemberBinding >:: = \<MethodCall > &#124; \<PropertyGet >
+    \<MemberBinding >:: = \<MethodCall > &#124; \<propertyget >
 
-    \<MethodCall >:: = \<Identifier > "(" \<MethodArgs > ")"
+    \<MethodCall> ::= \<Identifier> "(" \<MethodArgs> ")"
 
-    \<PropertyGet >:: = 식별자
+    \<PropertyGet >:: = Identifier
 
-    \<MethodArgs >:: = \<Expression > &#124; \<Expression > "," \<MethodArgs > &#124; \<empty >
+    \<MethodArgs> ::= \<Expression> &#124; \<Expression> "," \<MethodArgs> &#124; \<empty>
 
-    \<Identifier >:: = [^. ]*
+    \<식별자 >:: = [^. ]*
 
-    \<Literal >:: = 작은따옴표 또는 큰따옴표로 묶은 문자열 리터럴
+    \<Literal >:: = 작은따옴표 또는 큰따옴표로 묶은 문자열 리터럴입니다.
 
-    \<Number >:: = 선택적 소수점이 있는 숫자 문자열
+    \<Number >:: = 소수점이 하 자릿수의 문자열입니다.
 
     스타일을 적용 하려면 모두 true 여야 하는 여러 `<Condition/>` 요소를 지정할 수 있습니다.
 
 3. `<Condition/>` 요소의 다음 줄에서 한 개 또는 여러 개의 `<Setter/>` 요소를 추가하여 조건을 만족하는 맵, 코드 요소 또는 링크에 적용할 `Property` 특성과 고정 `Value` 특성 또는 계산된 `Expression` 특성을 지정합니다.
 
-    예를 들면,
+    예를 들면 다음과 같습니다.:
 
    ```xml
    <Setter Property="BackGround" Value="Green"/>
@@ -371,9 +371,9 @@ ms.locfileid: "72748477"
 
  `Coverage` 속성에 따라 코드 요소의 배경색을 설정합니다. 스타일은 `if-else` 문과 마찬가지로 나타나는 순서대로 확인됩니다.
 
- 이 예제에 대한 설명:
+ 이 예에서는
 
-1. @No__t_0 > 80 인 경우 `Background` 속성을 녹색으로 설정 합니다.
+1. `Coverage` > 80 인 경우 `Background` 속성을 녹색으로 설정 합니다.
 
 2. 그렇지 않으면 `Coverage` 50 > 경우 `Background` 속성을 `Coverage` 속성의 값에 따라 주황색 음영으로 설정 합니다.
 
@@ -442,7 +442,7 @@ ms.locfileid: "72748477"
 
 1. 텍스트 또는 XML 편집기에서 .dgml 파일을 엽니다.
 
-2. 해당 코드 요소에 대한 `<Node/>` 요소를 찾습니다. 속성 이름 및 해당 값을 지정합니다. 예를 들면,
+2. 해당 코드 요소에 대한 `<Node/>` 요소를 찾습니다. 속성 이름 및 해당 값을 지정합니다. 예를 들면 다음과 같습니다.:
 
     ```xml
     <Nodes>
@@ -464,7 +464,7 @@ ms.locfileid: "72748477"
 
 2. 소스 코드 요소의 이름과 대상 코드 요소의 이름을 둘 다 포함하는 `<Link/>` 요소를 찾습니다.
 
-3. `<Node/>` 요소에서 속성 이름 및 해당 값을 지정합니다. 예를 들면,
+3. `<Node/>` 요소에서 속성 이름 및 해당 값을 지정합니다. 예를 들면 다음과 같습니다.:
 
     ```xml
     <Links>
@@ -489,7 +489,7 @@ ms.locfileid: "72748477"
 
 - 원하는 코드 요소에 대한 `<Node/>` 요소를 찾습니다.
 
-- `<Node/>` 요소에 `Category` 특성을 추가하여 범주 이름을 지정합니다. 예를 들면,
+- `<Node/>` 요소에 `Category` 특성을 추가하여 범주 이름을 지정합니다. 예를 들면 다음과 같습니다.:
 
     ```xml
     <Nodes>
@@ -511,7 +511,7 @@ ms.locfileid: "72748477"
 
 2. 소스 코드 요소의 이름과 대상 코드 요소의 이름을 둘 다 포함하는 `<Link/>` 요소를 찾습니다.
 
-3. `<Link/>` 요소에 `Category` 특성을 추가하여 범주 이름을 지정합니다. 예를 들면,
+3. `<Link/>` 요소에 `Category` 특성을 추가하여 범주 이름을 지정합니다. 예를 들면 다음과 같습니다.:
 
     ```xml
     <Links>
@@ -533,7 +533,7 @@ ms.locfileid: "72748477"
 
 2. 부모 범주에 대한 `<Category/>` 요소를 추가한 다음 자식 범주의 `BasedOn` 요소에 `<Category/>` 특성을 추가합니다.
 
-     예를 들면,
+     예를 들면 다음과 같습니다.:
 
     ```xml
     <Nodes>
@@ -582,7 +582,7 @@ ms.locfileid: "72748477"
      > [!NOTE]
      > `Reference` 특성은 요소마다 하나씩만 있을 수 있습니다.
 
-     예를 들면,
+     예를 들면 다음과 같습니다.:
 
    ```xml
    <Nodes>
@@ -603,11 +603,11 @@ ms.locfileid: "72748477"
 
       2. `Id` 특성을 새 참조 특성의 이름으로 설정합니다.
 
-      3. @No__t_0 특성을 추가 하 고 `True`으로 설정 하 여 해당 참조가 코드 요소의 **참조로 이동** 바로 가기 메뉴에 표시 되도록 합니다.
+      3. `IsReference` 특성을 추가 하 고 `True`으로 설정 하 여 해당 참조가 코드 요소의 **참조로 이동** 바로 가기 메뉴에 표시 되도록 합니다.
 
-      4. @No__t_0 특성을 사용 하 여 코드 요소의 **참조로 이동** 바로 가기 메뉴에서 표시 텍스트를 지정 합니다.
+      4. `Label` 특성을 사용 하 여 코드 요소의 **참조로 이동** 바로 가기 메뉴에서 표시 텍스트를 지정 합니다.
 
-      예를 들면,
+      예를 들면 다음과 같습니다.:
 
    ```xml
    <Nodes>

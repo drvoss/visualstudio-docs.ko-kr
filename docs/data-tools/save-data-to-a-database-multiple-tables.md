@@ -11,17 +11,17 @@ helpviewer_keywords:
 - saving data, walkthroughs
 - data [Visual Studio], updating
 ms.assetid: 7ebe03da-ce8c-4cbc-bac0-a2fde4ae4d07
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: bcb551cdcd5b2505c6ac536a440fcc3e70464bfb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8d4dd98a622a3aa09b2ec11f4f3521ce1839ce8c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648201"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586252"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>데이터베이스에 데이터 저장(여러 테이블)
 
@@ -65,7 +65,7 @@ TableAdapter의 `Update` 메서드를 호출하여 애플리케이션의 데이�
 
 ## <a name="create-the-data-source"></a>데이터 원본 만들기
 
-이 단계에서는 **데이터 원본 구성 마법사**를 사용하여 Northwind 데이터베이스에서 데이터 원본을 만듭니다. 연결을 만들려면 Northwind 샘플 데이터베이스에 액세스해야 합니다. Northwind 샘플 데이터베이스를 설정 하는 방법에 대 한 자세한 내용은 [How to: @No__t_0 예제 데이터베이스를 설치 합니다.
+이 단계에서는 **데이터 원본 구성 마법사**를 사용하여 Northwind 데이터베이스에서 데이터 원본을 만듭니다. 연결을 만들려면 Northwind 샘플 데이터베이스에 액세스해야 합니다. Northwind 샘플 데이터베이스를 설정 하는 방법에 대 한 자세한 내용은 [방법: 샘플 데이터베이스 설치](../data-tools/installing-database-systems-tools-and-samples.md)를 참조 하세요.
 
 1. **데이터** 메뉴에서 **데이터 소스 표시**를 선택 합니다.
 
@@ -95,7 +95,7 @@ TableAdapter의 `Update` 메서드를 호출하여 애플리케이션의 데이�
 
 ## <a name="set-the-controls-to-be-created"></a>만들 컨트롤 설정
 
-이 연습에서 `Customers` 테이블의 데이터는 개별 컨트롤에 데이터가 표시 되는 **세부 정보** 레이아웃에 있습니다. @No__t_0 테이블의 데이터는 <xref:System.Windows.Forms.DataGridView> 컨트롤에 표시 되는 **그리드** 레이아웃에 있습니다.
+이 연습에서 `Customers` 테이블의 데이터는 개별 컨트롤에 데이터가 표시 되는 **세부 정보** 레이아웃에 있습니다. `Orders` 테이블의 데이터는 <xref:System.Windows.Forms.DataGridView> 컨트롤에 표시 되는 **그리드** 레이아웃에 있습니다.
 
 ### <a name="to-set-the-drop-type-for-the-items-in-the-data-sources-window"></a>데이터 소스 창에서 항목에 대한 삭제 유형을 설정하려면
 
@@ -109,7 +109,7 @@ TableAdapter의 `Update` 메서드를 호출하여 애플리케이션의 데이�
 
 1. 주 **Customers** 노드를 **데이터 원본** 창에서 **Form1**으로 끌어서 놓습니다.
 
-     설명 레이블이 있는 데이터 바인딩된 컨트롤이 레코드 탐색을 위한 도구 모음인 <xref:System.Windows.Forms.BindingNavigator>와 함께 폼에 나타납니다. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource> 및 <xref:System.Windows.Forms.BindingNavigator>가 구성 요소 트레이에 나타납니다.
+     설명 레이블이 있는 데이터 바인딩된 컨트롤이 레코드 탐색을 위한 도구 모음인 <xref:System.Windows.Forms.BindingNavigator>와 함께 폼에 나타납니다. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>및 <xref:System.Windows.Forms.BindingNavigator>가 구성 요소 트레이에 나타납니다.
 
 2. 관련 **Orders** 노드를 **데이터 원본** 창에서 **Form1**으로 끌어 옵니다.
 
@@ -120,21 +120,21 @@ TableAdapter의 `Update` 메서드를 호출하여 애플리케이션의 데이�
 
 ## <a name="add-code-to-update-the-database"></a>데이터베이스를 업데이트 하는 코드 추가
 
-**Customers** 및 **Orders** TableAdapters의 `Update` 메서드를 호출하여 데이터베이스를 업데이트할 수 있습니다. 기본적으로 데이터베이스에 업데이트를 보내기 위해 <xref:System.Windows.Forms.BindingNavigator>의 **저장** 단추에 대 한 이벤트 처리기가 폼의 코드에 추가 됩니다. 이 절차에서는 업데이트를 올바른 순서로 보내도록 코드를 수정 합니다. 이렇게 하면 참조 무결성 오류가 발생 하는 가능성이 없어집니다. 또한 이 코드는 try-catch 블록에서 업데이트 호출을 래핑하여 오류 처리를 구현합니다. 애플리케이션의 요구 사항에 맞게 코드를 수정할 수 있습니다.
+**Customers** 및 **Orders** TableAdapters의 `Update` 메서드를 호출하여 데이터베이스를 업데이트할 수 있습니다. 기본적으로 데이터베이스에 업데이트를 보내기 위해<xref:System.Windows.Forms.BindingNavigator>의 **저장** 단추에 대 한 이벤트 처리기가 폼의 코드에 추가 됩니다. 이 절차에서는 업데이트를 올바른 순서로 보내도록 코드를 수정 합니다. 이렇게 하면 참조 무결성 오류가 발생 하는 가능성이 없어집니다. 또한 이 코드는 try-catch 블록에서 업데이트 호출을 래핑하여 오류 처리를 구현합니다. 애플리케이션의 요구 사항에 맞게 코드를 수정할 수 있습니다.
 
 > [!NOTE]
 > 명확 하 게 하기 위해이 연습에서는 트랜잭션을 사용 하지 않습니다. 그러나 두 개 이상의 관련 테이블을 업데이트 하는 경우에는 트랜잭션 내의 모든 업데이트 논리를 포함 합니다. 트랜잭션은 변경 내용을 커밋하기 전에 데이터베이스의 모든 관련 변경 내용이 성공 하도록 하는 프로세스입니다. 자세한 내용은 [트랜잭션 및 동시성](/dotnet/framework/data/adonet/transactions-and-concurrency)을 참조 하세요.
 
 ### <a name="to-add-update-logic-to-the-application"></a>애플리케이션에 업데이트 논리를 추가하려면
 
-1. @No__t_1에서 **저장** 단추를 선택 합니다. 그러면 `bindingNavigatorSaveItem_Click` 이벤트 처리기에 대 한 코드 편집기가 열립니다.
+1. <xref:System.Windows.Forms.BindingNavigator>에서 **저장** 단추를 선택 합니다. 그러면 `bindingNavigatorSaveItem_Click` 이벤트 처리기에 대 한 코드 편집기가 열립니다.
 
 2. 관련 TableAdapter의 `Update` 메서드를 호출하도록 이벤트 처리기의 코드를 바꿉니다. 다음 코드는 먼저 각 <xref:System.Data.DataRowState>(<xref:System.Data.DataRowState.Deleted>, <xref:System.Data.DataRowState.Added> 및 <xref:System.Data.DataRowState.Modified>)에 대해 업데이트된 정보를 저장할 3개 임시 데이터 테이블을 만듭니다. 업데이트는 올바른 순서 대로 실행 됩니다. 이 코드는 다음과 같습니다.
 
      [!code-vb[VbRaddataSaving#10](../data-tools/codesnippet/VisualBasic/save-data-to-a-database-multiple-tables_1.vb)]
      [!code-csharp[VbRaddataSaving#10](../data-tools/codesnippet/CSharp/save-data-to-a-database-multiple-tables_1.cs)]
 
-## <a name="test-the-application"></a>애플리케이션 테스트
+## <a name="test-the-application"></a>응용 프로그램 테스트
 
 1. **F5**키를 누릅니다.
 
@@ -144,6 +144,6 @@ TableAdapter의 `Update` 메서드를 호출하여 애플리케이션의 데이�
 
 4. 데이터베이스의 값을 점검하여 변경 내용이 저장되었는지 확인합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [데이터를 다시 데이터베이스에 저장](../data-tools/save-data-back-to-the-database.md)

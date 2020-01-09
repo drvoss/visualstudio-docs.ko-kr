@@ -13,17 +13,17 @@ helpviewer_keywords:
 - BindingSource class, committing edited records
 - EndEdit method
 ms.assetid: 61af4798-eef7-468c-b229-5e1497febb2f
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 129f8e03ca982dc1e028dc23a9e342b5793e39cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4a708128f827568e072c617effff17129e41e558
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648683"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586941"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>데이터 바인딩된 컨트롤에서 데이터를 저장하기 전에 In-Process 편집 커밋
 
@@ -40,7 +40,7 @@ ms.locfileid: "72648683"
 
 ## <a name="to-call-endedit-for-all-bindingsource-components-on-a-form"></a>폼의 모든 BindingSource 구성 요소에 대해 EndEdit를 호출 하려면
 
-1. @No__t_0 구성 요소를 포함 하는 폼에 다음 코드를 추가 합니다.
+1. <xref:System.Windows.Forms.BindingSource> 구성 요소를 포함 하는 폼에 다음 코드를 추가 합니다.
 
      [!code-csharp[VSProDataOrcasEndEditOnAll#1](../data-tools/codesnippet/CSharp/commit-in-process-edits-on-data-bound-controls-before-saving-data_1.cs)]
      [!code-vb[VSProDataOrcasEndEditOnAll#1](../data-tools/codesnippet/VisualBasic/commit-in-process-edits-on-data-bound-controls-before-saving-data_1.vb)]
@@ -50,7 +50,7 @@ ms.locfileid: "72648683"
      [!code-csharp[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/CSharp/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.cs)]
      [!code-vb[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/VisualBasic/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.vb)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio에서 데이터에 Windows Forms 컨트롤 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [계층적 업데이트](../data-tools/hierarchical-update.md)

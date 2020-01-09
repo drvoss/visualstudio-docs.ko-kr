@@ -8,17 +8,17 @@ helpviewer_keywords:
 - editors, windows management
 - Code Editor, windows management
 ms.assetid: 340143d4-8a71-490d-823e-162b276f4c6d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3493a70bd1257194f8c95a58eb6c2890d83ed418
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4af752c99c87bf470922db03bf5d4746151fa8f2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645806"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591023"
 ---
 # <a name="how-to-manage-editor-windows"></a>방법: 편집기 창 관리
 
@@ -54,7 +54,7 @@ ms.locfileid: "72645806"
 
    편집기의 새 탭 인스턴스가 추가됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 편집기의 기능](../ide/writing-code-in-the-code-and-text-editor.md)
 - [창 레이아웃 사용자 지정](../ide/customizing-window-layouts-in-visual-studio.md)

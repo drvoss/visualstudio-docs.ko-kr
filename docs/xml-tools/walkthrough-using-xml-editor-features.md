@@ -3,17 +3,17 @@ title: '연습: XML 편집기 기능 사용'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ce7997e1002ced50dc4d8203d522feb0a6bbb49
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d2cf35730b70fc8c8bbec392c73b444b6e8e0aaa
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604454"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592466"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>연습: XML 편집기 기능 사용
 
@@ -54,11 +54,11 @@ ms.locfileid: "72604454"
 
     - **!** 문서 유형을 추가 하는 DOCTYPE입니다.
 
-    - **?** 처리 명령을 추가 합니다.
+    - **?** 처리 명령을 추가합니다.
 
     - root 요소를 추가할 **employee** 입니다.
 
-2. **@No__t_1!--** 를 선택 하 여 주석 노드를 추가 하 고 **enter**키를 누릅니다.
+2. **&lt;!--** 를 선택 하 여 주석 노드를 추가 하 고 **enter**키를 누릅니다.
 
      주석 끝 태그가 삽입되고 주석 시작 태그와 주석 끝 태그 사이에 커서가 놓입니다.
 
@@ -72,7 +72,7 @@ ms.locfileid: "72604454"
 
 6. 끝 태그가 추가됩니다. 끝 태그는 유효성 검사 오류를 나타내는 물결 무늬 밑줄과 함께 추가됩니다. **도구 설명** 에 **' employee ' 요소의 콘텐츠가 완전 하지 않습니다. 메시지가 표시 됩니다. ' I d '가 필요**합니다.
 
-7. @No__t_0를 입력 하 고 멤버 목록에서 **ID** 를 선택 합니다. 그런 다음 `>`를 입력합니다.
+7. `<`를 입력 하 고 멤버 목록에서 **ID** 를 선택 합니다. 그런 다음 `>`를 입력합니다.
 
      XML 요소 `<ID></ID>`가 추가되고 ID 시작 태그 뒤에 커서가 놓입니다.
 
@@ -96,7 +96,7 @@ ms.locfileid: "72604454"
 
 ## <a name="to-format-the-xml-document"></a>XML 문서 서식을 지정하려면
 
-- XML 편집기 도구 모음에서 **문서 서식** 단추를 선택 하거나 **ctrl** +**E**,**D**를 누릅니다.
+- XML 편집기 도구 모음에서 **문서 서식** 단추를 선택 하거나 **ctrl**+**E**,**D**를 누릅니다.
 
    ![Visual Studio의 서식 XML 문서 단추](media/format-xml-document.png)
 
@@ -104,7 +104,7 @@ ms.locfileid: "72604454"
 
 ## <a name="to-save-the-xml-document"></a>XML 문서를 저장하려면
 
-1. **파일** 메뉴에서 다른 **이름으로 저장**을 선택 합니다.
+1. **파일** 메뉴에서 **다른 이름으로 저장**을 선택합니다.
 
      **다른 이름으로 파일 저장** 대화 상자가 표시 됩니다. 기본 파일 이름은 *' XMLFile1 '* 입니다.
 

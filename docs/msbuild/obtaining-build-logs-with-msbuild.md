@@ -6,17 +6,17 @@ helpviewer_keywords:
 - MSBuild, logging
 - logging [MSBuild]
 ms.assetid: 6ba9a754-9cc0-4fed-9fc8-4dcd3926a031
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 385871a47b2a4d73a1f7afacf9d39a02d7c782ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f756d432d9ff4d3824c1f1165c63710e4d10c2e9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963769"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594892"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>MSBuild를 사용하여 빌드 로그 가져오기
 
@@ -102,7 +102,7 @@ msbuild MyProject.proj -t:go -fl1 -fl2 -fl3 -flp2:logfile=JustErrors.log;errorso
 
  MSBuild 명령줄에서 **-logger** 스위치를 통해 사용자 지정 로거를 지정합니다. **-noconsolelogger** 스위치를 사용하여 기본 콘솔 로거를 비활성화할 수도 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - <xref:Microsoft.Build.Framework.LoggerVerbosity>
 - [빌드 로거](../msbuild/build-loggers.md)

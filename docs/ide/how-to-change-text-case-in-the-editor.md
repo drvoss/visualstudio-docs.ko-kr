@@ -6,17 +6,17 @@ helpviewer_keywords:
 - editors, text case
 - text, case
 ms.assetid: b04d1327-a45e-4c12-a0d0-67672b3fa855
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d390548537497272e3b67af4b2b8bc981962983b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 894590501f3855d0f363275415ff02194f682dda
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652764"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588722"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>방법: 편집기에서 텍스트의 대/소문자 변경
 
@@ -36,6 +36,6 @@ ms.locfileid: "72652764"
 > [!TIP]
 > 변경하기 전에 이전 대/소문자 서식으로 되돌리려면 **편집** 메뉴에서 **실행 취소**를 선택합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 편집기의 기능](../ide/writing-code-in-the-code-and-text-editor.md)

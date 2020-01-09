@@ -14,17 +14,17 @@ helpviewer_keywords:
 - Class Designer [Visual Studio], refactoring classes
 - refactoring, classes
 ms.assetid: dcf07bb4-fa3b-4224-9dec-566fd924a8ce
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b82bebb8e7eedcf6bdff7b12048f8c98cabdeb5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6e060f044af666f5a4357e527819286d3bd87267
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631178"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590750"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>클래스 디자이너에서 클래스 및 형식 리팩터링
 
@@ -86,6 +86,6 @@ ms.locfileid: "72631178"
 
      속성이 소스 형식에서 제거되고 대상 형식에 나타납니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [클래스 및 형식 디자인](designing-and-viewing-classes-and-types.md)

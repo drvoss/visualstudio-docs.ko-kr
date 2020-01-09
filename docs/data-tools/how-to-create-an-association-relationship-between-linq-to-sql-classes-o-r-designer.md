@@ -3,17 +3,17 @@ title: LINQ to SQL 클래스 간 관계 (O/R 디자이너)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 56133e65-81f3-44c3-bc28-ffdd0671a0d2
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 13443dd25719caad5002b29a33975a0dbc5850f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fb81cf17de86a11d2373f6a545b3efc78e65ada9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641894"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586473"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>방법: LINQ to SQL 클래스 간의 연결 만들기 (O/R 디자이너)
 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]에서 엔터티 클래스 간의 연결은 데이터베이스 테이블 간의 관계와 비슷합니다. **연결 편집기** 대화 상자를 사용하여 엔터티 클래스 간의 연결을 만들 수 있습니다.
@@ -29,8 +29,8 @@ ms.locfileid: "72641894"
 |속성|설명|
 |--------------|-----------------|
 |**Cardinality**|연결이 일대다 연결인지 또는 일대일 연결인지를 제어합니다.|
-|**자식 속성**|연결의 외래 키 쪽에서 자식 레코드의 컬렉션이거나 자식 레코드에 대한 참조인 부모 속성을 만들지 여부를 지정합니다. 예를 들어 `Customer`와 `Order` 간의 연결에서 **자식 속성이** **True**로 설정 된 경우 `Orders` 라는 속성이 부모 클래스에 만들어집니다.|
-|**부모 속성**|연결된 부모 클래스를 참조하는 자식 클래스의 속성입니다. 예를 들어 `Customer`와 `Order` 간의 연결에서 주문에 대 한 관련 고객을 참조 하는 `Customer` 라는 속성이 `Order` 클래스에 만들어집니다.|
+|**자식 속성**|연결의 외래 키 쪽에서 자식 레코드의 컬렉션이거나 자식 레코드에 대한 참조인 부모 속성을 만들지 여부를 지정합니다. 예를 들어 `Customer`와 `Order`간의 연결에서 **자식 속성이** **True**로 설정 된 경우 `Orders` 라는 속성이 부모 클래스에 만들어집니다.|
+|**부모 속성**|연결된 부모 클래스를 참조하는 자식 클래스의 속성입니다. 예를 들어 `Customer`와 `Order`간의 연결에서 주문에 대 한 관련 고객을 참조 하는 `Customer` 라는 속성이 `Order` 클래스에 만들어집니다.|
 |**참여 속성**|연결 속성을 표시하고 **연결 편집기** 대화 상자를 다시 여는 **줄임표** 단추(...)를 제공합니다.|
 |**Unique**|외래 대상 열에 고유성 제약 조건이 있는지 여부를 지정합니다.|
 

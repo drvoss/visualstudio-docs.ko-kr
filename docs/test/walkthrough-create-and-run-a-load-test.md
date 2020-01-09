@@ -7,15 +7,15 @@ helpviewer_keywords:
 - unit tests, load test walkthrough
 - load tests, walkthrough
 ms.assetid: bbf075a5-96d5-48ed-a03c-330f0fc04748
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 78bce7f8a05032fa8654021d89598ede67fa08c0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1c2ade11d4bffc3c9fdf812cb38d21cd742c9845
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659686"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590854"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>연습: 단위 테스트를 포함하는 부하 테스트 만들기 및 실행
 
@@ -143,7 +143,7 @@ ms.locfileid: "72659686"
 
 2. 테스트 시뮬레이션이 임계값을 초과하면 트리 컨트롤 노드에 아이콘이 표시되어 임계값 위반을 나타냅니다. 오류의 경우에는 빨간색 원이 겹쳐 표시되며 경고의 경우에는 노란색 삼각형이 겹쳐 표시됩니다. 임계값을 초과한 카운터를 찾아 아이콘을 그래프 위로 끌어 그래프로 그릴 수 있습니다. 이 작업은 테스트 실행 중에 수행할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [테스트 조합을 편집하여 부하 테스트 시나리오에 포함할 테스트 지정](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
 - [가상 네트워크 형식 지정](../test/specify-virtual-network-types-in-a-load-test-scenario.md)

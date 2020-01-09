@@ -3,17 +3,17 @@ title: 데이터 솔루션 개발
 description: .NET 도구, SQL Server Data Tools, Azure Data Lake, Azure HDInsight 및 Azure Streaming Analytics를 포함하여 Visual Studio에서 데이터 솔루션을 개발하는 데 필요한 다양한 도구에 대해 알아봅니다.
 layout: LandingPage
 ms.date: 01/01/2018
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: 38b0d25539b4fe02d81463e9bc4e481c3b45010e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2b4d283a6d07a17fe5d405863106155230e9ec78
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648332"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586434"
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Visual Studio에서 데이터 도구를 사용하여 데이터 솔루션 개발
 
@@ -116,7 +116,7 @@ Visual Studio에서 데이터 도구를 사용하여 SQL Server, Azure Data Lake
 
 ---
 
-<h2>참조</h2>
+<h2>참고</h2>
 
 <ul class="panelContent cardsW">
     <li>

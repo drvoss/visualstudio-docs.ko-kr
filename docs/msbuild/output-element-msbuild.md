@@ -13,17 +13,17 @@ helpviewer_keywords:
 - <Output> Element [MSBuild]
 - Output Element [MSBuild]
 ms.assetid: 34bc7cd1-efd3-4b57-b691-4584eeb6a0e9
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb8f7a02183fe34dcd882e23ee7bf8b90f9a2cc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bcd27951390cf86712f846fada2835c4d87ec7fe
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963925"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594853"
 ---
 # <a name="output-element-msbuild"></a>Output 요소(MSBuild)
 항목 및 속성에서 태스크 출력 값을 저장합니다.
@@ -79,6 +79,6 @@ ms.locfileid: "62963925"
 </Target>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [프로젝트 파일 스키마 참조](../msbuild/msbuild-project-file-schema-reference.md)
 - [작업](../msbuild/msbuild-tasks.md)

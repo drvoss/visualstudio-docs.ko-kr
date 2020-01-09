@@ -2,17 +2,17 @@
 title: 코딩된 UI 테스트에서 HTML5 컨트롤 사용
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: e9118dc94019f40289730be78c28777fb86d89db
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 13f5da784a43df5146a66ca868bb6add9a702906
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659774"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585589"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>코딩된 UI 테스트에서 HTML5 컨트롤 사용
 
@@ -82,7 +82,7 @@ ms.locfileid: "72659774"
 
 ![HTML5 ProgressBar 컨트롤](../test/media/codedui_html5_progressbar.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [HTML 요소](https://developer.mozilla.org/docs/Web/HTML/Element)
 - [UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)

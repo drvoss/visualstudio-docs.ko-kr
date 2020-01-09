@@ -13,17 +13,17 @@ helpviewer_keywords:
 - C++, class diagrams
 - C++, Class Designer
 ms.assetid: f5b40921-2ef7-4de0-b595-45b44c79ffa6
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 228785c218b1c55a1af817761821acbe11a51c8d
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 54087a719b0079ba32ff08ff1e08ad01f5e64ed0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188954"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596751"
 ---
 # <a name="work-with-c-code-in-class-designer"></a>클래스 디자이너에서 C++ 코드 사용
 
@@ -108,7 +108,7 @@ MSDN(Microsoft Developer Network) 공개 포럼에서 오류 및 경고 문제 �
 
 - **클래스 디자이너**에서는 void 형식이거나 void 형식에서 파생된 형식을 표시할 수 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [클래스와 형식 디자인 및 보기](designing-and-viewing-classes-and-types.md)
 - [클래스 디자이너 오류에 대한 추가 정보](additional-information-about-errors.md)

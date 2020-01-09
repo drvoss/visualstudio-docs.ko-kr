@@ -6,17 +6,17 @@ helpviewer_keywords:
 - MSBuild, transforms
 - transforms [MSBuild]
 ms.assetid: d0bceb3b-14fb-455c-805a-63acefa4b3ed
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e644fd6fc521318512bbc5dd25838a379af78a9
-ms.sourcegitcommit: dd3c8cbf56c7d7f82f6d8818211d45847ab3fcfc
+ms.openlocfilehash: 4f1b0e774d70c5787a7221aa0dfa7b0834dac7e3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67141163"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588293"
 ---
 # <a name="customize-your-build"></a>빌드 사용자 지정
 
@@ -189,7 +189,7 @@ MSBuild에서 솔루션 파일을 빌드할 때 먼저 프로젝트 파일로 �
 </Project>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [MSBuild 개념](../msbuild/msbuild-concepts.md)
 

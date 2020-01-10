@@ -5,19 +5,19 @@ ms.date: 04/11/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - performance [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: ad6951179d9326a2785bee865e9bc8adbefd3f2e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6495e8506e12c0c5e5f878a23c609fe53a401bde
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667056"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596998"
 ---
 # <a name="optimize-visual-studio-performance"></a>Visual Studio 성능 최적화
 
@@ -51,7 +51,7 @@ ms.locfileid: "72667056"
 
 여러분의 의견이 개선에 도움이 됩니다. **문제 보고** 기능을 사용하여 추적을 "레코드"하고 당사에 보내십시오. **빠른 실행** 옆에 있는 피드백 아이콘을 선택하거나 메뉴 모음에서 **도움말** > **의견 보내기** > **문제 보고**를 선택합니다. 자세한 내용은 [Visual Studio의 문제를 보고하는 방법](../ide/how-to-report-a-problem-with-visual-studio.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [성능 팁 및 요령](../ide/visual-studio-performance-tips-and-tricks.md)
 - [Visual Studio 블로그 - Visual Studio 2017 버전 15.6으로 더 빠르게 솔루션 로드](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

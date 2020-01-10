@@ -13,17 +13,17 @@ helpviewer_keywords:
 - CPUs, targeting specific
 - 64-bit applications [Visual Studio]
 ms.assetid: 845302fc-273d-4f81-820a-7296ce91bd76
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15799ff8b181ddcfff97f7fb7338897c6f23fee2
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 9ba79bb199bba6c606ac603816cadc2dd2042057
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188946"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595321"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>방법: 플랫폼을 대상으로 한 프로젝트 구성
 
@@ -114,7 +114,7 @@ x86 및 x64 버전이 모두 포함된 .NET 어셈블리 또는 DLL이 있을 �
 
 프로젝트 파일에 대한 자세한 내용은 [MSBuild 프로젝트 파일 스키마 참조](../msbuild/msbuild-project-file-schema-reference.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [빌드 플랫폼 이해](../ide/understanding-build-platforms.md)
 - [/platform(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)

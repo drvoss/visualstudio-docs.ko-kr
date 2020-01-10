@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Edit.Replace command
 - Replace command
 ms.assetid: a15767f1-5a3d-44f5-8c77-7b0f1157f340
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b13dee4ec87a0a4c2735d9523bff093046c5b38c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 620e55938a9c96393d8cd7de6f238d3f98715d29
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747779"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596686"
 ---
 # <a name="replace-command"></a>바꾸기 명령
 **찾기 및 바꾸기** 창의 **파일에서 바꾸기**에서 사용할 수 있는 옵션의 하위 집합을 사용하여 파일의 텍스트를 바꿉니다.
@@ -93,14 +93,14 @@ Edit.Replace findwhat replacewith [/all] [/case]
 
 선택 사항입니다. 전체 단어만을 검색합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 이 예제에서는 열린 모든 문서에서 `btnSend`를 `btnSubmit`으로 바꿉니다.
 
 ```
 >Edit.Replace btnSend btnSubmit /open
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [텍스트 찾기 및 바꾸기](../../ide/finding-and-replacing-text.md)
 - [명령 창](../../ide/reference/command-window.md)

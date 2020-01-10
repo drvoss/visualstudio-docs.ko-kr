@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Add New Item command
 - File.AddNewItem command
 ms.assetid: 63b7df32-db83-463b-bbe7-7ff011fe5298
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 683a65ab0c25a5daeb002a4eb3106006655a1b00
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 38be691ae7c49ffbd6c98c9e4beb25b6ebb021b6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748818"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585693"
 ---
 # <a name="add-new-item-command"></a>새 항목 추가 명령
 현재 솔루션에 .htm, .css, .txt 또는 프레임셋 같은 새 솔루션 항목을 추가하고 엽니다.
@@ -56,14 +56,14 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 /e:"Source Code (text) Editor"
 ```
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 이 예제에서는 새 솔루션 항목인 MyHTMLpg를 현재 솔루션에 추가합니다.
 
 ```cmd
 >File.AddNewItem MyHTMLpg /t:"General\HTML Page"
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)
 - [명령 창](../../ide/reference/command-window.md)

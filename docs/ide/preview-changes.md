@@ -2,19 +2,19 @@
 title: 코드 변경 내용 미리 보기
 ms.date: 12/16/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 f1_keywords:
 - vs.codefix.previewchanges
 ms.workload:
 - multiple
-ms.openlocfilehash: 485a127faa8228ce5ef17a6208e9cc4e7e50e1b9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f45b186153b4cc046d35fd941f6a80e108476fc0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666792"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585771"
 ---
 # <a name="preview-changes-window"></a>변경 내용 미리 보기 창
 
@@ -28,7 +28,7 @@ Visual Studio에서 다양한 *빠른 작업* 또는 *리팩터링* 도구를 �
 
 변경 내용을 검토한 후 **적용** 단추를 클릭하여 변경 내용을 커밋하거나, **취소** 단추를 클릭하여 현재 상태를 유지합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio에서 리팩터링](../ide/refactoring-in-visual-studio.md)
 - [빠른 작업](../ide/quick-actions.md)

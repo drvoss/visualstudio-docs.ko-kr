@@ -4,15 +4,15 @@ ms.date: 01/02/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
 - templates [Visual Studio], troubleshooting
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 0dbdb2854833f7c28866aa3d6ec0a685803adb3d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1bef6a460f1a59823930597565b955b591ab48a0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656548"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591387"
 ---
 # <a name="how-to-troubleshoot-templates"></a>방법: 템플릿 문제 해결
 
@@ -45,7 +45,7 @@ ms.locfileid: "72656548"
 1. *vstemplate* 파일의 XML이 템플릿 스키마를 따르는지 확인합니다. *vstemplate* 스키마에 대한 자세한 내용은 [템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)를 참조하세요.
 
     > [!NOTE]
-    > *vstemplate* 파일을 제작하는 동안 IntelliSense 지원을 가져오려면 `xmlns` 특성을 `VSTemplate` 요소에 추가하고 http://schemas.microsoft.com/developer/vstemplate/2005 의 값을 할당합니다.
+    > *vstemplate* 파일을 제작하는 동안 IntelliSense 지원을 가져오려면 `xmlns` 특성을 `VSTemplate` 요소에 추가하고 `http://schemas.microsoft.com/developer/vstemplate/2005`의 값을 할당합니다.
 
 1. *vstemplate* 파일을 저장한 다음, 닫습니다.
 
@@ -59,7 +59,7 @@ ms.locfileid: "72656548"
 
 [템플릿 검색 문제 해결(확장성)](../extensibility/troubleshooting-template-discovery.md)의 단계를 수행하여 템플릿 검색에 대한 진단 로그를 사용할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [템플릿 검색 문제 해결(확장성)](../extensibility/troubleshooting-template-discovery.md)
 - [템플릿 사용자 지정](../ide/customizing-project-and-item-templates.md)

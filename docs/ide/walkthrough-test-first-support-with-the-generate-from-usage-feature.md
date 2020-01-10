@@ -8,17 +8,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Generate From Usage
 - Test-First Development
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81ab4b1597ea9f91a1b5081e89fd4cb77e0d8c63
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9bf9a7e613a482167a01739320282f9ba8fdea26
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647153"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596894"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>연습: 관례에서 생성 기능을 통한 테스트 우선 개발
 
@@ -159,7 +159,7 @@ Visual Studio와 통합된 테스트 프레임워크와 함께 **관례에서 �
 
      ![성공한 테스트 결과](../ide/media/testspassed.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [관례에서 생성](../ide/visual-csharp-intellisense.md#generate-from-usage)
 - [코드 편집기의 기능](../ide/writing-code-in-the-code-and-text-editor.md)

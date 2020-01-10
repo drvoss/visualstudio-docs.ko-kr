@@ -11,17 +11,17 @@ helpviewer_keywords:
 - TextMate language grammar
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e43325a6d749653c063c06f2c1c10c69f708da9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d4fafaf9356d8862808e1ac6ad125207d71769b5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647791"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590880"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>다른 언어에 대한 Visual Studio 편집기 지원 추가
 
@@ -87,7 +87,7 @@ Windows에서 *%userprofile%* 은 *c:\Users\\\<user name>* 경로로 확인됩�
 
 TextMate 문법을 만드는 방법에 대한 자세한 내용은 [TextMate – Introduction to Language Grammars](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/)(TextMate – 언어 문법 소개) 및 [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)(Textmate 번들의 언어 문법 및 사용자 지정 테마를 만드는 방법에 대한 참고 사항)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [언어 서버 프로토콜 확장 추가](../extensibility/adding-an-lsp-extension.md)
 - [연습: 코드 조각 만들기](../ide/walkthrough-creating-a-code-snippet.md)

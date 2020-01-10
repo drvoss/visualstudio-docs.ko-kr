@@ -6,17 +6,17 @@ f1_keywords:
 - vs.findcommandbox
 helpviewer_keywords:
 - Find/Command box
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 024491180528dd4b8335c88623e7d261c0a2bbe2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 99b50c0503d313d4482d8370071220dbf1403d9a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653724"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591530"
 ---
 # <a name="findcommand-box"></a>찾기/명령 상자
 
@@ -52,7 +52,7 @@ ms.locfileid: "72653724"
 
 캐럿은 따옴표 내부에 있든 외부에 있든 기능이 동일합니다. 캐럿이 줄에서 마지막 문자인 경우 무시됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [명령 창](../ide/reference/command-window.md)
 - [텍스트 찾기 및 바꾸기](../ide/finding-and-replacing-text.md)

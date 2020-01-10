@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Devenv, /Edit switch
 - /Edit Devenv switch
 ms.assetid: 02b3d6e7-a2b1-4d83-a747-aa8c2fb758b7
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37d49dd7d191ad470639debc50fbed23d5066233
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d180d5a5d723d8085537f2993aac022d74df2c08
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654480"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595698"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
 
@@ -47,7 +47,7 @@ devenv /Edit [File1[ FileN]...]
 
 Visual Studio의 인스턴스를 둘 이상 연 경우 가장 최근에 열린 인스턴스에서 파일이 열립니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 첫 번째 예제에서는 기존 Visual Studio 인스턴스에서 `MyFile.cs` 파일을 엽니다. Visual Studio 인스턴스가 없으면 파일이 새 인스턴스에서 열립니다. 두 번째 예제는 단 하나의 파일이 아니라 3개 파일을 여는 것을 제외하고는 유사합니다.
 
@@ -57,6 +57,6 @@ devenv /edit MyFile.cs
 devenv /edit MyFile1.cs MyFile2.cs MyFile3.cs
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Devenv 명령줄 스위치](../../ide/reference/devenv-command-line-switches.md)

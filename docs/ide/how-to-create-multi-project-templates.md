@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Visual Studio templates, creating multi-project
 - project templates, multi-project
 - multi-project templates
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 8ad04a557ee4b0a359efebfbe7a70d8a85db4551
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6da7464f5e22e186edff7671744c2605bee3c9ad
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655830"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591088"
 ---
 # <a name="how-to-create-multi-project-templates"></a>방법: 다중 프로젝트 템플릿 만들기
 
@@ -186,7 +186,7 @@ ms.locfileid: "72655830"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
 - [방법: 프로젝트 템플릿 만들기](../ide/how-to-create-project-templates.md)

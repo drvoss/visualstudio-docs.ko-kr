@@ -20,17 +20,17 @@ helpviewer_keywords:
 - IntelliSense [JavaScript], about
 - IntelliSense extensibility [JavaScript]
 - XML documentation comments [JavaScript]
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ee40d877af75469dcc1abc176d67f43c8bdcfb3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9d2459c9ab7b6dc6e49bbbe86729d25a2adb5bdb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62538176"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593722"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
@@ -141,7 +141,7 @@ TypeScript 환경에서 가장 인기 있는 JavaScript 라이브러리에는 *.
 
 자동 획득을 사용하지 않으려면 다음 설명대로 구성 파일을 추가하여 기능을 사용하지 않도록 설정합니다. 사용할 정의 파일을 직접 프로젝트 내에 수동으로 배치할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [IntelliSense 사용](../ide/using-intellisense.md)
 - [JavaScript 지원(Mac용 Visual Studio)](/visualstudio/mac/javascript)

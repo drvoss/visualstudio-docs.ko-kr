@@ -7,17 +7,17 @@ helpviewer_keywords:
 - troubleshooting IntelliSense Code Snippets
 - troubleshooting Visual Basic, IntelliSense Code Snippets
 ms.assetid: 7b6dd40e-2f78-4b50-8e68-41fac1bcb81e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75b6c18c5d12d4d39d9025de2ed51cd15c8dda82
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a699c6a158b5a0751824c7634ddd637467da50d2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647534"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588696"
 ---
 # <a name="troubleshoot-snippets"></a>코드 조각 문제 해결
 
@@ -35,6 +35,6 @@ IntelliSense 코드 조각 문제는 코드 조각 파일이 손상되었거나 
 
 - 변수는 정의되지 않을 수 있습니다. 코드 조각에서 정의되지 않은 변수는 강조 표시해야 합니다. 그렇지 않으면 코드 조각 작성자에 오류로 보고될 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 조각](../ide/code-snippets.md)

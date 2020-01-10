@@ -21,24 +21,24 @@ helpviewer_keywords:
 - projects [Visual Studio], build configuration
 - solutions [Visual Studio], build configuration
 ms.assetid: 934c727d-3a22-429c-bd13-3552cecf2e24
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eed19993f5339a2f33521ad1233522a29eb0442b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 21421776506868942e9dc562db4f456c2012fce7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918711"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592024"
 ---
 # <a name="understand-build-configurations"></a>빌드 구성 이해
 
 다양한 종류의 빌드에서 사용할 솔루션 및 프로젝트 속성에 대한 여러 구성을 저장할 수 있습니다. 구성을 만들거나, 선택하거나, 수정하거나, 삭제하려면 **구성 관리자**를 사용합니다. 구성 관리자를 열려면 메뉴 모음에서 **빌드** > **구성 관리자**를 선택하거나 검색 상자에 **구성**을 입력합니다. **표준** 도구 모음에서 **솔루션 구성** 목록을 사용하여 구성을 선택하거나 **구성 관리자**를 열 수도 있습니다.
 
 > [!NOTE]
-> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio에서 구성 빌드](/visualstudio/mac/configurations)를 참조하세요.
+> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio에서 구성 빌드](/visualstudio/mac/configurations)를 참조하세요.
 
 > [!NOTE]
 > 도구 모음에서 솔루션 구성 설정을 찾을 수 없고 **구성 관리자**에 액세스할 수 없으면 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 개발 설정을 적용할 수 있습니다. 자세한 내용은 [방법: Visual Basic 개발자 설정을 적용하여 구성 관리](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md)를 참조하세요.
@@ -87,7 +87,7 @@ Visual Studio는 다음 기준을 사용하여 솔루션 구성을 할당합니�
 
 - 프로젝트가 여러 플랫폼을 지원하는 경우 지원되는 각 플랫폼에 대해 솔루션 구성이 검색되거나 추가됩니다. 각 솔루션 구성의 이름은 프로젝트 구성 이름과 플랫폼 이름을 모두 포함하며 *\<프로젝트 구성 이름> \<플랫폼 이름>* 양식입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [연습: 애플리케이션 빌드](../ide/walkthrough-building-an-application.md)
 - [컴파일 및 빌드](../ide/compiling-and-building-in-visual-studio.md)

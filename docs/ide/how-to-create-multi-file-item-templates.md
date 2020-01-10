@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
 - item templates, creating multi-file item templates
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 82047b4a49db4edbea4ce965d1987f87a799a9f7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e8a6e5358a87e3d64b341c89b8ffd4cd3cf3e325
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655936"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593735"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>방법: 다중 파일 항목 템플릿 만들기
 
@@ -65,7 +65,7 @@ ms.locfileid: "72655936"
 
    **새 항목 추가** 대화 상자에 다중 파일 항목 템플릿이 나타납니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 Windows Forms 템플릿을 보여 줍니다. 이 템플릿을 기반으로 항목이 생성되면 생성된 3개 파일의 이름은 **새 항목 추가** 대화 상자에 입력된 이름과 일치합니다.
 
@@ -92,7 +92,7 @@ ms.locfileid: "72655936"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
 - [방법: 항목 템플릿 만들기](../ide/how-to-create-item-templates.md)

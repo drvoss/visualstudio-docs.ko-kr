@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - developer community privacy
 - privacy, developer community
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1856d6421dc61ada2f3040e4fdeed880a6ab201
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 09f3e5fed93cac3a251e4b7cdcaa988e63ff8741
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652478"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596270"
 ---
 # <a name="developer-community-data-privacy"></a>개발자 커뮤니티 데이터 개인 정보
 
@@ -85,7 +85,7 @@ Visual Studio에서 **문제 보고**가 시작되면 다음 유형의 데이터
   > ![문제 보고 - 수집된 로그 요약](media/report-a-problem-logs-collected.png)
 
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 문제를 보고하는 방법](how-to-report-a-problem-with-visual-studio.md)
 - [C++ 문제 보고서 데이터 개인 정보](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset#reports-and-privacy)

@@ -20,17 +20,17 @@ helpviewer_keywords:
 - defaults, colors
 - printers, customizing
 ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 527c01629fbff856748a50d393ca5df2a413d056
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9d5c9edd47e3db43735d3c6e8f6a4ec1a881214e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667028"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595620"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>옵션 대화 상자, 환경, 글꼴 및 색
 
@@ -251,7 +251,7 @@ Visual Studio를 처음 열 때 항목에 표시되는 색입니다. **기본값
 
 선택한 **설정 표시** 및 **표시 항목**의 글꼴 스타일, 크기 및 색 구성표의 샘플이 표시됩니다. 여러 가지 서식 지정 옵션을 시도할 때 이 상자에서 결과를 미리 볼 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [옵션 대화 상자](../../ide/reference/options-dialog-box-visual-studio.md)
 - [방법: 글꼴 및 색 변경](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

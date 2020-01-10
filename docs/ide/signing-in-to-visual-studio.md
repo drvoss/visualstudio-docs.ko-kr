@@ -10,19 +10,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4f12aafa8296914461e647dddc3400e399770c0
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: 5d47e31b70e56ed0b0e0957d2407a043329a5a10
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919176"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594541"
 ---
 # <a name="sign-in-to-visual-studio"></a>Visual Studio에 로그인
 
 IDE에 로그인하여 개인 설정 계정을 설정하면 Visual Studio의 개발 환경을 자신에게 맞게 설정하고 최적화할 수 있습니다.
 
 > [!NOTE]
-> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio에 로그인](/visualstudio/mac/signing-in)을 참조하세요.
+> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio에 로그인](/visualstudio/mac/signing-in)을 참조하세요.
 
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Visual Studio에 로그인해야 하는 이유는 무엇인가요?
 
@@ -66,7 +66,7 @@ Visual Studio를 처음 열 때 로그인하고 기본적인 등록 정보를 �
 
 로그인하는 동안 문제가 발생하는 경우 도움이 필요하면 [계정 지원 페이지](https://visualstudio.microsoft.com/subscriptions/support/)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [Visual Studio 잠금을 해제하는 방법](../ide/how-to-unlock-visual-studio.md)
 * [Visual Studio IDE 개요](../get-started/visual-studio-ide.md)

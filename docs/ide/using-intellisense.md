@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Complete word
 - List members
 - IntelliSense [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 011542bc45680f6fb5b7bd2b83283605922189ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 34e038256d46909e135f8285cb1b3edc45d0ba3e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647351"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565346"
 ---
 # <a name="intellisense-in-visual-studio"></a>Visual Studio의 IntelliSense
 
@@ -107,7 +107,7 @@ MessageBox( hWnd, "String literal|")
 
 **자동 옵션이 꺼져 있습니다.** 기본적으로 IntelliSense는 자동으로 작동하지만 비활성화할 수 있습니다. 자동 문 완성을 비활성화한 경우에도 IntelliSense 기능을 호출할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md)
 - [C# IntelliSense](../ide/visual-csharp-intellisense.md)

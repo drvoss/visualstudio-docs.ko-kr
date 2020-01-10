@@ -12,17 +12,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ab048fe69ca89086e9811e5277dccb86aeee6194
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7d1fba3b956a492740171bf2ad747e980b41df29
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300851"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851974"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>방법: 리소스 만들기 및 적용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-XAML 디자이너의 요소에 대한 스타일 및 템플릿은 리소스라는 다시 사용 가능한 엔터티에 저장됩니다. 스타일을 사용하면 요소 속성을 설정하고 여러 요소에 걸쳐 일관된 모양을 위해 이러한 설정을 통해 다시 사용할 수 있습니다. [ControlTemplate](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx)은 컨트롤의 모양을 정의하며 리소스로 적용될 수도 있습니다. 자세한 내용은 [빠른 시작: 컨트롤 스타일 지정](https://go.microsoft.com/fwlink/?LinkID=248239) 및 [빠른 시작: 컨트롤 템플릿](https://go.microsoft.com/fwlink/?LinkID=247982)을 참조하세요.
+XAML 디자이너의 요소에 대한 스타일 및 템플릿은 리소스라는 다시 사용 가능한 엔터티에 저장됩니다. 스타일을 사용하면 요소 속성을 설정하고 여러 요소에 걸쳐 일관된 모양을 위해 이러한 설정을 통해 다시 사용할 수 있습니다. [ControlTemplate](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx)은 컨트롤의 모양을 정의하며 리소스로 적용될 수도 있습니다. 자세한 내용은 [빠른 시작: 컨트롤 스타일 지정](https://msdn.microsoft.com/library/windows/apps/xaml/hh465381.aspx) 및 [빠른 시작: 컨트롤 템플릿](https://msdn.microsoft.com/library/windows/apps/xaml/hh465374.aspx)을 참조하세요.
 
  기존 속성인 [스타일](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.style.aspx) 또는 `ControlTemplate`으로 새 리소스를 만들 때마다 **리소스 만들기** 대화 상자를 사용하여 애플리케이션 수준, 문서 수준 또는 요소 수준에서 리소스를 정의할 수 있습니다. 이러한 수준에 따라 리소스를 사용할 수 있는 위치가 결정됩니다. 예를 들어 요소 수준에서 리소스를 정의하는 경우 리소스 만든 요소에만 적용할 수 있습니다. 또한 다른 프로젝트에서 다시 사용할 수 있는 별도 파일인 리소스 사전에 리소스를 저장할 수 있습니다.
 
@@ -65,7 +65,7 @@ XAML 디자이너의 요소에 대한 스타일 및 템플릿은 리소스라는
      > [!NOTE]
      > **템플릿 편집**은 컨트롤 템플릿을 적용하는 데 사용됩니다. **추가 템플릿 편집**은 다른 템플릿 형식을 적용하는 데 사용됩니다.
 
-     호환되는 모든 위치에 리소스를 적용할 수 있습니다. 예를 들어 **컨트롤의**Foreground<xref:Windows.UI.Xaml.Controls.TextBox> 속성에 브러시 리소스를 적용할 수 있습니다.
+     호환되는 모든 위치에 리소스를 적용할 수 있습니다. 예를 들어 <xref:Windows.UI.Xaml.Controls.TextBox> 컨트롤의 **Foreground** 속성에 브러시 리소스를 적용할 수 있습니다.
 
 ### <a name="to-edit-a-resource"></a>리소스를 편집하려면
 

@@ -37,19 +37,19 @@ caps.latest.revision: 60
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a9f20629c39bc37ca20550c3b88d8ecb2aca470f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7e1b37a357113be010ea336fc5666beb8cd33dbc
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300256"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852017"
 ---
 # <a name="create-models-for-your-app"></a>앱용 모델 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 모델링 다이어그램을 통해 코드에 대한 아이디어 및 소프트웨어 시스템에서 지원해야 하는 사용자 요구 사항을 이해하고 분명히 설명하고 전달할 수 있습니다. 예를 들어 사용자 요구 사항을 설명 및 전달하려면 UML(Unified Modeling Language) 사용 사례, 동작, 클래스 및 시퀀스 다이어그램을 사용하면 됩니다. 시스템 기능을 설명 및 전달하려면 UML 구성 요소, 클래스, 동작 및 시퀀스 다이어그램을 사용하면 됩니다.
 
- [Channel 9 비디오: 모델링을 통해 아키텍처 향상](https://go.microsoft.com/fwlink/?LinkID=252078)을 참조 하세요.
+ [Channel 9 비디오: 모델링을 통해 아키텍처 향상](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Improving-architecture-through-modeling)을 참조 하세요.
 
  이 릴리스에서 다음 UML 다이어그램을 만들 수 있습니다.
 
@@ -73,7 +73,7 @@ ms.locfileid: "74300256"
 
 ## <a name="common-tasks"></a>일반 작업
 
-|**뒷부분**|**Task**|
+|**항목**|**Task**|
 |---------------|--------------|
 |[UML 모델링 프로젝트 및 다이어그램 만들기](../modeling/create-uml-modeling-projects-and-diagrams.md)|**모델을 만들고** 다이어그램을 추가 합니다.|
 |[UML 모델 및 다이어그램 편집](../modeling/edit-uml-models-and-diagrams.md)|**다이어그램을 그려** 모델을 편집 합니다.|
@@ -85,7 +85,7 @@ ms.locfileid: "74300256"
 
 ## <a name="related-tasks"></a>관련 태스크
 
-|**뒷부분**|**Task**|
+|**항목**|**Task**|
 |---------------|--------------|
 |[코드 시각화](../modeling/visualize-code.md)|친숙하지 않은 코드를 더 잘 이해하도록 코드 맵과 레이어 다이어그램을 만듭니다.|
 |[사용자 요구 사항 모델링](../modeling/model-user-requirements.md)|모델을 사용하여 사용자 요구 사항을 분명히 설명하고 전달합니다.|
@@ -98,4 +98,4 @@ ms.locfileid: "74300256"
 
 |**범주**|**링크**|
 |------------------|---------------|
-|**포럼**|-   [Visual Studio 시각화 및 모델링 도구](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio 시각화 및 모델링 SDK(DSL 도구)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**포럼**|-   [Visual Studio 시각화 및 모델링 도구](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio 시각화 및 모델링 SDK(DSL 도구)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|

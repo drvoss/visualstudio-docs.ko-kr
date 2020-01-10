@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bcd5a4996db4a5e374baabe4f52d5fd1dbac2e5e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e590af12e8979d16a946339cae530fd5ccc1b08d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301117"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850735"
 ---
 # <a name="writing-a-t4-text-template"></a>T4 텍스트 템플릿 쓰기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -161,7 +161,7 @@ private int Square(int i)
  제어 블록에 대 한 자세한 내용은 [텍스트 템플릿 제어 블록](../modeling/text-template-control-blocks.md)을 참조 하세요.
 
 ### <a name="class-feature-blocks-can-contain-text-blocks"></a>텍스트 블록을 포함할 수 있는 클래스 기능 블록
- 텍스트를 생성하는 메서드를 작성할 수 있습니다. 예를 들면 다음과 같습니다.
+ 텍스트를 생성하는 메서드를 작성할 수 있습니다. 예를 들면 다음과 같습니다.:
 
 ```
 List of Squares:
@@ -191,7 +191,7 @@ private void WriteSquareLine(int i)
 <#@ assembly name="System.Xml" #>
 ```
 
- 절대 경로 이름을 사용하거나 경로 이름에 표준 매크로 이름을 사용해야 합니다. 예를 들면 다음과 같습니다.
+ 절대 경로 이름을 사용하거나 경로 이름에 표준 매크로 이름을 사용해야 합니다. 예를 들면 다음과 같습니다.:
 
 ```
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>
@@ -242,7 +242,7 @@ private void WriteSquareLine(int i)
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...
 ```
 
- **탐색 가능한 모델로 파일을 로드**합니다. 즉, 텍스트 템플릿 코드가 탐색할 수 있는 모델로 데이터를 읽는 보다 효율적인 방식을 사용할 수 있습니다. 예를 들어 XML 파일을 로드한 다음 XPath 식을 사용하여 탐색할 수 있습니다. 또한 [xsd.exe](https://go.microsoft.com/fwlink/?LinkId=178765) 를 사용 하 여 XML 데이터를 읽을 수 있는 클래스 집합을 만들 수 있습니다.
+ **탐색 가능한 모델로 파일을 로드**합니다. 즉, 텍스트 템플릿 코드가 탐색할 수 있는 모델로 데이터를 읽는 보다 효율적인 방식을 사용할 수 있습니다. 예를 들어 XML 파일을 로드한 다음 XPath 식을 사용하여 탐색할 수 있습니다. 또한 [xsd.exe](https://docs.microsoft.com/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) 를 사용 하 여 XML 데이터를 읽을 수 있는 클래스 집합을 만들 수 있습니다.
 
  **다이어그램 또는 폼에서 모델 파일을 편집 합니다.** [!INCLUDE[dsl](../includes/dsl-md.md)]에서는 모델을 다이어그램 또는 Windows form으로 편집할 수 있는 도구를 제공 합니다. 그러면 생성된 애플리케이션의 사용자와 모델에 대해 보다 쉽게 논의할 수 있습니다. 또한 [!INCLUDE[dsl](../includes/dsl-md.md)]은 모델의 구조를 반영 하는 강력한 형식의 클래스 집합을 만듭니다. 자세한 내용은 [도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)을 참조 하세요.
 

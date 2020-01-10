@@ -15,12 +15,12 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 8b85bbad909a05bacab361a49cc7e029482ad606
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d4e45ade24ce792999d1f9b0f52d9c82703fc5a0
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291203"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849874"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>코드 분석 도구를 사용하여 응용 프로그램 품질 분석
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "74291203"
 
  [코드 분석 도구를 사용 하 여 드라이버 품질 분석](/windows-hardware/drivers/devtest/tools-for-verifying-drivers) 드라이버에 대 한 코드 분석은 C 및 C++ 프로그램에서 기본 코딩 오류를 검색 하는 컴파일 시간 정적 확인 도구 이며, (주로) 커널 모드 드라이버 코드에서 오류를 검색 하도록 디자인 된 특수 한 모듈을 포함 합니다. SDV(정적 드라이버 확인 프로그램)는 Windows 커널 모드 드라이버의 소스 코드를 체계적으로 분석하는 정적 검증 도구입니다. SDV는 드라이버가 Windows 운영 체제 커널과 제대로 상호 작용하는지 여부를 결정합니다.
 
- [드라이버에 대 한 코드 분석 경고](https://go.microsoft.com/fwlink/?LinkId=225920) 드라이버 코드에서 가능한 오류를 발견할 때 드라이버에 대 한 코드 분석이 보고 하는 경고에 대해 설명 합니다.
+ [드라이버에 대 한 코드 분석 경고](https://msdn.microsoft.com/library/windows/hardware/ff550572(v=VS.85).aspx) 드라이버 코드에서 가능한 오류를 발견할 때 드라이버에 대 한 코드 분석이 보고 하는 경고에 대해 설명 합니다.
 
 ## <a name="related-tasks"></a>관련 태스크
  [관리 코드의 복잡성 및 유지 관리 용이성 측정](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md) 여기에 설명을 삽입 합니다.

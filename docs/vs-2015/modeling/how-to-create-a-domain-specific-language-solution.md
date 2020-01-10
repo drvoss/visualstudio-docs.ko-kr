@@ -15,14 +15,14 @@ caps.latest.revision: 43
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 60813fcce28c71c91a3e0c2af9889261c8897a99
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: f4c5bd99c47517156f1ec89de9da1a163223b99a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301407"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850443"
 ---
-# <a name="how-to-create-a-domain-specific-language-solution"></a>방법: 도메인 특정 언어 솔루션 만들기
+# <a name="how-to-create-a-domain-specific-language-solution"></a>방법: 도메인별 언어 솔루션 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 DSL (도메인 특정 언어)은 특수 한 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 솔루션을 사용 하 여 만듭니다.
@@ -32,9 +32,9 @@ DSL (도메인 특정 언어)은 특수 한 [!INCLUDE[vsprvs](../includes/vsprvs
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](https://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](https://go.microsoft.com/fwlink/?LinkID=185580)|
-|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=185581](https://go.microsoft.com/fwlink/?LinkID=185581)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](https://www.visualstudio.com/)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](https://docs.microsoft.com/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
+|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=185581](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)|
 
 ## <a name="creating-a-domain-specific-language-solution"></a>도메인별 언어 솔루션 만들기
 
@@ -127,7 +127,7 @@ DSL (도메인 특정 언어)은 특수 한 [!INCLUDE[vsprvs](../includes/vsprvs
 
  **기존 강력한 이름 키 사용** DSL을 다른 어셈블리와 통합 하려는 경우이 옵션을 사용 합니다.
 
- 강력한 이름 지정에 대 한 자세한 내용은 [강력한 이름의 어셈블리 만들기 및 사용](https://go.microsoft.com/fwlink/?LinkId=186073)을 참조 하세요.
+ 강력한 이름 지정에 대 한 자세한 내용은 [강력한 이름의 어셈블리 만들기 및 사용](https://docs.microsoft.com/dotnet/standard/assembly/create-use-strong-named?redirectedfrom=MSDN)을 참조 하세요.
 
-## <a name="see-also"></a>관련 항목:
+## <a name="see-also"></a>참고 항목
  [도메인 특정 언어를 정의하는 방법](../modeling/how-to-define-a-domain-specific-language.md) [도메인 특정 언어 도구 용어집을 정의 하는 방법](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

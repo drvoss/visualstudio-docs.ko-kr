@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d7d488581aefee150b1a186eaba48576f0b8146d
-ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.openlocfilehash: 53e3c5fe30acf3221d52b0f6bd0e85aa9bb01085
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74537956"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851199"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Visual Studio 2015 시작
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "74537956"
 >
 > [Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)의 릴리스 정보를 확인하려면 링크를 클릭하세요.
 
- 지금 바로 코딩을 시작하려면 [Visual Studio Community](https://go.microsoft.com/fwlink/?LinkId=517106) 를 무료로 다운로드하세요. 플랫폼 간 개발을 수행하려는 경우에는 선택적 패키지를 설치해야 합니다. ( [여러 가지 Visual Studio 버전](https://visualstudio.microsoft.com/vs/compare/)에서 더욱 다양한 기능을 사용할 수 있습니다.)
+ 지금 바로 코딩을 시작하려면 [Visual Studio Community](https://visualstudio.microsoft.com/downloads/) 를 무료로 다운로드하세요. 플랫폼 간 개발을 수행하려는 경우에는 선택적 패키지를 설치해야 합니다. [여러 가지 Visual Studio 버전](https://visualstudio.microsoft.com/vs/compare/)에서 더욱 다양한 기능을 사용할 수 있습니다.
 
  지금 바로 새 프로젝트를 만들고 코드 작성을 시작해 보세요. 먼저 만들려는 앱의 유형을 선택합니다. 도구에 익숙해지기 위해 Visual Studio IDE를 [둘러볼](./ide/visual-studio-ide.md) 수도 있습니다.
 
@@ -90,7 +90,7 @@ ms.locfileid: "74537956"
  앱의 수동 및 자동 테스트 계획, 만들기 및 실행 테스트 계획, 도구 모음, 테스트 사례 및 테스트 결과는 Visual Studio Team Services를 통해 클라우드에 저장되거나 Team Foundation Server를 통해 온-프레미스로 저장됩니다. [애플리케이션 테스트](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)에 대해 자세히 알아보세요.
 
 ### <a name="deliver-your-teams-code-faster"></a>팀의 코드를 더 빠르게 제공
- 팀 구성원 간의 장벽을 없애고 협업을 개선합니다. 더 나아가 프로덕션까지의 각 개발 단계에 대한 앱의 릴리스를 자동화합니다. 라이브 상태일 때 앱의 성능 및 가용성을 모니터링합니다. 고객이 실제로 앱을 사용하고 있는 방식에 대한 실시간 사용량 현황 데이터를 수집합니다. 자세한 내용은 [DevOps 및 애플리케이션 수명 주기 관리](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)를 참조하세요.
+ 팀 구성원 간의 장벽을 없애고 협업을 개선합니다. 더 나아가 프로덕션까지의 각 개발 단계에 대한 앱의 릴리스를 자동화합니다. 라이브 상태일 때 앱의 성능 및 가용성을 모니터링합니다. 고객이 실제로 앱을 사용하고 있는 방식에 대한 실시간 사용량 현황 데이터를 수집합니다. 자세한 내용은 [DevOps 및 애플리케이션 수명 주기 관리](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6) (영문)를 참조하세요.
 
 ## <a name="whats-new"></a>새로운 기능
 
@@ -100,7 +100,7 @@ ms.locfileid: "74537956"
 |[C++의 새로운 기능](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Visual Basic의 새로운 기능](https://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[JavaScript의 새로운 기능](javascript/javascript-in-visual-studio.md#whats-new-in-javascript)||
 |[Python](./python/getting-started-with-python.md)||||
 
-## <a name="in-this-section"></a>이 섹션의 내용
+## <a name="in-this-section"></a>단원 내용
 
 - [Visual Studio 2015의 새로운 기능](./what-s-new-in-visual-studio-2015.md)
 

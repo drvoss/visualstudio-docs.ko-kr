@@ -8,12 +8,12 @@ ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: 19
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9f2e62766f919c9f3379d59c4528a32739ef73ac
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b77a088fc144df8c7305098e48c45f672733a7c9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301396"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851196"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>단위 테스트를 위해 스텁을 사용하여 각 응용 프로그램의 일부를 격리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -224,7 +224,7 @@ End Class
  스텁은 속성, 이벤트 및 제네릭 메서드의 getter와 setter에 대해서도 생성됩니다.
 
 ### <a name="mocks"></a> 매개 변수 값 확인
- 구성 요소가 다른 구성 요소를 호출할 때 올바른 값을 전달하는지 확인할 수 있습니다. 스텁에 어설션을 추가하거나 값을 저장한 다음 테스트 본문에서 확인할 수 있습니다. 예를 들면 다음과 같습니다.
+ 구성 요소가 다른 구성 요소를 호출할 때 올바른 값을 전달하는지 확인할 수 있습니다. 스텁에 어설션을 추가하거나 값을 저장한 다음 테스트 본문에서 확인할 수 있습니다. 예를 들면 다음과 같습니다.:
 
 ```csharp
 [TestClass]
@@ -400,7 +400,7 @@ public void TestGetValue()
  코드가 기타 인스턴스화를 사용하여 `GetValue<T>`를 호출하는 경우 스텁이 동작만 호출합니다.
 
 ### <a name="BKMK_Partial_stubs"></a> 가상 클래스의 스텁
- 위 예제에서는 인터페이스에서 스텁이 생성되었습니다. 또한 가상 또는 추상 멤버가 있는 클래스에서 스텁을 생성할 수 있습니다. 예를 들면 다음과 같습니다.
+ 위 예제에서는 인터페이스에서 스텁이 생성되었습니다. 또한 가상 또는 추상 멤버가 있는 클래스에서 스텁을 생성할 수 있습니다. 예를 들면 다음과 같습니다.:
 
 ```csharp
 // Base class in application under test
@@ -472,7 +472,7 @@ StubBehaviors.Current =
 ## <a name="external-resources"></a>외부 리소스
 
 ### <a name="guidance"></a>지침
- [Visual Studio 2012를 사용한 지속적인 업데이트 테스트 - 2장: 단위 테스트: 내부 테스트](https://go.microsoft.com/fwlink/?LinkID=255188)
+ [Visual Studio 2012를 사용한 연속 배달 테스트 - 2장: 단위 테스트: 내부 테스트](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ## <a name="see-also"></a>참고 항목
  [Microsoft Fakes를 사용하여 테스트 중인 코드 격리](../test/isolating-code-under-test-with-microsoft-fakes.md)

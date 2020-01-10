@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 14911cda4cfc2be5fece6005a879427c10529bbc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 89531fe0f2e912a6aabd962ab56ca7a24a7f3e20
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298909"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850658"
 ---
 # <a name="install-a-uml-profile"></a>UML 프로필 설치
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ UML 프로필을 통해 Visual Studio를 확장할 수 있습니다. 프로필�
 
  프로필을 사용하여 만든 UML 모델을 받은 경우 동일한 프로필을 설치하지 않으면 일부 속성이 표시되지 않습니다.
 
- 프로필은 Visual Studio 확장 내에 배포됩니다. 확장에 메뉴 명령과 같은 다른 기능이 포함될 수도 있습니다. 자세한 내용은 [Visual Studio 확장 관리](https://go.microsoft.com/fwlink/?LinkId=160728)를 참조 하세요.
+ 프로필은 Visual Studio 확장 내에 배포됩니다. 확장에 메뉴 명령과 같은 다른 기능이 포함될 수도 있습니다. 자세한 내용은 [Visual Studio 확장 관리](https://msdn.microsoft.com/library/dd293638(VS.100).aspx)를 참조 하세요.
 
 ### <a name="to-install-a-uml-profile-on-your-computer"></a>컴퓨터에 UML 프로필을 설치하려면
 

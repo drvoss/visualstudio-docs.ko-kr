@@ -8,12 +8,12 @@ ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cafdfacec24e906569d0f2b0d1a334511a75e30a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 96647f362566f0687cb04b7da4459331ac56b031
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300718"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851913"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft 도움말 뷰어 SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -312,13 +312,13 @@ some F# code
 
    - 32 비트 운영 체제의 경우:
 
-      HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\Help\v2.1\Partner<em>\\< 네임 스페이스\></em>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Partner<em>\\<namespace\></em>
 
       "location" = "offline"
 
    - 64 비트 운영 체제의 경우:
 
-      HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Partner<em>\\< 네임 스페이스\></em>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Partner<em>\\<namespace\></em>
 
       "location" = "offline"
 
@@ -432,7 +432,7 @@ some F# code
 
   참고: "{n}"이 (가) 기록한 변수에는 코드 종속성이 있습니다. 이러한 값을 제거 하거나 변경 하면 오류가 발생 하 고 응용 프로그램의 작동이 중단 될 수 있습니다. 지역화 식별자 (예: _locID = "codesnippet. n")는 Visual Studio 브랜딩 패키지에 포함 되어 있습니다.
 
-  **브랜딩을 .xml**
+  **Branding.xml**
 
 |||
 |-|-|
@@ -445,20 +445,20 @@ some F# code
 |다음을 사용합니다.|코드 조각 컨트롤 텍스트입니다.  참고: "중단 없는" 공간이 있는 코드 조각 콘텐츠가 공백으로 변경 됩니다.|
 |**요소**|**Value**|
 |CopyToClipboard|클립보드에 복사|
-|ViewColorizedText|색 보기|
-|CombinedVBTabDisplayLanguage|Visual Basic (샘플)|
+|ViewColorizedText|채색된 텍스트 보기|
+|CombinedVBTabDisplayLanguage|Visual Basic(샘플)|
 |VBDeclaration|선언|
-|VBUsage|사용법|
+|VBUsage|용도|
 |기능:|**사용자 의견, 바닥글 및 로고**|
 |다음을 사용합니다.|고객이 전자 메일을 통해 현재 항목에 대 한 피드백을 제공할 수 있도록 피드백 컨트롤을 제공 합니다.  콘텐츠의 저작권 텍스트입니다.  로고 정의.|
 |**요소**|**값 (이러한 문자열은 콘텐츠 도입자 요구를 충족 하도록 수정할 수 있습니다.)**|
-|CopyRight|?2013 Microsoft Corporation. All rights reserved.|
+|CopyRight|?2013 Microsoft Corporation. 모든 권리 보유.|
 |SendFeedback|href = "{0}" {1}\<이 항목에 대 한 피드백\</a >을 Microsoft에 보낼 >.|
 |FeedbackLink||
 |LogoTitle|[!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]|
 |LogoFileName|vs_logo_bk.gif|
 |LogoFileNameHC|vs_logo_wh.gif|
-|기능:|**내용을**|
+|기능:|**고지 사항**|
 |다음을 사용합니다.|컴퓨터 번역 콘텐츠에 대 한 대/소문자 관련 대/소문자 집합입니다.|
 |**요소**|**Value**|
 |MT_Editable|이 문서는 기계 번역 되었습니다. 인터넷에 연결 되어 있는 경우 "온라인에서이 항목 보기"를 선택 하면이 페이지를 편집 가능 모드에서 원본 영어 콘텐츠와 함께 볼 수 있습니다.|
@@ -470,10 +470,10 @@ some F# code
 |기능:|**LinkTable**|
 |다음을 사용합니다.|온라인 항목 링크에 대 한 지원|
 |**요소**|**Value**|
-|LinkTableTitle|테이블 연결|
+|LinkTableTitle|연결 테이블|
 |TopicEnuLinkText|컴퓨터에서 사용할 수 있는이 항목의 영어 버전\</a >를 확인 합니다.|
 |TopicOnlineLinkText|이 항목 \<href = "{0}" {1}> online\</a를 참조 하십시오 >|
-|OnlineText|온라인|
+|OnlineText|Online|
 |기능:|**비디오 오디오 컨트롤**|
 |다음을 사용합니다.|비디오 콘텐츠의 표시 요소 및 텍스트|
 |**요소**|**Value**|
@@ -505,14 +505,14 @@ some F# code
 |**요소**|**Value**|
 |HomePageTitle|도움말 뷰어 홈|
 |HomePageIntroduction|\<p > Microsoft 도구, 제품, 기술 및 서비스를 사용 하는 모든 사용자에 게 필수적인 정보 원본인 Microsoft 도움말 뷰어을 시작 합니다. 도움말 뷰어를 사용 하면 방법 및 참조 정보, 샘플 코드, 기술 문서 등에 액세스할 수 있습니다. 필요한 콘텐츠를 찾으려면 목차를 찾아보거나 전체 텍스트 검색을 사용 하거나 키워드 인덱스를 사용 하 여 콘텐츠를 탐색 합니다.\</p >|
-|HomePageContentInstallText|\<p >\<br/> \<{0}{1}>\<>를 사용 하 여 다음 작업을 수행할 수 있습니다.\<ul >\<li > 컴퓨터에 콘텐츠를 추가 합니다.\</li >\<li > 로컬 콘텐츠에 대 한 업데이트를 확인 합니다.\</li >\<li > 컴퓨터에서 콘텐츠를 제거 합니다.\</li >\</ul >\</p >|
+|HomePageContentInstallText|\<p >\<br/> \<{0}{1}\<>를 사용 하 여 다음 작업을 수행할 수 있습니다.\<ul >\<li > 컴퓨터에 콘텐츠를 추가 합니다.\</li >\<li > 로컬 콘텐츠에 대 한 업데이트를 확인 합니다.\</li >\<li > 컴퓨터에서 콘텐츠를 제거 합니다.\</li >\</ul >\</p >|
 |HomePageInstalledBooks|설치 된 서적|
 |HomePageNoBooksInstalled|컴퓨터에서 콘텐츠를 찾을 수 없습니다.|
 |HomePageHelpSettings|도움말 콘텐츠 설정|
 |HomePageHelpSettingsText|\<p > 현재 설정이 로컬 도움말입니다. 도움말 뷰어에는 컴퓨터에 설치한 콘텐츠가 표시 됩니다.\<br/> 도움말 콘텐츠 소스를 변경 하려면 Visual Studio 메뉴 모음에서 \<span style = "{0}" > 도움말, 도움말 기본 설정\</span >을 선택 합니다.\<br/>\</p >|
 |200Mb|MB|
 
- **브랜딩을 .js**
+ **branding.js**
 
  브랜딩 파일에는 Visual Studio 도움말 뷰어 브랜딩 요소에 사용 되는 JavaScript가 포함 되어 있습니다.  다음은 브랜딩 요소 및 지원 JavaScript 함수 목록입니다.  이 파일에 대해 지역화할 모든 문자열은이 파일의 맨 위에 있는 "지역화할 수 있는 문자열" 섹션에 정의 되어 있습니다.  ICL 파일 내의 loc 문자열에 대해 ICL 파일이 생성 되었습니다.
 
@@ -555,20 +555,20 @@ some F# code
 
 ||||
 |-|-|-|
-|**파일**|**사용**|**표시 된 콘텐츠 원본**|
+|**파일**|**용도**|**표시 된 콘텐츠 원본**|
 |homepage.htm|현재 설치 된 콘텐츠를 표시 하는 페이지 및 해당 콘텐츠에 대 한 사용자에 게 제공 되는 기타 모든 메시지입니다.  이 파일에는이 콘텐츠를 로컬 콘텐츠 TOC의 맨 위에 배치 하는 추가 메타 데이터 특성 "Microsoft.Help.Id" content = "-1"이 있습니다.||
 ||< META_HOME_PAGE_TITLE_ADD/>|HomePageTitle > \<태그|
 ||< HOME_PAGE_INTRODUCTION_SECTION_ADD/>|HomePageIntroduction > \<태그|
-||< HOME_PAGE_CONTENT_INSTALL_SECTION_ADD/>|HomePageContentInstallText > \<태그|
+||< HOME_PAGE_CONTENT_INSTALL_SECTION_ADD/>|Branding.xml, tag \<HomePageContentInstallText>|
 ||< HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD/>|제목 섹션 브랜딩 .xml 태그\<HomePageInstalledBooks >, 응용 프로그램에서 생성 된 데이터, \<HomePageNoBooksInstalled >가 설치 되어 있지 않은 경우.|
 ||< HOME_PAGE_SETTINGS_SECTION_ADD/>|제목 섹션 브랜딩 .xml 태그 \<HomePageHelpSettings >, section 텍스트 \<HomePageHelpSettingsText >.|
 |topiccorrupted.htm|항목이 로컬 집합에 있지만 어떤 이유로 든 표시할 수 없는 경우 (손상 된 콘텐츠)||
-||<META_TOPIC_CORRUPTED_TITLE_ADD />|TopicCorruptedTitle > \<태그|
-||< TOPIC_CORRUPTED_SECTION_ADD/>|TopicCorruptedViewOnlineText > \<태그|
+||<META_TOPIC_CORRUPTED_TITLE_ADD />|Branding.xml, tag \<TopicCorruptedTitle>|
+||< TOPIC_CORRUPTED_SECTION_ADD/>|Branding.xml, tag \<TopicCorruptedViewOnlineText>|
 |topicnotfound.htm|로컬 콘텐츠 집합에 항목이 없거나 온라인에서 사용할 수 없는 경우||
-||<META_TOPIC_NOT_FOUND_TITLE_ADD />|TopicNotFoundTitle > \<태그|
-||<META_TOPIC_NOT_FOUND_ID_ADD />|TopicNotFoundViewOnlineText, 태그 \<> + \<TopicNotFoundDownloadContentText >|
-||<TOPIC_NOT_FOUND_SECTION_ADD />|TopicNotFoundText > \<태그|
+||<META_TOPIC_NOT_FOUND_TITLE_ADD />|Branding.xml, tag \<TopicNotFoundTitle>|
+||<META_TOPIC_NOT_FOUND_ID_ADD />|Branding.xml, tag \<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
+||<TOPIC_NOT_FOUND_SECTION_ADD />|Branding.xml, tag \<TopicNotFoundText>|
 |contentnotinstalled.htm|제품에 대 한 로컬 콘텐츠가 설치 되어 있지 않은 경우||
 ||< META_CONTENT_NOT_INSTALLED_TITLE_ADD/>|ContentNotInstalledTitle > \<태그|
 ||<META_CONTENT_NOT_INSTALLED_ID_ADD />|ContentNotInstalledDownloadContentText > \<태그|
@@ -590,7 +590,7 @@ some F# code
 
 ||||
 |-|-|-|
-|**파일**|**사용**|**예제**|
+|**파일**|**용도**|**예제**|
 |clear.gif|축소 가능한 영역을 렌더링 하는 데 사용 됩니다.||
 |footer_slice.gif|바닥글 프레젠테이션||
 |info_icon.gif|정보를 표시할 때 사용 됩니다.|고지 사항|
@@ -824,4 +824,4 @@ some F# code
 
 도움말 API를 활용 하는 방법에 대 한 자세한 내용은 [도움말 뷰어 코드 예제](https://marketplace.visualstudio.com/items?itemName=RobChandlerHelpMVP.HelpViewer20CodeExamples)를 참조 하세요.
 
-주요 문제에 대 한 업데이트는 [도움말 뷰어 추가 정보](https://go.microsoft.com/fwlink/?LinkID=231397&clcid=0x409)를 참조 하세요.
+주요 문제에 대 한 업데이트는 [도움말 뷰어 추가 정보](https://go.microsoft.com/fwlink/?LinkId=255960)를 참조 하세요.

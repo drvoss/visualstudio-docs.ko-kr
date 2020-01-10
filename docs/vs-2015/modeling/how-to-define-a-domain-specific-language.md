@@ -18,28 +18,28 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b4bcd1f1f023c9e439fb870c9e31f07aa5be215d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8050e0245708d855d78dbba94e1bb56399343ecf
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299555"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850694"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>도메인별 언어 정의 방법
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 DSL(Domain-Specific Language)을 정의하려면 템플릿에서 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 솔루션을 만듭니다. 이 솔루션의 중요한 요소는 DslDefinition.dsl에 저장되는 DSL 정의 다이어그램입니다. DSL 정의는 DSL의 클래스와 모양을 정의합니다. 이러한 요소를 수정하고 필요한 내용을 추가한 후에 프로그램 코드를 추가하여 DSL을 보다 자세하게 사용자 지정할 수 있습니다.
 
- Dsl을 처음 접하는 경우이 사이트에서 찾을 수 있는 **DSL 도구 랩을**통해 작업 하는 것이 좋습니다. [VISUALIZATON and 모델링 SDK](https://go.microsoft.com/fwlink/?LinkID=186128)
+ Dsl을 처음 접하는 경우이 사이트에서 찾을 수 있는 **DSL 도구 랩을**통해 작업 하는 것이 좋습니다. [VISUALIZATON and 모델링 SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
 
 ## <a name="templates"></a>템플릿 솔루션 선택
  DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
-|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](https://go.microsoft.com/fwlink/?LinkID=186128)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://www.visualstudio.com/)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://docs.microsoft.com/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
+|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)|
 
  새 DSL(Domain-Specific Language)을 만들려면 DSL 프로젝트 템플릿을 사용하여 새 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 솔루션을 만듭니다.
 
@@ -68,7 +68,7 @@ DSL(Domain-Specific Language)을 정의하려면 템플릿에서 [!INCLUDE[vsprv
        > [!NOTE]
        > 클래스 다이어그램 또는 구성 요소 다이어그램을 만들려는 경우에는 UML 모델을 사용할 수 있습니다. UML 모델링 도구는 단일 모델을 중심으로 통합된 다이어그램 집합을 제공합니다. ModelBus를 사용하면 이러한 다이어그램을 확장할 수 있으며 DSL과 통합할 수 있습니다. 자세한 내용은 [앱에 대 한 모델 만들기](../modeling/create-models-for-your-app.md)를 참조 하세요.
 
-   - Windows Forms 또는 WPF 화면에 표시 되는 DSL을 만들려면 **최소 WinForm 디자이너** 또는 **최소 wpf 디자이너** 를 선택 합니다. 편집기를 정의하려면 코드를 작성해야 합니다. 자세한 내용은 다음 항목을 참조하십시오.
+   - Windows Forms 또는 WPF 화면에 표시 되는 DSL을 만들려면 **최소 WinForm 디자이너** 또는 **최소 wpf 디자이너** 를 선택 합니다. 편집기를 정의하려면 코드를 작성해야 합니다. 자세한 내용은 다음 항목을 참조하세요.
 
         [Windows Forms 기반 도메인별 언어 만들기](../modeling/creating-a-windows-forms-based-domain-specific-language.md)
 
@@ -192,7 +192,7 @@ DSL(Domain-Specific Language)을 정의하려면 템플릿에서 [!INCLUDE[vsprv
 
  클래스에서 **도메인 속성** 을 클릭 하 고 enter 키를 누른 다음 속성의 이름을 입력 합니다. 도메인 속성의 기본 형식은 문자열입니다. 유형을 변경 하려면 도메인 속성을 선택 하 고 **속성** 창에서 **유형을** 설정 합니다. 원하는 형식이 드롭다운 목록에 없는 경우 [속성 형식 추가](#addTypes)를 참조 하세요.
 
- **요소 이름 속성을 설정 합니다.** 언어 탐색기에서 요소를 식별 하는 데 사용할 수 있는 도메인 속성을 선택 합니다. 예를 들어 Song 도메인 클래스에서는 Title 도메인 속성을 선택할 수 있습니다. **속성** 창에서 **요소 이름** 을 `true`로 설정 합니다.
+ **요소 이름 속성을 설정 합니다.** 언어 탐색기에서 요소를 식별하는 데 사용할 수 있는 도메인 속성을 선택합니다. 예를 들어 Song 도메인 클래스에서는 Title 도메인 속성을 선택할 수 있습니다. **속성** 창에서 **요소 이름** 을 `true`로 설정 합니다.
 
 ### <a name="create-derived-domain-classes"></a>파생된 도메인 클래스 만들기
  도메인 클래스에 해당 속성과 관계를 상속하는 변형을 포함하려면 해당 클래스에서 파생되는 클래스를 만듭니다. 예를 들어 Album에는 WMA 및 MP3 파생 클래스가 포함될 수 있습니다.
@@ -346,7 +346,7 @@ DSL(Domain-Specific Language)을 정의하려면 템플릿에서 [!INCLUDE[vsprv
 
  필요한 경우 **각 역할의 복합성을 조정**합니다. 각 개인에게 관리자를 한 명까지만 지정하려면 다이어그램의 관리자 레이블 아래에 표시되는 다중성을 0..1로 설정합니다.
 
- **관계에 도메인 속성을 추가 합니다.** 그림에서 음악가-앨범 관계에는 role 속성이 있습니다.
+ **관계에 도메인 속성을 추가 합니다.** 아래 그림에서 Artist-Album 관계에는 역할 속성이 있습니다.
 
  동일한 모델 요소 쌍 사이에 동일한 클래스의 링크가 둘 이상 있을 수 있는 경우 **관계의 중복 허용 속성을 설정** 합니다. 예를 들어 교사 한 명이 같은 학생에게 둘 이상의 과목을 가르치도록 허용할 수 있습니다.
 
@@ -398,7 +398,7 @@ DSL(Domain-Specific Language)을 정의하려면 템플릿에서 [!INCLUDE[vsprv
 
 5. 셰이프 사이에 **연결을 만듭니다** . 연결선 도구와 모양을 차례로 클릭하고 다른 모양을 클릭합니다.
 
-6. **부적절 한 클래스 간에 연결을 만들 수 없는지 확인 합니다.** 예를 들어 앨범 및 음악가 사이에 관계가 있는 경우 아티스트에 아티스트를 연결할 수 없는지 확인 합니다.
+6. **부적절 한 클래스 간에 연결을 만들 수 없는지 확인 합니다.** 예를 들어 Album과 Artist 간에 관계가 설정된 경우 Artist를 Artist에 연결할 수 없는지 확인합니다.
 
 7. **복합성이 올바른지 확인 합니다. 예를 들어 한 사람을 두 대 이상의 관리자에 연결할 수 없는지 확인 합니다.**
 
@@ -608,17 +608,17 @@ DSL(Domain-Specific Language)을 정의하려면 템플릿에서 [!INCLUDE[vsprv
 
  [방법: 도메인별 언어의 네임 스페이스 변경을](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)참조 하세요.
 
-## <a name="trouble"></a>슈팅이
- 아래 테이블에는 DSL을 디자인할 때 가장 흔히 발생하는 몇 가지 문제와 제안 해결 방법이 나와 있습니다. [시각화 도구 문제 포럼](https://go.microsoft.com/fwlink/?LinkId=186074)에서 추가 조언을 사용할 수 있습니다.
+## <a name="trouble"></a> 문제 해결
+ 아래 테이블에는 DSL을 디자인할 때 가장 흔히 발생하는 몇 가지 문제와 제안 해결 방법이 나와 있습니다. [시각화 도구 문제 포럼](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx)에서 추가 조언을 사용할 수 있습니다.
 
-|문제|제안 해결 방법|
+|문제점|제안 해결 방법|
 |-------------|----------------|
 |DSL 정의 파일에서 수행한 변경 내용이 적용되지 않습니다.|솔루션 탐색기 위의 도구 모음에서 **모든 템플릿 변환** 을 클릭 한 다음 솔루션을 다시 빌드합니다.|
 |모양에 속성 값이 아닌 Decorator 이름이 표시됩니다.|Decorator 매핑을 설정합니다. 이렇게 하려면 DSL 정의 다이어그램에서 모양 클래스와 도메인 클래스 사이의 회색 선인 다이어그램 요소 맵을 클릭합니다.<br /><br /> **DSL 세부 정보** 창을 엽니다. 표시 되지 않는 경우 보기 메뉴에서 **다른 창**을 가리킨 다음 **DSL 정보**를 클릭 합니다.<br /><br /> **데코레이터 맵** 탭을 클릭 합니다. 데코레이터 이름을 선택 합니다. 이름 옆의 확인란이 선택되어 있는지 확인합니다. **표시 속성**에서 도메인 속성의 이름을 선택 합니다.<br /><br /> 자세한 내용은 [다이어그램의 셰이프](#shapes)를 참조 하세요.|
 |DSL 탐색기에서 컬렉션에 항목을 추가할 수 없습니다. 예를 들어 도구를 마우스 오른쪽 단추로 클릭해도 메뉴에 "도구 추가" 명령이 표시되지 않습니다.<br /><br /> DSL 탐색기에서 목록에 요소를 추가할 수 없습니다.|요소를 추가하려는 노드 위의 항목을 마우스 오른쪽 단추로 클릭합니다. 목록에 항목을 추가하려는 경우 추가 명령은 목록 노드가 아닌 해당 소유자에 있습니다.|
 |도메인 클래스를 만들었는데 언어 탐색기에서 인스턴스를 만들 수 없습니다.|루트를 제외한 모든 도메인 클래스는 포함 관계의 대상이어야 합니다.|
 |DSL 탐색기에는 요소와 형식 이름만 표시됩니다.|DSL 정의에서 클래스의 도메인 속성을 선택 하 고 속성 창에서 **요소 이름** 을 true로 설정 합니다.|
-|DSL이 항상 XML 편집기에서 열립니다.|파일을 읽는 동안 오류가 발생하면 이러한 현상이 발생할 수 있습니다. 그러나 해당 오류를 해결한 후에도 명시적으로 편집기를 DSL 디자이너로 다시 설정해야 합니다.<br /><br /> 프로젝트 항목을 마우스 오른쪽 단추로 클릭 하 고 **연결 프로그램** 을 클릭 한 다음 해당 _언어_**디자이너 (기본값)** 를 선택 합니다.|
+|DSL이 항상 XML 편집기에서 열립니다.|파일을 읽는 동안 오류가 발생하면 이러한 현상이 발생할 수 있습니다. 그러나 해당 오류를 해결한 후에도 명시적으로 편집기를 DSL 디자이너로 다시 설정해야 합니다.<br /><br /> 프로젝트 항목을 마우스 오른쪽 단추로 클릭, 클릭 **연결 프로그램** 선택한 _YourLanguage_ **Designer (기본값)** 합니다.|
 |어셈블리 이름을 변경한 후 DSL의 도구 상자가 표시되지 않습니다.|자세한 내용은 [방법: 도메인별 언어의 네임 스페이스 변경](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)(영문)을 참조 하세요 **. 자세한 내용은** 을 참조 하십시오.|
 |어셈블리 이름을 변경하지 않았는데 DSL의 도구 상자가 표시되지 않습니다.<br /><br /> 또는 확장을 로드하지 못했음을 보고하는 메시지 상자가 표시됩니다.|실험적 인스턴스를 다시 설정하고 솔루션을 다시 빌드합니다.<br /><br /> 1. Windows 시작 메뉴의 **모든 프로그램**에서 [!INCLUDE[vssdk_current_long](../includes/vssdk-current-long-md.md)], **도구**를 차례로 확장 한 다음 **Microsoft Visual Studio 실험적 인스턴스 다시 설정**을 클릭 합니다.<br />2. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**빌드** 메뉴에서 **솔루션 다시 빌드**를 클릭 합니다.|
 

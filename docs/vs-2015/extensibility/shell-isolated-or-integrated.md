@@ -14,17 +14,17 @@ ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0db0ab2c2a97f7cedde5b9b3a5ab925467a25146
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: aa346ebfe321e4672ea3fa71a4dcc872ebf22cda
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300485"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850228"
 ---
 # <a name="shell-isolated-or-integrated"></a>셸(격리 또는 통합)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-통합 모드나 격리 모드에서 Visual Studio 기반 응용 프로그램을 직접 만들 수 있습니다. 통합 모드에서는 응용 프로그램 외에도 많은 Visual Studio 기능을 사용할 수 있습니다. 격리 모드에서는 사용자 고유의 확장과 함께 배포 하려는 Visual Studio 기능의 하위 집합을 선택 합니다.  
+통합 모드나 격리 모드에서 Visual Studio 기반 응용 프로그램을 직접 만들 수 있습니다. 통합 모드에서는 애플리케이션과 여러 Visual Studio 기능을 사용할 수 있습니다. 격리 모드에서는 고유한 확장과 함께 배포할 Visual Studio 기능의 하위 집합을 선택합니다.  
   
 ## <a name="integrated-mode"></a>통합 모드  
  통합 모드를 사용 하면 사용자가 표준 Visual Studio 기능을 사용자 지정 도구와 함께 사용할 수 있습니다. 통합 셸은 주로 프로그래밍 언어 및 소프트웨어 개발 도구를 호스팅하기 위한 것입니다.  
@@ -55,7 +55,7 @@ ms.locfileid: "74300485"
 > - 고객이 셸 소프트웨어에 대 한 Microsoft 최종 사용자 사용 조건 이상으로 Visual Studio 통합 또는 격리 셸을 보호 하는 약관에 동의 해야 하는 사용자의 EULA  
   
 ## <a name="additional-resources"></a>추가 리소스  
- 재배포 가능 패키지에 대 한 자세한 내용은 [Visual Studio 확장성 다운로드](https://go.microsoft.com/fwlink/?LinkID=119298) 웹 사이트를 참조 하세요.  
+ 재배포 가능 패키지에 대 한 자세한 내용은 [Visual Studio 확장성 다운로드](https://msdn.microsoft.com/vstudio/bb984878.aspx) 웹 사이트를 참조 하세요.  
   
 ## <a name="see-also"></a>참고 항목  
  [Visual Studio 확장 전달](../extensibility/shipping-visual-studio-extensions.md)

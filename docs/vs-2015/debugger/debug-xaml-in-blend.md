@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d90e495ba64018479758e4fa38de0035601a8f0d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: eeda91dad54cc189fba6f23ce6d21e6aa9a6c5da
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298329"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850511"
 ---
 # <a name="debug-xaml-in-blend"></a>Blend에서 XAML 디버그
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "74298329"
   
 - XAML 요소가 허용되지 않는 위치에 있습니다.  
   
-  공용 XAML 구문에 대한 자세한 내용은 [기본 XAML 구문 가이드](https://go.microsoft.com/fwlink/?LinkId=329942)를 참조하십시오.  
+  공용 XAML 구문에 대한 자세한 내용은 [기본 XAML 구문 가이드](https://msdn.microsoft.com/library/windows/apps/hh700351.aspx)를 참조하십시오.  
   
   [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]에서 간단한 코드 숨김 구문 오류, 컴파일 오류, 런타임 오류를 식별 및 해결할 수도 있습니다. 하지만 코드 숨김 오류는 Visual Studio에서 더욱 쉽게 식별 및 해결할 수 있습니다.  
   
@@ -123,7 +123,7 @@ ms.locfileid: "74298329"
 ## <a name="debugging-in-visual-studio"></a>Visual Studio의 디버깅  
  앱의 코드를 더 쉽게 디버깅하려면 Visual Studio에서 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 프로젝트를 열어도 됩니다. Visual Studio에서 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 프로젝트를 열려면 **프로젝트** 패널에서 프로젝트를 마우스 오른쪽 단추로 클릭한 다음, **Visual Studio에서 편집**을 클릭합니다. Visual Studio에서 디버깅 세션을 마친 후 Ctrl+Shift+S를 눌러 변경 내용을 모두 저장한 다음 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]로 다시 전환합니다. 프로젝트를 다시 로드할 것인지 묻는 메시지가 나타납니다. **모두 예**를 클릭하여 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]에서 작업을 계속 수행합니다.  
   
- 앱을 디버깅 하는 방법에 대 한 자세한 내용은 [Visual Studio에서 Windows 스토어 앱 디버그](https://go.microsoft.com/fwlink/?LinkId=329944)를 참조 하세요.  
+ 앱을 디버깅 하는 방법에 대 한 자세한 내용은 [Visual Studio에서 Windows 스토어 앱 디버그](https://msdn.microsoft.com/library/windows/apps/hh441472.aspx)를 참조 하세요.  
   
 ## <a name="getting-help"></a>도움말 보기  
- [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 앱을 디버깅 하는 데 도움이 필요한 경우 [Windows 스토어 앱 커뮤니티 포럼](https://go.microsoft.com/fwlink/?LinkId=280308) 에서 문제와 관련 된 게시물을 검색 하거나 질문을 게시할 수 있습니다.
+ [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 앱을 디버깅 하는 데 도움이 필요한 경우 [Windows 스토어 앱 커뮤니티 포럼](https://social.msdn.microsoft.com/Forums/windowsapps/home?category=windowsapps) 에서 문제와 관련 된 게시물을 검색 하거나 질문을 게시할 수 있습니다.

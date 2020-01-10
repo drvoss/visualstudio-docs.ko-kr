@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 36b2691525eb66bf946317c1bb5254796d5cd639
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7b7ec05e8d849f7e802ab1c1ff4464e0552ab6d6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291226"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849866"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>서버 탐색기를 사용하여 스토리지 리소스 찾아보기 및 관리
 
@@ -40,7 +40,7 @@ Azure SDK 2.7부터 클라우드 탐색기를 사용해 Azure 리소스를 확�
 
 ## <a name="work-with-blob-resources"></a>Blob 리소스로 작업
 
-**Blob** 노드에는 선택한 저장소 계정에 대한 컨테이너 목록이 표시됩니다. Blob 컨테이너는 Blob 파일을 포함하고 있으며 이러한 Blob을 폴더와 하위 폴더로 구성할 수 있습니다. 자세한 내용은 [.NET에서 Blob Storage를 사용하는 방법](/azure/storage/blobs/storage-dotnet-how-to-use-blobs)(영문)을 참조하세요.
+**Blob** 노드는 선택된 스토리지 계정의 컨테이너 목록을 표시합니다. Blob 컨테이너는 Blob 파일을 포함하고 있으며 이러한 Blob을 폴더와 하위 폴더로 구성할 수 있습니다. 자세한 내용은 [.NET에서 Blob Storage를 사용하는 방법](/azure/storage/blobs/storage-dotnet-how-to-use-blobs)(영문)을 참조하세요.
 
 ### <a name="to-create-a-blob-container"></a>Blob 컨테이너를 생성하려면
 
@@ -122,7 +122,7 @@ Blob 데이터는 로컬로 캐시되고 Azure Blob Storage에서 Blob의 마지
 
 BLOB을 업로드하려면 BLOB 컨테이너 보기에서 볼 수 있도록 컨테이너가 열려 있는 동안 **BLOB 업로드** 단추를 선택합니다.
 
-하나 이상의 파일을 선택해 업로드할 수 있으며 모든 형식의 파일을 업로드할 수 있습니다. **Azure 활동 로그** 창에 업로드 진행률이 표시됩니다. Blob 데이터 작업 방법에 대한 자세한 내용은 [.NET에서 Azure Blob Storage를 사용하는 방법](https://go.microsoft.com/fwlink/p/?LinkId=267911)을 참조하세요.
+하나 이상의 파일을 선택해 업로드할 수 있으며 모든 형식의 파일을 업로드할 수 있습니다. **Azure 활동 로그** 창에 업로드 진행률이 표시됩니다. Blob 데이터 작업 방법에 대한 자세한 내용은 [.NET에서 Azure Blob Storage를 사용하는 방법](https://www.windowsazure.com/develop/net/how-to-guides/blob-storage/)을 참조하세요.
 
 ### <a name="to-view-logs-transferred-to-blobs"></a>Blob에 전송된 로그를 보려면
 
@@ -157,7 +157,7 @@ Blob을 선택한 다음 **Blob 열기** 단추를 선택합니다.
 
 ![큐 보기](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC651470.png)
 
-스토리지 서비스 큐에 대한 자세한 내용은 [.NET을 사용하여 Azure Queue Storage 시작](https://go.microsoft.com/fwlink/?LinkID=264702)을 참조하세요. 스토리지 서비스 큐의 웹 서비스에 대한 자세한 내용은 [큐 서비스 개념](https://go.microsoft.com/fwlink/?LinkId=264788)을 참조하세요. Visual Studio를 사용하여 Storage 서비스 큐에 메시지를 보내는 방법에 대한 자세한 내용은 [Storage 서비스 큐에 메시지 보내기](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues)를 참조하세요.
+스토리지 서비스 큐에 대한 자세한 내용은 [.NET을 사용하여 Azure Queue Storage 시작](https://www.windowsazure.com/develop/net/how-to-guides/queue-service/)을 참조하세요. 스토리지 서비스 큐의 웹 서비스에 대한 자세한 내용은 [큐 서비스 개념](https://msdn.microsoft.com/library/windowsazure/dd179353.aspx)을 참조하세요. Visual Studio를 사용하여 Storage 서비스 큐에 메시지를 보내는 방법에 대한 자세한 내용은 [Storage 서비스 큐에 메시지 보내기](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues)를 참조하세요.
 
 > [!NOTE]
 > 스토리지 서비스 큐는 Azure Service Bus 큐와 구별됩니다. Service Bus 큐에 대한 자세한 내용은 [Service Bus 큐, 항목 및 구독](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)을 참조하세요.
@@ -213,7 +213,7 @@ Azure Table Storage는 많은 양의 구조화된 데이터를 저장합니다. 
 1. 쿼리 작성기를 열려면 테이블을 열어 확인합니다.
 1. 테이블 보기의 도구 모음에서 **쿼리 작성기** 단추를 선택합니다.
 
-    그러면 **쿼리 작성기** 대화 상자가 나타납니다. 다음 그림에서는 쿼리 작성기에서 작성되고 있는 쿼리를 보여줍니다.
+    **쿼리 작성기** 대화 상자가 나타납니다. 다음 그림에서는 쿼리 작성기에서 작성되고 있는 쿼리를 보여줍니다.
 
     ![쿼리 작성기](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC652231.png)
 1. 쿼리 작성을 마친 경우 대화 상자를 닫습니다. 쿼리의 결과 텍스트 형식이 WCF Data Services 필터로 텍스트 상자에 나타납니다.

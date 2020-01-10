@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6fae0bb2cca6f6f8a4ffb4e5af58473d041a12eb
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b9583230a081cd1e9b543350b9ad998ab5d68e79
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301335"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851391"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Visual Studio 아키텍처 도구 사용 지침
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,4 +23,4 @@ ms.locfileid: "74301335"
 
  콘텐츠는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ALM Rangers에서 만든 것입니다 .이 그룹에는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 제품 팀, Microsoft 서비스, Microsoft의 전문 전문가 (Mvp) 및 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 커뮤니티 잠재 고객의 구성원이 있는 특수 그룹이 있습니다.
 
- [아키텍처 도구 지침을 다운로드 하려면 여기를 클릭 하세요.](https://go.microsoft.com/fwlink/?LinkID=191984)
+ [아키텍처 도구 지침을 다운로드 하려면 여기를 클릭 하세요.](https://archive.codeplex.com/?p=vsarchitectureguide)

@@ -19,12 +19,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4c8c83676c8f01891aed97e931581c65b799e61e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 89afba591899b626863b0157f6d9d955d46e46cf
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299785"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851922"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>오류: Windows 통합 인증을 사용할 수 없기 때문에 디버깅을 하지 못했습니다.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ ms.locfileid: "74299785"
   
          사용자 Access Control 대화 상자가 표시되고 작업을 계속할 수 있는 권한이 있는지 묻습니다.  
   
-    3. **계속**을 클릭합니다.  
+    3. **Continue(계속)** 를 클릭합니다.  
   
          Windows 기능 대화 상자가 표시됩니다.  
   
@@ -119,5 +119,5 @@ ms.locfileid: "74299785"
   
 ## <a name="see-also"></a>참고 항목  
  [웹 응용 프로그램 디버깅: 오류 및 문제 해결](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
- [Microsoft Digest 인증](https://go.microsoft.com/fwlink/?LinkId=77938)   
+ [Microsoft Digest 인증](https://msdn2.microsoft.com/library/Aa378744.aspx)   
  [IIS 7.0 및 Visual Studio를 사용 하 여 Windows Vista에서 웹 응용 프로그램 실행](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)

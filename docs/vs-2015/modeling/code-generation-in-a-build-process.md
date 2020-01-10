@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ae28c59f9c5f19e87b833c90e7dbc6bf3b7497ea
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: bffaf0bcff0c0fc93201badeb01b95928edc2979
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297931"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850707"
 ---
 # <a name="code-generation-in-a-build-process"></a>빌드 프로세스의 코드 생성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -263,7 +263,7 @@ $(SolutionDir)과 같은 Visual Studio 매크로는 MSBuild에서 작동하지 �
 
  이러한 지시문은 MSBuild와 Visual Studio 호스트에서 모두 T4parameterValues의 값을 가져옵니다.
 
-## <a name="q--a"></a>Q & A
+## <a name="q--a"></a>Q&A
 
 **빌드 서버에서 템플릿을 변환 하려면 어떻게 해야 하나요? 코드를 체크 인하기 전에 이미 Visual Studio에서 템플릿을 변환 했습니다.**
 
@@ -284,5 +284,5 @@ $(SolutionDir)과 같은 Visual Studio 매크로는 MSBuild에서 작동하지 �
 T4 MSbuild 템플릿, $(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets의 유용한 안내서
 
 - [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)
-- [Visual Studio 시각화 및 모델링 SDK](https://go.microsoft.com/fwlink/?LinkID=185579)
+- [Visual Studio 시각화 및 모델링 SDK](https://www.visualstudio.com/)
 - [Oleg Sych: T4 이해: MSBuild 통합](https://github.com/olegsych/T4Toolbox)

@@ -25,12 +25,12 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d5884dcd3f9e3cb8f1910d2e23ec80f910ed2fc9
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 52c55b2cfdf000d91a83071b53e8e9450187b720
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301006"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852027"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>UML 모델링 프로젝트 및 다이어그램 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ UML 모델링은 소프트웨어 시스템을 이해하고 토론하며 디자�
  UML 모델링 다이어그램 및 레이어 다이어그램은 모델링 프로젝트 내에만 존재할 수 있습니다. 각 모델링 프로젝트에는 공유 UML 모델 및 여러 UML 다이어그램이 포함됩니다. 각 다이어그램은 모델의 부분 뷰입니다. UML 모델은 UML 다이어그램의 모든 요소를 포함하고 UML 모델 탐색기를 사용하여 볼 수 있습니다. 모델과 다이어그램 간의 관계에 대 한 자세한 내용은 [UML 모델 및 다이어그램 편집](../modeling/edit-uml-models-and-diagrams.md)을 참조 하세요. 버전 제어에서 프로젝트를 모델링 하는 방법에 대 한 자세한 내용은 [버전 제어에서 모델 및 다이어그램 관리](../modeling/manage-models-and-diagrams-under-version-control.md) 및 [모델링 솔루션 구조](../modeling/structure-your-modeling-solution.md) 를 참조 하세요.
 
 > [!NOTE]
-> 프로그램 코드를 시각화하는 데 사용되는 다른 종류의 다이어그램인 .NET 클래스 다이어그램도 있습니다. 자세한 내용은 [클래스 및 형식 디자인 및 보기](https://go.microsoft.com/fwlink/?LinkId=142231)를 참조 하세요.
+> 프로그램 코드를 시각화하는 데 사용되는 다른 종류의 다이어그램인 .NET 클래스 다이어그램도 있습니다. 자세한 내용은 [클래스 및 형식 디자인 및 보기](https://msdn.microsoft.com/library/ab7aty24.aspx)를 참조 하세요.
 
 ## <a name="CreatingModelingDiagrams"></a>모델링 프로젝트에서 다이어그램 만들기
  이 기능을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
@@ -129,7 +129,7 @@ UML 모델링은 소프트웨어 시스템을 이해하고 토론하며 디자�
     > [!NOTE]
     > 모델링 프로젝트는 **modeldefinition**이라는 모델 정의 폴더를 포함 합니다.
 
-2. **프로젝트** 메뉴에서 **기존 항목 추가**를 클릭 합니다.
+2. **프로젝트** 메뉴에서 **기존 항목 추가**를 클릭합니다.
 
 3. **기존 항목 추가** 대화 상자에서 다이어그램 파일을 찾고 파일을 선택한 다음 **추가**를 클릭 합니다.
 
@@ -153,7 +153,7 @@ UML 모델링은 소프트웨어 시스템을 이해하고 토론하며 디자�
 |**문제**|**컨트롤이**|**해결**|
 |---------------|----------------|--------------------|
 |모델링 프로젝트를 열거나 솔루션으로 로드할 수 없습니다.<br /><br /> 다음 메시지가 표시됩니다.<br /><br /> "솔루션의 프로젝트 중 하나 이상이 제대로 로드되지 않았습니다. 자세한 내용은 출력 창을 참조하세요."<br /><br /> 출력 창에는 다음과 같은 메시지가 표시됩니다.<br /><br /> "*ModelingProjectFilenameAndPath*: .modelproj: 오류: 인식할 수 없는 Guid 형식입니다."|모델링 프로젝트에 이름과 위치가 같은 프로젝트에 대한 참조가 있습니다.<br /><br /> 예를 들어 레이어가 이름과 위치가 같은 프로젝트에 연결되어 있습니다.|텍스트 편집기를 사용하여 모델링 프로젝트 파일을 열고 참조를 제거한 다음 모델링 프로젝트를 다시 열어 봅니다.<br /><br /> 이 문제를 방지하려면 동일한 이름을 가진 프로젝트에 대한 참조를 추가하지 않도록 합니다. 프로젝트 이름이 고유한지 확인합니다.|
-|다른 모델링 프로젝트 또는 솔루션의 다른 위치로 추가 또는 복사하거나 끌어온 요소가 다이어그램에 없습니다.<br /><br /> -또는-<br /><br /> 다이어그램을 열려고 할 때 다음 메시지가 표시됩니다.<br /><br /> -"이 프로젝트에 해당 정의가 없으므로 다이어그램의 일부 셰이프나 연결선이 누락 되었습니다. 다이어그램을 닫는 동안 모델에서 정의가 삭제되었거나 다이어그램이 해당 정의가 포함되지 않은 프로젝트로 복사되었습니다."<br /><br /> -또는-<br /><br /> -"이 문서는 다른 프로젝트에서 열렸습니다."|다이어그램 파일을 모델링 프로젝트에서 다른 모델링 프로젝트로 또는 솔루션의 다른 위치로 추가하거나 복사하거나 끌어왔습니다.|다이어그램 파일을 복사하려면 새 다이어그램을 만들고 소스 다이어그램에서 새 다이어그램으로 요소를 복사합니다.|
+|다른 모델링 프로젝트 또는 솔루션의 다른 위치로 추가 또는 복사하거나 끌어온 요소가 다이어그램에 없습니다.<br /><br /> 또는<br /><br /> 다이어그램을 열려고 할 때 다음 메시지가 표시됩니다.<br /><br /> -"이 프로젝트에 해당 정의가 없으므로 다이어그램의 일부 셰이프나 연결선이 누락 되었습니다. 다이어그램을 닫는 동안 모델에서 정의가 삭제되었거나 다이어그램이 해당 정의가 포함되지 않은 프로젝트로 복사되었습니다."<br /><br /> 또는<br /><br /> -"이 문서는 다른 프로젝트에서 열렸습니다."|다이어그램 파일을 모델링 프로젝트에서 다른 모델링 프로젝트로 또는 솔루션의 다른 위치로 추가하거나 복사하거나 끌어왔습니다.|다이어그램 파일을 복사하려면 새 다이어그램을 만들고 소스 다이어그램에서 새 다이어그램으로 요소를 복사합니다.|
 
 ## <a name="see-also"></a>참고 항목
  [UML 모델 및 다이어그램 편집](../modeling/edit-uml-models-and-diagrams.md) [모델링 솔루션 구조](../modeling/structure-your-modeling-solution.md)

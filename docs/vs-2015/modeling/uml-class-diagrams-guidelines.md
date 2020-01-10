@@ -17,12 +17,12 @@ caps.latest.revision: 56
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c170827825d772f4d97cd22f0b5754232e8d2257
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4f4fd6eed634da3aea956cddca8d2e1ff6220a94
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297291"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850197"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>UML 클래스 다이어그램: 지침
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Visual Studio에서는 *UML 클래스 다이어그램* 을 사용 하 여 데이
  이 기능을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
 
 > [!NOTE]
-> 이 항목에서는 UML 클래스 다이어그램에 대해 설명합니다. 이외에도 프로그램 코드를 시각화하는 데 사용하기 위해 만들 수 있는 다른 종류의 클래스 다이어그램이 있습니다. [클래스 및 형식 디자인 및 보기](https://go.microsoft.com/fwlink/?LinkId=142231)를 참조 하세요.
+> 이 항목에서는 UML 클래스 다이어그램에 대해 설명합니다. 이외에도 프로그램 코드를 시각화하는 데 사용하기 위해 만들 수 있는 다른 종류의 클래스 다이어그램이 있습니다. [클래스 및 형식 디자인 및 보기](https://msdn.microsoft.com/library/ab7aty24.aspx)를 참조 하세요.
 
 ## <a name="Using"></a>UML 클래스 다이어그램 사용
  다음과 같은 다양한 용도로 UML 클래스 다이어그램을 사용할 수 있습니다.
@@ -194,7 +194,7 @@ Visual Studio에서는 *UML 클래스 다이어그램* 을 사용 하 여 데이
 
  `[1]`
 
- 지정된 형식의 단일 값. 이 값이 기본값입니다.
+ 지정된 형식의 단일 값. 이것이 기본값입니다.
 
  `[0..1]`
 
@@ -227,7 +227,7 @@ Visual Studio에서는 *UML 클래스 다이어그램* 을 사용 하 여 데이
 
  다른 모든 형식에서 액세스할 수 있습니다.
 
- **Private**
+ **전용**
 
  **-**
 
@@ -239,7 +239,7 @@ Visual Studio에서는 *UML 클래스 다이어그램* 을 사용 하 여 데이
 
  이 형식을 포함하는 패키지 및 형식을 명시적으로 가져오는 패키지에서만 액세스할 수 있습니다. [네임 스페이스 및 패키지 정의](#Packages)를 참조 하세요.
 
- **Protected**
+ **보호됨**
 
  **#**
 
@@ -262,7 +262,7 @@ visibility attribute-name : Type
 visibility operation-name (parameter1 : Type1, ...) : Type
 ```
 
- 예를 들면 다음과 같습니다.
+ 예를 들면 다음과 같습니다.:
 
 ```
 + AddItem (item : MenuItem, quantity : Integer) : Boolean
@@ -289,7 +289,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
  그러나 **속성** 창에서 **Static** 및 **is Abstract** 속성만 설정할 수 있습니다.
 
 #### <a name="full-signature"></a>전체 시그니처
- 특성 또는 작업의 시그니처를 편집하는 경우 줄의 끝과 각 매개 변수 뒤에 몇 가지 추가 속성이 나타날 수 있습니다. 이러한 속성은 중괄호 {…} 안에 포함되어 있으며 편집하거나 추가할 수 있습니다. 예를 들면 다음과 같습니다.
+ 특성 또는 작업의 시그니처를 편집하는 경우 줄의 끝과 각 매개 변수 뒤에 몇 가지 추가 속성이 나타날 수 있습니다. 이러한 속성은 중괄호 {…} 안에 포함되어 있으며 편집하거나 추가할 수 있습니다. 예를 들면 다음과 같습니다.:
 
 ```
 + AddItems (items: MenuItem [1..*] {unique, ordered})
@@ -322,7 +322,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
  특성이 다른 특성의 값 또는 연결에서 계산됩니다.
 
- 특성 이름 앞에 "/"가 나타납니다. 예를 들면 다음과 같습니다.
+ 특성 이름 앞에 "/"가 나타납니다. 예를 들면 다음과 같습니다.:
 
 ```
 /TotalPrice: Integer

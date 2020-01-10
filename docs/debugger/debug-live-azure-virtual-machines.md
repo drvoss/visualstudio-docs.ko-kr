@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 52ce973f1521f3ca9ba83513f6711287c49db7bb
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: ef314cf78c685251496274309af91e3bb2108a1b
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415770"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776114"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>스냅샷 디버거를 사용하여 Azure Virtual Machines 및 Azure Virtual Machine Scale Sets의 라이브 ASP.NET 앱 디버그
 
@@ -43,6 +43,9 @@ snappoint 및 logpoint는 중단점과 유사하지만, 중단점과 달리 snap
   * .NET Framework 4.6.1 이상에서 실행되는 ASP.NET 애플리케이션
   * Windows의 .NET Core 2.0 이상에서 실행되는 ASP.NET Core 애플리케이션
 
+  > [!NOTE]
+  >  32 비트 Windows에서 실행 되는 Visual Studio Enterprise는 스냅숏을 볼 수 없습니다.
+
 ## <a name="open-your-project-and-start-the-snapshot-debugger"></a>프로젝트 열기 및 스냅샷 디버거 시작
 
 1. 스냅샷 디버그할 프로젝트를 엽니다.
@@ -50,7 +53,7 @@ snappoint 및 logpoint는 중단점과 유사하지만, 중단점과 달리 snap
     > [!IMPORTANT]
     > 디버그를 스냅숏 하려면 Azure Virtual Machine\Virtual Machine Scale Set 서비스에 게시 된 *동일한 버전의 소스 코드* 를 열어야 합니다.
 
-1. **디버그 > 스냅숏 디버거 연결...** 을 선택합니다. 웹 앱이 배포 된 Azure Virtual Machine\Virtual Machine Scale Set 및 Azure storage 계정을 선택 하 고 **연결**을 클릭 합니다. 스냅숏 디버거 [Azure Kubernetes Service](debug-live-azure-kubernetes.md) 및 [Azure App Service](debug-live-azure-applications.md)도 지원 합니다.
+1. **디버그 > 스냅숏 디버거 첨부**...를 선택 합니다. 웹 앱이 배포 된 Azure Virtual Machine\Virtual Machine Scale Set 및 Azure storage 계정을 선택 하 고 **연결**을 클릭 합니다. 스냅숏 디버거 [Azure Kubernetes Service](debug-live-azure-kubernetes.md) 및 [Azure App Service](debug-live-azure-applications.md)도 지원 합니다.
 
     ![디버그 메뉴에서 스냅샷 디버거 시작](../debugger/media/snapshot-debug-menu-attach.png)
 
@@ -61,7 +64,7 @@ snappoint 및 logpoint는 중단점과 유사하지만, 중단점과 달리 snap
     > Virtual Machine Scale Sets에 대 한 **스냅숏 디버거 연결** 을 처음으로 선택 하는 경우 Virtual Machine Scale Sets의 각 인스턴스를 수동으로 업그레이드 해야 합니다.
 
     > [!NOTE]
-    > (Visual Studio 2019 버전 16.2 이상) 스냅숏 디버거에서 Azure 클라우드 지원을 사용 하도록 설정 했습니다. 선택한 Azure 리소스 및 Azure Storage 계정이 모두 동일한 클라우드에서 사용 되는지 확인 합니다. 기업의 [azure 규정 준수](https://azure.microsoft.com/overview/trusted-cloud/) 구성에 대해 궁금한 사항이 있으면 Azure 관리자에 게 문의 하세요.
+    > (Visual Studio 2019 버전 16.2 이상) 스냅샷 디버거에서 Azure 클라우드 지원을 사용하도록 설정했습니다. 선택한 Azure 리소스 및 Azure Storage 계정이 모두 동일한 클라우드에서 사용되는지 확인합니다. 기업의 [Azure 규정 준수](https://azure.microsoft.com/overview/trusted-cloud/) 구성에 대해 궁금한 사항이 있으면 Azure 관리자에게 문의하세요.
 
     **모듈** 에 대 한 메타 데이터는 처음에 활성화 되지 않습니다. 웹 앱으로 이동 하면 **컬렉션 시작** 단추가 활성화 됩니다. Visual Studio가 이제 스냅샷 디버깅 모드입니다.
 
@@ -76,7 +79,7 @@ snappoint 및 logpoint는 중단점과 유사하지만, 중단점과 달리 snap
 
 ## <a name="set-a-snappoint"></a>snappoint 설정
 
-1. 코드 편집기에서 관심 있는 코드 줄 옆의 왼쪽 여백을 클릭 하 여 snappoint를 설정 합니다. 실행 되는 것을 알고 있는 코드 인지 확인 합니다.
+1. 코드 편집기에서 관심있는 코드 줄 옆의 왼쪽 여백을 클릭하여 snappoint를 설정합니다. 실행될 것을 알고 있는 코드인지 확인합니다.
 
     ![snappoint 설정](../debugger/media/snapshot-set-snappoint.png)
 
@@ -89,7 +92,7 @@ snappoint 및 logpoint는 중단점과 유사하지만, 중단점과 달리 snap
 
 ## <a name="take-a-snapshot"></a>스냅샷 가져오기
 
-Snappoint가 설정 되 면 웹 사이트의 브라우저 보기로 이동 하 여 표시 된 코드 줄을 실행 하거나 사용자가 사이트 사용 중 하나를 생성할 때까지 대기 하 여 수동으로 스냅숏을 생성할 수 있습니다.
+snappoint가 설정되면 웹 사이트의 브라우저 보기로 이동하여 표시된 코드 줄을 실행하여 수동으로 스냅샷을 생성하거나 사용자가 사이트 사용 중 하나를 생성할 때까지 대기할 수 있습니다.
 
 ## <a name="inspect-snapshot-data"></a>스냅샷 데이터 검사
 
@@ -103,7 +106,7 @@ Snappoint가 설정 되 면 웹 사이트의 브라우저 보기로 이동 하 �
 
     이 보기에서 변수를 가리켜 DataTips를 보고, **로컬**, **조사식** 및 **호출 스택** 창을 사용하고, 식을 평가할 수도 있습니다.
 
-    웹 사이트 자체는 여전히 라이브 상태 이며 최종 사용자는 영향을 받지 않습니다. 기본적으로 snappoint당 하나의 스냅샷만 캡처됩니다. 하나의 스냅샷이 캡처되면 해당 snappoint가 꺼집니다. snappoint에서 또 하나의 스냅샷을 캡처하려면 **컬렉션 업데이트**를 클릭하여 snappoint를 다시 켤 수 있습니다.
+    웹 사이트 자체는 여전히 라이브 상태이며 최종 사용자는 영향을 받지 않습니다. 기본적으로 snappoint당 하나의 스냅샷만 캡처됩니다. 하나의 스냅샷이 캡처되면 해당 snappoint가 꺼집니다. snappoint에서 또 하나의 스냅샷을 캡처하려면 **컬렉션 업데이트**를 클릭하여 snappoint를 다시 켤 수 있습니다.
 
 앱에 snappoint를 더 추가하고 **컬렉션 업데이트** 단추로 켤 수도 있습니다.
 
@@ -111,7 +114,7 @@ Snappoint가 설정 되 면 웹 사이트의 브라우저 보기로 이동 하 �
 
 ## <a name="set-a-conditional-snappoint"></a>조건부 snappoint 설정
 
-앱에서 특정 상태를 다시 만드는 것이 어려운 경우 조건부 snappoint 사용을 고려 합니다. 조건부 snappoint는 검사할 특정 값이 변수에 포함 되어 있는 경우와 같이 스냅숏을 만들 시기를 제어 하는 데 도움이 됩니다. 조건은 식, 필터 또는 적중 횟수를 사용하여 설정할 수 있습니다.
+앱에서 특정 상태를 다시 만드는 것이 어려운 경우 조건부 snappoint 사용을 고려합니다. 조건부 snappoint는 검사할 특정 값이 변수에 포함되어 있는 경우와 같이 스냅샷을 만들 시기를 제어하는 데 도움이 됩니다. 조건은 식, 필터 또는 적중 횟수를 사용하여 설정할 수 있습니다.
 
 #### <a name="to-create-a-conditional-snappoint"></a>조건부 snappoint를 만들려면
 

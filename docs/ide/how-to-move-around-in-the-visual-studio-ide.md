@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Window.NextDocumentWindowNav
 - IDE navigator
 ms.assetid: 6c36b6eb-c93f-496b-af08-4199f7afd8bd
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3aa39c1c9748eb3a9270a66a3a6bbcb43fdcea2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2febdedf5cf472132de936c37cad787df3d77518
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645839"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590997"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>방법: Visual Studio IDE에서 이동
 
@@ -92,7 +92,7 @@ Visual Studio의 거의 모든 메뉴 명령에는 바로 가기 키가 있습�
     > [!TIP]
     > **활성 도구 창** 목록을 이동하는 순서를 반대로 하려면 **Shift**+**Alt** 키를 누른 상태에서 **F7** 키를 누릅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [창 레이아웃 사용자 지정](../ide/customizing-window-layouts-in-visual-studio.md)
 - [기본 바로 가기 키](../ide/default-keyboard-shortcuts-in-visual-studio.md)

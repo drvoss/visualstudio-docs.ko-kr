@@ -6,15 +6,15 @@ helpviewer_keywords:
 - agents, requirements
 - controllers, requirements
 ms.assetid: 372d97ce-12e4-46a9-9863-da508adba68f
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d33fb01bf931a2f7f3585197151f167c79575da6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 39b174b0b134fdfdf26570565aa6aa756ba43c92
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659928"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588644"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>부하 테스트에 대한 테스트 컨트롤러 및 테스트 에이전트 요구 사항
 
@@ -59,6 +59,6 @@ Visual Studio를 실행하는 서버는 네트워크에 안정적으로 연결�
 
 에이전트 컴퓨터를 모니터링하면 테스트 중에 실행되고 늘어나거나 줄어든 *QTAgent\*.exe* 프로세스를 관찰함으로써 필요한 리소스를 결정할 수 있습니다. *QTAgent\*.exe* 프로세스의 가장 일반적인 병목 현상은 CPU 사용률입니다. CPU 사용률이 지속적으로 90퍼센트 이상을 유지한다면 에이전트의 현재 부하량이 많은 것입니다. 그 다음의 일반적인 병목 현상은 메모리 사용량입니다. 까다로운 테스트의 경우 이러한 리소스를 모니터링함으로써 컴퓨터 리소스를 늘려야 할지 또는 테스트를 다른 방법으로 배포해야 할지를 손쉽게 결정할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [테스트 에이전트 설치 및 구성](../test/lab-management/install-configure-test-agents.md)

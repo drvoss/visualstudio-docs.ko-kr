@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Output window
 - Toolbox, removing controls
 ms.assetid: d8931d88-250e-4db4-963f-2c5b3e99b45f
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 442cac32e0a7103dc573cad707b53ced936c9907
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: be028af8ab9f458c1fadad6f8b2fcbd6aaa49a04
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655767"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567985"
 ---
 # <a name="output-window"></a>출력 창
 
@@ -73,7 +73,7 @@ C++에서 경고 및 오류가 **출력** 창에서 표시되고 계산되는 �
 
 **출력** 창에서 자동 스크롤을 사용하고 마우스나 화살표 키로 이동하면 자동 스크롤이 중지됩니다. 자동 스크롤을 다시 시작하려면 **Ctrl**+**End**를 누릅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [출력 창의 진단 메시지](../../debugger/diagnostic-messages-in-the-output-window.md)
 - [방법: 출력 창 제어](https://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)

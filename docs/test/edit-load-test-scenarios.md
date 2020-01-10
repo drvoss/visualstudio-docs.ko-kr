@@ -7,15 +7,15 @@ helpviewer_keywords:
 - load tests, user activities
 - load tests, modeling scenarios
 ms.assetid: fec04f2e-bf38-4d44-b2ec-fa50f58fd0d9
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 944b0bf52cd6a7c3459f0be2a06b437796f57b37
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8fa323d275628fe580763709884552754acfba81
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665036"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593241"
 ---
 # <a name="edit-load-test-scenarios"></a>부하 테스트 시나리오 편집
 
@@ -57,7 +57,7 @@ ms.locfileid: "72665036"
 |**시나리오에서 지연 설정 구성:** **부하 테스트 편집기**와 **속성** 창을 사용하여 부하 테스트에서 시나리오를 시작하기 전에 지연을 지정할 수 있습니다. **지연 시작 시간** 속성을 사용해야 하는 예로는 다른 시나리오가 사용하는 항목을 만들기 시작하는 시나리오가 필요한 경우를 들 수 있습니다. 항목을 사용하는 시나리오를 지연하여 항목을 만드는 시나리오에 일부 데이터를 만들 시간을 부여할 수 있습니다.|-   [시나리오 시작 시간 지연 구성](../test/configure-scenario-start-delays.md)|
 |**부하 테스트 시나리오에서 사용할 원격 머신 지정:** 부하 테스트를 만든 후에 부하 테스트 시나리오의 속성을 편집하여 포함할 테스트 에이전트를 나타낼 수 있습니다. 자세한 내용은 [테스트 컨트롤러 및 테스트 에이전트](configure-test-agents-and-controllers-for-load-tests.md)를 참조하세요.|-   [방법: 사용할 테스트 에이전트 지정](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md)|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [부하 테스트 편집](../test/edit-load-tests.md)
 - [부하 테스트 시나리오 속성](../test/load-test-scenario-properties.md)

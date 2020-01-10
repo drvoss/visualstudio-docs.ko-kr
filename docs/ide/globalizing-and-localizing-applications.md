@@ -10,17 +10,17 @@ helpviewer_keywords:
 - world-ready applications
 - international applications [Visual Studio]
 ms.assetid: 4d9815ae-3e80-4b4d-933d-f8309aee18d5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 886c31eb76a2cd440f1f8189aaacf592e43d34fa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f9c6934c816574796d59f978c3d2f37f590cf578
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603452"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565125"
 ---
 # <a name="develop-globalized-and-localized-apps"></a>세계화 및 지역화된 앱 개발
 
@@ -48,7 +48,7 @@ Visual Studio를 사용하여 아랍어 및 히브리어와 같이 오른쪽에�
 > [!NOTE]
 > 콘솔 앱에는 양방향 언어에 대한 텍스트 지원이 포함되지 않습니다. 이는 Windows가 콘솔 애플리케이션과 작동하는 방식 때문입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio에서 양방향 언어에 대한 지원](use-bidirectional-languages.md)
 - [.NET 앱 세계화 및 지역화](/dotnet/standard/globalization-localization/)

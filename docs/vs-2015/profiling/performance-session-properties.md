@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: af214f6a29e12dcdf2fe8bd2de75e05283894922
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cd521a853d9ec8c1a3fee8e50e87217621a73a89
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74290119"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848160"
 ---
 # <a name="performance-session-properties"></a>성능 세션 속성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "74290119"
   
  **Requirements**  
   
-- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]에서 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]에서 [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
   **성능 마법사**를 실행하거나 세션을 수동으로 만드는 방법으로 **성능 세션**을 만듭니다. **성능 세션**을 만들고 나면 **성능 탐색기**에 **성능 세션**이 표시됩니다.  
   
@@ -38,7 +38,7 @@ ms.locfileid: "74290119"
 ## <a name="general"></a>일반  
  이러한 설정을 사용하면 프로파일링 방법을 선택하고, .NET 개체 컬렉션 및 수명 데이터를 추가하고, 기본 보고서 위치 및 이름 지정 규칙을 지정할 수 있습니다.  
   
- 자세한 내용은 다음을 참조하십시오.  
+ 자세한 내용은  항목을 참조하세요.  
   
  [방법: 수집 방법 선택](../profiling/how-to-choose-collection-methods.md)  
   
@@ -77,7 +77,7 @@ ms.locfileid: "74290119"
 ## <a name="instrumentation"></a>계측  
  이러한 설정을 사용하면 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 웹 페이지에서 JScript 코드의 성능 데이터를 수집하고 계측 프로세스 전이나 후에 발생하도록 할 **계측 전** 및 **계측 후** 이벤트를 지정할 수 있습니다.  
   
- 자세한 내용은 다음을 참조하십시오.  
+ 자세한 내용은  항목을 참조하세요.  
   
  [방법: 웹 페이지에서 JavaScript 코드 프로파일링](../profiling/how-to-profile-javascript-code-in-web-pages.md)  
   
@@ -89,9 +89,9 @@ ms.locfileid: "74290119"
  자세한 내용은 [방법: CPU 카운터 데이터 수집](../profiling/how-to-collect-cpu-counter-data.md)을 참조하세요.  
   
 ## <a name="windows-events"></a>Windows 이벤트  
- 프로파일링 중에 이벤트 추적 공급자의 데이터를 수집할 수 있습니다. VSPerfReport.exe 명령줄 도구 `/calltrace` 옵션을 사용하면 데이터를 확인할 수 있습니다. ETW(Windows용 이벤트 추적)에 대한 자세한 내용은 [이벤트 추적 정보](https://go.microsoft.com/fwlink/?linkid=90752)를 참조하세요.  
+ 프로파일링 중에 이벤트 추적 공급자의 데이터를 수집할 수 있습니다. VSPerfReport.exe 명령줄 도구 `/calltrace` 옵션을 사용하면 데이터를 확인할 수 있습니다. ETW(Windows용 이벤트 추적)에 대한 자세한 내용은 [이벤트 추적 정보](https://msdn2.microsoft.com/library/aa363668.aspx)를 참조하세요.  
   
- 자세한 내용은 다음을 참조하십시오.  
+ 자세한 내용은  항목을 참조하세요.  
   
  [방법: ETW(Windows용 이벤트 추적) 데이터 수집](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)  
   
@@ -105,7 +105,7 @@ ms.locfileid: "74290119"
 ## <a name="advanced"></a>고급  
  이러한 설정을 사용하면 [VSInstr](../profiling/vsinstr.md) 명령줄 프로파일링 도구의 옵션을 하나 이상 지정하여 계측 프로세스에 옵션을 추가할 수 있습니다. 애플리케이션이 여러 버전을 사용하는 경우에는 프로파일링할 공용 런타임 버전을 지정할 수도 있습니다.  
   
- 자세한 내용은 다음을 참조하십시오.  
+ 자세한 내용은  항목을 참조하세요.  
   
  [방법: .NET Framework 런타임 지정](../profiling/how-to-specify-the-dotnet-framework-runtime.md)  
   
@@ -114,4 +114,4 @@ ms.locfileid: "74290119"
 ## <a name="see-also"></a>참고 항목  
  [개요](../profiling/overviews-performance-tools.md)   
  [성능 세션 구성](../profiling/configuring-performance-sessions.md)   
- [데이터 컬렉션 제어](../profiling/controlling-data-collection.md)
+ [데이터 수집 제어](../profiling/controlling-data-collection.md)

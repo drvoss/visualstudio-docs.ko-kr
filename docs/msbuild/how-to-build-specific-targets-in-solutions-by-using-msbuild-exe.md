@@ -7,17 +7,17 @@ helpviewer_keywords:
 - msbuild.exe, building specific targets in a solution
 - MSBuild, msbuild.exe
 ms.assetid: f46feb9b-4c16-4fec-b6e1-36a959692ba3
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34c04d12ccc17424a2f938c04751d4e3d4c9f05f
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 921b5d2d4aad7cfe48b7f6cc9cb802fde9520e19
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263785"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585260"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>방법: MSBuild.exe를 사용하여 솔루션의 특정 대상 빌드
 *MSBuild.exe*를 사용하여 솔루션에서 특정 프로젝트의 특정 대상을 빌드할 수 있습니다.
@@ -41,7 +41,7 @@ msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder
 
 이 내부 보기가 필요하지 않으면 이 환경 변수 설정을 사용하여 빌드하지 않습니다. 이 설정은 솔루션에서 프로젝트를 빌드하는 문제가 발생할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [명령줄 참조](../msbuild/msbuild-command-line-reference.md)
 - [MSBuild 참조](../msbuild/msbuild-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

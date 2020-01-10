@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Options dialog box, international settings
 - languages, specifying default
 ms.assetid: e3a8815c-6995-4099-8e88-34f91fad55b2
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e55c0e81877c2735571705a2b2d2529b0fa3a74
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1526e1c49636f4883392caa63966714625d066d6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666996"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595516"
 ---
 # <a name="options-dialog-box-environment--international-settings"></a>옵션 대화 상자: 환경 \> 국가별 설정
 
@@ -35,6 +35,6 @@ ms.locfileid: "72666996"
 > [!CAUTION]
 > 여러 언어가 설치된 시스템에서 Visual C++ 빌드 도구(cl.exe, link.exe, nmake.exe, bscmake.exe 및 관련 파일)는 이 설정의 영향을 받지 않습니다. 이러한 도구는 마지막으로 설치된 언어 버전을 사용합니다. Visual C++ 빌드 도구에서는 위성 DLL 모델을 사용하지 않으므로, 이전에 설치된 언어의 빌드 도구를 덮어씁니다.
 
-### <a name="see-also"></a>참고 항목
+### <a name="see-also"></a>참조
 
 - [언어 팩 설치](../../install/install-visual-studio.md#step-6---install-language-packs-optional)

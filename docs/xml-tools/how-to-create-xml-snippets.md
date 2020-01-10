@@ -3,17 +3,17 @@ title: '방법: XML 조각 만들기'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb511ba6f2eea9c56be4e826c3b689856c22214a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: df3c2592036f085fcf89d80bcefb1a469b3c1e15
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645930"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592752"
 ---
 # <a name="how-to-create-xml-snippets"></a>방법: XML 조각 만들기
 
@@ -56,7 +56,7 @@ XML 편집기를 사용 하 여 새 XML 조각을 만들 수 있습니다. 이 �
 </SnippetTypes>
 ```
 
-@No__t_0 형식은 조각 **삽입** 명령을 호출할 때 코드 조각이 나타나는지 여부를 결정 합니다. @No__t_0 형식은 **감싸기** 명령을 호출할 때 코드 조각이 나타나는지 여부를 결정 합니다.
+`Expansion` 형식은 조각 **삽입** 명령을 호출할 때 코드 조각이 나타나는지 여부를 결정 합니다. `SurroundsWith` 형식은 **감싸기** 명령을 호출할 때 코드 조각이 나타나는지 여부를 결정 합니다.
 
 ### <a name="code-element"></a>Code 요소
 

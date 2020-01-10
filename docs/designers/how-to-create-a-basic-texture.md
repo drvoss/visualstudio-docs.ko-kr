@@ -3,17 +3,17 @@ title: '방법: 기본 질감 만들기'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0222e8bf-d29f-421b-9b1f-123d500fa179
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3313dd60775bc1136ebd79af6266be0ed4107ae
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 916be87824a86e96d6fcb791cf8181d70e1e8104
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635859"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589459"
 ---
 # <a name="how-to-create-a-basic-texture"></a>방법: 기본 질감 만들기
 
@@ -87,6 +87,6 @@ ms.locfileid: "72635859"
 
 다음 단계로 이 질감에 대한 MIP 수준을 생성할 수 있습니다. 자세한 내용은 [방법: MIP 수준 만들기 및 수정](../designers/how-to-create-and-modify-mip-levels.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Image Editor](../designers/image-editor.md)

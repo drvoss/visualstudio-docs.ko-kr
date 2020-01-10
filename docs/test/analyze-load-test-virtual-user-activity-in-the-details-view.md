@@ -8,15 +8,15 @@ helpviewer_keywords:
 - virtual user activity chart
 - load test, virtual user activity chart
 ms.assetid: 63f4bd42-3cfb-4eee-af68-e8334976539e
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bba807eae2a7767b9b4271d0df48e962a2113285
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0289ff0d4a20eacc4f6801d9300d39df594bc79e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665364"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591237"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>부하 테스트 분석기의 세부 정보 뷰에서 부하 테스트 가상 사용자 동작 분석
 
@@ -59,7 +59,7 @@ ms.locfileid: "72665364"
 |**가상 사용자 활동 데이터가 포함된 부하 테스트 결과 보기:** 부하 테스트를 만들고, 구성하고, 완료한 후에는 **가상 사용자 동작 차트**를 사용하여 가상 사용자 작동 데이터를 볼 수 있습니다.|-   [부하 테스트 결과 분석](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [방법: 부하 테스트 중에 가상 사용자가 수행하는 작업 분석](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
 |**부하 테스트에서 성능 문제 격리:** **가상 사용자 작업 차트**를 사용하여 부하 테스트에서 성능 문제를 격리할 수 있습니다.|-   [연습: 가상 사용자 작업 차트를 사용하여 문제 격리](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [부하 테스트 결과 분석](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [테이블 뷰에서 부하 테스트 결과 및 오류 분석](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)

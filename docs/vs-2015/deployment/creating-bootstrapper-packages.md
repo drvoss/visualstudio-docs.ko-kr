@@ -21,12 +21,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f90344c156ea6c012c6ac086ffa40bf30e78a682
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: daf72a4466cd0f02eb6ef3a357276ed690fd26bf
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300730"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845528"
 ---
 # <a name="creating-bootstrapper-packages"></a>부트스트래퍼 패키지 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ ms.locfileid: "74300730"
 \Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
 ```  
   
- or  
+ 또는  
   
 ```  
 \Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
@@ -128,4 +128,4 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
  [방법: ClickOnce 애플리케이션을 사용하여 필수 조건 설치](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [필수 조건 대화 상자](../ide/reference/prerequisites-dialog-box.md)   
  [제품 및 패키지 스키마 참조](../deployment/product-and-package-schema-reference.md)   
- [Visual Studio 2005 부트스트래퍼를 사용하여 설치 시작](https://go.microsoft.com/fwlink/?LinkId=107537)
+ [Visual Studio 2005 부트스트래퍼를 사용하여 설치 시작](https://msdn.microsoft.com/magazine/cc163899.aspx)

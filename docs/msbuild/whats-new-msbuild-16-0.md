@@ -2,18 +2,18 @@
 title: MSBuild 16.0의 새로운 기능 | Microsoft Docs
 ms.date: 03/11/2019
 ms.topic: conceptual
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 9fb23c8a48493056c9a37f510cefea3cc3374095
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3e6ecfc1c08f30eb0232f230d955967d95bc32ee
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777908"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566971"
 ---
 # <a name="whats-new-in-msbuild-160"></a>MSBuild 16.0의 새로운 기능
 
@@ -35,5 +35,5 @@ ms.locfileid: "62777908"
 
 MSBuild(및 Visual Studio)는 이제 .NET Framework 4.7.2를 대상으로 합니다. 새로운 MSBuild API 기능을 사용하려면 어셈블리도 업그레이드해야 하지만 기존 코드는 계속 작동합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [MSBuild](../msbuild/msbuild.md)

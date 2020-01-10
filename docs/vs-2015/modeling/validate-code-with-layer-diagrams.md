@@ -21,12 +21,12 @@ caps.latest.revision: 84
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 596711c5c59738d5356437bb761e80caeddfbd6b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 45b82ece15cfef4d313764027c0220453a6d4849
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301356"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845435"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>레이어 다이어그램에 대해 코드 유효성 검사
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "74301356"
 
   이 기능을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
 
-  Visual Studio의 열린 레이어 다이어그램 또는 명령 프롬프트에서 코드 유효성 검사를 수동으로 수행할 수 있습니다. 또한 로컬 빌드 또는 Team Foundation Build를 실행할 때 자동으로 코드 유효성 검사를 실행할 수도 있습니다. [Channel 9 비디오: 레이어 다이어그램을 사용 하 여 아키텍처 디자인 및 유효성 검사](https://go.microsoft.com/fwlink/?LinkID=252073)를 참조 하세요.
+  Visual Studio의 열린 레이어 다이어그램 또는 명령 프롬프트에서 코드 유효성 검사를 수동으로 수행할 수 있습니다. 또한 로컬 빌드 또는 Team Foundation Build를 실행할 때 자동으로 코드 유효성 검사를 실행할 수도 있습니다. [Channel 9 비디오: 레이어 다이어그램을 사용 하 여 아키텍처 디자인 및 유효성 검사](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture)를 참조 하세요.
 
 > [!IMPORTANT]
 > Team Foundation Build를 사용하여 레이어 유효성 검사를 실행하려면 빌드 서버에 동일한 버전의 Visual Studio를 설치해야 합니다.
@@ -227,7 +227,7 @@ ms.locfileid: "74301356"
 
 |**구문**|**설명**|
 |----------------|---------------------|
-|*Artifactn*(*artifacttypen*)|*Artifactn* 은 레이어 다이어그램의 레이어와 연결 된 아티팩트입니다.<br /><br /> *Artifacttypen* 은 **클래스** 또는 **메서드와**같은 *artifactn*의 형식입니다. 예를 들면 다음과 같습니다.<br /><br /> MySolution.MyProject.MyClass.MyMethod(메서드)|
+|*ArtifactN*(*ArtifactTypeN*)|*Artifactn* 은 레이어 다이어그램의 레이어와 연결 된 아티팩트입니다.<br /><br /> *Artifacttypen* 은 **클래스** 또는 **메서드와**같은 *artifactn*의 형식입니다. 예를 들면 다음과 같습니다.<br /><br /> MySolution.MyProject.MyClass.MyMethod(메서드)|
 |*NamespaceNameN*|네임스페이스의 이름입니다.|
 |*LayerNameN*|레이어 다이어그램에 있는 레이어의 이름입니다.|
 |*DependencyType*|*Artifact1* 와 *Artifact2*간의 종속성 관계 유형입니다. 예를 들어 *Artifact1* 에는 *Artifact2*와의 **호출** 관계가 있습니다.|

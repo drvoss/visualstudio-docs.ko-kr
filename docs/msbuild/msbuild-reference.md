@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, reference
 ms.assetid: 093395e1-70da-4f74-b34d-046c5e2b32e8
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9f3889cf1d9088f39b4efc4e4d01197ffaaaa77
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 9418143c9d93d960d3123868b89f24a97e1afafd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72912063"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593969"
 ---
 # <a name="msbuild-reference"></a>MSBuild 참조
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]용 빌드 시스템입니다. 다음 링크를 통해 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 참조 정보가 포함된 항목으로 이동할 수 있습니다.
@@ -70,7 +70,7 @@ ms.locfileid: "72912063"
 
  명령줄 스위치를 포함하는 *.rsp* 파일에 대해 설명합니다.
 
-- [추가 리소스](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild) [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 웹 사이트 및 뉴스 그룹의 링크를 제공합니다.
+- [추가 리소스](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild)[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 웹 사이트 및 뉴스 그룹의 링크를 제공합니다.
 
 - [WPF MSBuild 참조](../msbuild/wpf-msbuild-reference.md)
 
@@ -80,7 +80,7 @@ ms.locfileid: "72912063"
 
  올바르게 해석하려면 "이스케이프"해야 하는 문자의 목록을 제공합니다. 이스케이프 시퀀스는 뒤에 오는 내용이 대체 해석임을 나타내는 일련의 문자입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [MSBuild 개요](../msbuild/msbuild.md)
 - [Microsoft.Build.Evaluation](/dotnet/api/microsoft.build.evaluation)

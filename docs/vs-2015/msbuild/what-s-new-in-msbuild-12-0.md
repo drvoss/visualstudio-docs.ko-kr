@@ -9,17 +9,17 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9d088844a3d8c1137b762b541b0393f939cdc194
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ba733b7ef20c9a03ad19d9847a4046e4d72ebdef
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301291"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844462"
 ---
 # <a name="what39s-new-in-msbuild-120"></a>MSBuild 12.0의 새로운 기능
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-MSBuild는 이제 .NET Framework의 일부가 아니라 Visual Studio의 일부로 설치되었습니다. 현재 MSBuild 버전 번호는 12.0입니다. MSBuild를 개별적으로 설치하려면 [MSBuild 다운로드](https://go.microsoft.com/fwlink/?LinkId=309745)에서 설치 패키지를 다운로드하세요.  
+MSBuild는 이제 .NET Framework의 일부가 아니라 Visual Studio의 일부로 설치되었습니다. 현재 MSBuild 버전 번호는 12.0입니다. MSBuild를 개별적으로 설치하려면 [MSBuild 다운로드](https://www.microsoft.com/download/details.aspx?id=40760)에서 설치 패키지를 다운로드하세요.  
   
 ## <a name="changed-path"></a>변경된 경로  
  이제 MSBuild는 *%ProgramFiles%* 아래(예: C:\Program Files\MSBuild\\)에 직접 설치됩니다.  
@@ -41,5 +41,5 @@ MSBuild는 이제 .NET Framework의 일부가 아니라 Visual Studio의 일부�
   
 - `MSBuildToolsPath` 및 `MSBuildFrameworkToolsPath`는 32비트에 해당하는 `MSBuildToolsPath32` 및 `MSBuildFrameworkToolsPath32`를 갖고 있으며, 이는 32비트나 64비트 MSBuild가 사용되는 여부와 상관없이 항상 32비트 위치를 가리킵니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
 [MSBuild](msbuild.md)

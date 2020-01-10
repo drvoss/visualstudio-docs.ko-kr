@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1786c8c57c841744ed27b03e4969fe2bd21ce2c7
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 03a0eb6808b2298e0727492978d9beb7cfaf2216
+ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985189"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75678963"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>2단계: 보기 및 페이지 템플릿을 사용하여 Flask 앱 만들기
 
@@ -204,10 +204,6 @@ ms.locfileid: "72985189"
 대답: 항상 `render_template` 함수에 대한 첫 번째 인수에서 파일의 정확한 상대 경로를 식별하므로 페이지 템플릿 파일의 *.html* 확장명은 전적으로 선택 사항입니다. 그러나 Visual Studio(및 기타 편집기)는 일반적으로 *.html* 파일을 사용하여 코드 완성 및 구문 색 지정과 같은 기능을 제공하므로 페이지 템플릿이 엄격하게 HTML이 아니라는 사실보다 중요합니다.
 
 실제로 Flask 프로젝트로 작업할 때 Visual Studio는 편집 중인 HTML 파일이 실제로 Flask 템플릿인 경우를 자동으로 감지하고 특정 자동 완성 기능을 제공합니다. 예를 들어 Flask 페이지 템플릿 주석 `{#`을 입력하기 시작하면 Visual Studio에서 닫는 `#}` 문자를 자동으로 제공합니다. **선택 영역을 주석으로 처리** 및 **선택 영역의 주석 처리 제거** 명령(**편집** >  **고급** 메뉴 및 도구 모음)에서도 HTML 주석 대신 템플릿 주석을 사용합니다.
-
-### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>질문: 프로젝트를 실행하면 템플릿을 찾을 수 없다는 오류가 표시됩니다. 무엇이 문제인가요?
-
-대답: 템플릿을 찾을 수 없다는 오류가 표시되면 `INSTALLED_APPS` 목록에서 Flask 프로젝트의 *settings.py*에 앱을 추가했는지 확인하세요. 해당 항목이 없으면 Flask에서 앱의 *templates* 폴더를 찾을 수 없습니다.
 
 ### <a name="question-can-templates-be-organized-into-further-subfolders"></a>질문: 템플릿을 추가 하위 폴더로 구성할 수 있나요?
 

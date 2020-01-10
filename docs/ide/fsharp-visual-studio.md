@@ -5,17 +5,17 @@ ms.date: 07/11/2018
 ms.topic: reference
 helpviewer_keywords:
 - F# features [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 176504ceb7c80a36028e7d5f1806aa598cdf708e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 75ebee68bf76a4dd5419942f79a3207c29673134
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645361"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565242"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Visual F#을 사용하여 Visual Studio에서 개발
 
@@ -64,9 +64,9 @@ Visual Studio의 F#에서 다양한 프로젝트 및 항목 템플릿을 사용�
 |빌드|[프로젝트 디자이너, 빌드 페이지](reference/build-page-project-designer-csharp.md)|코드가 컴파일되는 방식을 제어할 수 있습니다.|
 |빌드 이벤트|[빌드 이벤트 페이지, 프로젝트 디자이너](reference/build-events-page-project-designer-csharp.md)|컴파일 전후에 실행할 명령을 지정할 수 있습니다.|
 |Debug|[프로젝트 디자이너, 디버그 페이지](reference/debug-page-project-designer.md)|디버깅하는 동안 애플리케이션 실행 방식을 제어할 수 있습니다. 사용할 명령 및 애플리케이션의 시작 디렉터리, 네이티브 코드 및 SQL과 같이 활성화하려는 특수한 디버깅 모드가 포함됩니다.|
-|패키지(.NET SDK에만 해당)|해당 사항 없음|NuGet 패키지로 게시하려는 경우 NuGet 패키지 메타데이터를 정의할 수 있습니다.|
+|패키지(.NET SDK에만 해당)|N/A|NuGet 패키지로 게시하려는 경우 NuGet 패키지 메타데이터를 정의할 수 있습니다.|
 |참조 경로|[프로젝트에서 참조 관리](managing-references-in-a-project.md)|코드가 사용하는 어셈블리를 검색할 위치를 지정할 수 있습니다.|
-|리소스(.NET SDK에만 해당)|해당 사항 없음|기본 리소스 파일을 생성하고 관리할 수 있습니다.|
+|리소스(.NET SDK에만 해당)|N/A|기본 리소스 파일을 생성하고 관리할 수 있습니다.|
 
 ### <a name="f-specific-settings"></a>F# - 특정 설정
 
@@ -169,7 +169,7 @@ Visual Studio 디버거에 대한 일반적인 정보는 [Visual Studio의 디�
 |테스트 프로젝트|코드를 테스트하는 데 도움이 되는 기능을 제공합니다.|아니요|
 |도구 상자|텍스트 또는 코드의 섹션 및 컨트롤과 같이 끌기 가능한 개체를 포함하는 탭을 표시합니다.|예|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [F# 가이드(.NET Framework)](/dotnet/fsharp/)
 - [Visual Studio에서 F# 시작](/dotnet/fsharp/get-started/get-started-visual-studio)

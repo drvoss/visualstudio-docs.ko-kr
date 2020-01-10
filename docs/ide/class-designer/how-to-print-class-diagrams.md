@@ -6,17 +6,17 @@ helpviewer_keywords:
 - printing [Visual Studio], class diagrams
 - class diagrams, printing
 ms.assetid: 62c87425-3446-41fb-943c-1f86397883c8
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 211cb0aab89dd148b408efaef9c40f5bc25c41aa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f259a36cb35b69954d99a2104903fb973930af42
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631561"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596699"
 ---
 # <a name="how-to-print-class-diagrams"></a>방법: 클래스 다이어그램 인쇄
 
@@ -30,7 +30,7 @@ Visual Studio의 인쇄 기능을 사용하여 클래스 다이어그램을 인�
 
 전체 클래스 다이어그램이 인쇄됩니다. 적절한 크기로 인쇄하려면 **페이지 설정** 대화 상자에서 설정을 조정해야 할 수도 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방법: 클래스 다이어그램 요소를 Microsoft Office 문서에 복사](how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md)
 - [방법: 클래스 다이어그램을 이미지로 내보내기](how-to-export-class-diagrams-as-images.md)

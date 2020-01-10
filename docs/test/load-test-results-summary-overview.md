@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Load Test Viewer, summary
 - load tests, summary in Load Test Viewer
 ms.assetid: 326b6c3c-5378-452b-8ca3-ba5a06ab3d41
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ba72bc9d4e63e1ccb1e6d8c05d20332880e19ea9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7df3324c2182c376cb9547a4192fca3e601b3dd5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652987"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584493"
 ---
 # <a name="load-test-results-summary-overview"></a>부하 테스트 결과 요약 개요
 
@@ -136,7 +136,7 @@ ms.locfileid: "72652987"
 
 요약의 바로 가기 메뉴에서 **인쇄**를 선택하면 부하 테스트 요약을 인쇄할 수 있습니다. 또한 요약의 바로 가기 메뉴에서 **인쇄 미리 보기**를 선택하여 인쇄 내용을 미리 볼 수 있으며, 미리 보기 화면에서 바로 인쇄할 수도 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [임계값 규칙 위반 분석](../test/analyze-threshold-rule-violations-in-load-tests.md)
 - [부하 테스트 결과 분석](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - output directory, changing
 ms.assetid: a8333c89-afb2-4b1d-b2e2-9146da852402
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 493de227174b60b4834c2732ddbf16a5586fa49e
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 732e48bf5cbea8534cc5c90ac5af80df0cc93e7b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71238183"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594385"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>방법: 빌드 출력 디렉터리 변경
 
@@ -58,7 +58,7 @@ ms.locfileid: "71238183"
 >
 > ![Visual Studio 2019의 빌드 구성 선택기](media/build-configuration-chooser.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [빌드 페이지, 프로젝트 디자이너(C#)](../ide/reference/build-page-project-designer-csharp.md)
 - [일반 속성 페이지(프로젝트)](/cpp/build/reference/general-property-page-project)

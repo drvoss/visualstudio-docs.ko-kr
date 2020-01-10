@@ -13,17 +13,17 @@ helpviewer_keywords:
 - ExcludeDeploymentUrl property
 - project file properties (MSBuild)
 ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fa726aa9f2055f7803f066607ee931550bdcafb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2797e8b51bba0e71db07ec748d7a6813183250fb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747361"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596192"
 ---
 # <a name="common-msbuild-project-properties"></a>일반적인 MSBuild 프로젝트 속성
 다음 표에서는 Visual Studio 프로젝트 파일에 정의되거나 MSBuild가 제공하는 *.targets* 파일에 포함된 자주 사용하는 속성을 보여 줍니다.
@@ -130,5 +130,5 @@ ms.locfileid: "72747361"
 | Win32Manifest | 최종 어셈블리에 포함해야 하는 매니페스트 파일의 이름입니다. 이 매개 변수는 `/win32Manifest` 컴파일러 스위치와 동일합니다. |
 | Win32Resource | 최종 어셈블리에 포함할 Win32 리소스의 파일 이름입니다. 이 매개 변수는 `/win32resource` 컴파일러 스위치와 동일합니다. |
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [일반적인 MSBuild 프로젝트 항목](../msbuild/common-msbuild-project-items.md)

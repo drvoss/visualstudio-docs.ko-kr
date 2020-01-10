@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Miscellaneous Files folder
 - files [Visual Studio], miscellaneous
 ms.assetid: 5b96640b-8efe-48a4-8d0a-1ae3f9587e44
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fb01d0ce09778866074cc8f303c3e4da60f0de1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 793500faf217c74772506b4b7394d926447ffd40
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668968"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585299"
 ---
 # <a name="miscellaneous-files"></a>기타 파일
 
@@ -48,7 +48,7 @@ Visual Studio 편집기를 사용하여 프로젝트 또는 솔루션의 파일�
 
 기타 파일을 열지 않은 경우에도 폴더가 나타나도록 **기타 파일** 폴더에 대한 표시 옵션을 설정할 수 있습니다. 솔루션 파일은 기타 파일 목록을 영구적으로 관리하지 않습니다. 사용자 단위 MRU(가장 최근에 사용한) 파일 목록을 저장할 수 있는 선택적 기능을 사용합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [프로젝트 또는 솔루션 없이 Visual Studio에서 코드 개발](../develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [솔루션 및 프로젝트](../../ide/solutions-and-projects-in-visual-studio.md)

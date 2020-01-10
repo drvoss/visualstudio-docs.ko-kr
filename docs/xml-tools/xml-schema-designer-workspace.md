@@ -3,17 +3,17 @@ title: XML 스키마 디자이너 작업 영역
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 588fa495-fe7f-4b16-8a9f-6b6b8d2d502a
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6e5efc4c192fbb9debeb9dd5f9ccf1eaec69efa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4cf86dd39e010424b25916deec8cdebd23ee1c1b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72608257"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592375"
 ---
 # <a name="xml-schema-designer-workspace-views"></a>XML 스키마 디자이너 작업 영역 보기
 
@@ -37,7 +37,7 @@ XML 스키마 디자이너(XSD 디자이너)는 XML 스키마를 탐색하는 �
 
 - XSD 탐색기에서 검색을 수행 하 고 요약 결과 창에서 **작업 영역에 선택한 노드 추가** 단추를 클릭 합니다. 자세한 내용은 [스키마 집합 검색](../xml-tools/searching-the-schema-set.md)을 참조 하세요.
 
-## <a name="switch-views"></a>뷰 전환
+## <a name="switch-views"></a>보기 전환
 
 뷰를 전환하려면 다음 중 하나를 사용합니다.
 
@@ -47,4 +47,4 @@ XML 스키마 디자이너(XSD 디자이너)는 XML 스키마를 탐색하는 �
 
 - 시작 뷰 페이지의 워터마크, 빈 콘텐츠 모델 뷰 또는 그래프 뷰의 워터마크
 
-- 바로 가기 키: **ctrl** +**1** , 그래프 뷰의 경우 **Ctrl** +**2** , 콘텐츠 모델 뷰의 경우 **ctrl** +**3** 입니다.
+- 바로 가기 키: **ctrl**+**1** , 그래프 뷰의 경우 **Ctrl**+**2** , 콘텐츠 모델 뷰의 경우 **ctrl**+**3** 입니다.

@@ -23,14 +23,14 @@ caps.latest.revision: 48
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1ed9a341e1b0f7247175e62aceafc6051f83e8f9
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d0763f2cf86d94f96f6f9c907ee306c731994f22
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300164"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852083"
 ---
-# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>How to: Add or Remove References By Using the Reference Manager
+# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>방법: 참조 관리자를 사용하여 참조 추가 또는 제거
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **참조 관리자** 대화 상자를 사용하여 사용자가 개발했거나 Microsoft 또는 타사에서 개발한 구성 요소에 대한 참조를 추가하고 관리할 수 있습니다. 유니버설 Windows 앱을 개발하는 경우 프로젝트에서 올바른 모든 Windows SDK DLL을 자동으로 참조합니다. .NET 애플리케이션을 개발하는 경우 프로젝트에서 자동으로 mscorlib.dll을 참조합니다. 일부 .NET API는 수동으로 추가해야 하는 구성 요소에서 노출됩니다. COM 구성 요소 또는 사용자 지정 구성 요소에 대한 참조를 수동으로 추가해야 합니다.
@@ -54,7 +54,7 @@ ms.locfileid: "74300164"
 - 찾아보기, 최근 항목 하위 그룹 포함
 
 ## <a name="assemblies-tab"></a>어셈블리 탭
- **어셈블리** 탭은 참조에 사용할 수 있는 .NET Framework 어셈블리를 모두 나열합니다. **어셈블리** 탭에는 GAC(전역 어셈블리 캐시)의 어셈블리는 표시되지 않습니다. GAC의 어셈블리는 런타임 환경의 일부이기 때문입니다. GAC에 등록된 어셈블리에 대한 참조가 포함된 애플리케이션을 배포하거나 복사하는 경우, 이 어셈블리는 로컬 복사 설정과 관계없이 애플리케이션과 함께 배포되거나 복사되지 않습니다. 자세한 내용은 [프로젝트의 참조 관리](https://go.microsoft.com/fwlink/?LinkId=238512)를 참조하세요.
+ **어셈블리** 탭은 참조에 사용할 수 있는 .NET Framework 어셈블리를 모두 나열합니다. **어셈블리** 탭에는 GAC(전역 어셈블리 캐시)의 어셈블리는 표시되지 않습니다. GAC의 어셈블리는 런타임 환경의 일부이기 때문입니다. GAC에 등록된 어셈블리에 대한 참조가 포함된 애플리케이션을 배포하거나 복사하는 경우, 이 어셈블리는 로컬 복사 설정과 관계없이 애플리케이션과 함께 배포되거나 복사되지 않습니다. 자세한 내용은 [프로젝트의 참조 관리](https://msdn.microsoft.com/library/ez524kew.aspx)를 참조하세요.
 
  EnvDTE 네임스페이스(EnvDTE, EnvDTE80, EnvDTE90, EnvDTE90a 또는 EnvDTE100)에 대한 참조를 수동으로 추가할 때는 속성 창에서 참조의 Interop 형식 포함 속성을 False로 설정합니다. 이 속성을 True로 설정하면 포함할 수 없는 특정 EnvDTE 속성으로 인해 빌드 문제가 발생할 수 있습니다.
 
@@ -209,7 +209,7 @@ ms.locfileid: "74300164"
     > [!NOTE]
     > 이 속성을 추가하면 빌드 실행이 느려질 수 있습니다.
 
-## <a name="recent"></a>최근
+## <a name="recent"></a>최근 항목
  어셈블리, COM, Windows 및 찾아보기 탭 각각은 최근에 프로젝트에 추가된 구성 요소의 목록을 열거하는 최근 항목 탭을 지원합니다.
 
 ## <a name="search"></a>검색

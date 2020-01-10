@@ -9,12 +9,12 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ac6ce00002e40c6d8bd1d5db65b8c7bb5e6bc7cd
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b3f38f519444de7876046baf242f74a18b8c5a59
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299837"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844365"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>UWP(유니버설 Windows 플랫폼)용 앱 개발
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "74299837"
 
 - [Windows 10](https://windows.microsoft.com/windows/downloads)
 
-- [Visual Studio 2015](https://go.microsoft.com/fwlink/p/?LinkId=526725). 유니버설 Windows 앱 개발 도구가 선택적 기능 목록에서 선택되었는지 확인합니다. 이러한 도구가 없으면 유니버설 앱을 만들 수 없습니다.
+- [Visual Studio 2015](https://visualstudio.microsoft.com/downloads/). 유니버설 Windows 앱 개발 도구가 선택적 기능 목록에서 선택되었는지 확인합니다. 이러한 도구가 없으면 유니버설 앱을 만들 수 없습니다.
 
   이 소프트웨어를 설치한 후에 개발에 대해 [Windows 10 디바이스를 사용하도록 설정](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) (영문)해야 합니다. 각 Windows 10 디바이스에 대한 개발자 라이선스는 더 이상 필요하지 않습니다.
 

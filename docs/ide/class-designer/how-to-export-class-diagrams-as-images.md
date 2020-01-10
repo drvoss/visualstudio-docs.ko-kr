@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - class diagrams, exporting as images
 ms.assetid: c57055c5-1340-449f-b9d3-ca6f87e2f69a
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bceb724784f70e3b1c527507eb7d837558c7d0f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ac469b913b03dec9389b3f44121c2e80d87d30b3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631736"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590139"
 ---
 # <a name="how-to-export-class-diagrams-as-images"></a>방법: 클래스 다이어그램을 이미지로 내보내기
 
@@ -37,7 +37,7 @@ ms.locfileid: "72631736"
 
 다른 문서에서 연결된 내보낸 이미지를 자동으로 업데이트하려면 Visual Studio에서 다이어그램을 다시 내보냅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방법: 클래스 다이어그램 인쇄](how-to-print-class-diagrams.md)
 - [클래스 다이어그램 작업](designing-and-viewing-classes-and-types.md)

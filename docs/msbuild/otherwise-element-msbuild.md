@@ -13,17 +13,17 @@ helpviewer_keywords:
 - <Otherwise> Element [MSBuild]
 - Otherwise Element [MSBuild]
 ms.assetid: de3997e9-1595-4263-a886-95530b56a319
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fee2dd064b556596f27ae2130697cdd9435d8185
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 460a02b3e2115c7ccb91258ffe960668e64fb363
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963743"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594844"
 ---
 # <a name="otherwise-element-msbuild"></a>Otherwise 요소(MSBuild)
 모든 `When` 요소가 `false`로 평가될 경우에만 실행할 코드 블록을 지정합니다.
@@ -60,7 +60,7 @@ ms.locfileid: "62963743"
 |-------------|-----------------|
 |[Choose](../msbuild/choose-element-msbuild.md)|자식 요소를 평가하여 실행할 코드의 한 섹션을 선택합니다.|
 
-## <a name="remarks"></a>주의
+## <a name="remarks"></a>설명
  `Choose` 요소에 `Otherwise` 요소가 1개만 있을 수 있으며 마지막 요소여야 합니다.
 
  `Choose`, `When` 및 `Otherwise` 요소는 몇 가지 가능한 대안 중에서 실행할 코드의 한 섹션을 선택하는 방법을 제공하기 위해 함께 사용됩니다. 자세한 내용은 [조건부 구문](../msbuild/msbuild-conditional-constructs.md)을 참조하세요.
@@ -113,6 +113,6 @@ ms.locfileid: "62963743"
 </Project>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [조건부 구문](../msbuild/msbuild-conditional-constructs.md)
 - [프로젝트 파일 스키마 참조](../msbuild/msbuild-project-file-schema-reference.md)

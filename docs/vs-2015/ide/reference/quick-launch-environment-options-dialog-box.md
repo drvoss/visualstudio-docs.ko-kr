@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2439f280ee590f1b13e339b69c6f3f147bb1ea39
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: abd8f8e9ee35c234a79af74199b11d5491e6fbee
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297798"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851631"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>옵션 대화 상자, 환경, 빠른 실행
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "74297798"
 |--------------|--------------|--------------------------|
 |가장 최근에 사용됨|@mru<br /><br /> 예를 들면 `@mru font`과 같습니다.|**가장 최근에 사용됨** 범주의 항목을 최대 5개까지 표시합니다.|
 |메뉴|@menu<br /><br /> 예를 들면 `@menu font`과 같습니다.|검색을 메뉴 항목으로 제한합니다.|
-|옵션|@opt<br /><br /> 예를 들면 `@opt font`과 같습니다.|검색을 **옵션** 대화 상자의 설정으로 제한합니다.|
+|Options|@opt<br /><br /> 예를 들면 `@opt font`과 같습니다.|검색을 **옵션** 대화 상자의 설정으로 제한합니다.|
 |문서|@doc<br /><br /> 예를 들면 `@doc font`과 같습니다.|열린 문서에 대해 검색 조건에 맞는 파일 이름 및 경로로 검색을 제한합니다. 그러나 파일 자체 내부의 텍스트는 검색하지 않습니다.|
 
 > [!NOTE]
@@ -47,7 +47,7 @@ ms.locfileid: "74297798"
 ## <a name="show-previous-results"></a>이전 결과 표시
  기본적으로 입력하는 검색어는 검색 세션 간에 지속되지 않습니다. 용어를 검색하고 **빠른 실행** 영역 바깥으로 커서를 움직인 후 다시 돌아가면 검색 문자열이 지워집니다. 검색 결과를 유지하려면 **옵션** 대화 상자로 이동하고 **빠른 실행**을 선택한 다음 **빠른 실행을 활성화하면 이전 검색의 검색 결과 표시** 확인란을 확인란을 선택합니다. 다음에 검색하고 빠른 실행 영역을 종료했다가 돌아오면 빠른 실행에서 마지막으로 사용된 검색어를 보유하고 검색 결과도 표시합니다.
 
- **빠른 실행** 사용과 관련한 가장 최근의 팁과 요령을 보려면 [Visual Studio 블로그](https://go.microsoft.com/fwlink/?LinkId=236054)를 참조하세요.
+ **빠른 실행** 사용과 관련한 가장 최근의 팁과 요령을 보려면 [Visual Studio 블로그](https://blogs.msdn.com/b/visualstudio/)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
  [일반 사용자 인터페이스 요소 (Visual Studio)](../../ide/reference/general-user-interface-elements-visual-studio.md) [환경 옵션 대화 상자](../../ide/reference/environment-options-dialog-box.md)

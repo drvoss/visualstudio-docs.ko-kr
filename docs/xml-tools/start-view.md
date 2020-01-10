@@ -3,17 +3,17 @@ title: XML 스키마 디자이너 시작 뷰
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: f25e7a2f-7469-4279-b2f4-ee2dfd4d3af1
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1978760aba90b884099085c995372f9612be3c8a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f05c3023a246ba193c98cb1b01984a54fdaa0ebb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72608501"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592531"
 ---
 # <a name="start-view"></a>시작 뷰
 
@@ -41,9 +41,9 @@ XML 스키마 디자이너 도구 모음에서 시작 뷰, [콘텐츠 모델 뷰
 
 |옵션|설명|
 |-|-----------------|
-|**시작 뷰 표시**|시작 뷰로 전환합니다. 이 보기에는 바로 가기 키 ( **Ctrl** +**1)** 를 사용 하 여 액세스할 수 있습니다.|
-|**콘텐츠 모델 뷰 표시**|콘텐츠 모델 뷰로 전환합니다. 이 보기는 키보드 바로 가기: **Ctrl** +**2**를 사용 하 여 액세스할 수 있습니다.|
-|**그래프 뷰 표시**|그래프 뷰로 전환합니다. 이 보기에는 바로 가기 키 ( **Ctrl** +**3**)를 사용 하 여 액세스할 수 있습니다.|
+|**시작 뷰 표시**|시작 뷰로 전환합니다. 이 보기에는 바로 가기 키 ( **Ctrl**+**1)** 를 사용 하 여 액세스할 수 있습니다.|
+|**콘텐츠 모델 뷰 표시**|콘텐츠 모델 뷰로 전환합니다. 이 보기는 키보드 바로 가기: **Ctrl**+**2**를 사용 하 여 액세스할 수 있습니다.|
+|**그래프 뷰 표시**|그래프 뷰로 전환합니다. 이 보기에는 바로 가기 키 ( **Ctrl**+**3**)를 사용 하 여 액세스할 수 있습니다.|
 
 ## <a name="see-also"></a>참조
 

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Load Test Results Repository
 - load test results, exporting
 ms.assetid: 716c2af5-8737-4d31-956f-a0273f7c5c0c
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 86453ef9aa92c63ae4e96566fd08aa328b71b50e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3f72dbd687bc9177cd4cfd36416acb23445d30c8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653529"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589047"
 ---
 # <a name="how-to-export-load-test-results-from-a-repository"></a>방법: 리포지토리에서 부하 테스트 결과 내보내기
 
@@ -36,7 +36,7 @@ ms.locfileid: "72653529"
 
 3. **부하 테스트 결과를 찾을 컨트롤러 이름 입력**에서 컨트롤러를 선택합니다. **\<로컬 – 컨트롤러 없음>** 을 선택하여 로컬로 저장된 결과에 액세스합니다.
 
-4. **다음 부하 테스트의 결과 표시**에서 해당 결과를 보려는 부하 테스트를 선택합니다. 모든 테스트의 결과를 보려면 **\<모든 테스트에 대한 결과 표시>** 를 선택합니다.
+4. **다음 부하 테스트의 결과 표시**에서 결과를 볼 부하 테스트를 선택합니다. 모든 테스트의 결과를 보려면 **\<모든 테스트에 대한 결과 표시>** 를 선택합니다.
 
      사용 가능한 부하 테스트 결과는 **부하 테스트 결과** 목록에 나타납니다. 여기에는 **시간**, **지속 시간**, **사용자**, **결과**, **테스트** 및 **설명** 열이 있습니다. **테스트**에는 테스트의 이름이 들어 있고 **설명**에는 테스트를 실행하기 전에 추가한 설명(선택 사항)이 들어 있습니다. **설명** 열에는 해당 테스트 결과에 대해 **분석 주석**에 입력한 간략한 설명이 표시됩니다.
 
@@ -53,7 +53,7 @@ ms.locfileid: "72653529"
     > [!NOTE]
     > **부하 테스트 결과 열기 및 관리** 대화 상자는 결과가 표시된 후에도 계속 열려 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [부하 테스트 결과 리포지토리에서 부하 테스트 결과 관리](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [방법: 리포지토리에서 부하 테스트 결과 삭제](../test/how-to-delete-load-test-results-from-a-repository.md)

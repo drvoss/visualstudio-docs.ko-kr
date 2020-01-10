@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 278858eb28e0db7edd2694397cc7b24f1cfec301
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ac188bcf7975b8da1bbc71a90d3b6c34b095d424
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296835"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845572"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>연습: 코드 조각 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "74296835"
 몇 가지 단계로 코드 조각을 만들 수 있습니다. XML 파일을 만들고, 적절한 요소를 입력하고, 코드를 추가하기만 하면 됩니다. 또한 코드에 참조 및 대체 매개 변수를 추가할 수 있습니다. 코드 조각 관리자(**도구/코드 조각 관리자**)에서 가져오기 단추를 사용하여 Visual Studio 설치에 코드 조각을 추가할 수 있습니다.
 
 > [!TIP]
-> 코드 조각을 더 쉽게 작성 하는 방법에 대 한 자세한 내용을 보려면 CodePlex 웹 사이트에서 코드 [조각 편집기](https://go.microsoft.com/fwlink/?LinkId=251033)와 같은 커뮤니티 도구를 검색 합니다.
+> 코드 조각을 더 쉽게 작성 하는 방법에 대 한 자세한 내용을 보려면 CodePlex 웹 사이트에서 코드 [조각 편집기](https://snippeteditor.codeplex.com/)와 같은 커뮤니티 도구를 검색 합니다.
 
 ## <a name="snippet-template"></a>코드 조각 템플릿
  다음은 기본 코드 조각 템플릿입니다.
@@ -75,7 +75,7 @@ ms.locfileid: "74296835"
 
 1. 코드 조각 관리자를 사용하여 Visual Studio 설치에 사용자 고유의 코드 조각을 추가할 수 있습니다. 코드 조각 관리자(**도구/코드 조각 관리자**)를 엽니다.
 
-2. **가져오기** 단추를 클릭합니다.
+2. **내보내기** 단추를 클릭합니다.
 
 3. 이전 절차에서 코드 조각을 저장한 위치로 이동하고, 선택하고, **열기**를 클릭합니다.
 

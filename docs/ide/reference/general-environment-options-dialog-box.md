@@ -15,17 +15,17 @@ helpviewer_keywords:
 - Options dialog box, General Environment
 - General Environment Options dialog box
 - Environment Options dialog box
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e7efa9176b2e685463330b3ca8dbd714ec4555
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 973e08ca6555f7da7873d3068e2794b8d34e3640
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660042"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569441"
 ---
 # <a name="options-dialog-box-environment--general"></a>옵션 대화 상자: 환경 \> 일반
 
@@ -96,6 +96,6 @@ Visual Studio에서 시각적 효과 조정을 자동으로 설정하는지 또�
 
 **자동 숨기기** 단추를 클릭할 때 도킹된 집합의 모든 도구 창이 아니라 포커스가 있는 도구 창만 자동으로 숨겨지도록 지정합니다. 기본적으로 이 옵션은 선택되어 있지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [창 레이아웃 사용자 지정](../../ide/customizing-window-layouts-in-visual-studio.md)

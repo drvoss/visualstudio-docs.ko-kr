@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - AddParameters.UI
 ms.assetid: a21fb4fe-134b-40b0-8497-86b842940ca1
-ms.author: jillfra
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 78f773776c3285b60b2747c74e11a90ff08dba8a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: TerryGLee
+ms.openlocfilehash: 68973963d77bdd4134213b8524b24f75a6be5ab1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650758"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597128"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>매개 변수 추가 및 인수 추가 대화 상자
 
@@ -23,7 +23,7 @@ ms.locfileid: "72650758"
 
 |||
 |-|-|
-|**방향도**|매개 변수가 메서드 안으로, 메서드에서 밖으로 또는 둘 모두의 데이터 흐름을 나타내는지 여부를 지정합니다.|
+|**Direction**|매개 변수가 메서드 안으로, 메서드에서 밖으로 또는 둘 모두의 데이터 흐름을 나타내는지 여부를 지정합니다.|
 |**Type**|새 매개 변수 형식의 형식 이름입니다.|
 |**Value**|새 매개 변수에 기본값을 할당 하는 데 사용 되는 Visual Basic 식입니다.|
 
@@ -31,7 +31,7 @@ ms.locfileid: "72650758"
 
 |||
 |-|-|
-|**이름**|인수의 이름입니다.|
-|**방향도**|인수가 대리자 안으로, 대리자에서 밖으로 또는 둘 모두의 데이터 흐름을 나타내는지 여부를 지정합니다.|
+|**Name**|인수의 이름입니다.|
+|**Direction**|인수가 대리자 안으로, 대리자에서 밖으로 또는 둘 모두의 데이터 흐름을 나타내는지 여부를 지정합니다.|
 |**Type**|새 인수의 형식 이름입니다.|
 |**Value**|대리자 인수의 이 인스턴스에 사용할 값입니다.|

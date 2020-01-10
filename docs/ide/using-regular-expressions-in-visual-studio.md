@@ -11,17 +11,17 @@ f1_keywords:
 helpviewer_keywords:
 - regular expressions [Visual Studio]
 - regular expressions
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53fd8af330d0cdab84d944dc453dbfe66208608f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f1739d6b2376a4f86edd3c0102f7fad79da5d7cd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647324"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568622"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Visual Studio에서 정규식 사용
 
@@ -31,7 +31,7 @@ Visual Studio에서는 [.NET 정규식](/dotnet/standard/base-types/regular-expr
 
 다음 표에는 일부 정규식 문자, 연산자, 구문 및 패턴 예가 나와 있습니다. 자세한 내용은 [정규식 언어](/dotnet/standard/base-types/regular-expression-language-quick-reference)를 참조하세요.
 
-|용도|식|예|
+|용도|식|예제|
 |-------------|----------------|-------------|
 |줄 바꿈 이외의 모든 단일 문자를 찾습니다. 자세한 내용은 [임의의 문자](/dotnet/standard/base-types/character-classes-in-regular-expressions#any-character-)를 참조하세요.|을 선택합니다.|`a.o`는 “around”의 “aro” 및 “about”의 “abo”와 일치하지만 “across”의 “acro”와 일치하지 않습니다.|
 |이전 식에서 일치 항목 0개 이상을 찾습니다(가능한 한 많은 문자를 찾음). 자세한 내용은 [0번 이상 일치](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-)를 참조하세요.|*|`a*r`는 "rack"의 "r", "ark"의 "ar", "aardvark"의 "aar"과 일치합니다.|
@@ -99,7 +99,7 @@ Visual Studio에서는 [.NET 정규식](/dotnet/standard/base-types/regular-expr
 
 명명된 캡처 그룹에 대한 자세한 내용은 [명명된 일치하는 하위 식](/dotnet/standard/base-types/grouping-constructs-in-regular-expressions#named-matched-subexpressions)을 참조하세요. 바꾸기 패턴에서 사용되는 정규식에 대한 자세한 내용은 [정규식의 대체](/dotnet/standard/base-types/substitutions-in-regular-expressions)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [정규식 언어](/dotnet/standard/base-types/regular-expression-language-quick-reference)
 - [텍스트 찾기 및 바꾸기](../ide/finding-and-replacing-text.md)

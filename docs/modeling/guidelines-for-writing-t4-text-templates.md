@@ -2,17 +2,17 @@
 title: T4 텍스트 템플릿 작성 지침
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0b1a8c70a0e7ec95e0545ecf3caf932f582b3c5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 24c8afd5e34d4957dac3d9f4d5b0e4409ad20895
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667282"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596543"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>T4 텍스트 템플릿 작성 지침
 
@@ -62,7 +62,7 @@ XML과 같은 다른 생성 된 언어에서 `<#@include#>` 지시어를 사용 
 
 코드의 많은 블록을 별도 어셈블리로 이동 하는 것이 좋습니다.
 
-코드 블록 및 클래스 기능 블록이 클 경우이 코드 중 일부를 별도 프로젝트에서 컴파일하는 메서드로 이동 하는 것이 유용할 수 있습니다. @No__t_0 지시어를 사용 하 여 템플릿의 코드에 액세스할 수 있습니다. 자세한 내용은 [T4 Assembly 지시문](../modeling/t4-assembly-directive.md)을 참조 하세요.
+코드 블록 및 클래스 기능 블록이 클 경우이 코드 중 일부를 별도 프로젝트에서 컴파일하는 메서드로 이동 하는 것이 유용할 수 있습니다. `<#@ assembly #>` 지시어를 사용 하 여 템플릿의 코드에 액세스할 수 있습니다. 자세한 내용은 [T4 Assembly 지시문](../modeling/t4-assembly-directive.md)을 참조 하세요.
 
 템플릿이 상속할 수 있는 추상 클래스에 메서드를 넣을 수 있습니다. 추상 클래스는 <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>에서 상속 해야 합니다. 자세한 내용은 [T4 템플릿 지시문](../modeling/t4-template-directive.md)을 참조 하세요.
 
@@ -115,7 +115,7 @@ IntelliSense를 사용할 수 있기 때문에 코드를 더 쉽게 작성할 �
 
 사용자 지정 코드 허용: 확장 위치를 제공 합니다.
 
-@No__t_0 # + 클래스 기능 블록 # >에서 가상 메서드를 생성 하는 것이 좋습니다. 이렇게 하면 단일 템플릿을 수정 하지 않고 많은 컨텍스트에서 사용할 수 있습니다. 템플릿을 수정 하는 대신 최소 추가 논리를 제공 하는 파생 클래스를 생성할 수 있습니다. 파생 클래스는 일반 코드 이거나 런타임 템플릿이 될 수 있습니다.
+\<# + 클래스 기능 블록 # >에서 가상 메서드를 생성 하는 것이 좋습니다. 이렇게 하면 단일 템플릿을 수정 하지 않고 많은 컨텍스트에서 사용할 수 있습니다. 템플릿을 수정 하는 대신 최소 추가 논리를 제공 하는 파생 클래스를 생성할 수 있습니다. 파생 클래스는 일반 코드 이거나 런타임 템플릿이 될 수 있습니다.
 
 예를 들어 MyStandardRunTimeTemplate.tt에서 다음을 수행 합니다.
 
@@ -139,7 +139,7 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 
 텍스트 생성에서 데이터 수집을 분리 합니다.
 
-계산과 텍스트 블록을 혼합 해 서 사용 하지 마십시오. 각 텍스트 템플릿에서 첫 번째 \< # 코드 블록 # >를 사용 하 여 변수를 설정 하 고 복잡 한 계산을 수행 합니다. 첫 번째 텍스트 블록에서 템플릿 끝까지 또는 첫 번째 \< # + 클래스 기능 블록 # >에서 긴 식을 사용 하지 않고 텍스트 블록을 포함 하지 않는 한 루프 및 조건을 방지 합니다. 이 방법을 사용 하면 템플릿을 더 쉽게 읽고 유지 관리할 수 있습니다.
+계산과 텍스트 블록을 혼합 해 서 사용 하지 마십시오. 각 텍스트 템플릿에서 첫 번째 \<# 코드 블록 # >를 사용 하 여 변수를 설정 하 고 복잡 한 계산을 수행 합니다. 첫 번째 텍스트 블록에서 템플릿 끝까지 또는 첫 번째 \<# + 클래스 기능 블록 # >에서 긴 식을 사용 하지 않고 텍스트 블록을 포함 하지 않는 한 루프 및 조건을 방지 합니다. 이 방법을 사용 하면 템플릿을 더 쉽게 읽고 유지 관리할 수 있습니다.
 
 포함 파일에 `.tt`를 사용 하지 마세요.
 
@@ -151,7 +151,7 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 
 형식화 된 모델을 사용 하는 것이 좋습니다.
 
-모델에 대해 XML 또는 데이터베이스 스키마를 만들 수 있지만 DSL (도메인 특정 언어)을 만드는 것이 유용할 수 있습니다. DSL은 스키마의 각 노드를 나타내는 클래스와 특성을 나타내는 속성을 생성 한다는 이점이 있습니다. 즉, 비즈니스 모델을 기준으로 프로그래밍할 수 있습니다. 예를 들면,
+모델에 대해 XML 또는 데이터베이스 스키마를 만들 수 있지만 DSL (도메인 특정 언어)을 만드는 것이 유용할 수 있습니다. DSL은 스키마의 각 노드를 나타내는 클래스와 특성을 나타내는 속성을 생성 한다는 이점이 있습니다. 즉, 비즈니스 모델을 기준으로 프로그래밍할 수 있습니다. 예를 들면 다음과 같습니다.:
 
 ```
 Team Members:

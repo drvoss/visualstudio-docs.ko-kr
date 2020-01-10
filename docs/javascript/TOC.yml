@@ -20,6 +20,8 @@
       href: tutorial-nodejs.md
     - name: React를 사용하여 Node.js 앱 만들기
       href: tutorial-nodejs-with-react-and-jsx.md
+    - name: TypeScript를 사용하여 ASP.NET Core 앱 만들기
+      href: tutorial-aspnet-with-typescript.md
     - name: Linux App Service에 Node.js 앱 게시
       href: publish-nodejs-app-azure.md
 - name: 방법 가이드

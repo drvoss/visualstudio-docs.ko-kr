@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - text templates, utility methods
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e6426ea57fbdbec6ec47a4f6348463b88b250e0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c55da4d58b717bc4d42b6fafdd084067b7e21a31
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605998"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591764"
 ---
 # <a name="text-template-utility-methods"></a>텍스트 템플릿 유틸리티 메서드
 
@@ -25,7 +25,7 @@ Visual Studio 텍스트 템플릿에서 코드를 작성할 때 항상 사용할
 
 ## <a name="write-methods"></a>Write 메서드
 
-@No__t_0 및 `WriteLine()` 메서드를 사용 하 여 식 코드 블록을 사용 하는 대신 표준 코드 블록 내에 텍스트를 추가할 수 있습니다. 다음 두 코드 블록은 기능적으로 동일 합니다.
+`Write()` 및 `WriteLine()` 메서드를 사용 하 여 식 코드 블록을 사용 하는 대신 표준 코드 블록 내에 텍스트를 추가할 수 있습니다. 다음 두 코드 블록은 기능적으로 동일 합니다.
 
 ### <a name="code-block-with-an-expression-block"></a>식 블록이 포함 된 코드 블록
 
@@ -53,7 +53,7 @@ while (i-- > 0)
 
 중첩 된 컨트롤 구조의 긴 코드 블록 내에서 식 블록 대신 이러한 유틸리티 메서드 중 하나를 사용 하는 것이 유용할 수 있습니다.
 
-@No__t_0 및 `WriteLine()` 메서드에는 두 개의 오버 로드가 있습니다. 하나는 단일 문자열 매개 변수를 사용 하 고 다른 하나는 복합 서식 문자열과 문자열에 포함할 개체의 배열을 사용 합니다 (예: `Console.WriteLine()` 메서드). 다음 두 가지 `WriteLine()` 사용은 기능적으로 동일 합니다.
+`Write()` 및 `WriteLine()` 메서드에는 두 개의 오버 로드가 있습니다. 하나는 단일 문자열 매개 변수를 사용 하 고 다른 하나는 복합 서식 문자열과 문자열에 포함할 개체의 배열을 사용 합니다 (예: `Console.WriteLine()` 메서드). 다음 두 가지 `WriteLine()` 사용은 기능적으로 동일 합니다.
 
 ```
 <#
@@ -69,7 +69,7 @@ while (i-- > 0)
 
 ## <a name="indentation-methods"></a>들여쓰기 메서드
 
-들여쓰기 메서드를 사용 하 여 텍스트 템플릿의 출력 형식을 지정할 수 있습니다. @No__t_0 클래스에는 텍스트 템플릿의 현재 들여쓰기를 표시 하는 `CurrentIndent` string 속성과 추가 된 들여쓰기 목록 `indentLengths` 필드가 있습니다. @No__t_0 메서드를 사용 하 여 들여쓰기를 추가 하 고 `PopIndent()` 메서드를 사용 하 여 들여쓰기를 뺄 수 있습니다. 모든 들여쓰기를 제거 하려면 `ClearIndent()` 메서드를 사용 합니다. 다음 코드 블록에서는 이러한 메서드를 사용 하는 방법을 보여 줍니다.
+들여쓰기 메서드를 사용 하 여 텍스트 템플릿의 출력 형식을 지정할 수 있습니다. <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> 클래스에는 텍스트 템플릿의 현재 들여쓰기를 표시 하는 `CurrentIndent` string 속성과 추가 된 들여쓰기 목록 `indentLengths` 필드가 있습니다. `PushIndent()` 메서드를 사용 하 여 들여쓰기를 추가 하 고 `PopIndent()` 메서드를 사용 하 여 들여쓰기를 뺄 수 있습니다. 모든 들여쓰기를 제거 하려면 `ClearIndent()` 메서드를 사용 합니다. 다음 코드 블록에서는 이러한 메서드를 사용 하는 방법을 보여 줍니다.
 
 ```
 <#
@@ -115,11 +115,11 @@ Hello
 
 ## <a name="access-to-host-and-service-provider"></a>호스트 및 서비스 공급자에 대 한 액세스
 
-@No__t_0 속성은 템플릿을 실행 하는 호스트에서 노출 하는 속성에 대 한 액세스를 제공할 수 있습니다. @No__t_0를 사용 하려면 `<@template#>` 지시문에서 `hostspecific` 특성을 설정 해야 합니다.
+`this.Host` 속성은 템플릿을 실행 하는 호스트에서 노출 하는 속성에 대 한 액세스를 제공할 수 있습니다. `this.Host`를 사용 하려면 `<@template#>` 지시문에서 `hostspecific` 특성을 설정 해야 합니다.
 
 `<#@template ... hostspecific="true" #>`
 
-@No__t_0 유형은 템플릿이 실행 되는 호스트의 유형에 따라 달라 집니다. Visual Studio에서 실행 중인 템플릿에서 IDE와 같은 서비스에 대 한 액세스 권한을 얻기 위해 `this.Host`를 `IServiceProvider`으로 캐스팅할 수 있습니다. 예:
+`this.Host` 유형은 템플릿이 실행 되는 호스트의 유형에 따라 달라 집니다. Visual Studio에서 실행 중인 템플릿에서 IDE와 같은 서비스에 대 한 액세스 권한을 얻기 위해 `this.Host`를 `IServiceProvider`으로 캐스팅할 수 있습니다. 예를 들면 다음과 같습니다.:
 
 ```
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)
@@ -128,10 +128,10 @@ EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)
 
 ## <a name="using-a-different-set-of-utility-methods"></a>다른 유틸리티 메서드 집합 사용
 
-텍스트 생성 프로세스의 일부로 템플릿 파일은 클래스로 변환 됩니다 .이 클래스는 항상 이름 `GeneratedTextTransformation`and <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>에서 상속 됩니다. 대신 다른 메서드 집합을 사용 하려는 경우 고유한 클래스를 작성 하 고 템플릿 지시문에서 지정할 수 있습니다. 클래스는 <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>에서 상속 해야 합니다.
+텍스트 생성 프로세스의 일부로 템플릿 파일은 클래스 (항상 `GeneratedTextTransformation`이름이 지정 되 고 <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>에서 상속 되는 클래스로 변환 됩니다. 대신 다른 메서드 집합을 사용 하려는 경우 고유한 클래스를 작성 하 고 템플릿 지시문에서 지정할 수 있습니다. 클래스는 <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>에서 상속 해야 합니다.
 
 ```
 <#@ template inherits="MyUtilityClass" #>
 ```
 
-@No__t_0 지시어를 사용 하 여 컴파일된 클래스를 찾을 수 있는 어셈블리를 참조할 수 있습니다.
+`assembly` 지시어를 사용 하 여 컴파일된 클래스를 찾을 수 있는 어셈블리를 참조할 수 있습니다.

@@ -3,17 +3,17 @@ title: '방법: 3D 지형 모델 만들기'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82ee7791c8356f13ebfdce5ad5bd3ba8be0674d4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a863834790683b229c17ad55b9930a2b382c027b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635416"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589424"
 ---
 # <a name="how-to-model-3d-terrain"></a>방법: 3D 지형 모델 만들기
 
@@ -55,6 +55,6 @@ ms.locfileid: "72635416"
 
 이 지형 모델을 사용하여 [방법: 기하 도형 기반 그라데이션 셰이더 만들기](../designers/how-to-create-a-geometry-based-gradient-shader.md)에 설명된 그라데이션 셰이더의 효과를 표시할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [모델 편집기](../designers/model-editor.md)

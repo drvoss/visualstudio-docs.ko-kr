@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, incremental builds
 ms.assetid: 325e28c7-4838-4e3f-b672-4586adc7500c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 820d8b4837e2b7ae3f93a742ca8abe5962cd1893
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fb4cfc272b24bf014691b5d130f71f97e4849a31
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007031"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573822"
 ---
 # <a name="incremental-builds"></a>증분 빌드
 
@@ -75,5 +75,5 @@ MSBuild 3.5 전에는 [CreateItem](../msbuild/createitem-task.md) 작업을 사�
 
 대상이 실행되는 경우에만 이 코드는 속성 CompileRan을 만들고 `true` 값을 제공합니다. 대상을 건너뛰는 경우 CompileRan은 생성되지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [대상](../msbuild/msbuild-targets.md)

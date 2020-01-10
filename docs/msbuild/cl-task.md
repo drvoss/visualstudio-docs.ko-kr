@@ -16,17 +16,17 @@ helpviewer_keywords:
 - MSBuild (C++), CL task
 - CL task (MSBuild (C++))
 ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f7704ebee49af51c5cbeff118d2eed8e08ace30
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: effc1b51352052f4e11e42298f9e9567db30d8f1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747350"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593358"
 ---
 # <a name="cl-task"></a>CL 작업
 Microsoft C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 실행( *.exe*) 파일, 동적 연결 라이브러리( *.dll*) 파일 또는 코드 모듈( *.netmodule*) 파일을 생성합니다. 자세한 내용은 [컴파일러 옵션](/cpp/build/reference/compiler-options)을 참조하세요.
@@ -800,5 +800,5 @@ Microsoft C++ 컴파일러 도구 *cl.exe*를 래핑합니다. 컴파일러는 �
 
    자세한 내용은 이 표의 **TLogReadFiles** 및 **TLogWriteFiles** 매개 변수를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [작업 참조](../msbuild/msbuild-task-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: 코드 맵을 사용하여 애플리케이션 디버그
+title: 코드 맵을 사용하여 응용 프로그램 디버그
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +11,19 @@ helpviewer_keywords:
 - mapping code relationships
 - code maps
 - mapping relationships in code
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0b3c65c0a7e5cb08869a6d756ce0c443fa3bf2e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e01857878f927c619529d3bbfc63728f84f0b81d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748282"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594112"
 ---
-# <a name="use-code-maps-to-debug-your-applications"></a>코드 맵을 사용하여 애플리케이션 디버그
+# <a name="use-code-maps-to-debug-your-applications"></a>코드 맵을 사용하여 응용 프로그램 디버그
 
 코드 맵을 사용하면 많은 코드베이스, 익숙하지 않은 코드 또는 레거시 코드에서 길을 잃는 것을 방지할 수 있습니다. 예를 들어, 디버깅 하는 경우 여러 파일 및 프로젝트에서 코드를 확인 해야 할 수 있습니다. 코드 맵을 사용하여 코드를 탐색하고 코드 조각 간의 관계를 확인할 수 있습니다. 이렇게 하면 머릿속에서 이 코드를 추적하거나 별도 다이어그램을 그리지 않아도 됩니다. 따라서 작업이 중단된 경우 코드 맵을 통해 작업 중인 코드에 대한 기억을 상기시킬 수 있습니다.
 
@@ -31,7 +31,7 @@ ms.locfileid: "72748282"
 
 **편집기에서 커서가 표시 되는 위치를 보여 주는 녹색 화살표**
 
-코드 맵으로 작업할 때 사용할 수 있는 명령 및 작업에 대 한 자세한 내용은 [코드 맵 찾아보기 및 다시 정렬](../modeling/browse-and-rearrange-code-maps.md)을 참조 하세요.
+명령 및 코드 맵으로 작업할 때 사용할 수 있는 작업의 세부 정보를 참조 하세요 [찾아보기 및 다시 정렬 코드 맵](../modeling/browse-and-rearrange-code-maps.md)합니다.
 
 > [!NOTE]
 > 코드 맵을 만들고 편집 하려면 Visual Studio Enterprise 버전이 필요 합니다. Visual Studio Community 및 Professional 버전에서는 Enterprise edition에서 생성 된 다이어그램을 열 수 있지만 편집할 수는 없습니다.

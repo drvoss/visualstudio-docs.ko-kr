@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7d740f1cc6c19e8d3b53dc084d9de01547369337
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 167fc2f80a8eaeddb121d208f714fe134c63a198
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299543"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75843885"
 ---
 # <a name="wpf-community-resources"></a>WPF 커뮤니티 리소스
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "74299543"
 Microsoft는 WPF 팀 멤버 및 커뮤니티 리더가 생성한 블로그, 포럼 및 Microsoft Connect 피드백 센터를 포함하여 배우고, 토론하고, WPF(Windows Presentation Foundation)에 대한 피드백을 제공하는 다양한 커뮤니티 리소스를 제공합니다.
 
 ## <a name="community"></a>커뮤니티
- [WPF 포럼](https://go.microsoft.com/fwlink/?LinkId=187440)
+ [WPF 포럼](https://social.msdn.microsoft.com/forums/en-US/wpf/threads/)
 
  [스택 오버플로](https://stackoverflow.com/questions/tagged/wpf)
 
@@ -32,6 +32,6 @@ Microsoft는 WPF 팀 멤버 및 커뮤니티 리더가 생성한 블로그, 포�
 
  [Windows Presentation Foundation 개발자 센터](https://www.visualstudio.com/features/wpf-vs)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
 
 - [Windows Presentation Foundation으로 최신 데스크톱 애플리케이션 만들기](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - run-time errors, warnings
 - warnings, configuring
 ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c71c352040898874cd90a397db6b8c7321ff39d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 67f65ea691a02bac87f75f43e0a9938125bcd959
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652081"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585511"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Visual Basic에서 경고 구성
 
@@ -39,7 +39,7 @@ ms.locfileid: "72652081"
 |명령줄 옵션|설명|
 | - |---------------|
 |`/warnaserror+`|모든 경고를 오류로 처리합니다.|
-|`/warnsaserror`-|경고를 오류로 처리하지 않습니다. 이 값이 기본값입니다.|
+|`/warnsaserror`-|경고를 오류로 처리하지 않습니다. 기본값입니다.|
 |`/warnaserror+:<warning list` `>`|해당 오류 ID 번호가 쉼표로 구분된 목록으로 나열된 특정 경고를 오류로 처리합니다.|
 |`/warnaserror-:<warning list>`|해당 오류 ID 번호가 쉼표로 구분된 목록으로 나열된 특정 경고를 오류로 처리하지 않습니다.|
 |`/nowarn`|경고를 보고하지 않습니다.|
@@ -117,7 +117,7 @@ ID: 42028
 
 ID: 42029, 42031
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [오류 형식](/dotnet/visual-basic/programming-guide/language-features/error-types)
 - [Try...Catch...Finally 명령문](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)

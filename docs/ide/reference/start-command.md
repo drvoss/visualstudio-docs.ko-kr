@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Start command
 - Debug.Start command
 ms.assetid: dc4e4aa2-b0ab-4e00-92db-6dc3058ddc21
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f3179c223aef8226577fe726b6d91301d42572a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f6138c4cff33f0b2a4211439a01a058da59da811
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748625"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590282"
 ---
 # <a name="start-command"></a>시작 명령
 시작 프로젝트 디버깅을 시작합니다.
@@ -37,14 +37,14 @@ Debug.Start [address]
 ## <a name="remarks"></a>설명
 **시작** 명령을 실행하면 지정된 주소로 RunToCursor 작업을 수행합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 이 예제에서는 디버거를 시작하고 발생하는 모든 예외를 무시합니다.
 
 ```cmd
 >Debug.Start
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)
 - [명령 창](../../ide/reference/command-window.md)

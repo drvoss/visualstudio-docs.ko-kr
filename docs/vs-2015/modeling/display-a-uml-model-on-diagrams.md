@@ -11,19 +11,19 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 67eb1a6ce55292415da4a5c4e363941a4285d8b7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b43d4353e325bb81a29fe39106ac13e1ddcf96a9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296006"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849475"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>다이어그램에 UML 모델 표시
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 확장에 대한 프로그램 코드에서 모델 요소가 다이어그램에 표시되는 방식을 제어할 수 있습니다. UML 모델을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
 
-항목 내용:
+항목 내용
 - [다이어그램에 요소를 표시 하려면](#Display)
 
 - [요소를 나타내는 도형에 액세스](#GetShapes)
@@ -43,9 +43,9 @@ Visual Studio 확장에 대한 프로그램 코드에서 모델 요소가 다이
 |---------------------|-----------------|-------------------------------------|
 |분류자|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|지정한 다이어그램에서 연결된 모양을 만듭니다. 각 분류자에 대한 모양을 원하는 개수만큼 만들 수 있습니다.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> 다이어그램의 최상위 모양에 대해 `parentShape`를 `null`로 설정합니다.<br /><br /> 다른 모양 안에 모양을 표시하려면<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **참고:** **ILinkedUndo** 트랜잭션 내부에서 표시를 수행 하는 경우 메서드는 때때로 `IShape`를 반환 하지 않습니다. 그러나 모양은 올바르게 생성되며 `IElement.Shapes().`를 사용하여 액세스할 수 있습니다.|
 |분류자의 자식|특성, 작업,<br /><br /> 파트, 포트|자동 - 코드가 필요하지 않습니다.<br /><br /> 부모의 일부로 표시됩니다.|
-|동작|상호 작용(시퀀스),<br /><br /> 작업|해당 다이어그램에 동작을 바인딩합니다.<br /><br /> 한 번에 최대 하나의 다이어그램에 각 동작을 바인딩할 수 있습니다.<br /><br /> 예를 들면 다음과 같습니다.<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|
+|동작|상호 작용(시퀀스),<br /><br /> 활동|해당 다이어그램에 동작을 바인딩합니다.<br /><br /> 한 번에 최대 하나의 다이어그램에 각 동작을 바인딩할 수 있습니다.<br /><br /> 예를 들면 다음과 같습니다.:<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|
 |동작의 자식|수명선, 메시지, 작업, 개체 노드|자동 - 코드가 필요하지 않습니다.<br /><br /> 부모가 다이어그램에 바인딩된 경우 표시됩니다.|
-|관계|연결, 일반화, 흐름, 종속성|자동 - 코드가 필요하지 않습니다.<br /><br /> 양쪽 끝이 표시되는 모든 다이어그램에 표시됩니다.|
+|Relationship|연결, 일반화, 흐름, 종속성|자동 - 코드가 필요하지 않습니다.<br /><br /> 양쪽 끝이 표시되는 모든 다이어그램에 표시됩니다.|
 
 ## <a name="GetShapes"></a>요소를 나타내는 도형에 액세스
  요소를 나타내는 모양은 다음 형식에 속합니다.
@@ -379,4 +379,4 @@ namespace AlignCommand
 ```
 
 ## <a name="see-also"></a>참고 항목
- [Uml 모델 및 다이어그램 확장](../modeling/extend-uml-models-and-diagrams.md) [uml 모델](../modeling/navigate-the-uml-model.md) [샘플: 다이어그램에서 셰이프 맞춤 메뉴 명령](https://go.microsoft.com/fwlink/?LinkId=213809) [샘플: 요소, 모양 및 스테레오 타입 만들기](https://go.microsoft.com/fwlink/?LinkId=213811)
+ [Uml 모델 및 다이어그램 확장](../modeling/extend-uml-models-and-diagrams.md) [uml 모델](../modeling/navigate-the-uml-model.md) [샘플: 다이어그램에서 셰이프 맞춤 메뉴 명령](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [샘플: 요소, 모양 및 스테레오 타입 만들기](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)

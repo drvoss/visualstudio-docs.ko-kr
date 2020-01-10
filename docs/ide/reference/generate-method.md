@@ -2,17 +2,17 @@
 title: 메서드 생성
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c85e3f849d7d74f326c1cf330b0e2c338d78fc6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f166c31a1615c951170367223a5b19ab93811b5d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668341"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595594"
 ---
 # <a name="generate-a-method-in-visual-studio"></a>Visual Studio에서 메서드 생성
 
@@ -66,7 +66,7 @@ ms.locfileid: "72668341"
 
        ![메서드 생성 결과 VB](media/method-result-vb.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 생성](../code-generation-in-visual-studio.md)
 - [변경 내용 미리 보기](../../ide/preview-changes.md)

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - WPF Designer, data binding
 - data binding, WPF
 ms.assetid: e05a1e0c-5082-479d-bbc9-d395b0bc6580
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ee858c7c17798f327d323f632d4cb9e8a77b6712
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: 5c9136b5047f835ecbf56df71bb226b5f56a6e19
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924536"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586954"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Visual Studio에서 데이터에 WPF 컨트롤 바인딩
 
@@ -50,14 +50,14 @@ Visual Studio에서 데이터 바인딩된 컨트롤을 만드는 방법에 대 
 
 다음 표에서는 Visual Studio에서 **데이터** 소스 창에 있는 각 데이터 소스 형식에 대해 생성 하는 [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] 및 코드를 보여 줍니다.
 
-| 데이터 원본 | 데이터 소스에 컨트롤을 바인딩하는 XAML을 생성합니다. | 데이터 소스를 데이터로 채우는 코드를 생성합니다. |
+| 데이터 소스 | 데이터 소스에 컨트롤을 바인딩하는 XAML을 생성합니다. | 데이터 소스를 데이터로 채우는 코드를 생성합니다. |
 | - | - | - |
-| 데이터 세트 | 예 | 예 |
+| 데이터 집합 | 예 | 예 |
 | [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | 예 | 예 |
 | 서비스 | 예 | 아니요 |
-| Object | 예 | 아니요 |
+| 개체 | 예 | 아니요 |
 
-### <a name="datasets"></a>데이터 세트
+### <a name="datasets"></a>데이터 집합
 
 **데이터 소스** 창에서 디자이너로 테이블이 나 열을 끌어 오면 Visual Studio에서 다음을 수행 하는 [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)]을 생성 합니다.
 
@@ -79,7 +79,7 @@ Visual Studio에서 데이터 바인딩된 컨트롤을 만드는 방법에 대 
 
 또한 Visual Studio에서는 코드 숨김 파일에 대해 다음과 같은 변경 작업도 수행합니다.
 
-- 디자이너로 끌어 온 엔터티(또는 디자이너로 끌어 온 속성이 들어 있는 엔터티)에 대한 쿼리를 반환하는 새 메서드를 추가합니다. 새 메서드에는 `Get<EntityName>Query` 이름이 있습니다. 여기서 `\<EntityName>`는 엔터티의 이름입니다.
+- 디자이너로 끌어 온 엔터티(또는 디자이너로 끌어 온 속성이 들어 있는 엔터티)에 대한 쿼리를 반환하는 새 메서드를 추가합니다. 새 메서드에는 `Get<EntityName>Query`이름이 있습니다. 여기서 `\<EntityName>`는 엔터티의 이름입니다.
 
 - 이 컨트롤이 들어 있는 <xref:System.Windows.FrameworkElement.Loaded> 요소에 대한 [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] 이벤트 처리기를 만듭니다. 이벤트 처리기는 `Get<EntityName>Query` 메서드를 호출 하 여 엔터티를 데이터로 채우고 컨테이너의 리소스에서 <xref:System.Windows.Data.CollectionViewSource>를 검색 한 다음 첫 번째 데이터 항목을 현재 항목으로 만듭니다. <xref:System.Windows.FrameworkElement.Loaded> 이벤트 처리기가 이미 있는 경우 Visual Studio는 기존 이벤트 처리기에이 코드를 추가 합니다.
 

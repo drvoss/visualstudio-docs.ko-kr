@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: db7430d03bbce065b75e890736253c6ba05752d0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7bc1e36f6d5dea12a8c46e88a3e1f450cc30caa6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298926"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847218"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -128,7 +128,7 @@ IntelliTrace를 사용하여 코드의 실행 내역을 기록하고 추적하�
   
 - **.NET Framework 이벤트**  
   
-   기본적으로 IntelliTrace는 가장 일반적인 .NET Framework 이벤트를 기록합니다. 예를 들면 다음과 같습니다.  
+   기본적으로 IntelliTrace는 가장 일반적인 .NET Framework 이벤트를 기록합니다. 예를 들면 다음과 같습니다.:  
   
   - 파일 액세스 이벤트의 경우 IntelliTrace가 파일 이름을 수집합니다.  
   
@@ -136,7 +136,7 @@ IntelliTrace를 사용하여 코드의 실행 내역을 기록하고 추적하�
   
 - **SharePoint 2010 및 SharePoint 2013 애플리케이션 이벤트**  
   
-   Visual Studio 외부에서 실행되는 SharePoint 2010 및 2013 애플리케이션에 대해 사용자 프로필 이벤트 및 ULS(Unified Logging System) 이벤트의 하위 집합을 기록할 수 있습니다. 이러한 이벤트를 .iTrace 파일에 저장할 수 있습니다. Visual Studio Enterprise 2015, 이전 버전의 Visual Studio Ultimate 또는 **추적** 모드에서 실행 되는 [Microsoft Monitoring Agent](https://go.microsoft.com/fwlink/?LinkId=320384) 가 필요 합니다.  
+   Visual Studio 외부에서 실행되는 SharePoint 2010 및 2013 애플리케이션에 대해 사용자 프로필 이벤트 및 ULS(Unified Logging System) 이벤트의 하위 집합을 기록할 수 있습니다. 이러한 이벤트를 .iTrace 파일에 저장할 수 있습니다. Visual Studio Enterprise 2015, 이전 버전의 Visual Studio Ultimate 또는 **추적** 모드에서 실행 되는 [Microsoft Monitoring Agent](https://go.microsoft.com/fwlink/?LinkID=309771) 가 필요 합니다.  
   
    .iTrace 파일을 열면 SharePoint 상관 관계 ID를 입력하여 일치하는 웹 요청을 찾고 기록된 이벤트를 보고 특정 이벤트에서 디버깅을 시작합니다. 파일에 처리되지 않은 예외가 있는 경우 상관 관계 ID를 선택하여 예외 디버깅을 시작할 수 있습니다.  
   
@@ -174,7 +174,7 @@ IntelliTrace를 사용하여 코드의 실행 내역을 기록하고 추적하�
   
  호출 정보를 수집하면 애플리케이션 성능이 크게 느려질 수 있습니다. 디스크에 저장하는 경우 IntelliTrace 로그 파일(.iTrace 파일)의 크기도 증가할 수 있습니다. 이러한 효과를 최소화하려면 관심 있는 모듈에 대한 호출 정보만 수집합니다.  .iTrace 파일의 최대 크기를 변경하려면 **도구**, **옵션**, **IntelliTrace**, **고급**으로 이동합니다. [IntelliTrace 구성](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)을 참조 하세요.  
   
-## <a name="in-this-section"></a>이 섹션의 내용  
+## <a name="in-this-section"></a>단원 내용  
  [IntelliTrace 기능](../debugger/intellitrace-features.md)  
   
  [IntelliTrace 구성](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)  
@@ -186,7 +186,7 @@ IntelliTrace를 사용하여 코드의 실행 내역을 기록하고 추적하�
  [저장된 IntelliTrace 데이터 사용](../debugger/using-saved-intellitrace-data.md)  
   
 ### <a name="blogs"></a>블로그  
- [Visual Studio ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)  
+ [Visual Studio ALM + Team Foundation Server](https://blogs.msdn.com/b/visualstudioalm)  
   
 ### <a name="forums"></a>포럼  
- [Visual Studio 진단](https://go.microsoft.com/fwlink/?LinkId=262263)
+ [Visual Studio 진단](https://social.msdn.microsoft.com/Forums/vsdebug)

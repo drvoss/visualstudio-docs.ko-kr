@@ -10,15 +10,15 @@ ms.assetid: 6bcc5712-6cc6-4f59-8933-6e8078318c45
 dev_langs:
 - CSharp
 - VB
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9aeb80d348e31de0934d515754c59346fac3c2ea
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 92cce705135daa8bc54a7fab301cf5dcd8cf96d6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665257"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591179"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>웹 성능 테스트에 대한 사용자 지정 추출 규칙 코딩
 
@@ -54,7 +54,7 @@ ms.locfileid: "72665257"
 
 9. 웹 성능 테스트를 실행합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 코드에서는 사용자 지정 추출 규칙의 구현을 보여 줍니다. 이 추출 규칙에서는 지정한 입력 필드에서 값을 추출합니다. 이 예제를 출발점으로 삼아 사용자 지정 추출 규칙을 직접 만들 수 있습니다.
 
@@ -206,7 +206,7 @@ End Namespace
 
 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> 메서드에는 추출 규칙의 핵심 기능이 포함되어 있습니다. 위 예제에서 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> 메서드는 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionEventArgs>를 사용하여 이 추출 규칙이 적용되는 요청이 생성하는 응답을 제공합니다. 응답에는 응답 내 모든 태그가 들어 있는 <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument>가 포함됩니다. 입력 태그는 <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument> 외부로 필터링됩니다. 각 입력 태그는 `Name` 속성에 사용자가 입력한 값과 같은 값을 가지는 `name`이라는 특성에 대해 검사됩니다. 일치하는 특성을 가진 태그가 발견되면 `value` 특성이 있는 경우 이 특성에 포함된 값을 추출하려고 시도합니다. 이 특성이 있으면 태그의 이름과 값이 추출되어 웹 성능 테스트 컨텍스트에 추가되고 추출 규칙이 전달됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.Rules>

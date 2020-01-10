@@ -9,24 +9,24 @@ f1_keywords:
 helpviewer_keywords:
 - task list
 - Visual Studio, task list
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69c0e4c3a19358d9b29e4d7d3616c6718117e059
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: db39850350f99e6c046996f6408973cbc6543868
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647312"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594229"
 ---
 # <a name="use-the-task-list"></a>작업 목록 사용
 
 **작업 목록**을 사용하여 `TODO` 및 `HACK` 같은 토큰 또는 사용자 지정 토큰을 사용하는 코드 주석을 추적하고 코드에서 미리 정의된 위치로 직접 연결되는 바로 가기를 관리합니다. 목록의 항목을 클릭하면 소스 코드의 해당 위치로 이동합니다.
 
 > [!NOTE]
-> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [작업 주석(Mac용 Visual Studio)](/visualstudio/mac/task-comments)을 참조하세요.
+> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [작업 주석(Mac용 Visual Studio)](/visualstudio/mac/task-comments)을 참조하세요.
 
 ## <a name="the-task-list-window"></a>작업 목록 창
 
@@ -108,7 +108,7 @@ C++ TODO 주석을 끄려면 **도구** 메뉴에서 **옵션** > **텍스트 �
 
 코드에서 바로 가기를 탐색하려면 목록에서 바로 가기를 선택한 다음 바로 가기 메뉴에서 **다음 작업** 또는 **이전 작업** 을 선택합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [작업 목록, 환경, 옵션 대화 상자](../ide/reference/task-list-environment-options-dialog-box.md)
 - [작업 주석(Mac용 Visual Studio)](/visualstudio/mac/task-comments)

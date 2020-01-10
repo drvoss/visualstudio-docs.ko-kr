@@ -13,12 +13,12 @@ caps.latest.revision: 29
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: d8ea7122c5dcd086d10e4b937792dd7e47f68547
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 3dd1a481a7db9739bdd847c0b6780a2b55d28469
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291890"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848307"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>C/C++ 코드 오류를 줄이기 위한 SAL 주석 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ SAL은 Microsoft 소스 코드 주석 언어입니다. 소스 코드 주석을 �
      SAL 주석을 사용 하는 방법을 보여 주는 예제를 제공 합니다. 일반적인 문제에 대해서도 설명 합니다.  
   
 ## <a name="related-resources"></a>관련 참고 자료  
- [코드 분석 팀 블로그](https://go.microsoft.com/fwlink/?LinkId=251197)  
+ [코드 분석 팀 블로그](https://blogs.msdn.com/b/codeanalysis/)  
   
 ## <a name="see-also"></a>참고 항목  
- [Windows 드라이버에 대 한 SAL 2.0 주석](https://go.microsoft.com/fwlink/?LinkId=250979)
+ [Windows 드라이버에 대 한 SAL 2.0 주석](https://msdn.microsoft.com/library/windows/hardware/hh454237.aspx)

@@ -6,17 +6,17 @@ f1_keywords:
 - System.Activities.Presentation.View.ArgumentDesigner.UI
 - System.Activities.Presentation.View.DesignTimeArgument.UI
 ms.assetid: 64813fd5-1ea1-499a-98b4-ab2a44b7ee5e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c3f8216bb0dfe3813e4852151c351b865128d0c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2903c69e3cf50f3ed0392239ee8848a79eb50e20
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650282"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584558"
 ---
 # <a name="how-to-use-the-argument-designer"></a>방법: 인수 디자이너 사용
 
@@ -28,7 +28,7 @@ ms.locfileid: "72650282"
 
 2. 디자인 캔버스의 왼쪽 아래 모퉁이에 있는 **인수** 단추를 클릭 하 여 인수 디자이너를 엽니다. 인수 디자이너가 나타납니다.
 
-3. **인수 만들기**라는 빈 행을 클릭 합니다. 그러면 다음과 같은 **기본값을 사용** 하 여 새 인수를 사용 하는 새 행이 추가 됩니다. **여기서 x** 는 초기 값이 1 인 정수 이며, **방향**에 따라 고유한 인수 이름을 만들도록 자동으로 증가 합니다. **인수 형식**에 대 한 및 **문자열** 입니다. **기본값**에는 값이 추가 되지 않습니다. 워크플로 디자인 프로세스 중 언제라도 이러한 값을 변경할 수 있습니다.
+3. **인수 만들기**라는 빈 행을 클릭 합니다. 그러면 다음 **기본값을 사용**하 여 새 인수를 사용 하 여 새 행을 추가 합니다 **. 여기서 x는 초기** 값이 1 인 정수 **입니다. 여기서**x는 고유 인수 이름을 만들기 위해 자동으로 증가 하는 **정수입니다.** **기본값**에는 값이 추가 되지 않습니다. 워크플로 디자인 프로세스 중 언제라도 이러한 값을 변경할 수 있습니다.
 
     > [!NOTE]
     > 인수를 삭제 하려면 인수를 클릭 하 여 선택한 다음 **delete** 키를 누릅니다.

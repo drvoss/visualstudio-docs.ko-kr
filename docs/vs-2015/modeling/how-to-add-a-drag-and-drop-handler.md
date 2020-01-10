@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6ca68005f71d642650a2d9b024a16883de5eaddf
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: f3bbb4500eb4792f77a7011bd95dd06d05d0ff8d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298936"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850428"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>방법: 끌어서 놓기 처리기 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "74298936"
 
  이 항목에서는 다른 다이어그램에서 시작되는 끌어서 놓기 제스처에 대해 설명합니다. 단일 다이어그램 내의 이동 및 복사 이벤트에 대해서는 `ElementOperations`의 서브클래스를 정의하는 방식을 대신 사용할 수 있습니다. 자세한 내용은 [복사 동작 사용자 지정](../modeling/customizing-copy-behavior.md)을 참조 하세요. DSL 정의를 사용자 지정할 수도 있습니다.
 
-## <a name="in-this-topic"></a>항목 내용
+## <a name="in-this-topic"></a>이 항목의 내용
 
 - 처음 두 섹션에서는 제스처 처리기를 정의하는 여러 방법에 대해 설명합니다.
 
@@ -140,7 +140,7 @@ using System.Linq;
 
   - diagramEventArgs.Data.GetDataFormats() - 끌어 온 개체를 디코딩할 수 있는 형식을 나열합니다. 예를 들어 사용자가 바탕 화면에서 파일을 끄는 경우 사용 가능한 형식에는 파일 이름("`FileNameW`")이 포함됩니다.
 
-  - `diagramEventArgs.Data.GetData(format)` – 지정 된 형식으로 끌어 온 개체를 디코딩합니다. 적절한 형식으로 개체를 캐스팅합니다. 예를 들면 다음과 같습니다.
+  - `diagramEventArgs.Data.GetData(format)` – 지정 된 형식으로 끌어 온 개체를 디코딩합니다. 적절한 형식으로 개체를 캐스팅합니다. 예를 들면 다음과 같습니다.:
 
        `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
@@ -170,9 +170,9 @@ using System.Linq;
 
 1. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus에서 소스 DSL에 액세스할 수 있도록 설정합니다.
 
-    1. Visual Studio ModelBus 확장을 이미 설치하지 않은 경우 다운로드하여 설치합니다. 자세한 내용은 [시각화 및 모델링 SDK](https://go.microsoft.com/fwlink/?LinkID=185579)를 참조 하세요.
+    1. Visual Studio ModelBus 확장을 이미 설치하지 않은 경우 다운로드하여 설치합니다. 자세한 내용은 [Visualization and Modeling SDK](https://www.visualstudio.com/)합니다.
 
-    2. DSL Designer에서 소스 DSL의 DSL 정의 파일을 엽니다. 디자인 화면을 마우스 오른쪽 단추로 클릭 한 다음 **Modelbus 사용**을 클릭 합니다. 대화 상자에서 옵션 중 하나 또는 둘 다를 선택합니다.  **확인**을 클릭합니다. "ModelBus"라는 새 프로젝트가 DSL 솔루션에 추가됩니다.
+    2. DSL Designer에서 소스 DSL의 DSL 정의 파일을 엽니다. 디자인 화면을 마우스 오른쪽 단추로 누른 **Modelbus**합니다. 대화 상자에서 옵션 중 하나 또는 둘 다를 선택합니다.  **확인**을 클릭합니다. "ModelBus"라는 새 프로젝트가 DSL 솔루션에 추가됩니다.
 
     3. **모든 템플릿 변환** 을 클릭 하 고 솔루션을 다시 빌드합니다.
 

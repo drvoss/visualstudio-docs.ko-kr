@@ -4,15 +4,15 @@ ms.date: 08/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - Windows Forms Designer, get started
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 419e5ddb5d915307130a6fdadd795ce5b3236033
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 07526637f2d8083f37f55aa3da36bb01479db087
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72634125"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589840"
 ---
 # <a name="walkthrough-get-started-with-windows-forms-designer"></a>연습: Windows Forms 디자이너 시작
 
@@ -60,7 +60,7 @@ DemoCalculator 컨트롤에는 여러 Windows Forms 컨트롤이 포함되어 �
     > [!TIP]
     > `SplitContainer` 컨트롤 크기가 DemoCalculator 컨트롤의 크기에 맞게 자동으로 조정됩니다. **속성** 창에서 `SplitContainer` 컨트롤에 대한 속성 설정을 확인합니다. <xref:System.Windows.Forms.SplitContainer.Dock%2A> 속성을 찾습니다. 해당 값은 `SplitContainer` 컨트롤이 항상 DemoCalculator 컨트롤의 경계에 맞게 크기가 조정되도록 하는 [DockStyle.Fill](xref:System.Windows.Forms.DockStyle.Fill)입니다. 이 동작을 확인하려면 DemoCalculator 컨트롤의 크기를 조정합니다.
 
-3. **속성** 창에서 <xref:System.Windows.Forms.SplitContainer.Dock%2A> 속성의 값을 `None`으로 변경합니다.
+3. **속성** 창에서 <xref:System.Windows.Forms.SplitContainer.Dock%2A> 속성의 값을 `None`로 변경합니다.
 
     `SplitContainer` 컨트롤은 기본 크기로 축소되고 더 이상 DemoCalculator 컨트롤의 크기를 따르지 않습니다.
 
@@ -311,7 +311,7 @@ DemoCalculator 컨트롤은 다른 복합 컨트롤이나 폼에서 사용할 �
 
 이 문서에서는 간단한 계산기의 사용자 인터페이스를 구성하는 방법을 살펴보았습니다. 계속하려면 계산기 논리를 구현하여 해당 기능을 확장한 다음, [ClickOnce를 사용하여 앱을 게시](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)할 수 있습니다. 또는 [Windows Forms를 사용하여 사진 뷰어를 만드는](../ide/tutorial-1-create-a-picture-viewer.md) 다른 자습서를 계속 진행합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Windows Forms 컨트롤](/dotnet/framework/winforms/controls/)
 - [Windows Forms 컨트롤의 접근성](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form)

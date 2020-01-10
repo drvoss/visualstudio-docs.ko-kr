@@ -3,20 +3,20 @@ title: 일반적인 빠른 작업
 description: C# 및 Visual Basic에 대해 가장 인기 있는 빠른 작업에는 키워드 또는 기호 철자 수정, 병합 충돌 해결, 필요한 가져오기 제거, 형식 생성, 로컬 변수 지정 등이 포함됩니다.
 ms.date: 03/28/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bad97ac5574afd65103263b2ce51a4dfba02741c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: db7a3a550f6bfc1250679eeefa0ba3ec6291eef0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652242"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585524"
 ---
 # <a name="common-quick-actions"></a>일반적인 빠른 작업
 
@@ -950,6 +950,6 @@ End Function
 | ------- | -------------------- | ---------------- |
 | CS4032, BC37057 | C# 및 Visual Basic | Visual Studio 2017 이상 |
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [빠른 작업](../ide/quick-actions.md)

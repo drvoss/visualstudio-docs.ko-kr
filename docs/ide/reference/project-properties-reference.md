@@ -6,17 +6,17 @@ helpviewer_keywords:
 - user interface [Visual Studio], projects
 - projects [Visual Studio], user interface
 ms.assetid: eec49aec-5474-48a7-889d-709045b9a475
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3b5c5f79b4ecfcac3e70b6be125c57bcc738199
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cc3ec00ed771caba7e779e708801d611ca16b8c5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655803"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567725"
 ---
 # <a name="project-properties-reference"></a>프로젝트 속성 참조
 
@@ -38,6 +38,6 @@ ms.locfileid: "72655803"
 | [프로젝트 디자이너, 보안 페이지](../../ide/reference/security-page-project-designer.md) | [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)] 배포를 통해 배포된 애플리케이션에 대한 코드 액세스 보안을 구성하려면 이 페이지를 사용합니다. |
 | [프로젝트 디자이너, 서명 페이지](../../ide/reference/signing-page-project-designer.md) | 애플리케이션 및 배포 매니페스트에 서명하고 어셈블리에 서명하려면 이 페이지를 사용합니다. |
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [솔루션 및 프로젝트](../../ide/solutions-and-projects-in-visual-studio.md)

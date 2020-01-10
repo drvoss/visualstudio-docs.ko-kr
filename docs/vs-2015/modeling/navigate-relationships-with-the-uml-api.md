@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f19208e886eb499c825b119ad4ade7e8b52ab88f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 74a8234dfc38ef5ef41cd77b2ce10eaf54018622
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300236"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850083"
 ---
 # <a name="navigate-relationships-with-the-uml-api"></a>UML API를 사용하여 관계 탐색
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -152,9 +152,9 @@ IEnumerable<IUseCase>GetIncludingCases(this IUseCase usecase);
 ```
 
 ## <a name="enumerating-relationships"></a>관계 열거
- 여러 값을 반환 하는 UML 모델의 모든 속성은 IEnumerable < > 인터페이스를 따릅니다. 즉, [Linq 쿼리 식](https://go.microsoft.com/fwlink/?LinkId=168834) 과 **system.xml 네임 스페이스** 에 정의 된 확장 메서드를 사용할 수 있습니다.
+ 여러 값을 반환 하는 UML 모델의 모든 속성은 IEnumerable < > 인터페이스를 따릅니다. 즉, [Linq 쿼리 식](https://docs.microsoft.com/dotnet/csharp/linq/index) 과 **system.xml 네임 스페이스** 에 정의 된 확장 메서드를 사용할 수 있습니다.
 
- 예를 들면 다음과 같습니다.
+ 예를 들면 다음과 같습니다.:
 
 ```
 from shape in     Context.CurrentDiagram.GetSelectedShapes<IClassifier>()

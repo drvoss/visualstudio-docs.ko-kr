@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c366ce44ab65ded62370dd3c219473089d5ca111
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e988c8818cdee756310b73d0d214deda43226f2b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299564"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850221"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Windows Communication Foundation 서비스 및 Visual Studio의 WCF.NET 데이터 서비스
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Visual Studio는 배포 응용 프로그램을 만들기 위한 Microsoft 기술
  [!INCLUDE[vsindigo](../includes/vsindigo-md.md)]은 안전 하 고 신뢰할 수 있으며 트랜잭션 된 분산 응용 프로그램을 만들기 위한 통합 프레임 워크입니다. ASMX 웹 서비스, .NET Remoting, 엔터프라이즈 서비스 (DCOM) 및 MSMQ와 같은 이전 프로세스 간 통신 기술을 대체 합니다. WCF는 통합 프로그래밍 모델에서 모든 기술의 기능을 함께 제공 합니다. 이렇게 하면 배포 응용 프로그램을 개발 하는 환경이 간소화 됩니다.
 
 #### <a name="what-are-wcf-data-services"></a>WCF Data Services 정의
- [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]는 OData (Open Data) 프로토콜 표준의 구현입니다.  WCF Data Services를 사용 하면 테이블 형식 데이터를 일련의 REST Api로 노출 하 여 GET, POST, PUT 또는 DELETE와 같은 표준 HTTP 동사를 사용 하 여 데이터를 반환할 수 있습니다. 서버 쪽에서는 새 OData 서비스를 만들기 위해 WCF Data Services [ASP.NET Web API](https://dotnet.microsoft.com/apps/aspnet/apis) 으로 대체 됩니다. WCF Data Services 클라이언트 라이브러리는 Visual Studio (**Project &#124; 서비스 참조 추가**)의 .Net 응용 프로그램에서 OData 서비스를 사용 하는 데 적합 합니다. 자세한 내용은 [WCF Data Services 4.5](https://go.microsoft.com/fwlink/?LinkID=119952)를 참조하세요.
+ [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]는 OData (Open Data) 프로토콜 표준의 구현입니다.  WCF Data Services를 사용 하면 테이블 형식 데이터를 일련의 REST Api로 노출 하 여 GET, POST, PUT 또는 DELETE와 같은 표준 HTTP 동사를 사용 하 여 데이터를 반환할 수 있습니다. 서버 쪽에서는 새 OData 서비스를 만들기 위해 WCF Data Services [ASP.NET Web API](https://dotnet.microsoft.com/apps/aspnet/apis) 으로 대체 됩니다. WCF Data Services 클라이언트 라이브러리는 Visual Studio (**Project &#124; 서비스 참조 추가**)의 .Net 응용 프로그램에서 OData 서비스를 사용 하는 데 적합 합니다. 자세한 내용은 [WCF Data Services 4.5](https://msdn.microsoft.com/library/cc668792.aspx)를 참조하세요.
 
 ### <a name="wcf-programming-model"></a>WCF 프로그래밍 모델
  WCF 프로그래밍 모델은 WCF 서비스와 WCF 클라이언트 라는 두 엔터티 간의 통신을 기반으로 합니다. 프로그래밍 모델은 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]의 <xref:System.ServiceModel> 네임 스페이스에 캡슐화 됩니다.

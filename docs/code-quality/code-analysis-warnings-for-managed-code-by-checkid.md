@@ -258,17 +258,17 @@ f1_keywords:
 - CA2243
 - CA5122
 ms.assetid: 5cb221f6-dc59-4abf-9bfa-adbd6f907f96
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2811c905650f215272b650bff955b7264f56d4b5
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 8fe3e338cf2db2493f9f855c5ef398bbb4232e8e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188845"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587734"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>관리 코드 CheckId 별 코드 분석 경고
 
@@ -276,7 +276,7 @@ ms.locfileid: "73188845"
 
 | CheckId | 경고 | 설명 |
 |---------| - | - |
-| CA2007 | [CA2007: 작업을 직접 기다리지 않음](ca2007.md) | 비동기 메서드는 <xref:System.Threading.Tasks.Task>을 직접 [기다립니다](/dotnet/csharp/language-reference/keywords/await) 합니다. 비동기 메서드가 <xref:System.Threading.Tasks.Task>를 직접 기다립니다 작업을 만든 스레드와 동일한 스레드에서 연속 작업이 발생 합니다. 이 동작은 성능 측면에서 비용이 많이 들 수 있으며 UI 스레드에 교착 상태가 발생할 수 있습니다. 연속에 대 한 의도를 알리기 위해 <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType>를 호출 하는 것이 좋습니다. |
+| CA2007 | [CA2007: 작업을 직접 기다리지 않음](ca2007.md) | 비동기 메서드는 <xref:System.Threading.Tasks.Task>를 직접 [기다립니다.](/dotnet/csharp/language-reference/keywords/await) 비동기 메서드가 <xref:System.Threading.Tasks.Task>를 직접 기다립니다 작업을 만든 스레드와 동일한 스레드에서 연속 작업이 발생 합니다. 이 동작은 성능 측면에서 비용이 많이 들 수 있으며 UI 스레드에 교착 상태가 발생할 수 있습니다. 연속에 대 한 의도를 알리기 위해 <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType>를 호출 하는 것이 좋습니다. |
 | CA1000 | [CA1000: 정적 멤버를 제네릭 형식으로 선언하지 마십시오.](../code-quality/ca1000.md) | 제네릭 형식의 정적 멤버를 호출할 때는 형식에 형식 인수를 지정해야 합니다. 유추를 지원하지 않는 제네릭 인스턴스 멤버를 호출할 때는 멤버에 형식 인수를 지정해야 합니다. 이 두 가지 경우에 형식 인수를 지정하기 위한 구문은 서로 다르며 혼동되기 쉽습니다. |
 | CA1001 | [CA1001: 삭제 가능한 필드가 있는 형식은 삭제 가능해야 합니다.](../code-quality/ca1001.md) | 클래스가 System.IDisposable 형식인 인스턴스 필드를 선언하고 구현하지만 IDisposable은 구현하지 않습니다. IDisposable 필드를 선언하는 클래스는 관리되지 않는 리소스를 간접적으로 소유하며 IDisposable 인터페이스를 구현해야 합니다. |
 | CA1002 | [CA1002: 제네릭 목록을 노출하지 마십시오.](../code-quality/ca1002.md) | System.Collections.Generic.List < (의 \<(T >) >)는 상속이 아니라 성능을 위해 설계 된 제네릭 컬렉션입니다. 따라서 List에는 가상 멤버가 포함되지 않습니다. 상속을 위해 디자인된 제네릭 컬렉션이 대신 노출되어야 합니다. |
@@ -292,7 +292,7 @@ ms.locfileid: "73188845"
 | CA1012 | [CA1012: 추상 형식에는 생성자를 사용하면 안 됩니다.](../code-quality/ca1012.md) | 추상 형식에 대한 생성자는 파생된 형식에서만 호출할 수 있습니다. public 생성자에서 형식의 인스턴스를 만들고 사용자는 추상 형식의 인스턴스를 만들 수 없기 때문에 public 생성자가 있는 추상 형식은 잘못 디자인된 것입니다. |
 | CA1013 | [CA1013: 더하기 및 빼기를 오버로드할 때 같음 연산자를 오버로드하십시오.](../code-quality/ca1013.md) | public 또는 protected 형식이 같음 연산자를 구현하지 않고 더하기 또는 빼기 연산자를 구현합니다. |
 | CA1014 | [CA1014: 어셈블리를 CLSCompliantAttribute로 표시하십시오.](../code-quality/ca1014.md) | CLS(공용 언어 사양)는 어셈블리가 여러 프로그래밍 언어에 사용될 경우 준수해야 하는 명명 제한, 데이터 형식 및 규칙을 정의합니다. 모든 어셈블리에는 <xref:System.CLSCompliantAttribute>를 사용하여 CLS 규격을 명시적으로 나타내는 것이 좋습니다. 어셈블리에 이 특성이 없으면 해당 어셈블리는 규격을 따르지 않습니다. |
-| CA1016 | [CA1016: 어셈블리를 AssemblyVersionAttribute로 표시하십시오.](../code-quality/ca1016.md) | .NET에서는 버전 번호를 사용 하 여 어셈블리를 고유 하 게 식별 하 고 강력한 이름의 어셈블리에 있는 형식에 바인딩합니다. 버전 번호는 버전 및 게시자 정책과 함께 사용됩니다. 기본적으로 응용 프로그램은 해당 응용 프로그램이 빌드될 때 사용된 어셈블리 버전으로만 실행됩니다. |
+| CA1016 | [CA1016: 어셈블리를 AssemblyVersionAttribute로 표시하십시오.](../code-quality/ca1016.md) | .NET에서는 버전 번호를 사용 하 여 어셈블리를 고유 하 게 식별 하 고 강력한 이름의 어셈블리에 있는 형식에 바인딩합니다. 버전 번호는 버전 및 게시자 정책과 함께 사용됩니다. 기본적으로 애플리케이션은 해당 애플리케이션이 빌드될 때 사용된 어셈블리 버전으로만 실행됩니다. |
 | CA1017 | [CA1017: 어셈블리를 ComVisibleAttribute로 표시하십시오.](../code-quality/ca1017.md) |ComVisibleAttribute는 COM 클라이언트에서 관리 코드에 액세스하는 방식을 결정합니다. 어셈블리에서 COM에 노출할지 여부를 명시적으로 나타내는 것이 좋은 디자인입니다. 전체 어셈블리에 대해 COM 노출 여부를 설정한 다음 개별 형식 및 형식 멤버에 대해 이를 재정의할 수 있습니다. 이 특성이 없으면 COM 클라이언트에서 어셈블리의 내용을 볼 수 있습니다. |
 | CA1018 | [CA1018: 특성을 AttributeUsageAttribute로 표시하십시오.](../code-quality/ca1018.md) | 사용자 지정 특성을 정의할 때는 해당 특성을 AttributeUsageAttribute로 표시하여 사용자 지정 특성을 적용할 수 있는 소스 코드의 위치를 나타냅니다. 특성의 의미 및 용도에 따라 코드에서의 유효한 위치가 결정됩니다. |
 | CA1019 | [CA1019: 특성 인수의 접근자를 정의하십시오.](../code-quality/ca1019.md) | 특성에서는 대상에 특성을 적용할 때 지정해야 하는 필수 인수를 정의할 수 있습니다. 이러한 인수는 특성 생성자에 위치 매개 변수로 제공되기 때문에 이러한 인수를 위치 인수라고도 합니다. 모든 필수 인수에 대해 특성은 실행 시간에 인수의 값을 검색할 수 있도록 해당하는 읽기 전용 속성도 제공해야 합니다. 특성에서는 명명된 인수라고 하는 선택적 인수도 정의할 수 있습니다. 이들 인수는 이름으로 특성 생성자에 제공되며 해당하는 읽기/쓰기 특성이 있어야 합니다. |
@@ -317,7 +317,7 @@ ms.locfileid: "73188845"
 | CA1041 | [CA1041: ObsoleteAttribute 메시지를 제공하십시오.](../code-quality/ca1041.md) | 형식 또는 멤버가 ObsoleteAttribute.Message 속성이 지정되지 않은 System.ObsoleteAttribute 특성으로 표시되어 있습니다. ObsoleteAttribute로 표시된 형식 또는 멤버를 컴파일하면 해당 특성의 Message 속성이 표시되어 사용되지 않는 형식 또는 멤버에 대한 정보가 사용자에게 제공됩니다. |
 | CA1043 | [CA1043: 인덱서에 정수 또는 문자열 인수를 사용하십시오.](../code-quality/ca1043.md) | 인덱서, 즉 인덱싱된 속성은 인덱스에 정수 계열 형식이나 문자열 형식을 사용해야 합니다. 이러한 형식은 대개 데이터 구조를 인덱싱하는 데 사용되며 라이브러리의 유용성을 증가시킵니다. Object 형식은 디자인 타임에 특정 정수 계열 형식이나 문자열 형식을 지정할 수 없는 경우에만 제한적으로 사용해야 합니다. |
 | CA1044 | [CA1044: 속성은 쓰기 전용이면 안 됩니다.](../code-quality/ca1044.md) | 읽기 전용 속성을 사용하는 것은 가능하고 종종 필요하기도 하지만 쓰기 전용 속성의 사용은 금지되어 있습니다. 사용자에게 값을 설정하도록 허용한 다음 해당 값을 볼 수 없도록 하면 보안상 문제가 있기 때문입니다. 또한 읽기 권한이 없으면 공유 개체의 상태를 볼 수 없으므로 사용하는 데 제한을 받습니다. |
-| CA1045 |[CA1045: 참조로 참조 형식을 전달하지 않습니다.](../code-quality/ca1045.md) | out 또는 ref를 사용하여 참조로 형식을 전달하려면 포인터 사용 방법을 알고 있어야 하고, 값 형식과 참조 형식이 어떻게 다른지 알고 있어야 하며, 반환 값이 여러 개인 메서드를 처리할 수 있어야 합니다. 일반 사용자를 위해 디자인 한 라이브러리 설계자는 사용자가 `out` 또는 `ref` 매개 변수로 작업 하는 것으로 간주 하지 않아야 합니다. |
+| CA1045 |[CA1045: 참조로 참조 형식을 전달하지 않습니다.](../code-quality/ca1045.md) | out 또는 ref를 사용하여 참조로 형식을 전달하려면 포인터 사용 방법을 알고 있어야 하고, 값 형식과 참조 형식이 어떻게 다른지 알고 있어야 하며, 반환 값이 여러 개인 메서드를 처리할 수 있어야 합니다. 일반 사용자를 위해 디자인 한 라이브러리 설계자는 사용자가 `out` 또는 `ref` 매개 변수로 작업 하는 것을 예측할 수 없습니다. |
 | CA1046 | [CA1046: 참조 형식에 같음 연산자를 오버로드하지 마십시오.](../code-quality/ca1046.md) | 참조 형식의 경우 같음 연산자의 기본 구현은 대부분 항상 올바릅니다. 기본적으로 두 참조는 같은 개체를 가리킬 경우에만 같습니다. |
 | CA1047 |[CA1047: protected 멤버를 sealed 형식으로 선언하지 마십시오.](../code-quality/ca1047.md) | 형식에서는 상속하는 형식에서 멤버에 액세스하거나 멤버를 재정의할 수 있도록 하기 위해 protected 멤버를 선언합니다. 정의에 따라 sealed 형식은 상속할 수 없으므로 sealed 형식에 대해 protected 메서드를 호출할 수 없습니다. |
 | CA1048 | [CA1048: 가상 멤버를 sealed 형식으로 선언하지 마십시오.](../code-quality/ca1048.md) | 상속 형식이 가상 메서드의 구현을 재정의할 수 있도록 하기 위해 형식은 메서드를 가상으로 선언합니다. 정의에 따라 sealed 형식은 상속할 수 없습니다. 따라서 sealed 형식에 대한 가상 메서드는 의미가 없습니다. |
@@ -339,7 +339,7 @@ ms.locfileid: "73188845"
 | CA1064 | [CA1064: 예외는 public이어야 합니다.](../code-quality/ca1064.md) | 내부 예외는 내부 범위 내에만 표시됩니다. 예외가 내부 범위 밖에 놓이게 되면 예외를 catch하는 데 기본 예외만 사용할 수 있습니다. 내부 예외에서 상속 되 면 <xref:System.Exception>, <xref:System.SystemException>, 또는 <xref:System.ApplicationException>, 외부 코드에 예외를 사용 하 여 수행할 작업을 알고에 충분 한 정보가 없습니다. |
 | CA1065 | [CA1065: 예기치 않은 위치에서 예외를 발생시키지 마십시오.](../code-quality/ca1065.md) | 예외를 throw하지 않아야 하는 메서드가 예외를 throw했습니다. |
 | CA1068 | [CA1068: CancellationToken 매개 변수는 마지막에와 야 합니다.](../code-quality/ca1068.md) | 메서드에 마지막 매개 변수가 아닌 CancellationToken 매개 변수가 있습니다. |
-| CA1200 | [CA1200: cref 태그를 접두사로 사용 하지 마십시오.](../code-quality/ca1200.md) | XML 문서 태그의 [cref](/dotnet/csharp/programming-guide/xmldoc/cref-attribute) 특성은 "코드 참조"를 의미 합니다. 태그의 내부 텍스트를 형식, 메서드, 속성 등의 코드 요소로 지정합니다. 컴파일러가 참조를 확인 하는 것을 방지 하므로 접두사에 `cref` 태그를 사용 하지 마십시오. 또한 Visual Studio IDE (통합 개발 환경)에서 리팩터링 중에 이러한 기호 참조를 찾아 업데이트할 수 없습니다. |
+| CA1200 | [CA1200: cref 태그를 접두사로 사용 하지 마십시오.](../code-quality/ca1200.md) | XML 문서 태그의 [cref](/dotnet/csharp/programming-guide/xmldoc/cref-attribute) 특성은 "코드 참조"를 의미 합니다. 태그의 내부 텍스트를 형식, 메서드, 속성 등의 코드 요소로 지정합니다. 컴파일러가 참조를 확인 하는 것을 방지 하므로 접두사와 함께 `cref` 태그를 사용 하지 마십시오. 또한 Visual Studio IDE (통합 개발 환경)에서 리팩터링 중에 이러한 기호 참조를 찾아 업데이트할 수 없습니다. |
 | CA1300 | [CA1300: MessageBoxOptions를 지정하십시오.](../code-quality/ca1300.md) | 오른쪽에서 왼쪽으로 읽기 순서를 사용하는 문화권에 대해 메시지 상자를 올바로 표시하려면 MessageBoxOptions 열거형의 RightAlign 및 RtlReading 멤버를 Show 메서드로 전달해야 합니다. |
 | CA1301 | [CA1301: 중복 액셀러레이터 키를 사용하지 마십시오.](../code-quality/ca1301.md) | 액셀러레이터 키라고도 하는 선택키를 사용하면 Alt 키를 사용하여 키보드로 컨트롤에 액세스할 수 있습니다. 여러 컨트롤에 중복 된 액세스 키가 있는 경우에는 액세스 키의 동작이 제대로 정의 되지 않습니다. |
 | CA1302 | [CA1302: 로캘별 문자열을 하드 코딩하지 마십시오.](../code-quality/ca1302.md) | System.Environment.SpecialFolder 열거형에는 특수 시스템 폴더를 참조하는 멤버가 포함되어 있습니다. 이러한 폴더의 위치는 운영 체제에 따라 값이 다를 수 있으며, 사용자가 위치 일부를 변경할 수 있고, 위치는 지역화됩니다. Environment.GetFolderPath 메서드는 Environment.SpecialFolder 열거형과 연관된 위치를 반환하며 이 위치는 지역화되므로 현재 실행되고 있는 컴퓨터에 적합합니다. |
@@ -407,7 +407,7 @@ ms.locfileid: "73188845"
 | CA1811 | [CA1811: 호출되지 않는 전용 코드를 사용하지 마십시오.](../code-quality/ca1811.md) | 어셈블리에 private 또는 internal(어셈블리 수준) 멤버의 호출자가 없고, 공용 언어 런타임에서도 이 멤버를 호출하지 않으며, 대리자에서도 이 멤버를 호출하지 않습니다. |
 | CA1812 | [CA1812: 인스턴스화되지 않은 내부 클래스를 사용하지 마십시오.](../code-quality/ca1812.md) | 어셈블리 수준 형식의 인스턴스가 어셈블리에서 코드에 의해 만들어지지 않습니다. |
 | CA1813 | [CA1813: 봉인되지 않은 특성을 사용하지 마십시오.](../code-quality/ca1813.md) | .NET에서는 사용자 지정 특성을 검색 하는 메서드를 제공 합니다. 기본적으로 이러한 메서드는 특성 상속 계층을 검색합니다. 특성을 봉인하면 상속 계층을 검색하지 않으므로 성능이 향상될 수 있습니다. |
-| CA1814 | [CA1814: 다차원 배열보다 가변 배열을 사용하십시오.](../code-quality/ca1814.md) | 가변 배열의 요소에는 배열이 사용됩니다. 요소를 구성하는 배열의 크기는 서로 다를 수 있습니다. 이 경우 일부 데이터 집합에 대한 공간을 절약할 수 있습니다. |
+| CA1814 | [CA1814: 다차원 배열보다 가변 배열을 사용하십시오.](../code-quality/ca1814.md) | 가변 배열이란 해당 요소가 배열인 배열입니다. 요소를 구성하는 배열의 크기는 서로 다를 수 있습니다. 이 경우 일부 데이터 집합에 대한 공간을 절약할 수 있습니다. |
 | CA1815 | [CA1815: 값 형식에서 Equals 또는 같음 연산자를 재정의하십시오.](../code-quality/ca1815.md) | 값 형식의 경우 Equals의 상속된 구현에서 Reflection 라이브러리를 사용하며 모든 필드의 내용을 비교합니다. Reflection에는 많은 계산이 요구되며 모든 필드의 일치 여부를 비교하는 것이 불필요할 수 있습니다. 사용자가 인스턴스를 비교 또는 정렬하거나 인스턴스를 해시 테이블 키로 사용할 것으로 예측되는 경우에는 값 형식에서 Equals를 구현해야 합니다. |
 | CA1816 | [CA1816: GC.SuppressFinalize를 올바르게 호출하십시오.](../code-quality/ca1816.md) | Dispose 구현인 메서드가 GC를 호출 하지 않습니다. SuppressFinalize; 또는 Dispose 구현 되지 않는 메서드가 GC를 호출 합니다. SuppressFinalize; 또는 GC를 호출 합니다. SuppressFinalize 및 전달이 (Visual Basic의 Me) 이외의 것입니다. |
 | CA1819 | [CA1819: 속성은 배열을 반환해서는 안 됩니다.](../code-quality/ca1819.md) | 속성에서 반환된 배열은 속성이 읽기 전용이더라도 쓰기 금지되지 않습니다. 배열을 무단으로 변경하지 못하도록 하려면 속성에서 배열의 복사본을 반환해야 합니다. 일반적으로 사용자는 이러한 속성을 호출할 경우 성능에 부정적인 영향을 준다는 것을 인식하지 못합니다. |
@@ -422,7 +422,7 @@ ms.locfileid: "73188845"
 | CA1903 | [CA1903: 대상 프레임워크에서 API만 사용하십시오.](../code-quality/ca1903.md) | 멤버 또는 형식이 프로젝트의 대상 프레임워크에 함께 포함되지 않은 서비스 팩에 도입된 멤버 또는 형식을 사용합니다. |
 | CA2000 | [CA2000: 범위를 벗어나기 전에 개체를 삭제하십시오.](../code-quality/ca2000.md) | 개체의 종료자가 실행되지 못하도록 하는 예외 이벤트가 발생할 수 있기 때문에 개체에 대한 모든 참조가 범위를 벗어나기 전에 개체를 명시적으로 삭제해야 합니다. |
 | CA2001 | [CA2001: 문제가 있는 메서드는 호출하지 마십시오.](../code-quality/ca2001.md) | 멤버에서 잠재적 위험이나 문제가 있는 메서드를 호출합니다. |
-| CA2002 |[CA2002: 약한 ID를 가진 개체를 잠그지 마십시오.](../code-quality/ca2002.md) |응용 프로그램 도메인 경계를 가로질러 직접 액세스할 수 있는 개체를 약한 ID를 가진 개체라고 합니다. 약한 ID를 가진 개체에 대해 잠금을 가져오려고 시도하는 스레드는 같은 개체에 대해 잠금을 가진 다른 응용 프로그램 도메인의 스레드에 의해 차단될 수 있습니다. |
+| CA2002 |[CA2002: 약한 ID를 가진 개체를 잠그지 마십시오.](../code-quality/ca2002.md) |애플리케이션 도메인 경계를 가로질러 직접 액세스할 수 있는 개체를 약한 ID를 가진 개체라고 합니다. 약한 ID를 가진 개체에 대해 잠금을 가져오려고 시도하는 스레드는 같은 개체에 대해 잠금을 가진 다른 애플리케이션 도메인의 스레드에 의해 차단될 수 있습니다. |
 | CA2003 |[CA2003: 파이버를 스레드로 취급하지 마십시오.](../code-quality/ca2003.md) | 관리되는 스레드가 [!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)] 스레드처럼 취급됩니다. |
 | CA2004 | [CA2004: GC.KeepAlive에 대한 호출을 제거하십시오.](../code-quality/ca2004.md) | SafeHandle을 사용하는 방식으로 변환하는 경우 GC.KeepAlive(개체)에 대한 모든 호출을 제거해야 합니다. 이 경우 클래스에 종료자가 없지만 SafeHandle을 사용하여 OS 핸들을 종료하는 것으로 간주하므로 클래스에서 GC.KeepAlive를 호출할 필요가 없습니다. |
 | CA2006 | [CA2006: SafeHandle을 사용하여 네이티브 리소스를 캡슐화하십시오.](../code-quality/ca2006.md) | 관리 코드에 IntPtr을 사용하는 것은 잠재적인 보안 및 안정성 문제를 나타냅니다. IntPtr을 사용할 때마다 SafeHandle 또는 유사한 기술을 대신 사용해야 하는지 여부를 결정하도록 검토해야 합니다. |
@@ -436,7 +436,7 @@ ms.locfileid: "73188845"
 | CA2107 | [CA2107: Deny 및 PermitOnly 사용을 검토하십시오.](../code-quality/ca2107.md) |PermitOnly 메서드 및 CodeAccessPermission. 보안 거부 동작은 .NET 보안에 대 한 고급 지식이 있는 사용자만 사용 해야 합니다. 이러한 보안 동작을 사용하는 코드는 보안 검토를 거쳐야 합니다. |
 | CA2108 | [CA2108: 값 형식에서 선언적 보안을 검토하십시오.](../code-quality/ca2108.md) | public 또는 protected 값 형식이 데이터 액세스 또는 링크 요청에 의해 보안됩니다. |
 | CA2109 | [CA2109: 표시되는 이벤트 처리기를 검토하십시오.](../code-quality/ca2109.md) | public 또는 protected 이벤트 처리 메서드를 발견했습니다. 이벤트 처리 메서드는 반드시 필요한 경우를 제외하고 노출하면 안 됩니다. |
-| CA2111 |[CA2111: 포인터는 노출되면 안 됩니다.](../code-quality/ca2111.md) | 포인터가 전용, 내부 또는 읽기 전용이 아닙니다. 악의적인 코드에서 해당 포인터 값을 변경하여 메모리 내 임의의 위치에 액세스할 수 있게 되거나 응용 프로그램 또는 시스템 오류를 발생시킬 수 있습니다. |
+| CA2111 |[CA2111: 포인터는 노출되면 안 됩니다.](../code-quality/ca2111.md) | 포인터가 전용, 내부 또는 읽기 전용이 아닙니다. 악의적인 코드에서 해당 포인터 값을 변경하여 메모리 내 임의의 위치에 액세스할 수 있게 되거나 애플리케이션 또는 시스템 오류를 발생시킬 수 있습니다. |
 | CA2112 | [CA2112: 보안 형식은 필드를 노출하면 안 됩니다.](../code-quality/ca2112.md) | public 또는 protected 형식이 public 필드를 포함하고 링크 요청에 의해 보안됩니다. 코드에 링크 요청으로 보안된 형식의 인스턴스에 대한 액세스 권한이 있으면 코드에서 링크 요청을 만족하지 않아도 해당 형식의 필드에 액세스할 수 있습니다. |
 | CA2114 | [CA2114: 메서드 보안은 형식의 상위 집합이어야 합니다.](../code-quality/ca2114.md) | 메서드에는 같은 동작에 대해 메서드 수준과 형식 수준의 선언적 보안이 모두 있으면 안 됩니다. |
 | CA2115 | [CA2115: 네이티브 리소스를 사용하는 경우에는 GC.KeepAlive를 호출하십시오.](../code-quality/ca2115.md) | 이 규칙에서는 관리되지 않는 리소스가 비관리 코드에서 여전히 사용되고 있는데 종료되려고 할 경우 발생할 수 있는 오류를 감지합니다. |
@@ -452,7 +452,7 @@ ms.locfileid: "73188845"
 | CA2126 | [CA2126: 형식 링크 요청에는 상속 요청이 필요합니다.](../code-quality/ca2126.md) | public unsealed 형식이 링크 요청으로 보호되며 재정의 가능한 메서드를 포함합니다. 형식이나 메서드는 모두 상속 요청으로 보호됩니다. |
 | CA2130 | [CA2130: 보안 위험 상수는 투명해야 합니다.](../code-quality/ca2130.md) | 런타임에 조회가 필요하지 않도록 컴파일러에서 상수 값을 인라인하기 때문에 상수 값에 투명성이 적용되지 않습니다. 상수 필드는 보안 투명해야 하므로 코드 검토자는 투명 코드가 상수에 액세스할 수 없다고 가정하지 않습니다. |
 | CA2131 | [CA2131: 보안에 중요한 형식은 형식 등가에 참여할 수 없습니다.](../code-quality/ca2131.md) | 형식이 형식 동등에 참여하는데, 해당 형식 자체 또는 해당 형식의 멤버나 필드가 SecurityCriticalAttribute 특성을 사용하여 표시되어 있습니다. 이 규칙은 중요한 형식 또는 중요한 메서드나 필드를 포함하는 형식이 형식 동등에 참여하는 경우에 적용됩니다. CLR에서 이러한 형식이 검색되면 런타임에 해당 형식이 로드되지 않고 TypeLoadException이 throw됩니다. 일반적으로 이 규칙은 사용자가 tlbimp와 컴파일러를 이용하여 형식 동등을 수행하는 대신 수동으로 형식 동등을 구현하는 경우에만 적용됩니다. |
-| CA2132 | [CA2132: 기본 생성자는 최소한 기본 형식 기본 생성자만큼 중요해야 합니다.](../code-quality/ca2132.md) |SecurityCriticalAttribute가 있는 형식 및 멤버는 Silverlight 애플리케이션 코드에서 사용할 수 없습니다. 보안에 중요한 형식 및 멤버는 .NET Framework for Silverlight 클래스 라이브러리의 신뢰할 수 있는 코드에서만 사용할 수 있습니다. 파생 클래스의 public 또는 protected 구성 요소는 투명성이 기본 클래스보다 높거나 같아야 하기 때문에 응용 프로그램의 클래스는 SecurityCritical로 표시된 클래스에서 파생될 수 없습니다. |
+| CA2132 | [CA2132: 기본 생성자는 최소한 기본 형식 기본 생성자만큼 중요해야 합니다.](../code-quality/ca2132.md) |SecurityCriticalAttribute가 있는 형식 및 멤버는 Silverlight 애플리케이션 코드에서 사용할 수 없습니다. 보안에 중요한 형식 및 멤버는 .NET Framework for Silverlight 클래스 라이브러리의 신뢰할 수 있는 코드에서만 사용할 수 있습니다. 파생 클래스의 public 또는 protected 구성 요소는 투명성이 기본 클래스보다 높거나 같아야 하기 때문에 애플리케이션의 클래스는 SecurityCritical로 표시된 클래스에서 파생될 수 없습니다. |
 | CA2133 | [CA2133: 대리인은 투명도가 일관된 메서드에 바인딩해야 합니다.](../code-quality/ca2133.md) | 이 경고는 SecurityCriticalAttribute를 사용하여 표시된 대리자를 SecuritySafeCriticalAttribute를 사용하여 표시되거나 투명한 메서드에 바인딩하는 메서드에서 발생합니다. 또한 투명하거나 안전에 중요한 대리자를 중요한 메서드에 바인딩하는 메서드에서도 이 경고가 발생합니다. |
 | CA2134 | [CA2134: 메서드는 기본 메서드를 재정의할 때 일관성 있는 방식을 유지해야 합니다.](../code-quality/ca2134.md) |이 규칙은 SecurityCriticalAttribute를 사용하여 표시된 메서드가 SecuritySafeCriticalAttribute를 사용하여 표시되거나 투명한 메서드를 재정의할 때 적용됩니다. 또한 SecuritySafeCriticalAttribute를 사용하여 표시되거나 투명한 메서드가 SecurityCriticalAttribute를 사용하여 표시된 메서드를 재정의할 때도 이 규칙이 적용됩니다. 이 규칙은 가상 메서드를 재정의하거나 인터페이스를 구현할 때 적용됩니다. |
 | CA2135 | [CA2135: 수준 2 어셈블리는 LinkDemands를 포함해서는 안 됩니다.](../code-quality/ca2135.md) | LinkDemands는 수준 2 보안 규칙 집합에서 사용되지 않습니다. JIT 컴파일 시 보안을 적용하는 데 LinkDemands를 사용하는 대신, 해당 메서드, 형식 및 필드를 SecurityCriticalAttribute 특성으로 표시하십시오. |
@@ -481,7 +481,7 @@ ms.locfileid: "73188845"
 | CA2207 | [CA2207: 값 형식 정적 필드를 인라인으로 초기화하십시오.](../code-quality/ca2207.md) | 값 형식에서 명시적인 정적 생성자를 선언합니다. 이 규칙 위반 문제를 해결하려면 모든 정적 데이터를 선언할 때 초기화하고 정적 생성자를 제거합니다. |
 | CA2208 |[CA2208: 인수 예외를 올바르게 인스턴스화하십시오.](../code-quality/ca2208.md) | ArgumentException 또는 ArgumentException에서 파생된 예외 형식의 기본(매개 변수가 없는) 생성자를 호출했거나, ArgumentException 또는 ArgumentException에서 파생된 예외 형식의 매개 변수가 있는 생성자에 잘못된 문자열 인수가 전달되었습니다. |
 | CA2210 |[CA2210: 어셈블리에는 올바른 강력한 이름을 사용해야 합니다.](../code-quality/ca2210.md) | 강력한 이름은 클라이언트에서 무단으로 변경된 어셈블리를 모르는 사이에 로드하지 못하도록 보호합니다. 강력한 이름이 없는 어셈블리는 극히 제한된 시나리오 이외에는 배포하면 안 됩니다. 제대로 서명되지 않은 어셈블리를 공유하거나 배포하면 어셈블리가 무단으로 변경되거나, 공용 언어 런타임에서 어셈블리를 로드할 수 없거나, 사용자가 자신의 컴퓨터에서 확인을 사용하지 못하게 될 수 있습니다. |
-| CA2211 |[CA2211: 비상수 필드는 노출되면 안 됩니다.](../code-quality/ca2211.md) | 상수도 아니고 읽기 전용도 아닌 정적 필드는 스레드로부터 안전하지 않습니다. 이러한 필드에 대한 액세스는 신중하게 제어해야 하며 클래스 개체에 대한 액세스를 동기화하는 고급 프로그래밍 기술을 필요로 합니다. |
+| CA2211 |[CA2211: 비상수 필드는 노출되면 안 됩니다.](../code-quality/ca2211.md) | 상수도 아니고 읽기 전용도 아닌 static 필드는 스레드로부터 안전하지 않습니다. 이러한 필드에 대한 액세스는 신중하게 제어해야 하며 클래스 개체에 대한 액세스를 동기화하는 고급 프로그래밍 기술을 필요로 합니다. |
 | CA2212 | [CA2212: 서비스 구성 요소를 WebMethod를 사용하여 표시하지 마십시오.](../code-quality/ca2212.md) |System.EnterpriseServices.ServicedComponent로부터 상속하는 형식의 메서드가 System.Web.Services.WebMethodAttribute로 표시되어 있습니다. WebMethodAttribute 및 ServicedComponent 메서드에는 컨텍스트와 트랜잭션 흐름에 있어 충돌하는 동작 및 요구 사항이 있으므로 메서드의 동작이 일부 시나리오에서 잘못됩니다. |
 | CA2213 | [CA2213: 삭제 가능한 필드는 삭제해야 합니다.](../code-quality/ca2213.md) | System.IDisposable을 구현하는 형식이 마찬가지로 IDisposable을 구현하는 형식으로 된 필드를 선언합니다. 필드의 Dispose 메서드가 선언 형식의 Dispose 메서드에 의해 호출되지 않습니다. |
 | CA2214 | [CA2214: 재정의 가능한 메서드를 생성자에서 호출하지 마십시오.](../code-quality/ca2214.md) | 생성자가 가상 메서드를 호출할 때 이 메서드를 호출하는 인스턴스의 생성자가 실행되지 않았을 가능성이 있습니다. |
@@ -502,7 +502,7 @@ ms.locfileid: "73188845"
 | CA2229 | [CA2229: serialization 생성자를 구현하십시오.](../code-quality/ca2229.md) | 이 규칙 위반 문제를 해결하려면 serialization 생성자를 구현합니다. 봉인 클래스의 경우에는 생성자를 private으로 만들고, 그 밖의 경우에는 protected로 만듭니다. |
 | CA2230 | [CA2230: 가변 인수로 params를 사용하십시오.](../code-quality/ca2230.md) | public 또는 protected 형식에 params 키워드 대신 VarArgs 호출 규칙을 사용하는 public 또는 protected 메서드가 들어 있습니다. |
 | CA2231 | [CA2231: ValueType.Equals를 재정의할 때 같음 연산자를 오버로드하십시오.](../code-quality/ca2231.md) | 값 형식이 Object.Equals를 재정의하지만 같음 연산자를 구현하지 않습니다. |
-| CA2232 | [CA2232: Windows Forms 진입점을 STAThread를 사용하여 표시하십시오.](../code-quality/ca2232.md) | STAThreadAttribute는 응용 프로그램에 대한 COM 스레딩 모델이 단일 스레드 아파트임을 나타냅니다. 이 특성은 Windows Forms을 사용하는 응용 프로그램의 진입점에 있어야 합니다. 이 특성을 생략하면 Windows 구성 요소가 제대로 작동하지 않을 수 있습니다. |
+| CA2232 | [CA2232: Windows Forms 진입점을 STAThread를 사용하여 표시하십시오.](../code-quality/ca2232.md) | STAThreadAttribute는 애플리케이션에 대한 COM 스레딩 모델이 단일 스레드 아파트임을 나타냅니다. 이 특성은 Windows Forms을 사용하는 애플리케이션의 진입점에 있어야 합니다. 이 특성을 생략하면 Windows 구성 요소가 제대로 작동하지 않을 수 있습니다. |
 | CA2233 |[CA2233: 연산은 오버플로되지 않아야 합니다.](../code-quality/ca2233.md) | 산술 연산을 수행하려면 먼저 피연산자의 유효성을 검사하여 연산의 결과가 관련 데이터 형식의 가능한 값 범위를 벗어나지 않도록 해야 합니다. |
 | CA2234 | [CA2234: 문자열 대신 System.Uri 개체를 전달하십시오.](../code-quality/ca2234.md) | 이름에 "uri", "URI", "urn", "URN", "url" 또는 "URL"이 포함된 문자열 매개 변수가 있는 메서드가 호출되었습니다. 메서드의 선언 형식에 System.Uri 매개 변수를 가진 해당 메서드 오버로드가 들어 있습니다. |
 | CA2235 | [CA2235: 모두 serialize할 수 없는 필드로 표시하십시오.](../code-quality/ca2235.md) | serialize할 수 없는 형식의 인스턴스 필드가 serialize할 수 있는 형식에 정의되었습니다. |

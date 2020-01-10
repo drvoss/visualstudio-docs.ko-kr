@@ -4,17 +4,17 @@ ms.date: 01/25/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, SDKs, SDK
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0be8f9ed17bf4474307a639bb75f409da2ff1638
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: d40e437763ba3eb75daa80a3a1bbf55ba9d896c9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911304"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75574459"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>방법: MSBuild 프로젝트 SDK 사용
 
@@ -120,7 +120,7 @@ NuGet 기반 SDK 확인자는 개별 프로젝트 각각이 아닌 한 곳에서
 
 빌드 중에는 각 프로젝트 SDK 버전을 하나만 사용할 수 있습니다.  동일한 프로젝트 SDK의 두 가지 버전을 참조하는 경우 MSBuild에서 경고를 생성합니다.  *global.json*에 버전이 지정된 경우 프로젝트에서 버전을 지정하지 **않는** 것이 좋습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [MSBuild 개념](../msbuild/msbuild-concepts.md)
 - [빌드 사용자 지정](../msbuild/customize-your-build.md)

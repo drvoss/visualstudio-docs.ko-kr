@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, generating templates from templates
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a9afe2670bb086627407a9f1bc674edfc2fe354
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1460b03a027a2b33844edc7d617f8b5f21208772
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605467"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594645"
 ---
 # <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>방법: 이스케이프 시퀀스를 사용하여 템플릿에서 템플릿 생성
 다른 텍스트 템플릿을 생성 된 텍스트 출력으로 만드는 텍스트 템플릿을 만들 수 있습니다. 이렇게 하려면 이스케이프 시퀀스를 사용 하 여 텍스트 템플릿 태그를 나타내야 합니다. 이스케이프 시퀀스를 사용 하지 않는 경우 생성 된 텍스트 템플릿은 미리 정의 된 의미를 갖게 됩니다. 텍스트 템플릿에서 이스케이프 시퀀스를 사용 하는 방법에 대 한 자세한 내용은 [텍스트 템플릿에서 이스케이프 시퀀스 사용](../modeling/using-escape-sequences-in-text-templates.md)을 참조 하세요.
@@ -30,8 +30,8 @@ ms.locfileid: "72605467"
     \<#+ classfeature \#>
     ```
 
-## <a name="example"></a>예제
- 다음 예에서는 이스케이프 문자를 사용 하 여 텍스트 템플릿에서 텍스트 템플릿을 생성 합니다. @No__t_0 지시어는 대상 파일 형식을 텍스트 템플릿 파일 형식 (.tt)으로 설정 합니다.
+## <a name="example"></a>예
+ 다음 예에서는 이스케이프 문자를 사용 하 여 텍스트 템플릿에서 텍스트 템플릿을 생성 합니다. `output` 지시어는 대상 파일 형식을 텍스트 템플릿 파일 형식 (.tt)으로 설정 합니다.
 
 ```csharp
 \<#@ output extension=".tt" \#>

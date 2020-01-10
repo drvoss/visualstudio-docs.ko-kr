@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2647c09718f17235a3024f5787a0b85a7633ee1
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: d792f13e073f11c8e6d3a652c1d041902f1209c9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982244"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848914"
 ---
 # <a name="image-service-and-catalog"></a>이미지 서비스 및 카탈로그
 이 cookbook에는 visual studio 2015에 도입 된 Visual Studio 이미지 서비스 및 이미지 카탈로그를 채택 하는 방법에 대 한 지침과 모범 사례가 포함 되어 있습니다.
@@ -43,7 +43,7 @@ ms.locfileid: "72982244"
 
   ![이미지 서비스 전후](../extensibility/media/image-service-before-and-after.png "이미지 서비스 이전 및 이후")
 
-## <a name="how-it-works"></a>작동 방식
+## <a name="how-it-works"></a>작동 방법
  이미지 서비스는 지원 되는 모든 UI 프레임 워크에 적합 한 비트맵 이미지를 제공할 수 있습니다.
 
 - WPF: BitmapSource
@@ -89,7 +89,7 @@ ms.locfileid: "72982244"
 </ImageManifest>
 ```
 
- **기호만**
+ **Symbols**
 
  가독성 및 유지 관리를 돕기 위해 이미지 매니페스트는 특성 값에 기호를 사용할 수 있습니다. 기호는 다음과 같이 정의 됩니다.
 
@@ -108,7 +108,7 @@ ms.locfileid: "72982244"
 |가져오기|현재 매니페스트에서 사용할 지정 된 매니페스트 파일의 기호를 가져옵니다.|
 |GUID|기호는 GUID를 나타내며 GUID 형식과 일치 해야 합니다.|
 |ID|기호는 ID를 나타내고 음수가 아닌 정수 여야 합니다.|
-|String|기호는 임의의 문자열 값을 나타냅니다.|
+|문자열|기호는 임의의 문자열 값을 나타냅니다.|
 
  기호는 대/소문자를 구분 하며 $ (기호-이름) 구문을 사용 하 여 참조 됩니다.
 
@@ -122,14 +122,14 @@ ms.locfileid: "72982244"
 
 |||
 |-|-|
-|**화살표**|**설명**|
+|**기호**|**설명**|
 |CommonProgramFiles|% CommonProgramFiles% 환경 변수의 값입니다.|
 |LocalAppData|% LocalAppData% 환경 변수의 값입니다.|
 |ManifestFolder|매니페스트 파일을 포함 하는 폴더입니다.|
 |MyDocuments|현재 사용자의 내 문서 폴더에 대 한 전체 경로입니다.|
 |ProgramFiles|% ProgramFiles% 환경 변수의 값입니다.|
-|시스템|*Windows\System32* 폴더|
-|I|% WinDir% 환경 변수의 값입니다.|
+|System|*Windows\System32* 폴더|
+|WinDir|% WinDir% 환경 변수의 값입니다.|
 
  **Image**
 
@@ -173,9 +173,9 @@ ms.locfileid: "72982244"
 |-|-|-|
 |**요소**|**특성 (모두 필수)**|**정의**|
 |\<크기 >|값|원본은 지정 된 크기 (장치 단위)의 이미지에 사용 됩니다. 이미지가 정사각형이 됩니다.|
-|\<SizeRange >|MinSize, MaxSize|원본은 MinSize에서 MaxSize (장치 단위)까지 이미지에 사용 됩니다. 이미지가 정사각형이 됩니다.|
-|\<차원 >|너비, 높이|원본은 지정 된 너비 및 높이 (장치 단위)의 이미지에 사용 됩니다.|
-|\<DimensionRange >|MinWidth, MinHeight,<br /><br /> MaxWidth, Maxwidth|이 소스는 최소 너비/높이에서 최대 너비/높이 (장치 단위)로 이루어진 이미지에 사용 됩니다.|
+|\<SizeRange>|MinSize, MaxSize|원본은 MinSize에서 MaxSize (장치 단위)까지 이미지에 사용 됩니다. 이미지가 정사각형이 됩니다.|
+|\<차원 >|Width, Height|원본은 지정 된 너비 및 높이 (장치 단위)의 이미지에 사용 됩니다.|
+|\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, Maxwidth|이 소스는 최소 너비/높이에서 최대 너비/높이 (장치 단위)로 이루어진 이미지에 사용 됩니다.|
 
  \<소스 > 요소에는 선택적 \<Nativerver> 하위 요소가 있을 수 있습니다 .이 하위 요소는 관리 되는 어셈블리가 아니라 네이티브 어셈블리에서 로드 되는 \<소스 >를 정의 합니다.
 
@@ -186,7 +186,7 @@ ms.locfileid: "72982244"
 |||
 |-|-|
 |**특성**|**정의**|
-|Type|하다 네이티브 리소스의 형식 (XAML 또는 PNG)입니다.|
+|형식|하다 네이티브 리소스의 형식 (XAML 또는 PNG)입니다.|
 |ID|하다 네이티브 리소스의 정수 ID 부분입니다.|
 
  **ImageList**
@@ -214,35 +214,35 @@ ms.locfileid: "72982244"
 ### <a name="first-steps-managed"></a>첫 번째 단계 (관리 됨)
  이미지 서비스를 사용 하려면 다음 어셈블리 중 일부 또는 전부에 대 한 참조를 프로젝트에 추가 해야 합니다.
 
-- *VisualStudio. ImageCatalog*
+- *Microsoft.VisualStudio.ImageCatalog.dll*
 
   - 기본 제공 이미지 카탈로그 **Knownmonikers**를 사용 하는 경우 필요 합니다.
 
-- *VisualStudio.*
+- *Microsoft.VisualStudio.Imaging.dll*
 
   - WPF UI에서 **CrispImage** 및 **Imagethemingutilities** 를 사용 하는 경우 필요 합니다.
 
-- *VisualStudio. 14.0. m d.*
+- *Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll*
 
   - **ImageMoniker** 및 **ImageAttributes** 형식을 사용 하는 경우 필요 합니다.
 
   - **EmbedInteropTypes** 를 true로 설정 해야 합니다.
 
-- *VisualStudio. 14.0 시간입니다.*
+- *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime*
 
   - **IVsImageService2** 형식을 사용 하는 경우 필수 사항입니다.
 
   - **EmbedInteropTypes** 를 true로 설정 해야 합니다.
 
-- *VisualStudio.*
+- *Microsoft.VisualStudio.Utilities.dll*
 
   - WPF UI에서 ImageBackgroundColor에 **BrushToColorConverter** 를 사용 하는 경우 필요 합니다 **.**
 
-- *VisualStudio VSVersion >\<. 0*
+- *Microsoft.VisualStudio.Shell.\<VSVersion>.0*
 
   - **Ivsuiobject** 유형을 사용 하는 경우 필요 합니다.
 
-- *VisualStudio (영문).*
+- *Microsoft.VisualStudio.Shell.Interop.10.0.dll*
 
   - WinForms 관련 UI 도우미를 사용 하는 경우 필요 합니다.
 
@@ -251,23 +251,23 @@ ms.locfileid: "72982244"
 ### <a name="first-steps-native"></a>첫 번째 단계 (네이티브)
  이미지 서비스를 사용 하려면 다음 헤더 중 일부 또는 모두를 프로젝트에 포함 해야 합니다.
 
-- **KnownImageIds**
+- **KnownImageIds.h**
 
   - 기본 제공 이미지 카탈로그 **Knownmonikers**를 사용 하지만 **IVsHierarchy GetGuidProperty** 또는 **GetProperty** 호출에서 값을 반환 하는 경우와 같이 **ImageMoniker** 형식을 사용할 수 없는 경우에 필요 합니다.
 
-- **KnownMonikers .h**
+- **KnownMonikers.h**
 
   - 기본 제공 이미지 카탈로그 **Knownmonikers**를 사용 하는 경우 필요 합니다.
 
-- **ImageParameters140**
+- **ImageParameters140.h**
 
   - **ImageMoniker** 및 **ImageAttributes** 형식을 사용 하는 경우 필요 합니다.
 
-- **VSShell140**
+- **VSShell140.h**
 
   - **IVsImageService2** 형식을 사용 하는 경우 필수 사항입니다.
 
-- **ImageThemingUtilities .h**
+- **ImageThemingUtilities.h**
 
   - 이미지 서비스가 테마를 처리 하도록 허용할 수 없는 경우에 필요 합니다.
 
@@ -281,7 +281,7 @@ ms.locfileid: "72982244"
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-- **VsDpiAwareness**
+- **VsDpiAwareness.h**
 
   - DPI 인식 도우미를 사용 하 여 현재 DPI를 가져오는 경우에 필요 합니다.
 
@@ -563,7 +563,7 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 
  **이전 버전의 Visual Studio에서 vsct 파일을 읽어야 하는 경우는 어떻게 되나요?**
 
- 이전 버전의 Visual Studio에서는 **Iconismoniker** 명령 플래그를 인식 하지 못합니다. 이미지 서비스를 지 원하는 Visual Studio 버전에서 이미지 서비스의 이미지를 사용할 수 있지만 이전 버전의 Visual Studio에서는 이전 스타일의 이미지를 계속 사용 합니다. 이렇게 하려면 *. vsct* 파일을 변경 되지 않은 상태로 두고 (따라서 이전 버전의 Visual Studio와 호환 됨), *vsct* 파일의 \<비트맵에 정의 된 GUID/ID 쌍에서 매핑되는 CSV (쉼표로 구분 된 값) 파일을 만듭니다 > 요소-이미지 모니커 GUID/ID 쌍
+ 이전 버전의 Visual Studio에서는 **Iconismoniker** 명령 플래그를 인식 하지 못합니다. 이미지 서비스를 지 원하는 Visual Studio 버전에서 이미지 서비스의 이미지를 사용할 수 있지만 이전 버전의 Visual Studio에서는 이전 스타일의 이미지를 계속 사용 합니다. 이렇게 하려면 *. vsct* 파일을 변경 되지 않은 상태로 두고 (따라서 이전 버전의 Visual Studio와 호환 됨), *vsct* 파일의 \<비트맵 > 요소에 정의 된 GUID/id 쌍에서 이미지 모니커 guid/id 쌍으로 매핑되는 CSV (쉼표로 구분 된 값) 파일을 만듭니다.
 
  매핑 CSV 파일의 형식은 다음과 같습니다.
 
@@ -579,20 +579,20 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 [ProvideMenuResource("MyPackage.ctmenu", 1, IconMappingFilename="IconMappings.csv")]
 ```
 
- **IconMappingFilename** 은 $ (위 예제에서와 같이) $PackageFolder $에서 암시적으로 루 팅 된 상대 경로 이거나, 환경 변수에 정의 된 디렉터리에서 명시적으로 루트 경로 (예: *@ "%UserProfile%\dir1\dir2\)로 지정 된 절대 경로입니다. MyMappingFile "* .
+ **IconMappingFilename** 은 $ (위 예제에서와 같이) $PackageFolder $에서 암시적으로 루 팅 된 상대 경로 이거나, *@ "%UserProfile%\dir1\dir2\MyMappingFile.csv"* 와 같이 환경 변수에 의해 정의 된 디렉터리에서 명시적으로 루트 된 절대 경로입니다.
 
 ## <a name="how-do-i-port-a-project-system"></a>프로젝트 시스템의 포트를 어떻게 할까요? 하 시겠습니까?
  **프로젝트에 대 한 ImageMonikers를 제공 하는 방법**
 
-1. 프로젝트의 **IVsHierarchy**에 대해 **VSHPROPID_SupportsIconMonikers** 을 구현 하 고 true를 반환 합니다.
+1. 프로젝트의 **IVsHierarchy**에 대 한 **VSHPROPID_SupportsIconMonikers** 를 구현 하 고 true를 반환 합니다.
 
-2. **VSHPROPID_IconMonikerImageList** (원래 프로젝트를 사용 하는 경우 **VSHPROPID_IconImgList**) 또는 **VSHPROPID_IconMonikerGuid**, **VSHPROPID_IconMonikerId**, **VSHPROPID_OpenFolderIconMonikerGuid**, 중 하나를 구현 합니다. **VSHPROPID_OpenFolderIconMonikerId** (원래 프로젝트가 **VSHPROPID_IconHandle** 및 **VSHPROPID_OpenFolderIconHandle**를 사용 하는 경우).
+2. **VSHPROPID_IconMonikerImageList** (원본 프로젝트가 **VSHPROPID_IconImgList**사용 되는 경우) 또는 **VSHPROPID_IconMonikerGuid**, **VSHPROPID_IconMonikerId**, **VSHPROPID_OpenFolderIconMonikerGuid**, **VSHPROPID_OpenFolderIconMonikerId** (원본 프로젝트가 **VSHPROPID_IconHandle** 및 **VSHPROPID_OpenFolderIconHandle**사용 되는 경우)를 구현 합니다.
 
 3. 아이콘에 대 한 원래 VSHPROPIDs의 구현을 변경 하 여 확장 지점이 요청 하는 경우 "레거시" 버전의 아이콘을 만듭니다. **IVsImageService2** 는 이러한 아이콘을 가져오는 데 필요한 기능을 제공 합니다.
 
    **VB/C# 프로젝트 특색에 대 한 추가 요구 사항**
 
-   프로젝트가 **가장 바깥쪽 버전**임을 감지 하는 경우에만 **VSHPROPID_SupportsIconMonikers** 를 구현 합니다. 그렇지 않으면 실제 가장 바깥쪽 버전이 실제로는 이미지 모니커를 지원 하지 않을 수 있으며, 기본 버전은 사용자 지정 된 이미지를 효과적으로 "숨길" 수 있습니다.
+   프로젝트가 **가장 바깥쪽 버전**임을 감지 하는 경우에만 **VSHPROPID_SupportsIconMonikers** 을 구현 합니다. 그렇지 않으면 실제 가장 바깥쪽 버전이 실제로는 이미지 모니커를 지원 하지 않을 수 있으며, 기본 버전은 사용자 지정 된 이미지를 효과적으로 "숨길" 수 있습니다.
 
    **CPS에서 이미지 모니커를 사용 어떻게 할까요??**
 
@@ -720,11 +720,11 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3. 업데이트 된 매핑을 통해 모니커를 요청 하는 이미지 서비스를 사용 하도록 코드를 업데이트 합니다. (이는 관리 코드에 대 한 **CrispImages** 업데이트 하거나, 이미지 서비스에서 Hbitmaps hbitmaps 요청 하 고 네이티브 코드를 위해이를 전달 하는 것을 의미할 수 있습니다.)
 
 ## <a name="testing-your-images"></a>이미지 테스트
- 이미지 라이브러리 뷰어 도구를 사용 하 여 이미지 매니페스트를 테스트 하 여 모든 것이 올바르게 작성 되었는지 확인할 수 있습니다. 이 도구는 [Visual Studio 2015 SDK](visual-studio-sdk.md)에서 찾을 수 있습니다. 이 도구 및 기타 도구에 대 한 설명서는 [여기](https://aka.ms/VSImageThemeTools)에서 찾을 수 있습니다.
+ 이미지 라이브러리 뷰어 도구를 사용 하 여 이미지 매니페스트를 테스트 하 여 모든 것이 올바르게 작성 되었는지 확인할 수 있습니다. 이 도구는 [Visual Studio 2015 SDK](visual-studio-sdk.md)에서 찾을 수 있습니다. 이 도구 및 기타 도구에 대 한 설명서는 [여기](https://docs.microsoft.com/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015&redirectedfrom=MSDN)에서 찾을 수 있습니다.
 
 ## <a name="additional-resources"></a>추가 자료
 
-### <a name="samples"></a>샘플
+### <a name="samples"></a>예제
  다양 한 Visual Studio 확장 지점의 일부로 이미지 서비스를 사용 하는 방법을 보여 주기 위해 GitHub의 몇 가지 Visual Studio 샘플이 업데이트 되었습니다.
 
  최신 샘플은 [http://github.com/Microsoft/VSSDK-Extensibility-Samples](https://github.com/Microsoft/VSSDK-Extensibility-Samples) 를 확인 하세요.
@@ -740,7 +740,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  Manifest to Code 도구는 이미지 매니페스트 파일을 사용 하 고 코드 (C++, C#또는 VB) 또는 *. vsct* 파일의 매니페스트 값을 참조 하기 위한 래퍼 파일을 생성 합니다.
 
- **Image라이브러리 뷰어**
+ **ImageLibraryViewer**
 
  이미지 라이브러리 뷰어 도구는 이미지 매니페스트를 로드 하 고 사용자가 Visual Studio에서 매니페스트가 올바르게 작성 되었는지 확인 하는 것과 동일한 방식으로이를 조작할 수 있습니다. 사용자는 배경, 크기, DPI 설정, 고대비 및 기타 설정을 변경할 수 있습니다. 또한 매니페스트에서 오류를 찾기 위한 로드 정보를 표시 하 고 매니페스트의 각 이미지에 대 한 소스 정보를 표시 합니다.
 
@@ -763,68 +763,68 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |||
     |-|-|
     |**ImageName**|**KnownMoniker**|
-    |OfflineWebApp|KnownImageIds|
-    |WebReferencesFolder|KnownImageIds|
-    |ImageName. OpenReferenceFolder|KnownImageIds 열기|
-    |ImageName. ReferenceFolder|KnownImageIds|
-    |ImageName. 참조|KnownImageIds|
-    |ImageName. SdlWebReference|KnownImageIds. WebReferenceFolder|
-    |DiscoWebReference|KnownImageIds. DynamicDiscoveryDocument|
-    |ImageName 폴더|KnownImageIds 닫힌 폴더|
-    |ImageName. OpenFolder|KnownImageIds 열기|
-    |ExcludedFolder|KnownImageIds.HiddenFolderClosed|
-    |OpenExcludedFolder|KnownImageIds.HiddenFolderOpened|
-    |ExcludedFile|KnownImageIds.HiddenFile|
-    |DependentFile|KnownImageIds 파일|
-    |MissingFile|KnownImageIds 경고|
-    |ImageName WindowsForm|KnownImageIds|
-    |ImageName WindowsUserControl|KnownImageIds|
-    |WindowsComponent|KnownImageIds 파일|
-    |ImageName. XmlSchema|KnownImageIds|
-    |XmlFile|KnownImageIds. XMLFile|
-    |WebForm|KnownImageIds|
-    |ImageName 웹 서비스|KnownImageIds|
-    |ImageName. WebUserControl|KnownImageIds|
-    |ImageName. WebCustomUserControl|KnownImageIds.WebCustomControl|
-    |ImageName 페이지|KnownImageIds 파일|
-    |ImageName. GlobalApplicationClass|KnownImageIds 파일|
-    |ImageName. WebConfig|KnownImageIds 파일|
-    |HtmlPage|KnownImageIds 파일|
-    |ImageName. 스타일 시트|KnownImageIds|
-    |ScriptFile|KnownImageIds.JSScript|
-    |TextFile|KnownImageIds|
-    |ImageName 파일|KnownImageIds|
-    |ImageName 리소스|KnownImageIds 그룹|
-    |ImageName 비트맵|KnownImageIds|
-    |ImageName. 아이콘|KnownImageIds 파일|
-    |ImageName. 이미지|KnownImageIds|
-    |ImageMap|KnownImageIds.ImageMapFile|
-    |ImageName. XWorld|KnownImageIds.XWorldFile|
-    |ImageName 오디오|KnownImageIds|
-    |ImageName. 비디오|KnownImageIds|
-    |ImageName .Cab|KnownImageIds 프로젝트|
-    |ImageName Jar|KnownImageIds. JARFile|
-    |ImageName. DataEnvironment|KnownImageIds|
-    |PreviewFile|KnownImageIds|
-    |DanglingReference|KnownImageIds|
-    |XsltFile|KnownImageIds. XSLTransform|
-    |ImageName 커서|KnownImageIds.CursorFile|
-    |ImageName. AppDesignerFolder|KnownImageIds|
-    |ImageName. 데이터|KnownImageIds|
-    |ImageName 응용 프로그램|KnownImageIds|
-    |ImageName. DataSet|KnownImageIds 그룹|
-    |ImageName .Pfx|KnownImageIds|
-    |ImageName|KnownImageIds|
-    |ImageName. VisualBasicProject|KnownImageIds 노드|
-    |CSharpProject|KnownImageIds|
-    |ImageName. 비어 있음|KnownImageIds|
-    |MissingFolder|KnownImageIds 오프 라인|
-    |ImageName. SharedImportReference|KnownImageIds 프로젝트|
-    |ImageName. SharedProjectCs|KnownImageIds. CSSharedProject|
-    |ImageName. SharedProjectVc|KnownImageIds.CPPSharedProject|
-    |ImageName. SharedProjectJs|KnownImageIds.JSSharedProject|
-    |CSharpCodeFile|KnownImageIds.CSFileNode|
-    |ImageName. VisualBasicCodeFile|KnownImageIds.VBFileNode|
+    |ImageName.OfflineWebApp|KnownImageIds.Web|
+    |ImageName.WebReferencesFolder|KnownImageIds.Web|
+    |ImageName.OpenReferenceFolder|KnownImageIds.FolderOpened|
+    |ImageName.ReferenceFolder|KnownImageIds.Reference|
+    |ImageName.Reference|KnownImageIds.Reference|
+    |ImageName.SdlWebReference|KnownImageIds.WebReferenceFolder|
+    |ImageName.DiscoWebReference|KnownImageIds.DynamicDiscoveryDocument|
+    |ImageName.Folder|KnownImageIds.FolderClosed|
+    |ImageName.OpenFolder|KnownImageIds.FolderOpened|
+    |ImageName.ExcludedFolder|KnownImageIds.HiddenFolderClosed|
+    |ImageName.OpenExcludedFolder|KnownImageIds.HiddenFolderOpened|
+    |ImageName.ExcludedFile|KnownImageIds.HiddenFile|
+    |ImageName.DependentFile|KnownImageIds.GenerateFile|
+    |ImageName.MissingFile|KnownImageIds.DocumentWarning|
+    |ImageName.WindowsForm|KnownImageIds.WindowsForm|
+    |ImageName.WindowsUserControl|KnownImageIds.UserControl|
+    |ImageName.WindowsComponent|KnownImageIds.ComponentFile|
+    |ImageName.XmlSchema|KnownImageIds.XMLSchema|
+    |ImageName.XmlFile|KnownImageIds.XMLFile|
+    |ImageName.WebForm|KnownImageIds.Web|
+    |ImageName.WebService|KnownImageIds.WebService|
+    |ImageName.WebUserControl|KnownImageIds.WebUserControl|
+    |ImageName.WebCustomUserControl|KnownImageIds.WebCustomControl|
+    |ImageName.AspPage|KnownImageIds.ASPFile|
+    |ImageName.GlobalApplicationClass|KnownImageIds.SettingsFile|
+    |ImageName.WebConfig|KnownImageIds.ConfigurationFile|
+    |ImageName.HtmlPage|KnownImageIds.HTMLFile|
+    |ImageName.StyleSheet|KnownImageIds.StyleSheet|
+    |ImageName.ScriptFile|KnownImageIds.JSScript|
+    |ImageName.TextFile|KnownImageIds.Document|
+    |ImageName.SettingsFile|KnownImageIds.Settings|
+    |ImageName.Resources|KnownImageIds.DocumentGroup|
+    |ImageName.Bitmap|KnownImageIds.Image|
+    |ImageName.Icon|KnownImageIds.IconFile|
+    |ImageName.Image|KnownImageIds.Image|
+    |ImageName.ImageMap|KnownImageIds.ImageMapFile|
+    |ImageName.XWorld|KnownImageIds.XWorldFile|
+    |ImageName.Audio|KnownImageIds.Sound|
+    |ImageName.Video|KnownImageIds.Media|
+    |ImageName.Cab|KnownImageIds.CABProject|
+    |ImageName.Jar|KnownImageIds.JARFile|
+    |ImageName.DataEnvironment|KnownImageIds.DataTable|
+    |ImageName.PreviewFile|KnownImageIds.Report|
+    |ImageName.DanglingReference|KnownImageIds.ReferenceWarning|
+    |ImageName.XsltFile|KnownImageIds.XSLTransform|
+    |ImageName.Cursor|KnownImageIds.CursorFile|
+    |ImageName.AppDesignerFolder|KnownImageIds.Property|
+    |ImageName.Data|KnownImageIds.Database|
+    |ImageName.Application|KnownImageIds.Application|
+    |ImageName.DataSet|KnownImageIds.DatabaseGroup|
+    |ImageName.Pfx|KnownImageIds.Certificate|
+    |ImageName.Snk|KnownImageIds.Rule|
+    |ImageName.VisualBasicProject|KnownImageIds.VBProjectNode|
+    |ImageName.CSharpProject|KnownImageIds.CSProjectNode|
+    |ImageName.Empty|KnownImageIds.Blank|
+    |ImageName.MissingFolder|KnownImageIds.FolderOffline|
+    |ImageName.SharedImportReference|KnownImageIds.SharedProject|
+    |ImageName.SharedProjectCs|KnownImageIds.CSSharedProject|
+    |ImageName.SharedProjectVc|KnownImageIds.CPPSharedProject|
+    |ImageName.SharedProjectJs|KnownImageIds.JSSharedProject|
+    |ImageName.CSharpCodeFile|KnownImageIds.CSFileNode|
+    |ImageName.VisualBasicCodeFile|KnownImageIds.VBFileNode|
 
   - 완성 목록 공급자를 업데이트 하 고 있습니다. 이전 **StandardGlyphGroup** 및 **standardglyph** 값과 일치 하는 **knownmonikers** 는 무엇 인가요?
 
@@ -865,7 +865,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphGroupEvent|GlyphItemFriend|EventInternal|
     |GlyphGroupEvent|GlyphItemProtected|EventProtected|
     |GlyphGroupEvent|GlyphItemPrivate|EventPrivate|
-    |GlyphGroupEvent|GlyphItemShortcut|EventShortcut 가기|
+    |GlyphGroupEvent|GlyphItemShortcut|EventShortcut|
     |GlyphGroupException|GlyphItemPublic|ExceptionPublic|
     |GlyphGroupException|GlyphItemInternal|ExceptionInternal|
     |GlyphGroupException|GlyphItemFriend|ExceptionInternal|
@@ -877,11 +877,11 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphGroupField|GlyphItemFriend|FieldInternal|
     |GlyphGroupField|GlyphItemProtected|FieldProtected|
     |GlyphGroupField|GlyphItemPrivate|FieldPrivate|
-    |GlyphGroupField|GlyphItemShortcut|FieldShortcut 가기|
-    |GlyphGroupInterface|GlyphItemPublic|인터페이스 공용|
+    |GlyphGroupField|GlyphItemShortcut|FieldShortcut|
+    |GlyphGroupInterface|GlyphItemPublic|InterfacePublic|
     |GlyphGroupInterface|GlyphItemInternal|내부 인터페이스|
     |GlyphGroupInterface|GlyphItemFriend|내부 인터페이스|
-    |GlyphGroupInterface|GlyphItemProtected|인터페이스 보호|
+    |GlyphGroupInterface|GlyphItemProtected|InterfaceProtected|
     |GlyphGroupInterface|GlyphItemPrivate|InterfacePrivate|
     |GlyphGroupInterface|GlyphItemShortcut|InterfaceShortcut|
     |GlyphGroupMacro|GlyphItemPublic|MacroPublic|
@@ -893,7 +893,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphGroupMap|GlyphItemPublic|MapPublic|
     |GlyphGroupMap|GlyphItemInternal|MapInternal|
     |GlyphGroupMap|GlyphItemFriend|MapInternal|
-    |GlyphGroupMap|GlyphItemProtected|안 됨|
+    |GlyphGroupMap|GlyphItemProtected|MapProtected|
     |GlyphGroupMap|GlyphItemPrivate|MapPrivate|
     |GlyphGroupMap|GlyphItemShortcut|MapShortcut|
     |GlyphGroupMapItem|GlyphItemPublic|MapItemPublic|
@@ -907,13 +907,13 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphGroupMethod|GlyphItemFriend|MethodInternal|
     |GlyphGroupMethod|GlyphItemProtected|MethodProtected|
     |GlyphGroupMethod|GlyphItemPrivate|MethodPrivate|
-    |GlyphGroupMethod|GlyphItemShortcut|MethodShortcut 가기|
+    |GlyphGroupMethod|GlyphItemShortcut|MethodShortcut|
     |GlyphGroupOverload|GlyphItemPublic|MethodPublic|
     |GlyphGroupOverload|GlyphItemInternal|MethodInternal|
     |GlyphGroupOverload|GlyphItemFriend|MethodInternal|
     |GlyphGroupOverload|GlyphItemProtected|MethodProtected|
     |GlyphGroupOverload|GlyphItemPrivate|MethodPrivate|
-    |GlyphGroupOverload|GlyphItemShortcut|MethodShortcut 가기|
+    |GlyphGroupOverload|GlyphItemShortcut|MethodShortcut|
     |GlyphGroupModule|GlyphItemPublic|ModulePublic|
     |GlyphGroupModule|GlyphItemInternal|ModuleInternal|
     |GlyphGroupModule|GlyphItemFriend|ModuleInternal|
@@ -944,10 +944,10 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphGroupStruct|GlyphItemProtected|StructureProtected|
     |GlyphGroupStruct|GlyphItemPrivate|StructurePrivate|
     |GlyphGroupStruct|GlyphItemShortcut|StructureShortcut|
-    |GlyphGroupTemplate|GlyphItemPublic|템플릿 공용|
+    |GlyphGroupTemplate|GlyphItemPublic|TemplatePublic|
     |GlyphGroupTemplate|GlyphItemInternal|템플릿 내부|
     |GlyphGroupTemplate|GlyphItemFriend|템플릿 내부|
-    |GlyphGroupTemplate|GlyphItemProtected|템플릿 보호|
+    |GlyphGroupTemplate|GlyphItemProtected|TemplateProtected|
     |GlyphGroupTemplate|GlyphItemPrivate|TemplatePrivate|
     |GlyphGroupTemplate|GlyphItemShortcut|TemplateShortcut|
     |GlyphGroupTypedef|GlyphItemPublic|TypeDefinitionPublic|
@@ -973,11 +973,11 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphGroupVariable|GlyphItemFriend|FieldInternal|
     |GlyphGroupVariable|GlyphItemProtected|FieldProtected|
     |GlyphGroupVariable|GlyphItemPrivate|FieldPrivate|
-    |GlyphGroupVariable|GlyphItemShortcut|FieldShortcut 가기|
-    |GlyphGroupValueType|GlyphItemPublic|이상 공용|
-    |GlyphGroupValueType|GlyphItemInternal|고 내부|
-    |GlyphGroupValueType|GlyphItemFriend|고 내부|
-    |GlyphGroupValueType|GlyphItemProtected|이상 보호 됨|
+    |GlyphGroupVariable|GlyphItemShortcut|FieldShortcut|
+    |GlyphGroupValueType|GlyphItemPublic|ValueTypePublic|
+    |GlyphGroupValueType|GlyphItemInternal|ValueTypeInternal|
+    |GlyphGroupValueType|GlyphItemFriend|ValueTypeInternal|
+    |GlyphGroupValueType|GlyphItemProtected|ValueTypeProtected|
     |GlyphGroupValueType|GlyphItemPrivate|ValueTypePrivate|
     |GlyphGroupValueType|GlyphItemShortcut|ValueTypeShortcut|
     |GlyphGroupIntrinsic|GlyphItemPublic|ObjectPublic|
@@ -991,13 +991,13 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphGroupJSharpMethod|GlyphItemFriend|MethodInternal|
     |GlyphGroupJSharpMethod|GlyphItemProtected|MethodProtected|
     |GlyphGroupJSharpMethod|GlyphItemPrivate|MethodPrivate|
-    |GlyphGroupJSharpMethod|GlyphItemShortcut|MethodShortcut 가기|
+    |GlyphGroupJSharpMethod|GlyphItemShortcut|MethodShortcut|
     |GlyphGroupJSharpField|GlyphItemPublic|FieldPublic|
     |GlyphGroupJSharpField|GlyphItemInternal|FieldInternal|
     |GlyphGroupJSharpField|GlyphItemFriend|FieldInternal|
     |GlyphGroupJSharpField|GlyphItemProtected|FieldProtected|
     |GlyphGroupJSharpField|GlyphItemPrivate|FieldPrivate|
-    |GlyphGroupJSharpField|GlyphItemShortcut|FieldShortcut 가기|
+    |GlyphGroupJSharpField|GlyphItemShortcut|FieldShortcut|
     |GlyphGroupJSharpClass|GlyphItemPublic|ClassPublic|
     |GlyphGroupJSharpClass|GlyphItemInternal|ClassInternal|
     |GlyphGroupJSharpClass|GlyphItemFriend|ClassInternal|
@@ -1010,15 +1010,15 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphGroupJSharpNamespace|GlyphItemProtected|NamespaceProtected|
     |GlyphGroupJSharpNamespace|GlyphItemPrivate|NamespacePrivate|
     |GlyphGroupJSharpNamespace|GlyphItemShortcut|NamespaceShortcut|
-    |GlyphGroupJSharpInterface|GlyphItemPublic|인터페이스 공용|
+    |GlyphGroupJSharpInterface|GlyphItemPublic|InterfacePublic|
     |GlyphGroupJSharpInterface|GlyphItemInternal|내부 인터페이스|
     |GlyphGroupJSharpInterface|GlyphItemFriend|내부 인터페이스|
-    |GlyphGroupJSharpInterface|GlyphItemProtected|인터페이스 보호|
+    |GlyphGroupJSharpInterface|GlyphItemProtected|InterfaceProtected|
     |GlyphGroupJSharpInterface|GlyphItemPrivate|InterfacePrivate|
     |GlyphGroupJSharpInterface|GlyphItemShortcut|InterfaceShortcut|
     |GlyphGroupError||StatusError|
     |GlyphBscFile||ClassFile|
-    |GlyphAssembly||참고|
+    |GlyphAssembly||참조|
     |GlyphLibrary||라이브러리|
     |GlyphVBProject||VBProjectNode|
     |GlyphCoolProject||CSProjectNode|
@@ -1028,7 +1028,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphClosedFolder||FolderClosed|
     |GlyphArrow||GoToNext|
     |GlyphCSharpFile||CSFileNode|
-    |GlyphCSharpExpansion||살펴보겠습니다|
+    |GlyphCSharpExpansion||코드 조각|
     |GlyphKeyword||IntellisenseKeyword|
     |GlyphInformation||StatusInformation|
     |GlyphReference||ClassMethodReference|
@@ -1051,7 +1051,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphExtensionMethodShortcut||ExtensionMethod|
     |GlyphXmlAttribute||XmlAttribute|
     |GlyphXmlChild||XmlElement|
-    |GlyphXmlDescendant||XmlDescendant 항목|
+    |GlyphXmlDescendant||XmlDescendant|
     |GlyphXmlNamespace||XmlNamespace|
     |GlyphXmlAttributeQuestion||XmlAttributeLowConfidence|
     |GlyphXmlAttributeCheck||XmlAttributeHighConfidence|

@@ -20,17 +20,17 @@ helpviewer_keywords:
 - Visual Studio, call hierarchy window
 - class view
 - object browser
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fc7ade360ac586f09eb838057251172be5d0e81
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b73a4660c9e0dad66ceb73c04852601765174264
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647301"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594203"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>다른 도구 창을 사용하여 코드 구조 보기
 
@@ -224,6 +224,6 @@ Visual Studio Enterprise Edition이 있는 경우 ‘코드 맵’을 사용하�
 
 XAML 페이지용 디자이너 또는 Windows Forms 디자이너와 같은 디자이너 뷰와 함께 또는 HTML 페이지와 함께 **문서 개요** 창을 사용할 수 있습니다. 이 창은 양식 또는 페이지의 논리 구조를 확인하고 깊이 포함되거나 숨겨진 컨트롤을 찾을 수 있도록 트리 뷰에 요소를 표시합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [클래스 뷰 및 개체 브라우저 아이콘](../ide/class-view-and-object-browser-icons.md)

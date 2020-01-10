@@ -6,17 +6,17 @@ helpviewer_keywords:
 - MSBuild, custom toolset configurations
 - MSBuild, msbuild.exe.config
 ms.assetid: 15a048c8-5ad3-448e-b6e9-e3c5d7147ed2
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8d3e78e4bd49c36174280c62ca8f24cdbd7f648
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 76596d752ae2e552088fff607142abb215e9147b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440034"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595074"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>표준 및 사용자 지정 도구 집합 구성
 MSBuild 도구 집합은 애플리케이션 프로젝트를 빌드하는 데 사용할 수 있는 작업, 대상 및 도구에 대한 참조를 포함합니다. MSBuild는 표준 도구 집합을 포함하지만 사용자 지정 도구 집합을 만들 수도 있습니다. 도구 집합을 지정하는 방법에 대한 내용은 [도구 집합(ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)을 참조하세요.
@@ -28,10 +28,10 @@ MSBuild 도구 집합은 애플리케이션 프로젝트를 빌드하는 데 사
 
 |ToolsVersion|도구 집합 경로(MSBuildBinPath 또는 MSBuildToolsPath 빌드 속성에 지정된 대로)|
 |------------------| - |
-|2.0|\<Windows 설치 경로>\Microsoft.Net\Framework\v2.0.50727\\|
-|3.5|\<Windows 설치 경로>\Microsoft.NET\Framework\v3.5\\|
-|4.0|\<Windows 설치 경로>\Microsoft.NET\Framework\v4.0.30319\\|
-|현재|\<Visual Studio 설치 경로>\MSBuild\Current\bin|
+|2.0|\<Windows 설치 경로>\Microsoft.Net\Framework\v2.0.50727\\ |
+|3.5|\<Windows 설치 경로>\Microsoft.NET\Framework\v3.5\\ |
+|4.0|\<Windows 설치 경로>\Microsoft.NET\Framework\v4.0.30319\\ |
+|현재|\<Visual Studio 설치 경로>\MSBuild\Current\bin |
 
  `ToolsVersion` 값은 Visual Studio에서 생성하는 프로젝트에서 사용되는 도구 집합을 결정합니다. Visual Studio 2019에서 기본값은(프로젝트 파일에 지정된 버전과 관계없이) “현재”이지만 명령 프롬프트에서 **/toolsversion** 스위치를 사용하여 해당 특성을 재정의할 수 있습니다. 이 특성 및 `ToolsVersion`을 지정하는 다른 방법에 대한 내용은 [ToolsVersion 설정 재정의](../msbuild/overriding-toolsversion-settings.md)를 참조하세요.
 
@@ -42,10 +42,10 @@ MSBuild 도구 집합은 애플리케이션 프로젝트를 빌드하는 데 사
 
 |ToolsVersion|도구 집합 경로(MSBuildBinPath 또는 MSBuildToolsPath 빌드 속성에 지정된 대로)|
 |------------------| - |
-|2.0|\<Windows 설치 경로>\Microsoft.Net\Framework\v2.0.50727\\|
-|3.5|\<Windows 설치 경로>\Microsoft.NET\Framework\v3.5\\|
-|4.0|\<Windows 설치 경로>\Microsoft.NET\Framework\v4.0.30319\\|
-|15.0|\<Visual Studio 설치 경로>\MSBuild\15.0\bin|
+|2.0|\<Windows 설치 경로>\Microsoft.Net\Framework\v2.0.50727\\ |
+|3.5|\<Windows 설치 경로>\Microsoft.NET\Framework\v3.5\\ |
+|4.0|\<Windows 설치 경로>\Microsoft.NET\Framework\v4.0.30319\\ |
+|15.0|\<Visual Studio 설치 경로>\MSBuild\15.0\bin |
 
  `ToolsVersion` 값은 Visual Studio에서 생성하는 프로젝트에서 사용되는 도구 집합을 결정합니다. Visual Studio 2017에서 기본값은 "15.0"(프로젝트 파일에 지정된 버전과 관계 없이)이지만 명령 프롬프트에서 **/toolsversion** 스위치를 사용하여 해당 특성을 재정의할 수 있습니다. 이 특성 및 `ToolsVersion`을 지정하는 다른 방법에 대한 내용은 [ToolsVersion 설정 재정의](../msbuild/overriding-toolsversion-settings.md)를 참조하세요.
  ::: moniker-end
@@ -112,5 +112,5 @@ Visual Studio 2017 및 이후 버전에서는 MSBuild에 대한 경로에 레지
 
   또한 MSBuildToolsPath 속성을 추가하는 데 사용하는 동일한 구문을 사용하여 구성 파일에 ToolsVersion 관련 사용자 지정 속성을 추가할 수도 있습니다. 이러한 사용자 지정 속성을 프로젝트 파일에 사용할 수 있도록 하려면 구성 파일에 지정된 값의 이름과 동일한 이름을 사용합니다. 구성 파일에서 하위 도구 집합이 아닌 도구 집합을 정의할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [도구 집합(ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

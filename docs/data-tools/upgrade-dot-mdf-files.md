@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SQLEXPRESS
 - upgrading SQLExpress to SQLExpress
 - upgrading to LocalDB
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e0196c582fbe673d73c7aeb89280d05e11a071a5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 195cab863554bc60478df4e80319eab80124140a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639569"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586096"
 ---
 # <a name="upgrade-mdf-files"></a>.mdf 파일 업그레이드
 
@@ -69,9 +69,9 @@ Visual Studio를 사용 하 여 이전 버전의 SQL Server Express 또는 Local
 
         - 특정 버전을 사용 하려면: `(localdb)\ProjectsV12` 또는 `(localdb)\ProjectsV13`를 사용 합니다. 여기서 V12는 LocalDB 2014이 고 V13는 LocalDB 2016입니다.
 
-    - **데이터베이스 파일을 연결 합니다**. 기본 *.mdf* 파일의 실제 경로입니다.
+    - **데이터베이스 파일 연결**: 기본 *.mdf* 파일의 실제 경로입니다.
 
-    - **논리적 이름**: 파일에 사용 하려는 이름입니다.
+    - **논리적 이름**: 파일을 사용 하려는 이름입니다.
 
 3. **확인** 단추를 선택합니다.
 
@@ -101,7 +101,7 @@ Visual Studio를 사용 하 여 이전 버전의 SQL Server Express 또는 Local
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>기본 데이터베이스 엔진 SQL Server Express 만들려면
 
-1. 메뉴 모음에서 **도구**  > **옵션**을 선택 합니다.
+1. 메뉴 모음에서 **도구** > **옵션**을 선택합니다.
 
 2. **옵션** 대화 상자에서 **데이터베이스 도구** 옵션을 확장 한 다음 **데이터 연결**을 선택 합니다.
 
@@ -111,6 +111,6 @@ Visual Studio를 사용 하 여 이전 버전의 SQL Server Express 또는 Local
 
     SQL Server Express는 응용 프로그램에 대 한 기본 데이터베이스 엔진입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio에서 데이터 액세스](accessing-data-in-visual-studio.md)

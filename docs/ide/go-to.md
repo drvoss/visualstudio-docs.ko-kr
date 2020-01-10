@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code editor, go to line
 - go to line
 - go to
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3a810e96b410c0f1f6f5d6ffdaa07b1e007abd6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bb39f1d395e48351aeacb587556224b0f86aac3e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654635"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593787"
 ---
 # <a name="find-code-using-go-to-commands"></a>이동 명령을 사용하여 코드 찾기
 
@@ -86,7 +86,7 @@ t| ![형식 아이콘](media/gotoall-types-icon.png) | **Ctrl**+**1**, **Ctrl**+
 자세한 정보 표시 | 문서 주석의 프로젝트, 파일, 줄 및 요약 정보를 창에 표시합니다.
 창 가운데 맞춤 | 이 창을 코드 편집기의 오른쪽 위가 아니라 가운데 위로 이동합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 탐색](../ide/navigating-code.md)
 - [줄 이동 대화 상자](../ide/reference/go-to-line.md)

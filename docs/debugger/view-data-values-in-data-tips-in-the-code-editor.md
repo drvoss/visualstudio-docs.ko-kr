@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f121c7aadb605e6eb87089556ddaf1b1f4999dbb
-ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
+ms.openlocfilehash: bf5eda8205dbe0629d0b2801473de83c2f91257e
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74903888"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404274"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>코드 편집기에서 DataTips의 데이터 값 보기
 
@@ -96,7 +96,7 @@ DataTip에서 변수나 요소의 값을 편집 하려면 값을 선택 하 고 
 
 ::: moniker range=">= vs-2019"
 
-## <a name="pin-properties-in-datatips-supported-in-visual-studio-2019-version-164-preview-3-or-higher"></a>DataTips의 속성 고정 (Visual Studio 2019 버전 16.4 Preview 3 이상에서 지원 됨)
+## <a name="pin-properties-in-datatips"></a>DataTips의 속성 고정
 
 > [!NOTE]
 > 이 기능은 .NET Core 3.0 이상에서 지원 됩니다.

@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, modeling architecture
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e87759206f6d05267e2be5be25fdb8c3e9b70df
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ba455730ddac9b2a02b8f0580711499d6a779f49
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747531"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590230"
 ---
 # <a name="model-your-app39s-architecture"></a>앱&#39;아키텍처 모델링
 소프트웨어 시스템이 나 응용 프로그램이 사용자 요구를 충족 하도록 하려면 소프트웨어 시스템 또는 응용 프로그램의 전체 구조 및 동작에 대 한 설명의 일부로 Visual Studio에서 모델을 만들 수 있습니다. 모델을 사용하여 디자인 전체에서 사용되는 패턴을 설명할 수도 있습니다. 이러한 모델은 기존 아키텍처를 이해하고, 변경 내용을 논의하고, 의도를 명확하게 전달하는 데 도움이 됩니다.
@@ -43,7 +43,7 @@ ms.locfileid: "72747531"
 
 - [아키텍처 패턴](#BigDecisions). 시스템의 핵심 기술 및 아키텍처 요소에 대한 사용자 선택입니다.
 
-- 구성 요소 및 인터페이스의 데이터 모델입니다. 구성 요소 간에 전달되고 구성 요소 내부에 저장되는 정보를 설명하는 클래스 다이어그램을 그릴 수 있습니다.
+- 구성 요소 및 인터페이스의 데이터 모델. 구성 요소 간에 전달되고 구성 요소 내부에 저장되는 정보를 설명하는 클래스 다이어그램을 그릴 수 있습니다.
 
 ## <a name="Requirements"></a>요구 사항 이해
  완전한 애플리케이션의 전반적인 디자인은 요구 사항 모델 또는 사용자 요구에 대한 기타 설명과 함께 개발할 경우 가장 효과적입니다. 요구 사항 모델에 대 한 자세한 내용은 [모델 사용자 요구 사항](../modeling/model-user-requirements.md)을 참조 하세요.
@@ -88,7 +88,7 @@ ms.locfileid: "72747531"
 
  디자인 패턴은 문서에서 설명되며, 일반적으로 다음 파트를 포함합니다.
 
-- 이름의.
+- 이름.
 
 - 패턴을 적용할 수 있는 컨텍스트에 대한 설명. 어떤 조건에서 개발자가 이 패턴의 적용을 고려해야 하나요?
 

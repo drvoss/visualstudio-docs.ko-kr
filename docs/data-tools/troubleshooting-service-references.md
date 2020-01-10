@@ -11,17 +11,17 @@ helpviewer_keywords:
 - service references [Visual Studio], troubleshooting
 - WCF services, troubleshooting
 ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 28ff14f10cd6ad5612551bb65b7b17f0280358f3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d52562382f10615c7da1dfab22d4c18323b725b3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639592"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586122"
 ---
 # <a name="troubleshoot-service-references"></a>서비스 참조 문제 해결
 
@@ -29,13 +29,13 @@ ms.locfileid: "72639592"
 
 ## <a name="error-returning-data-from-a-service"></a>서비스에서 데이터를 반환 하는 동안 오류 발생
 
-서비스에서 `DataSet` 또는 `DataTable`을 반환 하면 "들어오는 메시지의 최대 크기 할당량을 초과 했습니다." 예외가 표시 될 수 있습니다. 기본적으로 일부 바인딩의 `MaxReceivedMessageSize` 속성은 서비스 거부 공격에 대 한 노출을 제한 하기 위해 상대적으로 작은 값으로 설정 됩니다. 예외를 방지 하기 위해이 값을 늘릴 수 있습니다. 자세한 내용은 <xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>을 참조하세요.
+서비스에서 `DataSet` 또는 `DataTable`을 반환 하면 "들어오는 메시지의 최대 크기 할당량을 초과 했습니다." 예외가 표시 될 수 있습니다. 기본적으로 일부 바인딩의 `MaxReceivedMessageSize` 속성은 서비스 거부 공격에 대 한 노출을 제한 하기 위해 상대적으로 작은 값으로 설정 됩니다. 예외를 방지 하기 위해이 값을 늘릴 수 있습니다. 자세한 내용은 <xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>를 참조하세요.
 
 이 오류를 해결하려면
 
 1. **솔루션 탐색기**에서 *app.config* 파일을 두 번 클릭 하 여 엽니다.
 
-2. @No__t_0 속성을 찾아 더 큰 값으로 변경 합니다.
+2. `MaxReceivedMessageSize` 속성을 찾아 더 큰 값으로 변경 합니다.
 
 ## <a name="cannot-find-a-service-in-my-solution"></a>내 솔루션에서 서비스를 찾을 수 없습니다.
 
@@ -47,7 +47,7 @@ ms.locfileid: "72639592"
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>원격 데스크톱을 통해 서비스에 액세스 하는 동안 오류 발생
 
-사용자가 원격 데스크톱 연결을 통해 웹 호스팅 WCF 서비스에 액세스 하 고 사용자에 게 관리 권한이 없는 경우 NTLM 인증을 사용 합니다. 사용자에 게 관리 권한이 없는 경우 사용자에 게 다음 오류 메시지가 표시 될 수 있습니다. "HTTP 요청은 클라이언트 인증 체계 ' Anonymous '로 인증 되지 않습니다. 서버에서 받은 인증 헤더가 ' NTLM ' 이었습니다.
+사용자가 원격 데스크톱 연결을 통해 웹 호스팅 WCF 서비스에 액세스 하 고 사용자에 게 관리 권한이 없는 경우 NTLM 인증을 사용 합니다. 사용자에 게 관리 권한이 없는 경우 사용자에 게 다음 오류 메시지가 표시 될 수 있습니다. "HTTP 요청은 클라이언트 인증 스키마 ' 익명 '으로 인증 되지 않습니다. 서버에서 받은 인증 헤더가 ' NTLM ' 이었습니다.
 
 이 오류를 해결하려면
 
@@ -90,7 +90,7 @@ ms.locfileid: "72639592"
 
 ## <a name="wcf-data-services-do-not-display-in-the-browser"></a>브라우저에 표시 되지 WCF Data Services
 
-@No__t_0에서 데이터의 XML 표현을 보려고 하면 Internet Explorer에서 데이터를 RSS 피드로 잘못 해석할 수 있습니다. RSS 피드를 표시 하는 옵션이 사용 하지 않도록 설정 되어 있는지 확인 합니다.
+[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]에서 데이터의 XML 표현을 보려고 하면 Internet Explorer에서 데이터를 RSS 피드로 잘못 해석할 수 있습니다. RSS 피드를 표시 하는 옵션이 사용 하지 않도록 설정 되어 있는지 확인 합니다.
 
 이 오류를 해결 하려면 RSS 피드를 사용 하지 않도록 설정 합니다.
 
@@ -102,6 +102,6 @@ ms.locfileid: "72639592"
 
 4. **확인**을 클릭하여 **인터넷 옵션** 대화 상자를 닫습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Windows Communication Foundation 서비스 및 Visual Studio의 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

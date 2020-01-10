@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 54097420fd212ec9057f4a968e2c6d5de199e56e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 9de8e2a2ee69911f5505937494d2912c724326e9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296905"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847818"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>연습: 프로그래밍 방식으로 그래픽 정보 캡처
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -145,7 +145,7 @@ ms.locfileid: "74296905"
 ### <a name="preparing-your-computer-to-use-programmatic-capture"></a>프로그래밍 캡처를 사용하도록 컴퓨터 준비  
  프로그래밍 캡처 API는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 용 원격 도구를 사용하여 캡처 기능을 제공합니다. 로컬 컴퓨터에서 프로그래밍 캡처를 사용하더라도 앱을 실행할 컴퓨터에는 원격 도구가 설치되어 있어야 합니다. 로컬 컴퓨터에서 프로그래밍 캡처를 수행하는 경우[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 를 실행 중일 필요는 없습니다.  
   
- 컴퓨터에서 실행 중인 앱에서 원격 캡처 API를 사용하려면 먼저 해당 컴퓨터에 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 용 원격 도구를 설치해야 합니다. 원격 도구 버전마다 지원하는 하드웨어 플랫폼이 다릅니다. 원격 도구 설치 방법에 대한 자세한 내용은 Microsoft 다운로드 웹 사이트에서 [원격 도구 다운로드 페이지](https://go.microsoft.com/fwlink/p/?LinkId=246691) 를 참조하세요.  
+ 컴퓨터에서 실행 중인 앱에서 원격 캡처 API를 사용하려면 먼저 해당 컴퓨터에 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 용 원격 도구를 설치해야 합니다. 원격 도구 버전마다 지원하는 하드웨어 플랫폼이 다릅니다. 원격 도구 설치 방법에 대한 자세한 내용은 Microsoft 다운로드 웹 사이트에서 [원격 도구 다운로드 페이지](https://visualstudio.microsoft.com/downloads#remote-tools) 를 참조하세요.  
   
  그렇지 않으면 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 에서는 32비트 앱용 원격 캡처를 수행하기 위한 필수 구성 요소를 설치합니다.  
   

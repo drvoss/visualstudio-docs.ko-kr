@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c1316602d900fb122567b5ad50edf8e7b90c79bd
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 93ae9c58e0f9a366727f8a5aac08b8d3887f2e7f
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300951"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406729"
 ---
 # <a name="xslt-profiler"></a>XSLT 프로파일러
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ XSLT 프로파일러는 XSLT 문서를 개발하고 디버깅하는 데 도움�
 
  ![XSLT 프로파일러](../xml-tools/media/xsltprofilermenu.gif "XSLTProfilerMenu")
 
- XSLT 프로파일러는 Visual Studio 2008의 추가 기능으로 처음 도입되었습니다. 자세한 내용은 [Visual Studio 용 XSLT 프로파일러 2 월 08 일 Community Technology Preview](https://go.microsoft.com/fwlink/?LinkId=142987) 페이지의 관련 리소스 섹션을 참조 하세요.
+ XSLT 프로파일러는 Visual Studio 2008의 추가 기능으로 처음 도입되었습니다. 자세한 내용은 [XSLT 프로파일러 추가 기능](https://marketplace.visualstudio.com/items?itemName=SinanUssakli-MSFT.XSLTProfilerAddin)을 참조 하세요.
 
 > [!NOTE]
 > Visual Studio 2008 이후 일부 시각적 요소가 변경되었기 때문에 일부 화면이 이러한 문서에서 나타나는 것과 다르게 Visual Studio 2010에서 나타날 수 있습니다.

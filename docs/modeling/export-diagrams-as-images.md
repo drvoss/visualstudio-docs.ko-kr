@@ -6,17 +6,17 @@ helpviewer_keywords:
 - modeling diagrams, saving
 - diagrams - modeling, saving modeling diagrams
 - UML diagrams, saving
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cbbdab08b5bc9298f83d4159f31ac8b9b0fb963
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 56b7839985871333bb120057efde92e58baebdec
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645721"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596621"
 ---
 # <a name="export-diagrams-as-images"></a>다이어그램을 이미지로 내보내기
 
@@ -38,9 +38,9 @@ Visual Studio에서는 동일한 버전의 Visual Studio를 사용 하지 않는
 
 2. **이름** 목록에서 **Microsoft XPS Document Writer**를 선택 하 고 **확인**을 클릭 합니다.
 
-3. **다른 이름으로 파일 저장** 대화 상자에서 파일을 **xps 문서 (\* .xps)** 파일로 저장 합니다.
+3. **다른 이름으로 파일 저장** 대화 상자에서 파일을 **xps 문서 (\*.xps)** 파일로 저장 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [앱용 모델 만들기](../modeling/create-models-for-your-app.md)
 - [모델 공유 및 다이어그램 내보내기](../modeling/share-models-and-exporting-diagrams.md)

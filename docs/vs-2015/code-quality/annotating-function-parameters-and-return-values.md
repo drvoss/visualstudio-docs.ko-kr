@@ -126,12 +126,12 @@ caps.latest.revision: 17
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: dd9a0e09d4032feff398a9ba8c7333c84cb46550
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: fb2b8120665c7eb08f1462dd7b3299538079ae9b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295850"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852390"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>함수 매개 변수 및 반환 값에 주석 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -219,7 +219,7 @@ ms.locfileid: "74295850"
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     즉, 이전 상태에서 `s`까지 버퍼에 있는 모든 요소는 사후 상태에서 유효 합니다.  예를 들면 다음과 같습니다.  
+     즉, 이전 상태에서 `s`까지 버퍼에 있는 모든 요소는 사후 상태에서 유효 합니다.  예를 들면 다음과 같습니다.:  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -247,7 +247,7 @@ ms.locfileid: "74295850"
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     즉, 이전 상태에서 `s`까지 버퍼에 있는 모든 요소는 사후 상태에서 유효 합니다.  예를 들면 다음과 같습니다.  
+     즉, 이전 상태에서 `s`까지 버퍼에 있는 모든 요소는 사후 상태에서 유효 합니다.  예를 들면 다음과 같습니다.:  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -484,7 +484,7 @@ ms.locfileid: "74295850"
   
 - `_Struct_size_bytes_(size)`  
   
-     구조체 또는 클래스 선언에 적용 됩니다.  `size`에서 제공 하는 바이트 수를 사용 하 여 해당 형식의 유효한 개체가 선언 된 형식 보다 클 수 있음을 나타냅니다.  예를 들면 다음과 같습니다.  
+     구조체 또는 클래스 선언에 적용 됩니다.  `size`에서 제공 하는 바이트 수를 사용 하 여 해당 형식의 유효한 개체가 선언 된 형식 보다 클 수 있음을 나타냅니다.  예를 들면 다음과 같습니다.:  
   
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`  
   
@@ -493,7 +493,7 @@ ms.locfileid: "74295850"
      `min(pM->nSize, sizeof(MyStruct))`  
   
 ## <a name="related-resources"></a>관련 참고 자료  
- [코드 분석 팀 블로그](https://go.microsoft.com/fwlink/?LinkId=251197)  
+ [코드 분석 팀 블로그](https://blogs.msdn.com/b/codeanalysis/)  
   
 ## <a name="see-also"></a>참고 항목  
  [CC++ /코드 오류를 줄이기 위해 SAL 주석 사용](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   

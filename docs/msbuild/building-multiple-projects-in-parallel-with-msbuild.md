@@ -7,17 +7,17 @@ helpviewer_keywords:
 - building multiple projects in parallel
 - msbuild, building projects in parallel
 ms.assetid: c8c9aadc-33ad-4aa1-b07d-b879e9eabda0
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48f02e9e2f051bbdb77b0d567d79d8793787cf1c
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 7ee3cace6940b4fe402595cfba7b316a273c1d50
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911277"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593397"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>MSBuild를 사용하여 병렬로 여러 프로젝트 빌드
 다중 프로젝트를 빌드하기 위해 MSBuild를 사용하여 병렬로 실행하면 더 빠를 수 있습니다. 빌드를 병렬로 실행하려면 다중 코어 또는 다중 프로세서 컴퓨터에서 다음 설정을 사용합니다.
@@ -69,7 +69,7 @@ msbuild.exe myproj.proj -maxcpucount:3
 </MSBuild>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [다중 프로세서를 사용하여 프로젝트 빌드](../msbuild/using-multiple-processors-to-build-projects.md)
 - [다중 프로세서 인식 로거 작성](../msbuild/writing-multi-processor-aware-loggers.md)
 - [C++ 빌드 병렬 처리 블로그](https://devblogs.microsoft.com/visualstudio/tuning-c-build-parallelism-in-vs2010/)

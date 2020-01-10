@@ -1,5 +1,5 @@
 ---
-title: 코드 분석 애플리케이션 오류
+title: 코드 분석 응용 프로그램 오류
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - managed code, code analysis errors
 - code analysis, policy errors
 ms.assetid: d8fd9475-ac9b-4085-b5a3-b0c807922cac
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13a5322fa4b55d29d791f4aef99037c79d67fa45
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c35ba03c2f93af0705910b8f89dd835c985e3e60
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610837"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587786"
 ---
 # <a name="code-analysis-application-errors"></a>코드 분석 애플리케이션 오류
 
 이 섹션은 관리 코드 분석 도구에서 생성 되는 오류 메시지에 대 한 참조입니다.
 
-## <a name="in-this-section"></a>이 섹션의 내용
+## <a name="in-this-section"></a>단원 내용
 
 |||
 |-|-|
@@ -33,7 +33,7 @@ ms.locfileid: "72610837"
 |[CA0052](ca0052.md)|분석할 대상을 선택 하지 않았습니다.|
 |[CA0053](ca0053.md)|규칙 어셈블리를 로드할 수 없습니다.|
 |[CA0054](ca0054.md)|사용자 지정 규칙 어셈블리에 잘못 된 XML 리소스가 있습니다.|
-|[CA0055](ca0055.md)|파일을 로드할 수 없습니다. \<path >|
+|[CA0055](ca0055.md)|파일을 로드할 수 없습니다.\<경로 >|
 |[CA0056](ca0056.md)|프로젝트 파일에 잘못 된 버전의 분석 도구가 있습니다.|
 |[CA0057](ca0057.md)|위반을 현재 대상 및 규칙 집합에 매핑할 수 없습니다.|
 |[CA0058](ca0058.md)|참조 된 어셈블리를 로드할 수 없습니다.|
@@ -58,5 +58,5 @@ ms.locfileid: "72610837"
 
 ## <a name="related-sections"></a>관련 단원
 
-- [코드 분석 정책 오류](../code-quality/code-analysis-policy-errors.md)
+- [Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)
 - [관리 코드 품질 분석](../code-quality/code-analysis-for-managed-code-overview.md)

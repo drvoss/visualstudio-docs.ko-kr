@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5979363f16f2e9d78a2f50ffbb6511d03146caaa
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6e4f239c5be290f6d79f52f55dbcb6da60d10785
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297850"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851696"
 ---
 # <a name="options-text-editor-cc-experimental"></a>옵션, 텍스트 편집기, C/C++, 실험적
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "74297850"
 ## <a name="intellisense"></a>IntelliSense
  **멤버 목록 점-화살표** 멤버 목록에 적용할 수 있는 경우 '. '을 '-> '로 바꿉니다.
 
-## <a name="refactoring"></a>리팩터링
+## <a name="refactoring"></a>Refactoring
  **Extract 함수 사용** 선택한 코드를 자체 함수로 추출 하 고 코드를 새 함수 호출로 바꿉니다. 이 기능에 액세스하려면 선택한 코드를 마우스 오른쪽 단추로 클릭하고 **빠른 작업**을 선택하거나, 간단히 기본 바로 가기인 Ctrl+.[Ctrl+점]을 누릅니다.
 
  **서명 변경 사용** 함수의 매개 변수를 추가, 순서 바꾸기 및 삭제 하 고 변경 내용을 모든 호출 사이트에 전파 합니다. 이 기능에 액세스하려면 모든 함수 사용을 마우스 오른쪽 단추로 클릭하고 **빠른 작업**을 선택하거나, 간단히 기본 바로 가기 Ctrl+.[Ctrl+점]을 누릅니다.
@@ -46,7 +46,7 @@ ms.locfileid: "74297850"
 
  **확장 우선 순위 사용** 사용 하도록 설정한 경우 텍스트 편집기에 ' ('를 입력 하 여 선택한 텍스트를 괄호로 묶을 수 있습니다.
 
- Visual Studio 갤러리의 추가 텍스트 편집기 기능은 [여기](https://go.microsoft.com/fwlink/?LinkId=692016)에서 목록을 참조하세요. 예제는 [C++ 빠른 조치 방법](https://visualstudiogallery.msdn.microsoft.com/be91feef-8dc3-4f7a-ac9f-f34e7ca5918f)(영문)이며, 다음을 지원합니다.
+ Visual Studio 갤러리의 추가 텍스트 편집기 기능은 [여기](https://marketplace.visualstudio.com/)에서 목록을 참조하세요. 예제는 [C++ 빠른 조치 방법](https://visualstudiogallery.msdn.microsoft.com/be91feef-8dc3-4f7a-ac9f-f34e7ca5918f)(영문)이며, 다음을 지원합니다.
 
 - **누락된 #include 추가** - 코드의 알 수 없는 기호에 대해 관련 #include를 제안합니다.
 

@@ -4,17 +4,17 @@ ms.date: 08/03/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - fxcop analyzers
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9791e2dbb6d4a82a49539216eda53d217140bd52
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 06362bcf00bc35fdef701e26fe03694b038e88b1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649333"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587461"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Visual Studio에서 FxCop 분석기 설치
 
@@ -34,7 +34,7 @@ Visual Studio 2019 버전 16.3 이상에서는 프로젝트의 코드 분석 속
 
 2. **설치**를 선택합니다.
 
-   Visual Studio는 최신 버전의 FxCopAnalyzers 패키지를 설치 합니다. 어셈블리는 **솔루션 탐색기**  > **분석기**의 **참조** 아래에 나타납니다.
+   Visual Studio는 최신 버전의 FxCopAnalyzers 패키지를 설치 합니다. 어셈블리는 **솔루션 탐색기** > **분석기**의 **참조** 아래에 나타납니다.
 
    ![솔루션 탐색기의 분석기 노드](media/solution-explorer-analyzers-node.png)
 
@@ -72,7 +72,7 @@ Visual Studio 2019 버전 16.3 이상에서는 프로젝트의 코드 분석 속
 
 | Visual Studio 버전 | FxCop analyzer 패키지 버전 |
 | - | - |
-| Visual Studio 2019 (모든 버전)<br />Visual Studio 2017 버전 15.8 이상 | [마지막](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) |
+| Visual Studio 2019 (모든 버전)<br />Visual Studio 2017 버전 15.8 이상 | [latest](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) |
 | Visual Studio 2017 버전 15.5에서 15.7로 | [2.6.3](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.3) |
 | Visual Studio 2017 버전 15.3에서 15.4로 | [2.3.0-beta1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1) |
 | Visual Studio 2017 버전 15.0에서 15.2로 | [2.0.0-beta2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2) |
@@ -120,7 +120,7 @@ Visual Studio 2017 버전 15.5 이상에서는 관리 되는 프로젝트에 대
 
 ::: moniker-end
 
-4. **다운로드**를 선택 합니다.
+4. **다운로드**를 선택합니다.
 
    확장이 다운로드 됩니다.
 
@@ -142,13 +142,13 @@ Visual Studio 2017 버전 15.5 이상에서는 관리 되는 프로젝트에 대
 
 ::: moniker range="vs-2017"
 
-확장이 설치 되어 있는지 확인 하려면 **도구**  > **확장 및 업데이트**를 선택 합니다. **확장 및 업데이트** 대화 상자에서 왼쪽에 있는 **설치** 된 범주를 선택 하 고 이름으로 확장을 검색 합니다.
+확장이 설치 되어 있는지 확인 하려면 **도구** > **확장 및 업데이트**를 선택 합니다. **확장 및 업데이트** 대화 상자에서 왼쪽에 있는 **설치** 된 범주를 선택 하 고 이름으로 확장을 검색 합니다.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-확장이 설치 되어 있는지 확인 하려면 **확장  >  확장** 을 선택**합니다.** **확장 관리** 대화 상자에서 왼쪽에 있는 **설치** 된 범주를 선택 하 고 이름으로 확장을 검색 합니다.
+확장이 설치 되어 있는지 확인 하려면 **확장 > 확장** 을 선택 **합니다.** **확장 관리** 대화 상자에서 왼쪽에 있는 **설치** 된 범주를 선택 하 고 이름으로 확장을 검색 합니다.
 
 ::: moniker-end
 

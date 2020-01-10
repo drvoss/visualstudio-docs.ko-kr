@@ -11,17 +11,17 @@ helpviewer_keywords:
 - pre-build events
 - post-build events
 ms.assetid: 3fff9ae5-213c-46ea-a660-1d70acb6c922
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4842a5a08de96cd40a45d0765d427cc74cbf5432
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 6629f41657a546ffb5fb48e0b6efb5f4f0dd50cb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73714382"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596881"
 ---
 # <a name="build-events-page-project-designer-c"></a>프로젝트 디자이너, 빌드 이벤트 페이지(C#)
 
@@ -96,7 +96,7 @@ ms.locfileid: "73714382"
 > [!NOTE]
 > SDK 스타일 프로젝트를 지원하기 위해 프로젝트 파일을 변경했습니다. 이전 형식에서 SDK 스타일 형식으로 프로젝트 파일을 수동으로 마이그레이션하는 경우, 앞의 코드에 나온 것처럼 `PreBuildEvent` 및 `PostBuildEvent` 속성을 삭제하고 `PreBuild` 및 `PostBuild` 대상으로 바꿔야 합니다. 프로젝트가 SDK 스타일 프로젝트인지 확인하는 방법을 알아보려면 [프로젝트 형식 확인](/nuget/resources/check-project-format)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방법: 빌드 이벤트 지정(Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
 - [방법: 빌드 이벤트 지정(C#)](../../ide/how-to-specify-build-events-csharp.md)

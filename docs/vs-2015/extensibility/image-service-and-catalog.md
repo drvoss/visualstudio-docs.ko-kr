@@ -6,12 +6,12 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0f509ca93b6802fc99a21143360227d64f8db319
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 42c42a845ef98fb3a6ebe9b5e017ae2783365f1b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301171"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851357"
 ---
 # <a name="image-service-and-catalog"></a>이미지 서비스 및 카탈로그
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +89,7 @@ ms.locfileid: "74301171"
 </ImageManifest>  
 ```  
 
- **기호만**  
+ **Symbols**  
 
  가독성 및 유지 관리를 돕기 위해 이미지 매니페스트는 특성 값에 기호를 사용할 수 있습니다. 기호는 다음과 같이 정의 됩니다.  
 
@@ -106,9 +106,9 @@ ms.locfileid: "74301171"
 |-|-|  
 |**하위 요소**|**정의**|  
 |가져오기|현재 매니페스트에서 사용할 지정 된 매니페스트 파일의 기호를 가져옵니다.|  
-|Guid|기호는 GUID를 나타내며 GUID 형식과 일치 해야 합니다.|  
+|GUID|기호는 GUID를 나타내며 GUID 형식과 일치 해야 합니다.|  
 |ID|기호는 ID를 나타내고 음수가 아닌 정수 여야 합니다.|  
-|String|기호는 임의의 문자열 값을 나타냅니다.|  
+|문자열|기호는 임의의 문자열 값을 나타냅니다.|  
 
  기호는 대/소문자를 구분 하며 $ (기호-이름) 구문을 사용 하 여 참조 됩니다.  
 
@@ -122,7 +122,7 @@ ms.locfileid: "74301171"
 
 |||  
 |-|-|  
-|**화살표**|**설명**|  
+|**기호**|**설명**|  
 |CommonProgramFiles|% CommonProgramFiles% 환경 변수의 값입니다.|  
 |LocalAppData|% LocalAppData% 환경 변수의 값입니다.|  
 |ManifestFolder|매니페스트 파일을 포함 하는 폴더입니다.|  
@@ -147,7 +147,7 @@ ms.locfileid: "74301171"
 |||  
 |-|-|  
 |**특성**|**정의**|  
-|Guid|하다 이미지 모니커의 GUID 부분입니다.|  
+|GUID|하다 이미지 모니커의 GUID 부분입니다.|  
 |ID|하다 이미지 모니커의 ID 부분입니다.|  
 |AllowColorInversion|[선택 사항, 기본값 true] 이미지에서 짙은 배경에 사용 될 때 해당 색을 프로그래밍 방식으로 반전 시킬 수 있는지 여부를 나타냅니다.|  
 
@@ -174,9 +174,9 @@ ms.locfileid: "74301171"
 |-|-|-|  
 |**요소**|**특성 (모두 필수)**|**정의**|  
 |\<크기 >|값|원본은 지정 된 크기 (장치 단위)의 이미지에 사용 됩니다. 이미지가 정사각형이 됩니다.|  
-|\<SizeRange >|MinSize, MaxSize|원본은 MinSize에서 MaxSize (장치 단위)까지 이미지에 사용 됩니다. 이미지가 정사각형이 됩니다.|  
+|\<SizeRange>|MinSize, MaxSize|원본은 MinSize에서 MaxSize (장치 단위)까지 이미지에 사용 됩니다. 이미지가 정사각형이 됩니다.|  
 |\<차원 >|Width, Height|원본은 지정 된 너비 및 높이 (장치 단위)의 이미지에 사용 됩니다.|  
-|\<DimensionRange >|MinWidth, MinHeight,<br /><br /> MaxWidth, Maxwidth|이 소스는 최소 너비/높이에서 최대 너비/높이 (장치 단위)로 이루어진 이미지에 사용 됩니다.|  
+|\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, Maxwidth|이 소스는 최소 너비/높이에서 최대 너비/높이 (장치 단위)로 이루어진 이미지에 사용 됩니다.|  
 
  \<소스 > 요소에는 선택적 \<Nativerver> 하위 요소가 있을 수 있습니다 .이 하위 요소는 관리 되는 어셈블리가 아니라 네이티브 어셈블리에서 로드 되는 \<소스 >를 정의 합니다.  
 
@@ -204,7 +204,7 @@ ms.locfileid: "74301171"
 |||  
 |-|-|  
 |**특성**|**정의**|  
-|Guid|하다 이미지 모니커의 GUID 부분입니다.|  
+|GUID|하다 이미지 모니커의 GUID 부분입니다.|  
 |ID|하다 이미지 모니커의 ID 부분입니다.|  
 |외부|[선택 사항, 기본값 false] 이미지 모니커가 현재 매니페스트의 이미지를 참조 하는지 여부를 나타냅니다.|  
 
@@ -215,35 +215,35 @@ ms.locfileid: "74301171"
 ### <a name="first-steps-managed"></a>첫 번째 단계 (관리 됨)  
  이미지 서비스를 사용 하려면 다음 어셈블리 중 일부 또는 전부에 대 한 참조를 프로젝트에 추가 해야 합니다.  
 
-- **VisualStudio. ImageCatalog**  
+- **Microsoft.VisualStudio.ImageCatalog.dll**  
 
   - 기본 제공 이미지 카탈로그 KnownMonikers를 사용 하는 경우 필요 합니다.  
 
-- **VisualStudio.**  
+- **Microsoft.VisualStudio.Imaging.dll**  
 
   - WPF UI에서 **CrispImage** 및 **Imagethemingutilities** 를 사용 하는 경우 필요 합니다.  
 
-- **VisualStudio. 14.0. m d.**  
+- **Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll**  
 
   - **ImageMoniker** 및 **ImageAttributes** 형식을 사용 하는 경우 필수  
 
   - **EmbedInteropTypes** 는 true로 설정 해야 합니다.  
 
-- **VisualStudio. 14.0 시간입니다.**  
+- **Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime**  
 
   - **IVsImageService2** 형식을 사용 하는 경우 필수  
 
   - **EmbedInteropTypes** 는 true로 설정 해야 합니다.  
 
-- **VisualStudio.**  
+- **Microsoft.VisualStudio.Utilities.dll**  
 
   - ImageBrushToColorConverter Ingutilities에 대해 를 사용 하는 경우 필요 합니다. WPF UI의 **ImageBackgroundColor**  
 
-- **VisualStudio VSVersion >\<. 0**  
+- **Microsoft.VisualStudio.Shell.\<VSVersion>.0**  
 
   - **Ivsuiobject** 유형을 사용 하는 경우 필요 합니다.  
 
-- **VisualStudio (영문).**  
+- **Microsoft.VisualStudio.Shell.Interop.10.0.dll**  
 
   - WinForms 관련 UI 도우미를 사용 하는 경우 필요 합니다.  
 
@@ -252,23 +252,23 @@ ms.locfileid: "74301171"
 ### <a name="first-steps-native"></a>첫 번째 단계 (네이티브)  
  이미지 서비스를 사용 하려면 다음 헤더 중 일부 또는 모두를 프로젝트에 포함 해야 합니다.  
 
-- **KnownImageIds**  
+- **KnownImageIds.h**  
 
   - 기본 제공 이미지 카탈로그 **Knownmonikers**를 사용 하지만 **IVsHierarchy GetGuidProperty** 또는 **GetProperty** 호출에서 값을 반환 하는 경우와 같이 **ImageMoniker** 형식을 사용할 수 없는 경우에 필요 합니다.  
 
-- **KnownMonikers .h**  
+- **KnownMonikers.h**  
 
   - 기본 제공 이미지 카탈로그 **Knownmonikers**를 사용 하는 경우 필요 합니다.  
 
-- **ImageParameters140**  
+- **ImageParameters140.h**  
 
   - **ImageMoniker** 및 **ImageAttributes** 형식을 사용 하는 경우 필요 합니다.  
 
-- **VSShell140**  
+- **VSShell140.h**  
 
   - **IVsImageService2** 형식을 사용 하는 경우 필수 사항입니다.  
 
-- **ImageThemingUtilities .h**  
+- **ImageThemingUtilities.h**  
 
   - 이미지 서비스가 테마를 처리 하도록 허용할 수 없는 경우에 필요 합니다.  
 
@@ -650,11 +650,11 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3. 업데이트 된 매핑을 통해 모니커를 요청 하는 이미지 서비스를 사용 하도록 코드를 업데이트 합니다. (이는 관리 코드에 대 한 **CrispImages** 업데이트 하거나, 이미지 서비스에서 Hbitmaps hbitmaps 요청 하 고 네이티브 코드를 위해이를 전달 하는 것을 의미할 수 있습니다.)  
 
 ## <a name="testing-your-images"></a>이미지 테스트  
- 이미지 라이브러리 뷰어 도구를 사용 하 여 이미지 매니페스트를 테스트 하 여 모든 것이 올바르게 작성 되었는지 확인할 수 있습니다. 이 도구는 [Visual Studio 2015 SDK](https://msdn.microsoft.com/library/bb166441.aspx)에서 찾을 수 있습니다. 이 도구 및 기타 도구에 대 한 설명서는 [여기](https://aka.ms/VSImageThemeTools)에서 찾을 수 있습니다.  
+ 이미지 라이브러리 뷰어 도구를 사용 하 여 이미지 매니페스트를 테스트 하 여 모든 것이 올바르게 작성 되었는지 확인할 수 있습니다. 이 도구는 [Visual Studio 2015 SDK](https://msdn.microsoft.com/library/bb166441.aspx)에서 찾을 수 있습니다. 이 도구 및 기타 도구에 대 한 설명서는 [여기](https://docs.microsoft.com/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015&redirectedfrom=MSDN)에서 찾을 수 있습니다.  
 
-## <a name="additional-resources"></a>추가 리소스  
+## <a name="additional-resources"></a>추가 자료  
 
-### <a name="samples"></a>샘플  
+### <a name="samples"></a>예제  
  다양 한 Visual Studio 확장 지점의 일부로 이미지 서비스를 사용 하는 방법을 보여 주기 위해 GitHub의 몇 가지 Visual Studio 샘플이 업데이트 되었습니다.  
 
  최신 샘플은 [http://github.com/Microsoft/VSSDK-Extensibility-Samples](https://github.com/Microsoft/VSSDK-Extensibility-Samples) 를 확인 하세요.  
@@ -670,7 +670,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  Manifest to Code 도구는 이미지 매니페스트 파일을 사용 하 고 코드 (C++, C#또는 VB) 또는. vsct 파일의 매니페스트 값을 참조 하기 위한 래퍼 파일을 생성 합니다.  
 
- **Image라이브러리 뷰어**  
+ **ImageLibraryViewer**  
 
  이미지 라이브러리 뷰어 도구는 이미지 매니페스트를 로드 하 고 사용자가 Visual Studio에서 매니페스트가 올바르게 작성 되었는지 확인 하는 것과 동일한 방식으로이를 조작할 수 있습니다. 사용자는 배경, 크기, DPI 설정, 고대비 및 기타 설정을 변경할 수 있습니다. 또한 매니페스트에서 오류를 찾기 위한 로드 정보를 표시 하 고 매니페스트의 각 이미지에 대 한 소스 정보를 표시 합니다.  
 
@@ -958,7 +958,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphClosedFolder||FolderClosed|  
     |GlyphArrow||GoToNext|  
     |GlyphCSharpFile||CSFileNode|  
-    |GlyphCSharpExpansion||살펴보겠습니다|  
+    |GlyphCSharpExpansion||코드 조각|  
     |GlyphKeyword||IntellisenseKeyword|  
     |GlyphInformation||StatusInformation|  
     |GlyphReference||ClassMethodReference|  

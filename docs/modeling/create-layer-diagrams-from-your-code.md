@@ -7,17 +7,17 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d956115da6b129263ee236109e278ac19db63a62
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 51e33d5f9b20230b056c017c9067bb4b2acafce6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747631"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597193"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>코드에서 종속성 다이어그램 만들기
 
@@ -51,7 +51,7 @@ ms.locfileid: "72747631"
 
 4. **모델링 프로젝트에 추가**에서 솔루션의 기존 모델링 프로젝트를 찾아 선택 합니다.
 
-     또는
+     -또는-
 
      새 모델링 **프로젝트 만들기** 를 선택 하 여 새 모델링 프로젝트를 솔루션에 추가 합니다.
 
@@ -70,7 +70,7 @@ ms.locfileid: "72747631"
 
 4. **아키텍처** 메뉴를 사용 하 여 솔루션에 대 한 새 종속성 다이어그램 만들기
 
-5. 코드 맵의 모든 노드를 선택 합니다. ( _Ctrl_  + _를_사용 하거나, 클릭 한 후 끌기 및 릴리스를 클릭 하기 전에 _Shift_ 키를 눌러 고무 밴드 선택을 사용 합니다.
+5. 코드 맵의 모든 노드를 선택 합니다. ( _Ctrl_ + _를_사용 하거나, 클릭 한 후 끌기 및 릴리스를 클릭 하기 전에 _Shift_ 키를 눌러 고무 밴드 선택을 사용 합니다.
 
 6. 선택한 요소를 새 종속성 유효성 검사 다이어그램으로 끌어서 놓거나 복사 하 여 붙여 넣습니다.
 

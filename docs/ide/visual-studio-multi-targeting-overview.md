@@ -6,17 +6,17 @@ helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
 - framework targeting [Visual Studio]
 - .NET framework targeting [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f393061b249fc2eb10a348bb0d2da68f4a30c4f3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ec81b38ab68c327f25c9f94b6329a700e2662383
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647179"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594125"
 ---
 # <a name="framework-targeting-overview"></a>Framework 대상 지정 개요
 
@@ -120,7 +120,7 @@ Visual Studio 솔루션에는 여러 가지 버전의 .NET을 대상으로 하�
 
 .NET Framework 3.5 이상을 대상으로 지정하면 **System.Core**에 대한 참조 및 <xref:System.Linq>에 대한 프로젝트 수준 가져오기(Visual Basic에서만)가 자동으로 추가됩니다. LINQ 기능을 사용하려면 `Option Infer`도 켜야 합니다(Visual Basic에서만). 대상을 이전 .NET Framework 버전으로 변경하면 참조 및 가져오기가 자동으로 제거됩니다. 자세한 내용은 [LINQ 작업](/dotnet/csharp/tutorials/working-with-linq)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [대상 프레임워크](/dotnet/standard/frameworks)
 - [멀티 타기팅(MSBuild)](../msbuild/msbuild-multitargeting-overview.md)

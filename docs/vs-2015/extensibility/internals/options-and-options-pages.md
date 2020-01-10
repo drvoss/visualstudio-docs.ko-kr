@@ -14,12 +14,12 @@ ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1e30be26c40834d3122d491f8d150f02b6f3b776
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4512867f636e2362aa28d52c5af28bf8eb9697f9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300692"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851159"
 ---
 # <a name="options-and-options-pages"></a>옵션 및 옵션 페이지
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ ms.locfileid: "74300692"
 - <xref:System.ComponentModel.DescriptionAttribute>은 옵션에 대 한 설명을 결정 합니다.  
   
   > [!NOTE]
-  > 동일한 특성, SRCategory, LocDisplayName 및 Srcategory은 지역화에 문자열 리소스를 사용 하 고 [관리 되는 프로젝트 샘플](https://go.microsoft.com/fwlink/?LinkId=122774)에 정의 되어 있습니다.  
+  > 동일한 특성, SRCategory, LocDisplayName 및 Srcategory은 지역화에 문자열 리소스를 사용 하 고 [관리 되는 프로젝트 샘플](https://msdn.com/vsx)에 정의 되어 있습니다.  
   
   다음과 같은 코드 조각을 생각해 봅시다.  
   

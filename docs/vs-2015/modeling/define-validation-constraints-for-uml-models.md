@@ -11,17 +11,17 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3dd76deb3b72d3b12d3b5892c2e5664273425c4c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 32f249b971e8a37bc5b596203cde6bc7b0bcf6f1
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295837"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849733"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>UML 모델에 대한 유효성 검사 제약 조건 정의
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-모델이 지정된 조건을 충족하는지 여부를 테스트하는 유효성 검사 제약 조건을 정의할 수 있습니다. 예를 들어 사용자가 상속 관계 루프를 만들지 않도록 제약 조건을 정의할 수 있습니다. 제약 조건은 사용자가 모델을 열거나 저장하려고 할 때 호출되며, 수동으로 호출할 수도 있습니다. 제약 조건이 실패하면 정의한 오류 메시지가 오류 창에 추가됩니다. 이러한 제약 조건을[VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)(Visual Studio Integration Extension)로 패키징하고 다른 Visual Studio 사용자에게 배포할 수 있습니다.
+모델이 지정된 조건을 충족하는지 여부를 테스트하는 유효성 검사 제약 조건을 정의할 수 있습니다. 예를 들어 사용자가 상속 관계 루프를 만들지 않도록 제약 조건을 정의할 수 있습니다. 제약 조건은 사용자가 모델을 열거나 저장하려고 할 때 호출되며, 수동으로 호출할 수도 있습니다. 제약 조건이 실패하면 정의한 오류 메시지가 오류 창에 추가됩니다. 이러한 제약 조건을[VSIX](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)(Visual Studio Integration Extension)로 패키징하고 다른 Visual Studio 사용자에게 배포할 수 있습니다.
 
  데이터베이스와 같은 외부 리소스에 대해 모델의 유효성을 검사하는 제약 조건을 정의할 수도 있습니다. 레이어 다이어그램에 대해 프로그램 코드의 유효성을 검사 하려면 [레이어 다이어그램에 사용자 지정 아키텍처 유효성 검사 추가](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)를 참조 하세요.
 
@@ -269,7 +269,7 @@ public void ValidateSomething
 
  `context.LogError("error string", errorCode, elementsWithError);`
 
-- `"error string"` 오류 목록에 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]이 표시됩니다.
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 오류 목록에 `"error string"`이 표시됩니다.
 
 - `errorCode`는 오류의 고유 식별자여야 하는 문자열입니다.
 
@@ -394,9 +394,9 @@ context.LogError(... , usecase);
 
    드물게 결함이 있는 확장은 로드되지 않고 오류 창에 보고서를 생성하지만 확장 관리자에 나타나지 않습니다. 이 경우 다음 위치에서 파일을 삭제 하 여 확장을 제거할 수 있습니다. 여기서 *% LocalAppData%* 는 일반적으로 *DriveName*: \Users\\*UserName*\AppData\Local입니다.
 
-   *% LocalAppData%* **\Microsoft\VisualStudio\\[version] \extensions**
+   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**
 
-## <a name="Example"></a> 예제
+## <a name="Example"></a> 예
  이 예제에서는 요소 간 종속성 관계에서 루프를 찾습니다.
 
  저장 시 및 유효성 검사 메뉴 명령에 의해 유효성을 검사합니다.

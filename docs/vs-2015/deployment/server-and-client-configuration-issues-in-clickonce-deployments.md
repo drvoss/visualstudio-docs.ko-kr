@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a78fab1986c7fae50bbb4c8149e8f2c89ec4873
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 97c8c50dec18d730d92021d88361701a96b99590
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295208"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844991"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 배포 시 서버 및 클라이언트 구성 문제
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Windows Server에서 인터넷 정보 서비스 (IIS)를 사용 하는 경우 Wi
 ## <a name="clickonce-and-proxy-authentication"></a>ClickOnce 및 프록시 인증  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] .NET Framework 3.5부터 Windows 통합 프록시 인증에 대 한 지원을 제공 합니다. 특정 machine.config 지시문이 필요 하지 않습니다. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]는 기본 또는 다이제스트와 같은 다른 인증 프로토콜에 대 한 지원을 제공 하지 않습니다.  
   
- .NET Framework 2.0에 핫픽스를 적용 하 여이 기능을 사용 하도록 설정할 수도 있습니다. 자세한 내용은 https://go.microsoft.com/fwlink/?LinkId=158730을 참조하세요.  
+ .NET Framework 2.0에 핫픽스를 적용 하 여이 기능을 사용 하도록 설정할 수도 있습니다. 자세한 내용은 https://go.microsoft.com/fwlink/?LinkId=158730 를 참조하세요.  
   
  자세한 내용은 [\<defaultProxy > 요소 (네트워크 설정)](https://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f)를 참조 하세요.  
   
@@ -121,7 +121,7 @@ Windows Server에서 인터넷 정보 서비스 (IIS)를 사용 하는 경우 Wi
   
 - 확장명이 "*"이 고 MIME 형식이 "응용 프로그램/8 진수 스트림" 인 MIME 형식을 만들면 차단 해제 된 파일 형식의 파일을 다운로드할 수 있습니다. 그러나 .aspx 및 .asmx와 같은 차단 된 파일 형식은 다운로드할 수 없습니다.  
   
-  Windows Server에서 MIME 형식을 구성 하는 방법에 대 한 자세한 내용은 Microsoft 기술 자료 문서 KB326965, "IIS 6.0은 알 수 없는 MIME 형식을 제공 하지 않습니다. https://support.microsoft.com/default.aspx?scid=kb" ( [en-us; 326965;](https://support.microsoft.com/default.aspx?scid=kb;en-us;326965))를 참조 하세요.  
+  Windows Server에서 MIME 형식을 구성 하는 방법에 대 한 자세한 내용은 Microsoft 기술 자료 문서 KB326965, "IIS 6.0은 알 수 없는 MIME 형식을 제공 하지 않습니다. https://support.microsoft.com/default.aspx?scid=kb " ( [en-us; 326965;](https://support.microsoft.com/default.aspx?scid=kb;en-us;326965))를 참조 하세요.  
   
 ## <a name="content-type-mappings"></a>콘텐츠 형식 매핑  
  HTTP를 통해 게시 하는 경우 응용 프로그램 파일에 대 한 콘텐츠 형식 (MIME 형식이 라고도 함)은 "응용 프로그램/x m s-응용 프로그램" 이어야 합니다. 서버에 [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] 설치 되어 있으면 자동으로 설정 됩니다. 이 버전이 설치 되어 있지 않으면 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램 vroot 또는 전체 서버에 대 한 MIME 형식 연결을 만들어야 합니다.  
@@ -133,7 +133,7 @@ Windows Server에서 인터넷 정보 서비스 (IIS)를 사용 하는 경우 Wi
   
  IIS를 사용 하는 경우 HTTP 압축을 쉽게 사용 하도록 설정할 수 있습니다. 그러나 HTTP 압축을 사용 하도록 설정 하는 경우 특정 파일 형식 (즉, HTML 및 텍스트 파일)에 대해서만 사용할 수 있습니다. 어셈블리 (.dll), XML (.xml), 배포 매니페스트 (응용 프로그램) 및 응용 프로그램 매니페스트 (.manifest)에 대해 압축을 사용 하도록 설정 하려면 이러한 파일 형식을 IIS에서 압축할 형식 목록에 추가 해야 합니다. 배포에 파일 형식을 추가할 때까지 텍스트 및 HTML 파일만 압축 됩니다.  
   
- IIS에 대 한 자세한 지침은 [HTTP 압축을 위한 추가 문서 유형을 지정 하는 방법](https://go.microsoft.com/fwlink/?LinkId=178459)을 참조 하세요.  
+ IIS에 대 한 자세한 지침은 [HTTP 압축을 위한 추가 문서 유형을 지정 하는 방법](https://support.microsoft.com/kb/234497)을 참조 하세요.  
   
 ## <a name="see-also"></a>참고 항목  
  [ClickOnce 배포 문제 해결](../deployment/troubleshooting-clickonce-deployments.md)   

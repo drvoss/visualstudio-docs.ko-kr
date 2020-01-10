@@ -6,17 +6,17 @@ helpviewer_keywords:
 - icons [Visual Studio], application
 - application properties [Visual Studio], icons
 - application icons [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1e137eda77f1807b80409872d9fe0c2966df2a41
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7e78bd32bf9c21829adeb04a22cd30abb47a3379
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656598"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596140"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>방법: 애플리케이션 아이콘 지정(Visual Basic, C#)
 
@@ -35,11 +35,11 @@ ms.locfileid: "72656598"
 
 1. **프로젝트 디자이너**가 나타나면 **애플리케이션** 탭을 선택합니다.
 
-1. **(Visual Basic)** &mdash; **아이콘** 목록에서 아이콘 파일( *.ico*)을 선택합니다.
+1. **(Visual Basic)** &mdash;**아이콘** 목록에서 아이콘 파일( *.ico*)을 선택합니다.
 
-    **C#** &mdash; **아이콘** 목록 근처에서 **\<찾아보기...>** 단추를 선택한 다음, 원하는 아이콘 파일의 위치로 이동합니다.
+    **C#** &mdash;**아이콘** 목록 근처에서 **\<찾아보기...>** 단추를 선택한 다음, 원하는 아이콘 파일의 위치로 이동합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [애플리케이션 페이지, 프로젝트 디자이너(Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
 - [애플리케이션 페이지, 프로젝트 디자이너(C#)](../ide/reference/application-page-project-designer-csharp.md)

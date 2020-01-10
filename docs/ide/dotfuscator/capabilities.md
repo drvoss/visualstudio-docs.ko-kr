@@ -14,15 +14,15 @@ helpviewer_keywords:
 - protection
 description: Visual Studio에 포함된 Dotfuscator Community 무료 복사본의 기능을 알아봅니다.
 ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
-author: Joe-Sewell-PreEmptive
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 249c039070246f27669f3a808cf607a649db1e59
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a36aa17207affa257cdbb2caec0f2d6d9392285b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747935"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590009"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Dotfuscator의 기능
 
@@ -58,7 +58,7 @@ Dotfuscator Community는 [조작 방지][tamper], [디버그 방지][debug] 및 
 
 이와 같은 방법의 대부분은 평가 및 평가판 소프트웨어를 위해 [수명 종료 기한][shelflife]을 적용하는 데 사용될 수도 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [전체 Dotfuscator Community 사용자 가이드의 이 항목][full]
 

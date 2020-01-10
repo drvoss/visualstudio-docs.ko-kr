@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8c5906084fc7db96ddf304e8362bf7692dac62d5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cdd853307bdea28c48762a6a3f0416e698b577ff
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297141"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850131"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>UML 시퀀스 다이어그램: 지침
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Visual Studio에서는 상호 작용을 표시 하는 *시퀀스 다이어그램
 
  이 기능을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
 
-## <a name="in-this-topic"></a>항목 내용
+## <a name="in-this-topic"></a>이 항목의 내용
  [UML 시퀀스 다이어그램 사용](#Using)
 
  [시퀀스 다이어그램을 그리는 기본 단계](#BasicSteps)
@@ -73,7 +73,7 @@ Visual Studio에서는 상호 작용을 표시 하는 *시퀀스 다이어그램
 #### <a name="lifelines-and-types"></a>수명선 및 형식
  시퀀스 다이어그램에서 그리는 수명선은 시스템 구성 요소 또는 클래스의 일반적인 인스턴스를 나타낼 수 있습니다. 형식에서 수명선을 만들거나 수명선에서 형식을 만들 수 있으며, UML 클래스 다이어그램 및 UML 구성 요소 다이어그램에 형식을 표시할 수 있습니다. 자세한 내용은 [클래스 및 수명선](#ClassesAndLifelines)을 참조 하세요.
 
-#### <a name="parameter-types"></a>매개 변수 유형
+#### <a name="parameter-types"></a>매개 변수 형식
  UML 클래스 다이어그램에서 수명선 간에 전송된 메시지에 사용된 매개 변수 형식과 반환 값을 설명할 수도 있습니다.
 
 #### <a name="use-case-details"></a>사용 사례 정보
@@ -261,7 +261,7 @@ Visual Studio에서는 상호 작용을 표시 하는 *시퀀스 다이어그램
 
 |**이 목적을 위해**|**이 형식 사용**|
 |--------------------------|-------------------------|
-|형식의 익명 인스턴스.<br /><br /> 각 형식의 수명선이 하나만 있는 경우에 사용합니다.|*t*|
+|형식의 익명 인스턴스.<br /><br /> 각 형식의 수명선이 하나만 있는 경우에 사용합니다.|*typeName*|
 |형식의 명명된 인스턴스.<br /><br /> 동일한 형식의 인스턴스를 두 개 이상 포함하는 시퀀스를 표시하려는 경우에 사용합니다.|*objectName*:*typeName*|
 
 ### <a name="creating-lifelines-from-types"></a>형식에서 수명선 만들기
@@ -443,4 +443,4 @@ Visual Studio에서는 상호 작용을 표시 하는 *시퀀스 다이어그램
 5. 조각에 새 메시지를 추가하려면 메시지 도구를 사용하거나 복사하여 붙여넣습니다.
 
 ## <a name="see-also"></a>참고 항목
- [Uml 시퀀스 다이어그램: 참조](../modeling/uml-sequence-diagrams-reference.md) [편집 uml 모델 및 다이어그램](../modeling/edit-uml-models-and-diagrams.md) [uml 사용 사례 다이어그램](../modeling/uml-use-case-diagrams-reference.md) : uml [클래스 다이어그램](../modeling/uml-class-diagrams-reference.md) 참조: Uml [구성 요소 다이어그램](../modeling/uml-component-diagrams-reference.md) 참조: Uml [구성 요소 다이어그램](../modeling/uml-component-diagrams-reference.md) 참조: 참조 [비디오: 시퀀스 다이어그램을 사용 하 여 상호 작용 스케치](https://go.microsoft.com/fwlink/?LinkId=201113)
+ [Uml 시퀀스 다이어그램: 참조](../modeling/uml-sequence-diagrams-reference.md) [편집 uml 모델 및 다이어그램](../modeling/edit-uml-models-and-diagrams.md) [uml 사용 사례 다이어그램](../modeling/uml-use-case-diagrams-reference.md) : uml [클래스 다이어그램](../modeling/uml-class-diagrams-reference.md) 참조: Uml [구성 요소 다이어그램](../modeling/uml-component-diagrams-reference.md) 참조: Uml [구성 요소 다이어그램](../modeling/uml-component-diagrams-reference.md) 참조: 참조 [비디오: 시퀀스 다이어그램을 사용 하 여 상호 작용 스케치](https://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases)

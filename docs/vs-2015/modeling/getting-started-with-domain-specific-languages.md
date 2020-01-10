@@ -9,19 +9,19 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a2757201f482682b8fdf26275f510984629204f6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 71aa8b31023cedcc41a08a775f9fdf28a4489d1e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300908"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847188"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>도메인별 언어 시작
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 항목에서는 Visual Studio 용 모델링 SDK를 사용 하 여 만든 DSL (도메인별 언어)을 정의 하 고 사용 하는 기본 개념을 설명 합니다.
 
- Dsl을 처음 접하는 경우이 사이트에서 찾을 수 있는 **DSL 도구 랩을**통해 작업 하는 것이 좋습니다. [VISUALIZATON and 모델링 SDK](https://go.microsoft.com/fwlink/?LinkID=186128)
+ Dsl을 처음 접하는 경우이 사이트에서 찾을 수 있는 **DSL 도구 랩을**통해 작업 하는 것이 좋습니다. [VISUALIZATON and 모델링 SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>도메인 특정 언어로 무엇을 할 수 있나요?
  도메인별 언어는 특정 용도에 사용 하도록 디자인 된 표기법으로, 일반적으로 그래픽입니다. 이와 대조적으로 UML과 같은 언어는 범용입니다. DSL에서는 모델 요소 및 해당 관계의 유형과 화면에 표시 되는 방식을 정의할 수 있습니다.
@@ -36,13 +36,13 @@ ms.locfileid: "74300908"
 
  이 개요의 나머지 부분은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 도메인별 언어를 만들고 사용 하는 기본 작업을 소개 하는 연습입니다.
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>전제 조건
  DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://www.visualstudio.com/)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://docs.microsoft.com/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
 |Visual Studio 용 모델링 SDK|[MSDK 다운로드](https://www.microsoft.com/download/details.aspx?id=48148)|
 
 ## <a name="creating-a-dsl-solution"></a>DSL 솔루션 만들기
@@ -399,4 +399,4 @@ ms.locfileid: "74300908"
 2. 계속 사용 하려는 실험적 Dsl 또는 다른 실험적 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장을 다시 작성 합니다.
 
 ## <a name="see-also"></a>참고 항목
- [모델, 클래스 및 관계 이해](../modeling/understanding-models-classes-and-relationships.md) [도메인별 언어](../modeling/how-to-define-a-domain-specific-language.md) [Visualizaton 및 모델링 SDK](https://go.microsoft.com/fwlink/?LinkID=186128) 를 정의 하는 방법
+ [모델, 클래스 및 관계 이해](../modeling/understanding-models-classes-and-relationships.md) [도메인별 언어](../modeling/how-to-define-a-domain-specific-language.md) [Visualizaton 및 모델링 SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) 를 정의 하는 방법

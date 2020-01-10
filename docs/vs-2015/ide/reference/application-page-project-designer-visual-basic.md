@@ -15,12 +15,12 @@ caps.latest.revision: 68
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3ca14cead3b632cb70b817c79fce797078c7069b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 893647303b493ea633caf076658edbdcf0664ccc
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299383"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850846"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "74299383"
 
  웹 애플리케이션 프로젝트의 경우 **클래스 라이브러리**를 지정해야 합니다.
 
- **WinMD 파일** 옵션을 지정하는 경우 유형을 Windows 런타임 프로그래밍 언어로 프로젝션할 수 있습니다. 프로젝트의 출력을 WinMD 파일로 패키징하면 여러 언어로 애플리케이션을 코딩한 후 모두 동일한 언어로 작성한 것처럼 코드가 상호 운용되도록 할 수 있습니다. [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] 앱을 포함하여 Windows 런타임 라이브러리를 대상으로 하는 솔루션에 대해 **WinMD 파일** 옵션을 사용할 수 있습니다. 자세한 내용은[C# 및 Visual Basic으로 Windows 런타임 구성 요소 만들기](https://go.microsoft.com/fwlink/?LinkId=231895)를 참조하세요.
+ **WinMD 파일** 옵션을 지정하는 경우 유형을 Windows 런타임 프로그래밍 언어로 프로젝션할 수 있습니다. 프로젝트의 출력을 WinMD 파일로 패키징하면 여러 언어로 애플리케이션을 코딩한 후 모두 동일한 언어로 작성한 것처럼 코드가 상호 운용되도록 할 수 있습니다. [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] 앱을 포함하여 Windows 런타임 라이브러리를 대상으로 하는 솔루션에 대해 **WinMD 파일** 옵션을 사용할 수 있습니다. 자세한 내용은[C# 및 Visual Basic으로 Windows 런타임 구성 요소 만들기](https://msdn.microsoft.com/library/windows/apps/br230301(v=VS.85).aspx)를 참조하세요.
 
 > [!NOTE]
 > Windows 런타임은 어떤 언어에서 사용하든 네이티브 개체로 나타나도록 유형을 프로젝션할 수 있습니다. 예를 들어 Windows 런타임과 상호 작용하는 JavaScript 애플리케이션에서는 JavaScript 개체 집합으로 사용되고, C# 애플리케이션에서는 라이브러리가 .NET 개체 컬렉션으로 사용됩니다. 프로젝트의 출력을 WinMD 파일로 패키징하면 Windows 런타임에서 사용되는 것과 동일한 기술을 이용할 수 있습니다.
@@ -75,7 +75,7 @@ ms.locfileid: "74299383"
 
  **애플리케이션 프레임워크 사용**이 선택된 경우(기본값), 이 목록에 **시작 폼**이라는 제목이 지정되고, 애플리케이션 프레임워크에서 개체가 아니라 시작 폼만 지원하기 때문에 폼만 표시됩니다.
 
- 프로젝트가 WPF 브라우저 애플리케이션인 경우 이 목록에 **시작 URI**라는 제목이 지정되고 기본값은 **Page1.xaml**입니다. **시작 URI** 목록을 사용하면 애플리케이션이 시작 시 표시하는 사용자 인터페이스 리소스(XAML 요소)를 지정할 수 있습니다. 자세한 내용은 <xref:System.Windows.Application.StartupUri%2A>을 참조하세요.
+ 프로젝트가 WPF 브라우저 애플리케이션인 경우 이 목록에 **시작 URI**라는 제목이 지정되고 기본값은 **Page1.xaml**입니다. **시작 URI** 목록을 사용하면 애플리케이션이 시작 시 표시하는 사용자 인터페이스 리소스(XAML 요소)를 지정할 수 있습니다. 자세한 내용은 <xref:System.Windows.Application.StartupUri%2A>를 참조하세요.
 
  **애플리케이션 프레임워크 사용**의 선택이 취소된 경우 이 목록은 **시작 개체**가 되고 `Sub Main`을 포함하는 폼과 클래스 또는 모듈을 둘 다 표시합니다.
 
@@ -139,5 +139,5 @@ ms.locfileid: "74299383"
 
  <xref:System.Windows.Application> 개체는 특정 애플리케이션 상태가 변경될 때(예: 애플리케이션 시작 또는 종료 시) 이벤트를 발생시킵니다. 이 클래스가 노출하는 이벤트의 전체 목록은 <xref:System.Windows.Application>을 참조하세요. 이러한 이벤트는 `Application` partial 클래스의 사용자 코드 섹션에서 처리됩니다.
 
-## <a name="see-also"></a>참고 항목
-[애플리케이션 속성 관리](../../ide/application-properties.md)[Office 솔루션에서 코드 작성](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
+## <a name="see-also"></a>관련 항목
+[응용 프로그램 속성 관리](../../ide/application-properties.md) [Office 솔루션에서 코드 작성](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)

@@ -3,17 +3,17 @@ title: '방법: XML 스키마에서 XML 조각 생성'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae55428b61053fbd255446833cb20aec3da79b6e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ec320018cc64e774751c312ca4cdeb94a6d53a9c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645375"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592687"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>방법: XML 스키마에서 XML 조각 생성
 
@@ -41,7 +41,7 @@ Xml 편집기에는 XSD (XML 스키마 정의 언어) 스키마에서 XML 조각
 
 - 스키마 형식이 atomic 형식인 경우 편집기에서 atomic 형식을 가져오고 atomic 형식 이름을 삽입합니다. 파생된 단순 형식의 경우 기본 단순 형식이 사용됩니다. list 형식의 경우 atomic 형식은 `itemType`입니다. union의 경우 atomic 형식은 첫 번째 `memberType`의 atomic 형식입니다.
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 
 이 섹션의 단계에서는 XML 편집기의 스키마 생성 XML 조각 기능을 사용 하는 방법을 보여 줍니다.
 
@@ -80,7 +80,7 @@ Xml 편집기에는 XSD (XML 스키마 정의 언어) 스키마에서 XML 조각
 
      **!** 문서 유형을 추가 하는 DOCTYPE입니다.
 
-     **?** 처리 명령을 추가 합니다.
+     **?** 처리 명령을 추가합니다.
 
      Root 요소를 추가 하려면 **연결** 합니다.
 
@@ -141,7 +141,7 @@ Xml 편집기에는 XSD (XML 스키마 정의 언어) 스키마에서 XML 조각
 
 ### <a name="output"></a>Output
 
-다음은 `Contact` 요소와 연결된 스키마 정보를 기반으로 생성되는 XML 데이터입니다. @No__t_0 표시 된 항목은 XML 조각에서 편집 가능한 필드를 지정 합니다.
+다음은 `Contact` 요소와 연결된 스키마 정보를 기반으로 생성되는 XML 데이터입니다. `bold` 표시 된 항목은 XML 조각에서 편집 가능한 필드를 지정 합니다.
 
 ```xml
 <Contact>

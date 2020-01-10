@@ -32,12 +32,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 25978ae5fa76afc7cd43c9ccc243f25712495ddd
-ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+ms.openlocfilehash: ce5e4d1e8ed3505d1f971ef209c7e05ba85e0d69
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74879284"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75402029"
 ---
 # <a name="annotating-locking-behavior"></a>잠금 동작에 주석 지정
 다중 스레드 프로그램에서 동시성 버그를 방지하려면 항상 적절한 잠금 규칙을 따르고 SAL 주석을 사용합니다.
@@ -73,7 +73,7 @@ SAL은 임계 영역, 뮤텍스, 스핀 잠금 및 기타 리소스 개체와 �
 |`_Create_lock_level_(name)`|기호 `name`을 잠금 수준으로 선언하여 `_Has_Lock_level_` 및 `_Lock_level_order_` 주석에서 사용될 수 있도록 하는 문입니다.|
 |`_Has_lock_kind_(kind)`|개체에 주석을 달아 리소스 개체의 형식 정보를 구체화합니다. 공용 형식이 여러 종류의 리소스에 사용되고 오버로드된 형식이 다양한 리소스 간의 의미적 요구 사항을 구분하는 데 충분하지 않은 경우가 있습니다. 미리 정의된 `kind` 매개 변수의 목록은 다음과 같습니다.<br /><br /> `_Lock_kind_mutex_`<br /> 뮤텍스에 대한 잠금 종류 ID<br /><br /> `_Lock_kind_event_`<br /> 이벤트에 대한 잠금 종류 ID<br /><br /> `_Lock_kind_semaphore_`<br /> 세마포에 대한 잠금 종류 ID<br /><br /> `_Lock_kind_spin_lock_`<br /> 스핀 잠금에 대한 잠금 종류 ID<br /><br /> `_Lock_kind_critical_section_`<br /> 임계 영역에 대한 잠금 종류 ID|
 |`_Has_lock_level_(name)`|잠금 개체에 주석을 추가하고 `name` 잠금 수준을 부여합니다.|
-|`_Lock_level_order_(name1, name2)`|`name1`과 `name2` 간의 잠금 순서를 제공하는 문입니다.  수준 `name1` 있는 잠금은 수준이 `name2` 잠금 보다 먼저 획득 해야 합니다.|
+|`_Lock_level_order_(name1, name2)`|`name1`과 `name2` 간의 잠금 순서를 제공하는 문입니다.  수준 `name1` 있는 잠금은 수준이 `name2`인 잠금 보다 먼저 가져와야 합니다.|
 |`_Post_same_lock_(expr1, expr2)`|함수에 주석을 추가하고 사후 상태에서 `expr1` 및 `expr2`라는 두 잠금이 동일한 잠금 개체인 것처럼 처리됨을 나타냅니다.|
 |`_Releases_exclusive_lock_(expr)`|함수에 주석을 달고 사후 상태에서 함수가 `expr`로 명명된 잠금 개체의 단독 잠금 수를 하나 감소시킴을 나타냅니다.|
 |`_Releases_lock_(expr)`|함수에 주석을 추가하고 사후 상태에서 함수가 `expr`로 명명된 잠금 개체의 잠금 수를 하나 감소시킴을 나타냅니다.|

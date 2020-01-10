@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 439c6b5fc30be2e76eb6c0b6a44b1ec5226633b1
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2df740abf25344253627b614fdbd80dce86c7bfa
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295938"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847478"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: 예기치 않은 위치에서 예외를 발생시키지 마십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +89,7 @@ ms.locfileid: "74295938"
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 
-- [M:IEquatable.Equals](https://go.microsoft.com/fwlink/?LinkId=113472)
+- [M:IEquatable.Equals](https://msdn2.microsoft.com/library/ms131190(VS.80).aspx)
 
   **Equals** 메서드는 예외를 throw 하는 대신 `true` 또는 `false`를 반환 해야 합니다. 예를 들어 Equals가 두 개의 일치 하지 않는 형식을 전달 하는 경우 <xref:System.ArgumentException>를 throw 하는 대신 `false` 반환 해야 합니다.
 
@@ -98,7 +98,7 @@ ms.locfileid: "74295938"
 
 - <xref:System.Object.GetHashCode%2A>
 
-- [M:IEqualityComparer.GetHashCode (T)](https://go.microsoft.com/fwlink/?LinkId=113477)
+- [M:IEqualityComparer.GetHashCode(T)](https://msdn2.microsoft.com/library/system.collections.iequalitycomparer.gethashcode.aspx)
 
   **GetHashCode** 는 항상 값을 반환 해야 합니다. 그렇지 않으면 해시 테이블의 항목이 손실 될 수 있습니다.
 

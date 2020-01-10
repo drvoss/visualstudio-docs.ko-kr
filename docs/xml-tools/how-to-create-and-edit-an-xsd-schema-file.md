@@ -3,17 +3,17 @@ title: XSD 스키마 파일 만들기 및 편집
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 91b10cd7-c0cd-4e5a-a46b-4fed60dff542
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2df904b4f5351611e4d15775f68d94db4cc876e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 976448709f7ecf9eaff0a563b867f12b3d9fa770
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645943"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592765"
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>방법: XSD 스키마 파일 만들기 및 편집
 
@@ -21,7 +21,7 @@ ms.locfileid: "72645943"
 
 ## <a name="to-create-a-new-xml-schema-file"></a>새 XML 스키마 파일을 만들려면
 
-1. Visual Studio에서 **파일** 메뉴를 열고 **새로 만들기**  > **파일**을 선택 합니다. 또는 **Ctrl** +**N** 바로 가기 키를 사용 합니다.
+1. Visual Studio에서 **파일** 메뉴를 열고 **새로 만들기** > **파일**을 선택 합니다. 또는 **Ctrl**+**N** 바로 가기 키를 사용 합니다.
 
 2. **새 파일** 대화 상자에서 **XML 스키마** 를 선택한 다음 **열기**를 선택 합니다.
 

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - data access [Visual Studio], objects
 - saving data
 ms.assetid: efd6135a-40cf-4b0d-8f8b-41a5aaea7057
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5208b7764949f6ba6d3e862c7a2102608afb7e24
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 509910730d4da095b6db622212716a8f958495d7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648210"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586265"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>개체에서 데이터베이스로 데이터 저장
 
@@ -36,12 +36,12 @@ ms.locfileid: "72648210"
 |TableAdapter DBDirect 메서드|설명|
 | - |-----------------|
 |`TableAdapter.Insert`|데이터베이스에 새 레코드를 추가 하 고 개별 열 값을 메서드 매개 변수로 전달할 수 있도록 합니다.|
-|`TableAdapter.Update`|데이터베이스의 기존 레코드를 업데이트 합니다. @No__t_0 메서드는 원래 열 값과 새 열 값을 메서드 매개 변수로 사용 합니다. 원래 값을 사용 하 여 원래 레코드를 찾은 다음 새 값을 사용 하 여 해당 레코드를 업데이트 합니다.<br /><br /> @No__t_0 메서드는 <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow> 또는 <xref:System.Data.DataRow>s 배열을 메서드 매개 변수로 사용 하 여 데이터 집합의 변경 내용을 데이터베이스에 다시 조정 하는 데도 사용 됩니다.|
+|`TableAdapter.Update`|데이터베이스의 기존 레코드를 업데이트 합니다. `Update` 메서드는 원래 열 값과 새 열 값을 메서드 매개 변수로 사용 합니다. 원래 값을 사용 하 여 원래 레코드를 찾은 다음 새 값을 사용 하 여 해당 레코드를 업데이트 합니다.<br /><br /> `TableAdapter.Update` 메서드는 <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>또는 <xref:System.Data.DataRow>s의 배열을 메서드 매개 변수로 사용 하 여 데이터 집합의 변경 내용을 데이터베이스에 다시 조정 하는 데도 사용 됩니다.|
 |`TableAdapter.Delete`|메서드 매개 변수로 전달 된 원래 열 값을 기준으로 데이터베이스에서 기존 레코드를 삭제 합니다.|
 
 ## <a name="to-save-new-records-from-an-object-to-a-database"></a>개체의 새 레코드를 데이터베이스에 저장 하려면
 
-- @No__t_0 메서드에 값을 전달 하 여 레코드를 만듭니다.
+- `TableAdapter.Insert` 메서드에 값을 전달 하 여 레코드를 만듭니다.
 
      다음 예에서는 `currentCustomer` 개체의 값을 `TableAdapter.Insert` 메서드에 전달 하 여 `Customers` 테이블에 새 고객 레코드를 만듭니다.
 
@@ -50,7 +50,7 @@ ms.locfileid: "72648210"
 
 ## <a name="to-update-existing-records-from-an-object-to-a-database"></a>개체의 기존 레코드를 데이터베이스로 업데이트 하려면
 
-- @No__t_0 메서드를 호출 하 여 레코드를 업데이트 하 고 레코드를 업데이트 하기 위해 새 값을 전달 하 여 레코드를 수정 하 고 원래 값을 전달 하 여 레코드를 찾습니다.
+- `TableAdapter.Update` 메서드를 호출 하 여 레코드를 업데이트 하 고 레코드를 업데이트 하기 위해 새 값을 전달 하 여 레코드를 수정 하 고 원래 값을 전달 하 여 레코드를 찾습니다.
 
     > [!NOTE]
     > 개체는 `Update` 메서드에 전달 하기 위해 원래 값을 유지 해야 합니다. 이 예제에서는 `orig` 접두사가 포함 된 속성을 사용 하 여 원래 값을 저장 합니다.
@@ -62,7 +62,7 @@ ms.locfileid: "72648210"
 
 ## <a name="to-delete-existing-records-from-a-database"></a>데이터베이스에서 기존 레코드를 삭제 하려면
 
-- @No__t_0 메서드를 호출 하 고 원래 값을 전달 하 여 레코드를 찾는 방법으로 레코드를 삭제 합니다.
+- `TableAdapter.Delete` 메서드를 호출 하 고 원래 값을 전달 하 여 레코드를 찾는 방법으로 레코드를 삭제 합니다.
 
     > [!NOTE]
     > 개체는 `Delete` 메서드에 전달 하기 위해 원래 값을 유지 해야 합니다. 이 예제에서는 `orig` 접두사가 포함 된 속성을 사용 하 여 원래 값을 저장 합니다.
@@ -74,8 +74,8 @@ ms.locfileid: "72648210"
 
 ## <a name="net-security"></a>.NET 보안
 
-데이터베이스의 테이블에서 선택한 `INSERT`, `UPDATE` 또는 `DELETE`를 수행할 수 있는 권한이 있어야 합니다.
+데이터베이스의 테이블에서 선택한 `INSERT`, `UPDATE`또는 `DELETE`를 수행할 수 있는 권한이 있어야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [데이터를 다시 데이터베이스에 저장](../data-tools/save-data-back-to-the-database.md)

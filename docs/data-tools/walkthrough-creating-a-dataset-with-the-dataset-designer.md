@@ -1,5 +1,5 @@
 ---
-title: '연습: 데이터 세트 디자이너를 사용 하 여 데이터 집합 만들기'
+title: '연습: 데이터 세트 디자이너를 사용하여 데이터 세트 만들기'
 ms.date: 09/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,19 +8,19 @@ helpviewer_keywords:
 - data [Visual Studio], Dataset Designer
 - Dataset Designer, walkthroughs
 - datasets [Visual Basic], creating
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9b6c91e6074e34a8207325e25f4a48b94dd037ef
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8c525d55de16e859005b9746eb52e5516928b9e6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639438"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586031"
 ---
-# <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>연습: 데이터 세트 디자이너를 사용 하 여 데이터 집합 만들기
+# <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>연습: 데이터 세트 디자이너을 사용 하 여 데이터 집합 만들기
 
 이 연습에서는 **데이터 세트 디자이너**를 사용 하 여 데이터 집합을 만듭니다. 이 문서에서는 새 프로젝트를 만들고 새 프로젝트에 새 **데이터 집합** 항목을 추가 하는 과정을 안내 합니다. 마법사를 사용 하지 않고 데이터베이스의 테이블을 기반으로 테이블을 만드는 방법을 배웁니다.
 
@@ -44,7 +44,7 @@ ms.locfileid: "72639438"
 
 ## <a name="create-a-new-windows-forms-application-project"></a>새 Windows Forms 애플리케이션 프로젝트 만들기
 
-1. Visual Studio의 **파일** 메뉴에서 **새로 만들기**  > **프로젝트**를 선택 합니다.
+1. Visual Studio의 **파일** 메뉴에서 **새로 만들기** > **프로젝트**를 차례로 선택합니다.
 
 2. 왼쪽 창 **에서 C# 시각적 개체** 또는 **Visual Basic** 을 확장 한 다음 **Windows 데스크톱**을 선택 합니다.
 
@@ -108,7 +108,7 @@ ms.locfileid: "72639438"
 
 - 데이터 집합의 데이터 테이블에 대 한 <xref:System.Data.DataTable.ColumnChanging> 또는 <xref:System.Data.DataTable.RowChanging> 이벤트에 유효성 검사 논리를 추가 합니다. 자세한 내용은 [데이터 집합의 데이터 유효성 검사](../data-tools/validate-data-in-datasets.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio에서 데이터 세트 만들기 및 구성](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Visual Studio에서 데이터에 Windows Forms 컨트롤 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

@@ -12,14 +12,14 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b8b154ccd18472d0b0bca502c78a6612aeccdda6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7f4c490abbcd5b970c5bf9586ea881be4c5d62a4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301047"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849797"
 ---
-# <a name="extend-uml-models-and-diagrams"></a>Extend UML models and diagrams
+# <a name="extend-uml-models-and-diagrams"></a>UML 모델 및 다이어그램 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 항목에서는 Visual Studio와 함께 제공된 UML 모델링 도구를 확장할 수 있는 다양한 방법을 간략하게 설명합니다. 각 모델 유형 및 도구를 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
@@ -30,7 +30,7 @@ ms.locfileid: "74301047"
 
  Fabrikam의 도구 팀에서는 개발 팀을 지원하기 위해 다양한 기능을 향상합니다. 다음 섹션에서는 사용자가 정의할 수 있는 다양한 확장 종류를 설명합니다. 이러한 여러 방법 중 몇 가지를 단일 Visual Studio 확장으로 결합할 수 있습니다.
 
- 자세한 내용은 다음 비디오를 참조 하세요. MSDN ![링크 비디오](../data-tools/media/playvideo.gif "링크 playvideo 보려면")[MSDN 방법 I 시리즈: UML 도구 및 확장성](https://go.microsoft.com/fwlink/?LinkId=214467).
+ 자세한 내용은 다음 비디오를 참조 하세요. MSDN ![링크 비디오](../data-tools/media/playvideo.gif "동영상 재생")[MSDN 방법 I 시리즈: UML 도구 및 확장성](https://msdn.microsoft.com/vstudio/ff859492).
 
 ## <a name="Requirements"></a> 요구 사항
 
@@ -106,17 +106,17 @@ ms.locfileid: "74301047"
 
  자세한 내용은 [프로그램 코드에서 UML 모델 읽기](../modeling/read-a-uml-model-in-program-code.md)를 참조 하세요.
 
-## <a name="domain-specific-languages"></a>도메인 특정 언어
+## <a name="domain-specific-languages"></a>도메인별 언어
  특정 모델 형식을 자주 사용할 경우 도메인 특정 언어를 만드는 것이 유용할 수 있습니다. UML 모델보다 더 밀접하게 비즈니스 요구 사항에 맞추면 도메인 특정 언어를 만들 수 있지만 빌드와 유지 관리에 더 많은 작업이 필요합니다. 자세한 내용은 [Visual Studio 용 모델링 SDK-도메인별 언어](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)를 참조 하세요.
 
 ## <a name="external-resources"></a>외부 리소스
 
 |**범주**|**링크**|
 |------------------|---------------|
-|**비디오**|![비디오에 대 한 링크](../data-tools/media/playvideo.gif "링크 playvideo 보려면") [MSDN How Do DO 시리즈: UML 도구 및 확장성](https://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![비디오 채널 9에 대 한 링크](../data-tools/media/playvideo.gif "PlayVideo") [: Visual Studio를 사용 하는 UML](https://go.microsoft.com/fwlink/?LinkId=199957)|
-|**포럼**|-   [Visual Studio 시각화 및 모델링 도구](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio 시각화 및 모델링 SDK(DSL 도구)](https://go.microsoft.com/fwlink/?LinkId=184721)|
-|**블로그**|[Visual Studio ALM + Team Foundation Server 블로그](https://go.microsoft.com/fwlink/?LinkID=201340)|
-|**기술 문서 및 저널**|[MSDN 아키텍처 센터](https://go.microsoft.com/fwlink/?LinkId=201343)|
+|**비디오**|![비디오에 대 한 링크](../data-tools/media/playvideo.gif "동영상 재생") [MSDN How Do DO 시리즈: UML 도구 및 확장성](https://msdn.microsoft.com/vstudio/ff859492)<br /><br /> ![비디오 채널 9에 대 한 링크](../data-tools/media/playvideo.gif "동영상 재생") [: Visual Studio를 사용 하는 UML](https://channel9.msdn.com/posts/clinted/)|
+|**포럼**|-   [Visual Studio 시각화 및 모델링 도구](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio 시각화 및 모델링 SDK(DSL 도구)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
+|**Blogs**|[Visual Studio ALM + Team Foundation Server 블로그](https://blogs.msdn.com/b/visualstudioalm)|
+|**기술 문서 및 저널**|[MSDN 아키텍처 센터](https://msdn.microsoft.com/architecture/default.aspx)|
 
 ## <a name="see-also"></a>참고 항목
  [UML 모델링 확장성에 대 한 앱 API 참조](../modeling/api-reference-for-uml-modeling-extensibility.md) [에 대 한 모델 만들기](../modeling/create-models-for-your-app.md)

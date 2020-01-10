@@ -15,12 +15,12 @@ ms.author: waan
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: a61a3181f47af4a660641ef02ce4ba1b31eedc46
-ms.sourcegitcommit: 916bbe1d77c9253424daa86c71c40f5e1ec74400
+ms.openlocfilehash: 18fa63f2a6f4b6d789bad6f813cb3956a636a2d2
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74951929"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404080"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>데이터 중단점 오류 문제 해결
 이 페이지에서는 "값이 변경 될 때 중단"을 사용할 때 표시 되는 일반적인 오류를 해결 하는 과정을 안내 합니다.
@@ -83,5 +83,5 @@ ms.locfileid: "74951929"
 이 기능에 대 한 문제 또는 제안 사항은 IDE 또는 [개발자 커뮤니티](https://developercommunity.visualstudio.com/)에서 [문제를 보고 하는](../ide/how-to-report-a-problem-with-visual-studio.md) 데 도움이 되는 > 사용자 > 의견을 보내 알려주세요.
 
 ## <a name="see-also"></a>참조
-- [.Net Core 3.0의 "값 변경 시 중단"을 사용](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed)합니다.
+- [.Net Core 3.0의 "값 변경 시 중단"을 사용](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus)합니다.
 - [DevBlog: 값 변경 시 중단: Visual Studio 2019의 .NET Core에 대 한 데이터 중단점](https://devblogs.microsoft.com/visualstudio/break-when-value-changes-data-breakpoints-for-net-core-in-visual-studio-2019/)

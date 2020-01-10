@@ -10,12 +10,12 @@ caps.latest.revision: 34
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 257c3e097f890cc5b3ceec03aca8b264695e1bd9
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8457dde4a447b3b49349ee7f9a979479abe4aaf8
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301222"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851619"
 ---
 # <a name="signing-in-to-visual-studio"></a>Visual Studio에 로그인
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ IDE에 로그인하여 개인 설정 계정을 설정하면 Visual Studio의 개
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Visual Studio에 로그인해야 하는 이유는 무엇인가요?
  Visual Studio에 로그인하면 다음과 같은 이점이 있습니다.
 
-- Visual Studio Dev Essentials 프로그램을 통해 무료 소프트웨어, 교육, 지원 등을 비롯해**다양한 혜택을 이용** 할 수 있습니다. 자세한 내용은 [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) 를 참조하세요.
+- Visual Studio Dev Essentials 프로그램을 통해 무료 소프트웨어, 교육, 지원 등을 비롯해**다양한 혜택을 이용** 할 수 있습니다. 자세한 내용은 [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) 를 참조하세요.
 
 - **Visual Studio 설정 동기화** – 아무 디바이스에서나 Visual Studio에 로그인하면 키 바인딩, 창 레이아웃 및 색 테마 등의 사용자 지정 설정이 즉시 적용됩니다. [Visual Studio의 동기화된 설정](https://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx)을 참조하세요.
 

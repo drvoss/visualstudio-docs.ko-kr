@@ -3,17 +3,17 @@ title: 선택한 항목 중 하나 이상이 디자이너에서 지원되지 않
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 71dcd4f9-2946-42c5-9ce4-99c819ea2785
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 036026d7640dc525538191d2acc347e9ba18b871
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e2f4911c79ac6d44d2553f3db15c5649dd7160f9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648263"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586356"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>선택한 항목 중 하나 이상이 디자이너에서 지원되지 않는 데이터 형식을 포함하고 있습니다.
 
@@ -25,6 +25,6 @@ O/ **r** 디자이너에서 **서버 탐색기** 또는 **데이터베이스 탐
 
 2. **서버 탐색기** 또는 **데이터베이스 탐색기** 디자이너에서 뷰를 끌어 놓습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 LINQ to SQL 도구](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

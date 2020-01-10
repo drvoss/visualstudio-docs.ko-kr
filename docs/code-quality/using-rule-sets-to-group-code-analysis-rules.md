@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codeanalysis.rulesets.learnmore
 helpviewer_keywords:
 - code analysis, rule sets
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3bcce1b923b7c34ab5b163938999c0fdaeca649
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 13a49f208fe3c60dfb8b9e20c83675cc43f1efb1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649032"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587175"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>규칙 집합을 사용 하 여 코드 분석 규칙 그룹화
 
@@ -58,7 +58,7 @@ Visual Studio에서 코드 분석을 구성 하는 경우 기본 제공 *규칙 
 
 ## <a name="specify-a-rule-set-for-a-project"></a>프로젝트에 대 한 규칙 집합 지정
 
-프로젝트에 대 한 규칙 집합은 Visual Studio 프로젝트 파일의 **CodeAnalysisRuleSet** 속성으로 지정 됩니다. 예를 들면,
+프로젝트에 대 한 규칙 집합은 Visual Studio 프로젝트 파일의 **CodeAnalysisRuleSet** 속성으로 지정 됩니다. 예를 들면 다음과 같습니다.:
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

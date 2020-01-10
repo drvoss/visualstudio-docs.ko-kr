@@ -8,17 +8,17 @@ helpviewer_keywords:
 - bidirectional language support, encoded files
 - file encoding, bidirectional languages
 ms.assetid: cb52b732-b395-4ba1-a3ef-104b3942a12a
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b02734af3efb24e1e3791246b0cea405b12d7b15
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5e1e562771567a6ff4f9dc35c9e98ceb5441a074
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645794"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596179"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>방법: 인코딩을 사용하여 파일 저장 및 열기
 
@@ -56,7 +56,7 @@ ms.locfileid: "72645794"
 
 3. 이전 절차에서 2단계 및 3단계를 수행합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [인코딩 및 줄 바꿈](encodings-and-line-breaks.md)
 - [인코딩 및 Windows Forms 전역화](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)

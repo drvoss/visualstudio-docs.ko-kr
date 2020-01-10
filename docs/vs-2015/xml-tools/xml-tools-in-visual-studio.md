@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3ee0cf61f8ec2787894c6f67b8ac75424246c507
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b9a46523c4c856367e77c345c7e44d0dbc87508f
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297453"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845979"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Visual Studio의 XML 도구
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ XML(Extensible Markup Language) (XML) *는 데이터를 설명 하는 형식을 
 
  XML은 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 및 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]에서 제공되는 여러 기능의 핵심적 요소입니다. 다음 항목에서는 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 및 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]에서 제공되는 XML 관련 기능 및 도구의 이름을 소개합니다.
 
- 자세한 내용은 xml 개발자를 위한 최신 설명서, 기술 정보, 다운로드, 뉴스 그룹 및 기타 리소스를 제공 하는 [Xml 개발자 센터](https://go.microsoft.com/fwlink/?LinkID=100176)를 참조 하십시오.
+ 자세한 내용은 xml 개발자를 위한 최신 설명서, 기술 정보, 다운로드, 뉴스 그룹 및 기타 리소스를 제공 하는 [Xml 개발자 센터](https://msdn.microsoft.com/data/bb190600.aspx)를 참조 하십시오.
 
 ## <a name="in-this-section"></a>섹션 내용
  [XML 데이터 작업](../xml-tools/working-with-xml-data.md) [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 데이터가 처리 되는 방식으로 XML의 역할에 대해 설명 합니다.
@@ -57,16 +57,16 @@ XML(Extensible Markup Language) (XML) *는 데이터를 설명 하는 형식을 
  [XSLT 디버깅](../xml-tools/debugging-xslt.md) Visual Studio 디버거를 사용 하 여 XSLT를 디버그 하는 방법에 대 한 항목의 링크를 제공 합니다.
 
 ## <a name="reference"></a>참조
- [VisualStudio](https://go.microsoft.com/fwlink/?LinkID=165699) 은 모든 xml 문서에 대해 [System.xml를 통해](https://go.microsoft.com/fwlink/?LinkId=228250) [xml 편집기](https://go.microsoft.com/fwlink/?LinkId=228249) 구문 분석 트리를 노출 합니다.
+ [Microsoft.VisualStudio.XmlEditor](https://msdn.microsoft.com/library/microsoft.visualstudio.xmleditor.aspx) 노출 된 [XML 편집기](https://msdn.microsoft.com/library/ms255810.aspx) 구문 분석 트리를 통해 [System.Xml.Linq](https://msdn.microsoft.com/library/system.xml.linq.aspx) 모든 XML 문서에 대 한 합니다.
 
- [XML 표준 참조](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) Xml, DTD (문서 종류 정의), XSD (XML 스키마 정의 언어) 및 XSLT를 비롯 한 XML 기술에 대 한 정보를 제공 합니다.
+ [XML 표준 참조](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) XML, 문서 형식 정의 (DTD), XML 스키마 정의 언어 (XSD) 및 XSLT를 포함 하 여 XML 기술에 대 한 정보를 제공 합니다.
 
- <xref:System.Xml?displayProperty=fullName> <xref:System.Xml> 네임 스페이스를 구성 하는 클래스 및 기타 요소에 대해 설명 하 고 각 항목에 대 한 자세한 정보에 대 한 링크를 제공 합니다.
+ <xref:System.Xml?displayProperty=fullName> 클래스 및 구성 하는 다른 요소에 설명 합니다 <xref:System.Xml> 네임 스페이스 및 각 항목에 대해 자세한 정보 링크를 제공 합니다.
 
- <xref:System.Xml.Serialization?displayProperty=fullName> <xref:System.Xml.Serialization> 네임 스페이스를 구성 하는 클래스 및 기타 요소에 대해 설명 하 고 각 항목에 대 한 자세한 정보에 대 한 링크를 제공 합니다.
+ <xref:System.Xml.Serialization?displayProperty=fullName> 클래스 및 구성 하는 다른 요소에 설명 합니다 <xref:System.Xml.Serialization> 네임 스페이스 및 각 항목에 대 한 자세한 정보 링크를 제공 합니다.
 
 ## <a name="related-sections"></a>관련 섹션
- [XML 문서 개체 모델 (DOM)](https://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54) <xref:System.Xml.XmlDocument> 및 관련 클래스가 W3C 문서 개체 모델 (코어) 수준 1 및 수준 2 네임 스페이스 지원 사양을 준수 하는 방법에 대해 설명 합니다.
+ [XML 문서 개체 모델 (DOM)](https://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54) 설명 하는 방법을 <xref:System.Xml.XmlDocument> 관련된 클래스가 W3C 문서 개체 모델 (Core) 수준 1 및 수준 2 네임 스페이스 지원 사양을 준수 하 고 있습니다.
 
  [XmlReader를 사용 하 여 XML 읽기](https://msdn.microsoft.com/3029834c-a27e-4331-b7aa-711924062182) <xref:System.Xml.XmlReader>에서 XML 스트림을 통해 XML 데이터에 대 한 noncached, 정방향 전용, 읽기 전용 액세스를 제공 하는 방법을 설명 합니다.
 
@@ -76,4 +76,4 @@ XML(Extensible Markup Language) (XML) *는 데이터를 설명 하는 형식을 
 
  [XPath 데이터 모델을 사용 하 여 XML 데이터 처리](https://msdn.microsoft.com/library/536c6fce-1453-4654-9c72-bca54d47e081) <xref:System.Xml.XPath.XPathNavigator> 클래스가 <xref:System.Xml.XPath.XPathDocument> 나 <xref:System.Xml.XmlDocument> 개체에 저장 된 XML 데이터를 처리 하는 방법을 설명 합니다. <xref:System.Xml.XPath.XPathNavigator> 클래스는 XQuery 1.0 및 XPath 2.0 데이터 모델을 기반으로 하며 XML 데이터를 탐색 및 편집하는 데 사용할 수 있습니다.
 
- [XML SOM (스키마 개체 모델)](https://msdn.microsoft.com/library/a897a599-ffd1-43f9-8807-e58c8a7194cd) 스키마를 로드 하 고 편집 하는 <xref:System.Xml.Schema.XmlSchema> 클래스를 제공 하 여 XML 스키마를 만들고 조작 하는 데 사용 되는 클래스에 대해 설명 합니다.
+ [XML 개체 모델 SOM (스키마)](https://msdn.microsoft.com/library/a897a599-ffd1-43f9-8807-e58c8a7194cd) 만들고 제공 하 여 XML 스키마를 조작 하기 위한 사용 하는 클래스에 설명 합니다.는 <xref:System.Xml.Schema.XmlSchema> 클래스를 로드 및 스키마를 편집 합니다.

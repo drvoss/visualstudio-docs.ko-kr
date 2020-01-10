@@ -21,24 +21,24 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1e1099eaf8d766088612abbb399bdf004e6378e4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cba55c9f4a8f7436b97099b6b548b916ea6e5ecb
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294684"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844938"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>연습: ClickOnce 애플리케이션 수동 배포
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio를 사용 하 여 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 응용 프로그램을 배포할 수 없거나 신뢰할 수 있는 응용 프로그램 배포와 같은 고급 배포 기능을 사용 해야 하는 경우 Mage.exe 명령줄 도구를 사용 하 여 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 매니페스트를 만들어야 합니다. 이 연습에서는 매니페스트 생성 및 편집 도구의 명령줄 버전 (Mage.exe) 또는 그래픽 버전 (Mageui.exe) 중 하나를 사용 하 여 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 배포를 만드는 방법을 설명 합니다.  
   
-## <a name="prerequisites"></a>필수 조건  
+## <a name="prerequisites"></a>전제 조건  
  이 연습에는 배포를 빌드하기 전에 선택 해야 하는 몇 가지 필수 구성 요소 및 옵션이 있습니다.  
   
 - Mage.exe 및 Mageui.exe를 설치 합니다.  
   
-     Mage.exe 및 Mageui.exe는 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]의 일부입니다. [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] 설치 되어 있거나 Visual Studio에 포함 된 [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] 버전이 있어야 합니다. 자세한 내용은 MSDN의 [Windows SDK](https://go.microsoft.com/fwlink/?LinkId=158044) 을 참조 하세요.  
+     Mage.exe 및 Mageui.exe는 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]의 일부입니다. [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] 설치 되어 있거나 Visual Studio에 포함 된 [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] 버전이 있어야 합니다. 자세한 내용은 MSDN의 [Windows SDK](https://msdn.microsoft.com/windowsserver/bb980924.aspx) 을 참조 하세요.  
   
 - 배포할 응용 프로그램을 제공 합니다.  
   
@@ -61,7 +61,7 @@ Visual Studio를 사용 하 여 [!INCLUDE[ndptecclick](../includes/ndptecclick-m
   
 - 응용 프로그램에 UAC 정보를 포함 하는 매니페스트가 없는지 확인 합니다.  
   
-     응용 프로그램에 `<dependentAssembly>` 요소와 같은 UAC (사용자 계정 컨트롤) 정보를 포함 하는 매니페스트가 포함 되어 있는지 여부를 확인 해야 합니다. 응용 프로그램 매니페스트를 검사 하려면 Windows Sysinternals [Sigcheck](https://go.microsoft.com/fwlink/?LinkId=158035) 유틸리티를 사용할 수 있습니다.  
+     응용 프로그램에 `<dependentAssembly>` 요소와 같은 UAC (사용자 계정 컨트롤) 정보를 포함 하는 매니페스트가 포함 되어 있는지 여부를 확인 해야 합니다. 응용 프로그램 매니페스트를 검사 하려면 Windows Sysinternals [Sigcheck](https://technet.microsoft.com/sysinternals/bb897441.aspx) 유틸리티를 사용할 수 있습니다.  
   
      응용 프로그램에 UAC 정보를 포함 하는 매니페스트가 포함 된 경우 UAC 정보 없이 다시 빌드해야 합니다. Visual Studio C# 의 프로젝트에 대해 프로젝트 속성을 열고 응용 프로그램 탭을 선택 합니다. **매니페스트** 드롭다운 목록에서 **매니페스트 없이 응용 프로그램 만들기**를 선택 합니다. Visual Studio의 Visual Basic 프로젝트에 대해 프로젝트 속성을 열고 응용 프로그램 탭을 선택한 후 **UAC 설정 보기**를 클릭 합니다. 열린 매니페스트 파일에서 단일 `<asmv1:assembly>` 요소 내에 있는 모든 요소를 제거 합니다.  
   
@@ -117,7 +117,7 @@ Visual Studio를 사용 하 여 [!INCLUDE[ndptecclick](../includes/ndptecclick-m
     mage -Sign AppToDeploy.application -CertFile mycert.pfx -Password passwd  
     ```  
   
-     or  
+     또는  
   
     ```  
     mage -Sign AppToDeploy.exe.manifest -CertFile cngCert.pfx  
@@ -125,7 +125,7 @@ Visual Studio를 사용 하 여 [!INCLUDE[ndptecclick](../includes/ndptecclick-m
   
 10. 배포 디렉터리의 모든 파일을 배포 대상 또는 미디어에 복사 합니다. 이 폴더는 웹 사이트 또는 FTP 사이트의 폴더, 파일 공유 또는 CD-ROM 일 수 있습니다.  
   
-11. 응용 프로그램을 설치 하는 데 필요한 URL, UNC 또는 물리적 미디어를 사용자에 게 제공 합니다. URL 또는 UNC를 제공 하는 경우 사용자에 게 배포 매니페스트에 대 한 전체 경로를 제공 해야 합니다. 예를 들어 apptodeploy를 AppToDeploy 디렉터리의 http://webserver01/에 배포 하는 경우 전체 URL 경로를 http://webserver01/AppToDeploy/AppToDeploy.application수 있습니다.  
+11. 응용 프로그램을 설치 하는 데 필요한 URL, UNC 또는 물리적 미디어를 사용자에 게 제공 합니다. URL 또는 UNC를 제공 하는 경우 사용자에 게 배포 매니페스트에 대 한 전체 경로를 제공 해야 합니다. 예를 들어 apptodeploy를 AppToDeploy 디렉터리의 http://webserver01/ 에 배포 하는 경우 전체 URL 경로를 http://webserver01/AppToDeploy/AppToDeploy.application 수 있습니다.  
   
 ### <a name="to-deploy-an-application-with-the-mageuiexe-graphical-tool"></a>Mageui.exe 그래픽 도구를 사용 하 여 응용 프로그램을 배포 하려면  
   
@@ -200,14 +200,14 @@ Visual Studio를 사용 하 여 [!INCLUDE[ndptecclick](../includes/ndptecclick-m
   
 28. 배포 디렉터리의 모든 파일을 배포 대상 또는 미디어에 복사 합니다. 이 폴더는 웹 사이트 또는 FTP 사이트의 폴더, 파일 공유 또는 CD-ROM 일 수 있습니다.  
   
-29. 응용 프로그램을 설치 하는 데 필요한 URL, UNC 또는 물리적 미디어를 사용자에 게 제공 합니다. URL 또는 UNC를 제공 하는 경우 사용자에 게 배포 매니페스트의 전체 경로를 제공 해야 합니다. 예를 들어 apptodeploy를 AppToDeploy 디렉터리의 http://webserver01/에 배포 하는 경우 전체 URL 경로를 http://webserver01/AppToDeploy/AppToDeploy.application수 있습니다.  
+29. 응용 프로그램을 설치 하는 데 필요한 URL, UNC 또는 물리적 미디어를 사용자에 게 제공 합니다. URL 또는 UNC를 제공 하는 경우 사용자에 게 배포 매니페스트의 전체 경로를 제공 해야 합니다. 예를 들어 apptodeploy를 AppToDeploy 디렉터리의 http://webserver01/ 에 배포 하는 경우 전체 URL 경로를 http://webserver01/AppToDeploy/AppToDeploy.application 수 있습니다.  
   
 ## <a name="next-steps"></a>다음 단계  
  응용 프로그램의 새 버전을 배포 해야 하는 경우 새 버전 (예: 1.0.0.1) 다음에 라는 새 디렉터리를 만들고 새 응용 프로그램 파일을 새 디렉터리에 복사 합니다. 다음으로, 이전 단계를 수행 하 여 새 응용 프로그램 매니페스트를 만들고 서명 하 고 배포 매니페스트를 업데이트 하 고 서명 해야 합니다. 가장 높은 버전의 정수를 가장 중요 하 게 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 하므로 Mage.exe `-New`와 `–Update` 호출에서 동일한 버전을 지정 해야 합니다. Mageui.exe를 사용 하는 경우 배포 매니페스트를 열고 **응용 프로그램 참조** 탭을 선택한 다음 **매니페스트 선택** 단추를 클릭 하 고 업데이트 된 응용 프로그램 매니페스트를 선택 하 여 배포 매니페스트를 업데이트할 수 있습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [Mage.exe(매니페스트 생성 및 편집 도구)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
- [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)   
+ [MageUI.exe(매니페스트 생성 및 편집 도구, 그래픽 클라이언트)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)   
  [ClickOnce 애플리케이션 게시](../deployment/publishing-clickonce-applications.md)   
  [ClickOnce 배포 매니페스트](../deployment/clickonce-deployment-manifest.md)   
  [ndptecclick](../deployment/clickonce-application-manifest.md)

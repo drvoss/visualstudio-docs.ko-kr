@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Code Snippet Picker
 - IntelliSense code snippets, Code Snippet Picker
 - code snippets, Code Snippet Picker
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8be7783d7c68867b181bafa7ec0874fbb231519
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bb03da430f43bbfd5c7398c147560a9c823f8811
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654608"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75570494"
 ---
 # <a name="code-snippet-picker"></a>코드 조각 선택
 
@@ -54,7 +54,7 @@ Visual Studio 코드 편집기는 몇 번의 마우스 클릭으로 코드의 �
 
 삽입할 수 있는 코드 조각의 목록 또는 코드 조각을 포함하는 폴더의 목록입니다. 코드 조각을 삽입하거나 폴더를 확장하려면 원하는 항목을 선택하고 Enter 키를 누릅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 조각 사용에 대한 모범 사례](../../ide/best-practices-for-using-code-snippets.md)
 - [Visual Basic IntelliSense 코드 조각](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)

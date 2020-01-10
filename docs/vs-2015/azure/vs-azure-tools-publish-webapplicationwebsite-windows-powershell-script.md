@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 6c9c2e281ace3b483d1f37552fba0cc6f490978a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cd26e3d37779337ee39a1afa68aa3ba9ab56d376
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298123"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846551"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite(Windows PowerShell 스크립트)
 ## <a name="syntax"></a>구문
@@ -39,7 +39,7 @@ Publish-WebApplicationWebSite
 | --- | --- |
 | 별칭 |없음 |
 | 필수 여부 |true |
-| 위치 |명명됨 |
+| Position |named |
 | 기본값 |없음 |
 | Accept Pipeline Input? |false |
 | Accept Wildcard Characters? |false |
@@ -51,19 +51,19 @@ Publish-WebApplicationWebSite
 | --- | --- |
 | 별칭 |없음 |
 | 필수 여부 |false |
-| 위치 |명명됨 |
+| Position |named |
 | 기본값 |없음 |
 | Accept Pipeline Input? |false |
 | Accept Wildcard Characters? |false |
 
 ## <a name="webdeploypackage"></a>WebDeployPackage
-웹 사이트에 게시하는 웹 배포 패키지에 대한 경로입니다. Visual Studio에서 웹 게시 마법사를 사용하여 이 패키지를 만들 수 있습니다. 자세한 내용은 [Azure Cloud Services 및 ASP.NET으로 시작하기](https://go.microsoft.com/fwlink/p/?LinkID=623089)를 참조하세요.
+웹 사이트에 게시하는 웹 배포 패키지에 대한 경로입니다. Visual Studio에서 웹 게시 마법사를 사용하여 이 패키지를 만들 수 있습니다. 자세한 내용은 [Azure Cloud Services 및 ASP.NET으로 시작하기](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script?view=vs-2019)를 참조하세요.
 
 | 매개 변수 | 기본값 |
 | --- | --- |
 | 별칭 |없음 |
 | 필수 여부 |false |
-| 위치 |명명됨 |
+| Position |named |
 | 기본값 |없음 |
 | Accept Pipeline Input? |false |
 | Accept Wildcard Characters? |false |
@@ -75,7 +75,7 @@ Azure에서 SQL 데이터베이스의 사용자 이름 및 암호입니다.
 | --- | --- |
 | 별칭 |없음 |
 | 필수 여부 |false |
-| 위치 |명명됨 |
+| Position |named |
 | 기본값 |없음 |
 | Accept Pipeline Input? |false |
 | Accept Wildcard Characters? |false |
@@ -87,7 +87,7 @@ True이면 스크립트에서 출력 스트림으로 메시지를 프린트합�
 | --- | --- |
 | 별칭 |없음 |
 | 필수 여부 |false |
-| 위치 |명명됨 |
+| Position |named |
 | 기본값 |false |
 | Accept Pipeline Input? |false |
 | Accept Wildcard Characters? |false |

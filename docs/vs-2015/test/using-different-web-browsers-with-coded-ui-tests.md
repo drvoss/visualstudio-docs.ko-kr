@@ -8,12 +8,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d9c86125d934c5165e3e8111fdd06631844ad1a6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8a5034a13771c0ea1f7b6dcd2e073ad02e838e07
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297957"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851224"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>코딩된 UI 테스트에 다른 웹 브라우저 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,7 +95,7 @@ ms.locfileid: "74297957"
 
     2. **공용 언어 런타임 예외**에 대해 **사용자가 처리하지 않음**을 선택 취소합니다.
 
-## <a name="generate"></a> *코딩된 UI 테스트에 BrowserWindow.CurrentBrowser를 변경할 수 있는 옵션이 표시되지 않습니다.*
+## <a name="generate"></a>*코딩 된 UI 테스트에서 BrowserWindow. CurrentBrowser를 변경 하는 옵션이 표시 되지 않습니다* .
  다양한 웹 브라우저를 사용하여 코딩된 UI 테스트를 지원하지 않는 [!INCLUDE[vs2011_first](../includes/vs2011-first-md.md)] 버전을 사용하는 중일 수 있습니다. 코딩된 UI 테스트를 사용하려면 Visual Studio Enterprise를 사용해야 합니다.
 
  *그 외 무엇을 알아야 하나요?*
@@ -139,17 +139,17 @@ ms.locfileid: "74297957"
  [다중 브라우저 테스트 오류 문제 해결](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
 ### <a name="guidance"></a>지침
- [Visual Studio 2012를 사용한 지속적인 업데이트 테스트 - 2장: 단위 테스트: 내부 테스트](https://go.microsoft.com/fwlink/?LinkID=255188)
+ [Visual Studio 2012를 사용한 연속 배달 테스트 - 2장: 단위 테스트: 내부 테스트](https://msdn.microsoft.com/library/jj159340.aspx)
 
- [Visual Studio 2012를 사용한 지속적인 업데이트 테스트 - 5장: 시스템 테스트 자동화](https://go.microsoft.com/fwlink/?LinkID=255196)
+ [Visual Studio 2012를 사용한 지속적인 업데이트 테스트 - 5장: 시스템 테스트 자동화](https://msdn.microsoft.com/library/jj159335.aspx)
 
 ### <a name="faq"></a>FAQ
- [코딩된 UI 테스트 FAQ - 1](https://go.microsoft.com/fwlink/?LinkID=230576)
+ [코딩된 UI 테스트 FAQ - 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
 
- [코딩된 UI 테스트 FAQ - 2](https://go.microsoft.com/fwlink/?LinkID=230578)
+ [코딩된 UI 테스트 FAQ - 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>포럼
- [Visual Studio UI 자동화 테스트(Coded UI 포함)](https://go.microsoft.com/fwlink/?LinkID=224497)
+ [Visual Studio UI 자동화 테스트(Coded UI 포함)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
 ## <a name="see-also"></a>참고 항목
  [Ui 자동화를 사용](../test/use-ui-automation-to-test-your-code.md) 하 여 코딩 된 ui 테스트 [및 작업 기록에 대해 지원 되는 코드 구성 및 플랫폼](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) 테스트 코딩 된 Ui [테스트 로그를 사용 하 여 코딩 된 ui 테스트 분석](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

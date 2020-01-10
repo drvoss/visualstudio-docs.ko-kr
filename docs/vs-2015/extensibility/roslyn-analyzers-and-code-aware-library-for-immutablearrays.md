@@ -8,12 +8,12 @@ ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9fbba44ef5ac0e531198b3569008a260118aefcf
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: fd54c5e730f757a0e198ad7cf1d8577e686b9ea9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298369"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845871"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>ImmutableArrays에 대한 Roslyn 분석기 및 코드 인식 라이브러리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "74298369"
 
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Visual Studio를 설치할 때 일반적인 도구에서 Visual Studio 확장성 도구를 확인 하 여 SDK를 동시에 설치할 수도 있습니다. Visual Studio를 이미 설치한 경우에는 기본 메뉴 **파일 &#124; &#124;새 프로젝트 ...** 로 이동 하 여 왼쪽 탐색 창에서 선택 C# 하 고 확장성을 선택 하 여이 SDK를 설치할 수도 있습니다. "**Visual Studio 확장성 도구 설치**" 이동 경로 프로젝트 템플릿을 선택 하면 SDK를 다운로드 하 여 설치 하 라는 메시지가 표시 됩니다.
 
-- [SDK ("Roslyn")를 .NET Compiler Platform](https://aka.ms/roslynsdktemplates)합니다. 주 메뉴 **파일 &#124; 새 &#124; 프로젝트 ...** 로 이동 하 여 왼쪽 탐색 창에서 선택 **C#** 하 고 **확장성**을 선택 하 여이 SDK를 설치할 수도 있습니다. " **.NET COMPILER PLATFORM Sdk 다운로드**" 프로젝트 템플릿을 선택 하면 sdk를 다운로드 하 여 설치 하 라는 메시지가 표시 됩니다. 이 SDK는 [Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer)를 포함 합니다. 이 매우 유용한 도구는 분석기에서 어떤 코드 모델 유형을 찾아야 하는지 파악 하는 데 도움이 됩니다. 분석기 인프라는 특정 코드 모델 형식에 대 한 코드를 호출 하므로 필요한 경우에만 코드가 실행 되 고 관련 코드 분석에만 집중할 수 있습니다.
+- [SDK ("Roslyn")를 .NET Compiler Platform](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.NETCompilerPlatformSDK)합니다. 주 메뉴 **파일 &#124; 새 &#124; 프로젝트 ...** 로 이동 하 여 왼쪽 탐색 창에서 선택 **C#** 하 고 **확장성**을 선택 하 여이 SDK를 설치할 수도 있습니다. " **.NET COMPILER PLATFORM Sdk 다운로드**" 프로젝트 템플릿을 선택 하면 sdk를 다운로드 하 여 설치 하 라는 메시지가 표시 됩니다. 이 SDK는 [Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer)를 포함 합니다. 이 매우 유용한 도구는 분석기에서 어떤 코드 모델 유형을 찾아야 하는지 파악 하는 데 도움이 됩니다. 분석기 인프라는 특정 코드 모델 형식에 대 한 코드를 호출 하므로 필요한 경우에만 코드가 실행 되 고 관련 코드 분석에만 집중할 수 있습니다.
 
 ## <a name="whats-the-problem"></a>문제가 뭔가요?
 ImmutableArray (예: <xref:System.Collections.Immutable.ImmutableArray%601?displayProperty=fullName>) 지원에 라이브러리를 제공 한다고 가정 합니다. C#개발자는 .NET 배열에 대해 많은 경험을가지고 있습니다. 그러나 구현에 사용 되는 ImmutableArrays 및 최적화 기술 덕분에 C# 개발자 intuitions는 아래에 설명 된 대로 라이브러리 사용자가 손상 된 코드를 작성 하 게 됩니다. 또한 사용자는 런타임 전까지 오류가 표시 되지 않습니다 .이는 .NET을 사용 하 여 Visual Studio에서 사용 되는 품질 환경이 아닙니다.
@@ -102,7 +102,7 @@ context.RegisterSyntaxNodeAction(c => AnalyzeObjectCreation(c),
 internal const string Category = "Naming";
 ```
 
-`"API Guidance"``"Naming"`를 변경 합니다.
+변경 `"Naming"` 에 `"API Guidance"`입니다.
 
 그런 다음 **솔루션 탐색기**를 사용 하 여 프로젝트에서 리소스 .resx 파일을 찾아 엽니다. 분석기, 제목 등에 대 한 설명을 입력할 수 있습니다. 지금은 이러한 모든 값을 `“Don’t use ImmutableArray<T> constructor”`으로 변경할 수 있습니다. 문자열 ({0}, {1}등)에 문자열 형식 인수를 추가할 수 있으며 나중에 `Diagnostic.Create()`를 호출할 때 전달할 인수의 매개 변수 배열을 제공할 수 있습니다.
 

@@ -11,17 +11,17 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 33689ed44f4228411243d3b9716a2407b751d32b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 14bced870cd24badcaf2a687fc4a1a2edeb740c0
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300636"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851016"
 ---
 # <a name="concurrency-visualizer-sdk"></a>동시성 시각화 도우미 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-동시성 시각화 도우미에서 추가 정보를 표시하도록 동시성 시각화 도우미 SDK를 사용하여 소스 코드를 계측할 수 있습니다. 코드의 단계 및 이벤트와 추가 데이터를 연결할 수 있습니다. 이러한 추가 시각화를 *표식*이라고 합니다.  소개 연습에 대해서는 [Introducing the Concurrency Visualizer SDK](https://go.microsoft.com/fwlink/?LinkId=235405)(동시성 시각화 도우미 SDK 소개)를 참조하세요.
+동시성 시각화 도우미에서 추가 정보를 표시하도록 동시성 시각화 도우미 SDK를 사용하여 소스 코드를 계측할 수 있습니다. 코드의 단계 및 이벤트와 추가 데이터를 연결할 수 있습니다. 이러한 추가 시각화를 *표식*이라고 합니다.  소개 연습에 대해서는 [Introducing the Concurrency Visualizer SDK](https://blogs.msdn.com/b/visualizeparallel/archive/2011/10/17/introducing-the-concurrency-visualizer-sdk.aspx)(동시성 시각화 도우미 SDK 소개)를 참조하세요.
 
 ## <a name="properties"></a>속성
  각 플래그, 범위 및 메시지에는 두 개의 속성인 범주와 중요도가 있습니다. [고급 설정](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) 대화 상자에서, 이러한 속성을 사용하여 표시되는 표식의 집합을 필터링할 수 있습니다. 또한 이러한 속성은 표식의 시각적 표시에 영향을 줍니다. 예를 들어 플래그의 크기는 중요도를 나타내는 데 사용됩니다. 또한 색은 범주를 나타내는 데 사용됩니다.
@@ -128,4 +128,4 @@ C#, Visual Basic 및 기타 관리 코드에서 [Markers](/previous-versions/hh6
 |[C++ 라이브러리 참조](../profiling/cpp-library-reference.md)|C++용 동시성 시각화 도우미 API를 설명합니다.|
 |[C 라이브러리 참조](../profiling/c-library-reference.md)|C용 동시성 시각화 도우미 API를 설명합니다.|
 |[계측](/previous-versions/hh694104(v=vs.140))|관리 코드용 동시성 시각화 도우미 API를 설명합니다.|
-|[Concurrency 시각화](../profiling/concurrency-visualizer.md)|동시성 방법을 사용하여 생성되고 스레드 실행 데이터를 포함하는 프로파일링 데이터 파일의 뷰 및 보고서에 대한 참조 정보를 제공합니다.|
+|[동시성 시각화 도우미](../profiling/concurrency-visualizer.md)|동시성 방법을 사용하여 생성되고 스레드 실행 데이터를 포함하는 프로파일링 데이터 파일의 뷰 및 보고서에 대한 참조 정보를 제공합니다.|

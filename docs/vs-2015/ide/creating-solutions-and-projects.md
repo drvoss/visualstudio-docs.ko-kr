@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 03ecd3fcc253f255afc59c2d6412f3864fe253b8
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 10375e00eb850691e88d01c56a87bb967c40e9ea
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300606"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850564"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "74300606"
  4\.0 이전 버전의 프레임워크에 액세스하려면 시스템에 .NET Framework 3.5가 설치되어 있어야 합니다.
 
 ## <a name="downloading-sample-solutions"></a>샘플 솔루션 다운로드
- Visual Studio를 사용하여 [MSDN 코드 갤러리](https://go.microsoft.com/fwlink/?LinkId=254185)에서 샘플 솔루션을 다운로드한 후 설치할 수 있습니다.
+ Visual Studio를 사용하여 [MSDN 코드 갤러리](https://code.msdn.microsoft.com/)에서 샘플 솔루션을 다운로드한 후 설치할 수 있습니다.
 
  샘플을 개별적으로 다운로드하거나 기술 또는 항목을 공유하는 관련된 샘플을 포함하는 샘플 팩을 다운로드할 수 있습니다. 소스 코드 변경 내용이 다운로드하는 샘플에 게시되는 경우 알림을 받게 됩니다.
 
@@ -93,5 +93,5 @@ ms.locfileid: "74300606"
 
 3. 솔루션을 포함하는 디렉터리를 선택하고 Delete 키를 누릅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [솔루션 및 프로젝트](../ide/solutions-and-projects-in-visual-studio.md) [NIB 방법: 다중 프로젝트 솔루션 만들기](https://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)

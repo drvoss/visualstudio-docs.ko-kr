@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ce064209ca96abda1f9e44825fa869c2ba250a32
-ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.openlocfilehash: f7065967ec86f7cde63c90de816fca95afce2171
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74538982"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851497"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Visual Studio 2015의 새로운 기능
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Visual Studio ALM의 다양 한 개선 사항 및 새로운 기능에 대해 자
  Visual Studio Tools for Apache Cordova는 Microsoft와 오픈 소스 Apache Cordova 커뮤니티 사이의 긴밀한 협업의 결과입니다. 이 도구는 HTML, CSS 및 JavaScript(또는 Typescript)를 사용한 플랫폼 간 모바일 개발을 지원합니다. 단일한 코드베이스를 사용하여 Android, iOS 및 Windows를 대상으로 하며 JavaScript IntelliSense, DOM 탐색기, JavaScript 콘솔, 중단점, 조사식, 지역, 내 코드만 등을 포함하는 다양한 Visual Studio IDE를 사용할 수 있습니다.  Visual Studio Tools for Apache Cordova를 사용하여 응용 프로그램은 공통 JavaScript API를 제공하는 플러그인을 통해 모든 플랫폼에서 기본 디바이스 기능에 액세스할 수 있습니다. 시작 하려면 [Apache Cordova에 대 한 Visual Studio Tools 시작](https://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)을 참조 하세요.
 
 ### <a name="cross-platform-mobile-games-in-c-with-unity"></a>Unity를 사용하여 C#으로 작성하는 플랫폼 간 모바일 게임
- Unity는 다중 플랫폼 2D 및 3D 게임 개발용으로 널리 사용되는 플랫폼입니다. C#으로 게임을 작성하고 Android, iOS, Windows Phone 및 다수의 다른 플랫폼 에서 기본적으로 실행할 수 있습니다. Visual Studio Tools for Unity는 Unity와 Visual Studio IDE를 통합하는 확장입니다. 이 확장을 통해 Unity 개발자용으로 설계된 생산성 기능 외에 Visual Studio IDE 및 디버거의 모든 기능을 사용할 수 있습니다. Visual Studio Tools for Unity 2.0 Preview 2는 Visual Studio 2015에 대한 지원을 비롯해 지역 창과 조사식 창의 향상된 개체 시각화 같은 다양한 새로운 기능을 추가합니다. Microsoft는 최근에 Visual Studio Tools for Unity의 제작사인 SyntaxTree를 인수했습니다. Visual Studio Tools for Unity 2.0 Preview 2를 다운로드하고 Visual Studio Tools for Unity에 대한 자세한 내용을 보려면 [Visual Studio Tools for Unity 2.0](https://aka.ms/vstu)을 참조하세요.
+ Unity는 다중 플랫폼 2D 및 3D 게임 개발용으로 널리 사용되는 플랫폼입니다. C#으로 게임을 작성하고 Android, iOS, Windows Phone 및 다수의 다른 플랫폼 에서 기본적으로 실행할 수 있습니다. Visual Studio Tools for Unity는 Unity와 Visual Studio IDE를 통합하는 확장입니다. 이 확장을 통해 Unity 개발자용으로 설계된 생산성 기능 외에 Visual Studio IDE 및 디버거의 모든 기능을 사용할 수 있습니다. Visual Studio Tools for Unity 2.0 Preview 2는 Visual Studio 2015에 대한 지원을 비롯해 지역 창과 조사식 창의 향상된 개체 시각화 같은 다양한 새로운 기능을 추가합니다. Microsoft는 최근에 Visual Studio Tools for Unity의 제작사인 SyntaxTree를 인수했습니다. Visual Studio Tools for Unity 2.0 Preview 2를 다운로드하고 Visual Studio Tools for Unity에 대한 자세한 내용을 보려면 [Visual Studio Tools for Unity 2.0](https://visualstudio.microsoft.com/vs/features/game-development/#tab-4b0d0be8de5f65564ad)을 참조하세요.
 
 ### <a name="cross-platform-apps-and-libraries-for-native-c"></a>네이티브 C++용 플랫폼 간 앱 및 라이브러리
  C++는 대부분의 모바일 디바이스에서 기본적으로 사용할 수 있는 언어입니다. 이 언어를 사용하여 여러 모바일 플랫폼 대상에 대해 빌드할 수 있는 플랫폼 간 공유 코드 라이브러리를 작성할 수 있습니다. C++를 사용하여 전체 모바일 앱을 만들 수도 있습니다. Visual C++를 사용하여 플랫폼 간 코드를 편집, 빌드, 배포 및 디버그할 수 있습니다. Windows 앱용 템플릿 외에도 Android Native-Activity 앱, iOS 앱용 템플릿을 사용하여 프로젝트를 만들거나 Xamarin 하이브리드 앱이 포함된 여러 플랫폼에 대해 공유 코드 라이브러리를 사용하여 프로젝트를 만들 수도 있습니다. 플랫폼별 IntelliSense를 사용하면 API를 탐색하고 Android, iOS 또는 Windows 대상에 대한 올바른 코드를 생성할 수 있습니다. x86 또는 ARM 네이티브 플랫폼에 대한 빌드를 구성하거나, 네트워크에 연결된 Mac의 iOS 시뮬레이터 또는 iOS 디바이스에 코드를 배포하거나 직접 연결된 Android 디바이스에 코드를 배포하거나, 높은 성능의 Android용 Microsoft Visual Studio 에뮬레이터를 사용하여 테스트할 수 있습니다. Visual Studio 디버거에서 중단점을 설정하고 변수를 조사하고 스택을 보고 단계별로 C++ 코드를 실행할 수 있습니다. 플랫폼에 가장 특정한 코드를 제외한 모든 코드를 여러 앱 플랫폼 간에 공유하고, Visual Studio에서 하나의 솔루션을 사용하여 이 코드를 모두 빌드할 수 있습니다.
@@ -257,7 +257,7 @@ Visual Studio ALM의 다양 한 개선 사항 및 새로운 기능에 대해 자
 ### <a name="send-a-frown"></a>찡그린 얼굴 보내기
  제품에서 개선해야 할 부분에 대한 피드백을 받으면 고객에게 가장 중요한 부분에 가장 우선적으로 집중하게 되므로 백로그를 관리하는 데 도움이 됩니다. 거슬리거나 불편하게 하는 부분이 있는 경우 IDE 내에서 바로 **찡그린 얼굴 보내기** 기능을 사용하여 알려 주시기 바랍니다. 이 프로세스 역시 무척 간단합니다.
 
- 우선 제목 표시줄에서 노란색 웃는 얼굴을 클릭한 후 **찡그린 얼굴 보내기**를 클릭합니다. 그런 다음 마음에 들지 않는 부분에 대한 설명을 입력한 후 찡그린 얼굴 보내기 단추를 클릭하면 됩니다. 자세한 내용은 [Talk to Us](./ide/talk-to-us.md)을 참조하세요.
+ 우선 제목 표시줄에서 노란색 웃는 얼굴을 클릭한 후 **찡그린 얼굴 보내기**를 클릭합니다. 그런 다음 마음에 들지 않는 부분에 대한 설명을 입력한 후 찡그린 얼굴 보내기 단추를 클릭하면 됩니다. 자세한 내용은 [의견 보내기](./ide/talk-to-us.md)를 참조하세요.
 
 ### <a name="report-crashes-hangs-and-performance-issues"></a>충돌, 중단 및 성능 문제 신고
  때로는 찡그린 얼굴에 간략한 메모를 남기는 것만으로는 마음에 들지 않는 무언가가 미치는 온전한 영향을 충분히 전달할 수 없는 경우가 있습니다. 중단, 충돌 또는 성능 문제가 발생하는 경우 찡그린 얼굴을 보낸 후 표시되는 대화 상자를 사용하여 재현 단계, 크래시 덤프 및 추적 파일을 손쉽게 공유할 수 있습니다.

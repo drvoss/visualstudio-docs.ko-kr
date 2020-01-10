@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a13aeeb3394ee6b8896376c0e7d520b90fb56fa6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cd8d18d95fabd858354c625d2c9b32459efc7193
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302818"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846147"
 ---
 # <a name="using-the-legacy-activity-designer"></a>레거시 활동 디자이너 사용
 이 항목에서는 레거시 [!INCLUDE[wfd1](../includes/wfd1-md.md)]에서 활동 디자이너를 사용하는 방법에 대해 설명합니다. 레거시 디자이너는 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 또는 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]를 대상으로 하는 경우에 사용합니다.
@@ -49,12 +49,12 @@ ms.locfileid: "74302818"
 |속성|설명|
 |--------------|--------------|
 |**Name**|활동 이름입니다.|
-|**기본 클래스**|활동이 파생되는 기본 클래스입니다. 기본 클래스는 [SequenceActivity](https://go.microsoft.com/fwlink?LinkID=65020)입니다. **속성** 창에서 **기본 클래스** 줄임표 **[...]** 를 클릭 하 여 [.net 형식 찾아보기 및 선택 대화 상자 (레거시)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md)에서 다른 기본 클래스를 선택 합니다.|
+|**기본 클래스**|활동이 파생되는 기본 클래스입니다. 기본 클래스는 [SequenceActivity](https://msdn2.microsoft.com/library/system.workflow.activities.sequenceactivity.aspx)입니다. **속성** 창에서 **기본 클래스** 줄임표 **[...]** 를 클릭 하 여 [.net 형식 찾아보기 및 선택 대화 상자 (레거시)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md)에서 다른 기본 클래스를 선택 합니다.|
 |**설명**|활동의 사용자 정의 설명입니다.|
-|**사용**|활동 실행 및 유효성 검사를 사용 하도록 설정 하려면 기본적으로 **True** 로 설정 합니다. 활동 실행 및 유효성 검사를 사용 하지 않으려면 **False** 로 설정 합니다. 활동 실행 및 유효성 검사에 대 한 자세한 내용은 [워크플로 활동 개발](https://go.microsoft.com/fwlink?LinkID=65024)을 참조 하세요.|
+|**사용**|활동 실행 및 유효성 검사를 사용 하도록 설정 하려면 기본적으로 **True** 로 설정 합니다. 활동 실행 및 유효성 검사를 사용 하지 않으려면 **False** 로 설정 합니다. 활동 실행 및 유효성 검사에 대 한 자세한 내용은 [워크플로 활동 개발](https://msdn2.microsoft.com/library/ms734413.aspx)을 참조 하세요.|
 
 ## <a name="adding-child-activities"></a>자식 활동 추가
  도구 상자에서 디자인 중인 활동으로 자식 활동을 끌어 놓을 수 있습니다. 그런 다음 속성 브라우저를 사용하여 각 자식 활동을 구성할 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
- [워크플로 작업 개발](https://go.microsoft.com/fwlink?LinkID=65024) [사용자 지정 활동 만들기](https://go.microsoft.com/fwlink?LinkID=65021) [레거시 워크플로 활동](../workflow-designer/legacy-workflow-activities.md) [사용자 지정 활동 샘플](https://go.microsoft.com/fwlink?LinkID=65022) 방법: [레거시 워크플로 디자이너를 사용 하 여](../workflow-designer/using-the-legacy-workflow-designer.md) [워크플로 활동 라이브러리 만들기 (레거시)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)
+ [워크플로 작업 개발](https://msdn2.microsoft.com/library/ms734413.aspx) [사용자 지정 활동 만들기](https://msdn2.microsoft.com/library/bb675228.aspx) [레거시 워크플로 활동](../workflow-designer/legacy-workflow-activities.md) [사용자 지정 활동 샘플](https://msdn2.microsoft.com/library/bb472471.aspx) 방법: [레거시 워크플로 디자이너를 사용 하 여](../workflow-designer/using-the-legacy-workflow-designer.md) [워크플로 활동 라이브러리 만들기 (레거시)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)

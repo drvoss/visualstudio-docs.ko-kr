@@ -11,12 +11,12 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2fa11cd0b29f3b8ee6008b8c0b3369b16812f0e5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 72c92b4431c21c27bc1fe2ff86b24c850cc34694
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302787"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846089"
 ---
 # <a name="using-the-legacy-workflow-designer"></a>레거시 Workflow Designer 사용
 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 또는 [!INCLUDE[vs2010](../includes/vs2010-md.md)]를 대상으로 하려는 경우 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)]에서 제공하는 레거시 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]를 사용할 수 있습니다.
@@ -54,4 +54,4 @@ ms.locfileid: "74302787"
  [Windows Workflow Foundation용 레거시 디자이너 UI 도움말](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
 
 ## <a name="see-also"></a>참고 항목
- [워크플로 개발](https://go.microsoft.com/fwlink?LinkID=65010)
+ [워크플로 개발](https://msdn2.microsoft.com/library/bb628448.aspx)

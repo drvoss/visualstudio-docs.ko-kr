@@ -12,12 +12,12 @@ caps.latest.revision: 79
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 505c17635c80a165a7a094d3ce2bec3c32bd7101
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0673f7511276799804dc327bab67637f3fc450b7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297688"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850106"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Visual Studio용 모델링 SDK - 도메인별 언어
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,9 +43,9 @@ MSDK [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 모델링 SDK를 사용 하 �
 ## <a name="samples-and-the-latest-information"></a>샘플 및 최신 정보
  [모델링 SDK for Visual Studio 2015 다운로드](https://www.microsoft.com/download/details.aspx?id=48148)
 
- Visual Studio 용 모델링 SDK에 대 한 [샘플](https://go.microsoft.com/fwlink/?LinkId=186128) 입니다.
+ Visual Studio 용 모델링 SDK에 대 한 [샘플](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) 입니다.
 
- 고급 기술 및 문제 해결에 대 한 지침은 [Visual STUDIO DSL & 모델링 도구 확장성 포럼](https://go.microsoft.com/fwlink/?LinkID=186074)을 참조 하세요.
+ 고급 기술 및 문제 해결에 대 한 지침을 참조 하세요 [Visual Studio DSL & 모델링 도구 확장성 포럼](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx)합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
  [도메인별 언어 시작](../modeling/getting-started-with-domain-specific-languages.md)

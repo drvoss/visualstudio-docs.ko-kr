@@ -11,12 +11,12 @@ caps.latest.revision: 8
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a80aef71271df0a1353dfd73898dbe8fcd7007c4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: fcace8b2ed9576ff5c3c4f4a0c526a70b2d4228a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300920"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75843868"
 ---
 # <a name="developing-workflow-applications-targeting-the-net-30-or-net-35-framework"></a>.NET 3.0 또는 .NET 3.5 Framework를 대상으로 하는 워크플로 애플리케이션 개발
 [!INCLUDE[vs2010](../includes/vs2010-md.md)]는 [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]를 대상으로 하는 [!INCLUDE[wf](../includes/wf-md.md)] 응용 프로그램을 만들기 위한 [!INCLUDE[wfd1](../includes/wfd1-md.md)]를 제공 합니다. 이 디자이너에서는 워크플로 애플리케이션의 시각적 생성 및 디버깅을 위한 친숙한 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 사용자 인터페이스를 사용합니다.
@@ -29,4 +29,4 @@ ms.locfileid: "74300920"
  [레거시 워크플로 디버깅](../workflow-designer/debugging-legacy-workflows.md)
 
 ## <a name="related-sections"></a>관련 섹션
- [Windows Workflow Foundation 프로그래밍 가이드](https://go.microsoft.com/fwlink?LinkID=65012)
+ [Windows Workflow Foundation 프로그래밍 가이드](https://msdn2.microsoft.com/library/bb628474.aspx)

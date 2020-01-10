@@ -18,12 +18,12 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a3d1aab68e3dc9f33e0b3e9f9a5665d59f6f2ddc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 3589f409efe2a104391eb62f939ef76d140e5224
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299412"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850134"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>WCF 데이터 서비스에 WPF 컨트롤 바인딩
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,16 +44,16 @@ ms.locfileid: "74299412"
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>전제 조건
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
-- AdventureWorksLT 샘플 데이터베이스가 연결된 SQL Server 또는 SQL Server Express의 실행 중인 인스턴스 액세스 권한. [CodePlex 웹 사이트](https://go.microsoft.com/fwlink/?linkid=87843)에서 AdventureWorksLT 데이터베이스를 다운로드할 수 있습니다.
+- AdventureWorksLT 샘플 데이터베이스가 연결된 SQL Server 또는 SQL Server Express의 실행 중인 인스턴스 액세스 권한. [CodePlex 웹 사이트](https://codeplex.com/SqlServerSamples)에서 AdventureWorksLT 데이터베이스를 다운로드할 수 있습니다.
 
   또한 다음 개념에 대한 지식은 연습을 완료하는 데 반드시 필요하지는 않지만 사전에 파악해 두면 유용할 수 있습니다.
 
-- WCF Data Services. 자세한 내용은 [개요](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)를 참조 하세요.
+- WCF Data Services. 자세한 내용은 [개요](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)를 참조하세요.
 
 - [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]의 데이터 모델
 
@@ -76,7 +76,7 @@ ms.locfileid: "74299412"
 
 4. **ASP.NET 웹 애플리케이션** 프로젝트 템플릿을 선택합니다.
 
-5. **이름** 상자에 `AdventureWorksService`를 입력 하 고 **확인**을 클릭 합니다.
+5. **이름** 상자에 `AdventureWorksService`를 입력하고 **확인**을 클릭합니다.
 
      Visual Studio에서 `AdventureWorksService` 프로젝트를 만듭니다.
 
@@ -256,7 +256,7 @@ ms.locfileid: "74299412"
 
 1. 디자이너의 창 화면에서 **<** 단추를 두 번 클릭합니다.
 
-     Visual Studio가 코드 숨김 파일을 열고 `backButton_Click` 이벤트에 대해 새 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 이벤트 처리기를 만듭니다.
+     Visual Studio가 코드 숨김 파일을 열고 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 이벤트에 대해 새 `backButton_Click` 이벤트 처리기를 만듭니다.
 
 2. 다음 코드를 생성된 `backButton_Click` 이벤트 처리기에 추가합니다.
 
@@ -265,7 +265,7 @@ ms.locfileid: "74299412"
 
 3. 디자이너로 돌아와서 **>** 단추를 두 번 클릭합니다.
 
-     Visual Studio가 코드 숨김 파일을 열고 `nextButton_Click` 이벤트에 대해 새 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 이벤트 처리기를 만듭니다.
+     Visual Studio가 코드 숨김 파일을 열고 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 이벤트에 대해 새 `nextButton_Click` 이벤트 처리기를 만듭니다.
 
 4. 다음 코드를 생성된 `nextButton_Click` 이벤트 처리기에 추가합니다.
 
@@ -279,7 +279,7 @@ ms.locfileid: "74299412"
 
 1. 디자이너에서 **변경 내용 저장** 단추를 두 번 클릭합니다.
 
-     Visual Studio가 코드 숨김 파일을 열고 `saveButton_Click` 이벤트에 대해 새 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 이벤트 처리기를 만듭니다.
+     Visual Studio가 코드 숨김 파일을 열고 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 이벤트에 대해 새 `saveButton_Click` 이벤트 처리기를 만듭니다.
 
 2. 다음 코드를 `saveButton_Click` 이벤트 처리기에 추가합니다.
 

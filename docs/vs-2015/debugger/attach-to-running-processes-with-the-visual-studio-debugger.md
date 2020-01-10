@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 03cd890802e5563ce2daeb78438c56f4452d74f0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b30e171756527352976dcb03abb0d1c32370c442
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299520"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849886"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio 디버거에서 실행 중인 프로세스에 연결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,7 +111,7 @@ ms.locfileid: "74299520"
 
 신뢰할 수 없는 사용자 계정에서 소유한 프로세스에 연결하면 보안 경고 확인 대화 상자가 나타납니다. 자세한 내용은 참조 하세요. [보안 경고: 신뢰할 수 없는 사용자가 소유한 프로세스에 연결 하면 위험할 수 있습니다. 다음 정보가 의심 스 럽 또는 확실 하지 않은 경우이 프로세스에 연결 하지 않는](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015)합니다.
 
-원격 데스크톱(터미널 서비스) 세션에서 디버그할 때 **사용 가능한 프로세스** 목록에 사용 가능한 프로세스 중 일부가 표시되지 않는 경우가 있습니다. 제한된 사용자 계정의 사용자로 Visual Studio를 실행하는 경우 서비스 및 w3wp.exe를 비롯한 다른 서버 프로세스에 사용되는 세션 0에서 실행되는 프로세스는 **사용 가능한 프로세스** 목록에 표시되지 않습니다. 관리자 계정으로 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 를 실행하거나 터미널 서비스 세션 대신 서버 콘솔에서 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 를 실행하여 이 문제를 해결할 수 있습니다. 이러한 해결 방법을 둘 다 사용할 수 없는 경우 세 번째 방법으로 Windows 명령줄에서 `vsjitdebugger.exe -p` *ProcessId* 를 실행하여 프로세스에 연결합니다. 프로세스 ID는 tlist.exe를 사용하여 확인할 수 있습니다. tlist.exe를 얻으려면  [WDK 및 WinDbg 다운로드](https://go.microsoft.com/fwlink/?LinkId=168279)에서 Debugging Tools for Windows를 다운로드하여 설치합니다.
+원격 데스크톱(터미널 서비스) 세션에서 디버그할 때 **사용 가능한 프로세스** 목록에 사용 가능한 프로세스 중 일부가 표시되지 않는 경우가 있습니다. 제한된 사용자 계정의 사용자로 Visual Studio를 실행하는 경우 서비스 및 w3wp.exe를 비롯한 다른 서버 프로세스에 사용되는 세션 0에서 실행되는 프로세스는 **사용 가능한 프로세스** 목록에 표시되지 않습니다. 관리자 계정으로 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 를 실행하거나 터미널 서비스 세션 대신 서버 콘솔에서 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 를 실행하여 이 문제를 해결할 수 있습니다. 이러한 해결 방법을 모두 사용할 수 없는 경우 세 번째 옵션은 Windows 명령줄에서 `vsjitdebugger.exe -p` *ProcessId* 를 실행 하 여 프로세스에 연결 하는 것입니다. 프로세스 ID는 tlist.exe를 사용하여 확인할 수 있습니다. tlist.exe를 얻으려면  [WDK 및 WinDbg 다운로드](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)에서 Debugging Tools for Windows를 다운로드하여 설치합니다.
 
 ## <a name="BKMK_Scenarios"></a>일반적인 디버깅 시나리오
 
@@ -124,14 +124,14 @@ ms.locfileid: "74299520"
 
 |시나리오|Debug 메서드|프로세스 이름|노트 및 링크|
 |-|-|-|-|
-|로컬 컴퓨터에서 관리 되는 앱 또는 네이티브 앱 디버그|프로세스에 연결 또는 [표준 디버깅](../debugger/getting-started-with-the-debugger.md) 사용|*appname*|대화 상자에 빠르게 액세스 하려면 **CTRL + ALT + P** 를 사용 하 여 프로세스 이름의 첫 문자를 입력 합니다.|
+|로컬 컴퓨터에서 관리 되는 앱 또는 네이티브 앱 디버그|프로세스에 연결 또는 [표준 디버깅](../debugger/getting-started-with-the-debugger.md) 사용|*appname*.exe|대화 상자에 빠르게 액세스 하려면 **CTRL + ALT + P** 를 사용 하 여 프로세스 이름의 첫 문자를 입력 합니다.|
 |디버거를 사용 하지 않고 앱을 시작한 후 로컬 컴퓨터에서 ASP.NET apps 디버그|프로세스에 연결 사용|iiexpress.exe|이렇게 하면 프로 파일링 하는 경우와 같이 앱을 더 빠르게 로드 하는 데 도움이 될 수 있습니다. |
 |IIS 서버에서 원격 디버그 ASP.NET 4 또는 4.5|원격 도구를 사용 하 여 프로세스에 연결|w3wp.exe|원격 [IIS 컴퓨터의 원격 디버깅 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) 을 참조 하세요.|
 |IIS 서버의 원격 디버그 ASP.NET Core|원격 도구를 사용 하 여 프로세스에 연결|dnx.exe|앱 배포의 경우 [IIS에 게시](https://docs.asp.net/en/latest/publishing/iis.html)를 참조 하세요. 디버깅 [은 원격 IIS 컴퓨터의 원격 디버깅 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) 을 참조 하세요.|
 |서버 프로세스에서 지원 되는 다른 앱 유형 디버깅|원격 도구 (서버가 원격 인 경우)를 사용 하 여 프로세스에 연결|iexplore.exe 또는 기타 프로세스|필요한 경우 작업 관리자를 사용 하 여 프로세스를 쉽게 식별할 수 있습니다. 이 항목의 [원격 디버깅](../debugger/remote-debugging.md) 및 이후 섹션을 참조 하십시오.|
-|Windows 데스크톱 응용 프로그램 원격 디버그|원격 도구 및 F5|N/A| [원격 디버깅](../debugger/remote-debugging.md) 을 참조 하세요.|
-|Windows 유니버설 (UWP), OneCore, HoloLens 또는 IoT 앱 원격 디버그|설치된 앱 패키지 디버그|N/A|**프로세스에 연결 하** 는 대신 **디버그/기타 디버그 대상/디버그 설치 된 앱 패키지** 를 사용 합니다.|
-|Visual Studio에서 시작 하지 않은 UWP (Windows 유니버설), OneCore, HoloLens 또는 IoT 앱 디버그|설치된 앱 패키지 디버그|N/A|**프로세스에 연결 하** 는 대신 **디버그/기타 디버그 대상/디버그 설치 된 앱 패키지** 를 사용 합니다.|
+|Windows 데스크톱 응용 프로그램 원격 디버그|원격 도구 및 F5|해당 사항 없음| [원격 디버깅](../debugger/remote-debugging.md) 을 참조 하세요.|
+|Windows 유니버설 (UWP), OneCore, HoloLens 또는 IoT 앱 원격 디버그|설치된 앱 패키지 디버그|해당 사항 없음|**프로세스에 연결 하** 는 대신 **디버그/기타 디버그 대상/디버그 설치 된 앱 패키지** 를 사용 합니다.|
+|Visual Studio에서 시작 하지 않은 UWP (Windows 유니버설), OneCore, HoloLens 또는 IoT 앱 디버그|설치된 앱 패키지 디버그|해당 사항 없음|**프로세스에 연결 하** 는 대신 **디버그/기타 디버그 대상/디버그 설치 된 앱 패키지** 를 사용 합니다.|
 
 > [!WARNING]
 > JavaScript로 작성된 Windows 유니버설 앱에 연결하려면 먼저 앱에 디버깅을 사용하도록 설정해야 합니다. Windows 개발자 센터에서 [Attach the debugger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) 을 참조하세요.

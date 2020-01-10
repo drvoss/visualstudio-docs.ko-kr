@@ -11,12 +11,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4fec3595ba7886f5ba979c35e9441ab108174726
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b3de5cb1cc62d159567eee804c1aadef865e500a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301348"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845388"
 ---
 # <a name="validate-your-system-during-development"></a>개발하는 동안 시스템 유효성 검사
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,10 +38,10 @@ Visual Studio에서는 소프트웨어와 사용자 요구 사항 및 시스템 
 
 |**범주**|**링크**|
 |------------------|---------------|
-|**비디오**|![비디오 채널 9에 대 한 링크](../data-tools/media/playvideo.gif "링크 playvideo 보려면") [: Doug 7: Visual Studio 2010을 사용 하 여 코드 이해 및 시스템 디자인](https://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![비디오 채널 9에 대 한 링크](../data-tools/media/playvideo.gif "PlayVideo") [: 레이어 다이어그램을 사용 하 여 응용 프로그램 설계](https://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![비디오에 대 한 링크](../data-tools/media/playvideo.gif "PlayVideo") [MSDN 방법: 레이어 다이어그램을 사용 하 여 코드의 유효성을 검사 하는 방법](https://go.microsoft.com/fwlink/?LinkID=214405)|
-|**포럼**|-   [Visual Studio 시각화 및 모델링 도구](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio 시각화 및 모델링 SDK(DSL 도구)](https://go.microsoft.com/fwlink/?LinkId=184721)|
-|**블로그**|-   [Visual Studio ALM + Team Foundation Server 블로그](https://go.microsoft.com/fwlink/?LinkID=201340)|
-|**기술 문서 및 저널**|[MSDN 아키텍처 센터](https://go.microsoft.com/fwlink/?LinkId=201343)|
+|**비디오**|![비디오 채널 9에 대 한 링크](../data-tools/media/playvideo.gif "동영상 재생") [: Doug 7: Visual Studio 2010을 사용 하 여 코드 이해 및 시스템 디자인](https://channel9.msdn.com/shows/VS2010Launch/Doug-Seven-Code-Understanding-and-Systems-Design-with-Visual-Studio-2010)<br /><br /> ![비디오 채널 9에 대 한 링크](../data-tools/media/playvideo.gif "동영상 재생") [: 레이어 다이어그램을 사용 하 여 응용 프로그램 설계](https://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-5-Architecting-an-Application)<br /><br /> ![비디오에 대 한 링크](../data-tools/media/playvideo.gif "동영상 재생") [MSDN 방법: 레이어 다이어그램을 사용 하 여 코드의 유효성을 검사 하는 방법](https://msdn.microsoft.com/vstudio/gg501755)|
+|**포럼**|-   [Visual Studio 시각화 및 모델링 도구](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio 시각화 및 모델링 SDK(DSL 도구)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
+|**Blogs**|-   [Visual Studio ALM + Team Foundation Server 블로그](https://blogs.msdn.com/b/visualstudioalm)|
+|**기술 문서 및 저널**|[MSDN 아키텍처 센터](https://msdn.microsoft.com/architecture/default.aspx)|
 
 ## <a name="see-also"></a>참고 항목
  [응용 프로그램 테스트](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac) [UML 모델 및 다이어그램 확장](../modeling/extend-uml-models-and-diagrams.md) [사용자 요구 사항](../modeling/model-user-requirements.md) [분석 및 모델링 아키텍처](../modeling/analyze-and-model-your-architecture.md)

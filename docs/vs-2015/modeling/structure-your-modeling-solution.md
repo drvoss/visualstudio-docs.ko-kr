@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 83606b56e6509f1db77b590ec44d991ef97cf82e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d0c001ec8310759309c88c49c37050516b110b81
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298172"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850801"
 ---
 # <a name="structure-your-modeling-solution"></a>모델링 솔루션 구성
 
@@ -34,7 +34,7 @@ ms.locfileid: "74298172"
 
 #### <a name="to-divide-an-application-into-layers"></a>애플리케이션을 레이어로 나누려면
 
-1. 웹 애플리케이션, 서비스 애플리케이션 또는 데스크톱 애플리케이션과 같은 애플리케이션 구조에 따라 솔루션 구조를 지정합니다. 다양 한 공통 아키텍처는 [Microsoft 응용 프로그램 아키텍처 가이드의 Application archetype](https://go.microsoft.com/fwlink/?LinkId=196681)에 설명 되어 있습니다.
+1. 웹 애플리케이션, 서비스 애플리케이션 또는 데스크톱 애플리케이션과 같은 애플리케이션 구조에 따라 솔루션 구조를 지정합니다. 다양 한 공통 아키텍처는 [Microsoft 응용 프로그램 아키텍처 가이드의 Application archetype](https://docs.microsoft.com/previous-versions/msp-n-p/ee658107(v=pandp.10)?redirectedfrom=MSDN)에 설명 되어 있습니다.
 
 2. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 솔루션을 만들고 아키텍처 솔루션이라고 부릅니다. 이 솔루션은 시스템의 전반적인 디자인을 만드는 데 사용됩니다. 모델을 포함하지만 코드는 포함하지 않습니다.
 
@@ -100,7 +100,7 @@ ms.locfileid: "74298172"
 
 #### <a name="to-create-a-solution-template"></a>솔루션 템플릿을 만들려면
 
-1. 아직 수행 하지 않은 경우 [템플릿 내보내기 마법사를 다운로드 하 여 설치](https://go.microsoft.com/fwlink/?LinkId=196686)합니다.
+1. 아직 수행 하지 않은 경우 [템플릿 내보내기 마법사를 다운로드 하 여 설치](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ExportTemplateWizard)합니다.
 
 2. 이후 프로젝트의 시작점으로 사용할 솔루션 구조를 만듭니다.
 
@@ -109,7 +109,7 @@ ms.locfileid: "74298172"
 4. 마법사의 지침에 따라 템플릿에 포함할 프로젝트를 선택하고, 템플릿의 이름 및 설명을 제공하고, 출력 위치를 지정합니다.
 
 > [!NOTE]
-> 이 항목의 자료는 MVP(Most Valued Professional), Microsoft 서비스 및 Visual Studio 제품 팀과 작성자기 공동으로 작업한, Visual Studio ALM Rangers에서 작성된 Visual Studio 아키텍처 도구 사용 지침을 요약하고 쉽게 설명한 것입니다. [전체 지침 패키지를 다운로드 하려면 여기를 클릭 하세요.](https://go.microsoft.com/fwlink/?LinkID=191984)
+> 이 항목의 자료는 MVP(Most Valued Professional), Microsoft 서비스 및 Visual Studio 제품 팀과 작성자기 공동으로 작업한, Visual Studio ALM Rangers에서 작성된 Visual Studio 아키텍처 도구 사용 지침을 요약하고 쉽게 설명한 것입니다. [전체 지침 패키지를 다운로드 하려면 여기를 클릭 하세요.](https://archive.codeplex.com/?p=vsarchitectureguide)
 
 ## <a name="related-materials"></a>관련 자료
 

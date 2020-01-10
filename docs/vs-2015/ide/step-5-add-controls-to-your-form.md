@@ -9,19 +9,19 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 89ca4c02a1cbb1171619060b9478b5f2d3ccaa36
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a6e66c8192b1fa409482bd33287cec04f74c1304
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295721"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851524"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>5단계: 폼에 컨트롤 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 단계에서는 `PictureBox` 컨트롤 및 `CheckBox` 컨트롤과 같은 컨트롤을 폼에 추가합니다. 그런 다음 폼에 단추를 추가합니다.
 
- ![비디오에 연결](../data-tools/media/playvideo.gif "링크 playvideo 보려면") 이 항목의 비디오 버전을 보려면 [자습서 1: Visual Basic에서 사진 뷰어 만들기-비디오 2](https://go.microsoft.com/fwlink/?LinkId=205211) 또는 [자습서 1: 비디오 2에서 C# 사진 뷰어 만들기](https://go.microsoft.com/fwlink/?LinkId=205200)를 참조 하세요. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
+ ![비디오에 연결](../data-tools/media/playvideo.gif "동영상 재생") 이 항목의 비디오 버전을 보려면 [자습서 1: Visual Basic에서 사진 뷰어 만들기-비디오 2](https://msdn.microsoft.com/vbasic/gg315945.aspx) 또는 [자습서 1: 비디오 2에서 C# 사진 뷰어 만들기](https://msdn.microsoft.com/vcsharp/gg278410.aspx)를 참조 하세요. 이러한 비디오에서는 이전 버전의 Visual Studio를 사용하므로 일부 메뉴 명령과 기타 사용자 인터페이스 요소가 약간 다를 수 있습니다. 그러나 개념 및 절차는 Visual Studio의 현재 버전에서 비슷하게 작동합니다.
 
 ### <a name="to-add-controls-to-your-form"></a>폼에 컨트롤을 추가하려면
 

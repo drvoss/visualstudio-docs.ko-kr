@@ -13,25 +13,25 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b097baaa882b42f1569244992bd28f30093ffb58
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: bece06c618e5fcc0e91dcbd683b961979fd76dcf
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301459"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846185"
 ---
 # <a name="select-condition-dialog-box-legacy"></a>조건 선택 대화 상자(레거시)
 이 항목에서는 기존 [!INCLUDE[wfd1](../includes/wfd1-md.md)]에서 **조건 선택** 대화 상자를 사용 하는 방법에 대해 설명 합니다. 레거시 [!INCLUDE[wfd2](../includes/wfd2-md.md)]는 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 또는 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]를 대상으로 해야 하는 경우에 사용합니다.
 
  **조건 선택** 대화 상자는 활동의 condition 속성에 할당할 선언적 규칙 조건을 선택 하는 데 사용 됩니다. 이러한 규칙 조건은 기본적으로 제공되는 다음과 같은 Windows Workflow Foundation 활동에 대한 속성으로 나타납니다.
 
-- [ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65017)
+- [ConditionedActivityGroup](https://msdn2.microsoft.com/library/system.workflow.activities.conditionedactivitygroup.aspx)
 
-- [IfElseBranchActivity](https://go.microsoft.com/fwlink?LinkID=65034)
+- [IfElseBranchActivity](https://msdn2.microsoft.com/library/system.workflow.activities.ifelsebranchactivity.aspx)
 
-- [ReplicatorActivity](https://go.microsoft.com/fwlink?LinkID=65039)
+- [ReplicatorActivity](https://msdn2.microsoft.com/library/system.workflow.activities.replicatoractivity.aspx)
 
-- [WhileActivity](https://go.microsoft.com/fwlink?LinkID=65049)
+- [WhileActivity](https://msdn2.microsoft.com/library/system.workflow.activities.whileactivity.aspx)
 
   **조건 선택** 대화 상자에 액세스 하는 방법에 대 한 자세한 내용은 [방법: 선언적 규칙 조건 만들기 (레거시)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)를 참조 하세요.
 
@@ -44,11 +44,11 @@ ms.locfileid: "74301459"
 |**이름 바꾸기 ...**|선택한 규칙 조건 이름을 바꾸는 데 사용하는 대화 상자를 열려면 클릭합니다.|
 |**삭제**|선택한 규칙 조건을 삭제하려면 클릭합니다.|
 |**조건 미리 보기**|선택한 규칙 조건의 조건식을 표시합니다.|
-|**그래**|선택한 규칙 조건을 활동의 조건에 할당하려면 클릭합니다.|
+|**확인**|선택한 규칙 조건을 활동의 조건에 할당하려면 클릭합니다.|
 
  규칙 조건 만들기 및 편집에 대 한 자세한 내용은 [규칙 조건 편집기 대화 상자 (레거시)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)를 참조 하세요.
 
- 조건에 대 한 자세한 내용은 [워크플로에서 조건 사용](https://go.microsoft.com/fwlink?LinkID=65009)을 참조 하세요.
+ 조건에 대 한 자세한 내용은 [워크플로에서 조건 사용](https://msdn2.microsoft.com/library/bb628447.aspx)을 참조 하세요.
 
 ## <a name="see-also"></a>참고 항목
- [규칙 조건 편집기 대화 상자 (레거시)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) [방법: 선언적 규칙 조건 만들기 (레거시) 방법:](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md) [ConditionedActivityGroup 작업](https://go.microsoft.com/fwlink?LinkID=65066) 을 사용 하 여 [워크플로의 조건 사용](https://go.microsoft.com/fwlink?LinkID=65009) [IfElseBranchActivity 작업](https://go.microsoft.com/fwlink?LinkID=65075) 을 사용 하 여 [ReplicatorActivity 활동](https://go.microsoft.com/fwlink?LinkID=65080) 을 사용 [하 여](https://go.microsoft.com/fwlink?LinkID=65091) 활동 사용 [Windows Workflow Foundation UI 도움말](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+ [규칙 조건 편집기 대화 상자 (레거시)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) [방법: 선언적 규칙 조건 만들기 (레거시) 방법:](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md) [ConditionedActivityGroup 작업](https://msdn2.microsoft.com/library/bb675237.aspx) 을 사용 하 여 [워크플로의 조건 사용](https://msdn2.microsoft.com/library/bb628447.aspx) [IfElseBranchActivity 작업](https://msdn2.microsoft.com/library/bb628465.aspx) 을 사용 하 여 [ReplicatorActivity 활동](https://msdn2.microsoft.com/library/bb628544.aspx) 을 사용 [하 여](https://msdn2.microsoft.com/library/bb628552.aspx) 활동 사용 [Windows Workflow Foundation UI 도움말](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

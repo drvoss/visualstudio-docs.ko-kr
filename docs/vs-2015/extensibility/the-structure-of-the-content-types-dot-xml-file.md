@@ -13,12 +13,12 @@ ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9b1fd98b3812fbeca2597534a7177ba2f81ab138
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 3185b70f74478a9a55c4fb918c1535c86d154c76
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301231"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846363"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>[Content_types].xml 파일의 구조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "74301231"
 VSIX 패키지의 콘텐츠 종류에 대 한 정보를 포함 합니다. Visual Studio는 [Content_Types] .xml 파일을 사용 하 여 패키지를 설치 하지만 파일 자체를 설치 하지는 않습니다.  
   
 > [!NOTE]
-> 이 항목은 VSIX 패키지에 사용 되는 [Content_Type] .xml 파일에만 적용 되기는 하지만 [Content_Types] .xml 파일 형식은 *OPC (Open 패키징 규칙)* 표준의 일부입니다. 자세한 내용은 OPC: MSDN 웹 사이트에서 [데이터를 패키징하는 새 표준](https://go.microsoft.com/fwlink/?LinkID=148207) 을 참조 하세요.  
+> 이 항목은 VSIX 패키지에 사용 되는 [Content_Type] .xml 파일에만 적용 되기는 하지만 [Content_Types] .xml 파일 형식은 *OPC (Open 패키징 규칙)* 표준의 일부입니다. 자세한 내용은 OPC: MSDN 웹 사이트에서 [데이터를 패키징하는 새 표준](https://msdn.microsoft.com/magazine/cc163372.aspx) 을 참조 하세요.  
   
 ## <a name="attributes-and-elements"></a>특성 및 요소  
  다음 섹션에서는 루트 요소와 해당 특성 및 자식 요소에 대해 설명 합니다.  
@@ -83,7 +83,7 @@ VSIX 패키지의 콘텐츠 종류에 대 한 정보를 포함 합니다. Visual
 |dll|application/octet-stream|  
 |기타 모든 파일 형식|application/octet-stream|  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
   
 ### <a name="description"></a>설명  
  다음 [Content_Types] .xml 파일은 일반적인 VSIX 패키지를 설명 합니다.  
@@ -104,4 +104,4 @@ VSIX 패키지의 콘텐츠 종류에 대 한 정보를 포함 합니다. Visual
 ## <a name="see-also"></a>참고 항목  
  [VSIX 패키지  분석](../extensibility/anatomy-of-a-vsix-package.md)  
  [VSIX 확장 스키마 1.0 참조](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
- [OPC: 데이터를 패키징하는 새 표준](https://go.microsoft.com/fwlink/?LinkID=148207)
+ [OPC: 데이터를 패키징하는 새 표준](https://msdn.microsoft.com/magazine/cc163372.aspx)

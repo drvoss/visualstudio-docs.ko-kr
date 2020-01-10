@@ -19,7 +19,8 @@ ms.locfileid: "72735704"
 이 섹션에서는 처음으로 그래픽 진단 사용을 준비한 다음 Direct3D 앱에서 프레임을 캡처하고 Graphics Analyzer에서 검사합니다.
 
 ## <a name="requirements"></a>요구 사항
- Visual Studio에서 그래픽 진단을 사용하려면 Visual Studio Enterprise, Visual Studio Professional 또는 Visual Studio Community를 사용해야 합니다.  Visual Studio Code를 비롯한 다른 버전은 이 기능을 포함하지 않습니다.
+ Visual Studio에서 그래픽 진단을 사용하려면 Visual Studio Enterprise, Visual Studio Professional 또는 Visual Studio Community를 사용해야 합니다. Visual Studio Code를 비롯한 다른 버전은 이 기능을 포함하지 않습니다.
+
 
  [!INCLUDE[downloadvs](../includes/downloadvs_md.md)]
 

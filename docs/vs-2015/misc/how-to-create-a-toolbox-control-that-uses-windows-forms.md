@@ -11,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
 manager: jillfra
-ms.openlocfilehash: 8436b8eee0193715e4ae886db18f91f7148dcb3b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1f3b0c173d5d1f4b3642bf61d2cca9fb6fd231e6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300420"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850318"
 ---
 # <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>방법: Windows Forms를 사용하는 도구 상자 컨트롤 만들기
 확장이 설치될 때 [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] 에 들어 있는 Windows Forms 도구 상자 컨트롤 템플릿을 통해 자동으로 **도구 상자** 에 추가된 Windows Forms 컨트롤을 만들 수 있습니다. 이 항목에서는 템플릿을 사용하여 다른 사용자에게 배포할 수 있는 **도구 상자** 컨트롤을 만드는 방법을 보여 줍니다.  
   
 > [!NOTE]
-> Visual Studio SDK를 다운로드하는 방법을 알아보려면 MSDN 웹 사이트의 [Visual Studio 확장성 개발자 센터](https://go.microsoft.com/fwlink/?linkid=121964) 를 참조하세요.  
+> Visual Studio SDK를 다운로드하는 방법을 알아보려면 MSDN 웹 사이트의 [Visual Studio 확장성 개발자 센터](https://msdn.microsoft.com/vsx/default.aspx) 를 참조하세요.  
   
 ## <a name="creating-a-toolbox-control"></a>도구 상자 컨트롤 만들기  
  Windows Forms 도구 상자 컨트롤 템플릿을 사용하여 프로젝트를 만든 다음 디자이너에서 UI(사용자 인터페이스)를 빌드합니다.  

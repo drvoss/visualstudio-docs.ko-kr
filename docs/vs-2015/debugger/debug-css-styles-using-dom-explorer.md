@@ -20,12 +20,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a9f07fc064a87910f59f5734d4d635aa3b5d6b77
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 676a4ef2570873998f3ebc890e06d6d5ccae4cf2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299506"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852430"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>DOM 탐색기를 사용하여 CSS 스타일 디버그
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,7 @@ Windows 및 Windows Phone]에 적용 됩니다. /Image/windows_and_phone_content
     > [!TIP]
     > 시뮬레이터에 앱이 나타나면 선택한 사항과 변경한 CSS 스타일의 결과를 즉시 확인할 수 있도록 시뮬레이터를 Visual Studio 창 바로 오른쪽으로 이동합니다.  
   
-6. Visual Studio로 전환하고 DOM 탐색기에서 **요소 선택** 을 클릭하거나 Ctrl + B를 누릅니다. 그러면 항목을 클릭하여 선택할 수 있도록 선택 모드가 변경되며, 앱이 전경에 옵니다. 한 번 클릭 후 모드는 되돌려집니다. **요소 선택** 단추는 다음과 같습니다. ![DOM 탐색기에서 요소 선택 단추](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button ")  
+6. Visual Studio로 전환하고 DOM 탐색기에서 **요소 선택** 을 클릭하거나 Ctrl + B를 누릅니다. 그러면 항목을 클릭하여 선택할 수 있도록 선택 모드가 변경되며, 앱이 전경에 옵니다. 한 번 클릭 후 모드는 되돌려집니다. **요소 선택** 단추는 다음과 같습니다. ![DOM 탐색기에서 요소 선택 단추](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
   
     > [!TIP]
     > DOM 탐색기에서 HTML 요소를 직접 선택할 수도 있습니다. 요소 선택에 대 한 자세한 내용은 [빠른 시작: HTML 및 CSS 디버그](../debugger/quickstart-debug-html-and-css.md)를 참조 하세요.  
@@ -160,4 +160,4 @@ Windows 및 Windows Phone]에 적용 됩니다. /Image/windows_and_phone_content
  [빠른 시작: HTML 및 CSS  디버그](../debugger/quickstart-debug-html-and-css.md)  
  [DOM 탐색기를 사용 하 여 레이아웃 디버그](../debugger/debug-layout-using-dom-explorer.md)   
  [DOM 이벤트 수신기 보기](../debugger/view-dom-event-listeners.md)   
- [기술 지원 및 접근성](https://go.microsoft.com/fwlink/?LinkId=253502)
+ [기술 지원 및 접근성](https://msdn.microsoft.com/library/tzbxw1af(VS.110).aspx)

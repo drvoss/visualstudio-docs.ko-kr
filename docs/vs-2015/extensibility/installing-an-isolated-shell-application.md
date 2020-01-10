@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a077173a0d095ee10cc1fa16da3db1f3744dafa8
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4d9a7b39dc322ab92458dbd6c7304f672468db17
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301154"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851707"
 ---
 # <a name="installing-an-isolated-shell-application"></a>격리 셸 애플리케이션 설치
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,14 +29,14 @@ ms.locfileid: "74301154"
   
 - 설치 부트스트래퍼를 만듭니다.  
   
-  이 문서의 모든 예제 코드는 MSDN 웹 사이트의 코드 갤러리에서 다운로드할 수 있는 [셸 배포 샘플](https://go.microsoft.com/fwlink/?LinkId=262245)에서 제공 됩니다. 이 샘플에서는 이러한 각 단계를 수행한 결과를 보여 줍니다.  
+  이 문서의 모든 예제 코드는 MSDN 웹 사이트의 코드 갤러리에서 다운로드할 수 있는 [셸 배포 샘플](https://code.msdn.microsoft.com/Sample-setup-program-for-81ca73f7)에서 제공 됩니다. 이 샘플에서는 이러한 각 단계를 수행한 결과를 보여 줍니다.  
   
-## <a name="prerequisites"></a>필수 조건  
+## <a name="prerequisites"></a>전제 조건  
  이 항목에서 설명 하는 절차를 수행 하려면 컴퓨터에 다음 도구가 설치 되어 있어야 합니다.  
   
 - Visual Studio SDK  
   
-- [WINDOWS INSTALLER XML 도구 집합](https://go.microsoft.com/fwlink/?LinkId=82720) 버전 3.6  
+- [WINDOWS INSTALLER XML 도구 집합](http://wix.sourceforge.net/) 버전 3.6  
   
   이 샘플에는 모든 셸에서 필요로 하지 않는 Microsoft 시각화 및 모델링 SDK도 필요 합니다.  
   
@@ -54,7 +54,7 @@ ms.locfileid: "74301154"
 2. VSIX 매니페스트가 포함 된 각 프로젝트에 대해 빌드 작업을 편집 하 여 MSI를 설치할 위치에 콘텐츠를 출력 합니다. Vsix 매니페스트를 빌드 출력에 포함 하지만 .vsix 파일을 빌드하지는 않습니다.  
   
 ## <a name="creating-an-msi-for-your-shell"></a>셸에 대 한 MSI 만들기  
- MSI 패키지를 빌드하려면 표준 설치 프로젝트 보다 유연성을 향상 시킬 수 있으므로 [WINDOWS INSTALLER XML 도구 집합](https://go.microsoft.com/fwlink/?LinkId=82720) 을 사용 하는 것이 좋습니다.  
+ MSI 패키지를 빌드하려면 표준 설치 프로젝트 보다 유연성을 향상 시킬 수 있으므로 [WINDOWS INSTALLER XML 도구 집합](http://wix.sourceforge.net/) 을 사용 하는 것이 좋습니다.  
   
  제품. wxs 파일에서 검색 블록과 셸 구성 요소의 레이아웃을 설정 합니다.  
   
@@ -178,8 +178,8 @@ ms.locfileid: "74301154"
   
     |*ProjectName*.reg|ApplicationRegisty.wxs|  
     |-----------------------|----------------------------|  
-    |[HKEY_CLASSES_ROOT \CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @="PhotoStudio DTE Object"|\<RegistryKey Id = ' DteClsidRegKey ' Root = ' HKCR ' Key = ' $ (var. DteClsidRegKey) ' Action = ' createAndRemoveOnUninstall ' ><br /><br /> \<RegistryValue Type = ' string ' Name = ' @ ' Value = ' $ (var. ShortProductName) DTE 개체 '/><br /><br /> \</RegistryKey >|  
-    |[HKEY_CLASSES_ROOT \CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6} \LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey Id = ' DteLocSrv32RegKey ' Root = ' HKCR ' Key = ' $ (var. DteClsidRegKey) \LocalServer32 ' Action = ' createAndRemoveOnUninstall ' ><br /><br /> \<RegistryValue Type = ' string ' Name = ' @ ' Value = ' [INSTALLDIR] $ (var. ShortProductName) .exe '/><br /><br /> \</RegistryKey >|  
+    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @="PhotoStudio DTE Object"|\<RegistryKey Id = ' DteClsidRegKey ' Root = ' HKCR ' Key = ' $ (var. DteClsidRegKey) ' Action = ' createAndRemoveOnUninstall ' ><br /><br /> \<RegistryValue Type = ' string ' Name = ' @ ' Value = ' $ (var. ShortProductName) DTE 개체 '/><br /><br /> \</RegistryKey>|  
+    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}\LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey Id='DteLocSrv32RegKey' Root='HKCR' Key='$(var.DteClsidRegKey)\LocalServer32' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Type = ' string ' Name = ' @ ' Value = ' [INSTALLDIR] $ (var. ShortProductName) .exe '/><br /><br /> \</RegistryKey>|  
   
      이 예에서 DteClsidRegKey는 맨 위 행의 레지스트리 키로 확인 됩니다. ShortProductName은 `PhotoStudio`를 확인 합니다.  
   

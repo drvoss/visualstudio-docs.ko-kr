@@ -19,12 +19,12 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: e78062acfa95c48f0e95f18f42b2c1b26d1f3fa2
-ms.sourcegitcommit: 86e1b3eca4633c7522b48282ff7a2be7a09296dd
+ms.openlocfilehash: 0f41abab206362ea60fafa30f2abcbf5eb474ddc
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75548221"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849924"
 ---
 # <a name="port-migrate-and-upgrade-visual-studio-projects"></a>Visual Studio 프로젝트 포팅, 마이그레이션, 업그레이드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,14 +57,14 @@ Visual Studio 2013, Visual Studio 2012 또는 Visual Studio 2010 SP1과 함께 V
 |F#|Visual studio 2010 s p 1에서 만든 프로젝트를 visual Studio에서 업그레이드 하도록 허용 하는 경우 Visual Studio 2013 및 Visual Studio 2012에서 열 수 있습니다. 그러나 이전 버전의 Visual Studio에서 만든 Silverlight 프로젝트를 Visual Studio 2013로 업그레이드할 수는 없습니다. 대신 Visual Studio 2013에서 Silverlight 프로젝트를 만든 다음 코드를 복사 해야 합니다. 에서 만든 silverlight 프로젝트는 Silverlight 5 Visual Studio 2013 대상으로 합니다.|
 |LightSwitch|Visual Studio에서 프로젝트를 자동으로 업그레이드 하도록 허용 하는 경우 Visual Studio 2013 에서만 열 수 있습니다.|
 |로컬 데이터베이스 캐시|로컬 데이터베이스 캐시 템플릿과 **데이터 동기화 구성** 대화 상자는 Visual Studio 2013에 포함 되어 있지 않습니다. Microsoft Synchronization Services v 1.0이 설치 된 경우 Visual Studio 2013를 사용 하 여 [!INCLUDE[vs2010](../includes/vs2010-md.md)]에서 만든 프로젝트를 열고 실행할 수 있지만 Visual Studio 2013에서 업데이트 하려면 코드에서 모든 항목을 수동으로 변경 해야 합니다. 또는 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 을 계속 사용하여 이 프로젝트를 유지하고 업데이트할 수 있습니다.  새로운 개발의 경우 Microsoft Sync Framework에서 제공하는 새로운 동기화 모델을 대상으로 합니다. 자세한 내용은 [Microsoft Sync Framework 개발자 센터](https://msdn.microsoft.com/sync/default)를 참조하세요.|
-|모델-뷰-컨트롤러 프레임워크|Visual Studio 2010 s p 1은 MVC 2 및 MVC 3만 지원 하 고 Visual Studio 2012은 mvc 3 및 MVC 4만 지원 하며 Visual Studio 2013는 MVC 4만 지원 합니다. MVC 2에서 MCV 3로 자동 업그레이드하는 방법에 대한 자세한 내용은 [ASP.NET MVC 3 애플리케이션 업그레이더](https://go.microsoft.com/fwlink/?LinkID=238178)를 참조하세요. MVC 2에서 MVC 3로 수동 업그레이드하는 방법에 대한 자세한 내용은 [ASP.NET MVC 3 도구 업데이트로 ASP.NET MVC 2 프로젝트 업그레이드](https://go.microsoft.com/fwlink/?linkid=238178)를 참조하세요. MVC 3에서 MVC 4로 수동 업그레이드하는 방법에 대한 자세한 내용은 [ASP.NET MVC 3 프로젝트를 ASP.NET MVC 4로 업그레이드](https://docs.microsoft.com/aspnet/whitepapers/mvc4-release-notes)를 참조하세요. 프로젝트 대상이 .NET Framework 3.5 SP1일 경우 대상을 변경하여 .NET Framework 4를 사용해야 합니다.|
+|모델-뷰-컨트롤러 프레임워크|Visual Studio 2010 s p 1은 MVC 2 및 MVC 3만 지원 하 고 Visual Studio 2012은 mvc 3 및 MVC 4만 지원 하며 Visual Studio 2013는 MVC 4만 지원 합니다. MVC 2에서 MCV 3로 자동 업그레이드하는 방법에 대한 자세한 내용은 [ASP.NET MVC 3 애플리케이션 업그레이더](https://aspnet.codeplex.com/releases/view/59008)를 참조하세요. MVC 2에서 MVC 3로 수동 업그레이드하는 방법에 대한 자세한 내용은 [ASP.NET MVC 3 도구 업데이트로 ASP.NET MVC 2 프로젝트 업그레이드](https://aspnet.codeplex.com/releases/view/59008)를 참조하세요. MVC 3에서 MVC 4로 수동 업그레이드하는 방법에 대한 자세한 내용은 [ASP.NET MVC 3 프로젝트를 ASP.NET MVC 4로 업그레이드](https://docs.microsoft.com/aspnet/whitepapers/mvc4-release-notes)를 참조하세요. 프로젝트 대상이 .NET Framework 3.5 SP1일 경우 대상을 변경하여 .NET Framework 4를 사용해야 합니다.|
 |모델링|Visual Studio에서 프로젝트를 자동으로 업데이트하도록 허용하면 Visual Studio 2013, Visual Studio 2012 또는 Visual Studio 2010 SP1에서 프로젝트를 열 수 있습니다.<br /><br /> Team Foundation에서 모델링 프로젝트를 빌드할 때 프로젝트의 레이어 유효성 검사를 시도합니다. Visual Studio 2013 Team Foundation Build는 Visual Studio 2010 s p 1에서 만든 모델링 프로젝트의 레이어 유효성을 검사할 수 없습니다. 그러나 Visual Studio 2010 s p 1에서는 Team Foundation Build가 Visual Studio 2013에서 만든 모델링 프로젝트의 레이어 유효성을 검사할 수 있습니다.|
 |MPI/클러스터 디버깅|Visual Studio 2013, Visual Studio 2012 또는 Visual Studio 2010 s p 1을 실행 하는 컴퓨터에 같은 버전의 런타임 또는 도구가 설치 되어 있으면 세 버전 모두에서이 프로젝트를 열 수 있습니다.|
 |MSI 설치(.vdproj)|이 프로젝트는 해당 프로젝트 형식을 지원 하지 않으므로 Visual Studio 2013에서 열 수 없습니다. 대부분의 Windows 플랫폼과 애플리케이션 런타임을 직접 지원하는 무료 배포 솔루션인 ISLE(InstallShield Limited Edition for Visual Studio)를 사용하는 것이 좋습니다. ISLE를 사용하여 Visual Studio 설치 관리자 프로젝트에서 데이터 및 설정을 가져올 수도 있습니다. 에서 수정하지 않아도 실행되는 항목을 찾을 수 있습니다.|
 |Office 2007 VSTO|Office 2013 및 .NET Framework 4를 대상으로 하는 프로젝트를 업그레이드 하는 경우 Visual Studio 2013, Visual Studio 2012 또는 Visual Studio 2010 s p 1에서이 프로젝트를 열 수 있습니다.|
 |Office 2010 VSTO|프로젝트가 .NET Framework 4를 대상으로 하는 경우 Visual Studio 2013, Visual Studio 2012 및 Visual Studio 2010 s p 1에서 열 수 있습니다. 다른 모든 프로젝트에는 단방향 업그레이드가 필요합니다.|
 |리치 인터넷 애플리케이션|프로젝트를 업그레이드 하는 경우 Visual Studio 2013, Visual Studio 2012 및 Visual Studio 2010 s p 1에서 프로젝트를 열 수 있습니다.|
-|SharePoint 2007|Visual Studio 2013에서이 프로젝트를 열 수 없습니다. 그러나 프로젝트를 수동으로 SharePoint 2010로 업그레이드 하는 경우 Visual Studio 2013, Visual Studio 2012 및 Visual Studio 2010 s p 1에서이 프로젝트를 열 수 있습니다. SharePoint 2007을 업그레이드하는 방법은 [SharePoint 2007에서 SharePoint 2010으로 마이그레이션(IT 전문가용)](https://go.microsoft.com/fwlink/?LinkId=238224) 및 [SharePoint Server 2010용 SharePoint Enterprise 검색 마이그레이션 도구](https://docs.microsoft.com/previous-versions/office/developer/sharepoint-2010/ee556856(v%3Doffice.14))를 참조하세요.|
+|SharePoint 2007|Visual Studio 2013에서이 프로젝트를 열 수 없습니다. 그러나 프로젝트를 수동으로 SharePoint 2010로 업그레이드 하는 경우 Visual Studio 2013, Visual Studio 2012 및 Visual Studio 2010 s p 1에서이 프로젝트를 열 수 있습니다. SharePoint 2007을 업그레이드하는 방법은 [SharePoint 2007에서 SharePoint 2010으로 마이그레이션(IT 전문가용)](https://channel9.msdn.com/Blogs/matthijs/Migrating-from-SharePoint-2007-to-SharePoint-2010-for-the-IT-Pro) 및 [SharePoint Server 2010용 SharePoint Enterprise 검색 마이그레이션 도구](https://docs.microsoft.com/previous-versions/office/developer/sharepoint-2010/ee556856(v%3Doffice.14))를 참조하세요.|
 |SharePoint 2010|Visual Studio 2013, Visual Studio 2012 및 Visual Studio 2010 s p 1에서 프로젝트를 열 수 있습니다.|
 |SketchFlow|Visual Studio에서 프로젝트를 WPF 4.5/Silverlight 5로 업그레이드할 수 있도록 허용 하는 경우 Visual Studio 2012 및 Visual Studio 2013에서 프로젝트를 열 수 있습니다.|
 |[!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] 데이터베이스|Visual Studio 2013, Visual Studio 2012 및 Visual Studio 2010 s p 1에서 프로젝트를 열 수 있습니다. 이전 버전의 SQL Server에서 만든 데이터베이스 파일(.mdf)이 있을 경우 SQL Server Express LocalDB에서 이 데이터베이스 파일을 사용하려면 먼저 [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] 로 업그레이드해야 합니다. 하지만 데이터베이스가 더 이상 이전 버전의 SQL Server와 호환되지 않습니다. 업그레이드 하지 않는 경우 동일한 컴퓨터에 [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)]를 설치 하 고 사용 하 여 Visual Studio 2013에서 데이터베이스 작업을 계속할 수 있습니다. 자세한 내용은 [.mdf 파일 업그레이드](../data-tools/upgrade-dot-mdf-files.md)를 참조하세요.|

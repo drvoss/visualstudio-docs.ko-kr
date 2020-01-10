@@ -9,17 +9,17 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d808fce2783d444071ea1a7976d26e3c5bf02eed
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a15767454c83604de2844e4c0a9f2e121a9a1a4f
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297458"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846119"
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>XML 리터럴과 XML 스키마 탐색기와의 통합
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Basic XML 리터럴을 지원 합니다. 즉, XML 조각을 Visual Basic 코드에 직접 통합할 수 있습니다. 자세한 내용은 [XML 리터럴 개요](https://go.microsoft.com/fwlink/?LinkId=140325)를 참조 하세요.
+Visual Basic XML 리터럴을 지원 합니다. 즉, XML 조각을 Visual Basic 코드에 직접 통합할 수 있습니다. 자세한 내용은 [XML 리터럴 개요](https://msdn.microsoft.com/library/bb384629.aspx)를 참조 하세요.
 
  Visual Basic 프로젝트의 XSD 파일에 XML 리터럴이 들어 있는 경우 XML 스키마 탐색기에서 XML 스키마 집합을 볼 수 있습니다. XML 리터럴과 연결 된 스키마 집합을 보려면 xml 리터럴 또는 xml 네임 스페이스 가져오기에서 XML 노드를 마우스 오른쪽 단추로 클릭 하 고 **스키마 탐색기에 표시**를 선택 합니다.
 

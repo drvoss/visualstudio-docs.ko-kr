@@ -12,12 +12,12 @@ ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 156b221265b4c3c23b795b09b9a50ccb27a63bcf
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2a769b0d04f76a2a32c00e262ff03b400af02feb
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295651"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852278"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX 패키지 분석
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,4 +59,4 @@ VSIX 패키지는 visual Studio에서 확장을 분류 하 고 설치 하는 데
 ## <a name="content_typesxml"></a>[Content_Types].xml  
  [Content_Types] .xml 파일은 확장 된 .vsix 파일의 파일 형식을 식별 합니다. Visual Studio는 패키지를 설치 하는 동안이 파일을 사용 하지만 파일 자체는 설치 하지 않습니다. 이 파일에 대 한 자세한 내용은 [Content_types\]파일의 구조](../extensibility/the-structure-of-the-content-types-dot-xml-file.md)를 참조 하세요.  
   
- [Content_Types] .xml 파일은 OPC (Open 패키징 규칙) 표준에 필요 합니다. OPC에 대 한 자세한 내용은 Opc: MSDN 웹 사이트에서 [데이터를 패키징하는 새 표준](https://go.microsoft.com/fwlink/?LinkID=148207) 을 참조 하세요.
+ [Content_Types] .xml 파일은 OPC (Open 패키징 규칙) 표준에 필요 합니다. OPC에 대 한 자세한 내용은 Opc: MSDN 웹 사이트에서 [데이터를 패키징하는 새 표준](https://msdn.microsoft.com/magazine/cc163372.aspx) 을 참조 하세요.

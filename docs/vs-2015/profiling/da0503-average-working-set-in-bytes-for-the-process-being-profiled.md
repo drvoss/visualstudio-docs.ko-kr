@@ -13,12 +13,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 898208530eb1ba71a5a1443fcb97ac1f1a1081e1
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 31d36a89473cd0c6a0b55e484fee2ce1d7045b15
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300061"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850889"
 ---
 # <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503: 프로파일링 중인 프로세스에 대한 평균 작업 집합(바이트)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "74300061"
   
  프로세스 작업 집합의 크기는 프로세스가 적극적으로 사용하는 가상 메모리 크기를 반영합니다. 또한 애플리케이션을 실행할 수 있는 실제 메모리(또는 RAM)의 크기 및 해당 실제 메모리에 대한 실행 중인 다른 프로세스의 경합이 이 크기에 영향을 미칩니다. 실제 메모리가 제한될 경우 운영 체제에서는 주기적으로 프로세스 작업 집합에서 많은 비활성 페이지를 잘라내는 방식으로 모든 활성 프로세스에서 메모리 사용량을 분산하려고 하므로 프로세스 작업 집합의 값이 크게 달라질 수 있습니다.  
   
- 프로세스 작업 집합에 대한 자세한 내용은 MSDN의 Windows 메모리 관리 설명서에 있는 [Working Set](https://go.microsoft.com/fwlink/?LinkId=177830)(작업 집합)를 참조하세요.  
+ 프로세스 작업 집합에 대한 자세한 내용은 MSDN의 Windows 메모리 관리 설명서에 있는 [Working Set](https://msdn.microsoft.com/library/cc441804.aspx)(작업 집합)를 참조하세요.  
   
 ## <a name="how-to-use-rule-data"></a>규칙 데이터를 사용하는 방법  
  규칙 값을 사용하여 프로그램의 여러 가지 버전이나 빌드에 대한 성능을 비교하거나 여러 가지 프로파일링 시나리오에서 애플리케이션의 성능을 파악합니다.  

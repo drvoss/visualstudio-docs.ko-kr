@@ -18,19 +18,19 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5dd40381b8f5ba4807e95cfcf5e5b7d54afd77e2
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1a3c9b3a6ae2ed11e8512f8cf8857d27b3d0043b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298393"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850068"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>DOM 탐색기를 사용하여 레이아웃 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows 및 Windows Phone]에 적용 됩니다. /Image/windows_and_phone_content .png "windows_and_phone_content")  
   
- DOM 탐색기의 **레이아웃** 탭에는 [앱, Windows Phone 스토어 앱 또는 Visual Studio Tools for Apache Cordova를 사용하여 만든 앱에서 선택한 요소에 대한](https://go.microsoft.com/fwlink/?LinkID=238778) CSS 상자 모델 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 을 보여 줍니다. 상자 모델의 이 시각적 표현을 사용하여 요소의 모양을 좌우하는 레이아웃 관련 값을 식별하고 수정할 수 있습니다.  
+ DOM 탐색기의 **레이아웃** 탭에는 [앱, Windows Phone 스토어 앱 또는 Visual Studio Tools for Apache Cordova를 사용하여 만든 앱에서 선택한 요소에 대한](https://www.w3.org/TR/CSS2/box.html) CSS 상자 모델 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 을 보여 줍니다. 상자 모델의 이 시각적 표현을 사용하여 요소의 모양을 좌우하는 레이아웃 관련 값을 식별하고 수정할 수 있습니다.  
   
 > [!TIP]
 > **레이아웃** 탭에서 변경한 내용은 영구적이지 않습니다. 소스 코드를 영구적으로 변경한 다음 디버그 도구 모음에서 **Windows 앱 새로 고침** 단추(Windows 스토어 및 Windows Phone 스토어 앱만 해당)를 사용하여 앱을 새로 고칠 수 있습니다. 이렇게 하면 디버거를 다시 시작하지 않아도 됩니다.  

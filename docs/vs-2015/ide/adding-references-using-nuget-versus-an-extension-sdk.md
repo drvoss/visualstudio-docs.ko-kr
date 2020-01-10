@@ -12,19 +12,19 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 63d9e6694fab400b1f29ed5e2706bb788a760357
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 9cdc597bcbdb79c7040f040084493fe015ee1c08
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301258"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852238"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>NuGet을 사용한 참조 추가와 확장명 SDK를 사용한 참조 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio에 대한 NuGet 확장 또는 SDK(소프트웨어 개발 키트)를 사용하여 Visual Studio 프로젝트 내에서 사용할 패키지를 제공할 수 있습니다. 이 항목에서 설명하는 두 메커니즘 간의 유사점과 차이점을 참조하여 작업에 가장 적합한 메커니즘을 선택할 수 있습니다.
 
-- NuGet은 프로젝트 솔루션에 라이브러리를 통합하는 과정을 간소화하는 오픈 소스 패키지 관리 시스템입니다. 자세한 내용은 [NuGet 개요](https://go.microsoft.com/fwlink/?LinkId=254877)를 참조하세요.
+- NuGet은 프로젝트 솔루션에 라이브러리를 통합하는 과정을 간소화하는 오픈 소스 패키지 관리 시스템입니다. 자세한 내용은 [NuGet 개요](https://docs.microsoft.com/nuget/what-is-nuget)를 참조하세요.
 
 - SDK는 Visual Studio에서 단일 참조 항목으로 처리하는 파일 컬렉션입니다. **참조 관리자** 대화 상자에는 해당 대화 상자를 표시할 때 열려 있던 프로젝트에 관련된 모든 SDK가 나열됩니다. 프로젝트에 SDK를 추가하면 IntelliSense, **도구 상자**, 디자이너, **개체 브라우저**, MSBuild, 배포, 디버깅 및 패키징을 통해 해당 SDK의 모든 내용에 액세스할 수 있습니다. SDK에 대한 자세한 내용은 [소프트웨어 개발 키트 만들기](../extensibility/creating-a-software-development-kit.md)를 참조하세요.
 
@@ -55,9 +55,9 @@ Visual Studio에 대한 NuGet 확장 또는 SDK(소프트웨어 개발 키트)�
 |메커니즘에서 비참조 파일을 배포합니다(예: [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱 테스트를 실행할 테스트 프레임워크 배포).|Y|\redist 폴더에 파일을 넣는 경우 파일이 자동으로 배포됩니다.|Y||
 |메커니즘에서 플랫폼 SDK를 Visual Studio IDE에 자동으로 추가합니다.|Y|[!INCLUDE[win8](../includes/win8-md.md)] SDK 또는 Windows Phone SDK를 특정 위치에 특정 레이아웃으로 넣는 경우 SDK가 모든 Visual Studio 기능과 자동으로 통합됩니다.|N||
 |메커니즘에서 클린 개발자 컴퓨터를 지원합니다. 즉, 설치할 필요가 없으며 소스 코드 제어에서 간단하게 검색할 수 있습니다.|N|SDK를 참조하기 때문에 솔루션과 SDK를 별도로 체크 인해야 합니다. MSBuild가 SDK를 반복하는, 레지스트리가 아닌 두 개의 기본 위치에서 SDK를 체크 인할 수 있습니다(자세한 내용은 [소프트웨어 개발 키트 만들기](../extensibility/creating-a-software-development-kit.md) 참조). 또는 사용자 지정 위치가 SDK로 구성된 경우 프로젝트 파일에서 다음 코드를 지정할 수 있습니다.<br /><br /> `<PropertyGroup>    <SDKReferenceDirectoryRoot>C:\MySDKs</SDKReferenceDirectoryRoot>   </PropertyGroup>`<br /><br /> 그런 다음 해당 위치에 SDK를 체크 인합니다.|Y|솔루션을 체크 아웃하면 Visual Studio에서 즉시 파일을 인식하고 작업을 수행합니다.|
-|기존의 대규모 패키지 작성자 커뮤니티에 연결할 수 있습니다.|해당 사항 없음|커뮤니티는 새로운 기능입니다.|Y||
-|기존의 대규모 패키지 소비자 커뮤니티에 연결할 수 있습니다.|해당 사항 없음|커뮤니티는 새로운 기능입니다.|Y||
-|파트너 에코시스템(사용자 지정 갤러리, 리포지토리 등)에 연결할 수 있습니다.|해당 사항 없음|사용 가능한 리포지토리에는 Visual Studio 갤러리, Microsoft 다운로드 센터, [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)] 등이 있습니다.|Y||
+|기존의 대규모 패키지 작성자 커뮤니티에 연결할 수 있습니다.|N/A|커뮤니티는 새로운 기능입니다.|Y||
+|기존의 대규모 패키지 소비자 커뮤니티에 연결할 수 있습니다.|N/A|커뮤니티는 새로운 기능입니다.|Y||
+|파트너 에코시스템(사용자 지정 갤러리, 리포지토리 등)에 연결할 수 있습니다.|N/A|사용 가능한 리포지토리에는 Visual Studio 갤러리, Microsoft 다운로드 센터, [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)] 등이 있습니다.|Y||
 |패키지 생성 및 사용 둘 다를 위해 메커니즘이 연속 통합 빌드 서버와 통합됩니다.|Y|SDK에서 명령줄을 통해 체크 인된 위치(SDKReferenceDirectoryRoot 속성)를 MSBuild에 전달해야 합니다.|Y||
 |메커니즘에서 안정적인 패키지 버전과 시험판 패키지 버전을 둘 다 지원합니다.|Y|SDK에서 여러 버전에 대한 참조 추가를 지원합니다.|Y||
 |메커니즘에서 설치된 패키지에 대한 자동 업데이트를 지원합니다.|Y|VSIX 또는 Visual Studio 자동 업데이트의 일부로 제공된 경우 SDK에서 자동 알림을 제공합니다.|Y||
@@ -65,10 +65,10 @@ Visual Studio에 대한 NuGet 확장 또는 SDK(소프트웨어 개발 키트)�
 |패키지를 버전 제어에 체크 인할 수 있습니다.|Y|문서 노드 외부에서 아무것도 체크 인할 수 없으므로 확장 SDK를 체크 인하지 못할 수도 있습니다. 확장 SDK의 크기가 클 수 있습니다.|Y||
 |PowerShell 인터페이스를 사용하여 패키지를 만들고 사용할 수 있습니다.|Y(사용), N(만들기)|SDK를 만들기 위한 도구가 없습니다. 사용하려면 명령줄에서 MSBuild를 실행합니다.|Y||
 |디버깅 지원을 위해 기호 패키지를 사용할 수 있습니다.|Y|SDK에 .pdb 파일을 넣으면 파일이 자동으로 선택됩니다.|Y||
-|메커니즘에서 패키지 관리자 자동 업데이트를 지원합니다.|해당 사항 없음|SDK가 MSBuild로 수정됩니다.|Y||
+|메커니즘에서 패키지 관리자 자동 업데이트를 지원합니다.|N/A|SDK가 MSBuild로 수정됩니다.|Y||
 |메커니즘에서 경량 매니페스트 형식을 지원합니다.|Y|SDKManifest.xml에서 많은 특성을 지원하지만 일반적으로 작은 하위 집합만 있으면 됩니다.|Y||
 |모든 Visual Studio 버전에 메커니즘을 사용할 수 있습니다.|Y|SDK에서 Visual Studio Express부터 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]까지 모든 Visual Studio 버전을 지원합니다.|Y|NuGet에서 Express부터 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]까지 모든 Visual Studio 버전을 지원합니다.|
 |모든 프로젝트 형식에 메커니즘을 사용할 수 있습니다.|N|SDK에서 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]부터 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱을 지원합니다.|N|허용된 프로젝트 목록을 검토할 수 있습니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [프로젝트의 참조 관리](../ide/managing-references-in-a-project.md)

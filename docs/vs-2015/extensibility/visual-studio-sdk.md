@@ -14,12 +14,12 @@ ms.assetid: 1f7c348a-114c-4243-b392-3531e9c9c6fd
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 59ef6ae6b042b1616997821febe156ef5cac3b7f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 27dce16d9fe02063eae935af96c26184285e583d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299709"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850375"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Visual studio SDK를 사용 하 여 visual Studio 기능을 확장 하거나 새
  Visual studio sdk [참조](../extensibility/visual-studio-sdk-reference.md)에서 VISUAL STUDIO sdk API 참조를 찾을 수 있습니다.  
   
 ## <a name="visual-studio-sdk-samples"></a>Visual Studio SDK 샘플  
- [Visual Studio 샘플](https://aka.ms/vs2015sdksamples)에서 GITHUB의 VS SDK 확장의 오픈 소스 예제를 찾을 수 있습니다. 이 GitHub 리포지토리에는 Visual Studio의 다양 한 확장 가능 기능을 보여 주는 샘플이 포함 되어 있습니다.  
+ [Visual Studio 샘플](https://github.com/Microsoft/VSSDK-Extensibility-Samples)에서 GITHUB의 VS SDK 확장의 오픈 소스 예제를 찾을 수 있습니다. 이 GitHub 리포지토리에는 Visual Studio의 다양 한 확장 가능 기능을 보여 주는 샘플이 포함 되어 있습니다.  
   
 ## <a name="other-visual-studio-sdk-resources"></a>다른 Visual Studio SDK 리소스  
  이상 사용자에 대 한 질문이 있거나 확장을 개발 하는 환경을 공유 하려면 [Visual Studio 확장성 포럼](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx) 또는 [ExtendVS 그룹 채팅](https://gitter.im/Microsoft/extendvs)을 사용할 수 있습니다.  

@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 47bcda57d4446b69096405a54e238e696df24d50
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: f3582dd63b2324b061684f1f6ad446d84734e2d3
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300802"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850152"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Blend의 바로 가기 키 및 보조 키
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "74300802"
 
    ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4e8a-8039-bead80a3e595")바로 가기가 있는 메뉴 항목 옆에 나타나는 바로 가기 키
 
-  내게 필요한 옵션 및 기능에 대한 자세한 내용은 [Microsoft의 내게 필요한 옵션](https://go.microsoft.com/fwlink/?LinkId=75069)을 참조하세요.
+  내게 필요한 옵션 및 기능에 대한 자세한 내용은 [Microsoft의 내게 필요한 옵션](https://www.microsoft.com/enable)을 참조하세요.
 
 ## <a name="modifier-keys"></a>보조 키
  일부 바로 가기 키는 연결된 메뉴 항목이 없으므로 [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] 사용자 인터페이스를 통해 찾을 수 없습니다. 다음 항목에는 도구 동작을 수정하거나 개체 크기 조정 등의 작업을 수정하는 바로 가기가 나와 있습니다.

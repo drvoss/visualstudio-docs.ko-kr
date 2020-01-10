@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9cc4f8038906de89afd86fd666fbb011e974362d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e181500beefd32dffb9c0e8a7572a198cc9ff1f2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298084"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852189"
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>게임 및 응용 프로그램을 위한 3D 자산 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,10 +44,10 @@ ms.locfileid: "74298084"
  그래프 기반 셰이더 디자인 도구인 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 셰이더 디자이너를 사용하여 HLSL 프로그래밍을 알 필요 없이 사용자 지정 시각적 효과를 만들 수 있습니다.
 
 > [!NOTE]
-> DirectX 프로그래밍을 시작하는 방법에 대한 자세한 내용은 [DirectX](https://go.microsoft.com/fwlink/p/?LinkId=224633)를 참조하세요. DirectX 기반 앱을 디버그하는 방법에 대한 자세한 내용은 [그래픽 진단(DirectX 그래픽 디버그)](../debugger/visual-studio-graphics-diagnostics.md)을 참조하세요.
+> DirectX 프로그래밍을 시작하는 방법에 대한 자세한 내용은 [DirectX](https://msdn.microsoft.com/library/ee663274(VS.85).aspx)를 참조하세요. DirectX 기반 앱을 디버그하는 방법에 대한 자세한 내용은 [그래픽 진단(DirectX 그래픽 디버그)](../debugger/visual-studio-graphics-diagnostics.md)을 참조하세요.
 
 ## <a name="directx-version-compatibility"></a>DirectX 버전 호환성
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]는 DirectX를 사용하여 2차원 및 3차원 자산을 렌더링합니다. DirectX 11 렌더러 또는 WARP(Windows Advanced Rasterization Platform) 소프트웨어 렌더러를 선택할 수 있습니다. DirectX 11 렌더러는 DirectX 11 및 DirectX 10 GPU에서 고성능 하드웨어 가속 렌더링을 제공합니다. WARP 렌더러는 자산이 광범위한 컴퓨터에서 작동하는지 확인하는 데 도움이 됩니다. 여기에는 최신 그래픽 하드웨어가 없는 컴퓨터와 통합 그래픽 하드웨어가 있는 컴퓨터가 포함됩니다. WARP에 대한 자세한 내용은 [WARP(Windows Advanced Rasterization Platform) 가이드](https://go.microsoft.com/fwlink/p/?LinkId=224634)를 참조하세요.
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]는 DirectX를 사용하여 2차원 및 3차원 자산을 렌더링합니다. DirectX 11 렌더러 또는 WARP(Windows Advanced Rasterization Platform) 소프트웨어 렌더러를 선택할 수 있습니다. DirectX 11 렌더러는 DirectX 11 및 DirectX 10 GPU에서 고성능 하드웨어 가속 렌더링을 제공합니다. WARP 렌더러는 자산이 광범위한 컴퓨터에서 작동하는지 확인하는 데 도움이 됩니다. 여기에는 최신 그래픽 하드웨어가 없는 컴퓨터와 통합 그래픽 하드웨어가 있는 컴퓨터가 포함됩니다. WARP에 대한 자세한 내용은 [WARP(Windows Advanced Rasterization Platform) 가이드](https://msdn.microsoft.com/library/gg615082(VS.85).aspx)를 참조하세요.
 
 ## <a name="related-topics"></a>관련 항목
 

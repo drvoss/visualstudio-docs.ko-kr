@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a95392525826fcfb2595e1bac7d45ebea20317fc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 673cc3d9b936131e6423a015af5c78486846fbe7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294696"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847713"
 ---
 # <a name="trusted-application-deployment-overview"></a>신뢰할 수 있는 응용 프로그램 배포 개요
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "74294696"
   
 |개체 또는 역할|설명|  
 |--------------------|-----------------|  
-|관리자|클라이언트 컴퓨터를 업데이트 및 유지 관리하는 조직 엔터티입니다.|  
+|Administrators|클라이언트 컴퓨터를 업데이트 및 유지 관리하는 조직 엔터티입니다.|  
 |신뢰 관리자|클라이언트 애플리케이션 보안을 적용하는 CLR(공용 언어 런타임) 내의 하위 시스템입니다.|  
 |publisher|애플리케이션을 쓰고 유지 관리하는 엔터티입니다.|  
 |배포자|애플리케이션 패키지하고 사용자에게 배포하는 엔터티입니다.|  
@@ -74,7 +74,7 @@ ms.locfileid: "74294696"
 ### <a name="add-the-publisher-to-the-trusted-publishers-store"></a>신뢰할 수 있는 배포자 저장소에 게시자 추가  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 애플리케이션이 더 높은 수준의 신뢰를 받게 하려면 신뢰할 수 있는 게시자로 인증서를 각 클라이언트 애플리케이션이 실행될 컴퓨터에 추가해야 합니다. 이 작업을 수행하는 것은 일회성 구성입니다. 작업이 완료되면 게시자 인증서로 서명된 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 애플리케이션을 원하는 만큼 배포할 수 있고 애플리케이션은 모두 높은 신뢰를 기반으로 실행됩니다.  
   
- Windows 운영 체제를 실행하는 회사 인트라넷과 같은 관리되는 데스크톱 환경에 애플리케이션을 배포하면 그룹 정책을 통해 새 CTL(인증서 신뢰 목록)을 만들어서 클라이언트 저장소에 신뢰할 수 있는 게시자를 추가할 수 있습니다. 자세한 내용은 [그룹 정책 개체의 인증서 신뢰 목록 만들기](https://go.microsoft.com/fwlink/?LinkId=102576)를 참조하세요.  
+ Windows 운영 체제를 실행하는 회사 인트라넷과 같은 관리되는 데스크톱 환경에 애플리케이션을 배포하면 그룹 정책을 통해 새 CTL(인증서 신뢰 목록)을 만들어서 클라이언트 저장소에 신뢰할 수 있는 게시자를 추가할 수 있습니다. 자세한 내용은 [그룹 정책 개체의 인증서 신뢰 목록 만들기](https://technet.microsoft.com/library/2c03582f-00b2-43e5-ae1d-493894ad0fd7)를 참조하세요.  
   
  애플리케이션을 관리되는 데스크톱 환경에 배포하지 않으면 다음 옵션을 사용하여 신뢰할 수 있는 게시자 저장소에 인증서를 추가할 수 있습니다.  
   

@@ -16,12 +16,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8c407475f72684360551cd97852c1a1bfde5088f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: becaa70d2eed862d77f4c666b0a408054eaf5926
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300616"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850943"
 ---
 # <a name="concurrency-visualizer"></a>동시성 시각화 도우미
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "74300616"
   
  동시성 시각화 도우미를 사용하여 다중 스레드 앱이 어떻게 작업을 수행하는지 확인할 수 있습니다. 동시성 시각화 도우미의 뷰에서는 프로그램의 스레드와 시스템 전체의 일시적 관계를 보여 주는 그래픽, 표 및 텍스트 형식의 데이터를 제공합니다. 동시성 시각화 도우미를 사용하여 성능 병목 지점, 불충분한 CPU 사용률, 스레드 경합, 코어 스레드 간 마이그레이션, 동기화 지연, DirectX 동작, 겹쳐 있는 I/O 영역 및 기타 정보를 찾을 수 있습니다. 뷰에서는 항상 그래픽 출력을 호출 스택 및 소스 코드에 연결하여 실행 가능한 데이터를 제공합니다.  
   
- 동시성 시각화 도우미는 [Windows용 이벤트 추적](https://go.microsoft.com/fwlink/?LinkId=234579) 기능에 의존합니다.  
+ 동시성 시각화 도우미는 [Windows용 이벤트 추적](https://msdn.microsoft.com/library/bb968803(VS.85).aspx) 기능에 의존합니다.  
   
 > [!NOTE]
 > 동시성 시각화 도우미는 웹 프로젝트를 지원하지 않습니다.  
@@ -49,10 +49,10 @@ ms.locfileid: "74300616"
 |[스레드 뷰](../profiling/threads-view-parallel-performance.md)|프로그램의 스레드 간 상호 작용을 분석하는 방법에 대해 설명합니다.|  
 |[코어 뷰](../profiling/cores-view.md)|코어 간의 스레드 마이그레이션을 분석하는 방법에 대해 설명합니다.|  
 |[잘못 동작하는 다중 스레드 애플리케이션의 일반 패턴](../profiling/common-patterns-for-poorly-behaved-multithreaded-applications.md)|몇 가지 일반적인 패턴을 설명하고 이러한 패턴이 동시성 시각화 도우미에서 어떻게 나타나는지 보여 줍니다.|  
-|[Visual Studio에서 병렬 개발 블로그](https://go.microsoft.com/fwlink/?LinkId=235385)|동시성 시각화 도우미에 대한 팁과 유용한 정보를 제공합니다.|  
+|[Visual Studio에서 병렬 개발 블로그](https://blogs.msdn.com/b/visualizeparallel)|동시성 시각화 도우미에 대한 팁과 유용한 정보를 제공합니다.|  
 |[성능 보고서 뷰](../profiling/performance-report-views.md)|Visual Studio 프로파일링 도구의 보고서 및 뷰에 대한 참조 정보를 제공합니다.|  
 |[Concurrency 시각화 도우미 SDK](../profiling/concurrency-visualizer-sdk.md)|동시성 시각화 도우미에서 추가 정보를 표시하도록 소스 코드를 계측하는 방법을 설명합니다.|  
-|[Concurrency 시각화 도우미 명령줄 유틸리티(CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|동시성 시각화 도우미 명령줄 유틸리티(CVCollectionCmd.exe)를 사용하여 Visual Studio가 설치되지 않은 컴퓨터에서 추적 정보를 수집 및 처리하는 방법을 설명합니다.|  
+|[동시성 시각화 도우미 명령줄 유틸리티(CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|동시성 시각화 도우미 명령줄 유틸리티(CVCollectionCmd.exe)를 사용하여 Visual Studio가 설치되지 않은 컴퓨터에서 추적 정보를 수집 및 처리하는 방법을 설명합니다.|  
   
 ## <a name="see-also"></a>참고 항목  
  [프로파일링 도구](../profiling/profiling-tools.md)

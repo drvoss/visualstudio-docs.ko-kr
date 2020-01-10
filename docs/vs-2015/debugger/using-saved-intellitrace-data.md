@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b44ec3fcab0512e50af1debcf6010c1dc584ed0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8f6047e6104467b5b0516fba26fc39f402dfaac9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297134"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845654"
 ---
 # <a name="using-saved-intellitrace-data"></a>저장된 IntelliTrace 데이터 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -161,7 +161,7 @@ IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 애플리�
   
 1. 해당 소스에서 SharePoint 상관 관계 ID를 복사합니다.  
   
-    예를 들면 다음과 같습니다.  
+    예를 들면 다음과 같습니다.:  
   
     ![IntelliTrace &#45; SharePoint 오류 &#45; 상관 관계 ID](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
   
@@ -270,7 +270,7 @@ IntelliTrace 로그(.iTrace) 파일에서 디버깅을 시작할 때 애플리�
  [IntelliTrace](../debugger/intellitrace.md)  
   
 #### <a name="forums"></a>포럼  
- [Visual Studio 디버거](https://go.microsoft.com/fwlink/?LinkId=262263)  
+ [Visual Studio 디버거](https://social.msdn.microsoft.com/Forums/vsdebug)  
   
 #### <a name="guidance"></a>지침  
- [Visual Studio 2012를 사용한 연속 배달 테스트 – 6장: 테스트 도구 상자](https://go.microsoft.com/fwlink/?LinkID=255203)
+ [Visual Studio 2012를 사용한 연속 배달 테스트 – 6장: 테스트 도구 상자](https://msdn.microsoft.com/library/jj159337.aspx)

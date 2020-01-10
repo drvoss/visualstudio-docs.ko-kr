@@ -9,17 +9,17 @@ caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: c8f29a909f6aef75976a551546d4cbeafdf03b37
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a184ad6ebc1b3fc2dc21b7a1774b37fef8d359ec
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291873"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848459"
 ---
 # <a name="understanding-sal"></a>SAL 이해
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Microsoft SAL (소스 코드 주석 언어)은 함수에서 매개 변수를 사용 하는 방법, 해당 매개 변수를 사용 하는 가정 및 완료 될 때의 보장을 설명 하는 데 사용할 수 있는 주석 집합을 제공 합니다. 주석은 헤더 파일 `<sal.h>`에서 정의 됩니다. 용 C++ Visual Studio code 분석에서는 SAL 주석을 사용 하 여 함수 분석을 수정 합니다. Windows 드라이버 개발용 SAL 2.0에 대 한 자세한 내용은 [Windows 드라이버에 대 한 sal 2.0 주석](https://go.microsoft.com/fwlink/?LinkId=250979)을 참조 하세요.  
+Microsoft SAL (소스 코드 주석 언어)은 함수에서 매개 변수를 사용 하는 방법, 해당 매개 변수를 사용 하는 가정 및 완료 될 때의 보장을 설명 하는 데 사용할 수 있는 주석 집합을 제공 합니다. 주석은 헤더 파일 `<sal.h>`에서 정의 됩니다. 용 C++ Visual Studio code 분석에서는 SAL 주석을 사용 하 여 함수 분석을 수정 합니다. Windows 드라이버 개발용 SAL 2.0에 대 한 자세한 내용은 [Windows 드라이버에 대 한 sal 2.0 주석](https://msdn.microsoft.com/library/windows/hardware/hh454237.aspx)을 참조 하세요.  
   
  기본적으로 C 및 C++ 는 개발자가 일관적이 고 불변성의 하 게 표현할 수 있는 제한 된 방법만 제공 합니다. SAL 주석을 사용 하면 함수를 사용 하는 개발자가 사용 방법을 더 잘 이해할 수 있도록 함수를 더 자세히 설명할 수 있습니다.  
   
@@ -108,7 +108,7 @@ wchar_t * wmemcpy(
  이 섹션에서는 기본 SAL 주석에 대 한 코드 예제를 보여 줍니다.  
   
 ### <a name="using-the-visual-studio-code-analysis-tool-to-find-defects"></a>Visual Studio 코드 분석 도구를 사용하여 오류 찾기  
- 예제에서는 코드 오류를 찾기 위해 Visual Studio Code 분석 도구를 SAL 주석과 함께 사용 합니다. 이 작업을 수행 하는 방법은 다음과 같습니다.  
+ 예제에서는 코드 오류를 찾기 위해 Visual Studio Code 분석 도구를 SAL 주석과 함께 사용 합니다. 방법은 다음과 같습니다.  
   
 ##### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>Visual Studio 코드 분석 도구 및 SAL을 사용하려면  
   
@@ -409,7 +409,7 @@ bool GetValue(_Out_ int *pInt, bool flag)
   또는 모든 매개 변수에 주석을 추가 하 여 의도 하지 않은 전체를 확인 하 고 주석이 완료 되었는지 쉽게 확인할 수 있습니다.  
   
 ## <a name="related-resources"></a>관련 참고 자료  
- [코드 분석 팀 블로그](https://go.microsoft.com/fwlink/p/?LinkId=251197)  
+ [코드 분석 팀 블로그](https://blogs.msdn.com/b/codeanalysis/)  
   
 ## <a name="see-also"></a>참고 항목  
  [CC++ /코드 오류를 줄이기 위해 SAL 주석 사용](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   

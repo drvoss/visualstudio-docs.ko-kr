@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cafc4e2a87a31603e1f8cef4174d8538be768428
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0954a38a2667331c537487a706d1d2d13a07f6c4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296021"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850904"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>시나리오: 시각화 및 모델링을 사용하여 디자인 변경
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -242,7 +242,7 @@ Visual Studio에서 시각화 및 모델링 도구를 사용하여 소프트웨�
 |**맵 또는 다이어그램**|**보여 주는 것**|
 |------------------------|---------------|
 |*코드 맵*<br /><br /> 참조<br /><br /> [솔루션 전체에서 종속성 -   매핑](../modeling/map-dependencies-across-your-solutions.md)<br />-   [코드 맵 찾아보기 및 다시 정렬](../modeling/browse-and-rearrange-code-maps.md)<br />[DGML 파일을 편집 하 여 코드 맵을 사용자 지정](../modeling/customize-code-maps-by-editing-the-dgml-files.md) -   |코드의 종속성 및 기타 관계.<br /><br /> 예를 들어 Dinner Now는 어셈블리 및 해당 종속성을 살펴보기 위해 먼저 어셈블리 코드 맵을 검토할 수 있습니다. 맵을 분석하여 해당 어셈블리의 네임스페이스 및 클래스를 살펴볼 수 있습니다.<br /><br /> Dinner Now에서 맵을 만들어서 코드의 특정 영역 및 다른 관계 종류를 살펴볼 수도 있습니다. 솔루션 탐색기를 사용하여 관심 있는 영역 및 관계를 찾고 선택합니다.|
-|*코드 기반 클래스 다이어그램*<br /><br /> [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)을 참조하세요.|코드의 기존 클래스|
+|*코드 기반 클래스 다이어그램*<br /><br /> [방법: 프로젝트에 클래스 다이어그램 추가(클래스 디자이너)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)을 참조하세요.|코드의 기존 클래스|
 
  예를 들어 개발자는 코드 맵을 만듭니다. 범위를 조정하여 새 시나리오가 영향을 미치는 영역에 초점을 맞춥니다. 맵에서 다음 영역이 선택되고 강조 표시됩니다.
 
@@ -256,7 +256,7 @@ Visual Studio에서 시각화 및 모델링 도구를 사용하여 소프트웨�
 
  **그룹 간 링크가 표시된 확장된 네임스페이스 코드 맵**
 
- 개발자는 코드를 검사하여 영향을 받는 클래스 및 메서드를 찾습니다. 변경할 때 각 변경이 미치는 영향을 확인하기 위해 각 변경 후에 코드 맵을 다시 생성합니다. [코드 시각화](../modeling/visualize-code.md)를 참조 하세요.
+ 개발자는 코드를 검사하여 영향을 받는 클래스 및 메서드를 찾습니다. 변경할 때 각 변경이 미치는 영향을 확인하기 위해 각 변경 후에 코드 맵을 다시 생성합니다. 참조 [코드를 시각화](../modeling/visualize-code.md)합니다.
 
  구성 요소 또는 상호 작용과 같은 시스템의 다른 부분에 대한 변경 내용을 설명하기 위해 팀에서는 화이트보드에 이들 요소를 그릴 수 있습니다. 두 팀 모두가 세부 정보를 캡처, 관리 및 이해할 수 있도록 Visual Studio에서 다음 다이어그램을 그릴 수도 있습니다.
 
@@ -264,7 +264,7 @@ Visual Studio에서 시각화 및 모델링 도구를 사용하여 소프트웨�
 |------------------|-------------------|
 |*동작 다이어그램 (UML)*<br /><br /> 참조<br /><br /> -   [UML 동작 다이어그램: 참조](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML 동작 다이어그램: 지침](../modeling/uml-activity-diagrams-guidelines.md)|고객이 음식점에서 다시 주문했다는 것을 시스템에서 인식하여 고객에게 리뷰를 쓰도록 요청하는 메시지를 표시할 때 발생하는 단계 흐름.|
 |*클래스 다이어그램 (UML)*<br /><br /> 참조<br /><br /> -   [UML 클래스 다이어그램: 참조](../modeling/uml-class-diagrams-reference.md)<br />-   [UML 클래스 다이어그램: 지침](../modeling/uml-class-diagrams-guidelines.md)|논리 클래스 및 해당 관계. 예를 들어 **리뷰** 및 해당 리뷰와 **음식점**, **메뉴**, **고객**등 다른 엔터티와의 관계를 설명하는 새 클래스가 추가됩니다.<br /><br /> 리뷰를 고객과 연결하려면 시스템에서 고객 세부 정보를 저장해야 합니다. UML 클래스 다이어그램을 통해 해당 세부 정보를 명확하게 설명할 수 있습니다.|
-|*코드 기반 클래스 다이어그램*<br /><br /> [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)을 참조하세요.|코드의 기존 클래스.|
+|*코드 기반 클래스 다이어그램*<br /><br /> [방법: 프로젝트에 클래스 다이어그램 추가(클래스 디자이너)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)을 참조하세요.|코드의 기존 클래스.|
 |*구성 요소 다이어그램 (UML)*<br /><br /> 참조<br /><br /> -   [UML 구성 요소 다이어그램: 참조](../modeling/uml-component-diagrams-reference.md)<br />[UML 구성 요소 다이어그램 -   : 지침](../modeling/uml-component-diagrams-guidelines.md)|Dinner Now 웹 사이트 및 해당 인터페이스와 같은 시스템의 상위 파트. 이들 인터페이스는 인터페이스에서 제공 및 사용되는 메서드 또는 서비스를 통해 구성 요소가 서로 상호 작용하는 방식을 정의합니다.|
 |*시퀀스 다이어그램 (UML)*<br /><br /> 참조<br /><br /> -   [UML 시퀀스 다이어그램: 참조](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML 시퀀스 다이어그램: 지침](../modeling/uml-sequence-diagrams-guidelines.md)|인스턴스 간 상호 작용의 시퀀스.|
 
@@ -363,7 +363,7 @@ Visual Studio에서 시각화 및 모델링 도구를 사용하여 소프트웨�
 
 - [개발하는 동안 시스템 유효성 검사](../modeling/validate-your-system-during-development.md)
 
-- [버전 제어 사용](https://go.microsoft.com/fwlink/?LinkID=525605)
+- [버전 제어 사용](https://docs.microsoft.com/azure/devops/repos/tfvc/overview?view=azure-devops)
 
 - [애플리케이션 빌드](/azure/devops/pipelines/index)
 
@@ -665,7 +665,7 @@ Visual Studio에서 시각화 및 모델링 도구를 사용하여 소프트웨�
 |레이어 다이어그램|시스템의 논리적 아키텍처. 레이어 유효성 검사를 사용하여 코드와 디자인의 일관성이 유지되는지 확인합니다.<br /><br /> 기존 레이어 또는 의도한 레이어를 식별하는 데 도움이 되도록 코드 맵을 만들고 관련 항목을 그룹화합니다. 레이어 다이어그램을 만들려면 다음을 참조하세요.<br /><br /> [코드에서 레이어 다이어그램 -   만들기](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [레이어 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)|
 |구성 요소 다이어그램|구성 요소, 해당 인터페이스 및 해당 관계.<br /><br /> 구성 요소를 식별하는 데 도움이 되도록 코드 맵을 만들고 시스템에서 기능별로 항목을 그룹화합니다.<br /><br /> 참조<br /><br /> -   [UML 구성 요소 다이어그램: 참조](../modeling/uml-component-diagrams-reference.md)<br />[UML 구성 요소 다이어그램 -   : 지침](../modeling/uml-component-diagrams-guidelines.md)|
 |클래스 다이어그램(UML)|클래스, 해당 특성 및 작업, 해당 관계.<br /><br /> 이들 요소를 식별하는 데 도움이 되도록 해당 요소를 표시하는 UML 클래스 다이어그램을 만듭니다.<br /><br /> 참조<br /><br /> -   [UML 클래스 다이어그램: 참조](../modeling/uml-class-diagrams-reference.md)<br />-   [UML 클래스 다이어그램: 지침](../modeling/uml-class-diagrams-guidelines.md)|
-|클래스 다이어그램(코드 기반)|특정 프로젝트에 대한 코드의 기존 클래스.<br /><br /> 코드에서 기존 클래스를 시각화 및 수정하려면 클래스 디자이너를 사용합니다.<br /><br /> [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)을 참조하세요.|
+|클래스 다이어그램(코드 기반)|특정 프로젝트에 대한 코드의 기존 클래스.<br /><br /> 코드에서 기존 클래스를 시각화 및 수정하려면 클래스 디자이너를 사용합니다.<br /><br /> [방법: 프로젝트에 클래스 다이어그램 추가(클래스 디자이너)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)을 참조하세요.|
 
 ### <a name="DescribeSequence"></a>상호 작용 설명: 시퀀스 다이어그램
  시퀀스 다이어그램에서는 시스템 파트 간에 발생하는 일련의 상호 작용을 설명합니다. 파트는 크기에 제한이 없습니다. 예를 들어 파트의 범위는 프로그램의 개별 개체부터 대형 하위 시스템 또는 외부 행위자까지 해당할 수 있습니다. 상호 작용은 크기 및 형식의 제한이 없습니다. 예를 들어 상호 작용의 범위는 개별 메시지부터 확장된 트랜잭션까지 해당할 수 있고 함수 호출 또는 웹 서비스 메시지가 될 수도 있습니다.
@@ -882,7 +882,7 @@ Visual Studio에서 시각화 및 모델링 도구를 사용하여 소프트웨�
 
 |**범주**|**링크**|
 |------------------|---------------|
-|**포럼**|-   [Visual Studio 시각화 및 모델링 도구](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio 시각화 및 모델링 SDK(DSL 도구)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**포럼**|-   [Visual Studio 시각화 및 모델링 도구](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio 시각화 및 모델링 SDK(DSL 도구)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 
 ## <a name="see-also"></a>참고 항목
  [코드 시각화](../modeling/visualize-code.md) [앱에 대 한 모델 만들기](../modeling/create-models-for-your-app.md) [개발 프로세스에서](../modeling/use-models-in-your-development-process.md) 모델 사용 [Agile 개발에서 모델 사용](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f) [개발 중 시스템 유효성 검사](../modeling/validate-your-system-during-development.md) [UML 모델 및 다이어그램 확장](../modeling/extend-uml-models-and-diagrams.md)

@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ab8aaff0ddf793fe64dd3695adc58c281290f98
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 37db8a095e8f7b420f14df29de30f265aee49bb6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295700"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850813"
 ---
 # <a name="memory-usage-without-debugging"></a>디버그하지 않는 경우의 메모리 사용량
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ ms.locfileid: "74295700"
  스냅샷을 수집하려면 새로운 진단 세션을 시작합니다. 메모리 데이터를 캡처하려는 경우 **스냅샷 만들기**를 선택합니다. 보고서를 생성하려면 **중지**를 선택합니다.  
   
 ## <a name="BKMK_Memory_Usage_overview_page"></a> 메모리 사용량 개요 페이지  
- 데이터 수집을 중지한 후 메모리 사용량 도구에서 앱을 중지하고 개요 보고서를 표시합니다.  
+ 데이터 컬렉션을 중지한 후 메모리 사용량 도구에서 앱을 중지하고 개요 보고서를 표시합니다.  
   
  ![메모리 사용량 개요 페이지](../profiling/media/memuse-reportoverview.png "MEMUSE__ReportOverview")  
   
@@ -137,8 +137,8 @@ ms.locfileid: "74295700"
   
 |||  
 |-|-|  
-|**개체 형식**|유형 이름 또는 개체 인스턴스입니다.|  
-|**Count**|형식의 개체 인스턴스 수입니다. 인스턴스의 경우 이 숫자는 항상 1입니다.|  
+|**개체 형식**|형식 또는 개체 인스턴스의 이름입니다.|  
+|**개수**|형식의 개체 인스턴스 수입니다. 인스턴스의 경우 이 숫자는 항상 1입니다.|  
 |**크기(바이트)**|형식의 경우 인스턴스에 포함된 개체 크기를 제외한 메모리 스냅숏에 있는 형식의 모든 인스턴스 크기입니다.<br /><br /> 인스턴스의 경우 인스턴스에 포함된 개체 크기를 제외한 개체 크기입니다.|  
 |**포함 크기(바이트)**|포함된 개체 크기를 비롯한 형식의 인스턴스 크기 또는 단일 인스턴스 크기입니다.|  
   
@@ -156,7 +156,7 @@ ms.locfileid: "74295700"
   
 |||  
 |-|-|  
-|**개체 형식/인스턴스**|유형 이름 또는 개체 인스턴스입니다.|  
+|**개체 형식/인스턴스**|형식 또는 개체 인스턴스의 이름입니다.|  
 |**크기(바이트)**|형식의 경우 형식에 포함된 개체 크기를 제외한 형식의 모든 인스턴스 크기입니다.<br /><br /> 인스턴스의 경우 개체에 포함된 개체 크기를 제외한 개체 크기입니다.|  
 |**포함 크기(바이트)**|포함된 개체의 크기를 비롯한 형식의 총 인스턴스 크기 또는 단일 인스턴스 크기입니다.|  
   
@@ -178,8 +178,8 @@ ms.locfileid: "74295700"
   
 |||  
 |-|-|  
-|**개체 형식**|유형 이름 또는 개체 인스턴스입니다.|  
-|**Count**|기본 스냅숏에 있는 형식의 인스턴스 수입니다. 인스턴스의 경우 **개수**는 항상 1입니다.|  
+|**개체 형식**|형식 또는 개체 인스턴스의 이름입니다.|  
+|**개수**|기본 스냅숏에 있는 형식의 인스턴스 수입니다. 인스턴스의 경우 **개수**는 항상 1입니다.|  
 |**개수 차이**|형식의 경우 기본 스냅숏과 이전 스냅숏 간 형식의 인스턴스 수 차이입니다. 인스턴스의 경우 이 필드는 비어 있습니다.|  
 |**크기(바이트)**|개체에 포함된 개체의 크기를 제외한 기본 스냅숏에 있는 개체의 크기입니다. 형식의 경우 **크기(바이트)** 및 **포함 크기(바이트)** 는 형식 인스턴스의 총 크기입니다.|  
 |**총 크기 차이(바이트)**|형식의 경우 인스턴스에 포함된 개체 크기를 제외한 기본 스냅숏과 이전 스냅숏 간 형식의 총 인스턴스 크기의 차이를 나타냅니다. 인스턴스의 경우 이 필드는 비어 있습니다.|  
@@ -198,8 +198,8 @@ ms.locfileid: "74295700"
   
 |||  
 |-|-|  
-|**개체 형식/인스턴스**|유형 이름 또는 개체 인스턴스입니다.|  
-|**크기(바이트)**|인스턴스의 경우 인스턴스에 포함된 개체 크기를 제외한 기본 스냅숏에 있는 개체의 크기입니다.<br /><br /> 유형의 경우 인스턴스에 포함된 개체 크기를 제외한 기본 스냅샷에 있는 유형의 총 인스턴스 크기입니다.|  
+|**개체 형식/인스턴스**|형식 또는 개체 인스턴스의 이름입니다.|  
+|**크기(바이트)**|인스턴스의 경우 인스턴스에 포함된 개체 크기를 제외한 기본 스냅숏에 있는 개체의 크기입니다.<br /><br /> 형식의 경우 인스턴스에 포함된 개체 크기를 제외한 기본 스냅숏에 있는 형식의 총 인스턴스 크기입니다.|  
 |**포함 크기(바이트)**|개체에 포함된 개체의 크기를 비롯한 기본 스냅숏에 있는 개체의 크기입니다.|  
   
 ## <a name="see-also"></a>참고 항목  
@@ -207,4 +207,4 @@ ms.locfileid: "74295700"
  [앱 성능 분석](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
  [성능 및 진단 도구 실행](https://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
  [C++, C# 및 Visual Basic을 사용하는 Windows 스토어 앱의 성능 모범 사례](https://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
- [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=394706)(Visual Studio에서 새 메모리 사용량 도구로 메모리 문제 진단)
+ [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio](https://blogs.msdn.com/b/visualstudioalm/archive/2014/04/02/diagnosing-memory-issues-with-the-new-memory-usage-tool-in-visual-studio.aspx)(Visual Studio에서 새 메모리 사용량 도구로 메모리 문제 진단)

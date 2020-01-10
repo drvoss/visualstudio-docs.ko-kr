@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 28ea84e4de92ae2cd3bad8b6fea4f9036fd65014
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 5092a2d2a823db6b101ee73d9d5c5dddef5c4526
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298288"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75843996"
 ---
 # <a name="debugging-gpu-code"></a>GPU 코드 디버그
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ GPU(그래픽 처리 장치)에서 실행되는 C++ 코드를 디버깅할 수 �
 2. **현재 Tile을 커서까지 실행** 명령은 현재 타일의 모든 스레드가 커서에 도달할 때까지 애플리케이션을 실행한 다음, 중단됩니다.  
   
 ## <a name="debugging-windows"></a>디버깅 창  
- 특정 디버깅 창을 사용하여 GPU 스레드를 검사하고 플래그를 설정하고 중지할 수 있습니다. 자세한 내용은 다음을 참조하십시오.  
+ 특정 디버깅 창을 사용하여 GPU 스레드를 검사하고 플래그를 설정하고 중지할 수 있습니다. 자세한 내용은  항목을 참조하세요.  
   
 - [병렬 스택 창 사용](../debugger/using-the-parallel-stacks-window.md)  
   
@@ -74,15 +74,15 @@ GPU(그래픽 처리 장치)에서 실행되는 C++ 코드를 디버깅할 수 �
  GPU 코드에서 조건부 중단점이 지원되지만 디바이스에서 일부 식은 계산될 수 없습니다. 식이 디바이스에서 계산될 수 없는 경우 디버거에서 계산됩니다. 디버거는 대개 디바이스보다 느리게 실행됩니다.  
   
 ### <a name="error-there-is-a-configuration-issue-with-the-selected-debugging-accelerator-type"></a>오류: 선택한 디버깅 가속기 형식에 구성 문제가 있습니다.  
- 이 오류는 프로젝트 설정과 디버깅하고 있는 PC의 구성이 일치하지 않는 경우 발생합니다. 자세한 내용은 [ C++ 디버그 구성에 대 한 프로젝트 설정](../debugger/project-settings-for-a-cpp-debug-configuration.md)을 참조 하세요.  
+ 이 오류는 프로젝트 설정과 디버깅하고 있는 PC의 구성이 일치하지 않는 경우 발생합니다. 자세한 내용은 [C++ 디버그 구성에 대한 프로젝트 설정](../debugger/project-settings-for-a-cpp-debug-configuration.md)을 참조하세요.  
   
 ### <a name="error-the-debug-driver-for-the-selected-debugging-accelerator-type-is-not-installed-on-the-target-machine"></a>오류: 선택한 디버깅 가속기 형식용 디버그 드라이버가 대상 컴퓨터에 설치되어 있지 않습니다.  
  이 오류는 원격 PC에서 디버깅하는 경우에 발생합니다. 디버거는 드라이버가 원격 PC에 설치되어 있는지 여부를 런타임까지 확인할 수 없습니다. 드라이버는 그래픽 카드의 제조업체에서 제공합니다.  
   
 ### <a name="error-timeout-detection-and-recovery-tdr-must-be-disabled-at-the-remote-site"></a>오류: 원격 사이트에서 TDR(제한 시간 탐지 및 복구)을 사용하지 않도록 설정해야 합니다.  
- C++ AMP 계산이 Windows TDR(제한 시간 탐지 및 복구)에서 설정된 기본 시간 간격을 초과할 수 있습니다. 이 경우 계산이 취소되고 데이터가 손실됩니다. 자세한 내용은 [Handling TDRs in C++ AMP](https://go.microsoft.com/fwlink/p/?LinkId=249154)를 참조하십시오.  
+ C++ AMP 계산이 Windows TDR(제한 시간 탐지 및 복구)에서 설정된 기본 시간 간격을 초과할 수 있습니다. 이 경우 계산이 취소되고 데이터가 손실됩니다. 자세한 내용은 [Handling TDRs in C++ AMP](https://blogs.msdn.com/b/nativeconcurrency/archive/2012/03/07/handling-tdrs-in-c-amp.aspx)를 참조하십시오.  
   
 ## <a name="see-also"></a>참고 항목  
  [연습: C++ AMP 응용 프로그램  디버그](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)  
  [C++ 디버그 구성을 위한 프로젝트 설정](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
- [Visual Studio에서 GPU 디버깅 시작](https://go.microsoft.com/fwlink/p/?LinkId=255381)
+ [Visual Studio에서 GPU 디버깅 시작](https://blogs.msdn.com/b/nativeconcurrency/archive/2012/03/17/start-gpu-debugging-in-visual-studio-11.aspx)

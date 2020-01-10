@@ -30,12 +30,12 @@ caps.latest.revision: 43
 author: MikeJo5000
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2a2c6e95822794394dbdfc7f53104b31b7c17ea9
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 414022e4e3c058826705845d57de62a9114fc821
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296073"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847516"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Visual Studio에서 디버그하는 동안 호출 스택의 메서드 매핑
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,15 +50,15 @@ ms.locfileid: "74296073"
 
 - Visual C# .NET, Visual Basic .NET, C++, JavaScript, X++ 등 디버그할 수 있는 코드
 
-  참조: [비디오: 코드 맵 디버거 통합으로 시각적으로 디버그 (Channel 9)](https://go.microsoft.com/fwlink/?LinkId=293418) • [호출 스택 매핑](#MapStack) • [코드에 대해 메모 하기](#MakeNotes) • [다음 호출 스택으로 맵 업데이트](#UpdateMap) • 지도 [에 관련 코드 추가](#AddRelatedCode) • 지도를 [사용 하 여 버그 찾기](#FindBugs) • [Q & A](#QA)
+  참조: [비디오: 코드 맵 디버거 통합으로 시각적으로 디버그 (Channel 9)](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012Debug-visually-with-Code-Map-debugger-integration) • [호출 스택 매핑](#MapStack) • [코드에 대해 메모 하기](#MakeNotes) • [다음 호출 스택으로 맵 업데이트](#UpdateMap) • 지도 [에 관련 코드 추가](#AddRelatedCode) • 지도를 [사용 하 여 버그 찾기](#FindBugs) • [Q & A](#QA)
 
-  코드 맵으로 작업할 때 사용할 수 있는 명령 및 작업에 대 한 자세한 내용은 [코드 맵 찾아보기 및 다시 정렬](../modeling/browse-and-rearrange-code-maps.md)을 참조 하세요.
+  명령 및 코드 맵으로 작업할 때 사용할 수 있는 작업의 세부 정보를 참조 하세요 [찾아보기 및 다시 정렬 코드 맵](../modeling/browse-and-rearrange-code-maps.md)합니다.
 
 ## <a name="MapStack"></a> 호출 스택 매핑
 
 1. 디버깅을 시작합니다. (키보드: **F5**)
 
-2. 앱이 중단 모드로 들어가거나 함수를 한 단계씩 실행 한 후 **코드 맵**을 선택 합니다. (키보드: **Ctrl** + **Shift** +  **`** )
+2. 중단 모드를 시작 하는 앱 또는 함수에 단계 후에 선택할 **코드 맵**합니다. (키보드: **Ctrl** + **Shift** +  **`** )
 
      ![코드 맵을 선택 하 여 호출 스택 매핑 시작](../debugger/media/debuggermap-choosecodemap.png "DebuggerMap_ChooseCodeMap")
 
@@ -66,10 +66,10 @@ ms.locfileid: "74296073"
 
      ![코드 맵의 호출 스택 참조](../debugger/media/debuggermap-seeundocallstack.png "DebuggerMap_SeeUndoCallStack")
 
-     디버깅하는 동안 맵이 자동으로 업데이트됩니다. [다음 호출 스택으로 맵 업데이트](#UpdateMap)를 참조 하세요.
+     디버깅하는 동안 맵이 자동으로 업데이트됩니다. 참조 [다음 호출 스택과 함께 맵 업데이트](#UpdateMap)합니다.
 
 ## <a name="MakeNotes"></a> 코드에 대해 메모하기
- 코드 내용을 추적하기 위한 주석을 추가합니다. 주석에서 새 줄을 추가 하려면 **Shift + Return**을 누릅니다.
+ 코드 내용을 추적하기 위한 주석을 추가합니다. 주석에 새 줄을 추가 하려면 다음을 누릅니다 **Shift + Return**합니다.
 
  ![코드 맵의 호출 스택에 주석 추가](../debugger/media/debuggermap-addcomment.png "DebuggerMap_AddComment")
 
@@ -81,7 +81,7 @@ ms.locfileid: "74296073"
 ## <a name="AddRelatedCode"></a> 맵에 관련 코드 추가
  맵이 완성되었습니다. 다음 단계는 무엇입니까? Visual C# .NET 또는 Visual Basic .NET으로 작업하는 경우 코드에서 발생한 사건을 추적하기 위해 필드, 속성 및 기타 메서드 등의 항목을 추가합니다.
 
- 메서드를 두 번 클릭하여 코드 정의를 보거나 메서드에 대한 바로 가기 메뉴를 사용합니다. (키보드: 맵에서 메서드를 선택 하 고 **F12**키를 누릅니다.)
+ 메서드를 두 번 클릭하여 코드 정의를 보거나 메서드에 대한 바로 가기 메뉴를 사용합니다. (키보드: 맵 및 키를 눌러 메서드를 선택 **F12**)
 
  ![코드 맵에서 메서드에 대 한 코드 정의로 이동](../debugger/media/debuggermap-gotocodedefinition.png "DebuggerMap_GoToCodeDefinition")
 
@@ -90,7 +90,7 @@ ms.locfileid: "74296073"
  ![호출 스택 코드 맵에 메서드에 필드 표시](../debugger/media/debuggermap-showfields.png "DebuggerMap_ShowFields")
 
 > [!NOTE]
-> 기본적으로 맵에 항목을 추가하면 클래스, 네임스페이스 및 어셈블리와 같은 부모 그룹 노드도 추가됩니다. 이 방법은 유용 하지만 맵 도구 모음에서 **부모 포함** 단추를 사용 하거나 항목을 추가할 때 **CTRL** 키를 눌러이 기능을 해제 하 여 지도를 단순하게 유지할 수 있습니다.
+> 기본적으로 맵에 항목을 추가하면 클래스, 네임스페이스 및 어셈블리와 같은 부모 그룹 노드도 추가됩니다. 이 유용 하지만, 있습니다 수 맵을 단순하게 유지할 기능을 사용 하 여이 기능을 해제 합니다 **부모 포함** 맵 도구 모음의 단추를 눌러 **CTRL** 항목을 추가할 때.
 
  ![호출 스택 코드 맵의 메서드와 관련 된 필드](../debugger/media/debuggermap-showedfields.png "DebuggerMap_ShowedFields")
 
@@ -115,19 +115,19 @@ ms.locfileid: "74296073"
 
  ![코드 맵의 호출 스택에 새 메서드 호출 추가](../debugger/media/debuggermap-addnewcallforrepaint.png "DebuggerMap_AddNewCallForRepaint")
 
-## <a name="QA"></a> Q&A
+## <a name="QA"></a> Q & A
 
 - **모든 호출이 지도에 표시 되는 것은 아닙니다. 굳이?**
 
-   기본적으로 맵에는 고유한 코드만 나타납니다. 외부 코드를 보려면 **호출 스택** 창에서 설정 합니다.
+   기본적으로 맵에는 고유한 코드만 나타납니다. 외부 코드를 보려면 설정는 **호출 스택** 창:
 
    ![호출 스택 창을 사용 하 여 외부 코드 표시](../debugger/media/debuggermap-callstackmenu.png "DebuggerMap_CallStackMenu")
 
-   또는 Visual Studio 디버깅 옵션에서 **내 코드만 사용** 을 해제 합니다.
+   설정 또는 해제 **내 코드만** Visual Studio 디버깅 옵션에서에서:
 
    ![옵션 대화 상자를 사용 하 여 외부 코드 표시](../debugger/media/debuggermap-debugoptions.png "DebuggerMap_DebugOptions")
 
-- **맵을 변경 하면 코드에 영향을 미칩니까?**
+- **맵을 변경 영향이 코드 있습니까?**
 
    맵 변경은 어떤 방식으로도 코드에 영향을 미치지 않습니다. 맵에서 이름 바꾸기, 이동 또는 제거 기능을 자유롭게 사용할 수 있습니다.
 
@@ -137,29 +137,29 @@ ms.locfileid: "74296073"
 
 - **맵의 레이아웃을 제어 어떻게 할까요?**
 
-   맵 도구 모음에서 **레이아웃** 메뉴를 엽니다.
+   엽니다는 **레이아웃** 맵 도구 모음의 메뉴:
 
   - 기본 레이아웃을 변경합니다.
 
-  - 지도를 자동으로 다시 정렬 하지 않으려면 **디버그할 때 자동으로 레이아웃**을 해제 합니다.
+  - 지도 자동으로 다시 정렬를 중지 하려면 해제 **디버깅 시 자동으로 레이아웃**합니다.
 
-  - 항목을 추가할 때 맵을 최대한 적게 다시 정렬 하려면 **증분 레이아웃**을 해제 합니다.
+  - 항목을 추가할 때 맵을 가능한 적게 다시 정렬 하려면 해제 **증분 레이아웃**합니다.
 
-- **다른 사용자와 지도를 공유할 수 있나요?**
+- **다른 사용자와 맵을 공유할 수 있습니까?**
 
    맵을 내보내고 다른 사용자에게 전송하거나(Microsoft Outlook이 있는 경우) 솔루션에 저장하여 Team Foundation 버전 제어로 체크 인할 수 있습니다.
 
    ![다른 사람과 호출 스택 코드 맵 공유](../debugger/media/debuggermap-sharewithothers.png "DebuggerMap_ShareWithOthers")
 
-- **새 호출 스택이 자동으로 추가 되지 않도록 어떻게 할까요? 지도를 중지 하 시겠습니까?**
+- **맵에 새 호출 스택이 자동으로 추가 중지 하는 방법**
 
-   맵 도구 모음에서 ![코드 맵에 자동으로 호출 스택 표시 단추 &#45; ](../debugger/media/debuggermap-automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon") 를 선택 합니다. 현재 호출 스택을 맵에 수동으로 추가 하려면 **ctrl** + **shift** +  **`** 를 누릅니다.
+   선택할 ![단추 &#45; 자동으로 코드 맵에 표시 호출 스택](../debugger/media/debuggermap-automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon") 맵 도구 모음의 합니다. 현재 호출 스택을 맵에 수동으로 추가 하려면 다음을 누릅니다 **Ctrl** + **Shift** +  **`** 합니다.
 
    디버깅하는 동안 맵은 기존 호출 스택을 맵에 계속해서 강조표시를 합니다.
 
-- **항목 아이콘 및 화살표는 무엇을 의미 하나요?**
+- **항목 아이콘 및 화살표의 의미**
 
-   항목에 대한 자세한 정보를 얻으려면 항목을 마우스 포인터로 가리켜 항목의 도구 설명을 확인합니다. **범례** 에서 각 아이콘의 의미를 확인할 수도 있습니다.
+   항목에 대한 자세한 정보를 얻으려면 항목을 마우스 포인터로 가리켜 항목의 도구 설명을 확인합니다. 찾아볼 수도 있습니다는 **범례** 에 각 아이콘의 의미에 대해 알아봅니다.
 
    ![호출 스택 코드 맵의 모든 아이콘은 무엇을 의미 하나요?](../debugger/media/debuggermap-showlegend.png "DebuggerMap_ShowLegend")
 

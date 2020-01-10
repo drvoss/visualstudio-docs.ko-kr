@@ -13,17 +13,17 @@ caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: a146872561c4be5fe48016c17eb64ad6f854106a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1ef2d51e35a198dbe6da3c1a034dd7c8d1bf8922
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298019"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851021"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Visual Studio 버전 병렬 설치
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-이전 버전이 설치된 컴퓨터에 이 버전의 Visual Studio를 설치할 수 있습니다. 설치 오류가 발생할 경우 문제를 직접 디버그할 수 있도록 [로그 수집 도구](https://go.microsoft.com/fwlink/?LinkId=262077) 를 사용하여 오류에 대한 정보를 수집할 수 있습니다.
+이전 버전이 설치된 컴퓨터에 이 버전의 Visual Studio를 설치할 수 있습니다. 설치 오류가 발생할 경우 문제를 직접 디버그할 수 있도록 [로그 수집 도구](https://www.microsoft.com/download/details.aspx?id=12493) 를 사용하여 오류에 대한 정보를 수집할 수 있습니다.
 
 > [!NOTE]
 > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 버전은 출시 순서대로 설치하는 것이 좋습니다. 예를 들어 Visual Studio 2015를 설치하기 전에 Visual Studio 2013을 설치합니다.
@@ -36,7 +36,7 @@ ms.locfileid: "74298019"
 
 - 둘 이상의 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 버전이 설치된 컴퓨터에서 한 버전을 제거할 경우 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 의 파일 연결이 모든 버전에 대해 제거됩니다. **옵션** 대화 상자의 **환경**, **일반** 페이지에 있는 [파일 연결 복원](../ide/reference/general-environment-options-dialog-box.md) 단추를 사용하여 이 파일 연결을 다시 매핑할 수 있습니다.
 
-- 모든 확장이 호환되는 것은 아니므로 Visual Studio에서는 확장을 자동으로 업그레이드하지 않습니다. [Visual Studio Marketplace](https://go.microsoft.com/fwlink/?LinkId=178891) 또는 소프트웨어 게시자에서 확장을 다시 설치해야 합니다.
+- 모든 확장이 호환되는 것은 아니므로 Visual Studio에서는 확장을 자동으로 업그레이드하지 않습니다. [Visual Studio Marketplace](https://visualstudiogallery.msdn.microsoft.com/) 또는 소프트웨어 게시자에서 확장을 다시 설치해야 합니다.
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>.NET Framework 버전 및 Side-by-Side 설치
 
@@ -51,10 +51,10 @@ ms.locfileid: "74298019"
     |[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]|[프로젝트 디자이너, 애플리케이션 페이지(Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)|
     |Visual C#|[프로젝트 디자이너, 애플리케이션 페이지(C#)](../ide/reference/application-page-project-designer-csharp.md)|
     |Visual F#|[프로젝트 구성](https://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)|
-    |C++|[방법: 대상 프레임워크 및 플랫폼 도구 집합 수정](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)|
+    |C++|[방법: 대상 프레임워크 및 플랫폼 도구 세트 수정](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)|
     |[!INCLUDE[jsprjscript](../includes/jsprjscript-md.md)]|[이전 버전의 공용 언어 런타임에서 JScript 애플리케이션 실행](https://msdn.microsoft.com/bbea51b5-ac03-4e6c-b9a6-f487ef63eda5)|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
 
 - [Visual Studio 설치](../install/install-visual-studio-2015.md)
 - [Visual Studio 프로젝트 포팅, 마이그레이션, 업그레이드](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015)

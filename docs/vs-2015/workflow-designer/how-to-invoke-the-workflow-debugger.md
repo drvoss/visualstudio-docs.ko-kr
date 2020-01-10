@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 13fd54eeebf0323fcb9b8cad6a8cd8b75ae11fb3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e702b402d5350641aa01d341106634efe5f6c6c4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74292894"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849264"
 ---
 # <a name="how-to-invoke-the-workflow-debugger"></a>방법: 워크플로 디버거 호출
 일반적으로 워크플로 디버깅은 다른 Visual Studio 프로그래밍 언어로 작성된 프로그램의 디버깅과 동일합니다. 다음과 같은 방법으로 워크플로 디버거를 시작할 수 있습니다.
@@ -23,7 +23,7 @@ ms.locfileid: "74292894"
 
 - **F5** 키를 눌러 워크플로 인스턴스 실행을 시작 하거나 중단점이 적중 된 후에도 계속 실행 되도록 합니다.
 
-- 원격 디버깅을 사용합니다. 원격 디버깅 사용에 대 한 자세한 내용은 [방법: 원격 디버깅 사용](https://go.microsoft.com/fwlink/?LinkId=196257)을 참조 하세요.
+- 원격 디버깅을 사용합니다. 원격 디버깅 사용에 대 한 자세한 내용은 [방법: 원격 디버깅 사용](https://msdn.microsoft.com/library/febz73k0.aspx)을 참조 하세요.
 
     > [!NOTE]
     > 워크플로 응용 프로그램에서 x86 아키텍처를 대상으로 하 고 64 비트 운영 체제를 실행 하는 컴퓨터에서 호스트 되는 경우 원격 컴퓨터에 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 설치 되지 않았거나 워크플로 응용 프로그램의 대상이 **모든 CPU**로 변경 되지 않으면 원격 디버깅은 작동 하지 않습니다.

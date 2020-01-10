@@ -14,12 +14,12 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e362a61c5ecab78c332eb5e077a02ee4e9e3fa9b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0396d3290ef870fb2c2c7b7b49c774b66397077c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295617"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852222"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>메뉴 항목에 바로 가기 키 바인딩
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,13 +77,13 @@ ms.locfileid: "74295617"
   
    대부분의 경우 두 번째 한정자 없이 **shift** 를 사용 하면 안 됩니다 .이 경우에는 대부분의 영숫자 키에 대문자 또는 기호가 입력 되기 때문입니다.  
   
-   가상 키 코드를 사용 하면 함수 키와 **백스페이스** 키와 같이 연결 된 문자가 없는 특수 키에 액세스할 수 있습니다. 자세한 내용은 [가상 키 코드](https://go.microsoft.com/fwlink/?LinkID=105932)를 참조 하세요.  
+   가상 키 코드를 사용 하면 함수 키와 **백스페이스** 키와 같이 연결 된 문자가 없는 특수 키에 액세스할 수 있습니다. 자세한 내용은 [가상 키 코드](https://msdn2.microsoft.com/library/ms645540.aspx)를 참조 하세요.  
   
    Visual Studio 편집기에서 명령을 사용할 수 있도록 하려면 `editor` 특성을 `guidVSStd97`로 설정 합니다.  
   
    사용자 지정 편집기 에서만 명령을 사용할 수 있도록 하려면 사용자 지정 편집기를 포함 하는 VSPackage를 만들 때 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 패키지 템플릿에서 생성 한 사용자 지정 편집기의 이름 `editor` 특성을 설정 합니다. 이름 값을 찾으려면 `name` 특성이 "`editorfactory`"로 끝나는 `<GuidSymbol>` 노드에 대 한 `<Symbols>` 섹션을 확인 합니다. 사용자 지정 편집기의 이름입니다.  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  이 예제에서는 바로 가기 키 CTRL + ALT + C를 `MyPackage`라는 패키지의 `cmdidMyCommand` 명명 된 명령에 바인딩합니다.  
   
 ```  
@@ -100,7 +100,7 @@ ms.locfileid: "74295617"
 </CommandTable>  
 ```  
   
-## <a name="example"></a>예제  
+## <a name="example"></a>예  
  이 예제에서는 바로 가기 키 CTL + B를 `TestEditor`라는 프로젝트의 `cmdidBold` 명령에 바인딩합니다. 명령은 사용자 지정 편집기 에서만 사용할 수 있으며 다른 편집기에서는 사용할 수 없습니다.  
   
 ```xml  

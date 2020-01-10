@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 2185641d5e3f9facf416e6ea999a1e8dcec0b37b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a22d16606cad7ecbfcf3862d6b7e85b65e7aafe4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294207"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850403"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Visual Studio에서 Azure 클라우드 서비스 또는 가상 머신 디버깅
 
@@ -30,7 +30,7 @@ Azure 컴퓨팅 에뮬레이터를 사용하여 로컬 컴퓨터에서 클라우
 
 ### <a name="to-debug-your-cloud-service-on-your-local-computer"></a>로컬 컴퓨터에서 클라우드 서비스를 디버그 하려면
 
-1. 메뉴 모음에서 **디버그**, **디버깅 시작**을 선택하여 Azure 클라우드 서비스 프로젝트를 실행합니다. F5를 눌러도 디버깅을 시작할 수 있습니다. 컴퓨팅 에뮬레이터가 시작한다는 메시지가 표시됩니다. 에뮬레이터를 시작할 때 시스템 트레이 아이콘을 확인합니다.
+1. 메뉴 항목에서 **디버그**를 선택하고 Azure 클라우드 서비스 프로젝트를 실행하여 **디버깅을 시작**합니다. F5를 눌러도 디버깅을 시작할 수 있습니다. 컴퓨팅 에뮬레이터가 시작한다는 메시지가 표시됩니다. 에뮬레이터를 시작할 때 시스템 트레이 아이콘을 확인합니다.
 
     ![시스템 트레이의 Azure 에뮬레이터](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC783828.png)
 
@@ -50,7 +50,7 @@ Azure 컴퓨팅 에뮬레이터를 사용하여 로컬 컴퓨터에서 클라우
 클라우드 서비스에 원격 디버깅을 사용하면, 성능이 저하되거나 추가 요금이 발생하지 않습니다. 서비스를 사용하는 클라이언트에 악영향을 줄 수 있으므로 원격 디버깅을 프로덕션 서비스에 사용하지 않도록 합니다.
 
 > [!NOTE]
-> Visual Studio에서 클라우드 서비스를 게시할 때 .NET Framework 4 또는 .NET Framework 4.5를 대상으로 하는 서비스의 모든 역할에 대해 **IntelliTrace** 를 사용할 수 있습니다. **IntelliTrace**를 사용하여 이전의 역할 인스턴스에서 발생한 이벤트를 검사하고 그 시점부터 컨텍스트를 재현할 수 있습니다. [IntelliTrace 및 Visual Studio를 사용하여 게시된 클라우드 서비스 디버깅](https://go.microsoft.com/fwlink/?LinkID=623016) 및 [IntelliTrace 사용하기](https://msdn.microsoft.com/library/dd264915.aspx)를 참조하세요.
+> Visual Studio에서 클라우드 서비스를 게시할 때 .NET Framework 4 또는 .NET Framework 4.5를 대상으로 하는 서비스의 모든 역할에 대해 **IntelliTrace** 를 사용할 수 있습니다. **IntelliTrace**를 사용하여 이전의 역할 인스턴스에서 발생한 이벤트를 검사하고 그 시점부터 컨텍스트를 재현할 수 있습니다. [IntelliTrace 및 Visual Studio를 사용하여 게시된 클라우드 서비스 디버깅](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-intellitrace-debug-published-cloud-services?view=vs-2019) 및 [IntelliTrace 사용하기](https://msdn.microsoft.com/library/dd264915.aspx)를 참조하세요.
 
 ### <a name="to-enable-remote-debugging-for-a-cloud-service"></a>클라우드 서비스의 원격 디버깅을 사용하려면
 
@@ -80,9 +80,9 @@ Azure 컴퓨팅 에뮬레이터를 사용하여 로컬 컴퓨터에서 클라우
 
     ![코드 형식 선택 대화 상자](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-4. 디버거가 연결된 프로세스를 확인하려면 메뉴 모음에서 디버그, Windows, 프로세스를 선택하여 프로세스 대화 상자를 엽니다 (키보드: Ctrl + Alt + Z) 특정 프로세스를 분리 하려면 해당 바로 가기 메뉴를 연 다음 **프로세스 분리**를 선택 합니다. 또는, 서버 탐색기에서 인스턴스 노드의 위치를 찾고, 프로세스를 찾고 해당 바로 가기를 열고 **프로세스 분리**를 선택합니다.
+4. 디버거가 연결된 프로세스를 확인하려면 메뉴 모음에서 디버그, Windows, 프로세스를 선택하여 프로세스 대화 상자를 엽니다 (키보드: Ctrl+Alt+Z) 특정 프로세스와 연결을 분리하려면 해당 바로 가기를 열고 **프로세스 분리**를 선택하세요. 또는, 서버 탐색기에서 인스턴스 노드의 위치를 찾고, 프로세스를 찾고 해당 바로 가기를 열고 **프로세스 분리**를 선택합니다.
 
-    ![디버그 프로세스](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC690787.gif)
+    ![프로세스 디버깅](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC690787.gif)
 
 > [!WARNING]
 > 원격 디버깅 시 중단점에서 장시간 중지하지 않도록 합니다. 프로세스가 몇 분간 중지되면 Azure는 응답하지 않는 프로세스로 간주하여 해당 인스턴스에 트래픽 전송을 중지합니다. 너무 오랫동안 중지하는 경우 msvmon.exe가 프로세스에서 분리됩니다.
@@ -98,7 +98,7 @@ Azure SDK 2.3의 원격 디버깅은 다음과 같은 제한 사항이 있습니
 
   * .csdef 파일에 대한 .cscfg 파일의 유효성 검사 오류가 발생했습니다.
     예약된 포트의 범위는 엔드포인트 Microsoft.WindowsAzure.Plugins.RemoteDebugger의 범위입니다. 역할의 커넥터는 이미 정의된 포트 또는 범위를 겹치는 역할입니다.
-  * 할당하지 못했습니다. 나중에 다시 시도하거나, 가상 컴퓨터 사이즈 또는 역할 인스턴스의 수를 줄이거나 다른 지역에 배포해 보십시오.
+  * Allocation failed. 나중에 다시 시도하거나, 가상 컴퓨터 사이즈 또는 역할 인스턴스의 수를 줄이거나 다른 지역에 배포해 보십시오.
 
 ## <a name="debugging-azure-virtual-machines"></a>Azure 가상 머신을 디버깅합니다.
 
@@ -109,7 +109,7 @@ Visual Studio에서 서버 탐색기를 사용하여 Azure 가상 컴퓨터에�
 
 ### <a name="to-debug-an-azure-virtual-machine"></a>Azure 가상 컴퓨터를 디버그하려면
 
-1. 서버 탐색기에서 Virtual Machines 노드를 확장하고 디버그하려는 가상 컴퓨터의 노드를 선택합니다.
+1. 서버 탐색기에서 가상 컴퓨터 노드를 확장하고 디버그하려는 가상 컴퓨터의 노드를 선택합니다.
 
 2. 컨텍스트 메뉴를 열고 **디버깅 사용**을 선택합니다. 가상 머신 상에 디버깅 사용을 확인하는 메시지가 나오면 **예**를 선택합니다.
 
@@ -141,16 +141,16 @@ Visual Studio ASP.NET 프로젝트는 앱 테스트를 위해 사용할 수 있�
 
 1. Visual Studio에서 새 ASP.NET 웹 애플리케이션을 만듭니다.
 
-2. Azure 섹션의 새 ASP.NET 프로젝트 대화 상자에서 드롭 다운 목록 상자의 **가상 머신** 를 선택합니다. **원격 리소스 만들기** 확인란을 선택한 상태로 둡니다. **확인** 을 선택하여 계속합니다.
+2. Azure 섹션의 새 ASP.NET 프로젝트 대화 상자에서 드롭 다운 목록 상자의 **가상 머신** 를 선택합니다. **원격 리소스 생성** 확인란을 선택한 상태로 둡니다. **확인** 을 선택하여 계속합니다.
 
-    **Azure에 가상 컴퓨터 만들기** 대화 상자가 표시됩니다.
+    **Azure에 가상 머신 만들기** 대화 상자가 나타납니다.
 
     ![ASP.NET 웹 프로젝트 만들기 대화 상자](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746723.png)
 
     > [!NOTE]
     > Azure 계정에 아직 로그인하지 않은 경우 로그인하라는 메시지가 표시됩니다.
 
-3. 가상 머신에 대한 다양한 설정을 선택하고 **확인**을 선택합니다. 자세한 내용은 [Virtual Machines](https://go.microsoft.com/fwlink/?LinkId=623033)를 참조하세요.
+3. 가상 머신에 대한 다양한 설정을 선택하고 **확인**을 선택합니다. 자세한 내용은 [Virtual Machines](https://docs.microsoft.com/previous-versions/azure/jj156003(v=azure.100)?redirectedfrom=MSDN)를 참조하세요.
 
     DNS 이름에 입력한 이름이 가상 컴퓨터의 이름이 됩니다.
 
@@ -168,11 +168,11 @@ Visual Studio ASP.NET 프로젝트는 앱 테스트를 위해 사용할 수 있�
 
     ![Azure 활동 로그](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746721.png)
 
-6. [방법: Visual Studio에서 한 번 클릭으로 게시를 사용 하 여 웹 프로젝트 배포](https://msdn.microsoft.com/library/dd465337.aspx)에 설명 된 대로 프로젝트를 게시 합니다. 가상 컴퓨터에 디버그하려고 하므로 **웹 게시** 마법사의 **설정** 페이지에서 **디버그**를 구성으로 선택합니다. 이 작업은 디버깅하는 동안 코드 기호를 사용할 수 있게 해줍니다.
+6. [Visual Studio의 One-Click 게시를 사용하여 웹 프로젝트 배포 방법](https://msdn.microsoft.com/library/dd465337.aspx)을 따라 프로젝트를 게시합니다. 가상 머신에서 디버깅하고자 하므로 **게시 웹** 마법사의 **설정** 페이지에서 구성으로 **디버그**를 선택합니다. 이 작업은 디버깅하는 동안 코드 기호를 사용할 수 있게 해줍니다.
 
     ![게시 설정](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718349.png)
 
-7. 프로젝트를 이미 이전에 배포한 경우 **파일 게시 옵션**에서 **대상에서 추가 파일 제거**를 선택합니다.
+7. 프로젝트가 이전에 이미 배포된 경우, **파일 게시 옵션**에서 **대상에서 추가 파일 제거**를 선택합니다.
 
 8. 서버 탐색기의 가상 머신의 상황에 맞는 메뉴에서 프로젝트를 게시 한 후 **디버거 연결...**
 
@@ -188,6 +188,6 @@ Visual Studio ASP.NET 프로젝트는 앱 테스트를 위해 사용할 수 있�
 
 ## <a name="next-steps"></a>다음 단계
 
-* **IntelliTrace**를 사용하여 릴리스 서버에서 호출 및 이벤트 로그를 수집합니다. [IntelliTrace 및 Visual Studio를 사용하여 게시된 클라우드 서비스 디버깅](https://go.microsoft.com/fwlink/?LinkID=623016)을 참조하세요.
+* **IntelliTrace**를 사용하여 릴리스 서버에서 호출 및 이벤트 로그를 수집합니다. [IntelliTrace 및 Visual Studio를 사용하여 게시된 클라우드 서비스 디버깅](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-intellitrace-debug-published-cloud-services?view=vs-2019)을 참조하세요.
 
-* **Azure Diagnostics**를 이용하여 개발 환경 또는 Azure에서 실행되는 역할 내에서 실행되는 코드의 자세한 내용을 기록합니다. [Azure Diagnostics를 사용하여 로깅 데이터 수집](https://go.microsoft.com/fwlink/p/?LinkId=400450)을 참조하세요.
+* **Azure Diagnostics**를 이용하여 개발 환경 또는 Azure에서 실행되는 역할 내에서 실행되는 코드의 자세한 내용을 기록합니다. [Azure Diagnostics를 사용하여 로깅 데이터 수집](https://msdn.microsoft.com/library/gg433048.aspx)을 참조하세요.

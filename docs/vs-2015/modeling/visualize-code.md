@@ -13,17 +13,17 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 955103b6d28e90321fb45c23825f0c2a25362208
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 9dcb6edf8ce69d48805c3ad8c3c25ef9cc0ed591
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301314"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851352"
 ---
 # <a name="visualize-code"></a>코드 시각화
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio의 시각화 및 모델링 도구를 사용하여 기존 코드를 이해하고 애플리케이션을 설명할 수 있습니다. 이렇게 하면 변경 내용이 코드에 미치는 영향을 시각적으로 알아보고 작업 및 해당 변경 내용으로 인한 위험을 평가할 수 있습니다. 예를 들면 다음과 같습니다.
+Visual Studio의 시각화 및 모델링 도구를 사용하여 기존 코드를 이해하고 애플리케이션을 설명할 수 있습니다. 이렇게 하면 변경 내용이 코드에 미치는 영향을 시각적으로 알아보고 작업 및 해당 변경 내용으로 인한 위험을 평가할 수 있습니다. 예를 들면 다음과 같습니다.:
 
 - 코드의 관계를 이해하려면 해당 관계를 시각적으로 매핑합니다.
 
@@ -50,9 +50,9 @@ Visual Studio의 시각화 및 모델링 도구를 사용하여 기존 코드를
 
 |**범주**|**링크**|
 |------------------|---------------|
-|**포럼**|-   [Visual Studio 시각화 및 모델링 도구](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio 시각화 및 모델링 SDK(DSL 도구)](https://go.microsoft.com/fwlink/?LinkId=184721)|
-|**블로그**|[Visual Studio ALM + Team Foundation Server 블로그](https://go.microsoft.com/fwlink/?LinkID=201340)|
-|**기술 문서 및 저널**|[MSDN 아키텍처 포럼](https://go.microsoft.com/fwlink/?LinkId=201343)|
+|**포럼**|-   [Visual Studio 시각화 및 모델링 도구](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Visual Studio 시각화 및 모델링 SDK(DSL 도구)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
+|**Blogs**|[Visual Studio ALM + Team Foundation Server 블로그](https://blogs.msdn.com/b/visualstudioalm)|
+|**기술 문서 및 저널**|[MSDN 아키텍처 포럼](https://msdn.microsoft.com/architecture/default.aspx)|
 
 ## <a name="see-also"></a>참고 항목
  [시나리오: 시각화 및 모델링을 사용 하 여 디자인 변경](../modeling/scenario-change-your-design-using-visualization-and-modeling.md) [아키텍처 분석 및 모델링 아키텍처 모델](../modeling/analyze-and-model-your-architecture.md) [만들기](../modeling/create-models-for-your-app.md) [사용자 요구 사항](../modeling/model-user-requirements.md) [모델 앱 아키텍처](../modeling/model-your-app-s-architecture.md) [사용 개발 프로세스에서 모델 사용](../modeling/use-models-in-your-development-process.md)

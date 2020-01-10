@@ -12,19 +12,19 @@ ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b6dc84dd8d9f19012c4d09ba9bfd974ec181b9f6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6192eb5583e7d0bc37518e995aacccad643cc9ec
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291269"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850345"
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>연습: 기본 격리 셸 응용 프로그램 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 연습에서는 격리 된 셸 솔루션을 만들고, 도구 창에 대 한 도움말을 사용자 지정 하 고, 격리 된 셸을 설치 하는 설치 프로그램을 만드는 방법을 보여 줍니다.  
   
-## <a name="prerequisites"></a>필수 조건  
+## <a name="prerequisites"></a>전제 조건  
  이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)를 참조 하세요. 격리 된 셸을 배포 하려면 Visual Studio Shell (격리) 재배포 가능 패키지도 사용 해야 합니다.  
   
 ## <a name="creating-an-isolated-shell-solution"></a>격리 셸 솔루션 만들기  
@@ -115,7 +115,7 @@ ms.locfileid: "74291269"
   
 2. 다음 줄의 주석 처리를 제거 합니다.  
   
-     [$RootKey $ \Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
+     [$RootKey$\Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
   
 3. 솔루션을 다시 빌드하고 격리 된 셸 디버깅을 시작 합니다. XML 파일 (예: \MyVSShellStub\MyVSShellStub\MyVSShellStubUI\MyVSShellStubUI.vsct.)을 엽니다. 파일의 XML 키워드에 색이 지정 되지 않고 줄에 "<"을 입력 해도 XML 도구 설명이 표시 되지 않는지 확인 합니다.  
   
@@ -163,7 +163,7 @@ ms.locfileid: "74291269"
 6. 솔루션을 다시 빌드하고 격리 된 셸 디버깅을 시작 합니다. 도움말/정보 상자는 대략 사각형 이어야 합니다.  
   
 ## <a name="before-you-deploy-the-isolated-shell-application"></a>격리 된 셸 응용 프로그램을 배포 하기 전에  
- 격리 된 셸 응용 프로그램은 Visual Studio Shell (격리) 재배포 가능 패키지가 있는 모든 컴퓨터에 설치할 수 있습니다. 재배포 가능 패키지에 대 한 자세한 내용은 [Visual Studio 확장성 다운로드](https://go.microsoft.com/fwlink/?LinkID=119298) 웹 사이트를 참조 하세요.  
+ 격리 된 셸 응용 프로그램은 Visual Studio Shell (격리) 재배포 가능 패키지가 있는 모든 컴퓨터에 설치할 수 있습니다. 재배포 가능 패키지에 대 한 자세한 내용은 [Visual Studio 확장성 다운로드](https://msdn.microsoft.com/vstudio/bb984878.aspx) 웹 사이트를 참조 하세요.  
   
 ## <a name="deploying-the-isolated-shell-application"></a>격리 된 셸 응용 프로그램 배포  
  설치 프로젝트를 만들어 대상 컴퓨터에 격리 된 셸 응용 프로그램을 배포 합니다. 다음 항목을 지정 해야 합니다.  

@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 06edf9954134a6110f9285fc744c87c2696b19d5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2e48039a618f7e8eef7f2c6e9f097da87e37d0f5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298271"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847781"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce 및 Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Authenticode *는 업계 표준 암호화를 사용 하 여 응용 프로그램 
 ## <a name="authenticode-and-code-signing"></a>Authenticode 및 코드 서명  
  *디지털 인증서* 란 인증서가 발급된 게시자 및 인증서를 발급한 기관에 대해 설명하는 메타데이터와 함께 퍼블릭/퍼블릭 암호화 키 쌍을 포함하는 파일입니다.  
   
- 다양한 유형의 Authenticode 인증서가 있습니다. 각 인증서는 서로 다른 서명 유형에 맞게 구성되어 있습니다. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 애플리케이션의 경우 코드 서명을 위한 유효한 Authenticode 인증서가 반드시 필요합니다. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 애플리케이션에 다른 유형의 인증서(예: 디지털 전자 메일 인증서)로 서명하려고 시도하면 작동하지 않습니다. 자세한 내용은 [코드 서명 소개](https://go.microsoft.com/fwlink/?LinkId=179452)를 참조하세요.  
+ 다양한 유형의 Authenticode 인증서가 있습니다. 각 인증서는 서로 다른 서명 유형에 맞게 구성되어 있습니다. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 애플리케이션의 경우 코드 서명을 위한 유효한 Authenticode 인증서가 반드시 필요합니다. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 애플리케이션에 다른 유형의 인증서(예: 디지털 전자 메일 인증서)로 서명하려고 시도하면 작동하지 않습니다. 자세한 내용은 [코드 서명 소개](https://msdn.microsoft.com/library/ms537361.aspx)를 참조하세요.  
   
  세 가지 방법 중 하나로 코드 서명을 위한 인증서를 가져올 수 있습니다.  
   
@@ -65,7 +65,7 @@ Authenticode *는 업계 표준 암호화를 사용 하 여 응용 프로그램 
   
 - 애플리케이션을 제거하고 유효한 인증서로 새 버전을 다시 설치합니다.  
   
-- 인증서를 업데이트하는 명령줄 어셈블리를 만듭니다. 이 프로세스에 대한 단계별 정보는 [Microsoft 지원 문서 925521](https://go.microsoft.com/fwlink/?LinkId=179454)에서 찾을 수 있습니다.  
+- 인증서를 업데이트하는 명령줄 어셈블리를 만듭니다. 이 프로세스에 대한 단계별 정보는 [Microsoft 지원 문서 925521](https://support.microsoft.com/kb/925521)에서 찾을 수 있습니다.  
   
 ### <a name="storing-certificates"></a>인증서 저장  
   

@@ -12,27 +12,27 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1fc94b1fcb2529b41f1c74e2c6bfb9758171669
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 30d6652480318898e1528a6f2bb61b84621636d6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334056"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848746"
 ---
-# <a name="save-data-in-project-files"></a>프로젝트 파일에서 데이터를 저장 합니다.
-프로젝트 하위 형식 저장 하 고 프로젝트 파일에서 하위 형식의 특정 데이터를 검색할 수 있습니다. 관리 패키지 프레임 워크 (MPF)는이 작업을 수행 하는 두 가지 인터페이스를 제공 합니다.
+# <a name="save-data-in-project-files"></a>프로젝트 파일에 데이터 저장
+프로젝트 하위 형식에서 프로젝트 파일의 하위 형식 관련 데이터를 저장 하 고 검색할 수 있습니다. MPF (관리 되는 패키지 프레임 워크)는이 작업을 수행 하는 두 가지 인터페이스를 제공 합니다.
 
-- 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> 인터페이스의 액세스 속성 값을 허용 합니다 **MSBuild** 프로젝트 파일의 섹션입니다. 제공 하는 메서드 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> 로드 하거나 저장 된 사용자가 관련된 데이터를 빌드할 때마다 사용자가 호출할 수 있습니다.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> 인터페이스를 사용 하면에서 프로젝트 파일의 **MSBuild** 섹션에 있는 속성 값에 액세스할 수 있습니다. 사용자가 빌드 관련 데이터를 로드 하거나 저장 해야 할 때마다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>에서 제공 하는 메서드를 호출할 수 있습니다.
 
-- <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> 자유 형식 xml에서 비 빌드 관련된 데이터를 유지 하는 데 사용 됩니다. 제공 하는 메서드 <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> 이 호출한 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 때마다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 아닌 빌드 프로젝트 파일의 관련된 데이터를 유지 해야 합니다.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>는 비 빌드 관련 데이터를 자유 형식 XML로 유지 하는 데 사용 됩니다. <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>에서 제공 하는 메서드는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로젝트 파일에 비 빌드 관련 데이터를 유지 해야 할 때마다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]에 의해 호출 됩니다.
 
-  빌드 및 비 빌드 관련된 데이터를 유지 하는 방법에 대 한 자세한 내용은 참조 하세요. [MSBuild 프로젝트 파일에서 데이터를 유지할](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)합니다.
+  빌드 및 비 빌드 관련 데이터를 유지 하는 방법에 대 한 자세한 내용은 [MSBuild 프로젝트 파일에 데이터 보관](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)을 참조 하세요.
 
-## <a name="save-and-retrieve-build-related-data"></a>빌드 관련된 데이터 저장 및 검색
+## <a name="save-and-retrieve-build-related-data"></a>빌드 관련 데이터 저장 및 검색
 
-### <a name="to-save-a-build-related-data-in-the-project-file"></a>프로젝트 파일에서 데이터 관련 빌드를 저장 하려면
+### <a name="to-save-a-build-related-data-in-the-project-file"></a>프로젝트 파일에 빌드 관련 데이터를 저장 하려면
 
-- 호출 된 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> 프로젝트 파일의 전체 경로 저장 하는 방법입니다.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> 메서드를 호출 하 여 프로젝트 파일의 전체 경로를 저장 합니다.
 
     ```
     private SpecializedProject project;
@@ -45,9 +45,9 @@ ms.locfileid: "66334056"
         (uint)_PersistStorageType.PST_PROJECT_FILE, newFullPath));
     ```
 
-### <a name="to-retrieve-build-related-data-from-the-project-file"></a>빌드를 검색할 프로젝트 파일에서 데이터를 관련
+### <a name="to-retrieve-build-related-data-from-the-project-file"></a>프로젝트 파일에서 빌드 관련 데이터를 검색 하려면
 
-- 호출 된 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetPropertyValue%2A> 프로젝트 파일의 전체 경로 검색 하는 방법입니다.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetPropertyValue%2A> 메서드를 호출 하 여 프로젝트 파일의 전체 경로를 검색 합니다.
 
     ```
     private SpecializedProject project;
@@ -60,11 +60,11 @@ ms.locfileid: "66334056"
         (uint)_PersistStorageType.PST_PROJECT_FILE, out fullPath));
     ```
 
-## <a name="save-and-retrieve-non-build-related-data"></a>저장 하 고 비 빌드 관련된 데이터를 검색 합니다.
+## <a name="save-and-retrieve-non-build-related-data"></a>빌드와 관련 되지 않은 데이터 저장 및 검색
 
-### <a name="to-save-non-build-related-data-in-the-project-file"></a>저장 되지 않은 빌드 관련 프로젝트 파일의 데이터
+### <a name="to-save-non-build-related-data-in-the-project-file"></a>프로젝트 파일에 비 빌드 관련 데이터를 저장 하려면
 
-1. 구현 된 <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.IsFragmentDirty%2A> XML 조각을 마지막으로 변경 되었는지 여부를 결정 하는 메서드는 현재 파일에 저장 합니다.
+1. XML 조각이 현재 파일에 마지막으로 저장 된 후에 변경 되었는지 여부를 확인 하는 <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.IsFragmentDirty%2A> 메서드를 구현 합니다.
 
     ```
     public int IsFragmentDirty(uint storage, out int pfDirty)
@@ -94,7 +94,7 @@ ms.locfileid: "66334056"
     }
     ```
 
-2. 구현 된 <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> 프로젝트 파일에 XML 데이터를 저장 하는 방법입니다.
+2. <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> 메서드를 구현 하 여 XML 데이터를 프로젝트 파일에 저장 합니다.
 
     ```
     public int Save(ref Guid guidFlavor, uint storage, out string pbstrXMLFragment, int fClearDirty)
@@ -143,9 +143,9 @@ ms.locfileid: "66334056"
     }
     ```
 
-### <a name="to-retrieve-non-build-related-data-in-the-project-file"></a>프로젝트 파일에서 비 빌드 관련된 데이터를 검색 하려면
+### <a name="to-retrieve-non-build-related-data-in-the-project-file"></a>프로젝트 파일에서 비 빌드 관련 데이터를 검색 하려면
 
-1. 구현 된 <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.InitNew%2A> 프로젝트 확장 속성 및 기타 빌드에 관계 없이 데이터를 초기화 하는 방법입니다. 이 메서드는 프로젝트 파일에 있는 XML 구성 데이터가 없는 경우에 호출 됩니다.
+1. <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.InitNew%2A> 메서드를 구현 하 여 프로젝트 확장 속성 및 기타 빌드 독립적인 데이터를 초기화 합니다. 이 메서드는 프로젝트 파일에 XML 구성 데이터가 없는 경우에 호출 됩니다.
 
     ```
     public int InitNew(ref Guid guidFlavor, uint storage)
@@ -161,7 +161,7 @@ ms.locfileid: "66334056"
         return VSConstants.S_OK;
     ```
 
-2. 구현 된 <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> 프로젝트 파일에서 XML 데이터를 로드 하는 방법입니다.
+2. 프로젝트 파일에서 XML 데이터를 로드 하는 <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> 메서드를 구현 합니다.
 
     ```
     public int Load(ref Guid guidFlavor, uint storage, string pszXMLFragment)
@@ -206,7 +206,7 @@ ms.locfileid: "66334056"
     ```
 
 > [!NOTE]
-> 이 항목에서 제공 하는 모든 코드 예는에서 더 큰 예제의 부분 [VSSDK 샘플](https://aka.ms/vs2015sdksamples)합니다.
+> 이 [항목에서 제공](https://github.com/Microsoft/VSSDK-Extensibility-Samples)하는 모든 코드 예제는 더 큰 예제의 구성 요소입니다.
 
-## <a name="see-also"></a>참고자료
-- [MSBuild 프로젝트 파일의 데이터를 유지 합니다.](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)
+## <a name="see-also"></a>참조
+- [MSBuild 프로젝트 파일에 데이터 보관](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

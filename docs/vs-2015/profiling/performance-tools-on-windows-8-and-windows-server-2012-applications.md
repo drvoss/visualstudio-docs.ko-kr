@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c65561f9a9a2ca287232b7a61bb0e07ca07a769d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a2fa9581d94b3b70ca427c292c147562a11d55a4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299659"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847992"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 및 Windows Server 2012 애플리케이션의 성능 도구
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,9 +100,9 @@ Windows 8 및 Windows Server 2012의 강화된 보안 기능을 위해 Visual St
   
  Visual Studio가 설치되지 않은 디바이스에서 애플리케이션을 프로파일링하려면 다음 중 하나를 수행합니다.  
   
-- [MSDN 웹 사이트](https://go.microsoft.com/fwlink/?LinkID=219549)에서 Visual Studio용 원격 도구의 일부로 도구를 다운로드합니다.  
+- [MSDN 웹 사이트](https://www.microsoft.com/visualstudio/eng#downloads+d-additional-software)에서 Visual Studio용 원격 도구의 일부로 도구를 다운로드합니다.  
   
-- Visual Studio 컴퓨터에서 독립 실행형 프로파일러 도구 설치 프로그램을 복사하여 실행합니다. 설치 프로그램은 *%VSInstallDir%* **\Team Tools\Performance Tools\Setups** 폴더에 있습니다. 원격 컴퓨터의 운영 체제(x86/x64)용 설치 프로그램을 선택합니다.  
+- Visual Studio 컴퓨터에서 독립 실행형 프로파일러 도구 설치 프로그램을 복사하여 실행합니다. 설치 프로그램은 *% VSInstallDir%* **\stoststststststststststystststyst** 원격 컴퓨터의 운영 체제(x86/x64)용 설치 프로그램을 선택합니다.  
   
 > [!NOTE]
 > TIP 프로파일링 데이터를 수집하려면 원격 컴퓨터에 Visual Studio 컴퓨터의 독립 실행형 프로파일러를 설치해야 합니다.  
@@ -138,11 +138,11 @@ Windows 8 및 Windows Server 2012의 강화된 보안 기능을 위해 Visual St
   
    원격 머신에서 계층 상호 작용 데이터를 수집하려면 **vs\_profiler\_** _\<Platform>_ **\_** _\<Language>_ **.exe** 파일을 Visual Studio 머신의 _%VSInstallDir_ **%\Team Tools\Performance Tools\Setups** 폴더에서 원격 컴퓨터로 복사하여 설치해야 합니다. [Visual Studio 원격 도구](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) 다운로드 패키지의 프로파일링 도구를 사용할 수 없습니다.  
   
-   [VSPerfCmd](../profiling/vsperfcmd.md) 또는 [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) 를 사용하여 프로파일링 데이터를 수집할 수 있습니다.  
+   [VSPerfCmd](../profiling/vsperfcmd.md) 또는 [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md)를 사용하여 프로파일링 데이터를 수집할 수 있습니다.  
   
    **TIP 보고서**  
   
-   계층 상호 작용 데이터는 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] 또는 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] IDE에서만 볼 수 있습니다. [VSPerfReport](../profiling/vsperfreport.md)를 통한 파일 기반 계층 상호 작용 보고서를 사용할 수 없습니다.  
+   계층 상호 작용 데이터는 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] 또는 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] IDE에서만 볼 수 있습니다. [VSPerfReport](../profiling/vsperfreport.md) 를 통한 파일 기반 계층 상호 작용 보고서를 사용할 수 없습니다.  
   
 ## <a name="see-also"></a>참고 항목  
  [성능 탐색기](../profiling/performance-explorer.md)   

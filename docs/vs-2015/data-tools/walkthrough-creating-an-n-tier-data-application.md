@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bd77006eda03b716e3c54c0b5b52ac633a383377
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 195a3a36b53e5f84f6052a15e01007bb5ed77fac
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299594"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844195"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>연습: N 계층 데이터 애플리케이션 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ N 계층 * 데이터 응용 프로그램은 데이터에 액세스 하 고 여�
 
  N 계층 애플리케이션의 여러 계층을 분리하는 방법 중 하나는 애플리케이션에 포함할 각 계층에 대해 개별 프로젝트를 만드는 것입니다. 형식화된 데이터 세트에는 생성된 데이터 세트 및 `DataSet Project` 코드를 포함해야 하는 프로젝트를 결정하는 `TableAdapter` 속성이 포함됩니다.
 
- 이 연습에서는 `TableAdapter`데이터 세트 디자이너**를 사용하여 데이터 세트 및**  코드를 개별 클래스 라이브러리 프로젝트로 분리하는 방법을 보여줍니다. 데이터 집합 및 TableAdapter 코드를 분리 한 후에는 [Visual Studio 서비스에서 Windows Communication Foundation Services 및 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) 를 만들어 데이터 액세스 계층을 호출 합니다. 마지막으로 Windows Forms 애플리케이션을 표시 계층으로 만듭니다. 이 계층은 데이터 서비스에서 데이터에 액세스합니다.
+ 이 연습에서는 **데이터 세트 디자이너**를 사용하여 데이터 세트 및 `TableAdapter` 코드를 개별 클래스 라이브러리 프로젝트로 분리하는 방법을 보여줍니다. 데이터 집합 및 TableAdapter 코드를 분리 한 후에는 [Visual Studio 서비스에서 Windows Communication Foundation Services 및 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) 를 만들어 데이터 액세스 계층을 호출 합니다. 마지막으로 Windows Forms 애플리케이션을 표시 계층으로 만듭니다. 이 계층은 데이터 서비스에서 데이터에 액세스합니다.
 
  이 연습에서는 다음 단계를 수행합니다.
 
@@ -53,9 +53,9 @@ N 계층 * 데이터 응용 프로그램은 데이터에 액세스 하 고 여�
 
 - 데이터 테이블을 채우는 코드를 작성합니다.
 
-  ![비디오에 연결](../data-tools/media/playvideo.gif "링크 playvideo 보려면") 이 항목의 비디오 버전은 [비디오 방법: N 계층 데이터 응용 프로그램 만들기](https://go.microsoft.com/fwlink/?LinkId=115188)를 참조 하세요.
+  ![비디오에 연결](../data-tools/media/playvideo.gif "동영상 재생") 이 항목의 비디오 버전은 [비디오 방법: N 계층 데이터 응용 프로그램 만들기](https://msdn2.microsoft.com/library/cc178916.aspx)를 참조 하세요.
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>전제 조건
  이 연습을 완료하려면 다음 사항이 필요합니다.
 
 - Northwind 샘플 데이터베이스에 대한 액세스.
@@ -361,7 +361,7 @@ N 계층 * 데이터 응용 프로그램은 데이터에 액세스 하 고 여�
  서비스는 Customers 및 Orders 테이블에서 데이터를 반환하므로 maxReceivedMessageSize의 기본값은 데이터를 저장하는 데 충분하지 않기 때문에 값을 늘려야 합니다. 이 연습에서는 값을 6553600으로 변경합니다. 클라이언트에서 값을 변경하면 서비스 참조가 자동으로 업데이트됩니다.
 
 > [!NOTE]
-> 기본값이 작은 이유는 DoS(서비스 거부) 공격에 대한 노출을 제한하기 위해서입니다. 자세한 내용은 <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>을 참조하세요.
+> 기본값이 작은 이유는 DoS(서비스 거부) 공격에 대한 노출을 제한하기 위해서입니다. 자세한 내용은 <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>를 참조하세요.
 
 #### <a name="to-increase-the-maxreceivedmessagesize-value"></a>maxReceivedMessageSize 값을 늘리려면
 

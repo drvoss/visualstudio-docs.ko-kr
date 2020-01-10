@@ -61,12 +61,12 @@ ms.assetid: c0e12b0a-8009-4a4a-979f-c804a91a5d9b
 caps.latest.revision: 11
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d0865e06c5abb5faccce51a2bc38bb223f7fa3eb
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: eec40bc584e831f8b43b79c9bc7cee5a48a291aa
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299276"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850968"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>편집하며 계속하기의 오류 및 경고(C#)
 Visual C# 편집하며 계속하기에서 허용되지 않는 코드의 섹션을 편집했습니다.  
@@ -75,7 +75,7 @@ Visual C# 편집하며 계속하기에서 허용되지 않는 코드의 섹션�
   
  클래스의 공용 구조체에 영향을 주는 선언 코드 편집은 일반적으로 금지되며, 클래스 내의 private 선언, 속성 본문 또는 메서드에 대한 일부 편집이 허용되지 않습니다. 편집하며 계속하기에서는 편집할 수 없는 코드를 가능한 경우 항상 연한 회색으로 표시하고 오류 메시지를 표시합니다.  
   
- [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)]에 대 한 편집 하며 계속 하기에서 지원 되는 편집에 대 한 자세한 내용은 [지원 되는 코드C#변경 ()](../debugger/supported-code-changes-csharp.md)을 참조 하세요. 특정 오류 또는 경고에 대한 자세한 정보가 필요한 경우 MSDN [Visual C# IDE 포럼](https://go.microsoft.com/fwlink/?LinkId=214693)에서 검색하거나 질문을 게시할 수 있습니다.  
+ [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)]에 대 한 편집 하며 계속 하기에서 지원 되는 편집에 대 한 자세한 내용은 [지원 되는 코드C#변경 ()](../debugger/supported-code-changes-csharp.md)을 참조 하세요. 특정 오류 또는 경고에 대한 자세한 정보가 필요한 경우 MSDN [Visual C# IDE 포럼](https://social.msdn.microsoft.com/Forums/en-US/csharpide/threads)에서 검색하거나 질문을 게시할 수 있습니다.  
   
 ### <a name="to-correct-this-error"></a>이 오류를 해결하려면  
   

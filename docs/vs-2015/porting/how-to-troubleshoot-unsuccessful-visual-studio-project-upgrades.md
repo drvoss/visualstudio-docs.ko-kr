@@ -18,17 +18,17 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 16232a72cd37f8d1d68760f032b6050e0bdf74c5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 65059e285777e48633da5eb7e8723e3997f37dfa
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300359"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844444"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>방법: 실패한 Visual Studio 프로젝트 업그레이드 문제 해결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-때때로 Visual Studio는 이전 버전의 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 프로젝트를 완전히 전환할 수 없습니다. 다음 섹션의 팁으로 특정 문제를 해결할 수 없는 경우 TechNet [Wiki: 개발 포털](https://go.microsoft.com/fwlink/?LinkId=254808)에서 자세한 정보를 찾을 수 있습니다.
+때때로 Visual Studio는 이전 버전의 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]에서 프로젝트를 완전히 전환할 수 없습니다. 다음 섹션의 팁으로 특정 문제를 해결할 수 없는 경우 TechNet [Wiki: 개발 포털](https://social.technet.microsoft.com/wiki/contents/articles/706.wiki-development-portal.aspx#Visual_Studio)에서 자세한 정보를 찾을 수 있습니다.
 
 ## <a name="the-project-does-not-run-because-files-are-not-found"></a>파일이 없으므로 프로젝트가 실행 되지 않습니다.
  프로젝트 파일에는 F5를 누를 때 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]가 프로젝트를 실행하기 위해 사용하는 하드 코드된 파일이 포함되어 있습니다. 이러한 경로에는 devenv.exe 및 기타 필수 파일의 위치가 포함 될 수 있습니다. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 업그레이드 버전에서 이러한 파일의 경로는 변경이 가능할 수 있습니다.

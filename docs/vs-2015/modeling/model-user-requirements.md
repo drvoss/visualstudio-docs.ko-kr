@@ -13,12 +13,12 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f27fede436ea6cabe0aab6480cd4841299c42293
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 3d70a7c8b7dbf6015e992cfabb5204f3b307238a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302798"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844911"
 ---
 # <a name="model-user-requirements"></a>사용자 요구 사항 모델링
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
 ## <a name="common-tasks"></a>일반 작업
  사용자 요구 사항의 여러 가지 뷰를 만들 수 있습니다.  각 뷰는 특정 유형의 정보를 제공합니다.  이러한 뷰를 만들 때는 뷰 간에 자주 이동하는 것이 좋습니다. 임의 뷰에서 시작할 수 있습니다.
 
-|다이어그램 또는 문서|요구 사항 모델에서 설명하는 항목|섹션|
+|다이어그램 또는 문서|요구 사항 모델에서 설명하는 항목|단원|
 |-------------------------|-----------------------------------------------|-------------|
 |사용 사례 다이어그램|시스템 사용자 및 수행하는 작업입니다.|[시스템이 사용 되는 방식 설명](#UseCases)|
 |개념적 클래스 다이어그램|요구 사항을 설명하는 데 사용되는 형식 용어집으로, 형식은 시스템 인터페이스에 표시됩니다.|[요구 사항을 설명 하는 데 사용 되는 용어 정의](#RequirementsClasses)|
@@ -138,12 +138,12 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
 |개념적 클래스 다이어그램의 요소|[UML 클래스 다이어그램: 참조](../modeling/uml-class-diagrams-reference.md)|
 |개념적 클래스에서 코드를 개발하는 방법|[앱의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)|
 
- 개념적 클래스 다이어그램에서 연결에 화살표를 배치하여 검색성을 나타내는 것은 일반적으로 유용하지 않습니다. 다이어그램이 구현을 나타내지 않기 때문입니다. 연결은 실제 개체 간의 관계를 나타냅니다. 다음 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장에서는 비방향 화살표가 기본값으로 설정됩니다. [샘플: UML 도메인 모델링 기능](https://go.microsoft.com/fwlink/?LinkId=213849).
+ 개념적 클래스 다이어그램에서 연결에 화살표를 배치하여 검색성을 나타내는 것은 일반적으로 유용하지 않습니다. 다이어그램이 구현을 나타내지 않기 때문입니다. 연결은 실제 개체 간의 관계를 나타냅니다. 다음 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장에서는 비방향 화살표가 기본값으로 설정됩니다. [샘플: UML 도메인 모델링 기능](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
 ## <a name="BusinessRules"></a> Showing Business Rules
  비즈니스 규칙은 특정 사용 사례와 연결되지 않은 요구 사항이며 시스템 전체에서 관찰되어야 합니다.
 
- 대부분의 비즈니스 규칙은 개념적 클래스 간의 관계에 대한 제약 조건입니다. 이러한 *정적 비즈니스 규칙* 을 개념적 클래스 다이어그램의 관련 클래스와 연결 된 주석으로 작성할 수 있습니다. 예를 들면 다음과 같습니다.
+ 대부분의 비즈니스 규칙은 개념적 클래스 간의 관계에 대한 제약 조건입니다. 이러한 *정적 비즈니스 규칙* 을 개념적 클래스 다이어그램의 관련 클래스와 연결 된 주석으로 작성할 수 있습니다. 예를 들면 다음과 같습니다.:
 
  ![Order 클래스에 첨부 된 주석의 규칙입니다.](../modeling/media/uml-reqmcd2.png "UML_ReqmCD2")
 
@@ -188,11 +188,11 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
 ## <a name="Workflow"></a>사용자와 시스템 간의 작업 흐름 표시
  동작 다이어그램을 사용하여 서로 다른 사용 사례 간의 작업 흐름을 표시할 수 있습니다. 대체로 사용자가 시스템 내부 및 외부에서 수행하는 주요 작업을 표시하는 동작 다이어그램을 그려 요구 사항 모델을 시작하는 것이 유용합니다.
 
- 예를 들면 다음과 같습니다.
+ 예를 들면 다음과 같습니다.:
 
  ![세 개의 작업과 루프가 있는 활동입니다.](../modeling/media/uc-reqmwfact.png "UC_ReqmWFAct")
 
- 사용 사례 다이어그램 및 동작 다이어그램을 그려 동일한 정보의 서로 다른 뷰를 표시할 수 있습니다.  사용 사례 다이어그램은 큰 동작 내의 작은 동작 중첩을 표시하는 데 더 효과적이지만 작업 흐름을 표시하지 않습니다. 예를 들면 다음과 같습니다.
+ 사용 사례 다이어그램 및 동작 다이어그램을 그려 동일한 정보의 서로 다른 뷰를 표시할 수 있습니다.  사용 사례 다이어그램은 큰 동작 내의 작은 동작 중첩을 표시하는 데 더 효과적이지만 작업 흐름을 표시하지 않습니다. 예를 들면 다음과 같습니다.:
 
  ![이전 작업에 대 한 사용 사례](../modeling/media/uml-reqmwfuc.png "UML_ReqmWFUC")
 
@@ -209,7 +209,7 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
 ## <a name="Sequences"></a>사용자와 시스템 간의 상호 작용 표시
  시퀀스 다이어그램을 사용하여 시스템과 외부 행위자 간 또는 시스템 파트 간의 메시지 교환을 표시할 수 있습니다. 이렇게 하면 상호 작용 시퀀스를 명확하게 표시하는 사용 사례의 단계 뷰가 제공됩니다. 시퀀스 다이어그램은 사용 사례에 상호 작용하는 여러 대상이 있고 시스템에 API가 있는 경우에 특히 유용합니다.
 
- 예를 들면 다음과 같습니다.
+ 예를 들면 다음과 같습니다.:
 
  ![시스템 및 행위자를 사용 하는 시퀀스 다이어그램입니다.](../modeling/media/uml-reqmseq.png "UML_ReqmSeq")
 
@@ -239,4 +239,4 @@ Visual Studio는 사용자 동작 및 목표 달성을 위해 시스템이 수�
   다양한 다이어그램에서 제공하는 뷰 간의 관계를 검사하면 사용자 작업에 사용되는 주요 개념을 빠르게 이해하고 사용자가 시스템에서 필요한 사항을 이해하도록 도울 수 있습니다. 이해 관계자가 가장 확신하지 못하는 요구 사항을 더 효과적으로 파악할 수 있습니다. 프로젝트의 초기 단계에서 적어도 간소화된 형태로 이러한 기능의 개발을 계획하여 사용자가 실험하도록 할 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
- [Uml 모델 및 다이어그램 편집](../modeling/edit-uml-models-and-diagrams.md) [모델에서 테스트](../modeling/develop-tests-from-a-model.md) [를 사용](../modeling/use-models-in-your-development-process.md) 하 여 모델을 사용 합니다. [응용 프로그램의 아키텍처](../modeling/model-your-app-s-architecture.md) [샘플](https://go.microsoft.com/fwlink/?LinkId=213849) vs 확장: [스테레오 타입 별](https://go.microsoft.com/fwlink/?LinkID=213841) Uml 요소 모델링 샘플 vs 확장: uml [요소를 다이어그램, 파일 및 기타 요소에 연결](https://go.microsoft.com/fwlink/?LinkID=213813) 샘플 vs 확장: [uml 다이어그램에서 셰이프 맞춤](https://go.microsoft.com/fwlink/?LinkID=213809) [비디오: 비즈니스 도메인 모델링](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)
+ [Uml 모델 및 다이어그램 편집](../modeling/edit-uml-models-and-diagrams.md) [모델에서 테스트](../modeling/develop-tests-from-a-model.md) [를 사용](../modeling/use-models-in-your-development-process.md) 하 여 모델을 사용 합니다. [응용 프로그램의 아키텍처](../modeling/model-your-app-s-architecture.md) [샘플](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) vs 확장: [스테레오 타입 별](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) Uml 요소 모델링 샘플 vs 확장: uml [요소를 다이어그램, 파일 및 기타 요소에 연결](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) 샘플 vs 확장: [uml 다이어그램에서 셰이프 맞춤](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [비디오: 비즈니스 도메인 모델링](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)

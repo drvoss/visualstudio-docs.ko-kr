@@ -1,5 +1,5 @@
 ---
-title: Visual Studio에서 계층 구조 | Microsoft Docs
+title: Visual Studio의 계층 구조 Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,28 +11,28 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29eb35e807c467b64a89f48705c555d4083ceef7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 08005b69a1af16b07212cb29547875fad89e1d6a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328848"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848947"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Visual Studio의 계층 구조
-합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 로 프로젝트를 표시 하는 통합된 개발 환경 (IDE)를 *계층*합니다. IDE에서 계층은 각 노드에 연결 된 속성 집합에 있는 노드의 트리입니다. A *계층 프로젝트* 은 프로젝트의 항목, 항목의 관계 및 항목의 관련된 속성 및 명령을 포함 하는 컨테이너입니다.
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (통합 개발 환경)는 프로젝트를 *계층 구조로*표시 합니다. IDE에서 계층은 노드 트리로, 각 노드에는 연관 된 속성 집합이 있습니다. *프로젝트 계층 구조* 는 프로젝트의 항목, 항목의 관계 및 항목의 관련 속성 및 명령을 포함 하는 컨테이너입니다.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], 계층 인터페이스를 사용 하 여 프로젝트 계층 구조를 관리할 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>합니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> 인터페이스 명령을 표준 명령 처리기 대신 적절 한 계층 구조 창에 프로젝트 항목에서 호출을 리디렉션합니다.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]에서는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>계층 인터페이스를 사용 하 여 프로젝트 계층 구조를 관리 합니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> 인터페이스는 프로젝트 항목에서 호출 하는 명령을 표준 명령 처리기 대신 적절 한 계층 창으로 리디렉션합니다.
 
 ## <a name="project-hierarchies"></a>프로젝트 계층 구조
- 각 프로젝트 계층 확인 및 편집할 수 있는 항목을 포함 합니다. 이러한 항목 프로젝트 유형에 따라 달라 집니다. 예를 들어, 데이터베이스 프로젝트를 저장된 프로시저, 데이터베이스 뷰 및 데이터베이스 테이블을 포함할 수 있습니다. 반면, 프로그래밍 언어 프로젝트를 소스 파일 및 비트맵 및 대화 상자에 대 한 리소스 파일 가능성이 포함 됩니다. 제공 하는 몇 가지 추가 유연성을 프로젝트 계층 구조를 만들 때 계층 중첩 될 수 있습니다.
+ 각 프로젝트 계층에는 보고 편집할 수 있는 항목이 포함 되어 있습니다. 이러한 항목은 프로젝트 형식에 따라 달라 집니다. 예를 들어 데이터베이스 프로젝트에는 저장 프로시저, 데이터베이스 뷰 및 데이터베이스 테이블이 포함 될 수 있습니다. 반면, 프로그래밍 언어 프로젝트에는 비트맵 및 대화 상자에 대 한 소스 파일 및 리소스 파일이 포함 될 가능성이 높습니다. 계층은 중첩 될 수 있으므로 프로젝트 계층 구조를 만들 때 유연성을 추가할 수 있습니다.
 
- 새 프로젝트 형식을 만들면 프로젝트 형식에 편집할 수 있는 항목의 전체 집합을 제어 합니다. 그러나 프로젝트는 없는 편집 지원 항목을 포함할 수 있습니다. 예를 들어, 시각적 개체 C++ 프로젝트에도 Visual HTML 파일을 포함할 수 있습니다 C++ HTML 파일 형식에 대 한 모든 사용자 지정된 편집기를 제공 하지 않습니다.
+ 새 프로젝트 형식을 만들면 프로젝트 형식에서 편집할 수 있는 전체 항목 집합을 제어 합니다. 그러나 프로젝트에는 편집 지원이 없는 항목이 포함 될 수 있습니다. 예를 들어 시각적 C++ 개체는 html 파일 형식에 대해 사용자 지정 C++ 된 편집기를 제공 하지 않더라도 visual 프로젝트에 html 파일을 포함할 수 있습니다.
 
- 계층에 포함 된 항목의 지 속성을 관리 합니다. 계층의 구현 계층 내에서 항목의 지 속성에 영향을 주는 모든 특수 속성을 제어 해야 합니다. 예를 들어, 항목 파일 대신 저장소에서 개체를 나타내면 계층 구현에서는 해당 개체의 지 속성을 제어 해야 합니다. 자체 IDE 사용자 입력에 따라 항목을 저장 하는 계층 구조를 전달 하지만 IDE는 해당 항목을 저장 하는 데 필요한 모든 작업을 제어 하지 않습니다. 대신, 컨트롤에서 프로젝트가 있습니다.
+ 계층은 포함 된 항목의 지 속성을 관리 합니다. 계층 구조를 구현 하려면 계층 내에 있는 항목의 지 속성에 영향을 주는 특수 속성을 제어 해야 합니다. 예를 들어 항목이 파일 대신 리포지토리에 있는 개체를 나타내는 경우 계층 구조 구현은 해당 개체의 지 속성을 제어 해야 합니다. IDE 자체는 계층에서 사용자 입력에 대 한 준수 항목을 저장 하도록 지시 하지만 IDE는 해당 항목을 저장 하는 데 필요한 작업을 제어 하지 않습니다. 대신 프로젝트를 제어 합니다.
 
- 사용자가 편집기에서 항목을 열면, 해당 항목을 제어 하는 계층 선택한 활성 계층이 있습니다. 선택한 계층 항목에서 작동 하려면 사용 가능한 명령의 집합을 결정 합니다. 이 방식으로 사용자 포커스 추적 사용자의 현재 컨텍스트를 반영 하 여 계층을 사용 하도록 설정 합니다.
+ 사용자가 편집기에서 항목을 열면 해당 항목을 제어 하는 계층이 선택 되 고 활성 계층이 됩니다. 선택한 계층은 항목에 대해 작업을 수행할 수 있는 명령 집합을 결정 합니다. 이러한 방식으로 사용자 포커스를 추적 하면 계층 구조에서 사용자의 현재 컨텍스트를 반영할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 - [프로젝트 형식](../../extensibility/internals/project-types.md)
 - [IDE의 선택 및 통화](../../extensibility/internals/selection-and-currency-in-the-ide.md)
-- [VSSDK 샘플](https://aka.ms/vs2015sdksamples)
+- [가 나 진한 샘플](https://github.com/Microsoft/VSSDK-Extensibility-Samples)

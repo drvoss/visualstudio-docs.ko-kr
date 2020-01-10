@@ -1,5 +1,5 @@
 ---
-title: '개발 모범 사례: Office의 COM, VSTO & VBA 추가 기능'
+title: '개발 모범 사례: Office의 COM, VSTO, & VBA 추가 기능'
 ms.date: 07/25/2017
 ms.topic: conceptual
 dev_langs:
@@ -11,15 +11,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 35b39aef2865f0438e6165bd6bf2c5418e8fbcb0
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 24cc456058f4a87426261ce53fbecb2d919d6a2d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254640"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846356"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Office의 COM, VSTO 및 VBA 추가 기능에 대 한 개발 모범 사례
-  Office 용 COM, VSTO 또는 VBA 추가 기능을 개발 하는 경우이 문서에 설명 된 개발 모범 사례를 따릅니다.   이렇게 하면 다음을 보장할 수 있습니다.
+  Office 용 COM, VSTO 또는 VBA 추가 기능을 개발 하는 경우이 문서에 설명 된 개발 모범 사례를 따릅니다.   이렇게 하면 다음과 같은 이점을 얻을 수 있습니다.
 
 - 다양 한 버전 및 Office 배포에서 추가 기능의 호환성
 - 사용자 및 IT 관리자에 대 한 추가 기능 배포의 복잡성이 줄어듭니다.
@@ -31,7 +31,7 @@ ms.locfileid: "71254640"
  추가 기능 설치 프로세스 중에 Office가 설치 되었는지 여부를 추가 기능에서 감지 하지 않는 것이 좋습니다. Office가 설치 되지 않은 경우 추가 기능을 설치할 수 있습니다. 그러면 Office가 설치 된 후에 사용자가 해당 추가 기능에 액세스할 수 있습니다.
 
 ## <a name="use-embedded-interop-types-nopia"></a>포함 된 Interop 형식 사용 (NoPIA)
-솔루션이 .NET 4.0 이상 버전을 사용 하는 경우 Office PIA (주 Interop 어셈블리) 재배포 가능 패키지에 의존 하지 않고 포함 된 interop 형식 (NoPIA)을 사용 합니다. 형식 포함을 사용 하면 솔루션의 설치 크기를 줄이고 이후 버전과의 호환성을 보장 합니다. Office 2010는 PIA 재배포 가능 패키지가 제공 된 최신 버전의 Office입니다. 자세한 내용은 [연습: Microsoft Office 어셈블리](https://msdn.microsoft.com/library/ee317478.aspx) 의 형식 정보를 포함 하 고 [동등성 및 포함 된 interop 형식의](/windows/uwp/porting/desktop-to-uwp-root)형식 정보를 포함 합니다.
+솔루션이 .NET 4.0 이상 버전을 사용 하는 경우 Office PIA (주 Interop 어셈블리) 재배포 가능 패키지에 의존 하지 않고 포함 된 interop 형식 (NoPIA)을 사용 합니다. 형식 포함을 사용 하면 솔루션의 설치 크기를 줄이고 이후 버전과의 호환성을 보장 합니다. Office 2010는 PIA 재배포 가능 패키지가 제공 된 최신 버전의 Office입니다. 자세한 내용은 [연습: Microsoft Office 어셈블리의 형식 정보 포함](https://msdn.microsoft.com/library/ee317478.aspx) 및 [동일 형식 및 포함 된 interop 형식](/windows/uwp/porting/desktop-to-uwp-root)을 참조 하세요.
 
 솔루션에서 이전 버전의 .NET을 사용 하는 경우 .NET 4.0 이상을 사용 하도록 솔루션을 업데이트 하는 것이 좋습니다. .NET 4.0 이상을 사용 하면 최신 버전의 Windows에 대 한 런타임 필수 구성 요소가 줄어듭니다.
 
@@ -46,7 +46,7 @@ VBA 코드를 작성 하는 경우 64 비트 safe 선언 문을 사용 하 고 �
 ## <a name="support-restricted-environments"></a>제한 된 환경 지원
 사용자의 솔루션에는 사용자 계정 권한 상승이 나 관리자 권한이 필요 하지 않습니다. 또한 솔루션은 설정 또는 변경에 의존 하지 않아야 합니다.
 
-- 현재 작업 디렉터리입니다.
+- 현재 작업 디렉터리.
 - DLL 로드 디렉터리입니다.
 - 경로 변수입니다.
 
@@ -61,7 +61,7 @@ VBA 코드를 작성 하는 경우 64 비트 safe 선언 문을 사용 하 고 �
 
 Office 클라이언트 응용 프로그램에 대 한 지원 문을 제공 하려면 (예: Word 또는 Excel) 먼저 현재 Office 릴리스에서 추가 기능이 실행 되는지 확인 한 다음 추가 기능이 이후 버전에서 중단 되는 경우 업데이트 제공을 커밋합니다. Microsoft에서 새 빌드 또는 Office 업데이트를 릴리스할 때 추가 기능을 테스트할 필요가 없습니다. Microsoft는 Office에서 COM, VSTO 및 VBA 확장성 플랫폼을 거의 변경 하지 않으며 이러한 변경 내용은 잘 설명 되어 있습니다.
 
->중요: Microsoft는 준비 보고서에 대해 지원 되는 추가 기능 목록 및 ISV 연락처 정보를 유지 관리 합니다. 추가 기능 목록을 보려면을 참조 [https://aka.ms/readyforwindows](https://aka.ms/readyforwindows)하십시오.
+>중요: Microsoft는 준비 보고서에 대해 지원 되는 추가 기능 목록과 ISV 연락처 정보를 유지 관리 합니다. 추가 기능을 나열 하려면 [https://docs.microsoft.com/configmgr/desktop-analytics/ready-for-windows](https://docs.microsoft.com/configmgr/desktop-analytics/ready-for-windows)를 참조 하세요.
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>프로세스 모니터를 사용 하 여 설치 또는 로드 문제를 디버깅할 수 있습니다.
 설치 또는 로드 하는 동안 추가 기능에 호환성 문제가 있는 경우 파일 또는 레지스트리 액세스와 관련 된 문제가 있을 수 있습니다. [프로세스 모니터](/sysinternals/downloads/procmon) 또는 유사한 디버깅 도구를 사용 하 여 문제를 식별 하는 데 도움이 되도록 작업 환경에 대 한 동작을 기록 하 고 비교 합니다.

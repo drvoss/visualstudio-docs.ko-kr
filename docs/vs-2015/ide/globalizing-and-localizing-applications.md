@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 84828024e19d731c3de7db0859aa3b2033379a49
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1121058d38d129b417cbd79b685e5bd549353a7c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74290323"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845248"
 ---
 # <a name="globalizing-and-localizing-applications"></a>응용 프로그램 전역화 및 지역화
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,9 +38,9 @@ ms.locfileid: "74290323"
  [응용 프로그램 전역화](../ide/globalizing-applications.md) 여러 문화권을 지 원하는 응용 프로그램을 만들기 위한 페이지에 대 한 링크를 제공 합니다.
 
 ## <a name="related-sections"></a>관련 섹션
- [앱 세계화 (JavaScript 및 HTML을 사용 하는 Windows 스토어 앱)](https://go.microsoft.com/fwlink/?LinkId=258266) JavaScript 및 HTML을 사용 하 여 빌드한 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱을 전역화 하 고 지역화 하는 데 도움이 되는 방법 항목 및 지침을 포함 합니다.
+ [앱 세계화 (JavaScript 및 HTML을 사용 하는 Windows 스토어 앱)](https://msdn.microsoft.com/library/windows/apps/hh465006.aspx) JavaScript 및 HTML을 사용 하 여 빌드한 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱을 전역화 하 고 지역화 하는 데 도움이 되는 방법 항목 및 지침을 포함 합니다.
 
- [앱 세계화 (/Sb/C++ 및 xaml C#을 사용 하는 Windows 스토어 앱)](https://go.microsoft.com/fwlink/?LinkId=258267) 는 XAML 및 시각적 C#개체, Visual Basic 또는 시각적 개체 C++를 사용 하 여 빌드된 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱을 전역화 하 고 지역화 하는 데 도움이 되는 방법 항목 및 지침을 포함 합니다.
+ [앱 세계화 (/Sb/C++ 및 xaml C#을 사용 하는 Windows 스토어 앱)](https://msdn.microsoft.com/library/windows/apps/xaml/Hh965328(v=win.10).aspx) 는 XAML 및 시각적 C#개체, Visual Basic 또는 시각적 개체 C++를 사용 하 여 빌드된 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 앱을 전역화 하 고 지역화 하는 데 도움이 되는 방법 항목 및 지침을 포함 합니다.
 
  [세계 시장 대응성 응용 프로그램 개발을 위한 모범 사례](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) 국제적 사용자를 위한 프로그래밍에 대 한 배경 정보를 제공 합니다.
 

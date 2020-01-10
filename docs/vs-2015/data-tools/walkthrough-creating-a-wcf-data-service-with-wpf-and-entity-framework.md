@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5abbb647f93c991d2de626a84e82f47e03f6f71e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4d825e625313febfa67cfb85f6a9c6bccb7f3608
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299613"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844280"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>연습: WPF 및 Entity Framework를 사용하여 WCF 데이터 서비스 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,12 +40,12 @@ ms.locfileid: "74299613"
 
 - 필요한 경우 애플리케이션에 필터링 기능을 추가합니다.
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>전제 조건
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.
 
 - Northwind 샘플 데이터베이스
 
-     이 데이터베이스가 개발 컴퓨터에 없는 경우 [Microsoft 다운로드 센터](https://go.microsoft.com/fwlink/?LinkID=98088)에서 다운로드할 수 있습니다. 지침은 [샘플 데이터베이스 다운로드](https://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5)를 참조 하세요.
+     이 데이터베이스가 개발 컴퓨터에 없는 경우 [Microsoft 다운로드 센터](https://www.microsoft.com/downloads)에서 다운로드할 수 있습니다. 지침은 [샘플 데이터베이스 다운로드](https://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5)를 참조 하세요.
 
 ## <a name="creating-the-service"></a>서비스 만들기
  [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]를 만들려면 웹 프로젝트를 추가하고 [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]을 만든 다음 이 모델에서 서비스를 만듭니다.
@@ -238,7 +238,7 @@ ms.locfileid: "74299613"
 
 1. **솔루션 탐색기**에서 **Form1.vb** 또는 **Form1.cs** 노드의 바로 가기 메뉴를 열고 **열기**를 선택합니다.
 
-2. <xref:System.Windows.Forms.TextBox>도구 상자<xref:System.Windows.Forms.Button>에서 **컨트롤 및** 컨트롤을 폼에 추가합니다.
+2. <xref:System.Windows.Forms.Button>도구 상자**에서 <xref:System.Windows.Forms.TextBox> 컨트롤 및**  컨트롤을 폼에 추가합니다.
 
 3. <xref:System.Windows.Forms.Button> 컨트롤에 대 한 바로 가기 메뉴를 열고 **코드 보기**를 선택한 후 `Button1_Click` 이벤트 처리기에서 다음 코드를 추가 합니다.
 

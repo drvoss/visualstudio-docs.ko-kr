@@ -11,17 +11,17 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 695cbeaba5a108c61b5e81078a9651c0df9237f5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7290ba820c9b678e0b87bdbeaadf9c025162e8ae
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299807"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844470"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-플랫폼 간 모바일 개발용 Visual C++를 사용하여 iOS 코드를 편집 및 디버깅하고 iOS 시뮬레이터 또는 iOS 디바이스에 배포할 수 있지만 라이선스 제한으로 인해 Mac에서 코드를 빌드하고 원격으로 실행해야 합니다. Visual Studio를 사용하여 iOS 앱을 빌드 및 실행하려면 Mac에서 원격 에이전트 [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)를 설정 및 구성해야 합니다. 원격 에이전트는 Visual Studio의 빌드 요청을 처리하고 Mac에 연결된 iOS 디바이스 또는 Mac의 iOS 시뮬레이터에서 앱을 실행합니다.  
+플랫폼 간 모바일 개발용 Visual C++를 사용하여 iOS 코드를 편집 및 디버깅하고 iOS 시뮬레이터 또는 iOS 디바이스에 배포할 수 있지만 라이선스 제한으로 인해 Mac에서 코드를 빌드하고 원격으로 실행해야 합니다. Visual Studio를 사용하여 iOS 앱을 빌드 및 실행하려면 Mac에서 원격 에이전트 [vcremote](https://www.npmjs.com/package/vcremote)를 설정 및 구성해야 합니다. 원격 에이전트는 Visual Studio의 빌드 요청을 처리하고 Mac에 연결된 iOS 디바이스 또는 Mac의 iOS 시뮬레이터에서 앱을 실행합니다.  
   
 > [!NOTE]
 > Mac이 아닌 클라우드에서 호스트되는 Mac 서비스를 사용하는 방법에 대한 자세한 내용은 [Build and Simulate iOS in the Cloud](https://taco.visualstudio.com/docs/build_ios_cloud/)를 참조하세요. 지침은 Visual Studio Tools for Apache Cordova를 사용한 빌드에 해당합니다. 플랫폼 간 모바일 개발용 Visual C++를 사용한 빌드 지침을 사용하려면 vs-mda-remote를 vcremote로 대체합니다.  
@@ -78,7 +78,7 @@ ms.locfileid: "74299807"
      `sudo npm install -g npm@latest`  
   
 ## <a name="Install"></a> iOS용 원격 에이전트 설치  
- 플랫폼 간 모바일 개발용 Visual C++를 설치하는 경우 Visual Studio는 Mac에서 실행되는 원격 에이전트인 [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)와 통신하여 파일을 전송하고, iOS 앱을 빌드 및 실행하고, 디버깅 명령을 보낼 수 있습니다.  
+ 플랫폼 간 모바일 개발용 Visual C++를 설치하는 경우 Visual Studio는 Mac에서 실행되는 원격 에이전트인 [vcremote](https://www.npmjs.com/package/vcremote)와 통신하여 파일을 전송하고, iOS 앱을 빌드 및 실행하고, 디버깅 명령을 보낼 수 있습니다.  
   
  원격 에이전트를 설치하기 전에 [필수 조건](#Prerequisites) 을 충족하고 [플랫폼 간 모바일 개발용 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#InstallTheTools)를 설치했는지 확인합니다.  
   
@@ -240,4 +240,4 @@ ms.locfileid: "74299807"
      여기서 *config_file_path* 는 JSON 형식의 구성 파일 경로입니다. 시작 옵션과 해당 값에 대시가 포함되어서는 안 됩니다.  
   
 ## <a name="see-also"></a>참고 항목  
- [플랫폼 간 모바일 개발용 Visual C++ 설치](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+ [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

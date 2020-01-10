@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb8da704832031d69156eee8863b689e7956f025
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: faa0cf18bfd9810d84e01028b3f787b3b2c99578
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295957"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844738"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: 연결에 StringBuilder를 사용하십시오.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,4 +45,4 @@ Visual Studio에 대 한 최신 설명서는 [DA0001:를 사용](https://docs.mi
 ## <a name="how-to-investigate-a-warning"></a>경고를 조사하는 방법  
  [오류 목록] 창에서 메시지를 두 번 클릭하여 샘플링 프로필 데이터의 [함수 정보 뷰](../profiling/function-details-view.md)로 이동합니다. 문자열 연결을 가장 자주 사용하는 프로그램 섹션을 찾습니다. 빈번한 문자열 연결 작업을 포함하여 복잡한 문자열 조작에 StringBuilder 클래스를 사용합니다.  
   
- 문자열 사용 방법에 대한 자세한 내용은 Microsoft Patterns and Practices 라이브러리에서 [5장 - 관리 코드 성능 향상](https://go.microsoft.com/fwlink/?LinkId=177816)의 [문자열 작업](https://go.microsoft.com/fwlink/?LinkId=177817) 섹션을 참조하세요.
+ 문자열 사용 방법에 대한 자세한 내용은 Microsoft Patterns and Practices 라이브러리에서 [5장 - 관리 코드 성능 향상](https://msdn.microsoft.com/library/ms998547.aspx)의 [문자열 작업](https://msdn.microsoft.com/library/ms998547.aspx#scalenetchapt05_topic26) 섹션을 참조하세요.

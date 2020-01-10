@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e17e29e36be5636662e6105a05446a9cbe0aa724
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 791e2e077ebd2ed3e97aecd4c7c6e52316b4fe3b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301187"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845295"
 ---
 # <a name="customizing-copy-behavior"></a>복사 동작 사용자 지정
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,13 +46,13 @@ ms.locfileid: "74301187"
  **복사, 잘라내기 및 붙여넣기를 사용 하거나 사용 하지 않도록 설정 합니다.**
 DSL 탐색기에서 **편집기** 노드의 **붙여넣기 설정 복사** 속성을 설정 합니다.
 
- **동일한 대상에 링크를 복사 합니다.** 예를 들어 복사 된 주석 상자를 동일한 subject 요소에 연결 합니다.
+ **동일한 대상에 링크를 복사 합니다.** 복사한 주석 상자를 같은 주제 요소에 연결하는 경우를 예로 들 수 있습니다.
 **복사 대상 링크만 전파**하도록 역할의 **전파 복사** 속성을 설정 합니다. 자세한 내용은 [링크 복사 동작 사용자 지정](#customizeLinks)을 참조 하세요.
 
  연결된 요소를 복사합니다. 예를 들어 새 요소를 복사하면 연결된 주석 상자의 복사본도 만들어집니다.
 역할의 **전파 복사** 속성을 설정 하 여 **링크 및 반대 역할 수행자에 복사를 전파**합니다. 자세한 내용은 [링크 복사 동작 사용자 지정](#customizeLinks)을 참조 하세요.
 
- **복사 및 붙여넣기를 통해 요소를 빠르게 복제 합니다.** 일반적으로 방금 복사한 항목은 계속 선택 되며 동일한 형식의 요소를 붙여 넣을 수 없습니다.
+ **복사 및 붙여넣기를 통해 요소를 빠르게 복제 합니다.** 일반적으로는 방금 복사한 항목이 계속 선택되어 있으며 같은 형식의 요소를 해당 항목에 붙여넣을 수는 없습니다.
 요소 병합 지시문을 도메인 클래스에 추가하고 부모 클래스로 병합을 전달하도록 설정합니다. 이 작업의 효과는 끌기 작업에서도 동일합니다. 자세한 내용은 [요소 만들기 및 이동 사용자 지정](../modeling/customizing-element-creation-and-movement.md)을 참조 하세요.
 
  \- 또는 -
@@ -77,7 +77,7 @@ partial class MyDslClipboardCommandSet
 
 ```
 
- **사용자가 선택한 대상에 붙여넣을 때 추가 링크를 만듭니다.** 예를 들어 주석 상자를 요소에 붙여 넣는 경우 두 항목 사이에 링크가 만들어집니다.
+ **사용자가 선택한 대상에 붙여넣을 때 추가 링크를 만듭니다.** 예를 들어 주석 상자를 요소에 붙여넣으면 상자와 요소 간에 링크가 작성됩니다.
 요소 병합 지시문을 대상 도메인 클래스에 추가하고 링크를 추가하여 병합을 처리하도록 설정합니다. 이 작업의 효과는 끌기 작업에서도 동일합니다. 자세한 내용은 [요소 만들기 및 이동 사용자 지정](../modeling/customizing-element-creation-and-movement.md)을 참조 하세요.
 
  \- 또는 -
@@ -91,7 +91,7 @@ DslPackage 프로젝트에서 *Mydsl*`ClipboardCommandSet.ProcessOnMenuCopyComma
 DslPackage 프로젝트에서 *Mydsl*`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()`를 재정의 합니다.
 
  **복사 및 붙여넣기를 통해 모양 레이아웃을 유지 합니다.**
-사용자가 여러 모양을 복사할 때 모양이 붙여넣기되는 상대 위치를 보존할 수 있습니다. 이 기법은 [VMSDK: 회로 다이어그램 샘플](https://go.microsoft.com/fwlink/?LinkId=213879)의 예제에 설명 되어 있습니다.
+사용자가 여러 모양을 복사할 때 모양이 붙여넣기되는 상대 위치를 보존할 수 있습니다. 이 기법은 [VMSDK: 회로 다이어그램 샘플](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)의 예제에 설명 되어 있습니다.
 
  이 결과를 얻으려면 복사한 ElementGroupPrototype에 모양과 연결선을 추가합니다. 재정의 시 가장 편리한 메서드는 ElementOperations.CreateElementGroupPrototype()입니다. 이렇게 하려면 Dsl 프로젝트에 다음 코드를 추가합니다.
 
@@ -148,7 +148,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **선택한 위치 (예: 현재 커서 위치)에 모양을 붙여넣습니다.**
-사용자가 여러 모양을 복사할 때 모양이 붙여넣기되는 상대 위치를 보존할 수 있습니다. 이 기법은 [VMSDK: 회로 다이어그램 샘플](https://go.microsoft.com/fwlink/?LinkId=213879)의 예제에 설명 되어 있습니다.
+사용자가 여러 모양을 복사할 때 모양이 붙여넣기되는 상대 위치를 보존할 수 있습니다. 이 기법은 [VMSDK: 회로 다이어그램 샘플](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)의 예제에 설명 되어 있습니다.
 
  이 결과를 얻으려면 `ClipboardCommandSet.ProcessOnMenuPasteCommand()`의 위치별 버전을 사용하도록 `ElementOperations.Merge()`를 재정의합니다. 이렇게 하려면 DslPackage 프로젝트에 다음 코드를 추가합니다.
 
@@ -564,4 +564,4 @@ namespace Company.MyDsl
 ```
 
 ## <a name="see-also"></a>참고 항목
- [요소 만들기 및 이동 사용자 지정](../modeling/customizing-element-creation-and-movement.md) [방법: 끌어서 놓기 처리기 추가](../modeling/how-to-add-a-drag-and-drop-handler.md) [삭제 동작 사용자 지정](../modeling/customizing-deletion-behavior.md) [샘플: VMSDK 회로 다이어그램 샘플](https://go.microsoft.com/fwlink/?LinkId=213879)
+ [요소 만들기 및 이동 사용자 지정](../modeling/customizing-element-creation-and-movement.md) [방법: 끌어서 놓기 처리기 추가](../modeling/how-to-add-a-drag-and-drop-handler.md) [삭제 동작 사용자 지정](../modeling/customizing-deletion-behavior.md) [샘플: VMSDK 회로 다이어그램 샘플](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)

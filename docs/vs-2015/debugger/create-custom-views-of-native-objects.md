@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a510c522723cf991c7a3fff21542a069a3de000a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 63390672b246add079806c68a23b69f0e0132c2d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299493"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850201"
 ---
 # <a name="create-custom-views-of-native-objects"></a>네이티브 개체의 사용자 지정 뷰 만들기
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Visual Studio Natvis 프레임워크를 사용하면 Visual Studio에서 **조�
 ## <a name="BKMK_Why_create_visualizations_"></a> Natvis 시각화를 만드는 이유는 무엇인가요?  
  만든 형식에 대한 시각화 규칙을 Natvis 프레임워크를 사용하여 만들면 개발자가 디버그 중 형식을 쉽게 확인할 수 있습니다.  
 
- 예를 들어 아래 이미지에는 사용자 지정 시각화가 적용되지 않은 상태로 디버거에 표시되는 [Windows::UI::Xaml::Controls::TextBox](https://go.microsoft.com/fwlink/?LinkId=258422) 형식의 변수가 나와 있습니다.  
+ 예를 들어 아래 이미지에는 사용자 지정 시각화가 적용되지 않은 상태로 디버거에 표시되는 [Windows::UI::Xaml::Controls::TextBox](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textbox.aspx) 형식의 변수가 나와 있습니다.  
 
  ![텍스트 상자 기본 시각화](../debugger/media/dbg-natvis-textbox-default.png "DBG_NATVIS_TextBox_Default")  
 
@@ -171,7 +171,7 @@ Visual Studio Natvis 프레임워크를 사용하면 Visual Studio에서 **조�
 
 3. 사용자가 변수 창에서 확장할 경우 형식 멤버가 표시되는 모양( `Expand` 노드)  
 
-   **템플릿 클래스** `Name` 요소의 `Type` 특성은 별표 `*` 를 템플릿 클래스 이름에 사용할 수 있는 와일드카드 문자로 허용합니다.  
+   **템플릿 클래스**`Name` 요소의 `Type` 특성은 별표 `*` 를 템플릿 클래스 이름에 사용할 수 있는 와일드카드 문자로 허용합니다.  
 
 ```xml  
 <Type Name="ATL::CAtlArray&lt;*&gt;">  
@@ -196,7 +196,7 @@ Visual Studio Natvis 프레임워크를 사용하면 Visual Studio에서 **조�
 </Type>  
 ```  
 
- `Inheritable`의 기본값은 `true`입니다.  
+ `Inheritable` 의 기본값은 `true`입니다.  
 
 #### <a name="priority-attribute"></a>Priority 특성  
  `Priority` 특성은 정의를 구문 분석하지 못하는 경우 대체 정의가 사용되는 순서를 지정합니다. `Priority` 의 가능한 값은 `Low`, `MediumLow`,`Medium`, `MediumHigh`, `High`이며 기본값은 `Medium`입니다.  
@@ -224,7 +224,7 @@ Visual Studio Natvis 프레임워크를 사용하면 Visual Studio에서 **조�
 ```  
 
 #### <a name="BKMK_Versioning"></a> Version 요소  
- `Version` 요소를 사용하면 이름 충돌을 최소화하고 각기 다른 시각화를 다양한 버전의 형식에 사용할 수 있도록 시각화 범위를 특정 모듈 및 해당 버전으로 지정할 수 있습니다. 예를 들면 다음과 같습니다.  
+ `Version` 요소를 사용하면 이름 충돌을 최소화하고 각기 다른 시각화를 다양한 버전의 형식에 사용할 수 있도록 시각화 범위를 특정 모듈 및 해당 버전으로 지정할 수 있습니다. 예를 들면 다음과 같습니다.:  
 
 ```xml  
 <Type Name="DirectUI::Border">  

@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
-ms.openlocfilehash: ceb78d3310f37a58850199b11fb2b2fed86f6799
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: fba7f1e0801b6f977d47b13af025538f5d2fe031
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299315"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850983"
 ---
 # <a name="creating-your-own-start-page"></a>고유한 시작 페이지 만들기
 시작 페이지 프로젝트 템플릿을 사용하거나 빈 시작 페이지를 만들어 사용자 지정 시작 페이지를 만들 수 있습니다.  
@@ -28,7 +28,7 @@ ms.locfileid: "74299315"
   
 #### <a name="to-create-a-custom-start-page-by-using-the-start-page-project-template"></a>시작 페이지 프로젝트 템플릿을 사용하여 사용자 지정 시작 페이지를 만들려면  
   
-1. Visual Studio 갤러리에서 [시작 페이지 프로젝트 템플릿](https://go.microsoft.com/fwlink/?LinkId=186204) 을 다운로드 및 설치합니다.  
+1. Visual Studio 갤러리에서 [시작 페이지 프로젝트 템플릿](https://visualstudiogallery.msdn.microsoft.com/f655a5dc-1a2d-4eca-b774-76c352c03b87) 을 다운로드 및 설치합니다.  
   
     > [!WARNING]
     > 이번에는 Visual Studio 2010 시작 페이지 프로젝트 템플릿이 업그레이드되지 않았습니다. 이 템플릿을 업그레이드 하는 방법에 대 한 자세한 내용은 [방법: Visual Studio 사용자 지정 시작 페이지 업그레이드](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md)를 참조 하세요.  

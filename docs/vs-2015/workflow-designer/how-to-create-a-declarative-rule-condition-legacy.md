@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2dc63fc58b22792e566df91bd86cac40e3fd2e65
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0c23fed64d7f3a7681fce96663262f6d633299a9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297488"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849332"
 ---
 # <a name="how-to-create-a-declarative-rule-condition-legacy"></a>방법: 선언적 규칙 조건 만들기(레거시)
 이 항목에서는 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 또는 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)]를 대상으로 하는 레거시 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]를 사용하여 규칙 조건을 선언하는 방법에 대해 설명합니다.
@@ -27,17 +27,17 @@ ms.locfileid: "74297488"
 
  선언적 규칙 조건은 기본적으로 제공되는 다음과 같은 Windows Workflow Foundation 활동에 사용됩니다.
 
-- [ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65017)
+- [ConditionedActivityGroup](https://msdn2.microsoft.com/library/system.workflow.activities.conditionedactivitygroup.aspx)
 
-- [IfElseBranchActivity](https://go.microsoft.com/fwlink?LinkID=65034)
+- [IfElseBranchActivity](https://msdn2.microsoft.com/library/system.workflow.activities.ifelsebranchactivity.aspx)
 
-- [ReplicatorActivity](https://go.microsoft.com/fwlink?LinkID=65039)
+- [ReplicatorActivity](https://msdn2.microsoft.com/library/system.workflow.activities.replicatoractivity.aspx)
 
-- [WhileActivity](https://go.microsoft.com/fwlink?LinkID=65049)
+- [WhileActivity](https://msdn2.microsoft.com/library/system.workflow.activities.whileactivity.aspx)
 
-- [SequentialWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65040)
+- [SequentialWorkflowActivity](https://msdn2.microsoft.com/library/system.workflow.activities.sequentialworkflowactivity.aspx)
 
-- [StateMachineWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65045)
+- [StateMachineWorkflowActivity](https://msdn2.microsoft.com/library/system.workflow.activities.statemachineworkflowactivity.aspx)
 
 ### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>규칙 조건 편집기를 사용하여 선언적 규칙 조건을 만들려면
 
@@ -64,4 +64,4 @@ ms.locfileid: "74297488"
      **조건 선택** 대화 상자를 사용 하는 방법에 대 한 자세한 내용은 [조건 선택 대화 상자 (레거시)](../workflow-designer/select-condition-dialog-box-legacy.md)를 참조 하세요.
 
 ## <a name="see-also"></a>참고 항목
- [ConditionedActivityGroup를](https://go.microsoft.com/fwlink?LinkID=65066) 사용 하 여 [IfElseBranchActivity 활동](https://go.microsoft.com/fwlink?LinkID=65075) [을 사용](https://go.microsoft.com/fwlink?LinkID=65080) 하는 [레거시 워크플로 활동](../workflow-designer/legacy-workflow-activities.md) 사용 [While 활동](https://go.microsoft.com/fwlink?LinkID=65091) [규칙 조건 편집기 대화 상자 (레거시)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) [조건 선택 대화 상자 (레거시)](../workflow-designer/select-condition-dialog-box-legacy.md) [워크플로에서 조건 사용](https://go.microsoft.com/fwlink?LinkID=65009)
+ [레거시 워크플로 활동](../workflow-designer/legacy-workflow-activities.md) [ConditionedActivityGroup를 사용](https://msdn2.microsoft.com/library/bb675237.aspx) [IfElseBranchActivity 활동 사용](https://msdn2.microsoft.com/library/bb628465.aspx) [복제기 활동 사용](https://msdn2.microsoft.com/library/bb628544.aspx) [While 활동 사용](https://msdn2.microsoft.com/library/bb628552.aspx) [규칙 조건 편집기 대화 상자 (레거시)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) [조건 선택 대화 상자 (레거시)](../workflow-designer/select-condition-dialog-box-legacy.md) [워크플로의 조건 사용](https://msdn2.microsoft.com/library/bb628447.aspx)

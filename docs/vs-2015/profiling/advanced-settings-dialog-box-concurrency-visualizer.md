@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8e1dbe50f3161ca80b4eabe63cbf9264210e9658
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 128327b956734f7d28e7ff88f3eb6c297544587c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300310"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849815"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>고급 설정 대화 상자(동시성 시각화 도우미)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "74300310"
  .Exe 및 .dll 파일의 경로는 추적을 수집할 때 추적 파일에 저장됩니다.  이 설정을 변경해도 이전에 수집된 모든 추적에는 영향을 주지 않습니다.  
   
 ## <a name="buffering"></a>버퍼링  
- 동시성 시각화 도우미는 추적을 수집할 때 ETW(Windows용 이벤트 추적)를 사용합니다.  ETW는 이벤트를 저장할 때 여러 버퍼를 사용합니다.  기본 ETW 버퍼 설정은 모든 경우에 최적이 아닐 수 있으며, 일부 경우에는 이벤트 손실과 같은 문제를 일으킬 수 있습니다.  버퍼링 탭을 사용하여 ETW 버퍼 설정을 구성할 수 있습니다. 자세한 내용은 [이벤트 추적](https://go.microsoft.com/fwlink/?LinkId=234579) 및 [EVENT_TRACE_PROPERTIES 구조](https://go.microsoft.com/fwlink/?LinkId=234580)를 참조하세요.  
+ 동시성 시각화 도우미는 추적을 수집할 때 ETW(Windows용 이벤트 추적)를 사용합니다.  ETW는 이벤트를 저장할 때 여러 버퍼를 사용합니다.  기본 ETW 버퍼 설정은 모든 경우에 최적이 아닐 수 있으며, 일부 경우에는 이벤트 손실과 같은 문제를 일으킬 수 있습니다.  버퍼링 탭을 사용하여 ETW 버퍼 설정을 구성할 수 있습니다. 자세한 내용은 [이벤트 추적](https://msdn.microsoft.com/library/bb968803(VS.85).aspx) 및 [EVENT_TRACE_PROPERTIES 구조](https://msdn.microsoft.com/library/aa363784(VS.85).aspx)를 참조하세요.  
   
 ## <a name="filter"></a>필터  
  필터 탭에는 동시성 시각화 도우미에서 수집하는 이벤트 집합을 선택할 수 있습니다. 이벤트 하위 집합을 선택하면 보고서에 표시되는 데이터 형식이 제한되고, 각 추적의 크기가 감소하고, 추적 처리에 필요한 시간이 줄어듭니다.  
@@ -86,6 +86,6 @@ ms.locfileid: "74300310"
   
   두 ETL 파일에는 원시 추적 데이터가 저장되고, 두 동시성 시각화 도우미 파일에는 처리된 데이터가 저장됩니다.  추적이 처리된 다음에는 일반적으로 원시 ETL 파일이 사용되지 않습니다.  **분석 후 ETL(이벤트 추적 로그) 파일 삭제** 확인란을 선택하면 디스크에 저장되는 추적 파일의 양이 줄어듭니다.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [내 코드만](../profiling/just-my-code-threads-view.md)   
  [동시성 시각화 도우미 표식](../profiling/concurrency-visualizer-markers.md)

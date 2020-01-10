@@ -8,12 +8,12 @@ ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
 caps.latest.revision: 14
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 07e42c6b1e3e3537801c3d7420d2cad8dd119fa7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: aa9db3e67b1f5ba5e183f8df0c7b34372476fb08
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301419"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851161"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>shim을 사용하여 유닛 테스트를 위한 다른 어셈블리에서 애플리케이션 격리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Shim 형식**은 Microsoft Fakes 프레임워크가 환경에서 테스트 대�
 
 - Visual Studio Enterprise
 
-  [비디오(1h16): Visual Studio 2012에서 Fakes를 사용하여 테스트되지 않은 코드 테스트](https://go.microsoft.com/fwlink/?LinkId=261837) 참조
+  [비디오(1h16): Visual Studio 2012에서 Fakes를 사용하여 테스트되지 않은 코드 테스트](https://channel9.msdn.com/Events/TechEd/Europe/2012/DEV411) 참조
 
 ## <a name="BKMK_Example__The_Y2K_bug"></a> 예: Y2K 버그
  2000년 1월 1일에 예외를 발생시키는 메서드를 살펴보겠습니다.
@@ -88,10 +88,10 @@ public void Y2kCheckerTest() {
 
 ```
 
- 각 shim 컨텍스트를 올바르게 삭제하는 것이 중요합니다. 경험상, 항상 `ShimsContext.Create` 문 내에서 `using`를 호출하여 등록된 shim이 제대로 지워지도록 합니다. 예를 들어 항상 2000년 1월 1일을 반환하는 대리자로 `DateTime.Now` 메서드를 대체하는 테스트 메서드에 대해 shim을 등록할 수 있습니다. 테스트 메서드에서 등록된 shim을 지우지 않으면 테스트 실행의 나머지 부분에서 항상 2000년 1월 1일을 DateTime.Now 값으로 반환합니다. 이 결과는 놀라움과 혼동을 줄 수 있습니다.
+ 각 shim 컨텍스트를 올바르게 삭제하는 것이 중요합니다. 경험상, 항상 `using` 문 내에서 `ShimsContext.Create`를 호출하여 등록된 shim이 제대로 지워지도록 합니다. 예를 들어 항상 2000년 1월 1일을 반환하는 대리자로 `DateTime.Now` 메서드를 대체하는 테스트 메서드에 대해 shim을 등록할 수 있습니다. 테스트 메서드에서 등록된 shim을 지우지 않으면 테스트 실행의 나머지 부분에서 항상 2000년 1월 1일을 DateTime.Now 값으로 반환합니다. 이 결과는 놀라움과 혼동을 줄 수 있습니다.
 
 ### <a name="WriteShims"></a> shim을 사용하여 테스트 작성
- 테스트 코드에서 모조할 메서드에 대해 *우회*를 삽입합니다. 예를 들면 다음과 같습니다.
+ 테스트 코드에서 모조할 메서드에 대해 *우회*를 삽입합니다. 예를 들면 다음과 같습니다.:
 
 ```csharp
 [TestClass]
@@ -163,7 +163,7 @@ End Class
  shim 형식을 사용하여 정적 메서드 또는 비가상 메서드를 포함하는 .NET 메서드를 사용자 고유의 대리자로 대체할 수 있습니다.
 
 ### <a name="BKMK_Static_methods"></a> 정적 메서드
- 정적 메서드에 shim을 연결하는 속성은 shim 형식에 배치됩니다. 각 속성에는 대상 메서드에 대리자를 연결하는 데 사용할 수 있는 setter만 있습니다. 예를 들어 정적 메서드 `MyClass`를 포함하는 `MyMethod` 클래스가 있다고 가정합니다.
+ 정적 메서드에 shim을 연결하는 속성은 shim 형식에 배치됩니다. 각 속성에는 대상 메서드에 대리자를 연결하는 데 사용할 수 있는 setter만 있습니다. 예를 들어 정적 메서드 `MyMethod`를 포함하는 `MyClass` 클래스가 있다고 가정합니다.
 
 ```csharp
 //code under test
@@ -182,7 +182,7 @@ ShimMyClass.MyMethod = () =>5;
 ```
 
 ### <a name="BKMK_Instance_methods__for_all_instances_"></a> 모든 인스턴스에 대한 인스턴스 메서드
- 정적 메서드와 마찬가지로, 모든 인스턴스에 대해 인스턴스 메서드를 shim할 수 있습니다. 이러한 shim을 연결할 속성은 혼동을 피하기 위해 AllInstances라는 중첩된 형식에 배치됩니다. 예를 들어 인스턴스 메서드 `MyClass`를 포함하는 `MyMethod` 클래스가 있다고 가정합니다.
+ 정적 메서드와 마찬가지로, 모든 인스턴스에 대해 인스턴스 메서드를 shim할 수 있습니다. 이러한 shim을 연결할 속성은 혼동을 피하기 위해 AllInstances라는 중첩된 형식에 배치됩니다. 예를 들어 인스턴스 메서드 `MyMethod`를 포함하는 `MyClass` 클래스가 있다고 가정합니다.
 
 ```csharp
 // code under test
@@ -220,7 +220,7 @@ public class ShimMyClass : ShimBase<MyClass> {
 ### <a name="BKMK_Instance_methods__for_one_instance_"></a> 단일 런타임 인스턴스에 대한 인스턴스 메서드
  호출 수신자에 따라 다른 대리자가 인스턴스 메서드를 shim할 수도 있습니다. 이렇게 하면 동일한 인스턴스 메서드가 형식 인스턴스별로 다른 동작을 수행할 수 있습니다. 이러한 shim을 설정하는 속성은 shim 형식 자체의 인스턴스 메서드입니다. 인스턴스화된 각 shim 형식은 shim된 형식의 원시 인스턴스에도 연결됩니다.
 
- 예를 들어 인스턴스 메서드 `MyClass`를 포함하는 `MyMethod` 클래스가 있다고 가정합니다.
+ 예를 들어 인스턴스 메서드 `MyMethod`를 포함하는 `MyClass` 클래스가 있다고 가정합니다.
 
 ```csharp
 // code under test
@@ -330,7 +330,7 @@ public class ShimMyClass : ShimBase<MyClass>
 ### <a name="BKMK_Base_members"></a> 기본 멤버
  기본 형식에 대한 shim을 만들고 기본 shim 클래스의 생성자에 자식 인스턴스를 매개 변수로 전달하여 기본 멤버의 shim 속성에 액세스할 수 있습니다.
 
- 예를 들어 인스턴스 메서드 `MyBase` 및 하위 형식 `MyMethod`를 포함하는 `MyChild` 클래스가 있다고 가정합니다.
+ 예를 들어 인스턴스 메서드 `MyMethod` 및 하위 형식 `MyChild`를 포함하는 `MyBase` 클래스가 있다고 가정합니다.
 
 ```csharp
 public abstract class MyBase {
@@ -344,7 +344,7 @@ public class MyChild : MyBase {
 
 ```
 
- 새로운 `MyBase` shim을 만들어 `ShimMyBase`의 shim을 설정할 수 있습니다.
+ 새로운 `ShimMyBase` shim을 만들어 `MyBase`의 shim을 설정할 수 있습니다.
 
 ```csharp
 // unit test code
@@ -382,7 +382,7 @@ public class ShimMyBase : ShimBase<MyBase> {
 ### <a name="BKMK_Binding_interfaces"></a> 바인딩 인터페이스
  shim된 형식이 인터페이스를 구현하는 경우 코드 생성기에서 해당 인터페이스의 모든 멤버를 한 번에 바인딩할 수 있는 메서드를 내보냅니다.
 
- 예를 들어 `MyClass`를 구현하는 `IEnumerable<int>` 클래스가 있다고 가정합니다.
+ 예를 들어 `IEnumerable<int>`를 구현하는 `MyClass` 클래스가 있다고 가정합니다.
 
 ```csharp
 public class MyClass : IEnumerable<int> {
@@ -430,7 +430,7 @@ shim.InstanceBehavior = ShimsBehaviors.DefaultValue;
 
 ```
 
- 정적 `InstanceBehavior` 속성을 설정하여 `ShimsBehaviors.Current` 속성이 명시적으로 설정되지 않은 shim된 모든 인스턴스에 대해 전역적으로 동작을 변경할 수도 있습니다.
+ 정적 `ShimsBehaviors.Current` 속성을 설정하여 `InstanceBehavior` 속성이 명시적으로 설정되지 않은 shim된 모든 인스턴스에 대해 전역적으로 동작을 변경할 수도 있습니다.
 
 ```csharp
 // unit test code
@@ -442,7 +442,7 @@ ShimsBehaviors.Current =
 ```
 
 ## <a name="BKMK_Detecting_environment_accesses"></a> 환경 액세스 검색
- 해당 shim 형식의 정적 속성 `ShimsBehaviors.NotImplemented`에 `Behavior` 동작을 할당하면 정적 메서드를 포함하여 특정 형식의 모든 메서드에 동작을 연결할 수 있습니다.
+ 해당 shim 형식의 정적 속성 `Behavior`에 `ShimsBehaviors.NotImplemented` 동작을 할당하면 정적 메서드를 포함하여 특정 형식의 모든 메서드에 동작을 연결할 수 있습니다.
 
 ```csharp
 // unit test code
@@ -504,7 +504,7 @@ ShimFile.WriteAllTextStringString = shim;
 ## <a name="external-resources"></a>외부 리소스
 
 ### <a name="guidance"></a>지침
- [Visual Studio 2012를 사용한 지속적인 업데이트 테스트 - 2장: 단위 테스트: 내부 테스트](https://go.microsoft.com/fwlink/?LinkID=255188)
+ [Visual Studio 2012를 사용한 연속 배달 테스트 - 2장: 단위 테스트: 내부 테스트](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ## <a name="see-also"></a>참고 항목
- Microsoft Fakes Peter Provost의 블로그 [를 사용 하 여 테스트 중인 코드 격리](../test/isolating-code-under-test-with-microsoft-fakes.md) [: Visual studio 2012 shim](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2) [비디오 (1h16): visual studio 2012에서 Fakes를 사용 하 여](https://go.microsoft.com/fwlink/?LinkId=261837) 테스트 되지 않은 코드 테스트
+ Microsoft Fakes Peter Provost의 블로그 [를 사용 하 여 테스트 중인 코드 격리](../test/isolating-code-under-test-with-microsoft-fakes.md) [: Visual studio 2012 shim](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2) [비디오 (1h16): visual studio 2012에서 Fakes를 사용 하 여](https://channel9.msdn.com/Events/TechEd/Europe/2012/DEV411) 테스트 되지 않은 코드 테스트

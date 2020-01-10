@@ -16,14 +16,14 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9b535737860b846aadecb6b73b4bd26659db37b1
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 296aec3b2b5cd307400b230375a7171f158fee60
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74289705"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847691"
 ---
-# <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>방법: ClickOnce 응용 프로그램의 클라이언트 컴퓨터에 트러스트된 게시자 추가
+# <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>방법: ClickOnce 응용 프로그램의 클라이언트 컴퓨터에 신뢰할 수 있는 게시자 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 신뢰할 수 있는 애플리케이션 배포를 사용하면 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 애플리케이션이 사용자 프롬프트 없이 더 높은 신뢰 수준으로 실행되도록 클라이언트 컴퓨터를 구성할 수 있습니다. 다음 절차에서는 명령줄 도구 CertMgr.exe를 사용하여, 클라이언트 컴퓨터의 신뢰할 수 있는 게시자 저장소에 게시자의 인증서를 추가하는 방법을 보여 줍니다.  
@@ -41,7 +41,7 @@ ms.locfileid: "74289705"
   
 1. CA에서 디지털 인증서를 가져옵니다.  
   
-2. Base64 X.509(.cer) 형식으로 인증서를 내보냅니다. 인증서 형식에 대한 자세한 내용은 [인증서 내보내기](https://go.microsoft.com/fwlink/?LinkId=164793)를 참조하세요.  
+2. Base64 X.509(.cer) 형식으로 인증서를 내보냅니다. 인증서 형식에 대한 자세한 내용은 [인증서 내보내기](https://technet.microsoft.com/library/cc730988(WS.10).aspx)를 참조하세요.  
   
 3. 클라이언트 컴퓨터의 명령 프롬프트에서 다음 명령을 실행합니다.  
   
@@ -51,7 +51,7 @@ ms.locfileid: "74289705"
   
 1. CA에서 디지털 인증서를 가져옵니다.  
   
-2. Base64 X.509(.cer) 형식으로 인증서를 내보냅니다. 인증서 형식에 대한 자세한 내용은 [인증서 내보내기](https://go.microsoft.com/fwlink/?LinkId=164793)를 참조하세요.  
+2. Base64 X.509(.cer) 형식으로 인증서를 내보냅니다. 인증서 형식에 대한 자세한 내용은 [인증서 내보내기](https://technet.microsoft.com/library/cc730988(WS.10).aspx)를 참조하세요.  
   
 3. 클라이언트 컴퓨터의 명령 프롬프트에서 다음 명령을 실행합니다.  
   

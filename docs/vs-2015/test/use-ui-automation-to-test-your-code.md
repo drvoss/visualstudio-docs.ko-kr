@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2eb0a4ee7c69ebe2bf753d4bbde63160b6e0043e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6478de1573a90c0a7171285df1d04675f77435e2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297982"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851274"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>UI 자동화를 사용하여 코드 테스트
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -150,7 +150,7 @@ UI(사용자 인터페이스)를 통해 애플리케이션을 실행하는 자�
 
 8. **테스트를 실행합니다**.
 
-    테스트 탐색기를 사용하거나 테스트 메서드에서 바로 가기 메뉴를 열고 **테스트 실행**을 선택합니다. 테스트 실행 방법에 대한 자세한 내용은 이 항목의 끝에 있는 [다음 단계](../test/run-unit-tests-with-test-explorer.md) 섹션의 *테스트 탐색기를 사용하여 단위 테스트 실행* 및 [실행 중인 코딩된 UI 테스트의 추가 옵션](#VerifyCodeUsingCUITWhatsNext)을 참조하세요.
+    테스트 탐색기를 사용하거나 테스트 메서드에서 바로 가기 메뉴를 열고 **테스트 실행**을 선택합니다. 테스트 실행 방법에 대한 자세한 내용은 이 항목의 끝에 있는 [다음 단계](#VerifyCodeUsingCUITWhatsNext) 섹션의 [테스트 탐색기를 사용하여 단위 테스트 실행](../test/run-unit-tests-with-test-explorer.md) 및 *실행 중인 코딩된 UI 테스트의 추가 옵션*을 참조하세요.
 
    이 항목의 나머지 섹션에서는 이 절차의 단계에 대해 자세히 설명합니다.
 
@@ -309,7 +309,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
     - [코딩된 UI 테스트 분석](../test/anatomy-of-a-coded-ui-test.md)
 
-    - [코딩된 UI 테스트에 대한 모범 사례](../test/best-practices-for-coded-ui-tests.md)
+    - [최선의 코딩된 UI 테스트 방법](../test/best-practices-for-coded-ui-tests.md)
 
     - [여러 UI 맵이 포함된 대형 애플리케이션 테스트](../test/testing-a-large-application-with-multiple-ui-maps.md)
 
@@ -465,31 +465,31 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [Microsoft Excel을 지원하도록 코딩된 UI 테스트 및 작업 기록 확장](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-  코딩된 UI 테스트는 일반적으로 수동 테스트를 자동화하는 데 사용됩니다. 추가 지침은 [Visual Studio 2012를 사용한 지속적인 업데이트 테스트 – 5장: 시스템 테스트 자동화](https://go.microsoft.com/fwlink/?LinkID=255196)를 참조하세요. 수동 테스트에 대한 자세한 내용은 [&#91;사용되지 않음#93; Microsoft Test Manager를 사용하여 수동 테스트 사례 만들기](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e)를 참조하세요. 자동화된 시스템 테스트에 대한 자세한 내용은 [Microsoft Test Manager를 사용하여 자동화된 테스트 만들기](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0)를 참조하세요.
+  코딩된 UI 테스트는 일반적으로 수동 테스트를 자동화하는 데 사용됩니다. 추가 지침은 [Visual Studio 2012를 사용한 지속적인 업데이트 테스트 – 5장: 시스템 테스트 자동화](https://msdn.microsoft.com/library/jj159335.aspx)를 참조하세요. 수동 테스트에 대한 자세한 내용은 [&#91;사용되지 않음#93; Microsoft Test Manager를 사용하여 수동 테스트 사례 만들기](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e)를 참조하세요. 자동화된 시스템 테스트에 대한 자세한 내용은 [Microsoft Test Manager를 사용하여 자동화된 테스트 만들기](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0)를 참조하세요.
 
 ## <a name="external-resources"></a>외부 리소스
 
 ### <a name="guidance"></a>지침
-- [Visual Studio 2012를 사용한 지속적인 업데이트 테스트 - 2장: 단위 테스트: 내부 테스트](https://go.microsoft.com/fwlink/?LinkID=255188)
+- [Visual Studio 2012를 사용한 연속 배달 테스트 - 2장: 단위 테스트: 내부 테스트](https://msdn.microsoft.com/library/jj159340.aspx)
 
-- [Visual Studio 2012를 사용한 지속적인 업데이트 테스트 - 5장: 시스템 테스트 자동화](https://go.microsoft.com/fwlink/?LinkID=255196)
+- [Visual Studio 2012를 사용한 지속적인 업데이트 테스트 - 5장: 시스템 테스트 자동화](https://msdn.microsoft.com/library/jj159335.aspx)
 
 ### <a name="faq"></a>FAQ
-- [코딩된 UI 테스트 FAQ - 1](https://go.microsoft.com/fwlink/?LinkID=230576)
+- [코딩된 UI 테스트 FAQ - 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
 
-- [코딩된 UI 테스트 FAQ - 2](https://go.microsoft.com/fwlink/?LinkID=230578)
+- [코딩된 UI 테스트 FAQ - 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>포럼
-- [Visual Studio UI 자동화 테스트(CodedUI 포함)](https://go.microsoft.com/fwlink/?LinkID=224497)
+- [Visual Studio UI 자동화 테스트(CodedUI 포함)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [코드 품질 향상](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)
 - [연습: 코딩된 UI 테스트 만들기, 편집 및 유지 관리](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [코딩된 UI 테스트 분석](../test/anatomy-of-a-coded-ui-test.md)
-- [코딩된 UI 테스트에 대한 모범 사례](../test/best-practices-for-coded-ui-tests.md)
+- [최선의 코딩된 UI 테스트 방법](../test/best-practices-for-coded-ui-tests.md)
 - [여러 UI 맵이 포함된 대형 애플리케이션 테스트](../test/testing-a-large-application-with-multiple-ui-maps.md)
 - [코딩된 UI 테스트 편집기를 사용하여 코딩된 UI 테스트 편집](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
 - [코딩된 UI 테스트 및 작업 기록에 지원되는 구성 및 플랫폼](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

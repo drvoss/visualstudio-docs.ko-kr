@@ -12,12 +12,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73bacf2c5d1650da91093c92c67e6b67bbbc73a5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8f0dee8364ac16becc538fa6fc8c6f90d955c078
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72633512"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848132"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>기본 프로젝트 시스템 만들기, 1 부
 Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타 자산을 구성 하는 데 사용 하는 컨테이너입니다. 프로젝트는 **솔루션 탐색기**에서 솔루션의 자식으로 표시 됩니다. 프로젝트를 사용 하 여 소스 코드를 구성, 빌드, 디버그 및 배포 하 고 웹 서비스, 데이터베이스 및 기타 리소스에 대 한 참조를 만들 수 있습니다.
@@ -35,7 +35,7 @@ Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타
  이 연습에서는 프로젝트 파일 이름 확장명이 *. myproj*인 프로젝트 형식을 만드는 방법을 보여 줍니다. 이 연습은 기존 Visual C# 프로젝트 시스템에서 활용.
 
 > [!NOTE]
-> 확장 프로젝트에 대 한 더 많은 예제를 보려면 인 [중 ...](https://aka.ms/vs2015sdksamples)
+> 확장 프로젝트에 대 한 더 많은 예제를 보려면 인 [중 ...](https://github.com/Microsoft/VSSDK-Extensibility-Samples)
 
  이 연습에서는 다음 작업을 수행 하는 방법을 배웁니다.
 
@@ -55,13 +55,13 @@ Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타
 
 - 기본 템플릿 매개 변수 대체를 구현 합니다.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>전제 조건
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
  또한 [프로젝트에 대 한 관리 되는 패키지 프레임 워크](https://github.com/tunnelvisionlabs/MPFProj10)의 소스 코드도 다운로드 해야 합니다. 만들려는 솔루션에서 액세스할 수 있는 위치에 파일을 추출 합니다.
 
 ## <a name="create-a-basic-project-type"></a>기본 프로젝트 형식 만들기
- SimpleProject 라는 C# VSIX 프로젝트를만듭니다. (**파일**  > **새**  > **프로젝트** 를 선택한 **다음 C# Visual**  > **확장성**  > **VSIX 프로젝트**). Visual Studio 패키지 프로젝트 항목 템플릿 추가 ( **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **추가**  > **새 항목**을 선택한 다음 **확장성**  > **Visual Studio 패키지**)로 이동 합니다. 파일 이름을 *SimpleProjectPackage*로 합니다.
+ SimpleProject 라는 C# VSIX 프로젝트를만듭니다. (**파일** > **새** > **프로젝트** 를 선택한 **다음 C# Visual** > **확장성** > **VSIX 프로젝트**). Visual Studio 패키지 프로젝트 항목 템플릿 추가 ( **솔루션 탐색기**에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **추가** > **새 항목**을 선택한 다음 **확장성** > **Visual Studio 패키지**)로 이동 합니다. 파일 이름을 *SimpleProjectPackage*로 합니다.
 
 ## <a name="creating-a-basic-project-template"></a>기본 프로젝트 템플릿 만들기
  이제이 기본 VSPackage을 수정 하 여 새 *.* n e t 프로젝트 형식을 구현할 수 있습니다. *. Myproj* 프로젝트 형식을 기반으로 하는 프로젝트를 만들려면 Visual Studio에서 새 프로젝트에 추가할 파일, 리소스 및 참조를 알고 있어야 합니다. 이 정보를 제공 하려면 프로젝트 파일 폴더에 프로젝트 파일을 배치 합니다. 사용자가 *. myproj* 프로젝트를 사용 하 여 프로젝트를 만들 때 파일이 새 프로젝트에 복사 됩니다.
@@ -154,7 +154,7 @@ Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 기타
 
 11. 파일을 저장합니다.
 
-12. **속성** 창에서 *AssemblyInfo.cs*, *Program.cs*, *SimpleProject*및 SimpleProject의 **빌드 작업** 을 **콘텐츠**로 설정 하 고 **VSIX 속성에 해당 Include** 를 설정 합니다 *.* **True로 설정**합니다.
+12. **속성** 창에서 *AssemblyInfo.cs*, *Program.cs*, *SimpleProject*및 *SimpleProject* 의 **빌드 작업** 을 **콘텐츠**로 설정 하 고 **VSIX 속성에 포함** 을 **True**로 설정 합니다.
 
     이 프로젝트 템플릿은 디버그 구성과 릴리스 구성이 C# 모두 포함 된 기본 Visual 프로젝트를 설명 합니다. 프로젝트에는 두 개의 소스 파일, *AssemblyInfo.cs* 및 *Program.cs*와 여러 개의 어셈블리 참조가 포함 됩니다. 템플릿에서 프로젝트를 만들면 ProjectGuid 값이 자동으로 새 GUID로 바뀝니다.
 
@@ -171,7 +171,7 @@ Templates
 ```
 
 ## <a name="create-a-basic-project-factory"></a>기본 프로젝트 팩터리 만들기
- Visual Studio에서 프로젝트 템플릿 폴더의 위치를 알려 주어 야 합니다. 이렇게 하려면 VSPackage를 빌드할 때 템플릿 위치가 시스템 레지스트리에 기록 되도록 프로젝트 팩터리를 구현 하는 VSPackage 클래스에 특성을 추가 합니다. 먼저 프로젝트 팩터리 GUID로 식별 되는 기본 프로젝트 팩터리를 만듭니다. @No__t_0 특성을 사용 하 여 프로젝트 팩터리를 `SimpleProjectPackage` 클래스에 연결 합니다.
+ Visual Studio에서 프로젝트 템플릿 폴더의 위치를 알려 주어 야 합니다. 이렇게 하려면 VSPackage를 빌드할 때 템플릿 위치가 시스템 레지스트리에 기록 되도록 프로젝트 팩터리를 구현 하는 VSPackage 클래스에 특성을 추가 합니다. 먼저 프로젝트 팩터리 GUID로 식별 되는 기본 프로젝트 팩터리를 만듭니다. <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> 특성을 사용 하 여 프로젝트 팩터리를 `SimpleProjectPackage` 클래스에 연결 합니다.
 
 ### <a name="to-create-a-basic-project-factory"></a>기본 프로젝트 팩터리를 만들려면
 
@@ -190,14 +190,14 @@ Templates
 
 2. *SimpleProjectFactory.cs*라는 top *SimpleProject* 폴더에 클래스를 추가 합니다.
 
-3. 다음 using 지시문을 추가 합니다.
+3. 다음 using 지시문을 추가합니다.
 
    ```csharp
    using System.Runtime.InteropServices;
    using Microsoft.VisualStudio.Shell;
    ```
 
-4. @No__t_0 클래스에 GUID 특성을 추가 합니다. 특성의 값은 새 프로젝트 팩터리 GUID입니다.
+4. `SimpleProjectFactory` 클래스에 GUID 특성을 추가 합니다. 특성의 값은 새 프로젝트 팩터리 GUID입니다.
 
    ```csharp
    [Guid(SimpleProjectPackage.SimpleProjectFactoryString)]
@@ -224,7 +224,7 @@ Templates
 
     다시 작성 하면 프로젝트 템플릿이 등록 됩니다.
 
-   @No__t_0 및 `possibleProjectExtensions` 매개 변수는 프로젝트 파일 이름 확장명 ( *. myproj*)으로 설정 됩니다. @No__t_0 매개 변수는 *템플릿* 폴더의 상대 경로로 설정 됩니다. 빌드 중에이 경로는 전체 빌드로 변환 되어 레지스트리에 추가 되어 프로젝트 시스템을 등록 합니다.
+   `defaultProjectExtension` 및 `possibleProjectExtensions` 매개 변수는 프로젝트 파일 이름 확장명 ( *. myproj*)으로 설정 됩니다. `projectTemplatesDirectory` 매개 변수는 *템플릿* 폴더의 상대 경로로 설정 됩니다. 빌드 중에이 경로는 전체 빌드로 변환 되어 레지스트리에 추가 되어 프로젝트 시스템을 등록 합니다.
 
 ## <a name="test-the-template-registration"></a>템플릿 등록 테스트
  템플릿 등록을 통해 visual studio가 **새 프로젝트** 대화 상자에 템플릿 이름 및 아이콘을 표시할 수 있도록 visual studio에서 프로젝트 템플릿 폴더의 위치를 알 수 있습니다.
@@ -244,7 +244,7 @@ Templates
 
     1. SimpleProject 프로젝트를 언로드합니다 ( **솔루션 탐색기**에서 프로젝트 노드를 선택 하 고 상황에 맞는 메뉴에서 **프로젝트 언로드**를 클릭 한 다음 XML 편집기에서 프로젝트 파일을 엽니다.
 
-    2. 프로젝트 파일에 다음 블록을 추가 합니다 (\<Import > 블록 바로 위). 방금 다운로드 한 관리 되는 패키지 프레임 워크 코드에서 *Projectbase. files* 파일의 위치로 `ProjectBasePath`를 설정 합니다. 경로 이름에 백슬래시를 추가 해야 할 수도 있습니다. 그렇지 않은 경우 프로젝트에서 관리 되는 패키지 프레임 워크 소스 코드를 찾지 못할 수 있습니다.
+    2. 프로젝트 파일에 다음 블록을 추가 합니다. \<가져오기 > 블록 바로 위에 있습니다. 방금 다운로드 한 관리 되는 패키지 프레임 워크 코드에서 *Projectbase. files* 파일의 위치로 `ProjectBasePath`를 설정 합니다. 경로 이름에 백슬래시를 추가 해야 할 수도 있습니다. 그렇지 않은 경우 프로젝트에서 관리 되는 패키지 프레임 워크 소스 코드를 찾지 못할 수 있습니다.
 
         ```
         <PropertyGroup>
@@ -261,7 +261,7 @@ Templates
 
     4. 다음 어셈블리에 대한 참조를 추가합니다.
 
-        - `Microsoft.VisualStudio.Designer.Interfaces` ( *\<VSSDK 설치 > \VisualStudioIntegration\Common\Assemblies\v2.0*)
+        - `Microsoft.VisualStudio.Designer.Interfaces` ( *\<인 \VISUALSTUDIOINTEGRATION\COMMON\ASSEMBLIES\V2.0 진한 설치 >* )
 
         - `WindowsBase`
 
@@ -275,13 +275,13 @@ Templates
     using Microsoft.VisualStudio.Project;
     ```
 
-2. @No__t_1에서 `SimpleProjectPackage` 클래스를 파생 시킵니다.
+2. `Microsoft.VisualStudio.Package.ProjectPackage`에서 `SimpleProjectPackage` 클래스를 파생 시킵니다.
 
     ```csharp
     public sealed class SimpleProjectPackage : ProjectPackage
     ```
 
-3. 프로젝트 팩터리를 등록 합니다. @No__t_1 바로 뒤에 다음 줄을 `SimpleProjectPackage.Initialize` 메서드에 추가 합니다.
+3. 프로젝트 팩터리를 등록 합니다. `base.Initialize`바로 뒤에 다음 줄을 `SimpleProjectPackage.Initialize` 메서드에 추가 합니다.
 
     ```csharp
     base.Initialize();
@@ -303,13 +303,13 @@ Templates
     using Microsoft.VisualStudio.Project;
     ```
 
-6. @No__t_1에서 `SimpleProjectFactory` 클래스를 파생 시킵니다.
+6. `ProjectFactory`에서 `SimpleProjectFactory` 클래스를 파생 시킵니다.
 
     ```csharp
     class SimpleProjectFactory : ProjectFactory
     ```
 
-7. @No__t_0 클래스에 다음 더미 메서드를 추가 합니다. 이후 섹션에서이 메서드를 구현 합니다.
+7. `SimpleProjectFactory` 클래스에 다음 더미 메서드를 추가 합니다. 이후 섹션에서이 메서드를 구현 합니다.
 
     ```csharp
     protected override ProjectNode CreateProject()
@@ -318,7 +318,7 @@ Templates
     }
     ```
 
-8. @No__t_0 클래스에 다음 필드 및 생성자를 추가 합니다. 이 `SimpleProjectPackage` 참조는 서비스 공급자 사이트를 설정 하는 데 사용할 수 있도록 전용 필드에 캐시 됩니다.
+8. `SimpleProjectFactory` 클래스에 다음 필드 및 생성자를 추가 합니다. 이 `SimpleProjectPackage` 참조는 서비스 공급자 사이트를 설정 하는 데 사용할 수 있도록 전용 필드에 캐시 됩니다.
 
     ```csharp
     private SimpleProjectPackage package;
@@ -350,9 +350,9 @@ Templates
 4. 중단점을 지우고 디버깅을 중지 합니다. 프로젝트 노드를 아직 만들지 않았기 때문에 프로젝트 만들기 코드에서 여전히 예외를 throw 합니다.
 
 ## <a name="extend-the-projectnode-class"></a>ProjectNode 클래스 확장
- 이제 `ProjectNode` 클래스에서 파생 되는 `SimpleProjectNode` 클래스를 구현할 수 있습니다. @No__t_0 기본 클래스는 다음과 같은 프로젝트 생성 작업을 처리 합니다.
+ 이제 `ProjectNode` 클래스에서 파생 되는 `SimpleProjectNode` 클래스를 구현할 수 있습니다. `ProjectNode` 기본 클래스는 다음과 같은 프로젝트 생성 작업을 처리 합니다.
 
-- 프로젝트 템플릿 파일 ( *SimpleProject*)을 새 프로젝트 폴더에 복사 합니다. **새 프로젝트** 대화 상자에 입력 한 이름에 따라 복사본의 이름이 바뀝니다. @No__t_0 속성 값은 새 GUID로 대체 됩니다.
+- 프로젝트 템플릿 파일 ( *SimpleProject*)을 새 프로젝트 폴더에 복사 합니다. **새 프로젝트** 대화 상자에 입력 한 이름에 따라 복사본의 이름이 바뀝니다. `ProjectGuid` 속성 값은 새 GUID로 대체 됩니다.
 
 - 프로젝트 템플릿 파일 *SimpleProject*의 MSBuild 요소를 트래버스 하 고 `Compile` 요소를 찾습니다. 는 각 `Compile` 대상 파일에 대해 파일을 새 프로젝트 폴더에 복사 합니다.
 
@@ -364,7 +364,7 @@ Templates
 
 ### <a name="to-extend-the-projectnode-class"></a>ProjectNode 클래스를 확장 하려면
 
-1. @No__t_0 라는 클래스를 추가 합니다.
+1. `SimpleProjectNode.cs`(이)라는 클래스를 추가합니다.
 
 2. 기존 코드를 다음 코드로 바꿉니다.
 
@@ -410,9 +410,9 @@ Templates
 
 - `AddFileFromTemplate`는 템플릿 폴더에서 대상 프로젝트로 선택한 파일을 복사 합니다. 이 메서드는 이후 섹션에서 추가로 구현 됩니다.
 
-  @No__t_1 생성자와 마찬가지로 `SimpleProjectNode` 생성자는 나중에 사용 하기 위해 전용 필드에 `SimpleProjectPackage` 참조를 캐시 합니다.
+  `SimpleProjectFactory` 생성자와 마찬가지로 `SimpleProjectNode` 생성자는 나중에 사용 하기 위해 전용 필드에 `SimpleProjectPackage` 참조를 캐시 합니다.
 
-  @No__t_0 클래스를 `SimpleProjectNode` 클래스에 연결 하려면 `SimpleProjectFactory.CreateProject` 메서드에서 새 `SimpleProjectNode`를 인스턴스화하고 나중에 사용할 수 있도록 전용 필드에 캐시 해야 합니다.
+  `SimpleProjectFactory` 클래스를 `SimpleProjectNode` 클래스에 연결 하려면 `SimpleProjectFactory.CreateProject` 메서드에서 새 `SimpleProjectNode`를 인스턴스화하고 나중에 사용할 수 있도록 전용 필드에 캐시 해야 합니다.
 
 ### <a name="to-connect-the-project-factory-class-and-the-node-class"></a>프로젝트 팩터리 클래스와 node 클래스를 연결 하려면
 
@@ -467,7 +467,7 @@ Templates
    using System.Windows.Forms;
    ```
 
-5. @No__t_0 클래스에 다음 정적 필드 및 생성자를 추가 합니다.
+5. `SimpleProjectNode` 클래스에 다음 정적 필드 및 생성자를 추가 합니다.
 
    ```csharp
    private static ImageList imageList;
@@ -478,7 +478,7 @@ Templates
    }
    ```
 
-6. @No__t_0 클래스의 시작 부분에 다음 속성을 추가 합니다.
+6. `SimpleProjectNode` 클래스의 시작 부분에 다음 속성을 추가 합니다.
 
    ```csharp
    internal static int imageIndex;
@@ -504,23 +504,23 @@ Templates
    }
    ```
 
-   정적 생성 중 `SimpleProjectNode`는 어셈블리 매니페스트 리소스에서 프로젝트 노드 비트맵을 검색 하 고 나중에 사용할 수 있도록 전용 필드에 캐시 합니다. @No__t_0 이미지 경로의 구문을 확인 합니다. 어셈블리에 포함 된 매니페스트 리소스의 이름을 확인 하려면 <xref:System.Reflection.Assembly.GetManifestResourceNames%2A> 메서드를 사용 합니다. 이 메서드가 `SimpleProject` 어셈블리에 적용 되는 경우 결과는 다음과 같아야 합니다.
+   정적 생성 중 `SimpleProjectNode`는 어셈블리 매니페스트 리소스에서 프로젝트 노드 비트맵을 검색 하 고 나중에 사용할 수 있도록 전용 필드에 캐시 합니다. <xref:System.Reflection.Assembly.GetManifestResourceStream%2A> 이미지 경로의 구문을 확인 합니다. 어셈블리에 포함 된 매니페스트 리소스의 이름을 확인 하려면 <xref:System.Reflection.Assembly.GetManifestResourceNames%2A> 메서드를 사용 합니다. 이 메서드가 `SimpleProject` 어셈블리에 적용 되는 경우 결과는 다음과 같아야 합니다.
 
-- *SimpleProject*
+- *SimpleProject.Resources.resources*
 
-- *VisualStudio*
+- *VisualStudio.Project.resources*
 
-- *SimpleProject. VSPackage*
+- *SimpleProject.VSPackage.resources*
 
-- *리소스. imagelis .bmp*
+- *Resources.imagelis.bmp*
 
-- *VisualStudio. DontShowAgainDialog*
+- *Microsoft.VisualStudio.Project.DontShowAgainDialog.resources*
 
-- *VisualStudio. SecurityWarningDialog*
+- *Microsoft.VisualStudio.Project.SecurityWarningDialog.resources*
 
-- *SimpleProject. SimpleProjectNode.*
+- *SimpleProject.Resources.SimpleProjectNode.bmp*
 
-  인스턴스를 생성 하는 동안 `ProjectNode` 기본 클래스는 리소스를 로드 *합니다. imagelis .bmp*는 일반적으로 사용 되는 *Resources\imagelis.bmp*의 16 x 16 비트맵을 포함 합니다. 이 비트맵 목록은 `ImageHandler.ImageList` `SimpleProjectNode` 사용할 수 있습니다. `SimpleProjectNode` 프로젝트 노드 비트맵을 목록에 추가 합니다. 이미지 목록에서 프로젝트 노드 비트맵의 오프셋은 나중에 공용 `ImageIndex` 속성의 값으로 사용 하기 위해 캐시 됩니다. Visual Studio는이 속성을 사용 하 여 프로젝트 노드 아이콘으로 표시할 비트맵을 결정 합니다.
+  인스턴스를 생성 하는 동안 `ProjectNode` 기본 클래스는 리소스를 로드 *합니다. imagelis .bmp*는 일반적으로 사용 되는 *Resources\imagelis.bmp*의 16 x 16 비트맵을 포함 합니다. 이 비트맵 목록은 `ImageHandler.ImageList``SimpleProjectNode` 사용할 수 있습니다. `SimpleProjectNode` 프로젝트 노드 비트맵을 목록에 추가 합니다. 이미지 목록에서 프로젝트 노드 비트맵의 오프셋은 나중에 공용 `ImageIndex` 속성의 값으로 사용 하기 위해 캐시 됩니다. Visual Studio는이 속성을 사용 하 여 프로젝트 노드 아이콘으로 표시할 비트맵을 결정 합니다.
 
 ## <a name="test-the-custom-project-node-icon"></a>사용자 지정 프로젝트 노드 아이콘 테스트
  프로젝트 팩터리를 테스트 하 여 사용자 지정 프로젝트 노드 아이콘이 있는 프로젝트 계층 구조를 만드는 지 여부를 확인 합니다.
@@ -533,7 +533,7 @@ Templates
 
      ![Simple Project 새 프로젝트 노드](../extensibility/media/simpleprojnewprojectnode.png "SimpleProjNewProjectNode")
 
-3. 코드 편집기에서 *Program.cs* 를 엽니다. 소스 코드는 다음 코드와 유사 하 게 표시 됩니다.
+3. 코드 편집기에서 *Program.cs*를 엽니다. 소스 코드는 다음 코드와 유사 하 게 표시 됩니다.
 
     ```csharp
     using System;
@@ -586,7 +586,7 @@ Templates
    }
    ```
 
-3. @No__t_0 할당 문 바로 뒤에 메서드에 중단점을 설정 합니다.
+3. `className` 할당 문 바로 뒤에 메서드에 중단점을 설정 합니다.
 
    대입문은 네임 스페이스 및 새 클래스 이름에 대 한 적절 한 값을 결정 합니다. 이러한 새 값을 사용 하 여 두 `ProjectNode.FileTemplateProcessor.AddReplace` 메서드 호출에서 해당 하는 템플릿 매개 변수 값을 바꿉니다.
 
@@ -597,19 +597,19 @@ Templates
 
 1. 디버깅을 시작 하 고 실험적 인스턴스에서 새 SimpleProject을 만듭니다.
 
-2. @No__t_0 메서드의 중단점에서 실행이 중지 됩니다.
+2. `AddFileFromTemplate` 메서드의 중단점에서 실행이 중지 됩니다.
 
-3. @No__t_0 및 `className` 매개 변수의 값을 검사 합니다.
+3. `nameSpace` 및 `className` 매개 변수의 값을 검사 합니다.
 
    - *\Templates\Projects\SimpleProject\SimpleProject.myproj* 프로젝트 템플릿 파일의 \<RootNamespace > 요소 값이 `nameSpace`에 제공 됩니다. 이 경우 값은 `MyRootNamespace`입니다.
 
-   - `className`에는 파일 이름 확장명이 없는 클래스 소스 파일 이름의 값이 지정 됩니다. 이 경우 대상 폴더에 복사 되는 첫 번째 파일은 *AssemblyInfo.cs*입니다. 따라서 className의 값이 `AssemblyInfo` 됩니다.
+   - `className`에는 파일 이름 확장명이 없는 클래스 소스 파일 이름의 값이 지정 됩니다. 이 경우 대상 폴더에 복사 되는 첫 번째 파일은 *AssemblyInfo.cs*입니다. 따라서 className의 값이 `AssemblyInfo`됩니다.
 
 4. 중단점을 제거 하 고 **f5** 키를 눌러 실행을 계속 합니다.
 
     Visual Studio에서 프로젝트 만들기를 완료 해야 합니다.
 
-5. 코드 편집기에서 *Program.cs* 를 엽니다. 소스 코드는 다음 코드와 유사 하 게 표시 됩니다.
+5. 코드 편집기에서 *Program.cs*를 엽니다. 소스 코드는 다음 코드와 유사 하 게 표시 됩니다.
 
    ```csharp
    using System;
@@ -630,9 +630,9 @@ Templates
    }
    ```
 
-    이제 네임 스페이스가 `MyRootNamespace` 되 고 클래스 이름이 `Program` 됩니다.
+    이제 네임 스페이스가 `MyRootNamespace` 되 고 클래스 이름이 `Program`됩니다.
 
-6. 프로젝트 디버깅을 시작 합니다. 새 프로젝트를 컴파일하고 실행 하 고 "Hello VSX!!!"를 표시 해야 합니다. 콘솔 창에 표시합니다.
+6. 프로젝트 디버그를 시작합니다. 새 프로젝트를 컴파일하고 실행 하 고 "Hello VSX!!!"를 표시 해야 합니다. 콘솔 창에 표시합니다.
 
     ![Simple Project 명령](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")
 

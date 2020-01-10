@@ -29,14 +29,14 @@ caps.latest.revision: 245
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b25d23b7c65742ffddadbe178d7550dc1794414a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4395dbc212514a71f8c4119d8f0778280dee81aa
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296328"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847624"
 ---
-# <a name="map-dependencies-across-your-solutions"></a>솔루션 전체의 지도 종속성
+# <a name="map-dependencies-across-your-solutions"></a>솔루션 전체의 종속성 매핑
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 코드 간의 종속성을 파악하려는 경우 코드 맵을 만들어 해당 코드를 시각화합니다. 그러면 전체 파일과 코드 줄을 확인하지 않고도 여러 코드가 서로 맞는지 파악할 수 있습니다.
@@ -45,11 +45,11 @@ ms.locfileid: "74296328"
 
  **아래에는 이와 관련한 몇 가지 비디오가 나와 있습니다**.
 
-- [시각화를 통해 코드 종속성 이해](https://go.microsoft.com/fwlink/?LinkID=252065)
+- [시각화를 통해 코드 종속성 이해](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understand-your-code-dependencies-through-visualization)
 
-- [변경 영향 시각화](https://go.microsoft.com/fwlink/?LinkID=252068)
+- [변경 영향 시각화](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Visualize-the-impact-of-a-change)
 
-- [코드 맵으로 복잡한 코드 이해하기](https://go.microsoft.com/fwlink/?LinkID=259869)
+- [코드 맵으로 복잡한 코드 이해하기](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understanding-complex-code-with-Code-Map-ENU)
 
 ## <a name="GetStarted"></a> 코드 맵 시작
  **코드 맵을 사용하려면 다음이 필요합니다**.
@@ -205,7 +205,7 @@ ms.locfileid: "74296328"
 
 ### <a name="see-specific-dependencies-in-your-solution"></a>솔루션의 특정 종속성 확인
 
-1. **솔루션 탐색기**를 엽니다. 원하는 프로젝트, 어셈블리 참조, 폴더, 파일, 형식 및 멤버를 선택합니다. 형식이나 멤버에 대한 종속성을 포함하는 항목을 찾으려면 **솔루션 탐색기**에서 해당 형식 또는 멤버의 바로 가기 메뉴를 열고 종속성 형식을 선택하고 결과를 선택합니다.
+1. **솔루션 탐색기**를 열고 원하는 프로젝트, 어셈블리 참조, 폴더, 파일, 형식 및 멤버를 선택합니다. 형식이나 멤버에 대한 종속성을 포함하는 항목을 찾으려면 **솔루션 탐색기**에서 해당 형식 또는 멤버의 바로 가기 메뉴를 열고 종속성 형식을 선택하고 결과를 선택합니다.
 
 2. 항목 및 해당 멤버를 매핑합니다. **솔루션 탐색기** 도구 모음에서 **코드 맵에 표시**를 클릭 하 여![선택한 노드에서 새 그래프 만들기 단추](../modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton")를 클릭 합니다.
 
@@ -232,7 +232,7 @@ ms.locfileid: "74296328"
 
      코드에 있지만 맵에 표시 되지 않는 멤버를 확인 하려면 그룹의 왼쪽 위 모퉁이에 있는 **다시 페치 자식** 아이콘 ![다시 페치 자식 아이콘](../modeling/media/dependencygraph-deletednodesicon.png "DependencyGraph_DeletedNodesIcon") 을 클릭 합니다.
 
-6. 맵의 항목과 관련된 추가 항목을 확인하려면 항목을 선택하고, 코드 맵 도구 모음에서 **관련 항목 표시** 를 선택하고, 맵에 추가할 관련 항목 형식을 선택합니다. 또는 항목을 하나 이상 선택하고, 바로 가기 메뉴를 열고, 맵에 추가할 관련 항목 형식에 대한 **표시...** 옵션을 선택합니다. 예를 들면 다음과 같습니다.
+6. 맵의 항목과 관련된 추가 항목을 확인하려면 항목을 선택하고, 코드 맵 도구 모음에서 **관련 항목 표시** 를 선택하고, 맵에 추가할 관련 항목 형식을 선택합니다. 또는 항목을 하나 이상 선택하고, 바로 가기 메뉴를 열고, 맵에 추가할 관련 항목 형식에 대한 **표시...** 옵션을 선택합니다. 예를 들면 다음과 같습니다.:
 
      **어셈블리**인 경우 다음을 선택합니다.
 
@@ -286,7 +286,7 @@ ms.locfileid: "74296328"
 ## <a name="SeeSourceHeader"></a> C 및 C++ 소스 파일과 헤더 파일 간 종속성 확인
  C++ 프로젝트에 대해 보다 완전한 맵을 만들려면 해당 프로젝트에 대해 찾아보기 정보 컴파일러 옵션( **/FR**)을 설정합니다. [/FR, /Fr (Create .Sbr File)](https://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896)를 참조하세요. 그렇지 않으면 메시지가 표시되고 이 옵션을 설정하라는 메시지가 나타납니다. **확인**을 선택하면 현재 맵에 대해서만 옵션이 설정됩니다. 이후 모든 맵에 대해 메시지를 숨기도록 선택할 수 있습니다. 이 메시지를 숨기는 경우 다시 표시되도록 설정할 수 있습니다. 이렇게 하려면 다음 레지스트리 키를 `0` 으로 설정하거나 해당 키를 삭제합니다.
 
- **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\14.0\NativeProvider: AutoEnableSbr**
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**
 
  Visual C++ 프로젝트가 포함된 솔루션을 열 때 IntelliSense 데이터베이스를 업데이트하는 데 시간이 걸릴 수 있습니다. 이 동안에는 IntelliSense 데이터베이스가 업데이트를 완료할 때까지 헤더 파일(.h 또는 `#include`)에 관한 코드 맵을 만들 수 없습니다. Visual Studio 상태 표시줄에서 업데이트 진행률을 모니터링할 수 있습니다. 특정 IntelliSense 설정을 사용할 수 없으므로 나타나는 문제 또는 메시지를 해결하려면 [C 및 C++ 코드의 맵 문제 해결](#Troubleshooting)을 참조하세요.
 
@@ -346,7 +346,7 @@ ms.locfileid: "74296328"
 
  -또는-
 
- 맵을 특정 프로젝트의 파트로 저장하려면 맵 도구 모음에서 **공유**, **CodeMapName** \< *.dgml*>**이동**을 차례로 선택하고 맵을 저장할 프로젝트를 선택합니다.
+ 맵을 특정 프로젝트의 일부로 저장 하려면 맵 도구 모음에서 **공유**를 선택 하 고 \<*CodeMapName*>를 **로** **이동한** 다음 맵을 저장할 프로젝트를 선택 합니다.
 
  ![다른 프로젝트로 맵 이동](../modeling/media/codemapsmovemapmenu.png "CodeMapsMoveMapMenu")
 

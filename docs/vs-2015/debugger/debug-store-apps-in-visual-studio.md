@@ -14,19 +14,19 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2be61a066157b203e4d09ff5f5dff5340dc0ec67
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d2916bd43571ddade68e3e642b5d006c26269670
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298333"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850502"
 ---
 # <a name="debug-store-apps-in-visual-studio"></a>Visual Studio에서 스토어 앱 디버깅
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 디버거를 사용하면 프로그램의 실행을 제어하고 프로그램의 상태를 검사할 수 있습니다. 디버거를 사용하여 Windows 스토어 앱에서 결함의 원인을 찾고 앱 작동 방법을 정확하게 파악할 수 있습니다. 디버거에서 실행을 일시 중단(중단)하면 Visual Studio에는 실행 코드가 포함된 소스 파일이 표시되고 실행 문이 강조 표시됩니다. 변수 값, 실행 함수의 호출 스택과 그 외 프로그램 상태에 관한 측면을 볼 수 있습니다. 한 번에 프로그램 문을 하나씩 계속 실행(단계별 실행)하면 문에서 프로그램 값을 변경하는 방법을 확인할 수 있습니다. JavaScript로 작성된 앱에서 페이지의 DOM을 검사 및 조작할 수 있습니다.
 
-## <a name="in-this-section"></a>이 섹션의 내용
+## <a name="in-this-section"></a>단원 내용
 
 |||
 |-|-|
@@ -39,4 +39,4 @@ Visual Studio 디버거를 사용하면 프로그램의 실행을 제어하고 �
 |[Windows 스토어에 대한 일시 중단, 다시 시작 및 백그라운드 이벤트 트리거](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)|디버거는 앱을 일시 중지, 다시 시작 및 종료하는 Windows PLM(프로세스 수명 관리) 이벤트를 사용하지 않도록 설정합니다. 디버거 도구 모음에서 이러한 이벤트를 트리거할 수 있습니다.<br /><br /> 백그라운드 작업을 통해 앱이 일시 중단된 경우에도 중요한 작업을 수행할 수 있습니다. 디버거를 사용하면 이러한 백그라운드 작업을 시작하고 디버깅할 수 있습니다.|
 
 ## <a name="see-also"></a>참고 항목
- [Visual Studio에서 디버깅 (MSDN 라이브러리)](https://go.microsoft.com/fwlink/?LinkID=226896)
+ [Visual Studio에서 디버깅 (MSDN 라이브러리)](https://msdn.microsoft.com/library/sc65sadd(VS.110).aspx)

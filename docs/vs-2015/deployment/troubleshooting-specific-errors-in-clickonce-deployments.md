@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c66a25830e34571648727bd6ec71791e5e637ca8
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 9a27a2fc17f9d3450a20596d53695070bd84f0f2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294732"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850607"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>ClickOnce 배포 관련 오류 문제 해결
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +105,7 @@ ms.locfileid: "74294732"
  URL을 사용 하 여 게시 하는 경우 대상 컴퓨터가 FrontPage Server Extensions 사용 하도록 설정 되었는지 확인 합니다.  
   
 #### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>오류 메시지: '\<사이트 > ' 웹 사이트를 만들 수 없습니다. FrontPage Server Extensions와 통신 하기 위한 구성 요소가 설치 되어 있지 않습니다.  
- 게시 중인 컴퓨터에 Microsoft Visual Studio 웹 제작 구성 요소가 설치 되어 있는지 확인 합니다. Express 사용자의 경우이 구성 요소는 기본적으로 설치 되지 않습니다. 자세한 내용은 [http://go.microsoft.com/fwlink/?LinkId=102310](https://go.microsoft.com/fwlink/?LinkId=102310)를 참조하세요.  
+ 게시 중인 컴퓨터에 Microsoft Visual Studio 웹 제작 구성 요소가 설치 되어 있는지 확인 합니다. Express 사용자의 경우이 구성 요소는 기본적으로 설치 되지 않습니다. 자세한 내용은 [http://go.microsoft.com/fwlink/?LinkId=102310](https://support.microsoft.com/kb/945358/en-us)를 참조하세요.  
   
 #### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>오류 메시지: 파일 ' 6.0.0.0, Version =, Culture = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture =\*, Type = win32 '를 찾을 수 없습니다.  
  비주얼 스타일을 사용 하 여 WPF 응용 프로그램을 게시 하려고 하면이 오류 메시지가 나타납니다. 이 문제를 해결 하려면 [방법: 비주얼 스타일을 사용 하 여 WPF 응용 프로그램 게시](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)를 참조 하세요.  

@@ -18,12 +18,12 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5bab07b8ba0b71bd880135518ff9ff5fc697d54c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 77bb2c7abb49dbf6fe973ebc80f8340000e4afbd
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302815"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846000"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>레거시 상태 시스템 워크플로 디자이너 사용
 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 또는 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]를 대상으로 하는 [!INCLUDE[vs2010](../includes/vs2010-md.md)]에서 새 상태 시스템 워크플로 프로젝트를 만드는 경우 **상태 시스템 워크플로 콘솔 응용 프로그램** 또는 **상태 시스템 워크플로 라이브러리** 레거시 프로젝트 템플릿을 사용 하도록 선택할 수 있습니다. 이러한 상태 시스템 프로젝트 템플릿 중 하나를 선택하면 상태 시스템 디자이너가 레거시 Workflow Designer 사용자 인터페이스로 나타납니다. 레거시 상태 시스템 프로젝트 템플릿에 대 한 자세한 내용은 [방법: 상태 시스템 워크플로 콘솔 응용 프로그램 만들기 (레거시)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) 및 [방법: 상태 시스템 워크플로 라이브러리 만들기 (레거시)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)를 참조 하세요.
@@ -40,17 +40,17 @@ ms.locfileid: "74302815"
 ## <a name="state-machine-workflow-activities"></a>상태 시스템 워크플로 활동
  다음 표에서는 상태 시스템 Workflow Designer에서 사용되는 핵심 활동에 대해 설명합니다.
 
-|도구 상자 이름|작업|설명|
+|도구 상자 이름|활동|설명|
 |------------------|--------------|-----------------|
-|**상태**|[StateActivity](https://go.microsoft.com/fwlink?LinkID=65042)|상태 시스템의 상태를 나타냅니다. 추가 **Stateactivity** 활동을 포함할 수 있습니다. 자세한 내용은 [StateActivity 활동 사용](https://go.microsoft.com/fwlink?LinkID=65083)을 참조 하세요.|
-|**SetState**|[SetStateActivity](https://go.microsoft.com/fwlink?LinkID=65041)|새 상태로의 전환을 지정합니다. 자세한 내용은 [SetStateActivity 활동 사용](https://go.microsoft.com/fwlink?LinkID=65082)을 참조 하세요.|
-|**StateInitialization**|[StateInitializationActivity](https://go.microsoft.com/fwlink?LinkID=65044)|상태가 시작되면 실행되며, 다른 활동을 포함할 수도 있습니다. 자세한 내용은 [StateInitialization 활동 사용](https://go.microsoft.com/fwlink?LinkID=65006)을 참조 하세요.|
-|**StateFinalization**|[StateFinalizationActivity](https://go.microsoft.com/fwlink?LinkID=65043)|[Stateactivity](https://go.microsoft.com/fwlink?LinkID=65042) 활동을 나갈 때 포함 된 활동을 실행 합니다. 자세한 내용은 [StateFinalizationActivity 활동 사용](https://go.microsoft.com/fwlink?LinkID=65008)을 참조 하세요.|
-|**EventDriven**|[EventDrivenActivity](https://go.microsoft.com/fwlink?LinkID=65029)|실행 시작 여부가 외부 이벤트에 따라 달라지는 상태에 사용됩니다. **EventDrivenActivity** 활동에는 첫 번째 자식 활동으로 [ieventactivity](https://go.microsoft.com/fwlink?LinkID=65032) 인터페이스를 구현 하는 활동이 있어야 합니다. 자세한 내용은 [EventDrivenActivity 활동 사용](https://go.microsoft.com/fwlink?LinkID=65068)을 참조 하세요.|
+|**상태**|[StateActivity](https://msdn2.microsoft.com/library/system.workflow.activities.stateactivity.aspx)|상태 시스템의 상태를 나타냅니다. 추가 **Stateactivity** 활동을 포함할 수 있습니다. 자세한 내용은 [StateActivity 활동 사용](https://msdn2.microsoft.com/library/bb628612.aspx)을 참조 하세요.|
+|**SetState**|[SetStateActivity](https://msdn2.microsoft.com/library/system.workflow.activities.setstateactivity.aspx)|새 상태로의 전환을 지정합니다. 자세한 내용은 [SetStateActivity 활동 사용](https://msdn2.microsoft.com/library/bb628469.aspx)을 참조 하세요.|
+|**StateInitialization**|[StateInitializationActivity](https://msdn2.microsoft.com/library/system.workflow.activities.stateinitializationactivity.aspx)|상태가 시작되면 실행되며, 다른 활동을 포함할 수도 있습니다. 자세한 내용은 [StateInitialization 활동 사용](https://msdn2.microsoft.com/library/bb675253.aspx)을 참조 하세요.|
+|**StateFinalization**|[StateFinalizationActivity](https://msdn2.microsoft.com/library/system.workflow.activities.statefinalizationactivity.aspx)|[Stateactivity](https://msdn2.microsoft.com/library/system.workflow.activities.stateactivity.aspx) 활동을 나갈 때 포함 된 활동을 실행 합니다. 자세한 내용은 [StateFinalizationActivity 활동 사용](https://msdn2.microsoft.com/library/bb675278.aspx)을 참조 하세요.|
+|**EventDriven**|[EventDrivenActivity](https://msdn2.microsoft.com/library/system.workflow.activities.eventdrivenactivity.aspx)|실행 시작 여부가 외부 이벤트에 따라 달라지는 상태에 사용됩니다. **EventDrivenActivity** 활동에는 첫 번째 자식 활동으로 [ieventactivity](https://msdn2.microsoft.com/library/system.workflow.activities.ieventactivity.aspx) 인터페이스를 구현 하는 활동이 있어야 합니다. 자세한 내용은 [EventDrivenActivity 활동 사용](https://msdn2.microsoft.com/library/bb628466.aspx)을 참조 하세요.|
 
- 상태 시스템 워크플로의 주 구성 요소는 [Stateactivity](https://go.microsoft.com/fwlink?LinkID=65042) 활동입니다. 상태 시스템 워크플로의 여러 지점에서 이벤트가 캡처되므로 이벤트와 연결된 작업을 처리하기 위해 여러 상태가 시작됩니다. 워크플로 수명 중에 워크플로가 여러 상태를 끝내고 시작할 수 있습니다. 이러한 상태는 [Setstateactivity](https://go.microsoft.com/fwlink?LinkID=65041) 활동을 사용 하 여 서로 연결 됩니다.
+ 상태 시스템 워크플로의 주 구성 요소는 [Stateactivity](https://msdn2.microsoft.com/library/system.workflow.activities.stateactivity.aspx) 활동입니다. 상태 시스템 워크플로의 여러 지점에서 이벤트가 캡처되므로 이벤트와 연결된 작업을 처리하기 위해 여러 상태가 시작됩니다. 워크플로 수명 중에 워크플로가 여러 상태를 끝내고 시작할 수 있습니다. 이러한 상태는 [Setstateactivity](https://msdn2.microsoft.com/library/system.workflow.activities.setstateactivity.aspx) 활동을 사용 하 여 서로 연결 됩니다.
 
- 새 **Stateactivity** 를 워크플로 디자인 화면으로 끌어 올 때 [EventDrivenActivity](https://go.microsoft.com/fwlink?LinkID=65029), [StateInitializationActivity](https://go.microsoft.com/fwlink?LinkID=65044), [StateFinalizationActivity](https://go.microsoft.com/fwlink?LinkID=65043)또는 추가 **stateactivity** 활동을 자식 활동으로 추가할 수 있습니다.
+ 새 **Stateactivity** 를 워크플로 디자인 화면으로 끌어 올 때 [EventDrivenActivity](https://msdn2.microsoft.com/library/system.workflow.activities.eventdrivenactivity.aspx), [StateInitializationActivity](https://msdn2.microsoft.com/library/system.workflow.activities.stateinitializationactivity.aspx), [StateFinalizationActivity](https://msdn2.microsoft.com/library/system.workflow.activities.statefinalizationactivity.aspx)또는 추가 **stateactivity** 활동을 자식 활동으로 추가할 수 있습니다.
 
 > [!CAUTION]
 > 상태 시스템 워크플로 디자이너를 사용 하 여 워크플로를 만드는 경우 **문서 개요** 뷰 창을 사용 하 여 디자인 중인 워크플로의 구조를 모니터링 해야 합니다. **문서 개요** 뷰 창에 있는 상태 시스템 워크플로의 구조 보기는 워크플로 마크업 파일의 활동에 대 한 논리적 레이아웃을 반영 합니다. 디자인 화면에 나타나는 워크플로 활동의 실제 레이아웃은 워크플로 마크업 파일의 활동에 대한 논리 레이아웃을 미러링하지 않을 수도 있습니다.
@@ -58,4 +58,4 @@ ms.locfileid: "74302815"
 > **문서 개요** 창을 열려면 **보기** 메뉴에서 **다른 창**을 가리킨 다음 **문서 개요**를 선택 합니다.
 
 ## <a name="see-also"></a>참고 항목
- [방법: 상태 시스템 워크플로 콘솔 응용 프로그램 만들기 (레거시)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) 방법: [StateFinalizationActivity 활동](https://go.microsoft.com/fwlink?LinkID=65008) 을 사용 하 여 [StateInitializationActivity 활동](https://go.microsoft.com/fwlink?LinkID=65006) 을 사용 하 여 [상태 시스템 워크플로 라이브러리 (레거시)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md) [상태 시스템](https://go.microsoft.com/fwlink?LinkID=65016) [워크플로](https://go.microsoft.com/fwlink?LinkID=65083) 만들기 [EventDrivenActivity 활동을 사용](https://go.microsoft.com/fwlink?LinkID=65068) 하 여 [setstateactivity](https://go.microsoft.com/fwlink?LinkID=65082) 활동 사용
+ [방법: 상태 시스템 워크플로 콘솔 응용 프로그램 만들기 (레거시)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) 방법: [StateFinalizationActivity 활동](https://msdn2.microsoft.com/library/bb675278.aspx) 을 사용 하 여 [StateInitializationActivity 활동](https://msdn2.microsoft.com/library/bb675253.aspx) 을 사용 하 여 [상태 시스템 워크플로 라이브러리 (레거시)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md) [상태 시스템](https://msdn2.microsoft.com/library/bb628601.aspx) [워크플로](https://msdn2.microsoft.com/library/bb628612.aspx) 만들기 [EventDrivenActivity 활동을 사용](https://msdn2.microsoft.com/library/bb628466.aspx) 하 여 [setstateactivity](https://msdn2.microsoft.com/library/bb628469.aspx) 활동 사용

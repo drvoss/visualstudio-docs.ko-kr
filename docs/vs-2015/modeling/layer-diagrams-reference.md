@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dd2b2d19e55cbaf9af63ddeafdbdf9f6d677c5bc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 448a74b739bbb339d5f3b3e56c0ba59072994109
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301611"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850626"
 ---
 # <a name="layer-diagrams-reference"></a>레이어 다이어그램: 참조
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Visual Studio에서 *레이어 다이어그램* 을 사용 하 여 시스템의 
 
 - 체크 인 및 빌드 작업을 통해 유효성 검사를 포함하여 개발 및 유지 관리 중에 의도한 아키텍처를 보강합니다.
 
-  이 항목에서는 레이어 다이어그램에서 사용할 수 있는 요소에 대해 설명합니다. 레이어 다이어그램을 만들고 그리는 방법에 대 한 자세한 내용은 [레이어 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)을 참조 하세요. 계층화 패턴에 대 한 자세한 내용은 [패턴 & 사례 사이트](https://go.microsoft.com/fwlink/?LinkId=145794)를 참조 하세요.
+  이 항목에서는 레이어 다이어그램에서 사용할 수 있는 요소에 대해 설명합니다. 레이어 다이어그램을 만들고 그리는 방법에 대 한 자세한 내용은 [레이어 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)을 참조 하세요. 계층화 패턴에 대 한 자세한 내용은 [패턴 & 사례 사이트](https://apparch.codeplex.com/Wiki/View.aspx?title=Application Patterns&referringTitle=Home)를 참조 하세요.
 
 ## <a name="reading-layer-diagrams"></a>레이어 다이어그램 읽기
  ![레이어 다이어그램의 요소](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")
@@ -58,7 +58,7 @@ Visual Studio에서 *레이어 다이어그램* 을 사용 하 여 시스템의 
 |**형태**|**요소**|**설명**|
 |---------------|-----------------|---------------------|
 |1|**레이어도**|시스템에 있는 물리적 아티팩트의 논리적 그룹입니다. 이들 아티팩트는 네임스페이스, 프로젝트, 클래스, 메서드 등에 해당할 수 있습니다.<br /><br /> 레이어에 연결 된 아티팩트를 확인 하려면 계층에 대 한 바로 가기 메뉴를 열고 **링크 보기** 를 선택 하 여 **레이어 탐색기**를 엽니다.<br /><br /> 자세한 내용은 [레이어 탐색기](#Explorer)를 참조 하세요.<br /><br /> 사용할 수 없는 **네임 스페이스 종속성** -   -이 레이어와 연결 된 아티팩트가 지정 된 네임 스페이스에 종속 될 수 없도록 지정 합니다.<br />사용할 수 없는 **네임 스페이스** -   -이 레이어와 연결 된 아티팩트가 지정 된 네임 스페이스에 속하지 않아야 함을 지정 합니다.<br />-   **필수 네임 스페이스** -이 레이어와 연결 된 아티팩트가 지정 된 네임 스페이스 중 하나에 속해야 하도록 지정 합니다.|
-|2|**관계가**|한 레이어에서 다른 레이어의 기능을 사용할 수 있지만 반대의 경우는 불가능함을 나타냅니다.<br /><br /> -   **방향** -종속성의 방향을 지정 합니다.|
+|2|**종속성**|한 레이어에서 다른 레이어의 기능을 사용할 수 있지만 반대의 경우는 불가능함을 나타냅니다.<br /><br /> -   **방향** -종속성의 방향을 지정 합니다.|
 |3|**양방향 종속성**|한 레이어에서 다른 레이어의 기능을 사용할 수 있고 반대의 경우도 가능함을 나타냅니다.<br /><br /> -   **방향** -종속성의 방향을 지정 합니다.|
 |4|**설명**|다이어그램 또는 다이어그램의 요소에 일반적인 메모를 추가하려면 사용합니다.|
 |5|**주석 링크**|다이어그램의 요소에 주석을 연결하려면 사용합니다.|

@@ -8,19 +8,19 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4b4d3e7c597766c3b416a7cb637cf0e5e99f71d5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d14de396e24874f39a09172a483ebef81a5886f2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302054"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851225"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>연습: 코딩된 UI 테스트 만들기, 편집 및 유지 관리
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 이 연습에서는 간단한 WPF(Windows Presentation Foundation) 웹 애플리케이션을 만들어, 코딩된 UI 테스트를 만들고 편집하고 유지 관리하는 방법을 보여 줍니다. 이 연습에서는 여러 타이밍 문제 및 제어 리팩터링으로 인해 중단된 테스트를 해결하기 위한 방법을 제공합니다.
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>전제 조건
  이 연습을 수행하려면 다음이 필요합니다.
 
 - Visual Studio Enterprise
@@ -369,22 +369,22 @@ ms.locfileid: "74302054"
 ## <a name="external-resources"></a>외부 리소스
 
 ### <a name="videos"></a>비디오
- 비디오 코딩 된 UI 테스트 ![에 대 한 링크](../data-tools/media/playvideo.gif "링크 playvideo 보려면") [-DeepDive-Deepdive-episode1-gettingstarted-get started](https://go.microsoft.com/fwlink/?LinkID=230573)
+ 비디오 코딩 된 UI 테스트 ![에 대 한 링크](../data-tools/media/playvideo.gif "동영상 재생") [-DeepDive-Deepdive-episode1-gettingstarted-get started](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21118)
 
- 비디오 코딩 된 UI 테스트 ![에 대 한 링크](../data-tools/media/playvideo.gif "링크 playvideo 보려면") [-DeepDive-Episode2-deepdive-episode2-maintainenceanddebugging](https://go.microsoft.com/fwlink/?LinkID=230574)
+ 비디오 코딩 된 UI 테스트 ![에 대 한 링크](../data-tools/media/playvideo.gif "동영상 재생") [-DeepDive-Episode2-deepdive-episode2-maintainenceanddebugging](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21116)
 
- 비디오 코딩 된 UI 테스트 ![에 대 한 링크](../data-tools/media/playvideo.gif "링크 playvideo 보려면") [-DeepDive-Episode3-핸드 코딩](https://go.microsoft.com/fwlink/?LinkID=230575)
+ 비디오 코딩 된 UI 테스트 ![에 대 한 링크](../data-tools/media/playvideo.gif "동영상 재생") [-DeepDive-Episode3-핸드 코딩](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21117)
 
 ### <a name="hands-on-lab"></a>실습
- [MSDN 가상 랩: Visual Studio 2010을 사용하여 코딩된 UI 테스트 만들기 소개](https://go.microsoft.com/fwlink/?LinkID=22508)
+ [MSDN 가상 랩: Visual Studio 2010을 사용하여 코딩된 UI 테스트 만들기 소개](https://windows.microsoft.com/en-US/windows/products/windows-media-player)
 
 ### <a name="faq"></a>FAQ
- [코딩된 UI 테스트 FAQ - 1](https://go.microsoft.com/fwlink/?LinkID=230576)
+ [코딩된 UI 테스트 FAQ - 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
 
- [코딩된 UI 테스트 FAQ - 2](https://go.microsoft.com/fwlink/?LinkID=230578)
+ [코딩된 UI 테스트 FAQ - 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>포럼
- [Visual Studio UI 자동화 테스트(CodedUI 포함)](https://go.microsoft.com/fwlink/?LinkID=224497)
+ [Visual Studio UI 자동화 테스트(CodedUI 포함)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
 ## <a name="see-also"></a>참고 항목
  [UI 자동화를 사용 하 여 코드 테스트](../test/use-ui-automation-to-test-your-code.md) 코딩 [된](https://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b) [ui 테스트 및 작업 기록에 대해 지원 되는 구성 및 플랫폼](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) 코딩 된 Ui 테스트 [편집기를 사용 하 여 코딩 된 ui 테스트 편집](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

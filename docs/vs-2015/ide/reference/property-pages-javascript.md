@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ffb1298981481bde063de898dc81c02dad548888
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e9fa22a4ed52c3e0a1afdda0105716c0de9b3316
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297832"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851819"
 ---
 # <a name="property-pages-javascript"></a>속성 페이지, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,11 +62,11 @@ ms.locfileid: "74297832"
 
  **실행할 디버거** 디버거에 대 한 기본 호스트를 지정 합니다.
 
-- Visual Studio 호스트 컴퓨터에서 애플리케이션을 시작하려면 **로컬 컴퓨터**를 선택합니다. 자세한 내용은 [로컬 컴퓨터에서 Windows 스토어 앱 실행](https://go.microsoft.com/fwlink/?LinkId=234912)을 참조하세요.
+- Visual Studio 호스트 컴퓨터에서 애플리케이션을 시작하려면 **로컬 컴퓨터**를 선택합니다. 자세한 내용은 [로컬 컴퓨터에서 Windows 스토어 앱 실행](https://msdn.microsoft.com/library/windows/apps/hh441483(v=VS.85).aspx)을 참조하세요.
 
-- 시뮬레이터에서 애플리케이션을 시작하려면 **시뮬레이터**를 선택합니다. 자세한 내용은 [시뮬레이터에서 Windows 스토어 앱 실행](https://go.microsoft.com/fwlink/?LinkId=234913)을 참조하세요.
+- 시뮬레이터에서 애플리케이션을 시작하려면 **시뮬레이터**를 선택합니다. 자세한 내용은 [시뮬레이터에서 Windows 스토어 앱 실행](https://msdn.microsoft.com/library/windows/apps/hh441475(v=VS.85).aspx)을 참조하세요.
 
-- 원격 컴퓨터에서 애플리케이션을 시작하려면 **원격 컴퓨터**를 선택합니다. 원격 디버깅에 대한 자세한 내용은 [원격 컴퓨터에서 Windows 스토어 앱 실행](https://go.microsoft.com/fwlink/?LinkId=234914)을 참조하세요.
+- 원격 컴퓨터에서 애플리케이션을 시작하려면 **원격 컴퓨터**를 선택합니다. 원격 디버깅에 대한 자세한 내용은 [원격 컴퓨터에서 Windows 스토어 앱 실행](https://msdn.microsoft.com/library/windows/apps/hh441469(v=VS.85).aspx)을 참조하세요.
 
   **응용 프로그램 시작** F5 키를 누르거나 **디버그**, **디버깅 시작**을 클릭 하면 응용 프로그램을 시작할지 여부를 지정 합니다. 애플리케이션을 시작하려면 **예**를 선택하고, 그렇지 않은 경우 **아니요**를 선택합니다. **아니요**를 선택하더라도 애플리케이션을 시작하는 다른 방법을 사용하는 경우 애플리케이션을 디버그할 수 있습니다.
 

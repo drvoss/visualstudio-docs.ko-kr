@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eed389a3847145a0f37eb3141526a38e4374d368
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6de07c705129aaef705d0c9651d53fdf35e6d0c0
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297905"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850756"
 ---
 # <a name="network-usage"></a>네트워크 사용량
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,5 +75,5 @@ Visual Studio **네트워크** 진단 도구는 [Windows.Web.Http API](https://m
   
 ## <a name="see-also"></a>참고 항목  
  [디버깅 하지 않고 프로 파일링 도구 실행](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
- [Visual Studio 블로그: Visual Studio의 네트워크 검사기 소개](https://go.microsoft.com/fwlink/?LinkId=535022)   
+ [Visual Studio 블로그: Visual Studio의 네트워크 검사기 소개](https://blogs.msdn.com/b/visualstudio/)   
  [Channel 9 비디오: VS 진단 도구 – 새 네트워크 프로파일러](https://channel9.msdn.com/Series/ConnectOn-Demand/206)

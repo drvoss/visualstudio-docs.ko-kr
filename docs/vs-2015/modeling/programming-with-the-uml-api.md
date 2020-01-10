@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dcb179ae80e60654c981da8c76e9a57e6fb8ed66
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: bdf1111198c7f874d03596382372fe25851e37d3
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296066"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852124"
 ---
 # <a name="programming-with-the-uml-api"></a>Programming with the UML API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Visual Studio의 UML API를 사용 하 여 UML 모델 및 다이어그램을 만
 
 |항목|설명된 예제 형식 및 메서드|설명된 기능|
 |-----------|-----------------------------------------|------------------------|
-|[UML API를 사용하여 관계 탐색](../modeling/navigate-relationships-with-the-uml-api.md)|UML 요소와 해당 속성 및 연결. 예: IElement 및 해당 하위 항목(IClass, IActivity, IUseCase, IComponent, IInteraction, IModel, IPackage 포함)|Visual Studio에서 UML 모델은 uml 사양 버전 2.1.2을 따르며 uml [리소스 페이지](https://go.microsoft.com/fwlink/?LinkId=160796)에서 가져올 수 있습니다. 각 형식은 UML 형식과 같은 이름을 사용하고 접두사 "I"이 추가된 인터페이스입니다.|
+|[UML API를 사용하여 관계 탐색](../modeling/navigate-relationships-with-the-uml-api.md)|UML 요소와 해당 속성 및 연결. 예: IElement 및 해당 하위 항목(IClass, IActivity, IUseCase, IComponent, IInteraction, IModel, IPackage 포함)|Visual Studio에서 UML 모델은 uml 사양 버전 2.1.2을 따르며 uml [리소스 페이지](https://www.uml.org/)에서 가져올 수 있습니다. 각 형식은 UML 형식과 같은 이름을 사용하고 접두사 "I"이 추가된 인터페이스입니다.|
 |[UML 모델에서 요소 및 관계 만들기](../modeling/create-elements-and-relationships-in-uml-models.md)|IPackage.CreateClass()<br /><br /> IClass.CreateOperation()|각 요소 형식에는 자식을 만들기 위한 메서드가 있습니다.|
 |[다이어그램에 UML 모델 표시](../modeling/display-a-uml-model-on-diagrams.md)|IShape, IDiagram<br /><br /> IShape.Move()|모델의 각 요소는 다이어그램의 모양으로 표현할 수 있습니다. 경우에 따라 각 개체에 대한 새 모양을 만들 수 있습니다. 이들 모양을 이동, 크기 조정, 색 지정하고 축소 또는 확장할 수 있습니다.|
 |[UML 모델 탐색](../modeling/navigate-the-uml-model.md)|IModelStore<br /><br /> IDiagramContext|모델 저장소에는 모델이 저장됩니다.<br /><br /> 다이어그램 컨텍스트는 현재 다이어그램 및 저장소에 대한 액세스를 제공합니다.|

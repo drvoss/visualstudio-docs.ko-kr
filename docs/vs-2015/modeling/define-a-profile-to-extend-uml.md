@@ -16,12 +16,12 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bdb6620f8d73bf7fae7b7dbb1b92af38e71345b6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b680c2e27b871e654618b4c0ada0904744751282
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295674"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850476"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>프로필을 정의하여 UML 확장
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "74295674"
 
  지원되는 버전의 Visual Studio와 함께 여러 프로필이 설치됩니다. 이 기능을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요. 이러한 프로필 및 스테레오 타입을 적용 하는 방법에 대 한 자세한 내용은 [프로필 및 스테레오 타입을 사용 하 여 모델 사용자 지정](../modeling/customize-your-model-with-profiles-and-stereotypes.md)을 참조 하세요.
 
- 사용자 고유의 프로필을 정의하여 비즈니스 영역 또는 아키텍처에 맞게 UML을 조정 및 확장할 수 있습니다. 예를 들면 다음과 같습니다.
+ 사용자 고유의 프로필을 정의하여 비즈니스 영역 또는 아키텍처에 맞게 UML을 조정 및 확장할 수 있습니다. 예를 들면 다음과 같습니다.:
 
 - 웹 사이트를 자주 정의하는 경우 클래스 다이어그램의 클래스에 적용할 수 있는 «WebPage» 스테레오타입을 제공하는 고유한 프로필을 정의할 수 있습니다. 그런 다음 클래스 다이어그램을 사용하여 웹 사이트를 계획할 수 있습니다. 모든 «WebPage» 클래스에 페이지 콘텐츠, 스타일 등에 대한 추가 속성이 있습니다.
 
@@ -76,7 +76,7 @@ ms.locfileid: "74295674"
 6. 자신의 컴퓨터에 설치하도록 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 다른 사용자에게 확장 파일을 보냅니다.
 
 ## <a name="AddProfile"></a>Visual Studio 확장에 프로필을 추가 하는 방법
- 프로필을 설치하고 다른 사용자에게 보낼 수 있으려면 Visual Studio 확장에 프로필을 추가해야 합니다. 자세한 내용은 [Visual Studio 확장 배포](https://go.microsoft.com/fwlink/?LinkId=160780)를 참조 하세요.
+ 프로필을 설치하고 다른 사용자에게 보낼 수 있으려면 Visual Studio 확장에 프로필을 추가해야 합니다. 자세한 내용은 [Visual Studio 확장 배포](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)를 참조 하세요.
 
 #### <a name="to-define-a-profile-in-a-new-visual-studio-extension"></a>새 Visual Studio 확장에서 프로필을 정의하려면
 
@@ -135,7 +135,7 @@ ms.locfileid: "74295674"
 
 1. 다음 세 개의 파일이 포함된 Windows 디렉터리를 만듭니다.
 
-    - *프로필* `.profile`
+    - *YourProfile* `.profile`
 
     - `extension.vsixmanifest`
 
@@ -196,7 +196,7 @@ ms.locfileid: "74295674"
     > [!NOTE]
     > Visual Studio 확장 프로젝트를 사용하여 확장을 빌드하는 경우 솔루션 탐색기를 사용하여 프로젝트에 새 폴더를 추가합니다.
 
-3. 새 디렉터리의 이름을 지역화된 문화권에 대한 ISO 짧은 코드로 변경합니다. 예를 들어 불가리아어는 `bg`이고, 프랑스어는 `fr`입니다. `fr-CA`와 같은 특정 문화권이 아니라 일반적으로 두 문자로 이루어진 중립 문화권 코드를 사용해야 합니다. 문화권 코드에 대 한 자세한 내용은 전체 문화권 코드 목록을 제공 하는 [CultureInfo. GetCultures 메서드](https://go.microsoft.com/fwlink/?LinkId=160782)를 참조 하세요.
+3. 새 디렉터리의 이름을 지역화된 문화권에 대한 ISO 짧은 코드로 변경합니다. 예를 들어 불가리아어는 `bg`이고, 프랑스어는 `fr`입니다. `fr-CA`와 같은 특정 문화권이 아니라 일반적으로 두 문자로 이루어진 중립 문화권 코드를 사용해야 합니다. 문화권 코드에 대 한 자세한 내용은 전체 문화권 코드 목록을 제공 하는 [CultureInfo. GetCultures 메서드](https://msdn.microsoft.com/library/system.globalization.cultureinfo.getcultures(VS.100).aspx)를 참조 하세요.
 
 4. 기본 프로필의 복사본을 새 디렉터리에 추가합니다. 파일 이름을 변경하지 마세요.
 
@@ -220,9 +220,9 @@ ms.locfileid: "74295674"
 7. 이전 섹션에서 설명한 대로 확장 프로젝트를 빌드하거나 모든 파일을 압축하여 Visual Studio 확장을 빌드합니다.
 
 ## <a name="Schema"></a>프로필의 구조
- UML 프로필에 대 한 XSD 파일은 다음 샘플: [스테레오 타입 및 프로필 Xsd 설정](https://go.microsoft.com/fwlink/?LinkID=213811)에서 찾을 수 있습니다. 프로필 파일 편집에 도움이 되도록 `.xsd` 파일을 다음 위치에 설치합니다.
+ UML 프로필에 대 한 XSD 파일은 다음 샘플: [스테레오 타입 및 프로필 Xsd 설정](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)에서 찾을 수 있습니다. 프로필 파일 편집에 도움이 되도록 `.xsd` 파일을 다음 위치에 설치합니다.
 
- **%ProgramFiles%\Microsoft Visual Studio [version] \Xml\Schemas**
+ **%ProgramFiles%\Microsoft Visual Studio [version]\Xml\Schemas**
 
  이 섹션에서는 C# 프로필을 예로 사용합니다. 전체 프로필 정의는 다음 위치에서 확인할 수 있습니다.
 
@@ -365,4 +365,4 @@ ms.locfileid: "74295674"
 6. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 다시 시작합니다.
 
 ## <a name="see-also"></a>참고 항목
- [Uml 모델 요소에 스테레오 타입 추가](../modeling/add-stereotypes-to-uml-model-elements.md) [uml 모델에 대 한](../modeling/standard-stereotypes-for-uml-models.md) 프로필 및 스테레오 타입 표준 스테레오 타입 [을 사용 하 여 모델 사용자 지정](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [샘플: 스테레오 타입 별 색 UML 요소](https://go.microsoft.com/fwlink/?LinkID=213841) [샘플: 스테레오 타입 설정, 프로필 XSD](https://go.microsoft.com/fwlink/?LinkID=213811)
+ [Uml 모델 요소에 스테레오 타입 추가](../modeling/add-stereotypes-to-uml-model-elements.md) [uml 모델에 대 한](../modeling/standard-stereotypes-for-uml-models.md) 프로필 및 스테레오 타입 표준 스테레오 타입 [을 사용 하 여 모델 사용자 지정](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [샘플: 스테레오 타입 별 색 UML 요소](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [샘플: 스테레오 타입 설정, 프로필 XSD](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)

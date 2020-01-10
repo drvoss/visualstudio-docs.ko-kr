@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ac299f18e544ef4f3215707abbdc3d9e8d266de6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0a038150519ea7a40a52fb1be16ed93045c09eed
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299294"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851514"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>사용자 지정 모델링 도구 상자 항목 정의
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,7 +139,7 @@ ms.locfileid: "74299294"
 > 자체적으로 다이어그램 파일을 사용하여 실험한 후 .tbxinfo 파일 사용을 시작하는 경우 도구 상자에 기존 및 새 버전의 도구 상자 항목이 모두 포함될 수도 있습니다. 이 문제는 .tbxinfo 파일에 다이어그램 파일의 이름을 잘못 입력한 경우에도 발생할 수 있습니다. 이 문제가 발생 하는 경우 도구 상자의 바로 가기 메뉴에서 **도구 상자 다시 설정**을 선택 합니다. 사용자 지정 도구 상자 항목이 사라집니다. Visual Studio를 다시 시작하면 올바른 사용자 지정 항목이 나타납니다.
 
 ## <a name="Extension"></a>Visual Studio 확장에서 도구 상자 항목을 배포 하는 방법
- 도구 상자 항목을 VSIX (Visual Studio Extension)에 패키지화 하 여 다른 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 사용자에 게 배포할 수 있습니다. 동일한 VSIX 파일에 명령, 프로필 및 기타 확장을 패키징할 수 있습니다. 자세한 내용은 [Visual Studio 확장 배포](https://go.microsoft.com/fwlink/?LinkId=160780)를 참조 하세요.
+ 도구 상자 항목을 VSIX (Visual Studio Extension)에 패키지화 하 여 다른 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 사용자에 게 배포할 수 있습니다. 동일한 VSIX 파일에 명령, 프로필 및 기타 확장을 패키징할 수 있습니다. 자세한 내용은 [Visual Studio 확장 배포](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)를 참조 하세요.
 
  Visual Studio 확장을 빌드하는 일반적인 방법은 VSIX 프로젝트 템플릿을 사용하는 것입니다. 이렇게 하려면 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]가 설치되어 있어야 합니다.
 
@@ -220,7 +220,7 @@ ms.locfileid: "74299294"
 
 3. 이름이 언어의 문화권 코드인 폴더에 각 추가 어셈블리를 배치합니다. 예를 들어 이름이 **fr**인 폴더 안에 프랑스어 버전의 어셈블리를 저장 합니다.
 
-4. `fr-CA`와 같은 특정 문화권이 아니라 일반적으로 두 문자로 이루어진 중립 문화권 코드를 사용해야 합니다. 문화권 코드에 대 한 자세한 내용은 전체 문화권 코드 목록을 제공 하는 [CultureInfo. GetCultures 메서드](https://go.microsoft.com/fwlink/?LinkId=160782)를 참조 하세요.
+4. `fr-CA`와 같은 특정 문화권이 아니라 일반적으로 두 문자로 이루어진 중립 문화권 코드를 사용해야 합니다. 문화권 코드에 대 한 자세한 내용은 전체 문화권 코드 목록을 제공 하는 [CultureInfo. GetCultures 메서드](https://msdn.microsoft.com/library/system.globalization.cultureinfo.getcultures(VS.100).aspx)를 참조 하세요.
 
 5. Visual Studio 확장을 빌드하고 배포합니다.
 

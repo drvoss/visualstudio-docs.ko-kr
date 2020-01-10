@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8d5373ae27797aa3bfe4627fb84ce393dce9e910
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2d5ddea477aa7295c41097177265b43483b7aa45
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300882"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850412"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>방법: 바로 가기 메뉴에 명령 추가
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "74300882"
 
 3. [CommandSet 클래스의 메서드를 작성](#CommandSet) 하 여 명령을 표시 하 고 명령이 수행할 작업을 정의 합니다.
 
-   샘플은 [시각화 및 모델링 SDK 웹 사이트](https://go.microsoft.com/fwlink/?LinkID=185579)를 참조 하세요.
+   샘플은 [시각화 및 모델링 SDK 웹 사이트](https://www.visualstudio.com/)를 참조 하세요.
 
 > [!NOTE]
 > CommandSet.cs의 메서드를 재정의하여 잘라내기, 붙여넣기, 모두 선택, 인쇄 등의 몇 가지 기존 명령 동작도 수정할 수 있습니다. 자세한 내용은 [방법: 표준 메뉴 명령 수정](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)을 참조 하세요.
@@ -143,12 +143,12 @@ ms.locfileid: "74300882"
 
 2. `ProvideMenuResource` 특성을 찾습니다.
 
-3. 특성의 `version` 매개 변수(두 번째 매개 변수)를 증분합니다. 원하는 경우 용도에 맞게 매개 변수 이름을 명시적으로 작성할 수 있습니다. 예를 들면 다음과 같습니다.
+3. 특성의 `version` 매개 변수(두 번째 매개 변수)를 증분합니다. 원하는 경우 용도에 맞게 매개 변수 이름을 명시적으로 작성할 수 있습니다. 예를 들면 다음과 같습니다.:
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
 ## <a name="CommandSet"></a>명령의 동작을 정의 합니다.
- DS에는 DslPackage\GeneratedCode\CommandSet.cs에서 선언된 partial 클래스에서 구현되는 일부 명령이 이미 포함되어 있습니다. 새 명령을 추가하려면 같은 클래스의 partial 선언을 포함하는 새 파일을 만들어 이 클래스를 확장해야 합니다. 클래스의 이름은 일반적으로`CommandSet` *>\<* 합니다. 먼저 클래스 이름을 확인하고 해당 내용을 검사하면 유용합니다.
+ DS에는 DslPackage\GeneratedCode\CommandSet.cs에서 선언된 partial 클래스에서 구현되는 일부 명령이 이미 포함되어 있습니다. 새 명령을 추가하려면 같은 클래스의 partial 선언을 포함하는 새 파일을 만들어 이 클래스를 확장해야 합니다. 클래스의 이름은 일반적으로`CommandSet` *\<* 합니다. 먼저 클래스 이름을 확인하고 해당 내용을 검사하면 유용합니다.
 
  명령 집합 클래스는 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>에서 파생됩니다.
 
@@ -162,7 +162,7 @@ ms.locfileid: "74300882"
 
 2. **Dslpackage**에서 **custom Code**라는 폴더를 만듭니다. 이 폴더에 `CommandSet.cs`라는 새 클래스 파일을 만듭니다.
 
-3. 새 파일에 생성된 partial 클래스와 이름 및 네임스페이스가 같은 partial 선언을 작성합니다. 예를 들면 다음과 같습니다.
+3. 새 파일에 생성된 partial 클래스와 이름 및 네임스페이스가 같은 partial 선언을 작성합니다. 예를 들면 다음과 같습니다.:
 
      `namespace Company.Language1 /* Make sure this is correct */`
 

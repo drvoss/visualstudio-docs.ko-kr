@@ -11,12 +11,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 29ca6b2110038a427c76622d50f769321cda9ff9
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ca0a1613f46f8542a3ede4ce2053b3584824590e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296899"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847822"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio 그래픽 진단
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,4 +84,4 @@ Visual Studio*그래픽 진단* 는 Direct3D 앱의 렌더링 및 성능 문제�
 |제목|설명|  
 |-----------|-----------------|  
 |[Visual Studio의 디버깅](../debugger/debugging-in-visual-studio.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]의 디버깅 기능에 대해 소개합니다.|  
-|[DirectX 그래픽 및 게임](https://go.microsoft.com/fwlink/?LinkId=256498)|DirectX 그래픽 기술에 대해 설명하는 문서를 제공합니다.|
+|[DirectX 그래픽 및 게임](https://msdn.microsoft.com/library/ee663274(v=vs.85).aspx)|DirectX 그래픽 기술에 대해 설명하는 문서를 제공합니다.|

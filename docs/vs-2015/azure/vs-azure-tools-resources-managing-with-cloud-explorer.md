@@ -11,23 +11,23 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: f6ccc19ccc21b7cabcd553e9d040d20a89ed6ccb
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 64d60c3a18338956d4d34b0406fff061970d2974
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298070"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850003"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Visual Studio 클라우드 탐색기에서 Azure 계정과 연결된 리소스 관리
 
 클라우드 탐색기를 사용하여 Azure 리소스 및 리소스 그룹을 보고, 해당 속성을 검사하고, Visual Studio 내에서 핵심 개발자 진단 작업을 수행할 수 있습니다.
 
-[Azure Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040)에서와 마찬가지로 클라우드 탐색기는 Azure Resource Manager 스택을 토대로 구축되었습니다. 따라서 클라우드 탐색기는 Azure 리소스 그룹과 같은 리소스 및 논리 앱과 API 앱과 같은 Azure 서비스를 이해하고 RBAC([역할 기반 액세스 제어](/azure/role-based-access-control/role-assignments-portal))를 지원합니다.
+[Azure Portal](https://portal.azure.com/)에서와 마찬가지로 클라우드 탐색기는 Azure Resource Manager 스택을 토대로 구축되었습니다. 따라서 클라우드 탐색기는 Azure 리소스 그룹과 같은 리소스 및 논리 앱과 API 앱과 같은 Azure 서비스를 이해하고 RBAC([역할 기반 액세스 제어](/azure/role-based-access-control/role-assignments-portal))를 지원합니다.
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>전제 조건
 
 * [.Net 2.9 용 MICROSOFT AZURE SDK](https://www.microsoft.com/download/details.aspx?id=51657)를 사용 하는 Visual Studio 2015.
-* Microsoft Azure 계정 - 계정이 없는 경우 [평가판을 등록](https://go.microsoft.com/fwlink/?LinkId=623901)하거나 [Visual Studio 구독자 혜택을 활성화](https://go.microsoft.com/fwlink/?LinkId=623901)할 수 있습니다.
+* Microsoft Azure 계정 - 계정이 없는 경우 [평가판을 등록](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)하거나 [Visual Studio 구독자 혜택을 활성화](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)할 수 있습니다.
 
 > [!NOTE]
 > 클라우드 탐색기를 보려면 메뉴 모음에서 **보기** > **클라우드 탐색기**를 선택합니다.
@@ -78,7 +78,7 @@ Azure 리소스를 보려면 **리소스 종류** 또는 **리소스 그룹** �
 
 1. 상황에 맞는 메뉴에서 원하는 보기를 선택합니다.
 
-   * **리소스 종류** 보기 - [Azure Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040)에서 사용되는 일반적인 보기로, 웹앱, 스토리지 계정 및 가상 머신과 같은 형식으로 분류된 Azure 리소스를 보여 줍니다.
+   * **리소스 종류** 보기 - [Azure Portal](https://portal.azure.com/)에서 사용되는 일반적인 보기로, 웹앱, 스토리지 계정 및 가상 머신과 같은 형식으로 분류된 Azure 리소스를 보여 줍니다.
    * **리소스 그룹** 보기 - 연관된 Azure 리소스 그룹으로 Azure 리소스를 분류합니다. 리소스 그룹은 일반적으로 특정 애플리케이션에서 사용되는 Azure 리소스 번들입니다. Azure 리소스 그룹에 대한 자세한 내용은 [Azure Resource Manager 개요](/azure/azure-resource-manager/resource-group-overview)를 참조하세요.
 
    다음 이미지는 두 리소스 보기를 비교해서 보여 줍니다.
@@ -97,7 +97,7 @@ Azure 리소스를 보려면 **리소스 종류** 또는 **리소스 그룹** �
 
   ![클라우드 탐색기 스크린샷](./media/vs-azure-tools-resources-managing-with-cloud-explorer/actions-and-properties.png)
 
-모든 리소스에는 **포털에서 열기**작업이 있습니다. 이 작업을 선택하면 클라우드 탐색기는 [Azure 포털](https://go.microsoft.com/fwlink/p/?LinkID=525040)에서 선택한 리소스를 표시합니다. **포털에서 열기** 기능은 여러 층으로 중첩된 리소스를 탐색하기에 더욱 간편합니다.
+모든 리소스에는 **포털에서 열기**작업이 있습니다. 이 작업을 선택하면 클라우드 탐색기는 [Azure 포털](https://portal.azure.com/)에서 선택한 리소스를 표시합니다. **포털에서 열기** 기능은 여러 층으로 중첩된 리소스를 탐색하기에 더욱 간편합니다.
 
 추가 작업 및 속성 값은 Azure 리소스에 따라 다르게 나타날 수도 있습니다. 예를 들어 웹앱 및 논리 앱에는 **포털에서 열기** 외에 **브라우저에서 열기** 및 **디버거 연결** 작업도 있습니다. 스토리지 계정 blob, 큐 또는 테이블을 선택하면 편집기를 열려는 작업이 나타납니다. Azure 앱에는 **URL** 및 **상태** 속성이 있으며, 스토리지 리소스에는 키와 연결 문자열 속성이 있습니다.
 

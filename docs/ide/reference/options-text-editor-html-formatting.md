@@ -5,17 +5,17 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Format
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d1e5f07a2b68d86051452a16ac0f42fc9b9acf0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9e28caf7f71af7c7a07634d1732a1001a32a4aee
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666203"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568323"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>옵션, 텍스트 편집기, HTML(Web Forms), 서식 지정
 
@@ -99,6 +99,6 @@ ms.locfileid: "72666203"
 
    개별 태그나 태그 그룹의 서식 옵션을 설정할 수 있는 **태그별 옵션** 대화 상자를 표시합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [옵션 대화 상자, 환경, 일반](../../ide/reference/general-environment-options-dialog-box.md)

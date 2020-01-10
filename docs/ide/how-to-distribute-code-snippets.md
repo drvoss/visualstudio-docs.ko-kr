@@ -5,25 +5,25 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
 ms.assetid: 5f717abd-e167-47ae-818c-6b0bae100ceb
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b5ae4053e97e823952118abda11f334c5ac1083
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 23e77658b2b09f643af18a3f136f5428828cfb5c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656075"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591062"
 ---
 # <a name="how-to-distribute-code-snippets"></a>방법: 코드 조각 배포
 
 친구에게 코드 조각을 제공하고 **코드 조각 관리자**를 사용하여 고유한 컴퓨터에 코드 조각을 설치하면 됩니다. 그러나 배포할 코드 조각이 여러 개이거나 더 광범위하게 배포하려는 경우 Visual Studio 확장에 코드 조각 파일을 포함할 수 있습니다. 그런 다음, Visual Studio 사용자는 확장을 설치하여 코드 조각을 가져올 수 있습니다.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 **Visual Studio 확장 개발** 워크로드를 설치하여 **VSIX 프로젝트** 프로젝트 템플릿에 액세스합니다.
 
@@ -123,6 +123,6 @@ ms.locfileid: "72656075"
     Console.WriteLine("Hello, World!")
     ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 조각](../ide/code-snippets.md)

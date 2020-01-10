@@ -2,17 +2,17 @@
 title: 자주 사용되는 명령의 기본 바로 가기 키
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eda902db03d7211a4025663088cf8bf3718e4a2f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c7aebdc4c734f6831dc6ec1315aa7263b73cd30b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652526"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596725"
 ---
 # <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Visual Studio에서 자주 사용되는 바로 가기 키
 
@@ -138,7 +138,7 @@ ms.locfileid: "72652526"
 |-------------| - |
 |Tools.AttachtoProcess|**Ctrl+Alt+P**[전역]|
 
-## <a name="view"></a>보기
+## <a name="view"></a>View
 
 |명령|바로 가기 키[컨텍스트]|
 |--------------| - |
@@ -169,7 +169,7 @@ ms.locfileid: "72652526"
 |창.다음문서창으로이동|**Ctrl+Tab**[전역]|
 |창.다음분할창|**F6**[전역]|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio에서 바로 가기 키 확인 및 사용자 지정](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 - [Visual Studio의 모든 바로 가기 키](default-keyboard-shortcuts-in-visual-studio.md)

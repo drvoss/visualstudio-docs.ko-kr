@@ -9,17 +9,17 @@ helpviewer_keywords:
 - text searches, replacing text
 - find and replace
 - replace in files
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a30fdbc13222ac23146595af1984b27aeed0f758
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dddd55714e53516ba1ccd8a11c99761a4db7136a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72621840"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585628"
 ---
 # <a name="replace-in-files"></a>파일에서 바꾸기
 
@@ -101,7 +101,7 @@ ms.locfileid: "72621840"
 > [!CAUTION]
 > 편집을 위해 열려 있는 파일에서만 **실행 취소**를 사용할 수 있습니다. 이 옵션을 선택하지 않으면 편집을 위해 열려 있지 않던 파일은 닫혀 있고 **실행 취소** 옵션을 해당 파일에서 사용할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [텍스트 찾기 및 바꾸기](../ide/finding-and-replacing-text.md)
 - [파일에서 찾기](../ide/find-in-files.md)

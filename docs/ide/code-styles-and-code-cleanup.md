@@ -2,27 +2,27 @@
 title: 코드 스타일 옵션 및 코드 정리
 ms.date: 04/25/2019
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Code_Style.General
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d653898e6c6a8ab856a5b7763d12fd793708b9f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9d540339ca25fc42fc05df4818a6d05204ccae0e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631101"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585407"
 ---
 # <a name="code-style-preferences"></a>코드 스타일 기본 설정
 
 [EditorConfig 파일](#code-styles-in-editorconfig-files)을 사용하거나 텍스트 편집기 [**옵션** 페이지](#code-styles-in-the-options-dialog-box)의 Visual Studio에서 편집하는 모든 코드에 대해 프로젝트별 코드 스타일 설정을 정의할 수 있습니다. C# 코드의 경우 **코드 정리**(Visual Studio 2019) 및 **문서 서식**(Visual Studio 2017) 명령을 사용하여 이러한 코드 스타일 기본 설정을 적용하도록 Visual Studio를 구성할 수도 있습니다.
 
 > [!NOTE]
-> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio의 편집기 동작](/visualstudio/mac/editor-behavior)을 참조하세요.
+> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio의 편집기 동작](/visualstudio/mac/editor-behavior)을 참조하세요.
 
 ## <a name="code-styles-in-editorconfig-files"></a>EditorConfig의 코드 스타일
 
@@ -38,7 +38,7 @@ EditorConfig 파일을 수동으로 채우거나, Visual Studio **옵션** 대�
 
 ## <a name="code-styles-in-the-options-dialog-box"></a>옵션 대화 상자의 코드 스타일
 
-**도구** 메뉴에서 **옵션** 대화 상자를 열어 모든 C# 및 Visual Basic 프로젝트에 대한 코드 스타일 기본 설정을 설정할 수 있습니다. **옵션** 대화 상자에서 **텍스트 편집기** > [**C#** 또는 **기본**] > **코드 스타일**  >  **일반**을 선택합니다.
+**도구** 메뉴에서 **옵션** 대화 상자를 열어 모든 C# 및 Visual Basic 프로젝트에 대한 코드 스타일 기본 설정을 설정할 수 있습니다. **옵션** 대화 상자에서 **텍스트 편집기** > [**C#** 또는 **기본**] > **코드 스타일** > **일반**을 선택합니다.
 
 목록의 각 항목에는 선택한 기본 설정의 미리 보기가 표시됩니다.
 
@@ -101,7 +101,7 @@ C# 코드 파일의 경우 Visual Studio 2019에는 편집기 하단에 **코드
 
 ::: moniker-end
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [빠른 작업](../ide/quick-actions.md)
 - [EditorConfig에 대한 .NET 코딩 규칙 설정](../ide/editorconfig-code-style-settings-reference.md)

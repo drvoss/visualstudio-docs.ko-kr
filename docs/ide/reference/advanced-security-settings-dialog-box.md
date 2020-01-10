@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - Advanced Security Settings dialog box
 ms.assetid: 2e7aefe9-6d20-4f3e-b257-aee1ebcc6f5d
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1fcc3d09e43fc5358cbe507c5045c16cc9f8cf9
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 033c8d9c97d54b972a7bf30e9e1e04171e5b505e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461858"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595841"
 ---
 # <a name="advanced-security-settings-dialog-box"></a>고급 보안 설정 대화 상자
 
@@ -38,6 +38,6 @@ ms.locfileid: "68461858"
 
 애플리케이션이 **게시** 페이지에 지정한 **설치 URL**에 해당하는 웹 사이트 또는 서버 공유에 액세스하도록 허용하려면 여기에 해당 URL을 입력합니다. 이 옵션은 **원본 사이트에 애플리케이션 액세스 허용**을 선택한 경우에만 사용 가능합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [프로젝트 디자이너, 보안 페이지](../../ide/reference/security-page-project-designer.md)

@@ -6,17 +6,17 @@ f1_keywords:
 - vs.externaltools
 helpviewer_keywords:
 - external tools [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1caf72ea2dccd9dfe2978726834e8066a9f5b56b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0f22c687f88c7736d5c088ebc28ff490c4c16b8f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652388"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591296"
 ---
 # <a name="manage-external-tools"></a>외부 도구 관리
 
@@ -29,7 +29,7 @@ ms.locfileid: "72652388"
 ::: moniker range="vs-2017"
 
 * [Visual Studio 확장 관리](finding-and-using-visual-studio-extensions.md)를 위한 **확장 및 업데이트**
-* [코드 조각 구성을 위한](code-snippets.md) **코드 조각 관리자**
+* [코드 조각 구성을 위한](code-snippets.md)**코드 조각 관리자**
 * [메뉴 및 도구 모음 사용자 지정](how-to-customize-menus-and-toolbars-in-visual-studio.md)을 위한 **사용자 지정**
 * [Visual Studio IDE 및 기타 도구에 대한 다양한 옵션 설정](reference/options-dialog-box-visual-studio.md)을 위한 **옵션**
 
@@ -37,7 +37,7 @@ ms.locfileid: "72652388"
 
 ::: moniker range=">=vs-2019"
 
-* [코드 조각 구성을 위한](code-snippets.md) **코드 조각 관리자**
+* [코드 조각 구성을 위한](code-snippets.md)**코드 조각 관리자**
 * [메뉴 및 도구 모음 사용자 지정](how-to-customize-menus-and-toolbars-in-visual-studio.md)을 위한 **사용자 지정**
 * [Visual Studio IDE 및 기타 도구에 대한 다양한 옵션 설정](reference/options-dialog-box-visual-studio.md)을 위한 **옵션**
 
@@ -61,7 +61,7 @@ ms.locfileid: "72652388"
 
 다음은 외부 도구를 정의할 때 사용할 수 있는 전체 인수 목록입니다.
 
-|name|인수|설명|
+|이름|인수|설명|
 |----------|--------------|-----------------|
 |항목 경로|$(ItemPath)|현재 파일의 전체 파일 이름(드라이브 + 경로 + 파일 이름)입니다.|
 |항목 디렉터리|$(ItemDir)|현재 파일의 디렉터리(드라이브 + 경로)입니다.|
@@ -83,6 +83,6 @@ ms.locfileid: "72652388"
 > [!NOTE]
 > IDE 상태 표시줄에는 활성 **코드 편집기**에서 삽입 지점 위치를 나타내기 위해 **현재 줄**과 **현재 열** 변수가 표시됩니다. **현재 텍스트** 변수는 해당 위치에서 선택한 코드 또는 텍스트를 반환합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [C/C++ 빌드 도구](/cpp/build/reference/c-cpp-build-tools)

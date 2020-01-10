@@ -4,15 +4,15 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - item templates [Visual Studio], creating
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: d213ef7cd1c45043efbaad9fca4317f7a693bf4f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 62004c5c96fa708f98ab49f4810ec2fc1c38eadc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655852"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594723"
 ---
 # <a name="how-to-create-item-templates"></a>방법: 항목 템플릿 만들기
 
@@ -133,7 +133,7 @@ Windows, Office, 대시보드 또는 웹과 같은 특정 프로젝트 하위 �
 
 ::: moniker-end
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
 - [방법: 다중 파일 항목 템플릿 만들기](../ide/how-to-create-multi-file-item-templates.md)

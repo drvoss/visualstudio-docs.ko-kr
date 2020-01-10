@@ -6,17 +6,17 @@ helpviewer_keywords:
 - startup projects, setting multiple startup projects
 ms.assetid: 6131eb80-8745-4eb9-bdab-433e69b41651
 ms.technology: vs-ide-compile
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be2f782d8dcdbf81ca2446a73ac7f13dea4f2ef9
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: c5cfa0b7a94b4bec07e313ce7d6e031f9e1a2a56
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416780"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588345"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>방법: 여러 시작 프로젝트 설정
 
@@ -32,7 +32,7 @@ Visual Studio에서는 디버거를 시작할 때 둘 이상의 프로젝트를 
 
 4. **여러 시작 프로젝트** 옵션을 선택하고 적절한 작업을 설정합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [컴파일 및 빌드](../ide/compiling-and-building-in-visual-studio.md)
 - [솔루션 및 프로젝트 만들기](../ide/creating-solutions-and-projects.md)

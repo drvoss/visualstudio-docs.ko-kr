@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Debug.Goto command
 - Go To command
 ms.assetid: 201e1dd2-6701-467d-8cc1-faec2ef20511
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5782f5e7dba8d18f9d6f48f345d5e133138e6eea
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 535906d8b8d7f8ba0c2984d22ceead18a0d47c2d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748744"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569207"
 ---
 # <a name="go-to-command"></a>이동 명령
 지정된 줄로 커서를 이동합니다.
@@ -40,13 +40,13 @@ Edit.GoTo [linenumber]
 
 이 명령에 대한 별칭은 GoToLn입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cmd
 >Edit.GoTo 125
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio 명령](../../ide/reference/visual-studio-commands.md)
 - [명령 창](../../ide/reference/command-window.md)

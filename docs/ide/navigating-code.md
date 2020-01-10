@@ -13,17 +13,17 @@ helpviewer_keywords:
 - peek definition
 - go to line
 - go to
-author: mikadumont
-ms.author: midumont
+author: TerryGLee
+ms.author: tglee
 manager: tglee
 ms.workload:
 - multiple
-ms.openlocfilehash: f5348fc0c36435e5760f3967a7e6c9be2aecb1b7
-ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
+ms.openlocfilehash: 0216a71b675473d54aec9738ea7bdc85b7643841
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74316463"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585823"
 ---
 # <a name="navigate-code"></a>코드 탐색
 
@@ -163,7 +163,7 @@ Visual Basic 코드 파일에서 이들 명령을 사용하여 삽입 지점을 
 
 코드 편집기에서 CodeLens를 사용하면 변경 내용 및 변경한 사용자, 참조, 버그, 작업 항목, 코드 검토, 단위 테스트 상태 같은 특정 코드에 대한 정보를 찾을 수 있습니다. Visual Studio Enterprise를 Team Foundation Server에서 사용할 경우 CodeLens는 화면 표시처럼 작동합니다. [코드 변경 내용 및 기타 기록 찾기](../ide/find-code-changes-and-other-history-with-codelens.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 편집기의 기능](../ide/writing-code-in-the-code-and-text-editor.md)
 - [호출 계층 구조 보기](../ide/reference/call-hierarchy.md)

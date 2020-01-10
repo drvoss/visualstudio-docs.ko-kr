@@ -13,17 +13,17 @@ helpviewer_keywords:
 - key files [Visual Studio]
 - assemblies [Visual Studio], signing
 ms.assetid: 64173505-8bfb-41cf-a0de-b9075173f3a2
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2edc0e1e63a716f5e2e649660a9b0333ec8bc923
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: fbf25301095ac5ff438514c37f61337e46342860
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079363"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596166"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>방법: 애플리케이션 및 배포 매니페스트 서명
 
@@ -111,7 +111,7 @@ ClickOnce 배포에 대한 자세한 내용은 [ClickOnce 보안 및 배포](../
 
 3. 애플리케이션을 게시합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [강력한 이름의 어셈블리](/dotnet/framework/app-domains/strong-named-assemblies)
 - [방법: 퍼블릭/프라이빗 키 쌍 만들기](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)

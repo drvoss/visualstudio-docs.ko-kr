@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - surround-with snippets
 - snippets [C#], surround with
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3550efde20dbacb0afb17665a2ef1c811ac39946
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 931ce20ee872a37b8ca7ccccc18714abc7a0e41f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656518"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593761"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>방법: 코드 감싸기 코드 조각 사용
 
@@ -55,7 +55,7 @@ ms.locfileid: "72656518"
 
      또는 코드 조각의 이름을 입력한 다음, **Tab** 키 또는 **Enter** 키를 누릅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [C# 코드 조각](../ide/visual-csharp-code-snippets.md)
 - [코드 조각 선택](../ide/reference/code-snippet-picker.md)

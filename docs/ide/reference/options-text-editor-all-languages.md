@@ -37,17 +37,17 @@ helpviewer_keywords:
 - line numbers
 - virtual space
 ms.assetid: 49ee7306-9d46-4170-850f-a1716171752d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22ab23911baab30c7617525d318795b1be708bb9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9815bdec94ce32a3bfcc170dd95d834bc43ea58f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747845"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566880"
 ---
 # <a name="options-dialog-box-text-editor--all-languages"></a>옵션 대화 상자: 텍스트 편집기 \> 모든 언어
 
@@ -124,7 +124,7 @@ ms.locfileid: "72747845"
 > [!TIP]
 > 공백, 탭 및 줄 끝에 대한 표시기를 나타내어 완전히 비어 있는 줄과 들여쓴 줄을 구분하려면 **편집** 메뉴에서 **고급**을 선택하고 **공백 보기**를 선택합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [옵션, 텍스트 편집기, 모든 언어, 탭](../../ide/reference/options-text-editor-all-languages-tabs.md)
 - [옵션 대화 상자, 환경, 일반](../../ide/reference/general-environment-options-dialog-box.md)

@@ -16,17 +16,17 @@ helpviewer_keywords:
 - referencing components, removing references
 - references [Visual Studio], removing
 - referencing components, assemblies not listed
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e302b5c4df73f8fcdadf766a1fe1d8dc0731c261
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dfad622a7587246836161cd79bb5b759151df1ef
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654818"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595312"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>방법: 참조 관리자를 사용하여 참조 추가 또는 제거
 
@@ -209,6 +209,6 @@ WinMD에 대한 파일 참조를 수행하는 경우, 예상되는 레이아웃�
 
 참조 관리자 대화 상자의 검색 창은 포커스가 있는 탭에 대해서 작동합니다. 예를 들어, 사용자가 **솔루션** 탭에 포커스가 있을 때 검색 창에 “System”을 입력한 경우, “System”을 포함하는 프로젝트 이름으로 구성된 솔루션이 아닌 한 어떠한 검색 결과도 반환되지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [프로젝트에서 참조 관리](../ide/managing-references-in-a-project.md)

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a71f507aa5ce524e01b2120594ace634056d0850
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a43f11df65286e25d0ea19990fa56620695e69df
+ms.sourcegitcommit: aa302af53de342e75793bd05b10325939dc69b53
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587474"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886445"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>방법: 코드 메트릭 데이터 생성
 
@@ -162,6 +162,63 @@ Build succeeded.
 
 생성 된 XML 출력은 다음 형식을 사용 합니다.
 
+::: moniker range=">=vs-2019"
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<CodeMetricsReport Version="1.0">
+  <Targets>
+    <Target Name="ConsoleApp20.csproj">
+      <Assembly Name="ConsoleApp20, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <Metrics>
+          <Metric Name="MaintainabilityIndex" Value="100" />
+          <Metric Name="CyclomaticComplexity" Value="1" />
+          <Metric Name="ClassCoupling" Value="1" />
+          <Metric Name="DepthOfInheritance" Value="1" />
+          <Metric Name="SourceLines" Value="11" />
+          <Metric Name="ExecutableLines" Value="1" />
+        </Metrics>
+        <Namespaces>
+          <Namespace Name="ConsoleApp20">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="100" />
+              <Metric Name="CyclomaticComplexity" Value="1" />
+              <Metric Name="ClassCoupling" Value="1" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="11" />
+              <Metric Name="ExecutableLines" Value="1" />
+            </Metrics>
+            <Types>
+              <NamedType Name="Program">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="1" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="7" />
+                  <Metric Name="ExecutableLines" Value="1" />
+                </Metrics>
+                <Members>
+                  <Method Name="void Program.Main(string[] args)" File="C:\source\repos\ConsoleApp20\ConsoleApp20\Program.cs" Line="7">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+        </Namespaces>
+      </Assembly>
+    </Target>
+  </Targets>
+</CodeMetricsReport>
+```
+::: moniker-end
+::: moniker range="vs-2017"
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <CodeMetricsReport Version="1.0">
@@ -212,6 +269,7 @@ Build succeeded.
   </Targets>
 </CodeMetricsReport>
 ```
+::: moniker-end
 
 ### <a name="metricsexe"></a>메트릭과
 
@@ -253,13 +311,24 @@ msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
 
 ### <a name="previous-versions"></a>이전 버전
 
+::: moniker range=">=vs-2019"
+Visual Studio 2015에는 *wsdl.exe*라고도 하는 명령줄 코드 메트릭 도구가 포함 되어 있습니다. 이 이전 버전의 도구는 이진 분석 (즉, 어셈블리 기반 분석)을 수행 했습니다. 최신 버전의 *메트릭과* 도구는 소스 코드를 대신 분석 합니다. 최신 *메트릭과* 도구는 소스 코드 기반 이므로 명령줄 코드 메트릭 결과는 VISUAL Studio IDE 및 이전 버전의 *메트릭에*의해 생성 된 것과 다를 수 있습니다. Visual Studio 2019부터 Visual Studio IDE는 명령줄 도구와 같은 소스 코드를 분석 하 고 결과는 동일 해야 합니다.
+
+::: moniker-end
+::: moniker range="vs-2017"
 Visual Studio 2015에는 *wsdl.exe*라고도 하는 명령줄 코드 메트릭 도구가 포함 되어 있습니다. 이 이전 버전의 도구는 이진 분석 (즉, 어셈블리 기반 분석)을 수행 했습니다. 새 *메트릭과* 도구는 소스 코드를 대신 분석 합니다. 새 *메트릭과* 도구는 소스 코드 기반 이므로 명령줄 코드 메트릭 결과는 VISUAL Studio IDE 및 이전 버전의 *메트릭에*의해 생성 된 것과 다릅니다.
+::: moniker-end
 
 새 명령줄 코드 메트릭 도구는 솔루션과 프로젝트를 로드할 수 있는 한 소스 코드 오류가 있는 경우에도 메트릭을 계산 합니다.
 
 #### <a name="metric-value-differences"></a>메트릭 값 차이
 
+::: moniker range=">=vs-2019"
+Visual Studio 2019 버전 16.4 및 메트릭 (2.9.5 `ExecutableLines` `SourceLines`)에서 시작 하 여 이전 `LinesOfCode` 메트릭을 바꿉니다. 새 메트릭에 대 한 설명은 [코드 메트릭 값](../code-quality/code-metrics-values.md)을 참조 하세요. `LinesOfCode` 메트릭은 레거시 모드에서 사용할 수 있습니다.
+::: moniker-end
+::: moniker range="vs-2017"
 `LinesOfCode` 메트릭은 새로운 명령줄 코드 메트릭 도구에서 더 정확 하 고 안정적입니다. Codegen 차이가 없으며 도구 집합 또는 런타임이 변경 될 때 변경 되지 않습니다. 새 도구는 빈 줄 및 주석을 포함 하 여 실제 코드 줄 수를 계산 합니다.
+::: moniker-end
 
 `CyclomaticComplexity` 및 `MaintainabilityIndex`와 같은 다른 메트릭은 이전 버전의 *메트릭과*동일한 수식을 사용 하지만, 새 도구는 IL (중간 언어) 명령 대신 `IOperations` (논리적 원본 명령)의 수를 계산 합니다. 숫자는 Visual Studio IDE 및 이전 버전의 *메트릭에*의해 생성 된 것과 약간 다릅니다.
 

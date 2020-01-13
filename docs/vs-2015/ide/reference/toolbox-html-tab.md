@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b7ca3179d3e4883f8a2867e13cbdd5e874d60462
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4474f2a0823b5599da30706daedff6e5cd1fc0f5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297773"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851656"
 ---
 # <a name="toolbox-html-tab"></a>도구 상자, HTML 탭
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ ms.locfileid: "74297773"
 <input id="Button1" type="button" value="Button" name="Button1">
 ```
 
- 자세한 내용은 [HTML Input 컨트롤](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [HtmlInputButton 서버 컨트롤 선언 구문](https://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa), [NIB: How to: Create Scripts and Edit Event Handlers](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d)(NIB: 방법: 스크립트 만들기 및 이벤트 처리기 편집), [Button Web Server Controls Content Map](https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf)(Button 웹 서버 컨트롤 콘텐츠 맵), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton> 및 <xref:System.Web.UI.WebControls.Button>을 참조하세요.
+ 자세한 내용은 [HTML Input 컨트롤](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [HtmlInputButton 서버 컨트롤 선언 구문](https://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa), [NIB: 방법: 스크립트 만들기 및 이벤트 처리기 편집](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [단추 웹 서버 컨트롤 콘텐츠 맵](https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton> 및 <xref:System.Web.UI.WebControls.Button>을 참조하세요.
 
  **입력 (다시 설정)** ![htmlpageresetbutton 스크린 샷](../../ide/reference/media/vxreset.gif "|::ref3::|")
 
@@ -118,10 +118,10 @@ ms.locfileid: "74297773"
 <input id="Password1" type="password" name="Password1">
 ```
 
- 자세한 내용은 [HTML Input 컨트롤](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [HtmlInputPassword 서버 컨트롤 선언 구문](https://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f), [방법: 암호 입력란으로 TextBox 웹 서버 컨트롤 설정](https://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310) 및 [연습: Web Forms 페이지에서 사용자 입력 유효성 검사](https://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436)를 참조하세요.
+ 자세한 내용은 [HTML Input 컨트롤](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [HtmlInputPassword 서버 컨트롤 선언 구문](https://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f), [방법: 암호 항목에 대한 TextBox 웹 서버 컨트롤 설정](https://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310) 및 [연습: Web Forms 페이지에서 사용자 입력 유효성 검사](https://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436)를 참조하세요.
 
 > [!IMPORTANT]
-> 애플리케이션에서 사용자 이름과 암호를 전송할 경우 SSL(Secure Sockets Layer)을 사용하여 전송을 암호화하도록 웹 사이트를 구성해야 합니다. 자세한 내용은 [IIS Operations Guide](https://go.microsoft.com/fwlink/?linkid=47856)(IIS 작업 가이드)에서 "Securing Connections with SSL(SSL을 사용하여 연결 보호)"을 참조하세요. 또한 모든 사용자 입력의 유효성을 검사하는 것이 좋습니다. 자세한 내용은 [ASP.NET 웹 페이지에서 사용자 입력 유효성 검사](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)를 참조하세요.
+> 애플리케이션에서 사용자 이름과 암호를 전송할 경우 SSL(Secure Sockets Layer)을 사용하여 전송을 암호화하도록 웹 사이트를 구성해야 합니다. 자세한 내용은 [IIS Operations Guide](https://technet.microsoft.com/library/cc732976(v=WS.10).aspx)(IIS 작업 가이드)에서 "Securing Connections with SSL(SSL을 사용하여 연결 보호)"을 참조하세요. 또한 모든 사용자 입력의 유효성을 검사하는 것이 좋습니다. 자세한 내용은 [ASP.NET 웹 페이지에서 사용자 입력 유효성 검사](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)를 참조하세요.
 
  **입력 (확인란)** ![HTML 웹 페이지 도구 상자 확인란 옵션](../../ide/reference/media/vxcheckbox.gif "|::ref8::|")
 
@@ -198,7 +198,7 @@ ms.locfileid: "74297773"
 
  자세한 내용은 [HtmlImage 서버 컨트롤 선언 구문](https://msdn.microsoft.com/528430e8-ced1-47d1-8db2-942e734a61f6), [Image 웹 서버 컨트롤 개요](https://msdn.microsoft.com/library/096a8d8d-58ee-4ee8-ab82-6594a0f3a0a9), <xref:System.Web.UI.HtmlControls.HtmlImage>, <xref:System.Web.UI.HtmlControls.HtmlInputImage> 및 <xref:System.Web.UI.WebControls.Image>를 참조하세요.
 
- **** ![HTML 페이지 도구 상자 드롭다운](../../ide/reference/media/vxdropdown.gif "|::ref14::|") 선택
+ ![HTML 페이지 도구 상자 드롭다운](../../ide/reference/media/vxdropdown.gif "|::ref14::|") **선택**
 
  `select` 요소를 삽입합니다(`size` 특성 없음). 기본적으로 `id="select1"`은 첫 번째 목록 상자로 삽입되고, `id="select2"`는 두 번째 목록 상자로 삽입되는 식으로 항목이 삽입됩니다.
 
@@ -210,7 +210,7 @@ ms.locfileid: "74297773"
 
  size 속성 값을 늘려 여러 줄 `select` 요소를 만들 수 있습니다.
 
- 자세한 내용은 [HtmlSelect 서버 컨트롤 선언 구문](https://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5), [NIB: How to: Create Scripts and Edit Event Handlers](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d)(NIB: 방법: 스크립트 만들기 및 이벤트 처리기 편집), [DropDownList Web Server Control Overview](https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608)(DropDownList 웹 서버 컨트롤 개요), [ListBox Web Server Control Overview](https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97)(ListBox 웹 서버 컨트롤 개요), <xref:System.Web.UI.HtmlControls.HtmlSelect> 및 <xref:System.Web.UI.WebControls.DropDownList>를 참조하세요.
+ 자세한 내용은 [HtmlSelect 서버 컨트롤 선언 구문](https://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5), [NIB: 방법: 스크립트 만들기 및 이벤트 처리기 편집](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [DropDownList 웹 서버 컨트롤 개요](https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608), [ListBox 웹 서버 컨트롤 개요](https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97), <xref:System.Web.UI.HtmlControls.HtmlSelect> 및 <xref:System.Web.UI.WebControls.DropDownList>를 참조하세요.
 
  **수평선** ![HTML 페이지 수평선 규칙 항목](../../ide/reference/media/vxhorizontal.gif "|::ref15::|")
 
@@ -236,5 +236,5 @@ ms.locfileid: "74297773"
 
  자세한 내용은 [HTML Div 컨트롤](https://msdn.microsoft.com/library/585fa702-4408-4af1-a92b-68d77ee5e995), [Label 웹 서버 컨트롤 개요](https://msdn.microsoft.com/library/990558d1-4b22-4f28-b100-78a434b3c5ac) 및 <xref:System.Web.UI.WebControls.Label>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [도구 상자](../../ide/reference/toolbox.md) [표준 탭, 도구 상자](https://msdn.microsoft.com/library/35e9320d-fcbd-474b-8b8f-55705e9a1870) [HTML 컨트롤](https://msdn.microsoft.com/library/83bc6f7e-a2b5-4fe9-9a34-eb34aef673be)

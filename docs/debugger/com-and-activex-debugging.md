@@ -39,7 +39,7 @@ ms.locfileid: "73188687"
  [COM 디버깅 도구](../debugger/com-debugging-tools.md) COM 응용 프로그램을 디버깅하는 데 유용할 수 있는 뷰어 및 샘플 응용 프로그램을 나열합니다.
 
 ## <a name="related-sections"></a>관련 단원
- [디버거를 먼저 확인 합니다](../debugger/debugger-feature-tour.md) . 디버깅 설명서의 더 큰 섹션에 대 한 링크를 제공 합니다. 이러한 정보에는 디버거의 새로운 기능, 설정 및 준비, 중단점, 예외 처리, 편집 하며 계속 하기, 관리 코드 디버깅, 프로젝트 디버깅 C++ , COM 및 ActiveX 디버깅, dll 디버깅, SQL 디버깅, 사용자 등이 포함 됩니다. 인터페이스 참조
+ [디버거를 먼저 확인](../debugger/debugger-feature-tour.md) 디버깅 설명서의 더 큰 섹션에 대한 링크를 제공합니다. 이러한 정보에는 디버거의 새로운 기능, 설정 및 준비, 중단점, 예외 처리, 편집하며 계속하기, 관리 코드 디버깅, C++ 프로젝트 디버깅, COM 및 ActiveX 디버깅, DLL 디버깅, SQL 디버깅, 사용자 인터페이스 참조 등이 포함됩니다.
 
 ## <a name="see-also"></a>참조
 

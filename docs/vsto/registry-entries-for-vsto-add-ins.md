@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 464820258e5c20474d74f92eb108344deccc49f1
-ms.sourcegitcommit: 0a8855572c6c88f4b2ece232c04aa124fbd9cec3
+ms.openlocfilehash: 6f814aabc4a6de4806fd419f16599758799c7538
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955051"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919126"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>VSTO 추가 기능에 대 한 레지스트리 항목
   Visual Studio를 사용하여 만든 VSTO 추가 기능을 배포할 때에는 특정 레지스트리 항목 집합을 만들어야 합니다. 이러한 레지스트리 항목은 Microsoft Office 애플리케이션에서 VSTO 추가 기능을 찾아 로드할 수 있는 정보를 제공합니다.
@@ -52,7 +52,7 @@ ms.locfileid: "74955051"
 ## <a name="registry-entries"></a>레지스트리 항목
  필요한 VSTO 추가 기능 레지스트리 항목은 다음 레지스트리 키 아래에 있습니다. 여기서 *루트* 는 현재 사용자 또는 모든 사용자 용으로 설치 된 경우에 따라 **HKEY_CURRENT_USER** 또는 **HKEY_LOCAL_MACHINE** .
 
-|Office 응용 프로그램|구성 경로|
+|Office 애플리케이션|구성 경로|
 |------------------|------------------|
 |Visio|*Root*\Software\Microsoft\\*Visio*\addins\\*추가 기능 ID*|
 |기타 모든|*Root*\Software\Microsoft\Office\\*Office 응용 프로그램 이름*\addins\\*추가 기능 ID*|
@@ -62,7 +62,7 @@ ms.locfileid: "74955051"
 >
 >설치 관리자가 현재 사용자를 대상으로 하는 경우에는 HKEY_CURRENT_USER \Software 경로를 공유 하므로 WOW6432Node에를 설치할 필요가 없습니다.
 >
->자세한 내용은 [레지스트리에서 32 비트 및 64 비트 응용 프로그램 데이터](https://docs.microsoft.com/windows/win32/sysinfo/32-bit-and-64-bit-application-data-in-the-registry) 를 참조 하세요.
+>자세한 내용은 [레지스트리에서 32 비트 및 64 비트 응용 프로그램 데이터](/windows/win32/sysinfo/32-bit-and-64-bit-application-data-in-the-registry) 를 참조 하세요.
 
  다음 테이블에는 이 레지스트리 키의 항목이 나열되어 있습니다.
 

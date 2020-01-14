@@ -10,12 +10,12 @@ ms.date: 06/28/2018
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 96df8bbf1c991b98571a427a5118374cd6f3ba3b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: d7099eb47007b1fc657164d085e8a5bb6f09e1db
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851447"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915648"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Azure Cloud Services 및 Virtual Machines에 대한 진단 설정
 Azure 클라우드 서비스 또는 가상 머신 문제를 해결해야 하는 경우 Visual Studio를 사용하여 Azure Diagnostics를 보다 쉽게 설정할 수 있습니다. 진단은 클라우드 서비스를 실행하는 가상 머신 및 가상 머신 인스턴스에서 시스템 데이터와 로깅 데이터를 캡처합니다. 진단 데이터는 사용자가 선택한 스토리지 계정으로 전송됩니다. Azure의 진단 로깅에 대한 자세한 내용은 [Azure App Service에서 웹앱에 대해 진단 로깅 사용](/azure/app-service/web-sites-enable-diagnostic-log)을 참조하세요.
@@ -110,7 +110,7 @@ Visual Studio에서 Azure Virtual Machines에 대한 진단 데이터를 수집�
     ![Azure 가상 머신 확장 설치](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766024.png)
 
     > [!NOTE]
-   > 다른 진단 확장은 가상 머신에 대해 사용할 수 있습니다. 자세한 내용은 [Windows용 가상 머신 확장 및 기능](https://docs.microsoft.com/azure/virtual-machines/windows/extensions-features)을 참조하세요.
+   > 다른 진단 확장은 가상 머신에 대해 사용할 수 있습니다. 자세한 내용은 [Windows용 가상 머신 확장 및 기능](/azure/virtual-machines/windows/extensions-features)을 참조하세요.
    >
    >
 5. 확장을 추가하고 해당 **진단 구성** 대화 상자를 표시하려면 **추가**를 선택합니다.

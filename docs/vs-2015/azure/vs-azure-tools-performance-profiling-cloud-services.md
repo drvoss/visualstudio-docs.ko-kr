@@ -11,18 +11,18 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 0f4e7635e62c8d21b6bdb3b1fd28a2fed0c60262
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: b1e5a5d4d5312968571965df8c9e28d31379720d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851892"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915597"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>클라우드 서비스의 성능 테스트
 ## <a name="overview"></a>개요
 다음과 같은 방법으로 클라우드 서비스의 성능을 테스트할 수 있습니다.
 
-* 요청과 연결에 대한 정보를 수집하고 서비스를 고객 관점에서 수행하는 방법을 보여주는 사이트 통계를 검토하려면 Azure Diagnostics를 사용합니다. 시작하려면 [Azure Cloud Services 및 Virtual Machines에서 진단 구성](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines?view=vs-2019)을 참조하십시오.
+* 요청과 연결에 대한 정보를 수집하고 서비스를 고객 관점에서 수행하는 방법을 보여주는 사이트 통계를 검토하려면 Azure Diagnostics를 사용합니다. 시작하려면 [Azure Cloud Services 및 Virtual Machines에서 진단 구성](vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md)을 참조하십시오.
 * Visual Studio 프로파일러를 사용하여 서비스 실행 방식의 계산 측면에 대한 심층 분석을 가져옵니다. 이 항목에서 알 수 있듯이 Azure에서 서비스가 실행될 때 성능을 측정하기 위해 프로파일러를 사용할 수 있습니다. 컴퓨팅 에뮬레이터에서 서비스가 로컬로 실행될 때 성능을 측정하는 프로파일러를 사용하는 방법에 대한 정보는 [Visual Studio 프로파일러를 사용하여 Compute 에뮬레이터에서 로컬로 Azure Cloud Services의 성능 테스트](https://azure.microsoft.com/documentation/articles/cloud-services-performance-testing-visual-studio-profiler/)를 참조하십시오.
 
 ## <a name="choosing-a-performance-testing-method"></a>성능 테스트 방법 선택
@@ -84,7 +84,7 @@ Visual Studio에서 성능을 프로파일링하는 방법을 알아보려면 [�
 > 
 
 ### <a name="to-configure-profiling-settings"></a>프로파일링 설정 구성
-1. 솔루션 탐색기에서 Azure 프로젝트에 대한 바로 가기 메뉴를 열고 **게시**를 선택합니다. 클라우드 서비스를 게시하는 방법에 대한 자세한 단계는 [Azure 도구를 사용하여 클라우드 서비스 게시](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publishing-a-cloud-service?view=vs-2019)를 참조하세요.
+1. 솔루션 탐색기에서 Azure 프로젝트에 대한 바로 가기 메뉴를 열고 **게시**를 선택합니다. 클라우드 서비스를 게시하는 방법에 대한 자세한 단계는 [Azure 도구를 사용하여 클라우드 서비스 게시](vs-azure-tools-publishing-a-cloud-service.md)를 참조하세요.
 2. **Azure 애플리케이션 게시** 대화 상자에서 **고급 설정** 탭을 선택합니다.
 3. 프로파일링을 사용하려면 **프로파일링 사용** 확인란을 선택합니다.
 4. 프로파일링 설정을 구성하려면 **설정** 하이퍼링크를 선택합니다. 프로파일링 설정 대화 상자가 나타납니다.

@@ -8,12 +8,12 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 7a0284ab6b8d2e89e1c0129c2bc98fb486918f90
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 204d3ee68aace07ed19e5913309a122d6d775a0e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297915"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918341"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Visual Studio에서 Xamarin을 사용하여 네이티브 UI로 앱 빌드
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "74297915"
 >
 >   - [Hello, Android](https://developer.xamarin.com/guides/android/getting_started/hello,android/) (단일 화면을 사용한 간단한 앱)
 >   - [Hello, Android 멀티스크린](https://developer.xamarin.com/guides/android/getting_started/hello,android_multiscreen/) (화면 간 탐색을 사용한 앱)
->   - [Android 조각 연습](https://docs.microsoft.com/xamarin/android/platform/fragments/implementing-with-fragments/) (마스터/세부 정보 화면에 사용됨)
+>   - [Android 조각 연습](/xamarin/android/platform/fragments/implementing-with-fragments/) (마스터/세부 정보 화면에 사용됨)
 >   - [Hello, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
 >   - [Hello, iOS 멀티스크린](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS_multiscreen/)
 >   - Xamarin.Forms를 사용한 Xamarin 앱(공유 UI)
@@ -94,7 +94,7 @@ ms.locfileid: "74297915"
 5. 솔루션을 빌드하고 빌드 오류가 없는지 확인합니다.
 
 ## <a name="dataservice"></a> 공유 데이터 서비스 코드 작성
- **WeatherApp (Portable)** 프로젝트는 모든 플랫폼에서 공유되는 PCL(이식 가능한 클래스 라이브러리)에 대한 코드를 작성하는 프로젝트입니다. PCL은 iOS, Android, Windows Phone 프로젝트에서 빌드된 앱 패키지에 자동으로 포함됩니다.
+ **WeatherApp(이식 가능)** 프로젝트는 모든 플랫폼에서 공유되는 PCL(이식 가능한 클래스 라이브러리)에 대한 코드를 작성하는 프로젝트입니다. PCL은 iOS, Android, Windows Phone 프로젝트에서 빌드된 앱 패키지에 자동으로 포함됩니다.
 
  다음 단계에서는 날씨 서비스의 데이터를 액세스하고 저장하기 위한 코드를 PCL에 추가합니다.
 
@@ -230,7 +230,7 @@ ms.locfileid: "74297915"
 1. **솔루션 탐색기**에서 **WeatherApp.Droid**>**Resources**>**layout** 폴더를 확장하고 **Main.axml**을 엽니다. 비주얼 디자이너에서 파일이 열립니다. Java 관련 오류가 나타나는 경우 이 [블로그 게시물](https://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9)을 참조하세요.
 
     > [!TIP]
-    > 프로젝트에는 다른 많은 파일이 있습니다. 이 항목에서는 이러한 파일에 대해 자세히 다루지 않지만 Android 프로젝트의 구조를 좀 더 자세히 알아보려면 xamarin.com의 Hello Android 항목에서 [Part 2 Deep Dive(2부 자세히 알아보기)](https://docs.microsoft.com/xamarin/android/get-started/hello-android/hello-android-deepdive?pivots=windows)를 참조하세요.
+    > 프로젝트에는 다른 많은 파일이 있습니다. 이 항목에서는 이러한 파일에 대해 자세히 다루지 않지만 Android 프로젝트의 구조를 좀 더 자세히 알아보려면 xamarin.com의 Hello Android 항목에서 [Part 2 Deep Dive(2부 자세히 알아보기)](/xamarin/android/get-started/hello-android/hello-android-deepdive?pivots=windows)를 참조하세요.
 
 2. 디자이너에 표시되는 기본 단추를 선택하여 삭제합니다.
 
@@ -249,8 +249,8 @@ ms.locfileid: "74297915"
 
     |속성|값|
     |--------------|-----------|
-    |**text**|**우편 번호로 검색**|
-    |**id**|`@+id/ZipCodeSearchLabel`|
+    |**텍스트**|**우편 번호로 검색**|
+    |**ID**|`@+id/ZipCodeSearchLabel`|
     |**layout_marginLeft**|`10dp`|
     |**textColor**|`@android:color/white`|
     |**textStyle**|`bold`|
@@ -281,8 +281,8 @@ ms.locfileid: "74297915"
 
     |속성|값|
     |--------------|-----------|
-    |**text**|**우편 번호**|
-    |**id**|`@+id/ZipCodeLabel`|
+    |**텍스트**|**우편 번호**|
+    |**ID**|`@+id/ZipCodeLabel`|
     |**layout_marginLeft**|`10dp`|
     |**layout_marginTop**|`5dp`|
 
@@ -303,7 +303,7 @@ ms.locfileid: "74297915"
 
     |속성|값|
     |--------------|-----------|
-    |**id**|`@+id/zipCodeEntry`|
+    |**ID**|`@+id/zipCodeEntry`|
     |**layout_marginLeft**|`10dp`|
     |**layout_marginBottom**|`10dp`|
     |**width**|`165dp`|
@@ -326,8 +326,8 @@ ms.locfileid: "74297915"
 
     |속성|값|
     |--------------|-----------|
-    |**id**|`@+id/weatherBtn`|
-    |**text**|**날씨 검색**|
+    |**ID**|`@+id/weatherBtn`|
+    |**텍스트**|**날씨 검색**|
     |**layout_marginLeft**|`20dp`|
     |**layout_alignBottom**|`@id/zipCodeEntry`|
     |**width**|`165dp`|
@@ -343,7 +343,7 @@ ms.locfileid: "74297915"
         android:width="165dp" />
     ```
 
-12. Android 디자이너를 사용하여 기본 UI를 빌드할 수 있을 정도로 충분히 연습했습니다. 페이지의 .asxml 파일에 직접 마크업을 추가하여 UI를 빌드할 수도 있습니다. UI의 나머지를 이런 방식으로 빌드하려면 디자이너에서 소스 보기로 전환하고, *태그*아래에`</RelativeLayout>` 다음 마크업을 붙여 넣습니다. 태그 아래입니다. 이러한 요소는 ReleativeLayout에 포함되어 있지 않습니다.
+12. Android 디자이너를 사용하여 기본 UI를 빌드할 수 있을 정도로 충분히 연습했습니다. 페이지의 .asxml 파일에 직접 마크업을 추가하여 UI를 빌드할 수도 있습니다. UI의 나머지를 이런 방식으로 빌드하려면 디자이너에서 소스 보기로 전환하고, `</RelativeLayout>` 태그 *아래에* 다음 마크업을 붙여 넣습니다. 태그 아래입니다. 이러한 요소는 ReleativeLayout에 포함되어 있지 않습니다.
 
     ```xml
     <TextView
@@ -636,11 +636,11 @@ ms.locfileid: "74297915"
 
  iOS용 네이티브 UI를 추가하여 이 샘플을 확장합니다. 이렇게 하려면, 로컬 네트워크에 있으며 Xcode 및 Xamarin이 설치된 Mac에 연결해야 합니다. 완료했으면 Visual Studio에서 직접 iOS 디자이너를 사용할 수 있습니다. 완성된 앱은 [GitHub의 모바일 샘플 리포지토리](https://github.com/xamarin/mobile-samples/tree/master/Weather)를 참조하세요.
 
- 또한 [Hello, iOS](https://docs.microsoft.com/xamarin/ios/get-started/hello-ios/hello-ios-quickstart?pivots=windows)(xamarin.com) 연습을 참조하세요. 이 페이지에서 올바른 명령 집합이 표시되도록 xamarin.com의 페이지 오른쪽 위 모서리에서 "Visual Studio"가 선택되어 있는지 확인합니다.
+ 또한 [Hello, iOS](/xamarin/ios/get-started/hello-ios/hello-ios-quickstart?pivots=windows)(xamarin.com) 연습을 참조하세요. 이 페이지에서 올바른 명령 집합이 표시되도록 xamarin.com의 페이지 오른쪽 위 모서리에서 "Visual Studio"가 선택되어 있는지 확인합니다.
 
  **공유 프로젝트에 플랫폼별 코드 추가**
 
- PCL의 공유 코드는 플랫폼 중립적입니다. PCL은 한 번 컴파일되어 각 플랫폼별 앱 패키지에 포함되기 때문입니다. 플랫폼별 코드를 격리하는 조건부 컴파일을 사용하는 공유 코드를 작성하려면 *공유* 프로젝트를 사용할 수 있습니다. 자세한 내용은 [ode Sharing Options](https://docs.microsoft.com/xamarin/cross-platform/app-fundamentals/code-sharing)(xamarin.com)를 참조하세요.
+ PCL의 공유 코드는 플랫폼 중립적입니다. PCL은 한 번 컴파일되어 각 플랫폼별 앱 패키지에 포함되기 때문입니다. 플랫폼별 코드를 격리하는 조건부 컴파일을 사용하는 공유 코드를 작성하려면 *공유* 프로젝트를 사용할 수 있습니다. 자세한 내용은 [ode Sharing Options](/xamarin/cross-platform/app-fundamentals/code-sharing)(xamarin.com)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
- [Xamarin 개발자 사이트](https://docs.microsoft.com/xamarin/) [Windows 개발자 센터](https://dev.windows.com/en-us) [Swift 및 C# 빠른 참조 포스터](https://aka.ms/scposter)
+ [Xamarin 개발자 사이트](/xamarin/) [Windows 개발자 센터](https://dev.windows.com/en-us) [Swift 및 C# 빠른 참조 포스터](https://aka.ms/scposter)

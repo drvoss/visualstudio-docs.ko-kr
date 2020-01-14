@@ -21,17 +21,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f261eac1c3cbc73bb12323c089ae88f4ffc6b120
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: d9c52c76bbd8623f9ec9b0ce8f3e5463c638d8f7
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72431681"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916443"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>디버깅 오류 및 경고 대화 상자
 다음은 애플리케이션을 디버깅할 때 발생할 수 있는 오류 및 경고 대화 상자입니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
  [어설션 오류 대화 상자](../debugger/assertion-failed-dialog-box.md)
 
  [값을 변경할 수 없음 대화 상자](../debugger/cannot-change-value-dialog-box.md)
@@ -58,14 +58,14 @@ ms.locfileid: "72431681"
 
  [오류: 시스템에 커널 디버거가 사용 중이므로 디버깅을 할 수 없습니다.](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)
 
-## <a name="related-sections"></a>관련 단원
+## <a name="related-sections"></a>관련 섹션
  [스크립트와 웹 디버깅: 오류 및 문제 해결](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 
  [원격 디버깅 오류](../debugger/remote-debugging-errors-and-troubleshooting.md)
 
- [연결 오류](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/8dbb3we5(v=vs.100))
+ [연결 오류](/previous-versions/visualstudio/visual-studio-2010/8dbb3we5(v=vs.100))
 
- [SQL 디버깅 설치 문제 해결](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))
+ [SQL 디버깅 설치 문제 해결](/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))
 
  [네이티브 코드 디버그 FAQ](../debugger/debugging-native-code-faqs.md)
 

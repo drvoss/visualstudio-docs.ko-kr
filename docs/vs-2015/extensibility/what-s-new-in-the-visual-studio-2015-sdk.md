@@ -8,12 +8,12 @@ ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6735f929f52387f4cb40406d6918894e72bb40d3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d47e40a5c38eeb7898aa179282fa55bbe17ef1d5
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299677"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917324"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Visual&#39;STUDIO 2015 SDK의 새로운 기능
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Visual Studio 2017부터 사용자 지정 프로젝트 및 항목 템플릿을 �
  Visual Studio 2015 SDK부터 사용 중인 프로그래밍 언어에 따라 확장을 만들 수 있는 다양 한 옵션이 있습니다.
 
 ### <a name="visual-c-and-visual-basic"></a>Visual C# 및 Visual Basic
- 및 C# Visual Basic에는 vspackage, 메뉴 명령, 도구 창, 편집기 분류자, 편집기 장식 및 편집기 여백 확장을 만들 수 있는 다양 한 프로젝트 항목 템플릿이 있습니다. 이러한 중 하나 또는 모두를 표준 VSIX 프로젝트에 추가할 수 있습니다. 자세한 내용은 다음을 참조하십시오.
+ 및 C# Visual Basic에는 vspackage, 메뉴 명령, 도구 창, 편집기 분류자, 편집기 장식 및 편집기 여백 확장을 만들 수 있는 다양 한 프로젝트 항목 템플릿이 있습니다. 이러한 중 하나 또는 모두를 표준 VSIX 프로젝트에 추가할 수 있습니다. 자세한 내용은  항목을 참조하세요.
 
 - [메뉴 명령을 사용하여 확장 만들기](../extensibility/creating-an-extension-with-a-menu-command.md)
 
@@ -56,7 +56,7 @@ Visual Studio 2017부터 사용자 지정 프로젝트 및 항목 템플릿을 �
  의 C++경우 VSPackage 마법사는 메뉴 명령, 도구 창 및 사용자 지정 편집기를 지원 합니다. **Visual C++ /확장성**의 **새 프로젝트** 대화 상자에서 찾을 수 있습니다.
 
 ## <a name="vs-sdk-reference-assemblies-via-nuget"></a>NuGet을 통한 VS SDK 참조 어셈블리
- 확장성 및 확장성 프로젝트의 공유를 향상 하기 위해 NuGet 버전의 VS SDK 참조 어셈블리를 사용할 수 있습니다.  이러한 기능은 [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility) 에서 게시 한 [nuget.org](https://www.nuget.org/) 에서 사용할 수 있으며 Visual Studio **참조/nuget 패키지 관리** 대화 상자를 통해 프로젝트 또는 솔루션에 쉽게 추가할 수 있습니다. VS SDK [메타 패키지](https://www.nuget.org/packages/VSSDK_Reference_Assemblies)를 사용 하 여 특정 확장성 어셈블리에 개별 참조를 추가 하거나 한 번에 모든 vs sdk 참조 어셈블리를 추가할 수 있습니다. NuGet에 대 한 자세한 내용은 [Nuget 개요](https://docs.microsoft.com/nuget/) 및 [대화 상자를 사용 하 여 nuget 패키지 관리](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio)를 참조 하세요.
+ 확장성 및 확장성 프로젝트의 공유를 향상 하기 위해 NuGet 버전의 VS SDK 참조 어셈블리를 사용할 수 있습니다.  이러한 기능은 [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility) 에서 게시 한 [nuget.org](https://www.nuget.org/) 에서 사용할 수 있으며 Visual Studio **참조/nuget 패키지 관리** 대화 상자를 통해 프로젝트 또는 솔루션에 쉽게 추가할 수 있습니다. VS SDK [메타 패키지](https://www.nuget.org/packages/VSSDK_Reference_Assemblies)를 사용 하 여 특정 확장성 어셈블리에 개별 참조를 추가 하거나 한 번에 모든 vs sdk 참조 어셈블리를 추가할 수 있습니다. NuGet에 대 한 자세한 내용은 [Nuget 개요](/nuget/) 및 [대화 상자를 사용 하 여 nuget 패키지 관리](/nuget/consume-packages/install-use-packages-visual-studio)를 참조 하세요.
 
  VS SDK 참조 어셈블리의 NuGet 버전을 사용 하는 경우 다른 사용자가 VS SDK를 설치 하 여 프로젝트를 열고 빌드할 필요가 없습니다.  NuGet 참조 어셈블리 및 VS SDK 빌드 도구는 해당 프로젝트의 컴퓨터에 자동으로 설치 됩니다.
 

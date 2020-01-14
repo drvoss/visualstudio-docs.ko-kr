@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2e48039a618f7e8eef7f2c6e9f097da87e37d0f5
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a8f7fd108250a406339d5be08b5a6e9aaf67d039
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75847781"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917560"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce 및 Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ Authenticode *는 업계 표준 암호화를 사용 하 여 응용 프로그램 
   
 - 애플리케이션을 제거하고 유효한 인증서로 새 버전을 다시 설치합니다.  
   
-- 인증서를 업데이트하는 명령줄 어셈블리를 만듭니다. 이 프로세스에 대한 단계별 정보는 [Microsoft 지원 문서 925521](https://support.microsoft.com/kb/925521)에서 찾을 수 있습니다.  
+- 인증서를 업데이트하는 명령줄 어셈블리를 만듭니다.  
   
 ### <a name="storing-certificates"></a>인증서 저장  
   

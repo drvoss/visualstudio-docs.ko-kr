@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 77b26b672dc40b65823cdabb6e1a42549112de65
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 775c68b433073931f7f6a1b73fae89fcce6ca2b2
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573315"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916013"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Windows PowerShell 스크립트를 사용하여 개발 및 테스트 환경에 게시
 
@@ -26,7 +26,7 @@ Visual Studio에서 웹 애플리케이션을 만들 경우 Windows PowerShell �
 
 * **Azure 워크로드**가 설치된 Visual Studio 2015 이상 또는 Visual Studio 2013 및 Azure SDK 2.3 이상. [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads)를 참조하세요. (웹 프로젝트용 스크립트를 생성하기 위해 Azure SDK는 필요하지 않습니다. 이 기능은 클라우드 서비스의 웹 역할이 아닌 웹 프로젝트용입니다.)
 * Azure PowerShell 0.7.4 이상 [Azure PowerShell 설치 및 구성 방법](/powershell/azure/overview)을 참조하세요.
-* [Windows PowerShell 3.0](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)) 이상
+* [Windows PowerShell 3.0](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)) 이상
 
 ## <a name="additional-tools"></a>추가 도구
 

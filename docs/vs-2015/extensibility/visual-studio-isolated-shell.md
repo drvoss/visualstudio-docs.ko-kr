@@ -14,12 +14,12 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 01917b9e78ee6129f09811ca2dc3e18c149c06f6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ef2d1cbffab5e38e603b0e50beb896f1c6efa23d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850383"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919199"
 ---
 # <a name="visual-studio-isolated-shell"></a>Visual Studio Shell(격리)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Visual Studio 격리 셸을 사용하면 다른 버전의 Visual Studio와 나�
   
  격리 된 셸 프로젝트를 사용 하려면 Visual Studio SDK를 설치 해야 합니다. Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.  
   
- 격리 된 셸 응용 프로그램을 만들려면 Visual Studio Shell 격리 프로젝트를 시작 합니다. 이 프로젝트에는 자체 격리 셸 응용 프로그램을 개발 하 고 테스트 하는 데 필요한 모든 항목이 포함 되어 있습니다. 응용 프로그램을 배포 하는 설치 프로그램을 작성할 준비가 되 면 [Microsoft Visual Studio Shell(격리) 재배포 가능 패키지](https://docs.microsoft.com/collaborate/connect-redirect?ProgramID=8963&InvitationID=VS15-2R69-RB8J)에서 격리 된 셸 재배포 가능 패키지를 가져와야 합니다.  
+ 격리 된 셸 응용 프로그램을 만들려면 Visual Studio Shell 격리 프로젝트를 시작 합니다. 이 프로젝트에는 자체 격리 셸 응용 프로그램을 개발 하 고 테스트 하는 데 필요한 모든 항목이 포함 되어 있습니다. 응용 프로그램을 배포 하는 설치 프로그램을 작성할 준비가 되 면 [Microsoft Visual Studio Shell(격리) 재배포 가능 패키지](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)에서 격리 된 셸 재배포 가능 패키지를 가져와야 합니다.  
   
 > [!NOTE]
 > 격리 된 셸 재배포 가능 패키지에 액세스 하기 전에 간단한 고객 설문 조사를 입력 하 라는 메시지가 표시 됩니다.  설문 조사를 작성하면 재배포 가능 패키지 다운로드 링크가 포함된 Visual Studio 연결 페이지로 이동됩니다.  **&#124; 프로그램 VISUAL STUDIO 2015 통합 및 격리 셸** 탭에서 visual studio Connect 사이트에 대 한 후속 방문에서 다운로드 링크를 찾을 수 있습니다.  

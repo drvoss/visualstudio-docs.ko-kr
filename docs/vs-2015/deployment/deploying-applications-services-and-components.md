@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5ca4d6a4097848021073bb77323fd0456f3dddc1
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 42e3a4afec71b90a087ac927f5cbbbc0b181fadd
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74289817"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917548"
 ---
 # <a name="deploying-applications-services-and-components"></a>응용 프로그램, 서비스 및 구성 요소 배포
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "74289817"
 |**클라우드에 게시:** Visual Studio를 사용 하 여 Microsoft Azure에 배포 하는 응용 프로그램, 서비스 및 데이터를 어디에서 나 사용할 수 있습니다.|[Microsoft Azure에 응용 프로그램 게시](/visualstudio/deployment/quickstart-deploy-to-azure)|  
 |**Windows 스토어 앱을 게시 합니다.** Windows 스토어에서 전 세계 고객에 게 앱을 쉽게 빌드, 제출 및 판매할 수 있습니다.|[Windows 스토어 앱의 패키징, 배포 및 쿼리](https://msdn.microsoft.com/library/hh446593\(v=vs.85\).aspx)|  
 |**Windows Phone 앱 게시:** Windows Phone 개발자 센터에서 인증을 위해 새 앱 또는 기존 앱에 대 한 업데이트를 제출할 수 있습니다.|[Windows Phone 앱 게시](https://developer.microsoft.com/)|  
-|**ASP.NET 응용 프로그램 또는 서비스를 배포 합니다.** 여러 가지 방법으로 ASP.NET 응용 프로그램 및 서비스를 배포할 수 있습니다.|[ASP.NET 웹 응용 프로그램 및 서비스 배포](https://docs.microsoft.com/aspnet/mvc/overview/deployment/)|  
+|**ASP.NET 응용 프로그램 또는 서비스를 배포 합니다.** 여러 가지 방법으로 ASP.NET 응용 프로그램 및 서비스를 배포할 수 있습니다.|[ASP.NET 웹 응용 프로그램 및 서비스 배포](/aspnet/mvc/overview/deployment/)|  
 |**LightSwitch 응용 프로그램 또는 서비스 배포:** LightSwitch를 사용 하 여 응용 프로그램 및 OData 서비스를 만든 후에는 웹 서버에 배포 하거나 Microsoft Azure 수 있습니다.|[LightSwitch 애플리케이션 배포](https://msdn.microsoft.com/library/4818d933-295c-4ecc-9148-7ad9ca28dcdb)|  
 |**SharePoint 용 앱 게시:** Office 스토어 또는 내부 조직에 대 한 앱 카탈로그에 SharePoint 용 앱을 게시할 수 있습니다.|[Visual Studio를 사용 하 여 SharePoint 용 앱 게시](https://msdn.microsoft.com/library/office/jj220044\(v=office.15\).aspx)|  
 |**Office 용 응용** 프로그램을 게시 합니다. Office 스토어 또는 내부 조직의 앱 카탈로그에 Office 용 앱을 게시할 수 있습니다.|[Office 용 응용 프로그램 게시](https://msdn.microsoft.com/library/office/fp123515.aspx)|  

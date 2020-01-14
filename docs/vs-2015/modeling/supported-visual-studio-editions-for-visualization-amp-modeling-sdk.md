@@ -11,12 +11,12 @@ caps.latest.revision: 29
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0692efefcc92e3316ccf725c586fc6566b09a6ef
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 227c2871f68545c9f9fe5fa1ea3ceee827ccdc6a
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850772"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917302"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>지원 되는 Visual Studio 버전의 시각화 &amp; 모델링 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,10 +28,9 @@ ms.locfileid: "75850772"
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://www.visualstudio.com/)|
-|Visual Studio SDK|[http://go.microsoft.com/fwlink/?LinkId=185580](https://docs.microsoft.com/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
-|Visual Studio Visualization and Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)|
-
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[https://www.visualstudio.com/](https://www.visualstudio.com/)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[Visual Studio SDK](../extensibility/visual-studio-sdk.md)|
+|Visual Studio Visualization and Modeling SDK|[모델링 SDK 다운로드](https://www.microsoft.com/download/details.aspx?id=48148)|
 ## <a name="deployment-editions"></a>배포 버전
  [!INCLUDE[dsl](../includes/dsl-md.md)]에서는 작성하는 DSL(Domain-Specific Language)을 배포하기 위한 다음 구성을 지원합니다.
 

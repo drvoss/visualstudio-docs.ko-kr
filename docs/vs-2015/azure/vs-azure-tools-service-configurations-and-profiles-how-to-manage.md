@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 2d7081fc7531c8c1c1fcf13564f9f90bc9964f17
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 008dd927f38c7fd79996bde39531e256314f2e24
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849994"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917353"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>서비스 구성 및 프로필 관리 방법
 ## <a name="overview"></a>개요
@@ -80,7 +80,7 @@ ms.locfileid: "75849994"
    
     새 프로필이 대상 프로필 목록에 나타납니다.
 6. **대상 프로필** 목록에서 방금 만든 프로필을 선택합니다. 게시 마법사 설정은 선택한 프로필의 선택 항목으로 채워집니다.
-7. **이전** 및 **다음** 단추를 선택하여 게시 마법사의 각 페이지를 표시한 다음 이 프로필에 대한 설정을 사용자 지정합니다. 자세한 내용은 [Azure 애플리케이션 게시 마법사](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publish-azure-application-wizard?view=vs-2019)를 참조하세요.
+7. **이전** 및 **다음** 단추를 선택하여 게시 마법사의 각 페이지를 표시한 다음 이 프로필에 대한 설정을 사용자 지정합니다. 자세한 내용은 [Azure 애플리케이션 게시 마법사](vs-azure-tools-publish-azure-application-wizard.md)를 참조하세요.
 8. 설정 사용자 지정을 완료한 후 **다음** 을 선택하여 설정 페이지로 다시 이동합니다. 이 설정을 사용하여 서비스를 게시하거나 프로필 목록 옆 **저장** 을 선택하면 프로필이 저장됩니다.
 
 ### <a name="to-rename-or-delete-a-profile"></a>프로필의 이름을 변경하거나 삭제하려면
@@ -93,9 +93,9 @@ ms.locfileid: "75849994"
 ### <a name="to-change-a-profile"></a>프로필을 변경하려면
 1. Azure 프로젝트의 바로 가기 메뉴를 열고 **게시**를 클릭합니다.
 2. **대상 프로필** 목록에서 변경할 프로필을 선택합니다.
-3. **이전** 및 **다음** 단추를 선택하여 게시 마법사의 각 페이지를 표시한 다음 이 프로필에 대한 설정을 변경합니다. 자세한 내용은 [Azure 애플리케이션 게시 마법사](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publish-azure-application-wizard?view=vs-2019)를 참조하세요.
+3. **이전** 및 **다음** 단추를 선택하여 게시 마법사의 각 페이지를 표시한 다음 이 프로필에 대한 설정을 변경합니다. 자세한 내용은 [Azure 애플리케이션 게시 마법사](vs-azure-tools-publish-azure-application-wizard.md)를 참조하세요.
 4. 설정 변경을 완료한 후 **다음**을 선택하여 **설정** 페이지로 다시 이동합니다.
 5. (선택 사항) **게시** 를 선택하고 새 설정을 사용하여 클라우드 서비스를 게시합니다. 이번에 클라우드 서비스를 게시하지 않고 게시 마법사를 닫으려는 경우, Visual Studio는 프로필에 변경 내용을 저장할 것인지를 묻습니다.
 
 ## <a name="next-steps"></a>다음 단계
-Visual Studio에서 Azure 프로젝트의 다른 부분 구성에 대해 알아보려면 [Azure 프로젝트 구성](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address?view=vs-2019)
+Visual Studio에서 Azure 프로젝트의 다른 부분 구성에 대해 알아보려면 [Azure 프로젝트 구성](vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address.md)

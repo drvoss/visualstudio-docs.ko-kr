@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 89f78e129d64b313de7bada3c72a449f1fb2aece
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 43b9d201a146538cd74e9528340845fd9fd92597
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849926"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918573"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>연습: 텍스트 템플릿을 사용하여 코드 생성
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "75849926"
  이 예제 프로젝트에서는 템플릿이 샘플 XML 파일을 읽고, 각 노드 형식에 해당하는 클래스를 생성합니다. 직접 작성한 코드에서 이러한 클래스를 사용하여 XML 파일을 탐색할 수 있습니다. 동일한 노드 형식을 사용하는 다른 파일에서 애플리케이션을 실행할 수도 있습니다. 샘플 XML 파일의 목적은 애플리케이션에서 처리하고자 하는 모든 노드 형식의 예를 제공하는 것입니다.
 
 > [!NOTE]
-> [에 포함된 애플리케이션](https://docs.microsoft.com/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe)xsd.exe [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]는 XML 파일에서 강력한 형식의 클래스를 생성할 수 있습니다. 여기에 표시된 템플릿은 예로서 제공됩니다.
+> [에 포함된 애플리케이션](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe)xsd.exe [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]는 XML 파일에서 강력한 형식의 클래스를 생성할 수 있습니다. 여기에 표시된 템플릿은 예로서 제공됩니다.
 
  샘플 파일은 다음과 같습니다.
 

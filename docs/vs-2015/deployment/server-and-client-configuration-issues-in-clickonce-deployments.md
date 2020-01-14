@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 97c8c50dec18d730d92021d88361701a96b99590
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a8f068099ec77f35919f880512e6c66f8e648cbe
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75844991"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918808"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 배포 시 서버 및 클라이언트 구성 문제
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,8 +132,6 @@ Windows Server에서 인터넷 정보 서비스 (IIS)를 사용 하는 경우 Wi
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]를 사용 하면 클라이언트에 스트림을 보내기 전에 GZIP 알고리즘을 사용 하 여 데이터 스트림을 압축 하는 웹 서버 기술인 HTTP 압축을 사용 하는 다운로드를 수행할 수 있습니다. 클라이언트 (이 경우 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)])는 파일을 읽기 전에 스트림 압축을 풉니다.  
   
  IIS를 사용 하는 경우 HTTP 압축을 쉽게 사용 하도록 설정할 수 있습니다. 그러나 HTTP 압축을 사용 하도록 설정 하는 경우 특정 파일 형식 (즉, HTML 및 텍스트 파일)에 대해서만 사용할 수 있습니다. 어셈블리 (.dll), XML (.xml), 배포 매니페스트 (응용 프로그램) 및 응용 프로그램 매니페스트 (.manifest)에 대해 압축을 사용 하도록 설정 하려면 이러한 파일 형식을 IIS에서 압축할 형식 목록에 추가 해야 합니다. 배포에 파일 형식을 추가할 때까지 텍스트 및 HTML 파일만 압축 됩니다.  
-  
- IIS에 대 한 자세한 지침은 [HTTP 압축을 위한 추가 문서 유형을 지정 하는 방법](https://support.microsoft.com/kb/234497)을 참조 하세요.  
   
 ## <a name="see-also"></a>참고 항목  
  [ClickOnce 배포 문제 해결](../deployment/troubleshooting-clickonce-deployments.md)   

@@ -31,12 +31,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 181c32017a84328037ea46d49698821fa3cb41ea
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 930cec012bfda49c61116ada2ba6df10c3a48f51
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295874"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851001"
 ---
 # <a name="link-task"></a>링크 작업
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    매니페스트 파일의 `dependency` 섹션에 배치될 특성을 지정합니다.  
   
-   자세한 내용은 [/MANIFESTDEPENDENCY(매니페스트 종속성 지정)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73)를 참조하세요. [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) 웹 사이트의 "게시자 구성 파일"도 참조하세요.  
+   자세한 내용은 [/MANIFESTDEPENDENCY(매니페스트 종속성 지정)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73)를 참조하세요. [MSDN](https://msdn.microsoft.com/) 웹 사이트의 "게시자 구성 파일"도 참조하세요.  
   
 - **AdditionalOptions**  
   
@@ -926,5 +926,5 @@ Visual C++ 링커 도구 link.exe를 래핑합니다. 링커 도구는 COFF(Comm
   
    자세한 내용은 [/VERSION(버전 정보)](https://msdn.microsoft.com/library/b86d0e86-dca6-4316-aee2-d863ccb9f223)을 참조하세요.  
   
-## <a name="see-also"></a>참고 항목  
+## <a name="see-also"></a>관련 항목  
  [작업 참조](../msbuild/msbuild-task-reference.md)

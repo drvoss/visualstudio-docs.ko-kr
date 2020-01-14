@@ -30,6 +30,8 @@
       items:
         - name: 메모리 사용량 분석
           href: analyze-memory-usage.md
+        - name: .NET 개체에 대한 메모리 사용 분석
+          href: dotnet-alloc-tool.md
         - name: 사용자 지정 네이티브 ETW 힙 이벤트
           href: custom-native-etw-heap-events.md
         - name: 디버거 없이 메모리 사용
@@ -576,7 +578,7 @@
                       href: start.md
                     - name: CrossSession
                       href: crosssession.md
-                    - name: Output
+                    - name: 출력
                       href: output.md
                     - name: WinCounter
                       href: wincounter.md
@@ -620,9 +622,9 @@
                       href: timer.md
                     - name: LineOff
                       href: lineoff.md
-                    - name: 콘솔
+                    - name: Console
                       href: console.md
-                    - name: 상태
+                    - name: Status
                       href: status.md
                     - name: TargetCLR
                       href: targetclr.md
@@ -860,7 +862,7 @@
           href: concurrency-visualizer-command-line-utility-cvcollectioncmd.md
     - name: 스토어 앱의 에너지 사용 분석
       href: analyze-energy-use-in-store-apps.md
-- name: 자료
+- name: 리소스
   items:
     - name: 프로파일링 도구의 새로운 기능
       href: what-s-new-in-profiling-tools.md

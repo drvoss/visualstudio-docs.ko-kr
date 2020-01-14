@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dc49a628cdf5695df7744295d2c1d990986bcfbe
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ead3faa5354dae198524e2a816a85b05bc5d8f08
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295634"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845555"
 ---
 # <a name="user-permissions-and-visual-studio"></a>사용자 권한 및 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ ms.locfileid: "74295634"
 
  Visual Studio IDE에서는 일반 사용자로 거의 모든 작업을 할 수 있지만 다음 작업을 완료하려면 관리자 권한이 필요합니다.
 
-|영역|작업|추가 정보|
+|Area|작업|추가 정보|
 |----------|----------|--------------------------|
 |설치|Visual Studio 설치|[Visual Studio 2015 설치](../install/install-visual-studio-2015.md)|
 ||Visual Studio 평가판에서 업그레이드|[방법: Visual Studio Trial Edition에서 업그레이드](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
 ||로컬 도움말 콘텐츠 설치, 업데이트 또는 제거|[로컬 콘텐츠 설치 및 관리](../ide/install-and-manage-local-content.md)|
 |애플리케이션 종류|SharePoint 2010용 솔루션 개발|[SharePoint 솔루션 개발 요구 사항](https://msdn.microsoft.com/library/ae8ff69d-4540-4380-ab0b-845f7108e89c)|
-||[!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)]의 개발자 라이선스 취득|[개발자 라이선스 얻기(Windows 스토어 앱)](https://go.microsoft.com/fwlink/?LinkID=241313)|
+||[!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)]의 개발자 라이선스 취득|[개발자 라이선스 얻기(Windows 스토어 앱)](https://msdn.microsoft.com/library/windows/apps/hh974578.aspx)|
 |도구 상자|**도구 상자**에 클래식 COM 컨트롤 추가.|[도구 상자 사용](../ide/using-the-toolbox.md)|
 |추가 기능|IDE에서 기본 COM을 사용하여 작성한 추가 기능 설치 및 사용|[추가 기능 및 마법사 만들기](https://msdn.microsoft.com/library/c5a47c21-6668-4de3-898d-afa969317e73)|
 |빌드|구성 요소를 등록하는 빌드 후 이벤트 사용|[사용자 지정 빌드 단계 및 빌드 이벤트 이해](https://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|
@@ -45,11 +45,11 @@ ms.locfileid: "74295634"
 |디버깅|높은 권한으로 실행되는 애플리케이션 디버깅|[디버거 설정 및 준비](../debugger/debugger-settings-and-preparation.md)|
 ||ASP.NET 웹 사이트와 같이 다른 사용자 계정으로 실행되는 애플리케이션 디버깅|[ASP.NET 및 AJAX 애플리케이션 디버그](../debugger/debugging-aspnet-and-ajax-applications.md)|
 ||XBAP(XAML 브라우저 애플리케이션) 영역에서 디버깅|[WPF 호스트(PresentationHost.exe)](https://msdn.microsoft.com/library/3215bfa1-722c-4ac8-a7c5-bdd02d30afbd)|
-||에뮬레이터를 사용하여 Microsoft Azure용 클라우드 서비스 프로젝트 디버깅|[Visual Studio에서 Azure 클라우드 서비스 또는 가상 컴퓨터 디버깅](https://go.microsoft.com/fwlink/?LinkId=266725)|
+||에뮬레이터를 사용하여 Microsoft Azure용 클라우드 서비스 프로젝트 디버깅|[Visual Studio에서 Azure 클라우드 서비스 또는 가상 컴퓨터 디버깅](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-debug-cloud-services-virtual-machines?view=vs-2019)|
 ||원격 디버깅을 위한 방화벽 구성|[디바이스에서 원격 도구 설정](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)|
 |성능 도구|애플리케이션 프로파일링|[초보자를 위한 성능 프로파일링 지침](../profiling/beginners-guide-to-performance-profiling.md)|
-|배포|로컬 컴퓨터에서 IIS(인터넷 정보 서비스)에 웹 애플리케이션 배포|[Deploying an ASP.NET Web Application to a Hosting Provider using Visual Studio or Visual Web Developer: Deploying to IIS as a Test Environment](https://go.microsoft.com/fwlink/?LinkId=266478)(Visual Studio 또는 Visual Web Developer를 사용하여 호스팅 제공업체에 ASP.NET 웹 애플리케이션 배포: IIS에 테스트 환경으로 배포)|
-|Microsoft에 사용자 의견 제공|Visual Studio 사용자 환경 개선 프로그램 참여 방법 변경|[방법: 사용자 의견 보내기](../misc/how-to-send-feedback-about-visual-studio.md)|
+|배포|로컬 컴퓨터에서 IIS(인터넷 정보 서비스)에 웹 애플리케이션 배포|[Visual Studio 또는 Visual Web Developer를 사용하여 호스팅 공급자에 ASP.NET 웹 애플리케이션 배포: IIS에 테스트 환경으로 배포](https://www.asp.net/web-forms/tutorials/deployment/deployment-to-a-hosting-provider/Deployment-to-a-Hosting-Provider-Deploying-to-IIS-as-a-Test-Environment-5-of-12)|
+|Microsoft에 사용자 의견 제공|Visual Studio 사용자 환경 개선 프로그램 참여 방법 변경|[방법: 의견 보내기](../misc/how-to-send-feedback-about-visual-studio.md)|
 
 ## <a name="running-visual-studio-as-an-administrator"></a>관리자로 Visual Studio 실행
  IDE를 시작할 때마다 관리자 권한으로 Visual Studio를 실행하거나 애플리케이션 바로 가기를 수정하여 항상 관리자 권한으로 실행할 수 있습니다. 자세한 내용은 Windows 도움말을 참조하십시오.
@@ -70,5 +70,5 @@ ms.locfileid: "74295634"
 
      Visual Studio가 시작되면 제목 표시줄의 제품 이름 뒤에 **(관리자)** 가 나타납니다.
 
-## <a name="see-also"></a>참고 항목
- [Visual Studio 프로젝트 포팅, 마이그레이션, 업그레이드](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [Visual Studio 2015 설치](../install/install-visual-studio-2015.md)
+## <a name="see-also"></a>관련 항목
+ Visual [Studio 프로젝트 포팅, 마이그레이션 및 업그레이드](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [visual studio 2015 설치](../install/install-visual-studio-2015.md)

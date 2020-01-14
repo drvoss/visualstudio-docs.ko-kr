@@ -1,4 +1,4 @@
----
+﻿---
 title: 힙 할당 함수의 디버그 버전 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -41,7 +41,7 @@ C 런타임 라이브러리에 힙 할당 함수의 특별한 디버그 버전�
 
 - 할당이 필요한 소스 파일과 줄 번호 저장
 
-  `malloc` 호출을 `_malloc_dbg`로 변환 하지 않으려는 경우 [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc)를 정의하여 소스 파일 정보를 가져올 수 있습니다. 이렇게 하면 전처리기가 `malloc`에 대 한 모든 호출을 래퍼에 의존 하는 대신 `_malloc_dbg`에 직접 매핑합니다.
+  `malloc` 호출을 `_malloc_dbg`로 변환 하지 않으려는 경우 [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc)를 정의하여 소스 파일 정보를 가져올 수 있습니다. 이렇게 하면 전처리기가 `malloc`에 대 한 모든 호출을 래퍼에 의존 하는 대신 `_malloc_dbg`에 직접 매핑합니다. `malloc`.
 
   클라이언트 블록에서 별도의 할당 형식을 추적하려면 `_malloc_dbg`를 직접 호출하고 `blockType` 매개 변수를 `_CLIENT_BLOCK`에 설정해야 합니다.
 

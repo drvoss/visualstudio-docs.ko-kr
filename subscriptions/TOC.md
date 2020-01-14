@@ -2,7 +2,7 @@
 # [새로운 기능](whats-new-in-subscriptions.md)
 # 알림 신청
 ## 구독 구입
-### [소매](https://visualstudio.microsoft.com/vs/pricing)
+### [정품](https://visualstudio.microsoft.com/vs/pricing)
 ### 클라우드 
 #### [개요](vscloud-overview.md)
 #### [청구 FAQ](vscloud-billing-faq.md)
@@ -88,7 +88,7 @@
 ### [개인 전자 메일 로그인을 사용하는 구독자](personal-email-sign-ins.md)
 ### [GitHub Enterprise가 포함된 Visual Studio 관리](assign-github.md)
 # 리소스
-## [Visual Studio 라이선스 백서](https://aka.ms/vslicensing)
+## [Visual Studio 라이선스 백서](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 ## [구독 옵션 및 가격 비교](https://visualstudio.microsoft.com/vs/pricing)
 ## [Visual Studio IDE 기능 비교](https://visualstudio.microsoft.com/vs/compare)
 ## [Visual Studio 관리 및 구독 지원](https://visualstudio.microsoft.com/support/support-overview-vs)

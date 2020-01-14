@@ -19,12 +19,12 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 787be52eeb546d2ab184a172464862d10cb43288
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8116d4ab4a2f20f79f3849ae7f8b324af9832dd5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299581"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850247"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>연습: WPF 애플리케이션에서 관련 데이터 표시
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,12 +41,12 @@ ms.locfileid: "74299581"
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>전제 조건
  이 연습을 완료하려면 다음 구성 요소가 필요합니다.
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-- AdventureWorksLT 샘플 데이터베이스가 연결된 SQL Server 또는 SQL Server Express의 실행 중인 인스턴스 액세스 권한. [CodePlex 웹 사이트](https://go.microsoft.com/fwlink/?linkid=87843)에서 AdventureWorksLT 데이터베이스를 다운로드할 수 있습니다.
+- AdventureWorksLT 샘플 데이터베이스가 연결된 SQL Server 또는 SQL Server Express의 실행 중인 인스턴스 액세스 권한. [CodePlex 웹 사이트](https://codeplex.com/SqlServerSamples)에서 AdventureWorksLT 데이터베이스를 다운로드할 수 있습니다.
 
   또한 다음 개념에 대한 지식은 연습을 완료하는 데 반드시 필요하지는 않지만 사전에 파악해 두면 유용할 수 있습니다.
 
@@ -133,13 +133,13 @@ ms.locfileid: "74299581"
 
    - **OnlineOrderFlag**
 
-   - **배송**
+   - **ShipToAddressID**
 
    - **BillToAddressID**
 
    - **CreditCardApprovalCode**
 
-   - **부분합**
+   - **SubTotal**
 
    - **TaxAmt**
 

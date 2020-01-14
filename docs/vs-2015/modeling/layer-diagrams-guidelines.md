@@ -14,17 +14,17 @@ caps.latest.revision: 57
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 51cb71d4bc2f66377b677d5be292c4eafa1dbd18
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 21376668eef88d3d8ce42ff73785b972be045cb2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299457"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850629"
 ---
 # <a name="layer-diagrams-guidelines"></a>레이어 다이어그램: 지침
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio에서 *레이어 다이어그램* 을 만들어 상위 수준에서 앱의 아키텍처를 설명 합니다. 레이어 다이어그램에서 코드의 유효성을 검사하여 코드가 디자인과 일치하는지 확인합니다. 빌드 프로세스에 레이어 유효성 검사를 포함할 수도 있습니다. [Channel 9 비디오: 레이어 다이어그램을 사용 하 여 아키텍처 디자인 및 유효성 검사](https://go.microsoft.com/fwlink/?LinkID=252073)를 참조 하세요.
+Visual Studio에서 *레이어 다이어그램* 을 만들어 상위 수준에서 앱의 아키텍처를 설명 합니다. 레이어 다이어그램에서 코드의 유효성을 검사하여 코드가 디자인과 일치하는지 확인합니다. 빌드 프로세스에 레이어 유효성 검사를 포함할 수도 있습니다. [Channel 9 비디오: 레이어 다이어그램을 사용 하 여 아키텍처 디자인 및 유효성 검사](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture)를 참조 하세요.
 
  이 기능을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
 
@@ -66,7 +66,7 @@ Visual Studio에서 *레이어 다이어그램* 을 만들어 상위 수준에�
 ## <a name="CreateLayers"></a>기능 영역 또는 구성 요소를 나타내는 계층 정의
  레이어는 프로젝트, 코드 파일, 네임 스페이스, 클래스, 메서드 등 *아티팩트의*논리 그룹을 나타냅니다. Visual C# .NET 및 Visual Basic.NET 프로젝트의 아티팩트에서 레이어를 만들거나 문서(예: Word 파일 또는 PowerPoint 프레젠테이션)를 연결하여 사양 또는 계획을 레이어에 연결할 수 있습니다. 각 레이어는 다이어그램에서 직사각형으로 나타나고 그에 연결된 아티팩트의 수를 보여줍니다. 레이어에는 보다 구체적인 작업을 설명하는 중첩된 레이어가 포함될 수 있습니다.
 
- 일반적인 지침대로 해당 기능에 따라 레이어의 이름을 지정합니다(예: "프레젠테이션" 또는 "서비스"). 아티팩트가 밀접하게 상호 종속되는 경우 동일한 레이어에 배치합니다. 아티팩트를 개별적으로 업데이트하거나 별도 애플리케이션에서 사용할 수 있는 경우 다른 레이어에 배치합니다. 계층화 패턴에 대 한 자세한 내용은 [http://go.microsoft.com/fwlink/?LinkId=145794](https://go.microsoft.com/fwlink/?LinkId=145794)의 패턴 & 사례 사이트를 참조 하세요.
+ 일반적인 지침대로 해당 기능에 따라 레이어의 이름을 지정합니다(예: "프레젠테이션" 또는 "서비스"). 아티팩트가 밀접하게 상호 종속되는 경우 동일한 레이어에 배치합니다. 아티팩트를 개별적으로 업데이트하거나 별도 애플리케이션에서 사용할 수 있는 경우 다른 레이어에 배치합니다. 계층화 패턴에 대 한 자세한 내용은 [http://go.microsoft.com/fwlink/?LinkId=145794](https://apparch.codeplex.com/Wiki/View.aspx?title=Application Patterns&referringTitle=Home)의 패턴 & 사례 사이트를 참조 하세요.
 
 > [!TIP]
 > 레이어에 연결할 수 있지만 레이어 다이어그램의 유효성 검사를 지원하지 않는 특정 유형의 아티팩트가 있습니다. 아티팩트가 유효성 검사를 지원 하는지 여부를 확인 하려면 **레이어 탐색기** 를 열어 아티팩트 링크의 **유효성 검사 지원** 속성을 검사 합니다. [레이어 간의 기존 종속성 검색](#Generate)을 참조 하세요.
@@ -115,7 +115,7 @@ Visual Studio에서 *레이어 다이어그램* 을 만들어 상위 수준에�
 ## <a name="NewAreas"></a>응용 프로그램의 새 영역 디자인
  새 프로젝트의 개발을 시작하거나 새 프로젝트에서 새 영역을 개발하게 될 경우 코드 개발을 시작하기 전에 레이어 및 종속성을 그리면 주요 구성 요소를 식별하는 데 도움이 될 수 있습니다.
 
-- 가능 하면 레이어 다이어그램에 식별할 수 있는 **아키텍처 패턴을 표시** 합니다. 예를 들어 데스크톱 애플리케이션에 설명하는 레이어 다이어그램에 프레젠테이션, 도메인 논리 및 데이터 스토리지와 같은 레이어를 포함할 수 있습니다. 애플리케이션 내의 단일 기능에 대해 설명하는 레이어 다이어그램에는 모델, 뷰 및 컨트롤러와 같은 레이어가 있을 수 있습니다. 이러한 패턴에 대 한 자세한 내용은 [패턴 & 사례: 응용 프로그램 아키텍처](https://go.microsoft.com/fwlink/?LinkId=145794)를 참조 하세요.
+- 가능 하면 레이어 다이어그램에 식별할 수 있는 **아키텍처 패턴을 표시** 합니다. 예를 들어 데스크톱 애플리케이션에 설명하는 레이어 다이어그램에 프레젠테이션, 도메인 논리 및 데이터 스토리지와 같은 레이어를 포함할 수 있습니다. 애플리케이션 내의 단일 기능에 대해 설명하는 레이어 다이어그램에는 모델, 뷰 및 컨트롤러와 같은 레이어가 있을 수 있습니다. 이러한 패턴에 대 한 자세한 내용은 [패턴 & 사례: 응용 프로그램 아키텍처](https://apparch.codeplex.com/Wiki/View.aspx?title=Application Patterns&referringTitle=Home)를 참조 하세요.
 
      비슷한 패턴을 자주 만드는 경우 사용자 지정 도구를 만듭니다. [사용자 지정 모델링 도구 상자 항목 정의를](../modeling/define-a-custom-modeling-toolbox-item.md)참조 하세요.
 

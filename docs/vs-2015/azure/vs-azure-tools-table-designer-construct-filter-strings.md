@@ -11,39 +11,39 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: f1cf5634985683fc86a738d93a6cfa352b52bd24
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: c76113f014d8be3bd706ef02ec1135a84cbcae82
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74290991"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849955"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>테이블 디자이너에 대한 필터 문자열 생성
 ## <a name="overview"></a>개요
-Visual Studio **테이블 디자이너**에 표시된 Azure 테이블에서 데이터를 필터링하려면 필터 문자열을 생성하고 필터 필드에 입력합니다. 필터 문자열 구문은 WCF Data Services에 의해 정의되며 SQL WHERE 절과 유사하지만 HTTP 요청을 통해 Table service에 전송됩니다. **테이블 디자이너** 는 적절한 인코딩을 처리하므로 원하는 속성 값을 필터링하려면 단순히 속성 이름, 비교 연산자, 조건 값 및 필요에 따라 부울 연산자를 필터 필드에 입력하면 됩니다. [Storage 서비스 REST API 참조](https://go.microsoft.com/fwlink/p/?LinkId=400447)를 통해 테이블 쿼리에 대한 URL을 생성하는 경우 $filter 쿼리 옵션은 포함할 필요가 없습니다.
+Visual Studio **테이블 디자이너**에 표시된 Azure 테이블에서 데이터를 필터링하려면 필터 문자열을 생성하고 필터 필드에 입력합니다. 필터 문자열 구문은 WCF Data Services에 의해 정의되며 SQL WHERE 절과 유사하지만 HTTP 요청을 통해 Table service에 전송됩니다. **테이블 디자이너** 는 적절한 인코딩을 처리하므로 원하는 속성 값을 필터링하려면 단순히 속성 이름, 비교 연산자, 조건 값 및 필요에 따라 부울 연산자를 필터 필드에 입력하면 됩니다. [Storage 서비스 REST API 참조](https://msdn.microsoft.com/library/dd179355.aspx)를 통해 테이블 쿼리에 대한 URL을 생성하는 경우 $filter 쿼리 옵션은 포함할 필요가 없습니다.
 
-WCF Data Services는 [개방형 데이터 프로토콜](https://go.microsoft.com/fwlink/p/?LinkId=214805) (OData)에 기반을 둡니다. 필터 시스템 쿼리 옵션 ( **$filter**)에 대한 자세한 내용은 [OData URI 규칙 사양](https://go.microsoft.com/fwlink/p/?LinkId=214806)을 참조하세요.
+WCF Data Services는 [개방형 데이터 프로토콜](https://www.odata.org/) (OData)에 기반을 둡니다. 필터 시스템 쿼리 옵션 ( **$filter**)에 대한 자세한 내용은 [OData URI 규칙 사양](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)을 참조하세요.
 
 ## <a name="comparison-operators"></a>비교 연산자
 다음의 논리 연산자는 모든 속성 유형에 대해 지원됩니다.
 
 | 논리 연산자 | 설명 | 필터 문자열의 예 |
 | --- | --- | --- |
-| eq |같음 |'Redmond'와 같은 도시 |
+| eq |Equal |'Redmond'와 같은 도시 |
 | gt |보다 큼 |20보다 큰 가격 |
-| ge |크거나 같음 |10보다 크거나 같은 가격 |
-| lt |보다 작음 |20보다 적은 가격 |
+| ge |다음보다 크거나 같음 |10보다 크거나 같은 가격 |
+| lt |다음보다 적음 |20보다 적은 가격 |
 | le |작거나 같음 |100보다 적거나 같은 가격 |
-| ne |같지 않음 |'London'과 같지 않은 도시 |
+| ne |다음과 같지 않음 |'London'과 같지 않은 도시 |
 | 및 |및 |200보다 적거나 같은 가격 및 3.5보다 큰 가격 |
-| or |또는 |3\.5보다 적거나 같은 가격 또는 200보다 큰 가격 |
+| 또는 |Or |3\.5보다 적거나 같은 가격 또는 200보다 큰 가격 |
 | not |not |not isAvailable |
 
 필터 문자열을 생성할 때 다음의 규칙이 중요합니다.
 
 * 논리 연산자를 사용하여 속성 값을 비교합니다. 참고로 동적 값에 속성을 비교할 수 있으며 식의 한쪽은 상수여야 합니다.
 * 필터 문자열의 모든 부분은 대/소문자를 구분합니다.
-* 상수 값은 유효한 결과를 반환하는 필터에 대한 속성과 동일한 데이터 형식이어야 합니다. 속성 형식에 대한 자세한 내용은 [테이블 서비스 데이터 모델 이해](https://go.microsoft.com/fwlink/p/?LinkId=400448)를 참조하세요.
+* 상수 값은 유효한 결과를 반환하는 필터에 대한 속성과 동일한 데이터 형식이어야 합니다. 속성 형식에 대한 자세한 내용은 [테이블 서비스 데이터 모델 이해](https://msdn.microsoft.com/library/dd179338.aspx)를 참조하세요.
 
 ## <a name="filtering-on-string-properties"></a>문자열 속성 필터링
 문자열 속성으로 필터링하는 경우 문자열 상수를 작은따옴표로 묶습니다.
@@ -103,7 +103,7 @@ not IsActive
 ```
 
 ## <a name="filtering-on-datetime-properties"></a>DateTime 속성 필터링
-DateTime 값을 필터링하려면 **datetime** 키워드를 지정하고 그 뒤에 날짜/시간 상수를 작은따옴표 안에 입력합니다. 날짜/시간 상수는 [DateTime 속성 값 형식 지정](https://go.microsoft.com/fwlink/p/?LinkId=400449)에 설명된 것처럼 결합된 UTC 형식이어야 합니다.
+DateTime 값을 필터링하려면 **datetime** 키워드를 지정하고 그 뒤에 날짜/시간 상수를 작은따옴표 안에 입력합니다. 날짜/시간 상수는 [DateTime 속성 값 형식 지정](https://msdn.microsoft.com/library/azure/dd894027.aspx)에 설명된 것처럼 결합된 UTC 형식이어야 합니다.
 
 다음 예제는 CustomerSince 속성이 2008년 7월 10일과 같은 경우 엔터티를 반환합니다.
 

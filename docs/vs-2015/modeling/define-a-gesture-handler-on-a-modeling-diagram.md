@@ -12,17 +12,17 @@ caps.latest.revision: 36
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bf749d1073faf4cf22febafce716af36b47c6484
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 67946ffb674a7f4a2346229b958ba8316d6ff919
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299325"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850490"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>모델링 다이어그램의 제스처 처리기 정의
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio에서 사용자가 항목을 두 번 클릭하거나 UML 다이어그램으로 끌 때 수행되는 명령을 정의할 수 있습니다. 이러한 확장을[VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)(Visual Studio Integration Extension)로 패키징하고 다른 Visual Studio 사용자에게 배포할 수 있습니다.
+Visual Studio에서 사용자가 항목을 두 번 클릭하거나 UML 다이어그램으로 끌 때 수행되는 명령을 정의할 수 있습니다. 이러한 확장을[VSIX](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)(Visual Studio Integration Extension)로 패키징하고 다른 Visual Studio 사용자에게 배포할 수 있습니다.
 
  끌려는 요소 형식 및 다이어그램 형식에 대한 기본 제공 동작이 이미 있으면 이 동작에 추가하거나 이 동작을 재정의하지 못할 수 있습니다.
 
@@ -379,9 +379,9 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
    드물게 결함이 있는 확장은 로드되지 않고 오류 창에 보고서를 생성하지만 확장 관리자에 나타나지 않습니다. 이 경우 다음 위치에서 파일을 삭제하여 확장을 제거할 수 있습니다.
 
-   *% LocalAppData%* **\Local\Microsoft\VisualStudio\\[version] \extensions**
+   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**
 
-## <a name="DragExample"></a> 예제
+## <a name="DragExample"></a> 예
  다음 샘플에서는 구성 요소 다이어그램에서 끌어온 구성 요소의 파트 및 포트를 기반으로 시퀀스 다이어그램에서 수명선을 만드는 방법을 보여 줍니다.
 
  테스트하려면 F5 키를 누릅니다. Visual Studio의 실험적 인스턴스가 열립니다. 이 인스턴스에서 UML 모델을 열고 구성 요소 다이어그램에 구성 요소를 만듭니다. 이 구성 요소에 몇몇 인터페이스 및 내부 구성 요소 파트를 추가합니다. 인터페이스 및 파트를 선택합니다. 그다음에 인터페이스 및 파트를 시퀀스 다이어그램으로 끕니다. (구성 요소 다이어그램에서 시퀀스 다이어그램에 대 한 탭까지 끌어 오고 차례로 시퀀스 다이어그램으로 이동 합니다.) 각 인터페이스와 파트에 대 한 수명선이 표시 됩니다.

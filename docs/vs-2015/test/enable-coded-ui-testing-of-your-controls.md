@@ -8,19 +8,19 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 331dabfe8e219383fdc04187482b17b9048886a9
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7190a7f698868642c58d1de2ff801e328859b9db
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302574"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851800"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>컨트롤의 코딩된 UI 테스트 사용
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 코딩된 UI 테스트 프레임워크에 대한 지원을 구현하면 컨트롤을 보다 쉽게 테스트할 수 있습니다. 지원 수준 증가는 점진적으로 추가할 수 있습니다. 이를 위해서는 먼저 기록 및 재생 및 속성 유효성 검사 지원부터 시작합니다. 이를 기반으로 사용해서 코딩된 UI 테스트 빌더가 사용자 컨트롤의 사용자 정의 속성을 인식하도록 허용하고 생성된 코드에서 이러한 속성에 액세스하기 위한 사용자 정의 클래스를 제공할 수 있습니다. 또한 기록 중인 작업의 의도와 가까운 방식으로 코딩된 UI 테스트 빌더가 작업을 캡처하도록 할 수 있습니다.
 
- **항목 내용**
+ **항목 내용:**
 
 1. [접근성을 구현하여 기록 및 재생, 속성 유효성 검사를 지원](../test/enable-coded-ui-testing-of-your-controls.md#recordandplayback)
 
@@ -509,7 +509,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
     }
     ```
 
-4. 바이너리를 빌드하고 이를 %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages에 복사합니다.
+4. 이진 파일을 빌드하여 %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages에 복사합니다.
 
 > [!NOTE]
 > 작업 필터는 액세스 가능성 구현 또는 속성 공급자에 종속되지 않습니다.
@@ -519,7 +519,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 
 #### <a name="to-debug-your-property-provider-or-action-filter"></a>속성 공급자 또는 작업 필터를 디버그하려면
 
-1. 확장명 패키지의 디버그 버전을 빌드하고, .dll 및 .pdb 파일을 %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages에 복사합니다.
+1. 확장 패키지의 디버그 버전을 빌드하고, .dll 및 .pdb 파일을 %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages에 복사합니다.
 
 2. (디버거가 아닌 위치에서) 애플리케이션을 실행합니다.
 
@@ -536,9 +536,9 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 ## <a name="external-resources"></a>외부 리소스
 
 ### <a name="guidance"></a>지침
- [Visual Studio 2012를 사용한 지속적인 업데이트 테스트 - 2장: 단위 테스트: 내부 테스트](https://go.microsoft.com/fwlink/?LinkID=255188)
+ [Visual Studio 2012를 사용한 연속 배달 테스트 - 2장: 단위 테스트: 내부 테스트](https://msdn.microsoft.com/library/jj159340.aspx)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - <xref:System.Windows.Forms.AccessibleObject>
 - [UI 자동화를 사용하여 코드 테스트](../test/use-ui-automation-to-test-your-code.md)

@@ -8,12 +8,12 @@ ms.assetid: 20221de4-2a9e-4787-b99a-b5855bb90872
 caps.latest.revision: 18
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6ff1d953dc853beba8ef836b1eab03140ee0b1e0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ffcab2800168ab6d66426c2e7beb77a158ced1eb
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300399"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851826"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes의 코드 생성, 컴파일 및 명명 규칙
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -239,7 +239,7 @@ attribute of the Assembly element in the .fakes:
 
   getter 또는 setter 속성과 같은 **특수 메서드 이름**은 다음 표에 설명된 대로 처리됩니다.
 
-|메서드 특성...|예|추가되는 메서드 이름|
+|메서드 특성...|예제|추가되는 메서드 이름|
 |-------------------|-------------|--------------------------|
 |**생성자**|`.ctor`|`Constructor`|
 |정적 **생성자**|`.cctor`|`StaticConstructor`|
@@ -285,7 +285,7 @@ attribute of the Assembly element in the .fakes:
 ## <a name="BKMK_External_resources"></a> 외부 리소스
 
 ### <a name="BKMK_Guidance"></a> 지침
- [Visual Studio 2012를 사용한 연속 배달 테스트 - 2장: 단위 테스트: 내부 테스트](https://go.microsoft.com/fwlink/?LinkID=255188)
+ [Visual Studio 2012를 사용한 지속적인 업데이트 테스트 – 2장: 유닛 테스트: 내부 테스트](https://msdn.microsoft.com/library/jj159340.aspx)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>관련 항목
  [Microsoft Fakes를 사용하여 테스트 중인 코드 격리](../test/isolating-code-under-test-with-microsoft-fakes.md)

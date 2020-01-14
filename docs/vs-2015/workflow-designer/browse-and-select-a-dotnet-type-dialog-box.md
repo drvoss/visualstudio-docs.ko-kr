@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d8e25ad181202a2c7994c116e2220426ca3d8509
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 922be22619ee0bd16e2e5ac563999be7db81d45e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297611"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851430"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>.NET 유형 선택 대화 상자
 **속성** 창, 대화 상자 또는 변수 디자이너와 같은 디자이너에서 **형식 찾아보기** ...를 선택 하면 데이터 형식 목록에서는 **.Net 형식 찾아보기 및 선택** 대화 상자 ("형식 브라우저"로 축약 된 형식 이라고 함)입니다. 이 대화 상자의 어셈블리 및 프로젝트 트리 뷰에서 형식을 선택할 수 있습니다.
@@ -31,7 +31,7 @@ ms.locfileid: "74297611"
 - <xref:System.Activities.Statements.TryCatch> 활동에 catch를 추가할 때
 
 > [!NOTE]
-> 형식 브라우저는 Visual Basic 가변 배열 형식을 표시할 수 있지만 다차원 배열 형식을 표시할 수 없습니다. 자세한 내용은 [가변 배열](https://go.microsoft.com/fwlink/?LinkId=195226) 및 [다차원 배열](https://go.microsoft.com/fwlink/?LinkId=195227) 을 참조 하세요.
+> 형식 브라우저는 Visual Basic 가변 배열 형식을 표시할 수 있지만 다차원 배열 형식을 표시할 수 없습니다. 자세한 내용은 [가변 배열](https://msdn.microsoft.com/library/hkhhsz9t(VS.90).aspx) 및 [다차원 배열](https://msdn.microsoft.com/library/d2de1t93(VS.90).aspx) 을 참조 하세요.
 
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>형식 브라우저에서 값 또는 참조 형식 선택
 
@@ -61,7 +61,7 @@ ms.locfileid: "74297611"
 ## <a name="filtering-search-results-in-the-type-browser"></a>형식 브라우저에서 검색 결과 필터링
  일치 항목을 찾기 위해 더 많은 문자를 입력 하면 **유형 이름** 상자의 유형 목록이 더 짧아집니다. 필터링된 목록에는 정규화된 이름 또는 약식 이름이 입력한 문자열로 시작되는 형식만 표시됩니다.
 
- 예를 들면 다음과 같습니다.
+ 예를 들면 다음과 같습니다.:
 
 1. 입력 **작업** 은 <xref:System.OperationCanceledException> 일치 하지만 <xref:System.InvalidOperationException>는 일치 하지 않습니다. <xref:System.InvalidOperationException>을 찾으려면 System.I 또는 Invalid를 입력해야 합니다.
 

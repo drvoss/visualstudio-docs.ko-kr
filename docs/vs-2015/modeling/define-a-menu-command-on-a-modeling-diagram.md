@@ -11,17 +11,17 @@ caps.latest.revision: 63
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 23ba1a6900559d7ee13639bb1da696127e47e536
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 5dac0a77b47f604ae5a10f4c8bcfb9d54b51f26c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299267"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850469"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>모델링 다이어그램의 메뉴 명령 정의
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio에서 UML 다이어그램의 바로 가기 메뉴에 추가 메뉴 항목을 정의할 수 있습니다. 다이어그램에서 임의 요소의 바로 가기 메뉴에 메뉴 명령을 표시하고 사용하도록 설정할지 여부를 제어할 수 있으며, 사용자가 메뉴 항목을 선택할 때 실행되는 코드를 작성할 수 있습니다. 이러한 확장을[VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)(Visual Studio Integration Extension)로 패키징하고 다른 Visual Studio 사용자에게 배포할 수 있습니다.
+Visual Studio에서 UML 다이어그램의 바로 가기 메뉴에 추가 메뉴 항목을 정의할 수 있습니다. 다이어그램에서 임의 요소의 바로 가기 메뉴에 메뉴 명령을 표시하고 사용하도록 설정할지 여부를 제어할 수 있으며, 사용자가 메뉴 항목을 선택할 때 실행되는 코드를 작성할 수 있습니다. 이러한 확장을[VSIX](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)(Visual Studio Integration Extension)로 패키징하고 다른 Visual Studio 사용자에게 배포할 수 있습니다.
 
 ## <a name="requirements"></a>요구 사항
  [요구 사항](../modeling/extend-uml-models-and-diagrams.md#Requirements)을 참조 하세요.
@@ -271,9 +271,9 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
    드물게 결함이 있는 확장은 로드되지 않고 오류 창에 보고서를 생성하지만 확장 관리자에 나타나지 않습니다. 이 경우 다음 위치에서 파일을 삭제하여 확장을 제거할 수 있습니다.
 
-   *% LocalAppData%* **\Local\Microsoft\VisualStudio\\[version] \extensions**
+   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**
 
-## <a name="MenuExample"></a> 예제
+## <a name="MenuExample"></a> 예
  다음 예제에서는 클래스 다이어그램에서 두 요소의 이름은 교환하는 메뉴 명령에 대한 코드를 보여 줍니다. 이 코드는 이전 섹션에서 설명한 대로 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 확장 프로젝트로 빌드 및 설치해야 합니다.
 
 ```
@@ -363,4 +363,4 @@ namespace SwapClassNames
 ```
 
 ## <a name="see-also"></a>참고 항목
- [모델링 확장 정의 및 설치](../modeling/define-and-install-a-modeling-extension.md) [uml 모델 및 다이어그램 확장](../modeling/extend-uml-models-and-diagrams.md) [모델링 다이어그램에서 제스처 처리기 정의](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [사용자 지정 모델링 도구 상자 항목을 정의 합니다](../modeling/define-a-custom-modeling-toolbox-item.md) . uml [모델에 대 한 유효성 검사 제약 조건 정의](../modeling/define-validation-constraints-for-uml-models.md) uml api를 사용한 [uml API 프로그래밍을 사용 하 여 Uml 시퀀스 다이어그램 편집](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md) Uml [api](../modeling/programming-with-the-uml-api.md) [샘플: uml 다이어그램에서 셰이프를 정렬 하는 명령](https://go.microsoft.com/fwlink/?LinkID=213809)
+ [모델링 확장 정의 및 설치](../modeling/define-and-install-a-modeling-extension.md) [uml 모델 및 다이어그램 확장](../modeling/extend-uml-models-and-diagrams.md) [모델링 다이어그램에서 제스처 처리기 정의](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [사용자 지정 모델링 도구 상자 항목을 정의 합니다](../modeling/define-a-custom-modeling-toolbox-item.md) . uml [모델에 대 한 유효성 검사 제약 조건 정의](../modeling/define-validation-constraints-for-uml-models.md) uml api를 사용한 [uml API 프로그래밍을 사용 하 여 Uml 시퀀스 다이어그램 편집](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md) Uml [api](../modeling/programming-with-the-uml-api.md) [샘플: uml 다이어그램에서 셰이프를 정렬 하는 명령](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)

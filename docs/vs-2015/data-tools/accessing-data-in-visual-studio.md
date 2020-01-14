@@ -22,12 +22,12 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 158bc4c2fc7734957c7d3e946390ab1339a322ba
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 065a6ae3901f2426db6556cb19e80f543cb8a78f
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299434"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846664"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Visual Studio에서 데이터 액세스
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ Visual Studio에서는 거의 모든 데이터베이스 제품 또는 서비스�
  많은 데이터베이스 공급 업체와 제 3 자가 NuGet 패키지를 통해 Visual Studio 통합을 지원 합니다. Nuget.org에서 또는 Visual Studio의 NuGet 패키지 관리자를 통해 제공 되는 기능을 탐색할 수 있습니다 (**도구** > **nuget 패키지 관리자** > **솔루션에 대 한 nuget 패키지 관리**). 다른 데이터베이스 제품은 Visual Studio와 확장으로 통합 됩니다.   **도구** > **확장 및 업데이트** 로 이동한 다음 대화 상자의 왼쪽 창에서 **온라인** 을 선택 하 여 Visual Studio 갤러리에서 이러한 제품을 찾아볼 수 있습니다.  자세한 내용은 [데이터베이스 시스템, 도구 및 샘플 설치](../data-tools/installing-database-systems-tools-and-samples.md)를 참조 하세요.
 
 > [!NOTE]
-> SQL Server 2005에 대 한 연장 지원은 2016 년 4 월 12 일에 종료 되었습니다.   이 날짜 이후에는 Visual Studio 2015 이상 버전의 데이터 도구가 SQL Server 2005에서 계속 작동 한다는 보장이 없습니다. 자세한 내용은 [SQL Server 2005에 대 한 지원 종료 알림](https://www.microsoft.com/sql-server/sql-server-2005)을 참조 하세요.
+> SQL Server 2005에 대해 연장된 지원은 2016년 4월 12일에 종료되었습니다.   이 날짜 이후에는 Visual Studio 2015 이상 버전의 데이터 도구가 SQL Server 2005에서 계속 작동 한다는 보장이 없습니다. 자세한 내용은 [SQL Server 2005에 대 한 지원 종료 알림](https://www.microsoft.com/sql-server/sql-server-2005)을 참조 하세요.
 
 ### <a name="net-languages"></a>.NET 언어
  .NET Core에 포함 된 모든 .NET 데이터 액세스는 모든 종류의 데이터 원본에 액세스 하기 위한 인터페이스를 정의 하는 클래스 집합인 ADO.NET을 기반으로 합니다. Visual Studio에는 데이터베이스에 연결 하 고, 데이터를 조작 하 고, 사용자에 게 데이터를 표시 하는 데 도움이 되는 ADO.NET와 함께 작동 하는 몇 가지 도구와 디자이너가 있습니다. 이 섹션의 설명서에서는 이러한 도구를 사용 하는 방법을 설명 합니다. ADO.NET 명령 개체에 대해 직접 프로그래밍할 수도 있습니다. ADO.NET Api를 직접 호출 하는 방법에 대 한 자세한 내용은 MSDN Library의 [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) 를 참조 하십시오.
@@ -115,7 +115,7 @@ Visual Studio에서는 거의 모든 데이터베이스 제품 또는 서비스�
 ### <a name="python"></a>Python
  선호 하는 Python 프레임 워크와 함께 [Visual Studio용 Python 도구](http://microsoft.github.io/PTVS/) 를 설치 하 여 CPython 또는 IronPython (.net) 응용 프로그램을 만듭니다.  Visual Studio용 Python 도구 웹 사이트에는 azure의 [Django 및 SQL Database](https://github.com/Microsoft/PTVS/wiki/Django-and-SQL-Database-on-Azure), azure의 [Django 및 MySQL](https://github.com/Microsoft/PTVS/wiki/Django-and-MySQL-on-Azure) , Azure의 [병 및 MongoDB](https://github.com/Microsoft/PTVS/wiki/Bottle-and-MongoDB-on-Azure)를 포함 하 여 데이터에 연결 하는 몇 가지 자습서가 있습니다.
 
-## <a name="in-this-section"></a>이 섹션의 내용
+## <a name="in-this-section"></a>단원 내용
  [데이터베이스 시스템, 도구 및 샘플 설치](../data-tools/installing-database-systems-tools-and-samples.md) 데이터베이스 제품 및이를 지 원하는 Visual Studio 확장 또는 드라이버를 가져오는 방법 및 실험 및 학습 목적으로 샘플 데이터베이스를 찾을 수 있는 위치에 대해 설명 합니다.
 
  [.Net 용 Visual Studio data tools](https://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) Visual Studio 도구 창을 사용 하 여 데이터 소스에 연결 하 고, 데이터 집합을 만들고, 모델을 Entity Framework 하 고, 데이터를 사용자 인터페이스 컨트롤에 바인딩하는 방법을 설명 합니다.
@@ -133,7 +133,7 @@ Visual Studio에서는 거의 모든 데이터베이스 제품 또는 서비스�
 
  [ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef) 개발자가 관계형 데이터베이스에 대해 직접 프로그래밍 하는 대신 개념적 모델을 기반으로 프로그래밍할 수 있도록 하는 데이터 응용 프로그램을 만드는 방법을 설명 합니다.
 
- [WCF Data Services 4.5](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a) [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]를 사용 하 여 [OData (Open Data Protocol](https://go.microsoft.com/fwlink/?LinkID=182204)를 구현 하는 웹 또는 인트라넷에 데이터 서비스를 배포 하는 방법을 설명 합니다.
+ [WCF Data Services 4.5](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a) [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]를 사용 하 여 [OData (Open Data Protocol](https://www.odata.org/)를 구현 하는 웹 또는 인트라넷에 데이터 서비스를 배포 하는 방법을 설명 합니다.
 
  [Office 솔루션의 데이터](https://msdn.microsoft.com/library/8478c095-864b-4ed3-8a70-1fc19b411c6a) Office 솔루션에서 데이터가 작동 하는 방식을 설명 하는 항목의 링크를 포함 합니다. 여기에는 스키마 지향 프로그래밍, 데이터 캐싱 및 서버 쪽 데이터 액세스에 대 한 정보가 포함 됩니다.
 

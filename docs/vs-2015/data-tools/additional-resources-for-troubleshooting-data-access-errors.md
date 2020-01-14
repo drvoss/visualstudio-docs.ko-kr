@@ -231,33 +231,33 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 005f1d1edd1c0a6127c150922cdaab2aef439634
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: dcf8f67e240476ad75ab5b0b7b0c446be32ad816
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299446"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846529"
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>데이터 액세스 오류 문제 해결을 위한 추가 리소스
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 MSDN(Microsoft Developer Network) 공개 포럼에서 오류 및 경고 문제 해결 관련 지원 정보를 찾을 수 있습니다. 다음 표에서는 MSDN에서 사용할 수 있는 데이터 관련 포럼을 나열 합니다.
 
- [Windows Forms 데이터 컨트롤 및 데이터 바인딩](https://go.microsoft.com/fwlink/?LinkId=160179) Windows Forms에서 데이터 액세스에 대 한 질문과 일반적인 토론을 위한 포럼을 제공 합니다.
+ [Windows Forms 데이터 컨트롤 및 데이터 바인딩](https://social.msdn.microsoft.com/Forums/en-US/winformsdatacontrols/threads) Windows Forms에서 데이터 액세스에 대 한 질문과 일반적인 토론을 위한 포럼을 제공 합니다.
 
- [ADO.NET 데이터 집합 포럼](https://go.microsoft.com/fwlink/?LinkId=160180) 데이터 집합에 대 한 질문과 일반적인 토론을 위한 포럼을 제공 합니다.
+ [ADO.NET 데이터 집합 포럼](https://social.msdn.microsoft.com/Forums/en-US/adodotnetdataset/threads) 데이터 집합에 대 한 질문과 일반적인 토론을 위한 포럼을 제공 합니다.
 
- [ADO.NET Entity Framework 및 LINQ to Entities](https://go.microsoft.com/fwlink/?LinkId=191520) Entity Framework 응용 프로그램 및 LINQ to Entities 언어에 대 한 질문과 일반적인 토론을 위한 포럼을 제공 합니다.
+ [ADO.NET Entity Framework 및 LINQ to Entities](https://social.msdn.microsoft.com/Forums/en-US/adodotnetentityframework/) Entity Framework 응용 프로그램 및 LINQ to Entities 언어에 대 한 질문과 일반적인 토론을 위한 포럼을 제공 합니다.
 
- [WCF Data Services 포럼](https://go.microsoft.com/fwlink/?LinkId=160181) 데이터 서비스에 대 한 질문과 일반적인 토론을 위한 포럼을 제공 합니다.
+ [WCF Data Services 포럼](https://social.msdn.microsoft.com/Forums/en-US/adodotnetdataservices/threads) 데이터 서비스에 대 한 질문과 일반적인 토론을 위한 포럼을 제공 합니다.
 
- [SQL Server 데이터 액세스 포럼](https://go.microsoft.com/fwlink/?LinkID=160184) Microsoft SQL Server의 데이터 액세스에 대 한 질문과 일반적인 토론을 위한 포럼을 제공 합니다.
+ [SQL Server 데이터 액세스 포럼](https://social.msdn.microsoft.com/Forums/en-US/sqldataaccess/threads) Microsoft SQL Server의 데이터 액세스에 대 한 질문과 일반적인 토론을 위한 포럼을 제공 합니다.
 
- [Linq TO SQL 포럼](https://go.microsoft.com/fwlink/?LinkId=160183) Linq to SQL과 관련 된 질문과 일반적인 토론을 위한 포럼을 제공 합니다.
+ [Linq TO SQL 포럼](https://social.msdn.microsoft.com/Forums/en-US/linqtosql/threads) Linq to SQL과 관련 된 질문과 일반적인 토론을 위한 포럼을 제공 합니다.
 
- [ADO.NET 데이터 공급자 포럼](https://go.microsoft.com/fwlink/?LinkId=160182) 다른 .NET Framework 데이터 공급자에 대 한 질문과 일반적인 토론을 위한 포럼을 제공 합니다.
+ [ADO.NET 데이터 공급자 포럼](https://social.msdn.microsoft.com/Forums/en-US/adodotnetdataproviders/threads) 다른 .NET Framework 데이터 공급자에 대 한 질문과 일반적인 토론을 위한 포럼을 제공 합니다.
 
- SQL Server에 대 한 연결 문제를 해결 하는 방법에 대 한 자세한 내용은 [SQL Server 데이터베이스 엔진 연결 문제를 해결](https://go.microsoft.com/fwlink/?LinkID=246151)하는 방법을 참조 하세요.
+ SQL Server에 대 한 연결 문제를 해결 하는 방법에 대 한 자세한 내용은 [SQL Server 데이터베이스 엔진 연결 문제를 해결](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx)하는 방법을 참조 하세요.
 
 ## <a name="see-also"></a>참고 항목
  [.NET용 Visual Studio 데이터 도구](../data-tools/visual-studio-data-tools-for-dotnet.md)

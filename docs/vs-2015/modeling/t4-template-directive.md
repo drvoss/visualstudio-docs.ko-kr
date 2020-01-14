@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d3a17275730cd093f8f9fa433aa28c7f9ca86e80
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 02ab48e2fcd014508277a9bc361cde65d62ef38c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298135"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850784"
 ---
 # <a name="t4-template-directive"></a>T4 템플릿 지시문
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "74298135"
 
  유효한 값: "", 고정 문화권 (기본값)입니다.
 
- xx-XX 형식의 문자열로 표현된 문화권. 예를 들어 en-US, ja-JP, de-CH, de-DE 등입니다. 자세한 내용은 <xref:System.Globalization.CultureInfo?displayProperty=fullName>을 참조하세요.
+ xx-XX 형식의 문자열로 표현된 문화권. 예를 들어 en-US, ja-JP, de-CH, de-DE 등입니다. 자세한 내용은 <xref:System.Globalization.CultureInfo?displayProperty=fullName>를 참조하세요.
 
  식 블록이 텍스트로 변환될 때 사용할 문화권을 지정하는 culture 특성입니다.
 
@@ -77,7 +77,7 @@ hostspecific="true"
 
  이 속성의 형식이 호스트의 형식에 따라 달라지기 때문에 이 속성은 특정 호스트에서만 작동하는 텍스트 템플릿을 작성하는 경우에만 유용합니다. [디자인 타임 템플릿에](../modeling/design-time-code-generation-by-using-t4-text-templates.md)는 적용 되지만 [런타임 템플릿에](../modeling/run-time-text-generation-with-t4-text-templates.md)는 적용 되지 않습니다.
 
- `hostspecific`이 `true`이고 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 사용하고 있는 경우 `this.Host`를 IServiceProvider로 캐스팅하여 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 기능에 액세스할 수 있습니다. `Host.ResolvePath(filename)`를 사용하여 프로젝트에서 파일의 절대 경로를 가져올 수도 있습니다. 예를 들면 다음과 같습니다.
+ `hostspecific`이 `true`이고 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]를 사용하고 있는 경우 `this.Host`를 IServiceProvider로 캐스팅하여 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 기능에 액세스할 수 있습니다. `Host.ResolvePath(filename)`를 사용하여 프로젝트에서 파일의 절대 경로를 가져올 수도 있습니다. 예를 들면 다음과 같습니다.:
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -110,7 +110,7 @@ Content of myFile is:
 
  Language 특성은 문과 식 블록의 소스 코드에 사용할 언어 ([!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 또는 [!INCLUDE[csprcs](../includes/csprcs-md.md)])를 지정 합니다. 출력이 생성되는 중간 코드 파일에서 이 언어가 사용됩니다. 이 언어는 템플릿에서 생성되는 언어와 관련이 없으며 모든 종류의 텍스트일 수 있습니다.
 
- 예를 들면 다음과 같습니다.
+ 예를 들면 다음과 같습니다.:
 
 ```vb
 <#@ template language="VB" #>
@@ -211,7 +211,7 @@ This is the common footer.
 
  디자인 타임 텍스트 템플릿의 경우에는 <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> 클래스에서 파생되는 기본 클래스를 지정할 수 있습니다. `<#@assembly#>` 지시문을 사용하여 기본 클래스가 들어 있는 프로젝트나 어셈블리를 로드합니다.
 
- 자세한 내용은 [Gareth Jones의 블로그에서 "텍스트 템플릿의 상속"](https://go.microsoft.com/fwlink/?LinkId=208373)을 참조 하세요.
+ 자세한 내용은 [Gareth Jones의 블로그에서 "텍스트 템플릿의 상속"](https://blogs.msdn.microsoft.com/garethj/2011/01/03/vs2010-sp1-t4-template-inheritance-part-i-sample-metadata/)을 참조 하세요.
 
 ## <a name="linepragmas-attribute"></a>LinePragmas 특성
  예: `linePragmas="false"`

@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 950803d46d7b870804c2c8914f3c85b0b89e5732
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e3cd7fe9781048f6612ff6bd81c0bf0cbc00a30b
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590672"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944213"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 성능 팁과 요령
 
@@ -63,7 +63,7 @@ Visual Studio는 자동 문서 복원이 솔루션을 현저히 느리게 로드
 
     옵션을 **모든 모듈** 대신 **지정된 모듈만**으로 설정하고 로드할 모듈을 지정합니다. 디버깅 중에 **모듈** 창의 특정 모듈을 마우스 오른쪽 단추로 클릭하여 기호 로드에 모듈을 명시적으로 포함할 수도 있습니다. 디버깅 중에 이 창을 열려면 **디버그** > **창** > **모듈**을 선택합니다.
 
-    자세한 내용은 [기호 파일 이해](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)를 참조하세요.
+    자세한 내용은 [기호 파일 이해](/visualstudio/ide/visual-studio-performance-tips-and-tricks?view=vs-2019)를 참조하세요.
 
 - **진단 도구 사용 안 함**
 

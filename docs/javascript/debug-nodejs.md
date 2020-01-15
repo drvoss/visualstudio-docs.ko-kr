@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 95693261cebf26bb740861795f7faf5c56503daf
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 3f8fa8fcd859a7464d471972689728dc556a79bd
+ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74777935"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75678976"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Visual Studio에서 JavaScript 또는 TypeScript 앱 디버그
 
@@ -44,7 +44,7 @@ Visual Studio를 사용하여 JavaScript 및 TypeScript 코드를 디버깅할 �
 ## <a name="debug-client-side-script"></a>클라이언트 쪽 스크립트 디버그
 
 ::: moniker range=">=vs-2019"
-Visual Studio는 Chrome 및 Microsoft Edge(Chromium)에 대해서만 클라이언트 쪽 디버깅을 지원합니다. 일부 시나리오에서는 디버거가 자동으로 JavaScript 및 TypeScript 코드와 HTML 파일의 포함된 스크립트에서 중단점을 적중합니다. ASP.NET 앱에서 클라이언트 쪽 스크립트를 디버깅하는 방법에 대해서는 블로그 게시물 [Debug JavaScript in Microsoft Edge](https://devblogs.microsoft.com/visualstudio/debug-javascript-in-microsoft-edge-from-visual-studio/) 및 [Google Chrome에 대한 이 게시물](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome)을 참조하세요.
+Visual Studio는 Chrome 및 Microsoft Edge(Chromium)에 대해서만 클라이언트 쪽 디버깅을 지원합니다. 일부 시나리오에서는 디버거가 자동으로 JavaScript 및 TypeScript 코드와 HTML 파일의 포함된 스크립트에서 중단점을 적중합니다. ASP.NET 앱에서 클라이언트 쪽 스크립트를 디버깅하는 방법에 대해서는 블로그 게시물 [Debug JavaScript in Microsoft Edge](https://devblogs.microsoft.com/visualstudio/debug-javascript-in-microsoft-edge-from-visual-studio/) 및 [Google Chrome에 대한 이 게시물](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome)을 참조하세요. ASP.NET Core에서 TypeScript를 디버깅하는 방법에 대해서는 [TypeScript를 사용하여 ASP.NET Core 앱 만들기](tutorial-aspnet-with-typescript.md)를 참조하세요.
 ::: moniker-end
 ::: moniker range="vs-2017"
 Visual Studio는 Chrome 및 Internet Explorer에 대해서만 클라이언트 쪽 디버깅 지원을 제공합니다. 일부 시나리오에서는 디버거가 자동으로 JavaScript 및 TypeScript 코드와 HTML 파일의 포함된 스크립트에서 중단점을 적중합니다. ASP.NET 앱에서 클라이언트 쪽 스크립트를 디버깅하는 방법에 대해서는 블로그 게시물 [Client-side debugging of ASP.NET projects in Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome/)을 참조하세요.

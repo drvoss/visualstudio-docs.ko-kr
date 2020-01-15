@@ -7,19 +7,19 @@ ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: dd6afc69c2a7e513358c69eafeacb49fcb06dd52
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: 633f8358b85b030c125bc632ff759d92e508cfaf
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74983972"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404959"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Mac용 Visual Studio 2019 설치
 
 macOS에서 네이티브, .NET 앱 플랫폼 간 개발을 시작하려면 다음 단계에 따라 Mac 용 Visual Studio 2019를 설치합니다.
 
  > [!div class="button"]
- > [Mac용 Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=navigation+cta&utm_content=download+vsmac2019)
+ > [Mac용 Visual Studio 다운로드](https://aka.ms/vsmac)
 
 ## <a name="requirements"></a>요구 사항
 
@@ -114,6 +114,6 @@ Mac용 Visual Studio를 설치하면 앱 코드 작성을 시작할 수 있습�
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Acquisition/player]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio 설치(Windows에서)](/visualstudio/install/install-visual-studio)

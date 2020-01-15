@@ -9,15 +9,15 @@ helpviewer_keywords:
 - test controller, walkthrough
 - walkthroughs, test controller and test agents
 ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9ae46db2d99024b598ff655452ca748298b528a0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f0ea644294ea79f1e4c044c0cebf3f427f5b672a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665295"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591192"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>역할을 테스트 컨트롤러와 테스트 에이전트에 할당
 
@@ -25,7 +25,7 @@ ms.locfileid: "72665295"
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 - 테스트 설정으로 실행하려면 단위 테스트 또는 코딩된 UI 테스트를 만듭니다.
 
@@ -111,6 +111,6 @@ ms.locfileid: "72665295"
 
      테스트 컨트롤러는 단위 테스트와 코딩된 UI 테스트를 처리할 때 테스트를 100개씩 여러 그룹으로 나눠 테스트 에이전트 컴퓨터로 보냅니다. 예를 들어 단위 테스트가 250개이고 테스트 에이전트가 3개일 경우 처음 100개의 단위 테스트는 agent1로 보내지고 다음 100개의 단위 테스트는 agent2로 보내지며 나머지 50개의 단위 테스트는 agent3으로 보내집니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [테스트 에이전트 설치 및 구성](../test/lab-management/install-configure-test-agents.md)

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - install packages
 - managing extensions visual studio
 ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92fe7d47a74112fb804770cca356084fa79fe1e4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f016af58b5799ca37b1a8f0cc54366d639c57c03
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654207"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594411"
 ---
 # <a name="manage-extensions-for-visual-studio"></a>Visual Studio 확장 관리
 
@@ -204,7 +204,7 @@ Visual Studio는 확장으로 인해 UI가 응답하지 않는다고 의심되�
 
 - 업데이트 알림이 있는 경우 설치된 샘플의 마스터 복사본을 업데이트합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio Marketplace](https://marketplace.visualstudio.com)
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md)

@@ -2,17 +2,17 @@
 title: 성능을 향상시키기 위한 팁
 ms.date: 08/14/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccf785cec859290cac0ebcf5c9685861bd2887e4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 950803d46d7b870804c2c8914f3c85b0b89e5732
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647143"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590672"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 성능 팁과 요령
 
@@ -107,13 +107,13 @@ Visual Studio는 자동 문서 복원이 솔루션을 현저히 느리게 로드
 
    ::: moniker range="vs-2017"
 
-    확장을 사용하지 않으려면 **도구** > **확장 및 업데이트**로 이동하여 특정 확장을 사용하지 않도록 설정합니다.
+    확장 기능을 사용하지 않으려면 **도구** > **확장 및 업데이트**로 이동하고 특정 확장 기능을 사용하지 않도록 설정합니다.
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-    확장을 사용하지 않으려면 **확장** > **확장 관리**로 이동하여 특정 확장을 사용하지 않도록 설정합니다.
+    확장 기능을 사용하지 않으려면 **확장** > **확장 관리**로 이동하여 특정 확장 기능을 사용하지 않도록 설정합니다.
 
    ::: moniker-end
 
@@ -137,7 +137,7 @@ CLR은 가비지 수집 메모리 관리 시스템을 사용합니다. 이 시�
 
 CLR 가비지 수집기에 대한 자세한 내용은 [가비지 수집 기본 사항](/dotnet/standard/garbage-collection/fundamentals)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio 성능 최적화](../ide/optimize-visual-studio-performance.md)
 - [솔루션을 더 빠르게 로드(Visual Studio 블로그)](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

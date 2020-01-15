@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 포팅, 마이그레이션 및 업그레이드
 description: 현재 및 이전 버전의 Visual Studio에서 만든 프로젝트 지원에 대한 참조입니다.
-ms.date: 10/17/2019
+ms.date: 11/26/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 9bc0436eac0460071d2393f8ff43178d49e8f7de
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 221fd38b6035c1e41d9a768f5e30117dd3f4d35c
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72912013"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406343"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>프로젝트 마이그레이션 및 Visual Studio에 대한 업그레이드 참조
 
@@ -104,7 +104,7 @@ ms.locfileid: "72912013"
 - [ToolsVersion 지침](../msbuild/msbuild-toolset-toolsversion.md)
 - [프레임워크 대상 지정 지침](../ide/visual-studio-multi-targeting-overview.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [프로젝트 마이그레이션 및 Visual Studio 2019에 대한 업그레이드 참조](port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2019)
 
@@ -112,14 +112,15 @@ ms.locfileid: "72912013"
 
 ::: moniker range="vs-2019"
 
-새 버전의 Visual Studio에서는 일반적으로 이전 형식의 프로젝트, 파일 및 기타 자산을 대부분 지원합니다. 이러한 항목을 [이전처럼](../ide/solutions-and-projects-in-visual-studio.md) 사용할 수 있습니다. 최신 기능을 사용하지 않을 경우 Visual Studio에서는 Visual Studio 2017, Visual Studio 2015, Visual Studio 2013, Visual Studio 2012와 같은 이전 버전과의 호환성을 유지하려 합니다. 버전별로 특정한 기능은 [릴리스 정보](/visualstudio/releases/2019/release-notes/)를 참조하세요.
+새 버전의 Visual Studio에서는 대부분의 형식의 프로젝트, 파일 및 기타 자산을 지원합니다. 최신 기능을 사용하지 않는 경우 [이전과 동일하게](../ide/solutions-and-projects-in-visual-studio.md) 사용할 수 있습니다.
 
-일부 프로젝트 형식 변경은 이후에 지원될 수 있습니다. 최신 버전의 Visual Studio는 특정 프로젝트를 더 이상 지원하지 않거나, 더 이상 이전 버전과 호환되지 않도록 프로젝트를 업데이트해야 할 수도 있습니다. 마이그레이션 문제의 현재 상태는 [Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com)를 참조하세요.
+Microsoft에서는 Visual Studio 2017, Visual Studio 2015, Visual Studio 2013, Visual Studio 2012와 같은 이전 버전과의 호환성을 유지하려고 노력합니다. 하지만 일부 프로젝트 형식 변경은 이후에 지원될 수 있습니다. 최신 버전의 Visual Studio는 특정 프로젝트를 지원하지 않거나, 더 이상 이전 버전과 호환되지 않도록 프로젝트를 업데이트해야 할 수도 있습니다. 
 
-이 문서에서는 Visual Studio 2019에서 마이그레이션할 수 있는 프로젝트 형식에 대한 세부 정보를 제공합니다. Visual Studio 2019에서 사용되지 않거나 곧 사용되지 않는 프로젝트 형식에 대한 정보도 포함되어 있습니다. 이 문서에서는 Visual Studio 2019에서 더 이상 지원되지 않는 프로젝트 형식을 제외하므로 마이크레이션할 수 없습니다. 이 문서에서는 마이그레이션 문제가 없는 지원되는 프로젝트 유형도 제외됩니다. 해당 목록은 [플랫폼 대상 지정 및 호환성](/visualstudio/releases/2019/compatibility)에서 확인할 수 있습니다.
+> [!NOTE]
+> 마이그레이션 문제의 현재 상태는 [Visual Studio 개발자 커뮤니티](https://developercommunity.visualstudio.com)를 참조하세요. 각 Visual Studio 버전과 관련된 기능에 대한 자세한 내용은 [릴리스 정보](/visualstudio/releases/2019/release-notes/)를 참조하세요.
 
 > [!IMPORTANT]
-> 특정 프로젝트 형식은 Visual Studio 설치 관리자를 통해 특정 워크로드를 설치해야 합니다. 워크로드가 설치되어 있지 않으면 Visual Studio에서 알 수 없거나 호환되지 않는 프로젝트 형식을 보고합니다. 이 경우 설치 옵션을 확인하고 다시 시도하세요. Visual Studio 2019의 프로젝트 지원에 대한 자세한 내용은 [플랫폼 대상 지정 및 호환성](/visualstudio/releases/2019/compatibility) 문서를 참조하세요.
+> 일부 프로젝트 형식에는 특정 워크로드가 필요합니다. 워크로드가 설치되어 있지 않으면 Visual Studio에서 알 수 없거나 호환되지 않는 프로젝트 형식을 보고합니다. 이 경우 [Visual Studio 설치 관리자의 설치 옵션](../install/modify-visual-studio.md)을 확인하고 다시 시도하세요. Visual Studio 2019의 프로젝트 지원에 대한 자세한 내용은 [플랫폼 대상 지정 및 호환성](/visualstudio/releases/2019/compatibility) 페이지를 참조하세요.
 
 ## <a name="project-types"></a>프로젝트 형식
 
@@ -167,11 +168,11 @@ ms.locfileid: "72912013"
 | Windows 스토어 응용 프로그램 | JavaScript 유니버설 Windows 프로젝트는 Visual Studio 2019에서 지원되지 않습니다. 이러한 프로젝트를 유지 관리하려면 Visual Studio 2017을 사용하세요. <br/><br/>Visual Studio 2019 설치 관리자에서 Windows 10 Fall Creators Update(빌드 16299) 이전 버전의 Windows 10 SDK가 제거되었습니다. 이전 SDK를 수동으로 다운로드하거나 프로젝트의 대상을 다시 지정하여 최신 SDK를 사용할 수 있습니다.<br/><br/>project.json을 사용하는 유니버설 Windows 프로젝트는 지원되지 않습니다. 패키지 참조를 사용하도록 이러한 프로젝트를 업그레이드하는 것이 좋습니다. 또는 project.json 파일에 Microsoft.NET.Test.Sdk 버전 16.0.0.0에 대한 참조를 추가합니다.<br/><br/>Windows Store 8.1 및 8.0용 프로젝트는 Visual Studio 2019에서 지원되지 않습니다. 이러한 앱을 유지하려면 Visual Studio 2015를 계속 사용합니다. |
 | Xamarin | Visual Studio 및 Visual Studio for Mac용 Xamarin Live Player 확장이 제거되었습니다. 이렇게 하면 페어링 화면과 모든 통합이 제거됩니다. 대신 빌드된 Xamarin.Forms Previewer를 사용합니다.<br/><br/>Android용 Visual Studio 에뮬레이터가 Visual Studio 설치 관리자에서 제거되었습니다. 대신 Google Android 에뮬레이터에서 새 Hyper-V 지원을 사용합니다. |
 
-## <a name="how-visual-studio-decides-when-to-migrate-a-project"></a>Visual Studio가 프로젝트를 마이그레이션하는 시기를 결정하는 방식
+## <a name="migrate-a-project"></a>프로젝트 마이그레이션
 
-새 버전의 각 Visual Studio는 일반적으로 동일한 프로젝트가 다른 버전에서 열리고 수정되고 빌드될 수 있도록 이전 버전과 호환성을 유지하려 합니다. 그러나 일부 프로젝트 형식이 더 이상 지원되지 않을 정도로 시간이 흐르면 변경을 피할 수가 없습니다. (Visual Studio 2019에서 지원되는 프로젝트 형식에 대한 [플랫폼 타키팅 및 호환성](/visualstudio/releases/2019/compatibility)을 참조하세요.) 이러한 경우에는 최신 버전의 Visual Studio가 프로젝트를 로드하지 않고 마이그레이션 경로를 제공하지 않습니다. Visual Studio 이전 버전의 프로젝트가 이를 지원하도록 유지해야 하기 때문입니다.
+이전 버전과의 호환성을 유지하려고 노력하지만 이전 버전과 호환되지 않는 변경 내용이 있을 수 있습니다. (Visual Studio 2019에서 지원되는 프로젝트 형식에 대한 [플랫폼 타키팅 및 호환성](/visualstudio/releases/2019/compatibility)을 참조하세요.) 이 경우 새 버전의 Visual Studio가 프로젝트를 로드하거나 마이그레이션 경로를 제공하지 않습니다. 해당 프로젝트를 이전 버전 Visual Studio에서 유지해야 할 수도 있습니다.
 
-다른 경우에 최신 버전의 Visual Studio는 프로젝트를 열 수 있지만 이전 버전과 호환되지 않게 렌더링하는 방식으로 프로젝트를 업데이트하거나 마이그레이션해야 합니다. Visual Studio는 이러한 마이그레이션이 필요한지 여부를 결정하는 많은 기준을 사용합니다.
+때로는 최신 버전의 Visual Studio에서 프로젝트를 열 수 있지만 이전 버전과 호환되지 않게 렌더링하는 방식으로 프로젝트를 업데이트하거나 마이그레이션해야 합니다. Visual Studio는 이러한 마이그레이션이 필요한지 여부를 결정하는 많은 기준을 사용합니다.
 
 - Visual Studio 2013 RTM으로 돌아간 플랫폼의 대상 버전과의 호환성.
 
@@ -179,15 +180,15 @@ ms.locfileid: "72912013"
 
 - 새로운 디자인 타임 자산이 이전 버전 Visual Studio 2013 RTM & 업데이트 5와의 호환성을 중단하는지 여부.
 
-문제의 프로젝트 유형의 엔지니어링 소유자는 이러한 기준을 지향하며 지원, 호환성 및 마이그레이션이 관련된 위치에서 호출을 합니다. Visual Studio는 가능한 Visual Studio 버전 간에 투명한 호환성을 유지하려 합니다. 이는 Visual Studio의 한 버전에서 프로젝트를 만들고 수정할 수 있고 다른 버전에서도 작동한다는 의미입니다.
+해당 프로젝트 유형을 소유한 엔지니어링 팀은 이러한 기준을 지향하여 지원, 호환성 및 마이그레이션 관련 결정을 내립니다. 다시 한 번, Microsoft에서는 한 버전의 Visual Studio에서 프로젝트를 만들고 수정하면 다른 버전에서도 작동하도록 Visual Studio 버전 간 호환성을 유지하려고 노력합니다.
 
-그러나 이 아티클에 설명된 일부 프로젝트 유형에서처럼 이러한 호환성이 가능하지 않은 경우 Visual Studio는 업그레이드 마법사를 열고 필요한 단방향 변경을 합니다.
+경우에 따라 호환성이 가능하지 않습니다. 그러면 Visual Studio가 업그레이드 마법사를 열어 필요한 단방향 변경을 수행합니다. 이러한 단방향 변경이 프로젝트 파일에서 `ToolsVersion` 속성의 변경을 포함할 수 있습니다. 이 속성은 정확하게 어떤 버전의 MSBuild가 프로젝트의 소스 코드를 사용자가 원하는 실행가능하고 배포 가능한 아티팩트로 바꿀 수 있는지 표시합니다. 
 
-이러한 단방향 변경이 프로젝트 파일에서 `ToolsVersion` 속성의 변경을 포함할 수 있습니다. 이는 정확하게 MSBuild의 버전이 프로젝트의 소스 코드를 사용자가 원하는 실행가능하고 배포가능한 아티팩트로 바꿀 수 있음을 나타냅니다. 곧 이전 버전의 Visual Studio와 호환되지 않는 프로젝트를 렌더링한 것은 *Visual Studio* 버전이 아니라 `ToolsVersion`에서 결정한 대로 *MSBuild* 버전입니다. Visual Studio 버전이 프로젝트의 `ToolsVersion`과 일치하는 MSBuild 도구 체인을 포함하는 한은 Visual Studio는 해당 도구 체인이 프로젝트를 빌드하도록 호출할 수 있습니다.
+이전 버전의 Visual Studio와 호환되지 않는 프로젝트를 렌더링한 것은 *Visual Studio* 버전이 아니라 `ToolsVersion`에서 결정한 *MSBuild* 버전입니다. 사용자의 Visual Studio 버전이 프로젝트의 `ToolsVersion`과 일치하는 MSBuild 도구 체인을 포함하는 경우 Visual Studio는 해당 도구 체인이 프로젝트를 빌드하도록 호출할 수 있습니다.
 
-이전 버전에서 만든 프로젝트와 최대한 호환성을 유지하기 위해 Visual Studio 2019는 `ToolsVersion` 15, 14, 12 및 4를 지원하는 데 필요한 MSBuild 도구 체인을 포함합니다. 이러한 `ToolsVersion` 값 중 하나를 사용하는 프로젝트는 성공적인 빌드를 발생해야 합니다. ([플랫폼 대상 지정 및 호환성](/visualstudio/releases/2019/compatibility)에 설명된 대로 Visual Studio 2019가 프로젝트 형식을 항상 지원하는지 여부의 주제.)
+이전 버전에서 만든 프로젝트와 호환성을 유지하기 위해 Visual Studio 2019는 `ToolsVersion` 15, 14, 12 및 4를 지원하는 데 필요한 MSBuild 도구 체인을 포함합니다. 이러한 `ToolsVersion` 값 중 하나를 사용하는 프로젝트는 성공적인 빌드를 발생해야 합니다. (다시 한 번, [플랫폼 대상 지정 및 호환성](/visualstudio/releases/2019/compatibility)에 설명된 대로 Visual Studio 2019가 프로젝트 형식을 지원하는지 여부에 따라 다릅니다.)
 
-이 컨텍스트에서 수동으로 프로젝트를 최신 `ToolsVersion` 값으로 업데이트하거나 마이그레이션해야 하는지 여부의 의문이 자연스럽게 발생합니다. 이러한 변경은 필요하지 않으며, 프로젝트를 다시 빌드하도록 수정해야 하는 많은 오류 및 경고를 발생시킬 가능성이 있습니다. 또한 Visual Studio가 향후 특정 `ToolsVersion`에 대한 지원을 중단하는 경우 특히 `ToolsVersion` 값을 변경해야 하기 때문에 프로젝트를 열면 프로젝트 마이그레이션 프로세스를 트리거하게 됩니다. 이러한 경우 해당 특정 프로젝트 형식에 대한 하위 시스템은 변경될 사항을 정확히 알고 이 아티클의 앞에서 설명한 대로 자동으로 이러한 변경을 수행할 수 있습니다.
+프로젝트를 수동으로 업데이트하거나 최신 `ToolsVersion` 값으로 마이그레이션하기를 원할 수도 있습니다. 이러한 변경은 필요하지 않으며, 프로젝트를 다시 빌드하도록 하려면 수정해야 하는 많은 오류 및 경고를 발생시킬 가능성이 있습니다. 또한 Visual Studio가 나중에 특정 `ToolsVersion`을 지원하지 않는 경우 프로젝트를 열 때 해당 `ToolsVersion` 값을 변경해야 하므로 프로젝트 마이그레이션 프로세스가 트리거됩니다.
 
 ## <a name="next-steps"></a>다음 단계
 
@@ -196,7 +197,7 @@ ms.locfileid: "72912013"
 - [ToolsVersion 지침](../msbuild/msbuild-toolset-toolsversion.md)
 - [프레임워크 대상 지정 지침](../ide/visual-studio-multi-targeting-overview.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 [프로젝트 마이그레이션 및 Visual Studio 2017에 대한 업그레이드 참조](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2017)
 

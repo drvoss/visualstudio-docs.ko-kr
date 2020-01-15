@@ -3,17 +3,17 @@ title: '연습: 애플리케이션 구축'
 ms.date: 09/25/2017
 ms.technology: vs-ide-compile
 ms.topic: conceptual
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f94cc62cdadb2df3806f5b188278f49e4041235
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 570dd2044346ace8a51096a04842ea88de0a8803
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647167"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594151"
 ---
 # <a name="walkthrough-build-an-application"></a>연습: 애플리케이션 구축
 
@@ -154,7 +154,7 @@ ms.locfileid: "72647167"
 
      빌드 정보에는 빌드가 시작된 시간(시작 부분에 있음) 및 파일이 처리된 순서가 포함됩니다. 이 정보에는 빌드하는 동안 Visual Studio에서 실행하는 실제 컴파일러 구문도 포함됩니다.
 
-     예를 들어 C# 빌드에서 [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) 옵션은 이 항목에서 이전에 지정한 경고 코드, **1762**를 세 개의 다른 경고와 함께 나열합니다.
+     예를 들어 C# 빌드에서 [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) 옵션은 이 항목에서 이전에 지정한 경고 코드, **0168**을 세 개의 다른 경고와 함께 나열합니다.
 
      Visual Basic 빌드에서 [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)은 제외할 특정 경고를 포함하지 않으므로 경고가 나타나지 않습니다.
 
@@ -221,7 +221,7 @@ ms.locfileid: "72647167"
 
 지금까지 이 연습을 완료했습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [연습: 프로젝트 빌드(C++)](/cpp/ide/walkthrough-building-a-project-cpp)
 - [ASP.NET 웹 애플리케이션 프로젝트 미리 컴파일 개요](/previous-versions/aspnet/aa983464\(v\=vs.110\))

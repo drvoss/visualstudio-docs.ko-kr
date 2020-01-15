@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Visual Studio 구독에 포함된 Azure DevTest 개별 크레딧 혜택을 활성화하는 방법을 알아봅니다.
-ms.openlocfilehash: 789548f50f7d631f3db190ce5e2638858e8c4707
-ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
+ms.openlocfilehash: a6d0eee97ddf2d3a5a35af60ba6c6daf8bcc8425
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74810045"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405291"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio 구독에서 Microsoft Azure 사용
 Visual Studio 구독자는 추가 비용 없이 Microsoft Azure를 사용할 수 있습니다.  [월간 Azure DevTest 개별 크레딧](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)을 사용하면 Azure는 개발/테스트를 위한 개인용 샌드박스가 됩니다.  가상 머신, 클라우드 서비스 및 기타 Azure 리소스를 프로비전할 수 있습니다.  크레딧 금액은 구독 수준에 따라 다릅니다.
@@ -23,19 +23,23 @@ Visual Studio 구독자는 추가 비용 없이 Microsoft Azure를 사용할 수
    > [!div class="mx-imgBorder"]
    > ![Azure 타일](_img/vs-azure/vs-azure-tile.png)
 
-3. 기존 Azure 구독이 없는 경우 필수 정보를 입력하여 Azure 구독을 만들라는 메시지가 표시되면 확인란을 클릭하여 사용 약관에 동의하고, **가입**을 클릭합니다.
+3. 기존 Azure 구독이 없는 경우 Azure 구독을 만드는 데 필요한 정보를 입력하라는 메시지가 표시됩니다.  첫 번째 단계로 개인 정보를 제공하고 **다음**을 클릭합니다.
    > [!div class="mx-imgBorder"]
-   > ![Azure 가입](_img/vs-azure/vs-azure-sign-up-cropped.png) 기존 구독이 있는 경우 이 확인란을 클릭하여 계약에 동의하고 **가입**을 클릭합니다.
+   > ![Azure 등록](_img/vs-azure/vs-azure-about-you.png)
 
-4. 계정이 준비되면 Azure 지원 계획(별도 판매)을 선택하거나 Azure 구독을 시작할 수 있는 옵션이 제공됩니다.
+4. 다음으로, 간단한 확인 코드를 사용하여 ID를 확인해야 합니다. 전화번호를 입력하고 문자 또는 전화를 통해 코드를 받을지 선택합니다.  받은 코드를 입력하고 **코드 확인**을 클릭합니다.   
    > [!div class="mx-imgBorder"]
-   > ![Azure 준비](_img/vs-azure/vs-azure-getting-ready-cropped.png)
+   > ![Azure 준비](_img/vs-azure/vs-azure-identity.png)
 
-5. Azure 대시보드 빠른 시작 센터가 로드됩니다.  
+5. 마지막 단계로 확인란을 클릭하여 약관에 동의한 다음 **등록**를 클릭합니다.  이것이 전부입니다!
    > [!div class="mx-imgBorder"]
-   > ![Azure 대시보드](_img/vs-azure/vs-azure-dashboard-quickstart.png) 
+   > ![Azure 준비](_img/vs-azure/vs-azure-agreement.png)
 
-6. 나중에 쉽게 액세스할 수 있도록 [Azure Portal](https://portal.azure.com)에 책갈피를 지정합니다.
+0. Azure 대시보드 빠른 시작 센터가 로드됩니다.  
+   > [!div class="mx-imgBorder"]
+   > ![Azure 대시보드](_img/vs-azure/vs-azure-quick-start.png) 
+
+0. 나중에 쉽게 액세스할 수 있도록 [Azure Portal](https://portal.azure.com)에 책갈피를 지정합니다.
 
 
 ## <a name="eligibility"></a>자격

@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 087407f511c038a369694beca8a9fe4ecc2ff7b7
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: f66ed17aec8c6e5303ea61741021dd25032fcb37
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74771581"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406309"
 ---
 # <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>프로파일링 도구 명령줄 도구의 경로 지정
 
@@ -22,9 +22,7 @@ ms.locfileid: "74771581"
 
 ## <a name="32-bit-computers"></a>32비트 컴퓨터
 
-::: moniker range="vs-2017"
- 네이티브 코드의 경우 Visual Studio 프로파일러 API는 *VSPerf.dll*에 있습니다. 헤더 파일, *VSPerf.h* 및 가져오기 라이브러리, *VSPerf.lib*는 *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* 디렉터리에 있습니다.
-::: moniker-end
+네이티브 코드의 경우 Visual Studio 프로파일러 API는 *VSPerf.dll*에 있습니다. 헤더 파일, *VSPerf.h* 및 가져오기 라이브러리, *VSPerf.lib*는 *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* 디렉터리에 있습니다.
 
  관리되는 코드의 경우 프로파일러 API는 *Microsoft.VisualStudio.Profiler.dll*에 있습니다. 이 DLL은 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* 디렉터리에 있습니다.
 
@@ -32,12 +30,14 @@ ms.locfileid: "74771581"
 
 64비트 컴퓨터에서 프로파일링된 애플리케이션의 대상 플랫폼에 따라 경로를 지정합니다.
 
-::: moniker range="vs-2017"
 - 32비트 애플리케이션의 경우 기본 프로파일러 도구 디렉터리는 다음과 같습니다.
 
-     (네이티브) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* (관리) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
+     (네이티브) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*
+     
+     (관리형) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
 
 - 64비트 애플리케이션의 경우 기본 프로파일러 도구가 위치한 디렉터리는 다음과 같습니다.
 
-     (네이티브) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK* (관리) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*
-::: moniker-end
+     (네이티브) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*
+
+     (관리형) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*

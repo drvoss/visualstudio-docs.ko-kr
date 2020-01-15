@@ -6,12 +6,12 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: d07849a362779f3fad8f7544899dc23b9d4538d6
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: d0e00929de11ff3fd820670be2bb6361cfb5fa6c
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913327"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404992"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core 시작
 
@@ -118,9 +118,9 @@ ASP.NET Core 앱이 [`WebHostBuilder`](/aspnet/core/fundamentals/hosting) 인스
 
 미리 작성된 템플릿의 `Configure` 메서드는 몇 가지 작업을 수행하도록 빌드되었습니다. 첫째, 개발하는 동안 사용할 예외 처리 페이지를 구성합니다. 그런 다음 간단한 “Hello World”를 사용하여 요청하는 웹 페이지에 응답을 보냅니다.
 
-이제 추가 코드 없이 이 간단한 Hello, World 프로젝트를 실행할 수 있습니다. 앱을 실행하고 브라우저에서 보려면 도구 모음에서 재생(삼각형) 단추를 누릅니다.
+이제 추가 코드 없이 이 간단한 Hello, World 프로젝트를 실행할 수 있습니다. 앱을 실행하려면 재생 단추의 드롭다운 메뉴를 사용하여 앱을 실행할 브라우저를 선택하거나 단순히 재생(삼각형) 단추를 눌러 기본 브라우저를 사용합니다.
 
-![앱 실행](media/asp-net-core-2019-run-debug.png)
+![브라우저 실행](media/asp-net-web-picker.png)
 
 Mac용 Visual Studio는 임의 포트를 사용하여 웹 프로젝트를 시작합니다. 해당 포트를 확인하려면 **보기 &gt; 패드** 아래에 나열된 애플리케이션 출력을 엽니다. 아래에 표시된 것과 비슷한 출력이 나타납니다.
 

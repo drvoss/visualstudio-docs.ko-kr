@@ -2,33 +2,33 @@
 title: Visual Studio 제거
 titleSuffix: ''
 description: Visual Studio를 제거하는 방법을 단계별로 알아봅니다.
-ms.date: 07/31/2019
+ms.date: 12/19/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
 - uninstall
 - uninstall Visual Studio
 ms.assetid: 0e445255-b796-426d-ad93-a4d8e36da2c5
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d15a20adeb3203687e4d940635551c33774953a5
-ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
+ms.openlocfilehash: a895d9a94ada22ecce340488c6ba00662a599969
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74809670"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594476"
 ---
 # <a name="uninstall-visual-studio"></a>Visual Studio 제거
 
 이 페이지에서는 개발자를 위한 통합 생산성 도구 제품군인 Visual Studio를 제거하는 과정을 안내합니다.
 
 > [!NOTE]
-> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio 제거](/visualstudio/mac/uninstall)를 참조하세요.
+> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio 제거](/visualstudio/mac/uninstall)를 참조하세요.
 
 ::: moniker range="vs-2017"
 
@@ -98,10 +98,13 @@ Visual Studio 2019와 Visual Studio 설치 관리자를 컴퓨터에서 제거�
 
 ::: moniker-end
 
+## <a name="remove-all-files"></a>모든 파일 제거
+
+치명적인 오류가 발생하고 이전 지침을 사용하여 Visual Studio를 제거할 수 없는 경우 대신 사용할 것을 고려할 수 있는 "최후의 수단" 옵션이 있습니다. 모든 Visual Studio 설치 파일 및 제품 정보를 완전히 제거하는 방법에 대한 자세한 내용은 [Visual Studio 제거](remove-visual-studio.md) 페이지를 참조하세요.
+
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [Visual Studio 수정](modify-visual-studio.md)
 * [Visual Studio 업데이트](update-visual-studio.md)
-* [Mac용 Visual Studio 제거](/visualstudio/mac/uninstall)

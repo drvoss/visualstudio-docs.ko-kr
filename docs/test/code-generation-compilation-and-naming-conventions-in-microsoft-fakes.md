@@ -2,17 +2,17 @@
 title: 'Microsoft Fakes: 코드 생성 및 컴파일, 명명 규칙'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: e29b0b05b836dd4072b704bfd48cfb85cde50927
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 155caf50e82f56c1db0b0b0a65a640f252f44063
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665245"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589333"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes의 코드 생성, 컴파일 및 명명 규칙
 
@@ -233,7 +233,7 @@ attribute of the Assembly element in the .fakes:
 
   getter 또는 setter 속성과 같은 **특수 메서드 이름**은 다음 표에 설명된 대로 처리됩니다.
 
-|메서드 특성...|예|추가되는 메서드 이름|
+|메서드 특성...|예제|추가되는 메서드 이름|
 |-|-|-|
 |**생성자**|`.ctor`|`Constructor`|
 |정적 **생성자**|`.cctor`|`StaticConstructor`|
@@ -274,6 +274,6 @@ attribute of the Assembly element in the .fakes:
 
 - 결과 이름이 선언 형식의 멤버와 충돌하는 경우 01부터 시작하는 두 자리 카운터를 추가하여 번호 매기기 구성표를 사용합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Microsoft Fakes를 사용하여 테스트 중인 코드 격리](../test/isolating-code-under-test-with-microsoft-fakes.md)

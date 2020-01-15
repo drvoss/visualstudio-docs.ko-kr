@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b88af1a0ac1ec51f57d3aa339c2c2ec4adb45134
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 77b8fc1f1f9f34a5b19756b7cf1370522f74075e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71119000"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589970"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>5단계: 양식에 컨트롤 추가
 
@@ -48,7 +48,7 @@ ms.locfileid: "71119000"
 1. 폼에서 **TableLayoutPanel**을 선택하고 **도구 상자**에서 TableLayoutPanel 컨트롤이 있는 **컨테이너** 그룹으로 이동한 다음, **FlowLayoutPanel** 항목을 두 번 클릭하여 마지막 셀(오른쪽 맨 아래)에 새 컨트롤을 추가합니다. 그런 다음 FlowLayoutPanel을 TableLayoutPanel에 도킹합니다. FlowLayoutPanel의 검정색 삼각형 작업 목록에서 **부모 컨테이너에서 도킹**을 선택하거나 FlowLayoutPanel의 **Dock** 속성을 **채우기**로 설정하면 됩니다.
 
     > [!NOTE]
-    > <xref:System.Windows.Forms.FlowLayoutPanel>은 한 행의 다른 컨트롤을 차례로 정렬하는 컨테이너입니다. FlowLayoutPanel의 크기를 조정하면 공간이 충분한 경우 하나의 행에 모든 컨트롤이 레이아웃됩니다. 그렇지 않은 경우 하나씩 쌓아올리는 방식으로 순서대로 정렬됩니다. <br/><br/>여기서 FlowLayoutPanel을 사용하여 네 개의 단추를 수용합니다. 단추를 추가할 때 하나씩 쌓아올리는 방식으로 배열되는 경우 단추를 추가하기 전에 FlowLayoutPanel을 선택해야 합니다. <br/><br/>(일반적으로 각 셀에는 컨트롤이 하나만 포함되어 있습니다. 이 예제에서 TableLayoutPanel의 오른쪽 아래 셀에는 네 개의 단추 컨트롤이 포함되어 있습니다. 그 이유는  FlowLayoutPanel은 다른 컨트롤을 보유한 셀의 컨트롤인 컨테이너 컨트롤이기 때문입니다.)
+    > <xref:System.Windows.Forms.FlowLayoutPanel>은 한 행의 다른 컨트롤을 차례로 정렬하는 컨테이너입니다. FlowLayoutPanel의 크기를 조정하면 공간이 충분한 경우 하나의 행에 모든 컨트롤이 레이아웃됩니다. 그렇지 않은 경우 하나씩 쌓아올리는 방식으로 순서대로 정렬됩니다. <br/><br/>여기서 FlowLayoutPanel을 사용하여 네 개의 단추를 수용합니다. 단추를 추가할 때 하나씩 쌓아올리는 방식으로 배열되는 경우 단추를 추가하기 전에 FlowLayoutPanel을 선택해야 합니다. <br/><br/>(일반적으로 각 셀에는 컨트롤이 하나만 포함되어 있습니다. 이 예제에서 TableLayoutPanel의 오른쪽 아래 셀에는 네 개의 단추 컨트롤이 포함되어 있습니다. 이유  FlowLayoutPanel은 다른 컨트롤을 보유한 셀의 컨트롤인 컨테이너 컨트롤이기 때문입니다.)
 
 ## <a name="to-add-buttons"></a>단추를 추가하려면
 
@@ -74,7 +74,7 @@ ms.locfileid: "71119000"
 
    이제 단추가 적절한 크기로 조정되고 올바른 순서로 정렬됩니다. 네 개의 단추가 모두 선택되어 있는 동안에는 네 단추의 **AutoSize** 속성을 동시에 변경할 수 있습니다. 다음 이미지에서는 네 개의 단추를 보여 줍니다.
 
-    ![단추가 네 개 있는 사진 뷰어](../ide/media/express_autosize.png)<br/>*단추가 네 개 있는* ***사진 뷰어***
+    ![단추가 네 개 있는 사진 뷰어](../ide/media/express_autosize.png)<br/>*단추가 네 개* 있는 ***사진 뷰어***
 
 1. 이제 프로그램을 다시 실행하여 변경 내용을 확인합니다.
 
@@ -86,7 +86,7 @@ ms.locfileid: "71119000"
 
 * 이전 자습서 단계로 돌아가려면 [4단계: TableLayoutPanel 컨트롤을 사용하여 양식 레이아웃](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [자습서 2: 시간이 지정된 수학 퀴즈 만들기](tutorial-2-create-a-timed-math-quiz.md)
 * [자습서 3: 맞추기 게임 만들기](tutorial-3-create-a-matching-game.md)

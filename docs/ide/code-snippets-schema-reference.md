@@ -8,17 +8,17 @@ helpviewer_keywords:
 - code snippets [Visual Studio], schema reference
 - IntelliSense Code Snippets, XML Schema
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff2004f11cac6d3ae44fdc61745c9e8cbab231f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 22f84fbe5188e74acbf24256444ad11dd9c64347
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631112"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585433"
 ---
 # <a name="code-snippets-schema-reference"></a>코드 조각 스키마 참조
 
@@ -503,10 +503,10 @@ IntelliSense 코드 조각에서 사용되는 가져온 네임스페이스를 �
 
 ## <a name="shortcut-element"></a>Shortcut 요소
 
-조각을 삽입하는 데 사용되는 바로 가기 텍스트를 지정합니다. `Shortcut` 요소의 텍스트 값에는 영숫자, 하이픈(-) 및 밑줄(_)만 포함될 수 있습니다.
+조각을 삽입하는 데 사용되는 바로 가기 텍스트를 지정합니다. `Shortcut` 요소의 텍스트 값에는 영숫자와 밑줄(_)만 포함될 수 있습니다.
 
 > [!CAUTION]
-> C++에서는 코드 조각 바로 가기에 _ 및 – 문자를 지원하지 않습니다.
+> C++ 코드 조각 바로 가기에는 밑줄(_)을 지원하지 않습니다.
 
 ```xml
 <Shortcut>
@@ -657,7 +657,7 @@ Visual Studio에서 코드 조각을 삽입하는 방법을 지정합니다.
 
 텍스트 값은 필수입니다. 이 텍스트는 참조된 어셈블리에 대한 추가 정보를 제공하는 URL을 지정합니다. 참조가 프로젝트에 추가될 수 없는 경우 이 URL이 표시됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 조각](../ide/code-snippets.md)
 - [연습: 코드 조각 만들기](../ide/walkthrough-creating-a-code-snippet.md)

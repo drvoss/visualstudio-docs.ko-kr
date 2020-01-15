@@ -9,19 +9,19 @@ helpviewer_keywords:
 - select an installation location for Visual Studio files
 - move installation files to different drives
 - use the D drive
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 651295d94a8125e26caa96b71ab438c62841ac10
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3ea0651ee1cfde14d5ef7b422095707d8f81cb2f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974390"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590152"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>Visual Studio에서 설치 위치 선택
 
@@ -50,14 +50,14 @@ ms.locfileid: "62974390"
 
 1. **Visual Studio IDE** 섹션에서 기본값을 적용합니다. Visual Studio에서는 핵심 제품을 설치하고 이 Visual Studio 버전에 특정한 파일을 포함합니다.
 
-   ![설치 위치 탭의 Visual Studio IDE 섹션](media/vs-installation-locations-ide.png "설치 위치 탭의 Visual Studio IDE 섹션에 대한 기본값을 적용합니다.")
+   ![설치 위치 탭의 Visual Studio IDE 섹션](media/vs-installation-locations-ide.png "설치 위치 탭의 Visual Studio IDE 섹션에 대해 기본값을 수락합니다.")
 
    > [!TIP]
    > 시스템 드라이브가 SSD(solid-state drive)인 경우 기본 위치를 시스템 드라이브에 적용하는 것이 좋습니다. 이유는? Visual Studio를 사용하여 개발하는 경우 디스크 I/O 작업을 증가시키는 많은 파일을 읽고 쓰고합니다. 로드를 처리하기 위해 가장 빠른 드라이브를 선택하는 것이 좋습니다.
 
 1. **다운로드 캐시** 섹션에서 다운로드 캐시를 유지할지 여부를 결정한 다음, 해당 파일을 저장하려는 위치를 결정합니다.
 
-     ![설치 위치 탭의 캐시 섹션 다운로드](media/vs-installation-locations-cache.png "설치 후 다운로드 캐시를 유지할지 여부를 선택한 다음, 파일을 저장하려는 드라이브를 지정합니다.")
+     ![설치 위치 탭의 캐시 다운로드 섹션](media/vs-installation-locations-cache.png "설치 후 다운로드 캐시를 유지할지 여부를 선택하고 파일을 저장할 드라이브를 지정합니다.")
 
     1. **설치 후 다운로드 캐시 유지**를 선택하거나 선택을 취소합니다.
 
@@ -72,7 +72,7 @@ ms.locfileid: "62974390"
 
 1. **공유 구성 요소, 도구 및 SDK** 섹션에서 함께 설치한 Visual Studio에서 공유하는 파일을 저장하려는 드라이브를 지정합니다. SDK 및 도구는 이 디렉터리에도 저장됩니다.
 
-   ![설치 위치 탭의 공유 구성 요소, 도구 및 SDK 섹션](media/vs-installation-locations-shared.png "공유 구성 요소, 도구 및 SDK를 저장하려는 위치를 지정합니다.")
+   ![설치 위치 탭의 공유 구성 요소, 도구 및 SDK 섹션](media/vs-installation-locations-shared.png "공유 구성 요소, 도구 및 SDK를 저장할 위치를 지정합니다.")
 
 ::: moniker-end
 
@@ -106,7 +106,7 @@ ms.locfileid: "62974390"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [Visual Studio 설치](install-visual-studio.md)
 * [Visual Studio 업데이트](update-visual-studio.md)

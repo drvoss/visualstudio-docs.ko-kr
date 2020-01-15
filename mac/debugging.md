@@ -1,29 +1,31 @@
 ---
-title: Xamarin을 사용한 디버깅
+title: Mac용 Visual Studio를 사용하여 디버깅
 description: 디버깅은 프로그래밍의 공통적인 필수 부분입니다. 완성도가 높은 IDE인 Mac용 Visual Studio에는 편리한 디버깅을 위한 전체 기능 모음이 포함되어 있습니다. 이 문서에서는 Mac용 Visual Studio에서 안전한 디버깅부터 데이터 시각화까지 디버깅의 잠재력을 완전히 활용하는 방법을 설명합니다.
-author: jmatthiesen
-ms.author: jomatthi
-ms.date: 05/06/2018
+author: therealjohn
+ms.author: johmil
+ms.date: 12/13/2019
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: 58844d54000dbeb86548863510ecac63bfb2ade9
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 8a12880c25e980d668351ef4c24ced1e479577d4
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73716971"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75397978"
 ---
-# <a name="debugging-with-xamarin"></a>Xamarin을 사용한 디버깅
+# <a name="debugging-with-visual-studio-for-mac"></a>Mac용 Visual Studio를 사용하여 디버깅
 
-Mac용 Visual Studio에 포함된 네이티브 디버거는 Xamarin.iOS, Xamarin.Mac, Xamarin.Android 애플리케이션에 대한 디버깅을 지원합니다.
+Mac용 Visual Studio에는 .NET Core, .NET Framework, Unity 및 Xamarin 애플리케이션을 지원하는 디버거가 있습니다.
 
 Mac용 Visual Studio에서는 [*Mono 소프트 디버거*](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger/)를 사용합니다. 이 디버거는 Mono 런타임에 구현되어, Mac용 Visual Studio에서 모든 플랫폼의 관리 코드를 디버그할 수 있게 해줍니다.
 
 ## <a name="the-debugger"></a>디버거
 
-Mac용 Visual Studio에서는 Mono 소프트 디버거를 사용하여 모든 Xamarin 애플리케이션의 관리(C# 또는 F#) 코드를 디버그합니다. Mono 소프트 디버거는 Mono 런타임에 기본 제공되는 협조적인 디버거란 점에서 기본 디버거와 다릅니다. 생성된 코드와 Mono 런타임이 IDE와 함께 작동하여 디버깅 경험을 제공합니다. Mono 런타임은 유선 프로토콜을 통해 디버깅 기능을 공개합니다. 자세한 내용은 [Mono 설명서](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/)를 참조하세요.
+Mac용 Visual Studio에서는 Mono 소프트 디버거를 사용하여 모든 Xamarin 애플리케이션의 관리(C# 또는 F#) 코드를 디버그합니다. Mono Soft 디버거는 Mono 런타임에 기본 제공되는 협조적 디버거란 점에서 기본 디버거와 다릅니다. 생성된 코드와 Mono 런타임이 IDE와 함께 작동하여 디버깅 경험을 제공합니다. Mono 런타임은 유선 프로토콜을 통해 디버깅 기능을 공개합니다. 자세한 내용은 [Mono 설명서](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/)를 참조하세요.
 
 [LLDB]( http://lldb.llvm.org/index.html) 또는 [GDB]( https://www.gnu.org/software/gdb/)와 같은 하드 디버거는 디버그된 프로그램의 정보나 협조 없이 프로그램을 제어하지만, 네이티브 iOS 또는 Android 코드를 디버그해야 하는 경우 Xamarin 애플리케이션을 디버그할 때 유용할 수 있습니다.
+
+.NET Core 및 ASP.NET Core 애플리케이션의 경우 Mac용 Visual Studio에서 .NET Core 디버거를 사용합니다. 이 디버거도 협조적 디버거이며 .NET 런타임과 함께 작동합니다.
 
 ## <a name="using-the-debugger"></a>디버거 사용
 
@@ -43,8 +45,9 @@ IDE에서 중단점을 설정하려면 편집기의 여백 영역에서 중단�
 
 ## <a name="start-debugging"></a>디버깅 시작
 
-디버깅을 시작하려면 IDE에서 대상 디바이스 또는 유사 디바이스/에뮬레이터를 선택합니다.
+디버깅을 시작하려면 대상 브라우저, 디바이스 또는 시뮬레이터/에뮬레이터를 선택합니다.
 
+![디버그 구성](media/debugging-image_0.png)
 ![대상 디바이스 선택](media/debugging-image1.png)
 
 그런 다음 **재생** 단추 또는 **Cmd+return**을 눌러 애플리케이션을 배포합니다. 중단점을 적중하면 코드가 노란색으로 강조 표시됩니다.
@@ -90,10 +93,10 @@ Xamarin 제품은 Mono 클래스 라이브러리에 대한 소스 코드와 함�
 
 이 기능은 디버그 중에 추가 메모리를 사용하므로 기본적으로 꺼져 있습니다.
 
-이 기능을 사용하려면 **Mac용 Visual Studio > 기본 설정 > 디버거**로 이동한 다음, 아래 그림과 같이 “**프로젝트 코드만 디버깅합니다. 프레임워크 코드는 한 단계씩 실행하지 마세요.** ” 옵션이 **선택 취소**되어 있어야 합니다.
+이 기능을 사용하도록 설정하려면 **Mac용 Visual Studio > 기본 설정 > 디버거**로 이동하여 아래 그림과 같이 "**한 단계씩 외부 코드 실행**" 옵션이 **선택**되었는지 확인합니다.
 
-![프레임워크 코드는 한 단계씩 실행하지 마세요 옵션](media/debugging-image8.png)
+![한 단계씩 외부 코드 실행 옵션](media/debugging-image8.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 디버깅(Windows에서)](/visualstudio/debugger/)

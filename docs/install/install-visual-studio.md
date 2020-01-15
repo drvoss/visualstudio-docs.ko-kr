@@ -2,7 +2,7 @@
 title: Visual Studio 설치
 titleSuffix: ''
 description: Visual Studio를 설치하는 방법을 단계별로 알아봅니다.
-ms.date: 10/07/2019
+ms.date: 12/13/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - set up Visual Studio
 - Visual Studio setup
 - Visual Studio installer
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6cd91fadea397955b756461383ed8e17030b4c3b
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 078c54a680fccda0d7d6af88446b709765f277a2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018859"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590126"
 ---
 # <a name="install-visual-studio"></a>Visual Studio 설치
 
@@ -131,7 +131,7 @@ Visual Studio 설치 관리자를 설치하려면 부트스트래퍼 파일을 �
 
 2. Microsoft [사용 약관](https://visualstudio.microsoft.com/license-terms/) 및 Microsoft [개인정보처리방침](https://privacy.microsoft.com/privacystatement)에 동의하도록 요청하는 메시지가 표시됩니다. **계속**을 선택합니다.
 
-   ![사용 조건 및 개인정보처리방침](media/privacy-and-license-terms.png "Microsoft 사용 조건 및 개인정보처리방침")
+   ![사용 조건 및 개인정보처리방침](media/privacy-and-license-terms.png "사용 조건 및 개인정보처리방침")
 
 ## <a name="step-4---choose-workloads"></a>4단계 - 워크로드 선택
 
@@ -139,7 +139,7 @@ Visual Studio 설치 관리자를 설치하려면 부트스트래퍼 파일을 �
 
  ::: moniker range="vs-2017"
 
-1. **Visual Studio 설치** 화면에서 원하는 작업을 찾습니다.
+1. **Visual Studio 설치 관리자**에서 원하는 워크로드를 찾습니다.
 
    ![Visual Studio 2017: 워크로드 설치](../install/media/vs-installer-installing-workloads.png)
 
@@ -153,7 +153,7 @@ Visual Studio 설치 관리자를 설치하려면 부트스트래퍼 파일을 �
 
 ::: moniker range="vs-2019"
 
-1. **Visual Studio 설치** 화면에서 원하는 작업을 찾습니다.
+1. **Visual Studio 설치 관리자**에서 원하는 워크로드를 찾습니다.
 
    ![Visual Studio 2019: 워크로드 설치](../install/media/vs-2019/vs-installer-workloads.png)
 
@@ -259,7 +259,7 @@ Visual Studio 설치 관리자를 설치하려면 부트스트래퍼 파일을 �
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [Visual Studio 업데이트](update-visual-studio.md)
 * [Visual Studio 수정](modify-visual-studio.md)

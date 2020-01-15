@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code snippets [C#]
 - Code Snippet Inserter [C#]
 - C#, code snippets
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e06e825779476489414ff200aba9cd43fce96e2f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d41907a15b7e0b1692dda3f4d678c2b843dfcd03
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647258"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594164"
 ---
 # <a name="c-code-snippets"></a>C# 코드 조각
 
@@ -72,7 +72,7 @@ ms.locfileid: "72647258"
 |using|[using](/dotnet/csharp/language-reference/keywords/using-directive) 지시문을 만듭니다.|네임스페이스(전역 네임스페이스 포함) 내부|
 |while|[while](/dotnet/csharp/language-reference/keywords/while) 루프를 만듭니다.|메서드, 인덱서, 속성 접근자 또는 이벤트 접근자 내부|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 조각 함수](../ide/code-snippet-functions.md)
 - [코드 조각](../ide/code-snippets.md)

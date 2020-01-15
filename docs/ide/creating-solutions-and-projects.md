@@ -9,17 +9,17 @@ f1_keywords:
 helpviewer_keywords:
 - solutions [Visual Studio], creating
 - projects [Visual Studio], creating
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abe2cbd18e87c7045d44e597e3a5bb93a64a1c35
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 503b343299f7b30e9f5e834099274215b262a635
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747959"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589749"
 ---
 # <a name="create-solutions-and-projects"></a>솔루션 및 프로젝트 만들기
 
@@ -28,7 +28,7 @@ ms.locfileid: "72747959"
 ![솔루션/프로젝트 계층 구조](./media/vside-proj-soln.png)
 
 > [!NOTE]
-> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio에서 프로젝트 만들기](/visualstudio/mac/create-new-projects)를 참조하세요.
+> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio에서 프로젝트 만들기](/visualstudio/mac/create-new-projects)를 참조하세요.
 
 **솔루션 탐색기**라고 하는 도구 창에서 솔루션과 프로젝트를 볼 수 있습니다. 다음 스크린샷은 두 개의 포로젝트가 포함된 **솔루션 탐색기**의 예제 솔루션(**BikeSharing.Xamarin-UWP**)을 보여줍니다. **BikeSharing.Clients.Core** 및 **BikeSharing.Clients.Windows**. 각 프로젝트에는 여러 파일, 폴더 및 참조가 포함되어 있습니다. 굵게 표시된 프로젝트 이름은 *시작 프로젝트*, 즉 앱 실행 시 시작하는 프로젝트입니다. 어떤 프로젝트가 시작 프로젝트인지 지정할 수 있습니다.
 
@@ -141,7 +141,7 @@ Visual Studio IDE를 사용하지 않고 솔루션 및 해당 콘텐츠를 영�
 
 1. 솔루션을 포함하는 폴더를 선택한 다음, **삭제** 키를 누릅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [솔루션 및 프로젝트](../ide/solutions-and-projects-in-visual-studio.md)
 - [GitHub에 있는 Microsoft의 오픈 소스 리포지토리](https://github.com/Microsoft)

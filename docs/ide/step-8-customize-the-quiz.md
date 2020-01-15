@@ -13,21 +13,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cee7b855256f352c9ac9ed39994191f4a9e6d946
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 32c35c0eccc4c6a4972774219dc07b606b72243c
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314212"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776018"
 ---
 # <a name="step-8-customize-the-quiz"></a>8단계: 퀴즈 사용자 지정
 
 자습서의 마지막 부분에서는 퀴즈를 사용자 지정하고 이미 배운 내용을 확장하는 몇 가지 방법을 살펴보겠습니다. 예를 들어 프로그램에서 답이 분수가 아닌 난수 나누기 문제를 만드는 방법을 생각해 보세요. 자세히 알아보려면 `timeLabel` 컨트롤을 다른 색으로 바꾸고 퀴즈를 푸는 사람에게 힌트를 제공합니다.
 
 > [!NOTE]
-> 이 항목은 기본 코딩 개념에 대해 설명하는 자습서 시리즈의 일부입니다.
-> - 자습서에 대한 개요는 [자습서 2: 시간이 지정된 수학 퀴즈 만들기](../ide/tutorial-2-create-a-timed-math-quiz.md)를 참조하세요.
-> - 코드의 전체 버전을 다운로드하려면 [Complete math quiz tutorial sample](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)(전체 수학 퀴즈 자습서 샘플)을 참조하세요.
+> 이 항목은 기본 코딩 개념에 대해 설명하는 자습서 시리즈의 일부입니다. 자습서에 대한 개요는 [자습서 2: 시간이 지정된 수학 퀴즈 만들기](../ide/tutorial-2-create-a-timed-math-quiz.md)를 참조하세요.
 
 ## <a name="to-customize-the-quiz"></a>퀴즈를 사용자 지정하려면
 

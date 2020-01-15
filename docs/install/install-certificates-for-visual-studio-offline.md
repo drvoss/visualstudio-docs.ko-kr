@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4db5de36e9982ac3d708f8826f441751c2fd0891
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 840ea8f701bbc602292bd7c0cf602a24944ed74a
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594073"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918526"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Visual Studio 오프라인 설치에 필요한 인증서 설치
 
@@ -50,7 +50,7 @@ Visual Studio 설치 엔진은 신뢰할 수 있는 콘텐츠만 설치합니다
 
 ### <a name="option-2---distribute-trusted-root-certificates-in-an-enterprise-environment"></a>옵션 2 - 엔터프라이즈 환경에서 신뢰할 수 있는 루트 인증서 배포
 
-최신 루트 인증서가 없는 오프라인 컴퓨터가 있는 엔터프라이즈의 경우 관리자는 [신뢰할 수 있는 루트 및 허용되지 않는 인증서 구성](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265983(v=ws.11)) 페이지의 지침에 따라 인증서를 업데이트할 수 있습니다.
+최신 루트 인증서가 없는 오프라인 컴퓨터가 있는 엔터프라이즈의 경우 관리자는 [신뢰할 수 있는 루트 및 허용되지 않는 인증서 구성](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265983(v=ws.11)) 페이지의 지침에 따라 인증서를 업데이트할 수 있습니다.
 
 ### <a name="option-3---install-certificates-as-part-of-a-scripted-deployment-of-visual-studio"></a>옵션 3 - Visual Studio 스크립트 배포의 일부로 인증서 설치
 

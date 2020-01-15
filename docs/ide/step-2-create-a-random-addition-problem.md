@@ -13,21 +13,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3100ed6951a0130824f4643086cff88a45c40ef8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f19c7854f2fb3d24010a5ee0e983b8efe4209997
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588761"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776033"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>2단계: 난수 더하기 문제 만들기
 
 이 자습서의 2단계에서는 난수 기반 수학 문제를 추가하여 퀴즈를 좀 더 어렵게 만듭니다. 문제를 채우고 카운트다운 타이머를 시작하는 `StartTheQuiz()`라는 메서드도 추가합니다. 이 자습서의 뒷부분에서는 빼기, 곱하기 및 나누기 문제를 추가합니다.
 
 > [!NOTE]
-> 이 항목은 기본 코딩 개념에 대해 설명하는 자습서 시리즈의 일부입니다.
-> - 자습서에 대한 개요는 [자습서 2: 시간이 지정된 수학 퀴즈 만들기](../ide/tutorial-2-create-a-timed-math-quiz.md)를 참조하세요.
-> - 코드의 전체 버전을 다운로드하려면 [Complete math quiz tutorial sample](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)(전체 수학 퀴즈 자습서 샘플)을 참조하세요.
+> 이 항목은 기본 코딩 개념에 대해 설명하는 자습서 시리즈의 일부입니다. 자습서에 대한 개요는 [자습서 2: 시간이 지정된 수학 퀴즈 만들기](../ide/tutorial-2-create-a-timed-math-quiz.md)를 참조하세요.
 
 ## <a name="to-create-a-random-addition-problem"></a>난수 더하기 문제를 만들려면
 

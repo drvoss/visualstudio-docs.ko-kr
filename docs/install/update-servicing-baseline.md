@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3ef0cf63f8063d543cbb8fb69a0588dc331e4c6a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 4c33420e715f2164f767ba57ff149a409d7d3627
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590958"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776182"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>서비스 기준선에서 Visual Studio 업데이트
 
@@ -62,7 +62,7 @@ vs_enterprise.exe --channelUri c:\doesnotexist.chman
 
 서비스 기준선에 대한 업데이트가 있는 경우 [My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=visual%20studio%202019%20version%2016.0)에서 서비스 업데이트에 대한 최종 버전 부트스트래퍼 파일을 사용할 수 있습니다.
 
-네트워크 레이아웃 설치를 통해 배포하는 관리자의 경우 [레이아웃 위치](update-a-network-installation-of-visual-studio.md)를 업데이트해야 합니다. 이 위치에서 설치된 클라이언트는 업데이트 알림을 받게 됩니다. 업데이트를 클라이언트에 배포해야 하는 경우에는 [이 지침](update-a-network-installation-of-visual-studio.md#how-to-deploy-an-update-to-client-machines)을 따릅니다. 업데이트에 대한 ‘response.json’을 수정하는 경우 추가 워크로드, 구성 요소 또는 언어를 추가하지 마십시오. 제품이 업데이트된 후에는 이러한 설정의 관리가 ‘수정’ 배포로 이루어져야 합니다.
+네트워크 레이아웃 설치를 통해 배포하는 관리자의 경우 [레이아웃 위치](update-a-network-installation-of-visual-studio.md)를 업데이트해야 합니다. 이 위치에서 설치된 클라이언트는 업데이트 알림을 받게 됩니다. 업데이트를 클라이언트에 배포해야 하는 경우에는 [이 지침](update-a-network-installation-of-visual-studio.md#deploy-an-update-to-client-machines)을 따릅니다. 업데이트에 대한 ‘response.json’을 수정하는 경우 추가 워크로드, 구성 요소 또는 언어를 추가하지 마십시오. 제품이 업데이트된 후에는 이러한 설정의 관리가 ‘수정’ 배포로 이루어져야 합니다.
 
 인터넷 기반 설치인 경우에는 클라이언트에 존재하지 않는 채널 매니페스트를 가리키는 `--channelUri` 매개 변수로 새로운 최종 버전 부트스트래퍼를 실행합니다. 업데이트를 자동 또는 수동 모드에서 배포하는 경우에 두 가지 명령을 사용합니다.
 

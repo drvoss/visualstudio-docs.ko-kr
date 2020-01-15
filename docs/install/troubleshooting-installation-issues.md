@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 24a6a642528fbf8fed7b8000434a963e32cc85ee
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fe581d9c754ee78f66771901661e8870fd91b4b3
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594489"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849589"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Visual Studio 설치 및 업그레이드 문제 해결
 
@@ -127,11 +127,11 @@ Visual Studio 설치 관리자 부트스트래퍼는 나머지 Visual Studio 설
 
 대부분의 설치 문제 해결에는 설치 로그가 필요합니다. Visual Studio 설치 관리자에서 [문제 보고](../ide/how-to-report-a-problem-with-visual-studio.md)를 사용하여 문제를 제출하는 경우 이러한 로그는 보고서에 자동으로 포함됩니다.
 
-Microsoft 지원에 문의하는 경우 [Microsoft Visual Studio 및 .NET Framework 로그 컬렉션 도구](https://aka.ms/vscollect)를 사용하여 이러한 설치 로그를 제공해야 할 수 있습니다. 로그 컬렉션 도구는 .NET Framework, Windows SDK 및 SQL Server를 포함하여 Visual Studio에 의해 설치된 모든 구성 요소에서 설치 로그를 수집합니다. 또한 컴퓨터 정보, Windows Installer 인벤토리는 물론 Visual Studio 설치 관리자, Windows Installer 및 시스템 복원에 대한 Windows 이벤트 로그 정보도 수집합니다.
+Microsoft 지원에 문의하는 경우 [Microsoft Visual Studio 및 .NET Framework 로그 컬렉션 도구](https://www.microsoft.com/download/details.aspx?id=12493)를 사용하여 이러한 설치 로그를 제공해야 할 수 있습니다. 로그 컬렉션 도구는 .NET Framework, Windows SDK 및 SQL Server를 포함하여 Visual Studio에 의해 설치된 모든 구성 요소에서 설치 로그를 수집합니다. 또한 컴퓨터 정보, Windows Installer 인벤토리는 물론 Visual Studio 설치 관리자, Windows Installer 및 시스템 복원에 대한 Windows 이벤트 로그 정보도 수집합니다.
 
 로그를 수집하려면
 
-1. [도구를 다운로드합니다](https://aka.ms/vscollect).
+1. [도구를 다운로드합니다](https://www.microsoft.com/download/details.aspx?id=12493).
 2. 관리자 명령 프롬프트를 엽니다.
 3. 도구를 저장한 디렉터리에서 `Collect.exe`를 실행합니다.
 4. `%TEMP%` 디렉터리에서 결과 `vslogs.zip` 파일을 찾습니다(예: `C:\Users\YourName\AppData\Local\Temp\vslogs.zip`).

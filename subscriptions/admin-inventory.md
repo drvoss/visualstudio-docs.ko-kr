@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/23/2019
 ms.topic: conceptual
 description: 관리자의 사전 프로덕션 인벤토리 수행 책임에 대해 알아봅니다.
-ms.openlocfilehash: 97a7a95354cd4d5d85581830830705bc328f2311
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 8218b1802a6369aed00be63572c80cba7b5c29f3
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491704"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849830"
 ---
 # <a name="inventory-of-pre-production-environment"></a>사전 프로덕션 환경의 파악
 Visual Studio 구독은 디바이스가 아닌 사용자를 계산하여 자산 관리를 간소화합니다.
@@ -25,7 +25,7 @@ Visual Studio 관리자는 **특정한 명명된 개인**에게 Visual Studio �
 - 수동 조정을 통해 도움을 얻습니다. 개발 및 테스트 사용자를 개발 및 테스트 환경과 조정시키는 데 도움이 되도록 직원의 협조를 요청합니다.
 
 ## <a name="resources"></a>리소스
-- [Visual Studio 라이선스 백서](https://aka.ms/vslicensing)
+- [Visual Studio 라이선스 백서](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Visual Studio 관리 및 구독 지원](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [볼륨 라이선스 약관](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 

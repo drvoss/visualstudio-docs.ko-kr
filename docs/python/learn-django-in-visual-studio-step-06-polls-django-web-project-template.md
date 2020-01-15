@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5e9220df4f9abdb806495e6108fb6039b28e0b7b
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: c1fe3db702508267e96dc79f2f789a17a7edf98b
+ms.sourcegitcommit: 789430e18dfe8e5f7db19273e7298af2f078c0dc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254376"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75755581"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>6단계: 설문 조사 Django 웹 프로젝트 템플릿 사용
 
@@ -160,7 +160,7 @@ def seed(request):
 
 ### <a name="question-is-it-possible-to-initialize-the-database-using-the-django-administrative-utility"></a>질문: Django 관리 유틸리티를 사용하여 데이터베이스를 초기화할 수 있나요?
 
-대답: 예, [django-admin loaddata 명령](https://docs.djangoproject.com/en/1.9/ref/django-admin/#loaddata)을 사용하여 앱의 시딩 페이지와 동일한 작업을 수행할 수 있습니다. 전체 웹앱에서 작업할 경우 두 가지 방법을 조합하여 사용할 수 있습니다. 즉, 명령줄에서 데이터베이스를 초기화한 다음, 하드 코드된 파일을 사용하지 않고 다른 모든 임의 JSON을 전송할 수 있는 API로 시드 페이지를 변환할 수 있습니다.
+대답: 예, [django-admin loaddata 명령](https://docs.djangoproject.com/en/2.0/ref/django-admin/#loaddata)을 사용하여 앱의 시딩 페이지와 동일한 작업을 수행할 수 있습니다. 전체 웹앱에서 작업할 경우 두 가지 방법을 조합하여 사용할 수 있습니다. 즉, 명령줄에서 데이터베이스를 초기화한 다음, 하드 코드된 파일을 사용하지 않고 다른 모든 임의 JSON을 전송할 수 있는 API로 시드 페이지를 변환할 수 있습니다.
 
 ## <a name="step-6-3-use-migrations"></a>6-3단계: 마이그레이션 사용
 

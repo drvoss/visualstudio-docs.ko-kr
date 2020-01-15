@@ -5,18 +5,18 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: 96a113e21fe2e2e11da0e156ba9578c632e648ae
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: 9a9cf7871684e0951f66e0f20dcf156b3e625b45
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74983663"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844269"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Mac용 Visual Studio에 로그인
 
 Mac용 Visual Studio에 로그인하여 [구독을 활성화](enable-subscription.md)할 수 있습니다. Mac용 Visual Studio를 다운로드하는 경우 항상 기본적으로 Community Edition이 다운로드됩니다. [Professional 또는 Enterprise 라이선스가](https://visualstudio.microsoft.com/vs/compare/)있는 경우 처음 실행할 때 로그인하여 추가 기능의 잠금을 해제해야 합니다. 또한 다음 기능도 얻을 수 있습니다.
 
-* **Visual Studio Dev Essentials 프로그램에 액세스** - 이 프로그램은 무료 소프트웨어 제품, 교육, 지원 등을 포함합니다. 자세한 내용은 [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) 를 참조하세요.
+* **Visual Studio Dev Essentials 프로그램에 액세스** - 이 프로그램은 무료 소프트웨어 제품, 교육, 지원 등을 포함합니다. 자세한 내용은 [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) 를 참조하세요.
 
 * 동일한 계정의 자격 증명을 다시 묻지 않고 IDE에서 **Azure에 자동으로 연결**합니다.
 
@@ -61,7 +61,7 @@ Mac용 Visual Studio는 개인 설정 계정에 여러 계정을 추가하는 �
 
 3. 완료되면 **변경 내용 저장**을 선택합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Windows의 Visual Studio에 로그인](/visualstudio/ide/signing-in-to-visual-studio)
 - [여러 사용자 계정으로 작업(Windows의 Visual Studio)](/visualstudio/ide/work-with-multiple-user-accounts)

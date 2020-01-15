@@ -8,12 +8,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 01363ab1588507f31dc74800c85b159039c9bab6
-ms.sourcegitcommit: 9c7d8693108ecd2042a70c04cebe3c44af657baf
+ms.openlocfilehash: 5fb521ff1769f1d742dc1ce67080e98aecb417ad
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74239425"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944231"
 ---
 # <a name="using-net-4x-in-unity"></a>Unity에서 .NET 4.x 사용
 
@@ -21,7 +21,7 @@ Unity 스크립팅을 기반으로 하는 기술인 C# 및 .NET는 Microsoft가 
 
 Unity 2017.1의 릴리스부터 Unity는 NET 4.6 C# 6 호환 버전으로 업그레이드된 실험적 버전을 도입했습니다. Unity 2018.1에서는 .NET 4.x 해당 런타임이 더 이상 실험적인 것으로 간주되지 않지만, 이전 .NET 3.5 해당 런타임은 이제 레거시 버전으로 간주됩니다. 또한 Unity 2018.3의 릴리스부터 Unity는 업그레이드된 스크립팅 런타임을 기본 선택으로 설정하고 C# 7로 업데이트할 계획입니다. 이 로드맵에 대한 자세한 정보와 최신 업데이트는 Unity의 [블로그 게시물](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/)을 읽거나 [실험적 스크립팅 미리 보기 포럼](https://forum.unity.com/forums/experimental-scripting-previews.107/)을 방문하세요. 그 동안 .NET 4.x 스크립팅 런타임에서 현재 사용할 수 있는 새 기능에 대해 자세히 알아보려면 아래 섹션을 확인하세요.
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 * [Unity 2017.1 이상](https://unity3d.com/)(2018.2 권장)
 * [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
@@ -146,7 +146,7 @@ public int Health { get; set; } = 100;
 
 ### <a name="string-interpolation"></a>문자열 보간
 
-이전 .NET 3.5 런타임에서는 문자열 연결에 복잡한 구문이 필요했습니다. 이제 .NET 4.x 런타임에서 [ `$` 문자열 보간](https://docs.microsoft.com/dotnet/csharp/language-reference/tokens/interpolated) 기능을 사용하면 식을 보다 직접적이고 읽기 쉬운 구문으로 문자열에 삽입할 수 있습니다.
+이전 .NET 3.5 런타임에서는 문자열 연결에 복잡한 구문이 필요했습니다. 이제 .NET 4.x 런타임에서 [`$` 문자열 보간](/dotnet/csharp/language-reference/tokens/interpolated) 기능을 사용하면 식을 보다 직접적이고 읽기 쉬운 구문으로 문자열에 삽입할 수 있습니다.
 
 ```csharp
 // .NET 3.5
@@ -159,7 +159,7 @@ Debug.Log($"Player health: {Health}");
 
 ### <a name="expression-bodied-members"></a>식 본문 멤버
 
-.NET 4.x 런타임에서 사용할 수 있는 최신 C# 구문을 사용하면 [람다 식](https://docs.microsoft.com/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions)이 함수 본문을 더 간결하게 바꿀수 있습니다.
+.NET 4.x 런타임에서 사용할 수 있는 최신 C# 구문을 사용하면 [람다 식](/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions)이 함수 본문을 더 간결하게 바꿀수 있습니다.
 
 ```csharp
 // .NET 3.5
@@ -181,9 +181,9 @@ public string PlayerHealthUiText => $"Player health: {Health}";
 
 ### <a name="task-based-asynchronous-pattern-tap"></a>TAP(작업 기반 비동기 패턴)
 
-[비동기 프로그래밍](https://docs.microsoft.com/dotnet/csharp/async)을 사용하면 애플리케이션이 응답하지 않는 시간이 오래 걸리는 작업을 수행할 수 있습니다. 또한 이 기능을 사용하면 시간이 많이 소요되는 작업이 완료될 때까지 코드를 기다렸다가 이러한 작업의 결과에 따라 코드를 계속 사용할 수 있습니다. 예를 들어 파일이 로드되거나 네트워크 작업이 완료될 때까지 기다릴 수 있습니다.
+[비동기 프로그래밍](/dotnet/csharp/async)을 사용하면 애플리케이션이 응답하지 않는 시간이 오래 걸리는 작업을 수행할 수 있습니다. 또한 이 기능을 사용하면 시간이 많이 소요되는 작업이 완료될 때까지 코드를 기다렸다가 이러한 작업의 결과에 따라 코드를 계속 사용할 수 있습니다. 예를 들어 파일이 로드되거나 네트워크 작업이 완료될 때까지 기다릴 수 있습니다.
 
-Unity에서 비동기 프로그래밍은 일반적으로 [코루틴](https://docs.unity3d.com/Manual/Coroutines.html)을 사용하여 수행됩니다. 그러나 C# 5 이후부터 .NET 개발에서 비동기 프로그래밍의 기본 방법은 [ System.Threading.Task](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task)와 함께 `async` 및 `await` 키워드를 사용하는 [TAP(작업 기반 비동기 패턴)](https://docs.microsoft.com/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap)입니다. 요약하면 `async` 함수에서 나머지 애플리케이션의 업데이트를 차단하지 않고 `await` 작업의 완료가 가능합니다.
+Unity에서 비동기 프로그래밍은 일반적으로 [코루틴](https://docs.unity3d.com/Manual/Coroutines.html)을 사용하여 수행됩니다. 그러나 C# 5 이후부터 .NET 개발에서 비동기 프로그래밍의 기본 방법은 [ System.Threading.Task](/dotnet/api/system.threading.tasks.task)와 함께 `async` 및 `await` 키워드를 사용하는 [TAP(작업 기반 비동기 패턴)](/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap)입니다. 요약하면 `async` 함수에서 나머지 애플리케이션의 업데이트를 차단하지 않고 `await` 작업의 완료가 가능합니다.
 
 ```csharp
 // Unity coroutine
@@ -229,7 +229,7 @@ TAP는 Unity별 뉘앙스를 고려해야 하는 복잡한 주제입니다. 결�
 
 이러한 팁은 Unity에서 TAP를 시작하는 데 도움이 될 수 있습니다.
 
-* 대기할 비동기 함수는 반환 형식이 [`Task`](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task) 또는 [`Task<TResult>`](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1)이어야 합니다.
+* 대기할 비동기 함수는 반환 형식이 [`Task`](/dotnet/api/system.threading.tasks.task) 또는 [`Task<TResult>`](/dotnet/api/system.threading.tasks.task-1)이어야 합니다.
 * 작업을 반환하는 비동기 함수에는 **"Async"** 접미사가 해당 이름에 추가되어야 합니다. "Async" 접미사는 함수가 항상 대기해야 함을 나타냅니다.
 * 기존 동기식 코드에서 비동기 함수를 실행하는 함수에 대해서만 `async void` 반환 형식을 사용합니다. 이러한 함수는 자체적으로 대기할 수 없으며 이름에 "Async" 접미사가 없어야 합니다.
 * Unity는 UnitySynchronizationContext를 사용하여 기본적으로 주 스레드에서 비동기 함수가 실행되도록 합니다. Unity API는 주 스레드의 외부에서 액세스할 수 없습니다.
@@ -274,7 +274,7 @@ private void RecordHighScore(string playerName)
 
 ### <a name="caller-info-attributes"></a>호출자 정보 특성
 
-[호출자 정보 특성](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/caller-information)은 메서드의 호출자에 대한 정보를 제공합니다. 호출자 정보 특성과 함께 사용할 각 매개 변수에 대한 기본값을 제공해야 합니다.
+[호출자 정보 특성](/dotnet/csharp/programming-guide/concepts/caller-information)은 메서드의 호출자에 대한 정보를 제공합니다. 호출자 정보 특성과 함께 사용할 각 매개 변수에 대한 기본값을 제공해야 합니다.
 
 ```csharp
 private void Start ()
@@ -300,7 +300,7 @@ public void ShowCallerInfo(string message,
 
 ### <a name="using-static"></a>Using static
 
-[Using static](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/using-static)은 해당 클래스 이름을 입력하지 않고 정적 함수를 사용할 수 있도록 합니다. using static을 사용하면, 동일한 클래스의 여러 정적 함수를 사용해야 하는 경우 공간과 시간을 절약할 수 있습니다
+[Using static](/dotnet/csharp/language-reference/keywords/using-static)은 해당 클래스 이름을 입력하지 않고 정적 함수를 사용할 수 있도록 합니다. using static을 사용하면, 동일한 클래스의 여러 정적 함수를 사용해야 하는 경우 공간과 시간을 절약할 수 있습니다
 
 ```csharp
 // .NET 3.5
@@ -344,8 +344,8 @@ iOS와 같은 플랫폼에 게임을 내보낼 때 Unity는 IL2CPP 엔진을 사
 ## <a name="additional-resources"></a>추가 자료
 
 * [Unity 블로그 - Unity 2018.2에서 스크립팅 런타임 개선](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/)
-* [C#의 기록](https://docs.microsoft.com/dotnet/csharp/whats-new/csharp-version-history)
-* [C# 6의 새로운 기능](https://docs.microsoft.com/dotnet/csharp/whats-new/csharp-6)
-* [코루틴 및 TAP를 사용한 Unity의 비동기 프로그래밍](https://blogs.msdn.microsoft.com/appconsult/2017/09/01/unity-coroutine-tap)
+* [C#의 기록](/dotnet/csharp/whats-new/csharp-version-history)
+* [C# 6의 새로운 기능](/dotnet/csharp/whats-new/csharp-6)
+* [코루틴 및 TAP를 사용한 Unity의 비동기 프로그래밍](/archive/blogs/appconsult/unity-coroutine-tap-en-us)
 * [Unity 2017의 코루틴 대신 Async-Await](http://www.stevevermeulen.com/index.php/2017/09/using-async-await-in-unity3d-2017/)
 * [Unity 포럼 - 실험적 스크립팅 미리 보기](https://forum.unity.com/forums/experimental-scripting-previews.107/)

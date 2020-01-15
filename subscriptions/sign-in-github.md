@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/11/2019
 ms.topic: conceptual
 description: GitHub 계정으로 Visual Studio 구독에 로그인하는 방법을 알아봅니다.
-ms.openlocfilehash: 6279c9399a42bc07579f48c887987b4b662da9da
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: ffafd3821112a62ec1f86666f8c0fe6571bbb335
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315374"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944194"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>GitHub 계정으로 Visual Studio 구독 로그인 
 
@@ -49,7 +49,7 @@ A:  모든 Microsoft 제품의 로그인 페이지에서 GitHub.com에 액세스
 A:  전혀 그렇지 않습니다. 이 경우 GitHub 암호는 변경되지 않습니다. 단지 Microsoft 계정에 로그인하는 또 다른 방법이 생겼을 뿐입니다. 사용자가 이메일 주소를 사용하여 로그인할 때마다 Microsoft 계정 암호로 로그인하거나 GitHub로 로그인하는 방법 중에서 선택할 수 있습니다. 암호를 추가해야 하는 경우 GitHub 계정에 대한 암호와 다른 암호를 지정할 것을 적극 권장합니다.
 
 #### <a name="q-i-want-to-add-the-authenticator-app-to-the-account-i-created-using-github--can-i-do-that"></a>Q: GitHub를 사용하여 만든 계정에 Authenticator 앱을 추가하려고 합니다.  이것은 가능한가요?
-A:  가능합니다. 이메일 주소를 사용하여 앱을 다운로드하고 로그인하기만 하면 됩니다. 이메일 주소를 사용하여 로그인하는 경우 자격 증명으로 [Authenticator 앱](https://go.microsoft.com/fwlink/?linkid=2090219) 또는 GitHub를 선택하라는 메시지가 표시됩니다.
+A:  가능합니다. 이메일 주소를 사용하여 앱을 다운로드하고 로그인하기만 하면 됩니다. 이메일 주소를 사용하여 로그인하는 경우 자격 증명으로 [Authenticator 앱](https://www.microsoft.com/p/microsoft-authenticator/9nblgggzmcj6) 또는 GitHub를 선택하라는 메시지가 표시됩니다.
 
 #### <a name="q-ive-enabled-two-factor-authentication-on-both-my-github-and-microsoft-accounts-msa-but-when-i-sign-in-to-my-msa-im-still-asked-to-authenticate-twice--why"></a>Q: 내 GitHub 및 Microsoft 계정(MSA)에서 모두 2단계 인증을 사용하도록 설정했지만 내 MSA에 로그인할 때 여전히 두 번 인증하라는 요구를 받습니다.  이유
 A: 보안 제한사항 때문에 Microsoft는 사용자가 GitHub에서 2단계 확인을 사용하도록 설정했더라도 GitHub로 로그인하는 것을 1단계 확인으로 계산합니다. 따라서 Microsoft 계정에 대해 다시 인증해야 합니다. 

@@ -157,7 +157,7 @@
           href: how-to-generate-code-metrics-data.md
         - name: 코드 메트릭 데이터 작업
           href: working-with-code-metrics-data.md
-    - name: 참조
+    - name: 참고
       items:
         - name: 규칙 집합
           items:
@@ -667,15 +667,15 @@
                   href: ca2305.md
                 - name: 'CA2310: 안전하지 않은 역직렬 변환기 NetDataContractSerializer를 사용하지 마세요.'
                   href: ca2310.md
-                - name: 'CA2311: 먼저 NetDataContractSerializer.Binder를 설정하지 않고 deserialize하지 마세요.'
+                - name: 'CA2311: 먼저 NetDataContractSerializer.Binder를 설정하지 않고 역직렬화하지 마세요.'
                   href: ca2311.md
-                - name: 'CA2312: deserialize하기 전에 NetDataContractSerializer.Binder를 설정해야 합니다.'
+                - name: 'CA2312: 역직렬화하기 전에 NetDataContractSerializer.Binder를 설정해야 합니다.'
                   href: ca2312.md
                 - name: 'CA2315: 안전하지 않은 역직렬 변환기 ObjectStateFormatter를 사용하지 마세요.'
                   href: ca2315.md
-                - name: 'CA2321: SimpleTypeResolver를 사용하여 JavaScriptSerializer를 통해 deserialize하지 마세요.'
+                - name: 'CA2321: SimpleTypeResolver를 사용하여 JavaScriptSerializer를 통해 역직렬화하지 마세요.'
                   href: ca2321.md
-                - name: 'CA2322: JavaScriptSerializer가 deserialize하기 전에 SimpleTypeResolver로 초기화되지 않는지 확인하세요.'
+                - name: 'CA2322: JavaScriptSerializer가 역직렬화하기 전에 SimpleTypeResolver로 초기화되지 않는지 확인하세요.'
                   href: ca2322.md
                 - name: 'CA2326: None 이외의 TypeNameHandling 값을 사용하지 마세요.'
                   href: ca2326.md
@@ -683,9 +683,9 @@
                   href: ca2327.md
                 - name: 'CA2328: JsonSerializerSettings가 안전한지 확인하세요.'
                   href: ca2328.md
-                - name: 'CA2329: 안전하지 않은 구성을 사용하여 JsonSerializer로 deserialize하지 마세요.'
+                - name: 'CA2329: 안전하지 않은 구성을 사용하여 JsonSerializer로 역직렬화하지 마세요.'
                   href: ca2329.md
-                - name: 'CA2330: deserialize할 때 JsonSerializer에 보안 구성이 있는지 확인하세요.'
+                - name: 'CA2330: 역직렬화할 때 JsonSerializer에 보안 구성이 있는지 확인하세요.'
                   href: ca2330.md
                 - name: 'CA3001: 코드에서 SQL 주입 취약점에 대해 검토합니다.'
                   href: ca3001.md
@@ -721,13 +721,15 @@
                   href: ca3077.md
                 - name: 'CA3147: ValidateAntiForgeryToken을 사용하여 동사 처리기를 표시하세요.'
                   href: ca3147.md
+                - name: 'CA5358: 안전하지 않은 암호화 모드를 사용하지 마세요.'
+                  href: ca5358.md
                 - name: 'CA5361: 강력한 암호의 SChannel 사용을 비활성화하지 마세요.'
                   href: ca5361.md
                 - name: 'CA5363: 요청 유효성 검사를 사용하지 않도록 설정하지 마세요.'
                   href: ca5363.md
                 - name: 'CA5364: 사용되지 않는 보안 프로토콜을 사용하지 마세요.'
                   href: ca5364.md
-                - name: 'CA5369: Deserialize에 XmlReader를 사용하세요.'
+                - name: 'CA5369: 역직렬화에 XmlReader를 사용하세요.'
                   href: ca5369.md
                 - name: 'CA5370: 판독기 유효성 검사에 XmlReader를 사용하세요.'
                   href: ca5370.md

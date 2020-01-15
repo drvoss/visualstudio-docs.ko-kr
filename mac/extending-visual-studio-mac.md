@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 12/20/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 102b03caf2880d9b1311bb757eaf92aad84f8c81
-ms.sourcegitcommit: d04441e3c5f2eff3a63f7aca35ccf7ecac90fb44
+ms.openlocfilehash: 30826f68be1ef2f29940c8f9c95b2b79435e0a2a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75735833"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852032"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Mac용 Visual Studio 확장
 
@@ -161,7 +161,7 @@ public enum DateInserterCommands
 
 ## <a name="extending-the-new-editor"></a>새 편집기 확장
 
-Mac용 Visual Studio에서 [새로 도입된 네이티브 Cocoa 텍스트 편집기 UI](https://aka.ms/vs/mac/editor/learn-more)는 Windows용 Visual Studio의 동일한 편집기 계층을 기반으로 해서 구축되었습니다.
+Mac용 Visual Studio에서 [새로 도입된 네이티브 Cocoa 텍스트 편집기 UI](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes#RTW)는 Windows용 Visual Studio의 동일한 편집기 계층을 기반으로 해서 구축되었습니다.
 
 Visual Studio와 Mac용 Visual Studio 간에 편집기를 공유할 경우의 많은 이점 중 하나는 Visual Studio 편집기를 대상으로 하는 코드를 Mac용 Visual Studio에서 실행되도록 조정할 수 있다는 것입니다.
 
@@ -191,7 +191,7 @@ Mac용 Visual Studio와 관련된 확장 정보를 살펴보기 전에 공유 �
 ## <a name="additional-information"></a>추가 정보
 
 > [!NOTE]
-> Mac용 Visual Studio용 확장 시나리오 개선을 위해 현재 작업 중입니다. 확장을 만들고 있으며 추가 도움 또는 정보가 필요하거나 피드백을 제공하려는 경우 [Mac용 Visual Studio 확장 제작](https://aka.ms/vsmac-extensions-survey) 양식을 작성해 주세요.
+> Mac용 Visual Studio용 확장 시나리오 개선을 위해 현재 작업 중입니다. 확장을 만들고 있으며 추가 도움 또는 정보가 필요하거나 피드백을 제공하려는 경우 [Mac용 Visual Studio 확장 제작](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR3YufGX_azhFl7MkrQO9i9JUNVMyMklVVlAzQVdURDg2NjQxTFRBVTJURC4u) 양식을 작성해 주세요.
 
 ## <a name="see-also"></a>참조
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 48754834295a552e3b189ff05ff2d1c12cd221a3
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 9f1d80d540e9a25a3ef62ee0819c6f6655b9b3ab
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75400918"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916527"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>로컬 Docker 컨테이너에서 앱 디버그
 
@@ -60,6 +60,28 @@ Docker 컨테이너는 .NET Framework 및 .NET Core 프로젝트에 사용할 �
 변경 작업을 빠르게 반복하기 위해 컨테이너에서 애플리케이션을 시작할 수 있습니다. 그런 다음, IIS Express에서와같이 계속 변경하면서 변경 내용을 확인합니다.
 
 1. Docker가 사용 중인 컨테이너 유형(Linux 또는 Windows)을 사용하도록 설정되어 있는지 확인합니다. 작업 표시줄에서 Docker 아이콘을 마우스 오른쪽 단추로 클릭하고 **Linux 컨테이너로 전환** 또는 **Windows 컨테이너로 전환**을 적절히 선택합니다.
+
+1. (.NET Core 3 이상에만 해당) 이 섹션에 설명된 대로 코드를 편집하고 실행 중인 사이트를 새로 고치는 기능은 .NET Core > = 3.0의 기본 템플릿에서 사용할 수 없습니다. 이 기능을 사용하도록 설정하려면 NuGet 패키지 [Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/)를 추가해야 합니다. *Startup.cs*에서 `ConfigureServices` 메서드의 코드에 `IMvcBuilder.AddRazorRuntimeCompilation` 확장 메서드에 대한 호출을 추가합니다. DEBUG 모드에서만 이 기능을 사용할 수 있으므로 다음과 같이 코딩하세요.
+
+    ```csharp
+    public IWebHostEnvironment Env { get; set; }
+    
+    public void ConfigureServices(IServiceCollection services)
+    {
+        IMvcBuilder builder = services.AddRazorPages();
+    
+    #if DEBUG
+        if (Env.IsDevelopment())
+        {
+            builder.AddRazorRuntimeCompilation();
+        }
+    #endif
+    
+        // code omitted for brevity
+    }
+    ```
+
+   자세한 내용은 [ASP.NET Core의 Razor 파일 컴파일](/aspnet/core/mvc/views/view-compilation?view=aspnetcore-3.1)을 참조하세요.
 
 1. **솔루션 구성**을 **디버그**로 설정합니다. **Ctrl**+**F5**를 눌러 Docker 이미지를 빌드하고 로컬에서 실행합니다.
 
@@ -138,6 +160,6 @@ Docker 컨테이너는 .NET Framework 및 .NET Core 프로젝트에 사용할 �
 ## <a name="more-about-docker-with-visual-studio-windows-and-azure"></a>Visual Studio, Windows 및 Azure와 함께 Docker에 대해 자세히 알아보기
 
 * [Visual Studio를 사용한 컨테이너 개발](/visualstudio/containers)에 대해 자세히 알아봅니다.
-* Docker 컨테이너를 빌드하고 배포하려면 [Azure Pipelines용 Docker 통합](https://aka.ms/dockertoolsforvsts)을 참조하세요.
-* Windows Server 및 Nano Server 문서의 인덱스는 [Windows 컨테이너 정보](https://aka.ms/containers)를 참조하세요.
+* Docker 컨테이너를 빌드하고 배포하려면 [Azure Pipelines용 Docker 통합](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.docker)을 참조하세요.
+* Windows Server 및 Nano Server 문서의 인덱스는 [Windows 컨테이너 정보](/virtualization/windowscontainers/)를 참조하세요.
 * [Azure Container Service](https://azure.microsoft.com/services/kubernetes-service/)에 대해 알아보고 [Azure Kubernetes Service 설명서](/azure/aks)를 검토합니다.

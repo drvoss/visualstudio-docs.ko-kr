@@ -3,15 +3,15 @@ title: Docker Compose 및 ASP.NET Core를 사용하는 다중 컨테이너 자�
 author: ghogen
 description: Docker Compose에서 여러 컨테이너를 사용하는 방법을 알아봅니다.
 ms.author: ghogen
-ms.date: 02/21/2019
+ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 298ac91a7e7cf89f7723a3fd8bb3e8056da798ba
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 5d6b867c2f237f20747628533af055e5c4900ceb
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75399747"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916505"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>자습서: Docker Compose를 사용하여 다중 컨테이너 앱 만들기
 
@@ -98,7 +98,7 @@ Visual Studio에서 `WebFrontEnd`라는 **ASP.NET Core 웹 애플리케이션** 
     
       <div class="text-center">
           <h1 class="display-4">Welcome</h1>
-          <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+          <p>Learn about <a href="/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
           <p>@ViewData["Message"]</p>
       </div>
       ```
@@ -114,7 +114,7 @@ Visual Studio에서 `WebFrontEnd`라는 **ASP.NET Core 웹 애플리케이션** 
         }
       ```
 
-    .NET Core 3.1에서는 이미 있는 WeatherForecast API를 사용할 수 있기 때문에 필요하지 않습니다. 그러나 이 코드는 HTTPS가 아닌 HTTP를 사용하여 Web API를 호출하기 때문에 *Startup.cs*의 `Configure` 메서드에서 `UseHttpsRedirections`에 대한 호출을 주석 처리해야 합니다.
+    .NET Core 3.1에서는 이미 있는 WeatherForecast API를 사용할 수 있기 때문에 필요하지 않습니다. 그러나 이 코드는 HTTPS가 아닌 HTTP를 사용하여 Web API를 호출하기 때문에 *Startup.cs*의 `Configure` 메서드에서 <xref:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection*>에 대한 호출을 주석 처리해야 합니다.
 
     ```csharp
                 //app.UseHttpsRedirection();

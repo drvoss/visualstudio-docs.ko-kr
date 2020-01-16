@@ -3,17 +3,17 @@ title: 지원되지 않는 데이터베이스 공급자에서 데이터베이스
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: c0f1298e-31aa-471e-ae19-1bafffd2ae40
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b1dd14c428b90b87e665aa41681b5a9e68eb00e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1b7e24604f965a7f518ee7802e2eeb6a84e74ddb
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648015"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113269"
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>지원되지 않는 데이터베이스 공급자에서 데이터베이스 공급자를 선택했습니다.
 
@@ -22,7 +22,7 @@ ms.locfileid: "72648015"
 > [!NOTE]
 > .NET Framework Data Provider for SQL Server를 사용하는 데이터 연결만 지원됩니다.
 
-## <a name="options"></a>옵션
+## <a name="options"></a>Options
 
 - **확인**을 클릭하여 지원되지 않는 데이터베이스 공급자를 사용하는 연결에 매핑할 엔터티 클래스를 계속 디자인합니다. 지원되지 않는 데이터베이스 공급자를 사용하면 예상치 못한 동작이 발생할 수도 있습니다.
 

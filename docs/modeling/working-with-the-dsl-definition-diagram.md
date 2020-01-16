@@ -11,23 +11,23 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, Show Map Lines
 - Domain-Specific Language Tools, Show As Class
 - Domain-Specific Language Tools, Bring Tree Here
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0e65b47baba985012dccad0c838c65d2d8bf2ef
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 53bbfbca975625a8f56f7519a15ac1670b94861b
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748141"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115280"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>DSL 정의 다이어그램 작업
-@No__t_0 정의의 다이어그램은 도메인별 언어를 정의 하는 데 중요 한 도구입니다. 도메인 모델에 요소를 추가하고 다이어그램에 대해 관계를 정의할 수 있으며 보다 읽기 쉽도록 다이어그램의 레이아웃을 수정할 수 있습니다.
+[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 정의의 다이어그램은 도메인별 언어를 정의 하는 데 중요 한 도구입니다. 도메인 모델에 요소를 추가하고 다이어그램에 대해 관계를 정의할 수 있으며 보다 읽기 쉽도록 다이어그램의 레이아웃을 수정할 수 있습니다.
 
 ## <a name="the-layout-of-the-diagram"></a>다이어그램 레이아웃
- @No__t_0 정의 다이어그램에는 두 개의 파티션, **클래스 및 관계** 파티션과 **다이어그램 요소** 파티션이 있습니다. **클래스 및 관계** 파티션은 도메인 클래스, 도메인 관계 및 상속을 표시 합니다. **다이어그램 요소** 파티션은 셰이프 클래스, 연결선 클래스, 스윔 레인 클래스 및 생성 된 디자이너 다이어그램을 표시 합니다.
+ [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 정의 다이어그램에는 두 개의 파티션, **클래스 및 관계** 파티션과 **다이어그램 요소** 파티션이 있습니다. **클래스 및 관계** 파티션은 도메인 클래스, 도메인 관계 및 상속을 표시 합니다. **다이어그램 요소** 파티션은 셰이프 클래스, 연결선 클래스, 스윔 레인 클래스 및 생성 된 디자이너 다이어그램을 표시 합니다.
 
  도메인 클래스는 **클래스 및 관계** 파티션의 여러 위치에 나타날 수 있습니다. 도메인 클래스 정의는 다른 도메인 클래스의 기본 클래스인 경우 상속 트리를 표시하고 포함/참조 관계의 소스인 경우에는 관계 트리를 표시합니다. 포함 또는 참조 관계의 대상으로는 도메인 클래스 자리 표시자가 표시됩니다. 기본적으로 자리 표시자 요소는 **도메인 속성** 구획이 축소 된 상태로 표시 됩니다. 상속 또는 포함/참조 관계는 표시하지 않습니다.
 

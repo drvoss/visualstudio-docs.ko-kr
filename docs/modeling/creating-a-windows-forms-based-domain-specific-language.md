@@ -2,17 +2,17 @@
 title: Windows Forms 기반 도메인별 언어 만들기
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc9d043f64204c50be06952ecc39be75e15087cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f565184dcb9570ecc34b61f1f2d4d0e2ce2a4110
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654102"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114885"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>Windows Forms 기반 도메인별 언어 만들기
 
@@ -33,13 +33,13 @@ DSL 다이어그램을 사용 하는 대신 Windows Forms를 사용 하 여 DSL 
    | | |
    |-|-|
    | 솔루션 및 DSL 이름 | FarmApp |
-   | 네임스페이스 | FarmApp |
+   | 네임스페이스 | Company.FarmApp |
 
 2. 템플릿이 제공 하는 초기 예제를 실험 합니다.
 
    1. 모든 템플릿을 변환 합니다.
 
-   2. 샘플을 빌드하고 실행 합니다 (**Ctrl** +**F5**).
+   2. 샘플을 빌드하고 실행 합니다 (**Ctrl**+**F5**).
 
    3. Visual Studio의 실험적 인스턴스에서 디버깅 프로젝트의 `Sample` 파일을 엽니다.
 
@@ -53,19 +53,19 @@ DSL 다이어그램을 사용 하는 대신 Windows Forms를 사용 하 여 DSL 
 
 - `DslDefinition.dsl`에 다이어그램 요소가 없습니다. 이는 DSL 다이어그램을 사용 하 여이 DSL의 인스턴스 모델을 보는 것이 아니기 때문입니다. 대신 Windows Form을 모델에 바인딩하면 폼의 요소에 모델이 표시 됩니다.
 
-- @No__t_0 및 `DslPackage` 프로젝트 외에도 솔루션에는 `UI.`**UI** 프로젝트에 Windows Forms 컨트롤의 정의가 포함 된 세 번째 프로젝트가 포함 되어 있습니다. `DslPackage` `UI`에 따라 달라 지 며 `UI` `Dsl`에 따라 다릅니다.
+- `Dsl` 및 `DslPackage` 프로젝트 외에도 솔루션에는 `UI.`**UI** 프로젝트에 Windows Forms 컨트롤의 정의가 포함 된 세 번째 프로젝트가 포함 되어 있습니다. `DslPackage` `UI`에 따라 달라 지 며 `UI` `Dsl`에 따라 다릅니다.
 
-- @No__t_0 프로젝트에서 `UI\DocView.cs`에는 `UI` 프로젝트에 정의 된 Windows Forms 컨트롤을 표시 하는 코드가 포함 되어 있습니다.
+- `DslPackage` 프로젝트에서 `UI\DocView.cs`에는 `UI` 프로젝트에 정의 된 Windows Forms 컨트롤을 표시 하는 코드가 포함 되어 있습니다.
 
-- @No__t_0 프로젝트에는 DSL에 바인딩된 양식 컨트롤의 작업 샘플이 포함 되어 있습니다. 그러나 DSL 정의를 변경한 경우에는 작동 하지 않습니다. @No__t_0 프로젝트에는 다음이 포함 됩니다.
+- `UI` 프로젝트에는 DSL에 바인딩된 양식 컨트롤의 작업 샘플이 포함 되어 있습니다. 그러나 DSL 정의를 변경한 경우에는 작동 하지 않습니다. `UI` 프로젝트에는 다음이 포함 됩니다.
 
-  - @No__t_0 이라는 Windows Forms 클래스입니다.
+  - `ModelViewControl`이라는 Windows Forms 클래스입니다.
 
-  - @No__t_1의 추가 부분 정의를 포함 하는 `DataBinding.cs` 이라는 파일입니다. 해당 콘텐츠를 보려면 **솔루션 탐색기**에서 파일의 바로 가기 메뉴를 열고 **코드 보기**를 선택 합니다.
+  - `ModelViewControl`의 추가 부분 정의를 포함 하는 `DataBinding.cs` 이라는 파일입니다. 해당 콘텐츠를 보려면 **솔루션 탐색기**에서 파일의 바로 가기 메뉴를 열고 **코드 보기**를 선택 합니다.
 
 ### <a name="about-the-ui-project"></a>UI 프로젝트 정보
 
-Dsl 정의 파일을 업데이트 하 여 dsl을 정의 하는 경우 dsl을 표시 하도록 `UI` 프로젝트의 컨트롤을 업데이트 해야 합니다. @No__t_0 및 `DslPackage` 프로젝트와 달리 샘플 `UI` 프로젝트는 `DslDefinitionl.dsl`에서 생성 되지 않습니다. 이 연습에서 다루지 않지만 원하는 경우 코드를 생성 하는 .tt 파일을 추가할 수 있습니다.
+Dsl 정의 파일을 업데이트 하 여 dsl을 정의 하는 경우 dsl을 표시 하도록 `UI` 프로젝트의 컨트롤을 업데이트 해야 합니다. `Dsl` 및 `DslPackage` 프로젝트와 달리 샘플 `UI` 프로젝트는 `DslDefinitionl.dsl`에서 생성 되지 않습니다. 이 연습에서 다루지 않지만 원하는 경우 코드를 생성 하는 .tt 파일을 추가할 수 있습니다.
 
 ## <a name="update-the-dsl-definition"></a>DSL 정의 업데이트
 
@@ -86,7 +86,7 @@ Dsl 정의 파일을 업데이트 하 여 dsl을 정의 하는 경우 dsl을 표
 
 4. **명명 된 도메인 클래스** 도구를 사용 하 여 다음 도메인 클래스를 만듭니다.
 
-    - `Field`-`Size` 이라는 추가 도메인 속성을 제공 합니다.
+    - `Field`-`Size`이라는 추가 도메인 속성을 제공 합니다.
 
     - `Animal`-속성 창에서 **상속 한정자** 를 **Abstract**로 설정 합니다.
 
@@ -135,7 +135,7 @@ Dsl 정의 파일을 업데이트 하 여 dsl을 정의 하는 경우 dsl을 표
 
 1. **UI** 프로젝트에서 기존 .cs 파일을 모두 삭제 합니다.
 
-2. @No__t_1 이라는 새 **사용자 정의 컨트롤** 파일을 **UI** 프로젝트에 추가 합니다.
+2. `FarmControl` 이라는 새 **사용자 정의 컨트롤** 파일을 **UI** 프로젝트에 추가 합니다.
 
 3. **데이터 소스** 창의 **팜**드롭다운 메뉴에서 **자세히**를 선택 합니다.
 
@@ -149,20 +149,20 @@ Dsl 정의 파일을 업데이트 하 여 dsl을 정의 하는 경우 dsl을 표
 
 5. **FarmBindingNavigator**를 삭제 합니다. 이는 `FarmControl` 디자이너에도 자동으로 생성 되지만이 응용 프로그램에는 유용 하지 않습니다.
 
-6. 도구 상자를 사용 하 여 **DataGridView**의 두 인스턴스를 만들고 `AnimalGridView` 하 고 `FieldGridView` 합니다.
+6. 도구 상자를 사용 하 여 **DataGridView**의 두 인스턴스를 만들고 `AnimalGridView` 하 고 `FieldGridView`합니다.
 
    > [!NOTE]
    > 다른 단계는 데이터 소스 창에서 컨트롤로 동물 및 필드 항목을 끌어 놓는 것입니다. 이 작업을 수행 하면 표 뷰와 데이터 원본 간에 데이터 표 및 바인딩이 자동으로 만들어집니다. 그러나이 바인딩은 Dsl에 대해 올바르게 작동 하지 않습니다. 따라서 데이터 표 및 바인딩을 수동으로 만드는 것이 좋습니다.
 
 7. 도구 상자에 **Modelingbindingsource** 도구가 없는 경우 추가 합니다. **데이터** 탭의 바로 가기 메뉴에서 **항목 선택**을 선택 합니다. **도구 상자 항목 선택** 대화 상자의 **.NET Framework** 탭에서 **modelingbindingsource** 를 선택 합니다.
 
-8. 도구 상자를 사용 하 여 **Modelingbindingsource**의 두 인스턴스를 만들고 `AnimalBinding` 하 고 `FieldBinding` 합니다.
+8. 도구 상자를 사용 하 여 **Modelingbindingsource**의 두 인스턴스를 만들고 `AnimalBinding` 하 고 `FieldBinding`합니다.
 
 9. 각 **Modelingbindingsource** 의 **DataSource** 속성을 **farmBindingSource**로 설정 합니다.
 
      **DataMember** 속성을 **동물** 또는 **필드로**설정 합니다.
 
-10. @No__t_1의 **DataSource** 속성을 `AnimalBinding`으로 설정 하 고 `FieldGridView`를 `FieldBinding`로 설정 합니다.
+10. `AnimalGridView`의 **DataSource** 속성을 `AnimalBinding`으로 설정 하 고 `FieldGridView`를 `FieldBinding`로 설정 합니다.
 
 11. 팜 컨트롤의 레이아웃을 원하는 대로 조정 합니다.
 
@@ -174,7 +174,7 @@ Dsl 정의 파일을 업데이트 하 여 dsl을 정의 하는 경우 dsl을 표
 
 - 이를 통해 사용자가 행을 선택 하면 데이터 표 행 대신 해당 모델 요소의 속성이 속성 창 표시 됩니다.
 
-  데이터 원본 및 뷰 간의 링크 ](../modeling/media/dslwpf4.png) 스키마를 ![DslWpf4 합니다.
+  ![DslWpf4](../modeling/media/dslwpf4.png) 데이터 원본 및 뷰 간의 링크 스키마를 제공 합니다.
 
 ### <a name="complete-the-bindings-to-the-dsl"></a>DSL에 바인딩 완료
 
@@ -249,7 +249,7 @@ Dsl 정의 파일을 업데이트 하 여 dsl을 정의 하는 경우 dsl을 표
 
 1. FarmControl.cs의 디자인 뷰에서 도구 상자를 사용 하 여 폼에 단추를 만듭니다.
 
-    예를 들어 `New Sheep` 단추의 이름과 텍스트를 편집 합니다.
+    예를 들어 `New Sheep`단추의 이름과 텍스트를 편집 합니다.
 
 2. 단추를 두 번 클릭 하는 등의 방법으로 코드를 엽니다.
 

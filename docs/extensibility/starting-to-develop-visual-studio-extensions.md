@@ -11,19 +11,19 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 186df377670ffec2c06e0214d25b8824679b6f83
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 63fa0db72a01ddf1f6e1003fc27cf6a28128e036
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188869"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76269125"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Visual Studio Extensions 확장 기능 개발 시작
 
 이전에 Visual Studio 확장을 작성 한 적이 없는 경우 몇 가지 질문이 있을 수 있습니다. 여기에는 가장 일반적인 몇 가지 항목이 나열 되어 있습니다. 원하는 정보가 표시 되지 않으면 사용자 의견 단추를 사용 합니다 (화면 맨 아래에서**이 페이지가 도움이 되었나요?** ).
 
 > [!NOTE]
-> 이 문서는 Windows의 Visual Studio에 적용 됩니다. Mac용 Visual Studio [Mac용 Visual Studio 확장](/visualstudio/mac/extending-visual-studio-mac)을 참조 하세요.
+> 이 문서는 Windows의 Visual Studio에 적용 됩니다. Mac용 Visual Studio [Mac용 Visual Studio 확장](/visualstudio/mac/extending-visual-studio-mac)을 참조 하세요. Visual Studio Code [Visual Studio Code 확장 API](https://code.visualstudio.com/api)를 참조 하세요.
 
 ## <a name="what-software-do-i-need-to-develop-visual-studio-extensions"></a>Visual Studio 확장을 개발 하는 데 필요한 소프트웨어는 무엇 인가요?
 
@@ -96,3 +96,4 @@ Visual studio 확장을 개발 하려면 visual studio 외에도 visual studio S
 ## <a name="see-also"></a>참조
 
 - [Mac용 Visual Studio 확장](/visualstudio/mac/extending-visual-studio-mac)
+- [Visual Studio Code 확장](https://code.visualstudio.com/api)

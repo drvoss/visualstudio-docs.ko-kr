@@ -32,7 +32,7 @@ Visual Studio 구독에서 다운로드한 비 개발자 제품(예: SQL, Window
 제품 수준 설명: **사용할 수 없는 지원 플랜**을 확장합니다. **Support plan cannot be used for support on the specified product (Code: 8)** (지원 플랜을 지정된 제품의 지원에 사용할 수 없음(코드: 8))가 표시된 경우, 선택한 제품 버전에 지원 계약을 사용할 수 없습니다.
 
 ## <a name="how-to-activate-the-benefit"></a>혜택을 활성화하는 방법
-1. [https://my.visualstudio.com/Benefits](https://my.visualstudio.com/Benefits ) 로 이동하여 지원 섹션까지 아래로 스크롤하고, 기술 지원 타일에서 **채팅하여 활성화**를 클릭합니다.
+1. https://my.visualstudio.com/Benefits 로 이동하여 지원 섹션까지 아래로 스크롤하고, 기술 지원 타일에서 **채팅하여 활성화**를 클릭합니다.
     > [!div class="mx-imgBorder"]
     > ![기술 지원 혜택 타일](_img/vs-tech-support/vs-tech-support-tile.png)
 2. 이렇게 하면 **계약 ID** 및 **액세스 ID**를 만들고 이메일을 통해 제공하여 기록을 위해 사용할 수 있는 담당자와 채팅 세션이 시작됩니다.

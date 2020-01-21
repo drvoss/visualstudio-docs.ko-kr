@@ -1,6 +1,6 @@
 ---
-title: ASP.NET 디버그
-description: Visual Studio 디버거를 사용하여 ASP.NET 디버그
+title: ASP.NET Core 디버그
+description: Visual Studio 디버거를 사용하여 ASP.NET Core 디버그
 ms.custom: mvc
 ms.date: 08/06/2018
 ms.topic: quickstart
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 932c8331b7b706b783868a52e47afc5ead25ef9c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: bbe3d23301f0853626a930855acf4b595c6a2923
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679252"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847881"
 ---
-# <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>빠른 시작: Visual Studio 디버거를 사용하여 ASP.NET 디버그
+# <a name="quickstart-debug-aspnet-core-with-the-visual-studio-debugger"></a>빠른 시작: Visual Studio 디버거를 사용하여 ASP.NET Core 디버그
 
 Visual Studio 디버거는 앱을 디버그하도록 돕는 여러 가지 강력한 기능을 제공합니다. 이 항목에는 기본 기능 중 일부에 대해 알아보는 빠른 방법을 제공합니다.
 
@@ -31,7 +31,7 @@ Visual Studio 디버거는 앱을 디버그하도록 돕는 여러 가지 강력
     **Esc** 키를 눌러 시작 창을 닫습니다. **Ctrl + Q**를 입력하여 검색 상자를 열고 **asp.net**을 입력하고 **템플릿**을 선택한 다음, **새 ASP.NET Core 웹 애플리케이션 만들기**를 선택합니다. 표시되는 대화 상자에서 **만들기**를 선택합니다.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#** 아래에 **웹**을 선택한 다음, 가운데 창에서 **ASP.NET Core 웹 애플리케이션**을 선택합니다. **MyDbgApp**과 같은 이름을 입력하고 **확인**을 클릭합니다.
+    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트**를 차례대로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#** 아래에 **웹**을 선택한 다음, 가운데 창에서 **ASP.NET Core 웹 애플리케이션**을 선택합니다. **MyDbgApp**과 같은 이름을 입력하고 **확인**을 클릭합니다.
 
     표시되는 대화 상자의 가운데 창에서 **웹 애플리케이션**을 선택한 다음, **확인**을 클릭합니다.
 

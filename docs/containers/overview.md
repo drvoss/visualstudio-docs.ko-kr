@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 312c827c3b748e10951b243070f43cce559e3a60
-ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
+ms.openlocfilehash: 0d5859016a02de259c24c213c6cfef8cb5fce005
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74127198"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916559"
 ---
 # <a name="container-tools-in-visual-studio"></a>Visual Studio의 컨테이너 도구
 
@@ -19,7 +19,7 @@ Visual Studio에 컨테이너 개발용으로 포함된 도구는 쉽게 사용�
 
 ::: moniker range="vs-2017"
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * **웹 개발**, **Azure 도구** 워크로드 및/또는 **.NET Core 플랫폼 간 개발** 워크로드가 설치된 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
@@ -31,7 +31,7 @@ Docker 지원은 ASP.NET 프로젝트, ASP.NET Core, .NET Core 및 .NET Framewor
 
 Visual Studio의 Docker에 대한 지원은 고객 요구에 대응하여 여러 릴리스에 걸쳐 변경되었습니다. 프로젝트에 추가할 수 있는 Docker 지원에는 두 가지 수준이 있으며, 지원되는 옵션은 프로젝트의 유형 및 Visual Studio 버전에 따라 다릅니다. 일부 지원되는 프로젝트 유형에서 오케스트레이션을 사용하지 않고 단일 프로젝트용 컨테이너만 원하는 경우 Docker 지원을 추가하면 됩니다.  다음 수준은 컨테이너 오케스트레이션 지원으로, 선택한 특정 오케스트레이터용으로 적절한 지원 파일을 추가합니다.  
 
-Visual Studio 2017을 사용하면 Docker Compose 및 Service Fabric을 컨테이너 오케스트레이션 서비스로 사용할 수 있습니다.  [Visual Studio Tools for Kubernetes](https://aka.ms/get-vsk8stools)를 설치하는 경우 Kubernetes를 사용할 수도 있습니다.
+Visual Studio 2017을 사용하면 Docker Compose 및 Service Fabric을 컨테이너 오케스트레이션 서비스로 사용할 수 있습니다.  [Visual Studio Tools for Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes)를 설치하는 경우 Kubernetes를 사용할 수도 있습니다.
 
 > [!NOTE]
 > 15.8 이전 버전의 Visual Studio 2017을 사용하는 중이거나 .NET Framework 프로젝트 템플릿(.NET Core 아님)을 사용하는 중인 경우 Docker Compose를 사용하는 오케스트레이션 지원이 자동으로 추가됩니다. Docker Compose를 통한 컨테이너 오케스트레이션 지원은 Visual Studio 2017 버전 15.0~15.7에서 자동 추가되고 .NET Framework 프로젝트용으로 자동 추가됩니다.
@@ -40,11 +40,11 @@ Visual Studio 2017을 사용하면 Docker Compose 및 Service Fabric을 컨테�
 
 ::: moniker range=">=vs-2019"
 
-## <a name="prerequisites"></a>전제 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * **웹 개발**, **Azure 도구** 워크로드 및/또는 **.NET Core 플랫폼 간 개발** 워크로드가 설치된 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
-* .NET Core 2.2를 사용하여 개발하기 위한 [.NET Core 2.2 개발 도구](https://dotnet.microsoft.com/download/dotnet-core/2.2)
+* .NET Core를 사용하여 개발하기 위한 [.NET Core 개발 도구](https://dotnet.microsoft.com/download/dotnet-core/)입니다.
 * Azure Container Registry에 게시하려면 Azure 구독이 있어야 합니다. [평가판에 가입](https://azure.microsoft.com/offers/ms-azr-0044p/)합니다.
 
 ## <a name="docker-support-in-visual-studio"></a>Visual Studio의 Docker 지원
@@ -56,7 +56,7 @@ Visual Studio의 Docker에 대한 지원은 고객 요구에 대응하여 여러
 Visual Studio 2019를 사용하면 Docker Compose, Kubernetes 및 Service Fabric을 컨테이너 오케스트레이션 서비스로 사용할 수 있습니다.
 
 > [!NOTE]
-> 전체 .NET Framework 콘솔 프로젝트 템플릿을 사용하는 중이면 Docker 지원을 추가하는 경우 Docker Compose를 사용한 오케스트레이션 지원이 자동으로 추가됩니다.
+> 전체 .NET Framework 콘솔 프로젝트 템플릿을 사용하는 경우 프로젝트 작성 후 지원되는 옵션은 Service Fabric 또는 Docker Compose를 사용하는 옵션과 함께 **컨테이너 오케스트레이터 지원 추가**입니다. 프로젝트 작성 시 지원 추가와 오케스트레이션이 없는 단일 프로젝트에 대한 **Docker 지원 추가**는 사용 가능한 옵션이 아닙니다.
 
 Visual Studio 2019 버전 16.4 이상에서는 실행 중인 컨테이너를 보고, 사용할 수 있는 이미지를 찾아보고, 환경 변수, 로그 및 포트 매핑을 보고, 파일 시스템을 검사하고, 디버거를 연결하거나, 컨테이너 환경 내에서 터미널 창을 열 수 있는 **컨테이너** 창을 사용할 수 있습니다. [Visual Studio에서 컨테이너와 이미지를 보고 진단](view-and-diagnose-containers.md)을 참조하세요.
 
@@ -116,7 +116,7 @@ Docker Compose를 사용하여 제어할 다른 프로젝트에 이 프로세스
 ## <a name="kubernetes-support"></a>Kubernetes 지원
 
 ::: moniker range="vs-2017"
-Kubernetes 지원을 추가하려면 [Visual Studio Tools for Kubernetes](https://aka.ms/get-vsk8stools)를 설치하세요.
+Kubernetes 지원을 추가하려면 [Visual Studio Tools for Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes)를 설치하세요.
 ::: moniker-end
 
 Kubernetes 지원을 사용하면 로컬 프로젝트와 [AKS(Azure Kubernetes Service)](/azure/aks)에서 실행되는 Kubernetes 클러스터 간에 연결을 사용하도록 설정할 수 있으며 이에 따라 Visual Studio를 사용하여 AKS에서 실행되는 서비스를 수정 및 디버그할 수 있습니다.  이 서비스는 [Azure Dev Spaces](/azure/dev-spaces/quickstart-netcore-visualstudio)에서 제공됩니다. Azure Dev Spaces를 사용하면 개발 목적으로 *dev spaces*라는 별도의 Kubernetes 서비스 분기를 설정할 수도 있으므로 개발 중인 작업 버전에서 프로덕션 서비스를 효율적으로 분리하고 서로 명확히 분리하여 수정 사항을 별개로 유지할 수 있습니다.

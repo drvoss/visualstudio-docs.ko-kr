@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cc8ab1ac26f4aa01342d9949243772edd3de91f
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: b1928176ef1c2612585c7fa46ea653f3ff800050
+ms.sourcegitcommit: 9a5cf730d8e43eed6eba25369b7b44cae0b26b98
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189415"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75929248"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>빠른 시작: 프로파일링 도구 살펴보기
 
@@ -38,7 +38,7 @@ Visual Studio에서는 앱의 유형에 따라 다른 성능 문제를 진단할
 
 ## <a name="analyze-cpu-usage"></a>CPU 사용 분석
 
-CPU 사용 도구를 사용하여 앱의 성능을 분석하는 것이 좋습니다. 이 도구는 앱에서 사용 중인 CPU 리소스에 대해 자세히 알려줍니다. CPU 사용 도구에 대한 자세한 연습은 [초보자를 위한 성능 프로파일링 지침](../profiling/beginners-guide-to-performance-profiling.md)을 참조하세요.
+CPU 사용 도구를 사용하여 앱의 성능을 분석하는 것이 좋습니다. 이 도구는 앱에서 사용 중인 CPU 리소스에 대해 자세히 알려줍니다. CPU 사용량 도구에 대한 자세한 연습은 [CPU 사용량을 분석하여 애플리케이션 성능 측정](../profiling/beginners-guide-to-performance-profiling.md)을 참조하세요.
 
 진단 도구의 **요약** 보기에서 **CPU 프로파일링 사용**을 선택합니다(디버깅 세션에 있어야 함).
 
@@ -185,5 +185,5 @@ CPU 사용량 또는 메모리 사용량 도구에 현재 표시되지 않는 �
 ::: moniker-end
 
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio의 디버깅](../debugger/debugger-feature-tour.md)

@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09f3e5fed93cac3a251e4b7cdcaa988e63ff8741
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1e87f35778b8aec615410312c0eb7373d4e9969f
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596270"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75775882"
 ---
 # <a name="developer-community-data-privacy"></a>개발자 커뮤니티 데이터 개인 정보
 
@@ -81,7 +81,7 @@ Visual Studio에서 **문제 보고**가 시작되면 다음 유형의 데이터
   - 덤프 파일
 
 > [!NOTE]
-> 로그 파일, 스크린샷 및 데이터 기록이 포함된 문제 보고서를 제출하여 사용 권한을 제공하는 경우에만 로그 파일이 Microsoft로 전송됩니다. ‘문제 보고’ 창의 ‘요약’ 단계에 포함된 파일을 확인할 수 있습니다(이 메모에 포함된 스크린샷 참조). 수집된 로그 및 파일은 %temp% 폴더에 저장되며 각 업로드 후 정기적으로 정리됩니다. 문제 보고서에 로그를 포함하지 않으려면 보고서를 제출하기 전에 %temp% 폴더에서 파일을 삭제합니다.
+> 로그 파일, 스크린샷 및 데이터 기록을 전송하면 Microsoft에서 문제를 이해하고 대응하는 능력이 현저하게 향상됩니다.  따라서 이러한 항목을 포함하는 것이 좋습니다. 개인 정보를 보호하기 위해 첨부된 로그 파일, 스크린샷 및 데이터 기록은 문제 보고서와 함께 제출하여 사용 권한을 제공하는 경우에만 Microsoft로 전송됩니다. 보고서를 제출하기 전에 ‘문제 보고’ 창의 ‘요약’ 단계에서 포함된 파일을 확인할 수 있습니다. ‘요약’ 단계에서 ‘시스템 로그 연결’을 선택 취소하여 보고서에서 시스템 로그 파일을 제외할 수 있습니다. 참조용으로 다음 스크린샷을 참조하세요. 
   > ![문제 보고 - 수집된 로그 요약](media/report-a-problem-logs-collected.png)
 
 

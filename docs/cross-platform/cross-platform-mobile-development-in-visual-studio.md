@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d3df97bf8e180eae99e6ba27466fbde7a8466ad
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 15c4d31c8cc835884f1093dc78083bbfa9448bc3
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777776"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916872"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio에서 플랫폼 간 모바일 개발
 
@@ -108,7 +108,7 @@ Xamarin용 Visual Studio Tools를 사용하면 동일한 솔루션 및 공유 �
 
 |**자세히**|
 |--------------------|
-|[Visual Studio 설치](https://visualstudio.microsoft.com/vs/community/)(VisualStudio.com)|
+|[Visual Studio 설치](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
 |[Apache Cordova용 도구 Visual Studio 시작](/visualstudio/cross-platform/tools-for-cordova/)|
 |[Android 용 Visual Studio 에뮬레이터에 대해 알아보기](https://visualstudio.microsoft.com/vs/msft-android-emulator/) (VisualStudio.com)|
 
@@ -166,8 +166,8 @@ Xamarin용 Visual Studio Tools를 사용하면 동일한 솔루션 및 공유 �
 |[Visual Studio Tools for Unity 2.0 Preview에 대한 동영상 소개 보기](https://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (동영상)|
 |[Unity에 대해 알아보기](https://unity.com/) (Unity 웹 사이트)|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-- [Visual Studio 프로젝트에 Office 365 API 추가](https://docs.microsoft.com/office/developer-program/office-365-developer-program)
+- [Visual Studio 프로젝트에 Office 365 API 추가](/office/developer-program/office-365-developer-program)
 - [Azure App Service - Mobile Apps](https://azure.microsoft.com/services/app-service/mobile/)
-- [Visual Studio App Center](https://docs.microsoft.com/appcenter)
+- [Visual Studio App Center](/appcenter)

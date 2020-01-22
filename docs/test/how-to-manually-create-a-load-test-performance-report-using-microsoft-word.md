@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, reporting
 - load tests, creating Word reports
 ms.assetid: 3b864c75-2699-48c1-a2b4-9651f108c267
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 715086a2c0d9196680dd1f332ee9b5122e144e5b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c3deee8d35f06e50dbe22001e8a2fa81b41563e0
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653486"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113435"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>방법: Microsoft Word를 사용하여 수동으로 부하 테스트 성능 보고서 만들기
 
@@ -55,7 +55,7 @@ ms.locfileid: "72653486"
     > [!WARNING]
     > 원격 데스크톱의 그래프를 복사하여 다른 컴퓨터에 붙여넣을 경우에는 그래프와 연결된 테이블 정보만 복사되고 그래프 이미지는 복사되지 않습니다. 그래프 이미지는 복사한 이미지가 있는 컴퓨터의 임시 디렉터리에 저장되므로 두 번째 컴퓨터에서 디렉터리를 역참조할 수는 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [테스트 비교 또는 추세 분석을 위한 부하 테스트 결과 보고](../test/compare-load-test-results.md)
 - [방법: Microsoft Excel을 사용하여 부하 테스트 성능 보고서 만들기](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)

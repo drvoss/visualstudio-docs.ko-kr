@@ -3,19 +3,19 @@ title: Visual Studio Build Tools 2019 워크로드 및 구성 요소 ID
 titleSuffix: ''
 description: Visual Studio 작업 및 구성 요소 ID를 사용하여 기존 Windows 기반 애플리케이션을 빌드합니다.
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.date: 12/03/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 1e9fa33bbd8604f4260b61767f69b85e3263198b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 9f3920b7b746e4329cf94760e983d43e3579e8d3
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74796011"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76159624"
 ---
 ## <a name="azure-development-build-tools"></a>Azure 개발 빌드 도구
 
@@ -25,19 +25,19 @@ ms.locfileid: "74796011"
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
-구성 요소 ID | name | 버전 | 종속성 유형
+구성 요소 ID | 이름 | 버전 | 종속성 유형
 --- | --- | --- | ---
-Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 타기팅 팩 | 16.0.28517.75 | 필수
-Microsoft.Net.Component.4.8.SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 필수
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 개발 도구 | 16.3.29207.166 | 필수
-Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 작성 도구 | 16.0.28625.61 | 필수
-Microsoft.VisualStudio.Component.Azure.ClientLibs | .NET용 Azure 라이브러리 | 16.0.28315.86 | 필수
-Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Azure Cloud Services 빌드 도구 | 16.3.29207.166 | 필수
-Microsoft.VisualStudio.Component.DockerTools.BuildTools | 컨테이너 개발 도구 - 빌드 도구 | 16.0.28625.61 | 필수
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 대상 및 빌드 작업 | 16.1.28829.92 | 필수
-Microsoft.VisualStudio.Component.TypeScript.3.7 | TypeScript 3.7 SDK | 16.0.29429.68 | 필수
-Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Windows Communication Foundation 빌드 도구 | 16.0.28516.191 | 필수
-Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | 웹 개발 빌드 도구 | 16.0.28516.191 | 필수
+Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 타기팅 팩 | 16.0.28517.75 | 필요한 공간
+Microsoft.Net.Component.4.8.SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 필요한 공간
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 개발 도구 | 16.3.29207.166 | 필요한 공간
+Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 작성 도구 | 16.0.28625.61 | 필요한 공간
+Microsoft.VisualStudio.Component.Azure.ClientLibs | .NET용 Azure 라이브러리 | 16.0.28315.86 | 필요한 공간
+Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Azure Cloud Services 빌드 도구 | 16.3.29207.166 | 필요한 공간
+Microsoft.VisualStudio.Component.DockerTools.BuildTools | 컨테이너 개발 도구 - 빌드 도구 | 16.0.28625.61 | 필요한 공간
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 대상 및 빌드 작업 | 16.1.28829.92 | 필요한 공간
+Microsoft.VisualStudio.Component.TypeScript.3.7 | TypeScript 3.7 SDK | 16.0.29429.68 | 필요한 공간
+Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Windows Communication Foundation 빌드 도구 | 16.0.28516.191 | 필요한 공간
+Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | 웹 개발 빌드 도구 | 16.0.28516.191 | 필요한 공간
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 타기팅 팩 | 16.0.28517.75 | 권장
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 타기팅 팩 | 16.0.28517.75 | 권장
 Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 타기팅 팩 | 16.0.28517.75 | 권장
@@ -68,7 +68,7 @@ Microsoft.NetCore.Component.SDK | .NET Core 3.1 SDK | 16.4.29519.181 | Optional
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
-구성 요소 ID | name | 버전 | 종속성 유형
+구성 요소 ID | 이름 | 버전 | 종속성 유형
 --- | --- | --- | ---
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 타기팅 팩 | 16.0.28517.75 | 권장
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 타기팅 팩 | 16.0.28517.75 | 권장
@@ -88,13 +88,13 @@ Microsoft.VisualStudio.Component.SQL.SSDTBuildSku | SQL Server Data Tools - 빌�
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
-구성 요소 ID | name | 버전 | 종속성 유형
+구성 요소 ID | 이름 | 버전 | 종속성 유형
 --- | --- | --- | ---
-Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | 필수
-Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 타기팅 팩 | 16.0.28517.75 | 필수
-Microsoft.Net.Component.4.8.SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 필수
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 대상 및 빌드 작업 | 16.1.28829.92 | 필수
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 및 Visual Basic Roslyn 컴파일러 | 16.0.28714.129 | 필수
+Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | 필요한 공간
+Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 타기팅 팩 | 16.0.28517.75 | 필요한 공간
+Microsoft.Net.Component.4.8.SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 필요한 공간
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 대상 및 빌드 작업 | 16.1.28829.92 | 필요한 공간
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 및 Visual Basic Roslyn 컴파일러 | 16.0.28714.129 | 필요한 공간
 Microsoft.Component.ClickOnce.MSBuild | ClickOnce 빌드 도구 | 16.0.28625.61 | 권장
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 타기팅 팩 | 16.0.28517.75 | 권장
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 타기팅 팩 | 16.0.28517.75 | 권장
@@ -126,11 +126,11 @@ Microsoft.VisualStudio.Component.FSharp.MSBuild | F# 컴파일러 | 16.0.28528.7
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
-구성 요소 ID | name | 버전 | 종속성 유형
+구성 요소 ID | 이름 | 버전 | 종속성 유형
 --- | --- | --- | ---
-Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | 필수
-Microsoft.VisualStudio.Component.CoreBuildTools | Visual Studio Build Tools 핵심 | 16.0.28315.86 | 필수
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 및 Visual Basic Roslyn 컴파일러 | 16.0.28714.129 | 필수
+Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | 필요한 공간
+Microsoft.VisualStudio.Component.CoreBuildTools | Visual Studio Build Tools 핵심 | 16.0.28315.86 | 필요한 공간
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 및 Visual Basic Roslyn 컴파일러 | 16.0.28714.129 | 필요한 공간
 
 ## <a name="net-core-build-tools"></a>.NET Core 빌드 도구
 
@@ -140,11 +140,11 @@ Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 및 Visual Basic Roslyn �
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
-구성 요소 ID | name | 버전 | 종속성 유형
+구성 요소 ID | 이름 | 버전 | 종속성 유형
 --- | --- | --- | ---
-Microsoft.NetCore.BuildTools.ComponentGroup | .NET Core 빌드 도구 | 16.3.29102.218 | 필수
-Microsoft.NetCore.Component.SDK | .NET Core 3.1 SDK | 16.4.29519.181 | 필수
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 대상 및 빌드 작업 | 16.1.28829.92 | 필수
+Microsoft.NetCore.BuildTools.ComponentGroup | .NET Core 빌드 도구 | 16.3.29102.218 | 필요한 공간
+Microsoft.NetCore.Component.SDK | .NET Core 3.1 SDK | 16.4.29519.181 | 필요한 공간
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 대상 및 빌드 작업 | 16.1.28829.92 | 필요한 공간
 Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 LTS 런타임 | 16.4.29519.181 | 권장
 
 ## <a name="nodejs-build-tools"></a>Node.js 빌드 도구
@@ -155,10 +155,10 @@ Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 LTS 런타임 | 16.4.29519.
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
-구성 요소 ID | name | 버전 | 종속성 유형
+구성 요소 ID | 이름 | 버전 | 종속성 유형
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.Node.Build | Node.js MSBuild 지원 | 16.0.28517.75 | 필수
-Microsoft.VisualStudio.Component.TypeScript.3.7 | TypeScript 3.7 SDK | 16.0.29429.68 | 필수
+Microsoft.VisualStudio.Component.Node.Build | Node.js MSBuild 지원 | 16.0.28517.75 | 필요한 공간
+Microsoft.VisualStudio.Component.TypeScript.3.7 | TypeScript 3.7 SDK | 16.0.29429.68 | 필요한 공간
 
 ## <a name="officesharepoint-build-tools"></a>Office/SharePoint 빌드 도구
 
@@ -168,24 +168,24 @@ Microsoft.VisualStudio.Component.TypeScript.3.7 | TypeScript 3.7 SDK | 16.0.2942
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
-구성 요소 ID | name | 버전 | 종속성 유형
+구성 요소 ID | 이름 | 버전 | 종속성 유형
 --- | --- | --- | ---
-Microsoft.Component.ClickOnce.MSBuild | ClickOnce 빌드 도구 | 16.0.28625.61 | 필수
-Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | 필수
-Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 타기팅 팩 | 16.0.28517.75 | 필수
-Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 타기팅 팩 | 16.0.28517.75 | 필수
-Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 타기팅 팩 | 16.0.28517.75 | 필수
-Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 타기팅 팩 | 16.0.28517.75 | 필수
-Microsoft.Net.Component.4.8.SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 필수
-Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 타기팅 팩 | 16.0.28517.75 | 필수
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 개발 도구 | 16.3.29207.166 | 필수
-Microsoft.VisualStudio.Component.NuGet | NuGet 패키지 관리자 | 16.1.28829.92 | 필수
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 대상 및 빌드 작업 | 16.1.28829.92 | 필수
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 및 Visual Basic Roslyn 컴파일러 | 16.0.28714.129 | 필수
-Microsoft.VisualStudio.Component.Sharepoint.BuildTools | Office/SharePoint 개발 빌드 도구 | 16.0.28625.61 | 필수
-Microsoft.VisualStudio.Component.Workflow.BuildTools | Windows Workflow Foundation 빌드 도구 | 16.0.28315.86 | 필수
-Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Windows Communication Foundation 빌드 도구 | 16.0.28516.191 | 필수
-Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | 웹 개발 빌드 도구 | 16.0.28516.191 | 필수
+Microsoft.Component.ClickOnce.MSBuild | ClickOnce 빌드 도구 | 16.0.28625.61 | 필요한 공간
+Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | 필요한 공간
+Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 타기팅 팩 | 16.0.28517.75 | 필요한 공간
+Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 타기팅 팩 | 16.0.28517.75 | 필요한 공간
+Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 타기팅 팩 | 16.0.28517.75 | 필요한 공간
+Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 타기팅 팩 | 16.0.28517.75 | 필요한 공간
+Microsoft.Net.Component.4.8.SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 필요한 공간
+Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 타기팅 팩 | 16.0.28517.75 | 필요한 공간
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 개발 도구 | 16.3.29207.166 | 필요한 공간
+Microsoft.VisualStudio.Component.NuGet | NuGet 패키지 관리자 | 16.1.28829.92 | 필요한 공간
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 대상 및 빌드 작업 | 16.1.28829.92 | 필요한 공간
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 및 Visual Basic Roslyn 컴파일러 | 16.0.28714.129 | 필요한 공간
+Microsoft.VisualStudio.Component.Sharepoint.BuildTools | Office/SharePoint 개발 빌드 도구 | 16.0.28625.61 | 필요한 공간
+Microsoft.VisualStudio.Component.Workflow.BuildTools | Windows Workflow Foundation 빌드 도구 | 16.0.28315.86 | 필요한 공간
+Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Windows Communication Foundation 빌드 도구 | 16.0.28516.191 | 필요한 공간
+Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | 웹 개발 빌드 도구 | 16.0.28516.191 | 필요한 공간
 Microsoft.VisualStudio.Component.TeamOffice.BuildTools | VSTO(Visual Studio Tools for Office) 빌드 도구 | 16.0.28625.61 | 권장
 Microsoft.VisualStudio.Component.WebDeploy | 웹 배포 | 16.0.28517.75 | 권장
 Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 타기팅 팩 | 16.0.28517.75 | Optional
@@ -206,15 +206,15 @@ Microsoft.Net.ComponentGroup.4.8.DeveloperTools | .NET Framework 4.8 개발 도�
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
-구성 요소 ID | name | 버전 | 종속성 유형
+구성 요소 ID | 이름 | 버전 | 종속성 유형
 --- | --- | --- | ---
-Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | 필수
-Microsoft.Component.NetFX.Native | .NET 네이티브 | 16.4.29429.68 | 필수
-Microsoft.Net.Component.4.8.SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 필수
-Microsoft.NetCore.Component.SDK | .NET Core 3.1 SDK | 16.4.29519.181 | 필수
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 대상 및 빌드 작업 | 16.1.28829.92 | 필수
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 및 Visual Basic Roslyn 컴파일러 | 16.0.28714.129 | 필수
-Microsoft.VisualStudio.ComponentGroup.UWP.BuildTools | 유니버설 Windows 플랫폼 빌드의 필수 구성 요소 | 16.3.29207.166 | 필수
+Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | 필요한 공간
+Microsoft.Component.NetFX.Native | .NET 네이티브 | 16.4.29429.68 | 필요한 공간
+Microsoft.Net.Component.4.8.SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 필요한 공간
+Microsoft.NetCore.Component.SDK | .NET Core 3.1 SDK | 16.4.29519.181 | 필요한 공간
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 대상 및 빌드 작업 | 16.1.28829.92 | 필요한 공간
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 및 Visual Basic Roslyn 컴파일러 | 16.0.28714.129 | 필요한 공간
+Microsoft.VisualStudio.ComponentGroup.UWP.BuildTools | 유니버설 Windows 플랫폼 빌드의 필수 구성 요소 | 16.3.29207.166 | 필요한 공간
 Microsoft.VisualStudio.Component.Windows10SDK.18362 | Windows 10 SDK(10.0.18362.0) | 16.1.28829.92 | 권장
 Microsoft.Net.Component.4.7.2.SDK | .NET Framework 4.7.2 SDK | 16.4.29409.204 | Optional
 Microsoft.VisualStudio.Component.TextTemplating | 텍스트 템플릿 변환 | 16.0.28625.61 | Optional
@@ -242,11 +242,11 @@ Microsoft.VisualStudio.ComponentGroup.UWP.VC.v141.BuildTools | C++(v141) 유니�
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
-구성 요소 ID | name | 버전 | 종속성 유형
+구성 요소 ID | 이름 | 버전 | 종속성 유형
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.VC.CoreBuildTools | C++ 빌드 도구 핵심 기능 | 16.0.28625.61 | 필수
-Microsoft.VisualStudio.Component.VC.Redist.14.Latest | C++ 2019 재배포 가능 업데이트 | 16.4.29429.68 | 필수
-Microsoft.VisualStudio.Component.Windows10SDK | Windows 유니버설 C 런타임 | 16.4.29409.204 | 필수
+Microsoft.VisualStudio.Component.VC.CoreBuildTools | C++ 빌드 도구 핵심 기능 | 16.0.28625.61 | 필요한 공간
+Microsoft.VisualStudio.Component.VC.Redist.14.Latest | C++ 2019 재배포 가능 업데이트 | 16.4.29429.68 | 필요한 공간
+Microsoft.VisualStudio.Component.Windows10SDK | Windows 유니버설 C 런타임 | 16.4.29409.204 | 필요한 공간
 Microsoft.VisualStudio.Component.TestTools.BuildTools | 테스트 도구 핵심 기능 - 빌드 도구 | 16.4.29409.204 | 권장
 Microsoft.VisualStudio.Component.VC.ASAN | C++ AddressSanitizer(실험) | 16.4.29429.68 | 권장
 Microsoft.VisualStudio.Component.VC.CMake.Project | Windows용 C++ CMake 도구 | 16.3.29103.31 | 권장
@@ -281,17 +281,17 @@ Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Llvm.Clang | Windows용 C++ 
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
-구성 요소 ID | name | 버전 | 종속성 유형
+구성 요소 ID | 이름 | 버전 | 종속성 유형
 --- | --- | --- | ---
-Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | 필수
-Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 타기팅 팩 | 16.0.28517.75 | 필수
-Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 타기팅 팩 | 16.0.28517.75 | 필수
-Microsoft.Net.Component.4.8.SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 필수
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 개발 도구 | 16.3.29207.166 | 필수
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 대상 및 빌드 작업 | 16.1.28829.92 | 필수
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 및 Visual Basic Roslyn 컴파일러 | 16.0.28714.129 | 필수
-Microsoft.VisualStudio.Component.VSSDKBuildTools | Visual Studio SDK Build Tools Core | 16.0.28315.86 | 필수
-Microsoft.VisualStudio.ComponentGroup.VisualStudioExtensionBuildTools.Prerequisites | Visual Studio 확장 개발 필수 구성 요소 | 16.4.29318.151 | 필수
+Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | 필요한 공간
+Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 타기팅 팩 | 16.0.28517.75 | 필요한 공간
+Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 타기팅 팩 | 16.0.28517.75 | 필요한 공간
+Microsoft.Net.Component.4.8.SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 필요한 공간
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 개발 도구 | 16.3.29207.166 | 필요한 공간
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 대상 및 빌드 작업 | 16.1.28829.92 | 필요한 공간
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 및 Visual Basic Roslyn 컴파일러 | 16.0.28714.129 | 필요한 공간
+Microsoft.VisualStudio.Component.VSSDKBuildTools | Visual Studio SDK Build Tools Core | 16.0.28315.86 | 필요한 공간
+Microsoft.VisualStudio.ComponentGroup.VisualStudioExtensionBuildTools.Prerequisites | Visual Studio 확장 개발 필수 구성 요소 | 16.4.29318.151 | 필요한 공간
 Component.Dotfuscator | PreEmptive Protection - Dotfuscator | 16.0.28528.71 | Optional
 Microsoft.Component.VC.Runtime.OSSupport | v142 빌드 도구용 C++ 유니버설 Windows 플랫폼 런타임 | 16.4.29409.204 | Optional
 Microsoft.VisualStudio.Component.VC.ATL | 최신 v142 빌드 도구용 C++ ATL(x86 및 x64) | 16.4.29313.120 | Optional
@@ -306,14 +306,14 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 - VS 2019 C++ x64/
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
-구성 요소 ID | name | 버전 | 종속성 유형
+구성 요소 ID | 이름 | 버전 | 종속성 유형
 --- | --- | --- | ---
-Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 타기팅 팩 | 16.0.28517.75 | 필수
-Microsoft.Net.Component.4.8.SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 필수
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 개발 도구 | 16.3.29207.166 | 필수
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 대상 및 빌드 작업 | 16.1.28829.92 | 필수
-Microsoft.VisualStudio.Component.TypeScript.3.7 | TypeScript 3.7 SDK | 16.0.29429.68 | 필수
-Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | 웹 개발 빌드 도구 | 16.0.28516.191 | 필수
+Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 타기팅 팩 | 16.0.28517.75 | 필요한 공간
+Microsoft.Net.Component.4.8.SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 필요한 공간
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 개발 도구 | 16.3.29207.166 | 필요한 공간
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 대상 및 빌드 작업 | 16.1.28829.92 | 필요한 공간
+Microsoft.VisualStudio.Component.TypeScript.3.7 | TypeScript 3.7 SDK | 16.0.29429.68 | 필요한 공간
+Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | 웹 개발 빌드 도구 | 16.0.28516.191 | 필요한 공간
 Microsoft.Component.ClickOnce.MSBuild | ClickOnce 빌드 도구 | 16.0.28625.61 | 권장
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 타기팅 팩 | 16.0.28517.75 | 권장
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 타기팅 팩 | 16.0.28517.75 | 권장
@@ -348,13 +348,13 @@ Microsoft.Net.ComponentGroup.4.8.DeveloperTools | .NET Framework 4.8 개발 도�
 
 ### <a name="components-included-by-this-workload"></a>이 작업에 포함되는 구성 요소
 
-구성 요소 ID | name | 버전 | 종속성 유형
+구성 요소 ID | 이름 | 버전 | 종속성 유형
 --- | --- | --- | ---
-Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | 필수
-Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 타기팅 팩 | 16.0.28517.75 | 필수
-Microsoft.Net.Component.4.8.SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 필수
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 대상 및 빌드 작업 | 16.1.28829.92 | 필수
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 및 Visual Basic Roslyn 컴파일러 | 16.0.28714.129 | 필수
+Microsoft.Component.MSBuild | MSBuild | 16.4.29429.68 | 필요한 공간
+Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 타기팅 팩 | 16.0.28517.75 | 필요한 공간
+Microsoft.Net.Component.4.8.SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | 필요한 공간
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 대상 및 빌드 작업 | 16.1.28829.92 | 필요한 공간
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 및 Visual Basic Roslyn 컴파일러 | 16.0.28714.129 | 필요한 공간
 Component.Android.SDK28 | Android SDK 설치(API 레벨 28) | 16.2.29003.222 | Optional
 Component.OpenJDK | OpenJDK(Microsoft 배포) | 16.1.28811.260 | Optional
 
@@ -362,7 +362,7 @@ Component.OpenJDK | OpenJDK(Microsoft 배포) | 16.1.28811.260 | Optional
 
 이러한 구성 요소는 작업에 포함되지 않지만 개별 구성 요소로 선택할 수 있습니다.
 
-구성 요소 ID | name | 버전
+구성 요소 ID | 이름 | 버전
 --- | --- | ---
 Microsoft.Net.Core.Component.SDK.2.2 | .NET Core 2.2 런타임 | 16.4.29519.181
 Microsoft.Net.Core.Component.SDK.3.0 | .NET Core 3.0 런타임 | 16.4.29519.181

@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dbca6429c1cc1669345cda465ec9ecfe3af0ed06
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: 99831638219481d7db331f2a4429fffce58ecc96
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919184"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113795"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio의 접근성 기능
 
@@ -36,7 +36,7 @@ ms.locfileid: "72919184"
 - 메서드 및 매개 변수의 자동 완성
 
 > [!NOTE]
-> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio의 접근성](/visualstudio/mac/accessibility)을 참조하세요.
+> 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio의 접근성](/visualstudio/mac/accessibility)을 참조하세요.
 
 자세한 내용은 다음 항목을 참조하세요.
 
@@ -60,6 +60,6 @@ ms.locfileid: "72919184"
 
 ::: moniker-end
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Microsoft의 접근성 제품 및 서비스](../../ide/reference/accessibility-products-and-services-from-microsoft.md)

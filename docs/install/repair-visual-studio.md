@@ -5,19 +5,19 @@ description: Visual Studio 2017의 설치를 복구하는 방법 알아보기
 ms.date: 07/31/2019
 ms.custom: seodec18
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 255995f7ca660d36ae40a6a8fead4b3ea5d70424
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 368ca6619a2fcff48cc3bcc7eb70913247b631b2
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594554"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114739"
 ---
 # <a name="repair-visual-studio"></a>Visual Studio 복구
 

@@ -10,19 +10,19 @@ helpviewer_keywords:
 - installing Visual Studio, administrator guide
 - list of domains, locations, URLs
 ms.assetid: ''
-author: jillre
-ms.author: jillfra
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c33de2ef29394cc09b6a65072439c745ca24af94
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d74cb5b1594c0e4d347e2f8a4e1924cf68d64eed
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594099"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114929"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>방화벽 또는 프록시 서버 배후에서 Visual Studio와 Azure 서비스 설치 및 사용
 

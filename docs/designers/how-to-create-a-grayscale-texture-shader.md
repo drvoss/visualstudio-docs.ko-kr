@@ -3,17 +3,17 @@ title: '방법: 회색조 질감 셰이더 만들기'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 79181d81-44af-445e-9a18-03483dd70260
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8217cc83004be3d4a15ff26743724d553f70d44
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1b74e956a74ff4c04dbc5a1c990fab708937d8f5
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635567"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76112621"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>방법: 회색조 질감 셰이더 만들기
 
@@ -47,7 +47,7 @@ ms.locfileid: "72635567"
 
 일부 셰이더의 경우 특정 도형을 사용하면 미리 보기가 더 잘 표시될 수 있습니다. 셰이더 디자이너에서 셰이더를 미리 보는 방법에 대한 자세한 내용은 [셰이더 디자이너](../designers/shader-designer.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방법: 3D 모델에 셰이더 적용](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [방법: 셰이더 내보내기](../designers/how-to-export-a-shader.md)
